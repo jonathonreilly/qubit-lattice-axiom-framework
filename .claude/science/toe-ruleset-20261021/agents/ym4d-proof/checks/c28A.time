@@ -1,0 +1,30 @@
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/c28_exp.py:208: RuntimeWarning: invalid value encountered in divide
+  out[mu][j] = -sgn * B["phi"] * B["nub"][nu] / (B["beta"][mu] * B["beta"][nu] * B["Sig"])
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/c28_exp.py:238: RuntimeWarning: invalid value encountered in multiply
+  beta = [B["phi"] * P[mu] for mu in range(d)]
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/c28_exp.py:246: RuntimeWarning: invalid value encountered in divide
+  S1 = sum(B["nub"][v] * bh[v] / beta[v] for v in range(d))
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/c28_exp.py:247: RuntimeWarning: invalid value encountered in divide
+  rf = [-B["phi"] * bh[s] / beta[s] + nuc[s] * B["a"] * S1 / (beta[s] * Psi) for s in range(d)]
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/c28_exp.py:260: RuntimeWarning: invalid value encountered in divide
+  fm = kap[k - 1] * ph_u * (PD * (nun[ro] * D[si] * bh[si] / beta[si] - nun[si] * D[ro] * bh[ro] / beta[ro])
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/c28_exp.py:261: RuntimeWarning: invalid value encountered in divide
+  + (PD / Psi) * nun[ro] * nun[si] * (Rr[si] / beta[si] - Rr[ro] / beta[ro]) * S1)
+        2.16 real         1.85 user         0.06 sys
+           168673280  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14276  page reclaims
+                 599  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 585  voluntary context switches
+                 650  involuntary context switches
+         36816460636  instructions retired
+          7666291006  cycles elapsed
+           152486512  peak memory footprint

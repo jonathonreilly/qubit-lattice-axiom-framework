@@ -1,0 +1,14 @@
+G: dot-test max rel err 2.22e-17; Q_root(d lam) - d(ev lam) max rel 4.19e-14 -> PASS
+A: T=2: lam_max=0.111111111111111, ratio to L^-2 = 1.000000000000; T=3: lam_max=0.111111111111111, ratio to L^-2 = 1.000000000000 -> PASS
+B: max|dQ_root A - dQ_str A|/max|A| = 5.41e-15; max|Q_root - (Q_str - dh)|/max|A| = 3.49e-15 -> PASS
+C: T=2 k=1: lam_max(Sigma_k) = 16.000000000000, bound 16*sum L^-2m = 16.000000000000, crude 16k = 16, ratio lam/bound = 1.000000
+C: T=2 k=2: lam_max(Sigma_k) = 16.724279835391, bound 16*sum L^-2m = 17.777777777778, crude 16k = 32, ratio lam/bound = 0.940741
+C: T=2 k=3: lam_max(Sigma_k) = 16.791749225220, bound 16*sum L^-2m = 17.975308641975, crude 16k = 48, ratio lam/bound = 0.934156
+C: T=3 k=1: lam_max(Sigma_k) = 12.000000000000, bound 16*sum L^-2m = 16.000000000000, crude 16k = 16, ratio lam/bound = 0.750000
+C: T=3 k=2: lam_max(Sigma_k) = 12.740740740741, bound 16*sum L^-2m = 17.777777777778, crude 16k = 32, ratio lam/bound = 0.716667
+C (informational): T=2 increments k=1->2: 7.243e-01, k=2->3: 6.747e-02
+C -> PASS
+D: ratios 0.500000000, 0.638163195, 0.921350396, 0.999988955 -> PASS
+E: max ||1-e^X||_HS/||X||_HS = 0.999999972 -> PASS
+F (informational): exponent of m-th term, m=0,5,10,20,40: 3.906e-03, 9.163e-24, 2.122e-44, 1.105e-85, 2.769e-168
+SUMMARY: G=PASS A=PASS B=PASS C=PASS D=PASS E=PASS; time 2.4s; peak RSS 97 MB

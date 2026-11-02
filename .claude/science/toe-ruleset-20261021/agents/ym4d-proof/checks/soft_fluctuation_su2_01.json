@@ -1,0 +1,169 @@
+{
+  "scope": "finite author diagnostics; all-volume theorem requires the written local proof",
+  "mode": "su2",
+  "python": "3.12.8",
+  "numpy": "2.4.1",
+  "scipy": "1.17.0",
+  "elapsed_seconds": 11.47016733296914,
+  "passed": 20,
+  "total": 20,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "nonabelian_probe_zero_coarse_linear_data",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nonabelian_probe_nonzero_spread",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bessel_vs_Haar_mean_u2.0",
+      "pass": true,
+      "detail": {
+        "c": 0.4331274267223117,
+        "haar": 0.4331274267223118
+      }
+    },
+    {
+      "name": "actual_normalized_SU2_Hessian_u2.0",
+      "pass": true,
+      "detail": {
+        "finite": 6.043976242943296,
+        "quadratic": 6.043976398277774
+      }
+    },
+    {
+      "name": "Haar_Lebesgue_Hessian_u2.0",
+      "pass": true,
+      "detail": {
+        "finite": 6.377310136763805,
+        "quadratic": 6.377309731611107
+      }
+    },
+    {
+      "name": "finite_u_spread_omission_control_u2.0",
+      "pass": true,
+      "detail": 0.020050569922047953
+    },
+    {
+      "name": "normalizer_omission_control_u2.0",
+      "pass": true,
+      "detail": 0.015320091708250771
+    },
+    {
+      "name": "Haar_omission_control_u2.0",
+      "pass": true,
+      "detail": 0.3333337384860311
+    },
+    {
+      "name": "bessel_vs_Haar_mean_u10.0",
+      "pass": true,
+      "detail": {
+        "c": 0.8541853083236817,
+        "haar": 0.8541853083236817
+      }
+    },
+    {
+      "name": "actual_normalized_SU2_Hessian_u10.0",
+      "pass": true,
+      "detail": {
+        "finite": 30.14541789525538,
+        "quadratic": 30.145416839128423
+      }
+    },
+    {
+      "name": "Haar_Lebesgue_Hessian_u10.0",
+      "pass": true,
+      "detail": {
+        "finite": 30.478751966711574,
+        "quadratic": 30.478750172461755
+      }
+    },
+    {
+      "name": "finite_u_spread_omission_control_u10.0",
+      "pass": true,
+      "detail": 0.025787697349803657
+    },
+    {
+      "name": "normalizer_omission_control_u10.0",
+      "pass": true,
+      "detail": 0.15106377800235649
+    },
+    {
+      "name": "Haar_omission_control_u10.0",
+      "pass": true,
+      "detail": 0.3333351275831511
+    },
+    {
+      "name": "bessel_vs_Haar_mean_u40.0",
+      "pass": true,
+      "detail": {
+        "c": 0.9627404353619465,
+        "haar": 0.9627404353619466
+      }
+    },
+    {
+      "name": "actual_normalized_SU2_Hessian_u40.0",
+      "pass": true,
+      "detail": {
+        "finite": 120.50488006960022,
+        "quadratic": 120.50487436042671
+      }
+    },
+    {
+      "name": "Haar_Lebesgue_Hessian_u40.0",
+      "pass": true,
+      "detail": {
+        "finite": 120.83821366736126,
+        "quadratic": 120.83820769376004
+      }
+    },
+    {
+      "name": "finite_u_spread_omission_control_u40.0",
+      "pass": true,
+      "detail": 0.026357793312198008
+    },
+    {
+      "name": "normalizer_omission_control_u40.0",
+      "pass": true,
+      "detail": 0.6810466234307313
+    },
+    {
+      "name": "Haar_omission_control_u40.0",
+      "pass": true,
+      "detail": 0.3333393069345476
+    }
+  ],
+  "details": {
+    "SU2": [
+      {
+        "u": 2.0,
+        "c": 0.4331274267223117,
+        "spread_Hessian": 0.020050569922047953,
+        "finite_error": -1.5533447772497766e-07,
+        "haar_error": 4.0515269777996465e-07
+      },
+      {
+        "u": 10.0,
+        "c": 0.8541853083236817,
+        "spread_Hessian": 0.025787697349803657,
+        "finite_error": 1.0561269583320154e-06,
+        "haar_error": 1.7942498177769828e-06
+      },
+      {
+        "u": 40.0,
+        "c": 0.9627404353619465,
+        "spread_Hessian": 0.026357793312198008,
+        "finite_error": 5.709173507284504e-06,
+        "haar_error": 5.973601214293023e-06
+      }
+    ]
+  },
+  "external_scientific_inputs_read": [],
+  "integrity_reads": [],
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false
+}

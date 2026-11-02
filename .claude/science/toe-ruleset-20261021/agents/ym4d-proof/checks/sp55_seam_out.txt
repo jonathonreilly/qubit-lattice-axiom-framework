@@ -1,0 +1,66 @@
+[R=23/10] cubes=33 boundary3faces=152 seam vertices=176
+   chi(D)=1 chi(dD)=0 chi(P)=2  S3(closed pseudomanifold)=True  S4(vertex links chi=2, k_e>=3)=True
+   vertex-link chi distribution={2: 176}
+   k_e distribution (crossing plaquette weight = k_e/4)={3: 320, 5: 96, 6: 64}
+   boundary-square total weight x4 (m_D + 2) distribution={3: 312, 4: 48, 5: 96}
+   non-boundary squares of D with m_D != 4 (weight m_D/4) distribution={}
+   all plaquette weights > 0: True
+   seam-vertex valence in P (bulk = 8) distribution={5: 96, 8: 64, 9: 16}
+   S1(H4-invariant & down-closed)=True; vertices exactly on |x|=R: 0; item verdict PASS
+[R=37/10] cubes=329 boundary3faces=792 seam vertices=848
+   chi(D)=1 chi(dD)=0 chi(P)=2  S3(closed pseudomanifold)=True  S4(vertex links chi=2, k_e>=3)=True
+   vertex-link chi distribution={2: 848}
+   k_e distribution (crossing plaquette weight = k_e/4)={3: 896, 4: 960, 5: 480, 6: 96}
+   boundary-square total weight x4 (m_D + 2) distribution={3: 1128, 4: 816, 5: 432}
+   non-boundary squares of D with m_D != 4 (weight m_D/4) distribution={}
+   all plaquette weights > 0: True
+   seam-vertex valence in P (bulk = 8) distribution={5: 224, 6: 192, 8: 192, 9: 240}
+   S1(H4-invariant & down-closed)=True; vertices exactly on |x|=R: 0; item verdict PASS
+[R=9/2] cubes=809 boundary3faces=1624 seam vertices=1680
+   chi(D)=1 chi(dD)=0 chi(P)=2  S3(closed pseudomanifold)=True  S4(vertex links chi=2, k_e>=3)=True
+   vertex-link chi distribution={2: 1680}
+   k_e distribution (crossing plaquette weight = k_e/4)={3: 1984, 4: 1536, 5: 1056, 6: 352}
+   boundary-square total weight x4 (m_D + 2) distribution={3: 2256, 4: 1440, 5: 1176}
+   non-boundary squares of D with m_D != 4 (weight m_D/4) distribution={}
+   all plaquette weights > 0: True
+   seam-vertex valence in P (bulk = 8) distribution={5: 416, 6: 192, 7: 192, 8: 256, 9: 624}
+   S1(H4-invariant & down-closed)=True; vertices exactly on |x|=R: 0; item verdict PASS
+[R=26/5] cubes=1945 boundary3faces=3112 seam vertices=3184
+   chi(D)=1 chi(dD)=0 chi(P)=2  S3(closed pseudomanifold)=True  S4(vertex links chi=2, k_e>=3)=True
+   vertex-link chi distribution={2: 3184}
+   k_e distribution (crossing plaquette weight = k_e/4)={3: 3456, 4: 3072, 5: 2592, 6: 288}
+   boundary-square total weight x4 (m_D + 2) distribution={3: 3912, 4: 3168, 5: 2256}
+   non-boundary squares of D with m_D != 4 (weight m_D/4) distribution={}
+   all plaquette weights > 0: True
+   seam-vertex valence in P (bulk = 8) distribution={5: 656, 6: 384, 7: 288, 8: 640, 9: 1216}
+   S1(H4-invariant & down-closed)=True; vertices exactly on |x|=R: 0; item verdict PASS
+[R=61/10] cubes=3889 boundary3faces=5144 seam vertices=5232
+   chi(D)=1 chi(dD)=0 chi(P)=2  S3(closed pseudomanifold)=True  S4(vertex links chi=2, k_e>=3)=True
+   vertex-link chi distribution={2: 5232}
+   k_e distribution (crossing plaquette weight = k_e/4)={3: 4896, 4: 6816, 5: 3072, 6: 736}
+   boundary-square total weight x4 (m_D + 2) distribution={3: 6048, 4: 5664, 5: 3720}
+   non-boundary squares of D with m_D != 4 (weight m_D/4) distribution={}
+   all plaquette weights > 0: True
+   seam-vertex valence in P (bulk = 8) distribution={5: 800, 6: 960, 7: 384, 8: 896, 9: 2192}
+   S1(H4-invariant & down-closed)=True; vertices exactly on |x|=R: 0; item verdict PASS
+C1 (remove central cube -> down-closure fails): fired
+[C2 two cubes sharing a vertex] cubes=2 boundary3faces=16 seam vertices=31
+   chi(D)=1 chi(dD)=-1 chi(P)=3  S3(closed pseudomanifold)=True  S4(vertex links chi=2, k_e>=3)=False
+   vertex-link chi distribution={2: 30, 4: 1}
+   k_e distribution (crossing plaquette weight = k_e/4)={3: 64}
+   boundary-square total weight x4 (m_D + 2) distribution={3: 48}
+   non-boundary squares of D with m_D != 4 (weight m_D/4) distribution={}
+   all plaquette weights > 0: True
+   seam-vertex valence in P (bulk = 8) distribution={5: 30, 9: 1}
+C2 (vertex-pinched pair fails S4): fired
+[C3 single cube] cubes=1 boundary3faces=8 seam vertices=16
+   chi(D)=1 chi(dD)=0 chi(P)=2  S3(closed pseudomanifold)=True  S4(vertex links chi=2, k_e>=3)=True
+   vertex-link chi distribution={2: 16}
+   k_e distribution (crossing plaquette weight = k_e/4)={3: 32}
+   boundary-square total weight x4 (m_D + 2) distribution={3: 24}
+   non-boundary squares of D with m_D != 4 (weight m_D/4) distribution={}
+   all plaquette weights > 0: True
+   seam-vertex valence in P (bulk = 8) distribution={5: 16}
+C3 (single cube chi(D)=1, chi(dD)=0): PASS
+S7 is bookkeeping (k_e=4 => weight 1; m_D=2 => (2+2)/4=1); it cannot fail and is not counted as evidence.
+VERDICT: PASS

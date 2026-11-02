@@ -1,0 +1,54 @@
+{
+  "schema": "review-uniform-soft-failures-v1",
+  "author_scientific_findings": [],
+  "reviewer_failures": [
+    {
+      "id": "reviewer-program01-parse",
+      "kind": "implementation_syntax",
+      "exit_code": 1,
+      "source": "review_uniform_soft_01_attempt01.py",
+      "stdout": "review_uniform_soft_01_attempt01_out.json",
+      "stderr": "review_uniform_soft_01_attempt01_err.txt",
+      "scientific_execution": false,
+      "repair": "Removed one extra closing parenthesis; original source preserved."
+    },
+    {
+      "id": "reviewer-program02-json",
+      "kind": "implementation_serialization",
+      "exit_code": 1,
+      "source": "review_uniform_soft_02_attempt01.py",
+      "stdout": "review_uniform_soft_02_attempt01_out.json",
+      "stderr": "review_uniform_soft_02_attempt01_err.txt",
+      "scientific_execution": "Computation reached final serialization; no complete JSON was emitted.",
+      "repair": "Cast five NumPy boolean condition flags to native bool; no mathematics or cutoffs changed."
+    },
+    {
+      "id": "reviewer-program02-cutoff-accounting",
+      "kind": "criteria_enforcement_discrepancy",
+      "detail": "Some program02 identity thresholds exceed the predeclared 1e-10. All original recorded identity errors pass an exhaustive later 1e-10 postcheck. Sources and outputs left unchanged.",
+      "maximum_identity_error": 8.74087600908654e-11,
+      "disposition": "Disclosed; original criterion satisfied by preserved output."
+    },
+    {
+      "id": "reviewer-pdf-page-split",
+      "kind": "read_attempt",
+      "error": "IndexError: list index out of range",
+      "cause": "Attempted form-feed page split of existing text without form feeds.",
+      "repair": "Used original PDF page extraction with PyMuPDF; no file mutation or scientific consequence.",
+      "evidence_location": "Tool transcript; preserved here as event metadata, not a reconstructed stderr file."
+    },
+    {
+      "id": "reviewer-governance-path",
+      "kind": "read_attempt",
+      "path": "docs/repo/CANONICAL_HARNESS_INDEX.md",
+      "error": "Path does not exist at pinned revision.",
+      "repair": "git ls-tree found docs/CANONICAL_HARNESS_INDEX.md; read introduction and targeted search."
+    }
+  ],
+  "author_preserved_download_failure": "Author metadata retains system-CA TLS failure followed by verified certifi retrieval; reviewer inspected those records and hashes, did not recreate them.",
+  "planned_mutations": "Rejected as intended; each actual predicate and discrepancy is preserved in reviewer outputs.",
+  "empty_stdout_is_not_json": [
+    "review_uniform_soft_01_attempt01_out.json",
+    "review_uniform_soft_02_attempt01_out.json"
+  ]
+}

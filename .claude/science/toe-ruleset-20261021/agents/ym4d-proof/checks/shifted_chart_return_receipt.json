@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "role": "author provenance and self-check, not an independent review or audit",
+  "requested_configuration": "Astra/max requested by coordinator; no independent backend attestation",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+    "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+    "bytes": 25946,
+    "lines": 508
+  },
+  "freeze_order": "Source hash announced to root before compact provenance packaging; mathematical bytes unchanged thereafter.",
+  "bounded_result": "Exact actual-critical chart translation and mixed distinct-vertex/bad-ball/side-chain active-marginal estimate, plus critical-field reader decoration convergence and a pure-boundary marked bound.",
+  "precise_residual": "Full covariance-reader connected assembly and interacting reference normalization are not supplied. Original cut/G/Omega/histories, complement, effective iteration, existence and physical continuum gap remain open.",
+  "protected_sources_unchanged": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "bytes": 29068,
+      "lines": 556
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "bytes": 30251,
+      "lines": 564
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "bytes": 27584,
+      "lines": 543
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+      "bytes": 30517,
+      "lines": 608
+    }
+  ],
+  "package": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_chart_return_read_manifest.json",
+      "sha256": "bd0c2cc9ef9f1ff5f65c5b0f5cf93a0e9b132d453b75d49ef737e458c0abbd20",
+      "bytes": 4324,
+      "lines": 91
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_chart_return_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153,
+      "lines": 9
+    }
+  ],
+  "author_analytic_checks": [
+    {
+      "location": "SC1–SC7",
+      "check": "Actual finite-u force is removed only by FU stationarity at its solved original-data critical field. The complex-tube norm uses delta_*+8eta, not real delta_V. The chart, precision and small-shift inequalities are simultaneously nonempty after restricting fixed positive radii."
+    },
+    {
+      "location": "SC8–SC9",
+      "check": "Differentiated the ball translation and checked the minus sign, tensor corner signs, full colour spheres, flux/t measures and physical-coordinate sigma scaling. Critical action, determinant, h_N and kernel/Haar normalization all remain in P_*."
+    },
+    {
+      "location": "SC10–SC14",
+      "check": "Each original Wilson plaquette includes its source contribution as one vertex, preserving incidence15. Individual vertex linear terms are subtracted, not called stationary. Cuts remain on every selected vertex field slot, so no nonlinear Taylor series is used on an exterior bad-ball coordinate. Principal covariance marginal and empty active vacuum one are exact."
+    },
+    {
+      "location": "SC15–SC19",
+      "check": "Rebuilt optimized Gaussian Cauchy jets and the two elementary shift-series bounds. Distinct vertices give scalar degree at most45; repeated Mayer powers are absorbed in the stability factor. Explicit moment constant, active determinant factors and all boundary inverse-sigma polynomial costs fit the retained Gaussian decay."
+    },
+    {
+      "location": "SC21–SC22",
+      "check": "Every critical-field occurrence retains its original connected reader. Root labels are charged once per selected vertex. Marking a flux or a Gaussian shift Taylor factor gives the displayed boundary anchor, including the t_b=0 case without division. The covariance argument remains outside this partial decoration norm and is explicitly not called source-local."
+    }
+  ],
+  "mechanical_checks": {
+    "equation_labels": "SC1–SC22 exactly once as displayed labels",
+    "fences": "balanced",
+    "trailing_whitespace": "none",
+    "vocab_lint": "report-only: zero violations; source unchanged",
+    "local_links": {
+      "result": "all resolve",
+      "targets": [
+        "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+        "CHART_BOUNDARY_FOREST_ASTRA.md",
+        "checks/shifted_chart_return_read_manifest.json",
+        "checks/shifted_chart_return_receipt.json"
+      ]
+    }
+  },
+  "numerical_experiments": "none",
+  "independent_review": "pending fresh hostile review by coordinator",
+  "operations": "Only owned shifted-chart source/check files created; no Git mutations, shared-front changes, locks, audits or publication."
+}

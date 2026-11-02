@@ -1,0 +1,180 @@
+{
+  "started_utc": "2026-10-30T10:30:07Z",
+  "criteria_sha256": "a0ace698a9e34be2e04cb6e0cd2d696551d0cdb611100be370de1ee62e068562",
+  "script_sha256": "8e4afc5069bac09ae06a121d1b85ee334766acfeb820e74eafbbd69a32d11d7f",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "covariance",
+      "status": "PASS",
+      "result": {
+        "maximum_error": 2.220446049250313e-16,
+        "one_field_only_change": 0.011957061616281961
+      }
+    },
+    {
+      "name": "haar_reader",
+      "status": "PASS",
+      "result": {
+        "refinement_error": 2.4868995751603507e-14,
+        "relative_hessian": 0.8632086976371748,
+        "centered_difference": 0.8632086583304499,
+        "relative_error": 4.553559873610169e-08,
+        "normalized_two_kernel_reader_integral": 2.321964276848443,
+        "note": "Analytic Haar formula and its positivity are proved in SPURION.md"
+      }
+    },
+    {
+      "name": "gaussian_schur",
+      "status": "PASS",
+      "result": {
+        "output_diagonal": [
+          "0",
+          "15/8"
+        ],
+        "frozen_input_output_hessian": "3",
+        "mass_mutation": "6/5"
+      }
+    },
+    {
+      "name": "tree_projector",
+      "status": "PASS",
+      "result": {
+        "tree_reconstruction_error": 5.551115123125783e-17,
+        "retained_monomials": 4,
+        "remainder_degree_five": "11",
+        "note": "Polynomial algebra is a coordinate regression, not an RG bound"
+      }
+    },
+    {
+      "name": "complete_readers",
+      "status": "PASS",
+      "result": {
+        "unread": "1",
+        "reader_integral": "7/2",
+        "selected_masses": [
+          "1/2",
+          "3"
+        ]
+      }
+    }
+  ],
+  "resources": [
+    {
+      "label": "before",
+      "load": [
+        2.232421875,
+        2.12060546875,
+        2.00537109375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22331392,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after covariance",
+      "load": [
+        2.232421875,
+        2.12060546875,
+        2.00537109375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22364160,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after haar_reader",
+      "load": [
+        2.232421875,
+        2.12060546875,
+        2.00537109375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22380544,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after gaussian_schur",
+      "load": [
+        2.232421875,
+        2.12060546875,
+        2.00537109375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22380544,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after tree_projector",
+      "load": [
+        2.232421875,
+        2.12060546875,
+        2.00537109375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22380544,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after complete_readers",
+      "load": [
+        2.232421875,
+        2.12060546875,
+        2.00537109375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22380544,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    }
+  ],
+  "scope": "Finite algebra and SU(2) radial quadrature only",
+  "finished_utc": "2026-10-30T10:30:07Z"
+}

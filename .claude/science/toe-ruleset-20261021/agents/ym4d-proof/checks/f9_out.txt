@@ -1,0 +1,68 @@
+f9_root_sector.py  start 2026-10-28 05:32:24 UTC  smoke=False
+Part G0 (Lemma GH: J^*J = Schur, det split, S_0 - J = ker D_0^*; charge-1 torus, one flux quantum, l = 3)
+  [PASS] G0a (9, 9): ||J^*J - S||/||S|| = 1.02e-15
+  [PASS] G0b (9, 9): |logdet D0 - logdet D' - logdet S| = 1.51e-14
+  [PASS] G0c (9, 9): ||P_S0 - P_J - P_ker|| = 3.48e-15
+  [PASS] G0-ctl (9, 9) (must FAIL G0a): non-orthogonal slice: ||J_r^*J_r - S||/||S|| = 1.64e-02
+  [PASS] G0a (3, 3, 3, 3): ||J^*J - S||/||S|| = 9.18e-16
+  [PASS] G0b (3, 3, 3, 3): |logdet D0 - logdet D' - logdet S| = 5.57e-14
+  [PASS] G0c (3, 3, 3, 3): ||P_S0 - P_J - P_ker|| = 2.00e-15
+  [PASS] G0-ctl (3, 3, 3, 3) (must FAIL G0a): non-orthogonal slice: ||J_r^*J_r - S||/||S|| = 5.83e-03
+  (part_g0: 0.1 s)
+Part G1 (Lemma G-mag (iii): phi^2 coefficient of exp(-t Delta_phi)(x0,x0) = -(t^2/6) j_1^2, 2D)
+    t =   0.5: coeff = -1.8011143109e-03, predicted = -1.8011142005e-03, rel = 6.1e-08
+    t =   1.0: coeff = -7.7234778654e-03, predicted = -7.7234778156e-03, rel = 6.4e-09
+    t =   2.0: coeff = -2.1301241744e-02, predicted = -2.1301241749e-02, rel = 1.9e-10
+    t =   4.0: coeff = -4.7984556027e-02, predicted = -4.7984556018e-02, rel = 1.9e-10
+    t =   8.0: coeff = -1.0108743992e-01, predicted = -1.0108743993e-01, rel = 1.2e-10
+    t =  16.0: coeff = -2.0721276817e-01, predicted = -2.0721276888e-01, rel = 3.4e-09
+  [PASS] G1: max rel = 6.13e-08 (B = 81)
+  (part_g1: 0.2 s)
+Part G2 (psi(phi) = c_g log(1/phi) + c'(phi), c_g = 1/(96 pi^2); rational flux 2 pi/Q, Bloch)
+  [PASS] G2-acc: Q = 128: |dK| = 3.3e-16, |ddu| = 8.2e-15
+    Q =   16: phi = 0.39270, psi = 2.415925198e-03, c' = 1.429403413e-03
+    Q =   32: phi = 0.19635, psi = 3.127245950e-03, c' = 1.409156532e-03
+    Q =   64: phi = 0.09817, psi = 3.847635357e-03, c' = 1.397978306e-03
+    Q =  128: phi = 0.04909, psi = 4.573284953e-03, c' = 1.392060269e-03
+    Q =  256: phi = 0.02454, psi = 5.301795902e-03, c' = 1.389003585e-03
+    Q =  512: phi = 0.01227, psi = 6.031807036e-03, c' = 1.387447087e-03
+  [PASS] G2a: slope/c_g = 0.99685
+    increments of c': -2.025e-05, -1.118e-05, -5.918e-06, -3.057e-06, -1.556e-06
+  [PASS] G2b: last ratios = 0.517, 0.509, |d_last| = 1.56e-06
+Part G3 (ghost group: psi(l^2 phi) - psi(phi) -> -2 c_g log l)
+    l = 3, Q' =  16 (fine Q = 144): Delta = -2.280998195e-03, target = -2.319014530e-03, rel dev = 1.64e-02
+    l = 3, Q' =  32 (fine Q = 288): Delta = -2.298517426e-03, target = -2.319014530e-03, rel dev = 8.84e-03
+    l = 3, Q' =  64 (fine Q = 576): Delta = -2.308309084e-03, target = -2.319014530e-03, rel dev = 4.62e-03
+  [PASS] G3a (l = 3): final rel dev = 4.62e-03, monotone = True
+    l = 9, Q' =   4 (fine Q = 324): Delta = -4.509478982e-03, target = -4.638029060e-03, rel dev = 2.77e-02
+    l = 9, Q' =   8 (fine Q = 648): Delta = -4.561445905e-03, target = -4.638029060e-03, rel dev = 1.65e-02
+    G3b (l = 9) informational: rel devs = 2.77e-02, 1.65e-02
+  (part_g2_g3: 2.1 s)
+Part V0 (SU(2) Wilson at U_f on the 4D torus (6,6,3,3), one flux quantum f = 2 pi/36)
+  [PASS] V0a: max |grad| = 1.0e-15
+  [PASS] V0b: max |H D_0| = 1.1e-15 (max |H| = 6.00)
+  [PASS] V0c: max |K_F D_0 - D_0 Delta_0| = 1.8e-15
+  [PASS] V0d: max |H_(Cartan,root)| = 0.0e+00
+  [PASS] V0e: max |K_F - prediction| = 8.9e-16 (dof 3888)
+  [PASS] V0-ctl (must FAIL V0a, V0b): max |grad| = 1.22e+00, max |H D_0| = 1.22e+00
+  (part_v0: 0.4 s)
+Part V1, V2, V4 (2D open box, SU(2) plane-12 operator K_12 = H + D_0 D_0^T at U_f, root charge q = 2)
+  [PASS] V1: max rel = 2.72e-07 (B = 101)
+  [PASS] V2-norm: max |Y(0)/(2 j_0^2) - 1| = 4.4e-16
+    t =    2: R_12 = 3.474159, R_S = -0.124279, R_V4D = R_12 + 2R_S = 3.225602, R_12 + R_S = 3.349881
+    t =    3: R_12 = 3.546318, R_S = -0.138733, R_V4D = R_12 + 2R_S = 3.268852, R_12 + R_S = 3.407585
+    t =    4: R_12 = 3.578581, R_S = -0.145778, R_V4D = R_12 + 2R_S = 3.287026, R_12 + R_S = 3.432804
+    t =    6: R_12 = 3.609149, R_S = -0.152763, R_V4D = R_12 + 2R_S = 3.303623, R_12 + R_S = 3.456386
+    t =    8: R_12 = 3.623932, R_S = -0.156244, R_V4D = R_12 + 2R_S = 3.311444, R_12 + R_S = 3.467688
+    t =   12: R_12 = 3.638429, R_S = -0.159721, R_V4D = R_12 + 2R_S = 3.318988, R_12 + R_S = 3.478708
+    t =   16: R_12 = 3.645578, R_S = -0.161458, R_V4D = R_12 + 2R_S = 3.322663, R_12 + R_S = 3.484121
+    t =   24: R_12 = 3.652665, R_S = -0.163194, R_V4D = R_12 + 2R_S = 3.326277, R_12 + R_S = 3.489471
+  [PASS] V2a: R_inf = 3.66662 (11/3 = 3.66667; a = -0.3317, b = -0.0786)
+  [PASS] V2b: R_inf (alt window) = 3.66649
+    V2c (reported): R_V4D(t_max) = 3.32628 (10/3 = 3.33333); R_12 + R_S at t_max = 3.48947 (7/2)
+    R_C(t): t=2: 1.365e-01, t=3: 5.843e-02, t=4: 3.238e-02, t=6: 1.421e-02, t=8: 7.943e-03, t=12: 3.510e-03, t=16: 1.969e-03, t=24: 8.727e-04
+  [PASS] V4: |R_C(t_max)| = 8.73e-04, ratio to t = 12: 0.249
+  (part_v124: 12.1 s)
+SUMMARY: 24/24 verdict lines PASS (controls are counted as PASS when they fail as required)
+  G0a (9, 9): PASS; G0b (9, 9): PASS; G0c (9, 9): PASS; G0-ctl (9, 9) (must FAIL G0a): PASS; G0a (3, 3, 3, 3): PASS; G0b (3, 3, 3, 3): PASS; G0c (3, 3, 3, 3): PASS; G0-ctl (3, 3, 3, 3) (must FAIL G0a): PASS; G1: PASS; G2-acc: PASS; G2a: PASS; G2b: PASS; G3a (l = 3): PASS; V0a: PASS; V0b: PASS; V0c: PASS; V0d: PASS; V0e: PASS; V0-ctl (must FAIL V0a, V0b): PASS; V1: PASS; V2-norm: PASS; V2a: PASS; V2b: PASS; V4: PASS
+end 2026-10-28 05:32:39 UTC  wall 15.0 s  peak RSS 665 MB

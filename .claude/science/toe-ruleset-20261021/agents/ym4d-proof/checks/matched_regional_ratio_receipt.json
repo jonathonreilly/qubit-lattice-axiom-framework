@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "role": "author analytic self-check and provenance; not independent review or audit",
+  "requested_configuration": "Coordinator-requested Astra/max; no separate backend attestation",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MATCHED_REGIONAL_RATIO_ASTRA.md",
+    "sha256": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6",
+    "lines": 460
+  },
+  "freeze_order": "460-line mathematical source announced before lint and this package; source bytes unchanged after announcement.",
+  "bounded_result": "Actual matched physical regional chart log ratio: every connected reader meets the changed owner set C, with beta/2 rooted norm Q_sigma=e^mu m0|q_sigma|+C_det+2A_ref+J_ref+2epsilon_ch. All mode/Haar/determinant/action costs remain explicit.",
+  "author_analytic_checks": [
+    "MR1-3: Delta union B(Gamma) equals Delta union both regional boundaries. N9 contains its two-mask membership test. A fixed real template matching the lift there gives a nonempty common physical tube; no smallness is assumed on common active or deep common exterior template values.",
+    "MR4-7: common actual outside physical factors cancel before any virtual zero extension is used. Unmatched Haar factors produce the PLUS sum (1_Lambda-1_Lambda_prime)log j_N(xi). Adding the identical virtual outside phase permits the full RF14 force; all original zero-field values cancel termwise, with actual nonconstant normalizers retained.",
+    "MR8-11: the virtual field has complete-reader norm <=t_b+Y<=tau. Full-phase Taylor retains g0 and source Hessians; marking two vectors and a matrix proves the scalar action budget. Local coefficient agreement is used before absolute total sums, yielding anchored differences without an extensive force debit.",
+    "MR12-13: full regional Jacobi and critical trace families preserve all masks and scalar colours. Determinant branches are accretive matrix-log branches, including their active-mode constants; no equal-dimensional or global-core identification is used.",
+    "MR14-15: the Haar Jacobian follows from the exponential differential with entire quotients at zero. The trace-adjoint quadratic term reproduces N^2/(6u)I. The log bound gives J_ref=(2/3)c_y zeta^2, and each signed Haar atom meets C.",
+    "MR16-18: RC exact side/corner small logs retain canonical agreement on the same physical pullback. Combining already absolutely convergent families spends no new support margin; the logarithm is real on real data and holomorphic on the common tube. Empty/equal regions and swapping the two regions preserve the exact normalization and signs.",
+    "MR19-20: fixed preliminary constants precede c. The mode log u term and finite determinant price remain separate from C_A c^2 p^2; Haar and chart terms vanish for p to infinity and sigma p to zero. Cauchy jets retain shrinking inverse-radius costs. No comparison with a complement charge is made."
+  ],
+  "package": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/matched_regional_ratio_read_manifest.json",
+      "sha256": "2481adbd49a15ff10e6dd2c0f83adef27335a20fa0fcb8d7ed84e3d4d79e4f17",
+      "lines": 111
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/matched_regional_ratio_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "lines": 9
+    }
+  ],
+  "protected_sources_unchanged": {
+    "REGIONAL_CRITICAL_FIELD_ASTRA.md": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+    "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+    "SHRINKING_CHART_RETURN_ASTRA.md": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+    "NONLINEAR_READER_RETURN_ASTRA.md": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+    "NONLINEAR_CHART_ACTIVITY_ASTRA.md": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+    "SHIFTED_CHART_RETURN_ASTRA.md": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+    "FINITE_U_CRITICAL_FIELD_ASTRA.md": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+    "POSITIVE_READER_COVARIANCE_ASTRA.md": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+    "CHART_BOUNDARY_FOREST_ASTRA.md": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+    "READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+    "COVARIANT_SOURCE_ACTIVITY_ASTRA.md": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+    "STEP55.md": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+    "GRADED_COMPLEMENT_ASTRA.md": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+    "REGIONAL_CHART_RETURN_ASTRA.md": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+    "CRITICAL_ACTION_READER_ASTRA.md": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+    "CRITICAL_DETERMINANT_READER_ASTRA.md": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755"
+  },
+  "mechanical_checks": {
+    "displayed_labels": "MR1-MR20, each once",
+    "fences": "balanced",
+    "trailing_whitespace": "none",
+    "vocab_lint": "report-only; zero violations",
+    "local_links": "all resolve after receipt creation",
+    "link_targets": [
+      "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "REGIONAL_CHART_RETURN_ASTRA.md",
+      "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "CRITICAL_ACTION_READER_ASTRA.md",
+      "CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "checks/matched_regional_ratio_read_manifest.json",
+      "checks/matched_regional_ratio_receipt.json"
+    ]
+  },
+  "remaining_interfaces": "Rough changed links, exterior integrations, data-dependent original G/Omega/history cuts, inherited effective weights, comparison with an actual complement price, effective iteration, continuum existence and physical continuum gap remain open.",
+  "numerical_experiments": "none",
+  "independent_review": "Fresh independent source review requested from coordinator; no ratio-review verdict is consumed in this package.",
+  "operations": "Only MATCHED_REGIONAL_RATIO_ASTRA.md and checks/matched_regional_ratio_* written."
+}

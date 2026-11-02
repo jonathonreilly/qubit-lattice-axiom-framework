@@ -1,0 +1,13 @@
+G1 L=3 sigma=1: PASS (A_200 = 4.5 <= B = 9/2 = 4.5)
+G2 L=3 sigma=1: PASS
+G1 L=3 sigma=1/2: PASS (A_200 = 6 <= B = 6 = 6)
+G2 L=3 sigma=1/2: PASS
+G1 L=5 sigma=1: PASS (A_200 = 4.16666666667 <= B = 25/6 = 4.16666666667)
+G2 L=5 sigma=1: PASS
+G1 L=5 sigma=1/2: PASS (A_200 = 5 <= B = 5 = 5)
+G2 L=5 sigma=1/2: PASS
+G4 L=3: PASS
+G4 L=5: PASS
+C1 sigma=0 L=3 gate 'A_k<=400 for k<=200': FAILS (control fired); A_200 = 800
+C2 d=5 mutant sigma=1/2 L=3 gate 'A_k<=B=6': FAILS (control fired); A_200 = 800
+VERDICT mc55_1: PASS (gates all hold; controls both fired)

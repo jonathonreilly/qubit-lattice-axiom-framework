@@ -1,0 +1,46 @@
+======================================================================================
+[POST-HOC, EE1-P2]  the exact bound eps_1 <= sqrt(eta_flat/(4 C_3)), C_3 = 1
+======================================================================================
+
+Clause (HIST l.1698 supplies the LHS, SQ's DESC-eps (iii) the RHS): 4 C_3 eps_1^2 <= eta_flat
+
+eta_flat source                          exact bound (floor, 15 s.f.)   prop  TAUFLAT
+-------------------------------------------------------------------------------------
+TAUFLAT l.561            (3 s.f.)                9.38083151964686E-45  False    False
+TAUFLAT l.196, l.213     (6 s.f.)                9.38496137445434E-45   True     True
+EPS1_SWEEP 4.5          (12 s.f.)                9.38495112637780E-45  False    False
+
+======================================================================================
+At EPS1_SWEEP's own eta_flat, how far above the bound is each quoted value?
+======================================================================================
+
+  exact bound, truncated to 25 s.f. : 9.384951126377803359263720E-45
+  EPS1_SWEEP 4.5  9.38495112638e-45: above the bound by +2.3406E-13 relative (FAILS)
+  TAUFLAT l.408   9.38496e-45      : above the bound by +9.4552E-7 relative (FAILS)
+
+======================================================================================
+The largest ADMISSIBLE decimal at each digit count (truncated DOWN, as a
+ceiling must be), at EPS1_SWEEP's 12-s.f. eta_flat:
+======================================================================================
+
+   3 s.f. : 9.38E-45   clause HOLDS
+   4 s.f. : 9.385E-45   clause HOLDS
+   5 s.f. : 9.3850E-45   clause HOLDS
+   6 s.f. : 9.38495E-45   clause HOLDS
+   7 s.f. : 9.384951E-45   clause HOLDS
+   8 s.f. : 9.3849511E-45   clause HOLDS
+   9 s.f. : 9.38495113E-45   clause HOLDS
+  10 s.f. : 9.384951126E-45   clause HOLDS
+  11 s.f. : 9.3849511264E-45   clause HOLDS
+  12 s.f. : 9.38495112638E-45   clause HOLDS
+  13 s.f. : 9.384951126378E-45   clause HOLDS
+
+======================================================================================
+Why no decimal of a square root may be rounded to nearest here
+======================================================================================
+
+eps_1^cut is sqrt(eta_flat/(4 C_3)): an irrational of a 12-digit rational.
+A ceiling must be truncated DOWN. Rounding the 12th significant figure to
+nearest put TAUFLAT 9.46e-7 above its bound (EPS1_SWEEP 4.5's finding) and
+puts EPS1_SWEEP's own replacement above its bound too, by the amount above.
+The defect is not the digits; it is quoting a decimal for the thing at all.

@@ -1,0 +1,24 @@
+18:58  up 5 days, 12:47, 2 users, load averages: 2.06 2.66 2.77
+System-wide memory free percentage: 42%
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-existence/checks/x4_soft_noise.py:176: RuntimeWarning: invalid value encountered in divide
+  (np.exp(1j * q * s) - 1) / (s * (np.exp(1j * q) - 1)))
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-existence/checks/x4_soft_noise.py:205: RuntimeWarning: invalid value encountered in divide
+  (np.exp(1j * q * s) - 1) / (s * (np.exp(1j * q) - 1)))
+       12.34 real        12.12 user         0.08 sys
+           229670912  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               16372  page reclaims
+                 315  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 264  voluntary context switches
+                1124  involuntary context switches
+        232090007018  instructions retired
+         48904093008  cycles elapsed
+           222102152  peak memory footprint

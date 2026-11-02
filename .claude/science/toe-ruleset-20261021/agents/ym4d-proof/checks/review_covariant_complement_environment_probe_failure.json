@@ -1,0 +1,6 @@
+{
+  "utc": "2026-10-29T22:00:30Z",
+  "failure": "ModuleNotFoundError: No module named psutil",
+  "stage": "read-only environment preflight; mathematical program not entered",
+  "disposition": "Use native Darwin memory_pressure -Q and process ps RSS watchdog; no package installed and no mathematical result inferred."
+}

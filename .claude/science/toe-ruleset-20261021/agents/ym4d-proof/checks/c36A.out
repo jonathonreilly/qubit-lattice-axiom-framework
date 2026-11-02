@@ -1,0 +1,26 @@
+A1: max ||Mbar - V|| = 7.53e-14  (2 s)
+A2: non-corner max ||U_p - 1|| = 1.28e-15; corner (864) max ||U_p - V_P|| = 0.00e+00
+A3: gauge covariance 3.16e-16; A4: max |rho_c| = 4.98e-14
+A1 PASS
+A2 PASS
+A3 PASS
+A4 PASS
+Part A: PASS (time 2 s, peak RSS 37 MB)
+        1.89 real         1.85 user         0.02 sys
+            38617088  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                4378  page reclaims
+                  47  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                 710  involuntary context switches
+         30589301637  instructions retired
+          7060031668  cycles elapsed
+            25313760  peak memory footprint

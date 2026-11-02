@@ -1,0 +1,49 @@
+{
+  "N": 3,
+  "r": 4.0,
+  "principal_HS_norm": 3.6275987284684352,
+  "principal_trace": [
+    -1.6653345369377348e-16,
+    6.283185307179586
+  ],
+  "minimum_traceless_log_norm": 5.130199320647456,
+  "injectivity_radius": 4.442882938158366,
+  "minimizing_integer_lift": [
+    -1,
+    0,
+    0
+  ],
+  "checks": [
+    {
+      "name": "center_is_SU3",
+      "pass": true
+    },
+    {
+      "name": "principal_log_passes_original_norm_event",
+      "pass": true
+    },
+    {
+      "name": "principal_log_is_not_su3",
+      "pass": true
+    },
+    {
+      "name": "traceless_log_minimum_exceeds_r",
+      "pass": true
+    },
+    {
+      "name": "r_is_below_HS_injectivity_radius",
+      "pass": true
+    },
+    {
+      "name": "minimizing_lift_exponentiates_to_center",
+      "pass": true
+    },
+    {
+      "name": "smaller_common_principal_chart_excludes_witness",
+      "pass": true
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "status": "Original definition needs explicit Lie-group log convention or smaller traceless principal-log chart; Gaussian Hessian unaffected."
+}

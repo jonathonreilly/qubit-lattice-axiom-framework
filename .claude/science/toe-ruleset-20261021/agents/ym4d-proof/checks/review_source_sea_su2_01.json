@@ -1,0 +1,114 @@
+{
+  "checks": {
+    "noncommuting_4D_tilted_site_reflection_conditional_form": true,
+    "actual_SU2_arithmetic_mean_Haar_kernel_normalizer": true,
+    "source_radius_and_conditional_AF_convention": true
+  },
+  "negative_controls": {
+    "penalty_was_not_constant_fixture": true,
+    "normal_link_reflection_inversion_omission_rejected": true,
+    "polar_projected_kernel_normalizer_rejected": true,
+    "uncompensated_kernel_normalizer_rejected": true,
+    "excess_source_radius_rejected": true,
+    "standard_coupling_slope_substitution_rejected": true
+  },
+  "RP": {
+    "torus_side": 6,
+    "plaquettes": 7776,
+    "cells": 1296,
+    "bad_cell_counts": [
+      [
+        148,
+        154,
+        162
+      ],
+      [
+        154,
+        160,
+        168
+      ],
+      [
+        162,
+        168,
+        176
+      ]
+    ],
+    "forms": [
+      {
+        "h": 0.0,
+        "max_log_factorization_error": 5.684341886080802e-14,
+        "smallest_eigenvalue": -1.7476276733260566e-14
+      },
+      {
+        "h": 0.7,
+        "max_log_factorization_error": 1.1368683772161603e-13,
+        "smallest_eigenvalue": -4.676753043785242e-18
+      },
+      {
+        "h": 3.1,
+        "max_log_factorization_error": 1.1368683772161603e-13,
+        "smallest_eigenvalue": -1.8048724220481016e-42
+      }
+    ],
+    "wrong_reflection_defect": 3.449605960476447
+  },
+  "kernel": [
+    {
+      "t": "0.2",
+      "mean_radius": "0.6614378277661476476254039384098151064275647957706125450920836148",
+      "normalizer_relative_error": "0.0",
+      "polar_normalizer_integral": "0.99719480472498145991666852343381140000433790644188618705918204988",
+      "unnormalized_numerator_integral": "0.82052303299475350366193254676964938902474348718538726376706323717"
+    },
+    {
+      "t": "2.0",
+      "mean_radius": "0.6614378277661476476254039384098151064275647957706125450920836148",
+      "normalizer_relative_error": "0.0",
+      "polar_normalizer_integral": "0.77660400930272285575107436744391626671097153905586385880867355341",
+      "unnormalized_numerator_integral": "0.16717899311047251909051311984926472877937655964512575710974503413"
+    },
+    {
+      "t": "7.0",
+      "mean_radius": "0.6614378277661476476254039384098151064275647957706125450920836148",
+      "normalizer_relative_error": "0.0",
+      "polar_normalizer_integral": "0.16793789223575143922588215759649689771454476252202072800067385018",
+      "unnormalized_numerator_integral": "0.0068273583328480358346567022977359261484838485563078179364483203133"
+    }
+  ],
+  "source_budget": [
+    {
+      "N": 2,
+      "L": 3,
+      "rho": "1/1000000000000000",
+      "a_remaining": "1922009/31250000000000",
+      "b_remaining": "488281249757/31250000000000",
+      "AF_volume_exponent_delta_one": 3.9767805620819643
+    },
+    {
+      "N": 2,
+      "L": 5,
+      "rho": "1/1000000000000000",
+      "a_remaining": "1713113/31250000000000",
+      "b_remaining": "781249997/50000000000",
+      "AF_volume_exponent_delta_one": 3.9767805620819643
+    },
+    {
+      "N": 3,
+      "L": 3,
+      "rho": "1/1000000000000000",
+      "a_remaining": "1906451/46875000000000",
+      "b_remaining": "976562499271/93750000000000",
+      "AF_volume_exponent_delta_one": 3.965170843122946
+    },
+    {
+      "N": 3,
+      "L": 5,
+      "rho": "1/1000000000000000",
+      "a_remaining": "1593107/46875000000000",
+      "b_remaining": "1562499991/150000000000",
+      "AF_volume_exponent_delta_one": 3.965170843122946
+    }
+  ],
+  "scope": "non-interval SU(2) diagnostics and exact rational budgets; no general-N or continuum proof",
+  "seconds": 0.08451366424560547
+}

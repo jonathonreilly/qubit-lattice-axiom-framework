@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "role": "author-only provenance and self-check; no independent scientific verdict or audit",
+  "requested_model": "Astra/max requested by coordinator; backend not independently attested",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+    "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+    "bytes": 30517,
+    "lines": 608
+  },
+  "freeze_order": "Source hash announced to root before provenance packaging and review dispatch.",
+  "claim": "Centered normalized Gaussian cutoff for actual PC lift covariance has complete-reader connected logarithm and complex nonvanishing, after RG8 and RG26, at mu=1/[3(16R)^4].",
+  "scope_exclusions": "Nonzero force, source-bearing Hessian/nonlinear interaction, original cuts, G/Omega, histories, moving contours, effective-level iteration and continuum existence/gap are not closed.",
+  "protected_sources_unchanged": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "bytes": 27584,
+      "lines": 543
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "bytes": 30251,
+      "lines": 564
+    }
+  ],
+  "package": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/reader_local_gaussian_return_read_manifest.json",
+      "sha256": "09891c4538c4c35426704541da0bcf0496c0a43888c8856aee1e9f7e6061310d",
+      "bytes": 8287,
+      "lines": 178
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/reader_local_gaussian_return_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153,
+      "lines": 9
+    }
+  ],
+  "author_analytic_checks": [
+    {
+      "location": "RG4–RG8",
+      "check": "Reconstructed the partition-of-unity entry envelope and weighted conjugation for arbitrary principal matrices and forest masks. The geometric row constant is independent of patch R; the explicit strengthened R condition implies both tau<=1/2 and t0<=a/16."
+    },
+    {
+      "location": "RG11–RG14",
+      "check": "Checked that the principal covariance marginal is normalized before expansion. The determinant logarithm sign, inverse-chain sign, exponential 1/k! and empty-set vacuum one are retained. Residual atoms are kept separately without cancellations."
+    },
+    {
+      "location": "RG15–RG17",
+      "check": "Marked determinant loops cancel the k cyclic placement count against 1/k; marked inverse chains produce the two resolvents. The resulting pin is D_v(X), whose total scalar mass is B_beta(E). Polynomial absorption uses explicit Gaussian slack."
+    },
+    {
+      "location": "RG18–RG20",
+      "check": "Reconstructed the exterior weak derivative sign, one sphere per touched link and all corners. Order-dependent entire-Gaussian Cauchy radii give sqrt factorials; source radii are not allowed to grow. Full marginal determinant cost remains in q."
+    },
+    {
+      "location": "RG21–RG25",
+      "check": "Endpoint-pair heat derivatives include the normalizer. Complete reader support is attached to each expanded species. The D factor in the endpoint colour-row sum and the already summed scalar colours in B_E are distinct. Prüfer counts and the distinguished-edge 1/n coefficient were checked symbolically in the written proof."
+    },
+    {
+      "location": "RG27–RG29",
+      "check": "Reader-overlap regrouping is a bijection on field-disjoint families, not a relabeling of incompatibility. Two separate rooted-tree supersolutions spend beta/3 each and leave beta/3. The connected graph interval cancellation and multiplier continuation prove the stated logarithm and nonvanishing."
+    },
+    {
+      "location": "RG30",
+      "check": "The exact actual chart factor still contains force, source Hessian, nonlinear remainder, Haar normalization, full determinant and vacuum. The centered result is not substituted for that integral."
+    }
+  ],
+  "mechanical_checks": {
+    "source_hash_after_report_only_lint": "matches announced freeze",
+    "equation_ids": "RG1 through RG30 present exactly once as displayed equation labels",
+    "trailing_whitespace": "none",
+    "fences": "balanced",
+    "vocab_lint": "report-only execution returned zero files with violations; source unchanged",
+    "local_links": {
+      "result": "all resolve",
+      "targets": [
+        "POSITIVE_READER_COVARIANCE_ASTRA.md",
+        "checks/reader_local_gaussian_return_read_manifest.json",
+        "checks/reader_local_gaussian_return_receipt.json"
+      ]
+    }
+  },
+  "numerical_experiments": "none; no preregistration or numeric resources needed",
+  "independent_review": "pending; coordinator owns fresh hostile review",
+  "git_and_shared_operations": "none mutated by author; immutable git show/grep reads only",
+  "next_step": "Independent proof review of the frozen mathematical source and exact PC input, then coordinator integration if scoped LAND."
+}

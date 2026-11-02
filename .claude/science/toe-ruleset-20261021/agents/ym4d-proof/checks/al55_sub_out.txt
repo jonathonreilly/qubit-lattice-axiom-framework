@@ -1,0 +1,27 @@
+PASS P1 s3: sigma_3^4 | a and sigma_3^5 does not
+INFO s3 n=1 ||S_c^n||_inf=25/27  (norm^2 * b^n = 625/243 ~ 2.572016)
+INFO s3 n=2 ||S_c^n||_inf=401/729  (norm^2 * b^n = 160801/59049 ~ 2.723179)
+INFO s3 n=3 ||S_c^n||_inf=5545/19683  (norm^2 * b^n = 30747025/14348907 ~ 2.142813)
+INFO s3 n=4 ||S_c^n||_inf=71201/531441  (norm^2 * b^n = 5069582401/3486784401 ~ 1.453942)
+INFO s3 n=5 ||S_c^n||_inf=875065/14348907  (norm^2 * b^n = 765738754225/847288609443 ~ 0.903752)
+INFO s3 n=6 ||S_c^n||_inf=10452401/387420489  (norm^2 * b^n = 109252686664801/205891132094649 ~ 0.530633)
+INFO s3 n=7 ||S_c^n||_inf=122416585/10460353203  (norm^2 * b^n = 14985820283062225/50031545098999707 ~ 0.299527)
+PASS P2 s3 certified C^{1,beta}, beta > 1/2 | first n = 5, ||S_c^n|| = 875065/14348907
+PASS P4a s3 interpolatory
+INFO s5 mask (x 15625?): {-9: '-4/125', -8: '-7/125', -7: '-8/125', -6: '-6/125', -4: '27/125', -3: '56/125', -2: '84/125', -1: '108/125', 0: '1', 1: '108/125', 2: '84/125', 3: '56/125', 4: '27/125', 6: '-6/125', 7: '-8/125', 8: '-7/125', 9: '-4/125'}
+INFO s5 n=1 ||S_c^n||_inf=21/25  (norm^2 * b^n = 441/125 ~ 3.528000)
+INFO s5 n=2 ||S_c^n||_inf=249/625  (norm^2 * b^n = 62001/15625 ~ 3.968064)
+INFO s5 n=3 ||S_c^n||_inf=2541/15625  (norm^2 * b^n = 6456681/1953125 ~ 3.305821)
+INFO s5 n=4 ||S_c^n||_inf=24369/390625  (norm^2 * b^n = 593848161/244140625 ~ 2.432402)
+INFO s5 n=5 ||S_c^n||_inf=226821/9765625  (norm^2 * b^n = 51447766041/30517578125 ~ 1.685840)
+FAIL P3 s5: sigma_5^4 | a and certified C^{1,beta}, beta > 1/2 at n <= 5 | ok
+PASS P4b s5 interpolatory
+INFO s3 n=7: beta > 1/2 certified: True
+INFO s3 n=7: beta > 3/5 certified: False
+INFO s3 n=7: beta > 2/3 certified: False
+INFO s3 n=7: beta > 7/10 certified: False
+INFO s3 n=7: beta > 3/4 certified: False
+INFO s3 n=7: beta > 4/5 certified: False
+CONTROL FIRES C1 linear interpolation (C^0) is not certified C^{1,beta} for any n <= 7
+CONTROL FIRES C2 perturbed s3 loses sigma^2-divisibility or certification
+SUMMARY: 7 items, all ok = False

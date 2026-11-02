@@ -1,0 +1,702 @@
+{
+  "passed": true,
+  "assertion_count": 97,
+  "checks": [
+    {
+      "name": "n2_F1_all_pairings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F1_connected_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F1_no_self_inclusion_exclusion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F1_connected_no_self_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F1_uv_power",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F1_external_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F2_all_pairings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F2_connected_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F2_no_self_inclusion_exclusion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F2_connected_no_self_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F2_uv_power",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F2_external_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F3_all_pairings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F3_connected_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F3_no_self_inclusion_exclusion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F3_connected_no_self_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F3_uv_power",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F4_all_pairings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F4_connected_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F4_no_self_inclusion_exclusion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F4_connected_no_self_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F4_uv_power",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F5_all_pairings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F5_connected_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F5_no_self_inclusion_exclusion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F5_connected_no_self_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n2_F5_uv_power",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F1_all_pairings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F1_connected_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F1_no_self_inclusion_exclusion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F1_connected_no_self_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F1_uv_power",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F1_external_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F2_all_pairings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F2_connected_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F2_no_self_inclusion_exclusion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F2_connected_no_self_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F2_uv_power",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F2_external_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F3_all_pairings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F3_connected_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F3_no_self_inclusion_exclusion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F3_connected_no_self_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F3_uv_power",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F4_all_pairings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F4_connected_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F4_no_self_inclusion_exclusion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F4_connected_no_self_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F4_uv_power",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quartic_four_support_star",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F5_all_pairings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F5_connected_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F5_no_self_inclusion_exclusion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F5_connected_no_self_mobius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "n4_F5_uv_power",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vertex_X0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vertex_X1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vertex_X2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vertex_V1_including_ghost",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vertex_V2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "B4_polynomial_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "B2_polynomial_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cext_polynomial_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Bstar_polynomial_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cstar_polynomial_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "star_integral_rational_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "separated_component_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "heat_scalar_error_constant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "heat_curvature_error_constant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "heat_operator_error_constant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "heat_E_endpoint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "four_cycle_error_constant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two_cycle_error_constant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "free_A4_half_margin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "free_A2_half_margin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_regulator_D4_conversion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_regulator_D2_conversion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Taylor_degree_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Taylor_degree_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Taylor_degree_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ratio_linear_coefficient",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "truncation_positive_margin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_ratio_positive_margin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_ratio_R0_margin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "polynomial_cumulant_margin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FLOW_reciprocal_denominator_polynomial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "uniform_log_remainder_envelope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exponential_remainder_envelope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "five_family_identity_independent_n2",
+      "passed": true,
+      "detail": {
+        "direct": "1398",
+        "families": [
+          "120",
+          "90",
+          "-1260",
+          "-432",
+          "2880"
+        ]
+      }
+    },
+    {
+      "name": "odd_control_coefficient_n2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mutation_missing_half_detected_n2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "five_family_identity_independent_n4",
+      "passed": true,
+      "detail": {
+        "direct": "1979856",
+        "families": [
+          "112896",
+          "236880",
+          "-2102400",
+          "-414720",
+          "4147200"
+        ]
+      }
+    },
+    {
+      "name": "odd_control_coefficient_n4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mutation_missing_half_detected_n4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mutation_disconnected_count_detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mutation_wrong_ratio_detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mutation_bare_uniformity_detected",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "graphs": [
+    {
+      "total": 15,
+      "connected": 12,
+      "no_self": 0,
+      "connected_no_self": 0,
+      "quartic_star": 0,
+      "n": 2,
+      "family": 1,
+      "degrees": [
+        4,
+        2
+      ]
+    },
+    {
+      "total": 15,
+      "connected": 15,
+      "no_self": 6,
+      "connected_no_self": 6,
+      "quartic_star": 0,
+      "n": 2,
+      "family": 2,
+      "degrees": [
+        3,
+        3
+      ]
+    },
+    {
+      "total": 105,
+      "connected": 90,
+      "no_self": 36,
+      "connected_no_self": 36,
+      "quartic_star": 0,
+      "n": 2,
+      "family": 3,
+      "degrees": [
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "total": 105,
+      "connected": 72,
+      "no_self": 24,
+      "connected_no_self": 24,
+      "quartic_star": 0,
+      "n": 2,
+      "family": 4,
+      "degrees": [
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "total": 945,
+      "connected": 720,
+      "no_self": 372,
+      "connected_no_self": 360,
+      "quartic_star": 0,
+      "n": 2,
+      "family": 5,
+      "degrees": [
+        2,
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "total": 945,
+      "connected": 576,
+      "no_self": 288,
+      "connected_no_self": 288,
+      "quartic_star": 0,
+      "n": 4,
+      "family": 1,
+      "degrees": [
+        4,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "total": 945,
+      "connected": 720,
+      "no_self": 372,
+      "connected_no_self": 360,
+      "quartic_star": 0,
+      "n": 4,
+      "family": 2,
+      "degrees": [
+        3,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "total": 10395,
+      "connected": 7200,
+      "no_self": 4440,
+      "connected_no_self": 4176,
+      "quartic_star": 0,
+      "n": 4,
+      "family": 3,
+      "degrees": [
+        3,
+        2,
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "total": 10395,
+      "connected": 5760,
+      "no_self": 3744,
+      "connected_no_self": 3456,
+      "quartic_star": 1152,
+      "n": 4,
+      "family": 4,
+      "degrees": [
+        2,
+        2,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "total": 135135,
+      "connected": 86400,
+      "no_self": 61128,
+      "connected_no_self": 55296,
+      "quartic_star": 0,
+      "n": 4,
+      "family": 5,
+      "degrees": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ]
+    }
+  ],
+  "guards": [
+    {
+      "peak_rss_bytes": 17006592
+    },
+    {
+      "peak_rss_bytes": 17006592
+    },
+    {
+      "peak_rss_bytes": 17006592
+    },
+    {
+      "peak_rss_bytes": 17006592
+    },
+    {
+      "peak_rss_bytes": 17006592
+    },
+    {
+      "peak_rss_bytes": 17006592
+    },
+    {
+      "peak_rss_bytes": 17006592
+    },
+    {
+      "peak_rss_bytes": 17006592
+    },
+    {
+      "peak_rss_bytes": 17006592
+    },
+    {
+      "peak_rss_bytes": 17006592
+    },
+    {
+      "peak_rss_bytes": 17006592
+    },
+    {
+      "peak_rss_bytes": 17022976
+    }
+  ],
+  "scientific_completion": {
+    "uniform_renormalized_Cbar": "OPEN / NOT PASSED",
+    "positive_original_YM_window": "OPEN / NOT PASSED",
+    "reason": "Internal subtractions, finite counterterms, matching and uniform remainders are not enclosed."
+  }
+}

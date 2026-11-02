@@ -1,0 +1,16 @@
+c36 run record (session 20). Criteria checks/c36_criteria.md written before checks/c36_nah1.py.
+Every job behind the machine-wide numeric lock (scratchpad s20/runlocked.sh: until mkdir lock; trap rmdir), nice 10,
+OPENBLAS/OMP/MKL/vecLib threads 1, PYTHONDONTWRITEBYTECODE=1, no `timeout`, without -I (numpy). Load (1-min) 2.8-3.6 and
+free memory 36-43% recorded before the jobs (per-job .time files).
+- C (exact rationals): PASS, 8 s, RSS 175 MB (00:22 UTC).
+- A (exact lift): PASS, 2 s, 37 MB (00:32 UTC).
+- D (level 1 Bloch): PASS, 90 s, RSS 733 MB (macOS peak memory footprint 957 MB, under the 1 GB cap) (00:33 UTC).
+- B (d = 2 SU(2) branch + Schur): **FAIL as pre-registered.** t = 0.05: B1, B2 (≤ 2.1e-7), B3 hold; t = 0.15: the
+  contraction iteration from the lift diverges (residuals 1.9, 0.096, 0.009, 0.0045, 0.0066, … → nan), so B1-B3 fail
+  there and B4's eigensolver raised LinAlgError on the nan matrix (the summary line was not printed). No criterion edited.
+  Post-run diagnostic (disclosed; c36B_diag.py/.out, not a criterion): the iteration converges for max coarse plaquette
+  angle 0.147, 0.296, 0.512 and (slowly) 0.596, and diverges at 0.781 (the t = 0.15 background). Lemma BR1 is a
+  small-ε statement (ε_br astronomically small); the diagnostic only locates where this particular iteration stops working.
+- Before the runs (disclosed): part B's branch re-solve was changed from a full re-Hessian Newton to the BR1 contraction
+  preconditioned by the base covariance (speed), and part D's memory use was reduced; no criterion text changed.
+- c36_consts.py: constants arithmetic (c_D certified by an exact rational LDL^T; the rest floats, informational).

@@ -1,0 +1,13 @@
+{
+  "recorded_utc": "2026-10-30T00:45:50.195923+00:00",
+  "author_receipt_sha256": "9a8bc2b7b72852472f1467c99a844a245d77e74779e5c380a8e44ed6b03610e5",
+  "artifact_count": 4,
+  "protected_history_count": 98,
+  "unchanged_producer_count": 4,
+  "verified_author_range_digests": 19,
+  "all_hash_checks_pass": true,
+  "failures": [],
+  "author_diff_matches_independent_diff": true,
+  "proof_or_read_attestation": false,
+  "coverage": "Programmatic hashes validate byte identity and declared range digests only; they do not prove reading or mathematics. Author receipt/read manifest were examined after independent findings_v1 freeze."
+}

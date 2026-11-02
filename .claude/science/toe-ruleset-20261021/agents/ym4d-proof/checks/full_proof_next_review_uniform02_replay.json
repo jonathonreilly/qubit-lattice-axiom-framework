@@ -1,0 +1,22 @@
+{
+  "label": "uniform02",
+  "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02.py",
+  "script_sha256": "130945a61221f1b195bad7bf35adc13deaeab3753e905a7d7b92211640b76490",
+  "copies": {
+    "review_uniform_soft_02.py": "130945a61221f1b195bad7bf35adc13deaeab3753e905a7d7b92211640b76490"
+  },
+  "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-next-reviews-root-replay-3yv6qmmm/uniform02",
+  "exit_code": 0,
+  "wall_seconds": 0.8765201568603516,
+  "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_review_uniform02_out.json",
+  "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_review_uniform02_err.txt",
+  "stdout_sha256": "d4d648e864595107f15f9c594d4646fdf0c4f60c6d318ac89ba858aaaa405ea2",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02_out.json",
+  "reference_sha256": "0164737f7f9b694696536a32394210a0b88d87642464223a990f32b3107ef97b",
+  "excluded_top_level_timing_field": "elapsed_seconds",
+  "exact_non_time_json_match": true,
+  "differing_top_level_keys": [],
+  "source_unchanged": true,
+  "reference_unchanged": true
+}

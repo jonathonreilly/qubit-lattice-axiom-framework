@@ -1,0 +1,52 @@
+{
+  "role": "independent scoped source review receipt; not audit or integration status",
+  "utc": "2026-10-30T01:47:50.728432+00:00",
+  "verdict": "LAND",
+  "scope": "bounded full-mode lift-Hessian covariance construction only",
+  "requested_model_effort": "Astra/max; request is not backend attestation",
+  "independence": "fresh same-family reviewer context; preliminary reconstruction before source, mathematical findings before author evidence",
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+    "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+    "read_ranges": [
+      [
+        1,
+        543
+      ]
+    ]
+  },
+  "head": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+  "procedure_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "review_records": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "306195ea1bb4694d5fe00cab544490684a67f3ee7f3bffae0caca8fd14e5d37e",
+      "bytes": 8846
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_positive_reader_covariance_preliminary.md",
+      "sha256": "e2dab61993862c46d9ad4959db09a395299fa571c229dee4826dcda61f93b2aa",
+      "bytes": 9529
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_positive_reader_covariance_mathematical_findings.md",
+      "sha256": "634cfa9284033632f7169f889e234eec68df7c7b526490fdbe359401eb35142b",
+      "bytes": 10190
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_positive_reader_covariance_identity_check.json",
+      "sha256": "ad68546f33b2f45c4e6a75320b724a475396e3c92f8e1b960477b1af84cc00f1",
+      "bytes": 7636
+    }
+  ],
+  "author_receipt_sha256": "e832c7adc23448a45f714cd338216326da9e827fcb5210763b3ef6e8ff8340bf",
+  "material_findings": 0,
+  "source_repairs": 0,
+  "scientific_numerical_experiments": 0,
+  "git_mutations": 0,
+  "full_pipeline_runs": 0,
+  "audit_or_ledger_operations": 0,
+  "final_owned_whitespace_and_links": "clean",
+  "continuum_existence_established": false,
+  "physical_continuum_mass_gap_established": false
+}

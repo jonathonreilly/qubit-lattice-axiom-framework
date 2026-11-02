@@ -1,0 +1,329 @@
+{
+  "author_artifact_reads": "Complete source, complete main/posthoc checker and criteria, current launcher, receipt/read manifest, main/posthoc mathematical results, and recorded runtime/parser failures. Empty stderr/stdout checked by byte length. Original JSON-lines output parsed mechanically, with mathematical records fully reviewed in results JSON. Hash identity is not a proof of reading.",
+  "concurrent_changes": "Root reports unrelated SA/UL/TSE review integration and Claude REC_CONT HOLD/REC_LIB status update. None is a CC premise; no new such theorem consumed. All21 author artifacts and other14 inputs remain exact. LITERATURE_BRIDGES original282318... pin was verified at entry; currentae281... changes navigation/SA-UL review status only, confirmed by root and scoped reread. No source evidence is restamped.",
+  "created_utc": "2026-10-29T22:14:22.283891+00:00",
+  "external_reads": [
+    {
+      "identity": "Dimock, A Covariant Axial Gauge",
+      "read_coverage": "Abstract/introduction and sections2.1-2.2, web lines35-145 including tree constraints/Prop1. No whole-paper read.",
+      "role": "Attribution and abelian/dimension mismatch; no nonabelian theorem imported.",
+      "url": "https://arxiv.org/html/1410.2798v3"
+    },
+    {
+      "identity": "Dimock, The Renormalization Group According to Balaban II. Large Fields",
+      "read_coverage": "Introduction/model web lines58-129 and AppendixF lines3090-3155, equations633-646.",
+      "role": "Independent-site/small-localized-interaction hypothesis comparison; no outer-cut-law theorem imported.",
+      "url": "https://arxiv.org/html/1212.5562v2"
+    },
+    {
+      "identity": "Balaban, CMP116 (1988), DOI10.1007/BF01239022",
+      "read_coverage": "Original scan parsed text printedpages1-2, lines0-80; incidental beginning of page3 visible. Not whole paper; no PDF-byte hash.",
+      "role": "Localization then exponentiation architecture; no detailed lemma imported.",
+      "url": "https://scispace.com/pdf/renormalization-group-approach-to-lattice-gauge-field-4penm4k7hc.pdf"
+    },
+    {
+      "access": "Failed tool retrieval; original scan alternate used. Not mathematical counterevidence.",
+      "url": "https://doi.org/10.1007/BF01239022"
+    }
+  ],
+  "independence": "Independent analytic plan, preregistered numerical criteria, implementation and19/19 run preceded author-checker/criteria exposure. Target aggregate outcomes were known. Same-family fresh context. Later author replays are reproductions.",
+  "methodology": [
+    {
+      "bytes": 11788,
+      "entry_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "bytes": 2180,
+      "entry_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 24561,
+      "entry_sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23"
+    },
+    {
+      "bytes": 5188,
+      "entry_sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+    },
+    {
+      "bytes": 12608,
+      "entry_sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "read_coverage": "Read initial scope plus full relevant original-review, frozen-input, per-unit and combined integration rules, including reread90-155. No canonical integration receipt or combined gate claimed.",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14"
+    },
+    {
+      "bytes": 12940,
+      "entry_sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85"
+    },
+    {
+      "bytes": 7554,
+      "entry_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "bytes": 23216,
+      "entry_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+    },
+    {
+      "bytes": 21536,
+      "entry_sha256": "42a24d3df296f01e4189eadd1ef8b92f316bd8d14229f14643641e39939d159e",
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "read_coverage": "Schema reference inspected in initial batch with truncation; no complete-schema reading or canonical receipt validation claimed. This is a source-review evidence receipt; canonical enrollment remains coordinator-owned.",
+      "sha256": "42a24d3df296f01e4189eadd1ef8b92f316bd8d14229f14643641e39939d159e"
+    },
+    {
+      "bytes": 1118,
+      "path": "AGENTS.md",
+      "read_coverage": "Full applicable worktree instructions.",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0"
+    },
+    {
+      "bytes": 11333,
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "read_coverage": "Full active axiom document; target is conditional model analysis, no primitive adoption.",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "bytes": 6427,
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "read_coverage": "Full primitive-check methodology.",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "bytes": 6416,
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "read_coverage": "Full premise-node registry; read-only.",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "bytes": 11572,
+      "path": "docs/audit/data/premise_decision_history.json",
+      "read_coverage": "Full decision history; read-only.",
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113"
+    },
+    {
+      "bytes": 4975,
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "read_coverage": "Full applicable proof-search governance.",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "bytes": 3694,
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "read_coverage": "Full workflow; no shared queue writes.",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf"
+    },
+    {
+      "bytes": 22309,
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "read_coverage": "Lines1-85 current workflow/context; no queue-wide disposition.",
+      "sha256": "4df23ed611d808e3dd28d2a14b5407a16c9eb4d2c632017666b9a240a78199ce"
+    },
+    {
+      "bytes": 10595,
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "read_coverage": "Lines1-85 plus visible86-205 context with some batch output truncation; no deferred adoption consumed.",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e"
+    },
+    {
+      "bytes": 39977,
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "read_coverage": "Relevant initial naming rules and reread88-115; initial batch had partial truncation.",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca"
+    },
+    {
+      "bytes": 109438,
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "read_coverage": "Initial entries and bounded index context; no unrelated retained-lane theorem consumed.",
+      "sha256": "f2665b763f69e4baef4648d15b517b2701d975a8131f4665703c40c07283782c"
+    },
+    {
+      "bytes": 35690,
+      "path": "docs/audit/README.md",
+      "read_coverage": "Lines1-100: audit boundaries; no verdict assigned.",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f"
+    },
+    {
+      "bytes": 20680,
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "read_coverage": "Full installed skill router; current-main methodology and PROCESS_LIGHT control task scope.",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879"
+    }
+  ],
+  "reviewer": "/root/review_covariant_complement; user-selected Astra/max; same-family fresh restricted context",
+  "source_inputs": [
+    {
+      "author_frozen_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "changed_since_author_freeze": false,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "read_coverage": "Full owner process; supersedes inconsistent lane workflow. Independent source review only; coordinator owns Git and integration.",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+    },
+    {
+      "author_frozen_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217,
+      "changed_since_author_freeze": false,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "read_coverage": "Lines1-104 and508-635: definitions/SA4 and scope/remaining complement SA28-SA33. Its selected-sector proof is not a premise of this unit and is not independently certified here.",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54"
+    },
+    {
+      "author_frozen_sha256": "0e769d5e94a3bed0617c5b8e50c81a04cdb3f51466514693ae8f30ac38d01c4c",
+      "bytes": 4131,
+      "changed_since_author_freeze": false,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_receipt.json",
+      "read_coverage": "Full frozen metadata and artifact inventory. Hash identity only; no checker or proof coverage inherited.",
+      "sha256": "0e769d5e94a3bed0617c5b8e50c81a04cdb3f51466514693ae8f30ac38d01c4c"
+    },
+    {
+      "author_frozen_sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "changed_since_author_freeze": false,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "read_coverage": "Lines1-215: CB1-CB8 definitions, path means and local coordinates. No stronger covariance/mixing theorem imported.",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74"
+    },
+    {
+      "author_frozen_sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "bytes": 48847,
+      "changed_since_author_freeze": false,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "read_coverage": "Lines1-730: entire argument through H28, definitions H1-H15, source domain H19-H20c, actual gas H21-H25, joint consumer and beginning of evidence. Later evidence narrative not needed or claimed read.",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850"
+    },
+    {
+      "author_frozen_sha256": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+      "bytes": 21817,
+      "changed_since_author_freeze": false,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "read_coverage": "Full report. Adopt only exact reviewed H identities and pointwise gas convergence at their stated assumptions; no whole-PR or outer-sea result.",
+      "sha256": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0"
+    },
+    {
+      "author_frozen_sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+      "bytes": 23793,
+      "changed_since_author_freeze": false,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "read_coverage": "Lines1-365: Sea1-Sea16 and exact integrated-V reference. Comparison consumer only; no fixed-V theorem imported.",
+      "sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438"
+    },
+    {
+      "author_frozen_sha256": "02b7b7ee556df6f501bc0c206497192423b01633c1907fa3bd6ff2019d75ab0b",
+      "bytes": 18251,
+      "changed_since_author_freeze": false,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOFTHARD_R2.md",
+      "read_coverage": "Full report; exact current-versus-next-variable return mismatch and open sea consumer.",
+      "sha256": "02b7b7ee556df6f501bc0c206497192423b01633c1907fa3bd6ff2019d75ab0b"
+    },
+    {
+      "author_frozen_sha256": "0bafb04ecda4b88f13f958026f4c817b3d536207a0de2d1f347f425e5f61097c",
+      "bytes": 203830,
+      "changed_since_author_freeze": false,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HIST.md",
+      "read_coverage": "Lines270-288: joint next-level interior integration and unchanged exterior convention. No complete HIST theorem reviewed.",
+      "sha256": "0bafb04ecda4b88f13f958026f4c817b3d536207a0de2d1f347f425e5f61097c"
+    },
+    {
+      "author_frozen_sha256": "089a559f063c87467a804085dc57e313f8ab897d5bf1c09554f5c5fe3f5d811b",
+      "bytes": 389932,
+      "changed_since_author_freeze": false,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PLD.md",
+      "read_coverage": "Lines481-505: section9.4 SC-k normalized sea logarithm and derivative consumer.",
+      "sha256": "089a559f063c87467a804085dc57e313f8ab897d5bf1c09554f5c5fe3f5d811b"
+    },
+    {
+      "author_frozen_sha256": "79bc36d60687376716aa425ad3c271b681ca9549f5d217693e2736b805cdf0e7",
+      "bytes": 81497,
+      "changed_since_author_freeze": false,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LARGE55.md",
+      "read_coverage": "Lines488-527 and725-744: invariant action/reference obligations I1-I9 and E13/E14 boundary-price consumers.",
+      "sha256": "79bc36d60687376716aa425ad3c271b681ca9549f5d217693e2736b805cdf0e7"
+    },
+    {
+      "author_frozen_sha256": "282318a0c398d49a8c69bc1f2173c90ef463634beaba55e2f4d2792af8b64815",
+      "bytes": 24710,
+      "changed_since_author_freeze": true,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "read_coverage": "Lines1-22: bounded register scope and B01-B12, chiefly B03/B06/B07 relevant to localization and gauge context. Not an exhaustive literature read.",
+      "sha256": "ae281c9e310a4b4b21f6a5347813ead4d279967e03ef4b1fee82f64a4a26fcb1"
+    },
+    {
+      "author_frozen_sha256": "288aee552bf7c83b32d6b0cc1569a99053355544704021e52ddea522ca8ce50b",
+      "bytes": 10531,
+      "changed_since_author_freeze": false,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "read_coverage": "Full current register: mathematical model data, theorem imports versus comparisons, no new adopted physical primitive.",
+      "sha256": "288aee552bf7c83b32d6b0cc1569a99053355544704021e52ddea522ca8ce50b"
+    },
+    {
+      "author_frozen_sha256": "a7c9581d797d3c36978c9677782c6c0d67c9b0e9251252f9f634404acccc3ece",
+      "bytes": 8196,
+      "changed_since_author_freeze": false,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature.md",
+      "read_coverage": "Full local primary-reading ledger, checked as source attribution; its external coverage is not represented as this reviewer own coverage.",
+      "sha256": "a7c9581d797d3c36978c9677782c6c0d67c9b0e9251252f9f634404acccc3ece"
+    },
+    {
+      "author_frozen_sha256": "c98c5530c75f1d6a000587d7915754e9c08ed45659b22bce0c29cbebcdea2194",
+      "bytes": 14500,
+      "changed_since_author_freeze": false,
+      "frozen_pin_verified_at_entry": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_read_manifest.json",
+      "read_coverage": "Lines1-130 and165-182: inventory/provenance context and exact methodology fields. No listed proof or external read is inherited as reviewer coverage.",
+      "sha256": "c98c5530c75f1d6a000587d7915754e9c08ed45659b22bce0c29cbebcdea2194"
+    },
+    {
+      "bytes": 28162,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_COMPLEMENT_ASTRA.md",
+      "read_coverage": "Complete527-line source: lines1-520 plus final8lines; CC1-CC23 and all evidence/scope/attribution statements.",
+      "sha256": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b"
+    },
+    {
+      "bytes": 785687,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "read_coverage": "Lines1158-1218 and2214-2284: actual S1-S4 conventions, Decision4 paired-root normalized compact kernel and normalizer.",
+      "sha256": "57e8df4d24ab7cbfc8d4383841ab1fc8bc0cc8bdf247d3e0dd70ff4d02cb482c"
+    },
+    {
+      "bytes": 134489,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RLARGE.md",
+      "read_coverage": "Lines270-310 and880-925: actual defect/completion definitions and remaining localization context; no full RLARGE theorem imported.",
+      "sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+[
+  {
+    "tag": "axial",
+    "url": "https://arxiv.org/pdf/1410.2798v3",
+    "retrieved_utc": "2026-10-29T17:24:45.723601+00:00",
+    "tls": "verified with certifi CA bundle",
+    "sha256": "4742e86f6c701b15a598e0ff661b7881d8e7e6d3c2a60c45c0a60bed8c7c16b4",
+    "bytes": 292405,
+    "path": "/tmp/uniform_soft_minimizer_primary/axial.pdf",
+    "pages": 23,
+    "locator_pages": {
+      "Proposition 5": [
+        13
+      ],
+      "Proposition 6": [
+        14
+      ],
+      "Proposition 7": [
+        20
+      ],
+      "Theorem 1": [],
+      "(189)": [],
+      "(291)": [],
+      "(303)": [],
+      "(327)": []
+    }
+  },
+  {
+    "tag": "multiscale",
+    "url": "https://arxiv.org/pdf/1712.10029v3",
+    "retrieved_utc": "2026-10-29T17:24:46.134311+00:00",
+    "tls": "verified with certifi CA bundle",
+    "sha256": "1747a54afe35b9fa51ebf96d8257cbe7ea0f002d6fdd203daaff80950b60de8e",
+    "bytes": 600279,
+    "path": "/tmp/uniform_soft_minimizer_primary/multiscale.pdf",
+    "pages": 53,
+    "locator_pages": {
+      "Proposition 5": [],
+      "Proposition 6": [],
+      "Proposition 7": [],
+      "Theorem 1": [
+        2,
+        43
+      ],
+      "(189)": [
+        26
+      ],
+      "(291)": [
+        38
+      ],
+      "(303)": [
+        40,
+        43,
+        46
+      ],
+      "(327)": [
+        43
+      ]
+    }
+  }
+]

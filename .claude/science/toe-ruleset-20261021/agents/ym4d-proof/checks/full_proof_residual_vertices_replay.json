@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-29T14:21:43.883637+00:00",
+  "seconds": 30.076008834003005,
+  "manifest_sha256": "a9f95e4380250f8674db0c6637bf6a3e58a00a19b968538bfabedf1bf9d35be0",
+  "verified_artifacts": 5,
+  "verified_prior_checkpoints": 2,
+  "exit_code": 0,
+  "stdout_exact_match": true,
+  "stderr_bytes": 0,
+  "stdout_sha256": "c52b4d505807a26d55568ddde5385678410efbd851f96f6eb9d15137024a7f21",
+  "scope": "Reproduction of 13 exact algebra controls, not independent validation of Ward/locality/pole or limit arguments."
+}

@@ -1,0 +1,6 @@
+check x3 (x3_soft_rp.py), 2026-10-27 22:19 UTC (local 18:19), first and only run.
+wall 3.51 s (user 3.39 s), peak RSS 92.8 MB, one process, nice 10, OPENBLAS/OMP/MKL threads = 1.
+Before the run: load averages 2.98 2.96 2.65; system-wide memory free 33%.
+Run as `python3` without -I (numpy is in the user site); the script reads no external files.
+Result: A PASS; B1 min eig/max eig = -0.195 (site-plane RP fails for the normalised kernel in this toy);
+B2 PSD (-5e-16); C PASS (max ||R||/delta^2 = 0.43 SU(2), 0.34 SU(3): discriminating per the criterion, >= 0.1).

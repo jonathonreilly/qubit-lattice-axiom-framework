@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "frozen_at_utc": "2026-10-30T07:12:01.472767+00:00",
+  "stage": "Independent source-only findings frozen; no packets accessed.",
+  "source_sha256": {
+    "REGIONAL_CHART_RETURN_ASTRA.md": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+    "REGIONAL_CRITICAL_FIELD_ASTRA.md": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b"
+  },
+  "report": {
+    "path": "REVIEW_REGIONAL_CHART_RETURN_ASTRA.md",
+    "sha256": "158143f1876d2a75a5aa136bff2e2a6b54dd8224444e9a99aefc70f8b4116011",
+    "lines": 276
+  },
+  "immutable_prepacket_report": {
+    "path": "checks/review_regional_chart_return_prepacket_report.md",
+    "sha256": "158143f1876d2a75a5aa136bff2e2a6b54dd8224444e9a99aefc70f8b4116011",
+    "byte_equal_to_report_at_freeze": true
+  },
+  "read_manifest": {
+    "path": "checks/review_regional_chart_return_read_manifest.json",
+    "sha256": "0a0bdbc209f95c5454f06e6098daa6bb4140fcb971840560bdc3400754160057"
+  },
+  "verdict": "LAND",
+  "verdict_scope": "Bounded deterministic-region actual original-coordinate chart theorem; full continuum existence and physical mass gap remain OPEN.",
+  "blocking_findings": 0,
+  "source_fixes": 0,
+  "author_packet_access": false,
+  "extensions": []
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "role": "Author bounded read provenance only; neither independent review nor audit.",
+  "requested_configuration": "Astra/max requested by coordinator; backend configuration not independently attested.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REAL_GAUSSIAN_JET_FOREST_ASTRA.md",
+    "lines": 597,
+    "sha256": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627"
+  },
+  "inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "lines": 753,
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "direct_read_ranges_this_unit": "1-753",
+      "use": "Complete source read: exact density lists, independent-pair heat/clock forest, individual scalar factorials, translation/root pins, Gaussian active-volume costs, full reader and charged rescaling assembly."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "lines": 937,
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "direct_read_ranges_this_unit": "1-570",
+      "use": "Actual (6,4) original-unit directions, label counts, fixed-versus-moving center distinction, all-link Haar pullback and frozen predicates, rough real jets, canonical actual-V moving Gaussian, and explicit normalized density/translation lists.",
+      "carried_same_session_coverage": "Full 1-937 direct read in preceding BARE_CUT_WHITE unit; unchanged hash rechecked."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "lines": 644,
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "direct_read_ranges_this_unit": "1-493",
+      "use": "Actual normalized interacting chart; all original first-shell/absence selectors; selected-D resummation, simultaneous conditional denominators and buffer joint moments. Local bounded labels are explicitly not localized normalized chart moments."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "lines": 592,
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "direct_read_ranges_this_unit": "145-245;290-495",
+      "use": "Actual finite core and both signed tails, complete ambient readers, endpoint versus marked norms, smallness/radius order, actual real critical field and canonical agreement, principal active covariance and full-reader endpoint decoupling.",
+      "carried_same_session_coverage": "Full 1-592 read in preceding WHITE unit; carried through bare-cut-white manifest and unchanged hash rechecked."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "lines": 734,
+      "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "direct_read_ranges_this_unit": "1-45;485-560",
+      "use": "Literal frozen physical object/scope and active-dimensional complex Gaussian/regulator/pin costs; no fixed-center jet is renamed a moving-center jet.",
+      "carried_same_session_coverage": "Full 1-734 direct read in preceding BARE_CUT_WHITE unit; unchanged hash rechecked."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "lines": 649,
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "direct_read_ranges_this_unit": "1-125;275-382",
+      "use": "Exact inherited R_h/Z_A, original sources and retained field orders, normalized joint integration contract, fixed/moving hard sectors, overlap factorization and sufficient finite-jet Mayer theorem.",
+      "carried_same_session_coverage": "148-215 finite real product calculus read in preceding BARE_CUT_WHITE unit; current theorem also rebuilds its product/tree step."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "lines": 564,
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "direct_read_ranges_this_unit": "113-140",
+      "use": "Bounded legacy comparison: complex pointwise derivative bound includes full determinant/mean and dimension factors; not used as the new real estimate."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "lines": 608,
+      "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+      "direct_read_ranges_this_unit": "278-312",
+      "use": "Bounded legacy comparison: absolute full-reader density coefficient majorant, marked norm and scalar Cauchy factorials; not a premise for a dimension-free real conclusion."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "lines": 11,
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "direct_read_ranges_this_unit": "1-11",
+      "use": "Full owner process refresh: analytic proof before packet, numerical-only preregistration, rebuild literature and fresh hostile review; root owns publication."
+    }
+  ],
+  "carried_same_session_manifests": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_cut_white_assembly_read_manifest.json",
+      "lines": 108,
+      "sha256": "ea2d90de5b6c6070139d868e8c145991ff53e8a5af6ebfbd52403974b26c030c"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/white_sector_matching_read_manifest.json",
+      "lines": 129,
+      "sha256": "5b302d417a0b815d23b8368f23b5ff75a5ad5553cccb67818acfbdce36b6423b"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "lines": 246,
+      "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0"
+    }
+  ],
+  "governing_instructions": {
+    "retained_reads": "/Users/jonBridger/AGENTS.md; worktree AGENTS.md; installed physics-loop and review-loop skills; source-specific methodology recorded in chart_boundary_forest_read_manifest.json. No new instruction is inferred from scientific source data.",
+    "selected_methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "current_working_path_hashes_match_all_10_consumed_pinned_methodology_entries": true,
+    "coordinator_observed_origin_main": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+    "origin_read_limit": "Origin identity/byte-equality report is coordinator supplied; this author performed no Git operation. Current consumed methodology file hashes were compared directly with the retained immutable manifest."
+  },
+  "primary_reads": [
+    {
+      "url": "https://arxiv.org/pdf/1704.07912v1",
+      "title": "Sharif Rahman, Wiener-Hermite Polynomial Expansion for Multivariate Gaussian Probability Measures",
+      "delivered_scope": "Abstract PDF parsed lines 0-28; complete returned parsed window 545-1199, including Propositions 6-8 and tensor/independent specializations.",
+      "use": "Generating function and moment antecedent; the conditional Gaussian contraction proving RJ2 is rebuilt in this source. No complete-paper read or novelty claim."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1403.7244v2",
+      "title": "Brydges-Slade, Gaussian integration and normed algebras",
+      "delivered_scope": "Abstract parsed lines 0-38; complete returned window 1743-2262 including Propositions 3.18-3.20, bosonic heat derivation and beginning of section 5.1. Additional bounded find excerpts around Proposition 3.7 and Lemma 6.4 (4087-4110), not continuous full-paper coverage.",
+      "use": "Differentiation/product/norm architecture comparison; fermionic Gram bound is not imported as a bosonic gauge theorem and its regulator dimension cost is retained as a distinction."
+    },
+    {
+      "url": "https://arxiv.org/html/1411.1107v1",
+      "title": "Martin Lohmann, Single Scale Cluster Expansions with Applications to Many Boson Systems",
+      "delivered_scope": "Introductory returned HTML 0-148; Theorem 1/Remark 2 excerpt 184-209; parameter derivative/cutoff excerpt 330-360. A few open/find routing fragments were also returned; no full theorem-hypothesis review.",
+      "use": "Analytic interaction/cutoff and forest comparison only; density-only real heat and forest step rebuilt from the actual local MK source."
+    }
+  ],
+  "primary_limits": "HTML wrappers/timeouts and requested PDF screenshots supplied no inspected pixels and are not counted as mathematical reads. No paper PDF was committed. Search/find output outside the listed proof-bearing windows was routing only. The bounded search does not establish exhaustive novelty or a compatible all-history theorem.",
+  "new_steps": "Sharper Hermite contraction; finite real mean/covariance insertion partitions; simultaneous volume-tail and overlap charge; verified finite-core finite-jet small-vertex theorem with three beta/6 margins; exact absolute covariance Taylor reader cost, multi-pin partitions and its diagonal limitation.",
+  "remaining_interface": "Full actual C=P+E and nonlocal b/sigma coefficient localization without an activated-volume cost, plus actual inherited joint input-size/retained-field/history/physical reconstruction. RF smallness does not imply RJ25.",
+  "execution": "Analytic derivation and metadata only; no scientific numerics, extra workers, Git/front/PR/lock/audit operations or predecessor edits."
+}

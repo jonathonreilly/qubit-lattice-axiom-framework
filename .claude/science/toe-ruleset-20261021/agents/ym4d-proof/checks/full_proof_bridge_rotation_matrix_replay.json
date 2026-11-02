@@ -1,0 +1,24 @@
+{
+  "label": "rotation_matrix",
+  "command": [
+    "/usr/local/bin/python3",
+    "review_euclidean_rotation_matrix_mutations_attempt02.py"
+  ],
+  "copies": {
+    "review_euclidean_rotation_matrix_mutations_attempt02.py": "3e7d2cd00e8ac08e0a02976c35a97581df41d2be0672090cc10332783f128331",
+    "euclidean_rotation_import_exact.py": "7af6babaaaa29e89c0562896f30efa8da45e09a1e0c3a53ba1d9f2567b193cb0"
+  },
+  "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-bridge-root-replay-gpxtwj2j/rotation_matrix",
+  "exit_code": 0,
+  "wall_seconds": 0.27659177780151367,
+  "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_rotation_matrix_out.json",
+  "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_rotation_matrix_err.txt",
+  "stdout_sha256": "bd1c78a9f4ac38b0434788508e703f7b0633e7ad8b71e99c81f760572022b467",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_matrix_mutations_attempt02.stdout.json",
+  "reference_sha256": "bd1c78a9f4ac38b0434788508e703f7b0633e7ad8b71e99c81f760572022b467",
+  "excluded_top_level_field": null,
+  "exact_non_time_json_match": true,
+  "differing_top_level_keys": [],
+  "source_and_reference_unchanged": true
+}

@@ -1,0 +1,25 @@
+--- checks/mgx_author_v1.md	2026-10-29 21:34:22
++++ MGX.md	2026-10-29 21:41:38
+@@ -118,8 +118,9 @@
+ 
+ ## 3. What has to match at a physical block
+ 
+-For a normalized composite kernel K, the exact coarse density and
+-source-dependent weight are
++For a continuous positive normalized composite S4' kernel K, finitely many
++bounded local finite-cutoff insertions F_i, and finite complex sources J_i,
++the exact coarse density and source-dependent weight are
+ 
+     exp[-S_eff(V)] proportional to integral exp[-S_a(U)] K(V|U)dU,
+     W(V;J)=integral exp[-S_a(U)+sum_i J_i F_i(U)] K(V|U)dU.       (4)
+@@ -182,8 +183,8 @@
+ The mixed oscillation `Delta_ij R_X` is the supremum of the absolute
+ four-term difference from changing i and j separately, over **all** fields.
+ Put `tau_i` equal to the integer time coordinate of a link's initial vertex.
+-For an open time slab, define the symmetric nonnegative matrix, with zero
+-diagonal,
++Fix `nu>0`. For an open time slab, define the symmetric nonnegative matrix,
++with zero diagonal,
+ 
+     C_ij = beta_W m_ij + (1/4) sum_(X contains i,j) Delta_ij R_X,
+     q_nu = sup_i sum_(j!=i) exp[nu |tau_i-tau_j|] C_ij <= q_* < 1. (6)

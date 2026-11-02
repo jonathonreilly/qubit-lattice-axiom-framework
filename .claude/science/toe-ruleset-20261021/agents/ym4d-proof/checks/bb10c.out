@@ -1,0 +1,32 @@
+[bb10c] d = 2, L = 3, k = 3, T = 1: level sides [27, 9, 3, 1]
+C1 xi_i = -psi_i for i = 0,1,2 (exact), two nonzero cascade levels True : PASS
+C2 Lemma DF-cc (ii) at k = 3: C(j) = sum_l (Qstr^{(0->l)})^T jhat_l ; h_l^Tpsi_l != 0 for some l >= 1 True : PASS
+C3 d*C(j) = D(S) = 0 (exact)                                          : PASS
+   C4[0] pi_l(j_l) = [Fraction(448, 1), Fraction(27, 1), Fraction(9, 1)]
+        i = 0 : V = 108   B^psi = 1792   B^xi = 648   (V<=B^psi True, B^xi>B^psi False)
+        i = 1 : V = 27   B^psi = 2116/3   B^xi = 108   (V<=B^psi True, B^xi>B^psi False)
+        i = 2 : V = 0   B^psi = 2440/9   B^xi = 0   (V<=B^psi True, B^xi>B^psi False)
+   C4[1] pi_l(j_l) = [Fraction(299, 1), Fraction(27, 1), Fraction(9, 1)]
+        i = 0 : V = 90   B^psi = 1196   B^xi = 648   (V<=B^psi True, B^xi>B^psi False)
+        i = 1 : V = 21   B^psi = 1520/3   B^xi = 108   (V<=B^psi True, B^xi>B^psi False)
+        i = 2 : V = 0   B^psi = 1844/9   B^xi = 0   (V<=B^psi True, B^xi>B^psi False)
+   C4[2] pi_l(j_l) = [Fraction(252, 1), Fraction(27, 1), Fraction(9, 1)]
+        i = 0 : V = 72   B^psi = 1008   B^xi = 648   (V<=B^psi True, B^xi>B^psi False)
+        i = 1 : V = 21   B^psi = 444   B^xi = 108   (V<=B^psi True, B^xi>B^psi False)
+        i = 2 : V = 0   B^psi = 184   B^xi = 0   (V<=B^psi True, B^xi>B^psi False)
+   C4[3] pi_l(j_l) = [Fraction(229, 1), Fraction(27, 1), Fraction(9, 1)]
+        i = 0 : V = 90   B^psi = 916   B^xi = 648   (V<=B^psi True, B^xi>B^psi False)
+        i = 1 : V = 18   B^psi = 1240/3   B^xi = 108   (V<=B^psi True, B^xi>B^psi False)
+        i = 2 : V = 0   B^psi = 1564/9   B^xi = 0   (V<=B^psi True, B^xi>B^psi False)
+   C4[4] pi_l(j_l) = [Fraction(320, 1), Fraction(27, 1), Fraction(9, 1)]
+        i = 0 : V = 81   B^psi = 1280   B^xi = 648   (V<=B^psi True, B^xi>B^psi False)
+        i = 1 : V = 24   B^psi = 1604/3   B^xi = 108   (V<=B^psi True, B^xi>B^psi False)
+        i = 2 : V = 0   B^psi = 1928/9   B^xi = 0   (V<=B^psi True, B^xi>B^psi False)
+   C4[5] pi_l(j_l) = [Fraction(416, 1), Fraction(27, 1), Fraction(9, 1)]
+        i = 0 : V = 81   B^psi = 1664   B^xi = 648   (V<=B^psi True, B^xi>B^psi False)
+        i = 1 : V = 18   B^psi = 1988/3   B^xi = 108   (V<=B^psi True, B^xi>B^psi False)
+        i = 2 : V = 0   B^psi = 2312/9   B^xi = 0   (V<=B^psi True, B^xi>B^psi False)
+C4 V_i <= B^psi_i always True ; B^xi_0 > B^psi_0 somewhere False            : FAIL
+C5 control: random collection fails root support True and fails C2's identity True : PASS
+[bb10c] t = 0.4 s
+VERDICT bb10c (C1, C2, C3, C4, C5): NOT ALL PASS -- FAILED: C4

@@ -1,0 +1,30 @@
+Part C: decay rates along the axis (kappa = 1)
+ R  T=16 k=1: rate 1.6015  ratio/unit 0.202  profile x=1..8: 1.18e-01 1.60e-02 2.48e-03 4.42e-04 8.96e-05 2.03e-05 4.92e-06 9.59e-07  rss 90 MB
+ rb T=16 k=1: rate 1.7062
+ fb u=(0, 0, 0, 0) T=16 k=1: rate 1.3978  profile x=1..8: 2.10e-02 3.00e-03 5.98e-04 1.37e-04 3.43e-05 9.01e-06 2.35e-06 2.24e-07
+ fb u=(1, 0, 0, 0) T=16 k=1: rate 1.3788  profile x=1..8: 1.18e-02 1.79e-03 3.78e-04 8.94e-05 2.27e-05 6.02e-06 1.48e-06 2.24e-07
+ rep(K_u+Pi_coex) u=(1,0,0,0) T=16: log-log slope 6.04, exp rate 1.395, residual power 5.62e-03 vs exp 6.50e-02; profile x=1..8: 1.10e-01 1.52e-02 2.41e-03 4.67e-04 1.15e-04 3.69e-05 2.41e-05 2.14e-05
+ R  T=16 k=2: rate 1.5601  ratio/unit 0.210  profile x=1..8: 1.10e-01 1.41e-02 2.14e-03 3.89e-04 8.26e-05 1.98e-05 5.09e-06 1.03e-06  rss 177 MB
+ rb T=16 k=2: rate 1.6343
+ fb u=(0, 0, 0, 0) T=16 k=2: rate 1.3847  profile x=1..8: 4.27e-02 5.36e-03 7.31e-04 1.49e-04 4.00e-05 1.12e-05 3.15e-06 5.77e-07
+ fb u=(1, 0, 0, 0) T=16 k=2: rate 1.3826  profile x=1..8: 3.80e-02 4.84e-03 6.55e-04 1.32e-04 3.59e-05 1.01e-05 2.81e-06 4.11e-07
+ R  T=16 k=3: rate 1.5554  ratio/unit 0.211  profile x=1..8: 1.09e-01 1.39e-02 2.11e-03 3.84e-04 8.18e-05 1.97e-05 5.11e-06 1.04e-06  rss 180 MB
+ R  T=24 k=1: rate 1.4283  ratio/unit 0.240  profile x=1..8: 1.18e-01 1.60e-02 2.48e-03 4.42e-04 8.96e-05 2.03e-05 5.02e-06 1.33e-06  rss 315 MB
+ rb T=24 k=1: rate 1.4423
+ fb u=(0, 0, 0, 0) T=24 k=1: rate 1.3064  profile x=1..8: 2.10e-02 3.00e-03 5.98e-04 1.37e-04 3.43e-05 9.05e-06 2.49e-06 7.08e-07
+ fb u=(1, 0, 0, 0) T=24 k=1: rate 1.2946  profile x=1..8: 1.18e-02 1.79e-03 3.78e-04 8.94e-05 2.27e-05 6.08e-06 1.69e-06 4.85e-07
+ rep(K_u+Pi_coex) u=(1,0,0,0) T=24: log-log slope 5.62, exp rate 0.926, residual power 4.06e-01 vs exp 2.52e+00; profile x=1..8: 1.10e-01 1.52e-02 2.41e-03 4.67e-04 1.15e-04 3.65e-05 1.42e-05 6.46e-06
+ R  T=24 k=2: rate 1.3744  ratio/unit 0.253  profile x=1..8: 1.10e-01 1.41e-02 2.14e-03 3.89e-04 8.26e-05 1.98e-05 5.22e-06 1.46e-06  rss 584 MB
+ rb T=24 k=2: rate 1.3760
+ fb u=(0, 0, 0, 0) T=24 k=2: rate 1.2629  profile x=1..8: 4.27e-02 5.36e-03 7.31e-04 1.49e-04 4.00e-05 1.12e-05 3.27e-06 9.81e-07
+ fb u=(1, 0, 0, 0) T=24 k=2: rate 1.2600  profile x=1..8: 3.80e-02 4.84e-03 6.55e-04 1.32e-04 3.59e-05 1.01e-05 2.96e-06 8.90e-07
+ R  T=24 k=3: rate 1.3687  ratio/unit 0.254  profile x=1..8: 1.09e-01 1.39e-02 2.11e-03 3.84e-04 8.19e-05 1.98e-05 5.24e-06 1.48e-06  rss 662 MB
+ R  T=32 k=1: rate 1.3295  ratio/unit 0.265  profile x=1..8: 1.18e-01 1.60e-02 2.48e-03 4.42e-04 8.96e-05 2.03e-05 5.02e-06 1.33e-06  rss 662 MB
+ R  T=32 k=2: rate 1.2752  ratio/unit 0.279  profile x=1..8: 1.10e-01 1.41e-02 2.14e-03 3.89e-04 8.26e-05 1.98e-05 5.22e-06 1.46e-06  rss 662 MB
+ R  T=32 k=3: rate 1.2696  ratio/unit 0.281  profile x=1..8: 1.09e-01 1.39e-02 2.11e-03 3.84e-04 8.19e-05 1.98e-05 5.24e-06 1.48e-06  rss 662 MB
+ C1 (all rates >= eta* = 0.0111): PASS
+ C2 (k-stability <= 1.10): PASS
+ C3 (T-stability of R <= 1.10): FAIL
+ C4: nearest zero of Den: Im w = 1.0365 at w = (1.23619109301575e-07+1.03645417061497j), p_perp = (0.0, 0.0, 0.0); measured R rate (T=32, k=1) 1.3295; ratio 1.283: FAIL
+Part C: FAIL (see sub-checks)
+time 20.9 s, peak RSS 662 MB

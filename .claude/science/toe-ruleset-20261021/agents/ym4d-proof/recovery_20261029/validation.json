@@ -1,0 +1,48 @@
+{
+  "source_preservation": {
+    "original_files": 28,
+    "historical_briefs": 9,
+    "all_sha256_match": true
+  },
+  "script_reproduction": [
+    {
+      "script": "checks/a3_55_per.py",
+      "source_sha256": "99215af3b88dafbf8e449b403cb47e44ed4a6fd868a002c54cf3503236667c22",
+      "started_at_utc": "2026-10-29T10:49:47.557396+00:00",
+      "duration_seconds": 4.326,
+      "exit_code": 0,
+      "python": "3.12.8",
+      "matches_original_stdout": true,
+      "stderr_bytes": 0,
+      "scope": "Same-script reproduction only; not independent proof verification"
+    },
+    {
+      "script": "checks/ui2_1.py",
+      "source_sha256": "9aee9632f7aef30f3a5db837843aadb1a6522fac68746f87adbac41e5464afa1",
+      "started_at_utc": "2026-10-29T10:49:47.557396+00:00",
+      "duration_seconds": 1.271,
+      "exit_code": 0,
+      "python": "3.12.8",
+      "matches_original_stdout": true,
+      "stderr_bytes": 0,
+      "scope": "Same-script reproduction only; not independent proof verification"
+    },
+    {
+      "script": "checks/ui2_2.py",
+      "source_sha256": "b12e5bb23c7610e47892ca3386eae8ec66a5d328436cf10582e3f8434816fdab",
+      "started_at_utc": "2026-10-29T10:49:47.557398+00:00",
+      "duration_seconds": 0.29,
+      "exit_code": 0,
+      "python": "3.12.8",
+      "matches_original_stdout": true,
+      "stderr_bytes": 0,
+      "scope": "Same-script reproduction only; not independent proof verification"
+    }
+  ],
+  "whitespace": {
+    "authored_status_surfaces": "git diff --cached --check passes",
+    "raw_recovered_evidence": "Original blank EOF lines and stdout trailing spaces preserved; whole-index diff --check reports these. No claim of whole-index whitespace PASS."
+  },
+  "scope": "Recovery and bounded review-disposition reconciliation only; not independent certification of mathematical claims.",
+  "ci": "PR head has no statusCheckRollup entries at intake; no passing CI claimed."
+}

@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-29T21:41:01.068709+00:00",
+  "finding": "F1: fixed-free-complement invariance was too broad. Corrected to transported-space identity plus explicit fixed-regulator correction and fixed-P density limit.",
+  "old_source_commit": "88130072aa683af83562ecc78a64dcc71fe75c4c",
+  "old_source_sha256": "977d901f2c886a533c9eb1b487414e1a081df681463003eb231a3ef2b1b26670",
+  "reviewed_final_source_sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+  "author_correction_receipt_sha256": "b21338a5b2035c5f7b65c13b10721a1a7769ea576d8c23692270b92adbd1957a",
+  "old_line_count": 688,
+  "new_line_count": 723,
+  "changes": [
+    {
+      "tag": "replace",
+      "old_lines": [
+        303,
+        308
+      ],
+      "new_lines": [
+        303,
+        343
+      ],
+      "old_text": "Transform H and D together, so the gauge-fixed determinant and Delta\nare unchanged, including off shell. This split and link centering give\nordinary inversion parity to its vertices. The change of charts is local\nand analytic; lower-jet differences just found cannot lower the stated\norders. This also justifies the two-power improvement when comparing\nWilson with its leading continuum operator in Section 6.",
+      "new_text": "Writing this orthogonal matrix as M gives `H_s=M*H_r M`, `D_s=M*D_r`,\nand hence `O_s=M*O_r M` and `Delta_s=Delta_r`, including off shell.\nThe vector determinant is exactly unchanged when its complement and\ninduced measure are transported with M. This is not an exact invariance\nof the prescribed FIXED free-complement determinant. The Hessian in each\nsplit still includes the force times the second quantum derivative of\nthe nonlinear map to action-log coordinates; off-shell stationarity is\nnot assumed.\n\nHere is the correction on that fixed regulator. Let P0 project onto the\nfree vector harmonics, Q=1-P0, `O0=0 direct-sum D` with D positive on Q,\n`O=O0+e O1+e^2 O2+...`, and `M=exp(e A)`, A*=-A. Put\n`U=P0 A Q`, `F=P0 O1 Q`. Expanding `M*O M` and the compressed logarithm\ngives\n\n    [e^2]{log det_Q(M*O M)-log det_Q O}\n          =2 Re tr(D^-1 F*U)-tr(U*U).                     (UL13a)\n\nIndeed the off-diagonal part of `Q[O1,A]Q` is `F*U+U*F`, and that of\n`(1/2)Q[[O0,A],A]Q` is `-(D U*U+U*U D)/2`. Within-Q commutator terms\ncancel against the corresponding bubble terms, since conjugation entirely\nwithin Q preserves its determinant. These signs correspond to `Y=M X`\nand `O_s=M*O_r M`; UL13a is an e^2 coefficient, not the second derivative.\nIt generally is nonzero. The vector determinant's outside factor 1/2\nis applied to this correction as to every other vector term.\n\nFor the actual single external plane wave, U and F connect a free\nconstant mode only to the shifted momenta +/-P e2. Their ranks and\nmatrix entries are bounded independently of volume; UL14 bounds D^-1\nthere at each fixed P!=0. The correction after division by T^4 is\ntherefore at most `T^-4 C_J(P)`, with finite C_J(P), and vanishes in\nthe prescribed volume-first limit. This does not give a uniform finite-T\nstatement as P tends to zero. The scalar Delta is unchanged already\nbefore this limit.\n\nThus the symmetric split may be used for the same volume-first Bloch\ncoefficient. Together with link centering it gives ordinary inversion\nparity to the vertices. The local analytic change of coordinates and its\nretained off-shell force term cannot lower the jet-difference orders just\nfound. This also supplies the two-power improvement in the Wilson versus\ncontinuum comparison in Section 6, in that same volume-first convention."
+    }
+  ],
+  "affected_review": "Every changed line read; signs, factor e^2 rather than second derivative, outside1/2, transported measure, off-shell force and constant-to-\u00b1P rank/density bound independently verified. Theorem UL4 and all other source lines unchanged.",
+  "disposition": "F1 resolved; no remaining source correction requested."
+}

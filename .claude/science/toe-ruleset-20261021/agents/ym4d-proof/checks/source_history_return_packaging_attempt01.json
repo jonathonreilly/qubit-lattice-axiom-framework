@@ -1,0 +1,21 @@
+{
+  "schema": "source-history-return-packaging-failure-v1",
+  "recorded_at_utc": "2026-10-29T16:21:47.706398+00:00",
+  "execution": "First package-receipt generation command, before any receipt was written",
+  "exit_code": 1,
+  "failure": "Assertion comparing an older cached repair-metadata hash to current bytes",
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_return_fix.json",
+  "observed_current_hash": "1dad861e82c3df372d54a1231a57c14f982a725fb228b7c9937fe8febd590ace",
+  "committed_metadata_revision": "9761471ab4",
+  "current_bytes_equal_that_commit": true,
+  "resolution": "The mutable repair-provenance file was updated by the coordinator in the existing committed review workflow. Its current repaired-source and review-report hashes agree with the frozen science. Record this metadata separately instead of claiming its older bytes remained unchanged.",
+  "scientific_frozen_dependencies": "All seven actual note/review/receipt hashes matched before this check failed",
+  "new_unit_frozen_at_failure": false,
+  "expected_unverified_stale_hash": "49dd5e561873281bd129ae9b4d482a676c125b809e5534468b1694e4eab6583e",
+  "historical_limit": "Parent confirms the stale expected value is not either pushed metadata revision; it is retained only as the caught unverified expectation.",
+  "verified_prior_pushed_metadata": {
+    "commit": "bfbd87e0bd",
+    "sha256": "4a663b618767e138ae04311f5b3231d4ae2f6aaecb2691764352b29bf7cd164c"
+  },
+  "frozen_source_mutations_from_this_failure": false
+}

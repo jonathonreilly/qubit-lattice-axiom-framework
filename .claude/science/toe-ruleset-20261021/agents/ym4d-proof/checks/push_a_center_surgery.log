@@ -1,0 +1,17 @@
+Exact center-sheet and actual-contour reader counts:
+j=1, R=3: changed links=27, changed plaquettes=54, boundary readers=188, terminal cone sizes=(8,8), Wilson action at twisted identity=108.
+j=2, R=9: changed links=729, changed plaquettes=486, boundary readers=1844, terminal cone sizes=(8,8), Wilson action at twisted identity=972.
+j=3, R=27: changed links=19683, changed plaquettes=4374, boundary readers=17180, terminal cone sizes=(8,8), Wilson action at twisted identity=8748.
+Random SU(2) matrix check on all 108 incident plaquettes: maximum center-multiplication error=0; action change=6.76577642444; bound=108.
+Pure-gauge identity-reset check: side=2, original action=0, repaired action=48.
+Pure-gauge identity-reset check: side=3, original action=0, repaired action=216.
+Pure-gauge identity-reset check: side=5, original action=0, repaired action=1200.
+Analytic exponent inputs: u_0=u_j=100.0, kappa=1.0, epsilon=0.5, filling rate a=0.1.
+Filled-volume factor times the analytic probability lower bound:
+R=3^9; log bound for exp(a R^3) pi(E_rough) >= -1.0921537168e+13.
+R=3^11; log bound for exp(a R^3) pi(E_rough) >= -3.90505713583e+14.
+R=3^13; log bound for exp(a R^3) pi(E_rough) >= 3.28596161993e+17.
+The all-R divergence is analytic; these values are not posterior measurements.
+Peak RSS bytes: 94896128 (<1000000000); BLAS threads=1.
+No lower bound on the connected covariance or extracted RG remainder is claimed.
+U1--U4 count remains four.

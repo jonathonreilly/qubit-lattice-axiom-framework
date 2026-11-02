@@ -1,0 +1,164 @@
+{
+  "role": "Coordinator preservation of an author packet awaiting completion of fresh independent review; no independent verdict assigned here",
+  "utc": "2026-10-30T06:51:02.658235+00:00",
+  "head": "8d48ecde600c4f38da66f8b4e18a6ae16fa9cfae",
+  "procedure_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "author_scope": "Recovery of the already supplied CS10 squared inequality and REVIEW55_ARS F10 linear threshold for the JMBRB consumer; explicit simultaneous all-compact bare coarse-curvature energy allocation and unchanged original normalizers. The matched-reference remainder is not estimated.",
+  "review_status": "Fresh independent Astra/max review active; no final verdict available at this author-publication checkpoint.",
+  "root_read_coverage": {
+    "SQUARED_ALIGNMENT_PRICE_ASTRA.md": "All398 lines in1-200 and201-410 (EOF398).",
+    "squared_alignment_price_author_checks.md": "All74 lines.",
+    "squared_alignment_price_read_manifest.json": "All154 lines.",
+    "additional_support_reads": "OC40-115 and JMBRB233-316 freshly read; earlier bounded reads remain as recorded. No new external theorem imported."
+  },
+  "bindings": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_KN.md",
+      "sha256": "9be21efb0097320aaca79a2e068ca59e4f8bfd1864148432d1a508abb724f7d0",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HIST.md",
+      "sha256": "0bafb04ecda4b88f13f958026f4c817b3d536207a0de2d1f347f425e5f61097c",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HW.md",
+      "sha256": "d4b51b6b7c19e41baa0c2dac7ee03d34efc991c7e55a9ef8a766132af17a6028",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRB.md",
+      "sha256": "6320af2da97d532fbf802f2405541de8e20f6d350b575b46462fefb4c849bb0a",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LFPRICE.md",
+      "sha256": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "ef4402b19bf268ac6bc684e38942daf1476c84d651ef8b492998cb067506cde8",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RENEW.md",
+      "sha256": "42b4d2a16625d4af4f6443a38ff92d63a483485816c4533292b44f867fc978a7",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW55_ARS.md",
+      "sha256": "79ab307db0f7e918216277cc0f7e884044114705a9f21584df8539aecce2d90e",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "e5bcf577dab1144c6ce4ac06f1b4558cc44951a7fb3e305199bb91f91736b76a",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_JMBRB.md",
+      "sha256": "76bacfc23f945af5cac257a688be0739433e48d48943623bc80b36a3a4b95f04",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RLARGE.md",
+      "sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SQ.md",
+      "sha256": "84c006c5a43dcf6df47860a115296fe75e7684517ece5da4f0abc1bb64d26289",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SQUARED_ALIGNMENT_PRICE_ASTRA.md",
+      "sha256": "cd2df445d61018ade1f4050612b0616800f4c87c83cea9de27d3ab7b8ac00905",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_author_checks.md",
+      "sha256": "051620b66147c32c49f52a35e3791bd6c18cb5a68545c48aec93750f9b5dcadf",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_read_manifest.json",
+      "sha256": "b767575ec374b31d9ac87c1d70328b7e8cbb8c2ca9dfb17694ad982a527621bf",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_source_freeze.json",
+      "sha256": "ccf60ff0805b2e9d7ac2556539845e45c5bc158d20d8792b1897ceebbb0a9d87",
+      "verified_at": "current"
+    }
+  ],
+  "selected_records": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SQUARED_ALIGNMENT_PRICE_ASTRA.md",
+      "sha256": "cd2df445d61018ade1f4050612b0616800f4c87c83cea9de27d3ab7b8ac00905",
+      "bytes": 20270
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_author_checks.md",
+      "sha256": "051620b66147c32c49f52a35e3791bd6c18cb5a68545c48aec93750f9b5dcadf",
+      "bytes": 4420
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_read_manifest.json",
+      "sha256": "b767575ec374b31d9ac87c1d70328b7e8cbb8c2ca9dfb17694ad982a527621bf",
+      "bytes": 8094
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_receipt.json",
+      "sha256": "9639dfaf769c3aa10a36df539134f93d0304348f9c1a8e9f4b0ff1f89e56744c",
+      "bytes": 2570
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_source_freeze.json",
+      "sha256": "ccf60ff0805b2e9d7ac2556539845e45c5bc158d20d8792b1897ceebbb0a9d87",
+      "bytes": 772
+    }
+  ],
+  "protected_tracked_lane_blobs_unchanged": 3790,
+  "legacy_PROOF_tail_sha256": "4efdee19aa03123a89053e466525f0ef5e9d8a4b8eb1ea38a1e87125043e728c",
+  "validation": {
+    "selected_files_including_receipt": 6,
+    "JSON_files_including_receipt": 4,
+    "links": 8,
+    "vocabulary_exit": 0,
+    "vocabulary_report_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+    "whitespace": "Current selected files and tracked diff clean; prior historical EOF exception unchanged.",
+    "coordinator_scientific_numerical_runs": 0,
+    "coordinator_author_freezers_executed": false
+  },
+  "source_repairs_by_coordinator": 0,
+  "prior_result_credit": "No novelty claim for the alignment identity or exact linear threshold. JMBRB describes the limitation of its particular older weaker estimate; the recovered estimate improves that interface, not an inherited-law probability.",
+  "ongoing_work_excluded": "Unfinished regional nonlinear-chart source and unfinished independent reviews are excluded.",
+  "matched_reference_return": "OPEN",
+  "effective_density_coercivity": "OPEN",
+  "multiscale_induction": "OPEN",
+  "full_continuum_existence": "OPEN",
+  "physical_continuum_mass_gap": "OPEN",
+  "publication": "Commit/push and guarded PR metadata update follow; no merge to main."
+}

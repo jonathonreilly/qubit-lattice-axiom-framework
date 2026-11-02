@@ -1,0 +1,4 @@
+N1: PASS  x=3^(-9/4) in [0.08442,0.08443]: True; K_f in [8.737631,8.737726] (display only); 8.737 <= K_f <= 8.74: True. Printed intermediate 0.08434 within [0.08433,0.08435] of x: False (recorded)
+N2: PASS  1 + 8*27/26 = 121/13 = 9.307692 <= 9.31
+N3: PASS  2M_n/n <= 20 for n=3^k, k=1..12: True; -Lap g = delta_0 - 1/M and 2(g(0)-g(M/2)) = M/4: True
+VERDICT r55b_num: ALL PASS

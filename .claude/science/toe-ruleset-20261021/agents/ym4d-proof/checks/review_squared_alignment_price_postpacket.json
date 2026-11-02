@@ -1,0 +1,43 @@
+{
+  "format": "postpacket-provenance-check-v1",
+  "checked_utc": "2026-10-30T06:56:19.499732+00:00",
+  "scope": "byte identities, source links and packet consistency only; no scientific numerical check",
+  "independent_prepacket_read_manifest_sha256": "395aca8915331cc11406482fece96fe92fcc81d4a071d37c1a66c663e742744d",
+  "independent_prepacket_snapshot_sha256": "325f1c9ede4e3087d1c5236537018c5972fccd1699677c27b95b06df694bc687",
+  "author_packet_read": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_author_checks.md",
+      "sha256": "051620b66147c32c49f52a35e3791bd6c18cb5a68545c48aec93750f9b5dcadf",
+      "bytes": 4420,
+      "lines": 74,
+      "read_coverage": "complete, after independent findings/read-manifest freeze"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_source_freeze.json",
+      "sha256": "ccf60ff0805b2e9d7ac2556539845e45c5bc158d20d8792b1897ceebbb0a9d87",
+      "bytes": 772,
+      "lines": 18,
+      "read_coverage": "complete, after independent findings/read-manifest freeze"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_read_manifest.json",
+      "sha256": "b767575ec374b31d9ac87c1d70328b7e8cbb8c2ca9dfb17694ad982a527621bf",
+      "bytes": 8094,
+      "lines": 154,
+      "read_coverage": "complete, after independent findings/read-manifest freeze"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_receipt.json",
+      "sha256": "9639dfaf769c3aa10a36df539134f93d0304348f9c1a8e9f4b0ff1f89e56744c",
+      "bytes": 2570,
+      "lines": 42,
+      "read_coverage": "complete, after independent findings/read-manifest freeze"
+    }
+  ],
+  "author_input_pins_verified": 16,
+  "local_links_verified": 8,
+  "mismatches": [],
+  "missing_local_links": [],
+  "written_argument_findings_changed_by_author_packet": false,
+  "mathematical_verdict": "LAND at bounded one-bare-step scope; mathematical support is the independent written findings, not this mechanical check"
+}

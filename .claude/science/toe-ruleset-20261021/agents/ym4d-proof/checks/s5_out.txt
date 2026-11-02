@@ -1,0 +1,37 @@
+== A. Lemma MSG_0 ==
+A1: PASS  intra-block links 1440, violations 0, max ratio 0.221
+A2: PASS  ladder tests 1440, violations 0, max ratio 0.839
+A3: PASS  identity max error 5.27e-16
+A4: PASS  locality max change 0.00e+00 (20 trials)
+A5: PASS  orbit invariance max change 1.75e-15
+A6: PASS  non-vacuity: max ratios A1 0.221, A2 0.839
+A7: PASS  negative control (corner root): max change 1.934e+00
+== B. Lemma GF-dec ==
+B1: PASS  lambda_min(Gamma^T Gamma) / c_D: trivial5 7.89, Haar5 14.03, smooth5 7.94, trivial4 7.89, Haar4 14.78, smooth4 7.93
+B2: PASS  ||D_U||^2: 7.913, 7.482, 7.917, 8.000, 7.454, 7.997 (<= 4d = 8)
+B3: PASS  sigma_min(M_X) * L^d: 2.828, 2.055, 2.827, 2.828, 2.119, 2.827; off-block max 0.0e+00
+B4: PASS  max_{X,Y} ||G^-1(X,Y)|| c_D / q^|X-Y|: 2.563e-02, 3.546e-02, 2.612e-02, 2.575e-02, 3.482e-02, 2.638e-02
+B5: PASS  inverse formula max relative residual 3.2e-15; [not a criterion] h_U(D lam) = M lam rel. error 3.7e-16
+B6 (REPORT) trivial T=5: max||G^-1|| by block distance 0:4.613e-01, 1:1.116e-01, 2:1.894e-02; measured rate 1.774 vs m_FP 1.389e-02
+B6 (REPORT) Haar T=5: max||G^-1|| by block distance 0:6.384e-01, 1:2.270e-01, 2:2.799e-02; measured rate 2.093 vs m_FP 1.389e-02
+B6 (REPORT) smooth T=5: max||G^-1|| by block distance 0:4.702e-01, 1:1.130e-01, 2:1.909e-02; measured rate 1.778 vs m_FP 1.389e-02
+B6 (REPORT) trivial T=4: max||G^-1|| by block distance 0:4.635e-01, 1:1.161e-01, 2:4.222e-02; measured rate 1.012 vs m_FP 1.389e-02
+B6 (REPORT) Haar T=4: max||G^-1|| by block distance 0:6.268e-01, 1:2.133e-01, 2:2.719e-02; measured rate 2.060 vs m_FP 1.389e-02
+B6 (REPORT) smooth T=4: max||G^-1|| by block distance 0:4.748e-01, 1:1.178e-01, 2:4.219e-02; measured rate 1.027 vs m_FP 1.389e-02
+== C. Lemma BCH-L ==
+C1: PASS  pairs 2080, violations 0, c_g = 25.852
+C2 (REPORT): max ||g(P)-g(P')||/(r|P-P'|) = 0.5457 (bound c_g = 25.85)
+== D. Proposition FP-uniq ==
+D1: PASS  s0=0.001: conv True res 1.5e-14 ||lam*||_B 1.036e-03 <= 2.025e-01; s0=0.01: conv True res 2.0e-15 ||lam*||_B 1.457e-02 <= 2.025e+00  (G_meas = 7.790e+00, X_inf = 12)
+D2: PASS  10 small-ball starts per s0: all converge, max |difference| 3.5e-13
+D3: FAIL  O(1) starts 12, converged 0, distinct zeros with |A| >= 0.1: 0 (max |A| 0.000)
+== E. Lemma KF ==
+E1: PASS  samples 4200, violations 0 (W_0 stationarity residual max 2.6e-17)
+E2: PASS  violations of phi <= ||V - W_0||: 0
+E3 (REPORT): violations of the uncorrected phi >= ||V-W_0||^2/(4N): 0 of 4200
+== F. Arithmetic (ARITHMETIC labels) ==
+F1: A_d 9, C_0 40.44, c_D 0.003086, q 0.999614272, m_FP 3.8580e-04, S_4(q) 1.7333e+16, G_inf <= 5.8954e+23, X_inf 72, c_g 25.852 (HS 44.776), C_W 95.15, n_R 26244, n_1 157464
+F2: rho 509.36, zeta 2.1880e-55, s_0 3.0389e-57, r 6.5703e-29, r_* 5.1596e-31, r_sol 1.0319e-30, tau_c 4.3386e-59, rho_band 2.2800e-61, eps_bg max (TH-bg, a_p entry only) 4.4635e-62
+F2: PASS  (I1) True (I2) True (I3) True (I4) True (S0) True
+F3: PASS  kappa_0 + 3 kappa~_0 + 5 = 807.4566
+OVERALL FAIL 19/20  runtime 15.2 s

@@ -1,0 +1,129 @@
+{
+  "N": 3,
+  "actual_contours": 1944,
+  "phi_coefficients": [
+    0.0,
+    0.0,
+    0.2034632915421407,
+    0.0010757366781197549,
+    -0.07209378317792689
+  ],
+  "zero_residual_square": 0.0033997130470530615,
+  "determinant_scaling": [
+    {
+      "epsilon": 0.06,
+      "phase": 2.297133819252923e-06,
+      "phase_over_cube": 0.010634878792837608,
+      "maximum_correction": 2.9283324204314217e-13,
+      "correction_over_sixth": 6.276432656960353e-06
+    },
+    {
+      "epsilon": 0.03,
+      "phase": 2.8335238693550017e-07,
+      "phase_over_cube": 0.010494532849462971,
+      "maximum_correction": 4.459243607845163e-15,
+      "correction_over_sixth": 6.116932246701185e-06
+    },
+    {
+      "epsilon": 0.015,
+      "phase": 3.517135031410879e-08,
+      "phase_over_cube": 0.010421140833810015,
+      "maximum_correction": 6.871879760943374e-17,
+      "correction_over_sixth": 6.032925990402963e-06
+    }
+  ],
+  "checks": [
+    {
+      "name": "M2_commutator_mean",
+      "error": 3.7250132075205334e-16,
+      "threshold": 1e-10,
+      "pass_": true
+    },
+    {
+      "name": "quadratic",
+      "error": 0.0,
+      "threshold": 3.034632915421407e-10,
+      "pass_": true
+    },
+    {
+      "name": "cubic",
+      "error": 3.209238430557093e-17,
+      "threshold": 1.0107573667811973e-10,
+      "pass_": true
+    },
+    {
+      "name": "CJ5_full_quartic",
+      "error": 1.3877787807814457e-17,
+      "threshold": 1.720937831779269e-10,
+      "pass_": true
+    },
+    {
+      "name": "CJ6_zero_residual_square",
+      "error": 2.3852447794681098e-17,
+      "threshold": 1.0339971304705307e-10,
+      "pass_": true
+    },
+    {
+      "name": "colour_commutator_deletion",
+      "witness": 0.1428225412262307,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "trace_normalization",
+      "witness": 0.14418756635585378,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "polar_R2_square_omission",
+      "witness": 0.048348694382042846,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "CJ4_plaquette_cubic",
+      "error": 1.3877787807814457e-17,
+      "threshold": 1.3941657544641404e-10,
+      "pass_": true
+    },
+    {
+      "name": "CJ4_plaquette_quartic",
+      "error": 2.7755575615628914e-17,
+      "threshold": 1.6545959084393784e-10,
+      "pass_": true
+    },
+    {
+      "name": "SU3_phase_constraint_0.06",
+      "error": 1.1773757966834775e-18,
+      "threshold": 1.0000229713381926e-10,
+      "pass_": true
+    },
+    {
+      "name": "SU3_phase_constraint_0.03",
+      "error": 2.108582643071174e-19,
+      "threshold": 1.0000028335238693e-10,
+      "pass_": true
+    },
+    {
+      "name": "SU3_phase_constraint_0.015",
+      "error": 3.2491654461082927e-21,
+      "threshold": 1.0000003517135031e-10,
+      "pass_": true
+    },
+    {
+      "name": "SU3_nonzero_cubic_determinant_phase",
+      "witness": 0.010421140833810015,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "SU3_sixth_order_correction_scaling",
+      "relative_spread": 0.03879698546392416,
+      "threshold": 0.05,
+      "pass_": true
+    }
+  ],
+  "passed": 15,
+  "total": 15
+}

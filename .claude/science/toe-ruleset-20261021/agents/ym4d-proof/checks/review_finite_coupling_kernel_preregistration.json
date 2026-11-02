@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-10-29T22:54:08.186751+00:00",
+  "stage": "analytic reconstruction and numerical criteria frozen before independent code and author checker exposure",
+  "inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_independent.md",
+      "sha256": "9b484d1470fd713038cd24f8e03ce0b7cda76376ef174ae5e527d30425f15926"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_criteria.md",
+      "sha256": "cdbc1b1d461c01b1a7f8e3322cf4f7c1ecf2e4fcb8d69b564ca472397a1587f5"
+    }
+  ]
+}

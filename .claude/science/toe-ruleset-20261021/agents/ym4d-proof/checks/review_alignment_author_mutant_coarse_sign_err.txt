@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_coarse_sign.py", line 149, in <module>
+    ker,bad=moments();ac_checks(ker,bad)
+                      ^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_coarse_sign.py", line 141, in ac_checks
+    assert vals[1]==times(F(1,27),vals[0]) and vals[2]==times(F(1,27),vals[1])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

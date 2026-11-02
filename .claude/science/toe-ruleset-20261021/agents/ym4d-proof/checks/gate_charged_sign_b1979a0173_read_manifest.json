@@ -1,0 +1,97 @@
+{
+  "frozen_utc": "2026-10-30T17:58:38.849713+00:00",
+  "head": "b1979a0173c400628b4328d1274fa3fb78ced8c9",
+  "procedure_pin": "53f2c0af7eb59438389b4c2fe75952932d4e95fe",
+  "author_procedure_pin": "c93 (distinct, not changed by this check)",
+  "read_mode": "source first; no author sidecars, route, previous reviews or gates read before this freeze",
+  "scientific_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_DETERMINANT_SIGN_ASTRA.md",
+      "sha256": "2ab72d652afbae58cbcd071de2a372d98d5a2826281d43c06ec563e701181170",
+      "read_lines_inclusive": [
+        [
+          1,
+          625
+        ]
+      ],
+      "whole_file_read": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230",
+      "read_lines_inclusive": [
+        [
+          33,
+          282
+        ]
+      ],
+      "whole_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/DETERMINANT_SIGN_ASTRA.md",
+      "sha256": "138610a5a7d6e63d2a2d7ce3616964b9b909acf8295df65777b3eb4a40c55d36",
+      "read_lines_inclusive": [
+        [
+          150,
+          275
+        ],
+        [
+          356,
+          523
+        ]
+      ],
+      "whole_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_MATCH_ASTRA.md",
+      "sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff",
+      "read_lines_inclusive": [
+        [
+          295,
+          357
+        ],
+        [
+          456,
+          559
+        ]
+      ],
+      "whole_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "read_lines_inclusive": [
+        [
+          159,
+          263
+        ]
+      ],
+      "whole_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md",
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "read_lines_inclusive": [
+        [
+          53,
+          105
+        ]
+      ],
+      "whole_file_read": false
+    }
+  ],
+  "external_primary_reads": [],
+  "numeric_or_symbolic_jobs": [],
+  "model_requested": "gpt-6-astra",
+  "effort_requested": "max",
+  "backend_attestation": null,
+  "source_only_findings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_charged_sign_b1979a0173_source_only.md",
+    "sha256": "496f1d4b995e860c4402790e8fb9b3f5aec96e3119ef836d86b1e67d42ded4e9"
+  },
+  "preflight": {
+    "command": "python3 /tmp/ym4d_lab_ops_c93/lab_ops.py preflight --target .claude/science/toe-ruleset-20261021/agents/ym4d-proof --role checker --model gpt-6-astra --effort max",
+    "result": "go",
+    "observed": "31 GB free; 58% memory free; load 1.9; model floor allowed; nice works; ulimit unavailable; origin reachable"
+  }
+}

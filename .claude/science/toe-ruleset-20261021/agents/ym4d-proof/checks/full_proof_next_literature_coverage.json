@@ -1,0 +1,66 @@
+{
+  "created_utc": "2026-10-29T18:09:17.472394+00:00",
+  "scope": "Next bounded literature checkpoint, additive to the prior29-source register; no exhaustive search claim.",
+  "previous_coverage": "checks/full_proof_literature_coverage.json",
+  "sources_added": [
+    {
+      "id": "B30",
+      "name": "Fr\u00f6hlich\u2013Israel\u2013Lieb\u2013Simon",
+      "url": "https://math.caltech.edu/SimonPapers/93.pdf",
+      "exact_item": "CMP62 (1978), pp5\u20136 Theorems2.1\u20132.3; pp19\u201321 Theorems4.1\u20134.3",
+      "match": "Site-plane reflection positivity and algebraic chessboard estimate. The sea construction separately proves its positive reflection form for every nonnegative closed-cell penalty; the final application is under fresh review.",
+      "class": "literature theorem",
+      "affected_claim": "Sea6 and its exact-history limit",
+      "derivation_impact": "This source is used as the abstract chessboard theorem; it supplies that combinatorial step once the actual tilted-measure reflection hypotheses are proved, not a fixed-V source logarithm."
+    },
+    {
+      "id": "B31",
+      "name": "Biskup",
+      "url": "https://arxiv.org/pdf/math-ph/0610025v2",
+      "exact_item": "Definition5.1/Lemma5.2/Corollary5.4, pp38\u201340; Theorem5.8 and complete proof, pp44\u201346; Lemma5.9, p47",
+      "match": "Closed blocks share boundary variables and the side-to-block ratio is any even integer. These hypotheses match the fine-cell algebra on n=L T with odd L and even T after the separate reflection verification.",
+      "class": "literature theorem",
+      "affected_claim": "Admissible volume and closed-cell chessboard interface",
+      "derivation_impact": "This source is used to verify the precise chessboard domain; it does not supply conditional sea localization or an arbitrary-exterior estimate."
+    },
+    {
+      "id": "B32",
+      "name": "Abdesselam\u2013Rivasseau",
+      "url": "https://arxiv.org/abs/hep-th/9409094v1",
+      "exact_item": "TheoremIII.1; TheoremsIV.3/IV.5; \u00a7V.E pp31\u201333, (V.E.1)\u2013(V.E.4)",
+      "match": "The finite-volume two-level forest identity keeps fixed-size cell vertices: large-field connectivity first, covariance links second. Normalized Gaussian interpolation, actual charge, derivative bounds and summable connections must all be retained.",
+      "class": "background context",
+      "affected_claim": "Size-aware Gaussian/core localization",
+      "derivation_impact": "This source is used as an exact organizational mechanism and candidate repair; it does not provide the missing Yang\u2013Mills amplitude estimates or continuum clustering."
+    },
+    {
+      "id": "B33",
+      "name": "Sussman\u2013Alpoge RP1 project",
+      "url": "https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/1b92bd0347e3b8763cd8ecc1f96dc3c2a92dd310/RP%20O(d)%20trick%20(RP1)/README.md",
+      "exact_item": "Pinned repository commit1b92bd0; RP1 README TheoremA; RPM1 proof under active source review",
+      "match": "The authors explicitly mark the work tentative and incompletely vetted. The stated theorem needs a common real random tempered field, a global all-source L1+L2 exponential bound, translation invariance, and coordinate plus diagonal reflection positivity. Current collision-flat scalar estimates do not establish those hypotheses.",
+      "class": "background context",
+      "affected_claim": "Alternative Euclidean rotation-invariance route",
+      "derivation_impact": "This source is used as a new proof mechanism to investigate; it supplies no accepted Yang\u2013Mills existence, rotation or mass-gap conclusion at this checkpoint."
+    }
+  ],
+  "coordinator_read_coverage": {
+    "frozen_author_notes": "All three complete notes read; a truncated combined read was completed by separate range reads.",
+    "source_sea_literature": "Complete ledger read; primary theorem reading is recorded by author and fresh reviewer, not claimed here as coordinator full-PDF coverage.",
+    "public_repository": "Main README and RP1 README TheoremA read through GitHub plugin; RPM1 full proof is assigned to the new worker, not treated as established."
+  },
+  "public_repository_pin": {
+    "commit": "1b92bd0347e3b8763cd8ecc1f96dc3c2a92dd310",
+    "main_readme_blob": "24778ac2d5498b4cab2568447b58ae4e2b9c6612",
+    "rp1_readme_blob": "1578fbcec3cd49a25c5163ab83c6eb33414250da"
+  },
+  "primary_evidence_paths": [
+    "checks/source_sea_fetch_record.json",
+    "checks/source_sea_literature.md",
+    "checks/uniform_soft_minimizer_primary_sources02.json",
+    "checks/crossover_import_manifest.json"
+  ],
+  "external_full_documents_included": false,
+  "full_existence_status": "OPEN",
+  "physical_continuum_mass_gap_status": "OPEN"
+}

@@ -1,0 +1,23 @@
+built correlators 1.3s
+A1 P3: F-correlator unchanged by pure-gauge term: True
+A1 P4: F-correlator unchanged by pure-gauge term: True
+A1 P5: F-correlator unchanged by pure-gauge term: True
+A1 P6: F-correlator unchanged by pure-gauge term: True
+A1-F (symmetrised F, P3): components changed by pure-gauge term = 40 -> control fires: True
+A2 P1: |z|^8 sum D~^2 = 384
+A2 P2: |z|^8 sum D~^2 = 384
+A2 P3: |z|^8 sum D~^2 = 384
+A2 P4: |z|^8 sum D~^2 = 384
+A2 P5: |z|^8 sum D~^2 = 384
+A2 P6: |z|^8 sum D~^2 = 384
+A2-F (fourth term omitted, P3): value = 304 -> control fires: True
+A3 Q1: T3 (in units (4pi^2)^-3) = 0  [8 matchings]
+A3 Q2: T3 (in units (4pi^2)^-3) = 0  [8 matchings]
+A3 Q3: T3 (in units (4pi^2)^-3) = 0  [8 matchings]
+A3-F scalar :phi^2: at Q1: enumeration = 2/5, 8GGG = 2/5 -> control fires: True
+time 5.7s
+A4 enumeration (connected matchings: 48): T4 = -106278912/285333125
+A4 cycle formula: 16*sum_3cycles = -106278912/285333125
+A4-F disconnected part (12 matchings) = 214287181703424/13731656640625 -> control fires: True
+RESULTS: {'A1': True, 'A1-F': True, 'A2': True, 'A2-F': True, 'A3': True, 'A3-F': True, 'A4': True, 'A4-F': True}
+VERDICT: PASS (gates True, controls True), time 7.1s

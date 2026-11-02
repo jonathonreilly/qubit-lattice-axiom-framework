@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-29T21:45:34.977759+00:00",
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "independent_program_sha256": "e040c3f171bd7668cf38d4750957762e450b6a0ac31866df6f7d2777dcbf1754",
+  "program_unchanged_between_attempts": true,
+  "numerical_thresholds_unchanged": true,
+  "attempts": [
+    {
+      "attempt": 1,
+      "command": "env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 nice -n 10 python3 .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_one_loop_01.py",
+      "exit_code": 1,
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_one_loop_01.stdout.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_one_loop_01.stderr.txt",
+      "result": "Resource halt before mathematical imports or predicates:49% free, required>=50%; load<1.98; RSS21.7MB. Preserved, not counted as a mathematical predicate failure."
+    },
+    {
+      "attempt": 2,
+      "command": "env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 nice -n 10 python3 .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_one_loop_01.py",
+      "exit_code": 0,
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_one_loop_02.stdout.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_one_loop_02.stderr.txt",
+      "passed": 38,
+      "total": 38,
+      "mutations_or_controls": 14,
+      "failed": [],
+      "result": "Unchanged script/criteria after free memory recovered; gates55%, load<2.88, RSS68.9MB,0.667seconds."
+    },
+    {
+      "attempt": 3,
+      "kind": "author reproduction, not independent evidence",
+      "runner": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_one_loop_author_replay.py",
+      "exit_code": 0,
+      "record": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_one_loop_author_replay.json",
+      "result": "24/24, exact structured-result equality, original frozen files unchanged; resource gates53-54%, child RSS109.6MB,2.295seconds."
+    }
+  ],
+  "lock": "Coordinator-owned logs/physics_worker_lock.json, owner ym4d-full-proof, captured read-only in independent output; no acquisition or mutation.",
+  "implementation_notes": "The ROOT ancestor index was corrected and Python compile-only checked before the first execution. No numerical implementation or tolerance changed after a failed predicate; no mathematical predicate failed.",
+  "pre_exposure_expected_values": "Corrected UIR review already exposed absolute coefficient values; exact symbolic recomputation is independent implementation, not blind discovery."
+}

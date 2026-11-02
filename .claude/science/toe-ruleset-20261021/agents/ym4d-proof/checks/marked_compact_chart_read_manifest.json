@@ -1,0 +1,92 @@
+{
+  "schema": "marked_compact_chart_read_manifest_v1",
+  "role": "Author read coverage and attribution; not an independent verdict or automated proof check.",
+  "date": "2026-10-30",
+  "author": "/root/source_local_compact_return",
+  "methodology_pin": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "parent_reported_published_checkpoint": "cb339870848b20d5532bf4d538489c836c228511",
+  "new_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+    "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+    "lines": 753,
+    "coverage": "Full final 753-line self-read in returned chunks 1–260, 261–520, 521–780, with no truncation. Mathematics frozen before this packet."
+  },
+  "local_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "lines": 597,
+      "coverage": "All 597 lines in the continuous author lane; exact finite-u density, original cut, shell/reset reserve, fixed-source debit and actual matched chart. Rechecked supplier hash after writing MK."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "lines": 644,
+      "coverage": "All 644 frozen lines as author, including final full self-read; exact selected-D bijection and group representation CG15, pointwise CG16, domains and reader geometry. Current reread 75–190. CG joint moments are not substituted for a forest theorem."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXED_CAP_CHART_ASTRA.md",
+      "sha256": "1e885e4fbce03b00f4414b15caaa71e7140d9bc8494d0c75d1519bdbcde8ff2e",
+      "lines": 707,
+      "coverage": "All 707 source lines in three complete chunks 1–235, 236–480, 481–707; subsequent targeted rereads 1–185 and 285–455. Full-block cap geometry, activation, density jets, scalar incidence and canonical masks consumed from mathematics, not review status."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "coverage": "All 592 lines in the continuous author lane, with precise rereads of consumed force/covariance passages; current reread 250–302 and search of RF20/global specialization. Actual global V_beta(b) bound, complete b/E_lift/T_crit readers and finite-u accretivity consumed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "lines": 510,
+      "coverage": "All 510 lines in the continuous author lane with targeted rereads; original chart normalizer/Haar phase, local analytic majorants, full critical prefactor and source domain consumed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "lines": 624,
+      "coverage": "All 624 lines in the active marked-unit source audit. Original vertex arity/incidence, simultaneous coefficient majorants and signed singleton parity consumed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "lines": 713,
+      "coverage": "All 713 lines in the active marked-unit source audit. Normalized determinant/inverse density lists, scalar Cauchy factorials, covariance-pair forest, reader marks and complete-reader regrouping consumed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "lines": 711,
+      "coverage": "All 711 lines in the active marked-unit source audit; a truncated 506–529 passage was separately reread, and current 455–620 reread. Full shifted density jets, side-root transport, rescalings and reader-log bounds consumed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "coverage": "All actual 11 lines read; independently reread after freezing MK and before packet creation."
+    }
+  ],
+  "primary_reads": [
+    {
+      "url": "https://arxiv.org/html/1411.1107v1",
+      "title": "Martin Lohmann, Single Scale Cluster Expansions with Applications to Many Boson and Unbounded Spin Systems",
+      "coverage": "Returned primary HTML307–344 and 497–550; exact derivative passage336–344 reread. Not a full-paper read.",
+      "use": "Gaussian derivative organization compared with explicit field-analytic hypotheses; no bounded-buffer insertion theorem imported."
+    },
+    {
+      "url": "https://arxiv.org/html/hep-th/9409094v1",
+      "title": "A. Abdesselam and V. Rivasseau, Trees, forests and jungles: a botanical garden for cluster expansions",
+      "coverage": "Abstract metadata; returned introductory HTML16–80 and Section V.A passage331–373. Not a full-paper read.",
+      "use": "Forest/covariance architecture credited; finite clock proof and normalized-density derivative bounds rebuilt in the new source."
+    }
+  ],
+  "parent_literature_packet": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_connected_gluing_literature.json",
+    "coverage": "Entire JSON read. Its additional external-source reads belong to root; they are not presented as this author's primary reads or proof premises."
+  },
+  "review_reports_used_as_proof_premises": false,
+  "full_non_free_continuum_existence": "OPEN",
+  "physical_continuum_mass_gap": "OPEN",
+  "science_numerical_runs": 0
+}

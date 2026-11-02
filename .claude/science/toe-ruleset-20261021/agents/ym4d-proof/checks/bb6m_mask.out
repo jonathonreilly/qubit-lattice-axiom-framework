@@ -1,0 +1,41 @@
+bb6m: ternary DD masks, exact arithmetic (e = 9a/sigma^3, rho_n = ||S_e^n||^(1/n), beta_n = -log_3 rho_n)
+DD4: M1 residue sums = 1: True; divisible by sigma^3: True; len(e) = 5; denominator D = 9
+  offset-1/3 weights on nodes [-1, 0, 1, 2]: -5/81, 20/27, 10/27, -4/81
+  n =  1: rho_n = 1.222222  (rho_n >= 1: True)  beta_n = -0.1827
+  n =  2: rho_n = 1.222222  (rho_n >= 1: True)  beta_n = -0.1827
+  n =  3: rho_n = 1.222222  (rho_n >= 1: True)  beta_n = -0.1827
+  n =  4: rho_n = 1.222222  (rho_n >= 1: True)  beta_n = -0.1827
+  n =  5: rho_n = 1.222222  (rho_n >= 1: True)  beta_n = -0.1827
+  n =  6: rho_n = 1.222222  (rho_n >= 1: True)  beta_n = -0.1827
+  n =  7: rho_n = 1.222222  (rho_n >= 1: True)  beta_n = -0.1827
+  n =  8: rho_n = 1.222222  (rho_n >= 1: True)  beta_n = -0.1827
+  n =  9: rho_n = 1.222222  (rho_n >= 1: True)  beta_n = -0.1827
+  n = 10: rho_n = 1.222222  (rho_n >= 1: True)  beta_n = -0.1827
+DD6: M1 residue sums = 1: True; divisible by sigma^3: True; len(e) = 11; denominator D = 81
+  offset-1/3 weights on nodes [-2, -1, 0, 1, 2, 3]: 8/729, -70/729, 560/729, 280/729, -56/729, 7/729
+  n =  1: rho_n = 1.098765  (rho_n >= 1: True)  beta_n = -0.0857
+  n =  2: rho_n = 0.925267  (rho_n >= 1: False)  beta_n = 0.0707
+  n =  3: rho_n = 0.850422  (rho_n >= 1: False)  beta_n = 0.1475
+  n =  4: rho_n = 0.811888  (rho_n >= 1: False)  beta_n = 0.1897
+  n =  5: rho_n = 0.789106  (rho_n >= 1: False)  beta_n = 0.2156
+  n =  6: rho_n = 0.774200  (rho_n >= 1: False)  beta_n = 0.2330
+  n =  7: rho_n = 0.763715  (rho_n >= 1: False)  beta_n = 0.2454
+  n =  8: rho_n = 0.755942  (rho_n >= 1: False)  beta_n = 0.2547
+  n =  9: rho_n = 0.749952  (rho_n >= 1: False)  beta_n = 0.2619
+  n = 10: rho_n = 0.745193  (rho_n >= 1: False)  beta_n = 0.2677
+DD8: M1 residue sums = 1: True; divisible by sigma^3: True; len(e) = 17; denominator D = 2187
+  offset-1/3 weights on nodes [-3, -2, -1, 0, 1, 2, 3, 4]: -44/19683, 440/19683, -770/6561, 15400/19683, 7700/19683, -616/6561, 385/19683, -40/19683
+  n =  1: rho_n = 1.025606  (rho_n >= 1: True)  beta_n = -0.0230
+  n =  2: rho_n = 0.892540  (rho_n >= 1: False)  beta_n = 0.1035
+  n =  3: rho_n = 0.781644  (rho_n >= 1: False)  beta_n = 0.2242
+  n =  4: rho_n = 0.716759  (rho_n >= 1: False)  beta_n = 0.3031
+  n =  5: rho_n = 0.675199  (rho_n >= 1: False)  beta_n = 0.3575
+  n =  6: rho_n = 0.647516  (rho_n >= 1: False)  beta_n = 0.3956
+  n =  7: rho_n = 0.628152  (rho_n >= 1: False)  beta_n = 0.4232
+  n =  8: rho_n = 0.613949  (rho_n >= 1: False)  beta_n = 0.4441
+  n =  9: rho_n = 0.603112  (rho_n >= 1: False)  beta_n = 0.4603
+  n = 10: rho_n = 0.594578  (rho_n >= 1: False)  beta_n = 0.4732
+M1 PASS; M2 (DD8 beta_10 >= 0.47) PASS; M3 (DD6 beta_10 >= 0.25) PASS; M4 (DD4 rho_n >= 1 all n) PASS
+M5 (informational) DD4 weights = (-5, 60, 30, -4)/81: True
+VERDICT: ALL PASS
+[t = 0.2 s]

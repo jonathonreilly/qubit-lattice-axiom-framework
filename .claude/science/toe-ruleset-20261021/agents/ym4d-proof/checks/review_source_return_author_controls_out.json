@@ -1,0 +1,122 @@
+{
+  "source_commit": "0ea4e56c4c00da4e70863eb274cbee987b7bd917",
+  "source_sha256": "a41aec8a773fbd2f00f9cf675186f5aa4d62395602fe55b687f88656d44b03aa",
+  "baseline_replay": "Not rerun: coordinator already reproduced the exact 21 predicates; this driver tests altered copies only.",
+  "records": [
+    {
+      "name": "parametrix_sign",
+      "changes": [
+        [
+          "r[i][j] = -r[i][j] if i not in omega else F(0)",
+          "r[i][j] = r[i][j] if i not in omega else F(0)"
+        ]
+      ],
+      "sha256": "3c3673757644ca02d7bc807bfa623e3e652eed4a5eb9d77f69ce384d93213eb4",
+      "exit_code": 1,
+      "timed_out": false,
+      "all_passed": false,
+      "failed_gates": [
+        "compression_parametrix_identity",
+        "exact_neumann_remainder",
+        "unweighted_geometric_bound"
+      ],
+      "seconds": 0.20697962498525158,
+      "stdout": "review_source_return_author_parametrix_sign_out.json",
+      "stderr": "review_source_return_author_parametrix_sign_err.txt"
+    },
+    {
+      "name": "neumann_order",
+      "changes": [
+        [
+          "term = mul(term, r)",
+          "term = mul(r, term)"
+        ]
+      ],
+      "sha256": "52027909b330d0281d9b08aa3afa0e081c592623bc5088112deddaaa53e33fc6",
+      "exit_code": 1,
+      "timed_out": false,
+      "all_passed": false,
+      "failed_gates": [
+        "exact_neumann_remainder",
+        "unweighted_geometric_bound"
+      ],
+      "seconds": 0.20516833296278492,
+      "stdout": "review_source_return_author_neumann_order_out.json",
+      "stderr": "review_source_return_author_neumann_order_err.txt"
+    },
+    {
+      "name": "missing_collar",
+      "changes": [
+        [
+          "support = omega | {((x+j) % n) for x in omega for j in (-1, 1)}",
+          "support = omega"
+        ]
+      ],
+      "sha256": "b7f577d2fc6c471f14051bb322929e330b14133ab2b1efb7d6fc6843cfbf3977",
+      "exit_code": 0,
+      "timed_out": false,
+      "all_passed": true,
+      "failed_gates": [],
+      "seconds": 0.2034782919799909,
+      "stdout": "review_source_return_author_missing_collar_out.json",
+      "stderr": "review_source_return_author_missing_collar_err.txt"
+    },
+    {
+      "name": "common_logdet_half",
+      "changes": [
+        [
+          "via_perm = -ddet/(2*det)",
+          "via_perm = -ddet/det"
+        ],
+        [
+          "via_trace = -inverse(kd)[0][0]/2",
+          "via_trace = -inverse(kd)[0][0]"
+        ]
+      ],
+      "sha256": "699480a7b7b2589a00601c8f28df4777cbd725642f216ee6a9421f80f3556933",
+      "exit_code": 0,
+      "timed_out": false,
+      "all_passed": true,
+      "failed_gates": [],
+      "seconds": 0.20504479197552428,
+      "stdout": "review_source_return_author_common_logdet_half_out.json",
+      "stderr": "review_source_return_author_common_logdet_half_err.txt"
+    },
+    {
+      "name": "missing_marked_right",
+      "changes": [
+        [
+          "major_b = bp*sum(mr**j for j in range(4)) + mp*br*sum(j*mr**(j-1) for j in range(1, 4))",
+          "major_b = bp*sum(mr**j for j in range(4))"
+        ]
+      ],
+      "sha256": "b658cc3bb02b205436b4f03c17b2dce7c65717d97496ba4c99cbe830fa1f0c4e",
+      "exit_code": 0,
+      "timed_out": false,
+      "all_passed": true,
+      "failed_gates": [],
+      "seconds": 0.20607783400919288,
+      "stdout": "review_source_return_author_missing_marked_right_out.json",
+      "stderr": "review_source_return_author_missing_marked_right_err.txt"
+    },
+    {
+      "name": "contour_side_sign",
+      "changes": [
+        [
+          "side = face_integral(pwidth)-face_integral(-pwidth)",
+          "side = face_integral(-pwidth)-face_integral(pwidth)"
+        ]
+      ],
+      "sha256": "605bdeea625928ba90b9d1f6deebee53e22cd7d0bbda08cb9cd057ef19fc3819",
+      "exit_code": 1,
+      "timed_out": false,
+      "all_passed": false,
+      "failed_gates": [
+        "moving_cut_side_identity"
+      ],
+      "seconds": 0.2095129580120556,
+      "stdout": "review_source_return_author_contour_side_sign_out.json",
+      "stderr": "review_source_return_author_contour_side_sign_err.txt"
+    }
+  ]
+}

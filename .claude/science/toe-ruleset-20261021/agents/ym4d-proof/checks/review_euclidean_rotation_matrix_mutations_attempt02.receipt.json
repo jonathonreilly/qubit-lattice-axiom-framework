@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-29T18:50:46.860944+00:00",
+  "returncode": 0,
+  "seconds": 0.25030062498990446,
+  "script_sha256": "3e7d2cd00e8ac08e0a02976c35a97581df41d2be0672090cc10332783f128331",
+  "stdout_sha256": "bd1c78a9f4ac38b0434788508e703f7b0633e7ad8b71e99c81f760572022b467",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "criterion_change": false,
+  "repair": "Initial diagnostic substituted log(2) after SymPy had already evaluated the matrix numerically, so it left the positive matrix unchanged. Build the negative-coefficient exponential matrix directly. Preserve original failing source, stderr and receipt."
+}

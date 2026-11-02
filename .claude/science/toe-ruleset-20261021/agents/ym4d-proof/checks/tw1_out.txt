@@ -1,0 +1,55 @@
+========================================================================
+tw1 -- exact feasibility of the decoupled exponent system
+exact Fractions only; criteria pre-registered in tw1_criteria.md
+========================================================================
+
+[tw1-A] reproduction gate: single common theta_w in (0,2], d=4
+  RESULT: EMPTY
+  VERDICT tw1-A: PASS (reproduces PROOF.md l.30-34 [S24-fix 3])
+
+[tw1-B] decoupled system, d=4, residual supply capped at 2+theta (nonlinear sources)
+  tw1-B: FEASIBLE, 440 grid points
+       alpha: min 1/12  max 5/6
+       theta: min 1/6  max 11/12
+          tc: min 2  max 2
+          tr: min 25/12  max 35/12
+          tA: min 1  max 1
+        expA: min -11/12  max -1/12
+      best contraction exponent d-tr-2tA = -11/12  at (alpha,theta,tc,tr,tA) = (Fraction(1, 12), Fraction(11, 12), Fraction(2, 1), Fraction(35, 12), Fraction(1, 1))
+
+[tw1-B'] decoupled system, d=4, residual supply capped at 3 (level-k data only)
+  tw1-B': FEASIBLE, 660 grid points
+       alpha: min 1/12  max 5/6
+       theta: min 1/6  max 11/12
+          tc: min 2  max 2
+          tr: min 25/12  max 3
+          tA: min 1  max 1
+        expA: min -1  max -1/12
+      best contraction exponent d-tr-2tA = -1  at (alpha,theta,tc,tr,tA) = (Fraction(1, 12), Fraction(1, 6), Fraction(2, 1), Fraction(3, 1), Fraction(1, 1))
+
+[tw1-C] designed-FAIL control 1: source weight pinned to theta = 0
+  RESULT: EMPTY  ->  CONTROL FIRED (the theta>0 floor is live)
+
+[tw1-D] designed-FAIL control 2: d = 5
+  RESULT: EMPTY  ->  CONTROL FIRED (the count carries d)
+
+[tw1-D'] control 2 variant: d = 5 with the data-only cap tr <= 3
+  RESULT: EMPTY
+
+[tw1-E] d-sweep (reporting only)
+  d=2: nonlinear-source system FEASIBLE | data-only system FEASIBLE | Wilson slack at (tc,tA)=(2,1): 2
+  d=3: nonlinear-source system FEASIBLE | data-only system FEASIBLE | Wilson slack at (tc,tA)=(2,1): 1
+  d=4: nonlinear-source system FEASIBLE | data-only system FEASIBLE | Wilson slack at (tc,tA)=(2,1): 0
+  d=5: nonlinear-source system    EMPTY | data-only system    EMPTY | Wilson slack at (tc,tA)=(2,1): -1
+  d=6: nonlinear-source system    EMPTY | data-only system    EMPTY | Wilson slack at (tc,tA)=(2,1): -2
+
+[tw1-F] the pinning of theta_w^c at d=4 (exact, no grid)
+  tc=3/2: tA=1/2, tc+2tA=5/2, Wilson(d=4) FAILS
+  tc=7/4: tA=3/4, tc+2tA=13/4, Wilson(d=4) FAILS
+  tc=2: tA=1, tc+2tA=4, Wilson(d=4) OK
+  tc=9/4: tA=1, tc+2tA=17/4, Wilson(d=4) OK
+  tc=5/2: tA=1, tc+2tA=9/2, Wilson(d=4) OK
+  => floor theta_w^c >= 2 (PROVEN given the tA cap); ceiling 2 (ARGUED, NORMS l.660) => theta_w^c = 2 exactly.
+
+[tw1-G] A = L^{d-tr-2tA} at L=3, exact
+          data-only tr=3: exponent -1, A = 3^(-1) = 1/3

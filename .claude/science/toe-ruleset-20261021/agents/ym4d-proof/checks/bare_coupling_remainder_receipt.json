@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "unit": "bare_coupling_remainder",
+  "source_freeze": {
+    "path": "BARE_COUPLING_REMAINDER_ASTRA.md",
+    "lines": 583,
+    "sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61"
+  },
+  "read_manifest": {
+    "path": "checks/bare_coupling_remainder_read_manifest.json",
+    "lines": 150,
+    "sha256": "467094ed6b6edc259e1a9a406fdcca2fe46bf2590d39ffe2353283a8591bea86"
+  },
+  "author_scope": "Actual source-zero bare original-cut marginal remainder only. Full P_u is outside the small remainder; no new BM result assumed.",
+  "new_result": "BR11 fixed-domain centered-ball remainder; BR12-BR16 exact side-fugacity comparison; BR21-BR25 unscaled volume-first second moment and beta_av[log(Z_cut/P_u)]=O(1/u)+rare tails.",
+  "source_status": "Frozen author theorem pending a DIFFERENT fresh hostile review; this receipt is not a mathematical verdict.",
+  "mathematical_review_targets": [
+    "Uniform centered NR re-estimation with shrinking r_a=sigma p and fixed bar_tau/rho0; parity at each reader.",
+    "Every side/corner flag, mixed shift factorial and marked-translation charge under complex fugacity; exact zeta=0 canonical identification and coefficientwise logarithm bound.",
+    "Actual WR moving-center real jets and original-cut/transported-prefactor matching, with real-source positivity and no hard-predicate deformation.",
+    "Original input counts, inverse-radius costs, volume-first moment limit, gauge Ward identity and retained finite-torus harmonic modes."
+  ],
+  "metadata_checks": {
+    "json_round_trip": true,
+    "source_unchanged_after_freeze": true,
+    "local_source_links_resolve": true,
+    "markdown_fences_balanced": true
+  },
+  "numerical_science_runs": 0,
+  "predecessor_shared_front_git_pr_audit_edits": false,
+  "extra_workers_spawned": false,
+  "publication_owner": "root",
+  "remaining_open": [
+    "prefactor marginal evaluation and b1",
+    "native effective-class rates and inherited-law closure",
+    "all-history extraction and iteration",
+    "non-freeness and continuum existence",
+    "physical continuum mass gap"
+  ]
+}

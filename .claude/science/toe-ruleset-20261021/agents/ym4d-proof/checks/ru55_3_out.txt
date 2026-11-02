@@ -1,0 +1,75 @@
+ru55_3: U1 arithmetic (Fractions; rigorous log enclosures; floats display-only)
+K4: ln 10 in [2.30258509299404590109, 2.30258509299404590109]; width 4.00e-45
+K4: contains 2.302585092994045684 and width < 1e-30: False
+a_bad = c_pr eps_1^2 = 2.496996e-85 (display)
+U1-1 N=2 kappa=1 lam_min=3.17e-3: a_J=2.4414e-04 a_fl=4.4649e-13 a_gamma=3.9125e-07 (units eps_1^2) -> a_fl binds: True; a_ret^PLD/a_bad = 43632197/54358179840000 (display 8.0268e-07)
+U1-1 N=2 kappa=1 lam_min=4.23e-3: a_J=2.4414e-04 a_fl=5.9579e-13 a_gamma=3.9125e-07 (units eps_1^2) -> a_fl binds: True; a_ret^PLD/a_bad = 6469127/6039797760000 (display 1.0711e-06)
+U1-1 N=2 kappa=1 lam_min=6.6e-10 [sensitivity: L0-1]: a_J=2.4414e-04 a_fl=9.2960e-20 a_gamma=3.9125e-07 (units eps_1^2) -> a_fl binds: True; a_ret^PLD/a_bad = 1514051/9059696640000000000 (display 1.6712e-13)
+U1-1 N=2 kappa=1/4 lam_min=3.17e-3: a_J=6.1035e-05 a_fl=4.4649e-13 a_gamma=1.5297e-07 (units eps_1^2) -> a_fl binds: True; a_ret^PLD/a_bad = 43632197/54358179840000 (display 8.0268e-07)
+U1-1 N=2 kappa=1/4 lam_min=4.23e-3: a_J=6.1035e-05 a_fl=5.9579e-13 a_gamma=1.5297e-07 (units eps_1^2) -> a_fl binds: True; a_ret^PLD/a_bad = 6469127/6039797760000 (display 1.0711e-06)
+U1-1 N=2 kappa=1/4 lam_min=6.6e-10 [sensitivity: L0-1]: a_J=6.1035e-05 a_fl=9.2960e-20 a_gamma=1.5297e-07 (units eps_1^2) -> a_fl binds: True; a_ret^PLD/a_bad = 1514051/9059696640000000000 (display 1.6712e-13)
+U1-1 N=3 kappa=1 lam_min=3.17e-3: a_J=1.6276e-04 a_fl=1.9844e-13 a_gamma=1.7389e-07 (units eps_1^2) -> a_fl binds: True; a_ret^PLD/a_bad = 43632197/122305904640000 (display 3.5675e-07)
+U1-1 N=3 kappa=1 lam_min=4.23e-3: a_J=1.6276e-04 a_fl=2.6479e-13 a_gamma=1.7389e-07 (units eps_1^2) -> a_fl binds: True; a_ret^PLD/a_bad = 6469127/13589544960000 (display 4.7604e-07)
+U1-1 N=3 kappa=1 lam_min=6.6e-10 [sensitivity: L0-1]: a_J=1.6276e-04 a_fl=4.1315e-20 a_gamma=1.7389e-07 (units eps_1^2) -> a_fl binds: True; a_ret^PLD/a_bad = 1514051/20384317440000000000 (display 7.4275e-14)
+U1-1 N=3 kappa=1/4 lam_min=3.17e-3: a_J=4.0690e-05 a_fl=1.9844e-13 a_gamma=6.7987e-08 (units eps_1^2) -> a_fl binds: True; a_ret^PLD/a_bad = 43632197/122305904640000 (display 3.5675e-07)
+U1-1 N=3 kappa=1/4 lam_min=4.23e-3: a_J=4.0690e-05 a_fl=2.6479e-13 a_gamma=6.7987e-08 (units eps_1^2) -> a_fl binds: True; a_ret^PLD/a_bad = 6469127/13589544960000 (display 4.7604e-07)
+U1-1 N=3 kappa=1/4 lam_min=6.6e-10 [sensitivity: L0-1]: a_J=4.0690e-05 a_fl=4.1315e-20 a_gamma=6.7987e-08 (units eps_1^2) -> a_fl binds: True; a_ret^PLD/a_bad = 1514051/20384317440000000000 (display 7.4275e-14)
+U1-1: PASS
+U1-2 (2, Fraction(1, 1), '3.17e-3'): a_fl/eps^2 = 4.464887e-13 vs 4.4650e-13: True; ratio 8.026795e-07 vs 8.0270e-07: True
+U1-2 (2, Fraction(1, 1), '4.23e-3'): a_fl/eps^2 = 5.957877e-13 vs 5.9580e-13: True; ratio 1.071083e-06 vs 1.0710e-06: True
+U1-2: PASS; L0-1 factor a_fl(3.17e-3)/a_fl(6.6e-10) = 158500000/33 (display 4.803030e+06)
+
+U1-3 N=2 kappa=1 lam=3.17e-3 C_Om=1: B = a_ret t_DX = 8.0172e+60; ln t_DX in [349.0766, 349.0766]; P_max(lnC=0) in [4.5933e+58, 4.5933e+58]; lnC_max(P=12) >= 8.0172e+60
+U1-3 N=2 kappa=1 lam=3.17e-3 C_Om=9/2: B = a_ret t_DX = 3.6077e+61; ln t_DX in [350.5807, 350.5807]; P_max(lnC=0) in [2.0581e+59, 2.0581e+59]; lnC_max(P=12) >= 3.6077e+61
+U1-3 N=2 kappa=1 lam=4.23e-3 C_Om=1: B = a_ret t_DX = 1.0698e+61; ln t_DX in [349.0766, 349.0766]; P_max(lnC=0) in [6.1293e+58, 6.1293e+58]; lnC_max(P=12) >= 1.0698e+61
+U1-3 N=2 kappa=1 lam=4.23e-3 C_Om=9/2: B = a_ret t_DX = 4.8141e+61; ln t_DX in [350.5807, 350.5807]; P_max(lnC=0) in [2.7463e+59, 2.7463e+59]; lnC_max(P=12) >= 4.8141e+61
+U1-3 N=2 kappa=1 lam=6.6e-10 [sensitivity: L0-1] C_Om=1: B = a_ret t_DX = 1.6692e+54; ln t_DX in [349.0766, 349.0766]; P_max(lnC=0) in [9.5634e+51, 9.5634e+51]; lnC_max(P=12) >= 1.6692e+54
+U1-3 N=2 kappa=1 lam=6.6e-10 [sensitivity: L0-1] C_Om=9/2: B = a_ret t_DX = 7.5113e+54; ln t_DX in [350.5807, 350.5807]; P_max(lnC=0) in [4.2851e+52, 4.2851e+52]; lnC_max(P=12) >= 7.5113e+54
+U1-3 N=2 kappa=1/4 lam=3.17e-3 C_Om=1: B = a_ret t_DX = 8.0172e+60; ln t_DX in [349.0766, 349.0766]; P_max(lnC=0) in [4.5933e+58, 4.5933e+58]; lnC_max(P=12) >= 8.0172e+60
+U1-3 N=2 kappa=1/4 lam=3.17e-3 C_Om=9/2: B = a_ret t_DX = 3.6077e+61; ln t_DX in [350.5807, 350.5807]; P_max(lnC=0) in [2.0581e+59, 2.0581e+59]; lnC_max(P=12) >= 3.6077e+61
+U1-3 N=2 kappa=1/4 lam=4.23e-3 C_Om=1: B = a_ret t_DX = 1.0698e+61; ln t_DX in [349.0766, 349.0766]; P_max(lnC=0) in [6.1293e+58, 6.1293e+58]; lnC_max(P=12) >= 1.0698e+61
+U1-3 N=2 kappa=1/4 lam=4.23e-3 C_Om=9/2: B = a_ret t_DX = 4.8141e+61; ln t_DX in [350.5807, 350.5807]; P_max(lnC=0) in [2.7463e+59, 2.7463e+59]; lnC_max(P=12) >= 4.8141e+61
+U1-3 N=2 kappa=1/4 lam=6.6e-10 [sensitivity: L0-1] C_Om=1: B = a_ret t_DX = 1.6692e+54; ln t_DX in [349.0766, 349.0766]; P_max(lnC=0) in [9.5634e+51, 9.5634e+51]; lnC_max(P=12) >= 1.6692e+54
+U1-3 N=2 kappa=1/4 lam=6.6e-10 [sensitivity: L0-1] C_Om=9/2: B = a_ret t_DX = 7.5113e+54; ln t_DX in [350.5807, 350.5807]; P_max(lnC=0) in [4.2851e+52, 4.2851e+52]; lnC_max(P=12) >= 7.5113e+54
+U1-3 N=3 kappa=1 lam=3.17e-3 C_Om=1: B = a_ret t_DX = 3.5632e+60; ln t_DX in [349.0766, 349.0766]; P_max(lnC=0) in [2.0415e+58, 2.0415e+58]; lnC_max(P=12) >= 3.5632e+60
+U1-3 N=3 kappa=1 lam=3.17e-3 C_Om=12: B = a_ret t_DX = 4.2758e+61; ln t_DX in [351.5616, 351.5616]; P_max(lnC=0) in [2.4325e+59, 2.4325e+59]; lnC_max(P=12) >= 4.2758e+61
+U1-3 N=3 kappa=1 lam=4.23e-3 C_Om=1: B = a_ret t_DX = 4.7547e+60; ln t_DX in [349.0766, 349.0766]; P_max(lnC=0) in [2.7241e+58, 2.7241e+58]; lnC_max(P=12) >= 4.7547e+60
+U1-3 N=3 kappa=1 lam=4.23e-3 C_Om=12: B = a_ret t_DX = 5.7056e+61; ln t_DX in [351.5616, 351.5616]; P_max(lnC=0) in [3.2459e+59, 3.2459e+59]; lnC_max(P=12) >= 5.7056e+61
+U1-3 N=3 kappa=1 lam=6.6e-10 [sensitivity: L0-1] C_Om=1: B = a_ret t_DX = 7.4186e+53; ln t_DX in [349.0766, 349.0766]; P_max(lnC=0) in [4.2504e+51, 4.2504e+51]; lnC_max(P=12) >= 7.4186e+53
+U1-3 N=3 kappa=1 lam=6.6e-10 [sensitivity: L0-1] C_Om=12: B = a_ret t_DX = 8.9023e+54; ln t_DX in [351.5616, 351.5616]; P_max(lnC=0) in [5.0644e+52, 5.0644e+52]; lnC_max(P=12) >= 8.9023e+54
+U1-3 N=3 kappa=1/4 lam=3.17e-3 C_Om=1: B = a_ret t_DX = 3.5632e+60; ln t_DX in [349.0766, 349.0766]; P_max(lnC=0) in [2.0415e+58, 2.0415e+58]; lnC_max(P=12) >= 3.5632e+60
+U1-3 N=3 kappa=1/4 lam=3.17e-3 C_Om=12: B = a_ret t_DX = 4.2758e+61; ln t_DX in [351.5616, 351.5616]; P_max(lnC=0) in [2.4325e+59, 2.4325e+59]; lnC_max(P=12) >= 4.2758e+61
+U1-3 N=3 kappa=1/4 lam=4.23e-3 C_Om=1: B = a_ret t_DX = 4.7547e+60; ln t_DX in [349.0766, 349.0766]; P_max(lnC=0) in [2.7241e+58, 2.7241e+58]; lnC_max(P=12) >= 4.7547e+60
+U1-3 N=3 kappa=1/4 lam=4.23e-3 C_Om=12: B = a_ret t_DX = 5.7056e+61; ln t_DX in [351.5616, 351.5616]; P_max(lnC=0) in [3.2459e+59, 3.2459e+59]; lnC_max(P=12) >= 5.7056e+61
+U1-3 N=3 kappa=1/4 lam=6.6e-10 [sensitivity: L0-1] C_Om=1: B = a_ret t_DX = 7.4186e+53; ln t_DX in [349.0766, 349.0766]; P_max(lnC=0) in [4.2504e+51, 4.2504e+51]; lnC_max(P=12) >= 7.4186e+53
+U1-3 N=3 kappa=1/4 lam=6.6e-10 [sensitivity: L0-1] C_Om=12: B = a_ret t_DX = 8.9023e+54; ln t_DX in [351.5616, 351.5616]; P_max(lnC=0) in [5.0644e+52, 5.0644e+52]; lnC_max(P=12) >= 8.9023e+54
+U1-3 envelope (i) lam=3.17e-3, (P, lnC) = (1e58, 1e60): holds True, premise t_DX >= P/(2a_ret) True
+U1-3 envelope (ii) lam=6.6e-10, (P, lnC) = (1e51, 1e53): holds True, premise True
+K1: P = 1e62, lnC = 0, lam=3.17e-3: holds False -> FAILS (as designed)
+U1-3: PASS
+
+U1-4: a_ret^PLD(eps_1 = 6.7e-40, N=2, kappa=1, lam=3.17e-3) = 2.004288e-91 (display)
+U1-4 p(SC)=6 lnC=0 [E3]: g^2_delta in [1.029038e-94, 1.029038e-94]; log10 [-93.9876, -93.9876]; margin over DX'(C_Om=1) [57.6145, 57.6145] decades
+U1-4 p(SC)=6 lnC=50 [E3]: g^2_delta in [1.003168e-94, 1.003168e-94]; log10 [-93.9986, -93.9986]; margin over DX'(C_Om=1) [57.6034, 57.6034] decades
+U1-4 p(SC)=12 lnC=0 [E3]: g^2_delta in [7.707493e-95, 7.707493e-95]; log10 [-94.1131, -94.1131]; margin over DX'(C_Om=1) [57.4890, 57.4890] decades
+U1-4 p(SC)=12 lnC=50 [E3]: g^2_delta in [7.561437e-95, 7.561437e-95]; log10 [-94.1214, -94.1214]; margin over DX'(C_Om=1) [57.4807, 57.4807] decades
+U1-4 p(SC)=702 lnC=100000 [ILLUSTRATIVE]: g^2_delta in [1.120505e-96, 1.120505e-96]; log10 [-95.9506, -95.9506]; margin over DX'(C_Om=1) [55.6515, 55.6515] decades
+U1-4 reproduction of PLD p4 E3 (order (6,0),(6,50),(12,0),(12,50)) within 2%: PASS
+
+U1-5 theta=1/24 (route iii sup), D=100 (l.617 form): g^2_H in [1.040415e-88, 1.040415e-88]; margin over DX'(C_Om=1) [63.619267, 63.619267] decades
+U1-5 theta=1/24 (route iii sup), D=B_0=0: g^2_H in [1.013396e-88, 1.013396e-88]; margin over DX'(C_Om=1) [63.607839, 63.607839] decades
+U1-5 theta=1/24 (route iii sup), D=B_0=1: g^2_H in [2.700997e-91, 2.700997e-91]; margin over DX'(C_Om=1) [61.033584, 61.033584] decades
+U1-5 theta=1/15000 (route iv), D=100 (l.617 form): g^2_H in [1.664664e-91, 1.664664e-91]; margin over DX'(C_Om=1) [60.823387, 60.823387] decades
+U1-5 theta=1/15000 (route iv), D=B_0=0: g^2_H in [1.621434e-91, 1.621434e-91]; margin over DX'(C_Om=1) [60.811959, 60.811959] decades
+U1-5 theta=1/15000 (route iv), D=B_0=1: g^2_H in [4.321596e-94, 4.321596e-94]; margin over DX'(C_Om=1) [58.237704, 58.237704] decades
+U1-5 theta=a_ret/a_bad (route ii fallback), D=100 (l.617 form): g^2_H in [2.004288e-93, 2.004288e-93]; margin over DX'(C_Om=1) [58.904020, 58.904020] decades
+U1-5 theta=a_ret/a_bad (route ii fallback), D=B_0=0: g^2_H in [1.952237e-93, 1.952237e-93]; margin over DX'(C_Om=1) [58.892593, 58.892593] decades
+U1-5 theta=a_ret/a_bad (route ii fallback), D=B_0=1: g^2_H in [5.203284e-96, 5.203284e-96]; margin over DX'(C_Om=1) [56.318338, 56.318338] decades
+U1-5 reproduction: +63.619267 (l.617 form, theta=1/24): True; 2.70e-91 (B_0=1): True; 1.01e-88 (B_0=0): True
+K2: B_0=0 vs B_0=1 margins differ by > 2 decades: True -> as designed
+sign gate (U1-4 and U1-5 margins all > 0): PASS
+
+U1-6: kappa_min = 256 theta c_pr/lambda = 1/84270 == 1/84270: True; a_A/a_bad at kappa=1: min(14045/4, 1/4) = 1/4 (6theta binds: True) -> PASS
+K3: lambda = 1e-6: lambda kappa/(256 c_pr) = 2809/400000 < 6 theta = 1/4: True -> flips (as designed)
+
+GATES: all PASS; CONTROLS: NOT all as designed -> UNABLE TO DECIDE

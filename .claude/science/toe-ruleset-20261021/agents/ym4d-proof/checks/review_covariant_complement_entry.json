@@ -1,0 +1,274 @@
+{
+  "created_utc": "2026-10-29T21:57:42.828370+00:00",
+  "reviewer": "/root/review_covariant_complement; user-selected Astra/max; same-family fresh restricted context",
+  "head_at_entry": "51fca25c21dd5233294555ddc21ca0801627f6a0",
+  "methodology_ref": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "initially_dirty": true,
+  "methodology_identities": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "local_identical": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "local_identical": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "local_identical": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "local_identical": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "local_identical": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "local_identical": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "local_identical": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "local_identical": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "42a24d3df296f01e4189eadd1ef8b92f316bd8d14229f14643641e39939d159e",
+      "local_identical": true
+    }
+  ],
+  "packet_verification": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_COMPLEMENT_ASTRA.md",
+      "expected": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b",
+      "actual": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_01.py",
+      "expected": "39b0d8d6b50aecf31a86772b9da5eccaf7eac86d5c6ee09c14c1e72f0c693a3c",
+      "actual": "39b0d8d6b50aecf31a86772b9da5eccaf7eac86d5c6ee09c14c1e72f0c693a3c",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_01_output.txt",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_01_results.json",
+      "expected": "a35659e7623ec15ce03f5328dd9db266d49695c379552c438d108f5081fee2d5",
+      "actual": "a35659e7623ec15ce03f5328dd9db266d49695c379552c438d108f5081fee2d5",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_01_stderr.txt",
+      "expected": "a4f5e2845bb249634292385b9b2a99a0b9dee1bd5df178c7438fa87cc21ff185",
+      "actual": "a4f5e2845bb249634292385b9b2a99a0b9dee1bd5df178c7438fa87cc21ff185",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_02_output.txt",
+      "expected": "6e5bdb1988e35b9f96473afe668ebf57316fe070c63a089adcff26701187a9c8",
+      "actual": "6e5bdb1988e35b9f96473afe668ebf57316fe070c63a089adcff26701187a9c8",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_02_stderr.txt",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_criteria.md",
+      "expected": "7eec32ce4b5db6d3ea11f62a3d4c29fdc596a05f20b9e7b3b1ea30dba902b667",
+      "actual": "7eec32ce4b5db6d3ea11f62a3d4c29fdc596a05f20b9e7b3b1ea30dba902b667",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_gate01.json",
+      "expected": "8b666a73bd88470ff17d67499b96c19523e929202659300a4a76142da16541df",
+      "actual": "8b666a73bd88470ff17d67499b96c19523e929202659300a4a76142da16541df",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_gate02.json",
+      "expected": "0b2e21a5ce1591990a5e7edd14de73a28016454d36c3b631e0c83b1a853b4fd2",
+      "actual": "0b2e21a5ce1591990a5e7edd14de73a28016454d36c3b631e0c83b1a853b4fd2",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_packaging_failure01.json",
+      "expected": "d4cc62be7ab0cbe918fa5d3e6f5835327438f6b69405e4fee3a7eb0df610451a",
+      "actual": "d4cc62be7ab0cbe918fa5d3e6f5835327438f6b69405e4fee3a7eb0df610451a",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc.py",
+      "expected": "4ac0a1439508a34ebeb2e86b4ad287f5a9aa12d7cb71fd5fbe63a8304ba53c7a",
+      "actual": "4ac0a1439508a34ebeb2e86b4ad287f5a9aa12d7cb71fd5fbe63a8304ba53c7a",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc03_gate.json",
+      "expected": "756e1f38d199cc3b679918497bdcae44c6180c3e3362212803c2f25199cf47c8",
+      "actual": "756e1f38d199cc3b679918497bdcae44c6180c3e3362212803c2f25199cf47c8",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc03_output.txt",
+      "expected": "9327e7872e9bde7ef30b05b2317d6380e59eaf46d5824a8f8ad24c3f6e4f465c",
+      "actual": "9327e7872e9bde7ef30b05b2317d6380e59eaf46d5824a8f8ad24c3f6e4f465c",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc03_run.json",
+      "expected": "a2702ef4ff43afca19b4428436dd0e2f2c5377e1c0d452ad60a58eb2494defde",
+      "actual": "a2702ef4ff43afca19b4428436dd0e2f2c5377e1c0d452ad60a58eb2494defde",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc03_stderr.txt",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc_criteria.md",
+      "expected": "3e96c965e88fd6c146cde9836b4594d1835476f20bdb13e137ab7f01202ff0f2",
+      "actual": "3e96c965e88fd6c146cde9836b4594d1835476f20bdb13e137ab7f01202ff0f2",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc_results.json",
+      "expected": "9327e7872e9bde7ef30b05b2317d6380e59eaf46d5824a8f8ad24c3f6e4f465c",
+      "actual": "9327e7872e9bde7ef30b05b2317d6380e59eaf46d5824a8f8ad24c3f6e4f465c",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_read_manifest.json",
+      "expected": "57b7e15eb8d0bb48f9966265e09852a61a334e811e6432554175a3f7ade89f44",
+      "actual": "57b7e15eb8d0bb48f9966265e09852a61a334e811e6432554175a3f7ade89f44",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_run02.json",
+      "expected": "37915e7f6f0e2afa2e218cedf434c53631bae4a13fa5e579ab04f9d7334590be",
+      "actual": "37915e7f6f0e2afa2e218cedf434c53631bae4a13fa5e579ab04f9d7334590be",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_runner.py",
+      "expected": "489d96acb40e06abcb599eb4148bfa29ad58ee09fb03218bf82d8e4a8d081b0b",
+      "actual": "489d96acb40e06abcb599eb4148bfa29ad58ee09fb03218bf82d8e4a8d081b0b",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "expected": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "actual": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "expected": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "actual": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_receipt.json",
+      "expected": "0e769d5e94a3bed0617c5b8e50c81a04cdb3f51466514693ae8f30ac38d01c4c",
+      "actual": "0e769d5e94a3bed0617c5b8e50c81a04cdb3f51466514693ae8f30ac38d01c4c",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "expected": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "actual": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "expected": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "actual": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "expected": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+      "actual": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "expected": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+      "actual": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOFTHARD_R2.md",
+      "expected": "02b7b7ee556df6f501bc0c206497192423b01633c1907fa3bd6ff2019d75ab0b",
+      "actual": "02b7b7ee556df6f501bc0c206497192423b01633c1907fa3bd6ff2019d75ab0b",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HIST.md",
+      "expected": "0bafb04ecda4b88f13f958026f4c817b3d536207a0de2d1f347f425e5f61097c",
+      "actual": "0bafb04ecda4b88f13f958026f4c817b3d536207a0de2d1f347f425e5f61097c",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PLD.md",
+      "expected": "089a559f063c87467a804085dc57e313f8ab897d5bf1c09554f5c5fe3f5d811b",
+      "actual": "089a559f063c87467a804085dc57e313f8ab897d5bf1c09554f5c5fe3f5d811b",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LARGE55.md",
+      "expected": "79bc36d60687376716aa425ad3c271b681ca9549f5d217693e2736b805cdf0e7",
+      "actual": "79bc36d60687376716aa425ad3c271b681ca9549f5d217693e2736b805cdf0e7",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "expected": "282318a0c398d49a8c69bc1f2173c90ef463634beaba55e2f4d2792af8b64815",
+      "actual": "282318a0c398d49a8c69bc1f2173c90ef463634beaba55e2f4d2792af8b64815",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "expected": "288aee552bf7c83b32d6b0cc1569a99053355544704021e52ddea522ca8ce50b",
+      "actual": "288aee552bf7c83b32d6b0cc1569a99053355544704021e52ddea522ca8ce50b",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature.md",
+      "expected": "a7c9581d797d3c36978c9677782c6c0d67c9b0e9251252f9f634404acccc3ece",
+      "actual": "a7c9581d797d3c36978c9677782c6c0d67c9b0e9251252f9f634404acccc3ece",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_read_manifest.json",
+      "expected": "c98c5530c75f1d6a000587d7915754e9c08ed45659b22bce0c29cbebcdea2194",
+      "actual": "c98c5530c75f1d6a000587d7915754e9c08ed45659b22bce0c29cbebcdea2194",
+      "match": true
+    }
+  ],
+  "source_exposure": "Complete CC target and H1-H28, CB1-CB8. Author checker, numerical criteria and outputs not read; receipt contains aggregate outcomes and failed shell ratio disclosed by coordinator.",
+  "scope": "Original fixed-real-V local boundary estimates and matching H gas. No whole PR, main landing, audit or continuum/gap disposition."
+}

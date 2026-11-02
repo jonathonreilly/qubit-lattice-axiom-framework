@@ -1,0 +1,35 @@
+{
+  "absolute_markdown_links": [],
+  "corrected_note_sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf",
+  "git_diff_check_exit": 0,
+  "git_diff_check_stderr": "",
+  "git_diff_check_stdout": "",
+  "json_parsed": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_01_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_controls_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_determinant_half_factor.stdout.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_long_connector.stdout.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_replay.stdout.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_row_majorant.stdout.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_self_polymer.stdout.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_source_expected.stdout.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_trace_sign.stdout.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_source_manifest.json"
+  ],
+  "local_markdown_targets_resolve": true,
+  "scope": "Focused reviewer artifact validation, not whole-PR combined gate",
+  "syntax_checked": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_01.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_controls.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_determinant_half_factor.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_long_connector.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_replay.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_row_majorant.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_self_polymer.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_source_expected.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_trace_sign.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_receipt_builder.py"
+  ],
+  "trailing_whitespace": []
+}

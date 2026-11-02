@@ -1,0 +1,50 @@
+== M1: d=2 L=3 k=2 T=1 seed=101
+M1 A0 adjointness: PASS
+M1 A1 D_U(P_U^T u) = u - sum V_k delta_root: PASS
+M1 A2 covariance P_{U^g}^T(Ad_g u) = M_g P_U^T u: PASS
+M1 A3 S cc_U and sum of pieces = S: PASS
+M1 A4 every piece cc_U: PASS
+M1 A5 flat limit = HR flat formula: PASS
+M1 C1 flat routing at curved U: piece not cc_U: FIRES
+M1 C2 D_U^perp(P_1^T u) != u^perp at curved U: FIRES
+M1 C3 non-cc source: sum of pieces != source: FIRES
+M1 C4 wrong backward sign breaks A1: FIRES
+M1 C5 wrong-side transport breaks A1: FIRES
+== M2: d=2 L=3 k=2 T=2 seed=202
+M2 A0 adjointness: PASS
+M2 A1 D_U(P_U^T u) = u - sum V_k delta_root: PASS
+M2 A2 covariance P_{U^g}^T(Ad_g u) = M_g P_U^T u: PASS
+M2 A3 S cc_U and sum of pieces = S: PASS
+M2 A4 every piece cc_U: PASS
+M2 A5 flat limit = HR flat formula: PASS
+M2 C1 flat routing at curved U: piece not cc_U: FIRES
+M2 C2 D_U^perp(P_1^T u) != u^perp at curved U: FIRES
+M2 C3 non-cc source: sum of pieces != source: FIRES
+M2 C4 wrong backward sign breaks A1: FIRES
+M2 C5 wrong-side transport breaks A1: FIRES
+== M3: d=2 L=3 k=3 T=1 seed=303
+M3 A0 adjointness: PASS
+M3 A1 D_U(P_U^T u) = u - sum V_k delta_root: PASS
+M3 A2 covariance P_{U^g}^T(Ad_g u) = M_g P_U^T u: PASS
+M3 A3 S cc_U and sum of pieces = S: PASS
+M3 A4 every piece cc_U: PASS
+M3 A5 flat limit = HR flat formula: PASS
+M3 C1 flat routing at curved U: piece not cc_U: FIRES
+M3 C2 D_U^perp(P_1^T u) != u^perp at curved U: FIRES
+M3 C3 non-cc source: sum of pieces != source: FIRES
+M3 C4 wrong backward sign breaks A1: FIRES
+M3 C5 wrong-side transport breaks A1: FIRES
+== M4: d=3 L=3 k=2 T=1 seed=404
+M4 A0 adjointness: PASS
+M4 A1 D_U(P_U^T u) = u - sum V_k delta_root: PASS
+M4 A2 covariance P_{U^g}^T(Ad_g u) = M_g P_U^T u: PASS
+M4 A3 S cc_U and sum of pieces = S: PASS
+M4 A4 every piece cc_U: PASS
+M4 A5 flat limit = HR flat formula: PASS
+M4 C1 flat routing at curved U: piece not cc_U: FIRES
+M4 C2 D_U^perp(P_1^T u) != u^perp at curved U: FIRES
+M4 C3 non-cc source: sum of pieces != source: FIRES
+M4 C4 wrong backward sign breaks A1: FIRES
+M4 C5 wrong-side transport breaks A1: FIRES
+SUMMARY: A-items PASS 24, FAIL 0; controls FIRE 20, DO-NOT-FIRE 0
+OVERALL PASS

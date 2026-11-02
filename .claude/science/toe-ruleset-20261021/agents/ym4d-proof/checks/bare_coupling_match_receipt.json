@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "unit": "bare_coupling_match",
+  "created_utc": "2026-10-30T12:54:56.598021+00:00",
+  "source_freeze": {
+    "path": "BARE_COUPLING_MATCH_ASTRA.md",
+    "lines": 670,
+    "sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff"
+  },
+  "packet": [
+    {
+      "path": "checks/bare_coupling_match_read_manifest.json",
+      "sha256": "476e98947f28e4142a099f79d80d68bc6b0a7014318e1680a6ec75c7c73c40fc",
+      "lines": 121
+    }
+  ],
+  "author_scope": "Astra/max requested author unit /root/mixed_cap_chart; requested model metadata is not independent backend attestation.",
+  "freeze_order": [
+    "Mathematics written and self-read",
+    "Source frozen at the displayed SHA and sent to coordinator",
+    "Only then this minimal read/identity packet created"
+  ],
+  "metadata_checks": {
+    "source_hash_matches_freeze": true,
+    "numbered_equations_1_through_29": true,
+    "local_links_resolve": 10,
+    "json_round_trip": true,
+    "numerical_science_runs": 0
+  },
+  "non_science_tool_failure": "First packet command did not start because its workdir accidentally lacked the leading slash; no writes occurred. Corrected absolute workdir used on retry.",
+  "new_theorem_scope": [
+    "Actual classical Schur form and contour-average symbol; infrared coefficient u; exact non-Wilson transverse axis symbol.",
+    "Actual finite-u critical-action Hessian and explicit alpha_act=(L^2-1)[(N^2-1)/(12L^2)+N^2(L+1)/72].",
+    "Fixed-domain prefactor expansion with an explicit original-reader spatial-moment estimate: beta_av[-log P_u]=u+b1+O(1/u).",
+    "Full b1 is specified by a determinant trace limit and has not been evaluated."
+  ],
+  "limits": [
+    "No bare-to-effective class closure or small arbitrary-momentum Wilson remainder.",
+    "No all-history/source-jet/iteration claim or computed universal beta coefficient.",
+    "Non-free continuum existence and physical mass gap remain OPEN."
+  ],
+  "independent_review": "Different fresh hostile source-first review requested from coordinator; no author LAND or retained verdict. Disclose same-family review as such.",
+  "ownership": "Only BARE_COUPLING_MATCH_ASTRA.md and checks/bare_coupling_match_* created. No predecessor/shared-front/Git/PR/audit edit, additional worker or numerical science run."
+}

@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-30T05:06:20.887161+00:00",
+  "passed": true,
+  "cap_bytes": 838860800,
+  "guards": [
+    {
+      "free_percent": 52,
+      "loads": [
+        2.03515625,
+        2.21142578125,
+        2.16162109375
+      ],
+      "passed": true
+    },
+    {
+      "free_percent": 52,
+      "loads": [
+        2.03515625,
+        2.21142578125,
+        2.16162109375
+      ],
+      "passed": true
+    },
+    {
+      "free_percent": 52,
+      "loads": [
+        2.03515625,
+        2.21142578125,
+        2.16162109375
+      ],
+      "passed": true
+    }
+  ],
+  "locks": [
+    "k4corr_numeric.lock",
+    "k4match_numeric.lock",
+    "cumul_numeric.lock",
+    "combo_numeric.lock"
+  ],
+  "pools": false,
+  "nice": 20,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "source_sha256": {
+    "k4corr_criteria.md": "93d98e599b58de25af139683ea0175e385ef28bdad3d05a80b967b6fd2b58dda",
+    "k4corr_exact.py": "41a1a6b8252c36215ec4573e9ef6410133be9c97442ee22c00aa1c6f145e3684",
+    "k4corr_run.py": "72e1166d247c8e65155512ab03763dd250824b94c77caddd98a4bec0b0913add"
+  },
+  "exit_code": 0,
+  "assertion_count": 54,
+  "peak_combined_rss_bytes": 41992192,
+  "elapsed_seconds": 0.07784929196350276
+}

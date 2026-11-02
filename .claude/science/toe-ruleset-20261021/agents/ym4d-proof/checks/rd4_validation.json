@@ -1,0 +1,40 @@
+{
+  "absent_outputs": [],
+  "added_files_including_this_receipt": [
+    "RD4.md",
+    "RD4_LOG.md",
+    "checks/rd4_input_manifest.json",
+    "checks/rd4_review.md",
+    "checks/rd4_validate.py",
+    "checks/rd4_validation.json",
+    "checks/rd4_validation_initial.json"
+  ],
+  "artifact_sha256": {
+    "RD4.md": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+    "RD4_LOG.md": "80faa436b9c43dfdf8c99a64d2981ff9b5177ba8f0b0f08ea6ee91fca6a65d79",
+    "checks/rd4_input_manifest.json": "b523282dbf0a65c8b7f5e61509e86305b07b05ebf78364305457194a6c5e0299",
+    "checks/rd4_review.md": "39733be892a218e4aaa816f08524e7612f2ba14b4a5a9d495e8269143674de53",
+    "checks/rd4_validate.py": "37f9943ff484c815c783555bbb8cc332ec7fa04bbf39afab0d2829ba39269845"
+  },
+  "baseline_file_count": 3470,
+  "baseline_head": "3dff074621aa3a842ffef0a3d43d89c674ce78e2",
+  "changed_preexisting_files": [],
+  "checks_satisfied": true,
+  "created_utc": "2026-10-30T02:37:26.199978+00:00",
+  "equation_label_errors": {
+    "duplicates": [],
+    "missing": [],
+    "unexpected": []
+  },
+  "forbidden_additions": [],
+  "head": "3dff074621aa3a842ffef0a3d43d89c674ce78e2",
+  "kind": "provenance_and_document_structure_only",
+  "link_errors": [],
+  "mathematical_verification": "Written proofs and the separately bound reviewer report; not this script.",
+  "missing_preexisting_files": [],
+  "review_binds_current_science": true,
+  "review_last_line": "VERDICT: LAND",
+  "scientific_numerics_executed": false,
+  "table_errors": [],
+  "tracked_diff_paths": []
+}

@@ -1,0 +1,60 @@
+{
+  "recorded_at_utc": "2026-10-30T05:19:15.096697+00:00",
+  "source_first_findings_sha256": "91aca210a5cb139c83b63d412eb423bbd3c5a9a1c6a82dbb832802d83a1537ec",
+  "source_first_manifest_sha256": "4bd7a4311848bd5e818b819dad5496a28ba2421883bfda24c9c535732ad76214",
+  "packet_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_action_reader_author_checks.md",
+      "sha256": "a8a56133f3ad162095e9f9bcb892336b48c1fb45899fd2f50f84d73736a8d4d0",
+      "bytes": 3026,
+      "lines": 49,
+      "read_coverage": "complete, after frozen source-first findings"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_action_reader_receipt.json",
+      "sha256": "0a041ce0ffef86a5818a440cfb2b804d6131e0245b2041021c5553f9b5ab2af8",
+      "bytes": 1431,
+      "lines": 31,
+      "read_coverage": "complete, after frozen source-first findings"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_action_reader_read_manifest.json",
+      "sha256": "46331dea4ffd8f9568a3c03ef675145bfd008d374545ebb2dca8b75c67c0837f",
+      "bytes": 15243,
+      "lines": 347,
+      "read_coverage": "complete, after frozen source-first findings"
+    }
+  ],
+  "counts": {
+    "receipt_records": 3,
+    "source_inputs": 8,
+    "protected_base_records": 63,
+    "additional_protected_records": 12,
+    "protected_unique_files": 75,
+    "methodology_pins": 12,
+    "source_local_links": 4,
+    "review_frozen_sources": 8
+  },
+  "mismatches": [],
+  "source_HEAD_at_first_freeze": "a7bfd06c4b51076d50377be147ad6d4fd4376788",
+  "source_HEAD_at_packet_check": "a7bfd06c4b51076d50377be147ad6d4fd4376788",
+  "coverage_correction": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+    "frozen_manifest_range": [
+      1,
+      15
+    ],
+    "actual_read_range": [
+      1,
+      11
+    ],
+    "reason": "Initial reviewer manifest entered 15 as the end line of an 11-line file. The complete file was displayed and read. Frozen evidence retained; final coverage uses actual 1\u201311."
+  },
+  "mechanical_only": true,
+  "limitations": [
+    "Matching hashes establishes identity, not mathematical validity or another agent's actual reading.",
+    "No prior reviewer file was substantively read or used as proof; protected file contents were read only as bytes for hashing.",
+    "No scientific numerical experiment, audit pipeline, commit, push, PR or front edit."
+  ],
+  "reviewer_bookkeeping_failure": "One initial Python heredoc had a triple-quote SyntaxError before executing; no output file was created by that failed command. The literal quoting was corrected before the first successful freeze."
+}

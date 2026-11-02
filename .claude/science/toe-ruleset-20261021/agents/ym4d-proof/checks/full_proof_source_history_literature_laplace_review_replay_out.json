@@ -1,0 +1,56 @@
+{
+  "checks": {
+    "haar_cap_lower_1": true,
+    "quadrature_refinement_1": true,
+    "haar_cap_lower_10": true,
+    "quadrature_refinement_10": true,
+    "haar_cap_lower_100": true,
+    "quadrature_refinement_100": true,
+    "haar_cap_lower_1000": true,
+    "quadrature_refinement_1000": true,
+    "haar_cap_lower_10000": true,
+    "quadrature_refinement_10000": true,
+    "rate_tends_toward_zero_on_grid": true,
+    "fixed_bad_set_exponential_upper_1": true,
+    "fixed_bad_set_exponential_upper_10": true,
+    "fixed_bad_set_exponential_upper_100": true
+  },
+  "negative_controls": {
+    "example_exponential_upper_c01_C10_rejected": true,
+    "removing_bad_indicator_changes_bound": true
+  },
+  "data": [
+    {
+      "lambda": 1,
+      "integral": 0.15761251854673985,
+      "analytic_cap_lower": 0.019516610508106387,
+      "minus_log_over_lambda": 1.847615672309773
+    },
+    {
+      "lambda": 10,
+      "integral": 0.008750277525036133,
+      "analytic_cap_lower": 0.0006171694141199227,
+      "minus_log_over_lambda": 0.4738669861968606
+    },
+    {
+      "lambda": 100,
+      "integral": 0.0002815650339483204,
+      "analytic_cap_lower": 1.9516610508106387e-05,
+      "minus_log_over_lambda": 0.08175147110607633
+    },
+    {
+      "lambda": 1000,
+      "integral": 8.918947702943751e-06,
+      "analytic_cap_lower": 6.171694141199227e-07,
+      "minus_log_over_lambda": 0.011627332588853425
+    },
+    {
+      "lambda": 10000,
+      "integral": 2.820895024138625e-07,
+      "analytic_cap_lower": 1.9516610508106385e-08,
+      "minus_log_over_lambda": 0.0015081041431917765
+    }
+  ],
+  "elapsed_seconds": 0.1651860830024816,
+  "scope": "Diagnostic for cited literature equation only; analytic cap lower bound supplies the all-lambda contradiction."
+}

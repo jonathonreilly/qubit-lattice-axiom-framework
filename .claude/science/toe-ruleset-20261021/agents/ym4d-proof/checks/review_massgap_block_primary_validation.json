@@ -1,0 +1,79 @@
+{
+  "checked_utc": "2026-10-29T17:02:58.935289+00:00",
+  "downloads": [
+    {
+      "url": "https://bib-pubdb1.desy.de/record/396349/files/7611148.pdf",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 248,
+      "sha256": "4681fa6e4303ecc351521fa1c7c836c9f3d6774b11725d39885ec3bf8ff16561",
+      "valid_pdf_header": false,
+      "read_scope": "Web-tool primary scan: temporal-gauge setup, time-zero space, Proposition1 and complete positivity proof, Proposition2 statement, PDF pp3-8. Direct curl cache is HTML, NOT the read PDF.",
+      "capture_status": "HTML challenge; not a PDF hash; actual reading occurred through web tool",
+      "sha256_role": "retrieval-response bytes only",
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_luscher.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_luscher.pdf"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2204.12737v1",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 525950,
+      "sha256": "21d0cf19e74e13f8468d1f980ba05849a781f28018301ea2b11d7551822597d1",
+      "valid_pdf_header": true,
+      "read_scope": "Equations 1.1-1.6, Assumption 1.1, Theorems 1.2/1.4, Corollary 1.6, surrounding setup/remarks; PDF pp3-8. Not entire proof.",
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_szz_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_szz_v1.pdf"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1308.4117v1",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 492828,
+      "sha256": "5df16281b38a776ed2026c925f0a3c97c3b90a60407390e06e4280beb18cc9da",
+      "valid_pdf_header": true,
+      "read_scope": "Sections 2.1-2.4: setup, definitions, Theorem 2.4, Corollaries 2.6/2.8, including TV conventions. Not full proofs in section3.",
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_comparison_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_comparison_v1.pdf"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2006.16229v5",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 335742,
+      "sha256": "34c1e44bf9ca8374103e87a7870557fcc16b7a40e112b90cc9a1e08073d60e4b",
+      "valid_pdf_header": true,
+      "read_scope": "Section2.1, Definitions2.1/2.3, Theorems2.2/2.4 and opening of section12; not full proof.",
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_chatterjee_v5.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_chatterjee_v5.pdf"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2606.19362v1",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 4636244,
+      "sha256": "0648f30f67719a6c83976f1da53131fc6f9a9ddc9ba1c406345f5ed959b32939",
+      "valid_pdf_header": true,
+      "read_scope": "Selected main Hypothesis1, Theorem10.4 statement and displayed proof passages, Theorem10.8 statement/proof passages, complete gap-transfer inference of Theorem11.1 through eq11.8, Part4 H1-H5 and section3 assumptions. Not 593-page aggregate.",
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_faizal_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_faizal_v1.pdf"
+    },
+    {
+      "url": "https://arxiv.org/pdf/0901.4246v1",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 86541,
+      "sha256": "a80fbf446b0d251dc18d919c7336375365d7d711187fd1bb676741fcad91b431",
+      "valid_pdf_header": true,
+      "read_scope": "Complete five-page text; numerical figure was not reproduced.",
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_ito_seiler_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_ito_seiler_v1.pdf"
+    }
+  ]
+}

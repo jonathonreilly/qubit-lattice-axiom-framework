@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-29T22:56:42.754434+00:00",
+  "stage": "independent implementation before first run and before author scientific checker/raw evidence exposure",
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_01.py",
+      "sha256": "ce242b2e1bb6e4c4d2c564cd4dccd21b1618d7e6e1a6c5009ac28453b1f9827f"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_runner.py",
+      "sha256": "a3bbb391453fa998a742eee80201f3b2438ae62f27066858bdc42dfa0d43f8cf"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_criteria.md",
+      "sha256": "cdbc1b1d461c01b1a7f8e3322cf4f7c1ecf2e4fcb8d69b564ca472397a1587f5"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_independent.md",
+      "sha256": "9b484d1470fd713038cd24f8e03ce0b7cda76376ef174ae5e527d30425f15926"
+    }
+  ],
+  "preexecution_code_correction": "Launcher repository parent index corrected from4 to5 by path inspection; no numerical child had run; criteria unchanged."
+}

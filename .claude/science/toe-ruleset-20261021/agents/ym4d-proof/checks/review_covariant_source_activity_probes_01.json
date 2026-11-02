@@ -1,0 +1,540 @@
+{
+  "stage": "post-exposure actual source substitutions; not a full actual-checker replay",
+  "author_actual_sha256": "964917975efedcf2898bc1dd532bcf2849f74794b011156c4664425784dacb85",
+  "author_atoms_sha256": "943b97af7d8b08392631daf4d96ba322832e2aa43c5ea0eebb745efbd8b734ac",
+  "prefix_sha256": "6103667f6943a071198a858c3f420d10d747c961f56249c7aa70e5830d82639e",
+  "prefix_lines": 116,
+  "independent_assertion_sha256": "2917fcbdb2fae7e90087cf9b4b2550fb9d6e00d54727825c5e5a26f756368a39",
+  "cases": [
+    {
+      "case": "actual_baseline",
+      "change": "exact prefix through fixed-reference factorization plus independent Haar-moment Hessian",
+      "copy": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_source_activity_probe_actual_baseline.py",
+      "copy_sha256": "1a9cd36a7daece9e2192b812cbc3318a211304f0bb14eba86bbf75c814ff4205",
+      "executed_sha256_unchanged": true,
+      "stdout_sha256": "0a1a0c633dd385dfb1897d53b43605ed8ce4936b155fda82ecf518a6d0b18dcf",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "returncode": 0,
+      "expected_assertion": null,
+      "matched_expected_outcome": true,
+      "elapsed": 0.7717911670333706
+    },
+    {
+      "case": "actual_no_normalizer",
+      "change": "delete field-dependent normalizer from actual phase",
+      "copy": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_source_activity_probe_actual_no_normalizer.py",
+      "copy_sha256": "252b4cc571551fa18d7f1c97dd6ceb1c7a3ba10c51fe35deb602c120f6cb5595",
+      "executed_sha256_unchanged": true,
+      "stdout_sha256": "4dab2389e6f7f605de550773ee087e87527b3a23cfe6472b7afd4860d802fbc9",
+      "stderr_sha256": "c852bc2a4bfc6d9d739134b03bef500f30ad0dd6625cbcd6bdeb70b96c05b506",
+      "returncode": 1,
+      "expected_assertion": "actual_density_zero_hessian",
+      "matched_expected_outcome": true,
+      "elapsed": 0.46236345899524167
+    },
+    {
+      "case": "actual_no_haar",
+      "change": "delete Haar Jacobian from actual phase",
+      "copy": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_source_activity_probe_actual_no_haar.py",
+      "copy_sha256": "fb08876cf03c945dc3477bd233d9fda826fe00eb2d4b004a963ae9eb04d71fc0",
+      "executed_sha256_unchanged": true,
+      "stdout_sha256": "450307f76094c687ffb0917d250b4b3826936d8b7ed82bdf34ad5d9a26253599",
+      "stderr_sha256": "4a51ba82e3a0795fdacc0d6e78d31f210610e67e37b711c8a78b65bf3e2c8730",
+      "returncode": 1,
+      "expected_assertion": "actual_density_zero_hessian",
+      "matched_expected_outcome": true,
+      "elapsed": 0.718821584014222
+    },
+    {
+      "case": "actual_no_source_vacuum",
+      "change": "delete source vacuum in Jfixed",
+      "copy": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_source_activity_probe_actual_no_source_vacuum.py",
+      "copy_sha256": "52b059094f06475512f21b3ad058e176e0455290db5523843c7f4e1c76d124e0",
+      "executed_sha256_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "1d161fa42230b7eaffa862dc268a61d97b9d3ad2d6f45533c65feecf2ede69f4",
+      "returncode": 1,
+      "expected_assertion": "exact_fixed_reference_full_factors",
+      "matched_expected_outcome": true,
+      "elapsed": 0.6913113750051707
+    },
+    {
+      "case": "atoms_baseline",
+      "change": "exact full author checker",
+      "copy": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_source_activity_probe_atoms_baseline.py",
+      "copy_sha256": "943b97af7d8b08392631daf4d96ba322832e2aa43c5ea0eebb745efbd8b734ac",
+      "executed_sha256_unchanged": true,
+      "stdout_sha256": "3fe701773940cec9b29f73347a8ae24646d8c42d6f82f6b563933d92a48b1bfc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "returncode": 0,
+      "expected_assertion": null,
+      "matched_expected_outcome": true,
+      "elapsed": 1.5105153329786845
+    },
+    {
+      "case": "atoms_wrong_sign",
+      "change": "change residual sign",
+      "copy": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_source_activity_probe_atoms_wrong_sign.py",
+      "copy_sha256": "482f9cae5f52f3a80a50dc5e6c08606a2d72c4fb39ecb0c108f6c1c8a3024a96",
+      "executed_sha256_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "0ce501f6053db33ad4737d35f09941306d35867306a881bcab8c116901a23857",
+      "returncode": 1,
+      "expected_assertion": "actual_parametrix_identity",
+      "matched_expected_outcome": true,
+      "elapsed": 1.377558708016295
+    },
+    {
+      "case": "atoms_wrong_order",
+      "change": "change computed inverse multiplication order",
+      "copy": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_source_activity_probe_atoms_wrong_order.py",
+      "copy_sha256": "a210a97cc125d79ea219e38b146fd576c8fcaa7d76a3dd853b214e74d5937425",
+      "executed_sha256_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "86e1802a532017ac23f01ce3115c7d6e8146e459a99057d1157c35f429169d7e",
+      "returncode": 1,
+      "expected_assertion": "actual_inverse_order",
+      "matched_expected_outcome": true,
+      "elapsed": 1.3678827920230106
+    }
+  ],
+  "resources": [
+    {
+      "where": "actual_baseline preflight",
+      "rss": 20299776,
+      "completed_child_maxrss": 1212416,
+      "free": 55,
+      "load": [
+        2.24609375,
+        2.1328125,
+        2.0595703125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "actual_baseline running",
+      "rss": 38223872,
+      "completed_child_maxrss": 1392640,
+      "free": 55,
+      "load": [
+        2.24609375,
+        2.1328125,
+        2.0595703125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "actual_baseline completed",
+      "rss": 20463616,
+      "completed_child_maxrss": 38256640,
+      "free": 55,
+      "load": [
+        2.24609375,
+        2.1328125,
+        2.0595703125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "actual_no_normalizer preflight",
+      "rss": 20496384,
+      "completed_child_maxrss": 38256640,
+      "free": 55,
+      "load": [
+        2.24609375,
+        2.1328125,
+        2.0595703125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "actual_no_normalizer completed",
+      "rss": 20512768,
+      "completed_child_maxrss": 38256640,
+      "free": 55,
+      "load": [
+        2.24609375,
+        2.1328125,
+        2.0595703125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "actual_no_haar preflight",
+      "rss": 20545536,
+      "completed_child_maxrss": 38256640,
+      "free": 55,
+      "load": [
+        2.24609375,
+        2.1328125,
+        2.0595703125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "actual_no_haar running",
+      "rss": 37683200,
+      "completed_child_maxrss": 38256640,
+      "free": 55,
+      "load": [
+        2.24609375,
+        2.1328125,
+        2.0595703125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "actual_no_haar completed",
+      "rss": 20545536,
+      "completed_child_maxrss": 38256640,
+      "free": 55,
+      "load": [
+        2.24609375,
+        2.1328125,
+        2.0595703125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "actual_no_source_vacuum preflight",
+      "rss": 20545536,
+      "completed_child_maxrss": 38256640,
+      "free": 55,
+      "load": [
+        2.24609375,
+        2.1328125,
+        2.0595703125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "actual_no_source_vacuum running",
+      "rss": 36962304,
+      "completed_child_maxrss": 38256640,
+      "free": 55,
+      "load": [
+        2.24609375,
+        2.1328125,
+        2.0595703125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "actual_no_source_vacuum completed",
+      "rss": 20561920,
+      "completed_child_maxrss": 38256640,
+      "free": 55,
+      "load": [
+        2.22607421875,
+        2.13037109375,
+        2.05908203125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "atoms_baseline preflight",
+      "rss": 20561920,
+      "completed_child_maxrss": 38256640,
+      "free": 55,
+      "load": [
+        2.22607421875,
+        2.13037109375,
+        2.05908203125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "atoms_baseline running",
+      "rss": 92454912,
+      "completed_child_maxrss": 38256640,
+      "free": 55,
+      "load": [
+        2.22607421875,
+        2.13037109375,
+        2.05908203125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "atoms_baseline running",
+      "rss": 95830016,
+      "completed_child_maxrss": 38256640,
+      "free": 55,
+      "load": [
+        2.22607421875,
+        2.13037109375,
+        2.05908203125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "atoms_baseline completed",
+      "rss": 20594688,
+      "completed_child_maxrss": 98074624,
+      "free": 55,
+      "load": [
+        2.22607421875,
+        2.13037109375,
+        2.05908203125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "atoms_wrong_sign preflight",
+      "rss": 20594688,
+      "completed_child_maxrss": 98074624,
+      "free": 55,
+      "load": [
+        2.22607421875,
+        2.13037109375,
+        2.05908203125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "atoms_wrong_sign running",
+      "rss": 93831168,
+      "completed_child_maxrss": 98074624,
+      "free": 55,
+      "load": [
+        2.22607421875,
+        2.13037109375,
+        2.05908203125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "atoms_wrong_sign running",
+      "rss": 96665600,
+      "completed_child_maxrss": 98074624,
+      "free": 55,
+      "load": [
+        2.22607421875,
+        2.13037109375,
+        2.05908203125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "atoms_wrong_sign completed",
+      "rss": 20594688,
+      "completed_child_maxrss": 98320384,
+      "free": 55,
+      "load": [
+        2.22607421875,
+        2.13037109375,
+        2.05908203125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "atoms_wrong_order preflight",
+      "rss": 20611072,
+      "completed_child_maxrss": 98320384,
+      "free": 55,
+      "load": [
+        2.22607421875,
+        2.13037109375,
+        2.05908203125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "atoms_wrong_order running",
+      "rss": 92749824,
+      "completed_child_maxrss": 98320384,
+      "free": 55,
+      "load": [
+        2.22607421875,
+        2.13037109375,
+        2.05908203125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "atoms_wrong_order running",
+      "rss": 95846400,
+      "completed_child_maxrss": 98320384,
+      "free": 55,
+      "load": [
+        2.22607421875,
+        2.13037109375,
+        2.05908203125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "atoms_wrong_order completed",
+      "rss": 20807680,
+      "completed_child_maxrss": 98320384,
+      "free": 55,
+      "load": [
+        2.22607421875,
+        2.13037109375,
+        2.05908203125
+      ],
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    }
+  ]
+}

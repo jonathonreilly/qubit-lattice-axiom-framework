@@ -1,0 +1,31 @@
+{
+  "schema": "ym4d.vocabulary_coverage_correction.v1",
+  "created_utc": "2026-10-30T17:06:24.205035+00:00",
+  "scope": "Correction of coverage for the frozen cycle-3 report only; no mathematical source or frozen review artifact changed.",
+  "original_scan": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_vocab_lint.json",
+    "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+    "files_scanned": 0,
+    "explanation": "The CLI skips every .claude/ path at scripts/vocab_lint.py lines 318-327, including an explicitly supplied report path. Exit zero was not evidence of vocabulary coverage."
+  },
+  "script": {
+    "path": "scripts/vocab_lint.py",
+    "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c"
+  },
+  "vocabulary": {
+    "path": "docs/repo/controlled_vocabulary.yaml",
+    "sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15"
+  },
+  "new_method": "Imported unchanged module; called lint_one_file(explicit_absolute_report_path,load_yaml(),apply_fix=False) directly.",
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_PUSH_A_CYCLE3_ASTRA.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  "report_sha256": "e14b3dd824d01e6d4f3d7ab3747406366a931bfcde43af59b30fcc92f5ef45ba",
+  "files_scanned": 1,
+  "violations": 0,
+  "bytes_unchanged": true,
+  "limits": "This current check establishes vocabulary coverage only, not mathematical correctness, earlier execution coverage or backend attestation. Original report, receipt and empty scan are preserved unchanged."
+}

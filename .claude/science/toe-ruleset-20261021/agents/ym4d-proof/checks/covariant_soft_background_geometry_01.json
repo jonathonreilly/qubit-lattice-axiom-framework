@@ -1,0 +1,119 @@
+{
+  "scope": "finite independent matrix-group diagnostics; uniform claims rely on written proof",
+  "L": 3,
+  "T": 2,
+  "passed": 16,
+  "total": 16,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "all_fine_plaquettes_exact_lift_classification",
+      "pass": true,
+      "detail": 8.375065401296751e-16
+    },
+    {
+      "name": "double_face_multiplicity_L_squared",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "wrong_coarse_orientation_control",
+      "pass": true,
+      "detail": 1.9999334319894135
+    },
+    {
+      "name": "all_selected_actual_contours_equal_coarse_V",
+      "pass": true,
+      "detail": {
+        "words": 15552,
+        "error": 0.0,
+        "max_length": 11
+      }
+    },
+    {
+      "name": "actual_lifted_two_block_gauge_is_exactly_flat",
+      "pass": true,
+      "detail": 8.1962369586952e-16
+    },
+    {
+      "name": "T2_induced_graph_far_seam_control",
+      "pass": true,
+      "detail": 1.9914874997061889
+    },
+    {
+      "name": "nonabelian_combing_area_budget",
+      "pass": true,
+      "detail": {
+        "max_width_times_loop_length": 154,
+        "bound": 270
+      }
+    },
+    {
+      "name": "wrong_crossing_assignment_control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "large_holonomy_flat_background",
+      "pass": true,
+      "detail": {
+        "curvature": 1.602992051364081e-15,
+        "holonomy_defect": 0.976354493765815,
+        "matrix_commutator": 1.5441289709533366
+      }
+    },
+    {
+      "name": "internal_tree_ribbon_bound",
+      "pass": true,
+      "detail": {
+        "measured": 1.0565309757754627e-06,
+        "bound": 0.00023984468468543564
+      }
+    },
+    {
+      "name": "crossing_relative_background_ribbon_bound",
+      "pass": true,
+      "detail": {
+        "measured": 1.0566095889653412e-06,
+        "bound": 0.0002403968972113788
+      }
+    },
+    {
+      "name": "entire_strong_good_sample_in_relative_chart",
+      "pass": true,
+      "detail": {
+        "max_log_HS": 1.4942716104806043e-06,
+        "bound": 0.0006799451047774856
+      }
+    },
+    {
+      "name": "coarse_curvature_implication",
+      "pass": true,
+      "detail": {
+        "coarse": 1.602992051364081e-15,
+        "bound": 1.0203672926620433e-05
+      }
+    },
+    {
+      "name": "interior_only_allows_rough_boundary_control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all_fine_good_without_mismatch_allows_large_relative_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "SU3_principal_log_trace_control",
+      "pass": true,
+      "detail": {
+        "trace_imag": 6.283185307179586,
+        "HS_norm": 3.6275987284684352
+      }
+    }
+  ],
+  "elapsed_seconds": 1.3627395409857854,
+  "external_scientific_inputs_read": [],
+  "integrity_reads": []
+}

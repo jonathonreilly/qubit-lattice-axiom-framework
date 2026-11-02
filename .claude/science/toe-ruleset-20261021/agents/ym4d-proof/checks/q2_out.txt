@@ -1,0 +1,16 @@
+d=2 k=1 nvar=     60 conv=True relgrad=6.0e-16 it=    10 theta_check=1.000 e=E/th^2=0.05912 C_curv=1.0642 C_res=0.1182
+    level profile curv*L^{2(k-i)}: 1.064 | res*L^{2(k-1-i)}: 0.118
+d=2 k=2 nvar=    672 conv=True relgrad=2.5e-12 it=    59 theta_check=1.000 e=E/th^2=0.01156 C_curv=1.8724 C_res=0.0693
+    level profile curv*L^{2(k-i)}: 1.872 1.798 | res*L^{2(k-1-i)}: 0.069 0.023
+d=2 k=3 nvar=   6396 conv=True relgrad=1.5e-12 it=   191 theta_check=1.000 e=E/th^2=0.00150 C_curv=2.1830 C_res=0.0270
+    level profile curv*L^{2(k-i)}: 2.183 2.149 1.798 | res*L^{2(k-1-i)}: 0.027 0.009 0.003
+d=2 k=4 nvar=  58560 conv=True relgrad=1.0e-12 it=   652 theta_check=1.000 e=E/th^2=0.00017 C_curv=2.2403 C_res=0.0092
+    level profile curv*L^{2(k-i)}: 2.240 2.228 2.104 1.782 | res*L^{2(k-1-i)}: 0.009 0.003 0.001 0.000
+d=2 k=5 nvar= 529980 conv=True relgrad=6.5e-13 it=  2141 theta_check=1.000 e=E/th^2=0.00002 C_curv=2.2487 C_res=0.0031
+    level profile curv*L^{2(k-i)}: 2.249 2.245 2.202 2.089 1.778 | res*L^{2(k-1-i)}: 0.003 0.001 0.000 0.000 0.000
+d=4 k=1 nvar=    972 conv=True relgrad=8.6e-15 it=    10 theta_check=1.000 e=E/th^2=0.11123 C_curv=0.2225 C_res=0.2225
+    level profile curv*L^{2(k-i)}: 0.222 | res*L^{2(k-1-i)}: 0.222
+d=4 k=2 nvar=  97200 conv=True relgrad=1.1e-11 it=    59 theta_check=1.000 e=E/th^2=0.10498 C_curv=0.4505 C_res=0.2100
+    level profile curv*L^{2(k-i)}: 0.210 0.450 | res*L^{2(k-1-i)}: 0.070 0.210
+C1 PASS  C2 PASS  C3 FAIL  C4 PASS
+OVERALL: FAIL   (wall 7.5 s, peak RSS 223 MB)

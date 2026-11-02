@@ -1,0 +1,317 @@
+{
+  "records": [
+    {
+      "name": "actual_open_block_counts",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "links": 216,
+        "tree": 80,
+        "plaquettes": 216
+      }
+    },
+    {
+      "name": "SU2_rooted_tree_and_gauge",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "matrix_error": 3.734291337071556e-15,
+        "max_original": 0.000289351848935465,
+        "max_fixed": 0.00028935184893947376,
+        "epsilon": 0.00028935185185185184
+      }
+    },
+    {
+      "name": "SU2_simultaneous_cut_cap",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "radius": 2.8935185185185185e-07,
+        "t": 0.968,
+        "predicted_margin": 2.3148148148148148e-06,
+        "actual_margin": 9.259263004396758e-06,
+        "perturbed_margin": 8.631708678400623e-06,
+        "all_plaquettes": 216
+      }
+    },
+    {
+      "name": "ungauged_log_contraction_mutation",
+      "passed": true,
+      "mutation": true,
+      "data": {
+        "wrong_max_defect": 0.19900894125804855,
+        "cut": 0.00028935185185185184
+      }
+    },
+    {
+      "name": "SU3_rooted_tree_and_gauge",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "matrix_error": 4.4451607155418414e-15,
+        "max_original": 0.00028935184891517104,
+        "max_fixed": 0.0002893518489151529,
+        "epsilon": 0.00028935185185185184
+      }
+    },
+    {
+      "name": "SU3_simultaneous_cut_cap",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "radius": 2.8935185185185185e-07,
+        "t": 0.968,
+        "predicted_margin": 2.3148148148148148e-06,
+        "actual_margin": 9.259290941230703e-06,
+        "perturbed_margin": 9.220576667778738e-06,
+        "all_plaquettes": 216
+      }
+    },
+    {
+      "name": "actual_S4_crossing_incidence",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "readers": {
+          "((0, 0, 0, 0), 0)": 72
+        },
+        "max_multiplicity": 1,
+        "words_per_kernel": 1944,
+        "mean": 0.037037037037037035
+      }
+    },
+    {
+      "name": "paired_root_leg_incidence_mutation",
+      "passed": true,
+      "mutation": true,
+      "data": {
+        "interior_reader_occurrences_full": 1992,
+        "without_root_legs": 72
+      }
+    },
+    {
+      "name": "crossing_Wilson_and_cut_readers",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "plaquettes": [
+          "((1, 0, 0, 0), 0, 1)",
+          "((1, 1, 0, 0), 0, 1)",
+          "((1, 1, 0, 0), 0, 2)",
+          "((1, 1, 0, 0), 0, 3)",
+          "((1, 1, 0, 5), 0, 3)",
+          "((1, 1, 5, 0), 0, 2)"
+        ],
+        "interior_cut_flags": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "name": "actual_noncommuting_density_words_0",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "mean_error": 5.944443510760511e-14,
+        "Wilson_error": 0.0,
+        "Wilson": 0.1597198594985767
+      }
+    },
+    {
+      "name": "actual_noncommuting_density_words_1",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "mean_error": 6.020142818076849e-14,
+        "Wilson_error": 5.551115123125783e-16,
+        "Wilson": 0.13215791419109735
+      }
+    },
+    {
+      "name": "full_Haar_angular_integral_u1",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "Z_analytic": [
+          0.1397897115004581,
+          0.0
+        ],
+        "Z_angular": [
+          0.1397897115004593,
+          0.0
+        ],
+        "relative_error": 8.537751016591318e-15
+      }
+    },
+    {
+      "name": "actual_boundary_shell_u1",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "probabilities": [
+          0.04057140541187515,
+          0.020293432848257412,
+          0.010147683088172592
+        ],
+        "successive_ratios": [
+          1.999238163165627,
+          1.9998094808370568
+        ]
+      }
+    },
+    {
+      "name": "full_Haar_angular_integral_u8",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "Z_analytic": [
+          0.061231947875457125,
+          0.0
+        ],
+        "Z_angular": [
+          0.06123194787545796,
+          0.0
+        ],
+        "relative_error": 1.3598575537111331e-14
+      }
+    },
+    {
+      "name": "actual_boundary_shell_u8",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "probabilities": [
+          0.015061408986235507,
+          0.007488151120355749,
+          0.0037387524632851317
+        ],
+        "successive_ratios": [
+          2.0113655218966744,
+          2.00284752571614
+        ]
+      }
+    },
+    {
+      "name": "full_Haar_angular_integral_u40",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "Z_analytic": [
+          0.0075298994883541085,
+          0.0
+        ],
+        "Z_angular": [
+          0.007529899488354226,
+          0.0
+        ],
+        "relative_error": 1.5550517614416252e-14
+      }
+    },
+    {
+      "name": "actual_boundary_shell_u40",
+      "passed": false,
+      "mutation": false,
+      "data": {
+        "probabilities": [
+          3.089293570618674e-08,
+          1.2538697613474877e-08,
+          5.931377189735021e-09
+        ],
+        "successive_ratios": [
+          2.463807379243857,
+          2.1139605883056363
+        ]
+      }
+    },
+    {
+      "name": "normalizer_mutation",
+      "passed": true,
+      "mutation": true,
+      "data": {
+        "correct": 0.015061408986235507,
+        "mutated": 0.014738790949485112,
+        "difference": -0.0003226180367503946
+      }
+    },
+    {
+      "name": "full_Haar_mutation",
+      "passed": true,
+      "mutation": true,
+      "data": {
+        "correct": 0.015061408986235507,
+        "mutated": 0.0017344236683629023,
+        "difference": -0.013326985317872605
+      }
+    },
+    {
+      "name": "noncommuting_curvature_mutation",
+      "passed": true,
+      "mutation": true,
+      "data": {
+        "correct": 0.015061408986235507,
+        "mutated": 0.0116530301149664,
+        "difference": -0.0034083788712691073
+      }
+    },
+    {
+      "name": "original_source_vacuum_identity",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "ratio": 0.9388611819325895,
+        "vacuum": 0.9444422687191618,
+        "subtracted_expectation": 0.9940906003771636,
+        "error": 1.2545520178264269e-14
+      }
+    },
+    {
+      "name": "source_vacuum_omission_mutation",
+      "passed": true,
+      "mutation": true,
+      "data": {
+        "correct": 0.9388611819325895,
+        "omitted": 0.9940906003771636,
+        "difference": 0.055229418444574074
+      }
+    },
+    {
+      "name": "raw_complex_source_envelope",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "complex_shell": [
+          0.0009200133997677833,
+          -4.975260473832894e-05
+        ],
+        "positive_real_envelope": 0.0009222394099761141
+      }
+    },
+    {
+      "name": "hard_root_selector_sup_jump",
+      "passed": true,
+      "mutation": false,
+      "data": {
+        "left": 0.4499999902564124,
+        "right": 0.4500000097435876,
+        "displacement": 2.0000000001520848e-08,
+        "indicator_jump": 1
+      }
+    }
+  ],
+  "passed": 23,
+  "total": 24,
+  "mutations": 6,
+  "elapsed_seconds": 1.1425374580430798,
+  "numerical_threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "scope": "Finite full-colour block geometry and full-SU2 conditional-Haar diagnostics only"
+}

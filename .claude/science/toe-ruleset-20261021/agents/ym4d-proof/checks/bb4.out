@@ -1,0 +1,38 @@
+== (A) m = 0 regime ==
+  A1 R= 6 T_W= 33 G_box=5.3761e+00 r_box=5.1833e-01 R*r=3.1100e+00
+  A1 R=12 T_W= 51 G_box=7.5782e+00 r_box=5.0426e-02 R*r=6.0512e-01
+  A1 R=18 T_W= 69 G_box=8.4696e+00 r_box=8.8342e-03 R*r=1.5902e-01
+  A1 R=24 T_W= 87 G_box=8.8066e+00 r_box=1.5183e-03 R*r=3.6440e-02
+  A1 R=30 T_W=105 G_box=8.9303e+00 r_box=3.5406e-04 R*r=1.0622e-02
+  A0 R= 6 T_W= 33 G_box=1.2086e+01 r_box=1.8006e+00 R*r=1.0803e+01
+  A0 R=12 T_W= 51 G_box=3.3214e+01 r_box=1.0680e+00 R*r=1.2817e+01
+  A0 R=18 T_W= 69 G_box=6.4419e+01 r_box=1.1997e+00 R*r=2.1595e+01
+  A0 R=24 T_W= 87 G_box=1.0569e+02 r_box=1.2562e+00 R*r=3.0149e+01
+  A0 R=30 T_W=105 G_box=1.5703e+02 r_box=1.2870e+00 R*r=3.8610e+01
+A-1 PASS: A1: max_(R>=12) R*r = 6.051e-01 vs 6*r(6) = 3.110e+00; max G = 8.930e+00 vs 2*G(6) = 1.075e+01
+A-2 PASS: A0: G(30)/G(6) = 1.299e+01; 30 r(30)/(6 r(6)) = 3.574e+00
+  [t = 2.7s]
+== (C) hard slice ==
+C-1 PASS: max|Pi^2 - Pi| = 0.000e+00; max|Pi d lam|/max|d lam| = 1.280e-16
+C-2 PASS: max|B d lam|/max|d lam| = 3.952e-16
+C-3 PASS: slice identity residual 1.165e-15; (1-Pi)P y 2.236e-16
+  gmres info=0, residual 9.119e-14
+C-4 PASS: walk inverse vs slice inverse, relative 2.712e-14
+C-5 FAIL: small-plateau control: identity residual 1.141e-15 (predicted >= 1e-6)
+C-6 PASS: no-Pi control: S-tested identity 1.092e-15; (1-Pi)P'z relative 9.922e-06
+  [t = 4.1s]
+== (B) frame covariance ==
+  setup frame=True U: 0.8s
+  setup frame=True Uh: 0.8s
+  setup frame=False U: 0.7s
+  setup frame=False Uh: 0.7s
+B-1 PASS: max parametrix residual (frame & control, U & U^h) = 1.849e-15
+B-2 PASS: covariance defect P_box 3.749e-15, R_box 1.142e-14
+B-3 PASS: walk inverse vs L^-1, relative 1.630e-15
+  frame=True: dE(s) at U: -2.0326364633e+01, -2.0787630148e+01, -2.0321615264e+01, -2.3703913153e+01; |dE(U^h)-dE(U)|: 7.11e-15, 0.00e+00, 0.00e+00, 3.55e-15; R(X) = -1.707484e-01, |dR| = 0.00e+00
+  frame=False: dE(s) at U: -2.0326364633e+01, -2.0787630148e+01, -2.0321615264e+01, -2.3703913153e+01; |dE(U^h)-dE(U)|: 2.13e-10, 1.85e-10, 1.99e-10, 7.11e-15; R(X) = -1.707484e-01, |dR| = 2.20e-12
+B-4 PASS: frame energy invariance 3.332e-16; dE(1) vs E(phi*)-E(0) (both) 5.995e-16 (E = -2.3703913153e+01)
+B-5 PASS: frame two-cube polymer R(X) = -1.707484e-01, defect 0.000e+00
+B-6 FAIL: control: max|dE(U^h)-dE(U)| at random s = 2.130e-10, |dR(X)| = 2.204e-12, s=1 defect 2.876e-16
+  [t = 11.1s]
+VERDICT NOT ALL PASS (12/14)

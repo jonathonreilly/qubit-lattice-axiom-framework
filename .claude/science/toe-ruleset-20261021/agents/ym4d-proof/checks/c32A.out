@@ -1,0 +1,29 @@
+A R t=0.01 seed=0: eta=3.820e-02 ribbon ratios=['1.9031', '1.7033', '1.8585', '1.9852'] square ratio=0.2811
+A R t=0.01 seed=1: eta=3.939e-02 ribbon ratios=['1.6087', '1.6814', '1.6877', '1.6653'] square ratio=0.6052
+A R t=0.01 seed=2: eta=3.869e-02 ribbon ratios=['1.7320', '1.7821', '1.6797', '1.8572'] square ratio=0.6641
+A R t=0.01 seed=3: eta=3.949e-02 ribbon ratios=['1.9039', '1.6227', '1.6557', '1.7169'] square ratio=0.6687
+A R t=0.01 seed=4: eta=4.413e-02 ribbon ratios=['1.5251', '1.2870', '1.5506', '1.4039'] square ratio=0.0677
+A R t=0.05 seed=0: eta=1.917e-01 ribbon ratios=['1.8887', '1.6900', '1.8590', '1.9763'] square ratio=0.2751
+A R t=0.05 seed=1: eta=1.967e-01 ribbon ratios=['1.6111', '1.6722', '1.6830', '1.6798'] square ratio=0.5836
+A R t=0.05 seed=2: eta=1.934e-01 ribbon ratios=['1.7287', '1.7784', '1.6890', '1.8178'] square ratio=0.6553
+A R t=0.05 seed=3: eta=1.967e-01 ribbon ratios=['1.8934', '1.5878', '1.6727', '1.7173'] square ratio=0.6966
+A R t=0.05 seed=4: eta=2.194e-01 ribbon ratios=['1.4969', '1.2913', '1.5614', '1.3897'] square ratio=0.0605
+A R t=0.2 seed=0: eta=7.609e-01 ribbon ratios=['1.7282', '1.5833', '1.6867', '1.8160'] square ratio=0.2627
+A R t=0.2 seed=1: eta=7.674e-01 ribbon ratios=['1.5597', '1.5896', '1.5984', '1.6362'] square ratio=0.4841
+A R t=0.2 seed=2: eta=7.529e-01 ribbon ratios=['1.6381', '1.6731', '1.6278', '1.6077'] square ratio=0.6220
+A R t=0.2 seed=3: eta=7.591e-01 ribbon ratios=['1.7394', '1.4632', '1.6525', '1.6242'] square ratio=0.7959
+A R t=0.2 seed=4: eta=8.351e-01 ribbon ratios=['1.3861', '1.2859', '1.5305', '1.3537'] square ratio=0.0492
+A S1 t=0 seed=0: eta=1.000e-03 ribbon ratios=['9.0000', '3.0000', '9.0000', '3.0000'] square ratio=9.0000
+  S1 sharp ribbon ratio = 8.999970
+A S2 t=0 seed=0: eta=1.000e-03 ribbon ratios=['3.0000', '3.0000', '3.0000', '3.0000'] square ratio=9.0000
+  S2 sharp square ratio = 8.999970
+A S3 t=0 seed=0: eta=1.000e-03 ribbon ratios=['9.0000', '9.0000', '9.0000', '9.0000'] square ratio=9.0000
+  S3 unpaired ribbon ratio = 14.999860; paired = 8.999970
+A7 (informational): max ribbon ratio over R = 1.9852, max square ratio over R = 0.7959
+A1 PASS
+A2 PASS
+A3 PASS
+A4 PASS
+A5 PASS
+A6 PASS
+Part A PASS

@@ -1,0 +1,83 @@
+{
+  "utc": "2026-10-30T11:47:42.554918+00:00",
+  "scope": "Static bookkeeping only. Scientific checks NOT RUN; no mathematical PASS asserted.",
+  "head": "688a8ddf958e6a5ba5402d6b7fdad4d283af56df",
+  "input_hash_changes": [],
+  "final_reviewed_hash_changes": [],
+  "runner_syntax": "parsed",
+  "trailing_whitespace": [],
+  "missing_local_links": [],
+  "unexpected_changed_paths": [],
+  "tracked_changes": [],
+  "reverse_patch_check_exit": 0,
+  "reverse_patch_check_output": "",
+  "scientific_execution_status": "NOT RUN",
+  "review_verdict": "LAND for research note only; actual E15 OPEN",
+  "artifacts": [
+    {
+      "path": "HOLEPAY.md",
+      "sha256": "b4e8cc82f2344a955d2ced33ded900af8d39a354dcbff21d8423b331121de4d4",
+      "bytes": 29620
+    },
+    {
+      "path": "HOLEPAY_LOG.md",
+      "sha256": "bd6a56f7ec995186fc0f6e19d11ca0bdf1a030e36ab27f32637452892b9fa4c1",
+      "bytes": 10428
+    },
+    {
+      "path": "checks/holepay_check.py",
+      "sha256": "25e798d06c2b33b513cfc0ffde9aa32d5c4f764ddc8e014f45baf9e9fe75ee6b",
+      "bytes": 10450
+    },
+    {
+      "path": "checks/holepay_criteria.md",
+      "sha256": "9eaf6cb4ac6605953326cf29993a81a337ed4c38b463b7ed47fb0251771153f4",
+      "bytes": 2687
+    },
+    {
+      "path": "checks/holepay_numeric.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/holepay_result.json",
+      "sha256": "0ab226a01873ff93ef55a19784eca32db6d0b25dd7848c0968e2dd1225d38754",
+      "bytes": 987
+    },
+    {
+      "path": "checks/holepay_review.md",
+      "sha256": "cb6ccd04b6707b1e69631487aac3008e35374f24879c0bf3d4046635de5ac770",
+      "bytes": 18442
+    },
+    {
+      "path": "checks/holepay_review_final.md",
+      "sha256": "c7f7e8558f3d4aad8cf5d31525e048b72295148f498a078c9affec52c471c429",
+      "bytes": 6989
+    },
+    {
+      "path": "checks/holepay_review_fix.json",
+      "sha256": "91b6c8fb7556462e11a514de2d1125b39dd98a991cafdea788133d4356b8003d",
+      "bytes": 614
+    },
+    {
+      "path": "checks/holepay_review_fix.patch",
+      "sha256": "7078d68de1d91aa710ab6e2e979578db294d6de1cd3b890d826df6553790754b",
+      "bytes": 8221
+    },
+    {
+      "path": "checks/holepay_sources.json",
+      "sha256": "2b12a05892f24ef9aee05b36c724207f8a94cba6ac265e47bbabae3bd251eb19",
+      "bytes": 3454
+    },
+    {
+      "path": "checks/holepay_stderr.txt",
+      "sha256": "1ae2ce53f6c4a3265acd385e7e4a21d827a2b5594337d0d9ae68b92a856b30dc",
+      "bytes": 43
+    },
+    {
+      "path": "checks/holepay_stdout.txt",
+      "sha256": "0ab226a01873ff93ef55a19784eca32db6d0b25dd7848c0968e2dd1225d38754",
+      "bytes": 987
+    }
+  ]
+}

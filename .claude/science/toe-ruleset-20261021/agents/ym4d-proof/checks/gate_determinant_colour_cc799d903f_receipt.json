@@ -1,0 +1,85 @@
+{
+  "schema": "ym4d.research_gate.checker_receipt.v1",
+  "created_utc": "2026-10-30T16:36:04.528147+00:00",
+  "requested_configuration": {
+    "provider": "OpenAI/Codex",
+    "model": "gpt-6-astra",
+    "effort": "max"
+  },
+  "actual_backend_attestation": null,
+  "independence": "Separate restricted context from authorship and prior verdicts; no cross-family claim.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/DETERMINANT_SIGN_ASTRA.md",
+    "sha256": "138610a5a7d6e63d2a2d7ce3616964b9b909acf8295df65777b3eb4a40c55d36",
+    "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+    "git_blob": "f937e872cb9053d9e2c0f8c04a63b78f311284e6",
+    "lines": 610
+  },
+  "methodology_commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/determinant-colour-cc799d903f.md",
+    "sha256": "0681285274966b654345b150614a6e288beedfd852caf6d9ce2e7fb0a96cae59"
+  },
+  "source_only_findings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_source_findings.json",
+    "sha256": "b0e73bf3cab2461d8303dd4718502d9d1a60aa5a97f3142ae85e6ab8d1cec76d"
+  },
+  "source_only_read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_source_read_manifest.json",
+    "sha256": "d7b6d2de0d193012e7076766b74e248b10d77040d9f8219b9f0d0317bd879e82"
+  },
+  "vocabulary_check": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_vocab.json",
+    "sha256": "9fec8ec0c75354ae57e99df5e6ac03f73de2abb6524e7ac2c14361929762c944"
+  },
+  "source_freeze_utc": "2026-10-30T16:31:00.151889+00:00",
+  "author_packets_read_only_after_source_freeze": true,
+  "author_packets": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/determinant_sign_read_manifest.json",
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "git_blob": "c01a28d1e960f944ca2bdd4b523841b1c1f4702f",
+      "sha256": "d8567df1be773ff8038af40a3553285028ee2562af03167c5484913c5713f4a4",
+      "lines": 97
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/determinant_sign_receipt.json",
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "git_blob": "52a8d10e388c7e27f9b1c593248d08756fc55ec6",
+      "sha256": "eac35ddbeb563b69e8a4351fad2b4d83dc45b48cb909c1bb31a37882786e480e",
+      "lines": 43
+    }
+  ],
+  "author_identity_checks": {
+    "all_displayed_local_hashes_and_line_counts_match": true,
+    "process_light_hash_and_count_match": true,
+    "receipt_manifest_hash_binding_matches": true,
+    "historical_read_and_execution_claims_verified": false,
+    "earlier_methodology_pin_preserved": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+  },
+  "preflight": {
+    "command": "python3 /tmp/ym4d_lab_ops_c93/lab_ops.py preflight --target .claude/science/toe-ruleset-20261021/agents/ym4d-proof --role checker --model gpt-6-astra --effort max",
+    "exit_code": 0,
+    "result": "go",
+    "lab_ops_sha256": "462b66455683bf6bb11bf1dd451e789ed4a298b6cf06c9109d693cc6ea1e1fd9",
+    "automation_lock_sha256": "cfba59d6d9904909fe45225a5de7724d5afbdc0638ab7b416d86120feb856001",
+    "both_helpers_observed_equal_to_c93": true,
+    "memory_cap": "ulimit unavailable; bounded reads and metadata work only"
+  },
+  "verification": {
+    "scientific_numerical_runs": 0,
+    "symbolic_coefficient_runs": 0,
+    "explicit_path_vocab_files": 4,
+    "vocab_violations": 0,
+    "automatic_fixes": 0,
+    "report_lines": 140,
+    "local_report_links_valid": true,
+    "source_and_freezes_unchanged": true,
+    "audit_or_pipeline_runs": 0,
+    "git_mutations": 0,
+    "subworkers": 0
+  },
+  "standing": "Only the report research-gate assessment carries the research signal. Scoped source LAND advice is separate; no review-loop landing PASS or audit/retained status is assigned.",
+  "source_freeze_clarification": "The q^-2 integrability wording is scoped to the four-dimensional comparison used here; it is not a claim of nonintegrability in all other dimensions. The immutable freeze was not edited.",
+  "publication_owner": "root coordinator; outputs remain uncommitted in the assigned durable worktree."
+}

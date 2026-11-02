@@ -1,0 +1,58 @@
+{
+  "schema": "review-uniform-soft-scope-sources-v1",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "methodology": "Same installed/current-main procedures as original frozen report; this is an affected scope supplement.",
+  "read_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "bytes": 48089,
+      "read_coverage": "Section 1.3 in full; sections 1.1\u20131.2 and original report context reread."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "c7b7890187b9a350aea19e606957c606922fe741c6615382c3a4da0cd60d92c4",
+      "bytes": 26375,
+      "read_coverage": "Opening, US1 paragraph and scope; original full proof previously reviewed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF_session16_snapshot.md",
+      "sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+      "bytes": 488224,
+      "read_coverage": "Lines 1495\u20131538, original Decision-4 kernel and normalization derivatives."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW.md",
+      "sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "bytes": 539577,
+      "read_coverage": "Lines 1\u2013110 and 112\u2013147, u convention, original target and corrected normalized tree-phase definition."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_UIR_ASTRA.md",
+      "sha256": "0cbb4f9a967022ab669cae087617f390b2bfb481034012aac85e7cfc9928bc40",
+      "bytes": 35284,
+      "read_coverage": "Lines 134\u2013173, normalized tree and coordinate dictionary and fixed-volume tree value."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+      "bytes": 36980,
+      "read_coverage": "FC18\u2013FC20 (lines 229\u2013252 on reread); exact tree-value scope, original full relevant range already reviewed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "78d40a5480aafe94c30ee5c0b827d30b84ec629dfccaa91b44c98cfe08ecf3d9",
+      "bytes": 17036,
+      "read_coverage": "Original frozen report and exact no-author-repair wording corrected by supplement, not edited."
+    }
+  ],
+  "prior_frozen_identities": {
+    "REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md": "78d40a5480aafe94c30ee5c0b827d30b84ec629dfccaa91b44c98cfe08ecf3d9",
+    "checks/review_uniform_soft_receipt.json": "33b98352bcdae4c40f9db02cefbbdfd225063395da0c7c589ee47626e0ed10a3",
+    "UNIFORM_SOFT_MINIMIZER_ASTRA.md": "c7b7890187b9a350aea19e606957c606922fe741c6615382c3a4da0cd60d92c4",
+    "checks/uniform_soft_minimizer_receipt.json": "4e980541b2bddc77586bfa7f9285ebb4428684268aedaf750b232d9c9b45fe6a"
+  },
+  "exposure": "Concern raised by covariance worker/coordinator; reviewer independently derived coefficient and implemented control. No covariance-worker implementation imported or read.",
+  "original_review_artifacts_unchanged": true,
+  "original_author_artifacts_unchanged": true
+}

@@ -1,0 +1,92 @@
+{
+  "frozen_utc": "2026-10-29T20:50:10.011397+00:00",
+  "state": "FROZEN AUTHOR UNIT; no further mutation before review handoff",
+  "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+  "source_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+  "claim_type": "bounded actual source-sector theorem plus exact remaining full-cut obstruction",
+  "results": [
+    {
+      "result": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_actual_attempt01.json",
+      "passed": 36,
+      "total": 36,
+      "exit_code": 0,
+      "stderr_empty": true
+    },
+    {
+      "result": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_atoms_attempt01.json",
+      "passed": 32,
+      "total": 32,
+      "exit_code": 0,
+      "stderr_empty": true
+    }
+  ],
+  "scientific_failures": [],
+  "runtime": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "full_theory_status": {
+    "continuum_existence": "OPEN",
+    "physical_continuum_mass_gap": "OPEN"
+  },
+  "bound_files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_actual.py",
+      "sha256": "964917975efedcf2898bc1dd532bcf2849f74794b011156c4664425784dacb85",
+      "bytes": 8475
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_actual_attempt01.json",
+      "sha256": "cd9e485f909045f9c0f2521741effa34e6892ea29bf041639003cfd8ea82357b",
+      "bytes": 3203
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_actual_attempt01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_atoms.py",
+      "sha256": "943b97af7d8b08392631daf4d96ba322832e2aa43c5ea0eebb745efbd8b734ac",
+      "bytes": 4718
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_atoms_attempt01.json",
+      "sha256": "3fe701773940cec9b29f73347a8ae24646d8c42d6f82f6b563933d92a48b1bfc",
+      "bytes": 1864
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_atoms_attempt01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_criteria.json",
+      "sha256": "201a964cfa9ae548a8325c26fa3c96d89c5f00660491e0985546b9f989ccc7f7",
+      "bytes": 3690
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_inputs.json",
+      "sha256": "c2c9ff5f32d548fa7fb6073f786b10ac5ca1fb0ded57500d58cfe46455421f29",
+      "bytes": 11670
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_numeric_plan.json",
+      "sha256": "3304d42be325ffd7c1c91592d20acdd4b40946fdcd26cf59f0dbf0a9d54c61f5",
+      "bytes": 2976
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_primary.json",
+      "sha256": "c8a21721c425c62189a5fd7f7a7e682e5419d50a1a6307f37e542bb8e1161030",
+      "bytes": 3429
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_verification.json",
+      "sha256": "2af59a07245b9620aeb0cb8cc750cb92e910b7caaf17a612f520930d818faa70",
+      "bytes": 997
+    }
+  ],
+  "independent_review": "Required; root owns dispatch and publication. Prior CB reviewed, this unit is not yet reviewed."
+}

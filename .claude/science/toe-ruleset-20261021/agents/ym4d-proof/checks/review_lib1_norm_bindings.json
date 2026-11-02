@@ -1,0 +1,181 @@
+{
+  "created_utc": "2026-10-29T20:41:04.987042+00:00",
+  "before": "f15a7ad33f90d3de8ef2f8b40cada95d009f60bd",
+  "after": "fcdd32c83bc5aed08ef4f3aa5da512e668d8b216",
+  "repair_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_fix_receipt.json",
+    "sha256": "b5bed0e03189ff647c148aa501e3f9da68a93b87a4708dff65c840e6ebe0b70b",
+    "bytes": 7022
+  },
+  "all_18_receipt_entries_match_commit_and_worktree": true,
+  "source_only_change": "exact \u00a710 paragraph replacement from repair receipt",
+  "prefix_bytes": 8489,
+  "prefix_sha256": "1f7367c972e1ad49e81cfccdab1bec07b2259a44616fc45bab28e89174941c3d",
+  "all_other_source_bytes_unchanged": true,
+  "log_only_change": "exact marked repair appendix",
+  "original_review": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_LIB1.md",
+    "sha256": "6d81bcc64fa4ce4ef970549474791c6c9c8ad17d138a5ec972c930ac58e3bff8",
+    "bytes": 20793
+  },
+  "unchanged_original_check_artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_check_result.json",
+      "sha256": "1677bd4a3c93ef4ae8603ad2dc7d9c12e21ecd59648aa3135f99c0cd927ca60a",
+      "bytes": 9633
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_check_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_check_stdout.txt",
+      "sha256": "1677bd4a3c93ef4ae8603ad2dc7d9c12e21ecd59648aa3135f99c0cd927ca60a",
+      "bytes": 9633
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_criteria.md",
+      "sha256": "2401a70f2e9b87af8a876eb4a5274b7467bf5769f7f1d30bddbcd4b1356d1f68",
+      "bytes": 3179
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_dimock_III_p35.png",
+      "sha256": "be52b3f01d647f65c8ce0d525db66da57ee23534f3d553fe1a641a04de43e990",
+      "bytes": 122270
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_dimock_II_p90.png",
+      "sha256": "2c2680050f3dbaf1f553e7243eaf9f51c01f2b9b5fb8c2dbac07b24e6b6a970b",
+      "bytes": 130688
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_prior_art.txt",
+      "sha256": "fd7b58b52e9378e03f9403761197458ab2a23b7ad05ff11795b31eb98a05c6e6",
+      "bytes": 15151
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_source_manifest.json",
+      "sha256": "608a19e5d4d74895ecbe4daec656fadaef2ddaf2d49a69f2542383c98c827a96",
+      "bytes": 6228
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_validate.py",
+      "sha256": "ad30c1243d3f8bd729427e721d9e8f90b4f7f235ffb1dbf348dbee3163fcc70d",
+      "bytes": 5431
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_validation.json",
+      "sha256": "8cbdcf4a886a62c8012036748f971681540676b02986137b384e26ee15ea084a",
+      "bytes": 4903
+    }
+  ],
+  "resource_and_other_function_ASTs_unchanged": [
+    "components",
+    "connected",
+    "fill",
+    "graph",
+    "guard",
+    "main",
+    "native_four_dimensional",
+    "norm",
+    "reference_fill",
+    "require",
+    "saturated",
+    "steiner_table",
+    "submasks",
+    "touches",
+    "vertices"
+  ],
+  "author_actual_copied_source_executions": [
+    {
+      "case": "original_active_for_full",
+      "copied_script": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-lib1-norm-control-cwrawtbo/original_active_for_full/lib1_check.py",
+      "sha256": "518b6958f306bf572e55c8ec1774f30c4d0578c9e96dfca3535acab78903d5b3",
+      "exact_expected_source": true,
+      "stdout_matches_saved_result": true,
+      "exit": 0,
+      "assertion_reason": null,
+      "resource_samples": 15,
+      "resources_valid": true
+    },
+    {
+      "case": "corrected_baseline",
+      "copied_script": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-lib1-norm-control-cwrawtbo/corrected_baseline/lib1_check.py",
+      "sha256": "0bcd86c97aa91b6897241f6998693de15c6131e54785c77a32ee6beb097300b8",
+      "exact_expected_source": true,
+      "stdout_matches_saved_result": true,
+      "exit": 0,
+      "assertion_reason": null,
+      "resource_samples": 15,
+      "resources_valid": true
+    },
+    {
+      "case": "active_for_full",
+      "copied_script": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-lib1-norm-control-cwrawtbo/active_for_full/lib1_check.py",
+      "sha256": "21103c0dac0bb43ee4a03d3a68ed0a4252640c3d1af3461c0e99d8315f0dec66",
+      "exact_expected_source": true,
+      "stdout_matches_saved_result": true,
+      "exit": 1,
+      "assertion_reason": "AssertionError('exact_cycle_output_full_norm')",
+      "resource_samples": 14,
+      "resources_valid": true
+    },
+    {
+      "case": "active_roots_only",
+      "copied_script": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-lib1-norm-control-cwrawtbo/active_roots_only/lib1_check.py",
+      "sha256": "d97626ec5e80f0b4cbd314a56f5c17e487f27b4a48b4f5e9bcf01198ab9a7b02",
+      "exact_expected_source": true,
+      "stdout_matches_saved_result": true,
+      "exit": 1,
+      "assertion_reason": "AssertionError('exact_inactive_root_output_full_norm')",
+      "resource_samples": 14,
+      "resources_valid": true
+    },
+    {
+      "case": "active_weight_only",
+      "copied_script": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-lib1-norm-control-cwrawtbo/active_weight_only/lib1_check.py",
+      "sha256": "c1efe80a09bc99f5da21e2570135d85c6b0130c9b0a78c94e5caeec2af85f529",
+      "exact_expected_source": true,
+      "stdout_matches_saved_result": true,
+      "exit": 1,
+      "assertion_reason": "AssertionError('exact_cycle_output_full_norm')",
+      "resource_samples": 14,
+      "resources_valid": true
+    }
+  ],
+  "read_coverage": {
+    "complete": [
+      "PROCESS_LIGHT.md",
+      "REVIEW_LIB1.md",
+      "LIB1_NORM_CONTROL_FIX.md",
+      "checks/lib1_check.py",
+      "checks/lib1_norm_control_run.py",
+      "checks/lib1_criteria.md",
+      "checks/lib1_norm_control_criteria.md",
+      "checks/lib1_norm_control_fix_receipt.json"
+    ],
+    "LIB1.md": [
+      [
+        45,
+        127
+      ],
+      [
+        164,
+        214
+      ],
+      [
+        357,
+        414
+      ],
+      [
+        615,
+        685
+      ]
+    ],
+    "LIB1_LOG.md": "complete affected diff; original log hash/preservation check, not a full original-log reread",
+    "historical_checker": "complete code reconstructed from complete current code and exact diff; archival bytes match original commit",
+    "author_execution_outputs": "source/hash/exit/reason/witness/count/resource fields inspected; full raw bytes hashed and compared with actual copied-script result files"
+  },
+  "administrative_failure": "The first ad-hoc binding check had an unmatched closing brace and failed parsing before any checks ran. This corrected retry changes no input, numerical criterion or checker implementation."
+}

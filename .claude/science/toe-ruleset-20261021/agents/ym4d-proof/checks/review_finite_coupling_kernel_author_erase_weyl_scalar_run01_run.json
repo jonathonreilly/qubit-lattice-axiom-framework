@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-29T23:01:46.432417+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.49914149998221546,
+  "peak_rss_KiB": 154096,
+  "termination_reason": null,
+  "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_author_erase_weyl_scalar.py",
+  "script_sha256": "5e15591efff0d47ba318450181d0a676068e003f02eeff05a046d7dbee579462",
+  "stdout_sha256": "11a4ba598c63387afbbaa34b63b0c1b29284b5e0b4483775875fb90d4422994b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

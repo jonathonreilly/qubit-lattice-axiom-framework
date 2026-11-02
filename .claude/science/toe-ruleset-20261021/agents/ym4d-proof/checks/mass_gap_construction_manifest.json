@@ -1,0 +1,282 @@
+{
+  "artifacts": [
+    {
+      "bytes": 27945,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "sha256": "bc5be24f32bf9285ecab0140993eb9788c6f2736ecd9cbe91254d288cac79f8a"
+    },
+    {
+      "bytes": 13229,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_attempt01.json",
+      "sha256": "fc4d105069a655d732038bf86c9c224d2e7453fbdd4eec81d1b2fe8fd8a7ed1d"
+    },
+    {
+      "bytes": 10487,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_attempt01.py",
+      "sha256": "88de387d2af2d47cba6743408eab146a038c926c85c8bbcb33dd92ae17bed8d6"
+    },
+    {
+      "bytes": 0,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_attempt01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3862,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_criteria.md",
+      "sha256": "5c1ba60e54b76a7817b152b749c68cbd820f35100ff84cb4881e06f2b4a3994d"
+    },
+    {
+      "bytes": 10587,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_exact.py",
+      "sha256": "526d1aa38d28e4adcb4676a535a0304195a24528c3538b61091955ae691d820c"
+    },
+    {
+      "bytes": 13638,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_results.json",
+      "sha256": "b0e4205e21a0f8758ac1474b922348cd738be4e49be150d31af33eac2e60eb1e"
+    },
+    {
+      "bytes": 0,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_results.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 153,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    }
+  ],
+  "author_unit": "Finite Wilson transfer and actual SU(2) normalized S4 soft-loop images",
+  "baseline_head": "75cdf2dd1411c2d7d89c52871f84154ba0146ba4",
+  "created_utc": "2026-10-29T14:47:28.023127+00:00",
+  "governance_main": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "limitations": [
+    "Finite-volume lower bound degenerates; not a positive continuum mass threshold.",
+    "SU(2) explicit soft-kernel formula does not extend the complete theorem group range.",
+    "Finite-cycle character truncation is a diagnostic, not a continuum spectral certificate.",
+    "First and final numerical runs differ only by a stable evaluation of the tiny minorization; both source versions and outputs preserved.",
+    "Prior-art sweep bounded to relevant local lane/current-main sources, not all open proposals; parent owns PR intake.",
+    "Methodology navigation documents were inspected at relevant scopes; their labels supply no scientific premise."
+  ],
+  "local_link_checks": [
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "target": "MASS_GAP_TARGET.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "target": "PROOF.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "target": "PROOF.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "target": "HIST.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "target": "../../../../../docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "target": "../../../../../docs/WILSON_STAGGERED_RAW_CONSTRAINED_ACTION_HESSIAN_DECAY_BOUNDED_THEOREM_NOTE_2026-07-12.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "target": "../../../../../docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "target": "../../../../../docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "target": "PROOF.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "target": "SOURCE_LOCAL_RETURN_ASTRA.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "target": "checks/mass_gap_construction_criteria.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "target": "checks/mass_gap_construction_exact.py"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "target": "checks/mass_gap_construction_results.json"
+    }
+  ],
+  "provenance_refresh": {
+    "current_head": "e4464249d9729a0bf7725be67611aa95aba5df01",
+    "inspected_diff": "git diff 75cdf2dd1411c2d7d89c52871f84154ba0146ba4 -- PROOF.md HANDOFF.md (full lane paths)",
+    "result": "PROOF changed only recovery/review status header; Wilson Setting and Decision 4/D4-norm arguments unchanged. HANDOFF changed status and work assignments. Neither adds a premise consumed by this author unit."
+  },
+  "runtime_result": {
+    "failed": 0,
+    "negative_controls": 11,
+    "passed": 45
+  },
+  "sources": [
+    {
+      "current_working_sha256": "2abe7d807cbcbedaa1bc4fb0183bb2cd916b03cc8f6aa838655e14e051fa079b",
+      "matches_baseline": false,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "read_scope": "S27 recovery header, target/Setting S1-S7, Decision 4/D4-norm; selected infrared/strong-coupling searches; no whole proof certification",
+      "revision": "75cdf2dd1411c2d7d89c52871f84154ba0146ba4",
+      "sha256": "1a33ae2bd744b5dbe8582c5c5f7113f64dd1c711a500de72db8792bace7a4b5c"
+    },
+    {
+      "current_working_sha256": "0bafb04ecda4b88f13f958026f4c817b3d536207a0de2d1f347f425e5f61097c",
+      "matches_baseline": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HIST.md",
+      "read_scope": "Sections 0 and 2, normalized chain definition and conditional independence; other theorem claims not used",
+      "revision": "75cdf2dd1411c2d7d89c52871f84154ba0146ba4",
+      "sha256": "0bafb04ecda4b88f13f958026f4c817b3d536207a0de2d1f347f425e5f61097c"
+    },
+    {
+      "current_working_sha256": "c573a9a7bb05328a0e4c931c6e76841cf81b77034e6ed1acf81199d712692b88",
+      "matches_baseline": false,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "read_scope": "Current status and construction boundary; not an analytic premise",
+      "revision": "75cdf2dd1411c2d7d89c52871f84154ba0146ba4",
+      "sha256": "cd3ebb4ea32bcc123f175ca87c2e26f3f5d842146edff611b0f8ad1ea572699f"
+    },
+    {
+      "current_working_sha256": "2eee991e4e4546aa3ed10ad0ffe40d840c5347a002d623aac47b2fc515fd7769",
+      "matches_baseline": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_ASTRA.md",
+      "read_scope": "Source-local/global-chart scope and source/normalization search excerpts only; no analytic premise consumed",
+      "revision": "75cdf2dd1411c2d7d89c52871f84154ba0146ba4",
+      "sha256": "2eee991e4e4546aa3ed10ad0ffe40d840c5347a002d623aac47b2fc515fd7769"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "read_scope": "Complete original target and clarified section 3/MG3 uniform onset-time change",
+      "revision": "8b38c6f7b802479f763bc995d96ee45fdcc03795",
+      "sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "f6b39e5a1b23b62053b1fdb53c2eedbadc34628ff12a7a9a058b2c91c483a711"
+    },
+    {
+      "path": "docs/WILSON_STAGGERED_RAW_CONSTRAINED_ACTION_HESSIAN_DECAY_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "0bfb6dd97b50c569233b1b152c543ce091dd2db1c29d64c41de88c9348799636"
+    },
+    {
+      "path": "docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "f81916765febda3dd378650d3298cd2a2afc368824ea14e618607a71a472dc80"
+    },
+    {
+      "path": "docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "d8ba4a2c73d6bb897d3ebea4601f4a89a53e37830b582b0df40f5f3d67494bf1"
+    }
+  ],
+  "status": "Frozen author unit; independent review pending; no MG0-MG5 row closed",
+  "target_revision": "8b38c6f7b802479f763bc995d96ee45fdcc03795"
+}

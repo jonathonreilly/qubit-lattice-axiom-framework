@@ -1,0 +1,77 @@
+ra1_margins.py -- REVIEW_ARS_EPS_S1, target T55-H.  Exact rational arithmetic.
+A_d = 9, L^2 = 9, c_1 = 1/117 = 1/117, DX' = 2.456e-152 (C_Omega = 1)
+
+=== RA1-4  c_1 = 1/117 and the 'identity' ===
+  1/(2(L^2 + 5.5 A_d)) = 1/(2(9 + 49.5)) = 1/117   -> DERIVES
+  (L^2 + 5.5A_d)*c_1 = 1/2   [NO POWER: true by the definition of c_1 -- cannot fail]
+  POWER VARIANT (dichotomy's sharp 4.75889 vs c_1's 5.5): (L^2+4.75889A_d)c_1 = 0.442992  -> differs from 1/2, so the comparison CAN fail and the two 5.5 are the SAME constant
+  (aside) c_1 with the sharp 4.75889 would be 1/103.6600; gain forgone = 0.1051 decades
+
+=== RA1-5  117/4608, 39.3846, 59.0769, and the two 4608s ===
+  N=2: eta_1^lin/eta_q = 512/13 = 39.3846
+  N=3: eta_1^lin/eta_q = 768/13 = 59.0769
+  117/4608 = 13/512 = 0.025390625
+  256*N*A_d at N=2 = 4608;  512*A_d = 4608;  equal? True
+  256*N*A_d at N=3 = 6912;  512*A_d*N at N=3 = 13824  -> the coincidence is N=2 only
+  VERDICT RA1-5: EXACT; the two integers '4608' have DIFFERENT factorisations (256*N*A_d|_{N=2} vs 512*A_d)
+
+=== RA1-1 / RA1-3  margins and gains (N=2, kappa=1) ===
+eps_1                                  a_RS quad      /1e2  /(625*1e2)  gain(dec)
+1.27e-39  (SF l.2837)               7.65720e-165   -14.506     -17.302     81.585   | linear margins  +67.079 /  +64.283
+9.52e-40  (RLARGE l.71)             2.41770e-165   -15.007     -17.803     81.835   | linear margins  +66.829 /  +64.033
+8.95e-40  (RLARGE l.611)            1.88863e-165   -15.114     -17.910     81.889   | linear margins  +66.775 /  +63.979
+6.7e-40   (RLARGE l.72 HEAD)        5.93136e-166   -15.617     -18.413     82.141   | linear margins  +66.523 /  +63.728
+9.38495112638e-45 PROPOSED          2.28341e-185   -35.032     -37.828     91.848   | linear margins  +56.816 /  +54.020
+  spread of the GAIN across the four live eps_1: 10.263 decades  -> GAIN-INDETERMINATE
+
+=== RA1-2  does log10(625) reconcile -15.617 with -18.413? ===
+  c_RS = 625  (as ARS_FIX states): -15.6171 - log10(625) = -18.4130  -> RECONCILES
+  c_RS = 81   (DESIGNED-FAIL control F-c): -15.6171 - log10(81) = -17.5256  -> DOES-NOT-RECONCILE
+
+=== RA1-6  the route reversal ARS_FIX l.537 prices at 1551x ===
+  N=2: bare exponent ratio (eta_1^lin/eta_q)^2 = 1551.148   |  PER-CUBE ratio (/625 vs /81) = 201.029  = 2.3033 decades
+  N=3: bare exponent ratio (eta_1^lin/eta_q)^2 = 3490.083   |  PER-CUBE ratio (/625 vs /81) = 452.315  = 2.6554 decades
+  DESIGNED-FAIL control F-d (both routes at 625, i.e. asymmetry removed):
+    N=2: ratio = 1551.148  -> AGREES-1551
+    N=3: ratio = 3490.083  -> n/a
+
+=== RA1-8  the joint route (HIST Lemma RS-lin, PROVEN-HERE at RLARGE l.628) ===
+  today  6.7e-40, N=2: joint a_eta(eta_q)/81 = 6.52499e-89, margin vs DX' =  +61.424 dec
+      RS quad /625 margin  -18.413 ; RS lin /625 margin  +63.728 ; NET gain of adoption over the joint route =  +2.303 dec  (joint beats RS-quad by 79.837 dec today)
+  today  6.7e-40, N=3: joint a_eta(eta_q)/81 = 1.93333e-89, margin vs DX' =  +60.896 dec
+      RS quad /625 margin  -18.941 ; RS lin /625 margin  +63.552 ; NET gain of adoption over the joint route =  +2.655 dec  (joint beats RS-quad by 79.837 dec today)
+  proposed, N=2: joint a_eta(eta_q)/81 = 1.28025e-98, margin vs DX' =  +51.717 dec
+      RS quad /625 margin  -37.828 ; RS lin /625 margin  +54.020 ; NET gain of adoption over the joint route =  +2.303 dec  (joint beats RS-quad by 89.545 dec today)
+  proposed, N=3: joint a_eta(eta_q)/81 = 3.79333e-99, margin vs DX' =  +51.189 dec
+      RS quad /625 margin  -38.356 ; RS lin /625 margin  +53.844 ; NET gain of adoption over the joint route =  +2.655 dec  (joint beats RS-quad by 89.545 dec today)
+
+=== RA1-7  C_Omega crossovers, (C7)'s window, and kappa ===
+  today  6.7e-40 /1e2: margin  -15.617 at C_Omega=1  ->  a_RS stops binding once C_Omega > 10^15.617 = 4.141e+15
+  today  6.7e-40 /(625*1e2): margin  -18.413 at C_Omega=1  ->  a_RS stops binding once C_Omega > 10^18.413 = 2.588e+18
+  proposed /1e2: margin  -35.032 at C_Omega=1  ->  a_RS stops binding once C_Omega > 10^35.032 = 1.076e+35
+  proposed /(625*1e2): margin  -37.828 at C_Omega=1  ->  a_RS stops binding once C_Omega > 10^37.828 = 6.722e+37
+  EPS1_SWEEP (C7) admits c_+*C_Omega up to 1.5e46 (l.494).  Crossover 10^15.617 = 4.14e15 is INSIDE that window by 30.383 decades.
+
+  (C7)'s four exhaustion figures, recomputed -- which combination are they?
+    RLARGE a/1e2 today      : margin +63.627 dec; exhausted at 1/C_Omega = 4.236e+63
+    RLARGE a/1e2 proposed   : margin +53.920 dec; exhausted at 1/C_Omega = 8.312e+53
+    g2_CRC x82 today        : margin +55.879 dec; exhausted at c_+/C_Omega = 7.567e+55
+    g2_CRC x82 proposed     : margin +46.189 dec; exhausted at c_+/C_Omega = 1.545e+46
+    -> compare EPS1_SWEEP l.443-444: 8.31e53 (RLARGE), 1.54e46 (CRC) at the proposed eps_1;
+       4.24e63 and 7.87e55 today.  Reported there as 'c_+*C_Omega'.
+
+  kappa: a_eta^lin binds the min of a_RS iff kappa > 128*c_1^2 = 128/13689 = 0.00935057
+    kappa=1     : gain =  82.141 dec
+    kappa=0.01  : gain =  82.141 dec
+    kappa=1e-4  : gain =  80.170 dec
+    kappa=1e-8  : gain =  76.170 dec
+
+=== RA1-9  H5: t <= 1/(106 sqrt(N) A_d^2 c_1^2) ===
+  N=2: mine 1.127368 vs ARS_FIX l.408 1.12737  -> rel. diff 0.00000146  REPRODUCES
+  N=3: mine 0.920492 vs ARS_FIX l.408 0.920492  -> rel. diff 0.00000045  REPRODUCES
+  rebuild of EXISTENCE's 106: 8*12*(pi/3)^2 = 105.2758; ratio 106/that = 1.006879
+
+=== DESIGNED-FAIL controls ===
+  F-a  eta_1 := eps_1 (c_1=1): margin   +68.553 -> NOT-BINDING; gain over quadratic  +84.170 dec
+  F-b  eta_1 := eps_1^3/(512 N A_d): margin   -93.965 -> BINDS; gain over quadratic  -78.348 dec
+  Both controls move the verdict -> the margin gate HAS POWER.

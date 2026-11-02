@@ -1,0 +1,178 @@
+{
+  "schema": "ym4d_gate_provenance_comparison_v1",
+  "created_at_utc": "2026-10-30T16:33:32.366196+00:00",
+  "only_author_records_inspected": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/retained_return_construction_read_manifest.json",
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "git_blob": "6715d035418dc7e3497cb5c1dcb2708ee4fb38d2",
+      "sha256": "48cf06baadc4795a42d9aee0d646dd63e4cdffd59feb222d01e74e421d5680e3",
+      "lines": 127,
+      "bytes": 9356
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/retained_return_construction_receipt.json",
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "git_blob": "20e543aaafcbb0505310f1e53f6e595f3acb52a4",
+      "sha256": "b5b609558ff307b5d1735d4c9d4ed4a3669f8138294c08a90e7ce0482a5936c7",
+      "lines": 60,
+      "bytes": 5117
+    }
+  ],
+  "source_identity_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+      "declared_sha256": "920865b2ee1f528c1a3134858023b725fd5c69849d84af372d094bf00c22ce12",
+      "actual_sha256": "920865b2ee1f528c1a3134858023b725fd5c69849d84af372d094bf00c22ce12",
+      "declared_lines": 654,
+      "actual_lines": 654,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "declared_sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "actual_sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "declared_lines": 649,
+      "actual_lines": 649,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXSMALL.md",
+      "declared_sha256": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+      "actual_sha256": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+      "declared_lines": 692,
+      "actual_lines": 692,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "declared_sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "actual_sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "declared_lines": 617,
+      "actual_lines": 617,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "declared_sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "actual_sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "declared_lines": 641,
+      "actual_lines": 641,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "declared_sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "actual_sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "declared_lines": 597,
+      "actual_lines": 597,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+      "declared_sha256": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+      "actual_sha256": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+      "declared_lines": 490,
+      "actual_lines": 490,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "declared_sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "actual_sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "declared_lines": 937,
+      "actual_lines": 937,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "declared_sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "actual_sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "declared_lines": 644,
+      "actual_lines": 644,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "declared_sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "actual_sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "declared_lines": 753,
+      "actual_lines": 753,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MEAN_READER_RETURN_ASTRA.md",
+      "declared_sha256": "30858a4bb6f045ba558dcdb527c46878ee6bb60fef83b3aef4ba39d79a8d527a",
+      "actual_sha256": "30858a4bb6f045ba558dcdb527c46878ee6bb60fef83b3aef4ba39d79a8d527a",
+      "declared_lines": 710,
+      "actual_lines": 710,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "declared_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "actual_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "declared_lines": 11,
+      "actual_lines": 11,
+      "match": true
+    }
+  ],
+  "receipt_to_manifest_hash_matches": true,
+  "receipt_to_manifest_lines_match": true,
+  "mechanical_source_claims": {
+    "utf8": true,
+    "unique_RT_equation_numbers": 30,
+    "RT_numbers_exact_1_through_30": true,
+    "no_trailing_whitespace": true,
+    "relative_links": [
+      {
+        "link": "REALRGA.md",
+        "exists": true
+      },
+      {
+        "link": "MIXSMALL.md",
+        "exists": true
+      },
+      {
+        "link": "CUT_SECTOR_COERCIVITY_ASTRA.md",
+        "exists": true
+      },
+      {
+        "link": "OUTSIDE_CHART_RETURN_ASTRA.md",
+        "exists": true
+      },
+      {
+        "link": "MARKED_COMPACT_CHART_ASTRA.md",
+        "exists": true
+      },
+      {
+        "link": "WEIGHTED_RETURN_JETS_ASTRA.md",
+        "exists": true
+      },
+      {
+        "link": "COMPACT_RETURN_GLUING_ASTRA.md",
+        "exists": true
+      },
+      {
+        "link": "STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+        "exists": true
+      },
+      {
+        "link": "MEAN_READER_RETURN_ASTRA.md",
+        "exists": true
+      },
+      {
+        "link": "PROCESS_LIGHT.md",
+        "exists": true
+      }
+    ]
+  },
+  "discrepancies": [],
+  "limits": [
+    "Matching hashes authenticate current immutable bytes, not author reading, execution history, chronological freeze, or source understanding.",
+    "Author complete-SG and other declared read coverage are self-reports. This checker has only its separately frozen read ranges, including bounded SG comparison passages.",
+    "The author historical 01589af procedure and installed-read reuse were not reauthenticated through their other packet files. This checker used c93fcb3; this is intentional procedure succession, not a source defect.",
+    "Protected-predecessor historical claims and assertions of all earlier governing-path hashes were not reconstructed; other author packets were not inspected.",
+    "Python urllib cache retrieval failed due to local certificate validation; curl HTTPS succeeded without disabling verification. Primary passages had already been read through the web tool."
+  ]
+}

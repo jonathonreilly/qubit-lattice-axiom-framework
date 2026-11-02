@@ -1,0 +1,14 @@
+E1 (dualities)
+  (a) k=1 T=3: dx_0(p) = 2.332303e-04, <G,dY> + <j,Y> = 2.332303e-04, rel 1.1e-09; CG res 7e-13/7e-13 (2 s, RSS 63 MB)
+  (c) TOPD k=1 T=3: r_(k-1)(b) = 1.008170e-01, pairing = 1.008170e-01, rel 9.9e-12 (3 s, RSS 63 MB)
+  (a) k=2 T=2: dx_0(p) = 2.100580e-03, <G,dY> + <j,Y> = 2.100580e-03, rel 2.4e-10; CG res 8e-13/1e-12 (15 s, RSS 68 MB)
+  (b) k=2 T=2 level-1 G_1: dx_0(p) = 3.814474e-04, <G_1, dY_1> = 3.814474e-04, rel 5.7e-10 (21 s, RSS 73 MB)
+E1 PASS
+E4 (Lemma CS inequalities), k = 2, T = 2
+  l=0 case 0: max|d*G|/max|G| = 2.4665, co-closed 3.1e-16; m=1: max|Q_str d*G|/max|G| = 0.3120; m=2: max|Q_str d*G|/max|G| = 0.0428
+  l=0 case 1: max|d*G|/max|G| = 2.3741, co-closed 4.0e-16; m=1: max|Q_str d*G|/max|G| = 0.3222; m=2: max|Q_str d*G|/max|G| = 0.0432
+  l=0 case 2: max|d*G|/max|G| = 2.3558, co-closed 3.5e-16; m=1: max|Q_str d*G|/max|G| = 0.3181; m=2: max|Q_str d*G|/max|G| = 0.0376
+  l=1 case 0: max|d*G|/max|G| = 2.1922, co-closed 4.0e-16; m=2: max|Q_str d*G|/max|G| = 0.2545
+  l=1 case 1: max|d*G|/max|G| = 2.3825, co-closed 4.0e-16; m=2: max|Q_str d*G|/max|G| = 0.2665
+  l=1 case 2: max|d*G|/max|G| = 2.4104, co-closed 2.9e-16; m=2: max|Q_str d*G|/max|G| = 0.2299
+E4 PASS (21 s, RSS 73 MB)

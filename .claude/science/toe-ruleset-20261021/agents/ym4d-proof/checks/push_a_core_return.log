@@ -1,0 +1,24 @@
+100 actual six-plaquette loop checks: max absolute error 8.88178e-16
+Zero-staple Schur check: (u, predicted second derivative, finite difference)
+(1.0, -0.25, -0.2499999739583351)
+(10.0, -25.0, -24.999999458333356)
+(100.0, -2500.0, -2499.9999478958357)
+(1000.0, -250000.0, -249999.99479164596)
+Soft outputs in this diagnostic are integrated exactly by normalization; no pinned-output claim.
+Kernel-height lower-integral checks: 9 scales; max bound/exact ratio 0.112022223327
+Actual-contour core supports: (|S|, |A|, free links, plaquettes, kernels, |H|)
+(1, 9, 2196, 6112, 64, 297)
+(2, 16, 3904, 10362, 107, 378)
+(3, 22, 5368, 14104, 144, 450)
+100 actual matrix plaquette-gradient checks for CC12: max ||grad f||^2/(8f) 0.999999444988; max directional finite-difference error 4.90634e-11.
+Owned-plaquette incidence multiplicity <= 6 verified in the three support geometries (CC8).
+No nonlinear cap integral, spectral-gap value, or mixed connected jet estimate is numerically certified.
+Declared arithmetic scope: L=3, kappa=R=1, delta=1/8, theta=1/2, s0=1/4, four weights=1/16.
+D1=16128; D2=498; D3=823.525242097; log C_jet=293.81346856
+Sufficient core-price and jet threshold (not an RG threshold): 25055161512.5
+(25055161512.549988, 'debit/linear price', 0.018475749275307776, 'log rooted bound', -782971603.8294355)
+(50110323025.099976, 'debit/linear price', 0.010982776622881281, 'log rooted bound', -1565945401.0966227)
+(250551615125.49988, 'debit/linear price', 0.003282982910795866, 'log rooted bound', -7829735779.234119)
+No complete history partition, inherited density, or connected activity representation tested.
+Shrinking-threshold hostile test, c=8: 9 D1-theta c = 145148 > 0; this upper bound loses its sign.
+Peak RSS bytes: 84934656; ceiling 1000000000; BLAS threads 1.

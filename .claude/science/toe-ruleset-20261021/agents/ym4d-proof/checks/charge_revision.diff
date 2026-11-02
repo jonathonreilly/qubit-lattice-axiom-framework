@@ -1,0 +1,133 @@
+--- checks/charge_review_base.md
++++ CHARGE.md
+@@ -490,12 +490,13 @@
+ After a connected representation and specified relevant/marginal
+ extraction have been constructed, denote its continuation and return
+ linear maps by C_j^irr and S_j^irr. A finite-window proof needs constants
+-m>=1, B_0>=1, D_ret<infinity and theta<1, uniformly on D_* and the
+-stable admitted history class, such that
++m>=1, B_0>=1, 0<=D_ret<infinity and 0<=theta<1, uniformly in starting
++level, volume, remaining depth, admitted history and points of D_* for
++the fixed model/cut parameters, such that
+ 
+     ||C_(j+s-1)^irr...C_j^irr||<=B_0       (0<=s<m),
+     ||C_(j+m-1)^irr...C_j^irr||
+-        <=theta_coh+sum_(l=0)^(m-1) b_l exp(-q_l)<1,
++        <=theta_coh+sum_(l=0)^(m-1) b_l exp(-q_l)<=theta<1,
+     ||S_j^irr||<=D_ret.                                (C24)
+ 
+ The first-gap split is disjoint, so the triangle inequality proves the
+@@ -503,22 +504,33 @@
+ norm. q_l must include (C23)'s tilt/reference, boundary and support
+ costs. The coherent term includes every no-gap completion failure.
+ No value theta_coh<1 is established here. (C11) controls one charged
+-input family, not C_j^irr on its whole space. RENEW's geometric-window
+-sum then gives mB_0/(1-theta), but its antecedent (C24) is still OPEN.
+-
+-An explicit alternative asks only for the propagated **creation map**
+-A_j: prove in the same full complex norm
++input family, not C_j^irr on its whole space. A pointwise strict bound
++below one does not supply this uniform margin. With (C24), RENEW's
++geometric-window sum gives mB_0/(1-theta); its antecedent remains OPEN.
++
++Another proposed route estimates the propagated actual **creation map**
++A_j in the same full complex norm. Its per-birth forward lifetime target is
+ 
+     sum_(r>=0) ||C_(j+r-1)^irr...C_j^irr A_j||<=D_birth, (C25)
+ 
+-uniformly, instead of an operator contraction for every possible
+-insertion. This can exploit a large charged ancestor. For example,
+-if actual mixed-history integration proves
+-||C...A_j||<=B^r exp[-lambda b^r], lambda>0, the ratio argument in
+-(C12) proves (C25). That bound is not asserted for localized nonlinear
+-histories. The unresolved constructive step is the disjoint cover of
+-their continuations by sufficiently charged ancestors, fresh-gap
+-sectors, and extracted returns, including all residual failures.
++uniformly in j and the claimed parameters. To bound contributions from
++all past births at a common terminal level k, additionally require
++
++    sup_k sum_(0<=j<=k) ||C_(k-1)^irr...C_j^irr A_j||
++                                      <=D_acc<infinity. (C25a)
++
++The products are identities when empty, and every term is measured in
++its terminal full complex norm. A per-birth lifetime sum does not by
++itself bound this fixed-terminal accumulation. A common envelope
++||C_(j+r-1)^irr...C_j^irr A_j||<=a_r, with sum_r a_r<infinity uniformly
++in j and all claimed parameters, would prove both bounds by reindexing
++r=k-j. For example, a proved envelope a_r=B^r exp[-lambda b^r], with
++uniform B and lambda>0, is summable by (C12). Neither this envelope nor
++(C25)/(C25a) is asserted for the actual localized nonlinear histories.
++The unresolved constructive step is the disjoint cover of their
++continuations by sufficiently charged ancestors, fresh-gap sectors,
++and extracted returns, including all residual failures. Returned sectors
++and nonlinear invariance still need their separate estimates.
+ 
+ Both routes still need the mixed atom budget
+ 
+@@ -529,7 +541,7 @@
+ local TV and full original readers. Disjoint groups must factor before
+ the logarithm. Separate scalar versions of (C11) cannot establish this.
+ Finally an invariant residual estimate such as
+-x'<=theta x+C x^2+e needs theta+CM<1 and
++x'<=theta x+C x^2+e, with C,e>=0 and 0<=x<=M, needs theta+CM<1 and
+ e<=(1-theta-CM)M, with initial x<=M; then Cx^2<=CMx proves invariance.
+ The vacuum, coupling and any other required relevant/marginal terms
+ have their own recursions. None has been constructed by this arithmetic.
+@@ -541,7 +553,7 @@
+ | 2: joint original charge/reference/boundary | **OPEN**, with a new **PROVEN real extensive-sector instance** | Extend (C9)–(C11) from a filled flux tube to the local mixed bound (C14), paying every original fraction once. The crude local bound (C13) has the wrong volume dependence. |
+ | 3: common nonzero complex reference / local TV | **OPEN** | Establish nonvanishing and local total variations on D_* for these actual references. A real cap lower bound or a finite-volume analytic germ is insufficient. |
+ | 4: overlap types and full-reader sums | **OPEN quantitatively**; exact finite integration retained | Prove (C26), or JMBRA's weighted-reader alternative, on complete mixed groups. Neither a coarse shadow nor a flux label removes an original reader. |
+-| 5: every small return, failed branch and next step | **OPEN** | Construct the extraction and prove (C24), or a compatible (C25) plus nonlinear closure. Handle the localized/coherent complement not covered by the filled-sector charge. |
++| 5: every small return, failed branch and next step | **OPEN** | Construct the extraction and prove (C24), or both creation estimates (C25)–(C25a), with returned sectors and nonlinear closure. Handle the localized/coherent complement not covered by the filled-sector charge. |
+ 
+ Clause 1 retains its finite algebraic PROVEN scope through (C20)–(C21),
+ without a new claim of bounded cell size, analytic domain or locality.
+@@ -550,8 +562,9 @@
+ accounting.** Renewal after charging has not been shown to fail. For
+ the displayed extensive family, the real all-cut comparison is positive
+ evidence for the charging route. The justified change is to retain an
+-original-action reserve, or a creation-conditioned sum (C25), and to
+-match/extract coherent sectors instead of demanding unweighted
++original-action reserve, or uniformly controlled creation and accumulation
++sums (C25)–(C25a), and to match/extract coherent sectors instead of
++demanding unweighted
+ pointwise smoothing. A bare Gaussian expansion at the rough template
+ needs a different treatment by (C16). None of this changes Decision 4.
+ 
+@@ -574,12 +587,19 @@
+ live. No five-route packet PASS or all-route NO-GO is claimed.
+ 
+ **N2, dependencies.** Let J be the mixed complex matched bound (C14),
+-Z the reference nonvanishing/TV requirement, and I invariant extracted
+-iteration. J together with (C26)'s factorization/envelopes can construct
+-the reference logarithm and hence that part of Z. Z alone does not here
+-establish J; their remaining implications are unresolved. I requires
+-J/Z at its successive admitted states; one-step J or Z does not here
+-establish I. No pair is counted as independent obstacles.
++Z the actual base-reference nonvanishing/local-TV requirement, and I
++invariant extracted iteration. J and (C26) control a logarithm only of
++the exact gas they represent, with JMBRA's complete coefficient
++factorization, holomorphic data, fixed selectors and integration
++envelopes. They cannot establish nonvanishing of the base Z_A when
++those matched estimates already divide by Z_A. To prove Z_A nonzero
++by a gas expansion instead requires a separate exact representation
++Z_A=P_A G_A before normalization, a known nonzero prefactor P_A, and
++gas bounds proved without division by the unknown Z_A. Otherwise base
++nonvanishing remains an OPEN antecedent. Mere nonvanishing also does
++not supply the quantitative local-TV bound. Z alone does not here
++establish J. I requires J/Z at successive admitted states; one-step
++J or Z does not establish I. No pair is counted as independent obstacles.
+ 
+ **N3, premises.** The supplied compact model, even compatible tori,
+ filled original tube, disjoint partition and charged plaquette fractions
+@@ -614,8 +634,8 @@
+ then group every original reader with the small returned residual and
+ extract its relevant/marginal part. For sectors with no large charged
+ ancestor, establish nonlinear dilution or a new gap/failed-completion
+-price. A mixed (C14)/(C26) and (C25) estimate could close the problem
+-without a pointwise forward window contraction. The results here leave
++price. Mixed (C14)/(C26) bounds with both (C25) and (C25a) could close
++the problem without a pointwise forward window contraction. The results here leave
+ this route open and give its filled-sector benchmark.
+ 
+ **N8, echo/search.** The named earlier lanes already corrected repeated

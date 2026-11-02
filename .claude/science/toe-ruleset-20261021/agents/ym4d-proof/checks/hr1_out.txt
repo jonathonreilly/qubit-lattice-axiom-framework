@@ -1,0 +1,45 @@
+==============================================================================
+hr1 : MAIN  -- nonabelian pure gauge, G(y) = g^{y1}, Ad_g = quarter turn
+[MAIN] dim=3  T=8  curved=False
+    hr1-D non-flat plaquettes          : 0 of 64
+    hr1-A nonzero entries of E         : 512  (E = d_Z^T d_Z - d^T d)
+    hr1-A witness |E lam|^2            : 4   (lam = standard basis vector #0)
+    hr1-C4 same lam, |(d^T d) lam|^2   : 20
+    hr1-B B1 defect nonzero at         : 0 plaquettes
+    hr1-B B2 defect nonzero at         : 0 (site, direction) pairs
+
+hr1-C1 : CONTROL -- constant gauge G == 1 (E must be 0)
+[C1] dim=3  T=8  curved=False
+    hr1-D non-flat plaquettes          : 0 of 64
+    hr1-A nonzero entries of E         : 0  (E = d_Z^T d_Z - d^T d)
+    hr1-A witness |E lam|^2            : 0   (lam = standard basis vector #None)
+    hr1-C4 same lam, |(d^T d) lam|^2   : 0
+    hr1-B B1 defect nonzero at         : 0 plaquettes
+    hr1-B B2 defect nonzero at         : 0 (site, direction) pairs
+
+hr1-C2 : CONTROL -- abelian, Ad == 1 on a 1-dim algebra (E must be 0)
+[C2] dim=1  T=8  curved=False
+    hr1-D non-flat plaquettes          : 0 of 64
+    hr1-A nonzero entries of E         : 0  (E = d_Z^T d_Z - d^T d)
+    hr1-A witness |E lam|^2            : 0   (lam = standard basis vector #None)
+    hr1-C4 same lam, |(d^T d) lam|^2   : 0
+    hr1-B B1 defect nonzero at         : 0 plaquettes
+    hr1-B B2 defect nonzero at         : 0 (site, direction) pairs
+
+hr1-C3 : CONTROL -- curved background (B1 defect must be NONZERO)
+[C3] dim=3  T=8  curved=True
+    hr1-D non-flat plaquettes          : 2 of 64
+    hr1-A nonzero entries of E         : 520  (E = d_Z^T d_Z - d^T d)
+    hr1-A witness |E lam|^2            : 6   (lam = standard basis vector #0)
+    hr1-C4 same lam, |(d^T d) lam|^2   : 20
+    hr1-B B1 defect nonzero at         : 2 plaquettes
+    hr1-B B2 defect nonzero at         : 2 (site, direction) pairs
+
+==============================================================================
+VERDICTS against checks/hr1_criteria.md
+  hr1-D  : PASS  (flat precondition: 0 non-flat plaquettes in MAIN)
+  hr1-A  : FAIL (route refuted)  (E != 0 at exactly zero curvature)
+  hr1-B  : FAIL (extension does not hold)  (B1 nonzero at 0 plaquettes, B2 at 0 pairs, E nonzero entries 512)
+  hr1-C1 : FIRED  (control fires iff E == 0; got 0 nonzero entries)
+  hr1-C2 : FIRED  (control fires iff E == 0; got 0 nonzero entries)
+  hr1-C3 : FIRED  (control fires iff B1 != 0; got 2 plaquettes)

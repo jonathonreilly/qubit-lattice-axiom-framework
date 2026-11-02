@@ -1,0 +1,57 @@
+{
+  "schema": "ym4d-interrupted-worker-recovery-v1",
+  "captured_utc": "2026-10-30T17:51:55.123306+00:00",
+  "base_commit": "4a7c557cf27910184dc1b3d3ca93998ad465f0b1",
+  "previous_goal_turn": "progress: reviewed integration and live author checkpoint were committed and pushed",
+  "runtime_observation": "collaboration.list_agents at continuation returned only /root; previous author handles are absent, so no live-worker claim is retained",
+  "charged_state": "Author packet declares a frozen 625-line proposal. Receipt source/route/manifest identities checked; chronology and mathematical truth not certified. A different fresh source-first reviewer is required.",
+  "global_state": "Recovered 860-line unfinished source and earlier 79-line route. They are an asynchronous snapshot, not a frozen reviewed unit. Continuation must reconcile the route before final review.",
+  "science_status": "Both full continuum existence and positive physical continuum mass gap remain OPEN. Six critical obligations are unchanged.",
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_DETERMINANT_SIGN_ASTRA.md",
+      "source_worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/ym4d-ds-review-20261030",
+      "sha256": "2ab72d652afbae58cbcd071de2a372d98d5a2826281d43c06ec563e701181170",
+      "lines": 625,
+      "previous_root_sha256": "d9a2c86cdc692c9540d49f5db423c03eb56be0afa75eca3b43af385d51727db1"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/effective-flow--charged-coefficient.md",
+      "source_worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/ym4d-ds-review-20261030",
+      "sha256": "0b539601fa2e91c0c1d59dd781edeea2556a549358501a208186b6f43094efc5",
+      "lines": 79,
+      "previous_root_sha256": "61dac4e4f917597cb18e8268e584386c5b16391e45c4ffcbd011f61e2158b00b"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_determinant_sign_read_manifest.json",
+      "source_worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/ym4d-ds-review-20261030",
+      "sha256": "6b51288892d90c0f40bf33d5c1292e85e5612e85eb9618c9c9686e598717652c",
+      "lines": 69,
+      "previous_root_sha256": null
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_determinant_sign_receipt.json",
+      "source_worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/ym4d-ds-review-20261030",
+      "sha256": "3d837292b644b5488b6b95271f11bf095e55b44a4709a07f6c2970eab8f722ac",
+      "lines": 43,
+      "previous_root_sha256": null
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GLOBAL_RETURN_HISTORY_ASTRA.md",
+      "source_worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/ym4d-global-history-20261030",
+      "sha256": "7f2321e9dc8660b4ebb9e4daf539697e44ca5c88dac3daad943628a841273049",
+      "lines": 860,
+      "previous_root_sha256": "4cbdeae6f57691558ccfe6563aea8f09efb0f6a4fb4d8ead52bd72723ba88770"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/normalized-return--global-history.md",
+      "source_worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/ym4d-global-history-20261030",
+      "sha256": "7c74e0fc9e3c703af4093528ee3ce42743b896a4116813155ee6fe94b2c3a8d2",
+      "lines": 79,
+      "previous_root_sha256": "7c74e0fc9e3c703af4093528ee3ce42743b896a4116813155ee6fe94b2c3a8d2"
+    }
+  ],
+  "scientific_checks_run": false,
+  "author_worktrees_modified": false,
+  "literature_caches_excluded": true
+}

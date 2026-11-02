@@ -1,0 +1,46 @@
+{
+  "schema": "explicit_path_vocab_lint_v1",
+  "created_at_utc": "2026-10-30T16:35:56.574512+00:00",
+  "methodology_commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+  "script": {
+    "path": "scripts/vocab_lint.py",
+    "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c"
+  },
+  "vocabulary": {
+    "path": "docs/repo/controlled_vocabulary.yaml",
+    "sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15"
+  },
+  "invocation": "Direct lint_one_file on each explicit absolute file path, apply_fix=False; CLI collection skipped because it excludes .claude.",
+  "reports": [
+    {
+      "file_sha256": "dc899cfbeeb050985b8d54b30a20466167921f9f5a7fdf62f85f6cc985b69afe",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/retained-conditional-cc799d903f.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "file_sha256": "b86c0e8c62548f537968ebaba7a065eda2a9971ddbc15f3ce425d631e28f079e",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_retained_conditional_cc799d903f_source_findings.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "file_sha256": "19fbab8508d4824dc7c20b3ded5d9ca3308ecb0cf3fd1dc538575b2f10097f4c",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_retained_conditional_cc799d903f_read_manifest.json",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "file_sha256": "d63d8c641312d4215966f805d0be97e7d0c9058de287c1ea9a04a49e9b5e6d08",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_retained_conditional_cc799d903f_provenance_comparison.json",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    }
+  ],
+  "violation_count": 0,
+  "files_unchanged": true
+}

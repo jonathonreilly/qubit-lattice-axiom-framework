@@ -1,0 +1,176 @@
+{
+  "identity_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "revision": null,
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "revision": null,
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "revision": null,
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/reader_local_gaussian_return_read_manifest.json",
+      "revision": null,
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/reader_local_gaussian_return_vocab.json",
+      "revision": null,
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "revision": null,
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "AGENTS.md",
+      "revision": null,
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "/Users/jonBridger/AGENTS.md",
+      "revision": null,
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256_matches": true,
+      "lines_match": true,
+      "bytes_match": true
+    }
+  ],
+  "all_identity_checks_match": true,
+  "displayed_equation_ids": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30"
+  ],
+  "one_of_each_RG1_to_RG30": true,
+  "trailing_whitespace_lines": [],
+  "fence_count": 2,
+  "local_links": [
+    {
+      "target": "POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "resolves": true
+    },
+    {
+      "target": "checks/reader_local_gaussian_return_read_manifest.json",
+      "resolves": true
+    },
+    {
+      "target": "checks/reader_local_gaussian_return_receipt.json",
+      "resolves": true
+    }
+  ],
+  "author_receipt_sha256": "4c10b17f1ef73fb2a7108220d2d73aab08f530f9b559207395976dbc700635d7",
+  "author_read_manifest_sha256": "09891c4538c4c35426704541da0bcf0496c0a43888c8856aee1e9f7e6061310d",
+  "note": "Identity and source hygiene checks only; no numerical experiment or independent attestation of author read/execution claims."
+}

@@ -1,0 +1,13 @@
+{
+  "script": "checks/recovery_uir_02.py",
+  "script_sha256": "b14a9406e00520826d40dfa4b6ed6d34a0a3a7307af053afad4568a444568a29",
+  "started_at_utc": "2026-10-29T11:09:38.708341+00:00",
+  "duration_seconds": 0.026,
+  "python": "3.12.8",
+  "exit_code": 0,
+  "stdout_exact_match": false,
+  "stdout_match_excluding_UTC_line": true,
+  "comparison_rule": "Ignore only lines starting UTC: for the second comparison; preserve full outputs",
+  "stderr_bytes": 0,
+  "scope": "Coordinator same-script replay, not independent mathematical verification"
+}

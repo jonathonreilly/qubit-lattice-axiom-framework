@@ -1,0 +1,164 @@
+{
+  "review_stage": "independent source findings frozen before author-packet inspection",
+  "frozen_at_utc": "2026-10-30T09:56:56.564722+00:00",
+  "requested_review_configuration": "Astra/max, fresh restricted-context hostile review; same-family Codex reviewing Codex; no authenticated backend/model attestation supplied",
+  "methodology_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "methodology_reads": [
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+    "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+    "docs/ai_methodology/skills/review-loop/SKILL.md",
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+    "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md"
+  ],
+  "instruction_reads": [
+    "/Users/jonBridger/AGENTS.md",
+    "/Users/jonBridger/.codex/AGENTS.md",
+    "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/AGENTS.md"
+  ],
+  "author_packet_read": false,
+  "prior_review_read": false,
+  "root_receipt_read": false,
+  "entries": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/QUADRATIC_COARSE_RETURN_ASTRA.md",
+      "sha256": "515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7",
+      "lines": 591,
+      "read_ranges_inclusive": [
+        [
+          1,
+          591
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "lines": 597,
+      "read_ranges_inclusive": [
+        [
+          1,
+          597
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "lines": 617,
+      "read_ranges_inclusive": [
+        [
+          1,
+          320
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "lines": 641,
+      "read_ranges_inclusive": [
+        [
+          40,
+          325
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "read_ranges_inclusive": [
+        [
+          1,
+          592
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "lines": 510,
+      "read_ranges_inclusive": [
+        [
+          1,
+          510
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "lines": 568,
+      "read_ranges_inclusive": [
+        [
+          40,
+          380
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "lines": 556,
+      "read_ranges_inclusive": [
+        [
+          54,
+          120
+        ],
+        [
+          250,
+          385
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+      "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "lines": 247,
+      "read_ranges_inclusive": [
+        [
+          1,
+          205
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "lines": 711,
+      "read_ranges_inclusive": [
+        [
+          40,
+          655
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "lines": 812,
+      "read_ranges_inclusive": [
+        [
+          312,
+          376
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "read_ranges_inclusive": [
+        [
+          1,
+          11
+        ]
+      ]
+    }
+  ],
+  "not_consumed": [
+    "MATCHED_REGIONAL_RATIO_ASTRA.md: SC lines 43-47 expressly excludes that simultaneous-ratio result; QC uses RF/RC directly. No MR result is used."
+  ],
+  "execution": "Read-only text, line counts, hashes and Git object reads only; no scientific numerical run, author script, worker, Git mutation, PR or audit action."
+}

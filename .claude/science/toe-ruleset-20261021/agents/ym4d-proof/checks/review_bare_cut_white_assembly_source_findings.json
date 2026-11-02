@@ -1,0 +1,69 @@
+{
+  "schema": "review-source-findings-freeze-v1",
+  "frozen_utc": "2026-10-30T12:20:43.005561+00:00",
+  "reviewer_task": "/root/review_bare_cut_white_assembly",
+  "target_sha256": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+  "target_lines": 443,
+  "read_manifest_sha256": "caa67d983d6c848a62c3d95c11996648eb98669851ec1c2f0e5349ed5828a09e",
+  "pre_packet": true,
+  "verdict": "PASS WITH BOUNDED CLAIMS \u2014 source-only assembly review",
+  "material_findings": [],
+  "proof_obligation_disposition": "The stated one-bare-step composition and finite real (6,4) jet interface are supported on the explicit common domain and stated supplier/model hypotheses. This is not wholesale certification of every historical dependency, a landing gate, retained status or an audit.",
+  "independent_checks": [
+    {
+      "target_lines": [
+        61,
+        96
+      ],
+      "check": "Re-derived crossing-link pullback U=exp(a)U0(V)=exp(Phi(a))U0(Vbar) with Phi=Log(exp(a)exp(v)); Haar top forms give j(Phi)det D Phi=j(a). Empty-stencil factors restore the identical full transported chart."
+    },
+    {
+      "target_lines": [
+        199,
+        241
+      ],
+      "check": "From cut/fr=exp(Psi), fr/tr=exp(R), Omega/tr=exp(Gamma), derive log(cut/Omega)=Psi+R-Gamma. P_fr/P_epsilon=exp(H_a-H_fr+R), with distinct Haar-inclusive stationary points. Full -d log z_p survives and is assigned -k log z_p per original block."
+    },
+    {
+      "target_lines": [
+        108,
+        197
+      ],
+      "check": "RF16 and CW10 endpoint tests permit one fixed R; white rate 1/(2R)^4 exceeds beta/2. BW6 and H_K/V_K<=256 imply both marked-buffer debits. BW7 gives delta+8eta<=sigma p/2 while preserving HC inequalities. Fixed rho precedes u and cutoff choices."
+    },
+    {
+      "target_lines": [
+        276,
+        344
+      ],
+      "check": "WR15\u201316 makes the actual cut and Q selectors fixed only under the real all-link Haar pullback. WR23a finite real jets and its square-free Taylor class are passed through the actual moving chart core, determinant and normalized density. CW/RF/RC formulas are canonical in actual V, so subtracting Gamma is legitimate without differentiating HC center selectors."
+    },
+    {
+      "target_lines": [
+        308,
+        379
+      ],
+      "check": "Independently apply ordered group composition exp(t_m B_m)...exp(t_1 B_1)V and independent source parameters. Each parameter is differentiated once, so no extra m!n! occurs. J=u epsilon with u,kappa,kernels fixed. Counts 4D|Y| and 6L^4|Y|, maximum reader power ten, and sup t^j exp(-s t) give BW19 with s=beta/8, leaving 3beta/8. All sixteen labelled source subsets have no source factorial."
+    },
+    {
+      "target_lines": [
+        381,
+        421
+      ],
+      "check": "eta=min(d_eta sqrt(c_q)sigma p_a/(4K+1)^2,sigma p/32) gives h/eta\u21920 for h=O(sigma), alpha>5/2 and p\u2192infinity. r_*/u stays bounded. sigma p^3\u21920, sigma^2\u21920 and both tails vanish. C_d is absorbed into half the compact exponent. B<=beta/128 implies exp(B)B<=beta/64 and the two beta/16 losses leave beta/4."
+    },
+    {
+      "target_lines": [
+        243,
+        438
+      ],
+      "check": "O(sigma p^3) comes from J_p and is not rare. No J_p/H_a cancellation is used. Source normalization cancels only the scalar cutoff singleton automatically. The source expressly leaves native REALRGA rates, retained-fine jets, white-ball/Ward/slice matching, effective histories/iteration, coupling flow, continuum existence and physical continuum mass gap open."
+    }
+  ],
+  "checks_not_run": [
+    "scientific numerical runs",
+    "full-repository pipeline or landing gates",
+    "audit worker or verdict application"
+  ],
+  "no_go_scope": "No obstruction or exhaustiveness theorem asserted by this review; the open interfaces are scope limits."
+}

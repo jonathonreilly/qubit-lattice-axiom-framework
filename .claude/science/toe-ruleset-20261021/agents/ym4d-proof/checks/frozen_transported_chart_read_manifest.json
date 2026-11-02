@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "unit": "frozen_transported_chart",
+  "source_freeze": {
+    "path": "FROZEN_TRANSPORTED_CHART_ASTRA.md",
+    "lines": 787,
+    "sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8"
+  },
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "methodology_reads_retained_from_same_author_task": [
+    "AGENTS.md",
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+    "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+    "docs/ai_methodology/skills/physics-loop/SKILL.md",
+    "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+    "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+    "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+    "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+    "docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+    "docs/audit/data/axiom_premise_nodes.json"
+  ],
+  "local_sources": [
+    {
+      "path": "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "lines": 597,
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "consumed_read_ranges": [
+        [
+          1,
+          597
+        ]
+      ],
+      "role": "Retained complete same-task read: actual model, physical q-good logarithms and compact-width limits."
+    },
+    {
+      "path": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "lines": 592,
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "consumed_read_ranges": [
+        [
+          1,
+          592
+        ]
+      ],
+      "role": "Retained complete read, with fresh sections 1–6 reread: actual local library, principal core, force contraction, canonical readers and both tails."
+    },
+    {
+      "path": "REGIONAL_CHART_RETURN_ASTRA.md",
+      "lines": 510,
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "consumed_read_ranges": [
+        [
+          1,
+          510
+        ]
+      ],
+      "role": "Retained complete read, with fresh middle sections reread: actual transported fibre, normalization, regional majorants and contour restrictions."
+    },
+    {
+      "path": "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "lines": 711,
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "consumed_read_ranges": [
+        [
+          1,
+          711
+        ]
+      ],
+      "role": "Retained complete read, with fresh sections 2–11 reread: exact flagged expansion, normalized density jets and positive connected sums."
+    },
+    {
+      "path": "NONLINEAR_READER_RETURN_ASTRA.md",
+      "lines": 713,
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "consumed_read_ranges": [
+        [
+          1,
+          713
+        ]
+      ],
+      "role": "Retained complete same-task read: loop/chain expansion, scalar factorials, reader regrouping and logarithm."
+    },
+    {
+      "path": "NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "lines": 624,
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "consumed_read_ranges": [
+        [
+          75,
+          303
+        ]
+      ],
+      "role": "Consumed Taylor/Mayer and parity formulas; fresh NC12–NC16 reread; not a complete-source read claim."
+    },
+    {
+      "path": "COMPACT_RETURN_GLUING_ASTRA.md",
+      "lines": 644,
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "consumed_read_ranges": [
+        [
+          543,
+          644
+        ]
+      ],
+      "role": "Fresh complete read of this consumed range: CG32–CG33 Delta_chart and explicit connected/hard-domain gaps; earlier overview output had a truncated middle."
+    },
+    {
+      "path": "QUADRATIC_COARSE_RETURN_ASTRA.md",
+      "lines": 591,
+      "sha256": "515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7",
+      "consumed_read_ranges": [
+        [
+          180,
+          355
+        ]
+      ],
+      "role": "Fresh consumed range and section index: transported-coordinate phase comparison and proposed larger compact tube. No QC theorem is a premise."
+    },
+    {
+      "path": "PROCESS_LIGHT.md",
+      "lines": 11,
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "consumed_read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "role": "Fresh complete read; source-first freeze and different hostile review requirements."
+    }
+  ],
+  "primary_literature": [
+    {
+      "url": "https://arxiv.org/html/1411.1107v1",
+      "read_scope": "Fresh introduction, section 2.1.4 and Remark 2; prior same-task Proposition 3/Remark 10 excerpts retained.",
+      "mapping": "Single-scale boson/spin model; site-product cutoff and normal initial covariance assumptions. Attribution/comparison only; actual nonlinear current and density-only estimates rebuilt."
+    },
+    {
+      "url": "https://arxiv.org/html/1212.5562v2#S3.SS13",
+      "read_scope": "Fresh introduction and section 3.13/Lemma 3.15 excerpt; prior same-task section 3.14 excerpt retained.",
+      "mapping": "Scalar phi-four in d=3; localization before cluster logarithm is an architectural analogy, not an imported gauge-model theorem."
+    },
+    {
+      "url": "https://doi.org/10.1007/BF01238433",
+      "read_scope": "Earlier same-task publisher abstract/bibliography only; full text not recovered.",
+      "mapping": "Balaban attribution and four-dimensional pure-gauge UV-stability scope only; no uninspected estimate used."
+    }
+  ],
+  "review_labels_are_premises": false,
+  "science_numerical_runs": []
+}

@@ -1,0 +1,27 @@
+{
+  "started_utc": "2026-10-29T16:34:41.408910+00:00",
+  "finished_utc": "2026-10-29T16:34:42.081387+00:00",
+  "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact.py",
+  "script_sha256": "6d43cdcb8a8067d02ca8279879e83b2812f6ac6741ee1e21ae31b9ad355ddbdd",
+  "execution": "Byte-identical script copied into an isolated temporary directory to preserve author result files",
+  "command_argv": [
+    "/usr/local/bin/python3",
+    "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym4d-frozen-author-replay-oqwevvpe/source_history_return_exact.py"
+  ],
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "exit_code": 0,
+  "console_stdout": "{\n  \"schema\": \"source-history-author-exact-v1\",\n  \"claim_scope\": \"Finite rational fixture and formal graph checks; not a proof of YM sea averaging or physical mass gap\",\n  \"checks\": {\n    \"all_local_zero_source_denominators_positive\": true,\n    \"collections_biject_bad_sets\": true,\n    \"disjoint_collars_for_compatible_components\": true,\n    \"direct_raw_sum_equals_compensated_return\": true,\n    \"all_failure_history_integrals_match\": true,\n    \"failure_histories_partition_full_raw_integral\": true,\n    \"zero_mass_histories_retained_as_zero\": true,\n    \"joint_hard_history_replacement_matches\": true,\n    \"merging_overlapping_replacements_preserves_selector\": true,\n    \"zero_complex_history_numerator_allowed\": true,\n    \"density_factor_allocation_covers_once\": true,\n    \"source_stencils_inside_actual_collars\": true,\n    \"remote_original_source_does_not_enter_activity\": true,\n    \"local_original_source_is_retained\": true,\n    \"log_gas_matches_connected_graphs_through_degree_four\": true,\n    \"all_cluster_unions_connected\": true,\n    \"remote_source_connector_coefficient\": true,\n    \"boundary_cluster_cancellation_exact\": true,\n    \"crossing_clusters_meet_inner_boundary\": true,\n    \"explicit_root_threshold_nonempty\": true,\n    \"geometric_animal_majorant_matches_partial_sum\": true\n  },\n  \"negative_controls\": {\n    \"remove_compensator_rejected\": true,\n    \"wrong_frozen_boundary_reference_rejected\": true,\n    \"drop_local_kernel_normalizer_rejected\": true,\n    \"drop_external_source_only_factor_rejected\": true,\n    \"drop_reference_vacuum_factor_rejected\": true,\n    \"dropping_failure_complement_rejected\": true,\n    \"read_history_on_sea_instead_of_replaced_links_rejected\": true,\n    \"correlated_history_replaced_by_product_event_rejected\": true,\n    \"overlapping_unmerged_collar_selector_control\": true,\n    \"drop_remote_connector_rejected\": true,\n    \"drop_boundary_polymers_rejected\": true\n  },\n  \"counts\": {\n    \"checks\": 21,\n    \"negative_controls\": 11\n  },\n  \"states\": 256,\n  \"sea_states\": 16,\n  \"compatible_collections\": 16,\n  \"raw_integral_exact_digest\": \"ef2307f4a5ad1f8732ade4892775e2d2b726abf0b61d23dc949cce257be3d169\",\n  \"history_integral_exact_digest\": \"328d88015c35f7d299f230712294ad508caa35d381c6a45ddcad86b8d7689b97\",\n  \"source_sha256\": \"6d43cdcb8a8067d02ca8279879e83b2812f6ac6741ee1e21ae31b9ad355ddbdd\",\n  \"elapsed_seconds\": 0.6378712910227478,\n  \"all_pass\": true\n}\n",
+  "stderr_bytes": 0,
+  "output_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_history_exact_author_replay_out.json",
+  "output_sha256": "01fda1fc61e7016457fbaf0c53315b49943fa79e4042eb1d05c8c2d7d100c3f8",
+  "expected_output": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact_attempt04.json",
+  "expected_sha256": "3d0527cf7e6e93d366331268a56ef097c5a21e839827f3a5221fdd4425842e61",
+  "identical_except_elapsed_seconds": true,
+  "ignored_comparison_fields": [
+    "elapsed_seconds"
+  ],
+  "counts": {
+    "checks": 21,
+    "negative_controls": 11
+  }
+}

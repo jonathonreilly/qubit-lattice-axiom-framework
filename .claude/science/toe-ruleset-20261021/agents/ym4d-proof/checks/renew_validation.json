@@ -1,0 +1,56 @@
+{
+  "recorded_utc": "2026-10-30T05:38:04.187135+00:00",
+  "stage": "final reviewed partial research",
+  "scientific_target": "OPEN: actual matched LF-JMBR renewal",
+  "review_scope": "same-family fresh-context review; two author-flagged omissions independently checked and fixed; not blind/cross-family or formal retained audit",
+  "checks": {
+    "all_recorded_sources_unchanged": true,
+    "head_and_main_refs_unchanged": true,
+    "only_permitted_worktree_paths": true,
+    "text_hygiene_clear": true,
+    "relative_markdown_links_resolve": true,
+    "reviewed_note_identity_matches": true,
+    "review_final_line_land": true,
+    "recovery_patch_matches_exact_changes": true,
+    "submitted_snapshot_identity_matches": true
+  },
+  "changed_source_hashes": [],
+  "additional_source": {
+    "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+    "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5"
+  },
+  "unexpected_worktree_changes": [],
+  "whitespace_or_conflict_markers": [],
+  "broken_relative_markdown_links": [],
+  "validation_corrections": [
+    "Initial link checker treated checks/renew_review_base.md as a standalone document. It is a byte-identical recovery snapshot; its links are now resolved relative to the original lane directory. Snapshot bytes were not changed."
+  ],
+  "numerical_experiments": "not run: required nice priority denied",
+  "git_status": [
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/RENEW.md",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/RENEW_LOG.md",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/RENEW/AUTHOR.md",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/RENEW/REVIEW.md",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_criteria.md",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_review.md",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_review_base.json",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_review_base.md",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_review_fixes.json",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_review_fixes.patch",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_searches.txt",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_sources.json",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_validation.json"
+  ],
+  "checked_artifacts": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RENEW.md": "42b4d2a16625d4af4f6443a38ff92d63a483485816c4533292b44f867fc978a7",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RENEW_LOG.md": "c28467560fdb57a1344b3ac7744a0c4e9900d53c9c3d75bd3c1bdccd93fc4650",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_criteria.md": "4175dfa3db5ea8682e8fc3a314ad180d5ba1aa7524dc69d4e6f608d0b4ba3360",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_review.md": "5bf599702acb9f4ba90e02a84fff31907aa1d297edb06deb76c3021f16ed3cf3",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_review_base.json": "9c99bea948a7c78f85c2d4fd3280887b5ecf6681710a311a20fa52ebbfc37794",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_review_base.md": "d7829aa7030e1f52b6c9b9851110a7cc8fba9d615d3eb7c19063977a36dd0366",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_review_fixes.json": "b4b3a30789d9debfacb78df2e03812e013dcfac59788fdef949a78a2624c8829",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_review_fixes.patch": "9a4c99ec16b4a8ddb15342fa885624f3389f31da78d60f3a21065046c3624a71",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_searches.txt": "0ada39baaaeaf9e9a2d52b8d2c35c12843eecbc8f33cf8a201099c85d139efeb",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/renew_sources.json": "c1dc9bb854825bb7c416e9e54995c53d50293fabd7c299c6cc57663df90b9f05"
+  }
+}

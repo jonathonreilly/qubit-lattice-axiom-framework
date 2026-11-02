@@ -1,0 +1,42 @@
+f8 start 2026-10-28 04:36:21 UTC, L=3, kappa=1.0
+=== Part A: exact identities (dense) ===
+(d,T,n)=(2,3,1) f=0.00 dimS=90 k=8: |MJ-D|=4.4e-16 |HJ|=2.2e-16 minA=1.000e+00 | LHS=53.9462449512 LHS-LHS'=0.0e+00 LHS-LHS''=7.1e-15 | RHS-LHS=7.1e-15 ker(max 7.7e-16, next 1.2e-01) | Pi rel 4.0e-16
+(d,T,n)=(2,3,1) f=0.03 dimS=90 k=8: |MJ-D|=2.2e-16 |HJ|=2.4e-16 minA=9.973e-01 | LHS=53.9354150305 LHS-LHS'=-1.4e-14 LHS-LHS''=0.0e+00 | RHS-LHS=7.1e-15 ker(max 8.0e-16, next 1.2e-01) | Pi rel 6.0e-16 | ctl |dLHS|=1.583e-03 (FAILS as required)
+(d,T,n)=(2,3,1) f=0.07 dimS=90 k=8: |MJ-D|=4.4e-16 |HJ|=1.2e-16 minA=9.853e-01 | LHS=53.8874676811 LHS-LHS'=7.1e-15 LHS-LHS''=1.4e-14 | RHS-LHS=-7.1e-15 ker(max 1.0e-15, next 1.2e-01) | Pi rel 6.1e-16
+  case time 0.0 s
+(d,T,n)=(2,3,2) f=0.00 dimS=738 k=8: |MJ-D|=7.8e-16 |HJ|=5.2e-17 minA=1.680e-01 | LHS=440.4111486891 LHS-LHS'=0.0e+00 LHS-LHS''=0.0e+00 | RHS-LHS=5.7e-14 ker(max 2.1e-15, next 2.1e-02) | Pi rel 4.5e-16
+(d,T,n)=(2,3,2) f=0.03 dimS=738 k=8: |MJ-D|=6.7e-16 |HJ|=7.3e-17 minA=1.600e-01 | LHS=440.5388984190 LHS-LHS'=5.7e-14 LHS-LHS''=0.0e+00 | RHS-LHS=-1.1e-13 ker(max 1.8e-15, next 2.0e-02) | Pi rel 6.6e-16 | ctl |dLHS|=8.119e-01 (FAILS as required)
+(d,T,n)=(2,3,2) f=0.07 dimS=738 k=8: |MJ-D|=1.8e-15 |HJ|=7.4e-17 minA=1.296e-02 | LHS=449.6249274333 LHS-LHS'=0.0e+00 LHS-LHS''=-1.1e-13 | RHS-LHS=5.7e-13 ker(max 1.8e-15, next 1.6e-03) | Pi rel 6.2e-16
+  A4 (d,T,n)=(2,3,2): f^2 coeff per fine site: full C_n 5.2902585939e-02, C' 5.2902585941e-02 (rel 3.9e-11); info: 1/2 logdet C_n alone 7.345582e-01, 1/2 logdet_S(H+M^T C^-1 M) alone -6.816556e-01
+  case time 0.4 s
+(d,T,n)=(3,3,1) f=0.00 dimS=1485 k=26: |MJ-D|=8.9e-16 |HJ|=6.1e-16 minA=3.333e-01 | LHS=1231.0360354452 LHS-LHS'=0.0e+00 LHS-LHS''=4.5e-13 | RHS-LHS=0.0e+00 ker(max 2.3e-15, next 2.8e-02) | Pi rel 8.2e-16
+(d,T,n)=(3,3,1) f=0.03 dimS=1485 k=26: |MJ-D|=8.9e-16 |HJ|=9.1e-16 minA=3.324e-01 | LHS=1230.9639595500 LHS-LHS'=0.0e+00 LHS-LHS''=0.0e+00 | RHS-LHS=0.0e+00 ker(max 3.0e-15, next 2.8e-02) | Pi rel 9.8e-16 | ctl |dLHS|=4.412e-03 (FAILS as required)
+(d,T,n)=(3,3,1) f=0.07 dimS=1485 k=26: |MJ-D|=8.9e-16 |HJ|=7.6e-16 minA=3.284e-01 | LHS=1230.6444848093 LHS-LHS'=0.0e+00 LHS-LHS''=-2.3e-13 | RHS-LHS=0.0e+00 ker(max 3.7e-15, next 2.8e-02) | Pi rel 9.8e-16
+  case time 1.6 s
+(d,T,n)=(4,2,1) f=0.00 dimS=3904 k=15: |MJ-D|=1.6e-15 |HJ|=1.2e-15 minA=1.111e-01 | LHS=3888.4811728620 LHS-LHS'=0.0e+00 LHS-LHS''=0.0e+00 | RHS-LHS=4.5e-13 ker(max 2.0e-15, next 6.9e-03) | Pi rel 1.0e-15
+(d,T,n)=(4,2,1) f=0.03 dimS=3904 k=15: |MJ-D|=1.3e-15 |HJ|=1.0e-15 minA=1.108e-01 | LHS=3888.3631853578 LHS-LHS'=0.0e+00 LHS-LHS''=-4.5e-13 | RHS-LHS=4.5e-13 ker(max 3.1e-15, next 6.9e-03) | Pi rel 1.2e-15 | ctl |dLHS|=2.120e-03 (FAILS as required)
+(d,T,n)=(4,2,1) f=0.07 dimS=3904 k=15: |MJ-D|=1.3e-15 |HJ|=1.8e-15 minA=1.095e-01 | LHS=3887.8392515577 LHS-LHS'=4.5e-13 LHS-LHS''=0.0e+00 | RHS-LHS=4.5e-13 ker(max 2.7e-15, next 6.8e-03) | Pi rel 1.3e-15
+  A4 (d,T,n)=(4,2,1): f^2 coeff per fine site: full C_n -1.0117123752e-01, C' -1.0117123752e-01 (rel 2.9e-12); info: 1/2 logdet C_n alone 3.703704e-02, 1/2 logdet_S(H+M^T C^-1 M) alone -1.382083e-01
+  case time 30.6 s
+(A0) PASS
+(A1) PASS
+(A2) PASS
+(A3) PASS
+(A4) PASS
+(A-ctl) FAILS as required (A1 informative)
+Part A done at 32.5 s
+=== Part B: chain on level-n links (d = 4) ===
+T=2 n=1: perp eigenvalues in [0.999999999999999, 1.000000000000002] pred 1.000000000000000 rel 2.0e-15 | <v,Cv>/(n|v|^2)=1.000000 | lam_max(C_G^flat)=1.000000 lam_max(PG C PG)=1.000000 | 0.0 s
+T=2 n=2: perp eigenvalues in [1.105203300221576, 2.396552895970530] pred 1.111111111111111 rel 1.2e+00 | <v,Cv>/(n|v|^2)=1.765432 | lam_max(C_G^flat)=4.646573 lam_max(PG C PG)=4.666667 | 0.0 s
+T=2 n=3: perp eigenvalues in [1.118198832138407, 3.523671536943910] pred 1.123456790123457 rel 2.1e+00 | <v,Cv>/(n|v|^2)=2.166692 | lam_max(C_G^flat)=8.830148 lam_max(PG C PG)=9.166133 | 1.0 s
+T=3 n=1: perp eigenvalues in [0.999999999999998, 1.000000000000005] pred 1.000000000000000 rel 4.7e-15 | <v,Cv>/(n|v|^2)=1.000000 | lam_max(C_G^flat)=1.000000 lam_max(PG C PG)=1.000000 | 0.0 s
+T=3 n=2: perp eigenvalues in [1.106680252943959, 2.075192449755679] pred 1.111111111111111 rel 8.7e-01 | <v,Cv>/(n|v|^2)=1.604938 | lam_max(C_G^flat)=3.764167 lam_max(PG C PG)=3.777778 | 0.1 s
+(B1) FAIL
+(B2) PASS
+(B3) lam_G(n=1,2,3) = 1.000000, 4.646573, 8.830148; r_G = 1.1473: PASS
+n=1: c_perp=2.8356480152e-02 (half-step 2.8356481398e-02, rel 4.4e-08); info: c_full(1/2 logdet C_n)=3.703704e-02; perp spectrum at f=0.05 L^-2n: [1.000000, 1.000093] | 0.0 s
+n=2: c_perp=1.9563443562e-02 (half-step 1.9563445730e-02, rel 1.1e-07); info: c_full(1/2 logdet C_n)=1.951108e-02; perp spectrum at f=0.05 L^-2n: [1.105205, 2.396537] | 0.1 s
+n=3: c_perp=1.7990861434e-02 (half-step 1.7990863663e-02, rel 1.2e-07); info: c_full(1/2 logdet C_n)=1.706709e-02; perp spectrum at f=0.05 L^-2n: [1.118200, 3.523594] | 4.9 s
+(B4) c_perp(1,2,3) = 2.835648e-02, 1.956344e-02, 1.799086e-02; increment ratio 0.1788: PASS
+     info: c_full(1,2,3) = 3.703704e-02, 1.951108e-02, 1.706709e-02
+total 38.7 s

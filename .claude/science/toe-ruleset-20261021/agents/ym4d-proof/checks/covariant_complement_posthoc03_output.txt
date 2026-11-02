@@ -1,0 +1,40 @@
+{
+  "posthoc": true,
+  "u": 40.0,
+  "widths": [
+    0.00375,
+    0.001875,
+    0.0009375
+  ],
+  "raw_shell_integrals": [
+    4.466267406622112e-11,
+    2.2019042142622198e-11,
+    1.0970664566202367e-11
+  ],
+  "angular_integrals": [
+    4.466267406622247e-11,
+    2.2019042142622864e-11,
+    1.0970664566202699e-11
+  ],
+  "ratios": [
+    2.0283658924366974,
+    2.0070837103576094
+  ],
+  "predicates": [
+    {
+      "name": "full_Haar_angular_comparison",
+      "passed": true
+    },
+    {
+      "name": "narrow_ratio_0",
+      "passed": true
+    },
+    {
+      "name": "narrow_ratio_1",
+      "passed": true
+    }
+  ],
+  "passed": 3,
+  "total": 3,
+  "interpretation": "Supports narrower-shell limiting mechanism; does not replace original 23/24 result"
+}

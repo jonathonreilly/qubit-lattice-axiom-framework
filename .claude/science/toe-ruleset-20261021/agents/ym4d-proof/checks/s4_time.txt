@@ -1,0 +1,20 @@
+lock acquired 05:25:24 load { 5.87 3.72 3.19 }
+        7.52 real         7.14 user         0.11 sys
+           257032192  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22305  page reclaims
+                 575  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 677  voluntary context switches
+                4314  involuntary context switches
+        137135672298  instructions retired
+         28370120055  cycles elapsed
+           256312016  peak memory footprint
+exit 0 released 05:25:32

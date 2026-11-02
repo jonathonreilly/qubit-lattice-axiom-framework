@@ -1,0 +1,85 @@
+{
+  "artifacts": [
+    {
+      "bytes": 11378,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_TARGET_ASTRA.md",
+      "sha256": "f45ff76218702ed8c47c6da92b9b149eb9c7a938c27a563b078dae210387c4d6"
+    },
+    {
+      "bytes": 2828,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_target_01.py",
+      "sha256": "4ad548538f9d1edd9069a1aebd4bb0f68ca446ec300fd43177f6bfb54a052885"
+    },
+    {
+      "bytes": 0,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_target_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1546,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_target_01_out.json",
+      "sha256": "ccf41ac389b761d961602d136dcfdfc536a44c3423c54c6c2b0d829fb32b4d3f"
+    },
+    {
+      "bytes": 1116,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_target_02.py",
+      "sha256": "93e579ce31a4232ad8343e908180f6bfbbf0c22e6d09a931695571aa7166d7b8"
+    },
+    {
+      "bytes": 0,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_target_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 619,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_target_02_out.json",
+      "sha256": "01ff4f997dae725994c6d4eed108e30a2b9a245e8c87f1c80f2754ae36840870"
+    },
+    {
+      "bytes": 2582,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_target_criteria.md",
+      "sha256": "ab7647cd24d0e93bd07eeedda8fe566b1717e491d6db2ee286b43abfac3d4973"
+    },
+    {
+      "bytes": 768,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_target_external_fetch_diagnostic.json",
+      "sha256": "9cd07d0a649b7b89372742e5e546faa91503c3a98fce794b25c01e202d8554e6"
+    },
+    {
+      "bytes": 1236,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_target_external_sources.json",
+      "sha256": "1d5a6dfb3615937b0a2c93c16f33d205ac1d20f719b6dd4468b8fa9a925f5a89"
+    },
+    {
+      "bytes": 2231,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_target_fix.diff",
+      "sha256": "83bba48c7a1fdc0e173bb2c0ecbc9c2b064bced3cc871507cbee86de7bec22ed"
+    },
+    {
+      "bytes": 1873,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_target_source_manifest.json",
+      "sha256": "a63a49e6924a70962f7853d600d81421a877bc3c1dacde10e2f59f9fe8af1fdd"
+    }
+  ],
+  "confirmed_source_commit": null,
+  "confirmed_source_sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b",
+  "controls": [
+    {
+      "failure": "Preserved structural SymPy equality test error, not a mathematical counterexample.",
+      "passed": 15,
+      "script": "review_massgap_target_01.py",
+      "total": 16
+    },
+    {
+      "passed": 4,
+      "scope": "Exact polynomial diagnostic confirms intended identity and reproduces original implementation failure.",
+      "script": "review_massgap_target_02.py",
+      "total": 4
+    }
+  ],
+  "disposition": "Spectral criterion and scope controls confirmed; original onset ambiguity fixed by coordinator and confirmed in same reviewer context. No actual infrared estimate or theorem completion.",
+  "frozen_utc": "2026-10-29T14:36:13.652134+00:00",
+  "original_source_commit": "9761471ab46e659ce856e2b9c7c10fef2b06cf5c",
+  "original_source_sha256": "d721bd77d36e6f96a1ce408c57d333776e17058a453b8c887ec0daf9f067cedf",
+  "schema": "independent-review-freeze-receipt-v1"
+}

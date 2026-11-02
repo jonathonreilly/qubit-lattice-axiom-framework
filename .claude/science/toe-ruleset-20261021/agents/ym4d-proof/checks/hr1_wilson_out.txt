@@ -1,0 +1,33 @@
+==============================================================================
+hr1-A'/A'' MAIN  -- nonabelian pure gauge, G(y) = g^{y1}, Ad_g = quarter turn
+[MAIN] dim=3 T=8
+    hr1-D' non-flat plaquettes              : 0 of 64
+    hr1-A' nonzero entries of E_W (1-forms) : 1536
+    hr1-A' witness |E_W u|^2                : 8  (u = basis 1-form #3)
+    hr1-C4' same u, |(d^*d) u|^2            : 10
+    hr1-A'' nonzero entries of E_H          : 1024
+
+hr1-C1' CONTROL -- constant gauge (E_W and E_H must both be 0)
+[C1'] dim=3 T=8
+    hr1-D' non-flat plaquettes              : 0 of 64
+    hr1-A' nonzero entries of E_W (1-forms) : 0
+    hr1-A' witness |E_W u|^2                : 0  (u = basis 1-form #0)
+    hr1-C4' same u, |(d^*d) u|^2            : 10
+    hr1-A'' nonzero entries of E_H          : 0
+
+hr1-C2' CONTROL -- abelian, Ad == 1 (E_W and E_H must both be 0)
+[C2'] dim=1 T=8
+    hr1-D' non-flat plaquettes              : 0 of 64
+    hr1-A' nonzero entries of E_W (1-forms) : 0
+    hr1-A' witness |E_W u|^2                : 0  (u = basis 1-form #0)
+    hr1-C4' same u, |(d^*d) u|^2            : 10
+    hr1-A'' nonzero entries of E_H          : 0
+
+==============================================================================
+VERDICTS against the AMENDMENT in checks/hr1_criteria.md
+  hr1-D'  : PASS (0 non-flat plaquettes)
+  hr1-A'  : FAIL (route refuted)  (E_W != 0 at exactly zero curvature; witness 8 vs flat 10)
+  hr1-A'' : FAIL (route refuted)  (E_H != 0)
+  hr1-C1' : FIRED (E_W=0, E_H=0)
+  hr1-C2' : FIRED (E_W=0, E_H=0)
+  hr1-C4' : FIRED (|(d^*d)u|^2 = 10 > 0 required)

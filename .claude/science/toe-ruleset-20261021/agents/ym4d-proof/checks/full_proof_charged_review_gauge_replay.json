@@ -1,0 +1,39 @@
+{
+  "label": "gauge",
+  "command": [
+    "nice",
+    "-n",
+    "10",
+    "/usr/local/bin/python3",
+    "-B",
+    "review_charged_jet_gauge.py"
+  ],
+  "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-charged-review-replay-hiyae0zp/gauge",
+  "copied_scripts": {
+    "review_charged_jet_gauge.py": "b33b9e10f7087a94c5e2ebb6b208c7cc1f9866895f4587f9761538f1ece68878",
+    "review_charged_jet_independent.py": "96a60bc9d11ca59c01fc480b59dab6aa9378ee3525043805cd9fd2928894117e"
+  },
+  "environment_overrides": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "wall_seconds": 0.630895915965084,
+  "excluded_top_level_fields": [],
+  "exact_non_time_json_match": true,
+  "passed": 10,
+  "total": 10,
+  "stdout": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_gauge_out.json",
+    "sha256": "5118ad71a0a151ac3f3fc1554f2a8fd57b7750c5dbed95b7deb1fe4e16950296"
+  },
+  "stderr": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_gauge_err.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "reference": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_gauge_01_out.json",
+    "sha256": "5118ad71a0a151ac3f3fc1554f2a8fd57b7750c5dbed95b7deb1fe4e16950296"
+  }
+}

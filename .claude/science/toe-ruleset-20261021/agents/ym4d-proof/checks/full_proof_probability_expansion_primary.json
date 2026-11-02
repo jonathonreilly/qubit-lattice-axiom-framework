@@ -1,0 +1,66 @@
+{
+  "schema": "bounded-primary-read-record-v1",
+  "recorded_utc": "2026-10-30T00:38:43.746604+00:00",
+  "reader": "/root",
+  "record_type": "research coverage; no theorem import or independent mathematical acceptance",
+  "project_revision_before_addition": "3bba91875672becadc0ab120204905d9f1f405a8",
+  "primary_sources": [
+    {
+      "bridge": "B41",
+      "author": "Martin Lohmann",
+      "title": "Single Scale Cluster Expansions with Applications to Many Boson and Unbounded Spin Systems",
+      "version": "1411.1107v1",
+      "metadata_url": "https://arxiv.org/abs/1411.1107",
+      "text_url": "https://arxiv.org/html/1411.1107v1",
+      "metadata_read": true,
+      "contiguous_html_line_ranges_read": [
+        [
+          49,
+          248
+        ],
+        [
+          311,
+          390
+        ],
+        [
+          795,
+          987
+        ]
+      ],
+      "additional_read": "Find-result fragments at Remark 6 (476–482), 1403–1448 and 1471–1535; not complete surrounding sections.",
+      "full_paper_read": false,
+      "properties_1_to_3_and_all_norm_hypotheses_reverified": false,
+      "pdf_downloaded": false,
+      "remote_binary_hash": null,
+      "local_theorem_import": false
+    },
+    {
+      "authors": [
+        "Abdelmalek Abdesselam",
+        "Aldo Procacci",
+        "Benedetto Scoppola"
+      ],
+      "title": "Clustering Bounds on N-Point Correlations for Unbounded Spin Systems",
+      "version": "0901.4756v1",
+      "url": "https://arxiv.org/abs/0901.4756",
+      "coverage": "official abstract and metadata only",
+      "theorem_text_read": false,
+      "local_theorem_import": false
+    }
+  ],
+  "preserved_retrieval_failure": {
+    "url": "https://arxiv.org/html/1411.1107v3",
+    "result": "404; guessed version before metadata inspection",
+    "resolution": "Official metadata selected v1. No v3 content or full-paper read is claimed."
+  },
+  "application_status": "The chart-local expectation theorem does not yet produce analytic source-local return activities. A separate author is rebuilding that interface; outside-chart probabilities are a different active task. Both full physical targets remain OPEN.",
+  "register_hashes_before": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md": "5c2420890b048b51a6cdb37623076f5e82a43a7552c99a37b6742fe01844981b",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md": "83917902d0cd82e1d73dbda9f29f79c7b8c224d5345827a0dc7c890bc94bb03d"
+  },
+  "register_hashes_after": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md": "98b9a3bb4b2608641322fd4b5d1c865ea5f3d4e5fdaf769c2d3e45293cc912bd",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md": "9f3227bbfb945c3fb0f63ae2c7b81aa40ed11effd8beda1d590e382cf90eea38"
+  },
+  "historical_evidence_policy": "Frozen IC, GC and predecessor input pins remain bound to the historical register versions. This addition does not restamp their receipts or alter their mathematical premises."
+}

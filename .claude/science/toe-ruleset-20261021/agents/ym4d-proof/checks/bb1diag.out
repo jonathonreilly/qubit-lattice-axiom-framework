@@ -1,0 +1,5 @@
+c37 path (complex64 hats, float32 kernel): Z_row = 2.848907, Z_col = 156.078934
+  same kernel, column sums accumulated in float64: 156.686796
+bb1 path (complex128 hats, float64 kernel): Z_row = 2.848902, Z_col = 156.686797
+complex128 solves, hats cast to complex64, float32 kernel: Z_col = 156.078934
+diag: post-hoc

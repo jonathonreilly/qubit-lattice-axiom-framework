@@ -1,0 +1,5 @@
+D T=4 S_W: N3 mass by shell max(|R2|,|R3|) = 0.0000, 3.0000, 0.0000; total 3.0000  (1 s, RSS 176 MB)
+D T=4 E_1^br: N3 mass by shell max(|R2|,|R3|) = 0.0000, 1.4734, 1.9071; total 3.3804  (19 s, RSS 212 MB)
+D T=5 S_W: N3 mass by shell max(|R2|,|R3|) = 0.0000, 3.0000, 0.0000; total 3.0000  (21 s, RSS 621 MB)
+D T=5 E_1^br: N3 mass by shell max(|R2|,|R3|) = 0.0000, 1.4103, 2.7765; total 4.1868  (95 s, RSS 828 MB)
+D: post-hoc diagnostic

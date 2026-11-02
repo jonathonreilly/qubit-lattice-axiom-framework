@@ -1,0 +1,88 @@
+{
+  "kind": "final source and artifact identity bookkeeping; not mathematical or numerical test evidence",
+  "utc": "2026-10-29T20:43:52.836748+00:00",
+  "head": "fcdd32c83bc5aed08ef4f3aa5da512e668d8b216",
+  "origin_main": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "sources": [
+    {
+      "path": "briefs_lgf/AUTHOR_BRIEF_LGF.md",
+      "expected_sha256": "dc358ffa750b051d70afd4fc34f56d68f1b7b3ecca5c4e5d289adb38ee38dd2c",
+      "actual_sha256": "dc358ffa750b051d70afd4fc34f56d68f1b7b3ecca5c4e5d289adb38ee38dd2c",
+      "unchanged": true
+    },
+    {
+      "path": "briefs_lgf/REVIEW_BRIEF_LGF.md",
+      "expected_sha256": "ec04cbfe8656d37ac6b418585646c378a5b6c9e1f6da82f9b33dc1f9d7fcccea",
+      "actual_sha256": "ec04cbfe8656d37ac6b418585646c378a5b6c9e1f6da82f9b33dc1f9d7fcccea",
+      "unchanged": true
+    },
+    {
+      "path": "PROCESS_LIGHT.md",
+      "expected_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "actual_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "unchanged": true
+    },
+    {
+      "path": "TSE55.md",
+      "expected_sha256": "d02cc8b265c20da5fc59812a59d68e12d3c9a550d9f9df0890db1c61a38f7340",
+      "actual_sha256": "d02cc8b265c20da5fc59812a59d68e12d3c9a550d9f9df0890db1c61a38f7340",
+      "unchanged": true
+    },
+    {
+      "path": "CODEX_REVIEW_TSE.md",
+      "expected_sha256": "b70b1236e525fe5e3c83cd99b9f7142801a0a215f7e4a34879cdca50917d3edf",
+      "actual_sha256": "b70b1236e525fe5e3c83cd99b9f7142801a0a215f7e4a34879cdca50917d3edf",
+      "unchanged": true
+    },
+    {
+      "path": "LINEAR_PACKAGE.md",
+      "expected_sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "actual_sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "unchanged": true
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "LGF.md",
+      "sha256": "40ea604c79f17027129628bc8b31f5fd6209da21dded864bf45a422dad24505e",
+      "ends_with_newline": true,
+      "trailing_whitespace_lines": []
+    },
+    {
+      "path": "LGF_LOG.md",
+      "sha256": "2619e256dde14d9b4be7657f288d12d0af8b44d7ba9d9cc7418eef0893134382",
+      "ends_with_newline": true,
+      "trailing_whitespace_lines": []
+    },
+    {
+      "path": "checks/lgf_criteria.md",
+      "sha256": "9c1c6fd66a7490d863dbdc08395b456246d12d8c2f3aaedd19b6cf97167e4729",
+      "ends_with_newline": true,
+      "trailing_whitespace_lines": []
+    },
+    {
+      "path": "checks/lgf_review.md",
+      "sha256": "6287e286d177f4b0faaf64a203471f7e09408f9126903428d5ca77c1b5f3d463",
+      "ends_with_newline": true,
+      "trailing_whitespace_lines": []
+    }
+  ],
+  "checks": {
+    "original_sources_unchanged": true,
+    "proof_matches_reviewed_revision": true,
+    "review_matches_final_receipt": true,
+    "review_final_line": true,
+    "text_format_clean": true,
+    "tracked_files_unchanged": true,
+    "index_unchanged": true,
+    "head_unchanged": true,
+    "no_lgf_numerical_scripts": true
+  },
+  "planning_ref": {
+    "local_sha": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0",
+    "remote_freshness_verified": false,
+    "final_refresh_result": "exit255: FETCH_HEAD Operation not permitted"
+  },
+  "numerical_runs": [],
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,39 @@
+{
+  "label": "su3",
+  "command": [
+    "nice",
+    "-n",
+    "10",
+    "/usr/local/bin/python3",
+    "-B",
+    "review_charged_jet_su3.py"
+  ],
+  "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-charged-review-replay-hiyae0zp/su3",
+  "copied_scripts": {
+    "review_charged_jet_su3.py": "b4c36fde6a5ee2492af6e81f3bbb63ed645dbfe1d8e000905dee37409a9578e0",
+    "review_charged_jet_independent.py": "96a60bc9d11ca59c01fc480b59dab6aa9378ee3525043805cd9fd2928894117e"
+  },
+  "environment_overrides": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "wall_seconds": 0.8081479999818839,
+  "excluded_top_level_fields": [],
+  "exact_non_time_json_match": true,
+  "passed": 15,
+  "total": 15,
+  "stdout": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_su3_out.json",
+    "sha256": "f6eb38abf747c9b4d7e1a87f5258b1d635e7abcfbc64649dfbd436f08013f5bb"
+  },
+  "stderr": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_su3_err.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "reference": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_su3_01_out.json",
+    "sha256": "f6eb38abf747c9b4d7e1a87f5258b1d635e7abcfbc64649dfbd436f08013f5bb"
+  }
+}

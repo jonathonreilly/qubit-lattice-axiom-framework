@@ -1,0 +1,301 @@
+{
+  "created_at_utc": "2026-10-30T16:15:54.015365+00:00",
+  "base_commit": "721f2305fc3470eb61661ae808799125fe6b885b",
+  "procedure_pin": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+  "observed_origin_main": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+  "authority_identities": {
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": "f7e307ec8c99863d84f24edf26c688d2f1e34245763457665e051fcb859f70f8",
+    "docs/ai_methodology/skills/physics-loop/SKILL.md": "2f94facbacfaa6844c5dc58541a660fd29e1c42940a85b9412c9dab15568233c",
+    "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md": "a46a632cd2a7e392caf9b9c059440ab48b7dc4b73255323a748b1104596b8c1d",
+    "docs/ai_methodology/skills/physics-loop/references/long-running-execution.md": "d48c676ab368b5fce8666081f15a251366c303550661427880218ef93cb427a6",
+    "docs/ai_methodology/skills/workhorse/SKILL.md": "4de0316bbc2b69e7597f90d6d554a2bfeded33a9c9496bd49fa527ad0aab1a0a",
+    "scripts/lab_ops.py": "462b66455683bf6bb11bf1dd451e789ed4a298b6cf06c9109d693cc6ea1e1fd9",
+    "scripts/automation_lock.py": "cfba59d6d9904909fe45225a5de7724d5afbdc0638ab7b416d86120feb856001",
+    "scripts/vocab_lint.py": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+    "docs/repo/controlled_vocabulary.yaml": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15"
+  },
+  "author_sources": {
+    "RETAINED_RETURN_CONSTRUCTION_ASTRA.md": "920865b2ee1f528c1a3134858023b725fd5c69849d84af372d094bf00c22ce12",
+    "checks/retained_return_construction_read_manifest.json": "48cf06baadc4795a42d9aee0d646dd63e4cdffd59feb222d01e74e421d5680e3",
+    "checks/retained_return_construction_receipt.json": "b5b609558ff307b5d1735d4c9d4ed4a3669f8138294c08a90e7ce0482a5936c7",
+    "DETERMINANT_SIGN_ASTRA.md": "138610a5a7d6e63d2a2d7ce3616964b9b909acf8295df65777b3eb4a40c55d36",
+    "checks/determinant_sign_read_manifest.json": "d8567df1be773ff8038af40a3553285028ee2562af03167c5484913c5713f4a4",
+    "checks/determinant_sign_receipt.json": "eac35ddbeb563b69e8a4351fad2b4d83dc45b48cb909c1bb31a37882786e480e"
+  },
+  "author_status": "Unreviewed preservation only; different fresh checks follow. No scientific verdict is assigned by this checkpoint.",
+  "root_read_boundary": "RT and DS lines1-65 only at this checkpoint. Their complete mathematics has not yet been reviewed by root; packet JSON parsed as metadata, not accepted as scientific evidence.",
+  "procedure_transition": "The completed a22c983b unit and earlier workers retain their actual recorded pin01589af. New launch/shared-state procedures use c93fcb3. Changes read: SCIENCE_WORKFLOW additions, physics-loop and DISCOVERY deltas, Lab Operation201-387, full workhorse285 and lab_ops415. No old receipt is rewritten.",
+  "preflight_parent_observation": {
+    "role": "checker",
+    "requested_model": "gpt-6-astra",
+    "requested_effort": "max",
+    "exit_code": 0,
+    "disk_GB_free_rounded": 30,
+    "memory_percent_free": 48,
+    "load_rounded": 1.7,
+    "model_floor": "allowed",
+    "nice": "works",
+    "memory_cap": "ulimit unavailable; each job must watch its memory",
+    "network": "origin reachable",
+    "backend_identity_attested": false
+  },
+  "scripts_from_git_cache": "/tmp/ym4d_lab_ops_c93; exact selected Git bytes, not a replacement of branch scripts. automation_lock.py matches the current worktree.",
+  "part_paths": [
+    "GOAL.md",
+    "parts/normalized-return.md",
+    "parts/reserve-regeneration.md",
+    "parts/effective-flow.md",
+    "parts/domains-support.md",
+    "parts/continuum-existence.md",
+    "parts/physical-gap.md"
+  ],
+  "declared_critical_obligations": 6,
+  "count_boundary": "Not equal-sized steps or a completion percentage; all six remain gap.",
+  "direct_vocabulary": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GOAL.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/normalized-return.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/reserve-regeneration.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/effective-flow.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/domains-support.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/continuum-existence.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/physical-gap.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/DETERMINANT_SIGN_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    }
+  ],
+  "local_links": [
+    [
+      "GOAL.md",
+      "MASS_GAP_TARGET.md"
+    ],
+    [
+      "GOAL.md",
+      "PROOF.md"
+    ],
+    [
+      "GOAL.md",
+      "HANDOFF.md"
+    ],
+    [
+      "GOAL.md",
+      "parts/normalized-return.md"
+    ],
+    [
+      "GOAL.md",
+      "parts/reserve-regeneration.md"
+    ],
+    [
+      "GOAL.md",
+      "parts/effective-flow.md"
+    ],
+    [
+      "GOAL.md",
+      "parts/domains-support.md"
+    ],
+    [
+      "GOAL.md",
+      "parts/continuum-existence.md"
+    ],
+    [
+      "GOAL.md",
+      "parts/physical-gap.md"
+    ],
+    [
+      "parts/normalized-return.md",
+      "../GOAL.md"
+    ],
+    [
+      "parts/normalized-return.md",
+      "../HANDOFF.md"
+    ],
+    [
+      "parts/reserve-regeneration.md",
+      "../GOAL.md"
+    ],
+    [
+      "parts/reserve-regeneration.md",
+      "../HANDOFF.md"
+    ],
+    [
+      "parts/effective-flow.md",
+      "../GOAL.md"
+    ],
+    [
+      "parts/effective-flow.md",
+      "../HANDOFF.md"
+    ],
+    [
+      "parts/domains-support.md",
+      "../GOAL.md"
+    ],
+    [
+      "parts/domains-support.md",
+      "../HANDOFF.md"
+    ],
+    [
+      "parts/continuum-existence.md",
+      "../GOAL.md"
+    ],
+    [
+      "parts/continuum-existence.md",
+      "../HANDOFF.md"
+    ],
+    [
+      "parts/physical-gap.md",
+      "../GOAL.md"
+    ],
+    [
+      "parts/physical-gap.md",
+      "../HANDOFF.md"
+    ],
+    [
+      "RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+      "REALRGA.md"
+    ],
+    [
+      "RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+      "MIXSMALL.md"
+    ],
+    [
+      "RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+      "CUT_SECTOR_COERCIVITY_ASTRA.md"
+    ],
+    [
+      "RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+      "OUTSIDE_CHART_RETURN_ASTRA.md"
+    ],
+    [
+      "RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+      "MARKED_COMPACT_CHART_ASTRA.md"
+    ],
+    [
+      "RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+      "WEIGHTED_RETURN_JETS_ASTRA.md"
+    ],
+    [
+      "RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+      "COMPACT_RETURN_GLUING_ASTRA.md"
+    ],
+    [
+      "RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+      "STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md"
+    ],
+    [
+      "RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+      "MEAN_READER_RETURN_ASTRA.md"
+    ],
+    [
+      "RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+      "PROCESS_LIGHT.md"
+    ],
+    [
+      "DETERMINANT_SIGN_ASTRA.md",
+      "BARE_DETERMINANT_COUPLING_ASTRA.md"
+    ],
+    [
+      "DETERMINANT_SIGN_ASTRA.md",
+      "BARE_COUPLING_MATCH_ASTRA.md"
+    ],
+    [
+      "DETERMINANT_SIGN_ASTRA.md",
+      "FINITE_COUPLING_KERNEL_ASTRA.md"
+    ],
+    [
+      "DETERMINANT_SIGN_ASTRA.md",
+      "INTERACTING_SELECTED_CORE_ASTRA.md"
+    ],
+    [
+      "DETERMINANT_SIGN_ASTRA.md",
+      "BARE_COUPLING_REMAINDER_ASTRA.md"
+    ],
+    [
+      "DETERMINANT_SIGN_ASTRA.md",
+      "checks/determinant_sign_read_manifest.json"
+    ],
+    [
+      "DETERMINANT_SIGN_ASTRA.md",
+      "checks/determinant_sign_receipt.json"
+    ]
+  ],
+  "selected_whitespace": "No trailing whitespace or missing final newline in any selected source; staged Git diff check is required separately before commit.",
+  "publication_exclusions": "All literature/cache files, completed but not yet integrated cycle3 review records, and any other unselected path.",
+  "concurrent_cycle5": "Preserved at base721f2305. No science read or diagnostic execution is asserted for that addition.",
+  "scientific_numeric_runs": false,
+  "full_existence_established": false,
+  "physical_mass_gap_established": false,
+  "selected_paths": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GOAL.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/normalized-return.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/reserve-regeneration.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/effective-flow.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/domains-support.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/continuum-existence.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/physical-gap.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/retained_return_construction_read_manifest.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/retained_return_construction_receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/DETERMINANT_SIGN_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/determinant_sign_read_manifest.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/determinant_sign_receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lab_operation_transition_20261030.json"
+  ],
+  "selected_identities_except_self": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GOAL.md": "7c81f5f569c41a5e52ed769f834b726ae5cd5b21523fedc2340868d3d3ff5f66",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/normalized-return.md": "cfb30c55d283323a43fd3c6639dd037a2b1ed6bbfa1db936d0666d14c742f527",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/reserve-regeneration.md": "3deace59041acea1af3daff770cbda2b35018eaa314110b8230adca69d45a750",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/effective-flow.md": "fef68f014fb5ded32fbb373f512224ffae1ccdd9c6f42f07bb3ab5fba062f5d6",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/domains-support.md": "d7bf4c363a8827e28b5472e44ef49e8b49ace4b98da95705f6b315b5b661e616",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/continuum-existence.md": "231ffc6300c579502e530e74d7f1dc2125137a8a9b17c1fda9732b37dcacdd7a",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/physical-gap.md": "d7b024e4b251cc11ddd272f56e0f2541a88848c3eab324c7ca9114e0180925f7",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RETAINED_RETURN_CONSTRUCTION_ASTRA.md": "920865b2ee1f528c1a3134858023b725fd5c69849d84af372d094bf00c22ce12",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/retained_return_construction_read_manifest.json": "48cf06baadc4795a42d9aee0d646dd63e4cdffd59feb222d01e74e421d5680e3",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/retained_return_construction_receipt.json": "b5b609558ff307b5d1735d4c9d4ed4a3669f8138294c08a90e7ce0482a5936c7",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/DETERMINANT_SIGN_ASTRA.md": "138610a5a7d6e63d2a2d7ce3616964b9b909acf8295df65777b3eb4a40c55d36",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/determinant_sign_read_manifest.json": "d8567df1be773ff8038af40a3553285028ee2562af03167c5484913c5713f4a4",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/determinant_sign_receipt.json": "eac35ddbeb563b69e8a4351fad2b4d83dc45b48cb909c1bb31a37882786e480e"
+  }
+}

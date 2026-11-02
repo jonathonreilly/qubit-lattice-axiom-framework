@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-29T23:02:46.847600+00:00",
+  "attempts": [
+    {
+      "kind": "source_locator_failure",
+      "path": "checks/covariant_source_activity_actual_01.py",
+      "result": "sed: No such file or directory",
+      "resolution": "Used rg --files and then read the existing frozen covariant_source_activity_actual.py completely. No scientific computation was attempted by the failed read."
+    },
+    {
+      "kind": "registered_scientific_run",
+      "program": "checks/fixed_source_radius_01.py",
+      "registration": "checks/fixed_source_radius_numeric_plan.md",
+      "result": "46/46,14 controls, first execution, no criteria/program changes after outcome",
+      "stdout": "checks/fixed_source_radius_01.stdout.json",
+      "stderr": "checks/fixed_source_radius_01.stderr.txt"
+    },
+    {
+      "kind": "supplemental_registered_scientific_run",
+      "program": "checks/fixed_source_radius_mixed_01.py",
+      "registration": "checks/fixed_source_radius_mixed_plan.md",
+      "exposure": "After first46 outcomes and written mixed proof; before this implementation. Not blind.",
+      "result": "8/8,3 controls, first execution, no criteria/program changes after outcome",
+      "stdout": "checks/fixed_source_radius_mixed_01.stdout.json",
+      "stderr": "checks/fixed_source_radius_mixed_01.stderr.txt"
+    }
+  ],
+  "analytic_routes_not_used": [
+    "Global shifted-horizontal-contour modulus bound exp((Im h)^2/2) per mode",
+    "Quadratic cube supremum rho*p^2",
+    "Constant moment cost per unhit scalar coordinate",
+    "Analytic transport of hard history indicators"
+  ],
+  "draft_correction": "Narrowed ambiguous root-gauge wording to internal tree-gauge volume one; block-root modes remain. This was before source freeze; no predecessor changed.",
+  "resource_summary": {
+    "max_seconds": 4.653234165976755,
+    "max_rss_bytes": 64765952,
+    "minimum_free_percent": 53,
+    "maximum_load": 3.41455078125,
+    "nice_at_least": 10,
+    "all_five_threads": 1,
+    "lock": "Read-only snapshots in both result files; coordinator alone refreshes or mutates lock."
+  },
+  "total_passed": 54,
+  "total_predicates": 54,
+  "total_controls": 17,
+  "scientific_failures": [],
+  "resource_failures": []
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "role": "Author bounded read provenance; not independent review or audit.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/QUADRATIC_COARSE_RETURN_ASTRA.md",
+    "sha256": "515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7",
+    "lines": 591
+  },
+  "inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "lines": 597,
+      "direct_read_ranges_this_unit": [
+        [
+          1,
+          597
+        ]
+      ],
+      "use": "Complete direct source read. Exact SC1-21 and SC25-35 model, selectors, signed reset/imaginary-source action comparison, physical regional integral and original normalization. QC replaces SC22-24 and rederives its dependent bounds on the enlarged tube."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "lines": 617,
+      "direct_read_ranges_this_unit": [
+        [
+          1,
+          617
+        ]
+      ],
+      "use": "Complete direct source read. Actual paired-word brick filling, eight-brick geometry, centered energy, variance inequality and full compact normalizer; no normalized real conditional theorem is substituted for the complex ratio."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "lines": 641,
+      "direct_read_ranges_this_unit": [
+        [
+          1,
+          641
+        ]
+      ],
+      "use": "Complete direct source read. Original-link charge, local reset shell estimate, incidence and shrinking consumer restrictions; real avoidance/history bounds remain distinct from analytic local coefficients."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "direct_read_ranges_this_unit": [
+        [
+          259,
+          343
+        ]
+      ],
+      "earlier_same_session_read_ranges": [
+        [
+          1,
+          592
+        ]
+      ],
+      "use": "RF13-18 fixed local majorants, mixed fine Hessian/source budgets, actual regional force and common parameter order. The exact physical phase, regional critical field/covariance and complete-reader construction were fully read earlier in this session."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "lines": 510,
+      "direct_read_ranges_this_unit": [
+        [
+          170,
+          216
+        ],
+        [
+          450,
+          489
+        ]
+      ],
+      "earlier_same_session_read_ranges": [
+        [
+          1,
+          510
+        ]
+      ],
+      "use": "RC local vertex bounds, N13/N9 reader counts and explicit RC17-18 shrinking family refreshed directly. Earlier complete author source supplies the exact nonzero fixed-chart integral and full prefactor, with all side/corner and covariance readers."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "direct_read_ranges_this_unit": [
+        [
+          1,
+          11
+        ]
+      ],
+      "use": "Current owner process, numerical-only preregistration, rebuild-not-cite rule, fresh independent review, and attribution to Bałaban and Dimock."
+    }
+  ],
+  "read_limits": "Oversized/truncated combined outputs were not counted as successful complete reads. CS221-400,401-574,575-617 and OC231-290,291-450,451-641 were delivered in bounded follow-up reads. Named-file search hits were navigation only.",
+  "same_session_provenance": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/matched_regional_ratio_read_manifest.json",
+      "sha256": "2481adbd49a15ff10e6dd2c0f83adef27335a20fa0fcb8d7ed84e3d4d79e4f17",
+      "lines": 111,
+      "use": "Carries exact prior RF/RC full-read ranges and unchanged source identities. No receipt or review verdict is a mathematical premise."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "lines": 246,
+      "use": "Carries earlier AGENTS, physics-loop/relevant review-loop and source-specific methodology reading at selected main 01589af3faf806b736c42dc2f3bd625e9edead9f; no Git operation was used in this unit."
+    }
+  ],
+  "producer_status": "Coordinator confirmed final independent bounded acceptance of unchanged SC, RF and RC. This unit consumes their stated mathematics and checks the common hypotheses, not their review verdicts.",
+  "new_steps": "QC6-9: mean-spread debit including outside brick plaquettes. QC10-18: fixed local Cauchy domains, local zero coarse force, actual Haar-inclusive critical Schur complement and quadratic coarse price. QC22: one energy budget. QC27-31: genuine shrinking radius and full-reader norm/Cauchy consequences.",
+  "external_math": "No new primary-paper or external-theorem premise. Matrix exponential, variance, local Cauchy/Schur and implicit differentiation steps are rebuilt. Constructive antecedents are credited to Bałaban and Dimock.",
+  "scope": "Actual local bare compact numerator / same-physical-exterior regional chart denominator with frozen selectors, one ambient family and fixed source radius. No wider RG-class matching, global complement gas, arbitrary history/effective weight, continuum existence or physical gap.",
+  "execution": "No scientific numerics, extra workers, Git/front/PR/lock/audit operation or predecessor edit."
+}

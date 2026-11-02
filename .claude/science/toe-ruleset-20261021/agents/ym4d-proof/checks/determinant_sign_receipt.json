@@ -1,0 +1,43 @@
+{
+  "kind": "author freeze receipt; no independent verdict",
+  "source": {
+    "path": "DETERMINANT_SIGN_ASTRA.md",
+    "lines": 610,
+    "sha256": "138610a5a7d6e63d2a2d7ce3616964b9b909acf8295df65777b3eb4a40c55d36"
+  },
+  "read_manifest": {
+    "path": "checks/determinant_sign_read_manifest.json",
+    "lines": 97,
+    "sha256": "d8567df1be773ff8038af40a3553285028ee2562af03167c5484913c5713f4a4"
+  },
+  "actual_bounded_results": [
+    "DS5-DS6 prove equality of the actual constrained SU saddle value with the polar trace through total field degree five after composition with SL path words; only its degree-four polynomial is used.",
+    "DS8-DS16 derive the HS/FLOW colour factors and exactly reduce b1(N,L,kappa) to N^2 C_L(kappa)-B_L(kappa), with scalar/m0 matrices and two-by-two colour calculators.",
+    "DS21-DS30 retain every scalar amplitude/seagull term, bound the actual paired-contour ribbon, and perform an exact flat root-mode Schur elimination without deleting the longitudinal or harmonic modes.",
+    "DS31 proves B_L<=-(3L^2+1)/(32L^2) on the explicit positive interval kappa<=g_L d_L/(2r_L^2); at L=3, kappa<=119/31104 gives B_3<=-7/72.",
+    "DS32-DS34 prove the fixed-L limit B_L=-(3L^2+1)/(16L^2)+O(kappa), with an explicit two-sided error constant.",
+    "DS35-DS36 prove a strict negative difference b1(N)/N^2-b1(M)/M^2 for N>M>=2 on that interval."
+  ],
+  "remaining_obstacle": "C_L remains unevaluated. The sign of every individual b1 is open; no charged logarithmic asymptotic, universal coefficient, trajectory or continuum implication is asserted.",
+  "parameter_order": "Fixed N,L,kappa>0 and the actual source-zero coefficient first; volume before external momentum. Only then kappa decreases. No chart radius or finite-u threshold uniform to kappa=0 is asserted.",
+  "review_targets": [
+    "SL-word determinant-phase order and constrained maximum comparison",
+    "Root/neutral colour contractions and the polynomial calculator dimensions",
+    "Affine scalar coefficient versus the original-reader volume-first projection",
+    "All scalar kernel/amplitude signs and twelve-plane weights",
+    "Actual paired-order ribbon and row norm",
+    "Exact root-mode Schur formulas and retained q=0 harmonics",
+    "Fine Bloch/tree recovery constant and O(kappa) bound",
+    "Separation of the signed colour difference from an individual b1 sign"
+  ],
+  "status": {
+    "author_proposal": "pending DIFFERENT fresh independent review",
+    "independent_verdict_assigned": false,
+    "individual_b1_sign_established": false,
+    "scientific_numerics_run": false,
+    "inherited_class_or_trajectory_established": false,
+    "non_freeness_or_continuum_existence_established": false,
+    "physical_continuum_gap_established": false
+  },
+  "ownership": "Only DETERMINANT_SIGN_ASTRA.md and checks/determinant_sign_* authored; root owns publication, review dispatch, Git, fronts and audits."
+}

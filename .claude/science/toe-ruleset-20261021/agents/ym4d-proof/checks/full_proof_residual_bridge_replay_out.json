@@ -1,0 +1,141 @@
+{
+  "scope": "finite algebra and free lattice geometry; no actual residual bound",
+  "checks": [
+    {
+      "name": "4d_side9_all_root_gram_entries_72",
+      "ok": true,
+      "details": {
+        "roots": 81,
+        "entries": 6561
+      }
+    },
+    {
+      "name": "4d_side9_all_first_gram_entries_8",
+      "ok": true
+    },
+    {
+      "name": "antiperiodic_wrap_is_present",
+      "ok": true
+    },
+    {
+      "name": "mean_zero_projection_has_distant_nonzero_entry",
+      "ok": true,
+      "details": {
+        "value": "8/729",
+        "root_pair": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            3,
+            3,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "name": "harmonic_ev_lift",
+      "ok": true
+    },
+    {
+      "name": "harmonic_laplacian_lift_root_S",
+      "ok": true
+    },
+    {
+      "name": "harmonic_energy_is_S",
+      "ok": true
+    },
+    {
+      "name": "harmonic_squared_gram_is_S_squared",
+      "ok": true
+    },
+    {
+      "name": "harmonic_residual_projection_exact",
+      "ok": true
+    },
+    {
+      "name": "all_aliases_green_equals_inverse_S",
+      "ok": true,
+      "details": {
+        "root_green": "1047/7280",
+        "S": "7280/1047"
+      }
+    },
+    {
+      "name": "full_laplacian_det_matches_alias_product",
+      "ok": true
+    },
+    {
+      "name": "dirichlet_cofactor_matches_green",
+      "ok": true
+    },
+    {
+      "name": "full_det_equals_dirichlet_det_times_S",
+      "ok": true
+    },
+    {
+      "name": "small_family_covariance_MD",
+      "ok": true
+    },
+    {
+      "name": "small_family_ungaugefixed_null_columns",
+      "ok": true
+    },
+    {
+      "name": "h_schur_from_augmented",
+      "ok": true
+    },
+    {
+      "name": "harmonic_shear_schur_from_augmented",
+      "ok": true
+    },
+    {
+      "name": "full_scalar_ghost_gram_cancellation_for_changing_family",
+      "ok": true
+    },
+    {
+      "name": "changing_harmonic_lift_not_constant",
+      "ok": true
+    },
+    {
+      "name": "dirichlet_log_has_nonzero_second_jet",
+      "ok": true
+    },
+    {
+      "name": "control_dropping_dirichlet_factor_fails",
+      "ok": true
+    },
+    {
+      "name": "control_using_S_instead_of_S_squared_fails",
+      "ok": true
+    },
+    {
+      "name": "control_omitting_null_column_premise_fails",
+      "ok": true
+    },
+    {
+      "name": "point_root_gauge_energy_exact",
+      "ok": true
+    },
+    {
+      "name": "point_root_gauge_norm_exact",
+      "ok": true
+    },
+    {
+      "name": "harmonic_root_gauge_energy_exact",
+      "ok": true
+    },
+    {
+      "name": "harmonic_root_gauge_norm_is_S",
+      "ok": true
+    }
+  ],
+  "passed": 27,
+  "total": 27,
+  "all_ok": true
+}

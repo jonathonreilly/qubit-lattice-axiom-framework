@@ -1,0 +1,75 @@
+{
+  "phase": "pre_consumer_pre_packaging",
+  "utc": "2026-10-30T00:38:14.562240+00:00",
+  "original_head": "3bba91875672becadc0ab120204905d9f1f405a8",
+  "baseline": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+      "current_sha256": "47dd75c7ca3c4f9f1af43139292d1fcfa6774b10f8e6ea2babc05ad67a48e29a",
+      "current_git_blob": "ff49fed213ad19d2c2c94ef260822151c699ae53",
+      "original_head_sha256": "47dd75c7ca3c4f9f1af43139292d1fcfa6774b10f8e6ea2babc05ad67a48e29a",
+      "baseline_sha256": "47dd75c7ca3c4f9f1af43139292d1fcfa6774b10f8e6ea2babc05ad67a48e29a",
+      "baseline_equals_original_head": true,
+      "lines": 1316,
+      "read_state": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_CONT.md",
+      "current_sha256": "ac7ac0854fb320f183779f67be136063dfb750ee3f13b869acad10a7ac12a278",
+      "current_git_blob": "42a64948c2f0fe171020e240ccdf579b22c3d915",
+      "original_head_sha256": "ac7ac0854fb320f183779f67be136063dfb750ee3f13b869acad10a7ac12a278",
+      "baseline_sha256": "ac7ac0854fb320f183779f67be136063dfb750ee3f13b869acad10a7ac12a278",
+      "baseline_equals_original_head": true,
+      "lines": 1054,
+      "read_state": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md",
+      "current_sha256": "d3a53ef3b29d09c774b1a836603ca731eeadb580127d3928dbbcd5dbe343699e",
+      "current_git_blob": "28f55c8180fa838c01f9843685dc53a80e2e78b1",
+      "original_head_sha256": "d3a53ef3b29d09c774b1a836603ca731eeadb580127d3928dbbcd5dbe343699e",
+      "baseline_sha256": "d3a53ef3b29d09c774b1a836603ca731eeadb580127d3928dbbcd5dbe343699e",
+      "baseline_equals_original_head": true,
+      "lines": 838,
+      "read_state": "bound_unread"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "current_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "current_git_blob": "3c91c45c7fe6d4f82e62ddbb368d2408cbe95359",
+      "original_head_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "baseline_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "baseline_equals_original_head": true,
+      "lines": 11,
+      "read_state": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md",
+      "current_sha256": "4e778a30fdc9dd7734499c52a141bef753e10c9c77b298eea76a6858a54a96e8",
+      "current_git_blob": "8d0f07fb2c5872915fa156d58ae9abfce69f0f36",
+      "original_head_sha256": "7f73bedc795e9356f65651a0d39b1fd3e8300fb460846cf84a45f0c5307f0c1c",
+      "baseline_sha256": "7f73bedc795e9356f65651a0d39b1fd3e8300fb460846cf84a45f0c5307f0c1c",
+      "baseline_equals_original_head": true,
+      "lines": 1031,
+      "read_state": "bound_unread"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSEMBLY55.md",
+      "current_sha256": "c15524d7a1c3c04ce9c32567f6f61ec5113ebe24be9eba8de87f97e3109d326d",
+      "current_git_blob": "58116dc28c28c2f9dfea759cbe7ea3abc55d56d4",
+      "original_head_sha256": "253ea55619c7fd09d278add27b840c989a2a35160eb22a0385ea700f01fac9c7",
+      "baseline_sha256": "253ea55619c7fd09d278add27b840c989a2a35160eb22a0385ea700f01fac9c7",
+      "baseline_equals_original_head": true,
+      "lines": 776,
+      "read_state": "bound_unread"
+    }
+  ],
+  "initial_findings_sha256": "f0580b516529bab98bc159313c9d2bb02e559ec033bcf269e8dbeedb0ba0c249",
+  "prior_exposure": "dispatch disclosed alleged E0-prime, translation, tensor, GROW and direction errors",
+  "corrected_consumers_read": false,
+  "author_packaging_read": false,
+  "old_reviews_read": false,
+  "numerical_experiments": []
+}

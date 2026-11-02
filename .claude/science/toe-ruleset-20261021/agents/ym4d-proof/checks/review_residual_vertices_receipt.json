@@ -1,0 +1,94 @@
+{
+  "artifacts": [
+    {
+      "bytes": 30578,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RESIDUAL_VERTICES_ASTRA.md",
+      "sha256": "0b5bcc1bd076efa296bf66f83ea5d072b6b9dccab7b42dc2245c96b1cc81dc8c"
+    },
+    {
+      "bytes": 5742,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_vertices_01.py",
+      "sha256": "a50dba62a66a47df0df8752c9564806a425a2cca33337a5799b39cd937dc2ffb"
+    },
+    {
+      "bytes": 0,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_vertices_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 20434,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_vertices_01_out.json",
+      "sha256": "a0f7096b6fadef8864af872f6030cb668536c3c9879a357aa23fff35ddb55a6c"
+    },
+    {
+      "bytes": 6253,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_vertices_02.py",
+      "sha256": "8d3ba97ab471931457a413d6aed8de4b797179eb7b88bbcbd1b678c6ae5dcbe9"
+    },
+    {
+      "bytes": 0,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_vertices_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 8581,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_vertices_02_out.json",
+      "sha256": "e70252f5a984c697a5f3db5c1581dddb49d40aaf09718d11d819688cfefbc5b1"
+    },
+    {
+      "bytes": 3471,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_vertices_criteria.md",
+      "sha256": "2f959ccd136689d57e5c9763c0cc1cccfd37799f5f774b33207b078a9121d222"
+    },
+    {
+      "bytes": 2651,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_vertices_packaging_check.json",
+      "sha256": "b0fba3665df6eb4be8a9d275da08bef702347cd1c52cc06bb4541dddc980c2fe"
+    },
+    {
+      "bytes": 1074,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_vertices_packaging_diff.txt",
+      "sha256": "7fd2697b9aa00c8df2efb9870f454a7e9d45d5acb1c26f837d6f229289677bdf"
+    },
+    {
+      "bytes": 520,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_vertices_packaging_preflight.json",
+      "sha256": "13da86596ed155691b86bebd6a9ac6bc5acab09117e82a251aebf884be875004"
+    },
+    {
+      "bytes": 20687,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_vertices_source_manifest.json",
+      "sha256": "5a952fdf19580eee77041aa438f39ddf2e8bc3dec4a0aff2ace5489b50aa4d5f"
+    }
+  ],
+  "disposition": "Confirmed zero F-squared residual coefficient for each fixed depth on the specified paired antiperiodic charged-root domain, volume first then external momentum to zero. No mathematical correction requested. Neutral/full-periodic matching, uniform tree producer package and full existence/physical-mass-gap theorem remain open.",
+  "frozen_utc": "2026-10-29T15:36:12.754488+00:00",
+  "independent_controls": [
+    {
+      "passed": 162,
+      "scope": "Actual d4 L3 order-averaged contours, flat Cartan right-chart Wilson operators, covariant frames and tuned Schur/partial fixing controls.",
+      "script": "review_residual_vertices_01.py",
+      "stderr_bytes": 0,
+      "total": 162
+    },
+    {
+      "passed": 30,
+      "scope": "Exact nonflat noncommuting SU2 Wilson row, dense off-shell normalized determinant identities, path and separate-centre algebra.",
+      "script": "review_residual_vertices_02.py",
+      "stderr_bytes": 0,
+      "total": 30
+    }
+  ],
+  "mathematical_source_commit": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+  "mathematical_source_sha256": "8a7c87c9b737ee88372eb985189bcd0e25440986868cc8d92062b84f6cb92cd1",
+  "packaged_source_commit": "e4464249d9729a0bf7725be67611aa95aba5df01",
+  "packaged_source_sha256": "aa16239e801d371c7242a342b339ed5dfeec8fa75f5dd8a3ac3a128a84989d56",
+  "packaging_only_insertion_confirmed": true,
+  "prior_reports_unchanged": {
+    "REVIEW_MASS_GAP_TARGET_ASTRA.md": "f45ff76218702ed8c47c6da92b9b149eb9c7a938c27a563b078dae210387c4d6",
+    "REVIEW_RESIDUAL_DETERMINANT_ASTRA.md": "3ec369126f85df9cc090cb92f136537c6cc422b7fb5ea107f91465a1f2e52038",
+    "REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md": "57fb90b190ccc3280f841b5343aa24d4913aafe5d646e512d01c34799fa6c43b"
+  },
+  "review_status_scope": "Same-family scoped independent mathematics; no whole-PR/audit/cross-family certification.",
+  "schema": "independent-review-freeze-receipt-v1"
+}

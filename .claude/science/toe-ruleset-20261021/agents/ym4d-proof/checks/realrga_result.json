@@ -1,0 +1,29 @@
+{
+  "status": "NOT RUN",
+  "checks": {},
+  "resources": [
+    {
+      "where": "preflight",
+      "rss_bytes": 22298624,
+      "load": [
+        2.87255859375,
+        3.02490234375,
+        3.0205078125
+      ],
+      "free_percent": 39,
+      "nice": 0,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLAS_NUM_THREADS": "1"
+      }
+    }
+  ],
+  "utc": "2026-10-30T08:01:13.364056+00:00",
+  "criteria_sha256": "7f24db01d74e26275e63fb13f9f0f7251302a4ed9020569504acf7c672f00e60",
+  "script_sha256": "71c8bb774c21f2095a2b194ffe638210cb54d7db45041ad44083adb52cc67d6b",
+  "reason": "Niceness or thread guard not satisfied"
+}

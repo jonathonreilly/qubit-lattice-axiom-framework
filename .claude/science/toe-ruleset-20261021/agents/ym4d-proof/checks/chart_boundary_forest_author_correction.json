@@ -1,0 +1,11 @@
+{
+  "role": "author self-correction before independent review; not an independent-review repair",
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+  "before_sha256": "9b0ae4811ebf96de223a6dfead912e784948416d58b45c8db5562d7dd854f6c1",
+  "after_sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+  "before_line": "`M<=M_C C_1(1+rho)delta_V/sigma=O(p)` if a full row bound M_C is supplied;",
+  "after_line": "`M<=sqrt(D) M_C C_1(1+rho)delta_V/sigma=O(p)` if a full scalar row bound M_C is supplied;",
+  "reason": "The bound on ell is scalar; passing to the D-dimensional link mean requires sqrt(D).",
+  "reconstruction": "Replace the unique after_line by before_line in the frozen after source. Both full-source hashes were mechanically verified.",
+  "mathematical_review": "pending; hash reconstruction is identity evidence only"
+}

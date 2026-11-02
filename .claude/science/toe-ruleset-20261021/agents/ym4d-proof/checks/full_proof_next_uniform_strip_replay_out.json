@@ -1,0 +1,297 @@
+{
+  "mode": "strip",
+  "scope": "Finite checks and explicit sufficient inequalities; no numerical proof of depth uniformity",
+  "checks": [
+    {
+      "name": "path_dictionary_mu0",
+      "passed": true
+    },
+    {
+      "name": "root_gradient_mu0",
+      "passed": true
+    },
+    {
+      "name": "constant_reproduction_mu0",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_0",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_1",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_2",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_3",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_4",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_5",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_6",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_7",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_8",
+      "passed": true
+    },
+    {
+      "name": "mutation_missing_endpoint_rejected_mu0",
+      "passed": true
+    },
+    {
+      "name": "mutation_d3_length_factor_rejected_mu0",
+      "passed": true
+    },
+    {
+      "name": "path_dictionary_mu1",
+      "passed": true
+    },
+    {
+      "name": "root_gradient_mu1",
+      "passed": true
+    },
+    {
+      "name": "constant_reproduction_mu1",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_9",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_10",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_11",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_12",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_13",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_14",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_15",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_16",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_17",
+      "passed": true
+    },
+    {
+      "name": "mutation_missing_endpoint_rejected_mu1",
+      "passed": true
+    },
+    {
+      "name": "mutation_d3_length_factor_rejected_mu1",
+      "passed": true
+    },
+    {
+      "name": "path_dictionary_mu2",
+      "passed": true
+    },
+    {
+      "name": "root_gradient_mu2",
+      "passed": true
+    },
+    {
+      "name": "constant_reproduction_mu2",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_18",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_19",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_20",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_21",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_22",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_23",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_24",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_25",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_26",
+      "passed": true
+    },
+    {
+      "name": "mutation_missing_endpoint_rejected_mu2",
+      "passed": true
+    },
+    {
+      "name": "mutation_d3_length_factor_rejected_mu2",
+      "passed": true
+    },
+    {
+      "name": "path_dictionary_mu3",
+      "passed": true
+    },
+    {
+      "name": "root_gradient_mu3",
+      "passed": true
+    },
+    {
+      "name": "constant_reproduction_mu3",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_27",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_28",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_29",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_30",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_31",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_32",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_33",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_34",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_35",
+      "passed": true
+    },
+    {
+      "name": "mutation_missing_endpoint_rejected_mu3",
+      "passed": true
+    },
+    {
+      "name": "mutation_d3_length_factor_rejected_mu3",
+      "passed": true
+    },
+    {
+      "name": "conservative_uniform_strip",
+      "passed": true,
+      "tests": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "rho_beta": 0.0948354559892172,
+      "psi_error": 0.12288127893656155,
+      "psi_half": 0.33741494171891306,
+      "br_V": 0.3084486872196521,
+      "br_required": 0.1850893357318082,
+      "fine_condition": 0.05587579303998077
+    },
+    {
+      "name": "overwide_strip_rejected",
+      "passed": true,
+      "tests": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "rho_beta": 0.8893684645442337,
+      "psi_error": 9.352722937092352,
+      "psi_half": 0.33741494171891306,
+      "br_V": -4.213892364527458,
+      "br_required": 0.10725402222353612,
+      "fine_condition": 0.48992073685779586
+    },
+    {
+      "name": "quartic_geometric_n1",
+      "passed": true,
+      "sum": 1.0123456790123457
+    },
+    {
+      "name": "quartic_geometric_n2",
+      "passed": true,
+      "sum": 1.0124980948026217
+    },
+    {
+      "name": "quartic_geometric_n10",
+      "passed": true,
+      "sum": 1.0125
+    },
+    {
+      "name": "quartic_geometric_n100",
+      "passed": true,
+      "sum": 1.0125
+    },
+    {
+      "name": "quartic_geometric_n10000",
+      "passed": true,
+      "sum": 1.0125
+    },
+    {
+      "name": "uncurled_scale_rejected",
+      "passed": true
+    }
+  ],
+  "passed": 64,
+  "total": 64,
+  "details": {},
+  "elapsed_seconds": 4.792213439941406e-05
+}

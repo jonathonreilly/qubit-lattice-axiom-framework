@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-10-29T18:50:25.784598+00:00",
+  "returncode": 1,
+  "seconds": 0.2346821670071222,
+  "script_sha256": "7fdaafe9e2112c1590eaf9d2d7d011bcc858b22b064d259ccd08e967b34911b6",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "518f70c6d17045013bc55260d448f5985050c9af44d2594b549756d0259a036b",
+  "criterion_change": false
+}

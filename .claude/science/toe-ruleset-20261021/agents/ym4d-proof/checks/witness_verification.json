@@ -1,0 +1,34 @@
+{
+  "completed_utc": "2026-10-30T01:48:19.069365+00:00",
+  "status": "PASS",
+  "original_file_count": 3376,
+  "modified_or_missing_original_files": [],
+  "created_files": [
+    "WITNESS.md",
+    "WITNESS_LOG.md",
+    "checks/witness_review.md",
+    "checks/witness_source_manifest.json",
+    "checks/witness_verification.json"
+  ],
+  "outside_whitelist": [],
+  "broken_relative_links": [],
+  "review_verdict": "LAND",
+  "review_independence": "same-family context-separated Codex reviewer",
+  "reviewed_manuscript_sha256": "f545b2b544234e9e2a133fb0957bee18cf2c290912897d5a5028ccadc484ecb8",
+  "artifacts_sha256": {
+    "WITNESS.md": "f545b2b544234e9e2a133fb0957bee18cf2c290912897d5a5028ccadc484ecb8",
+    "WITNESS_LOG.md": "4724198335b80ac8ba015954939d73be47dac04db2d166a167b5c6ef65d007a6",
+    "checks/witness_review.md": "2480756c7a04a0d3287834cd91663e5423597450d9624b1e58a5426e7fde93fa",
+    "checks/witness_source_manifest.json": "506392afa44fa8729f72bc90bf6c33ea9a36164d8fe26cce16b03e206cfbf46f"
+  },
+  "resource_guard": {
+    "load_1min": 2.08447265625,
+    "macos_available_percent": 50,
+    "nice": 20,
+    "max_rss_bytes": 30343168,
+    "threads": 1,
+    "stream_buffer_bytes": 1048576
+  },
+  "scientific_numerics_run": false,
+  "scope": "Metadata integrity and link checks only; mathematical verdict is the separate hostile review; actual YM estimates remain OPEN."
+}

@@ -1,0 +1,95 @@
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/assumptions.py", line 499, in getit
+    return self._assumptions[fact]
+           ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'zero'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_independent.py", line 165, in <module>
+    actual=s.expand(s.series(s.series(T3,xx,0,8).removeO(),zz0,0,8).removeO()).coeff(xx,n).coeff(zz0,m)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/series/series.py", line 63, in series
+    return expr.series(x, x0, n, dir)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/expr.py", line 3092, in series
+    s1 = self._eval_nseries(x, n=n, logx=logx, cdir=cdir)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/add.py", line 507, in _eval_nseries
+    terms = [t.nseries(x, n=n, logx=logx, cdir=cdir) for t in self.args]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/expr.py", line 3466, in nseries
+    return self._eval_nseries(x, n=n, logx=logx, cdir=cdir)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/mul.py", line 1980, in _eval_nseries
+    coeff, exp = t.leadterm(x)
+                 ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/expr.py", line 3558, in leadterm
+    l = self.as_leading_term(x, logx=logx, cdir=cdir)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/expr.py", line 3521, in as_leading_term
+    obj = self._eval_as_leading_term(x, logx=logx, cdir=cdir)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/add.py", line 1076, in _eval_as_leading_term
+    res = old._eval_nseries(x, n=n0+incr, logx=logx, cdir=cdir).cancel().powsimp().trigsimp()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/add.py", line 507, in _eval_nseries
+    terms = [t.nseries(x, n=n, logx=logx, cdir=cdir) for t in self.args]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/expr.py", line 3466, in nseries
+    return self._eval_nseries(x, n=n, logx=logx, cdir=cdir)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/mul.py", line 1990, in _eval_nseries
+    s = t.nseries(x, n=n1, logx=logx, cdir=cdir)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/expr.py", line 3466, in nseries
+    return self._eval_nseries(x, n=n, logx=logx, cdir=cdir)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/power.py", line 1640, in _eval_nseries
+    res += terms[e1]*inco*x**(ex)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/decorators.py", line 248, in _func
+    return func(self, other)
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/decorators.py", line 118, in binary_op_wrapper
+    return func(self, other)
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/expr.py", line 234, in __add__
+    return Add(self, other)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/operations.py", line 108, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+                                     ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/add.py", line 354, in flatten
+    newseq.append(Mul(c, s))
+                  ^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/operations.py", line 108, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+                                     ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/mul.py", line 703, in flatten
+    elif coeff.is_zero:
+         ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/assumptions.py", line 502, in getit
+    self._assumptions = self.default_assumptions.copy()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/assumptions.py", line 482, in copy
+    return self.__class__(self)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/assumptions.py", line 479, in __init__
+    self.deduce_all_facts(facts)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/facts.py", line 633, in deduce_all_facts
+    if all(self.get(k) is v for k, v in bcond):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/facts.py", line 633, in <genexpr>
+    if all(self.get(k) is v for k, v in bcond):
+
+KeyboardInterrupt

@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-10-30T03:22:49.495618+00:00",
+  "note_sha256": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+  "scope": "Mechanical text/path checks only; no mathematical validation or numerical experiment.",
+  "trailing_whitespace_lines": [],
+  "hidden_condition_search_hits": {
+    "we assume": [],
+    "by construction": [],
+    "as is standard": [],
+    "the framework provides": [],
+    "bridge context": [],
+    "background": [
+      {
+        "line": 164,
+        "text": "`g(p+rho)<epsilon_0` (and the corresponding margin from its background)."
+      },
+      {
+        "line": 604,
+        "text": "| Good background/fluctuations | LF3 local expansion estimate only | Gauge chart, one-step coercivity and uniform interaction norm |"
+      }
+    ],
+    "naturally": [],
+    "obviously": [],
+    "standard QFT": [],
+    "registered": [],
+    "canonical": []
+  },
+  "git_diff_check_note": "All task outputs are untracked; tracked diff checks alone do not cover them.",
+  "hit_classification": "Both background hits state explicit local-chart/coercivity conditions; neither supplies an unstated theorem."
+}

@@ -1,0 +1,253 @@
+{
+  "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_exact.py",
+  "source_sha256": "4959125ca8cf6002e6108f121df6cfddfdccc78ce98c227ef879363640aca25d",
+  "author_runner_first_read_after_independent_attempt02": true,
+  "mutations": [
+    {
+      "mutation": "missing_rank",
+      "old": "return Decimal(d) * (Decimal(1) - dec(t) ** 2).ln() / 2",
+      "new": "return (Decimal(1) - dec(t) ** 2).ln() / 2",
+      "started_utc": "2026-10-29T18:26:01.032406+00:00",
+      "seconds": 0.2353534169960767,
+      "exit_code": 1,
+      "failed_checks": [
+        "exact_log_normalizer_additivity_d2",
+        "mutation_omit_normalizer_dimension_rejected_d2",
+        "exact_log_normalizer_additivity_d8",
+        "mutation_omit_normalizer_dimension_rejected_d8",
+        "exact_log_normalizer_additivity_d128",
+        "mutation_omit_normalizer_dimension_rejected_d128",
+        "exact_log_normalizer_additivity_d4096",
+        "mutation_omit_normalizer_dimension_rejected_d4096",
+        "exact_log_normalizer_additivity_d1048576",
+        "mutation_omit_normalizer_dimension_rejected_d1048576",
+        "fixed_hilbert_schmidt_control_d4",
+        "fixed_hilbert_schmidt_control_d16",
+        "fixed_hilbert_schmidt_control_d64",
+        "fixed_hilbert_schmidt_control_d256"
+      ],
+      "rejected": true,
+      "files": [
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_missing_rank.py",
+          "sha256": "c2944e08385abef0bf3ebd90d5122222ddbdfa7dbfde823696c8deaed038776d"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_missing_rank.stdout.json",
+          "sha256": "c755373d1cf33fc6a24e8c1d69ff10a2872d33a893365bfc9f490ff67ba50cf5"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_missing_rank.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "mutation": "lost_gaussian_half",
+      "old": "return Decimal(d) * (Decimal(1) - dec(t) ** 2).ln() / 2",
+      "new": "return Decimal(d) * (Decimal(1) - dec(t) ** 2).ln()",
+      "started_utc": "2026-10-29T18:26:01.268131+00:00",
+      "seconds": 0.14809754199814051,
+      "exit_code": 1,
+      "failed_checks": [
+        "fixed_hilbert_schmidt_control_d1",
+        "fixed_hilbert_schmidt_control_d4",
+        "fixed_hilbert_schmidt_control_d16",
+        "fixed_hilbert_schmidt_control_d64",
+        "fixed_hilbert_schmidt_control_d256"
+      ],
+      "rejected": true,
+      "files": [
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_lost_gaussian_half.py",
+          "sha256": "1360c1bcea0b182ca0608a0237c2c18c10f20e8755b409f6781aef47ff7dddd0"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_lost_gaussian_half.stdout.json",
+          "sha256": "8877f87e1579215a6438895250072ec50fda02725221602bd9b19036a6f31c8a"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_lost_gaussian_half.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "mutation": "wrong_schur_sign",
+      "old": "Q = I.row_join(T).col_join(T.row_join(I))",
+      "new": "Q = I.row_join(T).col_join((-T).row_join(I))",
+      "started_utc": "2026-10-29T18:26:01.416518+00:00",
+      "seconds": 0.14741312497062609,
+      "exit_code": 1,
+      "failed_checks": [
+        "plus_minus_diagonalization_d1",
+        "full_schur_determinant_d1",
+        "closed_two_step_trace_d1",
+        "mutation_wrong_schur_sign_rejected_d1",
+        "plus_minus_diagonalization_d2",
+        "full_schur_determinant_d2",
+        "closed_two_step_trace_d2",
+        "mutation_wrong_schur_sign_rejected_d2",
+        "plus_minus_diagonalization_d3",
+        "full_schur_determinant_d3",
+        "closed_two_step_trace_d3",
+        "mutation_wrong_schur_sign_rejected_d3",
+        "plus_minus_diagonalization_d5",
+        "full_schur_determinant_d5",
+        "closed_two_step_trace_d5",
+        "mutation_wrong_schur_sign_rejected_d5"
+      ],
+      "rejected": true,
+      "files": [
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_wrong_schur_sign.py",
+          "sha256": "b509e851b678ba7010688d864e97a17ff3a835d7aa182564db90a75caa326201"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_wrong_schur_sign.stdout.json",
+          "sha256": "0d314170c73691b2848daf604a4cf5e4aa976074a11de9e081427c8b0452d115"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_wrong_schur_sign.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "mutation": "omitted_density_normalizer",
+      "old": "norm = (Decimal(1) - dec(t) ** 2) ** (Decimal(d) / 2)",
+      "new": "norm = Decimal(1)",
+      "started_utc": "2026-10-29T18:26:01.564391+00:00",
+      "seconds": 0.1485840420355089,
+      "exit_code": 1,
+      "failed_checks": [
+        "normalization_identity_d1",
+        "normalization_identity_d7",
+        "normalization_identity_d64"
+      ],
+      "rejected": true,
+      "files": [
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_omitted_density_normalizer.py",
+          "sha256": "668d4e8dcb82047412fb62a33f1c1b7cb6b0e928c8461822d4f3b7b2f39429c8"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_omitted_density_normalizer.stdout.json",
+          "sha256": "2f9b98033ad31ccbd994f7cafcf2a1b2133bd8a7aca2218b92a8eaf6a67e6b88"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_omitted_density_normalizer.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "mutation": "wrong_first_mark_sign",
+      "old": "first_exact = -d * t / (1 - t * t)",
+      "new": "first_exact = d * t / (1 - t * t)",
+      "started_utc": "2026-10-29T18:26:01.713290+00:00",
+      "seconds": 0.14708554098615423,
+      "exit_code": 1,
+      "failed_checks": [
+        "normalizer_source_first_d1",
+        "normalizer_source_first_d17",
+        "normalizer_source_first_d4096"
+      ],
+      "rejected": true,
+      "files": [
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_wrong_first_mark_sign.py",
+          "sha256": "2d6bf3a7509455c7329730331b95301deef3d3b16d98524b0a55f048b98c808c"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_wrong_first_mark_sign.stdout.json",
+          "sha256": "fe8c6419f764b52acd566040f3a1c30d1002d532680fa8f6c5a38b121e4b5548"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_wrong_first_mark_sign.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "mutation": "wrong_second_mark_numerator",
+      "old": "second_exact = -d * (1 + t * t) / (1 - t * t) ** 2",
+      "new": "second_exact = -d * (1 - t * t) / (1 - t * t) ** 2",
+      "started_utc": "2026-10-29T18:26:01.860685+00:00",
+      "seconds": 0.14784420799696818,
+      "exit_code": 1,
+      "failed_checks": [
+        "normalizer_source_second_d1",
+        "normalizer_source_second_d17",
+        "normalizer_source_second_d4096"
+      ],
+      "rejected": true,
+      "files": [
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_wrong_second_mark_numerator.py",
+          "sha256": "5b6aa5935ad2034c99df0fac3a975aac989593b1df88096898aaf2e4e6504399"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_wrong_second_mark_numerator.stdout.json",
+          "sha256": "a22f04002fe43ce86e9ddafab685b3463086275ae3ae78941e4eb2f477fef6a8"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_wrong_second_mark_numerator.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "mutation": "grid_dimension_coefficient",
+      "old": "diameter = 4 * R * (q - 1)",
+      "new": "diameter = 3 * R * (q - 1)",
+      "started_utc": "2026-10-29T18:26:02.008835+00:00",
+      "seconds": 0.15350949997082353,
+      "exit_code": 0,
+      "failed_checks": [],
+      "rejected": false,
+      "files": [
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_grid_dimension_coefficient.py",
+          "sha256": "526b4d008a6629adee276ac362f10bc216f090c9447ef74e4964932aadd1822b"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_grid_dimension_coefficient.stdout.json",
+          "sha256": "0ed336b9c9aec13546b1378286e46ec05d649b33675b6e689eb23ddbc16229f5"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_grid_dimension_coefficient.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "mutation": "haar_normalization",
+      "old": "nu = tuple(epsilon / 3 + (1 - epsilon) * x for x in residual)",
+      "new": "nu = tuple(epsilon + (1 - epsilon) * x for x in residual)",
+      "started_utc": "2026-10-29T18:26:02.162668+00:00",
+      "seconds": 0.14900350000243634,
+      "exit_code": 1,
+      "failed_checks": [
+        "finite_haar_density_normalized"
+      ],
+      "rejected": true,
+      "files": [
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_haar_normalization.py",
+          "sha256": "137e6372807ba4ab4f6442a5f6ca6428e20ffb6db09b19c3f3741c92021ed395"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_haar_normalization.stdout.json",
+          "sha256": "d2d6cdf187864031f84c157deab5cec421c01f5dd01f8615d532b3c32d117ba1"
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mutant_haar_normalization.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    }
+  ],
+  "rejected": 7,
+  "total": 8
+}

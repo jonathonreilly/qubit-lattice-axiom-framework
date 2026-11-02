@@ -1,0 +1,21 @@
+b4b55_1 -- Lemma AVG exact check (S_3, 3x3 periodic 2D lattice)
+polymers: ['P(0, 0)', 'P(0, 1)', 'P(0, 2)', 'P(1, 0)', 'P(1, 1)', 'P(1, 2)', 'P(2, 0)', 'P(2, 1)', 'P(2, 2)', 'D(0, 0)', 'D(1, 1)', 'D(2, 2)']
+config A E = 81 | sum R = 81 P0 True | sum Rbar = 81 P1 True
+config C E = 77 | sum R = 77 P0 True | sum Rbar = 77 P1 True
+config R1 E = 55 | sum R = 55 P0 True | sum Rbar = 55 P1 True
+config R2 E = 51 | sum R = 51 P0 True | sum Rbar = 51 P1 True
+config R3 E = 28 | sum R = 28 P0 True | sum Rbar = 28 P1 True
+P0 (input identity): True
+P1 (AVG (c) identity): True
+P4 (hand prediction chi/9, 2/3): True
+P2 (AVG (b) invariance under non-constant gauges): True
+P5(a) (some input piece is NOT invariant): True
+P3 (AVG (a) locality): True
+P5(b) (non-constant invariant correction for P(0,0)): A -> 1/3  C -> 1/9 : True
+P6 (bound) over 1296 local configs of P(0,0): max|Rbar| = 28/3  max|R| = 19 : True
+K1 (drop site s+e1 from a Tset average) fires (P2 fails): True
+K2 (drop -h(top) of P(1,0)) fires (P0 fails): True
+K3 (constant gauges only) fires (P2 fails): True
+K4 (coefficient 1/8) fires (P4 fails): True
+GATES: True  CONTROLS: True
+OVERALL: PASS

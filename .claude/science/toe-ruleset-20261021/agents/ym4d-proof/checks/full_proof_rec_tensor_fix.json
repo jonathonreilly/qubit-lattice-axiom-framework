@@ -1,0 +1,20 @@
+{
+  "scope": "Implement only the independently derived arbitrary-direction Cartesian tensor boost bound in REVIEW_REC_LIB. Affected confirmation pending; no R-CONT, reconstruction or Yang-Mills target closure.",
+  "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+  "before_sha256": "79e570f5c21c0ceceb4dc076fabb1e7ce696afa1bbd4630da036456d3de53b13",
+  "after_sha256": "90e38f069ee9d52c02bcef6024b579b95d752408267763cd6b446f96679f6533",
+  "original_source_commit": "8e9ab9cadbaa62f40beb7a64e68ff4c246d0011b",
+  "review": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_REC_LIB.md",
+    "sha256": "bc3e0605118496656b9757a2ab8008b22a24880dda4a495206f7a10c67f6c286"
+  },
+  "original_paragraph": "A boost of rapidity u has ||D_M||_1\u2264exp(r_max|u|), hence costs at most\nexp(r_max n|u|). This bound also holds for complex u: the vector boost\ngenerator has induced \u2113\u00b9 norm one, and its exponential power series\nis bounded by exp(|u|). Spacetime chain-rule factors are\nstill those of L-HILB. Component aggregation costs at most m^n as above.",
+  "replacement_paragraph": "For a boost of real unit spatial direction v and real or complex rapidity u,\nthe vector generator is K(v)=[[0,v^T],[v,0]], with induced norm\n||K(v)||_1=||v||_1\u2264sqrt(3). Its exponential power series therefore gives\n||exp(u K(v))||_1\u2264exp(||v||_1|u|). Induced \u2113\u00b9 norms multiply for tensor\nproducts and take the maximum over direct sums, so\n||D_M||_1\u2264exp(r_max ||v||_1|u|) and the n-slot cost is at most\nexp(sqrt(3) r_max n|u|). For a coordinate-axis boost ||v||_1=1, recovering\nthe sharper exp(r_max n|u|). Spacetime chain-rule factors are still those\nof L-HILB. Component aggregation costs at most m^n as above.",
+  "initial_prestated_prefix_unchanged": true,
+  "initial_prefix_sha256": "8c90178454da5d5a19643cf615105d5aef6d4ebf2bde7650b64098602102809c",
+  "coordinator_read_scope": "Complete independent REC review; source tensor extension section15, complete boost/r_max occurrence search. No full REC author-source read is asserted.",
+  "failure_preservation": "An initial rg pattern with an incorrectly escaped open brace failed before any file modification; literal-pattern follow-up completed.",
+  "R_CONT": "OPEN",
+  "full_existence": "OPEN",
+  "physical_continuum_mass_gap": "OPEN"
+}

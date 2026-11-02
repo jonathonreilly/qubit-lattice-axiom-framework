@@ -1,0 +1,5 @@
+start 23:30:24 UTC; 19:30  up 5 days, 13:19, 2 users, load averages: 2.73 3.48 3.38
+System-wide memory free percentage: 42%
+end 23:35:13 UTC rc=0
+      289.36 real       282.71 user         5.10 sys
+           921632768  maximum resident set size

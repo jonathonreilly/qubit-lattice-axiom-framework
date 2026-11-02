@@ -1,0 +1,114 @@
+{
+  "schema": "source-history-author-su2-v1",
+  "scope": "Actual S4 contour geometry and a one-link SU2 Haar slice with every other fine link fixed to I; not the full cube denominator or a weak-coupling proof",
+  "checks": {
+    "actual_contour_count": true,
+    "actual_contour_length": true,
+    "one_edge_occurs_at_most_twice_per_contour": true,
+    "actual_interior_link_count_each_block": true,
+    "six_plaquettes_per_fine_link": true,
+    "actual_PY_per_cube_count": true,
+    "paired_contours_stay_in_two_endpoint_blocks": true,
+    "interior_link_reads_at_most_eight_coarse_kernels": true,
+    "interblock_link_reads_one_coarse_kernel": true,
+    "eight_actual_kernel_means_normalized": true,
+    "central_link_nontrivial_in_all_eight_means": true,
+    "nonendpoint_contours_do_not_read_central_link": true,
+    "actual_SU2_unitarity_and_noncommuting_coarse_data": true,
+    "actual_matrix_trace_matches_quaternion_kernel": true,
+    "Haar_Bessel_coefficients_ten_orders": true,
+    "actual_kernel_normalizer_Haar_integral": true,
+    "actual_cut_Haar_reference_positive": true,
+    "angle_and_quaternion_good_integrals_agree": true,
+    "angle_and_quaternion_bad_integrals_agree": true,
+    "actual_Haar_slice_compensation_identity": true,
+    "stress_actual_contour_probabilities": true,
+    "stress_exponent_positive_exact": true,
+    "rough_diagonal_collar_is_outside_all_eight_kernel_endpoints": true,
+    "fixed_rough_collar_forces_completion_failure": true,
+    "actual_conditional_cut_failure_near_one": true
+  },
+  "negative_controls": {
+    "omitting_kernel_endpoint_collar_rejected": true,
+    "coarse_noncommutativity_control": true,
+    "actual_Haar_drop_compensator_control": true,
+    "actual_Haar_omit_kernel_normalizer_control": true,
+    "wrong_nonlinear_cut_boundary_control": true,
+    "collapse_noncommuting_coarse_axes_control": true,
+    "dropping_completion_selector_stress_control": true
+  },
+  "counts": {
+    "checks": 25,
+    "negative_controls": 7
+  },
+  "T": 2,
+  "L": 3,
+  "D": 3,
+  "fine_links": 5184,
+  "interior_links_per_block": 216,
+  "max_PY_single_cube": 648,
+  "contour_word_powers": {
+    "(0, False)": {
+      "0": 1656,
+      "1": 288
+    },
+    "(0, True)": {
+      "0": 1728,
+      "-1": 216
+    },
+    "(1, False)": {
+      "0": 1704,
+      "1": 240
+    },
+    "(1, True)": {
+      "0": 1704,
+      "-1": 240
+    },
+    "(2, False)": {
+      "0": 1704,
+      "1": 240
+    },
+    "(2, True)": {
+      "0": 1704,
+      "-1": 240
+    },
+    "(3, False)": {
+      "0": 1704,
+      "1": 240
+    },
+    "(3, True)": {
+      "0": 1704,
+      "-1": 240
+    }
+  },
+  "quadrature": {
+    "decimal_digits": 65,
+    "tolerance": "1.0e-45",
+    "interval_certified": false,
+    "u": "1.25",
+    "kappa": "0.8",
+    "source": "(0.02 + 0.04j)",
+    "cut": "0.5",
+    "D0": "15.7958651755564291609744523878",
+    "N0": "18.8108574576899022274583982802",
+    "good_error": "1.9000406e-65",
+    "bad_error": "3.8056383e-65",
+    "return_error": "1.4836825e-67",
+    "drop_compensator_error": "0.0249807792682"
+  },
+  "stress": {
+    "scope": "One-link conditional SU2 slice, not the full cube integral or unconditional Wilson measure",
+    "u": "20.0",
+    "kappa": 10,
+    "exact_margin": "109/20",
+    "log10_good_probability": "-226.964588422296654",
+    "bad_probability_exceeds_0.99": true
+  },
+  "versions": {
+    "mpmath": "1.3.0",
+    "sympy": "1.14.0"
+  },
+  "source_sha256": "73708e3f894c0e7c9f7b59baa1007692a48e83033da6fad04660ed2cf12a9f32",
+  "elapsed_seconds": 6.782528708979953,
+  "all_pass": true
+}

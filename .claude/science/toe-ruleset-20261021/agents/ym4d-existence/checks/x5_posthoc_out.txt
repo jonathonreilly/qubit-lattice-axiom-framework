@@ -1,0 +1,4 @@
+# POST-HOC (not pre-registered; informational): re-run of x5 A3(ii) with seeds 11-13, ~1e6 accepted each
+seed 11: r=0.434 n=1012539 (mean q0 - a(6))/SE = +0.99; vector comps / SE = -0.91 +0.14 -0.93
+seed 12: r=0.215 n=1013552 (mean q0 - a(6))/SE = -1.64; vector comps / SE = -0.84 +1.77 +0.85
+seed 13: r=0.354 n=1013637 (mean q0 - a(6))/SE = +1.12; vector comps / SE = -1.01 -0.19 +0.67

@@ -1,0 +1,10 @@
+PASS  D1 t^2 e(t) <= L^4 t_{m+1}^2 e(t_{m+1}) on [t_{m+1}, t_m] for non-increasing e  checked=43200, violations=0
+FIRES  D1-F increasing e(t) = 1 + t violates the bound  
+PASS  D2 (i) threshold holds on [m1c, m1c+40]; (ii) m1c >= m1prime - 1  sets=200, viol(i)=0, viol(ii)=0
+FIRES  D2-F at m1c - 1 the inequality fails (sharpness of the least index)  200/200
+PASS  D3 beta_- >= beta'/2 > 0 and beta_+ <= beta'' + beta'/2 when C_rho gamma^2 <= beta' ell/2  violations=0
+FIRES  D3-F C_rho gamma^2 = beta' ell gives beta_- = 0  
+PASS  D4 k_alpha = 4 pi k_g; 4 k_g/b0 = 4 gamma + 208/33 - (36/11) log3  -36*Lambda/11 + 4*gamma + 208/33
+FIRES  D4-F k_alpha in place of k_g changes the coefficient  
+gates: 4/4 pass; controls: 4/4 fire
+VERDICT: PASS

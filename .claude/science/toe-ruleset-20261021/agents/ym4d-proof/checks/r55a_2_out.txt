@@ -1,0 +1,98 @@
+r55a_2  decade arithmetic (criteria: r55a_2_criteria.md).  enclosures are rigorous rational intervals.
+ln2 enclosure width +0.000 ; ln10 width +0.000
+
+== G1 gain (linear vs quadratic a_RS), kappa = 1
+  eps=6.7e-40                  N=2: gain [+82.140564, +82.140564]   direct==closed form: True
+      vs +82.1406: REPRODUCES
+      vs +82.1410: REPRODUCES
+  eps=6.7e-40                  N=3: gain [+82.492746, +82.492746]   direct==closed form: True
+      vs +82.4927: REPRODUCES
+  eps=prop 9.38495112638e-45   N=2: gain [+91.847849, +91.847849]   direct==closed form: True
+      vs +91.8478: REPRODUCES
+      vs +91.8480: REPRODUCES
+  eps=prop 9.38495112638e-45   N=3: gain [+92.200032, +92.200032]   direct==closed form: True
+      vs +92.2000: REPRODUCES
+
+== G2 margins log10((a/100)/DX'), eps = 6.7e-40, N = 2, kappa = 1
+  a_RS quadratic = 5.931360e-166 ; a_RS linear = 8.198188e-84
+  quad /100, DX'=2.456e-152: [-15.617074, -15.617074]  vs -15.617: REPRODUCES
+  quad /100, DX'=2.5e-152  : [-15.624786, -15.624786]  vs -15.62479 (ARS_BIND A6): REPRODUCES
+  quad /(625*100), DX'=2.456e-152: [-18.412954, -18.412954]  vs -18.413: REPRODUCES
+  lin /100, DX'=2.456e-152: [+66.523490, +66.523490]  vs +66.523: REPRODUCES
+  lin /(625*100), DX'=2.456e-152: [+63.727610, +63.727610]  vs +63.728: REPRODUCES
+  power: the two DX' inputs differ by [+0.007712, +0.007712] decades (>= 0.005 required): True
+
+== G3 live a = theta*c_pr*eps^2 at the supremum theta = 1/24, c_pr = 1/(640*53^2)
+  c_pr = 1/1797760 = 5.562478e-7 ; a_bad = 2.496996e-85 ; a = 1.0404151e-86
+  vs 1.040415e-86 (ARS_BIND A7): relative diff 1.049e-7 -> REPRODUCES
+  margin a/100 vs DX'=2.5e-152  : [+63.619267, +63.619267]  vs +63.61927: REPRODUCES
+  margin a/100 vs DX'=2.456e-152: [+63.626978, +63.626978]
+  ATTRIBUTION: (-15.6171...) - (-15.6248...) = [+0.0077116, +0.0077116] ; log10(2.5/2.456) = [+0.0077116, +0.0077116]
+  -> DIFFERENT-DX-INPUT
+  [report] theta=1/96 ([HW-2]): margin vs DX'=2.456e-152 = [+63.025, +63.025]
+  [report] theta=1/(96*82) (W-cb collar): margin vs DX'=2.456e-152 = [+61.111, +61.111]
+
+== G4 route ratios at eps = 6.7e-40
+  N=2: eta_KN/eta_q = 512/13 ; bare = 262144/169 = +1551.1479 ; per-cube (81/625) = 21233664/105625 = +201.0288
+     bare vs +1551.148: REPRODUCES ; per-cube vs +201.029: REPRODUCES ; log10 per-cube [+2.303258, +2.303258] vs +2.3033: REPRODUCES
+  N=3: eta_KN/eta_q = 768/13 ; bare = 589824/169 = +3490.0828 ; per-cube (81/625) = 47775744/105625 = +452.3147
+     bare vs +3490.083: REPRODUCES ; per-cube vs +452.315: REPRODUCES ; log10 per-cube [+2.655441, +2.655441] vs +2.6554: REPRODUCES
+
+== G5(a) eta_KN/eta_q across eps in (0,2]
+  N=2 eps=  6.70e-40: ratio = +39.3846  EXACT-256N/13
+  N=2 eps=     +0.00: ratio = +39.3846  EXACT-256N/13
+  N=2 eps=     +0.39: ratio = +39.3846  EXACT-256N/13
+  N=2 eps=     +0.40: ratio = +39.3846  EXACT-256N/13
+  N=2 eps=     +0.41: ratio = +40.3692  NOT 256N/13
+  N=2 eps=     +1.00: ratio = +98.4615  NOT 256N/13
+  N=2 eps=     +2.00: ratio = +196.9231  NOT 256N/13
+  N=3 eps=  6.70e-40: ratio = +59.0769  EXACT-256N/13
+  N=3 eps=     +0.00: ratio = +59.0769  EXACT-256N/13
+  N=3 eps=     +0.39: ratio = +59.0769  EXACT-256N/13
+  N=3 eps=     +0.40: ratio = +59.0769  EXACT-256N/13
+  N=3 eps=     +0.41: ratio = +60.5538  NOT 256N/13
+  N=3 eps=     +1.00: ratio = +147.6923  NOT 256N/13
+  N=3 eps=     +2.00: ratio = +295.3846  NOT 256N/13
+  claim 'by 512/13 (768/13) at every eps_1': REFUTED-AS-UNIVERSAL ; REVERSAL-HOLDS
+
+== G5(b) RLARGE l.65 as written today (current eta_RS)
+  N=2 eps=  6.70e-40: eta_RS/eta_q = 3.3500e-40  cap(delta_0/9) active: False  -> clause holds: True
+  N=2 eps=     +0.00: eta_RS/eta_q = +0.000500  cap(delta_0/9) active: False  -> clause holds: True
+  N=2 eps=     +0.39: eta_RS/eta_q = +0.195000  cap(delta_0/9) active: False  -> clause holds: True
+  N=2 eps=     +0.40: eta_RS/eta_q = +0.200000  cap(delta_0/9) active: False  -> clause holds: True
+  N=2 eps=     +0.41: eta_RS/eta_q = +0.210125  cap(delta_0/9) active: True  -> clause holds: True
+  N=2 eps=     +1.00: eta_RS/eta_q = +1.250000  cap(delta_0/9) active: True  -> clause holds: True
+  N=2 eps=     +2.00: eta_RS/eta_q = +5.000000  cap(delta_0/9) active: True  -> clause holds: True
+  N=3 eps=  6.70e-40: eta_RS/eta_q = 3.3500e-40  cap(delta_0/9) active: False  -> clause holds: True
+  N=3 eps=     +0.00: eta_RS/eta_q = +0.000500  cap(delta_0/9) active: False  -> clause holds: True
+  N=3 eps=     +0.39: eta_RS/eta_q = +0.195000  cap(delta_0/9) active: False  -> clause holds: True
+  N=3 eps=     +0.40: eta_RS/eta_q = +0.200000  cap(delta_0/9) active: False  -> clause holds: True
+  N=3 eps=     +0.41: eta_RS/eta_q = +0.210125  cap(delta_0/9) active: True  -> clause holds: True
+  N=3 eps=     +1.00: eta_RS/eta_q = +1.250000  cap(delta_0/9) active: True  -> clause holds: True
+  N=3 eps=     +2.00: eta_RS/eta_q = +5.000000  cap(delta_0/9) active: True  -> clause holds: True
+  -> L65-TRUE-AS-WRITTEN ; control (drop the 'unless' clause) finds a violation: FIRES
+
+== G6(a) post-adoption branch of a_RS
+  kappa* = 256/27378 = 128/13689 = +0.00935057 ; 117^2*2 = 27378
+  active branch decided by kappa >= kappa* alone at every tested (eps, N, kappa): BOUNDARY-KAPPA-ONLY
+  at kappa = 1, N = 2, plaquette branch active at eps = 814, 815, 1000, 1e6: True -> '814.587' STALE
+== G6(b) pre-adoption branch (current eta_RS), N = 2
+  kappa=1   : plaquette active at eps = 1,511,513,700,814,815,1000,1e4: [True, True, True, True, True, True, True, True]
+  kappa=1/100 (control): [True, False, False, False, False, False, False, False]
+  -> ALWAYS-PLAQUETTE at kappa=1 ; control FIRES ; ARS_FIX 'active iff eps_1 < 814.587': REFUTED-AS-IFF
+  quadratic-formula crossover eps^2 = 4608^2*4/128 = 663552 (eps = 814.587...), while the quadratic entry of eta_RS is active only for eps <= 4608N/18 = 512
+
+== G7 Codex F4's re-centring-free linear threshold eta_F4 = min{eps/18, eps/(32 sqrt(N) A_d)}
+  N=2: eta_KN/eta_F4 = 288 sqrt(N)/117 in [+3.481141, +3.481141] ; RECENTRING-SHARE D = [+1.08344, +1.08344] decades ; gain of eta_F4 over eta_RS at 6.7e-40 = [+81.05712, +81.05712]
+     eta_F4 vs RS-lin's eta_q: eta_F4/eta_q = 8 sqrt(N) in [+11.3137, +11.3137]
+  N=3: eta_KN/eta_F4 = 288 sqrt(N)/117 in [+4.263510, +4.263510] ; RECENTRING-SHARE D = [+1.25953, +1.25953] decades ; gain of eta_F4 over eta_RS at 6.7e-40 = [+81.23321, +81.23321]
+     eta_F4 vs RS-lin's eta_q: eta_F4/eta_q = 8 sqrt(N) in [+13.8564, +13.8564]
+
+== G8 RS-lin joint per-cube exponent vs live a, eps = 6.7e-40, N = 2
+  a_eta(eta_q)/81 = 6.524987e-89  vs 6.52499e-89: REPRODUCES
+  log10(a_live/joint) = [+2.20263, +2.20263]  vs 2.20263: REPRODUCES
+  joint per-cube margin vs DX'=2.456e-152: [+61.4244, +61.4244] (RA-17 quotes +61.424)
+
+== G9 C_Omega at which the a_RS 'breach' reverses (= 10^{-margin})
+  DX'=2.456e-152: C_Omega* = 4.14070e15  vs 4.14e15: REPRODUCES
+  DX'=2.5e-152  : C_Omega* = 4.21488e15  vs 4.2149e15: REPRODUCES

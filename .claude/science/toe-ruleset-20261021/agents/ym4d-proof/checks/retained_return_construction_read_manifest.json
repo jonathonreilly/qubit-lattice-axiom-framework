@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "role": "Author actual-read record; not independent review, audit or proof certification.",
+  "requested_configuration": "Human-authorized Astra/max setting; no backend attestation.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+    "lines": 654,
+    "sha256": "920865b2ee1f528c1a3134858023b725fd5c69849d84af372d094bf00c22ce12"
+  },
+  "inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "lines": 649,
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "fresh_direct_read_ranges": "24-185; 225-373",
+      "use": "Literal source-free reference, original units, six total fields/four sources, regulator multiplicities, RGA14 joint target, exact-factorization requirement and native mu+2."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXSMALL.md",
+      "lines": 692,
+      "sha256": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+      "fresh_direct_read_ranges": "24-180; 665-692",
+      "use": "Actual paired paths, MS4-MS9 positive normalized jet polynomials and retained-selector restriction; specific remaining bounded-core request."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "lines": 617,
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "fresh_direct_read_ranges": "45-235; 255-285",
+      "use": "Exact tree Haar quotient, whole-block conditional, all mode/brick counts, centered kernel identity, compact energy and Haar maximizer-cap constants."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "lines": 641,
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "fresh_direct_read_ranges": "41-185",
+      "use": "Actual touching-factor compact conditional, local coercivity, reset shell action, full normalizer and cap lower bound OC1-OC6. No broader conditional/mixing theorem consumed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "lines": 597,
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "fresh_direct_read_ranges": "1-597 complete",
+      "use": "Actual original-cut/chart distinction, old hard shell and curvature/source constants, full physical reference. The new theorem instead uses the compact cap and separately compares the source-free denominator; SC complex-chart return is not silently reused for retained jets."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+      "lines": 490,
+      "sha256": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+      "fresh_direct_read_ranges": "1-490 complete",
+      "use": "Inspected current SG construction, actual positive whole core versus non-PSD atoms, full-reader exponential tail and small beta budget. Comparison only: no Gaussian supplier substitutes for RT27 outside law."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "lines": 937,
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "fresh_direct_read_ranges": "250-400; 615-735",
+      "use": "Actual real Haar pullback, fixed hard predicates, ten-position positive-score and finite Taylor construction, original reserve. No WR bare-coarse result promoted to retained-fine or global history jets."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "lines": 644,
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "fresh_direct_read_ranges": "1-300",
+      "use": "Original cut/source/chart definitions, simultaneous component geometry, exact hard partition and selected/unselected gluing. RT5-RT7 prove the changed smooth representation independently."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "lines": 753,
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "fresh_direct_read_ranges": "40-180",
+      "use": "Exact original measure, full critical prefactor, bounded-buffer insertion and its global reference. Earlier truncated deliveries are not counted beyond the recovered window."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MEAN_READER_RETURN_ASTRA.md",
+      "lines": 710,
+      "sha256": "30858a4bb6f045ba558dcdb527c46878ee6bb60fef83b3aef4ba39d79a8d527a",
+      "fresh_direct_read_ranges": "280-425; 660-710",
+      "use": "Actual small-boundary finite-jet scope and explicit generic-input/reader-rate limits. Prior authored complete source remains frozen; no mean theorem used as a compact-law premise."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "lines": 11,
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "fresh_direct_read_ranges": "1-11 complete",
+      "use": "Written analysis needs no numerical preregistration; source-first freeze and a different fresh reviewer; root owns publication."
+    }
+  ],
+  "authority": {
+    "selected_repository_procedure_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "pinned_read_record": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "lines": 246,
+      "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0"
+    },
+    "all_10_current_consumed_governing_path_hashes_match": true,
+    "same_session_governing_and_installed_reads": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mean_reader_return_read_manifest.json",
+      "lines": 192,
+      "sha256": "e36cfc1bbaa78a8f597b6378a22fc2ca0ed1bf9ec37a474815e4a36edaf4c513"
+    },
+    "carried_agents_and_installed_skill_entries_rehashed_unchanged": true,
+    "distribution_selection": "Actual installed physics-loop140 and review-loop313 were completely read in the prior authorized SG amendment/MEAN work. Their identities in the carried manifest were rechecked; no new installed read or reference-tree synchronization is claimed. The pinned repository procedure/references and owner PROCESS_LIGHT remain selected, with root owning Git, fronts, audit and fresh review."
+  },
+  "primary_reads": [
+    {
+      "url": "https://arxiv.org/html/1212.5562v2",
+      "actual_text_coverage": "Initial contents0-34; find excerpts1238-1241 and1587-1597; bounded full delivered window1563-1645, including section3.10 at1590-1637.",
+      "use": "Exact complementary-cut partition and preservation of outside factors are architectural antecedents. The scalar/d3 theorem is not imported. The explicit C6 cutoff and compact gauge ratio are rebuilt here."
+    },
+    {
+      "url": "https://arxiv.org/html/1403.7244v2",
+      "actual_text_coverage": "Initial contents0-24; find excerpts of section3.7/3.8, particularly614-645; full bounded delivered1138-1225, including Lemma6.4 statement/proof1175-1201.",
+      "use": "A measurable integrated fluctuation factor in a fixed Gaussian norm is distinguished from a retained hard predicate and a differentiated compact conditional. No fermionic/Gaussian integration theorem is imported."
+    }
+  ],
+  "search_limits": "Named-file rg discovery and two batched deliveries were truncated. Consumed CS/OC, MK40-180 and CG1-300 windows were subsequently recovered in bounded reads. Unopened nonprimary search results and papers appearing only in search abstracts are not premises. No broad directory/home scan.",
+  "author_source_read": "Draft ranges1-235,236-490,490-654 and every intervening changed hunk were inspected; final changed windows and frozen identity were checked. These are author reads, not independent verification.",
+  "new_steps": [
+    "Exact source-independent C6 first-success partition at threshold alpha/2 with alpha-payable derivative support; original law preserved after shell sum.",
+    "Different-source compact comparison: sourceful numerator over source-FREE conditional, and separately the same-source version.",
+    "True quotient-exterior fine/coarse6 and original-source4 integrated jets, full compact normalizer scores and one charged-root allowance for bounded finite-jet inputs.",
+    "Native mu+2 conditional rooted sum; fixed separated-region conditional log with full source prefactor and its large jet bill retained."
+  ],
+  "remaining": "The actual global correlated outside marginal in RT27, its ten-position jets and history mass, arbitrary regulated inputs and retained exterior hard absences, and common-reference global reader/gas identification are not proved. No all-scale or physical target is closed.",
+  "execution": "Only this new mathematical source and its two retained_return_construction packet files are written. No scientific numerics, Git/front/PR/audit changes, predecessor changes or subworkers."
+}

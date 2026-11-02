@@ -1,0 +1,18 @@
+{
+  "scope": "Only target/scope comparison; neither source supplies an infrared estimate.",
+  "sources": [
+    {
+      "download_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
+      "note": "Primary source was successfully read through the web tool; separate raw-object hash was unavailable.",
+      "read_scope": "Primary sections 3 and 4, PDF pages 5 and 6; web extracted lines 178\u2013225. No claim of complete PDF reading.",
+      "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf"
+    },
+    {
+      "download_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
+      "note": "Primary source was successfully read through the web tool; separate raw-object hash was unavailable.",
+      "read_scope": "Primary announcement date and article body; specifically the release-policy passages and physics section, web extracted lines 13\u201383. Not the unreleased proof.",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+    }
+  ],
+  "utc": "2026-10-29T14:32:05.201253+00:00"
+}

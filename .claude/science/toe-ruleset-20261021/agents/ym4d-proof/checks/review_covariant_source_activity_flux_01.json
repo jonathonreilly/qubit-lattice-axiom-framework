@@ -1,0 +1,164 @@
+{
+  "checks": [
+    {
+      "name": "affine maps do not commute",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all oriented faces equal exact volume change",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "omitted face rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wrong outward sign rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Jacobian derivative omission rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "linear boundary velocity omission rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pointwise top-form divergence identity",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "volume_change_exact": "-8486888765555300884061535515929400151260523153801898112/2188371854978957683124068108996051920480285464396894296875 + 2945972065993765580026793818058597337899010038245857664*I/81841549047993539368867587816112510847230188099396046875",
+  "volume_change_numeric": "-0.00387817488433057309 + 0.0359960447995209376*I",
+  "face_count": 6,
+  "omission_discrepancies": {
+    "face": "0.0450023226135945788 + 0.0668229183732639305*I",
+    "Jacobian_derivative": "-0.00662443868089795984 + 0.0358930309579847132*I",
+    "linear_velocity": "-0.00647999638317281913 + 0.0360506166442743094*I"
+  },
+  "resources": [
+    {
+      "where": "start",
+      "rss": 57950208,
+      "free": 56,
+      "load": [
+        1.78271484375,
+        1.9189453125,
+        1.9111328125
+      ],
+      "nice": 10,
+      "elapsed": 0.0029743750346824527,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "polynomial built",
+      "rss": 65699840,
+      "free": 56,
+      "load": [
+        1.78271484375,
+        1.9189453125,
+        1.9111328125
+      ],
+      "nice": 10,
+      "elapsed": 0.3717229170142673,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "face pair 0",
+      "rss": 68567040,
+      "free": 56,
+      "load": [
+        1.78271484375,
+        1.9189453125,
+        1.9111328125
+      ],
+      "nice": 10,
+      "elapsed": 0.816661709046457,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "face pair 1",
+      "rss": 69582848,
+      "free": 56,
+      "load": [
+        1.78271484375,
+        1.9189453125,
+        1.9111328125
+      ],
+      "nice": 10,
+      "elapsed": 1.2796160000143573,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "face pair 2",
+      "rss": 70516736,
+      "free": 56,
+      "load": [
+        1.78271484375,
+        1.9189453125,
+        1.9111328125
+      ],
+      "nice": 10,
+      "elapsed": 1.7242453750222921,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "completion",
+      "rss": 76693504,
+      "free": 55,
+      "load": [
+        1.7998046875,
+        1.919921875,
+        1.91162109375
+      ],
+      "nice": 10,
+      "elapsed": 3.6106729590101168,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    }
+  ],
+  "scope": "Mixed three-scalar polynomial top form; checks the exact contour/minor mechanism, not an interacting Yang-Mills integral."
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "role": "author provenance and analytic self-check, not independent review or audit",
+  "requested_configuration": "Coordinator-requested Astra/max; no separate backend attestation",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+    "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+    "lines": 247
+  },
+  "freeze_order": "Source hash announced before manifest/lint/receipt; mathematical bytes unchanged after that announcement.",
+  "bounded_result": "Uniform shrinking original-a auxiliary-chart corollary, conditional on frozen SN: fixed R,beta,rho; r_a=sigma p, tau=c sigma p; shrinking original coarse tube; epsilon<=C1 sigma^2+C3 exp(-a p^2/128).",
+  "usefulness": "Not a literal substitution into SN's fixed-radius existence threshold. SH1-SH5 verify its explicit inequalities uniformly and cancel every apparent sigma pole in side and marked-side budgets.",
+  "provisional_dependency": "SN source 47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b was under fresh independent review at preparation; this corollary inherits any required source correction.",
+  "author_analytic_checks": [
+    "SH1-SH2: fixed preliminary majorants, source radius and common covariance family precede r_a(u),tau(u). FU force/contraction/uniqueness and all fine-chart margins survive restriction; no fixed unscaled coarse tube is claimed.",
+    "SH3-SH5: substituted tau=c sigma p into Q_s tau and K_tr Q_s D tau^2; sigma powers cancel exactly. Polynomial degrees are at most 91D+2. Explicit smallness conditions follow from p to infinity and sigma p to zero, without requiring sigma p^3 small.",
+    "SH6-SH7: retained exact critical prefactor, every side/corner and complete reader, and the four beta/8 losses. Scalar Cauchy radii eta/(2D) and rho/2 keep all unscaled coarse-jet costs; only rescaled coarse variables retain a fixed radius.",
+    "SH8-SH9: literal consumers remain distinct. Row summation gives only alternative inclusions for the unchanged source-free white cube. OC's group cap and additional K^-2 curvature restriction remain explicit; no real estimate is promoted to a complex normalized return."
+  ],
+  "package": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shrinking_chart_return_read_manifest.json",
+      "sha256": "c4e29fe60b91488d66885fe6ab84adf81c9ffc425798866bf4340ba3074aa61b",
+      "lines": 96
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shrinking_chart_return_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "lines": 9
+    }
+  ],
+  "protected_sources_unchanged": {
+    "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+    "FINITE_U_CRITICAL_FIELD_ASTRA.md": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+    "STEP55.md": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+    "GRADED_COMPLEMENT_ASTRA.md": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+    "OUTSIDE_CHART_RETURN_ASTRA.md": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4"
+  },
+  "mechanical_checks": {
+    "equation_labels": "SH1-SH9 exactly once as displayed labels",
+    "fences": "balanced",
+    "trailing_whitespace": "none",
+    "vocab_lint": "report-only, zero violations",
+    "local_links": "all resolve after receipt creation",
+    "link_targets": [
+      "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "checks/shrinking_chart_return_read_manifest.json",
+      "checks/shrinking_chart_return_receipt.json"
+    ]
+  },
+  "remaining_interfaces": "Consumer-cut identities, original G/Omega and complement/history return, effective iteration, continuum existence and physical mass gap remain open.",
+  "numerical_experiments": "none",
+  "independent_review": "fresh review requested from coordinator after package completion",
+  "operations": "Only SHRINKING_CHART_RETURN_ASTRA.md and checks/shrinking_chart_return_* created; no earlier byte edits, Git/front/PR/audit operations or additional workers."
+}

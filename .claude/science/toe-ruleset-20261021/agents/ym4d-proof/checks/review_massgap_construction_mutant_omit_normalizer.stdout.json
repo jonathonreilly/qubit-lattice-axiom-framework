@@ -1,0 +1,492 @@
+{
+  "checks": [
+    {
+      "detail": "Independent Catalan-moment and Bessel defining-series normalizers agree through z^14.",
+      "kind": "check",
+      "name": "Haar_moment_Bessel_normalizer",
+      "passed": true
+    },
+    {
+      "detail": "z**11/1238630400 + z**9/8847360 + z**7/92160 + z**5/1536 + z**3/48 + z/4",
+      "kind": "check",
+      "name": "normalized_first_moment",
+      "passed": false
+    },
+    {
+      "detail": "z/4-z^3/96+z^5/1536",
+      "kind": "check",
+      "name": "first_three_coefficients",
+      "passed": false
+    },
+    {
+      "detail": "z**10/98304 + z**8/65536",
+      "kind": "check",
+      "name": "disjoint_plaquette_order_eight",
+      "passed": true
+    },
+    {
+      "detail": {
+        "correct_order_10": "1/98304",
+        "omitted_Z_order_10": "1/98304"
+      },
+      "kind": "negative_control",
+      "name": "normalizer_omission_control",
+      "passed": false
+    },
+    {
+      "detail": "E_Haar[w(V)^2]=1/4, while E_Haar[w(V)]^2=0.",
+      "kind": "negative_control",
+      "name": "repeated_link_product_control",
+      "passed": true
+    },
+    {
+      "detail": {
+        "maximum_absolute_error": 0.0
+      },
+      "kind": "check",
+      "name": "Haar_quadrature_z_0.0",
+      "passed": true
+    },
+    {
+      "detail": {
+        "maximum_absolute_error": 2.220446049250313e-16
+      },
+      "kind": "check",
+      "name": "Haar_quadrature_z_0.125",
+      "passed": true
+    },
+    {
+      "detail": {
+        "maximum_absolute_error": 2.220446049250313e-16
+      },
+      "kind": "check",
+      "name": "Haar_quadrature_z_0.5",
+      "passed": true
+    },
+    {
+      "detail": {
+        "maximum_absolute_error": 1.6653345369377348e-16
+      },
+      "kind": "check",
+      "name": "Haar_quadrature_z_1.0",
+      "passed": true
+    },
+    {
+      "detail": {
+        "maximum_absolute_error": 4.440892098500626e-16
+      },
+      "kind": "check",
+      "name": "Haar_quadrature_z_3.0",
+      "passed": true
+    },
+    {
+      "detail": {
+        "maximum_absolute_error": 1.4210854715202004e-14
+      },
+      "kind": "check",
+      "name": "Haar_quadrature_z_8.0",
+      "passed": true
+    },
+    {
+      "detail": "Four exact noncommuting SU(2) unit quaternions.",
+      "kind": "check",
+      "name": "rational_quaternion_unit",
+      "passed": true
+    },
+    {
+      "detail": {
+        "oriented_trace": "-648/5525",
+        "wrong_dagger_trace": "504/1105"
+      },
+      "kind": "negative_control",
+      "name": "orientation_dagger_control",
+      "passed": true
+    },
+    {
+      "detail": "Exact rational vertex gauge transformation preserves the loop trace.",
+      "kind": "check",
+      "name": "loop_root_gauge_covariance",
+      "passed": true
+    },
+    {
+      "detail": {
+        "coarse_loop_covariance_at_every_separation": 9.047731301003486e-13
+      },
+      "kind": "check",
+      "name": "two_sector_noise_lambda_0.125",
+      "passed": true
+    },
+    {
+      "detail": {
+        "coarse_loop_covariance_at_every_separation": 5.4885940594557076e-08
+      },
+      "kind": "check",
+      "name": "two_sector_noise_lambda_0.5",
+      "passed": true
+    },
+    {
+      "detail": {
+        "coarse_loop_covariance_at_every_separation": 1.1078813274625746e-05
+      },
+      "kind": "check",
+      "name": "two_sector_noise_lambda_1.0",
+      "passed": true
+    },
+    {
+      "detail": {
+        "coarse_loop_covariance_at_every_separation": 0.010822301543242013
+      },
+      "kind": "check",
+      "name": "two_sector_noise_lambda_3.0",
+      "passed": true
+    },
+    {
+      "detail": "At K_0=1, the coarse field is Haar but d_J d_H log Z(J,H)=1.",
+      "kind": "check",
+      "name": "lambda_zero_source_only_term",
+      "passed": true
+    },
+    {
+      "detail": "Dropping the source-dependent field-independent term changes the exact mixed derivative.",
+      "kind": "negative_control",
+      "name": "discard_source_only_term_control",
+      "passed": true
+    },
+    {
+      "detail": {
+        "leading_value_relative_or_ratio_error": 6.661338147750939e-16
+      },
+      "kind": "check",
+      "name": "cycle_convergence_beta_0.25",
+      "passed": true
+    },
+    {
+      "detail": {
+        "smallest_numeric_eigenvalue": -8.914768983240288e-34,
+        "symmetry_error": 0.0
+      },
+      "kind": "check",
+      "name": "cycle_positive_symmetric_beta_0.25",
+      "passed": true
+    },
+    {
+      "detail": {
+        "minorization": 0.1353352832366127,
+        "minorization_ratio_upper_bound_float": 0.8646647167633873,
+        "ratio": 1.4983856775114306e-05,
+        "spectral_ratio_gap": 0.9999850161432249
+      },
+      "kind": "check",
+      "name": "cycle_full_gap_bound_beta_0.25",
+      "passed": true
+    },
+    {
+      "detail": {
+        "leading_value_relative_or_ratio_error": 7.771561172376096e-16
+      },
+      "kind": "check",
+      "name": "cycle_convergence_beta_1.0",
+      "passed": true
+    },
+    {
+      "detail": {
+        "smallest_numeric_eigenvalue": -3.70593194049779e-34,
+        "symmetry_error": 8.470329472543003e-22
+      },
+      "kind": "check",
+      "name": "cycle_positive_symmetric_beta_1.0",
+      "passed": true
+    },
+    {
+      "detail": {
+        "minorization": 0.00033546262790251185,
+        "minorization_ratio_upper_bound_float": 0.9996645373720975,
+        "ratio": 0.0029480247893942245,
+        "spectral_ratio_gap": 0.9970519752106057
+      },
+      "kind": "check",
+      "name": "cycle_full_gap_bound_beta_1.0",
+      "passed": true
+    },
+    {
+      "detail": {
+        "leading_value_relative_or_ratio_error": 1.734723475976807e-16
+      },
+      "kind": "check",
+      "name": "cycle_convergence_beta_3.0",
+      "passed": true
+    },
+    {
+      "detail": {
+        "smallest_numeric_eigenvalue": -1.1356191215183795e-29,
+        "symmetry_error": 3.469446951953614e-18
+      },
+      "kind": "check",
+      "name": "cycle_positive_symmetric_beta_3.0",
+      "passed": true
+    },
+    {
+      "detail": {
+        "minorization": 3.775134544279098e-11,
+        "minorization_ratio_upper_bound_float": 0.9999999999622486,
+        "ratio": 0.03763110399723902,
+        "spectral_ratio_gap": 0.962368896002761
+      },
+      "kind": "check",
+      "name": "cycle_full_gap_bound_beta_3.0",
+      "passed": true
+    },
+    {
+      "detail": {
+        "leading_value_relative_or_ratio_error": 1.3877787807814457e-17
+      },
+      "kind": "check",
+      "name": "cycle_convergence_beta_8.0",
+      "passed": true
+    },
+    {
+      "detail": {
+        "smallest_numeric_eigenvalue": -1.3197043365206267e-21,
+        "symmetry_error": 7.105427357601002e-15
+      },
+      "kind": "check",
+      "name": "cycle_positive_symmetric_beta_8.0",
+      "passed": true
+    },
+    {
+      "detail": {
+        "minorization": 1.603810890548638e-28,
+        "minorization_ratio_upper_bound_float": 1.0,
+        "ratio": 0.03340609186110421,
+        "spectral_ratio_gap": 0.9665939081388958
+      },
+      "kind": "check",
+      "name": "cycle_full_gap_bound_beta_8.0",
+      "passed": true
+    },
+    {
+      "detail": "At least one actual finite-cycle ratio changes when the spatial plaquette factor is omitted.",
+      "kind": "negative_control",
+      "name": "spatial_factor_omission_control",
+      "passed": true
+    },
+    {
+      "detail": {
+        "correct_convolution_ratio": 0.8192494103556205,
+        "wrong_coefficient_ratio": 1.638498820711241
+      },
+      "kind": "negative_control",
+      "name": "representation_dimension_control",
+      "passed": true
+    },
+    {
+      "detail": "Four-edge gauge-invariant cycle transports each edge: r_1^4, not r_1.",
+      "kind": "negative_control",
+      "name": "gauge_cycle_power_control",
+      "passed": true
+    },
+    {
+      "detail": {
+        "row_error": 2.6645352591003757e-15
+      },
+      "kind": "check",
+      "name": "Doob_stochastic_reversible",
+      "passed": true
+    },
+    {
+      "detail": "Perron equation removes A(U) only after the correct row denominator.",
+      "kind": "check",
+      "name": "Doob_exact_denominator",
+      "passed": true
+    },
+    {
+      "detail": {
+        "m_over_M": 0.16000000000000003,
+        "minimum_density_ratio": 0.20452368962847192
+      },
+      "kind": "check",
+      "name": "Doob_minorization",
+      "passed": true
+    },
+    {
+      "detail": "T/lambda_0 itself is not stochastic for this nonconstant multiplier.",
+      "kind": "negative_control",
+      "name": "omitted_Perron_control",
+      "passed": true
+    },
+    {
+      "detail": {
+        "actual_minimum_density_ratio": 0.0006707002609329561,
+        "wrong_minorization": 0.01831563888873418
+      },
+      "kind": "negative_control",
+      "name": "factor_two_minorization_control",
+      "passed": true
+    },
+    {
+      "detail": {
+        "actual_minimum_density_ratio": 0.0006707002609329561,
+        "wrong_minorization": 0.1353352832366127
+      },
+      "kind": "negative_control",
+      "name": "link_count_minorization_control",
+      "passed": true
+    },
+    {
+      "detail": {
+        "kinetic_ratio": "1/3",
+        "magnetic_ratio": 0.5587308068729328,
+        "magnetic_ratio_exact": "27/(4*(sqrt(34) + 25/4))"
+      },
+      "kind": "negative_control",
+      "name": "electric_gap_inheritance_control",
+      "passed": true
+    },
+    {
+      "detail": "Independent matrix eigensolve matches the exact two-dimensional reduction.",
+      "kind": "check",
+      "name": "electric_control_exact_vs_matrix",
+      "passed": true
+    },
+    {
+      "detail": "Only the explicit lower-bound certificate degenerates; no physical-gap upper bound follows.",
+      "kind": "check",
+      "name": "finite_volume_bound_degradation",
+      "passed": true
+    }
+  ],
+  "diagnostics": {
+    "Haar_quadrature": [
+      {
+        "Z": 1.0,
+        "max_error": 0.0,
+        "mean": 0.0,
+        "second_moment": 0.25,
+        "z": 0.0
+      },
+      {
+        "Z": 1.0019543969797573,
+        "max_error": 2.220446049250313e-16,
+        "mean": 0.031229674795457463,
+        "second_moment": 0.2504878049090222,
+        "z": 0.125
+      },
+      {
+        "Z": 1.0315772215635852,
+        "max_error": 2.220446049250313e-16,
+        "mean": 0.12371792827832075,
+        "second_moment": 0.2576924303300756,
+        "z": 0.5
+      },
+      {
+        "Z": 1.13031820798497,
+        "max_error": 1.6653345369377348e-16,
+        "mean": 0.24019372387008975,
+        "second_moment": 0.2794188283897308,
+        "z": 1.0
+      },
+      {
+        "Z": 2.635580144935073,
+        "max_error": 4.440892098500626e-16,
+        "mean": 0.5679236493072665,
+        "second_moment": 0.4320763506927336,
+        "z": 3.0
+      },
+      {
+        "Z": 99.96828419564001,
+        "max_error": 1.4210854715202004e-14,
+        "mean": 0.8192494103556207,
+        "second_moment": 0.6927814711166426,
+        "z": 8.0
+      }
+    ],
+    "cycle_transfer": [
+      {
+        "beta": 0.25,
+        "convergence_error": 6.661338147750939e-16,
+        "kinetic_only_ratio": 1.510107664461065e-05,
+        "ratio": 1.4983856775114306e-05,
+        "ratio_bound": 0.8646647167633873,
+        "top_eigenvalue": 1.0078331081376763
+      },
+      {
+        "beta": 1.0,
+        "convergence_error": 7.771561172376096e-16,
+        "kinetic_only_ratio": 0.0033284851321022523,
+        "ratio": 0.0029480247893942245,
+        "ratio_bound": 0.9996645373720975,
+        "top_eigenvalue": 1.1311890358414005
+      },
+      {
+        "beta": 3.0,
+        "convergence_error": 1.734723475976807e-16,
+        "kinetic_only_ratio": 0.10403029146956196,
+        "ratio": 0.03763110399723902,
+        "ratio_bound": 0.9999999999622486,
+        "top_eigenvalue": 3.0098771874523806
+      },
+      {
+        "beta": 8.0,
+        "convergence_error": 1.3877787807814457e-17,
+        "kinetic_only_ratio": 0.4504686270888268,
+        "ratio": 0.03340609186110421,
+        "ratio_bound": 1.0,
+        "top_eigenvalue": 271.3214035632607
+      }
+    ],
+    "two_sector_noise": [
+      {
+        "covariance": 9.047731301003486e-13,
+        "lambda": 0.125
+      },
+      {
+        "covariance": 5.4885940594557076e-08,
+        "lambda": 0.5
+      },
+      {
+        "covariance": 1.1078813274625746e-05,
+        "lambda": 1.0
+      },
+      {
+        "covariance": 0.010822301543242013,
+        "lambda": 3.0
+      }
+    ],
+    "volume_minorization": [
+      {
+        "log_minorization": -384,
+        "n": 4,
+        "spatial_edges": 192
+      },
+      {
+        "log_minorization": -3072,
+        "n": 8,
+        "spatial_edges": 1536
+      },
+      {
+        "log_minorization": -24576,
+        "n": 16,
+        "spatial_edges": 12288
+      }
+    ]
+  },
+  "resolution_certificate": {
+    "lattice_wide": "Checked and not executed \u2014 no cutoff/volume-uniform physical infrared estimate has been supplied or tested.",
+    "per_block": "Disjoint and repeated-link loop controls and the finite spatial-cycle transfer checked at their written scopes.",
+    "per_element": "Exact SU(2) Haar moments and normalization coefficients checked through the declared finite orders.",
+    "per_mode": "Finite character-mode transfer diagnostics checked with two truncations; no complete continuum spectrum computed.",
+    "per_site": "Single-link normalized moments and finite vertex gauge covariance checked; no infinite gauge fixing is used."
+  },
+  "runtime": {
+    "numpy": "2.4.1",
+    "python": "3.12.8",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "scope": "Finite author checks; no continuum infrared bound and no independent review",
+  "summary": {
+    "failed": 3,
+    "negative_controls": 11,
+    "passed": 42
+  }
+}

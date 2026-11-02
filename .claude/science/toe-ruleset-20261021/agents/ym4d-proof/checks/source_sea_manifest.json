@@ -1,0 +1,79 @@
+{
+  "frozen_at_utc": "2026-10-29T17:48:18.015668+00:00",
+  "status": "author-frozen_pending-independent-review",
+  "branch": "ym4d-drive",
+  "pull_request": 10114,
+  "current_main_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "source_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+  "source_sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+  "owned_files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+      "bytes": 23793
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_check.py",
+      "sha256": "5b7ceb26a0129b77711529c033b6f6b2bfde590142b1dc5d873658dfc27c2731",
+      "bytes": 17667
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_criteria.md",
+      "sha256": "380eeff8b7f303640d7cf6a0ce87f98ec0c14af558e8f19d402e73ece6c91870",
+      "bytes": 3112
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_fetch_record.json",
+      "sha256": "80424281fa274e2a41af39c083f41218881dc07ac6683417f1d7cd3dc01eabde",
+      "bytes": 2619
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_literature.md",
+      "sha256": "e083b404dd68c428a65a9b7b95df9e0b50138cb6b3642dddb7ae07f60f98e466",
+      "bytes": 6804
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_read_coverage.json",
+      "sha256": "131c0e879a08d14425ae01d55f9cb9afde7fbb8f2aef4b93f9e6f0e51c8fe0de",
+      "bytes": 6979
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_results.md",
+      "sha256": "d07db16cdf78ced0cf456bc974da17234c3bf7577600c18e0820a8c12bd3f957",
+      "bytes": 3451
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_01.json",
+      "sha256": "c10a6274b394ff868abc44b2f5a79f51f6ccfba01ec75adbfbc7fa2fff4c5e86",
+      "bytes": 9679
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_02.json",
+      "sha256": "52d3b95cdb0749d476e33a36ec79c25d4dfc424e58f23503c211bca6b7c9837b",
+      "bytes": 9922
+    }
+  ],
+  "frozen_predecessor_hashes_verified": {
+    "SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+    "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+    "checks/review_source_history_receipt.json": "6b1e1ff3e62051063182e7d92e0c1b9c6e1dc3fe598ab15f7703a6fec55868f9"
+  },
+  "final_check": "checks/source_sea_run_02.json",
+  "check_status": "PASS",
+  "positive_claims": [
+    "Sea7 exact fine-cell histories relative to common all-good reference at arbitrary volume",
+    "Sea11 actual normalized joint soft-field histories relative to integrated original all-cut reference",
+    "Sea14 original localized complex sources on an explicit fixed positive radius",
+    "Sea15 exact H8 hard-history refinement preserving all factors"
+  ],
+  "open_producers": [
+    "conditional fluctuation localization on the actual soft coarse-field domain",
+    "connected-source local normalized logarithm and nonzero complex sea average",
+    "higher-level effective-action/history induction and counterterms",
+    "OS continuum existence and physical mass gap"
+  ],
+  "independent_review_claimed": false,
+  "git_mutations_performed": false,
+  "audit_mutations_performed": false,
+  "external_pdf_text_packaged": false
+}

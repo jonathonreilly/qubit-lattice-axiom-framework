@@ -1,0 +1,89 @@
+--- G2a P=3
+   horizontal basis size 10 (expected 3P+1 = 10 )
+   every basis vector exactly horizontal at tau in {1/10,1/7,3/5} (polynomial identity of degree <= 8 checked at 3 points + closure assertion)
+   dim ker Q_0 = 6 (torons: expected 6)
+   K^T Q_1 K == 0 : True
+   most negative Qeff value per |coeff|^2 over integer coeffs in [-2,2]^6: -88 coeffs (0, 0, 0, -2, -2, 0)
+   N(tau): deg 14 n0 0 n1 0 n2 -704 ; tail bound at tau0=1/10: 1223291134601/15625000000 (< |n2| ? True )
+   direct expansion == p^T Q p : True
+   leading RQ coefficient: RQ = (n2/D0) tau^2 + ... with n2/D0 = -88/3 = approx -29.333333333333332 ; in beta^2 (beta~2tau): -7.333333333333333
+   G2a P=3: PASS
+   G2-agree at tau=1/10: t-expansion == complex-matrix assembled == polynomial/(1+tau^2)^2 : True  Hess = -7.6687641664
+   C2c: certified vector residual zero: True ; perturbed vector residual nonzero (detector fires): True
+   C2a (tau=0, same p(0)): Hess = 0 >= 0 : True
+   C2b (neutral components only): Hess = 0 >= 0 : True
+   elapsed 0.8s
+--- G2a P=5
+   horizontal basis size 16 (expected 3P+1 = 16 )
+   every basis vector exactly horizontal at tau in {1/10,1/7,3/5} (polynomial identity of degree <= 8 checked at 3 points + closure assertion)
+   dim ker Q_0 = 6 (torons: expected 6)
+   K^T Q_1 K == 0 : True
+   most negative Qeff value per |coeff|^2 over integer coeffs in [-2,2]^6: -80 coeffs (0, 0, 0, -2, -2, 0)
+   N(tau): deg 14 n0 0 n1 0 n2 -640 ; tail bound at tau0=1/10: 306360270601/7812500000 (< |n2| ? True )
+   direct expansion == p^T Q p : True
+   leading RQ coefficient: RQ = (n2/D0) tau^2 + ... with n2/D0 = -16 = approx -16.0 ; in beta^2 (beta~2tau): -4.0
+   G2a P=5: PASS
+   G2-agree at tau=1/10: t-expansion == complex-matrix assembled == polynomial/(1+tau^2)^2 : True  Hess = -6.6583091328
+   C2c: certified vector residual zero: True ; perturbed vector residual nonzero (detector fires): True
+   C2a (tau=0, same p(0)): Hess = 0 >= 0 : True
+   C2b (neutral components only): Hess = 0 >= 0 : True
+   elapsed 2.2s
+--- G2a P=7
+   horizontal basis size 22 (expected 3P+1 = 22 )
+   every basis vector exactly horizontal at tau in {1/10,1/7,3/5} (polynomial identity of degree <= 8 checked at 3 points + closure assertion)
+   dim ker Q_0 = 6 (torons: expected 6)
+   K^T Q_1 K == 0 : True
+   most negative Qeff value per |coeff|^2 over integer coeffs in [-2,2]^6: -80 coeffs (0, 0, 0, -2, -2, 0)
+   N(tau): deg 14 n0 0 n1 0 n2 -640 ; tail bound at tau0=1/10: 306360270601/7812500000 (< |n2| ? True )
+   direct expansion == p^T Q p : True
+   leading RQ coefficient: RQ = (n2/D0) tau^2 + ... with n2/D0 = -80/7 = approx -11.428571428571429 ; in beta^2 (beta~2tau): -2.857142857142857
+   G2a P=7: PASS
+   G2-agree at tau=1/10: t-expansion == complex-matrix assembled == polynomial/(1+tau^2)^2 : True  Hess = -6.6583091328
+   C2c: certified vector residual zero: True ; perturbed vector residual nonzero (detector fires): True
+   C2a (tau=0, same p(0)): Hess = 0 >= 0 : True
+   C2b (neutral components only): Hess = 0 >= 0 : True
+   elapsed 4.5s
+--- G2b cylinder tau=1/10 n=9 nperp=16: horizontal(exact)=True, agree(t vs assembled)=True
+   RQ_cyl = (exact rational) ~ -1.812990e-01 ; 2S1/S0 = 2/29 ~ 6.896552e-02 ; RQ_4D ~ -1.123335e-01  ->  PASS
+   C2a tau=0: Hess >= 0 : True  | C2b neutral-only: Hess >= 0 : True
+   elapsed 4.5s
+--- G2b cylinder tau=1/10 n=60 nperp=12: horizontal(exact)=True, agree(t vs assembled)=True
+   RQ_cyl = (exact rational) ~ -2.878307e-01 ; 2S1/S0 = 2/17 ~ 1.176471e-01 ; RQ_4D ~ -1.701836e-01  ->  PASS
+   C2a tau=0: Hess >= 0 : True  | C2b neutral-only: Hess >= 0 : True
+   elapsed 4.6s
+--- G2b cylinder tau=1/50 n=9 nperp=80: horizontal(exact)=True, agree(t vs assembled)=True
+   RQ_cyl = (exact rational) ~ -6.384817e-03 ; 2S1/S0 = 10/3281 ~ 3.047851e-03 ; RQ_4D ~ -3.336966e-03  ->  PASS
+   C2a tau=0: Hess >= 0 : True  | C2b neutral-only: Hess >= 0 : True
+   elapsed 4.6s
+--- G2b cylinder tau=1/50 n=240 nperp=80: horizontal(exact)=True, agree(t vs assembled)=True
+   RQ_cyl = (exact rational) ~ -1.155962e-02 ; 2S1/S0 = 10/3281 ~ 3.047851e-03 ; RQ_4D ~ -8.511769e-03  ->  PASS
+   C2a tau=0: Hess >= 0 : True  | C2b neutral-only: Hess >= 0 : True
+   elapsed 5.1s
+--- G2-sep (n=4, T2=2, nperp=3, tau=1/10): Hess_4D == T2(S0^2 Hess_cyl + 2 S0 S1 |w|^2): True ; |v|^2 identity: True ; 4D horizontal: True -> PASS
+   elapsed 5.3s
+--- G2c box n=12 tau=1/10 nperp=16: initial residual nonzero entries 181 (C2c detector fires: True); projected residual zero: True; agree: True
+   RQ_2D ~ -2.026705e-01 ; 2S1/S0 ~ 6.896552e-02 ; RQ_4D ~ -1.337050e-01 -> PASS
+   C2a tau=0 (same vector, trivial background): Hess >= 0 : True  | C2b neutral-only: Hess >= 0 : True
+   elapsed 8.7s
+=== SUMMARY ===
+   G2a_P3 PASS
+   G2agree_torus_P3 PASS
+   ctrl_torus_P3 PASS
+   G2a_P5 PASS
+   G2agree_torus_P5 PASS
+   ctrl_torus_P5 PASS
+   G2a_P7 PASS
+   G2agree_torus_P7 PASS
+   ctrl_torus_P7 PASS
+   G2b_tau1/10_n9 PASS
+   ctrl_cyl_tau1/10_n9 PASS
+   G2b_tau1/10_n60 PASS
+   ctrl_cyl_tau1/10_n60 PASS
+   G2b_tau1/50_n9 PASS
+   ctrl_cyl_tau1/50_n9 PASS
+   G2b_tau1/50_n240 PASS
+   ctrl_cyl_tau1/50_n240 PASS
+   G2sep_cyl PASS
+   G2c_box PASS
+   ctrl_box PASS
+lc55_2 done 8.7s

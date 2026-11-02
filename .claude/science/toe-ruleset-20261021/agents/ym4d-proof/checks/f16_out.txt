@@ -1,0 +1,76 @@
+f16 start; SMOKE=False; numpy 2.4.4
+=== Part A: Cartan tower and exact Cartan linearisation (fine 9^4, coarse 3^4) ===
+SU(2): max |eigen-angle of S_c^-1 T| = 0.2546 (< pi/3 = 1.0472: True)
+[PASS] A1a SU(2): S4' = exp(Q_root a H_1): 4.37e-15; tower formula: 7.55e-15
+[PASS] A1b SU(2): off-diag 0.0e+00; oddness 0.0e+00; dev(e)=2.178e-04, dev(e/2)=2.702e-05, ratio 8.063
+[PASS] A2 SU(2) root (1,2) q=1.00: chain 2.37e-10; S4' 6.95e-10
+[PASS] A2c SU(2) root (1,2) control: naive avg xi against the chain FD: 7.22e-02
+[PASS] A3a SU(2) root (1,2): chain 2.49e-14; S4' 3.99e-16
+[PASS] A3b SU(2) root (1,2): r(e)=1.303e-02, r(e/2)=3.282e-03, ratio 3.972
+SU(3): max |eigen-angle of S_c^-1 T| = 0.3564 (< pi/3 = 1.0472: True)
+[PASS] A1a SU(3): S4' = exp(Q_root a H_1): 5.04e-15; tower formula: 7.55e-15
+[PASS] A1b SU(3): off-diag 0.0e+00; oddness 0.0e+00; dev(e)=4.782e-04, dev(e/2)=5.908e-05, ratio 8.094
+[PASS] A2 SU(3) root (1,2) q=0.90: chain 2.66e-10; S4' 7.62e-10
+[PASS] A2c SU(3) root (1,2) control: naive avg xi against the chain FD: 7.70e-02
+[PASS] A3a SU(3) root (1,2): chain 2.54e-14; S4' 3.75e-16
+[PASS] A3b SU(3) root (1,2): r(e)=1.045e-02, r(e/2)=2.597e-03, ratio 4.026
+[PASS] A2 SU(3) root (1,3) q=1.20: chain 2.78e-10; S4' 7.69e-10
+[PASS] A2c SU(3) root (1,3) control: naive avg xi against the chain FD: 8.95e-02
+[PASS] A3a SU(3) root (1,3): chain 2.56e-14; S4' 5.61e-16
+[PASS] A3b SU(3) root (1,3): r(e)=1.931e-02, r(e/2)=4.848e-03, ratio 3.984
+Part A time 37.5 s, peak RSS 277 MB
+=== Part B: SU(2) chain map, levels b -> n-1 -> n, level-n torus (3, 3, 1, 1), delta = 0.02 ===
+  built e=+0.000 in 1.5 s, RSS 315 MB
+  built e=+0.020 in 1.8 s, RSS 347 MB
+  built e=-0.020 in 1.9 s, RSS 375 MB
+[PASS] B1 decomposition algebra: A2 = Q2 - D h2: 1.8e-14; P(A1-Q1): 1.9e-15; P(A2-Q2): 9.5e-15; covariance: 2.1e-14
+  (X2)(c) diagnostic at e=0.04: level n-1 |a - linear| = 2.60e-08 (other dirs 2.7e-18); level n 4.42e-05 (e^3 = 6.4e-05)
+  built e=+0.040 in 1.9 s, RSS 510 MB
+  built e=-0.040 in 1.8 s, RSS 510 MB
+  c_0(i): 1.1111e-01, 1.2346e-02 (diagnostic)
+[PASS] B2 r=1: c_r(1)=1.7789e-01, c_r(2)=1.8817e-02, ratio 0.1058 (<=0.25); ||[e^r]Q^(i)||: 1.1604e+00, 3.8739e-01, ratio 0.3338 (<=0.6)
+[PASS] B2 r=2: c_r(1)=6.2776e-01, c_r(2)=6.7840e-02, ratio 0.1081 (<=0.25); ||[e^r]Q^(i)||: 2.8371e+00, 1.1866e+00, ratio 0.4182 (<=0.6)
+[FAIL] B3 control (U = 1 bookkeeping leak): lambda_min(L^(i) - P0 D1 D1* P0/8) = -2.91e-09, -3.30e-09; ||L^(1)||=3.5069e+00, ||L^(2)||=3.3881e+00, ratio 0.9661
+  diagnostic: termwise first-order piece ||[e]P (1-P0) s_1^0 P0|| = 8.2418e-16
+  diagnostic: termwise first-order piece ||[e]P (1-P0) s_2^0 P0|| = 2.3932e-14
+  diagnostic (U = 1 pairing, [e]Q'^(i) = [e]A^(i)): ||[e]A^(1)|| = 2.8916e+00, ||[e]A^(2)|| = 2.9528e+00
+[FAIL] B4 Lemma P-poles (first order): max |normalised FD - closed form| over 6 K: 1.22e-03
+Part B time 46.5 s (cumulative), peak RSS 510 MB
+=== Part B addendum 1 (NOT pre-stated; added after the smoke runs): the same verdicts with delta = 0.002, 0.004 ===
+=== Part B (add1-): SU(2) chain map, levels b -> n-1 -> n, level-n torus (3, 3, 1, 1), delta = 0.002 ===
+  built e=+0.000 in 1.5 s, RSS 523 MB
+  built e=+0.002 in 1.8 s, RSS 523 MB
+  built e=-0.002 in 1.8 s, RSS 523 MB
+[PASS] add1-B1 decomposition algebra: A2 = Q2 - D h2: 1.3e-14; P(A1-Q1): 1.3e-13; P(A2-Q2): 1.7e-13; covariance: 1.5e-14
+  (X2)(c) diagnostic at e=0.004: level n-1 |a - linear| = 2.60e-11 (other dirs 2.1e-19); level n 4.41e-08 (e^3 = 6.4e-08)
+  built e=+0.004 in 1.9 s, RSS 523 MB
+  built e=-0.004 in 1.8 s, RSS 523 MB
+  c_0(i): 1.1111e-01, 1.2346e-02 (diagnostic)
+[PASS] add1-B2 r=1: c_r(1)=1.7789e-01, c_r(2)=1.8816e-02, ratio 0.1058 (<=0.25); ||[e^r]Q^(i)||: 1.1604e+00, 3.8739e-01, ratio 0.3338 (<=0.6)
+[PASS] add1-B2 r=2: c_r(1)=6.2773e-01, c_r(2)=6.7838e-02, ratio 0.1081 (<=0.25); ||[e^r]Q^(i)||: 2.8371e+00, 1.1866e+00, ratio 0.4182 (<=0.6)
+[PASS] add1-B3 control (U = 1 bookkeeping leak): lambda_min(L^(i) - P0 D1 D1* P0/8) = -2.97e-16, -2.43e-16; ||L^(1)||=3.5066e+00, ||L^(2)||=3.3879e+00, ratio 0.9661
+  diagnostic: termwise first-order piece ||[e]P (1-P0) s_1^0 P0|| = 8.1439e-16
+  diagnostic: termwise first-order piece ||[e]P (1-P0) s_2^0 P0|| = 2.3971e-14
+  diagnostic (U = 1 pairing, [e]Q'^(i) = [e]A^(i)): ||[e]A^(1)|| = 2.8916e+00, ||[e]A^(2)|| = 2.9528e+00
+[FAIL] add1-B4 Lemma P-poles (first order): max |normalised FD - closed form| over 6 K: 1.21e-07
+Part B time 55.4 s (cumulative), peak RSS 523 MB
+=== Part B addendum 2 (NOT pre-stated; added after the smoke runs): the same verdicts with delta = 0.0005, 0.001 ===
+=== Part B (add2-): SU(2) chain map, levels b -> n-1 -> n, level-n torus (3, 3, 1, 1), delta = 0.0005 ===
+  built e=+0.000 in 1.5 s, RSS 523 MB
+  built e=+0.001 in 1.8 s, RSS 523 MB
+  built e=-0.001 in 2.0 s, RSS 523 MB
+[PASS] add2-B1 decomposition algebra: A2 = Q2 - D h2: 9.3e-15; P(A1-Q1): 1.5e-12; P(A2-Q2): 1.9e-12; covariance: 1.0e-14
+  (X2)(c) diagnostic at e=0.001: level n-1 |a - linear| = 4.07e-13 (other dirs 8.6e-20); level n 6.89e-10 (e^3 = 1.0e-09)
+  built e=+0.001 in 2.1 s, RSS 523 MB
+  built e=-0.001 in 1.9 s, RSS 523 MB
+  c_0(i): 1.1111e-01, 1.2346e-02 (diagnostic)
+[PASS] add2-B2 r=1: c_r(1)=1.7789e-01, c_r(2)=1.8816e-02, ratio 0.1058 (<=0.25); ||[e^r]Q^(i)||: 1.1604e+00, 3.8739e-01, ratio 0.3338 (<=0.6)
+[PASS] add2-B2 r=2: c_r(1)=6.2773e-01, c_r(2)=6.7839e-02, ratio 0.1081 (<=0.25); ||[e^r]Q^(i)||: 2.8371e+00, 1.1866e+00, ratio 0.4182 (<=0.6)
+[PASS] add2-B3 control (U = 1 bookkeeping leak): lambda_min(L^(i) - P0 D1 D1* P0/8) = -2.79e-16, -1.86e-16; ||L^(1)||=3.5066e+00, ||L^(2)||=3.3879e+00, ratio 0.9661
+  diagnostic: termwise first-order piece ||[e]P (1-P0) s_1^0 P0|| = 8.3071e-16
+  diagnostic: termwise first-order piece ||[e]P (1-P0) s_2^0 P0|| = 2.3890e-14
+  diagnostic (U = 1 pairing, [e]Q'^(i) = [e]A^(i)): ||[e]A^(1)|| = 2.8916e+00, ||[e]A^(2)|| = 2.9528e+00
+[PASS] add2-B4 Lemma P-poles (first order): max |normalised FD - closed form| over 6 K: 8.25e-10
+Part B time 64.9 s (cumulative), peak RSS 523 MB
+PRE-STATED verdicts: 19/21 PASS; addendum: 9/10 PASS
+SUMMARY: 28/31 verdict lines PASS; total time 64.9 s; peak RSS 523 MB

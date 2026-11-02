@@ -1,0 +1,43 @@
+B1 t=0.05: iterations 16, residuals 7.6e-01 6.9e-03 1.3e-04 4.7e-06 8.8e-07 2.0e-07 ... 6.5e-14; max|grad_U F| at branch 1.8e-14; ||P_res D^* A*|| 2.2e-14; ||h A*|| 3.2e-18; max|A*| 5.627e-02  (5 s)
+B3 t=0.05: ||Hess(D lam)||/||lam|| = 2.4e-11; fixing-weight dependence of the Schur result 1.3e-14
+B2 t=0.05: relative errors FD vs Schur 2.1e-07 9.1e-08 1.7e-07 1.5e-07 1.5e-07 8.2e-08; max re-solve gradient 8.2e-14  (11 s)
+/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/numpy/linalg/_linalg.py:2803: RuntimeWarning: overflow encountered in multiply
+  s = (x.conj() * x).real
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/c36_nah1.py:33: RuntimeWarning: invalid value encountered in cos
+  return np.cos(th)[..., None, None] * np.eye(2) + 1j * np.sin(th)[..., None, None] * nsig
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/c36_nah1.py:33: RuntimeWarning: invalid value encountered in sin
+  return np.cos(th)[..., None, None] * np.eye(2) + 1j * np.sin(th)[..., None, None] * nsig
+B4 t=0.05: lambda_min(O~ at branch) = 0.348184; Schur Hessian on the complement of coarse gauge directions: min nonzero eigenvalue -0.003808 (rank of gauge span 12)
+B1 t=0.15: iterations 200, residuals 1.9e+00 9.6e-02 9.0e-03 4.5e-03 6.6e-03 9.9e-03 ... nan; max|grad_U F| at branch nan; ||P_res D^* A*|| nan; ||h A*|| nan; max|A*| nan  (20 s)
+B3 t=0.15: ||Hess(D lam)||/||lam|| = nan; fixing-weight dependence of the Schur result nan
+B2 t=0.15: relative errors FD vs Schur nan nan nan nan nan nan; max re-solve gradient nan  (266 s)
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/c36_nah1.py", line 805, in <module>
+    {"A": part_A, "B": part_B, "C": part_C, "D": part_D}[part]()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/c36_nah1.py", line 607, in part_B
+    lmin0 = np.linalg.eigvalsh(Ot)[0]
+            ~~~~~~~~~~~~~~~~~~^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/numpy/linalg/_linalg.py", line 1355, in eigvalsh
+    w = gufunc(a, signature=signature)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/numpy/linalg/_linalg.py", line 151, in _raise_linalgerror_eigenvalues_nonconvergence
+    raise LinAlgError("Eigenvalues did not converge")
+numpy.linalg.LinAlgError: Eigenvalues did not converge
+      265.71 real       263.16 user         1.18 sys
+            45662208  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6258  page reclaims
+                 120  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 349  voluntary context switches
+               39446  involuntary context switches
+       4306088660393  instructions retired
+        991263063397  cycles elapsed
+            31736288  peak memory footprint

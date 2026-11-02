@@ -58,7 +58,7 @@ Owner: "lets adopt any methods or approaches that will accelerate our work." Wha
 - **A model ladder.** Before a YM4 lane on a position, read the same position in their QED3 and YM3 manuscripts (their assembly overviews give the correspondence). A mechanism that works there is the first candidate; a check that fails there is a cheap kill.
 - **Generate, then distil, then check, where risk is low.** For positions that are standard (rank 8 and below in `library/sa-map.md` Section 4: backgrounds, small-field step, one-loop law), one long full draft at max, then a distillation to a minimal written proof, then a cross-provider gate. Forced-decision lanes stay for the positions where the proof could fail (ranks 1 to 4).
 - **Freeze what is checked.** A section that passes its gate is frozen and cited, and is reopened only by a WRONG verdict.
-- **Sharing.** Proofs and checked defects go to them as issues, per "Building together".
+- **Sharing.** Results of ours they need go to them as issues, per "Sharing" above.
 
 ## Route decisions (owner, 2026-11-02)
 
@@ -193,7 +193,7 @@ Owner: "we should build on all published work, not reinvent the wheel - that sho
 - **Verify everything the proof uses (owner, 2026-11-02).** "When we build on published work, I want us to actually verify the derivations the proof uses - using the same validation framework we have so we dont build on mistakes." Reading published work is not accepting it. Every statement the final chain reads, whether from the outline, Balaban, Dimock or elsewhere, passes the same checks as our own: a written hand proof in `library/` (re-derived, not quoted, credited to its source), labelled discharged, implication or gap, then a gate by a reader from another provider before it is load-bearing. Their labels ("proved", "outlined", "cited") grant nothing here.
 - `library/sa-ledger.md` is the ledger: every statement of the outline at `31a47c543775` that Theorem 0 reads, with its location, its status there, and its status here (unchecked, re-derived, gated, WRONG). Lanes update their rows. Order: hardest and most load-bearing first; open obligations and verification of outlined steps share the queue.
 - The side column of the queue is kept for history only.
-- **Building together (owner, 2026-11-02):** "I am happy to help them / build together." Checked findings that would help the Sussman-Alpoge project, such as defects in their text or lemmas they lack, are offered to them through their repository's issues, as other contributors do. Nothing is sent until it has passed a cross-provider check (`share-check`) and the owner has approved the exact text.
+- **Sharing (owner, 2026-11-02):** "I am happy to help them / build together"; "I dont want to do work for them, I dont mind sharing progress we made that they need." Every lane serves our proof. We take on none of their work for its own sake; we work on a statement of their outline only when our chain reads it. When a result of ours, or a checked defect in their text, is something they need, we offer it through their repository's issues, after a cross-provider check (`share-check`) and the owner's approval of the exact text.
 
 ## Working efficiently
 

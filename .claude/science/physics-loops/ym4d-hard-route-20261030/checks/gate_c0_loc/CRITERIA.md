@@ -20,4 +20,4 @@ Pass: B1 to B5 all hold. Failure of B1, B2 or B3 would need a look by hand befor
 
 First run, `bond_carry.out`: FAIL by the written rule on B4, kind tube, N = 27, r = 2, with S about 5e-15 at both targets. The twelve random rows missed the tube, so S was round-off and the ratio has no meaning. The same flaw means the tube entries of B3 at N = 27 tested nothing, though they passed. The first output stands as the record.
 
-Second run, `tube_rerun.py`, output `bond_carry_tube.out`: tube only, with every sampled row taken through the tube centre, at a random direction, and 400 terms per row. B1 to B5 as above with the same numbers. The other kinds are not rerun.
+Second run, `tube_rerun.py`, output `bond_carry_tube.out`: tube only, with every sampled row taken through the tube centre, direction cycling through the four axes, and 400 terms per row. B1 to B5 as above with the same numbers. The other kinds are not rerun.

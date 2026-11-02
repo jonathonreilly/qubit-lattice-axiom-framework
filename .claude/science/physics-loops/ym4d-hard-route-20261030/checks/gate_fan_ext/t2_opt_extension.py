@@ -113,6 +113,7 @@ def run(L, pattern, literal=False, steps=40):
             w -= (w @ (GOO @ u)) * u
         for u in V:
             w -= (w @ (GOO @ u)) * u
+        w = G(GOO @ w)  # reproject onto ker C_O: rounding off it is amplified otherwise
         h = V[-1] @ (S(V[-1]))
         al.append(h)
         nb = np.sqrt(max(w @ (GOO @ w), 0.0))
@@ -130,7 +131,7 @@ def run(L, pattern, literal=False, steps=40):
 if __name__ == "__main__":
     watchdog()
     res = {}
-    for L in (4, 8, 12, 16, 24):
+    for L in (4, 8, 12, 16, 20):
         for pat in ("flat", "fan"):
             res[(L, pat)] = run(L, pat)
             print("L", L, pat, "A =", round(res[(L, pat)], 4), flush=True)
@@ -141,5 +142,5 @@ if __name__ == "__main__":
     r1 = res[(8, "fan")] / res[(4, "fan")]
     r2 = res[(16, "fan")] / res[(8, "fan")]
     c = min(lit[4] / lit[2], lit[8] / lit[4])
-    print("ratios fan", r1, r2, "24/16", res[(24, "fan")] / res[(16, "fan")], "literal min ratio", c)
+    print("ratios fan", r1, r2, "20/16", res[(20, "fan")] / res[(16, "fan")], "flat max", max(v for k, v in res.items() if k[1] == "flat"), "literal min ratio", c)
     print("T2", "PASS" if r1 <= 1.25 and r2 <= 1.25 and c >= 1.5 else "FAIL")

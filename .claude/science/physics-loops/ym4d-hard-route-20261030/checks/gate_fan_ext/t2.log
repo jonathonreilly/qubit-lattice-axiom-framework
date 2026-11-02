@@ -1,10 +1,10 @@
-L 4 flat A = 1.8128
-L 4 fan A = 2.0194
-L 8 flat A = 2.3083
+L 4 flat A = 1.4577
+L 4 fan A = 1.9253
+L 8 flat A = 1.6698
 L 8 fan A = 2.4551
-L 12 flat A = 2.3375
+L 12 flat A = 1.766
 L 12 fan A = 2.7543
-L 16 flat A = 2.7562
+L 16 flat A = 1.8189
 L 16 fan A = 2.9589
 watchdog: RSS above 2 GB, stopping
 T2rc=3

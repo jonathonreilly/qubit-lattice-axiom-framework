@@ -1,20 +1,14 @@
 #!/usr/bin/env python3
-"""T3: flat D-coer constant in d = 2, in L and depth. See CRITERIA.md."""
-import resource, sys
+"""T3: flat D-coer constant in d = 2, in L and depth, by a sparse saddle solve. See CRITERIA.md."""
+import os, subprocess, threading, time
 import numpy as np
 import scipy.sparse as sp
-import scipy.linalg as sl
+import scipy.sparse.linalg as sla
 
 P = 4  # torus of 4 parents; bricks of side 2 parents shifted by 1
 
 
-def guard():
-    pass
-
-
 def watchdog():
-    import os, subprocess, threading, time
-
     def loop():
         while True:
             rss = int(subprocess.check_output(["ps", "-o", "rss=", "-p", str(os.getpid())]))
@@ -27,134 +21,92 @@ def watchdog():
 
 
 def brick(px, py):
-    """index of the brick of parent (px, py): rows of height 2, shift 1 per row."""
     row = (py // 2) % 2
     col = ((px - row) // 2) % 2
     return row, col
-
-
-def tri_row(mu, ybx, yby, n, S):
-    """Q row at block side S (in eta units) for level bond (ybx, yby), mu. Bond index lattice n x n.
-    Lower-corner blocks: starts in block, path of S steps along mu."""
-    w = {}
-    for i in range(S):
-        for j in range(S):
-            sx, sy = ybx * S + i, yby * S + j
-            for t in range(S):
-                bx, by = (sx + (t if mu == 0 else 0)) % n, (sy + (t if mu == 1 else 0)) % n
-                w[(bx, by)] = w.get((bx, by), 0.0) + 1.0 / S ** 3
-    return w
 
 
 def run(L, M, omega_set):
     N = P * L * M
     S_h, S_p = M, L * M
     eta = 1.0 / (L * M)
+    bi = lambda mu, x, y: mu * N * N + (x % N) * N + (y % N)
+    si = lambda x, y: (x % N) * N + (y % N)
+    nb, ns = 2 * N * N, N * N
+    Omega = np.array([[brick(px, py) in omega_set for py in range(P)] for px in range(P)])
+    in_om = lambda hx, hy: Omega[(hx // L) % P, (hy // L) % P]
 
-    def bi(mu, x, y):
-        return mu * N * N + (x % N) * N + (y % N)
+    ri, ci, va = [], [], []
+    nrow = 0
 
-    def si(x, y):
-        return (x % N) * N + (y % N)
+    def add_row(mu, yx, yy, S):
+        nonlocal nrow
+        w = {}
+        for i in range(S):
+            for j in range(S):
+                for t in range(S):
+                    bx = yx * S + i + (t if mu == 0 else 0)
+                    by = yy * S + j + (t if mu == 1 else 0)
+                    k = bi(mu, bx, by)
+                    w[k] = w.get(k, 0.0) + 1.0 / S ** 3
+        for k, v in w.items():
+            ri.append(nrow), ci.append(k), va.append(v)
+        nrow += 1
 
-    nb = 2 * N * N
-    ns = N * N
-    Omega = np.zeros((P, P), bool)
-    for px in range(P):
-        for py in range(P):
-            Omega[px, py] = brick(px, py) in omega_set
-
-    def in_om(hx, hy):  # h site -> parent
-        return Omega[(hx // L) % P, (hy // L) % P]
-
-    # constraint rows
-    rows = []
     for hx in range(P * L):
         for hy in range(P * L):
-            for mu in range(2):
-                ex, ey = (1, 0) if mu == 0 else (0, 1)
+            for mu, (ex, ey) in enumerate(((1, 0), (0, 1))):
                 if in_om(hx, hy) and in_om(hx + ex, hy + ey):
-                    rows.append(tri_row(mu, hx, hy, N, S_h))
+                    add_row(mu, hx, hy, S_h)
     for px in range(P):
         for py in range(P):
-            for mu in range(2):
-                ex, ey = (1, 0) if mu == 0 else (0, 1)
+            for mu, (ex, ey) in enumerate(((1, 0), (0, 1))):
                 if not (Omega[px, py] and Omega[(px + ex) % P, (py + ey) % P]):
-                    rows.append(tri_row(mu, px, py, N, S_p))
-    C = np.zeros((len(rows), nb))
-    r = 0
-    for hx in range(P * L):
-        for hy in range(P * L):
-            for mu in range(2):
-                ex, ey = (1, 0) if mu == 0 else (0, 1)
-                if in_om(hx, hy) and in_om(hx + ex, hy + ey):
-                    for (bx, by), val in rows[r].items():
-                        C[r, bi(mu, bx, by)] = val
-                    r += 1
-    for px in range(P):
-        for py in range(P):
-            for mu in range(2):
-                ex, ey = (1, 0) if mu == 0 else (0, 1)
-                if not (Omega[px, py] and Omega[(px + ex) % P, (py + ey) % P]):
-                    for (bx, by), val in rows[r].items():
-                        C[r, bi(mu, bx, by)] = val
-                    r += 1
-    guard()
-    Qc, _ = sl.qr(C.T, mode="full", check_finite=False, overwrite_a=False)
-    rows_n = C.shape[0]
-    del C
-    rank = rows_n  # rows are independent: Section 8 gives a right inverse
-    Z = Qc[:, rank:]
-    del Qc
-    guard()
-    # d, D*
-    dm = sp.lil_matrix((ns, nb))
-    Dst = sp.lil_matrix((ns, nb))
+                    add_row(mu, px, py, S_p)
+    C = sp.csc_matrix((va, (ri, ci)), shape=(nrow, nb))
+
+    dr, dc, dv, sr, sc, sv = [], [], [], [], [], []
     for x in range(N):
         for y in range(N):
             p = si(x, y)
-            dm[p, bi(0, x, y)] += 1
-            dm[p, bi(1, x + 1, y)] += 1
-            dm[p, bi(0, x, y + 1)] -= 1
-            dm[p, bi(1, x, y)] -= 1
-            Dst[p, bi(0, x - 1, y)] += 1
-            Dst[p, bi(0, x, y)] -= 1
-            Dst[p, bi(1, x, y - 1)] += 1
-            Dst[p, bi(1, x, y)] -= 1
-    dm = (dm.tocsr() / eta)
-    Dst = (Dst.tocsr() / eta)
-    # leaves of P_N: subtract means
+            for k, v in ((bi(0, x, y), 1), (bi(1, x + 1, y), 1), (bi(0, x, y + 1), -1), (bi(1, x, y), -1)):
+                dr.append(p), dc.append(k), dv.append(v / eta)
+            for k, v in ((bi(0, x - 1, y), 1), (bi(0, x, y), -1), (bi(1, x, y - 1), 1), (bi(1, x, y), -1)):
+                sr.append(p), sc.append(k), sv.append(v / eta)
+    dm = sp.csr_matrix((dv, (dr, dc)), shape=(ns, nb))
+    Dst = sp.csr_matrix((sv, (sr, sc)), shape=(ns, nb))
+
     leaf = {}
     for x in range(N):
         for y in range(N):
             hx, hy = x // M, y // M
-            if in_om(hx, hy):
-                key = ("h", hx, hy)
-            else:
-                key = ("p", hx // L, hy // L)
+            key = ("h", hx, hy) if in_om(hx, hy) else ("p", hx // L, hy // L)
             leaf.setdefault(key, []).append(si(x, y))
-    A = (dm @ Z)
-    H1 = A.T @ A
-    del A, dm
-    B = Dst @ Z
-    del Dst
-    for ix in leaf.values():
-        B[ix] -= B[ix].mean(0, keepdims=True)
-    H1 += B.T @ B
-    del B
-    guard()
-    ev = sl.eigvalsh(H1, subset_by_index=[0, 0], check_finite=False)
-    return 1.0 / ev[0]
+    lr, lc, lv = [], [], []
+    for b, ix in enumerate(leaf.values()):
+        lr += ix
+        lc += [b] * len(ix)
+        lv += [1.0 / np.sqrt(len(ix))] * len(ix)
+    Pi = sp.csr_matrix((lv, (lr, lc)), shape=(ns, len(leaf)))
+    W = (Pi.T @ Dst).tocsr()  # supported on leaf boundaries
+    K = (dm.T @ dm + Dst.T @ Dst - W.T @ W).tocsc()
+    Sad = sp.bmat([[K, C.T], [C, None]], format="csc")
+    lu = sla.splu(Sad)
+    zero = np.zeros(nrow)
+    Gop = sla.LinearOperator((nb, nb), matvec=lambda r: lu.solve(np.concatenate([np.ravel(r), zero]))[:nb], dtype=float)
+    ev = sla.eigsh(Gop, k=1, which="LA", return_eigenvectors=False, tol=1e-6, ncv=40)
+    return float(ev[0]), nrow, nb
 
 
 if __name__ == "__main__":
     watchdog()
     res = {}
+    sizes = ((4, 1), (8, 1), (16, 1), (4, 2), (4, 4), (8, 2), (32, 1), (4, 8), (8, 4), (16, 2))
     for name, om in (("one", {(0, 0)}), ("two", {(0, 0), (1, 0)})):
-        for L, M in ((4, 1), (8, 1), (16, 1), (4, 2), (4, 4), (8, 2)):
-            c = run(L, M, om)
+        for L, M in sizes:
+            c, nr, nb = run(L, M, om)
             res[(name, L, M)] = c
-            print(name, "L", L, "M", M, "C_0 =", round(c, 4), flush=True)
+            print(name, "L", L, "M", M, "C_0 =", round(c, 5), "rows", nr, "bonds", nb, flush=True)
     ok = True
     for name in ("one", "two"):
         r1 = res[(name, 16, 1)] / res[(name, 8, 1)]

@@ -95,7 +95,6 @@ the axioms included, is an assumption.
 - problem/wall text: required unless resuming a named exercise packet;
 - `--artifact`: write a durable packet under `.claude/science/exercises/<slug>/`;
 - `--slug SLUG`: optional packet slug;
-- `--literature`: force the outside-view search;
 - `--subagents N`: independent route fan-out; default `4`, with `0` meaning
   context-isolated passes by the main agent;
 - `--no-web`: skip live literature search and mark the limitation;
@@ -261,10 +260,10 @@ concrete artifact.
 
 ## Step 5: Outside view
 
-Literature runs by default. `--no-web` skips live search: the agent may still
-cite sources it knows, marked unverified. `--literature` makes the search
-mandatory even when the user asked only for the first-principles steps; with
-`--no-web` as well, it is done offline and marked unverified. Prefer primary
+Literature always runs, including when the user asked only for the
+first-principles steps (`docs/ai_methodology/SCIENCE_WORKFLOW.md` section 2,
+rule 9). `--no-web` skips live search: the agent may still cite sources it
+knows, marked unverified. Prefer primary
 sources: arXiv, journal papers, expert books and lecture notes, and official
 bibliographic pages. Look for:
 

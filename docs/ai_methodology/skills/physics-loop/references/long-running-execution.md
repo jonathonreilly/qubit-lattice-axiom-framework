@@ -325,8 +325,9 @@ Session logs and provider resume commands are conveniences, never the record.
   dissent. The owner is not asked. The lead revisits it whenever a result touches
   it.
 - If the test does not decide: both routes stay live, hardest open step first,
-  and the target lead sets their budgets. A route is retired only when a gate
-  shows its hardest step fails or the other route closes that step.
+  while the evidence is open. The target lead allocates budget by evidence and
+  may pause a lagging route with its reopen condition. A route is retired only
+  when a gate shows its hardest step fails or the other route closes that step.
 - About whether a step is right: rank and majority decide nothing
   (`SCIENCE_WORKFLOW.md` section 2, rule 8). The statement stays `unchecked` until
   a checker on a different path settles it.
@@ -352,9 +353,10 @@ leaf: keep it in one sustained attempt, or race it.
   routes in the state of attack.
 - **Bounded task.** A `workhorse` dispatch with a frozen statement and a named
   consumer. It closes when the statement is proved as written or killed by a
-  counterexample. A smaller statement it reduces to is attacked in the same
-  session; only a spent budget sends the exact missing obligation back to the
-  lead.
+  counterexample, tried first when its truth is in doubt. A smaller statement it
+  reduces to is attacked in the same session; a spent budget, or two successive
+  reductions with no closure, sends the exact missing obligation back to the lead
+  for a route re-evaluation.
 - **Probe.** A cheap test of a fork or a risk, with its decisive outcome stated
   first.
 
@@ -377,7 +379,7 @@ counts as independent. It answers three questions:
 
 | Signal | Means | Next step |
 |---|---|---|
-| `advance` | Right, and yes to the other two | Label it `implication` or `discharged`; consumers may build on it; it is frozen, and only a `wrong` signal reopens it |
+| `advance` | Right, and yes to the other two | Label it `implication` or `discharged`; consumers may build on it; it is frozen, and reopens only on a `wrong` signal or when an input it reads changes or is shown wrong |
 | `correct-no-advance` | Right, but no smaller or delivers nothing | Keep it; it may be labelled `implication`, the count is unchanged and the attempt continues |
 | `wrong` | Not right | Fix or withdraw it and mark its dependents affected |
 

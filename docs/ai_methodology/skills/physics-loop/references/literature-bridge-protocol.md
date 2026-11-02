@@ -1,14 +1,16 @@
 # Literature Bridge Protocol
 
-Build on published work; never let an unverified external step carry weight in
-a derivation.
+Build on published work at once, labelled `unchecked`, and verify what the
+argument reads before it counts as a closure, lands or goes public.
 
 ## When To Use
 
-Always. Every route, lemma lane or repair starts with a literature search, run
-far and wide for its statement and its method, before it builds
-(`docs/ai_methodology/SCIENCE_WORKFLOW.md` section 2, rule 9). `--no-web` only
-moves the search offline, marked unverified.
+Always, once per route or proof step: a search run far and wide for its
+statement and its method, recorded once and reused
+(`docs/ai_methodology/SCIENCE_WORKFLOW.md` section 2, rule 9). A lemma, repair
+or gate lane reads the existing records, then runs a short targeted search,
+time-boxed to a small share of its budget, possibly alongside a kill test.
+`--no-web` only moves the search offline, marked unverified.
 
 ## Source Rules
 

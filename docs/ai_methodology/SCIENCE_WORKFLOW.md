@@ -49,16 +49,19 @@ favorable verdicts, note counts or PR counts.
    constant, is not independent. Adversarial checks challenge premises, domains,
    normalization and physical identification, not prose. Record disagreement
    instead of resolving it by majority.
-9. **Literature first; build on published work.** No route, lemma or repair
-   starts building until a search, run far and wide, of the repo, open PRs and
-   the literature has looked for its statement and its method. Write each
-   search down in the target folder: where it looked, the exact statements
-   found, how close they are and whether the proof is accessible. Record a
-   search that finds nothing too, so nobody repeats it. Use what is found and
-   credit its authors by name; prefer filling a published open obligation over
-   a new route. An independent derivation earns nothing; independent checking
-   (rule 8) still applies, and using a result means verifying it (section 10).
-   Novelty neither establishes nor discredits correctness.
+9. **Literature first; build on published work.** Each route or proof step
+   opens with one search, run far and wide, of the repo, open PRs and the
+   literature for its statement and its method, recorded once in the target
+   folder and reused: where it looked, the exact statements found, how close
+   they are and whether the proof is accessible. Record a search that finds
+   nothing too, so nobody repeats it. A lemma, repair or gate lane first reads
+   the existing records, then runs a short targeted search, time-boxed to a
+   small share of its budget; a search may run alongside a kill test. Use what
+   is found and credit its authors by name; prefer filling a published open
+   obligation over a new route. An independent derivation earns nothing;
+   independent checking (rule 8) still applies, and using a result means
+   verifying it (section 10). Novelty neither establishes nor discredits
+   correctness.
 
 ## 3. Formal verification (Lean)
 
@@ -86,7 +89,7 @@ new repository bridges.
 | Formal audit | Runs only for a TOE candidate or a standalone proof the owner wants to publish, over that result's dependency closure. Routine research does not wait for audit; preservation guards apply where affected live judgments exist. Mechanical validation never invokes an auditor or grants status | 2026-10-30 |
 | Landing review | One independent fast reviewer per coherent unit (owner's Codex choice: Astra low), escalating unresolved mathematical or premise questions to the strongest reviewer (Astra xhigh). The executable model contract lives in `skills/review-loop/SKILL.md` | 2026-09-08 |
 | Original mathematics | Explicitly authorized within the user's task | 2026-10-08 |
-| Published work | Searched first and on record; built on with credit; every step the argument uses is verified here (section 2 rule 9, section 10) | 2026-11-02 |
+| Published work | Searched once per route or step and on record; built on at once with credit, labelled `unchecked`, and verified in parallel (section 2 rule 9, section 10) | 2026-11-02 |
 | Lane output | Closed proofs or explicit counterexamples; lanes run to closure; route choices recorded with reasons (section 7) | 2026-11-02 |
 | Questions for the owner | Axiom edits, public posts, spending and pace only; scientific forks get probes (section 10) | 2026-10-30 |
 
@@ -164,23 +167,32 @@ obligation is valuable.
 **Route decisions.** Our route and a published one are both candidates, step by
 step; neither is the default, and we follow theirs only where it is better.
 Record each choice with its reason, the evidence that would reverse it and the
-date, and revisit it whenever a result touches it. Where the evidence does not
-clearly favour one, both stay live, hardest open step first. Retire a route only
-when a gate shows its hardest step fails or the other route closes that step.
+date, and revisit it whenever a result touches it. Both stay live, hardest open
+step first, only while the evidence is open; the lead allocates budget by
+evidence and may pause a lagging route with its reopen condition. Retire a route
+only when a gate shows its hardest step fails or the other route closes that
+step.
 
 **Methods.** Lay out the complete skeleton of the argument, then attack the step
 it is most likely to die on first; routine steps wait. Test machinery on a
 ladder of easier models of the same step: what works there is the first
 candidate, and what fails there is a cheap kill. For a standard, low-risk step,
 write one full draft, distil it to a minimal proof, then gate it. Freeze what
-passes its gate; only a `wrong` signal reopens it.
+passes its gate; it reopens only on a `wrong` signal, or when an input it reads
+changes or is shown wrong. Independent lanes run in parallel across providers
+and machines, and the lead keeps every available worker on the critical path; a
+queue is serial only where one result feeds the next. Gates run alongside
+downstream work, which stays provisional until its gate passes.
 
 **Only closures count.** A lane's output is a closed proof with every step
 written, or an explicit counterexample to a statement. Lists of gaps, unchecked
 inputs and scope caveats are not results; give them one short paragraph at
-most. A lane that reduces its target to a smaller statement attacks it in the
-same session, or tries to build its counterexample, and hands off only when the
-budget is spent, saying how far it got. Notes hold the proof, the counterexample
+most. Kill first: when unsure a statement is true, try the counterexample
+before the long proof. A lane that reduces its target to a smaller statement
+attacks it in the same session and hands off only when the budget is spent,
+saying how far it got. After two successive reductions with no closure, it
+stops and returns to the lead for a route re-evaluation: repeated narrowing
+signals a wrong route. Notes hold the proof, the counterexample
 or the exact point where the argument fails, without restating the setting.
 Report progress as closures: lemmas proved and gated, hypotheses discharged,
 statements killed, observable maps validated, and the terminal obligations that
@@ -242,13 +254,15 @@ all work:
   failed probe is a failed search (section 2, rule 7), never a no-go. An action
   only a person can take, such as obtaining a source, is a request that names
   what it blocks; other work continues.
-- **Verify what you build on.** Reading published work is not accepting it. Each
-  statement the argument uses from the literature or an outside project is
-  re-derived as a library entry, credited to its source, labelled like our own
-  work, and passed by a research gate from another provider, where one is
-  available, before anything rests on it. A citation, and the source's own labels such as "proved", carry
-  no weight; until the rebuild passes, the step is an open obligation. Section 3
-  covers provider Lean-verified theorems.
+- **Verify what you build on.** Reading published work is not accepting it.
+  Build on a published or outside-project statement at once, labelled
+  `unchecked`, and verify in parallel, in order of load and risk: re-derive it
+  as a library entry credited to its source, labelled like our own work, and
+  pass it through a research gate from another provider where one is
+  available. A citation, and the source's own labels such as "proved", carry no
+  weight. A step counts as a critical-path closure, lands or goes public only
+  once everything it reads is verified. Section 3 covers provider Lean-verified
+  theorems.
 - **Research gates grant nothing.** A research gate is the independent check of
   section 5, held at a fixed point in the Develop stage. It redoes the argument
   to find errors and reports the explicit failure or confirms the step; it does

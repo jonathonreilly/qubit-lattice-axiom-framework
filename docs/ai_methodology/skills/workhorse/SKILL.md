@@ -121,9 +121,9 @@ alone establishes provenance, not that step's correctness.
 The supervisor specifies the exact question, allowed premises, known evidence,
 permitted files, resource limit, and a discriminating acceptance test. A proof
 sketch may be supplied as a candidate, with its unproved steps labeled. Workers
-must be allowed to refute the sketch, expose a spec error, or, once the budget
-is spent on the smaller statements it reduces to, return a precise remaining
-obligation. They must never be required to manufacture the result
+must be allowed to refute the sketch, expose a spec error, or return a precise
+remaining obligation once the budget is spent or two successive reductions have
+not closed. They must never be required to manufacture the result
 the supervisor expects.
 
 Separate software integrity from hypothesis outcome. Correct execution with

@@ -428,8 +428,8 @@ routes are risky.
 
 ## Literature
 
-Every route starts with the written literature search of
-`SCIENCE_WORKFLOW.md` section 2, rule 9, before it builds. Prefer primary
+Every route or proof step starts with the written literature search of
+`SCIENCE_WORKFLOW.md` section 2, rule 9, recorded once and reused. Prefer primary
 sources and stable math references. Any literature value, theorem, or convention
 must be entered in the assumption/import ledger with its role: bridge,
 comparator, explicit convention, or non-derivation context. See

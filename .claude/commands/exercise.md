@@ -7,14 +7,14 @@ Run the repo-native exercise skill from:
 ## Invocation
 
 ```text
-/exercise "<physics wall or blocker>" [--artifact] [--slug SLUG] [--literature] [--subagents N] [--no-web] [--test-budget H]
+/exercise "<physics wall or blocker>" [--artifact] [--slug SLUG] [--subagents N] [--no-web] [--test-budget H]
 ```
 
 Examples:
 
 ```text
 /exercise "we cannot derive the K-real generation readout instrument"
-/exercise "Koide r=1/2 is available as a dial but not selected" --artifact --literature
+/exercise "Koide r=1/2 is available as a dial but not selected" --artifact
 /exercise "Planck-scale primitive keeps leaking into bounded status" --subagents 5
 ```
 

@@ -14,7 +14,16 @@ Sources read: outline `YM4_sketch_500.tex` at `31a47c543775` (SHA-256 matches
 `seam-nonlinear-c.md` 4, `fibre-propagator.md`, `fd-local.md` 5, 8,
 `curl-poincare-exterior.md` Lemma 1, `lattice_gehring_hls.md`.
 
-Status: in progress; sections are written as they close.
+Status: finished 2026-11-02. **Flat linear statement PROVED (Theorem FL,
+hand proofs, L^2-local form). Example E question ANSWERED at the flat linear
+level (Theorem E: in the local Landau gauge the contour averages and the (REL-D)
+shell sums are bounded uniformly in depth). Curved linear response (Theorem
+CL) derived at the level of each step from one-step inputs (analyticity and
+Cauchy bounds of the one-step straightened average, an implicit-function step
+for the straightened gauge directions, |omega_0| <= C eps): the depth uniformity
+comes from the exact factorisation of the straightened average (6.1). (L) of
+`sa-2.8.md`: implication from CL, uniqueness (U), and, for one plaquette, local
+regularity (LR).**
 
 ## 0. What Dimock 3.7 actually contains (finding, before any port)
 
@@ -453,14 +462,11 @@ r_(U_0) mu = 0 (transported pillar means), Pi_(U_0) the projection onto ker r_(U
 (block-diagonal), and the response form Q(h) := ||D_(U_0) h||^2 + <h, R h>, the second
 variation of the Lagrangian, R local.
 
-**Input (W) (gap: algebraic, the outline's 1b.3; not checked here).**
-(W1) K D mu = 0 when r_(U_0) mu = 0 (the outline states it: "one has K_0 D lambda = 0
+**Input (W) (derived in 6.1 from the exact factorisation, given one-step
+inputs).** (W1) K D mu = 0 when r_(U_0) mu = 0 (the outline: "one has K_0 D lambda = 0
 whenever the pillar averages of lambda vanish"); (W2) Q(h + D mu, h') = Q(h, h') for such
-mu (the Ward identity; the proof of Lemma Inv of `fibre-propagator.md` gives it
-as soon as the straightened Lagrangian is invariant under a group action whose
-linearisation is mu -> D mu on ker r); (W3) |<h, R h>| <= c_W eps sum_P xi_P^-2 ||h||_P^2
-(curvature and multiplier terms; follows from regularity once the multiplier
-is O(eps), which the outline's Theorem 4 bounds).
+mu (Ward identity); (W3) |<h, R h>| <= c_W(L) eps ||h||_X^2 (curvature terms, and the
+multiplier term, bounded through L^4 with a depth-free constant).
 
 **Theorem CL.** There are eps_0(L), m'(L) > 0 and C'(L) such that, for eps <= eps_0,
 Sad_(U_0) := [[Q + D Pi D^*, K^T], [K, 0]] is invertible on X x l^2(**B**) (X the
@@ -502,45 +508,63 @@ times the block means of D^* h (bump test again). Take m' := 1/(2 C L C'(L)).
 <Pi D^* h, Pi D^* D Pi mu> = 0 for all mu, and Pi D^* D Pi is invertible on ker r, so
 Pi D^* h = 0 and h is stationary for Q on {K h = beta}. QED (given (W))
 
-**6.1 Hostile check of (W3): it is the hard part, and it is about Example E
-again (derivation at the level of each term; not a theorem).** (W3) asks that
-the multiplier term <omega_0, D^2 Q^st(h, h)> be O(eps) on the graph norm. The
-straightened average strips the site factors, e^(i Q^st) = v(c_-)^-1 M v(c_+), and at
-a top y the site factor is the product over all levels of the block factors
-at the same site, v_j(y) = v_(j-1)(y) v-block_(j-1)(y), with log v-block_m(y) = phi_m(y) to
-first order, phi_m the level-m term of Lemma 1 of `rel-phi-c.md`, so that the
-linear part is Phi(h)(y) = sum_m phi_m(y). Second order, by BCH:
-- *pure node terms* (1/2) sum_(m < m') [phi_m(y), phi_m'(y)] enter as
-  sum_y (delta' omega_0)(y) (...), and **delta' omega_0 = 0** exactly: gauge invariance of
-  the action gives <omega_0, K^st D mu> = <omega_0, d'(r mu)> = 0 for every mu. So these drop.
-- *cross-node terms*: on ker K^st (Q_path h = 0) the cross terms of
-  log(v_-^-1 M v_+) leave (1/2) sum_c <omega_0(c), [Phi(h)(c_-), Phi(h)(c_+)]>, which is
-  not of divergence form (the second-order part of log M itself may add or
-  cancel node-concentrated terms; I did not compute it).
-On the graph norm, Phi(h)(y) is not bounded uniformly in depth even on the
-local Landau slice: a transverse field whose energy E is spread evenly over the
-n L-adic shells about y has, by the fourth-order Taylor term of the averaged
-staircases (the second-order term is proportional to div A and vanishes),
-|Phi(h)(y)| of order sum over shells of E_shell^(1/2), i.e. n^(1/2) E^(1/2) (Lemma A
-and Corollary A1 of `rel-phi-c.md` give n^(3/4) as the upper bound). So the
-cross-node term can be of size eps n E, not eps E. At the depths of the
-construction (eps about g_k (log x_k)^q, n up to k), eps n is not small.
-**Consequence:** Theorem CL holds as stated if (W3) holds, but (W3) is not a
-consequence of regularity in L^2 norms; it needs either a cancellation of the
-cross-node commutators against the second-order part of log M, or a mixed-norm
-argument in which the response itself is shown to have bounded contour
-averages (Theorem E is the flat case of that). Balaban's sup-norm setting
-bounds Phi by sup |h| in local units, which is why the issue is invisible
-there; but the response of the flat problem to the forcing that this term
-produces is a gradient of a logarithmic profile about y (Example E's shape,
-|Sol| ~ 1/r), whose own contour average is of order n, so even there the
-iteration closes only if this term cancels. **The smaller inequality to
-decide is (NC-comm):** on ker K^st, in the local Landau slice,
+**6.1 The input (W) from the exact factorisation (derived at the level of each
+step).** Notation of the outline (1a, l. 7092, 7397, 7782; 1c statement 3): the
+one-step straightened average and block factor of e^(ia) W_0 are defined by
+M(e^(ia) W_0) = (e^(i Q1(a)) M(W_0))^(u(a)), with u acting at the coarse sites.
 
-    | sum_c <omega_0(c), [Phi(h)(c_-), Phi(h)(c_+)]> + (node-concentrated part of <omega_0, D^2 log M(h, h)>) |
-        <= eta (Q(h) + ||Pi D^* h||^2),   eta < 1/(8 C_C), uniformly in depth,
+*Factorisation (exact, by covariance M(U^g) = M(U)^(g|coarse)).*
+M^2(e^(ia) W_0) = M((e^(i Q1(a)) M W_0)^u) = M(e^(i Q1(a)) M W_0)^(u|coarse)
+= (e^(i Q1'(Q1(a))) M^2 W_0)^(u' . u|coarse), with Q1' the one-step map at the
+level-1 background M W_0. By induction the n-fold straightened average is the
+composition Q^st_n = Q1^(n-1) o ... o Q1^(0) of one-step maps, each relative to its
+own level's background, and v_n accumulates the block factors. (The outline
+states this: "averaging of order k amounts to composing the straightened
+one-step averages k times".)
 
-or an explicit regular background, multiplier and field violating it.
+*(W3).* Hence D^2 Q^st_n(h, h) = sum_m [D Q^st_(m+1 -> n)] D^2 Q1^(m)(X_m, X_m) + (cross terms of the same
+form), X_m := D Q^st_m h, the straight path average with transports (no contour
+term). Each one-step D^2 Q1^(m) is a bilinear form on the O(L^5) level-m bonds of
+one double block, bounded by C(L) (Cauchy bounds of the analytic one-step
+map near flat fields, outline 1b.2), so |D^2 Q1^(m)(X, X)(c')| <= C(L) sum_(D(c')) |X|^2.
+|X_m(b)| <= 2^(3/4) ||h||_(l^4(S(b))) (`rel-phi-c.md` Lemma 4). The linear map from
+level m + 1 to the top weights one bond by at most L^-3 per level (row sums
+<= L, column sums <= L^-3 per step, outline (e)), and a top double block holds
+about L^(4(n-m)) level-m bonds; by Hoelder the level-m term at a top row is at
+most C(L) L^-(n-m) ||h||^2_(L^4(top neighbourhood)). Summing the geometric series,
+
+    |<omega_0, D^2 Q^st_n(h, h)>| <= C(L) |omega_0| ||h||^2_(L^4) <= C'(L) eps ||h||_X^2
+
+(Sobolev on Z^4 with a cut-off, and ||D^* h|| controlled by the graph norm through
+the bump test). The curvature terms of the Hessian are pointwise O(eps xi^-2).
+This is (W3). It is the mapped route's AN1 form (`seam-nonlinear-c.md` 4.2: a
+remainder C_AN(L) e_j^2 with e_j an L^4 norm), here derived from the composition.
+
+*(W1).* Along a gauge direction D mu, the change of the contour variables
+W(y, x) is mu(y) - Ad(W(y, x)) mu(x); its mean over the block is mu(y) - Q' mu(y). So the
+linearised block factor is mu(y) - Q' mu(y), and the covariance identity
+differentiates to Q^sharp D mu = D-bar (Q' mu): the rows kill D mu when Q' mu = 0 (the
+outline's "Q D = D-bar Q'", 1c (e)).
+
+*(W2).* For a near 0 and a fine gauge g, Q^st(a^g) = Q^st(a) exactly when the
+coarse values satisfy g|coarse = u(a)^-1 u(a^g) (compare the two expressions for
+M((e^(ia) W_0)^g)). By the implicit function theorem (the linearised condition at
+a = 0 is Q' mu = 0, and Q' is onto the tops), these g form, for each a, a smooth
+family whose tangent at 1 is {D mu : Q'_a mu = 0}, smooth in a. Along it the action
+is invariant and Q^st is constant, so the straightened Lagrangian is
+invariant, and differentiating D L^st(a)[X_mu(a)] = 0 at the critical point a = 0
+gives Hess L^st(h, D mu) = 0 for Q' mu = 0 (the argument of Lemma Inv of
+`fibre-propagator.md`). The IFT step is written only to this level here.
+
+*A tempting expansion that is wrong to stop at.* Expanding log(v(c_-)^-1 M^n v(c_+))
+by BCH with v(y) the product over all levels of block factors at the same top
+y produces cross-node commutators (1/2)[Phi(h)(c_-), Phi(h)(c_+)] of the multi-level
+contour averages, whose size on the graph norm grows with depth (a transverse
+field with energy spread over the n shells about y has Phi of order
+n^(1/2) E^(1/2)). By the factorisation they cancel exactly against node terms of
+log M^n; the pure node terms also pair to zero with omega_0 because gauge
+invariance of the action gives delta' omega_0 = 0. (An earlier draft of this
+section stopped here; the factorisation removes the stop.)
 
 This is the outline's Theorem 4 at real points of the polydisc, in local
 L^2 form, with the local Landau gauge in place of R D^T H = 0; and it is Theorem F
@@ -603,25 +627,30 @@ recorded in `sa-findings.md` are outside A3 and untouched.
 | K_M (outline's actual average, pointwise node gauge) unbounded on the graph norm, ratio >= c (log B)^(1/2) | scaling computation, constants not tracked; not load-bearing |
 | **Theorem E (flat, local Landau gauge: contour averages and the (REL-D) shell sum bounded at every top centre, uniformly in depth)** | **discharged, hand**, using Lemma A and Corollary A2 of `rel-phi-c.md` |
 | Admissible gauge from the local Landau one with O(1) bumps: (REL-Phi) = 0, (REL-2), (REL-4), (REL-D) kept | discharged at the flat linear level (5.3) |
-| Theorem CL (curved linear response at regular backgrounds, decay, exactness) | implication from (W); (W3) contains the cross-node term of 6.1, not shown small uniformly in depth |
+| (W1), (W3): row covariance Q^sharp D = D-bar Q', multiplier term <= C(L) eps ||h||^2 in L^4, uniformly in depth | derived (6.1) from the exact factorisation of the straightened average; one-step Cauchy bounds and |omega_0| <= C eps are inputs |
+| (W2): Ward identity of the straightened Lagrangian on ker Q' | derived to the level of an implicit-function step (6.1) |
+| Theorem CL (curved linear response at regular backgrounds, decay, exactness) | implication from (W); depth-uniform |
 | (L) of `sa-2.8.md` | implication from CL, (U) = outline Theorem 1, chart bounds; pillar-averaged; one plaquette needs (LR) |
 
 **Open, hardest first.**
-1. *(NC-comm) of 6.1*, the part of (W3) that can fail: the cross-node
-   commutators of composite contour averages in the multiplier term of the
-   curved Hessian. Uniform-in-depth curved response (Theorem CL, hence (L) and
-   the outline's Theorem 4 at curved points) needs it or a cancellation.
-   (W1), (W2) are algebra: (W2) follows from the exact Ward identity of the
-   M-chart (Lemma Inv of `fibre-propagator.md`) once the straightening is the
-   gauge shift by the site factors, because the linearised site factor of a
-   gauge direction is exactly mu(y) - r mu(y) (mean of the contour-variable changes).
-2. *Nonlinear Theorem E:* the interior estimate of 5.1 steps (1)-(3) for the
+1. *Nonlinear Theorem E:* the interior estimate of 5.1 steps (1)-(3) for the
    class minimiser relative to the iterated trial, in a local Landau gauge
-   relative to T. With it, 5.3 closes (REL-Phi) and (REL-D) for (REL).
-3. *(LR) curved, pointwise:* one cube, one scale.
-4. *(U):* uniqueness of regular critical points (the outline's Theorem 1).
-5. Balaban's own gauge R delta A = 0 (fourth-order analogue of Lemma S), only if a
-   consumer needs that gauge rather than the local Landau one.
+   relative to T (elliptic bootstrap with the quadratic Yang-Mills terms and the
+   curvature of T as perturbations). With it, 5.3 closes (REL-Phi) and (REL-D)
+   for (REL) of `seam-nonlinear-c.md`; Theorem CL at T supplies the decay.
+2. *(LR), curved and pointwise:* one cube, one scale; needed for the outline's
+   pointwise form of Theorem 4 and for (L) at one plaquette. The flat
+   potential bound is steps (1)-(3) of Theorem E plus Morrey from W^(1,12);
+   the gradient bound may lose a logarithm at pillar edges in the local Landau
+   gauge (delta A is pillar-constant there, so grad A is a second derivative of a
+   Newtonian potential of a piecewise-constant function), which is one reason
+   to prefer Balaban's R delta A = 0 for pointwise gradient bounds.
+3. *(U):* uniqueness of regular critical points (the outline's Theorem 1).
+4. *One-step inputs of 6.1:* Cauchy bounds of the one-step straightened map on
+   a polydisc of radius r_L, |omega_0| <= C eps, and the implicit-function step
+   of (W2), all single-block, finite-dimensional, with no depth in them.
+5. Balaban's gauge R delta A = 0 (fourth-order analogue of Lemma S), only if a
+   consumer needs it.
 
 The rates here depend on L (seams cost L-powers through Lemmas P and S). The
 outline's Theorem 4 allows that. The mapped consumers that want an absolute

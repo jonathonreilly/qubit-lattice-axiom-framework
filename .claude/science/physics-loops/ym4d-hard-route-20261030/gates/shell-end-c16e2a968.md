@@ -27,7 +27,7 @@ lease_until: 2026-11-02T14:22Z
 
 ## Defects, ranked by what each breaks
 
-**D1. The rate condition does not survive the mapped order as written, and DS does not need it.** In the order of constants (mapped file, line 24), nu <= delta/4, delta'' and mu come before L, while A_s(L), r(L), M_*(L) come after. So b_s nu <= 1/2 at the consumer's nu asks for b_s bounded free of L. A finite C(L) does not give it. Moving nu after L is not available: mu is read before L, and the high-order contraction C_1 reads it. Inside the route it cannot be weakened: (E-SHELL) alone cannot give (WAM) above about 1/(2 r A_s), by the scalar example in `library/wam-direct-flat.md`, Section 4, so the condition is sharp within a factor 2.
+**D1. The rate condition does not survive the mapped order as written, and DS does not need it.** In the order of constants (mapped file, line 24), nu <= delta/4, delta'' and mu come before L, while A_s(L), r(L), M_*(L) come after. So b_s nu <= 1/2 at the consumer's nu asks for b_s bounded free of L. A finite C(L) does not give it. Moving nu after L is not available: mu is read before L, and C_1 of the high-order contraction is absolute in a sum weighted by e^(mu d) (`one-step-closure.md`, line 60). Inside the route it cannot be weakened: (E-SHELL) alone cannot give (WAM) above about 1/(2 r A_s), by the scalar example in `library/wam-direct-flat.md`, Section 4, so the condition is sharp within a factor 2.
 
 *Repair, proved given (FALL) at the smaller rate: Lemma DOM.* The note says choosing nu_* < nu_req "does not prove that consumer's statement". True of the display (FALL), but DS does not read the display. It reads only I_(k-m)(Lambda_m V_t; W_y^+) <= C(L) q^m T_2^2 (`sector-values.md`, lines 218, 220), with the decay in y supplied by Lemma CRUDE. COMP-B likewise reads only a_m <= C q^m T_2^2. Weighted sums are monotone in the weight, and W_y^+ <= C exp(-nu_s d(., y)) pointwise for nu_s <= nu. So (FALL) at any nu_s(L) > 0 gives what DS reads, at the cost of a factor nu_s^-4 in C(L), paid at x_*. The output rate of DS stays delta''/2. As b_s(s) s <= 1/2 for small s whenever A_s, r and a moment are finite, **the condition becomes automatic for DS and COMP-B**. Prop GS in Theorem VAL has W = 1, rate 0. The one reader left is the region clause (below, D6).
 
@@ -65,7 +65,23 @@ Section 5 there proposes the same identity for the nonlinear (WAM) with no gluin
 
 ## Run
 
-Pending.
+`checks/gate_se/`, criteria in `CRITERIA.md`, written before each stage. Linear, flat, a few lattices: a run can refute or guide, and these discharge nothing. Nothing in the chain reads them.
+
+**Stage 1, registered: sup over all 2-forms.** Identities pass (P^2 = P to 3e-16, zero coarse curl of Q(A - A_*) to 2e-16 in real space, rank 3 per coarse momentum). A first version had a bug in the Gram matrix, caught by the identity check; no result of it is used. K1, K2 pass. **K3 FIRED**: D2(M=6)/D2(M=4) = 2.07 (radial), 1.75 (zig), growing to M = 8. So the registered prediction was false for that quantity. Lemma Q is not contradicted: j grows with M there.
+
+**Stage 2, post hoc, written after K3: sup over closed trials**, the actual linear (WAM) ratio. D2c := (rho_c - 1)/nu^2, control w = 1 gives 1 to 1e-14.
+
+| Profile, nu = 0.2 | B=3, M=2 | M=4 | M=6 | M=8 | B=9, M=4 | B=15, M=2 |
+|---|---|---|---|---|---|---|
+| radial | 0.146 | 0.411 | 0.542 | 0.609 | 0.444 | 0.157 |
+| zig | 0.074 | 0.145 | 0.198 | 0.233 | 0.159 | 0.083 |
+| step (exploratory) | 0.223 | 0.310 | 0.362 | 0.390 | 0.369 | 0.250 |
+
+K1c passes: B = 9 against B = 3 at M = 4 is 1.08, 1.10. K2c was **not run**: B = 25 was skipped at 40 percent memory free. D2c is flat in nu from 0.1 to 0.4 to within 5 percent, so the law is nu^2. **K3c FIRED**: D2c(M=8)/D2c(M=4) = 1.60 (zig), 1.50 at nu = 0.4 (radial), 1.48 at nu = 0.1 (radial), against a bar of 1.5. I registered that as refuting the hand proof, and the data alone could not clear it: the sequences fit D_oo - c/M and, for zig, roughly log M.
+
+**Stage 3, post hoc, written after K3c: the limit with no torus.** D_oo(s) := sup_p ||Pi_H(p) (s.d_p P(p)) on Ran P(p)||^2 is the second-order coefficient for wide envelopes. Result at B = 3: D_oo(e_0) = 0.323, D_oo(1,1,1,1) = 0.743, at zone-boundary momenta. The 1/M fits of Stage 2, made before this was computed, gave 0.33 and 0.80. Along rays the coefficient falls as |p|^2, 1.1e-6 at |p| = 0.01, so B1 passes and there is no log. Every torus value lies under D_oo, so flag B3 is silent. So K3c fired on an arbitrary bar set in the unsaturated range M = 4 to 8, and D_oo is what decides it. Lemma WP's bound is not contradicted.
+
+The kill criteria of Stages 2 and 3 were written after seeing a failure. Read them as a diagnosis, not as an independent prediction.
 
 ## What was and was not read
 

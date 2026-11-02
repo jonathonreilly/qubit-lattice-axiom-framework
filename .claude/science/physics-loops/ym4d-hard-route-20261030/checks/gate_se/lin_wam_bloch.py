@@ -58,6 +58,11 @@ class Bloch:
 def scan(bl, dirn, g, seed):
     pts = 2 * np.pi * (np.arange(g) + 0.5) / g - np.pi
     best, arg = -1, None
+    starts = [np.array([np.pi, 4.04, 0.0, 0.0]), np.array([np.pi, np.pi, -np.pi, -np.pi])]
+    for p in starts:
+        v = bl.value(p + 1e-3, dirn)
+        if v > best:
+            best, arg = v, p + 1e-3
     for p in itertools.product(pts, repeat=4):
         p = np.array(p)
         if np.abs(np.exp(1j * p) - 1).max() < 1e-9:

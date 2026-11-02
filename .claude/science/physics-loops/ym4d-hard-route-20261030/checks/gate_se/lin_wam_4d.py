@@ -143,12 +143,14 @@ def weights(fl, profile, nu):
             v = t(x + sh)
             if profile == 'step':
                 v = np.floor(v + 0.5)
+            if profile == 'cos':
+                v = (fl.M / (2 * np.pi)) * np.cos(2 * np.pi * (x + sh) / N)
             tt.append(v.reshape(fl.sh[r]))
         if profile == 'radial':
             ell = -(tt[0] + tt[1] + tt[2] + tt[3])
         elif profile == 'zig':
             ell = -tt[0] * np.ones((N,) * 4)
-        elif profile == 'step':
+        elif profile in ('step', 'cos'):
             ell = -tt[0] * np.ones((N,) * 4)
         else:
             raise SystemExit('profile')

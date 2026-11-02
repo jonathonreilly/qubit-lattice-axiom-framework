@@ -340,3 +340,247 @@ gauge of Theorem F in `fibre-propagator.md`. Balaban's gauge R delta A = 0 is
 reached from it by d mu, mu in ran Pi with Pi Delta^2 Pi mu = -Pi Delta delta A, a
 fourth-order analogue of Lemma S that is not written here (label: gap, not
 needed below).
+
+## 5. Example E and the gauge: contour averages are bounded in the local Landau gauge (flat linear: discharged)
+
+**5.1 Where Example E lives.** At V_0 = 1 the outline's actual average M has
+the linearisation K_M = Q_path - d' Phi (`rel-phi-c.md` 2), and its restricted
+gauges are lambda = 0 at the nodes (G^res). The straightened average of the
+Landau pair is Q^st = Q_path (Section 1), with restricted gauges of pillar mean
+zero, and the two charts differ by the site factors: the outline's Theorem 3
+has u_B v_j[H] = 1 at the tops, v_j = exp(block means of contour variables),
+so at linear order log u(y) = -Phi(H)(y), the contour average of the Landau
+potential at the top. Example E is a G^res gauge direction (lambda_E = 0 at the
+nodes), so it lies in the kernel of K_M and costs no energy; what it shows is
+that K_M is not bounded on the natural norm. Scaling check (constants not
+tracked): with mu := a sum over the even tops y of a smooth radial version of
+1 - phi_y (logarithmic profile, radius R ~ B/4), theta := d mu has dtheta = 0,
+||xi^-1 theta||^2 ~ a^2/log^2 B and ||Pi delta theta||^2 = ||Pi Delta mu||^2 ~ a^2/log B per even
+block, while Phi(theta) is about a at even tops and 0 at odd ones, so
+|K_M theta(c)| ~ a on the coarse bonds between them: ||K_M|| >= c (log B)^(1/2) from
+the graph norm X to l^2, uniformly in nothing. (A sup-norm radial profile
+does not work here: its second differences on the edges of the sup-spheres are
+first order and give ||Delta mu||^2 ~ a^2 R/log^2 R.) So a saddle point in the
+M-chart cannot have a depth-free bound; in the straightened chart
+|q_c(A)| <= 0.82 ||xi^-1 A||_(D(c)) (Lemma 3). That is the reason for Balaban's
+straightening, and it moves the contour averages into the gauge factor at the
+tops, where they must be bounded separately. Theorem E says they are.
+
+**Theorem E (flat linear).** Single lattice of depth n (one layer, pillars =
+top blocks of side B = L^n, rows of level n only, as for the class in (REL)).
+Let A_L be the minimiser of Section 1 in the local Landau gauge (Pi delta A_L = 0),
+for any datum. For every top centre y, with N_y := the 3^4 top blocks about y,
+H := B A_L in top normalisation and Lemma A's annuli A_j(y),
+
+    sum_(j=1)^n ||H||_(L^4(A_j(y))) + |Phi_n(A_L)(y)| <= C(L) ( ||dA_L||_(N_y) + B^-1 ||A_L||_(N_y) ),
+
+with C(L) free of n and of the volume. Combined with Lemma C (or the decay of
+Section 3), the right side is at most C(L) times the local energy and datum.
+
+*Proof.* (1) *Equation near the centre.* delta d A_L = q^T omega (stationarity on
+ker q) and Pi delta A_L = 0, so delta A_L is constant on each top block and
+d delta A_L = 0 on bonds inside it. On the flat lattice delta d + d delta is the
+componentwise scalar Laplacian (the identity behind ||grad b||^2 = ||db||^2 + ||delta b||^2,
+`lattice_sobolev_box_gauge.md` 2). So on the box Q of side B/2 about y,
+Delta A_L = q^T omega. Testing delta d A_L = q^T omega with phi_c of Lemma T gives
+omega(c) = <dA_L, d phi_c>, |omega(c)| <= 300 ||dA_L||_(D(c)); at most 16 rows reach a bond near
+the centre, each with weight <= B^-3, so |q^T omega| <= 4800 B^-3 ||dA_L||_(N_y) on Q.
+(2) *Particular part.* v := the solution of Delta v = q^T omega on Q, v = 0 on the
+boundary. Comparing with (sup |q^T omega|/8)(B^2/4 - |x - y|_2^2), which has Laplacian
+-sup |q^T omega| (Delta |x|^2 = 8 in d = 4), the maximum principle gives
+|v| <= 150 B^-1 ||dA_L||_(N_y) on Q: in top units, |B v| <= 150 ||dA_L||.
+(3) *Harmonic part.* h := A_L - v is harmonic on Q, and so is each difference
+of it. Caccioppoli on the lattice (test Delta h = 0 with eta^2 h): for a cut-off
+eta with |d eta| <= 8/r, sum eta^2 |dh|^2 <= 64 sum |d eta|^2 |h|^2. Twice, with Lemma 1 of
+`lattice_sobolev_box_gauge.md` (||u||_4 <= 1.5 ||grad u||_2 on Z^4) applied to
+cut-offs of h and of its differences, on boxes Q_r of side r = B/2 shrinking by
+halves: ||h||_(l^4(Q_(r/8))) <= C r^-1 ||h||_(l^2(Q_r)) and ||grad h||_(l^4(Q_(r/8))) <= C r^-2 ||h||_(l^2(Q_r)).
+*Gagliardo-Nirenberg at p = 3 on Z^4* (from the same Loomis-Whitney step with
+w := |u|^9, since |a^9 - b^9| <= 9 |a - b| (a^8 + b^8) and Hoelder with 8/12 + 1/3 = 1):
+||u||_12 <= 18 ||grad u||_3 for finitely supported u. With Hoelder on Q_(r/8),
+||h||_(l^12(Q_(r/16))) <= C r^-(5/3) ||h||_(l^2(Q_r)). In top units this reads
+||Bh||_(L^12(Q_(r/16))) <= C B^-1 ||h||_(l^2(Q)) <= C (B^-1 ||A_L||_(N_y) + ||dA_L||_(N_y)).
+(4) *Shells.* Corollary A2 of `rel-phi-c.md` with p = 12 bounds the sum of
+||H||_(L^4(A_j)) over the annuli inside Q_(r/16) by C(L) ||H||_(L^12) (each gains
+L^(-(n-j)(2/3))); the at most 4 outer annuli, out to radius 5B/6, are bounded
+by ||H||_(L^4(N_y)) <= C (||dA_L||_(N_y) + ||delta A_L||_(N_y) + B^-1 ||A_L||_(N_y)) (Sobolev with a
+cut-off and the identity in (1)), and ||delta A_L|| = ||(1 - Pi) delta A_L|| is bounded by
+B^-1 ||A_L|| with the bump test of Lemma S. Lemma A of `rel-phi-c.md`
+(|Phi_n theta(y)| <= (3.4L + 1) times the shell sum) gives the bound on Phi_n. QED
+
+Lemma A and Corollary A2 are discharged in `rel-phi-c.md` (same model, not
+gated); everything else above is proved here.
+
+**5.2 What this answers (queue row: "whether Balaban's multiscale Landau gauge
+keeps the contour averages of Example E bounded").** Yes, at the flat linear
+level, in the local Landau gauge Pi delta A = 0 of Section 4 (the block-diagonal
+form of Balaban's gauge): the contour averages at every top centre, and the
+l^1 shell sum of (REL-D), are bounded by C(L) times the local energy and
+datum, uniformly in depth. Example E cannot occur there: the local Landau
+condition makes delta A constant on each top block, so near the centre the field
+solves Poisson's equation with a bounded right side and has no logarithmic
+spike. The spikes of Example E come only from imposing g = 1 *pointwise* at the
+centres.
+
+**5.3 Consequence for (REL) of `seam-nonlinear-c.md` (implication at the flat
+linear level; the nonlinear step named).** Start from the local Landau field
+H_L and make it admissible with the point bumps of `rel-phi-c.md` 6.1,
+lambda_b := -sum_y kappa(y) (1 - phi_y), R = floor(B^(1/2)), with amplitude
+kappa(y) := -Psi_L(y)/(1 - c_R). Then the admissible field has Psi = 0 exactly
+(Lemma 2 there), (REL-2) and (REL-4) change by at most 13 B^-(1/2) |kappa| and
+4.25 |kappa| / log^(3/4)(1 + R) ((E3), (E4) there), and the shell sum of (REL-D)
+changes by at most 4 |kappa| (log L)^-(3/4) (the log profile puts L^4 mass about
+|kappa|^4 log L / log^4(1+R) in each of log_L R shells). Theorem E gives
+|kappa| <= C(L) times the local energy. **So the amplitudes are O(1), not
+O(n^(3/4)) as in Lemma CAP**, and the two nonlinear obstructions of `rel-phi-c.md`
+4.2 become small: the twist is C f |kappa| relative, and the scrambling is at most
+min(2, |kappa|) times the shell sum, which (REL-D) for H_L bounds. What is not done
+here is the nonlinear form of Theorem E: the class minimiser U relative to the
+iterated trial T, in a local Landau gauge relative to T, must satisfy the
+interior estimate of steps (1)-(3) with the quadratic terms of the
+Yang-Mills equation and the curvature of T as perturbations (an elliptic
+bootstrap with smallness, f and the L^4 norm small). That is the first step of
+(REL-Phi) at the nonlinear level that this note does not carry.
+
+## 6. The curved linear response at a regular background (implication from one named algebraic input)
+
+**Setting.** U_0 real on Omega_0, *regular at radius eps* in local units:
+|dU_0(p) - 1| <= eps xi(p)^-2 and |J(U_0)(b)| <= eps xi(b)^-3 (fine units; outline (1b)(i)),
+xi the finest pillar side at the corners. Work in the straightened chart of the
+Landau pair: the linearised rows K := K_(U_0) (path averages with the transports
+of U_0, the outline's K_0), restricted gauge directions D mu := D_(U_0) mu with
+r_(U_0) mu = 0 (transported pillar means), Pi_(U_0) the projection onto ker r_(U_0)
+(block-diagonal), and the response form Q(h) := ||D_(U_0) h||^2 + <h, R h>, the second
+variation of the Lagrangian, R local.
+
+**Input (W) (gap: algebraic, the outline's 1b.3; not checked here).**
+(W1) K D mu = 0 when r_(U_0) mu = 0 (the outline states it: "one has K_0 D lambda = 0
+whenever the pillar averages of lambda vanish"); (W2) Q(h + D mu, h') = Q(h, h') for such
+mu (the Ward identity; the proof of Lemma Inv of `fibre-propagator.md` gives it
+as soon as the straightened Lagrangian is invariant under a group action whose
+linearisation is mu -> D mu on ker r); (W3) |<h, R h>| <= c_W eps sum_P xi_P^-2 ||h||_P^2
+(curvature and multiplier terms; follows from regularity once the multiplier
+is O(eps), which the outline's Theorem 4 bounds).
+
+**Theorem CL.** There are eps_0(L), m'(L) > 0 and C'(L) such that, for eps <= eps_0,
+Sad_(U_0) := [[Q + D Pi D^*, K^T], [K, 0]] is invertible on X x l^2(**B**) (X the
+covariant graph norm of Section 4) with bound C'(L), and its solution at datum
+beta supported on S obeys
+
+    sum_P e^(2 m' psi(P)) ( xi_P^-2 ||h||_P^2 + ||D_(U_0) h||_P^2 ) <= C'(L) ||beta||^2.
+
+Given (W), h is the response of the critical point, in the covariant local
+Landau gauge Pi_(U_0) D^* h = 0.
+
+*Proof (at the level of each step).*
+(a) *Local flatness (discharged).* On a cube Q of side l whose finest scale is
+s, the comb (axial) gauge from a corner gives |U_0^g(b) - 1| <= 3 l eps s^-2 on every
+bond of Q: the loop closing the two comb paths bounds a strip of at most 3l
+plaquettes, and |XY - 1| <= |X - 1| + |Y - 1| for unitaries with conjugation
+invariance (non-abelian Stokes on a strip). On a patch of side R_0 xi# (xi# the
+coarser scale within R_0 L xi of a seam, the local scale elsewhere) every
+covariant operator above (D, D^*, K, r, Pi, the bumps of Lemma T) differs from
+its flat version in this gauge by at most C R_0 L^2 eps, relative, in the
+weighted norms.
+(b) *Coercivity on ker K.* IMS with a partition sum_i eta_i^2 = 1 into such patches:
+sum_i [Q + ||Pi D^* .||^2](eta_i h) <= (1 + kappa)[Q + ||Pi D^* .||^2](h) + (C/kappa) R_0^-2 sum_P xi_P^-2 ||h||_P^2
+(the commutators with eta_i have size 1/(R_0 xi#) <= 1/(R_0 xi); block means of
+D^* h are bounded by the graph norm through the bump test of Lemma S). For each
+patch, transport eta_i h to the flat gauge, correct it into ker q with Lemma T
+(the defect is [K, eta_i] h + (q - K^g) eta_i h, of size (C/R_0 + C R_0 L^2 eps) ||xi^-1 h||),
+and apply Lemma C. With (W3): Q(h) + ||Pi D^* h||^2 >= (4 C_C)^-1 sum_P xi_P^-2 ||h||_P^2 on
+ker K, once R_0^2 >= 16 C C_C and C R_0 L^2 eps + c_W eps <= (16 C_C)^-1.
+(c) *Inf-sup and size.* Transported bumps phi_c^(U_0) satisfy
+K phi_c^(U_0) = delta_c + E, ||E|| <= C L^2 eps, local; T_(U_0) := T~ (1 + E)^-1 by a
+Neumann series (exponentially local, which Combes-Thomas allows). K is
+bounded on X by Lemma 3 with transports.
+(d) *Decay.* Brezzi's bound gives ||Sad^-1|| <= C'(L). For psi Lipschitz in d_B,
+e^(m psi) Sad e^(-m psi) - Sad has norm at most C L m on X x l^2 for m <= 1/(10L): rows
+have d_B-diameter at most 4L + 4, the commutator of Pi with e^(m psi) is bounded by m
+times the block means of D^* h (bump test again). Take m' := 1/(2 C L C'(L)).
+(e) *Exactness.* Test the first row with D mu, mu in ker r: by (W1), (W2),
+<Pi D^* h, Pi D^* D Pi mu> = 0 for all mu, and Pi D^* D Pi is invertible on ker r, so
+Pi D^* h = 0 and h is stationary for Q on {K h = beta}. QED (given (W))
+
+This is the outline's Theorem 4 at real points of the polydisc, in local
+L^2 form, with the local Landau gauge in place of R D^T H = 0; and it is Theorem F
+of `fibre-propagator.md` at a regular background in the multiscale geometry of
+(1b), which is the input that `seam-nonlinear-c.md` 4.1 and `rel-phi-c.md` 6.3
+name ("Sad#(T) invertible with exponential decay"). The iterated trial T of
+(REL) is regular in this sense ((TOP-tr): pointwise fine curvature at most
+C_7 B^-2 f), so at T Theorem CL needs only (W) and f <= eps_0(L).
+
+## 7. Stop (L) of `sa-2.8.md`: the response between two critical backgrounds (implication)
+
+**Reduction.** Let P be the prepared background (determining set D_p) and P_X
+the localised one (joined sequence: the same rows away from the collar, finer
+collar rows carrying the lift). Put Delta v := (lift data) - (the collar
+averages of P itself) on the collar rows, in the straightened log chart; it is
+O(eps) per row, eps = C_0 a_k in local units. Consider the joined problem with
+collar data v_P + t Delta v, t in [0, 1].
+- t = 0: P satisfies these rows by construction and is critical for its own,
+  larger, constraint set, hence for the smaller one; so P(0) = P, given
+  uniqueness of regular critical points of the joined problem (U).
+- Continuation: the linearisation along the path is Sad_(P(t)) of Theorem CL,
+  invertible with bound C'(L); the implicit function theorem continues P(t) while
+  it stays regular, and the a priori bound int |P'| <= C'(L) sup|Delta v| keeps it
+  regular at radius C eps <= eps-bar for small eps (open-closed argument). This
+  also needs the smoothness bounds of the chart (outline 1b.2), not rebuilt.
+- t = 1: P(1) = P_X by (U).
+- P'(t) is the response to Delta v, supported on the collar rows C_X. By
+  Theorem CL, its energy in the pillar of p is at most
+  C'(L) (sum over collar rows c of e^(-m' d_B(p, c)) |Delta v(c)|)^2 <= C(L) eps^2 e^(-m' D_p),
+  the sum over the collar costing only a power of D_p, absorbed by halving m'.
+
+So the relative field of P_X against P, in the local Landau gauges along the
+path, has energy at most C(L) eps^2 e^(-m' D_p) in the pillar of p, and the
+plaquette holonomies there differ by that much in pillar l^2. With
+|a(G) - a(H)| <= r |G - H|, r <= C_0 a_k eta^2 (`sa-2.8.md` 9), this is (L) with
+m = m'(L)/2 in pillar-averaged form, from: Theorem CL (hence (W)), (U) (the
+outline's Theorem 1, cited there to Balaban CMP 102 Prop. 8, not rebuilt), the
+chart bounds of 1b.2, and, for one plaquette rather than a pillar average,
+local regularity (LR): an interior pointwise bound for the curved linear
+system on one cube, single scale, no depth in it. Steps (1)-(3) of Theorem E
+are the flat version of (LR) for the potential in L^12; the pointwise curvature
+bound needs one more difference (Caccioppoli on D h, then the same chain to
+L^infinity via W^(1,12)), which I did not write.
+
+**What this does not cover.** The ten-term remainder of 2.8, the complex
+continuation (the outline's polydisc), and the shell variable conflation
+recorded in `sa-findings.md` are outside A3 and untouched.
+
+## 8. Verdicts, what stays open
+
+| Statement | Label |
+|---|---|
+| Dimock 1712.10029 Section 3.7 as a proof to port | not a proof: quotes Balaban for the local inverses, the seam boxes and (day0) (Section 0) |
+| Lemmas 1, 2, 3 (box curl-Poincare, scalar Poincare, links) | discharged, hand |
+| Lemma T (exact local right inverse of the multiscale average, triangular at seams, E(T beta) <= 10^7 ||beta||^2) | discharged, hand |
+| Lemma P (normalised patching of local gauges, any separated geometry, rho >= 3L^2) | discharged, hand; C_P(L) <= 10^16 L^12 |
+| **Theorem FL (flat multiscale response: curvature and restricted-gauge potential decay in d_B, uniform in depth, regions, volume)** | **discharged, hand (hole-filling); L^2-local form** |
+| Lemma S (scalar gauge problem: absolute decay rate; weighted bound) | discharged, hand |
+| Lemma C (flat coercivity with the block-diagonal gauge term, sharp weights) | discharged, hand, given Lemma S (rho >= 8 log L / m_s) |
+| K_M (outline's actual average, pointwise node gauge) unbounded on the graph norm, ratio >= c (log B)^(1/2) | scaling computation, constants not tracked; not load-bearing |
+| **Theorem E (flat, local Landau gauge: contour averages and the (REL-D) shell sum bounded at every top centre, uniformly in depth)** | **discharged, hand**, using Lemma A and Corollary A2 of `rel-phi-c.md` |
+| Admissible gauge from the local Landau one with O(1) bumps: (REL-Phi) = 0, (REL-2), (REL-4), (REL-D) kept | discharged at the flat linear level (5.3) |
+| Theorem CL (curved linear response at regular backgrounds, decay, exactness) | implication from (W), the Ward identity and row covariance of the straightened chart |
+| (L) of `sa-2.8.md` | implication from CL, (U) = outline Theorem 1, chart bounds; pillar-averaged; one plaquette needs (LR) |
+
+**Open, hardest first.**
+1. *(W) for the straightened chart:* the Ward identity Q(h + D mu, .) = Q(h, .) for
+   mu with zero transported pillar means, i.e. a group action under which the
+   straightened Lagrangian is invariant. It is algebra about the outline's
+   site factors (1b.2, 1b.3), and it is the only input of Theorem CL.
+2. *Nonlinear Theorem E:* the interior estimate of 5.1 steps (1)-(3) for the
+   class minimiser relative to the iterated trial, in a local Landau gauge
+   relative to T. With it, 5.3 closes (REL-Phi) and (REL-D) for (REL).
+3. *(LR) curved, pointwise:* one cube, one scale.
+4. *(U):* uniqueness of regular critical points (the outline's Theorem 1).
+5. Balaban's own gauge R delta A = 0 (fourth-order analogue of Lemma S), only if a
+   consumer needs that gauge rather than the local Landau one.
+
+The rates here depend on L (seams cost L-powers through Lemmas P and S). The
+outline's Theorem 4 allows that. The mapped consumers that want an absolute
+fast rate (`fd-local.md` 6) get one inside each layer (Lemma S has an absolute
+rate; Lemma P's chains have absolute length away from seams), but this note
+does not prove an absolute rate across seams.

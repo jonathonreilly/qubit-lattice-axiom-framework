@@ -370,8 +370,6 @@ Package G, 7.5 and the outline's Z beyond reconstruction are not carried.
 Every carried outline statement still has to be re-derived here and gated
 before it counts (FINISH, How we work item 2).
 
-**Lead note, 2026-11-02 (after this record).** Position M's reversal test fired: `gates/a3-gate-b2c312b2e.md` finds Theorem FL not closed and, even repaired, not the outline's A3. A3's flat and background kernels are now carried as Balaban's (CMP 99 (389-434), with CMP 95 and 96 cited), ported by row 82; A2 stays ours (row 78); single-layer Theorem E and Lemmas 1, 2, H survive.
-
 ## 6. What moved, what is waste, what the lead may change
 
 - **Moved:** `library/route-decisions.md`, every position, first version.

@@ -186,7 +186,6 @@ def axis_frame(U, z):
     N = U.shape[1]
     h = np.zeros((N,) * 4 + (4,))
     h[tuple(z)] = (1, 0, 0, 0)
-    filled = [z[0:1]]
     # sweep each axis in turn from the plane already filled
     for mu in range(4):
         sl = [slice(None)] * 4
@@ -233,8 +232,8 @@ def cell_max_along(theta_cells, pts):
             for t in range(lo // 3, hi // 3 + 1):
                 c = [int(a[i]) // 3 if i > mu else int(b[i]) // 3 for i in range(4)]
                 c[mu] = t
-                w = [((c[i] + e) % n for e in (-1, 0, 1)) for i in range(4)]
-                total += max(theta_cells[g] for g in itertools.product(*[list(u) for u in w]))
+                w = [[(c[i] + e) % n for e in (-1, 0, 1)] for i in range(4)]
+                total += max(theta_cells[g] for g in itertools.product(*w))
     return total
 
 

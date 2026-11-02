@@ -27,15 +27,21 @@ one-jump gauge-decomposition argument are this checkout's `c0-loc.md` §§5–6 
 from `fan-ext.md`), gated there; the curved uniform-torus A2 and the second-jet and
 on-shell multiplier estimates are `a2-curved.md` (Codex, ungated).
 
-## 0. Disposition (provisional; revised in §9 at the end)
+## 0. Disposition
 
-Counterexample first (§2): none found at seams, non-Lipschitz contacts, nodes or
-outward rows; each candidate is killed by an explicit argument. Proof plan executed below:
-flat one-jump coercivity for the outline's pruned rows on every seam shape (§3, new: zero
-extension replaces the brick-fan reflection), curved patch estimates and localization on
-arbitrary separated sequences (§4), Landau transfer and the fine precisions (§5), the
-coarse form and A on the next fibre (§6), and the independent current by a Combes–Thomas
-argument that needs only the coercivity just proved (§7).
+**Proved here (research text, ungated): real A2 on arbitrary separated layers, at every
+real regular pair, on shell or with an independent current (Theorem A, §7.5).** The
+counterexample search (§2) found none: not at seams, non-Lipschitz contacts of the regions,
+nodes or outward rows, and not off shell. The chain is: flat one-jump coercivity for the
+outline's pruned rows on every seam shape (§3; zero extension replaces the brick-fan
+reflection); the weighted version of `a2-curved` (10.4) on separated sequences (Theorem 2,
+§4); its Landau form and the coercivity of G_0, K_phys (§5); the coarse form and the next
+fibre at the boundary of Omega_{k+1} (§6, Theorem 4 on shell); then the off-shell multiplier
+sup xi^3|H^T J| <= C gamma_0 by a Combes–Thomas argument that uses only that coercivity
+(Theorem 5, §7). The complex half-gap c/2 on the complex neighbourhoods follows by
+relative perturbation from the real pair (U, 0) (Theorem B, §7.6). Constants depend on L only.
+The ceilings are fixed before M_1, and M_1, R_1 M_1 are only bounded below. Open (§8): a gate,
+and the unchecked outline identities and ungated `a2-curved` steps listed in §8.1.
 
 ## 1. The statement attacked
 
@@ -560,7 +566,7 @@ L10172–10190) pairs J with a product of lambda_A or lambda_A^+ (a one-bond shi
 and C or D_U lambda_C, or the same with A and C exchanged. With |J_b| <= gamma_0 xi_b^-3 and
 xi_b^-3 <= sigma^-2 xi_b^-1 at either end of b, Cauchy and (7.1) give
 
-    |<A, Delta'_pi[J] C>| <= C_7 gamma_0 ||A||_X ||C||_X,     C_7 = 12 C_S (1 + 2C_S).      (7.2)
+    |<A, Delta'_pi[J] C>| <= C_7 gamma_0 ||A||_X ||C||_X,     C_7 = 24 C_S (1 + C_S).        (7.2)
 
 Only |J| enters: no derivative of the current is taken. The obstacle recorded in
 `a3-balaban.md` §14 concerns operator bounds for Delta'_pi, which A2 does not need. With
@@ -585,13 +591,22 @@ bump with transported mean one (`a2-curved` §12: interior support, two bounded 
 on the pillar's scale; the identity on bare pillars), so Q' E_s = 1 and
 ||G'^-1 E_s Xi^2 psi|| <= C_E ||psi|| pillar by pillar. Then
 <F psi, G'^-1 E_s Xi^2 psi> = <Xi^-2 psi, Q' E_s Xi^2 psi> = ||psi||^2, so ||F psi|| >= C_E^-1 ||psi|| and
-N >= C_E^-2. The conjugated N_theta differs from N by C tau, so N_theta^-1 is bounded, and
+N >= C_E^-2. Conjugate factor by factor: e^theta Q'^T e^-theta - Q'^T = O(tau) is pillar-local,
+and for G' sigma^-2 the decay weight commutes with the scale weights of (i), so Lemma CT
+applied to the scale-conjugated form of (i) with the extra weight theta gives
+||(e^theta G' e^-theta - G') sigma^-2|| <= C tau. Hence F_theta - F = O(tau), N_theta - N = O(tau),
+N_theta^-1 is bounded, and
 
     R = 1 - F N^-1 F^T   gives   || e^theta R e^-theta - R || <= C_R tau.                  (7.4)
 
-(iii) *Fine inverses.* The conjugation error of G_0^-1 is <= C_L tau ||u||_X ||v||_X: for Delta^W use the
-plaquette form PX114, where the weight varies by O(tau) across a plaquette; for Q^T a Q use (5.1);
-for D_U R D_U^T write <R D_U^T(e^theta u), R D_U^T(e^-theta v)> and use (5.1) for D_U^T and (7.4) for R.
+(iii) *Fine inverses.* The conjugation error of G_0^-1 is <= C_L tau ||u||_X ||v||_X. Every term is
+organized as a conjugated operator minus the operator, never with an isolated e^{-theta}
+(which is large far from the centre). For Delta^W use the plaquette form PX114: conjugation
+multiplies the (r, r') insertion coefficient by e^{theta(b_r) - theta(b_r')} = 1 + O(L tau eta/sigma),
+which costs tau sigma^-1 times the field in curl units. For Q^T a Q use (5.1). For D_U R D_U^T put
+f = D_U^T u, g = D_U^T v, e_u = (e^-theta D_U^T e^theta - D_U^T)u, e_v = (e^theta D_U^T e^-theta - D_U^T)v (both
+O(L tau sigma^-1|·|) by (5.1)) and R_theta = e^theta R e^-theta. Then the conjugated term minus the
+original is <f, (R_theta - R) g> + <e_u, R_theta(g + e_v)> + <f, R_theta e_v>, which (7.4) bounds.
 For Delta'_pi[J], conjugate lambda = G' R D_U^T factor by factor using (i), (7.4), (5.1); the pairing with
 J is a multiplication, unchanged except for the one-bond shift in lambda^+. By Lemma CT and (7.3),
 
@@ -647,3 +662,105 @@ E^(2)[H_1^T J] is bounded by C_L C_omega1 gamma_0 ||b||^2 (as in Theorem 4, with
 inverses in the definition of A exist (7.3, 7.4, 7.2(iv)); G_0, G, G_1 > 0. ∎
 
 The constants c_L, a_*, M_* = 8RL/c_g and rho_* depend on L only. The ceilings precede M_1.
+
+**7.6 Theorem B (the complex half-gap on layers).** Let (U_c, J) be a complex regular pair
+for (Omega_j)_{j<=k+1} (outline L10128–10138): U_c = e^{i eta A'} U with U real regular as in §1,
+xi_j|A'|, xi_j^2|nabla_U A'| < alpha_1 on L_j, and J complex with |J| < gamma_0 xi_j^-3. All operators
+are the holomorphic continuations, with bilinear transposes (L10149). There are a_B(L) and
+C_B(L) such that, for alpha_1, gamma_0 <= a_B and the ceilings of Theorem A, all inverses exist and
+
+    Re <u, A(U_c, J) u>_H >= (c_L/2) ||u||^2,
+
+also for chi_Y A chi_Y on every conditioning set. *Proof.* A(U, 0) is real symmetric and
+>= c_L by Theorem A at the real pair (U, 0), so its Hermitian form on complex vectors is
+>= c_L||u||^2. It suffices to prove ||A(U_c, J) - A(U, 0)|| <= C_B(alpha_1 + gamma_0) and to take
+C_B a_B <= c_L/4. Every step below is a relative perturbation of a real step proved above.
+(a) *Local maps.* On the dependence cone of each row and pillar the recursion
+`a2-curved` (8.4)–(8.7) holds on a fixed complex disc around the real reference (its proof
+of (12.6)), layer by layer. Cauchy's formula gives ||Q_c - Q||_{X->row} <= C_L alpha_1, the same for
+Q', the transports and the connection factors of D, d, nabla in the scaled norms of (5.1), and
+||V_c - V||_local <= C_L alpha_1 near Omega_{k+1}. PX121 bounds the Wilson difference by
+C_L alpha_1 ||·||_X^2. C_V, G^(2)_V and the one-step second jet are finite analytic functions of V
+(`a2-curved` §5, (5.7)).
+(b) *Scalar package.* G'^-1_c - G'^-1 = O(alpha_1) in the form norm of 7.2(i). Lemma CT needs only
+Re k(v, v) >= c||v||^2, so it gives G'_c with the bounds of 7.2(i) and G'_c - G' = O(alpha_1). Then
+F_c, N_c lie within O(alpha_1) of F, N, so N_c is invertible and R_c - R = O(alpha_1) as in 7.2(ii).
+The identities Q'_c G'_c R_c = 0 and Delta_c G'_c R_c = R_c are algebraic, so
+lambda_A = G'_c R_c D_c^T A satisfies (7.1) with constant 2C_S + C alpha_1.
+(c) *Fine forms and multipliers.* Hence G_0^-1(U_c) - G_0^-1(U) = O(alpha_1), and (7.2) holds for the
+complex J (it uses only |J|), so Re <h, G_c^-1 h>_H >= (c_W/2)||h||_X^2. The conjugation bounds of
+7.2 hold at the complex pair with the same proofs. For f = G_c^-1 v,
+Re <f, G_c f>_H = Re <v, G_c^-1 v>_H >= (c_W/2)||v||_X^2 >= c ||f||_{X*}^2. Since Q_c = Q + O(alpha_1),
+Re <psi, W_c psi>_H >= (c_Gram - C alpha_1)||psi||_{row*}^2. So Theorem 5 and 7.4 hold at (U_c, J):
+sup xi^3 |H_c^T J| and sup xi^3 |H_{1,c}^T J| are <= C gamma_0. Therefore
+G_{1,c}^-1 - G_0^-1(U) = O(alpha_1 + gamma_0) in X-form norm.
+(d) *Schur complement.* Let E_c be the right inverse of Q_c given by 5.4(c), with the bumps
+fixed at the real reference; ||E_c||_{row->X} <= 2K_E. Put T = 1 + E_c(Q - Q_c). Then Q_c T = Q
+and ||T - 1||_{X->X} <= C alpha_1, so Q_c G_{1,c} Q_c^T = Q (T^T G_{1,c}^-1 T)^-1 Q^T. The complex symmetric
+form T^T G_{1,c}^-1 T differs from the real G_0^-1(U) by relative size e <= C(alpha_1 + gamma_0) <= 1/4. The
+relative Schur stability `a2-curved` (7.1) (fixed real Q) gives
+||S_1^-1/2 (S_{1,c} - S_1) S_1^-1/2|| <= 2e, with S_1 = (Q G_0(U) Q^T)^-1 <= C_up K_E^2 on the active rows
+(test the variational formula with E b).
+(e) *Assembly.* On the active rows,
+Delta_k(U_c, J) - Delta_k(U, 0) = (S_{1,c} - S_1) - E^(2)_{V_c}[H_{1,c}^T J] = O(alpha_1 + gamma_0). With (a)
+for C_V and G^(2)_V, ||A(U_c, J) - A(U, 0)|| <= C_B(alpha_1 + gamma_0). For conditioning use
+`a2-curved` (2.1) with the Hermitian real part. ∎
+
+So A2 holds on layers in the full form the outline asks: c on real pairs, c/2 on the complex
+neighbourhoods, uniformly, on every conditioning set. The complex J is treated as a
+perturbation of J = 0, so the ceiling on gamma_0 is tied to c_L, as above.
+
+## 8. Inputs, what stays open, and what changes elsewhere
+
+**8.1 Inputs, with status.** *Gated in this checkout:* `c0-loc.md` (6.1), (6.3), (6.4)
+(bump, fine lift, flat torus estimate; gates 51679e441 and, for the flat part, 73b09692a).
+*Ungated, `a2-curved.md` (Codex):* (2.1) conditioning; §5 (one-step chart, pivot inverse,
+(5.2)–(5.4)); (8.3)–(8.10) (second jet and its form bound); (9.1)–(9.2) (on-shell
+multiplier, used only in Theorem 4; Theorem 5 replaces it); (10.2) with its inhomogeneous
+version; (11.2); the last step of §11; the site lift E_s of §12. *Outline identities used
+unchecked (Sussman–Alpoge):* PX4 (layer barrier), PX31–PX38 (own-pillar means, outer-end
+extension, QD = D_ext Q'), PX43–PX47 (pillar transports), PX94–PX95 (physical Hessians),
+PX99–PX100 (reduced datum on the A2 mask), PX113 (row upper bound), PX114–PX119 (Wilson
+form, curl conventions, Hodge error). Each is a finite algebraic identity or an elementary
+estimate written out in the outline. A gate should check PX38 at outward rows and
+PX118–PX119 first. *Physical backgrounds* exist with |J(U)| <= C eps_1 xi^-3 by outline
+Theorem 1, which is row 81's gated port, conditional on F0. Theorem A itself does not use
+Theorem 1: it holds at every real regular pair.
+
+**8.2 Open for A2 (`sa-ledger.md` #2).**
+(a) *The complex half-gap* is Theorem B (§7.6). It compares with the real pair (U, 0), so it
+needs gamma_0 <= c_L/(4C_B) as well; the outline lets the current ceiling be chosen after L.
+(b) A cross-provider gate of this note. Look hardest at: Lemma Z and step (d) of Theorem 1;
+the two-level partition (4.3); Lemma S(ii) with the scale weight; and 7.2(ii), the
+normalized Gram and the conjugation of R.
+(c) The identification of A with the next-step effective Hessian on layers (PX97–PX104)
+is a consumer statement, not part of A2, and is not re-derived here.
+(d) Variants with inward bonds kept (seam nodes) are excluded by the outline's convention
+(L9625) and are not treated.
+
+**8.3 Evidence for other owners (for the lead to forward).** `a3-balaban.md` F3
+("positive G_00 on every sequence ... if supplied"): (5.2) supplies it at every real regular
+background, curved included. F4 (the unit-lattice fluctuation gap) is supplied by
+Theorem A in the outline's own soft-gauge pivot coordinates; this is not the strict tree
+gauge of CMP 96 Lemma 2.4. `a3-balaban.md` §14 (the independent-current correction):
+A2 needs only the form bound (7.2), but A3 still needs the composed operator bounds.
+For the multiplier at independent current that `a3-derivative` and `a3-profile` leave
+pending, Theorem 5 gives sup xi^3 |H^T J| <= C gamma_0, and sup xi^3 |H_1^T J| <= C gamma_0,
+from coercivity alone, uniformly in the regions and depth.
+
+## 9. Checkpoint
+
+**Moves:** `sa-ledger.md` #2 (A2). It is proved here, ungated, on arbitrary separated
+layers, at physical and at independent-current regular pairs, every depth and every
+conditioning set: the real gap c_L (Theorems 4, 5, A) and c_L/2 on the complex
+neighbourhoods (Theorem B). No counterexample was found (§2).
+
+**What reverses it.** If a gate finds Lemma Z or Theorem 1(d) WRONG, fall back to the
+brick-fan reflection of `c0-loc` §6. That covers brick patterns only, so contacts of cubes
+would reopen. If 7.2(ii) fails, Theorem 5 falls back to the on-shell bound (9.2): Theorem 4
+stands and off-shell A2 reopens.
+
+**Next lane.** A cross-provider gate of this note (§8.2(b) lists where to look first),
+together with the outline identities of §8.1 that it reads.
+
+No computer-assisted step, no numerical job, no subagent; only this file was written.

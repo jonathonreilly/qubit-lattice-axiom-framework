@@ -56,8 +56,9 @@ So <h, Q^T a Q h> = a_0 ||Qh||_row^2 with a = a_0 xi_c^-2 on rows; a_0 = 1 below
 
 A real regular pair (U, J) for (Omega_j)_{j<=k+1} (outline L10128–10138) has, on L_j:
 |dU - 1| < alpha_0 eta^2 xi_j^-2 on plaquettes, |J| < gamma_0 xi_j^-3, and on every cube of
-side c_g M_1 xi_j inside L_j ∪ L_{j+1} a real gauge U = e^{i eta A} with
-xi_j|A|, xi_j^2|nabla A| <= alpha_0. J is an independent variable; on shell means J = J(U)
+side at most c_g M_1 xi_j inside L_j ∪ L_{j+1} a real gauge U = e^{i eta A} with
+xi_j|A|, xi_j^2|nabla A| <= alpha_0 (the outline's "cubes of side O(M_1 xi_j)", with the bound
+alpha_0 on the whole cube, L10137). J is an independent variable; on shell means J = J(U)
 at bonds touching Omega_1, and physical means U is a regular critical point of its datum
 (outline Theorem 1) with J = J(U). The operators G', R, S, G_0, G, H, G_1, H_1, Delta_k
 and A = C_V^T (G^(2)_V + Delta_k) C_V are those of outline L10142–10208, with
@@ -279,9 +280,11 @@ S = xi_{j+1}: level-j bonds with both ends outside Omega_{j+1} join two level-j 
 (interior rows); level-(j+1) bonds with an end in Omega_{j+1} have that end in L_{j+1} and no
 end in Omega_{j+2} (interior or outward rows); inward level-j bonds carry none; no row of
 another level reads the read set. Leaves are the level-j pillars outside Omega_{j+1} and the
-level-(j+1) pillars inside. For the model torus take a cube of side 64 R xi_{j+1} around the
-patch, a union of S-blocks, with Y = Omega_{j+1} ∩ cube, and identify opposite faces; H is
-supported in the patch, so the artificial faces read zero.
+level-(j+1) pillars inside. For the model torus take a cube of side about 12 R xi_{j+1}, a
+union of S-blocks centred at the patch, with Y = Omega_{j+1} ∩ cube, and identify opposite
+faces. Its points lie within 15 R xi_{j+1} < rho xi_j of the seam (by (4.0)), so the cube minus Y
+lies in L_j and no other seam enters; H is supported in the patch, at distance >= 4 R xi_{j+1}
+from the cube's faces, so the artificial faces read zero.
 
 An *interior patch* of layer j >= 1 is a set of sup-diameter at most 2R xi_j at distance
 >= 2R xi_j from the boundary of Omega_j and >= 2R xi_{j+1} from that of Omega_{j+1}, so its read
@@ -369,12 +372,16 @@ Sites are those of Omega_0; Q' = Q'_pill is the transported own-pillar mean (PX3
 Z = ker Q', sigma(x) the scale of the pillar of x, and Delta_U = D_U^T D_U. Bare tops are
 single sites, so every z in Z vanishes on L_0, hence near the Dirichlet boundary.
 
-**5.1 Slowly varying weights.** Call theta *tau-slow* if |theta(x) - theta(x')| <= tau whenever
-d_B(x, x') <= 4L (d_B the outline's layer metric, L10114). Every bond, pillar, row carrier
-and plaquette has d_B-diameter <= 4L. For tau-slow theta and each local operator O among
-D_U, D_U^T, d_U, nabla_U, Q, Q', Q'^T, E_pill (PX32) and multiplication by a function constant
-on pillars, e^{theta} O e^{-theta} - O is O itself with each coefficient multiplied by a factor
-e^{theta(x) - theta(x')} - 1 of size <= 2tau; hence, in the scaled norms used below,
+**5.1 Slowly varying weights.** Call theta *tau-Lipschitz* if
+|theta(x) - theta(x')| <= tau d_B(x, x') for all x, x' (d_B the outline's layer metric, L10114).
+Every pillar, row carrier and plaquette has d_B-diameter <= 4L, and a fine bond at a top of
+scale sigma has d_B-length <= L eta/sigma. Mere slowness on balls would not do: across one fine
+bond the weight must change by O(tau eta/sigma), or the commutator with a difference costs
+tau eta^-1 instead of tau sigma^-1 and depth uniformity is lost. For tau-Lipschitz theta and
+each local operator O among D_U, D_U^T, d_U, nabla_U, Q, Q', Q'^T, E_pill (PX32) and
+multiplication by a function constant on pillars, e^{theta} O e^{-theta} - O is O itself with
+each coefficient multiplied by e^{theta(x) - theta(x')} - 1, of size <= 8L tau on carriers and
+<= 2L tau eta/sigma across a bond, for tau <= 1/(8L); hence, in the scaled norms used below,
 
     || e^{theta} O e^{-theta} - O || <= C_L tau ||O||_abs,                               (5.1)
 
@@ -382,9 +389,9 @@ where ||O||_abs is the same norm of the operator with absolute coefficients, bou
 scale counts of `a2-curved` (8.6)–(8.7), PX33 and PX113. For differences the factor sits on
 the shifted term, so (5.1) produces sigma^-1 times the field, which the mass part of each norm
 controls. Two weights are used: *scale weights* zeta = e^{-2psi}, with
-psi(x) = min_x' { log sigma(x') + kappa d_B(x, x') }, which is 4L kappa-slow and satisfies
+psi(x) = min_x' { log sigma(x') + kappa d_B(x, x') }, so -2psi is 2kappa-Lipschitz and
 sigma^-2 <= zeta <= L^2 sigma^-2 once kappa rho >= 2 log L (by PX4, d_B >= rho(|i-j|-1)_+ between
-layers i, j); and *decay weights* e^{-varsigma d_B(·, c)}, capped, which are 4L varsigma-slow.
+layers i, j); and *decay weights* e^{-varsigma min(d_B(·, c), M)}, which are varsigma-Lipschitz.
 
 **Lemma CT.** Let k be a real bounded form on a finite-dimensional Hilbert space V with
 k(v, v) >= c||v||^2, and theta a weight with |k(e^theta u, e^-theta v) - k(u, v)| <= beta||u|| ||v||,
@@ -479,10 +486,12 @@ Then for b = iota b,
 once delta, alpha_0 <= a_6(L). *Proof.* The equality is completion of the square for the
 positive form F + Q^T a Q on the affine fibre (`a2-curved` §6). On the fibre, Theorem 3 gives
 ||h||_X^2 <= C_3 (||d_U h||^2 + ||R D_U^T h||^2 + ||b||^2), so for delta(1 + C_3) <= 1/2,
-F[h] >= (1/2)||d_U h||^2 - delta C_3 ||b||^2. The comparison `a2-curved` (11.2) is local: on the
+F[h] >= (1/2)(||d_U h||^2 + ||R D_U^T h||^2) - delta C_3 ||b||^2. The comparison `a2-curved` (11.2) is local: on the
 dependence cube of a coarse plaquette near Omega_{k+1} (inside L_k, far from every seam),
 d_V Q h = T_n d_U h + R h with ||T_n|| <= 1 and ||R h|| <= C_L alpha_0 ||h||; summing with bounded
-overlap, ||d_V b||^2 <= C_L (||d_U h||^2 + alpha_0^2 ||h||_X^2). Combine. ∎
+overlap, ||d_V b||^2 <= C_L (||d_U h||^2 + alpha_0^2 ||h||_X^2)
+<= C_L(1 + C_3)(||d_U h||^2 + ||R D_U^T h||^2) + C_L C_3 alpha_0^2 ||b||^2. Combine, with
+c_0 = 1/(2 C_L (1 + C_3)). ∎
 
 **Lemma N (next fibre, including the boundary of Omega_{k+1}).** There are A'_L and
 eps'_L > 0 such that if every level-k plaquette near Omega_{k+1} has |V_p - 1| <= eps'_L, then
@@ -562,7 +571,7 @@ Only |J| enters: no derivative of the current is taken. The obstacle recorded in
 So G exists and G > 0 at every real regular pair, on or off shell. Also
 ||S h||_X <= (1 + 2C_S)||h||_X, since S h = h - D_U lambda_h.
 
-**7.2 Conjugation bounds.** Let theta be tau-slow (5.1). Then, for tau <= tau_0(L):
+**7.2 Conjugation bounds.** Let theta be tau-Lipschitz (5.1). Then, for tau <= tau_0(L):
 
 (i) *Scalar inverse.* G'^-1 = Delta_U + Q'^T a Q' is local, and the pillar Poincaré with its mean
 term gives <lambda, G'^-1 lambda> >= c_s (||sigma^-1 lambda||^2 + ||D_U lambda||^2), c_s = 1/(8d + 2). By (5.1) its
@@ -594,19 +603,19 @@ of G_0. With (5.1) for Q and (7.5), W_theta - W = O(tau) from row* to row, and L
 ||e^theta W^-1 e^-theta||_{row->row*} <= 2/c_Gram.
 
 **7.3 Theorem 5 (the off-shell multiplier).** Under (4.0), alpha_0 <= a_4(L),
-gamma_0 <= c_W/(2C_7), and rho >= rho_1(L) := 8 L log L / tau_0(L)·4, at every real regular pair,
+gamma_0 <= c_W/(2C_7), and rho >= rho_1(L) := 8 log L / tau_0(L), at every real regular pair,
 
     sup_c xi_c^3 |(H^T J)(c)| <= C_omega(L) gamma_0,     H = G Q^T W^-1.
 
 *Proof.* H^T J = W^-1 Q G J, as G and W are symmetric. Fix a row c_0, put
-varsigma = tau_0/(4L) and theta = -varsigma min(d_B(·, c_0), M) for a cap M; theta is
-4L·varsigma = tau_0-slow, equals 0 at c_0, and is <= 0. Then
+varsigma = tau_0 and theta = -varsigma min(d_B(·, c_0), M) for a cap M; theta is
+tau_0-Lipschitz, equals 0 at c_0, and is <= 0. Then
 e^theta H^T J = W_theta^-1 Q_theta G_theta (e^theta J), so by 7.2
 
     xi_{c_0}^3 |(H^T J)(c_0)| <= ||e^theta H^T J||_{row*} <= (2/c_Gram) C_Q (4/c_W) ||e^theta J||_{X*},
 
 and ||e^theta J||_{X*} <= gamma_0 (sum_b eta^4 xi_b^-4 e^{-2 varsigma d_B(b, c_0)})^{1/2} by Cauchy against
-||h||_mass. The sum is at most C e^{8L varsigma} sum_y e^{-2 varsigma d_B(y, c_0)} over pillar
+||h||_mass. The sum is at most 8 e^{8L varsigma} sum_y e^{-2 varsigma d_B(y, c_0)} over pillar
 centres y (a pillar carries at most 4(xi_y/eta)^4 bonds). For the count, a path of d_B-length
 <= r from c_0 (layer j) crosses at most 1 + r/rho layers (PX4), so it stays in scales
 <= L^{2 + r/rho} xi_j and has physical length <= r L^{2+r/rho} xi_j; a level-i grid has at most

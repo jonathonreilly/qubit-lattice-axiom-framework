@@ -1,0 +1,14 @@
+R1 L=32 k=2 rising=True falling=True
+R1 L=32 k=3 rising=True falling=True
+R1 L=33 k=2 rising=True falling=True
+R1 L=33 k=3 rising=True falling=True
+B m=32 avg_b=0.2500 masses=0.1406,0.1406 v=0.01025 sup=14.2 Lip=186.7 B1=True B2=True B3=True
+B m=33 avg_b=0.2498 masses=0.0956,0.0956 v=0.01044 sup=14.0 Lip=180.1 B1=True B2=True B3=True
+B m=40 avg_b=0.2500 masses=0.1200,0.1200 v=0.01031 sup=14.1 Lip=190.5 B1=True B2=True B3=True
+B m=64 avg_b=0.2500 masses=0.1172,0.1172 v=0.01038 sup=14.1 Lip=196.7 B1=True B2=True B3=True
+B m=1024 avg_b=0.2500 masses=0.0952,0.0952 v=0.01042 sup=14.1 Lip=207.3 B1=True B2=True B3=True
+T1 C0=1 coeff=0.0250 W/E<=8.23 ok=True
+T1 C0=4 coeff=0.0340 W/E<=33.16 ok=True
+T1 C0=100 coeff=0.0397 W/E<=833.12 ok=True
+T1 C0=1000000 coeff=0.0400 W/E<=8333333.11 ok=True
+PASS

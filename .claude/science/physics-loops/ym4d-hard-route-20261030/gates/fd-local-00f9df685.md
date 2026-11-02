@@ -14,3 +14,8 @@ In progress. Provenance: model anthropic/claude-opus-5-5, effort high, commit 00
 
 - (C1)-(C5), the bump moments, the gauge test, the flat IMS arithmetic: rechecked line by line, no failure so far.
 - t_0 readers so far: all printed bounds are lower bounds, or fix later constants (lambda, X, C_B). Printed t_0 >= C R_1^fill with T R_1^2 = K_1 gives t_0 >= C K_1^(1/2) L a_*^(-1/2), so (G2) may already follow for small a_*. The t_0 of (U), (FF_j), upper-chain 568, 619 is a different symbol.
+
+## Working notes, data and rate table (interim)
+
+- Section 6 table: each cited line read, agrees so far. Rows of fd-jumps are exact composite triangles: W(z) = (z+1)/L^2 by hand at two levels.
+- Top collar: under study; a fibre at level k has F_(k+1) whole, so the top collar is vacuous there. The open case is a datum whose frozen top set has no collar.

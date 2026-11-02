@@ -73,3 +73,113 @@ A(e^{ita}) = t^2||da||^2/2 + ... . All of them agree.
 
 Section 6 is a test family and a neutral-sector proof. The charged colours are not treated there, so A2 does not
 move on §6 itself.
+
+## 8. Second jet of the straightened constraint, no depth factor: ADVANCE
+
+- **(8.1).** This is the outline's straightened one-step map (L7092-7100): block factor u, then
+  e^{iQ^1} M(W_0) = u(c_-)^{-1} M(W) u(c_+), iterated along W_s = M^s W_0, with a_0 = eta A. q_c = xi^{-1} a_j is
+  the per-length row (L10139).
+- **(8.4)-(8.5).** I redid the normalised recursion. With z_s = v_s/t_s + p_s/t_s^2 and t_s = L^{s-j}, dividing
+  (8.4) gives z_{s+1} <= z_s + C t_s (z_s + z_s^2), using t_s <= 1. The sum of t_s is (1 - L^{-j})/(L - 1), so
+  z_s <= z_0 e^{2C/(L-1)} until a first exit, and a small a excludes an exit. The linear plaquette rate L^2 is
+  the row sum of T_L (as in (6.4)). The factor (1 + C v_s) is needed only for complex, non-unitary comb gauges.
+  p_0 = O((a + a^2) t_0^2) holds because the linear insertions telescope to a first difference.
+- **(8.6).** I checked that DF_1(0) = S_L: the u-terms cancel the sigma-terms of (QC15). Its row sum is L. Its
+  column sum is L^{-3}: a bond lies on L segments in total, each of weight L^{-4}. The perturbation is
+  entrywise, on finitely many entries per row and per column, so the column bound is proved directly and not
+  inferred from the row bound.
+- **(8.7)-(8.9).** Row and column norms are submultiplicative, and exp(C sum v_s) <= 2. The chain rule (8.8) is
+  the second derivative of a composition at a_s = 0, with F_W(0) = 0. I redid the sum: entry of P_{j,s+1} <= its
+  column bound 2L^{-3(j-s-1)}; column of P_{s,0} 2L^{-3s}; sup_i sum_{c,h}|D^2F| <= C_L; row of P_{s,0} 2L^s. The
+  total is C_L L^{-3j+3} sum_{s<j} L^s <= C'_L L^{-2j}. Units: eta^2 xi^{-1} L^{-2j} = eta^4/xi^3 = xi(eta/xi)^4.
+- **(8.10).** Multiplying by xi_c^4|omega_c| gives C gamma eta^4 xi_c^{-2}. Normalising by the masses gives
+  C gamma sigma_b sigma_{b'}/xi_c^2. In the separated whole-block geometry a fine bond lies in carriers at
+  adjacent levels only, and in boundedly many rows at each. The Schur test closes it.
+  <A, Delta^(2)[omega] A> = 2(C^(2)(A), omega) (L10180) is the same pairing.
+
+The regular-pair clause on cubes in L_j ∪ L_{j+1}, measured at xi_j (L10137), gives (8.2) on the dependence cube
+of a level-j row with a = O(L^2 alpha_0 + L^2 alpha_1); outward rows reach into L_{j-1}. "Adjacent-scale factor
+included in a" is the right reading. **For the reader:** a2-layers also reads |V_p - 1| <= C_L alpha_0 at level k
+from (8.4)-(8.5), i.e. p_k <= z_k t_k^2 with t_k = 1. That reading is correct.
+
+## 9. On-shell multiplier: ADVANCE
+
+- **(9.3).** I redid the arithmetic. The outgoing and incoming start counts are i + m + 1 = n/2 + x_i and
+  m - i = n/2 - x_i. sum x_i = 0 and sum x_i^2 = n(n-1)(n-2)/12. Then l_+(phi_+) = n^{-2}[n^2/2 + n^2/2] = 1 and
+  l_-(phi_+) = 0, and symmetrically for phi_-. |phi| <= 4n/(n-1) <= 6 (n = 3 gives the values -3 and 6).
+- **Leakage geometry.** Each Omega_j is a union of whole level-j blocks, so a level-j seed pillar lies in
+  Omega_j minus Omega_{j+1}. Lower-level carriers lie outside Omega_j: inward bonds carry no row, and outward
+  carriers point outward. Carriers two or more levels up lie in Omega_{j+1}, including the outer blocks of
+  outward rows, because of separation. So only the outward rows of level j+1 can receive leakage. At a flat
+  reference the full-grid same-level response is exactly psi extended by zero (orthogonality of phi_+ and phi_-),
+  so the leakage is the restriction of the per-length L^{-1} S_L. Its column sum is L^{-4}, and its norm in
+  ||.||_{1,xi} is L^{-3}.
+- **Curved case.** Telescoping the products of (8.7) gives column error C_L a n^{-4} per unit length, times
+  about n^4 seed bonds, so the total error is C_L a (this is why the column power matters). The connection between
+  two local gauges moves by C_L a over a carrier. Hence (9.5), and E = E^0(1 + T)^{-1}.
+- **(9.2).** The duality <omega, psi> = <J, E psi> with a one-row psi is correct.
+- **J = Q^T omega on shell.** I checked RD^T S = 0 and QS = Q. The one-step linearisation of (8.1) at a gauge
+  variation is Q'lambda(y) - Ad(M W(c)) Q'lambda(y'), so Q D Z_s = 0. At an outward end the full-pillar mean is the
+  transported mean of leaf means, which are all zero. The inner-plaquette action is exactly invariant, so
+  <J, Dz> = 0. Criticality on the slice gives <J, Sv> = 0. Duality, with Q onto, gives omega = H^T J for every
+  right inverse H. The step reads "physical critical" as criticality for the straightened row constraints in the
+  fixed slice. That is the outline's system of (1b) (L10208), and a2-layers reads it the same way.
+- **(9.6).** It follows from the §5 plaquette insertions, with |dU_p - 1| <= alpha_0 eta^2 sigma^{-2}, together
+  with (8.10) and (9.2).
+
+## 10. Fine Landau form on a uniform torus: ADVANCE
+
+- **(10.2), flat.** I redid the Fourier proof.
+  - Constants and identities. Alias sum of |r^|^2 = 1 by DFT Parseval. |b_mu(p)| >= 2/pi from
+    sin x >= 2x/pi, which gives c_1 = (2/pi)^10. For q an alias of p in the fine zone, |q| >= |p|, which
+    gives c_2 = (pi/2)^2. r_0 g = c because r_0 (-Delta)^{-1} r_0^* = B(p). D'^* zeta = B^{-1} c. D_0^* e = 0
+    uses Q_0 D_0 = D' r_0.
+  - Bounds. ||g|| <= g_0 ||c|| and ||(-Delta)^{-1} de|| <= b_0 ||c||, with exactly the constants stated.
+  - The pairing step is the one that needs checking. With phi = r_0^* c + P_0 phi, which uses r_0 r_0^* = 1:
+    ||c||^2 = <h, e> - <P_0 phi, g> = <dh, (-Delta)^{-1} de> - <P_0 phi, g>. So
+    ||c|| <= b_0 ||dh|| + g_0 ||P_0 phi||, as claimed.
+  - Hodge, the row variance bound and p = 0 are handled correctly. Row densities are <= eta^4 per bond with
+    total weight 1. c(0) = 0, and h has no constant mode once Q_0 h = 0.
+- **Inhomogeneous version.** For the tents I checked: the moments of p[1 - a(t-a)/v] and p[1 + (1-a)(t-a)/v]
+  against (1 - t, t) are (1, 0) and (0, 1); the mass of each interval is 3/32 >= 1/128; and v >= 2^{-18} by the
+  pair variance with separation 1/4. The tents vanish near the pillar faces, so the physical gradient is O(1).
+  The (9.3) profiles cover 3 <= n < 128, and the identity covers n = 1. On one level there is no leakage, so
+  Q_0 E_0 = 1 exactly.
+- **(10.3)-(10.4).**
+  - (10.3). The Schur bound for Q - Q_0 uses row error C a and column error C a n^{-4}, where
+    n^{-4} = eta^4 matches the physical bond weight. rr^* = 1 for unitary transports.
+  - Globalisation. The bound sum_i ||[P, chi_i] f||^2 <= C R^{-2} ||f||^2 is right. R is fixed before
+    alpha_0, and c_g M_1 >= R is needed for the local gauges.
+- **(10.5), null identity.** This is correct. The exact covariance of the straightened map is
+  e^{iF(a')} M(W) = (e^{iF(a)} M(W))^{r_1} with r_1 = u(a')^{-1} g u(a) at the coarse sites (outline L7339), so
+  the variation under lambda is a coarse gauge variation with parameter r~(A) lambda, and r~(0) = Q'.
+  lambda_z(A) lies in ker r~(A). F and q are both null on X_z(A), and D L(0) = 0 then gives beta(D_U z, .) = 0.
+- **Poincare and §4.** ||z|| <= p_L ||D_U z|| on ker Q' holds pillar by pillar. The application of §4 with
+  C = 0 and P = 1 - r^*r is legitimate. Finally S^T beta S = beta follows from (10.5) and S = 1 - D G' R D^T,
+  so K_phys = G_1^{-1} at physical pairs (with H^T J = omega from §9 and (A, Delta^(2)[j] A) = D^2 q[j][A, A]).
+
+**For the reader:** the reads of a2-layers are correct as stated: (10.2), its inhomogeneous version, the tent
+and (9.3) lifts, and (10.4) as the template for its Theorem 2.
+
+## 11. Real A2 on the uniform node-free torus: ADVANCE
+
+- **(11.2).** In one local frame: d_V Q h = T_n d_U h + [T_n (d_0 - d_U) + (d_V - d_0) Q + d_0 (Q - Q_0)] h.
+  Each bracketed term is C_L alpha_0 ||h||. ||T_n|| <= 1 in physical norms, because
+  ||d_0 h||_phys^2 equals the raw curl energy of w = eta h. The scalar majorant of T_n is frame-independent,
+  so the global Schur sum holds.
+- **(11.3)-(11.4).**
+  - The slice P D_U^* h = 0 is a valid gauge slice: z -> P D^* D z is positive on ker Q', by Poincare.
+  - Differentiating F'(A) = Dq^T omega gives beta h_b = Q^T omega_dot, so beta(h_b, v) = 0 for all v in ker Q.
+    f'' = <omega_dot, b> = beta[h_b, h_b], and the minimum follows from beta >= 0 on ker Q via (10.5) and the
+    slice.
+  - The plain/straightened identification is right: the node factor is restored by a fine gauge, and the
+    converse uses a right inverse of Q' on {lambda = 0 at nodes}, for n >= 3.
+  - (11.4) follows by shifting the Landau term away with D_U Z_s, at no cost in beta or Q.
+- **(11.5) and the end.** I substituted each step and they check. The chart term is f'(0)[D^2 Psi_V] =
+  -<omega, h_V D^2 q_V(0)[b, b]>. Its bound C_L gamma_0 ||b||^2 uses |omega| <= C_L gamma_0 from (9.2),
+  ||h_V|| <= 2L^3 and the finite stencil. The gauge Hessian is exactly ||G_V b||^2 at an axial V. (5.3) applies
+  because p_k <= C_L alpha_0.
+
+One identification is not re-derived here: this chart term equals the outline's C_V^T E^(2)[H_1^T J] C_V.
+`a2-layers` §8.2(c) correctly lists it as a consumer statement. **For the reader:** only the bound on this term
+is used ("§11, last step"), and the bound holds whichever identification is used.

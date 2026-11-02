@@ -1,0 +1,10 @@
+# Findings in the Sussman-Alpoge outline (held until our proof is done)
+
+Source: `YM4_sketch_500.tex`, https://github.com/ethanwsussman/Yang--Mills-LLM-experiment at `31a47c543775` (Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text). Per FINISH.md "Our proof first", these are logged now and offered as issues, one per finding with the owner's approval of the exact text, when we share. Status column: who found it and whether a second reader has checked it.
+
+| # | Location | Claim in the outline | Defect | Shown by | Status |
+|---|---|---|---|---|---|
+| 1 | L17508 | Failed reference normalisation "does not arise on the supports, see (2e), Reality and positivity" | (2e) (about L19408 to L19524) has no such paragraph; Prop 4.5 (L22602) is "Reality and positivity at real sources", a different statement. Positivity of the reference normalisation on supports is not supplied at the cited place. | Lead grep; `library/sa-histories.md` 7.3 | found by Codex, confirmed by the lead's reading; not yet gated |
+| 2 | L17861 to L17870 | "The linear term in B vanishes because U_0 is critical on the fibre" | Criticality of the unweighted reduced action does not give zero first variation of the cutoff action: DF(0)[B] = -DA(1-phi, S)[DT(0)B] includes the outer cutoff region and the removed core, where the response is not compactly supported. Needs cancellation with other terms or a tail estimate. | `library/sa-2.8.md` Section 5, (5) and (6) | found by Codex (`sa-2.8`); not yet gated |
+| 3 | L17861 against L17598 | The reference argument uses B for the shell variable | At L17598 B is the old multiscale shell variable in tree gauge T_0; the new reference variable b on free level-k bonds is a separate variable in another gauge. The text does not identify them. | `library/sa-2.8.md` Section 2 | found by Codex; not yet gated |
+| 4 | L17888 against L17640 | Shell weight difference "O(k - j)" | Exact identity gives at most B_*(k - j + d_0 + 1), from the flow hypothesis; the bound needs the endpoint allowance, not zero at j = k. Minor. | `library/sa-2.8.md` Section 4, (4) | found by Codex; not yet gated |

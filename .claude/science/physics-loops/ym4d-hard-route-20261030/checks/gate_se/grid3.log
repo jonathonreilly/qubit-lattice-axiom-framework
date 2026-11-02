@@ -17,3 +17,7 @@ control w=1 1.0
 {'profile': 'cos', 'nu': 0.1, 'rho_c': 1.0015117501472428, 'D2c': 0.15117501472428072, 'its': 10, 'secs': 6.7}
 done 6.7
 START cosM12 free=57 03:33:05
+control w=1 0.9999999999999993
+{'profile': 'cos', 'nu': 0.1, 'rho_c': 1.0019218403877979, 'D2c': 0.1921840387797857, 'its': 10, 'secs': 38.3}
+done 38.3
+ALLDONE

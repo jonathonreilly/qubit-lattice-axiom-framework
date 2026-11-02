@@ -5,7 +5,7 @@ lease_until: 2026-11-02T14:22Z
 
 **Provenance.** Model anthropic/claude-opus-5-5, effort high, Mac mini worker, pinned at commit c16e2a968, no subagents. The note under gate was written by OpenAI Codex, so this is a cross-provider read of the note. It is one session. Its checks of Claude-written inputs (`sector-values.md`, `fibre-propagator.md`) are same-model, not independent in model, and not an audit. Verdicts steer research and grant no status.
 
-**State: main sections written; the run section is pending.**
+**State: finished report.**
 
 ## Verdicts
 
@@ -79,7 +79,22 @@ Section 5 there proposes the same identity for the nonlinear (WAM) with no gluin
 
 K1c passes: B = 9 against B = 3 at M = 4 is 1.08, 1.10. K2c was **not run**: B = 25 was skipped at 40 percent memory free. D2c is flat in nu from 0.1 to 0.4 to within 5 percent, so the law is nu^2. **K3c FIRED**: D2c(M=8)/D2c(M=4) = 1.60 (zig), 1.50 at nu = 0.4 (radial), 1.48 at nu = 0.1 (radial), against a bar of 1.5. I registered that as refuting the hand proof, and the data alone could not clear it: the sequences fit D_oo - c/M and, for zig, roughly log M.
 
-**Stage 3, post hoc, written after K3c: the limit with no torus.** D_oo(s) := sup_p ||Pi_H(p) (s.d_p P(p)) on Ran P(p)||^2 is the second-order coefficient for wide envelopes. Result at B = 3: D_oo(e_0) = 0.323, D_oo(1,1,1,1) = 0.743, at zone-boundary momenta. The 1/M fits of Stage 2, made before this was computed, gave 0.33 and 0.80. Along rays the coefficient falls as |p|^2, 1.1e-6 at |p| = 0.01, so B1 passes and there is no log. Every torus value lies under D_oo, so flag B3 is silent. So K3c fired on an arbitrary bar set in the unsaturated range M = 4 to 8, and D_oo is what decides it. Lemma WP's bound is not contradicted.
+**Stage 3, post hoc, written after K3c: the limit with no torus.** D_oo(s) := sup_p ||Pi_H(p) (s.d_p P(p)) on Ran P(p)||^2 is the second-order coefficient for wide envelopes.
+
+| B | D_oo(e_0) | D_oo(1,1,1,1) | Coefficient at |p| = 0.1, 0.01 (e_0) |
+|---|---|---|---|
+| 3 | 0.323 | 0.743 | 1.1e-4, 1.1e-6 |
+| 5 | 0.370 | 0.841 | 7.7e-5, 7.7e-7 |
+| 9 | 0.390 | 0.893 | 6.3e-5, 6.2e-7 |
+
+- B1 passes: the coefficient falls as |p|^2 at small p, so there is no singular point and no log. The maxima are at zone-boundary momenta. These sups are lower bounds, from a coarse grid plus a local search; at B = 9 the grid is 3^4.
+- B2 passes: B = 9 against B = 3 is 1.21, 1.20, and the steps shrink.
+- B3 is silent for the Lipschitz profiles: zig at most 0.237 against 0.323, radial at most 0.632 against 0.743. The exploratory step profile does exceed the slope-only value, 0.399 against 0.323. It has jumps at the fine scale, so neither D_oo nor Lemma WP covers it. It levels off in M and B all the same, which is suggestive for compatible descendants and proves nothing.
+- B4: the smooth cos profile rises from below, 0.078, 0.120, 0.151, 0.192 at M = 4, 6, 8, 12. That is consistent with D_oo, but it is still far under it at M = 12, so it does not confirm the value.
+
+So K3c fired on an arbitrary bar set in the unsaturated range M = 4 to 8, and D_oo is what decides it: Lemma WP's bound is not contradicted. My own 1/M extrapolation from Stage 2 gave about 0.33 and 0.80 before D_oo was computed, but that was not written in `CRITERIA.md`, so it is not a recorded prediction.
+
+**Limits of the run.** K2c (closed trials, B = 25) was not run. In Stage 1 the B = 9, M = 4 run in single precision missed I1's registered 1e-4 for symmetry (8e-4; P^2 = P held to 1e-6), and B = 25 ran without identities; the double-precision closed runs on B = 9, M = 4 are not affected. **Rule breach:** the B = 3 Bloch job, about 2 seconds, started at 40 percent memory free, under the 50 percent floor, because I launched it in the same command that printed the figure. All later jobs were gated on the floor. A simulator I did not start had taken the memory, and I left it alone. The numeric lock is released.
 
 The kill criteria of Stages 2 and 3 were written after seeing a failure. Read them as a diagnosis, not as an independent prediction.
 

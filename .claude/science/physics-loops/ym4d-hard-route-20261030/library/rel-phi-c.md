@@ -8,8 +8,34 @@ Anthropic claude-opus-5-5, effort max, Mac mini worker, 2026-11-02.
 Same-model work: not independent in model, not a gate, not an audit, no
 status.
 
-Status: in progress (sections are added as they are written; the verdict
-line below is final only when Section 7 exists).
+Status: finished 2026-11-02. **STOPPED, with a strictly smaller inequality,
+(REL-D) of Section 5. (REL-Phi) is not refuted.**
+
+**Result.**
+1. **Exact form (Lemma 1, discharged).** The composite contour average at a
+   top centre is the sum over levels of one-step staircase averages *from that
+   centre* of the path-averaged field one level down; intermediate contour
+   parts cancel. Gauge law (Lemma 2): an admissible gauge moves Psi by Av_B lambda.
+2. **The L^4 count is critical and sharp (Lemma A, Example E, discharged).**
+   |Psi(y)| <= (3.4 L + 1) sum_j ||H||_(L^4(A_j(y))) over the n L-adic shells
+   about y, so (REL-4) gives only n^(3/4). An admissible pure gauge with
+   ||.||_4 <= t and L^2 norm tending to zero has Psi >= 0.1 t (log B)^(3/4) at every top
+   centre. Hence "(REL-2), (REL-4) imply (REL-Phi) in the same gauge" is
+   REFUTED, no curvature count (as in `lc-u` 5) can give (REL-Phi), and (R3)'s
+   H^2 bound in local Landau gauges does not transfer to the global gauge by
+   itself. One notch above criticality, L^p with p > 4, gives (REL-Phi)
+   depth-uniformly, with a gain L^(-(n-j)(1-4/p)) per level (Corollary A2).
+3. **No counterexample at the linear level (Lemma CAP, discharged).** At the
+   linear level (REL-2) and (REL-4) give (REL) with Psi = 0 exactly in another
+   admissible gauge, C_2 still absolute: the n^(3/4) is exactly absorbed by the
+   4-capacity of a point at depth n. Nonlinearly that removal twists against
+   T and scrambles the contour average (4.2, diagnostic).
+4. **The stop.** (REL-Phi) follows from (REL-D): the l^1 sum over the shells
+   of the L^4 norms of H at each top centre, in the admissible gauge, bounded
+   by C_D(L) times the local energy; (REL-4) is the same with an l^4 sum. It
+   holds for bounded H, for L^p with p > 4, for H^2 via lattice Sobolev, up to
+   fine defects at the centres; it is consistent with the residual contour
+   sums at nested centres. It is not supplied at T.
 
 **Firewall.** Mapped side. Read only FINISH.md, GOAL.md, mapped-side
 `library/` notes, `parts/hard-core--mapped.md` and `parts/hard-core--excess.md`
@@ -267,8 +293,9 @@ throughout.
   2 C_4 and (REL-2) with C_2 + 1 once log(1 + R) >= (0.8 C_4)^4, and has
   |Psi(y)| / (K_delta * E)(Q_y)^(1/2) >= 0.1 C_4 eps_0^(1/2) (log B)^(3/4) - C, so
   no C_Phi(L) works at large depth. Nonlinearly the same holds while the twist
-  of the rotation e^lambda against T stays below the absolute constant, i.e.
-  for a below c/f, which still gives a ratio of order min((log B)^(3/4), 1/f).
+  of the rotation e^lambda against T, of size C f a, stays below the absolute
+  L^2 constant, i.e. for a up to c e_0^(1/2)/f, which still gives a ratio of
+  order min(C_4 (log B)^(3/4), c/f), unbounded as n grows and f decreases.
 - **(C2) No gauge-invariant bound can give (REL-Phi).** Example E adds zero
   curvature. So the curvature-L^4 count of `lc-u` 5, which bounds holonomy
   defects, cannot by itself bound Psi; Corollary A2 is the form that applies.
@@ -366,7 +393,7 @@ same with an l^4 sum over the n annuli in place of the l^1 sum; nothing else
 changes.
 
 **Theorem R (implication; discharged as an implication).** (REL-D) implies
-(REL-Phi) with C_Phi = C_A(L) C_D(L) (1 + C f) e^(C delta), C_A(L) = 3.4 L + 1.
+(REL-Phi) with C_Phi = 9 C_A(L) C_D(L) (1 + C f) e^(C delta), C_A(L) = 3.4 L + 1.
 *Proof.* Lemma A, with the transports of T as in 2.4, and
 (K_delta * E)(Q_y^(+1)) <= 3^4 e^(2 delta) (K_delta * E)(Q_y). QED
 
@@ -476,3 +503,93 @@ average that has grown like n^(3/4) cannot be removed nonlinearly at
 controlled cost. The first step not carried is Theorem F at T, as
 `seam-nonlinear-c` found; for (REL-Phi) specifically it is (REL-D) in that
 gauge.
+
+## 7. Verdicts, the stop, defects, consumers
+
+| Statement | Label |
+|---|---|
+| Lemma 1: Phi_n theta(y) = sum_k Phi^(k) Q_path^(L^(k-1)) theta(y), staircases from the top centre at every level | discharged (hand); identity run 3.7e-16 |
+| Lemma 2: gauge law Phi_n(d lambda)(y) = Av_B lambda(y) - lambda(y); Lemma 3: affine gauges, constants | discharged (hand); runs 2.1e-16, 4.1e-17 |
+| Lemma 4: path averages, l^4 and L^2 forms | discharged |
+| Lemma A: |Psi(y)| <= (3.4 L + 1) sum_j ||H||_(L^4(A_j(y))) | discharged; run: annular norms <= 1.7 against 11.2 and 18 |
+| Corollary A1: (REL-4) gives (REL-Phi) with n^(3/4) only | discharged; sharp by Example E |
+| Corollary A2: (REL-p), p > 4, or a pointwise bound, gives (REL-Phi) depth-uniformly | discharged |
+| Example E: admissible pure gauge, ||.||_4 <= t, ||.||_2 -> 0, Psi >= 0.1 t (log B)^(3/4) at every top centre | discharged; exact sums 0.33 (log B)^(3/4) |
+| "(REL-2), (REL-4) imply (REL-Phi) in the same gauge" | REFUTED (linear level; nonlinear for a up to c e_0^(1/2)/f) |
+| "a curvature (gauge-invariant) count, as in `lc-u` 5, gives (REL-Phi)" | REFUTED (Example E adds zero curvature) |
+| "(R3)'s local Landau H^2 bound gives (REL-Phi) in the global gauge" | not as written: the gauge comparison is a point value at the centre (3.4 (C3)) |
+| Lemma CAP: at the linear level (REL-2), (REL-4) give (REL) with Psi = 0 exactly, C_2 absolute | discharged (hand) |
+| Nonlinear removal of a grown Psi (twist C f |lambda|, scrambling) | diagnostic, not a theorem (4.2) |
+| Theorem R: (REL-D) implies (REL-Phi) | discharged as an implication |
+| (REL-D) at T in the admissible gauge | gap: unsupplied |
+| 6.1: the constraint g = 1 at top centres costs nothing in L^2 | discharged (linear); nonlinear remark |
+| (REL-Phi) itself | not refuted; implication from (REL-D); redundant at the linear level |
+
+**STOPPED, with a strictly smaller inequality, (REL-D):**
+
+    sum_(j=1)^n ||H||_(L^4(A_j(y))) <= C_D(L) (K_delta * E)(Q_y^(+1))^(1/2)   at every top centre y,
+
+in the admissible gauge of (REL), uniformly in depth and volume: the critical
+L^4 mass of the relative field in the L-adic shells about each top centre is
+summable over the shells. (REL-4) is the same with an l^4 sum; the gap between
+them is exactly the n^(3/4) of Corollary A1. (REL-D) contains no contour, no
+nested map and no line integral, and Theorem R turns it into (REL-Phi). It
+holds for bounded H, for (REL-p) with any p > 4, for H^2 through lattice
+Sobolev, and up to fine-scale defects at the centres (Corollary A3). The only
+known concentration mechanism, residual contour sums at nested centres, is
+consistent with it (5.2). No counterexample to (REL-Phi), to (REL) or to
+(GLUE-E) for the specified U, T was found; at the linear level none exists
+(Lemma CAP).
+
+**Defects of this note (ranked by what they break).**
+1. (REL-D) is not supplied: neither (R2) nor (R3) gives it in an admissible
+   gauge at T. This is the stop.
+2. Lemma CAP is linear. Its nonlinear form fails as written (4.2), so at the
+   nonlinear level (REL-Phi) is not reduced to (REL-2), (REL-4).
+3. Phi_n^(T) at a background: I used Lemma 1's form with transports. If (CMP)
+   defines it through the recursion 2.2(d) with transports, the difference is
+   a sum over levels of curvature terms times level-k contour averages, which
+   I did not bound; under (REL-D) at the level-k sites of each top block it
+   would be C f relative, but that is more than (REL-D) at top centres.
+4. The lattice Sobolev inequality (H^2 into L^p) and the Green's-function
+   bound of 5.2 are quoted, not rebuilt.
+5. Example E's nonlinear version (a up to c e_0^(1/2)/f) is stated, not
+   written out.
+
+**Consumers that change.**
+1. `seam-nonlinear-c` Theorem GN reads (REL-Phi) only as a bound on
+   |Psi(y_c)|. It can read (REL-D) instead, through Theorem R, with
+   C_Phi = 9 C_A(L) C_D(L) (1 + C f) e^(C delta): (REL-4) is strengthened from l^4 to l^1 over the
+   shells at top centres and (REL-Phi) is dropped as a separate input.
+2. The remark of `seam-nonlinear-c` that a W^(1,4) bound would give (REL-Phi)
+   holds, in the form of Corollary A2 (any L^p, p > 4, which W^(1,4) gives
+   through Sobolev). Its statement that (REL-Phi) is "new and unsupplied"
+   should read: redundant at the linear level (Lemma CAP); at the nonlinear
+   level, reduced to (REL-D).
+3. Mapped Text 5.3 (R3), forwarded by the lead (mapped side): for (GLUE-E) its
+   H^2 bound is needed in the admissible gauge at T, or (REL-D) there; in
+   local Landau gauges it does not reach (REL-Phi) (3.4 (C3)).
+4. Any reader who bounds a contour average at a nested centre by L^4 data
+   alone loses n^(3/4) (Corollary A1 is sharp). Holonomy comparisons from
+   curvature, as in `lc-u` (5.8), are gauge invariant and are not affected.
+
+**What stays open.** (REL-D) at T in the admissible gauge; (REL-2), (REL-4)
+there, i.e. Theorem F at T, item (o) and (R3) in the admissible gauge; (CMP);
+curved backgrounds and frozen data, not attempted.
+
+## 8. Read and not read
+
+Read: FINISH.md and GOAL.md in full; `library/seam-nonlinear-c.md` in full;
+`library/seam-quadratic-c.md` Sections 1 to 3; `library/lc-u.md` Sections 1,
+2 and 5; `parts/hard-core--mapped.md` Text 3.1 and Text 5.3 from (R1) to the
+start of the written fixed point, with grep lines of its Obligations;
+`parts/hard-core--excess.md` Section 2 (2.1 to 2.3); `library/relative-density-bound.md`
+item 2 and grep lines; `checks/seamqc/seamqc.py` (contour code, reused);
+the listing of `checks/seamnlc/`. Not read: every file excluded for the mapped
+side in FINISH.md, every gate file (including `gates/lc-u-0bfc3ff42.md`),
+`library/fibre-propagator.md`, `library/analytic-lift.md`,
+`library/block-poincare-energy-package.md`, the independent side's library
+files, the Sussman-Alpoge repository, and any literature. No subagent,
+commit, push or post. One numeric job (`checks/relphi/relphi.py`, 3.5 s,
+0.8 GB peak), under `scripts/lab_ops.py numeric-lock`, BLAS threads 1, at 65
+percent memory free.

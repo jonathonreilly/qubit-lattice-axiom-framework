@@ -73,4 +73,96 @@ The statement leaves the ratio of the inner to the larger cube unspecified. The 
 
 **Lemma H** and its Caccioppoli step are written out in `library/a3-response.md` and were kept ADVANCE by `gates/a3-gate-b2c312b2e.md`. So every input of the (7.19) proof is now gated library text.
 
-Status: in progress (R4–R7 next).
+### R4. §8.4, one-step map, holomorphy, cancellation, (8.3) — ADVANCE
+
+**Definitions,** checked against SA 7065–7096:
+- the contour family \(\mathcal G(y,x)\): at most \(4!\) coordinate-ordered shortest paths, inside \(B(y)\) for centred blocks;
+- the Federbush mean;
+- the block average \(\mathcal M(U)(c)=\exp(L^{-4}\sum_x\log W_x)U[c]\), with \(W_x=U(c_-,x)U([x,x'])U(x',c_+)U[c]^{-1}\);
+- the block factor \(\mathsf u(y)=\exp(L^{-4}\sum_x\log[\mathbf W(y,x)W_0(y,x)^{-1}])\), with \(e^{i\mathcal Q^1}\mathcal M(W_0)=\mathsf u(c_-)^{-1}\mathcal M(\mathbf W)\mathsf u(c_+)\).
+
+§8.4's gauge \(g(x)=W_0(y,x)^{-1}v_y^{-1}W(y,x)\) gives \(W^g(y,x)=W_0(y,x)\) and \(\mathcal M(W^g)(c)=v_{c_-}^{-1}\mathcal M(W)(c)v_{c_+}\). This is the outline's straightening, with \(v=\mathsf u\).
+
+**Tree gauge.** Each non-tree link is a product of at most \(C_L\) conjugated plaquettes, and \(\|\prod g_k-1\|\le\sum\|g_k-1\|\) for unitaries.
+
+**Mean.** Write the defining equation as \(v=f(v,z)\) with \(\partial_vf(0,0)=0\). On a fixed ball, \(\|\partial_vf\|\le\frac12\) and smallness of \(f(0,z)\) give a unique fixed point, holomorphic as a uniform limit. Cauchy's formula on a smaller ball bounds the derivatives of order \(\le3\). Uniqueness near a family that is not near 1 follows from the right-invariance of \(\sum\log(V_\gamma V^{-1})=0\). This is the "uniqueness of each finite step" that P82 Lemma 3.2 uses.
+
+**Cancellation at 1.** \(d\mathcal M=\mathsf Q^{\rm pl}=\sigma(c_-)+\mathsf Q^{\rm s}-\sigma(c_+)\) (SA 7086) and \(d\log v_y=\sigma(y)\), so the straightened derivative is \(\mathsf Q^{\rm s}\), the straight-segment average.
+
+**Row and column sums.** Row: \(L^{-4}\cdot L^4\cdot L=L\). Column: a fine bond \((w,w+e)\) lies on exactly the \(L\) segments with \(x=w-te\), \(t<L\). These lie in at most two blocks, with weight \(L\cdot L^{-4}=L^{-3}\). Bonds in other directions are not read.
+
+**(8.3).** Apply the mean value theorem to the finite-dimensional holomorphic Jacobian. The entries move by at most \(C_L(q+u)\), and each row and each column has at most \(C_L\) entries. The factors \(L\) and \(L^{-3}\) are absorbed into \(C_L\). P82 uses only the case of reference \(e^{ib}\) with \(a=0\), in the given gauge and without a tree gauge.
+
+### R5. §8.5, read width, exact composition, value recursion, (8.7), (8.9) — ADVANCE
+
+**Read width.** Step \(m\) adds at most \(c_Ls_m\), and \(\sum_{m<j}s_m\le s_j/(L-1)\). With \(\rho>4(a_L+2)L\) and \(\operatorname{dist}(\Omega_j,\Omega_{j-1}^c)>\rho s_{j-1}=\rho s_j/L\), every read set lies in \(\Omega_{j-1}\subset\Omega_0\), so the local scale there is at least \(s_{j-1}\). The un-enlarged functional reads only the final double block, because level-\((m+1)\) blocks are unions of level-\(m\) blocks.
+
+**Composition.** Suppose \(\mathcal M^m(e^{i\eta A}U_0)=v_me^{ia_m}W_mv_m^{-1}\). Covariance of \(\mathcal M\) at block centres and the one-step identity \(\mathcal M(e^{ia}W)=\mathsf v\,e^{iS_W(a)}\mathcal M(W)\,\mathsf v^{-1}\) give the identity at level \(m+1\), with \(v_{m+1}=v_m|_{\rm new}\mathsf v_m\). This is the outline's SA 9632–9634, so \(a_j=\mathcal Q^{\rm st}_j(A)\) by definition.
+
+**Value recursion.** \(a_{m+1}=\int_0^1S'_{W_m}(ta_m)a_m\,dt\), bounded by the row norm in (8.3). Assume the bootstrap \(u_m\le2LrL^{m-j}\). The product of the correction factors is then \(<\frac32\), which improves the bootstrap to \(\frac32LrL^{m-j}\).
+
+**(8.7).** By the chain rule, \(D_{a_0}a_j\) is a product of block-sparse matrices on the union of the read sets. Row and column norms are submultiplicative. Column sums run over all rows of one height, and deleting rows only lowers them.
+
+**(8.9).** \(\|\mathsf v_m-1\|\le C_Lu_m\), then product telescoping. Units: \(\eta L^j=s_j\) and \(\eta L^{-3j}=\eta^4s_j^{-3}\), which matches P82 (4.1).
+
+**Reading by heights.** A fine bond in layer \(l\) is read only by rows of height \(l\) and by outward rows of height \(l+1\). For a top \(y\) of layer \(j\), \(B^j(y)\) lies in layer \(j\), and an outward row's outer block \(B^j(z)\) lies in layer \(j-1\). This is the bounded number of heights in P82 Lemma 4.1(ii).
+
+**What P82 uses.** P82 uses only the identity-reference case: \(q_m=0\), \(W_m=1\), \(a_0=\eta A_0\) with \(\sup m|A_0|\le\delta\). There the curvature recurrence (8.5)–(8.6) is not needed.
+
+### R6. §8.6, (8.10) — ADVANCE
+
+With \(u(c_-)v_j(c_-)=1\), \(u(z)v_{j-1}(z)=1\) and \(v_j(z)=v_{j-1}(z)\mathsf v_z\),
+\[
+\mathcal M^j((e^{i\eta A}U_0)^u)(c)=e^{i\mathcal Q^{\rm st}_j(A)(c)}\mathbf V_0(c)\,v_j(z)^{-1}v_{j-1}(z)=e^{i\mathcal Q^{\rm st}_j(A)(c)}\mathbf V_0(c)\,\mathsf v_z^{-1}.
+\]
+This equals \(e^{iB(c)}\mathbf V_0(c)\) exactly when (8.10) holds.
+
+**Why \(\mathsf v_z\) is a function of \(B\) alone.** \(\mathsf v_z\) reads the level-\((j-1)\) data in \(B(z)\). The block \(B(z)\) lies in layer \(j-1\), because \(\Omega_j\) is a union of level-\(j\) blocks and \(\rho s_{j-1}>2s_j\). Those bonds are interior rows, where \(\mathsf b=B\).
+
+The inverse is triangular, the map is locally holomorphic, and \(\sup|\mathsf b(B)|\le C_L\sup|B|\). The formula is verbatim the outline's reduced datum, SA 9644. The linearised outward constraint is \(K\) with data \(D\mathsf b\cdot\delta B\): it has the same kernel, and the change of data is triangular and invertible. This is how P82 takes \(K\) at outward rows.
+
+### R7. §8.7, (8.11)–(8.12) — ADVANCE
+
+**Setup.** Redone at the identity reference in one fixed real gauge: \(\mathcal M^mU_0=t_me^{ib_m}t_m^{-1}\), with \(|b_m|,|z_m-1|\le C_L\delta L^{m-j}\) and \(|t_m-1|\le C_L\delta\).
+
+**Covariance.** \(S'_m=\operatorname{Ad}(t_m)|_{m+1}(Q_0+E_m)\operatorname{Ad}(t_m)^{-1}|_m\), where \(\|E_m\|_{\rm row}/L\) and \(\|E_m\|_{\rm col}/L^{-3}\) are at most \(C_L\delta L^{m-j}\), by (8.3) at reference \(e^{ib_m}\). At level-\((m+1)\) sites \(\operatorname{Ad}(t_{m+1})^{-1}\operatorname{Ad}(t_m)=\operatorname{Ad}(z_m^{-1})\), because \(t_{m+1}=t_mz_m\) there.
+
+**(8.11).** Replace one factor at a time. The \(m\)-th term has row norm at most \(L^{j-m-1}e^{C}\cdot LC_L\delta L^{m-j}\cdot L^m\), and these sum to \(C_L\delta L^j/(L-1)\). Columns are the same with \(L^{-3}\). The output factor \(\operatorname{Ad}(t_{j-1})\) at \(c_-\) is within \(C_L\delta\) of 1.
+
+**(8.12).** \(Q'_j\) is built from \(\mathsf T_j(y,x)\), the product of the level-wise mean transports (SA 10670, (PX31)).
+- With the same \(t_m\), the intermediate factors are \(z_m^{\pm1}\), so \(|\mathsf T-1|\le C_L\delta\).
+- Pillars of one height are disjoint, and each has \(L^{4j}\) sites of weight \(L^{-4j}\).
+- Hence the row norm is at most \(C_L\delta\) and the column norm at most \(C_L\delta L^{-4j}\).
+
+**Flat comparator.** \(K_1=\eta Q_0^j\) is the length-\(L^j\) straight-segment average over the pillar, because \(t'L+t\) runs once through \(0,\dots,L^2-1\); checked.
+
+**Outward rows.** At outward rows, and at rows near the outer edge of layer \(j\), the read set reaches layer \(j-1\), where the gauge bound is \(L\delta/s_j\). That is a factor \(L\), absorbed.
+
+## Remarks that break nothing
+
+1. **Output factor in P82 Lemma 4.2.** P82 writes it as \(\operatorname{Ad}(t_j)\). In the product it is \(\operatorname{Ad}(t_{j-1})\) at \(c_-\), that is \(\operatorname{Ad}(t_j)\operatorname{Ad}(z_{j-1}^{-1})\). Both are within \(C_L\delta\) of 1, so nothing changes.
+2. **Statement of (7.19).** It does not fix the ratio of the inner cube to the larger one; any fixed ratio works with the same proof, which covers P82's ratio 2 (R3). Its value half holds at every real \(U\), with no gauge hypothesis.
+3. **Which mean in §8.4.** §8.4 says "block mean" without saying which. The outline's block factor is the exponential of the mean logarithm (SA 7092). Both choices are finite analytic, with the arithmetic mean as derivative at 1, so the cancellation and (8.3) are unchanged.
+4. **Outside this gate.** The following are not read by P82 and are not gated here; this gate asserts nothing about them:
+   - (3.3) and the complex paragraph of §3;
+   - (5.6), which was checked in passing and is correct;
+   - the curvature recurrence (8.4)–(8.6) and the Cauchy bounds (8.8);
+   - the complex-reference, regular-pair and Ward-identity paragraphs of §§8.4 and 8.7;
+   - (7.20)–(7.21), §12 beyond (12.1), and §§9–14.
+
+## What this moves, and what stays open
+
+**Moves.** Row 101 is closed: every `a3-balaban.md` statement listed under "Exact reads" in `gates/p82-curved-gate.md` passes one cross-provider read, with first failing step none and no repair needed. Together with rows 99 and 100, P82° Theorem P(a)–(f) at real references of the class (Reg\(_\alpha\)) is an implication each of whose inputs has had one read by another provider. The lead can drop row 101 from the open list of the real-critical A3 obligation; `p82-curved.md` and its gate stand as written.
+
+**Stays open on that obligation** (unchanged by this gate):
+- membership of the critical reference \(U_0\) in (Reg\(_\alpha\)): this is row 81's premise \(U_0\in\mathcal U_k\), CMP 99a (1.7)–(1.9), whose (1.9) goes beyond plaquettes;
+- A1's pointed-core admission (10.2);
+- 2.8's joined-family identification (G1);
+- M1 weight matching and the consumer identification kept by `gates/a3-derivative-gate.md`;
+- complex references, the independent current (M2) and the periodisation clause.
+
+## Method
+
+- **Checks.** Every check above was done by hand. No numeric or symbolic computation was needed, so the numeric lock was not taken and `memory_pressure` was not consulted.
+- **Sources.** The outline was fetched once by URL into a private scratch folder and read as data with `sed` and `grep`. Bałaban's papers were not opened: the reads' proofs are self-contained, and their Bałaban citations are credit, not proof steps.
+- **Housekeeping.** No subagent was used. Only this gate file was written. No commit, push, PR or post.

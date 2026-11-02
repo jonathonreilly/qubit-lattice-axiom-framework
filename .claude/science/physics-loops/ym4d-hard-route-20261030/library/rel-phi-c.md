@@ -79,3 +79,78 @@ refute a hand identity or show a constant growing; it cannot prove a bound.
 3. Example E: its two exact sums (Section 3.3) for L = 3, n = 1 to 12, to
    display the growth of Psi / ||dlambda||_(L^4) against (log B)^(3/4).
    Illustration only; the bound is proved by hand.
+
+## 2. The composite contour average at a top centre (discharged, hand proofs)
+
+**Lemma 1 (contours from the top centre at every level).** For every fine
+1-form theta and every top centre y,
+
+    Phi_n theta(y) = sum_(k=1)^n ( Phi^(k) Q_path^(L^(k-1)) theta )(y).
+
+*Proof.* Two facts. (a) For a level-k 0-form mu, the oriented sum of d mu over
+a path from y to x is mu(x) - mu(y), so Phi^(k+1)(d mu)(y) = (Av^(k+1) mu -
+r^(k+1) mu)(y), where Av^(k+1) averages over the L^4 level-k sites of the block
+B^(k+1)(y) and r^(k+1) restricts to level-(k+1) sites. (b) Q_k = Q_path^(L^k)
+- d Phi_k, d the level-k gradient (`seam-quadratic-c` 2.2(d)). Hence
+Phi^(k+1) Q_k = Phi^(k+1) Q_path^(L^k) - Av^(k+1) Phi_k + r^(k+1) Phi_k, and the
+recursion Phi_(k+1) = Av^(k+1) Phi_k + Phi^(k+1) Q_k becomes
+Phi_(k+1) = r^(k+1) Phi_k + Phi^(k+1) Q_path^(L^k). Start from
+Phi_1 = Phi^(1) = Phi^(1) Q_path^(1) and iterate; a top centre is a level-k site
+for every k, so the restrictions are evaluations at y. QED
+
+*Reading.* At every level the staircases start at the top centre y itself,
+and what they integrate is the path average one level below, which averages
+over transverse boxes of side L^(k-1). The contour parts of the intermediate
+maps have dropped out exactly. This is the open-path cancellation of
+`lc-u` 5 ("all inserted interior contours cancel") at the linear level.
+
+**Lemma 2 (gauge law).** For every fine 0-form lambda and top centre y,
+Phi_n(d lambda)(y) = Av_B lambda(y) - lambda(y). So an admissible gauge change
+(lambda = 0 at every top centre) moves Psi(y) by exactly Av_B lambda(y).
+
+*Proof.* Q_path^(s) d = d Av_s at level j, s = L^j (`seam-quadratic-c` 2.2(c)).
+So the k-th term of Lemma 1 is Phi^(k) d (Av_(L^(k-1)) lambda)(y) =
+Av^(k) Av_(L^(k-1)) lambda(y) - Av_(L^(k-1)) lambda(y) by (a), and
+Av^(k) Av_(L^(k-1)) = Av_(L^k) at a level-k site, since the blocks
+B_(L^(k-1))(x), x in B^(k)(y), tile B_(L^k)(y) (`seam-quadratic-c` Lemma 2.1).
+The sum over k telescopes to Av_B lambda(y) - lambda(y). QED
+
+**Lemma 3 (affine gauges, constant fields).** If lambda is affine, then
+Av_B lambda(y) = lambda(y), since the block is symmetric about y. Hence a
+field equal to a constant a_mu on every direction-mu bond of the read set
+R_n(y) below has Phi_n theta(y) = 0 (it agrees there with d of an affine
+function, and Phi_n(y) reads only R_n(y)). Equivalently, the kernel w_n of
+theta -> Phi_n theta(y) has zero sum over the positively oriented
+direction-mu bonds, for each mu.
+
+**2.3 Read sets, weights, path averages (discharged).**
+- *Read set.* The level-(k-1) bonds of the staircases from y have endpoints in
+  y + L^(k-1)[-m, m]^4. For a level-(k-1) bond c = [x, x + s e_mu], s = L^(k-1),
+  the path average reads the fine bonds S(c) := {[w, w + e_mu] : w in B_s(x) +
+  {0, ..., s-1} e_mu}, whose sites lie within sup-distance (s - 1)/2 + s of x.
+  So the k-th term reads only bonds with both endpoints within sup-distance
+  rho_k := (L^k + 2 L^(k-1))/2 of y; call this set R_k(y). rho_n <= 5B/6, so
+  Phi_n(y) reads inside Q_y^(+1), the 3^4 top cubes around Q_y.
+- *Weights.* w^(k)(c) := L^-4 #{x : Gamma^(k)_(y,x) traverses c} lies in
+  [0, m/L]. Staircases are monotone in each axis, so each traverses a bond at
+  most once and never returns to y; hence sum_c w^(k)(c) = L^-4 sum_x
+  |x - y|_1 / L^(k-1) = 4m(m + 1)/L < L, and the bonds at y carry total
+  weight 1 - L^-4 < 1.
+- **Lemma 4 (path averages).** |S(c)| = s^3 (2s - 1) <= 2 s^4, each fine bond
+  of S(c) lies in at most s of the segments [z, z + s e_mu], z in B_s(x), so
+
+      |Q_path^(s) theta(c)| <= s^-3 sum_(b in S(c)) |theta_b| <= 2^(3/4) ||theta||_(l^4(S(c))),
+
+  and at s = B, |Q_path^(B) theta(c)| <= 2^(1/2) ||H||_(L^2(S(c))) in top units.
+  *Proof.* Count, then Hoelder, |S|^(3/4) <= 2^(3/4) s^3; Cauchy-Schwarz for
+  the second. QED
+
+**2.4 The background T.** I read Phi_n^(T) as the formula of Lemma 1 with
+the parallel transports of T along the staircases and segments into the frame
+at y. Ad is orthogonal on su(2), so every absolute bound of Sections 3 and 4
+holds verbatim for Phi_n^(T); Lemmas 2 and 3 hold with errors of relative size
+C f (transports of T within Q_y^(+1) differ from the identity by C f in a local
+gauge of T, (TOP-tr)). If the Phi_n^(T) of (CMP) is defined by the recursion
+2.2(d) with transports instead, the two differ by curvature terms at each level
+times the level-k contour averages; I did not bound that difference (defect 3
+of Section 7).

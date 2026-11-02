@@ -80,7 +80,7 @@ all operators at \(U\), Dirichlet outside \(\Omega_0\). It is symmetric in the p
  +\|m^{-2}\lambda\|_2^2+\|m^{-1}D\lambda\|_2^2+\textstyle\sum_{\alpha,\beta}\|D_\alpha D_\beta\lambda\|_2^2
  +\|m^2\mu\|_{\rm top}^2+\|\nu\|_{\rm count}^2 ,
 \]
-with \(m\) the larger endpoint scale on bonds; \(\mathcal X^*\) is the dual space of sources \(F=(f,g_1,g_2,g_3,g_5)\).
+with \(m\) the larger endpoint scale on bonds; \(\mathcal X^*\) is the dual space of sources \(F=(f,g_1,g_2,g_3,g_5)\). The projection \(R\) does not depend on the top mass: \(\operatorname{ran}R=\ker(Q'S)=\Delta_U\ker Q'\) for every positive top weight (`a3-balaban.md` (3.2)). So the choice \(m^{-2}\) in place of the outline's comparable \(a\approx\xi_y^{-2}\) changes constants only.
 
 **Lemma 3.1 (Schur complement).** Let \(U\) be real. (i) \(A_s>0\) and \(Q'\) is onto. Hence the scalar block \(\mathbb S\) (rows and columns 2–4) is invertible, and its \(h\leftarrow g_1\) block is \(P=1-R\). (ii) \(\mathbb M(U)\) is invertible if and only if
 \[
@@ -118,3 +118,107 @@ Here \(K_1\) is the flat straightened row, which is the straight-segment average
 \]
 
 *Proof.* Write \(D_U=D_1+\mathcal A\) on sites, with \((\mathcal A\lambda)(b)=\eta^{-1}(\operatorname{Ad}e^{i\eta A_0(b)}-1)\lambda(b_+)\). Then \(\mathcal A\) is a bond-local multiplication by a coefficient bounded by \(2|A_0|\le2\delta/m\). The same holds for \(d_U-d_1\), for the component differences \(\nabla_U-\nabla_1\), and for the adjoints. (i) Norms. First differences change by \(O(\delta/m)\) times the field, which \(\|m^{-1}\cdot\|_2\) controls. A second difference changes by \(D_1\mathcal A+\mathcal AD_U\). The product rule writes \(D_1(\mathcal A\lambda)\) through \(\nabla A_0\cdot\lambda\) and \(A_0\cdot\nabla\lambda\), bounded by \(\delta(m^{-2}|\lambda|+m^{-1}|\nabla\lambda|)\); the exponential remainder carries extra factors \(\eta|A_0|\). (ii) Vector block \(B_v\), in form. \(\langle B,(d_U^{\mathsf T}d_U-d_1^{\mathsf T}d_1)A\rangle=\langle(d_U-d_1)B,d_UA\rangle+\langle d_1B,(d_U-d_1)A\rangle\le C\delta\|B\|_E\|A\|_E\). The same holds for \(DD^{\mathsf T}\). For \(K^{\mathsf T}K\) use \(\langle K_UB,(K_U-K_1)A\rangle+\langle(K_U-K_1)B,K_1A\rangle\) and the Schur bound from (4.1), \(\|(K_U-K_1)A\|_{\rm count}^2\le(C_L\delta s)(C_L\delta\eta^4s^{-3})\eta^{-4}\|A\|_2^2\cdot C=C_L^2\delta^2\|s^{-1}A\|_2^2\), summed over the bounded number of heights meeting a bond. (iii) Scalar second-order blocks \(A_s:H^2_m\to L^2\) and \(L^2\to(H^2_m)^*\). \(D_U^{\mathsf T}D_U-D_1^{\mathsf T}D_1=D_U^{\mathsf T}\mathcal A+\mathcal A^{\mathsf T}D_1\). Here \(|\mathcal A^{\mathsf T}D_1\lambda|\le C\delta m^{-1}|D_1\lambda|\), and \(D_U^{\mathsf T}(\mathcal A\lambda)\) is bounded by \(C\delta(m^{-2}|\lambda|+m^{-1}|\nabla\lambda|)\), by the product rule with \(|\nabla A_0|\le\delta/m^2\). This is the place where the derivative member of (Reg) is used. So \(\|(A_s(U)-A_s(\mathbf 1))\lambda\|_2\le C_L\delta\|\lambda\|_{H^2_m}\), the mass part included through (iv); the transposed block follows by duality. (iv) Pillar blocks. Since \((Q'^{\mathsf T}\nu)(x)\) is the transport of the top value to \(x\) in the physical pairings, \(\|Q'^{\mathsf T}\nu\|_2^2=\sum_ym_y^4|\nu_y|^2\). Schur on each pillar with (4.1) gives \(\|m^{-2}(Q'_U-Q'_1)\lambda\|_{\rm top}\le C_L\delta\|m^{-2}\lambda\|_2\), and the transposed block and the mass term \(Q'^{\mathsf T}m^{-2}Q'\) follow. (v) Gradient and row blocks. \(|\langle B,\mathcal Ah\rangle|\le2\delta\|m^{-1}B\|_2\|h\|_2\), and \(\|(K_U-K_1)A\|_{\rm count}\le C_L\delta\|m^{-1}A\|_2\) together with its transpose. The identity block does not change. Every estimate is local, and all read sets of rows located in \(Z^\circ\) lie in \(Z\). \(\square\)
+
+## 5. The curved parametrix and its decay
+
+**Tiles, cutoffs, cells.** Use exactly the tiles and cutoffs of `flat-port.md` §8.2: cubes of side \(Ms_j\) tiling each layer, with a bare tiling outside \(\Omega_0\); cutoffs with \(\sum_ih_i^2=1\) on each component, \(|Dh_i|\le C_L/(Ms_i)\), \(|D^2h_i|\le C_L/(M^2s_i^2)\); bounded overlap \(N_L\). Let \(Z_i\) be the concentric cube of side \(c_LMs_i\) that contains \(\operatorname{supp}h_i\), the read sets of all rows located there (Section 3), and a margin; \(c_L\) depends on \(L\) only. Since \(\rho\ge C_LML\), each \(Z_i\) meets at most two adjacent layers (flat-port §8.2). Call \(i\) **bare** if \(Z_i\cap\Omega_1=\emptyset\), and **interior** otherwise.
+
+- *Bare \(i\).* Every site of \(Z_i\cap\Omega_0\) is a level-0 top, whose pillar is the site itself, and every bond there is a level-0 row. The local model \(\mathbb M_i\) is (3.1) on \(Z_i\cap\Omega_0\) **at the actual \(U\)**, Dirichlet outside. Its coefficients coincide with those of \(\mathbb M(U)\) on \(\operatorname{supp}h_i\) and its read set.
+- *Interior \(i\).* Then \(Z_i\) lies within \(c_LMs_i\) of \(\Omega_1\), or inside \(\Omega_j\) for a tile of level \(j\ge1\). The gaps \(\rho\eta\) and \(\rho s_{j-1}\), with \(\rho>c_LML\), put \(Z_i\) inside \(\Omega_0\), and it lies in \(\mathcal L_{j'}\cup\mathcal L_{j'+1}\) for some \(j'\in\{j_i-1,j_i\}\). Its side \(c_LMs_i\le c_{\rm reg}M\xi_{j'}\) with \(c_{\rm reg}=c_LL\). So (Reg\(_\alpha\)) gives a real gauge \(g_i\) on \(Z_i\) with \(U^{g_i}=e^{i\eta A_i}\) and \(m|A_i|+m^2|\nabla A_i|\le L^2\alpha=:\delta\) for the local scale \(m\) on \(Z_i\). Let \(\mathbb M_i^{\rm fl}\) be flat-port's flat local model for tile \(i\): the enlarged system on the periodic box \(\Lambda_i\) that copies the geometry of \(Z_i\) (§§8.2, 9.2 there). Extend \(g_i\) to the sites of \(\Lambda_i\) arbitrarily and put \(\mathbb M_i=\mathcal G_i^{-1}\mathbb M_i^{\rm fl}\mathcal G_i\). By Lemma 3.2 this is the local model at the pure gauge \(\mathbf 1^{g_i^{-1}}\). On the copy of \(Z_i\), \(\mathcal G_i(\mathbb M(U)-\mathbb M_i)\mathcal G_i^{-1}=\mathbb M(e^{i\eta A_i})-\mathbb M(\mathbf 1)\), because flat-port's local model has the global flat coefficients on the support and read set of \(h_i\) (its (8.7)).
+
+**Lemma 5.0 (bare models at any unitary \(U\)).** For bare \(i\), \(\|\mathbb M_i^{-1}\|_{\mathcal X^*\to\mathcal X}\le B_0\), an absolute constant, for every unitary \(U\).
+
+*Proof.* Here \(m=\eta\), \(Q'\) and \(Q'^{\mathsf T}\) are the identity, \(K=\eta\cdot\mathrm{id}\) in counting coordinates, and \(K^{\mathsf T}=\eta^{-3}\mathrm{id}\). Unitarity of the transports gives \(\|\nabla_UA\|_2\le4\eta^{-1}\|A\|_2\) and \(\|D_U\lambda\|_2\le4\eta^{-1}\|\lambda\|_2\). So \(\|\cdot\|_E\), \(\|\cdot\|_{H^2_m}\) and \(\|m^2\cdot\|_{\rm top}\) are within absolute factors of \(\eta^{-1}\|\cdot\|_2\), \(\eta^{-2}\|\cdot\|_2\) and \(\eta^2\|\cdot\|_2\). The scalar formulas of Lemma 3.1(i) give \(S=(D^{\mathsf T}D+\eta^{-2})^{-1}\in[\eta^2/17,\eta^2]\), \(N=S^{-2}\), \(P=1\), \(R=0\). The Schur complement is \(\Sigma=\begin{pmatrix}d^{\mathsf T}d+\eta^{-2}&-K^{\mathsf T}\\-K&0\end{pmatrix}\). Here \(\eta^{-2}\le d^{\mathsf T}d+\eta^{-2}\le25\eta^{-2}\), since \(|dA(p)|^2\le4\eta^{-2}\sum_{b\in p}|A(b)|^2\) and each bond lies in six plaquettes; the scalar bound \(D^{\mathsf T}D\le16\eta^{-2}\) holds because each site meets eight bonds. The row Gram is \(\eta^{-2}(d^{\mathsf T}d+\eta^{-2})^{-1}\in[1/25,1]\). Every block of the explicit inverse is therefore bounded by an absolute constant in the scaled norms. This is flat-port's bare boundary model, whose proof used only these unitary bounds. \(\square\)
+
+**Proposition 5.1 (curved parametrix).** Put \(\mathbb B=\sum_ih_i\mathbb M_i^{-1}h_i\), transplanting \(h_iF\) into the model space and the output \(h_i\mathbb M_i^{-1}h_iF\), supported in \(\operatorname{supp}h_i\subset Z_i\), back. Then \(\mathbb M(U)\mathbb B=1+\mathbb R\) with \(\|\mathbb R\|_{\mathcal X^*\to\mathcal X^*}\le1/4\) under the order of constants of Section 1. Hence \(\mathbb M(U)\) is invertible, with
+\[
+ \mathbb M(U)^{-1}=\mathbb B\sum_{n\ge0}(-\mathbb R)^n,\qquad
+ \|\mathbb M(U)^{-1}\|_{\mathcal X^*\to\mathcal X}\le\tfrac43\|\mathbb B\|\le2B_LN_L .
+ \tag{5.1}
+\]
+The same holds for the scalar system \(\mathbb S\), with the scalar local models (flat-port: "the same construction, omitting the first row and column").
+
+*Proof.* Let \(Y_i=\mathbb M_i^{-1}h_iF\). At points of \(\operatorname{supp}h_i\), both \(\mathbb M(U)\) and \(\mathbb M_i\) read only \(Z_i\), so
+\[
+ \mathbb M(U)(h_iY_i)=h_i\mathbb M_iY_i+h_i(\mathbb M(U)-\mathbb M_i)Y_i+[\mathbb M(U),h_i]Y_i
+ =h_i^2F+h_i(\mathbb M(U)-\mathbb M_i)Y_i+[\mathbb M(U),h_i]Y_i .
+\]
+Summing over \(i\) gives \(\mathbb R=\sum_i\{[\mathbb M(U),h_i]+h_i(\mathbb M(U)-\mathbb M_i)\}\mathbb M_i^{-1}h_i\). Three bounds enter.
+
+(1) *Commutators.* \(\|[\mathbb M(U),h_i]Y\|_{\mathcal X^*}\le(C_L/M)\|Y\|_{\mathcal X,Z_i}\). This is `flat-port.md` (8.8), and its proof transfers verbatim. The covariant product rule \(D_U(h\lambda)(b)=h(b_-)D_U\lambda(b)+(Dh)(b)\operatorname{Ad}(U(b))\lambda(b_+)\) has the flat structure, since transports are unitary. The averaging commutators are bounded by the cutoff oscillation \(C_L/M\) over a pillar or double block, times the curved row and column sums, which are within \(1+C_L\delta\) of the flat ones by the first line of (4.1).
+
+(2) *Coefficients.* For bare \(i\) the difference vanishes. For interior \(i\) pair with a test field \(Y'\). Then \(h_iY'\) is supported in \(Z_i^\circ\) and \(\|h_iY'\|_{\mathcal X}\le C_L\|Y'\|_{\mathcal X}\). Lemma 4.1 in the gauge \(g_i\), with Lemma 3.2 for the isometries, gives \(\|h_i(\mathbb M(U)-\mathbb M_i)Y\|_{\mathcal X^*}\le C_LL^2\alpha\|Y\|_{\mathcal X,Z_i}\).
+
+(3) *Local inverses.* \(\|Y_i\|_{\mathcal X(\Lambda_i)}\le B_L\|h_iF\|_{\mathcal X^*(\Lambda_i)}\), by (F1) and gauge invariance, or by Lemma 5.0. The norms at \(U\) and at \(\mathbf 1^{g_i^{-1}}\) agree on \(Z_i\) within \(1+C_L\delta\) (Lemma 4.1).
+
+As in flat-port (8.9), the map \(F\mapsto(h_iF)_i\) is bounded from \(\mathcal X^*\) into \(\bigoplus_i\mathcal X^*(\Lambda_i)\), and \((X_i)_i\mapsto\sum_i(\text{commutator or coefficient term})X_i\) is bounded into \(\mathcal X^*\). The proof is Cauchy–Schwarz against a global test field with the overlap \(N_L\). Hence \(\|\mathbb R\|\le C'_LN_LB_L(C_L/M+C_LL^2\alpha)\le1/4\) once \(M\) and then \(\alpha_*\) are fixed as in Section 1, the constants \(C'_L,L^2\) absorbed. In finite dimension the right inverse \(\mathbb B(1+\mathbb R)^{-1}\) of the square matrix \(\mathbb M(U)\) is its inverse. \(\square\)
+
+**Lemma 5.2 (decay).** Write \(\mathbf 1_z\) for restriction of sources to components located over the pillar of \(z\) (rows based there included), and \(\|\cdot\|_{\mathcal X,y}\) for the output norm restricted to components over the pillar of \(y\) and its stencil neighbours. Then
+\[
+ \|\mathbf 1_y\mathbb M(U)^{-1}\mathbf 1_z\|_{\mathcal X^*\to\mathcal X}\le C\,e^{-\delta_wd_{\mathbf B}(y,z)},\qquad \delta_w=\log2/(D_LM),
+ \tag{5.2}
+\]
+and the same for \(\mathbb S^{-1}\).
+
+*Proof.* Each \(h_i\mathbb M_i^{-1}h_i\), and each summand of \(\mathbb R\), maps sources supported in \(Z_i\) to outputs supported in \(Z_i\), and ignores sources outside \(Z_i\). The \(d_{\mathbf B}\)-diameter of \(Z_i\) is at most \(D_LM\), since \(Z_i\) has side \(c_LMs_i\) and meets only scales \(s_i/L\) and \(s_i\). A term of \(\mathbb B\mathbb R^n\) with nonzero \(\mathbf 1_y\cdot\mathbf 1_z\) part needs a chain of \(n+1\) cells joining \(y\) to \(z\), so \(d_{\mathbf B}(y,z)\le(n+1)D_LM\). The \(\mathbf 1_y\cdot\mathbf 1_z\) part of the full sum \(\mathbb B\mathbb R^n\) is the sum of those terms, so its norm is at most \(\|\mathbb B\|4^{-n}\), and it vanishes for \(n+1<d_{\mathbf B}(y,z)/(D_LM)\). Summing the tail gives (5.2). This is flat-port §8.3; no count of walks is needed. \(\square\)
+
+## 6. Pointwise upgrade at the curved reference
+
+**Lemma 6.1 (curved local estimate).** Let \(Q\) be a cube of side \(r\ge16\eta\), \(Q^+\) its concentric double, and suppose that on \(Q^+\) the real \(U\) has a gauge with \(U=e^{i\eta A}\), \(r|A|+r^2|\nabla A|\le a\le a_0\), \(a_0\) absolute. Let \(u=(u_1,\dots,u_n)\), \(n\le4\), be adjoint-valued site functions on \(Q^+\) (a scalar, or the components \(x\mapsto A_\mu(x)\) of a 1-form) with
+\[
+ \Delta_Uu_\mu=g_\mu+(Eu)_\mu,\qquad |(Eu)_\mu(x)|\le a\,r^{-2}\max_\nu\max_{|x'-x|\le2\eta}|u_\nu(x')|,
+\]
+where \(\Delta_Uf(x)=\eta^{-2}\sum_\nu[2f(x)-\operatorname{Ad}U(x,x+\eta e_\nu)f(x+\eta e_\nu)-\operatorname{Ad}U(x,x-\eta e_\nu)f(x-\eta e_\nu)]\). Then on \(Q\), for \(0<\beta<1\),
+\[
+ |u|+r|\nabla_Uu|+r^{1+\beta}[\nabla_Uu]_\beta\le C_\beta\big(r^{-2}\|u\|_{2,Q^+}+r^2|g|_{\infty,Q^+}\big),
+ \tag{6.1}
+\]
+the Hölder quotient taken at separations at most \(r\) with the covariant comparison along a straight path.
+
+*Proof.* (1) *Values.* Kato's inequality \(\Delta|u_\mu|\le|\Delta_Uu_\mu|\) holds pointwise. At \(u_\mu(x)\ne0\), pair the equation with \(e=u_\mu(x)/|u_\mu(x)|\) and use \(\langle e,\operatorname{Ad}(V)v\rangle\le|v|\); \(\operatorname{Ad}V\) is orthogonal on \(\mathfrak{su}(2)\) because \(U\) is real. At \(u_\mu(x)=0\) the left side is \(\le0\). With it, the maximum-principle and Green–Poisson comparison of `a3-balaban.md` (7.19) gives, on any cube \(Q'\subset Q^+\) of side \(r'\ge16\eta\), \(\sup_{Q'/2}|u_\mu|\le C(r'^{-2}\|u_\mu\|_{2,Q'}+r'^2\sup_{Q'}|\Delta_Uu_\mu|)\). Put \(\Phi=\sup_{x\in Q^+,\mu}(d(x)/r)^2|u_\mu(x)|\), with \(d\) the distance to \(\partial Q^+\). Where \(d(x)<32\eta\), \(|u_\mu(x)|\le\eta^{-2}\|u_\mu\|_{2,\{x\}}\) gives \((d/r)^2|u_\mu(x)|\le32^2r^{-2}\|u\|_2\). Otherwise take \(Q'\) of side \(d(x)/2\) about \(x\). On it and its \(2\eta\)-neighbourhood \(d\ge d(x)/8\), so \(|u_\nu|\le64(r/d(x))^2\Phi\) there, and
+\((d/r)^2|u_\mu(x)|\le C(r^{-2}\|u\|_{2,Q^+}+r^2|g|)+C'a\Phi\).
+For \(a\le a_0=1/(2C')\) this gives \(\Phi\le2C(r^{-2}\|u\|_2+r^2|g|)\), and on \(Q\), \(|u|\le4\Phi\). (2) *Gradients.* In the gauge, pairing opposite shifts gives \(\Delta_U=\Delta+B\cdot\nabla+C''\) with \(|B|\le Ca/r\) and \(|C''|\le C(|\nabla A|+|A|^2)\le Ca/r^2\) (`a3-balaban.md` §12, covariant paragraph). So \(\Delta u_\mu=g_\mu+(Eu)_\mu-B\cdot\nabla u_\mu-C''u_\mu\). The ordinary Poisson gradient bound \(|\nabla v(\text{centre})|\le C(\ell^{-1}\sup|v|+\ell\sup|\Delta v|)\) on a cube of side \(\ell\) (from (12.1) there) is applied at a maximizer of \(\Psi=\sup d(x)|\nabla u(x)|\) with \(\ell=d(x)/4\). The drift contributes at most \(Ca\Psi\), and is absorbed. Maximizers within a fixed number of mesh steps of \(\partial Q^+\) are handled by \(|\nabla u|\le2\eta^{-1}\sup|u|\). This is the argument of (7.19) there, with the extra zeroth-order terms bounded by \((a/r^2)\sup|u|\) inside \(\ell\sup|\Delta u|\). Then \(|\nabla_Uu-\nabla u|\le C|A||u|\). (3) *Hölder.* By (1)–(2) on a nested cube, \(|\Delta u|\le C(r^{-4}\|u\|_2+|g|)\) between \(Q\) and \(Q^+\). The free local estimate (F3), `flat-port.md` (4.1) second line with zero divergence source, bounds \(|Du|+r^\beta[Du]_\beta\) on \(Q\) by \(C_\beta(r^{-3}\|u\|_2+r\sup|\Delta u|)\). The covariant comparison along a straight path adds at most \(Ca\) times the same bound, because each link is within \(C\eta a/r\) of \(\mathbf 1\) and \(|\nabla A|\le a/r^2\) (`a3-balaban.md` §12). \(\square\)
+
+**Proposition 6.2 (pointwise kernels).** Let \((a,\lambda)=S^{\circ-1}(f,b)\) with either (I) \(b=0\), \(f\) supported in the pillar of \(z\), \(|f|\le m_z^{-3}\); or (II) \(f=0\), \(b\) supported at one row \(c\) with \(y_c=z\), \(|b(c)|\le1\). Then for all tops \(y\) and rows \(c'\),
+\[
+ m_y|a|_y+m_y^2|\nabla a|_y+m_y^{2+\alpha_{\rm H}}[\nabla a]_{\alpha_{\rm H},y}\le C\,e^{-\delta_wd_{\mathbf B}(y,z)},\qquad
+ |\lambda(c')|\le C\,e^{-\delta_wd_{\mathbf B}(y_{c'},z)} .
+ \tag{6.2}
+\]
+Moreover, for \(g\) supported in the pillar of \(z\) with \(|g|\le m_z^{-2}\),
+\[
+ m_y^3|D(1-R)g|_y\le C\,e^{-\delta_wd_{\mathbf B}(y,z)} .
+ \tag{6.3}
+\]
+
+*Proof.* By Lemma 3.1(iii), \((a,\lambda)\) are the \((A,\nu)\) components of \(X=\mathbb M(U)^{-1}F\) with \(F=(f+K^{\mathsf T}b,0,0,0,-b)\). The source has \(\|F\|_{\mathcal X^*}\le C\). In case (I), \(\langle B,f\rangle\le\|m^{-1}B\|_2\|mf\|_2\) and \(\|mf\|_2\le m_z\cdot m_z^{-3}\cdot m_z^2=1\). In case (II), \(|K^{\mathsf T}b|\le Cs^{-3}\) on the carrier by (4.1), the same computation applies, and \(\|b\|_{\rm count}\le1\). By Lemma 5.2, applied on the bounded union of pillars that meets the cube \(Q^+\) below, every local norm of \(X\) near \(y\) is at most \(Ce^{-\delta_wd_{\mathbf B}(y,z)}\), with \(C\) absorbing \(e^{\delta_wC_L}\).
+
+*Outputs with \(m_y\le64L\eta\).* Use \(|u(x)|\le\eta^{-2}\|u\|_{2,\{x\}}\), then finite differences and twice the gradient bound for the Hölder quotient. All constants depend only on \(L\).
+
+*Outputs with \(m_y>64L\eta\).* Take \(r=m_y/(4L)\ge16\eta\) and \(Q\) of side \(r\) about the output point. \(Q^+\) lies in the cell \(Z_i\) of the tile containing \(y\), which is interior, so the gauge \(g_i\) applies with \(a\le L^2\alpha\). \(Q^+\) is inside \(\Omega_0\), and the pillars it meets have scales between \(m_y/L\) and \(Lm_y\).
+
+- *The \(h\) component.* Row 3 of (3.1) has zero source, so \(\Delta_Uh=Q'^{\mathsf T}\mu-Q'^{\mathsf T}m^{-2}Q'h\) on sites. Pointwise \(|Q'^{\mathsf T}\mu|\le\max|\mu|\le m^{-4}\|m^2\mu\|_{\rm top,loc}\) and \(|Q'^{\mathsf T}m^{-2}Q'h|\le m^{-4}\|h\|_{2,P}\). Lemma 6.1 with \(E=0\) gives \(|Dh|\le C(r^{-3}\|h\|_2+rm^{-4}\cdot)\le Cm_y^{-3}e^{-\delta_wd}\).
+- *The \(A\) component.* Row 1 gives \((d^{\mathsf T}d+DD^{\mathsf T})A=f+K^{\mathsf T}b+Dh-K^{\mathsf T}KA+K^{\mathsf T}\nu\). At bonds whose stencil lies in \(\Omega_0\), \(d^{\mathsf T}d+DD^{\mathsf T}=\Delta_U+\mathcal W\), with \((\mathcal WA)_\mu=\sum_{\nu\ne\mu}[\nabla_\mu,\nabla_\nu^{\mathsf T}]A_\nu\) (`a3-derivative.md` (40); gate 7.2 ADVANCE for the forward curl). Here \(|[\nabla_\mu,\nabla_\nu^{\mathsf T}]f|\le C\eta^{-2}|\partial U(p)-\mathbf 1||f|\le Ca\,r^{-2}|f|\) in the gauge. So Lemma 6.1 applies with \(E=-\mathcal W\) and \(g_A=f+K^{\mathsf T}b+Dh-K^{\mathsf T}KA+K^{\mathsf T}\nu\). Every term of \(g_A\) is at most \(Cm_y^{-3}e^{-\delta_wd}\). For \(K^{\mathsf T}KA\), (4.1) and Cauchy–Schwarz on the carrier give \(|K^{\mathsf T}KA(b)|\le Cs^{-4}\|A\|_{2,\rm carrier}\le Cs^{-3}\|m^{-1}A\|_{2,\rm carrier}\). Also \(|K^{\mathsf T}\nu|\le Cs^{-3}\max|\nu|\) and \(|\nu|\le\|\nu\|_{\rm count,loc}\). The source terms appear only if \(Q^+\) meets their support, and then \(d_{\mathbf B}(y,z)\le C_L\) and \(m_z\) is comparable to \(m_y\). Since \(r^{-2}\|A\|_{2,Q^+}\le Cr^{-2}m_y\|m^{-1}A\|_2\), (6.1) gives (6.2) for \(a\) on \(Q\). Hölder separations between \(r\) and \(m_y\) follow from twice the gradient bound, with a factor \((4L)^{\alpha_{\rm H}}\).
+- *The multiplier.* \(|\lambda(c')|=|\nu(c')|\le\|\nu\|_{\rm count}\) near \(y_{c'}\).
+- *(6.3).* By Lemma 3.1(i), \((1-R)g\) is the \(h\) output of \(\mathbb S^{-1}(g,0,0)\), with \(\|g\|_2\le1\). Lemma 5.2 for \(\mathbb S\) and the \(h\) step above give (6.3). \(\square\)
+
+## 7. Proof of Theorem P
+
+**(a)** Proposition 5.1 and Lemma 3.1(ii),(iii) give invertibility of \(\mathbb M(U)\), \(\Sigma\) and \(S^\circ\). If \(K\) were not onto, \(S^\circ(a,\lambda)=(0,b)\) with \(b\notin\operatorname{ran}K\) would have no solution. By `a3-balaban.md` (3.1)–(3.2), whose finite-dimensional algebra is re-derived there, \(R\) is the orthogonal projection onto \(\ker(Q'S)=\Delta_U\ker Q'\). So \(\Delta_U\) maps \(\ker Q'\) onto \(\operatorname{ran}R\). It is injective because \(\Delta_U\chi=0\) and \(Q'\chi=0\) give \(\langle\chi,A_s\chi\rangle=0\), hence \(\chi=0\) by Lemma 3.1(i).
+
+**(b)** Assign each bond to the pillar of its base point and split \(f=\sum_zf\mathbf 1_{P_z}\), with \(|f\mathbf 1_{P_z}|\le m_z^{-3}\|f\|_{F,w}/w(z)\). Likewise \(b=\sum_cb(c)e_c\), with \(|b(c)|\le\|b\|_{Y,w}/w(y_c)\). By linearity, (6.2) and \(w(y)/w(z)\le e^{\theta d_{\mathbf B}(y,z)}\),
+\[
+ w(y)\big(m_y|a|_y+m_y^2|\nabla a|_y\big)+w(y_{c'})|\lambda(c')|
+ \le C\Big(\sum_ze^{-(\delta_w-\theta)d_{\mathbf B}(y,z)}\Big)\big(\|f\|_{F,w}+C_L\|b\|_{Y,w}\big),
+\]
+using that at most \(C_L\) rows have a given base top. For \(\theta\le\theta_0=\delta_w/2\), (A1) (5.5) with \(p=0\) and \(\tau=\delta_w/2\) bounds the sum by \(C(L)\), because \(\rho\ge\rho_0\ge32\log L/\delta_w\). This is (b), with \(C^\circ\) depending only on \(L\).
+
+**(c)** Repeat (b) with the Hölder member of (6.2).
+
+**(d)** For \(a\in X_w\), \(g=D^{\mathsf T}a\) is a first difference of \(a\) with covariant transports, so \(|g|_z\le Cm_z^{-2}\|a\|_{X,w}/w(z)\). Split \(g\) into pillar pieces and apply (6.3) and the sum in (b). This gives \(w(y)m_y^3|D(1-R)D^{\mathsf T}a|_y\le C^\circ\|a\|_{X,w}\).
+
+**(e)** (b) holds for every \(w\in\mathcal W_\theta\). By Lemma 8.2 of `a3-derivative.md`, ADVANCE in [G] with its finite-colour repair, this is equivalent, up to a fixed colour factor, to the BGR11 first-line row sums at rate \(\theta\) for every block of \(S^{\circ-1}\), including the gradient output components. The column half of BGR11 is not asserted. P82° does not need it.
+
+**(f)** Write \(\mathfrak d=d+E_{\mathfrak c}\) (the gate's curl correction, `gates/a3-derivative-gate.md` §7). In a cell gauge every entry of \(E_{\mathfrak c}\) is at most \(C\eta^{-1}|\mathbf 1-\operatorname{Ad}\partial U(p)|\le CL^2\alpha\,\eta\,m^{-2}\), with fixed finite support. So \(V=\mathfrak d^{\mathsf T}\mathfrak d-d^{\mathsf T}d\) maps \(X_w\) to \(F_w\) with norm \(\le C_LL^2\alpha\), by the gate's computation. Then \(S^\circ_{\mathfrak d}=S^\circ+\operatorname{diag}(V,0)\), and \(S^{\circ-1}_{\mathfrak d}=(1+S^{\circ-1}\operatorname{diag}(V,0))^{-1}S^{\circ-1}\) converges in \(X_w\oplus Y_w\) once \(C^\circ C_LL^2\alpha\le1/2\). The Hölder member follows from \(a_{\mathfrak d}=\) field part of \(S^{\circ-1}(f-Va_{\mathfrak d},b)\) and (c). (d) does not involve the curl. (e) follows as before. \(\square\)
+
+**Consumer reading.** `a3-derivative.md` Lemma 8.1 asks for (4) for \(S^\circ\) with a constant \(C^\circ\), the Hölder member and \(D(1-R)D^{\mathsf T}:X_w\to F_w\), for every \(w\in\mathcal W_\theta\). These are (b), (c), (d), and \(\theta=\delta_0/8\) is admissible with \(\delta_0:=\delta_w\). The convention there is the forward curl or the plaquette curl, covered by (f). At the consumer's reference \(U_0=U^\circ(\mathbf V_0)\), the only extra premise is [Reg at \(U_0\)]. The order is respected: \(C^\circ\) depends on \(L\) only, and \(\kappa,r,r_{\rm B}\) are chosen after it.

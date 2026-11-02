@@ -1,7 +1,7 @@
 # Support envelope — queue row 88
-Provenance: OpenAI Codex, GPT-6 family (exact backend and actual effort not exposed; row 88 requests max); checkout `bb7f39d69e3410da4e450f04e2331f031cc6f2a1`; Sussman–Alpoge commit `31a47c543775`; research text, not an audit, grants no status.
+Provenance: OpenAI Codex, GPT-6 family (exact backend and actual effort not exposed; row 88 requests max); resumed checkout `259167dd570555bbce1b3e8ad219b5787a40f3e0`, preserving Sections 1–9 from checkout `bb7f39d69e3410da4e450f04e2331f031cc6f2a1`; Sussman–Alpoge commit `31a47c543775`; research text, not an audit, grants no status.
 
-**Outcome: STOPPED at the session budget. The full support assertion (D-F) is neither proved nor refuted. No explicit admitted counterexample has been obtained.** The finite pivot and averaging arguments below are completed; the history-wide admission step is not.
+**Outcome: STOPPED at the resumed run's budget. The full support assertion (D-F) is neither proved nor refuted; no explicit admitted counterexample has been constructed.** Sections 1–9 are retained. Sections 10–12 add the initial cell-clearance argument, the exact draw estimate, the stage-threshold bound and the exclusion of a current outer collar from its own floor. The read-by-read admission induction remains open; Section 13 gives its precise stopping point.
 
 ## 1. Question and source boundary
 
@@ -222,3 +222,126 @@ To make this a definition-level repair, the places to change are the formation d
 The independent fine-side −1 assignment is excluded on the original seam by its retained constraint. The distant-pivot version is excluded by the global pivot lemma, including the Borel branches. The real converse averaging estimate is rebuilt, and exact lifts are tracked without inventing a scale gain. The source-level variant (6.1) is sufficient for the existing conditional floor-screening argument. These close specific algebraic substeps, not row 88.
 
 The next decisive task is the read-by-read admission induction in §7: first supply the initial level-zero coverage, then identify the source of each actual joined test after a stage, a draw and an older collar. A counterexample must violate that induction while satisfying the actual recorded tests and constraints; the datum-only example in §6 does not do so. Until that task is closed, retain (D-F) as an input to screening and retain the heavy-wall reversal test. No change to the route decision or scientific status is warranted by this report.
+
+## 10. Resumption: the admission boundary
+
+The resumed task is still Package C rank 1 and its heavy-wall reversal test. A successful induction supplies (D-F); an admitted failure requires changing the rule that admits the offending read. The outline is again fetched once at the specified commit. Its constructions are credited to Ethan Sussman and Levent Alpoge, with Claude and Codex as the authors of their text. The following sections separate literal recorded admission rules from assertions of regularity made later in their outline. Neither the latter assertions nor a regular evaluation fibre is used as a premise for the support theorem.
+
+### 10.1 The initial strip: the old-region margin is not the issue here
+
+At the first step the old live region is empty. Put \(D=\Omega _1^c\). In the cell adjacency graph, write \(N_r E\) for the union of cells at graph distance at most \(r\) from \(E\). SA 17317–17323 gives
+\[
+D=N_2(Q'_1)\cup N_4(P'_1),\qquad
+\Omega _0=N_1(\Omega _1).
+\]
+Here and below boundary sites are assigned using the fixed half-open convention; estimates involving physical distances allow one lattice spacing at either end. A cell \(C\) in \(\Omega _0\cap D\) has a neighbor \(C'\) in \(\Omega _1\). Since \(C'\notin N_2(Q'_1)\cup N_4(P'_1)\), triangle inequality in the adjacency graph gives
+\[
+\operatorname{dist}(C,Q'_1)\ge2,\qquad
+\operatorname{dist}(C,P'_1)\ge4.                 \tag{10.1}
+\]
+For a cell in \(\Omega _1\), the stronger bounds are 3 and 5. Thus the original level-zero determining strip contains no failed approximate-test cube and no failed plaquette-test cube; there is a full cell of clearance to the former and three to the latter. A plaquette crossing two cells loses at most one bare spacing in the physical clearance, not a cell. This closes the cell-level exclusion at the initial strip. It does not use an unspecified margin of an older region.
+
+For clarity about its limit, (10.1) is not yet the coverage hypothesis of (4.4). For a plaquette \(p\), let \(E(p)\) be its four bonds together with the complete double blocks of the averaging rows whose pivots occur among those bonds. A double block has side at most \(2L\) in bare units; consequently \(E(p)\) lies within \(4L\) of \(p\). A passed approximate test comparing **all of** \(E(p)\) with one \(U_{1,\square}\), and a passed curvature test for that same field on \(p\), finish the proof by (4.4). The ratio of the step cell size to the test cube size provides ample room: the cell side is \(MR_1L\), whereas SA 17334 makes the test side of order \(M_2R_1L\), with \(L^2M_2\le M\). But the actual enlargement and which plaquettes the curvature indicator examines must still be specified. “The reference is regular at its fixed defining radius” supplies the chart hypothesis of the pivot lemma; it does **not** supply the shrinking bound \(u=O(\varepsilon _1)\) in (4.4).
+
+This distinction matters at a boundary of two test cubes. Choosing a passing approximate test whose doubled cube contains \(E(p)\) is insufficient if the curvature test of that reference is only known on a different central cube. The same reference and its tested plaquette set, rather than only the names of neighboring passing tests, are the remaining initial-level read. SA 6055–6077 assigns precisely these neighborhoods to formation data, without specifying them in the cited rules. This observation is not a counterexample.
+
+### 10.2 What actually survives a draw
+
+The later measure description makes the changed bond set explicit. At SA 22749 it is
+\[
+\mathfrak b_X=\{b\text{ of level }k:
+                 b\text{ has an endpoint in }\Lambda^{\rm pr}\}.
+                                                        \tag{10.2}
+\]
+It includes boundary-crossing bonds, and every endpoint lies in \(X\). An exterior datum cannot be joined to a newly drawn interior by keeping an old equality on a row in \(\mathfrak b_X\) merely because that equality held before deletion. For a healed component or an island, SA 17416–17420 removes the lower determining layers throughout \(X\). Thus such a row has no old fine-side determining factor left there. At the next ordinary step, the new coarse field is defined to be the average of the new fine field (SA 22748), which supplies the new seam equality. For a drop-out, SA 17654 instead retains the bare averaging integrals of the completed stages. The two cases cannot be combined into a freely chosen old fine factor and a freely chosen new coarse factor on one retained seam.
+
+There is also a useful exact estimate for an actual draw. Suppose its centre \(V_\Lambda\) has plaquettes bounded by \(u\) on every plaquette meeting \(\mathfrak b_X\), and the reference-law cut-off bounds \(\|\log(V_kV_\Lambda^{-1})(b)\|\) by \(h=M_0\varepsilon_k\) on **every changed bond**. Extend the quotient by 1 on unchanged bonds. The inequality \(\|e^{iA}-1\|\le\|A\|\) and (3.3) give, including plaquettes crossing the box boundary,
+\[
+\|\partial V_k(p)-1\|\le u+4M_0\varepsilon_k.       \tag{10.3}
+\]
+The tree gauge does not alter this estimate: it compares fields in the same gauge and the plaquette norm is gauge invariant. In particular a bound \(u\le C_0R_k^2\varepsilon_k\) is sufficient; the stronger \(u=O(\varepsilon_k)\) is not needed for (D-F). Proposition 2.4 would supply such a bound from an exterior estimate of that size, but its small-data conclusion is an analytic input, not an admission rule or a consequence of the fixed radius \(a_\Lambda\).
+
+The boundary scope of the cut-off in SA 17604 must follow (10.2). Interpreting “bonds of the box” as only bonds with **both** endpoints inside would not prove (10.3); an unbounded changed crossing bond is then an immediate obstruction. That alternative reading is not asserted to be the intended kernel, and no counterexample is claimed from this terminology alone. The original source explicitly changes the incident bonds in (10.2).
+
+## 11. The stage thresholds do fit the proposed envelope
+
+The threshold factors in SA 17624 can be bounded without multiplying a loss at each of the \(R_k\) stages. This closes a scalar part of the admission question; it does not determine which plaquettes those tests read. All constants in this section are chosen from the fixed frame constants, \(L,r,\mathfrak p_0\), before the coupling ceiling. SA 19410 specifies that these tests use the frame \(\theta\); no equality of \(\theta\) and the action weights \(x\) is assumed here.
+
+Write \(b=k-R_k\ge1\) and \(T=\theta_k\). For \(b\le i\le k\), the frame inequalities give
+\[
+T-c_5\le\theta_i\le T+\bar B R_k,
+\qquad R_k\le L(\log T)^r.                         \tag{11.1}
+\]
+Indeed the running minimum defining \(R_k\) is at most \(T\). Choose \(T\) large enough that \(c_5+\bar B L(\log T)^r\le T/2\) and \(\log(T/2)\ge\frac12\log T\). The first choice exists because \((\log T)^r/T\to0\): with \(s=\log T\) and integer \(n>r\), use \(e^{s/2}\ge(s/2)^n/n!\). Thus all \(\theta_i\) are in \([T/2,3T/2]\), and direct substitution in \(\varepsilon_i=A_0\theta_i^{-1/2}(\log\theta_i)^{\mathfrak p_0}\) gives one constant \(K\) with
+\[
+K^{-1}\varepsilon_k\le\varepsilon_i\le K\varepsilon_k.
+                                                        \tag{11.2}
+\]
+For example \(K=2^{\mathfrak p_0+1}\) suffices after making the logarithms comparable by a factor two.
+
+There is also at most one rounding step between the radii in this window:
+\[
+R_k\le R_i\le LR_k.                                \tag{11.3}
+\]
+The lower bound is monotonicity of the running minimum. For the upper bound, its value at \(i\) is at most \(\theta_i\le T+\bar B L(\log T)^r\), and its value at \(k\) is at least \(T-c_5\). Increase \(T\) so that
+\[
+\left[\frac{\log(T+\bar B L(\log T)^r)}
+                 {\log(T-c_5)}\right]^r<L.
+\]
+The ratio tends to 1 by (11.1). The unrounded radius at \(i\) is then less than \(LR_k\); since \(LR_k\) itself is a power of \(L\), upward rounding proves (11.3).
+
+Put \(j_0=k_\sharp+1\), the last index with \(L^{k-j_0}=R_{j_0}\) in SA 17624. It exists within \([b,k]\). In fact \(F(i)=L^iR_i\) takes power-of-\(L\) values and each increment either preserves it or multiplies it by \(L\), because \(R_i/R_{i+1}\in\{1,L\}\). For \(R_k\ge3\), (11.3) gives
+\[
+F(b)\le L^{k-R_k}LR_k\le L^k,
+\qquad F(k)\ge L^k.
+\]
+It therefore cannot jump over \(L^k\). The elementary inequality \(LR\le L^R\) for integers \(R\ge3\), \(L\ge2\), follows from \(R\le2^{R-1}\), proved by induction. This justifies the preceding comparison without a computation.
+
+On shell \(i\), the overlap multiplier obeys
+\[
+L_\flat^{2(i-j_0)_+}
+ \le L^{2(k-j_0)}=R_{j_0}^{2}
+ \le L^2R_k^2\le L^2R_i^2.                        \tag{11.4}
+\]
+Hence the stated shell threshold is at most \(L^2R_i^2\varepsilon_i\eta_i^2\). The factors \(1-\beta_{\rm s}(1-2^{-a})\) are at most 1 and need no accumulation estimate for this direction of implication.
+
+In the remaining tested region at stage \(j\), the threshold is at most \(3L_\flat^{2e}\varepsilon_j\eta_j^2\). On a layer \(l\le j\), the displayed cases in SA 17624 give \(e\le j-l\): above \(j_0\) this is \((j-l-1)_+\), below it the value \(j-j_0\) is no larger, and before overlaps it is zero. Since \(\eta_j=L^{-(j-l)}\eta_l\),
+\[
+3L_\flat^{2e}\varepsilon_j\eta_j^2
+ \le3\varepsilon_j\eta_l^2
+ \le3K^2\varepsilon_l\eta_l^2                     \tag{11.5}
+\]
+when \(b\le l\le j\). The last inequality uses (11.2) twice. Layers below \(b\) belong to the unprepared old core; (11.5) makes no assertion about a new test there.
+
+Equations (11.4)–(11.5) show that the actual numerical thresholds are not a depth obstruction. For a determining plaquette whose **whole averaging footprint** is controlled by one of these passed curvature tests, Section 5 converts these bare curvature bounds into the datum bound, with fixed one-step factors at a seam. Neither (11.4) nor (11.5) asserts that every new row has such a footprint. In particular they cannot be applied to an untested part of the old core or to the artificial outside collar.
+
+## 12. The current outer collar misses the floor; an old read is different
+
+Here the explicit free-evolution geometry supplies an inclusion which cannot be read from separation alone. Let \(X\) be a class component of an operation at level \(k\), and let \(s_k=MR_k\xi_k\). SA 17575–17583 gives, with the same concentric hull \(H_k\),
+\[
+X=H_k^{[10]},\qquad \Omega_k^c\cap X=H_k^{[8]}.
+                                                        \tag{12.1}
+\]
+Consequently the inside of \(\partial X\) is separated from \(\Omega_k^c\cap X\) by two level-\(k\) cells. Only this inside clearance is needed to exclude the floor, since the floor is a subset of \(X\).
+
+Suppose the actual outer localization collar has width at most \(c_{\rm col}M\xi_k\), on either side of \(\partial X\); this includes the one-\(M\)-cube enlargement specified in SA 17357. The fixed number \(c_{\rm col}\) must be supplied by the localization rule. Enlarge this collar by \(3\xi_k\) to include the source plaquettes and their blocks in any lift test. Choose the coupling ceiling so that
+\[
+c_{\rm col}M+3<MR_k.                              \tag{12.2}
+\]
+The intersection of this enlarged collar with \(X\) then lies in the **original** \(\Omega_k\), by the two inside cells just proved. Nesting gives \(\Omega_k\subset\Omega_b\). The floor is contained in \(\Omega_b^c\cap X\); the portion of the footprint outside \(X\) cannot meet it either. Thus neither these collar tests nor their full source footprints meet the floor. This applies at every stage of this operation, since its outer component \(X\) is unchanged and the old core is not unfolded. This is an exclusion from the floor, not a proof of admission of the entire exterior collar in the presence of other components.
+
+It follows that the bare-level plaquette obtained by copying a nonzero level-\(k\) curvature into this particular outer collar, as in Section 6, cannot furnish a counterexample to the floor hypothesis. It still shows why a claim about **all** joined tests at their new geometric levels is stronger than the floor hypothesis. No scale gain is introduced by (12.2).
+
+This argument cannot be applied to an older localized read retained in a mark. An old component of level \(s<b\) can lie well inside the current floor. Its own outer collar was separated from its own floor, not from the later floor. The fact that the physical determining sequence does not explicitly store artificial lift bonds is insufficient: a retained test is a function, and evaluating that function can form its old local background and its collar again. To settle that case one must track the actual source field of the retained function, and either obtain the geometric-level bound or prove that only the source-level version of Section 6 is consumed. The disjoint waiting windows constrain operation levels; they do not change the elementary lift identity.
+
+The attempted counterexample at this point is therefore quite specific: retain an old local read with a nonzero coarse source plaquette, put its artificial fine collar inside a later floor, and make the bare threshold much smaller by extending the initial history. What is missing is an explicit family of admitted histories realizing that source with a fixed positive size while all earlier tests and the later read remain supported. Continuity of a finite-depth background at the flat field does not suffice: its continuity neighborhood may depend on the depth being sent to infinity. Invoking the uniform background and locality assertions without their proofs would only turn this attempted counterexample into another conditional argument. No such invocation is made here.
+
+## 13. Resumed stopping point
+
+**STOPPED at budget, not PROVED or REFUTED.** The first unresolved read is still at the initial strip: identify the actual passing indicator whose reference field and tested plaquettes meet (4.4) on each complete pivot footprint. Equation (10.1) supplies clearance from failures, not that identification. For positive-level reads, the corresponding missing datum is the exact omitted older-region margin and the placement of each complete averaging footprint relative to it and to the stage tests.
+
+The later parts now have sharper limits. The stage multipliers themselves are controlled by (11.4)–(11.5), so repeating a constant once per stage is unnecessary. A new draw needs the bound on its centre on all incident plaquettes; (10.3) then handles the entire changed bond set. The current outer lift cannot meet its own floor under (12.2). None of these facts supplies the old localized reads in a retained mark. In particular, the ordinary surviving seam equations and the reconstruction lemma cannot be applied to a newly formed artificial collar merely by reusing its geometric level.
+
+The attempted independent seam assignment, distant pivot, uncut boundary-bond reading, current outer-collar wall and old-collar depth argument have not produced an admitted violating history. The first two are excluded as in Sections 3–4; the boundary-bond reading does not specify the actual draw; the current collar misses the floor; and the old-collar attempt lacks the uniform supported family described at the end of Section 12. This is a failed search, not an impossibility theorem.
+
+No necessary or minimal change to the original definitions has therefore been established. The explicit certificate completion of Section 8 and the source-level consumer of Section 6 remain proved **conditional** implications, with their admission hypotheses unverified for the actual kernels. The added statements in this resumption do not close row 88, remove the heavy-wall reversal test or establish the support hypothesis of floor screening. The route decision and scientific status are unchanged.

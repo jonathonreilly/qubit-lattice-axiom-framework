@@ -10,7 +10,7 @@ d7043777d) for its reader `library/a2-layers.md` (Claude). The outline `YM4_sket
 into a scratch folder and not committed; outline line numbers below refer to it. Gate by hand, one reader, not an
 audit, grants no status. No numerical job was run.
 
-Status: in progress, written section by section.
+Status: complete (all eight sections gated; summary at the end).
 
 ## 4. Exact transfer between the two gauge projections: ADVANCE
 
@@ -183,3 +183,71 @@ and (9.3) lifts, and (10.4) as the template for its Theorem 2.
 One identification is not re-derived here: this chart term equals the outline's C_V^T E^(2)[H_1^T J] C_V.
 `a2-layers` §8.2(c) correctly lists it as a consumer statement. **For the reader:** only the bound on this term
 is used ("§11, last step"), and the bound holds whichever identification is used.
+
+## 12. Complex half-gap at nearby physical critical pairs: ADVANCE (for the subcase (12.1))
+
+- **(12.3)-(12.5).** In (12.3), the commutator of two translated covariant differences is the adjoint
+  plaquette holonomy, of size alpha_0 eta^2 sigma^{-2}; divided by eta^2, it costs C alpha_0 at sigma = 1. (12.4)
+  uses d_U D_U z = curvature times z and ||D z||^2 <= ||z|| ||Delta z||. For (12.5), the lower bound goes through
+  h = h_0 + D z: ||h_0||_1^2 <= C beta~ by (10.4) and (9.6), and ||Delta z|| <= ||R D^* h|| + ||D^* h_0||.
+- **Cauchy step, (12.6)-(12.9).** (8.4)-(8.7) hold on the whole complex disc, by (8.2) with complex E.
+  E_W = E^0 (Q_W E^0)^{-1} has Neumann series in both l^2 and l^1. omega_W = E_W^T J_W follows from the
+  holomorphic duality. The l^1 -> L^1 bound gives (12.8).
+- **Site Gram.** I checked <G'_U r_U^T b, M_U E_s b> = <r^T b, E_s b> = ||b||^2, so B_U >= C^{-2}. The lift E_s
+  (C^2 bump with mean one, centre-supported for n < 128) has ||M_U E_s b|| <= C_L ||b||. In the complex case
+  r_W r_W^T = 1 holds for the bilinear transpose, because Ad(g) preserves tr(XY) for g in SL(2,C).
+  r_W G'_W R_W = 0, so S_W h = h - D_W z with z in ker r_W, and S_W^T beta_W S_W = beta_W follows from the
+  holomorphic (10.5).
+- **(12.10)-(12.12).** I checked Q_W T = Q_U for T = 1 + E_W(Q_U - Q_W), and the bound S_{1,U} <= C by testing
+  with E_U b.
+- **§7, read here and by a2-layers.** I redid (7.1). Z^T Z = I, ||D|| <= e/(1-e), and S = S_0^{1/2}(I+D)^{-1}S_0^{1/2}
+  give e/(1-2e). For e <= 1/4 the Hermitian real part is at least half.
+
+**Not load-bearing.** §10 (last paragraph) and §12 identify G_1^{-1} = K exactly. For this they use the outline's
+gauge identity Delta^W - Delta'_pi[J(U)] = S^T Delta^W S (L10187; a2-layers lists it with PX94-95 as unchecked),
+which I did not re-derive. The gap does not need it. Without it, G_1^{-1} - K = -Delta'_pi[J] + D^2q[omega]
+- S^T D^2q[omega] S. That is O(gamma_0) in the H^1 form: the explicit formula (L10180) is bilinear in
+lambda = G'R D^T(.) and D lambda, both bounded in L^2 by ||.||_1, times |J|; (8.10) and (12.10) bound the rest.
+§7 then absorbs it.
+
+**For the reader:** a2-layers Theorem B (7.6(a)) reads (8.4)-(8.7) on a complex disc and §5's analytic local maps.
+Its 7.2(ii) reads E_s. Both reads are as proved here.
+
+## Verdicts
+
+| Section | Verdict | Read by `a2-layers` |
+|---|---|---|
+| 4 transfer between projections | ADVANCE | no (replaced on layers) |
+| 5 one-step chart, (5.2)-(5.7) | ADVANCE | Lemma N; Theorem B(a) |
+| 6 explicit family, neutral gap | CORRECT-NO-ADVANCE | completion of the square only (correct) |
+| 8 second jet (8.3)-(8.10) | ADVANCE | yes |
+| 9 on-shell multiplier (9.1)-(9.2), (9.6) | ADVANCE | Theorem 4 only |
+| 10 uniform-torus Landau form, (10.1)-(10.5) | ADVANCE | (10.2), inhomogeneous lift, (10.4) as template |
+| 11 real A2 on the uniform torus, (11.1)-(11.5) | ADVANCE | (11.2), last step |
+| 12 complex half-gap at nearby physical pairs | ADVANCE (subcase (12.1)) | E_s, (12.5), (12.6) mechanism |
+
+Outside the list but also read: (2.1) is correct (zero extension). (7.1) is correct.
+
+**First failing step: none.** No defect breaks a statement that `a2-layers` reads. Non-breaking remarks:
+1. (5.7) does not say whether the term DGF(W)[D^2 Psi_W] at non-axial complex W is in E_W. It is O(rho) either way.
+2. The exact G_1^{-1} = K in §§10 and 12 rests on the unchecked outline gauge identity. It is not needed for the
+   gap (see §12 above).
+3. In §11, the chart term = C_V^T E^(2)[omega] C_V is the outline's consumer identification (a2-layers §8.2(c)).
+   Only its bound is read.
+
+## What this gate does and does not move
+
+It moves `sa-ledger.md` #2 (A2) on one half of row 90's gate requirement: the a2-curved inputs that a2-layers
+reads are confirmed by one other-provider read (Claude on a Codex text; one reader, not an audit).
+
+It leaves open:
+- the gate of a2-layers' own Sections 3-7 (row 92);
+- the outline identities a2-layers §8.1 uses unchecked (PX4, PX31-38, PX43-47, PX94-95, PX99-100, PX113,
+  PX114-119), including the gauge identity above;
+- the identification of A with the next-step effective Hessian (PX97-104, consumer side).
+
+a2-curved itself proves A2 only on the uniform node-free torus (real, at physical critical pairs; complex,
+for nearby physical pairs). The layered, off-shell and full-complex cases are a2-layers' claims and are not
+gated here.
+
+Status: complete. Only this file was written. No numerical job, no subagent.

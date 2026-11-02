@@ -428,9 +428,9 @@ routes are risky.
 
 ## Literature
 
-Use literature only when the user passes `--literature` or the route requires a
-known theorem/experimental comparator. Prefer primary sources and stable math
-references. Any literature value, theorem, or convention must be entered in the
-assumption/import ledger with its role: bridge, comparator, explicit convention,
-or non-derivation context. See
+Every route starts with the written literature search of
+`SCIENCE_WORKFLOW.md` section 2, rule 9, before it builds. Prefer primary
+sources and stable math references. Any literature value, theorem, or convention
+must be entered in the assumption/import ledger with its role: bridge,
+comparator, explicit convention, or non-derivation context. See
 [`references/literature-bridge-protocol.md`](literature-bridge-protocol.md).

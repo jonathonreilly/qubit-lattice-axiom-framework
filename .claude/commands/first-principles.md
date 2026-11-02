@@ -42,6 +42,10 @@ disclosed conditional target itself.
   (note, runner output, ledger row) and domain/quantifiers.
 - Established physics may NAME the target (disclosed comparator). It may
   never justify a derivation step.
+- Run and record the literature search first
+  (`docs/ai_methodology/SCIENCE_WORKFLOW.md` section 2, rule 9). Published
+  mathematics is used and credited, re-derived on our structures before any
+  step rests on it (section 10); never re-invent it.
 
 ### 2. Build the Premise Ledger
 - List every axiom, approved primitive, retained theorem (with

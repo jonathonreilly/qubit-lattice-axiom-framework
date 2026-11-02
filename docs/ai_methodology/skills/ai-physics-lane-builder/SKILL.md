@@ -24,7 +24,9 @@ and the caveat. Do not use sales language to promote an open lane.
 ## Workflow
 
 1. **Ground first.** Inspect current notes, runners, logs, lane maps,
-   controlled vocabulary, publication surfaces, and relevant no-go history.
+   controlled vocabulary, publication surfaces, and relevant no-go history,
+   then run and record the literature search
+   (`docs/ai_methodology/SCIENCE_WORKFLOW.md` section 2, rule 9).
 2. **Define the lane question.** State one target, current status, existing
    evidence, and smallest honest forward step.
 3. **Set status gates before work.** Define what would make the result

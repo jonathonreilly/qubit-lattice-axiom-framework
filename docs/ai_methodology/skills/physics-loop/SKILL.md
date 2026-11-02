@@ -35,7 +35,7 @@ and never writes audit verdicts; its deliverable is a reviewable milestone PR.
 | `--runtime DURATION` | Unattended budget, e.g. `6h`, `24h`. If execution is wanted and this is absent, ask; there is no default |
 | `--target retained\|exact-support\|bounded-support\|no-go\|best-honest-status` | Default `best-honest-status` |
 | `--loop SLUG` | Loop pack slug (`--workstream` is a legacy alias) |
-| `--literature` | Allow targeted literature review |
+| `--no-web` | Skip live search; the literature search still runs offline, marked unverified |
 | `--max-cycles N` | Optional cap on major cycles |
 | `--checkpoint-interval DURATION` | Default `30m` |
 | `--deep-block DURATION` | Planning allocation for one hard problem, default `90m`; evidence may justify an earlier pivot |

@@ -233,7 +233,8 @@ there is no shared board to conflict on:
 | `GOAL.md` | Target lead | Target contract, critical path, interface statements with their producers and consumers, model floors, its own lead and lease |
 | `parts/<part>.md` | Part lead | Lead and lease, state of attack, obligations, requests, the living text |
 | `parts/<part>--<route>.md` | That attempt's session | One attempt beside the part: lead, lease, state of attack, text |
-| `library/<lemma>.md` | Its author | A rebuilt literature lemma, with credit |
+| `library/<lemma>.md` | Its author | A rebuilt published lemma, with credit |
+| `library/lit-<topic>.md` | Its searcher | One literature search record (`SCIENCE_WORKFLOW.md` section 2, rule 9), including a search that found nothing |
 | `gates/<statement>-<commit>.md` | Its checker | One research-gate report |
 
 A part file opens as below. The state of attack gives the current formulation,
@@ -319,10 +320,13 @@ Session logs and provider resume commands are conveniences, never the record.
 ### Disagreement
 
 - About a route or an interface: the target lead states the fork and its decisive
-  test, runs a probe on each side, decides on the result and records the dissent
-  in `GOAL.md`. The owner is not asked.
-- If the test does not decide: both routes stay open with reopen conditions, and
-  the target lead sets their budgets.
+  test, runs a probe on each side, decides on the result and records in `GOAL.md`
+  the choice, its reason, the evidence that would reverse it, the date and any
+  dissent. The owner is not asked. The lead revisits it whenever a result touches
+  it.
+- If the test does not decide: both routes stay live, hardest open step first,
+  and the target lead sets their budgets. A route is retired only when a gate
+  shows its hardest step fails or the other route closes that step.
 - About whether a step is right: rank and majority decide nothing
   (`SCIENCE_WORKFLOW.md` section 2, rule 8). The statement stays `unchecked` until
   a checker on a different path settles it.
@@ -347,8 +351,10 @@ leaf: keep it in one sustained attempt, or race it.
   Rounds in `proof-search-governance.md`. The part lead ends it and keeps the failed
   routes in the state of attack.
 - **Bounded task.** A `workhorse` dispatch with a frozen statement and a named
-  consumer. It closes only when the statement is proved as written. A
-  counterexample or an exact missing obligation goes back to the lead.
+  consumer. It closes when the statement is proved as written or killed by a
+  counterexample. A smaller statement it reduces to is attacked in the same
+  session; only a spent budget sends the exact missing obligation back to the
+  lead.
 - **Probe.** A cheap test of a fork or a risk, with its decisive outcome stated
   first.
 
@@ -371,7 +377,7 @@ counts as independent. It answers three questions:
 
 | Signal | Means | Next step |
 |---|---|---|
-| `advance` | Right, and yes to the other two | Label it `implication` or `discharged`; consumers may build on it |
+| `advance` | Right, and yes to the other two | Label it `implication` or `discharged`; consumers may build on it; it is frozen, and only a `wrong` signal reopens it |
 | `correct-no-advance` | Right, but no smaller or delivers nothing | Keep it; it may be labelled `implication`, the count is unchanged and the attempt continues |
 | `wrong` | Not right | Fix or withdraw it and mark its dependents affected |
 
@@ -380,8 +386,9 @@ At assembly of a theorem target the checker also runs the Candidate-Proof Audit 
 
 ### Progress
 
-Report the number of obligations on the critical path that are not yet
-`discharged`, by name. `lab_ops.py status` computes it. A new named obligation
-raises it; a rename does not lower it. Notes, lanes and PRs written are not
-progress. A frontier target with no critical path reports the concrete changes of
+Report the closures since the last report (statements discharged and gated,
+statements killed) and the number of obligations on the critical path that are
+not yet `discharged`, by name. `lab_ops.py status` computes the count. A new
+named obligation raises it; a rename does not lower it. Notes, lanes and PRs
+written are not progress. A frontier target with no critical path reports the concrete changes of
 `SCIENCE_WORKFLOW.md` section 7.

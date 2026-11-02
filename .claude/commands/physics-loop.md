@@ -6,14 +6,14 @@ and the references its routing table requires; this file adds no policy.
 ## Invocation
 
 ```text
-/physics-loop "<science goal>" [--mode plan|run|resume|status|campaign] [--runtime DURATION] [--delivery milestone|block] [--target STATUS] [--literature] [--max-cycles N] [--deep-block DURATION] [--no-pr]
+/physics-loop "<science goal>" [--mode plan|run|resume|status|campaign] [--runtime DURATION] [--delivery milestone|block] [--target STATUS] [--no-web] [--max-cycles N] [--deep-block DURATION] [--no-pr]
 ```
 
 Examples:
 
 ```text
 /physics-loop "retire the DM/leptogenesis 16v support import" --mode plan
-/physics-loop "close the Koide Q bridge or prove the next no-go" --mode run --literature --runtime 12h
+/physics-loop "close the Koide Q bridge or prove the next no-go" --mode run --runtime 12h
 /physics-loop "work the best open science opportunities" --mode campaign --runtime 24h
 /physics-loop --mode resume --loop dm-leptogenesis-16v
 ```
@@ -31,9 +31,10 @@ Examples:
    `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` and
    `docs/audit/data/axiom_premise_nodes.json` before naming imports or walls
    (`references/CLAIM_STATUS.md`).
-5. Score a route portfolio and run only routes that can move claim state
-   (`references/DISCOVERY.md`). Apply V1-V5 to positive proposals and N1-N8 to
-   negative claims (`no-go-discipline`).
+5. Run and record the literature search first, then score a route portfolio
+   and run only routes that can move claim state (`references/DISCOVERY.md`).
+   Apply V1-V5 to positive proposals and N1-N8 to negative claims
+   (`no-go-discipline`).
 6. Never write bare `retained`/`promoted`; `proposed_retained` only with a
    passing certificate and an explicit independent-audit handoff.
 7. Checkpoint the pack throughout. On a route stop, demote/backlog, refresh the

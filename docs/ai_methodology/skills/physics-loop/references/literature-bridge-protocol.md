@@ -1,17 +1,14 @@
 # Literature Bridge Protocol
 
-Use literature to sharpen a physics loop, not to smuggle external physics into a
-derivation.
+Build on published work; never let an unverified external step carry weight in
+a derivation.
 
 ## When To Use
 
-Use targeted literature review when:
-
-- the user passes `--literature`;
-- a route depends on a known mathematical theorem;
-- a physical comparator or standard convention must be cited;
-- Nature-grade review would ask whether the claim conflicts with known results;
-- prior repo work explicitly names a literature bridge or no-go family.
+Always. Every route, lemma lane or repair starts with a literature search, run
+far and wide for its statement and its method, before it builds
+(`docs/ai_methodology/SCIENCE_WORKFLOW.md` section 2, rule 9). `--no-web` only
+moves the search offline, marked unverified.
 
 ## Source Rules
 
@@ -48,7 +45,9 @@ the loop retires that import.
 
 ## Output
 
-Record literature in `LITERATURE_BRIDGES.md`:
+Record each search first: where it looked, the exact statements found, how close
+each is to ours and whether its proof is accessible. A search that finds nothing
+is recorded too. Then record each item used in `LITERATURE_BRIDGES.md`:
 
 | Source | Exact item used | Role | Import class | Affected claim | Derivation impact |
 |---|---|---|---|---|---|

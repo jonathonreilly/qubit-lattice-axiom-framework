@@ -49,10 +49,16 @@ favorable verdicts, note counts or PR counts.
    constant, is not independent. Adversarial checks challenge premises, domains,
    normalization and physical identification, not prose. Record disagreement
    instead of resolving it by majority.
-9. **Check novelty, then judge on merit.** Search existing repo work and the
-   literature to locate the real gap and avoid duplicating known results.
-   Novelty neither establishes nor discredits correctness; prior publication is
-   not a prerequisite.
+9. **Literature first; build on published work.** No route, lemma or repair
+   starts building until a search, run far and wide, of the repo, open PRs and
+   the literature has looked for its statement and its method. Write each
+   search down in the target folder: where it looked, the exact statements
+   found, how close they are and whether the proof is accessible. Record a
+   search that finds nothing too, so nobody repeats it. Use what is found and
+   credit its authors by name; prefer filling a published open obligation over
+   a new route. An independent derivation earns nothing; independent checking
+   (rule 8) still applies, and using a result means verifying it (section 10).
+   Novelty neither establishes nor discredits correctness.
 
 ## 3. Formal verification (Lean)
 
@@ -80,7 +86,8 @@ new repository bridges.
 | Formal audit | Runs only for a TOE candidate or a standalone proof the owner wants to publish, over that result's dependency closure. Routine research does not wait for audit; preservation guards apply where affected live judgments exist. Mechanical validation never invokes an auditor or grants status | 2026-10-30 |
 | Landing review | One independent fast reviewer per coherent unit (owner's Codex choice: Astra low), escalating unresolved mathematical or premise questions to the strongest reviewer (Astra xhigh). The executable model contract lives in `skills/review-loop/SKILL.md` | 2026-09-08 |
 | Original mathematics | Explicitly authorized within the user's task | 2026-10-08 |
-| Literature lemmas | Rebuilt with credit; a citation is attribution only (section 10) | 2026-10-29 |
+| Published work | Searched first and on record; built on with credit; every step the argument uses is verified here (section 2 rule 9, section 10) | 2026-11-02 |
+| Lane output | Closed proofs or explicit counterexamples; lanes run to closure; route choices recorded with reasons (section 7) | 2026-11-02 |
 | Questions for the owner | Axiom edits, public posts, spending and pace only; scientific forks get probes (section 10) | 2026-10-30 |
 
 A later explicit owner choice overrides this table. Deferring audit never
@@ -105,7 +112,7 @@ land as established results.
 
 | Stage | Work product | Completion evidence | Authority boundary |
 |---|---|---|---|
-| Select | Exact target, current gap, alternative routes, decisive test | Current source and dependency snapshot; novelty search | Planning does not establish a claim |
+| Select | Exact target, current gap, alternative routes, decisive test | Current source and dependency snapshot; written literature search; route choice with reason | Planning does not establish a claim |
 | Develop | Source note and reproducible evidence on a branch | Proof obligations, honest scope, independent checks of load-bearing steps | Author proposes; no audit verdict or direct landing |
 | Author check | Corrected packet and reproduction instructions | Mechanical checks actually run; omissions named | Self-check is not independent review |
 | Review | Findings and fixes on a frozen source revision | Independent reviewer confirms the final content; integration gates pass | Review decides readiness and lands only within the requested scope |
@@ -142,23 +149,43 @@ Record this contract in the existing goal or handoff file (not a new packet):
 Target and quantified domain:
 Current main revision and source/claim identifiers:
 Accepted premises and separately supplied conditions:
-Closest existing result and exact missing obligation:
+Literature search record; closest published or repo result and exact missing obligation:
 New construction, proof mechanism, or discriminating test:
 Success witness / counterexample / inconclusive outcome:
 Downstream question this would resolve, or frontier-discovery value:
-Next decision and condition for reopening an exhausted route:
+Route chosen, why, and the evidence that would reverse it:
 ```
 
-Prioritize load-bearing gaps with plausible decisive tests, and keep materially
-different routes open. Graph fanout is a prioritization signal, not a measure
-of importance. Do not churn small variants because they package easily; a short
-standard proof that closes a real obligation is valuable.
+Prioritize load-bearing gaps with plausible decisive tests. Graph fanout is a
+prioritization signal, not a measure of importance. Do not churn small variants
+because they package easily; a short standard proof that closes a real
+obligation is valuable.
 
-Report progress as concrete changes: a proved lemma, discharged hypothesis, new
-falsifier, eliminated counterexample class, validated observable map, or
-remaining terminal obligation. Never report a percentage of TOE completion. A
-valid conditional theorem proves an implication, not that the world satisfies
-its hypotheses.
+**Route decisions.** Our route and a published one are both candidates, step by
+step; neither is the default, and we follow theirs only where it is better.
+Record each choice with its reason, the evidence that would reverse it and the
+date, and revisit it whenever a result touches it. Where the evidence does not
+clearly favour one, both stay live, hardest open step first. Retire a route only
+when a gate shows its hardest step fails or the other route closes that step.
+
+**Methods.** Lay out the complete skeleton of the argument, then attack the step
+it is most likely to die on first; routine steps wait. Test machinery on a
+ladder of easier models of the same step: what works there is the first
+candidate, and what fails there is a cheap kill. For a standard, low-risk step,
+write one full draft, distil it to a minimal proof, then gate it. Freeze what
+passes its gate; only a `wrong` signal reopens it.
+
+**Only closures count.** A lane's output is a closed proof with every step
+written, or an explicit counterexample to a statement. Lists of gaps, unchecked
+inputs and scope caveats are not results; give them one short paragraph at
+most. A lane that reduces its target to a smaller statement attacks it in the
+same session, or tries to build its counterexample, and hands off only when the
+budget is spent, saying how far it got. Notes hold the proof, the counterexample
+or the exact point where the argument fails, without restating the setting.
+Report progress as closures: lemmas proved and gated, hypotheses discharged,
+statements killed, observable maps validated, and the terminal obligations that
+remain. Never report a percentage of TOE completion. A valid conditional
+theorem proves an implication, not that the world satisfies its hypotheses.
 
 Use the existing N1-N8 negative-claim packet contract honestly where required.
 Its five-route minimum is a mechanical submission rule, not a completeness
@@ -215,20 +242,30 @@ all work:
   failed probe is a failed search (section 2, rule 7), never a no-go. An action
   only a person can take, such as obtaining a source, is a request that names
   what it blocks; other work continues.
-- **Literature lemmas are rebuilt.** A step that needs a literature lemma rebuilds
-  it as a library entry with credit to its authors. A citation is attribution and
-  carries no weight in the argument; until the rebuild exists the step is an open
-  obligation. Section 3 covers provider Lean-verified theorems.
+- **Verify what you build on.** Reading published work is not accepting it. Each
+  statement the argument uses from the literature or an outside project is
+  re-derived as a library entry, credited to its source, labelled like our own
+  work, and passed by a research gate from another provider, where one is
+  available, before anything rests on it. A citation, and the source's own labels such as "proved", carry
+  no weight; until the rebuild passes, the step is an open obligation. Section 3
+  covers provider Lean-verified theorems.
 - **Research gates grant nothing.** A research gate is the independent check of
-  section 5, held at a fixed point in the Develop stage. Its signals (`advance`,
+  section 5, held at a fixed point in the Develop stage. It redoes the argument
+  to find errors and reports the explicit failure or confirms the step; it does
+  not catalogue inputs unless one is false or unavailable. Its signals (`advance`,
   `correct-no-advance`, `wrong`) and the obligation labels in a target folder
   steer research and nothing else. They are not a review PASS, an audit verdict
   or a status, and they stay out of ledger fields, PR titles, note status lines
   and audit packets. Landing still goes through review-loop, and audit stays
   independent of both.
-- **Public claims.** A public claim needs one clean document, a line-by-line
-  independent review of its whole dependency chain, and the owner's approval of
-  the exact text. It states the actual standing of what it claims.
+- **Public claims and outside projects.** A public claim needs one clean
+  document, a line-by-line independent review of its whole dependency chain, and
+  the owner's approval of the exact text. It states the actual standing of what
+  it claims. A post to an outside project whose work we use carries only an
+  actual error confirmed by a gate here, or a gated proof that visibly helps it,
+  with the same approval; gaps, missing references and notation stay in our
+  notes. Credit by name everyone whose work helped, including other providers'
+  sessions.
 - **Launching jobs.** Before a long worker or any numeric job, run
   `python3 scripts/lab_ops.py preflight`, which checks disk, memory, load, model
   floor and what the sandbox allows. A required check that cannot run is reported

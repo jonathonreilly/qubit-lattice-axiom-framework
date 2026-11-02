@@ -7,8 +7,50 @@ Queue row 61, mapped side. Pinned at commit 9793658b6. Author: Anthropic
 claude-opus-5-5, effort max, Mac mini worker, 2026-11-02. Same-model work:
 not independent in model, not a gate, not an audit, no status.
 
-Status: in progress; sections are written as they are finished. The result
-summary at the top is filled in last.
+Status: finished 2026-11-02. **STOPPED, with a strictly smaller
+inequality, (REL) of Section 4, and inside it (REL-Phi).**
+
+**Firewall.** Mapped side. Read only mapped-side material (the mapped file,
+its excess part `parts/hard-core--excess.md`, `library/`), FINISH.md and
+GOAL.md, as listed at the end; no file excluded for the mapped side in
+FINISH.md, no gate file, no Sussman-Alpoge text, no literature.
+
+**Result.**
+1. **Lemma NC (discharged, hand proof; kill test confirms).** The homotopy
+   primitive hG of `seam-quadratic-c` is not critical in d = 4: on the
+   locked-pair field of `seam-nlpay`, sum_b |hG(b)|^4 >= (m/3072) ||G||_2^4,
+   B = 2m + 1, from strings of length about 2B along the first tensor axis.
+   So hG does not pay the fourth moment of (SEED) from energy: for the class
+   endpoints (locked pair, identity), with one parent, the path-gauge
+   alignment violates (NL-pay) once B a^2 is large against C_rel(L). That respects the
+   locked-pair example; it refutes nothing about the specified U, T.
+2. **The path gauge itself is fine (Lemma PG, discharged).** For any
+   parent-preserving primitive H, h = H - T_1 Q_path H is a critical
+   representative in the path gauge, and with the root gauge of (ALIGN)
+   carrying the contour averages at the top centres, the linear seam has no
+   contour term and keeps the constant 62256/r^2. Lemma GG (discharged): the
+   linear seam works in any parent-preserving gauge with a local L^2 bound.
+3. **(PATCH) is not needed**: one global relative field has no transition
+   term. Q1: yes.
+4. **Theorem GN (implication).** Given (REL), one global relative field
+   U^g = exp(H/B) T with g = 1 at the top centres, with local L^2 bounds of
+   absolute constant, L^4 bounds of constant C(L), contour averages at the
+   top centres bounded by the local energy, and energy at most C_E f^2 per top
+   cube, and given the composite estimates (CMP) of Lemma AN1 at the trial,
+   (GLUE-E) holds at the flat background: M_n(X_D) = V exactly, every
+   intermediate image class, A_s <= 2.56 at r = 2480 C_2, an exponential
+   kernel, and (RATE-exact) for every nu < nu_0 with nu_0 absolute. Every
+   nonlinear error is C(L) f or C(L) f^2 relative (Q3: yes); the only fatal
+   L-dependence would be in the L^2 constant C_2.
+5. **The stop.** (REL) concerns the pair (U, T) alone: no D, no cutoff, no
+   correction, no class check. Its clauses other than (REL-Phi) are what mapped
+   Text 5.3 (R2), (R3) claim for the class lift (implications from Theorem F,
+   not reviewed), needed here at the iterated trial in one global gauge.
+   **(REL-Phi) has no supplier:** the composite contour average of the
+   relative field at each top centre, a centre at every level, bounded
+   depth-uniformly by the local energy. L^4 control does not give it; a
+   W^(1,4) bound would. No counterexample to (REL-Phi), (NL-pay) or (GLUE-E)
+   for the specified U, T was found.
 
 ## 1. The statement tested, and criteria fixed before any computation
 
@@ -76,7 +118,8 @@ fine bonds in direction 1 based at c + e_2 and c - e_2,
     H_0 := a (delta_(b_+) - delta_(b_-)),     G := dH_0.
 
 **Lemma NC.** For every odd B >= 3 (on Z^4, or on a torus with at least 3
-blocks along axis 1 and at least 4 sites along axes 2 to 4):
+blocks along axis 1, at least 4 sites along axis 2 and at least 3 along axes
+3 and 4):
 (a) dG = 0, C_B G = 0, Q_path H_0 = 0, and ||G||_2^2 = 12 a^2.
 (b) hG = H_0 - d(h H_0), and |hG| > a/4 on at least 12 m fine bonds, none of
     which is b_+ or b_-.
@@ -432,10 +475,12 @@ the identification of the fixed point with the class minimizer (item (o) of
 response bound in the top flux into one in the local energy (a top plaquette
 of angle theta' forces fine energy about theta'^2 in its shadow: abelian
 linear case by Lemma K (c) and Cauchy-Schwarz; nonlinear case needs (CMP)).
-**(REL-Phi) is not supplied by any statement I found.** It is a line-integral
-bound at top centres (Lemma CT, remark (b)). The H^2 bound of (R3), proved
-there in local Landau gauges on boxes, would give it after a comparison of
-the local gauges with the global one; that comparison is not written.
+**(REL-Phi) is not supplied by any statement I found.** It bounds the size
+of the root gauge of Lemma PG, and it is a line-integral bound at top centres
+(the remark after Lemma CT). The H^2 bound claimed in (R3), derived there in
+local Landau gauges on boxes (implication, not reviewed), would give it after
+a comparison of the local gauges with the global one; that comparison is not
+written.
 
 *Why (REL) is strictly smaller than (GLUE-E).* It concerns the pair (U, T)
 alone: no set D, no cutoff, no competitor, no parent correction, no class
@@ -512,10 +557,12 @@ s_p := B^-1 sum_(b in boundary p) |H_b|. With |v + e|^2 <= (1 + eps)|v|^2 +
     a_Y(p) <= (1 + eps)[chi_p a_T(p) + (1 - chi_p) a_U(p)]
               + (1 + 1/eps)[(4/(r^2 B^2)) s_p^2 + s_p^4],
 
-with equality a_Y = chi_p a_T + (1 - chi_p) a_U when chi is constant on the
-four bonds. Counting four bonds per plaquette and six plaquettes per bond,
-sum_p (4/(r^2 B^2)) s_p^2 <= (96/r^2) ||H||_(L^2)^2 and
-sum_p s_p^4 <= 384 ||H||_(L^4)^4, both over the bonds where chi varies.
+and a_Y = a_T exactly where chi = 1 on the four bonds, a_Y = a_U where
+chi = 0 on them. (Where chi is constant but strictly between 0 and 1 the
+cutoff term vanishes and the s_p^4 term remains.) Counting four bonds per
+plaquette and six plaquettes per bond, sum_p (4/(r^2 B^2)) s_p^2 <=
+(96/r^2) ||H||_(L^2)^2 and sum_p s_p^4 <= 384 ||H||_(L^4)^4, both over the
+plaquettes on which chi is not identically 0 or identically 1.
 
 *Step 3 (defect of the seed; implication from (CMP)).* delta(c) :=
 log(M_n(Y)(c) V(c)^-1) vanishes unless the composite support of c, within
@@ -629,7 +676,7 @@ that is the one place where an L-dependence would be fatal.
 | The nonlinear twist of the root gauge, size f abs(Psi) | diagnostic, not a theorem |
 | (NL-pay) at the flat background | implication from (REL-2), (REL-4), (REL-E) |
 | Theorem GN: (GLUE-E) with M_n(X_D) = V exactly, class at every level, A_s <= 2.56 at r = 2480 C_2 | implication from (REL) and (CMP), at the level of each term |
-| (RATE-exact) | implication; nu_0 absolute if and only if C_2 and delta are |
+| (RATE-exact) | implication; nu_0 absolute if C_2 and delta are (for this construction an L-dependent C_2 would force r to grow with L) |
 | (REL) | gap; (REL-Phi) has no supplier; the rest is (R2), (R3) of mapped Text 5.3 moved to the trial T (implications from Theorem F, not reviewed) |
 
 **Answers to the queue row.**
@@ -709,7 +756,8 @@ attempted; the frozen-data version.
 4.2 and 5; `parts/hard-core--mapped.md` Text 1, 3.1, 3.2 and Text 5.3 items
 (R1) to (R3) with the status paragraph, and grep lines of its Obligations
 and Requests; `parts/hard-core--excess.md` 1.1, 1.2 and 2 (2.1 to 2.3);
-`library/sector-values.md` from Step 1 of Section 3A to Lemma FALL;
+`library/sector-values.md` lines 125 to 172 (from Step 1 of the excess symbol
+to Lemma FALL);
 `library/analytic-lift.md` from the start to Prop AN3;
 `library/block-poincare-energy-package.md` Theorem 7 and the list after it;
 `library/relative-density-bound.md` the Numbers paragraph, Lemma 1, and grep

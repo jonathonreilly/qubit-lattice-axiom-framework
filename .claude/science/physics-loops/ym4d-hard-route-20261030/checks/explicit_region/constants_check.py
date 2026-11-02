@@ -37,7 +37,7 @@ for k in np.logspace(0, 5, 61):
     worst1 = min(worst1, ratio)
     if ratio < 1.0:
         print("P1 FAIL", k, ratio); fails += 1
-print(f"P1 worst of 8 k E[1-u] = {worst1:.4f} (need >= 1; large-k limit is 8 * 3/(2) * ... )")
+print(f"P1 worst of 8 k E[1-u] = {worst1:.4f} (need >= 1)")
 rss_guard()
 
 worst2 = math.inf
@@ -81,7 +81,7 @@ for L, xK, T in [(3, 50.0, 0.5), (5, 100.0, 0.1), (61, 400.0, 0.02)]:
     B = 0.372 * math.log(L)
     assert 12 * B * T * T <= 2 * math.log(L)
     K0 = (6 * xK * T * T + math.log(192 / T**3)) / math.log(L)
-    print(f"L={L} x_K={xK} T={T}: K_0 = {K0:.1f}; log(nq) at 2 K_0 = {2*2*K0*math.log(L)/2 - 12*xK*T*T + math.log(T**3/192):.1f}")
+    print(f"L={L} x_K={xK} T={T}: K_0 = {K0:.1f}; lower bound on log(nq) at K_0 = {2*K0*math.log(L) - 12*xK*T*T + math.log(T**3/192):.1f}")
 
 print("RESULT", "PASS" if fails == 0 else f"FAIL ({fails})")
 sys.exit(0 if fails == 0 else 1)

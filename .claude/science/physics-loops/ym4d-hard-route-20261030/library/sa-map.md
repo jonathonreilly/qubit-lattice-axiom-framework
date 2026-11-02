@@ -50,7 +50,7 @@ look for is in the outline as (1b) Theorems 3-4, outlined and unproved
   debt: e.g. Package C's 2.8-2.13 sit inside catalogue C1-C4, 4.11 inside D1,
   7.5/7.6/7a.1.8 inside F2-F3, Package A inside A1-A4. Both layers are mapped
   below; the catalogue obligations are the "main-line steps outlined rather
-  than proved" of the task (Section 3).
+  than proved" of the task (Section 2).
 
 ## 1. The coded obligations ("Statements still to be proved, by package")
 
@@ -73,9 +73,10 @@ Here: nothing proves it. Bears: `library/rel-phi-c.md` Lemma 1 (composite
 contour average = sum over levels of one-step staircase averages) and Example E
 (a pure gauge of small L^4 norm with contour averages growing like
 (log B)^(3/4)) show that *gauge-dependent* level sums do not close by a
-critical count; 1a.3.2 is gauge-invariant data (averages of U against U_0) in
-the tower axial gauge, so Example E does not refute it, but any proof must use
-the axial normalization, not an L^4 count. Low failure risk.
+critical count; 1a.3.2 bounds the averages of U relative to those of U_0 in
+one fixed normalization (tower axial), where a pure gauge of Example E's kind is
+not available, so Example E does not refute it; any proof must use that
+normalization, not an L^4 count. Low failure risk.
 
 **1a.3.5 (Landau gauge: positivity and the Green bound).** Where: "Lemma 1a.3.4,
 Proposition 1a.3.5 [to be proved; Package A] (the Landau gauge)", l. 7683.
@@ -314,9 +315,10 @@ The outline's main route (H4, l. 4629): "the actual D1 and F2-F3 proof outlines
 must be completed and a sequence of admissible data constructed"; D1 rests on
 Packages A, B, C and E1. The catalogue items below are the steps of that line
 that carry the word "Obligation", or a "Requirement" whose text says its
-hypotheses "must still" be verified. Items the outline says are proved
-(F1, G1, G3, the bootstrap of the energy of averages, the free and flat
-computations) are listed at the end of this section as reusable.
+hypotheses "must still" be verified. Items the outline proves (F1, G1, G3,
+the free and flat computations), and one it argues in full inside an outlined
+section (the energy of the averages), are listed at the end of this section as
+reusable.
 
 **A1, the constrained critical orbit (l. 3811), with the background theorems
 of (1b), l. 9583-9930.** Obligation: for every allowed nested family of
@@ -449,8 +451,11 @@ a level to a later level with a summable tail r(m), uniform in volume and test
 location; used by the age series of (4d) in Theorem 7.1 (l. 26156, "(c1)",
 "(d) Wild histories ... these one-cell bounds must hold uniformly in the
 volume"). Here: `library/explicit-region-two-step.md` ("Persistent regions fail
-at d = 4", for its own mask); **bears with a negative sign, not shown to apply
-to the outline's regions.**
+at d = 4", Prop HOLES) is a warning only: it concerns regions kept alive by raw
+bare-plaquette tests, while the outline tests averaged fields at threshold
+g_t p_0(g_t) and heals components after waiting, so it does not transfer
+(`gates/explicit-region-codex-00f9df685.md`: "Balaban's regions are not shown
+to be that mask"). Nothing of ours proves D3.
 
 **E1, E2 (l. 4197, 4206).** Consistent flow up to first passage; holomorphic
 frozen tuning map with 0 < c <= d x_K/d beta <= C. Here: mapped Lemma FLOW
@@ -469,13 +474,14 @@ three-gluon part), and nothing of ours supplies F2. **F4** (identification of
 the full gauge theory) is open for both: T1 asks for local gauge-invariant
 observables, and our UV-CT, like the outline, uses plaquette sources.
 
-**Proved in the outline and reusable here (not obligations; still to be
-checked by hand before use).** F1, the free lattice-curvature comparison with
+**Proved in the outline, or argued in full there, and reusable here (not
+obligations; still to be checked by hand before use).** F1, the free lattice-curvature comparison with
 gamma = 1/2 (Section l. 1670); G1, link reflection and all-mirror reflection
 positivity for every periodic SU(2) Wilson DLR state (Sections l. 2084, 2698;
 our upper chain Lemma 1.1 rebuilds only the site-plane case after Osterwalder
 and Seiler); G3, a lattice plateau law (l. 3195); the flat exponential kernels
-(l. 9060); and the **energy of the averages** (l. 18206-18290): for every real U,
+(l. 9060); and the **energy of the averages** (argued in full inside the
+Package C outline, l. 18206-18290, not separately tagged): for every real U,
 sum over N_0(S) of a_p(U) >= min{c sum_{p' in S} |dM^t U(p') - 1|^2, e_*}, c, e_*
 depending on L only, by a Schur bootstrap. I read the bootstrap at the level of
 its steps: P has row sums L^2 and column sums L^-2 (I recounted the column sum:
@@ -525,7 +531,7 @@ work):
    trace, l. 7014, Section `ym4:new-one-loop-reduction`).
 6. **The nonlinear "flux forces energy" conversion** that
    `library/seam-nonlinear-c.md` 4.1 lists as missing = the outline's energy of
-   the averages (l. 18206-18290), proved there by a Schur bootstrap from one
+   the averages (l. 18206-18290), argued in full there by a Schur bootstrap from one
    stated one-step inequality (Section 2, end). Theirs is further along.
 7. Our per-creation pricing in `library/rarity-fresh-c.md` (read each rare
    event one level below its own, conditional on the exterior) parallels
@@ -551,7 +557,7 @@ hypercubic limit along a chosen trajectory).
 
 | Rank | Item (outline codes) | Path | Why it ranks here |
 |---|---|---|---|
-| 1 | Renewed-test witness and floor screening of the R operation: Lemma 2.5 part (4) (l. 17712), "A new mark pays outside the old floor" (l. 18334-18415), drop-out mass with the fibred supremum (l. 18130-18205); inside C3 | yes | Only source of the factor that pays for a repeated drop-out; without it waiting need not end and C3 fails. New relative to Balaban (he removes failed components, CMP 122a pp. 181-183). Rests on a background-locality estimate through a collar "of fixed positive width" with the floor's field unknown; our heavy-wall/hw-fine examples are exactly fields beside an old large field. |
+| 1 | Renewed-test witness and floor screening of the R operation: item (4) of "One action and many claimants" after Lemma 2.5 (l. 17712), "A new mark pays outside the old floor" (l. 18334-18415), drop-out mass with the fibred supremum (l. 18130-18205); inside C3 | yes | Only source of the factor that pays for a repeated drop-out; without it waiting need not end and C3 fails. New relative to Balaban (he removes failed components, CMP 122a pp. 181-183). Rests on a background-locality estimate through a collar "of fixed positive width" with the floor's field unknown; our heavy-wall/hw-fine examples are exactly fields beside an old large field. |
 | 2 | Healing and resummation: Props 2.8 and 2.10 (l. 17640, 17842-17990), with A3 across seams | yes | The R_X bound sums "ten resulting terms" by exponential locality across a collar of width c M R-check_k at every depth; this is the nonlinear seam problem where our rows 61-65 all stopped ((GLUE-E), (REL-Phi)/(REL-D), (AR)). |
 | 3 | One simultaneous order of constants: C4, Theorem 2.11 (l. 19435-19470) | yes | Catalogue's own words: "listing its clauses does not discharge it". Every one of our chains hit an order clash (`gates/rarity-fresh-x-0e8a5a4e7.md` D2, m_* >= C_D b_2^2; `library/excess-seam.md`, rate nu fixed before L; `library/fd-local.md`, t_0 >= 10^4 R L^2). Cheap to decide. |
 | 4 | Global genealogy count and the label sum with the logarithm: Prop 2.6 (l. 17719), "Contraction and the count over generations" (l. 18475), Prop 2.13 (l. 22925) | yes | Replaces Balaban's double induction (CMP 122b pp. 384-387, whose p. 387 sentence the outline itself distrusts); the same gain-against-entropy arithmetic failed twice in our rarity line (`gates/rarity-fresh-c-263afacbd.md`). |
@@ -574,7 +580,8 @@ smaller inequality. Each builds on the outline's text and credits Sussman and
 Alpoge (and Balaban).
 
 **Lane 1, `sa-floor` (rank 1; mapped and neutral; max).** Statement, from
-l. 18334-18415 and Lemma 2.5 part (4), l. 17712: *Let X be treated by R at level
+l. 18334-18415 and item (4) of "One action and many claimants" after
+Lemma 2.5, l. 17712: *Let X be treated by R at level
 m with preparation bottom m_flat, old floor F (the level-m_flat cells of
 Omega^c_{m_flat} cap X not touching Omega_{m_flat}) and waiting collar of one
 local cell. Let U be any real field on X^+ compatible with the stored variables

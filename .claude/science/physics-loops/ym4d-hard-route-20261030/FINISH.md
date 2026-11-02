@@ -199,12 +199,22 @@ Owner: "we should build on all published work, not reinvent the wheel - that sho
 - **Our proof first, help when cheap (owner, 2026-11-02):** "its cheap to tell them when we find issues - we just shouldnt go looking for issues if they are not relevant to our lanes. We can share proofs over if the proofs help them out (and we can see how they would help) once we have them and they are validated. We just dont spend extra time on things that are NOT relevant to our path ... help when its cheap to do so, leverage their work wherever possible with attribution." So: every lane serves our proof; we never hunt for their errors outside our lanes; an error our lanes find is reported promptly as an issue; a validated proof of ours that visibly helps them is offered once it has passed its gate. Credit them, and Grok, for every way their work helped.
 - **Reporting errors (owner, 2026-11-02):** the bar is high. Owner: "we should only be posting there if we find actual errors in their work not missing references, or we have actual solid lemmas or proofs to share with them." Post only (a) an actual error, a false statement or a wrong derivation shown by an explicit configuration or calculation and confirmed by a gate here, or (b) a solid lemma or proof of ours, gated, that visibly helps them. Missing references, unproved steps, gaps and notation do not qualify; they stay in `library/sa-findings.md` for our own use. The owner approves each issue's exact text.
 
+## Hard-core standard (lead and owner, 2026-11-02)
+
+Owner: "if that type of thinking and work is going on in our own repo, we may not be being hard core enough in our approach." Measured on 2026-11-02: of about a dozen attack lanes, one closed a statement by hand (`seam-quadratic-c`); the rest ended STOPPED at a smaller inequality, and each stop was handed to a fresh session, which narrowed again. Notes ran 30 to 48 KB, much of it labels, scope paragraphs and lists of unchecked inputs. That is cataloguing, not proving.
+
+- **Proofs and counterexamples are the only output that counts.** A lane's result is a closed lemma, with every step written, or an explicit configuration that kills a statement. Lists of gaps, missing references, unverified inputs and scope caveats are not results; write them in one short paragraph at most.
+- **Run to closure.** STOPPED is what happens when the budget runs out, not a goal. If you reach a smaller inequality you expect to be true, attack it in the same session; if you expect it false, try to build the counterexample. Hand off only when the budget is spent, and then say how far the attack got.
+- **Gates look for errors.** A gate redoes the proof and reports WRONG with the explicit failure, or confirms the step. It does not list every input the step reads unless one of them is false or unavailable.
+- **Short notes.** The proof, the counterexample, or the precise point where the argument fails. No restating the setting the folder already holds.
+- **The lead counts closures.** Each update reports lemmas closed and gated on the critical path, and statements killed, not lanes run.
+
 ## Working efficiently
 
 Measured on the pushes so far: a resumed push carries about 300,000 to 580,000 tokens of context on every step, and 70 to 90 percent of its active time is the model generating text. A fresh, narrow session avoids most of that: the first fresh gate wrote 195,000 tokens for about $8 at API rates, where a resumed push wrote 202,000 for about $219.
 
 - **Hardest first.** Owner, 2026-11-01: go after the hard statements first, to save grinding on the easy base. Work goes to the statement the proof is most likely to die on. A routine hand rebuild, or an elementary citation, waits until a hard-core attempt closes, unless it could be hiding a real gap.
-- **One item, one session.** Stop when the item is done. Do not continue into the next item or tidy up other files.
+- **One item, one session, run to closure.** Stay on the item until it is proved or refuted, including any smaller statement it reduces to, as long as the budget lasts. Do not move to unrelated items or tidy other files.
 - **Do not read whole files.** Part files are 145 to 350 KB, and the folder holds about 1.6 MB of text. Find the statement with `grep -n`, then read the statement, its proof and what it cites.
 - **Try to kill it first.** A short computation with pass and fail criteria written first can save a long argument. Report what a run can and cannot establish. A search that finds nothing does not prove a bound.
 - **Save as you go.** Write your report section by section. A reader that dies at the output limit with nothing saved is a total loss.

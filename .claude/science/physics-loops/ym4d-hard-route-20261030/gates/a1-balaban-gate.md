@@ -5,7 +5,7 @@ lease_until: 2026-11-03T05:02Z
 
 Provenance: Claude Opus 5.5 (claude-opus-5-5), max effort, Mac mini worker, fresh session, statement pinned at d32f4da23. The gated note was written by Codex (row 81). This is one cross-provider read by hand, not an audit, and it grants no status. Balaban's CMP 98, 99 (75-102), 99 (389-434) and 102 were read from the owner's legal copies in `~/ym4d-papers/` (OCR text checked against the PDF where the formula matters); nothing from them is copied here beyond short statements.
 
-Status: in progress; sections are added as they are checked.
+**Result: no step fails.** Every gated section is ADVANCE (9.3 is CORRECT-NO-ADVANCE), conditional on the flat input F0. Both resets of Section 8 are depth-uniform, and every OCR reconstruction listed in Section 11 is confirmed in the scans. Four defects, none breaking: D1, F0 also rests on CMP 89 and its port must recheck the level-0 seam; D2, the layer gap must be chosen after the collar and reset lengths; D3, one identity-theorem sentence in 9.1; D4, wording in Section 6. Details are in Sections 7-8 below.
 
 ## 0. OCR reconstructions (note Section 11), checked against the scans
 
@@ -23,7 +23,7 @@ Rendered from the PDFs (PyMuPDF, scratch folder outside the repository) and read
 | CMP 102 (162): weight (d(y_1,y_2)+1)(L^{j_2} eta)^-1 at rate delta_0/2 | p. 303 | confirmed |
 | CMP 102 (166)-(167): coefficient 1/8 | p. 304 | confirmed |
 
-One reading note, not a defect: the note's Section 6 says the far part of (6.3) uses "the coarse global bound" \|B\| <= CM eps_0. Balaban's (161) uses the axial linear growth \|B(c)\| <= C(d(y_1,c) + M_Delta) eps_0, which is what gives M_Delta = 1 at the central pillar. With the crude bound the far term carries an extra R_1M_1, which is still absorbed by choosing R_1M_1 larger in (163), since x e^{-ax/2} -> 0. Either reading closes.
+The scan of (161) also shows its far term uses the axial linear growth (d(y_1,y_2) + M_Delta) eps_0, not the global bound the note's Section 6 names; see D4.
 
 ## 1. Sections 3.5-3.7: rebuilt CMP 98 and CMP 99 (75-102) inputs
 
@@ -48,7 +48,7 @@ One reading note, not a defect: the note's Section 6 says the far part of (6.3) 
 - The algebra of (3.27) was redone. S = 1 - DG'RD* kills D lambda for lambda in ker Q', and K-hat_1 D G'R f = DRf, so G_1 DR = DG'R. Taking adjoints, RD*G_1 Q* = 0 and RD*G_1 DR = R. Hence Q Pi = RD* Pi = 0 and the fibre inverse needs both subtractions. ran R = D*D ker Q' follows from R being the orthogonal projection onto ker(Q'G').
 - The small-gauge series (3.24) keeps the covariant-Laplacian estimate for the uncorrected G_0: the perturbation is local first order, so Delta T_f^-1 (E T_f^-1)^n stays bounded. It loses that estimate for the Delta'_pi-corrected operators, as Balaban's Theorem 3.12 says. Section 5 uses the Laplacian only for G_0, H_0 and for flat operators, which is consistent.
 - The three-error parametrix (3.25), the C' construction (3.95), and the mass commutator -S*aQ + Q*aS (3.102)-(3.104) are correct as sketched.
-- F0's convention is the default one. CMP 99b (3.16)-(3.19) defines the row mass over b in Lambda_j and the site average Q'_j(U) lambda(y) = sum over B^j(y) of L^{-jd} R(U(Gamma)) lambda(x), which is the note's (7.19) with Balaban's contours. CMP 102 (154) lists only the bond cases with both ends in Lambda'_j or one end in the finer Lambda'_{j-1}. The test discussion after (7) says a missing bond has both ends in Lambda_{j-1}. Both fit only the reading Lambda_j = (bonds touching Omega_j) minus (bonds touching Omega_{j+1}). So Balaban's determining rows omit inward bonds, exactly as the outline's default does. F0 as stated "with his row conventions" is therefore the flat input the default problem needs; the auxiliary-boundary part is supplied separately in 7.9.
+- F0's convention is the default one. CMP 99b (3.16)-(3.19) defines the row mass over b in Lambda_j and the site average Q'_j(U) lambda(y) = sum over B^j(y) of L^{-jd} R(U(Gamma)) lambda(x), which is the note's (7.19) with Balaban's contours. CMP 102 (154) lists only the bond cases with both ends in Lambda'_j or one end in the finer Lambda'_{j-1}. The test discussion after (7) says a missing bond has both ends in Lambda_{j-1}. Both fit only the reading Lambda_j = (bonds touching Omega_j) minus (bonds touching Omega_{j+1}). So Balaban's determining rows in CMP 99a, 99b and 102 omit inward bonds, exactly as the outline's default does. F0, stated "with his row conventions" as CMP 99b's U = 1 case, is therefore the flat input the default problem needs; the auxiliary-boundary part is supplied separately in 7.9. His CMP 96 differs at level 0, which matters only for how F0 gets proved (D1).
 - One provenance correction (defect D1 below): CMP 99b proves Theorems 3.1-3.3 by "repeating the arguments of Sect. 2 in [2]" (p. 398), and its [2] is Balaban, CMP 89 (1983) 571-597, "Regularity and decay of lattice Green's functions". The Hoelder input (3.22) is of that paper's type. F0 is cited-pending on CMP 89 as well as CMP 95 and 96.
 
 ## 3. Sections 4-5: the common chart, the critical equation, second derivatives
@@ -80,3 +80,88 @@ One reading note, not a defect: the note's Section 6 says the far part of (6.3) 
 - *Uniqueness.* Every competitor in U_k(eps_0) enters the chart about U_0 through the gauge theorem with alpha_0 = max(eps_0, C_1 BE) and zero mismatch. The fixed ball r_* is chosen before the data.
 
 No depth factor survives. A grep of the note for "standard", "similar" and "assume" finds nothing used on the critical path beyond F0. The 7.5 alternative is explicitly not used.
+
+## 5. Sections 7.6-7.10: transport to the outline's actual average
+
+Checked against the outline at `31a47c543775` (fetched to a scratch folder): (1b) setup L9593-9657, Theorem 1 L9660-9668, order of choice L9916.
+
+**7.6 (direct row estimates): ADVANCE, given the local gauge (7.10).**
+- Column norm. A fine link lies in at most L of the L^4 straight segments of a row, and in at most two rows, so the one-step column norm is about L^-3 against row norm L. Both norms are submultiplicative, which gives (7.15). For q_j = a_j/s the derivative is n^-1 P_{j,0}, with row sum C and column sum C n^-4.
+- Bootstrap (7.12)-(7.13). It closes in the separated form. The curvature recursion has only the multiplicative factor (1 + C_L alpha_r). The potential recursion's inhomogeneous term C_L omega_r / t_{r+1} sums to a fixed multiple of alpha, so K is chosen after that transfer and alpha after K.
+- (7.17) recounted. For fixed b and c: outer coefficient <= C m_r^-3 (column bound of P_{j,r+1}); one-step Hessian with one leg fixed <= C_L; fixed inner leg <= C n_r^-3; summed inner leg <= C n_r. Together this is C_L m_r^-3 n_r^-2 = C_L L^3 n_r / n^3, summing to C_L s (eta/s)^4.
+- (7.18) follows by Schur with the mass norm, which is F0's \|\|s^-1 A\|\|_2 energy term.
+- (7.10) needs a gradient bound, so axial gauge would not do: transverse differences of axial potentials are not controlled by curvature alone. The note takes it from Proposition 6, conditional on F0, which is correct.
+
+**7.7 (shared-node readout): ADVANCE.** Q'_p (Q'_p)* = 1 in the physical pairings (s_y^4 L^{-4j} = eta^4). (7.20) is the semigroup law at an outer end. (7.22) is the linearized covariance. In (7.23), h_{j-1} = 1 on an all-assigned outer block forces h_j(z) = 1. The reduced-datum inverse D^-1 - D^-1 T D^-1 holds because T D^-1 T = 0. This matches the outline's "Reduced datum" paragraph (triangular, v_z reads only interior bonds of B(z)). The outline's pillar average Q'(lambda)(y) = L^{-4j} sum Ad(T(y,x)) lambda(x) and Balaban's CMP 99b (3.19) are the same map up to the contour family, so at U = 1 they agree.
+
+**7.8 (local perturbation steps on actual rows): ADVANCE.** The site version of (7.15)-(7.16): each one-step transported site average has row sum 1, column sum L^-4, and departure C_L alpha_r. These sum by (7.13). The cutoff commutator Q(c,b)[h(b) - h(c)] is C/M. The section's own two caveats (global parametrix on the new boundary; nonlinear Z-norm normalization) are exactly what 7.9 and 7.10 then supply.
+
+**7.9 (boundary inverse on the auxiliary first member): ADVANCE.**
+- ran R = D*D ker Q', with ker Q' vanishing off Omega_1. So R has no entries beyond one step, and DRD* none beyond two.
+- (7.24): the curl form is at least 0 and at most C eta^-2 by \|sum v_i\|^2 <= 4 sum \|v_i\|^2. With the Wilson correction at most C eps eta^-2, this gives (a/2) eta^-2 <= K <= C_a eta^-2 for eps < a/(2C).
+- The series (7.25) has ratio 1 - a/(4C_a) and range two per factor, so entries vanish until 2m eta >= dist. This gives (7.26) with weight tau^-1 ~ eta^2. Differences cost eta^-1 and eta^-2, which gives F0's weights at s = eta.
+- The cover defect is C/M + CM alpha + Ce^{-cM}. The argument is shape-independent and uses no Fourier transform. Correct.
+
+**7.10 (nonlinear normalization): ADVANCE.** (7.30) uses the flat coefficient L for the paired-site increments. The plaquette commutation gives the inhomogeneous term C L^2 omega_r delta = C_L alpha delta t_r^2, which is summable after division by t_{r+1}. The constant-family property of (7.29) makes every nonlinear one-step term contain a difference, hence C_L(r_* + delta) delta t_r, which sums to (7.28). Complex frames are counted with exp(C delta sum t_r), not exp(C delta j). At a seam only (7.20) is added. No depth factor.
+
+## 6. Section 9: holomorphy, representative, restriction
+
+**9.1: ADVANCE, with one sentence to add.** The contraction with G_1 J = 0 and radius 2h is uniform on \|\|B\|\| < r_B. Uniform limits of holomorphic iterates are holomorphic. The recursive axial gauge is unique; conjugators have norm exp(C\|\|B\|\|/(1-L^-1)). Real overlaps agree by orbit uniqueness, so the representative is continuous, hence Borel. Complex overlaps agree by the identity theorem; the overlap of two balls with real centres is convex and meets R^n in an open set.
+The sentence to add: the second-order part of (9.1) cites the Euler equation (5.1). That equation was derived for real critical points by thickening the real slice. For complex B it holds because both sides are holomorphic in B and agree on real B. This is the identity theorem the section already uses, but it must be invoked here.
+
+**9.2: ADVANCE.** Each case of the row bookkeeping was checked. An old row with an endpoint in Omega'_j cannot touch Omega'_{j+1}. Otherwise its carrier lies outside Omega'_j and is fixed by descent to level 0, using the semigroup law and (7.20). Varying bonds touch Omega'_1, so their plaquettes lie in Omega'_0. Scales only shrink, L'(p) <= L(p), so regularity persists. Orbit uniqueness then gives (9.3). The note correctly says uniqueness alone would not.
+
+**9.3: CORRECT-NO-ADVANCE.** The literal-identity case is immediate. The note rightly leaves the general torus comparison to Theorem 6(c).
+
+**10: no verdict needed.** (10.1) was checked: tr E = -det E from det(1+E) = 1, \|det E\| <= \|\|E\|\|^2, and both tent sums equal 1. The pointed-core clause (10.2) is honestly left open.
+
+## 7. Defects, ranked by what each breaks
+
+None breaks the conditional theorem or the consumer's statement. Repairs are marked unproved where they are more than a sentence.
+
+**D1. F0's provenance is incomplete, and its port has one convention check (affects how F0 gets discharged, not the implication).**
+- Most of F0's statement is the U = 1 case of CMP 99b Theorems 3.1-3.3, (3.48) and (3.132), which are in hand; the note says so in 3.9.
+- The proof is not in CMP 99b. Balaban proves those theorems "by constructing a random walk representation similar to that in (2.40), but with different boundary conditions used, and then repeating the arguments of Sect. 2 in [2]" (p. 398). Here [2] is CMP 89 (1983) 571-597, "Regularity and decay of lattice Green's functions", the source of the Hoelder estimates (3.22). So F0 is cited-pending on CMP 89 as well as CMP 95 and 96.
+- The outline (L9649) records that CMP 96 (2.3) keeps the level-0 inward bonds (Lambda_0 = Omega_1^c). CMP 99b (3.16), via Lambda_j = Omega_j^(j) \ Omega_{j+1}^(j), and the default problem omit them. So porting F0 from CMP 95/96 is not a verbatim citation at the first seam: the bare bonds crossing dOmega_1 are free in the default problem. The coercivity and kernel bounds there must be rechecked with only the level-1 outward rows and the gradient term controlling them (unproved here, expected routine).
+- Repair: relabel F0 as "CMP 99b Thms 3.1-3.3, (3.48), (3.132) at U = 1; proofs in CMP 89, 95, 96, with the level-0 seam rechecked in the difference convention", and add CMP 89 to the texts `lit-balaban.md` lists as not yet reached.
+
+**D2. The order of choice in Section 8 places the layer gap too early (breaks nothing; one line to fix).** The list puts "the summation gap" before "localization size and auxiliary boundary width". The theorem's gap must exceed four lengths:
+- rho_sum of 3.7, i.e. (rate) x rho >= C log L;
+- the auxiliary collar 4M eta + 4L eta plus a stencil, with M the parametrix side of 7.9;
+- a multiple, depending on L, of the reset length R_1M_1 of (163). The enlarged cube of Section F, of side (2M + 4R_1M_1) in the coarser layer's units, must lie in two consecutive layers, and near a seam it can reach across the finer layer. So CMP 102 (1) needs roughly R >= 6L R_1;
+- twice the descent collar of 7.2.
+
+All four depend only on L and F0's constants. The gap can therefore be fixed after them and before the radii. This is the outline's order at L9916 (propagator constants; then 𝔐 and rho = R_1𝔐 with (rate) x rho >= C log L; then the radii; then M), and the outline puts no upper bound on 𝔐, rho, M. The 7.9 parametrix side is a walk-scale constant, chosen before rho, and is not the outline's late localisation side M. Balaban's own "R >= R_1" in CMP 102 (1) is equally loose on this point.
+
+**D3. 9.1 uses (5.1) at complex B without saying why it holds there.** One sentence: (5.1) is an identity between functions holomorphic in B that holds for real B, so it holds on the connected complex ball by the identity theorem.
+
+**D4. Section 6 wording, cosmetic.** "The coarse global bound on the far part" should be Balaban's axial linear growth \|B(c)\| <= C(d(y_1, c) + M_Delta) eps_0, which is (161) and is what makes M_Delta = 1 at the pillar. With the crude bound C M eps_0 one only needs R_1M_1 larger, since x e^{-ax/2} -> 0.
+
+Positive findings worth carrying forward:
+- (a) Balaban's rows (CMP 99a (1.5), CMP 99b (3.16), CMP 102 (154) and the test discussion after (7)) are the difference reading. So the default no-inward convention is his, at levels j >= 1 in all four papers read, and at level 0 in CMP 99a/99b/102.
+- (b) The note's localization by criticality, not minimality, is the version Proposition 8 actually needs; Balaban's p. 301 uses minimality.
+- (c) The complex regularity of Phi on the datum polydisc, which the a3-derivative gate kept inside P81, is supplied by (9.2). The conjugators to the axial representative have norm and inverse norm at most exp(C\|\|B\|\|/(1-L^-1)), so plaquette norms are preserved up to a fixed factor.
+
+## 8. Verdict
+
+| Section | Verdict |
+|---|---|
+| 3.5, 3.6, 3.7 | ADVANCE (unconditional rebuilds; OCR reconstructions confirmed in the scans) |
+| 3.8, 3.9 | ADVANCE, conditional on F0 (D1 for provenance) |
+| 4, 5 | ADVANCE, conditional on F0 |
+| 6 (reset) and 8 (depth induction, both resets) | ADVANCE, conditional on F0; both resets depth-uniform; D2, D4 |
+| 7.2 (descent, two-radius class) | ADVANCE |
+| 7.6, 7.7, 7.8, 7.9, 7.10 | ADVANCE (7.6 and 7.8 given the local gauge (7.10), which is F0-conditional) |
+| 9.1, 9.2 | ADVANCE (D3 for 9.1) |
+| 9.3 | CORRECT-NO-ADVANCE |
+
+Depth of check. Sections 3.5-3.7, 4-6, 7.2, 7.6-7.7, 7.9-7.10 and 9 were redone step by step. In 3.8, 3.9 and 7.8 the identities, the reset structure and the comparison with Balaban's text were redone; the parametrix and perturbation estimates were followed as the sketches they are, not re-derived constant by constant.
+
+**First failing step: none.** What stands after this read: F0 implies the outline's default A1 on separated sequences. That is (1b) Theorem 1 (one regular critical residual orbit, linear curvature and current bounds, the unique axial representative), Theorem 3's first half (uniform holomorphic datum balls and the Borel real representative), and the exact restriction of Theorem 6(b). The constants are independent of the depth, the volume and the datum, provided the gap is chosen as in D2. This is P81 as rows 84 and 85 consume it, now conditional on F0 alone.
+
+**Open:**
+- F0: CMP 89, 95, 96 not in hand, plus the level-0 seam check of D1.
+- The pointed-core admission clause (10.2).
+- The kept-inward variant.
+
+Row 81 counts as this conditional theorem, not as closed A1.

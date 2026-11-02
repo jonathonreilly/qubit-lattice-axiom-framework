@@ -22,7 +22,7 @@ Written by the target lead on 2026-10-31. `GOAL.md` holds the target and the def
 1. One hard-core attempt has all its obligations discharged, and it delivers an interface statement the upper chain reads as written.
 2. The upper chain's conditional theorems lose their conditions.
 3. NT1 and NT2 hold, as `parts/witness.md` states them.
-4. One clean document holds the whole chain, followed by a line-by-line independent review of it, then the owner's approval of the exact text. Balaban and Dimock are credited by name. Until then there is no public claim.
+4. One clean document holds the whole chain, followed by a line-by-line independent review of it, then the owner's approval of the exact text. Balaban and Dimock are credited by name, and so are Ethan Sussman and Levent Alpoge (with Claude and Codex as authors of their text) for every step, idea or construction taken from their repository, in each note that uses it, in the final document and in any public post. Until then there is no public claim.
 
 ## State of the mapped route, 2026-11-02
 

@@ -370,6 +370,8 @@ Package G, 7.5 and the outline's Z beyond reconstruction are not carried.
 Every carried outline statement still has to be re-derived here and gated
 before it counts (FINISH, How we work item 2).
 
+**Lead note, 2026-11-02 evening.** Reversal test 4.3 (first bullet) was run in its correct form (rows 83, 88, 94): an admitted history breaks the envelope indexed by geometric level, but Theorem R needs only source-level indexing and goes through unchanged (`gates/support-envelope-gate.md` 3-4). The test has not fired; Package C stands.
+
 ## 6. What moved, what is waste, what the lead may change
 
 - **Moved:** `library/route-decisions.md`, every position, first version.

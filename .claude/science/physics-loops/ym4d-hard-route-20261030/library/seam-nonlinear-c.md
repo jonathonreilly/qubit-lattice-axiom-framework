@@ -147,8 +147,9 @@ blocks above. Mac mini, numeric lock acquired and released, BLAS threads 1,
 | 11 | 0.02233 | 1.156 | 120 | 0.00163 | 0.013889 | 0.00834 |
 | 13 | 0.02651 | 1.356 | 144 | 0.00195 | 0.013889 | 0.00897 |
 
-Criterion 1 (identities): PASS, every identity exact to the last bit (0.0):
-Q_path H_0, dG, C_B G and hG - (H_0 - d hH_0). Criterion 2: **REFUTED**,
+Criterion 1 (identities): PASS: dG = 0 exactly, |Q_path H_0| <= 1.4e-18 and
+|C_B G| <= 1.3e-17 (absolute), hG - (H_0 - d hH_0) to relative 6.0e-16.
+Criterion 2: **REFUTED**,
 as the hand lemma says: rho_4 grows by a factor 5.2 from B = 3 to 13, with
 log-log slope 1.03 over the last two points; the count of large bonds is
 exactly 12(B - 1) = 24 m, twice the hand count (phi also exceeds 1/4 on the
@@ -205,8 +206,9 @@ sites, which costs B^-2 in the fourth power.
    With pointwise data it would close, but pointwise regularity of the class
    minimizer is what the mapped attempt dropped: `library/relative-density-bound.md`
    item 2 finds, by a scaling count, a logarithm at nested block centres.
-   So the relative field has to be taken in a critical gauge, and then the
-   contour averages of Section 3 must be controlled separately.
+   So the relative field has to be taken in a critical representative.
+   Section 3.4 shows that the path gauge has one, H - T_1 Q_path H, once the
+   contour averages are moved into the root gauge of (ALIGN).
 
 ## 3. What replaces (PATCH), and what the gauge of the relative field must control
 
@@ -267,7 +269,8 @@ works**, and the only property of the contours used is d'd' Phi_n = 0. In
 top units the constant is (155568/r^2) ||H||_(L^2(A_2))^2, against 62256/r^2
 in the path gauge.
 
-**3.3 Lemma CT (contour averages enter the correction field; discharged).**
+**3.3 Lemma CT (without a root gauge, contour averages enter the correction
+field; discharged).**
 Same setting, Psi := Phi_n H, chi~(y) := chi(y) at top centres. For every top
 bond c = (y, y'),
 
@@ -305,34 +308,97 @@ So any split of T_1 beta_Psi into such a gradient plus a rest leaves a rest
 whose line integrals across the transition are at least |Psi(y_in)| minus
 critically controlled terms.
 
-*Consequence at the nonlinear level.* A gradient of size |Psi|/r is free
-when it is an exact gauge transformation. Here it cannot be one, because its
-gauge function would have to equal -Psi(y_in) on the inner side, where that
-changes the parent of T. Exponentiated as a field it is a modulated near-gauge
-of size |Psi|/r, whose quartic cost in (SEED) is of order (|Psi|/r)^4 per top
-cell (the commutator example (GRAD) of `seam-nonlinear` 3 is exactly this
-kind of term). **So the nonlinear seam needs |Psi(y)| = |Phi_n H(y)| bounded
-by the local data at every top centre y, uniformly in depth.** Two remarks:
-(a) Psi can be moved by a gauge d lambda with lambda constant at the centres,
-Psi -> Psi + Av_B lambda - const; making Psi constant puts H in the path
-gauge, and then the cost moves into the L^2 and L^4 norms of d lambda, which
-are again of size |Psi| (up to a capacity factor at the centres, remark only).
-(b) Psi is a contour average, an integral of H over lines through the top
-centre y, which is a centre at every level. It is not controlled by L^4
-norms: H equal to s B^(-1/4) on the m bonds of the first contour segment from
-y has sum_b |H_b|^4 = m s^4 B^-1 <= s^4 and Phi_n H(y) of order s B^(3/4)
-(the first segment carries a fixed fraction of the contours), for the
-one-step map. A W^(1,4) bound on H at the top scale controls such line
-integrals; L^4 alone does not.
+*What this does and does not force.* With H parent-preserving and no root
+gauge (q = 1), T_1 beta_Psi is a near-gauge field of size |Psi|/r: it is the
+gradient of about -chi~ Psi plus critically controlled terms, and chi~ Psi
+does not vanish on the inner side. That is not an obstruction at the linear
+level. A gauge equal to about -T_0 Psi on the inner side is free and keeps the
+parent there provided its values at the top centres are corrected, which is
+exactly what the root gauge q of (ALIGN) does: Lemma PG. Remark: Psi is a
+contour average, an integral of H over lines through the top centre y, which
+is a centre at every level, and it is not controlled by L^4 norms: H equal to
+s B^(-1/4) on the m bonds of the first contour segment from y has
+sum_b |H_b|^4 = m s^4 B^-1 <= s^4 and Phi_n H(y) of order s B^(3/4) (the
+first segment carries a fixed fraction of the contours), for the one-step
+map. A W^(1,4) bound on H at the top scale controls such line integrals;
+L^4 alone does not.
 
-**3.4 Where this leaves Q2 and Q3.** The nonlinear relative field must be
-(i) critical, L^4 at the top scale, for the fourth moment of (SEED)
-(Section 2); (ii) L^2 at the top scale with an absolute constant, for the
-second moment and for Lemma GG, since that constant sets r and hence the rate;
-(iii) contour-controlled at the top centres, for the term T_1 beta_Psi. The
-homotopy primitive has (ii) and (iii) at the linear level (path gauge) but
-not (i) (Lemma NC). A Landau-type global gauge has (i) and (ii) but (iii) is
-a line-integral statement beyond L^4.
+**3.4 Lemma PG (a critical representative in the path gauge; the contour
+averages go into the root gauge; discharged).** Same setting, H with dH = G
+and Q_n H = 0, Psi := Phi_n H. Put
+
+    h := H - T_1 Q_path H,    kappa := r_n T_0 Psi  (values of T_0 Psi at the top centres).
+
+Then (i) dh = G; (ii) Q_path h = 0; (iii) Phi_n h = kappa, so
+Q_n h = -d' kappa and Q_n(h + dE kappa) = 0; (iv) h is as critical as H:
+||h||_(L^2(Q)) <= ||H||_(L^2(Q)) + 12.8 ||H||_(L^2(Q^+3)) and
+||h||_(L^4(Q)) <= ||H||_(L^4(Q)) + 58 ||H||_(L^4(Q^+3)), Q^+3 the enlargement
+by 3 top units; (v) with chi as before,
+
+    X_D := A_* + chi h + dE(chi~ kappa) - T_n[Q_n(chi h) + d'(chi~ kappa)]
+
+has Q_n X_D = v, and
+
+    Q_n(chi h)(c) + d'(chi~ kappa)(c) = Q_path((chi - chi(c_*)) h)(c) - (d' zeta_h)(c),
+    zeta_h(y) := Phi_n((chi - chi(y)) h)(y),
+
+so no contour average enters any non-gauge part. Moreover
+dX_D = (1 - chi) dA_* + chi dA_t + [d, chi] h - T_2 d' Q_path((chi - chi(c_*)) h)
+and sum_p |R|^2 <= (62256 / r^2) B^-2 ||h|_(A_2)||^2, the path-gauge
+constant of `seam-quadratic-c` Theorem 5.1.
+
+*Proof.* (i) dT_1 = T_2 d', and Q_path H = d' Psi (from Q_n H = 0), so
+d' Q_path H = 0. (ii) Q_path T_1 = I. (iii) The contour average of a gradient
+is the difference of its end values: Phi_n(d T_0 Psi) = Av_B T_0 Psi -
+r_n T_0 Psi = Psi - kappa, using R^0 T^0 = I in each axis; and T_1 d' = d T_0,
+so Phi_n h = Psi - (Psi - kappa) = kappa. Then Q_n h = Q_path h - d' Phi_n h
+= -d' kappa, and Q_n dE kappa = d' r_n E kappa = d' kappa. (iv) Schur, with
+the kernels of `seam-quadratic-c` 3: ||Q_path||^2 <= B^-2 and
+||T_1||^2 <= (6/B)(3B)^3 = 162 B^2 on l^2, so ||T_1 Q_path H||_2 <= 162^(1/2)
+||H||_2; |Q_path H(c)| <= 2^(3/4) ||H||_(l^4(supp q_c)) (the kernel q_c is at
+most B^-3 on at most 2B^4 bonds) and sum_c |eta-kernel of T_1 at b| <= 24/B,
+so ||T_1 Q_path H||_(L^4(Q)) <= 4^(1/4) 24 2^(3/4) ||H||_(L^4(Q^+3)) < 58 (...).
+Both maps have range below 3 top units. (v) Q_path(chi h)(c) =
+Q_path((chi - chi(c_*)) h)(c) by (ii); Phi_n(chi h)(y) = zeta_h(y) + chi(y) kappa(y)
+by (iii); so Q_n(chi h) = Q_path((chi - chi(c_*))h) - d' zeta_h - d'(chi~ kappa).
+Q_n T_n = I gives Q_n X_D = v; d dE = 0 and d T_n = T_2 d' give dX_D, with
+d'd' zeta_h = 0; the bound is the proof of Theorem 5.1 (iv) there with h in
+place of hG. QED
+
+*Reading.* The path gauge has critical representatives, and the homotopy
+primitive is just a bad one: hG and h are both primitives of G in the path
+gauge, differing by d lambda with Av_B lambda constant, and hG carries the
+strings of Lemma NC. The contour averages are carried by the root gauge
+exp(chi~ kappa), an exact gauge transformation at the top centres, free of any
+size. So **at the linear level the path gauge with a critical representative,
+the root gauge and the chain-map right inverse do everything**: critical
+bounds, an absolute L^2 constant (the constant of H times (1 + 12.8)^2), no
+contour term.
+
+*The nonlinear twist (diagnostic, not a theorem).* Nonlinearly the gauge that
+takes H to h is exp(-T_0 Psi) off the top centres: it has size |Psi| and
+acts on the inner side. It is exact, so free, but it does not commute with
+the background. To be defined covariantly, T_0 Psi must transport the values
+Psi(y) with the parallel transports of T, and those transports are
+inconsistent around loops of top size by the holonomy of T, of order f. So
+the nonlinear relative field after this gauge is H - T_1 Q_path H plus a
+smooth term of size about f |Psi| in top units (and dexp at |lambda| of order
+|Psi| rotates d lambda). That term enters the second moment of (SEED) as
+(96/r^2) f^2 |Psi|^2 per top cell. So the contour averages still have to be
+bounded depth-uniformly at the nonlinear level, but now they come multiplied
+by f.
+
+**3.5 Where this leaves Q2 and Q3.** At the linear level the path gauge does
+everything (Lemma PG), and Lemma NC says only that the homotopy
+normalization hG is the wrong representative. At the nonlinear level the
+relative field must be (i) critical, L^4 at the top scale, for the fourth
+moment of (SEED); (ii) L^2 at the top scale with an absolute constant, for
+the second moment and for Lemma GG, since that constant sets r and hence the
+rate; (iii) of bounded contour averages at the top centres, because the root
+gauge that carries them twists against the curvature of T (3.4) or, without a
+root gauge, they enter the correction field as T_1 beta_Psi (Lemma CT).
+Theorem GN below takes the second route; the first gives the same
+requirement, with relative cost C_Phi^2 f^2.
 
 ## 4. Nonlinear (GLUE-E) at the flat background, from one relative-regularity input
 
@@ -558,7 +624,9 @@ that is the one place where an L-dependence would be fatal.
 | The path-gauge primitive pays the fourth moment of (SEED) given top-scale L^4 control (R3) of both endpoint curvatures | discharged at the linearized level (Schur bound 1.2 x 10^10 B^4); the homotopy normalization does not carry the nonlinear field (diagnostic) |
 | (PATCH) | not needed: any single global relative field has no transition term (3.1) |
 | Lemma GG: the linear seam in any parent-preserving gauge, constant 155568/r^2 | discharged here |
-| Lemma CT: contour averages Psi = Phi_n H at top centres enter the correction field, size abs(Psi)/r, not its curvature | discharged here (linear level) |
+| Lemma CT: without a root gauge, contour averages Psi = Phi_n H at top centres enter the correction field, size abs(Psi)/r, not its curvature | discharged here (linear level) |
+| Lemma PG: h = H - T_1 Q_path H is a critical representative in the path gauge; with the root gauge exp(chi~ kappa), no contour average enters any non-gauge field; constant 62256/r^2 | discharged here (linear level) |
+| The nonlinear twist of the root gauge, size f abs(Psi) | diagnostic, not a theorem |
 | (NL-pay) at the flat background | implication from (REL-2), (REL-4), (REL-E) |
 | Theorem GN: (GLUE-E) with M_n(X_D) = V exactly, class at every level, A_s <= 2.56 at r = 2480 C_2 | implication from (REL) and (CMP), at the level of each term |
 | (RATE-exact) | implication; nu_0 absolute if and only if C_2 and delta are |
@@ -570,10 +638,13 @@ that is the one place where an L-dependence would be fatal.
   nonlinear relative field cannot be produced by the homotopy normalization
   in critical norms; (R2)'s global fixed point, taken around T, is the
   natural candidate.
-- Q2, fourth moment of (SEED): not from energy alone (Lemma NC); yes given
-  top-scale L^4 control of the relative field and small energy per top cube
-  for the actual minimizer ((REL-4), (REL-E)). But a critical gauge
-  introduces the contour averages of Lemma CT, which must then be bounded.
+- Q2, fourth moment of (SEED): not by the homotopy primitive hG (Lemma NC,
+  and Section 2 item 1 for class endpoints). Yes by the path gauge itself:
+  h = H - T_1 Q_path H is a critical representative, and with the root gauge
+  of (ALIGN) and the chain-map right inverse the linear seam has no contour
+  term (Lemma PG). Nonlinearly the fourth moment is paid given (REL-4) and
+  (REL-E) for the actual minimizer, and the root gauge's size, the contour
+  average, must be bounded ((REL-Phi)).
 - Q3, errors C(L) x flux: yes, given (REL) and (CMP) (table 4.5). The one
   fatal L-dependence would be in C_2, the L^2 constant of the linear response.
 - Q4, (GLUE-E) with exact parent and class at every level: implication
@@ -590,29 +661,31 @@ unsupplied:**
     |Phi_n^(T) H(y)| <= C_Phi(L) (K_delta * E)(Q_y)^(1/2)   at every top centre y,
 
 uniformly in depth: the composite contour average of the critical relative
-field at a top centre, which is a block centre at every level. It is
-equivalent, up to a capacity factor at the centres (Lemma CT, remark (a)), to
-**the class minimizer's relative field having a critical representative in
-the path gauge** (Q_path^(T) H = 0 to second order and Phi_n^(T) H = 0). So the
-path gauge is the right gauge for the seam, as `seam-quadratic-c` found, but
-the homotopy picks the wrong representative (Lemma NC); the locked pair
-itself is a critical path-gauge representative of its curvature, so the
-needed representative can exist where hG fails. A W^(1,4) bound on H at the
-top scale would give (REL-Phi) (line integrals of W^(1,4) functions in d = 4
-are controlled); (R3)'s H^2 bound in local Landau gauges points that way, and
-the scaling count of `relative-density-bound` item 2 (a logarithm in the
-gradient of H at nested centres, which integrates to a bounded H) suggests
-(REL-Phi) is true. Neither is a proof. No counterexample to (REL-Phi),
-(NL-pay) or (GLUE-E) for the specified U, T was found.
+field at a top centre, which is a block centre at every level. It measures
+the size of the root gauge that puts the relative field in the path gauge
+(Lemma PG). At the linear level that size is irrelevant, since the root gauge
+is an exact gauge transformation. At the nonlinear level it twists against
+the curvature of T, or, without a root gauge, it enters the correction field
+(Lemma CT), so it must be bounded; it then costs C_Phi^2 f^2 or less,
+relative. So the path gauge is the right gauge for the seam, as
+`seam-quadratic-c` found, and it has critical representatives; the homotopy
+picks a non-critical one (Lemma NC). A W^(1,4) bound on H at the top scale
+would give (REL-Phi) (line integrals of W^(1,4) functions in d = 4 are
+controlled); (R3)'s H^2 bound in local Landau gauges points that way, and the
+scaling count of `relative-density-bound` item 2 (a logarithm in the gradient
+of H at nested centres, which integrates to a bounded H) suggests (REL-Phi)
+is true. Neither is a proof. No counterexample to (REL-Phi), (NL-pay) or
+(GLUE-E) for the specified U, T was found.
 
 **Consumers that change.**
 1. (GLUE-E) of `excess-shell-end` 4.2: read through Theorem GN. What has to
    be supplied is (REL) and (CMP), not (NL-pay) with (PATCH) and Lemma U.
    The local Uhlenbeck route of `seam-nlpay` is not needed.
 2. Consumer item 1 of `seam-quadratic-c` 8: (LC) holds for any
-   parent-preserving primitive with a local L^2 bound (Lemma GG). The
-   homotopy normalization H = hG should not be carried to the nonlinear
-   level: it is not critical.
+   parent-preserving primitive with a local L^2 bound (Lemma GG), and in
+   the path gauge it should be read with h = H - T_1 Q_path H and the root
+   gauge of (ALIGN) (Lemma PG). The homotopy normalization H = hG should not
+   be carried to the nonlinear level: it is not critical (Lemma NC).
 3. Mapped Text 5.3 (forwarded by the lead, mapped side): (GLUE-E) adds a
    consumer of (R2) and (R3), at the iterated trial T rather than U^tr, in
    one global gauge, plus (REL-Phi) or a global W^(1,4) bound.
@@ -644,5 +717,7 @@ lines for item (o) and (R3); the code `checks/seamqc/seamqc.py` (operators,
 reused). Not read: every file excluded for the mapped side in FINISH.md, every
 gate file, `library/seam-quadratic.md`, `library/lattice-uhlenbeck.md`,
 `library/lattice_sobolev_box_gauge.md`, the Sussman-Alpoge repository, and
-any literature. No subagent, commit, push or post; one numeric job, under the
-lock, at 65 percent memory free.
+any literature. No subagent, commit, push or post; two short numeric jobs
+(`checks/seamnlc/seamnlc_nc.py` and `seamnlc_pg.py`, the latter checking the
+path-part identities (i), (ii) of Lemma PG and the chain map to relative
+6.7e-16), each under the lock, at 65 percent memory free.

@@ -97,7 +97,8 @@ the axioms included, is an assumption.
 - `--slug SLUG`: optional packet slug;
 - `--subagents N`: independent route fan-out; default `4`, with `0` meaning
   context-isolated passes by the main agent;
-- `--no-web`: skip live literature search and mark the limitation;
+- `--no-web`: perform the literature search offline and mark unverified or
+  unavailable sources;
 - `--test-budget H`: hours allowed for step 8's tests (default 2).
 
 Without `--artifact`, return the report (step 9) in the conversation, with
@@ -137,6 +138,12 @@ Record what is already proved, what was already tried and failed, and which
 tests were already pre-registered. Do not re-derive a mapped wall or re-run a
 recorded test unless the exercise names what is new. Repeated prior-art
 misses are the most common way these exercises waste time.
+
+Run the literature search described in step 5 during this initial step, before
+first-principles reduction or route fan-out. Record and reuse the result, including
+empty searches. With `--no-web`, search available local sources and name missing
+coverage; do not invent a completed search. Step 5 later revisits only new
+questions raised by the routes.
 
 ## Step 1: State the wall twice
 
@@ -258,9 +265,10 @@ Reject vague returns ("topology might help"). A return must name the object
 that changes, the invariant or theorem type that might bite, and the first
 concrete artifact.
 
-## Step 5: Outside view
+## Step 5: Revisit the outside view
 
-Literature always runs, including when the user asked only for the
+Reuse the literature record begun in step 0 and update it only for new route
+questions. Literature always runs, including when the user asked only for the
 first-principles steps (`docs/ai_methodology/SCIENCE_WORKFLOW.md` section 2,
 rule 9). `--no-web` skips live search: the agent may still cite sources it
 knows, marked unverified. Prefer primary

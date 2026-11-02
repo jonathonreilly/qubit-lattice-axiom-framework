@@ -44,8 +44,11 @@ disclosed conditional target itself.
   never justify a derivation step.
 - Run and record the literature search first
   (`docs/ai_methodology/SCIENCE_WORKFLOW.md` section 2, rule 9). Published
-  mathematics is used and credited, re-derived on our structures before any
-  step rests on it (section 10); never re-invent it.
+  mathematics may be used provisionally with credit and labelled `unchecked`,
+  while its verification runs in parallel (section 10). Dependent steps stay
+  provisional until verification; closure, landing and public claims require
+  verified inputs. Preserve the exact-statement provider Lean theorem reuse
+  allowed by section 3. This grants no new physical premise.
 
 ### 2. Build the Premise Ledger
 - List every axiom, approved primitive, retained theorem (with

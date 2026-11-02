@@ -31,7 +31,10 @@ Examples:
 4. Step 0: search the repo's own record (landed notes, open PRs, decision
    records, panels, earlier exercises, probe queues, held blocks on campaign
    branches, candidate packs) for the wall and earlier attempts before
-   generating anything, by physical object as well as by title.
+   generating anything, by physical object as well as by title. Run and record
+   the outside-view literature search from step 5 here too, before reduction
+   or route fan-out; reuse its record. `--no-web` makes that search offline,
+   with unavailable or unverified sources labelled explicitly.
 5. Step 1: state the wall twice, plainly for a non-physicist and precisely.
    Sort its ingredients into what the axioms say, what was supplied and what
    was proved. Check the plain version with a blind restatement.
@@ -43,8 +46,9 @@ Examples:
 8. Step 4: fan out independent routes (default 4 agents) with neutral briefs
    across materially different families. Include one lens from outside the lane and one agent
    arguing that the wall is misframed. Every return must be concrete.
-9. Step 5: outside view, on by default unless `--no-web`. Known no-gos and
-   escapes first, then proof templates, from primary sources.
+9. Step 5: revisit the outside-view record begun in step 0; search only new
+   questions raised by the routes. Known no-gos and escapes first, then proof
+   templates, from primary sources. `--no-web` still permits offline search.
    Choose mathematical lenses from the wall's structure, and try the reframes.
 10. Step 6: give every route to a different agent to break. Record a kill
     verdict; target-equivalent endings are `blocked-equivalent`.

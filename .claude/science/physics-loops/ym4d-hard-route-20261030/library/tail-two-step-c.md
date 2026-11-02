@@ -3,7 +3,7 @@ lease_until: 2026-11-02T11:15Z
 
 # tail-two-step-c: blind two-step kill test of the tail induction, independent side
 
-Pinned at commit c0e57d701 (working tree of branch claude/ym4d-hard-route). In progress; written section by section. Nothing here is a status claim.
+Pinned at commit c0e57d701 (working tree of branch claude/ym4d-hard-route). Finished. Nothing here is a status claim.
 
 Provenance: Anthropic claude-opus-5-5, max effort, Mac mini worker; working tree at `c0e57d701`. Same model as the attempt, so this is not independent in model and it is not an audit. Side: independent, blind to `library/tail-two-step.md`. All references below are to `parts/hard-core--independent.md` unless named.
 
@@ -14,7 +14,7 @@ No counterexample to any conclusion was found. The route is not killed. Closure 
 | Falsifier of the item | Source-free | One source insertion |
 |---|---|---|
 | g-dependent near region | **not found.** Rough sets and anchors are g-free; a reach of order log(1 / g) occurs only in a double-exponentially small tail (Section 4) | not found: the chart reads no f |
-| Budget spent twice | **not found.** 19/48 of the 1/2 is spent, once (Section 3) | not found: 11/24 spent, margin 1/24 (Section 6) |
+| Budget spent twice | **not found.** At most 19/48 of the 1/2 is used, once (Section 3) | not found: at most 11/24 used, margin 1/24 (Section 6) |
 | Coefficient without the contraction | **found as written, D1:** the block-scale part of the marginal form. Conclusion believed true, by a different argument | **found as written, D2:** the variable-source part of the marginal R form has no clause that gives its factor a_k |
 
 | Statement | Verdict (steers research, grants no status) |
@@ -29,7 +29,7 @@ No counterexample to any conclusion was found. The route is not killed. Closure 
 
 ## 0. What was read
 
-Read: `FINISH.md`, `GOAL.md`, of `parts/hard-core--independent.md` the state of attack, Obligations, Requests, Texts 3.1 to 3.3, 4.5k, the head of 4.6, 4.7, 4.8, 6.0 to 6.4f. Later sections of this file name anything further. Not read: `library/tail-two-step.md`, the mapped file, any gate, any other library file except the four the firewall allows.
+Read: `FINISH.md`, `GOAL.md`; of `parts/hard-core--independent.md` the state of attack, Obligations, Requests, Texts 3.1 to 3.3, 4.5j, the tree norm, 4.5k, the head of 4.6, 4.7, 4.8, 4.9, 6.0 to 6.4f, 9.4, 11.1; of `parts/hard-core--independent--ct.md` the head and Section 2; `parts/hard-core--independent--good.md`, Section 11; `library/ultralocal_cluster_expansion.md` to line 100. Not read: `library/tail-two-step.md`, the mapped file, any gate, any other library file. The part file quotes gate verdicts in its own text, and those quotations are the only gate wording seen.
 
 ## 1. Frozen definitions at `c0e57d701`
 
@@ -165,13 +165,13 @@ marginal, so with no factor L^{-a}. Lemma 6.4f (v) sizes it at C y_k P(M) g^{-2}
 
 *Model of the failure.* Let y_1, y_2 be neighbouring sites of Y at spacing a_k, let e be any R polymer, and put e^f := e (1 + (1/4) sin( (f(y_1) - f(y_2)) / (3 Lam a_k) )). It is entire in f, on FF_k its modulus is at most e (1 + sinh(1) / 4) < (4/3) e, and it reads f only on Y, so it meets every clause of (c^f), (SENS) included, up to the factor 4/3. At f of constant gradient its relative distance from e^{[f(y)]} is (1/4) sin(1/3) for every Y. So the coefficient of F^2 in R^f is of order y_k P(M) g^{-2}, with no a_k and no L^{-a}. This is a model of the inference, not of Yang-Mills.
 
-*Why that is fatal if left.* (G1) at level k + 1 asks Lam a_{k + 1} g^2 p^{c_p}, and a_{k + 1} is exponentially small in K - k, while y_k is at least of the order of bb^new_k, only quasi-polynomially small in K - k. Put in C_{k + 1} instead, R^f gives cc_{k + 1} >= C P(M) y_k, with no contraction.
+*Why that is fatal if left.* (G1) at level k + 1 asks Lam a_{k + 1} g^2 p^{c_p}, and a_{k + 1} is exponentially small in K - k, while y_k, the size the induction carries, is of the order of bb^new_k, only quasi-polynomially small in K - k. Put in C_{k + 1} instead, R^f gives the bound cc_{k + 1} >= C P(M) y_k, with no contraction.
 
 **The far insertion.** Lemma 6.4e inserts s D_u only for X in Y', and says that e(Y', R) is a power series in the activities in Y'. Term (2) is not: (ONE) has summed all hulls into one function, so
 
     D_u E^{Z, f}_W[e^f]  =  E^{Z, f}_W[D_u e^f]  +  Cov^{Z, f}_W( e^f ; S^{c_k' (f) u} + D_u EE^{an, f}_k ),
 
-and the covariance reads supp u, off Y', through xi'. At a Gaussian field it is 2 C(a, b)^2 for e = phi_a^2 and the density phi_b^2, not zero, and an insertion on X in Y' gives zero for it. At |s| = s_0 the unrestricted insertion would leave the gas near supp u. So the Cauchy argument at radius s_0 does not reach this term.
+and the covariance reads supp u, off Y', through xi'. In a Gaussian toy with strictly local noise and a shared xi', it is 2 C(a, b)^2 for e = phi_a^2 and the density phi_b^2, not zero, and an insertion on X in Y' gives zero for it. At |s| = s_0 the unrestricted insertion would leave the gas near supp u. So the Cauchy argument at radius s_0 does not reach this term.
 
 ## 7. Defects, ranked by what each breaks
 

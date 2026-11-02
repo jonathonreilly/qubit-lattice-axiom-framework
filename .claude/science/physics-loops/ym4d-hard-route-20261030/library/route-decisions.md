@@ -22,8 +22,8 @@ here. The comparison leans on `library/sa-histories.md` (row 70),
 `library/lit-balaban.md` (row 80, with the lead's CMP 102b check), and our
 rarity line (rows 56 to 65 and their gates); each is credited where used.
 
-Status: in progress. Sections are written in order; the decision table is
-Section 4.
+Status: finished 2026-11-02 (see Section 7). The large-field decision is
+Section 4; the table by position is Section 5.
 
 ## 1. The decision in brief
 
@@ -370,3 +370,45 @@ Package G, 7.5 and the outline's Z beyond reconstruction are not carried.
 Every carried outline statement still has to be re-derived here and gated
 before it counts (FINISH, How we work item 2).
 
+## 6. What moved, what is waste, what the lead may change
+
+- **Moved:** `library/route-decisions.md`, every position, first version.
+  Package C chosen over S1-S6 with reasons and five reversal tests; one new
+  finding, unchecked: the outline's rank-1 large-field step (floor screening,
+  SA L18334-18415) reduces to the same nonlinear A3 on localized families as
+  its rank-2 step 2.8 and as our (REL-D), plus two links written there.
+- **Waste if continued:** new lanes on (SEP), general (SP), (QR), (RC), (AR),
+  the sharp reference, the m_* order, the repaired S4, row 68
+  (`rarity-skeleton`) and row 66 (`r3-global-c`) as a separate statement
+  (it is A3 curved, row 77). None is a Package C obligation.
+- **Evidence for the lead to forward (I edit no other file):** FINISH's
+  "State of our route" row "Full-law mass outside the chart: rarity" and its
+  `rarity-fresh` paragraph describe a question this decision retires; the
+  queue's row 73 names a second output, `library/route-compare.md`, which this
+  worker was told not to write, so this file carries both.
+- **Order this suggests:** A3 curved in profile form on localized families
+  (row 77 continued, with row 81's (U)); then the floor-screening test of 4.2
+  item (2); then the 2.8 ten terms; C4 at any time, as it is cheap; A2 (row
+  78) beside them.
+
+## 7. Reading boundary
+
+Read: FINISH.md, GOAL.md; QUEUE_DONE rows 50-76; `sa-histories.md` in full;
+`sa-map.md` Sections 0, 3, 4 and Package entries for E, C, D, A-H 1.6;
+`sa-2.8.md` Sections 8-9; `rarity-fresh-c.md` Sections 1, 3-9;
+`a3-response.md` Section 8; `a1-orbit.md` header and Section 9;
+`lit-balaban.md` Sections 0, 3-5; `sa-ledger.md` position headers and the
+twenty rows; `gates/lemma-ex-7c12c6981.md` verdicts;
+`gates/rarity-fresh-c-263afacbd.md` verdict table; the outline at SA
+L3864-3896 (A3), L4086-4120 (D1), L17696-17716 and L18334-18415 (floor
+screening). Not read in full: `rarity-fresh-x.md`, `rarity-repair.md`,
+`sp-decide.md`, `qr-decide.md`, `sp-nonlinear.md` (used through their
+QUEUE_DONE summaries and `sa-histories.md` Section 6), the parts files, and
+Balaban's papers (the CMP 102b scan is on the Mini but was not needed for a
+decision; the lead's check is cited). Not read: the Sussman-Alpoge YM3 and
+QED3 manuscripts. No numerical job was run: this is a decision on written
+evidence and no run could change it. Memory was 65 percent free. No commit,
+push, claim or subagent.
+
+Status: finished 2026-11-02, first version. Same-model decision; it steers,
+it grants nothing.

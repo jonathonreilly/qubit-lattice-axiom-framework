@@ -13,7 +13,7 @@ authors of their text), `YM4_sketch_500.tex` at `31a47c543775` (sha256
 floor screening L18334-18415, Lemma 2.5 (4) L17709-17715, drop-out evaluations
 L18130-18205, the stages of R L17575-17630, (1b) Theorems 1, 2, 6 L9660-9686,
 L9776. T. Balaban, CMP 102 (1985) 277-309 (Theorem 1 p. 279, Section F and
-Proposition 8 pp. 302-305, Proposition 9 pp. 305-309) and CMP 99 (1985) 389-434
+Proposition 8 pp. 300-305, Proposition 9 pp. 305-309) and CMP 99 (1985) 389-434
 (Theorems 3.1-3.3), read from `~/ym4d-papers/` (outside git, not copied). Our
 `library/a3-response.md`, `gates/a3-gate-b2c312b2e.md`, `library/route-decisions.md`.
 No numerics: the question turned out to be structural (memory was 56 percent free;
@@ -29,7 +29,7 @@ reversal test (4.3, first bullet).
    (Example 1: one bare plaquette at -1 in a layer-0 part of the floor; no
    configuration is regular at any radius below 2, so by totality every test that
    reads the background fails, also far outside the floor, with zero energy
-   outside it). The outline never asks for this: Lemma 2.5 (4) (L17710) and the
+   outside it). The outline never asks for this: Lemma 2.5 (4) (L17709) and the
    drop-out fibre (L18149-18151, L17831 "Second") take the old-core datum regular
    at C R_l^2 eps_l, and it is so on the supports (Lemma S, checked here for the
    regions the label makes).
@@ -50,10 +50,13 @@ reversal test (4.3, first bullet).
    thresholds of deep floor layers, Lemma T, which are controlled by asymptotic
    freedom alone; the comparison of the two terms). Rate delta_0 = L delta_P,
    where delta_P is the profile rate of (1b) Theorem 2.
-4. **One defect in the text, harmless:** the display L18355-18361 is stated
-   "outside the floor"; it is proved (and true in general) only at weighted distance
-   at least L M R_m from the floor, that is where the operation acts (the form
-   L17715 states). In the waiting collar next to the floor no argument gives it.
+4. **Defects in the outline's text, none breaking:** the display L18355-18361 is
+   stated "outside the floor"; it is proved, and available in general, only at
+   weighted distance at least L M R_{m_b} - 4 from the floor, that is where the
+   operation acts (the form L17715 states); in the waiting collar next to the floor
+   no argument gives it, and no renewed test reads it there. Two provisos are
+   unstated (the width of "a margin of Y", L17317; the flow bounds of g-bar,
+   L6031). Section 6.
 5. **Balaban.** CMP 102 Theorem 1 is A1 with global bounds and no locality;
    Proposition 8 is a global halving, which alone gives only the floor's size
    C R^2 eps in the window. But its proof (Section F, (160)-(167)) is already local
@@ -168,7 +171,7 @@ at CMP 102 p. 278, unchecked here) bounds the test loops of the averages by
 2 eps_l inside a layer and C L^2 eps_l across a seam. QED.
 
 Inside regions changed by earlier R operations (healed boxes, drop-outs) the
-outline asserts the envelope C R_l^2 eps_l (L17710, L17828, L18197-18199); healed
+outline asserts the envelope C R_l^2 eps_l (L17709, L17828, L18197-18199); healed
 boxes carry the cut-off |log V'| < M_0 eps_k (L17604), so their test loops are
 small too. I did not check those cases line by line; the drop-out masses impose
 the envelope by definition of the evaluation fibre.
@@ -192,7 +195,11 @@ the envelope by definition of the evaluation fibre.
   Section 5 gives a one-step form (OS-loc) that suffices.
 - **(S1)** [structure of the stage sequences: my reading of L17585-17612 and of
   Theorem 6 (a), L9776; unchecked]. (a) S is separated in the sense of L9599, so
-  (A1-S) and (A3-P) apply to it. (b) The core C_{m_b} = X n Z_{m_b} is never
+  (A1-S) and (A3-P) apply to it. This is consistent with Proposition 2.3 (L17398):
+  stage and prepared sequences are unions of M-cubes with gaps of at least one
+  M-cube of the later level, that is M L xi_j, which exceeds the gap
+  rho xi_j = R_1 M-frak xi_j once M > R_1 M-frak / L; the order of choice allows
+  this, since M is fixed after M-frak and R_1 (L9599). (b) The core C_{m_b} = X n Z_{m_b} is never
   unfolded (L17598), so on O the sequence S is the label's sequence: every point
   of O lies in an S-layer j <= m_b - 1 or outside Omega_1^S; and Omega_0^S lies in
   X-tilde (X with one layer of level-m M-cubes), where X-tilde minus X lies in
@@ -240,7 +247,7 @@ d_S(x, tau) >= L M R_{m_b} - 4.
 *Proof.* Let s = M R_{m_b} xi_{m_b}, the side of a level-m_b cell; xi_{m_b - 1} =
 xi_{m_b} / L.
 (i) dist_inf(F, Omega_{m_b}) >= s: both are unions of closed cells of one grid of
-side s (Proposition 2.3, L17409), and no cell of F touches one of Omega_{m_b}; two
+side s (Proposition 2.3, L17398; cells, L17409), and no cell of F touches one of Omega_{m_b}; two
 closed grid cubes that do not touch differ by at least 2 in some index, hence are
 at l_inf-distance at least s.
 (ii) Level. By (S1b), O misses Omega_{m_b}^S, and Omega_{m_b}^S lies in X-tilde
@@ -305,3 +312,174 @@ holonomy bound, and |log V'(b)| <= C M^2 R_m^2 varsigma < delta'_m; the last hol
 small coupling, since C M^2 R_m^2 varsigma <= C' M^2 L^2 g_m l_m^(p1-2r) while
 delta'_m = A_1 g_m p_1(g_m) is of order g_m l_m^p1, L17585) are as in the outline
 and were not rechecked line by line.
+
+## 5. A port-ready one-step form, from Balaban CMP 102 Section F
+
+Theorem R reads the whole profile bound (A3-P). The screening needs less, and the
+shape of what it needs is already in Balaban's proof of his Proposition 8.
+
+*Notation.* For a top y of S-layer j let Delta(y) = B^j(y) and let box(y) be
+Balaban's big cube around it: side 2 R_1 M_1 xi_i, contained in the two adjacent
+S-layers i and i + 1, with i = j or j - 1 (CMP 102 pp. 278-279 and p. 302). Its
+d_S-diameter is at most 8 R_1 M_1, since weights in layer i + 1 are smaller. For a critical U regular at radius eps_0, let r_U(y) be the least
+r >= 0 with |dU(p) - 1| <= r eta^2 xi_j^-2 and |D* dU(b)| <= r eta^2 xi_j^-3 on
+Delta(y) (his space (2)). Let a(y) = max |dV(tau) - 1| over the test loops in
+box(y). For kappa > 0 and f >= 0 on tops, (T f)(y) = sup_y' e^(-kappa d_S(y, y')) f(y').
+
+**(OS-loc), proposed, unproved.** There are kappa > 0, B_3, C_Q, a_5 > 0 (depending
+on L) such that for every S as in (A1-S), every critical U in C(B_S, V) regular at
+radius eps_0 <= a_5, and every f with r_U <= f <= eps_0,
+
+    r_U(y) <= max{B_3 a(y), (1/2) (T f)(y)} + C_Q eps_0^2   for every top y.
+
+*What Balaban proves.* CMP 102 (158)-(169), pp. 302-305: r_U(y) <= max{B_3 eps_1,
+(1/2) eps_0}, with operators at U = 1 (p. 302: "all the operators in this section
+are taken without any external gauge field configuration", from CMP 95, 96). In
+his (160)-(161) the datum enters only on box(y) (he uses (7) only there), and
+everything outside box(y) enters through a tail
+sum_{y2 outside box} e^(-delta_0 d(y1, y2) / 2) (d(y1, y2) + 1) ... eps_0, whose
+prefactor (162)-(163), B_3 e^(-delta_0 R_1 M_1 / 2) <= 1/2, produces the 1/2. His
+quadratic term (165), B_0 (C_4 + 4 C_2)(36 d L^2 B_1 eps_0)^2, is our C_Q eps_0^2;
+he absorbs it as eps_0 / 8 using (166). So (OS-loc) is his step with two changes:
+the global datum bound becomes a(y) (no change in the argument), and the tail's
+eps_0 becomes T f (the real change).
+
+*The one real point of the port.* Balaban bounds the far datum in a generalized
+axial gauge centred at y, by eps_0 times the length of a comb path. To put T f in
+its place one needs, for z on the comb path from y to y2, d_S(y, z) <= d_S(y, y2) +
+const. With several local scales this fails in general: a comb path can cross a
+finer layer that a d_S-geodesic goes around. So the port must work in local gauges
+on cubes, patched (our gated Lemma U, `library/lattice-uhlenbeck.md`; Lemma P of
+`library/a3-response.md` with the gate's repair), which is what the outline's 1b.5
+says it does (L9795: "uses only operators at 1"). The quadratic term may stay
+global, as the next lemma shows.
+
+**Lemma I (weighted halving; proved).** Assume (OS-loc) for U, and
+B_3 sup a + C_Q eps_0^2 <= eps_0 and 2 C_Q eps_0 <= 1. Then
+r_U <= B_3 T a + 2 C_Q eps_0^2.
+
+*Proof.* Put Q = C_Q eps_0^2, f_0 = eps_0, f_(n+1) = max{B_3 a, (1/2) T f_n} + Q.
+(i) r_U <= f_n <= eps_0 for all n: true at n = 0 since U is regular at eps_0; if
+true at n, (OS-loc) with f = f_n gives r_U <= f_(n+1), and
+f_(n+1) <= max{B_3 sup a, eps_0 / 2} + Q <= eps_0 by the two provisos.
+(ii) T is monotone, commutes with max, satisfies T(u + c) <= T u + c for constants
+c >= 0, u <= T u (as d_S(y, y) = 0) and T T u <= T u (triangle inequality for d_S).
+With A = B_3 a + 2Q, induction gives f_n <= max{T A, 2^(-n) eps_0 + 2Q}:
+f_(n+1) <= max{B_3 a + Q, (1/2) max{T T A, 2^(-n) eps_0 + 2Q} + Q}
+        <= max{A, (1/2) T A + Q, 2^(-n-1) eps_0 + 2Q} <= max{T A, 2^(-n-1) eps_0 + 2Q},
+because A <= T A and 2Q <= A <= T A. Letting n tend to infinity in (i),
+r_U <= max{T A, 2Q} = T A <= B_3 T a + 2Q. QED.
+
+**Corollary R'.** Theorem R holds with (OS-loc) in place of (A3-P): for g_m small and
+every top y in Omega_{m_b},
+r_U-hat(y) <= B_3 max{varsigma, e^(kappa (4 + 8 R_1 M_1)) 4 L^2 C_F R_m^2 eps_m e^(-L kappa M R_m)}
+              + 2 C_Q eps_0^2 <= (2 B_3 + 1) varsigma,
+so (FS) holds where the operation acts with delta_0 = L kappa.
+
+*Proof.* Take eps_0 = (C_1 + 2 B_3) eps_1 with eps_1 as in Step 1 of Theorem R;
+U-hat is regular at C_1 eps_1 <= eps_0, and the provisos of Lemma I hold for small
+g_m since sup a <= eps_1. Apply Lemma I at y. For y' whose box contains a loop of
+T_F, a(y') <= 4 L^2 C_F R_m^2 eps_m (Lemma T, (D-F)) and
+d_S(y, y') >= L M R_{m_b} - 4 - 8 R_1 M_1 (Lemma G, the triangle inequality and
+the diameter of box(y')); for the other y', a(y') <= varsigma. The quadratic term: eps_0 <= C R_m^2 eps_m, so
+2 C_Q eps_0^2 / varsigma <= C g_m l_m^(8r + 2 p0 - p1) -> 0. Step 4 of Theorem R
+handles the second entry. QED.
+
+So the screening needs exactly: (A1-S), (OS-loc) (Balaban's Section F step with a
+weighted tail, in local gauges), (S1), (EA), (SUP). It does not need the quadratic
+term localized, nor the second half of Theorem 2, nor Theorems 3-5.
+
+## 6. Defects (ranked by what they break)
+
+1. **`library/route-decisions.md` 3.3 ("Against") and 4.3 (first bullet) read the
+   floor's data as arbitrary** (evidence for that file's owner). The outline's
+   hypothesis is regularity at C R_l^2 eps_l of the old-core datum (L17709; the
+   drop-out fibre, L17831 and L18149). The arbitrary version is false (Example 1)
+   and unused; the heavy wall cannot be built on a support (Lemmas O, S). Breaks:
+   the first reversal test as worded can never fire. Repair (for the lead): restate
+   it as "(1b) Theorem 2, first half, or (OS-loc), fails on a stage sequence of R
+   with datum regular at C R^2 eps", which is the third bullet of 4.3.
+2. **Display L18355-18361, "outside the floor".** Proved here, and in general only
+   available, at points of Omega_{m_b} (L17715 states it there); in W_c next to F
+   the profile gives only C_P C_F R^2 eps. Breaks nothing, provided each renewed
+   test reads the stage background only on Omega_{m_b}. As far as I read them they
+   do: the stage tests are on shells outside the core (L17585 (1)); the main-step
+   field B lives on the shells (L17598); the extension test reads the exterior field
+   (L17585 (2)); the last-shell test uses another background, U_{k_b,box}((1, V_{k_b})),
+   whose datum lies outside the core (L17598-17604).
+3. **Lemma S proviso.** The width of "a margin of Y" outside which the step's
+   plaquette test is made (L17317) is not given; Lemma S needs it at most seven
+   level-l cells (Omega_l is eight cells from Y). Repair: state the width.
+4. **Lemma T proviso.** The thresholds are written with g-bar_j (L6031); Lemma T
+   needs g-bar to obey the frame's two flow bounds. If it is another running
+   coupling, rerun Lemma T with its own bounds.
+5. **Rate naming.** The display's delta_0 is the (1c) propagator rate elsewhere in
+   the text; here it is L delta_P (Theorem R) or L kappa (Corollary R'). Constants
+   only.
+
+No defect found in the structure of the argument: the floor/collar margins
+(L17320 against the shares of L17702) keep the spent action inside F, and
+the second term of the display is below varsigma at small coupling (Step 4).
+
+## 7. What Balaban supplies, exactly
+
+- **CMP 102 Theorem 1 (p. 279).** For a datum V with all test loops within
+  eps_1 < a_1 of 1 on the whole determining set ((7), p. 278), a minimal orbit in
+  the space (8), unique critical orbit in (6) if B_3 eps_1 <= eps_0 <= a_0, with
+  local bounds (9)-(10) of size B_3 M eps_1 on cubes. Geometry: Omega_j unions of
+  big blocks of side M_1 L^j eta, gaps (L^j eta)^-1 dist > R M_1, torus. Every
+  bound is in the global eps_1: this is (A1-S) for his sequences, with no
+  locality. Applied to the stage background it gives curvature C eps_1 =
+  C R_m^2 eps_m in the window, which is too large for the tests by the factor
+  R_m^2 eps_m / varsigma, a positive power of l_m.
+- **CMP 102 Proposition 8 (p. 304) and its proof, Section F (pp. 300-305; the
+  step itself is (154)-(169), pp. 302-305).** Global
+  halving eps_0 -> max{B_3 eps_1, eps_0 / 2}. As shown in Section 5, the proof is
+  local in the datum ((160) uses (7) on the cube only), weighted in the tail
+  ((161), (163)), global only in the quadratic term (165) and in the iteration.
+  This is the source to port for (OS-loc).
+- **CMP 102 Proposition 9 (p. 309) and (190) (p. 308).** The derivative of the
+  background (Landau gauge) in the datum decays like e^(-delta_0 d(y, y') / 2). Its
+  input (189) is introduced with "We do not perform these calculations here"
+  (p. 308). Using (190) for the screening would also need a path of regular data
+  from a floor-free datum to the actual one with small increments; with deep fine
+  layers in the floor a regular datum has large holonomies on large loops, so a
+  straight path in one gauge leaves the polydisc of Proposition 9 (my reading; not
+  pursued).
+- **CMP 99 (389-434) Theorems 3.1-3.3 (pp. 397-399).** The operators G'(U), G(U)
+  and their derivatives at a configuration regular in the sense (3.35) obey local
+  bounds with exponential decay in the weighted distance (2.36) of CMP 96, uniform
+  in the sequence; proofs by random-walk expansions over a cover of the torus.
+  These are the linear inputs at curved backgrounds. The outline needs them for an
+  arbitrary first member Omega_0 and proposes a separate parametrix argument
+  (L9795 onward).
+
+## 8. Open, and what the lead may change
+
+**Open, hardest first.**
+1. (OS-loc), or (A3-P), on the stage sequences of R: the halving in local form
+   with a weighted tail, in local gauges (Section 5). Row 82, and
+   `library/a3-response.md` Section 8 item 3. The quadratic term may stay global
+   for this use.
+2. (A1-S) uniform in depth on those sequences: row 81 (port of CMP 102 Theorem 1).
+3. (S1): Theorem 6 (a) for the stage and prepared sequences, and the reading that
+   the core is never unfolded. Geometry; cheap; no queue row yet.
+4. (EA), the energy of averages (outline L18206-18336): argued there, unchecked here.
+5. (SUP) inside regions changed by earlier R operations, and the two provisos of
+   Section 6 items 3-4.
+
+**What moved.** Position H of `library/route-decisions.md`: (i) its rank-1 open
+step (3.2 item 1) is an implication from (1b) Theorems 1, 2 (or (OS-loc)) and 6 (a)
+with (EA), proved here with every other step written; it adds no analytic
+obligation, so Package C's two top items (floor screening and 2.8, whose stop is
+(L)) both rest on the outline's Theorem 2 with Theorem 1, the same statement our
+own seam chain needs. (ii) Its first reversal test cannot fire as worded (Section 6
+item 1). (iii) The "Against" worry of 3.3 about arbitrary floor data is settled.
+Row 82 gets a precise, smaller target, (OS-loc), with its source in Balaban.
+
+**For the lead to forward (I edit no other file).** In `route-decisions.md`: 3.2
+item 1 relabelled "implication from A1, A3 profile (or OS-loc), Theorem 6 (a), EA:
+`library/floor-screen.md`"; 3.3 "Against", the sentence on arbitrary floor data,
+replaced by Section 2 here; 4.3 first bullet restated as in Section 6 item 1.
+Ledger rows "1b Theorem 2 / 1b.5" and "New-mark payment, L18334" of
+`library/sa-ledger.md` can point here.

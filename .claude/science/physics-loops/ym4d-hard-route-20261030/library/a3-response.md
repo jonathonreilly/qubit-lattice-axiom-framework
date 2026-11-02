@@ -15,7 +15,8 @@ Sources read: outline `YM4_sketch_500.tex` at `31a47c543775` (SHA-256 matches
 `curl-poincare-exterior.md` Lemma 1, `lattice_gehring_hls.md`.
 
 Status: finished 2026-11-02. **Flat linear statement PROVED (Theorem FL,
-hand proofs, L^2-local form). Example E question ANSWERED at the flat linear
+hand proofs: curvature and potential in local L^2, curvature pointwise by
+Lemma LR). Example E question ANSWERED at the flat linear
 level (Theorem E: in the local Landau gauge the contour averages and the (REL-D)
 shell sums are bounded uniformly in depth). Curved linear response (Theorem
 CL) derived at the level of each step from one-step inputs (analyticity and
@@ -99,8 +100,8 @@ transitions bring in L (Lemma P, case (c)). In the outline's units (a) and (b)
 say: the response to a unit datum e at a bond c has, over each top y, energy in
 its pillar at most C e^(-2m d_B(y, y_c)) |e|^2 and potential in L^2 of the
 pillar, in local units, of the same size. This is Theorem 4 of (1b) at
-V_0 = 1, B = 0, in local L^2 form; the pointwise form needs in addition the
-single-scale local regularity of Section 5 (LR), which has no depth in it.
+V_0 = 1, B = 0, in local L^2 form; the pointwise curvature form follows by
+Lemma LR (5.4), which has no depth in it.
 
 ## 2. Four lemmas (discharged, hand proofs)
 
@@ -451,6 +452,49 @@ Yang-Mills equation and the curvature of T as perturbations (an elliptic
 bootstrap with smallness, f and the L^4 norm small). That is the first step of
 (REL-Phi) at the nonlinear level that this note does not carry.
 
+**5.4 Pointwise bounds: local regularity (LR), flat (discharged, given one
+library lemma).**
+
+**Lemma H (interior bound for lattice harmonic functions, Z^4).** If Delta h = 0 on
+the box Q_(2r) (side 2r) then |h(x)| <= C_H r^-2 ||h||_(l^2(Q_(2r))) for x in Q_r, C_H absolute.
+*Proof.* (i) One variable: on {0, ..., r - 1}, f(x) = f(t) + (differences between t
+and x), so averaging over t, |f(x)| <= r^-1 sum_t |f(t)| + sum_t |f(t + 1) - f(t)|. Applied in
+each coordinate in turn (the differences of t -> sum |g| are at most the sums of
+|differences of g|): |f(x)| <= sum_(S ⊂ {1..4}) r^-(4 - |S|) sum_Q |d_S f|, d_S the mixed difference
+in the directions of S. (ii) Cauchy-Schwarz: sum_Q |d_S f| <= r^2 ||d_S f||_(l^2(Q)).
+(iii) Differences of h are harmonic; Caccioppoli (test Delta g = 0 with eta^2 g)
+four times on nested boxes gives ||d_S h||_(l^2(Q_r)) <= (C/r)^|S| ||h||_(l^2(Q_(2r))).
+Collect: |h(x)| <= C sum_S r^-(4-|S|) r^2 r^-|S| ||h|| = C' r^-2 ||h||. QED
+(This replaces step (3) of Theorem E by a pointwise bound; Corollary A2 then
+applies with p = infinity.)
+
+**Lemma LR (flat pointwise curvature).** For the flat minimiser A_B and a
+plaquette p of a layer >= 1, at distance >= xi_p from layer 0, with xi_p the
+finest pillar side at its corners,
+
+    |dA_B(p)| <= C(L) xi_p^-2 ( E(A_B; N_p) + sum_(c: D(c) meets N_p) |B(c)|^2 )^(1/2),
+
+N_p the plaquettes within d_B-distance c_N of p. With Theorem FL (a):
+|dA_B(p)| <= C(L) xi_p^-2 e^(-m psi(p)) ||B||: the pointwise curvature form of (1b)
+Theorem 4 at V_0 = 1.
+*Proof.* F := dA_B obeys dF = 0 and delta F = q^T omega on the free bonds, so
+Delta F = d(q^T omega) (on the flat lattice the Hodge Laplacian of 2-forms is the
+componentwise scalar one). |omega(c)| <= C_T^(1/2) ||dA_B||_(supp T delta_c) + |B(c)|-terms (test
+with T delta_c, Lemma T), and at most C rows of each of the two levels present
+reach a bond, with weights <= s_c^-3, so |q^T omega| <= C xi_p^-3 (local energy + datum)^(1/2) on the
+cube Q_p of side xi_p/2 about p. Put F_1 := d G_T (eta q^T omega), with G_T the
+mean-zero torus Green's function and eta a cut-off on Q_p: Lemma 2b of
+`lattice_gehring_hls.md` (|grad G_T(x)| <= C (1 + |x|)^-3, proved there) gives
+|F_1| <= C xi_p^-3 (..)^(1/2) sum_(|z| <= xi_p) (1 + |z|)^-3 <= C xi_p^-2 (..)^(1/2). F - F_1 is harmonic on
+Q_p/2 componentwise; Lemma H with ||F - F_1||_(l^2) <= (local energy)^(1/2) + C (..)^(1/2) ends
+it. QED
+
+The same argument gives the potential in the local Landau gauge pointwise
+away from pillar faces (Theorem E). Near pillar edges the local Landau
+potential's gradient may lose a logarithm (delta A is pillar-constant, and
+grad A is a second derivative of a Newtonian potential of a piecewise-constant
+function); the curvature bound above does not see this.
+
 ## 6. The curved linear response at a regular background (implication from one named algebraic input)
 
 **Setting.** U_0 real on Omega_0, *regular at radius eps* in local units:
@@ -522,8 +566,8 @@ own level's background, and v_n accumulates the block factors. (The outline
 states this: "averaging of order k amounts to composing the straightened
 one-step averages k times".)
 
-*(W3).* Hence D^2 Q^st_n(h, h) = sum_m [D Q^st_(m+1 -> n)] D^2 Q1^(m)(X_m, X_m) + (cross terms of the same
-form), X_m := D Q^st_m h, the straight path average with transports (no contour
+*(W3).* Hence D^2 Q^st_n(h, h) = sum_m [D Q^st_(m+1 -> n)] D^2 Q1^(m)(X_m, X_m) exactly (chain
+rule for a composition), X_m := D Q^st_m h, the straight path average with transports (no contour
 term). Each one-step D^2 Q1^(m) is a bilinear form on the O(L^5) level-m bonds of
 one double block, bounded by C(L) (Cauchy bounds of the analytic one-step
 map near flat fields, outline 1b.2), so |D^2 Q1^(m)(X, X)(c')| <= C(L) sum_(D(c')) |X|^2.
@@ -613,6 +657,25 @@ L^infinity via W^(1,12)), which I did not write.
 continuation (the outline's polydisc), and the shell variable conflation
 recorded in `sa-findings.md` are outside A3 and untouched.
 
+## 7b. Kill test (guidance only; discharges nothing)
+
+`checks/a3/fl_killtest.py`, criteria registered in its header before the first
+run; d = 2 (the proofs of Sections 2-4 are dimension-free in structure), torus
+81 x 81, L = 3, two layers (level-1 rows outside, level-2 rows on a 27 x 27 union
+of level-2 blocks), the actual tent rows, the bumps of Lemma T with one-sided
+outward bumps and the one-step triangular correction, and the saddle system
+of Section 4 with the block-diagonal gauge term. Under the numeric lock, 60
+percent memory free, 2.5 s, 0.5 GB. Results (`checks/a3/fl_killtest_results.json`):
+T1 same-level biorthogonality 4.4e-16; T2b every one of the 72 cross-level
+readings is a fine bump read by an outward coarse row (triangularity as
+claimed); T2 right inverse 2.2e-15; T4 local Landau exactness 3.5e-16 and rows
+1.6e-15; T3 energy beyond d_B-distance t decays as exp(-2.9 t) with R^2 > 0.999
+for data on a fine row, a coarse interior row and an outward seam row, the
+energy beyond half the maximal distance being 2e-13 to 3e-12 of the total.
+**PASS on all criteria.** The observed rate (about 1.45 per local unit for the
+field) is far better than the crude m(L) of Section 3. One seam, d = 2, one size:
+this cannot test uniformity in depth or in d = 4.
+
 ## 8. Verdicts, what stays open
 
 | Statement | Label |
@@ -630,7 +693,8 @@ recorded in `sa-findings.md` are outside A3 and untouched.
 | (W1), (W3): row covariance Q^sharp D = D-bar Q', multiplier term <= C(L) eps ||h||^2 in L^4, uniformly in depth | derived (6.1) from the exact factorisation of the straightened average; one-step Cauchy bounds and |omega_0| <= C eps are inputs |
 | (W2): Ward identity of the straightened Lagrangian on ker Q' | derived to the level of an implicit-function step (6.1) |
 | Theorem CL (curved linear response at regular backgrounds, decay, exactness) | implication from (W); depth-uniform |
-| (L) of `sa-2.8.md` | implication from CL, (U) = outline Theorem 1, chart bounds; pillar-averaged; one plaquette needs (LR) |
+| Lemma H (lattice harmonic interior bound, elementary) and Lemma LR (flat pointwise curvature of the response, with FL: C xi^-2 e^(-m psi) ||B||) | discharged, hand, given Lemma 2b of `lattice_gehring_hls.md` |
+| (L) of `sa-2.8.md` | implication from CL, (U) = outline Theorem 1, chart bounds; one plaquette from curved (LR) |
 
 **Open, hardest first.**
 1. *Nonlinear Theorem E:* the interior estimate of 5.1 steps (1)-(3) for the
@@ -638,13 +702,10 @@ recorded in `sa-findings.md` are outside A3 and untouched.
    relative to T (elliptic bootstrap with the quadratic Yang-Mills terms and the
    curvature of T as perturbations). With it, 5.3 closes (REL-Phi) and (REL-D)
    for (REL) of `seam-nonlinear-c.md`; Theorem CL at T supplies the decay.
-2. *(LR), curved and pointwise:* one cube, one scale; needed for the outline's
-   pointwise form of Theorem 4 and for (L) at one plaquette. The flat
-   potential bound is steps (1)-(3) of Theorem E plus Morrey from W^(1,12);
-   the gradient bound may lose a logarithm at pillar edges in the local Landau
-   gauge (delta A is pillar-constant there, so grad A is a second derivative of a
-   Newtonian potential of a piecewise-constant function), which is one reason
-   to prefer Balaban's R delta A = 0 for pointwise gradient bounds.
+2. *(LR) curved:* Lemma LR at a regular background. In a local axial gauge the
+   curved system is the flat one plus terms of relative size C R_0 L^2 eps with
+   one derivative fewer; Caccioppoli absorbs them for eps small, and Lemma H
+   then applies to the flat part. Written only to this level.
 3. *(U):* uniqueness of regular critical points (the outline's Theorem 1).
 4. *One-step inputs of 6.1:* Cauchy bounds of the one-step straightened map on
    a polydisc of radius r_L, |omega_0| <= C eps, and the implicit-function step

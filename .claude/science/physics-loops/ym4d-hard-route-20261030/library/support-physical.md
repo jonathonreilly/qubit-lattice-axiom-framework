@@ -76,7 +76,7 @@ Section 15 does not treat draws, raises or collar lifts, and says so.
 
 *Proof.*
 
-- **(a)** A history records every outcome (SA 17407). Each decomposition of unity puts into the kernel of the recorded outcome the product of its passed indicators and failed complements. Later kernels multiply nonnegative factors and integrate. A factor the outline later drops is dropped because it equals 1 on the support of the others (Lemma 2.2 (a), SA 17369), so the integrand does not change.
+- **(a)** A history records every outcome (SA 17407). Each decomposition of unity puts into the kernel of the recorded outcome the product of its passed indicators and failed complements. Later kernels multiply nonnegative factors and integrate. A factor the outline later drops is dropped because it equals 1 on the support of the others (Lemma 2.2 (a), SA 17369), so the integrand does not change. Proposition 1a.2.3 says the outline's terms are these kernels exactly. If a dropping claim failed, the term would differ from the kernel, and that would be a defect of the claim. The support defined here would not change.
 - **(b)** Steps store the level-k variables on Ω_k \ Ω_{k+1} unchanged (CMP 119 (3.1)). The linearising changes of coordinates (CMP 119 p. 249; SA 17523) are invertible, and the physical value is read through the inverse. Gauge fixing, trees and the frame sum act by gauge transformations, which conjugate plaquette holonomies. A completed decision removes the old determining layers of its component (SA 17416-17420). The main step of R integrates V_k on b_X only, and the reference law redraws it there (SA 17585, 17604).
 
 Part (c) follows from (a) and (b). ∎
@@ -173,7 +173,7 @@ Not constructed: the full admitted later history. The template is the late quiet
   - By (11.4), L_♭^{2e} ≤ L^{2(s−j_0)} = R_{j_0}² ≤ L² R_s². So in bare units the curvature is below 3L²R_s²ε_s L^{−2s}, and (5.3) gives |∂V_s(p') − 1| ≤ 6L²R_s²ε_s.
   - The draw does not change these values (Lemma P(b)).
 - **(iii) p' meets b_Y.**
-  - By (i) and (ii), and the remark on lifted plaquettes, the exterior data are below ε at the draw. They are not changed afterwards.
+  - By (i) and (ii), the exterior data are below ε at the draw. Just outside Y they are bounded by the step-s tests, case T, at 2ε_s. Lifted plaquettes obey the same bounds. None of these values changes afterwards.
   - The centre V_Λ, in every frame r (SA 17585: the frame sum keeps a cut-off and a tree per summand), is Proposition 2.4's orbit element for these data. So |∂V_Λ − 1| ≤ C(M)ε at every plaquette meeting b_Y.
   - Under R1 the law's support gives |log V'(b)| < M_0 ε_s on all of b_Y. Then (10.3), proved from (3.3) and ‖e^{iA} − 1‖ ≤ ‖A‖ and rechecked, gives |∂V_s(p') − 1| ≤ C(M)ε + 4M_0 ε_s ≤ (7L²C(M) + 4M_0) R_s² ε_s.
 

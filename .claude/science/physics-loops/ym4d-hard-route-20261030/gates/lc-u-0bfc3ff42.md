@@ -15,7 +15,7 @@ lease_until: 2026-11-02T13:50Z
 | (3.2) implies Gram bound 9I/16 <= r_B r_B^* <= I | 3 | ADVANCE | r_B matches the source: r^[j] = ev - Phi^[j] D_j is the contour average in V_j. Averaging orders is fine, since singular values of A J stay at least 1 - delta |
 | (3.4) to (3.8), covariant mean test and projector commutator | 3 | ADVANCE | Identity (3.6) and K_m rechecked. The summed form matches the gauge term of (LC_U), with sigma <= 2S |
 | (4.1) to (4.5), finite moment matrix, density and the jump | 4 | ADVANCE | The pruned tree of `fd-jumps.md:141` does give "no finer row in a coarse leaf interior", with nothing depending on curvature. Moments rest on rows exactly (1-t, t), rechecked in `gates/fd-local-00f9df685.md` |
-| Support bookkeeping, P+ and P++ | 4, 5 | ADVANCE | Row, then touched coarse row and leaf, then derivative margin: at most 9S |
+| Support bookkeeping, P+ and P++ | 4, 5 | ADVANCE | Row, then touched coarse row and leaf, then derivative margin: 4S + 4S + S = 9S. The file prints 8S; harmless against 32S |
 | (5.2) to (5.5), angle recursion E_j <= 2 s_j a | 5 | ADVANCE | Row sum L^2, column sum L^-2, Jensen constant L, second-order Taylor remainder of the side map, bootstrap all redone. Needs only a <= a_0(L) |
 | One-step open-path identity, (5.6), (5.7) | 5 | ADVANCE | Load-bearing. See "Why Section 5 holds" |
 | Endpoint identities, site and bond, (5.8) | 5 | ADVANCE | The bond "extra prefix" induction written out here term by term: u_(j+1) is the parent of u_j and an endpoint of b_j; one local loop per level, no branching |
@@ -51,7 +51,7 @@ at the actual U, with only S ||F||_(4, B_S) <= C a_* on boxes meeting the patch,
 Failure of the two possible suppliers. (a) Lemma D-coer (`fibre-propagator.md:122`) is on a torus, with ||F||_(L^4(box)) <= a on every box at model scale. In a nest, a box of side S that meets a wall at scale s << S has S ||F||_(4, B_S) of order (S/s) a_*, which is the source's own remark at line 148, so the hypothesis fails off the patch. (b) Its torus input, Lemma TP-sharp at a background (line 75), and the proof of (NC) (line 150, "the background is U = 1 up to C a_* R_0^2") both read the pointwise axial bound |A~| <= C a R. Hostile point (6') says that bound fails at the actual lift, and its list of three places that read R(a) omits these two. So Theorem F at the actual lift has the same step open, not only Section 9.
 
 **Repair, unproved.** Reduce to flat, in a frame, at a cost that a_loc(L, R) may pay. On a cube Q of side rho about 20 R S:
-1. L^4 form of (3.1): Hölder in place of Cauchy-Schwarz along a strip gives avg_z ||D_U J_z||_4^4 <= C rho^4 ||F||_(4,Q)^4, so some z has ||D_U J_z||_(4,Q) <= C R^2 a / S.
+1. L^4 form of (3.1): Hölder in place of Cauchy-Schwarz along a strip gives avg_z ||D_U J_z||_4^4 <= C rho^4 ||F||_(4,Q)^4, so some z has ||D_U J_z||_(4,Q) <= C rho ||F||_(4,Q) <= C R^2 a, a dimensionless bound.
 2. Lattice Sobolev by hand: ||H||_4 <= C ||grad_U H||_2 for compact support, from ||v||_(4/3) <= (1/4) sum ||D_i v||_1 of Section 8 at v = |H|^3 and Kato. So for H~ := J^-1 H, the L^2 difference of grad H~ and J^-1 grad_U H is at most C R^2 a ||grad_U H||.
 3. (8.4) bounds ||grad_U H||^2 by C_G(L) G_P^2.
 4. (5.6) on loops of length rho, closed off by area at scale S, gives T_(c,x) J_z(x) = O_c + O(C(L,R) a) on every row and leaf of Q, so C_U and P_U equal flat C_0 and P_0 in the frame J up to C(L,R) a, with absolute kernels by (5.10).
@@ -79,7 +79,7 @@ Memory free 56, then 51 percent at start. Lock acquired, confirmed, released and
 
 ## Read, and not read
 
-Read by hand: `library/lc-u.md` Sections 1 to 9. Inline labels in those sections are unavoidable, but Section 10, the file's decision, was read only after the table above was fixed; it changes nothing. Its scope statement agrees with this gate, except that it treats C_0 as an inherited input with a named source, and D1 finds no such source.
+Read by hand: `library/lc-u.md` Sections 1 to 9. Inline labels in those sections are unavoidable. Section 10, the file's decision, was read after the hand pass and D1 were saved in a working note here, and before the table above was typed out; it changed no verdict. Its scope statement agrees with this gate, except that it treats C_0 as an inherited input with a named source, and D1 finds no such source.
 
 Passages: `composite-adjoint.md`, `fibre-propagator.md`, `fd-local.md` Sections 1 to 5, `fd-jumps.md` Sections 3 and 4, `quiet-boundary-rarity.md:39-52`, `block-poincare-energy-package.md` Lemma 4 and Theorem 7 Steps 1 and 4 by search, `parts/upper-chain.md:1264`, `gates/fd-local-00f9df685.md`, search hits in `parts/hard-core--mapped.md`.
 

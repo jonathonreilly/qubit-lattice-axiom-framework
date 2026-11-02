@@ -22,9 +22,12 @@ replacement cost R_D and (GLUE-E). **Flat background** means: the terminal
 parent V has flux at most f <= T_2, with T_2 chosen after L; U is the class
 minimizer of the terminal-parent problem with parent V (no frozen fine
 links); T is the iterated trial of `parts/hard-core--excess.md` 2.3, with
-M_n(T) = V. Top units have side B; for a fine 1-form h, H := B h is its top
-normalization, so that, by (SCALE) of `seam-nlpay`,
-sum_b |h_b|^4 = ||H||_(L^4)^4 and B^-2 sum_b |h_b|^2 = ||H||_(L^2)^2.
+M_n(T) = V. Top units have side B. For a fine 1-form w of link logarithms,
+its top normalization is W := B w, and by (SCALE) of `seam-nlpay`
+sum_b |w_b|^4 = ||W||_(L^4)^4 and B^-2 sum_b |w_b|^2 = ||W||_(L^2)^2.
+**Notation.** In Sections 2 and 3 (linear level) H, G are fine-unit forms
+as in `seam-quadratic-c` and h is the tensor homotopy; from Section 4 on, H
+is in top normalization, the fine link logarithm being H_b/B.
 
 **Questions (queue row 61).**
 - Q1. Does the path-gauge primitive H = hG with the chain-map right inverse
@@ -159,9 +162,12 @@ sites, which costs B^-2 in the fourth power.
 1. *From energy alone, no.* Take the pair of endpoints U := the locked-pair
    field exp(a(delta_(b_+) - delta_(b_-))) and T := 1. Both are class with
    identity parents (`seam-nlpay` Section 4), and the path-gauge alignment
-   h := -hG has gauge function hH_0, which vanishes at every top centre
-   (x_2 = c_2 there), so it is an admissible (ALIGN) with q = 1. Its left side
-   of (NL-pay) is at least 2 sum_p s_p^4 >= (9m/64) a^4, while the right side
+   w := -hG (relative link logarithms) has gauge function hH_0, which
+   vanishes at every top centre (x_2 = c_2 there), so it is an admissible
+   (ALIGN) with q = 1. Put c in the middle of a transition of width r/2 >= 4
+   top units, so that the pair and its strings (within 2 top units of c) lie
+   in S_0. The left side of (NL-pay) is then at least
+   2 sum_p s_p(w)^4 >= (9m/64) a^4, while the right side
    is at most C_rel(L) 12 (1 - cos a) <= 6 C_rel(L) a^2. So (NL-pay) fails for
    this alignment as soon as m > (128/3) C_rel(L) a^-2, and a is fixed before
    depth. U is not the minimizer for its parent (the identity is), so this
@@ -190,8 +196,9 @@ sites, which costs B^-2 in the fourth power.
    linear form discharged, nonlinear form needs the composite estimates of
    Section 4), this is C f^2 times the local energy: relative size f^2.
 3. *But the homotopy normalization cannot carry the nonlinear relative field.*
-   The nonlinear relative field must be one exact field with T^g = exp(h) U.
-   Imposing the homotopy normalization h(h) = 0 on it is a nonlinear gauge
+   The nonlinear relative field must be one exact field w with
+   T^g = exp(w) U. Imposing the homotopy normalization h(w) = 0 on it is a
+   nonlinear gauge
    fixing whose iteration applies the 1D integration h to products of the
    field; with only L^4 data the products are not in a space that h maps
    back to L^4, for the same reason as Lemma NC (diagnostic, not a theorem).
@@ -382,7 +389,7 @@ Theorem 7 Step 1 with base chain the chain of T, together with the background
 residual of the contour part from its proof: for fine K with
 sup_Q ||K||_(L^4(Q)) <= rho(L) and e_j(b) := ||K||_(L^4(b^+)) at every level j,
 
-    |log N^(j)(e^(K/B) T)(b) - log N^(j)(T)(b) - Q^(o,(j)) K(b)| <= C_2(L) e_j(b)^2,
+    |log N^(j)(e^(K/B) T)(b) - log N^(j)(T)(b) - Q^(o,(j)) K(b)| <= C_AN(L) e_j(b)^2,
     |Q^(o,(j)) K(b)| <= C_1 e_j(b),   C_1 absolute,
 
 and Q^(T)_n = Q_path^(T) - d' Phi_n^(T) + (residual at most C(L) f e_n), with
@@ -403,13 +410,14 @@ every r >= 1, there is a field X_D with
      C(L) f <= T_class, hence class at every level;
 (iii) R_D <= A_s sum_p (K * 1_(S_(r + R_0)(D)))(p) [a_U(p) + a_T(p)], with
 
-    A_s = (1 + C_seam^(1/2))^2,   C_seam = 311328 C_2^2 / r^2 + C(L) f^2,
+    A_s = (1 + C_seam^(1/2))^2,   C_seam = c_0 C_2^2 / r^2 + C(L) f^2,
+    c_0 := (pi^2/2) x 311328 < 1.54 x 10^6,
 
 R_0 an absolute enlargement (correction range plus R_M <= 2, the reach of the
 composite map, plus 5), and K a probability kernel, the transpose of K_delta
 smeared by the exponential tail of the Picard correction, whose rate tends to
 infinity as f -> 0.
-Choosing r := 1116 C_2 (so that the linear part of C_seam is at most 1/4)
+Choosing r := 2480 C_2 (so that the linear part of C_seam is at most 1/4)
 and then f small after L gives A_s <= 2.56. Then, for every nu <= delta/2,
 M_* := sum_z K(z) exp(nu d(z, 0)) <= C_M(delta, R_0), and
 
@@ -417,7 +425,7 @@ M_* := sum_z K(z) exp(nu d(z, 0)) <= C_M(delta, R_0), and
     nu < nu_0 := min(delta/2, arcsinh(1/(6 C_M)) / r_E),
 
 **with nu_0 absolute provided C_2 and delta are absolute.** Every L-dependent
-constant (C_4, C_Phi, C_2(L) of (CMP), the Picard and residual constants)
+constant (C_4, C_Phi, C_AN(L) of (CMP), the Picard and residual constants)
 enters only through C(L) f^2 or C(L) f, which T_2(L) absorbs.
 
 **4.4 Proof, at the level of each term.**
@@ -494,7 +502,7 @@ profile, which is part of K.
 
 *Step 7 (class at every level; implication from (CMP)).* By (CMP) at each
 level j, with K = H + Z and (REL-4), (REL-Phi), (REL-E) and Step 5,
-flux(M_j(X)) <= flux(M_j(T)) + C(L) sup_Q ||H + Z||_(L^4(Q)) + C_2(L)(...)^2
+flux(M_j(X)) <= flux(M_j(T)) + C(L) sup_Q ||H + Z||_(L^4(Q)) + C_AN(L)(...)^2
 <= C_7 f + C(L)(C_4 + C_Phi) C_E^(1/2) f, and at the fine level a single link
 value obeys |H_b + Z_b|/B <= ||H + Z||_(L^4(Q)). So every level has flux at
 most C(L) f <= T_class for f <= T_2(L). This needs no smallness of fine energy
@@ -509,11 +517,13 @@ Since chi_p = 1_D(p) off S_r(D),
 where ERR_p collects the seed terms of Step 2 and the correction terms of
 Step 6. By (REL-2), (REL-4), (REL-Phi), (REL-E) and Steps 2, 5 and 6,
 sum_p ERR_p <= [311328 C_2^2/r^2 + C(L) f^2] sum_p (K * 1_(S_(r+R_0)(D)))(p) E(p),
-where 311328 = 2 x (96 + 155568) and the quartic terms are
+where 311328 = 2 x (96 + 155568) (a crude count: it charges the seed's
+cutoff term twice) and the quartic terms are
 384 C_4^4 (K_delta * E)^2 <= 384 C_4^4 C_E f^2 (K_delta * E), likewise
 C_Phi^4 r^-4 (K_delta * E)^2 for the beta_Psi part of Z. The squared angles
 E and the actions a differ by fixed factors at these fluxes ((ANGLE) of
-`seam-nlpay`: 2 t^2/pi^2 <= 1 - cos t <= t^2/2). Optimizing a constant
+`seam-nlpay`: 2 t^2/pi^2 <= 1 - cos t <= t^2/2), so E <= (pi^2/2) a, which
+turns 311328 into c_0. Optimizing a constant
 eps_0 gives A_s = (1 + C_seam^(1/2))^2, as in `seam-quadratic-c` 6.1; the
 coefficient 1 in front of 1_(S_r(D)) is the structural term recorded there.
 The rate statement is the arithmetic of `seam-quadratic-c` 6.2 with the
@@ -525,7 +535,7 @@ constants above. QED, as an implication.
 |---|---|---|
 | quartic seed term s_p^4 | 384 C_4^4 C_E f^2 | (REL-4), (REL-E) |
 | second-moment seed term | 96 C_2^2 / r^2, absolute | (REL-2) with C_2 absolute |
-| linear correction curvature | 77760 C_2^2 / r^2 (1 + C(L) f) | Lemma GG at the background T |
+| linear correction curvature | 155520 C_2^2 / r^2 (1 + C(L) f), from 2 x 324 x 240 | Lemma GG at the background T |
 | contour-average part of Z | C_Phi^4 r^-4 C_E f^2 | (REL-Phi) |
 | nonlinear parent remainder rho | C(L) (C_4^2 C_E + 1) f^2 | (CMP): L^-2 per level of the critical norm |
 | transports of T, Y in the correction | C(L) f | pointwise smoothness of T |
@@ -538,3 +548,101 @@ R_0, M_* and nu_0 come from the linear part only and are absolute when C_2 and
 delta are. If C_2 depended on L, r would have to grow with it, and
 (RATE-exact) at a rate fixed before L would fail for this construction:
 that is the one place where an L-dependence would be fatal.
+
+## 5. Verdicts, the stop, consumers
+
+| Statement | Label |
+|---|---|
+| Lemma NC: the path-gauge primitive hG is not critical, sum_b abs(hG)^4 >= (m/3072) abs(G)_2^4 on the locked-pair field | discharged here, hand proof; kill test confirms (criticality REFUTED as registered) |
+| "The path-gauge alignment pays (NL-pay) for class endpoint pairs with one parent" | false (Section 2, item 1); not a refutation of (NL-pay) for the specified U, T |
+| The path-gauge primitive pays the fourth moment of (SEED) given top-scale L^4 control (R3) of both endpoint curvatures | discharged at the linearized level (Schur bound 1.2 x 10^10 B^4); the homotopy normalization does not carry the nonlinear field (diagnostic) |
+| (PATCH) | not needed: any single global relative field has no transition term (3.1) |
+| Lemma GG: the linear seam in any parent-preserving gauge, constant 155568/r^2 | discharged here |
+| Lemma CT: contour averages Psi = Phi_n H at top centres enter the correction field, size abs(Psi)/r, not its curvature | discharged here (linear level) |
+| (NL-pay) at the flat background | implication from (REL-2), (REL-4), (REL-E) |
+| Theorem GN: (GLUE-E) with M_n(X_D) = V exactly, class at every level, A_s <= 2.56 at r = 2480 C_2 | implication from (REL) and (CMP), at the level of each term |
+| (RATE-exact) | implication; nu_0 absolute if and only if C_2 and delta are |
+| (REL) | gap; (REL-Phi) has no supplier; the rest is (R2), (R3) of mapped Text 5.3 moved to the trial T (implications from Theorem F, not reviewed) |
+
+**Answers to the queue row.**
+- Q1, transition term of (PATCH): removed, at the linear level by the global
+  homotopy formula, at the nonlinear level by any global relative field. The
+  nonlinear relative field cannot be produced by the homotopy normalization
+  in critical norms; (R2)'s global fixed point, taken around T, is the
+  natural candidate.
+- Q2, fourth moment of (SEED): not from energy alone (Lemma NC); yes given
+  top-scale L^4 control of the relative field and small energy per top cube
+  for the actual minimizer ((REL-4), (REL-E)). But a critical gauge
+  introduces the contour averages of Lemma CT, which must then be bounded.
+- Q3, errors C(L) x flux: yes, given (REL) and (CMP) (table 4.5). The one
+  fatal L-dependence would be in C_2, the L^2 constant of the linear response.
+- Q4, (GLUE-E) with exact parent and class at every level: implication
+  (Theorem GN).
+
+**STOPPED, with a strictly smaller inequality: (REL), and inside it
+(REL-Phi).** The first step of this route that is not carried is Step 1 of
+4.4, which reads (REL). Of its clauses, (REL-E) for T is discharged here;
+(REL-E) for U, (REL-g), (REL-2) and (REL-4) are what Text 5.3 (R2) and (R3)
+claim for the class lift relative to the one-shot trial, and need restating
+at the iterated trial T in one global gauge. **(REL-Phi) is new and
+unsupplied:**
+
+    |Phi_n^(T) H(y)| <= C_Phi(L) (K_delta * E)(Q_y)^(1/2)   at every top centre y,
+
+uniformly in depth: the composite contour average of the critical relative
+field at a top centre, which is a block centre at every level. It is
+equivalent, up to a capacity factor at the centres (Lemma CT, remark (a)), to
+**the class minimizer's relative field having a critical representative in
+the path gauge** (Q_path^(T) H = 0 to second order and Phi_n^(T) H = 0). So the
+path gauge is the right gauge for the seam, as `seam-quadratic-c` found, but
+the homotopy picks the wrong representative (Lemma NC); the locked pair
+itself is a critical path-gauge representative of its curvature, so the
+needed representative can exist where hG fails. A W^(1,4) bound on H at the
+top scale would give (REL-Phi) (line integrals of W^(1,4) functions in d = 4
+are controlled); (R3)'s H^2 bound in local Landau gauges points that way, and
+the scaling count of `relative-density-bound` item 2 (a logarithm in the
+gradient of H at nested centres, which integrates to a bounded H) suggests
+(REL-Phi) is true. Neither is a proof. No counterexample to (REL-Phi),
+(NL-pay) or (GLUE-E) for the specified U, T was found.
+
+**Consumers that change.**
+1. (GLUE-E) of `excess-shell-end` 4.2: read through Theorem GN. What has to
+   be supplied is (REL) and (CMP), not (NL-pay) with (PATCH) and Lemma U.
+   The local Uhlenbeck route of `seam-nlpay` is not needed.
+2. Consumer item 1 of `seam-quadratic-c` 8: (LC) holds for any
+   parent-preserving primitive with a local L^2 bound (Lemma GG). The
+   homotopy normalization H = hG should not be carried to the nonlinear
+   level: it is not critical.
+3. Mapped Text 5.3 (forwarded by the lead, mapped side): (GLUE-E) adds a
+   consumer of (R2) and (R3), at the iterated trial T rather than U^tr, in
+   one global gauge, plus (REL-Phi) or a global W^(1,4) bound.
+4. Rate: K now carries the response's decay rate delta, which adds the
+   pre-L ceiling nu <= delta/2 beside nu < nu_0 of `seam-quadratic-c` 6.2.
+   Every reader of nu must accept it; not checked here.
+5. If any consumer needs (GLUE-E) with frozen fine data, (REL-E) fails there
+   by (LOCK), and Section 2 item 1 shows the path-gauge alignment fails as
+   well; only the cancellation of identical frozen plaquettes
+   (`seam-nlpay` 5) is left for that version. Not attempted.
+
+**What stays open.** (REL), in particular (REL-Phi); (CMP), that is Lemma
+AN1 and the exact-fibre Picard step at the background T with depth-uniform
+constants; the identification of the fixed point around T with the class
+minimizer (item (o)); curved backgrounds (walls, class branch), not
+attempted; the frozen-data version.
+
+**Read and not read.** Read: FINISH.md and GOAL.md in full;
+`library/seam-quadratic-c.md`, `library/seam-nonlinear.md`,
+`library/seam-nlpay.md` in full; `library/excess-shell-end.md` Sections 1, 3,
+4.2 and 5; `parts/hard-core--mapped.md` Text 1, 3.1, 3.2 and Text 5.3 items
+(R1) to (R3) with the status paragraph, and grep lines of its Obligations
+and Requests; `parts/hard-core--excess.md` 1.1, 1.2 and 2 (2.1 to 2.3);
+`library/sector-values.md` from Step 1 of Section 3A to Lemma FALL;
+`library/analytic-lift.md` from the start to Prop AN3;
+`library/block-poincare-energy-package.md` Theorem 7 and the list after it;
+`library/relative-density-bound.md` the Numbers paragraph, Lemma 1, and grep
+lines for item (o) and (R3); the code `checks/seamqc/seamqc.py` (operators,
+reused). Not read: every file excluded for the mapped side in FINISH.md, every
+gate file, `library/seam-quadratic.md`, `library/lattice-uhlenbeck.md`,
+`library/lattice_sobolev_box_gauge.md`, the Sussman-Alpoge repository, and
+any literature. No subagent, commit, push or post; one numeric job, under the
+lock, at 65 percent memory free.

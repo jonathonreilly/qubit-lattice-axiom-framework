@@ -25,3 +25,7 @@ FAIL otherwise. Then find the mode.
 d = 2 has no balanced fan; this tests bookkeeping of L and depth only.
 
 Memory: start only at 50 percent free or more. Scripts stop themselves above 2 GB RSS. One job at a time, under the numeric lock.
+
+## Amendment to T2, made during the run, before any L = 16 value existed
+The run at 4^3 parents, L = 16, reached 1.94 GB RSS inside the sparse LU and was killed under the 2 GB rule. Values already seen: fan A = 1.7395, 2.1788, 2.7180 at L = 2, 4, 8; flat A = 1.6607, 1.7032, 2.1303. So A(8)/A(4) = 1.2475 had been seen, just under the 1.25 written.
+New geometry: 2^3 parents, Neumann outer faces, same walls, L = 4, 8, 12, 16, 24, with a watchdog at 2 GB. Same pass rule per doubling (A(16)/A(8), A(8)/A(4) <= 1.25), plus A(24)/A(16) <= 1.25 reported. A rising value that flattens is what an extension domain predicts, since data at zero parent mean are suppressed at small L. A run cannot show a limit either way.

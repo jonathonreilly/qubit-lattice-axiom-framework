@@ -2,14 +2,28 @@
 """T3: flat D-coer constant in d = 2, in L and depth. See CRITERIA.md."""
 import resource, sys
 import numpy as np
+import scipy.sparse as sp
 import scipy.linalg as sl
 
 P = 4  # torus of 4 parents; bricks of side 2 parents shifted by 1
 
 
 def guard():
-    if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss > 2e9:
-        sys.exit("RSS above 2 GB")
+    pass
+
+
+def watchdog():
+    import os, subprocess, threading, time
+
+    def loop():
+        while True:
+            rss = int(subprocess.check_output(["ps", "-o", "rss=", "-p", str(os.getpid())]))
+            if rss > 2_000_000:
+                print("watchdog: RSS above 2 GB, stopping", flush=True)
+                os._exit(3)
+            time.sleep(1.0)
+
+    threading.Thread(target=loop, daemon=True).start()
 
 
 def brick(px, py):
@@ -86,14 +100,16 @@ def run(L, M, omega_set):
                         C[r, bi(mu, bx, by)] = val
                     r += 1
     guard()
-    Qc, _ = sl.qr(C.T, mode="full", check_finite=False)
-    rank = C.shape[0]  # rows are independent: Section 8 gives a right inverse
+    Qc, _ = sl.qr(C.T, mode="full", check_finite=False, overwrite_a=False)
+    rows_n = C.shape[0]
+    del C
+    rank = rows_n  # rows are independent: Section 8 gives a right inverse
     Z = Qc[:, rank:]
     del Qc
     guard()
     # d, D*
-    dm = np.zeros((ns, nb))
-    Dst = np.zeros((ns, nb))
+    dm = sp.lil_matrix((ns, nb))
+    Dst = sp.lil_matrix((ns, nb))
     for x in range(N):
         for y in range(N):
             p = si(x, y)
@@ -105,8 +121,8 @@ def run(L, M, omega_set):
             Dst[p, bi(0, x, y)] -= 1
             Dst[p, bi(1, x, y - 1)] += 1
             Dst[p, bi(1, x, y)] -= 1
-    dm /= eta
-    Dst /= eta
+    dm = (dm.tocsr() / eta)
+    Dst = (Dst.tocsr() / eta)
     # leaves of P_N: subtract means
     leaf = {}
     for x in range(N):
@@ -132,6 +148,7 @@ def run(L, M, omega_set):
 
 
 if __name__ == "__main__":
+    watchdog()
     res = {}
     for name, om in (("one", {(0, 0)}), ("two", {(0, 0), (1, 0)})):
         for L, M in ((4, 1), (8, 1), (16, 1), (4, 2), (4, 4), (8, 2)):

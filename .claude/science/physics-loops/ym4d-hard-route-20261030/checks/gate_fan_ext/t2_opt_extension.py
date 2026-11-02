@@ -5,7 +5,21 @@ import numpy as np
 import scipy.sparse as sp
 import scipy.sparse.linalg as sla
 
-P = 4  # parents per side
+P = 2  # parents per side (amended, see CRITERIA.md)
+
+
+def watchdog():
+    import os, subprocess, threading, time
+
+    def loop():
+        while True:
+            rss = int(subprocess.check_output(["ps", "-o", "rss=", "-p", str(os.getpid())]))
+            if rss > 2_000_000:
+                print("watchdog: RSS above 2 GB, stopping", flush=True)
+                os._exit(3)
+            time.sleep(1.0)
+
+    threading.Thread(target=loop, daemon=True).start()
 
 
 def guard():
@@ -114,8 +128,9 @@ def run(L, pattern, literal=False, steps=40):
 
 
 if __name__ == "__main__":
+    watchdog()
     res = {}
-    for L in (2, 4, 8, 16):
+    for L in (4, 8, 12, 16, 24):
         for pat in ("flat", "fan"):
             res[(L, pat)] = run(L, pat)
             print("L", L, pat, "A =", round(res[(L, pat)], 4), flush=True)
@@ -126,5 +141,5 @@ if __name__ == "__main__":
     r1 = res[(8, "fan")] / res[(4, "fan")]
     r2 = res[(16, "fan")] / res[(8, "fan")]
     c = min(lit[4] / lit[2], lit[8] / lit[4])
-    print("ratios fan", r1, r2, "literal min ratio", c)
+    print("ratios fan", r1, r2, "24/16", res[(24, "fan")] / res[(16, "fan")], "literal min ratio", c)
     print("T2", "PASS" if r1 <= 1.25 and r2 <= 1.25 and c >= 1.5 else "FAIL")

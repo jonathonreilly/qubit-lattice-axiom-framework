@@ -1,0 +1,5 @@
+one L 4 M 1 C_0 = 0.1064
+one L 8 M 1 C_0 = 0.1062
+watchdog: RSS above 2 GB, stopping
+T3rc=3
+System-wide memory free percentage: 60%

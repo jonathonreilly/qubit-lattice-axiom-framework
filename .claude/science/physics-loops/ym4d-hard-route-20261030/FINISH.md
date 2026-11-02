@@ -24,6 +24,24 @@ Written by the target lead on 2026-10-31. `GOAL.md` holds the target and the def
 3. NT1 and NT2 hold, as `parts/witness.md` states them.
 4. One clean document holds the whole chain, followed by a line-by-line independent review of it, then the owner's approval of the exact text. Balaban and Dimock are credited by name. Until then there is no public claim.
 
+## State of the mapped route, 2026-11-02
+
+One cross-provider read each, not an audit, no status.
+
+| Step | Where | State |
+|---|---|---|
+| Flat one-jump coercivity and F-D, fans | `library/fan-ext.md`, gate 73b09692a | stands, flat |
+| Flat several-jump coercivity | `library/fd-local.md`, gate 00f9df685 | stands |
+| Curved local lift (LC_U) | `library/lc-u.md`, gate 0bfc3ff42 | stands on its domain |
+| Curved D-coer, TP-sharp, Ward, (NC) | `library/c0-loc.md`, gate 51679e441 | stands on the admitted domain, D1 threshold repair |
+| Several-jump F-D, absolute rate | `library/c0-loc.md` (10.8) | implication; reads stationary class fills, top inclusions, class identification |
+| (FALL) rate for DS and COMP-B | Lemma DOM, gate shell-end-c16e2a968 | proved given (FALL) at a smaller rate; same-model; region clause open |
+| Small stationary fill, one domain | `library/fill-supply.md` Section 4 | contract written, not closed |
+| **Full-law mass outside the chart: rarity** | (AE-R), (HW), Z, DM, `library/one-window.md` | **open. Most likely place for this route to fail** |
+| (UP) at nonlinear level | (GLUE-E), (NL-pay), (PATCH) | open |
+
+**Rarity, the next question (`rarity-fresh`).** The consumers need a full-law bound on marked events under class parents, with product form for compatible marks and control through rough intermediate parents. Known: raw fine energy is extensive on typical fields (Lemma TYP), so a raw fine-energy trigger cannot be rare; `heavy-wall` shows the stage's layer selection has no output beside a heavy wall; chart concentration does not bound the complement; centre-plane chessboard fails on the class branch (`one-window` Section 3); a uniform local gain fails. (HW) has no refutation. Propose and attack one complete route to a full-mass producer that the consumers can read, and say which consumers change. You may change the state or a statement if you say what breaks. Do not narrow to a smaller inequality as your output: end by naming the first step of your route that fails, or carry it through.
+
 ## Current order
 
 Lead, 2026-11-01, after `gates/strategy-codex-b5251ab07.md`. Three kill tests come first: `joint-induction`, `tail-two-step`, `seam-quadratic`. The unit of work is one fresh session on one inequality, delivering a displayed estimate or a specific failed term.
@@ -86,9 +104,11 @@ Take the first item that is not taken, unless the lead has named one for you. An
 | 48 | `lc-u-gate` | mapped | done | (LC_U) ADVANCE on its stated domain, Sections 3 to 5 redone by hand. Several-jump F-D not delivered as written: C_0 has no supplier at a curved local background (D1), with a repair by frames, unproved, reducing to flat one-jump. | `gates/lc-u-0bfc3ff42.md` |
 | 49 | `dcoer-gate` | mapped | done, Codex | No WRONG. D-coer, F-D and (NC) are CORRECT-NO-ADVANCE: the uniform discrete fan extension with prescribed means is still a premise, and the background inputs must be stated separately. No failure of C_0 free of L found. | `gates/dcoer-codex-e0c0b9a6f.md` |
 | 50 | `fan-ext` | mapped | done, Codex, ungated | Reports proofs of the corrected flat fan extension, chart cover, flat D-coer and flat one-jump F-D with absolute rate, for large L. Background versions are implications with named extra inputs. | `library/fan-ext.md` |
-| 51 | `fan-ext-gate` | mapped | high | Check `library/fan-ext.md` Sections 1 to 8 by hand, without first reading its verdicts: the refutation of the literal condition and the correction to (1.1), the mean correction at the correct scale, the chart cover and full pattern list, the tree reflection (4.1) to (4.6), gluing and mean restoration, the bounded fine lift, flat D-coer constants, and the flat F-D rate. Try to find a step asserted and not derived, and any place C_0 hides L or fine depth. Written by another provider. | `gates/fan-ext-<commit>.md` |
+| 51 | `fan-ext-gate` | mapped | done | No WRONG on flat Sections 1 to 8; C_0 free of L and depth. A numeric rule failed on a 3D fan (growth near log L at small L), open tension, not a refutation. | `gates/fan-ext-73b09692a.md` |
 | 52 | `c0-loc` | mapped | done, Codex, ungated | Reports proofs of (C0-loc), repaired TP-sharp, the Ward repair, curved D-coer and several-jump F-D with absolute rate, on the stated admitted domain. Branch existence and top inclusions are not supplied. | `library/c0-loc.md` |
-| 55 | `c0-loc-gate` | mapped | high | Check `library/c0-loc.md` Sections 3 to 10 by hand, without first reading its verdicts: the common-frame reduction, the one-carry path identity (4.1b), frame energy and Sobolev, the norm absorption (7.1) and (7.2), localization, the pruned Ward identity, and the several-jump conclusion. Look for circular order of constants, and any L or depth in C_0. Written by another provider. | `gates/c0-loc-<commit>.md` |
+| 55 | `c0-loc-gate` | mapped | done | No WRONG. (C0-loc), TP-sharp, Ward, curved D-coer and (NC) stand on the admitted domain, with a threshold repair (D1) for no-wall cubes. F-D (10.8) is an implication from unsupplied inputs. | `gates/c0-loc-51679e441.md` |
+| 56 | `rarity-fresh-c` | mapped | max | See the section 'State of the mapped route, 2026-11-02'. Blind to `rarity-fresh-x`. | `library/rarity-fresh-c.md` |
+| 57 | `rarity-fresh-x` | mapped | Codex, laptop | The same question, blind to `rarity-fresh-c`. | `library/rarity-fresh-x.md` |
 | 53 | `fill-supply` | mapped | done, Codex | hw-fine's two minima lose stationarity once transverse bonds are free. Stationarity suffices for chart and Laplace algebra; probabilistic consumers need a full-mass producer, which chart concentration does not give. Stops at (ONE), one rough plaquette under a flat-parent window, one step. | `library/fill-supply.md` |
 | 54 | `one-window` | mapped | done, Codex | (ONE) undecided. Uniform local gain killed by a one-link obstruction; centre-plane chessboard killed by a negative reflection form on the class branch. Stops at (JW), a fixed-geometry parent density bound, not pursued. Separated one-point bounds give no product. | `library/one-window.md` |
 | 45 | `fd-local-gate` | mapped | high | Check `library/fd-local.md` Sections 2 to 6 by hand, without first reading its verdicts: the clearance geometry (G1) to (G3), the total-overlap lemma, the flat constraint correction (C1) to (C5), the gauge commutator, and the flat IMS estimate. Also decide whether (G2), t_0 >= 10^4 R L^2, conflicts with any reader of t_0 in the mapped attempt, since a larger clearance feeds the budgets. Written by another provider. | `gates/fd-local-<commit>.md` |

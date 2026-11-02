@@ -1,6 +1,6 @@
-# Findings in the Sussman-Alpoge outline (held until our proof is done)
+# Findings in the Sussman-Alpoge outline (reported as issues with the owner's approval of each text)
 
-Source: `YM4_sketch_500.tex`, https://github.com/ethanwsussman/Yang--Mills-LLM-experiment at `31a47c543775` (Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text). Per FINISH.md "Our proof first", these are logged now and offered as issues, one per finding with the owner's approval of the exact text, when we share. Status column: who found it and whether a second reader has checked it.
+Source: `YM4_sketch_500.tex`, https://github.com/ethanwsussman/Yang--Mills-LLM-experiment at `31a47c543775` (Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text). Status column: who found it and whether a second reader has checked it.
 
 | # | Location | Claim in the outline | Defect | Shown by | Status |
 |---|---|---|---|---|---|

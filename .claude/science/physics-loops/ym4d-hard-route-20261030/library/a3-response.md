@@ -273,3 +273,70 @@ corners: the patching is local and the zero means kill every flat
 non-exact field), and the volume. Inside a layer the rate is absolute; the
 L-dependence comes only from seam transitions (Lemma P (ii)). No Fourier
 analysis, no random walk, no local inverse on a box is used.
+
+## 4. The gauge part, and weighted coercivity with a local gauge term (discharged)
+
+The curved case (Section 5) cannot use a gauge-invariant energy: at a curved
+background D_U D_U lambda = [F, lambda] is not zero, so local energies change
+under gauge. It needs a gauge-fixed functional that is a sum of local terms.
+Following `fibre-propagator.md`, use the block-diagonal gauge term. Let Pi be
+the orthogonal projection of scalars on Omega_0 onto ran Pi := {lambda : Av_P lambda = 0
+for every pillar P} (on a pillar, lambda -> lambda - Av_P lambda; zero on layer 0).
+
+**Lemma S (the scalar gauge problem).** For data f (sites), g (bonds), let
+lambda in ran Pi minimise F(lambda) := ||d lambda||^2 - 2<lambda, f> + 2<d lambda, g>
+over ran Pi (equivalently Pi Delta lambda = Pi f - Pi delta g). Then
+
+(i) ||d lambda|| <= 1.42 (sum_P xi_P^2 ||f||_P^2)^(1/2) + ||g||;
+
+(ii) with psi_S := d_B(., supp f u supp g): ||d lambda||^2_(psi_S > t) <= 2 x 10^7 e^(-2 m_s t) ||d lambda||^2,
+     m_s := 1/(7 x 10^8), an absolute rate;
+
+(iii) if rho >= 8 (log L)/m_s, then
+     sum_P xi_P^-2 ||d lambda||_P^2 <= C_S(L) (sum_P ||f||_P^2 + sum_P xi_P^-2 ||g||_P^2),  C_S(L) <= 10^90 L^6.
+
+*Proof.* (i) Test the equation with lambda; Lemma 2 on each pillar gives
+||lambda||_P <= 1.42 xi_P ||d lambda||_P because Av_P lambda = 0.
+(ii) Hole-filling, as in Section 3, with the competitor
+lambda' := chi lambda - sum_P m_P b_P, m_P := Av_P(chi lambda), b_P the bump of Lemma P (v).
+lambda' lies in ran Pi, equals lambda where chi = 1 on a whole pillar and 0
+where chi = 0, so F(lambda) <= F(lambda') gives ||d lambda||^2 beyond the zone at most
+||d lambda'||^2 on it. |m_P| <= xi_P^-2 ||lambda||_P and ||d b_P||^2 <= 1.3 x 10^6 xi_P^2,
+so with Lemma 2 on pillars, ||d lambda'||^2_Z <= 10^7 ||d lambda||^2_(Z+), Z+ within d_B-distance 9
+of the zone. *The smooth bump is what avoids a trace*: correcting the pillar
+means with indicators would put |m_P| on the ~xi_P^3 face bonds of each
+pillar and cost a factor xi_P. Iterating with step 19 gives (ii).
+(iii) Split the data by pillars, (f, g) = sum_P' (f_P', g_P'), and use (i), (ii)
+for each piece: xi_P^-1 ||d lambda||_P <= C sum_P' e^(-m_s d_B(P, P')) (xi_P'/xi_P) beta_P',
+beta_P' := ||f||_P' + xi_P'^-1 ||g||_P'. Schur test for the kernel
+e^(-m_s d) xi_P'/xi_P: pillars of the same layer within d_B-distance n number at
+most (2n + 1)^4; pillars of the next finer layer within n of a coarse one at
+most C L^3 n^4, with ratio 1/L; of the next coarser layer at most C n^4, with
+ratio L; i layers away, ratio at most L^i at distance at least (i - 1) rho, which
+the separation beats. Both Schur sums are at most C L^3 m_s^-5. QED
+
+**Lemma C (flat coercivity with the local gauge term).** If rho is as in Lemma S
+(iii), then for every A in ker q,
+
+    sum_P xi_P^-2 ||A||_P^2 <= C_C(L) (||dA||^2 + ||Pi delta A||^2),   C_C(L) <= 2 C_S(L) (1 + C'_P(L)),
+
+with the sharp local weight xi^-2 and C'_P(L) := 81 L^4 C_P(L).
+
+*Proof.* Lemma P gives A = A~ + d lambda with lambda in ran Pi and
+sum_P xi_P^-2 ||A~||_P^2 <= C'_P ||dA||^2 (B = 0). Then lambda is the minimiser of Lemma S with
+f := Pi delta A, g := A~ (both sides give Pi Delta lambda = Pi delta A - Pi delta A~, and Pi Delta Pi
+is positive definite on ran Pi). Lemma S (iii) bounds the weighted norm of
+d lambda; add. QED
+
+So the saddle-point operator Sad := [[delta d + d Pi delta, q^T], [q, 0]] of the
+flat problem is invertible on the weighted graph norm
+||A||_X^2 := sum_P xi_P^-2 ||A||_P^2 + ||dA||^2 + ||Pi delta A||^2 times l^2(**B**), with a bound
+depending on L only: coercivity on ker q is Lemma C, inf-sup is Lemma T
+(||T beta||_X <= C ||beta||, the bumps having ||xi^-1 phi_c|| and ||Pi delta phi_c|| bounded as
+well), and |q_c(A)| <= 0.82 ||xi^-1 A||_(D(c)) (Lemma 3) gives boundedness. Its
+solution at datum (0, B) is the minimiser A_B in the *local Landau gauge*
+Pi delta A = 0 (test with d mu, mu in ran Pi: Pi Delta Pi is invertible). This is the
+gauge of Theorem F in `fibre-propagator.md`. Balaban's gauge R delta A = 0 is
+reached from it by d mu, mu in ran Pi with Pi Delta^2 Pi mu = -Pi Delta delta A, a
+fourth-order analogue of Lemma S that is not written here (label: gap, not
+needed below).

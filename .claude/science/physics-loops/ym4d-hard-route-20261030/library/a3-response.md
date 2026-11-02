@@ -14,6 +14,15 @@ Sources read: outline `YM4_sketch_500.tex` at `31a47c543775` (SHA-256 matches
 `seam-nonlinear-c.md` 4, `fibre-propagator.md`, `fd-local.md` 5, 8,
 `curl-poincare-exterior.md` Lemma 1, `lattice_gehring_hls.md`.
 
+Credit: T. Balaban (CMP 95, 96, 98, 99, 102) for the multiscale averages, the
+gauges and the statement; J. Dimock (arXiv 1712.10029) for the exposition used
+to locate it; Ethan Sussman and Levent Alpoge, with Claude and Codex as authors
+of their text, for the outline's (1b) setting, the straightened average and its
+factorisation, the Landau pair and the formulation of A3; the block-diagonal
+gauge term is from `fibre-propagator.md`, Example E and Lemmas 1, A, A2 from
+`rel-phi-c.md`, the Green's function bound from `lattice_gehring_hls.md`.
+Kill test: `checks/a3/fl_killtest.py` (7b), PASS.
+
 Status: finished 2026-11-02. **Flat linear statement PROVED (Theorem FL,
 hand proofs: curvature and potential in local L^2, curvature pointwise by
 Lemma LR). Example E question ANSWERED at the flat linear
@@ -495,7 +504,7 @@ potential's gradient may lose a logarithm (delta A is pillar-constant, and
 grad A is a second derivative of a Newtonian potential of a piecewise-constant
 function); the curvature bound above does not see this.
 
-## 6. The curved linear response at a regular background (implication from one named algebraic input)
+## 6. The curved linear response at a regular background (derived at the level of each step, from one-step inputs)
 
 **Setting.** U_0 real on Omega_0, *regular at radius eps* in local units:
 |dU_0(p) - 1| <= eps xi(p)^-2 and |J(U_0)(b)| <= eps xi(b)^-3 (fine units; outline (1b)(i)),
@@ -706,7 +715,17 @@ this cannot test uniformity in depth or in d = 4.
    curved system is the flat one plus terms of relative size C R_0 L^2 eps with
    one derivative fewer; Caccioppoli absorbs them for eps small, and Lemma H
    then applies to the flat part. Written only to this level.
-3. *(U):* uniqueness of regular critical points (the outline's Theorem 1).
+3. *(U):* uniqueness of regular critical points (the outline's Theorem 1). With
+   Theorem CL the implicit function theorem gives uniqueness in a small ball
+   about the background; what is missing is the outline's Theorem 2 (the
+   "halving": a regular critical point has curvature controlled by the
+   data's, exponentially localised), which puts every regular critical point
+   in that ball. **The nonlinear Theorem E (item 1) reduces to the same
+   Theorem 2** plus a non-abelian patching of local gauges (the role of
+   `lattice-uhlenbeck.md`): pointwise local potentials of size eps/xi in local
+   gauges give |Phi| <= C eps directly (Corollary A2 with p = infinity), and 5.3 then
+   makes the gauge admissible. So the outline's Theorem 2, a nonlinear form of
+   FL + LR, is the common next target of both routes at this position.
 4. *One-step inputs of 6.1:* Cauchy bounds of the one-step straightened map on
    a polydisc of radius r_L, |omega_0| <= C eps, and the implicit-function step
    of (W2), all single-block, finite-dimensional, with no depth in them.

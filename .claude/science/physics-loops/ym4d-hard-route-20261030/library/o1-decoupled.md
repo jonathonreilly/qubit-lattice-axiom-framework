@@ -13,7 +13,19 @@ Credit. Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of the
 
 ## 0. Result
 
-(Filled in at the end.)
+Status: finished 2026-11-03 (worker). Same-model and ungated; a cross-provider gate is needed. All three parts of row 126 are proved as implications from gated or named inputs. No counterexample was found.
+
+- **(1) R9's lift and (O1).** R9's current-corrected lift is the \(A\nu\) block of `h-walk.md`'s unfolded inverse at coefficient \(j=0\) (Lemma U, gated). It is not the P82° lift. They differ by \((1+T^\circ E_{\mathbf J})^{-1}\).
+  - *Theorem A, \(s\equiv1\).* (O1) holds on the general complex, independent-current pair domain. Lemma L's local energy decay of a column gives the weighted column sums by Cauchy–Schwarz on each pillar.
+  - *Theorem B, \(|s_\Delta|<e^{\bar\kappa}\).* (O1) holds with \(C_H=C_LB_Le^{16\bar\kappa}\), for the decoupled lift specified from Theorem W's walk expansion (Definition D), uniformly in depth. Lemma P proves the outline's mechanism (i) with explicit constants, under a stated hypothesis on the parameter cubes. Lemma WC gives the splitting.
+- **(2) Removed-map comparison.**
+  - *Theorem C.* The decoupled lifts of the original and box systems differ by \(e^{-\theta'(D_y+D_c)}\) in the distance to the complement of their agreement region. The proof is a term identity for walks that stay inside the region (Lemma C1, which proves the needed instance of the (C5) repair), plus a Cauchy estimate in the pair.
+  - *Theorem D.* The removed current carries that factor and is proportional to the response amplitude. Changed anchors (integrated against \(DH\), never through \(J\)), actions, rows, chart conversions, lifts and node transports are all included.
+  - Inputs left: 6(c) for the box localisation, the node-lift clause for Landau representatives, and the response comparison (H-field).
+- **(3) Hereditary admission of the inner Landau map.**
+  - *Lemma RI.* This is (1b) Theorem 6(b) on the complex datum disc, with its node lift \(g_Z\): explicit, holomorphic, of condition number \(\le e^{C_g\sup|B|}\). It follows from the gated real restriction identity (9.3) and the identity theorem, as in Balaban CMP 109 (3.38).
+  - *Theorem I.* Every tower clause (R6), at every \(Z,p,n\) and for both rules, follows from the inner configuration's own level-\(j\) curvature and current bounds, with no \(K^\sharp\) loss. §4.5 writes the actual inequalities and the order of choice; the gate's "\(C\sqrt{1+m}L^{-2m}\le1/4\)" becomes \(L^2\ge6\sqrt2\lambda_a\).
+- **Where rank 4 now stops:** the first system's own decoupled field bounds. These are the first-line (sup-norm) bounds \(\widehat b\) for \(H(s),H_1(s),\mathfrak G(s)\), which need a pointwise upgrade of the walk terms (§5, item 1). After them come 6(c) for the box localisation and the Landau node-lift comparison.
 
 ## 1. Item (1) at \(s\equiv1\): the lift, and (O1) on the general pair domain
 
@@ -159,15 +171,17 @@ The removed fields are "the differences produced by replacing the original respo
 The two systems are \(\mathfrak D=(S,P)\), the step's separated sequence with its pair, and \(\mathfrak D^\square=(S^\square,P^\square)\), a separated sequence on the box with its pair. Both have cube size \(M_1\) and gap \(\ge\rho\), so `h-walk.md` Theorem W applies to each, and Theorems A and B hold for each. Let \(G\subset R_z\) be the agreement region. Write \(D_x:=d_{\mathbf B}(x,G^c)\) (the metric of \(S\); \(D_x=0\) off \(G\)) and \(w_G:=e^{\theta'D}\). This weight is in \(\mathcal W_{\theta'}\). For \(\kappa\in K\) let \(\kappa^\sharp\) be the concentric cube of side \(8L^2M_1\xi_\kappa\).
 
 - **(H-seq)** The regions of \(S\) and \(S^\square\) coincide on \(G^\sharp:=\bigcup\{\kappa^\sharp:\kappa^{(4)}\subset G\}\). Assume also \(R_1\ge8L^3\), so that each \(\kappa^\sharp\) meets at most three consecutive layers.
-- **(H-pair)** On \(G\), \(\mathbf U^\square=(e^{i\eta X}\mathbf U)^g\) and \(\mathbf J^\square=\operatorname{Ad}(g)(\mathbf J+\delta\mathbf J)\), with a gauge transformation \(g\) (the node lift and the change of representative) and
+- **(H-pair)** On \(G\), \(\mathbf U^\square=(e^{i\eta X}\mathbf U)^g\) and \(\mathbf J^\square=\operatorname{Ad}(g)(\mathbf J+\delta\mathbf J)\), for a gauge transformation \(g\) (complex, holomorphic in the data, with bounded condition number) and
 \[
- \|\delta P\|(x):=\xi_x|X(x)|+\xi_x^2|\nabla_{\mathbf U}X(x)|+\xi_x^3|\delta\mathbf J(x)|\le\varepsilon_Pe^{-\theta_PD_x},\qquad|g(x)-\mathbf 1|\le\varepsilon_Pe^{-\theta_PD_x}.
+ \|\delta P\|(x):=\xi_x|X(x)|+\xi_x^2|\nabla_{\mathbf U}X(x)|+\xi_x^3|\delta\mathbf J(x)|\le\varepsilon_Pe^{-\theta_PD_x}.
 \]
   Here \(\varepsilon_P\le c_Pa_{\min}\), \(a_{\min}=\min\{\alpha_0,\alpha_1,\gamma_0\}\), and \(P\) satisfies the class inequalities with half the ceiling.
+- **(H-node)** In the **assigned** representatives of the two maps (their node and gauge conventions, SA 15955), \(|g(x)-\mathbf 1|\le\varepsilon_Ne^{-\theta_PD_x}\) on \(G\). (H-pair) alone allows any \(g\). (H-node) is needed only to compare the readouts in their own representatives rather than in a common gauge.
 - **(H-field)** \(\varepsilon_H:=\sup_{b\in G}w_G(b)\max\{\xi_b|\mathbf H-\mathbf H^\square|,\xi_b^2|\nabla(\mathbf H-\mathbf H^\square)|\}\), with \(\mathbf H^\square\) in the gauge of (H-pair).
+- **(Box)** \(S^\square\) is a separated sequence with cube size \(M_1\) and gap \(\ge\rho\). For instance, take the cut-down of `h-walk.md` Lemma C with \((M_1,\rho)\) in place of \((M',\rho')\), on a box large enough for its nested enlargements. \(P^\square\) is a regular pair for \(S^\square\) below the ceiling.
 - **(Spec)** Both systems use Definition D, with the same partition \(\mathcal P\) and the same parameters \(s\). The comparison is between two **specified** maps, as SA 5775–5783 allows. A compatible choice is part of the box map's specification, in the way the outline calls for a "compatible boundary comparison" (SA OA7 paragraph).
 
-When the box response is taken at the same pair restricted, as in "replacing the original response by its box version", (H-pair) holds with \(X=0\), \(\delta\mathbf J=0\), \(g=\mathbf 1\). When the background is replaced too, (H-pair) is the localisation estimate (1b) Theorem 6(c) (SA 9779–9787: "two backgrounds whose sequences and whose data coincide on \(W\) differ there to this extent"), with \(\theta_P=\delta_W\) and \(\varepsilon_P=C_\mu\varepsilon_1\). Its current member \(\xi^3|D^*Df|\) bounds the removed **background** current directly, so no readout formula enters there.
+When the box response is taken at the same pair restricted, as in "replacing the original response by its box version", (H-pair) and (H-node) hold with \(X=0\), \(\delta\mathbf J=0\), \(g=\mathbf 1\). When the background is replaced too, (H-pair) is the localisation estimate (1b) Theorem 6(c) (SA 9779–9787: "two backgrounds whose sequences and whose data coincide on \(W\) differ there to this extent"), with \(\theta_P=\delta_W\) and \(\varepsilon_P=C_\mu\varepsilon_1\). Its current member \(\xi^3|D^*Df|\) bounds the removed **background** current directly, so no readout formula enters there. 6(c) fixes its gauge \(w\) only at the tops away from the collars (\(w=v_q[f]^{-1}\), within \(C|f|\) of \(\mathbf 1\)) and leaves it free elsewhere. So (H-node) is a property of the assigned representatives, not of 6(c). For representatives in axial gauge outside common nodes, it follows from the node values by the recursive formula of [AX], with the condition-number estimate of Lemma RI below. For Landau representatives it needs a comparison of the two Landau factors, which is not done here.
 
 ### 3.2 Term identity and the operator comparison
 
@@ -175,7 +189,7 @@ When the box response is taken at the same pair restricted, as in "replacing the
 
 *Proof.* A cube \(\kappa'\) is in \(K_i\) iff it is a level-\(i\) \(M_1\)-cube contained in \(\overline{\mathcal L_i}\). Here \(\kappa'\subset\overline{\mathcal L_i}\) is decided by \(\Omega_i,\Omega_{i+1}\) on \(\kappa'\). The cutoffs \(\tilde h_\kappa,\phi_\kappa\) depend only on \(\kappa\). The normalisation of \(\theta_\kappa\) sums \(\phi_{\kappa'}\) over the cubes with \(\operatorname{supp}\phi_{\kappa'}\cap\kappa^{(1/4)}\ne\emptyset\). By the two-layer property, which holds in both sequences since both are separated with gap \(\rho\ge64LM_1\), these have \(\xi_{\kappa'}\in\{\xi_\kappa/L,\xi_\kappa,L\xi_\kappa\}\). Each lies within \(\ell^\infty\)-distance \(2LM_1\xi_\kappa\) of \(c_\kappa\), hence inside \(\kappa^\sharp\). Cubes of level \(\ge\) level\((\kappa)+2\) cannot be present in either sequence: \(\Omega_{i+2}\) lies at distance \(>\rho\xi_{i+1}\ge64L^2M_1\xi_\kappa\) from \(\mathcal L_i\). So the same candidate cubes, decided by the same regions, enter both denominators. This is the gate's repair of (C5) (`gates/h-walk-gate.md` §3), which is provable here because the two sequences agree on a fixed enlargement. The "absent candidate" problem cannot arise inside \(G^\sharp\). The cut-down \(S^\kappa\) is determined by \(\kappa\) and \(\Omega_i\cap\kappa^{(4)}\) (C1–C4, gated). The commutator \([\mathbb K,\tilde h_\kappa]=[\mathbb K_\kappa,\tilde h_\kappa]\) reads data within \(\kappa^{(5/2)}\). The rest is (C2), and Theorem W(c)'s field part, kept by the gate. \(\square\)
 
-**Theorem C (operator comparison).** Assume the hypotheses of Theorem B for both systems, together with (H-seq), (H-pair) and (Spec). Put \(r'':=C_\sharp M_1\), the \(d_{\mathbf B}\)-diameter bound of \(\kappa^{(4)}\) plus \(4L\), with \(C_\sharp=C_\sharp(L)\). Put \(\theta':=\min\{\theta_P/2,\tau_L/16\}\). Then, for every row \(c\) of \(G\) and pillar \(y\), with \(|s_\Delta|\le e^{\bar\kappa}\) and \(D_y=0\) for \(y\notin G\),
+**Theorem C (operator comparison).** Assume the hypotheses of Theorem B for both systems, together with (H-seq), (H-pair) and (Spec). Put \(r'':=C_\sharp M_1\), the \(d_{\mathbf B}\)-diameter bound of \(\kappa^{(4)}\) plus \(4L\), with \(C_\sharp=C_\sharp(L)\). Put \(\theta':=\min\{\theta_P/2,\tau_L/16\}\). Take \(H^\square(s)\) at \((P^\square)^{g^{-1}}\), the common gauge of (H-pair). Then, for every row \(c\) of \(G\) and pillar \(y\), with \(|s_\Delta|\le e^{\bar\kappa}\) and \(D_y=0\) for \(y\notin G\),
 \[
  \|(H(s)-H^\square(s))(\cdot,c)\|_{E,y}\le C_*\,e^{-\theta'(D_y+D_c)}\,e^{-(\tau_L/16)d_{\mathbf B}(y,c)},
  \qquad C_*=C_LB_Le^{16\bar\kappa}e^{\tau_Lr''}\big(1+\varepsilon_P/a_{\min}\big).
@@ -216,14 +230,18 @@ At bonds with \(D_b\le C_L\) each quantity of either system is bounded separatel
 
 ### 3.4 Theorem D: the removed current
 
-**Theorem D.** Assume the hypotheses of Theorem C, the field ball \(\|\mathbf H\|_X,\|\mathbf H^\square\|_X\le r\) with \(CC_Hr\le1/4\), and (H-field). Let \(\mathsf j\) and \(\mathsf j^\square\) be the readouts (6.1) of the two systems, each with its own lift, field, rows, action and anchor, and with \(\mathsf j^\square\) computed in the gauge of (H-pair). Then, on bonds of \(G\),
+**Theorem D.** Assume the hypotheses of Theorem C, the field ball \(\|\mathbf H\|_X,\|\mathbf H^\square\|_X\le r\) with \(CC_Hr\le1/4\), and (H-field). Let \(\mathsf j\) be the readout (6.1) of the original system. Let \(\mathsf j^\square_g\) be that of the box system computed at \((P^\square)^{g^{-1}}\), the common gauge of (H-pair), each with its own lift, field, rows, action and anchor. Then, on bonds of \(G\),
 \[
- \|\mathsf j-\operatorname{Ad}(g)\mathsf j^\square\|_{F,w_G}
- \le C_D\big(\varepsilon_H+(\|\mathbf H\|_X+\|\mathbf H^\square\|_X)\big),
+ \|\mathsf j-\mathsf j^\square_g\|_{F,w_G}
+ \le C_D\big(\varepsilon_H+\|\mathbf H\|_X+\|\mathbf H^\square\|_X\big),
  \qquad C_D=C_L\,C_*\,K_{\tau_L/32}\,(1+C_H)^2 .
  \tag{3.3}
 \]
-So at a bond \(b\) of \(G\), \(\xi_b^3|\mathsf j(b)-\operatorname{Ad}(g)\mathsf j^\square(b)|\le C_De^{-\theta'D_b}(\varepsilon_H+\|\mathbf H\|_X+\|\mathbf H^\square\|_X)\). The removed current carries the boundary exponential and is proportional to the response amplitude. Both anchors, both actions, both row sets, both lifts and the node transport are included.
+In the assigned representatives the box readout is \(\mathsf j^\square=\operatorname{Ad}(g)\mathsf j^\square_g\), by covariance. Under (H-node), \(\xi^3|(\operatorname{Ad}(g)-1)\mathsf j^\square_g|\le C\varepsilon_Ne^{-\theta_PD}\,C_H\|\mathbf H^\square\|_X\) by (6.4). So at a bond \(b\) of \(G\),
+\[
+ \xi_b^3|\mathsf j(b)-\mathsf j^\square(b)|\le\big(C_D+CC_H\varepsilon_N\big)e^{-\theta'D_b}\big(\varepsilon_H+\|\mathbf H\|_X+\|\mathbf H^\square\|_X\big).
+\]
+The removed current carries the boundary exponential and is proportional to the response amplitude. Both anchors, both actions, both row sets, both lifts and the node transport are included.
 
 *Proof.* Work in the gauge of (H-pair), and write \(\delta\) for (original) minus (box). Rows and bonds of \(G\) with \(D>C_L\) are common to both systems. Quantities of one system at rows or bonds that the other lacks are bounded by that system's own estimates, and lie where \(w_G\le e^{\theta'C_L}\). Use the anchored form of `wf-room.md` (5.5):
 \(\mathsf j=\mathsf j_1+\mathsf j_2+\mathsf j_3\), with
@@ -251,7 +269,7 @@ where \(T^{\mathsf T}\nu-T^{\square\mathsf T}\nu^\square=(H-H^\square)^{\mathsf 
 
 With \(\|\lambda_0\|_Y\le CC_H\alpha_0\) and Step 1, this gives \(\|\mu\|_{Y,w_G}\le C_D'(\varepsilon_H+\|\mathbf H\|_X+\|\mathbf H^\square\|_X)\).
 
-*Step 3 (readout).* \(\delta\mathsf j_1=R_{\mathbf H}K_{\mathbf H}^{\mathsf T}\mu+[R_{\mathbf H}K_{\mathbf H}^{\mathsf T}-R_{\mathbf H^\square}K^{\square\mathsf T}_{\mathbf H^\square}](\lambda^\square-\lambda_0^\square)\). The first part is \(\le C\|\mu\|_{Y,w_G}\), by (5.1) with the weight on the multiplier. The second is (K1) and (R1) times \(\|\lambda^\square-\lambda^\square_0\|_Y\le CC_H\|\mathbf H^\square\|_X\). Next, \(\delta\mathsf j_2\) and \(\delta\mathsf j_3\) are, term by term, (R1), (K1) times \(\|\lambda_0\|_Y\), plus \(C\|\mathbf H^\square\|_X\|\lambda_0-\lambda_0^\square\|_{Y,w_G}\) (product estimate with the weight on the multiplier). Every term is at most \(C_D(\varepsilon_H+\|\mathbf H\|_X+\|\mathbf H^\square\|_X)\) in \(F_{w_G}\). For the node transport, \(\mathsf j^\square\) is covariant (S3 of `wf-room-2.md`, and gauge covariance of \(H^\square(s)\), Theorem B(a)). So the readout in the original gauge is \(\operatorname{Ad}(g)\) of the one computed here. Moreover \(\xi^3|(\operatorname{Ad}(g)-1)\mathsf j^\square|\le C\varepsilon_Pe^{-\theta_PD}\cdot C\|\mathbf H^\square\|_X\) by (6.4), which is in the bound since \(\theta_P\ge\theta'\). \(\square\)
+*Step 3 (readout).* \(\delta\mathsf j_1=R_{\mathbf H}K_{\mathbf H}^{\mathsf T}\mu+[R_{\mathbf H}K_{\mathbf H}^{\mathsf T}-R_{\mathbf H^\square}K^{\square\mathsf T}_{\mathbf H^\square}](\lambda^\square-\lambda_0^\square)\). The first part is \(\le C\|\mu\|_{Y,w_G}\), by (5.1) with the weight on the multiplier. The second is (K1) and (R1) times \(\|\lambda^\square-\lambda^\square_0\|_Y\le CC_H\|\mathbf H^\square\|_X\). Next, \(\delta\mathsf j_2\) and \(\delta\mathsf j_3\) are, term by term, (R1), (K1) times \(\|\lambda_0\|_Y\), plus \(C\|\mathbf H^\square\|_X\|\lambda_0-\lambda_0^\square\|_{Y,w_G}\) (product estimate with the weight on the multiplier). Every term is at most \(C_D(\varepsilon_H+\|\mathbf H\|_X+\|\mathbf H^\square\|_X)\) in \(F_{w_G}\). For the node transport, \(\mathsf j^\square\) is covariant (S3 of `wf-room-2.md`, and gauge covariance of \(H^\square(s)\), Theorem B(a), continued to complex \(g\) near the unitary group by the identity theorem as in `a3-clauses.md` §3 Step 2(iii)). So \(\mathsf j^\square=\operatorname{Ad}(g)\mathsf j^\square_g\), and the last display follows from (H-node) and (6.4), since \(\theta_P\ge\theta'\). \(\square\)
 
 **What this settles, and what it reads.** Defect 2 of the gate is answered at the level it asks. The removed current's comparison now includes the second anchor term \((H^\square)^{\mathsf T}(F'_U(0)-F'_{U^\square}(0))\), in integrated form. It also includes the change of action, the change of rows, the chart conversions and the node lifts. No common segment is assumed, and none of `wf-room.md` (5.6)'s fixed-background hypotheses is used. Label: **implication** from Theorems A–C, Lemma K, and the two inputs:
 - (H-pair) for the box background: (1b) Theorem 6(c) for the box localisation. The library has 6(c) for the meets of 2.8 (`meet-6c.md` Theorem M, gated row 106) and for localisations (`a3-derivative.md` §10, gated row 89). The box localisation of the window is a further instance; it is not re-checked here.
@@ -261,3 +279,140 @@ With \(\|\lambda_0\|_Y\le CC_H\alpha_0\) and Step 1, this gives \(\|\mu\|_{Y,w_G
 - (a) *The two actions' currents at the box boundary* (a staggered real part, SA 10531). They differ by up to \(C\alpha_0\eta^{-1}\xi^{-2}\), which would break any bound through \(J\). It does not break Step 1, because the anchor is integrated against \(D H\). This is the reason for the gate's instruction "transfer derivatives … to the corresponding lift".
 - (b) *A walk hugging the box boundary from a deep row to a deep bond.* Its pair difference is not small near the boundary, but its length is at least \(D_y+D_c-2\delta_\omega\). It is paid in the split of Theorem C. No failure.
 - (c) *Different row sets near the boundary.* Then \(T\) and \(T^\square\) act on different spaces, so the global telescoping \(M^{-1}-(M^\square)^{-1}\) is not available as written. It is replaced by the equation for \(\mu\) on common rows (Step 2). No failure.
+
+## 4. Item (3): hereditary restriction and datum transport for the inner Landau map
+
+### 4.1 What is owed, and Balaban's mechanism
+
+The gate's Defect 4: the endpoint estimate (7.2) bounds curvature and current at the chosen elements, but it "does not check every subdomain and truncation, the restriction identity with its prescribed gauge, or all simple potential/gradient bounds on the independent \(B'\) disc". The gate's repair is to prove, for each lower tower, the restriction/background identity with its node lift, to bound that lift on the whole disc, and to transfer the generated background's bounds to that tower.
+
+Balaban does exactly this in CMP 109, pp. 277–280 (the scan was read for this note). His space \(U^c_j(X,\alpha_0,\alpha_1)\) (p. 262, (1.10)–(1.16)) has the hereditary condition (iv). The backgrounds \(U_n(M^\cdot(\mathbf U))\) of the averages of \(\mathbf U\), for the subsequences \(\{\Omega_0,\dots,\Omega_n\}\) of maximal domains on \(X\), obey \(|\partial U_n-1|<\alpha_0\xi^2\) and \(|J_n|<\alpha_0(L^n\xi)^2\) on \(\tilde X^{-2}\). For the inner configuration \(\exp i\xi\mathbf H_j(\square_0,\cdot)\), his identity (3.38) reads
+\[
+ U_n(X,M^\cdot(\exp i\xi\mathbf H_j(\dots)))=(\exp i\xi\mathbf H_j(\dots))^{u_j(\bar u_j)^{-1}},
+\]
+with \(\bar u_j\) block-constant. "This identity and the bound on \(u_j\) in (3.37) imply that the condition (iv) is a consequence of the condition (iii), with a bit better constant" (p. 278). He then bounds the endpoint ((3.39)–(3.42)), interpolates in \(\tau\) ((3.43)–(3.47)), and adds \(B'\) under \(2B_3\alpha_3\le\beta L^{-2}\alpha_0\) ((3.48)–(3.52)). "The condition (iv) follows from the corresponding identity (3.38)" (p. 280). Lemma 4 (3.53) states the result.
+
+In the outline's terms, (iv) is the tower clause (R6) (SA 5697–5716), and (3.38) is (1b) Theorem 6(b) (SA 9776–9778). The library has Theorem 6(b) at real critical fields: `a1-balaban.md` §9.2, (9.3), proved by extending constraint-preserving variations and gated ADVANCE (`gates/a1-balaban-gate.md` §6). `a3-close.md` Lemma T used it at a real reference. What is new here is its use at the **complex** inner datum, its node lift, and the order of constants.
+
+### 4.2 Setting and inputs
+
+Let \(\square_0\) be the box of SA Theorem 5(c), and \(\mathbf B'_0\) its tower (first rule) cut at depth \(j\), with members \(T'_q(\square_0)\). Let \((\mathcal H,u)\) be Theorem 3's Landau pair over \(\mathbf V_0=\mathbf 1\) for \(\mathbf B'_0\), so \(\Phi(B)=(e^{i\eta_j\mathcal H(B)})^{u(B)}\). The **inner Landau map** is
+\[
+ B\longmapsto P_{\rm in}(B):=\big(\mathbf 1,\ \mathcal H(B),\ J(\mathbf U_{\rm in}(B))\big),\qquad \mathbf U_{\rm in}(B):=e^{i\eta_j\mathcal H(B)} ,
+\]
+read as `wf-room-2.md` §7.4 and SA 5(c) state it. Let \(X\) be a domain with \(X\subset T'_j(\square_0)\) ("the domains well inside \(\square_0\)", SA 5(c)). All lengths are in level-\(j\) units.
+
+Inputs, with their labels:
+- [Φ] `a3-derivative.md` Theorem 4 first paragraph and (31), 7.6, at \(U_0=\mathbf 1\). \(\mathcal H,u\) are holomorphic on \(\sup|B|<r_{\rm B}\), real at real \(B\), with \(\|\mathcal H(B)\|_X\le C_{\mathcal H}\sup|B|\) and \(|u-\mathbf 1|\le C\sup|B|\). Gated (row 89). At \(U_0=\mathbf 1\) its premises P81, P82° reduce to the flat package (rows 95, 99).
+- [9.3] The restriction identity at real regular critical fields, for a separated subsequence \(\Omega'_q\subset\Omega_q\). Gated.
+- [AX] The canonical representative is fixed by the explicit recursive axial gauge outside the nodes, with conjugator bound \(\exp(C\|B\|/(1-L^{-1}))\) (`a1-balaban.md` 9.1). Gated.
+- [A′] `wf-room-2.md` Lemma A′ at the identity: \(|\log M_{\mathbf B'}(e^{i\eta A})(c)|\le2L\xi'_c\sup|A|\) on a tower. Gated ADVANCE, conditional (row 125, §4.2).
+- [E] The endpoint: \(\|B_{\rm end}\|\le C_BM\alpha_0\tau\) and \(\|f(B_{\rm end})\|\le(1+\beta)a\tau^2\), \(\tau=L^{-(k+1-j)}\), in the Landau representative over \(\mathbf 1\) (`wf-room-2.md` Lemmas N, E, with the gate's §7.2 repair of N; endpoint ADVANCE, row 125 §7.3). Here \(a\) is the level-\((k+1)\) tower-clause radius of the input.
+- [7.1] `wf-room.md` (7.1) (Codex). Its proof was re-checked here: a one-variable Schwarz expansion of \(z\mapsto f(zB)\) bounds the terms of degree \(\ge2\) by \(2Ct^2\|B\|^2/r_{\rm B}\), and a Cauchy derivative bound of \(3C\) on the \(3r_{\rm B}/4\)-ball handles \(B'\). No failure.
+- [DA] Definition A towers are nested sequences of subsets of their base set, separated, with erosion depth \(e_q\le3M_1'\xi'_q\) (`assign-adopt.md` Lemma A; gate row 114 with its repairs).
+
+### 4.3 Lemma RI: the restriction identity on the complex disc
+
+**Lemma RI.** There are \(r_{\rm I}=r_{\rm I}(L)>0\) and \(C_g=C_g(L)\) such that the following holds for every \(Z\subset X\) of level \(p\le j\), every erosion rule, and every \(1\le n\le p\). Let \(\mathbf B'_Z\) be the tower of \(Z\) cut at depth \(n\). Then, for every complex \(B\) with \(\sup|B|<r_{\rm I}\):
+- (a) The tower configuration \(U_n(Z;P_{\rm in}(B))\) of (R5) exists in its continuation domain.
+- (b) \(U_n(Z;P_{\rm in}(B))=\big(\mathbf U_{\rm in}(B)|_{T'_0(Z)}\big)^{g_Z(B)}\), where \(g_Z(B)\) is the residual gauge transformation, equal to \(\mathbf 1\) at the nodes of \(\mathbf B'_Z\), defined by the recursive axial formula of [AX] applied to \(\mathbf U_{\rm in}(B)|_{T'_0(Z)}\). It is holomorphic in \(B\), unitary at real \(B\), and \(|g_Z|\,|g_Z^{-1}|\le e^{C_g\sup|B|}\).
+
+*Proof.* (a) For \(P_{\rm in}\) the real factor is \(\mathbf 1\), so (R5) reads \(U_n(Z;P_{\rm in}(B))=\Phi^Z_{\mathbf 1}(B_Z)\) with \(B_Z=\frac1i\log M_{\mathbf B'_Z}(\mathbf U_{\rm in}(B))\). On \(X\subset T'_j(\square_0)\), the local scale of \(\mathbf B'_0\) is \(\xi_j=1\), and \(\sup|\mathcal H(B)|\le C_{\mathcal H}\sup|B|\). The tower of \(Z\) has scales \(\xi'\le\xi_j\). So [A′] gives \(\sup|B_Z|\le2LC_{\mathcal H}\sup|B|\). Theorem 3's continuation radius \(r_{\rm B}\) is uniform over separated sequences above the floors, so (a) holds once \(2LC_{\mathcal H}r_{\rm I}<r_{\rm B}/2\).
+
+(b) *Real \(B\).* For real \(B\) with \(\sup|B|<r_{\rm I}\), \(\Phi(B)\) is the real regular critical field of the \(\mathbf B'_0\)-problem at the datum \(e^{iB}\), and \(\mathbf U_{\rm in}(B)=\Phi(B)^{u(B)^{-1}}\) with \(u(B)\) real.
+
+*Nesting.* For \(q\le n\), [DA] gives \(T'_q(Z)\subset Z\subset X\subset T'_j(\square_0)\subset T'_q(\square_0)\). For \(q>n\), \(\mathbf B'_Z\) has no member. So \(\mathbf B'_Z\) is a separated subsequence of \(\mathbf B'_0\) in the sense of [9.3].
+
+*Datum radius.* The datum of the restriction is \(CL^2\sup|B|\)-regular (the converse bound of Theorem 1), which is within the existence range for \(r_{\rm I}\) small. So [9.3] gives \(U_{\mathbf B'_Z}(M_{\mathbf B'_Z}(\Phi(B)|_{T'_0(Z)}))=\Phi(B)|_{T'_0(Z)}\) modulo \(\mathcal G^{\rm res}(\mathbf B'_Z)\).
+
+*Covariance.* The averages are covariant with node values: \(M_{\mathbf B'_Z}(U^h)=M_{\mathbf B'_Z}(U)^{h|_{\rm nodes}}\) (SA (R3)). The variational problem is invariant under real gauge transformations. So for the real node gauge \(h=u^{-1}|_{\rm nodes}\), the orbit at the datum \(M_{\mathbf B'_Z}(\Phi|_Z)^h\) is the image of the orbit at \(M_{\mathbf B'_Z}(\Phi|_Z)\) under any extension of \(h\). Taking \(u^{-1}\) itself as the extension, \(\mathbf U_{\rm in}(B)|_{T'_0(Z)}\) lies in the regular critical orbit of the \(\mathbf B'_Z\)-problem at its own datum \(e^{iB_Z}\). The canonical representative of that orbit is \(\Phi^Z_{\mathbf 1}(B_Z)\), the unique element in axial gauge outside the nodes (SA Theorem 1; [AX]). The residual transformation reaching it from \(\mathbf U_{\rm in}|_{T'_0(Z)}\) is unique. It is given recursively: \(g=\mathbf 1\) at the nodes; at a non-node site \(x\) of level \(q\) with block centre \(z\), \(g(x)=g(z)\,(\mathcal M^q\mathbf U_{\rm in})(\Gamma_{z,x})\), so that the comb transports of the averages become \(\mathbf 1\). This proves (b) at real \(B\).
+
+*Complex \(B\).* The left side \(\Phi^Z_{\mathbf 1}(B_Z(B))\) is a composition of holomorphic maps on \(\sup|B|<r_{\rm I}\): \(\mathcal H\), the averages and logarithms near \(\mathbf 1\), and \(\Phi^Z_{\mathbf 1}\) on its ball. The right side is holomorphic, since \(g_Z(B)\) is a finite product of comb transports of averages of \(\mathbf U_{\rm in}(B)\), each holomorphic near \(\mathbf 1\). The two sides agree on the real points, a totally real subspace of full dimension of the connected polydisc. The identity theorem gives (b) on the whole polydisc.
+
+*Condition number.* The level-\(q\) averages of \(\mathbf U_{\rm in}\) have \(|\log|\le2L\xi'_q\sup|\mathcal H|\le2LC_{\mathcal H}L^{q-j}\sup|B|\) by [A′], with \(\xi'_q\le L^{q-j}\) in level-\(j\) units. A comb has at most \(4L\) bonds. So each recursive factor is within \(8L^2C_{\mathcal H}L^{q-j}\sup|B|\) of \(\mathbf 1\) in norm and inverse norm, for complex \(B\) as well. The product down a pillar has norm and inverse norm at most \(\exp(8L^2C_{\mathcal H}\sup|B|/(1-L^{-1}))\), which gives \(C_g:=32L^2C_{\mathcal H}\). This is the estimate of [AX] in a1-balaban 9.1, with no product of fixed losses over the levels. \(\square\)
+
+### 4.4 Theorem I: the inner triple lies in the hereditary core
+
+Write \(\phi(B)\) for the pair of normalised quantities \((\eta_j^{-2}(\partial\mathbf U_{\rm in}(B)-\mathbf 1),\ J(\mathbf U_{\rm in}(B)))\) in level-\(j\) units, at the elements of \(X\), and \(|\phi|_X\) for its supremum.
+
+**Theorem I.** Let \(\sup|B|<r_{\rm I}\), and suppose
+\[
+ \text{(i) } e^{C_g\sup|B|}\,|\phi(B)|_X<\alpha_{0,j},\qquad
+ \text{(ii) } C_{\mathcal H}\sup|B|<\alpha_{1,j}.
+\]
+Then \(P_{\rm in}(B)\in\mathcal U^\circ_j(X;\alpha_{0,j},\alpha_{1,j},\alpha_{0,j})\). That is, the simple conditions (R4) hold. Every tower configuration of (R5), for every \(Z\subset X\) of every level \(p\le j\), both rules and every \(1\le n\le p\), exists in its continuation domain and satisfies (R6) for \(\mathbf U\) and for \(U\).
+
+*Proof.* (R4). \(U=\mathbf 1\) has trivial plaquettes and real gauge \(A=0\). \(|\partial\mathbf U_{\rm in}-\mathbf 1|<\alpha_{0,j}\eta_j^2\) and \(|\mathbf J|=|J(\mathbf U_{\rm in})|<\alpha_{0,j}=a_2\) follow from (i). \(|A'|,|\nabla_UA'|\) are \(|\mathcal H|,|\nabla\mathcal H|\le\|\mathcal H(B)\|_X<\alpha_{1,j}\) by [Φ] and (ii).
+
+(R6) for \(\mathbf U\). Fix \(Z,p,\) a rule and \(n\). By Lemma RI, \(U_n(Z;P_{\rm in})=(\mathbf U_{\rm in}|_{T'_0(Z)})^{g_Z}\). On \(Z\) with two layers of level-\((p-1)\) \(M\)-cubes removed, every bond has its six plaquettes inside \(T'_0(Z)\), whose erosion depth \(3M_1'\eta\) is much smaller than \(M\eta\) [DA]. So at a plaquette \(\mathfrak p\) based at \(x\), \(\partial U_n(\mathfrak p)-\mathbf 1=g_Z(x)(\partial\mathbf U_{\rm in}(\mathfrak p)-\mathbf 1)g_Z(x)^{-1}\). At such a bond, the current of the inner-plaquette action of \(T'_0(Z)\) is \(\operatorname{Ad}(g_Z(b_-))J(\mathbf U_{\rm in})(b)\). Both are bounded by \(e^{C_g\sup|B|}\) times the corresponding quantity of \(\mathbf U_{\rm in}\).
+
+*Units.* The bare mesh in level-\(p\) units is \(\eta_p=L^{j-p}\eta_j\), so the curvature clause \(a_0L^{-(j-p)}\eta_p^2\) equals \(a_0L^{j-p}\eta_j^2\). A current in level-\(n\) units is \(L^{-3(j-n)}\) times its level-\(j\) value, so the current clause \(a_0L^{-(j-p)}L^{2(n-p)}\) in level-\(n\) units is \(a_0L^{2j-p-n}\) in level-\(j\) units. Both exponents are \(\ge0\), since \(n\le p\le j\). So every clause of (R6) is implied by \(e^{C_g\sup|B|}|\phi(B)|_X<\alpha_{0,j}\), which is (i). The same holds for the infinite list, with no \(K^\sharp\) loss: this is Balaban's "(iv) is a consequence of (iii)".
+
+(R6) for \(U=\mathbf 1\). The tower configurations of \(\mathbf 1\) are \(\Phi^Z_{\mathbf 1}(0)=\mathbf 1\). \(\square\)
+
+**Why no flux amplification (test C1 of `wf-room-2.md`).** C1 shows that a field obeying only the simple conditions can have tower configurations with \(L^{2(p-r)}\) times its curvature. \(\mathbf U_{\rm in}\) is not such a field. It is itself a background of a tower containing every \(\mathbf B'_Z\), and Lemma RI makes its tower configurations gauge copies of itself. This is why the inner map needs the restriction identity, and why a small-simple-radii admission (SA 5(a), with its \(K^\sharp\) loss) would not do the same job.
+
+### 4.5 The actual inner datum, and the order of constants
+
+Apply Theorem I to \(B=\varsigma B_{\rm end}+B'\), \(\varsigma\in[0,1]\), \(B'\) complex. By [E] and [7.1], with \(C_f\) the constant of \(\|f(B)\|\le C_f\|B\|\),
+\[
+ |\phi(B)|_X\le\big(1+\beta+4C_fC_B^2M^2a/r_{\rm B}\big)a\tau^2+3C_f\sup|B'| .
+\]
+**Constants.** Let \(m=k+1-j\ge1\), so \(\tau=L^{-m}\). By SA 5(c), the input radius is \(a\le\lambda_a\alpha_{0,k}\) for a fixed factor \(\lambda_a\). Under SA 5(c)'s flow hypothesis \(-C_x\le x_q-x_{q'}\le C_x(q'-q)\), take the running radii in the form (OA1), \(\alpha_{0,i}=c_\alpha x_i^{-1/2}(\log x_i)^q\) with one constant \(c_\alpha\), and couplings with \(x_k\ge\max\{C_x,e^2\}\). Then \(x_j/x_k\le1+C_x(k-j)/x_k\le m\), and the logarithmic factor contributes at most \(2\). So
+\[
+ \alpha_{0,k}\le2m^{1/2}\alpha_{0,j},\qquad a\tau^2\le2\lambda_am^{1/2}L^{-2m}\alpha_{0,j}\le2\sqrt2\,\lambda_aL^{-2}\alpha_{0,j},
+\]
+since \(m\mapsto(1+m)^{1/2}L^{-2m}\) is decreasing for \(L\ge2\) and \(m^{1/2}\le(1+m)^{1/2}\). This is the explicit form of the inequality "\(C\sqrt{1+m}L^{-2m}\le1/4\)" that the gate asks for.
+
+Fix \(\beta=1/8\). Choose:
+- the field ceiling \(4C_fC_B^2M^2\lambda_a\alpha_{0,k}\le\beta r_{\rm B}\) (radii after \(M\));
+- \(\sup|B'|<c_{B'}\min\{\alpha_{0,j-1},\alpha_{0,j}\}\) with \(3C_fc_{B'}\le1/8\) and \(C_{\mathcal H}c_{B'}\le1/4\);
+- the radii so small that \(C_g(C_BM\lambda_a\alpha_{0,k}+c_{B'}\alpha_{0,j})\le\log(1+\beta)\) and \(\sup|B|<r_{\rm I}\);
+- \(L^2\ge3\cdot2\sqrt2\,\lambda_a\).
+
+Then (i) of Theorem I holds:
+\[
+ e^{C_g\sup|B|}|\phi|_X\le\tfrac98\big(\tfrac54\cdot2\sqrt2\lambda_aL^{-2}+\tfrac18\big)\alpha_{0,j}\le\tfrac98\big(\tfrac{5}{12}+\tfrac18\big)\alpha_{0,j}<\alpha_{0,j}.
+\]
+For (ii), \(C_{\mathcal H}\sup|B|\le C_{\mathcal H}C_BM\lambda_a\alpha_{0,k}\tau+\alpha_{0,j}/4\). The first term is \(\le2C_{\mathcal H}C_BM\lambda_aL^{-1}\alpha_{0,j}\). Under the outline's radius relation \(M\alpha_0\ll\alpha_1\) (SA 9911: "\(\alpha_1'\ge c\alpha_1\) together with \(M\alpha_0\ll\alpha_1\), the relation that holds between the two radii in the application"), with \(\alpha_{0,j}\le\alpha_{1,j}\), it is below \(\alpha_{1,j}/2\).
+
+The order is: \(L\) (with \(L^2\ge6\sqrt2\lambda_a\)), then the flat and background constants \(C_{\mathcal H},C_B,C_f,C_g,r_{\rm B},r_{\rm I}\), then \(M\), then the radii and couplings. Nothing depends on \(j,k\) or the depth. The \(m\)-dependence is absorbed by \(\sup_m\).
+
+### 4.6 Datum transport and the node lift
+
+The actual (WF4) pair at the raw datum is \(\Phi(\varsigma B_{\rm end}+B')^{\tilde v}\), whose current transforms with it. It is the complex gauge transform of the Landau triple's pair by \(u\cdot\tilde v\). By Lemma N as repaired by the gate (§7.2), the node factor \(v\) and \(B_{\rm end}\) are explicit holomorphic functions of \(\mathbf U|_{\square_0}\), with \(|v||v^{-1}|\le e^{CM\alpha_1}\), on the whole disc where the simple conditions hold. \(|u-\mathbf 1|\le C\sup|B|\) on the whole datum disc [Φ]. The identity of representatives on the complex first-order ball is the gate's §7.3, via the real slice and the identity theorem. Lemma RI supplies the remaining node lift, the one for each lower tower: \(g_Z\), equal to \(\mathbf 1\) at the tower's nodes, explicit, holomorphic, of condition number \(\le e^{C_g\sup|B|}\). So every gauge in the chain from the actual pair to each tower configuration is explicit, holomorphic on the whole independent datum disc, and bounded there.
+
+**Verdict on item (3).** Defect 4 of the gate is repaired. Lemma RI is (1b) Theorem 6(b) on the complex disc, with its node lift. Theorem I proves hereditary admission of the inner Landau triple at every \(Z,p,n\) and both rules, uniformly. §4.5 writes the actual inequalities and the order of choice. Label: **implication**, from [9.3], [AX] and [Φ] (gated), [A′] and [E] (gated conditional, row 125), [DA] (gated with repairs, row 114), [7.1] (re-checked here), and SA 5(c)'s hypotheses: the flow bound, the input tower clause at level \(k+1\), \(X\subset T'_j(\square_0)\), and the radius relation \(M\alpha_0\ll\alpha_1\). Not covered: a layered \(X\) meeting several layers of \(\square_0\)'s tower. SA 5(c) does not use one, since it states the inner substitution at one level \(j\) well inside the box.
+
+**Counterexample attempts (done first).**
+- (a) *Flux amplification (C1).* Excluded for backgrounds by Lemma RI, as explained in §4.4. C1 used a field that is not a background of the tower.
+- (b) *A second critical orbit at complex data.* The tower configuration is a specified branch, the continuation of the canonical representative, and the identity theorem propagates equality from the real slice. Other orbits are irrelevant. No failure.
+- (c) *Non-unitary node factors (gate §7.4's flat example).* These concern the raw representative. Theorem I is about the Landau triple, whose real factor is \(\mathbf 1\). All non-unitarity sits in \(g_Z\), \(u\), \(\tilde v\), whose condition numbers are bounded. No failure.
+- (d) *\(Z\) reaching the edge of \(X\).* (R6) is imposed only on \(Z\) minus two layers of \(M\)-cubes, where all six plaquettes of every bond lie in \(T'_0(Z)\). Nesting needs only \(Z\subset X\subset T'_j(\square_0)\). No failure.
+
+## 5. Verdicts, what changes, what stays open
+
+| Part of row 126 | Result | Where | Reads |
+|---|---|---|---|
+| (1) identify R9's lift | \(H=\mathsf H\mathsf m^{-1}\), \(\mathsf H=[\mathbb K^{-1}]_{A\nu}\) for the unfolded system at \(j=0\). It is the saddle lift of \(M_{\mathbf J}=\Delta^{\rm W}+DRD^{\mathsf T}-\Delta'_\pi[\mathbf J]\), and \(H=(1+T^\circ E_{\mathbf J})^{-1}H^\circ\) relative to P82° | §1.1 | Lemma U (gated) |
+| (1) (O1) at \(s\equiv1\), general complex independent-current pairs | **implication** (Theorem A), \(C_H=C_LB_LK_{\tau_L/2}\), rates \(\le\tau_L/2\) | §1.2 | Lemma L (gated with repair), (I1) |
+| (1) (O1) for \(\lvert s_\Delta\rvert<e^{\bar\kappa}\) | **implication** (Theorem B), with the specified expansion (2.1). \(C_H=C_LB_Le^{16\bar\kappa}K_{\tau_L/8}\), rates \(\le\tau_L/8\). Splitting and field-locality proved (Lemma WC). The cube count (mechanism (i)) proved (Lemma P) | §2 | Theorem W (a)–(b) (gated), (I1) on cut-downs, hypothesis (P) on \(\mathcal P\) |
+| (2) removed-map comparison | **implication** (Theorems C, D): the operator difference and the removed current carry \(e^{-\theta'd_{\mathbf B}(\cdot,G^c)}\), with changed anchors (integrated against \(DH\)), actions, rows, chart conversions, lifts and node transport all included | §3 | Theorems A–B for both systems, Lemma K, (H-seq), (Box), (H-pair), (H-node), (H-field) |
+| (3) hereditary restriction and datum transport | **implication** (Lemma RI, Theorem I): (1b) Theorem 6(b) on the complex disc with its node lift \(g_Z\), and hereditary admission at every \(Z,p,n\) and both rules, with no \(K^\sharp\) loss. Explicit order of constants (§4.5) | §4 | (9.3), [AX], [Φ] (gated); [A′], [E] (gated conditional); [DA]; SA 5(c)'s hypotheses |
+
+**Defects found in the inputs (for the lead to forward).** At most these; none breaks a consumer.
+1. `wf-room-2.md` line 331 (already WRONG per the gate). The right source of (O1) at \(s\equiv1\) is `h-walk.md` Lemma L, not P82°. The gate's partial repair through P82° is superseded by Theorem A.
+2. `h-walk.md` Theorem W(c)–(d) (region-trace locality, WRONG per its gate). For two sequences that agree on a fixed physical enlargement \(G^\sharp\), the needed instance is proved here (Lemma C1). The general repair of (C5), with candidates absent in one sequence, is still open (row 123). Our chain reads only the instance.
+3. SA mechanism (i) states "a tree of length \(t\) comes close to at most \(2^4\max\{1,Ct/\ell_{\mathsf P}\}\) cubes". This needs the parameter cubes to be large in **every** local unit (hypothesis (P)), for instance top-level cubes. If they were finer in finer layers, the count would fail. Lemma P proves the count under (P), with \(C=2^6\) and \(\ell_{\mathsf P}>8(16L^3M_1+4L)\).
+4. SA 9911 / 5(c) state the potential clause of the inner substitution through "\(M\alpha_0\ll\alpha_1\)". §4.5 shows that this relation is genuinely used, through the factor \(M\) of \(\|B_{\rm end}\|\le C_BM\alpha_0\tau\). It is not implied by \(\alpha_0\le\alpha_1\), so it must be part of the radius rule.
+
+**What changes elsewhere (for the lead to forward; no other file edited).**
+- `wf-room-2.md` §6.3, (O1): proved at \(s\equiv1\) on the general pair domain (Theorem A), and for decoupled \(s\) with Definition D (Theorem B). Then (6.3)–(6.4), with the gate's corrected S5, hold on the whole decoupling polydisc, given the first system's field \(\mathbf H\) with its bounds. (S6) is replaced by Theorem D.
+- `wf-room-2.md` §7.3 and the gate's Defect 4: the core conclusion is now proved (Theorem I), with the actual inequalities.
+- `sa-ledger.md` rank 4: (O1) and the inner hereditary admission move from open to implication. The removed comparison moves to implication from the named inputs below.
+
+**Where rank 4 now stops (hardest first).**
+1. **The first system's own decoupled field bounds.** These are the existence and weighted first-response bounds of the R9 fixed point in the norms \(\|\cdot\|_\varpi\) (SA 10380–10404), which need the **first-line** (sup-norm) bounds \(\widehat b\) for \(H(s)\), \(H_1(s)\), \(\mathfrak G(s)\). (O1) gives the column half only. The walk terms are bounded here in local \(L^2\) (Theorem W). Their pointwise upgrade needs local elliptic regularity for the eight-unknown unfolded local models, including the current terms \(c_J\). The visible route is to rerun `p82-curved.md` §6 (Proposition 6.2) and `a3-clauses.md` Step 5 (Lemma 6.1′) on \(\mathbb K_\kappa\), with \(c_J\) as a Lemma 6.1′-type perturbation of size \(\gamma_0\). Not attempted. The same bounds give (H-field) through the weighted contraction and the analogue of (3.1) for \(H_1(s),\mathfrak G(s)\).
+2. **(H-pair) for the window's box localisation:** (1b) Theorem 6(c) for that localisation (same method as `meet-6c.md` Theorem M; not re-checked).
+3. **(H-node) for Landau representatives:** a comparison of the two Landau factors. For axial representatives with common nodes it follows from [AX] and the node values.
+4. The nested-geometry premise (\(X\subset T'_j(\square_0)\), box sizes) and label-formation checks, unchanged from row 116.

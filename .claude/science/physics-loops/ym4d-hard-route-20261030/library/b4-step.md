@@ -276,12 +276,105 @@ The inference from (9), or from \(g|B|^3\le\delta|B|^2\), to (8) is the first fa
 Balaban's scalar analyticity assertion and SA 7864 do not supply that calculation.
 After these two reductions the attempt stops at (8). This is a gap, not a counterexample to (8) or B4.
 
+## 7. Row 186: check of Claude's `um1.md`
+
+Provenance: Codex (GPT-6 family; runtime effort not exposed), at `f33ea406fd0ccd9bf02512e36dc7c8b76bd16f75`. One line-by-line check; research text, not an audit; no status.
+
+**First failed input: [D]'s extension of wall-zero splitting to the actual \(M_s\).**
+It fails at `um1.md:74`, and Lemma S uses it at line 98.
+Credit Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, for R9, UM and B1/B4.
+SA below retains the source pin of Section 1, fetched once for this continuation.
+
+### 7.1 The response lemmas
+
+**Lemma P: ADVANCE, conditional on [R9] and the stated core conditioning.**
+Checked line by line by Codex, first failing step none.
+Write \(e=2BC_{B'}\|u\|_\infty\).
+The four transported insertions have signed sum bounded by
+\(2\eta e+C\alpha\eta^2e\).
+Their exponential product therefore differs from identity by
+\(C\eta^2(e+e^2)\le C'\eta^2e\).
+Multiplication by the bounded background plaquette gives (4.1).
+This uses the covariant difference bound, not a bound on the response's full Laplacian.
+
+**Lemma S: WRONG at Step 0 for the specified operators.**
+The source definition in `nl-r9.md:179–188` is
+\[
+ M_s=\mathsf m^3[W_0^{-1}]_s\mathsf m^{-1}-a_0I,
+ \qquad\text{the diagonal }-a_0I\text{ has no parameter}.       \tag{10}
+\]
+Each walk in \([W_0^{-1}]_s\) has a nonempty tag set: its hull contains its row endpoint.
+Set every parameter to zero, an allowed point of the decoupling polydisc.
+Every walk then vanishes, including every zero-length walk, whereas
+\[
+ M_{\boldsymbol0}=-a_0I,\qquad
+ M_{\boldsymbol0}e_c=-a_0e_c\ne0                           \tag{11}
+\]
+for a nonzero raw-row vector \(e_c\); `a2-layers.md:61` chooses the stabilizing coefficient \(a_0=1\).
+All parameter cubes now belong to \(N\).
+Lemma S's Step 0 instead asserts zero on those rows for all four operators, including \(M_s\).
+Equations (10)–(11) contradict that assertion directly.
+
+This is an operator-definition mismatch, independent of depth, volume and the background current.
+It does not refute the claimed splitting of the nonlinear response \(H\).
+The exterior factors \(H_1(s),G(s),H(s)\) still have their tagged support properties.
+A possible repair must treat \(-a_0I\) as a local map throughout the Picard chains.
+It must include the joined local read stencils in the neighboring tags; that repair is unproved here.
+Retagging the diagonal would change the assigned R9 system when \(s\ne1\).
+
+**Corollary R: CORRECT-NO-ADVANCE as an implication from a valid Lemma S and [RT].**
+The plaquette's root star contains each corner star.
+A second wall-component contributes a differentiated parameter on which the rooted anchor does not depend.
+That derivative is zero. Matching the full read hulls then gives heredity by identical Picard iterates.
+This conditional argument passes; (11) prevents using the supplied proof of its Lemma S input.
+
+### 7.2 The scalar calculation and the rate
+
+**Lemma T and the anchor estimates: ADVANCE as the stated implications.**
+Checked line by line by Codex, first failing step none in this calculation.
+For \(r=r_1/2\ge2\), the linear determinant term has coefficients bounded by \(2ABr^{1-n}\).
+The quadratic determinant term has coefficients bounded by \(B^2r^{2-n}\).
+The factor \(1/2\) and the two geometric sums give
+\[
+ \sum_{n\ge3}|f_n|\le2ABr^{-2}+B^2r^{-1}
+ =8ABr_1^{-2}+2B^2r_1^{-1}.
+\]
+Multiplication by \(\mu^n\le\mu^2\) proves the second bound.
+For the action anchor, insert \(A=C_0\alpha\eta^2\), \(B=C_1\delta\eta^2\) and \(r_1=r_R/\delta\).
+Then \(\alpha\le r_R\) and \(g^{-2}\mu^2\le\delta^{-2}\sum_Y|y|^2\) give (5.2).
+Taking \(A=0\) gives (5.3). Local truncation of \(y\) still requires Corollary R.
+
+**Theorem U: CORRECT-NO-ADVANCE as a conditional construction; its actual-data application is blocked by (11).**
+Repeated fundamental theorems of calculus give its exact finite bracket identity.
+Holomorphic composition and Cauchy integration give (H) on the named domains.
+Conditional on Corollary R, each bracket costs \(e^{-(\bar\kappa-1)|Y\setminus X_0|}\).
+There are at most \(6(M/\eta)^4|Y|\) action anchors, canceling the \(\eta^4\) in (5.2).
+The inequalities \(|X_0|\le16\), \(|Y|e^{-|Y|}\le e^{-1}\) and \(d_f(Y)\le|Y|-1\) give (6.1).
+The finite gauge-anchor count gives (6.2); their sum is the stated \(K_{GA}\delta\).
+Thus no depth or volume factor arises in this conditional scalar calculation.
+
+**Rate: CORRECT-NO-ADVANCE, conditional on the local family.**
+Choose the common \(\lambda>\lambda_0+\Theta/L+\sigma_0\) in `um-envelope.md` (8).
+Then \(\bar\kappa\ge\max\{\lambda+2,\Theta+1\}\) gives both UM19 inequalities, with \(R_s=e^{\bar\kappa}\).
+The later choice of \(M\), then the radii, then \(t\), absorbs \(K_{GA}\delta(t)\).
+This checks the rate allocation. It cannot repair the support identity (11).
+
+## 8. Stop before applying B1
+
+The first reduction in Section 6 needs UM1 for the assigned operators, including its local support and heredity.
+The failed input above prevents that application. No new B1 conclusion is drawn.
+The Gaussian comparison (7) remains checked by Claude, first failing step none, conditional on (6).
+It bounds the integral but does not establish the missing response support identity.
+
+Balaban CMP **109**, pp. 269–270, (3.1), likewise separates scalar analyticity from localization.
+His pp. 275–276, (3.25)–(3.29), retain the assigned current and field transformations on their proper domains.
+Those passages do not replace the failed operator identity. Their method is credited to Tadeusz Balaban.
+B4, the map 1.6, and the finer potential, zone and mixed derivatives are not reached.
+
 ## Result
 
-**B4 and the holomorphic one-step theorem 1.6 remain unproved in this attempt.**
-Codex checked `wf-c.md` Sections 2–4 line by line, with the scopes and one unused failure stated in Section 0.
-The common collar chart and box-first core admission now pass as implications, including the age-zero margin \(1/5\).
-The Gaussian comparison (7) is proved here from the adopted matrix bounds; it is not yet checked by the other model.
-The first new unproved input is (8): formation and the absolute local bound for the actual intrinsic scalar potential.
-The actual B1 majorant, then B4/1.6 and the finer potential, zone and mixed derivatives, remain open.
-No computer calculation discharges a step. This research note grants no status.
+**Stopped at UM1 [D] and Lemma S, Step 0: the actual \(M_{\boldsymbol0}=-a_0I\), not zero.**
+The nonlinear splitting conclusion is not refuted; its supplied proof has a false operator input.
+The scalar remainder and rate calculations pass conditionally. Equation (7) remains checked by Claude.
+B1, B4 and 1.6 remain unproved here, including their finer derivatives on their own domains.
+Only this file was changed. Every mathematical step above is by hand; no status is granted.

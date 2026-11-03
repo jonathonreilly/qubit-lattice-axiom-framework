@@ -18,7 +18,7 @@ Provenance: Claude Opus 5.5, effort max, commit 9a35fdcba. One line-by-line read
 The steps, each redone:
 
 - **D_0.** D_0 >= C_0 >= ||C_0^{-1}||^{-1} >= K_G^{-1}, since C_0 Gamma_0 Gamma_0^T C_0 >= 0. Also ||D_0|| <= K_G + K_G^2 K_G^2. Correct.
-- **D - D_0.** Telescoping the three factors of C Gamma Gamma^T C gives ||D - D_0|| <= eps_G + 4(K_G + eps_G)^3 eps_G. Bilinear transposes keep operator norms. Correct.
+- **D - D_0.** Telescoping the four factors of C Gamma Gamma^T C gives ||D - D_0|| <= eps_G + 4(K_G + eps_G)^3 eps_G. Bilinear transposes keep operator norms. Correct.
 - **Re D^{-1}.** For a complex symmetric S, the entrywise real part is the Hermitian part. If ||D - D_0|| <= 1/(2K_G), then ||D^{-1}|| <= 2K_G and ||D^{-1} - D_0^{-1}|| <= 2K_G^2 ||D - D_0||. So Re D^{-1} >= (K_G + K_G^4)^{-1} - C(K_G) eps_G. Correct.
 - **Q_0.** Expanding (b - C_0 Gamma_0 xi)^T C_0^{-1} (b - C_0 Gamma_0 xi) + |xi|^2 gives b^T C_0^{-1} b - 2 b^T Gamma_0 xi + xi^T (I + Gamma_0^T C_0 Gamma_0) xi, the form of Q_0. The shear L_0 and its inverse have norm <= 1 + K_G^2. So Q_0 >= min(1, K_G^{-1}) (1 + K_G^2)^{-2}. Then ||Q - Q_0|| <= C(K_G) eps_G needs ||C^{-1} - C_0^{-1}|| <= 2 K_G^2 eps_G, which is the resolvent identity. No dimension enters. Correct.
 - **Marginal.** The Schur complement is C^{-1} - Gamma (I + Gamma^T C Gamma)^{-1} Gamma^T. Woodbury with U = C Gamma, V = Gamma^T C gives D^{-1}. Here I + Gamma^T C Gamma = Q_xixi has positive real part, so it is invertible. det Q = det C^{-1} (eliminate the b block) and det Q = det Q_xixi det D^{-1} (eliminate xi). So det D = det C det(I + Gamma^T C Gamma). Correct.
@@ -50,7 +50,7 @@ The steps, each redone:
   Psi_p(s; y) = T_3[ x(p) a_p(U(P; s; g .)) ](y),
   v_p(Y; P, y) = int_{[0,1]^K} prod_{Delta in K} d/ds_Delta  Psi_p(s_K + 1_{X_0(p)}; y) ds_K,   (s = 0 off Y).
 
-Put V^A(Y) = sum over p with X_0(p) in Y of v_p(Y). For a gauge pair (y,x), let Y_G(y,x) be the set of fine cubes meeting the read set of gf_(y,x)(V_k(g .)), and let V^G(Y) be the sum of w_G T_3[gf_(y,x)(V_k(g .))] over the pairs with Y_G(y,x) = Y. Finally V^{G,A}(Y) = V^A(Y) + V^G(Y), with the type tag "intrinsic".
+*Convention:* v_p(Y; P, y) is evaluated at y 1_Y, that is, with y set to zero off Y. By Corollary R this changes nothing wherever both sides are defined. So v_p(Y) is defined as soon as y is in the box on the bonds of Y, whatever y is elsewhere, as UM2's cutoff on Y_0 requires. Put V^A(Y) = sum over p with X_0(p) in Y of v_p(Y). For a gauge pair (y,x), let Y_G(y,x) be the set of fine cubes meeting the read set of gf_(y,x)(V_k(g .)), and let V^G(Y) be the sum of w_G T_3[gf_(y,x)(V_k(g .))] over the pairs with Y_G(y,x) = Y. Finally V^{G,A}(Y) = V^A(Y) + V^G(Y), with the type tag "intrinsic".
 
 **Theorem U (UM1 for the intrinsic potential).** Assume the inputs of Section 3. Then, uniformly in depth, volume and the label count:
 

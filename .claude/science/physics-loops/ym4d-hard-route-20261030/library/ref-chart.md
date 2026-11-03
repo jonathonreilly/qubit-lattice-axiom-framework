@@ -5,7 +5,7 @@ lease_until: 2026-11-03T19:18Z
 
 Provenance: Claude Opus 5.5 (`claude-opus-5-5`), effort max, Mac mini worker; queue row 133; pinned at `6a1fad49b` on `claude/ym4d-hard-route`; research text, not an audit, same-model, no gate yet. No numerics were run; every step below is a written argument.
 
-**Outcome (filled in at the end, Section 10).** In progress.
+**Outcome.** No counterexample (Section 2). Proposition 2.4 (SA 17656; Balaban CMP 122 Proposition 1, not read) is rebuilt as an implication from gated inputs (P81, Theorem 4, the row-map bounds, Lemma BC, GEO4): Theorem 2.4, Section 7. The key step is Theorem H (Section 6): the Hessian with all box averages freed is the Lagrangian Hessian on the linear response, and it dominates the level-$k$ curl energy at every depth by an exact averaging identity (Lemma E), so it has a gap $c_*(M)$ in $\delta_{\rm ax}$ gauge, uniform in depth, volume and data. The joint critical reference chart with its uniform real slice exists at every admitted pair (Theorem C, Corollaries P, D), which discharges the reference-chart premises of `sa-2.13-2.md` Lemmas 3.1-3.2. For $\sup_{\mathbf p}\lvert V_X\rvert\le CN_0$: the reference-law, prepared-substitution and inner-substitution parts are bounded (Section 9; this needed Theorem 6(c) at complex data, Lemma 6c$^{\mathbb C}$, and the ten terms of 2.8 at complex pairs, Theorem 2.8-T$^{\mathbb C}$). The retained earlier activities at the current pair are not: they are rank 4's substitution room and 2.13's hypothesis 3, which is the first failing step. Same-model; cross-provider gate pending.
 
 ## 1. Scope, sources, credit
 
@@ -69,7 +69,7 @@ Thus $\Sigma\cap\mathcal K(a)\subset\{\lvert u\rvert_\infty<\rho_1(a)\}$, a conv
 
 ## 4. Two exact linear facts
 
-**Lemma E (energy of the linearised averages, every depth).** Let $K$ be the derivative at $U=\mathbf 1$ of one step of the actual block map (QC3), on the unscaled bond logarithms of the finer lattice, and $K^{(k)}=K\circ\cdots\circ K$ ($k$ factors), the derivative of $\mathcal M^k$ at $\mathbf 1$. For a set $S'$ of level-$k$ plaquettes let $\mathcal N_0(S')$ be the bare plaquettes in its ancestor rectangles (the $L\times L$ squares of (6.2) below, iterated). Then for every $\mathfrak{su}(2)$-valued bare $1$-form $Y$,
+**Lemma E (energy of the linearised averages, every depth).** Let $K$ be the derivative at $U=\mathbf 1$ of one step of the actual block map (QC3), on the unscaled bond logarithms of the finer lattice, and $K^{(k)}=K\circ\cdots\circ K$ ($k$ factors), the derivative of $\mathcal M^k$ at $\mathbf 1$. For a set $S'$ of level-$k$ plaquettes let $\mathcal N_0(S')$ be the bare plaquettes in its ancestor rectangles (the $L\times L$ squares of (4.0) below, iterated). Then for every $\mathfrak{su}(2)$-valued bare $1$-form $Y$,
 \[
  \sum_{p'\in S'}\lvert d_k(K^{(k)}Y)(p')\rvert^2\le\sum_{p\in\mathcal N_0(S')}\lvert dY(p)\rvert^2 ,
  \tag{4.1}
@@ -79,7 +79,7 @@ where $d$ is the oriented lattice curl $Y(b_1)+Y(b_2)-Y(b_3)-Y(b_4)$ on each lat
 *Proof.* One step, at a positive coarse plaquette $p'=(y;\mu\nu)$ with bonds $c_1=(y,y+Le_\mu)$, $c_2=(y+Le_\mu,y+Le_\mu+Le_\nu)$, $c_3=(y+Le_\nu,y+Le_\nu+Le_\mu)$, $c_4=(y,y+Le_\nu)$. By (QC15) (SA 8177-8189: the derivative of the contour mean at the identity is the arithmetic mean, and the derivative of $U[c]$ cancels in each closed logarithm), $(Ka)(y,y')=\sigma_a(y)+L^{-4}\sum_{x\in B(y)}a([x,x+Le_\mu])-\sigma_a(y')$. In $(Ka)(c_1)+(Ka)(c_2)-(Ka)(c_3)-(Ka)(c_4)$ the eight $\sigma$ terms cancel in pairs. Since $B(y+Le_\mu)=B(y)+Le_\mu$, the rest is $L^{-4}\sum_{x\in B(y)}$ of the oriented sum of $a$ around the $L\times L$ square with corner $x$ in the $\mu\nu$ plane, which by the abelian Stokes identity is the sum of $da$ over its $L^2$ plaquettes, all of orientation $\mu\nu$. So
 \[
  d(Ka)(p')=(P\,da)(p'),\qquad (Pf)(y;\mu\nu)=L^{-4}\sum_{x\in B(y)}\sum_{r,s=0}^{L-1}f(x+re_\mu+se_\nu;\mu\nu),
- \tag{6.2}
+ \tag{4.0}
 \]
 the matrix of `sa-2.13-2.md` (6.2), now as an exact linear identity with nonnegative entries. Row sums are $L^2$. A fine plaquette $(z;\mu\nu)$ occurs for $L^2$ pairs $(r,s)$, each fixing $x$ and hence the unique block $B(y)\ni x$, with weight $L^{-4}$: column sums are $L^{-2}$. Schur's test gives $\lVert P\rVert_{2\to2}\le(L^2\cdot L^{-2})^{1/2}=1$, also for $\mathbb R^3$-valued vectors since $\lvert Pf\rvert\le P\lvert f\rvert$ entrywise. Iterate $k$ times (the chain rule at the identity at every level) and restrict the rows to $S'$ and the columns to the entries those rows read. $\square$
 
@@ -134,7 +134,7 @@ The cancellation that makes this volume- and depth-free is in $J$: the force on 
  \big\lvert D\tilde q_c(e^{i\eta a}\mathbf 1)[\eta h]-K^{(k)}_c[\eta h]\big\rvert\le C'_{\rm R}\,(s\sup_{S_c}\lvert a\rvert)(s\sup_{S_c}\lvert h\rvert),
  \tag{5.2}
 \]
-with $C'_{\rm R}=C'_{\rm R}(L)$; by homogeneity the first bound holds for every $h$.
+with $C'_{\rm R}=C'_{\rm R}(L)$; both bounds are homogeneous in $h$ (of degree $2$ and $1$), so they hold for every $h$.
 
 *Proof.* The row is the $k$-step recursion (6)-(8) of `a3-derivative.md` 4.1 with its accumulated endpoint factors; under $s\sup\lvert a\rvert\le r_*$ the recursion stays in its fixed analytic ball ($\lvert a_r\rvert\le2r_*t_r$) and the endpoint factors have condition number at most $2$, so the group-valued row stays in a fixed ball about its reference value and its left logarithm is holomorphic and bounded by a constant. For the first bound apply the one-variable Cauchy estimate to $z\mapsto\tilde q_c(e^{iz\eta h}U')$ on $\lvert z\rvert=r_*/(2s\sup\lvert h\rvert)$, which keeps the $a$-ball. For the second, let $F(a):=\tfrac1i\log(\mathcal M^k(e^{i\eta a})(c))$ at the flat reference; $DF(0)=K^{(k)}_c\eta$. A left variation $e^{is\eta h}$ at the base $e^{i\eta a}$ is the additive variation $h+O(\eta\lvert a\rvert\lvert h\rvert)$ of $a$ (Baker-Campbell-Hausdorff on each bare bond), and the left logarithm of the row at $F(a)$ differs from $F$ by a factor $1+O(\lvert F(a)\rvert)$ with $\lvert F(a)\rvert\le C s\sup\lvert a\rvert$ (Schwarz's lemma on the bounded holomorphic $F$). Finally $\lvert DF(a)[h]-DF(0)[h]\rvert\le\sup_{t\le1}\lvert D^2F(ta)[a,h]\rvert$, bounded by the two-variable Cauchy estimate on the same ball by $C(s\sup\lvert a\rvert)(s\sup\lvert h\rvert)$. $\square$
 
@@ -197,11 +197,11 @@ $H_p(U)[Y,Y]=H_p(U^g)[Y',Y']\ge\tfrac12\lvert dY'(p)\rvert^2-(1024\eta^2\bar a^2
 \]
 Since $\lVert w\rVert_\infty\le\lVert w\rVert_2$, $h_V(w)\ge(\frac1{4C_{\rm P}}-C_5\alpha)\lVert w\rVert_2^2\ge c_*\lVert w\rVert_2^2$ when
 \[
- \alpha\le\alpha_*(M):=\min\Big\{\bar\varepsilon,\ 1,\ \frac{r_*}{24\ell_NB},\ \frac1{48\ell_NB},\ \frac1{8C_5(M)C_{\rm P}(M)},\ \frac{2c_*(M)}{n_bC_{\rm M}BC_X}\Big\}
+ \alpha\le\alpha_*(M):=\min\Big\{\bar\varepsilon,\ \frac14,\ \frac{r_*}{24\ell_NB},\ \frac1{48\ell_NB},\ \frac1{8C_5(M)C_{\rm P}(M)},\ \frac{c_*(M)}{n_bC_{\rm M}BC_X}\Big\}
 \]
 (the last entry is used in Section 7; $C_X$ is the absolute constant there). At $V=\mathbf 1$: $U=\mathbf 1$, $\lambda=0$, $g=1$, $m=0$, and $h_{\mathbf 1}(w)=\lVert dY\rVert^2\ge\sum_S\lvert d_kw^0\rvert^2\ge C_{\rm P}^{-1}\lVert w\rVert_2^2$ exactly. $\square$
 
-**What the identification consists of.** The freed Hessian is not the next-fibre Hessian of `a2-full.md` (that one keeps the box rows) and not the pivot chart of `a2-curved.md`. By (5.1) it is the Lagrangian Hessian on the linearised background of the box datum; near the box it is compared, in one local axial gauge, with the flat curl form, and the flat curl form dominates the level-$k$ curl energy of the datum by the exact identity (6.2) at every depth; far from the box, and in the multiplier term, only gauge-invariant pointwise quantities enter, and T4 with Lemma BC sums them without depth or volume. The tree Poincaré inequality (4.2) is the last step, not the first.
+**What the identification consists of.** The freed Hessian is not the next-fibre Hessian of `a2-full.md` (that one keeps the box rows) and not the pivot chart of `a2-curved.md`. By (5.1) it is the Lagrangian Hessian on the linearised background of the box datum; near the box it is compared, in one local axial gauge, with the flat curl form, and the flat curl form dominates the level-$k$ curl energy of the datum by the exact identity (4.0) at every depth; far from the box, and in the multiplier term, only gauge-invariant pointwise quantities enter, and T4 with Lemma BC sums them without depth or volume. The tree Poincaré inequality (4.2) is the last step, not the first.
 
 ## 7. Proposition 2.4 rebuilt
 
@@ -228,7 +228,7 @@ then $M_0$; then the coupling ceiling, which must give $\varepsilon\le C\varepsi
 
 (e) $V_\Lambda$ is real-analytic in the exterior data and continues holomorphically (Theorem C).
 
-*Proof.* Put $\rho_1=2A_Ma_\Lambda$, $\rho_2=2\rho_1=\alpha_*/16\le\frac1{16}$.
+*Proof.* Put $\rho_1=2A_Ma_\Lambda$, $\rho_2=2\rho_1=\alpha_*/16\le\frac1{64}$.
 
 1. *Class and room.* By Lemma S(i), $\Sigma\cap\mathcal K(a_\Lambda)\subset\{\lvert u\rvert_\infty<\rho_1\}$. By Lemma S(iii), every $V(u)=e^{iu}V^{\rm c}$ with $\lvert u\rvert_\infty\le\rho_2$ has $\alpha(V(u))\le C_{\rm c}\varepsilon+8\rho_2\le\frac{\alpha_*}2+\frac{\alpha_*}2$, so P81 gives its background and Theorem H applies to it.
 
@@ -236,7 +236,7 @@ then $M_0$; then the coupling ceiling, which must give $\varepsilon\le C\varepsi
 \[
  \tfrac{d^2}{dt^2}\varphi(u+tw)\ge c_*(1-4\rho_2)^2\lVert w\rVert_2^2-2n_bC_{\rm M}B\alpha_*C_X\rho_2\lVert w\rVert_\infty^2\ge\tfrac{c_*}2\lVert w\rVert_2^2 ,
 \]
-using $\rho_2\le\frac1{16}$ and the last entry of $\alpha_*$ (it makes $2n_bC_{\rm M}B\alpha_*C_X\rho_2\le c_*/4$).
+using $\rho_2\le\frac1{64}$ and the last entry of $\alpha_*$, which with $\alpha_*\le1$ makes $2n_bC_{\rm M}B\alpha_*C_X\rho_2=n_bC_{\rm M}BC_X\alpha_*^2/8\le c_*/8$; so the right side is at least $\big((\frac{15}{16})^2-\frac18\big)c_*\ge\frac{c_*}2$.
 
 3. *Existence.* By Lemmas V(b) and M and $r(\Phi(V^{\rm c}))\le B\alpha(V^{\rm c})\le BC_{\rm c}\varepsilon$, $\lvert\nabla\varphi(0)\rvert_2\le2n_b^{1/2}C_{\rm M}BC_{\rm c}\varepsilon$. On the convex set $\{\lvert u\rvert_\infty<\rho_2\}$, step 2 gives $\varphi(u)\ge\varphi(0)+\nabla\varphi(0)\cdot u+\frac{c_*}4\lvert u\rvert_2^2$, so $\varphi(u)>\varphi(0)$ once $\lvert u\rvert_2>4\lvert\nabla\varphi(0)\rvert_2/c_*$. A minimiser $u_\Lambda$ of the continuous $\varphi$ on the compact $\{\lvert u\rvert_\infty\le\rho_1\}$ therefore has $\lvert u_\Lambda\rvert_\infty\le\lvert u_\Lambda\rvert_2\le C_{\rm m}\varepsilon\le A_Ma_\Lambda<\rho_1$: it is interior, so $\nabla\varphi(u_\Lambda)=0$, and $V_\Lambda:=V(u_\Lambda)$ is critical for $f$ (Lemma G).
 
@@ -311,7 +311,9 @@ Hence for every $B$ in the test $\lvert B\rvert<\delta'_k/g_k$ the prepared datu
 
 *Proof.* The prepared datum changes only on the exterior and the shells, by (9.1). Superpose the T4 responses (prepared sequence, real critical reference at $p_{\rm r}$, on its polydisc): at a top $y$ by the core, $\xi_y\lvert\Delta a(y)\rvert\le C_4\sum_c\lvert\delta_c\rvert e^{-\theta d_{\mathbf B}(y,y_c)}$. A row on the shell of level $j$ is reached only across the shells $k_\flat,\dots,j-1$, each of width $\ge M\xi_i$ and so of $d_{\mathbf B}$-cost $\ge M$ (GEO3); exterior rows are beyond all $\mathsf N_k$ shells. Split $e^{-\theta d}=e^{-\theta d/2}e^{-\theta d/2}$, use Lemma BC$'$ at rate $\theta/2$ for the rows of each shell, and sum $\xi_j e^{-\theta M(j-k_\flat-1)_+/2}$ over $j$: $\le\xi_{k_\flat}\sum_mL^me^{-\theta M(m-1)_+/2}$. A level-$k$ continuum potential of size $t$ has size $\xi_{k_\flat}t$ in level-$k_\flat$ units; the current member of T4 treats $J$ the same way. $\square$
 
-So the inner pair moves by $O(L^{-\mathsf N_k}g_k\,\mathrm{polylog})$ inside an inner pair domain of radius $\alpha_{1,k_\flat}\asymp g_{k_\flat}\,\mathrm{polylog}$. Given the inner (pointwise-pair) bound $\lvert V_{X'}\rvert\le CN_0(\omega')$ at level $k_\flat$ (the same statement one level down, i.e. the induction hypothesis), Schwarz's lemma on the inner pair domain bounds the inner response difference (Inn) by $2CN_0(\omega')\,C_IL^{-\mathsf N_k}\beta_A/\alpha_{1,k_\flat}$, which is $o(N_0(\omega'))$.
+So the inner pair moves by $O(L^{-\mathsf N_k}g_k\,\mathrm{polylog})$ inside an inner pair domain of radius $\alpha_{1,k_\flat}\asymp g_{k_\flat}\,\mathrm{polylog}$. Given the inner (pointwise-pair) bound $\lvert V_{X'}\rvert\le CN_0(\omega')$ at level $k_\flat$ (the same statement one level down, i.e. the induction hypothesis), Schwarz's lemma on the inner pair domain bounds the change of $V_{X'}$ by $2CN_0(\omega')\,C_IL^{-\mathsf N_k}\beta_A/\alpha_{1,k_\flat}$, which is $o(N_0(\omega'))$; the inner $q_{X'}$ is quadratic in its own stored variables with coefficients formed at the real part of its splitting, which moves by the same amount, so its change is $O(K_{X'}(A_1p_1)^2C_IL^{-\mathsf N_k}\beta_A)$.
+
+*Proposition I(b) (the inner Wilson factor).* The same superposition at a top $y$ of $Z^\natural$ (levels $\le k_\flat+n_{\rm c}-1$, and the finer layers of the core) gives $\xi_y\lvert\Delta a(y)\rvert+\xi_y^2\lvert\nabla\Delta a(y)\rvert\le C'_I(M)\,n_{\rm c}L^{n_{\rm c}-\mathsf N_k}\beta_A\,e^{-\theta c_g(j_0-j(y)-1)_+/2}$, $j_0$ the level of the innermost shell: the margin rows carry $\xi_j\le L^{n_{\rm c}-1-\mathsf N_k}$, farther shells are beyond $\ge M$ per shell, and reaching a finer core layer costs $c_g$ per layer. Read as SA 18068-18072 states it, with the large plaquettes of the old core off the determining set (`floor-screen.md` Lemma O, as repaired in its gate), the pair moves only plaquettes of regular backgrounds, $\lVert1-U_p\rVert\le C_{\rm P}\varepsilon_1^{\mathbb C}(\eta/\xi_y)^2$. With $\lvert a(G)-a(H)\rvert\le\frac32(\lVert1-G\rVert+\lVert1-H\rVert)\lVert G-H\rVert$ and Lemma BC$'$-type sums (the factor $e^{-\theta c_g/2}$ per layer beats the $L^4$ growth of the number of tops), the change of $A(x''_k\psi,\cdot)$ is at most $C(M)\,x\varepsilon_1^{\mathbb C}\beta_A\,(\check R+L)^4n_{\rm c}L^{n_{\rm c}-\mathsf N_k}$, polylogarithmic times $L^{-\mathsf N_k/2}$, so $o(1)$. This step depends on that reading of the inner background; it is labelled as such.
 
 **Lemma 6c$^{\mathbb C}$ (Theorem 6(c) at complex data; implication from `a3-derivative.md` 10 (Lemmas 10.1-10.3, Corollary 10.4), T4 on the whole polydisc, P81 9.1).** Let $\mathbf B,\tilde{\mathbf B}$, $W$, the meet joined sequence $\mathbf B'$ and the real $\varepsilon_1$-regular data $\mathbf V_{\rm r},\tilde{\mathbf V}_{\rm r}$ satisfy the premises of Lemma 10.1 ((G1)-(G3), P81, P82° for $\mathbf B'$), with the data coinciding on $W$. Let $\mathbf V(\beta)=e^{i\beta}\mathbf V_{\rm r}$, $\tilde{\mathbf V}(\tilde\beta)=e^{i\tilde\beta}\tilde{\mathbf V}_{\rm r}$ be complex, $\lVert\beta\rVert_\infty,\lVert\tilde\beta\rVert_\infty\le\beta_*$, with $\beta=\tilde\beta$ on the rows inside $W$, and $C_L(\varepsilon_1+C_9\beta_*)\le c\,r_{\rm B}$. Then on $W$, $U(\beta)=(e^{i\eta f}U^\circ_W(\beta))^{w}$, with $U^\circ_W(\beta)$ the meet background at the complex joined datum, and at every top $y$ of $\mathbf B'$ away from the collars
 \[
@@ -336,3 +338,36 @@ likewise for $\tilde U(\tilde\beta)$ with the same $U^\circ_W(\beta)$ (Lemma MJ(
 as an implication from the inputs listed, with (Inn) using the same bound one level down. What is not closed is (Act), the retained earlier activities at the current pair: their bound at the current pair is the substitution room of `sa-ledger.md` rank 4 (open at rows 130-131, `dec-field`, `removed-fix`), and their real bound is hypothesis 3 of `sa-2.13.md` (open; `sa-2.13-2.md` Section 7(d)). That is the first failing step of the route for the full (pointwise-pair) bound, and it is outside this item's chart.
 
 **Counterexample attempts on $V_X$.** (a) A zero of the complex reference denominator near the centre, the mechanism of `sa-2.13.md` (9.2): excluded at every admitted pair by complete criticality of the holomorphic branch (Corollary D). (b) The prepared substitution leaving its polydisc: excluded by Proposition S. (c) A large complex part of the inner pair: excluded with room $L^{-\mathsf N_k}$ by Proposition I. (d) A complex linear term in $B$ of order $g^{-1}$ (D1 of `sa-2.8-terms.md` at complex pairs): its source identity (2.1) is algebraic and holds at complex pairs, and it is bounded by the current of $S(\mathbf p)$, which P81's complex chart keeps at $C_9(C_{2.4}\varepsilon+2C_S\beta_A)$; the real factors that beat $g^{-1}$ there ($\xi^2$ inside $Z^\natural$, the distance decay outside $\chi$) are geometric and unchanged, so this attempt fails too, given complex I1 for the decay part. No admitted counterexample was found.
+
+## 10. Standing, consumers, open items, verdict
+
+**What is proved here (implications, same-model, every step written; no gate yet).**
+
+| Statement | Result | Reads |
+|---|---|---|
+| Lemma E | exact identity $d(Ka)=P\,da$ for the actual centred average at the identity; $\lVert P\rVert_{2\to2}\le1$; energy of the linearised averages at every depth | (QC15) |
+| Lemmas G, S, P | complete $\delta_{\rm ax}$ slice; class inside an $\ell^\infty$ ball of radius $2A_Ma$; flat-cycle centre within $C_{\rm c}(M)\varepsilon$; shell filling; tree Poincaré constant $n_bA_M^2$ | elementary |
+| Lemmas V, M, R, N, BC$'$ | envelope and second-variation identities with the full multiplier; $\lvert\lambda_c\rvert\le C_{\rm M}r(U)$ for every row; row-map derivative bounds; local axial gauge; single-top count | P81, T4, RD, GEO4 |
+| Theorem H | the freed-average Hessian is $\ge c_*(M)\lVert w\rVert^2$ in $\delta_{\rm ax}$ gauge at every real datum with $\alpha\le\alpha_*(M)$, uniformly in depth, volume, data and frame | the above, BC |
+| Theorem 2.4 | Proposition 2.4 of the outline, every clause: existence, uniqueness of the critical orbit on the mild class, strict minimality, $\lvert\partial V_\Lambda-1\rvert\le C_{2.4}(M)\varepsilon$, $J(U_0)=0$ in $\Lambda^{\rm pr}$, axial gap, analyticity | Theorem H, P81 |
+| Theorem C, Corollaries P, D | the joint critical reference chart: a holomorphic critical branch on a sup-norm polydisc of fixed radius $\rho_\beta(M)$ about every admitted real exterior datum, real and minimising on the real slice, complex Hessian within $c_*/4$; defined at every admitted pair, independent of the splitting; the reference-chart premises of `sa-2.13-2.md` Lemmas 3.1-3.2, with the volume factor removed from (3.4) | Theorem 2.4, P81, T4, (ADM), (CUT) |
+| Propositions Ref, S, I | reference-law part of $V_X$ is $o(1)$; prepared substitution admitted at every pair; inner pair moves by $O(L^{-\mathsf N_k})$ times the pair radius; inner Wilson factor moves by $o(1)$ (I(b), on the stated reading of SA 18068-18072) | the above, T4 for the prepared sequence, GEO3 |
+| Lemma 6c$^{\mathbb C}$ | Theorem 6(c) at complex data in the P81 polydisc, rate $\theta$, real meet reference | `a3-derivative.md` 10, T4 on the polydisc, P81 9.1 |
+| Theorem 2.8-T$^{\mathbb C}$ | the ten terms of 2.8 at complex admitted pairs, $O(g_k^{1/2})$; Gaussian continued holomorphically, within $o(1)$ of $q_X$ | Theorem 2.8-T and its inputs, Lemma 6c$^{\mathbb C}$ |
+
+Premises named here that the construction must satisfy: SEP for the localised reference problem (as in `sa-2.8-terms.md` Section 3); (ADM), the real splitting of an admitted pair is level-$k$ $\varepsilon$-regular outside the box and its complex part is $O(g_k)$ times logarithms (SA 6033, 18041); (CUT), $\phi_X$ varies on the level-$k$ scale.
+
+**Order of constants.** Section 7 for Theorem 2.4; Theorem C adds $\rho_H,\rho_v,\rho_\beta,C_v$ (after $c_*$, before $M_0$); Corollary P puts a ceiling on the pair radius through $\beta_A$; the coupling ceiling comes last and also gives $M_0\varepsilon_k\le r_{\rm B}/32$ and $\delta_*\le\log\frac32$. Nothing depends on $k$, $K$, the torus, the history or the frame.
+
+**Consumers that change.**
+1. `sa-2.8-terms.md` I4 is no longer cited-pending: it is Theorem 2.4 (a), (b), (d), and Lemma LM's $\lambda_\Lambda=0$ is (c). Its other inputs are unchanged.
+2. `sa-2.13-2.md` Section 3: "the holomorphic complete critical branch is Proposition 2.4, SA L17656, still I4's unrebuilt input" and "the larger joint chart and real slice required above for every pair" are supplied by Theorem C and Corollaries P, D. Lemma 3.1 may use the centred constant $K'$ (depth- and volume-free) in place of $C_FK$. Still cited there: the real cutoff tail (gate of 2.8, Section 7(a)).
+3. Floor screening and (D-F) (`support-physical.md`, `floor-screen.md`; FINISH "given the outline's Proposition 2.4 (Balaban CMP 122 Proposition 1, not in hand)"): that premise is now this note's Theorem 2.4. Proposition 2.4 is not the source of the 2.2(c) claim $A(P_X(0))\ge A(U_{k,X}(\mathcal M^kP_X(0)))$, already replaced in its gate.
+4. Rank 4's "6(c) at complex data": Lemma 6c$^{\mathbb C}$ covers complex datum increments with real references in the setting of (1b). Whether it covers the window's box localisation with decoupling parameters and independent currents (`o1-decoupled.md` Section 5) was not checked.
+
+**Defects found.** None in the statement of SA 17656. Its proof sketch is right in outline but omits the step that `sa-2.13-2.md` Section 7 found missing; here it is Lemma V plus Lemma E (the freed Hessian is the Lagrangian Hessian on the linear response, which dominates the level-$k$ curl energy at every depth through an exact identity), with the curved correction localised by T4. In `sa-2.13-2.md` Lemma 3.1 the volume factor $K$ is unnecessary (centred bound).
+
+**Open, ranked.**
+1. (Act): the retained earlier activities at the current pair, which is rank 4's substitution room (rows 130-131) and hypothesis 3 of `sa-2.13.md`. First failing step of the route to the full (pointwise-pair) bound.
+2. Proposition I(b) rests on a reading of SA 18068-18072 (the old core's large plaquettes are off the determining set, so the pair moves only regular plaquettes); a reader of the outline's core structure should confirm it.
+3. A cross-provider gate of this note. Hardest points, in order: Theorem H (near/far split, the flat comparison through Lemma E and Lemma R's mismatch, the far sums through T4 and BC); Lemma V(c) at non-critical data; Lemma 6c$^{\mathbb C}$ step 1 (identity theorem through the canonical representative); the replacement list of Theorem 2.8-T$^{\mathbb C}$; Theorem C's radii.

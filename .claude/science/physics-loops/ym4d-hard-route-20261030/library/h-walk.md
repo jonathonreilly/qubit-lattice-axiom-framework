@@ -9,9 +9,24 @@ Provenance: Anthropic Claude Opus 5.5 (`claude-opus-5-5`), effort max as configu
 
 **Credit.** The statement (statement 5, SA 10302-10340), the operators (SA 10142-10208), the walk vocabulary (SA 10210), the unfolding with auxiliary unknowns (mechanism (f), SA 10540), the tree treatment of H^T J (mechanism (g), SA 10548), the multiplier (mechanism (h), SA 10550) and the consumer (SA 14108-14196) are Ethan Sussman and Levent Alpoge's outline, with Claude and Codex as authors of their text. Tadeusz Balaban supplies the method: generalized random-walk expansions from local inverses built on **cut-down sequences** around each cube (CMP 99b pp. 408-410, (3.87)-(3.94), Theorem 3.7, Corollary 3.8), the summation lemma (CMP 96 Lemma 2.1, (2.50)-(2.66)) and the walk-relative distance (CMP 99b (3.93)); CMP 95 Proposition 1.2 is the one-region prototype. The global operator bounds used as inputs are Claude's `a2-layers.md` §7 with Codex's repairs in `gates/a2-layers-gate.md`, resting on Codex's `a2-curved.md` §8 as gated in `gates/a2-curved-gate.md`. The parametrix lemma template is `path_expansion_locality.md` Lemma 1 (Claude, after Dimock arXiv:1108.1335 §2.4). The local saddle system and its commutator estimates are Codex's `flat-port.md` §§8-11, gated in `gates/flat-port-gate.md`.
 
-## 0. Disposition (provisional; final in §10)
+## 0. Disposition
 
-In progress.
+**Proved as an implication, with two clauses corrected (Theorem H, §8).** The outline's statement 5 for chi_Y A chi_Y holds at the pairs regular for the longer sequence, real or complex, with independent current. That is (H-walk), the only input of A2 item (3) (`a2-full.md` Theorem VI). The corrected clauses:
+
+- A tree walk of length m carries M_1^{-m/3}, not M_1^{-m} (test 2.3).
+- Single terms are gauge covariant only under the subgroup under which A itself is, because G^(2)_V breaks full covariance (test 2.1, defect D1).
+
+The rate is independent of M_1, the hull is O(M_1) local units, and the terms are canonical. Theorem VI reads this form verbatim (§9).
+
+**Route** (Balaban CMP 99b §C with the outline's mechanisms (f)-(h)):
+
+- Unfold every non-local piece of A (R, lambda_A, Delta'_pi[J], S^T Delta^(2)[j] S and the row multiplier) into one symmetric finite-range system with eight unknowns. Its inverse has H, H_1, (QGQ^T)^{-1} and (QG_1Q^T)^{-1} as blocks (Lemma U).
+- Take as local models the same system for Balaban's cut-down sequences. These are separated sequences of their own, with no gauge choice, so their inverse bounds are the gated global ones of `a2-layers.md` §7 (Lemmas C, L).
+- Build the parametrix and chain the local decays to get walk terms with a rate independent of M_1 (Theorem W).
+- Treat the non-local coefficient H^T J by vertices that carry walks of H, which gives trees (Theorem T).
+- Assemble A (Theorem H).
+
+**Inputs:** (I1) the gated conjugation package of `a2-layers.md` §7 (rows 92-93, with Codex's repairs); (I2) gauge covariance of the averaging maps (covariance clause only); (I3) the level-k local maps (gated `a2-curved.md` §5). No counterexample to a consumed statement was found. Open: a cross-provider gate (§10).
 
 ## 1. The statement attacked, and what its consumer reads
 
@@ -41,6 +56,14 @@ are SA 10142-10206. A acts on the free (non-pivot) level-k coordinates of the bo
 
 Theorem VI goes through with this exponent (§9).
 
+**Literature read for this item** (targeted, reusing `lit-balaban.md` and `lit-large-field.md` §3):
+
+- Balaban CMP 95 Proposition 1.2 (pp. 35-37 of the OCR): the one-region random-walk representation of G from local inverses.
+- CMP 96 §2.B, (2.37)-(2.67): G' from local inverses with Neumann conditions; the commutator remainder (2.38)-(2.39); the chaining (2.52)-(2.56); the summation Lemma 2.1; Proposition 2.2. Also (2.141), the two-scale expansion.
+- CMP 99b §C, pp. 408-416: *cut-down sequences* Omega_n(□) around each cube, with gap 2R_0 M_0 L^n eta and walk cubes of size M = K R_0 M_0 (p. 408). Their operators satisfy the global theorems "correspondingly" and serve as local inverses. Also (3.87)-(3.90) and Theorem 3.7; the walk-relative distance and the per-walk bound (3.93)-(3.94), Corollary 3.8; the sequential expansions of (Q'G'^2Q'^*)^{-1} through comparison terms (3.95), Theorem 3.9; G_0 with the commutator of D R D^*, Theorem 3.10.
+
+Balaban expands the operators one after another, inserting earlier expansions into comparison terms. This note unfolds them instead into one finite-range system (mechanism (f)), so that local models agree with the global system *exactly* near each cutoff. None of the papers read here treats an independent current, or the multiplier H^T J as a non-local coefficient, inside a walk expansion. CMP 99b takes J = J(U), and its Theorems 3.12-3.13 work on shell. CMP 116, which the outline cites for the decoupled expansions (SA 10552-10558), and the papers [11, 13] cited at CMP 119 l. 1617 are not in hand. Mechanism (g) is the outline's sketch of the tree treatment, and §7 carries it out.
+
 ## 2. Counterexample tests (done before the proofs)
 
 **2.1 Full gauge covariance of the terms is impossible (wording defect D1).** A sum of covariant terms is covariant, and A is not covariant. G^(2)_V is the Hessian of GF_k(V) = sum_{y,x}[1 - (1/2) Re tr V(y,x)] (SA 7182), and GF(V^u) = sum[1 - (1/2) Re tr u(y) V(y,x) u(x)^{-1}]. Take V = 1 on one level-(k+1) block, and u = 1 except u(x) = e^{i eps T} at one non-centre point x. Along e^{iB}V^u the summand at (y, x) is 1 - (1/2) Re tr(e^{i gamma} e^{-i eps T}) with gamma = gamma_{y,x}(B). Its first-order term (1/2) eps tr(gamma T) + O(eps^2) is non-zero, and its second-order term differs from that at V by O(eps^2). So G^(2)_{V^u} is not the conjugate of G^(2)_V (this is `a2-full.md` §10 defect 5 made explicit). No expansion of A has every term gauge covariant. **Repair:** covariance under gauge transformations whose level-k action is constant on each level-(k+1) block of the mask. Every term from Delta_k, C_V and E^(2) is covariant under the full group (§8).
@@ -63,7 +86,7 @@ No counterexample to a consumed statement was found. Tests 2.1 and 2.3 change th
 
 ## 3. Geometry: cubes, cutoffs, boxes and cut-down sequences
 
-Work with the depth-k sequence (Omega_j)_{j<=k} of the step. The longer sequence enters only in §8. Fix the thresholds of the global theory, `a2-layers.md` §7.5 with `gates/a2-layers-gate.md` §§4-5: a cube size M' and a gap rho', both powers of L, with M' >= M_*(L), rho' >= rho_*(L) and tau_0 rho' >= 16 log L. They depend on L only. Let r_0 = r_0(L) be the d_B-range of all local operators in §4. Every pillar, row carrier and plaquette has d_B-diameter <= 4L (`a2-layers.md` 5.1), and r_0 <= 8L suffices. Assume
+Work with the depth-k sequence (Omega_j)_{j<=k} of the step. The longer sequence enters only in §8. Fix the thresholds of the global theory, `a2-layers.md` §7.5 with `gates/a2-layers-gate.md` §§4-5: a cube size M' and a gap rho', both powers of L, with M' >= M_*(L), rho' >= rho_*(L) (these include (4.0) of `a2-layers.md`) and tau_L rho' >= 256 log L, where tau_L := tau_0 2^{-25} is the rate of Lemma L (§5) and tau_0 = tau_0(L) is the conjugation threshold of `a2-layers.md` 7.2. They depend on L only. Let r_0 = r_0(L) be the d_B-range of all local operators in §4. Every pillar, row carrier and plaquette has d_B-diameter <= 4L (`a2-layers.md` 5.1), and r_0 <= 8L suffices. Assume
 
     (G0)  R_1 >= 64 L,   M_1 >= M_C(L) := 16 L (rho' + 4M' + 16 L r_0).
 
@@ -80,7 +103,7 @@ Work with the depth-k sequence (Omega_j)_{j<=k} of the step. The longer sequence
 
 A walk is a sequence omega = (kappa_0, ..., kappa_n) with X_{kappa_{i-1}} ∩ X_{kappa_i} ≠ ∅. By (c4) at most nu_1^n walks of length n start at a given cube.
 
-**Lemma C (cut-down sequences; after Balaban CMP 99b p. 408).** For kappa in K, let i_0 be the least i with kappa^(4) ∩ L_i ≠ ∅, and i_1 the largest i with kappa^(4) ∩ Omega_i ≠ ∅; then i_1 <= i_0 + 1. Let C_{i_1} be the smallest union of level-i_1 M'-cubes containing kappa^(7/2). For i = i_1, ..., 1, let C_{i-1} be the cube concentric with C_i whose half-side is larger by (rho' + 2M') xi_{i-1}, rounded outward to the level-(i-1) M'-grid. Put Omega^kappa_i = Omega_i ∩ C_i for i <= i_1 and Omega^kappa_i = ∅ for i > i_1. Then:
+**Lemma C (cut-down sequences; after Balaban CMP 99b p. 408).** For kappa in K, let i_0 be the least i with kappa^(4) ∩ L_i ≠ ∅, and i_1 the largest i with kappa^(4) ∩ Omega_i ≠ ∅; then i_1 <= i_0 + 1. Let C_{i_1} be the smallest union of level-i_1 M'-cubes containing kappa^(7/2). (It is a box, a product of intervals.) For i = i_1, ..., 1, let C_{i-1} be the box obtained from C_i by moving every face outward by (rho' + 2M') xi_{i-1}, then rounding outward to the level-(i-1) M'-grid. Put Omega^kappa_i = Omega_i ∩ C_i for i <= i_1 and Omega^kappa_i = ∅ for i > i_1. Then:
 
 - (C1) (Omega^kappa_i) is separated with cube size M' and gap rho', and lies in C_0 ⊂ kappa^(4).
 - (C2) Omega^kappa_i ∩ kappa^(7/2) = Omega_i ∩ kappa^(7/2) for every i. So on X_kappa enlarged by r_0 (inside kappa^(7/2) by (c3)) the two sequences have the same layers, tops, pillars, rows, omitted inward bonds and inner plaquettes.
@@ -170,7 +193,7 @@ Fix a smooth pillar partition of unity chi_x (sum_x chi_x = 1, supp chi_x within
 
     sum_x ||chi_x G||_*^2 <= C_L ||G||_*^2,     ||sum_x G_x||_*^2 <= C_L sum_x ||G_x||_*^2   if each G_x is supported near x.      (5.0)
 
-Let K_τ := sup_y sum_x e^{-τ d_B(y,x)}. By the ball count #{x : d_B(x,y) <= r} <= C_L (1+r)^5 L^{8r/rho} (`a2-layers.md` §7.3, rederived in `gates/a2-layers-gate.md` §4; Balaban CMP 96 Lemma 2.1), K_τ <= C_L sum_m (2+m)^5 e^{-(τ/2) m} < infinity whenever τ rho' >= 16 log L. Below, τ always meets this, by the choice of rho'.
+Let K_τ := sup_y sum_x e^{-τ d_B(y,x)}. By the ball count #{x : d_B(x,y) <= r} <= C_L (1+r)^5 L^{8r/rho} (`a2-layers.md` §7.3, rederived in `gates/a2-layers-gate.md` §4; Balaban CMP 96 Lemma 2.1), K_τ <= C_L sum_m (2+m)^5 e^{-(τ/2) m} < infinity whenever τ rho' >= 16 log L. The smallest rate summed below is tau_L/16, and tau_L rho' >= 256 log L (§3) covers it. On the actual sequence the gap is rho >= rho', so the same bounds hold there.
 
 **Lemma D (conjugation gives local decay).** Let O: 𝒜* -> 𝒜 satisfy ||e^θ O e^{-θ}|| <= C_O for every tau-Lipschitz theta, where 𝒜 is any of the local-norm spaces of §4. If F is supported near z, then ||O F||_{𝒜,y} <= C_L C_O e^{-τ d_B(y,z)} ||F||_* for every pillar y.
 
@@ -199,13 +222,21 @@ Every curved coefficient is bounded by the class: unitary links times e^{i eta A
 
 **Lemma L (the local inverse).** Assume (I1), M_1 >= M_C(L), the ceiling (alpha_0, alpha_1, gamma_0) <= a_*(L), and sup xi^3 |j| <= gamma_j(L). Then for every separated sequence with cube size >= M' and gap >= rho' (the actual sequence and every cut-down), every regular pair, and every such coefficient, K = K[S, P, j] is invertible. For F supported near z and every pillar y,
 
-    ||K^{-1} F||_{𝒳,y} <= B_L e^{-τ_L d_B(y,z)} ||F||_{𝒳*},      τ_L := tau_0 2^{-16},              (5.1)
+    ||K^{-1} F||_{𝒳,y} <= B_L e^{-τ_L d_B(y,z)} ||F||_{𝒳*},      τ_L := tau_0 2^{-25},              (5.1)
 
 with B_L = B_L(L). K^{-1} is holomorphic in (P, J, j) on the class and real at real data.
 
-*Proof.* Invertibility is Lemma U with (I1). By (4.1)-(4.2), each component of K^{-1} F is a finite sum of words l_m O_m ... l_1 O_1 l_0 F. Each l_i is local in the sense of Lemma P with C_l <= C_L; it is built from B, B^T, Pi, Pi^T, Q, Q^T, Q', Q'^T, the blocks of q, and the identity. Each O_i is one of: G' as L^2 -> Λ, as Λ* -> L^2 or as V* -> V; N; T^{-1}; W^{-1}. Count the inverse factors. X^{-1} uses at most five (lambda = G'(s_h - G'(s_λ + Q'^T N(...G'^2 ...)))). L = Pi X^{-1} B, and nu passes through W^{-1}, T^{-1} and twice through X^{-1}. So no word has more than 16 inverse factors.
+*Proof.* Invertibility is Lemma U with (I1). By (4.1)-(4.2), each component of K^{-1} F is a finite sum of words l_m O_m ... l_1 O_1 l_0 F. Each l_i is local in the sense of Lemma P with C_l <= C_L; it is built from B, B^T, Pi, Pi^T, Q, Q^T, Q', Q'^T, the blocks of q, and the identity. Each O_i is one of: G' as L^2 -> Λ, or as Λ* -> L^2; N; T^{-1}; W^{-1}. Count the inverse factors, using (4.2) and (4.1):
 
-Each O_i has local decay at rate tau_0. For T^{-1} and W^{-1} this is Lemma D with (iii) and (iv). For N it is Lemma D with (ii). For G' as V* -> V it is Lemma D with (i). For G' as L^2 -> Λ: the m^{-2} and m^{-1}D parts come from the scale-conjugated (i), and the third part is local, since A_s G' s = s. For G' as Λ* -> L^2: transpose the L^2 -> Λ statement, using that G' is symmetric and that a dual vector supported near z sees only the Λ-norm near z. Lemma P, applied at most 16 times, gives (5.1). The Λ-part of lambda (and of lambda') needs no further step: by (4.2), A_s lambda = s_h - h, a local expression in a source component and an already bounded unknown. Holomorphy and reality: the entries of K are holomorphic in the data and real at real data, and K is invertible throughout the class. ∎
+- X^{-1} uses at most five: lambda = G'(s_h - G'(s_λ + Q'^T N(... - Q' G'^2 s_λ))).
+- f~ uses at most ten, through its term L^T q_λλ Pi X^{-1} g' with L^T = B^T X^{-1} Pi^T.
+- A and nu add T^{-1} Q^T W^{-1} Q T^{-1}, so at most 13.
+- Y = X^{-1}(g' + B A) uses at most 18.
+- Z = X^{-1}(... - Pi^T q_λλ Pi Y) uses at most 23.
+
+So no word has more than 25 inverse factors.
+
+Each O_i has local decay at rate tau_0. For T^{-1} and W^{-1} this is Lemma D with (iii) and (iv). For N it is Lemma D with (ii). For G' as V* -> V it is Lemma D with (i). For G' as L^2 -> Λ: the m^{-2} and m^{-1}D parts come from the scale-conjugated (i), and the third part is local, since A_s G' s = s. For G' as Λ* -> L^2: transpose the L^2 -> Λ statement, using that G' is symmetric and that a dual vector supported near z sees only the Λ-norm near z. Lemma P, applied at most 25 times, gives (5.1). The Λ-part of lambda (and of lambda') needs no further step: by (4.2), A_s lambda = s_h - h, a local expression in a source component and an already bounded unknown. Holomorphy and reality: the entries of K are holomorphic in the data and real at real data, and K is invertible throughout the class. ∎
 
 The rate tau_L is small but depends on L only, and so does B_L. Neither depends on M_1, the box, the depth, the volume or the regions.
 
@@ -319,3 +350,109 @@ For fixed y_1, ..., y_n, take the trunk path y -> y_1 -> ... -> y_n -> z, and fo
   where d_B(ω; c) is the least length of a tree through c that meets every cell of ω. The proof is that of Lemma J with (7.3) in place of (6.2). The output side lies in X_{κ_0}, so here X_{κ_0} is met as well.
 
 Every term has properties (c)-(d) of Theorem T. This is mechanism (g) of the outline, with the count it asserts. Its M_1-power is the one of test 2.3.
+
+## 8. Theorem H: the walk expansion of A and of chi_Y A chi_Y
+
+**Two more inputs**, used only where named:
+
+- (I2) Gauge covariance of the averaging maps: Q(U^u), Q'(U^u) are the conjugates of Q(U), Q'(U) by the induced action at block centres. This is the covariance of Balaban's averaging (CMP 98) and of the outline's straightened rows (statement 3, SA 10282-10296). With it, every block of K is covariant, since Delta^W, D_U, Delta'_pi[J] and Delta^(2)[j] are built covariantly. Covariance of C_V and of the Delta_k-operators is recorded in `a2-full.md` §10 defect 5 (same-model, gate row 114). (I2) is not re-derived here. It is used only for the covariance clause.
+- (I3) The level-k maps C_V (pivot elimination), G^(2)_V (soft axial gauge Hessian), a and E^(2)[psi] are finite analytic functions of V = M^k U near Omega_{k+1}, with finite stencils. ||C_V|| <= C_L, and ||E^(2)[psi]|| <= C_L sup |psi| over its stencil. Sources: `a2-curved.md` §5 and (5.7), gated in `gates/a2-curved-gate.md` (§5 ADVANCE); `a2-layers.md` §7.6(a); `a2-full.md` Lemmas 4.1(b), 5.1.
+
+**Lemma 8.1 (class).** A regular pair for the longer sequence (Omega_j)_{j<=k+1}, with radii (alpha_0, alpha_1, gamma_0), is a regular pair for S = (Omega_j)_{j<=k} with the same radii. *Proof.* The layers below k agree. The top layer of S is Omega_k = L_k^long ∪ L_{k+1}^long, of scale xi_k = 1. On Omega_{k+1} the longer class imposes its bounds with xi_{k+1} = L > 1. These are stronger: |dU - 1| < alpha_0 eta^2 L^{-2}, |A'| < alpha_1/L, |J| < gamma_0 L^{-3}. The level-k gauge clause of S concerns cubes of side <= c_g M_1 in Omega_k = L_k^long ∪ L_{k+1}^long, which is the longer class's level-k clause. ∎
+
+So Theorems W and T apply to S at every pair regular for the longer sequence. On the active rows (level k, touching Omega_{k+1}, xi = 1), Corollary T and the definition give
+
+    A = C_V^T (G^(2)_V - a) C_V + C_V^T [(Q G_1 Q^T)^{-1}]_act C_V - C_V^T E^(2)[H_1^T J] C_V
+      = sum_{κ in K_k} A^loc_κ + sum_ω (A^G_ω + A^E_ω),
+
+with three kinds of term:
+
+- A^loc_κ := θ_κ C_V^T (G^(2)_V - a) C_V, for the level-k cubes meeting the mask. Each is a walk of length 0.
+- A^G_ω := -C_V^T [T^(1)_ω]_{νν,act} C_V, rooted at κ_0.
+- A^E_ω := -C_V^T E^(2)[j^(1)_ω] C_V, rooted at κ_n. Its kernel lives near the rows of supp θ_{κ_n}, so its root is re-taken there. Re-rooting a tree changes neither its cells nor its length.
+
+**Theorem H.** Let L >= L_0. Fix M', rho', r_0, tau_L, B_L, C_K, C_W, C_T and the ceilings a_*, gamma_j, a_T as above, all functions of L. Put a_h(L) := min{a_*, a_T, gamma_j/C_0, a_B} on (alpha_0, alpha_1, gamma_0), where a_B is the complex ceiling of `a2-layers.md` Theorem B. Assume R_1 >= 64L, M_1 >= M_h(L) := max{M_C, M_W, M_T}, and (I1)-(I3). Then at every regular pair P for (Omega_j)_{j<=k+1} with radii below a_h, real or complex, with independent current:
+
+- (H1) A = sum_ω A_ω over tree walks, with A_ω ∈ {A^loc_κ, A^G_ω, A^E_ω}, absolutely convergent. At most C_h^m indices of length m have a given first cell.
+- (H2) |A_ω(b, b')| <= C_h (C_h M_1^{-1/3})^{|ω|} e^{-δ_h d_B(ω; b, b')}, with δ_h := tau_L/8, in counting measure on the free level-k coordinates. Here d_B(ω; b, b') is the least length of a tree through b, b' that meets every cell of ω except the root, and the left argument b lies within O(1) of the root cell. In the outline's two-factor form this reads (C_h M_1^{-1/6})^{|ω|} M_1^{-|ω|/6}. d_B is the metric of the depth-k sequence. On Omega_{k+1} it counts level-k units, so it dominates the metric of the longer sequence, and (H2) holds for either.
+- (H3) A_ω is holomorphic on the local class on [ω] and real at real pairs. It depends on the regions only through their traces on [[ω]], which enlarges the cells by O(M_1) local units. It is the same function for two sequences, tori or cutoffs that a translation in M_1 xi_{k+1} Z^4 carrying Omega_{k+1} (and Y) relates on the hull. It is covariant under the lattice isometries that preserve the level-(k+1) M_1-grid, the regions and Omega_{k+1}. Given (I2), A^G_ω and A^E_ω are covariant under every gauge transformation, and A^loc_κ under those that are constant on each level-(k+1) block of the mask. A itself is covariant exactly under the latter (§2.1).
+- (H4) For every conditioning set Y, chi_Y A chi_Y = sum_ω chi_Y A_ω chi_Y, with the same bounds and properties. This is statement 5 for chi_Y A chi_Y, in the corrected form (S2)-(S3) of §1.
+
+*Proof.* (H1), (H2). C_V and E^(2) have O(1) stencils (I3), so composing with them moves kernel arguments by O(1). That costs only a constant in (H2), absorbed by e^{δ_h C}.
+
+- *A^G_ω:* take the source e_{c'} in the ν-slot, with ||e_{c'}|| = 1 at xi = 1. The output's local row* norm at c is >= |ν_c|. So (7.3) gives |[T^(1)_ω]_{νν}(c, c')| <= B_1 (C_T M_1^{-1/3})^{|ω|} e^{-(τ_L/4) d_B(ω; c, c')}.
+- *A^E_ω:* by (I3) and (7.4), |A^E_ω(b, b')| <= C_L C_J' gamma_0 (C_T M_1^{-1/3})^{|ω|} e^{-(τ_L/8) d_B(ω; c)} with c within O(1) of b and b'. A tree through c meeting every cell, together with O(1) legs to b and b', is a tree through b, b' meeting every cell.
+- *A^loc_κ:* it has range O(1) and norm <= C_L.
+
+The index count is that of Theorem T(c), doubled for the two roots, plus single cubes.
+
+(H3). Every factor is local with the read sets of Theorem W(c) and Theorem T(d), and C_V, G^(2)_V, a, E^(2) read V within O(1) (I3). The isometries named map the cube family, the cutoffs (even product profiles) and the cut-down construction to themselves. A coarse-grid point is a grid point of every finer grid, so the finer grids are preserved too. Gauge: Theorem W(d) and Theorem T(d) with (I2). C_V and E^(2) are covariant (I3, `a2-full.md` §10 item 5), and G^(2)_V only under block-constant transformations. (H4): compress. ∎
+
+**Order of constants.** First L. Then, as functions of L alone: M', rho', r_0, tau_0, tau_L, B_L, C_K, C_W, C_T, C_h, δ_h, and the ceilings a_*, gamma_j, a_T, a_B, a_h. Then R_1 >= 64L and M_1 >= M_h(L). The ceilings are fixed before M_1 and do not depend on it, as SA 10335 and SA 10582 require. Only the walk factor M_1^{-1/3} involves M_1. No constant depends on k, the volume, the regions, Y or the pair.
+
+**By-product (statement 5 for the other operators, in energy norms).** The same theorems give walk expansions for the blocks of K_G^{-1} and K_1^{-1}, and of the systems without the ν-row (whose (A,A) block is T^{-1} itself). These blocks are G, G_1, H, H_1, (Q G Q^T)^{-1}, (Q G_1 Q^T)^{-1}, Balaban's G~ = G - H Q G (the (A,A) block), and 1 - R, a block of X^{-1}. The bounds hold in the local energy norms of §4. The pointwise, derivative and Hölder norms of statement 4 that statement 5 also asks for are **not** claimed: they need a local regularity upgrade, as in `flat-port.md` §11. For chi_Y A chi_Y, a unit-lattice kernel, the energy norms are the consumed norms.
+
+## 9. The consumer reads Theorem H as written
+
+`a2-full.md` Theorem VI states (H-walk) with (C M_1^{-1/2})^{|ω|} M_1^{-|ω|/2}, the count C^m, and holomorphic A_ω at the complex regular pairs used. It reads that input in three places.
+
+1. "Sum over walks: for each first cell there are C^m walks of length m, so (C M_1^{-1/2})^m C^m is summable for M_1 large." With (H1)-(H2), the sum is sum_m (C_h M_1^{-1/3})^m C_h^m, which is <= 2 once M_1 >= (2 C_h^2)^3. This is one more lower bound on M_1, as a function of L.
+2. Mechanism (i) with delta = delta_0/2 >= C kappa-bar/l_P. Take delta_0 := δ_h(L). The order of constants in a2-full §8 (L, then M_1 and rho, then kappa-bar, then l_P >= 2C kappa-bar/delta_0, then M) is unchanged, because δ_h depends on L only. Mechanism (i) needs the root cell X_0 within O(1) top units of the left argument, and (H2) supplies this for all three kinds of term.
+3. "Every tree admitted in d_B(ω; y, y') then passes through y and through a cell near that cube, so d_B(ω; y, y') >= w - C." This uses only that the tree meets every non-root cell and contains y. That is the definition in (H2).
+
+Theorem VI's factor M_1^{-|ω|/2}, reserved for |ω| + 1 (SA 10316, 10558), is replaced by M_1^{-|ω|/6}, which absorbs |ω| + 1 for M_1 >= e^6. The proof of Theorem VI therefore goes through verbatim with (C M_1^{-1/6}, M_1^{-1/6}, δ_h) in place of (C M_1^{-1/2}, M_1^{-1/2}, delta_0), and its conclusion is unchanged: the decoupled precision keeps Re >= (c_L/2)||u||^2 for all independent |s_Δ| <= e^{kappa-bar}, with the collar w >= (4/δ_h)(2^4 kappa-bar + log(20 C_VI/c_L)).
+
+Two more facts about A(s) := sum_ω s^ω A_ω. At s ≡ 1, A(1) = A by (H1). A(s) is holomorphic on the polydisc |s_Δ| <= e^{kappa-bar}, because each A_ω is a monomial in s times a fixed matrix and the series converges uniformly there (Theorem VI's estimate).
+
+## 10. Verdict, defects, what stays open, what changes
+
+**Verdict.** (H-walk), the outline's statement 5 for chi_Y A chi_Y at the pairs regular for the longer sequence, is **proved as an implication** (Theorem H). This is the only input of A2 item (3) (`a2-full.md` §10, open item 1). Two clauses are corrected: the M_1-power per cell is 1/3, not 1 (test 2.3), and gauge covariance holds only for the subgroup under which A is covariant (test 2.1). In that form it is what `a2-full.md` Theorem VI reads (§9). The implication reads three inputs:
+
+- (I1), the gated global conjugation package of `a2-layers.md` §7 with Codex's repairs, itself conditional on the gated `a2-curved.md` §8;
+- (I2), gauge covariance of the averaging maps, used only for the covariance clause;
+- (I3), the level-k local maps (gated `a2-curved.md` §5).
+
+No counterexample to a consumed statement was found (§2).
+
+| Step | Verdict | Where | Reads |
+|---|---|---|---|
+| Counterexample tests | none found; two clauses corrected (2.1, 2.3); four routes killed (2.2, 2.4-2.6); two norm choices fixed (2.7-2.8) | §2 | outline; `a2-full.md` §10 defect 5 |
+| Cut-down local models: separated, agree on the box, class transfer, canonical | **proved** | §3 Lemma C | outline geometry; Balaban CMP 99b p. 408 |
+| Unfolded 8-unknown system: Schur complements G^{-1}, G_1^{-1}[j]; blocks H, H_1, (QGQ^T)^{-1}, (QG_1Q^T)^{-1} | **proved** (finite-dimensional algebra) | §4 Lemma U | SA 10142-10206 and explicit current formula |
+| Local decay of the unfolded inverse, uniform in M_1, box, depth and regions | **implication** | §5 Lemmas D, P, S, K, L | (I1) |
+| Parametrix walk expansion with chained per-walk bound and rate independent of M_1 | **proved** given Lemma L | §6 Theorem W | Lemmas C, K, L |
+| Tree expansion through the multiplier H^T J (mechanism (g)); G_1, H_1, (QG_1Q^T)^{-1}, H_1^T J | **proved** given Theorem W | §7 Lemma J, Theorem T, Corollary T | (7.2): `a2-curved.md` (8.3)/(8.10) |
+| Statement 5 for chi_Y A chi_Y (corrected clauses) | **proved as an implication** | §8 Theorem H | (I1)-(I3) |
+| Consumer: Theorem VI with exponent 1/6 | **goes through verbatim** | §9 | `a2-full.md` Theorem VI |
+
+**Defects found, ranked by what they break.**
+
+1. *Statement 5's covariance clause for chi_Y A chi_Y cannot hold for the full gauge group* (test 2.1). A is not covariant, because of G^(2)_V, so no expansion has fully covariant terms. It breaks nothing that is consumed. Repair: the block-constant subgroup, as in Theorem H (H3). It also removes the need for the Haar mean of mechanism (i).
+2. *The tree terms' M_1-power.* Vertices of the H^T J expansion carry no commutator, so this route gives M_1^{-1/3} per cell, not (C M_1^{-1/2})^{|ω|} M_1^{-|ω|/2}. The consumers need only a geometric factor with a reserve (§9). If a later consumer reads the exact exponent, that is open. Keeping the walks of H of length <= l in the local coefficient raises the power to (l+1)/(l+3), and never to 1.
+3. *Statement 6 is not stated in the outline.* Statement 5 bounds chi_Y A chi_Y by "the kernel bound that 6 states for C^(k)(Y)" (SA 10328). It is read here as A's own unit-lattice kernel bound, and (H2) implies that bound, summed over the trees through b, b'.
+4. *Mechanism (i)'s single assignment for all tori* (Haar mean, push-forward, Montel limit along a subsequence; SA 10560) is not needed. The canonical cut-down construction is literally the same on tori and sequences that agree on the hull (Lemma C (C5)). That also avoids its normality step, which needs an entrywise bound allowed to depend on the level.
+5. *Mechanism (f)'s remainder bound O(M_1^{-1} e^{-c δ M_1/L})* is not used and not needed. The chained local decay (6.2) gives the rate.
+
+**What stays open, hardest first.**
+
+1. Cross-provider gate of this note. Look hardest at: Lemma C (C4) (class transfer, especially the cut-down levels below i_0); Lemma L (the word count, and the transposition of G' to Λ* -> L^2 in the graph norm); Theorem W(b) (the chaining and the identification of the intermediate pillars with X_{κ_{i-1}} ∩ X_{κ_i}); Theorem T(b) (the vertex accounting 3p >= |ω| and the tree assembled from the trunk path and the branch paths).
+2. The inputs. (I1) is gated (rows 92-93), with its Section 7 repairs. (I2), gauge covariance of the averaging maps, is read from the outline and Balaban CMP 98, and is not rebuilt here. It enters only the covariance clause, which no consumer of A2 item (3) reads.
+3. Not part of this item. The walk-chain expansion of the inverse root r(s) (SA 14154-14170). The walk expansion of C^(k)(Y) = (chi_Y A chi_Y)^{-1} itself, also listed in statement 5. Statement 5 for the propagators in statement 4's pointwise and Hölder norms; §8 gives them in energy norms only.
+
+**What changes for the lead (evidence only; no other file was edited).**
+
+- `a2-full.md` §10, open item 1: (H-walk) is no longer "not in hand". It is proved as an implication here, same-model and gate pending. Theorem VI, and with it A2 item (3), then rests on (I1) (gated), (I2), and this note's gate.
+- `sa-ledger.md` rank 2 (A2): the "enlarged-complex-domain" version now reduces to gated (I1) plus this note, with the exponent and covariance wording above. (H-ct) and (H-prof) are unchanged.
+- The outline's statement 5 wording should carry the corrected exponent and covariance clauses (defects 1-2), and a stated "statement 6" bound (defect 3).
+
+**Moves:** the only input of A2 item (3), `a2-full.md` §10 open item 1 (outline statement 5 / (1c.8)-(1c.9) for chi_Y A chi_Y), from "not in hand" to "proved as an implication, gate pending".
+
+**Method.** Every step is a written argument. There is no computation, enumeration or numerics. No numerical job was run, so the numeric lock was not needed. No subagent. Only this file was written.
+
+Credit, repeated for the parts used:
+
+- Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text (`31a47c543775`): the statement, operators, walk vocabulary, unfolding with auxiliary unknowns, tree treatment of the multiplier, multiplier mechanism and consumer.
+- T. Balaban: cut-down local models, generalized random-walk expansions and their chaining, the summation lemma and the walk-relative distance (CMP 95 Prop. 1.2; CMP 96 Lemma 2.1, (2.50)-(2.66); CMP 99b (3.87)-(3.94), Theorem 3.7, Corollary 3.8).
+- The gated global bounds: Claude's `a2-layers.md` §7 with Codex's gate repairs, on Codex's `a2-curved.md` §8 with Claude's gate.
+- The flat local system and commutator estimates: Codex's `flat-port.md` §§8-11.
+- The parametrix template: `path_expansion_locality.md` Lemma 1, after Dimock arXiv:1108.1335 §2.4.

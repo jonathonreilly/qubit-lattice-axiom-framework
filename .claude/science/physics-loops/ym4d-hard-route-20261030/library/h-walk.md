@@ -3,7 +3,7 @@ lease_until: 2026-11-03T15:20Z
 
 # h-walk: the walk expansion of chi_Y A chi_Y (outline statement 5, (1c.8)-(1c.9))
 
-Queue row 115. Pinned at branch claude/ym4d-hard-route, commit c90e340cc. Same-model, ungated, research-stage working state. Written section by section.
+Queue row 115. Pinned at branch claude/ym4d-hard-route, commit c90e340cc. Same-model, ungated, research-stage working state. Complete for this item; written section by section.
 
 Provenance: Anthropic Claude Opus 5.5 (`claude-opus-5-5`), effort max as configured for this worker (Mac mini); repository commit c90e340cc; Sussman–Alpoge outline `YM4_sketch_500.tex` at commit `31a47c543775`, fetched by URL into a scratch folder (SHA-256 d7f77d4d…b6f, as recorded in `sa-2.8.md`) and not committed; SA nnnn below are its line numbers. Balaban CMP 95, 96, 99 (389-434) read from `~/ym4d-papers/` (OCR, outside git). Research text by one model, not an audit and not a gate; it grants no status. No step rests on a computation. No numerical job was run, so the numeric lock was not needed. No subagent.
 
@@ -187,7 +187,7 @@ The existence of G', N, G, G_1[j] and W, W_1[j] at the pairs used is `a2-layers.
 - (iii) ||e^θ T^{-1} e^{-θ}||_{E*->E} <= C for T^{-1} = G ((7.5) there) and T^{-1} = G_1[j] (§7.4 there).
 - (iv) ||e^θ W^{-1} e^{-θ}||_{row->row*} <= C for W = Q G Q^T (7.2(iv) there) and W_1[j] = Q G_1[j] Q^T (§7.4 there).
 
-All constants are C = C(L). (I1) rests in turn on `a2-curved.md` §8, gated in row 93. This note does not re-derive it.
+All constants are C = C(L). Here tau_0 is the rate at which all of (i)-(iv) hold. That includes the scale-conjugated form of (i), whose scale weight is 2kappa-Lipschitz (5.1 there; the gate's item 2 adds the decay exponent to it). So tau_0 is a fixed fraction of the conjugation threshold, a function of L. (I1) rests in turn on `a2-curved.md` §8, gated in row 93. This note does not re-derive it.
 
 Fix a smooth pillar partition of unity chi_x (sum_x chi_x = 1, supp chi_x within r_0 of pillar x, slopes <= C per unit d_B). For a dual vector G put <chi_x G, Psi> := <G, chi_x Psi>. By bounded overlap and Cauchy-Schwarz,
 
@@ -236,7 +236,7 @@ with B_L = B_L(L). K^{-1} is holomorphic in (P, J, j) on the class and real at r
 
 So no word has more than 25 inverse factors.
 
-Each O_i has local decay at rate tau_0. For T^{-1} and W^{-1} this is Lemma D with (iii) and (iv). For N it is Lemma D with (ii). For G' as V* -> V it is Lemma D with (i). For G' as L^2 -> Λ: the m^{-2} and m^{-1}D parts come from the scale-conjugated (i), and the third part is local, since A_s G' s = s. For G' as Λ* -> L^2: transpose the L^2 -> Λ statement, using that G' is symmetric and that a dual vector supported near z sees only the Λ-norm near z. Lemma P, applied at most 25 times, gives (5.1). The Λ-part of lambda (and of lambda') needs no further step: by (4.2), A_s lambda = s_h - h, a local expression in a source component and an already bounded unknown. Holomorphy and reality: the entries of K are holomorphic in the data and real at real data, and K is invertible throughout the class. ∎
+Each O_i has local decay at rate tau_0. For T^{-1} and W^{-1} this is Lemma D with (iii) and (iv). For N it is Lemma D with (ii). For G' as L^2 -> Λ: the m^{-2} and m^{-1}D parts come from the scale-conjugated (i), and the third part is local, since A_s G' s = s. For G' as Λ* -> L^2: transpose the L^2 -> Λ statement, using that G' is symmetric and that a dual vector supported near z sees only the Λ-norm near z. Lemma P, applied at most 25 times, gives (5.1). The Λ-part of lambda (and of lambda') needs no further step: by (4.2), A_s lambda = s_h - h, a local expression in a source component and an already bounded unknown. Holomorphy and reality: the entries of K are holomorphic in the data and real at real data, and K is invertible throughout the class. ∎
 
 The rate tau_L is small but depends on L only, and so does B_L. Neither depends on M_1, the box, the depth, the volume or the regions.
 

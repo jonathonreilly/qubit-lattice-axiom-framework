@@ -13,7 +13,18 @@ Credit. Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of the
 
 ## 0. Result
 
-(Filled in at the end.)
+Status: finished 2026-11-03 (worker). Same-model and ungated; a cross-provider gate is needed.
+
+- **Item 1, proved as an implication (Theorem L, Section 4).** Let a Definition A tower or meet lie member by member in an ambient separated sequence. Let a complex field satisfy the layered simple conditions in ambient local units. Then three things hold:
+  - The tower configuration exists, and its ambient-normalised curvature and current are at most \(K_L(a_0+a_1^2)\) at every element of \(Z^\circ\). The factor \((l/\xi')^2\) is cancelled cell by cell, not by one global radius.
+  - Its response to a change \(h\) of the field is bounded by the local first-order norm of \(h\) plus \(\sup_ye^{-\theta_bd(x,y)}l|h|\), at every element, settled or not, with no loss in \(\lambda=\xi'/l\).
+  - Decay from a source is kept.
+
+  Consequence (Corollary R, Section 5): the outline's layered room claim at SA 15933 holds as an implication from the response decay of the integrated field and the nested-geometry premise.
+- **Item 2, outline gap plus a specification (Section 6).** The first system (R9) defines no multiplier (C3). The specification (6.1) is admissible: holomorphic, anchored at \(B'=0\), splitting, covariant, and exact on the physical locus. With it, the outer and removed currents are instances of `wf-room.md` (5.4). Their bounds are implications from one operator input, (O1): weighted row sums of \(H(s)\) and \(DH(s)\). (O1) holds at \(s\equiv1\) and is **pending for decoupled \(s\)**.
+- **Item 3, checked (Section 7).** (7.2) holds in the Landau representative over \(\mathbf 1\) with the node factor removed (Lemma N = SA Theorem 5(d), proved; Lemma E). It fails in the raw (WF3)-(WF4) representative (C4), whose pair leaves the core when the node factor is not unitary. Repair: read (WF4) as 5(c) states.
+- **Item 4, stated (Section 3).** Layered tower clauses quantify over \(Z\subset X\cap\Omega_p\), in ambient normalisation (3.1). The unrestricted reading is refuted on an admissible field (C1).
+- **Where rank 4 now stops:** the decoupled propagator package (O1), plus the first system's own decoupled bounds, and the removed boundary comparison. The geometric premise goes to rows 118-119.
 
 ## 1. Inputs and their standing
 
@@ -36,7 +47,7 @@ Notation. \(\mathbf B'\) is the inner sequence (a tower or a meet) with local sc
 
 Every Definition A tower of \(Z\) cut at depth \(n=p\) has \(Q_*\subset T'_p\), by (A3): the erosion depth is \(e_p\le3M_1'\xi_p<4M\xi_{p-1}\), since \(M\ge L^3M_1'\). The datum \(M_{\mathbf B'}(U)\) is computed with Federbush's mean, which for commuting near-identity elements is the exponential of the mean logarithm. So in the axial gauge from the centre of \(Q_*\) (contour angles \(\le 8\phi_0\xi_p^2\)), each level-\(p\) averaged link over \(Q_*\) is \(e^{i\bar\theta T}\), where \(\bar\theta\) is a linear average of line integrals of \(A\). The averaged \(12\)-plaquette is therefore \(e^{i\Theta T}\), with \(\Theta=\phi_0\xi_p^2=c\,\alpha_{0,r}L^{2(p-r)}\), the flux of the constant \(F\) through the coarse square. Let \(a_{\rm cl}\) be the clause radius at \(Q_*\) in level-\(p\) normalisation: \(a_{\rm cl}=a_0L^{-(j-p)}\le a_0\) under (R6), and \(a_{\rm cl}\le C\alpha_{0,r}L^{p-r}\) under every reading of Section 3. Since \(\Theta/(\alpha_{0,r}L^{p-r})=cL^{p-r}\) grows without bound, some \(p-r\) gives \(C_1a_{\rm cl}<\Theta\le\pi/100\) once \(\alpha_{0,r}\) is below a fixed multiple of \(c/C_1^2\). Here \(C_1\) is the constant of the next sentence. Suppose \(U_p(Z;P)\) satisfied its clause on \(Z^\circ\supset Q_*\). The curvature recursion (AV) would bound every level-\(p\) averaged plaquette of \(U_p(Z;P)\) over \(Q_*\) by \(C_1a_{\rm cl}\) in angle. By the constraint \(M_{\mathbf B'}(U_p(Z;P))=M_{\mathbf B'}(U)\), that plaquette is \(e^{i\Theta T}\), a contradiction. The failure reads no property of the assignment beyond \(T'_q\) containing a level-\(q\) block in \(\mathcal L_r\) for some \(q>r\). So under the unrestricted reading, the layered analogue of Theorem 5(a) (simple conditions imply the core) is false, and the room mechanism loses its base. Repair: Section 3.
 
-**C2. The crude linear response loses \(\lambda^{-1}\) (item 1). Not a counterexample.** Differentiating \(w\mapsto\Phi(B(w))\) through the averages gives \(|\partial_w\Psi_x[h]|\le C\lambda(x)^{-2}\sum_ce^{-\theta d'(x,y_c)}\xi'(c)|h|\le C\lambda(x)^{-1}\sup e^{-(\theta-\kappa)d'}l|h|\) for the ambient-normalised quantities \(\Psi_x\) of Section 4. At an unsettled element (\(\lambda(x)\ll1\)) this is the loss `wf-room.md` 6 stops on. Test: \(h=-D_U\chi\) a pure gauge supported far from \(x\). It changes the tower background at \(x\) by a conjugation, of relative size \(e^{-\theta d'}|\chi|\), so the true response has no loss. The bound ignores that curvature responds to the curl of \(h\), not to \(h\). Section 4.5 proves the response bound without the loss.
+**C2. The crude linear response loses \(\lambda^{-1}\) (item 1). Not a counterexample.** Differentiating \(w\mapsto\Phi(B(w))\) through the averages gives \(|\partial_w\Psi_x[h]|\le C\lambda(x)^{-2}\sum_ce^{-\theta d'(x,y_c)}\xi'(c)|h|\le C\lambda(x)^{-1}\sup e^{-(\theta-\kappa)d'}l|h|\) for the ambient-normalised quantities \(\Psi_x\) of Section 4. At an unsettled element (\(\lambda(x)\ll1\)) this is the loss `wf-room.md` 6 stops on. Test: \(h=-D_U\chi\) a pure gauge supported far from \(x\). It changes the tower background at \(x\) by a conjugation, of relative size \(e^{-\theta d'}|\chi|\), so the true response has no loss. The bound ignores that curvature responds to the curl of \(h\), not to \(h\). Theorem L(b) (Section 4.7) proves the response bound without the loss.
 
 **C3. The first system has no multiplier (item 2).** SA (R9) and SA 10360-10379 define \((\mathbf H,X,\mathbf A)\); the sentence at SA 10423-10428 ("Its increment is formed from the multiplier") names no formula. Two natural readouts, \(\lambda_1=H(s)^{\mathsf T}F'_{\mathbf U}(\mathbf H)\) and \(\lambda_2\) solving \((K_{\mathbf H}H(s))^{\mathsf T}\lambda_2=H(s)^{\mathsf T}F'_{\mathbf U}(\mathbf H)\), differ already at \(s=1\) on the physical locus: there \(\lambda_2\) is the constrained multiplier \(\lambda\) and \(\lambda_1=\lambda+((K_{\mathbf H}-K_0)H)^{\mathsf T}\lambda\ne\lambda\) whenever \(\lambda\ne0\), \(\mathbf H\ne0\). Hence the current is a specification the construction has to supply, as with the erosion assignment and the profile rule. Section 6 supplies one.
 
@@ -189,7 +200,7 @@ At real \(v\), \(U_{\mathbf B'}(v)=\Phi_{M_{\mathbf B'}(U)}(B(v))\) is the canon
  \tag{4.7}
 \]
 
-*Statement.* Put \(r_Q=\min\{r_*,r_D/(2L)\}\) and \(\|w\|_{*,Q}=\sup_{b\in Q}\xi'(b)|w(b)|\). Then \(\psi_x\circ B\) is holomorphic on \(\{\|w\|_*<r_Q\}\), and for \(\|w\|_*\le r_Q/2\),
+*Statement.* Put \(r_Q=\min\{r_*/2,r_D/(2L)\}\) and \(\|w\|_{*,Q}=\sup_{b\in Q}\xi'(b)|w(b)|\). Then \(\psi_x\circ B\) is holomorphic on \(\{\|w\|_*<r_Q\}\), and for \(\|w\|_*\le r_Q/2\),
 \[
  \big|\psi_x(B(w))-\psi_x(0)-D(\psi_x\circ B)(0)w\big|
  \le\frac{C_Q}{r_Q}\Big(\sum_Qe^{-\theta d'(x,Q)/2}\|w\|_{*,Q}\Big)^2 .
@@ -225,7 +236,7 @@ The factor \(\lambda(x)^{-2}\) cancels against the two factors \(\lambda\) of th
 Put \(\chi=\phi(d(x,\cdot))\) with \(\phi=1\) on \([0,1]\), \(\phi=0\) on \([2,\infty)\) and \(|\phi'|\le2\). Then \(|\nabla\chi|\le2/l\), since \(d\) is \(1\)-Lipschitz with weight \(1/l\). The ambient scale varies by at most \(L^2\) on \(\{d(x,\cdot)\le2\}\), because \(\rho>2\). Split
 \(\Psi_x(w_2)-\Psi_x(w_1)=[\Psi_x(w_1+\chi h)-\Psi_x(w_1)]+[\Psi_x(w_2)-\Psi_x(w_1+\chi h)]\).
 
-*Near part.* Let \(b=\sup_{d(x,y)\le2}\|h\|_{1,y}\), so that \(\|\chi h\|_{1,y}\le3b\). If \(b\ge d_*a_0\), then (a) gives \(|\Psi_x(w_2)-\Psi_x(w_1)|\le2K_L(1+C_0)a_0\le(2K_L(1+C_0)/d_*)\,b\), and we are done. Otherwise consider \(w_\zeta=w_1+\zeta\chi h\) for \(|\zeta|<\zeta_*:=d_*a_0/(3b)\). Its potential and gradient bounds hold with \(2a_1\). Its curvature follows from the pointwise form of `wf-room.md` (3.5): from 4.4, \(\eta^{-2}l^2|\partial(e^{i\eta(w+k)}U)-\partial(e^{i\eta w}U)|\le C\|k\|_1(1+a_0+a_1+\|k\|_1)\). So the curvature is at most \(2a_0\) once \(d_*\) is small. Thus \(w_\zeta\) satisfies (H) at \((2a_0,2a_1)\). By (a), \(F(\zeta)=\Psi_x(w_\zeta)-\Psi_x(w_1)\) is holomorphic with \(|F|\le2K_L(2+4C_0)a_0\), and \(F(0)=0\). Schwarz's lemma at \(\zeta=1<\zeta_*\) gives \(|F(1)|\le6K_L(2+4C_0)b/d_*\).
+*Near part.* Let \(b=\sup_{d(x,y)\le2}\|h\|_{1,y}\), so that \(\|\chi h\|_{1,y}\le3b\). If \(3b\ge d_*a_0\), then (a) gives \(|\Psi_x(w_2)-\Psi_x(w_1)|\le2K_L(1+C_0)a_0\le(6K_L(1+C_0)/d_*)\,b\), and we are done. Otherwise \(\zeta_*>1\); consider \(w_\zeta=w_1+\zeta\chi h\) for \(|\zeta|<\zeta_*:=d_*a_0/(3b)\). Its potential and gradient bounds hold with \(2a_1\). Its curvature follows from the pointwise form of `wf-room.md` (3.5): from 4.4, \(\eta^{-2}l^2|\partial(e^{i\eta(w+k)}U)-\partial(e^{i\eta w}U)|\le C\|k\|_1(1+a_0+a_1+\|k\|_1)\). So the curvature is at most \(2a_0\) once \(d_*\) is small. Thus \(w_\zeta\) satisfies (H) at \((2a_0,2a_1)\). By (a), \(F(\zeta)=\Psi_x(w_\zeta)-\Psi_x(w_1)\) is holomorphic with \(|F|\le2K_L(2+4C_0)a_0\), and \(F(0)=0\). Schwarz's lemma at \(\zeta=1<\zeta_*\) gives \(|F(1)|\le6K_L(2+4C_0)b/d_*\).
 
 *Far part.* The segment \(w_1+\chi h+t(1-\chi)h\), \(0\le t\le1\), stays in \(\{\|\cdot\|_*\le3a_1\}\subset\{\|\cdot\|_*<r_Q\}\). There the first-derivative bound of 4.5 holds; it needs only holomorphy, not (H). The increment \((1-\chi)h\) is supported in \(\{d(x,\cdot)>1\}\). Summing over the cells \(Q\) meeting that set,
 \[
@@ -301,7 +312,7 @@ by `wf-room.md` (5.2). The assignment therefore agrees on the physical locus wit
  \lambda^{\rm I}-\lambda^{\rm I}_0=(1+T^{\mathsf T})^{-1}\Big[(D_{\mathbf U}H(s))^{\mathsf T}D_{\mathbf U}\mathbf H+H(s)^{\mathsf T}(\Delta'_{\mathbf U}\mathbf H+N_{\mathbf U}(\mathbf H))-T^{\mathsf T}\lambda^{\rm I}_0\Big],
  \tag{6.2}
 \]
-and \(\lambda^{\rm I}_0=(D_{\mathbf U}H(s))^{\mathsf T}\mathcal F(\mathbf U)\), where \(\mathcal F(\mathbf U)\) is the plaquette field with \(F'_{\mathbf U}(0)=D^{\mathsf T}_{\mathbf U}\mathcal F\) and \(|\mathcal F|\le C\eta^{-2}|\partial\mathbf U-\mathbf 1|\le C\alpha_0\xi^{-2}\). Both identities are integrations by parts: the second derivative sits on \(H\), never on \(\mathbf H\), as the outline intends. Hence, in the weighted norms of `wf-room.md` 5,
+and \(\lambda^{\rm I}_0=(D_{\mathbf U}H(s))^{\mathsf T}\mathcal F(\mathbf U)\), where \(\mathcal F(\mathbf U)\) is the plaquette field with \(F'_{\mathbf U}(0)=D^{\mathsf T}_{\mathbf U}\mathcal F\) (the traceless part of \(\eta^{-2}\partial\mathbf U\); this is the holomorphic form of Balaban's identity used in `a3-close.md` 1(i), where for \(SU(2)\) the traceless part \(T-\frac12\operatorname{tr}T\) equals the anti-Hermitian part on the group) and \(|\mathcal F|\le C\eta^{-2}|\partial\mathbf U-\mathbf 1|\le C\alpha_0\xi^{-2}\). Both identities are integrations by parts: the second derivative sits on \(H\), never on \(\mathbf H\), as the outline intends. Hence, in the weighted norms of `wf-room.md` 5,
 \[
  \|\lambda^{\rm I}-\lambda^{\rm I}_0\|_{Y,w}\le C\,C_H\big(1+\|\lambda^{\rm I}_0\|_Y\big)\|\mathbf H\|_{X,w},\qquad
  \|\lambda^{\rm I}_0\|_Y\le C\,C_H\alpha_0,
@@ -317,7 +328,7 @@ This reads one operator input:
 (O1) *Weighted row sums for \(H(s)\) and \(D_{\mathbf U}H(s)\).* For a weight \(w\) of rate \(\le\theta\),
 \(\sup_cw(c)\,\eta^4\sum_b|H(s)(b,c)|\,\mathsf L_b^{-3}w(b)^{-1}\le C_H\) and the same for \(D_{\mathbf U}H(s)\) with \(\mathsf L_b^{-2}\). These are the column halves of BGR11, in the counting pairing.
 
-At \(s\equiv1\), (O1) is the BGR11 member of P82° (Theorem P (e), gated row 100) and of Theorem P\(^{\mathsf c}\) (e) (`a3-clauses.md`) at complex pairs. For decoupled \(s\) it is part of the outline's statement 4 and walk expansions (1c.7, "each decoupled operator has norm at most \(\widehat b\)"), which the library has not rebuilt: `h-walk.md` covers \(\chi_Y\mathsf A\chi_Y\), not \(H(s)\). So (O1) is **cited-pending** for \(s\ne1\), with \(C_H=C\widehat b\).
+At \(s\equiv1\), (O1) is read from the BGR11 member (SA BGR11: the maximum of weighted row and column sums) of P82° (Theorem P (e), gated row 100), and of Theorem P\(^{\mathsf c}\) (e) (`a3-clauses.md`) at complex pairs, applied to the \(H\) block and its gradient. This identification of blocks is made here and should be checked by the gate. For decoupled \(s\) it is part of the outline's statement 4 and walk expansions (1c.7, "each decoupled operator has norm at most \(\widehat b\)"), which the library has not rebuilt: `h-walk.md` covers \(\chi_Y\mathsf A\chi_Y\), not \(H(s)\). So (O1) is **cited-pending** for \(s\ne1\), with \(C_H=C\widehat b\).
 
 *Proof of (6.3)-(6.4) from (O1).* Use the duality of the pairing row by row. For a row \(c\),
 \(|(D H e_c)^{\mathsf T}D\mathbf H|\le\eta^4\sum_b|DH(b,c)||D\mathbf H(b)|\le\|\mathbf H\|_{X,w}\,\eta^4\sum_b|DH(b,c)|\mathsf L_b^{-2}w(b)^{-1}\),
@@ -330,3 +341,85 @@ and (O1) gives \(C_Hw(c)^{-1}\). The \(H^{\mathsf T}\) terms are the same with \
 So the removed current inherits the removed factor \(e^{-cM/\sigma_j}\) exactly when the field difference and the operator difference carry it. That is the outline's "compatible boundary comparison" (SA OA7 paragraph), **cited-pending**, the same input the removed field needs.
 
 **Verdict on item 2.** The first system does not determine a current (C3). Specification (6.1) is admissible: it is holomorphic, anchored, splitting and covariant, and exact on the physical locus. With it, the outer and removed current readouts are instances of `wf-room.md` (5.4), and their bounds (6.4) and (S6) are implications from (O1), proved at \(s\equiv1\) and pending for decoupled \(s\), together with the removed boundary comparison. The match asked for in row 116 is done for the formula; it is not closed for decoupled \(s\).
+
+## 7. The inner endpoint against (7.2) (item 3)
+
+### 7.1 The objects
+
+The inner datum (WF3) is the plain average \(\mathcal V=\mathcal M^j(\mathbf U_t)\) of the shifted configuration \(\mathbf U_t=e^{i\eta_k(t+\nu\zeta)\mathbf H_k}U_+\). (WF4) applies the box-background map to the raw datum \(\mathcal V\). SA Theorem 5(c) states the inner substitution over the reference \(\mathbf 1\), in Landau form: the triple \((\mathbf 1,\mathcal H(\varsigma B+B'),J(e^{i\eta_j\mathcal H}))\) lies in the level-\(j\) core, and the actual pair lies in its complex gauge orbit. 5(d) supplies the node factor \(v\) with \(\mathcal V=V^v\). The room paragraph (SA 15959-15971) adds: "the box gauge has bounded condition number; its distance from the identity is not required to be small". `wf-room.md` (7.1) applies to a function \(f\) of the datum with \(f(0)=0\) and \(\|f(B)\|\le C\|B\|\), and (7.2) asks for the actual endpoint in the same representative. Here \(\tau=L^{-(k+1-j)}=\xi_j/\xi_{k+1}\).
+
+### 7.2 Lemma N (SA Theorem 5(d), proved)
+
+*Statement.* Let \(\mathbf U=e^{i\eta A'}U\) satisfy the simple conditions of level \(k+1\) at \((\alpha_0,\alpha_1)\) on a cube containing the box \(\square_0\), with the real-gauge clause on a cube of side \(O(LM)\supset\square_0\). Let \(\mathbf B'\) be the tower of \(\square_0\) cut at depth \(j\). Then \(M_{\mathbf B'}(\mathbf U)=V^v\), where \(v\) is given at the nodes by an explicit complex axial gauge, holomorphic in \(\mathbf U\) and unitary for real \(\mathbf U\), and
+\[
+ \sup_c|\tfrac1i\log V(c)|\le C_BM\alpha_0\,\tau,\qquad |v||v^{-1}|\le e^{CM\alpha_1},
+\]
+with both factors depending only on \(\mathbf U|_{\square_0}\).
+
+*Proof.* Take the real gauge of (R4) on the cube: \(U=(e^{i\eta A_{\rm r}})^g\), \(g\) unitary, and \(\xi_{k+1}|A_{\rm r}|,\xi_{k+1}^2|\nabla A_{\rm r}|<CM\alpha_0\). Then \(\mathbf U=W^g\), with \(W=e^{i\eta A''}e^{i\eta A_{\rm r}}\) and \(A''=\operatorname{Ad}(g^{-1})A'\), so \(|\operatorname{Im}\log W|\le C\eta\alpha_1\xi_{k+1}^{-1}\). The curvature of \(W\) is that of \(\mathbf U\) conjugated by \(g^{-1}\), so it is \(<\alpha_0\eta^2\xi_{k+1}^{-2}\). Let \(h\) be the complex axial gauge of \(W\) from the centre of \(\square_0\): \(h(z)\) is the product of the links of \(W\) along the axial path. Then \(W=(e^{i\eta\widehat A})^h\) with \(\widehat A\) in axial gauge. Each link of \(\widehat A\) is the holonomy of a loop bounding at most \(CM\xi_{k+1}/\eta\) plaquettes of \(\square_0\), conjugated by products of at most \(CM\xi_{k+1}/\eta\) links. Hence \(\xi_{k+1}|\widehat A|\le CM\alpha_0\,e^{CM\alpha_1}\). Only \(\operatorname{Im}\log W\) makes \(h\) non-unitary, so \(|h||h^{-1}|\le e^{CM\alpha_1}\). The plain average is covariant with node values, so \(M_{\mathbf B'}(\mathbf U)=M_{\mathbf B'}(e^{i\eta\widehat A})^{(hg)|_{\rm nodes}}\). Lemma A', with \(\xi'\le\xi_j\) on the cut tower, gives \(|\log M_{\mathbf B'}(e^{i\eta\widehat A})(c)|\le2L\xi_j|\widehat A|\le C_BM\alpha_0\tau\). Put \(v=(hg)|_{\rm nodes}\). Everything is a composition of finitely many holomorphic local operations on \(\mathbf U|_{\square_0}\). \(\square\)
+
+### 7.3 Lemma E (the endpoint in the Landau representative over \(\mathbf 1\))
+
+Let \((\mathcal H,u)\) be Theorem 3's Landau pair over \(\mathbf V_0=\mathbf 1\) for the cut tower, and let
+\(f(B)=\big(\eta^{-2}\xi_j^2(\partial e^{i\eta\mathcal H(B)}-\mathbf 1),\ \xi_j^3J(e^{i\eta\mathcal H(B)})\big)\) at elements of the top member well inside \(\square_0\). Let \(B_{\rm end}=\frac1i\log V\), with \(V\) from Lemma N. Assume, as 5(c) does, the level-\((k+1)\) tower clause of \(\square_0\) at radius \(a\). Then:
+
+1. \(f\) is holomorphic on \(\{\sup|B|<r_{\rm B}\}\), \(f(0)=0\) and \(\|f(B)\|\le C\|B\|\). This follows from (31) and 7.6 of `a3-derivative.md` at \(U_0=\mathbf 1\). So `wf-room.md` (7.1) applies to this \(f\).
+2. \(\|B_{\rm end}\|\le C_BM\alpha_0\tau\), by Lemma N.
+3. \(\|f(B_{\rm end})\|\le(1+C\|B_{\rm end}\|)^2e^{CM\alpha_1}\,a\,\tau^2\le(1+\beta)a\tau^2\) under the ceiling \((1+CC_BM\alpha_0)^2e^{CM\alpha_1}\le1+\beta\), which is fixed after \(M\) and \(\beta\).
+
+*Proof of 3.* The (R5) tower configuration \(U_j(\square_0;P)\) is the canonical background at the datum \(M_{\mathbf B'}(\mathbf U)=V^v\). The holomorphic continuation of \(\Phi\) is unique on overlapping polydiscs (`a1-balaban.md` 9.1, identity theorem), so the reference used to reach that datum does not matter. Theorem 3's covariance \(\Phi_{\mathbf V_0^v}(\operatorname{Ad}(v)B)=\Phi_{\mathbf V_0}(B)^{\tilde v}\), with \(\tilde v\) constant on pillars, extends from \(v\in G\) to \(v\in G^c\) near \(G\) by the identity theorem in \(v\). So \(\Phi_{\mathbf 1}(B_{\rm end})=U_j(\square_0;P)^{\tilde v^{-1}}\) and \(e^{i\eta\mathcal H(B_{\rm end})}=\Phi_{\mathbf 1}(B_{\rm end})^{u^{-1}}\). At a plaquette based at \(x\), \(\partial e^{i\eta\mathcal H}=\operatorname{Ad}(u(x)^{-1}\tilde v(x)^{-1})\,\partial U_j(\square_0;P)\), and the current transforms the same way at its initial site. The conjugator has condition number \(\le(1+C\|B_{\rm end}\|)^2e^{CM\alpha_1}\): \(|u-\mathbf 1|\le C\sup|B|\) at every site (Lemma D (i) at \(U_0=\mathbf 1\)), and \(|\tilde v||\tilde v^{-1}|\le e^{CM\alpha_1}\) (Lemma N). The tower clause at level \(k+1\) (\(p=k+1\), \(n=j\)) gives \(|\partial U_j-\mathbf 1|<a\eta^2\xi_{k+1}^{-2}\) and \(\xi_j^3|J(U_j)|<a\tau^2\). In level-\(j\) normalisation both are \(a\tau^2\). If instead of the tower clause only the simple conditions are assumed, Lemma T or Theorem L(a) gives the same with \(a=K^\sharp(\alpha_0'+\alpha_1'^2)\). \(\square\)
+
+So (7.2) holds for the actual inner endpoint in the representative of (7.1), and `wf-room.md` (7.3) then puts \(\varsigma B_{\rm end}+B'\) in the level-\(j\) core under its stated ceilings. The last step needs \(a\tau^2(1+\beta+4CC_B^2M^2a/r_{\rm B})\le\alpha_{0,j}/2\), which is the running-radius inequality \(\alpha_{0,k+1}\tau^2\le C(1+k+1-j)^{1/2}L^{-2(k+1-j)}\alpha_{0,j}\le\alpha_{0,j}/4\) for \(L\ge4\).
+
+### 7.4 The raw representative fails, and what (WF4) must mean
+
+- *Datum.* C4: before the node factor is removed, \(\|B_{\rm raw}\|\) is of order one for a pure-gauge real factor, so the first inequality of (7.2) fails. The unitary part of \(v\) is what the room paragraph calls "not required to be small".
+- *Pair.* The (WF4) pair at the raw datum is \(\big(\Phi_{\mathbf 1}(B_{\rm end})^{\tilde v},\ \cdot\big)\). Write \(\tilde v=\tilde v_{\rm u}\tilde v_{\rm p}\) (unitary times positive, sitewise). If \(\tilde v_{\rm p}\ne\mathbf 1\), adjacent pillars carry different constant values of \(\tilde v_{\rm p}\). Lemma N's axial construction makes these differ by up to \(C\alpha_1\tau\). A bare bond between two such pillars then has a link whose non-unitary part is \(1+O(\alpha_1\tau)\) on a single bare bond. Every splitting \(e^{i\eta A'}U\) of that link has \(\eta|\operatorname{Im}A'|\ge c\,\alpha_1\tau\) there, so \(\xi_j|A'|\ge c\alpha_1\tau\,\xi_j/\eta\). That violates the potential and gradient clauses of the level-\(j\) core once \(\xi_j/\eta\) is large. So the raw (WF4) pair lies in the core only when \(v\) is unitary, which is the case at real data.
+
+**Repair (definition-level).** Read (WF4) as the Landau triple \((\mathbf 1,\mathcal H(\varsigma B_{\rm end}+B'),J(e^{i\eta_j\mathcal H}))\), with the node factor of Lemma N removed. This is the reading 5(c) states. At physical parameters \(v\) is unitary and every activity is invariant under real gauge transformations, so the two readings give the same window value. On the complex discs the Landau reading is holomorphic (Lemma N's \(v\) is holomorphic) and lies in the core, so it is the continuation that the window identity's "same local formulas" (SA 15843-15846) can use. The raw reading would need the outline's extension to complex gauge orbits (1d), which is not in the library.
+
+**Verdict on item 3.** The endpoint gauge is checked: (7.2) holds in the Landau representative over \(\mathbf 1\) after the node factor is removed (Lemmas N and E). It fails in the raw representative (C4), and the raw (WF4) pair leaves the core when \(v\) is not unitary (7.4). Both are repaired by the reading 5(c) already states. Same-model, ungated.
+
+## 8. Verdicts, defects, what changes, what stays open
+
+**Verdicts** (same-model, ungated; a cross-provider gate is needed before anything here counts):
+
+| Item | Verdict | Where | Reads |
+|---|---|---|---|
+| 1. Localised complex layered tower estimate | **proved as an implication**: Theorem L (a) a priori bound, (b) response with decay at every element (no loss in \(\lambda\)), (c) decay from a source, on Definition A towers and meets | Section 4 | (T4), (AX), (AV), (MS), (6.2) re-checked, (DA) |
+| 1'. Layered room for tower clauses (SA 15933) | **implication** from premises (i) response decay and (ii) nested geometry | Section 5, Corollary R | Theorem L, `wf-room.md` (3.4), (4.6)-(4.7) |
+| 2. First-system and removed current readouts | **specification gap in the outline** (C3); specification (6.1) adopted, with (S1)-(S4) proved; bounds (6.4) and (S6) are **implications** from (O1) and the removed boundary comparison | Section 6 | `wf-room.md` (5.1)-(5.6); (O1) proved at \(s\equiv1\) (block identification to be checked), **pending** for decoupled \(s\) |
+| 3. Inner endpoint against (7.2) | **checked, holds** in the Landau representative over \(\mathbf 1\) with the node factor removed (Lemmas N, E); **fails** in the raw representative (C4, 7.4); repaired by reading (WF4) as 5(c) states | Section 7 | (31), 7.6, Lemma D (i), Theorem 3 covariance, `wf-room.md` (7.1)-(7.3) |
+| 4. Layered quantifier | **stated** as (LQ); \(Z\subset X\cap\Omega_p\) is necessary (C1) and sufficient for Section 4 | Sections 2, 3 | — |
+
+No counterexample to the WF room itself was found. C1, C3 and C4 refute readings of the outline, not the room.
+
+**Defects, ranked by what they break.**
+1. *The first system has no current (SA 10423-10428).* This breaks every consumer of the outer or removed current off the physical locus: the room's current clause and (4.5)'s current part. Repair: (6.1), which is exact on the physical locus, anchored, splitting and covariant.
+2. *The layered tower quantifier is unstated (SA 6150, 9654), and its unrestricted reading is false (C1).* Under it, the layered analogue of Theorem 5(a) fails and the room has no base. Repair: (LQ) with \(Z\subset X\cap\Omega_p\).
+3. *(WF4) at the raw datum.* It fails (7.2)(i) (C4), and for a non-unitary node factor it is not in the core (7.4). Repair: the Landau triple of 5(c), with the node factor of Lemma N removed. At physical parameters this gives the same window value.
+4. *SA Theorem 5(b) claims the Lipschitz bound only at settled elements.* The room at SA 15933 needs unsettled ones too: a level-\(p\) region reaching layers \(r>p\) has \(\lambda\le L^{p-r}\). Theorem L(b) gives every element of \(Z^\circ\).
+5. *(T4) bounds the gauge response \(\dot u\) only at tops*, while the tower clause reads the representative at every site. Lemma D (i) supplies all sites through the axial pillar recursion. This is a gap in what the chain stated, not a failure.
+
+`wf-room.md` Section 6 stopped correctly: one global Cauchy ball cannot cancel \((l/\xi')^2\). Section 4 replaces it with a cell-by-cell remainder.
+
+**What changes.**
+- `wf-room.md` Section 9: of its three remaining items, the layered tower estimate is done (Theorem L), the inner endpoint is checked with a definition-level repair, and the readouts are specified and bounded modulo (O1). The quantifier of `assign-adopt.md` 4.7(c) is stated.
+- `a3-close.md` Lemma T(b) is re-derived as the single-layer case of Theorem L(a); no change is needed there.
+- `sa-ledger.md` rank 4 (for the lead to forward): from "unchecked" to "implication, modulo (O1) for decoupled \(s\), the removed boundary comparison, the first system's own decoupled bounds and the nested-geometry premise (ii)".
+- Three definition-level rulings for the lead: (LQ), specification (6.1), and the Landau reading of (WF4). Each is like Definition A and the profile rule: data the construction must supply.
+
+**Open, hardest first.**
+1. **Decoupled propagators.** Weighted row and column sums for \(H(s)\) and \(D_{\mathbf U}H(s)\) on \(|s_\Delta|<e^{\bar\kappa}\) ((O1)), and the decoupled operator bounds behind the existence and weighted first-response bounds of the first system itself (SA 10380-10415, 1c.7-1c.10). This one input carries premise (i) of Corollary R, (4.5)'s field and current parts, and (6.4). The library has only \(s\equiv1\) (P82°, Theorem P\(^{\mathsf c}\)) and \(\chi_Y\mathsf A\chi_Y\) (`h-walk.md`). **This is the first step at which ledger rank 4 now stops.**
+2. The removed maps' compatible boundary comparison: \(H(s)-H^\square(s)\) and the field difference carrying \(e^{-cM/\sigma_j}\) (SA OA7 paragraph).
+3. Premise (ii) of Corollary R, the nested geometry with one later-level \(M\)-cube per layer: rows 118-119.
+4. Whether label operations can shrink \(\Omega_p\) under an existing level-\(p\) domain (Section 3, "not checked here").
+5. A cross-provider gate of this note. Look hardest at:
+   - Lemma D (i): the pillar recursion for \(u_B\) at every site, and its node values;
+   - Lemma Q: the per-cell Cauchy step and the cell count (4.7);
+   - the far-cell estimate of 4.7, which uses \(d'\) against \(\lambda(x)\) and needs \(\rho>38\log L/\theta\);
+   - (S4): exactness on the physical locus;
+   - the (O1) block identification at \(s\equiv1\);
+   - Lemma N.
+
+Computation: none. No numeric job was run. Every step is written by hand.

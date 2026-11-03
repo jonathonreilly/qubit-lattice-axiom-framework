@@ -371,10 +371,260 @@ His pp. 275–276, (3.25)–(3.29), retain the assigned current and field transf
 Those passages do not replace the failed operator identity. Their method is credited to Tadeusz Balaban.
 B4, the map 1.6, and the finer potential, zone and mixed derivatives are not reached.
 
+## 9. Row 193: check of Claude's `um1-fix.md`
+
+Provenance: Codex, GPT-6 family; runtime effort not exposed; checkout `62a78dba89355b6aae6d190d1289459112e5aff9`.
+One line-by-line check of Sections 1–6; research text, not an audit; no status.
+SA remains pinned at `31a47c543775`, fetched once to `/tmp/sa_ym4.tex`.
+Credit Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, for R9 and UM.
+Credit Tadeusz Balaban for the local-current construction in CMP **109**, (3.10)–(3.13).
+
+**Lemma S', Corollary R', Theorem U': ADVANCE as implications from their named inputs.**
+Checked line by line by Codex, first failing step none in these implications.
+The scope remains the single-scale, node-free interior of `um1.md` Section 2.
+
+For the actual operators, retain \(M_s=M_s^w-a_0I\), with only \(M_s^w\) tagged.
+Definition D and `pw-bridge.md` (7.3)–(7.4) give the tagged terms' full read hulls.
+At \(\xi=1\), their endpoint collar is
+\[
+ R_{\rm coll}=\tfrac12(8L^2-9)M_1.
+\]
+For a composite, each endpoint belongs to the first or last factor's core hull.
+That factor's full hull contains the endpoint collar and belongs to the composite's tag.
+Transposition exchanges endpoints; the diagonal factors in \(M_s^w\) change no support.
+This verifies the collar used by [D+] without retagging any operator.
+
+Take \(r=r_{\rm loc}\) to bound the full local read radii, including transpose coefficient reads.
+[Rows], the plaquette stencil and the finite double-block chart in SA 8283–8287 supply this bound conditionally.
+It depends only on \(L\) in this setting; no numerical value is needed.
+Thus
+\[
+ 2r\le R_{\rm coll},\qquad
+ L\ge3\ \Longrightarrow\ R_{\rm coll}\ge\tfrac{63}{2}M_1,
+ \quad 31M_1\ge2r\ \text{suffices}.                    \tag{12}
+\]
+This is a floor on \(M_1\) after \(L\), before the radii and coupling choices.
+
+Here is the check of every matching step.
+The closed-cube star is face-connected, so \(I_W=\{b:\pi(b)\in D_0(W)\}\).
+A local map of radius \(r\) changes matching depth \(\rho\) to \(\rho+r\).
+A surviving tagged term reads only its wall-component and reads its input in \(D_{R_{\rm coll}}(W)\).
+It therefore resets any matching depth at most \(R_{\rm coll}\) to zero.
+Absolute convergence permits this argument term by term.
+
+Put \(A=C'(z)\), \(N^{\mathsf T}=\sum_{n\ge0}(-H^{\mathsf T}A^{\mathsf T})^n\).
+The identity term keeps depth \(\rho\); every other term resets it after one local read.
+Hence \(N^{\mathsf T}\) keeps depth \(\rho\) when \(\rho+r\le R_{\rm coll}\).
+The inner iteration gives \(d\) at depth \(r\) and \(z=a-Hd\) at depth zero.
+The five actual terms of `nl-r9.md` (4.4) then have depths
+\[
+ (T_1,T_2,T_3,T_4,T_5):\quad(r,2r,2r,2r,r).             \tag{13}
+\]
+In detail, \(p_s=H^{\mathsf T}J\) has depth zero, giving \(T_1\) depth \(r\).
+In \(T_2\), the walk part resets \(d\); the diagonal leaves the run \(K^{\mathsf T}(-a_0I)C\).
+In \(T_3,T_4\), the vectors \(M_sKa,M_sd\) have depth \(r\).
+Their \(N^{\mathsf T}\) factors require (12), and the last \(A^{\mathsf T}\) adds \(r\).
+These are precisely the runs \(C'^{\mathsf T}(-a_0I)K\) and \(C'^{\mathsf T}(-a_0I)C\).
+Finally \(T_5=N_0(z)-A^{\mathsf T}N^{\mathsf T}H^{\mathsf T}N_0(z)\) has depth \(r\).
+The exterior \(G(s)\) resets (13); \(H_1(s)B'(u)\) resets the source's depth \(r\).
+Both outer Picard sequences therefore match on \(I_W\); convergence preserves equality.
+The second contraction has the same property.
+On a zero cube, the exterior rows of \(H_1,G,H\) vanish, proving S'(i) without using \(M_s\).
+
+For R', each corner star of a plaquette lies in its root star \(X_0(p)\).
+S' thus restricts every plaquette read to the component containing \(X_0(p)\).
+A derivative in another component is zero, even on the complex Cauchy discs.
+The same termwise argument gives heredity under [RT].
+It also justifies truncating \(y\) to \(Y\) in all three uses listed in `um1-fix.md` Section 5.
+The checked scalar calculation of Section 7.2 then gives, unchanged,
+\[
+ |V^{G,A}(Y)|\le K_{GA}\delta(t)e^{-(\bar\kappa-2)d_f(Y)}
+                    M^{-4}\sum_{b\in Y}|y(b)|^2.        \tag{14}
+\]
+The finite bracket identity gives exactness at complete physical pairs, using [ID].
+Holomorphic composition gives U'(H); \(\bar\kappa\ge\lambda+2\) gives its rate allocation.
+[QC], the source map in [ID], [RT], and the adopted [R9] premises remain explicit inputs.
+This check closes the diagonal defect of Section 8. It does not establish those inputs or the other potential types.
+
+## 10. B1 from the supplied potential family
+
+**The coupling-disc argument now works for (14), conditional on (6) and the assigned Gaussian support identities.**
+The following hand derivation also applies to finitely many types satisfying the same UM1 bound.
+It does not assume that the other types satisfy that bound.
+Credit Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, for SA UM2–UM30.
+
+Write \(a\) for the sum of the type budgets at one common rate \(\lambda_V\).
+For the intrinsic type alone, \(a=K_{GA}\delta(t)\); use its sign in the fluctuation exponent.
+Fix a nonempty coarse domain \(Z\), and put
+\(N=\#Z\), \(r=\#\mathbf D\), \(v=\#P_0\), \(h=\#(Z\setminus Z_0^\sharp)\), as in UM2–UM3.
+There are at most \(c_m(LM)^4N\) real scalar coordinates.
+The cutoffs stay on real integration variables and are fixed under differentiation.
+Keep \(\chi_{Y_0}\) on every selected box-defined potential.
+
+Choose \(\lambda_0>\kappa_f\), \(0<a\le W_0/2\), and independent couplings
+\[
+ |\zeta_Y|<\mathcal R_Y=(W_0/a)e^{(\lambda_V-\lambda_0)d_f(Y)}.
+\]
+A rooted covering-tree traversal records a domain by at most \(C(d_f+1)\) bounded-degree steps and selection flags.
+Thus the rooted count is exponential, uniformly on the torus.
+Summing first at each root cube, then at each bond, gives
+\[
+ \sum_{Y\in\mathbf D}|\zeta_YV(Y)|
+ \le C_pW_0L^4N+C_pW_0M^{-4}|B|^2.
+\]
+Choose \(C_pW_0M^{-4}+\gamma/2\le\rho_0(K_G)\).
+Equation (7), including its failed-bond estimate, bounds the integral by
+\[
+ 2^r e^{C_0N}p^v,\quad p=e^{-\gamma\mathfrak b^2/2},\quad
+ C_0=C_pW_0L^4+A_Kc_m(LM)^4
+       (\epsilon_G+C_pW_0M^{-4}+\gamma/2).                \tag{15}
+\]
+No auxiliary dimension occurs.
+The integral vanishes when any selected \(\zeta_Y=0\).
+Divide by \(\prod_Y\zeta_Y\), remove the singularities, and apply the maximum principle on smaller polydiscs.
+Let their radii increase to \(\mathcal R_Y\).
+Then apply Cauchy to each coarse parameter, with radius tending to \(R_s-1\).
+Each parameter occurs once. This proves
+\[
+ |T(Z,\mathbf D,P_0)|\le e^{C_0N}(2a/W_0)^r
+ e^{-(\lambda_V-\lambda_0)\sum_{Y\in\mathbf D}d_f(Y)}
+ p^v(R_s-1)^{-h}.                                      \tag{16}
+\]
+Gaussian domination justifies holomorphy and both differentiations before any logarithm is taken.
+For \(a=0\), only the cutoff selections remain.
+
+The actual local collar obeys
+\(N\le C_h[r+L^{-1}\sum_Yd_f(Y)+v+h]\).
+Indeed, split a doubled fine covering tree into segments of length \(L\).
+Each thickened segment meets boundedly many coarse cubes; failed bonds also have bounded collars.
+Put \(\ell(Z)=d_c(Z)+5\le c_\ell N\),
+\(K_*=2+c_\ell\Lambda\), and \(\Theta=C_h(C_0+K_*)\).
+Impose \(\lambda_V-\lambda_0\ge\Theta/L+\sigma_0\), \(\sigma_0>\kappa_f\), and \(\log(R_s-1)\ge\Theta\).
+Pay \(e^{(C_0+K_*)N}\) with this collar bound in (16).
+Summing the remaining finite selections gives
+\[
+ |H(Z)|\le e^{-K_*N}(e^{\tau N}-1)
+ \le\tau e^{-\Lambda\ell(Z)},\qquad
+ \tau=e^\Theta\left[2c_fL^4S_{\sigma_0}a/W_0+n_bp\right]\le1. \tag{17}
+\]
+The subtraction of one removes the empty selection; \(e^{\tau N}-1\le\tau Ne^{\tau N}\) proves the last bound.
+Here \(n_b\le c_b(LM)^4\) counts possible failed bonds per coarse cube.
+The choices in `um-envelope.md` Sections 3–5 bound \(C_0\) first, then fix the rates.
+Finally \(t\) makes \(K_{GA}\delta(t)\) small and \(\mathfrak b^2=t\delta(t)^2\) large.
+Thus (17) has no depth or volume cost.
+
+For completeness, the last B1 step is short.
+In the preceding rate choices, fix \(\mu>0\) and take \(\Lambda-\mu\) large enough that
+\[
+ B_*:=\sup_q\sum_{Z\ni q}e^{-(\Lambda-\mu)\ell(Z)+\#Z}<1/(2c_{\rm adj}).
+\]
+The same covering-walk count makes this possible.
+For \(w_Z=\sup|H(Z)|e^{\mu\ell(Z)}\), (17) gives
+\(\sum_{Z'\not\sim Z}w_{Z'}e^{\#Z'}\le\#Z/2\), with strict room.
+Order incompatibility edges and toggle the smallest edge whose endpoints have a path of smaller edges.
+This preserves connectivity and reverses sign; only spanning trees survive.
+Their rooted sums obey \(T_Z^{(h+1)}=\exp(\sum_{Z'\not\sim Z}w_{Z'}T_{Z'}^{(h)})\), \(T_Z^{(0)}=1\).
+Induction gives \(T_Z^{(h)}\le e^{\#Z}\); monotone convergence bounds the full tree sum.
+The formal connected-graph identity follows by partitioning each graph into its connected components.
+Absolute convergence makes it an analytic identity near zero activities.
+Scaling activities radially to their physical values extends it to that point, proving nonvanishing of this gas.
+Joining covering trees along an incompatibility tree gives \(\ell(\cup_iZ_i)\le\sum_i\ell(Z_i)\).
+Rooting at one cube of \(X\) therefore bounds its union-filed logarithm by
+\[
+ |E(X)|\le \tau B_*e^{-\mu\ell(X)}.                    \tag{18}
+\]
+This bound is on each local core, with actual polymers restricted to \(Z\subset X\).
+Normal convergence and Cauchy give derivatives on smaller admitted parameter discs, with their actual inverse radii.
+No finer weighted input estimate follows from this last statement alone.
+
+Equations (15)–(18) are proved here by hand, not yet checked by the other model.
+They establish the B1 majorant conditional on UM1 and the exact UM3 structural identities.
+Equation (14) supplies the intrinsic UM1 input only.
+
+### 10.1 The Gaussian identities for this application
+
+Retain the full-hull locality and heredity premises of the adopted precision and inverse-root series, including [RT].
+Their surviving coefficients cannot join distinct wall-components: a connected full hull crossing components meets a zero cube.
+Both endpoints and every coefficient read lie in that hull.
+Products retain this property; an untagged identity is diagonal.
+Consequently \(\chi A(s)\chi\), its inverse \(C\), and \(\Gamma\Gamma^{\mathsf T}\) split into the same blocks.
+The gap in (6) justifies each inverse on its selected coordinates.
+The effective covariance \(D=C+C\Gamma\Gamma^{\mathsf T}C\) therefore splits too.
+The normalized Gaussian of Section 5 factors over these blocks and satisfies \(\mathcal J[1]=1\).
+Matching the full hulls on two domains gives identical blocks and identical functionals; this is the required conditional heredity.
+
+At complete physical data and \(s=1\), the adopted symmetric root satisfies \(r(1)r(1)^{\mathsf T}=A^{-1}\).
+For \(I=Z_0\), \(O=I^c\), write \(S=A_{OO}-A_{OI}C A_{IO}\).
+Block elimination gives \((A^{-1})_{OO}=S^{-1}\) and
+\[
+ D=C+C A_{IO}S^{-1}A_{OI}C=(A^{-1})_{II}.
+\]
+Thus this functional is the actual marginal at complete physical data.
+Expand the finite product \(\prod_Y[1+(e^{V(Y)}-1)]\).
+For each selection retain its box cutoffs and expand the remaining cutoffs as \(\chi_b=1-(1-\chi_b)\).
+The finite fundamental theorem of calculus in the coarse parameters gives UM3.
+The block factorization groups disconnected terms into compatible polymers.
+This proves the exact finite gas identity for the supplied potential family, before taking its logarithm.
+Together with (14)–(18), it supplies B1 for that intrinsic regular gas under the retained operator and chart premises.
+
+## 11. First new stop for the full step: the older-origin UM1 bound
+
+**The next unproved input is the ordinary older-origin potential bound, at its pointed quadratic cancellation.**
+This precedes the finer typed, zone and mixed derivatives.
+Keep \(x=t\) and one old regular member; this is already a slice required by SA 7569 and 22879.
+The small-field map needs, on every admitted complex core and fluctuation box,
+\[
+ \|\mathbf V_k^{\rm old}\|_\lambda
+ \le Cs_k\left[\sum_{j\le k}\omega_{k+1-j}g_j
+                    +\sum_j\rho_j^2(d_j+r_j)\right],
+ \qquad \omega_n\le Cn^C L^{-\alpha_H n}.               \tag{19}
+\]
+This is SA WF15. Neither (14) nor the Gaussian comparison bounds these older terms.
+Here \(g_j,d_j,r_j\) are member norms, \(\rho_j=\max(1,\alpha_k/\alpha_j)\), and \(s_k=\delta_k/\alpha_k\).
+The local pivot and Haar logarithms are not this obstruction:
+under the retained [QC] input, their finite stencils and
+\(|\operatorname{tr}\log(1+E)|\le3\|E\|/(1-\|E\|)\)
+give the \(O_M(g)\) budget described in `um1.md` Remark 8.2.
+
+The direct Cauchy route does not prove (19).
+For a regular member of norm \(g_j\), its quadratic term at one old base point is bounded by
+\(Cg_j\rho_j^2\sigma_j^4\), where \(\sigma_j=L^{-(k-j)}\).
+There are \(C_M\sigma_j^{-4}\) such bases in a current window.
+The common fluctuation disc supplies one factor \(s_k\), leaving \(Cs_kg_j\rho_j^2\).
+This cannot imply the required \(Cs_kg_j\rho_j^3\sigma_j^{\alpha_H}\).
+Even at \(\rho_j=1\), their ratio is \(L^{\alpha_H(k-j)}\), which has no depth-independent bound.
+
+The second route is the pointed subtraction used in SA WF8 and `wf7-bf.md:94–99`.
+It requires the actual identity
+\[
+ D^2\!\left(F_{j,z}-b_j(G)(A_{j,z}\circ\mathcal P_j)\right)(0)
+                                      [\ell_F,\ell_F]=0,       \tag{20}
+\]
+Here \(F_{j,z}(B)=\sum_{X\ni z}G_j(X,\mathcal P_j(B),z)\) uses the actual critical background pair.
+Here \(b_j(G)\) must be that member's prescribed bulk extractor, and \(A_{j,z}\) its unit-normalized midpoint tent action.
+The identity must be justified by absolute Hessian moments, before restricting the domain sum or applying brackets.
+Then the affine/Hölder errors would give
+\(Cg_j(\rho_j^2\sigma_j^{4+\alpha_H}+\rho_j^3\sigma_j^6)\) per base, which has the needed age gain.
+
+The checked box/core room does not establish (20).
+`wf7-bf.md` retains this cancellation as a premise; `cond-c.md` carries it into Rule W.
+SA B2, PH5–PH23 (3937–3981, 12949–13418) prove a conditional extraction argument.
+Its actual-family hypotheses and extractor-to-tent identification have not been rebuilt here.
+The bulk low-order statement in `gauge-taylor-contraction.md` is not that pointed identity.
+`prefactor-loc.md` Lemma A concerns a fixed-depth affine response; it does not establish (20) for the activity class.
+
+Balaban CMP **109**, pp. 277–283, (3.34)–(3.36), (4.5)–(4.8), separates the domain, remote-tail and Ward arguments.
+His mechanism is the model for this reduction; it does not identify the present member's prescribed coefficient by itself.
+This is the first new application not justified by the retained inputs. It is a gap, not a counterexample to (19) or B4.
+Stop here. The potential test at SA 5066–5082, the zone test at 5084–5106, and mixed derivatives are not reached.
+Their distinct domains cannot be replaced by the smaller coupling discs used in Section 10.
+
 ## Result
 
-**Stopped at UM1 [D] and Lemma S, Step 0: the actual \(M_{\boldsymbol0}=-a_0I\), not zero.**
-The nonlinear splitting conclusion is not refuted; its supplied proof has a false operator input.
-The scalar remainder and rate calculations pass conditionally. Equation (7) remains checked by Claude.
-B1, B4 and 1.6 remain unproved here, including their finer derivatives on their own domains.
-Only this file was changed. Every mathematical step above is by hand; no status is granted.
+**UM1 repair checked:** Lemma S', Corollary R' and Theorem U' pass as their stated conditional implications.
+The three joined runs cost \(2r_{\rm loc}\); floor (12) removes the old diagonal obstruction.
+**New hand result, not yet checked:** Section 10 gives the coupling discs, Gaussian domination and B1 for the supplied intrinsic gas.
+It retains (6), [QC], [ID], [RT] and the adopted operator premises.
+**First new stop:** (19), at the actual pointed cancellation and normalization (20), needed for the older-origin UM1 input.
+The full ordinary B1 application, B4 and 1.6 remain open here, including their finer potential, zone and mixed derivatives.
+Only this file was changed. Every mathematical step is by hand; no status is granted.

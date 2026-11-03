@@ -10,8 +10,8 @@ Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as the authors of
 ## Result
 
 1. **Check.** `library/prefactor.md` (Codex): checked line by line by Claude, first failing step none. Four non-breaking notes (Section 1).
-2. **Theorem S (proved here, by hand).** At the trivial background and at every fixed depth, background substitution preserves the bulk coefficient exactly: π̂^{F∘p_k}(K) = L²π̂^F(K/L) + O(|K|³) for F = Ψ_{k-1}, so b[Ψ_{k-1}∘p_k] = b[Ψ_{k-1}] with zero error. This is the outline's RF11a second formula, proved for the actual R3 average, contour gauge and Wilson action.
-3. **Corollary T.** For every k ≥ 1, in the bulk (infinite volume, fixed depth): Σ_{l≤k} b_l^0 = b[Ψ_k] exactly, where b_l^0 is the PH18 coefficient of the step-l Gaussian logarithm Φ_l read at level l. Any localised family N^(l) with (PH5) has b(N^(l)) = b_l^0. The error that row 158 asked to bound is identically zero, so it is summable and uniform in depth and volume. No fall-back to the massive trace route is needed for this step.
+2. **Theorem S (proved by Claude, by hand; not yet checked by the other model).** At the trivial background and at every fixed depth, background substitution preserves the bulk coefficient exactly: π̂^{F∘p_k}(K) = L²π̂^F(K/L) + O(|K|³) for F = Ψ_{k-1}, so b[Ψ_{k-1}∘p_k] = b[Ψ_{k-1}] with zero error. This is the outline's RF11a second formula, proved for the actual R3 average, contour gauge and Wilson action.
+3. **Corollary T.** For every k ≥ 1, in the bulk (infinite volume, fixed depth): Σ_{l≤k} b_l^0 = b[Ψ_k] exactly, where b_l^0 is the PH18 coefficient of the step-l Gaussian logarithm Φ_l read at level l. Any localised family N^(l) as in RF8 (with its decay, (PH5) and a companion) has b(N^(l)) = b_l^0. The error that row 158 asked to bound is identically zero, so it is summable and uniform in depth and volume. No fall-back to the massive trace route is needed for this step.
 4. **Open (not this step).** The value: |b[Ψ_k] − k c_0| ≤ c_2 uniformly in k (RF10 first clause, partial-sum form), by the outline's massive trace route (RF12c, RF13, its mixed energy bounds) or by P1. RF10's second clause and B3's nonlinear parts f_j, q_j are untouched.
 
 ## 1. Check of `library/prefactor.md` (Codex, row 151)
@@ -30,7 +30,7 @@ Notes. None breaks a statement.
 
 - N1 (Section 4, "both integrations converge by fibre positivity"). Add one line: T_02 > 0 on ker BA gives T_1 > 0 on ker A (take a = n) and T_2 > 0 on ker B (take a = Rb, then a^TT_02a = b^TT_2b).
 - N2 (Section 3, level-1 insertion). The change of variables for the level-1 gauge must use the block-constant extension h̃(x) = h(y(x)). Then G_01 stays invariant, because T_yx(U^h̃) = h(y)T_yx(U)h(y)^{-1} and w is a class function. The text omits this; the claim is true.
-- N3 (Section 3, "three final blocks so each block is contractible"). Blocks are cubes, so they are always contractible. Three blocks per direction are used so that the loops through four adjacent blocks are contractible on the torus.
+- N3 (Section 3, "three final blocks so each block is contractible"). Wording only. Blocks are cubes, so contractibility of a block is not the operative reason. The argument needs the blocks, and the loops through adjacent blocks that it uses, not to wrap the torus; three blocks per direction ensure this.
 - N4 ((13) on a torus). There, b_h is a contraction of a finite Hessian and needs a lift convention for displacements. B3 reads the bulk coefficient, and Sections 2–7 below supply it.
 
 ## 2. Setting and the bulk coefficient
@@ -49,7 +49,7 @@ Everything below is at the trivial background U = 1 and at a fixed depth k. No c
 
 **Branches and responses.** u_{0,k}(z) is the k-fold augmented critical branch (prefactor.md Section 3 with k levels), with R_{0,k} := Du_{0,k}(1). p_k(z) is the level-(k−1) critical field at level-k datum z, with R_k := Dp_k(1), a map from level-k fields to level-(k−1) fields.
 
-**Gaussian logarithms.** On a torus, Ψ_k is the normalised k-fold constrained Gaussian logarithm, log G(T_{0,k}, A_{0,k}) minus its value at 1. Here T_{0,k} is the constrained Hessian of S̃_k at u_{0,k}(z), and A_{0,k} = DM_{0,k} there. Ψ_0 := 0. Φ_l is the step-l Gaussian logarithm read at level l, as in prefactor.md: G(T_l, B_l) normalised at 1, with T_l = S_{l-1}'' + G_{l-1,l}'' − μ·M_{l-1,l}'' at p_l(v).
+**Gaussian logarithms.** On a torus, Ψ_k is the normalised k-fold constrained Gaussian logarithm, log G(T_{0,k}, A_{0,k}) minus its value at 1. Here T_{0,k} is the constrained Hessian of S̃_k at u_{0,k}(z), and A_{0,k} = DM_{0,k} there. Ψ_0 := 0. Φ_l is the step-l Gaussian logarithm read at level l, as in prefactor.md: log G(T_l, B_l) normalised at 1, with T_l = S_{l-1}'' + G_{l-1,l}'' − μ·M_{l-1,l}'' at p_l(v).
 
 **The k-step form of (12).** On every torus with N ≥ N_0(k, L) final blocks per direction, near 1,
 
@@ -88,7 +88,7 @@ Proof.
 **Lemma A.** Let ℓ be a level-k affine bond field, ℓ_ν(X̃) = c_ν + Σ_κ C_{νκ} X̃_κ in level-k midpoint coordinates. Let ℓ_f be the level-0 affine field ℓ_{f,μ}(x̃) = L^{−k}c_μ + L^{−2k} Σ_κ C_{μκ} x̃_κ. Then R_{0,k}ℓ = ℓ_f + dψ, with ψ polynomially bounded, and the multiplier response to ℓ is zero. Consequently:
 
 - (R-ii) d(R_k ℓ) is a constant 2-form on the level-(k−1) lattice, equal to L^{−2} times the level-k curl of ℓ.
-- (R-i) For a constant field c, the cell average of R_k c is c/L: L^{−4} Σ_{x∈C} (R_k c)_μ(x̃) = c_μ/L, where C is a set of L^4 level-(k−1) sites representing Z^4/LZ^4.
+- (R-i) For a constant field c, the cell average of R_k c is c/L: L^{−4} Σ_{x∈Λ_L} (R_k c)_μ(x̃) = c_μ/L, where Λ_L := {0, …, L−1}^4 is a set of level-(k−1) sites representing Z^4/LZ^4.
 
 Proof.
 
@@ -106,7 +106,127 @@ with Θ_w(y) := L^{−4} Σ_{x∈B(y)} τ_y(w)(x). The straight transport U[c] c
 
 (e) *(R-ii).* By (2.1), R_k ℓ = Q_{0,k−1} a_1, the level-(k−1) affine field with slope L^{2(k−1)} L^{−2k} C = L^{−2}C, plus a gradient, by (b). Its curl is constant and equals L^{−2} times the curl of ℓ.
 
-(f) *(R-i).* For a constant c, R_k c is L-periodic on the level-(k−1) lattice, by covariance, and Q_k(R_k c) = Q_{0,k} R_{0,k} c = c. For an L-periodic level-(k−1) field w, Θ_w takes the same value at all level-k nodes, so Q_k w = Q_k^{path} w. For fixed transverse coordinates x_⊥, Σ_{s<L} w_μ(x + s e_μ) is the sum over a full period of the line, whatever x_μ is. So Σ_{x∈B} Σ_{s<L} w_μ(x + s e_μ) = L Σ_{x∈C} w_μ(x), and Q_k w = L times the cell average of w_μ. Hence the cell average of R_k c is c/L. ∎
+(f) *(R-i).* For a constant c, R_k c is L-periodic on the level-(k−1) lattice, by covariance, and Q_k(R_k c) = Q_{0,k} R_{0,k} c = c. For an L-periodic level-(k−1) field w, Θ_w takes the same value at all level-k nodes, so Q_k w = Q_k^{path} w. For fixed transverse coordinates x_⊥, Σ_{s<L} w_μ(x + s e_μ) is the sum over a full period of the line, whatever x_μ is. So Σ_{x∈B} Σ_{s<L} w_μ(x + s e_μ) = L Σ_{x∈Λ_L} w_μ(x), and Q_k w = L times the cell average of w_μ. Hence the cell average of R_k c is c/L. ∎
 
 *Remark.* (R-i) fixes the field units ("two form scalings" of RF11a); if it failed with factor α in place of 1/L, b would be multiplied by (αL)². (R-ii) is what removes the aliased modes at second order; a response with a periodic non-gradient part of order |K| would change b.
 
+## 5. Lemma D: bulk Hessian kernels at fixed depth
+
+**Lemma D.** Fix l ≥ 1 and L.
+
+- (a) DΨ_{l,N}(1) = 0 on every admissible torus.
+- (b) There is a kernel H_l on level-l bonds, invariant under level-l translations, with |H_l(b, b')| ≤ C e^{−m|b̃ − b̃'|}, such that D²Ψ_{l,N}(1)(b, b') = H_l(b, b') + O(e^{−mN}) for fixed lifts b, b' as N → ∞.
+- (c) H_l is symmetric. It annihilates gradients of polynomially bounded site functions: Σ_{b'} H_l(b, b')(dχ)(b') = 0. It is covariant under the hypercubic group, reflections included, fixing a site.
+- (d) The same holds for Ψ_{l−1}∘p_l, with kernel R_l^T H_{l−1} R_l, and for Φ_l, with kernel H_{Φ_l} := H_l − R_l^T H_{l−1} R_l (H_0 := 0).
+
+The constants C, m depend on l and L. Nothing below needs them uniform in l.
+
+Proof.
+
+(a) Ψ(g v g^{−1}) = Ψ(v) for constant g, and su(2) has no Ad-invariant vector (as for (13)).
+
+(b) Write K(v) := 𝕊(T_{0,l}(v), A_{0,l}(v)) in right-trivialised coordinates, so Ψ_{l,N} = −½ log|det K| + const. The entries of K(v) are analytic functions of the branch (u_{0,l}(v), λ(v)) and of v near 1. Each entry depends only on these fields within a distance r(l, L) of its two bonds, because S, each G_{j,j+1}∘M_{0,j} and M_{0,l} have finite range at fixed depth. Also K(1) = S_{l,N}. Polarising (14) of prefactor.md,
+
+D²Ψ_{l,N}(1)[δ_b, δ_{b'}] = −½ Tr(K^{−1}K_{bb'}) + ½ Tr(K^{−1}K_b K^{−1}K_{b'}),  (5.1)
+
+with K_b := ∂_b K(1) and K_{bb'} := ∂_b∂_{b'} K(1). The branch derivatives solve S_l(Du, Dλ)[δ_b] = (0, δ_b) and S_l(D²u, D²λ)[δ_b, δ_{b'}] = s_{bb'}, where s_{bb'} is a finite-range quadratic vertex applied to the first derivatives. By Lemma B, |Du[δ_b](a)| ≤ C e^{−m|a−b|}. Hence |s_{bb'}(a)| ≤ C e^{−m(|a−b| + |a−b'|)}. Convolving with S_l^{−1} and using |a−c| + |c−b| + |c−b'| ≥ ¼(|a−b| + |b−b'|) + ½|a−c| gives |D²u[δ_b, δ_{b'}](a)| ≤ C e^{−(m/4)(|a−b| + |b−b'|)}. So, for some m' > 0,
+
+|K_b(a, a')| ≤ C e^{−m'(|a−b| + |a'−b|)},  |K_{bb'}(a, a')| ≤ C e^{−m'(|a−b| + |a'−b| + |b−b'|)}.
+
+Use Σ_a e^{−m(|x−a| + |a−y|)} ≤ C_m e^{−m|x−y|/2}. Then both traces in (5.1) converge absolutely on the infinite lattice and are O(e^{−m''|b−b'|}). In the second trace the chain b → a → a' → b' has length at least |b − b'|. Define H_l(b, b') by (5.1) on the infinite lattice. On the torus each factor is the periodisation of its infinite-volume version, up to terms in which some factor joins points at torus distance at least N/2 (Lemma B (vi)). These terms are O(e^{−mN}).
+
+(c) *Symmetry:* mixed derivatives commute.
+
+*Gradients.* Ψ_{l,N} is invariant under level-l gauge transformations h near 1. Let h̃(x) := h(Y(x)), with Y(x) the level-l node of the level-l block that contains the fine site x. Then:
+- S is invariant.
+- Each M_{0,j}, j ≤ l, is covariant: M_{0,j}(U^{h̃}) = M_{0,j}(U)^{h̃_j}, where h̃_j is h̃ at the level-j sites.
+- Each G_{j,j+1}∘M_{0,j}, j < l, is invariant: both ends of each contour mean lie in one level-l block, where h̃ is constant, and w is a class function.
+- The constraint datum becomes v^h.
+
+By uniqueness near 1, u_{0,l}(v^h) = u_{0,l}(v)^{h̃}. In right-trivialised coordinates (e^{ia}U)^{h̃} = e^{i Ad_{h̃(b_−)} a} U^{h̃} on each bond b. So T_{0,l} and A_{0,l} are conjugated by orthogonal maps, and |det K| is unchanged. Differentiate Ψ(v^{e^{itχ}}) = Ψ(v) once in t and once in a field direction, and use (a). This gives D²Ψ_{l,N}(1)[dχ, ·] = 0 (PH8, re-derived). In the limit, H_l annihilates dχ for finitely supported χ, and then for polynomially bounded χ by exponential decay (PH9).
+
+*Hypercubic covariance.* The R3 contour family (shortest paths in every coordinate order) is invariant under the hypercubic group fixing a block centre. The blocks are centred, because L is odd. The Wilson action and the gauge terms are invariant. Finally (R3) satisfies M(U)(c̄) = M(U)(c)^{−1} for the reversed bond c̄. Proof: put W_x := U(c_−, x)U([x, x'])U(x', c_+). Reindex the start block B(c_+) of c̄ by x ↦ x − L e_μ. Then the formula for c̄ is exp{L^{−4} Σ_x log(W_x^{−1}U[c])} U[c]^{−1}. Also log(W_x^{−1}U[c]) = −Ad_{U[c]^{−1}} log(W_x U[c]^{−1}). So the formula equals U[c]^{−1} exp{−L^{−4} Σ_x log(W_x U[c]^{−1})} = M(U)(c)^{−1}. Hence a symmetry g of a torus symmetric about a level-l site maps the augmented problem at datum v to the problem at g·v, and Ψ_{l,N}(g·v) = Ψ_{l,N}(v).
+
+(d) *Ψ_{l−1}∘p_l.* By (a) for Ψ_{l−1}, its torus Hessian at 1 is R_{l,N}^T D²Ψ_{l−1,N}(1) R_{l,N}, with R_{l,N} = Per R_l. The limit is R_l^T H_{l−1} R_l, with exponential decay by Lemma B and (b). Gauge invariance and covariance follow from those of Ψ_{l−1}, and from p_l(z^h) = p_l(z)^{h̃_{l−1}}, which is proved as in (c).
+
+*Φ_l.* By (2.1), Φ_l = Ψ_l − Ψ_{l−1}∘p_l. ∎
+
+## 6. Theorem S: substitution preserves the coefficient exactly
+
+**Theorem S.** Let π be a bulk kernel on level-(k−1) bonds with exponential moments. Assume:
+
+- (W) π̂(q) ĝ(q) = 0 on its strip, where ĝ_ν(q) := 2i sin(q_ν/2) is the symbol of the gradient;
+- (Sy) π_{μν}(u) = π_{νμ}(−u);
+- (Re) covariance under the reflection of one coordinate about a site.
+
+Let R map level-k bond fields to level-(k−1) bond fields, with a kernel that is covariant under level-k translations and decays exponentially, and that satisfies (R-i) and (R-ii) of Lemma A. Let π^c be the bulk kernel of R^T Π R on level-k bonds. Then
+
+π̂^c(K) = L² π̂(K/L) + O(|K|³)  as K → 0.  (6.1)
+
+Hence π^c and π have the same second moments, Σ_U π^c_{μν}(U) U_κ U_λ = Σ_u π_{μν}(u) u_κ u_λ, and in particular b_{μν}[π^c] = b_{μν}[π] for every pair μ ≠ ν.
+
+Proof. Work in level-(k−1) units. Level-k sites sit at L Z^4, and the level-k bond (X, ν) has its midpoint at L(X + e_ν/2).
+
+*Step 1: π̂(q) = O(|q|²).* Differentiate (W) at q = 0, using ĝ(0) = 0, ∂_κ ĝ_ν(0) = i δ_{κν} and ∂_κ∂_λ ĝ(0) = 0. Once: i π̂_{μκ}(0) = 0, so π̂(0) = 0. Twice: ∂_κ π̂_{μλ}(0) + ∂_λ π̂_{μκ}(0) = 0. So the first moment M_{μν,κ} := Σ_u π_{μν}(u) u_κ is antisymmetric in (ν, κ). By (Sy) it is antisymmetric in (μ, ν). So it is totally antisymmetric. Under the reflection of coordinate ρ, a bond field transforms by B_μ(x̃) ↦ s_μ B_μ(r x̃), with s_ρ = −1 and s_μ = 1 otherwise. (Re) gives M_{μν,κ} = s_μ s_ν s_κ M_{μν,κ}. For distinct μ, ν, κ take ρ = κ: then M = −M. So M = 0 and ∇π̂(0) = 0.
+
+*Step 2: the composite symbol.* Fix ν and K in a small complex ball. Let w^{K,ν} := R(e_ν e^{iK·X̃}), the image of the level-k plane wave in direction ν. By covariance, w^{K,ν}(x̃ + L e) = e^{iK·e} w^{K,ν}(x̃) for e ∈ Z^4. Put N := {−(L−1)/2, …, (L−1)/2}^4, k_n := (K + 2πn)/L and C := {0, …, L−1}^4. Then
+
+w^{K,ν}_μ(x̃) = Σ_{n∈N} ρ_{μν}(K, n) e^{i k_n·x̃},  ρ_{μν}(K, n) = L^{−4} Σ_{x∈C} w^{K,ν}_μ(x̃) e^{−i k_n·x̃}.
+
+The ρ are analytic in K, by the exponential decay of R. Put τ(q) := Σ_x R(x̃; 0) e^{iq·x̃}, the kernel to the level-k bonds at X = 0. Covariance, R(x̃ + L X; X) = R(x̃; 0), gives two facts. First, ρ(K, n) = L^{−4} τ(−k_n) Ph(K), with Ph(K) := diag(e^{iK_ν/2}). Second, R^T maps a fine plane wave α e^{i k_n·x̃} to e^{iK·X} τ(k_n)^T α, since e^{i k_n·L X} = e^{iK·X}. Apply R^T Π R to the plane wave and compare with π̂^c(K) e^{iK·X̃}. Since −k_n(K) = k_{−n}(−K), we have τ(k_n)^T = L^4 Ph(K) ρ(−K, −n)^T, and the phases cancel:
+
+π̂^c(K) = L^4 Σ_{n∈N} ρ(−K, −n)^T π̂(k_n) ρ(K, n).  (6.2)
+
+For real K, ρ(−K, −n)^T = ρ(K, n)^†.
+
+*Step 3: the term n = 0.* ρ_{μν}(0, 0) is the cell average of (R e_ν)_μ, which is δ_{μν}/L by (R-i). So ρ(±K, 0) = L^{−1} + O(|K|). By Step 1, π̂(K/L) = O(|K|²). So the n = 0 term of (6.2) is L^4 · L^{−2} π̂(K/L) + O(|K|³).
+
+*Step 4: the terms n ≠ 0.* For a fine plane wave α e^{iq·x̃}, the curl on the plaquette (x; μ, λ), with centre p̃ = x + (e_μ + e_λ)/2, is
+
+(ĝ_μ(q) α_λ − ĝ_λ(q) α_μ) e^{iq·p̃} =: (ĝ(q) ∧ α)_{μλ} e^{iq·p̃}.
+
+So the curl Ω^K := d w^{K,ν} has modes ĝ(k_n) ∧ ρ_{·ν}(K, n), and ĝ(k_n) ∧ ρ_{·ν}(K, n) = L^{−4} Σ_{x∈C} Ω^K(p̃) e^{−i k_n·p̃}. Expand in K at fixed p, uniformly over the bounded set p ∈ C:
+
+Ω^K = d(R e_ν) + i Σ_κ K_κ d(R(X̃_κ e_ν)) + O(|K|²).
+
+Here ∂_{K_κ} w^{K,ν} = i R(X̃_κ e_ν) at K = 0, by differentiation under the absolutely convergent sum. By (R-ii) both curls are constant 2-forms, ω_0 and ω_κ. Moreover ω_0 = 0: R e_ν is L-periodic, and the sum of the curl of a periodic field over a period cell telescopes to zero. Hence
+
+ĝ(k_n) ∧ ρ_{·ν}(K, n) = i Σ_κ K_κ ω_κ · L^{−4} Σ_{x∈C} e^{−i k_n·p̃} + O(|K|²).
+
+For n ≠ 0 the last sum is zero at K = 0 (a nontrivial character of Z^4/LZ^4, times a constant phase) and analytic, so it is O(|K|). Therefore ĝ(k_n) ∧ ρ_{·ν}(K, n) = O(|K|²).
+
+Now pick α with n_α ≠ 0. Then |π n_α / L| ∈ [π/L, π/2), so ĝ_α(k_n) = 2i sin((K_α + 2π n_α)/(2L)) is analytic and nonzero near K = 0. Put φ(K) := ρ_{αν}(K, n)/ĝ_α(k_n). For each λ, ρ_{λν} − ĝ_λ φ = (ĝ ∧ ρ)_{αλ}/ĝ_α = O(|K|²). So ρ_{·ν}(K, n) = ĝ(k_n) φ(K) + O(|K|²). The same holds for ρ(−K, −n), with ĝ(k_{−n}(−K)) = −ĝ(k_n(K)). By (W) at −q and (Sy), π̂(q)^T = π̂(−q) and ĝ(q)^T π̂(q) = 0. So the gradient parts drop out on both sides, and the n-th term of (6.2) is O(|K|²) · π̂(k_n) · O(|K|²) = O(|K|⁴).
+
+*Step 5.* Adding the terms, π̂^c(K) = L² π̂(K/L) + O(|K|³). The second-order Taylor polynomial of L² π̂(K/L) at 0 is that of π̂, evaluated at K. ∎
+
+## 7. Corollary T: B3's bulk coefficient sequence telescopes exactly
+
+**Corollary T.** For every k ≥ 1,
+
+Σ_{l=1}^{k} b_l^0 = b[Ψ_k]  and  b_l^0 = b[Ψ_l] − b[Ψ_{l−1}],
+
+exactly. The same holds for every pair μ ≠ ν and for the whole second-moment tensor.
+
+Proof. Fix l ≥ 1. By (2.1) and Lemma D (a), on each torus D²Ψ_{l,N}(1) = D²Φ_{l,N}(1) + R_{l,N}^T D²Ψ_{l−1,N}(1) R_{l,N}. In the limit, H_l = H_{Φ_l} + R_l^T H_{l−1} R_l (Lemma D (d)). The coefficient b is linear in the kernel. Apply Theorem S with π = H_{l−1} and R = R_l. Its hypotheses (W), (Sy), (Re) hold by Lemma D (c); covariance and decay of R_l hold by Lemma B; (R-i) and (R-ii) hold by Lemma A with k = l. (For l = 1, H_0 = 0 and there is nothing to prove.) So b[R_l^T H_{l−1} R_l] = b[Ψ_{l−1}], and b_l^0 = b[H_{Φ_l}] = b[Ψ_l] − b[Ψ_{l−1}]. Sum over l ≤ k, with Ψ_0 = 0. ∎
+
+**Remarks.**
+
+1. *The localised family.* RF8 defines b_l^0 as b(N^{(l)}) for its localised family. Suppose N^{(l)} sums to Φ_l on every admissible torus, agrees with a companion family on Z^4 for nonwrapping polymers, and has RF8's decay and (PH5) with constants independent of the torus. Then the sum over base points of its pointed Hessians is D²Φ_{l,N}(1) on each torus, and the wrapping and torus–companion differences at fixed b, b' tend to zero. So its PH13 bulk kernel is H_{Φ_l}, and b(N^{(l)}) = b_l^0. B3's sequence therefore does not depend on the localisation. Corollary T itself does not use RF8.
+2. *Why the requested error is zero.* prefactor.md Section 6 asked for a summable bound on the substitution error b[R_k^T H_{k−1} R_k] − b[H_{k−1}]. Theorem S shows that this error is zero for every k. Only fixed-depth decay is used (Lemmas B, D), with rates that may degenerate as k grows; they are never summed over k. The ε + t² example of prefactor.md (14) concerns uniform derivative bounds, and these do not enter.
+3. *RF11a.* (6.1) with F = Ψ_{k−1} is RF11a's second formula. The coefficient needs no "uniform analytic control of the aliased modes": Step 4 shows the aliased terms are O(|K|⁴) at each fixed depth. A version of the O(|K|³) remainder uniform in k is not proved here.
+4. *Units.* (R-i) carries RF11a's two form scalings L^{−1}L^{−1}, and the volume ratio L^4 is the prefactor in (6.2).
+
+## 8. Scope, and what stays open
+
+**Proved here, by hand, not yet checked by the other model.** Lemmas B, A, D, Theorem S and Corollary T, as implications from these inputs only: the Wilson action; the R3 average (SA 5631–5651 = CMP 109 (0.12)); the contour gauge insertion (CMP 109 (0.14)–(0.16)); prefactor.md (5), (6), (12), (14), checked in Section 1; and the outline's definition of b as the PH18 second moment. The (2.1) induction re-uses prefactor.md Section 4 verbatim. No literature lemma is cited without its proof here.
+
+**What this does not show.**
+
+- *The value.* Corollary T reduces B3's Gaussian part to one number per depth: b[Ψ_k], the coefficient of the k-fold constrained Gaussian logarithm. The bound |b[Ψ_k] − k c_0| ≤ c_2, uniform in k, is open. By Corollary T it is equivalent to the partial-sum form of RF10's first clause, which B3 accepts as a "stated summable substitute". It is the target of the outline's massive trace route: the change to the covariant background gauge (SA 21095–21111), the current cancellation RF12b–RF12c (SA 21162–21322), and the mass comparison RF13 (SA 21325–21452). That comparison has two named open checks: the mixed energy bounds for the actual average and constraint jets (SA 21325–21356), and the matching of the vector numerators to the grouped magnetic remainder (SA 21378–21430). P1's constant-flux route is the alternative; the P1 gate found its bound (E) WRONG and its uniform symbol and alias bounds open. Either route must compute b of the same Ψ_k: the contour-gauge Gaussian here, or RF12's covariant-gauge form with the gauge change proved along the branch.
+- *Geometric convergence.* RF10's second clause, |b_{l+1}^0 − b_l^0| ≤ C_α L^{−αl} (the RF14 route), is not touched. It is needed only for B3's strong form |b_j^0 − c_0| ≤ C L^{−σj}, not for the partial-sum substitute.
+- *Nonlinear parts and localisation.* B3's f_j and q_j, and RF8's uniform localisation of N^{(l)}, are not touched. Remark 1 of Section 7 shows that RF8 is not needed for the coefficient identity.
+- *Uniformity.* The constants of Lemmas B and D depend on the depth. The identity is exact, so this costs nothing. A torus coefficient, if a consumer reads one, differs from the bulk coefficient by O(e^{−m_k N}), with m_k not uniform in k; B3 reads the bulk coefficient.
+
+**For the lead.** Row 158 is closed in the stronger form: the substitution and localisation error is zero, uniformly in depth and volume, so the hybrid coefficient lane of `library/route-compare-2.md` Section 9 item 1 is real. Rank 9 now stops at the value b[Ψ_k] = k c_0 + O(1). Its first statement for a lane is RF13's comparison for this Ψ_k. Start from Lemma B's Bloch fibres and the bounded-conjugation strip, and prove the mixed energy bounds of SA 21325–21356 for the actual R3 jets, uniformly in k. Check RF12c in the same lane; like Theorem S, it is exact at fixed k and uses only Lemma D's fixed-depth moments. A failure there would send rank 9 back to P1's constant-flux route, with its gate's repairs.
+
+RESULT: prefactor.md (Codex) checked line by line by Claude, first failing step none (four non-breaking notes). Proved by Claude, not yet checked: Theorem S, π̂^{Ψ_{k−1}∘p_k}(K) = L²π̂^{Ψ_{k−1}}(K/L) + O(|K|³) at every fixed depth for the actual R3 average, contour gauge and Wilson action (RF11a's second formula), hence Corollary T, Σ_{l≤k} b_l^0 = b[Ψ_k] exactly, so the substitution error that row 158 asked to bound is zero, uniformly in depth and volume, and any RF8 localisation gives the same b_l^0. Open: the value |b[Ψ_k] − k c_0| ≤ c_2 uniformly in k (massive trace route RF12c/RF13 with its mixed energy bounds, or P1), RF10's second clause, and B3's nonlinear parts.

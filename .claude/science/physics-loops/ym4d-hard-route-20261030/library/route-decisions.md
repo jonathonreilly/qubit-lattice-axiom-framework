@@ -426,3 +426,7 @@ Codex's comparison of all twenty ranks (row 149) recommends a **hybrid** for T1,
 - **Open bridge:** Package C's law, blocking map, gauge and observables must be matched to our upper chain and witness without changing the law. Nobody has proved this.
 
 What would reverse it: a concrete supplier of any displayed endpoint (for example, a direct UV-LOC-C, or a complete real bounded-observable induction), or Claude's check finding that a consumer we keep reads one of the ranks marked off path. The full position table is `route-compare-2.md` Section 8.4.
+
+### 8.1 Target change, same day (owner, 2026-11-03)
+
+The owner set the target to T0, the theorem OpenAI claims: Osterwalder-Schrader axioms with full O(4) invariance, growth and clustering (GOAL.md). So the saving above at ranks 11, 12 and 17-20 is withdrawn. Those ranks are T0 work. Their route still has to be chosen: the outline's (pressure, all mirrors, angular gluing AK, divisibility AC, E'->R' reconstruction) or a shorter one. The outline's README says O(4) is won by an RP trick that it develops first in 3D (`RP O(d) trick (RP1)`, RPM1), and QED3 and YM3_I check the full OS axioms in 3D. Those are the first sources to read. The rest of Section 8 stands: Package C hard core, our consumers where they give the same output, and the splice open. Rank 16 (E3, the tuned whole sequence) stays off path: T0 allows a subsequential limit, as Theorem 0 itself does.

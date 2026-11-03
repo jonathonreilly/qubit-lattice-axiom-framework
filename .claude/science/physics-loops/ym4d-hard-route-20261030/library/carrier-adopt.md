@@ -8,7 +8,7 @@ Written by Claude (Opus 5.5, max), on the Mac mini. Research-stage working state
 
 Moves: rank 6 (2.13's stored cut, (4.1) of `sa-2.13-2.md`) and C4 (the order of constants).
 
-Status of this file: in progress. Sections are written in order.
+Status of this file: complete (Sections 1-7 and Result).
 
 Provenance: Claude Opus 5.5 (`claude-opus-5-5`), effort max, Mac mini worker, branch head `de1534ccd`. One reading by the other model. Research text, not an audit, no status. The outline was fetched by URL into a private scratch folder; its SHA-256 `d7f77d4da3eb23038250c52468a341281d9ba86b4af21d3371d208a2537d4b6f` matches the pin `31a47c543775`. Balaban's CMP 99 (389-434) OCR was read in `~/ym4d-papers/`. No numeric job was run; every step below is a written inequality.
 
@@ -21,7 +21,7 @@ Credits. Ethan Sussman and Levent Alpoge, with Claude and Codex as the authors o
 | Section | Verdict | What I redid |
 |---|---|---|
 | 1, check of um-envelope 4-5 | ADVANCE | Each bullet; details below. This is the first other-model reading of um-envelope Sections 4-5. |
-| 2, (11)-(12) | ADVANCE | Every admitted tree of (H2) is within R_h of the read hull, so l_ω ≤ d_B(ω;x,y). With η ≤ δ_h/2, e^{η l_ω}\|A_ω(x,y)\| ≤ C_h (C_h M_1^{-1/3})^m e^{-δ_h\|x-y\|/2}. The (H1) count C_h^m and the bounded number of roots at x give W once C_h^2 M_1^{-1/3} ≤ 1/2. The column sum is the same. (12) is Tonelli over the labelled intermediate coordinate. |
+| 2, (11)-(12) | ADVANCE | The read hull lies within R_h of every admitted tree of (H2), so l_ω ≤ d_B(ω;x,y). With η ≤ δ_h/2, e^{η l_ω}\|A_ω(x,y)\| ≤ C_h (C_h M_1^{-1/3})^m e^{-δ_h\|x-y\|/2}. The (H1) count C_h^m and the bounded number of roots at x give W once C_h^2 M_1^{-1/3} ≤ 1/2. The column sum is the same. (12) is Tonelli over the labelled intermediate coordinate. |
 | 3, (13)-(16) | ADVANCE | At λ = 2b_s²/a_s, ‖(I - A_</λ)v‖² ≤ (1 - 2a_s/λ + b_s²/λ²)\|v\|² = ρ²\|v\|². A row of N_t^j has at most c(1+jr)^4 entries, so Cauchy-Schwarz gives √c(1+jr)²ρ^j. The choice θ ≤ -log ρ/(2r) gives e^{θ jr} ≤ ρ^{-j/2}. Then \|K_t\|_θ ≤ 1/4 + 1/4. The order r, then θ, then n, is noncircular. D ≤ length + 2R_* holds because the chain tree is connected and the hull lies within R_* of it. |
 | 4, (17) | ADVANCE | The scalar identity, its Jordan-block extension, and Tonelli with the majorant 2p_r/(λ+t). The integral of t^{-1/2}/(λ+t) over (0,∞) is π/√λ. The symmetrized family has the same sum because (A+t)^{-1} is symmetric. |
 | 5, (18)-(20) | ADVANCE | (18): a piece of length M/4, thickened by R_*, has ℓ∞ diameter < M when M ≥ 8R_*, so it meets at most 16 cubes; #P ≤ 16(1 + 8l/M). (19): a varied product starts at a row of Z_0 and its hull meets a cube at distance ≥ w, so l_1 + l_2 ≥ w - R_*. (20): the Cauchy integral on \|z\| = h/ε gives \|f(1) - f(0)\| ≤ sup\|f\|/(h/ε - 1) ≤ 2ε sup\|f\|/h. The four terms sum to 2WU e^{32κ̄-dM} + 6WUε/h, which is (20) with T = 2WU + 6WU/h. |
@@ -31,7 +31,7 @@ Inv-root Section 1, redone. Um-envelope (5): with w ≥ 2R_h, δ(w - R_h)/4 ≥ 
 
 Notes that break nothing. They fix the precision of what Section 6 of inv-root claims.
 
-- (a) Lemma 4.1 of `sa-2.13-2.md` uses two facts about carriers: each factor carrier contains its two end coordinates, so consecutive factors share the contracted coordinate; and the diameter. Its proof never uses connectivity. Inv-root's endpoint balls contain the ends. For a precision term, add the two end coordinates to the read hull; D ≤ l_ω + 2R_h is unchanged, because both ends lie on every admitted tree.
+- (a) Lemma 4.1 of `sa-2.13-2.md` uses two facts about carriers: each factor carrier contains its two end coordinates, so consecutive factors share the contracted coordinate; and the diameter. Its proof never uses connectivity. Inv-root's endpoint balls contain the ends. For a precision term, add the two end coordinates to the read hull; D ≤ l_ω + 2R_h is unchanged, because both ends lie on each tree that defines l_ω.
 - (b) D must be measured in a metric that dominates ℓ∞, because the threshold argument of `sa-2.13-2.md` Section 4 is in ℓ∞. Physical unit-lattice distance dominates ℓ∞.
 - (c) All of inv-root's bounds hold where the A2 bounds hold, that is, on the fixed complex neighbourhood of pairs regular for the step's sequence. Each term is holomorphic on the local class on its hull. This is the same domain as h-walk (H2) and as the outline's statement 5 (SA 10311-10338). It is not a defect.
 - (d) The length-weighted bounds (15) and (17) are stronger than the diameter bounds (16) and (21). The polymer readers in Section 3 below need the length form. Inv-root supplies it.
@@ -40,7 +40,7 @@ Notes that break nothing. They fix the precision of what Section 6 of inv-root c
 
 **No.** The outline names statement-5 walk series for the cut. It constructs none for the covariance. SA 17557-17564 fix no expansion.
 
-- **What SA 17550 names.** "A chain is either a walk term of Δ^(j) or a sequence of a walk, a resolvent walk and a walk." In free coordinates the form is the step's precision 𝖠: "one has 𝖠 = 𝖢^𝖳 Δ^(k) 𝖢" (SA 10208). Its covariance is C^(j)(Λ_{j+1}) = (χ_Λ 𝖠 χ_Λ)^{-1} (SA 10206, 17532). The walks are those of statement 5 (SA 10311-10338): walks of cells of side O(M_1), a factor (C M_1^{-1/2})^{|ω|} M_1^{-|ω|/2} per walk, hull [[ω]], carrier [ω] = [[ω]] ∩ Ω_0 (SA 10210). This is Balaban's form, CMP 99 (3.90)-(3.94).
+- **What SA 17550 names.** "A chain is either a walk term of Δ^(j) or a sequence of a walk, a resolvent walk and a walk." In free coordinates the form is the step's precision 𝖠: "one has 𝖠 = 𝖢^𝖳 Δ^(k) 𝖢" (SA 10208). Its covariance is C^(j)(Λ_{j+1}) = (χ_Λ 𝖠 χ_Λ)^{-1} (SA 10206, 17528). The walks are those of statement 5 (SA 10311-10338): walks of cells of side O(M_1), a factor (C M_1^{-1/2})^{|ω|} M_1^{-|ω|/2} per walk, hull [[ω]], carrier [ω] = [[ω]] ∩ Ω_0 (SA 10210). This is Balaban's form, CMP 99 (3.90)-(3.94).
 - **Precision side: no change.** Statement 5 for χ_Y 𝖠 χ_Y is rebuilt as `h-walk.md` Theorem H, with power M_1^{-1/3} and the read sets of `h-walk-fix.md`. Inv-root (11) uses exactly this series and these hulls.
 - **Covariance side: nothing to conflict with.** Statement 5 bounds C^(k)(Y) by "the kernel bound that 6 states" (SA 10329). Statement 6 comes from 1c.8 (SA 10477). The outline does not write it out (`h-walk.md` Section 10 item 3). `h-walk-fix.md` Section 5 item 5 records: "Statement 5 for C^(k)(Y) is not in h-walk.md, and it stays open." SA 10478 also treats a walk expansion "as a datum enjoying the short list of properties of 7". So the adoption specifies a series that the outline leaves unconstructed.
 - **What the adoption changes against statement 5.** Two things. The index is a chain of grouped polynomial entries and long precision walks, not a walk of M_1-cells. The per-term bound is an absolute moment at a fixed rate θ, not a factor M_1^{-1/2} per step. Section 3 shows that no reader of the cut reads either one. The per-walk factor serves statement 7 (SA 10552-10558, the parameter count and the torus push-forward). The cut does not decouple its kept forms.
@@ -85,7 +85,7 @@ Fix the step j+1. Work in the free level-j coordinates (after pivot elimination)
 4. *Chains of S.* A chain μ is either a precision term of the block II, or a product A_ω R_α A_ω' with blocks IJ, JJ and JI. Its carrier is the union, and its length l_μ is the sum.
 5. *Retention.* Apply the rule of SA 17550 to the chain carriers of item 4.
 
-Each term τ of Definition D has end coordinates in its carrier. Its carrier lies within R_* of a connected set T, which contains both ends and has length at most l(τ) + ε, for every ε > 0. Call this property (T). For a grouped entry, T is the segment [x,y]. For a precision term, T is an admitted tree of (H2). For a chain, T is the union of the factor sets; it is connected, because consecutive factors share a coordinate.
+Each term τ of Definition D has end coordinates in its carrier. Its carrier lies within R_* of a connected set T, which contains both ends and has length at most l(τ) + ε, for every ε > 0. Call this property (T). For a grouped entry, T is the segment [x,y]. For a precision term, T is a tree through x and y within R_h of which the read hull lies, of length at most l_ω(x,y) + ε; such trees define l_ω (inv-root Section 2). For a chain, T is the union of the factor sets; it is connected, because consecutive factors share a coordinate.
 
 **Lemma L (locality).** Let τ be a term of Definition D.
 
@@ -133,3 +133,75 @@ No symmetry of 𝖠 is used.
 *Proof.* (a) Re 𝖠_JJ ≥ γ, so 𝖠_JJ is invertible. For v ∈ ℂ^I put w := -𝖠_JJ^{-1} 𝖠_JI v. Then 𝖠_JI v + 𝖠_JJ w = 0, so w^*(𝖠_JI v + 𝖠_JJ w) = 0. Hence (v,w)^* 𝖠 (v,w) = v^* 𝖠_II v + v^* 𝖠_IJ w = v^* S v. Its real part is at least γ(\|v\|² + \|w\|²) ≥ γ\|v\|². (b) The matrix R := S - K has row and column sums of \|R_xy\| at most W e^{-κs}, as in the proof of Lemma 4.1. So \|v^* R v\| ≤ (1/2) Σ_{x,y} \|R_xy\| (\|v_x\|² + \|v_y\|²) ≤ W e^{-κs} \|v\|². Subtract this from (a). ∎
 
 At complex pairs of the A2 neighbourhood, Re 𝖠 ≥ a with a = 3c_L/4, and ‖𝖠‖ ≤ b with b = C_A + c_L/4 (`a2-full.md` Theorem II and Lemma 5.1; `gates/a2-full-gate.md` Sections 4-5). Inv-root's moments hold uniformly there (note (c) of Section 1). So Lemma C applies with γ = a.
+
+## 5. The adoption, and (4.1) closed
+
+**Adoption (recorded here for the lead).** The stored carrier series of 2.13 is Definition D. It specifies the covariance series that SA 17550 names and the outline leaves unconstructed. It keeps the outline's retention rule, read on uncut carriers. Every lane that writes the stored cut, its carriage or its witness uses Definition D. Its numbers r, λ, n, θ are fixed once, before M and κ̄.
+
+**Theorem A (stored cut for the adopted series).** Proved by Claude as an implication; inputs checked as stated below.
+
+Premises.
+
+- (A2) On a fixed complex neighbourhood 𝒩 of the pairs regular for the step's sequence: Re 𝖠 ≥ a and ‖𝖠‖ ≤ b, with a = 3c_L/4 and b = C_A + c_L/4 fixed before M and κ̄. At real pairs 𝖠 is real symmetric and 𝖠 ≥ a. Source: `a2-full.md` Theorems I-II and Lemma 5.1, checked by Codex with repairs (`gates/a2-full-gate.md`). Their inputs are the separated-layer results (`a2-layers.md` Theorem B, `a2-curved.md`; rows 90, 92, 93). This is not yet the outline's full A2.
+- (HW) `h-walk.md` Theorem H (H1)-(H2), with the repairs of `gates/h-walk-gate.md` Sections 8-9, and the read sets of `h-walk-fix.md` (Lemma N, Theorems W', H'), as checked in `gates/h-walk-fix-gate.md`. Its own premises (I1)-(I3) stay premises.
+
+Conclusions, on 𝒩, uniformly in depth, volume, conditioning set and label:
+
+- (i) **(4.1) of `sa-2.13-2.md` holds for Definition D**, with W_A = e^{2θR_h} W, W_C = 2p_r e^{2θR_*}/λ and κ = θ/2. The series are transpose-closed. Each carrier contains its ends. D is measured in a metric that dominates ℓ∞.
+- (ii) **Kept-form lower bound at real pairs.** With s = LM Ř_{j+1} and W_* := W_A + W_A² W_C, the kept form satisfies K ≥ [a - W_* e^{-θs/2}] I. If M ≥ M_cut := (2/(θL)) log(2W_*/a), then K ≥ (a/2) I. This is SA 17555 with c = a/2.
+- (iii) **Complex pairs.** Re K ≥ a/2 at every pair of 𝒩, for the same M.
+- (iv) **Rejected part.** 𝖡^× has the polymer bound (P) of Lemma P. This is SA 17554.
+- (v) **Carriage.** Each kept chain is a holomorphic function of the pair and of the regions on its carrier, the same for every label and every torus with room (Lemma L). Its pinned absolute sums decay as e^{-θ l}, where l is the length of its carrier tree (inv-root (15)).
+
+*Proof.* (i) is inv-root (21), checked in Section 1, with notes (a)-(b). (ii) is `sa-2.13-2.md` Lemma 4.1 with γ = a. Its geometric threshold puts every rejected chain at D ≥ s. Lemma 4.1 and the threshold were checked by Claude in `pre-213.md` Section 1b, first failing step none. Ř_{j+1} ≥ 1 gives e^{-θs/2} ≤ e^{-θLM/2} ≤ a/(2W_*) for M ≥ M_cut. (iii) is Lemma C with γ = a. (iv) is Lemma P. (v) is Lemma L and inv-root (15). ∎
+
+Order of constants. W, W_A, W_C, θ, R_*, R_h depend on L, M_1, a, b and the h-walk constants. They are fixed before κ̄ and M. Theorem A adds only floors on M: LM ≥ 8R_*, M ≥ M_cut, and M ≥ 1024κ/(θL) for the polymer rate. M is already chosen after M_1 (SA 10582). So no cycle is created.
+
+What Theorem A does not show.
+
+- It does not prove its premises (A2) and (HW).
+- It does not identify Definition D with any other series. None exists in the outline to compare with.
+- It gives no covariance of pointed totals under all isometries (B2). This is open for the precision terms too.
+- It leaves the rest of 2.13 open: the inner and retained-activity comparisons (Inn) and (Act) of V_X, the complex-pair envelope (SA 18029-18105, 18719-18876), hypothesis 3 of `sa-2.13.md` Theorem 8.1, and the rigidity and admission inputs of Lemma 2.5 (i)-(ii).
+
+## 6. C4: the UM inverse root
+
+**The UM readers accept inv-root's series too.** The outline builds the inverse root by integrating the resolvent expansion: "Integrating 𝖠^{-1/2} = (1/π)∫ y^{-1/2}(y + 𝖠)^{-1} dy produces the walk-chain expansion of the inverse root" (SA 14150-14157). It decouples "the precision and its inverse root by their respective expansions", and r(s) "does not denote 𝖠(s)^{-1/2}" (SA 14160-14170). Inv-root (17) is such an integral, with its decoupling by full-hull tags. Its readers:
+
+- the comparison bounds of SA 14175-14199: supplied by um-envelope (6), which inv-root Section 5 proves (checked in Section 1);
+- the Schur identity at s = 1, C + CΓΓ^𝖳C = χ𝖠(P)^{-1}χ (SA 14207-14210): it needs r(1) r(1)^𝖳 = 𝖠^{-1}. Inv-root (17) gives r(1) = 𝖠^{-1/2}, and this matrix is symmetric because 𝖠 is;
+- holomorphy in the parameters with a parameter-free majorant (SA 14237-14243): normal convergence on the closed polydisc |s_Δ| ≤ e^{κ̄} (inv-root Section 5) and uniform bounds on 𝒩;
+- real reference matrices (SA 14175): Lemma L(c).
+
+**The cycle is cut, conditionally.** Inv-root gives um-envelope (6) with R = U, B = W, T = 2WU + 6WU/h, b_d = 32 and d = θc_w/4. All of these are fixed before M and κ̄. So the conditional theorem of um-envelope Section 5 applies: C_0^UM ≤ 1 and Θ = O(1). The cycle κ̄ → M → C_0^UM → Θ → κ̄ of `c4-order.md` is cut. The order is:
+
+L; then M_1 and R_1; then a and b; then r, θ, n, and with them W, U, R_*, T, d, W_A, W_C; then κ, λ and Θ; then κ̄ ≥ Θ + 1 and the floors of c4-order row 9; then l_P and the response radii; then M, with LM ≥ 8R_*, c_w M ≥ 2R_*, C_g κ̄/M ≤ θ/2, um-envelope (9) with b_d = 32, M ≥ M_cut and δ_0 M ≫ κ̄; then the box constants; then W_0, γ_tilt and ε_G; then the radii.
+
+No constant in this list depends on a later one. The stored cut (Theorem A) adds only floors on M.
+
+Standing. Um-envelope (6) is proved by Codex and now checked by Claude. Um-envelope Sections 4-5 are proved by Codex; inv-root Section 1 (Codex) checked them, and Section 1 above redoes that check, first failing step none. C4-order rows 8, 9, 12 and 14 have had a same-provider reading (`um-envelope.md` Section 1). Its other rows have had no second reading. So C4 is closed as a conditional order, and the c4-order table still awaits its check by the other model.
+
+## 7. What moved, and what stays open
+
+What moved:
+
+- **`inv-root.md` (row 165):** checked line by line by Claude, first failing step none. Every section is an implication from (A2) and (HW).
+- **`um-envelope.md` Sections 4-5:** checked by Claude through inv-root Section 1, first failing step none.
+- **Rank 6, the stored cut:** adopted. (4.1) of `sa-2.13-2.md` is closed for Definition D (Theorem A (i)). With it come the kept-form lower bound of SA 17555 at real and complex pairs, the rejected-part bound of SA 17554, and the carriage locality of SA 17558 (Theorem A (ii)-(v)). These are the cut inputs of Lemma 2.5(iii), the fluctuation, collar and rim witness (SA 18300-18330), the piece majorants (SA 19002) and the stored Gaussian blocks (SA 18757-18790). Proved by Claude; Definition D, Lemmas L, P, C and Theorem A are not yet checked by the other model.
+- **C4:** um-envelope (6) is now checked. The cycle κ̄ → M → C_0^UM → Θ → κ̄ is cut, conditionally. The c4-order table still needs its other-model check.
+
+No part of this lane is waste. Each section feeds the two named positions.
+
+For the lead (suggested updates, not made here): `t0-skeleton.md` lines 2.13 and C4, `sa-ledger.md` rank 6, and the status fields of FINISH rows 165 and 167.
+
+What stays open:
+
+- The premises (A2) at the outline's full scope, and (HW) with its own premises (I1)-(I3).
+- One reading by Codex of Definition D, Lemmas L, P, C and Theorem A. The lane that next reads the stored cut can do it in its first section.
+- The rest of rank 6: (Inn) (row 169), (Act), the complex-pair envelope (SA 18029-18105, 18719-18876), hypothesis 3 of `sa-2.13.md` Theorem 8.1, and the rigidity and admission inputs of Lemma 2.5 (i)-(ii).
+- Covariance of pointed totals under all isometries (B2, SA 3937-3950).
+- The c4-order rows that no second model has read.
+
+## Result
+
+Inv-root is checked by Claude, first failing step none. The outline names statement-5 walk series for the cut, but it constructs no covariance series (statement 6 is not written). No reader of the stored precision reads the walk index or the factor M_1^{-1/2} per step. So adopting inv-root (15), with the repaired precision hulls (11), as the stored carrier series is admissible. It is recorded as Definition D. With it, (4.1) of `sa-2.13-2.md` holds (Theorem A (i)), so the kept form satisfies K ≥ (a/2)I for M ≥ M_cut, at real and complex pairs, and the rejected part has the polymer bound of SA 17554. The same series gives um-envelope (6), which cuts the C4 cycle conditionally. All of this is an implication from the A2 and h-walk premises; the new lemmas await one reading by Codex.

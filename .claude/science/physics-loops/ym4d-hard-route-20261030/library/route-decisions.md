@@ -414,3 +414,15 @@ push, claim or subagent.
 
 Status: finished 2026-11-02, first version. Same-model decision; it steers,
 it grants nothing.
+
+## 8. Update, 2026-11-03 (lead, from `library/route-compare-2.md`; pending Claude's check, row 150)
+
+Codex's comparison of all twenty ranks (row 149) recommends a **hybrid** for T1, not our route end to end and not the outline end to end.
+
+- **Hard core: the outline's Package C on Balaban's backgrounds, with our checked rebuilds.** Our rarity route is not a better complete large-field construction. No hybrid found bypasses WF7 or 2.13's Pre/Inn/Act; they are repaired inside Package C (rows 148 and later). The one saving obtained there is ours: the full-Q centred reference ratio at ranks 5-6.
+- **Consumers: ours.** Selected symmetric Wilson tori, one joint subsequence, our smaller OS construction, our NT1/NT2 witness. This takes ranks 11, 12, 16, 17, 18, 19 and 20 off T1's path. T1 asks for hypercubic invariance at separated points, not O(4) or the full Wightman theory, so the outline's all-state symmetry, angular gluing and divisibility, and E'->R' reconstruction are not read.
+- **Possibly ours:** ranks 8, 13, 14, 15 through a finite-window NT1 comparison (row 152), and rank 9 through the actual constrained prefactor identity (row 151). Both are open, with medium-to-high risk.
+- **Outline:** ranks 7 (with a read-graph repair if needed), 10 (its producer, our upper consumer), and 14 when the age norm is needed.
+- **Open bridge:** Package C's law, blocking map, gauge and observables must be matched to our upper chain and witness without changing the law. Nobody has proved this.
+
+What would reverse it: a concrete supplier of any displayed endpoint (for example, a direct UV-LOC-C, or a complete real bounded-observable induction), or Claude's check finding that a consumer we keep reads one of the ranks marked off path. The full position table is `route-compare-2.md` Section 8.4.

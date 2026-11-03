@@ -3,11 +3,21 @@ lease_until: 2026-11-03T14:08Z
 
 # a2-full: the outline's A2 from separated layers to its full scope
 
-Pinned at branch claude/ym4d-hard-route, commit 7668755cf. Queue row 109. Same-model, ungated, research-stage working state. In progress; sections are written as they close.
+Pinned at branch claude/ym4d-hard-route, commit 7668755cf. Queue row 109. Same-model, ungated, research-stage working state. Complete for this item.
 
 Provenance: Anthropic Claude Opus 5.5 (`claude-opus-5-5`), effort max as configured for this worker (Mac mini); repository commit 7668755cf; Sussman–Alpoge outline `YM4_sketch_500.tex` at commit `31a47c543775`, fetched by URL into a scratch folder and not committed (outline line numbers below, written SA nnnn, refer to that file); Balaban CMP 119 read from `~/ym4d-papers/cmp119.txt` (OCR, outside git). Research text by one model, not an audit and not a gate; it grants no status. No step rests on a computation; no numerical job was run.
 
 **Credit.** The obligation A2 and its list of versions (SA 3835–3863), the operators and the identification paragraph (SA 10138–10208), the physical diagram PX93–PX105 (SA 11141–11262), the localized Gaussian comparison (SA 13895–14200), the profiles and exponent (SA 6331–6355), the step anatomy (SA 7590–7614, 7855–7880) and the walk mechanisms (SA 10540–10560) are Ethan Sussman and Levent Alpoge's outline, with Claude and Codex as authors of their text. Tadeusz Balaban supplies the programme: the background expansion (CMP 102 (174); CMP 109 (2.4)–(2.11), as the outline cites them), the effective action with a position-dependent coupling g_k^2(x) (CMP 119 (2.23)–(2.24)), separate currents (CMP 109) and decoupling parameters (CMP 116, as cited at SA 10552). The layered A2 operator estimates used here are `a2-layers.md` (Claude) with the repairs of `gates/a2-layers-gate.md` (Codex), and `a2-curved.md` (Codex) as gated in `gates/a2-curved-gate.md` (Claude). The response bounds are (1b) Theorem 4 as proved in `a3-derivative.md` and `a3-clauses.md` and gated as recorded there.
+
+## 0. Disposition
+
+**Item (1), proved.** At the pair of the step, A (SA 10204) is the Hessian of the step's exponent on the next fibre: PX93-PX104 hold, every identity written (Theorem I). The gauge identity Delta^W - Delta'_pi[J(U)] = S^T Delta^W S with the outline's explicit formula is re-derived from the BCH expansion of the gauge action (Lemma 3.2). The gauge-fixing gradient term -C_V^T E_V^(2)[J-hat_GF] C_V vanishes wherever V(y,x) = 1, which covers every physical pair and its continuation in the tower axial gauge. At every complex regular pair it is at most C_II alpha_1, and A^full = A plus that term keeps the half-gap (Lemma 4.1, Theorem II).
+
+**Item (2), proved as implications at the coarse level.** The signed-profile, source and boundary perturbations are bounded by C_IV g_k^2 (or C_IV e^{-theta rho/32} for the boundary), uniformly in depth, on the whole complex datum polydisc, by a Cauchy-locality lemma that reads only the gated response decay (T4) (Theorem IV). The counterterm arrays are bounded by C_V eps_ct (g_k/r_k)^2, given the outline's polymer accounting (H-ct) (Theorem V). The gap survives by a coarse stability lemma (Lemma 5.2). **The queue's route for (2) is refuted for profiles:** in the fine X-form norm the profile perturbation is b k g_k^2, unbounded in depth (test 2.1). It is harmless because the profile never enters the fine operators.
+
+**Item (3), proved as an implication** from the walk expansion of chi_Y A chi_Y (outline statement 5, not in this checkout), with the collar and l_P chosen after kappa-bar (Theorem VI).
+
+No counterexample to a consumed statement was found. Open: (H-walk), (H-ct), (H-prof), all outside A2 proper, and a cross-provider gate (Section 10).
 
 ## 1. What is consumed
 
@@ -18,7 +28,7 @@ A2 (SA 3835) asks for Re<B, E B> >= c||B||^2 on gauge-fixed fibres QB = 0, with 
 - **(C3) Signed layer profiles.** The exponent is -A(x_k(.), U) + ... with x_k(p) = beta - sum_{j<=k} b_j phi_j(p), phi_j in [0,1] (SA 6331-6343). The background is the regular critical point of the plain Wilson action (SA 9589), and the Gaussian of the step absorbs the quadratic part of -x_k A with the constant x_k (SA 7614, "the prime"). So the profile deviation x_k(p) - x_k stays in the exponent, as does the source shift zeta_k(.; w) of SA 22590, and "the part of the coupling that depends on position" is interpolated in the t_1-integral (SA 7460). Its quadratic part in B is the signed-profile perturbation.
 - **(C4) Counterterm arrays.** The bracket sum_j {E^(j) - b_j A(phi_j, .)} over the levels j <= k (SA 6338-6342, 7820, 7864). Without the subtraction of b_j A the bracket contains sum_{j<=k} b_j {A} ~ c_0 k {A} (the outline's own remark, SA 7864).
 
-Two consumers lie outside A's definition and are not treated here. One is the patch operation of SA 17645 (Balaban CMP 122 (1.71)), whose Gaussian carries the profile weights phi on both the action and the gauge term. The other is the seam node terms of GF (SA 7758-7761), which the outline assigns to the boundary exponent. They are listed in Section 9.
+Two consumers lie outside A's definition and are not treated here. One is the patch operation of SA 17645 (Balaban CMP 122 (1.71)), whose Gaussian carries the profile weights phi on both the action and the gauge term. The other is the seam node terms of GF (SA 7758-7761), which the outline assigns to the boundary exponent. They are listed in Section 10.
 
 ## 2. Counterexample tests (done before the proofs)
 
@@ -68,7 +78,7 @@ This closes the item "PX94-95 ... gauge identity, unchecked" of `a2-layers.md` �
 
 *Proof.* By definition (SA 10149-10153), G_1^{-1} = Delta^W + DRD^T + Q^T a Q - Delta'_pi[J] - S^T Delta^(2)[H^T J] S. At J = j_U, Lemma 3.2 and H^T j_U = omega give the first formula. Next, G_1^{-1} D G' R = S^T K_L (S D G' R) + D(R Delta_U G' R) + Q^T a D-bar(Q'G'R) = D R by Lemma 3.1, so G_1 D R = D G' R. Transposing, R D^T G_1 = R G' D^T. Then R D^T H_1 = R G' (QD)^T W_1^{-1} = (Q'G'R)^T D-bar^T W_1^{-1} = 0, and S H_1 = H_1. Finally H_1^T G_1^{-1} H_1 = W_1^{-1}, H_1^T DRD^T H_1 = ||R D^T H_1||^2 = 0 and H_1^T Q^T a Q H_1 = a, since Q H_1 = 1. Subtracting gives the last identity. ∎
 
-**Lemma 3.5 (the coarse value Hessian, PX97 and PX100).** Let A_eff(B) := S(A(B)) on the branch, with reduced datum b(B). Then dA(B)/dB at 0 is h_B = H_1 Db(0), and D^2 A_eff(0) = Db(0)^T (W_1^{-1} - a) Db(0) + <omega, D^2 b(0)>. On the active mask (level-k bonds touching Omega_{k+1}, injected by iota) PX100 holds (`a2-layers.md` 2.3, confirmed by `gates/a2-layers-gate.md` §6). So the coarse precision there is iota^T (W_1^{-1} - a) iota and the coarse current is iota^T H_1^T j_U = iota^T omega.
+**Lemma 3.5 (the coarse value Hessian, PX97 and PX100).** Let A_eff(B) := A(Phi(B)) = S(a(B)) on the branch, with reduced datum b(B). Then da/dB at 0 is h_B = H_1 Db(0), and D^2 A_eff(0) = Db(0)^T (W_1^{-1} - a) Db(0) + <omega, D^2 b(0)>. On the active mask (level-k bonds touching Omega_{k+1}, injected by iota) PX100 holds (`a2-layers.md` 2.3, confirmed by `gates/a2-layers-gate.md` §6). So the coarse precision there is iota^T (W_1^{-1} - a) iota and the coarse current is iota^T H_1^T j_U = iota^T omega.
 
 *Proof.* The background is Phi(B) = (e^{i eta a(B)}U)^{u_B} (`a3-derivative.md` (37)), and the action is gauge invariant, so A_eff(B) = S(a(B)). By Lemma 3.3, dA_eff = <grad S(a), a'> = <omega, K_a a'> = <omega, Db B'>. So the derivative is omega(B)^T Db(B), and D^2 A_eff(0) = omega'^T Db + <omega, D^2 b>. Differentiating stationarity at 0 gives K_L h = Q^T omega', with Q h = Db B' and R D^T h = 0 (the slice is linear). Then G_1^{-1} h = S^T K_L h + Q^T a Q h = Q^T(omega' + a Db B'), using S h = h and S^T Q^T = Q^T. So h = G_1 Q^T(omega' + a Db B'), and applying Q gives omega' = (W_1^{-1} - a) Db B' and h = H_1 Db B'. ∎
 
@@ -76,13 +86,13 @@ This closes the item "PX94-95 ... gauge identity, unchecked" of `a2-layers.md` �
 
 *Proof.* q_V(Phi_V(u)) = 0. Differentiating twice gives Dq_V(0) D^2 Phi_V(0)[u,v] + D^2 q_V(0)[C_V u, C_V v] = 0. Phi_V changes only pivot values beyond first order, so D^2 Phi_V(0)[u,v] = h_V z with z = -D^2 q_V(0)[C_V u, C_V v]. The chain rule gives D^2(F ∘ Phi_V)(0)[u,v] = <C_V u, D^2 F(0) C_V v> + <J-hat, h_V z>. ∎
 
-**Theorem I (identification).** At a physical pair, the Hessian in the free coordinates u of the step's exponent, D -> A(U_k(e^{iD}V)) + GF_k(e^{iD}V) restricted to the next fibre D = Phi_V(u), is
+**Theorem I (identification).** At a physical pair, consider the step's exponent D -> A_{Omega_0}(U_k(e^{iD}V)) + GF_k(e^{iD}V), restricted to the next fibre D = Phi_V(u). Here A_{Omega_0} = sum_{p in Omega_0} a_p is the inner action, the one for which the background is critical (SA 9612-9616). The remaining plaquettes of the exponent are P_bdry of Corollary IV.3. The Hessian in the free coordinates u of this exponent is
 
     C_V^T ( G^(2)_V + (Q G_1 Q^T)^{-1} - a - E_V^(2)[iota^T H_1^T j_U] ) C_V = A.
 
-Here G^(2)_V is the Hessian at D = 0 of D -> GF_k(e^{iD}V) (SA 7878: x_k GF_k(e^{i g_k B} V) = (1/2) sum |B(y,x)|^2 + O(g_k|B|^3)), and E^(2)[H_1^T J] of SA 10204 is read with the pivot transpose that PX103 requires. In B units (A_k = g_k B, x_k g_k^2 = 1) this is Delta^(k) of SA 7604, and the identification of SA 10208 and SA 14108-14120 holds. The same identity holds at every complex datum of the A1 polydisc, if the gauge representative is continued holomorphically from the block axial one.
+Here G^(2)_V is the Hessian at D = 0 of D -> GF_k(e^{iD}V) (SA 7878: x_k GF_k(e^{i g_k B} V) = (1/2) sum |B(y,x)|^2 + O(g_k|B|^3)), and E^(2)[H_1^T J] of SA 10204 is read with the pivot transpose that PX103 requires. In B units (A_k = g_k B, x_k g_k^2 = 1) this is Delta^(k) of SA 7604, and the identification of SA 10208 and SA 14108-14120 holds. The same identity holds at every complex datum of the A1 polydisc, if the representative is the outline's tower axial one relative to the real block axial reference (SA 7186: the contour variables of M^n U coincide with those of M^n U_0), continued holomorphically.
 
-*Proof.* Apply Lemma 3.6 to F = A_eff + GF. D^2 A_eff on the mask is iota^T(W_1^{-1} - a) iota (Lemma 3.5; PX105 gives raw = per-length at xi_k = 1), with gradient iota^T omega = iota^T H_1^T j_U. D^2 GF = G^(2)_V, and its gradient J-hat_GF vanishes at V(y,x) = 1 (Lemma 4.1(a)). W_1 = Q G_1 Q^T with G_1 at J = j_U is the operator of SA 10150, by Lemma 3.4. For complex data: the continued representative keeps V(y,x) = 1, since the axial condition is a holomorphic identity solved by a holomorphic gauge factor. Both sides are holomorphic on the polydisc: the left by A1, the right by `a2-layers.md` Theorem B at the regular complex pairs (U(B), J(U(B))) (SA 9801, the lemma of 1b.7). They agree on a real neighbourhood, where every real datum gives a physical pair. The identity theorem extends the equality. ∎
+*Proof.* Apply Lemma 3.6 to F = A_eff + GF. D^2 A_eff on the mask is iota^T(W_1^{-1} - a) iota (Lemma 3.5; PX105 gives raw = per-length at xi_k = 1), with gradient iota^T omega = iota^T H_1^T j_U. D^2 GF = G^(2)_V, and its gradient J-hat_GF vanishes at V(y,x) = 1 (Lemma 4.1(a)). W_1 = Q G_1 Q^T with G_1 at J = j_U is the operator of SA 10150, by Lemma 3.4. For complex data: in the tower axial gauge the contour variables of M^k U are those of the real reference, so V(y,x) = 1 persists. Both sides are holomorphic on the polydisc: the left by A1, the right by `a2-layers.md` Theorem B at the regular complex pairs (U(B), J(U(B))) (SA 9801, the lemma of 1b.7). They agree on a real neighbourhood, where every real datum gives a physical pair. The identity theorem extends the equality. ∎
 
 *Remark (Balaban's second expression).* H_1^T[G_1^{-1} - DRD^T - Q^T a Q]H_1 differs from (QG_1Q^T)^{-1} - a by -H_1^T D R D^T H_1 = -||R D^T H_1||^2, which is zero on shell by Lemma 3.4, as SA 10208 states.
 
@@ -118,11 +128,13 @@ This proves the a2-layers gate's "visible local repair" (`gates/a2-layers-gate.m
 
 So the bracket is >= c_L/2 if t <= c_L/(8(c_L + C_A)) and e <= c_L/10. The same holds after compression to any conditioning set. *Proof.* With z = <u, A_0 u>_H, Re(tau z) >= Re z - |tau - 1||z| >= (3/4) c_L ||u||^2 - t (C_A + c_L/4)||u||^2, and |<u, tau P u>| <= (1 + t) e ||u||^2. ∎
 
+*Variant.* If tau multiplies only the action part, so that the precision is C_V^T(G^(2)_V + tau Delta_k)C_V (t governs the gauge-fixing weight and x the action, SA 7864), apply Lemma 5.2 with tau = 1 and the extra perturbation (tau - 1)C_V^T Delta_k C_V. Its norm is at most t C_A, by the proof of Lemma 5.1. So t <= c_L/(20 C_A) suffices.
+
 Lemma 5.2 is the "relative Schur estimate" at the level where each perturbation actually enters: the coarse form on the free coordinates, in the counting norm in which A2 is stated (SA 3845). Fine-level perturbations, where any occur, pass to that level through `a2-curved.md` (7.1) (relative error e on the fine form gives 2e on the Schur complement, for e <= 1/4; gated). Test 2.1 shows the profile is not one of them. It also explains the complex coefficient ratio of SA 14196: |tau - 1| <= c(LM)^{-4} is far inside t <= c_L/(8(c_L + C_A)) once M is large.
 
 ## 6. Item (2), plaquette weights: signed layer profiles, sources and the boundary of Omega_0
 
-**Setting.** This is the pair of the step. U_0 = U_{k+1} is real and critical for the depth-k sequence with datum V_k^bg (SA 7461). Phi(B) is the A1 chart in the level-k datum B (counting units, xi_k = 1). Phi(B) = (e^{i eta a(B)}U_0)^{u_B}, with Landau potential a(B), holomorphic on the sup-norm polydisc P_{r_B} (`a3-derivative.md` Proposition 6.4). A complex datum V_{k+1} of the next step is a point B_0 of this polydisc, since V_k^bg depends holomorphically on V_{k+1}. **Input (T4):** (1b) Theorem 4, first paragraph (`a3-derivative.md` §7; gated, rows 85, 89, 98, 100, 101). For every B in P_{r_B} and every row c, h_c = d a/d B(c) satisfies xi_y|h_c|_y + xi_y^2|grad h_c|_y <= C_1 e^{-theta d_B(y, y_c)}, with theta = delta_0/8. Also |P_a - 1| <= C(kappa + r_B) eta^2 xi_p^{-2} at every plaquette of e^{i eta a(B)}U_0 (7.6 there), and |a|, |grad a| <= C r_B in local units.
+**Setting.** This is the pair of the step. U_0 = U_{k+1} is real and critical for the depth-k sequence with datum V_k^bg (SA 7461). Phi(B) is the A1 chart in the level-k datum B (counting units, xi_k = 1). Phi(B) = (e^{i eta a(B)}U_0)^{u_B}, with Landau potential a(B), holomorphic on the sup-norm polydisc P_{r_B} (`a3-derivative.md` Proposition 6.4). A complex datum V_{k+1} of the next step is a point B_0 of this polydisc, since V_k^bg depends holomorphically on V_{k+1}. **Input (T4):** (1b) Theorem 4, first paragraph (`a3-derivative.md` §7). It is gated as an implication (rows 85, 89, 98, 100, 101). At the pair of the step it also reads U_0 in Reg, which is discharged same-model in `a3-close.md` with its gate pending (row 106). For every B in P_{r_B} and every row c, h_c = d a/d B(c) satisfies xi_y|h_c|_y + xi_y^2|grad h_c|_y <= C_1 e^{-theta d_B(y, y_c)}, with theta = delta_0/8. Also |P_a - 1| <= C(kappa + r_B) eta^2 xi_p^{-2} at every plaquette of e^{i eta a(B)}U_0 (7.6 there), and |a|, |grad a| <= C r_B in local units.
 
 For a complex weight w on plaquettes (inner, or meeting Omega_0), put F_w(B) := sum_p w(p) A_p(Phi(B)), with A_p = 1 - (1/2) tr P_p. In the step's B-normalization, a term -sum_p (x(p) - x_k) A_p of the exponent has B-Hessian equal to that of F_w with w = (x(p) - x_k)/t, where t is the scaling number (t = x_k in the run, SA 7864). Its fibre Hessian is P_w := C_V^T D^2 F_w C_V - E_V^(2)[grad F_w] (Lemma 3.6). Let n(p) := k - j(p) be the depth of the layer of p.
 
@@ -187,10 +199,66 @@ With r_k ~ alpha_{1,k} = g_k C_1 (log g_k^{-2})^{q_1} (Balaban CMP 119 (2.28); t
 
     || chi (A(s) - A) chi || <= C_VI e^{2^4 kappa-bar} e^{-delta_0 w/4},
 
-with C_VI = C_VI(L, C_A'). So if w >= (4/delta_0)(2^4 kappa-bar + log(10 C_VI/c_L)), then Re <u, chi A(s) chi u>_H >= Re <u, chi A chi u>_H - (c_L/10)||u||^2 at every pair where the input holds. With Theorem II and Lemma 5.2 this is >= c_L/2 + c_L/20 at complex regular pairs, on every conditioning set. The same holds for A^full, since the gauge-gradient term is local (finite stencil on the mask) and carries no parameter.
+with C_VI = C_VI(L, C_A'). So if w >= (4/delta_0)(2^4 kappa-bar + log(20 C_VI/c_L)), then Re <u, chi A(s) chi u>_H >= Re <u, chi A chi u>_H - (c_L/20)||u||^2 at every pair where the input holds. With Theorem II this is >= (3/4 - 1/20) c_L at complex regular pairs, on every conditioning set. The same holds for A^full, since the gauge-gradient term is local (finite stencil on the mask) and carries no parameter.
 
 *Proof.* Only walks with P(omega) beyond the first 2^4 cubes contribute to A(s) - A, and for y, y' in Z_0 such a walk meets a parameter cube. Every tree admitted in d_B(omega; y, y') then passes through y and through a cell near that cube, so d_B(omega; y, y') >= w - C. Split e^{-delta_0 d_B(omega)} into three factors e^{-(delta_0/2)d_B(omega)} e^{-(delta_0/4)d_B(omega)} e^{-(delta_0/4)d_B(omega)}. Mechanism (i) with delta = delta_0/2 >= C kappa-bar/l_P bounds |s^omega| times the first factor by e^{2^4 kappa-bar}. The second is <= e^{-(delta_0/4)(w - C)}. Then |s^omega - 1| |A_omega(y,y')| <= 2 e^{2^4 kappa-bar} e^{-(delta_0/4)(w - C)} C_A' (C M_1^{-1/2})^{|omega|} e^{-(delta_0/4) d_B(omega; y, y')}. Sum over walks: for each first cell there are C^m walks of length m, so (C M_1^{-1/2})^m C^m is summable for M_1 large. Sum over y' with the remaining factor and d_B(y,y') <= d_B(omega; y, y'): the count of Theorem IV gives a constant. The Schur test finishes. ∎
 
-**Order of constants.** This is the outline's order (SA 10582). First L, and with it c_L, C_A, the rates theta and delta_0, and the ceilings on alpha_0, alpha_1, gamma_0 from Theorems A, B and II. Then M_1 and rho = R_1 M_1, with theta rho >= 64 log L and rho >= rho_IV(L). Then kappa-bar. Then l_P >= 2C kappa-bar/delta_0. Then M, which fixes the collar width w >= (4/delta_0)(2^4 kappa-bar + log(10 C_VI/c_L)); SA 14183 has the collar cost e^{C kappa-bar - cM}. Then the field strengths. Last, the coupling ceiling g_k <= g_*(L, M, R) of Corollary IV.1 and Theorem V, which is new. No constant chosen earlier depends on a later one.
+**Order of constants.** This is the outline's order (SA 10582). First L, and with it c_L, C_A, the rates theta and delta_0, and the ceilings on alpha_0, alpha_1, gamma_0 from Theorems A, B and II. Then M_1 and rho = R_1 M_1, with theta rho >= 64 log L and rho >= rho_IV(L). Then kappa-bar. Then l_P >= 2C kappa-bar/delta_0. Then M, which fixes the collar width w >= (4/delta_0)(2^4 kappa-bar + log(20 C_VI/c_L)); SA 14183 has the collar cost e^{C kappa-bar - cM}. Then the field strengths. Last, the coupling ceiling g_k <= g_*(L, M, R) of Corollary IV.1 and Theorem V, which is new. No constant chosen earlier depends on a later one.
 
 *Why the collar matters.* The proof uses w only through e^{-delta_0 w/4}, which must beat e^{2^4 kappa-bar}. With parameters next to the support, the s-dependent terms of chi A(s) chi include walks of length one, of size up to C_A'(C M_1^{-1/2}) M_1^{-1/2}, amplified by up to e^{2^4 kappa-bar}. The walk bounds then give no gap once e^{2^4 kappa-bar} M_1^{-1} is not small. Whether the gap actually fails there depends on the expansion chosen, so this is recorded as a limit of the method (test 2.4), not as a counterexample.
+
+## 9. Assembly: A2 in the scope its consumers read
+
+**Theorem A2-full.** Fix L >= L_0 and choose the constants in the order of Section 8. Let P be the pair of a step: real, or a point of its complex datum polydisc P_{r_B/2}, with the representative continued in the tower axial gauge (SA 7186), so that V(y,x) = 1. The consumed precision is
+
+    A_cons := C_V^T(G^(2)_V + tau Delta_k)C_V + t_1 (P_prof + P_src) + P_bdry + t_2 P_ct,
+
+with |tau - 1| <= c_L/(20 C_A) and |t_1|, |t_2| <= R. Assume the hypotheses of `a2-layers.md` Theorems A and B with the gate's repairs, the ceiling of Theorem II, (T4), (H-prof), the source bound of IV.2, (H-ct), rho >= rho_IV(L), and g_k <= g_*(L, M, R) such that
+
+    R C_IV (C_x + C_zeta) g_k^2 <= c_L/20,   C_IV(1 + rho) e^{-theta rho/32} <= c_L/20,   R C_V eps_ct (g_k/r_k)^2 <= c_L/20.
+
+Then Re <u, chi_Y A_cons chi_Y u>_H >= (c_L/2 + c_L/20)||u||^2 on every conditioning set Y. Under (H-walk), with the collar w >= (4/delta_0)(2^4 kappa-bar + log(20 C_VI/c_L)), the decoupled precision chi(A_cons - A + A(s))chi keeps Re >= (c_L/2)||u||^2 for all independent |s_Delta| <= e^{kappa-bar}. At every other complex regular pair, Re A^full(P) >= (3/4) c_L (Theorem II). At the pair of the step, Theorem I identifies C_V^T(G^(2)_V + Delta_k)C_V with the next-fibre Hessian of PX104.
+
+*Proof.* At the step's pair A^full = A (Lemma 4.1(a)), and Theorem II gives Re A >= (3/4) c_L, with ||A|| <= C_A + c_L/4 (Lemma 5.1). The coefficient ratio costs at most c_L/20 (Lemma 5.2, variant). Corollaries IV.1-IV.2, Corollary IV.3 and Theorem V cost at most c_L/20 each, by the three displayed ceilings. That is 4 c_L/20 in all, so Lemma 5.2 leaves (3/4 - 1/5) c_L = (c_L/2 + c_L/20). Theorem VI with this collar costs at most c_L/20 more. Compression to Y is `a2-curved.md` (2.1). ∎
+
+Here the perturbations P_prof, P_src, P_bdry, P_ct are taken undecoupled, as SA 14158-14190 decouples only A. A consumer that also decouples them needs the analogue of (H-walk) for them. The Schur bounds of §§6-7 then apply term by term.
+
+## 10. Verdict, what stays open, what changes
+
+| Item (row 109) | Verdict | Where | Reads |
+|---|---|---|---|
+| (1) A = consumed next-step Hessian at the pair of the step, PX93-PX104 | **proved** (finite-dimensional, every identity written; the gauge identity re-derived from BCH) | §3 Theorem I, Lemmas 3.1-3.6 | A1 (row 81); PX100 (gated in `gates/a2-layers-gate.md` §6); `a3-derivative.md` Lemma 6.2, Prop. 6.4 (gated) |
+| (1) the term -C_V^T E_V^(2)[J-hat_GF] C_V | **proved**: zero at V(y,x) = 1 (all physical pairs and their continuation); <= C_II alpha_1 at every complex regular pair; half-gap of A^full | §4 Lemma 4.1, Theorem II | `a2-layers.md` Theorem B; `a2-curved.md` §5 |
+| (2) signed layer profiles | **proved as an implication**, at the coarse level: ||P_prof|| <= C_IV C_x g_k^2 on the whole datum polydisc, complex weights included. The fine X-form route of the queue text is **refuted** (test 2.1) | §6 Lemma 6.1, Theorem IV, Cor. IV.1 | (T4) (gated; U_0 in Reg via row 103, gate row 106 pending); (H-prof), a reading of the profile placement (SA 6333, 17640), unchecked |
+| (2) boundary comparison (SA 10190), source profiles | **proved as an implication** (boundary: no new input; sources: given a bound on zeta_k) | Cor. IV.2, IV.3 | (T4); source lane for zeta_k |
+| (2) counterterm arrays | **proved as an implication** from the outline's polymer accounting; unsubtracted arrays and field-Cauchy routes **refuted** (test 2.2, §7) | §7 Theorem V | (H-ct): SA 7590, 7864, 1c.10, unchecked |
+| (2) relative Schur step | **proved** at the coarse level where the perturbations enter (Lemmas 5.1-5.2); `a2-curved.md` (7.1) remains for fine-level ones | §5 | `a2-layers.md` 5.4(c), 7.4 |
+| (3) enlarged complex decoupling arrays | **proved as an implication** from statement 5 for chi_Y A chi_Y, with the collar and l_P chosen after kappa-bar | §8 Theorem VI | (H-walk): statement 5 / 1c.8-1c.9, **not in this checkout** |
+
+**Defects found, ranked by what they break.**
+1. *The queue's route for item (2), a fine X-form bound plus the relative Schur estimate, is false for the signed profile* (test 2.1: the relative weight b k g_k^2 is unbounded across depth). It breaks nothing in the outline, which never puts the profile into the fine form. Any note that adds the profile to Delta^W must instead use Theorem IV.
+2. *SA 10204 needs the pivot transpose.* E^(2)[H_1^T J] must be read as E_V^(2)[iota^T H_1^T J] with h_V^T, as PX103 says. Without it the identification of SA 10208 is off by the difference of the two multipliers. Repair: the reading in Theorem I.
+3. *SA 10208 / 14111 assert the identification at P_W without a gauge clause.* At a complex pair off the axial locus it fails by -C_V^T E_V^(2)[J-hat_GF] C_V (test 2.3). Repair: Theorem I with the tower axial continuation, or A^full with Theorem II.
+4. *The PX93 "Ward identity" step* as written uses gauge directions with Q'lambda = 0. Those directions are not exactly invariant at A != 0 (§3, Lemma 3.3). The correct argument is `a3-derivative.md` Lemma 6.2, with node factors. The conclusion j_U = Q^T omega stands.
+
+No counterexample to a consumed statement was found.
+
+**What stays open, hardest first.**
+1. **(H-walk): statement 5 for chi_Y A chi_Y** at the regular pairs of the longer sequence (walk expansions with the (C M_1^{-1/2})^{|omega|} bound, holomorphic terms, real at real pairs, covariant). It is the only input of item (3), and an A3/(1c.8)-(1c.9) obligation, not A2. `a2-layers.md` §7.2 supplies the Combes-Thomas bounds it needs, but no walk expansion exists in this checkout.
+2. **(H-ct): the polymer form of the counterterm brackets in the fluctuation variable** with the irrelevant size (SA 7590, 7864; 1c.10). This is upstream RG accounting ((1d), (2a)), not A2.
+3. **(H-prof): the profile placement rule** (phi_i = 1 below the layer, 0 above, up to a fixed number of transition levels). It is short, but the outline leaves it to "the data" (SA 6333).
+4. Cross-provider gate of this note. Look hardest at Lemma 3.2 (signs of the BCH term), Lemma 6.1 (the double-difference Cauchy step and the use of (T4) at complex data), the layer-separation bound d_B(y,c) >= (rho/2)n(y) in Theorem IV, and Theorem VI's use of mechanism (i).
+5. Outside A's definition and not treated: the patch Gaussian of SA 17645 (Balaban CMP 122 (1.71); profile weights on the action and on the gauge term, degenerate where phi = 0), and the seam node terms of GF (SA 7758-7761, boundary exponent).
+
+**What changes for the lead (evidence only; no other file was edited).**
+- `sa-ledger.md` rank 2 (A2): once a cross-provider gate confirms §§3-8, A2 holds in the scope its consumers read, conditional only on (H-walk), (H-ct) and (H-prof), which belong to other ranks (A3 locality, RG accounting).
+- The non-Abelian, nonzero-current, layered, signed-profile and complex versions are then done. The identification of A with the step's Hessian is done, and the "enlarged-complex-domain" version reduces to statement 5.
+- `gates/a2-curved-gate.md` remark 2 and `a2-layers.md` §8.1 (PX94-95 gauge identity) are closed by Lemma 3.2. The exact identity G_1^{-1} = K of `a2-curved.md` §§10, 12 now holds, not only up to O(gamma_0).
+- `gates/a2-layers-gate.md` §7 "visible local repair" for the complex gauge term is proved (Theorem II), and its "Full A2 scope" obligation is discharged as far as A2 is concerned.
+- Item (2)'s route in the queue text should be corrected: profiles are compared at the coarse level, by (T4) decay, not in the fine X-form.
+
+**Moves:** `sa-ledger.md` rank 2 (A2), from separated layers to its full consumed scope.
+
+**Method.** Every step is a written argument; no computation, enumeration or numerics. No numerical job was run; the numeric lock was not needed. No subagent. Only this file was written.
+
+Credit, repeated for the parts used: the obligation, operators, physical diagram PX93-PX105, localized Gaussian comparison, profiles, step anatomy and walk mechanisms are due to Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text (`31a47c543775`). The background-field programme, separate currents, position-dependent couplings and decoupling parameters are T. Balaban's (CMP 102, 109, 116, 119). The layered operator estimates are Claude's `a2-layers.md` with Codex's gate repairs. The curved one-step and second-jet inputs are Codex's `a2-curved.md` with Claude's gate. The response bounds are the gated A3 chain (`a3-derivative.md`, `p82-curved.md`, `flat-port.md`, `a1-balaban.md`, with their gates).

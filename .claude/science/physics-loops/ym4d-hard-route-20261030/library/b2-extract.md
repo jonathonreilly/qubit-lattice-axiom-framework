@@ -4,9 +4,15 @@ lease_until: 2026-11-04T10:27Z
 # B2: the pointed quadratic cancellation (20) and the potential bound (19)
 
 Queue row 194, `b2-extract`. Pinned at commit 13424f9e2 on branch `claude/ym4d-hard-route`.
-Written by Claude (Opus 5.5, max effort) on the Mac mini worker. Work in progress; sections are added as they are written.
+Written by Claude (Opus 5.5, max effort) on the Mac mini worker, 2026-11-03. Research-stage working state; no status.
 
-Credit: the pointed Hessian argument rebuilt below is the outline's (Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text), `YM4_sketch_500.tex` at `31a47c543775`, Section "The Hessian of a pointed member and its own action counterterm" (SA 12889-13424, PH1-PH23), and Requirement B2 (SA 3936-3981). The mechanism of a counterterm fixed by the second moment of the localized Hessian, with gauge invariance killing the lower moments, is Balaban's, CMP 109 (1987) pp. 277-283, (3.34)-(3.36), (4.5)-(4.8).
+**Summary.**
+- *Check.* `b4-step.md` Section 10 (Codex) was checked line by line by Claude; first failing step none (Section 1).
+- *Theorem P (Section 3).* The outline's B2 rebuilt, proved by Claude and not yet checked by the other model. (20) holds at a base point z exactly when the prescribed coefficient equals the pointed second moment b_z. Gauge invariance, absolute moments, the hypercube about z and the affine response suffice. b_z equals the bulk extractor for every z under unit-translation covariance.
+- *Inputs.* The actual class supplies every input at fixed j (Section 4) except (R14): covariance of each old member's pointed totals under the hypercube about every base point and under unit translations. That is the first failing input. Examples 1-3 show it cannot be dropped (Section 5). Lemma R reduces it to (TI), invariance of the member's total (Section 6).
+- *(19).* (19) follows from (20) and further inputs (Proposition W, Section 7). Besides (20), its first open input is (ER8u) = (ER7), which also stops D1.
+
+Credit: the pointed Hessian argument rebuilt below is the outline's (Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text), `YM4_sketch_500.tex` at `31a47c543775`, Section "The Hessian of a pointed member and its own action counterterm" (SA 12889-13424, PH1-PH23), and Requirement B2 (SA 3936-3981). The underlying mechanism is Balaban's, CMP 109 (1987) Section 4, pp. 281-285: gauge-invariance (Ward-Takahashi) identities (4.7)-(4.15), which remove the linear term (4.14) and constrain the quadratic one; the exponential smallness of terms localised away from the cube (4.5); and the Hölder bound on the local derivative expansion (4.16)-(4.18). (3.34)-(3.36) give the analyticity domain. I read those pages in `~/ym4d-papers/cmp109.txt`.
 
 ## 1. Check of `b4-step.md` Section 10 (Codex): B1 for the intrinsic gas
 
@@ -135,7 +141,7 @@ where G is zero on sets that are not among its domains. Then:
 - (i) Ḡ satisfies (R14): Σ_{X∋hz} Ḡ(X, h·P, hz) = Σ_{X∋z} Ḡ(X, P, z) for every h ∈ 𝔊_N. So (H_z) holds at every z, and (Tr) holds.
 - (ii) ‖Ḡ‖_{j,κ} ≤ ‖G‖_{j,κ}, because d_j(gX) = d_j(X).
 - (iii) Each Ḡ(X, ·, z) reads the pair on X only. Gauge invariance, reality and holomorphy carry over.
-- (iv) If G's domains are unions of cubes of one M-grid, then Ḡ's domains are unions of cubes of the M⁴ offset grids. So the rooted count gains at most the factor M⁴.
+- (iv) If G's domains are unions of cubes of one M-grid, with the symmetry site on that grid and M dividing N, then Ḡ's domains are unions of cubes of the M⁴ offset grids. So the rooted count gains at most the factor M⁴.
 - (v) Σ_{X,z} Ḡ(X, P, z) = |𝔊_N|^{−1} Σ_g Tot_G(g^{−1}·P), where Tot_G := Σ_{X,z} G. This equals Tot_G(P) for all P exactly when (TI) holds: Tot_G(g·P) = Tot_G(P) for every g ∈ 𝔊_N.
 
 *Proof.* (i): substitute g = hg' and X = hX'; the sum over g' ∈ 𝔊_N is unchanged. (ii)-(iii): Ḡ is an average of |𝔊_N| terms, each bounded by ‖G‖ e^{−κd_j(X)} and reading only g^{−1}X. Block-constant maps are conjugated to block-constant maps by every g ∈ 𝔊_N. (iv): the hypercube about a grid point preserves the grid, so 𝔊_N maps the M-grid to its translates, and there are M⁴ of those. (v): exchange the finite sums. ∎
@@ -177,3 +183,29 @@ and the regular part of (19) holds with ω_n = C(1 + n)^{3/2} L^{−α_H(n−1)}
 The defect and aged-remainder terms of (19), C s_k Σ ρ_j²(d_j + r_j), need no counterterm (WF10). They read (ER8u) and (YA), and not (20).
 
 **First failing input for (19).** (19) reads (20), and through it (R14), which reduces to (TI). Besides (20), the first input of Proposition W that is not supplied is (ER8u), the uniform near-zero core inclusion. It reduces to the uniform complex tower estimate (ER7) (`d1-floor.md` 4c-4d). The checked A1 (9.2) gives a radius that shrinks with depth like L^{−(p−n)}. This is the same input that stops D1's (P3). (BX) is also open: `cond-c.md` 6.2 reads it and does not prove it. (UR) and (YA) are cited, not rebuilt here.
+
+## 8. Result
+
+**Check (Section 1).** `b4-step.md` Section 10 (Codex), B1 for the intrinsic gas: checked line by line by Claude, first failing step none. (15)-(18) and 10.1 ADVANCE as implications from (6), (14), the full-hull and heredity premises with [RT], and the order of `um-envelope.md` Section 5.
+
+**Proved here by Claude, not yet checked by the other model:**
+- **Theorem P.** The outline's B2 cancellation (SA PH1-PH23), rebuilt with the base point fixed. Under (D), (C), (G), (Mo) and (H_z), the pointed affine jet is (b_z/2) Σ_{μ<ν} ⟨F_{μν}, F_{μν}⟩. Under (AR), the own tent action's jet is (1/2) Σ ⟨F, F⟩. So (20) holds at z exactly when b = b_z. Under (Tr), b_z = b[G], the bulk extractor. All exchanges rest on the absolute moments (Mo), before any domain restriction. I found no error in the outline's PH6-PH23 as an implication. Translation covariance is needed only to make the coefficient common to all base points.
+- **The inputs at fixed j (Section 4).** (C), (G), (D), (Mo) and (AR) hold for the actual class at each fixed j, under the reading (Id) of the background as the augmented R3 branch. The sources are checked notes: `prefactor-loc.md` Lemmas A, B, D (c); `a1-balaban.md` (9.2) with `d1-floor.md` 4c; `carrier-adopt.md` Lemma L (c); `h-walk-fix.md` Theorem IC.
+- **Examples 1-3 (Section 5).** (H_z) and (Tr) cannot be dropped. The total does not fix a pointed coefficient (Example 2). The bulk extractor does not see the alternating jet (Example 3), so full reflections are necessary, as the outline says.
+- **Lemma R (Section 6).** Averaging over the finite symmetry group of a symmetric torus gives (R14) with the same norm, locality and gauge invariance. The rooted count gains a factor M⁴. The total is preserved exactly when (TI) holds.
+- **Proposition W (Section 7).** (19) for the regular members follows from (20), (ER8u), (BX), (UR), (YA) and the inputs already checked.
+
+**First failing input.**
+- For (20): (R14) for the actual old regular member, that is, covariance of its pointed totals under the hypercube about every base point and under unit translations (SA 5889-5898, 7581). Our chain supplies only grid isometries for single terms. Lemma R reduces (R14) to (TI), invariance of the member's unpointed total. (TI) is open; this is the second reduction, so the item stops here.
+- For (19), besides (20): (ER8u) = (ER7), the uniform complex tower estimate, which also stops D1's (P3). (BX) is also open.
+
+**What would change.** If (TI) holds, adopt Lemma R's re-pointing as the localisation rule. Then (20) holds for every old regular member, with the coefficient fixed by the total, and B4's (19) and WF7's retained premise reduce to (ER7) and (BX). If (TI) fails, the failure is a non-invariant part of the total. It would have to be filed as a scale-small non-covariant defect (SA 4007-4010) with its own bound, or (19) loses its age decay (Section 5).
+
+**Evidence for other owners (not edited here).**
+- `b4-step.md` Section 11: (20) is Theorem P plus (R14). The "extractor-to-tent identification" is Theorem P (b)-(d).
+- `wf7-bf.md` §3 and `cond-c.md` §6.1-6.2: their retained "pointed Hessian cancellation" is Theorem P under (R14).
+- `t0-skeleton.md` row B2: from "cited" to "implication proved (Theorem P, Claude, not yet checked); open: (R14) ⇐ (TI)".
+- `sa-ledger.md` rows PH17, PH18, PH23: rebuilt here; PH17 and PH23 need (H_z), and PH18's bulk form needs (Tr).
+- `h-walk-fix.md` §5 item 8 (i)-(ii): Lemma R is a mean over the torus symmetry group. Given (TI), it supplies both the unit translations and the non-axial isometries. The cost is a factor M⁴ in the domain count.
+
+**Numerics.** None were run. Every step is by hand.

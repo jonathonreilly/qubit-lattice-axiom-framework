@@ -3,7 +3,7 @@ lease_until: 2026-11-04T05:15Z
 
 # WF-c: complex box localisation, Landau node lift, pointed-core admission
 
-Row 173. Pinned at commit b264f9a3c. In progress; sections are written as they close.
+Row 173. Pinned at commit b264f9a3c. Finished 2026-11-03 (worker); research text, no status.
 
 Provenance: Claude Opus 5.5 (`claude-opus-5-5`), effort max, Mac mini worker, fresh session. Research text, not an audit; it grants no status. Outline: Sussman–Alpoge `YM4_sketch_500.tex` at `31a47c543775`; SA numbers are its lines. No numeric job was run.
 
@@ -93,7 +93,7 @@ So the step at which `b4-step.md` (4) stopped is not needed. There the factors a
 **Corollary CC.** In the setting of Lemma C put V_* := V^U[U] (real). Then V^U[𝐔] = e^{ib_U}V_* and V^J[𝐔] = e^{ib_J}V_*, with b_U, b_J holomorphic in w and real at real w, and:
 
 - b_U = b_J on old rows, so supp(b_U − b_J) lies in the collar rows;
-- ‖b_U‖_∞ ≤ C_C'‖w‖_*, ‖b_U − b_J‖_∞ ≤ 6C_C(κ + ‖w‖_*), and |∂(b_U − b_J)[h]| ≤ 6C_C for ‖h‖_* ≤ 1, ‖w‖_* ≤ r_C/2;
+- ‖b_U‖_∞ ≤ C_C'‖w‖_*, ‖b_U − b_J‖_∞ ≤ 6C_C(κ + ‖w‖_*), and |∂(b_U − b_J)[h]| ≤ C_C'' for ‖h‖_* ≤ 1, ‖w‖_* ≤ r_C/2 (chain rule, with Lemma C(d) and the Lipschitz bound of the logarithm near 1);
 - V_* is a real C_*κ-regular datum for B'. Indeed U^{G[U]}|_W is real, and its curvature in B'-local units is at most κ, since ξ' ≤ l. The converse bound of SA Theorem 1 (`a1-balaban.md` 9.2) then applies.
 
 *Proof.* On old rows, [AV] gives b_U = b_J = β_q(c), |β_q(c)| ≤ 2L‖w‖_*. On collar rows, V^U[𝐔](b) is the left-perturbed unitary product of Step 5 without its last factor, so b_U(b) is its logarithm relative to V_*(b), of size at most C‖w‖_*. Next b_J = (1/i)log(Q[𝐔]^{−1}e^{ib_U}). The function X ↦ log(e^{−X}e^{ib}) − ib vanishes at X = 0 and is holomorphic for ‖X‖, ‖b‖ ≤ 1/4, so it is at most 3‖X‖ for ‖X‖ ≤ 1/8. With ‖log Q‖ ≤ 2|Q − 1|, Lemma C(c)–(d) give the bounds. □
@@ -133,7 +133,7 @@ with f and w holomorphic in β, f real and w unitary at real β, and the followi
 
 - (i) Over every top y of B', ξ'_y|f| + ξ'²_y|∇f| + ξ'³_y|D^*Df| ≤ C_μ(ε_1 + ‖β‖_∞) e^{−θ d_B(y,W^c)}.
 - (ii) Current. At every bond b whose six plaquettes lie in W, J(Φ(β))(b) = Ad(w(b_−))(J(U°_W(β))(b) + δJ(b)), with ξ'³_b|δJ(b)| ≤ the bound in (i).
-- (iii) Gauge. At every site x of an interior pillar, |w(x) − 1| ≤ C_μ(ε_1 + ‖β‖_∞) e^{−θ d_B(x,W^c)}. At every site of W, |w^{±1}| ≤ e^{C(ε_1+‖β‖_∞)} times a unitary.
+- (iii) Gauge. At every site x of an interior pillar, |w(x) − 1| ≤ C_μ(ε_1 + ‖β‖_∞) e^{−θ d_B(x,W^c)}. At every site of W, |w|·|w^{−1}| ≤ e^{C‖β‖_∞}. At real β, w is unitary but need not be near 1 in the collar, as SA allows.
 
 *Proof.* Let U'_* := Φ'(0) = U°_W(0). It is real, regular and critical by P81, and Φ'(b) = (e^{iη𝓗'(b)}U'_*)^{u'(b)} (Proposition 6.4 for B'). Write 𝓗'_U = 𝓗'(b_U), 𝓗'_J = 𝓗'(β^J), and the same for u'.
 
@@ -197,28 +197,31 @@ No failure.
 
 Hence (10.2) on this route consists of two statements: (A1) the input curve 𝐔_{t,ν} has the hypotheses of Lemmas N and E, and (A2) the inner triple lies in its core with margin.
 
-**Theorem A (implication; proved by Claude, not yet checked by the other model).** Let P be a pair of the step's local core at half radii (α_0/2, α_1/2), including its □_0-tower clause at radius α_0/2. Assume [PW] (`pw-bridge.md`, `dec-field.md` (5.2)), (LD) (`ld-decoupled.md`, checked in Section 1), (O1) (`o1-decoupled.md` Theorem B), Theorem L and Corollary R of `wf-room-2.md`, Lemmas N and E there, and Theorem I with the order of constants of `o1-decoupled.md` 4.5. There is c_A > 0, depending on L, ρ, M and the fixed constants and not on j, k, the depth or the volume, such that the following hold if s_k < c_ν/2 and c_ν ≤ c_A. Every |s_Δ| < e^{κ̄}, independent current, 0 ≤ t ≤ 1 and |ν| < c_ν/s_k is covered.
+**Theorem A (implication; proved by Claude, not yet checked by the other model).** Let P be a pair of the step's local core at half radii (α_0/2, α_1/2), including its □_0-tower clause at radius α_0/2. Assume [PW] (`pw-bridge.md`, `dec-field.md` (5.2)), (LD) (`ld-decoupled.md`, checked in Section 1), (O1) (`o1-decoupled.md` Theorem B), Theorem L and Corollary R of `wf-room-2.md`, Lemmas N and E there, and Theorem I with the order of constants of `o1-decoupled.md` 4.5. Use the radius convention α_k ≤ C_αα_{0,k} stated in the proof. There is c_A > 0, depending on L, ρ, M, C_α and the fixed constants and not on j, k, the depth or the volume, such that the following hold if s_k < c_ν/2 and c_ν ≤ c_A. Every |s_Δ| < e^{κ̄}, independent current, 0 ≤ t ≤ 1 and |ν| < c_ν/s_k is covered.
 
 - (A1) 𝐔_{t,ν} satisfies the simple conditions (R4) of its level, at the full radii (α_0, α_1), on a cube of side C_boxLM containing R_z. Here the level is k+1 at top-layer base points, and the local layer p at lower-layer base points in ambient local units. The same holds for the real-gauge clause and the □_0-tower clause at radius α_0. The current of the outer pair, 𝐉 + 𝗃 by (6.1) of `wf-room-2.md`, also satisfies its clause, although the inner substitution does not read it.
-- (A2) P_in(B_{t,ν}) ∈ U°_j(X; α_{0,j}, α_{1,j}, α_{0,j}), with every simple and every hereditary clause at most 1/2 of its radius.
+- (A2) P_in(B_{t,ν}) ∈ U°_j(X; α_{0,j}, α_{1,j}, α_{0,j}). Every simple and every hereditary clause is at most 4/5 of its radius, and at most 1/2 when the age m := ℓ(z) − j is at least 1. Here ℓ(z) is the level of Rule W's partition at z: k at (W1), p − 1 at (W2), j at (W3).
 
 *Proof of (A1).* Write h := (η_k/η)(t+νζ)𝐇_k. Then |t + νζ|δ_k ≤ δ_k + c_να_k ≤ (s_k + c_ν)α_k, since δ_k = s_kα_k. [PW] gives ξ_y|h| + ξ_y²|∇h| ≤ C(s_k + c_ν)α_k at top-layer points. In layer p, (LD) and its weighted form (6) give the factor e^{−θ_L(k−p−1)_+}. Each clause then moves by at most the following, in units of its radius:
 
 - *real-factor curvature and real-gauge clause:* 0. The shift enters A' only; U is unchanged.
-- *curvature of 𝐔:* the plaquette expansion (P2) gives |∂(e^{iηh}𝐔) − ∂𝐔| ≤ C(ξ²|∇h| + ξ|h|(ξ|A'| + ξ|h|) + ξ|h|α_0)η²ξ^{−2}. This is ≤ C(s_k + c_ν)α_kη²ξ^{−2}, which is at most C'(s_k + c_ν) times the radius α_0η²ξ^{−2}, since α_k ≤ Cα_0 at adjacent levels.
+- *curvature of 𝐔:* the plaquette expansion (P2) gives |∂(e^{iηh}𝐔) − ∂𝐔| ≤ C(ξ²|∇h| + ξ|h|(ξ|A'| + ξ|h|) + ξ|h|α_0)η²ξ^{−2}. This is ≤ C(s_k + c_ν)α_kη²ξ^{−2}, which is at most CC_α(s_k + c_ν) times the radius α_0η²ξ^{−2}. *Radius convention used here:* α_k ≤ C_αα_{0,k}, with C_α fixed before the radii. This holds if WF1's "analytic field radius" is the curvature-type radius, as SA 5(c) measures the response (|𝐀| < cα_{0,k}). It also holds if α_k = α_{1,k} with α_1 ≤ C_αα_0, for example α_1 = C'Mα_0, which the relation Mα_0 ≪ α_1 permits. If instead α_1 ~ √α_0 were taken, this line would need s_k + c_ν ≤ cα_0/α_1, and c_ν would shrink with the radii.
 - *|A'|, |∇_UA'|:* A' ↦ A' ⊞ h moves them by at most C(ξ|h| + ξ²|∇h|) ≤ C(s_k + c_ν)α_1.
 - *current:* (6.4) of `wf-room-2.md` with (O1) from Theorem B gives ‖𝗃‖_F ≤ CC_H(1 + C_Hα_0)‖𝐇_k‖_X|t+νζ| ≤ C(s_k + c_ν)α_0.
 - *tower clauses (□_0 at level k+1, and every hereditary clause):* Theorem L(b) bounds the change of every tower quantity by 2C_b sup‖h‖_{1,y}. In layered position, Corollary R gives the change with premise (i) from `ld-decoupled.md` (5) (rate γ_H = τ_L/16 from the step-data set E) and premise (ii) from BC (`ld-decoupled.md` (3)). Its ratio to the shrinking gap β_s2^{−n} is at most (C'/β_s)(s_k + c_ν) once γc_gML ≥ log 4.
 
-So every clause moves by at most C_A(s_k + c_ν) ≤ 2C_Ac_ν of its radius. Choose c_A with 2C_Ac_A ≤ 1/2. Each clause of P is at most 1/2 of its radius (input), so by the triangle inequality each clause of 𝐔_{t,ν} is below its full radius. This is (BGR32) with X_0 = P and ε_a = 1/2. The bound is uniform in s and 𝐉, because [PW], (LD), (O1) and (6.4) are.
+So every clause moves by at most C_A(s_k + c_ν) ≤ 2C_Ac_ν of its radius. Choose c_A with 2C_Ac_A ≤ 1/8. Each clause of P is at most 1/2 of its radius (input), so by the triangle inequality each clause of 𝐔_{t,ν} is at most 5/8 of its full radius. This is (BGR32) with X_0 = P and ε_a = 3/8. The bound is uniform in s and 𝐉, because [PW], (LD), (O1) and (6.4) are.
 
 *Proof of (A2).*
 
-- (A1) is the hypothesis of Lemma N, with level k+1 or the local layer p. In the layered case, the box meets the layers p−1, p, p+1, and the axial flux count changes by at most L². This fixed factor is absorbed in C_B. Lemma N gives the node-reduced datum with ‖B_{t,ν}‖ ≤ C_BMα_0τ, τ = ξ_j/ξ_{k+1} (or ξ_j/ξ_p), and |v||v^{−1}| ≤ e^{CMα_1}.
-- Lemma E with the tower clause of (A1) at radius a ≤ α_0 ≤ λ_aα_{0,k} gives ‖f(B_{t,ν})‖ ≤ (1+β)aτ².
-- Apply Theorem I with B = B_{t,ν} (ς = 1, B' = 0). By `o1-decoupled.md` 4.5 with L² ≥ 6√2λ_a and β = 1/8, e^{C_g sup|B|}|φ|_X ≤ (9/8)(5/4)aτ² ≤ (9/8)(5/4)(1/3)α_{0,j} < α_{0,j}/2. Also C_𝓗 sup|B| ≤ 2C_𝓗C_BMλ_aL^{−1}α_{0,j} < α_{1,j}/2, under the radius relation Mα_0 ≪ α_1 (SA 9911; `o1-decoupled.md` defect 4).
-- Theorem I then gives the simple clauses (R4) of P_in, and every (R6) clause at every Z ⊂ X, p ≤ j, n ≤ p and both rules, each below 1/2 of its radius. The conversion factors L^{j−p} and L^{2j−p−n} only help.
-- The bound holds at every point of the disc, so the analytic curve stays in the core, and Cauchy's inequality in ν has its fixed fraction of room (SA 15862–15864). Young ages need no separate whole-core step on this route. §4.5 holds for every m = k+1−j ≥ 1, and Lemma N's datum bound C_BMα_0τ ≤ C_BMα_0 lies in the chart once CMα_0 < r_B/2. □
+- (A1) is the hypothesis of Lemma N at the level ℓ = ℓ(z). R_z is a π_ℓ-cube enlarged by a ≤ 2L − 2 cubes (Rule W). So its side is at most 4LMξ_ℓ, within the real-gauge clause (C_box ≥ 4). Its local scales are at least ξ_ℓ: at (W2), R_z ⊂ Ω_{p−1} meets the layers p−1, p, p+1. So the curvature and real-gauge bounds in level-ℓ units follow from those in ambient units, because ξ_ℓ ≤ l. Lemma N gives the node-reduced datum with ‖B_{t,ν}‖ ≤ C_BMα_{0,ℓ}τ, τ = ξ_j/ξ_ℓ = L^{−m}, and |v||v^{−1}| ≤ e^{CMα_1}.
+- Lemma E with the R_z-tower clause of (A1) gives ‖f(B_{t,ν})‖ ≤ (1+β)aτ², with a ≤ (5/8)α_{0,ℓ}. There is no B' term here, so `wf-room.md` (7.1) is not needed and |φ|_X ≤ (1+β)aτ².
+- Apply Theorem I with B = B_{t,ν} (ς = 1, B' = 0), β = 1/8 and the ceiling e^{C_g sup|B|} ≤ 1 + β of `o1-decoupled.md` 4.5. This gives e^{C_g sup|B|}|φ|_X ≤ (81/64)(5/8)α_{0,ℓ}τ².
+  - For m ≥ 1, the slow-radius bound α_{0,ℓ}τ² ≤ 2(1+m)^{1/2}L^{−2m}α_{0,j} (4.5) and L² ≥ 4 give at most (81/64)(5/8)·2√2L^{−2}α_{0,j} < α_{0,j}/2.
+  - For m = 0 (W3, and W2 with j = p − 1), τ = 1 and α_{0,ℓ} = α_{0,j}, so the bound is (405/512)α_{0,j} < (4/5)α_{0,j}.
+  - Also C_𝓗 sup|B| ≤ C_𝓗C_BMα_{0,ℓ}τ < α_{1,j}/2, under the radius relation Mα_0 ≪ α_1 (SA 9911; `o1-decoupled.md` defect 4).
+- Theorem I then gives the simple clauses (R4) of P_in, and every (R6) clause at every Z ⊂ X, p ≤ j, n ≤ p and both rules, each below the same fraction of its radius. The conversion factors L^{j−p} and L^{2j−p−n} only help.
+- The bound holds at every point of the disc, so the analytic curve stays in the core, and Cauchy's inequality in ν has its fixed fraction of room (SA 15862–15864). At the young age m = 0 the margin comes from the half-radius input, not from τ. This is the same room SA 15829–15831 reserves for those ages, and no half-datum-ball step is used. Lemma N's datum bound C_BMα_0τ ≤ C_BMα_0 lies in the chart once CMα_0 < r_B/2. □
 
 **What (10.2) still leaves, honestly.**
 
@@ -226,3 +229,44 @@ So every clause moves by at most C_A(s_k + c_ν) ≤ 2C_Ac_ν of its radius. Cho
 - (A1) assumes the step's input pair lies in the half-radius core, the hypothesis (R5)–(R6) puts on the class. It is not a new obligation of this note.
 - Theorem A reads Lemma E's tower-clause input at the local layer. In the layered position Corollary R supplies it, with its shrinking gaps β_s2^{−n}.
 - These are implications from the named inputs. Of those inputs, (LD) was checked here (Section 1). Theorem B, Theorem L, Corollary R, Lemmas N and E, and Theorem I carry their own check status, as recorded in their files.
+
+## 5. Standing, what changes elsewhere, what stays open
+
+| Statement | Result | Where | Reads |
+|---|---|---|---|
+| (LD) of `ld-decoupled.md` (Codex) | **checked line by line by Claude, first failing step none** | Section 1 | [PW], [NL], AV, BC |
+| Lemma C, complex collar datum | proved by Claude, not yet checked by the other model | 2.2 | [AV], [PA], [CR], [FM] |
+| Corollary CC, common collar chart = `b4-step.md` (2) | proved by Claude, not yet checked | 2.3 | Lemma C, SA Theorem 1 converse |
+| Lemma RC, restriction at complex data | proved by Claude, not yet checked | 2.4 | [9.3], [AX], P81, identity theorem |
+| Theorem 6c^C, SA 6(c) at complex data: field, gradient, D^*D, current, gauge; WF form = compatible boundary comparison | proved by Claude, not yet checked; implication | 2.5 | the above, T4/P82° for B, B' (or the box tower), (G1)–(G3) |
+| Proposition N (a), (b): (H-node) for axial representatives with common nodes, and for Landau representatives over one reference | proved by Claude, not yet checked | 3 | Theorem 6c^C, T4, Lemma D(i) |
+| Proposition N (c): Landau representatives over two references | **open**, reduced to (SC); off the box-first path | 3 | (SC) |
+| Theorem A, (10.2) on the box-first route: input room (A1), inner admission (A2) | proved by Claude, not yet checked; implication | 4 | [PW], (LD), (O1), Theorem L, Corollary R, Lemmas N, E, Theorem I, radius convention α_k ≤ C_αα_{0,k} |
+
+**What changes elsewhere (for the lead to forward; no other file edited).**
+
+1. `b4-step.md` Section 3 and its Result. Its first unproved input, the common collar chart (2), is Corollary CC. Its consequence (3) is Theorem 6c^C. The core admission it asks for is Theorem A (A2). The stop in (4) is bypassed: no complex transport is telescoped. B4 can resume at the B1 majorant and the finer derivatives (row 172, "resume after row 173").
+2. `t0-skeleton.md`, node WF-c. (1) is proved as an implication (Theorem 6c^C). (2) is proved for the representatives the adopted route uses (Proposition N (a), (b)), and the remaining case (c) is off-path. (3) is proved on the box-first route (Theorem A). Rank 4's last node is therefore closed as an implication, pending one check by Codex of Sections 2–4.
+3. `ref-chart.md` 9e, Lemma 6c^C. Theorem 6c^C is that lemma in setting (1b). It carries out the gate's visible repair in order: the collar gauge is normalised first (G[𝐔], Lemma C), then b_U(β) is defined, then the identity theorem is applied on the common domain (Lemma RC). `pre-213.md` Theorem P no longer needs it, so this changes no consumer of (Pre).
+4. `o1-decoupled.md` Section 5, items 2 and 3. Item 2 is Theorem 6c^C with Remark (3). Its worry that a two-constants argument misses ξ²|∇X| does not arise, since the proof is direct rather than by real-slice transfer. Item 3 is Proposition N (a), (b), with (c) recorded as off-path.
+5. `a3-close.md` Section 2, "Open" item 1 (simple conditions along the actual curves). On the box-first route this is Theorem A. The outline's outer and removed curves are not formed there.
+
+**Open, hardest first.**
+
+1. One check of Sections 2–4 by Codex (FINISH, How we work 5).
+2. (SC), only if a consumer of Proposition N (c) reappears.
+3. The radius convention α_k ≤ C_αα_{0,k} (Theorem A) is a reading of SA (WF1) and 5(c). If the outline intends α_1 ~ √α_0, c_ν would shrink with the radii, and the room argument of SA (WF6) would change. This is a question for the lead about the adopted radius rule, not a new obligation.
+
+**Method.** All steps are written by hand. No numeric job was run, and none was needed. Sources read: SA 5655–5720, 9755–9800, 10185–10200, 12140–12175, 12290–12380, 15700–15965, 16826–16860 (outline at `31a47c543775`, fetched once by URL into a private scratch folder, SHA-256 `d7f77d4d…`, the same file as earlier rows). Library: `ld-decoupled.md`, `b4-step.md` (in full); `o1-decoupled.md` 0–5; `a3-derivative.md` 1–3, 6–10; `wf-room-2.md` 0–1, 4–7; `cond-c.md` 2, 6.4; `wf7-bf.md` 2–3; `wf7-extension.md` 3–4; `removed-fix.md` 3, 7; `pw-bridge.md` 6; `nl-r9.md` 6; `dec-field.md` 5; `a1-balaban.md` 9, 10; `a3-close.md` 2; `pre-213.md` 2–3; `ref-chart.md` 9e; `geo-5.md` 3.6. Gates: `removed-fix-gate.md`, and the 6(c) and (H-node) lines of the o1-decoupled, pw-bridge and dec-field gates.
+
+## Result
+
+(LD) of `ld-decoupled.md` was checked line by line by Claude, first failing step none.
+
+Items (1) and (3) of row 173 are proved by Claude as implications, not yet checked by the other model:
+
+- Lemma C (the complex collar datum stays within C(κ + ‖w‖_*) of the lift, uniformly in depth) gives `b4-step.md`'s common collar chart (2).
+- With Lemma RC, it gives SA 6(c) at complex data with every member (Theorem 6c^C). This covers decoupling parameters and independent currents, which enter only through 𝐇_k.
+- Theorem A gives pointed-core admission (10.2) on the box-first route.
+
+Item (2), (H-node), is proved for axial representatives with common nodes and for Landau representatives over one reference, which are the cases the adopted route reads. The case of Landau representatives over two different references stays open, reduced to the scalar-sector comparison (SC), and is off the critical path.

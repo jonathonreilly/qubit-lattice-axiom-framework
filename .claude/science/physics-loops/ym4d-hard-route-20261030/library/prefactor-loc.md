@@ -169,33 +169,33 @@ Proof. Work in level-(k−1) units. Level-k sites sit at L Z^4, and the level-k 
 
 *Step 1: π̂(q) = O(|q|²).* Differentiate (W) at q = 0, using ĝ(0) = 0, ∂_κ ĝ_ν(0) = i δ_{κν} and ∂_κ∂_λ ĝ(0) = 0. Once: i π̂_{μκ}(0) = 0, so π̂(0) = 0. Twice: ∂_κ π̂_{μλ}(0) + ∂_λ π̂_{μκ}(0) = 0. So the first moment M_{μν,κ} := Σ_u π_{μν}(u) u_κ is antisymmetric in (ν, κ). By (Sy) it is antisymmetric in (μ, ν). So it is totally antisymmetric. Under the reflection of coordinate ρ, a bond field transforms by B_μ(x̃) ↦ s_μ B_μ(r x̃), with s_ρ = −1 and s_μ = 1 otherwise. (Re) gives M_{μν,κ} = s_μ s_ν s_κ M_{μν,κ}. For distinct μ, ν, κ take ρ = κ: then M = −M. So M = 0 and ∇π̂(0) = 0.
 
-*Step 2: the composite symbol.* Fix ν and K in a small complex ball. Let w^{K,ν} := R(e_ν e^{iK·X̃}), the image of the level-k plane wave in direction ν. By covariance, w^{K,ν}(x̃ + L e) = e^{iK·e} w^{K,ν}(x̃) for e ∈ Z^4. Put N := {−(L−1)/2, …, (L−1)/2}^4, k_n := (K + 2πn)/L and C := {0, …, L−1}^4. Then
+*Step 2: the composite symbol.* Fix ν and K in a small complex ball. Let w^{K,ν} := R(e_ν e^{iK·X̃}), the image of the level-k plane wave in direction ν. By covariance, w^{K,ν}(x̃ + L e) = e^{iK·e} w^{K,ν}(x̃) for e ∈ Z^4. Put Z_L := {−(L−1)/2, …, (L−1)/2}^4 (symmetric, since L is odd) and k_n := (K + 2πn)/L. With Λ_L = {0, …, L−1}^4 as in (R-i),
 
-w^{K,ν}_μ(x̃) = Σ_{n∈N} ρ_{μν}(K, n) e^{i k_n·x̃},  ρ_{μν}(K, n) = L^{−4} Σ_{x∈C} w^{K,ν}_μ(x̃) e^{−i k_n·x̃}.
+w^{K,ν}_μ(x̃) = Σ_{n∈Z_L} ρ_{μν}(K, n) e^{i k_n·x̃},  ρ_{μν}(K, n) = L^{−4} Σ_{x∈Λ_L} w^{K,ν}_μ(x̃) e^{−i k_n·x̃}.
 
-The ρ are analytic in K, by the exponential decay of R. Put τ(q) := Σ_x R(x̃; 0) e^{iq·x̃}, the kernel to the level-k bonds at X = 0. Covariance, R(x̃ + L X; X) = R(x̃; 0), gives two facts. First, ρ(K, n) = L^{−4} τ(−k_n) Ph(K), with Ph(K) := diag(e^{iK_ν/2}). Second, R^T maps a fine plane wave α e^{i k_n·x̃} to e^{iK·X} τ(k_n)^T α, since e^{i k_n·L X} = e^{iK·X}. Apply R^T Π R to the plane wave and compare with π̂^c(K) e^{iK·X̃}. Since −k_n(K) = k_{−n}(−K), we have τ(k_n)^T = L^4 Ph(K) ρ(−K, −n)^T, and the phases cancel:
+The ρ are analytic in K, by the exponential decay of R. Write R(x̃; X) for the kernel from the level-k bonds at X to the fine bond at x̃, and put σ(q) := Σ_x R(x̃; 0) e^{iq·x̃}. Covariance, R(x̃ + L X; X) = R(x̃; 0), gives two facts. First, ρ(K, n) = L^{−4} σ(−k_n) Ph(K), with Ph(K) := diag(e^{iK_ν/2}). Second, R^T maps a fine plane wave a e^{i k_n·x̃} to e^{iK·X} σ(k_n)^T a, since e^{i k_n·L X} = e^{iK·X}. Apply R^T Π R to the plane wave and compare with π̂^c(K) e^{iK·X̃}. Since −k_n(K) = k_{−n}(−K), we have σ(k_n)^T = L^4 Ph(K) ρ(−K, −n)^T, and the phases cancel:
 
-π̂^c(K) = L^4 Σ_{n∈N} ρ(−K, −n)^T π̂(k_n) ρ(K, n).  (6.2)
+π̂^c(K) = L^4 Σ_{n∈Z_L} ρ(−K, −n)^T π̂(k_n) ρ(K, n).  (6.2)
 
 For real K, ρ(−K, −n)^T = ρ(K, n)^†.
 
 *Step 3: the term n = 0.* ρ_{μν}(0, 0) is the cell average of (R e_ν)_μ, which is δ_{μν}/L by (R-i). So ρ(±K, 0) = L^{−1} + O(|K|). By Step 1, π̂(K/L) = O(|K|²). So the n = 0 term of (6.2) is L^4 · L^{−2} π̂(K/L) + O(|K|³).
 
-*Step 4: the terms n ≠ 0.* For a fine plane wave α e^{iq·x̃}, the curl on the plaquette (x; μ, λ), with centre p̃ = x + (e_μ + e_λ)/2, is
+*Step 4: the terms n ≠ 0.* For a fine plane wave a e^{iq·x̃}, the curl on the plaquette (x; μ, λ), with centre p̃ = x + (e_μ + e_λ)/2, is
 
-(ĝ_μ(q) α_λ − ĝ_λ(q) α_μ) e^{iq·p̃} =: (ĝ(q) ∧ α)_{μλ} e^{iq·p̃}.
+(ĝ_μ(q) a_λ − ĝ_λ(q) a_μ) e^{iq·p̃} =: (ĝ(q) ∧ a)_{μλ} e^{iq·p̃}.
 
-So the curl Ω^K := d w^{K,ν} has modes ĝ(k_n) ∧ ρ_{·ν}(K, n), and ĝ(k_n) ∧ ρ_{·ν}(K, n) = L^{−4} Σ_{x∈C} Ω^K(p̃) e^{−i k_n·p̃}. Expand in K at fixed p, uniformly over the bounded set p ∈ C:
+So the curl Ω^K := d w^{K,ν} has modes ĝ(k_n) ∧ ρ_{·ν}(K, n), and ĝ(k_n) ∧ ρ_{·ν}(K, n) = L^{−4} Σ_{x∈Λ_L} Ω^K(p̃) e^{−i k_n·p̃}. Expand in K at fixed p, uniformly over the bounded set of plaquettes based in Λ_L:
 
 Ω^K = d(R e_ν) + i Σ_κ K_κ d(R(X̃_κ e_ν)) + O(|K|²).
 
 Here ∂_{K_κ} w^{K,ν} = i R(X̃_κ e_ν) at K = 0, by differentiation under the absolutely convergent sum. By (R-ii) both curls are constant 2-forms, ω_0 and ω_κ. Moreover ω_0 = 0: R e_ν is L-periodic, and the sum of the curl of a periodic field over a period cell telescopes to zero. Hence
 
-ĝ(k_n) ∧ ρ_{·ν}(K, n) = i Σ_κ K_κ ω_κ · L^{−4} Σ_{x∈C} e^{−i k_n·p̃} + O(|K|²).
+ĝ(k_n) ∧ ρ_{·ν}(K, n) = i Σ_κ K_κ ω_κ · L^{−4} Σ_{x∈Λ_L} e^{−i k_n·p̃} + O(|K|²).
 
 For n ≠ 0 the last sum is zero at K = 0 (a nontrivial character of Z^4/LZ^4, times a constant phase) and analytic, so it is O(|K|). Therefore ĝ(k_n) ∧ ρ_{·ν}(K, n) = O(|K|²).
 
-Now pick α with n_α ≠ 0. Then |π n_α / L| ∈ [π/L, π/2), so ĝ_α(k_n) = 2i sin((K_α + 2π n_α)/(2L)) is analytic and nonzero near K = 0. Put φ(K) := ρ_{αν}(K, n)/ĝ_α(k_n). For each λ, ρ_{λν} − ĝ_λ φ = (ĝ ∧ ρ)_{αλ}/ĝ_α = O(|K|²). So ρ_{·ν}(K, n) = ĝ(k_n) φ(K) + O(|K|²). The same holds for ρ(−K, −n), with ĝ(k_{−n}(−K)) = −ĝ(k_n(K)). By (W) at −q and (Sy), π̂(q)^T = π̂(−q) and ĝ(q)^T π̂(q) = 0. So the gradient parts drop out on both sides, and the n-th term of (6.2) is O(|K|²) · π̂(k_n) · O(|K|²) = O(|K|⁴).
+Now pick an index κ_0 with n_{κ_0} ≠ 0. Then |π n_{κ_0} / L| ∈ [π/L, π/2), so ĝ_{κ_0}(k_n) = 2i sin((K_{κ_0} + 2π n_{κ_0})/(2L)) is analytic and nonzero near K = 0. Put φ(K) := ρ_{κ_0 ν}(K, n)/ĝ_{κ_0}(k_n). For each λ, ρ_{λν} − ĝ_λ φ = (ĝ ∧ ρ)_{κ_0 λ}/ĝ_{κ_0} = O(|K|²). So ρ_{·ν}(K, n) = ĝ(k_n) φ(K) + O(|K|²). The same holds for ρ(−K, −n), with ĝ(k_{−n}(−K)) = −ĝ(k_n(K)). By (W) at −q and (Sy), π̂(q)^T = π̂(−q) and ĝ(q)^T π̂(q) = 0. So the gradient parts drop out on both sides, and the n-th term of (6.2) is O(|K|²) · π̂(k_n) · O(|K|²) = O(|K|⁴).
 
 *Step 5.* Adding the terms, π̂^c(K) = L² π̂(K/L) + O(|K|³). The second-order Taylor polynomial of L² π̂(K/L) at 0 is that of π̂, evaluated at K. ∎
 
@@ -212,7 +212,7 @@ Proof. Fix l ≥ 1. By (2.1) and Lemma D (a), on each torus D²Ψ_{l,N}(1) = D²
 **Remarks.**
 
 1. *The localised family.* RF8 defines b_l^0 as b(N^{(l)}) for its localised family. Suppose N^{(l)} sums to Φ_l on every admissible torus, agrees with a companion family on Z^4 for nonwrapping polymers, and has RF8's decay and (PH5) with constants independent of the torus. Then the sum over base points of its pointed Hessians is D²Φ_{l,N}(1) on each torus, and the wrapping and torus–companion differences at fixed b, b' tend to zero. So its PH13 bulk kernel is H_{Φ_l}, and b(N^{(l)}) = b_l^0. B3's sequence therefore does not depend on the localisation. Corollary T itself does not use RF8.
-2. *Why the requested error is zero.* prefactor.md Section 6 asked for a summable bound on the substitution error b[R_k^T H_{k−1} R_k] − b[H_{k−1}]. Theorem S shows that this error is zero for every k. Only fixed-depth decay is used (Lemmas B, D), with rates that may degenerate as k grows; they are never summed over k. The ε + t² example of prefactor.md (14) concerns uniform derivative bounds, and these do not enter.
+2. *Why the requested error is zero.* prefactor.md Section 6 asked for a summable bound on the substitution error b[R_k^T H_{k−1} R_k] − b[H_{k−1}]. Theorem S shows that this error is zero for every k. Only fixed-depth decay is used (Lemmas B, D), with rates that may degenerate as k grows; they are never summed over k. The ε + t² example of prefactor.md (14) concerns uniform derivative bounds, and these do not enter. The other error named there, from replacing the actual Hessian and response by P1's low-jet operators, does not arise either: Corollary T uses the actual Hessian and the actual response. A low-jet replacement enters only a computation of the value b[Ψ_k] by P1's route, which is open (Section 8).
 3. *RF11a.* (6.1) with F = Ψ_{k−1} is RF11a's second formula. The coefficient needs no "uniform analytic control of the aliased modes": Step 4 shows the aliased terms are O(|K|⁴) at each fixed depth. A version of the O(|K|³) remainder uniform in k is not proved here.
 4. *Units.* (R-i) carries RF11a's two form scalings L^{−1}L^{−1}, and the volume ratio L^4 is the prefactor in (6.2).
 
@@ -227,6 +227,6 @@ Proof. Fix l ≥ 1. By (2.1) and Lemma D (a), on each torus D²Ψ_{l,N}(1) = D²
 - *Nonlinear parts and localisation.* B3's f_j and q_j, and RF8's uniform localisation of N^{(l)}, are not touched. Remark 1 of Section 7 shows that RF8 is not needed for the coefficient identity.
 - *Uniformity.* The constants of Lemmas B and D depend on the depth. The identity is exact, so this costs nothing. A torus coefficient, if a consumer reads one, differs from the bulk coefficient by O(e^{−m_k N}), with m_k not uniform in k; B3 reads the bulk coefficient.
 
-**For the lead.** Row 158 is closed in the stronger form: the substitution and localisation error is zero, uniformly in depth and volume, so the hybrid coefficient lane of `library/route-compare-2.md` Section 9 item 1 is real. Rank 9 now stops at the value b[Ψ_k] = k c_0 + O(1). Its first statement for a lane is RF13's comparison for this Ψ_k. Start from Lemma B's Bloch fibres and the bounded-conjugation strip, and prove the mixed energy bounds of SA 21325–21356 for the actual R3 jets, uniformly in k. Check RF12c in the same lane; like Theorem S, it is exact at fixed k and uses only Lemma D's fixed-depth moments. A failure there would send rank 9 back to P1's constant-flux route, with its gate's repairs.
+**For the lead.** Row 158's step is proved in a stronger form than asked, by Claude, not yet checked by the other model: the substitution and localisation error is zero, uniformly in depth and volume. So the hybrid coefficient lane of `library/route-compare-2.md` Section 9 item 1 is real. Lemmas B, A, D, Theorem S and Corollary T need one line-by-line check by Codex; the value lane that reads them can do it in its first section. Rank 9 now stops at the value b[Ψ_k] = k c_0 + O(1). Its first statement for a lane is RF13's comparison for this Ψ_k. Start from Lemma B's Bloch fibres and the bounded-conjugation strip, and prove the mixed energy bounds of SA 21325–21356 for the actual R3 jets, uniformly in k. Check RF12c in the same lane; like Theorem S, it is exact at fixed k and uses only Lemma D's fixed-depth moments. A failure there would send rank 9 back to P1's constant-flux route, with its gate's repairs.
 
 RESULT: prefactor.md (Codex) checked line by line by Claude, first failing step none (four non-breaking notes). Proved by Claude, not yet checked: Theorem S, π̂^{Ψ_{k−1}∘p_k}(K) = L²π̂^{Ψ_{k−1}}(K/L) + O(|K|³) at every fixed depth for the actual R3 average, contour gauge and Wilson action (RF11a's second formula), hence Corollary T, Σ_{l≤k} b_l^0 = b[Ψ_k] exactly, so the substitution error that row 158 asked to bound is zero, uniformly in depth and volume, and any RF8 localisation gives the same b_l^0. Open: the value |b[Ψ_k] − k c_0| ≤ c_2 uniformly in k (massive trace route RF12c/RF13 with its mixed energy bounds, or P1), RF10's second clause, and B3's nonlinear parts.

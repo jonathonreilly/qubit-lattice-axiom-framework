@@ -49,7 +49,7 @@ Fix an admitted pair \(\mathbf p\), an admitted splitting with real part \(p_{\r
 The stored forms and elimination factors are not inner reads. Their response belongs to (Act) (`gates/inn-check.md` Section 2).
 
 **Premises.**
-- **(I)** Those of the old Theorem I without its margin premise: Definition R, (ADM'), Corollary P with \(6\beta_A\), Lemma E's enlargement, I1 through Lemma MJ, I2 (P81 at full strength, radius \(r_{\rm B}\)), I3, I5 at the enlarged regularity, GEO3, GEO4, (SEP), (SEP-L) for \(\mathcal L_W\), (Adm-bar), the premises of Proposition D, \(0\le w\le2x\) on \(\operatorname{supp}\psi\), and FLOW (\(|b_i|\le B_*\)) with the tube \(\theta_m\le2x_m\) (SA (R20)). I3 is read as T4's first paragraph at a real critical reference on its **whole** polydisc, with the potential, gradient and current members (`a3-derivative.md` 6–7, (34), 7.3; gate ADVANCE). This is not T4 re-centred at a complex reference.
+- **(I)** Those of the old Theorem I without its margin premise: Definition R, (ADM'), Corollary P with \(6\beta_A\), Lemma E's enlargement, I1 through Lemma MJ, I2 (P81 at full strength, radius \(r_{\rm B}\)), I3, I5 at the enlarged regularity, GEO3, GEO4, (SEP), (SEP-L) for \(\mathcal L_W\), (Adm-bar), the premises of Proposition D, \(0\le w\le2x\) on \(\operatorname{supp}\psi\), the frame bound \(\theta_m\le\theta_k+\bar B(k-m)\) for \(m\le k\) (SA (R19), 6020) and the tube \(|\theta_k-x_k|\le\frac12x_k\) (SA (R20), 6041). I3 is read as T4's first paragraph at a real critical reference on its **whole** polydisc, with the potential, gradient and current members (`a3-derivative.md` 6–7, (34), 7.3; gate ADVANCE). This is not T4 re-centred at a complex reference.
 - **(ISL)** Every inner island has \(Y_y^\sim\subset Z^\natural\) and \(m_y\le k_\flat\). (SA 18523: the island's failed test is paid by the outer component's retained core action.)
 - **(IND)** The outline's bound SA 18086 at the inner levels, which is the induction hypothesis. On every triple \((U,A',\mathbf J)\) of the core \(D_y:=\mathcal U^\circ_{m_y}(Y_y^\sim;\alpha_{0,m_y},\alpha_{1,m_y})\), \(\Phi_{\omega'_y}(\xi'_y;\cdot)=\Phi^\circ_{\omega'_y}-\frac12q_y(\xi'_y;U)+V_y\) with \(|V_y|\le C_VN_0(\omega'_y)\). The Gaussian \(q_y\) is formed at the real \(G\)-valued factor \(U\) (SA 17822, 18050). \(\Phi\) is holomorphic in the pair (SA 18059).
 - **(GO)** \(F_y\) takes one value on the complex gauge orbit of a pair of \(D_y\), and a read is evaluated there (SA 9654, end of the paragraph *Complex fields*).
@@ -123,3 +123,135 @@ Lemma SC with Lemma E bounds the pair \((\tilde P(\beta),\bar P)\). Its one-pair
 **Step 5 (sum).** Sum \(\sqrt{\mathsf B_t\epsilon_t}\) over the tops of \(Z^\natural\), use \(\sqrt{u+u'}\le\sqrt u+\sqrt{u'}\), and apply Lemma C at rates \(\theta/4\) and \(\theta/2\). This gives \(\epsilon_W\). *Size.* \(x(\varepsilon^R)^2\le C(1+\ell)^{2\mathfrak p}\). Also \(\varepsilon_k+6\beta_A\le\varepsilon^R\), so the Size line of Lemma H gives \(e^R/\varepsilon^R\le8C_4C_{\rm BC'}C_\delta(1+\check R)L^{-\mathsf N/2}\). Hence \(x\varepsilon^R(\varepsilon^Re^R)^{1/2}=x(\varepsilon^R)^2(e^R/\varepsilon^R)^{1/2}\le C(1+\ell)^{2\mathfrak p+r/2}L^{-\mathsf N/4}\). With \(\mathsf N\ge\frac12\ell^r\), \(n_{\rm m}\ge\ell^r/8-1\) and \(T^\theta_\natural\le C_T\ell^{4r}\), the first bound follows. For the second, let \(\ell\ge2\). Since \(r\ge2\), \(L\ge5\) and \(\theta M\ge64\log L\), we have \(L^{-\ell^r/8}\le e^{-\ell/4}\) and \(e^{-\theta M\ell^r/16}\le e^{-\ell/4}\). As in the proof of Theorem P, \((1+\ell)^Ke^{-\ell/8}\le(8K)^K\). So \(\epsilon_W\le C'_{IW}e^{-\ell/8}=C'_{IW}g_k^{1/4}\). \(\square\)
 
 T4 holds on the whole polydisc, so Lemma D\(^\sharp\) below also bounds the potential of \(P(\xi;\beta(\mathbf p))\) over \(\bar P\) at the complex pair. With the \({\rm SL}(2,\mathbb C)\) scalar step of Lemma SC (factor 3, `ref-chart.md` 9f), that gives the Wilson bound directly, without the square root. The route above uses only real per-top bounds and the crude complex bound, as the check asked.
+
+## 4. The inner reads
+
+### 4.1 The old margin premise holds for no inner read
+
+The old Theorem I assumed (M) at \(q_y(\bar P(\xi))\) with margins \(m_{y,a}\ge g_k^{1/2}\). A margin is room inside the domain. So the margin of a curvature or current clause is at most the radius of that clause. In the units of the domain, level \(m=m_y\), that radius is \(\alpha_{0,m}=C_0\theta_m^{-1/2}(\log\theta_m)^q\) (SA 6033; the core, SA 9646–9654). The map \(\theta\mapsto\theta^{-1/2}(\log\theta)^q\) decreases for \(\theta\ge e^{2q}\). (R19) gives \(\theta_m\ge\theta_k-c_5\), and (R20) gives \(\theta_k\ge\frac12x\). So \(\alpha_{0,m}\le2C_0g_k\ell^q\) at the ceiling, and this is below \(g_k^{1/2}\) once \(2C_0\ell^qe^{-\ell/4}<1\). The premise therefore fails for every island, and Step 5 of the old proof had no admissible input. Section 4.2 uses the outline's own room, of size \(c_{\rm T}\alpha_{0,m}\). Section 4.4 shows that the displacement is smaller than that room by a factor that beats every power of \(g_k\).
+
+### 4.2 The chart for (M), with the real part fixed
+
+Fix \(y\), \(m:=m_y\), \(\bar U:=\bar U_y\), \(\bar J:=J(\bar U)\). The chart sends \(h=(\mathbf A,\mathbf j)\) to the triple \((\bar U,\mathbf A,\bar J+\mathbf j)\), that is, to the pair \((e^{i\eta\mathbf A}\bar U,\bar J+\mathbf j)\). Here \(\mathbf A\) is a complex Lie-algebra-valued 1-form on the bonds of \(Y_y^\sim\), and \(\mathbf j\) is a complex independent current. The seminorms are taken in level-\(m\) units:
+\[
+ \|h\|_1:=\sup\xi_m|\mathbf A|,\quad \|h\|_2:=\sup\xi_m^2|\nabla_{\bar U}\mathbf A|,\quad \|h\|_3:=\sup\xi_m^3|\mathbf j|,\qquad m_1=m_2:=c_{\rm T}\alpha_{0,m},\quad m_3:=\tfrac12\alpha_{0,m},
+\]
+and \(\|h\|_{*,y}:=\max_a\|h\|_a/m_a\).
+
+**(M) holds at \(\bar p_y=(\bar U,0,\bar J)\).** By (M\(^R\)) the real triple lies in the core at half radii. A point of the ball \(\{\|h\|_{*,y}<1\}\) has \(|\mathbf A|,|\nabla_{\bar U}\mathbf A|<c_{\rm T}\alpha_{0,m}\). Theorem 5(c), the outer substitution, then puts \((\bar U,\mathbf A,\cdot)\) in the core at full radii, **every tower clause included**. The current clause holds because \(|\bar J+\mathbf j|<\frac12\alpha_{0,m}+\frac12\alpha_{0,m}\); no tower clause reads the independent current. The real part is \(\bar U\) at every point of the ball. So the clauses on \(U\) alone (its curvature, its local real gauges, its tower configurations) are those of the real read. **This is how the towers enter:** they are functions of \(\mathbf A\), and Theorem 5(c) controls all of them nonlinearly on the whole ball. The only displacement bounds the towers need are the bounds on \(\|h\|_1\) and \(\|h\|_2\).
+
+**The margin lemma with the real part fixed.** On the ball, (IND) gives \(F_y(\bar U,\mathbf A,\bar J+\mathbf j)=-\frac12q_y(\xi'_y;\bar U)+V_y(\bar U,\mathbf A,\bar J+\mathbf j)\). The Gaussian is formed at the \(G\)-valued factor, and that factor is \(\bar U\) at every point. So \(q_y\) cancels exactly:
+\[
+ f_y(h):=F_y(\bar p_y+h)-F_y(\bar p_y)=V_y(\bar U,\mathbf A,\bar J+\mathbf j)-V_y(\bar U,0,\bar J).
+\]
+\(f_y\) is holomorphic on the ball, because \(\Phi\) is holomorphic in the pair and the pair is holomorphic in \(h\). Also \(|f_y|\le2C_VN_0(\omega'_y)\). Lemma (1) of `inn-213.md` Section 2 then gives, for \(\|h\|_{*,y}\le a<1\),
+\[
+ |F_y(\bar p_y+h)-F_y(\bar p_y)|\le2C_V\,N_0(\omega'_y)\,\frac a{1-a}.
+ \tag{4.1}
+\]
+In the old notation, \(b_y=2C_V\) and \(N_y=N_0(\omega'_y)\).
+
+*Why the real part is fixed.* At a read with another real part \(U\), the Gaussian \(q_y(\xi'_y;U)\) moves with \(U\). It is not bounded by \(CN_0(\omega'_y)\) uniformly in depth: it carries \((A_1p_1(g_{m}))^2\), which grows with \(\log x_m\). With the real part fixed, it drops out of every difference.
+
+### 4.3 Lemma K (composition of Landau forms)
+
+**Lemma K (proved by Claude, not yet checked).** Let \(U_0\) be real, \(f_1,f_2\) real 1-forms, \(w_1,w_2\) real gauges, \(\tilde P:=(e^{i\eta f_1}U_0)^{w_1}\), \(\bar P:=(e^{i\eta f_2}U_0)^{w_2}\), and \(a\) a complex 1-form. Define \(\mathbf A\) bond by bond by
+\[
+ e^{i\eta\mathbf A(b)}:=e^{i\eta\operatorname{Ad}(w_2w_1^{-1}(b_-))a(b)}\,e^{i\eta\operatorname{Ad}(w_2(b_-))\varphi(b)},\qquad e^{i\eta\varphi}:=e^{i\eta f_1}e^{-i\eta f_2}.
+\]
+Then:
+- (i) \((e^{i\eta a}\tilde P)^{w_2w_1^{-1}}=e^{i\eta\mathbf A}\bar P\).
+- (ii) \(J(e^{i\eta\mathbf A}\bar P)-J(\bar P)=\operatorname{Ad}(w_2w_1^{-1})\big[J(e^{i\eta a}\tilde P)-J(\tilde P)\big]+\operatorname{Ad}(w_2)\big[J(e^{i\eta f_1}U_0)-J(U_0)\big]-\operatorname{Ad}(w_2)\big[J(e^{i\eta f_2}U_0)-J(U_0)\big]\).
+- (iii) There is an absolute \(c_K\) with this property. If at a top \(t\), on the bonds over \(t\) and their neighbours, \(\epsilon_a:=\xi_t|a|+\xi_t^2|\nabla_{\tilde P}a|\) and \(\epsilon_f:=\max_i(\xi_t|f_i|+\xi_t^2|\nabla_{U_0}f_i|)\) satisfy \(\epsilon_a+2\epsilon_f\le1/c_K\), then \(\xi_t|\mathbf A|+\xi_t^2|\nabla_{\bar P}\mathbf A|\le2(\epsilon_a+2\epsilon_f)\) there.
+
+*Proof.* (i) On a bond \(b\), the left side is \(w_2(b_-)\,e^{i\eta\operatorname{Ad}(w_1(b_-)^{-1})a(b)}e^{i\eta f_1(b)}U_0(b)\,w_2(b_+)^{-1}\), and \(\bar P(b)=w_2(b_-)e^{i\eta f_2(b)}U_0(b)w_2(b_+)^{-1}\). Their quotient is \(e^{i\eta\mathbf A(b)}\). (ii) The current is the left-variation gradient of the gauge-invariant action, so \(J(V^G)(b)=\operatorname{Ad}(G(b_-))J(V)(b)\) for real \(G\), and by continuation for complex \(G\). Apply this to (i) and to the definitions of \(\tilde P\) and \(\bar P\). Then add and subtract \(\operatorname{Ad}(w_2w_1^{-1})J(\tilde P)=\operatorname{Ad}(w_2)J(e^{i\eta f_1}U_0)\). (iii) For \(|X|+|Y|\le\frac14\), \(R(X,Y):=\operatorname{BCH}(X,Y)-X-Y\) obeys \(|R|\le3(|X|+|Y|)^2\), and its Lipschitz constant on that ball is at most \(c(|X|+|Y|)\) with \(c\) absolute. Here \(X,Y\) are \(\eta\) times local quantities, so in local units each remainder costs at most \(c(\eta/\xi_t)(\epsilon_a+2\epsilon_f)^2\). For the derivative use covariance, \(\nabla_{V^g}(\operatorname{Ad}(g)Z)=\operatorname{Ad}(g)\nabla_VZ\). It turns \(\nabla_{\bar P}\) into \(\nabla_{e^{i\eta f_2}U_0}\) and \(\nabla_{\tilde P}\) into \(\nabla_{e^{i\eta f_1}U_0}\). A base change \(V\mapsto e^{i\eta\psi}V\) with real \(\psi\) moves \(\nabla_VZ\) by at most \(2|\psi||Z|\), since \(|\operatorname{Ad}(e^{i\eta\psi})-1|\le2\eta|\psi|\); in local units that is \(2(\xi|\psi|)(\xi|Z|)\). The base changes used have \(\xi|\psi|\le2\epsilon_f(1+o(1))\). Collecting, \(\xi_t|\mathbf A|+\xi_t^2|\nabla_{\bar P}\mathbf A|\le\epsilon_a+2\epsilon_f+c'_K(\epsilon_a+2\epsilon_f)^2\), and \(c_K:=\max(10,c'_K)\) gives (iii). \(\square\)
+
+### 4.4 Lemma D\(^\sharp\): the displacement of every read, in every seminorm
+
+**Lemma D\(^\sharp\) (proved by Claude, not yet checked).** Assume (I), (ISL) and the ceiling of Lemma H. Put \(C_\flat:=\max(C_4,C_{\delta J})\) and
+\[
+ \vartheta^0:=3\Big[8C_\flat C_{\rm BC'}(\theta/2)\big(8\delta^\sharp+6C_\Delta\beta_Ae^{-\theta M(n_{\rm m}+1)/2}\big)+2C_\mu\varepsilon^Re^{-\theta Mn_{\rm m}}\Big],
+\]
+and assume \(\vartheta^0\le3/c_K\). Then for every \(\beta\in\mathbb D\) and every inner island \(y\) there are a complex 1-form \(\mathbf A\) on \(Y_y^\sim\) and a complex gauge \(G\) with \(P(\xi;\beta)=(e^{i\eta\mathbf A}\bar P)^G\) there. At every top \(t\) of \(\mathcal O^p\) carrying a bond of \(Y_y^\sim\),
+\[
+ \xi_t|\mathbf A|+\xi_t^2|\nabla_{\bar P}\mathbf A|+\xi_t^3\big|J(e^{i\eta\mathbf A}\bar P)-J(\bar P)\big|\ \le\ \vartheta^0e^{-\theta\lambda(t)/2}.
+\]
+
+*Proof.* **(1) The chart about \(\tilde P_0\).** Let \(\tilde P_0\) be the real critical background of \(\tilde{\mathbf D}(0)\) (Lemma H(d) at \(\beta=0\)). By Lemma H(c), \(\mathbf D(\beta)=e^{i\Delta'(\beta)}\tilde{\mathbf D}(0)\) with \(\|\Delta'(\beta)\|_\infty\le\max(8\delta^\sharp,6C_\Delta\beta_A)<r_{\rm B}\). So \(P(\xi;\beta)=\Phi(\Delta'(\beta))=(e^{i\eta a}\tilde P_0)^u\) in P81's chart about \(\tilde{\mathbf D}(0)\). T4's first paragraph holds at every point \(s\Delta'\), \(s\in[0,1]\), of the polydisc. Integrating its responses over \(s\) gives
+\[
+ \xi_t|a|+\xi_t^2|\nabla_{\tilde P_0}a|\le C_4\sum_c|\Delta'_c|e^{-\theta d_{\mathbf B}(t,y_c)},\qquad \xi_t^3|J(e^{i\eta a}\tilde P_0)-J(\tilde P_0)|\le C_{\delta J}\sum_c|\Delta'_c|e^{-\theta d_{\mathbf B}(t,y_c)}
+\]
+(`a3-derivative.md` (34) and 7.3). Split the rows. Rows with both ends in \(N_{\rm c}\) have \(|\Delta'_c|\le8\delta^\sharp\); they are shell rows (\(\Delta'=0\) on core rows), so \(d_{\mathbf B}(t,y_c)\ge\lambda(t)\). The other rows have \(|\Delta'_c|\le6C_\Delta\beta_A\) and \(d_{\mathbf B}(t,y_c)\ge M(n_{\rm m}+1)+\lambda(t)\). The last holds because \(Y^\sim_y\subset Z^\natural\) (ISL): such a row lies in a shell of level \(\ge s'+1\), or beyond, and a path to it crosses the \(n_{\rm m}+1\) shells of levels \(k_\flat+n_{\rm c},\dots,s'\) at cost \(\ge M\) each (GEO3). Lemma BC\('\) at rate \(\theta/2\), with at most 8 rows per top, gives \(\epsilon_{a,t}\le8C_\flat C_{\rm BC'}(\theta/2)(8\delta^\sharp+6C_\Delta\beta_Ae^{-\theta M(n_{\rm m}+1)/2})e^{-\theta\lambda(t)/2}\), and the same bound for the current.
+
+**(2) Localisation at \(\beta=0\).** As in Step 2 of Section 3, \(\tilde P_0=(e^{i\eta f_1}P^\circ_W)^{w_1}\) and \(\bar P=(e^{i\eta f_2}P^\circ_W)^{w_2}\), with potential and gradient members \(\le C_\mu\varepsilon^Re^{-\theta d_{\mathbf B}(t,W^c)}\) (Lemma 10.1 of `a3-derivative.md`). *Current member (one line, proved here).* Lemma 10.1 writes \(f=\int_0^1D\mathcal H(sB_0)[B_0]\,ds\) and bounds each linear response in the weighted norm with \(w(y)=e^{\theta d_{\mathbf B}(y,W^c)}\). The derivation of 7.3 bounds the current of a linear response at a bond by the weighted norms of \((h,\dot\omega)\) at nearby rows; weights move by at most \(e^{\theta D_L}\) between neighbours, as in 7.5. So \(\xi_t^3|J(e^{i\eta f_i}P^\circ_W)-J(P^\circ_W)|\le C_\mu\varepsilon^Re^{-\theta d_{\mathbf B}(t,W^c)}\), after \(C_\mu\) is enlarged by a fixed factor. Also \(d_{\mathbf B}(t,W^c)\ge Mn_{\rm m}+\lambda(t)\).
+
+**(3) Compose.** Apply Lemma K with \(U_0=P^\circ_W\), \(\tilde P=\tilde P_0\), and \(a,f_1,f_2\) as above. It gives \(e^{i\eta\mathbf A}\bar P=(e^{i\eta a}\tilde P_0)^{w_2w_1^{-1}}\), hence \(P(\xi;\beta)=(e^{i\eta\mathbf A}\bar P)^G\) with \(G:=u\,w_1w_2^{-1}\). Lemma K(iii) bounds the potential and gradient by \(2(\epsilon_{a,t}+2\epsilon_{f,t})\). Lemma K(ii), with the isometries \(\operatorname{Ad}\) of real gauges, bounds the current by \(\epsilon^J_{a,t}+2\epsilon^J_{f,t}\). The sum is at most \(\vartheta^0e^{-\theta\lambda(t)/2}\). \(\square\)
+
+This lemma reads T4 at complex points of the polydisc about the real \(\tilde P_0\), with its current member. That is T4's first paragraph (gate ADVANCE, `gates/a3-derivative-gate.md` Sections 6–7). The complex gauge \(u\) of the chart is never bounded: the read is taken in the representative \(e^{i\eta\mathbf A}\bar P\), which is a real gauge transform of the Landau form \(e^{i\eta a}\tilde P_0\). This respects the gate's limit on 7.6.
+
+### 4.5 Theorem I\(^R\)(b)
+
+**Theorem I\(^R\)(b) (implication; proved by Claude, not yet checked).** Assume (I), (ISL), (IND), (GO), (M\(^R\)), the ceiling of Lemma H and of Lemma D\(^\sharp\), and \(\bar a\le\frac14\), where
+\[
+ \bar a:=\frac{2L^3C_B}{c'C_0}\cdot\frac{\vartheta^0}{g_k},\qquad c':=\min(c_{\rm T},\tfrac12),\qquad C_B:=\sup_{d\ge0}(1+\bar Bd)^{1/2}L^{-(d-1)_+}.
+\]
+Then at every admitted pair \(\mathbf p\) and every \(\xi\) in the support,
+\[
+ \Big|\sum_y\big[F_y(q_y(P(\xi;\beta(\mathbf p))))-F_y(q_y(\bar P(\xi)))\big]\Big|\le\tfrac83\,C_V\,\bar a\sum_yN_0(\omega'_y)\le\tfrac83\,C_V\,\bar a\,N_0(\omega).
+\]
+Moreover \(\bar a\le C_a(1+\ell)^{\mathfrak p+r}\big(L^{-\ell^r/4}+e^{-\theta M\ell^r/16}\big)\le C'_a\,g_k^{1/4}\).
+
+*Proof.* Fix \(y\), \(m:=m_y\le k_\flat\) and \(d:=k_\flat-m\ge0\).
+
+(a) *The read in the chart.* By Lemma D\(^\sharp\) at \(\beta=\beta(\mathbf p)\), and the covariance of \(J\), the pair \(q_y(P(\xi;\beta(\mathbf p)))\) is the \(G\)-transform of \((e^{i\eta\mathbf A}\bar U,J(e^{i\eta\mathbf A}\bar U))\) on \(Y_y^\sim\). By (GO), \(F_y\) takes one value at both. So the actual read is the chart point \(h_y:=(\mathbf A,J(e^{i\eta\mathbf A}\bar U)-\bar J)\) of 4.2, and the real read is \(h=0\).
+
+(b) *Units.* A bond of \(Y_y^\sim\) over the top \(t\) of level \(j=j(t)\) has \(\xi_m^s|\cdot|=(\xi_m/\xi_t)^s\,\xi_t^s|\cdot|\), with \(s=1,2,3\) for the potential, derivative and current. Lemma D\(^\sharp\) bounds the local quantities by \(\vartheta^0e^{-\theta\lambda(t)/2}\). We claim \((\xi_m/\xi_t)^se^{-\theta\lambda(t)/2}\le L^3L^{-(d-1)_+}\). Use \(e^{-\theta c_g/2}\le L^{-32}\).
+- \(t\subset C\), \(j\ge m\): the factor is at most \(L^{-(j-m)}L^{-(k_\flat-j-1)_+}\), and \((j-m)+(k_\flat-j-1)_+\ge d-1\).
+- \(t\) a margin top: \(j\ge k_\flat\), so the factor is at most \(L^{-d}\).
+- \(t\subset C\), \(j<m\): the factor is at most \(L^{3(m-j)}L^{-32(k_\flat-j-1)}\). Since \(k_\flat-j-1\ge(m-j-1)+d\), this is at most \(L^{32-29(m-j)-32d}\le L^3L^{-32d}\).
+
+So \(\|h_y\|_a\le L^3L^{-(d-1)_+}\vartheta^0\) for \(a=1,2,3\).
+
+(c) *Margins.* (R19) gives \(\theta_m\le\theta_k+\bar B(k-m)\) with \(k-m=\mathsf N+d\). (R20) gives \(\frac12x\le\theta_k\le\frac32x\). At the ceiling \(2\bar B\mathsf N\le x\) and \(\log\theta_m\ge1\). So \(\alpha_{0,m}\ge C_0\theta_m^{-1/2}\ge\frac12C_0g_k(1+\bar Bd)^{-1/2}\). Hence
+\[
+ a_y:=\|h_y\|_{*,y}\le\frac{L^3L^{-(d-1)_+}\vartheta^0}{c'\alpha_{0,m}}\le\frac{2L^3}{c'C_0}(1+\bar Bd)^{1/2}L^{-(d-1)_+}\,\frac{\vartheta^0}{g_k}\le\bar a\le\tfrac14 .
+\]
+The deep islands (\(d\) large) are paid by the decay through the layers between their level and the shells; their smaller radius costs only \((1+\bar Bd)^{1/2}\).
+
+(d) *Sum.* (4.1) with \(a=a_y\le\bar a\le\frac14\) gives \(|F_y(\bar p_y+h_y)-F_y(\bar p_y)|\le\frac83C_V\bar aN_0(\omega'_y)\). Sum over \(y\), and use \(N_0(\omega)=N_0^\circ(\omega)+\sum_yN_0(\omega'_y)\) (SA 18091). In the old notation this is \(\sum_yb_yN_y=2C_V\sum_yN_0(\omega'_y)\le2C_VN_0(\omega)\).
+
+(e) *Size.* By the Size line of Lemma H, \(\delta^\sharp/g\le C_\delta(p_0(g)+6\beta_A/g)(1+\check R)L^{-\mathsf N/2}\le C(1+\ell)^{\mathfrak p+r}L^{-\mathsf N/2}\). Also \(\beta_A/g\le C(1+\ell)^q\) and \(\varepsilon^R/g\le C(1+\ell)^{\mathfrak p}\). With \(\mathsf N\ge\frac12\ell^r\) and \(n_{\rm m}\ge\ell^r/8-1\) this gives the bound on \(\bar a\). The last inequality is that of Section 3. \(\square\)
+
+**(7.2\(^R\)).** Theorem I\(^R\)(a) and (b) together give (7.2\(^R\)) of Section 0.
+
+## 5. Corollary P\(^R\), repaired
+
+The failure (`gates/inn-check.md` Section 5): the old proof composed every term with U° at \(B'=L_{\mathbf p}B\). The quadratic form is frozen at the real splitting, so covariance gives \(Q^R_{p_{\rm r}}(B)=Q^\circ_{p_{\rm r}}(L_{p_{\rm r}}B)\), not \(Q^\circ_{p_{\rm r}}(L_{\mathbf p}B)\). The repair below stays in the R representative. It keeps \(Q^R_{p_{\rm r}}\) and redoes the joint chart there. The U° form follows at the end, with the difference kept and bounded.
+
+**Corollary P\(^R\) (implication; proved by Claude, not yet checked).** Assume the hypotheses of Theorem P, Definition R, and the ceiling of Lemma H, with \(C_\Delta\) for \(C_\natural\) and \(\varepsilon^R\) for \(\varepsilon^\sharp\) in every ceiling condition of `pre-213.md` Sections 3 and 4c. Let \(V^{{\rm Pre},R}_X(\mathbf p)\) be (2.1) formed with the R backgrounds (\(P,P_X\) and \(T(B)\), the ones that read \(V_0\) or the reference rows of \(T(B)\)) and with
+\[
+ Q^R_{p_{\rm r}}(B):=\tfrac12\sum_p\phi(p)\,\big|(d_{S^R_0}\eta\mathsf H^RB)_p\big|^2,
+\]
+the real full mixed form of the splitting in the R representative. Then at every admitted pair, on every admitted splitting, \(V^{{\rm Pre},R}_X(\mathbf p)\) obeys (5.1) of `pre-213.md` with \(\varepsilon^R\) for \(\varepsilon^\sharp\). In particular \(|V^{{\rm Pre},R}_X(\mathbf p)|\le C'^R_{\rm Pre}\,g_k^{1/4}\).
+
+*Proof.* Theorem P's proof reads three things for each term of (2.2). Each holds in the R representative.
+
+(i) *Holomorphy and the crude bound (Lemma A\(^R\)).* The datum increments of the R backgrounds over their real data at \(\beta=0\) are at most \(C_\Delta\|\beta\|_\infty\) on \(\mathbb D\). For the shell rows this is Lemma H(c). The reference rows of \(\tilde T^R\) carry \(\mathcal M(S^R_\beta)\). On rows with both ends in \(N_{\rm c}\), the core rows included, they move by at most \(8\delta^\sharp\): Lemma H(b) holds for every averaged row with both ends in \(N_{\rm c}\), because the proof of Proposition D does not use that the row is a shell row. Elsewhere \(h=\mathbf 1\), and they move as in U°. So the R backgrounds are holomorphic on \(\mathbb D\), and (3.2) holds with \(\varepsilon^R\).
+
+(ii) *Real per-top bounds at real \(\beta\in\mathbb D^{\mathbb R}_5\).* The R data are real and \(\varepsilon^R\)-regular (Lemma H(d)). For the reference data of \(\tilde T^R\) every row is \(h\)-transformed, so their tests are conjugates of the U° tests. The meet coincidences W1–W4 of `sa-2.8-terms.md` Section 3 hold. R changes only rows in \(N_{\rm c}\subset\Lambda\), and it changes them the same way in both members of W1 (\(P^R\) and \(P^R_X\) both carry \(e^{igB}V^R_0\)) and of W3 (\(T^R(B)\) and \(P^R_X\) share \(\mathbf D_{pX}\) and all data off \(C\)). W2 reads only the reference, and W4 compares outside \(\Lambda\), where \(h=\mathbf 1\). EXT holds for the same reason. Lemma LM holds for \(S^R=S^h\): \(\nabla A(S^h)\) is the gauge transform of \(\nabla A(S)\), the exterior rows see \(h=\mathbf 1\), and \(\tilde T^R_\beta(0)=S^R_\beta\) modulo residual gauge. So Lemma E's per-top estimates hold, and 4a–4b bound \(R_1,R_3,R_5,R_6,R_7,R_{10}\) with \(\varepsilon^R\).
+
+(iii) *The block \(Y^R:=Q^R_{p_{\rm r}}(B)-x\{A(\phi,T^R_\beta(B))-A(\phi,S_\beta)\}\).* The R joint chart \((\beta,u)\mapsto\tilde T^R_\beta(u)\), with shells \(e^{iu}V^R_0(\beta)\) and reference rows \(\mathcal M(S^R_\beta)\), has the room of 4c. For \(\|\beta\|_\infty<\rho^R_Q:=\min\{\rho_\beta/2,\ r_{\rm B}/(16C_\Delta),\ \rho_{S'}\}\) and \(\|u\|_\infty<r_{\rm B}/16\), every increment is below \(r_{\rm B}/2\) by (i). So (4.2), (4.3) and the exact Taylor split hold verbatim. \(Y^R_5=0\) by Lemma LM item 2 in R and the identity theorem. For \(Y^R_2\), covariance at the real \(h_0\) gives \(\tilde F^R_0(u)=\tilde F^\circ_0(L_0u)\), with \(L_0u(c):=\operatorname{Ad}(h_0(c_-)^{-1})u(c)\) a real linear isometry of the shell data in sup norm. The real identity (5.8) of row 107 at the argument \(L_0B\) reads
+\[
+ \tfrac12D^2_u\tilde F^R_0(0)[B,B]=Q^R_{p_{\rm r}}(B)+\tfrac12K^R_1(B)+\tfrac12K^R_2(B),\qquad Q^R_{p_{\rm r}}(B)=Q^\circ_{p_{\rm r}}(L_0B),\quad K^R_i(B):=K^\circ_i(L_0B).
+\]
+The \(K^R_i\) obey the row-107 bounds, since \(\|L_0B\|_\infty=\|B\|_\infty\). So \(Y^R_2=-\frac12(K^R_1+K^R_2)+\frac12(G^R(0)-G^R(\beta))\) with \(G^R(\beta):=D^2_u\tilde F^R_\beta(0)[B,B]\). Schwarz's lemma on the fixed ball \(\rho^R_Q\) bounds the last bracket as in 4c. \(Y^R_4\) and \(\mathsf L^R\) are as in 4c. \(B\) is the real stored variable with \(\|gB\|_\infty<\delta'\), so the ceiling \(\delta'\le r_{\rm B}/32\) is unchanged. The real bound \(\epsilon_{\rm L}\) at real \(\beta\) uses Lemma LM item 3 for \(S^R\) and (9a)–(9b). There the curvature \(a_{S^R}=a_S\) is gauge invariant, and the \((1-\chi)\) region lies where \(h=\mathbf 1\). Lemma T then applies to \(\mathsf L^R\) as in 4c. \(\square\)
+
+**The U° form keeps a difference.** Covariance at the complex \(h_\beta\) gives \(A(\phi,T^R_\beta(B))=A(\phi,T^\circ_\beta(L_\beta B))\), with \(L_\beta B(c):=\operatorname{Ad}(h_\beta(c_-)^{-1})B(c)\). So
+\[
+ Y^R(\beta)=Y^\circ_\beta(L_\beta B)+D_Q(\beta),\qquad D_Q(\beta):=Q^R_{p_{\rm r}}(B)-Q^\circ_{p_{\rm r}}(L_\beta B)=Q^\circ_{p_{\rm r}}(L_0B)-Q^\circ_{p_{\rm r}}(L_\beta B),
+\]
+with \(Y^\circ_\beta(B'):=Q^\circ_{p_{\rm r}}(B')-x\{A(\phi,T^\circ_\beta(B'))-A(\phi,S_\beta)\}\). At \(\beta=\beta(\mathbf p)\), \(D_Q\) is the difference \(Q^R_{p_{\rm r}}(B)-Q^\circ_{p_{\rm r}}(L_{\mathbf p}B)\) of the check. It does not vanish at complex pairs. It is small:
+\[
+ |D_Q(\beta(\mathbf p))|\le72\,q_Q\,C_h\,\beta_A\,(A_1p_1)^2,\qquad q_Q:=\sup_{v\ \mathrm{real},\ \|v\|_\infty\le1}|Q^\circ_{p_{\rm r}}(v)|\le3072C_{\rm R}^2K_\phi+\tfrac12(k_1+k_2),
+\]
+where \(k_i\) bound \(K_i\) on the real unit ball (row 107), and the bound on \(q_Q\) is (4.3) with (5.8). *Proof.* \(Q^\circ_{p_{\rm r}}\) is a real symmetric form. Polarization, with \(|X|,|Y|\le|X+iY|\) for Hermitian \(X,Y\), gives \(|Q^\circ(z_1,z_2)|\le8q_Q\|z_1\|\|z_2\|\) for complex arguments. Then \(D_Q=Q^\circ(L_0B-L_\beta B,\,L_0B+L_\beta B)\). Lemma H(a) gives \(\|L_0B-L_\beta B\|\le3C_h\|\beta\|\|B\|\), and \(\|L_0B+L_\beta B\|\le3\|B\|\), \(\|B\|\le A_1p_1\). \(\square\) So \(|D_Q|\le C(1+\ell)^{4r+1+2\mathfrak p_1+q}g_k\), which sits inside the \(e^{-\ell/2}\) term of (5.1). With \(D_Q\) kept, the composed route closes too. \(Y^\circ_\beta(L_\beta B)\) obeys 4c with the complex argument \(L_\beta B\), \(\|gL_\beta B\|\le2\delta'\) (so \(\delta'\le r_{\rm B}/64\)). \(K_i\) at complex arguments cost a factor 12, \(Y_2\) uses Schwarz in \(\beta\) at the fixed argument \(L_{\beta(\mathbf p)}B\), and Lemma T applies to \(\beta\mapsto\mathsf L(\beta;L_\beta B)\), which is real at real \(\beta\). Both routes give the same bound up to constants.

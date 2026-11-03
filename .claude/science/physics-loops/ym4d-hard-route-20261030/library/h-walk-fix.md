@@ -37,3 +37,63 @@ The field-locality and field-holomorphy part of W(c), and the gauge-covariance p
 **Conclusion of the listing.** Consumers exist. Inside our library, only `o1-decoupled.md` reads (RT), and it reads an instance that its Lemma C1 proves. The outline positions that our route carries (H, N, R, and E through P1) read (RT) and (IC) in full. So the item is not stopped, and §§2–4 do the repair.
 
 **Mechanism (i)'s symmetrisation does not replace (IC).** Its Haar mean is over real **gauge** transformations, and its mean over translations, push-forward and Montel limit (SA 10560) give one assignment for all tori. None of these averages over coordinate reflections or permutations. So the outline's own construction has to supply single-term isometry covariance, and the outline itself moves to bond midpoints for this reason when it reaches the hypercubic tensor (SA 13191: "Under reflections, lower bond starts undergo a direction-dependent integer displacement … move first to bond-midpoint coordinates").
+
+## 2. Region-trace locality: the read set of a normalised cutoff (repaired (C5))
+
+**Setting.** As in `h-walk.md` §3: L odd and large, M_1 and R_1 powers of L, rho = R_1 M_1, level-k units with xi_j = L^{j-k} and eta = xi_0. A sequence is *separated* in the outline's sense: each Omega_j is a union of level-j M_1-cubes and dist_∞(Omega_j^c, Omega_{j+1}) > R_1 M_1 xi_j (SA 10115-10117). Layers are L_j = closure(Omega_j \ Omega_{j+1}), with Omega_{k+1} := ∅ for the depth-k sequence when it is used alone. The level-j M_1-grids are fixed, closed and nested: each level-(j+1) M_1-cube is a union of L^4 level-j M_1-cubes. The M'-grids refine them. K_j is the set of level-j M_1 grid cubes contained in L_j, and K is the union of the K_j. The profiles p, q and the cutoffs phi_κ, θ_κ, h~_κ are those of `h-walk.md` §3, with one added choice of the even profile p, fixed once:
+
+    p >= 1/2 on [-5/8, 5/8].                                                  (2.0)
+
+This is compatible with p = 1 on [-1/2, 1/2] and p = 0 off [-3/4, 3/4]. It is used only in §4.
+
+**Added gap hypothesis.** It replaces R_1 >= 64L in (G0) of `h-walk.md` and is the one `o1-decoupled.md` already assumes:
+
+    (G0')  R_1 >= 8 L^3.
+
+R_1 is a power of L chosen after L, so this costs nothing in the order of constants.
+
+**Enlargements.** For a level-i M_1 grid cube κ (in K or not), with centre c_κ:
+
+- κ^♭ is the closed concentric cube of side 4L M_1 xi_κ;
+- κ^♯ is the closed concentric cube of side 8L^2 M_1 xi_κ (`o1-decoupled.md` Definition D).
+
+For L >= 3 these satisfy κ^(4) ⊂ int κ^♭ and κ^♭ ⊂ κ^♯.
+
+**Candidates.** Cand(κ) is the set of level-i' M_1 grid cubes λ with i' ∈ {i-1, i, i+1} ∩ [0, k] and λ^(1/4) ∩ κ^(1/4) ≠ ∅. This set is defined from κ and the fixed grids alone, so it is the same for every sequence. That covers a cube that is present in one sequence and absent in another.
+
+**Agreement.** Two separated sequences S = (Omega_j) and S' = (Omega'_j) on the same torus, with the same grids, *agree on* a set G if Omega_j ∩ G = Omega'_j ∩ G for every j. §3 extends this to different tori.
+
+**Lemma N0 (membership is a trace test).** A level-j M_1 grid cube λ is in K_j iff λ ⊂ Omega_j and λ ⊄ Omega_{j+1}. So membership depends only on Omega_j ∩ λ and Omega_{j+1} ∩ λ.
+
+*Proof.* Omega_j is a union of level-j grid cubes, and two distinct cubes of one grid have disjoint interiors. So either λ ⊂ Omega_j or int λ ∩ Omega_j = ∅. Omega_{j+1} is a union of level-(j+1) cubes, each of which is a union of level-j grid cubes. So either λ ⊂ Omega_{j+1} or int λ ∩ Omega_{j+1} = ∅. If λ ⊂ Omega_j and int λ ∩ Omega_{j+1} = ∅, then int λ ⊂ Omega_j \ Omega_{j+1}, so λ = closure(int λ) ⊂ L_j. Conversely, let λ ⊂ L_j. Then λ ⊂ Omega_j, since L_j ⊂ Omega_j and Omega_j is closed. If also λ ⊂ Omega_{j+1}, every point of int λ has a neighbourhood inside Omega_{j+1}, which misses Omega_j \ Omega_{j+1}. Then that point is not in L_j, a contradiction. ∎
+
+**Lemma N1 (level window).** Let κ ∈ K_i and κ' ∈ K_{i'} with |i - i'| >= 2, and put m = max(i, i'). Then dist_∞(κ, κ') >= R_1 M_1 xi_{m-1} = (R_1/L) M_1 xi_m.
+
+*Proof.* Say i' >= i + 2. Then κ' ⊂ Omega_{i'}. By Lemma N0, int κ misses Omega_{i+1}, so int κ ⊂ Omega_{i+1}^c ⊂ Omega_{i'-1}^c, because i' - 1 >= i + 1 and the Omega's decrease. Separation gives dist_∞(Omega_{i'-1}^c, Omega_{i'}) > R_1 M_1 xi_{i'-1}. Pass to the closure of int κ. The case i >= i' + 2 is the same with the roles exchanged. ∎
+
+**Lemma N (repaired (C5)).** Assume (G0') and L >= 3. Let κ be a level-i M_1 grid cube, and let S, S' be separated sequences that agree on κ^♭.
+
+- (a) κ ∈ K_i(S) iff κ ∈ K_i(S').
+- (b) Let κ ∈ K_i. The cubes of K(S) whose cutoff phi meets κ^(1/4) = supp phi_κ all lie in Cand(κ), and they are exactly the cubes of K(S') with this property. Hence θ_κ^S = θ_κ^{S'} as functions on the torus. h~_κ depends on κ alone.
+- (c) The cut-down sequence of `h-walk.md` Lemma C is the same for S and S'. So is every object listed in (C2) at points of κ^(7/2): layers, tops, pillars, rows, omitted inward bonds and inner plaquettes.
+- (d) Size. κ^♯ meets at most the layers L_{i-1}, L_i, L_{i+1} (and, when i = 0, the outside of Omega_0). On κ^♯ the density of d_B is at most L/xi_κ, and the d_B-diameter of κ^♯ is at most 16 L^3 M_1.
+
+*Proof.* (a) Lemma N0, since κ ⊂ κ^♭.
+
+(b) Let κ' ∈ K(S) with phi_{κ'} ≠ 0 somewhere on κ^(1/4). Then κ'^(1/4) ∩ κ^(1/4) ≠ ∅, so dist_∞(κ, κ') <= (M_1/4)(xi_κ + xi_{κ'}) <= (M_1/2) xi_m, with m the larger of the two levels. If the levels differed by 2 or more, Lemma N1 would give dist_∞(κ, κ') >= (R_1/L) M_1 xi_m >= 8L^2 M_1 xi_m. So the levels differ by at most 1, and κ' ∈ Cand(κ).
+
+Every λ ∈ Cand(κ) lies in κ^♭. For λ of level i + 1, the condition λ^(1/4) ∩ κ^(1/4) ≠ ∅ gives |c_λ - c_κ|_∞ <= (3/4)(L + 1) M_1 xi_i. So λ lies in the concentric cube of half-side ((5L + 3)/4) M_1 xi_i <= 2L M_1 xi_i. Levels i and i - 1 give less.
+
+By Lemma N0, membership of λ in K(S) is decided by Omega_{i'} ∩ λ and Omega_{i'+1} ∩ λ, which S and S' share. The first paragraph applies to S' as well, by (a). So both sequences have the same contributing cubes, namely Cand(κ) ∩ K(S) = Cand(κ) ∩ K(S'). On κ^(1/4) the denominator of θ_κ is the sum of phi_λ over these cubes, so it is the same function for both. Off κ^(1/4), θ_κ = 0 for both. h~_κ is a fixed profile centred at c_κ.
+
+(c) Whether a point x lies in L_j depends only on the traces of Omega_j and Omega_{j+1} on a neighbourhood of x. int κ^♭ is an open neighbourhood of κ^(4), so the layers of S and S' agree on κ^(4). The indices i_0, i_1 of Lemma C, the boxes C_i (built from κ, κ^(7/2) and the M'-grids), and Omega^κ_i = Omega_i ∩ C_i with C_i ⊂ C_0 ⊂ κ^(4) are therefore the same for both. The objects of (C2) at x are decided within one pillar or row carrier of x, which is d_B-distance <= 4L. That is physical distance <= 4L^2 xi_κ < M_1 xi_κ / 2, so it stays inside κ^(4) when x ∈ κ^(7/2).
+
+(d) κ^♯ extends κ by (4L^2 - 1/2) M_1 xi_κ. Since κ ⊂ Omega_i and dist_∞(Omega_i, Omega_{i-1}^c) > R_1 M_1 xi_{i-1} >= 8L^2 M_1 xi_κ by (G0'), κ^♯ misses Omega_{i-1}^c when i >= 1. Since int κ ⊂ Omega_{i+1}^c and dist_∞(Omega_{i+1}^c, Omega_{i+2}) > R_1 M_1 xi_{i+1} >= 8L^4 M_1 xi_κ, κ^♯ misses Omega_{i+2}. By the definition of |Γ|_B (SA 10123: density xi_j^{-1} on L_j for j >= 1, and xi_0^{-1} outside Omega_1), the density on κ^♯ is at most xi_{i-1}^{-1} = L/xi_κ, or xi_0^{-1} = 1/xi_κ when i = 0. A straight segment in κ^♯ has Euclidean length at most 2 · 8L^2 M_1 xi_κ, hence d_B-length at most 16 L^3 M_1. ∎
+
+**Remark (the gate's counterexample against Lemma N).** In `gates/h-walk-gate.md` §3, κ has first-coordinate interval [-7s, -6s] with s = M_1 xi_j. The coarse cube λ = [0, Ls] × (tangential) has φ_λ(c_κ) > 0 for large odd L (the gate's L > 26). For L >= 23, λ^(1/4) meets κ^(1/4), so λ ∈ Cand(κ) ⊂ κ^♭. The two sequences of the counterexample differ on λ, so they do not agree on κ^♭, and Lemma N claims nothing about them. The counterexample also shows that a read set inside κ^(4) cannot work. A candidate of level i + 1 can reach (3/4)(L + 1) M_1 xi_κ from c_κ, beyond κ^(4) once L >= 6.
+
+**Lemma N2 (the read set of a stage-2 coefficient).** Assume (G0') and L >= 3. Let κ ∈ K_i, and let c be a row whose location lies in κ^(7/2) (§4: its midpoint; for the base-point convention, its initial point). Every κ'' ∈ K whose cutoff θ_{κ''} is nonzero at the location of c has level within 1 of i. Moreover κ''^♭ lies in the concentric cube of κ of half-side 3L^2 M_1 xi_κ, which is inside κ^♯.
+
+*Proof.* The location lies in κ''^(1/4) and in κ^(7/2), so dist_∞(κ, κ'') <= 4 M_1 xi_κ + (1/4) M_1 xi_{κ''} <= 5 M_1 xi_m. Lemma N1 and (G0') exclude a level difference of 2 or more, so xi_{κ''} <= L xi_κ. Then |c_{κ''} - c_κ|_∞ <= 4 M_1 xi_κ + (3/4) L M_1 xi_κ. Adding the half-side 2L M_1 xi_{κ''} <= 2L^2 M_1 xi_κ of κ''^♭ gives (2L^2 + 3L/4 + 4) M_1 xi_κ <= 3L^2 M_1 xi_κ for L >= 3. ∎
+
+**What Lemma N changes in `h-walk.md`.** (C5) is replaced by Lemma N(b)-(c): the geometric read set of κ is κ^♭, not κ^(4). Everything in (C1)-(C4) is unchanged, and so are the local matrices, which do depend only on κ^(4), as the gate notes. The only object that reads further is the normalising denominator of θ_κ. Lemma N2 bounds what a stage-2 local model reads through the coefficient j^(0).

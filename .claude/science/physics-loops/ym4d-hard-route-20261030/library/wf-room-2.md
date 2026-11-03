@@ -205,7 +205,7 @@ At real \(v\), \(U_{\mathbf B'}(v)=\Phi_{M_{\mathbf B'}(U)}(B(v))\) is the canon
 
 ### 4.6 Proof of (a)
 
-Under (H), \(\|w\|_*=\sup\lambda\,l|w|\le a_1\le a_*\le r_Q/2\). So existence and holomorphy follow from Lemma A', A1 and Theorem 3 for the \(C_1L^2a_0\)-regular datum \(M_{\mathbf B'}(U)\) (the averaging step of (6.4)), and Lemma D. Put \(\Psi_x=\lambda(x)^{-2}\psi_x\circ B\), and let \(R_2(v)\) be its Taylor remainder at \(0\). The linear term at the real point \(0\) is complex linear, and \(w=w_{\rm R}+iw_{\rm I}\). Hence the exact identity
+Under (H), \(\|w\|_*=\sup\lambda\,l|w|\le a_1\le a_*\le r_Q/4\). So existence and holomorphy follow from Lemma A', A1 and Theorem 3 for the \(C_1L^2a_0\)-regular datum \(M_{\mathbf B'}(U)\) (the averaging step of (6.4)), and Lemma D. Put \(\Psi_x=\lambda(x)^{-2}\psi_x\circ B\), and let \(R_2(v)\) be its Taylor remainder at \(0\). The linear term at the real point \(0\) is complex linear, and \(w=w_{\rm R}+iw_{\rm I}\). Hence the exact identity
 \[
  \Psi_x(w)=\Psi_x(w_{\rm R})+i\Psi_x(w_{\rm I})-i\Psi_x(0)+R_2(w)-R_2(w_{\rm R})-iR_2(w_{\rm I}).
  \tag{4.9}
@@ -232,16 +232,101 @@ Put \(\chi=\phi(d(x,\cdot))\) with \(\phi=1\) on \([0,1]\), \(\phi=0\) on \([2,\
  |\Psi_x(w_2)-\Psi_x(w_1+\chi h)|\le\lambda(x)^{-2}\sum_QC'e^{-\theta d'(x,Q)}\sup_Q\lambda\,\|h\|_{0}
  \le C''\lambda(x)^{-1}\sum_Qe^{-(\theta-\kappa)d'(x,Q)}\|h\|_{0,Q}.
 \]
-*Each far cell is far in \(d'\) relative to \(\lambda(x)\).* Let \(y\in Q\) and \(R=d'(x,y)\). Along a \(d'\)-geodesic, \(\lambda\le\lambda(x)L^2e^{\kappa R}\), so \(1<d(x,y)\le\int\lambda\,ds/\xi'\le\lambda(x)L^2Re^{\kappa R}\). Since \(R\le e^{\kappa R}/\kappa\), this gives \(e^{2\kappa R}\ge\kappa/(L^2\lambda(x))\). If \(\kappa/(L^2\lambda(x))\le1\), then \(\lambda(x)^{-1}\le L^2/\kappa\). Otherwise \(e^{-(\theta-\kappa)R/2}\le(L^2\lambda(x)/\kappa)^{(\theta-\kappa)/(4\kappa)}\le L^2\lambda(x)/\kappa\), once \((\theta-\kappa)/(4\kappa)\ge1\), i.e. \(\rho\ge10\log L/\theta\). In both cases \(\lambda(x)^{-1}e^{-(\theta-\kappa)d'(x,Q)/2}\le L^2\rho\,e^{\theta}/(2\log L)\). Write \(e^{-(\theta-\kappa)d'}=e^{-(\theta-\kappa)d'/2}e^{-(\theta-\kappa)d'/4}e^{-(\theta-\kappa)d'/4}\). The first factor absorbs \(\lambda(x)^{-1}\); the second is summable by (4.7) with \(\gamma=(\theta-\kappa)/4\); the third is at most \(e^{\theta}e^{-\theta_bd(x,y)}\) at the point \(y\) of \(Q\) where \(\|h\|_0\) is largest, using \(d\le d'\) and \(\operatorname{diam}_dQ\le2\). This proves (4.1), with \(\theta_b=(\theta-\kappa)/4\ge\theta/8\) for \(\kappa\le\theta/2\).
+*Each far cell is far in \(d'\) relative to \(\lambda(x)\).* Let \(y\in Q\) with \(d(x,y)>1\), and \(R=d'(x,y)\), so \(d'(x,Q)\ge R-2\). Along a \(d'\)-geodesic, \(\lambda\le\lambda(x)L^2e^{\kappa R}\), so \(1<d(x,y)\le\int\lambda\,ds/\xi'\le\lambda(x)L^2Re^{\kappa R}\). Since \(R\le e^{\kappa R}/\kappa\), this gives \(e^{2\kappa R}\ge\kappa/(L^2\lambda(x))\). If \(\kappa/(L^2\lambda(x))\le1\), then \(\lambda(x)^{-1}\le L^2/\kappa\). Otherwise \(e^{-(\theta-\kappa)R/2}\le(L^2\lambda(x)/\kappa)^{(\theta-\kappa)/(4\kappa)}\le L^2\lambda(x)/\kappa\), once \((\theta-\kappa)/(4\kappa)\ge1\), i.e. \(\rho\ge10\log L/\theta\). In both cases \(\lambda(x)^{-1}e^{-(\theta-\kappa)d'(x,Q)/2}\le e^{\theta}L^2/\kappa=e^{\theta}L^2\rho/(2\log L)\). Write \(e^{-(\theta-\kappa)d'}=e^{-(\theta-\kappa)d'/2}e^{-(\theta-\kappa)d'/4}e^{-(\theta-\kappa)d'/4}\). The first factor absorbs \(\lambda(x)^{-1}\); the second is summable by (4.7) with \(\gamma=(\theta-\kappa)/4\), which needs \(\rho>38\log L/\theta\); the third is at most \(e^{\theta}e^{-\theta_bd(x,y)}\) at the point \(y\) of \(Q\) where \(\|h\|_0\) is largest, using \(d\le d'\) and \(\operatorname{diam}_dQ\le2\). This proves (4.1), with \(\theta_b=(\theta-\kappa)/4\ge\theta/8\) for \(\kappa\le\theta/2\).
 
 *(c).* For the near part, \(\sup_{d(x,y)\le2}h_0e^{-\gamma d(y,S_0)}\le e^{2\gamma}h_0e^{-\gamma d(x,S_0)}\). For the far part, \(e^{-\theta_bd(x,y)}e^{-\gamma d(y,S_0)}\le e^{-\gamma d(x,S_0)}\), by \(\gamma\le\theta_b\) and the triangle inequality. \(\square\)
 
 ### 4.8 Order of constants; what is read; scope
 
-*Order.* \(L\); the flat and A1 constants; \(\delta_0\) (so \(\theta=\delta_0/8\)) and \(\delta\); then \(\rho\ge\rho_*:=\max\{\rho_0',8\log L/\delta,22\log L/\theta\}\); then \(r_*,r_D,r_Q,C_D,C_Q,K_L,C_b\); then \(a_*\) and \(d_*\). This is the order the row-91 gate requires (the separation chosen after F0's rate, `gates/a1-balaban-gate.md` 1, 3.7). No constant depends on the depth, the number of layers, \(\lambda\), the shape of \(Z\) or the volume.
+*Order.* \(L\); the flat and A1 constants; \(\delta_0\) (so \(\theta=\delta_0/8\)) and \(\delta\); then \(\rho\ge\rho_*:=\max\{\rho_0',8\log L/\delta,40\log L/\theta\}\) (\(\rho_0'\) of `a3-close.md` 1); then \(r_*,r_D,r_Q,C_D,C_Q,K_L,C_b\); then \(a_*\le r_Q/4\) and \(d_*\). This is the order the row-91 gate requires (the separation chosen after F0's rate, `gates/a1-balaban-gate.md` 1, 3.7). No constant depends on the depth, the number of layers, \(\lambda\), the shape of \(Z\) or the volume.
 
 *What is read of Definition A.* Only (A1)-(A3): the members are nested unions of aligned cubes (cells), the gaps are \(\ge\rho\) in the finer unit, and \(Z^\circ\subset T'_n\). For meets, the same, from Lemma J* and Prop. 7.1.
 
 *Comparison with the outline.* SA Theorem 5(b) asserts existence, holomorphy and a Lipschitz bound with weight \(e^{-c\delta d^\flat}\) at settled elements. Theorem L gives all three at every element of \(Z^\circ\), plus the a priori bound (a). In a single layer, (a) is Lemma T(b) at the ambient level, and (b) gives the increments that `wf-room.md` 3 obtained by Schwarz's lemma. So Theorem L also re-derives Lemma T(b) in its single-layer case, without the global radius \(c_TL^{p-n}\).
 
 *Label.* Theorem L is an **implication** from (T4), (AX), (AV), (MS), (6.2) and (DA), all gated except (6.2), which is re-checked here, and (DA), whose gate is pending in row 114. Same-model, ungated.
+
+## 5. Consequence: the layered room for the tower clauses (SA 15933)
+
+**Corollary R.** Take the setting of (LQ) and Theorem L, the shrinking coefficients (R22), and an outer substitution \(A'(z)=A'\boxplus z\mathbf H\), \(|z|<R\). Assume two premises:
+- (i) the assigned response decays from its source set \(S_0\) (the support of the integrated field): \(\|\mathbf H\|_{1,y}\le C_R(1+|\nu|)\delta_ke^{-\gamma_Hd(y,S_0)}\) in ambient units. This is the weighted form of (4.5), "choosing an exponential weight gives the first-response decay" (SA 10414-10415).
+- (ii) the nested geometry: an element of layer \(m\) separated from \(S_0\) by \(n\) layers has \(d(x,S_0)\ge cML(n-1)\) (`wf-room.md` 4.7, the gap of one later-level \(M\)-cube per layer).
+
+Put \(\gamma=\min\{\gamma_H,\theta_b\}\). Then every layered tower clause (3.1) at such an \(x\) changes by at most \(C|z|(1+|\nu|)s_k\rho_m\,e^{-\gamma cML(n-1)}\) in units of its radius. Its ratio to the coefficient gap \(\beta_s2^{-n}\) of (4.6) is at most \((C'/\beta_s)|z|(1+|\nu|)s_k\) once \(\gamma cML\ge\log4\). The bound is uniform in the number of layers.
+
+*Proof.* By `wf-room.md` (3.4), applied bond by bond, \(h_z=A'(z)-A'\) has \(\|h_z\|_{1,y}\le C|z|\|\mathbf H\|_{1,y}\). Theorem L(c) bounds the change of \(\Psi_x\) by \(C|z|C_R(1+|\nu|)\delta_ke^{-\gamma d(x,S_0)}\). Dividing by the layer-\(m\) radius gives the factor \(\delta_k/\alpha_{0,m}\le s_k\rho_m\le Cs_k(1+n)^{1/2}\), by (WF1)-(WF2). Then (4.7) of `wf-room.md` applies with \(D=\gamma cML\). \(\square\)
+
+*Scope.* The simple clauses of a layered space are pointwise and change by \(C|z|\|\mathbf H\|_{1,x}\), with the same decay. The current clause needs the decay of the current increment, which Section 6 gives through (5.5) in weighted norms. With Section 3 of `wf-room.md` (single layer) and Corollary R (tower clauses across layers), the outline's claim at SA 15933, "the quotient of its response bound by its margin contains \(2^\nu(1+\nu)^{1/2}e^{-c\delta_0ML(\nu-1)}\)", holds as an **implication** from premises (i)-(ii). The geometric premise (ii) belongs to rows 118-119 (GEO, the W3 gap). Premise (i) is the weighted first-response estimate of the first system, which `a3-derivative.md` (34) proves at \(s\equiv1\) and real-critical references, and the outline asserts for the decoupled system.
+
+## 6. First-system and removed-map current readouts (item 2)
+
+### 6.1 What the outline fixes, and what it does not
+
+The decoupled response (R9), written out at SA 10360-10379, has unknowns \((X,A_\bullet,\mathbf A,\mathbf H)\) and no multiplier. Its requirements are:
+- it vanishes at \(B'=0\);
+- it is real and gauge covariant;
+- it splits over wall-components when \(s\) vanishes on separating cubes, and is zero on a component with no datum;
+- at \(s=1\) over a critical real background it is the background response with \(F'(\mathbf H)=K_{\mathbf H}^{\mathsf T}\lambda\) (SA 10450-10458);
+- its reduced current is "a second component ... obtained from the constraint multiplier", of value \(L^{-3}\mathbf J+\mathsf j\) after one change of units, with the multiplier construction "required independently" (SA 5781-5785);
+- per SA 10423-10428, "its increment is formed from the multiplier, so that the second-order part of the gradient enters only through \((D^{\mathsf T}DA,He_c)=(DA,DHe_c)\)".
+
+No formula is given (C3). The second system has a multiplier, \(\lambda=H(s)^{\mathsf T}\mathbf J+\dots\), but "it is not substituted for the first system on arbitrary local cores" (SA 10447-10449).
+
+### 6.2 Specification (adopted here)
+
+Let \(\mathbf H=\mathbf H(s;P,B')\) be the first-system field on its domain \(Y\), at the pair \(\mathbf p(P)=(\mathbf U,\mathbf J)\). Let \(K_A\) be the derivative of the straightened rows at \(A\) in the chart at \(\mathbf U\), \(F'_{\mathbf U}(A)\) the chart gradient of the action at \(e^{i\eta A}\mathbf U\), and \(H(s)=\mathsf H(s)\mathsf m^{-1}\) the decoupled constrained minimiser of (R9). Put \(T(s)=(K_{\mathbf H}-K_0)H(s)\), an operator on rows. Define the first-system multiplier \(\lambda^{\rm I}\), its anchor \(\lambda^{\rm I}_0\) and the current increment \(\mathsf j\) by
+\[
+ \big(1+T(s)^{\mathsf T}\big)\lambda^{\rm I}=H(s)^{\mathsf T}F'_{\mathbf U}(\mathbf H),\qquad
+ \lambda^{\rm I}_0=H(s)^{\mathsf T}F'_{\mathbf U}(0),\qquad
+ \mathsf j=R_{\mathbf H}K_{\mathbf H}^{\mathsf T}\lambda^{\rm I}-K_0^{\mathsf T}\lambda^{\rm I}_0 .
+ \tag{6.1}
+\]
+Here \(R_A=(E_A^{\mathsf T})^{-1}\) is the chart conversion (5.2) of `wf-room.md`, and \(\mathsf j\) is its anchored readout (5.4) with \((A,\lambda,\lambda_0)=(\mathbf H,\lambda^{\rm I},\lambda^{\rm I}_0)\). The substituted pair carries the independent current \(\mathbf J+\mathsf j\), additively, as (R8) requires. The removed-map currents are the differences of (6.1) for the original and the box systems, each with its own \(H(s)\), field and anchor.
+
+### 6.3 Properties
+
+**(S1) Holomorphy.** By (5.1), \(\|T(s)\|\le C\|\mathbf H\|_X\|H(s)\|\le C\widehat b\,\|\mathbf H\|_X\), with \(\widehat b=Ce^{16\bar\kappa}\) the decoupled operator bound (SA 10400-10404). On the response ball \(\|\mathbf H\|_X\le C\widehat b\sup|B'|\) this is \(\le1/2\) once \(\sup|B'|\le c\widehat b^{-2}\), the ceiling SA already imposes. The inverse is then a convergent Neumann series, and \(\lambda^{\rm I},\mathsf j\) are holomorphic in \((s,A',\mathbf J,B')\) on the declared domain, real at real arguments. They do not depend on \(\mathbf J\); independence is a special case of holomorphy.
+
+**(S2) Vanishing at \(B'=0\).** There \(\mathbf H=0\), \(T=0\), \(K_{\mathbf H}=K_0\) and \(R_0=1\), so \(\lambda^{\rm I}=\lambda^{\rm I}_0\) and \(\mathsf j=0\). This holds for every independent current, as R9 requires, and unlike the force-only system (A) of `a3-clauses.md` (`wf-room.md` 5, last paragraph).
+
+**(S3) Splitting.** Suppose \(s\) vanishes on separating cubes thicker than the ranges of \(K\), \(F'\) and \(R\). Then \(H(s)\) is block diagonal over wall-components (SA: "the equations split"), and \(K_{\mathbf H}-K_0\), \(F'_{\mathbf U}\), \(R_{\mathbf H}\) are local. So (6.1) splits. On a component with no datum, \(\mathbf H=0\) there, so \(\lambda^{\rm I}=\lambda^{\rm I}_0\) and \(\mathsf j=0\) there. Gauge covariance and transport by common lifts follow because every operator in (6.1) is covariant: the current at a bond is based at its initial site and transported by \(\operatorname{Ad}\) there, the node transport of SA 5769.
+
+**(S4) Exactness on the physical locus.** Let \(s=1\), let \(\mathbf U=U\) be a real critical background with \(\mathbf J=J(U)=K_0^{\mathsf T}\lambda_0\), and let \(B'\) be real. Then \(K_0H(1)=1\) (`a3-derivative.md` (27)) and \(F'(\mathbf H)=K_{\mathbf H}^{\mathsf T}\lambda\) (SA 10450-10453). So
+\(H^{\mathsf T}F'(\mathbf H)=(K_{\mathbf H}H)^{\mathsf T}\lambda=(1+T^{\mathsf T})\lambda\), and uniqueness in (6.1) gives \(\lambda^{\rm I}=\lambda\). Also \(\lambda^{\rm I}_0=H^{\mathsf T}J(U)=(K_0H)^{\mathsf T}\lambda_0=\lambda_0\), since \(F'_U(0)=J(U)\). Hence
+\(\mathbf J+\mathsf j=R_{\mathbf H}K_{\mathbf H}^{\mathsf T}\lambda=R_{\mathbf H}F'(\mathbf H)=J(e^{i\eta\mathbf H}U)\),
+by `wf-room.md` (5.2). The assignment therefore agrees on the physical locus with the current of the critical configuration, as SA 15957-15959 requires.
+
+**(S5) Bounds.** Write \(F'_{\mathbf U}(\mathbf H)-F'_{\mathbf U}(0)=D^{\mathsf T}_{\mathbf U}D_{\mathbf U}\mathbf H+\Delta'_{\mathbf U}\mathbf H+N_{\mathbf U}(\mathbf H)\). The zeroth-order term \(\Delta'_{\mathbf U}\) includes the chart term bounded through \(\eta|J(\mathbf U)|\le C\alpha_0\xi^{-2}\) (`a3-clauses.md` (B1)), and the remainder is quadratic (`a3-derivative.md` (11)-(12), read at complex pairs as in (B2)-(B4)). Then
+\[
+ \lambda^{\rm I}-\lambda^{\rm I}_0=(1+T^{\mathsf T})^{-1}\Big[(D_{\mathbf U}H(s))^{\mathsf T}D_{\mathbf U}\mathbf H+H(s)^{\mathsf T}(\Delta'_{\mathbf U}\mathbf H+N_{\mathbf U}(\mathbf H))-T^{\mathsf T}\lambda^{\rm I}_0\Big],
+ \tag{6.2}
+\]
+and \(\lambda^{\rm I}_0=(D_{\mathbf U}H(s))^{\mathsf T}\mathcal F(\mathbf U)\), where \(\mathcal F(\mathbf U)\) is the plaquette field with \(F'_{\mathbf U}(0)=D^{\mathsf T}_{\mathbf U}\mathcal F\) and \(|\mathcal F|\le C\eta^{-2}|\partial\mathbf U-\mathbf 1|\le C\alpha_0\xi^{-2}\). Both identities are integrations by parts: the second derivative sits on \(H\), never on \(\mathbf H\), as the outline intends. Hence, in the weighted norms of `wf-room.md` 5,
+\[
+ \|\lambda^{\rm I}-\lambda^{\rm I}_0\|_{Y,w}\le C\,C_H\big(1+\|\lambda^{\rm I}_0\|_Y\big)\|\mathbf H\|_{X,w},\qquad
+ \|\lambda^{\rm I}_0\|_Y\le C\,C_H\alpha_0,
+ \tag{6.3}
+\]
+and then, by (5.5),
+\[
+ \|\mathsf j\|_{F,w}\le C\,C_H(1+C_H\alpha_0)\|\mathbf H\|_{X,w}.
+ \tag{6.4}
+\]
+This reads one operator input:
+
+(O1) *Weighted row sums for \(H(s)\) and \(D_{\mathbf U}H(s)\).* For a weight \(w\) of rate \(\le\theta\),
+\(\sup_cw(c)\,\eta^4\sum_b|H(s)(b,c)|\,\mathsf L_b^{-3}w(b)^{-1}\le C_H\) and the same for \(D_{\mathbf U}H(s)\) with \(\mathsf L_b^{-2}\). These are the column halves of BGR11, in the counting pairing.
+
+At \(s\equiv1\), (O1) is the BGR11 member of P82° (Theorem P (e), gated row 100) and of Theorem P\(^{\mathsf c}\) (e) (`a3-clauses.md`) at complex pairs. For decoupled \(s\) it is part of the outline's statement 4 and walk expansions (1c.7, "each decoupled operator has norm at most \(\widehat b\)"), which the library has not rebuilt: `h-walk.md` covers \(\chi_Y\mathsf A\chi_Y\), not \(H(s)\). So (O1) is **cited-pending** for \(s\ne1\), with \(C_H=C\widehat b\).
+
+*Proof of (6.3)-(6.4) from (O1).* Use the duality of the pairing row by row. For a row \(c\),
+\(|(D H e_c)^{\mathsf T}D\mathbf H|\le\eta^4\sum_b|DH(b,c)||D\mathbf H(b)|\le\|\mathbf H\|_{X,w}\,\eta^4\sum_b|DH(b,c)|\mathsf L_b^{-2}w(b)^{-1}\),
+and (O1) gives \(C_Hw(c)^{-1}\). The \(H^{\mathsf T}\) terms are the same with \(\mathsf L_b^{-3}\), since \(|\Delta'\mathbf H|+|N(\mathbf H)|\le C(\alpha_0+\|\mathbf H\|_X)\mathsf L^{-3}\|\mathbf H\|_{X,w}w^{-1}\). For \(\lambda^{\rm I}_0\), use \(|\mathcal F|\le C\alpha_0\mathsf L^{-2}\) and the \(DH\) row sum with \(w\equiv1\). Finally \(\|T^{\mathsf T}\mu\|_{Y,w}\le C\|\mathbf H\|_{X,w}\|\mu\|_Y\) by (5.1), and \(\|(1+T^{\mathsf T})^{-1}\|\le2\) in every weight. \(\square\)
+
+**(S6) Removed maps.** Let \((\mathbf H,\lambda^{\rm I})\) and \((\mathbf H^\square,\lambda^{{\rm I},\square})\) be the original and box systems, with operators \(H(s)\), \(H^\square(s)\). Then \(\mathsf j-\mathsf j^\square\) is the difference of (5.4) at two arguments, plus the change of the operator. By (5.6) along the segment, and by (6.2) for the multiplier difference,
+\[
+ \|\mathsf j-\mathsf j^\square\|_{F,w}\le C\big(\|\mathbf H-\mathbf H^\square\|_{X,w}+\|(H(s)-H^\square(s))\|_{\rm (O1)}\,(\|\mathbf H\|_{X,w}+\alpha_0)\big).
+\]
+So the removed current inherits the removed factor \(e^{-cM/\sigma_j}\) exactly when the field difference and the operator difference carry it. That is the outline's "compatible boundary comparison" (SA OA7 paragraph), **cited-pending**, the same input the removed field needs.
+
+**Verdict on item 2.** The first system does not determine a current (C3). Specification (6.1) is admissible: it is holomorphic, anchored, splitting and covariant, and exact on the physical locus. With it, the outer and removed current readouts are instances of `wf-room.md` (5.4), and their bounds (6.4) and (S6) are implications from (O1), proved at \(s\equiv1\) and pending for decoupled \(s\), together with the removed boundary comparison. The match asked for in row 116 is done for the formula; it is not closed for decoupled \(s\).

@@ -84,3 +84,53 @@ Assume (P1)-(P3). Then
 *Proof.* The ceilings give Lemma B on B_s. Indeed 4Bs < ε_K is 4Bc < p_0(g), and p_0 increases as g decreases. By (P1), Z(0) ≥ ∫ρ_{K,S_0} dV ≥ ∫_{B_s} ρ_{K,S_0} dV. On B_s, χ_K = 1 by Lemma B(iii). So (P2) and (P3) give ρ_{K,S_0} ≥ e^E exp[−x_K A(U_K(V)) − E_−N]. By Lemma B(i) and x_K ≤ 2θ, x_K A(U_K(V)) ≤ 2θ·48B²c²θ^{-1}N = 96B²c²N. By Lemma H and independence of the 4N bonds, the Haar mass of B_s is at least (8c³θ^{-3/2}/(3π³))^{4N}. Multiplying, e^{−E}Z(0) ≥ exp[−(E_− + 96B²c²)N]·(8c³/(3π³))^{4N}·θ^{-6N}, which is (F). ∎
 
 **Remarks.** (a) The exponent 6 = ½·d·dim SU(2) per site, as in SA L23185. (b) Every ceiling is on γ alone, after L, B, a_1, c_M, c. So the order of constants of SA L19476 is kept. (c) Under first passage, θ_K lies in a fixed window above g^{-2}, so C_F + 6 log θ is a constant C_g (SA L23573-23580). (d) Lemma B(i) is the "action bound which must be verified" of SA L23497-23500. Lemma B(iii) is its "inclusion in the characteristic set". Both are now implications from the checked A1 and the adopted Definition A. The outline's elementary bound C_A = 48 for the coarse Wilson action (SA L23527-23535) is not used.
+
+## 2. What (P1)-(P3) read, and their state
+
+| Premise | Outline source | What it reads | State here |
+|---|---|---|---|
+| (P1) positivity, exactness | 1a.2.3 (L7463); Theorem 2.1; clause (vii) (L19420) | C1: every operation is a total Borel positive kernel or change of variables (SA L4041) | open (`t0-skeleton.md` C1: map only; ledger: extreme) |
+| (P2) the form at S_0 | Theorem 2.1 (L17262); 1a.2.7 (L7501); 1a.2.9 (L7598-7620) | the whole induction: the one-step map 1.6 (B4) at real data for S_0, and the healed sums of R, which enter S_0 through the label-free R^{(j)} (SA L17548: "what R leaves is added"), so 2.10; class preservation, Theorem 2.11 (C4) | open |
+| (P3) volume bound at S_0 | 1a.2.7, "when the label has no large fields, abs(𝐄_k(U_k)) + abs(𝐑_k(U_k)) ≤ C abs(T^(k))" (L7514); Theorem 2.1, first inequality (L17283) | the age gain of the regular terms (SA L19426, L19502-19510), so B2 (pointed marginal extraction, L3937) at the never-large background; the norm clauses ‖E^(j)‖ ≤ E_0, ‖R^(j)‖ ≤ g_j^κ0 | open (B2: `t0-skeleton.md` cited; ledger: extreme) |
+
+**Why (P2) is a label statement, not a history statement.** One could try to keep only the history with no large field at any step. Its term is at most ρ_{K,S_0}, by positivity. But its exponent does not carry the R^(j): those contain the healed sums. E contains Σ_X R^(j+1)(X, 1) at every level (SA L7499). So that history's density is not normalized by e^{−E} up to an error O(N). The floor must use the label S_0 with its healed sums.
+
+**Why (P3) is not a consequence of the norm clauses.** Take ‖E^(j)‖_{j,κ} ≤ E_0 alone. A second-order Cauchy bound at U = U_K(V), V ∈ B_s, gives per level j about C E_0 B²c² (θ_j/θ_K)(log θ_j)^{-2q} N, with α_{0,j}^{-2} = cθ_j(log θ_j)^{-2q} (SA L19432). By the flow, θ_j ≈ θ_K + λ(K − j). So the sum over j diverges like K²/(θ_K(log K)^{2q}). Taking a smaller ball radius s does not repair this: it costs 12 log(1/s) per site, which then grows with the cutoff. The outline's tent example (SA L19426-19432) is an array that meets every norm clause and adds the same multiple of the action at every level. So (P3) needs the cancellation by each member's own counterterm b_j A. That cancellation is B2.
+
+**The R-part of (P3) needs no cancellation.** Every level is carried: 𝐑_K = Σ_{j≤K} Σ_X [R^(j)(X,U) − R^(j)(X,1)] (SA L17541; a carried term is unchanged, SA L19523). At the never-large background a level-j R-term costs a second-order Cauchy factor, which is the weight w_{K,j} ≤ C(K + 2 − j) of SA L19505. With ‖R^(j)‖ ≤ g_j^{κ0} and κ0 > 4, Σ_j w_{K,j} g_j^{κ0} converges. Section 4 proves this part, given its path lemma. Only the E-part needs B2.
+
+**First input not yet proved, for the floor.** In reading order it is (P1), the positivity clause C1. (P2) and (P3) are open as well. Of the three, (P3) is the one the floor adds to plain membership of the class. Its first open input is B2 at the never-large background. Section 4 reduces (P3) to one Hessian statement.
+
+## 3. The upper stability bound OH4 (SA L23439)
+
+### 3a. Theorem U (OH4 from OH1-OH3)
+
+Let Z(w) = Σ_S τ_S(w)(𝒱) with finitely many labels (OH1). Put Z̃(w) = e^{−E−ℰ(w)}Z(w), where ℰ(w) = Σ_{j,X} e_j(X;w) and ℰ(0) = 0. Let ℰ_S(w) be the vacuum constant of the term of label S; it is a number, not a function of V. Assume (OH2) ‖e^{ℰ_S(w)}τ_S(w)‖_TV ≤ W_S and Re[−E − ℰ(w) − ℰ_S(w)] ≤ C_0N + q(S), and (OH3) Σ_S e^{q(S)}W_S ≤ e^{C_1N}. Then |Z̃(w)| ≤ e^{(C_0+C_1)N}.
+
+*Proof.* Z̃(w) = Σ_S e^{−E−ℰ(w)−ℰ_S(w)}·[e^{ℰ_S(w)}τ_S(w)](𝒱). For a complex measure μ, |μ(𝒱)| ≤ ‖μ‖_TV, and |e^z| = e^{Re z}. So |Z̃(w)| ≤ Σ_S e^{C_0N+q(S)}W_S ≤ e^{(C_0+C_1)N}. ∎
+
+The proof takes no logarithm of Z and uses no zero-free region, as SA L23440-23447 says. Checked here line by line against SA L23385-23447: correct. At w = 0, Z̃(0) = e^{−E}Z(0), with the same E as in Theorem F. So Theorems F and U together give e^{−(C_F+6 log θ)N} ≤ Z̃(0) ≤ e^{(C_0+C_1)N}.
+
+### 3b. How the construction is to supply OH2 and OH3
+
+This is the outline's own assignment (SA (4c), L23153-23172, and L19380-19404), with the library pieces placed in it.
+
+- **Term comparison (OH2, first half).** Put W_S := e^{ℰ_K(S)} τ^abs_{S,c_L}(𝒱) e^{c_L Σ_l|Γ_l|}. Here τ^abs_{S,c} is the label's positive majorant with the reserve weight e^{c·v(ω)} on every local history and the complex suprema inside the integrals (SA L17270-17278). Γ_l are the determining bonds of level l; for S_0 the sum is 4N. The comparison |e^{ℰ_K(S;w)}τ^w_S|(𝒱) ≤ W_S reads three things. (i) (OSF10): if |Ψ_ω| ≤ fN_ω, V_ω ≥ AN_ω, A ≥ f and c_⋆ ≥ 1, then |e^{Ψ_ω}| ≤ e^{c_⋆V_ω}; this is elementary and correct. (ii) (OSF13): the size recursion gives |Ψ_ω| ≤ max{C_W c̄ + 2c_int(1+c̄), f}·N_ω by induction on the nesting, since N_ω = N^0_ω + Σ N_ω'; correct given (OSF12). (iii) (OSF12): the formation bounds for the actual formed source exponents (OSF11) on the whole complex data box, with the carrier oscillation bounds of SA L23104-23140. (iii) is open.
+- **Exponent bound (OH2, second half).** q(S) is the label's missing vacuum share plus its missing source-energy share. The vacuum part is the exact slot algebra of `sa-2.13.md` Section 2: (N_j − abs(A_j))e_j plus redone-site terms. It is proved there and checked (`pre-213.md` 1a). The source part is at most Σ_j(C log θ_{j−1} + C)#_j Z_j^+ (SA L23163), given (OH7). (OH7) is elementary from the local bounds abs(ΔE_j), abs(ΔR_j) ≤ C e^{−κd_j(X)} (SA L23547-23565). Those local bounds are D1's localized source energies, which are open.
+- **Weighted label sum (OH3 = OSF16).** Σ_S e^{q(S)}W_S ≤ e^{C_1N} is (8.2) of `sa-2.13.md` Theorem 8.1, at a weight c ≥ c_L and with a load 𝓛_c(S) ≥ c_LΣ_l abs(Γ_l) − 4c_LN + q(S). The load (6.4) of that note dominates the determining-bond and defect parts. Theorem 8.1 is checked by Claude as a conditional implication (`pre-213.md` 1a, ADVANCE).
+
+### 3c. The inputs of Theorem 8.1, and their state
+
+| Hypothesis of Theorem 8.1 | Pieces | State |
+|---|---|---|
+| 1. Geometry and code | Lemma 4.1, (4.2), (5.1)-(5.7), (6.4) | proved by Codex, checked by Claude (`pre-213.md` 1a); premises: the read-address ownership (SA 18449-18470, open) and GEO1-GEO6 (checked under three supplied rules) |
+| 2. (8.1), unsummed certificate for the literal operations | stored cut (4.1) of `sa-2.13-2.md` | `carrier-adopt.md` Theorem A: proved by Claude, not yet checked by Codex |
+| | complex-pair remainder V_X: (Pre) | `pre-213.md` Theorem P: proved by Claude, not yet checked by Codex (check in row 169) |
+| | V_X: (Inn), the inner comparison | **open** (row 169) |
+| | V_X: (Act), retained activities and the localisation of SA 17890-17910 | open |
+| | V_X: (Ref), the reference denominator | Proposition Ref, log-ratio ≤ 4δ_*: checked (`ref-chart.md`; rows 140, 146) |
+| | real denominator price at p_r | `sa-2.13.md` Lemma 3.1: checked (one-sided) |
+| | the complex-pair envelope SA 18029-18105, 18719-18876 | open |
+| 3. Exact normalized assembly | the healed-history summation and the vacuum identity on the actual exponent and measures | open |
+
+**First input not yet proved, for OH4.** Reading OH4's proof in order: OH1 needs the sourced exact representation, which is C1 (open), as for the floor. Then OH2 needs (OSF12) and the local source energies (open). Then OH3 needs Theorem 8.1, whose first unproved input, in its own order, is hypothesis 2: (8.1) for the literal operations. Inside (8.1) the first open piece is (Inn), the inner comparison of V_X (row 169). (Pre) and the stored cut are proved by Claude and wait for Codex's check.

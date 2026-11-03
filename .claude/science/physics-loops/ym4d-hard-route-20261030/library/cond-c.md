@@ -13,7 +13,16 @@ Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of the
 
 ## 0. Result
 
-(Written last; see the end of this file.)
+Status: finished 2026-11-03 (worker).
+
+- **Check (Section 1).** `library/wf7-bf.md` checked line by line by Claude, first failing step none. Four defects, none breaks a consumer.
+- **Top layer: the outline's windows give (C) (Theorem C1).** If the base point z lies in the level-k member Omega_k, outside a level-k drop-out kept through all N_k stages, then the outline's window R_z lies in Omega_{k-1}. So (C) holds. The reason is the two-cell padding of a step and its fates: the top gap is at least 2 s_k (Lemma T), and s_k >= LM xi_k because Rcheck_k >= L (Lemma F). The distance stays bM/sigma_j.
+- **Lower layers: the outline's windows violate (C) (Example C3(a)).** For an old base point in a layer p < k near a seam of level <= j, every box that contains the outline's ball B(z, 2 M xi_k) violates (C), on an explicit admitted label. Near such a seam no box with (C) gives the age factor sigma_j, by any placement or size; the meet keeps (C) but loses the single-scale premise (Lemma N).
+- **Filing (Rule W) and Theorem C2.** Use the outline's window at top-layer base points. Elsewhere use a window one level below the local layer p (or at level j if p = j). Then (C) holds for every old base point at every step. The distance is of order M/sigma_j at the top layer and M/sigma_{j,p} in layer p.
+- **Consumers (Section 6).** WF13a and WF8-WF10 read Rule W. WF11-WF12 read it at the top layer, with c/L in place of c inside kept nests. For lower layers, Proposition L proves that (WF15) holds with an extra summable age weight, given the layer decay (LD) of the step direction.
+- **What stays open.** (LD) at decoupled s, which is the layered form of (O1); it holds at s = 1 by T4, MS and Lemma BC. The analytic inputs of `wf7-bf.md` are unchanged. With Rule W, (C) is discharged as a premise of WF7; what the lower layers add is (LD), read by (WF15).
+
+Proved by Claude, not yet checked by the other model (Sections 2-7).
 
 ## 1. Check of `library/wf7-bf.md` (Codex)
 
@@ -101,7 +110,7 @@ QED.
 
 Let z be the centre of the level-j cell at offset (8,0,0,0) from c_0. It lies one cell layer inside Lambda_j, so it is an old base point of level j. Its distance to Omega_j^c is delta_z = 3.5 s_j. At step k it lies in layer j: it is within 2 s_j of Z_j, hence inside Yhat^{~8} for the step j+1, so it is not in Omega_{j+1}.
 
-The outline gives z a current window Box_k(z) of level k, and R_z contains Box_k(z)^{~2}, which contains B(z, 2 M xi_k). Take k with 2 M xi_k > 3.5 s_j + rho xi_j, that is 2 L^{k-j} > 3.5 Rcheck_j + rho/M. Let x_0 be in Omega_j^c with \|z - x_0\| = delta_z. Then d(x_0, R_z^c) >= 2 M xi_k - 3.5 s_j > rho xi_j >= e_j, so x_0 is in T_j(R_z) by (A3). But x_0 is not in Omega_j. So **(C) fails at q = j** for both endpoint sequences. Lemma CR does not apply. By the Cartan computation of `wf7-bf.md` Section 5, the pure-tower map then differs from the localised map, which Lemma CR does identify with the physical endpoint.
+The outline gives z a current window Box_k(z) of level k, and R_z contains Box_k(z)^{~2}, which contains B(z, 2 M xi_k). Take k with 2 M xi_k > 3.5 s_j + rho xi_j, that is 2 L^{k-j} > 3.5 Rcheck_j + rho/M. Let x_0 be in Omega_j^c with \|z - x_0\| = delta_z. Then d(x_0, R_z^c) >= 2 M xi_k - 3.5 s_j > rho xi_j >= e_j, so x_0 is in T_j(R_z) by (A3). But x_0 is not in Omega_j. So **(C) fails at q = j** for both endpoint sequences. Lemma CR does not apply. By the Cartan computation of `wf7-bf.md` Section 5, the pure-tower map then differs from the localised map, which Lemma CR does identify with the physical endpoint. The example does not depend on the side of the current window: for side w xi_k with fixed w > 0, R_z contains B(z, 2 w xi_k), and the same argument works once 2 w L^{k-j} > 3.5 M Rcheck_j + rho.
 
 **Example C3(b): a kept nest at the top.** Let X be a level-k drop-out with N_k completed stages whose nest has gap exactly m_l at every level. SA admits this ("an equality in the upper part of a nest", SA 17402-17404). `geo-2.md` Sections 3-4 build such nests, checked in `gates/geo-gate.md` Section 2. A point z of X minus Z''_k next to Z''_k lies in Omega_k and has d(z, Z''_j) < (m_k + m_{k-1} + ...) + eta < (L/(L-1)) M xi_k + eta for k_flat < j < k. If an old level-j base point sits there, R_z contains B(z, 2 M xi_k), which contains points of Z''_j (a subset of Omega_j^c) at depth > (2 - L/(L-1)) M xi_k - eta > rho xi_j. So (C) fails at q = j. Lemma M allows such base points when s_j <= d(z, Z''_j), for example when Rcheck_j <= L^{k-j-1}. Whether the regular index map puts members inside drop-out nests is a property of the history operation that this note does not settle. The filing of Section 5 covers this case either way.
 
@@ -116,9 +125,9 @@ So the requirement "the distance stays M/sigma_j" cannot be met at lower-layer b
 ## 5. The filing (Rule W) and Theorem C2
 
 **Rule W.** For an old base point z of level j < k, put p = p(z) = max{q <= k : z in Omega_q}, using the common members. Then p >= j.
-- **(W1)** p = k, and z is not in a level-k drop-out with N_k completed stages. Use the outline's window: Box(z) = Box_k(z), a pi_k-cube, and R_z = Box(z)^{~a} with 3 <= a <= 2L - 2.
-- **(W2)** j < p in every other case. Box(z) is the pi_{p-1}-cube that contains z, and R_z = Box(z)^{~a} in that partition, with 3 <= a <= L - 2.
-- **(W3)** j = p. Box(z) is the pi_j-cube that contains z, and R_z = Box(z)^{~a}, with 3 <= a <= L - 2.
+- **(W1)** p = k, and z is not in a level-k drop-out with N_k completed stages. Use the outline's window: Box(z) = Box_k(z), a pi_k-cube, and R_z = Box(z)^{~a} with 4 <= a <= 2L - 2.
+- **(W2)** j < p in every other case. Box(z) is the pi_{p-1}-cube that contains z, and R_z = Box(z)^{~a} in that partition, with 4 <= a <= L - 2.
+- **(W3)** j = p. Box(z) is the pi_j-cube that contains z, and R_z = Box(z)^{~a}, with 4 <= a <= L - 2.
 
 In every case the near sum runs over X containing z with X in Box^{~2}, in the partition of Box(z). The grouped directions are the windows of the fixed direction partition that meet the b-layer neighbourhood of Box^{~2}, with 1 <= b <= a - 3. One box map serves every X. The tower is Definition A's first rule, cut at depth j. R_z is a level-j cubical subdomain: a pi_{p-1}-cube is a union of pi_j-cubes when j <= p - 1, because the grids are nested (powers of L, centred).
 
@@ -136,3 +145,74 @@ In each case R0 gives (C). Separation, alignment, boundary rows, read sets and r
 - (W3): D >= bM - 2. No age factor is used there (Section 6.2).
 
 So the distance stays of order M/sigma_j at every top-layer base point, (W1) or (W2) with p = k. At a lower-layer base point it is of order M/sigma_{j,p}. A larger scale cannot serve WF8 there: in layer p the field passed the tests of level p and failed those of level p+1, so it is small only at the scale xi_p. Near a seam of level <= j, Lemma N limits the box further, to the distance from that seam.
+
+## 6. The consumers read Rule W
+
+### 6.1 WF13a
+
+WF13a reads Rule W without change of form.
+- Declared domain R_z, fine-cube base B_z = Hull_{pi_k} R_z. In (W1) these are the outline's. In (W2) and (W3), R_z has side at most (2a+1) M xi_{k-1} <= (2L-3) M xi_{k-1} < 2 M xi_k, so B_z has at most 3^4 cubes of pi_k. C_win stays a fixed constant, and (WF13c) keeps d_k(Y) <= C_h (m+1).
+- One box map for every X of the near sum; the own tent action has support within O(xi_j) of z, inside R_z.
+- Long members: a connected X that contains z and leaves Box^{~2} has tree length at least side(Box)/(M xi_j) in old M-cubes. So the long-domain tail (5) of `wf7-bf.md` holds with b_1/sigma_{j,p-1} (W2) or b_1 (W3) in place of b_1/sigma_j.
+- If the direction windows are coarser than Box(z), as can happen in (W2) and (W3), every direction that R_z reads is grouped. The complementary term is then zero, and the identity (2) is unchanged, since it holds for any partition of the direction.
+
+### 6.2 WF8-WF10
+
+- **(W1).** Nothing changes. The box, tower, datum and near sum are the outline's. (C) is now proved, not assumed.
+- **(W2) with p = k (kept nests).** SA's argument runs at the window scale xi_{k-1}. The Taylor ratio is sigma' = xi_j / xi_{k-1} = L sigma_j, and a window holds at most C_M (L sigma_j)^{-4} old base points. So the base-point sum of (WF8) is at most C_M L^{-4} sigma_j^{-4} C g_j [rho_j^2 L^{4+alpha_H} sigma_j^{4+alpha_H} + rho_j^3 L^6 sigma_j^6] <= C L^2 g_j rho_j^3 sigma_j^{alpha_H}. This is (WF9) with C L^2 in place of C. (WF10) keeps its form: C_M L^{-4} sigma_j^{-4} C d_j rho_j^2 L^4 sigma_j^4 = C d_j rho_j^2.
+- **(W2), (W3) with p < k (lower layers).** SA's argument (SA 15996-16084) runs at the local level p in place of k. Its premises hold:
+  - the box is a pure tower of one scale with collars, as the pointed window theorem requires (SA 13472-13473);
+  - its boundary is at level-j distance at least (a/2) M xi_{p-1} / xi_j, comparable with 1/sigma_{j,p} (SA 13537-13540);
+  - R_z lies in Omega_{p-1}, so the local input pair on R_z has resolved levels p-1 or higher, and its affine and Holder sizes are those of a level-(p-1) pair. This costs fixed powers of L.
+  The result is WF9_loc <= C g_j rho_{j,p}^3 sigma_{j,p}^{alpha_H} and WF10_loc <= C d_j rho_{j,p}^2, with rho_{j,p} = max{1, alpha_p / alpha_j} <= C (1+p-j)^{1/2}. In (W3) the local age is zero and only Cauchy's inequality is used, as SA does at j = k (SA 16073-16083).
+
+These statements read the box-map package of SA (the "Third" hypothesis, SA 15821-15826: weighted first response, Holder and compatible boundary comparison) for boxes of Rule W. Those boxes are pure Definition A towers of cubes, the same kind of object as the outline's. So the package is the same input as before, at more levels. It is not proved here.
+
+### 6.3 WF11-WF12 at top-layer base points
+
+(W1): unchanged. (W2) with p = k: the factor is e^{-cM/(L sigma_j)}, so (WF11) and (WF12) hold with c/L in place of c. The proof of (WF12) by e^x >= x^n/n! is unchanged (`wf7-bf.md` Section 4).
+
+### 6.4 Proposition L: lower layers, conditional on layer decay
+
+At a lower-layer base point the local (WF9) has the gain sigma_{j,p}^{alpha_H} of the local age p - j, not sigma_j^{alpha_H}. The outline's count of sigma_j^{-4} base points per level-k window then needs a second small factor: the step's direction must be small across the k - p layers between the base point and the integration region. This is the hypothesis below.
+
+**(LD) Layer decay.** On the admitted discs, every datum row c of a Rule W box whose carrier lies in layer p of the common sequence satisfies
+  \|v'_c\| <= C_R delta_k (xi_c / xi_p) e^{-theta_L (k-p-1)_+},   with theta_L > 5 log L.
+
+**Proposition L.** Assume (LD) and the inputs of Section 6.2. Then the lower-layer members add to (WF15), per level-k fine cube, at most C s_k sum_{j<=k} omega^L_{k+1-j} g_j, plus the analogous vacuum-only term C s_k sum_j rho_j^2 d_j. Here
+  omega^L_n = sum over a + b = n - 1, b >= 1, of (1+a)^{3/2} L^{-alpha_H a} L^{4(b+1)} e^{-(theta_L - 1)(b-1)},
+and sum_n omega^L_n < infinity. So (WF15) holds with omega_n replaced by omega_n + omega^L_n, which is still summable.
+
+*Proof.* Fix a lower-layer base point z of level j, with p = p(z) < k.
+1. *Room.* R_z meets only the layers p-1, p and p+1: it lies in Omega_{p-1}, and by Lemma G d(z, Omega_{p+2}) >= m_{p+2} > r(R_z, z). On rows in layer p+1 or p-1, (LD) gives the layer-p bound times at most e^{theta_L} or L, fixed factors. So by (LD), T4 and the MS row sum (as in `wf7-bf.md` (3)-(4)), the pair on X moves by at most C_R \|nu\| delta_k sigma_{j,p} e^{-theta_L (k-p-1)_+} per unit nu, in level-j units, with a larger fixed C_R. Divide by the radius alpha_j. Use delta_k / alpha_j = s_k alpha_k / alpha_j <= s_k rho_j, with rho_j <= C (1+k-p)^{1/2} (1+p-j)^{1/2}, and (1+p-j)^{1/2} sigma_{j,p} <= C_age as in (WF2). The normalized displacement is at most C \|nu\| s_k e^{-(theta_L - 1)(k-p-1)_+}. So the substitutions stay in the fixed room on the disc \|nu\| < c_nu e^{(theta_L - 1)(k-p-1)_+} / s_k, by the argument of (WF6).
+2. *One Cauchy factor.* Subtract the value at nu = 0. On that disc the window function is bounded by WF9_loc (or WF10_loc). Cauchy's formula gives C s_k e^{-(theta_L - 1)(k-p-1)_+} times WF9_loc for the derivative at zero, exactly as in SA 16087-16099.
+3. *Complementary part.* By (4) of `wf7-bf.md` with (LD), it is at most C s_k g_j rho_j sigma_{j,p}^{-3} e^{-cM/(L sigma_{j,p})} e^{-(theta_L - 1)(k-p-1)_+} per window, after the local base count. (WF12) at the local age absorbs sigma_{j,p}^{-3} e^{-cM/(L sigma_{j,p})} into C rho_{j,p}^2 sigma_{j,p}^{alpha_H}.
+4. *Count.* A level-k fine cube holds at most (M xi_k / (M xi_{p-1}))^4 = L^{4(k-p+1)} windows of level p-1. Multiply steps 2-3 by this count, put a = p - j and b = k - p >= 1, and sum over p. This gives omega^L. In (W3) a = 0.
+5. *Summability.* sum_n omega^L_n <= (sum_a (1+a)^{3/2} L^{-alpha_H a}) (sum_b L^{4b+4} e^{-(theta_L - 1)(b-1)}). Both series converge, the second because theta_L - 1 > 4 log L. QED.
+
+*Standing of (LD).* At s = 1 it follows from T4 (decay e^{-theta d_B} in local units: `wf-room-2.md` Section 1, `a3-derivative.md` 7.3-7.6), the MS row sum, AV, and Lemma BC (`geo-5.md` Section 3.6: d_B(y, E) >= c_g (k-p-1)_+ for a top y of layer p and E in Omega_k). This gives theta_L = theta c_g / 2 >= 32 log L, by the floor theta c_g >= 64 log L. At decoupled s, (LD) is the row-sum bound (O1) of `wf-room-2.md` Section 6 read in the layered metric. It is pending, like (O1). SA 15933-15940 states the outline's own layered room factor 2^nu (1+nu)^{1/2} e^{-c delta_0 M L (nu-1)}, which is the same mechanism.
+
+## 7. What is proved, what stays open, changes for owners
+
+**Proved here (Claude, not yet checked by the other model):**
+- Lemma G: consecutive gaps d(Omega_{i-1}^c, Omega_i) >= m_i, a factor L above the bound printed in `geo-5.md`, from the same case list.
+- Lemma T: the top gap is at least 2 s_k at the current label, except inside a level-k drop-out with N_k stages.
+- Theorem C1: (C) for the outline's windows at every top-layer base point outside such drop-outs. No change of filing is needed there.
+- Example C3(a): an admitted label where the outline's level-k window of a lower-layer base point violates (C). Example C3(b): the same at a kept nest, if members sit there.
+- Lemma N: near a seam of level <= j, no pure-tower box with (C) reaches farther than delta_z + rho xi_j. So the age factor sigma_j cannot be kept there by any placement or size, and the meet fails the single-scale premise.
+- Rule W and Theorem C2: (C) for every old base point at every step, with distance of order M/sigma_j at the top layer and M/sigma_{j,p} in layer p.
+- Sections 6.1-6.3: WF13a, WF8-WF10 and, at the top layer, WF11-WF12 read Rule W, with fixed powers of L in their constants.
+- Proposition L: given (LD), the lower layers add the summable weight omega^L to (WF15).
+
+**Not used:** the half-cell profile (5.1), the face-movement rule, GEO1-GEO3, GEO5, GEO6 and W3. They describe the component geometry of 2.8. (C) reads only Definition A, the step padding, the fates and the frame.
+
+**Open, in order of difficulty:**
+1. (LD) at decoupled s: the layered form of (O1) (`wf-room-2.md` Section 6). It is needed only for lower-layer members. At s = 1 it follows from T4, MS, AV and Lemma BC.
+2. The analytic inputs of `wf7-bf.md` are unchanged: T4, AX, AV, MS, PW, Definition D locality, the WF3-WF6 room, and SA's box-map package for WF8. Rule W uses them at more levels, not in a new form.
+3. Example C3(b) depends on whether regular members are indexed inside drop-out nests (SA 6322-6324 against SA 20910). Rule W covers both readings, except that (W3) uses Lemma M, which needs the base-point rule of SA 20910.
+
+**Changes for owners (forwarded by the lead):**
+- `wf7-bf.md` Result: its premise (C) holds for actual windows of Rule W (Theorem C2), and for the outline's windows at top-layer base points (Theorem C1).
+- The WF filing (rank 4): use Rule W. At lower layers, (WF15) carries omega_n + omega^L_n. The readers of (WF15), for example the source bootstrap of SA 16361 onward, need only summability of the weight.
+- `geo-5.md` Section 3.3: the induction gives m_i, not only M xi_{i-1}, for the pair (i-1, i).
+- `library/t0-skeleton.md`, rank 4 WF7: (C) is no longer the last premise. For lower layers it is replaced by (LD) at decoupled s.

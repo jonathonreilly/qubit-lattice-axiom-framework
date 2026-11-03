@@ -5,7 +5,7 @@ lease_until: 2026-11-03T17:05Z
 
 Provenance: Claude Opus 5.5, max effort, on the Mac mini worker, pinned at commit 4d90efd10 of `claude/ym4d-hard-route`. Gate of Codex text (rows 118, 119, 121, 122, 124) by a different provider; one reader, not an audit, no status. Finished 2026-11-03.
 
-Sources checked: the five notes, the premises as stated in `library/sa-2.8-terms.md` Section 3, and the Sussman-Alpoge outline `YM4_sketch_500.tex` at `31a47c543775`, fetched once into a scratch folder (SHA-256 `d7f77d4d...4b6f`, matching the hash recorded in `sa-2.8-terms.md`). I read SA 5596-5632, 6005-6125, 6318-6360, 17300-17450, 17560-17665 and 21005-21050. Credit: the class, its regions, nests, preparation and healing, and the frame are due to Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text. No numeric job was run. Every check below is a hand check of a written inequality.
+Sources checked: the five notes, the premises as stated in `library/sa-2.8-terms.md` Section 3, and the Sussman-Alpoge outline `YM4_sketch_500.tex` at `31a47c543775`, fetched once into a scratch folder (SHA-256 `d7f77d4d...4b6f`, matching the hash recorded in `sa-2.8-terms.md`). I read SA 5556-5575, 5596-5632, 6005-6125, 6318-6360, 9588-9640, 17300-17450, 17560-17665 and 21005-21050, and checked the consumers against `library/meet-6c.md` Sections 3-4, `library/assign-adopt.md` Sections 1-2 and `gates/a3-close-meet-gate.md` Section B. Credit: the class, its regions, nests, preparation and healing, and the frame are due to Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text. No numeric job was run. Every check below is a hand check of a written inequality.
 
 ## 1. `library/geo-prop23.md` (row 118)
 

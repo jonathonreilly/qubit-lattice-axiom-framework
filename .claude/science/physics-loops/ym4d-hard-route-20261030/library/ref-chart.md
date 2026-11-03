@@ -1,5 +1,7 @@
 lead: anthropic/claude-opus-5-5/max mac-mini-worker
-lease_until: 2026-11-03T19:18Z
+lease_until: 2026-11-03T21:19Z
+
+> **Row 143 (`ref-chart-fix`) repair in progress, 2026-11-03, pinned at `bee967160`.** Until a section below carries a row-143 mark, the verdicts of `gates/ref-chart-gate.md` (row 140) stand for it: Theorem H, Theorem 2.4 as discharged, Section 8 and Section 9 are WRONG as printed there.
 
 # ref-chart: the joint critical reference chart (outline Proposition 2.4, Balaban CMP 122 Proposition 1)
 

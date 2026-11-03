@@ -217,7 +217,7 @@ So every clause moves by at most C_A(s_k + c_ν) ≤ 2C_Ac_ν of its radius. Cho
 - (A1) is the hypothesis of Lemma N at the level ℓ = ℓ(z). R_z is a π_ℓ-cube enlarged by a ≤ 2L − 2 cubes (Rule W). So its side is at most 4LMξ_ℓ, within the real-gauge clause (C_box ≥ 4). Its local scales are at least ξ_ℓ: at (W2), R_z ⊂ Ω_{p−1} meets the layers p−1, p, p+1. So the curvature and real-gauge bounds in level-ℓ units follow from those in ambient units, because ξ_ℓ ≤ l. Lemma N gives the node-reduced datum with ‖B_{t,ν}‖ ≤ C_BMα_{0,ℓ}τ, τ = ξ_j/ξ_ℓ = L^{−m}, and |v||v^{−1}| ≤ e^{CMα_1}.
 - Lemma E with the R_z-tower clause of (A1) gives ‖f(B_{t,ν})‖ ≤ (1+β)aτ², with a ≤ (5/8)α_{0,ℓ}. There is no B' term here, so `wf-room.md` (7.1) is not needed and |φ|_X ≤ (1+β)aτ².
 - Apply Theorem I with B = B_{t,ν} (ς = 1, B' = 0), β = 1/8 and the ceiling e^{C_g sup|B|} ≤ 1 + β of `o1-decoupled.md` 4.5. This gives e^{C_g sup|B|}|φ|_X ≤ (81/64)(5/8)α_{0,ℓ}τ².
-  - For m ≥ 1, the slow-radius bound α_{0,ℓ}τ² ≤ 2(1+m)^{1/2}L^{−2m}α_{0,j} (4.5) and L² ≥ 4 give at most (81/64)(5/8)·2√2L^{−2}α_{0,j} < α_{0,j}/2.
+  - For m ≥ 1, use the slow-radius bound α_{0,ℓ}τ² ≤ 2(1+m)^{1/2}L^{−2m}α_{0,j} (4.5) and the fact that (1+m)^{1/2}L^{−2m} decreases. With L ≥ 3 this gives at most (81/64)(5/8)·2√2L^{−2}α_{0,j} ≤ 0.25α_{0,j} < α_{0,j}/2.
   - For m = 0 (W3, and W2 with j = p − 1), τ = 1 and α_{0,ℓ} = α_{0,j}, so the bound is (405/512)α_{0,j} < (4/5)α_{0,j}.
   - Also C_𝓗 sup|B| ≤ C_𝓗C_BMα_{0,ℓ}τ < α_{1,j}/2, under the radius relation Mα_0 ≪ α_1 (SA 9911; `o1-decoupled.md` defect 4).
 - Theorem I then gives the simple clauses (R4) of P_in, and every (R6) clause at every Z ⊂ X, p ≤ j, n ≤ p and both rules, each below the same fraction of its radius. The conversion factors L^{j−p} and L^{2j−p−n} only help.
@@ -270,3 +270,5 @@ Items (1) and (3) of row 173 are proved by Claude as implications, not yet check
 - Theorem A gives pointed-core admission (10.2) on the box-first route.
 
 Item (2), (H-node), is proved for axial representatives with common nodes and for Landau representatives over one reference, which are the cases the adopted route reads. The case of Landau representatives over two different references stays open, reduced to the scalar-sector comparison (SC), and is off the critical path.
+
+Theorem A reads one convention, α_k ≤ C_αα_{0,k} for WF1's analytic field radius (Section 4). At the young age m = 0 its margin is 1/5 and comes from the half-radius input. B4 (row 172) can resume past its first stop. Next step: one check of Sections 2–4 by Codex.

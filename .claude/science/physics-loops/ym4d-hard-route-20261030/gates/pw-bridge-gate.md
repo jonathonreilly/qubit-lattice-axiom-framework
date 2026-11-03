@@ -57,3 +57,45 @@ The input "Δ^W + DD^T = componentwise covariant Laplacian + bounded zeroth orde
 - (5.11) and p(χΨ) = χp + ½[D^T,χ]A are exact.
 
 The current commutators gain only cutoff oscillations or cutoff differences, via the product identity applied to (3.4). No difference of J appears. The vertex bound (5.8) is the E-part alone with j_β, and its L^q bound is the row-sum argument of (3.5).
+
+## C. pw-bridge Sections 6-7: walk and tree bounds, decoupling, the composed 𝔊
+
+**The four named inputs: correctly scoped.**
+- [Energy] is h-walk Lemma L as repaired in `gates/h-walk-gate.md` Section 5: Lemma D restricted to L² and energy spaces, two-difference pillar cutoffs, the graph part read from A_s G'g = g, and (I1) uniform on cut-downs.
+- [Coefficients] includes the all-scale absolute second-jet premise that the same gate says must stay explicit. I also checked the Wilson part against `a3-clauses.md` Step 5 and (B1). There d^T d + DD^T = Δ_U + 𝒲_U with |𝒲_U f| ≤ C L² α_0 r^{-2}|f| pointwise. The PX114 remainder, ≤ C||P-1||η²|v|_p|w|_p, and the chart term η|J(U)| ≤ Cα_0ξ^{-2} are finite-stencil coefficients with pointwise bounds. So Δ^W + DD^T is the covariant Laplacian plus a zeroth-order operator bounded in every L^q, which is the form Lemma R needs (not only a form bound).
+- [Walk geometry] and [Parameter geometry] are read only where the gates passed them: Theorem W's chaining, Lemma J (7.1), Theorem T with the C_*^{n+Σm_i} repair, Corollary T, and o1-decoupled Definition D, (P) and Lemma P. The failed (C5) locality and reflection assertions are not imported.
+
+**Lemma W∞ (6.1): ADVANCE.** Lemma R is applied only at outputs inside κ^(5/2), where a cut-down is read through h̃_κ or [K, h̃_κ]. y^{++} has local diameter C_L ≪ M_1, so y^{++} ⊂ κ^(7/2). There, by (C2), the cut-down has the original layers, rows, coefficients and j^κ = j. The cut-down's artificial boundary lies outside κ^(7/2) and is never read. The original ∂Ω_0 lies in the bare layer, where point evaluation applies. Combined with h-walk (5.1), d_B^κ ≥ d_B (C3) and ||F||_* ≤ C_L||F||_S, this gives (6.1).
+
+**(6.2)-(6.3): ADVANCE.** The chain alternates bounded operations:
+- source multiplication (5.11);
+- the local inverse (6.1);
+- the commutator (5.7), at cost C_L/M_1;
+- the tree vertex (5.8) with (7.1).
+
+The exponent split and the backward pillar sums are those of h-walk Theorem W(b) and Theorem T(b) as gated. I checked the identity 3p_* - |ω| = 2(n - v) + 2Σ(m_i - 1) ≥ 0 directly from |ω| = n + Σm_i + v. The coefficient power C_L^{n+Σm_i} ≤ C_L^{|ω|} is kept, as the gate requires.
+
+**Normalization, (6.4)-(6.7): ADVANCE.**
+- The source eδ_c/ξ_c has S-norm C_L|e| and dual norm |e| (the ν-source norm Σ ξ_c²|f_c|²).
+- The doubled-traversal count gives #P ≤ 16(1 + 8t/ℓ_P). Each thickened arc has diameter at most ℓ_P/4 + 2R_* < ℓ_P/2.
+- With ℓ_P ≥ 2048κ̄/τ_L, the tags cost at most τ_L/16 of the rate. Walks (rate τ_L/2) and trees (rate τ_L/4) keep at least τ_L/8.
+- Roots near y are boundedly many, and the counts ν_1^n or C_T^m are paid by M_1-powers. So (6.6) holds with a constant free of M_1.
+- (6.7) is the Schur sum against a weight of rate ≤ τ_L/16 with K_{τ_L/16} < ∞ (τ_Lρ' ≥ 256 log L), with ||b||_{Y,w} = sup_c w(c)|b(c)| as defined in `dec-field.md` Section 4 (line 167).
+
+**Section 7, (7.1)-(7.9): ADVANCE.**
+- Deleting the ν row leaves T^{-1} = G_1[j] as the AA block (Lemma U(b)), with local decay from (I1)(iii).
+- [K_1^{-1}]_{AA} = G_1 - H_1QG_1 = P_1 by Lemma U(c).
+- [𝕏^{-1}]_{hh} = 1 - R by Lemma U(a), with at most five inverse factors, so the rate is ≥ τ_L.
+- The scalar bootstrap (A_s h = s_λ + Q'^Tμ, A_s λ = s_h - h) gives h, λ ∈ W^{2,8} from L^8 sources, and its commutator sources are the three listed.
+- (7.5) is exact: -G_1DRD^TG_1 = -G_1DD^TG_1 + G_1DP_scD^TG_1. This gives the SA 10205 operator G_1 - G_1DRD^TG_1 - H_1QG_1 with its sign and factor order.
+- The scaling chain (7.6) is consistent with (5.3)-(5.4).
+- In (7.7)-(7.8), the intermediate pillars range over a whole cell intersection, about M_1^4 pillars. They are summed by the retained e^{-(τ_L/16)d} factors, at cost K_{τ_L/16}, not counted. The note does this correctly.
+- (7.9) is the same Schur sum.
+
+One point of status. (7.4) is a supplied specification of 𝔊(s), not something read from the outline. This is admissible: SA 10356 and o1-decoupled Definition D say the decoupled operators are "defined the same way from their own expansions", and SA 10370 imposes no identity between undecoupled operators on decoupled sums. Each composite is tagged once on the union of its read hulls, so a term whose hull meets a cube with s_Δ = 0 vanishes. That gives the same splitting mechanism as H(s).
+
+**No difference of J; uniformity: confirmed.** J enters only through multiplication, a shift, or an outer D^T, and Lemma C differentiates only cutoffs. Every constant depends on L, the fixed coefficient and energy constants, and e^{16κ̄}. None depends on η (CZ, the Sobolev steps, the bare-layer point evaluation), on depth or volume (local estimates and Schur sums), or on M_1 (the M_1-powers pay only counts, and the rates are free of M_1). ℓ_P must exceed 8C_L M_1, a constraint on the decoupling geometry that is already part of (P).
+
+**Verdict on pw-bridge: ADVANCE as an implication from [Energy], [Coefficients], [Walk geometry] and [Parameter geometry]; first failing step none.** I found no defect that breaks a statement. Minor points, none breaking anything:
+- Section 2 says the paper folder was absent. Literature coverage stays as the note states, and Section D below records what this gate added.
+- In 7.1, "with the row-Gram factors omitted" should say that the local decay of the ν-free inverse uses (I1)(iii) for G_1[j] directly, at at most 23 inverse factors, so its rate is ≥ τ_L. This is a wording point, not a gap.

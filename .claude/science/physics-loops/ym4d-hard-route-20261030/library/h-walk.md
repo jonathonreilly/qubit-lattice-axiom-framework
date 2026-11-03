@@ -154,3 +154,168 @@ For (d): the Z-row gives Y. The Y-row gives Z, since X^T = X. Substitute both in
 with f~ as in (4.1). The nu-row gives Q A = f_ν, which yields nu and A. The blocks in (c) are read off from (4.1) at g = g' = 0. ∎
 
 The existence of G', N, G, G_1[j] and W, W_1[j] at the pairs used is `a2-layers.md` (7.3), §7.2(ii), (iv), §7.4, and §7.6 for complex pairs. The coefficient j is arbitrary there, subject to the bound sup xi^3 |j| <= gamma_j: the proof of 7.4 reads only that bound, through `a2-curved.md` (8.10). This supplies the hypotheses of Lemma U.
+
+## 5. Local decay of the unfolded inverse (Lemmas D, P, S, K, L)
+
+**Inputs.** (I1) is the conjugation package of `a2-layers.md` §7, with the repairs of `gates/a2-layers-gate.md` (§5 separation choice, §7 cap, items 2-5). It holds on every separated sequence with cube size >= M' and gap >= rho', at every regular pair below the ceiling a_*(L) (real: §§7.1-7.5; complex: §7.6(b)-(c), "the conjugation bounds of 7.2 hold at the complex pair with the same proofs"), and for every coefficient with sup xi^3 |j| <= gamma_j(L). It reads: for every tau-Lipschitz real weight theta (5.1 there) with tau <= tau_0(L),
+
+- (i) ||e^θ G' e^{-θ}||_{V*->V} <= C, with ||lambda||_V^2 = ||m^{-1} lambda||^2 + ||D lambda||^2. In the scale-conjugated form (gate item 2), ||m^{-2} e^θ G' e^{-θ} g|| + ||m^{-1} D(e^θ G' e^{-θ} g)|| <= C ||g||, and the transpose holds as well.
+- (ii) The normalized site Gram and R: N_θ^{-1} is bounded and ||e^θ R e^{-θ} - R|| <= C_R tau (7.4 there). N differs from the normalized Gram by the diagonal scale factors Xi^{±2}.
+- (iii) ||e^θ T^{-1} e^{-θ}||_{E*->E} <= C for T^{-1} = G ((7.5) there) and T^{-1} = G_1[j] (§7.4 there).
+- (iv) ||e^θ W^{-1} e^{-θ}||_{row->row*} <= C for W = Q G Q^T (7.2(iv) there) and W_1[j] = Q G_1[j] Q^T (§7.4 there).
+
+All constants are C = C(L). (I1) rests in turn on `a2-curved.md` §8, gated in row 93. This note does not re-derive it.
+
+Fix a smooth pillar partition of unity chi_x (sum_x chi_x = 1, supp chi_x within r_0 of pillar x, slopes <= C per unit d_B). For a dual vector G put <chi_x G, Psi> := <G, chi_x Psi>. By bounded overlap and Cauchy-Schwarz,
+
+    sum_x ||chi_x G||_*^2 <= C_L ||G||_*^2,     ||sum_x G_x||_*^2 <= C_L sum_x ||G_x||_*^2   if each G_x is supported near x.      (5.0)
+
+Let K_τ := sup_y sum_x e^{-τ d_B(y,x)}. By the ball count #{x : d_B(x,y) <= r} <= C_L (1+r)^5 L^{8r/rho} (`a2-layers.md` §7.3, rederived in `gates/a2-layers-gate.md` §4; Balaban CMP 96 Lemma 2.1), K_τ <= C_L sum_m (2+m)^5 e^{-(τ/2) m} < infinity whenever τ rho' >= 16 log L. Below, τ always meets this, by the choice of rho'.
+
+**Lemma D (conjugation gives local decay).** Let O: 𝒜* -> 𝒜 satisfy ||e^θ O e^{-θ}|| <= C_O for every tau-Lipschitz theta, where 𝒜 is any of the local-norm spaces of §4. If F is supported near z, then ||O F||_{𝒜,y} <= C_L C_O e^{-τ d_B(y,z)} ||F||_* for every pillar y.
+
+*Proof.* Take theta = tau d_B(., z). This is tau-Lipschitz and finite on the finite lattice, so the gate's cap repair is not needed. Let zeta be a cutoff equal to 1 within r_0 of z, supported within 2r_0. Then <e^θ F, Psi> = <F, zeta e^θ Psi>, and ||zeta e^θ Psi|| <= C e^{2τ r_0} ||Psi|| by the product rule: e^θ changes by a factor <= e^{τ eta/m} across a fine bond. So ||e^θ O F|| <= C_O C e^{2τ r_0} ||F||_*. Conversely e^{θ(x)} >= e^{τ d_B(y,z) - 4Lτ} on pillar y. By the product rule again, ||Phi||_{𝒜,y} <= C e^{-τ d_B(y,z)} ||e^θ Phi||_𝒜. ∎
+
+**Lemma P (composition).** Let O_1: 𝒜_1* -> 𝒜_1 and O_2: 𝒜_2* -> 𝒜_2 have local decay with constants C_1, C_2 and rate tau. Let l: 𝒜_1 -> 𝒜_2* be local, with ||chi_x l Phi||_* <= C_l sum_{d_B(x',x) <= 2r_0} ||Phi||_{𝒜_1,x'}. Then O_2 l O_1 has local decay with constant C_L C_1 C_2 C_l K_{τ/2} and rate tau/2. If O_1 or O_2 is itself local, the rate is not reduced.
+
+*Proof.* Write l O_1 F = sum_x chi_x l O_1 F. Each term is supported near x, with norm <= C_l N_L C_1 e^{2τ r_0} e^{-τ d_B(x,z)} ||F||, where N_L bounds the number of pillars within 2r_0. Apply O_2, then sum over x using e^{-τ(d(y,x) + d(x,z))} <= e^{-(τ/2) d(y,z)} e^{-(τ/2) d(y,x)}. ∎
+
+**Lemma S (Schur).** If ||chi_x O chi_z F|| <= k(x, z) ||F|| in local norms (with the local norm of a dual vector at x read as ||chi_x .||_*), then ||O|| <= C_L (sup_x sum_z k(x,z))^{1/2} (sup_z sum_x k(x,z))^{1/2}. *Proof.* Use (5.0), Cauchy-Schwarz and ||Phi||^2 = sum_x ||Phi||_x^2. ∎
+
+**Lemma K (commutators with the cutoffs).** For every cube kappa, every Psi and every pillar x,
+
+    ||chi_x [K, h~_kappa] Psi||_* <= (C_K/M_1) sum_{d_B(x',x) <= 2r_0} ||Psi||_{𝒳,x'},
+
+and chi_x [K, h~_kappa] = 0 unless x lies within 2r_0 of the set where h~_kappa is not locally constant, which is contained in kappa^(2) \ kappa^(1). C_K = C_K(L).
+
+*Proof.* Take K block by block, using (c2) of §3.
+
+- Multiplication blocks (the identity in X, the mass parts, the pairings with J and j): these commute with h~ up to a base-point shift of one bond. That costs <= C_p L eta/(M_1 m) <= C_p L/M_1 relative to the zeroth-order part.
+- First-order difference blocks (D, D^T, nabla_U, B, B^T, the D-terms of c_J and of Delta^(2)[j] D): here the commutator multiplies by a difference of h~ across one bond, of size <= C_p L eta/(M_1 m), against a coefficient of size eta^{-1}. That is C/(M_1 m) times the field, which the m^{-1} part of the local norm controls.
+- Second-order blocks (A_s in X, Delta^W in q_AA, D A_s in q_Aλ): the product rule leaves a first-order operator with coefficient D h~ and a zeroth-order one with coefficient D^2 h~. These are bounded by (C/M_1)(||m^{-1} D .|| + ||m^{-2} .||) or (C/M_1)(||nabla_U .|| + ||m^{-1} .||). For D A_s, pair against A'': <A'', [D, h~] A_s lambda> + <D^T A'', [A_s, h~] lambda>. The first is bounded by ||m^{-1} A''|| (C/M_1) ||A_s lambda||, the second by ||D^T A''|| (C/M_1) ||lambda||_Λ. Delta^W is handled through the factorization PX114 (curl squared plus a remainder of mass-form size), as in `gates/a2-layers-gate.md` item 4.
+- Averaging blocks (Q, Q^T, Q', Q'^T, Q^T a Q, Delta^(2)[j], and E-type stencils): the commutator is the oscillation of h~ over a read set of physical diameter <= C xi. That is <= C L^2/M_1 times the absolute operator, which is bounded by the row and column counts. This is `flat-port.md` (8.8), whose estimate uses no flatness beyond these counts.
+
+Every curved coefficient is bounded by the class: unitary links times e^{i eta A'} with |eta A'| <= alpha_1 eta/xi, |J| <= gamma_0 xi^{-3}, and |j| <= gamma_j xi^{-3}. ∎
+
+**Lemma L (the local inverse).** Assume (I1), M_1 >= M_C(L), the ceiling (alpha_0, alpha_1, gamma_0) <= a_*(L), and sup xi^3 |j| <= gamma_j(L). Then for every separated sequence with cube size >= M' and gap >= rho' (the actual sequence and every cut-down), every regular pair, and every such coefficient, K = K[S, P, j] is invertible. For F supported near z and every pillar y,
+
+    ||K^{-1} F||_{𝒳,y} <= B_L e^{-τ_L d_B(y,z)} ||F||_{𝒳*},      τ_L := tau_0 2^{-16},              (5.1)
+
+with B_L = B_L(L). K^{-1} is holomorphic in (P, J, j) on the class and real at real data.
+
+*Proof.* Invertibility is Lemma U with (I1). By (4.1)-(4.2), each component of K^{-1} F is a finite sum of words l_m O_m ... l_1 O_1 l_0 F. Each l_i is local in the sense of Lemma P with C_l <= C_L; it is built from B, B^T, Pi, Pi^T, Q, Q^T, Q', Q'^T, the blocks of q, and the identity. Each O_i is one of: G' as L^2 -> Λ, as Λ* -> L^2 or as V* -> V; N; T^{-1}; W^{-1}. Count the inverse factors. X^{-1} uses at most five (lambda = G'(s_h - G'(s_λ + Q'^T N(...G'^2 ...)))). L = Pi X^{-1} B, and nu passes through W^{-1}, T^{-1} and twice through X^{-1}. So no word has more than 16 inverse factors.
+
+Each O_i has local decay at rate tau_0. For T^{-1} and W^{-1} this is Lemma D with (iii) and (iv). For N it is Lemma D with (ii). For G' as V* -> V it is Lemma D with (i). For G' as L^2 -> Λ: the m^{-2} and m^{-1}D parts come from the scale-conjugated (i), and the third part is local, since A_s G' s = s. For G' as Λ* -> L^2: transpose the L^2 -> Λ statement, using that G' is symmetric and that a dual vector supported near z sees only the Λ-norm near z. Lemma P, applied at most 16 times, gives (5.1). The Λ-part of lambda (and of lambda') needs no further step: by (4.2), A_s lambda = s_h - h, a local expression in a source component and an already bounded unknown. Holomorphy and reality: the entries of K are holomorphic in the data and real at real data, and K is invertible throughout the class. ∎
+
+The rate tau_L is small but depends on L only, and so does B_L. Neither depends on M_1, the box, the depth, the volume or the regions.
+
+## 6. Theorem W: the walk expansion of a finite-range unfolded system
+
+Let S be the depth-k sequence and P a regular pair for it below the ceiling. Let j be a *local* coefficient: its value at a row c is a function of the data within a fixed number of boxes of c, with sup xi^3 |j| <= gamma_j. For kappa in K let S^kappa be its cut-down (Lemma C), P^kappa the restriction of P to Omega^kappa_0, and j^kappa := j on the rows of S^kappa that are rows of S inside kappa^(7/2), and 0 on the other rows. Put
+
+    K := K[S, P, j],   K_kappa := K[S^kappa, P^kappa, j^kappa],   S_kappa := K_kappa^{-1},
+    B := sum_kappa h~_kappa S_kappa theta_kappa,   R_kappa := -[K, h~_kappa] S_kappa theta_kappa.
+
+Fields on Omega^kappa_0 are extended by zero.
+
+**Theorem W.** Assume the hypotheses of Lemma L. There are M_W(L) and C_W(L) such that for M_1 >= M_W:
+
+- (a) K B = 1 - R with R = sum_kappa R_kappa and ||R||_{𝒳*->𝒳*} <= 1/2. Hence
+
+      K^{-1} = sum_omega T_omega,   T_omega := h~_{kappa_0} S_{kappa_0} theta_{kappa_0} R_{kappa_1} ... R_{kappa_n},      (6.1)
+
+  over walks omega = (kappa_0, ..., kappa_n), n >= 0. Only walks with X_{kappa_{i-1}} ∩ X_{kappa_i} ≠ ∅ contribute, and the series converges absolutely in operator norm.
+- (b) For F supported near z and every pillar y,
+
+      ||T_omega F||_{𝒳,y} <= B_L (C_W/M_1)^n e^{-(τ_L/2) d_B(omega; y, z)} ||F||_*,      (6.2)
+
+  where d_B(omega; y, z) is the least d_B-length of a polygonal path from y to z that meets X_{kappa_1}, ..., X_{kappa_n}. It is >= the outline's tree distance, since a path is a tree. The output of T_omega lies in supp h~_{kappa_0} ⊂ X_{kappa_0}, and T_omega reads F only on supp theta_{kappa_n}.
+- (c) T_omega depends on (P, J) and on the data entering j only through their values on the hull [[omega]] := union_i kappa_i^(4), enlarged by the read range of j. It depends on S only through the sets Omega_i ∩ [[omega]]. It is holomorphic on the local class on [[omega]] ∩ Omega_0 and real at real data.
+- (d) T_omega is canonical. A translation in M_1 xi_k Z^4 that carries the data on [[omega]] to the data on [[omega']] carries T_omega to T_{omega'}. If K is gauge covariant (input (I2), §8), so is T_omega, for every gauge transformation.
+
+*Proof of the identity in (a).* K (h~_κ S_κ θ_κ F) = h~_κ K Φ + [K, h~_κ] Φ, with Φ = S_κ θ_κ F. At every base point within r_0 of supp h~_κ ⊂ κ^(2), (K Φ)(x) = (K_κ Φ)(x). Indeed, by (C2) the two systems have the same coefficients there, the coefficient j^κ agrees with j on the rows they read, and both read Φ only within r_0 of x, inside κ^(5/2) ⊂ C_0. So h~_κ K Φ = h~_κ K_κ Φ = h~_κ θ_κ F = θ_κ F, by (c1). Summing over κ with sum_κ θ_κ = 1 gives K B = 1 - R. In a product θ_{κ_{i-1}} R_{κ_i} ≠ 0, the set supp θ_{κ_{i-1}} lies within r_0 of supp ∇h~_{κ_i}, so X_{κ_{i-1}} ∩ X_{κ_i} ≠ ∅.
+
+*Proof of (b) (chaining; Balaban CMP 99b (3.91)-(3.94), CMP 96 (2.52)-(2.56)).* θ_{κ_n} F is supported near z, with norm <= C ||F||. By Lemma L for K_{κ_n}, and d^κ_B >= d_B on its domain (C3), Φ_n := S_{κ_n} θ_{κ_n} F obeys ||Φ_n||_x <= C B_L e^{-τ_L d_B(x,z)} ||F||. Let G_n := [K, h~_{κ_n}] Φ_n = sum_{y_n} chi_{y_n} G_n. By Lemma K, chi_{y_n} G_n vanishes unless y_n is within 2r_0 of supp ∇h~_{κ_n}, and
+
+    ||chi_{y_n} G_n||_* <= (C_K N_L/M_1) C B_L e^{2r_0 τ_L} e^{-τ_L d_B(y_n, z)} ||F||.
+
+The next factor θ_{κ_{n-1}} kills chi_{y_n} G_n unless y_n is within r_0 of supp θ_{κ_{n-1}}. Then θ_{κ_{n-1}} chi_{y_n} G_n is supported near y_n, and Lemma L for K_{κ_{n-1}} applies to it. Iterating to κ_0:
+
+    ||T_omega F||_y <= B_L (C_1/M_1)^n sum_{y_1, ..., y_n} e^{-τ_L [d(y, y_1) + d(y_1, y_2) + ... + d(y_n, z)]} ||F||,
+
+with y_i ranging over pillars of X_{κ_{i-1}} ∩ X_{κ_i} (by (c3)) and C_1 = C_1(L) B_L. Split τ_L = τ_L/2 + τ_L/2. The path y -> y_1 -> ... -> y_n -> z meets X_{κ_1}, ..., X_{κ_n}, so the first half is <= e^{-(τ_L/2) d_B(omega; y, z)}. For the second half, drop the last leg and sum over y_n, then y_{n-1}, ..., then y_1. Each sum is <= K_{τ_L/2}. This gives (6.2) with C_W := C_1 K_{τ_L/2}.
+
+*Proof of the bound in (a).* Apply the same chaining with n = 1 to chi_x R chi_z. Each κ contributes <= B_L (C_W/M_1) e^{-(τ_L/2) d_B(x,z)}. For given (x, z) at most nu_0 cubes contribute (c4). Lemma S gives ||R|| <= C_L nu_0 B_L (C_W/M_1) K_{τ_L/2} <= 1/2 once M_1 >= M_W(L). Hence (1 - R)^{-1} = sum_n R^n converges, B(1 - R)^{-1} is a right inverse of K, and K is invertible (also by Lemma L), so K^{-1} = sum_n B R^n. Expanding B R^n over cubes gives (6.1). For absolute convergence: by (6.2), Lemma S and the walk count nu_1^n, the walks of length n have total norm <= C_L B_L (nu_1 C_W/M_1)^n K_{τ_L/2}, which is summable.
+
+*Proof of (c), (d).* S_κ is the inverse of a matrix whose entries are holomorphic functions of the data on Omega^κ_0 ⊂ κ^(4) (Lemma L). By (C5) and the construction of j^κ, it depends on S only through Omega_i ∩ κ^(4). The commutators [K, h~_κ] = [K_κ, h~_κ] read data within κ^(5/2). Finite products of such factors are holomorphic, and the series converges uniformly on the class, so the sum is holomorphic. Reality is inherited factor by factor. (d) follows from (C5). For covariance: every cutoff is a scalar function evaluated at base points, and the gauge group acts by Ad at base points, so the two commute. A covariant K therefore gives covariant K_κ, S_κ and T_omega. ∎
+
+**Remark (what is new against the templates).** `path_expansion_locality.md` Lemma 1 gives the identity and norm convergence. `flat-port.md` §§8, 11 give the flat local models with periodic or bare read sets, and a total walk norm. Theorem W adds two things. First, its local models are cut-down sequences at curved complex pairs with an independent current, so their inverse bounds are the gated global ones (Lemma L). Second, it has the chained per-walk bound (6.2), with a rate independent of M_1 (test 2.4). The separate partition theta_κ with cutoff h~_κ follows mechanism (f). The template's h S h form, with sum h^2 = 1, would serve equally.
+
+## 7. Trees: H^T J, then G_1, H_1, (Q G_1 Q^T)^{-1} and H_1^T J (mechanism (g))
+
+**Stage 1 (the G-system).** Theorem W with j = 0 gives K_G := K[S, P, 0], with K_G^{-1} = sum_β T^G_β. By Lemma U(c), H = [K_G^{-1}]_{Aν} = sum_β H_β with H_β := [T^G_β]_{Aν}, over walks β = (κ'_0, ..., κ'_m).
+
+**Lemma J (the multiplier as a sum over walks).** Let e_c be the unit row vector at c (componentwise in g^c), and put j_β(c) := xi_c^{-4} <H_β e_c, J>_f. Then H^T J = sum_β j_β, absolutely; this is the transpose for the bilinear pairings, as in `gates/a2-layers-gate.md` item 5. j_β is supported on the rows in supp θ_{κ'_m}. It depends on the data only on [[β]], is holomorphic, and is real at real data. Moreover
+
+    xi_c^3 |j_β(c)| <= C_J gamma_0 (C_W/M_1)^m e^{-(τ_L/4) d_B(β; c)},                       (7.1)
+
+where d_B(β; c) is the least length of a path from X_{κ'_0} to c that meets X_{κ'_1}, ..., X_{κ'_m}.
+
+*Proof.* The ν-source space has norm sum_c xi_c^2 |f_c|^2, so ||e_c|| = xi_c. By (6.2), the A-component of T^G_β e_c is supported in X_{κ'_0}, with ||.||_{E,y} <= B_L (C_W/M_1)^m e^{-(τ_L/2) d_B(β; y, c)} xi_c. Next, ||chi_y J||_{E*} <= ||m chi_y J||_{L^2} <= 2 gamma_0: there are at most 4(xi_y/eta)^4 bonds of weight eta^4 near y, each with |J| < gamma_0 xi_y^{-3}. So |<H_β e_c, J>_f| <= C gamma_0 xi_c B_L (C_W/M_1)^m sum_{y in X_{κ'_0}} e^{-(τ_L/2) d_B(β; y, c)}. For y in X_{κ'_0}, d_B(β; y, c) >= d_B(β; c) and d_B(β; y, c) >= d_B(y, c). So the sum is <= K_{τ_L/4} e^{-(τ_L/4) d_B(β; c)}. Multiplying by xi_c^{-4} xi_c^3 gives (7.1). ∎
+
+**Stage 2 (the G_1-system).** Let j^(0) := sum_{|β|=0} j_β, the terms of walk length zero. At a row c it reads the data on κ^(4) for the at most nu_0 cubes κ with c in supp θ_κ. By (7.1), sup xi^3 |j^(0)| <= C_0 gamma_0 with C_0 := nu_0 C_J. So j^(0) is a local coefficient, and once C_0 gamma_0 <= gamma_j Theorem W applies to K^(0) := K[S, P, j^(0)]. Write S^(0)_κ, R^(0)_κ, B^(0) for its objects.
+
+For |β| >= 1 put V_β := K[S, P, j_β] - K[S, P, 0]. This is the j-linear part of K with coefficient j_β: the Delta^(2)[j_β]-terms of q_AA, q_Aλ, q_λλ. The coefficient enters K linearly, so
+
+    K_1 := K[S, P, H^T J] = K^(0) + sum_{|β|>=1} V_β,
+
+absolutely. V_β is local near X_{κ'_m}: chi_x V_β = 0 unless x is within 2r_0 of the rows in supp j_β. By the coefficient bound of `a2-curved.md` (8.3)/(8.10), localized to the row carriers,
+
+    ||chi_x V_β Psi||_* <= C_Δ sup_{c within 2r_0 of x} xi_c^3 |j_β(c)| sum_{d_B(x',x) <= 2r_0} ||Psi||_{𝒳,x'}.        (7.2)
+
+**Tree walks.** A tree walk ω consists of three pieces of data:
+
+- a trunk walk (κ_0, ..., κ_n);
+- a set I ⊂ {1, ..., n} of vertex positions;
+- for each i in I, a walk β_i = (κ'_0, ..., κ'_{m_i}) with m_i >= 1 and X_{κ'_{m_i}} ∩ X_{κ_i} ≠ ∅.
+
+Its cells are the trunk cells and the branch cells. The parent of κ_i is κ_{i-1}, the parent of κ'_{m_i} is κ_i, and the parent of κ'_{l-1} is κ'_l. So every cell overlaps its parent, as in SA 10210. Put |ω| := n + sum_{i in I} (m_i + 1), the number of cells minus one, and
+
+    T^(1)_ω := h~_{κ_0} S^(0)_{κ_0} θ_{κ_0} F_1 ... F_n,   F_i = R^(0)_{κ_i} (i not in I),   F_i = -V_{β_i} h~_{κ_i} S^(0)_{κ_i} θ_{κ_i} (i in I).
+
+Let d_B(ω; y, z) be the least length of a tree that contains y and z and meets every cell of ω except X_{κ_0}.
+
+**Theorem T.** There are M_T(L), a_T(L), B_1(L), C_T(L) such that for M_1 >= M_T and gamma_0 <= a_T:
+
+- (a) K_1 B^(0) = 1 - R' with R' := R^(0) - sum_{|β|>=1} sum_κ V_β h~_κ S^(0)_κ θ_κ and ||R'|| <= 3/4. So K_1^{-1} = sum_ω T^(1)_ω over tree walks, absolutely.
+- (b) For F supported near z and every pillar y,
+
+      ||T^(1)_ω F||_{𝒳,y} <= B_1 (C_T M_1^{-1/3})^{|ω|} e^{-(τ_L/4) d_B(ω; y, z)} ||F||_*.            (7.3)
+
+- (c) At most C_T^m tree walks with |ω| = m start at a given cube.
+- (d) Theorem W(c)-(d) hold for T^(1)_ω, with hull [[ω]] := the union of the hulls of the trunk and of the branches, each enlarged by the read range of j^(0) (O(M_1) local units).
+
+*Proof.* (a) K_1 B^(0) = K^(0) B^(0) + sum_β V_β B^(0) = 1 - R^(0) + sum_{β,κ} V_β h~_κ S^(0)_κ θ_κ, and ||R^(0)|| <= 1/2 by Theorem W. For the vertex part, apply Lemma S to chi_x V_β h~_κ S^(0)_κ θ_κ chi_z, using (7.2), (7.1) and Lemma L. For given (x, z), the pairs (β, κ) with |β| = m that contribute number at most nu_0^2 nu_1^{m+1}. So the vertex part has norm <= C gamma_0 sum_{m>=1} (nu_1 C_W/M_1)^m <= C' gamma_0/M_1 <= 1/4. Expanding B^(0) sum_n R'^n gives the tree walks. Each nonzero vertex factor needs supp V_{β_i} to meet supp h~_{κ_i}, that is, X_{κ'_{m_i}} ∩ X_{κ_i} ≠ ∅ by (c3).
+
+(b) Chain as in the proof of Theorem W(b). At a vertex step i, (7.2) and (7.1) give the factor C_Δ N_L C_J gamma_0 (C_W/M_1)^{m_i} e^{-(τ_L/4) d_B(β_i; y_i) + C}. So
+
+    ||T^(1)_ω F||_y <= B_L C_3^n M_1^{-p} sum_{y_1..y_n} e^{-τ_L sum_i d(y_{i-1}, y_i)} prod_{i in I} e^{-(τ_L/4) d_B(β_i; y_i)} ||F||,
+    p := (n - |I|) + sum_{i in I} m_i.
+
+For fixed y_1, ..., y_n, take the trunk path y -> y_1 -> ... -> y_n -> z, and for each i in I a near-optimal path from y_i through the cells of β_i to X_{κ'_0(β_i)}. The union is a connected set containing y and z that meets every cell of ω except X_{κ_0}. So it contains such a tree, of length <= sum d(y_{i-1}, y_i) + sum_{i in I} d_B(β_i; y_i). Spend (τ_L/4) sum d and the branch exponentials on e^{-(τ_L/4) d_B(ω; y, z)}. The remaining e^{-(3τ_L/4) sum d} pays the sums over y_n, ..., y_1, at <= K_{3τ_L/4} each. Finally, 3p - |ω| = 2(n - |I|) + 2(sum_{i in I} m_i - |I|) >= 0, since every m_i >= 1. So C_3^n M_1^{-p} <= (C_3 M_1^{-1/3})^{|ω|}.
+
+(c) There are at most nu_1^n trunks and 2^n vertex sets. A branch with m_i steps has its last cell among <= nu_1 cubes meeting X_{κ_i}, and then <= nu_1^{m_i} backward continuations. The number of ways to split m = n + sum(m_i + 1) is <= 2^m. So the count is <= (4 nu_1)^{2m}.
+
+(d) Every factor is local with the stated read sets (Theorem W(c), Lemma J), and holomorphic. The cutoffs commute with the gauge action, and j_β is covariant when K_G is. ∎
+
+**Corollary T (the four objects consumed by A).** By Lemma U(c) at j = H^T J:
+
+- H_1 = sum_ω [T^(1)_ω]_{Aν}.
+- (Q G_1 Q^T)^{-1} = -sum_ω [T^(1)_ω]_{νν}.
+- H_1^T J = sum_ω j^(1)_ω, with j^(1)_ω(c) := xi_c^{-4} <[T^(1)_ω]_{Aν} e_c, J>_f, supported on the rows of supp θ_{κ_n}, and
+
+      xi_c^3 |j^(1)_ω(c)| <= C_J' gamma_0 (C_T M_1^{-1/3})^{|ω|} e^{-(τ_L/8) d_B(ω; c)},           (7.4)
+
+  where d_B(ω; c) is the least length of a tree through c that meets every cell of ω. The proof is that of Lemma J with (7.3) in place of (6.2). The output side lies in X_{κ_0}, so here X_{κ_0} is met as well.
+
+Every term has properties (c)-(d) of Theorem T. This is mechanism (g) of the outline, with the count it asserts. Its M_1-power is the one of test 2.3.

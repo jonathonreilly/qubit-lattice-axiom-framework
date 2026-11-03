@@ -4,7 +4,7 @@ Written by the target lead on 2026-10-31. `GOAL.md` holds the target and the def
 
 ## Where it stands
 
-**Target changed 2026-11-03 (owner):** T0, the theorem OpenAI claims, is now the target: the full Osterwalder-Schrader axioms with O(4), growth and clustering (GOAL.md). The Wightman reconstruction is part of T0 (owner, same day), proved here, not cited. T1 is a milestone on the way. Ranks 11, 12 and 17-20 are back on the path.
+**Target changed 2026-11-03 (owner):** T0, the theorem OpenAI claims, is now the target: the full Osterwalder-Schrader axioms with O(4), growth and clustering (GOAL.md). The Wightman reconstruction is part of T0 (owner, same day), rebuilt here so the proof runs top to bottom, with OS II and YM3_I cited for the method. T1 is a milestone on the way. Ranks 11, 12 and 17-20 are back on the path.
 
 **Existence is not proved.** As of 2026-11-03:
 

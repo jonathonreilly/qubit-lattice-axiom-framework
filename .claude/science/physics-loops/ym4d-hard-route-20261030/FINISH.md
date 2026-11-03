@@ -4,7 +4,7 @@ Written by the target lead on 2026-10-31. `GOAL.md` holds the target and the def
 
 ## Where it stands
 
-**Target changed 2026-11-03 (owner):** T0, the theorem OpenAI claims, is now the target: the full Osterwalder-Schrader axioms with O(4), growth and clustering (GOAL.md). T1 is a milestone on the way. Ranks 11, 12 and 17-20 are back on the path.
+**Target changed 2026-11-03 (owner):** T0, the theorem OpenAI claims, is now the target: the full Osterwalder-Schrader axioms with O(4), growth and clustering (GOAL.md). The Wightman reconstruction is part of T0 (owner, same day), proved here, not cited. T1 is a milestone on the way. Ranks 11, 12 and 17-20 are back on the path.
 
 **Existence is not proved.** As of 2026-11-03:
 
@@ -203,6 +203,7 @@ Past rows are in `QUEUE_DONE.md`.
 | 198 | `ak-port` | done, by Codex (not yet checked; row 187 checks it) | Codex, Mini, max | Moves: T0's O7 (O(4)), rank 18 (S9). From PD (`library/pd-port.md`), O2 and O6, port AK: product kernels on tubes, smoothing removal, frame gluing, the Gram kernel, the finite band 4 abs(m) <= p n with p = 5, boost positivity and the cut inequality (SA L29028-29774; Y3 L75578-76680). Say where d = 4 changes the argument. Name the first input that fails. **Result:** given PD, O2 and O6, S9: holomorphic product kernels, norm removal of smoothing, frame gluing, the Gram representation, the band 4 abs(m) <= 5n, boost positivity and the cut inequality (16), empty tuple included; the highest coefficient satisfies (15). TU and AC remain. | `library/ak-port.md` |
 | 199 | `tu-port` | open | Codex, Mini, max | Moves: T0's O7 (O(4)), S10. From AK (`library/ak-port.md`), O5 and TU10 (S16, a named premise; it waits on the hard core, rows 159, 168), port TU: every nonconstant two-point harmonic vanishes, the critical frequency included (SA L30071-30470; Y3 L75872-76220). Say where d = 4 changes the argument. Name the first input that fails. | `library/tu-port.md` |
 | 200 | `ac-port` | open | Codex, next free account, max | Moves: T0's O7, S11, the last link of O(4). From S9 and S10, port AC: polygon divisibility, discrete convexity, local translations, removal of exceptional support, O(4) at all orders (SA L30582-30848; Y3 L76680-77017). Name the first input that fails. | `library/ac-port.md` |
+| 201 | `wightman` | open | Codex, next free account, max | Moves: T0's reconstruction clause (owner, 2026-11-03: the Wightman theory is in T0; skeleton node O11). Port YM3_I's direct scalar reconstruction (Y3 Thm IV-76-59, L79749-81160) to d = 4: from E0' (`library/growth-qf3.md`), O(4) (S7-S11), RP, symmetry and clustering per component (`library/cluster-port.md`, `library/s4-s6.md`), with the UI and PD bounds (`library/ui-port.md`, `library/pd-port.md`), build one scalar Wightman theory per component for the tr F^2 field (SA 0'(4), H3 at L4616, L31688). Take the O(4) clause as a named premise until rows 199-200 close. Say where d = 4 changes the argument. Name the first input that fails. | `library/wightman.md` |
 
 ## Joining
 

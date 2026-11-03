@@ -143,6 +143,70 @@ Indeed, concavity of sine on \([0,\pi/6]\) gives \(\sin t\ge3t/\pi\). Since \(L\
 
 A comparison after the actual averages could suppress these modes. Theorem V does not prove that comparison for the constrained Taylor triples. Its constant-curvature derivatives also do not determine the full cubic and quartic vertices. Differentiating the mass in \(F\) does not compare the depth-dependent averages or background responses in \(e_k\). Corollary T cancels the substitution error, without canceling this remainder. The cited Balaban passages supply no replacement for (9). I stop at the failure (10); the actual weighted comparison and its uniform continuity hypotheses remain unproved here.
 
+## 5. Row 185: compare the actual averaged remainder
+
+Continuation by OpenAI Codex, at `e3b29b44b90411632bf731eb63eae205bc288048`. Research text; all calculations below are by hand.
+
+Take the remainder route in (6). Theorem V remains an input, not yet checked by the other model. Its stopped expansion contains the actual finite-rank perturbation
+\[
+ E_\eta=Q_\eta^*Q_\eta-D_\eta R_\eta^*R_\eta D_\eta^*.
+\]
+At zero flux put
+\[
+ g_\eta=(K_{0,\eta}+1)^{-1/2},\qquad
+ X_\eta=Q_\eta g_\eta,\qquad
+ Y_\eta=g_\eta D_\eta R_\eta^*.
+\]
+Then, exactly,
+\[
+ g_\eta E_\eta g_\eta=X_\eta^*X_\eta-Y_\eta Y_\eta^* .       \tag{11}
+\]
+Thus a comparison of the averaged factors must retain \(Y_\eta\). Dropping it drops the gauge correction.
+
+The source check follows FINISH's item 5. Ethan Sussman and Levent Alpoge, with Claude and Codex as their text's authors, use these factors in `YM3_II.tex`, Section “Geometric convergence of the Gaussian one-loop coefficient”, at `31a47c543775`. Its Theorem III-12-105 states rate \(L^{-k/6}\); its averaging estimate `eq:loop-R-tail` has rate \(\Lambda^{-1/2}\). These are **unchecked** source statements, not a four-dimensional proof. Their `QED3.tex`, “Block averaging in Maxwell's theory”, supplies the linear minimisation setting. Neither excerpt supplies RF10's rate for every \(\alpha<1\).
+
+Test a direct Lipschitz comparison of the stopped remainder using these factors. Let \(J\) extend common Fourier modes by zero to mesh \(\eta/L\). The input this route would use is
+\[
+ \sup_{p\in[-\pi,\pi]^4}
+ \|Y_{\eta/L}(p)-JY_\eta(p)\|
+       \le C_\alpha\eta^\alpha\qquad(0<\alpha<1),           \tag{12}
+\]
+together with its flux derivatives and the other determinant factors. This is a factor estimate for the proposed comparison, not a necessary consequence of RF10.
+
+## 6. First failed input: the averaged factor comparison
+
+**Equation (12) is false for every \(\alpha>1/2\).** This already fails at zero flux, with the actual site average.
+
+Put \(N=\eta^{-1}=L^k\), \(h=\eta/L\), and fix the coarse momentum \(p=(\pi/2,0,0,0)\). Use one unit colour vector as the coarse input. The alias sets have coordinate bounds \((N-1)/2\) and \((LN-1)/2\). Thus
+\[
+ m=(n,0,0,0),\qquad (N+1)/2\le n\le N
+\]
+are added modes. There are \((N+1)/2\ge N/2\) of them. Their momenta are \(q_n=(\pi/2+2\pi n,0,0,0)\).
+
+The flat symbols in `b-value.md`, Section 4, give
+\[
+ R_h(q_n)=\frac{h\sin(q_{n,1}/2)}{\sin(hq_{n,1}/2)},\qquad
+ d_h(q_n)=2ih^{-1}\sin(hq_{n,1}/2),\qquad
+ K_{0,h}(q_n)=|d_h(q_n)|^2 I.
+\]
+The other three averaging factors equal one. These formulas also follow by summing the centred geometric series. Midpoint phases have modulus one and do not affect this calculation. Since \(|\sin(q_{n,1}/2)|=1/\sqrt2\), the first component of \(Y_h\) on each added mode has modulus
+\[
+ \frac{|d_h(q_n)R_h(q_n)|}{\sqrt{1+|d_h(q_n)|^2}}
+ =\frac{\sqrt2}{\sqrt{1+4h^{-2}\sin^2(hq_{n,1}/2)}}
+ \ge \sqrt{\frac25}\,h\ge\frac h2.                       \tag{13}
+\]
+Here \(h\le1\) and \(|\sin|\le1\). The physical Fourier pairing makes these alias vectors orthonormal. The vector \(JY_\eta\) vanishes on every added mode. Therefore
+\[
+ \|Y_h-JY_\eta\|^2
+ \ge\|(1-JJ^*)Y_h\|^2
+ \ge\frac N2\frac{h^2}{4}
+ =\frac{\eta}{8L^2}.                                      \tag{14}
+\]
+For \(\alpha>1/2\), (12) and (14) would imply
+\(\eta^{1/2-\alpha}\le2\sqrt2 L C_\alpha\) for all \(k\). Its left side diverges. This proves the failure by hand.
+
+This is a failure after averaging, beyond the unaveraged obstruction (10). It blocks the proposed factor estimate before flux differentiation. It does not bound the second difference of \(e_k\) from below: a trace can pair two small tails. Such trace estimates could bypass (12), but none is proved here. Per row 185, stop at this first failed input.
+
 ## Result
 
-RF10's second clause remains **open**. The massive part satisfies (3) by hand, and exact telescoping gives (6). The direct use of Theorem V's energy norm fails at (10). What remains is the second difference of \(e_k\), or an actual weighted comparison (9) with the uniform bounds needed by RF14. No counterexample to the actual coefficient sequence is claimed. This note is not checked by the other model and grants no status.
+RF10's second clause remains **open**. Theorem S and Corollary T reduce it to (6); Theorem V bounds \(e_k\), without controlling its second difference. Row 185's first failed input is (12): the actual averaged gauge factor has the lower bound (14), excluding every \(\alpha>1/2\) in that norm. This does not refute RF10 or the Taylor comparison (9). A direct trace comparison of \(e_k\), or (9) with RF14's uniform bounds, remains unproved. This continuation is not checked by the other model and grants no status.

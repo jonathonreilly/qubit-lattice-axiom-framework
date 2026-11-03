@@ -34,7 +34,7 @@ No defect breaks a statement. Three notes that break nothing are in §8.
 
 **1.1.** The two sequences are constant layers: Ω_0 = … = Ω_n = 𝕋 in one, and Ω_0 = 𝕋, Ω_1 = ∅ in the other. Both are separated vacuously, and the flat pair (1,0) is regular. Take G a cube whose side lies between the fine and coarse fourth-enlargement sides, 9M_1L^{-n} and 9M_1. Then the one-sided union is empty, the old (H-seq) is vacuous, and the inner families differ. Admissible.
 
-**1.2.** System 1 is constant at top depth. System 0 descends from top depth near c to bare scale in Q through separated layers of total physical width below ρL/(L−1), in top units. So sup_{y∈Q} d_1(y,c) ≤ D_0 independently of depth, while #(𝓑_0 ∩ Q) ≥ c_Q η^{-4}. The min-distance sum therefore diverges as η → 0, while both native ball counts stay fixed. Admissible.
+**1.2.** System 1 is constant at top depth. System 0 descends from top depth near c to bare scale in Q through separated layers of total physical width at most a fixed multiple of ρL/(L−1), in top units. So sup_{y∈Q} d_1(y,c) ≤ D_0 independently of depth, while #(𝓑_0 ∩ Q) ≥ c_Q η^{-4}. The min-distance sum therefore diverges as η → 0, while both native ball counts stay fixed. Admissible.
 
 **1.3, redone.**
 - *Step sequence.* Ω_q = 𝕋 for q ≤ k and Ω_{k+1} = ∅ is the all-small-field sequence, separated vacuously. The flat pair with zero current is regular at every ceiling.
@@ -57,7 +57,7 @@ So C1 holds in both directions and the two injections are mutually inverse. The 
 ## 3. Theorem C
 
 - **(4.8).** W(b) gives rate τ_L/2 in d_𝐁(ω;y,c), the length of a path from y to c meeting X_{κ_1}, …, X_{κ_n}. Lemma P gives #𝖯 ≤ 16 + 64ℓ/ℓ_𝖯, so with ℓ_𝖯 ≥ 256κ̄/τ_L the monomial costs at most e^{16κ̄}e^{τ_Lℓ/4}, leaving β = τ_L/4. The row factor ξ_c cancels against 𝗆^{-1}, and there are N_Lν_1^n walks with ν_1C_W/M_1 ≤ 1/2. Correct.
-- **Inner walks.** At j = 0, W(c) says the field reads lie on ∪κ_i^(4) ⊂ G, so ε_ω ≤ ε_P e^{-θ_Pδ_ω}. Cauchy's inequality on the t-disc of radius R_ω = c·a_min/ε_ω ≥ 4 costs Cε_ω/a_min. Identifying system 1's term with T_ω(P(1)) needs single-term covariance under g. W(d) supplies it for every gauge transformation once K is covariant ((I2)), by an algebraic identity that also holds for complex g of bounded condition number where both local inverses exist. The block-constant restriction in `h-walk.md` §2.1 concerns A's G^(2)_V, not K.
+- **Inner walks.** At j = 0, W(c) says the field reads lie on ∪κ_i^(4) ⊂ G, so ε_ω ≤ ε_P e^{-θ_Pδ_ω}. Cauchy's inequality on the t-disc of radius R_ω = c·a_min/ε_ω ≥ 4 costs Cε_ω/a_min. Identifying system 1's term with T_ω(P(1)) needs single-term covariance under g. W(d) supplies it for every gauge transformation once K is covariant ((I2)). The block-constant restriction in `h-walk.md` §2.1 concerns A's G^(2)_V, not K. The note also needs this covariance for complex g of bounded condition number, which reads (I2)'s scope. I read it as valid: every block of K is built from U, U^{-1}, J and Ad, and Ad(g) preserves the bilinear trace pairing (as in the h-walk-fix gate's IC check), so the identity holds wherever both local inverses exist. That is a reading, not a new proof of (I2).
 - **(4.9).** Pick p ∈ [[ω]] with D(p) = δ_ω. The path meets the cell of p's cube within r_*, or starts in the root cell, and the 1-Lipschitz property gives ℓ_0 ≥ S − 2δ_ω − 2r_*.
   - For δ_ω ≤ S/2: (β/2)ℓ_0 + θ_Pδ_ω ≥ (β/2)(S − 2δ_ω) + θ_Pδ_ω − βr_*. This is linear in δ_ω, so it is at least min(β,θ_P)S/2 − βr_*.
   - For δ_ω ≥ S/2, the pair factor alone gives θ_PS/2.

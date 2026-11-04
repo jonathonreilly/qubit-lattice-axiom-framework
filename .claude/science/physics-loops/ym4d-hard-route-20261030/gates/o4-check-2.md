@@ -45,3 +45,30 @@ Defects, none of which breaks a statement:
 2. The out-of-date pointer "D1 ... starts at C1/OH1" (Section 9) repeats the one `gates/bridge-check.md` item 5 notes. D1 itself stays open.
 
 So S9 holds as an implication: holomorphic product kernels (3)-(5), norm removal of the smoothing (6)-(7), one glued kernel on U_n (8), the Gram representation (9)-(10), the band 4|m| ≤ 5n (11)-(12), boost positivity and the top kernel (14)-(15), and the cut inequality (16) with the empty tuple.
+
+## 2. `library/tu-port.md` (S10)
+
+**Verdict: ADVANCE as an implication from AK (`ak-port.md`), O5 and TU10 (S16). First failing step: none.** Checked line by line by Claude against SA L29922-30500 (TU1-TU29 and the two-point theorem). Sections 2, 5 and 6 follow the outline. Sections 3 and 4 take a shorter route than the outline, and I checked both as our own text.
+
+- **Section 2 (axis measure, (1)-(3)): ADVANCE.** The vacuum projection commutes with H and P_1, so ζ_{φ,b} = e^{-(b-a)H}ζ_{φ,a} survives the centering. Then G = K_2 - K_1(φ)K_1(ψ), and (1) holds because AK's (7) at n = 1 gives σ(α⊗φ) = K_1(φ)∫α. The partition into pieces of diameter below d/4 works: two points at distance at least d differ by at least d/√2 in one coordinate, and d/√2 - d/2 > 0. (2) uses a quarter turn and Γ nonincreasing. In (3) the pair (θ(ᾱ⊗φ), α⊗φ) has disjoint planar supports, and the Fubini bound ‖α‖_1^2Γ(2δ) is right.
+- **Section 3 (endpoint bound, (4)-(8)): ADVANCE.** This differs from the outline. SA (TU14)-(TU17) averages over dilations λ to get past the zeros of the spline transform. The note instead bounds only the spectral mass m_μ(L) below L = 1/h, where the cone gives |q| ≤ 1/h, and then integrates by Tonelli. I redid every constant.
+  - ∫a = 5/8 and ‖a'‖ = 12. b(s) = (1-|s|)^2(1+2|s|) is C^1, nonnegative, ∫b = 1, ‖b'‖ = 3/2. Also b(s) + b(1-s) = 1 on [0,1], so the integer translates of b sum to one. ∫ρ = 5/2 and ‖ρ'‖ = 3.
+  - N ≤ (2R/h + 3)^2 ≤ 25R^2h^{-2}, since h ≤ 1 ≤ R.
+  - The support of f_i^± has half-widths 3h/8, h/4, 3h/2, 3h/2. The squared sum is 301h^2/64 < 5h^2 < d^2 with d = 5h/2. The distance from the time reflection is 17h/4, which lies in [d, 6d].
+  - ∫f_i^± ≥ (5/8)(1/4)(25/4)Ah^4 = (125/128)Ah^4. Since ‖f‖_∞ ≤ 3A, this equals (1/120)·3A·d^4 exactly, so the integral condition holds at ϑ_* = 1/12000.
+  - The Lipschitz bound is 3A(12 + 6)/h + (12 + 3 + 1)A/h = 70A/h ≤ 4800A/h ≤ ‖f‖_∞/(ϑ_*d).
+  - (6): ‖[f_i^±]‖^2 = S_2(θf_i^±, f_i^±) ≤ 9A^2u(5h/2), and there are 2N terms.
+  - (7): for E ≤ 1/h and t ≤ 23h/8, the time transform is at least (5h/8)e^{-23/8} ≥ (h/2)e^{-3}. On |x| ≤ h/4 and |q| ≤ 1/h, cos(xq) ≥ cos(1/4) > 1/2, and the odd part vanishes because b is even. So the spatial transform is at least h/8. This gives (e^{-6}/256)h^4m_μ(1/h) ≤ (6NA)^2u(5h/2) and the stated C_φ.
+  - (8): Γ(t) = t∫_0^∞e^{-tL}m_μ(L)dL by Tonelli, and t^8Γ(t) ≤ t^9L_εm_μ(L_ε) + 8!ε.
+- **Section 4 (critical frequency, (9)-(11)): ADVANCE.** This also differs from the outline, which proves the uniform strip bound (TU20). The note instead uses AK's finite band |m| ≤ 2 and the bound on the imaginary axis only. That suffices, because a finite sum Σ_{|m|≤2}a_me^{-4ms} that is o(e^{8|s|}) has a_{±2} = 0. R_{is}(r,0) = (r cosh s, ir sinh s) lies in the tube, and E cosh s + q sinh s ≥ Ee^{-|s|} on the cone. Reality gives a_{-m} = ā_m, and x ↦ -x maps R_t(r,0) to R_{-t}(r,0), so a_{-m} = a_m.
+- **Section 5 (diagonal measure, (12)-(13)): ADVANCE.** θ_DR_{π/4} = R_{π/4}θ, so the mollified diagonal RP gives (12) in the limit. Centered positivity is ‖v‖_D^2 - |⟨Ω_D, v⟩_D|^2 ≥ 0. |D(t,x)| ≤ Γ(t/√2), so the orbits are bounded by Γ(√2 min t_i)^{1/2}Σ|c_i|. The contraction by iteration, positivity T_s = T_{s/2}^2, injectivity of T_1, H_D = -log T_1 and Stone's theorem for P_D are all correct. This is SA (TU22)-(TU24).
+- **Section 6 (fourth frequency, (14)-(16)): ADVANCE.** I redid the identities.
+  - The spectral multiplier at R_{is}(t,x) is e^{-tE_s + ixq_s}.
+  - The three-term identity holds: for e^{±4iθ} the coefficient is -(C-1) + e^4 + e^{-4} = C + 1.
+  - Integrating (15) against w_s, with ∫w_s dμ_{±1} = c_0 + 2c_1cosh(4s ± 4) and cosh(4s+4) + cosh(4s-4) = 2C cosh 4s, gives ∫w_s dν = c_0 - 2c_1cosh 4s. Hence c_1 = 0.
+  - Polarization uses G_{φ,ψ}(y) = G_{ψ,φ}(-y) = G_{ψ,φ}(y). The half turn of the (x_4, x_1) plane is in W_4 and fixes the labels.
+- **Section 7 (dimension): correct.** Two transverse cell directions give (h^{-2})^2, and the two planar integrations give h^{-4}, so the exponent is exactly 8. Y3 IV-33-53 (Y3 L76117-76150) needs A = 4 + a_Γ < 8, which a bounded u gives in d = 3. In d = 4, u(d) → 0 is needed for the critical modes m = ±2. The note says this correctly.
+
+No defect breaks a statement. TU10 is the outline's (TU9)-(TU10) with the same class and ϑ_*, for the connected S_2^T of `library/tu10.md` Section 2. It stays an open premise.
+
+So S10 holds as an implication: for every pair of real labels the two-plate kernel G_{φ,ψ} is radial, so M(2) = 0 in AK's notation.

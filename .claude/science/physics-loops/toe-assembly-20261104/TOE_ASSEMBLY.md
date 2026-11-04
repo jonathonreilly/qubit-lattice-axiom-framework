@@ -68,7 +68,29 @@ Let **A** be the four axioms, **P** the three approved primitives and **S** the 
 
 ---
 
-## 3. Proposed specifications (proposals for the owner; nothing here is adopted)
+## 3. Proposed axiom update (working set)
+
+The owner approved this on 2026-11-04: "im good with the skelleton proposal but for 'adopt' we put them in the proposed axiom update section until we have the full theory figured, then we move them into the real axioms as simply as possible".
+
+**Status.** These are working premises. The parts are drafted under them. They are not axioms, and `docs/MINIMAL_AXIOMS_2026-06-29.md` is unchanged. Every part that uses one names it, for example "under PS-1". When the full theory is in place, we move the set that is actually used into the real axioms, in the simplest wording that still does the work, and only with the owner's approval of that wording. A specification that no part ends up needing is dropped. Two that can be merged are merged.
+
+| Entry | Treatment | Short form |
+|---|---|---|
+| PS-1 | In the working set | One fixed local covariant unitary update; the update count orders a history. The law choice, cube tick or D4 events, is settled in LW1. |
+| PS-2 | In the working set | Menu independence: a possibility's probability does not depend on what else is offered. It gives the Born form by the binary-ternary theorem. |
+| PS-3 | In the working set | One actual configuration, moved by minimal-change, maximum-entropy transport. Records never condition the odds. A record forms when a value has been copied to at least two neighbours. |
+| PS-4 | In the working set | The first tick has no records. |
+| PS-5 | No change | Build site content on cells of qubits. The five-mode fallback is used only if the cell route fails at a named step. |
+| PS-6 | In the working set | Frames are local: link registers transport frames, and the update is gauge-invariant. |
+| PS-7 | In the working set | The vacuum is the half-filled sea. The record-freezing tension is resolved in VC1/TM1. |
+| PS-8 | Law to test | The mirror-gapping interaction, inside CH1. Not a premise. |
+| PS-9 | Law to test | The gravity response law, inside GR1/GR2. Not a premise. |
+| PS-10 | Not adopted | `G a^{-2}` stays a target of GR1. |
+| PS-11 | In the working set | A statement of law-probability one holds in the realized history. |
+
+The full text of each entry, with its reasons, follows.
+
+### 3.1 The proposals in full
 
 Each entry gives the exact proposed text, why a part needs it, and what it would let us derive. They fall into three kinds: an added axiom sentence (owner decision under `AXIOM_MINIMALITY_POLICY.md` §6), a choice of the one Admissibility law (also owner-level, since it fixes the law), and a reading rule. The current evidence uses many different supplied rules; the deepest assembly obligation (AS0, section 9) is that every part runs on one law, so these proposals come first.
 

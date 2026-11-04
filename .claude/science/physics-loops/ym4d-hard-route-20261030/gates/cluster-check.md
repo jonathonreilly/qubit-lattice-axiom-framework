@@ -3,11 +3,9 @@ lease_until: 2026-11-04T16:27Z
 
 # cluster-check (queue row 187): line-by-line check of `library/cluster-port.md` and `library/growth-qf3.md`
 
-Worker: Claude Opus 5.5 at max effort, Mac mini worker session, started 2026-11-04T04:27Z, pinned at commit 3c53a7772. Same model family as the lead; this is not an independent-model check.
+Provenance: Claude Opus 5.5, max effort, Mac mini worker, started 2026-11-04T04:27Z, commit 3c53a7772; one reading by one model, not an audit. The two notes are by Codex, so this is the other-model check of FINISH item 5. Sussman–Alpoge sources read at `31a47c543775` (SA = `YM4_sketch_500.tex`, Y3 = `YM3/YM3_I.tex`), credited to Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text. No numeric run was used; every check below is by hand.
 
-Provenance: Claude Opus 5.5, max effort, Mac mini worker, commit 3c53a7772; one reading by one model, not an audit. The two notes are by Codex. Sussman–Alpoge sources read at `31a47c543775` (SA = `YM4_sketch_500.tex`, Y3 = `YM3/YM3_I.tex`), credited to Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text. No numeric run was used; every check below is by hand.
-
-Status: Part A finished. Part B in progress.
+Status: Parts A and B finished.
 
 ## Part A. `library/cluster-port.md`
 
@@ -20,7 +18,7 @@ Status: Part A finished. Part B in progress.
 - Fixed-spacing decomposition, components and uniform \(|v|^{-2}\) clustering: SA L31112–31385 (Theorem "Conditional canonical decomposition").
 - PV4: SA L31442. There it is proved under the hypotheses (PV1)–(PV3), which that section does not derive (SA L31438–31440).
 
-So Sections 2–8 rebuild proofs that the outline gives in detail at d = 4. Section 9 also derives (PV3) from the limit's bounds, RP and translation invariance. SA's PV4 section assumes (PV3); the derivation agrees with the H2 step that `s4-s6.md` covers (row 205 checks it).
+So Sections 2–8 rebuild proofs that the outline gives in detail at d = 4. Section 9 also derives (PV3) from the limit's bounds, RP and translation invariance. SA's PV4 section assumes (PV3); SA treats that step as H2 (L4600, L25491), and `s4-s6.md` ports it (row 205 checks it). I checked the note's own derivation in A2 below.
 
 ### A1. The d = 4 changes, each redone
 
@@ -53,3 +51,42 @@ Section 1 does not say where the centering state \(\nu_j\) lives. Section 8 uses
 
 S1g and S3 stay premises. Rows 206 and 205 check `am1-port.md` and `d2-d4.md`. No spectral gap follows, and PV4 is on the separated positive-time domain only.
 
+
+## Part B. `library/growth-qf3.md`
+
+**Verdict: checked line by line by Claude, first failing step none.** D2 implies (1): \(\lvert S_n(\varphi)\rvert\le C^n(n!)^{k+32}p_{20n}(\varphi)\) on \(\mathcal S_{\Delta,n}\), with a unique extension, constrained tensor density (positive-time boundary included), and RP transfer under compact RP. ADVANCE for skeleton S5 and O3 (E0′), conditional on D2 (S2).
+
+**Kind (FINISH item 9): check of their proof.** SA L24915–25420 (Theorem "Quantitative diagonal-flat extension", (QF1)–(QF22)) proves the same theorem at d = 4 for a general exponent \(\alpha\): \(k_*=\lceil\alpha\rceil+15\), factorial exponent \(\kappa+32\). SA H1 (L4572–4590) states \(k_{\rm E}=20\), \(\kappa_{\rm E}=k+32\) at \(\alpha=5\). The note is that proof at \(\alpha=5\).
+
+### B1. The d = 4 changes, each redone
+
+| Change (note's §6) | Check |
+|---|---|
+| A literal YM3_I port fails at its Fourier majorant. | Correct. Y3 IV-25-55 (L74807–74900) integrates by parts to total order \(k=4n+1\) in one coordinate. After the tensor norms \(\prod(1+\lvert\omega\rvert_\infty)\), the summand is \((1+\lvert\omega\rvert_\infty)^{-(3n+1)}\). The shell \(\lvert\omega\rvert_\infty=r\) has order \(r^{dn-1}\) points. That gives \(\sum r^{-2}\) at d = 3 and \(\sum r^{n-2}=\infty\) at d = 4. |
+| Repair: \(8n\) slotwise derivatives, (6). | Correct. \((1-\pi^{-2}\Delta_{y_i})^4\) gives \(\prod_i(1+\lvert v_i\rvert^2)^{-4}\). Each slot sum \(\sum_{v\in\mathbb Z^4}(1+\lvert v\rvert)(1+\lvert v\rvert^2)^{-4}\) is finite (shell \(Cr^3\cdot r^{-7}\)). |
+| YM3_I's weight \((1+\lvert u\rvert^2)^{-2}\) is not integrable on \(\mathbb R^4\). | Correct (logarithmic divergence). (12) uses \((1+\lvert x_i\rvert^2)^{-10}\), and \((1+\sum\lvert x_i\rvert^2)^{-10n}\le\prod_i(1+\lvert x_i\rvert^2)^{-10}\). |
+| Powers of \(h\): D2 \(h^{-5n}\), tensor norms \(h^{-n}\), grid \(h^{-4n}\), Taylor \(h^{10n+2}\). | Correct. \(\max(1,(h/2)^{-5n})=32^nh^{-5n}\); \(\ell^{-n}=64^nh^{-n}\); \(\sum_z\le C^n\ell_j^{-4n}\). Net power \(h_j^2\), summable over \(j\). Derivative order \(8n+10n+2\le20n\) for \(n\ge1\). |
+| Factorial loss \((Cn^2)^{8n}((8n)!)^2\le C^n(n!)^{32}\), (9). | Correct. \(n^{n}\le e^nn!\), and \((8n)!/(n!)^8\le8^{8n}\) (a multinomial coefficient). No \(e^{cn^2}\): undifferentiated cutoffs cost one in (5). |
+
+### B2. Other steps redone
+
+- §1, (3). \(\sum_{\pi:\,m\text{ blocks}}\prod_D\lvert D\rvert!=\frac{n!}{m!}\binom{n-1}{m-1}\) (Lah numbers). With \(\prod_D\lvert D\rvert!\le n!\) and \(k\ge1\), the sum is at most \(2^{n-1}(n!)^k\). With \(\prod_D\max(1,\delta^{-5\lvert D\rvert})\le\max(1,\delta^{-5n})\) this gives (4).
+- §2. \(\operatorname{Re}(1/z)\ge2/(9t)\) on \(\lvert z-t\rvert=t/2\); Cauchy gives \(\lvert a^{(q)}\rvert\le9^q(q!)^2\). The reciprocal induction closes: with \(L=B(1+2A/d_0)\), \((A/d_0)\sum_{r\ge1}(B/L)^r=1/2\). Leibniz bound (5) is correct. Tensor consistency: a pair of slot sets closer than \(\delta/2\) forces a zero factor, since otherwise two supports would be closer than \(\delta/2+\delta/4<\delta\).
+- §3. Coefficient bound (6), sharp norms \(C\ell^{-1}(1+\lvert v_i\rvert)\), and (7) with \(h^{-6n}\) are correct. The cutoff \(\chi^+\) is one on \(\operatorname{supp}u\) and vanishes outside \(Q\), so the expansion equals \(u\) everywhere. Fejér bound \(F_N\le[N\sin^2(\pi\varepsilon/2)]^{-1}\) is correct.
+- §4. Layer support (8) is correct, also with \(P_hB_h\). Retained boxes have expanded-cube separation \(h_j-6\ell_j=\frac{58}{64}h_j>h_j/2\). Taylor: \(\lvert x-y\rvert\le2\lvert x_i-x_l\rvert_\infty\le8h_j\); \(\ell^1\) displacement \(\le16h_j\); weight transfer \(1+\lvert x\rvert^2\le3(1+\lvert w\rvert^2)\) costs \(3^{10n}\).
+- §5. (15), (16) and the positive-time version are correct. The cross-diagonal flatness of \(\theta\bar f\otimes g\) and \(p_r(f\otimes g)\le p_r(f)p_r(g)\) are correct; RP transfer needs compact RP, as the note says.
+
+### B3. Input match (not a defect)
+
+The note's D2 form (2) at radius one, with the one-point clause, is what `d2-d4.md` (20)–(22) delivers "for every pair of periodic Wilson states". The S3 form read by Part A is `d2-d4.md` (8) and (10). So the three notes fit as written. Row 205 checks `d2-d4.md` itself.
+
+### B4. What Part B does not show
+
+D2 stays a premise. The bound is for moments centered at the common reference state, on diagonal-flat tests only. No contact terms and no extension across the diagonals follow.
+
+## Summary for the lead
+
+- Both notes: checked line by line by Claude, first failing step none. Each is a correct implication from its named premises.
+- Both rebuild proofs that SA gives in detail at d = 4 (Part A: SA L3238–3750, L30875–31530; Part B: SA L24915–25420). So this lane is a check of their proof, not a new proof. Each d = 4 change the notes list is confirmed. Where YM3_I would fail at d = 4, the failure is real, and the repair the notes use is SA's.
+- Skeleton lines this moves (lead to edit `t0-skeleton.md`): S12, S13, S14 from "cited" to "proved by Codex, checked by Claude, first failing step none; conditional on S1g and S3"; S5 the same, conditional on S2 (D2). O3 (E0′) and O8 follow as implications from those nodes.
+- Still open on these nodes: S1g (`am1-port.md`, row 206), S2/S3 (`d2-d4.md`, row 205) and, upstream, D1.

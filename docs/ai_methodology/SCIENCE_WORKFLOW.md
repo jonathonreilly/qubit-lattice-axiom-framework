@@ -174,10 +174,22 @@ only when a gate shows its hardest step fails or the other route closes that
 step.
 
 **Methods.** Lay out the complete skeleton of the argument, then attack the step
-it is most likely to die on first; routine steps wait. Test machinery on a
+it is most likely to die on first; routine steps wait. The skeleton is our own:
+an assembly overview of named parts, each with its main statement, imported
+hypotheses, dependencies and sources. Published work enters as a credited
+input. It is never a frame that we patch one gap at a time. Test machinery on a
 ladder of easier models of the same step: what works there is the first
-candidate, and what fails there is a cheap kill. For a standard, low-risk step,
-write one full draft, distil it to a minimal proof, then gate it. Freeze what
+candidate, and what fails there is a cheap kill. Every part, hard or routine,
+goes through three passes:
+1. One long session writes the full argument at length, with no brevity limit.
+2. A second session distils it to a minimal proof and lists every definition
+   it had to infer.
+3. A fresh session reads the whole distilled part line by line, once. It
+   must not be the provider that wrote the distilled text.
+
+Use the provider that drafts best for pass 1. Use the other provider for
+pass 2, and a fresh session of the first provider for pass 3. Keep the status of each step (proved or outstanding) in the
+text of the part, not in a separate per-lane log. Freeze what
 passes its gate; it reopens only on a `wrong` signal, or when an input it reads
 changes or is shown wrong. Independent lanes run in parallel across providers
 and machines, and the lead keeps every available worker on the critical path; a

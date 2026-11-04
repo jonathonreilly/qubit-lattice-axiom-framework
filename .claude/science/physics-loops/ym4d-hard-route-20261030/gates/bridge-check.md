@@ -3,7 +3,7 @@ lease_until: 2026-11-04T16:55Z
 
 # bridge-check: check of `library/d2-d4.md`, `library/s4-s6.md`, `library/cone-o6.md`
 
-Queue row 205. Started 2026-11-04T04:55Z. Work in progress; sections are added as they are written.
+Queue row 205. Started 2026-11-04T04:55Z, finished 05:15Z. Verdicts: all three notes ADVANCE, first failing step none (Sections 1-3); moved nodes and bookkeeping in Section 4.
 
 Provenance: Claude Opus 5.5 (claude-opus-5-5), effort max, Mac mini worker, at branch commit `62242b86b`. One reading by one other model of three Codex notes. This is not an audit and grants no status. Sussman-Alpoge outline read at `31a47c543775` (`YM4_sketch_500.tex`, fetched by URL into a scratch folder, sha1 `107abaef`). Credit: the arguments checked here rebuild Ethan Sussman and Levent Alpoge's outline (with Claude and Codex as authors of their text), Sections all-state-source-transfer (SA L23622-24040, ST1-ST15), graded-rooted-source (SA L24042-24360, GS1-GS13), continuum compactness and the Euclidean-Hilbert bridge, as each section says.
 
@@ -58,7 +58,7 @@ Per section:
 
 Defects: none that break a statement. Minor points for the note's owner:
 
-1. Section 3, last paragraph: "a fixed bump f ≥ 1 on a cube" must also be nonnegative everywhere. Otherwise Σ_p f(x(p)) can cancel. The outline says "a fixed nonnegative bump of nonzero integral" (SA L4183).
+1. Section 3, last paragraph: "a fixed bump f ≥ 1 on a cube" must also be nonnegative everywhere. Otherwise Σ_p f(x(p)) can cancel. The outline says "a fixed nonnegative bump of nonzero integral" (SA L4189-4190).
 2. Skeleton bookkeeping (for the lead): node S2 in `library/t0-skeleton.md` lists inputs D1 and S1e. D2 also reads S1g, through the domination (4), whose proof uses the reflection invariance of ρ. The note states this correctly ("Conditional on full D1, S1e and S1g").
 3. The chessboard input is S1d, finite-torus reflection positivity at link planes. The note rebuilds S1e from S1d in its complex form, so S1e is not a separate premise.
 
@@ -77,12 +77,12 @@ Per section:
   - The DLR identity passes to the limit. Once the torus is large enough that the projection is injective on supp F ∪ W ∪ N(W), the lifted γ_W F is the torus kernel applied to the torus function. So μ_N(γ_W F) = μ_N(F) holds at every large torus and passes weakly. Properness then gives the conditional form.
   - Invariance under aZ^4 ⋊ W_4 passes from the tori.
   - This is SA (CC1) and following (L24376-24420).
-- **Section 3, (4)-(6), one subsequence and moving tests: ADVANCE.** This is the outline's diagonal extraction principle (SA L479-520). The telescoping bound (4) uses only containers that fit in radius-R balls with mutual distance δ. The Cauchy argument through a fixed approximant is correct, and so is (6) for moving tests.
+- **Section 3, (4)-(6), one subsequence and moving tests: ADVANCE.** This is the outline's diagonal extraction principle (SA L479-516). The telescoping bound (4) uses only containers that fit in radius-R balls with mutual distance δ. The Cauchy argument through a fixed approximant is correct, and so is (6) for moving tests.
 - **Section 4, (7)-(11), invariance, mirrors, one-point constant, cumulants: ADVANCE.** I checked these steps.
   - The rounding offsets are θ_{c_j}x - θ_c x = 2(c_j - c)e_μ for a coordinate mirror and (c_j - c)(e_μ ± e_λ) for a diagonal mirror. Lattice diagonal mirrors need c_j ∈ a_j Z, as the note says.
   - The plaquettes sampled by F lie in the open half once |c_j - c| + √2 a_j/2 is below the mirror gap.
   - Centering covariance uses the reflection invariance of ν_j at Σ_j (S1g).
-  - The concatenated pairs are separated, as in SA L527-532.
+  - The concatenated pairs are separated, as in SA L536-544.
   - (9) is exact: m_{j,1}(f) = δ_j Σ_p f(x_p).
   - The Riemann-sum error is C(R+1)^4 a_j ||∇f||_∞, since a side-a_j cube has diameter 2a_j.
   - In (10), c_j → σ_1(f_*), and then σ_1(f) = c∫f for every f.
@@ -101,7 +101,7 @@ Per section:
   - The Taylor order is correct: 10n+2 on top of ≤ 8n gives 18n+2 ≤ 20n.
   - The position sum is correct: (1+Σ|x_i|^2)^{-10n} ≤ ∏(1+|x_i|^2)^{-10} gives B_n h_r^{-4n}.
   - So (21) carries h_r^2, and the layer sum converges.
-  - These are the outline's QF orders with α = 5: k_* = A+15 = 20 (SA QF1-QF2, L24970-25000), without the factorial.
+  - These are the outline's QF orders with α = 5: k_* = A+15 = 20 (SA QF1-QF2, L24939-24956), without the factorial.
   - Density of the separated tensors, uniqueness and (23) are correct.
   - The well-definedness on overlapping product boxes is sketched in one sentence. The step holds if one reads it as follows. For u compactly supported in the open box B ∩ B', take a smaller frame B'' whose expanded cubes lie in B ∩ B'. Its Fourier tensors are evaluated by both T_B and T_{B'} as σ_n, and (19) passes the equality to u. Independence of the partition then follows from the products χ_k χ'_m.
 - **Section 7, (24)-(25), H2 on positive-time sequences: ADVANCE.** I checked these steps.
@@ -115,6 +115,71 @@ Per section:
 Defects: none that break a statement. Minor points:
 
 1. Skeleton bookkeeping (for the lead): node S4 lists input S3 only. Its mirror and invariance clauses also read S1g (Section 4), and its existence reads E1's cutoff sequence. The note says both.
-2. Section 6 calls (18) a bound for "unit-radius supports", but the slot functions χ e_v are supported in expanded cubes of side up to 8ℓ ≤ 1/128. That is inside radius one, so the bound applies. The inner side, expanded side and period (8ℓ) are not all stated. Any choice with inner side + expanded side ≤ 8ℓ and expanded cubes h/2 apart works. The note should state one.
+2. Section 6 applies (18), a bound for unit-radius supports, to the slot functions χ e_v. Their supports are the expanded cubes, of side O(ℓ) with ℓ ≤ 1/1024, so the bound applies. The note does not state the inner side, the expanded side and how they relate to the period 8ℓ. Any choice works in which each expanded cube meets no other period-8ℓ copy of its inner cube (in one coordinate: inner side + expanded side < 16ℓ), for example sides 2ℓ and 4ℓ. With those sides the expanded cubes on supp D_r are at least 56ℓ_r ≥ h_r/2 apart in sup distance. The note should state one choice.
 
 What this does not show: E1 (existence of the first-passage cutoff data) and D1 behind S3. The note says so.
+
+## 3. `library/cone-o6.md` (T0's O6, the spectral cube cone)
+
+**Verdict: ADVANCE as an implication from the Result of `library/s4-s6.md` (O4, O5 and the position-independent bound (2)). First failing step: none.** Checked line by line by Claude against YM3_I Lemma IV-28-17 and Proposition IV-28-21 (Y3 L75480-75566, fetched by URL at the pinned commit).
+
+Per section:
+
+- **Section 2, the diagonal Hilbert space H_u: ADVANCE.** This is Y3 IV-27-22 with normal u = (e_4+e_j)/√2. I checked these steps.
+  - Cross distances do not shrink under τ_{tu}: |y - x + 2tu|^2 = |y-x|^2 + 4t u·(y-x) + 4t^2 ≥ |y-x|^2 when u·x < 0 < u·y. So s4-s6 (2) gives a_F(t) ≤ C_F.
+  - θ_u τ_{tu} = τ_{-tu} θ_u (θ_u u = -u) gives symmetry. Tangential τ_{sv} preserves q_u, since θ_u v = v and u·v = 0.
+  - The halving argument and H_u = -log T^u_1 ≥ 0 are correct, as in s4-s6 Section 5.
+- **Section 3, the measure estimate: ADVANCE.** This is Y3 IV-28-17. I checked these steps.
+  - |e^{-sw-s'w̄}| = e^{-(s+s')E/√2} ≤ 1, so Fubini holds.
+  - In (2), ∫c̄(s')e^{-is'y}ds' = conj(p(-iy)) = p^♯(y), and no commutation is used.
+  - The Gamma transform and the hand proof of Γ(α) ≠ 0 are correct: the Beta integral by parts, dominated convergence with (1-s/N)^N ≤ e^{-s}, the convergent harmonic difference, and |log(1+z) - z| ≤ |z|^2 for |z| ≤ 1/2, from the displayed integral identity.
+  - The two suprema are η^{-ε} on x ≥ 0 and η^{-ε}e^{|κ|π/2} on iℝ, since |(z+η)^{-α}| = |z+η|^{-ε}e^{κ arg(z+η)}.
+  - Fatou in ε, then in η, is correct.
+  - μ{arg w ≥ π/4+δ} ≤ Ce^{-2κδ} → 0, and since Re w ≥ 0 the union over δ is exactly {|q| > E}.
+- **Section 4, two reflections: ADVANCE.** I checked these steps.
+  - As point maps, r = θ_u θ sends (x_j, x_4) to (x_4, -x_j). So u·rx = (x_4 - x_j)/√2, and W_j and r(W_j) lie in {u·x > 0}.
+  - θ_u(θ_u(θF)) = θF holds for either action convention, since both maps are involutions.
+  - Both equalities in (6) are correct. The first uses t = (s+s')/√2 ≥ 0 and x = (s-s')e_j/√2 in s4-s6 (17). The second is the defining form q_u. Every concatenation is separated, because θF̄ lies in {x_4 < -|x_j|} and τ_{su+s'v}F lies in {x_4 > 0} ∩ {u·x > s}.
+  - The large-time shift into W_j, the commutation of the spectral projections with T_R, and injectivity of T_R give Π_j = 0.
+  - (7) and (8) follow from |p_j| ≤ E almost everywhere for μ_ψ.
+- **Section 5 and Result: CORRECT-NO-ADVANCE.** The comparison uses only the (x_4, x_j) plane. In d = 4 there are two spectator coordinates and three generators, and nothing else changes.
+
+Route note (for the lead): the outline's own cube-cone proof (SA HB8-HB15, L25736-25904) reads a lattice carrier sinh(E/2) ≥ |sin(p/2)| "established in the plateau argument", which is node S12. The Y3 continuum route checked here reads only O4 and O5. So O6 does not wait on S12 or `library/cluster-port.md`, as the skeleton line for O6 already says.
+
+Defects: none that break a statement. Minor point:
+
+1. The sign convention of P_j is not fixed in s4-s6 (17) or here. The first equality of (6), with w = (E - ip_j)/√2, needs U_x = e^{ix·P}. With the opposite sign, push forward by (E,p) ↦ (E, -p_j), as Y3 does with ε q_k. The conclusion is symmetric in p_j, so nothing changes.
+
+## 4. What moved, bookkeeping, what stays open
+
+**Moved (FINISH item 0).** Skeleton nodes S2, S3, S4 and S6, and T0's O1, O2, O4, O5 and O6, move from "cited" to "proved by Codex, checked by Claude, first failing step none". Each is an implication from the inputs below. Every proof is a written hand argument. No step rests on a computed value.
+
+| Note | Nodes | Verdict | Premises read |
+|---|---|---|---|
+| `d2-d4.md` | S2 (D2), S3 (D4, G4) | ADVANCE, first failing step none | full D1 with its rooted GS geometry; S1d at coordinate link planes on cubic tori; S1g |
+| `s4-s6.md` | S4, S6; O1, O2, O4, O5 | ADVANCE, first failing step none | E1's cutoff sequence; S3 in the explicit form of `d2-d4.md` (8)-(10); S1g |
+| `cone-o6.md` | O6 | ADVANCE, first failing step none | the Result of `s4-s6.md` (O4, O5, bound (2)) |
+
+**Bookkeeping for the lead** (no other file edited here):
+
+1. `t0-skeleton.md` S2: add S1g to the inputs, since (4) uses the reflection invariance of ρ. S1e is rebuilt in `d2-d4.md` Section 2 from S1d.
+2. `t0-skeleton.md` S1d says "coordinate case written in upper-chain Lemma 1.1". That lemma is site-plane RP only (`parts/upper-chain.md` L234). The chessboard here, like SA (ST1), cuts at link planes and needs the crossing-plaquette kernel. That case is the "coordinate bond cut" paragraph of `library/am1-port.md` Section 3 (Codex), the gauge-averaged Gram kernel ∫k_S(u, w·u') dw. I read that paragraph and it is correct, but the line-by-line check of `am1-port.md` stays with row 206.
+3. `t0-skeleton.md` S4: add S1g (mirrors, invariance) and E1 (the cutoff sequence) to the inputs.
+4. `t0-skeleton.md` O2 and O5 are marked "cited". `s4-s6.md` Sections 2-4 prove them as implications from S1g, with this check.
+5. All three notes give D1's first open input as "C1/OH1". That pointer is out of date: `library/p2-floor.md` (in progress) records C1 (P1) as proved by Codex and checked by Claude. D1 itself stays open.
+
+**Stays open.** The premises of this chain:
+
+- D1 (rank 10): open. The floor's (P2)-(P3) are in `p2-floor`, and OH4's inputs are in `d1-floor.md` Theorem U.
+- E1, the first-passage cutoff data: open.
+- S1g and the bond-cut case of S1d: both in `am1-port.md`, proved by Codex and not yet checked (row 206).
+
+Factorial growth (E0', `growth-qf3.md`) is not checked here. It belongs to `gates/cluster-check.md`.
+
+## Result
+
+Kind: a check of Codex's rebuilds of proofs that Sussman-Alpoge give in detail (SA ST1-ST15, GS1-GS13, CC1 and the compactness theorem L24889, HB1-HB7, QF1-QF2; YM3_I IV-27-22, IV-28-17, IV-28-21). Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text.
+
+`library/d2-d4.md`, `library/s4-s6.md` and `library/cone-o6.md` were checked line by line by Claude. First failing step: none in any of the three. Each holds as an implication from its stated premises. The defects found are wording and bookkeeping only: a nonnegative-bump condition, the sign convention of P_j, and the box geometry in `s4-s6.md` Section 6. None breaks a statement.
+
+Finished 2026-11-04T05:15Z.

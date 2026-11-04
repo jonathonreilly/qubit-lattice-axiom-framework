@@ -194,3 +194,8 @@ Each line: the node, then the first statement a lane should prove. "Hardest" mea
 12. **S2, S5** (growth). First: SA QF3 (L24960) from D2, with the factorial loss and seminorm order linear in n.
 13. **W2 and X1**. First: X1, the reading of the witness on the outline's law and blocking map; then NT2 on R⁴ with ε → 0 (the outline has only the two constant bounds there, SA L6888).
 14. **Leaves**: (H-ct) and (H-prof) of A2; WF-c; C1; the rest of C2; the C3 mass bound; F3; S15; 4.14; D3. Each starts from the SA line in its row.
+
+
+## Convergence point, 2026-11-04
+
+After rows 221-253 the open inputs of ordinary B4, 1.6, (LOC), (Gamma), (FG) and (R-cov) reduce to one: **(D4), complex domain admission of every carried composition** (lifted and stage cores, stored arguments, healing gauges, logarithm charts, with room), the outline's own named open item (SA 4036-4037: inclusions and history formation "remain to be verified"; SA 5813-5825, 6155-6158, 17229-17233). Checked implications now conditional only on it: kept-form covariance (row 252), (R-inv) and the zero defect budget (row 242), Theorem UR (row 223), (REL') and Lemma 2 (row 234), the typed reduction (row 227, off T0's path). Route search (row 253): the real-first route fails, so the complex route through the background package (OA5)-(OA7) is needed.

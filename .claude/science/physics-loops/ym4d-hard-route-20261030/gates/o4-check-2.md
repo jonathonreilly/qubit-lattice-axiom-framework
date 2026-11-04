@@ -3,7 +3,7 @@ lease_until: 2026-11-04T18:00Z
 
 # o4-check-2: check of `library/ak-port.md`, `library/tu-port.md`, `library/ac-port.md`, `library/wightman.md`
 
-Queue row 207. Started 2026-11-04T06:00Z, finished FINISHTIME. Verdicts: all four notes ADVANCE, first failing step none (Sections 1-4); moved nodes and bookkeeping in Section 5.
+Queue row 207. Started 2026-11-04T06:00Z, finished 2026-11-04T06:26Z. Verdicts: all four notes ADVANCE, first failing step none (Sections 1-4); moved nodes and bookkeeping in Section 5.
 
 Provenance: Claude Opus 5.5 (claude-opus-5-5), effort max, Mac mini worker, at branch commit `e3e771590`. One reading by one other model of four Codex notes. This is not an audit and grants no status.
 
@@ -180,4 +180,4 @@ Kind: a check of Codex's ports of proofs that Sussman and Alpoge give in detail.
 
 The defects are wording or scope only. `ak-port.md` (14) omits "distinct". Two notes carry an out-of-date D1 pointer. O11 must read O(4) and TU10 for each component (through O9), not for the averaged limit. None breaks a statement.
 
-Finished 2026-11-04T06:45Z.
+Finished 2026-11-04T06:26Z.

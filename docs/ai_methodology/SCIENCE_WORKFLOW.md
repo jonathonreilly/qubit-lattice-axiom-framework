@@ -46,9 +46,12 @@ favorable verdicts, note counts or PR counts.
 8. **Independence means a different path.** An independent check uses a
    different derivation or implementation of the load-bearing step. Re-running
    the same calculation, or comparing outputs derived from the same expected
-   constant, is not independent. Adversarial checks challenge premises, domains,
-   normalization and physical identification, not prose. Record disagreement
-   instead of resolving it by majority.
+   constant, is not independent. During research, each new proof gets one
+   independent check: another model reads it line by line and names the first
+   failing step or confirms it. Hostile readings, panels and reviews of a
+   review wait for the hardening pass (section 7). Adversarial checks challenge
+   premises, domains, normalization and physical identification, not prose.
+   Record disagreement instead of resolving it by majority.
 9. **Literature first; build on published work.** Each route or proof step
    opens with one search, run far and wide, of the repo, open PRs and the
    literature for its statement and its method, recorded once in the target
@@ -89,7 +92,8 @@ new repository bridges.
 | Formal audit | Runs only for a TOE candidate or a standalone proof the owner wants to publish, over that result's dependency closure. Routine research does not wait for audit; preservation guards apply where affected live judgments exist. Mechanical validation never invokes an auditor or grants status | 2026-10-30 |
 | Landing review | One independent fast reviewer per coherent unit (owner's Codex choice: Astra low), escalating unresolved mathematical or premise questions to the strongest reviewer (Astra xhigh). The executable model contract lives in `skills/review-loop/SKILL.md` | 2026-09-08 |
 | Original mathematics | Explicitly authorized within the user's task | 2026-10-08 |
-| Published work | Searched once per route or step and on record; built on at once with credit, labelled `unchecked`, and verified in parallel (section 2 rule 9, section 10) | 2026-11-02 |
+| Published work | Searched once per route or step and on record; built on at once with credit, labelled `unchecked`. A step the source proves in detail is a cited input until the hardening pass; lanes go to steps it sketches, assumes or gets wrong (section 2 rule 9, sections 7 and 10) | 2026-11-04 |
+| Checks during research | One line-by-line check of each new proof by another model; hostile readings, panels and reviews of a review only in the hardening pass, once the candidate is complete | 2026-11-04 |
 | Lane output | Closed proofs or explicit counterexamples; lanes run to closure; route choices recorded with reasons (section 7) | 2026-11-02 |
 | Questions for the owner | Axiom edits, public posts, spending and pace only; scientific forks get probes (section 10) | 2026-10-30 |
 
@@ -171,10 +175,16 @@ date, and revisit it whenever a result touches it. Both stay live, hardest open
 step first, only while the evidence is open; the lead allocates budget by
 evidence and may pause a lagging route with its reopen condition. Retire a route
 only when a gate shows its hardest step fails or the other route closes that
-step.
+step. A search for a shorter or simpler route, or one that removes a dependence,
+is progress, not review; rerun the route comparison at each milestone.
 
-**Methods.** Lay out the complete skeleton of the argument, then attack the step
-it is most likely to die on first; routine steps wait. Test machinery on a
+**Methods.** Lay out the complete skeleton of the argument first, one line per
+statement with its inputs and its state, then attack the step it is most likely
+to die on; routine steps wait. Before proving a step, find and quote where the
+sources treat it: proved, sketched or assumed. A step a source proves in detail
+is a cited input until the hardening pass; lanes go to steps the sources
+sketch, assume or get wrong, and a note claims that a source "assumes" or "does
+not show" something only with the quoted passages that build it. Test machinery on a
 ladder of easier models of the same step: what works there is the first
 candidate, and what fails there is a cheap kill. For a standard, low-risk step,
 write one full draft, distil it to a minimal proof, then gate it. Freeze what
@@ -199,8 +209,16 @@ statements killed, observable maps validated, and the terminal obligations that
 remain. Never report a percentage of TOE completion. A valid conditional
 theorem proves an implication, not that the world satisfies its hypotheses.
 
-Use the existing N1-N8 negative-claim packet contract honestly where required.
-Its five-route minimum is a mechanical submission rule, not a completeness
+**Hardening.** Once a candidate argument is complete, run one hardening pass on
+its consolidated document: re-derive the published steps it cites, run the
+adversarial readings of premises, domains, normalization and identifications,
+and review the whole chain line by line. Until then these readings wait; they
+are not a step of every lane.
+
+Use the existing N1-N8 negative-claim packet contract honestly where required:
+when a no-go claim is landed or made public. Inside a target, a failed attempt
+is recorded as a failed search (section 2, rule 7), without a packet. Its
+five-route minimum is a mechanical submission rule, not a completeness
 theorem. Never invent route families to meet it; a packet that cannot meet the
 schema stays pending. Schema changes need coordinated validator, fixture and
 auditor-prompt updates.
@@ -256,10 +274,12 @@ all work:
   what it blocks; other work continues.
 - **Verify what you build on.** Reading published work is not accepting it.
   Build on a published or outside-project statement at once, labelled
-  `unchecked`, and verify in parallel, in order of load and risk: re-derive it
-  as a library entry credited to its source, labelled like our own work, and
-  pass it through a research gate from another provider where one is
-  available. A citation, and the source's own labels such as "proved", carry no
+  `unchecked`, and verify it, in order of load and risk: re-derive it as a
+  library entry credited to its source, labelled like our own work, and pass
+  it through a research gate from another provider where one is available. A
+  step the source proves in detail is re-derived in the hardening pass
+  (section 7); a step it only sketches or assumes is proved here when the
+  chain reaches it. A citation, and the source's own labels such as "proved", carry no
   weight. A step counts as a critical-path closure, lands or goes public only
   once everything it reads is verified. Section 3 covers provider Lean-verified
   theorems.

@@ -401,6 +401,8 @@ Consequences. Without a PS-1 update, PS-3's transport has no half-tick to respec
 
 Each is for the owner to decide. None is used as if adopted; every result that needs one says so.
 
+**Owner decision, 2026-11-04.** All six are in the working set, after a check that none smuggles physics (`TOE_ASSEMBLY.md` section 3.2; PR #10140). PS-1c, PS-3h and PS-3c are kept as written below. PS-6r, PS-7r and PS-11c were rewritten, and the texts below are superseded: PS-6r now fixes only the register algebra, and the gate content is part of the law choice; PS-7r defines the sea of a tick, and VC1 builds the vacuum of the gauged law; PS-11c uses a list fixed in advance. The distilled LW1 uses the section 3.2 texts.
+
 1. **PS-1c.** "In PS-1 and in Admissibility, covariance under lattice translations and proper cubic rotations is read on cells: the update is covariant under the translations of the lattice of `2 x 2 x 2` cells and under the proper cubic rotations about each cell centre, and its symmetry group acts transitively on sites." Reasons: Section 5.1.
 2. **PS-3h.** "The actual configuration is a configuration of site occupations. It exists at every half-tick and moves once per half-tick, using only the nonzero matrix elements of that half-tick between occupation configurations." Reasons: Section 5.4.
 3. **PS-3c.** "The actual value of a site has been copied into a neighbouring site at a tick when the law gives probability one that their actual values agree at that tick. A record forms at the end of a tick at each site that carries no record and whose actual value has then been copied into at least two of its neighbours; it locks the site's actual value." Reasons: Section 5.4.

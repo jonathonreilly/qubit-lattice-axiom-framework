@@ -43,3 +43,34 @@ Checked line by line by Claude (Opus 5.5, max), commit f20eba5f1. Not an audit. 
 3. *Section 8 versus `d1-floor.md` 4c.* 4c showed only that (9.2) applied to the raw increment at the near-zero radius gives a depth-dependent radius. Section 8 avoids this with the large ball R = c_T/λ and three real values. So 4c's "(ER7) is not in the library" is superseded: (ER7) is now an implication from A1 (9.2), `a1-balaban.md` 3.5 and 7.6, and Definition A, by Codex, checked here.
 
 **State after this check.** C1 (P1) is proved by Codex and checked by Claude, first failing step none: exact sourced mass and non-negative label densities at every finite depth. (ER7) is proved by Codex from Claude's Lemma T with the raw-datum correction, checked by Claude, first failing step none. These remain implications from A1 (conditional on F0) and the adopted tower geometry.
+
+## 2. (P2): the form at the never-large label
+
+**Claim.** (P2) is Theorem 2.1 (SA L17259) read at the final label S_0. It adds no clause of its own. Its first input that is not supplied is the response input of B4's (19), which fails for the adopted representative (Section 3b). After it come (LOC) and the typed tests.
+
+**Reduction at S_0, checked against the outline's definitions.** At S_0, Ω_j = Λ_j = T and S_j = ∅ for every j, and there are no marks.
+
+- T'_K(S_0) = 1. The integral operations of a label are those of its standing marks (SA L17257, L17451). S_0 has none.
+- χ_{K,S_0} = χ_K(Ω_K) = Π_{□⊂T} χ_K(□) = χ_K (Lemma 2.2(c), SA L17369).
+- B_K = 0. B-terms are indexed by X ∩ Z̃_j ≠ ∅ (SA L7624), in the action sequence (SA L17440). For S_0 that sequence has Z_j = ∅ at every level.
+- x_K(·) ≡ x_K, since φ_j ≡ 1 when Λ_j = T (SA L17640).
+- −ℰ_{K,S_0} = E = Σ_{j<K} 𝖤^{(j)}(T, T) (SA L7499).
+
+So Theorem 2.1's display at S_0 is (P2), term for term. Nothing specific to S_0 remains to prove.
+
+**How the outline treats it (FINISH item 9).** Theorem 2.1 is the conclusion of "the closed induction" (SA L17255). The outline lists its extension beyond Balaban as "Package C statements that we must prove" (SA L17290-17302): label independence of the remainders on all tori, positivity of each term, measure and formula as two layers, the class, the flow, the mass bound, the hull length, the three fates, the order of constants, and "exactness for each partition of the histories". It states that "the exponential form given below holds for sums of histories and not for an individual history" (SA L17257). The R-part of R^{(k)} "arises only through the sum over (𝔛, ς), a sum which R itself performs (Proposition 2.10 [outlined below ...])" (SA L17451). Classification: sketched. The step formulas 1a.2.8-1a.2.9 (SA L7569-7630) are implications from named obligations; 2.10 and 2.11 are outlined.
+
+**Why the floor reads the label, not one history.** `d1-floor.md` Section 2: E carries Σ_X R^{(j+1)}(X, 1) at every level, and these include the healed parts. The never-large history alone lacks them.
+
+**What (P2) reads, and the state of each input.** At every level k ≤ K, and for every label that heals into S_0:
+
+| Input | State |
+|---|---|
+| C1, positivity and exactness | proved by Codex, checked here (Section 1), first failing step none |
+| (ER7) = (ER8u) | proved by Codex, checked here (Section 1) |
+| B4_k and 1.6_k, the step | implication from P + H_{<k} + BX⁺ + UR + YA + LOC (`b4-induction.md`, Codex, not yet checked); typed tests open (row 219) |
+| (19)_{k−1}, inside B4 | Proposition W of `b2-extract.md`; it reads the response bound (R), false for (Id) (`ur-ya.md` (3)-(4)); see 3b |
+| 2.10, the healed sums | reduces to (LOC); open (rows 204, 211, 214) |
+| 2.11, class preserved (tube, flow, mass) | carried by the rows above; not closed |
+
+**First failing input of (P2).** In reading order, B4's (19) at its response input: (R) is false for the adopted representative, and its substitute (Γ) of Section 3b is not supplied. Then (LOC). This is the same input that stops (P3) (Section 3).

@@ -1,0 +1,1606 @@
+# Obligations the outline names, by chunk
+
+Collected from the `Obligations named here` section of each chunk file (row 244). Not checked; read the source lines before relying on one.
+
+## Chunk 01
+- 36: Supporting analytic obligations listed in the dependency catalogue “must still” be proved.
+- 167–169: Full derivations beyond the outline’s central mechanisms and shorter supporting arguments are reserved for the fuller proof.
+- 233–236: Finite-dimensional statements must not be treated as cutoff-uniform estimates merely because the integrals are finite.
+- 280–282: Finite-cutoff existence establishes neither tightness of renormalized local fields nor a useful continuum-limit estimate.
+- 292–293: Finite-torus isometry invariance does not prove every infinite-volume periodic Gibbs state has every reflection.
+- 308–309: The smooth normalization calculation requires the stated holonomy expansion and uniformly bounded required derivatives.
+- 319–322: Typical quantum configurations have not been shown to satisfy the smooth-field hypotheses, and convergence of the observable under lattice measures is not proved by this calculation.
+- 379–382: The transfer to centered moment convergence requires all separated cumulants of order at least two to converge; positivity must be applied to moments.
+- 396–405: The transformation must preserve mass on the sourced family, and derivative identities require justified analytic dependence.
+- 406–408: Identifying a predetermined block-variable distribution requires a measurable map M and the pushforward identity for every bounded measurable test.
+- 414–416: Sources must be transported through the exact integral while the transformation choices remain fixed across the source family.
+- 466–469: Fixed-spacing DLR existence supplies no continuum-uniform estimates, uniqueness or extremality and does not establish a theorem about all periodic Gibbs states.
+- 480–488: Diagonal extraction assumes a finite C(n,R,d) bound independent of sufficiently large cutoff index.
+- 518–523: The Yang–Mills estimate supplying C(n,R,d) must be proved; plaquette-count bounds and exponentially volume-dependent bounds do not meet it.
+- 527–544: Positivity preservation assumes real reflection-invariant centering and cutoff positive-half moment inequalities on the specified separated tuples.
+- 546–552: Closedness requires convergence of all quadratic-form entries, and extension to Schwartz space additionally requires density and a continuous distributional bound.
+- 560–563: Quotient translations require null-space preservation and suitable bounds; strong continuity and a nonnegative generator need their own later hypotheses.
+- 581–586: Non-Gaussian action-density correlations alone do not characterize an interacting gauge theory; a richer gauge-invariant algebra requires additional observables and compatibility arguments.
+- 588–599: Polynomial clustering does not establish a positive mass gap, which requires spectral support excluding one fixed positive interval and additional estimates.
+- 627–635: The block Neumann graph must count intrinsic nonwrapping bonds, excluding opposite-face wraps even when their endpoints are in the same block.
+- 650–651: Physical and combinatorial differences must not be interchanged in mesh-independent estimates.
+- 778–779: The scalar block gap supplies neither vector-field coercivity nor a physical Hamiltonian mass gap.
+- 843–844: Every adjoint in the projection argument uses the previously fixed physical inner products.
+- 848–857: Switching to unweighted coordinate inner products requires conjugating the averaging matrix.
+- 879–884: The arithmetic mean with its plain adjoint is not the block projection; weighted and conjugated unweighted conventions must not be mixed.
+- 891–897: A coordinate change must transform both the random vector and covariance, with the matching inner products for a projection interpretation.
+- 912–916: The coordinate convention change must be announced before the first affected adjoint, constraint or Poincaré estimate, and every discrete derivative must identify d_0 or d_η.
+- 961–968: The Combes–Thomas hypothesis requires a real weight changing by at most η on neighboring sites and restricts the relative bound to |t|≤1.
+- 1076–1082: The scalar operator estimate asserts neither a mesh-independent physically normalized Green kernel nor the non-Abelian vector-field or multiscale background bounds; the latter require gauge constraints and response bounds.
+- 1096–1099: Dirichlet compression must use the original block projection; replacing it with a surviving-site mean is not justified by the corollary.
+- 1126–1128: No estimate with the region’s potentially larger intrinsic distance is asserted.
+- 1130–1137: Distances must be physical; using unscaled bond count would incorrectly strengthen the decay estimate.
+- 1153–1157: Small-field integration must produce activities satisfying the summability criterion; the activity estimate remains a separate analytic task.
+- 1161–1164: A finite polymer system requires symmetric incompatibility and self-incompatibility of every polymer.
+- 1172–1174: The logarithm construction must control local activities without exponential loss in the total polymer count.
+- 1267–1269: The rooted-tree bound needs cancellation before absolute values over connected graphs.
+- 1273–1279: The polymer criterion assumes nonnegative a_X and the incompatible-activity bound `eq:kp-explicit` for every polymer.
+- 1323–1325: The holomorphic domain conclusion requires a uniform majorant throughout the complex activity domain.
+- 1341–1346: The preferred logarithm branch is restricted to the domain component containing zero; no preferred branch on an arbitrary disconnected domain is asserted.
+- 1349–1355: The countable finite-region extension requires a finite total activity majorant, while infinite-lattice rooted expansions require the incompatibility criterion and assert no finite total partition function.
+- 1359–1366: Locality assumes support in polymer enlargements, extra weights must enter the majorant before checking the criterion, and external holomorphy requires the same absolute majorant on the domain.
+- 1368–1373: The fluctuation application must verify `eq:kp-explicit` with covariance, localization-domain counts, source radii, boundary costs and required derivatives included in the majorant.
+- 1371–1373: Large-field histories require their separate weighted label estimate as part of the analytic conditions still to be verified.
+
+## Chunk 02
+- 1349–1353: The countable-polymer extension requires the indicated finite-region weighted summability, and the infinite-lattice rooted bound requires the incompatibility criterion.
+- 1364–1366: Holomorphic connected expansions require the same absolute majorant throughout the chosen domain.
+- 1368–1373: Verify eq:kp-explicit with covariance, localization-domain count, source radii, boundary costs, and required derivatives; supply the separate weighted large-field history label estimate.
+- 1385–1386: Establish the separate interacting-lattice/free-model comparison including its error.
+- 1596–1604: The separated-limit construction requires pairwise disjoint compact supports and sufficiently small mollifier radius relative to separation.
+- 1613–1615: Repeated-test L² convergence is not asserted; coincidence singularities require another distributional treatment.
+- 1659–1661: Recovering the free coefficient in the interacting theory still requires ultraviolet comparison and a uniform remainder estimate.
+- 1715–1728: The stated comparison bound requires an integral torus lattice and centre separation between 10a and ℓ/10.
+- 1794: Show that the torus Fourier distribution is smooth away from zero and identify its finite-volume correction; discharged at 1946–1987.
+- 1816–1823: The grid estimates require R at least a fixed multiple of δ and M>4 for the tail sum.
+- 1827–1834: The summation-by-parts cutoff requires R≥2Mδ and 2R<π/(2a).
+- 1925–1936: The balanced-cutoff proof requires the large-distance threshold; its bounded-distance complement uses the continuum estimate established later at 1979–1985.
+- 2067–2076: The relative finite-volume statement requires nonnegative nonzero tests, comparable cross-distances, and the stated separation-to-volume restriction.
+- 2076: A relative rate for a varying test family would require specified norms and nondegeneracy.
+- 2078: Neither repeated-test L² convergence nor an interacting short-distance asymptotic is asserted; the latter requires comparison with the Gaussian model and a remainder smaller than the leading term.
+- 2139–2144: GL1 assumes the source partition inequality for every sufficiently large multiple of the period; the admissible sparse insertion construction establishes it at 2371–2381.
+- 2188–2190: Keep the local source, including any later small parameter, fixed until the thermodynamic surface error disappears.
+- 2259–2267, 2282–2291: Use polynomial f and the smooth spectral domain in GL5; no general smooth inverse or bounded L² conjugation is asserted.
+- 2337–2345: The insertion Ξ must be real, bounded, gauge-equivariant, contractive, and have a continuous strictly positive sandwiched kernel.
+- 2354–2355, 2383–2385: Choose source translates with disjoint blocks and a sparse period subgroup of the state's periods.
+- 2397–2404: GL12 requires a real continuous, common-gauge-invariant, antisymmetric two-layer observable.
+- 2431–2439: Choose ε small enough for strict kernel positivity and take the thermodynamic limit before ε tends to zero.
+- 2500–2503: GL15–GL16 require a real polynomial lower-layer factor and a smooth higher-layer observable independent of the preceding spatial layer.
+- 2688–2692: The common period is an input to the later all-mirror proof, whose diagonal split tori, crossing kernels, chessboard inequality, and arbitrary-state separation are supplied elsewhere.
+
+## Chunk 03
+This list records explicit requirements, temporary assumptions, promised proofs, and stated non-establishments; an obligation discharged later in this chunk is marked as such.
+
+- 2668–2671: The concluding link proof relies on the approximation and expectation equality established “above”; those earlier details are outside this chunk.
+- 2688–2691 and 2708–2712: The common-period link-symmetry result is an input to the independent all-mirror argument, rather than reproved there.
+- 2742–2747: Mirror positions and test algebras are restricted to the stated admissible lattice reflections and closed-side bonds.
+- 2751–2757: The all-mirror theorem assumes a periodic Wilson DLR state and positive coupling; its promised conclusion is proved by 3168 from the common-period input.
+- 2805–2809: Split tori require a rank-three tangent lattice, an integral normal period, sufficiently large z, and arbitrarily large shortest nonzero periods.
+- 2887–2888: The slab construction requires integer H at least two and M at least one.
+- 2898–2900: The chessboard profiles must be positive bounded slab functions with strictly positive infima.
+- 2946–2950 and 2959: The tangent estimate assumes finite-index Q, real continuous local A, Q-invariant Wilson DLR nu, and adapted period lattices contained in Q with all sides diverging.
+- 2995–3003: The folding construction chooses an even positive h so its normal displacement belongs to P.
+- 3019–3023: The fold argument temporarily assumes A is supported in the selected slab; 3126–3136 removes this restriction for arbitrary local tests by translation.
+- 3027–3029 and 3051–3052: The fold-pressure comparison uses positive t.
+- 3112–3114: Volume must tend to infinity before t tends to zero to control the divided surface error.
+- 3145–3150: A common period for both states is essential to the separation argument; the link-symmetry theorem supplies it.
+- 3180–3183: Adjacent-layer contractions alone supply no identity reducing arbitrary odd or even stacks to one layer; the proof uses another route.
+- 3188–3189: The all-mirror result makes no continuum-limit or interacting renormalization-group assertion.
+- 3207–3215: The plateau theorem assumes translation invariance and closed-side reflection positivity for all coordinate and diagonal mirrors.
+- 3217–3218 and 3240–3242: Plateau tests lie in the radius-r cube with integer r at least one, and their residual separation n must be at least one.
+- 3256–3258: The spectral theorem and mean ergodic theorem are used as standard inputs; the estimates supplying the power in PL3 are promised below and discharged through 3710.
+- 3311–3320: The essential carrier bound PL5 is promised from diagonal mirrors and proved through 3427.
+- 3323–3331: The polynomial-measure lemma requires a finite positive closed-disc measure satisfying PL6 for every polynomial; its conditional conclusion is proved through 3378.
+- 3380–3389: The carrier application requires local A in the coordinate half-space and an integer R enclosing its support as specified, so the diagonal reconstruction applies.
+- 3517–3527: PL11, particularly its nontrivial lower bound, is announced for verification and proved through 3554.
+- 3556–3558: The first filter-density argument assumes definite coordinate-reflection parity; 3681–3688 removes that restriction.
+- 3650–3651: The derived momentum-density bound is energy weighted; no bound for the unweighted spectral measure is assumed or established by this statement.
+- 3717–3720: No spectral gap above the invariant subspace has been proved.
+- 3722–3725: The closedness corollary concerns fixed spacing and measures satisfying the stated mirror-positivity and translation-invariance hypotheses.
+
+## Chunk 04
+- 3778–3781: Establish the determining coupling law for arbitrarily fine admissible data and retain the scope and uniformity of every invoked comparison package.
+- 3796–3807: Use the correct group normalization and constants uniform in cutoff, torus, history, test positions and Gibbs state, displaying allowed parameter dependence.
+- 3811–3824: Prove existence, regular-orbit uniqueness, measurable and holomorphic gauge choice, scale-uniform neighborhoods and restriction/seam/torus compatibility in A1.
+- 3825–3833: Keep all actual restrictions and substitutions inside pair cores with Taylor room and whole-core curvature and own-action bounds, including young ages; the one-step chart does not supply many-level room.
+- 3835–3852: Remove residual gauge directions and prove A2 coercivity on each actual conditioning fiber and complex neighborhood, handling holonomies, zero modes and node constraints.
+- 3861–3862: Establish the non-Abelian, nonzero-current, signed-profile, layered and enlarged-complex A2 versions beyond the flat reference.
+- 3864–3881: Prove A3 nonlinear and multiscale inverse/response decay, first and Hölder differences, enlarged-disc decoupling Cauchy bounds and polymer-compatible decay.
+- 3888–3896: Establish full interacting response/decoupling domains and finite-box equations, boundary forcing and fine-cell-weighted force-norm compatibility for PW12.
+- 3898–3906: Prove uniform averaging-scheme intertwining, coarse gauge factors, all-depth A1–A3 preservation, explicit locality and accumulated nonflat comparison bounds.
+- 3910–3925: Prove B1's strict complex polymer majorant, exact finite-volume logarithm, normal connected expansion and termwise derivative majorants.
+- 3933–3935: Verify the unmarked theorem's primitive hypotheses for the actual interacting complex matrices and all allowed cores.
+- 3940–3951: Supply normal convergence, individual-member gauge and Euclidean covariance, actual free response and Hessian moments for B2, retaining each member's own coefficient.
+- 3955–3959: Supply normalization, A1–A3 throughout the complex domain, actual core inclusions, Hölder regularity, compatible boundaries and whole-core own-action bounds.
+- 3978–3984: Prove all B2 hypotheses in the actual RG and the separate torus/field tails, formation-source derivatives, F2 disintegration and stronger 1e.1.13/1e.1.15/1e.1.16 estimates.
+- 3986–4004: Prove the lattice one-loop coefficient with its zero-mode convention, summable lattice correction, bare-coupling independence and controlled nonlinear increments; separately prove any stronger error used later.
+- 4006–4012: Prove B4 ordinary-step holomorphy and a label-count-uniform majorant on the full site-dependent product box.
+- 4014–4023: Prove potential and zone-mass tests, joint marked derivatives and typed tensor counter-insertions on the stated complex domains for stronger routes.
+- 4036–4037: Verify actual nonlinear background/core inclusions and history formation beyond the conditional ordinary-response implications.
+- 4041–4050: Construct total Borel moves, exact single handling of stored variables, sourced insertion-preserving transport and nonnegative real probability summands.
+- 4052–4061: Construct allowed histories, prove stable determining margins and nonwrapping operations, and prove entropy bounds with the rarity size function.
+- 4063–4073: Prove C3 component masses with internal complex suprema and all entropy, Wilson, Jacobian, gauge and insertion costs paid, including background failures and attached drop-outs.
+- 4075–4084: Construct the nonempty invariant inductive class containing the bare measure and choose all constants consistently across steps.
+- 4088–4098: Prove actual ST5–ST6, source-representation independence, upper stability and the unsourced floor, including mirror-periodized Lipschitz profiles and required uniformity.
+- 4100–4120: Realize D1 with the specified full-scale rooted cube geometry, neighboring-layer dependence and entropy accounting for extra domain types.
+- 4132–4135: Verify the history-stability criteria, reserves and Wilson-factor allocation using an exact common integral representation.
+- 4160–4163: Retain the actual ordinary-source construction; geometric counting alone does not prove D1.
+- 4165–4175: Prove summable age-resolved persistence tails and all later-used moments while preserving insertion/source weights through witnesses, reflections and counting.
+- 4177: Take sufficiently fine cutoff for fixed-bump Riemann-sum deductions.
+- 4197–4205: Establish the flow recursion, drift, bounded increments, independence of torus and unused finer cutoff, and formation/domain validity through first passage.
+- 4207–4224: Prove frozen terminal holomorphy, slope bounds, target bracketing, intermediate tube admission, marked-forcing summability and admitted real overlaps where gluing is used.
+- 4226–4239: Prove summable matched-cutoff differences and the additional terminal-coupling Lipschitz comparison.
+- 4241–4248: Prove equal bare-integral representation and sufficiently small calibration discrepancy, specifying the coupling/calibration used in uniqueness claims.
+- 4280–4287: Establish interacting F2 separately from free Gaussian normalization and preserve the distinction between plain projection and physical block-adjoint conventions.
+- 4289–4305: Prove the interacting two-point extraction identity with explicit cutoff requirements and relative error at most one-half for the entire TU9–TU13 angular class or justify inclusion from a narrower class.
+- 4307–4314: Prove F2 for every relevant periodic state uniformly in states and positions, and separately justify any claimed error tending to zero without silently extending volume uniformity.
+- 4315–4323: Verify actual unmarked, leg-path and complex-domain hypotheses, complete-field near-smallness and separate remote/holonomy tails; these deductions leave interacting backgrounds and histories unproved.
+- 4325–4331: Prove clean-history Hessian, exterior-force and same-exterior pointwise-deletion laws with correct flag mass, and either nonlinear averaging-fiber comparison or the alternative gauge route's conditions.
+- 4334–4342: Supply actual all-substitution room, window-first bounds and Gaussian-coordinate holomorphy for old-Hessian estimates and the exterior-force/clean-class conditions.
+- 4344–4358: Supply either a Gaussian reference law uniform along arbitrarily large tori or a finite-reference comparison with compatible normalization, floor and vacuum-density data.
+- 4360–4374: Define witness depth independently of the desired conclusion, keep separation in range and prove running coupling and normalization asymptotics with F2 uniformity and source-derivative identification.
+- 4375–4383: Supply independent coupling polydisc bounds or an actual marked remainder with summable forcing and history control; use p_R > 1 for summability and p_R ≥ 3/2 for the stated sharp weaker-route rate.
+- 4413–4414: Verify state-uniform F2 extraction and F3 normalization separately from the TU10 deduction.
+- 4416–4425: Prove a sufficient gauge-invariant observable family, consistency, renormalization and continuum gauge identities for full Yang–Mills identification, which remains open.
+- 4468–4474: Verify D1 and F2–F3 and, for arbitrary cubic-torus limits, the inherited mirror and cone interface before using G2.
+- 4476–4483: For the Ward route, prove controlled bulk/discretization errors and existence and vanishing of the ordered boundary limit with its typed estimates.
+- 4544–4565: Prove precise D1 before invoking all-state moments and ensure a separated-tuple convergent subsequence; factorial growth needs actual-rooted D2 rather than per-order transfer alone.
+- 4595–4598: Supply separate renormalization for extensions across diagonals and contact-term identities.
+- 4605–4609: Ensure all full positive-time quadratic tensors belong to the declared reconstruction domain and obtain their inequalities under H1 and constrained density.
+- 4616–4627: Apply an external reconstruction theorem with matching test spaces and growth, Euclidean and permutation symmetry and the necessary cluster property; do not infer arbitrary invisible contact terms.
+- 4630–4643: Complete actual D1 and F2–F3 proof outlines and construct admissible data; prove additional weighted/matched/Ward comparisons where used, F4 for gauge identification and a separate positive spectral estimate for a mass gap.
+- 4654–4658: Prove the local analytic energies, residual finite-volume integral bounds, exact measure transport and geometric forgetting conditions of the bridge.
+- 4691: Restrict transported insertions to gauge-invariant ones when operations are defined only on gauge-invariant densities; mass preservation alone gives no uniform density estimate.
+- 4733–4762: Supply local-domain diameter and entropy bounds, a common cutoff-independent analytic source radius, vanishing at zero, exponential energy decay beyond entropy and localized dependence.
+- 4806: Supply a normalized residual factorization with the stated finite-volume bound to obtain the cumulant consequence.
+- 4810–4818: Supply equicontinuity and suitable countable tests for compactness, and a summable comparison for prescribed whole-sequence convergence.
+- 4820–4829: Establish actual paired energy bounds for position-dependent arrays, compare residual integrals on a common zero-free ball and supply separately justified weighted age factors.
+- 4848: Establish the tuning interval, target crossing and derivative estimate through the construction.
+- 4850: Supply additional coincident-point, full-test-algebra positivity, rotation and Yang–Mills identification arguments beyond separated correlations.
+- 4859–4861: Justify the weights in any analytic extension and distinguish small rare-event output bounds from enlarged input radii.
+- 4876: Prove existence and uniform size of hereditary complex domains.
+- 4878: Keep each site-assigned member's own scalar coefficient and required pointed covariance.
+- 4900–4907: Specify carrier majorants and history size and bound both total excess per stored site and carrierwise oscillation.
+- 4917–4921: Prove local freezing and full-array bounds, including noncovariant defects, variable Wilson weight and stored histories.
+- 4959: Remove re-filed remainders from their old slots and count them in their receiving families, retaining any recent-window term.
+- 4968: Place survival factors in history output estimates rather than assuming a reciprocal enlargement of the analytic input radius.
+- 4995–4999: Supply the weighted seminorm domain and uniform bound or a derivative estimate along actual trajectories; ordinary box analyticity does not produce weights.
+- 5016: Establish the marked-slot radii, vanishing identity and uniform enlarged-domain bound in the application.
+- 5049: Use bounded per-zone radii with rare-history output factors rather than an unjustified aged-load tube bound.
+- 5060: Supply all prescribed typed tensor counter-insertions before claiming the remainder is irrelevant.
+- 5062: Prove that background-graph cancellations extend to independent-current domains before using them there.
+- 5066–5082: Prove `eq:wext-potential-test` for actual complex pairs and decoupling parameters with own scalar or full tensor subtraction, specifying fluctuation cuts and domains, squared-radius defect/remainder tests and marginal Wilson treatment.
+- 5084–5091: Prove normally convergent dial subseries and `eq:wext-zone-test` with level/history/position-uniform constants and complex sources, replacing ε_k by the actual majorant for unintegrated boundaries.
+- 5102–5107: Apply zone estimates under actual moduli, suprema and reserve weights and establish the needed first and mixed trajectory derivatives, or a sufficient uniformly bounded full tube.
+- 5111: Retain physical-radius normalization, tower-based core inclusion and all linearized-class hypotheses; weighted and zone-wise bounds remain additional inputs.
+- 5113: Establish step comparison, observable domination and terminal-integral inequalities with summable defects for a whole-sequence tuned limit.
+- 5115: Supply the cutoff- and volume-uniform source bounds for subsequential compactness and slope/crossing estimates for fixed-cutoff tuning.
+- 5119–5121: Establish the finer inputs for matched-cutoff convergence, typed contractions, memory and differentiated anisotropy, and joint bounds for several insertions at nonzero source, retaining domains, reserves and derivative bounds.
+
+## Chunk 05
+- 5102-5107: Apply the one-zone test under the actual moduli, suprema and reserve weights with needed first and mixed trajectory derivatives, or supply a uniformly bounded off-trajectory analytic tube.
+- 5111: Supply weighted dependence and zone-wise estimates in addition to the ordinary complex-box theorem, with physical radii and all linearized-class hypotheses retained.
+- 5113: Establish step comparison, observable domination and terminal-integral comparison with summable defects for the two tuned trajectories.
+- 5115: Establish cutoff- and volume-uniform source bounds for subsequential correlation compactness; fixed-cutoff tuning needs its own holomorphic slope and target-crossing estimates.
+- 5119-5121: Supply the finer inputs for tangent contractions, uniform memory and differentiated anisotropy, and joint nonzero-source multiple-insertion bounds with the tests' domains and weights retained.
+- 5130-5135: Prove the evaluation-map bound for every actual formed copy with its complex perturbation and reserve weights.
+- 5156: Keep formed arguments inside the original analytic domains and retain scalar and vacuum contributions in the evaluation map.
+- 5160: Control summed effective families by convergent marked expansions; moving formed arguments need their own derivative, domain and norm bounds.
+- 5165-5184: Supply the measurable holomorphic integrands, positive fixed measures, reserve majorant and uniform phase bound assumed by the one-zone reserve lemma.
+- 5191-5194: Any additional insertion must be measurable, holomorphic on the same disc and uniformly bounded there.
+- 5201: Keep the external-pair supremum inside the history integral when using upper integrals.
+- 5203-5213: Allocate perturbation and age budgets before choosing the coupling ceiling and prove the phase hypothesis rather than infer it from unperturbed oscillation.
+- 5217-5219, 5222-5254: For joint parameters supply common capacity inequalities, affine coefficient bounds and a site/action reserve majorant.
+- 5265-5268: If measures, events or evaluation maps have additional parameter dependence, supply holomorphic integrands on the common domain with the same phase bound.
+- 5305-5308: Supply a suitable all-marked-event majorant for higher mixed bounds; holomorphy alone does not multiply rarity factors.
+- 5314-5316: Assign actual simultaneous uses to a common site and action budget.
+- 5334-5344: Verify actual formed-argument curvature regularity, the load lower bound and reserve-volume domination; the direct calculation does not prove substitution inclusion.
+- 5363-5380: Supply the pointwise available-action insertion bound and its load lower bound to use the fractional Wilson-action channel.
+- 5382-5396: Supply both reserve budgets and ensure their parameter-domain intersection contains an inverse-load disc for a load-proportional derivative estimate.
+- 5397-5401: Identify action left after tests, gauge fixing and other insertions, avoid double spending, and bound simultaneous fractions on shared action pieces.
+- 5432: Establish a uniform formation norm bound excluding amplification of small inputs.
+- 5436-5443: Prove the actual formation test including scalar anchors, age/level/history-uniform constants, fractional action for bare zones, and moving-argument derivatives throughout the proposed disc.
+- 5445-5459: For the incidence route, supply charged cells, occurrence weights, original-domain inclusion and per-cell bounds in the transformed evaluation norm.
+- 5461: Prove substitutions and repeated occurrences preserve incidence bounds, paying separately for old copied terms and their history masses.
+- 5464: Show directions generated by the actual renormalization step satisfy the stronger evaluated-size definition with the proposed load.
+- 5468-5479: Supply the common Kotecky–Preiss activity majorant and pinned bound for the finite logarithm-transfer estimate.
+- 5481-5494: Supply summable pinned activity differences for an infinite relative logarithm, convergence of both global unmarked series for separate logarithms, and complex-disc majorants plus actual formed marked bounds.
+- 5497-5515: Establish the local parameterized operation bound at every new anchor loss and the copying recurrence for the recursive alternative.
+- 5517: Prove the remaining actual-substitution formation estimate with scalar parts and copy incidence; carrier oscillation, ordinary bounds and end-mark definitions do not establish it.
+- 5526-5533: Prove background existence, substituted-field domain inclusion and reproduction of presentations by a step separately from numerical definitions.
+- 5573-5575: Use the R1 plaquette divergence in D_U^*F_U.
+- 5586-5596: Select auxiliary sizes, constants, partitions and boundary conventions before forming domains and norms.
+- 5598-5610: Supply actual erosion assignments with the stated gaps and translation/lift compatibility, or impose core clauses for every admissible assignment.
+- 5645-5651: Supply a measurable extension of contour means and logarithms off regular neighborhoods, with gauge covariance for exact identities; global symmetric existence is not asserted by R3.
+- 5653-5661: Supply regular critical orbits, analytic continuation, representatives, gauges, domains and chart transport; prove background existence, uniqueness and uniform estimates.
+- 5683-5685: Provide the required real-potential gauge on every allowed small box.
+- 5696-5727: Ensure R5 exists in its continuation domain and R6 holds for all subdomains, erosions and truncations, for both real and complex configurations.
+- 5729-5736: Impose the pair tie and simultaneous gauge invariance; prove intersection agreement and holomorphic descent for any complex-orbit extension.
+- 5757-5760: Ensure the small branch for R8 exists and keep the current independent.
+- 5762-5785: Supply the holomorphic decoupled response and the actual R9 maps, walks and convergence domains.
+- 5786-5790: Construct the constraint-multiplier current response and prove its bounds independently of potential derivatives.
+- 5792-5803: Establish response existence, uniqueness, reality, covariance, restriction/lift compatibility, splitting, size bounds and background recovery.
+- 5813-5825: Prove inclusion for every R10 interpolation parameter, with R11 or another sufficient radius, and provide separate inner/removed substitution bounds.
+- 5840-5861: Supply actual response splitting, support, inclusion and uniform bounds before applying rooting or the bracket estimate.
+- 5879-5881: Supply lattice-animal summability at the chosen decay rate for domain sums.
+- 5883-5889: Provide a single infinite-lattice companion compatible with all relevant tori and cutoffs and require termwise localization-translation covariance.
+- 5890-5915: Require pointed-total isometry covariance R14 on R15's class for both W and rW, beyond invariance only after summing base points.
+- 5921-5925: Include site-tent supports in the pointing collar.
+- 5939-5940: Supply the infinite-lattice linear response with its domain and decay estimates.
+- 5958-5966: Establish absolute convergence, displacement dependence, direction independence, gauge independence, Ward identities and scalar second-moment reduction; prove Wilson coefficient one using R1-normalized response identities.
+- 5968-5971: Use declared physical radii and the inverse-square coefficient readout factor.
+- 5985-5988: Evaluate list entries in their correct backgrounds and units, and provide slot companions and covariance.
+- 6000-6007: Specify and satisfy all three-radius admissibility, smallness, nesting and step-size inequalities before using R18.
+- 6038-6053: Supply the R20 tube, nonincreasing radii and explicit terminal radius, including the one-member bound; form tests from theta.
+- 6055-6067: Supply actual total Borel tests, formation variables, local backgrounds and all neighborhoods, collar and rim thresholds.
+- 6073-6078: Specify actual region enlargements and test neighborhoods, including the number of layers.
+- 6080-6091: Specify eligible operation components, measurable alternatives and positive kernels and prove exact equality of represented measures.
+- 6093-6095: Restrict operations to nonnegative waiting-window start levels.
+- 6111-6115: Verify standing windows are disjoint at each point and old marks disappear when swallowed by healing or islands.
+- 6141-6148: Supply layer-radius data, initial-structure radii and the uniform positive range for c_sigma.
+- 6150-6158: Supply all layer, erosion, continuation and remake data and prove restriction/stage analytic inclusion with the stated radii and constants.
+- 6160-6173: Supply stored real ranges and impose near/far regularity, switch independence and the pair tie at every switch value.
+- 6185-6189: Retain each boundary slot's creation structure-domain at later steps.
+- 6199-6212: Satisfy R23, stored-field, reality and simultaneous-invariance requirements, including an absolute-radius bound for the unmarked family.
+- 6213-6234: Supply the tame kernel, fibre coordinates, normalization, near-real logarithm and fixed localization rule, and identify regular and unmarked entries with their exact localized outputs.
+- 6236-6259: Supply Gaussian covariance matrices, localization maps and branches, and satisfy the displayed Gaussian-comparison, marked-family and coefficient bounds.
+- 6261-6263: Prove Gaussian covariance construction and coefficient estimates separately; Gaussian naming supplies no universality or asymptotic-freedom estimate.
+- 6265-6286: Supply standing-history spaces, measures, factors, carriers and projections with the stated measurability/analyticity and no repeated integration of swallowed variables.
+- 6288-6303: Supply R25's reserve-weighted mass and carrier-oscillation bounds on the creation domain.
+- 6308-6314: Prove every later evaluation lies in the creation domain, fix reserve constants before the coupling ceiling and satisfy frame comparability for beta_0.
+- 6315-6318: Supply the separate drop-out majorant including its carrying Wilson factor.
+- 6320-6334: Supply finite index maps, enlargement widths, boundary-crossing rules and profile interpolation using the action sequence.
+- 6351-6357: Supply vacuum bookkeeping, including drop-out stage numbers, and the actual formation and uniform estimates left as upstream inputs.
+- 6361-6364: Establish admissible standing-history erasure with the same label and the hard-core healed-cluster decomposition.
+- 6365-6378: Supply finite positive standing and individual-history measures satisfying R26 through exact kernels and summed healed operations.
+- 6384-6395: Require chart coherence for terms, carriers, Borel sets and measures and transport under cell-preserving lattice symmetries.
+- 6400-6406: Ensure background existence and entry-domain inclusion on measure support and equality of the exponential at every adapted representative.
+- 6433-6437: Supply prepaid stability with its normalization and dials, using creation-deposit and operation-majorant bounds.
+- 6439-6447: Prove step closure, preservation of constants and margins, and equality of represented measures, together with supporting background, response, substitution, island-mass and drop-out-majorant estimates.
+
+## Chunk 06
+Each entry records an explicit input, requirement, restriction or unestablished step; it does not assert that an assumed input is itself false or unproved elsewhere.
+
+- 6433–6435: Supply prepaid stability with the stipulated normalization and dials.
+- 6436: Supply creation-deposit bounds before using prepaid stability.
+- 6436: Supply operation-majorant bounds before using prepaid stability.
+- 6439–6441: Complete presentations must satisfy R13–R28, structural and positivity clauses and the specified analytic domains.
+- 6442–6444: Step closure must form the next presentation, preserve constants and margins, and preserve represented measures under its kernels.
+- 6444–6447: Prove the background estimates supporting the induction step.
+- 6444–6447: Prove the response estimates supporting the induction step.
+- 6444–6447: Prove the substitution estimates supporting the induction step.
+- 6444–6447: Prove the island-mass estimates supporting the induction step.
+- 6444–6447: Prove the drop-out-majorant estimates supporting the induction step.
+- 6444–6447: Prove the closure estimates supporting the induction step.
+- 6465–6468: The stated uniformity excludes dependence on level, torus size and earlier depth, and statements retain non-Abelian background and tower estimates as hypotheses.
+- 6488–6496: Assume ER2's trivial background value and linear response, with a coupling-independent physical continuation radius.
+- 6521–6523: Pulled-back Wilson normalization requires the background map's linear-response identities.
+- 6524–6526: Establish the prescribed counter-insertion identity T[A[c]]=c separately; neither pulled-back normalization follows merely from the coordinate change.
+- 6540–6541: Recovering the physical action coefficient requires division by g_j².
+- 6543–6545: ER6 assumes response-decay and localization hypotheses, a usable physical radius and the family norm bound there.
+- 6565–6569: The core requires simple curvature, gauge, potential, derivative and current bounds and the corresponding bounds on every allowed restricted tower.
+- 6571–6584: Assume ER7's holomorphic tower existence and uniform curvature/current bounds for both rules, all restrictions and all depths, including unit conversions.
+- 6587–6594: ER8 requires ER7 and sufficiently small core radii; its local inclusion is proved here under those assumptions.
+- 6638–6645: Assume ER10's holomorphic background continuation and uniform physical C¹/current bound.
+- 6654–6659: The first-order response conclusion uses the derivative of ER10 and retains background continuation, uniform first-order bounds and the hereditary tower estimate.
+- 6664–6666: Torus versions require uniform response bounds and lift convergence from the background hypotheses.
+- 6666–6673: The amplitude argument assumes exponential local-family decay and a near-zero ball of usable radius a.
+- 6673–6678: Assume the uniform exponential response bound ER12.
+- 6681–6684: Assume the rooted-domain entropy and pointed-site volume bounds.
+- 6687, 6695–6698: ER13 needs a fixed positive localization margin above entropy and the prescribed covariance conditions for scalar or summed-tensor identification.
+- 6740–6742: Identifying the invariant tensor with the scalar action coefficient requires separate Ward and lattice-symmetry identities.
+- 6755–6757: Any radius-weighted formulation of uniform extraction must retain that normalization in all subsequent estimates.
+- 6761–6765: Assume a vacuum-subtracted remainder and the gauge-invariant window scaling for curvature factors and volume.
+- 6785–6788: The full nonlinear remainder estimate requires its actual backgrounds to lie in their original analytic domains.
+- 6785–6788: The full nonlinear remainder estimate separately requires control of large domains; ER15 supplies no continuation beyond the original domains.
+- 6790–6794: ER17 assumes remainder decay with κ_0>4, linear backward growth of inverse couplings with λ>0 and a sufficiently large common lower bound.
+- 6819–6822: The chain radius estimates retain background, response and entropy hypotheses; complex-window, tensor-marginal, weighted-sensitivity and large-field-zone derivative propositions require additional stated estimates.
+- 6852: The observable test domain is restricted to separated real compactly supported C¹ tuples.
+- 6854: The running-coupling construction uses increments bounded by B_sharp and their torus and cutoff independence.
+- 6869: Applying the dilation identity in the contracting direction requires a lower bound on ℓ and allows the stated norm growth.
+- 6871: Entrywise coupling comparison and a common linear operation on bare densities require coincident auxiliary choices at the compared couplings.
+- 6871: Fixed-torus uniqueness is under (d)(1); the text does not assert uniqueness of the infinite-volume limit even when renormalised couplings converge.
+- 6881: Choose exponents, then large L, then remaining constants in order, then small g.
+- 6906: The stated analytic obligations must be proved before asserting the component Euclidean properties of Theorem 0′.
+- 6906: Reconstruction additionally requires quantitative growth and the external analytic-continuation theorem specified in `ch:precise-reconstruction`.
+- 6911: The theorem clauses assume the common small-coupling thresholds, torus family and first-passage datum, with the specified dependence and uniformity of constants.
+- 6913: Diagonal-flat testing does not provide the growth bound needed for reconstruction.
+- 6913: Diagonal-flat testing does not provide continuity needed for reconstruction.
+- 6913: Diagonal-flat testing does not provide the analytic-continuation hypotheses needed for reconstruction.
+- 6921–6926: The fixed-torus per-order bound retains its volume condition, and the factorial/growth claims are supplied for limits formed from periodic Wilson DLR states.
+- 6937–6941: The correlation bounds require separated Lipschitz supports, with support-radius and minimum-volume conditions for (c)(2) on finite tori.
+- 6946–6949: The factorial bound requires real C¹ tests and periodic Wilson DLR states under D1 in its actual rooted geometry and compatible source tori together with G1.
+- 6950–6951: A finite-torus factorial bound requires an additional estimate.
+- 6950–6951: A polynomial separation prefactor whose degree is independent of n requires an additional estimate.
+- 6953: The two-point law assumes the prescribed small-coupling and short-distance thresholds, an admissible pair, and K−s(d)≥n_0.
+- 6960–6962: The Gibbs-state relative error is only bounded by one half, and the continuum law excludes the tuned torus limits.
+- 6964: The four-point lower and upper bounds require the shape threshold, small g, small d, an admissible collinear quadruple and K−s(d)≥n_4≥n_0.
+- 6972–6975: Uniqueness requires the stated small-coupling threshold, source-radius proximity to tuned couplings and convergence of the renormalised coupling; window proximity additionally requires large ρ and g≤γ_U′.
+- 6979, 6991–6997: The rotation criterion requires the supported cutoff and the stated far-shell flux condition on smooth separated tuples; the latter is the identified infrared input.
+- 6999–7004: Prove Theorem 9.3, the rotational Ward identity, in Package G / (9a).
+- 7006–7008: Prove Theorem 9.1, vanishing of the bulk artefact term along every defining sequence, in Package G.
+- 7008: Prove Proposition 9.7, the explicitly open first-order non-action insertion input, in Package G / (9b).
+- 7008: Propositions 9.8 and 9.9 are additional first-order insertion inputs in (9b), but are not individually marked “to be proved” here.
+- 7008: Prove Proposition 9.11, the simultaneous multiple-insertion moment bound, in Package G / (9b).
+- 7008: Prove Proposition 9.10, volume transfer to every diverging-volume sequence, in Package G / (9b).
+- 7010: The marginal anisotropy must have decay exponent c_1>1/2 to overcome its initial coefficient.
+- 7012: The cumulative anisotropy response must satisfy the stated interval lower bound for c_1 in (1/2,1]; the one-loop law giving c_1=1 is only sketched here.
+- 7017–7023: Theorem 0′ assumes a volume-first limit and both displayed shape-dependent small-coupling thresholds.
+- 7038: The Wightman reconstruction conclusion retains the theorem's analytic hypotheses and the quantitative hypotheses of `ch:precise-reconstruction` when applying the external reconstruction theorem.
+
+## Chunk 07
+- 7049–7061: Require gauge covariance, locality, first-order linearity, real/complex analyticity, coarse-isometry symmetry and global Borel measurability, together with the stated mean axioms.
+- 7063: Bałaban's general transfer assertions for alternative means and averages have no accompanying proofs; the actual original proofs use a nonsymmetric average.
+- 7073: Supply the third global rule because the spectral logarithm at minus identity leaves SU(2).
+- 7099: Gauge changes used with propagators must preserve the straight-average form, using trivial nonlinear averaged transformation.
+- 7118–7125: Reflections of bond functions require the background adjoint twist.
+- 7170: Complex domains must treat current as an independent variable; real centers require small curvature and local potentials, and averaged backgrounds must provide the regularity formerly supplied by the current condition.
+- 7195: Select an axial basepoint before generating the trivial-average transformation set and intersecting with the slice.
+- 7201: Use the same mean or comb contour variable in M, n_W, R̄ and Ax.
+- 7230–7234: Complex covariance requires condition-number control and enough remaining analytic-domain radius.
+- 7265: The uniform k-step theorem assumes small scaled background curvature and small complex field/background shifts.
+- 7300: Impose small complex plaquettes separately in Uᶜ_j.
+- 7302: Lower determining-set smallness ceilings by the specified powers of L at seams.
+- 7339: Gauge parameters used in the gauge-average bounds must be small in the stated site-function norm.
+- 7372: Proposition 1a.1.10 assumes Proposition 1a.3.5, explicitly unproved in Package A, including its M₁, Mα₀ and volume hypotheses.
+- 7389: Use twisted rather than plain W₄ covariance for background-dependent propagators and subsequent activities.
+- 7408–7413: The contour-variable transfer argument requires all six listed covariance, locality, translation, reality, holomorphy and commuting-field properties.
+- 7461: The quadratic minimizer statement assumes nonnegative Δ positive on ker Q and surjective Q.
+- 7470: Auxiliary sequences must meet the size, flow-type and successive-radius requirements admitted in (2e).
+- 7477: Full covariance of pointed totals is restricted to the specified admissible real backgrounds.
+- 7487: Cover the unrestricted constraint integral with further charts or remaining large-field terms.
+- 7511: Derive drop-out mass suppression from lower-level island bounds while retaining the carrying Wilson weight; until verified for the actual operations, the majorant remains an input.
+- 7511–7518: Invariant-form induction requires ordered constants, a sufficiently large torus, small couplings and two-sided flow inequalities with the same constants after the step.
+- 7526, 7538–7546: Extract suppression from disjoint Wilson, retained gauge and Gaussian factors and prove a pointwise product majorant rather than multiplying component integral bounds.
+- 7559: Put the supremum inside component mass integrals; for drop-outs retain the carrying Wilson weight and restrict to compatible fibred evaluations with only the failed drop-out test omitted.
+- 7567: Carry enough component credit to pay future costs, counting cells even when their linear diameter is zero.
+- 7569: Require small comparable analytic radii with CMα₀<α₁ and α₁²≤Cα₀.
+- 7581–7593: Renormalized S must have both specified symmetries, evaluated backgrounds must lie in the relevant domains, and s(1+N(S)) must be small.
+- 7601: Additional seam/node constant and linear terms require separate boundary estimates.
+- 7683: Lemma 1a.3.4 and Proposition 1a.3.5 are explicitly “to be proved; Package A.”
+- 7697: Landau coercivity assumes large M₁, small Mα₀ and at least CM₁ sites in each torus direction.
+- 7703: Exact minimizing and slice identities require the invariant Hessian extension Δπ and the correct G versus G₀ and ξ normalization.
+- 7705: The axial-to-Landau theorem assumes the full Ax gauge, small α₀+α₁ and Lemma 1a.3.2, explicitly marked unproved in Package A.
+- 7722: The bootstrap assumes both fields regular, the slice equation, small α₂ and quadratic-error control Cα₂²≤α₀+α₁.
+- 7724–7731: Local potential construction requires small CMα₀, and its complex extension separately assumes small complex plaquettes and CM(α₀+α₁).
+- 7747: Analytic background dependence uses regular test-loop data, including two-scale seam-loop smallness when inward bonds are kept.
+- 7763: For arbitrary γ′, B₁ must depend on γ′; Bałaban's Theorem 8 is explicitly unproved in Package E, and its second-order and Hölder bounds additionally require weighted Df control.
+- 7763: Require small local potentials outright at real centers of Uᶜ_j.
+- 7800: Reflection positivity is required only for the bare measure, with its implementation in (4d), (6b), (10a).
+- 7810: Verify Borel measurability of actual test maps, representative selections and failure sets; the undefined-means-failed convention does not provide it.
+- 7810: Use basepoints to make marginal cancellation separately at each point.
+- 7812: All estimates in (1b) and (1c) must be uniform in fine spacing η_k.
+- 7820: Large-field factors must outweigh logarithmic regional vacuum-constant costs.
+- 7837–7844: Running analytic radii require coupling comparability, and marginal-remainder summability needs linear lower flow and κ₀>4 rather than merely x_j≥x_k−C.
+- 7853: Retain compatibility fibres in drop-out suprema so the Wilson weight is not erased by including flat configurations.
+- 7862: Analytic substitution, integration and logarithms require domain inclusions, integrable majorants and zero-free cluster estimates.
+- 7864: Keep marginal counterterms in S for a uniform-in-k action-map bound.
+- 7866: Retain seam gauge action and fluctuation variations in the boundary exponent and prove its estimates separately.
+- 7873: Exclude young R terms from the symmetric family used to compute b_k+1; the free slice decay still requires (1c) at identity.
+- 7875: Take the coupling small after M so that Mε_k is small.
+- 7881: The node-free quadratic gauge calculation does not bound omitted seam factors or identify the full layered null space; A2 separately requires its removal and complete fluctuation coercivity.
+- 7881: Verify the acting gauge group and invariance after fields are stored, as the seam example shows this is substantive.
+- 7895: The exact identity RD*GQ♯*=0 requires Δπ rather than the unextended Wilson Hessian.
+- 7904–7911: Absorb the gradient error with B₀Cα₂≤1/2 and reset the depth-dependent constant using the a priori bound; the centered-map Brouwer passage supplies existence but not uniqueness.
+- 7913: The nonzero-source higher bounds force weighted Df control, which is not implied by a small f at bare-scale oscillations.
+- 7940–7941: Many-level background and exterior-force bounds enter through separate analytic propositions.
+- 7950–7955: Require an embedded rectangular lift of the double block and its one-bond neighborhood without periodic opposite-face edges.
+- 7969–7970: All finite-calculation logarithms use their local analytic branches near identity.
+- 8047–8051: Covariance of the locally defined mean applies only while transformed families stay in their analytic domains.
+- 8108–8119: Keep local background and perturbation logarithms below c₀/L so every contour and closed product stays in its analytic neighborhood.
+- 8153: The Taylor estimates require perturbations and ε smaller than c/L.
+- 8211–8218: Pivot inversion uses ε≤cL⁻⁵, in particular the stated bound on complex perturbation plus L times curvature.
+- 8262–8266, 8291: The straightening contraction and free chart use the stated cL⁻⁵ and cL⁻⁹ radii.
+- 8305–8306: Primitive one-step radius does not establish inclusion in all older background domains; that remains a different estimate.
+- 8351–8360: Continue determinant branches and the Haar power series coherently; the continuation does not assert a complex delta or complex measure.
+- 8366–8369: A local input C_bMa must satisfy a≤c/(C_bML⁵), or use the direct small-curvature alternative with a small complex perturbation.
+- 8373–8381: Charge complex-gauge condition numbers, including their growth with the observation window, in constants and radii.
+- 8383–8390: The calculation does not bound many-level response or further large-window coordinate transformations; retain polynomial window loss in later Cauchy radii, and separately establish the free precision gap, all-window core and tower estimates, conditional exterior forces and clean-class law.
+
+## Chunk 08
+- 8366–8369: Under the supplied local near-pure-gauge bound, QC18 requires a ≤ c/(C_b M L^5); alternatively impose varpi_c ≤ c L^-6 with a small complex perturbation.
+- 8379–8381: Charge any gauge condition number that grows with a larger window.
+- 8384–8386: The one-step calculation does not bound many-level response or a further coordinate transformation on a large run window.
+- 8386–8388: Retain polynomial window-radius loss from the background/core inclusion in a later Cauchy radius.
+- 8388–8390: The free precision gap remains a separate assertion at this point; CF18 later proves the classical flat version in this chunk.
+- 8388–8390: All-window core estimates remain a separate assertion.
+- 8388–8390: Tower estimates remain a separate assertion.
+- 8389–8390: Conditional exterior forces remain a separate assertion.
+- 8389–8390: The clean-class law remains a separate assertion.
+- 8407–8411: The flat-gap statement excludes signed counterterms, nonconstant layer weights, nonzero-current constraint corrections and complex decoupling matrices.
+- 8574–8581: The finite-dimensional construction of E_k claims no uniform inverse bound.
+- 8592–8604: Identifying E_k with a background Hessian uses a twice differentiable exact lift and linearized constrained stationarity; CF11 itself does not assume a nonlinear background theorem.
+- 8762–8765: The flat-gap result does not prove a uniform upper bound or dressed precision decay; WI16 and FX30 later supply upper and decay bounds for the classical flat problem only.
+- 8765–8769: Nonzero-current terms from curved constraints require their own quantitative comparison with the positive flat form.
+- 8765–8769: Signed layer profiles require their own quantitative comparison with the positive flat form.
+- 8766–8769: Counterterm arrays require their own quantitative comparison with the positive flat form.
+- 8766–8769: Non-Abelian perturbations require their own quantitative comparison with the positive flat form.
+- 8767–8769: Enlarged complex decoupling parameters require their own quantitative comparison with the positive flat form.
+- 8769–8770: No full background assertion follows from CF18 alone.
+- 8769–8770: No interacting Gaussian-law assertion follows from CF18 alone.
+- 8945–8946: The constructed lift's amplitude bound is deferred to below and is supplied in WI17–WI20.
+- 9036–9037: The constructed linear lift bounds are not estimates for a minimizing response.
+- 9049–9050: Exponential flat-precision kernels are delegated to ch:flat-exponential-kernels, which follows in this chunk.
+- 9050–9054: Applications to minimizing or nonlinear backgrounds require the corresponding actual-operator comparison propositions.
+- 9051–9054: Applications to complex cores and tower substitutions require the corresponding actual-operator comparison propositions.
+- 9052–9054: Applications to signed layer profiles, nonzero currents, counterterms and complex decoupling arrays require the corresponding actual-operator comparison propositions.
+- 9065–9067: A spectral gap alone is insufficient for decay; a uniform complex strip for exact symbols is required and supplied below in FX22 and FX29.
+- 9130–9135: Feasibility is supported by the filter calculation below and attainment by the curl-null quotient projection.
+- 9255–9256: The zero-mode definition must be shown to belong to a uniformly holomorphic symbol; FX20 subsequently supplies this.
+- 9288–9292: Shrink rho so that every noncentral denominator has the stated uniformly positive real part.
+- 9328–9350: Choose a sufficiently small fixed polydisc to keep h_mu bounded and J_n nonzero.
+- 9390–9405: Shrink the away-from-zero neighborhood and common strip width to preserve nonzero denominators and glue the analytic formulas.
+- 9501–9514: Choose the complex strip width so that the precision perturbation is less than half the real gap; the inverse uses both analyticity and the gap.
+- 9551–9554: The torus image formula does not assert exact equality of the full torus kernel with its infinite-lattice lift.
+- 9570–9571: Exponential decay is not asserted for the massless auxiliary D_n.
+- 9571–9573: The constrained classical decay result is not a physical Yang–Mills mass-gap assertion.
+- 9574–9577: No signed-profile comparison has been proved by this calculation; actual operators and uniform perturbation estimates are required.
+- 9574–9577: No counterterm comparison has been proved by this calculation; actual operators and uniform perturbation estimates are required.
+- 9574–9577: No nonzero-current comparison has been proved by this calculation; actual operators and uniform perturbation estimates are required.
+- 9574–9577: No non-Abelian comparison has been proved by this calculation; actual operators and uniform perturbation estimates are required.
+- 9574–9577: No enlarged complex-decoupling comparison has been proved by this calculation; actual operators and uniform perturbation estimates are required.
+
+## Chunk 09
+- 9574–9577: Signed-profile, counterterm, nonzero-current, non-Abelian and enlarged complex-decoupling comparisons are not proved by the flat calculation and require their actual operators and uniform perturbation estimates.
+- 9589: Every constant must be independent of the regions and number of levels.
+- 9593–9599: The geometry requires nested cubical regions with the stated separation and large-power cube size and gap.
+- 9607, 9625: The default construction omits inward constraints at every level; keeping them requires the seam tests and modified theorem/gauge conventions described here.
+- 9627: The chart reference must be real with the stated locally scaled curvature bound.
+- 9634: Complex pairings must be bilinear and adjoints interpreted as transposes.
+- 9646: Towers must obey one of the two specified cube/gap rules, including the second rule's inner-unit minimum gap.
+- 9646–9652: Core membership requires the four simple conditions on curvature, local real gauges, complex potential and independent current.
+- 9654: Every tower configuration must exist on every subregion, at every allowed level and depth, under both rules, and both real and complex versions must satisfy the tower curvature and current clauses.
+- 9654: Extension to complex gauge orbits requires equality at any two core pairs on the same orbit.
+- 9656: The auxiliary lengths in 1b.4 and 1b.6 must have L-squared multiples no larger than the gap.
+- 9658: Constants, radii and thresholds must have only the dependencies stated, with the explicit Theorem 5 and 6 exceptions.
+- 9658: The first torus floor requires O(rho) top-level sites in each direction; relevant enlarged gauge cubes must remain shorter than half the torus, and tower/localisation depths must satisfy the M_1-prime half-torus restriction.
+- 9660: Theorem 1 assumes real epsilon_1-regular data below bar epsilon and restricts uniqueness to a fixed small regularity radius.
+- 9667: The converse regularity statement assumes plaquette radius at most cL^-2.
+- 9669–9673: The contour-mean gauge argument needs block locality, endpoint covariance and identity normalization.
+- 9678: The profile part of Theorem 2 assumes criticality and fixed-radius regularity.
+- 9684: The local-gauge part requires m to be a multiple of rho, an enlarged cube inside Omega_j and shorter than half the torus, and m epsilon small.
+- 9693: Theorem 3 requires epsilon_1 and r_B small enough that all real data in its ball remain bar-epsilon regular.
+- 9697, 9734: The Landau pair and response theorem require bar epsilon at most c(L)/Mfrak, with bar epsilon chosen after Mfrak.
+- 9740: Laplacian response bounds require all neighboring bonds in Omega_0; current response bounds apply only where the current is defined.
+- 9742: The off-critical response extension assumes a regular complex pair and uses the modified second-order combinations because the slice condition is unavailable.
+- 9746–9753: Tower existence assumes small simple-condition radii; core inclusion requires K-sharp times (alpha_0 prime plus alpha_1 prime squared) at most alpha_0 and alpha_1 at least alpha_1 prime.
+- 9755: The ambient tower result assumes memberwise inclusion, l at least xi prime and the three rescaled field bounds below a_T; its weighted Lipschitz assertion applies to settled elements.
+- 9757: Outer substitution requires the specified small potential and gradient, alpha_0 at most alpha_1 and alpha_1 squared at most C alpha_0.
+- 9763–9764: Inner substitution requires the level-k fluctuation potential and extra row datum B prime to satisfy their stated smallness bounds.
+- 9767: Inner substitution assumes larger-radius level-(k+1) simple conditions and the box tower clause, small couplings and the stated two-sided increment condition on x_q.
+- 9774: Tower-datum factorisation assumes the simple conditions at the declared radii.
+- 9776: Restriction requires a smaller separated sequence, real regular data and CL^2 epsilon_1 at most bar epsilon.
+- 9783: Comparison requires real data, mu a power of L at least rho, single-layer outer collars and well-separated boundaries of distinct parts.
+- 9783–9789: The comparison datum must be below a(L,rho,mu), with its constant and threshold allowed the specified length dependence.
+- 9789: Core membership of a background restriction requires M e_X small and an enlarged neighborhood inside Omega_j.
+- 9789: The layered alternative additionally requires wider gaps, X made of M_1-prime cubes and small M times the profile near every relevant lower-layer cube.
+- 9797: The proposed proof must establish the propagator and background results in the specified order, with group (d) preceding the parts that use it and 1b.7 following them.
+- 9797: The regular-pair use at (U_0,F'(0)) requires Mfrak bar epsilon at most c(L), a ceiling on radius rather than on cube size.
+- 9799: Sequence arguments require positivity and the four no-distance bounds at the auxiliary first member.
+- 9799: The general-region propagator claim assumes nonempty Omega_1, sufficiently large cube size and gap, gap at least L Mfrak, small real local gauges and small locally scaled curvature.
+- 9799: The third operator and the G and gradient G bounds additionally require small curvature at protruding plaquettes touching Omega_0.
+- 9799: Transfer to the given first member requires small cutoff slopes, paid for by the gap.
+- 9801: The regular-pair lemma assumes Mfrak epsilon small and needs the cited gauge proposition's conditions (1.7)–(1.9), conclusions (1.135)–(1.136), small side-times-curvature and admissible cube enlargements.
+- 9803: Uniform estimates and applicability of each comparison still have to be proved; ordering dependencies alone does not supply them.
+- 9808: Straightening estimates assume small alpha_0 and small weighted perturbation potential.
+- 9816: Complex covariance requires endpoint gauge condition numbers multiplied by double-block field size to stay small; nonunitary gauges do not preserve the average's domain automatically.
+- 9823: Iterated plaquette averaging assumes a sufficiently small initial curvature radius.
+- 9840: Contraction needs small curvature and field-ball radius with an appropriate multiplier weight, two suitable balls and transversality for the recovered gauge condition.
+- 9842: Orbit uniqueness requires every relevant regular configuration with nearby averages to admit a normalized representative in the small slice ball.
+- 9842–9849: The a priori slice estimate needs both configurations regular at a small radius and the weighted potential below a fixed threshold; it does not need criticality.
+- 9856: After each rescaling loss the potential must remain below the fixed gauge-correction and estimate thresholds, determining how small alpha_0 plus alpha_1 must be.
+- 9856: Datum descent uses separated collars and a two-radius class so the single-step loss does not accumulate with depth.
+- 9858: The interlevel bump proof takes two inputs: nilpotent coupling and a depth-uniform bound on its finite elimination polynomial; finite elimination alone is insufficient for a uniform lower bound.
+- 9867: Radius improvement requires sigma large, regularity radius of order at most sigma^-4 and a sufficiently slow maximum-principle weight.
+- 9869, 9916: Every decay rate in use must satisfy rate times rho at least C log L.
+- 9876–9889: The conjugation argument needs a regularised distance with the stated first- and second-difference bounds, no-distance inverse/gradient bounds and corresponding relative estimates for the other operator terms.
+- 9891: Weighted contraction uses the decaying inverse operators and projection, the critical-reference identity, a fixed small ball and theta no larger than the indicated fraction of the decay rate.
+- 9899–9905: The interpolation estimate assumes a bounded holomorphic function and real/imaginary parts within the half-radius ball.
+- 9911: The alternative linear-radius comparison assumes alpha_0 prime plus alpha_1 prime small, while the larger complex-radius application requires the quadratic radius condition.
+- 9913: Restricted orbit existence requires CL^2 epsilon at most bar epsilon, and collar comparison needs the boundary to stay within a single layer.
+- 9916: Constants must follow the declared dependency order; additionally Mfrak bar epsilon and M alpha must be small, the gap must dominate sigma, and the Theorem 6(c) threshold is chosen after mu.
+- 9924–9925: Used averages of the real reference must lie on regular branches of the actual finite mean.
+- 9948–9956: Both reduced-data directions must remain on the common small chart and within the stated balls supplied by the finite mean construction.
+- 9962–9965: Uniform multilevel admitted reference patches must be established by the regular-domain estimate and cannot be inferred solely from existence of U_0.
+- 9999–10004: The precision section retains the separate primitive task of lifting all field rows while controlling seam energy and gauge slice; response forcing must include the exact Db diagonal.
+- 10012–10021: Multiplier elimination uses the declared cell-weighted pairings and a right inverse Q_0 E_0=1 in the actual field and multiplier spaces.
+- 10028–10040: The transpose perturbation must have Z-operator norm below one half; this needs weighted column as well as row lift estimates and does not follow from an unweighted supremum bound.
+- 10043–10053: The paired-force size and Lipschitz bounds must hold throughout the field ball, including away from zero, and the bracket perturbation must have the stated Lipschitz control.
+- 10066–10075: The field-only contraction needs the small constraint-transpose bound, its Lipschitz bound and small r+gamma.
+- 10081–10091: The alternative coupled proof assumes the displayed Lipschitz matrix, chooses Theta at least 4C first and then epsilon with epsilon(1+Theta) at most one quarter.
+- 10092–10097: The admitted multiplier radius must be at least Theta times the field radius measured in the actual physical norms.
+
+## Chunk 10
+These include explicit defining requirements and assumptions, quantitative choices, and statements expressly excluded from the proofs; inclusion does not mean that every item is an unresolved conjecture.
+
+- 10081–10094: Assume the stated two-component Lipschitz matrix, choose Theta and epsilon in order, and admit a multiplier radius at least Theta times the field radius.
+- 10109: Keep all localized constants uniform in region geometry and number, level, cutoff and torus, allowing only the two named nonlocalized exceptions.
+- 10113–10119: Use odd large L, power-of-L cube/gap sizes, R1 at least L, separated cube regions and Dirichlet conditions outside Omega0.
+- 10129–10137: Regular pairs must satisfy the scaled curvature, first-order and independent-current bounds and the real gauge clause on every specified cube.
+- 10137: The local real-gauge bound is alpha0 throughout the cube rather than O(M1) alpha0; on-shell pairs must equal the inner-plaquette current at bonds touching Omega1.
+- 10139: Use straightened rather than plain averages for the intertwining and near-one derivative bound, and use the Hessian boundary convention assigned to each statement.
+- 10163–10198: Fix the common reference, site map, slice and physical pairings, and specify the off-shell current correction by its explicit formula; the physical identity alone does not specify it.
+- 10208: Step identification for the actual averages uses the (1b) multiplier differentiation and the quadratic one-step constraint term.
+- 10242–10244: Respect the L-only constant contract and the distinct torus-room thresholds for statements 2, 4 onward, 5, 7 and 8.
+- 10262: Layered radii must not exceed their running levels' radii, and the construction's field strengths are fixed after M.
+- 10285: Flat positive-form data must have interior support, zero straight average and strict axial-tree gauge fixing; removing gauge fixing leaves null directions.
+- 10287: Real compressed-Hessian estimates require local gauges and small plaquettes, including plaquettes protruding from Omega0 for G0.
+- 10287: The single-lattice right-inverse claim additionally requires the stated current/plaquette smallness.
+- 10307: Fix the regularity ceiling before M1 independently of M1, and retain the stated exceptions for second differences, Hölder ranges and complex G-prime bounds.
+- 10315: The fluctuation covariance and precision need regularity on the longer sequence, a larger M1 and a smaller radius ceiling.
+- 10332–10340: Walk terms must have local holomorphy, trace dependence, reality, gauge covariance and identical transported assignments, with the stated translation/isometry restrictions.
+- 10369–10372: Reduce the quadratic nonlinearity before inserting decoupling parameters; do not impose undecoupled identities on decoupled sums.
+- 10374–10392: Weights must satisfy the metric variation bound, the field ball must lie below c/b-hat, and datum size must be at most c b-hat^(-4).
+- 10434–10444: The second system requires both b-hat squared times datum and b-hat squared times independent-current ceiling to be small, and is restricted to its stated global/strip domains.
+- 10446–10464: Physical constraint identification requires s=1 and a critical real reference before analytic continuation; no arbitrary-decoupling constraint identity is asserted.
+- 10482–10492: Preserve the stated noncircular order of background and propagator results.
+- 10496: Choose the conjugation rate below c gamma L^(-2) and then the gap product large enough relative to rate and scale power.
+- 10505: Put boundary cubes and cutoff collars inside the all-bare collar; the cited fine-lattice Dirichlet counterexamples preclude substituting general nonbare boundary models.
+- 10507: The gauge-propagator proof needs one-scale bounds simultaneously in all orders rather than iterating the two-scale recursion.
+- 10539–10546: Local unfolded perturbations must be small relative to flat constants, and the cutoffs and scaling/source structure must preserve the finite-range parametrix estimates.
+- 10552–10558: Parameter-cube size must pay for parameter growth in the exponential rate, with the unavoidable exp(16 bar-kappa) factor retained.
+- 10560: Covariant/real/all-torus properties of single terms must be produced by construction using invariant bounds; the normal-family entry bound may not enter localized estimates.
+- 10562: Decoupled operator sums lack the physical right-inverse and gauge identities, so those identities must be used only before defining W_s.
+- 10576: First-order data do not yield a uniform full Laplacian bound for arbitrary decoupled response; the reduced multiplier current is the supplied replacement.
+- 10578: System (II) requires small b-hat squared times current as well as datum, and splitting must account for its globally carried diagonal mass.
+- 10580: The slice-to-multiplier argument starts at a critical regular real pair and s=1 and uses the factorization with site and seam factors.
+- 10582: Follow the specified order of constants, choose final field strengths small relative to (LM)^(-1), and choose the background datum small relative to M1^(-1) for statement 8's identification.
+- 10587–10594: Use physical bilinear fine/row pairings, the per-length straightened map, and actual first-order complex variation bounds.
+- 10616: Cell bounds must include physical measures and must not be replaced by a fine-spacing-independent pointwise kernel assertion.
+- 10622: Infinite-volume cell composition requires absolute convergence from the row sums.
+- 10658–10663: PX10's numerical rate margin must hold, or a stronger actual row estimate must be proved directly; arbitrarily weak exponential decay is insufficient.
+- 10685: Complex transport norms need actual condition numbers and a counting transpose must include the volume ratio.
+- 10717–10719: Outward rows must use the extended endpoint mean; the algebraic intertwining does not establish complex transport bounds.
+- 10724: Finite real site positivity assumes admitted unitary actual means, a connected pillar path from every active site to its top, and positive a.
+- 10744–10748: The transport argument assumes small scaled pillar curvature and an embedded rectangular determining neighborhood with any adjacent collar accounted for.
+- 10774–10780: Choose epsilon small enough to admit every internal mean in the real transport construction.
+- 10806: Choose the real curvature ceiling so the comparison error absorbs into at most half the block inequality.
+- 10814: The global real site gap requires a(y)=c_y xi_y^(-2) with a strictly positive uniform lower coefficient.
+- 10832–10843: Complex one-step edges and curvature must lie in their admitted chart, with finite construction bounds fixed before iteration.
+- 10850: Choose Z0 below the chart radius times the inverse Gronwall growth factor to keep every level admitted.
+- 10857–10863: The complex input must control both potential and first covariant derivative, with h at most h_L/4 and a jointly reduced real curvature ceiling.
+- 10873: The site-average difference bound uses a uniform upper mass coefficient and actual adjacent-scale transport bounds.
+- 10891–10896: Choose C_L h at most one half for the relative complex inverse; an unscaled coefficient perturbation norm is not supplied.
+- 10904–10919: Exponential weights must be bounded and one-Lipschitz, with h and the conjugation parameter small enough for a half-sized relative error.
+- 10933–10936: Choose or verify separation so 8 log L/rho is less than m/2; the rate is fixed before this choice.
+- 10966–10976: The scalar subsolution proof requires nonnegative w, a local Laplacian upper bound and the prescribed cutoff, with the point-value fallback at bounded mesh ratios.
+- 10978–10982: Kato's argument uses a real unitary connection and a full covariant stencil; bare boundary cells use the fallback instead.
+- 10992–10998: Choose gaps so the local ball meets only adjacent comparable layers and use the stated torus room to control lifted multiplicity.
+- 11000–11006: Separation must leave a positive m1 after paying the three-power scale ratio in the pointwise Green estimate.
+- 11016–11021: The small local gauge clause is an input of the regular-pair class; deriving it from weaker background tests is a separate background estimate.
+- 11021: Local gauge patches and collars must exclude a third layer.
+- 11038–11048: Choose C_L a_loc at most one half, use the declared local frame or transport for Hölder comparison, and do not assume a uniform constant as the exponent approaches one.
+- 11060: The profile-space rate must leave a spare margin exceeding metric ball growth.
+- 11062–11068: Complex strong continuation requires first-order control of E, not only its supremum, and h below the Neumann threshold.
+- 11074: A mixed gradient with divergence source needs its specified cancellation or Hölder input; no all-bounded-raw-source estimate is established.
+- 11078: Invertibility of G-prime alone does not prove a uniform site Gram inverse; the separate bump argument is required and then supplied.
+- 11082–11090: Smooth-lift mean matrices require a fixed small local gauge/curvature ceiling and a one-fine-cell collar with bounded overlap.
+- 11106: The Gram duality test must use Xi to the fourth rather than the unweighted smooth lift.
+- 11116: Increase fixed separation if necessary for the p=1 site-column Schur bound.
+- 11118–11127: Restrict to the smaller physical ball for the complex Gram inverse and reserve a fraction of exponential rate for conjugation.
+- 11140: Fine vector coercivity, mixed derivative source norms and current-constraint terms are not consequences of the site projector package.
+- 11145–11150: The Hessian calculation presupposes an admitted critical chart and fixed reference slice; multiplier uniqueness additionally needs onto rows or an existing row Gram inverse.
+- 11155: The Lagrangian quadratic constraint must be the second derivative of the same straightened row map with the same per-length pairing.
+- 11165: The physical row-readout algebra does not prove existence of either G1 or W1 inverse.
+- 11167–11179: Critical-branch differentiation must retain the raw-to-per-length datum conversion and the datum-curvature contraction.
+- 11194: Check the actual next-step support mask against every outward carrier; a mask alone does not flatten a logarithmic coordinate.
+- 11196–11202: Removing datum curvature requires the literal relative chart and PX100 on the actual active injection, with the restricted current and physical dual weights retained.
+- 11210–11214: Use the actual pivot graph and its right inverse, rather than an arbitrary extension selected after the Hessian.
+- 11224–11226: The next constraint multiplier is h_V transpose times the raw coarse gradient, not the unreduced gradient unless that transpose is already included.
+- 11239–11247: Away from the physical block-axial locus retain both gauge derivatives and use the actual gauge definition.
+- 11253: At nonuniform row lengths retain diagonal length matrices on both sides without commuting them, and retain the original action couplings.
+- 11255: The three physical Hessians are not interchangeable despite their chain-rule relations.
+- 11274–11282: The flat Feynman energy uses positive bounded row coefficients and the physical pairing without an extra fine volume or unweighted transpose.
+- 11299–11303: Global flat-vector summation requires the proved adjacent-level overlap count and bounded torus-lift multiplicity.
+- 11311: Inner-plaquette boundary terms and Landau's nonlocal subtraction still need separate vector-precision comparisons.
+- 11335–11340: The Wilson remainder estimate assumes curvature small in the largest corner scale.
+- 11352: Signed layer profiles and additional current subtractions must be estimated separately.
+- 11361: On proper inner graphs the Hodge calculation has additional boundary terms.
+- 11370–11376: The projected comparison must retain Landau subtraction together with row mass and use the all-bare boundary model; global R is not asserted zero at an interface.
+- 11384: Join the Wilson and field-row comparisons to projected-current and boundary comparisons to obtain the full precision.
+- 11391–11400: Compact bump profiles must have strict interior support and uniformly positive discrete moments.
+- 11429–11439: Assign outward seeds to interior tops and preserve the bounded seed/collar multiplicity used for the energy estimate.
+- 11469: Flat-holonomy transfer controls the covariant gradient, not an ordinary gradient in an arbitrary gauge; no general nonflat bare L2 row bound is assumed.
+- 11473–11477: The general row Gram lower bound assumes real positive K and an actual exact extension with the PX136 energy cost.
+- 11486–11490: The row Gram upper bound requires the separate actual trace premise PX138; flat Feynman premises are verified here.
+- 11490: Flat Landau still needs fine coercivity as a distinct step despite the established extension energy bound.
+- 11492–11495: Exponential conjugation of normalized row covariance assumes its exponential cell Schur bound has already been proved; the argument is unfinished at this chunk boundary.
+
+## Chunk 11
+This list records requirements and explicit limits where they occur, including ones subsequently addressed in this chunk.
+
+- 11469: Do not use the flat-frame energy estimate as an ordinary-gradient bound in an arbitrary gauge or as an assumed general nonflat bare field-row bound.
+- 11473-11478: Supply the actual row extension and its energy bound (PX136).
+- 11486-11490: Supply the separate actual trace estimate (PX138); the flat Landau case still needs fine coercivity.
+- 11492-11497: Prove an exponential cell Schur bound for N before applying the inverse-entry conjugation argument.
+- 11503-11506: Prove a strict row-error contraction and the E0 energy cost in the actual precision before correcting the nonflat lift.
+- 11506: Establish the row-error and row-trace estimates on the admitted domain.
+- 11525: Use both internal gauge factors in the actual straightening to obtain its claimed flat derivative.
+- 11552-11554: Supply local real gauges through the primitive regular-pair hypothesis rather than infer them from curvature.
+- 11581: Provide the torus room for the larger nonflat cutoff cube.
+- 11587-11591: Choose the common ceiling small enough for first-exit control, strict one-step ball inclusion, and the gauge condition-number bound.
+- 11639: Bound the actual induced current H[J]-transpose J in the stated row norm.
+- 11639: Bound S in the weighted fine energy spaces for the second variant.
+- 11653: Choose a depth-, volume-, and M1-independent weak-field ceiling making the lift error smaller than one.
+- 11664: Absorb the Poincare mass error with the fixed weak-field ceiling and retain bare identity-row boundary control.
+- 11671-11685: Complete the projected estimate through the local constrained models and boundary construction.
+- 11711-11713: Check species weights in identifying the current-expanded products with actual blocks.
+- 11711-11713: Check derivative allocation in those products.
+- 11711-11713: Check adjacent-level endpoint equations in those products.
+- 11714-11715: The covariant Laplacian member excluded in B85c Theorem 3.12 is not asserted.
+- 11748-11751: Include the derivative of the slice when the reference moves with the datum.
+- 11753-11758: Keep the actual outward-block derivatives in the reduced-datum forcing.
+- 11775-11776: Retain the constraint-curvature contribution in the constrained Hessian.
+- 11794-11796: Differentiate explicit parameters before substituting the solution.
+- 11798-11805: Match the full independent-current and gauge normal form before using a separately named propagator in BGR5.
+- 11809-11813: For an operator-space extension of the algebraic inverse, ensure all displayed inverses and compositions exist.
+- 11816-11823: Supply surjectivity of q, a right inverse E, an isomorphism P onto its kernel, and invertibility of H.
+- 11859-11864: Control LKE and E-sharp KT, and the size and locality of a lift uniform in layer count.
+- 11866-11888: Convert raw datum, its dual multiplier, and its lift together before using per-length estimates.
+- 11943-11947: Use actual pairings and insert constraint lengths and species amplitudes before kernel multiplication at seams.
+- 11957-11963: Supply the actual normalized primitive bounds in BGR14.
+- 11970-11984: Check the weighted transpose separately when force/current amplitudes are not reciprocal dual amplitudes.
+- 11994-11996: Record every assembled block's species weight and outward datum derivative.
+- 12008-12024: Establish BGR16 with a strictly small perturbation throughout the whole retained complex ball.
+- 12026-12032: Use relative perturbations on actual graph spaces when the reference operator is unbounded in the chosen norm.
+- 12034-12047: Supply operator-norm holomorphic coefficients and a genuine complex norm comparison or another convergent inverse construction.
+- 12057-12060: Match auxiliary equations and every seam's datum and multiplier normalizations to the actual saddle operator.
+- 12083-12085: Include the exact reduced-datum derivative in the forcing column.
+- 12094-12098: Construct the actual primitive inverse, verify its weighted row norm, and compute actual datum forcing.
+- 12096-12098: Supply separate gradient and current readout maps if the inverse controls only potential and multiplier.
+- 12106-12111: Derive any multiplier formula for the current derivative from BGR1 and J, keeping independent and computed currents distinct until the physical pair is imposed.
+- 12127-12129: Perform translated equations only on the common admissible interior patch at boundaries.
+- 12148-12151: Supply a local elliptic estimate to pass from energy regularity to supremum or Hölder regularity.
+- 12153-12161: Bound the translated interior equation, gauge-row commutator, constraint-row commutator, and every seam or exterior boundary row in their actual norms.
+- 12165-12177: Establish uniform holomorphic first response on the larger complex product ball before applying joint Cauchy estimates.
+- 12213-12218: Use nonlinear tree expansions with factorial and entropy costs if an arbitrary-order polymer estimate needs a fixed decay rate.
+- 12220-12224: Supply first-response Hölder control on the larger ball before taking Cauchy estimates in that seminorm.
+- 12228-12241: Put finite-box and full equations on common rows, verify the exact difference identity, and include boundary, datum, gauge-restoration, and cutoff forces.
+- 12240-12241: Redo the comparison if an actual boundary is replaced by Dirichlet boundary conditions.
+- 12268-12275: Construct cutoffs in physical coordinates and distinguish normalized from unnormalized differences.
+- 12277-12283: Include every nontrivial nonlinear cutoff point in the transition collar and check field, average, and tower admissibility separately.
+- 12285-12292: Justify the averaged-Jacobian inverse along a common admissible segment on the actual multilevel ball.
+- 12302-12307: Admit the full amplified disc, including all field, independent-current, node, gauge, and hereditary tower clauses for each substitution.
+- 12309-12324: Supply reference margins and uniform displacement control for every clause in the infinite hereditary list.
+- 12326-12354: Verify BGR33 and choose the common amplification constant from the normalized gap and slow-radius suprema.
+- 12356-12363: Supply common analytic continuation with uniform radius before using first exit to prove admission.
+- 12363-12366: Check that outer, inner, and removed substitutions use their assigned tower, current, and node maps.
+- 12368-12374: Admit the complete unamplified reference, using the young-age whole-core estimate where appropriate, before spending displacement margin.
+- 12376-12381: Keep the joint field/current comparison path inside the joint core for removed substitutions.
+- 12435-12448: Supply both time regimes of the differentiated heat-kernel tails; these are proved in 12452-12530.
+- 12557: Impose mu eta at most one for the first-resolvent-derivative estimates.
+- 12611-12613: No mesh-uniform Lipschitz conclusion for the resolvent gradient is supplied from bounded forcing alone.
+- 12633-12635: No globally uniform absolute second-resolvent-derivative sum is asserted.
+- 12644-12648: Supply the equation and bounded data on the enlarged cube, with R at least 64 eta and all evaluation differences inside the specified enlargement.
+- 12682-12683: Avoid an unknown cutoff-collar gradient by transferring the commutator to the kernel.
+- 12729-12737: Ensure torus cubes and collars embed without wrapping for the local cutoff argument.
+- 12748-12751: Retain flatness and the componentwise constant-coefficient Laplacian for the flat-holonomy argument.
+- 12755-12775: Supply the local real gauge and the nonlinear componentwise-Laplacian bound in BGH24; the Hölder implication does not prove them.
+- 12795-12800: Keep the local transport in a fixed small exponential chart for BGH26.
+- 12822-12828: Supply the local reference-potential bounds and all three response readouts in BGH28 on the enlarged cube.
+- 12850-12861: Use controlled-length comparison paths for transported seminorms and retain the pointwise covariant-gradient premise.
+- 12868-12872: Obtain the physical real gauge and three readouts from the response systems and their mechanism-(k) identification.
+- 12870-12872: At seams, verify the readouts and compare the local frame and equation on the common two-layer determining neighborhood.
+- 12874-12883: For decoupled data use the retained Hölder operator norms; a componentwise-Laplacian bound is not among the declared norms.
+
+## Chunk 12
+- 12859–12861: Retain the pointwise covariant-gradient premise in BGH28; only the additional Hölder premise was removed.
+- 12868–12872: Supply the physical local real gauge and BGH28 readouts from the two response systems and mechanism (k), and verify seam readouts and common-neighborhood frame/equation comparison.
+- 12874–12883: For arbitrary decoupled data use the already declared Hölder operator and datum-lift bounds; no componentwise-Laplacian norm is declared for that response.
+- 12896–12897: Supply the localized response and field-domain hypotheses from the pointed-window remainder section for nonlinear use.
+- 12923–12930: Require normal convergence through two derivatives, locality, and local gauge invariance of the regular member without stored spectators.
+- 12931–12945: Supply the actual twice differentiable gauge-covariant background, its actual first response, and unit-translation and full hypercubic covariance for each individual pointed member.
+- 12947–12966: Assume the absolute exponential Hessian moment and the corresponding derivative representation; actual background/core hypotheses are model inputs.
+- 12967–12968: A uniformly bounded extractor from a shrinking potential ball is not inferred here.
+- 12982–12994: To use the sufficient moment criterion, supply the usable analytic core ball, member decay, response decay, entropy gap, and diameter bound.
+- 13018–13021: Retain the inverse squared core-radius factor and supply the coordinate normalization and near-zero core inclusions treated in ch:extraction-radius-normalization.
+- 13240–13242: Full reflections are needed for the stated tensor classification; proper rotations alone do not provide this argument.
+- 13262–13270: Extractor continuity requires fixed actual response and the exponential Hessian norm, with no uniform potential-to-Hessian bound on shrinking cores asserted.
+- 13294–13304: Supply actual affine reproduction modulo a gradient, zero linear current, and exponentially decaying response matrix elements uniform over the finitely many bare bonds at fixed mesh.
+- 13319–13321: A cutoff-uniform action moment constant remains a further quantitative input beyond the fixed-mesh argument.
+- 13323–13343: The stronger uniform action-moment conclusion requires the actual mesh-uniform physical first-difference response bound.
+- 13387–13391: Supply translation covariance to identify the action contraction with the bulk and hypercubic covariance to apply the full tensor theorem; gauge covariance alone is insufficient.
+- 13414–13420: An inhomogeneous source must use each site's same-member coefficient, and its nonlinear remainder needs actual localized response, domain inclusion, and analytic derivative bounds.
+- 13439–13458: A1 must supply the actual holomorphic representative on the product input ball, current and response validity on that domain, and core/tower memberships under restriction and substitution.
+- 13455–13458: Carry out coordinate differentiation on finite boxes and use uniform bounds for coherent limits rather than assuming an infinite-dimensional coordinate derivative representation.
+- 13466–13478: A3 must supply complex-ball response decay and gradient Hölder bounds with constants independent of mesh, torus, and preceding steps.
+- 13480–13493: Supply compatibility of the actual linearized equations and boundary rows, boundary locality for actual gauge/constraint operators, and the A3 inverse estimate with natural integration or cell-volume weights.
+- 13532–13533: Response decay only at zero is insufficient; the second-response argument requires it throughout a complex ball.
+- 13537–13548: Require the stated window geometry, radius relations in PW5, and small output radius for the matrix charts.
+- 13549–13553: For local Taylor expansion require C_ax a_out sigma≤r_B/2; use the ordinary age bound for its finite young-age failures.
+- 13558–13568: Supply PW6 spatial regularity from A1–A3; holomorphy alone does not imply it.
+- 13569–13576: Keep the actual pair and its restrictions inside the prescribed core, include the Taylor ball in that core, and retain the stated whole-core curvature and action control.
+- 13665–13672: Affine reproduction relies on the actual linearized stationarity, constraint, and gauge equations and correctly normalized centered averages; coherent affine extension is identified by finite-box comparison.
+- 13693–13708: PW12 requires the interior diameter condition and agreement of actual local equations; estimates for unrelated kernels do not imply it.
+- 13724–13726: Put domains outside the PW12 interior condition into the long tail and supply the application's tree-length lower bound.
+- 13730–13735: Supply the exponentially decaying member core supremum and sufficient chart room for doubled-radius Cauchy estimates.
+- 13745–13763: Apply the composition and remainder statements to regular members without stored color spectators under the background/domain hypotheses.
+- 13795–13801: Use the member's Hessian moment coefficient bound and whole-core action bound to control its own counterterm family.
+- 13809–13811: Supply the rooted domain entropy gap and diameter/tree-length relation to sum polynomial factors.
+- 13818–13823: Retain the remote non-chart norm tail in field-sensitive estimates; no factor proportional to actual curvature is justified for it.
+- 13836–13854: Use the ordinary radius-age relation for summability and young-age repair; the repair does not apply to arbitrary unrelated rho and sigma.
+- 13855–13856: Perform cancellation with each site's own selected member and its coefficient.
+- 13868–13870: Preserve the remote-chart and young-age qualifications when summing the vacuum-only estimate.
+- 13906–13920: Supply FG1's bounded real positive reference and dimension-independent small matrix perturbation.
+- 13947–13958: Require Borel measurability, FG5 growth, and epsilon and rho below the K-dependent thresholds for Gaussian comparison.
+- 14122–14129: Supply the uniform flat operator gap and the core's local real gauges with bounded potential and first difference.
+- 14130–14157: Establish the actual localization/commutator and walk estimates, actual precision gap, and compressed resolvent decay used in the inverse-root construction.
+- 14148–14149: Choose localization length, gauge size, M, and then core radii in the stated order with CLM a_0≤a_w.
+- 14159–14169: Keep parameters outside the collar and decouple the precision and inverse root through their respective expansions; the latter is not identified with the inverse root of the decoupled precision.
+- 14175–14195: Choose M to pay for parameter-disc factors and collar crossing, then choose radii to obtain the actual FG1 matrix bounds uniformly on independent discs.
+- 14196–14200: Keep the coefficient-ratio perturbation within its comparison radius, allowing a smaller radius if imposed by the free quadratic potential.
+- 14202–14205: Retain the collar and restrict gap comparisons to controlled local rows; no gap far from the local support is asserted.
+- 14212–14217: Application to the step functional requires regular operator/core bounds and does not establish a Gaussian law for nonlinear averaging disintegration.
+- 14221–14225: The failure estimate requires distinct disjoint bond blocks and rho+gamma/2≤rho_0.
+- 14237–14243: Parameter holomorphy requires holomorphic matrices and potential together with fixed real cutoff sets.
+- 14258–14260: Prove the actual A2–A3 matrix gap and kernel-closeness obligations; this section proves the resulting finite-dimensional integration estimate.
+- 14262–14270: Supply the actual effective-covariance completeness identity for a whole-torus marginal; the source provides it on physical pairs and their continuation, not as a global covariance construction on arbitrary independent-current cores.
+- 14268–14270: Nonlinear background/core estimates and a Gaussian law for actual averaging disintegrations are not established by this theorem.
+
+## Chunk 13
+- 14258-14260: Prove the actual A2–A3 matrix gap and kernel closeness.
+- 14262-14266: Supply the effective-covariance completeness identity for any claimed whole-torus marginal identification.
+- 14268-14270: The local Gaussian theorem does not establish global covariance on arbitrary independent-current cores, nonlinear background/core estimates, or Gaussian averaging-disintegration laws.
+- 14304-14313: Assume the actual potential decay and quadratic-field bound UM1.
+- 14314-14318: Supply holomorphy on declared boxes/cores and retain sharp cutoffs wherever box-only potentials occur.
+- 14344-14347: Include any extra collar layers consistently in every structural identity.
+- 14373-14388: Verify actual Gaussian representation, reference bounds, perturbation, gap and local dimension uniformly on UM4's enlarged discs, including UM5.
+- 14389-14401: Meet UM6's gamma, epsilon and tilt restrictions and exclude any exterior auxiliary-dimension factor.
+- 14402-14404: Supply joint holomorphy of potentials, matrices and integrals with fixed cutoff sets.
+- 14406-14412: Supply actual heredity, normalized-functional and wall-factorization identities separately from numerical Gaussian estimates.
+- 14485-14487: Choose a positive fixed W0 small enough for Gaussian tilting and lambda0 above fine entropy.
+- 14496: Require a<=W0/2 so the coupling radii exceed one.
+- 14513-14517: Choose W0 and gamma to satisfy UM14's tilt allowance.
+- 14534-14535: No zero-freeness is asserted on the larger coupling polydisc.
+- 14579-14585: Impose sigma0>kappa_f and both explicit rate conditions UM19.
+- 14635-14639: Impose the physical smallness conditions UM23.
+- 14695-14702: Impose the logarithmic rate-gap and rooted-sum conditions UM26.
+- 14776-14791: Verify UM4–UM6, UM14, UM19, UM23 and UM26 together using actual matrix constants controlled on the required enlarged discs; the parameter recipe alone does not assert this control.
+- 14793-14805: Meet the explicit cutoff threshold, keep the base norm at most a-star/2 and reserve a slot w-star<=a-star/2.
+- 14820-14830: Keep calibration, action weight, Gaussian structure, cutoffs and background maps fixed and restrict physical integral identification to its supplied domain.
+- 14834-14842: Restrict tau, external pairs and the Gaussian gap to the coercive ordinary allowance, leaving free-potential room and holding x fixed.
+- 14846-14849: Supply physical-data continuation and ordinary Gaussian bounds before using the continued reference identity.
+- 14878-14886: Insert the actual fluctuation difference SI3 and do not subtract its background a second time.
+- 14906-14918: Retain box cutoffs and supply ordinary Gaussian gap, tilt and enlarged-disc bounds with a single coordinate-count factor.
+- 14920-14925: Leave a norm-w-star potential slot and maintain Gaussian, rooted-count and decoupling majorants throughout it.
+- 14980-14992: Supply complete structure and ordinary decoupling/wall multiplicativity for physical gas-integral identification.
+- 15066-15070: The norm remainder does not assert a pointed or stronger rooted norm bound.
+- 15075-15082: The actual-source chain rule requires norm differentiability, supplied here from pointwise holomorphy only with a uniform potential-norm bound on the ordinary source disc.
+- 15095-15098: Include zero-base-potential domains in differentiated selections and retain the marked domain's cutoff.
+- 15125-15140: Supply actual curvature, response and domain control for all substitutions used in SI12, including complex pairs.
+- 15151-15171: Supply joint response holomorphy, the enlarged nu radius and uniform action bound, with every substituted pair inside its actual core on the whole complex polydisc; Cauchy does not prove these hypotheses.
+- 15199-15215: Supply ordinary rooting, active-wall-component agreement, hereditary consistency and physical endpoint identities for the response construction.
+- 15233-15235: Choose sufficient bar-kappa surplus for localization and any subsequent rooted entropy sum.
+- 15246-15248: Prove background membership and response estimates on all decoupling substitutions; real-field bounds alone do not replace them.
+- 15261-15268: Use the derivative member's own extracted coefficient for its counterterm after actual pointing.
+- 15270-15277: Control renewed pointing's insertion derivatives and connected expectations using a root-plus-insertion cluster estimate and admissible field room before claiming pointed bounds.
+- 15279-15280: Reinsert old regular derivative members and nonconstant source defects with their own coefficients.
+- 15284-15296: The proposed SI14 refinement retains the true radius ratio on a non-wrapping local chart before enlarging it to max(1,rho_j).
+- 15297-15309: SI15 and the recurrence rely on the homogeneous local refinement, ordinary flow/age weights and linear-bootstrap member/defect hypotheses.
+- 15310-15312: Preserve alpha_j^2 s_j together with the scaled Lipschitz gain in defects; a fixed-disc source bound alone does not provide this.
+- 15312-15313: Supply uniform fixed-disc bounds separately for marked and remote terms.
+- 15313-15315: Use non-wrapping charts or a separately small class estimate for field-independent hole/cycle tails rather than assigning an extra rho_j^2 when rho_j<1.
+
+## Chunk 14
+- 15308-15312: The derivative recurrence requires the linear bootstrap's regular-member and defect hypotheses, including the alpha_j squared times s_j factor and scaled Lipschitz gain; a fixed-disc source bound alone does not supply them.
+- 15312-15313: Marked and remote terms need their own uniform fixed-disc bounds.
+- 15313-15315: Field-independent hole or torus-cycle tails require a non-wrapping chart or a separately small class estimate when rho_j is below one.
+- 15343-15351: The spare-potential domain must contain actual cutoff supports, with one fixed larger box reserved for coordinate differentiation.
+- 15373-15387: Every base system used must possess the SP2 holomorphic potential allowance with total auxiliary norm load below w_star.
+- 15401-15405: Marked domains whose unmarked potential vanishes must still be included in union filing.
+- 15440-15444: The Cauchy lemma requires the full potential allowance and locality; a one-direction derivative bound alone is insufficient.
+- 15455-15469: SP6 remains to be proved for the actual ordinary bond split, with uniform bounds, field room and the same SP2 allowance throughout the path.
+- 15480-15489: Source paths must have the stated support, zero initial source and SP8 norm controls; these are subsequently verified for the specified older-weight path under larger-box hypotheses.
+- 15513-15514: Both terms of SP10 must be retained.
+- 15541-15549: Global covariance interpretation requires complete physical data and the physical sum rule; it is not established for arbitrary independent-current cores.
+- 15561-15564: The intrinsic inverse-square radial path must not be applied to an older weight or used to impose artificial linear and quadratic vanishing.
+- 15566-15571, 15599-15604: Source holomorphy and bounds on B_1 must include independent-coordinate room, and ordinary bounds for the prescribed path remain necessary.
+- 15608-15611: Union collars are assumed large enough to contain all nonzero tent anchors.
+- 15631-15646: Summed-domain applications need a domain entropy gap; extra geometric position sums need actual polynomial bounds and cannot exceed the available rate gap.
+- 15671-15672: Infinite-volume local extensions require companion limits in addition to uniform local bounds.
+- 15674-15683: Covariance, gauge invariance and reality must be inherited from the actual construction and source; a scalar norm bound does not establish them.
+- 15685-15695: A source entering the cutoff or Gaussian reference would require extra boundary or score derivatives and a retained Gaussian tail proved under insertion.
+- 15697-15701: Full-history differentiation, iterative response closure, spatial defect gain and clean-history Gaussian disintegration for an interacting two-point law are not established by this finite-step estimate.
+- 15719-15721: Near pointed sums at one old base point must be grouped as one window member before fine brackets.
+- 15746-15748: All background and geometry inputs must concern the actual assigned maps.
+- 15781-15804: Full fine-parameter holomorphy, fixed datum/chart/core room, normalized response bounds and existence on datum balls are background inputs; WF5 must cover other core inequalities and tower substitutions.
+- 15819: The tested ratio must satisfy s_k<c_nu/2.
+- 15821-15835: Critical maps must supply weighted first-response, Hölder, compatible boundary-comparison, full-field, young-age whole-core and uniform finite-box controls.
+- 15837-15846: Actual window partition identities and local extension formulas are assumed, with the global physical identity asserted only for complete physical pairs.
+- 15848-15877: Geometry and response hypotheses must provide point counts, entropy surplus, outer/removed decay, common-core interpolation room and allocated long-domain tree decay.
+- 15882-15899: Displacement estimates must include hereditary tower clauses and use curvature control of both factors.
+- 15917-15919: Radii must satisfy the squared-potential and tower-curvature restrictions stated there.
+- 15921-15943: Tower margins and layered geometric gaps require the stated uniform response-to-margin control.
+- 15945-15960, 15990-15994: Inner, outer and removed maps must retain their prescribed node/current conventions and separate discs throughout amplification; an old activity Hessian bound does not supply these map estimates.
+- 15998-16007: Every regular member must have the stipulated symmetry and its own normalized coefficient, with vacuum and own-action subtraction before brackets.
+- 16057-16071: Vacuum-only linear cancellation requires no fixed color spectators; stored-field boundary origins need a separate boundary formation estimate.
+- 16087-16098: Exactly one amplification factor is extracted, with none extracted again later.
+- 16168-16178: Every summand of the inner member must use the same box map, include the own tent action and share the declared bounded base before localization.
+- 16222-16223: Assigned maps are assumed hereditary on active wall-components and complete at all-one parameters.
+- 16265-16282: Rate splitting must leave strict entropy surplus, a far-tail portion, a retained portion and the WF13d output gap, with rates adequate for the subsequent polymer criterion.
+- 16294-16296: Later sums over output domains must spend a separately declared entropy reserve.
+- 16306-16314: Age functions need the same enlarged fine-parameter domains and nu-disc; differently based bracket sums cannot be bounded from an unbracketed-sum supremum.
+- 16318-16334: WF15 is conditional on the explicit background, window and geometry inputs and makes no global off-graph Gaussian or arbitrary-pair torus-background assertion.
+- 16336-16348: The scalar direction and nonlinear source chain rule use the separate determinant/response-bracket argument and finite potential-ball Taylor remainder.
+- 16350-16353: Joint complex window/core room, nonlinear averaged-datum estimates, Hölder response, compatible boundary comparison and outer/removed locality are expressly assumed.
+- 16354-16355: Large-field history operations require separate history-induction hypotheses.
+
+## Chunk 15
+- 16350–16353: Supply joint complex window/core room, nonlinear averaged-datum estimates, Hölder response, compatible boundary comparison and outer/removed-field locality for the formation proof.
+- 16354–16355: Supply the separate history-induction hypotheses for the large-field history operation.
+- 16369–16371: Establishing the local formation/domain hypotheses for a nonlinear history construction is not asserted here.
+- 16408–16415: Assume uniform ordinary flow bounds LB4 and sufficiently large couplings.
+- 16447–16451: The locality argument needs dependence only on X-tilde and a source class containing constants and bounded Lipschitz truncations.
+- 16505–16518: Require LB10 for the actual localized complex pairs.
+- 16530–16531: Verify that every substitution in LB10 lies in its actual specified core.
+- 16532–16537: Extend constrained-background pointed cancellation and nonlinear window estimates to the independent potential/current pairs actually used in localization; the restricted estimates do not prove LB10.
+- 16539–16551: Supply the actual finite-gas inserted-potential/renewed-pointing estimate LB11 and the essential zero source derivatives of the Gaussian and reference operations.
+- 16553–16555: Supply cutoff-uniform summability of b_j'(0) from the ordinary constant-source construction.
+- 16569–16571: Supply the ordinary remainder bounds on the fixed physical source discs with p>3.
+- 16584–16589: The bootstrap requires LB1–LB13, an empty initial regular list and uniformly small s_j.
+- 16640–16642: Any separate bottom-level scalar slot must satisfy the fixed-reference fluctuation estimate used in LB10.
+- 16647–16650: Restrict the near conclusion to actual local charts, pointed comparisons and complex inclusions without field-independent wrapping or holonomy tails.
+- 16651–16658: Prove the axial and Hölder bounds for the complete near background-plus-fluctuation field with size bounded by C delta_n, not merely for its increment.
+- 16661–16674: Supply the datum-radius comparison and enforce the all-age half-disc condition by a fixed reduction of s_star, using the near-domain proof for all positive rho_j.
+- 16710–16715: Recent large-field terms, marked remainder windows and torus/hole windings still require separate source-disc bounds, domain comparisons or small-class estimates; LB17–LB18 omit field-independent far tails.
+- 16715–16719: The local bootstrap does not verify nonlinear formation hypotheses for every history.
+- 16728–16740: Supply the actual-map complex-domain and first-response inputs, pointed cancellation and window formation; exterior force, stored-field boundary origins and clean-class measure identification remain separate.
+- 16756–16765: Prove the ordinary-flow radius-ratio bound OA2 with constants uniform in old levels, cutoff and volume.
+- 16775–16778: The regular fields use fixed exterior data and real free coordinates bounded by C_w mathfrak b_k.
+- 16800–16823: Supply the actual fixed-pivot maps and uniform unscaled bounds OA5–OA6, including the enlarged fine-parameter charts and their restriction/completeness identities.
+- 16825–16832: Supply holomorphic datum/core domains with radii at least c alpha_i and positive initial room for towers, representatives, current conditions and all inner/outer/removed substitutions.
+- 16834–16849: Supply the all-domain normalized first-response/nonlinear-average estimate OA7, including fine parameters and assigned outer/removed distance factors.
+- 16849–16851: Prove compatible boundary comparison and weighted Hölder response estimates for actual box backgrounds.
+- 16853–16864: Supply hereditary locality, rooted domain counting, OA8 diameter control and strict spatial-rate reserves.
+- 16877–16878: Choose the chart radius small enough to remain on the physical ball and make the fixed-point map contractive.
+- 16905–16927: Choose alpha_k and c_* so all substituted compositions preserve initial room throughout the enlarged Gaussian ball.
+- 16929–16935: Choose c_1 and c_* so the window-multiplier disc includes one while consuming less than half the available domain room.
+- 16937–16940: Increase the coupling floor so the real product window and its two Cauchy circles fit in OA11.
+- 16948–16955: Supply bounded old-member norms, required companions, all pointed symmetries, own extracted coefficients and unit-quadrature tent normalization.
+- 16958–16960: Retain any profile deficit as a lag or boundary origin; the clean-interior conclusion uses the canonical ledger's absence of such a deficit.
+- 16965–16978: Supply OA13 for the complete substituted field over the entire enlarged disc.
+- 17021–17028: Form each entire near pointed sum with its own counterterm and one common critical map before applying the common fine bracket.
+- 17035–17043: Allocate sufficient retained rates and fine-disc radius to absorb old entropy, diameter factors, hull geometry and window-anchor counts.
+- 17093–17095: Choose a spatial weight with lambda - mu C_M strictly greater than kappa_D for rooted summation.
+- 17128–17133: Supply a free gap and uniform exponentially summable entries for the actual constrained, gauge-fixed precision in pivot coordinates.
+- 17135–17139: Choose the inverse-decay weight sufficiently small for the Neumann-series bound.
+- 17154–17155: The free conditional/marginal precision statements do not identify an interacting marginal with the pointwise fixed-exterior potential.
+- 17159–17169: Choose a sufficiently small weight and sufficiently large coupling floor so weighted Schur and old-Hessian costs leave half the free gap.
+- 17170–17173: Charge other intrinsic and remainder Hessians separately and hold reference precision fixed when differentiating.
+- 17177–17194: The optional remainder extension requires no fixed color spectators, the same actual domains and locality, polynomial decay with s>2 and the lower flow bound; it excludes stored-color boundary terms and integrated-only norms.
+- 17196–17208: The finite-box alternative needs its whole-box analytic amplitude/radius hypothesis and, for operational-window use, additional inclusion in the half-radius polydisc.
+- 17211–17218: The stated logarithmic finite-box regime needs q>8p to yield smallness and does not establish a fixed-positive-weight version of OA20.
+- 17229–17233: Uniform unscaled pivot estimates OA5–OA6 and all-domain first-response/membership estimates OA7, including towers and outer substitutions, have not been proved for Yang–Mills maps by this deduction.
+- 17235–17241: Separately establish uniform exterior-force differences on actual compatible exterior and stored data; an interior Hessian estimate does not control exterior derivatives.
+- 17241–17242: Identification of a clean-class restriction with a Gaussian fibre kernel is not established by this estimate.
+- 17242–17245: Remote and holonomy bounds without the needed analytic-domain assertion remain separate tails and cannot receive the curvature factor or Cauchy estimate used here.
+
+## Chunk 16
+These entries record explicit requirements and statements of non-establishment, including requirements for which the chunk subsequently gives an argument.
+
+- 17229–17233: Verify uniform unscaled pivots (OA5)–(OA6) and all-domain first-response and membership (OA7), including towers and outer substitutions, for the actual Yang–Mills maps; the preceding deduction does not prove them.
+- 17235–17245: Supply separate exterior-force response estimates on compatible exterior and stored data; an interior Hessian bound does not supply these or identify a clean restriction with a Gaussian fibre kernel, and remote/holonomy tails remain separate without analytic-domain control.
+- 17257: Enforce background plaquette and fluctuation thresholds before applying the Step 1 expansion.
+- 17259: Choose constants in the prescribed order, use admissible tori through the needed level and assume the coupling ceiling and two-sided flow inequalities.
+- 17274, 17280: Fix the boundary constant before γ and choose the coupling ceiling after both the reserve-volume coefficient and the small loss in the mass exponent.
+- 17288: Recover the tube clause by more than the induction step alone; Theorem 2.11 is named as the relevant limitation.
+- 17288: Propagate equality of values at different splittings of one pair on the analytic domain itself.
+- 17290–17292: Prove complete label, torus and cutoff independence for all remainders through one family on the infinite lattice.
+- 17290, 17293: Prove positivity of every term as part of Package C.
+- 17290, 17294: Establish separate measure and formula layers.
+- 17290, 17295: Establish the presentation class along a frame.
+- 17290, 17296: Derive the assumed flow inequalities jointly with induction.
+- 17290, 17297: Establish translation covariance of individual R terms and measure-based covariance of their totals.
+- 17290, 17298: Establish the complex supremum inside the mass integral with a reserve weight.
+- 17290, 17299: Establish the hull-length formulation.
+- 17290, 17300: Establish the three component fates, retained marks and two region sequences.
+- 17290, 17301: Give a noncircular order of constants.
+- 17290, 17302: Establish exactness for each partition of histories.
+- 17317: Start Ω₀ at Ω₁ enlarged by a layer as required by Theorem 4.13 and Lemma 4.15.
+- 17334: Choose M₂ as a power of L satisfying L²M₂≤M and cδ₀M₂≥1, with δ₀ fixed earlier.
+- 17344: Carry the property that each stored indicator depends only on field variables localized in its own region.
+- 17346: Treat undefined objects as failed tests and still obtain the small factor for these potentially nonlarge configurations.
+- 17354–17364: Keep the conditional mean below the smallest inner threshold by collar and rim tests, θcΘ₁ sufficiently large, adequate collar width and small γ.
+- 17387: On the strip, localization decay must beat a negative power of g rather than merely a constant.
+- 17407: Make the (1b), (1c) background estimates valid at one-M-cube separation; prepared nests do not supply cell-scale exponential smallness.
+- 17410: A marked-operation factor must pay for Nₜ+1 levels of a small box.
+- 17440: Keep determining and action sequences distinct and preserve the analytic space in which each term was formed.
+- 17449: The cell margin must exceed the collar reach, in particular M≥ϖT.
+- 17459: To transport analytic spaces, match the bare-field bond sets and common drop-out membership of pairs of bare cubes in the domains.
+- 17477: For statements continuing beyond K, impose g≤γ-star and flow bounds through K-star.
+- 17492: Choose the deposit constant after the collar and rim fractions and bound it by their squared sizes; a smaller coupling ceiling cannot replace this.
+- 17494: Pay lineage age with creations; the claimed bound on elapsed levels uses the waiting bound and count.
+- 17499: The measure must be gauge invariant for a gauge draw to equal the written gauge-fixing formula.
+- 17508: Do not draw a reference law with normalization outside (0,∞); instead make the component drop out, and establish agreement of formulas with measures on supports.
+- 17555–17558: Prove the lower bound for the kept truncated conditional form separately; it is not inherited from a Schur complement, and only a localization/comparison route is indicated here.
+- 17564: Choose q>3p₀+Cr to make the stage difference a negative logarithmic power.
+- 17575: R class membership requires depth, small single boxes, quiet evolution without joining and quarantine from previous operations.
+- 17583: Require torus admissibility so class boxes and neighborhoods do not wrap.
+- 17585: Keep each frame's reference denominator, trees, tests and retained factors together; using a fixed frame for drop-outs would spoil exactness.
+- 17585: Test the existence of a sufficiently regular extension before integrating the central box.
+- 17598–17604: Impose the last-shell curvature test and add the external gauge-tree bonds needed to remove constant gauge freedom.
+- 17604: Choose M₀ large after M for the reference-law cutoff.
+- 17612–17630: Ensure stage tests imply all preceding tests despite Nₖ stages, including the last-stage test far from the box.
+- 17624: Choose 2≤L-flat<L/2, requiring L≥5, and impose the stated shell-overlap relaxation.
+- 17624–17630: Require outer-shell smallness, the displayed Nₖ-dependent threshold inequality, p₁<p₀−Cr and a sufficiently small coupling ceiling.
+- 17656: Keep C(M)ε≤aΛ and restrict the minimizer problem to the stated mild-curvature continuation class.
+- 17664: Put a generated healing configuration in an analytic-domain gauge with both potential and covariant differences below the permitted radius.
+- 17682: Cover undefined test objects by contrapositive energy arguments and require 2p₁−Cr>p₀ to obtain the sharper-operation gain.
+- 17695–17715: Allocate separate action shares and retain integrable halves so one Wilson action, gauge set and Gaussian set are not spent twice.
+- 17705–17706: The half-exponent normalizer comparison requires ε≤1 and xε²≥1.
+- 17709–17715: A renewed failure must be paid outside the old floor with only new-window gauge and Gaussian energies, at every compatible real evaluation.
+- 17732–17735: The weighted count assumes a nonincreasing nonnegative cost sequence.
+- 17762: The ledger requires gₙ≥2pₙ+CTₙr-hatₙ and pₙ≥CTₙr-hatₙ; p₀≥6r+1 and small couplings are used to supply them.
+- 17764: Cut the fictitious credit continuation off at K because the assumed flow bounds are only available through K.
+- 17782: A new marked failure must independently pay the renewed wait; old credit may be zero.
+- 17822: Use component-local Borel majorants and place the supremum inside integration; fixed-pair integral bounds do not multiply.
+- 17822–17831: Fix the supremum domain at birth and include all later reads uniformly in age, requiring q>p₀+2r and a coupling ceiling.
+- 17831: Raise reserve masses where Proposition 2.13 needs them and count each level-cell only boundedly many times in the volume.
+- 17831–17838: For a drop-out include the carrying Wilson action, all four admissibility conditions, and one-sided bounds on free weights, forms and Jacobians.
+- 17838: Lemma 2.5 inequalities must hold for every compatible evaluation, rather than only backgrounds; exclude the last failed test from its own mass and reserve its gain for a subsequent wait.
+- 17844–17851: Replace prepared by healed background without leaving a large shell Wilson action, sum histories with fixed exterior data, and keep collar-volume costs inside the component integral.
+- 17931–17936: Evaluate the generated healing field through its own background and control its gauge potential; an uncontrolled axial representative is insufficient.
+- 17938–17947: Use switches rather than claiming stored-field analyticity near sharp tests, and choose their radius to pay component and stage counts.
+- 17959–17966: Complete disappearing action slots using an erased-cluster history so the completed action depends on exterior data alone.
+- 17982–17994: Remove the empty family before the Mayer expansion so every nonempty polymer contains a component whose mass pays its costs.
+- 17999–18009: Each resummation must spend only its assigned decay-rate gap.
+- 18021–18024: Fix any prescribed extra volume-weight coefficient before reducing the coupling ceiling.
+- 18035–18042: Keep normalizers and elimination determinants in the integrand rather than absorbing them into a new probability measure.
+- 18059: Apply Cauchy estimates to the complete pair-holomorphic integrand, not separately to splitting-dependent pieces.
+- 18122–18128: Estimate products by explicit Borel majorants before applying Tonelli.
+- 18139–18157: Drop-out evaluation fields must match stored determining averages, be layer-regular, reproduce recorded tests except the stopping failure and satisfy inner-island admissibility and one-sided coefficient bounds.
+- 18171–18176: Preserve the dependence of the evaluation fibre on stored variables and keep its Wilson field real.
+- 18178–18186: Charge the last failed test only in a later enclosing mass and retain the same frame normalization for both types of mark.
+- 18188–18204: Prove all later reads belong to the fixed birth domains using the distinct action and determining sequences.
+- 18223–18224, 18254–18260: Use the one-step averaging formula within its fixed chart and close the small-energy bootstrap so every intervening plaquette remains there.
+- 18303–18318: Choose κpos below both the complete precision lower bound and the independently compared kept-form bound.
+- 18319–18332: Cover undefined logarithms by the small-coordinate contrapositive and absorb bounded certificate overlaps before summing gains.
+- 18343–18366: The renewed-mark argument assumes small unspent energy, must screen the unknown floor field through the waiting collar and lowers the ceiling to absorb its exponentially small influence.
+- 18368–18389: Control the main-step bond test through shell holonomies; the displayed mark-bond estimate and its surrounding renewed-mark argument are unfinished at this chunk boundary.
+
+## Chunk 17
+The entries below distinguish imposed conditions and imported inputs from tasks explicitly deferred; a requirement later discharged in this chunk is marked as such. “Remains” language used to introduce a calculation is retained even when that calculation immediately follows.
+
+- **18362–18366:** Lower the coupling ceiling so the second floor-screening term is smaller; use a fixed positive-width local collar and the weighted-distance background estimate (asserted here; formula starts before the chunk).
+- **18372–18380:** Shell paths and spanning surfaces must stay in the shell and have the stated area bound (construction sketched here).
+- **18391–18404:** Supply enough R_m powers in `history:mark-smallness`, use the localized background theorem for extension charts, and impose 2p₁−8r>p₀ at sufficiently small coupling (claimed sufficient here).
+- **18406–18414:** Use root witnesses only where compatible fields extend to X⁺, and allocate nested gauge, Gaussian, and Wilson witnesses without spending action twice (allocation asserted here).
+- **18450–18460:** Take R_j large enough that the owned read collar enlarges the site count by at most two (used in `history:read-volume`).
+- **18465–18473:** Count action regions, not redone determining regions, in the visible-label volume.
+- **18479–18493:** The skeleton bound must use the actual bounded-reach hull, enlargement, and boxing rules, without rectangular hulls of arbitrary thin components (argument supplied here).
+- **18509–18514:** Choose s₀ so the coarse-count coefficient is at most 1/4 and ν*≥4C₀ (used in occupied contraction).
+- **18523–18535:** Reserve unspent outer or carrying-term Wilson action for the failed cut-island test, exclude that test from Y's mass, and impose N*G_m+P_m≤c_wP_m² by choosing c_G small and the floor large.
+- **18537–18547:** The weighted-contraction argument assumes nonnegative non-increasing r_n.
+- **18550–18574:** “It remains to count light nodes”; this is addressed by quiet contraction, bounded diameter, preparation depth, and compulsory admission, yielding `history:light-wait`.
+- **18558–18565:** The quiet-contraction fixed point must lie strictly below the small-component threshold, and all depth, quietness, quarantine, and single-box trace conditions must force dynamic-class membership.
+- **18587–18603:** T_t r_t must be non-increasing; exclude the root's own mark and include bounded terminal torus levels in T_t.
+- **18628–18630:** Require G_t≥2P_t+C₂T_tr_t and P_t≥C₂T_tr_t for the reserve.
+- **18636–18652:** Take p₀≥6r+1 and impose l_t≥K(1+c₁), c_GA₀l_t≥4 after fixing c₁; the text derives the reserve inequalities from these conditions.
+- **18654–18670:** Use the high common floor for frame comparison, and stop future quiet propagation strictly before a new creation, merger, or completed wait, or at the terminal level.
+- **18673–18690:** The literal-history count must include earlier event levels and positions; the address-graph code does so without a separate height or volume factor.
+- **18702–18712:** Choose c_e≥b+2 log D+log 2 to make the entropy sum at most one.
+- **18720–18732:** Bound every nonquadratic term including stored boundary fields, assign separate fixed exponent shares to witnesses and the envelope, reduce c_G, and raise the coupling floor without double spending.
+- **18737–18755:** Gauge-normalizer bounds require ε≤1 and θε²≥1; determinant and Jacobian costs must use the actual pivot charts.
+- **18757–18791:** Use complete kept Gaussian forms, their actual free coordinates, coercivity, and the (2b) local comparison; the reference-integral bound is not established by a nominally similar flat covariance.
+- **18793–18823:** Form a single drop-out envelope before taking fibre suprema, replace inner suprema by Borel majorants, and remove integral excess only after outer integration.
+- **18825–18845:** The mass step assumes earlier strong real masses are at most one and may not move suprema through integrals; the induction return is given at 18868–18875.
+- **18847–18857:** Include envelope, mass, entropy, and coordinate-multiplicity prices in c₁, using fresh cut-leaf tests to pay outer creation witnesses.
+- **18878–18887:** Include every actual input in a move's read region, including the whole background box and the preparation window with quarantine marks.
+- **18889–18927:** Disjoint clusters need margins beyond every test, pivot, and collar reach; class membership must admit every eligible component; commutation uses product measures, disjoint substitutions, and integrable complex envelopes.
+- **18939–18942:** The standing operations “must still be integrated and counted”; the action-share and loaded-label argument at 18944–19187 undertakes that task.
+- **18945–19009:** Untouched one-step pieces need disjoint bare action shares, compatible tested averages, reserved event payments, complete Schur minima, and their own half-exponent gauge normalizers.
+- **19011–19031:** Mark majorants must use disjoint stored-variable groups, and the history multiplicity of a label must be paid rather than identifying each label with one failed-cell set.
+- **19033–19063:** The required load charges determining bonds and collared action defects; every owned level-site must receive only boundedly many charges, paid inside marks by an affine c♯(c)>c.
+- **19065–19086:** Vacuum cancellation must use the actual identical signed local number on both lists; unrelated volume-constant bounds do not suffice.
+- **19088–19115:** Old-level energies require their own vacuum and quadratic subtraction; marks, unmarked pieces, and live trees must use their designated mass bounds or credits.
+- **19117–19160:** “It remains to sum the positive records”; rooting and positive forest summation discharge this step with exp(N_k/M⁴).
+- **19190–19241:** Ordinary sources must preserve unsourced tests, measures, and backgrounds, form cut-island excess recursively, and leave a drop-out's carrier Wilson source in its carrier comparison.
+- **19243–19278:** Bound both reference value and oscillation of each new local source member, with rooted decay faster than incidence entropy; oscillation alone does not control additive constants.
+- **19280–19319:** Charge bare Wilson plaquettes at their actual owned level and use either that layer's curvature estimate or the compact-group bound.
+- **19332–19341:** The source recursion must count each inner history once, without adding its bound once per ancestor.
+- **19343–19366:** Choose c l_j≥2f(ρ) at every relevant level and keep a fixed Borel envelope on compact source polydiscs with parameter-independent test support and measure.
+- **19374–19398:** Remove each sourced term's own vacuum constant and enlarge the mass weight before applying the weighted-label estimate to the required total-variation sum.
+- **19399–19401:** The partition floor “remains a separate positive-label argument”; this chunk does not supply that argument.
+- **19410:** Fix all coupling-dependent choices by the frame, and use its running minimum for cube sizes and waiting depth so these do not increase.
+- **19418–19419:** Class membership requires the tube bound and its small potential discrepancy.
+- **19420:** Class membership requires Theorem 2.1 bounds, analyticity, reality, fixed gauge invariance, the specified switch analyticity, agreement under pair splittings, and background triples in passing-test domains.
+- **19421:** Class membership requires identification with the whole-lattice small-field output in both earlier-entry chains.
+- **19422:** Class membership requires the later-stated covariance forms and pointed-total covariance under all isometries, including unit translations.
+- **19423:** Class membership requires chart coherence for terms, measures, Borel supports, and each factor separately.
+- **19424:** Class membership requires island Borel positivity and regularity, analyticity and reality, factorwise gauge invariance, Proposition 2.7 mass with reserve, and (2d) oscillation at birth-level coupling.
+- **19425:** Class membership requires every stored-variable term to be a nonnegative measure.
+- **19426–19433:** Norm bounds alone do not establish age decay, the later |bold E_k| bound, or next-step input; full pointed-Hessian structural hypotheses and each regular member's own correct subtraction are needed.
+- **19437–19440:** Theorem 2.11 assumes current class membership, a prolonged frame, all g_j below the reserve-dependent ceiling, and the next weight in the tube after forming the next regular family first.
+- **19443:** Next-weight tube membership is explicitly “Not returned”; frame selection must provide it using (3a), (3b), or reference-line drift (3c).
+- **19445:** The closure sketch uses the (2b) analytic/decay room and a drift comparison over the R-operation window.
+- **19453–19460:** Assign every finite constant condition to its last dependency as a floor, ceiling, or window endpoint, and charge nonempty-window requirements to earlier constants.
+- **19462:** Every required threshold comparison must retain its stated margin; lowering a threshold does not automatically preserve failure gains.
+- **19463:** Fix only finitely many quantified parameter values before imposing their conditions on a constant; no single c_a can meet the displayed divergent family for all b.
+- **19466–19482:** Respect the displayed dependency order, including the stated M₁/R₁ dependencies, δ₀M≫κ-bar≫Lκ, Θ₁ and varpi_T floors, M≥max{varpi_T,L²M₂}, A₀≫A₁, fixed dial, and reserve-before-ceiling order.
+- **19485:** Returned or grouped numbers must be fixed before constants they bound; all-coupling conditions require the stated supremum ceiling with h→0.
+- **19485:** Cut the γ/flow-constant cycle by fixing frame constants first and require λ-under≤λ-sharp and B-sharp≤B-bar.
+- **19487–19492:** Impose all six exponent requirements: p₀−p₁>Cr; 2p₁−Cr>p₀; p₀>3Cr; q−p₀>Cr; q>Cp₀; κ₀>C.
+- **19495–19500:** Reused old terms must be unchanged, enter through a small difference, or have spatial decay; terms inside enlarged components instead require a later-chosen volume-bound price.
+- **19502–19509:** Small-field input requires uniform radius-ratio and summed-norm bounds, using regular two-counterterm decay and coupling summability for remainders.
+- **19512–19515:** The next regular norm must stay below E₀, with E₀ determined by the Gaussian normalizer and the error constant independent of E₀ and N*.
+- **19515–19520:** Boundary closure requires origin bounds independent of B, C B s_k≤1, adequate block-switch logarithmic gains, B exp(−c check R_k)≤1 for long exterior terms, and a later-priced interior volume bound paid by (2c).
+- **19523:** No-growth control requires the unchanged birth-level mass supremum domain to contain every later argument; returned sizes are maxima rather than sums.
+
+The source ends the `chapters/05_large_field.tex` module at 19525 and announces `chapters/ordinary_source_formation_audit_v6.tex` at 19528; no mathematical content of that next module is present here.
+
+## Chunk 18
+- 19499: A whole older term handled by decay must span the stated number of cubes; otherwise its collar contribution needs the volume bound whose constant is chosen later.
+- 19504-19509: The small-field input must obey the uniform weighted regular/remainder bound N-star and the stated radius control.
+- 19515-19520: Boundary-origin bounds must be independent of B; the four listed modes must supply their indicated smallness or ledger payment.
+- 19517: Boundary fluctuation differences require C B s_k<=1.
+- 19518: Each switched collar block must gain a logarithmic exponent exceeding the stages-times-component-cubes exponent.
+- 19519: Exterior undifferenced lower-level domains must extend over the specified cubes and satisfy B exp(-c check-R_k)<=1.
+- 19520: The interior volume-bound constant must be chosen after B, and the ledger of (2c) must pay it.
+- 19535-19538: Verify activity bounds for the interactions actually formed before applying the polymer expansion.
+- 19542-19549: Assume the theta sequence and constants satisfy OSF1.
+- 19562-19567: Sitewise quadratic cancellation requires all the named hypotheses of Section ch:pointed-hessian-cancellation and each member's own coefficient and tent action.
+- 19574-19576: Supply the polynomial radius bound and a linear localization rule with rooted-domain summability.
+- 19577-19591: Supply the regular and vacuum-only formation estimates OSF3 and OSF4.
+- 19592-19595: Verify evaluation inside each member's stated field domain for every decoupling and window parameter, separately from the size estimates.
+- 19604-19612: The ordinary-input proposition assumes the uniform regular norm and OSF5 defect/remainder bounds, including p>2.
+- 19656-19664: The scalar-weight estimate requires the plaquette field bound and the stated decay of alpha_n for eventual admissibility of fixed weights.
+- 19666-19671: OSF3 is not proved by these summations; prove pointed-Hessian covariance, the correct counterterm, window background regularity, and uniform substitution membership for the actual formation rule.
+- 19677-19685: Assume reserve additivity, volume domination of site count, and the exponential reference-mass bound OSF9.
+- 19686-19688: Supply measurable suprema or majorants, the perturbation bound by f N, and A>=f.
+- 19695-19698: Holomorphy of the integrated mass requires holomorphic integrands, parameter-independent reference measures and integration sets, and a common integrable majorant on compact parameter sets.
+- 19702-19709: The formation rule must produce the explicit OSF11 excess exponent with the stated real-field and coefficient restrictions.
+- 19710-19717: Prove the actual action and collar-interaction bounds OSF12 to apply OSF10.
+- 19718-19725: The nesting estimate assumes additive exponent and site-count recursions and the old perturbation bound.
+- 19727-19729: Prove preservation of the carrier oscillation norm for the next step; OSF13 does not provide it.
+- 19741-19743: The recursive localized-exponent construction requires OSF12 on the whole complex data box.
+- 19747-19754: Assume a uniform Kotecký–Preiss criterion, absolute logarithmic convergence, and OSF14.
+- 19755-19767: Positivity requires real activities at real fields, and OSF15 requires the actual nonnegative weighted integral representation.
+- 19768-19772: Control the remaining integral; a polymer logarithm alone supplies neither probability normalization nor the asserted volume-order lower bound.
+- 19774-19789: Obtain the summed total-variation estimate OSF16, including label counting, missing-vacuum weights, pre-integration majorization, and operation reserves.
+- 19791-19806: For the zero-source lower bound supply the small-field density lower bound, link-ball inclusion in all background tests, and the asserted background-action bound.
+- 19816-19820: RG realization, torus and cutoff compatibility, and nonconstant-source estimates are separate flow/source hypotheses beyond the scalar arithmetic.
+- 19824-19845: Assume next-step existence above h, the displayed recursion, the interval discrepancy bound, and the global error bound with constants uniform in beta and run length.
+- 19912-19915: Nonemptiness of every W_k, interval structure of W_k, and equality of its terminal values are not established and require additional information about dependence on beta.
+- 19925-19934: Leading asymptotics additionally require the vanishing tail error envelope while retaining the global epsilon bound.
+- 19991-19995: The analytic one-loop coefficient is an independent input, not a consequence of stopping-time arithmetic.
+- 20000-20001: The optional quantitative bound assumes h>=e, p>=0, and the specified inverse-square-root logarithmic envelope.
+- 20023-20025: The quantitative error supplies no second logarithmic coefficient, observable convergence rate, or summable comparison of neighboring cutoffs.
+- 20042-20058: The displayed uniform scale-summation corollary assumes h>=max(1,2C_0) and strictly q>2.
+- 20074-20077: Supply the model-specific analytic cancellation or renormalization that yields the summable coupling powers; the numerical estimates do not replace it.
+- 20086-20089: The exact unit change requires a compatible finite lattice and an integer b with K-b>=0.
+- 20133-20135: To identify unit change with initial RG portions, blocking, gauges, auxiliary choices, and increment extraction must commute with the bond bijection.
+- 20135-20138: Torus-independent increments require a separately defined common local construction; neither this property nor RG commutation is established by recursion or exact dilation.
+
+## Chunk 19
+- 20133-20138: Prove that blocking, gauges, auxiliary choices and increment extraction commute with dilation, and separately construct common local increments for torus independence.
+- 20160-20179: Use the assigned ordinary-source geometry, establish RF1 on declared cores, supply rooted-domain entropy, and ensure companion compatibility on all admitted common lifts.
+- 20181-20184: Supply existence, gauge covariance, affine reproduction modulo gauge and exponential decay of the infinite-volume background response.
+- 20196-20203: Justify translation covariance and independence of the off-diagonal coefficient choice, and fit the stated pair-norm ball inside the core.
+- 20205-20207: Meet all response, summability and symmetry hypotheses of the pointed coefficient theorem.
+- 20231-20236: When using three-derivative division, establish exponentially decaying quotient kernels on a fixed polyannulus separately from the moment identity.
+- 20250-20255: Assign every coupling occurrence exclusively to a frame choice or action weight and use frame running minima for cube sizes and waiting depths.
+- 20257-20280: Enforce reference-sequence floors and weak flow bounds, the rounded-scale constraint, tube caps and the prescribed order and inequalities for tube constants.
+- 20285-20302: Supply the full box bounds, covariance, positivity, chain identification, drift and simultaneous companion statements on tori satisfying RF7.
+- 20305-20315: Establish the RF8 Gaussian sum, decay, coefficient extraction, coupling independence, common lifts and lattice-isometric pointed totals.
+- 20317-20336: Use the actual RF9 compression and pivot factors, and supply the spectral gap, complex continuation, walk locality and c/M radius ceiling not proved by finite Gaussian integration alone.
+- 20338-20346: Establish multiplier criticality for the fibre-Hessian identification and the four tempered localization properties, using the correct pair norm for Hessian estimates.
+- 20348-20363: Prove obligation B3/RF10 by the actual lattice trace calculation with the fixed momentum convention, including both bounded partial-sum error and geometric convergence.
+- 20370-20385: Establish coefficient preservation by actual background substitution, the second RF11a formula and uniform analytic alias control.
+- 20404-20412: Justify the real constrained determinant representation RF12 with its actual current correction.
+- 20428-20436: Use fixed RF12a adjoint conventions and coherent logarithm branches for complex continuation.
+- 20484-20502: Establish the common-strip comparison for L-sharp and the ultraviolet coefficient, derivative and mass-comparison formulas RF13.
+- 20503-20510: Make the massive vector form coercive under the small-field hypothesis and check mixed-energy estimates and magnetic-remainder grouping uniformly before mass differentiation.
+- 20535-20539: Supply uniform weighted continuity of H and geometric convergence of the actual-background Taylor triples.
+- 20542-20548, 20575-20577: Verify the actual gauge/action splitting and positivity required by RF15; a generic complex Gaussian bound does not supply it.
+- 20592-20597: Identify physical and localized totals on their admitted backgrounds while respecting the separate independent-current complex cores.
+- 20600-20620: Establish RF17's list load and nonlinear bound, and choose parameters that actually yield the claimed failed-test power bound.
+- 20630-20633: Prove the exact 3/2 polynomial age estimate or prove a comparison using a smaller positive exponential rate.
+- 20642-20647: Verify actual output covariance, a common covariance class on an open real fluctuation ball and a connected common analytic domain; restriction alone is insufficient.
+- 20658-20680: Restrict the same actual functions between absolute and running radii and establish RF19's marked recurrence and summable load with sufficient prefactor smallness.
+- 20682-20704: Establish RF20's holomorphic independent-deviation decomposition and uniform f and q bounds on their full respective domains, including aged remainder parameters.
+- 20706-20717: To use RF21, supply its marked-exponent bound and large holomorphic multiplier disc; the stronger RF20 exponent remains unproved by that alternative.
+- 20720-20728: Form next-step families and coefficients before next-frame choices and establish actual R T box closure on every admissible torus and companion.
+- 20729-20734: Supply quantitative standing-history mass and locality bounds separately from the kernel marginal identity.
+- 20745-20758: Choose exponents permitting the ceiling, compute marked constants at the weak triple first, impose all required Y_H error floors and increase the stated floor when enlarging reserves beyond [0,1].
+- 20778-20779: Use separate analytic formation and closure hypotheses for each next step; telescoping supplies only the numerical induction.
+- 20820-20821: Supply the later matched-cutoff input for a whole-sequence limit along tuned runs.
+- 20839-20849: For the quantitative leading-log rate, ensure a sufficient marked error exponent and the smaller ceiling's monotonicity and envelope floors.
+- 20916-20930: Verify actual layered window/core and boundary hypotheses, regular/remainder norm bounds and RF30a decay in the standing-island hull metric.
+- 20931-20954: Establish RF30's retained regular and remainder layered estimates with constants uniform in all listed geometric and flow variables.
+- 20969-20982: Evaluate RF31 terms in their actual cores, provide the stipulated regularity and near coverage, and check full local cancellation hypotheses on the layered background, including boundary-response compatibility and own tents.
+- 20991-20997: Supply actual regularity/radius comparisons and available collar depth to pass from RF31 to RF30.
+- 21014-21023: Use the actual own-tent profile, control its rim actions and prove the window/history count including stored collars of healed components.
+- 21030-21038: For complex modulus estimates, use admitted perturbations, the stated regular/remainder norm caps and the same boundary hull bounds; arbitrary arrays are not asserted to arise from RG.
+- 21051-21062: Establish the exact density format identifying the actual exponent with elementary terms; defining an exponent through a bound does not establish it.
+- 21090-21092: Supply uniform strip estimates justifying the Hessians, infinite-volume limit and alias expansion used for coefficient preservation.
+- 21100-21111: In the constrained Gaussian and gauge changes, satisfy onto/positivity conditions and transform the constrained integral and both residual/compensating gauge determinants together.
+- 21113-21121: Retain both gauge-current and fibre-curvature terms and use the actual correction produced by constrained variation and gauge change.
+- 21180-21183: Remove all accumulated node factors before extracting the actual straightened average's quadratic Taylor term.
+- 21234-21235: Keep J and mu independent until after coefficient differentiation.
+
+The chunk ends mid-sentence at 21244; the determinant-ratio coefficient argument continues outside the supplied source.
+
+## Chunk 20
+- 21234-21235: Keep J and μ independent until differentiation is complete.
+- 21318-21322: Take the thermodynamic limit and coefficient at fixed k, and apply the uniform massive comparison only after current cancellation.
+- 21340-21346: Differentiate average factors before trace estimation and use a smaller fixed complex ball for uniform Cauchy bounds.
+- 21352-21355: Check the finite list of mixed energy bounds on the common strip with the actual average and constraint jets, in addition to counting coarse rank.
+- 21366-21376: Retain the first two mass derivatives exactly and insert the mixed bounds before asserting a uniformly bounded holomorphic remainder.
+- 21427-21429: Match the actual vector numerators to the proposed magnetic grouping while retaining absolute integral bounds.
+- 21456-21473: Supply single infinite-lattice companions for E and R for every frame/weight prefix, matching all admissible interior lifts with the same bounds and coefficient dependence.
+- 21465-21469: Enforce RF34's torus admissibility inequality through level j.
+- 21475-21479: Choose walks, propagators, localized backgrounds, and gauges once by rules natural under coverings, translations, and dilations.
+- 21479-21484: Make every formation formula depend only on the supplied neighborhood, restricted earlier terms, and common x_i,b_i, with simultaneous induction over unbounded torus sides.
+- 21486-21494: Establish history-trace locality on one-layer windows and the actual empty standing-history trace in the one-layer interior.
+- 21496-21501: Preserve the formation order E,b,x,R and prove compatibility for the full interacting construction; finite-formula holomorphy alone is insufficient.
+- 21503-21516: Use all-small-field totals and supply uniform response convergence and domain bounds for the physical-total/companion sum-rule identification.
+- 21523-21534: Enforce the RF35 torus floor after choosing g while keeping K unrestricted, as a uniform construction requirement.
+- 21550-21560: Supply dominated analytic estimates and fixed-frame input-list Lipschitz bounds with tube room for analytic and continuous fixed-choice runs.
+- 21566-21580: Prove E4's actual threshold, large-field, and gauge-fixing comparisons giving RF37 for the specified first-passage regime.
+- 21590-21597: Keep action-weight changes inside the narrower logarithmic large-field tube and use the fixed-source analytic domain for the interacting complex-bare-coupling construction.
+- 21600-21610: Require p_R>1 and actual marked-remainder holomorphy and ε'_k bounds on bare-variable discs of radius at least c_beta varrho uniformly over room-retaining centres.
+- 21635-21639: Choose tube constants and the coupling floor so the actual derivative evaluation points lie in RF39's half polydisc.
+- 21648-21651: Do not substitute a 1/θ_i gain for the marked term's actual 1/varrho gain.
+- 21676-21696: Use p_R>1 for uniform depth summation, p_R≥3/2 for the sharper original rate, and a floor making the forced slope error at most one third.
+- 21698-21704: Supply each marked-polydisc route's actual domain and the independent unmarked-variable domain; a physical-source disc alone does not give the latter gain.
+- 21707-21728: Respect all preceding tube upper bounds, nonincreasing radii, the one-member convention, and the floor-dependent criterion for a constant tube.
+- 21748-21755: Choose h large enough to admit the enlarged canonical tube uniformly without shrinking the prescribed offset range as K grows.
+- 21757-21766: Establish actual prefix formation and closure with room 8varrho, including uniform and marked-disc bounds on neighborhoods of every target prefix.
+- 21768-21777: Choose the floor to admit all initial weights in I_0 and form each next coefficient before restricting its new output window.
+- 21797-21813: Impose the required coupling ceilings and source analytic domain for tuning and restrict the uniqueness claim to the admitted canonical interval.
+- 21836-21838: Supply a particular F3 witness's admitted-run and comparison hypotheses before identifying it with the coupling derivative.
+- 21851-21861: Supply RF48's forcing, profile-kernel, and absorption hypotheses for the finite nontriangular lemma.
+- 21876-21878: Establish the actual two-run profile-kernel input; increment estimates alone do not establish it.
+- 21881-21893: Real presentations must stay in their tubes, obey the admitted shift bound with its floor, and have the required Euclidean, scalar, real, torus-independent data.
+- 21906-21916: Require equality of all-small-field measures at every level on every admissible torus, hereditary test-one windows, and a common connected analytic fluctuation domain.
+- 21928-21931: Admit the next step in both presentations before claiming extracted-coefficient equality through n+1.
+- 21952-21958: Use all-torus companion compatibility to extract coefficients from constant totals; one finite torus is insufficient.
+- 21960-21977: Admit both the shifted-bare and source-shifted presentations with the stated prefix room before applying RF52.
+- 21979-21997: Supply actual analytic source discs and their original bounds and radii; canonical gluing proves uniqueness only.
+- 21999-22010: For arbitrary-centre gluing, ensure each used overlap contains a common open interval of admitted real runs or prove admission there by the actual construction.
+- 22032-22034: Restrict logarithmic differentiation of the partition identity to its nonzero domain.
+- 22042-22053: Establish unit-independent prefix naturality of actual supply rules and construction data for both fixed-frame and self-calibrated runs.
+- 22055-22067: Keep prolonged runs below the anchor ceiling and their rescaled tori admissible, and verify the stated torus-floor implication for shifted reference prefixes.
+- 22069-22084: Require the rescaled torus L^q ell to meet the admissible floor before transporting beyond-first-passage estimates.
+- 22085-22092: Supply the actual factorial finite-torus source estimate RF54; the graded periodic-DLR theorem and finite dilation do not establish it or the stronger separation prefactor.
+- 22093-22098: For reverse dilation retain rescaled admissibility and its norm cost, and separately prove the bounded first-passage-depth discrepancy for tuned offsets.
+- 22108-22113: Prove E3 and terminal-coordinate comparison sufficient for full-sequence limits, common complex strips, and moving-offset continuity.
+- 22120-22128: Establish the matched depth limit, the admitted terminal-matching strip, near-identity matching, summable matching errors, and a two-run tuned-increment bound before fixing varrho.
+- 22141-22150: Prove the fixed-depth offset size estimate and summable cutoff increments on a domain where both presentations exist, with enough initial and inner-window room.
+- 22161-22166: Enforce each fixed-depth smallness condition at its own displayed coupling and obtain the limiting depth coordinate from matched comparison.
+- 22168-22188: Establish RF58's arbitrary-reference identification, both torus conditions, and recognition of the same bare run in both calibrated families.
+- 22190-22208: Establish RF59's prolonged-run anchor reduction for defining sequences carrying the required construction and recognition hypotheses.
+- 22227-22237: Retain a nonempty shape class, g≤γ_W(vartheta), actual depth/profile comparisons, summable errors, and two-point envelopes uniform over the offsets and tori needed in repeated blocking.
+- 22245-22247: Keep the exact RF60 input hypotheses; finite dilation and weak numerical inequalities do not establish them.
+- 22251-22258: Count vacuum numbers once and restore removed local numbers when using normalized N, without introducing freely chosen normalizations.
+- 22283-22290: Supply the Gaussian local-number properties and prove RF61's determinant estimates and first-step sign beyond the once-only accounting identity.
+- 22292-22302: Assume or establish RF62's quantitative vacuum bound uniformly in admitted runs, tori, and cutoffs.
+- 22304-22320: Follow the prescribed order of parameter choices, including the displayed lower bound on E_0 and the placement of source and comparison windows before final smallness of g.
+- 22323-22331: Retain the separate RF54, Statement 3.8, RF57, germ/rigidity shape and second-difference, and RF60 inputs in their later applications.
+- 22332-22339: Retain angular moment, mirror, and ultraviolet interfaces and the unresolved conditional inputs for the ordinary interacting source construction, clean-class two-point extraction, external reconstruction, and identification with full gauge theory.
+
+## Chunk 21
+- 22315-22320: Respect the stated parameter-choice order before varying ell, beta and K.
+- 22326-22339: Retain the comparison route's shape/second-difference hypotheses, angular moment/mirror/ultraviolet interfaces and the conditional status of ordinary sources, clean-class extraction, reconstruction and full-theory identification.
+- 22353-22355: Supply the separately stated multiscale source estimates when using the finite identities for effective energies.
+- 22380-22383: Require representation independence on the relevant bare plaquettes.
+- 22401-22420: Choose source-independent local anchor partitions/profiles and holomorphic increments satisfying the one-third radial sum bound.
+- 22448-22453: Prove exact integral transport before identifying effective measures from equal bare coefficients.
+- 22479-22494: Use a smaller source disc to freeze composed increments; radial control alone is not full-disc Lipschitz control.
+- 22496-22498: Retain all smallness, radius and representation-independence conditions when invoking sourced RG.
+- 22522: A reference run must stay in its tube with the stated source margin; stopped runs require their own normalization and site count.
+- 22524-22541: The graded DLR estimate requires real C1 tests, compatible cofinal tori, ordinary source hypotheses and actual rooted geometry D1/G1.
+- 22545-22550: Prove a uniform finite-torus factorial estimate and, separately, a separation polynomial whose degree is independent of n if those stronger targets are wanted.
+- 22556-22560: Construct and verify history witnesses, locality, replication and age-resolved weights; reflection positivity alone does not do this.
+- 22564: Keep every construction choice frozen at its unsourced value.
+- 22609: Prove Lemma 4.11, Package D, for the conjugated-copy holomorphy route.
+- 22611: Close a separate source construction to obtain Wilson format, counterterms, stability and uniform estimates for other observables.
+- 22665: Assume the inductive density/flow setup and formed moves through the coupling's reading level.
+- 22741-22746: Verify actual historywise T/R transport and move locality, obligation C1 of ch:dependency-catalogue.
+- 22749-22756: Enforce R's exterior-observable restriction, draw frames before tests and establish when gauge-factor multiplication represents the normalized draw.
+- 22814-22827: Use invariant conditional-expectation versions to integrate against unaveraged history measures.
+- 22879: Prove Proposition 1.6, Package A–H, on the complex class of activity families.
+- 22888: Carry full-class comparison slopes for regular, remainder, boundary and excess terms through the induction.
+- 22905-22911: Supply weighted masses with the exterior supremum inside the local integral and the specified fibred evaluations for drop-outs.
+- 22919-22925: Establish the whole-label pointwise majorant on disjoint integration-variable groups and pay missing label costs at a raised reserve.
+- 22925: Choose reserve surplus after the source radius and before the coupling ceiling; Proposition 2.13 is only outlined at sec:actual-history-closure.
+- 22935-22942: Frame runs need room 2r and admitted torus sizes; the mechanism still invokes Proposition 1.6.
+- 22976-22981: The older-level defect gain must hold on the whole source class without repeated shrinking.
+- 23005-23027: Keep unsourced choices fixed, interpolate only complete-read objects and apply one-step formation on the whole admitted box and original cores.
+- 23029-23036: Ensure the enclosing region contains all finer reads and supply the common-normalizer cluster/thin-tube bound.
+- 23054-23065: Form cut-operation exponents recursively; carrier agreement alone does not identify the complete scalar exponent.
+- 23103-23119: Prove carrier estimates in the sum norm on fixed common pair cores for the entire line.
+- 23147-23152: Supply actual formation estimates, hereditary core inclusions and collar-potential bounds; reserve absorption does not prove them or stronger independently marked weighted discs.
+- 23154-23167: Choose the coupling ceiling after source/exponent constants and apply the label sum at the raised mass weight.
+- 23175-23196: Supply the variational background estimate that makes every earlier test pass and bounds the lifted action for the floor.
+- 23242-23248: Use exact nonwrapping companion formation, plus stability, floor and vacuum comparison, to form the reference-torus normalizer.
+- 23252-23256: Verify D3 witness locality, narrow-window estimates and replication with every required weight for actual operations.
+- 23265: Start the determining set near Omega_1 rather than imposing regularity on the entire bare torus.
+- 23267-23290: Supply the separate geometric event-payment and fixed-trace mass bounds and fix charge/dial/rate constants before the anchor coupling.
+- 23306, 23315: Choose the age dial above its prescribed floor and then take g small depending on the dial, age rate and epsilon.
+- 23313: Restrict seeds to never-healed regions if applying lineage-age decay as seed-age decay.
+- 23328: Establish agreement of two runs from tile data, narrow-window probabilities, collar comparison and local witness functions, including the pattern/layer bounds.
+- 23356: Prove Theorem 7.5, Package F; the alternative age route alone has the stated volume-dependent large-torus scope.
+- 23358: Prove Proposition 2.12, Package C, for the separate aged-load comparison role.
+- 23363-23370: Source-transfer and insertion implications do not verify the ordinary interacting source input or history persistence.
+- 23388-23407: Supply normalized positive finite-label exactness OH1 and well-defined normalizers.
+- 23419-23434: Supply cutoff-, volume- and source-uniform term bounds OH2 and weighted label sum OH3.
+- 23446-23455: Supply a mass reserve dominating the extensive source excess uniformly in histories and exterior arguments.
+- 23457-23470: Use local-variable majorants, justify disjoint-variable multiplication and specify Wilson-factor allocation.
+- 23472-23479: Establish event suppression, genealogies, nonreused Wilson/Gaussian factors and missing-normalizer payment rather than sum fine-volume bounds.
+- 23489-23502: Verify OH5, including background test inclusion and the action bound when using minimizing backgrounds.
+- 23536-23539: The elementary coarse Wilson calculation leaves minimizing-background and earlier-test clauses of OH5 unproved.
+- 23543-23555: Impose function-local holomorphy/reality, exponential difference bounds, explicit zero-source vanishing and base-point counts.
+- 23562-23568: Keep the final decay above rooted entropy and impose source-function dependence structurally.
+- 23570-23576: Supply a first-passage argument reaching the window; the final constant conversion does not prove it.
+- 23580-23589: A pointwise-gas route requires an actual hard-core representation and the uniform OH8 activity bounds.
+- 23603-23606: Verify the common Haar/Wilson integral representation and action estimates before applying polymer stability/floor bounds.
+- 23608-23615: Local exponentiation does not establish a global pointwise gas; verifying ordinary history conditions OH2, OH3 and OH5 remains upstream.
+
+## Chunk 22
+- 23603-23606: A common Haar/Wilson integral representation and its action estimates must be verified before using gas bounds to establish stability and a floor.
+- 23608-23615: Verify oh:term-bound, oh:label-sum and oh:small-field-floor-input for the history representation; local exponentiation alone does not provide a pointwise gas.
+- 23642-23651: Use compatible even-cell tori, and restrict to m>=m_0 when localization uses M=L^{m_0}.
+- 23769-23784: Supply ST5 uniformly on the stated ordinary complex source ball for every finite real Lipschitz source family.
+- 23786-23797: Supply real vacuum terms, point holomorphy and fixed-cutoff uniform bounds, domain holomorphy and vanishing, locality, exponential decay and dependence diameter bounds.
+- 23798-23809: Supply ST6, a strict entropy gap and normal convergence of domain sums on smaller source balls.
+- 23810-23812: Ensure source representation independence of all local terms.
+- 23814-23831: Include global real Lipschitz mirror-periodized profiles in the ordinary source class at the required doubled radius.
+- 23908-23914: The all-state theorem requires ST5–ST6 with the stated locality, point counterterms and uniformity, together with proved lattice symmetries.
+- 24027-24035: Prove the actual ordinary source bound, entropy gap, upper stability and floor; retain ST9 and a common one-point normalizer when replacing an all-state input.
+- 24051-24073: The graded argument requires the retained ST5 inputs and actual rooted cubical-tree indexing with fixed-layer source dependence on compatible tori.
+- 24098-24112: Supply exponential domain decay with kappa>kappa_D; the weaker ball count with a_s^{-4} alone does not suffice.
+- 24125-24130: The fine-cell construction assumes support and face margins delta, delta<=eta<=1 and delta>=16a.
+- 24338-24344: A stronger separation law requires an additional argument; the proved polynomial singularity is d^{-5n}.
+- 24369-24374: Supply a cutoff-data sequence with uniform source estimates; fixed-datum Gibbs existence does not produce it or prove tuning, matching or uniqueness.
+- 24471-24478: Supply the vanishing-spacing state sequence with the listed lattice symmetry and reflection-positivity inputs.
+- 24480-24487: A separate recognition theorem is needed to identify growing-torus or spacing-first limits with the infinite-lattice state construction; diagonal positivity is not assigned to arbitrary growing cubic-torus limits.
+- 24511-24521: Supply the fixed-order uniform separated moment bound CC4, including the two-state one-point comparison, at least eventually on each support neighborhood.
+- 24523-24539: For quantitative conclusions supply CC5, D1, fixed-layer rooted geometry, strict entropy gap and a sequence of cutoff data with common constants; these source hypotheses are not proved in this section.
+- 24640-24642: Multilinear identities require the union of alternative supports in an entry to remain separated from all other entries.
+- 24715-24717: The reflection limit proves coordinate and diagonal directions only and establishes no new reflection direction.
+- 24854-24856: Flat-space extension does not establish a canonical extension across diagonals on all Schwartz functions.
+- 24879-24887: Closed-inequality passage requires convergent finite evaluations and eventual uniform bounds; it supplies neither uniform strict inequalities nor estimates with divergent cutoff constants.
+- 24905-24911: Admissible renormalization data with K_j tending to infinity, D1's uniform bounds, identification of different subsequential limits, matched-cutoff rates and a full Yang–Mills observable theory are not supplied.
+
+## Chunk 23
+These entries record explicit assumptions, requirements and limitations; a locally deferred obligation is marked with its later resolution when the chunk gives one.
+
+- 24891-24892: Continuum compactness requires the preceding lattice properties and two-state uniform bounds.
+- 24907-24909: The fixed-cutoff argument does not supply admissible renormalization data with K_j tending to infinity or D1's uniform source bounds.
+- 24909-24911: Identification of different extracted limits, a matched-cutoff convergence rate and a full Yang–Mills observable theory are not supplied.
+- 24920-24923: The graded separated-moment bound is assumed; its stated gauge-theory source requires D1 on the actual GS geometry and G1.
+- 24930-24943: S_n must be admissibly multilinear on separated supports and satisfy QF1 with n-independent parameters and position-uniform unit-radius control.
+- 24973-24977: Tensor density is constrained to diagonal-flat spaces and, when applicable, strictly positive-time supports, rather than the unrestricted Schwartz space; the required density is proved at 25292-25343.
+- 24983-24984: Degree-zero probability normalization may be added separately.
+- 25089-25099: The local Fourier construction requires inner-box support, enlarged cubes separated by at least h/2 and the specified small scale.
+- 25220: The Taylor estimate requires 8n+m at most k-star n, verified for the chosen order in QF15.
+- 25328-25330: Positive-time tests require every derivative to vanish outside the positive-time off-diagonal set.
+- 25361-25373: Inherited symmetry or reflection positivity requires the corresponding compact-moment property in addition to QF1.
+- 25376-25389: Uniform phase-component bounds use the graded-source theorem, GS12, the phase-interface realization and the all-state comparison bound; an unrelated decomposition cannot simply be assumed to inherit them.
+- 25390-25391: Contact terms across diagonals and full rotational covariance are not supplied.
+- 25395-25404: Position uniformity cannot be replaced by exponential growth in an enclosing radius; the weighted-integration counterexample records the obstruction.
+- 25406-25418: An exp(c n-squared) prefactor cannot count as a fixed factorial order, and reflection positivity alone does not furnish QF1's graded growth.
+- 25431-25433: The spectral cube cone needs additional lattice approximation information, while the round cone and continuous rotations need further input.
+- 25444-25448: Concatenation is restricted to tuples whose combined supports remain separated; no unrestricted algebra structure is asserted.
+- 25459-25473: Reconstruction assumes normalization, symmetry, admissible multilinearity, conjugation, translation and coordinate-reflection invariance, and HB1 for every finite positive-time combination including constants.
+- 25475-25489: HB2 is a position-uniform moment bound for each fixed n, d and R; deriving it from cumulant bounds also requires a one-point bound.
+- 25531-25532: Time-map boundedness remains to be proved at this point and does not follow from symmetry; the proof is supplied at 25534-25580.
+- 25551-25553: The orbit bound HB5 requires independence from support positions and is not supplied by a growing enclosing-volume factor.
+- 25593-25599: Moment continuity uses compact C1 translation continuity on separated fixed neighborhoods; the analogous statement need not hold in Lipschitz norm for merely Lipschitz functions.
+- 25671-25673: Choosing a different coordinate as time requires its reflection-positivity hypothesis.
+- 25675-25683: Additional quotient symmetries require preservation of the positive-time domain and moments and commutation with reflection and conjugation; optional W_3 invariance does not provide continuous rotations.
+- 25690-25692: Hilbert-space nontriviality requires a centered test with an actually positive reflected two-point value.
+- 25695-25697: The centering functional m must have the listed linearity, invariance, reality and local boundedness properties.
+- 25712-25713: Algebraic shift equivalence does not estimate the magnitude of cutoff-state one-point differences.
+- 25729-25733: The calibration conclusion assumes convergence of one-point differences; a bound on c requires a separate uniform one-point bound at f_0.
+- 25738-25744: The cone proof assumes infinite-lattice translation-invariant measures with all coordinate and diagonal closed-side RP mirrors; outside the periodic Wilson theorem these remain explicit assumptions.
+- 25754-25756: The plateau carrier supplies only the stated lattice inequality, not a round relativistic cone.
+- 25798-25808: The approximation requires local bounded Borel representatives with conjugation and covariance properties, vanishing support error, fixed-tuple convergence and uniform HB2 moment control.
+- 25835-25837: The finite-torus scalar-product statement requires convergent fixed separated moments, uniform C1 bounds on the relevant neighborhoods and link-mirror RP.
+- 25845-25847: The finite-torus statement asserts no maps between cutoff Hilbert spaces and does not itself supply a global lattice semigroup or HB8.
+- 25896-25898: An ergodic-decomposition interpretation of invariant Hilbert vectors needs the separate phase argument.
+- 25899-25900: Neither the round inequality E at least the Euclidean norm of p nor an O(4) action is proved here.
+- 25901-25903: An infinite-volume reflection-positive state must first be obtained before finite periodic laws can serve the all-separation lattice argument.
+- 25907-25909: The compact construction does not establish Schwartz-domain growth; a separate sufficient extension input is needed.
+- 25921-25924: The full positive-time Schwartz domain requires flatness at both the diagonals and the time boundary.
+- 25926-25936: H1 requires continuous moment extensions agreeing on compact tensors and the graded HB16 bound; finite fixed-parameter HB2 bounds or connected-function control alone do not establish it.
+- 25937-25943: The density input must include infinity, time-boundary and diagonal cutoffs and cannot be replaced by unconstrained tensor density.
+- 25945-25958: Enlarging the reflection domain uses H1 and the cited density lemma; quantitative growth-class reconstruction additionally uses HB16.
+
+## Chunk 24
+- 25941-25943: Tensor density must respect cutoffs at infinity, the time boundary, and diagonals; ordinary tensor density cannot substitute.
+- 25957-25960: H1 is used for enlarged-domain continuity and HB16 is needed for quantitative-growth reconstruction.
+- 25976: Theorem 7.1 assumes small coupling, sufficiently small d, and sufficient witness depth for first-passage data.
+- 25990-25994: Theorem 7.5 remains to be proved in Package F; the four-point claim requires its shape, depth, and volume-dependent distance thresholds.
+- 25996: Four-point continuum and Euclidean-space conclusions are not asserted by Theorem 0.
+- 26002-26012: Both entries of the test-pair class must satisfy the stated support, nonnegativity, nonzero, mass, separation, and Lipschitz conditions.
+- 26052: Off-first-passage use of the law requires admissible dilated side, small dilated separation, and sufficient dilated witness depth.
+- 26073: Choose C_W,0 in the stated order and satisfy the source-room bound and the further bounds in (b),(c).
+- 26083: The normalization estimate uses kappa_0 at least seven and the specified holomorphic source-slope control.
+- 26094: Choose d0 so n does not exceed s and charge each higher-level source derivative its scale factor.
+- 26109-26115: The lineage-age series must be used at rate at least eight for each two-point application; larger age growth requires a larger rate.
+- 26131: Retain the x inverse factor in irrelevant-source bounds and make the stated polylogarithmic covariance loss tend to zero.
+- 26141: The centered-block adaptation calls for a spacing-uniform spectral gap, weighted conjugation, and a first-difference sup-norm bootstrap.
+- 26154: Impose the room floor C_W,0 A0 squared at least 8/delta_fl.
+- 26156: The slope argument uses q minus p0 greater than two, and n must pay the determining-set averaging loss.
+- 26162: Each small-field fluctuation step requires the two stated inequalities for plaquette-energy covariance and the mean bilinear angle form.
+- 26178: One-cell bounds must be volume-uniform, including prolonged run, translation covariance up to the level, and the prepaid-end-mark first moment.
+- 26180: Choose q much larger than p0 and retain super-polynomial locality and wild-history errors.
+- 26184: Lemma 7a.1.8 is explicitly still to be proved in Package F.
+- 26204: Lower the coupling ceiling to cover the fixed reflected bump shape and use that shape's witness depth and thresholds.
+- 26230-26245: Choose complete read sets, buffered boxes tame throughout the segment, and a nonwrapping neighborhood excluding the live region over the finite clean window.
+- 26254-26261: Use plaquette-compensated redrawn profiles in healing; an average lag of individual histories cannot replace this resummed-class property.
+- 26263-26290: Compare on the common standing-part/stored-variable/exterior space and use a pointwise bracket estimate; integrated masses alone do not justify the comparison.
+- 26296-26302: Use the actual resolved coupling to split the reference subkernel; an arbitrary disintegration with the right first marginal is insufficient.
+- 26345-26360: The window lemma requires convex bounded product windows, weighted reference coercivity, a smaller perturbation Hessian, bounded force discrepancy, and weighted Lipschitz control of G.
+- 26365-26379: The marginal ratio estimate additionally requires coercivity for every weight with Lipschitz constant at most mu and the stated cross-Hessian/force sums.
+- 26458-26459: Common cores throughout the interpolation and uniform exterior-data bounds are required for all four force estimates.
+- 26461-26482: Subtract old regular marginal coefficients, retain the analytic margin beyond the window, and choose q sufficiently large to pay the box volume.
+- 26489-26492: Exterior removal needs the actual localized force; an internal Hessian bound alone does not imply it.
+- 26523-26530: Choose source radii small enough for uniform insertion-exponential bounds, including on the unclean measure.
+- 26652-26660: The relative generating-function error must be small before applying a bounded logarithm and Cauchy's estimate.
+- 26668-26681: Pay the relative derivative loss L2, choose q large in the prescribed order, choose D and n to preserve exterior/top smallness, and require p0 greater than max(1,r).
+- 26712-26714: Include separately bounded marked, remote, and boundary contributions; the preceding regular-response estimates do not prove an interacting Gaussian law.
+- 26718-26727: A source-disc bound cannot replace the potential estimate; the differentiated-potential construction still uses its unmarked hypotheses.
+- 26729-26742: ET3 assumes the insertion and irrelevant sup-norm bounds, polylogarithmic radius, positive a, and q greater than 21p.
+- 26774: Scalar transfer assumes joint lattice-translation invariance of D.
+- 26778-26789: ET5 requires one genuinely common holomorphic normalizer, uniform constants, and tests that may overlap and have either sign.
+- 26807-26819: Signed packing requires a at most d, sufficiently small d, common-ball support, and the two Lipschitz bounds.
+- 26832-26846: Relative transfer requires a reference lower bound; the explicit kernel floor additionally needs nonnegativity and mass/separation assumptions.
+- 26848-26857: Unrelated bounded normalizers do not imply ET5; the infinite-state route needs a common cell normalizer and a torus-limit reference needs a fixed-pair Gaussian estimate uniform over arbitrarily large tori.
+- 26859-26865: A reference proved only on one finite torus still needs comparison with infinite states; shrinking distance thresholds on growing tori do not supply the required reference estimate.
+- 26870-26874: The local companion criterion is not a consequence of upper stability and a partition floor alone.
+- 26878-26897: ET8 and its criterion assume common per-site constants, coupling and auxiliary choices, uniform entropy/decay bounds with decay stronger than entropy, and exact nonwrapping companion matching.
+- 26925-26932: Face-crossing source-energy bounds and a partition floor remain necessary for ET5; ET9 is not proved for an actual construction with differing runs/normalizers or unverified formation compatibility.
+- 26939-26945: The finite-reference construction requires an evenly dividing cell side, fixed separation of sources from faces, and compatible larger sides.
+- 26947-26959: The finite-reference proof uses ST5 and actual common companions for the regular/remainder vacuum families with the same coupling run.
+- 26967-26978: Reflected profiles vanish near faces and use half the ordinary source radius to cover the factor two in source norm.
+- 27000-27001: The pressure comparison requires the local source-energy representation only on the reference torus, while using the exact finite lattice measure for transfer.
+- 27031-27043: The face-series estimate requires source-face distance and energy decay stronger than domain entropy.
+- 27079-27085: Signed averaging requires translation-invariant covariance difference, and the order is finite extraction, uniform cutoff-wise transfer, then continuum and component limits.
+
+## Chunk 25
+- 27079-27083: Signed-translate averaging requires lattice translation invariance, asserted here; the vanishing relative error uses the witness depths in ET7.
+- 27135-27141: Choose an upper marginal variance scale and include every block used by the bounded polynomial among the tested blocks; no lower marginal eigenvalue is required.
+- 27151-27161: The transport input requires nonnegative integrable functions, positivity on interval interiors, GCB3 interpolation, and the initial continuity/smoothness conditions used in the proof.
+- 27189-27195, 27197-27198: The higher-dimensional and marginalization arguments use the stated convex-support, regularity, and integrable-slice class.
+- 27257-27261: The cutoff derivative must be confined to an outer annulus by an inner plateau for this exponential-tail argument.
+- 27369-27378: The simplified GCB13 flux bound requires radius at least the upper standard deviation; it is not a valid small-radius bound without the term retained in GCB12.
+- 27443-27455: GCB17 assumes the explicit two-sided weighted Schur bound on actual covariance entries.
+- 27474-27491: Boundary accounting must retain the inverse cell weight and the actual coordinate covariance convention, without suppressing or adding a second cell-volume factor.
+- 27597-27609: GCB26 requires common local support and variance bounds; the text supplies choices using only the inserted supports.
+- 27672-27677: A common R and v must cover the finite list of quadratic factors before summing the moment estimates.
+- 27768-27791, 27820-27826: The concrete realization is at fixed current spacing and fixed odd L with the actual contour gauge and reference normalization; multilevel coordinate counts and normalization must still be charged in GCB17.
+- 27856-27862: Removing the physical gauge penalty requires equality of the contour image on constrained curl-free bonds with the full contour target; GCB38 verifies it for the actual gauge, not an arbitrary alternative.
+- 27871-27878: Injectivity of curvature-gauge coordinates uses the flat gap or the previously established zero-mode argument in `ch:flat-contour-precision-gap`.
+- 27896-27904: The alternative action-weight calculation assumes tau>0 and supplies no uniform covariance bound as tau tends to zero.
+- 27927-27934: A fixed-fibre calculation does not establish the interacting coarse-mean law; exterior/coarse averaging contributes a separate missing covariance term.
+- 27953-27955: Smallness of the GCB42 projection correction on a chosen physical window requires its own quantitative proof.
+- 27978-27987: Transfer to the full free-curvature comparison requires an actual identification or comparison of the chosen reference with the full exact-cochain reference; the interacting identification is not asserted here.
+- 27991-28000: The fixed-step simplified exponential cutoff estimate assumes equal physical tangent radii B at least sigma_L and unit amplitudes/counting weights.
+- 28033-28040: Third and fourth quadratic connected-error estimates require sixth and eighth linear moments; odd-moment vanishing alone does not establish them.
+- 28052-28058, 28069-28083: The nonlinear Taylor bounds rely on the actual joint chart domain, finite dependencies, and uniform holomorphic bounds from `ch:block-average-pivot-chart`.
+- 28085-28088: The full tangent-cutoff event fits inside the actual chart only under the stated condition gB<r_L/2.
+- 28096-28099: GCB48 is still an identity under the Gaussian cutoff measure and does not establish a nonlinear-action measure comparison.
+- 28103-28110: The cumulant remainder estimate uses gB<=1 in addition to chart admissibility.
+- 28138-28144: Any nonlinear-field cutoff comparison must include the quadratic chart discrepancy and preserve a stated radius margin.
+- 28146-28164: Free-coordinate and complete physical cutoff boxes must not be identified; a free-only rule needs its own actual covariance, radii, and separately carried observable coefficient map, since inclusion alone does not compare normalized laws.
+- 28166-28174: The stated asymptotic conclusion assumes positive polylogarithmic radius exponent, g=theta inverse square root, polylogarithmically bounded support radii, and bounded test sup norms.
+- 28175-28177: Relative error for a specified two-point coefficient additionally requires a proved lower bound for that coefficient in the same test class.
+- 28181-28193: Local subsequential convergence does not establish uniqueness or identification with conditioning an infinite-volume Gaussian on a positive-probability global event.
+- 28195-28209: Complete-density integration by parts assumes G>0 and requires every integrability and chart-domain condition to hold with the actual normalizer.
+- 28209-28213: The Gaussian boundary theorem and a small Hessian alone do not bound exterior-force displacement or old-activity destruction of even log-concavity.
+- 28215-28221: Adding an even log-concave factor preserves the radial argument but its new force still needs a bound; no corresponding convexity, symmetry, or force bound is asserted for the resummed interacting density.
+- 28223-28226: The interacting application requires complete density, exterior averaging, and old-activity force estimates from `ch:two-point-extraction-tests`, plus comparison with the full free-curvature reference.
+
+## Chunk 26
+- **28207–28209:** All integrability and chart-domain conditions must hold for differentiation of the entire normalized density.
+- **28209–28213:** Exterior linear forces can move the law toward the boundary and old activities can destroy even log-concavity; small Hessian control and the Gaussian boundary theorem do not bound those effects.
+- **28218–28219:** A further even log-concave factor still requires a bound on its new force in the complete integration-by-parts identity.
+- **28219–28221:** Convexity, symmetry and force bounds for the resummed interacting conditional density are not asserted.
+- **28223–28226:** The interacting application requires the complete density, exterior averaging and old-activity force estimates of Section ch:two-point-extraction-tests and comparison with the full free-curvature reference.
+- **28239–28241:** All-mirror invariance and reflection positivity of every periodic Wilson DLR state, ST5 and GS1–GS3 are assumed inputs to the uniform insertion argument.
+- **28242–28247:** The construction requires odd L and the compatible cofinal torus family so every fixed board eventually tiles without omitted scale terms.
+- **28268–28270, 28282–28284:** Boundedness on the Hilbert quotient is not available at the raw-algebra stage and is explicitly described as still to be proved; UI5 and the null-vector argument establish it at 28317–28330.
+- **28394–28401:** The continuum argument supposes convergence of the centered separated moments for the two periodic-state sequences.
+- **28402–28408:** Previously proved all-state local moment bounds are required for the small-test-change equicontinuity used in the continuum passage.
+- **28519–28521:** The uniform one-field insertion theorem itself does not assert plate density, an L^1 insertion bound or full rotational covariance; the following section derives the first two under PD1–PD2 and local continuity.
+- **28535–28544:** The density section assumes a symmetric real, time-reflection-invariant, translation-invariant functional with reflection-positive Hilbert reconstruction, probability normalization and strongly commuting translations.
+- **28544–28548:** The joint spectral measure must satisfy the exact cube-cone support hypothesis PD1.
+- **28549–28552:** Local C^1 continuity of separated moments is assumed from ordinary-source bounds.
+- **28554–28567:** PD2 is a required insertion input with fixed constants and the stated outside-support, source-ball and center-time restrictions.
+- **28881–28882:** No diagonal-frame cone, contact value at t=0 or rotational covariance is asserted for the resulting two-plate kernel.
+
+## Chunk 27
+- 28881-28882: The preceding coordinate-frame construction asserts no diagonal-frame cone, contact value at t = 0, or rotational covariance; these are stated scope exclusions, not proved results here.
+- 28891-28896: Supply the plate estimate uniformly in the number of outside fields; this section does not prove it or the short-distance two-point estimate, and its conclusions do not by themselves establish rotation invariance.
+- 28909-28917: Assume multilinearity, symmetry, realness, translation and hypercubic invariance, normalization, centering, and the specified position-uniform separated C1 continuity of sigma; no entry-count growth bound is assumed.
+- 28919-28941: Supply reflection positivity and reconstruction with the Hilbert realization, translation actions, strongly commuting self-adjoint generators, nonnegative H, planar cone inequality, and invariant vacuum recorded in AK1–AK3.
+- 28950-28968: AK4 requires one C_phi valid for every 0 < eta <= 1, permitted strip profile, and arbitrary finite combinations and numbers of outside fields, with separated concatenations; the cited ordinary-source plate theorem is said to supply it with wp = p+5.
+- 29904-29905: Vacuum uniqueness and absence of zero-energy mass are explicitly not asserted; the text does not present them as proved consequences of the positive measure.
+- 29905-29907: A positive plane measure in a diagonal-reflection picture requires reflection positivity for that picture and is not inferred from the coordinate cone.
+- 29907-29909: Eliminating the nonzero two-point harmonics requires a separate ultraviolet estimate and the diagonal-frame argument.
+- 29909-29911: The polygon and integer arguments remain outside this section, though AK49 and AK50 are available to them.
+- 29912-29916: Establish the separate distributional identification with the original functional on exceptional support arrangements, particularly coincident planar projections with separated transverse supports.
+
+## Chunk 28
+- 29904-29905: Vacuum uniqueness and absence of zero-energy mass are not asserted by the preceding construction.
+- 29905-29907: A positive measure in a diagonal picture requires that picture's reflection positivity; the coordinate cone does not supply it.
+- 29907-29909: Eliminating nonzero two-point harmonics requires a separate ultraviolet estimate and diagonal-frame argument; the conditional argument is supplied at 29922-30496.
+- 29909-29911: Polygon and integer arguments are outside the preceding kernel section; they are supplied at 30582-30679.
+- 29912-29916: Identification with the original moment functional on exceptional supports is a separate obligation; it is addressed conditionally at 30723-30815.
+- 29925-29937: The continuous planar kernel, axis spectral realization and exact cone, one diagonal reflection, positive-shape ultraviolet bound, and underlying insertion, continuity, reconstruction, and interacting-source hypotheses are inputs.
+- 29952-29960: S2 must have the stated symmetry, invariances, coordinate reflection positivity, and diagonal positivity TU1.
+- 29965-29985: The continuous-kernel identity TU2 and compatible Hilbert realization TU3 are explicit assumptions.
+- 29991-29998: When the ultraviolet hypothesis concerns connected functions, the interface must be applied to the vacuum-subtracted connected kernel.
+- 30073-30096: TU10 requires the vanishing ultraviolet bound on the full TU9 class at the selected universal shape parameter.
+- 30094-30096: A narrower positive-shape premise must be checked for inclusion of the shapes chosen here.
+- 30137-30142: The chosen TU13 parameter must suffice for the constructed tests; this is checked at 30217-30241.
+- 30322-30323, 30381: The diagonal measure is to be constructed without assuming its cone, and the cone is not yet established after TU24; TU27–TU28 establish it.
+- 30472-30479: Two-point angular elimination is conditional on TU1–TU3 and the ultraviolet hypotheses TU9–TU13.
+- 30498-30502: Arbitrary separated four-dimensional tuples require separately stated extension hypotheses; Ward and infrared routes keep their separate hypotheses.
+- 30511-30524: All-orders closure assumes the analytic-kernel and boost Gram interface, two-point ultraviolet elimination, moment bounds and symmetries, coordinate positivity, exact cube cones, and constructed off-diagonal distributions.
+- 30548-30553: Analytic coefficient extension over distinct planar configurations does not itself establish a distributional density assertion on exceptional supports.
+- 30572-30580: Top-harmonic positivity relies on product-vector proofs; analytic continuation of a nonnegative real-valued function alone does not prove it.
+- 30740-30751: Ordinary-chart equality alone does not exclude a distribution supported on time ties; the induction at 30753-30815 supplies that step.
+- 30798-30805: Both original and rotated configurations must share a strict cut to use HC10–HC11 for both moment terms.
+- 30843-30854: The full Schwartz conclusion uses the diagonal-flat extension and constrained tensor density under the stated moment, cone, kernel, and two-point hypotheses.
+- 30857-30860: Ordinary interacting source estimates and the ultraviolet two-point law are not proved by angular closure.
+- 30857-30860: Angular closure does not identify the scalar cyclic theory with a complete family of Yang–Mills observables.
+- 30877-30887: The conditional-law theorem assumes nonempty compact metric X, a Borel probability mu, and a conditioning sigma-field satisfying CD1.
+- 30994-30998: Kernel values on the exceptional null set are chosen, with no conditional interpretation required there.
+- 31084-31089: No universal exceptional set is asserted for equality to arbitrarily preselected conditional-expectation versions for every Borel function.
+- 31091-31103: Simultaneous pointwise properness for all conditioning events is not asserted and is disproved by the nonatomic null/co-null example.
+- 31103-31105: No regular-conditional-law assertion is made for arbitrary non-countably-generated target fields.
+
+## Chunk 29
+- 31084-31105: Conditional-law uniqueness does not promise a universal exceptional set for arbitrary chosen versions, simultaneous properness for all events, or a regular conditional law on an arbitrary non-countably-generated target.
+- 31124-31127: Identifying invariant-class extremality with extremality among all DLR states would require an additional argument.
+- 31114-31122, 31144, 31278-31280: The canonical phase result requires G1, G3, G4 (the latter from D1), and compact disintegration.
+- 31146-31157: Tuple concatenation requires disjoint supports, and convergence of every centered tuple moment is assumed.
+- 31174-31178: The moment estimate needs one-point differences as well as higher cumulant bounds; continuity uses fixed separated containers.
+- 31186-31187: Disintegration must be shown to land in the required states; the subsequent invariant-density, countability, and ergodicity arguments discharge this local obligation.
+- 31244-31250: Uniqueness among ergodic decompositions needs the additional mixed-moment observation; G3 and Stone–Weierstrass discharge it here.
+- 31300-31302: Successive far translations must leave the remaining groups disjoint and take the innermost limit first.
+- 31313-31319: Reflection boxes must enclose the supports and plaquette-corner margins, and reflected moment bounds use G4.
+- 31339-31340: The precise iterated-limit formula is deferred until component clustering is constructed; 31370-31379 discharges this local obligation.
+- 31394-31408: The phase Hilbert theorem assumes full-support compact metrizability, PV1, point separation, component conjugation/reflection/translation invariance, and separated concatenations.
+- 31410-31424: The phase Hilbert theorem uses uniform component clustering PV2 and uniform separated moment bounds.
+- 31426-31439: The positive-time quotient, dense classes, strongly continuous contraction semigroup, nonnegative self-adjoint generator, and PV3 are explicit hypotheses not obtained here from qualitative convergence.
+- 31477-31503: Surjectivity of the zero-energy isometry remains to be proved at 31477 and is discharged by the evaluation-algebra density argument.
+- 31521-31527: The vacuum-space identification supplies no strictly positive lower spectral bound on the orthogonal complement.
+- 31537-31542: Growth constants, factorial exponents, and derivative-order coefficients must obey the declared positivity and integrality conventions.
+- 31544-31551: Uniform argument-number growth, full Euclidean covariance, and clustering must be established separately from qualitative convergence and positivity.
+- 31579-31587: Contact terms, coincident composite identities, and local Ward identities require an explicitly specified additional Schwartz extension.
+- 31597-31599: The density lemma does not assert density in the full Schwartz space.
+- 31603-31609: Cutoff convergence is required for every separated smooth tuple and reflection positivity for finite families, allowing overlap between different tuples.
+- 31628-31646: Transfer to Schwartz sequences assumes continuous extension to the diagonal-flat domains and uses a sufficiently strong seminorm for the finitely many mixed terms.
+- 31648-31655: Extending subgroup translations requires test continuity and local bounds; this does not generate rotations from the hypercubic group.
+- 31667-31686: Reconstruction assumes normalized symmetric functionals satisfying RC1, full Euclidean invariance, sequence reflection positivity, and spatial clustering.
+- 31688-31707: OS analytic continuation is imported, interacting hierarchy estimates remain separate premises, and separate continuity or an off-diagonal kernel theorem cannot replace RC1.
+- 31711-31721: The rooted-source route needs actual D1, G1, GS1–GS3 geometry and locality, and decay above rooted entropy; weak ST6 counting is insufficient.
+- 31723-31737: D2/RC2 remains conditional on the actual D1 source representation and G1.
+- 31739-31758: H1 follows from D2 through the quantitative flat-extension route, but the ordinary analytic RG D1 estimates are still assumptions and GS/QF cannot be replaced by weaker counting or continuity.
+- 31762-31772: The Hilbert bridge retains invariant positivity, position-uniform bounds, lattice approximation, and growth/density hypotheses; positivity alone does not replace continuity and growth checks.
+- 31774-31797: Extension of clustering assumes a dense-vector limit and unitarity; preservation of a numerical rate on arbitrary vectors requires further quantitative approximation control.
+- 31801-31817: Every reconstructed phase needs its own covariance and positivity or an approximating-state realization carrying them, including state-uniform two-point extraction and self-centering.
+- 31819-31826: An additional theorem is needed to pass from finite hypercubic symmetry, coordinate positivity, and translations to O(4).
+- 31837-31846: TU10 must hold on the full positive-shape class at vartheta*=1/12000 or a broader class uniformly over states and positions; narrower shape classes and torus-only laws cannot replace it.
+- 31842-31846: The G2 state class must carry mirror and exact cone interfaces; arbitrary growing cubic-torus limits require separate justification, and stronger Ward/flux/matched-run routes keep their own estimates.
+- 31848-31856: The listed actual estimates are proof outlines, OS continuation remains imported, and full Yang–Mills observable identification remains separate.
+- 31860-31869: A stronger Yang–Mills theory requires its additional observables, identities, and compatibility relations; nontriviality or non-Gaussianity of the scalar field alone does not establish it.
+- 31871-31882: A mass gap requires excluding spectral support on an interval above the vacuum and does not follow from polynomial clustering.
+- 31895-31902: Pointed cancellation, nonlinear window, and finite formation retain their background/domain hypotheses and do not calculate the one-loop trace or prove matched-cutoff or typed Ward estimates.
+- 31921-31925: Local Gaussian constants must be counted once, either unnormalized in CP1 or separately restored after normalization.
+- 31926-31939: Zero source derivatives refer to fixed calibration and frozen-potential presentation; moving sources into Gaussian weights requires its own determinant sum rule.
+- 31941-31953: B3/CP2 requires the actual lattice determinant/trace normalization and zero-mode convention; Gaussian integration alone does not provide it.
+- 31955-31969: Stronger slope claims require joint holomorphy and the actual unmarked and marked tube radii and losses in CP3.
+- 31970-31980: Actual runs must remain in common half polydiscs with common localization, counterterms, and admissible domains; actual marked losses, fixed differentiation domains, and companion/prefix compatibility must be retained.
+- 32027-32038: CP6 and its sum require monotone sufficiently large centers and backward linear drift.
+- 32049-32071: Slope bounds require the actual differentiable recursion with fixed calibration, and identifying the relevant prefix and derivative with F3 remains an input.
+- 32072-32076: LB12 is supplied only under admitted CP3 drift/domain conditions, which are not proved by the slope calculation.
+- 32077-32098: The matching inverse and E2 coordinate implication require actual whole-disc row bounds and functions defined near the doubled disc; those premises are not proved here.
+- 32098-32100: A polydisc supremum bound does not establish forgetting in the index difference.
+- 32104-32109: Fixed-torus comparisons retain the fixed source norm, positive separation, and torus-independent tuned center.
+- 32120-32123: E2–E3 must prove common-neighborhood inverse existence, reality, uniform upper and lower real Lipschitz bounds, Xi_K(0)=h, and the one-third offset error.
+- 32124-32134: CP9 requires summable matching-coordinate, derivative, coordinate-increment, and matched-correlation errors on a fixed smaller complex neighborhood.
+- 32135-32144: Correlations must be bounded and holomorphic on a wider strip, matching paths must stay there, and the separate remainder Pi_K belongs in epsilon_K.
+- 32172-32176: The terminal-coupling result proves no infinite-volume uniqueness, and depth-coordinate limits need fixed-depth comparison.
+- 32177-32189: Logarithmic running uses a linear depth envelope; common-prefix matching must control convergent hat t_(K,s) offsets within both windows.
+- 32190-32198: E4 separately compares frozen and self-calibrated runs, places first-passage offsets in J, and bounds depth differences; change-of-reference limits require convergent offsets and both torus floors.
+- 32199-32206, 32251-32252: CP9a is an additional comparison obligation unless the stated stronger two-run and uniform-envelope premises hold.
+- 32208-32218: The conditional CP9a proof requires linear depth spacing, the stated two-run error, and the bounded weighted Pi_i tail with constants fixed before varrho.
+- 32224-32234: The conditional increment argument chooses varrho above twenty times the increment bound and requires all intermediate restored offsets to remain in J.
+- 32235-32244: The fixed-shape positive lower and vanishing upper envelope must be uniform over offsets, placements, and arbitrarily large tori; this tuned two-point comparison is explicitly unverified.
+- 32248-32252: Identifying the unique increment cluster value with c0 additionally uses CP2–CP3, backward drift, and tuned terminal value h.
+- 32253-32262: The limiting blocking identity requires CP9a, moving-offset convergence, both offset windows, and both torus floors, rather than one-step potential estimates alone.
+- 32264-32289: Distinct-offset limits require the additional 7e germ-dilation comparison and logarithmic envelopes with all shape, placement, offset, and torus-floor quantifiers.
+- 32306-32319: Summable matching inequalities alone do not imply geometrically small increments after arbitrary reparametrization and common nonvanishing normalization.
+- 32320-32324: The proposed corrected coordinate requires an actual compatible remainder-transfer and pointing theorem, not established by finite scalar insertion results.
+- 32328-32341: The optional Ward route assumes connected smooth-tuple convergence, uniform local multilinear C1 bounds, W4 symmetry, realizing lattice laws, and an eventual common torus chart.
+- 32349-32363: Actual change of variables must supply fixed, test-independent, gauge-invariant annular insertions with the stated localization, box count, and omega-linearity.
+- 32364-32380: CP10 must be an exact finite Ward identity with the actual bulk term, vanishing fixed-R bulk and derivative defects, and any needed typed anisotropy and volume-transfer estimates; scalar source bounds do not prove these.
+- 32392-32400: Optional target 0(e) imposes CP12 with the cutoff limit taken at fixed R before the outer radius limit.
+- 32403-32410: The one-generator argument assumes the invariant one-point convention and zeroth moment one or uses a centered functional.
+- 32435-32438: CP12 must hold on every smooth tuple for the chosen nonzero generator so the derivative also vanishes at every rotated tuple.
+- 32449-32458: The infrared implication requires mixed-insertion decay strictly faster than D^(-4) or absolute shell vanishing along a radius sequence; ordinary per-ball density bounds do not supply either.
+- 32459-32463: Using the older survival argument requires its additional weighted history law.
+- 32465-32476: Spatial rotation unitaries require HB quotient hypotheses and full scalar rotation invariance.
+- 32477-32480: The round energy-momentum cone requires established HB cube inequalities in the relevant limits.
+- 32486-32490: General time-mixing Euclidean rotation operators are not asserted; external OS reconstruction, F4 full-theory identification, and any mass-gap estimate remain separate, and optional Ward inputs do not enlarge the periodic angular proof's state class.
+
+## Chunk 30
+- 32466-32469: Supply full scalar rotation invariance before asserting the HB spatial action.
+- 32477-32480: Establish HB cube inequalities for the limit to which the round-cone argument is applied.
+- 32486: A general time-mixing Euclidean rotation operator is not asserted.
+- 32487-32488: External OS reconstruction remains separate.
+- 32487-32488: F4 identification of the full theory remains separate.
+- 32488: Any mass-gap estimate remains separate.
+- 32488-32490: Retain the periodic angular proof's mirror, cone and ultraviolet interface; optional Ward premises do not enlarge its state class.
+- 32501-32503: Supply the type and required estimates of every uninstantiated auxiliary map; notation does not establish existence.
+- 32512-32513: Specify the matrix group and trace convention in statements retaining N.
+- 32514-32520: Use the cofinal compatible tori for the graded ordinary-source argument and fix M_1, M_2 and buffers before cutoffs, fields and sources.
+- 32554-32556: Use both source and target inner products in every adjoint.
+- 32583-32585: Prove background obligations A1--A4, including existence, analytic domains, gauges and uniform bounds beyond the scalar model.
+- 32590-32591: Maintain the response bound throughout the full product datum polydisc, not merely at zero.
+- 32594-32595: Use actual compatible equations and boundary rows with their natural force norms and cell weights in finite-box comparison.
+- 32607-32608: Provide the one-loop interval sum law and error envelope assumed by the numerical first-passage theorem; it does not compute c_0.
+- 32614-32615: Supply calibrated-coordinate holomorphy and comparison across cutoffs as additional analytic assertions.
+- 32622-32623: Make physical quantities depend only on the relevant plaquette values, independent of source-triple representation.
+- 32629-32633: Use the source-domain partition data and exact-counterterm definition of ζ_j rather than choosing another bare coupling.
+- 32637-32638: Do not silently replace a coefficient-extraction radius by a smaller running radius.
+- 32642-32644: Keep the prescribed curvature and fluctuation thresholds fixed throughout each source family.
+- 32651-32653: Specify an infinite-lattice companion; a finite-torus total does not define one.
+- 32654-32657: Meet Requirement B2's conditional hypotheses when using the actual-member extractor `ph:extractor`.
+- 32663-32664: Require decay stronger than domain-counting entropy when summing mixed derivatives across separated supports.
+- 32668-32669: Declare exact history-region inclusions, buffers, tower maps and domains; region names alone impose none.
+- 32673-32674: Do not identify a standing-history measure with a predetermined block-variable law after healing without additional justification.
+- 32679-32680: Take suprema and oscillations on the stated domains under the mass integral when required by the induction.
+- 32684-32685: Do not use an age-survival probability alone to enlarge the complex input radius.
+- 32688-32691: Supply all structural clauses, maps, estimates and formation data for presentation membership and any closure theorem.
+- 32689-32690: Do not automatically identify the independent current coordinate with the current evaluated on its field.
+- 32696-32699: Use the coefficient of the same pointed member in `ph:own-counterterm` despite possible sitewise changes of members.
+- 32706: Verify actual whole-core membership even when using the young-age fallback.
+- 32713-32714: Supply the weighted label sum and all-small-field action bound as inputs to OH's stability/floor implication.
+- 32719-32724: Supply the potential-norm bound and actual substitution room for insertion/response bootstrap; an ordinary bare-weight coefficient bound does not imply them.
+- 32725-32731: The finite-reference ET8--ET10 route requires the hypothetical common companion density; that comparison is unnecessary when an infinite reference already shares D1's all-state normalizer.
+- 32761-32766: Supply the actual GS1--GS3 geometry and counts; ST6 alone does not imply them.
+- 32767-32771: The D2 derivation requires D1 in actual geometry and G1.
+- 32772-32778: The H1 extension theorem uses D2; its QF proof does not establish D1 or extend tests across diagonals.
+- 32779-32786: Supply the ordinary repeated-source input for UI and PD; graded moment bounds alone do not suffice.
+- 32798-32801: Supply TU10 with vanishing u(d), uniformly over the full TU9 shape class, positions and approximating states.
+- 32802-32806: Enforce the explicit positive-shape mass lower bound as well as Lipschitz and separation bounds; F2--F3 must use the same quantifiers.
+- 32811-32815: Apply derived G2 only under D1 in actual rooted geometry, G1, the exact cube cone and the ultraviolet law, for states/components carrying that interface.
+- 32816-32817: Give arbitrary growing cubic-torus limits their own mirror/cone justification.
+- 32817-32818: Supply typed Ward and matched-cutoff estimates for the stronger retained routes using them.
+- 32825-32826: A finite periodic lift is not asserted to be an infinite-volume DLR measure before the limit.
+- 32829-32836: Use a common support ball of radius R<ℓ/4 for periodization to preserve distances and norms; separate small balls do not suffice.
+- 32840-32842: Unrestricted DLR extremality is not identified here with extremality inside the translation-invariant class.
+- 32849-32853: The phase coordinates, law and evaluations must come from the conditional phase theorem, rather than being assumed continuum data.
+- 32854-32858: Construct the corresponding continuous groups before using their generators H and P.
+- 32859-32862: Signed-permutation W_4 invariance alone does not supply O(4) invariance.
+- 32871-32875: Keep outlined supporting arguments distinct from the outstanding obligations whose exact forms are in their statements and the dependency catalogue.
+- 32893-32895, 32911: Task 2.8 remains listed for proof despite its ordinary history/source outline.
+- 32893-32895, 32911: Task 2.10 remains listed for proof despite its ordinary history/source outline.
+- 32893-32895, 32911: Task 2.13 remains listed for proof despite its ordinary history/source outline.
+- 32893-32895, 32913: Task 4.11 remains listed for proof despite its ordinary history/source outline.
+- 32895-32898, 32917: Task 7.5 remains listed for proof despite its extraction/transfer development.
+- 32895-32898, 32917: Task 7.6 remains listed for proof despite its extraction/transfer development.
+- 32895-32898, 32917: Task 7a.1.8 remains listed for proof despite its extraction/transfer development.
+- 32898-32899, 32911: Stronger aged comparison 2.12 remains a separate obligation.
+- 32902-32904, 32915: Prove Bałaban's Theorem 8, which he states without proof; distinguish it from cited Proposition 8 of B85e.
+- 32909: Package A task 1a.3.2 remains listed for proof.
+- 32909: Package A task 1a.3.5 remains listed for proof.
+- 32919: Package G task 9.1 remains listed for proof.
+- 32919: Package G task 9.10 remains listed for proof.
+- 32919: Package G task 9.11 remains listed for proof.
+- 32919: Package G task 9.3 remains listed for proof.
+- 32919: Package G task 9.7 remains listed for proof.
+- 32921: Package A--H task 1.6 remains listed for proof; the other retained identifier, 1.2, is expressly classified as cited at 32904-32906.
+- 32929-32930: Read every grouped reference with the hypotheses and scope of its stated result.

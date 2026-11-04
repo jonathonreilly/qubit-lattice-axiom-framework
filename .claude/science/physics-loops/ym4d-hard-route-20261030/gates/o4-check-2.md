@@ -3,7 +3,7 @@ lease_until: 2026-11-04T18:00Z
 
 # o4-check-2: check of `library/ak-port.md`, `library/tu-port.md`, `library/ac-port.md`, `library/wightman.md`
 
-Queue row 207. Started 2026-11-04T06:00Z. Sections are written as the check proceeds.
+Queue row 207. Started 2026-11-04T06:00Z, finished FINISHTIME. Verdicts: all four notes ADVANCE, first failing step none (Sections 1-4); moved nodes and bookkeeping in Section 5.
 
 Provenance: Claude Opus 5.5 (claude-opus-5-5), effort max, Mac mini worker, at branch commit `e3e771590`. One reading by one other model of four Codex notes. This is not an audit and grants no status.
 
@@ -42,7 +42,7 @@ Kind of result (FINISH item 9): a check of Codex's ports of proofs that the outl
 Defects, none of which breaks a statement:
 
 1. (14) and the text after it say "arbitrary real positive-half-plane configurations". The coefficients c̃_m are defined only at distinct points. So each configuration in a Gram family must have distinct points. The combined configuration (θx, y) is then distinct, because its two groups lie on opposite sides of the mirror. SA L29717 says "distinct points".
-2. The out-of-date pointer "D1 ... starts at C1/OH1" (Section 9) repeats the one `gates/bridge-check.md` item 5 notes. D1 itself stays open.
+2. The out-of-date pointer "D1 ... starts at C1/OH1" (Section 9) repeats the one `gates/bridge-check.md` Section 4 item 5 notes: C1 (P1) is recorded as proved and checked in `library/p2-floor.md`. D1 itself stays open.
 
 So S9 holds as an implication: holomorphic product kernels (3)-(5), norm removal of the smoothing (6)-(7), one glued kernel on U_n (8), the Gram representation (9)-(10), the band 4|m| ≤ 5n (11)-(12), boost positivity and the top kernel (14)-(15), and the cut inequality (16) with the empty tuple.
 
@@ -94,6 +94,90 @@ So S10 holds as an implication: for every pair of real labels the two-plate kern
 - **Section 6 (all angles, O(4), diagonal-flat): ADVANCE.** The angle-stepping by a finite cover is correct. Givens elimination with positive pivots leaves an upper triangular orthogonal matrix with diagonal (1, 1, 1, det) = I, so the plane rotations generate SO(4). Rotations act continuously on S_{Δ,n} and preserve flatness. With the density in `s4-s6.md` Section 6, invariance passes to the unique extension Σ_n. Restoring the mean c∫f commutes with rotations.
 - **Section 7 (dimension): correct.** The polygon and convexity steps are planar. The band constant 5 enters only through boundedness of the increments. The cone sum in (10) has three tangential coordinates, and the cut induction uses all four coordinates.
 
-No defect breaks a statement. One remark on wording only: Section 4 says "for small real z", but Section 5 uses (9) at every real tangential z = se_4. That is valid, because a tangential translation keeps both groups on their sides of the cut, as in SA (HC10).
+No defect found. Section 5 reads (9) only at small real s (s_* is chosen small), which is the range Section 4 proves.
 
 So S11 holds as an implication: every M(n) = 0, and the scalar hierarchy is O(4) invariant on separated compact C^1 tuples and on the diagonal-flat extension Σ_n of `s4-s6.md`.
+
+## 4. `library/wightman.md` (O11, the Wightman theory per component)
+
+**Verdict: ADVANCE as an implication from the per-component inputs it names. First failing step: none.** Checked line by line by Claude against Y3 L79749-81160 (Rec1-Rec4, IV-75-22 to IV-76-59) and SA L31533-31889 (the reconstruction hypotheses, RC1, "Phases and full rotational covariance"). The note follows Y3's direct reconstruction step for step, with e_3 → e_4 and SO^+(1,2) → SO^+(1,3). It does not use OS II's continuation theorem; OS II is credited for the method.
+
+- **Section 2 (Rec, point forms, (1)-(5)): ADVANCE.**
+  - Full cone: spatial rotations (from O(4)) conjugate the spectral measure, a countable dense set of directions gives E ≥ |n·q| off one null set, and continuity gives E ≥ |q|. Then |e^{-z_4E + iz·q}| ≤ e^{-d(z)E}. This is Y3 IV-75-50's first step.
+  - (2) is `pd-port.md` (7) with F, G above η (hence above η/4), and ‖[τ_{-η/4}F]‖ = ‖e^{-3ηH/4}[τ_{-η}F]‖ ≤ ‖[τ_{-η}F]‖. So (Rec4) holds with c_0 = 1/64 ≤ 1/2 and ℘ = 5.
+  - The centering paragraph is Y3 IV-75-50. The shift map commutes with θ, conjugation and translations, and the extra term c∫h·⟨[MF],[MG]⟩ is bounded by |c|η^{-5}‖h‖_1 times the pulled-down norms, since η ≤ 1.
+  - (4): I checked it in matrix elements. T(ae_4 + w)^* maps [F] to [τ_{(a+w_4)e_4 - w_sp}F], and one common translation by w gives σ(θτ_ηF̄·τ_wh·τ_ηG). The slab condition is |w_4| < c_0(η - η'). Both semigroup arguments are in the open tube exactly when |Re w_4| + |Im w_sp| < η - η'.
+  - The Montel step, the shift law, the adjoint and the bound in (5) are Y3 IV-75-27.
+- **Section 3 (one field on D_∞, (6)-(11)): ADVANCE.** I redid each identity.
+  - ‖A_l‖ ≤ C[1 + 2Γ(l-5)/Γ(l)] from min(s,s',1)^{-5} ≤ 1 + s^{-5} + s'^{-5}.
+  - R^a = Γ(a)^{-1}∫t^{a-1}e^{-t}T_t dt and the Beta integral give R^aA_lR^a = A_{l+a}. T_sA_lT_{s'} = R^lB(s,s')R^l follows from the shift law. So q_0(T_sψ, T_{s'}χ) = ⟨ψ, B(s,s')χ⟩.
+  - The commutator identity has the right sign: ∂_t q_0(e^{-itH}ψ', e^{-itH}χ') = i[q_0(H·,·) - q_0(·,H·)], since q_0 is antilinear in the first slot. Iterating l + j times with first vector R^lψ gives (10) with the binomial c_{l+j}(f).
+  - The domain step works with ψ = (1+H)^j1_{H≤N}φ(f)χ: then the left side of (10) is ‖ψ‖^2, so ‖ψ‖ ≤ c_{l+j}(f)‖(1+H)^{2l+j}χ‖. This gives (11) with l = 6.
+  - J = 2π^2∫_0^∞r^3(1+r^2)^{-3}dr = 2π^2·(1/4) = π^2/2.
+- **Section 4 (kernels, (12)-(14)): ADVANCE.**
+  - Padding independence and (13) are as in AK.
+  - I checked the induction: I_η(g_n)Ω = [τ_{η-t_n}h_n], and T_{s_{n-1}} then I_η(g_{n-1}) give [τ_{η-t_{n-1}}(h_{n-1}, h_n)]. Inserting B(η+t', η-t') = T_{η/2+t'}B(η/2,η/2)T_{η/2-t'} joins adjacent factors into T(y_{j+1} - y_j - ηe_4), which is (12) at margin η/2.
+  - The tilted tubes {d_u > 0} are convex, because u·Re z - |P_u^⊥Im z| is concave, and they contain the real parts of their points. So the glued 𝒮_n is single valued.
+  - The S^3 band density (2/π)√(1-s^2) ≤ 2/π gives Pr(|u·v| < a) ≤ 2a. With a = (2n^2)^{-1}, C(n,2)·2a < 1. So (14) holds with η = min(1, ρ/(4n^2)).
+  - The flat-test bound uses the multinomial Taylor remainder (‖x - x'‖_1)^N/N! with ‖x - x'‖_1 ≤ 2ρ and 2^{5n}/(5n)! ≤ e^2. The weight step uses 1 + |x|^2 ≤ 3(1+|y|^2) for |x - y| ≤ 1. Both are right, and ρ^{5n} cancels the kernel's ρ^{-5n}.
+- **Section 5 (boundary values, cyclicity, vacuum, (15)-(18)): ADVANCE.**
+  - (15) follows from q_f, (8) and (z^*)^* = z with (ιx)^* = -ιx. The tube condition is d(w' - se_4 - ιx) = d(w') - s ≥ 0.
+  - ι(iεα) = (iε𝛂, εα^0) has d = ε(α^0 - |𝛂|) > 0 for α ∈ V_+, so (16) holds.
+  - (17): ∂_ηF = iD_hF, because ∂_{t_j} = -i∂_{z_{j,4}}. The Taylor remainder with N = p + 1 has an integrable majorant. The constant in (17) uses η_0 ≤ 1.
+  - (18): the coefficients of D_h with h_j = 2j sum to n(n+1), and ∫(1+|x|^2)^{-3n} ≤ J^n.
+  - Cyclicity: the Fourier step turns real translations into positive-margin T(w) one factor at a time. Each adjoint is taken on D_∞. The non-ordered remainder is O(h) in L^1, and s_{2n} is bounded on the reflected supports. This is Y3 L80788-80865.
+  - Spectrum and vacuum: V(t,x) = ∫e^{i(tE + x·q)}dΠ, so p = (E, -q) ∈ V̄_+. Clustering of the component (cluster-port (19)), with σ_ξ(θF̄) equal to the conjugate of σ_ξ(F), gives 1_{H=0} = |Ω⟩⟨Ω|.
+- **Section 6 (Lorentz covariance, locality, (19)-(21)): ADVANCE.**
+  - The tube {d > 0} is ι(R^4 + iV_+), so Λ̂ preserves it. r_{is}(ιx) = ι(B(s)x), and d(r_{is}ζ) = ζ_4e^{-|s|} for real ζ with ζ_4 > 0. A strip |Re z| < σ_0 also stays in the tube, so the identity theorem carries invariance from small real angles to imaginary ones.
+  - Locality is Y3 IV-76-52. I recomputed (21): |P_u^⊥e_4| = sin θ. The slot j = k gives ≥ -η + 4η = 3η. Every other slot has Δh_j ≥ h_*, including j = k-1 and j = k+1, where Δh = h_* + (1-λ)/2. Since cos θ ≥ √3/2, those slots give ≥ ηh_*/2 - AηM = 3η. Then ∂_λI_g = ηI_{-iD'g}, and (17) bounds I_{D'g} uniformly in λ, so |I_g(1,η) - I_g(-1,η)| ≤ 2ηQ_g → 0.
+- **Section 7 (dimension): correct.** l = 6 > ℘ = 5, the weight power 3 (the power 2 fails in R^4), the S^3 band density, and SO^+(1,3).
+
+Defects, none of which breaks a statement:
+
+1. **Scope of the inputs, for the lead.** O11 reads O(4), the cone and (2) for one component σ_ξ, not for the averaged limit σ. SA L31799-31831 says this needs the angular chain run for each realized component, with the insertion bound and TU10 uniform in the approximating states. The checked notes allow this:
+   - `ui-port.md` is uniform over pairs (ρ_j, ν_j) of periodic states, and the components of `cluster-port.md` Section 8 are such limits, with common centering.
+   - `cluster-port.md` Section 8 passes the bounds, W_4 and both kinds of RP to each component, so cone-o6, PD, AK and AC apply to σ_ξ.
+   - TU10 must hold for the connected function of each σ_ξ. That needs TU10 in the state-uniform form of `tu10.md` Section 2.
+   So the skeleton's input for O11 is O9 (each σ_ξ has O2-O7, which reads S16 for every periodic state), as the O9 row of `t0-skeleton.md` Section 3 already says. The note's Section 1 list ("ac-port.md, Result") should be read that way.
+2. The pointer "rooted D1, beginning at C1/OH1" (Section 7) is out of date, as `gates/bridge-check.md` Section 4 item 5 notes. D1 itself stays open.
+
+So O11 holds as an implication: given O9's per-component inputs and the E0' extension (`growth-qf3.md`), each component carries a scalar Wightman theory. It has a separable Hilbert space, the dense invariant domain D_0, a Hermitian tempered field, a unitary Poincaré representation with spectrum in V̄_+, locality and a unique cyclic vacuum, and its Euclidean continuation is the tr F^2 hierarchy on separated and diagonal-flat tests.
+
+## 5. What moved, and bookkeeping for the lead
+
+| Note | Nodes | Verdict | Premises read |
+|---|---|---|---|
+| `ak-port.md` | S9 (rank 18) | ADVANCE, first failing step none | S8 (`pd-port.md` (6)-(10)); O2; O6 |
+| `tu-port.md` | S10 | ADVANCE, first failing step none | S9; O5; S16 (TU10) |
+| `ac-port.md` | S11 (rank 19), hence O7 | ADVANCE, first failing step none | S9; S10; O2; O6; `s4-s6.md` Section 6 |
+| `wightman.md` | O11 | ADVANCE, first failing step none | O9 per component (O2-O7 for each σ_ξ); E0' (`growth-qf3.md`); `pd-port.md` (7); `cluster-port.md` Sections 8-9 |
+
+This check moves the following (no other file edited here):
+
+1. `t0-skeleton.md` S9, S10, S11: "cited" becomes proved by Codex and checked line by line by Claude (this file), first failing step none. With `gates/o4-check-1.md` (S7, S8) and `gates/bridge-check.md` (O6), every link of the O(4) chain UI-PD-AK-TU-AC is now checked as an implication. O7's open premises are D1 (through S7), S16 (TU10) and E1 (the cutoff sequence). The lattice inputs (S1g and the rest) are checked.
+2. O11: proved by Codex, checked line by line by Claude, as an implication from O9's per-component inputs and E0'. The skeleton still calls O11 "corollary, not a clause" (its O11 row) and leaves it for an owner decision (Section 2, row 20). GOAL.md records that decision (owner, 2026-11-03: "Include it"), so O11 is a clause of T0.
+3. O11's inputs should read "O3, O5, O9", with O7 taken for each component through O9. SA L31799-31831 states the reason: a symmetry of a mixture need not hold for each component. Section 4, defect 1, gives the details.
+4. S16 (TU10): its consumer is the connected function of each component σ_ξ. So the producer must prove TU10 uniformly in the approximating periodic states, as `tu10.md` Section 2 and the skeleton's "F2 → TU10" item already state. A torus-only or averaged-state TU10 does not suffice for O9 or O11.
+5. tu-port Section 3 is shorter than SA (TU14)-(TU17). It bounds the spectral mass below L = 1/h, where the cone bounds |q|, and needs no dilation average. It closes no gap in their outline, so it is not a candidate for the Sussman-Alpoge repository under FINISH item 6.
+
+**Stays open.** The premises of this chain:
+
+- D1 (rank 10): S7, and hence S8-S11, O7 and O11, rest on it.
+- S16 (TU10), in its state-uniform form.
+- E1, which supplies the cutoff sequence that S4, S6 and the components read.
+
+## Result
+
+Kind: a check of Codex's ports of proofs that Sussman and Alpoge give in detail. These are SA AK1-AK50 (L28888-29823), TU1-TU29 and the two-point theorem (L29922-30500), HC1-HC13 and the all-orders theorem (L30508-30866), and YM3_I's direct scalar reconstruction (Y3 IV-75-22 to IV-76-59, L79749-81160). It also checks our own new text: the point-plate route in `ak-port.md` Section 3, the low-energy mass bound in `tu-port.md` Section 3, the imaginary-axis elimination of the critical modes in `tu-port.md` Section 4, and every d = 4 constant. Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, for every argument ported here; OS II (Osterwalder and Schrader, CMP 42, 1975) for the reconstruction method.
+
+`library/ak-port.md`, `library/tu-port.md`, `library/ac-port.md` and `library/wightman.md` were checked line by line by Claude. First failing step: none in any of the four. Each holds as an implication from its stated premises. I recounted every d = 4 change by hand:
+
+- the plate exponent 5 and the band 4|m| ≤ 5n;
+- the endpoint exponent 8 and the critical modes m = ±2, which need u(d) → 0;
+- the shape constants of the TU10 class (∫f ≥ (125/128)Ah^4, Lip f ≤ 70A/h, ϑ_* = 1/12000);
+- the increments in {0, 1, 2} and the six rotation planes;
+- the regularization l = 6, the weight power 3 with J = π^2/2, the S^3 band density, and SO^+(1,3).
+
+The defects are wording or scope only. `ak-port.md` (14) omits "distinct". Two notes carry an out-of-date D1 pointer. O11 must read O(4) and TU10 for each component (through O9), not for the averaged limit. None breaks a statement.
+
+Finished 2026-11-04T06:45Z.

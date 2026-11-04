@@ -35,3 +35,23 @@ The original pending wording was: "When a record forms, the share its qubit take
 A chosen conserved source can satisfy a Ward identity in a supplied model. That does not derive record conservation or identify the conserved functional. These remain open conditional choices. This entry does not certify adoption or an additional premise.
 
 Exact original wording and numerical records are preserved in `archive/record_flow_review_2026_10_18/MANIFEST.json`. Broader exclusion, uniqueness and physical-interpretation claims from that history are deferred rather than relabeled as theorems. No audit standing is assigned here.
+
+## Proposed axiom update: TOE working set (2026-11-04)
+
+The owner approved the TOE assembly skeleton (draft PR #10139, `TOE_ASSEMBLY.md` section 3) on 2026-11-04 and gave this direction in the session that wrote it: "im good with the skelleton proposal but for 'adopt' we put them in the proposed axiom update section until we have the full theory figured, then we move them into the real axioms as simply as possible."
+
+These entries are working premises for drafting the TOE parts. Like the rest of this register, they have zero premise weight. They do not change the minimal axioms, policy section 6 or `axiom_premise_nodes.json`. A part that uses an entry names it, for example "under PS-1". When the full theory is in place, the entries that are actually used go to the owner for approval of the exact axiom wording, in the simplest form that still does the work. Entries that no part needs are dropped, and entries that can be merged are merged. The labels PS-n are kept distinct from the historical CL aliases above.
+
+- **PS-1, update.** "There is one fixed update. It acts on the joint possibilities of all sites as a unitary map built from finitely many layers of nearest-neighbour gates, covariant under lattice translations and proper cubic rotations. A history is a sequence of updates; the update count orders it." The choice of law, the cube tick or D4 events, is open and is settled in part LW1.
+- **PS-2, menu independence.** "The probability of a possibility does not depend on which other possibilities are offered with it."
+- **PS-3, actuality and formation.** "One actual configuration exists at every tick. It moves by the support-respecting transport that changes the fewest modes, and among those has maximal entropy. Records never condition the odds. A record forms at a site when the site's actual value has been copied into at least two neighbouring sites."
+- **PS-4, initial condition.** "A history has a first tick, at which no site carries a record."
+- **PS-6, local frames.** "The internal frame of each site's possibilities is local. Each nearest-neighbour link carries a register that transports frames between its two sites. The update is unchanged when the frame at one site and the registers on its links are changed together."
+- **PS-7, vacuum.** "The vacuum is the half-filled state of the update's fermion modes."
+- **PS-11, realized frequencies.** "A statement that the law gives probability one holds in the realized history."
+
+Not in the working set:
+- PS-5, the five-mode site content, is a fallback only, used if building on cells of qubits fails at a named step.
+- PS-8, mirror gapping, is a law to test inside CH1.
+- PS-9, the gravity response law, is a law to test inside GR1/GR2.
+- PS-10, lattice spacing equal to the Planck length, is not adopted.

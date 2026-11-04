@@ -5,9 +5,9 @@ lease_until: 2026-11-04T12:52Z
 
 Provenance: Anthropic Claude Opus 5.5 (`claude-opus-5-5`), effort max, Mac mini worker, fresh session; checkout `6d040d5ee`. Sussman–Alpoge outline `YM4_sketch_500.tex` at `31a47c543775` fetched by URL into a private scratch folder (sha1 `107abaef…8348885`, 32992 lines). Balaban CMP 109 read from `~/ym4d-papers/cmp109.txt`, pp. 276–277 and 284–285. Research text, not an audit; it grants no status. Proved by Claude, not yet checked by the other model.
 
-Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, for the pointed-window theorem (SA 13426–13866, (PW1)–(PW15)), the pair class (R4)–(R6) (SA 5650–5730) and the box package (SA 15821–15826). Tadeusz Balaban for the explicit Hölder hypothesis on the substituted field (CMP 109, (3.31)–(3.32), p. 276–277, used for (4.17)–(4.18), p. 285) and for the averaging bounds of CMP 98 (rebuilt in `a1-balaban.md` 3.5, 7.1). OpenAI Codex for `bx.md`, `wf7-bf.md`, `dec-field.md`.
+Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, for the pointed-window theorem (SA 13426–13866, (PW1)–(PW15)), the pair class (R4)–(R6) (SA 5650–5730) and the box package (SA 15821–15826). Tadeusz Balaban for the explicit Hölder hypothesis on the substituted field (CMP 109, (3.31)–(3.32), p. 276–277, used for (4.17)–(4.18), p. 285) and for the averaging bounds of CMP 98 (rebuilt in `a1-balaban.md` 3.5, 7.1). OpenAI Codex for `bx.md`, `wf7-bf.md`, `dec-field.md`, `pw-bridge.md` (whose W^{2,8} bounds Section 10 reuses) and `nl-r9.md`.
 
-No numeric job was run. Every step below is by hand.
+No numeric job was run: none was needed, and memory free was 39–48 percent at the checks, below the 50 percent floor. Every step below is by hand.
 
 ## 1. Check of `bx.md` (Codex), line by line
 
@@ -96,6 +96,7 @@ So in the window, with h := (η_k/η)(t+νζ)𝐇_k and |t+νζ|δ_k ≤ (s_k + 
 \[
  \xi_y|h|+\xi_y^2|\nabla_{\mathbf U}h|+\xi_y^{2+\alpha_H}[\nabla_{\mathbf U}h]_{\alpha_H,y}\le C(s_k+c_\nu)\alpha_k\quad\text{at top-layer points.}\tag{3.1}
 \]
+Here ζ is a window cutoff sampling a fixed smooth profile at the window scale Mξ_k, so ξ_k|∇ζ| and ξ_k^{1+α}[∇ζ]_α are bounded. The product rule for h = (η_k/η)(t+νζ)𝐇_k then adds only terms of the same size to (3.1).
 
 **Lemma 1 (averages of Hölder fields are Hölder, uniformly in depth).** Work in level-j units, bare mesh η_j = L^{−j}. Let Λ be a cube, and w a complex su(2)-valued bare potential on the bonds of Λ with
 \[
@@ -264,7 +265,7 @@ Hence (I_{k+1}) holds. No member is ever evaluated at a pair that violates (H). 
 
 ## 9. Consumers: what still reads the smaller domain
 
-Each item below was checked against the cited text. "Kept" means that the statement holds verbatim on U^H, because it is quantified over all core inputs or it is a statement about datum maps.
+Each verdict rests on the quantifiers of the cited statement. I re-read the statements of `wf-c.md` Sections 2.3–2.5, 3 and 4, `wf7-bf.md` Sections 1–4, and `b2-extract.md` Section 7. For the other rows only the statement was read, not the proof. "Kept" means that the statement holds verbatim on U^H, because it is quantified over all core inputs or it is a statement about datum maps and representatives. No row evaluates a member outside an inner Landau representative: `wf-c.md` 3 records that the box-first route reads only Proposition N (b), with the inner triple over **1**.
 
 | consumer | what it reads | verdict |
 |---|---|---|
@@ -302,7 +303,7 @@ So the kernel difference has L^{8/7} norm at most C(s^{4/7})^{7/8} = Cs^{1/2}. F
 **Proposition PH ([PW-H] from pw-bridge's inputs; implication).** Assume [Energy], [Coefficients], [Walk geometry] and [Parameter geometry] of `pw-bridge.md` Section 6, with its fixed choices and (6.5). Then H(s), H_1(s) and 𝔊(s) satisfy [PW-H] with exponent α_H ≤ 1/2 and constant B = Ce^{16κ̄}, for all weights of rate at most τ_L/16, on the whole polydisc |s_Δ| < e^{κ̄}.
 
 *Proof.*
-- *Bare outputs.* At outputs where the local scale m_y is at most a fixed number of mesh steps, `pw-bridge.md` already uses direct point evaluation. The Hölder quotient at separations s ≥ η is at most 2 sup|∇A|·(m_y/η)^α(s/m_y)^α, and m_y/η is bounded.
+- *Bare outputs.* At outputs where the local scale m_y is at most a fixed number of mesh steps, `pw-bridge.md` already uses direct point evaluation. For separations s ≥ η, m_y^{2+α}|∇A(x) − ∇A(x')|/s^α ≤ 2m_y² sup|∇A|·(m_y/η)^α, and m_y/η is bounded.
 - *Other outputs.* In (6.6), apply Lemma M, in the units x/m_y of (5.2)–(5.3), to each first difference of m_yA on the fixed pillar neighbourhood of Lemma R. Since m_y²|∇A| scales like a first difference of m_yA in x/m units, this gives m_y^{2+1/2}[∇A]_{1/2, s≤m_y} ≤ C‖Ψ‖_{𝓡,y}. Then (6.2) bounds the right side by the same exponential column bound as (6.6). For α ≤ 1/2 and s ≤ m_y, (s/m_y)^{1/2} ≤ (s/m_y)^α.
 - *Covariant comparison.* The class gauge's potential and its first differences are bounded, as in the last line of Lemma R's proof. So the covariant difference and the straight-path comparison change the quotient only by bounded multiplications: |[w, A](x) − [w, A](x')| ≤ (|∇w||A| + |w||∇A|)s ≤ (…)s^α for s ≤ m_y, and a straight transport over length s differs from 1 by at most Cs|w|.
 - *𝔊.* The same replacement in (7.7)–(7.8) gives the 𝔊 column bound with the Hölder member. Every arrow of (7.6) is already bounded in 𝓡, and only the final embedding changes.
@@ -316,3 +317,39 @@ So the kernel difference has L^{8/7} norm at most C(s^{4/7})^{7/8} = Cs^{1/2}. F
 - σ becomes L^{−(p−1−j)}.
 
 The proof is otherwise unchanged, and so is Lemma 3. This is the sentence "its affine and Hölder sizes are those of a level-(p−1) pair. This costs fixed powers of L" in `cond-c.md`, now with its input (H) named.
+
+## Result
+
+**Check of `bx.md` (Codex): ADVANCE.** Checked line by line by Claude, first failing step none. (BX) as `b2-extract.md` Section 7 states it is false on the full admitted half-radius core. The input (1) is admitted, and its box datum (4) violates the affine remainder bound for every uniform constant. The first failing input is SA (PW6) for the complete field. This refutes neither SA's theorem given (PW6) nor B4's (19).
+
+**Repair adopted: the Hölder clause (H)** (Section 2.2). The step's pair must have, in the real gauge of (R4), Hölder-continuous first differences of its real and complex potentials at its own scale. This is Balaban's CMP 109 (3.31) placed in the core. Codex's input violates (H) for all large k, in every gauge and splitting (Section 2.3).
+
+**Proved by Claude, not yet checked by the other model:**
+- Lemma 0: the response's Hölder member, weighted, from [PW-H].
+- Lemma 1: averages of Hölder fields are Hölder, uniformly in depth.
+- Lemma 2: the window datum satisfies (PW6) on the whole ν-disc and fine-parameter polydisc, for complex inputs.
+- Lemma 3: SA's axial expansion (PW7)–(PW8), rebuilt with remainder |x−z|^{1+α}.
+- Lemma 4: the box tower reproduces affine data exactly, up to a gauge direction. Lemma 4': the torus map agrees up to e^{−cR'}.
+- **Theorem BX'**: (BX) on U^H_{k+1}, datum, pair, Hessian and node-gauge clauses, with its complex extension. It reads as an implication from [T4], [AV], [9.3], [PW], [NL] and (H).
+- Lemma 5, (A2-H), (ER8u)-H, Proposition I and Rule (C): the repaired core is preserved under the step.
+- Lemma M and Proposition PH: [PW-H] follows from [PW]'s own four inputs in `pw-bridge.md`, for α_H ≤ 1/2. So the repair adds no new open premise.
+
+**Consumers.** WF-c, box first, Rule W (with the layered case W2), Proposition W, B4's (19) and `ti-2.md` read the smaller domain (Section 9). The changes are (A2-H), (ER8u)-H and Rule (C). Large-field consumers were not checked against (H).
+
+**What changes elsewhere (evidence for the lead):**
+- `b2-extract.md`: replace (BX) by Theorem BX' and "every admitted complex core" by U^H.
+- `wf-c.md` Theorem A: add (A2-H).
+- `o1-decoupled.md` 4.5: use max(C_𝓗, C_{𝓗H}).
+- `wf7-bf.md` WF11–WF12: measure in the Hölder-augmented norm (Rule (C)).
+- Fix α_H ∈ (0, 1/2].
+- A possible issue for the Sussman–Alpoge repository, only after Codex checks this note and with the owner approving the text: SA asserts (PW6) as "the local regularity conclusion of A1–A3" (SA 13560–13567), and states WF15 "on every specified complex core" (SA 16328). On the core (R4)–(R6), `bx.md`'s input violates (PW6). A Hölder clause like (H) repairs this.
+
+**Still open on (19), hardest first:**
+1. (ER8u) = (ER7), unchanged.
+2. (P20) through (TI): `ti-2.md`, check pending in row 212.
+3. [T4]'s premises P81, P82° and M1, which reduce to the flat package at U_0 = 1.
+4. The four inputs of `pw-bridge.md` and the inputs of `nl-r9.md`.
+5. (UR) and (YA), cited.
+6. Evaluation points of the large-field consumers, to be checked against (H).
+
+This note needs one check by Codex.

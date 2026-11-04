@@ -22,13 +22,13 @@ Checked line by line by Claude. **First failing step: none.**
 | `tc.md` §4: Hessian kernel of R_{uv,z}, uniform moments; C⁻ has the same Hessians | ADVANCE |
 | `tc.md` §4: C⁰ completes (TC) for an input E | ADVANCE, conditional on Theorem UR's inputs for E: (FG), (ER8u), (Cl), the Landau bound (5), (En) |
 | `tc.md` §4 (6)–(8): C⁻ fails the uniform member bound | ADVANCE |
-| `b4-typed.md` §3 with (TC) taken for C⁰: T(H_z) = 0, DH_z(0) = 0, (PW15) per domain, (2), window sum and tail, young ages, (3), the joint potential ball | ADVANCE, as an implication from 𝓘, (TC) for C⁰, and SA (PW13)–(PW18), (WF4), (WF7), (WF13) as cited |
+| `b4-typed.md` §3 with (TC) taken for C⁰: T(H_z) = 0, DH_z(0) = 0, (PW15) per domain, (2), window sum and tail, young ages, (3), the joint potential ball | ADVANCE, as an implication from 𝓘, Theorem UR's inputs for E, (TC) for C⁰, and SA (PW13)–(PW18), (WF4), (WF7), (WF13) as cited |
 | `b4-typed.md` §4: its use of SA 5215–5316, and (7) | ADVANCE. It states the capacity criterion faithfully; I redid (7) |
 | Reader SA 5060 | accepts C⁰ |
 | Reader SA 5066–5082 | accepts C⁰, given `b4-typed.md` §3's inputs |
 | Reader SA 6486–6526 | accepts C⁰, given (AR) |
 | Reader SA 22879–22918 | does not read the tensor insertion. It reads only the scalar term b_{k+1}(ζ)A, and C⁰[b·1] is exactly SA's tent b·A_{j,z} |
-| Further readers found by grep: SA 4021–4023, 5150–5158, 5455–5460 | accept C⁰ as far as the outline states them. C⁰ meets the direct-channel bound and is dominated by the Wilson tent at real fields (Remark Z, §5); C⁻ meets neither uniformly in j |
+| Further readers found by grep: SA 4020–4022, 5156, 5459, and the Ward route 7010–7014 | accept C⁰ as far as the outline states them. C⁰ meets the direct-channel bound and is dominated by the Wilson tent at real fields (Remark Z, §5); C⁻ meets neither uniformly in j |
 
 So C⁰ can be adopted as our prescribed tensor insertion. No reader in the outline rejects it. What stays open is unchanged by this check: the inputs of Theorem UR for each typed E (above all (FG) and (ER8u) = (ER7)), the box package (BX), and the zone and joint inputs of `b4-typed.md` §4 (history reserve, the formation bound (5), the common capacity allocation).
 
@@ -38,7 +38,7 @@ Notation of `tc.md`: η = L^{−j} = 1/N₀, a = α_j, chart U_b = e^{iηA_b}, �
 
 **Lemma S (support identity; proved here by hand).** For each orientation u, the u-plaquettes with h_z(p) > 0 are exactly the leaves W_{u,r}(x) of the sites x with w_z(x) > 0.
 
-*Proof.* (⊇) A leaf at x has barycentre p̄ = x + η(s_μe_μ + s_νe_ν)/2. In the two plane directions |p̄ − z| ≤ |x − z| + η/2 ≤ 1 − η/2. In the other two, p̄_r = x_r. (⊆) In a plane direction p̄_μ − z_μ = (k + ½)η with |k + ½| < N₀. The corner coordinate nearer to z has modulus |k + ½|η − η/2 < 1. So the corner of p nearest z has w_z > 0, and p is one of its four leaves. ∎
+*Proof.* (⊇) A leaf at x has barycentre p̄ = x + η(s_μe_μ + s_νe_ν)/2. In the two plane directions |p̄ − z| ≤ |x − z| + η/2 ≤ 1 − η/2. In the other two, p̄_r = x_r. (⊆) In a plane direction p̄_μ − z_μ = (k + ½)η with |k + ½| < N₀. The corner coordinate nearer to z has modulus |k + ½|η − η/2 < 1. In the other two directions the corner coordinates equal p̄_r. So the corner of p nearest z has w_z > 0, and p is one of its four leaves. ∎
 
 So (AR) (`b2-extract.md` §2, stated "for each bare bond b in the support of h_z") and the Landau first-difference bound (SA 13325–13330, stated for h_z(p) > 0) cover every bond and plaquette that R_{uv,z} reads. The box of (7) also contains every plaquette of A_{j,z}. `tc.md` uses both facts without stating them; they hold.
 
@@ -61,7 +61,7 @@ Two consistency checks pass. (i) The jet of any member with (D), (C), (G), (Mo) 
 The section transposes Proposition W (`b2-extract.md` §7) from G̃ = G − b_jA_{j,z} to H_z = E_z − C⁰[T_{j,z}(E)] − (vacuum). I redid each step of that proof with this replacement.
 
 - *Small domains, linear terms.* They vanish domain by domain, by constant colour invariance. For C⁰ this is direct: DC⁰(1) = 0. The commutator argument of `b4-typed.md` line 91 is correct.
-- *Quadratic terms at ℓ_z.* (P20) is replaced by T(H_z) = 0, from linearity of T and (4). Then ½D²(H_z∘P_j)(0)[ℓ, ℓ] = ½ Σ T(H_z)_{uv}⟨F_u, F_v⟩ = 0 for every affine ℓ. This includes the complex affine part of the box pair (WF4), since both sides are polynomials in the coefficients of ℓ. C⁰ has one fixed domain, so its quadratic term is at most C‖T(E)‖|F|² ≤ Cgα_j^{−2}(α_kσ²)², the same form as a large-domain term.
+- *Quadratic terms at ℓ_z.* (P20) is replaced by T(H_z) = 0, from linearity of T and (4). Then ½D²(H_z∘P_j)(0)[ℓ, ℓ] = ½ Σ T(H_z)_{uv}⟨F_u, F_v⟩ = 0 for every affine ℓ. This includes the complex affine part of the box pair (WF4), since both sides are polynomials in the coefficients of ℓ. C⁰[T(E)] lives on one fixed domain X_z, which enters this sum like any other domain. Its quadratic term is at most C‖T(E)‖|F|² ≤ Cgα_j^{−2}(α_kσ²)², the large-domain form.
 - *Cross and error terms.* They read the moments of K_{H_z}. The third clause of (1) bounds these by Cgα_j^{−2}.
 - *Cubic terms.* Cauchy on the ball of radius cα_j needs |C⁰[T(E)]| ≤ Cg there. The ball lies in the core by (ER8u), and (5) with ER13 bounds C⁰[T(E)] on the whole core.
 - *Large domains and young ages.* (YA) for the counter-insertion is again the whole-core bound (5).
@@ -108,3 +108,35 @@ Yes. I read every line of the three passages in the row. A grep for "counter-ins
 *Proof.* (Z1) is the proof of (5). For (Z2), write W = cos θ + i sin θ (n·σ). Then X = (W − W^{−1})/(2i) = sin θ (n·σ), and ‖X‖² = sin²θ ≤ 2(1 − cos θ) = 2a(W). By Cauchy–Schwarz, ‖Q_u(x)‖² ≤ ¼ Σ_r ‖X_{u,r}‖² ≤ ½ Σ_r a(W_{u,r}(x)). Hence |½ tr(Q_uQ_v)| ≤ ½(‖Q_u‖² + ‖Q_v‖²) ≤ ¼ Σ_r [a(W_{u,r}(x)) + a(W_{v,r}(x))]. Each u-plaquette is a leaf of its four corners, and a(W) depends neither on the base point nor on the orientation. If h_z(p) > 0, each shifted coordinate s of p̄ − z has |s| ≤ 1 − η/2. The tent is concave on [−1, 1], so τ(s − η/2) + τ(s + η/2) ≤ 2τ(s). Hence the corner sum of w_z is at most 4h_z(p). If h_z(p) = 0, the corner sum is zero, by Lemma S. So Σ_x w_z(x) Σ_r a(W_{u,r}(x)) ≤ 4A_{u,z}(U), and |R_{uv,z}| ≤ A_{u,z} + A_{v,z}. Summing with |c_{uv}|, and using symmetry of c, gives (Z2). ∎
 
 C⁻ fails both bounds uniformly in j. At the real regular pair P_j of (7), C⁻[c_*](P_j) ≥ jε⁴α_j²/16 by (8). Also A_{j,z}(P_j) ≤ ε²α_j², since 2(1 − cos s) ≤ s². So the ratio to the tent is at least jε²/16. These readers therefore separate C⁰ from C⁻, and they accept C⁰ as far as the outline states them. The formation bound for actual histories (`b4-typed.md` (5)) stays open, as it does for the Wilson weight.
+
+**The Ward route (SA 7010–7014).** "One marginal operator remains in 𝔘: a traceless diagonal anisotropy of Wilson's weight. … Put the weight 1+𝖾_{π(p)} on each a_p." On diagonal c, C⁰[c] = Σ_u c_{uu}A_{u,z} is exactly this plane-weighted tent. So this reader also accepts C⁰. The outline does not use this route for rotations: "Rotation invariance in Theorem 0' (1) is obtained along a different route, without any Ward identity (10b), and does not depend on c₁" (7014).
+
+## 6. Defects
+
+None breaks a statement. Three small notes for the owner of the notes:
+
+1. `tc.md` §4 uses (AR) and the Landau bound on the clover leaves, while both inputs are stated on plaquettes with h_z(p) > 0. Lemma S (§2) shows the two sets are equal. The note should state it, since it is why the retained inputs suffice.
+2. `tc.md` line 149 ("their responses differ by a gradient") should cite `ur-gauge.md` Lemma 2, which proves it.
+3. If the lead adopts C⁰, the "first missing input: (TC)" of `b4-typed.md`'s Result and of row 219 becomes: (TC) holds for C⁰, given Theorem UR's inputs for each typed E.
+
+## 7. Scope note for the lead (How we work, item 0)
+
+The typed tests may not be on T0's path. This is a reading of the outline, not a proof; the lead should confirm it.
+
+- Theorem 0 is subsequential: the correlations "have nontrivial volume-first subsequential continuum limits" (SA 67–69).
+- "Weighted and matched-run comparisons and typed Ward estimates are required only for the stronger statements invoking them" (SA 3779–3780).
+- The angular proof of G2, which our O7 follows, "assumes neither typed Ward counter-insertions nor vanishing distant-shell flux" (SA 4469–4470).
+- "Subsequential separated-correlation compactness follows from its own cutoff- and volume-uniform source bounds … their volume-free proof can use undifferentiated age-resolved rarity without proving the differentiated zone estimates above. Similarly, tuning at one fixed cutoff can follow from its own holomorphic slope and target-crossing estimates" (SA 5115).
+- The typed tests serve "the summable matched-cutoff comparison and the resulting whole-sequence tuned convergence" and "the typed tangent contractions, scale-uniform memory estimates, and differentiated anisotropy method for rotations" (SA 5119).
+
+A grep of `library/` and `parts/` finds the typed potential, zone and joint tests only in the B4 notes, `tc.md` and `sa-ledger.md`. The skeleton lists B4 as an input of D1, E1 and C4. SA 5115 says their outline counterparts (source bounds, compactness, tuning at one cutoff) do not need the finer tests. If no T0 node reads the typed tests, then full B4's typed part (rows 219, 227, 228) belongs to the later extension, not to T0. In that case its open inputs ((FG) and (ER8u) for typed E, (BX), the zone formation bound, the capacity allocation) should not get T0 lanes.
+
+## Result
+
+Kind (FINISH item 9): check of our own text (`tc.md`, `b4-typed.md`, both by Codex), plus a reading of the outline's readers. No correction of the outline.
+
+- **`tc.md` §§3–4: ADVANCE**, checked line by line by Claude, first failing step none. C⁰ is linear, gauge invariant, holomorphic on the whole core, filed on one cube, and covariant. It has T(C⁰[c]) = c on all 21 components, ‖C⁰[c]‖ ≤ C‖c‖α_j² and uniform Hessian moments. So it satisfies (TC) for every typed E that meets Theorem UR's inputs. C⁻ has the same jets and Hessians and fails the member bound by the factor j (8). So the normalisation does not fix the family; C⁰ is an explicit choice that works.
+- **`b4-typed.md` §3 with (TC) taken for C⁰: ADVANCE** as an implication. It is Proposition W with the tensor counter-insertion in place of the scalar one, and SA's own proof of (PW15) covers that replacement. (3), the typed potential test at ϰ_k = s_k, holds from 𝓘, Theorem UR's inputs for E, and SA's cited window estimates.
+- **`b4-typed.md` §4: ADVANCE.** It states SA 5215–5316 faithfully, and (7) is correct. It proves none of the zone or joint hypotheses.
+- **Readers:** SA 5060, 5066–5082 and 6486–6526 accept C⁰ (the second given §3's inputs, the third given (AR)). SA 22879–22918 reads only the scalar term b_{k+1}(ζ)A, and C⁰[b·1] is SA's tent. The zone readers (SA 5156, 5459) and the Ward route (SA 7010–7012) accept C⁰ as far as the outline states them. By Remark Z (proved by Claude, not yet checked by the other model), C⁰ obeys SA's direct-channel bound and is dominated by the Wilson tent at real fields; C⁻ does neither uniformly in j.
+- **Open, unchanged:** (FG) and (ER8u) = (ER7) for each typed E; (BX); the history reserve, the formation bound (5) and the capacity allocation of `b4-typed.md` §4. Full B4 is still not proved. §7 asks whether its typed part is on T0's path at all.

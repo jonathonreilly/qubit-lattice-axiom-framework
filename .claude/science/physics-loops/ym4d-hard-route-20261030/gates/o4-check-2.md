@@ -72,3 +72,28 @@ So S9 holds as an implication: holomorphic product kernels (3)-(5), norm removal
 No defect breaks a statement. TU10 is the outline's (TU9)-(TU10) with the same class and ϑ_*, for the connected S_2^T of `library/tu10.md` Section 2. It stays an open premise.
 
 So S10 holds as an implication: for every pair of real labels the two-plate kernel G_{φ,ψ} is radial, so M(2) = 0 in AK's notation.
+
+## 3. `library/ac-port.md` (S11, the last link of O7)
+
+**Verdict: ADVANCE as an implication from S9 (`ak-port.md` (12)-(16)), S10 (`tu-port.md`), O2, O6 and the diagonal-flat extension of `s4-s6.md` Section 6. First failing step: none.** Checked line by line by Claude against SA L30508-30866 (HC1-HC13 and the all-orders theorem) and Y3 IV-37-27 (Y3 L76854-76912).
+
+- **Section 1 (interface, (1)-(3)): ADVANCE.** (1) is AK (11)-(13), (2) is AK (16) with S10's b_2 = 0, and (3) is AK (15). Labels in C_c^∞ give the same b_n as AK's C_c^1 or L^1 labels, by AK Section 9.
+- **Section 2 (polygon divisibility, (4)-(6)): ADVANCE.** I redid the reduction.
+  - (4): rotation through π/k permutes equally labelled vertices, and the phase is e^{-4πib_{2k}/k}. This differs from one exactly when k does not divide 2b_{2k}.
+  - (5): the diagonal configuration (θ_ℓX, X) with X = Q ∪ A is a distinct completion of S, so it is zero. Then (3) kills the row. The free points (θ_ℓA and B) vary over a nonempty open subset of a connected domain, so real analyticity of c̃ releases both positions and labels.
+  - The reflection i ↦ c - i (mod 2k) with c odd fixes no vertex, and its axis is an edge bisector. For j even (c = j - 1) and j odd (c = j, vertex j added), Q = {0, ..., ⌈j/2⌉ - 1} lies strictly on one side. I checked the angles: the arc spans at most π, including j = k for odd k, where vertex k is antipodal to vertex 0. Vertex j need not be in S, because it receives its label from the reflection.
+  - Iteration j → ⌈j/2⌉ reaches one point. Translation and the arbitrary choice of φ then give H ≡ 0, which contradicts b_{2k} > 0.
+- **Section 3 (discrete convexity, (7)-(8)): ADVANCE.** The increments d_k are nondecreasing integers in {0, 1, 2}, because a_k ≤ 5k/2. So eventually a_k = dk - D. Divisibility gives k | 2D for all large k, so D = 0 and a_k = kb_2. The empty-tuple cut gives 2b_n ≤ b_{2n} = nb_2. This is SA (HC7)-(HC9). Y3 IV-37-27 instead bounds odd n by the split a = ⌊n/2⌋; both are correct.
+- **Section 4 (local translations, (9)-(10)): ADVANCE.** θ_jτ_{-ae_j}θ_j = τ_{ae_j}, so ⟨Φ, e^{-tH_j}U_wΨ⟩ = σ(F_-·τ_{(t-d)e_j + w}F_+). That is (9) with t = d + z_j. The modulus of the spectral multiplier is e^{-(d + v_jRe s)E - Im s(v_∥·p)} ≤ e^{-ηE}, by the cube cone in the coordinate-j picture (O6 transported by O2). The derivative bound L^q q! ε^{-q} gives norm convergence of the power series for L|h| < ε.
+- **Section 5 (exceptional support, (11)-(12)): ADVANCE.** I checked each step of the induction.
+  - Base case: on product boxes that keep both strict time orders, the plates are represented by AK (7). The kernel there is c̃_0, which is invariant under every real rotation once b_n = 0. Fourier tensor approximation converges in every C^r, since the shell sum Σ j^{D+r-1-N} is finite for N > D + r.
+  - Every tied pair is separated by a cut in a coordinate μ ≠ 4. This holds because each cut keeps its partition in both frames.
+  - Translating the A side by se_4 has slope ±1 in the original frame and ±cos u in the rotated frame, with cos u > 1/2 for |u| < π/3. So cross ties disappear for small s ≠ 0, and internal ties of nearby x are among those of the base point. Hence q ≤ q_0 - 1 on V × I.
+  - Holomorphy in s: the first term uses v = e_4, tangential to the cut, with η = d - |Im s|. The second uses v = R_ue_4 = (cos u)e_4 + (sin u)e_1. If μ = 1 it has normal part s sin u, which is harmless for small |s|. The note's "shrink the segment if needed" covers this. The identity theorem then carries zero from I to s = 0.
+  - Termination: q ≤ n(n-1).
+- **Section 6 (all angles, O(4), diagonal-flat): ADVANCE.** The angle-stepping by a finite cover is correct. Givens elimination with positive pivots leaves an upper triangular orthogonal matrix with diagonal (1, 1, 1, det) = I, so the plane rotations generate SO(4). Rotations act continuously on S_{Δ,n} and preserve flatness. With the density in `s4-s6.md` Section 6, invariance passes to the unique extension Σ_n. Restoring the mean c∫f commutes with rotations.
+- **Section 7 (dimension): correct.** The polygon and convexity steps are planar. The band constant 5 enters only through boundedness of the increments. The cone sum in (10) has three tangential coordinates, and the cut induction uses all four coordinates.
+
+No defect breaks a statement. One remark on wording only: Section 4 says "for small real z", but Section 5 uses (9) at every real tangential z = se_4. That is valid, because a tangential translation keeps both groups on their sides of the cut, as in SA (HC10).
+
+So S11 holds as an implication: every M(n) = 0, and the scalar hierarchy is O(4) invariant on separated compact C^1 tuples and on the diagonal-flat extension Σ_n of `s4-s6.md`.

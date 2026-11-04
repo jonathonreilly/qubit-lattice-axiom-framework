@@ -45,7 +45,7 @@ Two repairs were proposed: restrict the step's input to scale-(k+1) critical pai
 
 ### 2.2 Definition
 
-Fix the exponent α_H ∈ (0,1) of (WF1). For a bond field f on a cube D (fixed gauge, ordinary lattice differences), put [f]_{α,D} := sup |f_•(x) − f_•(x')| / |x − x'|^α. The supremum runs over x ≠ x' in D with the same component labels •, and |·| is the Euclidean distance between base points.
+Fix the exponent α_H ∈ (0, 1/2] of (WF1). (WF1) needs only some fixed α_H > 0, and Section 10 uses α_H ≤ 1/2. For a bond field f on a cube D (fixed gauge, ordinary lattice differences), put [f]_{α,D} := sup |f_•(x) − f_•(x')| / |x − x'|^α. The supremum runs over x ≠ x' in D with the same component labels •, and |·| is the Euclidean distance between base points.
 
 **(H) at radii (a_0, a_1).** A level-ℓ triple P = (U, A', 𝐉) on X satisfies (H) if every cube D ⊂ X of side at most C_box LM has a unitary gauge g on D with U = (e^{iη_ℓ A_r})^g, such that in level-ℓ units
 \[
@@ -74,20 +74,23 @@ once σb_0 and b_0²/(εa) are small. The radii make b_0 ~ Mα_0 and a ~ α_k, s
 | [T4] | `a3-derivative.md` Theorem 4 at U_0 = 1 for the Landau map 𝓗_T of a Rule W box tower T: holomorphy on {sup\|B\| < r_B}, first response \|∂_{B(c)}Z_y(B)\| ≤ C_1e^{−θd(y,y_c)} at every datum of the polydisc in the pair norm (SA (PW2)), its Hölder member 7.4, and uniqueness of the critical orbit modulo residual gauge | proved, conditional on P81, P82°, M1; at U_0 = 1 these reduce to the flat package (`o1-decoupled.md` 4.2 [Φ], rows 89, 95, 99) |
 | [AV] | `a1-balaban.md` 3.5 (3.7) with 7.1: the j-fold actual mean on a double block in one layer is 𝓠_j(w) + 𝓒_j(w), with 𝓠_j the flat linear map, 𝓒_j holomorphic on {sup\|w\| < r_0} in double-block units, sup\|𝓒_j\| ≤ C_Qr_0², 𝓒_j(0) = 0, D𝓒_j(0) = 0, constants independent of j | implication, gated as cited there |
 | [9.3] | `a1-balaban.md` (9.3): exact restriction of a critical field to an admitted smaller tower, mod residual gauge | gated |
-| [PW], [NL] | `dec-field.md` Section 5 | open premises |
-| **[PW-H]** | **the Hölder member of [PW]**: H_1(s), H(s): Y_w → X_w and 𝔊(s): F_w → X_w also satisfy sup_y w(y) ξ_y^{2+α_H}[∇_𝐔 a]_{α_H,y} ≤ B‖input‖, with the covariant comparison along straight paths at separations at most ξ_y, uniformly on the whole polydisc | **open; new here** |
+| [PW], [NL] | `dec-field.md` Section 5 | implications: [PW] from `pw-bridge.md`'s [Energy], [Coefficients], [Walk geometry], [Parameter geometry]; [NL] from `nl-r9.md`'s [RED], [Rows], [PW], (O1); both checked line by line by Claude, first failing step none (row 138) |
+| [PW-H] | the Hölder member of [PW]: H_1(s), H(s): Y_w → X_w and 𝔊(s): F_w → X_w also satisfy sup_y w(y) ξ_y^{2+α_H}[∇_𝐔 a]_{α_H,y} ≤ B‖input‖, with the covariant comparison along straight paths at separations at most ξ_y, uniformly on the whole polydisc | new here; **proved in Section 10 (Proposition PH) from [PW]'s own four inputs**, for α_H ≤ 1/2 |
 | (20), (ER8u), (UR), (YA) | as in `b2-extract.md` Section 7 | as recorded there |
 
 ## 3. Two lemmas on regularity
 
-**Lemma 0 (Hölder member of the response).** Assume [PW], [NL], [PW-H]. Write [a]_{H,w} := sup_y w(y)ξ_y^{2+α_H}[∇_𝐔a]_{α_H,y}. For b = ‖B'‖_{Y,w} < cB^{−4}, with c ≤ min{r_0/4, 1/(16C_W), 1/(16C_C)} as in `dec-field.md` Proposition 5.1, the R9 field satisfies [𝐇]_{H,w} ≤ 2Bb on the whole polydisc.
-
-*Proof.* Use the fixed points of the proof of Proposition 5.1: 𝐇 = h, h = a − H𝒞(h), a = H_1B' − 𝔊W_s(a), with ‖a‖_{X,w} ≤ R := 2Bb and ‖h‖_{X,w} ≤ 2R. [NL] with v = 0 gives ‖W_s(a)‖_{F,w} ≤ C_WB²R² and ‖𝒞(h)‖_{Y,w} ≤ 4C_CR². [PW-H] applied to each term gives
+**Lemma 0 (Hölder member of the response).** Assume [PW], [NL], [PW-H]. Write [a]_{H,w} := sup_y w(y)ξ_y^{2+α_H}[∇_𝐔a]_{α_H,y}. Let b = ‖B'‖_{Y,1} < cB^{−4}, with c ≤ min{r_0/4, 1/(16C_W), 1/(16C_C)} as in `dec-field.md` Proposition 5.1. Then for every admitted weight w, on the whole polydisc,
 \[
- [h]_{H,w}\le B b+B\,C_WB^2R^2+B\,4C_CR^2
- = Bb\,[1+4b(C_WB^4+4C_CB^2)]\le2Bb ,
+ [D_{B'}\mathbf H[\beta]]_{H,w}\le2B\|\beta\|_{Y,w},\qquad[\mathbf H]_{H,w}\le2B\|B'\|_{Y,w}.
 \]
-since 4bC_WB⁴ ≤ 4cC_W ≤ 1/4 and 16bC_CB² ≤ 16cC_C ≤ 1 with B ≥ 1. Separations above ξ_y cost a factor 2, by twice the gradient bound. □
+
+*Proof.* Use the differentiated fixed-point identities from the proof of Proposition 5.1: ȧ = H_1β − 𝔊W_s'(a)ȧ and ḣ = ȧ − H𝒞'(h)ḣ, with ḣ = D_{B'}𝐇[β]. That proof gives ‖ȧ‖_{X,w} ≤ (8/7)B‖β‖_{Y,w} and ‖ḣ‖_{X,w} ≤ 2B‖β‖_{Y,w}, with a in the R-ball and h in the 2R-ball, R := 2Bb. [NL]'s Lipschitz constants bound the derivatives: ‖W_s'(a)v‖_{F,w} ≤ C_WB²R‖v‖_{X,w} and ‖𝒞'(h)v‖_{Y,w} ≤ 2C_CR‖v‖_{X,w}. [PW-H] applied to each term gives
+\[
+ [\dot a]_{H,w}\le B\|\beta\|_{Y,w}+\tfrac87C_WB^4R\,\|\beta\|_{Y,w}\le\tfrac87B\|\beta\|_{Y,w},\qquad
+ [\dot h]_{H,w}\le[\dot a]_{H,w}+8C_CB^3b\,\|\beta\|_{Y,w}\le2B\|\beta\|_{Y,w},
+\]
+since (16/7)C_WB⁴b ≤ (16/7)cC_W ≤ 1/7 and 8C_CB³b ≤ 8cC_C ≤ 1/2 ≤ B/2. Integrating along τB' gives the second bound, because 𝐇(0) = 0 and the seminorm is subadditive. Separations above ξ_y cost a factor 2, by twice the gradient bound. □
 
 So in the window, with h := (η_k/η)(t+νζ)𝐇_k and |t+νζ|δ_k ≤ (s_k + c_ν)α_k as in `wf-c.md` Theorem A, (A1):
 \[
@@ -98,7 +101,7 @@ So in the window, with h := (η_k/η)(t+νζ)𝐇_k and |t+νζ|δ_k ≤ (s_k + 
 \[
  \sup|w|\le b\sigma,\qquad\sup|\nabla w|\le b\sigma^2,\qquad[\nabla w]_{\alpha,\Lambda}\le b\sigma^{2+\alpha},\qquad 0<\sigma\le1,\ 0<b\le b_V .
 \]
-For a level-j bond c whose read set Δ(c) (its double block) lies in Λ, put B(c) := (1/i) log 𝓜^j(e^{iη_jw})(c), with node values in the gauge of w. Then B is holomorphic in w, and for such c, c' = c + d (d a level-j lattice vector) and unit lattice vectors e,
+For a level-j bond c whose read set Δ(c) (its double block) lies in Λ, let B(c) be the logarithm of the j-fold actual mean of e^{iη_jw} at c in the straightened form of [AV] (`a1-balaban.md` 7.1). It differs from (1/i)log 𝓜^j(e^{iη_jw})(c) by node factors, that is, by a gauge transformation at the level-j nodes, given by the same local formula at every node. Lemma 3 needs the bounds in some node gauge, so this suffices. Then B is holomorphic in w, and for such c, c' = c + d (d a level-j lattice vector) and unit lattice vectors e,
 \[
  |B(c)|\le2b\sigma,\qquad|\nabla_eB(c)|\le C_Vb\sigma^2,\qquad|\nabla_eB(c')-\nabla_eB(c)|\le C_Vb\sigma^{2+\alpha}|d|^\alpha .
 \]
@@ -122,7 +125,7 @@ The point of the lemma is that 𝓒_j's sup bound C_Qb²σ² is never used for t
 
 ## 4. Lemma 2: the window datum has (PW6) on the whole disc
 
-**Lemma 2.** Let z be a top-layer base point (ℓ(z) = k) of an old member of level j < k, σ = L^{−(k−j)}, and σ' := σ/L = ξ_j/ξ_{k+1}. Let D_z be a cube of side C_boxLM (level-(k+1) units) containing the Rule W window R_z, inside the step's domain. Let P ∈ U^H_{k+1}(D_z) at half radii (α_0/2, α_1/2). Assume [PW], [NL], [PW-H] and [AV]. Take any 0 ≤ t ≤ 1, |ν| < c_ν/s_k, |s_Δ| < e^{κ̄} and admitted B'. Let g be the real gauge of (H) on D_z. Then the level-j datum B_{t,ν}(c) := (1/i)log 𝓜^j(𝐔^g_{t,ν})(c), at level-j rows c whose read sets lie in R_z, is holomorphic in all these variables and satisfies, in level-j units,
+**Lemma 2.** Let z be a top-layer base point (ℓ(z) = k) of an old member of level j < k, σ = L^{−(k−j)}, and σ' := σ/L = ξ_j/ξ_{k+1}. Let D_z be a cube of side C_boxLM (level-(k+1) units) containing the Rule W window R_z, inside the step's domain. Let P ∈ U^H_{k+1}(D_z) at half radii (α_0/2, α_1/2). Assume [PW], [NL], [PW-H] and [AV]. Take any 0 ≤ t ≤ 1, |ν| < c_ν/s_k, |s_Δ| < e^{κ̄} and admitted B'. Let g be the real gauge of (H) on D_z. Then the level-j datum B_{t,ν} of 𝐔^g_{t,ν}, in the straightened node gauge of Lemma 1, at level-j rows c whose read sets lie in R_z, is holomorphic in all these variables and satisfies, in level-j units,
 \[
  |B_{t,\nu}|\le2a_*\sigma',\qquad|\nabla B_{t,\nu}|\le C_Va_*\sigma'^2,\qquad[\nabla B_{t,\nu}]_\alpha\le C_Va_*\sigma'^{2+\alpha},
  \qquad a_*:=C_7\big(C_{\rm pot}M\alpha_0+\alpha_1+L^3(s_k+c_\nu)\alpha_k\big).\tag{4.1}
@@ -149,7 +152,7 @@ Lemma 2 is the step that fails in `bx.md`: there (H) is false, and no bound like
 \]
 Also r = 0 on the root lines. The constants depend only on c_3, C_w and α.
 
-*Proof.* *(a) Plaquettes in the original gauge.* For a plaquette p at x in the (κ,μ) plane, log V_p = Ψ_p(X) with X = (B_κ(x), B_μ(x+e_κ), −B_κ(x+e_μ), −B_μ(x)). Ψ_p is the holomorphic logarithm of a product of four exponentials, and DΨ_p(0)X is the sum of the entries. So log V_p = i curl B(p) + Ψ_2(X), with Ψ_2 := Ψ_p − DΨ_p(0), curl B(p) = ∇_κB_μ(x) − ∇_μB_κ(x), and |DΨ_2(X)| ≤ C|X|. Let p' be the translate of p by d. Then |curl B(p') − curl B(p)| ≤ 2b_1σ^{2+α}|d|^α. Also |X(p') − X(p)| ≤ 4b_1σ²|d| and |X| ≤ 4b_1σ, so |Ψ_2(X(p')) − Ψ_2(X(p))| ≤ Cb_1²σ³|d|. Hence
+*Proof.* *(a) Plaquettes in the original gauge.* For a plaquette p at x in the (κ,μ) plane, log V_p = Ψ_p(X) with X = (B_κ(x), B_μ(x+e_κ), −B_κ(x+e_μ), −B_μ(x)). Ψ_p is the holomorphic logarithm of a product of four exponentials, and DΨ_p(0)X is the sum of the entries. So log V_p = i curl B(p) + Ψ_2(X), with Ψ_2 := Ψ_p − DΨ_p(0), curl B(p) = ∇_κB_μ(x) − ∇_μB_κ(x), and |DΨ_2(X)| ≤ C|X|. Let p' be the translate of p by d. Then |curl B(p') − curl B(p)| ≤ 2b_1σ^{2+α}|d|^α. Also |X(p') − X(p)| ≤ 8b_1σ²|d| (each entry moves by at most |d|_1 sup|∇B|) and |X| ≤ 4b_1σ, so |Ψ_2(X(p')) − Ψ_2(X(p))| ≤ Cb_1²σ³|d|. Hence
 \[
  |\log V_{p'}-\log V_p|\le2b_1\sigma^{2+\alpha}|d|^\alpha+Cb_1^2\sigma^3|d|,\qquad|\log V_p|\le2b_1\sigma^2+Cb_1^2\sigma^2\le3b_1\sigma^2 .
 \]
@@ -160,7 +163,7 @@ This is the non-Abelian commutator term of SA 13600–13606.
  |f(p)-F|\le C\big[b_1\sigma^{2+\alpha}|x-z|^\alpha+b_1^2\sigma^3|x-z|\big].
 \]
 
-*(c) Comb products.* For κ < μ, the (κ,μ)-plaquette at y has V̂_κ = 1 on both of its κ-edges whenever (y_1,…,y_{κ−1}) = (z_1,…,z_{κ−1}). There V̂_μ(y + e_κ) = V̂_p(y)V̂_μ(y). Reduce x_1 to z_1 with (1,μ) plaquettes, then x_2 to z_2 with (2,μ) plaquettes at points with y_1 = z_1, and so on, until V̂_μ = 1 is reached. So V̂_μ(x) is an ordered product of n ≤ Σ_{κ<μ}|x_κ − z_κ| ≤ 2|x − z| factors e^{±if(p_i)}, with (x_κ − z_κ) signed factors from the (κ,μ) planes. The finite-product estimate |log Π e^{Y_i} − ΣY_i| ≤ C(Σ|Y_i|)² (SA 13612–13621) applies, because Σ|f(p_i)| ≤ 6|x − z|b_1σ² ≤ 6C_wb_1σ ≤ c. Hence B̂_μ(x) = Σ_i ±f(p_i) + O(b_1²σ⁴|x − z|²), and
+*(c) Comb products.* For κ < μ, the (κ,μ)-plaquette at y has V̂_κ = 1 on both of its κ-edges whenever (y_1,…,y_{κ−1}) = (z_1,…,z_{κ−1}). There V̂_μ(y + e_κ) = V̂_p(y)V̂_μ(y). Reduce x_1 to z_1 with (1,μ) plaquettes, then x_2 to z_2 with (2,μ) plaquettes at points with y_1 = z_1, and so on, until V̂_μ = 1 is reached. So V̂_μ(x) is an ordered product of n ≤ Σ_{κ<μ}|x_κ − z_κ| ≤ 2|x − z| factors e^{±if(p_i)}, with (x_κ − z_κ) signed factors from the (κ,μ) planes. The finite-product estimate |log Π e^{Y_i} − ΣY_i| ≤ C(Σ|Y_i|)² (SA 13612–13621) applies, because Σ|f(p_i)| ≤ 7|x − z|b_1σ² ≤ 14C_wb_1σ ≤ c (|x − z| ≤ 2C_w/σ on Q_z). Hence B̂_μ(x) = Σ_i ±f(p_i) + O(b_1²σ⁴|x − z|²), and
 \[
  \sum_i\pm f(p_i)=\ell_{F,\mu}(x)+\sum_i\pm\big(f(p_i)-F_{\kappa_i\mu}\big).
 \]
@@ -274,8 +277,42 @@ Each item below was checked against the cited text. "Kept" means that the statem
 | `wf7-bf.md` grouped directions | (BX) | now Theorem BX' on U^H_{k+1} |
 | `wf7-bf.md` Section 4, heredity | read sets and Lemma CR | kept |
 | `cond-c.md` Theorem C2, Rule W | containment of windows | kept (geometry) |
-| `cond-c.md` 6.2, layered position (W2) | "affine and Hölder sizes are those of a level-(p−1) pair" | kept **if** (H) is imposed in ambient local units, as Section 2.2 does. Lemma 2 was written for top-layer base points only. The (W2) case repeats it with ℓ(z) = p − 1 and [PW-H]'s layer factor e^{−θ_L(k−p−1)_+} from (LD); this repeat is not written here |
+| `cond-c.md` 6.2, layered position (W2) | "affine and Hölder sizes are those of a level-(p−1) pair" | kept, with (H) imposed in ambient local units as Section 2.2 does; Lemma 2 at (W2) base points is in Section 10 |
 | `b2-extract.md` Proposition W | (P20), (ER8u), (BX), (UR), (YA) | (BX) → BX'; (ER8u) → (ER8u)-H; (UR), (YA) are bounds on members and are needed only at evaluation points, which lie in U^H |
 | `b4-step.md` (19), B1 | "on every admitted complex core" | read as "on every admitted U^H core"; B1's coupling discs are parameter discs and do not leave U^H |
 | `ti-2.md` Theorem TI | invariance of the domain under the level-j torus group | kept: (H) is invariant under translations and the hypercube group |
 | large-field consumers (Package C, 2.8, 2.13, floor screening, (DOM)) | member evaluations outside the window | **not checked here.** They must evaluate regular members only on U^H. Evaluations at critical backgrounds pass by Lemma 5. Any evaluation at a raw non-critical pair would need its own check |
+
+## 10. [PW-H] reduces to [PW]'s own premises
+
+`pw-bridge.md` (Codex) proves [PW] as an implication from four named inputs: [Energy], [Coefficients], [Walk geometry] and [Parameter geometry]. The proof bounds every walk output in the local W^{2,8} norm 𝓡 of its (5.2), by Lemma R and (6.1)–(6.2), (7.6)–(7.7). Only at the end, in (6.6) and (7.8), does the last embedding of its (4.5), W^{1,8} → L^∞ on first differences, convert 𝓡 into the X norm. A Morrey embedding at that same point gives the Hölder member. Fix **α_H ∈ (0, 1/2]**. (WF1) needs only some fixed α_H > 0, and [T4]'s Hölder member holds for each fixed α < 1.
+
+**Lemma M (discrete Morrey, uniform in the mesh).** Let Q ⊂ Q^+ be nested cubes whose radii and gap are fixed numbers in local units. Let v be a lattice function on ηℤ⁴ ∩ Q^+ with finitely many components. Then for x, x' ∈ Q,
+\[
+ |v(x)-v(x')|\le C|x-x'|^{1/2}\big(\|Dv\|_{8,Q^+}+\|v\|_{8,Q^+}\big),
+\]
+with C independent of η.
+
+*Proof.* Let χ be a smooth cutoff, equal to 1 on an intermediate cube and supported in Q^+, and put u := χv, extended by zero. As in `pw-bridge.md` (4.5), Δ = Σ_iD_i^*D_i gives u = Σ_i k_i * D_iu with k_i := D_i^*G_η. By `pw-bridge.md` (4.2), |k_i(w)| ≤ C(|w| + η)^{−3} and |Dk_i(w)| ≤ C(|w| + η)^{−4}. Let s := |x − x'| ≥ η. Hölder's inequality with exponents 8 and 8/7 gives |u(x) − u(x')| ≤ Σ_i‖k_i(x − ·) − k_i(x' − ·)‖_{8/7}‖D_iu‖_8.
+- *Region |y − x| ≤ 4s.* Bound each kernel separately. Since 24/7 < 4, Σ_{|y−x|≤5s}η⁴(|x − y| + η)^{−24/7} ≤ Cs^{4−24/7} = Cs^{4/7}. The y = x term is η^{4/7} ≤ s^{4/7}.
+- *Region |y − x| > 4s.* Telescope along a lattice path from x to x' of length at most 2s. Its points w have |w − y| ≥ |x − y|/2. So |k_i(x − y) − k_i(x' − y)| ≤ Cs|x − y|^{−4}, and since 32/7 > 4, Σ_{|y−x|>4s}η⁴(s|x − y|^{−4})^{8/7} ≤ Cs^{8/7}s^{4−32/7} = Cs^{4/7}.
+
+So the kernel difference has L^{8/7} norm at most C(s^{4/7})^{7/8} = Cs^{1/2}. Finally ‖D_iu‖_8 ≤ ‖Dv‖_{8,Q^+} + ‖Dχ‖_∞‖v‖_{8,Q^+}, and u = v on Q. □
+
+**Proposition PH ([PW-H] from pw-bridge's inputs; implication).** Assume [Energy], [Coefficients], [Walk geometry] and [Parameter geometry] of `pw-bridge.md` Section 6, with its fixed choices and (6.5). Then H(s), H_1(s) and 𝔊(s) satisfy [PW-H] with exponent α_H ≤ 1/2 and constant B = Ce^{16κ̄}, for all weights of rate at most τ_L/16, on the whole polydisc |s_Δ| < e^{κ̄}.
+
+*Proof.*
+- *Bare outputs.* At outputs where the local scale m_y is at most a fixed number of mesh steps, `pw-bridge.md` already uses direct point evaluation. The Hölder quotient at separations s ≥ η is at most 2 sup|∇A|·(m_y/η)^α(s/m_y)^α, and m_y/η is bounded.
+- *Other outputs.* In (6.6), apply Lemma M, in the units x/m_y of (5.2)–(5.3), to each first difference of m_yA on the fixed pillar neighbourhood of Lemma R. Since m_y²|∇A| scales like a first difference of m_yA in x/m units, this gives m_y^{2+1/2}[∇A]_{1/2, s≤m_y} ≤ C‖Ψ‖_{𝓡,y}. Then (6.2) bounds the right side by the same exponential column bound as (6.6). For α ≤ 1/2 and s ≤ m_y, (s/m_y)^{1/2} ≤ (s/m_y)^α.
+- *Covariant comparison.* The class gauge's potential and its first differences are bounded, as in the last line of Lemma R's proof. So the covariant difference and the straight-path comparison change the quotient only by bounded multiplications: |[w, A](x) − [w, A](x')| ≤ (|∇w||A| + |w||∇A|)s ≤ (…)s^α for s ≤ m_y, and a straight transport over length s differs from 1 by at most Cs|w|.
+- *𝔊.* The same replacement in (7.7)–(7.8) gives the 𝔊 column bound with the Hölder member. Every arrow of (7.6) is already bounded in 𝓡, and only the final embedding changes.
+- *Summation.* Summing columns as in (6.7) and (7.9) gives [PW-H] with the same B. □
+
+**Consequence.** With Proposition PH, Lemma 0 and Theorem BX' read only inputs already on the ledger: [PW] through `pw-bridge.md`'s four inputs, [NL], [T4], [AV] and [9.3]. (BX) on the Hölder core adds no new open premise, beyond fixing α_H ≤ 1/2.
+
+**Lemma 2 at layered base points (W2).** At a base point with ℓ(z) = p − 1 (`cond-c.md` Rule W, W2), R_z ⊂ Ω_{p−1} meets the layers p−1, p and p+1. So the local scales on R_z lie within a factor L² of ξ_{p−1}. Repeat Lemma 2 in level-(p−1) units with the following changes:
+- (H) is read in ambient local units, which costs a factor L^{2+α} in the Hölder seminorm.
+- The response bound (3.1) carries the layer factor e^{−θ_L(k−p−1)_+} ≤ 1 of (LD) and its weighted form, as in `wf-c.md` Theorem A (A1).
+- σ becomes L^{−(p−1−j)}.
+
+The proof is otherwise unchanged, and so is Lemma 3. This is the sentence "its affine and Hölder sizes are those of a level-(p−1) pair. This costs fixed powers of L" in `cond-c.md`, now with its input (H) named.

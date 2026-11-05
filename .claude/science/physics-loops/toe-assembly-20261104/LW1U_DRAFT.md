@@ -271,3 +271,116 @@ CHECKS:     check_cube.py (scratchpad, guidance only): R^2 = 1 to 2.2e-16; the f
             of Lemma 4.0 (iii) to all printed digits; P and Q depend on a and b only;
             per-cell least cost K/4 equal for both phase classes (0.0173 per cell).
 ```
+
+---
+
+## 10. Round 2: Lemma LW1-U_f (factor states; the PS-7r sea first)
+
+- Written by: Claude Opus 5.5 subagent, round 2 of pass 1, 2026-11-04. Not refereed.
+- Base: this file as committed at `58d5c77701c6f8384b62c2b9f6e47b9e50bcf2fa`. Sections 0-9 are unchanged; this section is appended.
+- New scratch script: `check_sea_condind.py` (session scratchpad, guidance and refutation only).
+
+### 10.0 Outcome
+
+**One precise smaller lemma, after three attacks.** None of the three attacks closes LW1-U_f, and none yields a counterexample. Each fails for a reason stated exactly below. The open statement is narrowed to the vacuum alone (Lemma LW1-U_sea, section 10.5). Three new results are proved here. Theorem 10.2 proves uniqueness whenever both Born laws are, given the shared cube-number field, independent across cubes with laws that depend only on each cube's own number; this generalises Theorem 3.4. Corollary 10.3 proves LW1-U_f for the sea at the boundary point `alpha = 0` of the window. Lemma 10.4 shows that a symmetry of the problem always leaves a symmetric optimiser. So a symmetry-based counterexample must exhibit spontaneous breaking in the PS-3 selection itself.
+
+### 10.1 The sea's Born law, stated
+
+By C3 and Wick's theorem, the Born law of a gauge-invariant quasi-free state with one-body density `G` is the determinantal measure with kernel `G`. For a finite window `W` and occupation pattern `s` on `W`, `mu(c_W = s) = det M`, where row `x` of `M` is row `x` of `G_{WW}` if `s_x = 1` and row `x` of `(I - G)_{WW}` if `s_x = 0` (credited, standard). For the sea, `G = P` (Theorem B10), with `P_xx = 1/2`, and with `|P_xy|` decaying exponentially for `mu > 0` (Theorem B10 (v)). The half-tick image has kernel `V_e P V_e^*`. Both are pure states, hence factor states. By Remark 6.1 both Born laws have trivial tails.
+
+### 10.2 Attack 1: Bernoulli property and Ornstein theory
+
+*The idea.* If the sea's Born laws were Bernoulli shifts or finitely determined, Ornstein theory might control optimal joinings, and it might give the recovery sequence that Attack 2 of `LW1_DRAFT.md` lacked.
+
+*What the literature gives.* Lyons and Steif (Duke Math. J. 120 (2003) 515-575) study "stationary processes indexed by Z^d that are defined via minors of d-dimensional (multilevel) Toeplitz matrices", and their abstract states "all of these processes are Bernoulli shifts". I read the abstract only, through a search summary. Their class, as the abstract states it, is `Z^d`-stationary with a scalar symbol. The sea's Born law is stationary only under the cell lattice `2Z^3`, with an `8 x 8` matrix symbol. So it is not in that class as stated. Whether their proof extends is not checked here.
+
+*Why the attack fails, even granting Bernoullicity.*
+1. PS-3's data are local in the configuration coordinates: the cost counts changed sites, and the support is a product of cube supports. A Bernoulli isomorphism with an i.i.d. process is a non-local measurable map. It does not carry the cost or the support. So the product theorem (Theorem 3.4 or 10.2), which needs product structure in these coordinates, does not transfer through it.
+2. Uniqueness of a greatest-entropy optimal joining is a property of the cost, not of the isomorphism class of the marginals. Section 4 already shows this: there, an ergodic pair of marginals has two optimal joinings, while products have one.
+3. The finitely-determined property (Ornstein) controls the unconstrained d-bar distance from nearby processes. The couplings it supplies move single occupations freely, so they leave `S`. Lemma 3.1 shows that every element of `C_h` keeps every cube number, and those couplings do not. So it does not give the support-respecting recovery estimate that `LW1_DRAFT.md` Attack 2 named as missing.
+
+### 10.3 Attack 2: condition on the shared cube-number field
+
+By Lemma 3.1 every coupling in `C_h` shares the active number field `n = (N_k)_k`. The attack conditions on `n` and tries to reduce the problem to finite single-cube problems. It works exactly when the internal configurations are independent across cubes given the numbers.
+
+**Hypothesis (CL), cube-local given numbers.** There is a law `lambda` of the number field and, for each `m in {0, ..., 8}`, cube laws `alpha_m` and `alpha'_m` on `{sigma : N(sigma) = m}`, such that `mu_h = ∫ ⊗_k alpha_{n_k} dlambda(n)` and `mu_{h+1} = ∫ ⊗_k alpha'_{n_k} dlambda(n)`.
+
+**Theorem 10.2 (uniqueness under CL; proved here).** Under (CL), with `lambda` invariant, `O_h` has exactly one element, `pi_hat = ∫ ⊗_k lambda*(alpha_{n_k}, alpha'_{n_k}) dlambda(n)`.
+
+*Proof.* *Feasibility.* Take any `pi` in `C_h` (Theorem E4). Under `mu_h`, the cube-0 configuration given `N_0 = m` has law `∫ alpha_{n_0} dlambda(n | N_0 = m) = alpha_m`; likewise `alpha'_m` under `mu_{h+1}`. Since `N_0(c) = N_0(c')` `pi`-a.s. (Lemma 3.1), the cell-0 pair law given `N_0 = m` lies in `Pi(alpha_m, alpha'_m; S_C)`. So that set is nonempty whenever `lambda(N_0 = m) > 0`, and `kappa_m`, `lambda*_m`, `H*_m` are defined.
+
+*Cost.* For every `pi` in `C_h`, `E_pi D_0 = sum_m lambda(N_0 = m) E_pi[D_0 | N_0 = m] >= sum_m lambda(N_0 = m) kappa_m =: kbar`. `pi_hat` is in `C_h`: its marginals are `mu_h` and `mu_{h+1}` by (CL), it is carried by `S`, and it is invariant because `lambda` is. It attains `kbar`.
+
+*Least cost forces the face, box by box.* Let `pi` have least cost. Fix a finite set `Lambda` of cells, `k` in `Lambda`, and a value `n_Lambda` of positive probability. Under (CL), given `n_Lambda` the configuration of cube `k` has law `alpha_{n_k}` under `mu_h` (integrate out the cells outside `Lambda`), and `alpha'_{n_k}` under `mu_{h+1}`. So the pair law of cube `k` given `n_Lambda` lies in `Pi(alpha_{n_k}, alpha'_{n_k}; S_C)`. The pair law of cube `k` given `N_k = m` is the mixture of these over the values of `n_Lambda` with `n_k = m`, and it lies in the face `F_m` because `pi` has least cost. A convex combination with positive weights lies in a face only if each term does. So each pair law given `n_Lambda` lies in `F_{n_k}`, and its entropy is at most `H*_{n_k}`, with equality iff it is `lambda*_{n_k}`.
+
+*Entropy bound.* `n_Lambda` is a function of `c_Lambda`, so `H_Lambda(pi) = H(n_Lambda) + H(pairs_Lambda | n_Lambda) <= H(n_Lambda) + sum_{k in Lambda} H(pair_k | n_Lambda) <= H(n_Lambda) + |Lambda| hbar*`, where `hbar* = sum_m lambda(N_0 = m) H*_m`. Under `pi_hat`, given `n_Lambda` the pairs in `Lambda` are independent with laws `lambda*_{n_k}`, so equality holds. Hence `s(pi) <= s(lambda) + hbar* = s(pi_hat)` (`s(lambda)` is the specific entropy of the number field, which exists by subadditivity). So `pi_hat` is in `O_h`.
+
+*Uniqueness.* Let `pi` be in `O_h` with `pi != pi_hat`. Then some box `B` of cells has a pair law under `pi` different from that under `pi_hat`. Both give `n_B` the law of `lambda`, so for some value `n_B` of positive probability the conditional pair law on `B` differs from `⊗_{k in B} lambda*_{n_k}`. Then either the cubes are not conditionally independent, or some cube's conditional law lies in `F_{n_k}` but is not `lambda*_{n_k}`. Either way, `H(pairs_B | n_B) = |B| hbar* - g` with `g > 0` (equality conditions as in Lemma 3.3). Tile `Lambda_m` (side a multiple of that of `B`) by translates `B_t` of `B`. Then `H(pairs_Lambda | n_Lambda) <= sum_t H(pairs_{B_t} | n_Lambda) <= sum_t H(pairs_{B_t} | n_{B_t})`. The last step holds because conditioning on less cannot lower entropy, and `n_{B_t}` is a function of `n_Lambda`. By invariance each term equals `|B| hbar* - g`. So `H_Lambda(pi) <= H(n_Lambda) + |Lambda| (hbar* - g/|B|)`, and `s(pi) <= s(pi_hat) - g/|B|`, a contradiction. ∎
+
+(CL) holds for Born laws that are products over the active cubes, with `lambda` a product, so Theorem 10.2 contains Theorem 3.4's uniqueness clause. It also holds for "classical" states whose internal configurations are cube-local given the numbers, with `lambda` arbitrary (correlated, even long-range).
+
+**Corollary 10.3 (the sea at `alpha = 0`; proved here).** At the boundary point `mu = 2 eps` of the window (so `alpha = 0` and `beta = 2 eps` in `(0, pi)`), the PS-7r filling satisfies LW1-U_f at both half-ticks.
+
+*Proof.* `V_e = 1` and `V = V_o = exp(i beta R_o)`. On each odd cube `R_C^2 = 1` and `tr R_C = 0`, so `R_C` has eigenvalues `+1` and `-1`, four of each. `V_o` has eigenvalues `e^{i beta r}`, i.e. quasi-energy `w = -beta r`, which lies in `(-pi, 0)` iff `r = +1`. So `P` is the direct sum over odd cubes of the projections `(1 + R_C)/2`, and `omega_P` is the product over odd cubes of the pure 4-particle state filling the `r = +1` space. At the even half-tick `V_e = 1`, so `mu_{h+1} = mu_h` and `cos alpha = 1`, and Lemma 3.2 applies. At the odd half-tick the active cubes are the odd ones, and each cube state is an eigenvector of its gate (a Slater determinant of eigenvectors of `V_o`). So both Born laws are the same product over the active cubes, and Theorem 3.4 applies. ∎
+
+The window of Theorem B10 has `mu < 2 eps` strictly, so this is a boundary statement. It shows that LW1-U_sea holds in the atomic limit. It says nothing inside the window.
+
+*Why the attack fails for the sea.* (CL) is false for the sea. This is shown by computation, which may refute but does not prove. For two adjacent active cubes, the internal configurations are dependent given both cube numbers. Since (CL) applied to the box made of the two cubes demands independence given their two numbers, (CL) fails. [check, `(eps, mu) = (0.3, 0.1)`: 1D Margolus sea, `L = 200`, blocks `{0,1}` and `{2,3}`, given one particle in each: conditional mutual information `0.148` nats. 3D cube-tick sea on the `8^3` torus, cubes at cells `0` and `e_1`, given four particles in each: `0.084` nats; given one in each: `0.011` nats.] The dependence comes from the kernel `P` linking corners of different cubes. Conditioning on the numbers does not remove it, so the conditional problem is not a family of finite problems. Theorem 10.2's tiling step needs the conditional entropy given `n_B` to split over cubes. For the sea it does not split, and nothing replaces the per-cube target `lambda*_{n_k}`.
+
+### 10.4 Attack 3: a symmetry not respected by the optimiser
+
+**Lemma 10.4 (symmetric optimisers exist; proved here).** Let `g` be a bijection of configurations, of finite order `r`, that maps the cell partition to itself, commutes with the cell translations up to an automorphism of `Z^3`, and maps `mu_h`, `mu_{h+1}` and `S` to themselves and changed sites to changed sites. Then `g x g` maps `O_h` onto `O_h`, and `O_h` contains a `g`-invariant element.
+
+*Proof.* `g x g` maps `C_h` to itself (marginals, support and invariance are kept) and keeps cost per site. It maps the box entropies of a box to those of the image box, so it keeps specific entropy. So it maps `O_h` to itself. `O_h` is convex (Theorem E6), so for `pi` in `O_h` the average `(1/r) sum_i (g x g)^i pi` is in `O_h` and is `g`-invariant. ∎
+
+So a symmetry gives a second optimiser only if some optimiser is not symmetric. For a finite group, the symmetric average of an ergodic, non-symmetric optimiser is non-ergodic. So with ergodic marginals (Lemma 3.5) this means spontaneous breaking of `g` inside the PS-3 selection. The sea's coupling problem has such symmetries: the rotations of `G_U` that keep the active tiling, and the occupation flip `c -> 1 - c` (the sea's Born law is flip-invariant, since `Theta P Theta^{-1} = 1 - P`, Theorem B10 (iii); whether the flip keeps `S` is not checked here).
+
+*Candidate constructions, and where each stops.*
+1. *Lift section 4 to a factor state by randomising the pattern independently per cube.* A mixture of product states with independent random cube labels is itself a product state: `∫ ⊗_k rho_{r_k} dnu(r) = ⊗_k (sum_r nu_1(r) rho_r)` when `nu = nu_1^{⊗}`. So Theorem 3.4 applies, and `O_h` is a singleton. The tie of section 4 is resolved because the matching choice becomes local and the per-cube optimum `lambda*` absorbs it.
+2. *Randomise the pattern by a mixing Markov label chain along `e_1`.* The state `∫ ⊗_k rho_{r_k} dnu(r)` is then a factor state when `nu` is absolutely regular (Powers' criterion with `|omega(AB) - omega(A) omega(B)| <= 2 ||A|| ||B|| beta_nu(N)`; sketched only). Its Born laws do not satisfy (CL), because the labels are hidden: `P_0` and `P_1` overlap. This draft has neither a proof nor a counterexample for this family.
+3. *Rigidity from subshifts.* Burton and Steif (Ergodic Theory Dynam. Systems, 1994; credited from memory, not re-read) gave `Z^d` subshifts of finite type, `d >= 2`, with more than one measure of maximal entropy. A breaking of the kind Lemma 10.4 requires would need the least-cost face to impose such a rigid constraint between cubes. The support `S` is a product over cubes, so any such rigidity would have to come from the marginal constraints. No mechanism is known by which a determinantal marginal imposes it.
+
+*Why the attack fails.* A counterexample at a factor state needs a choice that PS-3 cannot see and that cannot be changed locally. Section 4's choice was global (a phase), which factor states exclude (Remark 6.1). Making the choice local (construction 1) lets the greatest-entropy stage randomise it independently, and the optimum is unique. The intermediate case (construction 2) is not settled, and no rigid mechanism (construction 3) is available for the sea.
+
+### 10.5 The precise smaller lemma
+
+**Lemma LW1-U_sea (open).** *Let `0 < mu < 2 eps < pi` and let `omega_P` be the PS-7r sea of the free cube tick. For `h = 0` (the even half-tick acting on `omega_P`) and `h = 1` (the odd half-tick acting on `omega_P o beta_e`), the set `O_h` of Theorem E6 has exactly one element.* (`omega_P` is stationary under the tick, so these two cases cover every half-tick.)
+
+It is smaller than LW1-U_f in two ways. It names one state and its half-tick image instead of all invariant factor states, and it drops the torus clause. It is the statement that the vacuum needs.
+
+*Exact reason each attack fails on it.*
+- **Attack 1:** PS-3's cost and support are local in the occupation coordinates, and a Bernoulli isomorphism is not. Lyons-Steif, as stated in their abstract, covers scalar `Z^d`-stationary kernels, not the sea's `2Z^3`-periodic `8 x 8` kernel. Finite determination bounds the unconstrained d-bar, not the support-respecting cost.
+- **Attack 2:** Theorem 10.2 needs the internal configurations to be independent across cubes given the numbers. The sea violates this ([check] conditional mutual information `0.148` nats in 1D, `0.084` nats in 3D).
+- **Attack 3:** Lemma 10.4 forces any symmetry-based counterexample to show breaking inside the PS-3 selection. Factor states exclude the global-phase mechanism. Local randomisation of a tie is absorbed by the entropy stage. No rigid mechanism is known for a determinantal marginal.
+
+*What would move it.* A proof of Lemma LW1-U_sea would need a replacement for the per-cube target of Theorem 10.2: some explicit coupling `pi_hat` built from `P` (for example from the determinantal structure, or from the quantum dynamics of the half-tick). It would also need a strict entropy deficit for every least-cost coupling that differs from `pi_hat` on a finite box. A counterexample would need a rigid least-cost constraint between cubes coming from the determinantal marginals. The 1D Margolus sea is the natural first test case (section 5's setting).
+
+### 10.6 What round 2 changes for LW1
+
+- LW1-U_f stays open. The vacuum statement LW1-U_sea is the named open input that LW1 needs.
+- LW1's Qualification at every factor state needs more than LW1-U_sea. If the owner reads the Qualification as needing one answer at every state, then PS-3m (section 8) plus LW1-U_f are both required. Theorem 10.2 and Theorem 3.4 cover product states and states that satisfy (CL), and nothing more is proved. The owner decides whether the Qualification applies at every state or at the states the law reaches from its `omega_0`.
+- No new specification is proposed in this round. LW1-U_f has not failed, so no further rule is called for yet.
+
+```
+LEMMA:      LW1-U_f (section 6), the PS-7r sea first.
+OUTCOME:    PRECISE SMALLER LEMMA after three attacks: LW1-U_sea (section 10.5), open.
+            No proof, no counterexample at any factor state.
+PROVED HERE (round 2, not refereed):
+            Theorem 10.2: uniqueness for Born laws that are cube-local given the number
+              field (CL); contains Theorem 3.4's uniqueness.
+            Corollary 10.3: LW1-U_f for the sea at the window boundary alpha = 0 (both
+              half-ticks).
+            Lemma 10.4: a finite-order symmetry of the problem leaves a symmetric
+              optimiser; a counterexample needs breaking inside PS-3.
+ATTACKS:    (1) Bernoulli/Ornstein: isomorphisms do not carry PS-3's local cost and support;
+                Lyons-Steif (abstract) is scalar Z^d, not the sea's 8x8 2Z^3 kernel.
+            (2) Number-field conditioning: (CL) false for the sea [check: conditional MI
+                0.148 nats 1D, 0.084 nats 3D].
+            (3) Symmetry: global phases excluded (Remark 6.1); local ties are absorbed by
+                the entropy stage (product states); the Markov-label factor family is
+                unsettled; no rigid mechanism for determinantal marginals.
+FOR LW1:    LW1-U_sea is the open input the vacuum needs. The Qualification at every state
+            needs PS-3m plus LW1-U_f; owner to decide its reading. No new specification.
+CHECKS:     check_sea_condind.py (scratchpad): sea gap min|Im lambda| = sin(mu) = 0.0998;
+            P_xx = 1/2 to 1e-15; conditional MI as above. Guidance and refutation only.
+```

@@ -80,7 +80,7 @@ The owner approved this on 2026-11-04: "im good with the skelleton proposal but 
 | PS-2 | In the working set | Menu independence: a possibility's probability does not depend on what else is offered. It gives the Born form by the binary-ternary theorem. |
 | PS-3 | In the working set | One actual configuration, moved by minimal-change, maximum-entropy transport. Records never condition the odds. A record forms when a value has been copied to at least two neighbours. |
 | PS-4 | In the working set | The first tick has no records. |
-| PS-5 | No change | Build site content on cells of qubits. The five-mode fallback is used only if the cell route fails at a named step. |
+| PS-5 | In the working set as its fallback text (owner 2026-11-05, D1) | Each site has five fermion modes, algebra `Cl(10)`. The cell route failed at a named step on `L_cube` (B5b, B5b-T). Section 3.4. |
 | PS-6 | In the working set | Frames are local: link registers transport frames, and the update is gauge-invariant. |
 | PS-7 | In the working set | The vacuum is the half-filled sea. The record-freezing tension is resolved in VC1/TM1. |
 | PS-8 | Law to test | The mirror-gapping interaction, inside CH1. Not a premise. |
@@ -197,6 +197,15 @@ The other three are not working-set entries. They are recorded here because they
 - **Non-factor states: held.** PS-3 selects one transport at factor states only; LW1 claims no more. A rule for non-factor states (PS-3m, transport by central decomposition) is not adopted; its smuggle-check caveat is that it would make "macroscopic labels persist" a premise.
 - **"Records form.": left to part TM1.** Under PS-3c no record forms in the free vacuum or in the tracial state. Where and why records form is TM1's open input TM1-i. No reading of the Record axiom is adopted.
 - **LW1's target item 3 is restated** in `TOE_ASSEMBLY.md` as existence on `Z^3 x N`, with finite-box laws as restrictions of one history. The closed-box reading is false for any dynamics with boundaries.
+
+### 3.4 Owner decision D1 (2026-11-05)
+
+The same text is in PR #10140. The question put to the owner: on `L_cube`, frames on cells of one-mode sites are only site phases (`U(1)` per site), so the cube law gives no exact `SU(2)` or `SU(3)`; what should PS-5 do? The owner chose: put the fallback text in the proposed axiom update section.
+
+- **PS-5, site content (fallback text, now in the working set).** "Each site has the possibilities of five fermion modes; its full algebra is `Cl(10)`, presented as `M_32(C)`."
+- **The named step.** `B5B_DRAFT.md` (pass 1; the lead checked both proofs line by line): Theorem B5b (each gate unchanged after register changes split at the cell) and Theorem B5b-T (only the whole tick unchanged). Under either, every local frame on an even cell of `L_cube` acts on its modes by site phases. The mode image is `U(1)^8`. Many-body frames are included. Entangled register changes give only operator-valued phases that mix no modes (Theorem 7.3; the case with the even gate is open as B5b-E').
+- **Check.** Test 1: passes. The text names no group and no target, and #10014's selector uses "Numbers chosen: none. Observed structure by name: none". Test 2: passes; the text is closed. Test 3: passes. It does not put in the 16; #10027 shows site-bilinear `Spin(10)` on five-mode sites gives "vector class, never the 16". Test 4: passes conditionally. The constant 5 comes from #10014 under its conditions (a)-(c). Condition (b), the Weyl-species reading, is called "an inserted identification, borderline" in that note.
+- **What it changes.** This text bends the Qubit axiom. It does so only inside the working set; `docs/MINIMAL_AXIOMS_2026-06-29.md` is unchanged. LW1's law `L_cube` has one mode per site, so its site content is superseded for the parts that need the gauge group (MT1, GA1, CG1, CH1). The law on five-mode sites is a new open item, **LW1-5**. It needs a covariant local update, with link registers on which the site frame group acts, that keeps that group exact. #10014 records that "no nearest-neighbour inter-cluster coupling keeps Spin(2N>2) exact" for clusters of one-mode sites. Whether a number-conserving hop on five-mode sites keeps more than `U(5)` is LW1-5's first question. LW1's results that do not use one mode per site (geometry, transport, records, infinite volume) are expected to carry over and are to be checked there.
 ---
 
 ## 4. Plan of the derivation

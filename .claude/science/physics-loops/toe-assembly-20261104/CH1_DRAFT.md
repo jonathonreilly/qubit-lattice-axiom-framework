@@ -411,7 +411,7 @@ The plan. Thorngren, Preskill and Fidkowski make a not-on-site chiral `U(1)` on-
 
 **Owner decisions that the results raise** (decisions, not specifications):
 
-- **D1 (PS-5).** Theorem S3 names a step at which the cell route fails for CH1 and CG1: abelian one-body frames (LW1 B5), and that group cannot be hypercharge (S2). Whether this triggers PS-5's five-mode fallback is the owner's call. The fallback has its own open step (#10027).
+- **D1 (PS-5).** Theorem S3 names a step at which the cell route fails for CH1 and CG1: abelian one-body frames (LW1 B5), and that group cannot be hypercharge (S2). Whether this triggers PS-5's five-mode fallback is the owner's call. The fallback has its own open step (#10027). *Decided 2026-11-05:* the owner put PS-5's fallback text in the working set (`TOE_ASSEMBLY.md` section 3.4), on the named step of `B5B_DRAFT.md` (Theorems B5b and B5b-T). CH1 on five-mode sites waits on the law LW1-5.
 - **D2 (PS-8).** The kill test is negative on `L_cube` (5.4). PS-8 as worded should not stay the law to test for CH1 on `L_cube`. Its successor would be a statement about bound states (CH1-C1/C3), which is a target, not a law clause. So no replacement text is offered.
 
 ---

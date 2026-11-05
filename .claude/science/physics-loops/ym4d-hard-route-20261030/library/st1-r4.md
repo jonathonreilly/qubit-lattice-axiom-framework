@@ -132,7 +132,7 @@ The following are hypotheses, not consequences of a source label.
   \ \xi_y^3|\dot J|,\ |\dot u(y)|
         \le C_4e^{-\theta_4d(y,y_c)}|e_c|.                              \tag{15}
   \]
-  The current member is required independently of a first-derivative bound on \(H\). P82° is now proved and frozen ([p82.md](p82.md), gate first failing step none); the remaining matching item on this route is M1. The current member of (15) is proved in a3-derivative §7.3 only at bonds whose plaquettes lie in \(\Omega_0\), so (15) is asserted only at interior elements, which is the only place ST1 uses it. We use the stated implication to (15), not an unproved inference from the name P82.
+  The current member is required independently of a first-derivative bound on \(H\). P82° is now proved conditionally on its imports I1–I8 (including A1/F0) and frozen ([p82.md](p82.md), gate first failing step none); the remaining matching item on this route is M1. The current member of (15) is proved in a3-derivative §7.3 only at bonds whose plaquettes lie in \(\Omega_0\), so (15) is asserted only at interior elements, which is the only place ST1 uses it. We use the stated implication to (15), not an unproved inference from the name P82.
 * **PROF/RCG4.** A real critical background has normalized curvature and current bounded by \(C_P\max_\tau e^{-\delta_Pd(x,\tau)}|\partial V(\tau)-I|\). On a cube of side \(s\), with its side-\((s+6)\) enlargement, curvature \(<wL^2\eta_i^2\), matrix divergence \(<2L^3w\eta_i^2\), and \((s+2)L^3w<c_{\rm rg}\), RCG4 gives a real gauge with \(|A|,|\nabla A|<4L^3B_*(s+2)w\). These are the explicit profile and cube-gauge inputs of `a3-profile.md` and `a1-balaban.md` §3.8.
 * **OPS/SLICE/UNQ.** All inverses in Lemma 6 exist on the declared regular-pair ball. The repaired local Landau chart and its tangent factorisation (`a3-derivative.md` Lemmas 6.1–6.3) hold. The straightening and response fixed points have unique small solutions, uniformly on their stated balls. No inverse is inferred from formal matrix notation.
 * **DR, including its specification at one.** An actual regional response \((H,K)\), holomorphic in its complex input pair, datum and \(|s_\Delta|<e^{\bar\kappa}\), is given, with reality, covariance, restriction consistency, common-lift transport and splitting over face-connected components. At \(s=1\) it uses the reduced action and multiplier formulas of Lemma 6. For source \(S\), it obeys
@@ -1163,7 +1163,7 @@ This is the construction in `a1-balaban.md` 2492–2524, including its summable 
 2. **276–277:** the auxiliary tree gauge in Lemma 3 still kills tree bonds and proves its plaquette bound.
    It is not the selected representative. The Federbush contraction and AV iteration are unchanged.
 3. **339:** LEV already pins means through (28). Its covariance identity, real tie and holomorphic
-   forced-levelling argument are unchanged. It now pins the selected contour convention too.
+   forced-levelling argument are unchanged. It preserves the contour values at the level-\(q-1\) cells of pinnable levelled tops; these equal \(I\) when the input is already CV-selected, which is all that is used downstream.
 4. **581:** for \(W_B=e^{i\eta H(B)}U_0\), with \(U_0\) mean axial, use
    \(u_B(x)=u_B(z)(\mathcal M^nW_B)(z,x)\).
    Each path has at most \(2(L-1)\) bonds. Product differentiation and the mean contraction give
@@ -1177,7 +1177,7 @@ This is the construction in `a1-balaban.md` 2492–2524, including its summable 
    Thus (52), (49), CORE and all later half-gap/source budgets retain their form.
    The draft's numerical claim that exactly \(2C_u\) suffices was not proved.
 5. **CRIT, DR and (15):** these are assumed at arbitrary admitted real regular bases.
-   Apply them at the new mean base and its own raw datum; do not transfer old datum values.
+   Apply them at the new mean base and its own raw datum; do not transfer old datum values. For (15) the transfer is justified: P82 is proved at its own axial A1 representative, and the mean-axial base differs from it by a real residual gauge (SA 9676), under which P82 is covariant ([p82.md](p82.md) line 243).
    At a fixed base, if the target representative changes by \(w\),
    \((E^{u_B})^w=E^{wu_B}\). Thus the target gauge becomes \(wu_B\), not \(u_Bw\).
    Its top values stay fixed because \(w=I\) at nodes. The reduced response equations,
@@ -1209,7 +1209,7 @@ Differentiating \(d\mathcal S_D(\xi(D))=0\) at the critical point gives
 Thus the Wilson Hessian alone has gauge zero modes. A strictly positive Gaussian precision
 requires a gauge treatment; FC4 does not prove positivity of a particular gauge-fixed precision.
 
-**FC5.** For this critical reference \(V\), put \(u(x)=V(y,x)\) on the noncentres
+**FC5.** (FC-test includes the indicator in the moved variables that SA 7181's soft gauge factor contains.) For this critical reference \(V\), put \(u(x)=V(y,x)\) on the noncentres
 of the new blocks, \(u=I\) elsewhere, and \(V_{\rm ax}=V^u\).
 Then \(V_{\rm ax}\) is in the same fibre, agrees on retained rows, and has \(V_{\rm ax}(y,x)=I\).
 It is the \(M_-\)-datum of a gauge transform of \(U_+\) residual for \(M_+\).
@@ -1446,7 +1446,7 @@ It estimates this correction only, not all stored terms.
 **FC-mean-match** (its Gaussian, linear/seam terms, slot coupling and switch/external-pair dependence)
 and **FC-test** (every remaining moved-variable factor satisfies the analytic premise).
 CV alone proves neither. If a matched Gaussian has exactly the split (FCr), then its chosen mean has
-\(m_r=0\), \(\theta_m=0\), \(\varepsilon_m=1/16\); otherwise its additional conditional force must be bounded.
+\(m_r=0\), the threshold term vanishing (written \(\vartheta_m=0\), not RUN's \(\theta_m\)), and \(\varepsilon_m=1/16\) for the radius \(b_j\) of F5 (the value is valid for FC7's \(b\) as well); otherwise its additional conditional force must be bounded.
 The positive reference precision, its complex perturbation bound, and the full remainder bound
 remain the NL1/LF1 inputs. CI is unchanged. No Gaussian estimate is proved by this contour identity.
 
@@ -1682,3 +1682,15 @@ Corrections to the round-3 draft and the accompanying radius proposal:
 Additional revision-4 corrections: normalized conditional probabilities are distinguished from coarea kernels; chart factors do not overwrite old normalizers or CA-I's interaction bracket; common-chart reference changes and matrix trace-log branches are explicit; FM7 is simplified to a direct open-set proof; the new-member node geometry is stated; FC4 requires the correct block size and FC5 a critical reference; FC6's Gaussian-mean overclaim and its claim about all possible splits are removed, with history realization left open. A Gaussian centre is distinguished from the expectation after a passing cutoff. The CV port corrects the order \(wu_B\), replaces the unsupported factor-two gauge bound by a uniform mean Lipschitz bound, and retains the geometric sum over levels. ST-test\(^{\rm hol}\) supplies a fixed common continuation ball, and the localization proof uses scalar functionals. The contour proof retains older Borel cutoffs, the outer integrable majorant and the exact recentring remainder. These are checks/corrections of our draft, not corrections of the cited source text.
 
 All mathematical steps are written arguments. Tools were used only for source retrieval, text navigation and editing, and document consistency checks; no computation discharges a proof. This is research text, not an audit, grants no status, and is **not yet refereed**.
+
+
+## Change log (pass 3 fixes, lead, 2026-11-05)
+
+Applied the findings of `gates/st1-r4-gate.md` (Claude fresh session, first failing step none):
+1. P82 is recorded as proved conditionally on I1-I8 (A1/F0 included).
+2. Lemma CV item 5: the transfer of (15) to the mean-axial base is justified by a real residual gauge (SA 9676) and P82's real-gauge covariance (p82.md 243).
+3. The undefined theta_m = 0 is renamed vartheta_m and the radius for epsilon_m = 1/16 is named.
+4. LEV's contour claim is narrowed to what it proves.
+5. FC-test names the indicator in SA 7181's soft gauge factor.
+
+**Status: frozen** (round 4, with Amendment CV), as a conditional theorem. Outstanding, all named: CI (NL1/LF1), FM-match, FC-mean-match, FC-test, FC6-history (unused). Reopens only on a `wrong` signal or when an import it reads changes.

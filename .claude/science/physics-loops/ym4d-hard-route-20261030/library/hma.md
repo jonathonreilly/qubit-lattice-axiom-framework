@@ -554,7 +554,7 @@ Under the named premises, Theorem 2 supplies the assigned Y Gaussian carriers an
 
 The imports are M's **R, repaired W, AV, W-cov and PF**, nonlinear **PIV**, **FG/UM** and the remaining actual potentials' full-domain UM1/interface; physical **BG and PH1–PH4**; and **Q-real/F0** for the admission lemma. Cross-record carriage additionally reads the named h-walk-fix hypotheses. All their flat, curved, inverse, tower, seam, branch and uniformity premises remain premises. Theorems here do not grant scientific or audit status.
 
-**Outstanding:** PIV (the nonlinear pivot graph and contour-mean bounds; no named supplier); the actual stored-test/gauge-factor and old-activity formation match; whole-domain admission and the shrinking required by ci-form; physical chart/step branch matching at each actual history; and the full vacuum interface, including elimination factors, class/boundary and companion/coefficient identifications. The draft's assertion that nothing in item 6 remains outstanding is withdrawn. G-ID(TP), complete CI and H-OL are not proved.
+**Outstanding:** (PIV is now supplied by frozen [piv](piv.md), from ST1 AV/CURV, with (28) as a row-6 ceiling; hma Amendment 1.) The actual stored-test/gauge-factor and old-activity formation match; whole-domain admission and the shrinking required by ci-form; physical chart/step branch matching at each actual history; and the full vacuum interface, including elimination factors, class/boundary and companion/coefficient identifications. The draft's assertion that nothing in item 6 remains outstanding is withdrawn. G-ID(TP), complete CI and H-OL are not proved.
 
 **Corrections made in distillation.**
 
@@ -598,4 +598,8 @@ Distilled by Codex on the Mini. Refereed line by line by a fresh Claude session 
 Referee verdict on SA's UM conditions: proved only for the adopted Y family D4, on R4 within descent (7)–(8)'s ceilings, without Rep; not for SA's absolute gauge factor (descent Theorem A). UM4 with \(R_s=e^{\bar\kappa}>2\), \(K=K_0\), \(\varepsilon\le\varepsilon_*\); UM5 with \(c_m=12\); UM6 in SA's form; UM14 with \(C_p=P_d\); UM15 cost \(C_0\le1\) with \(W_0\) fixed before \(\kappa\); gauge-type UM1 from Lemma 3. Imported: SA's FG1–FG12 and the counting constant of UM9–UM13; library M (frozen hm, descent Theorem B); PIV. Not supplied: UM1 for the other potential types; SA's structural identities linking UM3 to the actual step's expansion.
 
 Status: **frozen.** Item 6 shrinks: gauge form fixed; formation and vacuum bounds done for the gauge potential and the compressed determinant; G-ID(cov) under PH1–PH4. Open: carrier identification (D4 adopts hm's carriers rather than identifying them), stored-test/gauge-factor formation match, whole-domain admission, PH1–PH4 per step, the full vacuum interface, PIV.
+
+## Amendment 1 (lead, 2026-11-05)
+
+PIV is supplied by frozen [piv](piv.md) ([piv-gate](../gates/piv-gate.md)), conditional on ST1 r4's AV/CURV. Its working ceilings (28) are imposed as an IN1 row-6 ceiling on this text's radii; frozen hm (7) is unchanged. PIV leaves the Outstanding list.
 

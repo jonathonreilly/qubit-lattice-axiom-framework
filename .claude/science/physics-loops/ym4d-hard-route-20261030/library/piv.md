@@ -172,7 +172,7 @@ They agree. This is the actual small graph of HMA and ST1 F2, with the same free
 
 For row \(c\), (16) uses only \(u\), \(V\), and its own pivot on \(D_c\). The coefficient \(J_c^{-1}\) and the pivot component of \(t\) read that same block. Induction through the iterates proves exact dependence on these data alone. Taking the limit introduces no new reads. Equations can share free coordinates; no product decomposition of their free variables is asserted.
 
-A double block and its one-bond margin lie within distance \(2L+2\) of the relevant pivot base. For a bare-field read after \(k\) averages, each lower step adds at most \((2L+2)L^{-j}\), \(1\le j\le k\), in level-\(k\) units. This is QC3's double-block read, rescaled at that step. The additional reach is at most
+A double block and its one-bond margin lie within \(\ell^\infty\) distance \(2L+2\) of the relevant pivot base (in \(\ell^1\) the reach is about \(5L/2\); the read radius \(r_p=4L+8\) holds in both). For a bare-field read after \(k\) averages, each lower step adds at most \((2L+2)L^{-j}\), \(1\le j\le k\), in level-\(k\) units. This is QC3's double-block read, rescaled at that step. The additional reach is at most
 \[
  (2L+2)\sum_{j=1}^kL^{-j}<\frac{2L+2}{L-1}\le3.            \tag{20}
 \]
@@ -234,7 +234,7 @@ Here \(v_n\) is the largest plaquette defect on the complete intermediate reads.
 \]
 Both are positive and precede \(M,\bar\kappa,\kappa\).
 
-Suppose HMA's absolute radii satisfy \(a_0<a_0^*,a_1<a_1^*\). Put \(V_0=\mathcal M^kU\) and \(V=\mathcal M^k\mathbf U\). For the real averages, \(v_0\le a_0L^{-2k}\). Set \(w_n=L^{2(k-n)}v_n\). Equation (27) becomes
+Plaquette defects \(|\partial U-I|\) and CURV's \(v_n\) are taken in operator norm; any equivalent norm costs at most a factor 2, absorbed by the room in (33). Suppose HMA's absolute radii satisfy \(a_0<a_0^*,a_1<a_1^*\). Put \(V_0=\mathcal M^kU\) and \(V=\mathcal M^k\mathbf U\). For the real averages, \(v_0\le a_0L^{-2k}\). Set \(w_n=L^{2(k-n)}v_n\). Equation (27) becomes
 \[
  w_{n+1}\le w_n+C_{\rm rec}L^{2(n+1-k)}w_n^2.              \tag{29}
 \]
@@ -297,3 +297,17 @@ Section 4's full reads supply its early finite gauge-read radius. Stored tests, 
 **Proof** PIV holds for HMA's fixed admitted working domains, retaining the primitive averaging inputs stated in Section 6 and choosing the early ceiling (34), which implies the working ceilings (28). The constants are (24). The actual graph is jointly holomorphic, satisfies (25), has the exact finite reads (21), and obeys (23). The contour bounds are (26). Their radii and bounds precede \(\kappa\) and are independent of \(M,\bar\kappa\), depth and volume.
 
 This is a reconstruction and quantitative specialization of Sussman–Alpoge's proved one-step argument, with explicit norm and working-domain estimates. It retains the frozen primitive averaging/admission inputs and does not prove actual-history DOM. Proved here by Codex, not yet checked by the other model. Research text, not an audit; grants no status.
+
+## Change log (freeze, 2026-11-05)
+
+Written by Codex in one proof-lane round on the Mini. Refereed line by line by a fresh Claude session ([piv-gate](../gates/piv-gate.md)): first failing step none, no fabricated step, 4 findings, none fatal, none changing (24). Applied by the lead (Claude):
+
+1. (20): \(\ell^\infty\) distance stated.
+2. PIV is proved conditional on ST1 r4's AV/CURV (constants \(C_Q,r_{\rm av},v_{\rm rec},C_{\rm rec}\)); hma now names this text as PIV's supplier (hma Amendment 1).
+3. Working domain: the lead records the second option, (28) imposed as an IN1 row-6 ceiling on HMA's radii (hma Amendment 1). This leaves frozen hm (7) unchanged.
+4. Plaquette-defect norm: operator norm.
+
+Referee checks kept: the implicit-function step (radius \(\min\{a/8,1/(8HK_2)\}\), contraction 1/8, uniqueness on the full ball) is SA QC22–QC24 with explicit constants; Lemmas 1–2; exact reads (21) (SA 8284–8288); covariance (23); contour bounds (26) with \(G=2\); ceilings (28)–(33); constants match SA's powers and depend only on \(L\) and early AV constants.
+
+Status: **frozen.** PIV holds as HMA uses it, from ST1 AV/CURV, on HMA's working domains with (28) as a row-6 ceiling.
+

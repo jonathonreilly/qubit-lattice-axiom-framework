@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/no_vacuum_of_family_blind_rules_tested_gives_three_hierarchical_families_with_a_t_odd_phase_2026_10_24.py
+runner_sha256: 3314b622b7222ec9204bc1437214ebc8ac6b856a8228118d66ae74896199016f
+input_fingerprint_sha256: d4829c5dd4fa9cf65e2125073001cfdc9259384290684b866540b6c9e52e8a9c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.05
+status: ok
+----- stdout -----
+PASS A0 triality: SU(3) singlets in adj x adj x 6 and adj x 6 (mass term from adjoint vacua): dims 0,0; 6x6 0, 6bar x 6 1
+PASS A1 Spin(10): singlets in 16x16 and 16x16bar: 0, 1 (scalar gauge-singlet family bilinear only light x mirror)
+PASS A2 Wick: <sum_{i<j} n_i n_j> = ((trG)^2 - trG^2)/2 on a site of a Slater state: max err 4.4e-16; exchange -trG^2/2 favours family polarisation (adjoint attractive)
+  B pattern sequence (label, g onset, deltas): [('U3', 0.0, (-0.0, 0.0, 0.0)), ('U1^3', 2.4, (-1.0, 0.0, 1.0))]
+PASS B1 finite Stoner threshold on the Dirac sea, far above a Gauss-law (alpha) coupling: g_c = 2.40 (bandwidth 1.73); alpha/g_c = 3.0e-03
+PASS B2 strong-coupling family-density vacuum is U(1)^3 at the vertex (1,0,-1): final ('U1^3', 2.4, (-1.0, 0.0, 1.0)); equally spaced (no hierarchy), real density (T-even), Lorentz-vector order
+PASS C1 det channel: minimum of convex symmetric cost - g*prod(sigma) has equal sigma: 118/150 condensed, 0 asymmetric; M = sigma*U keeps a locked SU(3)
+PASS D1 tr U = 0 forces the equally spaced (Z3 character) spectrum: max gap error 3.8e-06: unique orbit, U(3) -> U(1)^3 if |trU|^2 coeff > 0 (sign unfixed)
+PASS D2 Z3 vacuum: T x P23 kept, equal singular values, commuting mass functions: no hierarchy (R3 FAIL), V = 1 and J = 0 (R2 FAIL)
+PASS D3 generalized-CP lemma with X = P23 (family-permuting antiunitary): max |det[Hu,Hd]|/norm^6 1.7e-17
+PASS E1 P-linear potentials (no tr(ABAB), (trAB)^2): minimum aligned, [A,B] = 0: 18 bounded sets, max |[A,B]|/|A||B| 1.0e-05
+  E2 wide: 55 bounded; misaligned 0.16; T-odd 0.00 (max 2.3e-09); 1+1+1 both 0.15
+  E2 k4-dominant: 24 bounded; misaligned 0.50; T-odd 0.00 (max 6.5e-08); 1+1+1 both 0.54
+PASS E2 full quartic: misaligned vacua need chosen couplings (dominant tr(ABAB) > 0), and every minimum found is T-even: J = 0 at every quartic minimum found (pre-run prediction of T-odd minima FAILED)
+PASS E3 Hermitian mass functions of adjoints: arg det in {0, pi}: max |Im det|/|det| 1.2e-13 (but A0: adjoints cannot enter a 16.16 mass term)
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/a_turn_kept_by_the_update_and_broken_by_the_vacuum_gives_cp_and_theta_bar_together_unless_a_nelson_barr_block_is_supplied_2026_10_22.py
+runner_sha256: 2d2087963baaa7cedbac9c6175f72ab4037f9ccd517a75a8e16597dce1f2741b
+input_fingerprint_sha256: 5c4820d4bddb96bf3332e7afdcdb336bdc4525c492cf11f8541dd074402eb47e
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 1.53
+status: ok
+----- stdout -----
+== A: one turn-charged order parameter phi=v e^{ia}, linear couplings, Q,u,d all (0,1,2)
+PASS A1 exact turn covariance: T^+ M(w phi) T = M(phi) | 3.1e-16
+PASS A2 aligned vacua (phi^3 real): J=0 and arg det in {0,pi} | maxJ=3.5e-17
+PASS A3 J periodic 2pi/3 and CP-odd | J(0.4)=4.828e-02
+PASS A4 Im det M = (r1-r2) v^3 sin(3a) exactly (det depends on phi only via |phi|^2, phi^3) | r1-r2=0.1843
+PASS A5 generic vacuum phase: J != 0 AND theta_bar_tree = O(1) (strong CP fails) | median|J|=1.22e-02 median|arg det|=1.51, min|arg det|=1.2e-03 (need <1e-10)
+PASS A6 one-field Z3+T potential (k phi^3+cc) minimum is aligned -> J=0 | a*=3.1416 J=1.6e-17
+PASS A7 reflection-protected texture: arg det in {0,pi} but J = 0 (lemma) | J=-6.9e-17
+PASS A8 one TUNED real relation gives theta_tree in {0,pi} with J != 0 (FITTED, not structural) | J=-2.53e-02
+== B: Nelson-Barr-type: light block from real-aligned chi (charge w), heavy D, Z2-odd phi1,phi2 (charge w)
+PASS B1 exact turn covariance of the 4x4 down matrix
+PASS B2 Z2 forbids Q D_R: det M4 = det(m_d) M_D is REAL for every vacuum
+PASS B3 at the potential's minimum (a1,a2)=(5.007,3.291): J != 0 with arg det in {0,pi} | J=-1.18e-03 theta=-3.1e+00
+PASS B4 control: real vacuum phases give J = 0
+PASS B5 J unsuppressed only if |F| ~ M_D (NB scale condition) | J(|F|/MD~1e-3..3)=5.4e-09,5.3e-07,4.8e-05,1.2e-03,2.1e-03
+PASS B6 40 seeded potentials+couplings: theta_tree in {0,pi} always; J != 0 in most | J!=0: 21/40, theta=0 (not pi): 23/40 (sign is a discrete choice)
+== C: domain walls of the spontaneously broken turn (estimates)
+  v=1e+03 GeV: sigma~v^3, wall domination at T~2.0e-05 GeV
+  v=1e+08 GeV: sigma~v^3, wall domination at T~6.5e+02 GeV
+PASS C1 ZKO: stable Z3 walls need sigma^(1/3) < ~1 MeV -> NB scale requires breaking before/during inflation (T_RH < v)
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

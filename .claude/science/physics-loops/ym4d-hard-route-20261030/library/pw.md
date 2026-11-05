@@ -211,7 +211,7 @@ local decay or a bound on first differences in a supremum norm.
 
 ## 4. Coefficients on the complex regular-pair envelope
 
-The background inputs used from frozen P82 are its I1, I2, I4 and I5:
+The background inputs used from frozen P82 are its I1, I2, I4 and I5, together with P82 Lemmas 1–4, which frozen P82 proves from I1, I2 and I5. From the dr.md §1 walk specification this note also uses the h-walk walk identity, the h-walk Lemma C cut-down clauses and the h-walk-gate repairs. The P82 inputs are:
 the matching flat five-variable/scalar inverses, smooth local-model
 geometry, the exponential pillar count, and the actual one-step
 straightening formulas with their carrier incidence. They retain their
@@ -283,7 +283,7 @@ increment is required for this analytic row calculation. The first
 differences of the reference will be used separately below.
 
 Fix an output color coordinate and an input bond/color coordinate in
-the second estimate of (4.3). Cauchy's one-variable formula on
+the second estimate of (4.3). This Cauchy step needs the reference to lie in the ball of half the radius; that suffices, since (4.1) is used only at the reference itself. Cauchy's one-variable formula on
 \(a+zh\), with \(|z|=c/(m_c\|h\|_\infty)\), gives
 \[
  \|DK_a[h](c,b)\|\le C_L\eta^4m_c^{-2}\|h\|_\infty.       \tag{4.4}
@@ -1174,8 +1174,8 @@ mathematical verification.
 
 **Proof**
 
-Under the frozen P82 inputs I1, I2, I4 and I5 with their matching
-boundary and geometry hypotheses, the **actual** decoupled walk
+Under the frozen P82 inputs I1, I2, I4 and I5 (with P82 Lemmas 1–4) with their matching
+boundary and geometry hypotheses, the dr.md §1 walk specification (with the h-walk identity, Lemma C cut-down clauses and h-walk-gate repairs), and a parameter partition satisfying (P) of §8 (as in o1-decoupled Theorem B; (P) fails if parameter cubes get finer in finer layers), the **actual** decoupled walk
 family specified in dr.md §1 satisfies
 \[
  \boxed{\displaystyle
@@ -1195,3 +1195,18 @@ and of \(\bar\kappa\); the latter enters only through the
 displayed factor and the permitted parameter-length choice.
 The proof grants no audit or retained status and does not assert
 the separate DR chain-domain admission.
+
+## Change log (freeze, 2026-11-05)
+
+Written by Codex in one proof-lane round. Refereed line by line by a fresh Claude session ([pw-gate](../gates/pw-gate.md)): first failing step none, 3 findings, all repairable. Applied by the lead (Claude):
+
+1. §4 and the Result name every input used: P82 Lemmas 1–4 (proved in frozen P82 from I1, I2, I5), and the h-walk identity, Lemma C cut-down clauses and h-walk-gate repairs from the dr.md §1 walk specification. The mathematics is unchanged.
+2. The Cauchy step for (4.4) needs the reference in the half-radius ball; stated. (4.1) is used only at the reference.
+3. The Result's hypotheses include the parameter-partition condition (P) of §8, which o1-decoupled Theorem B already carries.
+
+Referee on how the proof passes dr-draft §6's three failures: the rough current enters only the field row and one auxiliary unknown's equation, as the divergence of a bounded flux with no difference of the current; switched operators are absolutely convergent sums of unswitched terms times switch monomials, each bounded on its own; WW is not needed.
+
+Not read line by line by the referee: SA 11315–11384 and 11510–11639; the text re-proves those steps by hand.
+
+Status: **frozen.** [PW] is proved as claimed, conditional on frozen P82, the dr.md walk specification, the regular-pair envelope and (P). This removes [PW] from dr.md's Outstanding list.
+

@@ -8,7 +8,7 @@ Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as the authors of
 
 **Geometry and domains.** Fix one finite main step, determining sequence, boundary spaces, row ownership, real reference \(U\), and analytic branches. Use frozen ST1-r4 §1, including CV, (Tq0), the element cores and chain domain \(\mathcal D_{\rm in}\). The pair is \((\mathbf U,\mathbf J)\), with \(\mathbf U=e^{i\eta A'}U\) and independent \(\mathbf J\). Holomorphy initially means holomorphy in \((A',\mathbf J)\) at fixed \(U\). Equality at different splittings requires the intrinsic pair assignment below.
 
-Write \(m_y=\xi_y\) for a pillar scale, \(m_b,m_p\) for the scales at a bond's or plaquette's base point, \(l(b)\) for the largest incident scale, and \(d_{\mathbf B}\) for the ambient layer distance, including paths outside \(\Omega_0\) (P82 (1); SA 9601–9605). A based bond has \(m_b\le l(b)\le Lm_b\). Restrictions retain based coordinates with their specified stencils. Fine switches belong to NL1-L D1's level-\((i-1)\), side-\(M\) cubes. Wall-components use face adjacency; stencil sets use corner adjacency. Read boxes and margins must embed in their tori.
+Write \(m_y=\xi_y\) for a pillar scale, \(m_b,m_p\) for the scales at a bond's or plaquette's base point, \(l(b)\) for the largest incident scale, and \(d_{\mathbf B}\) for the ambient layer distance, including paths outside \(\Omega_0\) (P82 (1); SA 9601–9605). Here \(d_{\mathbf B}=d_-\), the old (finer) layer metric; this is what the step \(d_-\ge d_+\) to NL1-L (7) uses. A based bond has \(m_b\le l(b)\le Lm_b\). Restrictions retain based coordinates with their specified stencils. Fine switches belong to NL1-L D1's level-\((i-1)\), side-\(M\) cubes. Wall-components use face adjacency; stencil sets use corner adjacency. Read boxes and margins must embed in their tori.
 
 A source \(S=(S_c)\) is a dimensionless **reduced** raw-row datum in the product of all assigned row spaces; \(\|S\|_{\rm src}=\max_c|S_c|\). Its support is the assigned row locations. The physical source is \(b_V(B)\), not the raw logarithm \(B\) (ST1 (6)–(7)). Fine/site pairings include \(\eta^4\); raw-row pairings are counting pairings. Transposes are bilinear. For weights of rate \(\theta\), meaning \(w(x)/w(x')\le e^{\theta d_{\mathbf B}(x,x')}\), put
 \[
@@ -31,7 +31,7 @@ Local maps and transpose stencils have reach \(r_g\le8L+1\). Retain
 \]
 Write \(\operatorname{supp}s=\{\Delta:s_\Delta\ne0\}\), and let \(N_1(W)\) include \(W\) and its corner-neighbour cubes. A point is **deep in \(W\)** if every cube meeting its layer-metric radius-\(\rho_{\mathbf B}\) ball belongs to \(W\). The pair domain must lie inside the regular-pair envelope where all data and branches exist. **Outstanding — admission:** ST1 chain-domain notation alone does not prove that inclusion.
 
-**Resummation ONE.** At \(s=\mathbf1\), require \(H=\ell,\ H_1=\ell_1,\ \mathfrak G=\mathfrak G_1,\ M^{\rm walk}=\Sigma,\ \widehat a=a_0I\), in ST1 (38)'s raw-row normalization. The lift identity uses O1D Theorem B(a) and its saddle characterization. The other resummations remain imports, including the all-scale second-jet coefficient premise at dec-field L171. Put \(K_0=\widehat Q,\ \mathcal C_2=\mathcal C^{(2)}\), and \(N_0(t)=F'(t)-F'(0)-F''(0)t\), for \(F(t)=S_{\Omega_0}(e^{i\eta t}\mathbf U)\).
+**Resummation ONE.** At \(s=\mathbf1\), require \(H=\ell,\ H_1=\ell_1,\ \mathfrak G=\mathfrak G_1,\ M^{\rm walk}=\Sigma,\ \widehat a=a_0I\), in ST1 (38)'s raw-row normalization. The scalar form \(\widehat a=a_0I\) is an explicit hypothesis: ST1 only says \(\widehat a\) is a positive diagonal mass. If \(\widehat a\) is not scalar, the corresponding term in (4) is \(-\widehat a\) and nothing else changes. The lift identity uses O1D Theorem B(a) and its saddle characterization. The other resummations remain imports, including the all-scale second-jet coefficient premise at dec-field L171. Put \(K_0=\widehat Q,\ \mathcal C_2=\mathcal C^{(2)}\), and \(N_0(t)=F'(t)-F'(0)-F''(0)t\), for \(F(t)=S_{\Omega_0}(e^{i\eta t}\mathbf U)\).
 
 **Response specification.** Reserve \(H(s)\) for the linear lift and \(h\) for the nonlinear field. Let \(q(t)=K_0t+\mathcal C(t)\), \(K_t=q'(t)\), and define
 \[
@@ -55,7 +55,7 @@ The diagonal \(-a_0I\) is unparameterized; primes on \(d_s\) differentiate \(\al
  j&=R_hK_h^{\mathsf T}\lambda-K_0^{\mathsf T}\lambda_0 .
 \end{split}                                                     \tag{5}
 \]
-The response is \(\mathfrak h=(h,j)\). No physical operator identity is imposed at arbitrary switches.
+The response is \(\mathfrak h=(h,j)\). No physical operator identity is imposed at arbitrary switches. *Dictionary.* The pair response is \((H,K)\) in ST1 (16), \(h\) in NL1-L (7), and \(\mathfrak h=(h,j)\) here. This text's \(H\) is ST1's \(\ell\); its \(K_0,K_h\) are row derivatives, while ST1's \(K\) is the current. Equation numbers (7) and (16) refer to the named text.
 
 **Outstanding 1 — PW (the draft's PW♮).** On every required complex pair domain and \(|s_\Delta|<e^{\bar\kappa}\), require, for all weights of rate \(\theta\le\theta_{\rm PW}\),
 \[
@@ -88,7 +88,7 @@ All reads have diameter at most \(D_R\). Also require, for \(0\le t\le1\),
  \le C_R\eta^4\left(\sum_p|D_{\mathbf U}v(p)|m_p^{-2}\widehat n_p(h)
                   +\sum_b|v(b)|m_b^{-3}\widehat n_b(h)\right),     \tag{Pair}
 \]
-or its full-gradient version with the corresponding column bound. These are **complex-domain** inputs. P82 (17), a3-derivative (9)–(12) and §7.1 explain their real-reference provenance. **Outstanding — uniform local input:** their cited gate does not prove (Rows)/(Pair) and absolute derivative majorants on every complex pair in use. Impose the early bound \(\|\mathbf J\|_{F,1}\le\gamma_*\); later current radii lie below it.
+or its full-gradient version with the corresponding column bound. These are **complex-domain** inputs. P82 (17), a3-derivative (9)–(12) and §7.1 explain their real-reference provenance. **Outstanding — uniform local input:** their cited gate does not prove (Rows)/(Pair) and absolute derivative majorants on every complex pair in use. Impose the early bound \(\|\mathbf J\|_{F,1}\le\gamma_*\); later current radii lie below it. Also impose \(\gamma_*+a_{\rm reg}\le c_\sharp\) (Theorem 9), so that Theorem 9 covers this whole current ball; both are early constants.
 
 For locality require drlocp UNQ's absolute derivative/Neumann majorants for these maps on common pair-independent solution balls; call this ABS. For torus transport require a common assignment of coefficients, cutoffs, region traces and branches under lifts of their **full** read hulls; call this LIFT. Fixed-region field locality does not prove LIFT. S-loc requires source completion, including external pair, stored data and pins, to read only the first fine-cube neighbour layer.
 
@@ -207,9 +207,9 @@ Subtracting its equation yields
  \lambda-\lambda_0=(I+H^{\mathsf T}\mathcal C'_h{}^{\mathsf T})^{-1}
  \{H^{\mathsf T}(F'(h)-F'(0))-H^{\mathsf T}\mathcal C'_h{}^{\mathsf T}\lambda_0\}.
 \]
-Integration of (Pair) along \(th\), and both column sums, bound the first brace term by \(2C_RT\|h\|_{X,w}\); Rows bound the second by \(2C_RT^2\gamma_*\|h\|_{X,w}\). Thus
+Integration of (Pair) along \(th\), and both column sums, bound the first brace term by \(4C_RT\|h\|_{X,w}\) (O1D Theorem B(c) bounds each of its two column sums by \(C_H\) separately); Rows bound the second by \(4C_RT^2\gamma_*\|h\|_{X,w}\). Thus
 \[
- \|\lambda-\lambda_0\|_{Y,w}\le4C_RT(1+T\gamma_*)\|h\|_{X,w}.     \tag{12}
+ \|\lambda-\lambda_0\|_{Y,w}\le8C_RT(1+T\gamma_*)\|h\|_{X,w}.     \tag{12}
 \]
 Expand \(j=(R_hK_h^{\mathsf T}-K_0^{\mathsf T})\lambda_0+
 R_hK_h^{\mathsf T}(\lambda-\lambda_0)\). Rows and (11)–(12) give
@@ -480,7 +480,7 @@ Finally multiply each piece's estimate by the output weight and compare with its
  \Delta=q^{\mathsf T}q+\Delta',\qquad
  \|\Delta'v\|_{F,w}\le C_H^{\rm rem}a_{\rm reg}\|v\|_{X,w}.     \tag{33}
 \]
-This is the finite curvature-remainder input of a3-derivative §7.1, with its gate's consistent-curl correction. Let \(\|\mathbf J\|_{F,1}\le\gamma\), without any difference bound on \(\mathbf J\). For an early \(c_\sharp>0\), if \(a_{\rm reg}+\gamma\le c_\sharp\), then
+This is the finite curvature-remainder input of a3-derivative §7.1, with its gate's consistent-curl correction. That section bounds \(\|\Delta'v\|\) by its curvature parameter \(\kappa_{\rm A3}\) and also uses the reference-current bound, which \({\rm Reg}^{1,\beta}\) alone does not give; so (33) holds with \(a_{\rm reg}\) replaced by \(\max(a_{\rm reg},\kappa_{\rm A3})\) in the smallness condition. Theorem 9 assumes (33) explicitly. Let \(\|\mathbf J\|_{F,1}\le\gamma\), without any difference bound on \(\mathbf J\). For an early \(c_\sharp>0\), if \(a_{\rm reg}+\gamma\le c_\sharp\), then
 \[
  S_{\mathbf J}=\begin{pmatrix}
  \Delta+DRD^{\mathsf T}-\Delta'_\pi[\mathbf J]&-K^{\mathsf T}\\K&0
@@ -608,3 +608,21 @@ Corrections made in this distillation, in addition to the five source/consumer d
 - Correct the draft's claims that no NL rebuild or represented-source walk route exists; retain the actual conditional imports of nl-r9 and pw-bridge.
 
 Only library/dr.md was changed in the checkout. Frozen notes, ledgers, audits and editable prompt files were not changed. **This text is not yet refereed.**
+
+## Change log (freeze, 2026-11-05)
+
+Refereed line by line by a fresh Claude session ([dr-gate](../gates/dr-gate.md)): first failing step none, 6 findings, all repairable. Applied by the lead (Claude):
+
+1. \(d_{\mathbf B}=d_-\), the old layer metric, is stated at its definition.
+2. A dictionary line for the pair-response names across ST1 (16), NL1-L (7) and this text.
+3. (12): the constant is \(8C_RT(1+T\gamma_*)\), since O1D Theorem B(c) bounds each column sum separately. Only \(C_D\) changes, inside \(C_{\rm conv}\); the radius (9) and \(E_{\bar\kappa}\) do not.
+4. (33): its provenance uses \(\max(a_{\rm reg},\kappa_{\rm A3})\) in the smallness condition. Theorem 9 assumes (33) and stands.
+5. The order also imposes \(\gamma_*+a_{\rm reg}\le c_\sharp\), so Theorem 9 covers the whole current ball. No cycle.
+6. ONE's scalar mass \(\widehat a=a_0I\) is marked as an explicit hypothesis.
+
+Referee on the two currents: the bare example (8) is right and agrees with ST1 (35). drlocp L69 does not assert that the two currents agree; it says no reason is supplied for (8) to vanish. What fails is the two-current identification that assembly-status item 4 asked for. It is not needed: every frozen consumer reads ST1's current (43), and CP12 L60 sits on the physical locus, where the two agree.
+
+Results resting on unchecked notes: Lemmas 1–2 (o1-decoupled), Lemma 3 (drlocp, o1-decoupled), Theorem 4 (o1-decoupled B(c), walk data W, and nl-r9 if NL is supplied that way), Theorem 9 ((33) from a3-derivative). Lemmas 5–8 and 10 rest only on frozen texts.
+
+Status: **frozen.** All seven Outstanding marks stand as placed.
+

@@ -57,7 +57,7 @@ Put \(\epsilon_m=A_0\theta_m^{-1/2}(\log\theta_m)^{p_0}\) and adopt
 \]
 In every simple, tower, core and witness radius of [ST1 round 2](st1-r2.md),
 (14), (18) and §1, replace \(\alpha_\iota\epsilon_m\) by \(r_\iota(m)\).
-Use the permanent coefficient \(c^*\) of [round 3](st1-draft3.md), Definition M1,
+Use the permanent coefficient \(c^*\) of [ST1](st1-r3.md) (the ledger; Definition M1 of the round-3 draft),
 with \(c_{\min}\le c^*\le1+\beta_s\). Keep each record's function, units,
 formation frame and lift frozen. Either use round-3 per-element cores R1,
 or the scalar-infimum cores after Lemma 1's formation comparison.
@@ -120,15 +120,15 @@ witness ceilings, and all read-carrier embeddings. In particular:
 
 - ST1 Lemma 4 supplies a local, real pin, holomorphic where every relevant
   endpoint top is forced levelled. If
-  \(n_b(h)\le A e^{-\mu d_+(b,\mathcal S)}\), then
-  \(n_b(\mathcal P_P h)\le C_{\rm lev}A e^{-\mu d_+(b,\mathcal S)/2}\) and
-  \(\widehat\epsilon_y(h)\le K_{\rm pin}A e^{-\mu d_+(y,\mathcal S)/2}\).
+  \(n_b(h)\le A e^{-\mu d_+(b,\mathcal S_{\rm src})}\), then
+  \(n_b(\mathcal P_P h)\le C_{\rm lev}A e^{-\mu d_+(b,\mathcal S_{\rm src})/2}\) and
+  \(\widehat\epsilon_y(h)\le K_{\rm pin}A e^{-\mu d_+(y,\mathcal S_{\rm src})/2}\).
   The levelling threshold is \(\epsilon_{\rm lev}\).
-- ST1 Lemmas 5, 8 and 11, with round-3 Lemma 11′ for lifted cores,
+- ST1 ([st1-r3.md](st1-r3.md)) Lemmas 5, 8 and 11 in the lift-free branch Tq0 (round-3 draft Lemma 11′ for lifted cores is not used; see the scope note),
   admit a pinned shift of norm at most \(r_*\) into \(\mathcal D_{\rm tar}\),
   leaving half every gap and continuation-tube room \(\delta_B/8\).
-- The full source carrier \(\mathcal S\) satisfies, with \(j=i-1\),
-  \(d_+(b,\mathcal S)\ge\rho_0(j-m_+(b)-3)_+-C_{\rm car}\).
+- The full source carrier \(\mathcal S_{\rm src}\) satisfies, with \(j=i-1\),
+  \(d_+(b,\mathcal S_{\rm src})\ge\rho_0(j-m_+(b)-3)_+-C_{\rm car}\).
   Input layers satisfy \(m_+(b)\le i\).
 
 These are conditional domain estimates. Frozen [P82](p82.md), Theorem P82,
@@ -145,12 +145,12 @@ For a fixed \(C_{\rm st}\), require
 \[
  \|v_0\|_\infty\le\delta_0:=C_{\rm st}A_1g\ell^{p_0}.          \tag{6}
 \]
-All completed sources in (5) are supported in \(\mathcal S\), including the
-stored source. An empty \(\mathcal S\) gives a constant carried term and is
+All completed sources in (5) are supported in \(\mathcal S_{\rm src}\), including the
+stored source. An empty \(\mathcal S_{\rm src}\) gives a constant carried term and is
 omitted from the distance minima below. At \(s=\mathbf1,y\in\mathcal W\), ST1 Lemma 12 identifies
 \(\Pi_f\) with the actual old pair and its stored transports. Its regularity,
 boundary, retained-row and current identities are required.
-Round-3 F2/F8 and the finite analytic reduced map motivate this package.
+ST1's chart construction F1–F5 ([st1-r3.md](st1-r3.md)) and the finite analytic reduced map motivate this package.
 **Outstanding:** F8 leaves the stored-threshold comparison explicit; a small
 completed source alone is not the raw-datum bound (6). CA-II's displayed
 change of variables does not establish this package on its own. H-ST's
@@ -166,8 +166,8 @@ zero at zero source, and satisfies
           e^{-\mu d_+(b,\operatorname{supp}S)},\qquad E_{\bar\kappa}\ge1.
  \tag{7}
 \]
-For each face-component \(K'\) of \(\operatorname{supp}s\), its response reads
-only \(s|_{K'}\) and the source rows assigned to \(K'\), at fixed \(P\).
+For each face-component \(K'\) of \(\operatorname{supp}s\), the response on the bonds and stencils of \(K'\) depends
+only on \(s|_{K'}\) and the source rows assigned to \(K'\), at fixed \(P\) (as SA 5797–5801 splits it).
 Require restriction consistency and the ST1 covariance conventions.
 **Outstanding:** this uniform complex-source estimate, including its current,
 and this precise row-locality clause strengthen the printed ST1 (16).
@@ -202,7 +202,7 @@ and actual-matrix requirements. No early constant may read a later amplitude.
 
 | Choice | Dependence and conditions |
 |---|---|
-| Before \(\kappa\) | Fix margins and power-count bounds, including the lift exponent budget \(r_R\); choose the exponents with \(q>p_0+2r_R\) and IN1's other inequalities. Then choose \(L\ge13\), \(2\le L_\flat<L/2\), weak frame constants and the imported analytic packages in IN1 rows 2–4. Fix \(C_A,C_{\rm st},C_{\rm win},C_D,\mu,C_{\rm lev},K_{\rm pin},\epsilon_{\rm lev},\epsilon_D,c_D,a_{\rm ch},R_\sigma,R_W,C_{\rm car}\) on the fixed absolute envelope. Choose \(\rho_0\) with \(\mu\rho_0/2\ge\log16\); then fix the remaining ST1 domain constants, including \(r_*\). Put \(C_Q=256e^{\mu C_{\rm car}/2}\). All are independent of \(M,\bar\kappa\). Set \(c_R=1\). |
+| Before \(\kappa\) | Fix margins and power-count bounds, including the lift exponent budget \(r_R\); choose the exponents with \(q>p_0+2r_R\) and IN1's other inequalities. Then choose odd \(L\) under frozen IN1's row-2 floors (which imply \(L\ge27\); the local need here is only \(L\ge13\)), \(2\le L_\flat<L/2\), weak frame constants and the imported analytic packages in IN1 rows 2–4. Fix \(C_A,C_{\rm st},C_{\rm win},C_D,\mu,C_{\rm lev},K_{\rm pin},\epsilon_{\rm lev},\epsilon_D,c_D,a_{\rm ch},R_\sigma,R_W,C_{\rm car}\) on the fixed absolute envelope. Choose \(\rho_0\) with \(\mu\rho_0/2\ge\log16\); then fix the remaining ST1 domain constants, including \(r_*\). Put \(C_Q^{\rm L}=256e^{\mu C_{\rm car}/2}\). All are independent of \(M,\bar\kappa\). Set \(c_R=1\). |
 | Then \(\kappa,\bar\kappa\) | Take \(\bar\kappa\ge1\) and fix \(E_{\bar\kappa},s_D\). They never enter an early precision or tower constant. |
 | Then \(M\) | Impose ST1's lower bounds and \(M>R_\sigma+2\). For Lemma 3 also impose \(M>2R_W+2\). Choose post-\(M\) box constants afterwards. |
 | Then amplitudes and radii | Choose \(A_1,A_0\), then \(C_0\) satisfying (8), then \(C_1\ge K_{\rm rad}MC_0\), where \(K_{\rm rad}\) is the lower-ratio constant of the imported radius window. Choose that absolute window, \(c_W\), and all activity amplitudes in IN1's order, before \(\gamma\). |
@@ -216,7 +216,7 @@ budget. Newly set ST1 exponents permit \(r_R=r\): if
 Inherited exponents and comparison with the layer's frame remain part of
 ST1's global bound (56)–(57); a later returned exponent cannot select \(q\).
 
-Set \(B_L=C_{\rm lev}C_DE_{\bar\kappa}C_AC_Q\), a *late* constant. Require
+Set \(B_L=C_{\rm lev}C_DE_{\bar\kappa}C_AC_Q^{\rm L}\), a *late* constant. Require
 \[
  C_0\ge\frac{8c_Te^{\bar\kappa}B_L}{\beta_*r_*}.             \tag{8}
 \]
@@ -322,12 +322,12 @@ This proves all asserted smallness limits, including (9). The supremum over
 
 **Lemma 2 (main-step read budget).** Under H-ST and the adjacent-radius
 comparison, set
-\(D_f=\min_{b\in\mathcal R_f}d_+(b,\mathcal S)\). Then
+\(D_f=\min_{b\in\mathcal R_f}d_+(b,\mathcal S_{\rm src})\). Then
 \[
  Q_f:=\max_{b\in\mathcal R_f}
-       \frac{e^{-\mu d_+(b,\mathcal S)/2}}{w(m_+(b))}
- \le \frac{C_Q}{\beta_*r_0(i-1)},\qquad
- Q_f\le\frac{C_Qe^{-\mu D_f/4}}{\beta_*r_0(i-1)}.            \tag{12}
+       \frac{e^{-\mu d_+(b,\mathcal S_{\rm src})/2}}{w(m_+(b))}
+ \le \frac{C_Q^{\rm L}}{\beta_*r_0(i-1)},\qquad
+ Q_f\le\frac{C_Q^{\rm L}e^{-\mu D_f/4}}{\beta_*r_0(i-1)}.            \tag{12}
 \]
 
 *Proof.* Put \(\nu=i-1-m_+(b)\ge-1\). Equation (4) and adjacent ratios give
@@ -406,7 +406,7 @@ For carried terms take \(F_f=f(\Pi_f;\mathfrak q_f)\), using (5).
 Equations (9), H-FL and H-DR therefore define all three responses in (5).
 Their triangle bound is
 \[
- n_b(H_f)\le A_V e^{-\mu d_+(b,\mathcal S)},\qquad
+ n_b(H_f)\le A_V e^{-\mu d_+(b,\mathcal S_{\rm src})},\qquad
  A_V=C_DE_{\bar\kappa}C_A(3\delta_0+c_Tge^{\bar\kappa}R).    \tag{14}
 \]
 The levelling inequality in (9) forces every required top to be levelled on
@@ -492,7 +492,7 @@ is unchanged. The new ceilings follow from \(g\ell^q\to0\).
 The equality in (17) is the reciprocal of a minimum. ∎
 
 **Outstanding — the proposed PAN consequence.** Lemma 5 does not prove the
-draft's replacement of PAN Lemmas 7.4–7.6. First, \(\mathcal S\) contains
+draft's replacement of PAN Lemmas 7.4–7.6. First, \(\mathcal S_{\rm src}\) contains
 \(\operatorname{supp}S(v_0)\), which can meet the stored region near the
 activity. PAN's G-gap separates that activity from the *integrated* source;
 it does not show \(D_f\ge10LM\check R_i-C\) for this full source.
@@ -590,7 +590,7 @@ Then CI holds at every structure. For main steps, Theorem 4 supplies the
 fluctuation holomorphy and old-factor bounds used in CI-form.
 
 *Proof.* Induct over the finite ordered history. At a main step, CI for old
-activities supplies H-ACT for the carried factors. CI-maps and Theorem 4
+activities supplies the bound and interface for the carried factors; the term identifications in H-ACT come from CI-maps. CI-maps and Theorem 4
 give their jointly holomorphic admitted compositions. At a stage or output,
 use the separately supplied maps. CI-Gauss and CI-form then give (18) and
 the new activity bounds at every point of the entire new domain.
@@ -678,12 +678,24 @@ Definitions supplied or made explicit in this distillation are:
 4. The exact source-ball and row-locality interface; the W affine reads,
    vanishing orders and carrier range; and the oscillation/one-sided versions
    of the activity bound. These definitions carry the stated extra hypotheses.
-5. The budget constants \(C_Q,B_L,A_V,Q_f\), the guaranteed screened radius
+5. The budget constants \(C_Q^{\rm L},B_L,A_V,Q_f\), the guaranteed screened radius
    and its source/chart/levelling cap (16). No maximal continuation radius
    is defined by that cap.
 6. Full-domain CI, the distinction between main/stage/output maps, and local
    normal domination with fixed measures, Borel majorants and chart agreement
    in D4 and Theorem 7.
+
+## Change log (pass 3 fixes, lead, 2026-11-05)
+
+Applied the findings of `gates/nl1-L-gate.md` (Claude fresh session, first failing step none):
+1. ST1 is cited as the distilled [st1-r3.md](st1-r3.md). **Scope note:** Theorem 4 is stated for the lift-free branch Tq0, which st1-r3 supplies in full (st1-r3: lambda = 1 under SA's table). The Tq-with-lifts branch rested on the round-3 draft's Lemma 11', which st1-r3 does not use, and is withdrawn. Displays numbered (56), (59), (60) in the text refer to the round-2 numbering; read them as the corresponding st1-r3 displays.
+2. The full source carrier is renamed S_src; SA's label in d-natural(S; X) is unchanged.
+3. The new budget constant is renamed C_Q^L, distinct from ST1's AV/CURV constant and PAN's C_Q(M).
+4. The local floor L >= 13 is subordinate to frozen IN1's row-2 floors.
+5. H-DR row locality now says the response on a face-component's bonds and stencils depends only on its switches and source rows (SA 5797-5801).
+6. Theorem 7's proof wording: CI gives the bound and interface; CI-maps gives the term identifications.
+
+**Status: frozen (Tq0 branch).** Reopens only on a `wrong` signal or when an import it reads changes.
 
 ## Result
 

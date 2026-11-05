@@ -2,6 +2,8 @@
 
 Provenance: Codex, research text at checkout 6a792352b901b4da73e40cbc393023af5c19d427, 2026-11-05; not an audit and grants no status. Sources: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, complete account and outline at 31a47c543775; Tadeusz Bałaban, CMP 109 and the account's quotation of CMP 116. All proof steps must be written and checkable by hand.
 
+Round 2 provenance: Codex, 2026-11-05, pinned checkout `5129d8d4e01a632c1293ab712f8a758dcc64e6f5`. The round-one arguments below are preserved. This continuation compares OL-loc with the frozen `lrb.md`, `piv.md`, and `mu.md`; it is research text, not an audit, and grants no status.
+
 ## 1. Target and source comparison
 
 The target is the Gaussian lemma `4.2:lem-one-loop`, CA-I 3901–4029. It supplies hypothesis (b) of `4.19:prop-clause-zero`. It is not the bound on the non-Gaussian increment. This note ports the account's route: compose the constrained Gaussians, preserve their quadratic coefficient under background substitution, and compare with massive Wilson and ghost determinants.
@@ -578,7 +580,7 @@ There is no abstract way to infer the missing domain from a flat gap. The scalar
 
 **Why this attack failed.** To prove (4.8) one must control the actual local current/constraint factors on the polydiscs of part (a), with their scale factors, before differentiating or summing walks. Neither Gaussian composition, the bulk magnetic estimate, nor the quoted CMP 116 remainder bound provides that estimate. CMP 116 (2.41), as quoted at CA-I 4053–4056 and 4177–4179, bounds the non-Gaussian remainder with an $\varepsilon_1^{\rm I}$ factor; it is not a derivation of (4.8). This is the unresolved construction step, not lack of access to CMP 116.
 
-## 5. Recovery checkpoint and verification limits
+## 5. Round-one recovery record (preserved)
 
 Only `library/ol.md` was changed. The target's wording, source status and consumer strength remain unchanged. No audit, ledger, prompt, branch, remote or retained status was modified.
 
@@ -586,7 +588,7 @@ Source identities: checkout `6a792352b901b4da73e40cbc393023af5c19d427`; Sussman�
 
 The bulk calculation and its conditional transfer are research arguments by Codex, not yet independently checked. The reference coefficient, the finite mass remainder, the fixed-depth Gaussian algebra, and the three failed localization routes are written above. Their conclusions do not establish the local realization lemma below. The next useful action is to estimate the actual Dirichlet-cube precision and its current/constraint jets in (4.5)–(4.8); repeating the radial integral or the first-passage arithmetic would not close it.
 
-## Result
+## Round-one endpoint (preserved)
 
 **Open lemma**
 
@@ -602,3 +604,963 @@ The bulk calculation and its conditional transfer are research arguments by Code
 3. Each non-wrapping term, including its holomorphic continuation, equals the term on its common infinite-lattice lift. The decay margin suffices for the domain sum and the second response moment used in CA-I 3808–3828.
 
 This is the analytic-localization step of part (a), made explicit at the level of the actual Gaussian integral. It remains open after the three attacks in §4. The proved bulk route would give part (b), with $c_0=11N^2\log L/(12\pi^2)$ and $c_2=c_2(L,N)$, once OL-loc supplies the transfer in §3.3. The exact lemma as stated and used by the account is therefore **not proved here**. No counterexample to it is claimed. This is proof work on an open cited step, not an audit or a grant of status.
+
+## 6. Round two: what the new inputs supply
+
+The preceding endpoint is historical. Sections 1–4 and their calculations
+are unchanged. The current endpoint and checkpoint are below.
+
+The sources remain Sussman and Alpoge, with Claude and Codex as authors of
+their text, and Bałaban. The new reading used the outline index first:
+chunks 07–08 (pivot, coarea and flat precision), 12 (the actual Gaussian
+matrices), 19–20 (Gaussian localization and one-loop comparison), their
+neighbouring rows, and the matching obligations. CA's operator input is
+indexed in ca-4.12-4.19 chunk 04. Source passages used below were then read
+at the pinned revision. No other averaging operation is substituted.
+
+The comparison is as follows.
+
+| New text | What it supplies here | What remains an input of that text |
+|---|---|---|
+| [lrb](lrb.md), §§3–10 and frozen Result | The actual local real comparison base; weighted displacement estimates; local coercivity; the analytic normalized vertex integral on its closed interpolation polydisc. | The assigned form-walk hypothesis W′, including its local half, cell-resolvent hypotheses, symmetry input, and the CMP 116 (2.14) setting. It does not construct these inputs from the physical Gaussian. |
+| [piv](piv.md), §§2–6 and frozen Result | The nonlinear graph, its derivative \(C_{\flat}\), finite reads, local pivot inverses and common branches on its admitted working domains. | Primitive averaging and admission. Its stated color constants are for SU(2); the matrix-norm argument below explains the fixed-SU(N) extension actually needed here. |
+| [mu](mu.md), §§4–7 and frozen Result | The regular minimizer, its specified complex continuation and the sub-tower identity on its admitted domains. | The published chart and averaging inputs recorded there. Nesting is not finite-range dependence of the minimizer on its datum. It supplies no off-graph estimate at independent current. |
+
+Thus lrb closes the *comparison-base* problem in round-one Attack 2,
+conditional on its precise operator hypotheses. Its §§4–5 also provide
+the interpolation estimates sought in Attack 3 **once the assigned
+walk families obey W′**. Requiring another proof of lrb would add nothing.
+The remaining task is to supply these operator hypotheses for the
+particular Gaussian that defines \(F_{l-1}\), and to retain its scalar
+normalizer.
+
+This distinction is explicit in CA, not inferred from a title.
+CA-I 5519–5577 defines W′ and assigns it eight clauses; its all-level,
+datum-independent local majorants are assumptions at the entry to
+4.4. CA-I 8110–8116 imports them into the local-real-base proposition.
+CA-I 6219–6310 imports W′ and coercivity into the cell-resolvent lemma.
+The operator theorem gives a route toward them, CA-I 47253–47635.
+Its proof invokes elementary sheets, the singular-word lemma, inverse
+and branching estimates, and form identification. The port
+[p4-operator](port/p4-operator.md), A9, keeps these as P4-H-elementary,
+P4-H-local, P4-H-singular, P4-H-sheet, P4-H-assembly and P4-H-form.
+Their presence in a proved implication is not a hand proof of those
+inputs.
+
+For this lane the geometry is only the trivial nest
+\(\mathcal S_0\), CA-I 4750–4769. No large-field seam or stage-admission
+assertion is needed. In particular, the prepared-nest hypothesis is
+vacuous here. Importing the entire general-nest frontier would enlarge
+the problem unnecessarily.
+
+The original comparison with p3, p5, p6 and sfol in §1 still stands.
+In particular p6 uses the **absolute** interval error, not only its
+lower half. The literal one-loop-label search was repeated across
+CA-I/II/III: the six occurrences remain those listed in §1.
+The statement, definition, route and uses at CA-I 3764–4030,
+3580–3615 and 56342–56495 were reread. No source status is promoted.
+
+## 7. Three further attacks
+
+### Attack 4: recover the missing scalar from the normalized vertex
+
+This attack starts with the newly proved lrb integral, rather than
+with a global logarithm. It gives a useful exact separation.
+
+Write \(T=C^{-1}\), \(H=\operatorname{sym}T\), and
+\(C_s=\operatorname{sym}C\), with bilinear transposes. On lrb's
+small comparison domain, set its remaining integrand to one:
+\[
+ f_0(C,\Gamma)=\int d\mu_0(X)\,
+ e^{-X^{\mathsf T}\Gamma^{\mathsf T}C\Gamma X/2}
+ \int d\mu_C(B)\,e^{-B^{\mathsf T}\Gamma X}.
+ \tag{7.1}
+\]
+The inner measure has precision \(H\), not \(T\) when \(T\) is
+nonsymmetric. Real Gaussian integration and continuation on the
+nonvanishing branch give
+\[
+ \int d\mu_C(B)e^{-B^{\mathsf T}y}
+       =e^{y^{\mathsf T}H^{-1}y/2},
+ \qquad
+ f_0(C,\Gamma)=
+ \det\!\left[I-\Gamma^{\mathsf T}(H^{-1}-C_s)\Gamma\right]^{-1/2}.
+ \tag{7.2}
+\]
+For the second equality first work where the real part of the
+remaining precision is positive; lrb §9 supplies this neighborhood.
+Both sides are analytic there and equal on its real positive slice,
+which fixes the branch.
+
+If \(C\) is symmetric, (7.2) is identically one for every such \(C\).
+It therefore cannot determine \(-\tfrac12\log\det C^{-1}\).
+For example \(C=tI\), \(t>0\), gives the same \(f_0=1\) for every \(t\),
+while the unnormalized \(m\)-dimensional integral is
+\((2\pi t)^{m/2}\).
+
+The nonsymmetric case does not repair this loss. Write \(T=H+K\),
+\(K^{\mathsf T}=-K\). Multiplication gives
+\[
+ C_s=(H-KH^{-1}K)^{-1}.
+ \tag{7.3}
+\]
+Indeed
+\((H+K)^{-1}H(H-K)^{-1}\) is both
+\(\tfrac12[(H+K)^{-1}+(H-K)^{-1}]\) and the right side of (7.3).
+If \(\|H^{-1}\|\le h\) and \(h\|K\|\le1/2\), the inverse identity yields
+\[
+ \|H^{-1}-C_s\|\le2h^3\|K\|^2.
+ \tag{7.4}
+\]
+So (7.2) sees a small symmetry defect. It still omits the normalization
+determinant. This agrees with CA-I 7313–7338 and lrb §§8–9.
+There is no error in lrb's normalization.
+
+**Retaining the scalar instead.** Let
+\(q_V(a)\) be the actual logarithmic constraint of a step,
+\(K_V=q'_V(0)\), \(J_c=K_V|_{p(c)}\), and let \(u\) denote its nonpivot
+coordinates. Pivot isolation gives
+\[
+ a=C_{\flat}u+h_Vv,\qquad K_Va=v,\qquad
+ \det\frac{\partial a}{\partial(u,v)}
+       =\prod_c\det J_c^{-1}.
+ \tag{7.5}
+\]
+This is a block triangular determinant: the free block is the identity
+and the pivot block is diagonal in the coarse bonds \(c\).
+On the real branch its determinant is positive. The endpoint adjoint
+changes of frame have determinant one: SU(N) is connected and their
+real orthogonal determinants equal one at the identity.
+
+Let \(A_k(P)\) be the actual reduced precision at
+\(P=(\mathbf U,\mathbf J)\), including the soft gauge and the multiplier
+correction. In CA-I 4806–4849 it is \(C^*\Delta^{(k)}C\);
+in the free-bond notation of CA-I 45297–45326 it is \(\mathsf Q\).
+At a physical stationary pair, integrating the real delta constraint
+and then the free Gaussian gives
+\[
+ Z^{(k)}(P)=c_{k,T}
+       \prod_c\det J_c(V)^{-1}\,\det A_k(P)^{-1/2},
+ \qquad V=\mathcal M^k\mathbf U .
+ \tag{7.6}
+\]
+Here \(c_{k,T}\) is independent of the background.
+
+To check that last assertion, the Haar densities at fluctuation zero
+are their constant values. The nonlinear straightening has derivative
+the identity there. Both facts follow directly by differentiating the
+graph at zero, as in SA 8308–8360. The gauge normalization is also
+constant: with the block-root gauge fixed, each internal transport
+transforms as \(V(y,x)g(x)^{-1}\). Haar substitution in the integral
+over each \(g(x)\) removes \(V(y,x)\). The gauge factor therefore
+contributes the same scalar at every background. Its quadratic form,
+however, remains in \(A_k\). This is precisely the order of
+linearization, scaling and pivot elimination in CMP 109 §2,
+(2.4)–(2.11), pp. 266–268. There is no extra, omitted determinant
+of \(C_{\flat}^{\mathsf T}C_{\flat}\): (7.5) already uses the original
+Lebesgue coordinates and the original delta function.
+
+The quadratic matrix must be the constrained Lagrangian Hessian.
+If \(M(a)=v\), \(S'(a_*)=DM(a_*)^{\mathsf T}\lambda\), and
+\(a(t)\) stays on the fiber, then
+\[
+ (S\circ a)''(0)=
+ a'(0)^{\mathsf T}\!
+       \left(S''(a_*)-\sum_i\lambda_i M_i''(a_*)\right)a'(0).
+ \tag{7.7}
+\]
+This follows by twice differentiating \(M(a(t))=v\), then substituting
+the stationary equation into \(S'(a_*)a''(0)\).
+The physical branch supplied by mu permits this identification.
+It does not set the multiplier term to zero away from the flat pair.
+
+Vacuum subtraction in (7.6) gives the exact finite-dimensional identity
+\[
+ F_k(P)=
+ -\tfrac12\operatorname{Tr}\{\log A_k(P)-\log A_k(P_\circ)\}
+ -\sum_c\log\det\{J_c(V)J_c(1)^{-1}\}.
+ \tag{7.8}
+\]
+First this holds at real stationary data. Both sides have the same
+local analytic continuation from the positive flat Gaussian.
+The right side also defines the independent-current extension wherever
+its matrices and coherent logarithms exist. Formula (7.8) does not
+assert a uniform complex domain.
+
+**The pivot term is controlled on the admitted reference ball.**
+The finite matrix-norm estimates of piv Lemmas 1–2 do not use three
+colors. For fixed SU(N), use the operator norm on traceless matrices.
+The exponential, logarithm and implicit-mean estimates are unchanged.
+The pivot coefficient at the identity is
+\(L^{-3}I_{\mathfrak g}\): exactly \(L\) of the \(L^4\) straight
+segments contain the pivot, and no internal contour does.
+Thus the same choices
+\[
+ a=(2^{16}L)^{-1},\quad K_2=16a^{-2},\quad
+ v_*=\min\{a/8,(4L^3K_2)^{-1}\}
+ \tag{7.9}
+\]
+give, for \(V=e^{iv}\) in a local unitary frame and
+\(\|v\|_\infty<v_*\),
+\[
+ E_c:=L^3J_c(V)-I,\qquad \|E_c\|<1/4.
+\]
+Equivalently \(J_c=L^{-3}\pi_c\) in CA-I 46981–46988;
+the factor \(L^{-3}\) must not be lost. With \(h_N=N^2-1\),
+\[
+ p_c(V):=-\log\det\{J_c(V)J_c(1)^{-1}\}
+ =-\sum_{n\ge1}\frac{(-1)^{n+1}}n\operatorname{Tr}_{\mathfrak g}E_c^n,
+ \qquad |p_c|\le h_N/3.
+ \tag{7.10}
+\]
+The estimate uses
+\(\sum_{n\ge1}4^{-n}/n\le\sum_{n\ge1}4^{-n}=1/3\).
+It fixes the analytic logarithm without an absolute value of a complex
+determinant. The reads are the actual double block and its composed
+averaging carriers. Their equality on common lifts is exact.
+Admission of \(V\) to this ball retains the hypotheses of piv §6,
+or the account's unit-lattice lemma, CA-I 46992–47061.
+It is not concluded from pivot invertibility alone.
+
+**Outcome of Attack 4.** The scalar integral and pivot factor have
+been identified, and the pivot logarithm has a local analytic bound.
+Recovering them by setting the normalized lrb integrand to one fails
+by (7.2). Even after the correct recovery (7.8), lrb supplies no
+unconditional bound for the walk expansion of \(A_k\): it assumes it.
+This attack therefore stops at the actual precision's local walk bound,
+not at Gaussian normalization.
+
+### Attack 5: perturb the actual flat fiber using piv and mu
+
+The flat lower bound need not remain a separate unexplained input on
+the trivial nest. The outline proves the needed argument at
+SA 8467–8731. We port it here; it is not a new derivation of a result
+missing from their text.
+
+Let \(P^{[k]}\) be the derivative of the actual \(k\)-fold plain
+average at the identity. Differentiating CMP 109 (0.10)–(0.12)
+gives a straight-segment average plus a coarse gradient of internal
+contour sums. Iteration preserves this description. With \(n=L^k\),
+\[
+ (d_nP^{[k]}w)_{\mu\nu}(y)
+ =n^{-4}\sum_{x\in B_n(y)}\sum_{r,s=0}^{n-1}
+                  (dw)_{\mu\nu}(x+re_\mu+se_\nu).
+ \tag{7.11}
+\]
+The four boundary segments telescope; internal edges cancel.
+The positive plaquette weights in (7.11) have row sum \(n^2\).
+Their column sum is \(n^{-2}\): for each pair \((r,s)\), exactly
+one centered block contains the corresponding starting point.
+Weighted Cauchy therefore gives
+\[
+ \|d_nP^{[k]}w\|_2^2\le n^2n^{-2}\|dw\|_2^2=\|dw\|_2^2 .
+ \tag{7.12}
+\]
+This is where dimension four matters. It is valid on finite tori,
+with multiplicities retained, for every color component.
+
+The flat constrained classical Hessian is
+\[
+ E_k(a)=\min_{P^{[k]}w=a}\|dw\|_2^2\ge\|da\|_2^2
+ \tag{7.13}
+\]
+in the current lattice's own units. The affine set is nonempty:
+put each coarse value on all fine bonds crossing its face and zero
+on internal bonds. This is a right inverse at every scale.
+A finite-dimensional affine subspace has a nearest image under \(d\),
+so the minimum exists. Flat stationarity identifies this quadratic
+minimum with the background Hessian; the first variation vanishes,
+so no second derivative of the lift contributes. Equation (7.7)'s
+multiplier correction also vanishes at this pair.
+
+Let \(G\) be the arithmetic internal-contour gauge derivative and
+\(C_0=C_{\flat}(1)\). The actual precision thus obeys
+\[
+ \langle u,A_k(P_\circ)u\rangle
+ =E_k(C_0u)+\|GC_0u\|_2^2
+ \ge\|dC_0u\|_2^2+\|GC_0u\|_2^2 .
+ \tag{7.14}
+\]
+This uses the actual soft contour gauge; it does not replace it by a
+divergence projector.
+
+For completeness, the fixed-cell step making the lower bound uniform
+is the one in SA 8620–8723. In a side-\(L\) cell the free space has
+\(4L^4-4\) scalar coordinates. At Bloch parameter \(p\), the pivot
+block is \(L^{-3}I_4\), independently of \(p\). Thus \(C_0(p)\)
+is a continuous Laurent-polynomial matrix, is the identity on its
+free coordinates, and has range \(\ker P_L(p)\).
+If \(a=C_0(p)u\), \(d_pa=0\), and \(Ga=0\), plaquette swaps make
+every internal contour sum independent of its path. Their average
+being zero forces all internal bonds to vanish. A plaquette crossing
+a block face then equates its two crossing bonds. Connectivity of
+the transverse face grid makes their values one common value on
+that face. The plain constraint equals that value and forces it to
+zero. Hence \(a=u=0\), including at \(p=0\).
+
+The continuous finite matrix
+\[
+ C_0(p)^*(d_p^*d_p+G^*G)C_0(p)
+\]
+therefore has a strictly positive minimum Rayleigh quotient \(c_L\)
+on the compact Bloch torus. Otherwise a convergent sequence of
+parameters and unit vectors would give a unit null vector.
+The finite Fourier transform and (7.14) prove
+\[
+ A_k(P_\circ)\ge c_L I
+ \tag{7.15}
+\]
+uniformly in \(k\) and volume. There are \(N^2-1\) identical color
+copies. The same inequality holds for a genuine Dirichlet compression
+of this flat matrix, by extending a vector by zero. It does **not**
+identify that compression with a partial walk sum at a local datum.
+The latter distinction remains the one in round-one (4.4).
+
+Now try to continue (7.15) using only the new analytic charts.
+Mu §4.1 gives a bounded holomorphic map on a depth-independent ball
+in its weighted value norm. Cauchy's formula gives bounds for its
+derivatives in that norm on a smaller ball. Piv gives fixed-range
+bounds for \(C_{\flat}\) and its derivatives on admitted references.
+These facts control coordinate changes. They do not yet bound the
+weighted walks of the Hessian in (7.14) at a complex independent pair.
+
+The exact missing derivatives can be displayed. In CA-I
+47565–47573, put
+\[
+ H_k=P_\Lambda T_1^{-1}P_\Lambda-a+\mathcal J[\mathfrak j]+\mathsf G,
+ \qquad A_k=C_{\flat}^{\mathsf T}H_kC_{\flat},
+ \qquad T_1=QG_1Q^{\mathsf T}.
+ \tag{7.16}
+\]
+Here \(P_\Lambda\) and \(a\) are fixed by the geometry; the current,
+averaging letters and inverses retain their specified dependence.
+A variation of the datum gives exactly
+\[
+ \begin{split}
+ \dot A_k={}&\dot C_{\flat}^{\mathsf T}H_kC_{\flat}
+       +C_{\flat}^{\mathsf T}\dot H_kC_{\flat}
+       +C_{\flat}^{\mathsf T}H_k\dot C_{\flat},\\
+ \dot H_k={}&-P_\Lambda T_1^{-1}\dot T_1T_1^{-1}P_\Lambda
+                  +\dot{\mathcal J[\mathfrak j]}+\dot{\mathsf G},\\
+ \dot T_1={}&\dot QG_1Q^{\mathsf T}
+       +Q\dot G_1Q^{\mathsf T}+QG_1\dot Q^{\mathsf T},\\
+ \dot G_1={}&-G_1(\dot G_0^{-1}+\dot W_1)G_1 .
+ \end{split}                                                     \tag{7.17}
+\]
+The last line is used wherever the actual inverse exists, or first
+at the flat point. It is obtained by differentiating its defining
+inverse equation. These identities exhibit the derivative of each
+factor; they do not estimate it.
+
+In particular the chart bounds do not estimate the independent-current
+terms in \(\dot W_1\) and \(\dot{\mathcal J[\mathfrak j]}\), nor the
+local walk majorants of \(T_1^{-1}\). Mu does not vary that independent
+current. Its nesting identity permits restriction of an already
+admitted background, not removal of those variations from (7.17).
+
+There is also a spatial loss even if one could prove an operator-norm
+perturbation bound. To check the inference, take a torus of \(V=T^4\)
+sites, let \(\mathbf1\) be its constant vector, and set
+\[
+ P_T=V^{-1}\mathbf1\mathbf1^{\mathsf T},\qquad
+ A_T(t)=I+tP_T,\qquad |t|<1/4.
+ \tag{7.18}
+\]
+Here \(P_T^2=P_T\), \(\|P_T\|_{2\to2}=\|P_T\|_{\infty\to\infty}=1\).
+Thus \(A_T\) has a uniform analytic ball and
+\(\operatorname{Re}A_T\ge3I/4\). The minimizer of its real quadratic
+form is identically zero, with a trivial pivot chart.
+Nevertheless, for fixed real \(t>0\), one distant off-diagonal entry
+in a weighted row gives
+\[
+ \sup_x\sum_y |(A_T(t)-I)(x,y)|e^{b|x-y|}
+       \ge t\,T^{-4}e^{bT/2}\longrightarrow\infty
+       \quad(b>0).
+ \tag{7.19}
+\]
+Taking even \(T\) makes the distance \(T/2\) exact.
+This is a counterexample only to deducing exponential locality from
+analytic and spectral bounds. It is not the actual local Yang–Mills
+action and does not refute the target.
+
+**Outcome of Attack 5.** The flat spectral lower bound is supplied
+by a port of the outline's proof. The analytic-chart attack reaches
+(7.17) but gives no depth-uniform local walk bound for its inverse
+and current factors. Equation (7.19) shows why an operator-norm
+Neumann argument alone would not finish it. The local equations,
+rather than the chart's value bound, must supply the missing estimate.
+
+### Attack 6: expand the actual Schur words, keeping their junctions
+
+This attempt uses the actual word assembly in CA-I 47294–47635.
+It is not a new choice of precision. The constrained inverse is
+formed first; two current-dependent inverse series and two branching
+operations then enter (7.16). On the trivial nest the geometric
+separation conditions are void. The ultraviolet scales inside the
+letters remain.
+
+For one branch write \(G_\pi=(G_0^{-1}+W_\pi)^{-1}\). At finite depth,
+whenever its Neumann series converges,
+\[
+ G_\pi=G_0-G_0W_\pi G_0
+       +G_0W_\pi G_0W_\pi G_0-\cdots .
+ \tag{7.20}
+\]
+The second branch has the same inverse identity with \(W_1\).
+Expanding \(T_\pi^{-1}\) or \(T_1^{-1}\) adds the corresponding
+coarse inverse and its local Dirichlet expansions. Every product
+must retain its entire reading hull. The form finally produced is
+(7.16), with its sign \(-a\), soft-gauge term and current vertex
+unchanged.
+
+The crude attempt is to estimate each factor by its absolute kernel
+sum, then use multiplication of Schur norms. The account singles out
+\[
+ \mathfrak b=(DG')(D^*G_0D)(G'D^*)
+ \tag{7.21}
+\]
+before doing this. Its prescribed treatment uses orders \((1,0,1)\)
+and smooth junctions, CA-I 47389–47394. The reason this cannot simply
+be omitted can be computed by hand.
+
+The continuum local model for the middle differentiated Green kernel
+in four dimensions is
+\[
+ g(x)=\frac1{4\pi^2|x|^2},\qquad
+ \partial_\mu\partial_\nu g(x)
+ =\frac1{4\pi^2}\left(
+       -\frac{2\delta_{\mu\nu}}{|x|^4}
+       +\frac{8x_\mu x_\nu}{|x|^6}\right),\quad x\ne0 .
+ \tag{7.22}
+\]
+Two differentiations of \(r^{-2}\) give the two displayed terms.
+For \(\mu\ne\nu\), its absolute radial integral over
+\(\eta<|x|<1\) is
+\[
+ c_{\mu\nu}\int_\eta^1\frac{dr}{r}
+       =c_{\mu\nu}\log(1/\eta),\qquad
+ c_{\mu\nu}=\frac2{\pi^2}\int_{S^3}|\omega_\mu\omega_\nu|\,d\omega>0 .
+ \tag{7.23}
+\]
+Positivity follows already on a small open patch where both coordinates
+are nonzero. No numerical evaluation of this constant is needed.
+At \(\eta=L^{-k}\), (7.23) grows as \(k\log L\).
+
+The cancellation discarded by absolute values is equally explicit:
+\[
+ \int_{S^3}\omega_\mu\omega_\nu\,d\omega
+       =\tfrac14\delta_{\mu\nu}|S^3|,
+\]
+by reflections, permutation symmetry and \(\sum_\mu\omega_\mu^2=1\).
+Consequently (7.22) has zero mean on every sphere.
+If a junction factor \(f\) is Hölder with exponent
+\(0<\alpha\le1\), subtract \(f(x)\) before estimating its convolution.
+The constant part cancels on each full annulus. The remaining local
+integral is bounded by
+\[
+ C[f]_\alpha\int_\eta^1 r^{\alpha-1}\,dr
+       \le C[f]_\alpha/\alpha .
+ \tag{7.24}
+\]
+Boundary cutoffs add their own differences; their Hölder norms must be
+included. This calculation identifies a possible repair of the crude
+estimate, not a divergence of the true composite (7.21).
+
+To apply that repair to the lattice word, one needs the corresponding
+discrete cancellation and junction estimates **with the actual
+Dirichlet boundaries, averaging rows, local background/current
+variables and all reading hulls**. The elementary-sheet inputs
+at CA-I 47294–47324 name precisely the CMP 99b (3.43), (3.44)
+Hölder estimates. The singular-word step then imports its own
+smooth-junction lemma. Local CMP 99b pp. 427–428 also explains that
+expanding the current correction creates a third branch through \(H\);
+it is not a product of two kernels with the third branch suppressed.
+
+The attempted absolute-kernel estimate can now be stated precisely.
+Replacing the order-zero letter by the envelope
+\(C(|x-y|+\eta)^{-4}\) on distances at most one gives a Schur
+upper bound \(C'(1+\log(1/\eta))\). Indeed, the innermost ball
+has bounded integral and the remaining radial integral is
+\(C'\int_\eta^1dr/r\). Combining this envelope with the finite
+pivot bounds would impose a sufficient small-current condition of
+the form \(C''(1+k\log L)\|\mathbf J\|<1\).
+This estimate supplies no fixed scale-normalized radius.
+It is an estimate for that envelope, not a lower bound on the
+actual discrete word or a necessary condition for its convergence.
+In particular, (7.23) alone does not prove that a logarithmic loss
+survives in the lattice composite.
+
+Keeping the cancellation leads instead to (7.24). Its missing input
+is a uniform local estimate for the true junction factors, including
+the dependence of \(H,H_1,T_\pi^{-1},T_1^{-1}\) on free current.
+Piv estimates only the finite unit-lattice letters at the ends.
+Mu's physical minimizer value bound does not give this estimate.
+Lrb begins after these letters have already been assembled into a
+family satisfying W′. Using lrb's walk bound to estimate (7.21)
+would therefore be circular.
+
+**Outcome of Attack 6.** The actual inverse/branching route has been
+followed to its singular junction. The crude order-zero envelope
+loses a logarithm; cancellation repairs that model loss, but its
+required local lattice Hölder estimates have not been supplied for
+the full actual family. The missing bound is
+formulated as one precise sufficient lemma below. This is a failed
+attempt, not a no-go statement.
+
+**The depth-zero case does not need this estimate.** At \(k=0\)
+the classical action is the Wilson action itself. Its quadratic
+form is the sum of the four-link plaquette Hessians (2.3), the
+soft contour-gauge square, and the constraint-multiplier term
+\(-2\langle hC^{(2)}(B),\mathbf J\rangle\), followed by the two
+factors \(C_{\flat}\). These are the direct step definitions in
+CMP 109 §2 and CA-I 46972–46989. There is no fine-scale inverse
+in this formula. Each factor reads a fixed finite number of
+unit-lattice blocks. Piv's joint holomorphic bound, on a smaller
+ball, bounds its first and second derivatives by Cauchy's formula;
+the Wilson factors are finite products of exponentials. The current
+vertex is linear in \(\mathbf J\).
+
+Expand just this finite sum and its finite products. Assign to each
+term its full connected block read. There are at most \(n_L\)
+terms through any fixed bond, each with at most \(m_L\) other
+bond indices and read diameter at most \(R_L\); these finite
+numbers depend on the stencil and \(L\), not on the torus.
+If \(C_{L,N}\) bounds each coefficient on the fixed smaller
+potential/current ball, both weighted sums are at most
+\(n_Lm_LC_{L,N}e^{\delta R_L}\), for any fixed \(\delta>0\).
+The same coefficients and bounds are defined from local data alone.
+This proves the required depth-zero version by a finite analytic
+estimate. The unresolved quantifier in OL-W0 is \(k\ge1\).
+
+## 8. What the remaining precision lemma would close
+
+This section gives the reduction, with the hypothesis kept visible.
+Assume the lemma OL-W0 stated in the Result, and combine it with
+the depth-zero bound just proved by taking the larger majorant
+constant and the smaller rates and radii. It asks for the actual
+precision's local walk majorants near the flat pair, uniformly in
+depth. It asks for no one-loop value and no estimate of a determinant.
+
+### 8.1 From the precision family to local resolvents
+
+Write its bound as \(B\), its rate as \(\delta\), and its scaled
+analytic radius as \(r_*\). On a radial subdisc of relative radius
+\(s<1\), Cauchy's formula, applied to each local coefficient, gives
+\[
+\max\!\left\{
+\sup_b\sum_{\omega,b'}
+ |(A_{k,\omega}(P)-A_{k,\omega}(P_\circ))(b,b')|
+ e^{\delta d(\omega;b,b')},\quad
+\sup_{b'}\sum_{\omega,b}
+ |(A_{k,\omega}(P)-A_{k,\omega}(P_\circ))(b,b')|
+ e^{\delta d(\omega;b,b')}
+\right\}
+\le B\frac{s}{1-s}
+ \tag{8.1}
+\]
+in both row and column sums. The right side follows by summing the
+positive-degree Taylor coefficients against their **datum-independent**
+majorants. More explicitly, write \(A'=sA'_0\),
+\(\mathbf J=s\mathbf J_0\), and expand the one-variable function
+\(t\mapsto A_{k,\omega}(e^{it\xi A'_0},t\mathbf J_0)\).
+Each coefficient of a kernel entry is bounded by its majorant
+\(a_{k,\omega}(b,b')\); summing \(\sum_{n\ge1}s^n\) proves
+(8.1), with no count of coordinate monomials. A bound on the sum
+of the matrices alone would not justify this step. Choose
+\(s>0\) so \(Bs/(1-s)\le c_L/8\).
+
+For the account's near/far split choose \(r'\) with
+\(Be^{-\delta r'}\le c_L/8\), as well as the account's
+condition (k1).
+The flat full form has gap \(c_L\) by (7.15). Its near part thus has
+gap at least \(7c_L/8\). A local cell matrix is the compression of
+that near part; its read lies in the enlarged cell. Equation (8.1)
+on that read changes its norm by at most \(c_L/8\).
+Consequently every such local cell matrix has real part at least
+\(3c_L/4\). This compares locally defined matrices with the flat
+matrix directly. It does not extend the nonzero local datum to a
+torus.
+
+The same estimates give global coercivity. They verify the
+near-flat positivity, inclusion and regularity requirements of the
+local cell-resolvent construction; one may use
+\(\gamma_*=c_L/2\), so the cell bound is stronger than its
+required \(7\gamma_*/8\). Apply the account's proved
+4.4:lem-cell-resolvent, CA-I 6219–6310, with its local form and its
+(k1),(k2) choices. In its notation this supplies, for every
+\(\lambda\ge0\),
+\[
+ R_k^Y(\lambda)=\sum_\varpi R_{k,\varpi}^Y(\lambda),\qquad
+ |||R_k^Y(\lambda)|||_\theta\le\frac{4S}{\lambda+c},
+ \quad c=\gamma_*/2>0 .
+ \tag{8.2}
+\]
+The constants are fixed before \(M\), uniformly in \(k,Y\) and volume.
+Every term is analytic on its own read and uses the actual Dirichlet
+cell matrices. Equal reads give equal terms on a common lift.
+The local proof at CA-I 6827–6963 uses just these cell inequalities,
+the datum-independent Schur majorants and the near/far geometry.
+It sums families of kernels on the local region; it does not assume
+that their partial sum is an inverse on that region.
+
+This application ports the existing cell-parametrix proof. It does
+not assert that an inverse of an interpolated precision equals an
+interpolated inverse. On broader regular backgrounds lrb retains
+its full upstream positivity hypotheses; (8.1) is only the
+near-flat specialization needed for the coefficient lemma.
+
+### 8.2 The actual determinant family, with an absolute bound
+
+The account already localizes the scalar determinant at CA-I
+9707–9757, ported in p4-operator A3-F2–F3. Use that rule, not the
+normalized vertex (7.1). With the positive number \(c\) of (8.2),
+\[
+ -\tfrac12\log\det A_k^Y(P)
+ =\mathrm{const}
+ -\tfrac12\int_0^\infty
+ \frac{\operatorname{Tr}[(A_k^Y(P)-cI)R_k^Y(\lambda;P)]}
+      {\lambda+c}\,d\lambda .
+ \tag{8.3}
+\]
+The scalar identity follows by integrating the difference of two
+resolvents. At finite matrices it follows on each Jordan block by
+differentiating that scalar identity. All eigenvalues of an accretive
+matrix lie in the right half-plane, so the logarithm is the branch
+continued from positive matrices. This is the source's proof route.
+
+For a diagonal entry \((b,b)\), expand the product in (8.3).
+Retain every intermediate bond and every walk footprint.
+The \(X\)-term collects
+\(\operatorname{tr}_{\mathfrak g}(A_{k,\omega}R_{k,\varpi}^Y)(b,b)\)
+when the account's hull of their combined footprints is \(X\).
+The \(-cR\) term is collected by its own footprint. Subtract the
+identically collected term at \(P_\circ\). This is a formula for
+the actual local scalar term, not a determinant of a replacement
+local covariance.
+
+The weighted row and column sums multiply: the union of trees
+meeting at the intermediate bond has length at most the sum of their
+lengths. Equation (8.2) therefore bounds the absolute integral before
+any grouping by
+\[
+ \int_0^\infty
+ \frac{4S(B+c)}{(\lambda+c)^2}\,d\lambda
+       =\frac{4S(B+c)}c .
+\]
+The trace costs \(h_N=N^2-1\). The factor \(1/2\) and the two
+vacuum-subtracted evaluations cancel in the upper bound. Hence at
+each fixed root bond
+\[
+ D_{\log}:=\frac{4h_NS(B+c)}c
+ \tag{8.4}
+\]
+bounds the full absolute, length-weighted determinant family.
+There is no factor equal to the volume or the number of free bonds:
+the estimate is for a *rooted diagonal entry*. This is the quantitative
+addition to the existing p4 absolute-interchange argument.
+
+For clarity, the passage from this walk weight to a polymer weight
+requires the full dependence footprints. Let \(D\) be the total
+tree length of a contributing product in step-\(k\) units.
+Its steps have uniformly bounded diameter; choose \(M\) so this
+diameter is at most \(LM/4\). The connected cube hull, with its
+fixed finite collars, meets at most
+\[
+ C_h\left(1+\frac{D}{LM}\right)
+ \tag{8.5}
+\]
+cubes of side \(LM\), for a geometric constant \(C_h\).
+Here the hull is the cubical localization hull of the walk rule,
+not the full rectangular box surrounding a long thin walk.
+The convention is SA 5586–5596: the union of cubes containing the
+set, with the fixed collars required for its complete read.
+
+One elementary bound proving (8.5) is obtained by traversing a finite
+tree in both directions, a path of length at most \(2D\).
+Mark this path at arclength intervals \(LM\).
+Every point of a step domain is within \(LM+LM/4\) of a mark.
+Each such neighborhood meets at most \(5^4\) grid cubes.
+A fixed number of collar layers only multiplies this count by a
+fixed finite number. Thus \(C_h\) may be chosen as twice that number
+times \(5^4\). Infima defining tree lengths are handled by first
+using a tree within \(\epsilon\) of the infimum and letting
+\(\epsilon\downarrow0\). No enumeration is used.
+
+Joining centers of neighboring cubes by paths through their common
+faces or corners gives
+\[
+ d_{k+1}(X)\le4C_h\left(1+\frac{D}{LM}\right).
+ \tag{8.6}
+\]
+The factor four is the dimension; the joining paths remain in the
+connected union of cubes. This is consistent with CA-I 3725–3761's
+tree-length convention. If an intermediate choice of hull adds
+fixed collars, use its correspondingly enlarged \(C_h\).
+
+After \(\theta,C_h\) and the required \(\kappa\) have been fixed,
+choose \(M\) with \(4\kappa C_h/(LM)\le\theta/2\).
+Equations (8.4)–(8.6) then give, before pointing,
+\[
+ |d_b(X;P)|\le
+ D_{\log}e^{4\kappa C_h}e^{-\kappa d_{k+1}(X)}.
+ \tag{8.7}
+\]
+Half the walk decay remains for spatial moments. The prescribed
+midpoint tents have finite support and finite overlap in rescaled
+units. Let \(C_{\rm pt}\) be their overlap bound, including the
+finite bond multiplicity. It depends only on the fixed template and
+the auxiliary parameters. Pointing costs at most \(C_{\rm pt}\).
+This is precisely the midpoint rule at SA 5917–5925.
+The pivot terms (7.10), whose full reads have bounded size, obey
+the same form of bound after increasing the constant.
+
+The majorants in OL-W0 and (8.2) are valid for locally given data.
+Consequently all rearrangements above are locally absolutely
+convergent and holomorphic, without choosing an extension.
+On a non-wrapping common lift every factor, intermediate index and
+integration weight is identical. The terms agree exactly there.
+A suppressed winding walk cannot hide in a coefficient.
+
+On a finite torus, summing all roots and hulls in (8.3) returns the
+determinant in (7.8); adding the pivot terms returns the genuine
+Gaussian normalizer. The correct scalar branch is retained.
+Individual localized matrices need not be symmetric. No
+\(\det(\operatorname{sym}C^{-1})\) is substituted into (8.3);
+that symmetrization belongs to lrb's normalized real integral.
+
+### 8.3 Physical substitution, moments and constants
+
+Every scalar term just constructed is invariant under simultaneous
+constant color conjugation. Its first derivative at the flat pair
+therefore vanishes. Indeed, fixing any one bond or current slot gives
+an invariant linear functional on the traceless matrices. Such a
+functional kills every commutator. Off-diagonal matrix units are
+commutators with diagonal matrices, and traceless diagonals are
+linear combinations of \([E_{ij},E_{ji}]\); hence that functional
+is zero. This argument applies separately to each slot.
+
+The physical total has the account's lattice translation and
+reflection covariance. Transform the actual finite Gaussian and
+its constraint together. The symmetry permutes the bond variables,
+transports the specified contours, and changes the axial
+representative by a gauge transformation when necessary.
+Gauge normalization is the constant checked before (7.7);
+(7.5) retains the constraint Jacobian. Thus its scalar integral,
+and then its normalized logarithm, are unchanged. This uses the
+account's symmetry-respecting average and attachments, not a new
+symmetrization of the localized matrices.
+
+For each fixed \(l\), take a smaller positive physical \(B\)-radius
+whose background/current image lies in the local polydiscs above.
+The chart admission and nesting are precisely the relevant
+conclusions of mu, with their stated input ceilings; the free
+response is the one used in §3.3. Conversion to raw coordinates can
+shrink this radius with \(l\). The precursor pair radius is fixed
+in the potential/current norms, as requested in Lemma 4.2(a).
+No assertion about arbitrary large-field or unadmitted representatives
+is made.
+
+Choose the polymer decay with a strict margin above the domain
+entropy constant in CA-I 3742–3747. Cauchy's estimate on a smaller
+pair ball, the surviving walk decay, and the fixed-depth response
+bound give the summable Hessian majorant used in §3.3.
+In particular the second spatial moment is finite: a polynomial
+of degree two times an exponential is summable on \(\mathbb Z^4\).
+Port the convergence argument of CA-I 58732–58989 in its
+Gaussian-only specialization. Its analytic inputs are the local
+majorants just obtained, the common-lift equality and the fixed-depth
+free response used in §3.3. These give a bound
+\(C_l e^{-\delta_l(|x-z|+|y-z|)}\) for the pointed Hessian.
+Summation over \(z\), with any second moment in \(x-y\), is
+absolutely convergent: one may reserve half of the exponential
+for the polynomial moment and sum the other half. Non-wrapping
+terms agree on a common lift, and the wrapping tail tends to zero.
+Dominated convergence therefore identifies the Hessian of the
+finite-volume total with the sum of companion Hessians. Covariance
+of that total, proved above at physical data, passes to this limit.
+This step needs no assertion that an individual bond-rooted
+logarithm is covariant under a change of pivot coordinates.
+It is the same conditional transfer as §3.3, with its
+analytic-family supplier reduced to OL-W0; the broader non-Gaussian
+covariance hypotheses of the source theorem are not asserted here.
+
+The order of constants is unchanged. The bulk calculation fixes
+\(c_0\) and \(c_2^{\rm bulk}(L,N)\) at Stage 2, CA-I 1416–1427.
+The local majorants, cell radius and decay are chosen before the
+later \(M\)-floors; \(M\) then absorbs the interpolation, hull and
+entropy costs. Finally the allowed potential/current radii are
+decreased, with their ratio floors retained.
+The localization amplitude may depend on \(\mathfrak p\);
+\(c_2^{\rm bulk}\) does not.
+
+Under OL-W0, (7.8), (8.7) and this transfer therefore prove
+OL-loc on the near-flat polydiscs needed by Lemma 4.2, and §§2–3 give
+\[
+ \left|\sum_{l=1}^k\beta_l^0-kc_0\right|
+ \le c_2^{\rm bulk}(L,N),\qquad
+ \left|\sum_{l=i+1}^n\beta_l^0-(n-i)c_0\right|
+ \le2c_2^{\rm bulk}(L,N).
+ \tag{8.8}
+\]
+These remain implications. Neither lrb, piv nor mu supplies OL-W0.
+
+## 9. Current recovery checkpoint and limits
+
+This is the current checkpoint; §5 records round one only.
+The target remains the exact lemma copied in §1, including the
+absolute finite-part bound and the order of constants.
+
+| Item | Present conclusion |
+|---|---|
+| Round-one §§2–3 | Preserved: hand reference calculation, bulk finite-part argument and conditional transfer. They remain research arguments, without a new independent review in this round. |
+| lrb comparison | Its normalized local vertex and comparison-base conclusions are usable with their stated hypotheses. W′ is an input, not a consequence of that proposition. |
+| Attack 4 | Equations (7.2)–(7.4) prove why the normalized vertex loses the scalar. Equations (7.5)–(7.10) retain the genuine determinant and control the pivot logarithm on its admitted ball. The missing estimate is for the actual precision. |
+| Attack 5 | The outline's flat-fiber argument gives (7.15), uniformly in depth and volume. Charts and minimizer values do not bound the independent-current derivatives and spatial walks in (7.17). The explicit example (7.18) refutes that inference alone. |
+| Attack 6 | The true assembly reaches the order-zero singular junction (7.21). The crude envelope gives a depth-dependent sufficient radius. The hand cancellation (7.24) identifies what a uniform lattice junction estimate must preserve; that estimate is still missing. The finite-stencil case \(k=0\) is covered. |
+| Reduction | §8 derives the required near-flat local Gaussian family from OL-W0, with exact scalar normalization, common-lift agreement and the account's constant order. This is an implication, not a proof of OL-W0. |
+
+The next decision is whether the published differentiated-kernel and
+Hölder estimates, with their actual boundary and current hypotheses,
+give datum-independent local majorants for the full word (7.21)
+and its two current branches. Start at CA-I 47294–47584 and local
+CMP 99b Theorem 3.12 and pp. 427–428. A proof must carry the full
+reading domains through the Schur inverses and both branching
+operations. A global norm estimate, a normalization convention,
+or a numerical check would not decide OL-W0.
+
+The source revision is still Sussman–Alpoge 31a47c543775, credited
+to Ethan Sussman and Levent Alpoge, with Claude and Codex as authors
+of their text. The finite-dimensional Gaussian step is Bałaban's.
+The current checkout is 5129d8d4e01a632c1293ab712f8a758dcc64e6f5.
+The outline and CA-I were each fetched once in this round; their
+SHA-256 values are the ones recorded in §5. CA-II and CA-III were
+searched for the exact target label at their existing pinned copies.
+Source quotations and uses were checked against bounded source
+ranges; the full large source files were never read into context.
+
+Frozen local input identities (SHA-256):
+
+    lrb.md  23b7d710a2dff388ac1adbededa2177a0a0bf02f97d12523ca9f9fb35552969d
+    piv.md  9e5483ca902652af890da208e3cc9f8479c42b0bd88450d827b2637ace383763
+    mu.md   2f3643c41fa8655a01ae8a6f7afa16c45f459bf41512c585acbeae63504a323b
+
+The original round-one file has SHA-256
+73111c1ec99a4784d9d3564cf037df04e1e561339474b3e16cebd7052ef1df7b;
+a recovery copy is at /tmp/ol-round2-5129d8d4e/ol-round1.md.
+The text-integrity record is
+/tmp/ol-round2-5129d8d4e/verification.json.
+Only library/ol.md is edited. Source downloads, navigation,
+hashing and textual integrity checks are bookkeeping. No run,
+enumeration, numerical integration or computer enclosure is used
+to discharge a mathematical assertion. The new arguments have
+not received an independent referee check. No audit, claim status,
+planning record or editable prompt is changed.
+
+## Result
+
+**Open lemma**
+
+**OL-W0: intrinsic analytic walk bound for the actual free-current
+precision near the flat pair, at positive depth.** Fix \(d=4\),
+\(N\ge2\), and the account's admissible odd \(L\). Fix the operator
+frame parameters at their prescribed early stages, before the
+localization cube size \(M\). There exist positive
+\(r_A,r_J,\delta,B,\rho_w\), depending only on these fixed parameters
+and \(L,N\), with the following property, uniformly for every
+\(k\ge1\) and every admitted torus at the trivial nest
+\(\mathcal S_0\).
+
+Use the actual free-current quadratic form of CA-I 4737–4849,
+in its free-bond notation (7.16):
+\[
+ A_k(P)=C_{\flat}(P)^{\mathsf T}
+ \bigl(P_\Lambda T_1(P)^{-1}P_\Lambda-a
+       +\mathcal J[\mathfrak j](P)+\mathsf G(P)\bigr)
+ C_{\flat}(P),\qquad T_1(P)=Q(P)G_1(P)Q(P)^{\mathsf T}.
+ \tag{OL-W0.1}
+\]
+All averages, currents, pivot coefficients, intermediate inverses
+and contour attachments in this formula have the account's
+definitions. In particular \(\mathbf J\) is an independent variable,
+and the constraint-current Hessian is retained.
+
+For a local reading domain \(D\), let \(\mathcal P_*(D)\) be the
+flat-base polydisc of locally given pairs
+\[
+ P=(e^{i\xi A'},\mathbf J),\qquad
+ \max\{|A'|,|\nabla^\xi A'|\}<r_A,\qquad
+ |\mathbf J|<r_J
+ \tag{OL-W0.2}
+\]
+on all bonds and difference stencils read in \(D\). The fields are
+complex and Lie-algebra valued; \(\xi\), the current normalization
+and changes of units are those of CMP 109 (1.13)–(1.14) and
+CA-I 4610–4703. No additional plaquette condition or global
+extension is part of this local polydisc. Equivalently the two
+radii are fixed in those scale-normalized norms, not in raw
+unscaled bond coordinates.
+
+The account's actual word expansion and Dirichlet-cube rules,
+CA-I 47294–47584, give coefficients \(A_{k,\omega}\) with these
+properties:
+
+1. **Identification and complete reads.** On global data in
+   \(\mathcal P_*\),
+   \(A_k=\sum_\omega A_{k,\omega}\), including both current
+   branches and the \(C_{\flat}\) factors of (OL-W0.1).
+   Each coefficient is defined and holomorphic from data on its
+   complete read \([\omega]\) alone. Every step domain includes
+   what that step actually reads, has diameter at most \(\rho_w\)
+   in step-\(k\) units, and consecutive domains intersect.
+   Intermediate averaging carriers and boundary data are included;
+   they may not be suppressed from the footprint.
+
+2. **One local majorant bound.** There are nonnegative numbers
+   \(a_{k,\omega}(b,b')\), independent of the datum, such that
+   \[
+   \sup_{P\in\mathcal P_*([\omega])}
+       |A_{k,\omega}(b,b';P)|\le a_{k,\omega}(b,b'),
+   \]
+   \[
+   \max\!\left\{
+   \sup_b\sum_{\omega,b'}a_{k,\omega}(b,b')
+          e^{\delta d(\omega;b,b')},\quad
+   \sup_{b'}\sum_{\omega,b}a_{k,\omega}(b,b')
+          e^{\delta d(\omega;b,b')}
+   \right\}\le B .
+   \tag{OL-W0.3}
+   \]
+   Here \(d(\omega;b,b')\) is exactly CA-I 4875–4907's
+   shortest-tree length: the tree contains the two initial bond
+   points and meets every complete step domain. The norm of a
+   kernel entry is the operator norm on the complex color space.
+   This is a bound for the absolute family, before summing it
+   into a matrix. It must hold when only local data are supplied.
+
+3. **Intrinsic rule.** Equal complete reads in two geometries,
+   including a non-wrapping common lift, produce equal coefficients
+   and the same majorant assignment. Restrictions and the
+   prescribed color/frame transformations act on the coefficients
+   as they do on the actual defining operators. The constants in
+   (OL-W0.2)–(OL-W0.3) are independent of \(k\), volume,
+   localization domain, \(M\) and coupling. Subsequent decreases
+   of the allowed potential/current radii preserve the bound and
+   can respect the account's primed/unprimed ratio floors.
+
+This is the near-flat, trivial-nest portion of W′ with its local
+quantifier and scalar-independent operator content made explicit.
+It is one sufficient operator lemma, not a claimed necessary
+condition for the one-loop law. The depth-zero case, the flat
+spectral lower bound and the pivot logarithm are established above.
+The three new attacks fail for the distinct reasons recorded in
+§7: normalization erases the scalar; charts and a spectral gap do
+not supply spatial/current control; and absolute estimates at the
+singular junction discard the cancellation needed for a uniform
+local radius.
+
+If OL-W0 is proved, §8 supplies OL-loc and the preserved calculation
+gives the account's full one-loop statement, with
+\(c_0=11N^2\log L/(12\pi^2)\) and \(c_2=c_2(L,N)\).
+OL-W0 has not been proved here. No counterexample to Lemma
+4.2:lem-one-loop is claimed, and that lemma remains open in this
+research text.

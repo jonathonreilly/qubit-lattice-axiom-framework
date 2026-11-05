@@ -671,7 +671,7 @@ L > L₀♮ := max{4C_h^WF, 8C_pr}·[c♮_2 + 2C_h(c♮_1 + 5)](1 + 4β_s) and �
 
 Here κ₀♮(L) makes the κ-free part of the lower endpoint λ₀ + σ₁ + σ₂ + Θ♮/L smaller than the gap between the slopes. All constants in L₀♮ are geometric and independent of L. Both changes are floors only: a larger floor on L in row 2 and a floor on κ, which depends on L, in row 4. L is chosen before κ, so no cycle is created, and nothing else in the order moves. Row 2 and row 4 now state the floors.
 
-This amendment is conditional on td-draft §§8–11 surviving its distil and referee; if TD♮ changes, the amendment is revisited. The referee's verdict on Theorems 10–12 (`gates/in1-gate.md`) is unaffected, since raising floors on L and κ weakens no step.
+Codex's distil [td.md](td.md) verified this amendment for the intended natural window and asks that the kappa-floor be read explicitly as td.md's (32), with both windows retained; no cycle is created under the stated early uniformity. TD-natural there is a valid conditional construction, while ordinary-distance TD stays Outstanding. This amendment remains conditional on td.md surviving its referee; if TD♮ changes, the amendment is revisited. The referee's verdict on Theorems 10–12 (`gates/in1-gate.md`) is unaffected, since raising floors on L and κ weakens no step.
 
 
 ## Result

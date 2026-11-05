@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/d4_time_blind_events_kill_dimension_six_liv_for_scalar_fermion_photon_but_the_slicing_decides_locality_and_sign_2026_10_26.py
+runner_sha256: e82b9362e37c45b587c3f7cc3774ce5b1c9a04386d7f77a27a8386ec3cfd8827
+input_fingerprint_sha256: 444d058e8ad110437977b1de61242c960a187e6c43555df2a3eddd92f4228fa3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 9.92
+status: ok
+----- stdout -----
+PASS C0 |Aut(D4)| = |W(F4)| = 1152, roots preserved
+PASS C1 [T] sum(r.p)^2 = 12p^2, sum(r.p)^4 = 12(p^2)^2 exactly; sum(r.p)^6 = 20(p^2)^3 - 8 J6 (first non-O(4) order 6 = dim 8) | K = 6p^2 - (p^2)^2/2 + (p^2)^3/36 - J6/90 + O(p^8)
+PASS C2a [T] naive s_mu cubic = 12 p^2 p_mu, quintic = d_mu S6/6 (first breaking degree 5, dim 8)
+PASS C2b naive D4 Dirac zeros mod 2pi D4*: 72 (1 + 71 doublers), all nondegenerate, chirality sum 0 | s_mu = 4 sin p_mu sum_(nu!=mu) cos p_nu; min|detJ| 256
+PASS C2c Wilson (w=1): K = 0 only at p = 0; doubler masses wK/12 in {2, 9/4, 7/3, 8/3} | overlap window 0 < m0 < 2
+PASS C2d overlap on D4 Wilson kernel: GW exact, D(0) = 0, D = 2 at all 71 doublers (one Dirac cone) | GW resid 1.3e-15
+PASS C3a photon: W(F4) gauge-inv kernels p^2: 1 (F^2); p^4: 3 invariant, 1 gauge-inv = the O(4) one; same for rotation subgroup (576) | dim-6 photon LIV forbidden by W(F4)+gauge to all orders
+PASS C3b graviton: p^2 diffeo-inv = 1 (Einstein, one metric); p^4: 3 vs O(4) 2 -> one W(F4)-only R^2 invariant, on shell birefringent | zero on body diagonals; its coefficient in a D4 Regge action is uncomputed
+PASS C3c triangle action: 192 ordered triangles, gauge mode exact, 8 extra link modes heavy (72 vs Z = 24)
+PASS C2e/C3d no dim-6 term on shell for scalar, overlap fermion, both photon polarisations (all 4 directions) | max |k^2 coeff| 5.4e-09
+  v-1 = b k^4 (axis slicing, a = 1):  dir: scalar  fermion  photon(pol1,pol2)  | -J6/1080
+  axis: -6.611e-07 +4.258e-08 -3.292e-08,-3.292e-08 | -0.000e+00
+  face: +4.166e-03 +2.500e-02 +1.562e-03,+1.562e-03 | +4.167e-03
+  body: +4.938e-03 +2.963e-02 +1.852e-03,+1.852e-03 | +4.938e-03
+  gen: +3.947e-03 +2.369e-02 +1.481e-03,+1.481e-03 | +3.948e-03
+PASS C3e one dim-8 pattern -J6 on the cone for all species: b_scalar = -J6/1080, fermion 6x, photon 3/8 x, no birefringence
+PASS C4a site-reflection positivity: axis and root slicing pass; control (antiferro 2-step coupling) fails | min eig rel -1.8e-16, -1.2e-16; control -1.5e-01; link reflection is no lattice symmetry in either
+  root slicing (time along a root; slices = cubic lattice of cube centres): scalar b in (k a)^4 units, a = site spacing
+  axis +3.185e-06  face -1.666e-02  body -1.975e-02  gen -1.579e-02 | axis slicing: axis -6.611e-07  face +4.166e-03  body +4.938e-03  gen +3.947e-03
+PASS C4b real-time lowest band: dim-6 zero in both slicings; dim-8 superluminal (axis slicing) vs subluminal (root slicing)
+PASS C4c isotropic (boost) dim-8 part nonzero and slicing-dependent: <b>_sphere axis vs root | <b_scalar> = +3.17e-03 (axis), -1.27e-02 (root)
+PASS C4d locality: axis slicing inter-slice hop sum vanishes at real k -> E = inf, H not exponentially local; root slicing strip = m/sqrt6 | root strip 0.1224 vs mass-shell 0.1225 (no lattice singularity nearer)
+PASS C5 axis slicing: e -> e gamma opens at p_th > 1e20 eV, p -> p gamma > 1e21 eV; gamma -> ee closed (b_gamma = b_e/16 exactly) | p_th(e) 1.1e+20 eV, p_th(p as fermion) 1.4e+21 eV (body); obs e ~1e15, gamma 1.4e15, UHECR 3e20
+PASS C5b root slicing (all subluminal): e -> e gamma closed; gamma -> e+e- opens only at k_th > 1e20 eV (b_e = 16 b_gamma); nuclei stable | k_th(gamma->ee, body) 1.9e+20 eV vs LHAASO 1.4e15; P_inst/A ~ 9.9e+20 eV (parent formula)
+TOTAL: PASS=17 FAIL=0   (8.9 s)
+
+----- stderr -----
+

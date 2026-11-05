@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/d4_gauged_zoom_fixed_point_fermion_stays_exponentially_local_in_rough_u1_backgrounds_2026_10_26.py
+runner_sha256: 4837cbffb711edb693715d8d2c6556306726fc96ed758783db7eb77c60da5017
+input_fingerprint_sha256: b4dbe8e5363cf609527c7bc39090f150ef2b4e7ef062f1705d3397d4e0d0932b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 71.00
+status: ok
+----- stdout -----
+setup: D4 roots 24, norm-4 24, kernel weights 1, 1/2, 1/8; triangles per site 192; alpha = 0.5; HJL bound eps = 1/30
+PASS 0a [T+F] free limit: position-space gauged code at A = 0 equals the momentum-space #10098 map R^n(G_NN) (L_c = 4 n = 1; L_c = 2 n = 2, 3) | max err 5e-12
+PASS 0b [F] gauge covariance D_n[A + d lambda] = L^-1 D_n[A] L and g5-hermiticity (Q = 1 + rough modes, eps = 1.2, L_c = 2, n = 2) | cov 9e-16, g5-herm 4e-11
+  [t = 7 s]
+PASS 1a [F] L_c = 6, n = 1: envelope decay of ||D(x,y)|| stays exponential with rate >= 0.8 x free at the HJL bound and >= 1.0/unit up to eps = 1.9 | free 1.79/unit; IR eps=0.0333 (dev 0.03): 1.79; Q1 eps=0 (dev 0.09): 1.80; IR eps=0.3 (dev 0.30): 1.80; IR eps=1 (dev 1.00): 1.82; Q1+IR eps=1 (dev 1.00): 1.82; UV eps=1 (dev 1.00): 1.81; UV eps=1.9 (dev 1.90): 1.88
+PASS 1b [F] L_c = 4, n = 2 (fine 16^4 D4 torus, 131k complex unknowns per solve): rate >= 0.8 x free in a rough flux background and a maximally rough UV field | free eps=0: rate 2.07, GMRES its 68; Q1+IR eps=1: rate 2.55, GMRES its 78; UV eps=1.9: rate 2.23, GMRES its 73
+  [t = 34 s]
+PASS 2a [F] GW residual ||g5 D + D g5 - 2 alpha D g5 D|| / ||D|| falls monotonically with n = 1, 2, 3 in every background (only the limit is exact) | free: 2.0e-02, 9.0e-04, 3.9e-05 (x22.4, x22.9); Q1: 1.9e-01, 1.4e-01, 8.8e-02 (x1.4, x1.6); UV: 2.9e-02, 1.9e-02, 1.8e-02 (x1.5, x1.1) [pre-reg bar x1.5 per step: MISS where < 1.5]
+PASS 2b [F] the gauged zoom converges: ||D_3 - D_2|| / ||D_2 - D_1|| <= 0.7 in every background | free: dD2 9.5e-03, dD3 4.3e-04, ratio 0.05; Q1: dD2 5.8e-02, dD3 3.9e-02, ratio 0.67; UV: dD2 1.3e-02, dD3 9.4e-04, ratio 0.07
+  [t = 64 s]
+PASS 3a [F] overlap index -(1/2) Tr sign(g5(2 alpha D_n - 1)) = -Q for Q = 0, 1, -1 (smooth and eps = 1.2 rough), n = 1, 2; spectral gap > 0.05 | Q0 n1: -0 gap 1.00; Q0 n2: -0 gap 1.00; Q1 n1: -1 gap 0.22; Q1 n2: -1 gap 0.50; Q-1 n1: +1 gap 0.22; Q-1 n2: +1 gap 0.50; Q1+IR n1: -1 gap 0.22; Q1+IR n2: -1 gap 0.50; Q0+IR n1: -0 gap 0.93; Q0+IR n2: -0 gap 0.96
+PASS 3b [F] Q = 1: the lowest mode of D_n is real and chiral (g5 = -1) and moves toward 0 with n (the GW zero mode appears only in the limit) | lambda_0 = 0.781 (n=1), 0.498 (n=2); chirality -1.000, -1.000; ratio 1.57
+runtime 70 s
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

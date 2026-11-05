@@ -6,6 +6,8 @@ Round 2 provenance: Codex, 2026-11-05, pinned checkout `5129d8d4e01a632c1293ab71
 
 Round 3 provenance: Codex, 2026-11-05, pinned checkout `d073927c08564435973eb8d54558e0571798e10e`. This continuation tests OL-W0 against `p82.md`, `pw.md`, `rows.md`, `hm.md`, `piv.md`, and CA-II Lemma 5.2:lem-random-walk-bounds. It preserves both earlier rounds. This is research text, not an audit; it grants no status. The sources and credit in the Provenance line apply throughout.
 
+Round 4 provenance: Codex, 2026-11-05, pinned checkout `63e903d537a80091af4ec001b307462954adb53d`. This continuation compares the successive and unfolded assignments and tests replacement at the coefficient consumers. It preserves rounds 1–3. Research text, not an audit; grants no status. Source credit in the Provenance line applies throughout. No computer-assisted proof is used.
+
 ## 1. Target and source comparison
 
 The target is the Gaussian lemma `4.2:lem-one-loop`, CA-I 3901–4029. It supplies hypothesis (b) of `4.19:prop-clause-zero`. It is not the bound on the non-Gaussian increment. This note ports the account's route: compose the constrained Gaussians, preserve their quadratic coefficient under background substitution, and compare with massive Wilson and ghost determinants.
@@ -1406,9 +1408,9 @@ OL-loc on the near-flat polydiscs needed by Lemma 4.2, and §§2–3 give
 \]
 These remain implications. Neither lrb, piv nor mu supplies OL-W0.
 
-## 9. Current recovery checkpoint and limits
+## 9. Round-two recovery checkpoint and limits (preserved)
 
-This is the current checkpoint; §5 records round one only.
+This was the checkpoint after round two; §20 is now current.
 The target remains the exact lemma copied in §1, including the
 absolute finite-part bound and the order of constants.
 
@@ -2064,10 +2066,10 @@ the resummed comparison does not supply that estimate. This is
 the same remaining obligation as §12, approached through the
 actual singular junction rather than formal Schur elimination.
 
-## 14. Current checkpoint, source identities and limits
+## 14. Round-three checkpoint, source identities and limits (preserved)
 
-This checkpoint supersedes §9 as the recovery point. The earlier
-arguments and endpoints are preserved as historical rounds.
+This was the recovery point after round three. Section 20 below
+supersedes it. The earlier arguments and endpoints are preserved.
 
 The new proved implication is §11: the frozen flat/model inputs,
 PW's complex coefficient proof, Rows and PIV give an intrinsic
@@ -2149,7 +2151,7 @@ bookkeeping. No numerical experiment, enumeration or
 computer-assisted estimate discharges any assertion here.
 The new arguments have not received an independent referee check.
 
-## Result
+## Round-three endpoint (preserved)
 
 **Open lemma**
 
@@ -2198,3 +2200,646 @@ CA assignment remains unproved after the three new attacks.
 There is no counterexample to the one-loop lemma here. The
 account's full one-loop statement, and hence T0, is not claimed
 proved by this note.
+
+## 15. Round four: replace the Gaussian supplier at its consumers
+
+This round takes the alternative in the owner's instruction. It
+proves a replacement for the Gaussian coefficient consumers. It
+does not identify the two families term by term. In particular,
+OL-W0-CA is not a necessary premise of the replacement proof.
+
+The inputs retained from round three are explicit: §11's repaired
+unfolded family, with the frozen flat/model inputs stated there;
+§7's actual Gaussian normalization and flat gap; and the admitted
+physical chart and fixed-depth response used in §8.3. The bulk
+calculation is §§2–3. No new analytic estimate for the successive
+assignment is assumed. These inputs do not assert admission on
+arbitrary large-field histories.
+
+Here is the source comparison that permits this change.
+
+| Consumer or construction | What its formula actually reads |
+|---|---|
+| CA-I 3808–3828, (increment-1)–(increment-3) | The sum of the pointed Hessians over **all** domains and base points, followed by its second spatial moment. No walk label survives. |
+| CA-I 3867–3879 | The definition applies the coefficient construction to the Gaussian **functional** alone. |
+| CA-I 3932–3941 | The proposed supplier uses covariance walks for analyticity, domain decay and common lifts. Its specific successive assignment is a route to these properties. |
+| CA-I 4869–4907 | A walk system is any family whose sum is the operator, with the stated steps and weighted norm. |
+| CA-I 6219–6310; proof 6311–6644, 6827–6957 | The cell-resolvent construction takes a local precision family, its absolute bounds and its cell gaps. It does not read the elementary/singular-word construction at 47294–47584. |
+| CA-I 9707–9757 | The logarithm is localized by multiplying precision and resolvent walks and grouping their complete footprints. |
+| CA-I 56361–56368, 56428–56430, 56463–56480 | The Gaussian input to the coupling induction is the scalar finite-part bound. The unmarked error remains a separate input. |
+| CA-II 27042–27119, 27120–27184 | The one-loop implication reads the same Gaussian numbers and their absolute interval bound, together with the separate closeness estimate for the full increments. |
+
+The closest existing proof of coefficient independence is
+[sfol-draft](sfol-draft.md), Lemma 3.5 and Proposition 3.6.
+It assumes an admissible localized family and pointed translation
+covariance `(Tr)`. Section 3.3 here has the same conditional
+transfer. Neither supplies the new family. Sections 8 and 11,
+however, supply its construction and bounds when their family
+hypothesis is read for the unfolded assignment. We check that
+substitution below. We also remove `(Tr)` from this Gaussian-only
+transfer by summing base points before using symmetry.
+
+P3-free does not address this determinant. P5 retains P5-H-loop.
+P6 ports the conditional scalar implication. These are the same
+comparisons as §10.1, confirmed against their source passages.
+The stronger summable-increment request of SA RF10 is not used.
+
+The change is local to this proof: construct a new Gaussian
+localized family, denoted \(N^u\). Keep the physical normalizer,
+pivot factors, background map and free response. Do not replace
+an individual CA activity inside a non-Gaussian expansion, and
+do not infer that two footprint-restricted partial sums coincide.
+The separate large-field and unmarked bounds retain their inputs.
+
+## 16. New attack 10: compare the full quadratic observable first
+
+The new test is the two-source Hessian of the normalized scalar
+integral. This is finer than equality of the precision at one
+point, but does not split it into successive sheets.
+
+Let \(P\) vary near the flat pair, let \(A=A_k(P)\) be the
+actual precision, and put \(J_c=J_c(V(P))\). Section 7 gives
+\[
+ F_k(P)=-\tfrac12\log\det A_k(P)
+          -\sum_c\log\det J_c(V(P))+\text{vacuum constant}.
+ \tag{16.1}
+\]
+The relative contour term of (11.6), both current branches and
+the pivot factors are included. The finite constraint integration
+in (7.5)–(7.8) is essential. A normalized vertex equal to one
+would not give (16.1).
+
+Write subscripts \(v,w,vw\) for derivatives in two independent
+pair directions, and set \(R=A^{-1}\). Differentiating
+\(AR=I\) gives \(R_w=-RA_wR\). Jacobi's formula follows by
+expanding \(\det(I+tA^{-1}A_v)=1+t\operatorname{Tr}(A^{-1}A_v)
++O(t^2)\). Applying these two identities to every determinant
+in (16.1) gives all four terms:
+\[
+\begin{split}
+ (F_k)_{vw}={}&
+ \tfrac12\operatorname{Tr}(RA_wRA_v)
+ -\tfrac12\operatorname{Tr}(RA_{vw})\\
+ &+\sum_c\operatorname{Tr}
+       (J_c^{-1}(J_c)_wJ_c^{-1}(J_c)_v)
+ -\sum_c\operatorname{Tr}(J_c^{-1}(J_c)_{vw}).
+\end{split}                                                   \tag{16.2}
+\]
+Cyclicity makes this symmetric in \(v,w\). Vacuum subtraction
+has zero derivative. The coherent logarithms are those continued
+from the positive flat Gaussian and the flat pivot.
+
+The successive and unfolded assignments have the same summed
+matrix \(A_k(P)\), not just the same flat value. For the unfolded
+one this is the Schur identification (11.3)–(11.7). Therefore
+(16.1) and (16.2) are unchanged. This includes derivatives of
+\(C_\flat\), both multiplier currents and the gauge term inside
+\(A_v,A_{vw}\). No such derivative has been discarded.
+
+This proves exact equality of the finite-volume observable.
+It does **not** bound the absolute sum of the successive
+coefficients after a footprint restriction. Nor can (16.2)
+alone produce a local family: its inverse is global and includes
+winding paths. The failed inference would be to apply a local
+supremum to a purported termwise equality that (16.2) never
+asserts. Instead, the next attack constructs a good local
+representation of this exact scalar observable directly.
+
+**Outcome.** The finite-volume Hessian transfers, including all
+normalization terms. Direct coefficient-by-coefficient transfer
+remains unavailable. The unresolved work after this attack is
+localization and passage to the whole-lattice moment, not another
+one-loop numerator calculation.
+
+## 17. New attack 11: use the unfolded family in the account's local calculus
+
+Write \(u_{k,\omega}\) for §11's precision coefficients. This
+notation includes its repaired relative-contour term. Thus
+\[
+ A_k=\sum_\omega u_{k,\omega},\qquad
+ \|u_k\|_{\mathrm{abs},\delta_u}\le B_u .                 \tag{17.1}
+\]
+The supremum over **local** data precedes every sum, as in
+(10.1). Every complete read is included in the footprint; step
+diameters are bounded by \(\rho_u\). These are conclusions of
+§11 on its stated inputs, not conclusions about the CA labels.
+At \(k=0\) use §7's depth-zero family, taking the larger bound
+and smaller radius and rate once.
+
+For the cell proof, enlarge each step domain by a fixed two-unit
+collar if needed. This puts kernel endpoints inside the footprint
+and makes adjacent interiors meet. Increase \(\rho_u\) by the
+fixed collar diameter. The coefficients ignore the extra data;
+the shortest-tree weight can only decrease. Thus (17.1) and
+local-data analyticity persist. All later hulls retain this collar.
+
+### 17.1 The cell construction accepts these coefficients
+
+The proof of §8.1 uses the following data, and nothing specific
+to successive elimination:
+
+| Input to that proof | Supplier for \(u\) |
+|---|---|
+| Absolute, datum-independent two-sided majorants | (11.8), including the current branches |
+| Analyticity on each complete local read | §§11.1–11.4 |
+| Bounded step diameters and equality on common lifts | §11.4 |
+| Identity with the actual global precision | (11.3)–(11.7) |
+| Flat lower bound for that precision | (7.15) |
+| Symmetric truncation at the flat pair | The transpose-pair assignment at the end of §11.4 |
+
+Here is the local positivity check, to avoid importing the full
+hereditary version of `(W')`. Shrink the pair ball by a factor
+\(s\in(0,1)\) such that
+\[
+ B_u s/(1-s)\le c_L/8.
+ \tag{17.2}
+\]
+For each coefficient, one-variable Cauchy along the radial line
+bounds its increment by its majorant times \(s/(1-s)\).
+Summation gives (8.1) for \(u\), including for a datum defined
+only on a single cell's complete read. There is no extension
+of that datum.
+
+Choose the near cutoff \(r'\) so the far norm at zero weight
+is at most \(c_L/8\), and also impose (k1) of CA-I 6119–6128
+with \(\gamma_*=c_L/2\). The flat near part has lower bound
+\(7c_L/8\). Compress it to any cell bond set. Extension by zero
+preserves this lower bound. Its local perturbation has norm at
+most \(c_L/8\), by (17.2) and the two-sided Schur bound.
+Consequently the locally defined cell matrix has real part at
+least \(3c_L/4\). In particular it satisfies the cell-resolvent
+proof's required lower bound \(7\gamma_*/8\).
+The same perturbation estimate on global data gives
+\(\operatorname{Re}A_k\ge7c_L/8\ge\gamma_*\).
+After \(r'\), choose the cell side \(\ell\in L^{\mathbb N}\)
+to satisfy (k2), including \(\ell\ge2(r'+2\rho_u)+4\).
+The cell-remainder bound then tends exponentially to zero as
+\(\ell\) increases. Fix compatible grids with the same origin
+on the whole lattice and all sufficiently large admitted tori.
+
+Apply the existing proof of CA 4.4:lem-cell-resolvent with
+\(u_{k,\omega}\) in place of \(\mathsf A_\omega\), as already
+ported in §8.1. The near-range inclusion and the weighted
+conjugation estimate are CA-I 6311–6442. Their local version,
+6827–6957, explicitly reads only the range, datum-independent
+row and column bounds, and the cell lower bound. Those have
+just been supplied. Its two geometric series give
+\[
+ \|R^u_k(\lambda)\|_{\mathrm{abs},\theta}
+       \le\frac{4S}{\lambda+c},\qquad
+ c=\gamma_*/2,\qquad \lambda\ge0.                         \tag{17.3}
+\]
+Indeed the cell-remainder norm is at most \(1/2\), giving
+\(2S/(\lambda+c)\). The far-step norm times \(4S/\gamma_*\)
+is at most \(1/2\), giving the second factor two.
+All terms have complete local reads and common lifts.
+
+On global data this family sums to
+\((\lambda+A_k^Y)^{-1}\), where \(A_k^Y=\chi_YA_k\chi_Y\).
+The source proves this by its parametrix identities; the
+identities remain valid for this near/far split. The local
+matrices \(T_q^u\) and \(T_q^{\rm CA}\) need not coincide.
+Their difference is harmless here: each construction, when
+valid, inverts the same **global** compressed matrix.
+We never replace a compression of an inverse by the inverse
+of a compression. On local data we use only the summable
+family in (17.3), not an asserted inverse on that local region.
+
+This is a new application of the account's proved calculus,
+not a re-derivation of its successive elementary-sheet inputs.
+It proves exactly the specialization needed here, not `(W')`
+on every nest and hereditary domain.
+
+### 17.2 The scalar local terms have the required bound and sum
+
+Use the account's logarithm rule, CA-I 9707–9757, with this
+family. The terms before grouping are the diagonal traces in
+\[
+ -\frac12\int_0^\infty
+  (\lambda+c)^{-1}(A_k^Y-cI)R^u_k(\lambda)\,d\lambda,
+ \tag{17.4}
+\]
+vacuum-subtracted at the same footprint. Keep both walks, every
+intermediate bond and every cell read. Group by their full
+cubical hull and point by the prescribed tents. Include the
+pivot logarithms (7.10) with their full averaging reads.
+Call the resulting family \(N^u_l(X;P,z)\), \(l=k+1\).
+
+Section 8.2 proves this construction's bound for an arbitrary
+precision family with the inputs in §17.1. In particular, at
+each root, absolute integration is bounded by
+\[
+ (N^2-1)\int_0^\infty
+       \frac{4S(B_u+c)}{(\lambda+c)^2}\,d\lambda
+       =\frac{4(N^2-1)S(B_u+c)}c .                         \tag{17.5}
+\]
+This includes the factor \(1/2\) and both evaluations in the
+vacuum subtraction. The pivot contribution per pivot is at
+most \((N^2-1)/3\). The estimates apply before collecting any
+hull, and use the local suprema before the sums.
+
+The geometric estimate (8.5)–(8.6) converts the surviving walk
+decay into polymer decay. Choose the required \(\kappa\) with
+an entropy margin, then the account's later \(M\) large enough
+that \(4\kappa C_h/(LM)\le\theta/2\). Its other cell-size floors
+are lower bounds on the same later \(M\). Pointing costs a
+finite \(C_{\rm pt}(L,N,\mathfrak p)\). Thus
+\[
+ |N^u_l(X;P,z)|\le E^\natural e^{-\kappa d_l(X)}             \tag{17.6}
+\]
+One may take
+\[
+ E^\natural=C_{\rm pt}e^{4\kappa C_h}
+ \left[\frac{4(N^2-1)S(B_u+c)}c+\frac{N^2-1}{3}\right],
+\]
+where \(C_{\rm pt}\) is enlarged to cover the finite number
+of free-bond and pivot roots contributing at one base point.
+The bound holds on the local analytic pair balls, with \(E^\natural\) independent
+of \(l\) and volume. Its allowed dependence is \(L,N,\mathfrak p\).
+The positive raw-coordinate radius may shrink with \(l\).
+In the scale-normalized potential/current norms it is the one
+fixed in (17.2). For example, on the fine mesh \(\eta\), a raw
+link-potential ball of radius \(s r_A\eta^2/4\) lies in both
+\(|A'|<s r_A\) and \(|\nabla^\eta A'|<s r_A\). The current is read
+in its own normalized units. The physical chart admission is
+the one retained in §8.3; it is not supplied by changing labels.
+
+Absolute convergence in (17.5) also proves holomorphy after
+integration and grouping, on every smaller ball. For a
+non-wrapping hull the lifted indices, local matrices, cutoffs,
+pivot factors and tents are identical. Hence the terms agree
+exactly with the whole-lattice terms. This proves the (A) and
+(B) properties stated at CA-I 3907–3914 and 3935–3938 for \(N^u\).
+
+On a full torus, sum the hulls and roots. By (17.3), the scalar
+identity in §8.2 identifies (17.4) with
+\(-\tfrac12\log\det A_k\), up to the subtracted constant.
+The pivot terms then give (16.1). Therefore, at physical data,
+\[
+ \sum_{X,z}N^u_{l,T}(X;P_{l,T}(B),z)
+   =F_{l-1}(U_l(e^{iB}))=:\Phi_{l,T}(B).                   \tag{17.7}
+\]
+Here \(P_{l,T}(B)=(U_l,J_l)(e^{iB})\), with the account's
+scale conversion. All logarithms are on the flat branch.
+No scalar or field-dependent normalization has been changed.
+
+**Outcome.** The unfolded family supplies an admissible
+localization of the actual Gaussian scalar. It uses the account's
+resolvent and logarithm rules. It has the analytic bounds and
+common lifts required by the coefficient construction. There is
+no appeal to an absolute bound for the CA successive labels.
+
+## 18. New attack 12: take the coefficient limit without pointed symmetry
+
+A diagonal trace in free-bond coordinates can change when the
+pivot frame changes. Thus invariance of the total does not prove
+covariance of each pointed term. This attack avoids that inference.
+It is the Gaussian-only version of CA-I 58732–58989 and
+sfol-draft Lemma 3.5, with the extra pointed-covariance premise
+removed. We spell out the changed step.
+
+Fix \(l\). Constants in this section may depend on \(l\), but
+not on the torus. Let
+\(h_T=D P_{l,T}(0)\). Use the fixed-depth free-response bounds
+and common-lift limit of §8.3:
+\[
+ \|h_T\delta_x\|_X\le C_l e^{-\mu_l\operatorname{dist}_T(x,X)},
+ \qquad h_T\delta_x\longrightarrow h_\infty\delta_x
+ \quad\hbox{on every fixed finite read}.                  \tag{18.1}
+\]
+The norm includes the potential/current coordinates used in the
+local Cauchy ball. At fixed depth, taking the finitely many
+lattice differences only changes \(C_l\). This is the actual
+response, defined by the background map. It is not a response
+obtained by differentiating a new localization rule.
+
+### 18.1 First derivatives and an absolute Hessian bound
+
+Every \(N^u(X;P,z)\) is invariant under simultaneous constant
+color conjugation. Each unfolded local matrix transforms by the
+same conjugation; inversion, products and trace preserve it.
+Cutoffs and tents are scalar. Pivot determinants have the same
+invariance. At the flat pair, its derivative in any one field or
+current slot is therefore an invariant linear functional on
+\(\mathfrak{sl}_N\). Such a functional vanishes: each off-diagonal
+matrix unit is a commutator with a traceless diagonal matrix,
+and \(E_{ii}-E_{jj}=[E_{ij},E_{ji}]\). Differentiated conjugation
+annihilates these commutators. Thus
+\[
+ D N^u_{l,T}(X;P_\circ,z)=0.                               \tag{18.2}
+\]
+This argument asserts constant conjugation invariance only.
+No unproved invariance of the individual terms under changes
+of pivot coordinates is needed.
+
+Normal convergence on a smaller ball permits two derivatives of
+(17.7). By (18.2) the term containing \(D^2P_{l,T}(0)\) vanishes.
+Define
+\[
+ K^u_{l,T}(x,y,z)=\sum_{X\ni z}
+ D^2N^u_{l,T}(X;P_\circ,z)[h_T\delta_x,h_T\delta_y].         \tag{18.3}
+\]
+Cauchy's formula in the two scalar directions gives, term by term,
+\[
+ |D^2N^u_{l,T}[h_T\delta_x,h_T\delta_y]|
+ \le 4E^\natural a_l^{-2}C_l^2
+ e^{-\kappa d_l(X)-\mu_l(d_T(x,X)+d_T(y,X))}.              \tag{18.4}
+\]
+Use the same domain count and geometry as CA-I 58868–58887:
+\(\sum_{X\ni z}e^{-\kappa d_l(X)/2}\le K_0\) and
+\(d_T(x,z)\le d_T(x,X)+Md_l(X)+2c_dM\). Set
+\(a=\tfrac14\min\{\mu_l,\kappa/M\}>0\). Spending half the
+domain decay on the count gives
+\[
+ |K^u_{l,T}(x,y,z)|\le C'_l
+ e^{-a(d_T(x,z)+d_T(y,z))}.                               \tag{18.5}
+\]
+The same proof holds on the whole lattice.
+
+For fixed lifted \(x,y,z\), common lifts and (18.1) give convergence
+of each fixed-domain term. Formula (18.4) dominates the domain
+sum. Wrapping domains have
+\(d_l(X)>s_T/(4M)-2\); reserving half their domain decay makes
+their sum tend to zero. Hence
+\[
+ K^u_{l,T}(x,y,z)\longrightarrow K^u_{l,\infty}(x,y,z).
+ \tag{18.6}
+\]
+This is the source's dominated-convergence step, with its
+hypotheses now supplied by §17. No symmetry was used.
+
+### 18.2 Sum the base points before taking symmetry or moments
+
+Let \(H_{l,T}(x,y)=D^2\Phi_{l,T}(0)[\delta_x,\delta_y]\).
+The finite-volume identity is
+\[
+ H_{l,T}(x,y)=\sum_z K^u_{l,T}(x,y,z).                      \tag{18.7}
+\]
+To pass to the limit, choose the centered lift of \(z-x\).
+It lies in a centered fundamental box, and its length equals
+\(d_T(x,z)\). From (18.5), the contribution of lifts with
+\(|z-x|>R\) is bounded, uniformly in the torus, by
+\(C'_l\sum_{|w|>R}e^{-a|w|}\). This tends to zero. On the
+finitely many remaining lifts use (18.6). Thus
+\[
+ H_{l,\infty}(x,y)
+   :=\lim_T H_{l,T}(x,y)
+    =\sum_{z\in\mathbb Z^4}K^u_{l,\infty}(x,y,z).          \tag{18.8}
+\]
+This argument replaces the pointed-translation reindexing in
+CA-I 58969–58987. It does not require
+\(K_T(x,y,z)=K_T(x-z,y-z,0)\).
+
+There is also a uniform summable second-moment majorant.
+The triangle inequality in the torus metric and (18.5) give
+\[
+\begin{split}
+ |H_{l,T}(x,y)|
+ &\le C'_l e^{-a d_T(x,y)/2}
+       \sum_z e^{-a d_T(x,z)/2}\,e^{-a d_T(y,z)/2}\\
+ &\le C''_l e^{-a d_T(x,y)/2},
+ \qquad C''_l=C'_l\sum_{w\in\mathbb Z^4}e^{-a|w|/2}.
+\end{split}                                                   \tag{18.9}
+\]
+Distances between the oriented bonds differ from anchor distances
+by at most a fixed constant, absorbed in \(C''_l\).
+For centered lifts \(u=y-x\), the tail of the second moment
+is at most
+\[
+ C''_l\sum_{|u|>R}(1+|u|^2)e^{-a|u|/2}\longrightarrow0.
+ \tag{18.10}
+\]
+For a hand check of summability, \(t^2e^{-at/4}\) is bounded
+on \([0,\infty)\), and the remaining exponential sums as a
+product of four one-dimensional geometric series. The same
+tail bound holds on every torus and on the whole lattice.
+Therefore both the base-point sum and the second spatial
+moment commute with the volume limit. Only fixed-depth
+bounds were required.
+
+The actual finite Gaussian scalar \(\Phi_{l,T}\) is real and
+covariant under the account's unit lattice symmetries at
+physical data, by §8.3 and the symmetry-respecting averaging
+scheme. Its Hessian consequently has those symmetries. Pass
+those finite-dimensional identities through (18.8). The
+summed limiting tensor depends only on \(x-y\), is real, and
+has the account's color and hypercubic covariance. Independence
+of the analytic representative of the physical orbit holds
+for the same reason: (18.7) differentiates the invariant total.
+It need not hold separately for every summand of (18.3).
+
+Now apply the *same* extractor as CA-I 3826–3828:
+\[
+ \beta^{0,u}_l:=\sum_{u\in\mathbb Z^4}u_\mu u_\nu
+             H_{l,\infty;\mu\nu}(u),\qquad\mu\ne\nu.
+ \tag{18.11}
+\]
+The orientation and difference convention are those of that
+source; nothing is changed to a finite-torus definition.
+Equations (18.8)–(18.10) show that (18.11) is precisely the
+coefficient constructed from \(N^u\) by (increment-1)–(increment-3).
+They also identify it with \(b[\Phi_l]\), the bulk functional
+coefficient used in §§2–3.
+
+### 18.3 What equality with another assignment means
+
+Take any other admissible localization of the same scalar
+\(\Phi_{l,T}\). If it has the local bounds, common lifts and
+vanishing first derivatives just used, the preceding argument
+gives its tensor as the limit of the **same** \(H_{l,T}\).
+Its coefficient therefore equals (18.11). Its individual
+pointed tensors and local matrices need not agree with ours.
+This proves representation independence on the class for which
+the coefficient is defined.
+
+This implication does not assume those bounds for the
+successive CA family. If they have not been proved, we use
+\(N^u\) to define and justify the coefficient of the actual
+Gaussian functional. It agrees with the original construction
+whenever that construction is justified. There is no inference
+that a possibly unjustified rearrangement has a value merely
+because another expansion converges.
+
+**Outcome.** The coefficient consumers can use the unfolded
+family. The exact normalizer, response and Hessian coefficient
+are preserved. Pointed covariance and OL-W0-CA are not needed
+for this Gaussian-only conclusion. This closes the replacement
+route requested in this round.
+
+## 19. Consequence for Lemma 4.2 and the one-loop law
+
+The replacement changes the Gaussian local supplier, not the
+functional in Lemma 4.2. By (18.11), its coefficient is now
+justified by an admissible family:
+\[
+ \beta_l^0=\beta_l^{0,u}=b[\Phi_l].                         \tag{19.1}
+\]
+This is the coefficient of the actual Gaussian normalizer with
+the account's normalization. It is not the coefficient of the
+complete interacting step.
+
+Use the already written Gaussian composition and
+coefficient-preservation proof, (3.1)–(3.3). It gives
+\[
+ \beta_l^0=B_l-B_{l-1},\qquad B_0=0,
+ \qquad \sum_{l=1}^k\beta_l^0=B_k .                        \tag{19.2}
+\]
+The hand calculation in §2 and the bulk comparison in §3.2
+then apply to this same coefficient. In their notation,
+\[
+ c_0=\frac{11C_{\mathfrak g}}{24\pi^2}\log L
+     =\frac{11N^2}{12\pi^2}\log L,\qquad
+ c_2=C_E(L,N)+C_R(N)+C_M(N),                              \tag{19.3}
+\]
+and \(|B_k-kc_0|\le c_2\). The finite computation and its
+comparison estimates are preserved; this round does not replace
+them by a continuum value or a machine calculation.
+
+For \(0\le i<n\), subtraction now gives both sides of the
+consumer estimate:
+\[
+\begin{split}
+ \left|\sum_{l=i+1}^n\beta_l^0-(n-i)c_0\right|
+ &=|(B_n-nc_0)-(B_i-ic_0)|\le2c_2,\\
+ \sum_{l=i+1}^n\beta_l^0&\ge(n-i)c_0-2c_2 .
+\end{split}                                                   \tag{19.4}
+\]
+These are exactly the Gaussian inputs used by CA-I
+56361–56368 and CA-II 5.14:thm-one-loop-law, including its
+absolute bound at both ends of an interval. The scalar
+one-loop-law proof already ported in P6 therefore needs no
+change. Its separate estimate
+\(|b_{k+1}(0)-\beta^0_{k+1}|\le C_\beta e(g_k)+v_k\)
+remains a hypothesis about the full step. No such estimate has
+been proved here by relabeling Gaussian terms.
+
+**Order of choice.** First take \(L,N\) and the Stage-2 bulk
+constants of §§2–3, hence (19.3), before any late localization
+choice. Next use §11's early operator choices and radii. Choose
+\(s,r',\ell\) as in §17.1 and CA's (k1),(k2); their existence
+uses exponential decay versus polynomial growth, not a finite
+search. Choose \(\kappa\) with an entropy margin and the later
+\(M\) above the cell and hull floors. Finally decrease the
+permitted field/current radii, keeping the ratio floors, and
+choose any remaining coupling ceiling. These last choices
+only affect \(E^\natural,a_l\) and other local bounds. They
+cannot affect \(c_2\): (18.8) identifies the coefficient with
+the Hessian of the same physical finite-volume scalar for
+every admissible localization choice. The bound (19.3) reads
+only \(L,N\). No summation of the constants \(C_l\) from §18
+is used in proving the finite part.
+
+This proves the permitted replacement route. It does not prove
+that the **original** CA local terms have (17.6), nor that
+\(T_q^u=T_q^{\rm CA}\). If “the localised family” in Lemma
+4.2(a) is required to mean those exact previously assigned
+terms, that additional assertion stays open. The coefficient
+construction and the scalar one-loop consumers can instead
+use the family constructed here, with their conclusions
+unchanged. There is no need to claim an equality of individual
+activities to make this substitution.
+
+## 20. Current recovery checkpoint and verification limits
+
+**Moved.** The assignment obstruction is removed from the
+Gaussian coefficient route. Sections 17–18 prove the allowed
+consumer replacement from the repaired unfolded bound of §11.
+The three new attacks were: the exact two-source scalar test
+(§16), a fresh application of the account's local resolvent
+and logarithm rules (§17), and passage to the Hessian moment
+without pointed symmetry (§18). The first gives no termwise
+comparison; the next two complete the alternative route.
+Repeating the positive-redistribution search of §12 is not
+required for these consumers.
+
+**Inputs retained.** Section 11's frozen flat/model inputs,
+its actual complex coefficient and pivot estimates, the
+physical Gaussian identification of §7, the admitted physical
+chart and fixed-depth response, and the bulk calculation
+§§2–3. This round proves a transfer on those inputs. It does
+not independently recheck every upstream proof or promote
+any of them to retained status. The new text has not been
+checked by another model.
+
+**Still open elsewhere.** OL-W0-CA, if the exact successive
+assignment is needed; the full hereditary/non-Gaussian use of
+an operator family on arbitrary histories; the independent
+unmarked-increment and other T0 obligations. No assertion
+about those items follows from this Gaussian-only replacement.
+No counterexample to Lemma 4.2 is claimed.
+
+**Source identities.** This round starts at checkout
+`63e903d537a80091af4ec001b307462954adb53d`. The source revision
+is `31a47c543775`. Fetch commands were conditional on absence.
+The matching pinned source identities were reused; no repeated
+fetch was performed. Their SHA-256 values are:
+
+| Source | SHA-256 |
+|---|---|
+| `/tmp/sa_ym4.tex` | `d7f77d4da3eb23038250c52468a341281d9ba86b4af21d3371d208a2537d4b6f` |
+| `/tmp/sa_ca_I.tex` | `4cb5cb5e0af8dbddbee207926621300350e018c6cf1d6567a753167ce10e6e93` |
+| `/tmp/sa_ca_II.tex` | `6a1f74b05f74ba44a2186c11fb08e139178d86b15c1494a95c434212944b2b8f` |
+
+Navigation used the outline index README, chunks 04 and 19,
+the corresponding obligations, the CA 4.12–4.19 README and
+neighbouring rows in chunks 04 and 11, and ca-full entries
+for the cell-resolvent, polarisation and one-loop statements.
+The defining successive construction, CA-I 47294–47584, was
+read again. The target, Route and every literal CA-I use of
+`4.2:lem-one-loop` were checked. The earlier literal-label
+census in §14 is preserved; CA-II's scalar use was checked
+at 26779–26862, 27042–27185. Other bounded source reads and
+the local CMP 109 normalization passages are recorded in
+`/tmp/ol-round4-63e903d53/source-excerpts.txt`.
+
+Credit: Ethan Sussman and Levent Alpoge, with Claude and
+Codex as authors of their text, for the account's construction,
+cell calculus and convergence route; Tadeusz Bałaban for the
+RG step, Gaussian normalization and coefficient convention.
+CMP 116 is used only through the account's quotation. The
+new contribution is the justified substitution and the
+Gaussian-only limit argument without pointed covariance.
+
+The original note is preserved at
+`/tmp/ol-round4-63e903d53/ol-before.md`. Bookkeeping checks and
+source hashes are in `verification.json` in that directory.
+Only `library/ol.md` is edited. No editable prompt, workflow,
+planning or audit file is changed. The workflow path named
+by AGENTS.md is absent at this checkout; no out-of-scope
+filesystem search was made. Retrieval, text comparison and
+hashing are bookkeeping. No mathematical claim rests on a
+run, enumeration, floating-point value or numerical estimate.
+
+## Result
+
+**Proof**
+
+**OL-transfer: the Gaussian coefficient consumers can use the
+repaired unfolded assignment.** Retain the explicit inputs of
+§11, the actual Gaussian normalization and physical response
+of §§7–8, and the bulk calculation of §§2–3. For every
+\(l\ge1\), the family \(N^u_l\) of §17 has the analyticity,
+scale-normalized radii, exponential domain bound and common
+lifts required of the Gaussian supplier in Lemma 4.2(a).
+Its global physical total is exactly
+\(F_{l-1}(U_l(e^{iB}))\). Its coefficient under CA-I
+3808–3828 is the intrinsic whole-lattice Hessian coefficient
+of that functional, independently of the assignment:
+\[
+ \beta_l^0=b[\Phi_l],\qquad
+ \left|\sum_{l=1}^k\beta_l^0-k\frac{11N^2}{12\pi^2}\log L\right|
+ \le c_2(L,N)\quad(k\ge0).
+\]
+Here \(c_2=C_E+C_R+C_M\) is fixed in Stage 2. The absolute
+interval error is at most \(2c_2\), as required by the
+one-loop law. Sections 16–19 prove the substitution, including
+the determinant branch, pivot factors, derivative interchange,
+volume limit and second moment. No additional bound on the
+successive CA assignment is used.
+
+This is a proof of the replacement authorized for this round,
+with its stated upstream inputs. It is not a proof of
+OL-W0-CA or equality of individual local terms. The exact
+original-family assertion remains open if required elsewhere.
+The other T0 inputs remain open or conditional as recorded
+above. This research text grants no status.

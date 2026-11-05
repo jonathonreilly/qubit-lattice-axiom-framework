@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/the_forced_far_wall_term_has_a_unique_gapped_three_site_cell_state_but_a_strong_coupling_cell_only_moves_the_mirror_and_the_one_orbital_sixteen_site_has_only_two_spin10_singlets_2026_10_23.py
+runner_sha256: 167f2ac734d09d5ee8f373fca217472c78b985a2c8aee0c4404f7340a4ad4a15
+input_fingerprint_sha256: 28b2eba696dae886954d51fdf31993b15b7565e8f4d1c93cc45330dd3d9d6913
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.22
+status: ok
+----- stdout -----
+== A. 3450: the forced terms l1 = (1,-2,1,2), l2 = (2,1,-2,1) on cells (units of g)
+PASS: A1 [T] one site: |l_f| = 2 needs two modes of one flavour (Pauli), so the term vanishes and all 16 states are degenerate
+PASS: A2 [F] two-site cell: ground state degenerate (the terms connect only pairs of configurations)  [8-fold at -0.500]
+PASS: A3 [F] three-site complete-graph cell: unique ground state E0 = -1, E1 = -sqrt3/2, so Delta_0 = 1 - sqrt3/2; neutral (Q_A = Q_B = 0 from half filling, zero variance); a unique state is automatically symmetric  [Delta_0 = 0.1340, E1 x2]
+PASS: A4 [F] four-site complete-graph cell: unique ground state, gap > 1e-2  [gap 0.0264]
+PASS: A5 [T]/[F] overlapping bond terms do not commute, and the open three-site chain is frustrated (E0 > 2 e_bond = -1) and degenerate: a uniform rule is not a sum of commuting or frustration-free blocks; a cell tiling is needed  [||[h01,h12]|| 0.253, E0 -0.750 x2]
+PASS: A6 [F] stability ingredients: naive hop norm ||h_b|| = 2 per bond, z = 3 bonds per cell, so Yarotsky's hypothesis reads t/g < kappa_0 Delta_0/(z ||h_b||) = kappa_0/44.8 (kappa_0 not computed); one cell with its two hops keeps a unique state with gap >= Delta_0/2 for t/g <= 0.1, first crossing t_c/g in (0.1, 0.5)  [z||h_b||/Delta_0 = 44.8, t_c/g = 0.237]
+PASS: A7 [F] relocation: free slab (Ls = 12) with the far layer gapped (m sz, m = 20): the far-wall branch keeps E = sin k and moves one layer in, so a gapped far-layer product does not gap the mirror (stability hypotheses fail for the slab)  [k = pi/8: |dE| 1.4e-15, w_far 0.0025, w_next 0.992]
+== B. 3451 contrast (fewest-change symmetric terms, Q51 kept)
+PASS: B1 [T] at the particle-hole point Q51 per site = 13/2 (LSM: no unique gapped symmetric state with one-site translation); 3450: Q_A, Q_B per site = 6, 2; sum q = q^T K q mod 2, so the lattice sees the anomaly mod 2 only
+PASS: B2 [T]+[F] three-site cell: Q51 in Z + 1/2 on odd cells, particle-hole pairs +-Q51: ground state an exact doublet at Q51 = +-1/2  [E -1.25399, next sector -1.24342]
+PASS: B3 [F] (recorded result) two-site cell many-fold; four-site cell a Q51 = +-2 doublet with Q51 = 0 higher (even cells: no kinematic obstruction, the doublet is dynamical): no unique 3451 cell up to four sites  [K2 48-fold; K4 E(+-2) -2.0102, E(0) -1.9954]
+== C. bosonization: K = diag(1,1,-1,-1), charges (3,4,5,0), (2,1,2,-1)
+PASS: C1 [T] l1, l2 K-null, mutually null, neutral under both charges, primitive (gcd of minors 1): Haldane's criterion (supplied) - the two cosines gap all four modes with a unique pinned minimum
+PASS: C2 [T] free-point dimensions Delta = |l|^2/2 = 5, 5 (> 2): both irrelevant
+PASS: C3 [T] b = O a with O a rotation; equal-velocity Luttinger family V(x) (V eta V = eta): Delta_1 = Delta_2 = 5 sqrt((1-x)/(1+x)); both relevant iff 21/29 < x < 1 (numerical O(2,2) diagonalisation agrees)  [threshold x = 21/29 = 0.724]
+== D. one site carrying the 16 (one orbital per weight, 2^16 states)
+PASS: D1 [T] 16 of Spin(10) from five oscillators: 45 Hermitian generators, Casimir 45/4
+PASS: D2 [T] Weyl character formula (|W(D5)| = 1920): Lambda^*(16) holds exactly two Spin(10) singlets, |0> and |F>  [singlets by n: 10000000000000001]
+PASS: D3 [T] Casimir C2 = (3/4) N (16 - N) on the whole Fock space (Lambda^2(16) = 120 irreducible => the only number-conserving 4-fermion invariant is sum n_i n_j): every such term, incl. the 120 channel, is a function of N  [err 3.4e-14]
+PASS: D4 [T] the 10 is in Sym^2(16), not Lambda^2(16): psi^T C Gamma^a psi = 0 identically on one orbital (the suggested g sum_a |psi C Gamma^a psi|^2 is zero); Lambda^2(16) = 120
+PASS: D5 [T] unique Spin(10)-invariant site states lie in span{|0>,|F>}; particle-hole swaps them and only the 16-fermion term mixes them: N(16-N) - (Psi16 + h.c.) has the unique state (|0> +- |F>)/sqrt2 at -1, gap 2; no term of degree < 16 does
+PASS: D6 [T] 15 modes (no nu^c): prod (c_i + c_i^+) anticommutes with fermion parity, so every level of a particle-hole-symmetric site is >= 2-fold for ANY interaction
+PASS: D7 [T] 8 modes: Q + L (SU(3) x SU(2) x U(1)_Y x U(1)_B-L) and (4,2) (SU(4) x SU(2)) have singlets only at n = 0, 8: no unique state below degree 8, the same pattern as the Spin(10) 16
+PASS: D8 [F] SU(3) x SU(2) x U(1)_Y x U(1)_B-L on the one-orbital 16: singlets 1,6,8,6,1 at n = 0,4,8,12,16; its six singlet charge-4 terms with equal real couplings give a unique particle-hole-symmetric singlet ground state with a gap  [gap 0.442 g, ladder residual 3e-15]
+Supplied: charges, bond/pair forms, cells, naive hop, m sz stand-in, Luttinger family, one orbital, SM couplings. elapsed 2.3s, peak RSS 238 MB
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

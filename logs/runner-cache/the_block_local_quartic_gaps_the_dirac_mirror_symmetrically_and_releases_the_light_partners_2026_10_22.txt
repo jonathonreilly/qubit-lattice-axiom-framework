@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/the_block_local_quartic_gaps_the_dirac_mirror_symmetrically_and_releases_the_light_partners_2026_10_22.py
+runner_sha256: c6d1e5bb934e76014204f274f805793edd712062182f75cba49f267483917779
+input_fingerprint_sha256: 408f7d9dca5b767b09996617c1cbed07198ce7dc6e16bcfa57fb06084a374586
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 45.50
+status: ok
+----- stdout -----
+== A. theorems: sign, block term, Dirac band, light release
+[PASS] A1 THEOREM (toy-qmc A1 + light layer) any real band incl. a real light-mirror mixing, vertices on mirror blocks only: every weight is det(M)^4 >= 0 (M real); the Dirac mirror, block quartic and light layer are sign-free | max|trace - det^4| 4.3e-16
+[PASS] A2 THEOREM with a flux (complex band) through a loop holding two vertex blocks the weights det(M)^4 are complex: realness is load-bearing | max |Im w|/|w| 0.89
+[PASS] A3 THEOREM (uniqueness) the SU(4)-singlet charge-4 operators on a block with one mode per flavour span exactly one line (m1 m2 m3 m4); two orbitals give 5 (not unique); for Spin(10) on the Weyl 16 one orbital gives NONE and two orbitals give exactly one (the pair square) | SU(4) n=1: 1, SU(4) n=2: 5, Spin(10) n=1: 0, Spin(10) n=2: 1  [1 s]
+[PASS] A4 THEOREM the block term is invariant under SU(4) gauge rotations of its own block (charge 4, det = 1), commutes with every other block's term and its conjugate, maps to its conjugate under the sublattice particle-hole map, and alone has a unique ground state (-g, gap g) | max|[T,Q]| 0e+00; PH 0e+00; max|[Q_b,Q_b']| 0e+00; block levels [-1.  0.  0.]
+[PASS] A5 THEOREM the real pi-flux band (eta phases; PBC at L = 4, APBC at L = 6) has exactly 8 zero modes per flavour (2 tastes x 4, the Dirac point on the grid), first levels 2t, sqrt3 t, and anticommutes with eps_x; the mixing w eps_x (l^+ m + h.c.) gaps every mode by exactly w ((H +- w eps)^2 = H^2 + w^2); the half mixing w (1 + eps)/2 is no mass: 8 zeros stay, branch sqrt(h^2 + w^2/4) - w/2 ~ h^2/w (quadratic) | zeros 8, 8; |{H,eps}| 0e+00; mixed gap 0.2500
+[PASS] A6 THEOREM at the Dirac point G_l = [i w - w_mix^2 G_m^0(i w)]^-1, G_m^0 = (i w - Sigma_m)^-1: free it is bounded (gap w_mix); if the symmetric mirror has a propagator zero (Sigma_m ~ Delta^2 / i w) the light gets a POLE at w = 0: paired light modes are released | |G_l(i w = 1e-3)| free 0.016, SMG mirror 941
+== B. engine vs exact: mirror pair (2 blocks, hop 0.4) + light orbital mixed by 0.5, g = 1, beta = 2  [1 s]
+[PASS] B1 FINITE CHECK CT-INT reproduces the exact <H_int> and the LIGHT propagator G_l(beta/2) of the mixed model within 4 sigma | <H_int> -0.4829+-0.0112 vs -0.4834; G_l 0.4502+-0.0003 vs 0.4502
+== C. live seeded runs: block quartic on the Dirac sea (g = 1 unless stated; beta in units of 1/g)  [5 s]
+   m_g1_L4    S_pair/N 0.0076 xi/L 0.087 | Dirac gap: midpoint 0.016(0.003) cosh 0.106(0.013)  [6 s]
+   m_g8_L4    S_pair/N 0.0093 xi/L 0.051 | Dirac gap: midpoint 0.625(0.058) cosh 0.849(0.050)  [17 s]
+   m_g8_L4b4  S_pair/N 0.0069 xi/L 0.030 | Dirac gap: midpoint 0.355(0.008) cosh 0.684(0.013)  [23 s]
+   m_g8_L6b4  S_pair/N 0.0021 xi/L 0.021 | Dirac gap: midpoint 0.348(0.021) cosh 0.669(0.028)  [34 s]
+   gs_weak    S_pair/N 0.0057 xi/L 0.061 | Dirac gap: midpoint 0.109(0.000) cosh 0.251(0.000) | LIGHT cosh gap 0.249(0.000)  [35 s]
+   gs_g8      S_pair/N 0.0083 xi/L 0.061 | Dirac gap: midpoint 0.426(0.018) cosh 0.646(0.021) | LIGHT cosh gap 0.144(0.003)  [45 s]
+[PASS] C1 FINITE DIAGNOSTIC weak coupling g/t = 1 (L = 4, beta = 8): the Dirac mirror stays massless (midpoint gap at the Dirac point < 0.05) and unpaired | gap 0.016; pair xi/L 0.087
+[PASS] C2 FINITE DIAGNOSTIC strong coupling g/t = 8 (L = 4, beta = 8): the Dirac mirror is gapped (midpoint lower end >= 0.4) with no pair order (xi/L < 0.1) | gap 0.625(0.058); xi/L 0.051
+[PASS] C3 FINITE DIAGNOSTIC g/t = 8 at beta = 4: S_pair/N falls about as the volume from L = 4 to 6 (ratio > 2.5; 3.375 = no order) and the Dirac gap is L-independent (cosh estimates within 0.1) | S/N ratio 3.30; cosh gap 0.684 vs 0.669
+[PASS] C4 FINITE DIAGNOSTIC light release: light mixed by w eps (free gap w = 0.25) keeps w at g/t = 1 (within 0.03); at g/t = 8, mirror symmetric and gapped (> 0.5), the light gap falls below 0.2: the mirror gap does NOT keep the partners gapped | light gap 0.249 -> 0.144(0.003); mirror gap 0.646
+== D. recorded production values (prod.py, 85 s segments; recorded, not recomputed; no PASS depends on them)
+   recorded production value (not recomputed): mirror alone, beta = 8, Dirac-point gap, cosh band L = 4; L = 6: g/t 0.5 [0.07,0.08];[0.01,0.04], 1 [0.07,0.09];[0.00,0.05], 2 [0.10,0.12];[0.05,0.09], 4 [0.34,0.39];[0.27,0.30], 8 [0.87,0.91];[0.85,0.90], 16 [0.92,0.99];[0.87,0.98]; inf = g exactly
+   recorded production value (not recomputed): same, midpoint (lower-bound style) band: g/t <= 2 <= 0.02 at both L; 4 [0.16,0.20];[0.11,0.13]; 8 [0.67,0.72];[0.60,0.68]; 16 [0.75,0.80];[0.63,0.77]
+   recorded production value (not recomputed): pair (6, charge 2) xi/L L = 4 -> 6 at beta = 8: g/t 0.5 0.082->0.053, 1 0.085->0.053, 2 0.093->0.058, 4 0.158->0.101, 8 0.038->0.037, 16 0.021->0.008
+   recorded production value (not recomputed): S/N(L=4)/S/N(L=6), min-max over 7 channels (site pair, adjoint, singlet density; bond pair sym/antisym, bond adjoint, bond singlet; peak Q): beta = 8 g/t 0.5..16: 3.06-3.38, 3.06-3.38, 3.05-3.35, 2.95-3.72, 2.80-3.41, 2.61-3.53 (volume ratio 3.375)
+   recorded production value (not recomputed): beta = 4, cosh gap L = 4; L = 6: g/t 2 [0.16,0.18];[0.13,0.15], 4 [0.42,0.43];[0.40,0.42], 8 [0.66,0.71];[0.68,0.71]; S/N ratios 3.07-3.44; chi_h max <= 1.44 in all runs
+   recorded production value (not recomputed): light release (t = 0.125, w = 0.25, beta = 8, L = 4): light cosh gap at g/t 1, 2, 4, 8, 16 = 0.249, 0.248, 0.239, 0.135, 0.054 (L = 6 at 8: 0.141); mirror 0.251, 0.256, 0.281, 0.69, 1.84 (L = 6: 0.66)
+supplied: SU(4) toy, one mode per flavour per block, real pi-flux band, BCs, w eps mixing, sizes, betas, seeds
+cited: qmc-face-gapped (#9983), toy-qmc (#9965), register CL-1 far-end and SMG items, smg-literature (Ayyar-Chandrasekharan)
+elapsed 44.7 s
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

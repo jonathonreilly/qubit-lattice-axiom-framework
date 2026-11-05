@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py
+runner_sha256: 361a5fa8c24b3f7a262c152240533a6452d008abf5f861ec6ae7db91c8ce2f35
+input_fingerprint_sha256: 63a6f589680bc5fa32936618f409d7e32dfe9abb3b703f4d4b6ce32b2e33a7e3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.65
+status: ok
+----- stdout -----
+== A. free copy structure of H' (light = s3 -1, mirror = s3 +1)
+[PASS] A1 [T] H'(0) = H'(R) = 0; s3 splits each sublattice 2+2; [s3,H'(K)] = O(K^2); even sublattice: light L at Gamma and R at R, mirror R at Gamma | slope 2.000
+[PASS] A2 [T] near Gamma the light-mirror block has 2 equal singular values (sqrt2/6)|Kx^2 + w Ky^2 + w^2 Kz^2| (d-wave, 0 on body diagonals) | ratio 1.0000..1.0000
+[PASS] A3 [T] at the 8 corners the light-light and mirror-mirror blocks vanish; the mixing is 0 at Gamma, R and 2sqrt2/3 = the whole free gap at the 6 X/M corners: H' gaps X, M only by copy mixing
+[PASS] A4 [T] the light projected band P_l H' P_l is traceless with zeros only at the 8 corners, chirality (-1)^(r+1) (Gamma, 3M left; 3X, R right): net 0 | min |E| > 0.292 away from corners
+== B. exact decoupling of the light copy at K = 0 and R
+[PASS] B1 [T] 4^3 torus, both tilings: light K=0 and K=R states are killed by H' and orthogonal to the mirror combos of all 16 cubes, so (CAR) they commute with every mirror term: exact zero modes, G_l(z,0) = 1/z at any coupling | overlap 6e-17
+[PASS] B2 [T] one block, mirror top form: at Gamma and R the 16 light states stay exactly degenerate, mirror gap exactly g (g = .5, 4, 32) | splitting 5e-14
+== C. light self-energy with the exact Spin(10) pair-square cell (Task 1)
+[PASS] C1 [T] cell chains: E0 = -2g sqrt(11088+48 sqrt21081), Delta = 19.0715 g, Delta_f = 33.5804 g, c^dag|GS> 99.982% in the lowest fermion level; chain reversal + p-h conjugation (16 <-> 16bar) give equal hole weights, so the isolated-cell G_b is odd: G_b(0) = 0 | c_Z Delta_f^2 = 0.99983; ground chain reversal-even
+[PASS] C2 [T/F] second order Sigma = h G_b h^+: a Z factor -z c_Z s^2 and a static part h G_b(0,K) h^+, G_b(0,K) ~ h_bb(K)/Delta^2 from the mirror's own band: O(K^5), zero at K = 0, never a mass. One-block ED at K = .3x matches the shift to 1% | g=2: 0.170579652 vs 0.170579724; g=8: 0.170616302 vs 0.170616303
+   [E] 1 TeV (block 2a, a = 3 l_P): K = 5e-16, |dv/v| < 6e-64 for Delta_f >= 3.4; induced light-light terms ~ K^8/Delta_f^3
+   [T] a mirror condensate reaches the light only through h(K) ~ K^2: its induced light mass term is ~ K^4/M, zero at K = 0 (B1).
+       Measured masses need a vacuum field coupled to the light copy directly, not a mirror-sector vev.
+== D. anomalies of the light content (exact integers)
+[PASS] D1 [T] per family the light carries twisted-Z3_k x SU(2)_e^2 = 4(q_a+k) (16 = 1 mod 3 at k = 2), S the opposite: anomaly protection holds exactly for the N at which S cannot be gapped | k=2: N [1, 2, 4, 5, 7, 8]
+[PASS] D2 [T] at N = 0 mod 3 all listed light anomalies vanish (Z4xSU(2)^2, Z16 = 16, Witten, Z3^3, Z3-grav, Z3xSU(4)^2, Z3xSU(2)^2): anomaly matching gives no protection there
+== E. Golterman-Shamir: composites and strong-coupling doubling (Task 2)
+[PASS] E1 [E] composites: odd-N cell levels >= 33.58 g (c^dag|GS> 99.98% in the lowest, so composite fermions share it), even >= 19.07 g; band >= 11.7 g for t < 3.65 g; light + mirror boson >= 19.07 g - 0.026/g; twisted charge 0 vs 1 forbids mirror-only partners
+[PASS] E2 [T] endpoint (mirror frozen, P f P = 0): light H_eff = P_l H' P_l, 8 Weyl nodes per sublattice per family, 4L + 4R: vector-like in each SU(2)_e sector (Golterman-Shamir Sec. IV)
+[PASS] E3 [F] one block at X: free gap 2sqrt2/3; with the mirror top form the 16 light states lie within 5.8e-04 at g = 32 (slope -3.05), light weight 0.9991 = Z = g^2/(g^2+8/9): doublers released | gap 0.9428, 0.8093, 0.0329, 0.0005
+[PASS] E4 [E] per block: hybridisation + mirror band 2.233 x 8 vs condensation 268.75 g: g* = 0.066 < SMG bound 0.102 (s^2 = 5/6): where the mirror is gapped, the doublers are released
+[PASS] E5 [T] zoom repair of X/M: a light-copy term mu(1 - S(K)^2) linking K and K+R (staggered over blocks, one rung up) gives E^2 = |d|^2 + mu^2 f^2 since H'(K+R) = -H'(K): the 6 X/M doublers get gap mu 8/9, Gamma and R stay, B1 is kept | X/M gap 0.2667 at mu = 0.3
+   [M] >= 4 left + 4 right weak-doublet tastes per family: N_nu >= 12 at N = 3 vs 2.984 +- 0.008; right-handed currents vs V - A.
+   [T] an endpoint freezing local light combinations leaves a finite-range free H_eff: by Nielsen-Ninomiya its nodes have net
+       chirality 0 per SU(2)_e sector, so with Gamma kept (B1) a right-handed node survives (1+1D: F5)
+== F. 1+1D two-copy chain: 2 cells x (e,o) x (light, mirror) x 2 flavours = 16 modes, twisted ring (Task 3)
+[PASS] F1 [T] free chain: one Dirac cone per sublattice at p = 0 (light R + mirror L on e); the light p = pi doubler is gapped only by the copy mixing mu(1 - cos p): 2 mu = 1
+[PASS] F2 [F] mirror cell singlet unique, gap g, G_b = z/(z^2 - g^2); [H, a_light(p=0)] = 0 at theta = 0, g = 16; theta = .3: light Gamma qp +0.1494 (w 1.0000) at g = 16: gapless, right-moving | commutator 4e-17
+[PASS] F3 [F] light p = pi doubler qp: free -1.006 (w 0.57), g = 4 -0.210 (w 0.90), g = 16 -0.1497 (w 0.9961 = Z): released as a left-mover, the light copy becomes R + L: not chiral
+[PASS] F4 [F] contrast, pair hop on both copies: light Gamma qp -> -22.35 (w 0.32): a term touching the light at p = 0 gaps it
+[PASS] F5 [T] zone-corner endpoint: freezing (a_2J - a_2J+1)/sqrt2 leaves H_eff = sin(K)/2, a new left-mover at K = pi (Nielsen-Ninomiya)
+elapsed_seconds 2.4
+theorems: A1-A4, B1-B2, C1, D1-D2, E2, E5, F1, F5; finite: C2, E3, F2-F4; estimates: E1, E4, [E]/[M] lines. Supplied: H', which copy
+  is the mirror, the mirror terms (pair square, top form, pair hop), g, mu, the (4,2) content, twist k = 2. Cited: Nielsen-Ninomiya,
+  anomaly matching, Golterman-Shamir 2505.20436, the smg-verify chain formulas.
+
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/the_family_class_winding_forces_bulk_pi_states_but_a_slab_can_put_all_its_pi_flow_on_the_far_wall_while_no_tick_alternating_term_separates_pi_pi_from_zero_zero_2026_10_24.py
+runner_sha256: 3a394c184464ad1410e176143e230a42ae7c12bc656c344eb5d4b871d3dcc193
+input_fingerprint_sha256: 22b64d5ce38adc639918ecb5ee96ea632c89c2067a52947c02b8b18b5e212821
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.33
+status: ok
+----- stdout -----
+== A. bulk tick vs slab walls
+PASS: A1 [T]/[F] BULK theorem: in turn sector a the net eigenphase flow through EVERY quasi-energy equals W_a (det winding), so W_a != 0 puts a bulk Bloch eigenstate at every quasi-energy, pi included, on the axis loop. No family-class bulk tick is gapped at pi; this is the bulk tick's own spectrum, not a slab-wall effect  [W [-2, 1, 1]; flow at eps [0.37, 1.1, 1.77, 2.6, 3.14]: [[-2, 1, 1], [-2, 1, 1], [-2, 1, 1], [-2, 1, 1], [-2, 1, 1]]; 2 turn-symmetric deformations (W, F_pi, F_1.1) [([-2, 1, 1], [-2, 1, 1], [-2, 1, 1]), ([-2, 1, 1], [-2, 1, 1], [-2, 1, 1])]]
+PASS: A2 [T] fillings: an interval filling (a, b) has flow W at BOTH cuts, so a light cut at 0 always brings a second gapless cut (its quasi-energy, pi or not, is a convention; its existence is forced). Intersection lemma: occupied and empty axis bands disjoint => every occupied/empty homology class (N, n) has one common slope => total W = 0. So ANY bulk vacuum of a W != 0 tick has occupied-empty touchings beyond a single light cut  [random cuts [(np.float64(-0.72), np.float64(-0.37)), (np.float64(-0.8), np.float64(-0.58)), (np.float64(-2.62), np.float64(1.03))]: flows ([-2, 1, 1], [-2, 1, 1]) ...; lemma exhaustive over 676 disjoint configurations (bands <= 2 per sector and side, windings |n| <= 2): all have W = 0]
+PASS: A3 [F] contrast: the anomalous Floquet (RLBL) tick is gapped at 0 AND pi in the bulk and has ZERO det winding on every loop; its walls carry F_0 = F_pi = +-1. The anomalous-Floquet escape lives in the micromotion, not in W: it cannot gap a W != 0 bulk, but it IS the structure of a slab whose bulk period has W = 0 (floquet-pi-slab's F/F^+ bulk)  [bulk gap at 0 0.80, at pi 2.34; det windings [0, 0, 0, 0, 0]; strip Lx 8 (near, far) flow at 0 [-1, 1], at pi [-1, 1]]
+PASS: A4 [T]/[F] slab: per wall F_0 - F_pi = C (bulk bands between 0 and pi); total pi flow = W_slab != 0 is forced, but its WALL is not. Static-type domain-wall bulk (W = 0, sector band invariant C = f(2,+)) + the W-carrying layer at the far termination: near wall light q 2 at 0 only, NO near-wall pi copy; far wall mirror q 1 at 0 plus the whole pi flow W  [near (F_0, F_pi) per sector [(-1, 0), (1, 0), (0, 0)]; far [(-1, -2), (0, 1), (1, 1)]; slab det winding [-2, 1, 1]]
+== B. gapping the pi copies
+PASS: B1 [T]/[F] time modulation: U0 O U0^-1 = (-1)^(n_pi) O, so a period-n drive resolves only the PARITY of the number of pi legs. Tick-alternating terms act only on odd-n_pi (0-pi mixing); constant terms act on 0-0 and pi-pi alike. A sign-alternating interaction does NOT couple only pi-pi pairs: it cancels on them exactly  [random parity-even O, g 0.01: |H_eff(const) - O_even| 1.5e-03, |H_eff(alt) + O_odd| 1.5e-03; per-tick splitting (const, alt) at g 0.3: 0-0 mass (0.60, 0e+00), pi-pi mass (0.60, 0e+00), 0-pi mix (0.00, 6e-01), 2+2 quartic (0.60, 0e+00)]
+PASS: B2 [T]/[F] S-odd route: separating pi-pi from 0-0 needs a term odd under the doubler S, and then the light pair receives the REFLECTED interaction (-O in the S-mapped frame). Reduced two-flavour Spin(6) site: the gapping sign has a unique half-filled ground state (reproduces spin10-two-flavour); the reflected sign the light sector gets has a degenerate ground state: a strongly coupled cutoff-scale term on the light 16s, not a spectator (and a sign with a unique gapped state would gap the light, which is worse)  [+g: ground degeneracy 1, N [4], gap 2.00 g; reflected -g: degeneracy 2, N values [4]]
+PASS: C1 [T] bookkeeping (anomaly-family-count index with the Omega twist k = -q_mirror, supplied form: coefficient proportional to near-wall light node count x N_f): the repaired slab has 1 near-wall light node per family instead of 2; 1 and 2 are both units mod 3, so N_f = 0 mod 3 is unchanged. Far wall to gap by SMG: mirror q 1 at 0 + one (q 2, +) and one (q 1, -) at pi = 3 x 16 = 48 Weyl per family (0 mod 16); no turn-symmetric bilinear (charge difference 1)  [allowed N_f (1 node) [3, 6, 9], (2 nodes) [3, 6, 9]]
+   time 2.5 s, peak 99 MB
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

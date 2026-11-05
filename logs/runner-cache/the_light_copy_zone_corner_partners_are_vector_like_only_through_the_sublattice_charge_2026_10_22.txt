@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/the_light_copy_zone_corner_partners_are_vector_like_only_through_the_sublattice_charge_2026_10_22.py
+runner_sha256: 380bb64b56513e942df2d78f3bb337c49d7ff8d16758886628b6d8ed79cb3b69
+input_fingerprint_sha256: 61e75d1fe752d831eceb51ee12a3a3ad1966bda192e5a3ca1dd91d245b35cb83
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.06
+status: ok
+----- stdout -----
+== A. Census ==
+[PASS] A1 CL-1 tick (eps=0.3, mu=0, copy mass M=0.2) at TRIMs |w|: G [0.  0.  0.  0.  0.2 0.2 0.2 0.2], R [0.4 0.4 0.4 0.4 0.6 0.6 0.6 0.6], X [0.198 0.398], M-pt [0.311 0.511]
+[PASS] A2 CL-1: no zero away from G (min |w| off-G on 16^3 grid = 0.093 > 0.3 eps); light copy (s=+1) at G = 4 modes, tr g5 = 0e+00: one Dirac, 1 L + 1 R Weyl per flavour; no low corner partner
+[PASS] A3 eps (sublattice sign) anticommutes with R_e, R_o and the copy-mass generator (1 - s)R_e = R_e - iR1R2R3 (0e+00) and commutes with s (0e+00): the copy mass is an eps-odd Dirac mass on the s = -1 copy
+[PASS] A4 H': [eps,H']=0e+00; 8 zero modes at G and at R = pi(1,1,1), Clifford velocities (v = 1/sqrt3), min |E| off nodes 0.315; each (node, eps) sector = 4 modes with tr g5 = 0: one L + one R Weyl. Per flavour 8 Weyl = 4 L + 4 R
+[PASS] A5 cell-local commutant of H'(K) has dim 2; max |tr(g5 X)| over it at G and R = 7e-16: no conserved cell-local label carries chirality, so no local field holds the G Weyl of one handedness alone
+[PASS] A6 at the nodes [s, velocities] = 0 and each (eps, s) block is one Weyl with chirality eps*s at G and -eps*s at R (g5 = [1, -1, -1, 1] for eps=+: (G,s+),(G,s-),(R,s+),(R,s-))
+  census (per flavour): light copy s=+1 = G_L(eps+) + G_R(eps-) at K=0 and partners R_R(eps+) + R_L(eps-) at K=pi(1,1,1);
+  mirror s=-1 = G_R(eps+) + G_L(eps-) + R_L(eps+) + R_R(eps-). Mirror gapped -> released: one Weyl per eps sector at pi(1,1,1),
+  opposite in chirality to that sector's light Weyl (2 per flavour). CL-1 small step: no low partner (R at 2 eps), but eps is not conserved.
+== B. Light-only corner mass ==
+[PASS] B1 eps-preserving masses at R: dim 4, every one pairs s=+ with s=- (max |P+ X P+| = 1e-16): the light corner partner can be gapped eps-preservingly only with the mirror (Golterman-Shamir); no cell-local eps-even mass anticommutes with H' at all K (dim 0)
+[PASS] B2 cell-local masses anticommuting with H'(K) at every K: dim 2, all eps-ODD (2e-15); X^2 = 1, [X, B] = 0 with B = (R_oR_e + R_eR_o)/2 (2-hop), [B, H'] = 0; X pairs light with light (|P+ X P+| = 0.50)
+[PASS] B3 H' + lam (1 - B)/2 X: H^2 = H'^2 + lam^2 (1 - B)^2/4 exactly; all R modes gapped by lam = 0.300, light partners R_R(eps+) with R_L(eps-) (opposite chirality, light-light); G keeps 8 zeros; min |E| off G 0.300
+[PASS] B4 but the term is eps-odd: the same X with no form factor gaps the G content by 0.300, pairing G_L(eps+) with G_R(eps-) of the light copy. Once eps is broken nothing forbids that G mass: Nielsen-Ninomiya in exact form, the corner pair is vector-like only under the symmetry that also makes the G pair vector-like
+== C. Mirror composites (SU(4) block atom) ==
+[PASS] C1 symmetric atom: gap 1.000 g; at w=0 G_m = 1e-09 (the SMG zero), G_Phi = 1e-09, |G_(m,Phi)| = 1.0000/g: m and Phi = eps m^+m^+m^+/6 (same Z4 charge) interpolate the same gapped level
+[PASS] C2 one block, light l_a coupled by w l^+m + lam l^+Phi (exact ED, 256 states, w = lam = 0.05): light level w only 1.2e-04, lam only 9.2e-06 (released, higher order); both 0.00498 g vs 2 w lam/g = 0.00500: re-gapped only through the anomalous G_(m,Phi)
+[PASS] C3 in the band that same composite self-energy is spin-blind (G_(m,Phi) is a number at w = 0), so on a corner Weyl it is a node shift mu = 2 w lam/g, not a mass: sigma.k + mu has a zero at |k| = mu (min |E| = 0e+00), a Fermi pocket. A Weyl gaps only with an opposite-chirality partner of its own eps sector (the mirror's R_L, B1) or a Majorana pair (no Spin(10) singlet in 16 x 16)
+[PASS] C4 selection rules: Spin(10), Z4 (Phi charge 3 = -1 mod 4), eps and spin act alike on G_L and on its corner partner; only momentum separates them, so any composite coupling strong enough to gap the partner gaps G_L too unless its form factor vanishes at G
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

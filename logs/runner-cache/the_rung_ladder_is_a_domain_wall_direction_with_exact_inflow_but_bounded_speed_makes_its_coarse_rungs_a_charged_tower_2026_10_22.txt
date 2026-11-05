@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/the_rung_ladder_is_a_domain_wall_direction_with_exact_inflow_but_bounded_speed_makes_its_coarse_rungs_a_charged_tower_2026_10_22.py
+runner_sha256: 75b21e2ae0b33565c4dfe0bcdefa87b5aa3cb66436b057d3d271ad1738cd5a52
+input_fingerprint_sha256: b18b9b7cc94951c0fd72b4ad245fc0939dc4f5179fa8b6c91ce1de221b926730
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.04
+status: ok
+----- stdout -----
+== A. free rung ladder (1+1D tree; copy mass m = -1, exchange kap = 1)
+[PASS] A1 THEOREM zoom rate = congruence S H_fine S (S = 2^(-j/2)); Sylvester keeps the inertia, Q = 0 kernel 2 at both rates | max residual / count mismatch 1e-16 (R = 2,3,4)
+[PASS] A2 DIAGNOSTIC one chiral pair: a mover of velocity -1 on rung 0 and the opposite mover on the top rung; mirror speed 2^R (fine) or 1 (zoom) | f R=2 vL -0.999 vM 3.92; z R=2 vL -0.999 vM 0.98; f R=5 vL -1.000 vM 31.33; z R=5 vL -1.000 vM 0.98
+[PASS] A3 DIAGNOSTIC a copy-mass offset mu = 0.2 kap pairs the two ends into a residual mass falling by mu/kap per rung (fine) and mu/(sqrt2 kap) (zoom, in fine units); exact zero at the tuned wall m = -kap | fine ratios 0.1994..0.2000, R=7 2.5e-06; zoom 0.1408..0.1414, R=7 2.1e-07
+[PASS] A4 DIAGNOSTIC end-to-end overlap at fixed physical momentum 0.02: light-state weight on the top rung falls faster than e^-2 per rung | 2.5e-14 2.5e-19 3.8e-23 7.4e-26 1.2e-27 (R = 2..6)
+== B. anomaly inflow along the rungs (Wilson-line dressing, flux threading)
+[PASS] B1 THEOREM gauge covariance: the Wilson-line-dressed ladder with flux theta is the twisted ladder, Bloch Q_n = (q theta + 2 pi n)/N_top; flux 2 pi sweeps the Bloch Q through q full turns | spectrum residual 3e-15 (q = 2, N_top = 4)
+[PASS] B2 THEOREM index: one crossing per Bloch turn on the light end and the opposite one on the top rung, so flux 2 pi moves q units of species number and q^2 of gauge charge from the top rung to rung 0 (Callan-Harvey inflow through the gapped middle rungs) | flows (low, top): f chi+1 (-1,+1), f chi-1 (+1,-1), z chi+1 (-1,+1), z chi-1 (+1,-1)
+[PASS] B3 THEOREM 3-4-5-0 (right 3,4; left 5,0): gauge-charge inflow sum chi q^2 = 0 while species numbers still flow; the 16 has zero inflow coefficients (Y^3, grav-Y, SU2^2 Y, SU3^2 Y): its light end alone is gauge-consistent | species flow per 2 pi [-3, -4, 5, 0], gauge 0; 16: 2e-16 0e+00 0e+00 0e+00
+[PASS] B4 THEOREM gauging only the light end: undressed hops across the cut break gauge equivalence (H(2 pi) not ~ H(0)); the Gauss projection removes them, and the gauged piece then carries its own charged mirror on rung J-1 | cut at J = 3 (R = 5): crossings by rung [-1, 0, 1, -1, 0, 1]; partial-gauge spectral mismatch 0.38
+== C. rates: bounded speed forces a tower of charged rung bands
+[PASS] C1 DIAGNOSTIC middle-rung band gaps: fine rate the same on every rung; zoom rate c 2^-j (self-similar), i.e. one vector-like copy of the light content per factor 2 in energy | fine [0.74  0.734 0.731 0.733 0.757]; zoom x 2^j [0.707 0.707 0.707 0.707 0.707]
+[PASS] C2 THEOREM Weyl bound: if the on-site part's smallest |level| exceeds ||H_hop|| the path to the on-site Hamiltonian stays gapped (index 0); so a wall needs on-site gap <= ||hop|| and bulk gap <= 2||hop||; Lieb-Robinson with range 2^j caps rung-j hops at ~v 2^-j: gap_j <= 2 v 2^-j at bounded speed | 14 indexed points of 34, max (min on-site |level|)/||hop|| = 0.52
+== D. estimates against measurement (a = sqrt(8 pi) l_P, E_a/(2v) = 2.1e18 GeV)
+[PASS] D1 DIAGNOSTIC one Wilson-Dirac band (gap 2 m0, unit charge): static polarisation chi(q)/q^2 = Delta(1/e^2) per band, of the continuum size ln(Lambda^2/m^2)/(12 pi^2) | m0 0.2: 0.0347 (cont 0.0465), m0 0.354: 0.0219 (cont 0.0369), m0 0.6: 0.0136 (cont 0.0280)
+[PASS] D2 ESTIMATE zoom rate, gauge-covariant: 17.4 rungs between m_e and M_Z, each a vector-like 3-family copy (sum Q^2 = 8) adding 4 pi c1 sum Q^2 to 1/alpha: extra running 38.4 vs the 0.014 known from Delta alpha_had: excluded unless c1 < 2.4e-05 | c1 0.0219; R_H = log2(c/H0 a) = 200.1
+   D3 ESTIMATE fine rate: no tower (gap ~0.4 per rung at Planck), mirror energy 2^R x momentum: below 1 TeV only for |Q| < 1e-15 x 2^-R/a, ~0 states per horizon; residual mass mu(mu/kap)^R_H <= 1e-42 GeV at mu/kap = 1/2; price: rung j hops 2^j sites per tick (speed 2^j, the swindle of the octree-ladder note), against nearest-neighbour admissibility
+   D4 ESTIMATE any cut (Gauss projection, B4) or finite top at E_R >~ M_Z: a massless charged mirror; e^c' alone adds 35.5 MeV to Gamma_Z per family vs sigma 2.3 MeV (ladder-wall E3)
+== E. owner-widened: full-density layer coordinate inside a role block
+[PASS] E1 DIAGNOSTIC layer register = domain-wall slab on Z^3 cells: one chiral pair at the two end layers, layer gap the same on every layer (no tower), residual mass (mu/kap)^Ls, but the far-end mirror carries the full charge (flow on the far layers) | layer gaps [1. 1. 1. 1. 1. 1.]; split ratio per 2 layers [0.04 0.04 0.04]; flow (near, far) (-1,+1)
+   E2 THEOREM (B1 + B2 on the slab) any gauge-covariant reading of the far layers keeps their crossing under flux 2 pi: the mirror stays coupled to the holonomy, with charge q, so a vector-like gauge theory with exact chiral symmetry results; chiral gauge couplings need one more clause (far-layer symmetric gapping, or the far layers reading a smoothed field that keeps topology)
+   E3 ESTIMATE cost: 16 Weyl x 4 components x Ls one-mode sites per family per matter cell (64 Ls); three families at Ls = 8 use 1536 sites of a 12^3 role block; cell-to-cell hops span the block (uniform slowdown b, no tower); residual mass (mu/kap)^Ls tunable to zero at the free tuned wall
+   F THEOREM (counting) the tick cannot be the wall direction: a wall bounds a (d+1)-dim bulk whose boundary is the whole 3+1 world, tick included; the B4 transfer matrix is that world's own time step (euclidean-b4 B4: it projects onto the vacuum and cannot carry CL-2); the overlap operator sign(H_W) is the infinite-layer limit of a FIFTH-direction transfer matrix, i.e. of E's layer coordinate
+supplied: 1+1D tree, rates, m = -kap, mu, Wilson lines, cut, Ntop, Q grid, Wilson band m0 and grid, layer count, unit map, measured inputs | 2.9 s
+cited: PR #9908, hybrid-wall, ladder-wall, euclidean-b4, toy-qmc, Callan-Harvey, Kaplan, Shamir, Neuberger, Grabowska-Kaplan, PDG
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

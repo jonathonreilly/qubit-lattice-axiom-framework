@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_2026_10_21.py
+runner_sha256: 949dbcd81cf085a6d93cd5de5031d27086b3505082fd40c6f270082988014d5c
+input_fingerprint_sha256: 391c93a648a2aa9451f467b2aed455d57f44f154622989a5d2c10e851cacb89a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.49
+status: ok
+----- stdout -----
+== A. rung index as a fifth coordinate
+[PASS] A1 zoom keeps W3: a quasi-local W3=-1 walk folded to the next rung (16 bands) still has W3=-1; finite-depth ticks keep 0  -0.999992 -> -0.999995; CL-2 tick +3.1e-20
+[PASS] A2 multiresolution rung is locked to momentum: weight on level n = sin^4(2^(n-2)k)/(4^(n-1)sin^2(k/2)) <= 2.5*4^(n-2)k^2 and moves one level per octave: no rung holds a field down to k=0  formula err 2e-15; mean level at k=2pi j/4096, j=1,2,4,8,16: 11.148 10.148 9.148 8.149 7.149
+[PASS] A3 carrying a 2^n-site internal index in parallel to the next cell is a nearest-neighbour swap circuit of depth 2^(n+1)-1 (light cone kept)  depths [3, 7, 15]
+[PASS] A4 1D (step 0.30): each layer is balanced (A = +-c); with the synthetic wall layer 0 holds one right-mover (crossing w=0 only at k=0), the last layer one left-mover, k-independently; leakage x(1-m0) per layer  layer-0 weight >= 0.999995, end |w| >= 0.252 for |k| > 1, ratio 0.4000
+[PASS] A5 light algebra of the tick (steps pi/2 and 0.04): {A_a,A_b}=2c^2, beta = W exactly, g5 = -iA1A2A3/c^3 block-local, traceless; commutant = M_2 (the copy factor)  c = 0.5774, 0.0231
+[PASS] A6 wall content: X = i beta' G4' (commutes with A_a, anticommutes with beta') is bound at the ends; X = -g5 puts both copies' L-Weyl at one end (flux +2) and R at the other, steps pi/2 and 0.04, either orientation; this wall keeps all 24 rotations  (near, far) fluxes (+2.000,-2.000) (-2.000,+2.000) (+2.000,-2.000) (-2.000,+2.000)
+[PASS] A6b the end reproduces the doublers unless tau(2-m0) stays below the tick's smallest doubler gap (~1.15 eps, X points)  min end |w| / bare |w| off K=0: eps .04 tau .6 0.0004 (doublers at X, M, R), eps .04 tau .02 0.81, eps pi/2 tau .6 0.85
+[PASS] A7 step pi/2 only: with copy-mixing mass beta' = W s1 the end binds a whole copy (X = -s3); s is exact and the near end is L on even cells, R on odd (copy +), the far end the mirror  sector fluxes (s=+1 near,far; s=-1 near,far) = 1.0, -1.0, -1.0, 1.0; doublers gapped (0.85)
+[PASS] A8 the copy wall is exactly symmetric under M.J (M = odd rotation x inversion, J: layer j -> L-1-j), which swaps the ends; C3 turns the copy-mixing mass by 120 deg (rotations survive only at long wavelength)  ||MJ U MJ^+ - U(R'Q)|| 8.9e-11, C3 angle +120.0
+[PASS] A9 anomalies of the end content: the plain end (X = -g5) on the rung-1 cell (one (4,2)) has SU(4)^3 = 4, not a consistent colour theory; a family end needs X = -g5 Xi, Xi = +1 on (4,2,1), -1 on (4,1,2) (A6 orientations)  (SU4^3, Witten L, Witten R): plain 2x(4,2)_L (4, 0, 0), Xi (4,2,1)_L+(4b,1,2)_L (0, 0, 0)
+== B. Floquet 0/pi pumping
+[PASS] B1 for U = R1 R2 (two reflections): tr R1 on U=+1 is (trR1+trR2)/2 and on U=-1 is (trR1-trR2)/2 (exact integers)  (traces) -> [(2, 4), (2, -2), (-1, 4), (0, 0)]
+[PASS] B2 step pi/2 tick U = W_o W_e on a 4^3 torus: W_o U W_o = U^+ (Floquet Ginsparg-Wilson form); with any site-phase links both W stay traceless reflections, so the index at 0 and pi is 0  free: dims (U=1, U=-1) = (8, 8), W_o-traces 0; random links: dims (0, 0)
+[PASS] B3 contrast: the 2D overlap V = g5 sign(H_W) has index -Q = -tr sign(H_W)/2 in flux Q = 0,1,2, because sign(H_W) is not ultralocal (elements ~1e-2 at distance L/2)  index -0, -1, -2; far element 4.0e-03
+== C. CL-5 and mirror gapping
+[PASS] C1 total mode number N is exact under CL-1..CL-5: the tick with site-phase links and edge-length amplitudes, and every current x current response term, commute with N; a four-mode term has [N,O] = -4 O
+[PASS] C2 at step pi/2 the masses ({M,A_a}=0) span 8; the 4 that commute with s (keep SU(2)_even x SU(2)_odd) all anticommute with s3: every symmetric bilinear pairs the family with the mirror  so a free history (CL-5 as written) cannot gap the mirror alone
+[PASS] C3 one family (with nu^c): N-Y^2 = -2, N-SU(2)^2 = +2, all else 0; mirror opposite. Exact N forbids gapping the mirror alone; the instanton vertex has dN = 4, so Z_k of N survives iff k | 4  dN per vertex 4; Weyl count 16 = 0 mod 16
+[PASS] C4 exact mirror reflection M = (odd rotation)(inversion) at every step and mass: M s M^+ = s, M g5 M^+ = -g5, M s3 M^+ = -s3, M W M^+ = W: it maps the copy-+ family onto the copy-- mirror on the same cells  covariance 4e-15
+== D. against measurement (estimates)
+   proton: a Planck-suppressed dN=4 term gives tau_p ~ Lambda^4/m_p^5 = 8e+42 yr (Super-K bound 2.4e34 yr); wall leakage adds (p/Lambda)^4 per leg
+   a massless mirror kept "unobserved" but sphaleron-coupled thermalises (rate ~25 a_W^5 T > H for 1e2-1e12 GeV): dN_eff = 1.04 vs N_eff = 2.99 +- 0.17
+   wall leakage with |1-m0| = 0.4 and Lambda = M_P/3: m_res < 0.05 eV needs L_s >= 73; at m0 = r the chain is dimerised and the K=0 end modes are exact for any L_s >= 2
+   copy wall (A7) needs step pi/2, where partner pairs at quasi-energy pi are resonant (register: eps < 0.04); the Xi wall (A6/A9) works at eps = 0.04 if tau < ~eps (A6b)
+[PASS] D1 estimates: proton safe, decoupled massless mirror excluded by N_eff, L_s bound finite  2.2 s
+theorems: A1 folding, A2 Haar locking, A3 swap depth, A5 algebra, A6 end content, B1 two-reflection index, C1 N exact, C2 bilinears, C3 anomaly sums, C4 M.
+cited, not rederived: SK1(C[Z^3]) = 0 (W3 = 0 for non-circuit finite-range QCAs), anomaly matching for on-site symmetries, SMG gapped-phase existence.
+supplied: internal index carried in parallel, synthetic mass beta', m0, r, tau, layer count, Xi, the dN=4 term and its symmetry.
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

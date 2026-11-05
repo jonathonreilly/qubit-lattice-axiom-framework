@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/a_domain_wall_tick_with_the_layer_direction_as_space_puts_one_weyl_cone_on_each_wall_but_the_circuit_forces_the_mirror_onto_the_far_wall_2026_10_23.py
+runner_sha256: b183deb4e366fb873b83b3c6f937583e2575a58f45dda20307463dfece467a92
+input_fingerprint_sha256: d615462c15c1d864d3d66f742daa0250e177fcbf3f944c9e2694c0ab2aa26d70
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.99
+status: ok
+----- stdout -----
+== A. domain wall, layer direction as space, tick as time (m = 0.6, theta = 0.2)
+PASS: A1 [T] the slab tick U is unitary and a product of range-1 gates: range 1 in each space direction (cube-local), range 2 in layers  [unitarity 2e-16; Fourier weight at |n| = 2: 1e-16; layer range 1]
+PASS: A2 [F] the 4D bulk is gapped: walk at quasienergy 0 and pi (8^4 grid + local minimisation), Hamiltonian at 0 (8^4 grid)  [walk gap0 0.067, gap_pi 1.662; H gap 0.600]
+PASS: A3 [F] exactly one two-component Weyl node per wall, at k = 0 and quasienergy 0, opposite chirality on the two walls; none at the other 7 corners, none at pi; the Hamiltonian slab agrees (Ls = 12)  [walk {'L': (2, -1, np.float64(0.0027618845524328894)), 'R': (2, 1, np.float64(0.002761884552432909))}; H L,R chirality -1,1 |det v| 1.000]
+PASS: A4 [F] no other boundary nodes anywhere in the zone: every 12^3 grid point with an in-gap state lies within 0.8 of k = 0; on the L = 6 torus (Ls = 8) the in-gap states are the 4 at k = 0  [in-gap points 1, far 0; L = 6 count 4]
+PASS: A5 [T]/[F] mirror overlap falls as |1 - m|^Ls (exact zero-mode recursion psi_s = (1-m)^s chi, i G5 G4 chi = -chi): the k = 0 splitting ratio per layer -> 0.4; at m = 1 the wall mode is compact and the overlap vanishes  [H 5.4e-02, 2.2e-02, 8.6e-03, 3.4e-03, 1.4e-03, 5.5e-04, 2.2e-04 (Ls 3..9); walk ratio 0.3989; m=1: 3e-17; xi = 1.09 layers]
+PASS: A6 [T] the slab Hamiltonian is covariant under the 12 tetrahedral rotations (C2 and C3 generators, spinor lift on Gamma_1..3); the wall carries NO state at X, M, R, so the corner-stabilizer premise (a walk-invariant light label at X and M) is void  [C2 0e+00, C3 9e-16; wall states at X/M/R: none]
+PASS: A7 [F] the exactly covariant tick exp(-i H tau) is exponentially (faster than exponentially) local: hop weight at distance r  [tau = 1: 6e-01, 3e-01, 9e-02, 9e-03, 5e-04, 2e-05, 4e-07, 6e-09, 7e-11]
+PASS: A8 [T] where the W3 obstruction binds: the whole slab is a 3D walk built only from gates exp(-i theta h), so it is homotopic to 1 and W3 = 0 exactly (n0 = npi = 0 summed over both walls); one wall has (n0, npi) = (-1, 0), which no walk-invariant sector of any 3D walk can have (sector relation n0 = npi = -W3, control K): the light wall is not a walk sector, and the mirror is the far wall  [slab W3 (Ls = 4, 8^3) = -4.5e-19]
+== K. control: W3 integrator and the sector relation on U = (d0 + i d.sigma)/|d|, d0 = m - sum cos k, d = sin k
+PASS: K1 [T] the integrator returns integers and n0 = npi = -W3 (m = 2: W3 = -1, n0 = npi = +1; m = 4: all 0)  [m=2 W3 -0.9999 n {0: 1, 1: 1}; m=4 W3 -2e-05]
+== B. modified chiral charges in a lattice Hamiltonian
+PASS: B1 [T] the slab's layer-sign charge Q = sign(s - mid) is compact, quantised (+-1) and on-site in 3D, but not conserved: [H, Q] lives only on the middle bond, and between the wall modes it falls as |1-m|^Ls (the mirror leak is the anomaly's channel)  [middle-bond only: True; low-mode element 6.4e-03, 1.1e-03, 1.8e-04 (Ls 6, 8, 10; ratio per 2 layers 0.171 -> 0.160, target 0.16)]
+PASS: B2 [T] recheck of the 1+1D template (staggered chain, BdG): the axial charge has levels +-1 (quantised, non-on-site, conserved), but the one-handed combination (Q_V - Q_A)/2 has levels |sin(k/2)| in [0, 1]: no compact one-handed U(1) to gauge  [levels of q_R: 0e+00 .. 1.000]
+   B3 [T, cited proof] Nielsen-Ninomiya for exponentially local H: analytic h(k) commuting with a one-body, number-conserving q(k) of
+      k-independent spectrum has analytic charge projectors (contour integral), so each charge sector is a smooth bundle on T^3 whose
+      slice Chern number is periodic in k3: net node chirality 0 per charge. Non-on-site is allowed; only non-compact or pairing charges escape.
+== C. the same circuit at larger steps: do anomalous (quasienergy-pi) boundary cones appear in a gapped bulk?
+PASS: C1 [F] (pre-set form 'theta = 0.3 gapped, no pi cones' FAILED on the first run; recorded result) the circuit's bulk gap at 0 closes between theta = 0.2 and 0.3 (wall chirality flips to +1 there); the (-1, -3) wall pattern with cones at the three face corners at pi appears at theta = 0.7 only with a gapless bulk: no gapped anomalous phase in this family  [theta 0.3: gaps 1.3e-15, 9.2e-01, wall L {0.0: 1, 3.14: 0}; theta 0.7: gaps 2.3e-12, 5.3e-15, wall L {0.0: -1, 3.14: -3}]
+PASS: C2 [T] for every step the circuit slab has W3 = 0 (homotopy to 1), so W3 can become a resource only through an index-carrying, non-circuit element; with a circuit the far-wall mirror is forced  [slab W3 at theta 0.7: -3.2e-17]
+Supplied: Wilson-type slab (Gamma basis, m = 0.6 in the window 0 < m < 2, theta = 0.2 / 0.3 / 0.7, tau = 1, Ls), free fields, momentum space.
+Open: gauging the light wall alone, or gapping the far wall by symmetric interactions (not attempted here).
+elapsed 4.0s, peak RSS 87 MB
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

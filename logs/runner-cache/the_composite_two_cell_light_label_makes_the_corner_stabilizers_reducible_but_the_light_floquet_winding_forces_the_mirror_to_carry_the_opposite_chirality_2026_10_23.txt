@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/the_composite_two_cell_light_label_makes_the_corner_stabilizers_reducible_but_the_light_floquet_winding_forces_the_mirror_to_carry_the_opposite_chirality_2026_10_23.py
+runner_sha256: a1064940af96e8cf32cfded164256f1e2940df9ece6fd2b359f246e56ad2fab0
+input_fingerprint_sha256: ea517bdd447bd1b97dea9fe6aa4030bcb3a04b8a5edc6d115b54b62ebc33c621
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 1.73
+status: ok
+----- stdout -----
+== A. doubled-cell stabilizers on the composite (folded) light label ==
+PASS A0 the doubled-cell walk (FREEZE on 4^3 blocks) is covariant under the 12 rotations about the block centre, and the composite light label (rank 16) is rotation invariant  [res 1e-14]
+PASS A1 at every doubled-zone corner the stabilizer acts REDUCIBLY on the light label (commutant dim > 1; single-cell value was 1)  [Gamma_D:|stab|=12,commutant(block,cell)=[24, 24]; X_D:|stab|=4,commutant(block,cell)=[64, 64]; M_D:|stab|=4,commutant(block,cell)=[64, 64]; R_D:|stab|=12,commutant(block,cell)=[24, 24]]
+PASS A2 zone centre, full 2T: light at quasienergy 0 (Gamma + X-triplet) has commutant 6 = 4+1+1: the X-triplet is three DISTINCT 2-dim irreps (commutant 3) and exactly one of them shares Gamma's irrep (intertwiner dim 1); same at pi for R + M-triplet; both rotation centres  [(G+X, X, G->X, R+M, M, R->M): {'block': (6, 3, 1, 6, 3, 1), 'cell': (6, 3, 1, 6, 3, 1)}]
+  => a T-covariant light-light term at the zone centre is Schur-block-diagonal: it can pair Gamma's Weyl with
+     ONE X-combination (killing the protected Weyl) and only shifts the other two X irreps (no partner)
+== B. Floquet winding W3 of the light and mirror sectors (FREEZE, polar part) ==
+PASS B1 light-sector polar unitary is smooth on the whole torus (light block never singular) and its 3D winding W3 = (1/24pi^2) int tr(U^-1 dU)^3 is -2 = MINUS the net corner chirality at 0 and at pi (+2, +2) (W3 = -n_0 = -n_pi in this sign convention); mirror W3 = +2, total 0  [W3 light -2.0000, mirror +2.0000; min singular value light 0.350, mirror 0.350]
+  exact (section C of the note): W3 is additive over walk-invariant sectors, a sector gapped at ANY single
+  quasienergy has a continuous log so W3 = 0, and -W3 = net chirality at 0 = net chirality at pi.
+  target light content (Gamma Weyl at 0, R Weyl at pi, nothing else, chirality -1 each) => W3_light = +1 => the complement
+  carries the opposite unit and is gapless at EVERY quasienergy: the mirror carries the opposite chirality.
+verdict: the composite two-cell label makes every corner stabilizer reducible (Schur wall moved), but the
+light-light pairing it allows only consumes the protected Weyl; the light winding (-2) is conserved by any
+light-light term, and the target winding (+1) would leave an ungappable (W3 = -1) mirror.
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

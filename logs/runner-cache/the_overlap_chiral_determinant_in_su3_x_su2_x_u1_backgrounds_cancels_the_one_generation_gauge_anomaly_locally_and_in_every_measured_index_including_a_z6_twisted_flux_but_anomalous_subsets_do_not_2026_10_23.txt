@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/the_overlap_chiral_determinant_in_su3_x_su2_x_u1_backgrounds_cancels_the_one_generation_gauge_anomaly_locally_and_in_every_measured_index_including_a_z6_twisted_flux_but_anomalous_subsets_do_not_2026_10_23.py
+runner_sha256: f76571ddd567210b6449181e9a28ee64d7645c22692cd026b18f204b139a326f
+input_fingerprint_sha256: 7039b66f3df64a6bd53642bfea36710cbefed3d02fda7801f645dec6d4df31e0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 40.43
+status: ok
+----- stdout -----
+exact coefficients (Tr Y^3, Tr_3 Y, Tr_2 Y, SU(3)^3 count, Tr Y):
+  family        Y3=0      cY=0      wY=0      A3=0      gY=0     
+  lone Q        Y3=1/36   cY=1/3    wY=1/2    A3=2      gY=1     
+  no u^c        Y3=8/9    cY=2/3    wY=0      A3=1      gY=2     
+  quarks        Y3=-3/4   cY=0      wY=1/2    A3=0      gY=0     
+  +X(3,1,-1/3)  Y3=-1/9   cY=-1/3   wY=0      A3=1      gY=-1    
+PASS: A1 simply-connected SU(3) Cartan flux diag(1,-1,0) (both planes), x random SU(3)xSU(2)xU(1): every index = -sum f^2; sum Y index = 0 for the family, matches charge prediction for every contrast  [idx Q-4,u-2,d-2,L0,e0,n0,X-2; sumY family 0, lone Q -2/3, no u^c -4/3, quarks 0, +X(3,1,-1/3) 2/3; gap 0.496]
+PASS: A2 Z6-twisted flux: SU(3) centre (1/3,1/3,-2/3) + SU(2) (1/2,-1/2) + U(1) 1/6 per unit 6Y, x random SU(3)xSU(2)xU(1): every index = -sum f^2; sum Y index = 0 for the family, matches charge prediction for every contrast  [idx Q-3,u-2,d-1,L-1,e-1,n0,X-1; sumY family 0, lone Q -1/2, no u^c -4/3, quarks 1/2, +X(3,1,-1/3) 1/3; gap 0.508]
+PASS: A3 abelian blocks: component index idx(f) = -f^2 (f = -1,0,1); colour diag(1,1,-2)- and weak T3-weighted integrated anomalies vanish for the family (SU(3)^3, SU(2)^2 Y), not for no-u^c / +X (colour) or quarks (weak)  [idx {-1: -1, 0: 0, 1: -1}; A1 family: +0,+0.0; A1 no u^c: -2,+0.0; A1 quarks: +0,+0.0; A1 +X(3,1,-1/3): -2,+0.0; A2 family: +0,+0.0; A2 no u^c: -2,+0.0; A2 quarks: +0,-0.5; A2 +X(3,1,-1/3): +2,+0.0]
+PASS: A4 global form: all 16 fields (and X) have integer component fluxes in the Z6-twisted background (are reps of the Z6 quotient); (3,1,0) and (1,2,0) do not, (3,1,2/3) does  [{'X0': False, 'D0': False, 'T2': True}; A-section 3s]
+PASS: B1 pure SU(3) (eps=0.3): lattice C gives antitriplet tr(T g5 D) = -triplet's, tr(g5 D) equal (1e-12). Family SU(3) density (SU(3)^3) and Y-weighted density (SU(3)^2 Y) vanish at every site; no u^c and +X fail both; quarks pass Y  [C-rel 1e-14; family C 1e-14 Y 5e-15; no u^c C 2.2e-03 Y 4.2e-03; +X C 2.2e-03; lone Q C 4.4e-03]
+PASS: B2 pure SU(2) (eps=0.3): Y-weighted density (SU(2)^2 Y: 3 colours x Q + L) vanishes at every site; quarks alone and lone Q fail  [family Y 4e-15, W 7e-15; quarks Y 1.1e-03; 13s]
+PASS: B3 pure U(1)_Y scan eps=0.2,0.1,0.05: family density ~ eps^4 (Tr Y^3 = 0, C-even e(Y); |s-4|<0.4), lone Q and quarks ~ eps^2 (|s-2|<0.3). Tr Y = 0 is charge arithmetic only (no curved background)  [family 3.95, lone Q 2.00, no u^c 1.98, quarks 1.99, +X(3,1,-1/3) 2.11]
+PASS: C1 generic background, eps=0.2,0.1,0.05: family anomaly densities in U(1)_Y, SU(3), SU(2) directions fall at least as eps^2.7 (continuum anomaly cancelled); lone Q falls as eps^2 in all three (|s-2|<0.3)  [family Yo3.98 Co4.07 Wo4.05; lone Q Yx2.00 Cx1.99 Wx1.97; (x = anomalous predicted, o = cancel)]
+PASS: C2 contrasts, same scan, every direction as charge sums predict (x: |s-2|<0.3, o: s>=2.7): no u^c fails Y,SU(3); quarks fail Y,SU(2) and pass SU(3); +X fails Y,SU(3)  [no u^c Yx1.96 Cx2.01 Wo4.05; quarks Yx2.03 Co4.07 Wx1.97; +X(3,1,-1/3) Yx1.96 Cx1.98 Wo4.05]
+   eps=0.2 family/loneQ: Y 1.90e-01 C 6.32e-02 W 7.93e-02; eps=0.05: Y 1.2e-02 C 3.5e-03 W 4.4e-03; 23s
+PASS: D1 u^c antitriplet in generic SU(3)xU(1) background (3^4, dim 972): GW, g5-hermiticity, P_hat_- projector with D P_hat_- = P_+ D exact  [GW 1e-14, herm 5e-16, proj 6e-15, gap 0.504]
+Supplied: SU(3)xSU(2)xU(1)_Y, the 16's content and hypercharges, m0=1.6, the Z6 global form (one twisted flux), background shapes. Finite diagnostic on 3^4; not a non-perturbative proof; gravitational Tr Y not measured.
+elapsed 40.2s, peak RSS 371 MB
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

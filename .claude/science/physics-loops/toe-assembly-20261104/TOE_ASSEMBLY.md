@@ -549,6 +549,8 @@ Two routes:
 
 **The lowest rung fits T0's gauge group.** With one qubit per site and PS-6, the frame group of `M_2(C)` is `U(2)`, with non-abelian part `SU(2)` (consistent with #9882's "abelian or copy U(2)" commutant). So the framework's simplest gauge sector is a pure SU(2) lattice gauge theory on `Z^3` with the update as time evolution. That is T0's theory up to bridges Y1-Y3 below, and it is the natural first rung of the ladder (the process review's "easier analogue" rule).
 
+*Correction, 2026-11-05.* The first sentence does not hold on `L_cube`. There a site is one fermion mode, and its exact frames are `U(1)` (`B5B_DRAFT.md`; section 3.1's PS-6 correction). On five-mode sites (section 3.4) `SU(2)` is an exact gauge subgroup of both live laws, with its own Gauss law: `LW1_5U_DRAFT.md` Proposition T for `U(5)`, and `LW1_5O_DRAFT.md` Proposition T for `Spin(10)`. Their link registers are finite quantum links (PS-6r), not group-valued Wilson links. Whether that sector is in T0's class is bridge Y2.
+
 **Bridges from the framework to T0's hypotheses (open inputs of GA2).**
 - **Y1, Euclidean form.** The framework's SU(2) link sector, with the update as transfer, has a Euclidean representation on `Z^3 x Z` (or on D4 events) with a local, gauge-invariant action `S_fw`, reflection positive in time.
 - **Y2, the RG domain.** `S_fw` lies in the domain of the hard-core block RG (Balaban's class as rebuilt on the branch), or the hard core's bounds extend to `S_fw`. T0 is stated for the Wilson action.

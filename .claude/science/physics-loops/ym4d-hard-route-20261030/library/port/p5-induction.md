@@ -824,3 +824,32 @@ The full written section drafts were saved while working in `/tmp/p5-a5.txt`, `/
 **Named hypotheses carried:** every row of the A5, A6 and A12 input tables; in particular the complete A12 list (a),(a′),(b)–(h), the earlier-level representation, H1–H6, and the cell comparison. The Cauchy proof retains (A1)–(A4), composition and vanishing first variation. The coupling application explicitly carries that whole extraction package, including (A4). The common-domain, real-slice, activity, locality, format, prepared-sequence and positivity inputs of A5 remain attached. All direct Balaban inputs, the P5-P01–P5-P19 printed bundles, the named cited-theorem frontier and the inherited open representation frontier remain hypotheses at their recorded loci and standing. The available inputs are credited at their current standing: p1 checked; p3 and p4 ports; mu and lrb proved and refereed; ui completed and checked; oc being refereed.
 
 This is a port of the account's deductions, with filled steps and the marked reference correction. It does not prove the open antecedents or T0 and grants no scientific status. Credit belongs to Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, and to Balaban at the cited loci. Codex wrote this port by hand. No numerical calculation, search, enumeration, solver or other computer-assisted proof was used. Only `library/port/p5-induction.md` changed; no editable prompt, ledger, audit file or platform instruction changed. **This text is not yet checked by another model.**
+
+## Change log (check, 2026-11-05)
+
+Ported by Codex. Checked line by line by a fresh Claude session ([p5-induction-gate](../../gates/p5-induction-gate.md)): first failing step none; all six statements word for word; all 17 filled steps hold; all six faithful as conditional implications.
+
+Recorded by the lead (Claude):
+1. A6-C1 is a real error in their text: (Γ4f) at CA-I 31823 is a ratio bound, not the logarithmic floor; the floor follows from (e) \(\gamma\le e^{-q}\) (CA-I 1365, 10282) or \(\gamma\le1/2\) (1726). No constant changes.
+2. The one-loop status discrepancy is real: `4.2:lem-one-loop` is in citation form ("used here as stated", 3930) with no (∗) step and is absent from their open list (166617–24), yet A12 (b), its proof and 56361 call it incomplete.
+3. The unrooted (A4) sum is real: as printed at CA-I 32256 it diverges on \(\mathbb Z^4\) (every translate of one cube adds \(c^2\)); unresolved in their text.
+4. Their coupling-increment statement omits (A4), which its proof of (b) needs; carried here.
+5. **Added named input:** `4.6:rem-widened-support` (CA-I 23092–23120, "Proof outstanding") is the source of the standing bounds A5 assumes; it is in neither this port's list nor their open list.
+6. A6.1 uses kernel locality with its collar to apply (A2) on \(X\); listed as an input. Their (vi) prints 172d where the statement says 86d; nothing depends on it.
+7. Standing updated: oc frozen; p3, p4 checked ports.
+
+**Clause (0) hypotheses of `4.19:prop-clause-zero`, current suppliers:**
+
+| Item | Supplier now |
+|---|---|
+| (a) CMP 109 Theorem 3 | Cited published theorem; open (Balaban rebuild). |
+| (a′) widened (1.12) and reproduction | Partly: frozen oc (small and real-background pairs, common \(B_{12}\), one-step reproduction). §4.9 transport branch open. |
+| (b) lem-one-loop, lem-unmarked | Open. |
+| (c) prop-coupling-increment | This port (A6), conditional; its inputs (kernel-power corollary, (A3), (A4), membership/(1.17)) open. |
+| (d) cor-localised-independence | Checked p4 (A3) with frozen lrb, on lrb's premises. |
+| (e) operator bounds at free current | Checked p4 (A4) with checked ui; p4's Balaban frontier remains. |
+| (f) prop-large-field-bound | This port (A5) with checked p1; activity supplier, positivity dichotomy, widened support and domain inputs open. |
+| (g) one-power hereditary class | Partly: frozen mu and oc; membership, nesting at the radii used, (1.17) at complex pairs open. |
+| (h) torus independence | Open; not ported. |
+
+Status: **checked port.**

@@ -27,7 +27,7 @@ For active blocks with complete reads in \(Y\), **Rep** means \(c_b(\mathcal M^k
  \widehat W^V_{b,x}(D)=W^V_{b,x}(D)W^V_{b,x}(0)^{-1},\quad
  \Phi^Y_V(D)=\sum_{b,x\ne y_b}[1-\tfrac12\operatorname{tr}\widehat W^V_{b,x}(D)]. \tag{2}
 \]
-The proposed new fluctuation factor is \(e^{-x\Phi^Y_V(D)}\), with relative indicator \(|\widehat W^V_{b,x}(D)-I|<\epsilon_j\). At an axial **\(V\)** it is SA 7181–7182, including the same scalar normalizer. This definition is an adopted nonlinear extension of Y3's quadratic form; Y3 31522–31536 alone defines only that form. It does not instruct an owner to change already stored tests.
+The proposed new fluctuation factor is \(e^{-x\Phi^Y_V(D)}\), with relative indicator \(|\widehat W^V_{b,x}(D)-I|<\epsilon_j\). At a real axial **\(V\)** it is SA 7181–7182, including the same scalar normalizer; SA writes \(\Re\operatorname{tr}\) where this text writes \(\operatorname{tr}\), and at a complex axial \(V\) this factor is the holomorphic continuation of SA's. This definition is an adopted nonlinear extension of Y3's quadratic form; Y3 31522–31536 alone defines only that form. It does not instruct an owner to change already stored tests.
 
 **D3 (pivot and candidate precision).** The actual plain constraint is
 \[
@@ -48,7 +48,7 @@ Here \(\iota\) injects the active level-\(k\) rows. This is frozen PR-lay (6)–
 **Named imports.**
 
 * **M:** frozen hm Lemmas 1–4, Theorem 5, Theorems 7–8 and Corollary 13.1, and frozen descent Lemmas 1, 2, 4 and Theorem B, with **R, W, AV, W-cov, PF** as stated in descent 60–66. Import their analytic, matrix and structural claims, **excluding the physical G-ID clause in both texts**. Thus retain the real gap, flat/curved/separation premises, local complex inverse and all-scale second-jet bounds, smooth two-difference cutoffs, repaired tree counts and zero-length multiplier reads, actual analytic means, common branches and fixed-region pair dependence. Include [h-walk-gate](../gates/h-walk-gate.md) §§5–8 and [a2-layers-gate](../gates/a2-layers-gate.md)'s stated repairs. Descent rebuilds the representative estimates for Y first; it does not substitute equality of the two forms at complex Rep triples. All constants are uniform in depth, volume, shape and larger admitted gaps.
-* **PIV:** uniformly on the domains in use, \(C_V\) is holomorphic for \(|u|_\infty<\rho_p\), obeys \(|C_V(u)|_\infty\le C_p|u|_\infty\), has a fixed radius \(r_p\) for its free-variable and \(V\)-reads, and commutes with real gauge transport. The means obey a uniform bound \(|W^V(D)|,|W^V(0)^{-1}|\le G\) for \(|D|_\infty<\rho_a\), with early \(\rho_p,\rho_a>0\) and \(C_p,G\ge1\). These are nonlinear analytic-domain inputs. Covariance of the **linear** pivot derivative alone does not supply them.
+* **PIV:** uniformly on the domains in use, \(C_V\) is holomorphic for \(|u|_\infty<\rho_p\), obeys \(|C_V(u)|_\infty\le C_p|u|_\infty\), has a fixed radius \(r_p\) for its free-variable and \(V\)-reads, and commutes with real gauge transport. The means obey a uniform bound \(|W^V(D)|,|W^V(0)^{-1}|\le G\) for \(|D|_\infty<\rho_a\), with early \(\rho_p,\rho_a>0\) and \(C_p,G\ge1\). These are nonlinear analytic-domain inputs. No frozen text supplies PIV; it is listed as **Outstanding** in the Result. (Its mean-bound part G is in descent Lemma 2's proof, from AV and Cauchy; the graph part should follow from the holomorphic implicit-function theorem, not yet written.) Covariance of the **linear** pivot derivative alone does not supply them.
 * **FG/UM:** SA 13904–14089 and 14219–14249's finite-dimensional Gaussian comparison; UM's finite potential types, fixed real cutoffs, disjoint failed-bond blocks, carrier counts, rate conditions and finite interpolation/Mayer identities. The potentials must be supplied on their whole declared complex domains. The comparison and count implications are imported, not reproved here.
 * **BG:** cp12 D1–D3, its P81/P82 hypotheses, and the repaired [a3-derivative](a3-derivative.md) §6 system, with [its gate](../gates/a3-derivative-gate.md) §§6.1, 7. Physical application also requires the actual background-branch match and next-constraint criticality specified in §5. Those are not matrix-envelope conclusions.
 * **Q-real:** frozen PR-lay Q, including RCG4/F0, and cp12 Theorem 7 on every required enlarged box, only for Lemma 9 below.
@@ -105,7 +105,7 @@ The positive constants \(K_0,H_0,d,C_\tau\) precede \(\kappa\), independently of
 
 *Proof.* Each fixed-region coefficient and its full hull depends only on the pair and the fixed geometric record, by descent Lemma 4. Grouping, transposition and tagging preserve that property. That lemma reruns hm's local bounds for the Y coefficients. Descent Lemma 1 transports every R4 triple to a representative with the same radii; its real orthogonal conjugation transports the rerun bounds back. Descent Theorem B therefore gives (7), normal convergence, the structural assertions and the dimension count. No equality with the absolute complex precision is used. Restriction sets missing-hull tags to zero; wall separation kills every connecting hull. On each common branch chart the means, finite matrices and their inverses depend continuously on the real data; their normally convergent labelled sums are Borel. Fixed Borel cutoffs and FG domination preserve that property under integration. Normalization and interpolation are hm Theorem 8 applied to (6). ∎
 
-For **this assignment**, (7) supplies IN1 H-M's matrix clauses with \(b=32,H_p=L^3\). Together with Theorem 4 it supplies the comparison read by TD J and NL1-L Theorem 7's CI-Gauss, once their entire domains are admitted. The Gaussian structural clauses of ci-form H-S hold at the fixed geometric record. To supply ci-form H-G's additional limit (4), its whole domain must have bounds \(a_i(\gamma),j_0(\gamma)\to0\) and \(\sup|\tau-1|\to0\); then \(\Delta_\gamma=H_0L^3(a_0+a_1+j_0)+C_\tau\sup|\tau-1|\to0\). Fixed absolute ceilings alone do not imply this limit. **Outstanding (DOM/formation match):** no theorem here places every CI or ST1 domain in R4, supplies that whole-domain shrinking, or identifies an independently chosen family of old activities with D4. Physical identification is Theorem 8, not a premise hidden in Theorem 2.
+For **this assignment**, (7) supplies IN1 H-M's matrix clauses with \(b=32,H_p=L^3\). Here IN1 H-M's datum \((C,\Gamma)\) is read as the rescaled pair \((\tau^{-1}C,\tau^{1/2}\Gamma)\), with covariance \(D_\tau\) (SA 14243–14247); with that reading (7) is exactly IN1 (9). Frozen descent (15) carries the same reading. Together with Theorem 4 it supplies the comparison read by TD J and NL1-L Theorem 7's CI-Gauss, once their entire domains are admitted. The Gaussian structural clauses of ci-form H-S hold at the fixed geometric record. To supply ci-form H-G's additional limit (4), its whole domain must have bounds \(a_i(\gamma),j_0(\gamma)\to0\) and \(\sup|\tau-1|\to0\); then \(\Delta_\gamma=H_0L^3(a_0+a_1+j_0)+C_\tau\sup|\tau-1|\to0\). Fixed absolute ceilings alone do not imply this limit. **Outstanding (DOM/formation match):** no theorem here places every CI or ST1 domain in R4, supplies that whole-domain shrinking, or identifies an independently chosen family of old activities with D4. Physical identification is Theorem 8, not a premise hidden in Theorem 2.
 
 ## 3. Local formation and the UM budget
 
@@ -136,7 +136,7 @@ Lemma 1 gives \(h(0)=h'(0)=0\). On a line \(u=t v\), \(|v|_\infty=1\), the Cauch
  |f(u)|\le\sum_{n\ge3}B(|u|_\infty/\rho)^n
  \le2B\rho^{-3}\delta_j|u|_\infty^2.
 \]
-Since \(|x_j|/\theta_j\le5/4<2\), each term in (9) is bounded by \(4B\rho^{-3}\delta_j\sum_{\beta\text{ read}}|b(\beta)|^2\). Summing uses \(N_o\). The hull has width less than \(M\), so its cube rectangle has at most \(2^4=16\) cubes. A tree through their centres has fine-cube length at most 15, hence at most 32. This proves (10). Analyticity, reality and covariance follow termwise from AV, PIV and Lemma 1; the geometric reads do not vary with fields. Finally \(\delta_j=A_1e^{-t/2}t^{p_0}\) with \(t=\log\theta_j\). For \(t>2p_0\) it decreases to zero; the exponential series with any integer power greater than \(p_0\) proves that limit. ∎
+Since \(|x_j|/\theta_j\le5/4<2\), each term in (9) is bounded by \(4B\rho^{-3}\delta_j\sum_{\beta\text{ read}}|b(\beta)|^2\). Summing uses \(N_o\). The hull has width less than \(M\), so its cube rectangle has at most \(2^4=16\) cubes. A tree through their centres has fine-cube length at most 15, so \(e^{15\lambda_V}\) suffices (the text keeps the valid larger factor 32). This proves (10). Analyticity, reality and covariance follow termwise from AV, PIV and Lemma 1; the geometric reads do not vary with fields. Finally \(\delta_j=A_1e^{-t/2}t^{p_0}\) with \(t=\log\theta_j\). For \(t>2p_0\) it decreases to zero; the exponential series with any integer power greater than \(p_0\) proves that limit. ∎
 
 On a declared **larger complex bond box** \(|b|_\infty<R_b\), the same proof gives (10) with \(\delta_j\) replaced by \(\delta_B=g_jR_b\le\rho/2\): substitute this upper bound for \(|u|_\infty\) in the displayed Cauchy sum. In particular ci-form's scalar polydisc \(R=(\log\theta_j)^q\) requires \(R_b=\sqrt3R\) and the ceiling on \(a_{\rm GF}\) with this \(\delta_B\). It still tends to zero since \(g_j(\log\theta_j)^q\to0\). This extension does not move the real cutoff or delete indicators outside it. If the actual real window has factor \(C_{\rm win}\), replace its cutoff by \(C_{\rm win}\delta_j\) and impose \(A_0>2BC_{\rm win}A_1/\rho\). These are later ceilings, not changes to early matrix constants.
 
@@ -170,7 +170,7 @@ Explicitly, UM6 bounds an integrand of modulus at most \(F_*e^{\rho_t|b|^2}\), w
                   -\gamma_t\mathfrak b^2\#P_0/2\},\qquad
  m\le c_m(LM)^4\#Z,
 \]
-where \(\rho_t+\gamma_t/2\le\zeta_0\) and \(\mathfrak b\) is the fixed real threshold. On the potential-coupling discs \(\rho_t=P_dW_0M^{-4}\). No auxiliary dimension enters this cost.
+where \(\rho_t+\gamma_t/2\le\zeta_0\) and \(\mathfrak b\) is the fixed real threshold. The same proof gives the bound for every tilt \(\gamma>0\) with \(\rho_t+\gamma/2\le\zeta_0\), as SA's UM6 states, and the integrals are jointly holomorphic in the stated parameters. (Here \(P_0\) denotes the failed bond blocks only, not the reference triple.) On the potential-coupling discs \(\rho_t=P_dW_0M^{-4}\). No auxiliary dimension enters this cost.
 
 *Proof.* Theorem 2 supplies UM4–UM5. On the failed-test support, \(\sum_{\beta\in P_{\rm fail}}|b(\beta)|^2\ge\mathfrak b_j^2|P_{\rm fail}|\); an extra tilt \(\gamma_t/2\) in FG therefore gives UM6. The potential tilt satisfies \(P_dW_0M^{-4}+\gamma_t/2\le\zeta_0\), which is UM14. Directly,
 \[
@@ -231,7 +231,7 @@ Evaluate a local term only when its complete hull is supplied. This definition i
    \]
    The difference from \(P_0\) has the same bound multiplied by \(2r_Y(P)/r_{\rm loc}\). All constants in (17)–(19), apart from the displayed \(M,\kappa\), precede \(\kappa\).
 
-*Proof.* First check the construction for a compression. In hm's proof of (16), replace each coordinate ball by its intersection with \(S\). Its real-part lower bound \(a_s=c_L/2\) and upper bound \(W\) persist under compression. Every path of at most \(n\) short steps remains in that ball, and its full read margin remains in the hull. Thus the same entry majorants hold without a global extension of the local data. In block norm the coordinate count \(n_c=12\) is an upper bound; norm conversions were included before these constants were chosen.
+*Proof.* Off Rep: descent Lemma 4 reruns hm on \(\mathcal K\) for the Y labels, and descent Lemma 1 with Theorem B's conjugation carries each grouped entry by orthogonal bond blocks, preserving block norms, accretivity and traces of closed products; so hm's entry majorants hold at every complete admitted R4 pair. First check the construction for a compression. In hm's proof of (16), replace each coordinate ball by its intersection with \(S\). Its real-part lower bound \(a_s=c_L/2\) and upper bound \(W\) persist under compression. Every path of at most \(n\) short steps remains in that ball, and its full read margin remains in the hull. Thus the same entry majorants hold without a global extension of the local data. In block norm the coordinate count \(n_c=12\) is an upper bound; norm conversions were included before these constants were chosen.
 
 Let \(s_t=\Lambda/(\Lambda+t)\). Keeping the first extra power of \(s_t\) in hm (16)–(17) gives
 \[
@@ -438,7 +438,7 @@ These are bond-block bounds, with all constants before \(\kappa\), independent o
 \]
 and the identical formula holds for the difference from \(P_0\). Both orthogonal blocks preserve the block operator norm, while \(r(P)\) and the real class are invariant. This proves the transport without an additional radius loss. Symmetry, holomorphy, reality and compression follow from the same conjugation and R/W. Converting scalar entries after choosing \(r_{\rm PR}\) would instead require rechecking the Schur loss; the stated order avoids that mistake. ∎
 
-**Lemma 11 (carrier-adopt Theorem A with Y).** At complete admitted pairs the Y bounds of M give \(\Re\mathsf A^Y\ge aI\), \(\|\mathsf A^Y\|\le b\), with
+**Lemma 11 (carrier-adopt Theorem A with Y; rests on unfrozen carrier-adopt Definition D, Lemmas C and P, Theorem A, on inv-root and on h-walk-fix, checked by Codex in carrier-check.md but not frozen).** At complete admitted pairs the Y bounds of M give \(\Re\mathsf A^Y\ge aI\), \(\|\mathsf A^Y\|\le b\), with
 \[
  a=5c_L/8,\qquad b=W.
 \]
@@ -554,7 +554,7 @@ Under the named premises, Theorem 2 supplies the assigned Y Gaussian carriers an
 
 The imports are M's **R, repaired W, AV, W-cov and PF**, nonlinear **PIV**, **FG/UM** and the remaining actual potentials' full-domain UM1/interface; physical **BG and PH1–PH4**; and **Q-real/F0** for the admission lemma. Cross-record carriage additionally reads the named h-walk-fix hypotheses. All their flat, curved, inverse, tower, seam, branch and uniformity premises remain premises. Theorems here do not grant scientific or audit status.
 
-**Outstanding:** the actual stored-test/gauge-factor and old-activity formation match; whole-domain admission and the shrinking required by ci-form; physical chart/step branch matching at each actual history; and the full vacuum interface, including elimination factors, class/boundary and companion/coefficient identifications. The draft's assertion that nothing in item 6 remains outstanding is withdrawn. G-ID(TP), complete CI and H-OL are not proved.
+**Outstanding:** PIV (the nonlinear pivot graph and contour-mean bounds; no named supplier); the actual stored-test/gauge-factor and old-activity formation match; whole-domain admission and the shrinking required by ci-form; physical chart/step branch matching at each actual history; and the full vacuum interface, including elimination factors, class/boundary and companion/coefficient identifications. The draft's assertion that nothing in item 6 remains outstanding is withdrawn. G-ID(TP), complete CI and H-OL are not proved.
 
 **Corrections made in distillation.**
 
@@ -582,3 +582,20 @@ The imports are M's **R, repaired W, AV, W-cov and PF**, nonlinear **PIV**, **FG
 | SA 10335 covariance | The Y labels are covariant after intermediate colours are grouped, as descent proves. This is not a proof for the unchanged absolute off-axial form and not a source-novelty claim. |
 
 This research text is **not yet refereed**.
+
+## Change log (freeze, 2026-11-05)
+
+Distilled by Codex on the Mini. Refereed line by line by a fresh Claude session ([hma-gate](../gates/hma-gate.md)): first failing step none, 7 findings, all repairable. Applied by the lead (Claude):
+
+1. D2: SA's \(\Re\operatorname{tr}\) vs this text's \(\operatorname{tr}\); agreement at real axial \(V\), holomorphic continuation at complex axial \(V\).
+2. Theorem 2 to IN1 H-M (9): H-M's datum is the rescaled pair \((\tau^{-1}C,\tau^{1/2}\Gamma)\). Frozen descent (15) has the same reading.
+3. Lemma 3's tree count: \(e^{15\lambda_V}\) suffices. Editorial.
+4. UM6 holds for every tilt \(\gamma>0\), with joint holomorphy; the symbol clash on \(P_0\) is noted.
+5. Theorem 5 off Rep: cites descent Lemmas 1, 4 and Theorem B.
+6. PIV is added to the Outstanding list (no named supplier).
+7. Lemma 11 names its unfrozen sources.
+
+Referee verdict on SA's UM conditions: proved only for the adopted Y family D4, on R4 within descent (7)–(8)'s ceilings, without Rep; not for SA's absolute gauge factor (descent Theorem A). UM4 with \(R_s=e^{\bar\kappa}>2\), \(K=K_0\), \(\varepsilon\le\varepsilon_*\); UM5 with \(c_m=12\); UM6 in SA's form; UM14 with \(C_p=P_d\); UM15 cost \(C_0\le1\) with \(W_0\) fixed before \(\kappa\); gauge-type UM1 from Lemma 3. Imported: SA's FG1–FG12 and the counting constant of UM9–UM13; library M (frozen hm, descent Theorem B); PIV. Not supplied: UM1 for the other potential types; SA's structural identities linking UM3 to the actual step's expansion.
+
+Status: **frozen.** Item 6 shrinks: gauge form fixed; formation and vacuum bounds done for the gauge potential and the compressed determinant; G-ID(cov) under PH1–PH4. Open: carrier identification (D4 adopts hm's carriers rather than identifying them), stored-test/gauge-factor formation match, whole-domain admission, PH1–PH4 per step, the full vacuum interface, PIV.
+

@@ -180,7 +180,7 @@ This also explains the convention issue in the account. Under its stated action 
 \[
              g_{\mathcal T}=\bar u_{\mathcal T}^{-1}u_j .         \tag{6.2}
 \]
-The product \(u_j\bar u^{-1}\) printed in CA-I 33615, 33686–33689 is reversed for this action. It is the product for the mirrored action discussed explicitly at CA-I 130178–130191. Equation (6.1), rather than a bare product name, removes the ambiguity. Both products have the same bound obtained by multiplying the norms of the two factors, but they need not act identically. No assertion of their equality is used here.
+The product \(u_j\bar u^{-1}\) printed in CA-I 29236, 31077, 31110, 33615, 33686–33689 and 121436–121437 is reversed for this action (the account uses the correct order at 121440 and 123129, and its remark at 130188 covers it). The correction is not load-bearing: every consumer uses only the norm of \(\mathrm{Ad}_g\), which is the same for both orders. It is the product for the mirrored action discussed explicitly at CA-I 130178–130191. Equation (6.1), rather than a bare product name, removes the ambiguity. Both products have the same bound obtained by multiplying the norms of the two factors, but they need not act identically. No assertion of their equality is used here.
 
 Curvature and the local current transform covariantly. Thus, on the source's corresponding plaquette/current domains, (6.1) gives
 \[
@@ -253,7 +253,7 @@ The sources used were read in bounded excerpts; damaged OCR equations were check
 
 The numbered source excerpts, hash manifest and separate reader's finding are saved under `/tmp/mu-research-c04b80758/`. The durable source identities and the complete argument are in this file; the scratch packet is a navigation record, not additional mathematical evidence.
 
-The result supplies the minimizer identity needed by the complete account's use of PH3. Applying it to `hma.md` still requires that note's PH1, PH2, PH4 and the identification of its actual rows with the Balaban rows. It proves neither those hypotheses nor a transfer to the outline's different averaging map. The already proved scalar estimates in the consumers and all unrelated open steps retain their own dependencies.
+The result supplies the minimizer identity the complete account's consumers need. (PH3 is our hma's hypothesis, not a label of the account; this result bears on it.) Applying it to `hma.md` still requires that note's PH1, PH2, PH4 and the identification of its actual rows with the Balaban rows. It proves neither those hypotheses nor a transfer to the outline's different averaging map. The already proved scalar estimates in the consumers and all unrelated open steps retain their own dependencies.
 
 ## Result
 
@@ -265,4 +265,17 @@ In the regular variational space and axial convention of CMP 109 Lemma 4, every 
    =(W_j|_Z)^{\bar u_{\mathcal T}^{-1}}
    =(\mathcal U_j|_Z)^{\bar u_{\mathcal T}^{-1}u_j}.
 \]
-This is the arbitrary-subdomain nesting property of CA-I Lemma `4.13:lem-minimizer-unique`, with curvature and current identities (6.3). Sections 4 and 7 establish admission; §5 proves real criticality, uniqueness and the representative; §6 proves the equality throughout the complex domain. The product-order correction in §6 is required in the near-case consumer under the account's left gauge action. Locality means this nesting and dependence on the intrinsic layered datum, not finite-range response to changes of that datum. No scientific status is granted. \(\square\)
+This is the arbitrary-subdomain nesting property of CA-I Lemma `4.13:lem-minimizer-unique`, with curvature and current identities (6.3). Sections 4 and 7 establish admission; §5 proves real criticality, uniqueness and the representative; §6 proves the equality throughout the complex domain. The product-order correction in §6 is a correction of notation under the account's left gauge action; no consumer's estimate changes. Locality means this nesting and dependence on the intrinsic layered datum, not finite-range response to changes of that datum. No scientific status is granted. \(\square\)
+
+## Change log (freeze, 2026-11-05)
+
+Written by Codex in one proof-lane round. Refereed line by line by a fresh Claude session ([mu-gate](../gates/mu-gate.md)): first failing step none, nothing fabricated, findings all repairable. Applied by the lead (Claude):
+
+1. Uniqueness is proved in Balaban's regular space; existence comes from the Theorem 1 orbit in CMP 102b (8) and "at most one" from its (6), matching CMP 109 (1.1).
+2. The product-order correction (§6) is real but not load-bearing (every consumer uses only \(\|\mathrm{Ad}_g\|\)); all printed occurrences are listed; the account already uses the correct order at 121440, 123129 and covers it at 130188.
+3. PH3 is our hma's hypothesis, not a label of the account.
+
+Scope (referee): their 4.13 is proved **as stated**, for regular real data with the analytic continuation for complex data: (a) and the nesting identity (b) for every \(Z\subset X\subset\tilde\square^2\), both tower rules, \(1\le n\le p\le j\); and **as used** by its 4.8 near-case and 4.7 consumers, for which "locality" means nesting. Uses outside the statement (4.26 stage composites, CA-II 35714) read (3.38) at other data radii and domains; the §§4–6 argument carries over but those radii are not checked here. One input is unconfirmed: the port of CMP 98 Prop. 4 (134), whose OCR is garbled; check it against the PDF before any outward use.
+
+Status: **frozen.** CA-I 4.13:lem-minimizer-unique, marked "Proof outstanding" in the account, has a proof here. Candidate contribution to Sussman and Alpoge (nothing goes outward without the owner's approval of the exact text).
+

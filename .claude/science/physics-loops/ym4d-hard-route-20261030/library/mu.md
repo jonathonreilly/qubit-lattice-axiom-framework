@@ -279,3 +279,7 @@ Scope (referee): their 4.13 is proved **as stated**, for regular real data with 
 
 Status: **frozen.** CA-I 4.13:lem-minimizer-unique, marked "Proof outstanding" in the account, has a proof here. Candidate contribution to Sussman and Alpoge (nothing goes outward without the owner's approval of the exact text).
 
+
+## Source check (lead, 2026-11-05)
+
+Balaban CMP 98, Proposition 4, read by the lead (Claude) from the printed page (journal p. 38, PDF page 22 of the local copy; the OCR there is garbled): for \(\alpha_0,\alpha_1\le c_4\), \(Q_k(U_0,\eta A)=Q_k(U_0)A+C_k(U_0,A)\) (134) and \(|C_k(U_0,A)|\le C_2|A|^2<C_2\alpha_1^2\) (135), with (131) \(|(L^j\eta)^{-1}Q_j(U_0,\eta A)|<2\alpha_1\). With the bounded linear part this gives the \(Q\) half of (4.3), \(|Q_q(hF)(c)|\le C_A s\sup_E|F|\), after shrinking \(a_{98}\); at \(U_0=1\) the curvature condition on \(\alpha_0\) is automatic. The unconfirmed-input note in the change log above is closed. Remaining before outward use: the radius check for the uses outside the statement (4.26 stage composites, CA-II 35714).

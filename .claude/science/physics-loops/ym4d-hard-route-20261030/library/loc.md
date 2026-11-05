@@ -1,347 +1,309 @@
-# LOC: locality through later steps and R stages
-Provenance: Codex (GPT-6 family; runtime effort not exposed; requested effort: max); checkout `7441090e1`; Sussman–Alpoge commit `31a47c543775`. Research text, not an audit; grants no status.
+# Proof lane LOC: localization of curved admitted data
 
-## 1. Target and source boundary
+Provenance: Research text at checkout `1fe9e114b5cf4265d2631d839b43c62a8530c2c1`, prepared by Codex for the LOC-flat task on 2026-11-05; no audit or retained status is asserted. Source material from the Yang–Mills outline and complete account is credited to Ethan Sussman and Levent Alpoge, with Claude and Codex as the authors of their text, at upstream revision `31a47c543775`. The pre-existing local `loc.md` is preserved at `/tmp/ym4d-loc-1fe9e114b/loc-before.md`.
 
-Credit Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text.
-Their pinned outline supplies the step and R-stage definitions, especially SA L17541–17558 and L17951–17980.
-All arguments below are by hand.
+## Scope and source record
 
-For a formed slot on a domain \(Y\), (LOC) requires equality under agreement of label and data on \(Y\).
-This includes the rule that selects the slot and its domain, not only evaluation on a fixed domain.
-The same requirement applies to each correction \(V_{\mathfrak X}(Y)\), at every depth.
+The target is DOM Lemma 12, with the right-trivialized path norm of DOM Lemma 11. The output must preserve the same determining system and the exact local rows. A new boundary problem alone does not meet that target. The quantitative complex requirement is DOM Lemma 14, when used by ST1 FC7. This note changes no frozen consumer or status file.
 
-`gates/s210-3-check.md` rejects Theorem E, Corollary K, and Lemma N's claimed local family.
-I therefore do not use those claims as proved inputs.
-The finite telescoping identity and its conditional derivative estimate survive that check.
+The previous file at this path concerned locality of formed slots through later steps, a different LOC interface. Its content remains recoverable from this path at commit `1fe9e114b`, as well as from the saved copy. Replacing the requested output file makes no scientific disposition of that earlier note.
 
-## 2. The available locality statement
+Sources are pinned at the revisions in the provenance line. The outline was fetched once to `/tmp/sa_ym4.tex` (32,992 lines; SHA-256 `d7f77d4da3eb23038250c52468a341281d9ba86b4af21d3371d208a2537d4b6f`). The complete account was fetched once to `/tmp/sa_ca_I.tex` (166,711 lines; SHA-256 `4cb5cb5e0af8dbddbee207926621300350e018c6cf1d6567a753167ce10e6e93`). Retrieval and hashes supply source identity only.
 
-The checked inputs give locality **in the pair** \(P=(\mathbf U,\mathbf J)\).
-They do not identify two physical pairs from agreement of stored data on a smaller domain.
+The index was consulted before the source excerpts. The relevant entries are outline chunks 09 and 16 and their rows in `sa-index/obligations.md`; the complete-account index is `sa-index/ca-4.12-4.19/`. Bounded source checks:
 
-For the intrinsic potential, Theorem U' gives
+* SA 9660–9695 states the regular critical orbit, the two axial conventions, the cube gauge, and the raw-datum continuation. The local gauge at 9684 requires an enlarged cube and small side times regularity.
+* SA 9776–9789 defines localization using a **joined sequence**. Its collars lie in single layers. The comparison allows a collar-length-dependent constant. SA 9913 sketches alignment using the defect of lifts. This is a different interface from a local datum on the unchanged global system.
+* SA 17575–17585 gives the quiet-box geometry. At 17585 the stage references are localized, while the separate prepared-box extension has the stated `CM^2` curvature loss. That extension sketch supplies neither the present relative path nor the quantitative holomorphic section.
+* DOM was read in full. Its pure-gauge extension/path is retained. Its three curved-data failures are the starting point, not three new attacks in this note.
+* CP12 §4, PR-lay Q and Lemma 6, GEOH's class/preparation/Lift specifications, ST1's LOC/ST-test, CV, F6 and FC7, and IN1's rows 1–10 with Amendment 1 fix the working interfaces. Their named imports remain imports.
+
+CA-I 49495–49515 and 49531–49547 separate gauge supply from the operator implication. CA-I 54986–55010 explicitly assumes the stage theorem. These were checked after reading the neighbouring index entries in chunks 06 and 10. The outline's joined-sequence comparison is **sketched** at SA 9913. The stage construction at SA 17585 uses references “formed with backgrounds localised in $X$”; it does not give the rule requested here. This note attempts a step of our DOM interface, not a correction of their text.
+
+The local literature check also read Bałaban's CMP 99 (1985), 389–434, supplied OCR lines 420–455. Its (3.35) assumes local witnessing gauges. The OCR is not used to discharge a formula. The explicit working statements are PR-lay Q and CP12 (8), (12)–(14).
+
+## The exact path question
+
+Fix an actual stage geometry and its determining row set \(\Gamma\). Let \(E\) be the rows supplied by \(D_+|_{X^\sharp}\). Let \(P\subset E\) be all rows within distance \(R_\sharp/2\) of the full stage carriers. Inclusion of the complete protected reads in \(E\) is required. A row is an oriented group variable, not a Lie-algebra coordinate fixed along a long path.
+
+Write \(\mathcal A_{\rm in}\) for the admitted real input class of DOM Lemma 12, with the actual (56), (58) tests. Write \(\mathcal A_{\rm path}\) for the real class admitted in DOM Lemma 11: the **same determining system**, with S, the derivative estimate, regular uniqueness and consistent CV readout throughout. Keep every condition belonging to that class. We do not add (58) along the path merely because it is required at its endpoints. If the specified path class also imposes those tests, they remain imposed.
+
+The path norm is
 \[
- (P,y)|_Y=(\widetilde P,\widetilde y)|_Y
- \quad\Longrightarrow\quad
- V^{G,A}(Y;P,y)=V^{G,A}(Y;\widetilde P,\widetilde y).
- \tag{1}
+ v(D_s)=\max_{c\in\Gamma}
+       \left\|i^{-1}\dot D_s(c)D_s(c)^{-1}\right\|.
+ \tag{L1}
 \]
-Its inputs remain [R9], [D+], [S-loc'], (F), [RT], [ID], [QC] and [Core].
-Codex checked this implication in `b4-step.md`, Section 9.
-Its scope is the single-scale, node-free interior; `um1-fix.md` does not extend it to layered regions.
+A bound on the derivative of a principal logarithm is not a substitute for (L1).
 
-Here is the support argument behind (1).
-Set the Definition D parameters to zero outside \(Y\).
-Every surviving walk has its full read hull in \(Y\).
-Corollary R' includes the untagged local stencils and their collars.
-Thus the bracket integrands agree at equal restrictions to \(Y\).
-Differentiating that identity in its retained parameters and integrating over their common cube preserves equality.
-Summing the plaquette and gauge anchors proves (1).
+**Necessary consequence of LOC-flat.** If its local rule and paths exist with bound \(C_{\rm path}\), then any two members of \(\mathcal A_{\rm in}\) agreeing on \(E\) can be joined inside \(\mathcal A_{\rm path}\), fixed on \(P\), with speed at most \(2C_{\rm path}\).
 
-The stored carrier series has the same property before substitution of the physical background.
-Use its adopted definition in `carrier-adopt.md`, Section 4, and the checked full-hull premise [RT].
-In a grouped inverse entry, a path with fewer than \(n\) steps of length at most \(r\) stays within \(nr\).
-Each precision factor adds at most its prescribed read collar \(R_h\).
-Hence the grouped entry reads only its carrier of radius \(R_*=nr+R_h\), including membership in the integrated set.
-Equal data on that carrier give identical paths, coefficients and sums.
-For a chain, its carrier contains every factor carrier and contracted coordinate.
-Products, symmetrisation and convergent sums over these common, supported chains preserve equality.
-This argument adds no collar at each later depth; it uses the carriers already assigned to those factors.
+*Proof.* Locality gives the same endpoint \(D^\sharp\) for both inputs. Follow the first path to that endpoint, then reverse the second. Allocate half of \([0,1]\) to each path. Reversal preserves speed and this reparametrization multiplies it by two. Both pieces have the same values on \(P\). Their concatenation is piecewise \(C^1\) and admitted. No logarithm across the junction is needed. \(\square\)
 
-`wf7-bf.md`, Section 4, proves the corresponding box composition with the ambient sequence fixed.
-Rule W supplies containment of its tower, under the premises of `cond-c.md`, Theorem C2.
-It does not identify the physical background from the data in that box.
-Definition R fixes the representative through the comb transport in `inn-213.md`, Section 7a.
-The checked estimates in `inn-fix.md` concern (Inn); they explicitly leave the stored forms and (Act) outside their scope.
+This is a necessary condition, not an equivalence. It does not construct a holomorphic section of restriction to \(E\).
 
-For a carried coefficient \(a_R\), the next required operation is already
+## Attack 1: a massive collar gauge with the cell scale retained
+
+This attempt strengthens the earlier clamping attempt by keeping its diameter factors and testing the final coupling ceiling. It also checks the nonlinear cutoff directly.
+
+Put \(\ell=\log\theta_t\). On a single layer suppose a supplied enlarged cube has side
 \[
- a_R(P^\sharp(h,v))-a_R(P^\flat(h,v)),                 \tag{2}
+ S\le C_{\rm box}MR_t,\qquad
+ R_t\le L\ell^r,\qquad
+ \epsilon_t\le C_\epsilon e^{-\ell/2}\ell^p.
+ \tag{L2}
 \]
-as in SA L17558–17564.
-Locality of \(a_R\) in its pair argument does not localise the maps \((h,v)\mapsto P^\sharp,P^\flat\).
-Equation (2) needs an exact common family of local pieces before any induction through later moves can start.
-
-## 3. First missing input: the local family at formation
-
-The proposed input is `s210-3.md`, Lemma N's family
+Here \(p\) and the displayed constants are fixed; \(C_\epsilon\) may include the later test amplitude. For any fixed integer \(a\ge0\),
 \[
- t_n(h)=F(H^{(n+1)}_h)-F(H^{(n)}_h),\qquad
- \operatorname{domain}(t_n)=W_{n+1}(h).
- \tag{3}
+ S^a\epsilon_t
+ \le (C_{\rm box}LM)^a C_\epsilon
+                 e^{-\ell/2}\ell^{p+ar}\longrightarrow0.
+ \tag{L3}
 \]
-Its first failed inference is that (N1) makes this a common family determined inside \(W_{n+1}\).
-(N1) determines \(W_{n+1}\) from the label in \(W_{n+2}\), which is larger.
-The following hand example tests the selection and increment conditions alone.
-Its assigned evaluations are not asserted to be Yang–Mills backgrounds.
+The convergence is uniform for \(\ell\ge\log X_0\) as \(X_0\to\infty\).
 
-Fix nested regions \(W_0\subset A\subset B\subset C\subset T\).
-Put one label bit \(e\in\{0,1\}\) at a site \(q\in C\setminus B\).
-The two labels and their data agree on \(B\).
-Choose
+*Proof.* Choose an integer \(n>p+ar\). The exponential series gives
+\(e^{\ell/4}\ge(\ell/4)^n/n!\). The right side of (L3) is bounded by a fixed multiple of \(e^{-\ell/4}\ell^{p+ar-n}\), which tends to zero. \(\square\)
+
+Thus a polynomial loss in the cell side alone is not a reason to abandon this route. IN1 permits the final ceiling to depend on \(M\). It does not permit an early returned constant to grow with \(M\), or a ceiling to depend on the torus volume.
+
+**What the massive gauge supplies.** If PR-lay Q applies on this whole enlarged cube, it gives an initial gauge with
 \[
- W_1(0)=A,\quad W_1(1)=B,\quad W_2=C,\quad W_3=T.
+       |A_1|,\ |\nabla A_1|\le C S\epsilon_t
+ \tag{L4}
 \]
-This satisfies (N1): only the choice of \(W_1\) reads a bit, and that bit lies in \(W_2\).
-At one fixed bond in \(W_0\), assign local evaluations
+in the layer's units. The curvature and current bounds of CP12 (8) must also hold there. Take \(\xi=1\) in CP12, and \(a=C'S\epsilon_t\). Equation (L3) puts \(a\) below its fixed contraction threshold. Its fixed-point map is
 \[
- V_{W_0}=V_A=V_C=V_T=\mathbf1,\qquad V_B=e^{ia\sigma_3}.
+ \lambda=(-\Delta_\eta+1)^{-1}1_{Q'}
+ \left[-\Psi_1(\lambda)^{-1}
+       \{\Psi_2(\lambda)\operatorname{div}A_1+S(\lambda)\}\right].
+ \tag{L5}
 \]
-Each fixed-domain evaluation is constant, so it reads no exterior data.
-Take \(0<a<\min\{C_N\varepsilon e^{-\delta_N},\delta/12,1/2\}\), with (N2)'s smallness condition retained.
-The successive logarithmic increments are \(0,0,0\) when \(e=0\), and \(a\sigma_3,-a\sigma_3,0\) when \(e=1\).
-Their norms satisfy (N2) at each index.
-With \(V^{\rm loc}=\mathbf1\), use the convention \(V=e^{iH}\), and take \(F(H)=\tfrac12\operatorname{tr}(H\sigma_3)\).
-This is a linear \(C^1\) function with \(F(a\sigma_3)=a\).
+The resolvent has norm bounded independently of the mesh in the value/first-difference norm used there. On a ball of radius \(Ka\), its forcing is bounded by \(C(a+(K+1)^2a^2)\), and its Lipschitz constant by \(C(a+Ka)\). Choosing \(K\) first and then \(a\) gives a contraction. Consequently the gauge correction and the resulting potential have size at most \(C''S\epsilon_t\). No iteration through the number of fine sites occurs.
 
-Index (3) by its declared domain, assigning zero to an absent slot.
-The first slot on \(B\) is then
+For a holomorphic input \(A_1\) on a complex ball where these same estimates hold, the iteration is holomorphic. Its iterates converge uniformly with a geometric error bound. Applying the one-variable Cauchy integral on each coordinate line to that uniform limit proves holomorphy of the limit. This only proves holomorphy **after an analytic initial gauge and its ball have been supplied**.
+
+**The cutoff estimate, by hand.** Work in any one supplied real gauge, with \(U(b)=e^{i\eta A(b)}\), \(\eta\le1\), \(|A|\le a\), and
+\(\eta^{-2}|\partial U-I|\le\epsilon\). For a scalar cutoff \(0\le\chi\le1\), suppose \(|D^+\chi|\le K/w\). For sufficiently small fixed \(a\),
 \[
- t_0(B;e)=a e.                                          \tag{4}
+ \eta^{-2}|\partial(e^{i\eta\chi A})-I|
+       \le C\bigl(\epsilon+a/w+a^2\bigr).
+ \tag{L6}
 \]
-Thus equal labels and data on \(B\) give different coefficients there.
-The next term equals \(-ae\), so the total still telescopes to zero exactly.
-An exact total and a decay bound therefore cannot justify Lemma N's locality step.
-This does not refute the existence of a suitable Yang–Mills localisation.
+All four links and their difference stencils must be supplied.
 
-The missing input is an admitted strip localisation whose **domain selection and coefficients** are fixed by the same local trace.
-The comparison bounds and pair locality in Section 2 do not supply that selection rule.
-At row 204's checkout, `s210-fix.md` contained only its work-in-progress header.
-That reading stopped before applying (3) to later steps or R stages.
-
-### Earlier result (row 204)
-
-**(LOC) is not proved.** The first unusable input is Lemma N's claimed common local family at formation.
-Its selection condition permits the exterior read in (4); the cited checked inputs do not supply the stronger condition needed.
-Theorem U' and the stored carrier series retain their conditional locality in the pair.
-They do not supply the missing family for (2), or the healed correction identity of SA L17964–17980.
-No induction uniform in depth, rank 7 closure, or (Act) conclusion follows.
-The argument above is by Codex and has not been checked by the other model.
-
-## 4. Row 211: check of Claude's `s210-fix.md`
-
-Provenance: Codex (GPT-6; runtime effort not exposed; requested effort max), checkout `04c4e8873`; research, not an audit; no status granted.
-Checked line by line against the pinned SA outline and the named repository inputs.
-Credit Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text.
-All new arguments below are by hand.
-
-### 4.1 Lemma G
-
-**ADVANCE, conditional on the stated block map and its small analytic contour mean. First failing step none.**
-The rectangular lift is essential: it excludes additional periodic bonds and pivots.
-There are exactly \(L\) axial sites. Their contributions vanish.
-Thus the non-axial weights sum to \(1-a\), where \(a=L^{-3}\).
-Comb slides use at most \(CL\) plaquettes; telescoping their products proves the gauge bound used in Step 1.
-Path lengths then give \(a(X)\le\sigma\) and \(a(u)\le3\sigma\).
-
-Here is the global part of the uniqueness check.
-For \(T=e^{iZ}\), \(\|Z\|\le\pi/2\), the logarithm estimate gives
-
+To prove (L6), expand the four exponentials on a plaquette. The linear term is \(i\eta^2 dA\). The sum of terms of degree at least two is bounded by \(C\eta^2a^2\). This follows by majorizing the product series by \(e^{4\eta a}-1-4\eta a\). Thus \(|dA|\le\epsilon+Ca^2\). The exact forward product rule gives
 \[
- \|m+(1-a)Z\|\le2\sigma,
- \qquad \mathcal M(V_g)=u\ \Longrightarrow\ a\|Z\|\le5\sigma.
- \tag{5}
+ (d(\chi A))_{\mu\nu}(x)
+ =\chi(x)(dA)_{\mu\nu}(x)
+  +(D^+_\mu\chi)(x)A_\nu(x+\eta e_\mu)
+  -(D^+_\nu\chi)(x)A_\mu(x+\eta e_\nu).
 \]
+Its norm is at most \(\epsilon+Ca^2+2Ka/w\). Apply the same exponential-product estimate to \(\chi A\). This proves (L6), with constants independent of \(\eta,S,M\). It also proves it for \((1-s+s\chi)A\), uniformly in \(s\in[0,1]\).
 
-For \(\|Z\|>\pi/2\), a pivot plaquette excludes the analytic rule.
-The rule \(\mathcal M=T\) cannot give the small target.
-Under the remaining rule, a solution has \(\|Z\|<(1-a)\pi+3\sigma\).
-Along the logarithm comparison paths its derivative is at most \(\pi/a\).
-Hence \(a\|Z\|\le(\pi/a+3)\sigma\le4\sigma/a\), which forces
-\(\sigma>\pi a^2/8\), contrary to \(\sigma\le a^2/8\).
-
-On \(a(T)\le8\sigma/a\), the map \(T\mapsto e^{-im(T)}u\) stays inside that ball.
-Its Lipschitz constant is at most \(1-3a/4\).
-Iteration is Cauchy, with error bounded by a geometric series, and gives the unique solution.
-For two data sets, subtract their fixed-point equations and divide by \(3a/4\).
-The contour-mean equation has derivative \(I+E\), \(\|E\|\le1/2\); its inverse has norm at most \(2\).
-Telescoping each contour product therefore gives \(\|m_V-m_R\|\le CL\eta\).
-This proves \(d(g,R(b_0))\le CL^4\eta\), and continuity follows from the same estimate.
-These arguments check Steps 0–5; no machine calculation enters.
-
-### 4.2 Coordinates, supports and records
-
-**Checked line by line by Codex; first failing step none in these conditional implications.**
-
-| Statement | Verdict and scope |
-|---|---|
-| Definitions 3.1′–3.2′, including (L0) and (G-e) | **ADVANCE**, with (EX′), (M), (S) and the supplied rules. |
-| Lemma C(a)–(d) | **ADVANCE** under those inputs and the stated test geometry. |
-| Theorem E′; Corollary K′ | **ADVANCE** for supports and reference measures, with (SUP), (L2.2), (LAD), (CAR) still supplied. |
-| Proposition P(c) | **ADVANCE** for the frame-weighted record count. |
-| Proposition P, support read closure | **ADVANCE** under Theorem E′; P(a)–\(b\) remain unchanged. |
-
-The boundary gap in (G-e) is \(1-2L^{-2}>1/2\).
-Thus a boundary-crossing coarse average reads raw or fully shifted bonds, not an unresolved interior pivot.
-For an interior double block, every nonpivot is fixed before its unique pivot is solved.
-The value \(1\) off its chart completes a Borel map; it need not satisfy the constraint there.
-
-For Lemma C, the surviving tests bound an (F2) coordinate by \(\delta_k\).
-They bound an (F3) radius by \(23\delta_k/10\), using the strip identity and (M).
-Consequently its distance from the true background is less than
-
+In that fixed gauge the latter path has exact right-trivialized bond velocity
 \[
- (23/10+1/6)\delta_k=37\delta_k/15<5\delta_k/2=\eta_*.
- \tag{6}
+ i^{-1}\partial_s e^{i\eta(1-s+s\chi)A}
+                 e^{-i\eta(1-s+s\chi)A}
+       =\eta(\chi-1)A.
+ \tag{L7}
 \]
+Undoing a fixed real gauge preserves its norm. With \(a\le CS\epsilon_t\) and \(w\ge cS\), (L6) is bounded by
+\(C'(\epsilon_t+S^2\epsilon_t^2)\). Equation (L3) makes this at most a fixed multiple of \(\epsilon_t\). Equation (L7) is also uniformly small. These are useful local estimates for curved fields.
 
-The same inequalities hold for failed outcomes and the fill: only the stated surviving pass tests enter.
-Inverting the nonpivot exponential or strip map recovers every coordinate.
-Lemma G then recovers each pivot; its contraction also makes the pivot differential invertible.
-Distinct equations have distinct pivots. Thus the admitted change of variables has no extra support restriction.
+**Attempted repairs and exact failure.** Four distinctions prevent these estimates from proving LOC-flat.
 
-Theorem E′ now compares the same coordinate tests, including their complements and undefined-object branches.
-The common chart reads only coordinates already read by those tests.
-(LAD) supplies equality of the full products off the good exterior sets; it remains an assumption.
-Fixed Haar or Lebesgue reference measures and the retained component's own normalisers give K′.
-No Jacobian or action density is covered by this conclusion.
+1. The hypotheses concern one supplied cube and one initial gauge. CP12 starts from that gauge. A cell-sized annulus can surround the missing core or cross several layers. The gauges recorded on complete small cubes do not supply (L4) on a containing cube through that core. Filling the missing cube to invoke Q would assume the extension being sought.
+2. Applying (L5) to \(U_+=\Phi(D_+)\) does not make it a local datum rule. The restriction of \(U_+\) to the collar is itself a function of global data. The outline's joined problem is a possible local replacement, but it changes the determining sequence. Its defect-of-lifts comparison does not identify a new datum on the original system with exact agreement on every row of \(E\).
+3. A bound \(C'\epsilon_t\) does not preserve an unchanged threshold \(T\) from an input only known to satisfy \(<T\). Shrinking the coupling shrinks both sides by the same factor. For example, \(u=3T/4\), \(v=3T/2\) satisfy \(u<T\) and \(v\le2u\), but \(v>T\) for every \(T>0\). This route needs verified slack or a threshold-preserving extension, with the actual loop indices. None was obtained.
+4. Even with all collar inputs supplied, (L7) describes a path on that gauge box. It is a global path from \(D_+\) only if the exterior has already been put in a compatible global chart. A small collar does not do this. Applying the same construction on successively larger exterior boxes replaces \(S\) by an unrestricted volume length; (L3) no longer supplies a common coupling ceiling.
 
-P(c)'s extra symbol distinguishes the extension, \(B\), last-shell and normaliser failures.
-Together with the stage failures and two terminal fates, this gives \(\mathsf N_j+6\) possibilities.
-For \(x=M\check R_j\ge2\), \(\mathsf N_j+6\le x+6\le x^4\le e^{x^4}\).
-The frame weights sum to one. The tests' existing one-cell reads therefore still give \(J=81\).
+There is also no uniform raw-datum chart from ordinary holomorphy alone. A gauge built by a path product can contain
+\(q_n(z)=(e^{iz\sigma_3})^n=e^{inz\sigma_3}\). Its derivative at zero has norm \(n\), and \(\|q_n(iy)\|=e^{n|y|}\). Each factor and product is holomorphic. This disproves a uniform bound for this product construction, not for every possible localized rule.
 
-### 4.3 Lemma N′ and (N1′)–(N3′)
+The cell-scale smallness estimate succeeds. The local-to-global admitted deformation does not.
 
-**ADVANCE as a formation implication from an admitted stopping nest and (N2′)–(N3′).**
-The stopping condition fixes \(W_{n+1}\), \(W_n\), and \(W_0\) from the label on \(W_{n+1}^+\).
-Their joined problems must use the same prescribed local rules, including the representatives.
-Equal local data then give equal backgrounds and equal increments. This repairs the exterior-bit error in (4).
+## Attack 2: deform through the actual CV representative
 
-Write \(L_\theta={\rm Lip}(\theta)\) and \(s=\varepsilon_N/(1-e^{-\delta_N})=h_*/2\).
-The group triangle inequality gives \(a(V^{(n)}V^{{\rm loc}\,-1})\le s\) directly.
-On the cut-off zone, \(\theta\) rises by one over a radial interval shorter than \(\delta_k\).
-Thus \(L_\theta\ge1/\delta_k\), and (N3′) implies \(s<\delta_k/4<1\).
-The ball is geodesically convex. Lemma G's logarithm bound gives
+This attempt uses CV itself, rather than a global tree gauge. It first tests whether its gauge homotopy changes the datum at all.
 
+For a node-fixing residual gauge \(g\), covariance of the actual average gives
 \[
- \|H^{(n+1)}-H^{(n)}\|\le2\varepsilon_Ne^{-\delta_Nn},\quad
- J\ge1-L_\theta h_*>1/2,\quad \|d\log J\|\le2L_\theta.
- \tag{7}
+ M_{\mathbf B}(U^g)(c)
+   =g(c_-)M_{\mathbf B}(U)(c)g(c_+)^{-1}
+   =M_{\mathbf B}(U)(c).
+ \tag{L8}
 \]
+CV constructs precisely such a residual gauge. Its recursion fixes the nodes and changes only the nonnodes. A path of residual gauges therefore gives a **constant datum path**. It cannot remove any remote curved datum.
 
-Integrating along the segment between the two logarithms proves the stated bound \(4L_\theta\varepsilon_Ne^{-\delta_Nn}\).
-The finite sum telescopes. On the full-shift zone \(J=1\); its contribution is zero without intermediate logarithms.
-This also avoids the unjustified \(h_*+\varepsilon_N<1\) inference there, where \(L_\theta=0\).
+Allowing arbitrary node gauges does not fix this. Along
+\(D_s(c)=q_s(c_-)D(c)q_s(c_+)^{-1}\), every closed datum-loop product is conjugated at its base. Its trace is fixed. On a remote single-layer patch put a small link \(e^{i\alpha\sigma_3}\), and set neighbouring links to the identity. A neighbouring plaquette has trace \(2\cos\alpha\). Replacing \(\alpha\) by \(2\alpha\) changes that trace. Choose \(0<\alpha<\pi/4\) smaller than half every affected admission threshold. Both assignments have arbitrarily small, nonzero local curvature and can agree with the same datum near \(E\). Gauge motions alone cannot send both to one endpoint. This is an obstruction to the gauge-only construction, not to general admitted paths.
 
-The exact support proved is \(W_{n+1}^+\), including its selection, not the smaller \(W_{n+1}\).
-Use that full support when assigning a term to a domain.
-The distance consequence follows by iterating the upper growth bound; it measures distance from \(W_0\), not from \(b\).
-**First unproved input: admission of the nest in (N1′).** Neither (N2′) nor (N3′) is established for actual nests.
-The full-shift simplification and support assignment above are the only corrections to this conditional check.
-
-## 5. First failed input: the admitted nest (N1′)
-
-**(N1′) is not available on general histories as written.**
-The adopted comparison requires
-\(W\subset\Omega_0\), \(\Omega'_0=W\), and \(\Omega'_q\subset\Omega_q\)
-(`a3-close.md`, Lemma J; `a3-derivative.md`, Lemma 10.1).
-But (N1′) requires \(W_N=T\), while histories have \(\Omega_0=\Omega_1^\sim\), possibly strictly smaller than \(T\) (SA L17317).
-Thus its terminal localised problem need not belong to the cited comparison theorem.
-
-Here is a hand witness to the hole; no numerical search is needed.
-On a sufficiently large torus, set every fine bond to \(1\), except one internal nonpivot bond set to \(-1\).
-Choose that bond off the coarse straight axes, with two nonzero transverse coordinates.
-Every coarse straight transport is \(1\).
-On an affected double block a plaquette is \(-1\), so the block map uses a crude rule.
-Every contour product is \(\pm1\): either all relevant loops are \(1\), or the third rule applies.
-Both give \(V_1=\mathcal M(V_0)=1\).
-The normalized block gauge insertion has a supported representative and preserves these coarse data.
-Its internal plaquette remains \(-1\); telescoping its four factors forces some nonpivot deviation to be at least \(1/2\).
-If the approximate tests there are reached, their local backgrounds are \(1\), so one fails since \(1/2>2\delta_0\).
-Then \(Q_1\ne\varnothing\); if an earlier test already marked it large, the old live region supplies the hole instead.
-Either padding leaves a nonempty hole even after enlarging \(\Omega_1\) once.
-This proves \(\Omega_0\ne T\) on an allowed failure branch.
-This rules out the literal terminal admission on that branch; Lemma N′ remains a conditional implication.
-
-The relevant precedent agrees with this domain restriction.
-Sussman–Alpoge's YM3_I, L46926–46940, uses \(Z_t\cap\Lambda_k\cap\Omega_0^\diamond\).
-Its L46732–46824 assumes the single-layer collars before proving comparison.
-Balaban CMP 119, pp. 252–253, supplies the strip method, not an exhaustion by such collars.
-QED3, L7440–7468, localises operators by walks; that does not select a nonabelian background nest.
-These are credited methods, not imported proofs of (N1′).
-
-**Smaller statement, proved.** After clipping the initial region to its ambient domain, stopping exhaustions exist as sets.
-Start with the component of \((\Lambda_t^c\cap\Lambda_k)\cap\Omega_0\) containing \(b\).
-Repeatedly add its adjacent cells which belong to \(\Omega_0\).
-For the \(n\)-th set \(E_n\), agreement on \(E_n^+\) fixes the initial component and each of the first \(n\) additions.
-Induction therefore proves the stopping property.
-Each enlargement adds at most one layer. Finiteness ends the process at the ambient component containing \(b\).
-
-This does not prove collar admission.
-A box expanding across a flat seam has a connected outer boundary meeting two layers.
-In a collared representation, distinct part boundaries are separated; one connected boundary cannot switch between them.
-Its controlling part would therefore need a collar in two layers, contrary to SA Theorem 6(c).
-So even this elementary stopping exhaustion can leave the admitted class.
-A repaired terminal convention and a rule selecting admissible intermediate collars are still needed.
-
-## 6. What (N2′) needs in the common gauge
-
-The gauge conversion is elementary once its anchors are controlled.
-This is the method of Sussman–Alpoge YM3_I, L47086–47125 and L47185–47240, rebuilt here at one level.
-For a block field \(B\), let \(a_B(x)=B(y(x),x)\) be its contour transport from the prescribed anchor.
-At an endpoint which is already a node, put \(a_B(x)=1\) and \(y(x)=x\).
-Set
-
+**A physical interpolation after CV.** The next attempt was to scale link logarithms in the selected representative. Even a flat input defeats preservation of arbitrarily small curvature by this rule. Set
 \[
- D_B(b)=a_B(b_-)B(b)a_B(b_+)^{-1}.
- \quad D_{B^w}(b)=w(y_-)D_B(b)w(y_+)^{-1}.
- \tag{8}
+ X=i\alpha\sigma_1,\qquad Y=i\alpha\sigma_2,\qquad
+ Z=\Log(e^Xe^Y),\qquad 0<\alpha<1/10.
 \]
+The four oriented links \(e^X,e^Y,I,e^{-Z}\) have plaquette product \(I\). They can be assigned by vertex values on this square and extended as an exactly pure-gauge field. All displayed logarithms use their branches near the identity.
 
-The second identity follows by cancelling the two endpoint gauge factors in each transport.
-If two fields differ by at most \(q\) on the double block, each contour product differs by at most \(2Lq\).
-The contour-mean inverse bound from Section 4.1 then gives \(d(D_B,D_C)\le C_Lq\).
-Now let \(q=\sup_{D_c}d(B^w,C^{w'})\) in two admitted gauges, with \(w'(y_\pm)=1\). Then
-
+Scaling all four logarithms by \(1/2\) produces
 \[
- d(D_B,D_C)\le C_Lq+d(w(y_-),1)+d(w(y_+),1).
- \tag{9}
+                  e^{X/2}e^{Y/2}e^{-Z/2}\ne I.             \tag{L9}
 \]
+For an exact check, put \(a=e^{X/2}\), \(b=e^{Y/2}\). Equality in (L9) would give \((ab)^2=e^Z=a^2b^2\). Cancellation on the left by \(a\) and on the right by \(b\) gives \(ba=ab\). But
+\[
+ ab-ba=-\sin^2(\alpha/2)[\sigma_1,\sigma_2]
+       =-2i\sin^2(\alpha/2)\sigma_3\ne0.
+\]
+Thus (L9) has a fixed positive defect. The original flat field passes every positive curvature threshold, including one smaller than this defect. The interpolation does not.
 
-The last two terms cannot be discarded.
-Take \(C=1\), with \(w\) constant on each of two adjacent blocks, equal to \(1\) and \(e^{ia\sigma_3}\).
-Then \(B=C^w\) is flat and block axial, but a crossing bond is \(e^{-ia\sigma_3}\).
-The comparison field can be zero while the representative difference is \(a>0\).
-This refutes conversion from gauge equivalence and axiality alone; the two coarse root data here differ.
+This example does not invalidate DOM's pure-gauge path. That path moves vertex values and stays exactly flat. It invalidates the proposed interpolation of bond logarithms. CV does not remove arbitrary node holonomies, so its residual normalization does not supply the missing global small chart. No datum-changing admitted homotopy was obtained by this attack.
 
-SA Theorem 6(c) controls \(w\) only at tops away from the collars.
-For (N2′), every averaging read and anchor must lie in that controlled interior at every \(n\).
-One also needs distance to the changed rows at least \(R+vn\), with \(v>0\), and uniform bounds through the iterated averages.
-These would give \(\varepsilon_N=C\varepsilon e^{-\alpha R}\), \(\delta_N=\alpha v\), and then the explicit (N3′) test.
-(N1′)'s upper growth bound supplies neither this distance lower bound nor the anchor condition.
-Thus (9) proves the conversion step, but does not prove (N2′) for an actual nest.
+## Attack 3: patchwise Lie-algebra interpolation and gauge synchronization
 
-## 7. Continuation to later steps and \(\mathbf R\)
+Cover the collar by enlarged cubes with bounded overlap. On cube \(Q_\alpha\), choose a gauge \(g_\alpha\) and write
+\(U^{g_\alpha}=e^{i\eta A_\alpha}\). This attempt uses the available small cube gauges, then tries to patch the deformations. It does not assume a common gauge at the start.
 
-There is a precise conditional preservation argument.
-Assign each formation term its full read support, including the stopping rule and collar.
-Products read unions of those supports. Derivatives and integrals preserve equality when their domains and measures agree.
-An absolutely convergent sum preserves equality when its indices and summands agree.
-At a retained component, E′ and K′ supply the required equality for the support and reference layer.
-Subtracting two such equal local coefficients preserves equality as well.
+The transition matrices are
+\[
+ h_{\alpha\beta}(x)=g_\alpha(x)g_\beta(x)^{-1},\qquad
+ h_{\alpha\beta}h_{\beta\gamma}=h_{\alpha\gamma}.
+ \tag{L10}
+\]
+On an overlap they obey the exact bond identity
+\[
+ e^{i\eta A_\alpha(b)}
+ =h_{\alpha\beta}(b_-)
+        e^{i\eta A_\beta(b)}h_{\alpha\beta}(b_+)^{-1}.
+ \tag{L11}
+\]
+These are endpoint-dependent changes of frame. They are not conjugation of each potential by one constant matrix.
 
-Induction therefore preserves locality **if every move supplies an admitted common formation family on those supports**.
-This applies also to a disappeared slot evaluated on the erased history: equal local traces give the same completed slot.
-For SA's correction identity, \(Y\) must also contain each healed component whose operation the term reads.
-Then \(\mathfrak X'(Y)=\mathfrak X(Y)\), with fixed exterior data, identifies every input to the completed terms.
-Subtracting their equal values gives \(V_{\mathfrak X'}(Y)=V_{\mathfrak X}(Y)\).
-This containment is another requirement on the formation family, not a consequence of the telescoping identity.
-The argument does not depend on the number of steps, but it does not bound or admit their read supports.
+**Direct averaging fails to respect the original field.** Take the original field to be \(I\) on a two-dimensional patch, embedded in four dimensions. Use gauges
+\(g_1(x)=e^{iax_1\sigma_1}\) and \(g_2(x)=e^{iax_2\sigma_2}\), with fixed small \(a>0\). Their exact potentials are
+\[
+ (A_1)_1=-a\sigma_1,\quad (A_1)_2=0,
+ \qquad (A_2)_1=0,\quad (A_2)_2=-a\sigma_2.
+\]
+Each describes a flat field. A half-half partition of unity gives links
+\(u=e^{-i\eta a\sigma_1/2}\), \(v=e^{-i\eta a\sigma_2/2}\).
+Their plaquette is \(uvu^{-1}v^{-1}\ne I\). Indeed
+\(uv-vu=-2i\sin^2(\eta a/2)\sigma_3\ne0\), as long as \(0<\eta a<1\).
+Thus even constant weights can create curvature from two flat descriptions of the same field. Varying weights also create the first-difference term in (L6).
 
-For the actual construction the premise already fails at the first use of (N1′).
-The strip logarithm has no admitted family to insert into the later difference (2).
-The same missing family is needed for the carried forms and elimination factors at SA L17541–17558.
-Theorem U′ retains its single-scale pair locality; `wf7-bf.md` and `cond-c.md` retain their stated contained-box implications.
-None supplies these stopping collars, their anchor bounds, or the layered formation families at all later stages.
+This does not say that good gauges cannot be chosen. Choosing both gauges equal to the identity removes this example. It says that an estimate on each gauge separately is not a gluing theorem.
+
+**First repair: transport every patch into one frame.** On an overlap, (L11) transports the unmodified fields exactly. But the proposed contracted patches
+\(U_{\alpha,s}=e^{i\eta(1-s)A_\alpha}\) do not satisfy (L11) with the original transitions. At \(s=1\), its two sides would be
+\[
+                 I\quad\hbox{and}\quad
+                 h_{\alpha\beta}(b_-)h_{\alpha\beta}(b_+)^{-1}.
+ \tag{L12}
+\]
+They coincide only when that transition is constant along the bond. One must therefore deform the transitions too, preserving their cocycle identities and the protected datum. The original compatible gauges do not provide that deformation.
+
+**Second repair: pin transitions and use the massive gauge on the cover.** Suppose \(|A_\alpha|,|A_\beta|\le a\) on an overlap. From (L11), for \(b=(x,y)\),
+\[
+ h_{\alpha\beta}(y)
+ =e^{-i\eta A_\alpha(b)}h_{\alpha\beta}(x)e^{i\eta A_\beta(b)}.
+\]
+Unitarity and \(\|e^{iH}-I\|\le\|H\|\) for Hermitian \(H\) imply
+\[
+ \|h_{\alpha\beta}(y)-h_{\alpha\beta}(x)\|\le2\eta a.
+ \tag{L13}
+\]
+Along an overlap path of physical length \(d\), telescoping gives \(2ad\). Thus a transition can be made near the identity on a *bounded* overlap by removing its value at one chosen point. This is a useful local estimate.
+
+Pinning these constants along a tree of patches gives a sum of such errors along the tree. The elementary bound after \(n\) transitions is proportional to \(n\), not to the overlap multiplicity. On a fixed cell collar this may still be paid by (L3). On the whole exterior, \(n\) is unrestricted by the local stage geometry. A fixed coupling ceiling cannot make \(na\) small for all torus sizes.
+
+Replacing this tree estimate by a massive inverse is not yet a repair. The CP12 map (L5) takes a single small potential on its supplied enlarged cube as input. Here the objects to be solved for are the transitions and their time-dependent compatibility equations (L10)–(L12). An inverse bound for a site operator neither solves those equations nor identifies a global logarithmic chart. No such solution was constructed in this attack.
+
+**Exact failure.** Patch contraction is not compatible on overlaps; compatible patch contraction is precisely an additional deformation problem. The real size bounds and the massive scalar inverse do not resolve it. Even if this compatibility were proved on the cell collar, a path from each arbitrary exterior completion to the same localized endpoint would still have to be constructed. We obtained no estimate for that global path. The argument does not show that every possible patching scheme fails.
+
+## A fourth attempt: a curved extension with no gauge choice
+
+There is a useful positive result on one uniform lattice. It removes the initial-gauge problem for that special geometry.
+
+**Folding extension.** Let
+\[
+ Q=\prod_{i=1}^4\{0,\ldots,n_i\},\qquad
+ T=\prod_{i=1}^4\mathbb Z/N_i\mathbb Z,\qquad N_i\ge2n_i+2.
+\]
+Let \(D\) assign \(SU(2)\) matrices to the edges of \(Q\), with reversed edges assigned inverses. There is a rule \(\mathsf F(D)\) on \(T\) with these properties:
+
+* it uses only those edge values and agrees on every edge of \(Q\);
+* every output plaquette is either the identity or a conjugate of an input plaquette or its inverse;
+* it is real and holomorphic as a map of the complexified edge variables;
+* its map in raw coordinates at any real input has norm at most one, on a fixed small raw ball independent of all side lengths.
+
+In particular it preserves a **common** plaquette threshold exactly, also for curved input. It is not asserted to preserve a heterogeneous collection of layer-indexed tests.
+
+*Proof.* For representatives \(x\in\{0,\ldots,N_i-1\}\), set
+\[
+ r_i(x)=
+ \begin{cases}
+ x,&0\le x\le n_i,\\
+ 2n_i-x,&n_i\le x\le2n_i,\\
+ 0,&2n_i\le x<N_i.
+ \end{cases}
+ \qquad r(x)=(r_1(x_1),\ldots,r_4(x_4)).                 \tag{L14}
+\]
+Adjacent vertices map to equal or adjacent vertices. Define the output on \((x,y)\) to be \(I\) when \(r(x)=r(y)\), and otherwise \(D(r(x),r(y))\). On \(Q\) this is the input.
+
+On a plaquette in directions \(i,j\), the \(i\)-increment of \(r\) depends only on \(x_i\), and the \(j\)-increment only on \(x_j\). If either increment is zero, opposite surviving edges cancel. Otherwise the four images are the four corners of a unit plaquette in \(Q\), traversed once. Reversing orientation inverts the plaquette product; moving its base conjugates it. In \(SU(2)\) these operations preserve \(\|P-I\|\). This proves the first two claims.
+
+Each output edge is either \(I\), one input edge, or its inverse. Matrix inversion is holomorphic on \(SL(2,\mathbb C)\). To check the uniform raw bound, write an input edge as \(D(c)=e^{iB(c)}D^0(c)\), with \(D^0(c)\) real. On a copied edge the output raw coordinate is \(B(c)\). On an inversely copied edge it is exactly
+\[
+                 -\operatorname{Ad}(D^0(c)^{-1})B(c).     \tag{L15}
+\]
+To verify (L15), multiply \(D(c)^{-1}\) by \(D^0(c)\) on the right, then take the logarithm near the identity. Conjugation by the fixed unitary \(D^0(c)\) preserves the operator norm, also for complex \(B\). Collapsed edges have coordinate zero. For example, \(\|B\|<1/4\) lies on the required common logarithm branches. Thus the output raw norm is at most \(\|B\|\). \(\square\)
+
+This is a genuine curved-data endpoint construction, with no long path products. In the single-layer loop-regular datum class, the admitted-background conclusion follows if the A1 import is applied at that same threshold. The construction itself proves only the displayed edge, plaquette and chart statements.
+
+**Why it does not close LOC.** First, a mixed determining system does not supply all fine edges on a rectangular \(Q\). A row of one level can fold into a region where that level is not a determining row. Its seam loop may use a nonlinear average of finer rows. Formula (L14) supplies neither those missing rows nor an identity commuting with that average. The actual geometry cannot be replaced by the complete cuboid without proof.
+
+Second, this extension supplies no path from the original exterior data. A proposed path obtained by deforming the underlying map from the identity to \(r\) already fails on a uniform torus. On a coordinate circle the identity map has winding number one. The periodic piecewise-linear extension of \(r_i\) in (L14) has winding number zero: it goes forward, then back, then stays fixed. Winding number is constant under a continuous homotopy. One way to check this is to lift the circle map to the real line; its increment after one period is an integer multiple of the period. Along a homotopy this integer is continuous, hence constant. Thus this particular pullback-homotopy construction cannot join the two maps. This is not a nonexistence proof for paths of gauge data, which need not be pullbacks by maps of the torus.
+
+The fourth attempt therefore supplies an endpoint on a useful special class, but does not supply the necessary relative path.
+
+## The sector issue is not discharged by an old verdict
+
+A repository search found the same danger in an earlier route: `relative-density-bound.md`, item (r), and `sector-values.md` §0. The cited review is `gates/theorem-z-3b7fd4e57.md`, D4. It proposes a remote lattice instanton to obstruct a small-curvature path. Crucially, its last paragraph at line 119 says that its four-dimensional admissibility argument was not re-proved on this lattice. That report is evidence of a failed earlier path argument. Its verdict is not a substitute for the hand proof required here.
+
+The elementary logical test is exact. Suppose a function \(Q\) on \(\mathcal A_{\rm path}\) is constant on every admitted path fixed on \(P\). If two members of \(\mathcal A_{\rm in}\) agree on \(E\) but have different \(Q\), LOC-flat is false. This follows from the concatenation argument after (L1), without any speed estimate.
+
+To turn the proposed instanton into this counterexample, one must define the invariant on the **actual mixed determining data and the whole allowed path class**, and give two admitted curved inputs with identical restrictions to \(E\). The path class may be larger than the endpoint test class. Its admissibility radius, its missing/inward rows, the fixed protected shell, and every seam test must be included. A topological invariant of fine fields is not automatically an invariant of these determining data. A charge calculation in a uniform fine lattice does not make this identification.
+
+The two-dimensional abelian flux example also does not settle this problem. A path of \(SU(2)\) data can leave its diagonal \(U(1)\) subgroup. No abelian flux conservation law may be applied to that path without proving its extension to the nonabelian class. No numerical test or old PASS label is used here.
+
+Consequently the possibility of disconnected relative fibres remains a reason to test the path requirement itself. It is not treated as a proved counterexample, and it must not be silently excluded by selecting a topological sector as new input.
+
+## Recovery and verification limits
+
+The current checkpoint is this file. The endpoint problem and the path problem are distinct. The hand deductions are (L3), the conditional cutoff and speed estimates (L6)–(L7), the exact failures (L8)–(L13) of the specified interpolation methods, and the single-layer folding extension (L14)–(L15). The CP12 contraction is used with its initial-gauge hypothesis explicit. None of these results proves the missing path for the actual stage class.
+
+All returned LOC/path/chart constants must be chosen at IN1 rows 3–4, before \(\kappa\), independently of \(M,\bar\kappa\), history depth and volume. The later choice of \(M\) and the final ceiling on \(\gamma\) can enforce (L3). They cannot absorb a factor in an unrestricted torus diameter, repair an unchanged threshold ratio, or supply a bounded raw chart from mere holomorphy. IN1 Amendment 1 changes only the stated floors on \(L\) and \(\kappa\).
+
+No scientific computation was run. Source retrieval, searching, hashes and file checks are bookkeeping. The displayed arguments are by Codex and have not been checked by another provider. Only `library/loc.md` is edited. The prior version is retained at the recovery path in the provenance line. No editable prompt file, frozen consumer, audit file or ledger was changed.
 
 ## Result
 
-**(LOC) remains unproved. First failed input: admission of (N1′)'s nest for general histories.**
-Its torus endpoint exceeds the domain of the cited localised problem when \(\Omega_0\ne T\).
-Clipping and an exact terminal convention repair that domain issue only; admissible intermediate collars remain open.
-The common-gauge bound (N2′), its distance growth, and (N3′) for the resulting family also remain open.
-Lemma G and the support/reference repairs pass the conditional check above; Lemma N′ supplies conditional formation locality.
-No uniform later-step or \(\mathbf R\)-stage locality, rank 7 closure, or (Act) conclusion follows.
-The new constructions and obstructions here are by Codex, not yet checked by the other model.
+**Open lemma**
+
+**Uniform protected-fibre path lemma (statement to prove or refute).** In the actual stage geometries and admission classes defined above, there is a constant \(C_{\rm rel}<\infty\), chosen before \(\kappa\) independently of \(M,\bar\kappa\), depth and volume, such that, after one permitted final coupling ceiling, the following holds. For every
+\[
+ D^0,D^1\in\mathcal A_{\rm in},\qquad D^0|_E=D^1|_E,
+\]
+there is a piecewise \(C^1\) path \(D_s\in\mathcal A_{\rm path}\), \(0\le s\le1\), with
+\[
+ D_0=D^0,\quad D_1=D^1,\quad
+ D_s|_P=D^0|_P,\qquad
+ \sup_{s,c}\|i^{-1}\dot D_s(c)D_s(c)^{-1}\|\le C_{\rm rel}.
+ \tag{L16}
+\]
+
+LOC-flat implies this lemma with \(C_{\rm rel}=2C_{\rm path}\). Even qualitative connectivity in (L16) is unresolved here. Its failure would refute the requested local endpoint/path rule. Its proof alone would not construct the holomorphic local section, so this is an explicit necessary subproblem, not a claimed equivalent reduction or the sole sufficient missing input.
+
+The three new attacks failed at distinct points: the massive gauge gives a controlled collar formula only after a common local gauge and its carrier are supplied; CV gauge motions preserve the datum, and subsequent logarithmic contraction can create curvature from a flat input; patch interpolation lacks a compatible deformation of its transition functions, with no uniform global repair. The additional folding construction proves a curved single-layer endpoint but provides neither mixed-row compatibility nor an admitted relative path.
+
+Thus LOC-flat for curved stage data is **not proved or refuted by this note**. DOM Lemma 11 remains a valid conditional route from an admitted path to decay; this work does not discharge its path premise or ST-test's quantitative holomorphic requirement.

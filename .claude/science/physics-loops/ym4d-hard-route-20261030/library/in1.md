@@ -694,3 +694,6 @@ Corrections to the pass-1 draft:
 - Reordered the actual-run induction so the next weight is protected before the next class step; separated analytic next-step existence from stopping arithmetic and used a tail-envelope Cesàro proof of the leading logarithm.
 
 All proofs here are mathematical text. Retrieval and file bookkeeping supply no proof step. The manuscript is **not yet refereed** and grants no scientific or audit status.
+
+
+*Referee status (lead, 2026-11-05): refereed line by line by a fresh Claude session; see the change log above and `gates/in1-gate.md` (st1-r4: `gates/st1-r4-gate.md`). The "not yet refereed" sentence in the Result above predates that check.*

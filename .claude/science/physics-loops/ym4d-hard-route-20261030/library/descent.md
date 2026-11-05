@@ -314,3 +314,6 @@ Theorems A and B and Proposition C are proved as hand-derived implications in th
 8. **No defect in SA's text as written is established.** SA 10200 does not fix the off-axial form. SA 11243–11247 explicitly distinguishes absolute and relative derivatives. The assertion at 14144 cannot be transferred through arbitrary real gauges under the absolute reading; A proves that conditional obstruction. It does not show that SA made that choice. The draft's “must be the Y3 form” was too strong: Y3 supplies a sufficient covariant choice, not a uniqueness theorem. No novelty claim follows from `um-novelty.md`'s bounded survey. The relative form and the Gaussian and inverse-volume cost strategies are already in the credited sources.
 
 The context notes remain conditional: P82 concerns real constrained inverses; TP1 retains its distinct Gaussian-energy input; IN1 requires actual carriers; ST1 retains whole-domain CI. No frozen note, gate, prompt, ledger or status file was changed. **This text is not yet refereed and grants no scientific or audit status.**
+
+
+*Referee status (lead, 2026-11-05): refereed line by line by a fresh Claude session; see the change log above and `gates/descent-gate.md` (st1-r4: `gates/st1-r4-gate.md`). The "not yet refereed" sentence in the Result above predates that check.*

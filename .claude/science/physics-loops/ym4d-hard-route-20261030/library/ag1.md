@@ -1360,3 +1360,6 @@ Corrections made during distillation:
 Only `library/ag1.md` is changed. The pass-1 drafts, NL1 draft and
 frozen `tp1.md` remain unchanged. The text is **not yet refereed** and
 grants no audit, retained or publication status.
+
+
+*Referee status (lead, 2026-11-05): refereed line by line by a fresh Claude session; see the change log above and `gates/ag1-gate.md` (st1-r4: `gates/st1-r4-gate.md`). The "not yet refereed" sentence in the Result above predates that check.*

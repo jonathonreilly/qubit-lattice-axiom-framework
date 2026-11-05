@@ -1694,3 +1694,6 @@ Applied the findings of `gates/st1-r4-gate.md` (Claude fresh session, first fail
 5. FC-test names the indicator in SA 7181's soft gauge factor.
 
 **Status: frozen** (round 4, with Amendment CV), as a conditional theorem. Outstanding, all named: CI (NL1/LF1), FM-match, FC-mean-match, FC-test, FC6-history (unused). Reopens only on a `wrong` signal or when an import it reads changes.
+
+
+*Referee status (lead, 2026-11-05): refereed line by line by a fresh Claude session; see the change log above and `gates/st1-r4-gate.md`. The "not yet refereed" sentence in the Result above predates that check.*

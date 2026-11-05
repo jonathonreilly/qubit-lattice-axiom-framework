@@ -479,7 +479,7 @@ Applied the findings of `gates/hm-gate.md` (Claude fresh session, first failing 
 4. The UM range is SA 14276-14811.
 5. The exponent 32 is what this count needs, not shown necessary.
 
-**Status: frozen**, as a conditional theorem on R4 intersect Rep. Outstanding, named: the all-core conclusion (descent; `library/descent-draft.md`), G-ID for the physical clause, F for the completed gauge form. Reopens only on a `wrong` signal or when an import it reads changes.
+**Status: frozen**, as a conditional theorem on R4 intersect Rep. Outstanding, named: the all-core conclusion (descent; [descent.md](descent.md) (frozen)), G-ID for the physical clause, F for the completed gauge form. Reopens only on a `wrong` signal or when an import it reads changes.
 
 ## Result
 
@@ -501,3 +501,6 @@ The manuscript proves a conditional local walk estimate (Lemma 1), a local real 
 10. The draft's conditional arithmetic agreeing with um-envelope and IN1 Lemma 3 is right; it does not close c4-order's actual-supply condition or um-novelty's all-core question. The latter remains outstanding, as do the actual stage/domain and physical-identification interfaces. No frozen context note or gate was edited.
 
 These are research implications and counterexamples, not independently refereed results. **This text is not yet refereed and grants no scientific or audit status.**
+
+
+*Referee status (lead, 2026-11-05): refereed line by line by a fresh Claude session; see the change log above and `gates/hm-gate.md` (st1-r4: `gates/st1-r4-gate.md`). The "not yet refereed" sentence in the Result above predates that check.*

@@ -649,3 +649,6 @@ The corrections to the draft are:
 8. Repair the Hamiltonian-domain inference by the resolvent, correct the displaced source references and the CA arrest-list attribution, and retain the unresolved IN-order input. Remove unused dilation and failed rarity attacks from the proof.
 
 The outstanding points are marked at their use in §2. This manuscript does not prove those imports for Wilson theory, does not prove a four-dimensional Yang–Mills construction, and grants no status. It is **not yet refereed**.
+
+
+*Referee status (lead, 2026-11-05): refereed line by line by a fresh Claude session; see the change log above and `gates/tp1-gate.md` (st1-r4: `gates/st1-r4-gate.md`). The "not yet refereed" sentence in the Result above predates that check.*

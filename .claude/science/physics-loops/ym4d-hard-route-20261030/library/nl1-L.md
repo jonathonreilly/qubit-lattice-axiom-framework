@@ -737,3 +737,6 @@ following disposition; none changes another library file.
 This is a research manuscript, **not yet refereed**. It grants no scientific
 or audit status and does not claim unconditional input (L), CI or four-dimensional
 Yang–Mills construction.
+
+
+*Referee status (lead, 2026-11-05): refereed line by line by a fresh Claude session; see the change log above and `gates/nl1-L-gate.md` (st1-r4: `gates/st1-r4-gate.md`). The "not yet refereed" sentence in the Result above predates that check.*

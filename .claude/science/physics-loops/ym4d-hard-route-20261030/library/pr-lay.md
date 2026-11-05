@@ -389,3 +389,6 @@ Applied the findings of `gates/pr-lay-gate.md` (Claude fresh session, first fail
 8. Corrected the constant-table placement and source pinpoints. Qualified the draft's a3-close claim, removed its unsupported YM3 absence claim, and removed duplicate summaries, tests and unused two-pair comparisons.
 
 This is a distillation and conditional proof of the precision comparison step sketched in the sources, not a proof of actual four-dimensional stage-domain admission or Yang–Mills existence. No computer-assisted step discharges any claim. **This text is not yet refereed.**
+
+
+*Referee status (lead, 2026-11-05): refereed line by line by a fresh Claude session; see the change log above and `gates/pr-lay-gate.md` (st1-r4: `gates/st1-r4-gate.md`). The "not yet refereed" sentence in the Result above predates that check.*

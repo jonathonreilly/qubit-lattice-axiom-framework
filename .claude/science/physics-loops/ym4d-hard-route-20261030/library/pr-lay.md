@@ -225,8 +225,7 @@ The following inputs concern the **same current longer sequence and real represe
 where \(\varepsilon_m=A_0\theta_m^{-1/2}(\log\theta_m)^{p_0}\) and
 \(\theta_m\ge\gamma^{-2}>1\). Every inner plaquette is complete for its curvature reading; a complete current bond has all six incident plaquettes supplied. \(J^\circ\) has the normalization used by ST1 in the divergence estimate below.
 
-The source is st1-r2 Lemma 10, (56)–(60), with
-\(C_{\rm RA}=12C_PC_{\rm sm}L^4\). It retains PROF, AV/CURV, A1/F0/REG, RUN, the actual tests (58), the inherited raw-lift bound (56), and the specified complete carriers. At outputs it additionally retains st1-draft3 Lemma B1: BOX-bg, GEO-box, RUN-low, the output lift rule, and \(\gamma\le\gamma_B(M)\). These are draft conditional results, not new conclusions of this manuscript. In particular, existence of the real background and satisfaction of its tests are not derived by (17).
+The source is st1-r3 Lemma 10 (59), whose bound uses \(C_U(\log\theta)^{2r_R}\) in place of the earlier \(C_{\rm RA}\lambda\); only the product \(C_{\rm RA}C_\lambda\) enters \(v\), and it is replaced by \(C_U\) with no change to the proofs or the constant order. (Earlier rounds: st1-r2 Lemma 10, (56)–(60), \(C_{\rm RA}=12C_PC_{\rm sm}L^4\).) It retains PROF, AV/CURV, A1/F0/REG, RUN, the actual tests (58), the inherited raw-lift bound (56), and the specified complete carriers. At outputs it additionally retains st1-draft3 Lemma B1: BOX-bg, GEO-box, RUN-low, the output lift rule, and \(\gamma\le\gamma_B(M)\). These are draft conditional results, not new conclusions of this manuscript. In particular, existence of the real background and satisfaction of its tests are not derived by (17).
 
 **Q — local real gauge.** In any level-\(i\) units, on a cube of side \(s\), assume its side-\((s+6)\) enlargement is supplied. If there
 \[
@@ -252,7 +251,7 @@ Take \(0<c_{\rm rg}\le1\), \(B_*\ge1\), fixed before \(\kappa\). This is precise
 \]
 Here \(l\) is the **current** longer-sequence scale, and \(\nu\) is the radius index actually assigned to that read. For ordinary interior reads \(\nu=m\). The initial structure must satisfy the same envelope, or a separately specified envelope tending to zero.
 
-**Outstanding — D for the actual domains.** SA 6141–6155 defines layer radii on represented domains; it does not verify (19) globally for every input of NL1 Theorem V′. ST1 records are frozen at birth (st1-r2 84–99). One must show that the actual roster supplies a current-scale bound at every read, including boundaries, outputs, drop-outs and the next fibre's longer sequence. A real reference passing formation tests does not prove this assertion for every complex input. Replacing the domain by its intersection with (19) changes the consumer hypothesis; it requires checking coverage of its actual substitutions and integrals.
+**Outstanding — D for the actual domains.** SA 6141–6155 defines layer radii on represented domains; it does not verify (19) globally for every input of the domain obligation CI-maps of [nl1-L.md](nl1-L.md) (Theorems 4 and 7). ST1 records are frozen at birth (st1-r3). Any change from an inherited scale to the current scale, including a layered-a3 (3)-type loss, must be paid when verifying D and B at current scale. One must show that the actual roster supplies a current-scale bound at every read, including boundaries, outputs, drop-outs and the next fibre's longer sequence. A real reference passing formation tests does not prove this assertion for every complex input. Replacing the domain by its intersection with (19) changes the consumer hypothesis; it requires checking coverage of its actual substitutions and integrals.
 
 SA also assigns level-one radii to layer zero, level-\(t-1\) radii to an unfinished top, and separate initial radii (6145–6148). The draft omitted these exceptions. If \(|\nu-m|\le1\), bounded adjacent frame increments give \(\theta_m\le2\theta_\nu\) for sufficiently small \(\gamma\), hence \(\log\theta_m\le2\log\theta_\nu\); one may use \(C_\lambda'=2^{2r_R}C_\lambda\). This repairs the envelope **once the actual index and read coverage are supplied**. No general preservation under shifts is inferred solely from \(q>p_0\); it also needs the response and gap budgets.
 
@@ -273,7 +272,7 @@ If
 \]
 then \(U\) has real bound \(C_Gv\).
 
-*Proof.* Curvature follows directly from (17), since every inner plaquette is a complete curvature read. Consider a gauge cube \(Z\subset\mathcal L_j\cup\mathcal L_{j+1}\).
+*Proof.* Curvature follows directly from (17), since every inner plaquette is a complete curvature read. Consider a gauge cube \(Z\subset\mathcal L_j\cup\mathcal L_{j+1}\). If \(Z\) is not aligned to the grid, apply RCG4 to the aligned cube of side \(s+1\) containing \(Z\) and restrict the gauge to \(Z\); the room \(\rho\ge64L^2\) and the factor 2 in (21) cover this, and the bound stays \(\le C_Gv\).
 
 For \(j\ge1\), work in level-\((j+1)\) units and write the bare mesh there as \(\eta'\). The cube side satisfies \(s\le c_gM_1/L\). Its three-unit enlargement, with two extra bare meshes, lies inside \(\Omega_{j-1}\), because
 \(\rho/L^2\ge3+2/L^2\) and \(\eta'\le L^{-2}\).
@@ -315,7 +314,7 @@ Under D, \(r(P)\le D_cF_{q+2r_R}(\gamma)\), where
 
 *Proof.* The derivative of \(t^{-1/2}(\log t)^Q\) has the sign of \(Q-\frac12\log t\) for \(t>1\). It is nonpositive on the indicated interval. For the limit put \(u=\log\gamma^{-1}\) and choose an integer \(n>Q\). The exponential series gives \(e^u\ge u^n/n!\), so \(e^{-u}(2u)^Q\le2^Q n!u^{Q-n}\to0\). Substitute (19) and take the supremum for the last assertion. The same argument applies to (20). ∎
 
-**Theorem 8 (conditional transfer to stage pairs).** Assume R, W, G, B, Q and D uniformly for every structure and every history under consideration, with constants chosen in §2. Then there is a common \(\gamma_{\rm PR}>0\) such that for \(0<\gamma\le\gamma_{\rm PR}\), every specified consumer pair and its real reference satisfy (15). If F is also supplied, (16) holds.
+**Theorem 8 (conditional transfer to stage pairs).** Assume R, W, G, B, Q and D uniformly for every structure and every history under consideration, with constants chosen in §2, and that \(\mathsf A(P)\) is holomorphic along families with fixed real \(U\) and fixed regions (the clause of Lemma 1), as IN1 Lemma 2 requires. Then there is a common \(\gamma_{\rm PR}>0\) such that for \(0<\gamma\le\gamma_{\rm PR}\), every specified consumer pair and its real reference satisfy (15). If F is also supplied, (16) holds.
 
 More precisely, choose \(\gamma_{\rm PR}\) below all imported coupling ceilings, including \(\gamma_B(M)\) at outputs, so that (21) holds and
 \[
@@ -326,9 +325,9 @@ Include the initial envelope if it is specified separately. The ceiling may depe
 
 *Proof.* Lemma 7 permits every strict inequality in (23) and (21) simultaneously below one positive ceiling. Imported ceilings are assumed common over the quantified histories. Lemma 5 gives the geometric class; Lemma 6 gives the real bound; (19) and Lemma 7 give \(r(P)<r_*\). Apply Theorem 3, and Lemma 4 when required. At \(P_0\) the complex size is zero. The same argument applies to a stage cut at its own depth, provided G, B and D hold for that cut; a compression then retains the estimates. ∎
 
-**Outstanding — the actual Gaussian comparison.** Theorem 8 supplies the precision hypotheses of frozen IN1 Lemma 2. It does not supply IN1's H-M: that includes the actual collared matrices, their enlarged parameter discs, heredity, wall factorization and physical identification. IN1 108 and its discussion after Lemma 2 explicitly retain that distinction. Consequently the precision part of NL1's (CI-form)(ii) follows conditionally here; its separate Gaussian-comparison part and CI itself do not. Frozen TP1's REG/G-ID and extraction imports are unchanged.
+**Outstanding — the actual Gaussian comparison.** Theorem 8 supplies the precision hypotheses of frozen IN1 Lemma 2. It does not supply IN1's H-M: that includes the actual collared matrices, their enlarged parameter discs, heredity, wall factorization and physical identification. IN1 108 and its discussion after Lemma 2 explicitly retain that distinction. Consequently the precision part CI-Gauss of [nl1-L.md](nl1-L.md) Theorem 7 (formerly (CI-form)(ii)) follows conditionally here; its separate Gaussian-comparison part and CI itself do not. Frozen TP1's REG/G-ID and extraction imports are unchanged.
 
-The theorem reads one nest at a time, so it requires no comparison with an inherited tower's scale. This explains why layered-a3 (3) is not an extra loss in (15). It does not prove that actual domain admission or the tower bounds of PR1(5b) can be bypassed.
+The theorem reads one nest at a time, so it requires no comparison with an inherited tower's scale. This explains why layered-a3 (3) is not an extra loss in (15). For Theorem 8 the loss is moved into D, not removed. It does not prove that actual domain admission or the tower bounds of PR1(5b) can be bypassed.
 
 ## 5. Source checks and the draft's proposed corrections
 
@@ -360,6 +359,17 @@ The draft's recommendations about other notes have the following dispositions. *
 ## 6. Definitions supplied in this distillation
 
 The supplied or sharpened definitions are: (i) the longer class versus the depth-\(k\) metric, including the next region; (ii) free scalar coordinates, norms and compression space; (iii) complete stencils, largest-scale seam readings and the auxiliary stencil size \(s(P)\); (iv) witnessed real bound \(r_0\), with no assumed minimizer; (v) the fixed real axial representative; (vi) active-row injection and the ambient/free constraint forms (8); (vii) the full global domain input D with its actual radius index and base-structure clause; and (viii) the distinction between field size \(r(P)\) and entropy parameter \(\kappa\). D is an exposed hypothesis, not a definition silently imposed on the existing consumers.
+
+## Change log (pass 3 fixes, lead, 2026-11-05)
+
+Applied the findings of `gates/pr-lay-gate.md` (Claude fresh session, first failing step none):
+1. B now cites st1-r3 Lemma 10 (59), with C_U in place of C_RA C_lambda; proofs and constant order unchanged.
+2. Draft names replaced: CI-maps and CI-Gauss of nl1-L.md Theorems 4 and 7.
+3. One sentence added: for Theorem 8 a scale-change loss is paid when verifying D and B, not removed.
+4. Theorem 8 now lists holomorphy of A(P) along fixed-U, fixed-region families (Lemma 1's clause), as IN1 Lemma 2 requires.
+5. Lemma 6 handles a non-aligned gauge cube via the aligned cube of side s+1 (room rho >= 64L^2, factor 2 in (21)).
+
+**Status: frozen.** Reopens only on a `wrong` signal or when an import it reads changes. D for the actual domains, IN1's H-M and PR1(5b) stay open, as stated.
 
 ## 7. Result
 

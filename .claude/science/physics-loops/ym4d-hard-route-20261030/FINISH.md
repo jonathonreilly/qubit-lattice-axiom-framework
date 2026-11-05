@@ -51,6 +51,8 @@ One cross-provider read each, not an audit, no status.
 
 ## How we work
 
+0. **Port the complete account (owner, 2026-11-05).** Read GOAL.md's method section and `library/port-map.md` first. Port what Sussman and Alpoge prove; put proof lanes only on their open statements on the T0 chain and on the T0 clauses they do not assert. Each FINISH row names the CA label and its status.
+
 0. **Is it worth doing? Ask before every lane, check, edit or message, lead included.** It must name the open item on the critical path that it closes or kills (an obligation in `GOAL.md`, a row of `library/sa-ledger.md`'s top twenty, or a position in `library/route-decisions.md`), and what we would do differently if it succeeds or fails. No named item, or no change either way: do not do it. Each queue row opens with "Moves:" and that item. Each lead update lists what moved; work that moved nothing is named as waste, so it is not repeated.
 1. **Literature first.** Each route or proof step starts from one wide search (Balaban, Dimock, the Sussman-Alpoge repository at `31a47c543775`, arXiv, older constructive field theory), recorded once in `library/lit-<topic>.md` and reused. A smaller lane reads those records and does a short targeted search.
 2. **Build on published work; verify what the proof uses.** No firewall. Use any published result at once, labelled `unchecked`, credited by name (Balaban, Dimock, Sussman and Alpoge with Claude and Codex as authors of their text, Grok for its PRs #10133 to #10135). Before it counts as closed, it is re-derived in `library/` and checked by another provider. `library/sa-ledger.md` lists what the outline's Theorem 0 reads, with the twenty to verify first.

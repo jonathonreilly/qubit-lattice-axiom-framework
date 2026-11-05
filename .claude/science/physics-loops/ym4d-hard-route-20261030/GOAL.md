@@ -36,6 +36,17 @@ Owner, 2026-11-01: "we dont want compute assisted proofs, these all need to be a
 
 What T0 adds to T1 is on the critical path: full O(4) invariance, the factorial growth bound, and clustering. These are `library/sa-ledger.md` ranks 11, 12, 17-20, which `library/route-compare-2.md` had moved off T1's path. Later targets: N >= 3 beyond what the Sussman-Alpoge extension needs, and the mass gap.
 
+## Method: port the complete account (owner, 2026-11-05)
+
+Owner: "if porting means not REDOING their work, then yeah - duh".
+
+- The chain to T0 is Sussman and Alpoge's complete account (CA-I, CA-II, CA-III at commit 31a47c543775). Its 1,647 numbered statements, with the status each one declares, are in `library/sa-index/ca-full/`.
+- A statement they prove in full is ported: cited, rebuilt in `library/`, checked once. It is not re-derived by another route, and our own restatement does not replace theirs.
+- Proof work goes only to their open statements on the T0 chain (incomplete, outstanding, cited, printed without proof, or model only), and to the T0 clauses their Theorem 0 does not assert.
+- Their Theorem 0 does not assert clustering, uniqueness of the vacuum, Wightman functions, the spectrum condition beyond H >= 0, or O(4) (CA-I 2706-2710). Their O(4) clause (vi) is not proved; it follows from the far-sphere flux hypothesis, "derived nowhere in this book" (CA-III 110830-110835, 111006). These T0 clauses are ours to prove; LG1, SR1, CL1, PH1, RO1, WR1 address them.
+- `library/port-map.md` maps our parts and open lemmas to their statements. Before any lane, the lead finds the step there and in the account, and writes the CA label and status into the FINISH row.
+- Progress is measured by open statements closed, not by texts frozen.
+
 ## Pace
 
 Owner's decision, 2026-10-31: usage must last the full week on each account. The two hard-core attempts run one at a time, alternating, with a rest after each cycle, and the rest follows measured usage. Each cycle is a fresh session restarted from the attempt's own file, so that file's state of attack has to carry everything the next session needs. A second worker on the Mac mini takes the queue in `FINISH.md`, one fresh session per item, paced the same way on its own account. `parts/upper-chain.md` and `parts/witness.md` are parked at their last checkpoints, with nothing of theirs unpushed; their next tasks are queue items in `FINISH.md`.
@@ -43,6 +54,8 @@ Owner's decision, 2026-10-31: usage must last the full week on each account. The
 **Workers start at `FINISH.md`.**
 
 ## Critical path
+
+(2026-11-05: re-based on the complete account's own statements; see the method section and `library/port-map.md`. The list below is the older framing.)
 
 1. **hard-core:** all-scale UV stability for hard-constraint block RG in four dimensions, including large fields. Balaban's series (CMP 95, 96, 98, 99, 102, 109, 116, 119, 122) is the known structure. The literature carries no weight here: until rebuilt, each step is an open obligation. Raced by two attempts.
 2. **upper-chain:** from the interface below to volume-free local bounds, a joint limit on R^4, and reconstruction on separated tests.

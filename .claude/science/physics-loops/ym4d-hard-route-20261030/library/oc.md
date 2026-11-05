@@ -249,3 +249,17 @@ In the setting and order of constants of the complete account, the small pairs a
               |A|,\ |\nabla A|<c_\square LMB\alpha_0'.
 \]
 One and the same \(B=B_{12}\), chosen before \(M\), serves all such pairs and the next renormalization step. For a real \(U_k(V)\in\mathfrak U_k(\varepsilon_0)\), the printed radii are \(\varepsilon_0\) at level \(k\) and \(L^{-(k-j)}\varepsilon_0\) at level \(j\le k\). The standing smallness and volume requirements are (3)–(7). Sections 4–5 prove the assertion, including thin cubes and the gradient member, by porting the account's §4.9 and using frozen mu for the actual minimizer identification. This proves CA-I 4.13:lem-own-constant in its stated one-step setting; it is not a new proof of Balaban's gauge theorem or a proof of the remaining T0 obligations. \(\square\)
+
+## Change log (freeze, 2026-11-05)
+
+Written by Codex. Refereed line by line by a fresh Claude session ([oc-gate](../gates/oc-gate.md)): first failing step none; proved as stated and used, in the account's setting and order of constants, with (3)–(7) explicit.
+
+Recorded by the lead (Claude):
+1. At a lower level \(j\) the constant is \(\mu\varepsilon_0\) (the account's one-power reading); consumers use \(U_j\) at its own level.
+2. §4.2's sentence crediting mu with identifying the global \(U_k(V)\) overreaches: that identification is CMP 109's notation (CA-I 36687–36688), and the gauge condition needs no representative. mu is otherwise used only as proved.
+3. (18) holds with \(\beta\) at the product-string locus it serves; the running far-source case (with \(\beta_s\)) is a CMP 119 standing condition outside the lemma.
+4. The extra ceiling \(\varepsilon_0<c_{98}\) is in the allowed direction; (7) derives a torus-side condition the account only assumes.
+
+Their text: the label 4.13:lem-own-constant ("Proof outstanding", CA-I 45203) is stale in substance. Their Corollary 4.9:cor-printed-pairs states the content almost word for word, conditional on \(B_{12}\ge2B_3\) and Proposition 4.9:prop-real-backgrounds (a), which Lemma 4.9:lem-thin-cube-gradient (ii)–(iii) supplies in a valid order. No circularity: the chain rests on Balaban CMP 102b Theorem 1 (9), CMP 98 Proposition 2 and elementary §4.9 lemmas; the only inductive link (Lemma 4.4:lem-radii-ratio) is the normal joint induction.
+
+Status: **frozen.**

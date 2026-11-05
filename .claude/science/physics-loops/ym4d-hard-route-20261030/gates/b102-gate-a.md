@@ -15,3 +15,6 @@ Status: in progress. Sections are added as they are checked.
 - H4 (L517-598): redone. Image bound B_0|J| + 4B_0C_4 r^2 < r; Cauchy on |t| = 2r/N(v) gives 8C_4 r; Lipschitz 1/4; (H4.3) with 4/3 <= 2. No defect.
 - H5 (L600-631): redone; the premise U in U_k(t_0) is implicit in the wording. No defect.
 - H6 (L633-802): the plaquette expansion, the cubic coefficient (H6.1), the word bound, the Cauchy steps, (H6.2), (H6.4)-(H6.6) (all eight terms) and the eight term-by-term bounds were redone; each holds under (H6.7). The identification with CMP 102 (39), (80), (189) is checked against the paper below.
+- H7 (L804-847): redone. (H7.2) from differentiating (H7.1), Neumann bound (H7.3) and the kernel reading with v = l^{-d} delta. Holds under its stated operator premises. No defect.
+- H8 (L849-896): redone. Both Gram inequalities, the Schur bound tM on WNW^{-1} - N and the entry bound (2/m) e^{-td}. No defect.
+- Section 4 (L898-1105): Open lemma O matches CMP 99b (3.26) with a = 1 (checked on the printed page 393-394: (3.16), (3.21), (3.25), (3.26)). Attack 1's flat example (da = 0, RD*a = 0, D*a = f) is right; Attack 2's seam configuration is right. Neither is used later.

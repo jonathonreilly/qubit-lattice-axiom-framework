@@ -550,3 +550,15 @@ Only this note is changed. Shell and text-processing tools were used to retrieve
 Lemma LSC (a)–(e) holds as an implication from the unchanged CA flow, density, real-background and sourced-construction inputs specified above. In particular, at the fixed omitted-step exponent $m_J(g)$, (23) bounds $E_+^\sharp+C_{\rm low}$ uniformly in $K,g_0,m_1,a,N_T$ and positions. The constant (29) gives the per-ball bound with the original torus floor of CA clause (iii-b).
 
 This completes the missing LSC implication on the account's route. The proof supplies the absent offset argument, a uniform small-field integral floor, the last-scale constant aggregation, and the finite-torus completion. It ports the printed unit-rescaling, plaquette-count and subsequence arguments with their hypotheses intact. It is a proof of a step left incomplete, not an audit or a proof of the upstream RG construction or of T0.
+
+## Change log (referee, 2026-11-05): smaller scope
+
+Written by Codex. Refereed line by line by a fresh Claude session ([lsc-gate](../gates/lsc-gate.md)): **first failing step §3 "Normalization" (L214), as used in the floor (21) (L342–353).** The note identifies the correlation theorem's zero-source integral with Chapter 4's \(\int\rho^s f_{K'}\,dV\) and applies Chapter 4's lower bound (9) (CA-I 4.33 (i-b)(1)). In Chapter 1's normalization (bare density \(\exp[-g_0^{-2}A]\), Haar probability measure, CA-I 478–481, 929), (9) with (i-c) would give \(Z_{\rm bare}\ge e^{-C(g)N^4}\). An axial-gauge slice-by-slice bound gives \(\log Z_{\rm bare}\le-\tfrac92(1-1/T)L^{4K'}N^4\log x_0+O(L^{4K'}N^4)\), which contradicts it once \(K'\ge1\) at small \(g\). So the floor, the second half of (5) and \(E^*\) in (23) are **not established**.
+
+Proved (referee): the statement LSC (a)–(e) is the right one (neither weaker nor stronger than the uses); (a); the identification and coupling half of (b); (d); (e); and (c) and (29) given a valid uniform \(E^*\). The §6.1 per-ball deduction, (27), the moment–cumulant coefficients and the subsequence argument hold; the ported parts match the source.
+
+**Still needed for (iii-b):** a zero-source floor \(\tilde Z(0)\ge e^{-C(g)N^4}\) at \(m=m_J(g)\), uniform in \(K,g_0,m_1,a\), in the same bare normalization as the sourced upper bound (13). Balaban's normalized (0.1) lower bound is the natural source; their account does not state it in that form.
+
+**Possible inconsistency in their text (one Claude reading; not verified by a second model; not to be stated outward):** as stated, CA-I 4.33 (i-b)(1) appears to contradict (i-c) and Definition 1.1 in the bare normalization, so its hypotheses cannot all hold; (h4)(a) is the likely cause. Their 8.8:lem-stability-exponent and standing input 4.31(d) contain the same lower bound. This may be a normalization convention (a subtracted vacuum constant) rather than an error; it needs an independent check.
+
+Status: **frozen at the smaller scope above.** Our o4-two-point.md stays at their standing.

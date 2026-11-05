@@ -135,7 +135,7 @@ For any such family indexed by t, K→∞ as t→∞ (with the displayed constan
 \[
 x_{n_0}\le t-\lambda_\sharp n_0+c_5<g^{-2}+B_\sharp,
 \]
-a contradiction. The finite set of crossing indices up to n₀ has a least member K. Minimality proves the preterminal assertion.
+a contradiction. As the source says (CA-I 3684–3685), the terms are indexed by an initial segment \(k<n_{\max}\) containing \(K\), so \(x_0,\dots,x_K\) all exist; this is used below for \(x_k>g^{-2}+B_\sharp\) at every \(k<K\) and for the extension hypothesis at \(n=K\). The finite set of crossing indices up to n₀ has a least member K. Minimality proves the preterminal assertion.
 
 If K=0, t≥g⁻²+B♯ and the crossing inequality force x_K=g⁻²+B♯>g⁻². If K≥1, H-next applies at n=K, and its upper bound on (K−1,K) gives x_K≥x_{K−1}−B♯>g⁻². The other endpoint is the crossing definition. Every x_k through K is positive; the strictly decreasing function x↦x⁻¹ᐟ² sends the two thresholds to g and g₋(g), giving all coupling assertions.
 
@@ -574,7 +574,7 @@ B₁=1≤eᵃ. If B_{N−1}≤eᵃ, H-KP makes the exponent at most a(Q), provin
 \]
 Indeed the spanning-tree inequality bounds each coefficient. Split off the first vertex and replace 1/n! by 1/(n−1)!, an enlargement of nonnegative terms. The remaining series is B(Q). Finiteness of \(\mathcal P\) proves the last strict inequality, and the exponential formula gives Ξ=exp Φ.
 
-For an infinite but locally finite support set, restrict to polymers contained in increasing bounded boxes. Every finite list occurs eventually; its incompatibility graph and weight do not change. Hence sums of **absolute nonnegative majorants pinned at a root** increase to the full pinned sum and retain any box-independent bound. A signed or complex sum itself need not increase. No finite global Φ or partition function in infinite volume follows. The proposition below is used in its finite-torus setting; its final exhaustion paragraph is read only for local and pinned bounds.
+For an infinite but locally finite support set, restrict to polymers contained in increasing bounded boxes. Every finite list occurs eventually; its incompatibility graph and weight do not change. Hence sums of **absolute nonnegative majorants pinned at a root** increase to the full pinned sum and retain any box-independent bound. A signed or complex sum itself need not increase. (correction of scope: the source says "the pinned sums are monotone in R" (CA-I 22370) and carries the exhaustion to \(\mathbb R^d\) (22855–22857); that holds for nonnegative pinned majorants only.) No finite global Φ or partition function in infinite volume follows. The proposition below is used in its finite-torus setting; its final exhaustion paragraph is read only for local and pinned bounds.
 
 ## 6. Conditional convergence and decay of the logarithm
 
@@ -630,7 +630,7 @@ The boundary group consists of X with \(X\sqcap|\mathcal O|^\boxplus\ne\varnothi
 
 ### 6.3 Statement
 
-**`4.6:prop-logarithm-convergence`, CA-I 22645–22680; proof 22686–22858. Source status: an unqualified proved implication, with the activity-supplier gap just recorded.** Assume the hypotheses of `4.6:prop-activity-bound`: the family island-integral bound, strip interaction bound, localization statement and remaining hypothesis listed there; also `4.6:eq-constant-conditions-a`, the ceiling on α¹ᐟ³ and the two coupling conditions of `4.6:def-constant-conditions`. Assume the format statement underlying `4.6:lem-polymer-gas`, and additionally `4.6:eq-constant-conditions-e`. Then, for every union X of M-cubes, the series defining \(\mathbf R'^{(k)}(X)\) converges absolutely, uniformly in outer variables and on \(\mathfrak U_k(X)\), and
+**`4.6:prop-logarithm-convergence`, CA-I 22645–22680; proof 22686–22858. Source status: an unqualified proved implication, with the activity-supplier gap just recorded.** For the identity \(\{\cdots\}=\exp\sum\mathbf R'(X)\) only, assume also the printed-without-proof locality of interaction terms (Balaban), which the polymer-gas representation needs; the decay bound and absolute convergence do not need it. Assume the hypotheses of `4.6:prop-activity-bound`: the family island-integral bound, strip interaction bound, localization statement and remaining hypothesis listed there; also `4.6:eq-constant-conditions-a`, the ceiling on α¹ᐟ³ and the two coupling conditions of `4.6:def-constant-conditions`. Assume the format statement underlying `4.6:lem-polymer-gas`, and additionally `4.6:eq-constant-conditions-e`. Then, for every union X of M-cubes, the series defining \(\mathbf R'^{(k)}(X)\) converges absolutely, uniformly in outer variables and on \(\mathfrak U_k(X)\), and
 \[
 |\mathbf R'^{(k)}(X,(\mathbf U,\mathbf J))|
 \le K_{\rm KP}(d)c_1(X)e^{-(1+\beta/2)\kappa d_{\rm out}(X)},
@@ -802,8 +802,21 @@ Every marked completion is listed here:
 | L2 | Root marking at each fixed n, including repeated polymer labels. |
 | L3 | A parameter-independent termwise majorant proves uniform tails. |
 
-**Corrections.** No mathematical correction to the requested finite statements or their constants was needed in this reading. The source's absent `4.6:prop-activity-bound` statement is a retained gap, not silently repaired. The original reference is **CA-I 22393–22395**. The infinite-volume remark is used for absolute pinned majorants only; finiteness of the total Φ is kept in its finite-system setting. The filled steps are not claims of errors in the source.
+**Corrections.** One correction of scope (the monotonicity of pinned sums, §5.4); no correction to the finite statements or their constants. The source's absent `4.6:prop-activity-bound` statement is a retained gap, not silently repaired. The original reference is **CA-I 22393–22395**. The infinite-volume remark is used for absolute pinned majorants only; finiteness of the total Φ is kept in its finite-system setting. The filled steps are not claims of errors in the source.
 
 **Named hypotheses carried.** H-Haar retains the normalized Haar existence/uniqueness input of `1.1:def-wilson-action`. H-flow-1 and H-flow-2 are precisely `4.19:eq-flow-bounds-1`,`2`; H-next is the extension-and-bound premise of `4.2:lem-first-passage`. H-RG retains actual increment construction and its incomplete one-loop/unmarked suppliers; the arithmetic port does not prove them. H-format and H-geometry retain the step's island-operation, admissibility and component-box supply in `4.6:def-step-datum`, `4.6:def-strips-bracket`, and `4.6:def-geometric-facts`. **H-locality is the printed-without-proof input `4.6:rem-interaction-locality`, explicitly assumed at CA-I 20767.** H-domain retains the common domains and restriction maps of `4.6:not-complex-domain`. H-island, H-interaction and H-analytic are the three clauses of `4.6:def-standing-bounds`. H-constants retains the applicable one-sided conditions in `4.6:def-constant-conditions`. **H-activity and H-activity-supplier retain the explicit single-polymer estimate and its incompletely specified supplier `4.6:prop-activity-bound`.** H-KP remains the abstract tree lemma's hypothesis; §6 proves it for the indicated majorant from the geometric count, H-activity and constants (a),(e). The exponential formula's absolute-convergence premise is likewise proved for that finite application. No analytic premise is discharged merely by deriving H-KP conditionally.
 
 Credit throughout belongs to Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, and to Tadeusz Bałaban for the source constructions and formulas named above. Codex wrote this port and its filled steps. **This text has not yet been checked by another model.**
+
+## Change log (check, 2026-11-05)
+
+Ported by Codex. Checked line by line by a fresh Claude session ([p1-base-gate](../../gates/p1-base-gate.md)): first failing step none; 3 findings, all repairable; 11 statements ported faithfully, 3 with repairs. Applied by the lead (Claude):
+
+1. `4.2:lem-first-passage`: the source's initial-segment sentence (CA-I 3684–3685) restored.
+2. `4.6:prop-logarithm-convergence`: Balaban's printed locality hypothesis named in the statement, for the identity clause only.
+3. `4.6:rem-tree-bounds-use`: the monotonicity of pinned sums marked as a correction of scope.
+
+Gap in their text, confirmed: `4.6:prop-activity-bound` is a placeholder remark at CA-I 22393 ("not written out here; parts of its proof are printed below"), cited as a Proposition 14 times (CA-I 22398–23022), absent from CA-II and CA-III. The port keeps it as a named hypothesis.
+
+Status: **checked port.**
+

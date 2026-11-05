@@ -41,7 +41,7 @@ The following are imports, with their library qualifications retained.
 * **R (global real gap).** Pr-lay §2: on every admitted separated sequence, every global real \(U\) in this block-axial representative with real bound \(<a_R\) has real symmetric precision \(\mathsf A(P_0)\ge c_LI\). This is the conditional a2-layers theorem, retaining its flat inputs, a2-curved coefficient inputs and [a2-layers-gate](../gates/a2-layers-gate.md) cap/separation repairs. It does not require criticality.
 * **W (primitive complex inverse/walk package).** Use [h-walk](h-walk.md) (I1)–(I3), Lemma U and the algebraic precision decomposition, **with** [h-walk-gate](../gates/h-walk-gate.md) §§5–8: complex inverse/conjugation bounds on every separated cut-down, arbitrary coefficient bound \(\sup_c\xi_c^3|j_c|\le\gamma_j\), the all-scale absolute row/column bound for \(\Delta^{(2)}[j]\), and bounded analytic finite-stencil one-step maps. The four inverse bounds alone do not supply the second-jet commutator bound. Use smooth pillar cutoffs with two controlled differences in the graph norm. Retain \(C_*^{n+\sum m_i}\) in the branched estimate and the count \(C_h^{m+1}\) at length \(m\ge0\). Reject h-walk's region-trace canonicity and single-term reflection claims. At global pairs the resulting fixed-region expansion sums to the actual symmetric precision (7) of pr-lay, below a ceiling \(a_h>0\).
 * **AV (actual averaging).** The contour mean and nonlinear average are SA QC1–QC4, 7943–8001, on their regular branches, with the finite-stencil analyticity just named. Their nonlinear covariance is proved in Lemma 3; it is not identified with h-walk (I2), which literally states covariance of derivative rows.
-* **FG/UM.** The finite-dimensional implication FG1–FG12, SA 13894–14249, and the UM potential, cutoff and geometric counting inputs, SA 14276–14816. For early \(K\ge1\) there are dimension-independent \(A_K,\varepsilon_0(K),\zeta_0(K)>0\) such that the normalized marginal with \(D=C+C\Gamma\Gamma^{\mathsf T}C\) costs \(e^{A_K(\varepsilon+\zeta)m}\). Failed tests use disjoint coordinate blocks, fixed real cutoff sets and the extra tilt in Corollary 13.1. Actual potentials must satisfy UM1 and its joint holomorphy/locality clauses on the entire external domain used and their declared fluctuation boxes. For an application over all of \(\mathcal K\), this is an explicit additional domain hypothesis; it is not inferred from the matrix construction.
+* **FG/UM.** The finite-dimensional implication FG1–FG12, SA 13894–14249, and the UM potential, cutoff and geometric counting inputs, SA 14276–14811. For early \(K\ge1\) there are dimension-independent \(A_K,\varepsilon_0(K),\zeta_0(K)>0\) such that the normalized marginal with \(D=C+C\Gamma\Gamma^{\mathsf T}C\) costs \(e^{A_K(\varepsilon+\zeta)m}\). Failed tests use disjoint coordinate blocks, fixed real cutoff sets and the extra tilt in Corollary 13.1. Actual potentials must satisfy UM1 and its joint holomorphy/locality clauses on the entire external domain used and their declared fluctuation boxes. For an application over all of \(\mathcal K\), this is an explicit additional domain hypothesis; it is not inferred from the matrix construction.
 * **G-ID (physical clause only).** At an admitted complete physical pair the Gaussian part of the actual step has covariance \(\mathsf A(P_W)^{-1}\). SA 14108–14118 sketches this identification; pr-lay (9) retains physical-current and background-branch identities. This is not TP1's different, still imported, Gaussian-energy identification.
 
 The precision in this manuscript is exactly pr-lay (7), including its active injection, pivot derivative, Wilson/current corrections and ambient soft-gauge Hessian. If the physical step instead uses its completed form (9), **F** is additionally required: the local analytic symmetric correction \(-E_{\rm free}[J_{\rm GF}]\) vanishes at \(P_0\), has fixed full read range and entries \(\le C_Fr(P)\). Add those entries as labels before making any choices below; enlarge all dependent constants. No identification of the two physical Hessians is presumed.
@@ -94,7 +94,7 @@ Set, early,
 \]
 If \(U\) has local real bound \(<h/2\), the line \(P_z=(U,zA',z\mathbf J)\) is in the local regular class below \(h\) for \( |z|<h/(8L^2r)\), \(r=r_Y(P)>0\). For \(r<r_{\rm loc}\) and every subfamily of readable labels, its weighted absolute displacement sum is at most \(H_1r\), and so is its operator displacement.
 
-*Proof.* Since \(l\le L\), scaling R4's inequalities and gauge bounds proves (6); the cube-size floor makes the gauge cubes eligible. At a plaquette of scale \(\xi\), let \(\alpha\) be the maximum of \(\xi|zA'|\) on its links and \(\xi^2|\nabla^U(zA')|\) on its forward-curl differences. Adjacent scales differ by at most \(L\), so \(\alpha\le L^2|z|r\). Transport its four potentials by real links. Their signed sum is the covariant curl plus a term bounded by \(4|\partial U-I|\alpha/\xi\). The product-exponential remainder is at most \(16\epsilon_{\rm lat}^2\alpha^2/\xi^2\), since \(e^t-1-t\le t^2\) for \(t\le1\). Thus, for \(\alpha\le1/16\) and real bound \(r_0\le1/4\),
+*Proof.* Since \(l\le L\), scaling R4's inequalities and gauge bounds proves (6); the cube-size floor makes the gauge cubes eligible. At a plaquette of scale \(\xi\), let \(\alpha\) be the maximum of \(\xi|zA'|\) on its links and \(\xi^2|\nabla^U(zA')|\) on its forward-curl differences. Adjacent scales differ by at most \(L\), so \(\alpha\le L^2|z|r\). Transport its four potentials by real links. Their signed sum is the covariant curl plus a term bounded by \(4\epsilon_{\rm lat}|\partial U-I|\alpha/\xi\). The product-exponential remainder is at most \(16\epsilon_{\rm lat}^2\alpha^2/\xi^2\), since \(e^t-1-t\le t^2\) for \(t\le1\). Thus, for \(\alpha\le1/16\) and real bound \(r_0\le1/4\),
 \[
  \epsilon_{\rm lat}^{-2}\xi^2|\partial\mathbf U_z-\partial U|
  \le2\alpha+4r_0(\epsilon_{\rm lat}/\xi)\alpha+16\alpha^2\le4\alpha.
@@ -193,7 +193,7 @@ On the whole torus its sum is the principal symmetric root \(\mathsf A(P)^{-1/2}
  N_t=\frac{\Lambda_{\rm res}I-\mathsf A_<}{\Lambda_{\rm res}+t},\quad
  P_t=\frac1{\Lambda_{\rm res}+t}\sum_{j=0}^{n-1}N_t^j,\quad Q_t=N_t^n. \tag{15}
 \]
-An entry of these polynomials is evaluated from its coordinate paths, using the normally convergent short-label entry sums. It is not a polynomial in finitely many walk labels. Group before assigning a tag. Assign to a \(P_t\) or \(Q_t\) entry the union of the radius-\(R_*\) endpoint balls and length \(d(x,y)\). The balls are connected because \(d(x,y)\le nr_c\). Every path and every short coefficient it reads lies inside these balls.
+An entry of these polynomials is evaluated from its coordinate paths, using the normally convergent short-label entry sums. It is not a polynomial in finitely many walk labels. Group before assigning a tag. Assign to a \(P_t\) or \(Q_t\) entry the union of the radius-\(R_*\) endpoint balls and length \(d(x,y)\), the \(\ell^\infty\) distance; trees in Lemma 6 and the crossing bound are measured in the same \(\ell^\infty\) metric. The balls are connected because \(d(x,y)\le nr_c\). Every path and every short coefficient it reads lies inside these balls.
 
 To bound such an entry using only its hull, compress \(\mathsf A_<^Y\) to the radius-\(nr_c\) coordinate ball about its first endpoint. The hull supplies the \(b_{\rm gap}\) margin. Lemma 4 gives accretivity \(a_s\) and norm \(b_s\) on that compression. For every vector \(v\),
 \[
@@ -293,7 +293,7 @@ Thus the numerical clause of frozen IN1 H-M holds for this family on \(\mathcal 
  \|\chi(\mathsf A(s;P)-\mathsf A(s^0;P))\chi\|\le WE_M,\qquad
  \|\Gamma(s;P)-\Gamma(s^0;P)\|\le WU_{\rm root}E_M.                 \tag{27}
 \]
-The same positive majorants justify convergence on closed subdiscs and even at the displayed radius. The exponent 32 is necessary because \(\Gamma\) has two tag sets.
+The same positive majorants justify convergence on closed subdiscs and even at the displayed radius. This count needs the exponent 32 because \(\Gamma\) has two tag sets; it is not shown to be necessary.
 
 Put \(r=r_Z(P)\). Lemma 2 and (27) give
 \(\|C^{-1}-C_*^{-1}\|\le WE_M+H_1r\le c_L/4\).
@@ -469,6 +469,17 @@ The **bound one and \(W_0\)** are fixed early; \(\varepsilon_*,\gamma_{\rm tilt}
 its insertion-smallness premise and its nonempty rate window. Theorem 8 supplies the structural identities separately from this numerical estimate. \(\square\)
 
 This matches [um-novelty](um-novelty.md)'s distinction: SA assumes the actual enlarged-disc matrix and structural inputs, proves UM6 conditionally from FG, and imposes UM14 as a tilt compatibility condition. Neither those passages nor the arithmetic (35) proves admission of every declared complex pair. The draft's assertion that the exact all-core problem of FINISH row 274 has now been supplied is therefore withdrawn.
+
+## Change log (pass 3 fixes, lead, 2026-11-05)
+
+Applied the findings of `gates/hm-gate.md` (Claude fresh session, first failing step none):
+1. The source-check record linked at line 7 is not in this clone; the referee read every cited SA line directly.
+2. Lemma 2's proof: the missing factor epsilon_lat is restored in 4 epsilon_lat |dU - I| alpha/xi (line 100 already had it).
+3. Grouped root entries carry the l-infinity length d(x,y); Lemma 6 and the crossing bound use the same l-infinity metric.
+4. The UM range is SA 14276-14811.
+5. The exponent 32 is what this count needs, not shown necessary.
+
+**Status: frozen**, as a conditional theorem on R4 intersect Rep. Outstanding, named: the all-core conclusion (descent; `library/descent-draft.md`), G-ID for the physical clause, F for the completed gauge form. Reopens only on a `wrong` signal or when an import it reads changes.
 
 ## Result
 

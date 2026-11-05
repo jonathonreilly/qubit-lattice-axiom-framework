@@ -150,7 +150,7 @@ The following are hypotheses, not consequences of a source label.
   \(n_b(H,K)\le C(M)E_{\bar\kappa}\delta'_t e^{-\mu d_+(b,S_{\rm bx})}\).
   The box chart radius \(a_\Lambda\), \(C(M)\), and their source threshold are specified after \(M\), before \(\gamma\). SA 17656 supplies a box-minimizer statement; it is not a proof of all these response clauses.
 * **ST-test.** The stage's passing factor tests every free removed row against \(V^\sharp=M_-(U_+^\sharp)\) at \(\delta'_j\). Every removed row, pivots included, lies within \(r_{\rm sol}/4\) of that reference, where \(r_{\rm sol}\) is the converse neighborhood in Lemma F2. The reference is formed from data in \(X^\sharp\), the quarter-cell enlargement of the component, with a specified local boundary rule. Older tests and stored densities are retained exactly. The chosen test is a design input; its compatibility with the rest of the history construction is not inferred merely by reducing a threshold.
-* **GEO-slot (new input).** The independent collar bonds of CA-I 74314–74316 correspond exactly to the free removed rows of F2. Its rim bonds in 74317–74320 are exactly the recorded rim slots integrated at the stage. Orientations, units, fixed parameters and stored transports are matched. This does not identify densities or quadratic forms.
+* **GEO-slot (new input; replaced by Amendment GS, see the end of this text).** The independent collar bonds of CA-I 74314–74316 correspond exactly to the free removed rows of F2. Its rim bonds in 74317–74320 are exactly the recorded rim slots integrated at the stage. Orientations, units, fixed parameters and stored transports are matched. This does not identify densities or quadratic forms.
 * **ST-test\(^{\rm hol}\) (new input).** The localized-datum rule is holomorphic, real on real data, and uses CV for both references. There is a fixed raw-datum ball of radius \(r_{\rm hol}>0\), inside both admitted continuation charts, on which the relative row logarithm is holomorphic and bounded by \(M_*\). Real LOC holds on its real slice, in the same gauge. Data in use have coordinates \(X+iY\), \(\|X\|<r_{\rm hol}/4\), \(\|Y\|\le C_Qr_1(i)\). The fixed ball and bound precede \(\kappa\). Holomorphy of a patching rule alone does not prove admission of its patched data.
 * **LOC.** Either (decay) the common-gauge raw discrepancy on removed rows is at most \(C_{\rm loc}e^{-c_{\rm loc}R_\sharp}\), where \(R_\sharp\ge MR_t/4\); or (form) the two references belong to one admitted raw-datum chart, and are connected there by \(D_s=e^{isB_\Delta}D_+\), \(\|B_\Delta\|\le r_B\), with \(B_\Delta\) supported outside distance \(R_\sharp\) of the full stage carriers. The derivative theorem must hold along this entire segment in consistent gauges. Equality of nearby data and real regularity alone do not supply this common chart.
 * **Activity and contour supply.** CI below is owned by NL1/LF1. Theorem FM below proves the exact real rewrite of a specified stored Haar/delta operation. Identification with a separately frozen CA-I \((A_j,B_j)\) presentation requires Outstanding FM-match. Its full conditional contour requires Outstanding FC-mean-match and FC-test. Theorem FC proves the geometric and analytic implication with those premises explicit. STRIP, when main-step stored strip variables are used, is the discrepancy bound \(|H^{(j)}|\le C\varepsilon_j e^{-R_j}\) (SA 17521–17526), with all nonanalytic cutoff variables kept in their Borel tier.
@@ -1028,7 +1028,7 @@ Each free-row measure is unchanged by replacing \(e^{iu_e}V_e\) with \(e^{igB'_e
 This gives (FM5), including the full change-of-reference Jacobian.
 Continuation of its coefficient identity is holomorphic on a common complex chart. ∎
 
-**FM6.** Under GEO-slot and the same constraint/pivot chart, CA-I's collar coordinate
+**FM6.** Under GEO-slot (Amendment GS: read SLOT-ST, with SLOT-CA for the CA-I identification) and the same constraint/pivot chart, CA-I's collar coordinate
 in 81735–81756, 81829 is \(B\) when \(V^{(j)}=V\).
 Its full logarithm is \(\Psi_V(\mathsf C_VgB)\), not \(gB\) on pivot rows.
 For a different reference, use (FM5) on the overlap.
@@ -1697,3 +1697,14 @@ Applied the findings of `gates/st1-r4-gate.md` (Claude fresh session, first fail
 
 
 *Referee status (lead, 2026-11-05): refereed line by line by a fresh Claude session; see the change log above and `gates/st1-r4-gate.md`. The "not yet refereed" sentence in the Result above predates that check.*
+
+## Amendment GS (lead, 2026-11-05)
+
+Source: [geoh](geoh.md) Theorem 3 and Lemma 10, frozen after a fresh Claude referee ([geoh-gate](../gates/geoh-gate.md)). Under the incident-bond convention of CA-I 159071–159075, the literal GEO-slot input (L153) is false at the outer interface: CA-I's collar exceeds F2's free removed rows by a count proportional to the coarse interface faces (geoh (11)). The amendment:
+
+1. In L153, in FM6 (L1031) and in Corollary 14′ (L1587), replace GEO-slot by **SLOT-ST** (geoh L248): for a stored Haar/delta stage, its independent collar slots are exactly F2's free set, and its separately recorded rim slots are exactly those integrated at that stage, disjoint from them. Every other premise of Corollary 14′ is kept.
+2. For an identification with a CA-I presentation, add **SLOT-CA** (geoh L249) with FM-match: a bijection from CA-I's independent collar and rim coordinates to that partition, carrying fixed parameters, transports, constraints and pivots.
+3. FM6's conclusion is unchanged (geoh Lemma 10). The actual rim match stays Outstanding (geoh L257).
+
+f-meas.md L40 is read the same way. No other ST1 proof reads GEO-slot.
+

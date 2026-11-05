@@ -43,7 +43,7 @@ The circle means the label immediately before this operation. For the full stage
  N^{\rm met}_{m_i^M}(D_{i-1})\cap X\subset D_i
  \quad\text{for open neighbourhoods},\qquad h<i\le t.       \tag{P-gap}
 \]
-This is the local nest gap in `geo-5.md` (3.1), also used by `geo5c-count.md`; its use is separate from any global nesting theorem. CA-I 53779–53782 supplies this reading for \(i>k_0\), where \(k_0=t-N_t^0\) and \(L^{N_t^0-1}=R_{k_0+1}\). Below that range CA-I writes \(D_i=(\Omega_i^{\sim5})^c\cap X\). It does **not** say, at 53742–53743, that every such tilde denotes level-\(i\) \(M\)-cube layers, as the draft claims. **Outstanding — lower preparation convention:** to obtain all of P-gap solely from that formula, supply its layer grid. If each of its five layers has width at most \(s_i\), quiet padding gives the gap: a point of \(\widehat{X\cap Z_{i-1}}\) is at least \(8s_i\) from \(\Omega_i\); the five layers, with at most one cell of boundary rounding, leave at least \(2s_i\ge m_i^M\). This proves the implication under that explicit grid convention. The exclusion of the cp12 configuration below needs only the upper, final gap.
+This is the local nest gap in `geo-5.md` (3.1), also used by `geo5c-count.md`; its use is separate from any global nesting theorem. CA-I 53779–53782 supplies this reading for \(i>k_0\), that is for every \(i\in I_M=\{k_0+1,\dots,k\}\), so the pair \((k_0,k_0+1)\) is included, where \(k_0=t-N_t^0\) and \(L^{N_t^0-1}=R_{k_0+1}\). Below that range CA-I writes \(D_i=(\Omega_i^{\sim5})^c\cap X\). It does **not** say, at 53742–53743, that every such tilde denotes level-\(i\) \(M\)-cube layers, as the draft claims. **Outstanding — lower preparation convention:** to obtain all of P-gap solely from that formula, supply its layer grid. If each of its five layers has width at most \(s_i\), quiet padding gives the gap: a point of \(\widehat{X\cap Z_{i-1}}\) is at least \(8s_i\) from \(\Omega_i\) (from \(\Omega_i\cap X\) by quiet padding, and from \(\Omega_i\setminus X\) by the clause \(N_{10}H_i\subset X\) of (8)); the five layers, with at most one cell of boundary rounding, leave at least \(2s_i\ge m_i^M\). This proves the implication under that explicit grid convention. The exclusion of the cp12 configuration below needs only the upper, final gap.
 
 The main-step box has the supplied geometry
 \[
@@ -304,9 +304,9 @@ Here \(j_{\rm a}(p)=\max\{q:p\in\Omega_q^{\rm a}\}\), \(j_{\rm d}(p)=\max\{q:p\i
 \(m_j^M=L^{j-l}m_l^M\ge2aR_hm_l^M>\tau_l\).
 Lemma 11 puts every old hole at level \(l>h\) inside \(D_j\), so \(p\) is outside that hole. For \(l\le h\), use \(D_j\supset C\supset X\cap\Omega_h^{\circ c}\) and label nesting.
 
-To pass to current action entries, consider all other standing marks at \(p\). Older marks inside \(X\) have top below \(h\) by Lemma 4. They lie in \(C\), hence cannot contain this \(p\). A younger mark overlapping \(X\) contains it and has its window bottom strictly above \(t\), so changes no level at most \(j\). Thus only this drop-out can distinguish the two sequences here. Subsequent swallowing is excluded because the mark still stands. This proves the two level inequalities, including the case \(j-w_t<0\), when the lower bound is trivial. The bound for \(w_t\) follows from (4). ∎
+To pass to current action entries, consider all other standing marks at \(p\). Older marks inside \(X\) have top below \(h\) by Lemma 4. They lie in \(C\), hence cannot contain this \(p\). A younger mark overlapping \(X\) contains it and has its window bottom strictly above \(t\), so changes no level at most \(j\). Thus only this drop-out can distinguish the two sequences here. Subsequent swallowing is excluded because the mark still stands. This proves the two level inequalities, including the case \(j-w_t<0\), when the lower bound is trivial. If \(j_{\rm d}(p)\) lies outside the drop-out's window, the two sequences agree at \(p\) by the same argument, so \(j_{\rm a}=j_{\rm d}\) and (15) holds with room. The bound for \(w_t\) follows from (4). ∎
 
-**Corollary 13 (cp12's extreme configuration is excluded).** The configuration in `cp12-draft.md` Proposition 8.6 cannot occur above a fixed scale floor under (2), the quiet rule and the **final** gap alone. Full P-gap at lower levels is unnecessary for this conclusion.
+**Corollary 13 (cp12's extreme configuration is excluded).** The configuration in `cp12-draft.md` Proposition 8.6 cannot occur above a fixed scale floor under (2), the class rule (Lemma 11, inside a class window) and the **final** gap alone. Full P-gap at lower levels is unnecessary for this conclusion.
 
 *Proof.* Choose an integer \(N_{\rm crit}\) such that for every \(N\ge N_{\rm crit}\),
 \[
@@ -373,3 +373,19 @@ Imports are the frame and tube, the adopted step/fate/class rules and selectors,
 Corrections made to the draft are: condition outcome independence on fixed discrete inputs; replace the claimed quarantine equivalence by its explicit ancestral reading and distinguish SA's closed endpoint from CA's open one; retain \(\Omega_0\) endpoint restrictions; expose the missing nest selector and code/read interfaces, including charge multiplicity; avoid redefining IN1's reserve volume; use the tube in the logarithmic code bound; give a sufficient light-node torus floor; remove the determining-count transfer; correct the shifted stage-window explanation; use SA's degree bound \(L^4+83\) (the draft's \(L^4+82\) is a valid bound, but not SA's printed number); remove the unsupported thin-layer calculation; control complete loop stencils and preserve the initial-entry formation obligation; separate full D3 from its final-gap corollary and justify other standing marks; treat \(w_t\) as variable; avoid circular and overbroad Lift claims; count slot discrepancies by interface faces and remove the incorrect small-field exactness shortcut. The pre-\(\kappa\) placement is conditional on uniform interfaces and preserves any earlier analytic dependencies. The five specifically requested consumer corrections have the dispositions above. Frozen consumers and editable prompt files were not modified.
 
 The new work is a check and repair of the pass-1 manuscript, with explicit proofs of steps sketched in SA and a conditional convention counterexample. It is **not yet refereed**. It is research text, not an audit, and grants no status.
+
+## Change log (freeze, 2026-11-05)
+
+Refereed line by line by a fresh Claude session ([geoh-gate](../gates/geoh-gate.md)): first failing step none, 4 findings, all repairable. Applied by the lead (Claude):
+
+1. P-gap distance: the part of \(\Omega_i\) outside \(X\) is covered by the clause \(N_{10}H_i\subset X\) of (8), now cited. This closes the Lemma D0 gap named in cp12-gate.
+2. CA-I 53774–53782 gives the one-layer separation for every \(i\in I_M=\{k_0+1,\dots,k\}\); the pair \((k_0,k_0+1)\) is now stated as included.
+3. Corollary 13 uses the class rule (Lemma 11), not the quiet rule. Wording only.
+4. Proposition 12: the case where \(j_{\rm d}(p)\) lies outside the window (\(j_{\rm a}=j_{\rm d}\)) is now written.
+
+Consumer actions filed by the lead: ST1 Amendment GS (st1-r4.md change log: GEO-slot at L153 is replaced by SLOT-ST, with SLOT-CA plus FM-match for a CA-I identification, as Lemma 10 states); f-meas L40 is read the same way; cp12 Amendment 1 (its H-prof mark updated from Corollary 13 and Proposition 12).
+
+Referee observation, not a defect: Theorems 1–2 and Section 7 also hold under CA-I's open window; only GEO-mark's strict inequality \(s<h\) needs SA's closed rule.
+
+Status: **frozen.** All seven Outstanding marks stand as placed.
+

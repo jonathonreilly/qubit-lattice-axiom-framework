@@ -31,7 +31,7 @@ The radius table is ST1 (Tq0): \(r_\iota(m)=C_\iota\theta_m^{-1/2}(\log\theta_m)
    \xi_m^3|\mathbf J|<c_\sigma r_0(\nu),                 \tag{1}
    \]
    where \(c_\sigma\le1+\beta_s\) is ST1's recorded scalar coefficient and \(\nu\) is that read's supplied radius index.
-2. ST1's frozen ordinary towers and R1 cores at **every consumer core level**, with all their subdomains, erosions, continuation domains and full carriers. For a core address in \(\Omega_i\), include every required core gauge box and its supplied enlargement, with bound \(C_{\rm pot}Mr_0(i)\). A top-level core alone does not supply every later depth cut.
+2. ST1's frozen ordinary towers and R1 cores at **every consumer core level**, with all their subdomains, erosions, continuation domains and full carriers. For a core address in \(\Omega_i\), include every required core gauge box and its supplied enlargement, with bound \(C_{\rm pot}Mr_0(i)\). The required boxes include every box of the IMS box family \(\mathcal B_I(Z)\) used by auxiliary root entries (each a cube of side at most \(C_{\rm box}LM\)), each with one real gauge over the whole box; formation then follows from ST1 (60). A top-level core alone does not supply every later depth cut.
 3. Every natural gauge cube of PR-lay/hm, with an actual witness of bound \(a_{\flat}\), and its required formation carrier. Choose \(a_{\flat}<h/4\), where \(h\) is below all real/local matrix ceilings in M.
 
 Keep every born record permanently, with its original function, units, radius set and base radius. The resulting chain domain is denoted \(\mathcal D^{\flat}_{a|\sigma}\). This is a proposed specification, not an identification with the pre-existing actual roster. In particular, a contained boundary cube does not automatically have its required enlarged carrier.
@@ -61,14 +61,14 @@ The metric is globally bi-invariant, with diameter \(\pi\); below \(\pi\) it equ
 | Rows 1–2 | Exponents, fractions, geometric conventions and odd \(L\ge27\), above the existing floors. Set \(c_N=2^{-r}\). |
 | Row 3, then row 4 **before \(\kappa\)** | S's structural rates and bounds in their internal order; \(M_1,R_1\); tower, chart, levelling and record constants; M's moments, IMS/root scales and \(K_0,H_0,b,d,C_\tau\); \(a_{\flat}\), the ball constant \(c_{\rm room}\) below, \(K_{\rm main}\), and any proved LOC/path/holomorphic-rule constants. All are independent of \(M,\bar\kappa\) and activity amplitudes. |
 | Rows 4–5 | \(\kappa\), its rate window, then \(\bar\kappa\), response lengths and \(M\) above all ST1/hm/geometric floors. Retain DR's explicit \(E_{\bar\kappa}\), not as an early constant. |
-| Rows 6–8 | BOX constants, test/radius amplitudes, \(c_{\rm ct}\), formation budgets and the numerical frame-increment bound \(\bar B\). Choose formation constants after any radius shrinkage. |
+| Rows 6–8 | BOX constants, test/radius amplitudes, \(c_{\rm ct}\), formation budgets. (The frame-increment bound \(\bar B=C_\beta+1\) is fixed at IN1 row 2; nothing here depends on where it is listed.) Choose formation constants after any radius shrinkage. |
 | Row 9 | One common \(X_0=\gamma^{-2}\) floor enforcing every later ceiling below. It may depend on \(M,\bar\kappa,\bar B\) and amplitudes. |
 
 Thus a required early constant cannot be rescued by a later choice of \(M\) or \(\bar\kappa\). A new lower bound on \(M\) may depend on already fixed analytic lengths.
 
 ## Frame and record admission
 
-**Theorem 1 (RUN-low, including eligible early operations).** Assume SA (R19): \(\theta_j\ge X_0=\gamma^{-2}\), \(\underline\lambda(j-i)-c_5\le\theta_i-\theta_j\le\bar B(j-i)\) for \(i\le j\), with fixed \(\underline\lambda>0,c_5\ge0,0\le\bar B<\infty\), and \(R_j\le LR_{j+1}\). Let \(r>1\) and \(R_j=\lceil(\log\min_{u\le j}\theta_u)^r\rceil_{L^{\mathbb N_0}}\). For \(X_0\ge\max(4,2c_5)\),
+**Theorem 1 (RUN-low, including eligible early operations).** Assume SA (R19): \(\theta_j\ge X_0=\gamma^{-2}\), \(\underline\lambda(j-i)-c_5\le\theta_i-\theta_j\le\bar B(j-i)\) for \(i\le j\), with fixed \(\underline\lambda>0,c_5\ge0,0\le\bar B<\infty\), and \(R_j\le LR_{j+1}\) (for the actual history this clause is supplied by frozen [geoh](geoh.md) Lemma 1 after a floor on \(X_0\); IN1's frame (1) does not contain it). Let \(r>1\) and \(R_j=\lceil(\log\min_{u\le j}\theta_u)^r\rceil_{L^{\mathbb N_0}}\). For \(X_0\ge\max(4,2c_5)\),
 \[
  R_j\ge2^{-r}(\log\theta_j)^r.                         \tag{2}
 \]
@@ -100,7 +100,7 @@ These ceilings exist for every fixed finite \(\bar B\), by exponential dominatio
  \le\theta_t+\bar B(\rho+1)
  \le y+c_5+\bar B(\rho+1)\le2y.
 \]
-Equation (4) and rounding to powers of \(L\) imply \(R_u\le LR_t\). Therefore \(g(N_*)\ge0\); the integer argument proves (3). For \(t\le\rho_1\), no solution with \(N\le t\) exists. SA 17575–17583 makes the actual class empty for \(t\le N_t=R_t\); it does not require a nonexistent operation there. Initial domain comparisons remain separately supplied. \(\square\)
+Equation (4) and rounding to powers of \(L\) imply \(R_u\le LR_t\). Therefore \(g(N_*)\ge0\); the integer argument proves (3). For \(t\le\rho_1\), no solution with \(N\le t\) exists: unit steps give \(\rho_{t-N+1}\ge\rho_1-(t-N)\), so \(g(N)\le t-1-\rho_1<0\). SA 17575–17583 makes the actual class empty for \(t\le N_t=R_t\); it does not require a nonexistent operation there. Initial domain comparisons remain separately supplied. \(\square\)
 
 **Lemma 2 (what enlarging the roster preserves).** Under S, complete formation carriers, supplied exceptional-index comparisons and compatible persistent records, every record of Definition 1 forms with ST1's margin. ST1 Lemmas 9′, 10, 11 and B4 then hold record by record. Their real-drift assertion retains the actual physical source and BOX identities.
 
@@ -259,7 +259,7 @@ This replaces the draft's unverified slowly varying row assignment by exactly fl
 \[
  \left|i^{-1}\dot D_s(c)D_s(c)^{-1}\right|\le C_{\rm path}.
 \]
-Require S, ST1 (15), its carrier/gauge readout, and regular uniqueness uniformly along that path. Then
+Require S, ST1 (15), its carrier/gauge readout, and regular uniqueness uniformly along that path, and \(R_\sharp\ge MR_t/4\) (ST1's LOC-decay condition, used for F6). Then
 \[
  h_j\le C_F C_{\rm path}S_4(a)e^{-aR_\sharp/2},
  \qquad a=\min(1,\theta_4/2),                             \tag{15}
@@ -284,7 +284,7 @@ By Theorem 1, \(R_\sharp\ge c_N\ell_t^r/4\). RUN and the finite increment bound 
 
 For curved data the same construction fails already at agreement: every output cycle product is identity, while a non-tree input edge can close a nontrivial plaquette. Retaining those edges and cutting off the remaining potentials requires one controlled gauge/patching construction on the whole cell collar. ST1 supplies small gauges on fixed carrier boxes, not that uniform extension. Tree holonomies can accumulate with path length; ordinary holomorphy of their products gives no uniform complex radius.
 
-A second route uses the background of a restricted system with a boundary current. For \(\Omega'_q=\Omega_q\cap X^\sharp\), any deeper member reaching the artificial boundary loses A1/P82's positive separation margin. SA 17578's quiet-cell statement does not establish the required margin for this cut. Eroding the members can restore separation but changes the determining map. SA's joined-sequence comparison at 9783–9789 and 9913 sketches a possible comparison using single-layer collars and a defect-of-lifts estimate. It does not supply the present same-system extension/path or its uniform holomorphic rule. Those precise hypotheses must be proved for the actual component.
+A second route uses the background of a restricted system with a boundary current. For \(\Omega'_q=\Omega_q\cap X^\sharp\), any deeper member reaching the artificial boundary loses A1/P82's positive separation margin. SA 17575's quiet-cell statement (box nest at SA 17577–17582) does not establish the required margin for this cut. Eroding the members can restore separation but changes the determining map. SA's joined-sequence comparison at 9783–9789 and 9913 sketches a possible comparison using single-layer collars and a defect-of-lifts estimate. It does not supply the present same-system extension/path or its uniform holomorphic rule. Those precise hypotheses must be proved for the actual component.
 
 A third route cuts off in a single gauge and interpolates its potential. Hm Lemma 3 does this on one small-potential box. It does not provide a small gauge over a cell-sized \(X^\sharp\), agreement on all datum rows, or control of the nonabelian commutator curvature throughout the interpolation. The derivative estimate controls a path **after** admission, so continuation using that estimate cannot assume admission at the next point without its own extension argument. No topological obstruction or universal nonexistence theorem for LOC-flat is claimed. These failures leave its extension and path clauses open.
 
@@ -307,7 +307,7 @@ The first curvature uses the explicitly assumed (58), not the words “older tes
 \]
 is holomorphic for \(\|B\|<r_{\mathsf R}\), real for real \(B\), and \(\|B^\sharp(B)\|\le C_{\mathsf R}\|B\|\). Its image and the original datum stay in their admitted continuation charts. Require real LOC uniformly on the **whole real slice of a fixed ball**, not only on the shrinking passing set. Finally supply the actual-coordinate bound \(\|B\|\le C_{\rm raw}r_1(i)\), with early \(C_{\rm raw}\) and the correct recorded index. Then ST-test\(^{\rm hol}\) holds with early \(r_{\rm hol},M_*\) and \(\|Y\|\le C_{\rm raw}r_1(i)\).
 
-*Proof.* On fixed smaller admitted raw charts, ST1 (15), its summable readout and AV give an early Lipschitz constant \(C_V\) for the reference rows and their relative logarithm. Choose \(r_{\rm hol}\) below \(r_{\mathsf R}/2\), \(\delta_B/[4(1+C_{\mathsf R})]\), and a fixed logarithm radius divided by \(4C_V(1+C_{\mathsf R})\). Real LOC makes the centre discrepancy smaller than a quarter of that logarithm radius after a coupling ceiling. Composition is then holomorphic on the ball and uniformly bounded; one may shrink the early ball to take \(M_*=1\). Reality and CV are preserved. For \(B=X+iY\), both Hermitian parts have norm at most \(\|B\|\); the actual-coordinate bound and a final ceiling give \(\|X\|<r_{\rm hol}/4\). The assumed full-real-slice LOC is exactly the hypothesis used by ST1 FC7's two-constants argument. \(\square\)
+*Proof.* On fixed smaller admitted raw charts, ST1 (15), its summable readout and AV give an early Lipschitz constant \(C_V\) for the reference rows and their relative logarithm. Choose \(r_{\rm hol}\) (after \(\delta_B\), ST1 row 4; ST1 lists \(r_{\rm hol}\) at row 2, but no cycle arises and both precede \(\kappa\)) below \(r_{\mathsf R}/2\), \(\delta_B/[4(1+C_{\mathsf R})]\), and a fixed logarithm radius divided by \(4C_V(1+C_{\mathsf R})\). Real LOC makes the centre discrepancy smaller than a quarter of that logarithm radius after a coupling ceiling. Composition is then holomorphic on the ball and uniformly bounded; one may shrink the early ball to take \(M_*=1\). Reality and CV are preserved. For \(B=X+iY\), both Hermitian parts have norm at most \(\|B\|\); the actual-coordinate bound and a final ceiling give \(\|X\|<r_{\rm hol}/4\). The assumed full-real-slice LOC is exactly the hypothesis used by ST1 FC7's two-constants argument. \(\square\)
 
 **Outstanding — quantitative localized charts.** LOC-flat's ordinary holomorphy does not prove Lemma 14's uniform ball, bounded image or full-real-slice LOC. The draft's choices \(r_{\rm hol}=\min(r_B,r_{\rm sol},r_u)/8\), \(M_*=1\) therefore do not follow. A small bound on real values gives no uniform complex bound: \(\epsilon\sin(Nz)\) already exhibits the missing control. Nor does a fluctuation test imply \(\|X\|<\delta'_j\) for the independent datum \(D_+\).
 
@@ -350,13 +350,13 @@ The definitions supplied or made explicit in this distillation are:
 
 All upstream line references use [revision 31a47c543775](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/tree/31a47c543775). The domains, frame, CH geometry, background-comparison programme and relative gauge form are credited to **Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text**. The background and walk methods imported through the library retain their credit to Tadeusz Bałaban and Jonathan Dimock.
 
-The [bounded source-check record](../checks/dom-pass2/source-checks.md) lists the outline and CA-I index entries and source excerpts checked, including CA-I 53773 and SA 17656, which the draft left unread. Y3's relative form and trace convention were checked at 31510–31542 and 3633–3647. CA-II and CA-III were fetched once for source completeness; no passage of either is quoted or used as an additional premise here or in the DOM draft. No whole upstream file was read. [Local identities](../checks/dom-pass2/local-sources.sha256) and [upstream identities](../checks/dom-pass2/upstream-sources.sha256) record revisions, not mathematical evidence. The arguments above use no computer-assisted discharge.
+Codex's source-check record for this pass was not kept (its lane checkout was reset). The pass-3 referee re-read every load-bearing SA and CA-I quotation itself, including CA-I 53765–53774 and SA R19 (6017–6026). Y3's relative form and trace convention were checked at 31510–31542 and 3633–3647.
 
 ## Result
 
 Theorem 1 proves RUN-low, including the eligible early-level preparation and \(N_t^0\le R_t-1\), under R19 with an arbitrary fixed finite \(\bar B\). On the proposed, coherently supplied roster, the text proves PR-lay D, the corrected \(\mathcal K^\flat\) matrix implication, record and substitution room, and the conditional counterterm-radius budget. It proves the conditional pivot estimate and LOC-decay from an admitted path, and supplies an exactly pure-gauge extension/path. The local LOC-form counterexample is exact in its stated class.
 
-Full DOM for the actual history is **Outstanding**. In particular, the curved LOC-flat extension and path, its quantitative complex chart, actual roster/local-fibre coverage and input membership, and BOX's straddling-loop/source identifications remain open. The original shallow-point claim also retains its full-carrier and actual-history qualifications. The imports are S and M in full, R19, all specified initial/unfinished and geometric comparisons, actual DR and CI on their whole domains, and, where invoked, FG/UM, PF, G-ID, F and the Amendment GS/contour matching inputs. Distilled DR and CI-form are not treated as refereed supply.
+Full DOM for the actual history is **Outstanding**. In particular, the curved LOC-flat extension and path, its quantitative complex chart, actual roster/local-fibre coverage and input membership, BOX's straddling-loop/source identifications, the choice of the actual ST-test passing factor and its fit with the rest of the history (see the pivot section), and LOC-flat clauses 2–3 for curved data (assumed by Theorem 13) remain open. The original shallow-point claim also retains its full-carrier and actual-history qualifications. The imports are S and M in full, R19, all specified initial/unfinished and geometric comparisons, actual DR and CI on their whole domains, and, where invoked, FG/UM, PF, G-ID, F and the Amendment GS/contour matching inputs. DR was frozen after this text's checkout; the DR quantities used here are unchanged in frozen [dr](dr.md). Distilled CI-form is not treated as refereed supply.
 
 The corrections made to the draft's arguments are:
 
@@ -383,3 +383,22 @@ The draft's proposed corrections to frozen consumers have these dispositions; **
 | geoh-draft's CA-I 53773 reading | The quoted upper bound is present. Theorem 1 now proves \(N_t^0\le R_t-1\) under the stated eligible-level hypotheses, beyond the draft's \(N_t^0\le t\). |
 
 This is research text, **not yet refereed**. It grants no scientific or audit status.
+
+## Change log (freeze, 2026-11-05)
+
+Refereed line by line by a fresh Claude session ([dom-gate](../gates/dom-gate.md)): first failing step at the proof of Theorem 7 (a recorded witness for each \(\mathcal B_I(Z)\) box was used, but Definition 1(2) did not list those boxes), repairable; 9 findings in all. Applied by the lead (Claude):
+
+1. Definition 1(2) lists the IMS boxes \(\mathcal B_I(Z)\), each with one real gauge over the whole box (the draft's R♮-c clause, dropped in distillation). Theorem 7's proof then holds, with formation from ST1 (60).
+2. Lemma 11 assumes \(R_\sharp\ge MR_t/4\).
+3. The order table: \(\bar B\) is fixed at IN1 row 2.
+4. \(r_{\rm hol}\)'s placement is noted; no cycle.
+5. Theorem 1: the one-line proof that no solution exists for \(t\le\rho_1\).
+6. SA 17575 / 17577–17582 citation.
+7. The missing source-check record is noted; DR is now frozen.
+8. The Result's Outstanding list adds the ST-test passing-factor fit and curved LOC-flat clauses 2–3.
+9. Theorem 1's clause \(R_j\le LR_{j+1}\) is cited to frozen geoh Lemma 1.
+
+Referee verdicts kept: Theorem 1 (RUN-low, \(N_t^0\le R_t-1\)) proved; Lemma 10 (local LOC-form counterexample) exact; Lemma 5 (R4 counterexample) correctly limited to full-carrier geometry; the \(\mathcal K^\flat\) replacement (Theorem 6) checks against hm Theorems 5, 7, 8 and descent Theorem 5; ceiling (14) compatible with cp12; all of Codex's verdicts on the draft's proposed edits to frozen texts are correct. Six Outstanding marks correctly placed.
+
+Status: **frozen.** RUN-low leaves item 5. Still open in item 5: actual roster and local coverage, complex input membership, curved LOC-flat with its quantitative chart, the ST-test passing-factor fit, BOX's straddling loops.
+

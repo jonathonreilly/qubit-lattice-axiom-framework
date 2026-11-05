@@ -1327,3 +1327,14 @@ port, not an audit, a proof of T0, or a grant of scientific status.
 No numerical calculation, enumeration, solver or other computer-assisted
 step was used as mathematical evidence. Only `library/port/p7-torus.md`
 was written in this checkout. **This text is not yet checked by another model.**
+
+## Change log (check, 2026-11-05)
+
+Ported by Codex. Checked line by line by a fresh Claude session ([p7-torus-gate](../../gates/p7-torus-gate.md)): statement byte-identical to CA-I 58187–58411; first failing step L1076–1077, removable, no conclusion changes; verdict faithful with repairs. Applied by the lead (Claude):
+
+1. **L1076–1077** (activities, item 3): the sentence that the prepared/stage factors from \([Z''_i\cap Y_b]_i\) "differ from one only in \(Y_b^\sharp\)" copies CA-I 59953, which assumes the round-up lies in \(Y_b\) (not shown; \(Y_b\) is only a union of \(M\)-cubes). Replace it by the radius fact: by lem-coupling-profile (e) and (P7.4), the factor reads only cells inside \([Y]_j^{+1}\subset X^{+1}\). Nothing depends on the removed sentence.
+2. **Errors in their text, confirmed:** C1 (CA-I 59018–59019 cites (H_j)(d) for translation invariance; (H_j)(d) at 58241–58267 has no covariance clause; the source is part (d) of prf-polarisation-limit); C2 (CA-I 60035–60037, 60041–60042 put level-\(i\) round-ups inside the unrounded \(\Lambda_j(\ell)^c\) or \(Y_b\), valid only for unions of level-\(j\) cells); C3 (step 5, CA-I 59279–59301, needs \(\Lambda_j(\ell)\) a union of cells, which their range lemma does not grant; routed through the completion clause).
+3. **Unprinted input:** the "lemma on pointed polarisation sums" cited for CMP 109 (5.10) at CA-I 58985–58987 has no statement or label in CA-I, CA-II or CA-III. It stays a named input (Hsum), and is really needed: the port's own rate \(\tfrac18\min\{\delta_0,\kappa/M\}\) is weaker than (5.10)'s \(\tfrac12\min\{\delta_0,\kappa/M\}\).
+4. F2 and most of F13 are their own arguments (CA-I 58010–58032), not filled steps. F16 uses the large-field \(\beta_j\) bound H5 (hypothesis (3) of prf-label-boundary).
+
+Status: **checked port.** Clause (0) hypothesis (h) is a checked port, on its named inputs.

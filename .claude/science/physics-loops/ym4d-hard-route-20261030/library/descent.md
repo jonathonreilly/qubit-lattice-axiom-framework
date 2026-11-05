@@ -62,7 +62,7 @@ The imports are:
 * **R:** hm §1's global real gap \(\mathsf A^{\rm abs}(P_0)\ge c_LI\), at real block-axial references of real bound \(<a_R\), uniformly over the admitted separated sequences. Its flat, curved-coefficient and separation premises remain imports.
 * **W:** hm §1's primitive inverse/walk package, including h-walk (I1)–(I3), Lemma U and h-walk-gate §§5–8's repairs. This includes uniform complex inverses on every cut-down; arbitrary scale-bounded multiplier coefficients; the all-scale absolute second-jet bound; bounded analytic one-step maps; two-difference cutoffs; branch powers, root counts and all zero-length multiplier reads. It excludes the rejected region-trace and reflection claims. Use h-walk's explicit fixed-region formulas, not an arbitrary expansion having the same sum.
 * **AV:** the actual means and averages on their common regular analytic branches, with local branch existence and uniform finite-stencil bounds on the admitted domains. The formulas are SA QC1–QC4, 7943–8001; the quantitative mean and one-step bounds are at 8002–8053 and 8108–8141. Iterated-domain admission and the bounds read by W remain imported.
-* **W-cov:** h-walk (I2)'s covariance of the straightened field/site rows and their derivatives, hence of the non-gauge terms and \(\mathsf C_V\), under every real gauge. This is the surviving covariance clause of h-walk-gate §§6–8, not full covariance of the absolute gauge Hessian.
+* **W-cov:** h-walk (I2)'s covariance of the straightened field/site rows and their derivatives, hence of the non-gauge terms under every real gauge; the covariance of \(\mathsf C_V\) follows directly from Lemma 1's equation (10). This is the surviving covariance clause of h-walk-gate §§6–8, not full covariance of the absolute gauge Hessian.
 * **PF:** use the operators at the complex pair itself, with the same intrinsic branches on overlaps, as in SA 10139 and 10163–10186 and pr-lay (6)–(8). The real splitting certifies the domain; it is not an extra matrix coefficient. Lemma 4 verifies this property through the explicit labelled construction.
 * **FG/UM:** hm's finite-dimensional Gaussian comparison and its declared potential, fixed-cutoff, finite-type and carrier-count hypotheses. For Theorem B's UM conclusion, these hold on the **whole R4 domain in use**, for the replacement family and its actual integrands. Retain IN1's other rate/count, insertion-smallness and failed-test conditions. They are not consequences of a matrix bound.
 * **G-ID(flat):** only for Theorem A, the flat precision is the \(C^2\) fibre Hessian of the gauge-invariant critical action plus CF2, in canonical Gaussian normalization. **G-ID:** only for physical identification in Theorem B, the admitted complete axial physical precision is the Gaussian precision of the step. These are the identifications sketched at SA 10208 and 14108–14120. They are distinct from TP1's Gaussian-energy identification.
@@ -76,9 +76,9 @@ The imports are:
  C_\tau&=4/c_L+K_0+1,\qquad H_p(M)=L^3.
  \end{split}                                                     \tag{5}
 \]
-Fix FG constants \(A=A_{K_0},\varepsilon_0,\rho_0\), \(c_m=12\), the UM density constant \(P_d\ge1\), \(D_0=Ac_mL^4\), and
+Fix FG constants \(A=A_{K_0},\varepsilon_0,\zeta_0\), \(c_m=12\), the UM density constant \(P_d\ge1\), \(D_0=Ac_mL^4\), and
 \[
- W_0=\min\{[3P_dL^4(1+Ac_m)]^{-1},\rho_0/(2P_d)\}.                \tag{6}
+ W_0=\min\{[3P_dL^4(1+Ac_m)]^{-1},\zeta_0/(2P_d)\}.                \tag{6}
 \]
 **Every constant through (6) precedes \(\kappa\), independently of \(M,\bar\kappa\).** Then choose \(\kappa\) and the other IN1 rates, \(\bar\kappa>\log2\), and \(M\) above hm (23)'s geometric, rate and collar floors. Finally choose radii and \(\tau\) satisfying
 \[
@@ -89,7 +89,7 @@ For the UM conclusion also impose
 \[
  \begin{gathered}
  \varepsilon_* =\min\{\varepsilon_0,(3D_0M^4)^{-1}\},\quad
- \gamma_{\rm tilt}=\min\{2/(3D_0M^4),\rho_0\},\\
+ \gamma_{\rm tilt}=\min\{2/(3D_0M^4),\zeta_0\},\\
  H_0e^{32\bar\kappa-dM}\le\varepsilon_*/2,\qquad
  H_0L^3(a_0+a_1+j_0)+C_\tau|\tau-1|\le\varepsilon_*/2.
  \end{gathered}                                                     \tag{8}
@@ -240,7 +240,7 @@ FG gives the normalized density with covariance (16). Its positive-reference bra
 
 Only G-ID identifies this algebraic Gaussian with the physical step. At the axial physical locus SA 11239–11247 gives zero absolute gauge gradient, and Lemma 2 gives equality of the two Hessians there.
 
-Finally FG6/FG12 and \(\rho=P_dW_0M^{-4}\) give UM6. Equations (6), (8) imply \(\rho+\gamma_{\rm tilt}/2\le\rho_0\) and
+Finally FG6/FG12 and \(\zeta=P_dW_0M^{-4}\) give UM6. Equations (6), (8) imply \(\zeta+\gamma_{\rm tilt}/2\le\zeta_0\) and
 \[
  C_0^{\rm UM}=P_dL^4W_0(1+Ac_m)
                +D_0M^4(\varepsilon+\gamma_{\rm tilt}/2)
@@ -283,6 +283,18 @@ Use common analytic determinant branches near the positive references.
 *Proof.* Divide the densities \( (2\pi)^{-m/2}(\det A)^{1/2}e^{-b^{\mathsf T}Ab/2}\). Their ratio gives (18). For unnormalized Gaussian weights the determinant term is instead accounted for in the vacuum normalization. On \(\mathcal K\), the full-precision difference has finite stencil and entries \(O(r_Y)\): it is bounded holomorphic on hm Lemma 2's line disc and vanishes at its real axial centre, so Schwarz gives this estimate. A cube contribution to the quadratic term is bounded by \(C r_Y\sum|b|^2=C r_YM^4(M^{-4}\sum|b|^2)\). For a localized **marginal**, however, the precisions in (18) are \(D_{\rm abs}^{-1},D_{\rm Y}^{-1}\); finite stencil of the full-precision difference does not prove locality of this correction or of its determinant. ∎
 
 **Outstanding — actual formation and admission.** Theorem B constructs the Y-form family on R4 with the specified ceilings. An application must use these carriers and supply its potentials, normalization and bounds there. Lemma 7 does not establish that every existing NL1/LF1 formation can be switched while retaining UM1 or the required local vacuum assignment. Nor does this note put every ST1 chain domain inside this R4 domain. These are the actual-family and CI obligations in hm 371–373, nl1-L Theorem 7, st1-r2 §1 and st1-draft3 §4.3, retained also in st1-r4's CI. G-ID and AV/W's branch and operator inputs remain imports. Real R5–R6 covariance would require the continued background's compatible gauge action; it is neither needed nor proved here.
+
+## Change log (pass 3 fixes, lead, 2026-11-05)
+
+Applied the findings of `gates/descent-gate.md` (Claude fresh session, first failing step none):
+1. The source-check record linked at line 5 is not in this clone; the referee read every cited line directly.
+2. hm's tilt constants are written zeta_0, zeta again (they had been renamed rho_0, rho, which clashes with pr-lay's layer separation rho = R_1 M_1).
+3. Correction 8's support, stated exactly: SA 11229-11231 defines the gauge Hessian as that of "the actual function D -> GF(e^{iD}V)", and SA 7182's GF is absolute, so the absolute form is SA's literal off-axial reading there, and the flip triple P^w meets SA's regular-pair conditions (10129-10137). A defect is still not established: SA 11245-11247 leaves the choice to "the model being considered", SA 11239-11240 chooses the step's V block axial, R5-R6 for P^w are unchecked, and SA 7181's indicator 1{|V(y,x) - 1| < eps_k} puts the central flip outside the support of SA's gauge-fixing factor.
+4. Covariance of C_V is cited to Lemma 1's (10), not to h-walk (I2).
+5. W(0)^{-1} is bounded because det W(0) = 1, so the inverse is the adjugate (not by Cauchy's formula).
+Referee's addition: the absolute gauge gradient vanishes at P^w, so Theorem A also holds for the completed form (pr-lay (9), SA PX104). The canonical representative is Lemma 1 (not Lemma 2).
+
+**Status: frozen**, as a conditional theorem. Outstanding, named: local formation and vacuum bounds. Reopens only on a `wrong` signal or when an import it reads changes.
 
 ## Result
 

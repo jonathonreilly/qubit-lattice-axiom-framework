@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/two_layer_cube_tick_has_exact_so4_and_no_corner_su4_2026_10_22.py
+runner_sha256: 039450a4956a0f6c497b5047231b23b7c68a7ceed3d7cfc524f532c99eee5df2
+input_fingerprint_sha256: 17a4c1e8ea071b5684e01b123430613122f656db278b9e1859a29208762f8946
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 7.27
+status: ok
+----- stdout -----
+A. supplied tick: Z^3, two tilings by 2x2x2 cubes offset (1,1,1), face phase -1, eps=0.37, mu=0, no copy mass
+PASS: A1 phases multiply to -1 around every unit face (all 24 face classes of the period-2 lattice)
+PASS: A2 even and odd cube hops are reflections, R^2 = 1 (Bloch form, generic K)  [2.2e-16]
+PASS: A3 one-layer tick U(K) unitary
+PASS: A4 U(0) = 1 (all 8 bands light at K = 0); at K = R = pi(1,1,1) all 8 at |w| = 2 eps
+PASS: A5 generic K: two quasi-energies +-w(K), each 4-fold  [[4, 4]]
+B. exact K-independent cell-local commutant
+   single-K commutant dims, one layer (generic, K=0, K=R): [32, 64, 32]; two layers: [128, 256, 128]
+PASS: B1 a single momentum fixes nothing: dims 32 / 64 / 32 are band degeneracies (U(0) = 1)
+   one-layer intersection dims for nK = 1,2,3,4,5,6,10: [32, 16, 8, 4, 2, 1, 1]
+PASS: B2 one layer: K-independent commutant = scalars (dim 1); corner parity eps is NOT in it
+PASS: B3 two layers: number-conserving commutant = 1_8 x M_2(C) (dim 4, layer U(2))  [dim 4]
+PASS: B4 pairing commutant: none for one layer; exactly one for two layers, Delta = eps x i sigma_y (staggered on-site layer-singlet pair)
+PASS: B5 all 6 BdG generators commute with the Nambu tick at 5 fresh K  [5.3e-16]
+   exact algebra: dim 6, centre 0, derived 6, rank 2, simple ideals [3, 3] -> su(2)+su(2)
+PASS: B6 exact internal Lie algebra = su(2)_layer + su(2)_pair = so(4) (dim 6, rank 2, no centre); fermion number is the Cartan of su(2)_pair
+PASS: B7 no su(4) inside: dim 6 < 15 and every simple ideal is su(2)
+PASS: B8 one site (two modes, 4 states): odd sector = layer doublet, even sector = pair doublet, i.e. (2,1)+(1,2) of so(4); site parity grades the two spinors
+C. corner-label operators X x 1_layer, exact and at the Dirac point
+PASS: C1 exact: the only corner-label operator commuting with the tick is X = 1 (no su(n), n >= 2, on corners)
+PASS: C2 Taylor coefficients of U at K = 0 match finite differences  [9.7e-14]
+   one layer, Dirac (first) order: dim 8 -> su(2)+su(2)+u(1)+u(1); second order: dim 1
+PASS: C3 first order at K = 0, one layer: corner algebra = chiral copy u(2)+u(2) (dim 8); largest simple factor su(2), so no su(4) on corners even emergently
+PASS: C4 second order breaks it to the exact scalars (dim 1)
+PASS: C5 first-order centre = span{1, Gamma}, Gamma a traceless involution (emergent chirality); Gamma is not a corner-label diagonal (corner parity eps does not commute with the Dirac terms)
+   two layers, Dirac order: dim 32 -> su(4)+su(4)+u(1)+u(1) (acts on copy x layer)
+PASS: C6 two layers, first order: u(4)+u(4) (dim 32) on copy x layer; this su(4) is emergent and needs the layer bit, not the three axes
+PASS: C7 two layers, second order: back to the exact layer M_2 (dim 4)
+C8-. lattice rotations about an even-cube centre (with site gauge and possible K shift)
+PASS: C8 C4z is a symmetry with a cell-periodic site gauge, K -> gK + [0, 0, 0] pi
+PASS: C8 C3 is a symmetry with a cell-periodic site gauge, K -> gK + [0, 0, 0] pi
+PASS: C9 rotations fix K = 0, so they act on the light corner states there
+   Dirac-order algebra commuting with C4z, C3: one layer dim 2, two layers dim 8 -> su(2)+su(2)+u(1)+u(1)
+PASS: C10 rotations act on the copy factor: one layer keeps only span{1, Gamma} (dim 2); two layers keep u(2)+u(2) = layer x {1, Gamma} (dim 8): no su(4) commutes with tick and rotations
+D. other hop-phase choices with product -1 on every face; controls
+PASS: D1 all 6 axis orders x random cell-periodic site gauges: (1, 4, 1) = scalars, layer U(2), one pairing  [(1, 4, 1)]
+PASS: D2 uniform complex phases e^{iq_i} (face product still -1): layer U(2) kept; the pair is conserved at total cell momentum 4q (a site-gauge image), so the algebra is still so(4)  [5.6e-16]
+PASS: D3 control, copy-free mass angle mu = 0.2: (1, 4, pairings 1)
+PASS: D4 control, face product +1 (R not a reflection): (1, 4, 1); no su(4) either
+PASS: D5 step eps = 0.11: same (4 number-conserving, 1 pairing)
+PASS: D5 step eps = 1.2: same (4 number-conserving, 1 pairing)
+   step pi/2 (U = R_o R_e): one layer dim 2, two layers 8 + 2 pairings -> su(2)+su(2)+su(2)+su(2)
+PASS: D6 only at the special step eps = pi/2 does corner parity eps join (one layer span{1, eps}, as in the block-tick note); still no su(4) and the corner algebra is abelian
+E. N identical layers (N modes per site): the internal algebra comes from the layer count, not the corners
+   N = 1: number-conserving 1, pairings 0, algebra dim 1 -> u(1)
+   N = 3: number-conserving 9, pairings 3, algebra dim 15 -> su(4)
+PASS: E1 N = 1: u(1); N = 2: so(4) (B6); N = 3: 1_8 x M_3 plus eps x (antisym 3x3) = so(6) = su(4), simple, dim 15: an exact su(4) appears only by supplying three layers, acting on the layer index
+VERDICT: exact internal algebra of the free two-layer tick = so(4) = su(2)_layer + su(2)_pair; no su(4) on corner labels (exact or at the Dirac point); Ruleset C as stated (C1+C2) is dead; an exact su(4) needs N = 3 layers (so(2N)), i.e. a supplied count.
+
+TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

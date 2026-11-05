@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/qubit_cell_complex_emergent_gauge_fields_select_no_matter_multiplet_2026_10_22.py
+runner_sha256: f25570217538df7d2e24a8601f91ee0fa98ae34c631303d72d7242968bc245c3
+input_fingerprint_sha256: a487d2ee3b84d7c201e1f89c5e2c86d3867eb9ca8b30da4abe2d61b120babb08
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.32
+status: ok
+----- stdout -----
+== A. rung-2 cell complex of Z^3 and the nearest-neighbour toric-code rule
+[PASS] A1 [T] a 2^3 block of qubit sites splits by number of odd coordinates into 1 vertex, 3 edge, 3 face, 1 cube site: one qubit per site hosts a full cell complex at rung 2 | counts [1, 3, 3, 1]
+[PASS] A2 [T] star = X on the 6 nearest neighbours of a vertex site, plaquette = Z on the 4 edge-site nearest neighbours of a face site; all terms commute (no gauge group written in) | supports all at fine distance 1: True; commute: True
+[PASS] A3 [T] torus code dimension log2 = 3 = b1(T^3) at coarse L = 3, 4: topological (deconfined Z2) order | log2 dim {3: 3, 4: 3}
+[PASS] A4 [T] Z on an edge site makes a pair of point charges, X makes a flux loop through 4 face sites; the charge hops commute, Levin-Wen T-junction +1: the emergent charge is a BOSON | stars flipped 2, plaquettes flipped 4, T-junction +1
+== B. BKSF twist on the same edge sites: fermionic charges, at a price
+[PASS] B1 [T] edge operators A_e anticommute iff they share a vertex (the fermion-hopping algebra), B_v flips only at endpoints, loop products S_p commute with every A_e and B_v | L=4, edges 192, log2 dim of <B,S> (GF(2)) 3
+[PASS] B2 [T] T-junction -1: the point charge is a FERMION (cf. main BKSF note); but the fermion rule's terms are not nearest-neighbour stars (fine-lattice diameter > 2) and need a direction ordering | T-junction -1; support diameters A_e 4, S_p 6 (toric stars: 2)
+[PASS] B3 [T] the toric rule is invariant under all 24 cube rotations; the BKSF fermion rule is not (a lopsided choice; main: no BKSF code is O-invariant, a covariant fermion code needs 3 qubits per site) | rotations preserving the code: toric 24/24, BKSF 6/24 (coarse L=3)
+== C. spin-1/2 ice on edge sites: emergent U(1) (Gauss at vertex sites, ring at face sites)
+[PASS] C1 [T] ring flips at face sites keep every vertex-site divergence (Gauss law) exactly; the ice manifold is a U(1) constraint built from one qubit per edge site | max |div| before 0, after 94446 flips 0
+[PASS] C2 [D] RK-point (equal-weight ice) correlations of E_x: zero for q along x (exact, divergence-free), finite transverse, and S(1,1,0)/S(0,1,0) near the transverse projector value 1/2: Coulomb (dipolar) form | S_xx(q) x:7.3e-33 y:1.467 z:1.462 xy:0.741; ratio 0.505; samples 200
+[PASS] C3 [T] Gaussian (Coulomb-phase) reading H = U/2 E^2 + K/2 (curl A)^2: per k one pure-gauge zero and TWO transverse modes, omega^2 = UK sum 4 sin^2(k/2) -> linear: 2 photon polarisations | omega/(sqrt(UK)|k|) at small k 0.99990
+== D. emergent fermions hop locally on Z^3: Weyl charges cancel (Nielsen-Ninomiya)
+[PASS] D1 [T] a seeded random local two-band hop on Z^3 has Weyl nodes (slice Chern number jumps) whose charges sum to zero: emergent lattice fermions with a local hop come in L/R pairs | C(kz) values [0, 1], node charges [1, -1]
+== E. which protected anomaly-free multiplets can emergent fermions form?
+[PASS] E1 [T] emergent fermions are string ends, so fermion parity is an element of the emergent gauge group; the smallest cyclic group forbidding every Majorana mass of odd-charge Weyl fermions is Z4 | Z_n (n even, charge 1) forbidding psi psi: [4, 6, 8]...
+[PASS] E2 [T+C] SU(2) spin j (half-integer): no symmetric invariant, so G alone forbids masses; Witten (j=2r+1/2) and the new SU(2) anomaly (j=4r+3/2, cited WWW, applies since fermion parity is the centre) remove j=1/2,3/2,5/2: the SMALLEST consistent protected irreducible multiplet is j=7/2, 8 Weyl, not 16 | 2j:dim 1:2W 3:4N 5:6W 7:8 9:10W 11:12N 13:14W 15:16
+[PASS] E3 [T] Spin(10) 16 built from 5 modes (a 5-site cluster, composite): no invariant bilinear (masses forbidden), cubic anomaly 0, central element exp(i pi Q) acts as i on the 16 (the Z4); SU(16) fundamental is anomalous | invariant forms 0, max|d_abc| 0.0e+00, centre^2 = -1-0j, Tr T^3 SU(16) -3360
+[PASS] E4 [C] cited classification: simple groups with a 16-dim irrep are SU(2) j=15/2 (pseudoreal), Sp(4) (pseudoreal), Spin(9) (real), SO(16) (real), Sp(16) (pseudoreal), SU(16) (complex, anomalous), Spin(10) (complex, anomaly-free): Spin(10) is the only complex anomaly-free one, but 'complex' and 'dim 16' are selector choices
+[PASS] E5 [E+C] measured content: X = 5(B-L) - 4Y is 1 mod 4 on all 16 Weyl of a family incl. nu^c, so the measured family is a Z4-protected multiplet with nu = 16 = 0 mod 16 (Spin-Z4 bordism Z16, cited); without nu^c nu = 15 is anomalous: Z4 protection REQUIRES nu^c | X charges {'Q': 1, 'u^c': 1, 'd^c': -3, 'L': -3, 'e^c': 1, 'nu^c': 5}; sum Y^3 2e-16, sum Y 0e+00
+elapsed_seconds 2.1
+supplied: the cell-complex role assignment, the star/plaquette/ice energy functions, the BKSF ordering, the RK equal-weight ensemble, the Gaussian reading, the random two-band hop; [E] uses measured charges.
+cited: Kitaev toric code; Bravyi-Kitaev 2002; Levin-Wen PRB 67 245316 (2003); Wen PRD 68 065003 (2003); Hermele-Balents-Fisher PRB 69 064404; Chandrasekharan-Wiese 1997; Nielsen-Ninomiya; Witten 1982; Wang-Wen-Witten 1810.00844; Garcia-Etxebarria-Montero 1808.00009; Wang-Wen 1809.11171; main BKSF and Majorana-per-direction notes (2026-10-17), spin-half cubic ice RK note (2026-09-03), SU(N) link 2N-state note.
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

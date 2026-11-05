@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/five_modes_per_site_are_the_smallest_anomaly_free_protected_spin2n_content_2026_10_22.py
+runner_sha256: 8d136f62c5115d22a909d8dd3880d317ec17dd49b46c11aa484c004f49b66b59
+input_fingerprint_sha256: cb0cdf36ce3dab9aaabc11071d393b3987d8b05372c3a1f727220d45f7b5842b
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 1.86
+status: ok
+----- stdout -----
+== A-D: half-spinor S+ of Spin(2N) for N = 1..7 ==
+PASS: ABCD1 N=1: S+ dim 1 irr; selfconj=False; cubic0=False lin0=False  coeffs {(0, 0, 0): -1}; bilinears sym=0 anti=0 -> mass forbidden
+PASS: ABCD2 N=2: S+ dim 2 irr; selfconj=True; cubic0=True lin0=True ; bilinears sym=0 anti=1 -> mass forbidden
+PASS: ABCD3 N=3: S+ dim 4 irr; selfconj=False; cubic0=False lin0=True  coeffs {(0, 1, 2): -4}; bilinears sym=0 anti=0 -> mass forbidden
+PASS: ABCD4 N=4: S+ dim 8 irr; selfconj=True; cubic0=True lin0=True ; bilinears sym=1 anti=0 -> mass ALLOWED
+PASS: ABCD5 N=5: S+ dim 16 irr; selfconj=False; cubic0=True lin0=True ; bilinears sym=0 anti=0 -> mass forbidden
+PASS: ABCD6 N=6: S+ dim 32 irr; selfconj=True; cubic0=True lin0=True ; bilinears sym=0 anti=1 -> mass forbidden
+PASS: ABCD7 N=7: S+ dim 64 irr; selfconj=False; cubic0=True lin0=True ; bilinears sym=0 anti=0 -> mass forbidden
+== Weights-only N = 8, 9 (cubic form of S+) ==
+PASS: C8 N=8: cubic and linear forms vanish; self-conjugate = True
+PASS: C9 N=9: cubic and linear forms vanish; self-conjugate = False
+== E: old SU(2) (Witten) index 2 Tr J3^2 mod 2 ==
+PASS: E2 N=2: Spin(4)_L, Spin(4)_R, Spin(3)_vec indices [1, 0, 1] -> Witten ANOMALOUS
+PASS: E3 N=3: Spin(4)_L, Spin(4)_R, Spin(3)_vec indices [1, 1, 2] -> Witten ANOMALOUS (from cubic)
+PASS: E4 N=4: Spin(4)_L, Spin(4)_R, Spin(3)_vec indices [2, 2, 4] -> Witten even
+PASS: E5 N=5: Spin(4)_L, Spin(4)_R, Spin(3)_vec indices [4, 4, 8] -> Witten even
+PASS: E6 N=6: Spin(4)_L, Spin(4)_R, Spin(3)_vec indices [8, 8, 16] -> Witten even
+PASS: E7 N=7: Spin(4)_L, Spin(4)_R, Spin(3)_vec indices [16, 16, 32] -> Witten even
+== F: centre Z4 and Spin-Z4 (Z16) count, N odd ==
+PASS: F1 N=1: z on S+ = 0-1j x 1_1 (z^2 = -1), |nu| = 1 = 1 mod 16
+PASS: F3 N=3: z on S+ = -0+1j x 1_4 (z^2 = -1), |nu| = 4 = 4 mod 16
+PASS: F5 N=5: z on S+ = 0-1j x 1_16 (z^2 = -1), |nu| = 16 = 0 mod 16
+PASS: F7 N=7: z on S+ = -0+1j x 1_64 (z^2 = -1), |nu| = 64 = 0 mod 16
+PASS: F5b N=5: dropping the SU(5)-singlet state (nu^c) leaves nu = 15 mod 16 != 0
+== G: selection table (full Spin(2N) frame group) ==
+  N=1: chiral=True  pert-free=False Witten-free=True  Z16-free=False protected=True  -> fail
+  N=2: chiral=False pert-free=True  Witten-free=False Z16-free=True  protected=True  -> fail
+  N=3: chiral=True  pert-free=False Witten-free=False Z16-free=False protected=True  -> fail
+  N=4: chiral=False pert-free=True  Witten-free=True  Z16-free=True  protected=False -> fail
+  N=5: chiral=True  pert-free=True  Witten-free=True  Z16-free=True  protected=True  -> PASS
+  N=6: chiral=False pert-free=True  Witten-free=True  Z16-free=True  protected=True  -> PASS
+  N=7: chiral=True  pert-free=True  Witten-free=True  Z16-free=True  protected=True  -> PASS
+PASS: G1 smallest N passing (ii)-(iv) WITHOUT using (i) = 5; passing set <= 7: [5, 6, 7]
+PASS: G2 chirality (i) is an OUTPUT at the minimum: N=5 is chiral; N=6 (pseudoreal 32) needs (i) to drop
+== H: subgroup loophole catalogue, N = 1..4 ==
+PASS: H1 tori on 4 Weyl (N=3): sum q = 0 => sum q^3 = -3*(q1 + q2)*(q1 + q3)*(q2 + q3); anomaly-free => pairs cancel => vectorlike
+PASS: H2 tori: 1 Weyl q^3=0 -> q=[0] (massable); 2 Weyl q1+q2=0 -> q2=[-q1] (vectorlike)
+  N=3 Spin(5)=Sp(4) [Maj 0-4]: invariant bilinears sym=0 antisym=1
+PASS: H3 N=3 Sp(4): pseudoreal (antisym 1), Witten indices [1, 1] odd -> ANOMALOUS
+  N=3 Spin(3)xSpin(3) [Maj 012|345]: invariant bilinears sym=1 antisym=0
+PASS: H4 N=3 SO(4)~(2,2): real (sym 1) -> mass ALLOWED
+PASS: H5 N=3 principal SU(2) (j=3/2) inside su(4): Witten index 10 even, bilinears sym=0 antisym=1: protected, old-anomaly-free -> LOOPHOLE unless WWW new anomaly (cited)
+PASS: H6 N=4: S+ = 8s real; every subgroup keeps the symmetric invariant -> mass allowed for all G
+== Z: zoom diagnostic (odd O_h clusters of one-mode sites) ==
+PASS: Z1 O_h orbit sizes: site-centred [1, 6, 8, 12, 24], other centres all even -> odd clusters = 1 + even; 5 unreachable, smallest odd >= 5 is 7 (site + 6 neighbours)
+PASS: Z2 N=7 under Spin(10)xSpin(4): 64 = (16,(2,1)) + (16bar,(1,2)) [vectorlike under Spin(10)]
+== W: owner test - five modes from a cluster of one-mode sites ==
+PASS: W1 5-clusters in a 3^3 box (14950): largest cluster stabiliser 24/48 (site + 4 body diagonals = one tetrahedron, T_d), so none is O_h-covariant (Z1)
+  tetrahedral (site+4 alt. diagonals): cluster stab 24/48, tiles Z^3 by 6 index-5 lattices, best tiling stab 4/48
+  site+3 forward+diagonal: cluster stab 6/48, tiles Z^3 by 0 index-5 lattices, best tiling stab 0/48
+  site+4 in-plane (plus): cluster stab 16/48, tiles Z^3 by 10 index-5 lattices, best tiling stab 8/48
+  cube 5 of 8 (complement = 3 around a corner): cluster stab 6/48, tiles Z^3 by 0 index-5 lattices, best tiling stab 0/48
+PASS: W2 best covariance of ANY 5-site tiling = 8/48 point operations (lopsided by 2.6 bits)
+PASS: W3 the 7-star (stab 48) tiles Z^3 (8 perfect-code lattices) but the tiling keeps at most 6/48
+PASS: W4 fully O_h-covariant tiling blocks of size <= 30: [8, 16, 27]; odd: 27 = 3^3 only; 8, 16 fail (N = 0 mod 4: real), so smallest covariant PASSING block = 27
+PASS: W5 Spin(10)-invariant couplings between two clusters' Majorana 10-vectors: dim 1 (identity only) -> mode-diagonal hops along l in L; NN on 3 axes => L = Z^3 => N = 1
+PASS: W6 two distinct sites share <= 2 neighbours, so no K(5,5) of NN bonds: a gauge-covariant NN inter-cluster hop cannot exist either
+PASS: W7 inter-cluster pairing S+ x S+: 0 invariants (D5); S+ x S-: 1 -> protection needs the SAME parity half on every cluster, else a Dirac mass
+VERDICT: full Spin(2N) on S+: smallest anomaly-free protected N = 5 (chirality is an output);
+  loopholes: j=3/2 SU(2) at N=3 (cited WWW), finite groups at N=1,2. Clusters of one-mode sites:
+  no covariant 5-tiling, no NN dynamics with exact Spin(10); 5 = per-site multiplicity (bends Qubit).
+
+TOTAL: PASS=37 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/spin10_mott_sites_carry_no_composite_sixteen_the_centre_fixes_every_fermion_to_the_vector_class_2026_10_22.py
+runner_sha256: f4fe16b672f9f17ed59cef57c0e4d1b224d5c894d4b09e7fb03a2585f271b302
+input_fingerprint_sha256: 8b27fd030e88898285b342962c80baa085eb25542370bb3981d42575658f66ad
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.74
+status: ok
+----- stdout -----
+== A. one five-mode site (32 states) ==
+PASS A1 site Casimir = 45/4 on all 32 Fock states
+PASS A2 Spin(10) commutant on site Fock = span{1,(-1)^F} dim=2
+PASS A3 even half = 1+10+5 (contains vacuum), odd half = 5+10+1 (U(5) levels) even=[1, 10, 5] odd=[5, 10, 1]
+   => an invariant site H is a + b(-1)^F: the vacuum is the SU(5)-singlet member of a
+      degenerate 16, never a Spin(10) singlet; the odd level is the 16bar (Casimir 45/4).
+PASS A4 -1 in Spin(10) = exp(2 pi i M_01) = -1 on a single site
+== B. two sites (1024 states): invariant hop and the centre ==
+PASS B1 K = i sum_a g_a^s g_a^t commutes with all 45 generators
+PASS B2 Casimir identity C = 45n/4 + sum_{s<t}(10 - K_st^2)/4
+PASS B3 -1 in Spin(10) acts as the c-number (-1)^n_sites (= +1 for n=2)
+   => relative to ANY vacuum, every excitation is a true SO(10) rep (tensor class);
+      odd-parity ones lie in the vector class (10,120,126,...), never a spinor 16.
+PASS B4 defect hop on 16x16bar: |K| = 10,6,2 with multiplicities 2x(1,45,210) {np.float64(2.0): np.int64(420), np.float64(6.0): np.int64(90), np.float64(10.0): np.int64(2)}
+PASS B5 exchange on 16x16 via K^2 = 64,16,0 on 10,120,126 (2nd order -K^2 t^2/(8U)) {np.float64(-0.0): np.int64(126), np.float64(16.0): np.int64(120), np.float64(64.0): np.int64(10)}
+== C. two sites, U=1, t=0.1: relative content ==
+PASS C1 n=2 lowest even state = 10 (exchange picks the vector), E ~ -8t^2/U E=-0.07703 C=9.000
+PASS C2 n=2 lowest odd state = singlet of 16x16bar, E = U - 5t (first order) E=0.50000 C=-0.000
+   relative rep (odd/even) lies in 10 x 1 = 10: vector class, as B3 requires
+== D. three-site open chain (odd cluster): absolute spinor content ==
+   n=3 even(N=10): dim=243 E0=-0.12800 Casimir=11.2500 (16) resid=2.3e-13
+   n=3 odd(N=9): dim=243 E0=0.42067 Casimir=11.2500 (16) resid=1.1e-13
+PASS D1 n=3 states carry spinor-class Casimirs (n odd => total weights half-integer)
+PASS D2 n=3 cluster ground state is a single spinor multiplet (resid < 1e-8) 16
+   => a spinor needs an ODD number of sites: a moving 16 relative to a fixed-site
+      vacuum would change the site count; centre z = (-1)^F (-i)^n_sites (B3).
+== E. four-site ring: Mott vacuum, fermionic excitation, band ==
+   t=0.05: dims even=7776 odd=5184; E0=-0.063167 (gap to next 1.37e-02) vacuum Casimir=0.0000 (1)
+     odd band E(k)-U, k=0,pi/2,pi,3pi/2: -0.29432[126] -0.32176[120] -0.29432[126] -0.32665[10]
+PASS E0 ring H commutes with the fermionic translation
+   t=0.1: dims even=7776 odd=5184; E0=-0.234789 (gap to next 4.29e-02) vacuum Casimir=0.0000 (1)
+     odd band E(k)-U, k=0,pi/2,pi,3pi/2: -0.61111[120] -0.68330[120] -0.61111[120] -0.69592[10]
+PASS E1 4-ring vacuum is a Spin(10) singlet (exchange-selected Mott state) C=1.04e-16
+PASS E2 every odd band state is vector-class (integer Casimir), none is 45/4
+PASS E3 defect moves at FIRST order: exact projected hop coefficient = fitted slope (k=1) a1 exact=-6.0000 fit=-6.1068 (E-U ~ a1 t, not t^k/U^(k-1))
+   flux 0  lowest odd: -0.6959[10]Z=0.000 -0.6833[120]Z=0.000 -0.6833[120]Z=0.000 -0.6802[126]Z=0.000 -0.6802[126]Z=0.000 -0.6494[10]Z=0.035
+   flux pi lowest odd: -0.8275[10]Z=0.483 -0.8275[10]Z=0.483 -0.6621[120]Z=0.000 -0.6328[10]Z=0.012 -0.6311[120]Z=0.000 -0.6118[C=27.0000]Z=0.000
+PASS E4 selection: c^dag on the singlet reaches only 10 states (Z=0 on 120/126 exactly)
+PASS E5 flux-0 ring: lowest fermion is a 10 with ZERO elementary residue (a composite 10) Z=1.3e-27
+PASS E6 flux-pi ring: lowest fermion is the elementary-reached 10 (Z = O(1)) Z=0.483
+   => composite fermions (zero-residue 10, 120, 126) do propagate, but all are vector-
+      class tensors, like c_a itself; none is a 16 (B3 forbids it at any coupling).
+== F. no-go statement (exact) ==
+PASS F1 n=4: -1 in Spin(10) = +1 on vacuum AND fermion sectors (no relative spinor)
+elapsed 2.2 s
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

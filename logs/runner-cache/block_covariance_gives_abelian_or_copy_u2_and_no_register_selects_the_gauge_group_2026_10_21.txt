@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/block_covariance_gives_abelian_or_copy_u2_and_no_register_selects_the_gauge_group_2026_10_21.py
+runner_sha256: a94281b023b93dda15ef03386a90cac6a2995f10326d73899f6d9caf6166abef
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.99
+status: ok
+----- stdout -----
+== A. one-body covariance on the 8-corner block (24 rotations about its centre)
+[PASS] A1 plain corner permutations: multiplicity-free summands of dims 1,1,3,3 (A1+A2+T1+T2); commutant dim 4 and abelian -> U(1)^4  summand dims [1, 1, 3, 3], max [X,Y] = 4e-16
+[PASS] A2 spin-3/2 twist: each rotation sends xi_a to a unit phase times xi_Ra; the CL-3 coin W0 is covariant  phase-modulus err 8e-16, ||V W0 V^+ - W0|| <= 6e-15
+[PASS] A3 twisted: |chi| = 8 at identity, 2 on the 8 body-diagonal turns, 0 elsewhere -> 8 = 2 x (spin 3/2); commutant = M_2(C) (dim 4, non-commutative, 1-dim centre): a forced copy U(2)  |chi| values [0.0, 2.0, 8.0], max [X,Y] = 0.71, centre dim 1, D E = E V err 3e-15
+[PASS] A4 one covariant operator per corner distance 0,1,2,3 (identity, edge hop, face diagonal, body diagonal); W0 lies in the copy algebra with eigenvalues +-1 x 4 (W0 = n.sigma x 1_4)  dims by distance [1, 1, 1, 1]
+[PASS] A5 covariant site-diagonal block operators = scalars only: per-site phase registers can compensate only the U(1) block phase, never the copy SU(2)  rank of diagonal parts = 1
+[PASS] A6 commutant of {rotations, coin} = span{1, W0}: the coin breaks the copy U(2) to U(1) x U(1)  dim 2
+[PASS] A7 the repo symmetric-base su(3) is not rotation covariant (plain or twisted); no su(3) fits in u(1)^4 or u(2) (8 > 4 dims), so no covariant one-body SU(3) acts on a block  max ||[V_R, T^a]|| plain 2.00, twisted 2.00
+== B. the copy algebra on the two-partition tick (4^3 torus, 64 modes)
+[PASS] B1 of the three copy generators lifted to all even blocks, exactly one commutes with the massless tick: the body-diagonal one, because it anticommutes with both half-ticks (a chiral-type symmetry); the CL-3 mass breaks it. The copy SU(2) is not a symmetry of the tick  singular values [9.238, 8.222, 0.0], mass a=0.3 breaks by 2.26
+== C. link registers (G_L x G_R, link operator in (N, Nbar))
+[PASS] C1 rederived: (N,1)+(1,N) carries covariant link operators in 2N states (dims 2 for N=2, 1 for N=3); (2,2) and (3,1)+(1,3bar) carry none  {'(2,1)+(1,2)': 2, '(2,1)+(1,2bar)': 2, '(3,1)+(1,3)': 1, '(3,1)+(1,3bar)': 0, '(2,2)': 0}
+   m qubits: #SU-products that fit / that fill exactly / (3,2) fits / (3,2) fills: 1:0/0/0/0; 2:1/1/0/0; 3:4/2/0/0; 4:11/3/0/0; 5:22/4/0/0; 6:43/5/0/0
+[PASS] C2 register size selects nothing: from m = 4 qubits on, many SU products fit; SU(3)xSU(2) never fills a qubit register exactly (2*6 is not a power of 2), and no SU(3) factor ever does
+== D. Fock register Lambda(C^p + C^q), even-parity sector as left-handed Weyl states
+[PASS] D1 (3,2): the even sector is (3,2)+(3b,1)+(3b,1)+(1,2)+(1,1)+(1,1); Y = N2/2 - N3/3 is vacuum-neutral, anomaly-free (grav, Y^3, SU3^2Y, SU2^2Y, SU3^3; 4 doublets) with Q:u^c:d^c:L:e^c = 1:-4:2:-3:6  Y = Q 1/6, u^c -2/3, d^c 1/3, L -1/2, e^c 1, nu^c 0
+[PASS] D2 dropping vacuum neutrality: the anomaly-free U(1)s form span{Y, B-L} with B-L = 1 - 2 N3/3; the empty register (nu^c) is neutral only for Y  solution dim 2, max X^3 1e-10
+   vacuum-neutral anomaly-free U(1) unique and consistent, by split: 1+1:no 2+1:no 3+1:yes 2+2:yes 4+1:yes 3+2:yes 5+1:yes 4+2:yes 3+3:yes
+[PASS] D3 the same holds for every split with p+q in {4,5,6} and fails for p+q <= 3: anomalies plus vacuum neutrality fix the U(1) once a split is given but do not choose 3+2
+[PASS] D4 a block offers no covariant 3+2 split: rotation-invariant mode subspaces of the twisted block have dimension 0, 4 or 8 (8 = C^2 x C^4), and of the plain block 1,1,3,3 summands (no 2, no 5)
+== E. Fock-space commutants of the twisted block rotations
+   n: (irrep dim, multiplicity) ... 0: 1x1 | 1: 4x2 | 2: 3x4,2x3,1x3,3x2 | 3: 4x10,2x4,2x4 | 4: 3x9,3x7,1x7,2x6 | 5: 4x10,2x4,2x4 | 6: 3x4,2x3,1x3,3x2 | 7: 4x2 | 8: 1x1
+[PASS] E1 many-body sectors carry multiplicities up to 10 (so U(m) commutants with m >= 3 occur); these act on n-particle states, not as one-body transformations of the modes, so they are not minimal-coupling gauge groups and their sizes are counting, not selection
+== measured reality
+   colour factors (LEP event shapes / 4-jet, Kluth 2006): C_A = 2.89 +- 0.21, C_F = 1.30 +- 0.09; SU(3): 3, 4/3
+   neutral-matter tests (|q_n| < 1.5e-21) and MICROSCOPE select Y over B-L for the massless U(1) (agents/charge)
+supplied: block, 24 rotations, spin-3/2 twist (from the CL-3 coin), one mode per corner; link register definition; Fock register, split, even sector as left-handed, vacuum neutrality. Not derived: any gauge group, the split 3+2, chirality, or a carrier for a non-abelian connection under the Qubit axiom.
+elapsed_seconds 0.7
+
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

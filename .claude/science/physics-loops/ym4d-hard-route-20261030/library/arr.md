@@ -6,11 +6,13 @@ Provenance: Research text begun 2026-11-05 in the checkout pinned at `907e2acb0`
 
 This is the sole checkpoint for this lane. The target is the arrest machinery used by the joint induction for T0. The account's restricted conclusions must be distinguished from the stronger conclusions at its stars. In particular, `thm-arrest-theorem` explicitly excludes several raw-stratum members. Proving its room table does not prove those members.
 
-The endpoint is the completion-collar admission lemma stated in the Result. Three attacks on that lemma are recorded in §12. The exceptional cube move is proved below for the account's retained label, and the completion-consumer covering step is proved for the account's stated domain class. The later text I:140979–143471 adopts the raised T-datum floor and replaces the raw clause by dated collar allowances. Its displacement and continuation arguments are ported with their hypotheses exposed: its completion-collar corollary is an input, not a proved consequence of its preceding estimates. This is not a proof of the full arrest theorem or T0. No mathematical computation has been used.
+Round 2, at pinned checkout `f414060712ebcceaab028feffd6e0c64bfb2e996`, preserves the round-1 proofs in §§1–13 and continues its Result. The endpoint is still the completion-collar admission lemma. The three new attacks are in §§15–17: prepared geometry and compatible minimizer data; torus transport with the actual label trace; and last-scale integral estimates. Section 18 proves a sufficient quantitative criterion for the collar, including its full physical current and both complex layers. Its seed and layer hypotheses have not been established for every actual completion datum. The frozen results used in this round are compared with those hypotheses in §14.
+
+The exceptional cube move and the completion-consumer covering step remain proved in §§7–8. The later text I:140979–143471 adopts the raised T-datum floor and replaces the raw clause by dated collar allowances. Its displacement and continuation arguments are ported with their hypotheses exposed: its completion-collar corollary is an input, not a proved consequence of its preceding estimates. This is not a proof of the full arrest theorem or T0. No mathematical computation has been used.
 
 ## 1. Sources and the port boundary
 
-The checkout is `907e2acb0e5926a85e72f4d1dd1b37a46aca1cea`. GOAL, FINISH's work rules, `port-map.md` Table 3, and `chain-ca.md` §§3, 7.1 were read first. The repository's science workflow was read from this commit with `git show`; the sparse working tree does not materialize that file. This task writes only this note.
+The round-1 checkout was `907e2acb0e5926a85e72f4d1dd1b37a46aca1cea`. GOAL, FINISH's work rules, `port-map.md` Table 3, and `chain-ca.md` §§3, 7.1 were read first. The repository's science workflow was read from this commit with `git show`; the sparse working tree does not materialize that file. This task writes only this note.
 
 The outline and CA-I were fetched once to `/tmp/sa_ym4.tex` and `/tmp/sa_ca_I.tex`. CA-II and CA-III were fetched once to `/tmp/arr-research/`. All use revision `31a47c543775` of [Sussman–Alpoge's repository](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/tree/31a47c543775). The authorship credit above applies to every port below. The underlying multiscale spaces and operations are due to Tadeusz Balaban.
 
@@ -549,7 +551,7 @@ For (E), (9.1) and §6.2 give the single-variable ceilings at the fixed birth de
 
 This gives a noncircular order for the conditional proof: geometry and threshold heredity; input admission; response estimates and completion-collar admission; global continuation; composition and preservation of stored bounds. It is the later rigidity argument with its missing supplier exposed.
 
-## 12. Three new attacks on completion-collar admission
+## 12. Round 1: three attacks on completion-collar admission
 
 The object throughout this section is the same: the actual completion presentation on the old raw collar of a completing component, for every admitted complex source and every parameter in its prescribed domain. The target is the weaker bound in the Result, not the stronger $1/16$ estimate for convenience. These attacks do not purport to be independent proofs.
 
@@ -630,7 +632,7 @@ Shrinking $\mathfrak P$ after the fact would not complete the requested result: 
 
 **Exact failure:** real admission and analytic continuation do not supply the uniform complex-domain inclusion. The applicable chart bounds require the admission being sought. This attack does not show that such an inclusion is false.
 
-## 13. Final disposition of the requested statements
+## 13. Round-1 disposition of the requested statements
 
 “Conditional” here means a mathematical implication from the enumerated source inputs, with the unresolved input identified. It does not mean that an audit has accepted those inputs.
 
@@ -652,11 +654,309 @@ The later collar construction is therefore not merely a stale incomplete label f
 
 Verification limits: source identities were checked against the hashes in §1; bounded source excerpts and literal target uses were inspected. Mathematical arguments here were checked by hand, without simulation, interval calculation, a solver, or a run discharging a step. This note has not received an independent mathematical review. No claim is made to have checked all of T0's imported analytic inputs or the unavailable original CMP 122a/122b texts.
 
+## 14. Round 2: the new inputs and the later-source check
+
+This round read the existing note whole before continuing its Result. The required GOAL/FINISH passages, port map and chain map were read before the new work. The outline index, including neighbouring rows in chunks 9 and 16 and the obligations file, was consulted before the relevant outline excerpts. The 4.12–4.19 index distinguishes the prepared geometry, real-background hypotheses and analytic supply; its CA-I references 45162 and 49495–49546 are particularly relevant here. The already fetched outline and CA-I were reused. CA-II and CA-III were read from copies in the task-created folder /tmp/arr-round2; their hashes agree with §1. References below are to the credited authors' text at the same revision, not to a later revision.
+
+The eleven-statement map in §§2–4 and the conditional closure in §11 are unchanged. The new question is whether the results now available in this checkout supply the single missing collar implication. Their precise contributions are:
+
+| Input now available | What can be used here | Condition still attached |
+|---|---|---|
+| Frozen [pda.md](pda.md), especially §§4–5 | The specified prepared nests and componentwise stopped prefixes satisfy (A1), including partitions, gaps, gluing and the level-zero hull. In the acting regime \(h\ge1\), \(\Omega''_1=\Omega_1\). | This is a theorem about domains. It supplies neither (A2) nor real datum tests, a gauge, a current estimate or analytic admission. |
+| Frozen [mu.md](mu.md), §§4–6 | A uniform complex chart for its window data, real restriction to the inner problem with its own subaverages, uniqueness in Balaban's regular variational class, and the resulting complex identity. | All determining rows, seam rows, the fixed action boundary and chart inclusion must match. The inner datum is the actual average of the outer minimizer; it is not independently prescribed. |
+| Frozen [oc.md](oc.md), §§2–5 | The real minimizer has the stated cube gauges with its own small-field constant; a complex left layer retains them because it retains the same unitary factor. | The real datum and enlarged cubes must be in the theorem's class. The theorem does not identify a newly minimized completion field with that minimizer. |
+| Checked [p7-torus.md](port/p7-torus.md), A14 | The specified local terms and operations agree under matching complete label traces, local fields, integration variables and footprints, on their admitted analytic domains. | Its H6a completion identity and H6b analytic extension remain inputs. The empty-trace comparison has its stated range; it is not a regularity theorem for arbitrary nonempty traces. |
+| Frozen [lsc.md](lsc.md), round-2 Result | Bounds on the vacuum-normalized partition function and its sourced version, uniform in cutoff and physical torus at fixed target coupling and omitted-step prescription. | Its RG representation, real-background and sourced majorant hypotheses remain. The vacuum constant need not be uniform. These are integral bounds, not bounds on each integration datum. |
+
+The distinctions in this table also agree with the supply conditions in [p4-operator.md](port/p4-operator.md), A9: prepared geometry and admitted background are separate hypotheses. The induction in [p5-induction.md](port/p5-induction.md) does not prove its own arrest input. The older comparisons with ui, dom and st1-r4 in §5 are retained at their stated scope.
+
+The later passages were checked for a completion before trying a new proof. In I:142269–142291 the level-zero chain proposition and collar corollary are expressly inputs. At I:142563 the completion proof invokes that corollary. I:142950 again assumes the completion-collar cube clause. The parameter remark I:143355–143424 lists a collar ceiling but also retains the other hypotheses of those statements; listing a ceiling is not a derivation of the field estimate whose supplier is missing.
+
+Two further later candidates do not change this. II:25160–25200 uses a tube statement in a sourced collar estimate. III:18854–18952 concerns a refinement with its own subaverages and standing core regularity, and contains no zone-zero table clause. III:51104–51185 does prove that the collar is empty for aligned labels; that useful restricted conclusion is ported in §16 below. It does not cover all labels in the arrest theorem. Thus the candidates inspected do not turn this particular incomplete step into a stale label of the kind resolved in ui or oc.
+
+## 15. New attack 1: identify the completion seed by prepared geometry and minimizer nesting
+
+Round 1's first attack tried a numerical transfer from a regular positive-level base. The new attempt is to *identify* the actual base with an already admitted one, using the newly proved prepared nests and mu's exact restriction identity. If successful, this would supply the missing antecedent of that transfer.
+
+Write \(V_2(\varpi)\) for the actual real datum of the completion minimizer
+\[
+ U_2=U_{\mathbf B_2}(V_2(\varpi)),\qquad
+ \mathbf B_2=\mathbf B''_k\cup
+       \mathbf B_h((\Omega''^{\sim}_{h+1})^c).
+ \tag{15.1}
+\]
+Here \(\varpi\) denotes the real variables retained in the presentation, not an extra complex source. This notation names the datum; it does not assign it a new value. The defining constrained problem is the one in I:92418–92427. The current-step variables include \(B,V''|_{D_2},V_h\) and the inner tree variables; they are left real and unrotated, I:78445–78545. The parameter convention I:93510–93670 explicitly includes \(\operatorname{supp}\Pi\) as a factor of \(\mathfrak P\); a statement for every point of that domain is already uniform in these real variables. In particular, admission of the independent complex source pair is not itself a bound on all these real data.
+
+There are two possible exact identifications to try.
+
+### 15.1 Restrict an admitted ancestor minimizer
+
+Here is the valid implication behind this attempt. Let \(R\) be a real field on the full action domain of (15.1), in its regular uniqueness class. Suppose:
+
+1. \(R\) has exactly the datum \(V_2(\varpi)\) on every determining row of \(\mathbf B_2\), with the prescribed seam convention and root normalization.
+2. \(R\) is critical against every constraint-preserving variation for this action, with its actual fixed boundary.
+3. The datum and geometry satisfy the hypotheses of the regular minimizer theorem used in mu §5. For an inner restriction, its window and fixed-shell hypotheses also hold.
+
+Then \(U_2\) and \(R\) lie on the same regular critical orbit. If they have the account's common axial normalization, they agree. Curvature and physical current therefore agree on every full stencil contained in the comparison domain. If \(R\) has the required gauges on whole enlarged cubes there, these are gauges of \(U_2\) as well.
+
+**Proof.** Apply the real uniqueness statement ported in mu §5, which is Balaban's uniqueness in the regular variational space. Condition 2 puts \(R\) in that statement, rather than merely in the constraint fibre. The minimizer \(U_2\) is in it by condition 3. Uniqueness gives the orbit equality. The root and tree equations remove the residual gauge exactly as in mu (5.5). The asserted transfers follow from equality of the fields on all bonds they read. If only orbit equality is needed, use the one real gauge on the whole comparison domain; the norms are invariant under it. This proves the implication on that theorem's input class; it does not enlarge mu's class of comparison domains.
+
+Mu supplies conditions 1–2 for a particular construction: the inner data are the outer minimizer's **own** subaverages,
+\[
+ V_{\rm inner}=M_{\mathcal T}(R|_Z).
+ \tag{15.2}
+\]
+Its refinement is checked on the same outer action domain, and the fixed shell then proves the change-of-action identity in mu (5.4). Its complex chart estimate is
+\[
+ \|B_{\mathcal T}(D)\|_\infty
+ \le C_AK\|D\|_\infty,\qquad
+ \delta<r/2,\quad K\delta<a_{98}/2,\quad C_AK\delta<r/2.
+ \tag{15.3}
+\]
+These statements pay for all rows and every inner carrier in that window. They do not replace the inner datum by an arbitrary nearby real datum.
+
+Pda now proves the geometric (A1) part for the *actual* prepared nest and its prefixes. It does not prove the identity
+\[
+ M_{\mathbf B_2}R=V_2(\varpi)
+ \tag{15.4}
+\]
+for an admitted ancestor \(R\), the corresponding fibre inclusion, or the action-boundary comparison. There is also a distinct determining-set issue: the union sign in (15.1) denotes the graded splice described at I:92516–92532. It must not be treated as the union of two lists of simultaneously imposed constraints. That passage compares the blocks away from the cut and replaces rows in its graded layer. It does not state (15.4).
+
+Even preservation of coarse data does not replace the criticality check. For a hand test, minimize
+\[
+ E(x,y)=x^2+y^2.
+\]
+The fine fibre \(x=a,\ y=0\) has minimizer \((a,0)\). It has coarse datum \(x+y=a\), but the minimizer on this latter fibre is \((a/2,a/2)\), since
+\[
+ E(x,a-x)=2(x-a/2)^2+a^2/2.
+\]
+At \((a,0)\) the allowed coarse variation \((1,-1)\) has first derivative \(2a\), which is nonzero when \(a\ne0\). The example works for arbitrarily small \(a\). It refutes the proposed inference from compatible data to criticality under changed constraints; it is not a Yang–Mills counterexample or a claim that mu uses this invalid inference. Mu proves the needed fibre inclusion for its particular refinement.
+
+One can try perturbing (15.4) instead. Equations (15.3) give a quantitative route only after every actual completion row is placed in that uniform chart. Pda bounds distances between sets, not the logarithms of \(V_2(\varpi)\) in a compatible gauge. The required bound on those logarithms, uniform over the allowed \(\varpi\), has not thereby been obtained.
+
+### 15.2 Keep the old fine rows
+
+The equality \(\Omega''_1=\Omega_1\) suggests a more local shortcut: on an unchanged level-zero determining row the average is the identity. If every bond in the collar's full read-set is such a row of \(\mathbf B_2\), and its actual datum equals an already controlled \(V_0\), then
+\[
+ U_2(b)=V_0(b)
+ \tag{15.5}
+\]
+on that read-set, directly from the constraints. The plaquette and current estimates of §10.5 then apply if the same characteristic-function bounds hold on all their stencils. Whole-cube gauges still require the corresponding whole-cube hypothesis.
+
+This conditional shortcut is valid, but pda proves neither of its datum assertions. Keeping \(\Omega_1\) fixed in the prepared nest does not identify all the rows of the subsequently spliced \(\mathbf B_2\), their values, or their cutoff tests. Even on a patch where the rows do agree, I:78445–78545 retains new real integration variables; one must check their actual cutoff bounds rather than substitute the complex source or a previously pinned \(V_0\). The distinction is material at the boundary: a bound only on plaquettes based inside a patch would not bound the neighbouring plaquettes read by the current.
+
+The source's own extension conventions confirm the remaining analytic requirement. I:94185–94229 imposes core membership of the real bases in a kernel class, while explaining that the cited CMP 122b regularity statement is only on its cutoff support. I:94230–94245 requires the analogous membership at perturbed real data. These requirements are not proved by (A1), and an absolute kernel radius small with \(\gamma\) is not automatically the fixed birth-radius estimate in the Result.
+
+**Exact failure of new attack 1.** The geometry is now supplied, but neither an admitted ancestor satisfying (15.4) and the correct criticality, nor the full-row/cutoff identification needed for (15.5), has been established for every actual \(V_2(\varpi)\). Mu and oc consequently cannot yet transfer their estimates to this particular seed. The obstruction is an actual datum and action comparison, not the previously open prepared-nest geometry.
+
+## 16. New attack 2: transport the collar to a regular reference torus
+
+The checked torus port suggests putting the entire collar read-set, including the enlarged cubes, into a sufficiently large reference torus. One might then use oc's regular real minimizer there and transfer its estimates back. Increasing the reference torus to fit the footprints is permissible and does not change a birth radius. The question is what the comparison theorem actually identifies.
+
+P7's trace theorem compares local terms and prescribed operations with **matching complete traces and matching local data**, not arbitrary global minimizers with the same geometry. Its statement is CA-I:58187–58411; the relevant operation proof is port/p7-torus §“Activities, prepared profiles and termwise equality”, using I:59813–59872. Joined-domain analytic extension is H6b, I:58210–58212. The full completion identity for missing action members is H6a. Neither is derived from torus size.
+
+There are two versions of the proposed transplant.
+
+**An empty-trace reference.** Within the completing component, pda gives \(\Omega''_1\cap C=\Omega_1\cap C\). Read \(\Omega_1,Z_1\) from that retained precompletion label. At an old collar point,
+\[
+ y\in\operatorname{St}(d^t)\cap C
+ \subset \Omega_1^c\cap C
+ \subset Z_1\cap C.
+ \tag{16.1}
+\]
+The last inclusion is the account's first-step small-field geometry; see also its explicit use at III:51160–51177. A precompletion window containing this point therefore has nonempty first-level large-field trace. It cannot be compared with a window declared to have empty trace. Completion may later heal the region, but the old term is still evaluated on its prescribed birth domain, with the trace data its construction reads.
+
+P7 does identify missing completed action members with whole-lattice members. In its corrected proof C3, that is exactly the **entire-member completion premise H6a**, not a new consequence of geometric healing. Using that identity or its assumed analytic extension to admit the very completion being proved would reuse an input of the desired arrest argument. In addition, clause (iii) is stated after the current step has been completed at every site; it cannot be invoked backwards to supply that step's missing analytic membership.
+
+**A reference with the same nonempty trace.** This version respects (16.1), but must carry the actual \(V_2(\varpi)\), its full averaging carriers and its boundary data as well. Oc supplies a regular reference minimizer only after its own real-data and cube hypotheses are met. No independent reference presentation satisfying those hypotheses and matching all these data has been constructed. Copying them to a larger torus leaves the same admission question. Equality of local action terms, even when proved, is not an exact finite-range identity for the global constrained minimizers; the variation and data comparison in §15 would still be needed.
+
+There is a genuine restricted completion in the later account. For an aligned label, its first large-field index exceeds \(n_c\ge1\), so the first run has no level-one large-field region. Thus
+\[
+ Z_1=\varnothing,\qquad \Omega_1^c\subset Z_1
+ \quad\Longrightarrow\quad
+ \Omega_1=\mathbb T,\qquad
+ \widetilde\Omega_1\setminus\Omega_1=\varnothing .
+ \tag{16.2}
+\]
+In the second comparison run, the same argument applies to its first step, whose index is zero. The common/aligned condition excludes that region as well. This is the proof at III:51104–51185, credited to the source authors. Its collar assertions are vacuous on aligned labels, as the source says. It gives no bound on a nonempty collar in the full arrest theorem; those labels have not been removed from the statement or its uses.
+
+**Exact failure of new attack 2.** Empty-trace transport fails its trace hypothesis at a nonempty old collar. Same-trace transport lacks an independently admitted reference presentation with the matching actual data and analytic domain. The checked torus theorem transports already admitted objects; its completion and extension inputs do not construct that missing presentation. The empty-collar subcase (16.2) is proved, but it is not the general Result.
+
+## 17. New attack 3: use last-scale stability to control the real seed
+
+The new LSC result supplies a different possible source of information: a uniform lower bound on mass and an upper bound with sources. Try first to turn the mass bound into a variational estimate for the constrained seed, and then to turn source estimates into a pointwise estimate on all real variables used by completion.
+
+Use precisely lsc's corrected convention, not its withdrawn bare reading:
+\[
+ \widehat Z(0)=e^{-E_{\rm vac}}Z_{\rm bare}(0)
+       \ge e^{-C_{\rm low}N^4},\qquad
+ |\widetilde Z(w)|=
+ |e^{-E_{\rm vac}-\mathcal E(w)}Z_{\rm bare}(w)|
+       \le e^{C_+N^4},\qquad \mathcal E(0)=0.
+ \tag{17.1}
+\]
+Here \(C_++C_{\rm low}\) is uniformly bounded in LSC's stated variables, but \(E_{\rm vac}/N^4\) need not be. These are lsc (5a)–(5b) and its round-2 Result, using I:159153–159160 and II:140916–140926.
+
+For any action \(S\) on a probability measure space,
+\[
+ \int e^{-S}\,d\mu\le e^{-\inf S}.
+\]
+Even if (17.1) is applied directly to that action, it implies only
+\[
+ \inf S\le C_{\rm low}N^4-E_{\rm vac}.
+ \tag{17.2}
+\]
+This is an estimate for an unconstrained infimum, with the vacuum term present. It is not an estimate for the minimum on every fibre \(M_{\mathbf B_2}U=V_2(\varpi)\), nor for each plaquette of such a minimizer. A lower bound on the whole integral supplies no uniform lower bound on the conditional mass of every fibre. The cutoffs and real-background hypotheses retained in LSC cannot be discharged by applying LSC to itself.
+
+The source route fails for a separate, exact reason. Here is a hand counterexample to the inference from uniform analytic integral estimates to a deterministic bound. Fix \(\rho>0\). For \(t>0\), let a nonnegative random variable \(X_t\) be \(t\) with probability \(p_t=e^{-2\rho t}\) and zero with probability \(1-p_t\). Its moment generating function is the entire function
+\[
+ M_t(z)=1-p_t+p_te^{zt},\qquad M_t(0)=1.
+ \tag{17.3}
+\]
+For every complex \(|z|\le\rho\),
+\[
+ |M_t(z)|\le1+e^{-\rho t}\le2,\qquad
+ \mathbb E X_t^n=t^ne^{-2\rho t}
+              \le {n!\over(2\rho)^n}\quad(n\ge1).
+ \tag{17.4}
+\]
+The moment inequality follows from the single nonnegative term
+\(e^{2\rho t}\ge(2\rho t)^n/n!\).
+Even a uniform analytic logarithm does not cure the problem. For
+\(t\ge(\log4)/\rho\),
+\[
+ |M_t(z)-1|\le e^{-\rho t}+e^{-2\rho t}\le5/16<1.
+ \tag{17.5}
+\]
+The logarithm series is therefore valid on this disc and has absolute value at most
+\((5/16)/(1-5/16)=5/11\). Cauchy's formula gives uniformly bounded derivatives of every order, hence uniformly bounded cumulants (indeed a bound \(n!\rho^{-n}\) suffices). Nevertheless
+\[
+ \operatorname*{ess\,sup}X_t=t\longrightarrow\infty .
+ \tag{17.6}
+\]
+Every positive atom is in the support, so replacing “every datum” by “every datum in the support” does not evade this example. It is a counterexample only to the proposed inference; \(X_t\) is not asserted to be a Yang–Mills field or a completion output.
+
+The required arrest statement is pointwise in each permitted real integration datum and each complex completion parameter. LSC bounds normalized integrals and source derivatives. Equations (17.3)–(17.6) show that even stronger uniform scalar analyticity and all-order moment bounds do not provide the missing pointwise bound. Nor is LSC's source disc the completion parameter domain \(\mathfrak P\).
+
+**Exact failure of new attack 3.** The normalized lower bound controls neither all constrained fibres nor their local seed curvature. The sourced upper bound controls averages, not the supremum over the completion data. It supplies no estimate of the required size in the old birth radii. A separate deterministic seed estimate is still needed. This attack does not furnish a counterexample to the collar lemma.
+
+## 18. A sufficient collar criterion proved by hand
+
+The attempts above do not close the actual admission statement. They do permit a useful quantitative reduction: a small *physical* seed current does not require a separate estimate on the constraint multiplier if the seed plaquettes on all its stencils are controlled. Once the two actual layers have their primitive analytic estimates, no further loss of a birth radius is necessary in composing them.
+
+Here is the reduction with explicit constants. It is a conditional lemma, not an assertion that its extra hypotheses hold for the actual completion.
+
+Fix a completing component \(C\), its dates and its old radii. Take the union of the bonds read by the collar entries, the local algebra on their \(\widetilde\Delta(y)\)'s, every plaquette in the physical-current stencils, and every required whole cube and enlarged gauge domain. All hypotheses below concern these complete read-sets, including their boundary bonds. In particular, no derivative or current is evaluated after truncating a field.
+
+Let \(U_2\) be the actual unitary seed on these sets, with one consistent value on overlaps. Suppose it has the required old index-zero gauges on the whole cubes, and put
+\[
+ \delta=\sup_p|\partial U_2(p)-1|,
+ \tag{18.1}
+\]
+where the supremum includes every plaquette just specified. Let the actual formulas for \(\mathbb H_3,\mathbb H_4\) be defined on their primitive input classes for every prescribed source and every \(\varsigma\in\mathfrak P\). Suppose nonnegative numbers \(F_3,F_4\) bound their *complete local norms*, uniformly over those parameters and every layer segment used by the account:
+\[
+ \begin{split}
+ \sup_y N_y^{\,\mathbb U^{(s-1)}}(t_s\mathbb H_s)&\le F_s,\\
+ \sup_y\eta^3
+   |\mathfrak s^\sharp_{\sigma_s}[t_s\mathbb H_s](y)|
+      &\le K_{\rm cur}F_s,\qquad s=3,4.
+ \end{split}
+ \tag{18.2}
+\]
+Here the background in the first line is the actual preceding partial product; in particular the second layer's derivative is not silently computed at \(U_2\). Supremums include all neighbouring local sets needed for the next application. The current increment is the actual one in I:142567–142573. The admissible current-response bound has
+\[
+ K_{\rm cur}=3+18d+2.2K_J,\qquad K_*=\max\{4,K_{\rm cur}\}.
+ \tag{18.3}
+\]
+In (18.3), \(K_J\) is the current-response constant of I:94996–95025, not LSC's terminal index. We require (18.2) as a hypothesis, on its proper inputs; we are not deriving it by invoking the unproved collar corollary.
+
+Set \(\varepsilon=F_3+F_4\) and \(\alpha_{*,0}=\min\{\alpha_{0,0},\alpha_{1,0}\}\). The following concrete bounds suffice:
+\[
+ \delta\le{\min\{1,\alpha_{0,0}\}\over24},\qquad
+ \varepsilon\le
+ \min\left\{{1\over160},{\alpha_{*,0}\over16K_*}\right\}.
+ \tag{18.4}
+\]
+They are uniform inequalities to be established for the actual objects, not instructions to choose a constant depending on a source, a birth date or an arrest age.
+
+**Conditional collar lemma.** Under these hypotheses, the seed and the successive products on the prescribed segments,
+\[
+ \mathbb U(t_3,t_4)
+   =e^{i\eta t_4\mathbb H_4}e^{i\eta t_3\mathbb H_3}U_2,\qquad
+ \mathbb J(t_3,t_4)
+   =\mathcal J(U_2)+
+       \sum_{s=3,4}\mathfrak s^\sharp_{\sigma_s}[t_s\mathbb H_s],
+ \tag{18.5}
+\]
+have a single presentation over \(U_2\) satisfying all five inequalities in the Result and the required whole-cube clauses.
+
+**Proof.** First bound the full seed current. The physical-current formula used in §10.5 and I:142718–142737 is
+\[
+ \eta^3\mathcal J(U_2)(b)
+   =\sum_{p\ni b}\epsilon_{bp}\operatorname{Ad}_{\tau_p}
+           \pi\operatorname{Im}U_2(\partial p),
+ \qquad \epsilon_{bp}\in\{-1,1\}.
+\]
+In dimension four the sum has six terms. Each transport \(\tau_p\) is unitary, the traceless projection has norm at most two, and for a unitary matrix \(W\) one has \(|\operatorname{Im}W|\le|W-1|\). Each term is therefore bounded by \(2\delta\), giving
+\[
+ \eta^3|\mathcal J(U_2)|\le12\delta .
+ \tag{18.6}
+\]
+All six plaquettes are in (18.1); a bound only at the bond's base point would not justify this step. This estimates the entire physical current, including its constraint component.
+
+At each collar centre \(y\), apply the local left-factor algebra I:141265–141508, ported in §10.2, first with \(A'=0\) and then with the potential from the first product. Its three smallness tests are satisfied. The first-layer norm is at most \(1/160<1/40\) and the initial curvature is at most \(1/24<1/10\). At the second application,
+\[
+ \sup_{\widetilde\Delta(y)}\eta|A'_3|
+       \le{1.06\over160}<{1\over80},\qquad
+ \max_{p\ {\rm based\ at}\ y}|\partial\mathbb U^{(3)}(p)-1|
+       \le {1\over24}+{4\over160}={1\over15}<{1\over10}.
+ \tag{18.7}
+\]
+The second layer's norm is again at most \(1/160\). The local algebra constructs its logarithm, keeps the same \(U_2\), and adds at most \(4F_s\), \(1.06F_s\), and \(1.2F_s\) to the plaquette, dimensionless potential and dimensionless covariant-gradient entries respectively. These statements hold at every collar centre and use its complete local read-set. Consequently,
+\[
+ \begin{array}{lll}
+ Q_1\le\delta+4\varepsilon,&
+ \eta^3Q_3\le12\delta+K_{\rm cur}\varepsilon,&
+ Q_5\le\delta,\\[2pt]
+ \eta Q_6\le1.06\varepsilon,&
+ \eta^2Q_7\le1.2\varepsilon.&
+ \end{array}
+ \tag{18.8}
+\]
+For \(Q_3\) use (18.6), the second line of (18.2) and the triangle inequality. This does not identify the independent current at later complex parameters with a physical current: only its seed is physical.
+
+Divide by the *old* radii
+\[
+ (r_1,r_3,r_5,r_6,r_7)(0)
+ =(\alpha_{0,0},\alpha_{0,0}\eta^{-3},
+   \alpha_{0,0},\alpha_{1,0}\eta^{-1},
+   \alpha_{1,0}\eta^{-2}).
+ \tag{18.9}
+\]
+Since \(K_*\ge4,K_{\rm cur}\), (18.4) gives respectively
+\[
+ {Q_1\over r_1(0)}\le{5\over48},\qquad
+ {Q_3\over r_3(0)}\le{9\over16},\qquad
+ {Q_5\over r_5(0)}\le{1\over24},\qquad
+ {Q_6\over r_6(0)}\le{53\over3200},\qquad
+ {Q_7\over r_7(0)}\le{3\over160}.
+ \tag{18.10}
+\]
+Each number is less than \(3.65<f_0(d^t)\), giving the required strict inequalities. The same estimates hold with either layer partially or wholly absent, so they cover \(\mathfrak b_2,\mathfrak b_3,\mathfrak b_4\) and every required segment.
+
+The logarithm in the left-factor algebra is defined bondwise by its convergent principal series in the small matrix neighbourhood. At the first step the potential has the bound in (18.7); at the second it has bound \(1.06\varepsilon\). The same bond therefore receives the same logarithm when read from two overlapping local sets. This gives a consistent potential over the single field \(U_2\). Derivative estimates use its full stencils. The unitary factor never changes, so all the assumed whole-cube gauges are retained. This proves the lemma.
+
+More generally, (18.8) gives the less restrictive sufficient test: its five right sides, divided by (18.9), must be below \(f_0(d^t)\), while the local-algebra smallness tests must hold at each step. The fixed fractions in (18.4) merely exhibit a uniform choice with ample room. They neither change the birth domains nor assert the stronger \(\varphi_\flat/16\) corollary.
+
+This criterion respects the order in §6.2: \(K_{\rm cur}\) is an already fixed analytic constant, \(K_*\) is a fixed maximum, and all remaining numerical fractions are absolute. No earlier \(L,M,\kappa\) or radius constant is reselected. To apply it universally, an estimate of the actual seed and actual layer majorants in the prescribed old units is still needed. Declaring \(\gamma\) small does not prove such an estimate without a uniform bound for those objects. In particular, neither (18.2) nor (18.4) has been inferred from the source's assumed level-zero chain/collar input.
+
+The round-2 hand results are therefore the compatible-data implication in §15.1, the explicit failures of the three proposed inferences, and the conditional collar criterion (18.1)–(18.10). The aligned-label empty-collar proof is a port of the later account. None changes the disposition of the eleven statements in §13. No counterexample to the actual completion-collar statement has been established. Only this research note is changed; no audit, status or scientific ledger is updated.
+
 ## Result
 
 **Open lemma**
 
-**Completion-collar admission in the account's fixed birth domains.** Retain the original arrest hypotheses and primitive analytic inputs on their stated input classes; the later conventions I:140979–141189; the parameter order and ceilings I:143355–143471; the actual completion-layer construction and geometry I:142292–142317; and the other stage, averaging, outside-completion and real-point inputs identified in §10, used only on their stated input classes. Do **not** assume the level-zero chain/collar conclusion I:142269–142291 or the completion-collar cube admission I:142950.
+**Completion-collar admission in the account's fixed birth domains.** Retain the original arrest hypotheses and primitive analytic inputs on their stated input classes; the later conventions I:140979–141189; the parameter order and ceilings I:143355–143471; the actual completion-layer construction and geometry I:142292–142317; and the other stage, averaging, outside-completion and real-point inputs identified in §10, used only on their stated input classes. The frozen pda, mu, oc and lsc results and checked torus port may be used with exactly the hypotheses and scopes in §14. Do **not** assume the level-zero chain/collar conclusion I:142269–142291 or the completion-collar cube admission I:142950.
 
 Let $d'=(k;L)$ be a completion date, $d^t$ its scaffold predecessor, and $C$ a completing component. Put
 \[
@@ -664,7 +964,7 @@ Let $d'=(k;L)$ be a completion date, $d^t$ its scaffold predecessor, and $C$ a c
  =\operatorname{St}(d^t)\cap C
  =\bigl(\operatorname{St}(d^t)\setminus\operatorname{St}(d')\bigr)\cap C .
 \]
-For every source pair $p$ in the prescribed arrested source at $d'$, with its full global rider, and every complex completion parameter $\varsigma\in\mathfrak P$, prove that the actual completion presentation is defined on this collar and, at $\mathfrak b_2,\mathfrak b_3,\mathfrak b_4$ and on every intervening layer segment used by O2 or O5, has a decomposition over the one presented unitary factor satisfying
+For every source pair $p$ in the prescribed arrested source at $d'$, with its full global rider, and every completion parameter $\varsigma\in\mathfrak P$ (its real coordinates in their prescribed support and its complex coordinates in the full prescribed polydiscs), prove that the actual completion presentation is defined on this collar and, at $\mathfrak b_2,\mathfrak b_3,\mathfrak b_4$ and on every intervening layer segment used by O2 or O5, has a decomposition over the one presented unitary factor satisfying
 \[
  Q_a\bigl(\operatorname{chain}_p(\varsigma)\bigr)(y)
  < f_0(d^t)\,r_a(0)
@@ -673,4 +973,6 @@ For every source pair $p$ in the prescribed arrested source at $d'$, with its fu
 \]
 and the old index-zero cube clause CMP 99b (3.35) on every required whole cube meeting the collar, with the same field on overlaps and the full prescribed stencils. All constants must be chosen in the account's order, uniformly in the cutoff, density, waiting depth, history and arrest age; neither the source domain nor a stored term's birth domain may be shrunk.
 
-This is weaker than the assumed $\varphi_\flat\mathbf r_a(0)/16$ collar corollary and is exactly the missing raw image membership used in (11.4). The three attempts in §12 fail respectively at base-data/cube admission, control of the unprojected constraint current, and uniform complex-chart inclusion. None proves the lemma false. With this lemma and the other explicitly retained source inputs, §11 supplies the full collar part of the repaired arrest argument. Without it, the full arrest proof and T0 remain unproved.
+This is weaker than the assumed $\varphi_\flat\mathbf r_a(0)/16$ collar corollary and is exactly the missing raw image membership used in (11.4). Round 1's three attempts remain in §12. The three new attacks in §§15–17 fail respectively at the actual datum/criticality comparison, an independently admitted reference with the matching nonempty trace, and the passage from normalized integral bounds to bounds for every completion datum. Each failure is demonstrated above; none proves the lemma false.
+
+Section 18 proves a sufficient quantitative implication, including the full physical seed current, two complex layers, consistent logarithms and retention of whole-cube gauges. It does not prove its seed, gauge and layer hypotheses for every actual completion. Those bounds are possible means of proving this single open lemma, not extra assumptions added to it. With the lemma and the other explicitly retained source inputs, §11 supplies the full collar part of the repaired arrest argument. Without it, the full arrest proof and T0 remain unproved.

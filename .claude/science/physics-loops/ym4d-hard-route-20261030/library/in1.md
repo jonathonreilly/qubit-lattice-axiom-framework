@@ -225,9 +225,9 @@ The following order is part of the hypotheses on the imported packages. A return
 | Order | Choice and dependence |
 |---|---|
 | 1 | Fix the desired reserve \(c_r\), rarity loss \(0<\varepsilon_{\rm rar}<1\), margins, Hölder exponent and finitely many source/age requirements. Fix the power-count constants before \(r\ge2,p_0,p_1,q,\kappa_0\): \(p_0>6r,\ p_0>3Cr,\ (p_0+Cr)/2<p_1<p_0-Cr,\ q>\max(p_0+2r,Cp_0),\ \kappa_0>\max(8,C)\). |
-| 2 | Fix the scale-independent geometric and hull constants, \(\lambda_0,\sigma_0,\varepsilon_{\rm rate},g_*\); choose odd \(L\) with \(L>4C_h^{\rm WF}C_h^{\rm UM}c_\ell(1+4\beta_s)\). Then choose flat and averaging constants, \(c_0,c_2\), and the weak triple (1). |
+| 2 | Fix the scale-independent geometric and hull constants, \(\lambda_0,\sigma_0,\varepsilon_{\rm rate},g_*\); choose odd \(L\) with \(L>4C_h^{\rm WF}C_h^{\rm UM}c_\ell(1+4\beta_s)\) and (Amendment 1) \(L>L_0^\natural\). Then choose flat and averaging constants, \(c_0,c_2\), and the weak triple (1). |
 | 3 | In the order of c4-order rows 4–7: local gauges/inverses and reference ceilings; propagator/profile/walk rates; local walk size \(M_1\), reset scale \(R_1\), gap \(\rho=R_1M_1\); then seam, A2/A3 and tower bounds and radii. The local walk size is distinct from \(M\). |
-| 4 | H-M's early \(K_0,H_0,b,d,C_\tau\); Gaussian constants \(A=A_{K_0},\varepsilon_0,\rho_0\); geometric \(P,c_m\); fix \(W_0\) by (22). Choose \(\kappa\), then \(\Theta\), then \(\lambda\) in (24). |
+| 4 | H-M's early \(K_0,H_0,b,d,C_\tau\); Gaussian constants \(A=A_{K_0},\varepsilon_0,\rho_0\); geometric \(P,c_m\); fix \(W_0\) by (22). Choose \(\kappa\), with (Amendment 1) \(\kappa\ge\kappa_0^\natural(L)\), then \(\Theta\), then \(\lambda\) in (24). |
 | 5 | Choose \(\bar\kappa,\kappa_1\) above their entropy, bracket and response floors; \(R_s=e^{\bar\kappa}\). Next response-parameter length and small decoupled radii, \(M'_1,M_2\), preparation/profile constants, \(\Theta_1,\varpi_T\); then \(M\), a power of \(L\), meeting (23) and all collar/tower floors. |
 | 6 | Choose post-\(M\) box, joint-chart, comparison and reference-cutoff constants; set \(\gamma_{\rm tilt}\) by (22). Choose \(A_1\), then \(A_0\); \(C_0\), then \(C_1\); absolute radii and current ceilings within (23). Fix all radius ratios and response-room/age constants. |
 | 7 | Fix \(E_N,C_E,C_{\rm rad},f_\nu\); set \(E_0=E_N+1\), then \(N_*=E_0\sum_{\nu\ge1}f_\nu+1\). Choose the boundary-origin maximum \(\mathsf B\), then volume costs. Fix \(c_{\rm lin}\) and the H-C certificate constants, then \(C_g,s_0,C_T,N_{\rm cut},c_w\), then \(c_G\); \(C_{\rm env},C_{\rm int},b_{\rm code},D\), then \(c_{\rm ent}\); the source-volume factor \(C_v\), then \(c=C_vc_r\). Fix \(B_\Phi\) and finally \(c_1\ge c+C_{\rm env}+C_{\rm int}+c_{\rm ent}+c_{\mathsf B}\), where \(c_{\mathsf B}\) is the interior volume cost of the boundary maximum (Lemma 5). Also listed from c4-order: \(L^2\ge6\sqrt2\lambda_a\) (row 2), \(\kappa/4>\kappa_D\) and \(\kappa\)'s history-entropy floor (row 4). |
@@ -662,6 +662,17 @@ Applied the findings of `gates/in1-gate.md` (Claude fresh session, first failing
 - F11 (letters with several meanings) left for the hardening pass; clarity only.
 
 **Status: frozen.** Reopens only on a `wrong` signal or when an import it reads changes.
+
+## Amendment 1 (lead, 2026-11-05)
+
+Source: [td-draft.md](td-draft.md) §11 (pass 1, Claude, not yet distilled or refereed). The corrected exempt-term gas (Theorem UM♮ and Lemma TD♮ there) needs IN1's rate window, which is nonempty when
+
+L > L₀♮ := max{4C_h^WF, 8C_pr}·[c♮_2 + 2C_h(c♮_1 + 5)](1 + 4β_s) and κ ≥ κ₀♮(L).
+
+Here κ₀♮(L) makes the κ-free part of the lower endpoint λ₀ + σ₁ + σ₂ + Θ♮/L smaller than the gap between the slopes. All constants in L₀♮ are geometric and independent of L. Both changes are floors only: a larger floor on L in row 2 and a floor on κ, which depends on L, in row 4. L is chosen before κ, so no cycle is created, and nothing else in the order moves. Row 2 and row 4 now state the floors.
+
+This amendment is conditional on td-draft §§8–11 surviving its distil and referee; if TD♮ changes, the amendment is revisited. The referee's verdict on Theorems 10–12 (`gates/in1-gate.md`) is unaffected, since raising floors on L and κ weakens no step.
+
 
 ## Result
 

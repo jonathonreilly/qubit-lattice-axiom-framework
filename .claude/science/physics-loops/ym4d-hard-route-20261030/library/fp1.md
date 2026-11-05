@@ -484,3 +484,15 @@ Corrections made in this distillation are: separate physical/counting adjoints a
 Source record: all five FP1 library notes and all four cited checks were read whole at checkout `1724d326a`. The additional Sobolev input was read in its relevant bounded section, and IN1's constant-order table and amendment were read. The SA index README, the neighboring scalar, A2/A3 and flat-package chunk rows, and their obligation entries were used to locate the source. The outline was read in bounded excerpts covering 605–1149, 3835–3897, and 8396–9583, including every outline formula used here. No quoted CA-I/II/III or YM3 line enters a proof. The requested CA-I file was fetched once but supplies no theorem or premise here; no other account file was needed. Published-paper names in the source notes are attribution, not unverified imported theorem statements.
 
 Reproducible upstream identity: Ethan Sussman and Levent Alpoge, with Claude and Codex as the authors of their text, commit `31a47c543775`; [outline](https://raw.githubusercontent.com/ethanwsussman/Yang--Mills-LLM-experiment/31a47c543775/YM4_sketch_500.tex), SHA-256 `d7f77d4da3eb23038250c52468a341281d9ba86b4af21d3371d208a2537d4b6f`; [CA-I](https://raw.githubusercontent.com/ethanwsussman/Yang--Mills-LLM-experiment/31a47c543775/theorem_0_complete_account_raw_I.tex), SHA-256 `4cb5cb5e0af8dbddbee207926621300350e018c6cf1d6567a753167ce10e6e93`. Retrieval, text search and file checks are bookkeeping only. No computer-assisted mathematical step was used. This is research text, grants no status, and **has not yet been refereed as a whole part**.
+
+## Change log (pass 3 fixes, lead, 2026-11-05)
+
+Applied the findings of `gates/fp1-gate.md` (Claude fresh session, first failing step none):
+1. Lemma 4's source: FX1-FX3 are at outline lines 9081-9128.
+2. Lemma 5: Schur's test gives ||J||^2 <= C L^7; the stated C L^8 is true, not sharp.
+3. Lemma 6: s and h each carry more than one meaning; read from context (rename at hardening).
+4. Lemma 10: the sentence about a bondless point is outside D7's domain (sides >= 1) and is withdrawn.
+5. Scope: at current scale the Holder clause follows from the kernel bound; it is not a fine-mesh Holder estimate, and PR1's clause (H) cannot cite FP1(2) for that.
+6. The brick one-jump and several-jump checks listed in ym4-assembly section 5 are not used by FP1 and do not count toward its status.
+
+**Status: frozen**, importing no other assembly part. Reopens only on a `wrong` signal.

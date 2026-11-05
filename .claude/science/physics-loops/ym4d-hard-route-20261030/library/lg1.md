@@ -473,3 +473,13 @@ Corrections and completions made during distillation:
 - Made the foundational imports, all finite-volume embedding conditions, and the volume-before-source limits explicit. LG1 imposes no additional condition on IN1's constant order.
 
 No mathematical step of this assembled fixed-lattice argument is left **Outstanding**. All proof steps above are hand arguments; retrieval, searches and file bookkeeping discharge none of them. This is a distillation of checked research notes, **not yet refereed as a whole part**. It grants no scientific or audit status and proves no continuum Yang–Mills existence theorem.
+
+## Change log (pass 3 fixes, lead, 2026-11-05)
+
+Applied the findings of `gates/lg1-gate.md` (Claude fresh session, first failing step none):
+1. Lemma 1's origin: upper-chain Text section 0 uses the dyadic corner field, not barycentres; it supports only the finite-measure bound.
+2. Lemma 7: "P commutes with E, Q" is used one line later, to write M as a product with its adjoint, not in the cycling step.
+3. Lemma 9: the sentence about coincident boundary copies shared with half weight is withdrawn; each folded term lies in one closed half.
+4. Board copies: the composition of reflections is unique as a group element, not as a word; the conjugation parity is well defined.
+
+**Status: frozen.** Reopens only on a `wrong` signal.

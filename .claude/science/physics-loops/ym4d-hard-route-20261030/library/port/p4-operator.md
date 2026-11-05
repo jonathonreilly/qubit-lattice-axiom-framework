@@ -899,3 +899,17 @@ Source identities (SHA-256; bookkeeping only):
 **Named hypotheses carried:** every row of the three input tables, including the actual activity/representation, one-family, positivity, domain, restriction, chart, frame, sheet-calculus, covariance and supply inputs; P4-H-prepared and separate (A2); all cited Balaban theorem instances and printed-sentence bundles at the loci in the frontier table. `ui.md` is a completion not yet checked; `lrb.md` is a proof being refereed, used with its retained premises. `mu.md` is frozen and was not redone. This text does not certify that a prepared history meets any of these hypotheses.
 
 Written by hand by Codex. Shell/Python use was restricted to reading, source extraction, file editing and identity bookkeeping. No run discharges a proof step. **Not yet checked by another model.** Only `library/port/p4-operator.md` was edited; no prompt file, platform instruction, audit, ledger or frozen proof was changed.
+
+## Change log (check, 2026-11-05)
+
+Ported by Codex. Checked line by line by a fresh Claude session ([p4-operator-gate](../../gates/p4-operator-gate.md)): first failing step A4-F1 (L232), a naming repair with no route change; all three statements byte-identical to the source. Repairs recorded by the lead (Claude):
+
+1. **A4-F1.** No second-derivative chart bound is printed: K4 says "No second derivative of a response is taken" (CA-I 14838), and the curvature-remainder lemma (14083–14096) prints a first-derivative bound only (their text has the same looseness at 19773). Repair: the lemma's term-by-term series argument (14128–14130) also gives a second-derivative constant; choose \(C_{F'}\) at least that large where it is fixed (19411). The printed ceiling \(\alpha_2\le1/(4C_{F'})\) then gives the 11/12 line.
+2. A4 (F1): the increment lemma supplies "(i), (ii), the first member of (1.14), and (iv) in uniform form" (CA-I 19781–19786), as the source says.
+3. A4-F5: the extra factor 4 is slack; \(16C^K_9|B'|\) holds.
+4. A4-C1, A4-C2 correct; the stale labels (cf4)/(cf5) also occur at CA-I 19967–20082.
+5. **A4-C3 correct and exposes no downstream gap**: every consumer of (F5) found (29354, 29409–29506, 30575–30600, remark 20132–20149) uses bounds only; the cluster expansion needs bounds and analyticity at \(s\), separation at \(s=0\), and the value at \(s\equiv1\).
+6. A3: cite the coercivity lemma (CA-I 5950) for accretivity; add P\('_X\) membership of the hereditary representatives to the domain-inclusion hypothesis (needed for the L1 operators, 9488). A3's input A2 is "Proof outstanding" in their text; it stays a named input.
+7. A9: the "four-condition assembly reference" (CA-I 47580–47584) points to no printed display in any of the four source files; it is likely the smallness of \(\nu_J=2c_{\mathfrak g}a_0^\oplus\) at the four J-vertex stages, unprinted. The "operator theorem with the hulls \(\widehat\square\)" cited in A9 (E)–(G), (K) is not printed either. Both stay named hypotheses (P4-H-assembly, P4-H-core). Display d's coarse order disagrees with the expanded order at 48066–48075; the port follows the expanded one.
+
+Status: **checked port.** A4 faithful with repairs; A3 faithful; A9 faithful.

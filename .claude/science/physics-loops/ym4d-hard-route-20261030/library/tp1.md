@@ -45,7 +45,7 @@ The running radius is
  \check R_j=\min\{L^m:m\in\mathbb Z_{\ge0},\quad
  L^m\ge(\log\min_{0\le i\le j}x_i)^r\},\qquad r\ge2.
 \]
-It uses a running minimum, not an assumed monotone flow. A history cell at level \(j\) has physical side \(M\check R_j a_j\); a localisation cube has side \(Ma_j\). These are distinct from a lattice mesh cell of side \(a_j\). Live components and ancestry are those of the smooth-test construction in AG1. Precisely, for a component \(C\) live at level \(k\), put \(\mathsf Z_k(C)=C\), and recursively let \(\mathsf Z_j(C)\) be the union of live level-\(j\) components contained in \(\mathsf Z_{j+1}(C)\). Its lineage age is \(k-\min\{j:\mathsf Z_j(C)\ne\varnothing\}\); it is not the possibly restarted label age. Let \(\mathfrak L_j^{\ge b}(c)\) be the event that a live component of lineage age at least \(b\) meets history cell \(c\). At \(k_1\), let \(\Lambda\) be the event that such a component meets the prescribed neighbourhood of the supports of physical width \(CM\check R_{k_1}a_{k_1}\). On \(\Lambda\), let \(A\) be the largest contacting lineage age; put \(A=0\) off \(\Lambda\).
+It uses a running minimum, not an assumed monotone flow. A history cell at level \(j\) has physical side \(M\check R_j a_j\); a localisation cube has side \(Ma_j\). These are distinct from a lattice mesh cell of side \(a_j\). Live components and ancestry are those of the smooth-test construction in AG1. Precisely, for a component \(C\) live at level \(k\), put \(\mathsf Z_k(C)=C\), and recursively let \(\mathsf Z_j(C)\) be the union of live level-\(j\) components contained in \(\mathsf Z_{j+1}(C)\). Its lineage age is \(k-\min\{j:\mathsf Z_j(C)\ne\varnothing\}\); it is not the possibly restarted label age. Let \(\mathfrak L_j^{\ge b}(c)\) be the event that a live component of lineage age at least \(b\) meets history cell \(c\). At \(k_1\), let \(\Lambda\) be the event that a live component of any lineage age meets the prescribed neighbourhood of the supports of physical width \(CM\check R_{k_1}a_{k_1}\). On \(\Lambda\), let \(A\) be the largest contacting lineage age; put \(A=0\) off \(\Lambda\).
 
 ## 2. Imports and order of choice
 
@@ -119,7 +119,7 @@ Each domain has tree size \(m_j(X)\in\mathbb Z_{\ge0}\), a dependence region \(X
  |z_i|t_i<r_{\rm cx}x_j\quad\hbox{for each source meeting }X^+,
  \qquad (t_1,t_2)=(t_f,t_h).                                  \tag{2.8}
 \]
-All histories satisfy \(|e_j|\le Ce^{-\kappa m_j(X)}\). There are deterministic Gaussian energies \(e_j^G(X;z)\) on the same family, bounded by the same estimate, such that, for every \(y\notin\Lambda\) and every \(j,X\),
+All histories satisfy \(|e_j|\le Ce^{-\kappa m_j(X)}\); each \(e_j(X;\cdot)\) is independent of any source whose support misses \(X^+\). There are deterministic Gaussian energies \(e_j^G(X;z)\) on the same family, bounded by the same estimate, independent of any source whose support misses \(X^+\), and holomorphic on the discs (2.8), such that, on those discs, for every \(y\notin\Lambda\) and every \(j,X\),
 \[
  |e_j(X;z,y)-e_j^G(X;z)|
        \le Cx_j^{-1/2}(\log x_j)^q e^{-\kappa m_j(X)},\qquad
@@ -150,8 +150,8 @@ The live part vanishes off \(\Lambda\), and the failure of the required top-leve
  \sum_{b\ge0}L^{8b}\mathbb P^{(j)}(\mathfrak L_j^{\ge b}(c))
        \le C_{\rm AG}e^{-c_{\rm AG}(\log x_j)^2}.                \tag{2.11}
 \]
-We use it only at \(j=k_1\). This is the output of [ag1-draft2.md](ag1-draft2.md), §8, with the trigger input supplied conditionally by [ag1-tt-draft.md](ag1-tt-draft.md). Its named upstream inputs are (K)+(MI), (COV), (SM), (RS), (BGL), (R0)–(R3), (LT), LG1(3), and, in place of (TT), the conditional-law package (CL) with its strengthened room (5.4′).
-**Outstanding:** (CL)(P) requires derivative and Hessian bounds on the non-Gaussian conditional exponent throughout the small-field region. Its proposed analytic supplier (P-an) includes a zero-free tube for healed-region factors, (P-an)(d), not proved here. Other upstream imported estimates, including (LT), also remain imports. Neither (2.11) nor those estimates are asserted here unconditionally. The running-minimum convention is retained; if the upstream bound is first stated as \(e^{-c\check R_j}\), Lemma 4.1 yields (2.11) after reducing \(c_{\rm AG}\).
+We use it only at \(j=k_1\). This is the \(\check R\)-form of [ag1-draft2.md](ag1-draft2.md) (8.1) combined with the running-minimum step \(\min_i x_i\ge x_j-2c_2\) of this text (§4); ag1-draft2's own passage from \(\check R_k\ge(\log x_k)^r\) to the \((\log x)^2\) rate omits that step and must be repaired there. It is the output of ag1-draft2 §8, with the trigger input supplied conditionally by [ag1-tt-draft.md](ag1-tt-draft.md). Its named upstream inputs are (K)+(MI), (COV), (SM), (RS), (BGL), (R0)–(R3), (LT), LG1(3), and, in place of (TT), the conditional-law package (CL) with its strengthened room (5.4′).
+**Outstanding:** (CL)(P) requires derivative and Hessian bounds on the non-Gaussian conditional exponent throughout the small-field region. Its proposed analytic supplier (P-an) is drafted in [pan-draft.md](pan-draft.md), which recasts (P-an)(d) as a uniform Kotecky-Preiss statement, proves (P-an) as an implication, and names (L) ([nl1-L-draft.md](nl1-L-draft.md)) as its first input. None of this is refereed. Other upstream imported estimates, including (LT), also remain imports. Neither (2.11) nor those estimates are asserted here unconditionally. The running-minimum convention is retained; if the upstream bound is first stated as \(e^{-c\check R_j}\), Lemma 4.1 yields (2.11) after reducing \(c_{\rm AG}\).
 
 **STATE — LG1 and SR1.** Compatible torus measures have subsequential local limits that are periodic Gibbs states. Every state in this class is invariant under lattice translations. There are a fixed cell containing a unit ball with positive boundary buffer, constants \(Q_0\ge1,r_0>0\), and a source norm satisfying
 \(\|F\|_\sharp\le C(\|F\|_\infty+\operatorname{Lip}F)\), such that for any two real tests in that ball there is one state-independent holomorphic \(E_C(z)\) for which
@@ -162,7 +162,7 @@ We use it only at \(j=k_1\). This is the output of [ag1-draft2.md](ag1-draft2.md
 \]
 on \(\sum_i|z_i|\|F_i\|_\sharp<r_0\), for every periodic Gibbs state \(\omega\) at the datum. This includes signed tests, finite sums of translates and overlapping supports. The common normalizer, not an estimate separately normalized for each state, is essential.
 
-**LIMIT — CL1 and PH1.** Along the specified volume-first limits, centred first and second moments converge on separated test tuples. Every component under consideration has its own all-state realization by periodic Gibbs states at admitted data with \(K\to\infty\); a mixture identity alone does not suffice. The limits and realized components are normalized real functionals with the reflection-positive OS construction. Write \(\vartheta(u_1,u_2,u_3,u_4)=(u_1,u_2,u_3,-u_4)\) and \((\vartheta f)(u)=f(\vartheta u)\). The vacuum \(\Omega=[1]\) has norm one, \(\langle\Omega,[O(f)]\rangle=\sigma(O(f))\), and for real positive-time \(f\), the vector \(v_f=[O(f)]-\sigma(O(f))\Omega\) satisfies
+**LIMIT — CL1 and PH1.** Along the specified volume-first limits, centred first and second moments converge on separated test tuples. Every component under consideration has its own all-state realization, including convergence of its centred first and second moments (used in Lemma 7.1), with OS vectors built from centred fields, by periodic Gibbs states at admitted data with \(K\to\infty\); a mixture identity alone does not suffice. The limits and realized components are normalized real functionals with the reflection-positive OS construction. Write \(\vartheta(u_1,u_2,u_3,u_4)=(u_1,u_2,u_3,-u_4)\) and \((\vartheta f)(u)=f(\vartheta u)\). The vacuum \(\Omega=[1]\) has norm one, \(\langle\Omega,[O(f)]\rangle=\sigma(O(f))\), and for real positive-time \(f\), the vector \(v_f=[O(f)]-\sigma(O(f))\Omega\) satisfies
 \(\|v_f\|^2=S_2^T[\sigma](f,\vartheta f)\). In each realized component the nonnegative self-adjoint Hamiltonian \(H\) satisfies \(\ker H=\mathbb C\Omega\); uniqueness of the vacuum is not required of a mixture. Conclusions for components have exactly the qualification of this realization input, for example almost every component if that is what PH1 supplies.
 
 The order of constants is part of the hypotheses, not a consequence of this extraction argument. Retain IN1's order (SA 19469–19485):
@@ -184,7 +184,7 @@ AG's smooth-test fraction is fixed first. Its geometric constants and tile integ
 **Outstanding (IN-order):** [c4-order.md](c4-order.md) flags the need for an early uniform UM cost envelope; [in1-draft.md](in1-draft.md), Part A, is a proposed supplier with its own inputs. Writing (2.12) does not establish that envelope or erase the flagged dependency cycle.
 
 After this ordered package, fix the constants returned by FREE, PRES, REG, AMP, AG and STATE, and fix \(C_{W,0}\ge1\) and \(n_0\ge1\). Choose a new ceiling
-\(\gamma_W\le\min(\gamma,\gamma_{\rm AG})\), after \(\varrho,c_a\), so that all imported ceilings hold, the error per step in (2.1) is at most \(\min(c_0/2,1)\), and the summation bound in Lemma 4.1 is at most \(1/3\). This does not redefine the earlier \(\gamma\). Fix \(0<g\le\gamma_W\) next. Choose \(d_0(g)>0\) last to enforce all geometric separations and error bounds below. No choice depends on a later cutoff or volume.
+\(\gamma_W\le\min(\gamma,\gamma_{\rm AG})\), where \(\gamma_{\rm AG}\) is the coupling ceiling of the AG inputs, including \(g^{-2}\ge\max(X_F,X_{TT})\) (ag1-tt-draft L419), after \(\varrho,c_a\), so that all imported ceilings hold, the error per step in (2.1) is at most \(\min(c_0/2,1)\), and the summation bound in Lemma 4.1 is at most \(1/3\). This does not redefine the earlier \(\gamma\). Fix \(0<g\le\gamma_W\) next. Choose \(d_0(g)>0\) last to enforce all geometric separations and error bounds below. No choice depends on a later cutoff or volume.
 
 ## 3. Main theorem
 
@@ -333,7 +333,7 @@ for \(r/a_i\le1\) use the geometric fourth powers, and for \(r/a_i\ge1\) use exp
 \[
  |C_{>j}(p,q)|\le Cx^{-1}(a/r)^4,\quad r=|x_p-x_q|,
 \]
-because (4.1) gives \(x_i\ge x_{k_1}-2c_2\ge x/3\) throughout the run. Slices with \(i\le k_0\) have \(r/a_i\ge D/2\), so their absolute sum, with or without \(x_i^{-1}\), is bounded respectively by
+because (4.1) gives \(x_i\ge x_{k_1}-2c_2\ge x/3\) for every \(i\le k_1\), the only range used. Slices with \(i\le k_0\) have \(r/a_i\ge D/2\), so their absolute sum, with or without \(x_i^{-1}\), is bounded respectively by
 \[
  Cx^{-1}(a/r)^4D^4e^{-cD},\qquad C(a/r)^4D^4e^{-cD}.
 \]
@@ -523,7 +523,7 @@ All estimates have deterministic bounds uniform in the data. If \(e_g(d)\) is th
 
 **Lemma 7.1 (TU10 and passage to limits).** Equations (3.2)–(3.3) hold under the hypotheses of Theorem 3.1.
 
-*Proof.* The normalization statements in (3.2) are Lemma 4.1. Equations (3.1), (4.3) and (4.6), with \(x\ge(c_*/2)\log(1/d)\), give
+*Proof.* The normalization statements in (3.2) are Lemma 4.1. Equations (3.1), (4.3) and (4.6), with \(x\ge(c_*/2)\log(1/d)\) (after one further reduction of \(d_0\)), give
 \[
  0<S_2^T[\rho](f,h)
  \le\frac32\frac{16}{9}C_Gv_4^2(c_*/2)^{-2}
@@ -597,7 +597,7 @@ Ethan Sussman and Levent Alpoge, with Claude and Codex as the authors of their t
 
 **Lemma 8.1 (the proposed healing reduction is unavailable).** The healing rule alone does not supply the draft's (H), which demands a fresh failure at each step of a surviving lineage.
 
-*Proof.* At level \(i-1\), take a live component containing a creation of that step. The waiting rule excludes it from the healing operation at level \(i\). The definitions at SA 17325 include its propagated region in \(\Omega_i^c\), then in \(Z_i\), independently of the outcomes of the fresh level-\(i\) tests. Thus survival of this component at the next step does not, by the rules, demand a fresh failure. A theorem forcing such a failure from additional field constraints would be a separate input. This is the rule-level conclusion of AG1, Lemma 2.3; it is not an assertion that a particular quiet history has positive Wilson probability. ∎
+*Proof.* At level \(i-1\), take a live component containing a creation of that step. The waiting rule excludes it from the healing operation at level \(i\). The definitions at SA 17320-17325 include its propagated region in \(\Omega_i^c\), then in \(Z_i\), independently of the outcomes of the fresh level-\(i\) tests. Thus survival of this component at the next step does not, by the rules, demand a fresh failure. A theorem forcing such a failure from additional field constraints would be a separate input. This is the rule-level conclusion of AG1, Lemma 2.3; it is not an assertion that a particular quiet history has positive Wilson probability. ∎
 
 The draft's stagewise-product proof is therefore withdrawn. Even a separately assumed (H) would need a justified count of possible failure chains: a bound depending on the diameter of an arbitrary live component is not a uniform per-step branching constant. AG-k1* replaces this route.
 
@@ -617,6 +617,21 @@ The following conventions or objects had to be made explicit for the argument to
 8. The scope of the normalizer for signed sums and overlapping tests, the bilinear state difference \(\Delta\), and a packing made only of lattice translates.
 9. The summation and error shorthands \(\sigma(x),C_{>j},\varepsilon_{\rm ker},B_j,T(x),e_g\), the uniform relative-error majorant \(\varepsilon_g\), the normalization error \(a_g\), and the continuum error \(\eta_g\).
 10. The time reflection \(\vartheta\), normalized OS vacuum, qualification “realized component” from LIMIT, and domain vector \(w=(1+H)^{-1}v_f\) used in the Hamiltonian conclusion.
+
+## Change log (pass 3 fixes, lead, 2026-11-04)
+
+Applied the findings of `gates/tp1-gate.md` (Claude fresh session, first failing step none):
+1. REG now gives the energies source-locality, and the Gaussian energies source-locality and holomorphy on (2.8), with (2.9) on those discs.
+2. Lambda is the event that a live component of any lineage age meets the neighbourhood.
+3. gamma_AG is defined (including g^{-2} >= max(X_F, X_TT)); (2.11) is cited as the R-check form of ag1-draft2 (8.1) plus this text's running-minimum step; ag1-draft2 (8.1) must be repaired.
+4. The (P-an)(d) description now matches pan-draft (Kotecky-Preiss, first input (L)).
+5. LIMIT includes convergence of each component's centred first and second moments, with centred OS vectors.
+6. x_i >= x/3 restricted to i <= k_1; the bound x >= (c_*/2) log(1/d) notes the extra reduction of d_0.
+7. SA 17325 -> SA 17320-17325.
+
+The AG hypothesis rests on unrefereed drafts (ag1-draft, ag1-draft2, ag1-tt-draft, pan-draft); this does not affect the conditional implication.
+
+**Status: frozen.** Reopens only on a `wrong` signal or when an import it reads changes.
 
 ## 10. Result
 

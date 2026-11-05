@@ -51,7 +51,7 @@ These entries are working premises for drafting the TOE parts. Like the rest of 
 - **PS-11, realized frequencies.** "A statement that the law gives probability one holds in the realized history."
 
 Not in the working set:
-- PS-5, the five-mode site content, is a fallback only, used if building on cells of qubits fails at a named step.
+- PS-5 entered the working set on 2026-11-05 as its fallback text; see "Owner decision D1" below.
 - PS-8, mirror gapping, is a law to test inside CH1.
 - PS-9, the gravity response law, is a law to test inside GR1/GR2.
 - PS-10, lattice spacing equal to the Planck length, is not adopted.
@@ -84,3 +84,12 @@ The other three are not working-set entries. They are recorded here because they
 - **Non-factor states: held.** PS-3 selects one transport at factor states only; LW1 claims no more. A rule for non-factor states (PS-3m, transport by central decomposition) is not adopted; its smuggle-check caveat is that it would make "macroscopic labels persist" a premise.
 - **"Records form.": left to part TM1.** Under PS-3c no record forms in the free vacuum or in the tracial state. Where and why records form is TM1's open input TM1-i. No reading of the Record axiom is adopted.
 - **LW1's target item 3 is restated** in `TOE_ASSEMBLY.md` as existence on `Z^3 x N`, with finite-box laws as restrictions of one history. The closed-box reading is false for any dynamics with boundaries.
+
+### Owner decision D1 (2026-11-05)
+
+The question put to the owner: on the cube law of part LW1, frames on cells of one-mode sites are only site phases (`U(1)` per site), so the cube law gives no exact `SU(2)` or `SU(3)`; what should PS-5 do? The owner chose to put the fallback text in this section.
+
+- **PS-5, site content.** "Each site has the possibilities of five fermion modes; its full algebra is `Cl(10)`, presented as `M_32(C)`."
+- **The named step.** `B5B_DRAFT.md` on branch `claude/toe-assembly` (draft PR #10139; pass 1, the lead checked both proofs line by line): Theorems B5b and B5b-T. A local frame on an even cell of the cube law acts on the cell's modes by site phases. This holds whether each gate or only the whole tick must be unchanged, for register changes split at the cell, and it includes many-body frames.
+- **Check.** Tests 1-3 pass: the text names no group or target, it is closed, and it does not put in the 16 (#10027: site-bilinear `Spin(10)` on five-mode sites gives "vector class, never the 16"). Test 4 passes conditionally: the constant 5 comes from #10014 under its conditions (a)-(c), and #10014 itself calls condition (b), the Weyl-species reading, "an inserted identification, borderline".
+- **What it changes.** The text bends the Qubit axiom inside this working set only. The minimal axioms are unchanged. The law on five-mode sites is a new open item (LW1-5) of the TOE assembly.

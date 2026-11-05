@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/no_structure_of_the_update_protects_a_dark_species_because_the_mirror_number_is_shared_at_every_momentum_the_block_period_blocks_no_copy_decay_and_the_window_floor_holds_no_atom_or_remnant_2026_10_22.py
+runner_sha256: d90fccbb60a4af2bb72a8f9910c96804ffaafc2458f846d30267d71bfcce1652
+input_fingerprint_sha256: de66df53ba985ba1b48449a8cfc0af449938f67d11698e1aaefe504b34cd0672
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 12.70
+status: ok
+----- stdout -----
+== A. (a) a conserved charge carried by no light state?
+[PASS] A1 [F] one-body commutant of the cube tick at single K and jointly (K = 0, corner, diagonal, 3 random): a charge kept for moving states must commute at every K; only the identity (species number) does | K=0 16, corner pi(1,1,1) 16, diag 0.7(1,1,1) 8, random 4; joint 1
+[PASS] A2 [T] species phases, light 16 + mirror 16 (mirror pair-square group U(1)_Y x U(1)_X, cited): with NO pairing the dark subgroup (trivial on light modes) is U(1)^2; with A1's light-mirror pairing (either form) it is trivial and the group is Y, X(total) | no pairing: dark rank 2 torsion []; psi^dag psi': group rank 2, dark rank 0 torsion []; psi psi': group rank 2, dark rank 0 torsion []
+[PASS] A3 [T] every light mode has X = 1 mod 4 and i^N = exp(i pi X/2): U(1)_X and its Z4 are carried by light states (lightest carrier: the neutrino, X = -3); CL-1's species numbers are carried by each light copy at rest
+== B. (b) copy-sign states at rest: does the block / window structure suppress their decay?
+[PASS] B1 [F] the copy sign commutes with the tick at K = 0 only (rest phases mu + M for s = -1, mu for s = +1) | ||[s,Uo]|| 7e-16 at K=0, 0.524 at random K
+[PASS] B2 [F] traceless one-cube strain vertex heavy(rest) -> light(q): zero at q = 0, O(1) at a real decay's recoil q = 0.87 M (recomputes dark-matter-candidate A6) | amp q=0 6e-10, 0.1M 0.038, 0.87M 0.297
+[PASS] B3 [T+F] a block half-tick is b_e cube half-ticks and edges repeat every b_e cells, so quasienergy is kept only mod 2 pi/b_e per tick and momentum mod 2 pi/b_e; the light band (8^3) and M exceed 2 pi/b_e for b_e >= 40, so the folded light band covers the circle: no kinematic block on heavy -> light + edge quanta | light band [0.400, 2.042] width 1.642; 2pi/b_e = 0.1571, 0.0628, 0.0063
+[PASS] B4 [E] graviton width g^2 M^3/(32 pi Mbar^2) at the O(1) vertex: at the law's M (one constant, all species) tau << 1 s; tau > 8e18 s needs M < ~0.1 GeV, excluded by a heavy electron copy | M = 1.1e+18 GeV: tau = 4e-39 s; tau(1 TeV) = 4e+06 s; tau > 8e18 s needs M < 82 MeV
+== C. (c) a minimum-size atom of geometry at the window floor; gravitational bound states
+[PASS] C1 [F] tetrahedron register (s = 2, Delta = 0, regular): the all-floor state (every edge 1/8 of flat) lies in the one positive-volume component with the flat state: no frozen floor geometry | 8849/531441 positive-volume states, 1 component, D = 8849
+[PASS] C2 [F] pure register hop: the floor state leaves the floor (mean return and floor-shell weight, sum n <= 2, over t = 50..200 << 1) | return 1.8e-02, shell 3.8e-02
+[PASS] C3 [F] a stiff departure cost (quadratic bowl about flat) traps the floor state in continuous time (energy isolation, no number), but in the update's per-tick form the phase folds mod 2 pi: return <= 0.3 over the scan and < 0.1 at lam >= 2: no robust floor atom | continuous lam 1: 0.45; per-tick: 0.25:0.065, 0.50:0.145, 1.00:0.278, 2.00:0.085, 3.00:0.085, 6.28:0.034
+[PASS] C4 [T] passing: a split fires at mean edge value 4s (twice flat) and each child edge is the parent value minus s, exactly half the length: children start at flat, so the split cascade makes no floored cells
+[PASS] C5 [T+E] gravitational atom (r_B = 2 l_P (M_Pl/m)^3) is resolved above the floor edge b_e a/8 only for m < (2 l_P/l_floor)^(1/3) M_Pl; its constituents must already be stable and dark: no new protection | b_e 40: l_floor 25 l_P, m < 0.43 M_Pl, b_e 100: l_floor 63 l_P, m < 0.32 M_Pl, b_e 1000: l_floor 627 l_P, m < 0.15 M_Pl
+== D. (d) remnants stopped by the floor
+[PASS] D1 [T+E] r_s = 2GM = l_floor = b_e a/8 gives M_rem = (b_e sqrt(8 pi)/16) M_Pl; b_e is only bounded below, so the mass is supplied; T_H there is below the block band top pi/b_e: emission is not band-cut before the floor | b_e 40: 12.5 M_Pl = 2.7e-04 g, T_H 4e+16 vs 2e+17 GeV, b_e 100: 31.3 M_Pl = 6.8e-04 g, T_H 2e+16 vs 7e+16 GeV, b_e 1000: 313.3 M_Pl = 6.8e-03 g, T_H 2e+15 vs 7e+15 GeV
+[PASS] D2 [T] an edge register keeps nothing (commutant of {hop, value} = 1) and the floor is connected to flat (C1): a floor-size lump carries no number; the floor removes the horizon rather than stopping the loss | register commutant 1
+[PASS] D3 [E] holes of M_i ~ M_rem form at T_f; remnants as all dark matter need beta ~ (T_eq/T_f)(M_i/M_rem); measured A_s (n_s = 1, or the tilt carried down) gives ln beta <= -2.4e8; the needed power is ~1e6 A_s: abundance supplied | b_e 40: T_f 5.9e+17 GeV, ln(k_f/k*) 62, beta needed 1.1e-27; ln beta (n_s=1) -2.44e+08, (tilt) -2.13e+09; P_R needed 8.3e-03 = 4e+06 A_s
+verdict: (a) no charge outside light charges (A1-A3); (b) no kinematic suppression (B3), tau ~4e-39 s at the law's M (B4); (c) no floor atom (C1-C3),
+  none from splits (C4), bound states inherit constituents (C5); (d) remnant mass supplied by b_e, no number protects it (D2), beta ~exp(-2.4e8) (D3).
+GATE: no rule proposed passes. A 'floor lock' rule (a fully floored cube is not lowered/raised) would bend Admissibility/Record,
+  supply its mass through b_e and its abundance through supplied small-scale power: FAIL (items 1, 3). Dark matter stays open.
+theorems: A2, A3, B3, C4, D2; finite: A1, B1, B2, C1-C3; estimates: B4, C5, D1, D3
+elapsed_seconds 12.0
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

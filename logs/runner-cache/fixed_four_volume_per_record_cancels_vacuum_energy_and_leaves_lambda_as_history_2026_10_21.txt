@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/fixed_four_volume_per_record_cancels_vacuum_energy_and_leaves_lambda_as_history_2026_10_21.py
+runner_sha256: 9768a38b9492cc5d680eda6a3fb3b5cf05fb83bc39d7307338721eaf6341e2ce
+input_fingerprint_sha256: d6d6476020c653658e23cb5317742d49b7ae0414f38b65092ead578a6a531bc6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.79
+status: ok
+----- stdout -----
+== A. candidate (a): rule U on the frustum Regge FRW carrier (radiation + Lambda0; kappa = 1)
+[PASS] THEOREM: under rule U every vacuum term -rho_v V cancels identically from the edge equation (fixed V_n: d(rho_v V)=0)  |Delta G|/(vacuum term) 3e-16 at rho_v = 1e4..1e7 Lambda0
+[PASS] rule U conserves its constant with no secular drift: |Lbar_n - Lambda0| <= 4.2 c^2 rho_c(n) at every slab, though rho_c starts at 1e4 Lambda0; zigzag ~ c^3  max/c^2 3.92, 4.06, 4.13; end offset 1e-03, 3e-04, 9e-05 (c = .02, .01, .005); zigzag 9e-06 -> 2e-07
+[PASS] late expansion obeys Friedmann with the conserved constant: (3H^2 - rho_r)/Lbar -> 1 (w = -1 exactly)  1.00008, 1.00001, 0.99999
+[PASS] what fixes it: only the first slab's mismatch; a 1e-7 change of l_1 moves Lambda by 20%, so nothing in the rules sets it  dl1/l1 1e-09: first slab 1.0020, late 1.0024 Lambda0; dl1/l1 1e-07: first slab 1.2030, late 1.2034 Lambda0
+[PASS] matter non-conservation becomes Lambda: radiation losing 1% at one slab raises Lbar by the lost density, permanently (discrete Lambda = Lambda0 + int Q dt)  jump/lost 1.00078, 1.00017, 1.00004 (c = 0.02, 0.01, 0.005); later drift <= 0.14 c^2
+[PASS] rule U turns the split junction (residual O((Hl)^2), agents/cosmology) into a permanent kick: each synchronous 2^3 split (dust) adds rho^2/rho* to Lambda, rho* = 3/(4 pi G a^2); step-independent  kick/(rho^2/rho*) 0.9986, 0.9976, 0.9977, 0.9991, 0.9974
+[PASS] ESTIMATE: under rule U Lambda = Lambda0 + sum rho_s^2/rho* (positive, frozen once rho falls); measured needs the first rule-U split at T ~ 1 TeV; a Planck start or the cosmology probe's inflation overshoots  first split at T = 1200 GeV (g* 106.75); 60 e-folds at 539 ticks/split: 3e+110 x measured
+== B. candidate (b): per-new-cell phase conjugate to the cell count
+[PASS] EXACT (CLT): per-new-cell phases (mean m, sd s) give m/v + s/(v sqrt N): a w = -1 constant of unfixed size m plus a zero-mean 1/sqrt(N) ~ H^2 term  slope -0.490; mean 0.2980 vs m = 0.3
+[PASS] split-phase noise (independent phases; 8 sites -> 64 at double tick rate) has Fano factor F = 35.3 x ticks per split, not 1: today F ~ 4e61  F/N_c 35.25, 35.17, 35.28 (analytic 35.29); N_c now 1.0e+60
+[PASS] ESTIMATES (Sorkin conjugacy, readings U and C): only Poisson counting lands near measured; split noise is 1e+-31 off, correlated noise 1e+-116; deterministic splits give no value  Poisson F=1 2e+00, split noise (U) 3e-31, split noise (C) 1e+31, correlated (U) 3e-116, correlated (C) 1e+116
+[PASS] the Poisson version tracks: sd of Omega_L is O(1) at BBN, recombination and today, against |Omega_L(BBN)| < 0.05 (Delta N_eff < 0.3) and early dark energy < 2%  z=4e+08: 3.59, z=1090: 2.74, z=0: 1.25
+== C. candidate (c): self-tuning through the split trigger
+[PASS] a steady split rate is a constant H (de Sitter at every epoch): at T = 1 MeV the expansion would be too slow by 3.7e+17; BBN fixes H to ~10%
+[PASS] local self-tuning eps_new = lam eps_parent + k (H tau)^2: lam < 1/16 tracks (Omega at BBN >= today), lam = 1 freezes the first split's value; no lam gives "only today"  lam=0: Omega_eps(BBN) 3.42; lam=1: eps_now/eps_first 1.0667
+[PASS] de Sitter fixed points x^2 = 0.385 F(x) (x = H tau) for F = alpha x^p, alpha in [1e-2, 1e2]: x* = O(1e-3..1e3); the measured x needs alpha = 8.3e-121 by hand  x* in [3.9e-03, 2.6e+02]; measured 5.6e-61 -> alpha = 8.3e-121
+[PASS] junction self-tuning (standard theory): cancelling the split's O((Hl)^2) residual with a vacuum term needs rho_v = -rho_c at every H: no small positive constant  Hl 0.091: rho_v/rho_c -1.014, Hl 0.046: rho_v/rho_c -1.013, Hl 0.023: rho_v/rho_c -1.027
+== D. other routes
+[PASS] corner-preserving split, massless CL-2 light states: energy changes by -c(eps) K^2 E per split (smooth part loses K^2/16, zone-edge part returns most); c -> 0.0275 eps^2  eps 1.271: c 3.142e-02 (c/eps^2 0.0195), eps 0.371: c 3.746e-03 (c/eps^2 0.0272), eps 0.041: c 4.622e-05 (c/eps^2 0.0278)
+[PASS] ESTIMATE, rule U + this split (empty vacuum, thermal plasma from T_max, K = 4aE at the split): rho_L = 598 c g T_max^6/M_P^2; measured needs T_max = 16 MeV (eps 1.27) to 48 MeV (eps 0.04)  BBN floor ~5 MeV; w + 1 today -5e-66; a Planck-hot start gives ~rho_P
+[PASS] frozen sea (mu .4, b .3): number variance area-law in sharp cubes, ~sigma in smooth windows; a sharp Hubble window gives the holographic size, but it tracks and the same noise on 1 m is huge  Var/l^2 0.502, 0.503; smooth exponent 1.12; Hubble: sharp 0.16-0.47, smooth 3e-32 x measured; 1 m: 5e+25, 4e+07 kg/m^3
+[PASS] IDENTITY: rho_L/rho_P = 3/(8 S_dS), S_dS = pi/(H_L l_P)^2: a capacity rule needs 2^407.5 qubits per horizon by hand  S_dS 3.31e+122 = 2^407.5 ln2
+== E. against measurement (w = -1.03 +- 0.03; Omega_L(BBN) < 0.05; EDE(rec) < 0.02; rho_L = 1.13e-123 rho_P)
+  (a) U: w = -1 once dense splits stop, BBN/CMB fine, size = Lambda0 + sum rho_s^2/rho* + int Q (history, not rules)
+  (b) tracks or 1e+-31 off  (c) tracks, freezes the start, or needs 8e-121 by hand  (d) U + losses: T_max 16-48 MeV;
+  sea noise: tracks + local noise; capacity: restates
+supplied: frustum carrier, central tick, matter -E T, kappa = 1, rule U itself, split construction and threshold, the CL-2 tick
+  at mu, b; empty vacuum and thermal plasma (D), split-phase independence, self-tuning families, unit map, LCDM, measured numbers.
+elapsed_seconds 1.1
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

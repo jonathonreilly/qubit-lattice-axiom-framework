@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py
+runner_sha256: 09778ed280c68067d6ba9f478d9331824a2b997de6d1397fb2d950ccc3fc4a96
+input_fingerprint_sha256: 730e3807f91b99b79681f4b8a7fa5b541f3ac7ac317156da8547fb1a7b1f868d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.67
+status: ok
+----- stdout -----
+== A. the funnel's ends
+[PASS] A1 [T+D] the star rule sum_x P_3/2(x-1,x,x+1) is a sum of rank-4 projectors and equals the Majumdar-Ghosh form N/2 + (4/3) sum S.S(x,x+1) + (2/3) sum S.S(x,x+2) (literature: Majumdar-Ghosh 1969); two zero-phase folds, gapped  |P^2-P| 6e-17; zero modes 2,2,2; gaps 0.539, 0.467, 0.426
+[PASS] A2 [T+D] uniform odds are the funnel TOP: every star is spin-3/2 (energy 1 per site, the maximum), an exact eigenstate of the star rule and of any SU(2)-blind rule, so the fold never starts from it; the update's hop breaks SU(2) and moves it off the top within about one tick (fidelity under the N=12 XX hop at t=0.25,0.5,1,2)  |H psi - N psi| 2e-15; E_max/N 1.0000; fid 0.834, 0.514, 0.203, 0.264
+[PASS] A3 [T+D] the update's sea sits low on the funnel (star energy per site, infinite chain 0.0756 in C1); under the fold rule's own unitary its weight on the fold manifold is conserved exactly ([H, P_fold] = 0) and falls with N (~0.91 per site): unitary odds never complete a fold, an energy sink is needed (records cannot be one: they never condition the odds)  e_sea N=8,10,12: 0.0645, 0.0685, 0.0707; fold weight 0.7862, 0.6597, 0.5408
+== B. what sets the fold's speed: the stiffness of a fold order parameter
+[PASS] B1 [T] adiabatic stiffness of a gap-opening fold order parameter m on a sea with gapless-set codimension d: Z(m) = int rho(e) e^2/(4(e^2+m^2)^(5/2)) de, rho ~ e^(d-1), so Z = c_d m^(d-3): d=1 (a surface of gapless modes) a pole m^-2, d=3 (Dirac points) only log(1/m); the unfolded point is at infinite field distance iff d = 1  c_1 = 1/3, c_2 = 2/3, d=3: log + -4/3 + log(2)
+[PASS] B2 [D] lattice check of the pole order, ratio [Z(0.1)-Z(0.2)]/[Z(0.2)-Z(0.4)] (4 for m^-2, 1 for log): 1D dimer chain and the 3D half-filled nearest-neighbour cubic sea (nested Fermi surface, fold = staggered gap) have the pole; a 3D lattice Dirac sea (point nodes, the update's light-band type) does not  1D 4.04, 3D nested 4.00, 3D Dirac 0.91
+== C. 1D star-rule toy (pole present): V and z computed on the dimer path
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/land-fold-inflaton/scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py:180: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  return sum(quad(fn, e[i], e[i + 1], limit=200, epsabs=0, epsrel=1e-12)[0] for i in range(len(e) - 1))
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/land-fold-inflaton/scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py:180: IntegrationWarning: The maximum number of subdivisions (200) has been achieved.
+  If increasing the limit yields no improvement it is advised to analyze 
+  the integrand in order to determine the difficulties.  If the position of a 
+  local difficulty can be determined (singularity, discontinuity) one will 
+  probably gain from splitting up the interval and calling the integrator 
+  on the subranges.  Perhaps a special-purpose integrator should be used.
+  return sum(quad(fn, e[i], e[i + 1], limit=200, epsabs=0, epsrel=1e-12)[0] for i in range(len(e) - 1))
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/land-fold-inflaton/scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py:180: IntegrationWarning: The integral is probably divergent, or slowly convergent.
+  return sum(quad(fn, e[i], e[i + 1], limit=200, epsabs=0, epsrel=1e-12)[0] for i in range(len(e) - 1))
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/land-fold-inflaton/scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py:180: IntegrationWarning: Extremely bad integrand behavior occurs at some points of the
+  integration interval.
+  return sum(quad(fn, e[i], e[i + 1], limit=200, epsabs=0, epsrel=1e-12)[0] for i in range(len(e) - 1))
+[PASS] C1 [T+D] on the dimer path (hop 1 +- delta; delta = 0 the sea, delta = 1 the fold) the star energy is a monotone funnel from V0 to 0, V0 - V ~ delta^2 ln^2(1/delta), and the one-loop stiffness has the pole z = 1/(24 pi delta^2); Wick reduction checked against a 10-site Slater state, correlators against a 400-site chain  V0 0.07559; V(0.1) 0.06049; z delta^2 at 1e-9: 0.013263 (1/24pi 0.013263)
+[PASS] C2 [D] slow roll on the computed V_star and z (canonical chi = zeta int sqrt(z) d delta, zeta = (J a)^-1/2 /(M_P a_r), M_P a = 1 at the flat rung): the fold is critically slowed near the sea, V(chi) is an exponential plateau, n_s ~ 1 - 2/N independent of the coupling and the rung, r ~ 2 zeta^2 z0/N^2; the plateau ends (eps = 1) before the fold completes (graceful exit)  rung 0: n_s 0.9631 r 7.0e-06 delta* 5e-04 end 0.05; rung 2: n_s 0.9633 r 4.1e-07 delta* 1e-04 end 0.02; rung 4: n_s 0.9634 r 2.5e-08 delta* 2e-05 end 0.01
+[PASS] C3 [T] per-split factor of this clock: lam = 2^(n_s-1) = 2^(-2/N), not constant (running -2/N^2); Planck's range is met at N* = 55, ACT's 0.974 needs N* = 77 (same as every exponential plateau, act-tilt)  lam(55) 0.9751; running -6.6e-04; N for ACT 77
+[PASS] C4 [T+E] amplitude: A_s = gamma V0 N^2 2^(-2r)/(pi^2 z0) fixes the fold rung, ~20 rungs above the cell for fold coupling gamma = 1 (gamma supplied; rung = 19.8 + log2(gamma)/2); then H/M_P and r are tiny  2^-2r 1.20e-12, rung 19.8, H/M_P 2.5e-13, r 6e-18
+[PASS] C5 [T] if the split births children unfolded (share x), the per-split vacuum-energy factor is q = 1/8 + 7x/8: x = 1 is exact de Sitter with no exit, constant x < 1 is power-law (r = 16 eps, inflaton-design B1): the re-seeded unfolded share is not a clock; the clock needs the split to carry the fold order (children inherit)  x for q = 0.9760: 0.9726; r = 0.28
+== D. the update's sea: an isotropic Dirac band (point node), d = 3
+[PASS] D1 [T+D] with the stiffness only logarithmic, the plateau curvature is eta ~ -sqrt(c2/(V0 zeta^2 z1 N)) (log asymptotics): at N* = 55 the fold is fast at the flat rung and worse at coarser rungs (zeta = 2^-r); n_s = 0.965 would need zeta ~ 50, a cell far below the Planck length, against M_P a = 1 (unit map)  rung 0: eta -0.88 n_s -0.76 at ln m* -95; rung 4: eta -13.99 n_s -26.97 at ln m* -1537; zeta needed 50
+[PASS] D2 [E] fold speed in ticks: a gapped local fold relaxes in ~1/gap ticks, a split takes >= ln2/(H a) cell times, so without the pole the fold finishes 1e4 times within one split: no clock (the lattice eta problem, inflaton-design C1)  gap 0.426; cell times per split >= 3.6e+04; folds per split >= 2e+04
+== E. reheating: misfolds
+[PASS] E1 [T+E] the fold rule is >= 0 and vanishes only on folds, so all plateau energy that leaves the coherent mode sits in misfolds (domain walls: free sites, matter in the neighbourhood reading); full conversion of V0 gives a dense misfold gas (walls per site <= 2 V0/gap_pair), reheating at the fold scale, then diluted by splits as matter  V0 0.0756; pair gap (N=12) 0.426; walls/site <= 0.36
+supplied: star rule; dimer path (one-loop mean field); J a = sqrt3; M_P a = 1 at the flat rung (unit map); fold rung; gamma = 1; N* = 55; Dirac ball cutoff; fold gap m_f = 1; semiclassical FRW with Hubble friction
+elapsed 4.3s
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

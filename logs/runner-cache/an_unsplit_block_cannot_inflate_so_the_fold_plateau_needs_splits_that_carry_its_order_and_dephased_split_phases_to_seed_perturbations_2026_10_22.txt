@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/an_unsplit_block_cannot_inflate_so_the_fold_plateau_needs_splits_that_carry_its_order_and_dephased_split_phases_to_seed_perturbations_2026_10_22.py
+runner_sha256: 4a992527277acb249a6c49ebd0c376fc3f597ae796310df9c20051056fbfd0f5
+input_fingerprint_sha256: 0b8ffe7279f611630996c057ef75b46e8829f1eb193debb1d6b1ece562cfd425
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 6.01
+status: ok
+----- stdout -----
+== A. candidate: inflation inside one unsplit block
+[PASS] A1 [T] window: an unsplit block's edges span (4+Delta)ln2 e-folds floor-to-top, (1+Delta)ln2 from birth; 60 e-folds needs Delta >= 82.6 (floor) / 85.6 (birth), and a hold on the 4s trigger; released, children at parent-s >= 4s split at once | Delta_min 82.56/85.56; Delta=0 gives 2.77 e-folds; burst 86 generations
+[PASS] A2 [T] dilation gauge: with the tied lapse the plateau is V0 per site per tick, rho ~ V0/l^4; read in the vacuum's own units (CL-3, M_P l = 1) aH is constant: zero horizon-exit e-folds for any stretch; with G fixed in proper units rho ~ a^-4 and the patch leaves no horizon either | horizon-exit e-folds over 60 edge e-folds: vacuum-units 0, proper-G -60
+[PASS] A3 [T] no-go: a fixed site set with per-site energy ~ l^p (p <= 0 for bounded per-tick energy, -1 tied lapse) has w = -p/3 >= 0; acceleration needs w < -1/3, so e-folds need new sites: 60 e-folds = 86.6 split generations DURING the plateau. The candidate fails for every Delta | w(p=-1) 1/3, w(p=0) 0; generations 86.6
+== B. the split must carry the fold order (IN-1)
+[PASS] B1 [T] site-zone passing gives a parent staggered order zero overlap with the child's (nested-prefold E1): children unfolded, x = 1, q = 1/8 + 7x/8 = 1: de Sitter with no exit; after reheating every split would re-seed V0, so NO folded vacuum survives a split without order carriage | overlap 0; q(1) 1.0
+[PASS] B2 [T+D] IN-1 carries each order's total momentum: in cell units the tick is static between splits and the split divides the order velocity by 8, so friction is impulsive with mean drift c = 3ln2(f/(1-f)+1/2) = 27ln2/14 x (-V'/3H) | c exact 1.3368, stepped 1.3380
+[PASS] B3 [T] plateau attractor is friction-blind: with N = N_std/c, P(N) = V0 N^2/(12 pi^2 mu^2) at leading order, so n_s(N), r(N) and A_s(N) do not depend on c (impulsive or continuous friction alike) | P(N) = N**2*V0/(12*pi**2*mu**2)
+== C. the nested sea's density-wave fold: potential, slow roll, amplitude
+[PASS] C1 [T+D] rederived (nested-prefold C): simple-cubic DOS, gap equation 1 = 3g int rho/E at every g > 0, cranking pole M -> rho0/(12 D^2), released energy W ~ D^2 ln^2(1/D): exponential plateau | rho0 0.14267; M D^2 0.0118894; D*(g=.5) 0.641, D*(1) 2.300
+[PASS] C2 [D] slow roll on the computed V and M at N* = 55 (rung FITTED to A_s): n_s = 1-2/N, eps = 1 before D* (graceful exit) | g=0.5: n_s 0.9636 r 3e-17 D_end/D* 3.8e-05; g=1.0: n_s 0.9636 r 3e-18 D_end/D* 1.3e-05
+[PASS] C3 [T+E] self-consistent N* (instant reheating, k* = 0.05/Mpc, Planck-2018 matching formula) with the A_s-FITTED rung: the low plateau (H ~ 1e-13 M_P) forces N* ~ 47, not 55 | g=0.5: N* 47.4, rung 18.4 (FITTED), H/M_P 7.6e-13; g=1.0: N* 46.8, rung 20.2 (FITTED), H/M_P 2.3e-13
+[PASS] C4 [E] predictions not fitted: n_s at self-consistent N*, r, running; vs Planck 0.9649(42), ACT+DESI 0.974(3), r < 0.036, running -0.0045(67) | n_s 0.9572 (-1.8 sig Planck, -5.6 sig ACT); r 5e-18; running -9.1e-04
+== D. perturbations through splits (mode of the order field, cell units, H = 1)
+[PASS] D1 [T] the register's passing (vacuum to vacuum, each excitation to the same) maps every mode adiabatically and the tick is static in cell units, so occupations never change: superhorizon variance falls x1/4 per split and the vacuum seeds NO perturbation (A_s = 0); IN-1's sudden carriage of the order field instead gives |beta|^2 = (4-1)^2/16 per sub-horizon mode per synchronized split | adiabatic k^3|u|^2/BD after 16 splits 2.3e-10; sudden |beta|^2 0.5625 (9/16)
+[PASS] D2 [D] continuum reference (smooth a^3 weight) reproduces Bunch-Davies H^2/2k^3; synchronized IN-1 carriage heats before exit and saws the spectrum with period ln2 in ln k | smooth R 0.9999; synchronized: mean R 17.4, first-harmonic 1.30
+[PASS] D3 [D+E] dephased splits (block split phases spread sigma e-folds; mode sees the summed cell count): mean R = O(1) (rung shift log2(R)/2 < 0.2) and the ln2-periodic modulation dies as sigma grows; < 0.03 needs sigma >~ 0.35 e-folds (bound order of a few %, Planck log-oscillation search, approximate) | gauss0.1: R 1.78 A1 0.810; gauss0.2: R 1.17 A1 0.297; gauss0.35: R 1.27 A1 0.007; uniform0.0: R 1.24 A1 0.318
+[PASS] D4 [E] the laws' own spread (Poisson register model of spectral-tilt, per-level (ln2)^2/(m s), m s <= 2034, random walk over the 22-42 levels since a Hubble patch's common ancestor) falls short: a dephasing source is still needed | sigma_law 0.072-0.100 e-folds vs required ~0.35
+== E. exit, reheating, vacuum standard
+[PASS] E1 [E] after exit the order oscillates about D* (a minimum); amplitude-mode frequency vs the pair edge 2D*: at or above the edge it decays into the gapped sea's quasiparticle pairs (fold-sea matter); fold-inflaton E: misfolds <= 0.36 walls/site | omega_amp 5.474, 2D* 4.601, ratio 1.19 (adiabatic mass; non-adiabatic near the edge)
+[PASS] E2 [T] vacuum standard read as the lowest state over orders (folded): plateau departure V0 drives H, zero after exit (Lambda stays a separate supplied constant); read as filled-negative modes (unfolded) the departure is 0 | V0 (g=1) 0.1673 per site
+== F. split-trigger consistency under IN-1
+[PASS] F1 [T+E] the plateau rides the ordinary 4s trigger: one generation = s steps = ln2, H a = H/M_P per finest tick far below the edge-rate cap and inflaton A1 (H a < 1.93e-5); window and Delta unchanged | H a 2.3e-13; ticks per split ~3.0e+12; generations in N* 68
+supplied: g (0.5, 1), fold rung (FITTED to A_s), J a = sqrt3, M_P a = 1, Hartree, instant reheating, g_* = 106.75, mode speed 1, dephasing sigma (scanned)
+elapsed 4.8s
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

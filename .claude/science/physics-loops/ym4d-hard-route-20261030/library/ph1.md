@@ -594,3 +594,13 @@ Definitions supplied explicitly: the oriented bond configuration space and Wilso
 **Source verification.** SA denotes `YM4_sketch_500.tex` at `31a47c543775`, credited to Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text. The index README, relevant rows and neighbours of chunks 03, 04, 23, 28 and 29, and the phase obligations were used before reading the raw passages. The proof-bearing excerpts checked here are SA 3195–3751, 4179–4194, 4486–4567, 25375–25391, 25715–25734, 25905–25958 and 30866–31527. These contain detailed conditional proofs, not a new phase construction supplied by this part. SA's PV4 section explicitly assumes PV3; Lemma 9 retains the checked note's derivation of PV3. For comparison, YM3_I 77468–77559 and 78224–78323 were read: the former has the three-dimensional inverse-distance rate, and the latter the same vacuum-density argument. Neither substitutes for the four-dimensional estimates above. CA-I was fetched as requested. No CA-I/II/III theorem is imported or quoted here; the skeleton's broad CA-II range is not used to discharge a step. Raw sources were fetched once into `/tmp`; none was read whole. No computer-assisted step or run discharged a proof.
 
 This assembled part is **not yet refereed as a whole part**. The earlier check of `cluster-port.md` remains attributed to Claude; Lemma 10 and the present assembly are not covered by that earlier check. This is research text, not an audit, and grants no status.
+
+## Change log (pass 3 fixes, lead, 2026-11-05)
+
+Applied the findings of `gates/ph1-gate.md` (Claude fresh session, first failing step none):
+1. The CL1 import is read as CL1 Theorem 9(1) (convergence along a subsequence) with nu_j drawn from the whole translation-invariant DLR class, covered by CL1 Lemma 2.
+2. Clause 3 also gives each component its spatial translation unitaries and the cube cone, by CL1 Theorem 9(3)-(4) applied to the component's realizing pair (rho_j, nu_j); RO1 and WR1 read them from here.
+3. Under the pullback convention the identity at line 131 reads theta_R tau_{-d+} = theta_{R+1}; either form gives T_+ >= 0.
+4. The R_0 at line 548 is distinct from Lemma 8's.
+
+**Status: frozen**, as a conditional implication from LG1, SR1, CL1. Reopens only on a `wrong` signal or when an import changes.

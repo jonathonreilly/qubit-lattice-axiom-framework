@@ -691,3 +691,12 @@ Corrections and clarifications made in this distillation:
 8. Corrected the skeleton's compressed Y3 locator for UI: the insertion propositions are at L79104–79201 and L79374–79443, outside its L75578–77017 rotation range. The source record distinguishes the local endpoint proof from the outline's dilation proof.
 
 No additional unresolved step was found in the deductions from these named imports. **Outstanding** marks above concern the actual imported D1 and TU10 estimates; realization and extension remain explicit hypotheses. This is a hand-written distillation of checked notes, **not yet refereed as a whole part**, not an audit, and it grants no scientific status. No computer-assisted step is used.
+
+## Change log (pass 3 fixes, lead, 2026-11-05)
+
+Applied the findings of `gates/ro1-gate.md` (Claude fresh session, first failing step none):
+1. H-C (components' Hilbert-space and cone interface) comes from CL1 Theorem 9(3)-(4) applied to the realizing pair, as recorded in PH1 clause 3 (PH1 change log 2).
+2. Lemma 3 assumes all entries of F, G strictly above eta/4, which its proof uses.
+3. The plate exponent wp = 5 is not load-bearing: with SA's wp = 9 Theorem 6 still removes every |m| >= 2 through TU10, and Lemma 7 needs only a linear bound.
+
+**Status: frozen**, as a conditional implication. Reopens only on a `wrong` signal or when an import changes.

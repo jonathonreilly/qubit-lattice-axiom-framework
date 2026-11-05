@@ -438,3 +438,11 @@ Corrections and explicit completions made in this distillation:
 6. Wrote out slab exhaustion in the density construction, the graph-domain criterion and adjoint relation, general-test positivity, the ordered-tuple approximation in cyclicity, and the locality cutoff passage. Explicitly distinguished the slab integration variables from the original insertion positions, and the fixed initial regularizer from the vanishing boundary regularizers. These complete compressed steps in the checked note without changing the theorem.
 
 No internal **Outstanding** step remains in this conditional argument after the hand check. Availability of H1–H5 is not proved here; their upstream dependencies remain imports. This is a distillation of a checked direct proof, with the listed completions. It is **not yet refereed as a whole part**, and grants no scientific or audit status.
+
+## Change log (pass 3 fixes, lead, 2026-11-05)
+
+Applied the findings of `gates/wr1-gate.md` (Claude fresh session, first failing step none):
+1. The components' cube cone comes from CL1 Theorem 9(3)-(4) at the realizing pair, via PH1 clause 3.
+2. WR1 claims a unique vacuum, not the Wightman cluster property; T0 clause 4 does not need the latter.
+
+**Status: frozen**, as a conditional implication from SR1, CL1, RO1, PH1. Reopens only on a `wrong` signal or when an import changes.

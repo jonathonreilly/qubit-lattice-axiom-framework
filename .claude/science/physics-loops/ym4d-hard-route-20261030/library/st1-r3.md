@@ -1111,7 +1111,7 @@ Applied the findings of `gates/st1-gate.md` (Claude fresh session, first failing
 6. The exponent condition q > p0 + 2r_R is attributed to ST1, with SA's own conditions stated.
 7. K_tw raised from 32 to 64 times e^{4 delta_T} K_T (about 52 is needed); margins hold either way.
 
-**Status: frozen**, as a conditional theorem with three named Outstanding items: CI (NL1/LF1; see rows 273 and the TD draft), F-measure and F-contour. Reopens only on a `wrong` signal or when an import it reads changes.
+**Status: REOPENED (2026-11-05)** by a `wrong` signal: [f-meas-draft.md](f-meas-draft.md) Lemma FC6 shows that with the comb representative of line 41 the conditional mean can leave the test ball (|F_p| >= 2(delta'_j + h_j)), and proposes Amendment CV (the mean-contour axial representative, SA 9669-9676) touching lines 41, 128, 276-277, 339, 345, 581, 1064. Until CV is distilled and refereed, the theorem below is frozen except at those uses. Previously: frozen, as a conditional theorem with three named Outstanding items: CI (NL1/LF1; see rows 273 and the TD draft), F-measure and F-contour. Reopens only on a `wrong` signal or when an import it reads changes.
 
 ## Result
 

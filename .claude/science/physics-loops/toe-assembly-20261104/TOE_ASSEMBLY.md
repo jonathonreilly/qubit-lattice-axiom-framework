@@ -88,6 +88,7 @@ The owner approved this on 2026-11-04: "im good with the skelleton proposal but 
 | PS-10 | Not adopted | `G a^{-2}` stays a target of GR1. |
 | PS-11 | In the working set | A statement of law-probability one holds in the realized history. |
 | PS-1c, PS-3h, PS-3c, PS-6r, PS-7r, PS-11c | In the working set (owner 2026-11-04) | Refinements from LW1, each checked for smuggled physics. Section 3.2. |
+| PS-Ar | In the working set (owner 2026-11-04) | Admissibility's "nearest-neighbor conditions" are the state of the one-tick neighbourhood of influence. Section 3.3. |
 
 The full text of each entry, with its reasons, follows.
 
@@ -184,6 +185,17 @@ Three passed as written. Three failed one test and were rewritten; the owner cho
 
 The same text is in PR #10140, `docs/CANDIDATE_LAWS.md`, subsection "Refinements from part LW1". Parts cite these as "under PS-1c" and so on. Results in `LW1_DRAFT.md` that used the old wording of PS-6r (no plaquette layer, one electric layer) or PS-7r (the free-tick sea as the vacuum) are restated in the distilled LW1.
 
+
+### 3.3 Owner decisions on LW1, round 2 (2026-11-04)
+
+The same text is in PR #10140. The pass-3 referee of LW1 left four readings for the owner. On the first, the owner wrote: "that was never intended to be only nearest neighbors as in direct connections, but "neighborhood" meaning local influence". The owner then chose the text below.
+
+- **PS-Ar, reading of Admissibility.** "In Admissibility, the nearest-neighbor conditions of a site are the state of its neighbourhood of influence: the sites and links from which the update can reach it within one tick. This region contains the site and its six neighbours." Check: passed. It is the owner's intended meaning. It fixes no target, its extent is definite (one tick of the update), and it adds no structure. Its effect is that Admissibility's content rests on the locality of the update (PS-1). It replaces the shell-only reading, which LW1's distillation showed false for the cube law: two states with the same six-neighbour shell lock the centre with different laws.
+
+The other three are not working-set entries. They are recorded here because they bear on the entries above.
+- **Non-factor states: held.** PS-3 selects one transport at factor states only; LW1 claims no more. A rule for non-factor states (PS-3m, transport by central decomposition) is not adopted; its smuggle-check caveat is that it would make "macroscopic labels persist" a premise.
+- **"Records form.": left to part TM1.** Under PS-3c no record forms in the free vacuum or in the tracial state. Where and why records form is TM1's open input TM1-i. No reading of the Record axiom is adopted.
+- **LW1's target item 3 is restated** in `TOE_ASSEMBLY.md` as existence on `Z^3 x N`, with finite-box laws as restrictions of one history. The closed-box reading is false for any dynamics with boundaries.
 ---
 
 ## 4. Plan of the derivation
@@ -209,7 +221,7 @@ Format per part: (a) main statement; (b) premises and imports; (c) sources, with
 (a) **Statement.** There is a law `L = (U, rho_0, Act)` — an update `U` as in PS-1, an initial state `rho_0` with no records (PS-4), and an actuality and formation rule `Act` (PS-3) — such that, for every finite box `Lambda` in `Z^3` and every tick `n`:
 1. (*Admissibility*) for every site `x`, the conditional law of the possibility a record forming at `x` locks depends only on the conditions on the six neighbours of `x` [**open input LW1-i**: the plain reading that "conditions" include the joint state of the neighbourhood after the last gate layer], and the map from conditions to law is covariant under translations and proper cubic rotations;
 2. (*Record*) each site carries at most one record, and records are permanent;
-3. (*Consistency*) the finite-box laws are consistent under inclusion and have a limit on `Z^3 x N` [**open input LW1-ii**: infinite-volume existence for the chosen `Act`];
+3. (*Consistency*, restated by the owner 2026-11-04, section 3.3) the law exists on `Z^3 x N`: the update is an automorphism of the quasi-local algebra, the formation rule is a function of the state, and an actual history exists whose one-time laws are the Born laws and whose steps respect the half-tick supports; finite-box laws are the restrictions of that history. [The earlier wording, "the finite-box laws are consistent under inclusion", is false for closed boxes under any dynamics with boundaries (`LW1_REFEREE.md` section 3.G).];
 4. (*Uniqueness up to choice*) the specifications S fix `L` up to the named free constants, listed with the parts that read them.
 
 (b) **Premises.** All four axioms; `realized_state_primitive`; `kinetic_isotropy_primitive` (tick graining); PS-1 to PS-4 (proposals). Imports: none.

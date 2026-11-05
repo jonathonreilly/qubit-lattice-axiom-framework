@@ -77,7 +77,7 @@ In IN1 row 3 choose the final reference ceiling \(\epsilon_*>0\) and
 
 \[
  16G r_R<\rho,\quad 16G\epsilon_*<\rho,\quad
- \exp\!\left(\frac{A(\epsilon_*+16G r_R)}{L-1}\right)<2,\quad
+ \exp\!\left(\frac{A^2(\epsilon_*+16G r_R)}{L-1}\right)<2,\quad
  A\eta|h|\le\tfrac14\quad(\|h\|_X\le4r_R).
  \tag{3}
 \]
@@ -251,7 +251,7 @@ also dominating the Wilson constants below.
 
 ## 3. A complex Wilson pairing bound
 
-We prove a stronger bilinear version of **(Pair)**. For
+We prove a bilinear version of **(Pair)**, with the maximum taken over a bond's plaquette stencil rather than over the row carriers reading the bond; DR Theorem 4 (dr.md L201, L210) and (40) below use (Pair) only through \(\|h\|_{X,w}\), so this is the form DR uses. For
 \(\|a\|_X\le r_R\), and arbitrary test fields \(v,u\),
 
 \[
@@ -826,3 +826,17 @@ dependence on \(\bar\kappa\) is the displayed \(B\), the parameter
 length floor, and the later solution/source radii. The separate
 admission and transport obligations in DR remain. This result grants
 no audit or scientific status.
+
+## Change log (freeze, 2026-11-05)
+
+Written by Codex in one proof-lane round on the Mini. Refereed line by line by a fresh Claude session ([rows-gate](../gates/rows-gate.md)): first failing step none, 4 findings, none fatal. Applied by the lead (Claude):
+
+1. Radius condition (3) uses \(A^2\), as §2's step-by-step product needs; \(\epsilon_*,r_R\) are chosen after \(A\), so the order is unchanged.
+2. The general-\(n\) absolute Taylor bound (5) is a sketch; (8) and (10) need only \(n\le2\), which frozen PW Lemma 3 supplies. General \(n\) is used only for ABS, which therefore rests on that sketch.
+3. (Pair) is stated in the plaquette-stencil form, which is the form DR uses.
+4. The rate budget's second reservation for intermediate-pillar sums is redundant (PW (7.1) pays them); the budget closes either way.
+
+Referee checks kept: the cubic trace identity (17), commutator sum (18), the 16 insertion terms of (13), the multiplier normalization against CP12 (1)–(2), the \(M_s\) walk bound from PW (6.2), (6.3), (7.1), (8.2), the eight derivative terms of §6, and the ball conditions (41) against DR (9). The \(b_0\) enlargement creates no cycle. SA ym4.tex L10562 and L11623 read as quoted. Dependence on unfrozen nl-r9, o1-decoupled and the a3-derivative gate is specification only.
+
+Status: **frozen.** Proved, conditional on frozen PW, P82, DR, CP12, IN1 and the declared envelope: (Rows) on the complex envelope; full-gradient (Pair) in stencil form; \(\|M_s\|,\|H^{\mathsf T}\|\le B\); nl-r9 (4.2); NL for exactly dr.md (4); ABS with its general-\(n\) bound sketched. DR admission, LIFT and S-loc remain open.
+

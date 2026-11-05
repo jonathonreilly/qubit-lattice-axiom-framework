@@ -845,3 +845,18 @@ The actual vertex functional is analytic on a neighborhood of the closed
 \(\sigma\)-polydisc at the stated local hereditary representatives,
 without a global extension. This is a research proof of that conditional
 proposition; it grants no retained or audit status.
+
+## Change log (freeze, 2026-11-05)
+
+Written by Codex in one proof-lane round. Refereed line by line by a fresh Claude session ([lrb-gate](../gates/lrb-gate.md)) against their statement and Route (CA-I 8110–8389), their partial proofs (8391–8759), the corollary and floors (7827–8108) and every use (CA-I 8760–8837, 9208–9353, 9615–9791): first failing step none; every constant and exponent re-derived; no cycle in the order. Clarifications recorded by the lead (Claude), each one sentence and none changing an estimate:
+
+1. \(d\mu_0\) is the normalised unit Gaussian on \(X\); the steps giving \(\det(I-D_X)^{-1/2}\) and \(I-D_X\ge I/2\) use this.
+2. (4a), (4b): the lemmas the account cites there (the perturbation lemma (i)–(iv), the positivity lemma, the lemma for (2.16)–(2.17)) are not printed in the account. This text proves its own full versions, (21)–(25) and (34), matching the account's descriptions.
+3. \(t\le1/4\) holds since \(S\ge1\) and \(\gamma_*\le B\); \(t\le2/5\) would suffice.
+4. (3) also uses (a) and (c), through (2σ), as the account's wording omits.
+5. The analytic "finite combination" includes the \(t(Y)\), \(\tau(Y)\) contour integrals in \(f\); (36) is uniform on the contours.
+6. CA-III 111058–111064 is their count of open intermediate statements, not a clause-(0) step.
+7. The consumer at CA-I 9208 cites a "hypothesis (R9)" of 4.4 that does not exist; read as (b), the constants here serve it.
+8. The "(2.14) setting" is Balaban CMP 116 (cluster expansion), not in the local folder; its bounds are taken as the account reads them.
+
+Status: **frozen.** Their 4.4:prop-local-real-base ("Proof outstanding", and missing from their own open lists) is proved as stated and as used, under (a)–(d) and the CMP 116 (2.14) setting. Upstream premises not proved here: the symmetry lemma, W′, the cell-resolvent and coercivity lemmas, the CMP 116 bounds. Candidate contribution to Sussman and Alpoge; not sent.

@@ -132,7 +132,7 @@ The following are hypotheses, not consequences of a source label.
   \ \xi_y^3|\dot J|,\ |\dot u(y)|
         \le C_4e^{-\theta_4d(y,y_c)}|e_c|.                              \tag{15}
   \]
-  The current member is required independently of a first-derivative bound on \(H\). P82° is the principal analytic import still open on this route. We use the stated implication to (15), not an unproved inference from the name P82.
+  The current member is required independently of a first-derivative bound on \(H\). P82° is now proved and frozen ([p82.md](p82.md), gate first failing step none); the remaining matching item on this route is M1. The current member of (15) is proved in a3-derivative §7.3 only at bonds whose plaquettes lie in \(\Omega_0\), so (15) is asserted only at interior elements, which is the only place ST1 uses it. We use the stated implication to (15), not an unproved inference from the name P82.
 * **PROF/RCG4.** A real critical background has normalized curvature and current bounded by \(C_P\max_\tau e^{-\delta_Pd(x,\tau)}|\partial V(\tau)-I|\). On a cube of side \(s\), with its side-\((s+6)\) enlargement, curvature \(<wL^2\eta_i^2\), matrix divergence \(<2L^3w\eta_i^2\), and \((s+2)L^3w<c_{\rm rg}\), RCG4 gives a real gauge with \(|A|,|\nabla A|<4L^3B_*(s+2)w\). These are the explicit profile and cube-gauge inputs of `a3-profile.md` and `a1-balaban.md` §3.8.
 * **OPS/SLICE/UNQ.** All inverses in Lemma 6 exist on the declared regular-pair ball. The repaired local Landau chart and its tangent factorisation (`a3-derivative.md` Lemmas 6.1–6.3) hold. The straightening and response fixed points have unique small solutions, uniformly on their stated balls. No inverse is inferred from formal matrix notation.
 * **DR, including its specification at one.** An actual regional response \((H,K)\), holomorphic in its complex input pair, datum and \(|s_\Delta|<e^{\bar\kappa}\), is given, with reality, covariance, restriction consistency, common-lift transport and splitting over face-connected components. At \(s=1\) it uses the reduced action and multiplier formulas of Lemma 6. For source \(S\), it obeys
@@ -534,7 +534,7 @@ Use \(|c_2-c_1|\le\eta^2\beta_1\),
 \(|D_1|\le(1+\epsilon_*)\eta s\). Dividing by \(\eta^2\), the right side is \(<2s\), using only \(\eta\le1/13\) and \(\beta_1,s\le1/60\). In the plaquette calculation the four transported generators have norm \(<1.01s\), their sum has norm at most \(\eta s(2+4.1\beta_0\eta)\), and the exponential remainder is at most \(8.3\eta^2s^2\). Thus the curvature increment is at most
 \((1+\beta_0\eta^2)\eta^2s(2+4.1\beta_0\eta+8.3s)<4s\eta^2\). These are dimension-free single-plaquette calculations. ∎
 
-**Lemma 8 (ambient tower estimate).** Let an ambient separated sequence have scale \(l(x)\), and let a separated subordinate sequence of depth \(p\) have scale \(\xi'(x)\le l(x)\). A tower element at \(x\) is **settled** if the two sequences agree in the \(l(x)\)-neighbourhood of its stencil, or the subordinate sequence has reached its final level throughout that neighbourhood. Put \(s(x)=l(x)/\xi'(x)\). Define
+**Lemma 8 (ambient tower estimate).** Let an ambient separated sequence have scale \(l(x)\), and let a separated subordinate sequence of depth \(p\) have scale \(\xi'(x)\le l(x)\). Choose \(\bar a\) before \(a_T\) with \(\bar a<\delta_B/(4C_QL)\); this ceiling is imposed here, not by row 4's \(\widehat a\). A tower element at \(x\) is **settled** if the two sequences agree in the \(l(x)\)-neighbourhood of its stencil, or the subordinate sequence has reached its final level throughout that neighbourhood. Put \(s(x)=l(x)/\xi'(x)\). Define
 \[
 \begin{split}
  n(w;b)&=\max\{l(b)|w(b)|,l(b)^2|\nabla^Uw(b)|\},\\
@@ -645,7 +645,7 @@ The extra \(\chi_c\) safely includes neighbouring stencils. The real tower is un
 
 ## 7. Formation, inherited domains and the actual fibre
 
-**Lemma 10 (formation with unit lift; Proposition U).** At an operation of level \(t\), let \(k_\sharp=t-N_t^0\). For the original layer \(l(x)\), set
+**Lemma 10 (formation with unit lift; Proposition U).** Assume A1/F0/REG as well as the stated inputs. At an operation of level \(t\), let \(k_\sharp=t-N_t^0\). For the original layer \(l(x)\), set
 \[
  e_j(x)=\begin{cases}
  0,&j\le k_\sharp,\\
@@ -729,7 +729,7 @@ Thus (B1) holds after \(M\). Other output loops obey the converted inherited tes
 \]
 Use the input sequence for \(l_+,m_+\). Assume all the absolute ceilings and witness carriers of Section 2, and that on active bonds \(A'\) is in the small logarithm chart. There are fixed constants, for example after fixed increases of
 \[
- K_{\rm pt}=2^{15},\quad K_{\rm tw}=32e^{4\delta_T}K_T,\quad
+ K_{\rm pt}=2^{15},\quad K_{\rm tw}=64e^{4\delta_T}K_T,\quad
  K_{\rm core}=8L^3C_{\rm os}K^\flat(1+c_\natural)/c_{\min},            \tag{64}
 \]
 such that \(r=\|h\|_w\le r_*\) implies
@@ -898,7 +898,7 @@ On an outward row use (7). Its one-step factor has \(|v_z-I|\le C_vL\|a\|\). The
 **Outstanding F-contour.** The draft's full-contour claim needs these inequalities for the *actual* four-dimensional conditional mean and contours, uniformly in the switches and complex external pairs. Y3 51920–51933 assumes the mean bounds; 51984–52014 states its estimate under additional precision and smallness hypotheses. ST-test does not prove them. Moreover its localized-reference passing set becomes
 \(\chi(e^{ia_V(gB)}V;V^\sharp)\), generally not a product of balls centered at zero. Inclusion of its real support in \(|B|<b_j\) does not replace that cutoff by the larger ball or make the indicator holomorphic. A valid contour deformation for this exact cutoff, or a separately specified equivalent test and its history bounds, must be supplied. F4 proves a holomorphic map on the tube and F5 proves the stated geometric containment; neither proves that deformation or its integral estimate. Failed stages keep their failure factors and are not included in this passing-support substitution.
 
-**Lemma F6 (localization discrepancy).** Under either stated LOC clause and RUN-low, \(h_j\le\delta'_j/8\) after a ceiling on \(\gamma\).
+**Lemma F6 (localization discrepancy).** Under either stated LOC clause, RUN-low, RUN and (15), \(h_j\le\delta'_j/8\) after a ceiling on \(\gamma\).
 
 *Proof.* For LOC-form, integrate (15) along its **assumed common-chart segment**. AV and the bounded carrier/gauge conversions give
 \[
@@ -1049,9 +1049,9 @@ For (77), the function \(\Phi_Y(s,z)-f_0\) vanishes at \(z=0\) and is bounded by
 
 Component splitting and the levelling collar property make the reading independent of every switched cell in a component missing the base or its source; its finite difference is zero. Regional consistency identifies readings on smaller \(Y\). Finally sum (76). For a fixed proper subset \(A\) the coefficient is \((1-1)^{|\mathcal C\setminus(X^\uparrow\cup A)|}=0\); the full subset has coefficient one. This is (78). The sum is finite; no convergence or interchange with a stored-field integral is asserted. Induction gives the finite nested identity. ∎
 
-**Corollary 14′ (all admitted actual transitions).** Assume the declared inputs, CI, base formation for the initial/unfinished entries, the main-step coordinate/source supply, and the F-measure identification for every stage presentation being called actual. For statements on the conditional-mean contours, assume F-contour's bounds and exact-cutoff deformation as well. Then Theorem 14 applies at every main step, preparatory passing stage and output of each finite history, including swallowed marks; stopped stages keep their unintegrated failure factors.
+**Corollary 14′ (all admitted actual transitions).** Assume the declared inputs, CI, base formation for the initial/unfinished entries, the main-step coordinate/source supply, and the F-measure identification for every stage presentation being called actual. For statements on the conditional-mean contours, assume F-contour's bounds and exact-cutoff deformation as well. Then Theorem 14 applies, for real-background inputs and for complex inputs assumed to lie in the admitted domain, at every main step, preparatory passing stage and output of each finite history, including swallowed marks; stopped stages keep their unintegrated failure factors.
 
-*Proof.* B4 supplies the real chain membership. Lemma 1′ / M2 supplies reset-stable coefficient gaps, and frozen records supply compatibility. F4 gives the passing stage datum and (70); the main-step map is the named supply. Lemma 13 and B2 give the source/pinning budgets, B3 gives output drift, and CI gives the target activity. These are exactly the five hypotheses of Theorem 14. For complex inputs it applies on their admitted domain, and for an asserted integration contour use the additional containment/deformation supply. Induction over the finite ordered history proves the statement. ∎
+*Proof.* B4 supplies the real chain membership. Lemma 1′ / M2 supplies reset-stable coefficient gaps, and frozen records supply compatibility. F4 gives the passing stage datum and (70); the main-step map is the named supply. Lemma 13 and B2 give the source/pinning budgets, B3 gives output drift, and CI gives the target activity. These supply the five hypotheses of Theorem 14, with Lemma 12's regularity, uniqueness and source-threshold premises coming from the declared inputs rather than from F4, as F4's proof says. For complex inputs it applies on their admitted domain, and for an asserted integration contour use the additional containment/deformation supply. Induction over the finite ordered history proves the statement. ∎
 
 The draft's phrase “proved, except CI” is too strong for its original input list. F3–F7 construct and bound a chart, but the unsupplied stored-measure and conditional-mean identifications cannot be removed from this corollary. Defining a stage by (F0) settles its measure convention; it does not settle F-contour or prove NL1/LF1's bounds.
 
@@ -1100,11 +1100,24 @@ Sources: [SA outline](https://raw.githubusercontent.com/ethanwsussman/Yang--Mill
 | Y3 51852–52014 | Conditional-mean bounds are hypotheses, and the contour estimate has additional Gaussian assumptions and an exact test-domain requirement. |
 | Y3 53356–53370, 56309–56340, 56434–56448 | Containing-cube witness, pinned composition and subtracted bracket, and real tie scope. |
 
+## Change log (pass 3 fixes, lead, 2026-11-05)
+
+Applied the findings of `gates/st1-gate.md` (Claude fresh session, first failing step none):
+1. P82 is recorded as frozen; M1 is the remaining matching item; (15) is asserted only at interior elements (bonds whose plaquettes lie in Omega_0), where ST1 uses it.
+2. Lemma 10's C_U: SA 19469-19470 chooses the frame bound after the amplitudes, so C_U does not precede kappa as row 2 implied. It enters only (T1), a ceiling on gamma; after one gamma ceiling the frame constant is absolute, C = 3^{2 r_R}. Row 2 is read with this correction.
+3. Lemma 8's ceiling a-bar < delta_B/(4 C_Q L) is imposed inside Lemma 8, chosen before a_T, not via row 4.
+4. Lemma 10 lists A1/F0/REG; F6 lists RUN and (15).
+5. Corollary 14' states its scope (real-background inputs, complex inputs assumed in the domain); the 'exactly the five hypotheses' wording is corrected.
+6. The exponent condition q > p0 + 2r_R is attributed to ST1, with SA's own conditions stated.
+7. K_tw raised from 32 to 64 times e^{4 delta_T} K_T (about 52 is needed); margins hold either way.
+
+**Status: frozen**, as a conditional theorem with three named Outstanding items: CI (NL1/LF1; see rows 273 and the TD draft), F-measure and F-contour. Reopens only on a `wrong` signal or when an import it reads changes.
+
 ## Result
 
 The distilled ST1 proves Theorem 14 as a conditional implication: hereditary substitution with half-gap room, physical identification on the specified reconstructed real locus, and the finite holomorphic re-expansion (76)–(78). Corollary 14′ gives its finite-history application with its full premises. The proof retains LEV, P81, CRIT and the ambient tower argument; CORE now uses R1. No ER7 or \(b_1^2\le c_\natural b_0\) assumption is needed for CORE.
 
-The permanent ledger repairs deleted-mark coefficient gaps. SA's table \(r_\iota(m)=C_\iota\theta_m^{-1/2}(\log\theta_m)^q\), with \(q>p_0+2r_R\), absorbs all raw overlap growth by a ceiling on \(\gamma\). Thus the smoothed lift is unnecessary: \(\lambda=\Lambda_Q=1\). R1 forms, and even the old scalar comparison core forms. R0 remains a corrected counterexample for the discarded table's analytic test class; its claimed actual-output realization was not established and is not used. Output and internal consumer admission follow from the stated BOX and geometry inputs.
+The permanent ledger repairs deleted-mark coefficient gaps. SA's table \(r_\iota(m)=C_\iota\theta_m^{-1/2}(\log\theta_m)^q\), used here with ST1's own exponent condition \(q>p_0+2r_R\) (SA's own conditions are \(q>p_0+2r\), \(p_0-p_1>Cr\), \(2p_1-Cr>p_0\); ST1's weaker ones suffice for every use here), absorbs all raw overlap growth by a ceiling on \(\gamma\). Thus the smoothed lift is unnecessary: \(\lambda=\Lambda_Q=1\). R1 forms, and even the old scalar comparison core forms. R0 remains a corrected counterexample for the discarded table's analytic test class; its claimed actual-output realization was not established and is not used. Output and internal consumer admission follow from the stated BOX and geometry inputs.
 
 The principal analytic import remains **P82°/M1 and (15)** uniformly on the admitted layered class. Other imports are A1/F0/REG, AV/CURV, PROF/RCG4, OPS/SLICE/UNQ, CH, the actual DR construction and main-step coordinate/source supply. The added hypotheses **GEO-mark, GEO-box, RUN-low, BOX, ST-test and LOC** are explicit in Section 2. **CI remains Outstanding**, owned by NL1/LF1. F3 proves the exact local chart measure and F4 the datum map on its full tube; identification with an already stored stage measure and the exact conditional-mean contour remain **Outstanding F-measure/F-contour** unless supplied. No Gaussian integration bound, infinite sum, volume limit or LF mass statement follows from the finite substitution theorem.
 

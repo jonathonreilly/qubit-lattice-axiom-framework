@@ -22,6 +22,8 @@ The closed source PRs #9863, #9911, #9992, #10004, #10030, #10049, #10073 and #1
 
 **Lead note, 2026-11-04 (after LW1 pass 2).** Theorem S3 (i) and owner decision D1 cite LW1 Theorem B5 for frames on cells. The LW1 distillation (`LW1.md`, GAP B5(b)) found the draft's cell form false as stated: independent site phases, compensated on the cell's internal links, satisfy its hypotheses and are not scalar. It also found that the exclusion of non-abelian cell-mixing frames still needs a proof. What stands is B5(a), site-local frames. So S3 holds under PS-6 read per site, which is PS-6's own wording ("The internal frame of each site's possibilities is local"). For cell frames it waits on B5(b). D1 is not put to the owner until B5(b) is settled. Lemma S1 and Theorem S2 do not use B5(b).
 
+**Lead note, 2026-11-05 (B5(b) pass 1).** `B5B_DRAFT.md` (pass 1, not yet distilled or refereed) proves B5(b)'s abelian form under its own hypothesis: each dressed gate unchanged after register changes split at the cell. Every local frame on an even cell, many-body frames and either parity included, acts on the modes by site phases; the mode image is exactly `U(1)^8` at every nonzero angle and spin (Theorem B5b; only the odd gates are used). So S3 (i) holds for cell frames in that reading. Under PS-6's plain whole-update wording it waits on the open item B5b-T. D1 goes to the owner after B5B's distillation and referee.
+
 ## 0. The target, quoted
 
 From the skeleton (`TOE_ASSEMBLY.md`, CH1 (a)):

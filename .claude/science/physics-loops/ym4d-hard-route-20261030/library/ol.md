@@ -4,6 +4,8 @@ Provenance: Codex, research text at checkout 6a792352b901b4da73e40cbc393023af5c1
 
 Round 2 provenance: Codex, 2026-11-05, pinned checkout `5129d8d4e01a632c1293ab712f8a758dcc64e6f5`. The round-one arguments below are preserved. This continuation compares OL-loc with the frozen `lrb.md`, `piv.md`, and `mu.md`; it is research text, not an audit, and grants no status.
 
+Round 3 provenance: Codex, 2026-11-05, pinned checkout `d073927c08564435973eb8d54558e0571798e10e`. This continuation tests OL-W0 against `p82.md`, `pw.md`, `rows.md`, `hm.md`, `piv.md`, and CA-II Lemma 5.2:lem-random-walk-bounds. It preserves both earlier rounds. This is research text, not an audit; it grants no status. The sources and credit in the Provenance line apply throughout.
+
 ## 1. Target and source comparison
 
 The target is the Gaussian lemma `4.2:lem-one-loop`, CA-I 3901–4029. It supplies hypothesis (b) of `4.19:prop-clause-zero`. It is not the bound on the non-Gaussian increment. This note ports the account's route: compose the constrained Gaussians, preserve their quadratic coefficient under background substitution, and compare with massive Wilson and ghost determinants.
@@ -1456,7 +1458,7 @@ to discharge a mathematical assertion. The new arguments have
 not received an independent referee check. No audit, claim status,
 planning record or editable prompt is changed.
 
-## Result
+## Round-two endpoint (preserved)
 
 **Open lemma**
 
@@ -1564,3 +1566,635 @@ gives the account's full one-loop statement, with
 OL-W0 has not been proved here. No counterexample to Lemma
 4.2:lem-one-loop is claimed, and that lemma remains open in this
 research text.
+
+## 10. Round three: what the frozen estimates actually supply
+
+The statement of Lemma 4.2, its Route, and its uses are unchanged.
+The comparison below concerns the operator obligation at the end of
+round two. “At the flat pair” means a **complex neighbourhood** of
+that pair, with an independent current; a bound only at \(A'=J=0\)
+would not suffice. This round keeps OL-W0's requirement that the
+family be the account's successive word/sheet family, CA-I
+47294–47584. Existence of another good expansion is distinguished
+from that requirement.
+
+### 10.1 Comparison with the requested sources
+
+| Source, checked passage | What it supplies here | What cannot be inferred |
+|---|---|---|
+| [p82.md](p82.md), I1–I5, Lemmas 1–6 and Theorem P | Matching flat/local inverse estimates, actual iterated averaging rows, smooth-cutoff parametrix and real layered propagator bounds, uniform in mesh and depth. | The real theorem alone does not give an independent-current complex neighbourhood. Retain its stated flat/model inputs. |
+| [pw.md](pw.md) §§2–5.1 | Exact local splitting of the eight-variable system; absolute second jets of the actual averaging map; complex inverses on cut-downs with an arbitrary coefficient current; existence of the defining scalar and row Gram inverses. | A saddle inverse cannot simply be called an unconstrained inverse: §3 and §5.1 supply the separate coercivity and Schur checks. |
+| PW §§6–7, (6.10)–(6.13), (7.1)–(7.7) | Bounds for individual coefficients of the specified unfolded parametrix, including the multiplier branches, before switches. The count retains \(C^{n+\sum m_i}\) and \(M_1^{-N/3}\). | The final inequality [PW], by itself, bounds a sum. Its coefficient proof is what is needed here. |
+| [rows.md](rows.md) §§2–3 and §5, (5), (8)–(9), (22)–(27) | Absolute rows and columns, the full sixteen-insertion plaquette Hessian, and physical-to-counting multiplier conversion. | The raw-row transpose cannot replace the physical transpose without the row-length factors. |
+| [hm.md](hm.md) Lemma 1 | Under W, two-sided datum-independent majorants for the unfolded precision on complete local reads, including the boxes read by the zero-length multiplier. | W is an explicit premise. The later integrated resolvent consumes the precision bound. HM's absolute soft-gauge Hessian needs the local replacement in §11.3. |
+| [piv.md](piv.md) §§1–5 | Actual one-step mean, pivot inverse, graph derivative and complete finite reads. | One-step analyticity alone is not a depth-uniform bound; the iteration uses P82 Lemma 1 and PW §4. |
+| CA-II 8922–8990, 5.2:lem-random-walk-bounds | The attributed precision, conditioned inverse and root bounds, with domain and exponential-gauge identifications. | CA-II 8941–8946 expressly takes three CMP 116 inputs by statement. This is not a new proof of their complex local-data, absolute-family version. |
+
+The closest ports do not already prove the target. P3-free retains
+H-BG, H-TOWER and H1-MIN in its free-covariance algebra. P5-induction's
+clause-(0) table retains A12(b). P6-correlation, B4b, assumes the
+one-loop lemma. Sfol-draft §§3.3–3.7 checks the bulk coefficient and
+telescoping normalization for \(N=2\), conditional on its localized
+moment, identification and other stated inputs. None supplies the
+missing absolute bound for the account's assigned family. The
+general-\(N\) calculation in §§2–3 above is preserved.
+
+The two walk prescriptions are concretely different. CA-I
+47294–47324 expands \(G',G_0,T'\) and differentiated letters;
+47389–47394 treats a singular word; 47396–47531 inverts a coarse
+Gram operator with a second cover; 47533–47584 performs two
+branching operations and assembles the precision. H-walk §1
+expressly uses another construction: unfold the Schur factors into
+a finite-range system and expand its local inverse. PW §7 specifies
+those coefficients. Bałaban CMP 99b, pp. 413–416, (3.98)–(3.108),
+uses the successive construction, including local comparisons and
+cancellations before iterating its small remainder.
+
+P4-operator retains P4-H-elementary, P4-H-singular and P4-H-sheet
+as named inputs at these exact use loci; it is not another proof of
+them. Likewise CA-II's cited walk statement does not resolve the
+status discrepancy between CA-I 3930 and 56361–56365, A12(b) at
+56428–56430, and its proof at 56466.
+
+### 10.2 The quantifier to be transferred
+
+For a local family \(K=(K_\omega)\), put
+\[
+ \|K\|_{\mathrm{abs},\delta}
+ =\max\left\{\sup_b\sum_{\omega,b'},\sup_{b'}\sum_{\omega,b}\right\}
+ e^{\delta d(\omega;b,b')}
+ \sup_{P\in\mathcal P_*([\omega])}|K_\omega(b,b';P)|.
+ \tag{10.1}
+\]
+The local supremum precedes the sums. A bound on the globally
+summed matrix is weaker. OL-W0 asks for (10.1) for the account's
+construction. The next three attacks address this quantifier,
+rather than repeat round two's normalization, spectral-gap and
+absolute-kernel attacks.
+
+## 11. New attack 7: unfold the actual precision on local flat data
+
+This proves a **version** of OL-W0 for the repaired unfolded
+family, retaining P82's frozen flat/model inputs. It does not
+identify its coefficients with CA-I 47294–47584.
+
+### 11.1 Local admission and order of constants
+
+Put \(\eta=L^{-k}\) in level-\(k\) units. Expand the four plaquette
+exponentials at the flat real reference. The linear terms give
+\(\eta^2\) times the discrete curl. For \(\eta r_A<1/16\) the
+remainder is bounded by \(C\eta^2r_A^2\). Therefore
+\[
+ \eta^{-2}|\partial(e^{i\eta A'})-1|
+       \le C(r_A+r_A^2).                                  \tag{11.1}
+\]
+Only the forward differences already in \(\mathcal P_*\), including
+boundary stencils in the complete read, were used. All longer
+local scales are at most \(L\), so the complex curvature clause
+has ceiling \(CL^2(r_A+r_A^2)\). The real curvature and gauge
+clauses hold with gauge \(1\). The other clauses are bounded by
+\(L^2r_A\) and \(L^3r_J\). Small early, depth-independent radii
+therefore admit every local datum to PW's regular-pair class.
+No extra plaquette assumption or global extension was introduced.
+
+P82 Lemma 1 and PW §4 control the actual iterated means and
+incremental site factors. For a level-\(j\) row their induction is
+\[
+ u_m\le C_Lr_A L^{m-j},\qquad
+ \sum_{m<j}u_m\le C_Lr_A/(1-L^{-1}),\qquad
+ \prod_{m<j}(1+C_Lu_m)
+       \le\exp\!\left(C_L\sum_{m<j}u_m\right).              \tag{11.2}
+\]
+Decrease \(r_A\) once to make the last bound at most two. Thus
+PIV applies to \(V=\mathcal M^k(e^{i\eta A'})\); no fixed
+\(1+C_Lr_A\) factor is multiplied once per depth. PW (4.1)–(4.6)
+supplies the absolute second jets of the intervening rows.
+
+Keep P82's flat/model input order: choose the local parametrix
+size \(M_P\), the complex and arbitrary-current ceilings of PW
+Proposition 5, the cut-down size/gap floors, then \(M_1,R_1\).
+Decrease the independent-current ceiling once for the multiplier
+bounds below. These choices precede \(\kappa,M\). Choose
+\(r_A,r_J\) below the resulting early ceilings. A later proportional
+decrease of primed/unprimed radii preserves their ratio floors and
+changes none of the early constants.
+
+P82 and PW use three colour coordinates. In this near-flat
+application the flat inverses are scalar colour copies. Perturbation
+bounds use matrix multiplication, \(\|[X,Y]\|\le2\|X\|\|Y\|\),
+and finite-dimensional norm conversions. The argument consequently
+works with \(N^2-1\) copies and \(N\)-dependent constants. No
+non-flat SU(2) stabilizer argument is imported to SU(\(N\)).
+Below, \(C_L\) inherited from these proofs may depend on this
+fixed \(N\) and the early frame parameters.
+
+### 11.2 Schur factors and both multiplier currents
+
+Use h-walk's actual first matrix \(\mathbb K_0\), with independent
+current \(J\) and coefficient current zero, and its second matrix
+\(\mathbb K_1[j_0]\). Check the current convention at the
+quadratic-form level. Put \(\lambda=G'RD^{\mathsf T}A\) and
+\(\lambda^+(b)=\operatorname{Ad}(\mathbf U(b))\lambda(b_+)\).
+CA-I 45417–45425, 46489–46504 and 46670–46690 give
+\(\mathfrak S\lambda=\lambda+\lambda^+\),
+\(\lambda^+-\lambda=\eta D\lambda\), and
+\(\langle X,M_JY\rangle=\langle i[X,Y],J\rangle\).
+Thus its half-symmetrized first correction has quadratic form
+\[
+\begin{split}
+ W_\pi(A)
+ &=\langle i[A,\lambda+\lambda^+]
+          +\tfrac i2[\lambda+\lambda^+,D\lambda],J\rangle\\
+ &=-\langle i[\lambda,A]-i[A,\lambda^+]
+                         -i[\lambda,D\lambda],J\rangle .
+\end{split}                                                    \tag{11.3a}
+\]
+The second equality uses
+\([\lambda^+-\lambda,D\lambda]=\eta[D\lambda,D\lambda]=0\).
+This is precisely minus h-walk's \(c_J\). For the constraint
+correction, the quadratic form in CMP 99b (3.128), which CA
+uses for its sequence operators, is
+\(-2\langle H C^{(2)}(A-D\lambda),J\rangle\).
+Since \(C^{(2)}=q''/2\), this is
+\(-\langle A-D\lambda,E_{H^{\mathsf T}J}(A-D\lambda)\rangle\),
+with PW's positive second-derivative notation \(E\).
+This comparison uses the signed quadratic forms, rather than
+identifying letters named \(\Delta^{(2)}\) across conventions.
+The first identity is linear in \(J\). The second is an identity
+for every linear map \(H\), applied pointwise to \(H(P)\);
+it does not assert that \(H(P)^{\mathsf T}J\) is linear in the
+independent datum \(J\). Neither identity requires a physical
+current.
+
+PW Proposition 5 and §5.1 establish the
+scalar, massive-field and row Gram inverses separately. The
+elimination of h-walk Lemma U, in the physical row pairing, gives
+\[
+ [\mathbb K_0^{-1}]_{A\nu}=H,\qquad
+ [\mathbb K_1[H^{\mathsf T}J]^{-1}]_{A\nu}=H_1,\qquad
+ [\mathbb K_1[H^{\mathsf T}J]^{-1}]_{\nu\nu}
+             =-(QG_1Q^{\mathsf T})^{-1}.                  \tag{11.3}
+\]
+These are independent-current identities. The second system uses
+\(j_0=H^{\mathsf T}J\); the final one-step vertex uses
+\(j=H_1^{\mathsf T}J\).
+
+For a first-system walk \(\beta\), PW (7.2) is
+\[
+ m_c^3|j_{0,\beta}(c)|
+ \le C_Lr_J(C_L/M_1)^{|\beta|}e^{-\tau t_\beta(c)/4}.
+ \tag{11.4}
+\]
+The physical transpose contributes \(m_c^{-4}\), the unnormalized
+row source has dual norm \(m_c\), and the current norm contributes
+\(m_c^3\): their product is one. Rows §5 gives the counting
+multiplier and both-sided estimates. The zero-length sum
+\(j_0^{(0)}\) is therefore a small analytic local coefficient for
+the second matrix; positive-length terms are its branching vertices.
+
+PW (4.5) bounds such a vertex for every coefficient current in the
+ball. PW §7 proves the exact Neumann expansion and, for a trunk
+with \(n\) steps, \(v\le n\) vertices and \(m_i\ge1\) branch lengths,
+\[
+ p=n-v+\sum_i m_i,\qquad q=n+\sum_i(m_i+1),\qquad
+ 3p-q=2(n-v)+2\sum_i(m_i-1)\ge0.                           \tag{11.5}
+\]
+Keep \(C_L^{n+\sum_i m_i}\). The bound is
+\(C_L(C_LM_1^{-1/3})^q e^{-\tau t/4}\), with at most
+\(C_0C_1^q\) terms per root. Apply the same transpose calculation
+to the second system's \(A\nu\) output to obtain the summable
+family for \(j=H_1^{\mathsf T}J\). This final branch is retained.
+
+### 11.3 The exact one-step factors, including the gauge term
+
+CA-I 46952–47080 uses the relative contour logarithm
+\[
+ \Phi_g(V,B;y,x)=\frac1i\log\!\left[
+ (e^{iB}V)\langle y,x\rangle V\langle y,x\rangle^{-1}\right],
+ \qquad g_VB=(\Phi_g)_1(B),\qquad
+ \langle B,\mathsf G_VB\rangle=\|g_VB\|^2,                \tag{11.6}
+\]
+bilinearly continued in the last expression. Off the flat pair
+this need not be the Hessian of the absolute soft-gauge functional
+in pr-lay/HM. Use (11.6) itself as the local term.
+
+PIV's analytic mean and inverse-contour bounds on a fixed smaller
+ball give \(\|g_V\|\le C_{L,N}\). Indeed, the one-variable Cauchy
+formula along each direction bounds its first coefficient by \(C/a\)
+on a raw ball of radius \(a\); only \(C_{L,N}\) coarse inputs and
+contour sites occur per block. Summing these finitely many
+coefficients bounds both row and column sums of
+\(g_V^{\mathsf T}g_V\). Its fine-data read is the complete iterated
+averaging neighbourhood of those inputs, controlled by (11.2).
+It gives a depth-independent length-zero majorant. We replace HM's
+gauge term, without assuming equality of the two Hessians.
+
+The pivot derivative is the actual \(C_\flat\). In raw derivative
+coordinates \(J_c=L^{-3}\pi_c\), so its right inverse is
+\(J_c^{-1}=L^3\pi_c^{-1}\), CA's \(h\). The quadratic coefficient
+of the next-step constraint is \(C^{(2)}=q''/2\). Hence
+\[
+ \langle B,\mathcal J[f]B\rangle
+ =-2\langle h\,C^{(2)}(B),f\rangle
+ =-\langle h\,q''[B,B],f\rangle.                          \tag{11.7}
+\]
+This is the negative ambient constraint-current Hessian of pr-lay,
+with the physical transpose. No factor two is missing. PIV bounds
+\(C_\flat,h,q''\) and their full reads. Thus (11.3)–(11.7),
+with the active projections in OL-W0.1, identify the sum with the
+actual precision. No on-shell equation is substituted for \(J\).
+
+### 11.4 Absolute summation and complete reads for this version
+
+Apply the proof of HM Lemma 1 with its W supplied by PW
+Proposition 5, PW (4.5), PW §7's coefficient estimates and Rows'
+absolute rows/columns. Replace its local gauge term by (11.6).
+The three precision families are the local
+\(C_\flat^{\mathsf T}(\mathsf G-a)C_\flat\), the negative
+\(\nu\nu\) block of (11.3), and the final-current vertex (11.7).
+They have datum-independent majorants. After spending some decay
+on intermediate pillars, the label sum at a fixed endpoint is
+\[
+ C_{L,N}\sum_{q\ge0}(C_{L,N}M_1^{-1/3})^q<\infty.          \tag{11.8}
+\]
+An early floor makes this converge. The transposed proof gives
+the other half of (10.1). This uses coefficient bounds, not the
+norm of a resummed inverse or HM's later root construction.
+
+At a local evaluation include all cut-down boxes, especially the
+boxes read by \(j_0^{(0)}\), and the averaging, normalized-cutoff,
+pivot and contour reads. A zero-length current box meets its row
+and is within \(O_L(M_1)\) of its parent cell. On the trivial nest,
+fixed grids and these complete data determine the finite matrices
+and cutoffs. Equal reads in a non-wrapping common lift give equal
+coefficients. This is fixed-region locality, not h-walk's rejected
+claim about traces of different nested regions. No extension of a
+local datum is used.
+
+Enlarge each parent domain to include these reads. Consecutive
+domains still meet and have diameter at most an early
+\(\rho_u=O_L(M_1)\). Enlarging a domain decreases the shortest
+length needed to meet it. The root's fixed pivot/row offset from
+the endpoint costs only an \(L,N\)-dependent factor, not
+\(e^{cM_1}\) per step. This converts HM's tree weight to CA-I
+4875–4907's weight. Transpose partners can use the same enlarged
+hull and half of each coefficient. The unfolded version thus has
+the local, early-constant and absolute-majorant properties of
+OL-W0 on the admitted tori.
+
+**Outcome of attack 7.** The frozen proofs supply the needed
+complex current estimate for an unfolded expansion of the actual
+matrix, with (11.6) as its local gauge term. What this attack does
+not prove is the absolute transfer to CA's successive sheet
+assignment. A different good expansion cannot silently be
+substituted for the family specified in OL-W0.
+
+## 12. New attack 8: a label-preserving Schur resummation
+
+The natural next attempt is to eliminate the auxiliary variables
+**inside the local walk expansion**, retaining every label. This
+would relate the unfolded proof to CA's successive construction.
+
+For an ordinary block matrix, with the indicated inverses existing,
+\[
+ \mathbb K=\begin{pmatrix}E&B\\ C&D\end{pmatrix},
+ \qquad
+ [\mathbb K^{-1}]_{11}=(E-BD^{-1}C)^{-1}.                  \tag{12.1}
+\]
+Multiplication verifies (12.1): solve \(Cx+Dy=g\) for
+\(y=D^{-1}(g-Cx)\), substitute into \(Ex+By=f\), and obtain
+\((E-BD^{-1}C)x=f-BD^{-1}g\).
+Section 11 supplies the required inverses in this application.
+Thus eliminating after **summing** the unfolded walks recovers
+the actual successive Schur operators. This part of the attack
+works, also at independent complex currents.
+
+Here is the quantitative criterion needed to eliminate before
+absolute summation. Suppose a refinement of the unfolded family
+has terms \(u_\zeta\), with the same bound as §11, and the CA
+coefficient has an exact local identity
+\[
+ A^{\rm CA}_\omega(b,b';P)
+       =\sum_\zeta c_{\omega\zeta}(b,b';P)u_\zeta(b,b';P).
+                                                               \tag{12.2}
+\]
+Every summand must be readable from \([\omega]\).
+If numbers \(C_{\omega\zeta}\) dominate
+\(|c_{\omega\zeta}|\) on those local balls and
+\[
+ \sup_{\zeta,b,b'}\sum_\omega C_{\omega\zeta}
+   e^{\delta d_{\rm CA}(\omega;b,b')
+      -\delta_u d_u(\zeta;b,b')}\le C_* ,                 \tag{12.3}
+\]
+then the triangle inequality, followed by interchange of
+nonnegative sums, gives
+\(\|A^{\rm CA}\|_{\mathrm{abs},\delta}
+ \le C_*\|u\|_{\mathrm{abs},\delta_u}\).
+This proves a sufficient transfer criterion. It also specifies
+the full-read and multiplicity costs that a purported regrouping
+must pay.
+
+Equation (12.1) does not prove (12.2)–(12.3). To see exactly where
+the tempting formal argument fails, mark each local transition by
+an independent variable \(z_\alpha\). The unfolded expansion then
+has monomials recording its local-system transitions. CA instead
+marks the elementary scalar/field sheets, local comparison
+remainders, the second-cover inversion, and the two current
+branches. The identity (12.1) at all \(z_\alpha=1\) is not an
+identity of these two marked functions.
+
+In particular the primitive cancellation
+\[
+ R=I-X(X^{\mathsf T}X)^{-1}X^{\mathsf T}
+\]
+at real data is changed, when its three factors receive independent
+marks, into \(I-z_1z_2z_3P\), where
+\(P=X(X^{\mathsf T}X)^{-1}X^{\mathsf T}\).
+Choosing \(z_1z_2z_3=-1\) changes it by \(2P\), even at the flat
+pair. This is an order-one change, not the small field perturbation
+admitted by PW Proposition 5. The exact local congruence cannot
+therefore be invoked for arbitrary marks merely by taking
+\(r_A,r_J\) smaller. This observation does not assert that all
+marked systems are singular; it identifies the missing hypothesis
+in that proposed proof.
+
+Nor is there an abstract absolute-sum theorem behind (12.1).
+For \(0<t<1\),
+\[
+ 1=\sum_{n\ge0}t^n-\sum_{n\ge1}t^n,\qquad
+ \sum_{n\ge0}|t^n|+\sum_{n\ge1}|-t^n|
+       =\frac{1+t}{1-t}.                                 \tag{12.4}
+\]
+The first family consisting just of \(1\) has absolute norm one.
+The second has the same sum and an arbitrarily large absolute
+norm. Taking \(t_k=1-L^{-k}\) makes the latter
+\(2L^k-1\). These are constant analytic functions of the field,
+so field holomorphy does not repair the implication. This is a
+test of a proposed inference, not a counterexample to CA's family
+or to the one-loop lemma.
+
+The source's successive construction does perform cancellations
+before assigning some of its labels. In CMP 99b pp. 414–415,
+(3.105) expands a comparison involving \(DPD^*\).
+Its principal local term is moved through cutoff factors until
+it cancels the corresponding \(DP_\square D^*\) term.
+The discarded differences become separate remainder labels.
+Thus neither treating every factor as an independent mark nor
+retaining only their cancelled total gives its assigned family.
+A legitimate transfer has to estimate these remainder labels,
+with their reading hulls, before invoking (12.3).
+
+**Outcome of attack 8.** Exact Schur resummation establishes
+identity of the summed operators. The attempted label transfer
+fails at (12.3): no uniform positive redistribution estimate for
+the actual local-comparison labels has been proved. No claim that
+such an estimate is false is made.
+
+## 13. New attack 9: keep cancellation at the singular junction
+
+This attack uses the mixed energy/regularity estimates of PW
+directly on the account's difficult word, rather than splitting
+its kernel into absolute values as in round two. The word at
+CA-I 47389–47394 is
+\[
+ \mathfrak b=(DG')(D^{\mathsf T}G_0D)(G'D^{\mathsf T}).
+                                                               \tag{13.1}
+\]
+Work first at \(J=0\) on a fixed admitted cut-down, in its physical
+pairings. Let \(E\) be the field energy space and \(A_s=G'^{-1}\).
+PW §5.1 supplies the uniform scalar coercivity/inverse estimates;
+its row-multiplier-deleted system supplies \(G_0:E^*\to E\).
+Since
+\[
+ |\langle Du,A\rangle|=|\langle u,D^{\mathsf T}A\rangle|
+           \le C\|u\|_2\|A\|_E ,
+\]
+\(D:L^2\to E^*\) and \(D^{\mathsf T}:E\to L^2\) are bounded.
+The scalar estimates and their transposes likewise give
+\(DG':L^2\to L^2\) and \(G'D^{\mathsf T}:L^2\to L^2\).
+Consequently
+\[
+ \|D^{\mathsf T}G_0D\|_{2\to2}\le C_L,\qquad
+ \|\mathfrak b\|_{2\to2}\le C_L.                           \tag{13.2}
+\]
+On varying local scales these are the same inequalities in the
+scaled energy spaces; at the trivial nest the largest scale is
+one. Finite-dimensional transpose duality also proves them at
+the admitted complex perturbations. There is no sum of
+\(|x|^{-4}\) kernels and no logarithmic loss in (13.2).
+
+Smooth junctions have an exact algebraic advantage. For a smooth
+cutoff \(\chi\),
+\[
+ [G',\chi]=-G'[A_s,\chi]G',\qquad
+ [G_0,\chi]=-G_0[T_0,\chi]G_0,\quad T_0=G_0^{-1},
+                                                               \tag{13.3}
+\]
+and
+\[
+ [D^{\mathsf T}G_0D,\chi]
+ =D^{\mathsf T}G_0[D,\chi]
+  +D^{\mathsf T}[G_0,\chi]D
+  +[D^{\mathsf T},\chi]G_0D.                              \tag{13.4}
+\]
+Each identity follows by multiplying out the two sides. For the
+local unfolded matrix, PW (6.10)–(6.13) proves the corresponding
+\(C_L/M_1\) commutator estimate with two controlled cutoff
+differences: the divergence source and
+\(p=h'+D^{\mathsf T}A/2\) keep the apparently third-order term
+from demanding another derivative of the background. This is
+substantially more information than the gap argument of round
+two. It bounds the resummed junction and the unfolded local
+remainder without discarding its cancellation.
+
+The obstruction is exposed by the middle term of (13.4).
+The successive scheme does not localize \(T_0\) as one finite-range
+matrix: it contains \(DRD^{\mathsf T}\), and \(R\) contains the
+site inverse and its Gram inverse. At this point its construction
+inserts their assigned sheet expansions and local comparison
+differences. Its singular-word statement asks for orders
+\((1,0,1)\) and smooth junctions **for those terms**. Neither
+(13.2) nor the identity (13.3) bounds the sum of the norms of those
+separately labelled differences.
+
+One can make a finer attempted use of PW: apply its local
+\(W^{2,8}\) estimate to each elementary kernel and use Morrey's
+inequality at the junction. Its source normalization shows why
+this is not yet the required bound. For the fine point source
+representing a unit mass in the physical pairing,
+\[
+ f_\eta(x)=\eta^{-4}{\bf1}_{x=x_0},\qquad
+ \|f_\eta\|_{L^8(\eta^4{\rm count})}
+       =(\eta^4\eta^{-32})^{1/8}=\eta^{-7/2}.              \tag{13.5}
+\]
+PW's represented-source estimate applied this way has this
+factor. The row source used in (11.4) has uniformly bounded
+scaled norm; the fine delta does not. Extracting individual
+elementary kernels therefore needs their scale-dependent
+singular estimates and the cancellation at the smooth junction,
+before the internal fine coordinates are summed. PW's coarse
+row bound cannot simply be used with a unit right-hand side at
+each such coordinate. Equation (13.5) is not a lower bound on the
+true kernel and does not disprove a uniform result.
+
+For comparison, on a common space where \(S_X,S_Y\) are two
+local inverses, the exact identity
+\[
+ S_X-S_Y=S_X(K_Y-K_X)S_Y                                  \tag{13.6}
+\]
+does turn a distant change of coefficients into a small
+resummed comparison, using supported-source decay. With
+Dirichlet domains, this identity must be applied after the
+extension/restriction maps and boundary commutators have been
+specified. CA/Bałaban's successive construction resolves the
+right side into particular letters and repeats this operation
+inside the Gram inversion. To use (13.6) here would require
+an absolute bound for that resolution, with all its boundary
+and current reads. Replacing the right side by a single bounded
+label would construct a new family, as in §11, rather than prove
+the bound for the specified one.
+
+**Outcome of attack 9.** The singular word is bounded in the
+correct energy spaces, and the smooth-cutoff calculation avoids
+round two's spurious logarithmic loss. The attempt still stops at
+a specific coefficient-level step: estimating the absolute family
+produced when the local comparisons in (13.3)–(13.6) are expanded
+into the account's successive sheets. An operator estimate for
+the resummed comparison does not supply that estimate. This is
+the same remaining obligation as §12, approached through the
+actual singular junction rather than formal Schur elimination.
+
+## 14. Current checkpoint, source identities and limits
+
+This checkpoint supersedes §9 as the recovery point. The earlier
+arguments and endpoints are preserved as historical rounds.
+
+The new proved implication is §11: the frozen flat/model inputs,
+PW's complex coefficient proof, Rows and PIV give an intrinsic
+absolute expansion of the **actual** free-current precision,
+with its relative contour gauge and both current branches,
+uniform in depth on an early local flat ball. Its assignment is
+the repaired unfolded one. It supplies more than a real flat
+propagator bound or an estimate of the summed matrix.
+
+The remaining obligation is OL-W0 for the account's successive
+assignment. Attack 7 reaches the correct matrix with different
+labels. Attack 8 verifies the exact Schur identity but does not
+control the absolute redistribution of labels. Attack 9 bounds
+the singular word without the old logarithmic loss but does not
+bound the prescribed, separately expanded comparison terms.
+Equations (12.3) and (13.3)–(13.6) locate the next calculation.
+These are three attacks on one obligation, not three new axioms
+or three independent verifications.
+
+The family qualification matters. CA-I 4869 onward defines a
+walk system by its sum; there is freedom to construct walk
+systems. That definition alone does not identify the activities
+of two systems after footprint restrictions, local inversion and
+localization of the logarithm. The Route at CA-I 3932–3945 and
+the construction being ported use their chosen local terms.
+This note has not proved that replacing them by §11's terms
+preserves that assigned family. OL-W0 remains a sufficient route
+chosen in round two; no necessity claim or no-go conclusion about
+other legitimate localizations is made.
+
+No further bulk coefficient calculation is indicated by this
+round. The coefficient remains
+\(c_0=11N^2\log L/(12\pi^2)\); the unresolved step is the
+analytic/local realization needed to apply the preserved
+calculation to the assigned Gaussian family. If OL-W0 is supplied,
+§8 gives OL-loc and the transfer to §§2–3. Its determinant and
+comparison constants are still chosen at the early stage and
+the finite part is \(c_2(L,N)\), not a number allowed to grow
+with \(k\) or the late localization size.
+
+**Source record.** Checkout:
+\( \texttt{d073927c08564435973eb8d54558e0571798e10e}\).
+The outline and complete-account files are the pinned revision
+31a47c543775. Navigation used the index README, neighbouring
+rows in outline chunks 04, 07, 10 and 11, obligations.md, and
+the CA 4.12–4.19 index, particularly the elementary-sheet and
+assembly rows in its chunk 04 and the one-loop/A12 rows in its
+chunk 11. Bounded source passages used in this round include:
+
+- SA 3986–4004, 10129–10185, 10533–10562, 11510–11541:
+  obligation, independent-current conventions, unfolded route,
+  branches and actual averaging.
+- CA-I 3585–3610, 3764–4030, 4610–4907, 45236–45440,
+  46489–46508, 46538–46562, 46658–46715, 46952–47080,
+  47275–47645, 56342–56375 and 56419–56495: target and uses,
+  local data, actual precision, unit maps and successive assembly.
+- CA-II 8922–8990 and 27042–27082: cited walk input and the
+  one-loop law that assumes this lemma.
+- Local CMP 99b pp. 413–416, 419–423 and 427–428, with Theorem 3.15;
+  CMP 109 (1.22) and Theorem 3. The CMP 116 statements are
+  used only in the form quoted by the account; its paper is
+  not present in the permitted local paper folder.
+
+The complete list of literal occurrences of the one-loop label
+in the three CA files is CA-I 3603, 3876, 3903, 56363, 56428
+and 56466. Each occurrence and its relevant surrounding use was
+checked. The large files were not read whole. Credit remains
+with Ethan Sussman and Levent Alpoge, with Claude and Codex as
+authors of their text, and Tadeusz Bałaban for the cited
+propagator and RG construction.
+
+The pre-round recovery copy is
+/tmp/ol-round3-d073927c0/ol-before.md. Source hashes and text
+integrity checks are recorded in
+/tmp/ol-round3-d073927c0/verification.json.
+Only library/ol.md is edited; no prompt, planning or audit file
+is changed. Downloading, navigation, hashing and text checks are
+bookkeeping. No numerical experiment, enumeration or
+computer-assisted estimate discharges any assertion here.
+The new arguments have not received an independent referee check.
+
+## Result
+
+**Open lemma**
+
+**OL-W0 for the account's successive sheet assignment.** Fix
+\(d=4\), \(N\ge2\), an admitted odd \(L\), and the early
+operator-frame parameters in the account's order, before
+\(\kappa,M\). There exist \(r_A,r_J,\delta,B,\rho_w>0\),
+depending only on these early choices and \(L,N\), such that,
+uniformly for \(k\ge1\) and all admitted tori at the trivial
+nest, the account's successive word/Dirichlet-sheet construction
+CA-I 47294–47584 for
+\[
+ A_k(P)=C_\flat(P)^{\mathsf T}
+ \left(P_\Lambda[Q(P)G_1(P)Q(P)^{\mathsf T}]^{-1}P_\Lambda
+       -a+\mathcal J[H_1(P)^{\mathsf T}J](P)
+       +\mathsf G(P)\right)C_\flat(P)
+\]
+has locally defined holomorphic coefficients
+\(A^{\rm CA}_{k,\omega}\), with the following absolute bound:
+\[
+ \sup_{k,\mathbb T}
+ \max\!\left\{
+  \sup_b\sum_{\omega,b'},\ \sup_{b'}\sum_{\omega,b}
+ \right\}
+ e^{\delta d(\omega;b,b')}
+ \sup_{\substack{P=(e^{i\eta A'},J)\ {\rm on}\ [\omega]\\
+                 |A'|,|\nabla^\eta A'|<r_A,\ |J|<r_J}}
+ |A^{\rm CA}_{k,\omega}(b,b';P)|\ \le B .                 \tag{OL-W0-CA}
+\]
+The potential/current units are CA-I 4610–4703's scale-normalized
+units. Every complete read includes the averaging carriers,
+local inverse boundary stencils, both multiplier branches and
+pivot/relative-contour factors. Step domains have diameter
+at most \(\rho_w\), consecutive domains meet, and
+\(d(\omega;b,b')\) is CA-I 4875–4907's shortest-tree length.
+Equal complete reads in non-wrapping common lifts give equal
+coefficients. On global data their sum is exactly \(A_k(P)\).
+The local supremum does not assume a global extension or an
+additional plaquette hypothesis. The constants are independent
+of \(k\), torus volume, \(M\) and coupling; subsequent permitted
+radius decreases preserve the bound.
+
+The bound is proved in §11 for the repaired unfolded assignment,
+under its frozen flat/model inputs. Its transfer to the specified
+CA assignment remains unproved after the three new attacks.
+There is no counterexample to the one-loop lemma here. The
+account's full one-loop statement, and hence T0, is not claimed
+proved by this note.

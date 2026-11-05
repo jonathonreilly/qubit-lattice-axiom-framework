@@ -986,7 +986,7 @@ calculus fails at (36). The attempt to fill the bound by analytic
 uniqueness fails at (37). Thus neither reconstruction supplies the
 normalized local word estimate left by attacks 4 and 5.
 
-## Result
+## Round 2 result (retained)
 
 **Open lemma**
 
@@ -1072,3 +1072,519 @@ values and analytic uniqueness do not reconstruct the required
 spectral bounds. Sections 1–5, Lemma 2 and Lemma 3 are retained.
 No counterexample to Proposition 2.4 has been obtained. The proposition,
 and the prescribed-word lemma (38), remain open.
+
+## 10. Third round: what the new inputs change
+
+Provenance: Codex, 2026-11-05, checkout
+`a5586b6f781f442f407f53e5b21ef17cbea5428c`. Research text, not an audit;
+no status granted. Sections 1–9 and both earlier results are preserved.
+The new arguments below have not been checked by another model.
+
+Credit remains with Ethan Sussman and Levent Alpoge, with Claude and
+Codex as authors of their text, and Tadeusz Balaban for the underlying
+construction. The source revision remains `31a47c543775`.
+
+I read this note whole before continuing (38). The outline and CA-I
+were fetched once; the existing CA-II and CA-III were reused. All four
+hashes match the pinned hashes in `mu.md`. Source identities, a copy
+of the previous note, bounded source excerpts and the recovery checkpoint
+are in `/tmp/mf-round3-a5586b6f7/`. The general workflow and repository
+skills named by AGENTS.md are absent from this checkout. GOAL, the
+specified FINISH sections, `port-map.md` Tables 1–3 and plan, and the
+source indexes govern this bounded task.
+
+The index searches preceded the source reads: outline chunks 10 and 12,
+their neighbouring walk/root rows and obligations; the CA full index;
+and the 4.12–4.19 index's background, operator and local-ball rows.
+I rechecked the statement and every labelled occurrence listed in §1.
+CA-II 59588 still declares the proof incomplete; 59607–59609 is still
+the companion-kernel step. The assembly's implication language does
+not supply a proof of it. No new counterexample to that proposition
+is asserted below.
+
+### Clause-by-clause comparison before the new attacks
+
+The original comparison in §2 survives inspection of the current
+hm Lemma 1 and Theorem 5, pw §§1, 8–9 and Result, hma D2–D4 and
+Theorem 2, and in1's constant table and Lemmas 1–2. In particular,
+hm groups polynomial entries **before** assigning labels. Hma adopts
+that grouping for its Y form. Pw tags a composed operator's full hull
+once. None identifies these assignments with the prescribed CA words.
+The independent-current and constant-order differences remain.
+
+The additional inputs are now available as proved or checked texts,
+with their stated premises. Their scopes give the following comparison.
+
+| Clause needed by (38) | New input | What it supplies; what it does not supply |
+|---|---|---|
+| The actual background branch | `mu.md`, Result and §§4–8 | The CA minimizer and its arbitrary-subdomain nesting in the specified Lemma-4 windows. It does not parametrize arbitrary independent-current pairs by physical pairs. |
+| Cube gauges at the printed radius | `oc.md`, §§4–5 and Result | The own-constant gauge clause for the stated small/true-background pairs and its one-step transport. Its thin-cube argument uses an ambient minimal background; it is not an extension theorem for a field known only on an arbitrary union. |
+| Stability under a twist | `ui.md`, §2 and Result | The two physical readouts, curvature and \(J_n(M^{\boldsymbol\cdot}V)\), obey the uniform increment bound. The separately supplied current remains a different coordinate. |
+| The original local spectral families | `lrb.md`, §§3–5, 10 and Result | CA §4.4's three assigned families on their local polydiscs, retaining (W′), cell coercivity, symmetry and the stated setting. This is substantially more than a replacement Gaussian. It does not identify every Chapter-5 instance with that setting. |
+| The fixed Stage-5 rate | `lrb.md`, §3; `port/p4-operator.md`, A9 | Lrb supplies its absolute rate \(\theta\), and A9 supplies the global sheet rate \(\delta_0\). Neither gives a comparison with the already fixed \(\mu_0\), in the same bond metric and for the same words. |
+| The full local-data domain | P4 A9(H), its input table and check log | The local-ball theorem still starts from a globally given real \(U\). P4 also retains the unprinted original-hull format and assembly assertions as named hypotheses. Checking the port did not remove those hypotheses. |
+| Finite local coordinates and response | `piv.md`, §§3–6; `pw.md` | A unique finite-read pivot graph in PIV's averaging convention, and PW's specified independent-current response bounds. Neither changes the CA word assignment or fixes the missing rate comparison. |
+
+The decisive source lines for this comparison are CA-I 5517–5578
+((W′), including datum-independent local majorants), 6095–6113
+(\(\theta\)), 6219–6309 (the local cell family), 8110–8169
+(the exact lrb setting and assignment), 45162–45234 (the two §4.13
+statements), 45439–45521 (the three gauge conditions and independent
+data radii), and 46073–46129 (A9's bounds and global-real-base clause).
+CA-I 16104–16150 identifies UI's readouts. CA-II 8521–8539 and
+10104–10186 fix the distinct role of \(\mu_0\). In particular,
+the \(\gamma_0\) in that root lemma is not silently identified with
+the similarly named constant in A9.
+
+The following attacks do not repeat primitive completion, a new root
+construction, or Boolean reconstruction. They test whether the new
+physical charts determine the missing germ; whether a quantitative
+perturbation can retain a fixed rate; and whether endpoint summation
+can replace a strict contraction at that rate.
+
+## 11. Attack 7: use the physical-current graph as the continuation set
+
+Mu now identifies the minimizer branch and its restrictions. OC supplies
+the corresponding real cube gauges. UI controls the branch's physical
+current under a twist. It is tempting to pull the companion back to
+that branch, prove the required estimate there, and extend it in the
+independent current. This is a different route from constructing
+global completions of individual patches.
+
+The first part is legitimate within its scope. At an admitted true
+pair with \(\sigma=\mathbb1\), port CA-II 10104–10186: the root
+has the bound at its fixed \(\mu_0\). Mu can identify the physical
+branch on its admitted windows. PIV can identify its own constrained
+graph when its averaging conventions and domains are the ones in use.
+Neither statement identifies a prescribed decoupled word outside that
+physical setting.
+
+The proposed identity-theorem passage has a sharper obstruction than
+loss of a bound under analytic continuation. It does not determine
+the ambient analytic function at all.
+
+**Lemma 4 (the physical graph misses transverse current data).**
+Let \(z\) be local field coordinates and let \(j(z)\) be their
+holomorphic physical current. Suppose there is at least one independent
+current coordinate \(w_1\). For any holomorphic matrix function
+\(H(z,w)\),
+
+\[
+ F(z,w)=w_1\bigl(w_1-j_1(z)\bigr)H(z,w)                  \tag{40}
+\]
+
+vanishes both on the physical graph \(w=j(z)\) and on the
+zero-current slice \(w=0\). All derivatives of its pullback along
+either slice vanish. Nevertheless \(F\) need not vanish on any
+ambient independent-current neighbourhood.
+
+**Proof.** The pullbacks are identically zero by the two displayed
+factors; differentiation of a zero function proves the derivative
+assertion. In an open current ball, choose \(w_1\) different from
+zero and from \(j_1(z)\). Taking \(H\) to be a nonzero constant
+matrix then gives a nonzero value. This also covers \(j_1\equiv0\),
+when the factor is \(w_1^2\). \(\square\)
+
+Thus even all physical response derivatives and all zero-current
+values do not identify the independent-current words. This is not
+the failure in (37): there, the continuation was already identified.
+Here the proposed initial set is not a uniqueness set.
+
+Nor does a uniform weaker-rate envelope repair that defect. For a
+scalar flat chart with \(j(0)=0\), take one labelled entry at
+distance \(N\ge1\), from \(0\) to \(Ne_1\), and set
+
+\[
+ F_N(z,w)=\frac{e^{-\mu_0N}
+             +w_1(w_1-j_1(z))e^{-\vartheta N}}{(N+1)^2},
+ \qquad 0<\vartheta<\mu_0.                              \tag{41}
+\]
+
+On a small fixed chart the functions have a uniform absolute family
+bound at rate \(\vartheta\): the remaining series is bounded by
+\(\sum_{N\ge1}(N+1)^{-2}\). On both slices they have the stronger
+rate. At \(z=0\) and any fixed small real \(w_1\ne0\), their
+ratio to \(e^{-\mu_0N}\) is unbounded. Even multiplying by the
+spectral integration factor \(c_N\ge1/(N+1)\) leaves an
+exponential divided by a cubic polynomial. It still diverges.
+These are tests of the proposed inference, not CA coefficients or
+a counterexample to the global free-current theorem.
+
+**Exact failure.** Mu, OC and UI settle branch and gauge matters in
+their stated settings; they do not supply transverse derivatives of
+the prescribed independent-current resolvent words. PIV solves an
+averaging constraint and does not impose \(\mathbf J=J(\mathbf U)\)
+on the free-current domain. P4 supplies that domain about a global
+real base, but its clause (H) does not remove the base. The new
+physical results therefore cannot identify the local germ in (38)
+by this route. The missing information concerns transverse current
+directions. Minimizer uniqueness does not determine it.
+
+## 12. Attack 8: continue with an explicit budget at the fixed rate
+
+Lrb supplies local holomorphy and an absolute family bound, including
+independent currents, in its own setting. I tried to use its larger
+polydisc to continue a stronger reference estimate without changing
+\(\mu_0\). This uses its actual assigned family, not the identity
+theorem from attack 7 or a new inverse-root prescription.
+
+First consider the direct displacement argument. Write \(\rho_f\)
+for the large field radius, to distinguish it from bond distance,
+and put \(t=\varsigma/(\rho_f-\varsigma)\). Lrb §5's Cauchy
+argument preserves the exponent of the available family norm. In
+any common metric in which that norm has rate \(\vartheta\), it
+gives a bound of the form
+
+\[
+ |K(u)-K(u_0)|(b,b')\le Dt e^{-\vartheta\rho(b,b')}.       \tag{42}
+\]
+
+It also holds for the absolute difference family when Cauchy's
+formula is applied to its coefficients and summed: the boundary
+integral of their nonnegative sum is at most the uniform family
+bound. The locally normally convergent family justifies that exchange.
+This adds no new estimate for data outside lrb's hypotheses.
+
+If \(\vartheta<\mu_0\), no fixed positive \(t\), however small,
+makes the right side bounded by a fixed multiple of
+\(e^{-\mu_0\rho(b,b')}\) at all distances and volumes. The ratio
+is \(Dt e^{(\mu_0-\vartheta)\rho(b,b')}\). The coupling ceiling
+cannot depend on the diameter of the torus. Nor do the printed
+floors force lrb's rate above \(\mu_0\):
+
+\[
+ \theta\le\frac{\gamma_*}{16e\mathsf B(r'+2\rho_w)}
+       \longrightarrow0\quad(r'\longrightarrow\infty).   \tag{43}
+\]
+
+The near–far conditions allow sufficiently large \(r'\), followed
+by sufficiently large \(\ell,M\). Equation (43) concerns the
+**printed estimate**, not the actual decay of the kernels. Lemma 1
+improves that estimate to an earlier rate, but still supplies no
+comparison with the fixed \(\mu_0\).
+
+I then tried to retain a reserve in the individual word bounds instead
+of using the additive difference (42). This gives the following
+quantitative criterion. It uses the original step count in (38).
+
+**Lemma 5 (a sufficient perturbation budget for the original words).**
+Keep \(a=m_1/2\), \(q_a(x)=a/(a+x)\), and every original label
+and monomial. Suppose the local words are already defined holomorphically.
+Suppose there are datum- and \(x\)-independent numbers
+\(a_\nu(b,b')\ge0\) such that
+
+\[
+ q_a(x)^{-n(\nu)-1}\|R^{\rm CA}_\nu(x;u)(b,b')\|
+       \le(1+\eta)^{n(\nu)+1}a_\nu(b,b'),\qquad \eta\ge0. \tag{44}
+\]
+
+For every allowed parameter value suppose also that
+
+\[
+ \sum_{n(\nu)=n}|s_\nu|a_\nu(b,b')\le(PT^n)(b,b'),
+ \qquad |P|_{\mu_0}\le p,\quad |T|_{\mu_0}\le q<1,       \tag{45}
+\]
+
+where \(P,T\) are nonnegative kernels and \(|\cdot|_{\mu_0}\)
+is the two-sided Schur norm in the account's bond distance. All
+parameter costs are included in (45). These majorants do not change
+any word, grouping, reading set or monomial. If
+
+\[
+ q_\eta:=(1+\eta)q<1,\qquad
+ \sqrt a\,\frac{p(1+\eta)}{\sqrt{1-q_\eta}}
+                  \le B_{\rm comp},                     \tag{46}
+\]
+
+then the two inequalities in (38) hold, with
+\(A_\nu=(1+\eta)^{n(\nu)+1}a_\nu\).
+The identification of the integrated words with the assigned companion
+is still required. For uniform conclusions, the premises and constants
+in (44)–(46) must hold uniformly over the same instances as (38).
+
+**Proof.** Schur norms multiply by the triangle inequality for
+\(\rho\); hence \(|PT^n|_{\mu_0}\le pq^n\). In particular,
+
+\[
+ \sum_\nu |s_\nu|c_{n(\nu)}A_\nu(b,b')
+ \le p(1+\eta)e^{-\mu_0\rho(b,b')}
+              \sum_{n\ge0}c_n q_\eta^n
+ =\frac{p(1+\eta)}{\sqrt{1-q_\eta}}
+              e^{-\mu_0\rho(b,b')}.                     \tag{47}
+\]
+
+Here the last equality can be checked without a summation algorithm.
+The recurrence in Lemma 2 is
+\((n+1)c_{n+1}=(n+\tfrac12)c_n\).
+For \(f(z)=\sum c_nz^n\), absolute convergence on \(|z|<1\)
+allows differentiation and gives \((1-z)f'(z)=f(z)/2\),
+\(f(0)=1\). Differentiating \((1-z)^{1/2}f(z)\) shows it
+is constant one. Thus \(f(z)=(1-z)^{-1/2}\).
+Equation (46) proves the second inequality of (38), and (44) proves
+the first. The geometric majorant at \(q_\eta<1\) gives local
+normal convergence. Deleting complete labels only decreases it.
+Lemma 2 then integrates the words without changing their tags.
+\(\square\)
+
+This criterion has a useful order of choice. If
+\(\sqrt a\,p/\sqrt{1-q}<B_{\rm comp}\) at Stage 5, continuity
+leaves a positive allowance for \(\eta\). A later field or current
+ceiling can meet that allowance without altering any earlier constant.
+If the budget is saturated, this argument gives no positive allowance;
+one must prove unchanged envelopes, or find actual slack in the same
+global bound. The square-root denominator in (46) is better than
+the geometric denominator obtained by discarding the \(c_n\)'s.
+
+There is an elementary way to obtain the factor in (44) **if** the
+necessary primitive estimates are known. For a prescribed product
+of \(n+1\) factors, let their reference envelopes be \(h_i\),
+and bound each displacement by \(\eta h_i\) in the same
+compatible matrix norm. Each factor is bounded by
+\((1+\eta)h_i\); multiply these bounds and sum the prescribed
+intermediate indices. This proves (44). If an original step has
+several factors, its whole product must first be estimated with its
+original reading set. No equality of the new envelopes with a bound
+on the already summed operator follows.
+
+**Exact failure.** Lrb supplies (42) on its local class and an
+absolute moment at \(\theta\). P4 supplies the normalized global
+step factor (CA-I 48012–48017) and its sheet estimate at
+\(\delta_0\). Neither supplies (44)–(45) at the fixed
+\(\mu_0\), with the original current-dependent factors, on every
+Chapter-5 local datum. In particular, their statements give neither
+\(q<1\) in that weighted majorant norm nor the amplitude margin
+in (46). PW proves such estimates for its specified response family;
+HM obtains a contraction by grouping its own polynomial entries.
+Importing either grouping would change the prescribed object.
+Thus small late radii alone do not close the gap. Lemma 5 states
+exactly the additional quantitative information this attempt would use.
+
+## 13. Attack 9: replace strict contraction by endpoint smoothing
+
+The preceding attack asks for a strict weighted contraction. A different
+possibility is to estimate each endpoint at the critical rate, using
+four-dimensional diffusion in the step count. This was not used in
+the earlier spectral integration argument: a critical scalar geometric
+sum may diverge while its endpoint kernels decay with the number of steps.
+
+**Lemma 6 (endpoint summation at the critical rate).** Suppose the
+original normalized word envelopes exist as in (38), and for every
+\(n\ge0\) their endpoint sum satisfies the following bound with
+one Stage-5 constant \(D\), uniform in the instances of (38):
+
+\[
+ E_n(b,b'):=\sum_{n(\nu)=n}|s_\nu|A_\nu(b,b')
+ \le D(n+1)^{-2}e^{-\mu_0\rho(b,b')}.                    \tag{48}
+\]
+
+Then their integrated sum is bounded by
+\((5D\sqrt a/3)e^{-\mu_0\rho(b,b')}\). In particular,
+\(5D\sqrt a/3\le B_{\rm comp}\) implies (38)'s summed bound.
+
+**Proof.** The recurrence for \(c_n\) gives
+\(c_n\le(n+1)^{-1/2}\). Indeed induction reduces its next step
+to
+\((2n+1)^2(n+2)\le4(n+1)^3\); the difference is \(3n+2\).
+Consequently
+
+\[
+ \sum_{n\ge0}c_nE_n(b,b')
+ \le D e^{-\mu_0\rho(b,b')}
+       \sum_{n\ge0}(n+1)^{-5/2}
+ \le\frac53D e^{-\mu_0\rho(b,b')}.                      \tag{49}
+\]
+
+The last inequality follows by bounding the tail after its first
+term by \(\int_1^\infty t^{-5/2}dt=2/3\). Apply Lemma 2.
+Uniform versions of (48) on compact analytic sets also give normal
+convergence there. \(\square\)
+
+This is a real alternative to a geometric word bound, not merely a
+renaming of it. To test the mechanism, consider the lazy walk on
+\(\mathbb Z^4\) with transition
+
+\[
+ (Pf)(v)=\tfrac12f(v)+\tfrac1{16}
+       \sum_{i=1}^4[f(v+e_i)+f(v-e_i)] .                 \tag{50}
+\]
+
+Its Fourier multiplier is
+\(p(t)=\tfrac12+\tfrac18\sum_i\cos t_i\in[0,1]\).
+Concavity of sine on \([0,\pi/2]\) gives
+\(1-\cos t\ge2t^2/\pi^2\) for \(|t|\le\pi\).
+Therefore
+\(p(t)^n\le\exp[-n|t|^2/(4\pi^2)]\).
+The coefficients of the Laurent polynomial \(p^n\) are the transition
+entries of \(P^n\). Integrating against a character selects each
+coefficient. Taking absolute values and extending the resulting
+Gaussian integral to \(\mathbb R^4\) gives
+\(P^n(v,v')\le\pi^2n^{-2}\) for \(n\ge1\).
+Here \(\int_{\mathbb R}e^{-ct^2}dt=\sqrt{\pi/c}\), as follows
+by squaring the integral and using polar coordinates.
+The bound at \(n=0\) is one. Thus the required power of the
+step count is available in this infinite-volume comparison model.
+This is only a test for a prospective **tilted** majorant; (50)
+is not identified with the CA walk or its exponential tilt.
+
+The target also includes finite periodic volumes. On a periodic
+four-dimensional lattice with \(V\) sites, the same walk has
+nonnegative Fourier eigenvalues and a constant eigenvector of
+eigenvalue one. Fourier inversion at a diagonal entry gives
+
+\[
+ P^n(v,v)=V^{-1}\sum_{t}p(t)^n\ge V^{-1},\qquad
+ \sum_{n\ge0}c_nP^n(v,v)
+       \ge V^{-1}\sum_{n\ge0}\frac1{n+1}=\infty .         \tag{51}
+\]
+
+Hence infinite-volume transience cannot replace a uniform contraction
+without controlling the finite-volume stationary mode. If the
+comparison walk is killed by \(1-\epsilon\), its constant mode
+alone contributes \(1/(V\sqrt\epsilon)\), by (47).
+A qualitative positive killing rate is insufficient for uniform bounds.
+This does not say that a weighted Schur norm equal to one always
+causes divergence; it identifies the mode that this proposed
+comparison argument must rule out.
+
+I also tried to obtain that exclusion directly from the now available
+positive local base. Positivity controls the signed matrix. It need
+not control the absolute path majorant. The distinction is already
+visible in three dimensions of coordinate space. Let
+
+\[
+ A=\begin{pmatrix}1&3/4&3/4\\3/4&1&3/4\\3/4&3/4&1\end{pmatrix},
+ \qquad b=5/2,\qquad T=I-A/b .                           \tag{52}
+\]
+
+On constant vectors \(A\) has eigenvalue \(5/2\); on their
+orthogonal complement it has eigenvalue \(1/4\). Thus \(A>0\)
+and \(\|T\|=9/10<1\). Its convergent resolvent series is
+
+\[
+ (x+A)^{-1}=(x+b)^{-1}\sum_{n\ge0}
+                 [b/(x+b)]^nT^n .                       \tag{53}
+\]
+
+Expanding each matrix power into coordinate paths and taking absolute
+values replaces \(T\) by a matrix \(P_*\) with diagonal \(3/5\)
+and off-diagonal \(3/10\). Its constant and orthogonal eigenvalues
+are \(6/5\) and \(3/10\), respectively. Hence
+
+\[
+ (P_*^n)_{11}=\tfrac13(6/5)^n+\tfrac23(3/10)^n,
+ \qquad \sum_{n\ge0}c_n(P_*^n)_{11}=\infty.              \tag{54}
+\]
+
+The lower bound (26) proves the divergence by hand. In contrast,
+integrating (53) as grouped matrix powers converges. This is why
+preserving the account's grouping matters. The example refutes an
+inference from a spectral gap to a summable unsigned path majorant;
+it is not a CA fluctuation form or a counterexample to Proposition 2.4.
+
+**Exact failure.** No imported statement provides (48) for the
+original words at \(\mu_0\). A Markov or heat-kernel interpretation
+of their positive majorants has not been established. Even in the
+comparison model, transience alone fails the periodic-volume clause
+at (51). Lrb's positive base, P4's sector bound and HM's gaps cannot
+supply this missing assertion just by taking absolute values, as
+(52)–(54) show. A proof would need a uniform estimate for the actual
+grouped words, including the finite-volume mode and the prescribed
+parameter charges. Lemma 6 provides a sufficient endpoint criterion;
+none of those additional properties is assumed to hold for CA.
+
+## 14. Current checkpoint and limits
+
+The newly proved statements are Lemma 4's obstruction to determining
+the free-current germ from its physical slices, Lemma 5's fixed-rate
+perturbation criterion, and Lemma 6's endpoint summation criterion.
+Equations (51) and (54) give explicit failures of two proposed
+majorant inferences. These are hand arguments. They are not new
+properties of the CA family unless their displayed premises are met.
+This round closes no CA obligation.
+
+The new frozen inputs were used at their stated scopes. No open
+premise in the operator port, lrb, mu, oc, ui, PIV or PW was promoted
+to a theorem. In particular, there is no remaining proposal to
+reprove mu's uniqueness, oc's cube gauge, or lrb's Gaussian comparison.
+Those would not supply the missing transverse word estimates.
+
+Recovery decision: the next round should inspect the **original
+grouped step factors at free current**, on their complete local
+reading sets. It must either obtain a common \(\mu_0\)-weighted
+majorant with an explicit budget such as (44)–(46), or prove an
+endpoint estimate such as (48) while controlling finite periodic
+volumes. These are sufficient tests of the one lemma below, not new
+requirements imposed on Proposition 2.4. A direct proof of the
+proposition may avoid them. No failure example here refutes that
+proposition or its prescribed-word lemma.
+
+Only `library/mf.md` is changed. No prompt, ledger, audit file,
+platform instruction or scientific status is changed. Tools were
+used for source retrieval, bounded reading, hashes and editing;
+no computation discharges a mathematical step. The new work remains
+unreviewed research text.
+
+## Result
+
+**Open lemma**
+
+**Prescribed-word continuation at the fixed Stage-5 rate.** For every
+density-decomposition instance of CA `2.4:prop-m-freeness`, retain its
+original cells, geometry, free bonds, traces, independent currents,
+local-data domain, parameter range and word assignment. Let \(M\)
+range over all values above its existing floors. Keep the global
+Stage-5 constants \((B_W,\delta_W),\mu_0,B_{\rm comp}\) and the
+global word constant \(a=m_1/2\) from CA-I 48012–48017.
+
+The open assertion is that every prescribed resolvent word
+\(R^{\rm CA}_\nu(x;u)\), \(x\ge0\), has a compatible holomorphic
+evaluation on the whole stated local-data domain. It must retain
+its coefficients, step count \(n(\nu)\), full field and geometric
+reading sets, and original parameter monomial \(s_\nu\). Its
+termwise spectral integral must be the account's assigned companion
+word. This is an identification requirement, not a definition of
+a new companion. There must be datum- and \(x\)-independent
+envelopes \(A_\nu(b,b')\) such that
+
+\[
+ \sup_{x\ge0}(1+x/a)^{n(\nu)+1}
+       \|R^{\rm CA}_\nu(x;u)(b,b')\|\le A_\nu(b,b'),
+ \qquad
+ \sum_{\nu\ {\rm retained\ in}\ W}|s_\nu|c_{n(\nu)}A_\nu(b,b')
+ \le\frac{B_{\rm comp}}{\sqrt a}e^{-\mu_0\rho(b,b')},
+ \qquad c_n=4^{-n}\binom{2n}{n}.                         \tag{55}
+\]
+
+The same bounds must hold globally and locally, normally on compact
+analytic sets, for all admitted parameter values, depths, nests,
+volumes and larger \(M\). They keep the original groups and their
+constituent resolvent words as specified in (38). They add no upper
+bound on \(M\), no restriction of the local-data class and no
+later change of \(\mu_0\) or \(B_{\rm comp}\). Constants precede
+the widths, \(r',\ell,M\), and the later radii and coupling ceilings.
+When the companion is CA-II 10120's root, retain that statement's
+amplitude \(B_{\rm comp}=2\gamma_0^{-1/2}\), with its own
+\(\gamma_0\). No comparison with A9's similarly named constants
+is presumed.
+
+This is the same sufficient, stronger lemma as (38). Its implication
+to the requested proposition is still a hand proof: Lemma 2 integrates
+(55) to give
+\(|K_{{\rm comp},W}(u)(b,b')|\le B_{\rm comp}e^{-\mu_0\rho(b,b')}\).
+The first kernel bound is the ported CA-II 59602–59605 conclusion.
+Both bounds then use their original global constants, so the Stage-5
+widths and the three Stage-6 floors read them in their original order.
+
+Three new attacks were made. Attack 7 fails because the physical
+and zero-current slices do not determine transverse current data,
+even with all their tangent derivatives. Attack 8 gives the exact
+budget (46), but the imported bounds do not supply its original-word
+majorants at the fixed rate; smaller radii alone cannot repair a lost
+exponent. Attack 9 gives the endpoint criterion (48), but diffusion
+does not remove the finite-volume stationary mode, and form positivity
+does not bound the unsigned word majorant. These are specific failures
+of the attempted deductions, not proofs that the needed estimates
+are false for CA.
+
+All earlier proved material is retained. Neither a complete proof
+nor a counterexample to Proposition 2.4 was obtained in this round.

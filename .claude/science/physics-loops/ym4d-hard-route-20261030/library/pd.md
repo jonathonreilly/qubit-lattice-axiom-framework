@@ -931,7 +931,7 @@ Cancellations within the actual sum are allowed. What cannot be used
 is a replacement of that sum by its real part, a different source
 integral, or a differently normalized subdomain logarithm.
 
-## Result
+## Round 2 stopping lemma (retained)
 
 **Open lemma**
 
@@ -994,3 +994,512 @@ Route's reality step is removed. This is not asserted to complete
 must be followed through the same induction. Lemmas 1–3 remain
 conditional tools for those steps. Proposition 4.32, stability
 hypothesis (h1), and its downstream uses remain unproved here.
+
+## 8. Third round: direct reflection of the ingredients
+
+Provenance: Codex, 2026-11-05, checkout
+`e8dad614ecc48722fa9547baf8eed18288727245`. Research text, not an audit;
+grants no status. This round retains all preceding proofs and attacks
+\((R_V)\) directly. Its new arguments have not been checked by another
+model. No calculation, search, or run discharges a mathematical step.
+
+Credit remains with Ethan Sussman and Levent Alpoge, with Claude and
+Codex as authors of their text, and with Tadeusz Balaban for the
+construction. CA and SA below retain the source revision
+`31a47c543775` of §1.
+
+The statement, status sentence and Route at CA-I 156837–156998 were
+read again, as were their uses listed in §1. The comparison with AG1,
+TP1 and IN1 remains unchanged. In particular, AG1's real activity
+integrands are assumptions of its Lemma 3. IN1's H-E assumes the
+real scalar factors being sought here. Neither supplies them.
+
+The index entries were read before the corresponding source excerpts.
+The new source checks concern these specific formulas:
+
+| Source | Ingredient and extent of the check |
+|---|---|
+| CA-I 5120–5153, 5218–5289, 8839–8910 | The fixed walk masks and finite vertex localization. |
+| CA-I 5519–5563, 47295–47320, 47555–47589; CMP 99b (3.87)–(3.90), pp. 409–410 | Form-family hypotheses, elementary walk words and the later free-current assembly. |
+| CA-I 6219–6283 | Cell-resolvent words and the positive-half-line formula for the inverse square root. |
+| CA-I 14992–15103, 15265–15345 | Reality of the response chart, including real decoupling parameters. This is a port. |
+| CA-I 38859–38889 | The prescribed principal matrix logarithm; unitary inputs have anti-Hermitian logarithms. |
+| CA-I 46035–46083, 47253–47278, 47584–47599 | Reality of the full free-current forms and covariances. The printed clauses do not say each walk is real. |
+| CA-I 56795–56814 | The exact preparatory recursion for the scalar boundary action. |
+| CA-I 58219–58270, 60638–60700 | Where reality of the inherited scalar families is assumed in the account. |
+| CA-I 93993–94097, 94120–94165 | The boundary family and its distinct far-nucleus and direct-evaluation conventions. |
+| CA-I 98164–98429; CA-II 15979–16150 | Explicit Wilson cell densities; the separate treatment of the value containing \(I(U_0)\). |
+| CA-I 105207–105278, 106091–106165 | The actual Gaussian logarithm and its bond-density representation. |
+| CA-II 109006–109039 | The reference quotient, including its gauge delta, cutoff and denominator. |
+
+The local Balaban CMP 109 and CMP 119 texts were also consulted at
+pp. 260–262 and pp. 272–278 respectively. CMP 109 (1.7)–(1.9)
+assumes independent-current analytic extensions for the scalar
+families. CMP 119 (3.28), (3.33), (3.37), (3.44)–(3.47) specifies
+the integral, Gaussian normalization and expansion of normalized
+expectations. Their use below concerns those constructions, not an
+unstated reality theorem.
+
+A targeted attempt to obtain CMP 122b reached a Project Euclid bot
+check; it was not bypassed. INSPIRE and OpenAlex supplied bibliographic
+records, not its text. The CMP 122a/b formulas checked in this round
+are therefore the transcriptions and statements at the CA loci above.
+No claim below rests on having inspected an unavailable page. The
+mathematical stopping point is stated explicitly; it is not a missing
+download.
+
+### Attack 7: follow the background subtractions and Wilson terms
+
+The real structures must be applied to the correct spaces. On group
+matrices write \(s_G(W)=(W^\dagger)^{-1}\). On Hermitian potentials
+write \(s_H(A)=A^\dagger\); on anti-Hermitian exponents write
+\(s_A(\Xi)=-\Xi^\dagger\). In particular,
+
+\[
+ s_G(W_1W_2)=s_G(W_1)s_G(W_2),\qquad
+ s_G(e^{iA})=e^{iA^\dagger}.
+ \tag{22}
+\]
+
+The order of a group word is preserved in (22). Replacing this
+involution by entrywise conjugation of fundamental matrices would
+test a different real form.
+
+**Lemma 6 (the displayed Wilson cells commute with reflection).**
+Use the account's admitted real-preserving response charts and their
+holomorphic extensions. Let \(\mathcal U(m)\) be a composition of these
+charts, real averages and restrictions, on its prescribed domain.
+Here \(m\) includes the pair, real stored variables and localization
+parameters. Suppose the real coefficients \(c(p)\), the cell
+\(\Delta'\), and the omitted plaquettes \(\Pi_0\) are the fixed ones
+in CA-II 16128–16139. Then its displayed Wilson density satisfies
+
+\[
+ \begin{split}
+ f^W_{\Delta'}(m)&=
+ \sum_{\substack{x(p)\in\Delta'\\p\notin\Pi_0}}c(p)
+ \left[1-\frac1{2N_c}\operatorname{Tr}
+ \left(\mathcal U(m)(\partial p)+
+             \mathcal U(m)(\partial p)^{-1}\right)\right],\\
+ f^W_{\Delta'}(\bar m)&=\overline{f^W_{\Delta'}(m)}.
+ \end{split}
+ \tag{23}
+\]
+
+In (23), \(\bar m\) uses the respective real structures, not
+entrywise conjugation of the group variables. Taylor coefficients,
+Taylor remainders, differences between two such background
+evaluations, and finite vertex localizations of these functions obey
+the same identity.
+
+The hypothesis on \(c(p)\) is explicit. The cited estimate
+\(|c(p)|\le x''(p)\) alone does not make \(c(p)\) real.
+Real inverse couplings, their differences, and real partitions of
+unity give real weights before further localization. The lemma
+applies to those weights; it does not certify an unspecified
+coefficient merely from its modulus bound.
+
+*Proof.* Put
+\(a(W)=1-(2N_c)^{-1}\operatorname{Tr}(W+W^{-1})\).
+Since \(\operatorname{Tr}(T^\dagger)=
+\overline{\operatorname{Tr}T}\),
+
+\[
+ a(s_GW)=\overline{a(W)}.                         \tag{24}
+\]
+
+Port the chart reality clauses at CA-I 15027–15028 and
+15324–15333. In real exponential coordinates, each chart is
+holomorphic and real on the open real slice. The coordinatewise
+identity argument of §4 therefore makes it commute with reflection.
+Restrictions and the real averaging maps have the same property.
+Composition preserves it, as does taking the oriented plaquette
+word by (22). Applying (24) and summing with the real coefficients
+gives (23).
+
+For a real parameter \(t\), a Taylor coefficient of a real function
+is real: its derivative is a limit of real difference quotients.
+The real Taylor polynomial can therefore be subtracted without
+creating a phase. This covers each order, not only the quadratic
+order. The noncommutative second-order subtraction in CA-I
+98322–98330 is also explicit: its linear term is proportional to
+\(\operatorname{Tr}\Xi(W-W^{-1})\). When \(\Xi\) is
+anti-Hermitian and \(W\) is unitary, both factors are
+anti-Hermitian, and
+
+\[
+ \overline{\operatorname{Tr}\Xi(W-W^{-1})}
+ =\operatorname{Tr}(W-W^{-1})\Xi
+ =\operatorname{Tr}\Xi(W-W^{-1}).                 \tag{25}
+\]
+
+Thus that subtraction and its remaining term are real as well.
+Finally, the vertex formula (16) takes real signed sums of real
+vertex values. This proves the last assertion. ∎
+
+The far/direct split itself creates no phase. For a scalar \(f\)
+already obeying reflection, both \(f(P)\) and
+\(f(\operatorname{ext}_v(P))\) obey it whenever the prescribed
+box-minimizer map is real-preserving. The latter uses the real
+averages of \(\mathbf U\); the former retains independent
+\(\mathbf J\). Their difference is real. This is the actual
+split of CA-I 94120–94151; it requires no physical realization of
+the independent current. It proves preservation, not reality of
+an arbitrary scalar \(f\).
+
+**Exact failure to finish \((R_V)\).** Lemma 6 covers the displayed
+Wilson-density expression and these specified operations. It does
+not identify every member of \(\mathbf C_k\) with that expression.
+The account expressly excludes \(I(U_0)\), the other \(U_0\)
+members, and the intermediate-localization identification from its
+Wilson-cell lemma (CA-I 98427–98429). Its five-family formula also
+retains inherited \(\mathbf E,\mathbf R,\mathbf B,\mathbf B''\)
+members. Thus proving the background maps real removes one possible
+source of phase, but does not prove the scalar functions composed
+with those maps real. The next attacks address those functions.
+
+### Attack 8: follow the Gaussian branches through the fixed masks
+
+**Lemma 7 (the prescribed Gaussian branch).** Let \(B(P)\) be the
+full precision in `4.24:lem-log-resolvent`, on a symmetric coordinate
+domain on which it is accretive. Suppose \(B^\#=B\), where matrix
+reflection means \(B^\#(P)=\overline{B(\sigma P)}\) in a real
+orthonormal Lie-algebra basis. Then
+the account's function
+
+\[
+ L_B(P)=\log\lambda_0\,1+
+ \int_0^\infty\left[(\lambda_0+x)^{-1}1-(B(P)+x)^{-1}\right]dx,
+ \qquad \lambda_0>0,
+ \tag{26}
+\]
+
+satisfies \(L_B^\#=L_B\). Its Gaussian factor
+\(\exp[-\tfrac12\operatorname{Tr}L_B]\) is strictly positive
+at every admitted real pair. This uses the branch already prescribed
+by CA-I 105232–105254, not a choice of a new branch.
+
+*Proof.* The source proves convergence of (26) and identifies it
+with the principal matrix logarithm. Conjugation commutes with a
+matrix inverse: conjugate the two identities defining that inverse.
+Both \(x\) and \(\lambda_0\) are real. Conjugating each truncated
+integral in (26) therefore gives the same truncated integral at
+\(\sigma P\). Convergence permits the limit. Its trace is real
+at real \(P\), so its real exponential is strictly positive. ∎
+
+The full forms and covariances in CA-I 46075–46083 are real at
+independent real current. Thus, on their admitted symmetric charts,
+the identity theorem supplies the premise of Lemma 7. The same
+argument covers their real compressions and Schur complements.
+This ports their definedness and coercivity; it does not establish
+those estimates anew. The scalar logarithm in (26) agrees with
+Balaban CMP 119 (3.33)–(3.36), as identified in CA-I
+106109–106150.
+
+There is a further exact test for localization, beyond reality of
+the full form. The cell-resolvent formula is
+
+\[
+ \begin{split}
+ T_q&=\chi_{c_q^*}\mathsf A_{\mathrm{loc}}\chi_{c_q^*},\\
+ P_q(x)&=\chi_{c_q^*}(x+T_q)^{-1}\kappa_q,\\
+ B_q(x)&=\chi_{Y\setminus c_q^*}\mathsf A_{\mathrm{loc}}
+             \chi_{c_q^*}(x+T_q)^{-1}\kappa_q,\\
+ \mathsf N(x)&=\sum_{n\ge0}\sum_{q_0,\ldots,q_n}
+                      P_{q_0}(-B_{q_1})\cdots(-B_{q_n}),\\
+ \mathsf R^Y(x)&=\sum_{m\ge0}\mathsf N(x)
+              [-\chi_Y\mathsf A_{\mathrm{far}}\chi_Y\mathsf N(x)]^m.
+ \end{split}
+ \tag{27}
+\]
+
+These are CA-I 6246–6265. If each input \(\mathsf A_\omega\)
+commutes with reflection, every displayed letter and every word in
+(27) does too. Indeed, the near/far selection is geometric,
+\(\chi\) and \(\kappa_q\) are real, and the remaining operations
+are products and inverses. On operators, conjugation in the real
+basis preserves product order; it is not the adjoint operation.
+Each word therefore keeps its own footprint under reflection.
+Multiplying it by the account's switch monomial preserves this
+identity. Absolute convergence gives it for the sum.
+
+More generally, it suffices that input terms pair under reflection
+with the same footprint and the same near/far classification.
+Conjugation then permutes words without changing their switch
+monomials. The formula
+
+\[
+ \mathsf M^Y_\nu=\pi^{-1}\int_0^\infty
+                  x^{-1/2}\mathsf R^Y_\nu(x)\,dx
+ \tag{28}
+\]
+
+for the account's inverse square root preserves that pairing.
+The bound and integral in CA-I 6266–6276 justify the passage.
+Thus the precise input needed here is a reflection identity for
+the **fixed input walk family**, before the masks are attached.
+It is not positivity of each walk or symmetry of each word.
+
+I tested whether the already stated full-form properties imply
+this input. They do not. For an explicit scalar calculation, fix
+\(R\ge1\), \(0<h<(4R)^{-1}\), and put
+
+\[
+ B(s_1,s_2)=2+ihs_1-ihs_2,
+ \qquad |s_1|,|s_2|\le R.                       \tag{29}
+\]
+
+The sum at \((1,1)\) is the positive real number \(2\).
+Every value in this polydisc is accretive since
+\(\operatorname{Re}B\ge2-2hR>3/2\).
+Nevertheless the *prescribed principal* logarithm at the real
+vertex \((1,0)\) is not real. Formula (26), with \(B=2+ih\),
+gives by direct conjugation of the denominator
+
+\[
+ \operatorname{Im}L_{2+ih}
+   =\int_0^\infty\frac{h}{(2+x)^2+h^2}\,dx>0. \tag{30}
+\]
+
+The integral converges by comparison with \(h/(2+x)^2\).
+It is positive because its integrand is continuous and positive
+on \([0,1]\). This is a hand proof. There is no branch
+ambiguity or loss of analyticity in the example.
+
+**Exact failure to finish \((R_V)\).** The account's full-form
+reality clause and its principal branches settle Lemma 7. They
+do not, by themselves, settle the input walk identity of (27).
+CA-I 47274–47276 and 47589 give reality of the operator; the
+fixed-rule clauses at 8839–8910 specify which walk family must
+actually be used. In particular, the paragraph at 8905–8909
+distinguishes that family from Balaban's \(M_1\)-cube expansion.
+The chart's switched reality cannot be transferred between these
+families without an identification. Equations (27)–(28) prove
+preservation once their input family is reflected correctly.
+Equation (30) rules out replacing that check by full-form reality,
+accretivity, or a branch argument. It is not a counterexample to
+the account's actual walk family. Nor would proving this input
+alone settle the inherited non-Gaussian scalar members.
+
+Following the rule backward does not yet close that check.
+CA-I 5519–5563 gives the fixed form-family hypotheses: analytic
+local terms, bounds, footprints and locality, with no termwise
+reality clause. CA-I 47295–47320 starts the assembly from Balaban's
+elementary walks. In CMP 99b (3.87)–(3.90), pp. 409–410, these
+walks are words in real partitions of unity, local propagators and
+commutator errors. Such a word is real whenever its local
+propagators and differential operators are real. This supplies
+the same preservation argument at that elementary stage. The
+complete free-current family, however, also uses the branching
+insertions \(\Delta^{(2)}[\mathfrak j_0]\) and
+\(\mathcal J[\mathfrak j]\) and the assembly in CA-I
+47555–47573. I have not established their termwise reflection
+with the rule's domain assignments. The source's final assertion
+at 47589 is operator-level reality. Treating it as the missing
+walk identity would repeat the inference disproved by (29).
+
+### Attack 9: the reference quotient and induction on scalar members
+
+This attack tries to close the scalar part using the actual
+reference normalization and the preparatory recursion, without
+replacing either by a different positive integral.
+
+For a fixed exterior \(e\), the denominator in
+`8.7:eq-resampling-kernel-2` is
+
+\[
+ D_i(e)=\int d(V'|_{\Lambda_i})\,\delta_{G_i}(V')\chi(\Lambda_i)
+ \exp\{-g_k^{-2}A(\zeta_i,U_{k,X_i}(V'V_{\Lambda_i}(e)))\}.
+ \tag{31}
+\]
+
+Here \(\zeta_i\) is the real action weight, not the complex
+pair. Lemma 1 proves \(0<D_i(e)<\infty\) on the admitted real
+cutoff once the background-domain input is supplied. Fix a symmetric
+exterior chart whose real slice is admitted, and on which a
+holomorphic continuation agrees with (31). Its values on that
+full real slice determine the continuation uniquely. Consequently
+\(D_i^\#=D_i\) there. Its reciprocal has the same identity
+where defined. This is a conditional chart assertion, not a proof
+that the sharp-cutoff integral has such a chart at every exterior.
+
+There is a useful distinction from Attack 1. The variables of
+(31) are the exterior field variables. There is no independent
+current argument in this integral. Reality on their full real
+slice determines its holomorphic extension. Pullback to a pair
+through a real-preserving map still preserves reality. Thus the
+physical-graph nonuniqueness of (5) does not apply to (31) as a
+function of its own variables.
+
+If a logarithm of this denominator is prescribed, its normalization
+must still be followed. On a connected symmetric chart with
+\(D_i\ne0\), let \(L_i\) be a holomorphic logarithm normalized by
+\(L_i(e_*)=\log D_i(e_*)\) at a real point. Then
+\(L_i^\#-L_i\in2\pi i\mathbb Z\) is constant and vanishes
+at \(e_*\). Hence \(L_i^\#=L_i\). This proves the
+normalization statement without needing a uniform lower bound
+on \(D_i\), or a path from every exterior to the flat field.
+It does not assert that an arbitrary analytic continuation is
+zero-free: existence of the logarithm is an explicit premise.
+
+The account gives a more precise filing for the denominator term
+than the preceding rounds used. CA-II 16010–16019 files the
+members carrying \(U_0\), including \(I(U_0)\), as a value at
+\(Y_4=C\), **without link families**. Therefore it is unnecessary
+to prove a separate link-by-link reflection identity for this
+particular value. What is needed is its equality with the
+specified real-normalized expression derived from (31), including
+the extracted action and constants, and a real-preserving
+description of its \(U_0\) argument. The analyticity and size
+clauses of `4.23:def-boundary-terms` do not state this equality.
+No nonreal value of the actual \(I(U_0)\) has been found.
+
+For the other inherited boundary members, the exact recursion
+printed at CA-I 56802–56814 is
+
+\[
+ \begin{split}
+ \mathbf C_k^{(n+1)}&=\log Z_n+
+ A\left((g_k^{(n+1)}(\cdot))^{-2}
+              -(g_k^{(n)}(\cdot))^{-2},\ U_k^{(n+1)}\right),\\
+ \mathbf B_k^{(n+1)}&=\mathbf B_k^{(n)}+\mathbf C_k^{(n+1)}.
+ \end{split}
+ \tag{32}
+\]
+
+Here \(Z_n\) is exactly the integral in CMP 122a (1.60), not
+the auxiliary integral (14). The Wilson difference in (32) is
+real for real backgrounds and couplings. If the actual localized
+integrand of \(Z_n\) commutes with reflection, integration preserves
+reflection. Real normalizations preserve it too. A logarithm
+defined by an absolutely convergent connected series preserves it
+by the argument of (19): the connected coefficients are real.
+For any other logarithm, its real normalization still has to be
+identified as in Lemma 3. The same reasoning applies to the normalized
+expectations in Balaban CMP 119 (3.44)–(3.47): the numerator
+inserts one localized scalar member, and the denominator uses
+the same activity family. Products, their real Mayer coefficients,
+and the convergent connected sums preserve real inputs. This
+establishes a scalar **induction step**, conditional on the
+reality of its localized inputs.
+
+I tried to obtain those inputs from the earlier-level clause (a).
+That clause concerns weight factors of the integral operations.
+It does not separately assert reflection of each inherited
+\(E^{(j)}(Y)\), \(R^{(j)}(Y)\), or boundary member before
+new background substitutions and filing. The full account does
+introduce this additional scalar invariant: CA-I 58243–58254
+explicitly assumes reality of the whole-lattice localized terms
+at real independent pairs in \((\mathrm H_j)(d)\).
+CA-I 60651 includes reality in the definition of a family, and
+60678–60699 assumes its propagation before using it. These
+sentences locate the needed invariant; they are not a proof of
+it from the Route's earlier-level clause (a).
+
+The logical distinction can be checked without changing the
+construction. With \(h(P)\) as in (5), consider two scalar
+members \(f=i\varepsilon h\) and \(g=-i\varepsilon h\).
+The old factor \(e^{f+g}=1\) is strictly positive everywhere.
+At a subsequent pair of evaluations \(P\) and a physical
+pair \(q(P)\), one instead has
+
+\[
+ f(P)+g(q(P))=i\varepsilon h(P),\qquad h(q(P))=0.
+ \tag{33}
+\]
+
+For the flat field and the small nonzero current of §4, this is
+nonreal. Formula (33) does not claim that these are Balaban's
+members, or that he assigns these two slots in this way. It
+shows exactly why reality of an old *total* weight does not
+prove the scalar invariant needed after different background
+substitutions. Such distinct substitutions are present in the
+actual far/direct conventions. One must prove their real inputs,
+or a cancellation identity for their prescribed final sum.
+
+**Exact failure to finish \((R_V)\).** On a symmetric admitted
+field chart, a holomorphic continuation of the denominator that
+agrees with the real integral obeys reflection. Its correctly
+normalized logarithm does too, wherever that branch exists.
+The source gives a useful whole-value filing
+for \(I(U_0)\), but its equality with that normalized expression
+has not been established here. Equation (32) and the connected
+expansions preserve a scalar reflection invariant; the current
+proof does not establish that invariant for all prescribed
+localized inputs. The account's cited analytic extensions in
+CMP 109 (1.7)–(1.9) and its assumptions \((\mathrm H_j)(d)\)
+cannot be substituted for this step. Equation (33) excludes
+deducing it merely from earlier positive total weights.
+
+The parameter order is unchanged. Fix Stages 0–7 first; at Stage 8
+choose \(\gamma\) downward and then \(\gamma_H\); at Stage 9
+choose \(g,m,g_0,K\) in that order (CA-I 1642–1717).
+The reflection arguments add no ceiling. The numbers \(R,h\)
+in (29) belong only to the inference counterexample. The positive
+\(\lambda_0\) in (26) is the account's existing reference number.
+No construction radius is shrunk to remove independent currents.
+
+## Result
+
+**Open lemma**
+
+**\((R_V)\): reality of the prescribed scalar interaction.**
+Choose the account's constants in the order just stated. For every
+level \(k\le K\), assume exactly the Route's lower-level reality,
+finite analytic definedness and Borel component-locality clauses,
+and its current-level definedness input. For every admitted component
+\(X\), history \(\omega\) and real
+\(\xi\in S_\omega\), let \(V_\omega\) be the actual scalar
+interaction prescribed by Balaban CMP 122b (1.66)–(1.71), with the
+account's fixed localization rule, inherited terms, background
+subtractions, reference terms and normalized branches. Prove
+
+\[
+  V_\omega(X^\sim;\xi;\mathbf U,\mathbf J)\in\mathbb R
+  \quad\text{for every independent real pair }
+  (\mathbf U,\mathbf J)\in\operatorname{Reg}_k(X).
+  \tag{34}
+\]
+
+Equivalently, prove (21) on every symmetric real-centred chart of
+its prescribed domain. The assertion concerns the prescribed sum.
+It does not require each summand to be real separately. A
+cancellation under reflection is sufficient if it survives the
+actual masks and the distinct background evaluations.
+Neither \((\mathrm H_j)(d)\) nor termwise reflection is added to
+the hypotheses of this open lemma.
+
+Three new direct attacks have been made:
+
+1. **Wilson terms and background subtractions.** Lemma 6 proves
+   reflection for the displayed real-weight Wilson cells, their
+   Taylor subtractions and vertex differences. It stops at the
+   identification of the remaining scalar inputs: the cited cell
+   lemma explicitly excludes \(I(U_0)\), other \(U_0\) terms
+   and intermediate localizations. Real argument maps alone do
+   not make the inherited functions real.
+2. **Gaussian branches and fixed masks.** Lemma 7 proves reflection
+   for the prescribed accretive Gaussian logarithm. Equations
+   (27)–(28) propagate reflection of the fixed input family.
+   That family's required identity has not been established.
+   The hand example (29)–(30) shows why full-form reality and the
+   principal branch do not replace it.
+3. **Reference quotient and scalar induction.** The positive
+   reference denominator has a real-normalized logarithm wherever
+   the stated analytic chart and branch exist. Its whole-value
+   filing removes a linkwise obligation for \(I(U_0)\), but
+   does not identify that value with the normalized logarithm.
+   The recursion (32) preserves real localized inputs; their
+   independent-current reality is assumed at the cited family
+   loci and has not been derived here from the Route's inputs.
+   Equation (33) shows the failure of the proposed total-weight
+   inference after different substitutions.
+
+No actual nonreal ingredient or counterexample to 4.32 was found.
+The examples refute proposed inferences, not Balaban's prescribed
+construction. This is an unfinished proof of an outstanding step,
+not a correction or a completed port. Proving (34) would make
+\(e^{V_\omega}\) strictly positive on the required real domain.
+It would remove this scalar obstruction; it would not by itself
+prove the other factors, the measure/support identities, or
+Proposition 4.32. Integrated stability (h1) remains conditional.

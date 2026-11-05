@@ -2,7 +2,7 @@
 
 Provenance: Codex, Pass 2, 2026-11-04, distilling Claude's [pass-1 draft](in1-draft.md) at checkout e1464b5d12d63c11ce0d15dbaa99373c579a485e. Source attribution: Ethan Sussman and Levent Alpoge, with Claude and Codex as the authors of their text, revision 31a47c543775. Research text, not an audit; grants no status. Not yet refereed.
 
-The main result is Theorem 12: a conditional IN1 reduction. The matrix estimate, budget arithmetic, genealogy calculation and scalar stopping argument below are hand proofs. The hypotheses concerning the actual four-dimensional construction remain imports; the missing implications are marked **Outstanding** where used. Source-line checks are recorded in [the source record](../checks/in1-distill/source-checks.md). Here SA means the pinned outline, CA-I the pinned complete account I, and YM3 the pinned three-dimensional manuscript.
+The main result is Theorem 12: a conditional IN1 reduction. The matrix estimate, budget arithmetic, genealogy calculation and scalar stopping argument below are hand proofs. The hypotheses concerning the actual four-dimensional construction remain imports; the missing implications are marked **Outstanding** where used. Source-line checks were recorded in a distiller's source record that is not in this checkout; the referee rechecked the YM3 and FG11 lines directly (`gates/in1-gate.md`, F1). Here SA means the pinned outline, CA-I the pinned complete account I, and YM3 the pinned three-dimensional manuscript.
 
 ## Definitions
 
@@ -79,7 +79,7 @@ All normalizers, densities and chart determinants remain in the integrand \(I_\o
    \int^*\sup_{\mathbf p\in\mathcal D_i(\widetilde X)}
                        |I_\omega(\xi;\mathbf p)|\,d\mu_\omega(\xi).  \tag{7}
 \]
-The upper integral is the infimum over integrals of nonnegative Borel majorants. This avoids assuming measurability of an uncountable supremum.
+Here \(\widetilde X\) is the creation-domain hull of \(X\). The upper integral is the infimum over integrals of nonnegative Borel majorants. This avoids assuming measurability of an uncountable supremum.
 
 For a drop-out, replace the supremum in (7) by the supremum over its compatible real evaluation fibre: the stored averages agree; the field is regular on each recorded layer; all recorded tests other than the new root failure hold; every inner operation is read in its creation domain; free Wilson weights have the prescribed positive lower bound and the kept forms and chart Jacobians obey the prescribed one-sided bounds. Include the carrying Wilson factor on its owned shares. The supremum of an empty fibre is zero. The root failure pays its next wait, not this mass.
 
@@ -105,7 +105,7 @@ The following are hypotheses, not conclusions about this checkout.
 \]
 Here \(K_0\ge1\) and \(H_0,b,d,C_\tau>0\) precede \(\bar\kappa,M\); \(0\le H_p(M)<\infty\) is allowed to follow \(M\). The functional is normalized, hereditary in its declared carriers, wall-factorizing, holomorphic on these discs, and agrees at physical parameters with the actual fluctuation law. Its local dimension is at most \(c_m(LM)^4\) per cube. Import the finite-dimensional Gaussian comparison SA 13904–14089 (FG1–FG11): for reference bound \(K_0\), perturbation \(\varepsilon\le\varepsilon_0(K_0)\) and quadratic tilt \(\rho\le\rho_0(K_0)\), the absolute local Gaussian integral costs at most \(\exp[A_{K_0}(\varepsilon+\rho)m]\). Also import the UM carrier counts and logarithm implication SA 14276–14811.
 
-**Outstanding — actual matrix envelope.** Lemma 2 below proves (9) for an auxiliary path-weighted construction under a *global* gap hypothesis. It does not identify that construction with H-M or prove heredity. SA 14141–14205 and the layered PR1 inputs do not supply this identification. The enlarged-disc estimate with constants fixed before \(\bar\kappa,M\) remains an actual-construction obligation.
+**Outstanding — actual matrix envelope.** Lemma 2 below proves (9) for an auxiliary path-weighted construction under a *global* gap hypothesis. It does not identify that construction with H-M or prove heredity. SA 14141–14205 and the layered PR1 inputs do not supply this identification. The enlarged-disc estimate with constants fixed before \(\bar\kappa,M\) remains an actual-construction obligation. Note: [carrier-adopt.md](carrier-adopt.md) §6 and [inv-root.md](inv-root.md), passed by Codex in `carrier-check.md` as supplying um-envelope (6), may make this item smaller than stated; this is to be checked against H-M.
 
 **H-OL (one-loop identity, OL1).** The actual companion normalizers have coefficients
 \[
@@ -124,7 +124,7 @@ The readout (5), its own-coefficient subtraction and summable age decay apply to
  C_f\theta_k^{-1/2}(\log\theta_k)^{p_0}
        +C_v^{\rm flow}\theta_k^{-(\kappa_0-4)/2}.                    \tag{11}
 \]
-The constants precede \(\gamma\), and formation uses only the current prefix and the weak constants (1). With a frame prolongation and the next tube condition, the exact step exists and preserves sourced integrals. Provided its list size is at most \(N_*\), it returns
+The constants precede \(\gamma\), and formation uses only the current prefix and the weak constants (1). With a frame prolongation and the next tube condition, the exact step exists and preserves sourced integrals. Provided its list size, meaning \(\sum_jf_{n+1-j}\|E^{(j)}\|+\sum_jw_{n,j}\|R^{(j)}\|\) as in Lemma 5 (this matches SA R18, 5993-6010), is at most \(N_*\), it returns
 \[
 \begin{split}
  \|E^{(k+1)}\|&\le E_N+C_E(
@@ -152,7 +152,7 @@ The fixed factor \(C_{\rm rad}\) includes all radii, the enlargement factor and 
                 +C_g\sum_{n-s_0<t\le n}n_t^{\rm cr}.                \tag{14}
 \end{split}
 \]
-Counts below the initial level vanish. A light node has \(o(u)\le C_g\). A chain beginning at an event and continuing through nodes with exactly one predecessor, no new cell and no intervening mark has at most \(T_t=C_TR_t\) light nodes if it begins at \(t\). Every leaf has a created cell; predecessors have lower levels and successors are unique. Cut islands are leaves with at most \(N_{\rm cut}\) cells.
+Counts below the initial level vanish. A node is light if and only if \(o(u)\le C_g\), i.e. it has at most \(C_g\) occupied cells (SA 17744). A chain beginning at an event and continuing through nodes with exactly one predecessor, no new cell and no intervening mark has at most \(T_t=C_TR_t\) light nodes if it begins at \(t\). Every leaf has a created cell; predecessors have lower levels and successors are unique. Cut islands are leaves with at most \(N_{\rm cut}\) cells.
 
 The outer record has a connected set of active addresses in a graph of fixed degree bound \(D\ge1\), with root fixed by \(X\); an address includes its level and spatial cell. Its volume (6) is determined by that set and is at least its cardinality. At each fixed address set the number of non-frame codes is at most \(e^{b_{\rm code}V^\circ}\). Every free frame choice is accompanied by its factor \(w^{-1}\). These are the coding hypotheses needed for Lemma 9; a bound at each *exact real value* of \(V^\circ\) is not a bound on a unit volume bin. The source-volume comparison following (6) is also part of H-G.
 
@@ -230,7 +230,7 @@ The following order is part of the hypotheses on the imported packages. A return
 | 4 | H-M's early \(K_0,H_0,b,d,C_\tau\); Gaussian constants \(A=A_{K_0},\varepsilon_0,\rho_0\); geometric \(P,c_m\); fix \(W_0\) by (22). Choose \(\kappa\), then \(\Theta\), then \(\lambda\) in (24). |
 | 5 | Choose \(\bar\kappa,\kappa_1\) above their entropy, bracket and response floors; \(R_s=e^{\bar\kappa}\). Next response-parameter length and small decoupled radii, \(M'_1,M_2\), preparation/profile constants, \(\Theta_1,\varpi_T\); then \(M\), a power of \(L\), meeting (23) and all collar/tower floors. |
 | 6 | Choose post-\(M\) box, joint-chart, comparison and reference-cutoff constants; set \(\gamma_{\rm tilt}\) by (22). Choose \(A_1\), then \(A_0\); \(C_0\), then \(C_1\); absolute radii and current ceilings within (23). Fix all radius ratios and response-room/age constants. |
-| 7 | Fix \(E_N,C_E,C_{\rm rad},f_\nu\); set \(E_0=E_N+1\), then \(N_*=E_0\sum_{\nu\ge1}f_\nu+1\). Choose the boundary-origin maximum \(\mathsf B\), then volume costs. Fix \(C_g,s_0,C_T,N_{\rm cut},c_w\), then \(c_G\); \(C_{\rm env},C_{\rm int},b_{\rm code},D\), then \(c_{\rm ent}\); the source-volume factor \(C_v\), then \(c=C_vc_r\). Fix \(B_\Phi\) and finally \(c_1\ge c+C_{\rm env}+C_{\rm int}+c_{\rm ent}\). |
+| 7 | Fix \(E_N,C_E,C_{\rm rad},f_\nu\); set \(E_0=E_N+1\), then \(N_*=E_0\sum_{\nu\ge1}f_\nu+1\). Choose the boundary-origin maximum \(\mathsf B\), then volume costs. Fix \(c_{\rm lin}\) and the H-C certificate constants, then \(C_g,s_0,C_T,N_{\rm cut},c_w\), then \(c_G\); \(C_{\rm env},C_{\rm int},b_{\rm code},D\), then \(c_{\rm ent}\); the source-volume factor \(C_v\), then \(c=C_vc_r\). Fix \(B_\Phi\) and finally \(c_1\ge c+C_{\rm env}+C_{\rm int}+c_{\rm ent}+c_{\mathsf B}\), where \(c_{\mathsf B}\) is the interior volume cost of the boundary maximum (Lemma 5). Also listed from c4-order: \(L^2\ge6\sqrt2\lambda_a\) (row 2), \(\kappa/4>\kappa_D\) and \(\kappa\)'s history-entropy floor (row 4). |
 | 8 | All remaining prepared-form, source, label/floor and flow-error constants, including \(c_{\rm tail},C_{\rm lab},C_{\rm sf},C_{\rm act},c_{\rm ball},C_f,C_v^{\rm flow}\), and tube constants precede \(X_0\). The GEO5(c) exponent \(d_0\) follows \(L,r,\overline B\), not the other way round. |
 | 9 | Increase \(X_0\) to meet all listed smallness, frame, tail, ledger, admission and list-size requirements; set \(\gamma=X_0^{-1/2}\). Compute \(\varsigma,\lambda_\sharp,B_\sharp\) from (25). Stronger requested source ceilings may decrease the allowed coupling, without redefining the early constants. |
 | 10 | Choose \(0<g\le\gamma\), an admissible torus/grid, and \(\beta\ge g^{-2}+B_\sharp\). Form the next coefficient before choosing the next frame entry. |
@@ -545,7 +545,7 @@ This argument uses the code and its normalized frames, not an unsupported binnin
 This holds for passed components, for drop-outs with their carrying factor and fibre supremum, and for the fixed-exterior unoperated components to which H-E applies. Later evaluations preserve it under H-E's full admission hypothesis.
 
 *Proof.* Induct on the finite operation ancestry, which strictly decreases when entering a stored inner operation. Strict spatial inclusion is unnecessary. Choose
-\(c_1\ge c+C_{\rm env}+C_{\rm int}+c_{\rm ent}\).
+\(c_1\ge c+C_{\rm env}+C_{\rm int}+c_{\rm ent}+c_{\mathsf B}\).
 For each inner supremum choose a Borel majorant, assigning summable positive error allowances so their total reserve-weighted integral excess is at most \(\eta\) per inner island. Such majorants exist by the upper-integral definition and the inductive finite mass bound. First work with a finite outer-record partial sum; each of its records has finitely many inner islands.
 
 Apply (16) pointwise, then multiply by the additive reserve from (6). Tonelli allows the outer coordinates to be integrated first at fixed inner variables. The second line of (16) contributes \(e^{C_{\rm int}V^\circ}\). Summing each inner record with its own factor \(w^{-1}\) gives at most its mass plus \(\eta\), hence at most \(1+\eta\) by induction. Let \(\eta\) tend to zero in the finite outer sum, then exhaust the countable outer records by nonnegative partial sums. Thus
@@ -571,7 +571,7 @@ Taking \(\kappa_1\) above rooted cell entropy gives the component decay required
 *Proof.* Lemma 3 supplies the conditional UM budget; Lemma 5 supplies the uniform list size and returns the regular bound. H-SF supplies formation, the remainder and boundary bounds, domains, companion identification and the structural subtraction/age estimates. H-LF supplies the measure identity and real positivity. H-SUM supplies the healed resummation if used. Theorem 10 returns the mass bound, H-E supplies later admission, and H-O returns precisely the previously missing oscillation clause. The analytic, Borel, real and covariance requirements are the corresponding assertions of H-SF/H-LF/H-E, not consequences of scalar norm bounds. Earlier stored terms, domains and creation-level bounds are carried unchanged. The next tube condition is an assumption of this theorem, not an output.
 
 At level zero the activity and island clauses are empty; Wilson density is positive, real, gauge invariant and lattice covariant. This proves the base case.
-For (35), retain the positive all-small-field term from H-SUM and restrict its integral to the stipulated link ball of radius \(s=c_{\rm ball}x_k^{-1/2}\). The Haar mass of one \(SU(2)\) ball is at least \(c_Hs^3\), as follows by integrating \((2/\pi)\sin^2\phi\) over \(0\le\phi\le s\) for \(s\le1\). There are \(4N_k^{\rm site}\) links. The density bound, action bound and product Haar mass give
+For (35), retain the positive all-small-field term from H-SUM and restrict its integral to the stipulated link ball of radius \(s=c_{\rm ball}x_k^{-1/2}\). The Haar mass of one \(SU(2)\) ball is at least \(c_Hs^3\), as follows by integrating \((2/\pi)\sin^2\phi\) over \(0\le\phi\le s\) for \(s\le1\); \(X_0\ge c_{\rm ball}^2\) ensures \(s\le1\). There are \(4N_k^{\rm site}\) links. The density bound, action bound and product Haar mass give
 \[
  e^{-\mathcal E_k}Z_k(0)\ge
  e^{-(C_{\rm sf}+C_{\rm act}c_{\rm ball}^2)N_k^{\rm site}}
@@ -645,6 +645,23 @@ The draft required the following explicit conventions or strengthened input defi
 7. Carrierwise oscillation on a fixed creation domain; later admission into the full core; the precise class of presentations, rather than arrays of bounds.
 8. The uniform radius-weight comparison including \(C_{\rm rad}\), and explicit loaded-label and small-field-ball hypotheses for the stability assertion.
 9. The four-dimensional surface kernel, the union convention for ancestor cones, and the injective triangular-coordinate hypothesis of the local integration estimate.
+
+## Change log (pass 3 fixes, lead, 2026-11-04)
+
+Applied the findings of `gates/in1-gate.md` (Claude fresh session, first failing step none):
+- F1: the missing source record is noted; the referee rechecked the YM3 and FG11 lines.
+- F2: X-tilde defined as the creation-domain hull of X.
+- F3: list size defined as Lemma 5's sum (SA R18).
+- F4: light node defined both ways (o(u) <= C_g, SA 17744).
+- F5: Lemma 2's bound on C - C_* carries a factor at most 9/8 from the parameter weights, absorbed by H_0 (no statement changes).
+- F6: c_lin and the H-C certificate constants placed before c_G in row 7.
+- F7: the boundary volume cost c_B added to the c_1 floor (rows and Lemma 5).
+- F8: the c4-order floors L^2 >= 6 sqrt2 lambda_a, kappa/4 > kappa_D and kappa's entropy floor listed.
+- F9: carrier-adopt section 6 and inv-root cited at the matrix-envelope Outstanding note.
+- F10: X_0 >= c_ball^2 made explicit.
+- F11 (letters with several meanings) left for the hardening pass; clarity only.
+
+**Status: frozen.** Reopens only on a `wrong` signal or when an import it reads changes.
 
 ## Result
 

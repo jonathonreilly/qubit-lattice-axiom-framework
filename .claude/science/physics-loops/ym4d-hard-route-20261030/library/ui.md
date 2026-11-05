@@ -558,3 +558,15 @@ claim a new route or an independent closure of the inherited
 Balaban (189)–(190)/\(C_H\) input. Those remain cited inputs with
 their source status; no T0 or audit status changes. Every estimate
 here is by hand. Not yet checked by another model.
+
+## Change log (check, 2026-11-05)
+
+Written by Codex. Checked line by line by a fresh Claude session ([ui-gate](../gates/ui-gate.md)): first failing step none; completed as stated, on the analytic inputs the operator theorem already assumes (CA-I 19585–19596).
+
+Findings on their text, recorded for a possible note to Sussman and Alpoge (not sent):
+1. Their status line (CA-I 16019) and the sentence at 16238–16239 ("this argument is not carried out in the present proof") are stale: the proof of the lemma follows at CA-I 16268–16990.
+2. That continuation has four defects, none a stop, all repaired here: its kernel display (16723) uses rate \(\delta_0/4\) where the cited (190) gives \(\delta_0/8\); its cutoff can reach the edge of the cube \(Q\), leaving a bond with \(\nu\ne0\) outside the local gauge (repaired by a cutoff of radius \(3r/4\), slope \(4/r\)); 16942 cites the kernel display instead of the recentring bound; the commutator part of the telescoping (16869) is left in words.
+
+Minor, applied by the lead: \(Q\subset X\) follows from the cutoff radius; \(|B_t|\le1/8\) uses \(C_1\bar\varepsilon_1\le1/4\) (CA-I 16067). Taken as in the source and not checked further: the scale count for the derivative of the gauge map (a sketch no weaker than CA-I 16674–16676), and the hierarchy-distance comparison (as at CA-I 16887; Balaban CMP 96 (2.46) not read).
+
+Status: **checked.** Supplies exactly the uses at CA-I 19783 and 19828. Constant \(C_{IV}\) depends on \((d,L)\) only and sits before \(M_1\) and \(M\).

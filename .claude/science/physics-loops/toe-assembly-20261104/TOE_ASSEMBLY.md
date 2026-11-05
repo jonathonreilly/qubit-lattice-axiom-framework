@@ -208,6 +208,16 @@ The same text is in PR #10140. The question put to the owner: on `L_cube`, frame
 - **What it changes.** This text bends the Qubit axiom. It does so only inside the working set; `docs/MINIMAL_AXIOMS_2026-06-29.md` is unchanged. LW1's law `L_cube` has one mode per site, so its site content is superseded for the parts that need the gauge group (MT1, GA1, CG1, CH1). The law on five-mode sites is a new open item, **LW1-5**. It needs a covariant local update, with link registers on which the site frame group acts, that keeps that group exact. #10014 records that "no nearest-neighbour inter-cluster coupling keeps Spin(2N>2) exact" for clusters of one-mode sites. Whether a number-conserving hop on five-mode sites keeps more than `U(5)` is LW1-5's first question. LW1's results that do not use one mode per site (geometry, transport, records, infinite volume) are expected to carry over and are to be checked there.
 ---
 
+
+### 3.5 Owner decision on the five-mode law, LW1-5-RQ (2026-11-05)
+
+The question put to the owner: which law should five-mode sites use, `L5-O` (Majorana hop, `so(20)` quantum links, `Spin(10)` exact) or `L5-U` (number-conserving hop, rishon links, `U(5)` exact)? The evidence is in `LW1_5_DRAFT.md`, `LW1_5O_DRAFT.md` and `LW1_5U_DRAFT.md` (pass 1 each; the lead checked the central proofs line by line). The owner chose: **keep both live.** MT1, GA1 and CG1 are developed on both laws until one fails at a named step. No law is fixed in the working set.
+
+Facts on file for the choice:
+- `L5-O`. It keeps #10014's condition (a), so D1's reason for 5 holds. Every matter operator is tensor class under any registers, so the 16 is site content and never a matter field (`LW1_5O_DRAFT.md` Theorem K). Pure Gauss singlets need opposite centre classes on the two tilings (Theorem S3), which fails test 4 today. The Standard Model `SU(2)` is an exact gauge subgroup (Proposition T).
+- `L5-U`. Pure gauge-invariant states exist for every register sector (`LW1_5U_DRAFT.md` Proposition Σ-U). Local operators carry the `SU(5)` types `5bar`, `10` and `1`. `SU(2)` is exact. At one mode the law is `L_cube` with `S = 1/2`. Under `U(5)` or `SU(5)`, #10014's criteria do not pick `N = 5` (Proposition D), so under `L5-U` the number 5 is an underived datum of PS-5.
+- Both laws, and `L_cube`: on a periodic box, no pure, locally gauge-invariant, site-transitive state is half filled (`LW1_5U_DRAFT.md` Theorem F-U and Remark F.1). PS-7r already leaves the gauged vacuum to VC1, so this is VC1's question.
+
 ## 4. Plan of the derivation
 
 The argument has four layers. First the **law**: one update, one odds rule, one actuality and formation rule and one initial condition (LW1). The axioms fix the frame (sites, one-site algebra, NN-determined odds, permanent records); the law fixes everything the axioms leave open. Today the law is underdetermined: `ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13` exhibits two covariant NN laws that satisfy the Admissibility contract. So LW1 is a choice among candidates plus a consistency proof, and it is where the owner's specifications enter.

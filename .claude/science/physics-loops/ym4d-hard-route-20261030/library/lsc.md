@@ -716,3 +716,9 @@ Next: redo the floor (21) in the normalized convention, matching the sourced upp
 ## Round 2 (Codex, 2026-11-05)
 
 The floor (21) and the upper bound (13) are redone in the vacuum-normalized convention \(e^{-E_{\rm vac}}Z\); \(E_{\rm vac}\) need not be uniform and cancels exactly at the four consumers (30)–(31). The Result above is round 2's. Not yet refereed.
+
+## Change log (freeze, round 2, 2026-11-05)
+
+Round 2 refereed line by line by a fresh Claude session ([lsc2-gate](../gates/lsc2-gate.md)): first failing step none. The normalized floor matches CA-I 4.36(a) (159153–159160, 159321–159443) and 4.36(1) (159530–159593); the sourced upper bound (13) is in the same normalization (II:25233–25238; 4.36(2)); \(E_{\rm vac}\) cancels exactly at all four consumers (II:63531, 63907–63920, 64272 — which also needs \(C_{\rm low}\) uniform on its own, as the normalized floor gives — and 68364); \(C_{\rm low}^*\), \(C_+^*\), \(E_*\) are uniform as claimed; the round-1 identification at L214 is not reused (the earlier change log's "bare normalization" remark is the round-1 record). One identification is assumed, as the authors also assume it (II:140916–140926): the sourced format at zero source has the same one-step energies as CA-I.
+
+Status: **frozen.** Their Lemma 6.3:lem-last-scale-constants (statement unwritten there) is proved as their consumers need it, as an implication at the account's standing, in the vacuum-normalized convention. It no longer blocks their clause (iii-b), which still rests on the correlation theorem's outstanding window-data statement (II:2810–2812), the eight sourced upper-bound hypotheses, the RG representation and vacuum-energy hypotheses, and Balaban's real-background theorem. Any outward note must name the normalization correction to their text (CA-I 929 points to the bare density; 4.36 and II:140922 use \(\exp[-x_0A-E]\)). Candidate contribution; not sent.

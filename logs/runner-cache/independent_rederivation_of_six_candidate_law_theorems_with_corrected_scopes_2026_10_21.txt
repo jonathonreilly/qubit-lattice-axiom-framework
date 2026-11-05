@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/independent_rederivation_of_six_candidate_law_theorems_with_corrected_scopes_2026_10_21.py
+runner_sha256: be4f2346dee3f6bb7d1fb9d2764c28d9960b0e6acd56cae3668e74707cf11b43
+input_fingerprint_sha256: 939311b4e809514f2aff80c023fca8f621cce47272b650844f5364cef104355f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.21
+status: ok
+----- stdout -----
+[PASS] 2O built: lifts rotate sigma by R, closed under products, 8 orthonormal irreducible characters
+== T1 spin-3/2 forcing
+[PASS] every j = 0..6: coherent-state induction gives a monomial representation of 2O  hom err 5e-14
+[PASS] every j: covariant edge-only hops span 1 dim, on-site+edge 2 dims (1, X); X^dag = cX, so X is a phase times Hermitian
+[PASS] every j: equal moduli and face phase exp(-+2 pi i j/3), computed gauge-invariantly from the covariant space
+[PASS] a hopping covariant nn block unitary exists iff j = 3/2 mod 3 (1.5, 4.5 here); no genuine O action (integer j) admits one  face/pi 0:+0.00 0.5:+0.33 1:+0.67 1.5:+1.00 2:-0.67 2.5:-0.33 3:+0.00
+[PASS] forced datum = one sign: the order-6 lift of C3 acts on its corner by -1, its square by +1, 2 pi by -1
+[PASS] every phase assignment: Hermitian equal-modulus W has W^2 = 1 iff all 6 faces are -1 (4096 sign, 3000 complex)  128/4096 sign patterns = one gauge class
+[PASS] unitarity alone does not fix the face phase: non-Hermitian unitary edge hops with W^2 != 1, faces != -1 exist  (none is covariant)
+== T2 universal step
+[PASS] V(mu/2+b) = i exp(-i(eps-mu/2)W), V(mu/2-b) = -i exp(+i(eps+mu/2)W); phases i(-i) = 1 cancel per particle per full tick  6e-15
+[PASS] 6^3 torus, site-attached reading (a site keeps its overlap phases in both cubes): 216 quasi-energies obey cos w = A S - (cos2b - cos mu)/2; covariant about even and odd centres  band 4e-15, cov 5e-15
+[PASS] cube-frame reading (same 8x8 matrix in each cube's own corner labels) in the overlap gauge: bands off and not cubic, so covariant for no action; it is right only in an inversion-symmetric gauge (exists)  dev 0.57, asym 0.78; PW'P = W': dev 9e-15
+[PASS] massless speed = sin(eps)/sqrt3 blocks per tick on axis, face and body directions  2e-13
+[PASS] massive species: c^2 = (A/3)(mu/sin mu), below the massless value by ~mu^2(1/(4cos^2 b) - 1/6): one eps gives one speed only as mu -> 0  rel -2.68e-04 -8.33e-04 -2.76e-04
+[PASS] own Yee leapfrog: transverse band = massless fermion band at every K iff C = cos(b)/sqrt3 = sin(eps)/sqrt3  match 5e-15; C x1.01 off 1.7e-01
+[PASS] kinematics mu = 0.01 (decay, Cherenkov margins): shared step closes both; faster photon opens only gamma -> f fbar, slower only f -> f gamma  (+7e-04,+7e-06) (-1e-02,+5e-05) (+5e-03,-2e-02)
+   estimate: 1.4 PeV photons bound only a FASTER photon, dc/c < 2(m_e/E)^2 = 2.7e-19; SN1987A |c_nu - c|/c < ~2e-9
+== T3 copy count
+   corner content: j=0: A1+A2+T1+T2; j=0.5: E1/2+E5/2+G3/2; j=1: E+T1+T2; j=1.5: 2G3/2; j=2: E+T1+T2; j=2.5: E1/2+E5/2+G3/2
+[PASS] only j = 3/2 gives 2G3/2; j = 1/2, 5/2 give E1/2+E5/2+G3/2; integer j contain no spinorial irrep
+[PASS] massive Dirac copy needs a repeated 2-dim irrep: k-linear invariants E1/2-E1/2 = 1, E1/2-E5/2 = 0; masses 1 and 0; G3/2 = E1/2 x E  no site action has room for ONE massive copy; E1/2+E5/2 = 2 Weyl cones, mass forbidden
+[PASS] Gamma and R Bloch ticks commute with the corner action (content 2G3/2 at both); edge-hop tick puts all 8 Gamma states at +-mu  8e-15
+[PASS] covariant commutant = U(2) x 1 (dim 4): generic covariant ticks are 4-fold at Gamma only, 8 levels at generic K; nn ticks V(a_e), V(a_o) stay 4-fold at all K  copies split off rest unless nn
+[PASS] 4^3 cell, same site states: 4E1/2+4E5/2+12G3/2 (room); a 2^3 tick has it too once its block unitaries may vary with period 4  4E1/2+4E5/2+12G3/2
+== T4 Born transport
+[PASS] supply-demand q(S) <= p(N^-1(S)) on every sampled target set (one block, N = 2, mu = b = 0.3; many-body block unitary)  max excess 2e-15, 20000 sets
+[PASS] many-body Margolus tick (4^3 torus, N = 2, entangled state, even then odd half-tick): a support-confined plan exists and carries |odds|^2  2016 configs, err 1e-16, min mean changes 1.294, 1.294
+[PASS] fewest changes alone: optimal face dim 10 at mu = 0, label-ordered vertex moves under relabelling; the max-entropy plan does not  relabel diff 0e+00 vs vertex 0.05
+[PASS] N = 2, mu = 0.3: IPF point on the dual face is optimal, meets the max-entropy KKT form, is label-equivariant; strict concavity -> unique  KKT 2e-14; H 3.9593 > 3.5964 (vertex)
+[PASS] two unentangled relays: occupation-change cost + max entropy = exact product plan; configuration-change cost couples them  2e-16 vs 2.4e-02
+== T5 cell factorisation
+[PASS] plain corner permutation = A1+A2+T1+T2 (forced j = 3/2 action: 2G3/2); one rotation-invariant product of corner SETS: parity x diagonal  1 of 35 x 105 candidates
+[PASS] rotation commutant on C^8: 3 traceless generators (= 4 species numbers); one-factor ones only T3 = X/2, B-L = (1-4P_A1)/3; third T3(B-L)  T3(B-L) eigs -1,-0.333333,0.333333,1
+[PASS] the Hilbert-space factorisation is a U(1) family: exp(i phi P_T1) commutes with rotations, has operator Schmidt rank 2, fixes T3 and B-L
+[PASS] rung-1 cell, coarse Gamma: geometric rotation (twist x site permutation) gives 4E1/2+4E5/2+12G3/2; 16G3/2 (all spin-1/2 x E) needs the cell index fixed  W x 1_8 commutes with both
+== T6 cubic-frustum Regge FRW
+[PASS] explicit Minkowski frustum: trapezoid deficit 4asin(u^2/(1-u^2)), area (l+l')T sqrt(1-2u^2)/2, square boosts atanh u; Schlaefli fixes the relative sign  7e-15; Schlaefli 4e-10 (+) vs 3.9 (-)
+[PASS] lapse equation E = kappa dS/dT = 6 kappa (l+l') A(u), A = asin(u^2/(1-u^2))/sqrt(1-2u^2); small u gives H^2 = (8 pi G/3) rho
+[PASS] exact law H^2 = (8 pi G/3) rho [1 - x + (13/12)x^2 ...], x = rho/rho*: monotone, Hl -> sqrt2, no zero at rho*; (1 - x) is first order only  x^2 coeff 1.081; exact/(1-x): 0.01:0.990/0.99 0.5:0.673/0.50 1:0.510/0.00 2:0.345/-1.00
+[PASS] dust l ~ t^(2/3), radiation l ~ t^(1/2) at late times (rho << rho*); early times coast, l ~ t, at the sqrt2 bound  0.6667 0.5000 1.0000
+elapsed_seconds 2.0
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

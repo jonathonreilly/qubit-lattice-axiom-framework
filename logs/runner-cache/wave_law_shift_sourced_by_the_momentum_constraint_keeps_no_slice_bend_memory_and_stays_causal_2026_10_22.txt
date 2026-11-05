@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/wave_law_shift_sourced_by_the_momentum_constraint_keeps_no_slice_bend_memory_and_stays_causal_2026_10_22.py
+runner_sha256: 5214c00d8a30316a72613a951a483ef8de98108c6d5e7eafa1c02760ceaf1997
+input_fingerprint_sha256: 8e22e61a8f08ca0d0b39ce7fdfd783c94d05f4a5fa2a44384233acbc768751f6
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 4.10
+status: ok
+----- stdout -----
+== A. theorems (symbolic, every k)
+[PASS] A1 [T] rate-driver dispersion (eta = 0): scalar (w^2-k^2)(3w^4-(1+6(mu+nu))k^2w^2+a k^4)/3, vector w^2(w^2-mu k^2): with label rates only... | scalar (k - omega)*(k + omega)*(a*k**4 - 6*k**2*mu*omega**2 - 6*k**2*nu*omega**2 - k**2*omega**2 + 3*omega**4)/3
+[PASS] A2 [T] the static slice bend (beta = grad xi, K_ij = d_i d_j xi, edges unchanged, tied lapse unchanged) is an exact static solution for E... | label-rate: residual 0; wave: d_t B = -I*k**3*mu*xi
+[PASS] A3 [T] the static star's formation feeds the bend: from isotropic edges to the tied-lapse static star (h_zz 10U, tr h 6U) the label sourc... | int source dt = 12*I*k*(mu + nu) U
+[PASS] A4 [T] identity (any k direction): mu[d_j hdot_ij - d_i tr(hdot)/2 + d_i tr K] = mu[Lap beta_i - 2(d_j K_ij - d_i K)]: the wave shift is ... | residual 0 in all 3 components
+[PASS] A5 [T] wave shift spectrum: scalar (w^2-k^2)(3w^2-k^2)(w^2-mu k^2)/3, vector w^2(w^2-mu k^2): speeds 1, 1/sqrt3 (the tied lapse) and sqrt... | (k - omega)*(k + omega)*(k**2 - 3*omega**2)*(k**2*mu - omega**2)/3
+[PASS] A6 [T] mu < 1: every root simple in the scalar sector (strongly hyperbolic); mu = 1 puts the shift on the speed of the (hp, Kp) pair, whi... | mu = 3/4 diagonalisable True; mu = 1 rank(M - i) = 5 at multiplicity 2; vector kernel dim 2
+[PASS] A7 [T] cosmology: FRW (K = -H delta) and Bianchi I (uniform anisotropic K) give d_j(K_ij - delta K) = 0 and Lap beta = 0 for beta = 0, so... | source 0 identically (no derivative of a homogeneous field)
+== B. finite diagnostics (k = 1, RK4 dt 0.05; matter formed from vacuum by a stress pulse, so every constraint holds)
+   zero             speed<= 1.000 growth 1e-16 | star: beta 0.00->0.00 | spin sudden h 589.00, slow h 690.000 | constr 3e-16
+   strain mu1/3     speed<= 1.000 growth 3e-09 | star: beta 102.78->213.89 | spin sudden h 3.45, slow h 0.001 | constr 3e-16
+   strain eta.5     speed<= 1.000 growth 1e-16 | star: beta 3.33->3.33 | spin sudden h 3.00, slow h 3.000 | constr 3e-16
+   wave mu3/4       speed<= 1.000 growth 9e-16 | star: beta 0.02->0.02 | spin sudden h 2.28, slow h 0.000 | constr 3e-16
+   wave mu1         speed<= 1.000 growth 2e-08 | star: beta 0.01->0.01 | spin sudden h 1.97, slow h 0.000 | constr 3e-16
+   wave mu3/4 eta.5 speed<= 1.000 growth 3e-16 | star: beta 0.00->0.00 | spin sudden h 1.33, slow h 1.333 | constr 3e-16
+[PASS] B1 [D] speeds <= 1 and no growing root for the wave shift at mu = 3/4 and 1; constraints hold to integration error | speeds 1.000, 1.000; residual 3e-16
+[PASS] B2 [D] star formed by an inflow pulse: the undamped strain driver keeps a growing slice tilt after the star is static (the bend of A2), t... | strain 102.78->213.89; strain eta .5 3.33; wave 0.02->0.02
+[PASS] B3 [D] spin-up: the wave shift reaches the stationary frame-dragging shift (edge rate 0); a sudden spin-up leaves edges ringing at 2K/(sq... | sudden 2.281 (2/sqrt(3/4) = 2.309); slow ramp 0.0002; zero shift 690
+[PASS] B4 [D] damping only hurts the wave shift: eta = 0.5 freezes a rotating edge offset (the overdamped lag of causal-trigger B6) with no gain... | slow spin-up offset eta .5: 1.333 vs eta 0: 0.0002
+[PASS] B5 [D] static star from isotropic consistent data (causal-trigger B4 setting): the wave shift stays exactly 0 (the momentum constraint is... | wave max |beta| 0e+00; strain 134->267
+[PASS] B6 [D] plane-symmetric spin-up switched on in t < 1: the wave shift (mu = 1, leapfrog) is zero beyond the light cone |z| > 1 + t and insi... | beyond cone: wave 7e-09, minimal strain 0.42; inside max edge rate 4e-03
+== C. estimates against measurement (c = 3e8, G = 6.674e-11, window ln 16 = 2.77)
+   rotating edge ring bound 2 K r/c (sudden spin-up, K ~ 3 w_LT): Earth 4.3e-15, Sun 1.2e-11, Sgr A* (a 0.5) 0.25, a = 1 0.50
+[PASS] C1 [E] rotating bodies: the frozen/ringing edge strain is at most 2 K r/c (= w r/c of the lead), 4e-15 for Earth and at most 0.5 for an e... | Earth 4e-15, Kerr a=1 0.50 < 2.77
+[PASS] C2 [E] neutron stars: static star tilt exactly 0 (A4, B5; also for the magnetar anisotropic stress of causal-trigger C3); formation leave... | U 0.2, v 0.3c: tilt 0.24 c; old drivers: null in hours-days
+[PASS] C3 [E] one law serves neutron stars, spinning black holes and cosmology: no damping (eta = 0), and mu only sets the gauge-wave speed sqrt... | eta window: none needed
+[PASS] C4 [E] cosmology: background beta = 0 exactly (A7); a perturbation's stationary shift is ~ 6 Omega_m (aH/ck)^2 delta v/c, about 1e-8 c at... | beta/c ~ 1e-08
+[PASS] C5 [E] the frame-read split trigger becomes causal: outside the light cone the response to a kilogram moved a metre is 0, not 7e-28 (min-... | instantaneous minimal-strain response G m/(c^2 r) = 7.4e-28 -> 0 beyond c t
+supplied: linear ADM on flat space with the tied lapse, dust/stress test sources, the driver family; measured J, R,
+  Sgr A* spin (indicative), cosmological delta, v. not built: register-level shift (CL-1 block rotations), nonlinear
+  completion, strong-field (horizon) dynamics, 3D radiation of the gauge waves (only 1D plane-symmetric in B6).
+elapsed 3.6 s
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

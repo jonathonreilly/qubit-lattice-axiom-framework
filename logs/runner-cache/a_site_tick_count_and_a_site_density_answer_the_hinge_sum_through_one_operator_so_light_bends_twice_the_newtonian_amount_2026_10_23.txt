@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/a_site_tick_count_and_a_site_density_answer_the_hinge_sum_through_one_operator_so_light_bends_twice_the_newtonian_amount_2026_10_23.py
+runner_sha256: f444372e6541f6902e54ebeab36e8f6283197b27a03953355dba37634ee9bee3
+input_fingerprint_sha256: 32e268d4e148be06ade07609fe0f65e89e25f6035b21726661107f435acd426b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 13.58
+status: ok
+----- stdout -----
+PASS: A1 conformal 3-curvature R3 = -exp(-2psi)(4 lap psi + 2 |grad psi|^2)
+PASS: A2 lapse equation  dS/dPhi  = -4 lap psi (Hamiltonian constraint)
+PASS: A3 density equation dS/dpsi = -4 lap(Phi + psi): no static source -> psi = -Phi
+PASS: A4 point source: psi = +GM/r, Phi = -GM/r  => gamma = 1 (attractive)  [lap(1/r) = -4 pi delta]
+PASS: A5 tied tick (N = Omega): 12 lap psi/(16piG) = -rho -> Phi = +GM/(3r), repulsive, gamma = -1  [conformal-mode sign]
+PASS: B1 flat Kuhn grid has zero deficit on every interior edge  [max 2.7e-15, edges 16939, tets 13182, free sites 1000]
+PASS: B2 cross operator K symmetric  [asym 1.2e-10]
+PASS: B3 K positive definite on Dirichlet box (no conformal zero mode)  [eig range 4.861e-01..2.351e+01]
+PASS: B4 full-action Hessians: Phi-psi block = psi-psi block = K (lapse and density share one operator)  [max rel dev 2.5e-07]
+PASS: B5 K -> -2 lap: symbol (K e^ikx)/(2k^2) at |k|=0.25 within 2% along 100,001,110,111  [ratios 0.9948 0.9948 0.9974 0.9983]
+PASS: C1 untied tick: psi = -Phi on every shell (gamma = 1, no tuning)  [gamma range 1.000000000000..1.000000000000]
+PASS: C2 attractive: Phi < 0 at all sites near source  [Phi(r=1) -3.654e-05]
+INFO r=2.0: -Phi*r/(Gm) = 0.751 (Dirichlet box; continuum 1 - r/R_box)
+INFO r=3.0: -Phi*r/(Gm) = 0.509 (Dirichlet box; continuum 1 - r/R_box)
+PASS: C3 site lapse needed: edge l*delta != 0 off-source, site sums ~ 0 (Ricci != 0, R3 = 0)  [max|edge| 1.98e-04, max|site off| 6.06e-10]
+PASS: C4 every spatial-edge equation holds (isotropic ansatz is a consistent truncation)  [max|Phi+psi| 4.1e-20]
+PASS: C5 tied tick: Phi = psi = +|Phi_untied|/3 (repulsive, gamma = -1)  [ratio 0.333333]
+PASS: D b=2: Shapiro delay / Newtonian part = 1+gamma = 2  [2.00002]
+PASS: D b=2: deflection / Newtonian part = 2  [2.00006]
+PASS: D b=3: Shapiro delay / Newtonian part = 1+gamma = 2  [2.00001]
+PASS: D b=3: deflection / Newtonian part = 2  [2.00002]
+PASS: D tied tick: Omega/N = 1, zero delay and deflection  [gamma = -1 exact]
+INFO G in a^2: hinge coefficient one -> 1/(8pi) = 0.0398; count-Jacobson 1/(4 eta) = 6.361; ratio 159.9
+PASS: E gamma independent of the hinge coefficient (G drops out of psi/Phi)  [both terms scale 1/G]
+elapsed 12.9s
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

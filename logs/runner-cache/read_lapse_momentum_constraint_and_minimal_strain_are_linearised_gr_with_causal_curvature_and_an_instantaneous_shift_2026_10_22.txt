@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/read_lapse_momentum_constraint_and_minimal_strain_are_linearised_gr_with_causal_curvature_and_an_instantaneous_shift_2026_10_22.py
+runner_sha256: b12c7d96df704d6062b5f7d3ca4c60b5a118dfe6a5a55087f41073d85faf0c3e
+input_fingerprint_sha256: edbc91180234e239b4853566e55b90546f707ddcf9b917021d8e90f9cb9ae503
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.44
+status: ok
+----- stdout -----
+== A. mode count: read lapse, momentum constraint with matter, minimal-strain shift (k along z, any K = kappa^2)
+[PASS] A0 [T] control: quadratic ADM form diffeo invariant (4 gauge dirs), tensors omega^2 = K | gauge directions 4; tensor det (kappa - omega)**2*(kappa + omega)**2/8
+[PASS] A1 [T] read lapse + momentum constraint + minimal strain: scalar and vector sectors have no mode at omega != 0, any K; tensors 2x omega^2 = K | sectors decouple True; scalar gcd kappa*omega; vector gcd kappa; tensor det (kappa - omega)**2*(kappa + omega)**2/4
+[PASS] A2 [T] control: shift held at 0, its equation dropped -> ghost-normal double root omega^2 = K/3 | det -(kappa**2 - 3*omega**2)**2/36
+[PASS] A3 [T] omega = 0: static kernel = slice tilt (static beta_L) + static transverse relabelling (initial-data gauge) | scalar kernel (h11+h22, h33, b3) = [0, 0, 1]; vector (h13, b1) = [1, 0]
+[PASS] A4 [T] robustness: 4 independent lattice multipliers (hop, curvature, lapse, gauge): still no scalar mode | gcd of 3x3 minors K*K_g*omega
+== B. matter, the dropped Hamiltonian constraint, and causality
+[PASS] B1 [T] conserved sources: unique solution; it obeys the dropped Hamiltonian constraint and all of GR | solutions 1; Hamiltonian residual 0
+[PASS] B2 [T] control: de Donder hbar = c T/(omega^2 - K), one c: covariant, retarded | c = -1
+[PASS] B3 [T] Riemann(minimal strain) = Riemann(de Donder) for all sources, all K: observables retarded | 12 Riemann components, max residual 0: True
+[PASS] B4 [T] minimal strain = elliptic (K delta + k k) beta = i k tr(kappa) - J; inverse non-polynomial (instantaneous Kelvin kernel) | P^-1 = (delta - k k/2K)/K exact; solved shift obeys P beta = i kt tr(kappa) - J (residual 0)
+[PASS] B5 [D] 32^3 lattice: one tick after a current appears, beta is nonzero 8 cubes away (~1/r); light moved <= 0.022 cube | |beta_x| at r = 2, 4, 8: 0.0381, 0.0147, 0.0046; light per tick 0.0216 cube
+[PASS] B6 [T] minimal-strain edges transverse, scalar part = Bardeen Psi = rho/(4K): frame-read edges respond instantaneously | Psi = S33/(4*omega**2), rho = S33*kappa**2/omega**2
+== C. local hyperbolic alternatives (driver equations; sectors along z, every K)
+[PASS] C1 [T] Gamma-driver + read lapse: longitudinal omega^2 = K(1+4mu)/3, transverse mu K; mu = 3/4 -> 2/sqrt3 c; causal iff mu <= 1/2 | scalar omega**2*(4*kappa**2*mu + kappa**2 - 3*omega**2)/4; vector omega*(kappa**2*mu - omega**2)
+[PASS] C2 [T] strain driver: longitudinal omega^2 = K(1+6mu)/3, transverse mu K; causal iff mu <= 1/3 | scalar omega**2*(6*kappa**2*mu + kappa**2 - 3*omega**2)/6; vector omega*(kappa**2*mu - omega**2)
+[PASS] C3 [T] eta > 0: all gauge roots damped; eta -> inf slow root -> lapse speed 1/sqrt3 | roots at K = 1, mu = 1/3, eta = 1/2, 5, 50: -0.96-0.16i, +0.00-0.18i, +0.96-0.16i; -0.58-0.07i, +0.00-4.86i, +0.58-0.07i; -0.58-0.01i, +0.00-49.99i, +0.58-0.01i
+[PASS] C4 [T] driver modes pure gauge (Riemann = 0) | kernel dim 1, Riemann zero True
+== D. least squared edge rate vs no component along any site displacement (uniform expansion)
+[PASS] D1 [T] uniform expansion: EL form gives beta = 0; least-squares on an open block gives beta = -Hx (edges frozen); torus: agree | open: residual 4.2e-15, interior J^T rate 3e-20, beta spread 0.0050; periodic: residual 1.000
+[PASS] D2 [T] EL operator positive off k = 0; kernel = affine shifts; cap |beta| <= 1 cube/tick -> unique (Liouville) | min eigenvalue K_min = 4 sin^2(pi/32) = 0.038 on the 32^3 grid
+== E. gauge = no signal (finite toy, ring of 256 cells)
+[PASS] E1 [T] toy: constraint-generated far-controlled shift leaks 0; O(k^2)-mismatched transport leaks ~ b x momentum spread | exact 0e+00; mismatched b = 0.5: 1.51e-03, b = 0.25: 7.55e-04, width x2: 7.13e-04
+== F. estimates against measurement
+  eps0 0.0075: light 0.0043 cube/tick; the cap is 231 c; PG shift sqrt(r_s/r) c binds at r < 1.9e-05 r_s
+  eps0 0.0375: light 0.0216 cube/tick; the cap is 46 c; PG shift sqrt(r_s/r) c binds at r < 4.7e-04 r_s
+[PASS] F1 [E] cap binds only at r < (sin^2 eps0/3) r_s (inside horizons); not in cosmology (EL form) | r_bind/r_s 1.87e-05 to 4.69e-04
+[PASS] F2 [E] instantaneous frame-read edge change from a lab rearrangement ~ G m/(c^2 r) | G m/c^2 r = 7.4e-28
+supplied: continuum-form ADM quadratic action with the consistent lattice derivative (A4 relaxes it); test sources;
+  the 1D dispersion toy (E); drivers of Gamma and strain type with mu, eta. not built: register-level CL-1 insertion,
+  nonlinear minimal strain, the lattice momentum-constraint algebra off flat cells.
+elapsed 1.0 s
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

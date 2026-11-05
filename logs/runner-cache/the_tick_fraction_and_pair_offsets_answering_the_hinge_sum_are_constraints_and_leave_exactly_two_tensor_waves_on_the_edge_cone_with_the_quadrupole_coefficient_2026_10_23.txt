@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/the_tick_fraction_and_pair_offsets_answering_the_hinge_sum_are_constraints_and_leave_exactly_two_tensor_waves_on_the_edge_cone_with_the_quadrupole_coefficient_2026_10_23.py
+runner_sha256: 8aee989bce26fd9aeae05010f0a2317f51a3e422e688aed3dfa85365dc60e532
+input_fingerprint_sha256: 3983a792d36f5338589c5b5794e8d69857baa5320c0d1bb49ab53d0dc47be9fc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 9.08
+status: ok
+----- stdout -----
+PASS: A1 lapse and shift carry no tick-to-tick acceleration: no d_t^2 of n, beta in any equation; n enters linearly  [E_n = -2*Derivative(d(t, z), (z, 2)), E_bz = -2*Derivative(d(t, z), t, z), E_bx = -Derivative(bx(t, z), (z, 2))]
+PASS: A2 scalar/vector sector has no wave: vacuum d = 0 (Hamiltonian constraint), bx = 0, c fixed by n, bz (gauge)  [E_c = d_tt; E_d|_(d=0) = c_tt - 2 n_zz - 2 bz_tz]
+PASS: A3 two tensor polarisations obey the wave equation at the hinge-sum speed: L2 = (1/2)(a_t^2 - a_z^2 + b_t^2 - b_z^2)  [E_a = -Derivative(a(t, z), (t, 2)) + Derivative(a(t, z), (z, 2))]
+PASS: A4 static sector (gamma = 1) from the same sqrt(-g) R: L2 = -2 |grad Phi|^2  [E_Phi = 4*Derivative(Phi(x, y, z), (x, 2)) + 4*Derivative(Phi(x, y, z), (y, 2)) + 4*Derivative(Phi(x, y, z), (z, 2))]
+PASS: A5 record phase -m dtau couples (1/2) h_mn T^mn (T^ij = m v^i v^j gamma)
+PASS: A6 quadrupole formula from the derived coefficients: P = (G_T/5) <dddQ dddQ>, circular binary 32/5 G mu^2 r^4 Om^6  [int Lambda dOmega -> 8*pi/5; P coef G/5; G_T/G_N = 1]
+PASS: A7 radiation and Newtonian couplings are one constant: G_T = G_N = G (Hulse-Taylor ratio 1)
+  (A done 1.2s)
+PASS: B1 campaign carrier, every edge responding: 13 edges/site; generic null space = vertex displacements only (no zero-action branch)  [per site {'s': 6, 't': 1, 'm': 6}; nullity [32, 32] = 4 x 8 sites; |QG|/|Q| 5e-12]
+PASS: B2 contrast, Freudenthal (Kuhn) carrier: nullity 5 = 4 displacements + 1 zero-action non-metric branch at every k  [its cell-averaged metric keeps a non-gauge part 0.56, 0.56 at |k| = .05, .025 (no decay); weight on tick/mixed edges 0.95]
+PASS: B3 tick fractions and pair offsets are constraints (derived): their block has no tick-to-tick coupling; its null space = time relabelling  [|Q_mm z^+-1| 6e-16; null(Q_mm) dim 16 = 2 x 8 sites, spanned by the time-displacement parts to 4e-08; Fourier leak 3e-15]
+PASS: B4 transfer census, all edges responding: 32 finite roots/cell = 2 polarisations x (+-E) x 8 folded momenta, nothing else  [32 roots, light 4 at |E/k-1| <= 3.6e-05, max dev from tensor branch 5e-08; 32 roots, light 4 at |E/k-1| <= 2.3e-05, max dev from tensor branch 1e-08; 32 roots, light 4 at |E/k-1| <= 2.6e-05, max dev from tensor branch 2e-08]
+  INFO fixed lapse + zero shift on the same carrier (edge-modes E3): 4 light roots plus 48-50 zero-frequency roots; responding N and offsets remove them
+PASS: B5 at the light root the null space is displacements + exactly 2 physical vectors, both transverse-traceless tensor waves  [nullity 34, 34 = 32 + 2; electric curvature trace/longitudinal part <= 2e-04; non-metric admixture 0.021 -> 0.011 at |k| = .05 -> .025]
+PASS: B6 tensor branch (both polarisations, degenerate) is exactly sinh(E/2) = tau [sum_i sin^2(k_i/2)]^(1/2) out to |k| = 1.5  [18 (k, direction, tau) cases, max |E - formula| 1e-09; tau = tick edge / spatial edge (E = tau|k| at small k: the edge cone)]
+PASS: B7 one coefficient for every metric component: lattice effective action = c x Gamma-Gamma form, residual falling as k^2  [c = 8.00009, 8.00002 (cell 4-volume 8); rel resid 3.0e-05, 7.5e-06; static Newtonian/TT ratio 4.000 = sympy's (-2)/(-1/2) = 4]
+PASS: B8 a uniform change of the tick edge is a zero of the hinge sum: the flat tick/edge ratio tau is not fixed by it
+  (B done 8.1s)
+PASS: C1 lattice graviton speed c(k) = 1 + (ka)^2 (tau^2 - sum khat_i^4)/24; with CL-1's tick (tau = sin eps/sqrt 3 <= 1/sqrt 3) never superluminal  [exact -1.4167e-08 vs formula -1.4167e-08 at ka = 1e-3; sum khat^4 >= 1/3 >= tau^2]
+  INFO speed tie: graviton label speed = tau (blocks per tick, B6); walk light speed = sin(eps)/sqrt 3 (CL-1 band). Equal iff tau = sin(eps)/sqrt 3: CL-1's clause that the tick is that fraction of the edges' light crossing (B8: the hinge sum leaves tau free)
+PASS: C2 GW170817 (-3e-15 < dc < 7e-16): lattice term at 100 Hz <= 1e-76 for block edges up to 100 cells of 8.1e-35 m  [|dc| <= 1.2e-77; GW170817 alone bounds the step only to a < 0.13 m; at k->0 c_gw = c_light exactly given the tie]
+PASS: C3 Hulse-Taylor: Pbdot(rule)/Pbdot(GR) = G_T/G_N = 1 vs 0.9983 +- 0.0016  [1.06 sigma; a separate tensor coupling (e.g. 0.81, unsubtracted sea) is off by 118 sigma]
+PASS: C4 no scalar, vector or breathing mode at any k (B4/B5/A2): no dipole or breathing radiation
+elapsed 8.1s
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

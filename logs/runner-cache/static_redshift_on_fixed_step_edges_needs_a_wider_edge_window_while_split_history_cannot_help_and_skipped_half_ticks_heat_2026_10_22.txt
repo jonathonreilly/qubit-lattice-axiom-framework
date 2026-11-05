@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/static_redshift_on_fixed_step_edges_needs_a_wider_edge_window_while_split_history_cannot_help_and_skipped_half_ticks_heat_2026_10_22.py
+runner_sha256: 783d7ef63a42c1433369793cb508f9b1bf58caa8a9e54452f7c81db4059cf113
+input_fingerprint_sha256: 2d345bac80ae3587c3b6261564d386f0edaf037be54f54d990987411e84c546e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.04
+status: ok
+----- stdout -----
+== A. what the window has to hold (rederived; floor-horizon A1-A3 cited)
+[PASS] A1 THEOREM: on an isotropic cube the fixed step gives N = sin(eps0) l/sqrt3: lapse ratio = edge ratio, so with global ticks the mean l_c/l_far = alpha_c on any spherical slicing (floor-horizon A2-A3)  | window [wL, 2L] -> lapse ratios on a slice within [w/2, 2/w]
+[PASS] A2 THEOREM (zoom escape (c) fails as posed): a split maps 2L to L in PROPER length, so every cube of every split history has edges in [L, 2L]; history changes cell counts, never the edge ratio, and the bound alpha_c >= L/l_far >= 1/2 is history-free  | 2000 random histories: edges in [1.000, 2.000]; the zoom form that works is an octave (exponent) on the register = (a)
+[PASS] A3 THEOREM: with window [wL, 2L] a static core never meets the floor iff alpha_c >= w L/l_far; for every far phase l_far in [L, 2L] iff alpha_c >= w (worst phase l_far = L)  | a split-made far cell starts at L
+== B. central redshift of stable static stars (TOV; alpha_c = alpha_s/h_c exactly, h = enthalpy per baryon)
+[PASS] B1 THEOREM: d ln alpha = -dp/(eps + p) gives alpha_c = alpha_s exp(-int dp/(eps+p)) = alpha_s/h_c (polytrope), alpha_s/sqrt(1 + 2p_c/eps_s) (causal limit), (3 alpha_s - 1)/2 (uniform)  | direct nu integral 0.6255150 vs enthalpy 0.6255150
+[PASS] B2 THEOREM: uniform density reaches alpha_c = 0 at Buchdahl 2M/R = 8/9 and is dynamically stable (Gamma_1 infinite), so GR alone gives no floor on alpha_c: a bound needs causality or a real EOS  | alpha_c = 1/2 at 2M/R = 5/9; = 1/4 at 2M/R = 0.75
+[PASS] B3 DIAGNOSTIC: alpha_c falls monotonically along each stable branch, so its minimum is the maximum-mass star  | G=2: 2M/R 0.429, alpha_c 0.462; G=2.5: 2M/R 0.559, alpha_c 0.340; G=3: 2M/R 0.632, alpha_c 0.271; causal: 2M/R 0.708, alpha_c 0.240
+[PASS] B4 DIAGNOSTIC (causal limit, c_s = 1, the most compact causal EOS): its maximum-mass star has alpha_c just below 1/4, so [L/4, 2L] covers every stable star with alpha_c >= 1/4 (Gamma 3 polytrope max 0.27), and [L/8, 2L] every stable causal star at every far phase  | alpha_c^min(causal) = 0.240; 2M/R = 0.708
+[PASS] B5 ESTIMATE (J0740+6620 at its measured compactness): alpha_c ~ 0.45-0.61 by EOS, at most the uniform bound 0.57-0.61; so measurement needs w <= ~0.45 at the worst far phase: w = 1/2 fails at a fraction of far phases, w = 1/4 at none  | R 12.39: 2M/R 0.496, uniform bound 0.565, G=2.5 0.447, G=3 0.485, causal 0.554 | R 13.7: 2M/R 0.448, uniform bound 0.614, G=2.5 0.515, G=3 0.546, causal 0.606 | w=1/2 fails at 16% of far phases (Gamma 2.5, R 12.39)
+== C. option (a): the wider window, its cost
+[PASS] C1 THEOREM (eps0 0.0075): |d ln l| < sqrt2 sig/tick (qcrush A2): linear [wL, 2L] moves at its bottom iff 2S >= 1.22 (2 - w)/(w sin eps0); log (octave + mantissa): 0.85/sin eps0 per octave  | 2S_min linear w=1: 163, w=1/2: 490, w=1/4: 1143; log per octave 113 (x3 = 340 for [L/4, 2L])
+[PASS] C1 THEOREM (eps0 0.0375): |d ln l| < sqrt2 sig/tick (qcrush A2): linear [wL, 2L] moves at its bottom iff 2S >= 1.22 (2 - w)/(w sin eps0); log (octave + mantissa): 0.85/sin eps0 per octave  | 2S_min linear w=1: 33, w=1/2: 98, w=1/4: 229; log per octave 23 (x3 = 68 for [L/4, 2L])
+[PASS] C2 THEOREM: in [wL, 2L] the rms edge reaches 2L only when every register is full, so the split trigger, the split and children at L are unchanged; the children's vacuum value sits inside the window (n_L = (1-w)/(2-w) of the range)  | w = 1/4: n_L at 0.429 of the register
+[PASS] C3 THEOREM: lapse ratios on a slice are bounded by 2/w (8 for w = 1/4), and the static core is stationary: the tick is the same unitary in every cube (fixed step), redshift is carried by edge VALUES, so no time-dependent drive appears  | the floor bounce (qcrush A3) moves to wL; collapse still needs the shift law (floor-horizon D2-D4)
+== D. option (b): skip half-ticks at the floor (1D free-fermion split-step test)
+[PASS] D1 control: no skip (f = 1), like any time-independent tick, keeps the vacuum exactly; a register-controlled identity is unitary  | max excitations 3.0e-15
+[PASS] D2 DIAGNOSTIC (one skipped tick): each boundary of the skip region creates p1 ~ c eps^2 excitations at band quasi-energies (a sudden local quench of the vacuum), never undone by later ticks  | eps 0.3: p1 7.47e-03 (p1/eps^2 0.08), <q>/eps 1.18; eps 0.1: p1 8.06e-04 (p1/eps^2 0.08), <q>/eps 1.17; eps 0.03: p1 7.23e-05 (p1/eps^2 0.08), <q>/eps 1.17
+[PASS] D3 DIAGNOSTIC (eps 0.3, periodic schedules): a schedule is a drive at frequencies 2 pi {k f}; short periods (f = 1/2) are off-resonant with the band and leave only the transient, while schedules with components below the band width (f = 0.9, golden f) pump excitations linearly in time  | f 0.500: 0.04 -> 0.04, slope 2.5e-07/tick | f 0.750: 0.01 -> 0.01, slope -1.7e-07/tick | f 0.900: 0.22 -> 0.68, slope 2.3e-03/tick | f 0.618: 0.04 -> 0.08, slope 2.3e-04/tick
+[PASS] D4 ESTIMATE (eps0 0.0075, J0740 core, f_c ~ 1/2): transient alone, (1 - f_c) p1 hbar eps0/tau per L^2 per tick, is 6e+124 W against <~1e27 W seen from neutron stars  | p1 4.5e-06, E/quantum 6.8e+08 J, flux 2e+116 W/m^2
+[PASS] D4 ESTIMATE (eps0 0.0375, J0740 core, f_c ~ 1/2): transient alone, (1 - f_c) p1 hbar eps0/tau per L^2 per tick, is 3e+125 W against <~1e27 W seen from neutron stars  | p1 1.1e-04, E/quantum 6.8e+08 J, flux 1e+117 W/m^2
+[PASS] D5 THEOREM: a skipped half-tick must carry zero proper time and make no record: if it recorded, records per proper time would rise by 1/f in the core (a local, measurable difference: equivalence principle); unitary as a register-controlled identity, Lorentz-safe on average, but excluded by heating (D2-D4)
+supplied: CL-1 lapse + window, global ticks, continuum GR TOV, relativistic polytropes K=1 / causal-limit EOS, J0740 M,R
+  (Riley 2021, Miller 2021), qcrush A2 speed bound, 1D two-tiling free walk as a proxy of the 3D tick, rung L = sqrt(8pi) l_P.
+elapsed 3.6 s
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

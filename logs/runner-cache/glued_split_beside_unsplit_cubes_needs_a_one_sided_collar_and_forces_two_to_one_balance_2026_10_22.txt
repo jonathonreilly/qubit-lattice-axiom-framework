@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/glued_split_beside_unsplit_cubes_needs_a_one_sided_collar_and_forces_two_to_one_balance_2026_10_22.py
+runner_sha256: d651541132201c300b8cc0539aed9c2abbd50e68c259163fe342d2262d38e0ec
+input_fingerprint_sha256: 6f34dd3c1825650dfcdbd11788af8982f2bd83ee983e70867d9644ff6ed2538f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 10.69
+status: ok
+----- stdout -----
+== A. ownership, tilings, nesting, closure
+[PASS] A1 THEOREM: each site's 6 forward registers partition the edges; a split puts its 64 children at its 8 sites, the midpoints of exactly its 48 owned edges, and the centres of the 8 cells its sites are least corner of | 384 edges = 6 x 64 sites; children 8 + 48 + 8 = 64
+[PASS] A2 THEOREM: the tilings' cubes share no edge; an odd cube's corners lie in 8 even blocks; the two passings send a shared site to disjoint child sets, so one tiling (the even) owns the split; 1 of a block's 8 cells is wholly its own | site (1,1,1): images (1, 1, 1).. vs (2, 2, 2)..; own cells 1/8
+[PASS] A3 THEOREM: the children's triangulation is nested in the parent's but is no bisection of it (each first bisection of a parent corner tetrahedron draws a non-lattice edge) | 320 nested, 0 not; bad first bisections 6/6
+[PASS] A4 THEOREM (finite check): every pattern tested closes to a simplicial complex: children's tetrahedra where all 6 parent edges are bisected, else a cone from the cell centre over a canonical subdivision of each face | 9 patterns, unmatched faces 0, orphans 0; A: 916 tets, 60 bookkeeping points
+== B. windows force the interface (child units: axis [1,2], diagonal [sqrt2, 2sqrt2])
+[PASS] B1 THEOREM: a parent edge passes as two children inside their windows only when full, so all 48 edges a split bisects must be full, not just the 18 of its tiling cube | l1+l2 = l, l1,l2 >= L, l <= 2L => l1 = l2 = L, l = 2L
+[PASS] B2 THEOREM (exact LP): beside an isolated split cube every child register in a partly refined parent tetrahedron is held at its floor, and the parent edges it reads are held full: 42 owned + a collar of the 12 in-plane registers of each unsplit +x/+y/+z face neighbour | held: owned 42/48, collar 36 from [(0, 0, 2), (0, 2, 0), (2, 0, 0)], child 309/384 (free in partial 0); trigger reads 84
+[PASS] B3 THEOREM: the collar moves with the pattern (a split + neighbour drops its share); a 2^3 super-block has a 144-edge collar, so no finite block of blocks closes | A,+x: 60 from 5 blocks; 2^3: 144 from 12
+[PASS] B4 THEOREM: 2:1 balance is forced: every child cube of an isolated split cube owns a held register and can never split | free child cubes: isolated 0/8, 2^3 8/64
+[PASS] B5 DIAGNOSTIC: if a neighbour may read a bisected edge beyond its own window the collar stands but the hanging-face holds loosen | collar 36; held children 63 vs 309
+[PASS] B6 THEOREM + check: with the held values and free edges anywhere in a 30% band below full, every closure tetrahedron read from its flat parent has positive volume | 5491 tetrahedra, nonpositive 0; min sub/parent volume 0.062
+== C. links: Gauss's law on the sum over patterns (torus of 2x2x2 blocks)
+[PASS] C1 THEOREM + check: a child link ends at its odd centre if that cube is complete, else at the nearest parent odd centre (never a tie); unsplit links keep their laws and Gauss's law is solvable for any parent field and child occupations | 256 patterns (2^3-block torus); ties 0; 18 solved
+== D. register toy: glued split with collar, ring of 3 blocks (bulk u_k, minus-face f_k; 2S = 2)
+[PASS] D1 THEOREM: kinematic space = tensor product over blocks of (coarse + split); local commuting projectors (glued trigger with collar, held collar, held children) cut it into an orthogonal sum over the 8 patterns; the glued generator is hermitian and keeps it | dim 5832, allowed 1505, patterns 8; leak 0e+00; split fraction to 0.10
+[PASS] D2 DIAGNOSTIC: with the trigger on owned edges only the split fires with the collar below full (children below floor, no state), and the odds go there | weight outside the projector up to 0.892
+[PASS] D3 THEOREM: register shifts never change the pattern and are undefined on held edges, so shift-invariant odds are a sum over patterns and CL-3's polar tick acts sector by sector | pattern changes: 0
+== E. matter: one-particle toy, 4^3 torus, block A split
+[PASS] E1 THEOREM: the passing's 8 channel modes (even sum of one corner over the 8 children) are orthonormal with disjoint supports; mixed odd cubes tick on them; the tick is unitary | |B B^T - 1| 2e-16
+[PASS] E2 THEOREM: on the split image the mixed odd half-tick is the passing of the unsplit one (the split is invisible to neighbours when it fires); the complete child odd cube overlaps every mixed cube and must wait | |U_o V - V U_o,parent| 6e-17; max |[U_child, U_mixed]| 0.03
+[PASS] E3 DIAGNOSTIC: channel-mode mixed cubes let a particle cross into the children; freezing them would wall the split region off | weight on children: 0.146 vs frozen 0e+00
+== F. ESTIMATES (L = sqrt(8 pi) l_P)
+[PASS] F1 collar wait: neighbours' edges differ by ~1e-5 x 2 pi L / lambda (metric perturbations at the shortest probed scale), a negligible fraction of a doubling | lambda = 1e-19 m: wait 7e-20 of a doubling
+[PASS] F2 bound regions: next to a cube that never fills one layer stalls full; forced 2:1 balance grades the void one level per layer, a shell a few rung lengths thick | 2.8 levels, shell ~ 9e-34 m
+supplied: forward ownership (from the passing's child placement), closure template + bookkeeping centres (flat), sum-in-window reading (B5), channel-mode mixed ticks + deferred child odd tick (E), toy hop and 2S=2, measured numbers.
+elapsed 10.0 s
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

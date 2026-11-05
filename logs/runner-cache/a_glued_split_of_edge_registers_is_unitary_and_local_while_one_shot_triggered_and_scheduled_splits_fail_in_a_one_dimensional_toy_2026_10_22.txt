@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/a_glued_split_of_edge_registers_is_unitary_and_local_while_one_shot_triggered_and_scheduled_splits_fail_in_a_one_dimensional_toy_2026_10_22.py
+runner_sha256: 3a078c979c19f53a08d38beeb9735bc81dd414c07bb1a4f3482dd5a913b415a6
+input_fingerprint_sha256: ebbb98447a58c23cf1c9b01b89eb3086425af3eafd2ca84d704925b5956dc0d4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 28.20
+status: ok
+----- stdout -----
+== A. structure (one cell; parent: edge n, modes a,b at N=1; children: two edges, modes a,1,2,b at N=2)
+[PASS] A0 THEOREM: the passing is an isometry 2 -> 6 that keeps the charge Q = N - modes/2 (new modes half filled)  | |V^T V - 1| 7e-16; Q parent [0.0], children [0.0]; vacua -1.000 -> -2.236
+[PASS] A1 THEOREM (collision): the one-shot controlled split on the sum over lattices is not an isometry; its image lands on child states the map also keeps, so two orthogonal states become one  | |S^T S - 1| = 1.000 (rank of collision 2)
+[PASS] A2 THEOREM: the exchange V + V^dag on (full, split image) is unitary and an involution; it carries a merge V^dag  | |G^T G - 1| 1e-15
+[PASS] A3 DIAGNOSTIC (flicker): with slow edges the exchange form sends the odds parent <-> children every even half-tick, so CL-2's actual configuration must gain and lose the new sites each time  | P(children) per tick 1.00 0.00 1.00 0.00 1.00 0.00 1.00 0.00
+[PASS] A4 THEOREM + DIAGNOSTIC (glued form): hermitian, so the tick is unitary on the sum over refinement patterns, keeps Q, and with slow edges the children's weight moves smoothly (no flicker)  | |U^dag U - 1| 3e-15; P(children) 0.0002 0.0007 0.0015 0.0023 0.0031
+[PASS] A5 THEOREM (local unitary): with the glued split the cell's distribution over configurations, sector label (number of sites, so of records) included, is independent of a remote setting  | max diff 2e-17
+[PASS] A6 THEOREM (index): for any unitary on the sum over refinement patterns from a finite start, the trace weight split across a generation cut equals the weight merged back; only a non-onto isometry (a history label) splits without merging  | glued: up 0.000390 = down 0.000390; history isometry: up 2, down 0
+== B. the top wall (edge ladder only; hop J_n proportional to length, parent n = 0..P-1, children m = 0..)
+[PASS] B1 DIAGNOSTIC: without the split the up-moving packet reflects at the top (box, qcrush B5); glued, it passes into the children, the residual set by the junction's impedance step and falling as the packet widens  | box: <n> peaks 9.89, then 4.50; glued transmitted 0.937 (width 1.2), 0.982 (2.5) vs 1.000 on a uniform chain (no step); two independent child edges 0.948
+[PASS] B2 DIAGNOSTIC (CL-2 across the junction): the actual configuration stays Born-distributed over the sectors; it splits with the forward flux and merges back only with the reflected flux (up - down = children's weight)  | Born err 1e-13; actual flux up 0.9819, down 0.0002, children's weight 0.9818
+[PASS] B3 DIAGNOSTIC (c, fixed schedule): a split at a fixed tick finds only the full component; the rest of the odds would get children below the rung length, which have no state, and that rest grows with the packet's width  | best scheduled tick carries 0.751 (width 1.2), 0.553 (2.5) of the odds
+== C. the actual-configuration trigger (b) vs the glued split (a); small ladder (+child) x remote qubit
+[PASS] C1 THEOREM + DIAGNOSTIC (b breaks Born): with the update chosen by the actual configuration the odds branch by junction history, and the actual split's frequency differs from the odds weight averaged over the branches  | max |P(actual split) - E[odds split]| 0.288; e.g. 0.3603 vs 0.0723; branches <= 254; weight kept 1.0000
+[PASS] C2 DIAGNOSTIC (b signals): that frequency (the tick at which the records double) depends on a setting at a remote qubit that never interacts with the edge  | max |dP(split)| (theta 0 vs pi/4) 0.0483; e.g. 0.3603 vs 0.3135
+[PASS] C3 THEOREM (a): with the glued split the frequency is the Born weight, independent of the setting  | max diff 3e-16; glued P(split) 0.6237
+== D. ESTIMATES (measured inputs; rung L = sqrt(8 pi) l_P)
+[PASS] D1 exchange form today: a register gains 2S H0 t_tick quanta per tick, so a full cube would flicker parent <-> children ~1/(2S H0 t_P) times per split; the glued form never flickers  | H0 t_P = 1.2e-61: ~9e+60/2S flickers per cube per split
+[PASS] D2 (c) fixed schedule vs the measured expansion history: the window needs |ln a(t) - (ln2) t/(K t_tick)| < ln2 at all times; a schedule matching the e-folds since BBN gives ~0 splits in 1-180 s, where a grows by 13x  | 32 splits since BBN; schedule gives 1e-14 in 1-180 s vs 3.7 needed
+[PASS] D3 (a) glued split fires once per doubling of each cube's own edge, so the split cascade has period ln 2 in ln a in every era, keeping the tensor ripple's period ln 2; (c) gives period H K t_tick, ln 2 only in tuned de Sitter  | structural
+supplied: 1D chain cell, spin-S edge hop and length-proportional ladder hops (no CL-3 edge dynamics), collective children, cross-sector unit cost, entropic transport tau = 0.1, packet shapes, measured numbers.
+elapsed 27.7 s
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

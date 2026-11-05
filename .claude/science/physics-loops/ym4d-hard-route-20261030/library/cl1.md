@@ -526,3 +526,11 @@ Corrections and completions made in distillation:
 - Kept factorial growth as the SR1 import and the cone proof independent of the lattice plateau/phase argument. The compact and flat spaces are identified only for this same scalar moment functional.
 
 The two source notes have the line-by-line check recorded above. **This distilled text, its added completions, and CL1 as a whole part are not yet refereed.** Every proof step here is a written hand argument. Text retrieval and editing supplied no mathematical discharge. This research text grants no status and does not establish the upstream Yang–Mills construction.
+
+## Change log (pass 3 fixes, lead, 2026-11-05)
+
+Applied the findings of `gates/cl1-gate.md` (Claude fresh session, first failing step none):
+1. Lines 208 and 273: "I3 improves A'_n to C_E^n (n!)^{k+32}" overstates SR1's H1, which covers the moment limits sigma, sigma_S, not the cumulant limits S_n or the lattice extensions Sigma_{j,n}. No clause of Theorem 9 uses that bound. SR1's Lemmas 7-9 need only the bound (28); the cumulants meet it by the third line of (4) and the lattice forms meet it at each j (SA (QF1), L24929-24946).
+2. Symbol clashes, read as follows: the growth constant C_E is C_{H1} (distinct from IN1's row-7 C_E); the one-point constant c of Lemma 3 is c_sigma (distinct from IN1's reserve product c = C_v c_r).
+
+**Status: frozen**, as a conditional implication from SR1, LG1 and IN1(4). Reopens only on a `wrong` signal or when an import it reads changes.

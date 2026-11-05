@@ -558,3 +558,11 @@ Corrections and consolidations made in distillation:
 - Removed the old C1/OH1 pointer as a purported first open obstruction. The gate already identifies that pointer as stale; this part leaves actual UV1 open without assigning a new upstream priority.
 
 No unresolved internal proof step was found under these hypotheses. There is no assertion of contact terms, an extension to unrestricted Schwartz tests across diagonals, or Yang–Mills existence. This distilled part is **not yet refereed as a whole part**. The earlier checks apply to the named notes, not automatically to this assembly; no scientific or audit status is granted.
+
+## Change log (pass 3 fixes, lead, 2026-11-05)
+
+Applied the findings of `gates/sr1-gate.md` (Claude fresh session, first failing step none):
+1. The labels S1d and S1g (old skeleton) are, in [lg1.md](lg1.md), Theorem 13 clause 3 and Theorem 10 / Theorem 13 clause 5 respectively (lines 36, 553).
+2. The H1 growth constant written C_E at lines 105 and 124 is read as C_{H1}; it is distinct from IN1's row-7 constant C_E. No step mixes them.
+
+**Status: frozen**, as a conditional implication. Import UV1 (full rooted D1 consumer hypothesis) remains open, as stated. Reopens only on a `wrong` signal or when an import it reads changes.

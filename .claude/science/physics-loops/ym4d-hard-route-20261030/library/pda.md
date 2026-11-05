@@ -235,3 +235,13 @@ Source excerpts and the exact label-occurrence list are saved in `/tmp/pda-work/
 For the prepared large-field data of CA-I `4.14:prop-prepared-data-admissible`, with the old input geometry and endpoint definitions specified above, the intermediate sets can be chosen by (C). The resulting \(\Omega''_1,\ldots,\Omega''_k\), with their prescribed Dirichlet hull, satisfy **(A1) exactly as stated**. The proof also preserves any inherited later-level gap and proves geometric (A1) for every componentwise stopped prefix.
 
 This fills the printed-without-proof completion and admission step attributed to **Tadeusz Bałaban**, using the text of **Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text**. The account's already proved one-step collar argument is ported, not replaced. The separate (A2) premise and the analytic supply conditions remain separate. This proof has not yet been checked by another model; it grants no audit or retained status.
+
+## Change log (freeze, 2026-11-05)
+
+Written by Codex. Refereed line by line by a fresh Claude session ([pda-gate](../gates/pda-gate.md)): first failing step none; nothing fabricated; proved as stated, **as one operation step**.
+
+Scope, as the referee states it: this proves the geometric content (A1) of the sentence at CA-I 45593–45595 (as stated at 45582–45588 and as its consumers read it) for the prepared nest with rule (C), including every componentwise stopped prefix, **given (A1) for the old label**. Rule (C) is a choice the account allows (45608–45611, 51713–51716, 53779–53782, 121772–121777), and its "at least one layer" reading is the only one that can hold. Their text names \(Z''_{k-1}\) at 51712 where 45600 and 92015 give \(Z''_s\).
+
+What P4-H-prepared still needs: (A2) (\(\Omega_t\subset\Omega''_k\), a \(6M\) margin, \(\Omega_t\) a union of level-\(k\) \(LM\)-cubes); (A1) at every other nest of the history (48133), i.e. the T-step half of the produced-nests induction and the old-label premise; the inputs read from Balaban rather than proved (53816–53831, 48164–48168, 92012, 92015); and the analytic supply conditions of `rem-supply-scope` (49495–49546). CA-II 145579 and CA-III 21303, 53328, 111073, 111311 cite the same Balaban pages for other content (constant conditions, a point count), not covered here.
+
+Status: **frozen.**

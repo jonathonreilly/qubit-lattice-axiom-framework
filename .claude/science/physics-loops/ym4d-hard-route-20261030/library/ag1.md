@@ -69,6 +69,8 @@ the entire half-line above the stated lower bound, not a check at its endpoint.
 **1.2. Positive histories and tests.** Denote the law stopped at $k$ by
 $\mathbb P^{(k)}$. The following are inputs from LF1 and LG1.
 
+* **(ANC), LF1(2):** if a cell is live at levels \(j-1\) and \(j\), its live component at level \(j-1\) lies inside its live component at level \(j\). SA 23328 states this ("At every one of these levels it belongs to the lineage of the component that is live at level \(k\) and contains it"); it is not among (R0)–(R3) and is used by Lemma 1 (lines 412–413). **Outstanding** as an LF1 verification.
+
 * **(K), (MI), LF1:** the construction is a finite adapted composition of
   positive probability kernels over the Wilson field $U$. Each possible
   decision or draw has its own independently assigned uniform variable,
@@ -1277,6 +1279,22 @@ The definitions supplied or made operational in this distillation are:
   $S_d$, $K_\infty$, $\varepsilon_W$, $c_T$, $Q$, $\chi_i$,
   $\alpha_k$, $X_*$, $C_{\rm AG}$ and $c_{\rm AG}$. Their dependencies
   and choices are specified where introduced and in §6.
+
+## Change log (pass 3 fixes, lead, 2026-11-05)
+
+Applied the findings of `gates/ag1-gate.md` (Claude fresh session). First failing step: Lemma 1, lines 412-413, repairable.
+1. Reading of the event: AG1's "c belongs to a live component" is aligned with TP1's "a live component meets c" by a union over at most 81 neighbouring cells, so C_AG is multiplied by 81 where TP1's reading is used.
+2. **(ANC)** added as a named LF1(2) input (SA 23328, read by the lead); this repairs the first failing step. Outstanding as an LF1 verification.
+3. "Proposition S" of the draft is Lemma 5 of [nl1-L.md](nl1-L.md) (frozen). The distance bound D_f >= 10 L M R_i - C for the full source, which NL1 marks outstanding, is used by (22)-(24) through (OS) and is now named here as Outstanding.
+4. (OS) is stated for the whole live-attached sum, including the carried constraint factors that Theorem 5's proof places there, not only kept forms and islands.
+5. Theorem 12 holds above the coupling floor x_j >= X_* and on the tori the chessboard input admits; TP1 uses it only at k_1 in its large-x regime, so TP1 is unaffected.
+6. The tree inequality is at SA 1225-1269 (not 1270-1347).
+7. Gamma_X uses Re Psi, since Psi(xi, p_*) need not be real.
+8. In (MB), m = |D|.
+9. c_f is IN1's c_0. The running minimum is taken in x, as in TP1 and SA; IN1's theta-form is equivalent up to the coupling relation. The letters delta and R_1 carry two meanings; read them from context (to be renamed at hardening).
+10. The designation count D_des requires the designated live cell at level i-1 to lie within R_* + 1 cells; this is part of the interface.
+
+**Status: frozen**, as a conditional theorem. Outstanding inputs, all named: (ANC), (OS) for the whole live-attached sum, NL1's full-source distance bound, the QL' domain/threshold verification, and the fixed-history density identification. Reopens only on a `wrong` signal or when an import it reads changes.
 
 ## Result
 

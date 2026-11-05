@@ -545,10 +545,258 @@ One part of the outside implication does not require a containing box. If the so
 
 The single remaining target is still **Lemma RB, with the exact hypotheses and constants of (20)**. The uniform-cover theorem is a new partial result for the first route proposed by the account. The scaled-collar calculation is a new sufficient geometric step for its second route. The curvature projection is a third approach to the same local regularity estimate. None is substituted for the actual boundary tower or for an unproved source-membership assertion.
 
-## Result
+## Result of the second round
 
 **Open lemma** — For every outside consumer allowed by CA-I `4.12:prop-reblocking-outside`, prove existence of its actual constrained minimiser and the two cases of the curvature/current bounds in (20), uniformly in depth, domain and boundary tower, with the account's order of constants.
 
 Three new attacks were completed in this round. Anchoring the gauges closes the uniform-cover overlap problem (Lemma 7), but the all-cell minimiser estimate (28) loses the required scale gain. Scaled distance supplies that power (Lemma 8), but the actual tower comparison and all-consumer collar coverage remain unproved. Working directly with curvature gives the quadratic projection (Lemma 9) and the weighted maximum argument (35), but not the required uniform local inequality (34).
 
 The inside implication and real-factor corollary in Proposition 2 are retained with their stated qualifications. There is no proof of the literal full pair of propositions and no counterexample to either. The new results are hand proofs or explicitly stated implications from the account's inputs; none has been checked by another model. This is research text, not an audit, and grants no status.
+
+## 9. Third round: use the frozen admission and locality results
+
+Provenance of this continuation: Codex, 2026-11-05, checkout `5129d8d4e01a632c1293ab712f8a758dcc64e6f5`. Sections 1–8, their proofs and their results are preserved. This round resumes their Lemma RB. It grants no status. Credit remains with Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, and Tadeusz Balaban for the constructions being extended.
+
+The new inputs are frozen `mu.md`, `oc.md`, `pda.md`, and checked ports `port/p4-operator.md` and `port/p7-torus.md`. They retain their own hypotheses. In particular:
+
+| Input | What can now be used | What is not its conclusion |
+|---|---|---|
+| MU, §§4–7 and Result | Admission and arbitrary-subdomain nesting in the actual CMP 109 Lemma 4 windows; both tower rules | Admission of every outside re-blocking datum, or equality after replacing the induced inner datum by a different datum |
+| OC, §§4–5 and Result | The own-constant cube gauge, including its first differences, for the stated small pairs and real backgrounds | A cube gauge for an arbitrary re-minimised CMP 122b field before its admission |
+| PDA, Result and freeze scope | Geometric (A1) for one prepared operation, including stopped prefixes, from old (A1) | (A2), admission of fields, or equality of constraint maps after cutting a domain |
+| P4, A9 and A9-F8 | The stated covariance/source operators and their local analytic extensions on admitted backgrounds | A new real background, or identification of those operators with the response to a change of determining data |
+| P7, P7-H2, P7-Hmin and the non-wrapping proof | Equality of terms with matching complete footprints; torus-independent constants on the stated domains | Equality of minimisers whose artificial boundary data differ |
+
+The source comparison in §1 remains valid for GEOH, DOM, ST1 and PR-lay. None of these new results replaces their differing rows or admission premises. The following three attacks use the account's two proposed routes: refinement and localisation. They do not count any of Attacks 1–6 again.
+
+## 10. Attack 7: use MU to replace the tower comparison by exact nesting
+
+The proposed shortcut is to restrict the outside minimiser to a small box, apply MU, then use Proposition 2 there. MU now proves the nesting step in its stated windows. The datum in that identity must still be tracked.
+
+**Corollary 10 (where the induced and prescribed data can differ).** Let \(W=U(\mathcal S,M_{\mathcal S}\bar U)\) be an admitted real minimiser to which frozen MU applies. Let \(Y\) and its actual inner tower \(\mathcal T\) satisfy MU's hypotheses. Keep the endpoint frames fixed, and put
+\[
+ D_Y^W=M_{\mathcal T}(W|_Y),\qquad
+ D_Y^0=M_{\mathcal T}(\bar U|_Y).                         \tag{36}
+\]
+Let \(\mathcal R_Y\) be the inner rows which are also rows of \(\mathcal S\), with the same averaging functional, complete carrier and endpoint frames. Then
+\[
+ D_Y^W(c)=D_Y^0(c)\quad(c\in\mathcal R_Y),\qquad
+ U(\mathcal T,D_Y^W)\simeq W|_Y.                          \tag{37}
+\]
+Here \(\simeq\) denotes the real gauge identification specified by MU. If
+\(\sup_c|D_Y^0(c)(D_Y^W(c))^{-1}-1|<\epsilon_G\), the datum
+\[
+ B_Y(c)=i^{-1}\log\bigl(D_Y^0(c)(D_Y^W(c))^{-1}\bigr)      \tag{38}
+\]
+is Lie-algebra valued, is zero on \(\mathcal R_Y\), and satisfies
+\[
+ D_Y^0=e^{iB_Y}D_Y^W,\qquad
+ |B_Y(c)|\le(\pi/3)|D_Y^0(c)-D_Y^W(c)|.                  \tag{39}
+\]
+
+*Proof.* On a row in \(\mathcal R_Y\), locality identifies its two inner evaluations with the corresponding outer evaluations. The constraint on \(W\) makes those equal. MU supplies the second identity in (37), including its real criticality and boundary-action argument; those are ported, not proved again. The principal logarithm and the unitary norm identity give (38)–(39), by CA-I 42740–42747. The logarithm of the identity is zero. □
+
+This is a statement about actual row functionals. Agreement of row endpoints, or agreement of the sets of sites, is insufficient. It also has an explicit admission premise on \(W\); it cannot first construct an outside minimiser by assuming that minimiser is in MU's window.
+
+For localisation, take \(\mathcal S=\mathfrak B_E(p,X'')\) and \(Y=X''\cap\mathfrak Q\). Equation (37) identifies the restriction with a minimiser whose datum is \(D_Y^W\). Proposition 2 estimates the minimiser at \(D_Y^0\). These are two different inputs. Thus MU removes the need to re-prove criticality at the **induced** datum on its admitted class. It does not set \(B_Y=0\).
+
+I next tried to show that every changed row lies in a distant artificial collar. There is a useful limited conclusion. In a region where both boundary towers have saturated at level \(p\), their block levels both equal \(\min(p,c_E)\). If their fixed roots and interface rules agree there, a row with its whole carrier in that region belongs to \(\mathcal R_Y\). Equation (39) is therefore supported off those rows. The sufficient saturation criterion at CA-I 43000–43006 applies at distance at least \(2M_1\ell_p\) from the respective boundaries. The two-layer readout condition gives only \(2M\ell_n\) when \(n<p\). Their ratio is
+\[
+ \frac{2M\ell_n}{2M_1\ell_p}
+       =\frac M{M_1}L^{n-p},                              \tag{40}
+\]
+which can be arbitrarily small. Saturation at level \(p\) is a sufficient criterion, not a necessary one; the failure of (40) to exceed one is not a counterexample. It shows why this criterion does not establish all-consumer row agreement. Near the inherited boundary, a separate comparison of the actual intrinsic tower rules is still needed.
+
+PDA does not fill that comparison. It proves (A1) for the prepared \(\Omega''\) sequence, with its own completion rule. The consumer tower is instead the tower of **each** \(X''\), and the cut tower is the tower of **each** \(X''\cap\mathfrak Q\). Even an (A1) proof for both would assert gaps and grids, not equality of their averaging functionals. MU's own proof respects this distinction: its boundary data are averages of the field being restricted (`mu.md`, (5.3)–(5.5)).
+
+**Exact failure of Attack 7.** Exact nesting reaches \(D_Y^W\), whereas the inside estimate reads \(D_Y^0\). I did not establish an admitted, uniformly small change between these data on the actual changed rows, or place every such row at the required scaled distance from every readout. Using (37) with \(D_Y^0\) in its left side would change MU's statement. The new result is the exact support reduction (36)–(39) on MU's admitted class, not an outside admission theorem.
+
+## 11. Attack 8: obtain the missing datum response from P4
+
+The second attempt uses the newly available operator port instead of the raw datum estimate of Attack 7. P4 constructs inverses and source operators. To use them, the linear problem produced by differentiating the **actual constrained minimum** must be identified. The following calculation keeps the nonlinear constraint term.
+
+**Lemma 11 (response from a constraint lift and a tangent inverse).** Work in finite-dimensional real coordinates on a fixed gauge slice. Let \(S\) and \(q=(q_a)\) be \(C^2\), where \(q\) gives independent coordinates of the actual determining datum. Suppose a differentiable curve \((u_t,\lambda_t,d_t)\) satisfies
+\[
+ q(u_t)=d_t,\qquad
+ \nabla S(u_t)=Q_t^T\lambda_t,\qquad Q_t=Dq(u_t),        \tag{41}
+\]
+and \(Q_t\) is onto. At one fixed \(t\), define
+\[
+ K=\nabla^2 S(u_t)-\sum_a\lambda_{t,a}\nabla^2q_a(u_t).   \tag{42}
+\]
+Let the columns of \(Z\) be a basis of \(\ker Q_t\), assume \(Z^TKZ\) invertible, and put
+\[
+ C=Z(Z^TKZ)^{-1}Z^T.
+\]
+For any right inverse \(E\) of \(Q_t\), the response is
+\[
+                  \dot u_t=(I-CK)E\dot d_t.             \tag{43}
+\]
+The expression is independent of the chosen right inverse.
+
+*Proof.* Differentiate both equations in (41). Their derivatives are
+\[
+ Q_t\dot u_t=\dot d_t,\qquad
+ K\dot u_t-Q_t^T\dot\lambda_t=0.                        \tag{44}
+\]
+The term subtracted in (42) is precisely the derivative of \(Q_t^T\) contracted with \(\lambda_t\). Write \(\dot u_t=E\dot d_t+Zz\). Multiplying the second equation of (44) by \(Z^T\) gives
+\[
+ Z^TKZz=-Z^TKE\dot d_t.
+\]
+Inversion proves (43). If \(E_1-E_2=ZT\), then
+\(CKZT=Z(Z^TKZ)^{-1}(Z^TKZ)T=ZT\). Hence
+\((I-CK)(E_1-E_2)=0\). □
+
+This is the differential form of the account's refinement-and-response route. It is not a replacement for Balaban's construction. The correct inverse is on the tangent space, and the Hessian is the Lagrange Hessian (42). Dropping its last term would return the incomplete curvature-only attempt of §7.
+
+P4's square completion has the closely related, already proved formula \(-\mathsf C\mathsf J A'\). But its \(A'\) is the complementary **fluctuation field**, and \(\mathsf C\) is the inverse form on the integrated fluctuation coordinates: CA-I 46053–46074. Here \(\dot d\) is a change of the prescribed **averaged datum**. To identify the formulas one must supply the actual lift \(E\), its constraint normalisation and carriers, and the equality of the physical graph form with (42) in these coordinates. A similarity of Schur-complement formulas does not identify their spaces.
+
+There is a simple hand test of whether positivity and decay of the form alone could supply the missing lift. Let
+\[
+ S(x,z)=\tfrac12(x^2+z^2),\qquad q(x,z)=x/N,
+ \qquad N\in\mathbb N,\ N\ge1.
+\]
+The full Hessian is the identity. The tangent inverse is \(C=\operatorname{diag}(0,1)\), independent of \(N\). Both are diagonal and have norm one. Yet the exact minimum at datum \(d\) is
+\[
+                 u(d)=(Nd,0),\qquad u'(d)=(N,0).        \tag{45}
+\]
+Indeed the constraint fixes \(x=Nd\), and the nonnegative term \(z^2/2\) has its unique minimum at zero. Thus even bounds on the **whole** form, its tangent inverse, and their off-diagonal entries do not control the datum response without a bound on the correctly normalised lift. This is a test of the inference, not a lattice counterexample; Balaban's actual normalisation must be used, not varied as in this example.
+
+I then tried to integrate (43) along the principal-log path suggested by (38). On any interval where the path is admitted, the formula is valid. P4-H-prepared's (A1) is now supplied by PDA for its prepared operation. However, P4 still requires the separate (A2) and the real-background class. Its local-ball clause begins with a globally given \(U\in\mathcal U_{\mathbb R}\), CA-I 46111–46121. The cutoff extends the **perturbation** about that background; it does not construct the missing real background. OC supplies the real gauges for its stated pair classes, and expressly leaves later re-minimised CMP 122b admission separate (`oc.md`, end of §5). These premises cannot be assumed at the next time of continuation to prove that the continuation has not left them.
+
+**Exact failure of Attack 8.** The required response is (43), with the actual tower's lift and multiplier term. I did not identify a uniformly local lift and all its curvature/current readouts with P4's source operator on every outside consumer, or establish admission along the required datum path. Example (45) rules out filling that identification from operator bounds alone. The calculation closes the algebraic identification problem **once** those objects are supplied; it does not supply them.
+
+## 12. Attack 9: build a torus comparison field, then retain its boundary error
+
+P7 suggests moving a protected local calculation to a convenient torus. I first constructed the required real extension on a healed cube. This avoids assuming that an arbitrary exterior field already has a global small gauge. The construction uses the account's axial gauge and its exponential-product estimate, not a replacement averaging map.
+
+**Lemma 12 (real extension of a cube germ).** Let \(G=SU(2)\), let \(R\ge4\eta\), and let \(Q\) be a fine-lattice cube of side \(4R\). Suppose
+\[
+                    |\partial U-1|\le F\eta^2\quad\hbox{on }Q.
+\]
+Put \(c_{\rm ax}=\frac{4\pi}{3}(d-1)\) and \(a=c_{\rm ax}RF\). If
+\[
+                         4\eta a\le1,\qquad R^2F\le1,  \tag{46}
+\]
+there are a real gauge \(g\) on \(Q\) and a configuration \(V=e^{i\eta A^{\rm ext}}\) on the whole fine lattice such that
+\[
+ \|A^{\rm ext}\|_\infty\le a,\qquad
+ |\partial V-1|\le C_{\rm ext}F\eta^2,\qquad
+ C_{\rm ext}=1+4c_{\rm ax}+24c_{\rm ax}^2.                 \tag{47}
+\]
+The configuration equals \(U^g\) on every bond whose endpoints have distance at least \(R+2\eta\) from \(\partial Q\). It equals one outside \(Q\) and in its outer two fine layers. It can be repeated on any compatible torus with periods at least \(8R\), with the same bounds. The assertion concerns the extension field, not its constrained minimiser.
+
+*Proof.* The axial lemma gives \(U^g=e^{i\eta A}\) on \(Q\), with \(|A|\le a\). Indeed its smallness condition is \(4(d-1)RF\eta\le1\), which follows from (46). The \(SU(2)\) logarithm is the one justified in §2.
+
+For \(x\in Q\), let \(r(x)\) be its distance in the maximum norm to the geometric boundary. Define
+\[
+ \chi(x)=\min\{1,(r(x)-2\eta)_+/R\},\qquad
+ \chi_b=\min\{\chi(x),\chi(y)\}\quad(b=\langle x,y\rangle).
+\]
+Set \(A^{\rm ext}(b)=\chi_bA(b)\) on positive bonds of \(Q\), and set it to zero on other positive bonds. Reverse bonds have inverse group variables. The function \(\chi\) is \(R^{-1}\)-Lipschitz and lies in \([0,1]\). The value, support and agreement assertions follow directly.
+
+Here is the curvature check; no bound on the full first derivative of the axial potential is assumed. On a plaquette in \(Q\), list its four signed positive-bond potentials as \(A_1,A_2,-A_3,-A_4\). The exponential-series remainder estimate used at CA-I 43967–43982 gives
+\[
+ \left|\partial(U^g)-1-i\eta(A_1+A_2-A_3-A_4)\right|
+                   \le12\eta^2a^2.
+\]
+Consequently
+\[
+ |A_1+A_2-A_3-A_4|\le\eta F+12\eta a^2.                \tag{48}
+\]
+Let \(x\) be the lower corner. Every vertex of this plaquette is within \(\eta\) of \(x\) in the maximum norm. Thus every bond weight differs from \(\chi(x)\) by at most \(\eta/R\). It follows that
+\[
+ |\chi_1A_1+\chi_2A_2-\chi_3A_3-\chi_4A_4|
+       \le\eta F+12\eta a^2+4\eta a/R.
+\]
+Apply the same exponential-series remainder bound to these four weighted potentials. This gives
+\[
+                 |\partial V-1|
+           \le\eta^2(F+4a/R+24a^2).
+\]
+By \(R^2F\le1\), \(a^2=c_{\rm ax}^2R^2F^2\le c_{\rm ax}^2F\), proving (47). A plaquette crossing the boundary of \(Q\) has every potentially nonzero bond in its zero buffer. Its variables are all one. Plaquettes wholly outside have the same property. Finally, disjoint periodic copies have an identity buffer between them, so the same plaquette-by-plaquette argument applies on the torus. □
+
+If \(Q\) is healed and lies in \(Y_4\), use \(F=\alpha_k\). A coupling ceiling after \(M\) pays (46) when \(R\) is a fixed multiple of \(M\). If \(4R\le102M\), the potential bound is at most half the \(\mathfrak a_{\max}\) used in Proposition 2. Every determining row whose complete carrier lies in the protected cube has the same datum as \(\bar U\), in the restricted gauge \(g\), by the exact locality and covariance at CA-I 43018–43027. The curvature factor \(C_{\rm ext}\) is explicit; this extension does not preserve the sharper datum parameter \(2\alpha_k\ell_p^2\) outside the protected cube. Nor does it prove that every outside readout has such a healed cube.
+
+The outline has a related, sketched axial-extension test at SA 17585. It extends inward from an exterior surface and allows a factor of order \(M^2\). Lemma 12 instead preserves a prescribed inner germ, cuts off through a collar and records the quadratic error. P4's local cutoff at CA-I 46800–46828 extends a perturbation about an already given real background. Lemma 12 constructs a real field but does not claim P4's full background-class admission for it. OC can be used when a resulting minimal background belongs to OC's stated classes; its conclusion cannot be applied to the extension solely because it is real.
+
+I next tried exact transfer by P7. Its source theorem begins at CA-I 58187, with its standing hypotheses at 58188–58218. In its proof, the transferred objects are sums of words with complete footprints, CA-I 58443–58470 and 58640–58669. P7 therefore identifies local words once their full data and geometry agree and the arguments are admitted. A word of a full inverse can leave the protected cube. It is not one of the words identified by this local agreement. The global minimisers at the original and extended data are not declared equal by P7. The terms leaving the cube must be estimated, not deleted.
+
+There is enough scale gain to sum those terms, **if** the actual datum response is available. The following calculation includes the loss of half the rate when summing all changed rows, which (30) alone did not address.
+
+**Lemma 13 (summed boundary response still has the required scale power).** Fix the actual determining system and a below-slot readout of level \(n\). Put \(s_x=\ell_{\mathfrak B}(\xi)\). Suppose \(D_t\), \(0\le t\le1\), is a piecewise \(C^1\) path of admitted real data with minimisers \(W_t\). Write
+\[
+ v_t(c)=i^{-1}\dot D_t(c)D_t(c)^{-1},\qquad
+ f_2(t)=\eta^{-2}|\partial W_t(\xi)-1|,\qquad
+ f_3(t)=|J(W_t)(\xi)|.
+\]
+The two readouts are used on their respective plaquettes and bonds. Assume they are absolutely continuous and, almost everywhere,
+\[
+ s_x^r|\dot f_r(t)|\le C_R\sum_c e^{-\mu d(x,c)}|v_t(c)|,
+                    \qquad r=2,3.                      \tag{49}
+\]
+Here the metric is fixed; any moving metrics have already been compared to it. Suppose
+\[
+ |v_t(c)|\le C_v\alpha_k,\quad
+ v_t(c)=0\ \hbox{unless }d(x,c)\ge\rho,\quad
+ \sum_c e^{-\mu d(x,c)/2}\le c_\mu.                      \tag{50}
+\]
+Assume the geometry in Lemma 8 up to an exit at physical distance \(R\ge M\), with \(\rho\) at least that exit distance in the scaled metric. If
+\[
+ \frac{\mu M}{2M_1}\ge\log(2L),\qquad
+ s_x\ge\ell_n/L,                                        \tag{51}
+\]
+then
+\[
+ \begin{split}
+ |f_2(1)-f_2(0)|&\le C_*L^2\alpha_k\ell_n^{-1},\\
+ |f_3(1)-f_3(0)|&\le C_*L^3\alpha_k\ell_n^{-2},\qquad
+ C_*=C_RC_vc_\mu L^2/\log L.                            \tag{52}
+ \end{split}
+\]
+All constants in (49)–(50) are assumed fixed before \(M\).
+
+*Proof.* For a changing row,
+\(e^{-\mu d(x,c)}\le e^{-\mu\rho/2}e^{-\mu d(x,c)/2}\).
+Sum first, then integrate (49) in \(t\). The result is
+\[
+ |f_r(1)-f_r(0)|\le C_RC_vc_\mu\alpha_k s_x^{-r}
+                                      e^{-\mu\rho/2}.    \tag{53}
+\]
+The path-length proof of Lemma 8, before its last inequality, gives with \(a_0=M_1\log L/M\)
+\[
+ \rho\ge a_0^{-1}\log(1+v),\qquad
+ v=\frac{R\log L}{ML^2\ell_n}.
+\]
+Condition (51) implies \(\mu/(2a_0)\ge\log(2L)/\log L>1\). Hence
+\[
+ e^{-\mu\rho/2}\le(1+v)^{-1}\le v^{-1}
+                \le\frac{L^2}{\log L}\ell_n.
+\]
+Insert this and the bound on \(s_x\) into (53). This proves both lines of (52). No number of changed rows appears. □
+
+For \(\mu=\delta\), (51) is the existing \(\Phi2\). For a smaller proved response rate, it would be another lower floor on \(M\), after that rate is fixed. The half-rate summability in (50) must be available at that rate too; it is not inferred from a sum at a faster rate. A response theorem with such a rate and sum would fit the account's order. If a comparison solution uses at most half the \(K_b\) budget, its remaining half pays (52) once
+\[
+                         C_*\le\tfrac32 B_HK_b.          \tag{54}
+\]
+Since \(K_b=K_0M\), \(K_0=\frac\pi3(d-1)c_Qc_d(1+3L^2)204\), an early enlargement to \(B_H\ge 2C_* /(3K_0M_1)\) would suffice for every \(M\ge M_1\). More generally, if the velocity bound is \(C_vM\alpha_k\), with \(C_v\) still fixed before \(M\), the same proof multiplies (52) by \(M\). The budget then requires only \(B_H\ge2C_* /(3K_0)\), again an early choice. This allows a linear \(M\) loss of the kind already present in \(K_b\); a further power cannot be hidden in an early constant. In either calculation the proved response constants must be kept at their originally established values when enlarging the reported bound \(B_H\). This is conditional arithmetic. No value of \(C_R,C_v,c_\mu\), or response identity, is supplied by (54).
+
+**Exact failure of Attack 9.** Lemma 12 constructs the comparison field on a covered local class. P7 transfers its matching, admitted local words, not the full minimiser. Lemma 13 proves that summing a genuine boundary response would retain the missing power. I did not construct the admitted same-system path with (49)–(50), or prove the requisite healed-cube and changed-row collar coverage for every outside consumer. The failed step is the transfer from the constructed comparison field to the original constrained problem. Enlarging the torus or declaring two local germs equal does not make that transfer exact.
+
+## 13. Constant order, source checks and the remaining target
+
+The extension constants \(c_{\rm ax},C_{\rm ext}\) depend only on \(d\). Its radius \(R\), when used as a fixed multiple of \(M\), is chosen with \(M\); (46) is then a final upper ceiling on \(\alpha_k\). For \(G\ne SU(2)\), the additional logarithm ceiling from §2 would also be needed. Nothing here infers the full target's regularity from the extension's curvature bound alone.
+
+The constants and decay rate in a future application of Lemma 13 must first be proved uniformly for the actual constraints. They fix any enlargement of the response bound before \(M\) is chosen. Next choose \(M\) above the corresponding floor (51), and finally decrease the couplings. The ordering is the one at CA-I 43573–43584. Choosing a rate or a constant after learning the depth, domain, number of blocks or particular boundary tower would not prove Lemma RB. Lemma 11 is an exact identity with explicit hypotheses; it supplies no uniform constant by itself.
+
+For this continuation the index rows and neighbouring rows were used before the bounded source readings. The additional comparisons were checked against CA-I 42740–42747 (logarithms), 42988–43027 (actual towers, locality and covariance), 43559–43595 (order and budgets), 43787–43809 and 43967–43982 (axial gauge and product remainder), 46053–46074 and 46111–46121 (the spaces of P4's operators and local-ball premise), 46800–46828 (perturbation cutoff), and 58187–58218, 58443–58470, 58640–58669 (P7's hypotheses and transferred ingredients). The related extension at SA 17585 was read in its preparation-stage context; it is a sketch, not an input used to discharge Lemma 12. MU, OC and PDA are used at their frozen scopes. The earlier source comparison with GEOH, DOM, ST1 and PR-lay is retained, in particular ST1's settlement requirement. No source has been promoted from a conditional statement to an all-consumer assertion.
+
+These attacks do not produce three new assumptions to add to the outside proposition. Their admission, lift and collar premises describe possible proof obligations, not restrictions on the conclusion requested. The remaining statement is still the single Lemma RB of §4. Existence and the \(n\ge p\) case retain the conditional carrier-coverage implication recorded in §8; no all-consumer coverage has been inferred from PDA or from the name of a consumer.
+
+## Result
+
+**Open lemma** — Under exactly the hypotheses of CA-I `4.12:prop-reblocking-outside`, every actual outside consumer pair \((p,X'')\), with \(\mathfrak B=\mathfrak B_E(p,X'')\) and \(D=M_{\mathfrak B}\bar U\), admits the account's regular constrained minimiser at \(\varepsilon_1=2\alpha_k\ell_p^2\), and that minimiser satisfies both curvature/current cases of (20) on \(X''^{\sim2}\), with \(K_b=\frac\pi3(d-1)c_Qc_d(1+3L^2)204M\), uniformly in depth, domain and the actual boundary tower, in the account's order of constants.
+
+Three new attacks leave this precise statement open. Attack 7 proves the exact induced-datum identity and common-row agreement, but does not identify the prescribed datum with that induced datum or admit a uniform path between them. Attack 8 proves the constraint-response formula, but P4's fluctuation operators have not been identified with its actual lift and Lagrange Hessian on every consumer. Attack 9 constructs a real cube extension and proves that a summed response would retain the required scale power, but does not admit the required comparison path or cover every changed boundary row and readout. None of these failures is a counterexample to re-blocking.
+
+The two earlier rounds, including the inside implication and real-factor corollary with their stated qualifications, are preserved. The new hand results are Corollary 10 and Lemmas 11–13, with all conditional premises displayed. No computation discharges a mathematical step, no independent check is claimed, and this research text grants no status or proof of T0.

@@ -315,7 +315,7 @@ steps above level $k_0$ with all couplings set equal to one, in the form stated 
 \end{lemma}
 ```
 
-**Proof of the finite decomposition on the source route.** Use `8.1:def-background-kernel` and the linear iteration in `1.5:def-block-average` (definition) to form the \(\mathcal G_i\) in the statement. For \(i<i_*\), \(Q^{(i+1)}B=Q(Q^{(i)}B)\) gives \(\mathcal G_{i+1}\subset\mathcal G_i\); at and after the last index the next sigma algebra is trivial. Let \(M_i=\mathbb E[F_B\mid\mathcal G_i]\). It is a vector of square-integrable centred random variables, \(M_0=F_B\), and \(M_{i_*+1}=0\). Thus
+**Proof of the finite decomposition on the source route.** Use `8.1:def-background-kernel` and the linear iteration in `1.5:def-block-average` (definition) to form the \(\mathcal G_i\) in the statement. For \(i<i_*\), \(Q^{(i+1)}B=Q(Q^{(i)}B)\) gives \(\mathcal G_{i+1}\subset\mathcal G_i\); at and after the last index the next sigma algebra is trivial. Let \(M_i=\mathbb E[F_B\mid\mathcal G_i]\); \(M_0=F_B\) because \(F_B\) is a function of \(B\), as F4 supplies. It is a vector of square-integrable centred random variables, \(M_0=F_B\), and \(M_{i_*+1}=0\). Thus
 \[
 F_B=\sum_{i=0}^{i_*}(M_i-M_{i+1}),\qquad F_{B,i}=0\quad(i>i_*).
 \]
@@ -544,7 +544,7 @@ The class lower mass bounds give
 \(\rho^{-8}\mathfrak n_K(f_1)\mathfrak n_K(f_2)\ge\vartheta^2\|f_1\|_\infty\|f_2\|_\infty\),
 so the second-line lower bound follows with no additional mesh condition.
 
-**(correction) C1 — restore the omitted condition on the mass upper bound.** At CA-II 70138–70142 the proof says the witness definition gives \(\mathfrak n(f)\le10\rho^4\|f\|_\infty\) without qualification. The cited definition at 68760–68762 asserts it **only when \(\eta\le\rho/6\)**, and its proof at 68804–68815 uses that condition explicitly. Thus this citation as an unconditional step is incorrect. The smallest repair on this route is to require \(\eta\le\rho/6\) for the **second-line upper bound in (e)** (or explicitly supply the two mass upper bounds). Under that condition, F7 gives
+**(correction) C1 — restore the omitted condition on the mass upper bound.** At CA-II 70138–70142 the proof says the witness definition gives \(\mathfrak n(f)\le10\rho^4\|f\|_\infty\) without qualification. The cited definition at 68762–68763 asserts it **only when \(\eta\le\rho/6\)**, and its proof at 68808–68818 uses that condition explicitly. The gap is real: with \(\rho=\eta/2\) a tent function on one bare site is a valid class member and pair with mass \(16\rho^4>10\rho^4\), and the printed route then gives only \(256C_{\mathcal K}\). It costs nothing downstream: the witness admission items (g) and (h) already force \(\eta\le\rho/6\). Thus this citation as an unconditional step is incorrect. The smallest repair on this route is to require \(\eta\le\rho/6\) for the **second-line upper bound in (e)** (or explicitly supply the two mass upper bounds). Under that condition, F7 gives
 \[
 \rho^{-8}\mathfrak n_K(f_1)\mathfrak n_K(f_2)
 \le100\|f_1\|_\infty\|f_2\|_\infty,
@@ -588,3 +588,10 @@ This is a **port of the source proofs and conditional implications**, with one c
 **Recovery checkpoint:** the requested port is complete with these named antecedents and C1. The remaining proof obligations are the actual Balaban/minimiser/operator and continuum identifications just listed, and an independent reading of this port. The unqualified finite-cutoff sup-norm upper conclusion outside C1's domain has not been established by the printed route. Running normalisation, CA-II 70501–70584, was not ported; it remains downstream of the correlation theorem. P1 was not redone. No unrelated route was attempted, no numerical or computer-assisted proof was used, and no scientific status was granted.
 
 Credit for the statements and proof routes belongs to **Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text**, and to **Tadeusz Balaban** for the published inputs explicitly attributed above. This port was written by Codex and **is not yet checked by another model**.
+
+## Change log (check, 2026-11-05)
+
+Ported by Codex. Checked line by line by a fresh Claude session ([p3-free-gate](../../gates/p3-free-gate.md)): first failing step none; the five statement blocks are byte-identical to the source; F1–F11 hold; C1 is correct and needed. Applied by the lead (Claude): C1's line citations corrected and its counterexample and downstream cost recorded; the tower lemma cites F4 for \(M_0=F_B\).
+
+Status: **checked port.** lem-gaussian-squares, lem-free-curvature-covariance, lem-kernel-positivity faithful; lem-background-tower faithful under H-TOWER; lem-kernel-bounds with repair C1, (a) assumed through H1-MIN, (d) and the (e) lower bounds on H3-CONT.
+

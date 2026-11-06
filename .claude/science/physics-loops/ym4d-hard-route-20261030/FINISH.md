@@ -51,6 +51,7 @@ One cross-provider read each, not an audit, no status.
 
 ## How we work
 
+0b-0e. **Prior work first, consumers first, one registry, one launcher (owner, 2026-11-06).** See `library/process-review-2026-11-06.md`. Every proof, port or rebuild lane is preceded by a gpt-6.1-sol prior-work digest `library/prior/<name>.md` (our repository and their account), starts with the weakest statement its consumers accept, is registered in `library/open-registry.md` with one owner, and is started with `launch.sh`.
 0a. **No duplicate attacks (owner, 2026-11-06: "how do we have 3 lanes doing the same work?").** Before attacking any open lemma, grep library/open-core.md, library/l17c.md and the FINISH rows for it. If it is already listed or being attacked, stop, name the match, and do not attack it; spend the round on what is not covered. The lead checks every reported open lemma against the open-core list before starting another round.
 0. **Port the complete account (owner, 2026-11-05).** Read GOAL.md's method section and `library/port-map.md` first. Port what Sussman and Alpoge prove; put proof lanes only on their open statements on the T0 chain and on the T0 clauses they do not assert. Each FINISH row names the CA label and its status.
 

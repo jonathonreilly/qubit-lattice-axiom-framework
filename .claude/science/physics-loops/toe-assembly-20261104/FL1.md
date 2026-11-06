@@ -4,6 +4,13 @@
 
 **FINISH: FROZEN 2026-11-06 after pass 3 (FL1_REFEREE.md); the referee's edits are applied.** Frozen means: the proved results below are not reopened; open statements are worked in their own files and enter by a dated amendment. Both `L5-U` and `L5-O` remain live. The calculations below concern their stated base ticks, or explicitly supplied symmetry lifts. They do not construct a chiral phase.
 
+**Amendment 1, 2026-11-06 (prior work in the repository; digest `prior/FL1.md`).** No proved result of this file changes. FL1 was drafted before the prior-work gate (SCIENCE_WORKFLOW rule 9, PR #10138). The digest (Codex `gpt-6.1-sol`, read-only) records:
+- Duplicates, credited here: Theorem 5's conditional congruence and sign loophole and Theorem 8's U taste-charge core are #10022 and #10016 in PR #10129 (`docs/FAMILIES_FLAVOUR_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md`); Theorem 7's free spectrum and count are in `LW1.md`, `LW1_5.md` and `MT1.md`.
+- Theorems 1–2, 4 and 6 are new in the searched material; Theorems 3, 5, 8–9 and repaired FL1-i extend earlier statements.
+- Contradicted: nothing; the referee narrowed the draft's FL1-i claim.
+- Inputs that the open statements should use: `MT1.md`, for the node, spin–taste split, count and chirality basis; `docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`, for translation-character separation and the cycle; `docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`, for realization premises and the separate labeling boundary.
+- Open statements are unchanged.
+
 **Proved, conditional on the named inputs:** every order-three element of the cell group has an inverter; a turn and an inverter pair internal charges 1 and 2 under IR-P and the stated lift algebra. The free walk has two Weyl tastes of each handedness per complex flavour at zero mass and none at positive mass. Its two tastes in each handedness have turn charges 1 and 2. The geometric three-element sets below exist. The uniform-charge version of #10022's congruence follows from V0. Abstract light-content data exist for every positive family count with zero turn charge.
 
 **GAP:** Pass 1 does not prove that every admissible added update preserves its particular lifts; its sign-lift definition also needs correction for the O free walk. It does not prove that arbitrary interacting gaps retain only free taste subspaces, that all anomalies vanish, or that the proposed carriers cannot fix the interacting count. Its blanket claims about light links, all point groups, and reconciliation with slab models exceed the proofs. Sections 2–6 give the exact failures and narrower results.

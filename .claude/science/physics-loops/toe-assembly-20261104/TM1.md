@@ -2,6 +2,13 @@
 
 **FINISH: FROZEN 2026-11-05 after pass 3 (TM1_REFEREE.md); the referee's edits are applied.** Frozen means: the proved results below are not reopened; open statements are worked in their own files and enter by a dated amendment.
 
+**Amendment 1, 2026-11-06 (prior work in the repository; digest `prior/TM1.md`).** No proved result of this file changes. TM1 was drafted before the prior-work gate (SCIENCE_WORKFLOW rule 9, PR #10138). The digest (Codex `gpt-6.1-sol`, read-only) records:
+- Duplicates, credited here: Theorem 1's deterministic formation and copy-neighbour content repeat E3/B9 in `LW1.md`; Theorem 6's free-sea nonformation repeats B8a in `LW1.md`, and its dark/trace conclusions repeat conditional record corollaries in `VC1_5.md`.
+- Theorems 2–5, 12–13, 16 and Corollary 17 give new statements; R2, Theorem 1, Lemmas 7–10, Theorem 11 and Lemma 15 extend earlier work.
+- Contradicted: nothing; R1 corrects the draft's unrestricted saturation claim.
+- Inputs that the open statements should use: `LW1U_SEA.md`, for frozen free-sea histories and the segment exception; `docs/PAST_HYPOTHESIS_EXISTENCE_REDUCTION_APPEND_ONLY_WELL_FOUNDEDNESS_BOUNDED_THEOREM_NOTE_2026-06-11.md` and `docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md`, for non-emptiness and pointer formation; `docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md`, for capacity balance; `docs/TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md` and `docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`, for the time-axis bridge and kinetic ratio.
+- Open statements are unchanged.
+
 Under PS-3c, PS-4, the joint Born identification and the definitions below, the formation set is deterministic. A stationary, site-transitively symmetric state forms records everywhere at tick 1 or nowhere. The proofs below are conditional on the stated laws, observables and imported results. They do not select the physical vacuum. The examples show partial and later formation when the relevant hypotheses are dropped.
 
 **GAP.** PS-3 does not select a transport for every non-factor state. This is not load-bearing for the statements here; see Definition 7 and Lemma R2. The draft’s Corollary 2.9 already states full occupancy as its reading of saturation; the overstatement was its claim of a counterexample under “any reading”. Proposition R1 makes the distinction exact.

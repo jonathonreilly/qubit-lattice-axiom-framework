@@ -4,6 +4,13 @@
 
 **FINISH: FROZEN 2026-11-05 after pass 3 (GA2_Y2_REFEREE.md); the referee's edits are applied.** Frozen means: the proved results below are not reopened; open statements are worked in their own files and enter by a dated amendment.
 
+**Amendment 1, 2026-11-06 (prior work in the repository; digest `prior/GA2_Y2.md`).** No proved result of this file changes. GA2_Y2 was drafted before the prior-work gate (SCIENCE_WORKFLOW rule 9, PR #10138). The digest (Codex `gpt-6.1-sol`, read-only) records:
+- Duplicates, credited here: none outside this part's own pass-1 drafts (`GA2_Y2_DRAFT.md`, `Y2W_DRAFT.md`, `Y2WL_DRAFT.md`), which the frozen text distils.
+- Theorems 2.1–2.2 extend the finite-unitary obstruction, and the referee extends Theorem 3.1 with a plaquette bound.
+- Contradicted: nothing; the unqualified Y2-0 draft claim was corrected.
+- Inputs that the open statements should use: `docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md` and `docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md`, for regulator comparisons; `GA1_5.md`, for magnetic symbols; `ZM1_OBS.md`, for the observable interface; `VC1_5.md`, for the vacuum obligation; `GA2_Y2_REFEREE.md`, for the plaquette bound, and branch claude/ym4d-hard-route (`.claude/science/physics-loops/ym4d-hard-route-20261030/parts/upper-chain.md`), for its bare-scale Wilson counterpart.
+- Open statements are unchanged.
+
 **Proved here, conditional on the stated finite-register algebras.** The spectral obstruction to an invertible covariant link, its finite-image converse, the rishon identities and rank bounds, the flux and coherence bounds, and the cube-product results below. These are mathematical statements about the specified models. They do not establish a continuum theory. The proofs are author checks, not independent review.
 
 **GAP.** The pass-1 claim that finite-list SC implies GA2 is unsupported: moment agreement for finitely many observables at one scale does not control the other observables, scales, or errors. Pass 1 states Corollary Y2-0 without the identification its proof assumes, and calls `TOE_ASSEMBLY.md`'s sentence 'That is T0's theory up to bridges Y1-Y3' false. The proof covers only identifications that carry the Wilson link to an operator covariant under the law's bounded site generators (`GA2_Y2_REFEREE.md` R4). Pass 1 itself leaves universality descriptions open. The cube results require the explicitly defined boundary loops and ordering readings; they do not select ZM1's block map. Further gaps and corrections appear at their points of use.

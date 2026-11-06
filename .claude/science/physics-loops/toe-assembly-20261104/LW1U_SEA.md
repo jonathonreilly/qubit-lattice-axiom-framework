@@ -2,6 +2,13 @@
 
 **FINISH: FROZEN 2026-11-05 after pass 3 (LW1U_SEA_REFEREE.md); the referee's edits are applied.** Frozen means: the proved results below are not reopened; open statements are worked in their own files and enter by a dated amendment.
 
+**Amendment 1, 2026-11-06 (prior work in the repository; digest `prior/LW1U_SEA.md`).** No proved result of this file changes. LW1U_SEA was drafted before the prior-work gate (SCIENCE_WORKFLOW rule 9, PR #10138). The digest (Codex `gpt-6.1-sol`, read-only) records:
+- Duplicates, credited here: Theorem 3's nonzero-cosine clause repeats Lemma 3.2, and Theorem 11's product optimizer repeats Theorem 3.4, in `LW1U_DRAFT.md`.
+- Theorems 5, 7 and 10 are new in the searched work; Theorems 1–2, 4, 6, 8–9 and 12–13 extend earlier results.
+- Contradicted: nothing; Theorem 7 identifies a support exception to older blanket identity wording.
+- Inputs that the open statements should use: PR #10127 (`docs/VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md`) #9876 and #10018, for the freezing mechanism and copy-mass correction; `docs/RECORD_STATISTICS_OF_THE_HALF_FILLED_SEA_ARE_DETERMINANTAL_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md`, for the determinant toolkit.
+- Open statements are unchanged.
+
 Under the premises of `LW1.md`, the free sea's Born law is unchanged at every half-tick. The sea's transport is uniquely diagonal at the even half-tick throughout `0 < μ < 2ε < π`, and at the odd half-tick off `Σπ = {2ε + μ = π, 0 < μ < π/2}`. On `Σπ` every admissible transport has positive cost; uniqueness remains open. The open statements are **LW1-U_hop**, **LW1-U_hop, five-mode form**, and **LW1-U_f**. No counterexample to LW1-U_sea is given. **GAP:** pass 1's claim that its finer conditional-independence test proves that a particular pair of cubes is conditionally dependent is stronger than its proof: the proof excludes independence together with the local-law condition (each cube's conditional law depends only on its own count pair), not conditional independence alone. The corrected statement is Theorem 9 below. Other inherited results remain conditional on their cited premises.
 
 **Provenance.** Pass 2 distiller: Codex `gpt-6.1-terra`, reasoning effort high (set by the lead from the run log; not visible to the distiller), codex-cli 0.165.0, session `01a1aea0-1f22-78e2-9abb-d014edf9e978`. Editing session: Codex `gpt-6.1-terra`, effort high, codex-cli 0.165.0; session id not visible.

@@ -93,3 +93,11 @@ The question put to the owner: on the cube law of part LW1, frames on cells of o
 - **The named step.** `B5B_DRAFT.md` on branch `claude/toe-assembly` (draft PR #10139; pass 1, the lead checked both proofs line by line): Theorems B5b and B5b-T. A local frame on an even cell of the cube law acts on the cell's modes by site phases. This holds whether each gate or only the whole tick must be unchanged, for register changes split at the cell, and it includes many-body frames.
 - **Check.** Tests 1-3 pass: the text names no group or target, it is closed, and it does not put in the 16 (#10027: site-bilinear `Spin(10)` on five-mode sites gives "vector class, never the 16"). Test 4 passes conditionally: the constant 5 comes from #10014 under its conditions (a)-(c), and #10014 itself calls condition (b), the Weyl-species reading, "an inserted identification, borderline".
 - **What it changes.** The text bends the Qubit axiom inside this working set only. The minimal axioms are unchanged. The law on five-mode sites is a new open item (LW1-5) of the TOE assembly.
+
+### Owner decisions without a working-set change (2026-11-05 and 2026-11-06)
+
+These decisions direct work on branch `claude/toe-assembly` (draft PR #10139). None adds text to this working set. They are recorded in `TOE_ASSEMBLY.md` sections 3.5 and 3.6.
+
+- **LW1-5-RQ (2026-11-05): keep both five-mode laws live.** `L5-O` (Majorana hop, `so(20)` quantum links, `Spin(10)` exact) and `L5-U` (number-conserving hop, rishon links, `U(5)` exact) are both developed until one fails at a named step.
+- **R-CS (2026-11-06): a working candidate, not adopted.** On both laws fermion parity is a product of local centre elements, so fermions are not local gauge-invariant excitations and need a charged-sector prescription. The Fredenhagen–Marcu straight-string limit, with a relative parity as the odd label over parity-sharp backgrounds, is the named working candidate for lanes (frozen part `RCS1.md`). Adoption waits for its open statements.
+- **The zoom's observable class (2026-11-06): options first.** A lane builds and checks several observable classes for the block map; the owner chooses after that.

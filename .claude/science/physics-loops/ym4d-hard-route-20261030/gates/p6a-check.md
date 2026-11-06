@@ -42,3 +42,19 @@ Port annotations:
 - Input table (port lines 735-743): loci checked. B1 = 5.6:prop-polydisc-holomorphy (46131-46165) is "Proof outstanding" at 46167, as the port says, and (H_o) is a hypothesis of the lemma, not a consequence of anything proved. (pi1)-(pi3) are hypotheses by the source's own words at 44846-44847 ("They are not proved here and enter as hypotheses wherever they are used").
 
 One cosmetic point, not a failing step: 5.6:def-linear-sizes defines a "tree graph" as any finite connected subgraph, not an acyclic one, and the proof of 5.6:lem-tree-cells says the depth-first walk crosses "each bond of T ... once in each direction". For a T with a cycle that is false, but walking a spanning tree gives at most 2|T| steps and the same bound. The consequence (the only use, in (d)) takes an optimal T, which is acyclic. Nothing changes.
+
+## B4a: 5.3:lem-driven-flow (port lines 643-678, 2534-2643)
+
+Kind: check of their proof. Verdict: **faithful; proved as an implication from its displayed hypotheses.** First failing step: none.
+
+What I redid by hand (CA-II 26233-26324):
+
+- omega_k >= 0 and v_k >= 0: the identity history is admissible, so the adaptive hypothesis gives a driver bounded by v_k on a nonempty disc. Hence d_k >= 0, which the last step needs.
+- Induction P(k). The point xi = (zeta_j(zeta))_{j<=k} has |xi_j| <= (4/3)|zeta| < (4/3) rho <= (1/2) d_*(K-1) <= (1/2) d_j, from (8/3) rho <= d_*(K-1). So xi lies in the closed half polydisc, the composite with f_{k+1} is holomorphic, and zeta_{k+1} is defined on the same disc D(0, rho).
+- f-increment: the segment from 0 to xi lies in the convex half polydisc; |f(xi) - f(0)| <= max_j |xi_j| times sup of sum_j |d_j f|. 5.2:lem-polydisc-gradient (CA-II 3023-3087, reread: rescale to the unit polydisc, recentre each coordinate by a Moebius map with phi'(0) = 1 - |a_j|^2 >= 3/4, rotate the phases, Schwarz for one variable) gives sum_j d_j |d_j f| <= (4/3) omega. Dividing by d_*(k) <= d_j gives (4/3) omega_k / d_*(k). Times (4/3)|zeta| this is (16/9)(omega_k/d_*(k))|zeta|, the printed coefficient. Summing per-coordinate Cauchy bounds instead would give a factor k+1; the source correctly avoids it.
+- Driving increment: 5.2:lem-disc-bounds (a) (CA-II 2974-3021; removable singularity of (q(z) - q(0))/z, maximum principle on |z| = r < rho, then r -> rho) gives (2 v_k / rho)|zeta|. The radius is rho at every step.
+- Summation: |zeta_{k+1} - zeta| <= (sum_{i<=k} d_i)|zeta| <= (1/3)|zeta|, using d_i >= 0. This closes P(k+1).
+
+Port annotations: D-F1 (port lines 2636-2641) is a correct summary of the source's gradient proof, and its remark that a coordinate-wise sum would bring a dimension factor is right. D-F2 (port line 2643) is correct, including the strictness of the half-polydisc inclusion when (8/3) rho = d_*(K-1). The inputs line (port line 2536) names the two 5.2 lemmas at the right loci; both are unqualified CA statements with full proofs, which I reread.
+
+Cosmetic, no proof effect: the B4a header (port line 645) repeats the B2 sentence "For B2, the assembly nevertheless counts the weight machinery as incomplete ...". It does not apply to the driven flow lemma, which has no weight machinery and no open input of its own. The lemma is a closed elementary implication; what stays open is the supply of its adaptive drivers q_{k+1} at the consumer, as the port says.

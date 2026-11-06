@@ -1,6 +1,6 @@
 # Unmarked coupling increment: CA-I Lemma 4.2:lem-unmarked
 
-Provenance: Codex, 2026-11-05, checkout `118aee86ba0801fe88124be1fac551101d2d7467`. Research text, not an audit; grants no status. Hand proof, retaining the account's named analytic inputs; not independently reviewed. No computer-assisted proof steps.
+Provenance: Codex, 2026-11-05, checkout `118aee86ba0801fe88124be1fac551101d2d7467`. Research text, not an audit; grants no status. Hand proof, retaining the account's named analytic inputs. A fresh Claude Opus 5.5 session on the Mini checked the note at `a999a972a` line by line: first failing step none, ADVANCE with citation repairs F1–F3. Codex applied those repairs on 2026-11-06 from checkout `971586006`; see the change log below. No computer-assisted proof steps.
 
 Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, for the outline and complete account at `31a47c543775`; Tadeusz Balaban for the renormalisation construction and estimates cited there.
 
@@ -196,7 +196,12 @@ extraction. Apply the cited estimate on an exhausting free-boundary
 domain containing the source and all local reads. For a fixed mesh,
 the value, first-difference and Laplacian members pass through
 their finite stencils. For \(P_1H_l\), use its absolutely convergent
-walk/kernel representation: first truncate the read and walk
+walk/kernel representation, supplied by CMP 99b Theorems 3.10 and
+3.12. These supply the domain-uniform exponential kernels of
+\(P_1(\square_0)\) and \(P_1\), through \(R=1-P\) of
+CMP 99b (3.25). This is the same inherited input cited at
+CA-I 4100–4111, including the qualification on (3.132) above.
+First truncate the read and walk
 lengths, take the common-term limit, and then remove the truncation
 under the exponential majorant of the cited operator estimates.
 The bounds for these four members have the same constants before
@@ -403,21 +408,32 @@ Take the common-lift limit of Definition 4.2 for each fixed pair
 \(x,y\), before taking its second moment. Absolute convergence on
 the original side is supplied by hypothesis 3 and the existence result already built
 into that definition; on the unpointed side it follows below.
-For the auxiliary pointing the same estimates apply on the torus.
+For the auxiliary pointing the same estimates apply on the torus,
+using the fixed-\(l\) response and analyticity bounds of
+CA-I 58780–58898; their constants may depend on \(l\).
 For a wrapping domain, (g3)
 gives \(d_l(X)>\varsigma/(4M)-2\). Splitting off half of the
 polymer decay and using (17), the sum of wrapping contributions
-at a fixed pair is at most an early constant times
+at a fixed pair is at most a constant free of \(\varsigma\),
+which may depend on \(l\), times
 \(S\varsigma^4e^{-\frac12\kappa(\varsigma/(4M)-2)}\), which
 tends to zero. The factor \(\varsigma^4\) counts the unit-lattice
-base points. The non-wrapping terms have the common lifts.
+base points. The non-wrapping terms have the common lifts by the
+unpointed volume-consistency clause at CA-I 60641–60657.
+The conditional propagation is `4.38:cor-volume-families`,
+CA-I 60672–60718; its unpointed series is CMP 116 (2.13),
+identified at CA-I 60709. Its stated hypotheses remain inputs.
 Thus the two whole-lattice kernels agree at each
 pair, and the second-moment bound below applies to that common kernel.
 The fixed-\(l\) convergence proof suffices for this identification;
 we do not use its constant for the uniform estimate.
 
-This also follows from the original pointing identity CMP 119
-(3.38)–(3.42), pp. 274–275. In particular we have not assumed that
+CA-I 60660 explicitly states that the pointed terms sum over
+\(z\in X\) to the unpointed term. At fixed \(l\), this identity
+and the absolute convergence just cited also give the whole-lattice
+identity by Fubini. CMP 119 (3.38)–(3.42), pp. 274–275, concerns
+totals before localisation; it is not a termwise pointing identity.
+In particular we have not assumed that
 the pointed tensor itself is invariant under a change of pointing;
 only its sum over the base point, and hence \(\mathcal B_l\), is.
 
@@ -582,3 +598,20 @@ argument at (*). The unpointed form of (2.41) is sufficient by
 (15) and the coefficient identity; no unproved smallness of an
 arbitrary pointing is required. This proves the stated extraction
 implication and grants no further scientific status.
+
+## Change log — 2026-11-06
+
+Citation repairs only, applied by Codex from `971586006`.
+
+* F1, [um-gate.md](../gates/um-gate.md), line 47: added the unpointed
+  volume-consistency and propagation citations, CA-I 60641–60718.
+  The constant used only for fixed-level torus convergence is free
+  of the torus size; it may depend on \(l\). It does not enter (23)–(25).
+* F2, the same check, line 49: supplied CMP 99b Theorems 3.10 and 3.12
+  for the exponential kernels in the \(P_1\) free-boundary passage.
+* F3, the same check, line 51: used CA-I 60660 for termwise pointing
+  and distinguished it from CMP 119 (3.38)–(3.42), which concerns totals.
+* The UM section of [bundle-value.md](../gates/bundle-value.md), line 103,
+  already records the fixed-level qualification. That file was left
+  unchanged under this task's three-file write restriction.
+  No proof or hypothesis was added; the optional F4 shortening was not applied.

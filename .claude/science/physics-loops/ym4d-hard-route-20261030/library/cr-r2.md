@@ -65,7 +65,7 @@ Notation of `cr-claude.md` §2: E is an outside consumer, X'' a read domain, �
 
 **Premises on the consumer and the tower.** These are properties of Balaban's constructions as the account quotes them. They are not proved here.
 
-- **(G-c)** For every level i: W_i(c_E) ≥ Mℓ_i, and (c_E)_≥i coincides on X'' with a union of big blocks of level i. Source: CA-I 43454-43458 ("Each region of constant intermediate level is at least one layer of cubes of side Mℓ wide ... for the thin shells, and for the shells Γ''_j and the old collars, this width is part of their construction in [CMP 122a, §1]"); CA-I 37559-37560 (thin shells are one layer of M-cubes of their level); CMP 119 p. 256 (the domains Ω_j are unions of MR_j-cubes, with boundaries at least 2MR_j apart); CMP 102 p. 279 (M is a multiple of R_1M_1).
+- **(G-c)** For every level i: W_i(c_E) ≥ Mℓ_i, and (c_E)_≥i coincides on X'' with a union of big blocks of level i. Source: CA-I 43454-43458 ("Each region of constant intermediate level is at least one layer of cubes of side Mℓ wide ... for the thin shells, and for the shells Γ''_j and the old collars, this width is part of their construction in [CMP 122a, §1]"); CA-I 37559-37560 (thin shells are one layer of M-cubes of their level); CMP 119 p. 256 (the domains Ω_j are unions of MR_j-cubes, with boundaries at least 2MR_j apart); CMP 102 p. 279 (M is a multiple of R_1M_1); CA-I 55632-55636, clause (P1) of a later section (the members of the label inside Z at a level i "are unions of level-i M-cubes").
 - **(G-t)** The boundary tower t_(X'') is Balaban's minimal-determining-set tower (CMP 119 p. 256): (t)_≥j is a union of big blocks of level j, and W_j(t) ≥ LM_1ℓ_j. CA-I 43062-43064 names these towers as one of the three constructions that item (iii) abstracts.
 
 The width (G-c) is not restricted to boxes in its source. The account restricts its separation statement (j) to boxes (CA-I 43442), but its justification of the widths (CA-I 43454-43458) cites the global construction.
@@ -84,7 +84,7 @@ Admissibility is CMP 96 (2.1)-(2.2), p. 224, in the form of CMP 102 (1), p. 277:
 
 - **(R-form), a reading.** 𝔅_E(q, X'') is a set of the form B_q(X'') ∪ {Γ_i}_(i<q) with Γ_i the consumer's level-i region. CA-I 43060-43064 says item (iii) abstracts exactly the sets B_p(X) ∪ {Γ_i}_(i<p) of CMP 122a, the towers of CMP 119 and the domains of CMP 109. The consumer level min(p, c_E, t) is the shell level c_E where c_E < p and the tower level min(p, t) elsewhere.
 
-*Proof.* Admissibility: Ω_j^(q) is a union of big blocks of level j, and dist((Ω_j^(q))^c, Ω_(j+1)^(q)) = W_j(b_q) ≥ min(M, LM_1)ℓ_j by Corollary 3.2. This exceeds w_adm ℓ_j by the floor on M. For the tower part, LM_1 > w_adm is Balaban's own use of CMP 102 on the sets B_j(Ω) of CMP 119 (CMP 119 p. 256, "we will use all the results of [15]"). The base is real and lies in the regularity class: U^(q) is the minimiser given by T1(i) (Lemma 6′ and Theorem 8′(a) below give its data condition). The constants come from the statement of R. □
+*Proof.* Admissibility: Ω_j^(q) is a union of big blocks of level j, and dist((Ω_j^(q))^c, Ω_(j+1)^(q)) = W_j(b_q) ≥ min(M, LM_1)ℓ_j by Corollary 3.2. This exceeds w_adm ℓ_j by the floor on M. For the tower part, LM_1 > w_adm is Balaban's own use of CMP 102 on the sets B_j(Ω) of CMP 119 (CMP 119 p. 256, "we will use all the results of [15]"). The base is real and lies in the regularity class: U^(q) is the minimiser given by T1(i); its data D_0^(q) = M_(𝔅^(q))(Ū) satisfy T1's condition with ε_1 = 2α_kℓ_q^2 by (e) and SRC, as in the inside argument for (a) (CA-I 44236-44244) read at slot q. The constants come from the statement of R. □
 
 **Radius margin (gate §2, §5 item 3).** Fix ε̄_1 with ε̄_1 ≤ a_1 and B_3ε̄_1 ≤ ε_0, before the couplings. Read the polydisc of CMP 102 (172) at ε_1^(102) = ε̄_1: its logarithms range over |B'| < r_P := 2C_1ε̄_1 (CA-I 16567-16572). Require 2α_k ≤ ε̄_1. Then every base U^(q), whose data satisfy T1's condition with 2α_kℓ_q^2 ≤ ε̄_1, lies in the one fixed class. Require C_RD C_F α_k ≤ r_P/2 = C_1ε̄_1, so every datum B of Lemma 5 lies in the closed half polydisc. The radius is not shrunk from step to step.
 
@@ -98,7 +98,7 @@ Admissibility is CMP 96 (2.1)-(2.2), p. 224, in the form of CMP 102 (1), p. 277:
 
 **Lemma 5.1 (interface rows have an anchored chain in the actual set).** Assume Corollary 3.2 for 𝔅^(q+1), with M_1 ≥ 2. Let ⟨Γ, γ⟩ be a row of 𝔅^(q+1) with Γ of level q+1 and γ of level q, sharing a face piece in {x_μ = c}, with γ on the +μ side (the −μ side is the same with −e_μ). Then there are ν ≠ μ and s ∈ {±1} with the following properties. Put Γ' := Γ + sℓ_(q+1)e_ν and γ_j := γ + jsℓ_qe_ν for 0 ≤ j ≤ L. Then Γ' is a level-(q+1) block of 𝔅^(q+1), each γ_j is a level-q block of 𝔅^(q+1), consecutive γ_j are adjacent, and γ_L is adjacent to Γ'.
 
-*Proof.* Put R := (b_(q+1))_≥(q+1), the union of the level-(q+1) blocks. By Corollary 3.2, R is a union of big blocks of level q+1. Let A be the big block that contains Γ, so A ⊂ R. Let Ĝ := Γ + ℓ_(q+1)e_μ. Ĝ contains the level-q block γ, so Ĝ ⊄ R. Ĝ lies in one big block A^+. Since R is a union of grid big blocks and A^+ ⊄ R, A^+ contains no site of R. Hence Ĝ ⊄ A, Γ lies on the +μ face of A, and A^+ = A + M_1ℓ_(q+1)e_μ. A has side M_1ℓ_(q+1) ≥ 2ℓ_(q+1) in the direction ν ≠ μ. So one of Γ ± ℓ_(q+1)e_ν lies in A; call it Γ', with sign s. Then Γ' ⊂ R is a level-(q+1) block. Γ' also lies on the +μ face of A, so Ĝ' := Γ' + ℓ_(q+1)e_μ ⊂ A^+ contains no site of R. The cubes γ_j lie in the first level-q layer of Ĝ ∪ Ĝ' along the face, and γ_L lies in Ĝ'. Each site of γ_j is within distance ℓ_q of Γ ∪ Γ' ⊂ R. By Corollary 3.2, W_q(b_(q+1)) ≥ min(M, LM_1)ℓ_q > ℓ_q. So these sites are not in (b_(q+1))_≤(q−1), which contains the complement of X''. They are not in R either. Hence they lie in X'' and have level exactly q. A level-q block is a level-q grid cube, so each γ_j is a block. The adjacencies hold because the cubes are grid neighbours across full faces or face pieces. □
+*Proof.* Put R := (b_(q+1))_≥(q+1), the union of the level-(q+1) blocks. By Corollary 3.2, R is a union of big blocks of level q+1. Let A be the big block that contains Γ, so A ⊂ R. Let Ĝ := Γ + ℓ_(q+1)e_μ. The level-q grid cube γ meets Γ's +μ face in a face piece, so it lies in the first level-q layer of Ĝ. Hence Ĝ contains a block of level q, and Ĝ ⊄ R. Ĝ lies in one big block A^+. Since R is a union of grid big blocks and A^+ ⊄ R, A^+ contains no site of R. Hence Ĝ ⊄ A, Γ lies on the +μ face of A, and A^+ = A + M_1ℓ_(q+1)e_μ. A has side M_1ℓ_(q+1) ≥ 2ℓ_(q+1) in the direction ν ≠ μ. So one of Γ ± ℓ_(q+1)e_ν lies in A; call it Γ', with sign s. Then Γ' ⊂ R is a level-(q+1) block. Γ' also lies on the +μ face of A, so Ĝ' := Γ' + ℓ_(q+1)e_μ ⊂ A^+ contains no site of R. The cubes γ_j lie in the first level-q layer of Ĝ ∪ Ĝ' along the face, and γ_L lies in Ĝ'. Each site of γ_j is within distance ℓ_q of Γ ∪ Γ' ⊂ R. By Corollary 3.2, W_q(b_(q+1)) ≥ min(M, LM_1)ℓ_q > ℓ_q. So these sites are not in (b_(q+1))_≤(q−1), which contains the complement of X''. They are not in R either. Hence they lie in X'' and have level exactly q. A level-q block is a level-q grid cube, so each γ_j is a block. The adjacencies hold because the cubes are grid neighbours across full faces or face pieces. □
 
 **Lemma 5.2 (replaces cr-claude Lemma 4(b); no ROW).** Assume the hypotheses of cr-claude Lemma 4(b) for a row c = ⟨z_Γ, z_γ⟩ of 𝔅^(q+1), and Lemma 5.1. Then |M_(𝔅^(q+1))(U)(c) − U(ρ_c)| ≤ C_b ℓ_(q+1)^2 F, with the same C_b = (π/3)d(2C_6 + 3c_Q).
 
@@ -152,7 +152,7 @@ Wording (gate §3): SRC is the sufficient source condition used in this proof. I
 | K4: c_E = 𝖻 | domains meeting Z''_k and Ω_k^old | 𝖻 is specified only on Z ∪ Ω_k^old | thin shells Γ''_m (one layer of M-cubes, CA-I 37559-37560) and shells Γ''_j |
 | K5 | read through K1-K4 | inherits | inherits |
 
-**Status of SRC: reduced to (S).** (S) holds for every outside class under one reading: a consumer's domain lies where the account specifies its level function, and in Y_4. This reading is not checked against CMP 122a/b, which are not in `~/ym4d-papers`. If an outside domain reached a point of healed level below k, SRC would fail there. The present proof would then not give (a) at ε_1 = 2α_kℓ_p^2.
+**Status of SRC: reduced to (S).** (S) holds for every outside class under one reading: a consumer's domain lies where the account specifies its level function, and in Y_4. This reading is not checked against CMP 122a/b, which are not in `~/ym4d-papers`. A fetch of CMP 122a from Project Euclid on 2026-11-06 stopped at a bot check, so it was not read. If an outside domain reached a point of healed level below k, SRC would fail there. The present proof would then not give (a) at ε_1 = 2α_kℓ_p^2.
 
 ## 8. The gate's other written repairs, applied
 
@@ -182,7 +182,7 @@ For J' = 0 use L^2 ≤ 5L^3. For J' = 1 use L^2 + L^4 ≤ 5L^4. For J' ≥ 2 the
 - (ii) Balaban's CMP 98 Proposition 6 in anchored form, P6, for rows of equal level;
 - (iii) the readings (EC) (§2), (R-form) (§4) and (BP) (§5);
 - (iv) for the consumer E and the read domain X'': (G-c), (G-t) (§3) and the scope (S) (§7);
-- (v) the floors (Φ0)-(Φ2), M > w_adm, (Φ_H′) and (Φ_K); a fixed ε̄_1 with ε̄_1 ≤ a_1 and B_3ε̄_1 ≤ ε_0; the ceilings (8.1′).
+- (v) M_1 ≥ 2; the floors (Φ0)-(Φ2), M > w_adm, (Φ_H′) and (Φ_K); a fixed ε̄_1 with ε̄_1 ≤ a_1 and B_3ε̄_1 ≤ ε_0; the ceilings (8.1′).
 
 Let E be a consumer with X' ∩ 𝒞 = ∅; no box is assumed. Let p be a slot level and X'' ⊂ X' a read domain. Then conclusions (a) and (b) of `4.12:prop-reblocking-inside` hold at (p, X''), with K_b = K_0M and K_0 = (π/3)(d−1)c_Qc_d(1+3L^2)·204. The constants are uniform in k, E, p, X'', its diameter, its number of blocks and its tower.
 
@@ -198,3 +198,27 @@ Let E be a consumer with X' ∩ 𝒞 = ∅; no box is assumed. Let p be a slot l
 4. N_* and the coupling ceiling: the account's (Γ_0)-(Γ_3) and (8.1′). The account's choice at CA-I 43618-43627 then applies.
 
 No constant is chosen backward. n_P = 2^d is fixed in step 1.
+
+## Result
+
+**Kind.** Proof of steps that the account leaves outstanding (CA-I 45085, "Proof outstanding"), as an implication from named premises. Proved by Claude, not yet checked by the other model. It is not a check of their proof and not a correction of their text. There is no counterexample to CR.
+
+**Verdicts on the gate's open items.**
+
+1. **n_P (gate BLOCK on Lemma 6): closed.** Under the reading (EC), every plaquette of 𝕃(𝔅) has at most 2^d rows (Lemma 2.2), uniformly; n_P = 16 for d = 4. (EC) is supported by Balaban's definitions (CMP 98 p. 18; CMP 102 p. 278: T1's source reads only four-factor elementary squares). By Lemma 2.1, the literal graph reading of "elementary closed circuit" contradicts the account's own input (e). Lemma 6′ replaces Lemma 6.
+2. **ROW: removed.** Lemma 5.2 proves the anchored interface bound in the actual set 𝔅^(q+1), with no auxiliary partition. It uses the chain of Lemma 5.1, which exists because R's admissibility makes the top region a union of big blocks. The shared rows of Lemma 5 use the account's own composition grant, clause COMP(=), with the reading (BP).
+3. **R: coverage proved from geometry.** Every ladder set 𝔅_E(q, X''), with its actual tower, is an admissible sequence for R (Proposition 4.1). This follows from the widths and the cube structure of the consumer's level regions and of the tower (G-c, G-t), via Lemma 3.1, and the reading (R-form). The radius is a fixed ε̄_1 with a closed half polydisc.
+4. **SEP: proved in R's own metric.** Lemma 6.1 bounds the weighted distance of CMP 96 (2.46) below by the widths of the intermediate consumer levels: d ≥ (m − n − 1)M − 1. It uses no box and no identification with CMP 122a (1.46), and the tower does not enter. The floor is (Φ_H′): M ≥ log(2L)/δ_H.
+5. **SRC: reduced to the scope (S)**, X'' ⊂ Y_4 ∩ (Z ∪ Ω_k^old) (Lemma 7.1). (S) holds for K2, K3 and K4 (and K5 through them) under one reading: a consumer's domain lies where the account specifies its level function, and inside Y_4 (§7). K1 has no below-slot pair.
+6. **The gate's other repairs** (sections 2-4: step-size sum at J' = 0, the current step at n = 0, the gauge sentence, the Corollary 9 ceiling, the explicit theorem, the order of constants) are applied in §8. The intermediate-level condition is not needed (§8 item 11).
+
+**What is proved.** Theorem 8′: for G = SU(2), conclusions (a) and (b) of the inside proposition hold at every outside pair (p, X''), with K_b = K_0M and constants uniform in depth, domain, diameter and tower. The premises are (i)-(v) of §9.
+
+**What stays open.**
+- The other model's line-by-line check, first of Lemmas 2.1, 2.2, 5.1, 5.2 and 6.1, then of Proposition 4.1 and Lemma 7.1.
+- Readings, each with its support quoted: (EC); (R-form); (BP); and, for (S), that outside domains lie where c_E is specified and inside Y_4.
+- Source properties of Balaban's constructions, as the account quotes them and not checked here against CMP 122a/b (not in `~/ym4d-papers`): (G-c), the widths and the cube structure of shells and old collars; (G-t), the CMP 119 tower, including LM_1 > w_adm.
+- Inputs not in this item: P6 for the account's averages and base points (gate §6); COMP, which is the account's grant.
+- Clause (c) (consumer radii) and the real-factor corollary for outside consumers: not attempted (gate §6, last row).
+
+**For the lead.** If the check passes, the K2 node of `library/t0-tree.md`, the CR row of `library/open-registry.md` and FINISH row 398 can record "CR proved as an implication; open: readings (EC), (R-form), (BP), (S); source properties (G-c), (G-t); P6; COMP". None of those files is edited here.

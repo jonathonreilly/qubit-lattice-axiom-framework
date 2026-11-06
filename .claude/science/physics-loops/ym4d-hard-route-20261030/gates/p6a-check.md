@@ -58,3 +58,34 @@ What I redid by hand (CA-II 26233-26324):
 Port annotations: D-F1 (port lines 2636-2641) is a correct summary of the source's gradient proof, and its remark that a coordinate-wise sum would bring a dimension factor is right. D-F2 (port line 2643) is correct, including the strictness of the half-polydisc inclusion when (8/3) rho = d_*(K-1). The inputs line (port line 2536) names the two 5.2 lemmas at the right loci; both are unqualified CA statements with full proofs, which I reread.
 
 Cosmetic, no proof effect: the B4a header (port line 645) repeats the B2 sentence "For B2, the assembly nevertheless counts the weight machinery as incomplete ...". It does not apply to the driven flow lemma, which has no weight machinery and no open input of its own. The lemma is a closed elementary implication; what stays open is the supply of its adaptive drivers q_{k+1} at the consumer, as the port says.
+
+## B2b: 5.5:lem-weight (port lines 172-457, 1193-2527)
+
+Kind: check of their proof, with its very many cited inputs kept as the port's named inputs W5-*. This section is written part by part.
+
+### (a1)-(a4) (CA-II 35543-35744)
+
+Proved as an implication from the W5 inputs; the arithmetic is right. What I redid:
+
+- (a1): the source-class condition at (k, square_0, B^+) with the arrest factor F <= 1 + 2 beta = 1.4 (beta = 1/5) and w^+ r_2(l^+) <= theta_2. All three are cited scaffold facts at CA-II 35553-35567, covered by the locus range of W5-local/W5-setting.
+- (a2): W minimises under the coarse data, so it minimises under its own finer B*_j data (finer constraints define a smaller set), and uniqueness modulo gauge (Balaban CMP 109 (3.39), CMP 102 Theorem 1) gives W' = W^g. Then n(g) <= 2, and the perturbation step gives 2.8 * 5/4 + 1/4 = 3.75 <= 4.
+- (a3): data bound 1.4 * 2 = 2.8; axial gauge 2 * K_ax M * 2.8 = 5.6; representation by CMP 102 Proposition 9; layer and BCH give 2(2 c. + 5.6 K_h K_ax M C_M^av) w_Q alpha_Q <= K_loc w_Q alpha_Q (11.2 <= 12); the four smallness spends are paid by K_loc A_w(gamma) <= c_h, since K_loc >= 12 C_M^av >= 24.
+- (a4): rim deviation 4 C_M^av w alpha~ (l_i/l_l)^2 <= 8 C_M^av w_Q alpha_Q t_p^2 L^{2(i-j)} <= c_1 a_Q t_p^2, using l(x) >= p; and |e_rim| <= |B^ax| + d|b-y||F| <= 4d(1+|b-y|) c_1 a_Q t_p^2. Correct.
+
+Three facts are used without a name or with a wrong pointer. None of them makes a step fail (findings F3-F5 below):
+
+- **w(x) >= 1** (CA-II 35621-35622, and silently in (a3) for 4 c. alpha_Q <= 4 c. w_Q alpha_Q). The proof cites Notation 5.5:not-weight-notation, but that notation gives only upper bounds on w (34103-34112). The lower bound must come from the definition of the weights, which the port keeps under W5-setting without naming this property.
+- **w alpha <= A_w(gamma)**. The uniqueness smallness "1.4 w(Delta) alpha~ <= 2.8 A_w(gamma)" (35649) needs w(Delta) alpha_{0,l(Delta)} <= A_w(gamma). Display (5.5:eq-box-regularity-3) needs w_Q alpha_Q <= (12/5.6) A_w(gamma). The account states w_Q alpha_Q <= 2 A_w(gamma) only elsewhere (CA-II 42829, 42855-42857, "from the statement on localisation constants of cubes of level at least p"). With the factor 2 both spends still close (11.2 <= 12, and 5.6 A_w <= K_loc A_w since K_loc >= 24). So nothing fails, but the input is not named in the port.
+- **a_flat <= 5 A_w(gamma)** (35599) is stated without a source.
+
+### (b) (CA-II 35748-36034)
+
+Proved as an implication from the W5 inputs (W5-cover carries the CMP 119 p.276 transfer, printed without proof there). What I redid:
+
+- Own-box geometry: sides of r_v are at most max{(2 nu+3) L^{-(nu-2)}, 1 + 5 L^{-(nu-2)}} <= 13/8 cubes of pi_{n-1} (decreasing in nu; 9/L and 1 + 5/L at nu = 3, L >= 8). So the box Q_v has at most 7 cubes a side, Q_v^(1) at most 9, and every point of Q_v^(1) lies within 6/L < 1 level-n unit of y, so w_{Q_v} <= w^v(y). Correct.
+- Majorants: with t_p = Lt and Theta >= 2 c_1 K_loc L^3 alpha_{0,n} w^v / a_n, the two displayed inequalities are exact, and they give |B^ax| <= L^{-1}|B^ax|_*, |F| <= |F|_*, |e_mu| <= |e_mu|_* (using c_1 >= 1) and, for a core, |e_rim| <= |e_rim|_*. For a short single the rim bound holds with D_X in place of D, but the rim is used only for cores, so nothing breaks.
+- Short single: |sigma' B^ax| < S* |B^ax|_* <= alpha_{3,j} on |sigma'| < S*, phi'(0) = 0, and 5.2:lem-disc-bounds (b) gives 2n S*^{-2}. Correct.
+- Rim (iii): kappa d + delta_0 M (nu-1-d)_+ >= kappa d/2 + mu_0 (nu - 1); D <= 5 M nu; D^{d+1} t^4 e^{-mu_0(nu-1)} <= t^{4+a} (5 M nu)^{d+1} L^{(a-5)(nu-1)}, bounded in nu. Correct.
+- Regime split (iv): a read core with S* <= 1 has C_M D t^2 z > 1/2; then t^2 > (10 C_M M nu z)^{-1}, and nu^3 z^2(1+z) t^{4+a} >= (10 C_M M)^{-2-a/2} nu^{1-a/2} z^{-a/2}(1+z). The complement gives S* >= 2. Correct, with one unstated assumption (F6 below).
+- Degree in Theta (v): z^2(1+z) <= Theta^3 rho^2(1+rho); S*^{-2} = Theta^2 x_v; min(1, a^2 u^2) <= a^2 min(1, u^2) for a >= 1 (the port's W5-C1 check of the three cases is right). Correct.
+- The stale label "(b')" at CA-II 36026: the lemma has no clause (b'). The port's W5-C1 reading (the remainder rows of (b)) is the only sensible one.

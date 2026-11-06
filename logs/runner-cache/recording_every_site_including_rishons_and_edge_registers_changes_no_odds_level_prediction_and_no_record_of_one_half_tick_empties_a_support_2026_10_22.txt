@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/recording_every_site_including_rishons_and_edge_registers_changes_no_odds_level_prediction_and_no_record_of_one_half_tick_empties_a_support_2026_10_22.py
+runner_sha256: 3f0fb7c00398a1baec93438ec2d813eb2080526ca98ec4f5d472784964f416ae
+input_fingerprint_sha256: f3159c5a229ed9bee1599b41ff39363a1a6e8c7c76707845f955f198afd1ddb2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.81
+status: ok
+----- stdout -----
+== A. U(1) quantum-link ring: records of every site under the actuality law
+[PASS] A1 [T+D] support theorem: the transport moves only along nonzero elements, so the actual configuration always lies in the odds' support; records of one half-tick copy it, so locking any set of them leaves every site at least one possibility (the actual value): 'no possibility' never arises  Gauss sector dim 7; samples in support True; empty supports 0/8000 (all sites, matter, rishons, random 5)
+[PASS] A2 [T+D] records never enter the transport: matter records are Born whether rishons are recorded or not, the joint pattern is Born, and every recorded pattern satisfies Gauss's law (readable once rishons are recorded)  max z matter 1.71, joint 2.54 (K=4000, T=10); Gauss violations among records 0/44000
+[PASS] A3 [D] contrast: if records conditioned the odds, recording rishons or even matter alone would make links definite between half-ticks and shift matter statistics off Born (the definite-links failure)  max |matter freq - Born|: all recorded 0.47, matter only 0.45; actuality law 1.71 sigma
+[PASS] A4 [T+D] constraint propagation: locking one rishon leaves its link partner one possibility; matter plus one rishon leaves the other rishon one (Gauss); matter records alone fix some rishons. Every forced value equals the actual value (support theorem), so it is a definite value, not a new record  partner forced 4000/4000; Gauss-forced 4000/4000; rishons forced by matter records 25896/32000, equal to actual 25896/25896
+[PASS] A5 [D] readout: values read as records plus forced values have the Born joint law of that union, the same law the rishon records themselves give; a forced value carries no extra or different information, so whether it counts as a record does not matter for readout  max z (forced-and-occupied frequency vs Born) 2.54
+[PASS] A6 [D] 'no possibility' appears only for locks that do not copy one configuration: latest records mixing half-ticks (some sites refreshed, the rest stale) read as current give empty supports; per-half-tick and on-change records (latest values current) never do. The clause is a consistency theorem of the law  empty supports: mixed-stale 6751/10000; on-change/per-half-tick 0/10000
+[PASS] A9 [T+D] candidate (i) fails its own justification: a single lock of a FREE matter site already leaves rishons one possibility through Gauss's law, so 'a lock fixes no other site' would exclude matter too, leaving nothing readable; the bound/free condition passes matter only because a Gauss cluster is not a mirror pair  one matter lock forces another (otherwise open) site in 1777/4000 samples
+[PASS] A7 [T+D] read as a formation rule ('a record that would leave a site no possibility cannot form'), the clause never blocks a record in any formation order, so 'forbidden' and 'allowed but inconsistent' readings agree: it is idle  blocked formations 0/12000
+[PASS] A10 [T+D] candidates (i) exclusion, (ii) every site, (iii) every site unless a support would empty: on the same actual histories the matter records are bit-identical and only the readable set differs; Born, Gauss (in the actual configuration) and every odds-level prediction tie, because no record conditions the odds  records per half-tick: (i) 4, (ii) 12, (iii) 12; matter record laws identical True
+[PASS] A8 [T+D] non-abelian rishons: colour-component occupations are not gauge invariant, but in a gauge-invariant state their Born record law is the same in every gauge-rotated basis, so recording them is as safe as recording matter colour components (control: a non-singlet state)  max law change under random SU(2): singlet 2.2e-16, control 0.58
+== B. photons with every link site recorded
+[PASS] B1 [T+D+E] emitter decay with every link site recorded each half-tick: the Wigner-Weisskopf rate, independent of the half-tick; conditioning records would Zeno-freeze it  Gamma=2g^2/J 0.180; fitted 0.189 (dt 0.05), 0.189 (dt 0.02); conditioned 0.0045, 0.0018; hydrogen 2p estimate: conditioned at the Planck half-tick, lifetime ~1.60 ns x 2pi/(t_P c/a0) = 3e+16 s (measured 1.60 ns)
+[PASS] B2 [T+D] single photon through a Mach-Zehnder of link sites, every site recorded each step: full fringes; conditioning records erase them (bare which-arm records, read only through pointers, as for matter)  P(D1) at phi=0, pi: 1.000, 0.000; V=1.000; conditioned V=0.005
+[PASS] B3 [T+D] anticorrelation: each actual configuration holds the one photon on one link site, so arm records never coincide (g2(0) = 0, measured single-photon g2 well below 1); a definite or classically mixed link gives g2 >= 1 (definite-links)  P(arm u recorded) 0.496; arm coincidences 0/24000; g2(0) = 0
+[PASS] B4 [T+D] repeated link-number records agree at every half-tick (the fewest-change transport keeps a stationary number), so link records count photons without demolition, while the field's coherence stays: phase decoherence, as in measured non-demolition counting, comes from a pointer coupled in the odds  repeat fraction 1.000; |<a>| before/after 0.805/0.805; with a dispersive probe 0.569
+== C. mediated entanglement with the mediator recorded each half-tick
+[PASS] C1 [T+D+E] a mediator register (edge for gravity, link for a Coulomb gate) recorded every half-tick: it stays indefinite mid-run, returns, and the masses end with the predicted entanglement; conditioning pins it and loses it  inner phase 0.791 rad, dphi 0.314, target C 0.1563; toy C 0.1563 (return 1.000000, mid-run P(n>0) 0.0475); conditioned C 0.0075
+supplied: link ring w=1, m=0.5, dt 0.35 (A); chain g=0.3, J=1; MZ layout; probe phase pi/2 (B); oscillator mediator, 200 half-ticks per period, d=14 (C); seed 20261022
+runtime 2.9 s
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

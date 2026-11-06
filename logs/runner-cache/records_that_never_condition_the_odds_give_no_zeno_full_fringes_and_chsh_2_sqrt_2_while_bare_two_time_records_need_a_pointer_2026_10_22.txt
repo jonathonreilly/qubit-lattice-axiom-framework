@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/records_that_never_condition_the_odds_give_no_zeno_full_fringes_and_chsh_2_sqrt_2_while_bare_two_time_records_need_a_pointer_2026_10_22.py
+runner_sha256: 499e15724f0a7bda32e5e5799ff9a5bb6f4b6e1ebed843d7595c03900fa87657
+input_fingerprint_sha256: 938cf8c29e9cf200733d824f2d2c869776042952b75ec961e3f605ad44a947c4
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 2.00
+status: ok
+----- stdout -----
+A. constant records: one fermion, two modes, hop th = pi/40 per half-tick, a record every half-tick
+[PASS] A1 THEOREM: records never condition the odds, so the record law is Born at every half-tick: full transfer, no Zeno freezing | P(R) at t=20: records 1.000000, sampled 1.000, Born 1.000; if records conditioned the odds 0.110
+[PASS] A2 the fewest-change transport moves each actual track once (monotone transfer); the odds keep the superposition | flips per track: mean 1.000, max 1; |psi| = (0.00e+00, 1.000)
+B. two-path interferometer from records (supplied splitters = quarter hops, arm phase phi = a link phase)
+[PASS] B1 fringes from the output records: visibility 1, P(D1) = cos^2(phi/2) up to the splitter phase | V = 1.000000; P(D1) over phi [0.0, 0.146, 0.5, 0.854, 1.0, 0.854, 0.5, 0.146]
+[PASS] B2 FINDING: every track carries a definite bare which-path record AND full fringes: path known to K = 1 with V = 1, V^2 + K^2 = 2 > 1 (measured complementarity bound 1) if the bare record were readable | P(path 0) 0.500; P(D1 | bare path record 0, 1) = 0.000, 0.000 at phi = 0
+[PASS] B3 a pointer that the update couples to the path removes fringes in the odds and the records: V = cos(alpha), V^2 + D^2 = 1 | a=1.57:V=0.000 a=1.05:V=0.500 a=0.52:V=0.866 a=0.00:V=1.000; full pointer agrees with path record 1.000000
+[PASS] B4 eraser: sorted by the rotated pointer record, fringes and anti-fringes return with V = 1 (single-time joint records are Born) | V = 1.000000, 1.000000; complementary
+C. CHSH: settings chosen by local coin records, outcomes = detector-mode records, A and B steps share half-ticks
+[PASS] C1 THEOREM (support): a register the half-tick acts on only as a control keeps its occupation, so the coin record at h1 IS the setting | P(coin record at h1 = coin record at h5) = 1.000000000000
+[PASS] C2 CHSH from records reaches the quantum value 2 sqrt 2 (exact chain and 40000 sampled tracks) | S exact odds -2.828427, record chain -2.828427, sampled -2.819
+[PASS] C3 THEOREM: single-time record marginals at A do not depend on B's setting (Born marginals of a product local step) | max |P(a|x,y=0) - P(a|x,y=1)| = 1.1e-16
+D. A's bare records at h4 (half rotated) and h5 (outcome) versus B's setting
+[PASS] D1 FINDING (event-level remote dependence): the joint law of A's own two bare records depends on B's distant setting | max TV over x between y = 0 and y = 1: 0.2183 (single-time marginals: 0, C3)
+[PASS] D2 generic: random settings give the same dependence (not a tuned case) | TV [0.163, 0.179, 0.167, 0.023, 0.017, 0.005]
+[PASS] D3 control: if A's step at h4 is whole and h5 idle, A has nothing to move at h5 and no dependence appears | TV 1.1e-16
+[PASS] D4 THEOREM: after a pointer copy at A the two-time records equal (pointer, outcome) at one half-tick: Born, quantum sequential, no dependence | TV 1.3e-16; |two-time law - Born(pointer, outcome)| 2.8e-17
+supplied: registers (one fermion per mode set), splitter and rotation angles, the controlled phase standing for a link-mediated gate, coin-controlled rotations, pointer couplings, the half-tick schedule. forced: the transport.
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

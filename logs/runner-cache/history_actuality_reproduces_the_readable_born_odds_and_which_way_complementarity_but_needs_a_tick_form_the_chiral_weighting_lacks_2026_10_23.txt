@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/history_actuality_reproduces_the_readable_born_odds_and_which_way_complementarity_but_needs_a_tick_form_the_chiral_weighting_lacks_2026_10_23.py
+runner_sha256: 5c06eaf46861789084a8256dd7bbf1505b817472cc5df34a56d47e07d0d0f57c
+input_fingerprint_sha256: dd3673358336c8d0627d6b006f06ecb989232a07d3e10a2818cac25a987b8acc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.84
+status: ok
+----- stdout -----
+PASS: A1 single-time mode partition decoheres and D(a,a) = Born exactly (any state)  [offdiag 0.0e+00]
+PASS: A2 unrecorded two-time mode partition does NOT decohere; D(a,a) not additive (prediction)  [max offdiag 0.098, marginal error 0.152]
+PASS: A3 CL-2 transport exists for the walk tick, Born marginals kept; its two-time joint is not D(a,a)  [LP min changes 2.0000, Sinkhorn cost 2.0000, marg err 2.1e-15, TV(J,Ddiag) 0.253]
+PASS: A4 pointer-recorded two-time partition decoheres exactly; D(a,a) = Born(pointer, mode) at t2  [offdiag 0.0e+00]
+PASS: A5 CL-2 on the recorded toy: copy is a permutation, walk support never changes the pointer, so CL-2's readable (pointer, mode) joint = D(a,a)  [pointer change mass 0.0e+00]
+PASS: B1 which-way set {path t1, port t2}: |D(L o,R o)| = |<p0|p1>|/4 and visibility V = |<p0|p1>| (7 couplings)  [max dev 1.1e-16, 1.1e-16]
+PASS: B2 record (orthogonal pointer): decoheres, V = 0; no record (c = 1): |D_LR| = 1/4, path set inconsistent, V = 1  [offdiag 2e-17 / 0.25, V 1e-16 / 1.000]
+PASS: B3 read once / two readers: {path, port, pointer, reader} decoheres; disagreeing classes have weight 0; the record carries exactly H(path) = 1 bit, a second reading adds 0  [offdiag 1.5e-17, P(disagree) 2e-33, I = 1.000 bit]
+PASS: C1 coarse-graining a decohering set keeps it decohering, and the late set's path marginal = the t1 record odds  [records accumulate when kept]
+PASS: C2 erasure: {path t1, pointer t1'} decoheres if the history ends at t1', but after a coherent un-copy no set holding path t1 or pointer t1' decoheres (|D| = 1/4): record status is fixed by the whole history  [|D_LR| after erase 0.250; with pointer cut 0.250]
+PASS: C3 eraser: pointer cut in Z or X at t1' both fail (prediction 1/4 each); the maximal decohering set is {port} with the fringe restored (P(port 0) = 1); no selector needed  [Z 0.250, X 0.250, P(o=0) 1.000]
+PASS: C4 arrow is the boundary: pure ready pointer at the start -> records of the past only (I = 1, 0 bit); pure pointer at the end -> records of the future only (0, 1 bit)  [fw 1.00/0.00, rev 0.00/1.00]
+PASS: D1 vector-like overlap (antiperiodic tick): det(1+V) real, >= 0 on every background; an L x R pair of one charge is real too (positive history measure)  [max |Im/det| 6.1e-17, negatives 0, max |arg L x R| 1.8e-15]
+PASS: D2 chiral 3-4-5-0 weight at Q = 0 is complex: small nonzero phase growing with roughness (prediction 1e-7..0.1)  [4x4: max|arg| 3.9e-05, 6x6: max|arg| 1.1e-04]
+PASS: D3 WB-phase gauge variation: single charge-5 L det varies, anomaly-free product less (first prediction; a later 10x threshold fails on 6x6)  [4x4: q5 4.6e-03, 3450 7.5e-06, ratio 610, 6x6: q5 2.5e-04, 3450 3.4e-05, ratio 7]
+PASS: D4 Q=1 sector (6x6): negative-mode counts shift by the charge (3+4 L zero modes vs 5 R), weight 0 without fermion insertions  [shifts {3: -3, 4: -4, 5: 5}]
+PASS: D5 classes of Euclidean histories by a local flux record: chiral class weights complex (not probabilities); only |W|^2 (mirror added = vector-like) is positive  [max class |arg| 2.71e-05]
+PASS: E1 two-site record (Bell state): every U x U* local basis is a decohering finest set at least surprise (H = 1 bit): least surprise does NOT fix the set  [H = [1. 1. 1. 1. 1.]]
+PASS: E2 three-site redundant record (GHZ): every least-surprise local basis found is the Z basis (tridecompositional uniqueness, supplied): the selector fixes the set  [11/12 starts reach H = 1; max tilt 3.4e-08; other minima H >= 2.00]
+PASS: E3 without site-locality the least-surprise partition is the state itself (H = 0): locality is the Record axiom's, not the selector's  [H = 6.4e-16]
+PASS: F1 source expectation: CL-2 record counts per site = sum of single-time Born odds = diagonal D of the single-time sets (static tick-fraction exterior needs only this)  [max z 0.60]
+Supplied: decoherence-functional rule (Gell-Mann-Hartle/Griffiths), coin angle, pointer couplings, m0=1, 3-4-5-0 content, WB phase convention (Narayanan-Neuberger), Elby-Bub uniqueness. Toys only.
+elapsed 4.0s, peak RSS 85 MB
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

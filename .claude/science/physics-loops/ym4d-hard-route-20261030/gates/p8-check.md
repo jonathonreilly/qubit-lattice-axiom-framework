@@ -36,3 +36,22 @@ Pinned at commit a81e94ca8. Scope: `library/port/p8-positivity.md` (B5, B7, B8) 
 - Lines 620-662 (bulk cancellation, cumulant). Redone: (P8.35); the exponent is at most 2n C_face + q t ell^4 <= n(t ell^4 + 2 C_face), using t >= 0. Note: t >= 0 follows from (P8.8) at w = 0. The branch of log Z and the cumulant identity hold. (P8.33) holds with t visible.
 - Lines 664-706 (LSC and units). Checked against lsc.md section 1 (4)-(8). (P8.36) is LSC (6)-(7). ell(n, R L^b) <= L^b ell(n,R) holds by minimality. The floor L^{m_1} >= L^{m_J} ell(n,R) is stronger than the source's m >= log_L ell, and the port says so; that floor is LSC's own clause (c).
 - B7 verdict: first failing step none. It is a proved implication from H-LOC, H-STAB/LSC, H-TREE and H-DOM.
+
+### B8 (p8-positivity.md lines 709-852; source II:59926-60178, II:679-748)
+
+- Lines 713-749 (statement, assumptions 1-4, floor (P8.39), norm (P8.40)) match II:59926-59970 and II:679-748.
+- Lines 751-793 (proof). Redone: the m-independence (N_T L^K sites per side); complexification with factor 2^n; the telescoping bound (P8.42); rational-ball support products (3d margin, radius in (d/4, d/2)); separability of C^1_{B_j} in the sharp norm; nested-square Bolzano-Weierstrass and the diagonal; extension to every tuple by an eta/3 argument. H-KERNEL is kept as a named assumption, as the source does. Symmetry and lattice covariance (O(f)(iota_* U) = O(f o iota)(U)) hold.
+- Lines 795-852 (limit positivity). The admission step is right on lattices where both time planes are link planes, which means N_T L^K even. There a time-space plaquette with barycentre a in (0,1/2) on the mesh has time range inside [eps/2, 1/2 - eps/2]. Other geometries keep H-TORUS-RP, as the port says. Redone: (P8.45); the square-free coefficient proof of (P8.46); the centring rule; the partition sum (P8.47), including the empty and singleton conventions; positive distance between the two reflected families (compact sets in disjoint open slabs).
+- B8 verdict: first failing step none. It is an implication from H-TORUS-BOUND, H-FIRST-PASSAGE, H-TORUS-FLOOR, H-KERNEL and H-TORUS-RP; H-TORUS-RP is discharged by B5 on even lattices.
+
+### B10 and the B11 extraction (p8b-limits.md lines 68-327; source II:65519-67010)
+
+- Lines 70-117 (finite conventions; moment-cumulant (5)-(6) in the algebra with z_i^2 = 0). Redone: 2L^{m+K} site indices per side; the truncation to square-free monomials is a ring map, so (5) and (6) hold; shift invariance holds.
+- Lines 119-144 (transport). Redone: |x-y+2L^m k| >= 2L^m - 2 rho >= 2 rho + 4 when L^m >= 2 rho + 2; the exit-segment argument for the torus Lipschitz bound is right; supports, distances, translations and W_4 hold.
+- Lines 150-162 (lattice symmetries). The correction at II:65871 is right but only a wording slip: the source writes that tau_b maps 2L^m Z^4 onto itself, where it means that tau_b commutes with period translations. Nothing depends on it.
+- Lines 166-179 (positive slab). Redone: k >= 0 for a time-space plaquette, so bond times lie in [eps/2, rho + eps/2]; the distance to x^0 = L^m is at least rho + 1. (9) holds.
+- Lines 181-199 (translation modulus (10)). Redone, including the counterexample: g_s(0) = |s| and g_s(s e_1) = -|s|, so Lip g_s >= 2.
+- Lines 201-232 (centred moments (11), Phi and Psi (12)-(13)). Redone.
+- Lines 234-252 (countable family (14), (15)). Redone; the factor two between the componentwise and the Euclidean gradient norm is right.
+- Lines 258-327 (diagonal extraction, (16)-(19), moving tests, cluster points, iterated limits (20)). Redone. (18) uses d/3 and R' = rho + d/3, and the eta argument closes. The zero-entry correction is right and harmless.
+- No defect in this block.

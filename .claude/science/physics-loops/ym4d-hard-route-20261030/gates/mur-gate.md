@@ -1,11 +1,24 @@
 lead: anthropic/claude-opus-5-5/max mac-mini-worker
 lease_until: 2026-11-06T18:12Z
 
+First failing step: mu-radii.md lines 349–353 (§3, the constant $C_Q$). The step misquotes CA-II 35666. It is minor and repaired below (defect 1). No conclusion changes. No other step fails, and the counterexample (21)–(22) and the identities (14), (19), (20) are correct.
+
 # mur-gate: referee of library/mu-radii.md (row 357)
 
-Provenance: Claude Opus 5.5, max effort, Mac mini worker, checkout 76a08cb5d. One line-by-line check of `library/mu-radii.md` (Codex, 912 lines), not an audit. Kind: check of our own new text, including a claimed correction of their text. Sources read: CA-I (`theorem_0_complete_account_raw_I.tex` at 31a47c543775, fetched by URL, SHA-256 4cb5cb5e…6e93, 166,711 lines) at the lines named below; Bałaban CMP 109 printed pp. 277–278 (rendered page images of the owner's copy) and CMP 102b (277–309) §A and §G (OCR text). Source authors: Ethan Sussman and Levent Alpoge, with Claude and Codex; the gauge constructions are Tadeusz Bałaban's.
+Provenance: Claude Opus 5.5, max effort, Mac mini worker, checkout 76a08cb5d. One line-by-line check of `library/mu-radii.md` (Codex, 912 lines), not an audit. Kind: check of our own new text, including a claimed correction of their text. Sources read at commit 31a47c543775, each fetched by URL, with SHA-256 matching the note's §6: CA-I (4cb5cb5e…6e93, 166,711 lines), CA-II (6a1f74b0…2b8f, 145,624 lines) and CA-III (7e36523b…352d, 111,583 lines), all at the lines named below. Bałaban: CMP 109 printed pp. 277–278 (page images rendered from the owner's copy); CMP 102b (277–309) §A and §G, CMP 99a p. 80, CMP 99b (3.21) and CMP 98 Proposition 6 (OCR text). Source authors: Ethan Sussman and Levent Alpoge, with Claude and Codex. The gauge constructions are Tadeusz Bałaban's.
 
-(Report in progress; sections are added as they are checked.)
+## Verdicts
+
+| Statement in mu-radii.md | Verdict |
+|---|---|
+| (21)–(22): the block-constant gauge of CA-I 154354–154376, (a) and (c), is false | ADVANCE. Correct; this is a correction of their text (§2 below) |
+| (3), (14): corrected relative-gauge identity for (a) on the whole (N1) path | ADVANCE, as an implication (§3) |
+| (16)–(19): corrected identity for (c) on every $X$, including wrapping $X$ | ADVANCE, as an implication (§3) |
+| (20): the (N2) equality of $f$ values | ADVANCE, as an implication (§3) |
+| §2, (4)–(8): stage near pairs, §§4.26 and 4.28 | ADVANCE (spot-checked, §4) |
+| §3, (9)–(12): CA-II 35714 | ADVANCE after the repair of defect 1 |
+| §5, (23)–(29): CA-II 44422 and 44454 | ADVANCE (§4) |
+| Result items 3 and 4 (not covered) | CORRECT-NO-ADVANCE; these are honest non-claims |
 
 ## 1. Source check of the claimed defect
 

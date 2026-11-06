@@ -3,11 +3,11 @@ lease_until: 2026-11-06T14:34Z
 
 # uses-pda-um: do library/pda.md and library/um.md cover the uses listed in library/uses-old.md §§3–4?
 
-Queue row 371. Commit 02f31fdc9. Claude Opus 5.5, max effort, Mac mini worker, fresh session. One reading, not an audit. Checked line by line by Claude (Mini worker).
+Queue row 371. Commit 02f31fdc9. Claude Opus 5.5, max effort, Mac mini worker, fresh session. One reading, not an audit. No numeric job was run; every step is by hand. Checked line by line by Claude (Mini worker).
 
 Moves: the two old-input rows of `library/uses-old.md` for CA-I `4.14:prop-prepared-data-admissible` and `4.2:lem-unmarked`. If a use is covered, that input can be cited at the use with no new lane. If it is not covered, the row names the weakest statement still owed.
 
-Kind of result (FINISH item 9): a check of our ports against their consumers in the account. No new proof. Sources: CA-I, CA-II, CA-III at `31a47c543775`, fetched by URL into a scratch folder. The CA-I SHA-256 is `4cb5cb5e…6e93`, the same as in `pda.md`.
+Kind of result (FINISH item 9): a check of our ports against their consumers in the account. There is one exception: §3 proves a step the account assumes, (A2) at every T-step. That proof is not yet checked by the other model. Sources: CA-I, CA-II, CA-III at `31a47c543775`, fetched by URL into a scratch folder. The CA-I SHA-256 is `4cb5cb5e…6e93`, the same as in `pda.md`.
 
 Credit: the lemmas, their uses and the proof mechanisms are from Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text. The constructions are Tadeusz Balaban's. `pda.md` and `um.md` are Codex's. `pda.md` was checked once by Claude (`gates/pda-gate.md`, first failing step none). `um.md` has not yet been checked by another model; its check is queue row 338 (`um-gate`).
 
@@ -54,19 +54,19 @@ For each row of `uses-old.md` §3 and §4, I read the cited lines in the source.
 | II 14830–14843 | `5.2:prf-arrested-regions` | the band B_n = (Z_{j+1} ∖ Z''_{j+1}) ∩ X_𝔞 is a union of level-(j+1) M-cubes, j = j_n | **covered**: `pda.md` §§2–3 make D_{j+1} a union of m_{j+1}-cubes for j+1 > h; Z_{j+1} is a union of MR_{j+1}-cubes (CMP 119 p. 256, old structure); X_𝔞 is a component at step k_a. At j+1 = h the band is empty |
 | II 17129–17132 | `5.2:lem-current-label-anchors` (i) | the preparation remakes Ω''_j and Z''_j only inside its own component; the unprimed Λ_j do not change | **covered**: rule (G) changes nothing off the operated components, and by (B) each D_i reads Ω_s and Ω_i only inside its own X |
 | III 21301–21309 | `9.1:not-integer-floors` | β ≤ 1/4, ℓ_∘² ≤ L/3 and L ≥ 3, "read through" the admissibility | **not covered**, and this is not (A1) content. Nothing is owed except to impose the three one-sided conditions in the order of choice. Odd L ≥ 8 (CA-I 45681) gives L ≥ 3, and CA-III 570 imposes L ≥ 3ℓ_∘². `pda.md` reads neither β nor ℓ_∘, so (A1) does not depend on them |
-| III 53327–53335 | `9.8:lem-exponent-localisation` | the point count #Y ≤ M⁴C_d(d(Y)+1) for a localisation domain | **not covered**; this is not (A1) content. Weakest statement: a domain Y of level ℓ is a union of at most C_d(d_ℓ(Y)+1) cubes of π_ℓ, each with M⁴ sites, where d_ℓ is the tree length in units of M (CA-I 946–980, 3739). It is a hand count. `pda.md` does not prove it |
+| III 53327–53335 | `9.8:lem-exponent-localisation` | the point count #Y ≤ M⁴C_d(d(Y)+1) for a localisation domain | **not covered**; this is not (A1) content. Weakest statement: every Y ∈ 𝒟_k meets at most C_d(d_k(Y)+1) level-k cubes of side M, each with M⁴ sites, where d_k is Balaban's size from CMP 109 (CA-I 1016–1020, 3739). Given a tree definition of d_k, this is a short hand count. But the definition is cited, not rebuilt, and `pda.md` does not prove the count |
 
 **Inventories.** These are I 45558–45559 and 45598–45618 (the declaration), I 166579 and 166647, II 145579–145580, III 75801, III 111073–111079 and 111104–111106, and III 111311–111312. They list the input and derive nothing. `pda.md` changes the status of its (A1) half for one operation. Still listed: (A2), the T-step half, the point count and the constant conditions.
 
-**N1. (A2) is not touched.** Weakest statement: at every level k of the history, the next domain Ω_t = Ω_{k+1} that T carves satisfies three things. First, Ω_t ⊂ Ω_k. Second, dist_∞(Ω_t, Ω_k^c) ≥ 6M. Third, Ω_t is a union of closed level-k LM-cubes of the compatible family. Here {Ω_j}_{j≤k} is the nest in force; it is the prepared nest if an operation acted at k. One help, unproved as a premise: (G1) gives (Ω''_k)^c ⊂ Ω_k^c. So if T carves Ω_t with the 6M margin inside the old Ω_k, then (A2) holds for the prepared nest too.
+**N1. (A2) is not touched.** Weakest statement: at every level k of the history, the next domain Ω_t = Ω_{k+1} that T carves satisfies three things. First, Ω_t ⊂ Ω_k. Second, dist_∞(Ω_t, Ω_k^c) ≥ 6M. Third, Ω_t is a union of closed level-k LM-cubes of the compatible family. Here {Ω_j}_{j≤k} is the nest in force; it is the prepared nest if an operation acted at k. §3 (R1) derives this statement from the account's `4.4:lem-collar-avoidance`(b), with gap 8LM.
 
-**N2. The old-label (A1) premise is the T-step half.** `pda.md` takes (A1) before each operation as input. Here is a reduction I did not find written in the account or the library. It is proved below, but it rests on one premise that I did not check: T extends the nest by Ω_{k+1} and leaves Ω₀, …, Ω_k unchanged. Under that premise, (A1) at level k and (A2) at level k give (A1) for the extended nest at level k+1. Proof:
+**N2. The old-label (A1) premise is the T-step half.** `pda.md` takes (A1) before each operation as input. Here is a reduction I did not find written in the account or the library. It rests on one premise: T extends the nest by Ω_{k+1} and leaves Ω₀, …, Ω_k unchanged. The account reads this premise from CMP 119 (2.1) and (3.20) at CA-I 12234–12240; I did not check it against CMP 119. Under that premise, (A1) at level k and (A2) at level k give (A1) for the extended nest at level k+1. Proof:
 - The gap ℓ_j^{−1} dist_∞ counts level-j spacings, so a change of reference level does not change it. With ℓ′_j = ℓ_j/L and dist′ = dist/L, the quotient is unchanged.
 - At the new junction j = k, (A2) gives a gap ≥ 6M ≥ M.
 - A closed level-k LM-cube is a closed level-(k+1) M-cube.
 - The Dirichlet hull of Ω₁ does not change.
 
-By induction over the history, (A1) at every nest then follows from three inputs: (A1) at the first nest, `pda.md` at every operation, and (A2) at every T-step. This does not give the LM gap of 45630. (A2) gives 6M at the new junction, and LM ≥ 8M. No listed use reads the LM gap.
+By induction over the history, (A1) at every nest then follows from three inputs: (A1) at the first nest, `pda.md` at every operation, and (A2) at every T-step. (A2) alone does not give the LM gap of 45630: it gives 6M at the new junction, and LM ≥ 8M. R1 in §3 gives 8LM there, which is enough. No listed use reads the LM gap.
 
 **D1. Endpoint forms in 4.28.** This is a difference of reading, not a failure of coverage. `4.28:lem-cutting-strata` (143848–143851, 143897–143912) reads Balaban's (1.10) in the Z′ forms: Z''_{κ₀+1} = (Z′_{κ₀})^∼ and Z''_κ = (Z′_{κ₀})^{∼3}. `pda.md` (E) uses the Ω forms, D_s = X ∖ Ω_s^{(+7M)} and D_k = X ∖ Ω_s^{(+5M)}; at 92015 Balaban writes both forms as equal. The two forms agree when Ω_s^c ∩ X = (Z′_{κ₀})^{∼8} ∩ X. That is the equality case under class clause (ii) (143805–143809). In general 4.28 has only Ω_s^c ⊇ (Z′_{κ₀})^{∼8}, and then the Ω forms are larger. I redid each step of 4.28 (i), (ii) and (iv) that reads the endpoints, using the Ω forms:
 - Z''_J ⊂ Z''_κ ⊂ Ω_s^c.
@@ -128,3 +128,57 @@ Each (A1) verdict holds at prepared and stage nests and is conditional on old (A
 
 **Count for §2.** All 5 clear uses are covered, and so are the mediated rows. Every verdict is conditional on `um.md` passing its check (row 338) and on its inputs (R-a)–(R-e).
 
+## 3. Repair R1: (A2) at every T-step, from the account's collar lemma
+
+Proved here by Claude; not yet checked by the other model. It is an implication from the premises below. It closes N1, and with N2 it closes the old-label premise.
+
+**Statement.** Fix a level k of the history. Let {Ω_j}_{j≤k} be the nest in force before the T-step from level k to k+1. This is the old nest, or the prepared nest if an operation acted at level k. Let Ω_t := Ω_{k+1} be the domain that this T-step produces. Assume:
+- (P1) Ω_k ⊃ Λ_k. This is the nesting of CMP 119 (2.1), quoted at CA-I 12234–12236. At a prepared level, also Ω''_k ⊃ Ω_k by `pda.md` (G1), and Λ_k does not change (CA-II 17131).
+- (P2) Λ_k ⊃ Ω_{k+1}. This is the one-level extension, CMP 119 (3.20), quoted at CA-I 12238–12240.
+- (P3) Ω_{k+1}^c ⊃ (Z′*)^{∼8}. Here Z* is the large-field region from which the T-step runs CMP 119 (3.5). Z′* is the union of the LMR_{k+1}-cubes of the level-k scale that meet Z*, and ∼ adds one layer of these cubes. If no operation intervened, Z* = Z_k = Λ_k^c. Otherwise Z* = Z_k ∪ ⋃_i Y_i, under the hypothesis stated in `4.4:lem-collar-avoidance`(c) (CA-I 12131–12137). With Z* = Z_k, the inclusion is `4.4:lem-collar-avoidance`(b). Its proof reads only (3.5) (CA-I 12205–12225, read in `pda-gate.md` §3), so the same chain holds with Z* in place of Z_k.
+- (P4) Ω_{k+1} is a closed union of LMR_{k+1}-cubes of the level-k scale, from the compatible family (CA-I 48151–48155). This is the cell structure of the (3.5) output. It is the same inherited input as `pda.md` item 2 (inherited inputs (a) and (b) in `pda-gate.md`).
+
+Then (A2) holds at level k: Ω_t ⊂ Ω_k; dist_∞(Ω_t, Ω_k^c) ≥ 8LMR_{k+1} ≥ 8LM > 6M; and Ω_t is a union of closed level-k LM-cubes of the compatible family. The same holds with Ω''_k in place of Ω_k. The gap 8LM also exceeds the LM gap of CA-I 45630.
+
+**Proof.**
+1. *Inclusion.* By (P2) and (P1), Ω_t ⊂ Λ_k ⊂ Ω_k ⊂ Ω''_k.
+2. *Margin.* By (P1), Ω_k^c ⊂ Λ_k^c = Z_k ⊂ Z* ⊂ Z′*, and (Ω''_k)^c ⊂ Ω_k^c. Put s = LMR_{k+1}. Take x ∈ Z′* and y ∈ Ω_t, and suppose |x − y|_∞ < 8s.
+   - Then y lies in the open set {z : dist_∞(z, Z′*) < 8s}.
+   - For a union of aligned closed cubes of side s, the n-layer enlargement equals the closed metric enlargement by ns (CA-I 48157–48162). So this open set lies inside (Z′*)^{∼8}.
+   - By (P4), y is a limit of interior points of Ω_t. So the interior of Ω_t meets (Z′*)^{∼8}.
+   - This contradicts (P3), read in the regularised sense of CA-I 45279–45281: the interior of Ω_{k+1} misses (Z′*)^{∼8}.
+   
+   Hence dist_∞(Ω_t, Ω_k^c) ≥ dist_∞(Ω_t, Z′*) ≥ 8s ≥ 8LM, because R_{k+1} ≥ 1. Also 8LM > 6M.
+3. *Cubes.* R_{k+1} is a power of L. So by (P4), each LMR_{k+1}-cube of the level-k scale is a union of level-k LM-cubes of the same compatible family. ∎
+
+**Consequence, with N2.** N2's premise is (P1) and (P2) with the earlier members unchanged (CA-I 12234–12240). Under it, induction over the history gives (A1) with gap LMℓ_j, and (A2), at every nest:
+- *Base.* The nest is (Ω₀, Ω₁). Its only clauses are the cube clause for Ω₁, which is (P4) at k = 0, and the Dirichlet hull, which is a definition.
+- *T-step.* Use R1, then N2.
+- *Operation.* Use `pda.md`, which keeps the LM gap.
+
+This is the "admissibility lemma for the produced nests" that CA-I 45626–45634 asserts but does not prove. It would cover each geometric use in §1 that is now open or open in part: 45628, 46045, 46478, 47253, 47616, 47637, 47745, 47869, 47998 and 48132. It would also discharge the old-label premise of every (A1) verdict. Its inputs are of the same kind as `pda.md`'s: the account's proved collar lemma, and Balaban's (3.5) and (3.20) as the account reads them.
+
+**What R1 does not show.** It does not check (P2)–(P4) against CMP 119 itself; it uses the account's readings. It does not prove the hypothesis of 4.4(c) after an operation. It proves no analytic statement.
+
+**A further reader, not listed in `uses-old.md` §3.** CA-I 5608–5611 and 5770–5776 read the same 6M margin through an unlabelled "admissibility-margin statement", in the indexing of the walk-expansion theorem. They cite neither the label nor pp. 178–179, so the search for `uses-old.md` did not find them. R1 supplies this margin too, provided that indexing puts Ω_{k*} at the T-step's level. I did not check that indexing.
+
+## Result
+
+**Kind (FINISH item 9).** §§1–2 check our ports against their consumers in the account. §3 proves a step their text assumes; that proof is not yet checked. Nothing here corrects their text.
+
+- **§1, `4.14:prop-prepared-data-admissible` against `pda.md`, 29 uses.**
+  - 17 are covered at prepared and stage nests, given old (A1). One of them, 143888, is covered by the account's own proof of the N₀ conventions, not by `pda.md`.
+  - 4 are covered for their (A1) half only.
+  - 4 read only (A2) and are not covered.
+  - 45628 is covered in part. 48132 is not covered as stated.
+  - CA-III 21301 lists three constant conditions. Nothing is owed except to impose them. CA-III 53327 needs a point count, an elementary count that is not rebuilt.
+  - No use needs a new ceiling.
+  - 4.28 must be read with `pda.md`'s Ω-form endpoints (D1), and every step still holds.
+- **§3, new.** R1 and N2 (proved here, not yet checked by Codex) derive (A2) at every T-step from the account's proved `4.4:lem-collar-avoidance`(b), with gap 8LM. By induction with `pda.md`, they give (A1) with gap LM, and (A2), at every nest of the history. If they pass a check, every geometric use in §1 is covered.
+- **§2, `4.2:lem-unmarked` against `um.md`.** All 5 clear uses and every mediated reuse of C_β are covered. C_rem is fixed before ε₁^I, and C_β sits in the account's slot for determined constants, after the radii and E₀ and before ε₀^I. No condition in the account caps a letter that they read, so there is no cycle. The only ceiling is the account's own, ε₁^I ≤ c₀/(2C_rem). The SU(N) remark must be read with E₀ before C_β (D2). Every §2 verdict is conditional on `um.md` passing its check (row 338) and on its retained inputs (R-a)–(R-e).
+
+**Still open:** the check of `um.md` (row 338); a check of R1 and N2 by Codex; the premises (P2)–(P4) and the 4.4(c) hypothesis, which are Balaban readings; the point count for CA-III 53327; and the clause that `4.23:def-copies-reading` reads, which the account does not name.
+
+**Moves:** the old-input rows of `uses-old.md` §§3–4. If R1 and N2 pass a check, `P4-H-prepared` shrinks to Balaban's (3.5) and (3.20) readings and the 4.4(c) hypothesis; no separate (A2) lane is needed. `4.2:lem-unmarked` can be cited at all its uses once row 338 passes.
+
+Checked line by line by Claude (Mini worker).

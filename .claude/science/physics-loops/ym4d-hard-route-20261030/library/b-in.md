@@ -3,7 +3,7 @@ lease_until: 2026-11-07T02:47Z
 
 # (B-in): the sealing construction on D_2 beside S
 
-Queue row 389 (`b-in`). Started 2026-11-06T14:47Z at commit cf6677779. Proved by Claude, not yet checked by the other model. Complete: the Result is at the end.
+Queue row 389 (`b-in`). Started 2026-11-06T14:47Z, finished 2026-11-06T15:46Z, at commit cf6677779. Proved by Claude, not yet checked by the other model. The Result is at the end.
 
 Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text (complete account CA-I, CA-II, CA-III and outline at upstream `31a47c543775`), for every statement, construction and bound cited with a line number; Tadeusz Balaban for the multiscale construction (CMP 89-122). Earlier lanes here: `library/ca-claude.md` (Lemmas A, B), `gates/ca-gate.md` sections 4-5, `library/prior/b-in.md`.
 
@@ -28,7 +28,7 @@ Notation of the completion site (CA-I 92401-92420, 138357-138366): step k, h := 
 **Weakest statements that serve R, A and C.** Let K be a set of cells of D_2 (the core) and B_S := D_2 \ K.
 
 - **(B-in-w), base bound.** For every cell x of K with o(x) >= 1: Q_a(x) <= (phi_flat/64) theta^{B^t}_a(x) for a in {1,3,5,6,7} at the pair (U_2, J(U_2)); at every triple of the readings (Sigma^flat), (Sigma^*) at x, entries 2 and 4 at most phi_flat/64 of their thresholds; and on every cube of side at most CML^lambda eta that meets K (this covers the cubes of Q_{B^t} at core points and the frozen-family cubes of dissolving pieces), a gauge u with U_2^u = e^{i eta A} and L^lambda eta |A|, (L^lambda eta)^2 |nabla A| <= (phi_flat/64) w_cube B C M alpha_{0,lambda}.
-- **Why it suffices for R(b).** The clause of tau at x has threshold at least F_tau theta^{B^t}_a(x) >= phi_flat theta^{B^t}_a(x): for a stage-domain clause the structure read at x is the frozen one of B^t (precedence rule, I:132982-132986); for an earlier-born term, heredity (e2) of `4.27:lem-weights-heredity` (I:133096-133098; that lemma is marked incomplete at other steps) gives theta^{B}_a >= theta^{B^t}_a for B before B^t, as used at I:136670-136673; a finer birth index n < o(x) only enlarges r_a by (eq-factors-radii-coupling-2), I:131441-131446; and F_tau >= phi_flat is clause (a). "For all w >= 1" in the printed (b) is stronger than any consumer reads; Corollary B2 below proves it anyway, under the condition (Q) on q, and Corollary B1 proves the part CA reads without (Q).
+- **Why it suffices for R(b).** The clause of tau at x has threshold at least F_tau theta^{B^t}_a(x) >= phi_flat theta^{B^t}_a(x): for a stage-domain clause the structure read at x is the frozen one of B^t (precedence rule, I:132982-132986); for an earlier-born term, heredity (e2) of `4.27:lem-weights-heredity` (I:133096-133098; that lemma is marked incomplete at other steps) gives theta^{B}_a >= theta^{B^t}_a for B before B^t, as used at I:136670-136673; a finer birth index n < o(x) only enlarges r_a by (eq-factors-radii-coupling-2), I:131441-131446; and F_tau >= phi_flat is clause (a). "For all w >= 1" in the printed (b) is stronger than any consumer reads; Corollary B2 below proves it anyway, under the account's floor on q, and Corollary B1 proves the part CA reads with q > p_0 only.
 - **(Sh-w), shares.** At every cell x of K with o(x) >= 1, every entry of the presented pair at b_3, b_4 and on every segment differs from its value at b_2 by at most (3/64) phi_flat theta^{B^t}_a(x), the cube gauges being those of U_2.
 - **(Pl), placement.** For every piece c dissolving at the step, the blocks of W_c of level >= 1 lie in K, and every frozen-family cube of c meets K.
 - **(S-B).** The cells of level >= 1 meeting the one-bond neighbourhood of Col(C) lie in K, and every level-one plaquette of an index-zero cube meeting Col(C) is attached to a block of K.
@@ -145,7 +145,7 @@ gives |dU_2(p) - 1| <= (phi_flat/64) alpha_{0,1} L^{-2} = (phi_flat/64) r_1(1). 
 
 Corollary B1 uses the weighted data bound and needs nothing about q beyond (Fl8). At blocks of higher level the weights L_0^{2 nu} of nearby raised blocks are not dominated by a power of L_0 per level, so B2 uses the account's absorption of the weights into eps^l = l eps (I-N0), which is the form of its own floor K^own eps^l <= m phi_flat alpha_0 (I:131713-131716, I:136827-136832).
 
-**Condition (Q).** q > p_0 + 2r. Then delta_D(t) := sup_{t' >= t} eps^D(t')/alpha_0(t') = 6 K_d L^6 4^r (A_0/C_0^rad) sup_{t' >= t} t'^{p_0 + 2r - q} tends to 0. (With l = (L^2 Rbar)^2 = L^6 (2t)^{2r}.) The account's floor (Fl11), imposed at every margin m it uses, needs the same ratio to be small; I did not find (Q) stated in this form.
+**Condition (Q).** q > p_0 + 2r. Then delta_D(t) := sup_{t' >= t} eps^D(t')/alpha_0(t') = 6 K_d L^6 4^r (A_0/C_0^rad) sup_{t' >= t} t'^{p_0 + 2r - q} tends to 0. (With l = (L^2 Rbar)^2 = L^6 (2t)^{2r}.) (Q) holds under the account's own floor q >= p_0 + 7r + 1 (order of constants, I:1364; the floor of `4.21:prop-small-coupling`, I:70839-70841).
 
 **Lemma J (current from the regularity tests).** Let U be real, b a bond, and suppose the six plaquettes p containing b obey |dU(p) - 1| <= theta <= 1/10. Then eta^3 |J(U)(b)| <= c_pi ( eta |D^{eta*}_U dU(b)| + 3.4 theta^2 ), with c_pi <= 2 (I:142727-142728).
 
@@ -230,7 +230,7 @@ The account's three shares (bend, source, map H') are this total split by kind; 
 - **(LR) is a reading.** Balaban proves the reset with global epsilon_0, epsilon_1 and iterates it (CMP 102 Proposition 8); b102 H21 states it the same way. This note uses the argument at one block, where only the regularity on box~ and the data on its two central layers enter (section 4). Every displayed step of CMP 102 (145)-(168) reads only those; the checker should confirm this once. If it fails, Theorem G fails, and with it B1 and B2.
 - **(I-A) is not proved here.** That B_2 is an admissible nest of CMP 102, and V_2 passes the data tests at radius a_1, is Balaban's (CMP 122b (1.52)-(1.53), CMP 119 (2.14)) and is used as stated. CMP 122a/b are not in `~/ym4d-papers`; the data of B_h on the graded layer are not identified. Theorem G needs only that they pass the tests at radius a_1: the cut region enters every bound through 2^{-i_S} a_1.
 - **(I-D) is the account's data clause.** Its raised-block bound rests on CMP 122a (1.24) and CMP 98 (54) as the account quotes them; its mixed-level tests are Balaban's regularity of the datum. The account's own summary of the data (I:137037-137038) rests on `4.27:lem-weights-heredity` (b), marked incomplete at one step; this note uses the pointwise bounds of (gamma) and (I-N0) instead.
-- **(Q) is needed for B2 and not for B1.** If q <= p_0 + 2r, then eps^l/alpha_0 does not tend to 0, the account's own floor (Fl11) cannot hold at small margins either, and B2 is not proved by this route at raised blocks. B1, which is what CA reads, uses only q > p_0 (Fl8).
+- **(Q) is the account's.** B2 needs q > p_0 + 2r, which the account's floor q >= p_0 + 7r + 1 gives (I:1364, I:70839-70841). B1, which is what CA reads, uses only q > p_0 (Fl8).
 - **SU(2) only.** b102 is proved for SU(2) (`gates/uses-b102.md`, G1). For N >= 3, (LR) is Balaban's text unchecked here.
 - **(Ref) and 1(e) are the account's.** Entries 2 and 4 (B2(d), and their shares) rest on the account's statement on refinement and on its rescaling bound 1(e), both used as stated. The consumers of A read no entry 2 or 4.
 - **Coverage in consumer A.** Our B_S is the band of d_sc-width Rc_k/2 at S. That the keystone region covers B_S is part of A's own argument and is not checked here.
@@ -242,7 +242,7 @@ The account's three shares (bend, source, map H') are this total split by kind; 
 **Proof, as an implication.** The sealing construction is supplied, for SU(2), as follows. Proved by Claude, not yet checked by the other model.
 
 1. **CA's input (B-in) is discharged (Corollary B1).** At every completion date, for every completing component C, U_2 obeys Balaban's regularity tests at radius 2 B_3 C_1 eps_1 on every block of level at most 1 within 20 M eta of Col(C). Hence every level-one plaquette there has |dU_2(p) - 1| <= (phi_flat/64) r_1(1) < 2.6 x 10^-4 alpha_{0,0} (the last step by `4.27:lem-level-zero-ratios` (a), as in `ca-claude.md` Lemma B(i)). This is Lemma B(i) of `library/ca-claude.md` and the level-one part of Lemma B(iii), without (B-in) and without (S-B). The bound is uniform in the cutoff, the density, h - n, the history, and the numbers of exclusions, blocks and strata.
-2. **The account's own-level bound holds on the core (Corollary B2).** On K (blocks of level >= 1 at d_sc-distance at least Rc_k/2 from S), the base pair (U_2, J(U_2)) obeys every direct entry at 1/64 of phi_flat r_a(o(x)), entries 6 and 7 vanish, and every cube of side at most CML^lambda eta meeting K carries a gauge at 1/64 of phi_flat BCM alpha_{0,lambda}. Entries 2 and 4 hold under the account's refinement statement (Ref). This is the printed form, for every w >= 1, c >= 1, F >= phi_flat (I:138438-138444).
+2. **The account's own-level bound holds on the core (Corollary B2).** On K (blocks of level >= 1 at d_sc-distance at least Rc_k/2 from S), the base pair (U_2, J(U_2)) obeys every direct entry at 1/64 of phi_flat r_a(o(x)), entries 6 and 7 vanish, and every cube of side at most CML^lambda eta meeting K carries a gauge at 1/64 of phi_flat BCM alpha_{0,lambda}. Entries 2 and 4 hold under the account's refinement statement (Ref). This is the printed form, for every w >= 1, c >= 1, F >= phi_flat (I:138438-138444), under the account's floor q >= p_0 + 7r + 1.
 3. **Placement and (S-B) (Lemma P).** W_c of every dissolving piece lies in K, its frozen cubes meet K, and B_S is the band of width Rc_k/2 at S.
 4. **Shares (Proposition Sh).** At every block of K, the layers b_3, b_4 and their segments move every entry by at most 3/64 of phi_flat times its threshold and keep the cube gauges of U_2, as an implication from the inputs of `library/ca-f.md`.
 
@@ -256,7 +256,7 @@ So clauses (b) and (c) of `4.27:prf-room-dissolving` and the core step of `4.27:
 - (I-D), (I-N0): the account's data clause (gamma) and its bound L_0^{6N_0} <= l^2 (I:137012-137036, I:68331-68334), from CMP 122a (1.24), CMP 98 (54) and Proposition 2, CMP 119 p. 256.
 - (I-G): admissible geometry ((G) of `4.27:lem-live-piece-increments`, (c7)(d) for Lemma E'), and the law-site separation d_sc(Z_h, S) >= Rc_k - 1 (index PROVED).
 - (I-R), (I-T), (I-K): CMP 119 (2.4)-(2.8) read on the printed pages; the account's radii and scales.
-- For B2 only: condition (Q), q > p_0 + 2r; (Ref) for entries 2, 4.
+- For B2 only: condition (Q), q > p_0 + 2r, implied by the account's floor q >= p_0 + 7r + 1 (I:1364); (Ref) for entries 2, 4.
 - For Sh only: (N1)-(N8) and (G-sep) of `library/ca-f.md` (with (N1) the layer theorem (L) owned by `stage-claude`), and the rescaling bound 1(e).
 - Floor (M) on M; ceilings (Gamma_1), (Gamma_2) for B1, and (Gamma_3), (Gamma_4), (Gamma_Sh) for B2 and Sh, all one-sided caps of degree minus infinity fixed last.
 
@@ -264,7 +264,7 @@ So clauses (b) and (c) of `4.27:prf-room-dissolving` and the core step of `4.27:
 
 **What changes for consumers.** In `library/ca-claude.md`, named input 1 ((B-in) with (S-B)) is replaced by the inputs of Corollary B1. CA's first open inputs are then (LR) as read here, (I-A), and the layer inputs of `library/ca-f.md` ((N1)-(N3)). No consumer statement changes.
 
-**Not shown.** See section 8: (LR) as a reading, (I-A), SU(N) for N >= 3, (Q) for B2, the coverage of B_S by the keystone region in consumer A, and the account's three-way split of the shares.
+**Not shown.** See section 8: (LR) as a reading, (I-A), SU(N) for N >= 3, the coverage of B_S by the keystone region in consumer A, and the account's three-way split of the shares.
 
 **Suggested next steps, for the lead.** (a) One line-by-line check by Codex, with attention to (LR) (does CMP 102 (145)-(168) read only box~ and the central layers?), Lemma C and Theorem G. (b) If it passes, update the CA node in `library/t0-tree.md` and its registry row. (c) Corollary B2 proves a statement the account uses and does not supply (`gates/ca-gate.md` section 4: "no noncircular supplier"). After a check, it may be a candidate under How we work item 6; nothing is posted.
 

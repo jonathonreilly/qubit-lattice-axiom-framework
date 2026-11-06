@@ -86,3 +86,45 @@ Each conclusion holds. So 4.28 is covered if it is read with the Ω forms, as `p
 
 Each (A1) verdict holds at prepared and stage nests and is conditional on old (A1), which is N2.
 
+
+## 2. Uses of `4.2:lem-unmarked` against `library/um.md`
+
+**What `um.md` supplies.** It assumes the lemma's four hypotheses (CA-I 4046–4058) and keeps the analytic inputs listed below. Then, for every l ≥ 1, |β^𝔄_l − β⁰_l| ≤ C_rem ε₁^I and |β^𝔄_l| ≤ C_β. The constants are C_rem = C_ext A_R and C_β = C_ext E₀ (`um.md` (25)), with C_ext = 4C_N C_* S_ρ T_ρ (23) and C_* = 16C_H²a^{−2}K₀e^{4c_dMρ} (20). Both are uniform in l. This uniformity is what the account's own later proof lacks: it allows C_𝗁(j) (58786–58847).
+
+**Inputs `um.md` keeps** (its §2), beyond the four hypotheses:
+- (R-a) CMP 109 (3.11)–(3.14) and (4.2)–(4.5), with the free-boundary replacement (4.35)–(4.37). These give the four-norm response bound (5), with constants C_H and σ.
+- (R-b) the flat local-current bound (7), with constant C_F (CA-I 14083–14132).
+- (R-c) the `ui.md` continuation, with its retained inputs and the tower rules of CA-I 32950–33080.
+- (R-d) CMP 99b (3.132), through (R-a); the account cites it as printed without proof (CA-I 13142–13173).
+- (R-e) the rooted count (17), CA-I 58877–58879.
+
+**Where its constants sit, read against the account's order.** The order is in `2.3:not-stages-last` (CA-I 1584–1700), `2.4:lem-no-cycle` (2116–2160) and (H3) (1146–1149).
+- *The account's slot for C_β.* C_β is one of "the determined constants". It comes after the radii α′₁, α′₀, α₁, α₀, α₂, after E₀ and after α₄ (1626–1634, 2123–2126). It comes before ε₀^I and ε₁^I. The account says it "reads δ₀, κ and M" (2124).
+- *`um.md`'s C_β = C_ext E₀ fits that slot.* It reads C_H, σ and C_F, which are CMP 109 constants fixed early, like B₃ (1596–1598). It reads K₀ (from κ, Stage 3), M (Stage 6), c_d, C_N, and E₀. It also reads a, through `um.md` (8): a < min{1, α₂, α₁/8, α₀/(2C_IV)} and 2a + C_F a² < α₀/2. So a reads the radii and C_IV(d, L). Each of these letters comes before the slot.
+- *`um.md`'s C_rem = C_ext A_R comes before ε₁^I.* A_R is the (2.41) coefficient C₃ = 4(L+2)⁴O(1)E₀C₁α₄^{−1}α₆^{−1}M^{q̄}e^{C₂κ₁} (CA-II 3302), with perhaps one more factor α₆^{−1} (CA-II 3440–3446). Here α₆ = α₆(d) is a Stage-0 number (CA-I 1378), α₄ comes before the determined constants, and κ₁ is Stage 4. So C_rem is fixed before ε₀^I and ε₁^I. This is what the lemma requires: C_rem "depends only on L, N and the parameters of (H3) chosen … before ε₁^I" (4034–4038).
+- *No cycle.* In the account, every condition that reads C_β or C_β+1 is of one of two kinds:
+  - a ceiling on γ: Stage 8, (C_β+1)γ² ≤ 1; 4.7 (Γ4)(b) and (f), 31792–31825 and 31930–31942; the 4.22 convention, 92964–92969 and 93330–93340;
+  - the definition of a later quantity: 4.33's C (157195–157202), and 4.36's B̄⁺ = max{C_β+1, c₅} (158118–158122, 163307–163310).
+  
+  None of these caps a letter that `um.md`'s C_β or C_rem reads. This agrees with `1.2:def-flow-constants`: constants fixed before γ read the flow constants only through (c₀/4, c₅, B̄) (656–657).
+- *The ceiling ε₁^I ≤ c₀/(2C_rem) is the account's own* (4017–4021; Stage 7, last item; 163163–163166). It is one-sided. It is imposed when ε₁^I is chosen downward, after C_rem.
+
+| CA lines | Use | What the use reads | Verdict |
+|---|---|---|---|
+| I 3601–3605 | `4.1:thm-clause-zero`, explanation | the lemma as a per-step bound at level k+1; it may use only clause (i), the flow bounds up to k, and x₀, …, x_k ≥ γ^{−2} | **covered**: by `um.md` §6, every input uses g_{l−1} and earlier couplings only |
+| I 4017–4028 | the application after `4.2:lem-one-loop` (unlabelled) | ε₁^I ≤ c₀/(2C_rem); \|β^𝔄_l − β⁰_l\| ≤ C_rem ε₁^I for all l ≤ n with one C_rem; then Σ_{l=i+1}^n β^𝔄_l ≥ (n−i)c₀/2 − 2c₂ | **covered**: `um.md` (24) and (26); the constant is uniform in l |
+| I 56345–56390 | `4.19:lem-flow-bounds`, at n = k+1 | (4.19:eq-flow-bounds-2): \|β^𝔄_l − β⁰_l\| ≤ c₀/2 and \|β^𝔄_l\| ≤ C_β for l ≤ k+1, with the C_β of Definition 1.2 | **covered**: C_rem ε₁^I ≤ c₀/2 by the ceiling, and (25) is the "choice made in Chapter 4" that Definition 1.2 names (644–646) |
+| I 56428–56478 | `4.19:prop-clause-zero`, hypothesis (b) | the lemma at every level n with x_i ≥ γ^{−2} for i < n, together with Theorem 4.20 below n | **covered**. The use supplies the four hypotheses: g_i ≤ γ; Theorem 4.20 at earlier levels; (a) for the one-step bounds; and hypothesis 4 by the proposition at 4171–4180, under its two γ ceilings. Its list (a)–(h) must also carry `um.md`'s inputs (R-a)–(R-e). (R-a) and (R-d) are cited Balaban estimates of the kind (a) and (e) already assume; (R-c) goes with (g) |
+| I 163165 | `4.36:rem-order-of-choice` | ε₁^I ≤ c₀(N)/(2C_rem), with the SU(N) values of the constants | **covered**. `um.md` is written for SU(N): §4 uses 𝔰𝔩_N, and C_N in (23) is the colour contraction. N enters C_rem only through values. See D2 |
+
+**Mediated reuse of C_β** (I 144, 162; 644–652; 1148; 1631–1687; 2124–2157; 2648; 31794–31942; 56481; 92964–93336; 157195–157202; 158112–158315; 163095–163169; 163307–163423): **covered**. Each reads C_β, or C_β+1, as a constant fixed after M and before γ. In 2.3 and 2.4 it is also fixed before ε₀^I. Each uses it only in ceilings on γ or in later quantities. `um.md`'s C_β meets this.
+
+**Exclusions confirmed.**
+- `4.31:prf-tube-analyticity` (156347, 156392, 156478–156482) is not a use. Its C_β is a new constant, introduced by "there are constants" in `4.31:def-standing-inputs` (a) (153937–153960), and it bounds the complete increment. Clause (0) supplies it as max{C_β+1, c₅}, as 4.36 does at 158310–158316, not through this lemma.
+- The pile constant of 4.25, and the letters C_β in II and III, are other constants.
+- The inventories at I 166617 and III 111368–111369 derive nothing.
+
+**D2. A reading of the SU(N) order remark.** `4.36:rem-order-of-choice` (163095–163100) lists E₀(N, L, 𝔭) among the constants that c₀(N) and B̄ = max{C_β+1, c₅} fix "hence". At 163143 it says that C_β+1 is fixed after 𝔭. Under `um.md`, C_β = C_ext E₀ and C_rem ∝ E₀. So E₀ must be read as one of the (a2) values of Balaban's constants: fixed before C_β and before ε₁^I, as the SU(2) order has it (1630, 2123). If the remark is read literally, with E₀ after B̄, then C_β = C_ext E₀ is circular. Nothing in the account makes E₀ depend on C_β: 4.7 lists E₀ among the step constants, and (Γ0) is a ceiling on γ. Weakest statement needed: E₀ is fixed before C_β. This is a reading, not a defect.
+
+**Count for §2.** All 5 clear uses are covered, and so are the mediated rows. Every verdict is conditional on `um.md` passing its check (row 338) and on its inputs (R-a)–(R-e).
+

@@ -53,7 +53,7 @@ The account names the construction (I:138361-138366) but states none of its theo
 
 If r(y) <= a_5, then U obeys (T1) on Delta at radius max{ B_3 e(y), r(y)/2 }.
 
-*Source and reading.* Balaban, CMP 102 section F, pp. 300-304, (144)-(168), read on the printed pages (rendered from `~/ym4d-papers`): the gauge (145)-(146) uses the space (2) on box~ only; the local problem (147)-(151) lives on C_k inside box~, with artificial data equal to the averages of U itself; (160) uses the data assumption (7) only on the central layers; (161) splits the sum into the central part and C_k \ box_k, the latter carrying e^{-delta_0 R_1M_1/2} epsilon_0; (163)-(168) give the radius max{B_3 epsilon_1, epsilon_0/2} on Delta_0 = B^j(y). Balaban states it with global epsilon_0, epsilon_1 and iterates (Proposition 8); the argument at one block reads only r(y) and e(y). b102 rebuilds it as H21, "Reset for any already constructed critical field" (`library/b102.md` 2944-3021: "Freeze the actual averages of U on the artificial outer boundary ... The local field is therefore critical for that local problem"), checked line by line by Claude, first failing step none (`gates/b102-gate-b.md`). b102 proves SU(2), d = 4, uniformly in depth, spacing, volume and admissible nest.
+*Source and reading.* Balaban, CMP 102 section F, pp. 300-304, (144)-(168), read on the printed pages (rendered from `~/ym4d-papers`): the gauge (145)-(146) uses the space (2) on box~ only; the local problem (147)-(151) lives on C_k inside box~, with artificial data equal to the averages of U itself; (160) uses the data assumption (7) only on the central layers; (161) splits the sum into the central part and C_k \ box_k, the latter carrying e^{-delta_0 R_1M_1/2} epsilon_0; (163)-(168) give the radius max{B_3 epsilon_1, epsilon_0/2} on Delta_0 = B^j(y). Balaban says the inequalities are local (p. 302: "They are local, and for a plaquette p, or a bond b, we take a unit cube Delta_0 in B^j(Lambda_j) containing p or b"); the local datum B of (155)-(156) is bounded through epsilon_0 on box~ only, and all operators of the local problem are the flat ones of CMP 95, 96 (p. 302). He states the result with global epsilon_0, epsilon_1 and iterates (Proposition 8); the argument at one block reads only r(y) and e(y). b102 rebuilds it as H21, "Reset for any already constructed critical field" (`library/b102.md` 2944-3021: "Freeze the actual averages of U on the artificial outer boundary ... The local field is therefore critical for that local problem"), checked line by line by Claude, first failing step none (`gates/b102-gate-b.md`). b102 proves SU(2), d = 4, uniformly in depth, spacing, volume and admissible nest.
 
 **Lemma I (iteration).** Let Y be a set of blocks, N(y) := {z in Y : z meets box~(y)}, N^0(y) := {y}, N^{i+1}(y) := union of N(z) over z in N^i(y). Let rho, e : Y -> [0, infinity) with rho bounded, and suppose rho(y) <= max{ B_3 e(y), (1/2) sup_{N(y)} rho } for every y. Then for every y
 
@@ -68,11 +68,15 @@ where d_N(y,z) := min{i : z in N^i(y)} (infinity if none).
 
 because the union of N^i(z) over z in N(y) is N^{i+1}(y). Let m tend to infinity; rho is bounded. QED.
 
-**Theorem G (graded reset).** Let (B, V) be an admissible instance of b102 Theorem 1 with all data tests at most a_1, let U be its minimal configuration, and let rho(y) be the least radius at which U obeys (T1) on the plaquettes and bonds attached to the block y (a plaquette is attached to the block of its base point, a bond to the block of b_-; each test is read at the largest level j with p, b in Omega_j, as in (T1)). Assume (LR). Then for every block y, rho(y) <= B_3 sup_z e(z) 2^{-d_N(y,z)}.
+**Theorem G (graded reset).** Let (B, V) be an admissible instance of b102 Theorem 1 with all data tests at most a_1, let U be its minimal configuration, and let rho(y) be the least radius at which U obeys (T1) on the plaquettes and bonds attached to the block y (a plaquette is attached to the block of its base point, a bond to the block of b_-; each test is read at the largest level j with p, b in Omega_j, as in (T1)). Assume (LR). Let t(z) be the largest data test of CMP 102 (7) attached to the block z. Then for every block y,
 
-*Proof.* b102 Theorem 1 puts U in the regular class at radius B_3 a_1 <= a_5 (b102 chooses a_0, a_1 last, "so that B_3 a_1 < a_0 and every preliminary radius above fits those fixed radii", lines 3066-3069). So rho is bounded by B_3 a_1 (Balaban fixes a_1 so that this radius is at most a_5, CMP 102 p. 304), and r(y) <= sup_{N(y)} rho <= a_5 for every y, since every plaquette and bond of box~(y) is attached to a block that meets box~(y). The conclusion of (LR) on Delta = y covers the tests attached to y. (LR) gives the hypothesis of Lemma I. QED.
+  rho(y) <= B_3 sup_z e(z) 2^{-d_N(y,z)} <= 2 B_3 sup_z t(z) 2^{-d_N(y,z)}.     (G.1)
 
-Theorem G is linear in the data: each data test enters with the factor 2^{-d_N}, whatever its level. The rest of the note estimates sup_z e(z) 2^{-d_N(y,z)} at the blocks the consumers read.
+*Proof.* b102 Theorem 1 puts U in the regular class at radius B_3 a_1 <= a_5 (b102 chooses a_0, a_1 last, "so that B_3 a_1 < a_0 and every preliminary radius above fits those fixed radii", lines 3066-3069). So rho is bounded by B_3 a_1 (Balaban fixes a_1 so that this radius is at most a_5, CMP 102 p. 304), and r(y) <= sup_{N(y)} rho <= a_5 for every y, since every plaquette and bond of box~(y) is attached to a block that meets box~(y). The conclusion of (LR) on Delta = y covers the tests attached to y. (LR) gives the hypothesis of Lemma I, hence the first inequality. For the second, every data plaquette in box~(z) is attached to a block z' of N(z), so e(z) <= sup_{z' in N(z)} t(z'), and d_N(y,z') <= d_N(y,z) + 1. QED.
+
+*Remark (edges of the problem).* Lemma I needs its inequality at every block, not (LR) itself. At a level-zero block all of whose attached plaquettes are pinned (for instance near the outer boundary of Omega_0, where every bond is prescribed, M^0 being the identity), U equals the datum there, so rho(y) = t(y) <= B_3 t(y) and the inequality holds with e(y) := t(y). At any block where (LR) is not read (for U_2, only at blocks of the cut region, at the boundary of the support), put e(y) := a_1; since rho <= B_3 a_1 the inequality holds there too, and such blocks enter (G.1) only through a_1 2^{-d_N}, which is how sections 5.3-5.4 treat the cut region.
+
+Theorem G is linear in the data: each data test enters with the factor 2^{-d_N}, whatever its level. The rest of the note estimates sup_z t(z) 2^{-d_N(y,z)} at the blocks the consumers read.
 
 ## 5. The base bound
 
@@ -86,7 +90,7 @@ Theorem G is linear in the data: each data test enters with the factor 2^{-d_N},
 - **(I-T) Thresholds.** r_1(n) = r_5(n) = alpha_{0,n} L^{-2n}, eta^3 r_3(n) = alpha_{0,n} L^{-3n}, alpha_{i,n} = C^rad_i e^{-t_n/2} t_n^q, and eps_n / alpha_{0,n} = (A_0/C_0^rad) t_n^{p_0-q} with q > p_0 (I:131413-131420, I:131427-131433; CMP 119 (2.34)-(2.39) read on p. 261; (Fl8)). t_n >= t_gamma for every level (flow bounds).
 - **(I-K) Scales.** Rc_k >= (log(x_k - c_5))^r with r >= 2, k = h + Rc_k (I:77938-77954, with r >= 2 there).
 
-**Floor (M).** M >= 16 L s_0 R_1M_1 with s_0 := 2 + ceil(2 log_2 L_0), so that 2^{s_0} >= 4 L_0^2; and M >= 4 W_aux, W_aux the auxiliary width of b102 H14. M is chosen after L, L_0 and b102's R_1M_1, as the account's M >= 2LR_1M_1 of `4.9:prop-real-backgrounds` already is.
+**Floor (M).** M >= max{16 L s_0, 8 L^2} R_1M_1 with s_0 := 2 + ceil(2 log_2 L_0), so that 2^{s_0} >= 4 L_0^2; and M >= 4 W_aux, W_aux the auxiliary width of b102 H14. M is chosen after L, L_0 and b102's R_1M_1, as the account's M >= 2LR_1M_1 of `4.9:prop-real-backgrounds` already is.
 
 ### 5.2 Lemma C: chains in the graded region (proved)
 
@@ -95,7 +99,7 @@ A chain of length i from y is a sequence y = z_0, ..., z_i of blocks with z_{t+1
 **Lemma C.** Assume (I-G) and the floor (M). Let y be a block of G of level j.
 - (C0) box~(y) meets at most two zones, and they are consecutive among j-1, j, j+1.
 - (C1) If z is in G and |o(z) - j| = m >= 1, then d_N^G(y,z) >= (m - 1) s_0.
-- (C2) i_S(y) >= (1/2) [ (h - j - 1)^+ s_0 + (d_sc(y, S) - 1)/8 ]. In particular i_S(y) >= (1/2)[(h - j - 1)^+ s_0 + (Rc_k - 4)/32] if d_sc(y, S) >= Rc_k/4.
+- (C2) i_S(y) >= (1/2) [ (h - j - 2)^+ s_0 + (d_sc(y, S) - 1)/8 ]. In particular i_S(y) >= (1/2)[(h - j - 2)^+ s_0 + (Rc_k - 4)/32] if d_sc(y, S) >= Rc_k/4.
 
 *Proof.* A block of level m has side L^m eta, and box~ of it lies within sup-distance 4R_1M_1 L^m eta of it. If z_{t+1} is in N(z_t), points of z_t and of z_{t+1} are within (4R_1M_1 + 1) L^{o(z_t)} eta + L^{o(z_{t+1})} eta of each other; call this the step bound.
 
@@ -103,35 +107,35 @@ A chain of length i from y is a sequence y = z_0, ..., z_i of blocks with z_{t+1
 
 (C1) Let m >= 2, say o(z) = j + m. Levels change by at most one per step, by (C0). For each l with j < l < j + m, let tau_l be the first index with z_t in Omega_{l+1}, and sigma_l the last index before tau_l with z_t in Omega_l^c. The blocks strictly between lie in zone l, hence have level l; the block at sigma_l has level l - 1 and the block at tau_l level l + 1. Points of the blocks at sigma_l and tau_l are at least M L^l eta apart. By the step bound, each of the tau_l - sigma_l steps moves at most (4R_1M_1 + 1 + L) L^l eta <= 6 L R_1M_1 L^l eta. So tau_l - sigma_l >= M/(6 L R_1M_1) >= s_0 + 1 by (M). If o(z) = j - m, the roles of Omega_l^c and Omega_{l+1} are exchanged; the first step of each crossing starts at a block of level l + 1 and moves at most (4R_1M_1 + 1) L^{l+1} eta + L^l eta <= 6 L R_1M_1 L^l eta, and the others start at blocks of level l, so tau_l - sigma_l >= s_0 + 1 again. The open index intervals (sigma_l, tau_l) for distinct l are disjoint, since their blocks lie in distinct zones, and consecutive closed intervals share at most one index. Summing over the m - 1 zones, i >= (m-1) s_0.
 
-(C2) A chain that reaches the cut region reaches S, and S lies in Omega_h (I-G)(c). From level j it must cross the zones j+1, ..., h-1, so by the argument of (C1) its length is at least (h - j - 1)^+ s_0. Separately, by the step bound and (M), a step from a block of level l <= h moves less than the side M L^{l-1} eta of a cell of level l - 1, the finest cells its box~ meets (C0). So it crosses at most one cell boundary in each of the d = 4 directions on each side and changes d_sc to a fixed set by at most 2d = 8 (reading of d_sc as the path metric that counts cells, I:91723). So the chain has length at least (d_sc(y, S) - 1)/8. The larger of two numbers is at least their mean. QED.
+(C2) A chain that reaches the cut region reaches S, and S lies in Omega_h (I-G)(c). Its last block in G is within one step of Omega_h, so by (C0) it has level at least h - 1. Before that the chain stays in G and climbs from level j to level h - 1, crossing the zones j+1, ..., h-2; by the argument of (C1) its length is at least (h - j - 2)^+ s_0. Separately, by the step bound and (M), a step from a block of level l <= h moves less than the side M L^{l-1} eta of a cell of level l - 1, the finest cells its box~ meets (C0). So it crosses at most one cell boundary in each of the d = 4 directions on each side and changes d_sc to a fixed set by at most 2d = 8 (reading of d_sc as the path metric that counts cells, I:91723). So the chain has length at least (d_sc(y, S) - 1)/8. The larger of two numbers is at least their mean. QED.
 
 ### 5.3 Corollary B1: the base bound that CA reads (proved, as an implication)
 
 **Corollary B1.** Assume (LR), (I-A), (I-G), (I-D), (I-R), (I-T), (I-K), the floor (M), and the two ceilings (Gamma_1), (Gamma_2) below, each a one-sided cap of degree minus infinity fixed last. Let C be a completing component at a completion date and y a block of B''_k of level at most 1 within sup-distance 20 M eta of Col(C). Then U_2 obeys (T1) on y at radius
 
-  rho(y) <= B_3 C_1 eps_1,   C_1 := 6 K_d c_R L_0^4,
+  rho(y) <= 2 B_3 C_1 eps_1,   C_1 := 6 K_d c_R L_0^4,
 
 and every plaquette p of level one attached to such a block satisfies |dU_2(p) - 1| <= (phi_flat/64) r_1(1).
 
 *Proof.* The block y lies in Z_1 (the boundaries of Omega_1 and Lambda_1 are at least 2MR_1 cells of level one apart, I:63572-63574, so blocks within 20 M eta of Col(C), which lies outside Omega_1, avoid Lambda_1), hence in Z_h, at d_sc-distance at least Rc_k - 2 from S (I-G)(b); so y is in G, where B_2 = B''_k and V_2 = V''. Theorem G applies by (I-A) and (LR). Split the supremum in Theorem G by whether the chain stays in G:
 
-  rho(y) <= B_3 max{ sup_{z in G} e(z) 2^{-d_N^G(y,z)}, a_1 2^{-i_S(y)} }.
+  rho(y) <= 2 B_3 max{ sup_{z in G} t(z) 2^{-d_N^G(y,z)}, a_1 2^{-i_S(y)} }.
 
-*Chains in G.* Let z be in G, of level lambda. By (I-D), e(z) <= 6 K_d L_0^{2 lambda} eps_lambda, since nu(z) <= lambda. By (I-R), eps_lambda <= c_R max{1, lambda - 1}^{1/2} eps_1 for every lambda >= 0. By (C1) with j <= 1, d_N^G(y,z) >= (lambda - 2)^+ s_0. Hence e(z) 2^{-d} <= 6 K_d c_R eps_1 L_0^4 (L_0^2 2^{-s_0})^{(lambda-2)^+} max{1, lambda-1}^{1/2} <= C_1 eps_1, because L_0^2 2^{-s_0} <= 1/4 and 4^{-n}(n+1)^{1/2} <= 1 for n >= 0.
+*Chains in G.* Let z be in G, of level lambda. By (I-D), t(z) <= 6 K_d L_0^{2 lambda} eps_lambda, since nu(z) <= lambda. By (I-R), eps_lambda <= c_R max{1, lambda - 1}^{1/2} eps_1 for every lambda >= 0. By (C1) with j <= 1, d_N^G(y,z) >= (lambda - 2)^+ s_0. Hence t(z) 2^{-d} <= 6 K_d c_R eps_1 L_0^4 (L_0^2 2^{-s_0})^{(lambda-2)^+} max{1, lambda-1}^{1/2} <= C_1 eps_1, because L_0^2 2^{-s_0} <= 1/4 and 4^{-n}(n+1)^{1/2} <= 1 for n >= 0.
 
-*Chains to the cut region.* By (C2) with j <= 1 and d_sc(y, S) >= Rc_k/4, 2^{-i_S(y)} <= 2^{-(h-2)^+ s_0/2} 2^{-(Rc_k - 4)/64}. By (I-R) with n = k > m = 1, g_k <= (1+beta_0)(k-1)^{1/2} g_1, so e^{-t_1/2} >= e^{-t_k/2} (1+beta_0)^{-1} (k-1)^{-1/2}; and k - 1 = h - 1 + Rc_k <= (1+h) Rc_k. Since eps_1 = A_0 e^{-t_1/2} t_1^{p_0} >= A_0 e^{-t_1/2},
+*Chains to the cut region.* By (C2) with j <= 1 and d_sc(y, S) >= Rc_k/4, 2^{-i_S(y)} <= 2^{-(h-3)^+ s_0/2} 2^{-(Rc_k - 4)/64}. By (I-R) with n = k > m = 1, g_k <= (1+beta_0)(k-1)^{1/2} g_1, so e^{-t_1/2} >= e^{-t_k/2} (1+beta_0)^{-1} (k-1)^{-1/2}; and k - 1 = h - 1 + Rc_k <= (1+h) Rc_k. Since eps_1 = A_0 e^{-t_1/2} t_1^{p_0} >= A_0 e^{-t_1/2},
 
   C_1 eps_1 >= C_1 A_0 e^{-t_k/2} (1+beta_0)^{-1} (1+h)^{-1/2} Rc_k^{-1/2}.
 
-Now 2^{-(h-2)^+ s_0/2} (1+h)^{1/2} <= 3^{1/2} for all h >= 0, as s_0 >= 2. So a_1 2^{-i_S(y)} <= C_1 eps_1 follows from the ceiling
+Now 2^{-(h-3)^+ s_0/2} (1+h)^{1/2} <= 2 for all h >= 0, as s_0 >= 2. So a_1 2^{-i_S(y)} <= C_1 eps_1 follows from the ceiling
 
-  (Gamma_2)  3^{1/2} (1+beta_0) a_1 R^{1/2} 2^{-(R-4)/64} e^{t/2} <= 6 K_d c_R A_0   for all t >= t_gamma and all R >= (log(e^t - c_5))^r,
+  (Gamma_2)  2 (1+beta_0) a_1 R^{1/2} 2^{-(R-4)/64} e^{t/2} <= 6 K_d c_R A_0   for all t >= t_gamma and all R >= (log(e^t - c_5))^r,
 
-applied at t = t_k >= t_gamma, R = Rc_k (I-K). The left side is largest at the least R once R >= 100, and with r >= 2 it tends to 0 as t tends to infinity; so (Gamma_2) is a one-sided cap of degree minus infinity, and every constant in it is fixed before gamma. (Section 5.4 uses (Gamma_2) with the smaller right side 6 K_d c_R A_0; that form implies this one.) So rho(y) <= B_3 C_1 eps_1.
+applied at t = t_k >= t_gamma, R = Rc_k (I-K). The left side is largest at the least R once R >= 100, and with r >= 2 it tends to 0 as t tends to infinity; so (Gamma_2) is a one-sided cap of degree minus infinity, and every constant in it is fixed before gamma. So rho(y) <= 2 B_3 C_1 eps_1.
 
 *The plaquettes.* A plaquette p of level one attached to y has |dU_2(p) - 1| <= rho(y) L^{-2} (T1). By (I-T), eps_1 = (A_0/C_0^rad) t_1^{p_0-q} alpha_{0,1}, and the ceiling
 
-  (Gamma_1)  64 B_3 C_1 (A_0/C_0^rad) t_gamma^{p_0 - q} <= phi_flat
+  (Gamma_1)  128 B_3 C_1 (A_0/C_0^rad) t_gamma^{p_0 - q} <= phi_flat
 
 gives |dU_2(p) - 1| <= (phi_flat/64) alpha_{0,1} L^{-2} = (phi_flat/64) r_1(1). QED.
 
@@ -149,7 +153,7 @@ Corollary B1 uses the weighted data bound and needs nothing about q beyond (Fl8)
 
 **Corollary B2.** Assume (LR), (I-A), (I-G), (I-D), (I-N0), (I-R), (I-T), (I-K), (Q), the floor (M), (Gamma_2), and the ceiling (Gamma_3) below. Then:
 
-- (a) rho(y) <= B_3 c_R eps^D_n for every block y of G of level n := o(y) with d_sc(y, S) >= Rc_k/4;
+- (a) rho(y) <= 2 B_3 c_R eps^D_n for every block y of G of level n := o(y) with d_sc(y, S) >= Rc_k/4;
 
 and for every block y of the core K, of level n >= 1:
 
@@ -159,17 +163,17 @@ and for every block y of the core K, of level n >= 1:
 
 These are thresholds at weight w = 1, factor phi_flat and multiplier c = 1, the smallest the account's clause allows; so (b)-(d) hold for every w >= 1, c >= 1, F >= phi_flat, as the account's own-level bound is stated (I:138438-138444).
 
-*Proof of (a).* As in B1, rho(y) <= B_3 max{ sup_{z in G} e(z) 2^{-d_N^G(y,z)}, a_1 2^{-i_S(y)} }. For z in G of level lambda, (I-D) and (I-N0) give e(z) <= eps^D_lambda, and (I-R) and (C1) give e(z) 2^{-d} <= c_R max{1, m}^{1/2} 2^{-(m-1)^+ s_0} eps^D_n <= c_R eps^D_n, m := |lambda - n|, since m^{1/2} 2^{-(m-1) s_0} <= 1 for m >= 1. For the cut region, d_sc(y, S) >= Rc_k/4 and (C2) give the same bound on i_S(y) as in B1, with h - 2 replaced by h - n - 1. Then, exactly as in B1 with level 1 replaced by n and k - n <= (1 + h - n) Rc_k, (Gamma_2) gives a_1 2^{-i_S(y)} <= 6 K_d c_R A_0 e^{-t_n/2} <= c_R eps^D_n, since eps^D_n >= 6 K_d A_0 e^{-t_n/2}.
+*Proof of (a).* As in B1, rho(y) <= 2 B_3 max{ sup_{z in G} t(z) 2^{-d_N^G(y,z)}, a_1 2^{-i_S(y)} }. For z in G of level lambda, (I-D) and (I-N0) give t(z) <= eps^D_lambda, and (I-R) and (C1) give t(z) 2^{-d} <= c_R max{1, m}^{1/2} 2^{-(m-1)^+ s_0} eps^D_n <= c_R eps^D_n, m := |lambda - n|, since m^{1/2} 2^{-(m-1) s_0} <= 1 for m >= 1. For the cut region, d_sc(y, S) >= Rc_k/4 and (C2) give the same bound on i_S(y) as in B1, with h - 3 replaced by h - n - 2, and 2^{-(h-n-2)^+ s_0/2}(1 + h - n)^{1/2} <= 2. Then, exactly as in B1 with level 1 replaced by n and k - n <= (1 + h - n) Rc_k, (Gamma_2) gives a_1 2^{-i_S(y)} <= 6 K_d c_R A_0 e^{-t_n/2} <= c_R eps^D_n, since eps^D_n >= 6 K_d A_0 e^{-t_n/2}.
 
-*Proof of (b).* A plaquette attached to y has |dU_2(p) - 1| <= rho(y) L^{-2n} <= B_3 c_R delta_D(t_gamma) alpha_{0,n} L^{-2n}. For entry 3, Lemma J with theta <= rho' L^{-2n}, rho' the largest rho over the blocks attached to the six plaquettes (all in G at d_sc-distance at least Rc_k/2 - 2 >= Rc_k/4 from S, of level >= n - 1, so rho' <= B_3 c_R^2 eps^D_n by (a) and (I-R)), gives eta^3 |J(U_2)(b)| <= 2.2 rho' L^{-3n} once rho' <= 1/34. The ceiling
+*Proof of (b).* A plaquette attached to y has |dU_2(p) - 1| <= rho(y) L^{-2n} <= 2 B_3 c_R delta_D(t_gamma) alpha_{0,n} L^{-2n}. For entry 3, Lemma J with theta <= rho' L^{-2n}, rho' the largest rho over the blocks attached to the six plaquettes (all in G at d_sc-distance at least Rc_k/2 - 2 >= Rc_k/4 from S, of level >= n - 1, so rho' <= 2 B_3 c_R^2 eps^D_n by (a) and (I-R)), gives eta^3 |J(U_2)(b)| <= 2.2 rho' L^{-3n} once rho' <= 1/34. The ceiling
 
-  (Gamma_3)  64 (2.2) B_3 c_R^2 delta_D(t_gamma) <= phi_flat,   with   B_3 c_R^2 delta_D(t_gamma) <= 1/34,
+  (Gamma_3)  128 (2.2) B_3 c_R^2 delta_D(t_gamma) <= phi_flat,   with   2 B_3 c_R^2 delta_D(t_gamma) <= 1/34,
 
 gives both bounds; it is a one-sided cap of degree minus infinity under (Q). U_2 is real, so A' = 0 and entries 6, 7 vanish; entry 5 equals entry 1.
 
-*Proof of (c).* b102 H14.1 (`library/b102.md` 1858-1886, checked in `gates/b102-gate-a.md`): around a cube of side n s, s = L^lambda eta, n <= CM, an enclosing cube of side M'' s with M'' <= CM + 2 W_aux carries a gauge with s|A| + s^2 |nabla A| <= C_L M'' eps', where eps' is the regularity radius on the enclosing region, read at the finer scale of a two-layer cube at the cost of L^2, L^3. The enclosing region is within 2 cells of level lambda of the cube (M >= 4 W_aux), so its blocks are at d_sc-distance at least Rc_k/2 - 4 >= Rc_k/4 from S, and eps' <= L^3 B_3 c_R^2 eps^D_lambda by (a) and (I-R). The ceiling
+*Proof of (c).* b102 H14.1 (`library/b102.md` 1858-1886, checked in `gates/b102-gate-a.md`): around a cube of side n s, s = L^lambda eta, n <= CM, an enclosing cube of side M'' s with M'' <= CM + 2 W_aux carries a gauge with s|A| + s^2 |nabla A| <= C_L M'' eps', where eps' is the regularity radius on the enclosing region, read at the finer scale of a two-layer cube at the cost of L^2, L^3. The enclosing region is within 2 cells of level lambda of the cube (M >= 4 W_aux), so its blocks are at d_sc-distance at least Rc_k/2 - 4 >= Rc_k/4 from S, and eps' <= 2 L^3 B_3 c_R^2 eps^D_lambda by (a) and (I-R). The ceiling
 
-  (Gamma_4)  64 C_L (CM + 2 W_aux) L^3 B_3 c_R^2 delta_D(t_gamma) <= phi_flat B C M
+  (Gamma_4)  128 C_L (CM + 2 W_aux) L^3 B_3 c_R^2 delta_D(t_gamma) <= phi_flat B C M
 
 gives (c). C_L, W_aux, L, B, C, M are fixed before gamma. The account's `4.9:prop-real-backgrounds` (b) (index PROVED, I:36501) gives the same conclusion from its regularity hypothesis and may replace H14.1 here.
 
@@ -191,12 +195,12 @@ The increments are the left factors e^{i eta t_s H_s}, s = 3, 4, with their part
 
 *Proof.* Let F(t) := log(e^{tX} e^Y) and G := F - tX - Y. By the proof of (ii) of `4.27:lem-left-factor-algebra` (I:141336-141380), F is defined on [0,1] with |F| < 0.04, and F' = psi(ad_F) X. Write psi(z) - 1 = z phi~(z); from the coefficients listed there, ||phi~(ad_F)|| <= 1/2 + (zeta/12)/(1 - zeta^2) <= 0.511 for zeta = ||ad_F|| <= 0.08. Since [tX, X] = 0, ad_F X = [G + Y, X]. So |G'| <= 0.511 * 2 |G + Y| |X| <= 1.022 (|G| + |Y|) |X|, and G(0) = 0. Gronwall's inequality gives |G(1)| <= |Y| (e^{1.022 |X|} - 1) <= 1.05 |X| |Y|. QED.
 
-**Lemma A_n (left-factor algebra at level n).** Let y be a point, n >= 0 and l := L^n eta. Let U = e^{i eta A'} U with U G-valued, and h a g^c-valued 1-form, on the bonds read by `4.27:lem-left-factor-algebra` at y. Put N := sup max{ l|h|, l^2 |nabla_U h| } (covariant derivative at the full U), a := sup l|A'|, theta := max |dU(p) - 1| over plaquettes based at y. Assume N <= 1/40, a <= 1/80, theta <= 1/10. Then, with U^+ := e^{i eta h} U = e^{i eta A'^+} U:
-- (i_n) |dU^+(p) - dU(p)| <= L^{-2n} (2.9 + 5.6 theta L^n) N;
+**Lemma A_n (left-factor algebra at level n).** Write Ub for the full configuration, Ub = e^{i eta A'} U with U G-valued (the account's bold U). Let y be a point, n >= 0 and l := L^n eta, and let h be a g^c-valued 1-form, all on the bonds read by `4.27:lem-left-factor-algebra` at y. Put N := sup max{ l|h|, l^2 |nabla_{Ub} h| }, a := sup l|A'|, theta := max |dUb(p) - 1| over plaquettes based at y. Assume N <= 1/40, a <= 1/80, theta <= 1/10. Then, with Ub^+ := e^{i eta h} Ub = e^{i eta A'^+} U:
+- (i_n) |dUb^+(p) - dUb(p)| <= L^{-2n} (2.9 + 5.6 theta L^n) N;
 - (ii_n) l |A'^+ - A'| <= 1.06 N;
-- (iii_n) l^2 |nabla_{U} (A'^+ - A')| <= (1 + 4.3 a) N <= 1.06 N.
+- (iii_n) l^2 |nabla_U (A'^+ - A')| <= (1 + 4.3 a) N <= 1.06 N.
 
-*Proof.* Since l >= eta, the hypotheses of the unit-spacing lemma hold for eta h and eta A', so every identity of its proof holds; only the bookkeeping of sizes changes. (i_n): in its display (4.27:eq-left-factor-algebra-5), |S| <= 2 eta^2 sup|nabla h| + (2 theta/(1 - theta))(2.03) eta sup|h| <= 2 L^{-2n} N + 4.6 theta L^{-n} N, using eta^2 = L^{-2n} l^2 and eta = L^{-n} l. Each |A_j| <= 1.26 eta |h| =: alpha' <= 1.26 L^{-n} N, so |Xi - S| <= 8.6 alpha'^2 <= 13.7 L^{-2n} N^2 <= 0.35 L^{-2n} N. Then |Xi| <= 0.071 and |dU^+(p) - dU(p)| <= |e^Xi - 1| |W| <= 1.21 |Xi|, which gives (i_n). (ii_n): multiply (4.27:eq-left-factor-algebra-3) by L^n. (iii_n): A'^+ - A' = h + E with E the BCH remainder at each bond; by Lemma BCH, l|E| <= 1.1 L^{-n} (l|h|)(l|A'|), so l^2 |nabla_U E| <= 2 L^n l |E| <= 2.2 N a. The change from nabla_U to nabla_{U} at the G-part costs (e^{2 eta|A'|} - 1) eta |h| <= 2.1 L^{-2n} N a in eta^2-units, that is 2.1 N a in l^2-units. Sum. QED.
+*Proof.* Since l >= eta, the hypotheses of the unit-spacing lemma hold for eta h and eta A', so every identity of its proof holds; only the bookkeeping of sizes changes. (i_n): in its display (4.27:eq-left-factor-algebra-5), |S| <= 2 eta^2 sup|nabla_{Ub} h| + (2 theta/(1 - theta))(2.03) eta sup|h| <= 2 L^{-2n} N + 4.6 theta L^{-n} N, using eta^2 = L^{-2n} l^2 and eta = L^{-n} l. Each |A_j| <= 1.26 eta |h| =: alpha' <= 1.26 L^{-n} N, so |Xi - S| <= 8.6 alpha'^2 <= 13.7 L^{-2n} N^2 <= 0.35 L^{-2n} N. Then |Xi| <= 0.071 and |dUb^+(p) - dUb(p)| <= |e^Xi - 1| |W| <= 1.21 |Xi|, which gives (i_n). (ii_n): multiply (4.27:eq-left-factor-algebra-3) by L^n. (iii_n): A'^+ - A' = h + E with E the BCH remainder at each bond; by Lemma BCH, l|E| <= 1.1 L^{-n} (l|h|)(l|A'|), so l^2 |nabla_U E| <= 2 L^n l |E| <= 2.2 N a. Replacing nabla_{Ub} h by nabla_U h costs (e^{2 eta|A'|} - 1) eta |h| <= 2.1 L^{-2n} N a in eta^2-units, that is 2.1 N a in l^2-units (as in the account's proof of (iii)). Sum. QED.
 
 **Lemma E' (distance of core blocks from S).** Assume (c7)(d) of `4.21:def-strips-geometry` (zones at least L cells of their level thick, I:63571-63586, as `ca-claude.md` Lemma E does). For every block y of K of level n, d_sc(y, S) >= (1/2) [ Rc_k/2 + (L - 2)(h - n - 1)^+ ].
 
@@ -232,3 +236,36 @@ The account's three shares (bend, source, map H') are this total split by kind; 
 - **Coverage in consumer A.** Our B_S is the band of d_sc-width Rc_k/2 at S. That the keystone region covers B_S is part of A's own argument and is not checked here.
 - **Not reconstructed.** The account's Gamma_flat, bend floor and ownership floor, and the split of the 3/64 into three shares. No consumer reads them separately.
 - **Tries to kill the statement.** (1) A weighted form fails in general: at blocks raised by nu levels the data may be as large as 6 L_0^{2 nu} eps_m, and with weights varying across original shells thinner than one reset step, a weighted bound w_{B^t}(y) eps at an inner shell cannot be read off from Theorem G (section 5.4). This kills the route "weighted data, weighted thresholds", not (B-in): the account's absorption L_0^{2 nu} <= l (I-N0) gives the unweighted form. (2) A uniform-epsilon bound from b102 Theorem 1 alone fails: it gives rho <= B_3 eps_{max}, and eps_h/eps_n can be as large as c_R (h-n)^{1/2}, so the 1/64 is not uniform in the age. Theorem G repairs this by the factor 2^{-d_N}. No numerical run was used.
+
+## Result
+
+**Proof, as an implication.** The sealing construction is supplied, for SU(2), as follows. Proved by Claude, not yet checked by the other model.
+
+1. **CA's input (B-in) is discharged (Corollary B1).** At every completion date, for every completing component C, U_2 obeys Balaban's regularity tests at radius 2 B_3 C_1 eps_1 on every block of level at most 1 within 20 M eta of Col(C). Hence every level-one plaquette there has |dU_2(p) - 1| <= (phi_flat/64) r_1(1) < 2.6 x 10^-4 alpha_{0,0} (the last step by `4.27:lem-level-zero-ratios` (a), as in `ca-claude.md` Lemma B(i)). This is Lemma B(i) of `library/ca-claude.md` and the level-one part of Lemma B(iii), without (B-in) and without (S-B). The bound is uniform in the cutoff, the density, h - n, the history, and the numbers of exclusions, blocks and strata.
+2. **The account's own-level bound holds on the core (Corollary B2).** On K (blocks of level >= 1 at d_sc-distance at least Rc_k/2 from S), the base pair (U_2, J(U_2)) obeys every direct entry at 1/64 of phi_flat r_a(o(x)), entries 6 and 7 vanish, and every cube of side at most CML^lambda eta meeting K carries a gauge at 1/64 of phi_flat BCM alpha_{0,lambda}. Entries 2 and 4 hold under the account's refinement statement (Ref). This is the printed form, for every w >= 1, c >= 1, F >= phi_flat (I:138438-138444).
+3. **Placement and (S-B) (Lemma P).** W_c of every dissolving piece lies in K, its frozen cubes meet K, and B_S is the band of width Rc_k/2 at S.
+4. **Shares (Proposition Sh).** At every block of K, the layers b_3, b_4 and their segments move every entry by at most 3/64 of phi_flat times its threshold and keep the cube gauges of U_2, as an implication from the inputs of `library/ca-f.md`.
+
+So clauses (b) and (c) of `4.27:prf-room-dissolving` and the core step of `4.27:prf-ambient-inclusion` get their inputs as implications. Neither those lemmas nor the arrest theorem is used to supply any of them.
+
+**New mathematics here.** Theorem G (section 4): Balaban's reset of CMP 102 section F, read at one block and iterated (Lemma I), bounds the minimiser by the data with weight 2^{-chain distance}. Lemma C (chain geometry), Lemma J (current from the tests), Lemma A_n (left-factor algebra at level n), Lemma BCH, Lemma E', Lemma P. Theorem G is what makes the 1/64 independent of the age: a uniform-epsilon use of b102 Theorem 1 loses a factor up to (h - n)^{1/2}.
+
+**Named inputs** (each cited where used).
+- (LR): CMP 102 (144)-(168) and its rebuild b102 H21 (checked by Claude, first failing step none), read at one block. This reading is new and is **the first place the proof can fail**.
+- (I-A): U_2 is an admissible instance of b102 Theorem 1 (CMP 122b (1.52)-(1.53), CMP 119 (2.12)-(2.15)).
+- (I-D), (I-N0): the account's data clause (gamma) and its bound L_0^{6N_0} <= l^2 (I:137012-137036, I:68331-68334), from CMP 122a (1.24), CMP 98 (54) and Proposition 2, CMP 119 p. 256.
+- (I-G): admissible geometry ((G) of `4.27:lem-live-piece-increments`, (c7)(d) for Lemma E'), and the law-site separation d_sc(Z_h, S) >= Rc_k - 1 (index PROVED).
+- (I-R), (I-T), (I-K): CMP 119 (2.4)-(2.8) read on the printed pages; the account's radii and scales.
+- For B2 only: condition (Q), q > p_0 + 2r; (Ref) for entries 2, 4.
+- For Sh only: (N1)-(N8) and (G-sep) of `library/ca-f.md` (with (N1) the layer theorem (L) owned by `stage-claude`), and the rescaling bound 1(e).
+- Floor (M) on M; ceilings (Gamma_1), (Gamma_2) for B1, and (Gamma_3), (Gamma_4), (Gamma_Sh) for B2 and Sh, all one-sided caps of degree minus infinity fixed last.
+
+**Kind (How we work, item 9).** Proof of a step the account assumes: it cites "the own-level bound", "the share statement" and "the placement statement" of its sealing construction (I:138361-138483, I:136724-136756) and states none of them (`gates/ca-gate.md` section 4).
+
+**What changes for consumers.** In `library/ca-claude.md`, named input 1 ((B-in) with (S-B)) is replaced by the inputs of Corollary B1. CA's first open inputs are then (LR) as read here, (I-A), and the layer inputs of `library/ca-f.md` ((N1)-(N3)). No consumer statement changes.
+
+**Not shown.** See section 8: (LR) as a reading, (I-A), SU(N) for N >= 3, (Q) for B2, the coverage of B_S by the keystone region in consumer A, and the account's three-way split of the shares.
+
+**Suggested next steps, for the lead.** (a) One line-by-line check by Codex, with attention to (LR) (does CMP 102 (145)-(168) read only box~ and the central layers?), Lemma C and Theorem G. (b) If it passes, update the CA node in `library/t0-tree.md` and its registry row. (c) Corollary B2 proves a statement the account uses and does not supply (`gates/ca-gate.md` section 4: "no noncircular supplier"). After a check, it may be a candidate under How we work item 6; nothing is posted.
+
+**Provenance.** Claude Opus 5.5 (claude-opus-5-5), max effort, Mac mini worker, 2026-11-06, pinned at cf6677779. Account files fetched by URL (SHA-256 as in `library/arr.md`). Balaban's CMP 102 pp. 300-305 and CMP 119 pp. 255-256, 261 were read on printed pages rendered locally from `~/ym4d-papers`; nothing was copied into the repository. No computer-assisted step; no numerical run.

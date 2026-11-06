@@ -102,3 +102,125 @@ So U_2 obeys (T1) read at scale λ on Q^+ at radius ε' := 2 L^3 B_3 c_R^2 ε^D_
 give C_L M'' ε' <= (φ_flat/64) B C M α_{0,λ} <= c_12. (Γ_4) has degree p_0 + 2r - q < 0 under (Q); (Γ_5) has degree minus infinity; both are fixed last. QED.
 
 *Not covered.* (a) A cube that meets K_0 but violates (S1) is not covered; no consumer routes one to the base bound. (b) b-in.md's "every cube of side at most CML^λη meeting K" is withdrawn. (c) The floor (M') is new; it is of the kind b102's order of constants allows ("Choose the original block and separation floors large ... for ... the independent auxiliary gauge family", b102 lines 1927-1929). M is fixed at Stage 6 of the account's order (I:1537), after d, L and the local constants.
+
+## 4. BLOCK 2: placement with raw points, and the sets the consumers use
+
+### 4.1 Lemma P' (placement, repaired)
+
+**Lemma P'.** Let c be a piece dissolving at the completion step, and C a completing component.
+- (i) W_c ⊂ X_c ⊂ Z_h ⊂ K_0, and W_c ∩ {o >= 1} ⊂ K_+. Raw cells of W_c lie in K_0 \ K_+.
+- (ii) Every cube of Q_𝔅(x), x ∈ W_c, 𝔅 ≼ B''_k, and every cube of the frozen family of c, lies in X_c ⊂ K_0 and satisfies (S1), (S2) of B2(c').
+- (iii) Every block of level <= 1 within 20Mη of Col(C) lies in Z_1 ⊂ Z_h ⊂ K_0. Every index-zero cube meeting Col(C) has at most 10M sites per side (I:142775-142777).
+
+*Proof.* (i) X_c ⊂ Z_{k_c} ⊂ Z_h by (T2), (T4) (I:138393-138398). Z_h ⊂ D_2 and d_sc(Z_h, 𝖲) >= Ř_k - 1 >= Ř_k/2 (section 2). The cells of Z_h are in the support of B_2 and off 𝖲, so in G. Hence Z_h ⊂ K_0. (ii) is Lemma P2. (iii) is the first paragraph of the proof of B1 (gate section 4: ADVANCE). QED.
+
+This replaces b-in.md Lemma P (i). The false step there was "a cube meeting W_c meets a block of K", with K of positive level (gate section 6). Lemma P2 does not use it. A cube of family λ >= 1 has no raw cell (Lemma F), and every required cube lies in X_c.
+
+### 4.2 The base bound at raw cells (B2 extended to level 0)
+
+Consumer R reads clauses at every x ∈ W_c, raw cells included (I:138367: "Let x ∈ W_c"). At a raw cell the entries 1, 3, 5, 6, 7 are read on the pinned plaquettes, the current and A' (I:142600-142605). The base pair there is the raw datum: U_2 reads V'' off Ω''^{~2}_{h+1} (I:138407-138411), and every bond of a pinned plaquette is a level-0 block, fixed by the constraint.
+
+**Corollary B2(b0).** Under the hypotheses of B2(a) and (Γ_3), entries 1, 3, 5 of (U_2, J(U_2)) at every raw block y of K_0 are at most (φ_flat/64) r_a(0), and entries 6, 7 vanish.
+
+*Proof.* B2(a) is stated for every block y of G of level n >= 0 with d_sc(y, 𝖲) >= Ř_k/4, so it holds at n = 0: ρ(y) <= 2 B_3 c_R ε^D_0. The proof of B2(b), with the gate's repaired current step (gate section 5, B2(b): η^3|J(U)(b)| <= c_π ρ(y) L^{-3n}, c_π <= 2, B_3 >= 12), uses only this bound and (T1) at level n. At n = 0 it gives |dU_2(p) - 1| <= 2 B_3 c_R δ_D(t_γ) α_{0,0} and η^3|J| <= 4 B_3 c_R δ_D(t_γ) α_{0,0}. (Γ_3) is stronger than 256 B_3 c_R δ_D(t_γ) <= φ_flat (gate section 5). U_2 is real, so A' = 0. QED.
+
+At a raw cell, U_2 = V'' on the pinned plaquettes. So B2(b0) there is the statement that the raw datum obeys the level-0 tests at 1/64 of the level-0 radius. Its input is (I-D) at level 0 (the account's data clause (γ), I:137012-137036). If (I-D) fails at a raw cell of W_c, then clause (b) of `4.27:prf-room-dissolving` fails there for every choice of B_S that W_c avoids. B2(a) does not repair a datum. The account's own ambient-inclusion lemma lists the presented pair at raw points of the core as not asserted (I:136398-136405, I:136553-136556).
+
+Cube clause at family 0: an index-0 cube □ ∋ x, x ∈ W_c, has side at most 2Mη and lies in X_c (Lemma P2). Every plaquette in it is attached to a block of level j >= 0 in K_0, so |dU_2(p) - 1| <= 2 B_3 c_R ε^D_j L^{-2j} <= 2 B_3 c_R^2 ε^D_0 =: ε. The level-zero axial gauge (b102 H14.1, last paragraph, `library/b102.md` 1867-1869; the same bound is input (f) of `4.27:lem-real-point-collar`, I:142639-142646) gives η|A|, η^2|∇A| <= 50(d-1) M ε when 2(d-1)(2M)ε <= 1/10. The ceiling
+
+  (Γ_0)  64 · 50 (d-1) M · 2 B_3 c_R^2 δ_D(t_γ) <= φ_flat B C M,  and  12 M · 2 B_3 c_R^2 δ_D(t_γ) sup α_0 <= 1/10,
+
+gives 1/64 of the family-0 cube threshold BCMα_{0,0}. (Γ_0) has degree p_0 + 2r - q < 0, fixed last.
+
+### 4.3 B_S: the account's descriptions, the choice made here, and every use
+
+The account names B_S in three ways and fixes it nowhere:
+- "the subset of S fixed by that construction which the pieces considered avoid" (I:138361-138363), S := ∂(Ω''_{h+1})^~;
+- "the set near S that the base bound on the core excludes" (I:136725-136726);
+- "the part of S avoided by the core D_2 \ B_S on which the pair is read", where "S denotes the region inside which the two layers forming D_2 below are placed" (I:142294-142297).
+
+The construction is the supplier, so the choice is made here: **B_S := D_2 \ K_0.** It is the band of D_2 at d_sc < Ř_k/2 from the source band 𝖲, which sits next to the cut S. It is "near S" and inside the region holding D_2, as the second and third descriptions say. It is not a subset of the surface ∂(Ω''_{h+1})^~, as a literal reading of the first would ask. Under that literal reading the core D_2 \ B_S would contain the cells of D_2 inside 𝖲. There U_2 reads the cut datum of B_h, which (I-A) admits only at radius a_1, and nothing in this note bounds it at 1/64 of φ_flat r_a(o). No consumer reads a cell of D_2 \ K_0 for the base bound, as the table shows.
+
+| Use of B_S in the account | What it asks | Status with B_S := D_2 \ K_0 |
+|---|---|---|
+| R, Place, I:138402-138404 | W_c "two layers of cubes of side LMR_{h+1} inside S" and "off B_S" | W_c ⊂ Z_h, two layers inside the cut (D_2 = (Z'_h)^{~2}); W_c ⊂ K_0 (P' (i)). Holds. |
+| R (b), I:138383-138385, I:138438-138448 | base bound on cells of D_2 \ B_S, read at x ∈ W_c; cube clause with the base gauges | B2(b), B2(b0) on K_0; B2(c') and the family-0 gauge on the cubes of Q(x) (P' (ii)); entries 2, 4 by B2(d) under (Ref). Holds as an implication. |
+| A core, I:136724-136745 | core "holds every piece dissolved at 𝔒"; 1/64 + 3/64 there | P' (i); base as above; increments by Sh' (section 5), one-sided for entries 2, 4. |
+| A frozen cubes, I:136752-136756; interface (iv), I:139967-139971 | frozen-family cubes "whole in D_2 \ B_S", given the core's gauge | P' (ii) and B2(c'). Holds. |
+| Collar displacement (f), I:142294-142313, I:142583-142586 | core contains the collar; base (U_2, J(U_2)) and layers H_3, H_4 there | Col(C) ⊂ Z_h ⊂ K_0 (P' (iii)). The base and layers on D_2 are the layer construction (section 5.1). |
+| Current localisation (b), I:92444-92445 | deep-current identity on stencils meeting D_2 ∪ B_S | B_S ⊂ D_2, so the hypothesis reads on D_2 only. This weakens what is asked; no conclusion changes. |
+| A's decomposition, I:139940-139979 | every re-presented cell lies in 𝖹, the core, or the list of the layer bound | **Open, and the account's own (∗) at I:139976-139979.** A cell of B_S is in D_2 ⊂ Z''_{h+1} ⊂ Z. That it lies in 𝖹 or in that list is not shown here. |
+
+So the corrected sets are identified with every set the consumers name. The one remaining obligation is A's coverage of B_S. The account itself marks that step (∗) (I:139976-139979: "that Y' \ 𝖹 is exhausted by the list of the layer bound ... [is] not proved here"). Choosing B_S does not discharge it (gate section 10, item 6).
+
+## 5. BLOCK 3: the layer kernels and Proposition Sh
+
+The gate's blocking step (gate section 7) is the passage from the tuple bound at each layer's kernel (ca-f Proposition R) to the size N_{U_partial}(H_s) with the covariant derivative at the preceding partial product, which Lemma A_n reads. Two things close it: the kernel identity (K-id), read from the account's layer construction, and a comparison lemma (Lemma K) for the case the identity does not cover.
+
+### 5.1 (K-id): the kernel of each layer is the configuration it multiplies
+
+**(K-id).** At the completion site, on D_2, in the presentation gauge:
+- (i) the pair at 𝔟_2 is (U_2, J_2), J_2 = 𝒥(U_2);
+- (ii) for s ∈ {3, 4}, H_s is the response field of the layer theorem at the kernel (W_s, σ_s), where W_s is the pair at stage s: W_3 = U_2 and W_4 = e^{iηH_3} U_2;
+- (iii) the presented chain at (t_3, t_4) is e^{iηt_4H_4} e^{iηt_3H_3} U_2 with current J_2 + Σ_s s^♯_{σ_s}[t_s H_s]; the consumers read b_2, b_3, b_4 and the two segments b_2b_3 (t_4 = 0) and b_3b_4 (t_3 = 1) (I:142334-142338, I:142563-142570).
+
+*Where the account states it.* Each item below is part of the layer construction (Balaban's CMP 122b (1.50)-(1.55) as the account reads it). None is a conclusion of the arrest theorem.
+- (i): "U_{1,2} = U_2" on D_2, CMP 122b (1.53), quoted at I:92022-92024; hypothesis (c) of `4.22:lem-current-localisation` (index PROVED), I:92446-92447.
+- (ii): in the key containment theorem "(W_s, J_s) is the pair at stage s" (I:73071). Its proof is an induction in which stage s derives "(1) the layer theorem ... (3) the entries at 𝔟_s; (4) the induction hypothesis at stage s+1" from the pair at stage s (I:73123-73136). So the layer theorem at stage s is applied at the stage-s pair, and the pair at 𝔟_s is the next stage's pair. At the completion site: "Apply Lemma 4.27:lem-left-factor-algebra layer by layer, with 𝔥 = H_s and with 𝐔 replaced by W_s, the pair obtained after the layers preceding s. The size N_y(H_s) is taken with the covariant derivative ∇_{W_s}" (I:142473-142478). The substitution chain: each row "starts from a critical point P_0 ... (a) P_1 = e^{iη𝐇}P_0", the rows taken "in the order in which the corresponding substitutions are made in [CMP 122b]" (III:9174-9186), namely (1.63), (1.58)/(1.64), (1.57), (1.54), (1.51) (III:10186-10190). The layer s = 3 is (1.54) and s = 4 is (1.51) (I:73107-73111). So the H_4 row comes after the H_3 row and starts from its output. Balaban on (1.54): H''_k is a function of "the fields J_{1,2}", the current of U_{1,2} (quoted at I:92377-92384), so H_3 is built at U_2.
+- (iii) and the single gauge: the chain display (I:142563-142570); "The rotation of the presentation is trivial on D_2" (I:142313-142314), supplied "by the layer construction" (I:142303); "The gauge frame is carried unchanged" (III:9192-9193).
+
+*Reading, not rebuilt.* CMP 122b is not in `~/ym4d-papers`, so (K-id) is the account's description of Balaban's construction, read at five places that agree. Hypothesis (f) of the collar-displacement lemma attributes the base-and-layers fact on the core to "the arrest theorem together with the layer construction" (I:142302-142303). (K-id) uses only the layer-construction half, on D_2. The arrest-theorem half is the core D_2 \ B_S, which section 4 now supplies. So (K-id) does not import the arrest theorem (gate section 9).
+
+*Compatibility with the cancellation datum.* ca-f Proposition R bounds E_{y'}(H_s) by (N1)(b) at whatever kernel the layer is built ("at any determining set", "for every kernel (W, σ) of the theorem's class"). The datum of H_3 is (f_1, arg_{3,2}) with f_1 = G''(σ)J^{𝔟_2} (ca-f (N4)), built from the current of the pair at 𝔟_2, which is W_3's pair. The datum of H_4 is g_k B, supported in 𝖲, and does not involve the kernel. So Proposition R's bounds hold at W_3 = U_2 and W_4 = e^{iηH_3}U_2, given (N7) (p(W_s) <= 1) at these kernels.
+
+### 5.2 Lemma K (changing the connection by a left factor)
+
+Write (∇_{W,μ} h)(x) := η^{-1}(Ad(W(x, x+ηe_μ)) h(x+ηe_μ) - h(x)); the proof is the same for the transport in the other direction. For a block y of level n put l := L^n η and N^W_y(h) := sup max{l|h|, l^2|∇_W h|} over the bonds read at y.
+
+**Lemma K.** Let W = e^{iηA'}U on the bonds read at y, with U G-valued and η|A'| <= 1/80. Let X be a g^c-valued 1-form there with sup l|X| <= 1/100, and W' := e^{iηX}W bondwise. Then for every g^c-valued 1-form h,
+
+  l^2 sup |(∇_{W'} - ∇_W) h| <= 2.1 (sup l|X|)(sup l|h|),   N^{W'}_y(h) <= (1 + 2.1 sup l|X|) N^W_y(h).
+
+*Proof.* On a bond b, Ad(W'(b)) - Ad(W(b)) = (Ad(e^{iηX(b)}) - 1) Ad(e^{iηA'(b)}) Ad(U(b)). Ad(U) is an isometry for the operator norm. ‖e^{ad Z} - 1‖ <= e^{2|Z|} - 1 <= 2|Z| e^{2|Z|} and ‖e^{ad Z}‖ <= e^{2|Z|}. So l^2|(∇_{W'} - ∇_W)h(b)| <= l^2 η^{-1} · 2η|X(b)| e^{2η|X(b)|} e^{2η|A'(b)|} |h| <= 2 e^{0.02 + 0.025} (l|X|)(l|h|) <= 2.1 (l|X|)(l|h|), as η|X| <= l|X| <= 1/100. The second bound follows, since l|h| <= N^W_y(h). QED.
+
+*Use.* Under (K-id), on the segment b_2b_3 the left factor e^{iηt_3H_3} acts on U_2 = W_3. On b_3b_4 the left factor e^{iηt_4H_4} acts on e^{iηH_3}U_2 = W_4. So N^{U_partial}_y(t_s H_s) = t_s N^{W_s}_y(H_s): Lemma K is not needed on the consumers' segments. It covers two other cases. (a) If W_4 = U_2 (the alternative the gate names), then U_partial = e^{iηt_3H_3}U_2 on the square, with X = t_3 H_3. (b) Inside the square (t_3 < 1, t_4 > 0) under (K-id), U_partial = e^{iη(t_3-1)H_3}W_4, with X = (t_3 - 1)H_3, |t_3 - 1| <= 1. In both cases N^{U_partial}(t_4H_4) <= (1 + 2.1F) N^{W_4}(H_4) <= 1.02 N^{W_4}(H_4) when l|H_3| <= F <= 1/200. This is the gate's conditional repair (gate section 7), proved.
+
+### 5.3 Proposition Sh' (repaired)
+
+**Proposition Sh'.** Assume (K-id); ca-f's (N1)-(N8), with (N7) read at the kernels W_3, W_4 at the blocks read from K_0, and (G-sep) extended to every block of K_0 (for z in K_0 and x in T, d_sc(z, x) >= d_sc(z, 𝖲) - 1); B2, B2(b0); Lemma E'; input 1(e) (I:131580-131586) with its premises below; α_0 <= 1/10 on [t_γ, ∞); and the ceiling (Γ_Sh') below. Then at every block y of K_0, of level n >= 0, at every point of the segments b_2b_3 and b_3b_4:
+- (a) entries 1, 3, 5, 6, 7 differ from their values at b_2 by at most (3/64) φ_flat r_a(n);
+- (b) entries 2 and 4 obey Q_e(chain)(y) <= Q_e(𝔟_2)(y) + (3/64) φ_flat r_e(n), e ∈ {2, 4} (one-sided);
+- (c) the G-part, hence every cube gauge, is that of U_2.
+By the radius ratio r_a(μ)/r_a(m) >= (1+β_0)^{-2} g^{-1/2} L^{e_a g} >= 1 for μ < m (I:131441-131446), the same bounds hold with r_a(n) replaced by r_a(n') for every finer birth index n' <= n. They hold a fortiori at every threshold F w c r_a with F >= φ_flat and w, c >= 1.
+
+*Proof.* *Step 1, layer sizes.* Take δ_R <= w δ/2, so p_T = e^{-δ_R d_sc(., T)} lies in M^∧_{δ/2} (ca-f Step 1 with δ/2; gate section 7: "Taking δ_R <= wδ/2 is valid"). Proposition R (ca-f Step 3) gives E_{y'}(H_s) <= (C_D/K_u) ε_Q(k) p_T(y') at every block y', in its unit l_{y'}, at the kernel W_s. The left-factor lemma at y reads h on Δ~(y) and one step further (I:141270-141278). The blocks y' met have d_sc(y, y') <= 2 and level n - 1, n or n + 1 (Lemma C (C0)). Passing to l = L^nη costs at most L for |h| and L^2 for |∇h|. Hence
+
+  N^{W_s}_y(H_s) <= μ(y) := L^2 e^{2δ_R} (C_D/K_u) ε_Q(k) p_T(y).
+
+μ is a constant multiple of p_T, so μ ∈ M^∧_{δ/2}. By (G-sep) and Lemma E' (valid at n >= 0), d_sc(y, T) >= (1/2)[Ř_k/2 + (L-2)(h - n - 1)^+] - 1. By (N8) and (I-R), ε_Q(k) <= K_Q A^+ ρ_C max_i α_{i,k} and α_{i,k} <= c_R (k - n)^{1/2} α_{i,n}, with k - n = Ř_k + h - n. Hence
+
+  μ(y) <= C_S (Ř_k^{1/2} + S_2) e^{-δ_R Ř_k/4} α_{*,n},  C_S := L^2 e^{3δ_R} (C_D/K_u) K_Q A^+ ρ_C^2 c_R,  S_2 := sup_{m>=0} m^{1/2} e^{-δ_R(L-2)(m-1)^+/2},
+
+using (a + b)^{1/2} <= a^{1/2} + b^{1/2}. Put F(y) := μ(y). (Γ_Sh') gives F(y) <= α_{*,n}/200 <= 1/2000.
+
+*Step 2, the kernel.* By (K-id) and Step 1, N^{U_partial}_y(t_s H_s) = t_s N^{W_s}_y(H_s) <= F(y) on both segments, since N is homogeneous of degree one in h.
+
+*Step 3, entries 6 and 7.* On b_2b_3 the base has A' = 0, so A'(t_3) = t_3 H_3 exactly, and ∇_U = ∇_{U_2} = ∇_{W_3}. So l|A'| and l^2|∇_U A'| are at most F. On b_3b_4, Lemma A_n (ii_n), (iii_n) apply with base W_4, h = t_4 H_4, N <= F < 1/40 and a = sup l|H_3| <= F < 1/80. They move these entries by at most 1.06 F. In total, l|A'| <= 2.06 F and l^2|∇_U A'| <= 2.06 F, against α_{1,n} l^{-1} and α_{1,n} l^{-2}.
+
+*Step 4, entries 1 and 5.* Entry 5 is the G-part; it does not move. Entry 1 on b_2b_3: Lemma A_n (i_n) with base U_2, θ <= (φ_flat/64) α_{0,n} L^{-2n} by B2(b), (b0). So 5.6 θ L^n <= 0.01 and the move is at most 2.91 L^{-2n} F. On b_3b_4 the base is W_4, and the first layer has moved its plaquettes by at most 2.91 L^{-2n} F. So θ_4 <= L^{-2n}[(φ_flat/64) α_{0,n} + 3F] (gate section 7, entries 1 and 5). Then 5.6 θ_4 L^n <= 5.6 (1/640 + 3/2000) < 0.02, and the move is at most 2.92 L^{-2n} F. In total at most 6 L^{-2n} F, against r_1(n) = α_{0,n} L^{-2n}.
+
+*Step 5, entry 3.* Lemma S of ca-f at the kernel W_s, in the local unit l (gate section 7, row "Current": ADVANCE at the kernel of each layer, given (N6), (N7), the smallness bound and the segment-current identification). It gives l^3|s^♯_{σ_s}[t_s H_s](b)| <= t_s Kcur E_y(H_s) <= Kcur F. So η^3|𝒥| moves by at most 2 Kcur L^{-3n} F in total, against η^3 r_3(n) = α_{0,n} L^{-3n}.
+
+*Step 6, entries 2 and 4.* Input 1(e) needs: a majorant in M^∧_{δ/2} of the layer's size, which μ is (Steps 1-2); admissible triples, which are those of the readings (Σ^♭), (Σ^*) at y; and the smallness C^b(a_♭ + κ_max) <= 1. Here κ_max = sup μ <= γ_0 and a_♭ <= γ_0 under (Γ_Sh'), and the condition at γ_0 is the ceiling (c4) of the arrest hypotheses, (Ce7) at I:131850-131862, read as at I:137279-137290. Using that separately stated hypothesis on constants is not using the arrest theorem (gate section 9). The level in 1(e) is that of the point in its space: in the bracket of CMP 122a (1.65) the bound sits at the shell level m of the point, and p ranges over the triples (I:148158-148169). Here that level is n. So each layer gives Q_e^+ <= Q_e(1 + π_×) + π r_{e,n} with π_× <= π := K^b_S μ(y)/α~_{0,n} <= K^b_S F/(c~ α_{0,n}). Start from Q_e(𝔟_2) <= (φ_flat/64) r_{e,n} (B2(d) under (Ref)). While Q_e <= r_{e,n} each layer adds at most 2π r_{e,n}. Under (Γ_Sh'), 4π <= 3/64, so Q_e stays below r_{e,n} and the total increase is at most 4π r_{e,n}. This is an upper bound only, as the gate notes.
+
+*Step 7, the ceiling.* With c_sh := max{2.06, 6, 2 Kcur, 4 K^b_S/c~} and γ_0-smallness folded in:
+
+  (Γ_Sh')  sup_{R >= R_γ} c_sh C_S (R^{1/2} + S_2) e^{-δ_R R/4} <= min{(3/64) φ_flat, 1/200},  and  C_S (R^{1/2} + S_2) e^{-δ_R R/4} sup α_* <= γ̄_0 on the same range.
+
+R_γ := inf_k Ř_k tends to infinity as γ tends to 0 (I:77940-77942). So (Γ_Sh') is a ceiling of degree minus infinity, fixed last. Steps 3-6 bound each move by c_sh F/α_{*,n} times the threshold at weight one. (Γ_Sh') makes this at most (3/64) φ_flat. Part (c) is `4.27:lem-left-factor-algebra`: a left factor keeps U and its gauges. QED.
+
+*What changed from b-in.md Proposition Sh.* The norm passage at b-in.md lines 211-216 is replaced by Step 2, through (K-id). The second-layer curvature uses θ_4 (Step 4). Entries 2 and 4 are one-sided, with all premises of 1(e) listed (Step 6). The result holds on all of K_0, raw blocks included (Lemma E' and Lemma A_n hold at n = 0). The constants are those of the gate's repair, with F <= α_{*,n}/200 in place of 1/100 so that Step 4 closes at n = 0.
+
+### 5.4 The account's three shares (REVISE of b-in.md line 226)
+
+Consumer R (c) asks the increments to total at most 3θ/64 (I:138383-138387), and (d) adds 1/64. Consumer A adds the same (I:136726-136732). Sh' gives this total, with entries 2 and 4 one-sided, which is the direction spend reads. The account also names three separate shares (bend, source, map 𝐇'), a bend floor, an ownership floor, floors at a set Γ_♭ (I:138454-138464), and a use "at halved far factors" for the dissolved pieces at the t-disc of site (L) (II:1208-1212). These are not reconstructed. A total bound does not identify them. If "halved far factors" means the decay rate δ_R halved, then (Γ_Sh') with δ_R/2 in place of δ_R gives the same total; that reading is not checked here.

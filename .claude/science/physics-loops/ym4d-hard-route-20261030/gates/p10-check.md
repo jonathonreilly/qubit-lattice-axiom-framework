@@ -3,14 +3,27 @@ lease_until: 2026-11-06T16:05Z
 
 # P10 stability port: one line-by-line check
 
-Status: in progress (written section by section).
+First failing step: none.
 
-Target: `library/port/p10-stability.md` (1,686 lines), Codex port of CA-I rows A10, A15, A17, A19, A20 of `library/chain-ca.md`. Source: CA-I `theorem_0_complete_account_raw_I.tex` at `31a47c543775` (166,711 lines), fetched by raw URL into a scratch folder. Pinned at branch commit `2bb183fd0`. One reading, not a hostile review, not an audit.
+Provenance: Claude Opus 5.5 (`claude-opus-5-5`), max effort, Mac mini worker, 2026-11-06. Branch `claude/ym4d-hard-route` at `2bb183fd0`. The target is unchanged since `3c3984cf2`. One reading, not an audit and not a hostile review. Kind: a check of our port of their proofs.
+
+Target: `library/port/p10-stability.md` (1,686 lines, every line read). It is Codex's port of the CA-I rows A10, A15, A17, A19 and A20 of `library/chain-ca.md`. The port is of Ethan Sussman and Levent Alpoge's complete account, with Claude and Codex as authors of their text, and of Balaban's construction, which that account cites. Sources: CA-I `theorem_0_complete_account_raw_I.tex` (166,711 lines) and `YM4_sketch_500.tex` (32,992 lines) at `31a47c543775`, fetched by raw URL into a scratch folder. I read each cited statement, its proof and the loci it cites. No numeric job was run, and none was needed. Nothing outside this file was edited.
+
+## Findings
+
+Ranked by what each could break. None breaks a stated implication.
+
+- **F1. Port L203–206, A10 clause (a); also CA-I 55107–55114. A gap, shared with the source, that can be repaired.** Step: "H-WEIGHT files every additional cube … The companion filing and this extra filing prove (a)." What is wrong: (1.63) also requires `C∩Ω_{j+1}≠∅` (port L101–103; CA-I 54343–54344). H-WEIGHT gives only `m(C)=j+1`, `C∈𝔻_{j+1}` and `C∩R_n≠∅`. Repair: the prepared family takes the companion's filing. Let `x∈C∩D_{j+1}` be a base point where the excess is non-zero. Then `φ°_{Z''_{j+1}}(x)>φ_{Z''_{j+1}}(x)≥0` (lemma (a)), and `φ_{Z_{j+1}}(x)=0` because `D_{j+1}⊂Z_{j+1}`. So `w°_{n+1}(x)≠0`. The companion's term at `C` is therefore non-zero, and H-STAGE (a) has filed `C` under (1.63). The condition may also hold automatically if `Ω_{j+1}` means the region in force after stage `n+1` (53815–53818). The source does not say which region is meant.
+- **F2. Port L1539–1546, "(correction: what is linear)". Not an error in their text. No effect on the proof.** CA-I 157289–157290 says each move is linear in the integrand. The logarithm passage (157362–157364) leaves every integrand unchanged, so as a map on integrands it is the identity, which is linear. The source never claims that `G↦\log G` is linear. The port's sentences are true, but this passage should be relabelled as a remark and not counted as a correction of their text.
+- **F3. Port L262–263, A10 (f). Wording only.** "These are unchanged": the prepared cube family's support is contained in the companion's support, not equal to it. Containment is all the sharper estimate needs. The two-line reason is in the A10 section.
+- **F4. Port L940–944, A17 skeleton count. Wording only.** The count also needs `X∩W` to be a union of whole strips (clause (u2), CA-I 77511; `X∈𝐃^𝖨`). The port uses this without saying so. It is inside H-BIRTH.
+
+The port's other two corrections are right. The first is the vacuum constant in (h4)(a) (§5.2; the same finding as `gates/nrm-check.md` §5). The second is that the gauge normaliser `𝔷(a)` depends on the source (§6.3, against CA-I 157393). Neither changes an equality.
 
 ## A10 — 4.18:thm-preparatory-boundary (port L43–278; CA-I 54985–55192)
 
-- Statement (L106–158): matches CA-I 54985–55052 clause by clause: (a)–(f), the rates (A10.2), the constant `C_0=c_G(d,L,M)+1`, and the last assertion. The `X∈𝔻_m` of (A10.3) is to be read with `m=m(X)`, as at CA-I 54355–54358. That is the source's reading too.
-- Hypotheses (L50–86): H-STAGE and H-PROFILE-CLASS are the first two bullets of 54989–55003. H-RECURSION is (α), (β) of `4.18:prop-profile-independence` (54497–54505), plus the setting of that proposition (same stage-0 action, same members, couplings and measures). H-INDICATOR is lemma hypothesis (ii) (54694–54698). The port's added H-WEIGHT (lemma premises (i), (iii)–(viii), 54692–54715) is correct and worth keeping. The source proof uses the lemma's conclusions (a) and (d) at 55115, 55126 and 55186–55191, but the theorem names only premise (ii). The port lists the premises correctly.
+- Statement (L106–158): matches CA-I 54985–55052 clause by clause: (a)–(f), the rates (A10.2), the constant `C_0=c_G(d,L,M)+1`, and the last assertion. The `X∈𝔻_m` of (A10.3) is to be read with `m=m(X)`, as at CA-I 54354–54356. That is the source's reading too.
+- Hypotheses (L50–86): H-STAGE and H-PROFILE-CLASS are the first two bullets of 54989–55003. H-RECURSION is (α), (β) of `4.18:prop-profile-independence` (54497–54505), plus the setting of that proposition (same stage-0 action, same members, couplings and measures). H-INDICATOR is lemma hypothesis (ii) (54694–54698). The port's added H-WEIGHT (lemma premises (i), (iii)–(viii), 54692–54715) is correct and worth keeping. The source proof uses the lemma's conclusions (a) and (d) at 55110, 55128 and 55191, but the theorem names only premise (ii). The port lists the premises correctly.
 - (A10.1) (L88–103): matches the weighted norm and filing rule at 54339–54353.
 - Compensation step (L167–193): this is the induction of `4.18:prop-profile-independence` (54545–54600), in the right order. I checked the signs. Proposition (c) and (d), with `Π` the family and `Π'` the companion, give family − companion = `A(e_n,·)` for the non-Wilson parts and `A(e_{n+1}−e_n,U)` for the stage terms. These agree with (A10.6) and with the corollary's display 54634. The logarithm-branch remark (L174–176) is a correct fill. One series defines the logarithm for both systems, so equal integrals give equal logarithms.
 - (a) (L195–206): see finding F1. This is a small gap, shared with the source, that can be repaired.
@@ -25,13 +38,13 @@ Target: `library/port/p10-stability.md` (1,686 lines), Codex port of CA-I rows A
 ## A15 — 4.38:cor-step-count (port L280–442; CA-I 60810–60878)
 
 - Statement (L354–379): matches 60810–60838 in parts (a)–(f). In (e), the port reads "the last member of clause (0)" as the torus-identification sentence. That is right: in Theorem 0 itself (CA-I 2542) the last member is "The K renormalization steps on T_m produce exactly these couplings", and fixed-depth windows comes after it as a separate item. In `4.1:thm-clause-zero` it is item 5 (3553). The H-AUX qualifier in (f) is an addition. It is conservative and correct.
-- Hypotheses (L288–352): H-TORUS lists the seven A14 hypotheses of 58188–58216 faithfully. (A15.1) agrees with `1.2:def-flow-constants` (657–666) and `4.38:def-admissible-sites` (57036–57065). H-CELL is the pair "taken by statement" at 57122–57126, and H-HOM is 57047–57053.
-- H-FLOW (L310–318) is an input the source does not name. The source's (a) uses clause (β_j) of 𝔦(j) for `x_j>0` (60852). The source's (e) does not show that the first-passage set is nonempty: 60866–60872 shows only that `K` is site-free. So the port is right to carry the drift bound as a named input.
+- Hypotheses (L288–352): H-TORUS lists the seven A14 hypotheses of 58188–58216 faithfully. (A15.1) agrees with `1.2:def-flow-constants` (666–669) and `4.38:def-admissible-sites` (57036–57065). H-CELL is the pair "taken by statement" at 57122–57126, and H-HOM is 57047–57053.
+- H-FLOW (L310–318) is an input the source does not name. The source's (a) uses clause (β_j) of 𝔦(j) for `x_j>0` (60849). The source's (e) does not show that the first-passage set is nonempty: 60869–60874 shows only that `K` is site-free. So the port is right to carry the drift bound as a named input.
 - (a) proof (L385–394): matches 60843–60857.
-- No-circle fill (L396–402): matches property (i) and (iii) at 57067–57090 and 57095–57115. `𝒮_j^♭=𝒮_{j−1}∩{K'≥j}` is defined from earlier data, and each condition is a lower bound on `m`.
+- No-circle fill (L396–402): matches properties (i) and (iii) at 57071–57090, with the proof of (i) at 57097–57115. `𝒮_j^♭=𝒮_{j−1}∩{K'≥j}` is defined from earlier data, and each condition is a lower bound on `m`.
 - First-passage fill (L407–422): checked step by step. With `T=g^{-2}+B_♯`, `g_0≤g_-(g)` gives `x_0≥T`, so `x_0≤T` forces `K=0`. If no passage occurs, an `n>(x_0−T+c_5)/λ_♯` gives `x_n≤x_0−λ_♯n+c_5<T`, which is a contradiction. At `K>0`, `x_K≥x_{K−1}−B_♯>g^{-2}≥γ_H^{-2}>γ^{-2}`, using `γ_H^{-2}≥γ^{-2}+c_5+1`. Correct, and it uses only H-FLOW.
-- (c) (L424–433): the display is word for word the proof of property (ii) at 57116–57132. Correct.
-- (d) (L435–440): the homogeneity argument `(RT)(aρ)=a(RTρ)` follows from H-HOM as stated (T linear, R of degree one, no term contains E). It is a correct fill of 60862–60865.
+- (c) (L424–433): the display is word for word the proof of property (ii) at 57117–57132. Correct.
+- (d) (L435–440): the homogeneity argument `(RT)(aρ)=a(RTρ)` follows from H-HOM as stated (T linear, R of degree one, no term contains E). It is a correct fill of 60865–60867.
 - (f) (L442–443): correct as an implication from P7 and H-AUX.
 - Verdict A15: faithful. Proved as an implication from H-TORUS, H-FLOW, H-CELL, H-HOM and H-AUX. No failing step.
 
@@ -53,12 +66,42 @@ Target: `library/port/p10-stability.md` (1,686 lines), Codex port of CA-I rows A
 - Hypotheses (L1017–1137): (h1)–(h11) match 157028–157075 one by one. The port is right that the source has eleven hypotheses, not the "(h1)–(h8)" of `chain-ca.md` row A19. The conventions (L1020–1033: `N_k`, `ℓ_j`, `Z_j`, `Z_j^+`, `Γ_n`, the disintegration) match 157000–157026. The (h6) remark (L1095–1098) is right: 157243–157249 sketches a route and proves nothing.
 - §5.2 correction (L1139–1205): **correct.** I checked its premises and its algebra.
   - Chapter 1's bare density has no vacuum constant: `ρ_0(U)=exp[−g_0^{-2}A(U)]` (CA-I 479). During the induction `E=0` (57047–57053).
-  - The vacuum theorem's label energy does include it: `E=Σ_{j<K}E^{(j)}(T,T)` and `E_k[𝒮]=E−Σ_{j<k}E^{(j)}(Ω_{j+1},Λ_{j+1})` (159153–159160). Its (a) is `𝔈_k=Σ_{j=k}^{K−1}E^{(j)}(T,T)=−𝔩_k+𝔯_k` (159321–159327).
+  - The vacuum theorem's label energy does include it: `E=Σ_{j<K}E^{(j)}(T,T)` and `E_k[𝒮]=E−Σ_{j<k}E^{(j)}(Ω_{j+1},Λ_{j+1})` (159155–159160). Its (a) is `𝔈_k=Σ_{j=k}^{K−1}E^{(j)}(T,T)=−𝔩_k+𝔯_k` (159321–159327).
   - So (h4)(a) holds for `ρ̂=e^{−E_vac}ρ^{bare}` and not for the bare density. (A19.6)–(A19.7) follow at once.
-  - (A19.8) is 159414–159426 with `d=4` and `D=N^2−1`. `C_log=\tfrac92(N^2−1)L^4` at 159314 fixes `D`.
-  - (A19.9) is right: `Σ_{t=0}^{n−1}L^{−4(t+1)}=(1−L^{−4n})/(L^4−1)`, and `D_0/(L^4−1)=c_G^♯+K_*(E_0+1)/(L^4−1)=C_𝔯` (159312).
+  - (A19.8) is 159414–159426 with `d=4` and `D=N^2−1`. `C_log=\tfrac92(N^2−1)L^4` at 159315 fixes `D`.
+  - (A19.9) is right: `Σ_{t=0}^{n−1}L^{−4(t+1)}=(1−L^{−4n})/(L^4−1)`, and `D_0/(L^4−1)=c_G^♯+K_*(E_0+1)/(L^4−1)=C_𝔯` (159314).
   - The bare-variable restatements (L1254–1259) have the factor `e^{E_vac}` on the correct side.
-  - The source intends E-fixed densities at the Theorem 0 sites (57047–57053, 60862). So this is a needed precision of convention, not an error in 4.33's internal deduction. `gates/nrm-check.md` §5 reached the same finding first.
+  - The source intends E-fixed densities at the Theorem 0 sites (57047–57053, 60865–60867). So this is a needed precision of convention, not an error in 4.33's internal deduction. `gates/nrm-check.md` §5 reached the same finding first.
 - Conclusions (L1207–1259): match (i-b)(1)–(3) and (i-c) at 157077–157111.
 - Proof (L1262–1358): it follows 157114–157241 step by step. Lower member: keep the never-large term, then apply (h2) and (h3)+(h4)(a). Upper member: disintegrate, apply (h5), then (h4)(c), split off `n=k`, use `|Γ_k|≤N_k` with a nonnegative coefficient, then (h6). Next come mass preservation for T, the partition, R, (h9) and (h10), and finally the last-level constant. Each filled step is correct: the measure comparison, the sign for the volume swap, `E_+≤\max(a,b)(1+ℓ_k)`, and the kernel reading of the T step.
 - Verdict A19: faithful. Proved as an implication from (h1)–(h11), read in the vacuum-normalised convention of §5.2. REP-POS (A18) and (h6) stay assumed. No failing step.
+
+## A20 — 4.34:lem-sourced-exactness (port L1362–1628; CA-I 157263–157395)
+
+- Statement (L1370–1395): matches 157263–157283, including `ρ_0^w=\exp[−A(x_0−w,U)−E]` and `Z(z)`. The source's own sourced bare density carries the additive constant `E`. That supports the convention fixed in §5.2. The port adds that analyticity holds on the open source domain where the induction holds. This is a correct precision.
+- Hypotheses (L1397–1437): H-SOURCE-IND, H-COMPLEX-MOVES, H-GAUGE-SECTOR (`|Im a|≤\sup|ζ_j|`, `(8/3)rε_k^2≤1`, 157333–157338), H-SOURCE-REFERENCE (`D^0>0` and source-free, CMP 122a pp.176–177, 157372–157374) and H-FORWARD-REVERSE. These are what the source proof uses.
+- (a) (L1441–1462): matches 157293–157301. The complex-Fubini fill is correct: a probability kernel integrated against a finite complex measure, bounded in total variation by `|τ^w|`.
+- (b) (L1464–1520): `q(v)=\tfrac12\mathrm{tr}((v−1)^*(v−1))` with `tr 1=1`. I checked the identity directly: `(v−1)^*(v−1)=2−v−v^*`. Then `q≤\tfrac12|v−1|^2` (normalised trace at most the top eigenvalue), `|(Im a)q|≤1`, and `\mathrm{Re}\,𝔷(a)≥\cos1·𝔷(\mathrm{Re}\,a)>0`. This matches 157303–157347. The fills are correct: an identity neighbourhood of a compact group has positive Haar measure, `\cos t≥1−t^2/2`, and the normalised kernel has absolute mass at most `1/\cos1`. Gauge invariance of `A(c,·)` at complex `c` matches 157350–157355.
+- (c) (L1522–1546): matches 157357–157364. See F2 for the "(correction: what is linear)" passage at L1539–1546.
+- (d) (L1548–1580): matches 157366–157379. The fill "no hidden division by a sourced mass" is correct. `N^w=0` is allowed, and no lower bound on `D^0` beyond positivity is needed.
+- (e) (L1582–1588): matches 157381–157384.
+- Analyticity (L1593–1609): `ρ_0^w=e^{−A(x_0,U)−E}\exp(Σ_iz_iA(f_i,U))` by linearity in the weight. The term-by-term integration on compact polydiscs is correct, so the bare mass is entire. Matches 157388–157392.
+- Correction "source-dependent denominators" (L1611–1622): **correct.** The source says at 157393 that "no denominator depending on the source occurs". But the gauge normaliser `𝔷(a)` has `Im a` from the running shifts (157323–157325), so it depends on the source. Its nonvanishing comes from (A20.7). No equality changes.
+- Verdict A20: faithful. Proved as an implication from H-SOURCE-IND, H-COMPLEX-MOVES, H-GAUGE-SECTOR, H-SOURCE-REFERENCE, H-FORWARD-REVERSE and H-MEASURE. No failing step.
+
+## For the lead (evidence for other files' owners)
+
+- `library/chain-ca.md` row A19 says "Hypotheses (h1)–(h8)". The source has (h1)–(h11) (CA-I 157028–157075), and (h9)–(h11) are needed for (i-c). The port has this right (L1014–1015).
+- None of these findings meets the bar for a contribution upstream (FINISH How we work, item 6). The (h4)(a) normalisation is NRM's existing finding. The 157393 sentence is a slip of wording with no effect on any equality.
+
+## Verdict
+
+- A10, `4.18:thm-preparatory-boundary`: faithful. A proved implication from H-STAGE, H-PROFILE-CLASS, H-RECURSION, H-INDICATOR, H-WEIGHT and H-PREPARED, with F1 repaired.
+- A15, `4.38:cor-step-count`: faithful. A proved implication from H-TORUS, H-FLOW, H-CELL, H-HOM and H-AUX.
+- A17, `4.20:thm-representation`: faithful as a conditional assembly. The source gives no proof at the theorem. The port's three filled steps are correct (coupling profile, skeleton entropy, ratio bound), and its input and open-input registers match CA-I 166563–166692.
+- A19, `4.33:thm-stability`: faithful. A proved implication from (h1)–(h11), read in the vacuum-normalised convention of §5.2, whose correction is right.
+- A20, `4.34:lem-sourced-exactness`: faithful. A proved implication from the correlation induction and the named move hypotheses. Its denominator correction is right. F2 is not a correction.
+
+Still open, as the port itself says: CMP 122a (1.60)–(1.70) (H-STAGE) and the weight geometry; the seven A14 inputs, the flow bounds and auxiliary-torus admission; the A17 suppliers marked outstanding or incomplete in the account, notably REP-RF (`4.21:prop-relative-machine`), REP-ARREST, REP-CORE, REP-COUNT, and REP-POS = A18 with `R_V` open in `library/pd.md`; the history sum (h6) and the positive reference normalisers (h8); and the sourced correlation induction (H-SOURCE-IND).
+
+Checked line by line by Claude (Mini worker).

@@ -7,14 +7,15 @@ Provenance: Claude Opus 5.5, max effort, Mac mini worker; checkout pinned at `98
 
 Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text (complete account CA-I, CA-II, CA-III and outline at upstream `31a47c543775`), for every statement, construction and bound cited with a line number below; Tadeusz Balaban for the multiscale construction (CMP 89-122). Earlier lanes in this repository: `arr.md` (two rounds), `crca.md`, `prior/ca-claude.md`.
 
-Kind of result (How we work, item 9): proof of steps the account assumes (its collar corollary, I:142283-142291, in the weaker CA form), by reduction. One step stays open and is stated as one lemma.
+Kind of result (How we work, item 9): proof of a step the account assumes (its collar corollary, I:142283-142291, in the weaker CA form), as an implication from named inputs. One named input, the base bound on the core (B-in), is used by the account and printed nowhere.
 
 ## 0. Summary
 
 1. **Seed, pinned part: proved (Lemma A).** On every stratum bond of a removed collar, the completion seed equals the raw real datum, exactly. The rows come from Balaban's splice formula and a separation the account proves. So at b2 the plaquette entries are below 0.04 r1(0), and A' = 0. This settles, for stratum bonds, the datum identification that ARR section 15.2 left open.
 2. **Seed, side plaquettes, current and cubes: proved as an implication (Lemma B)** from one account input, the base bound on the core (I:136724-136733, I:138438-138450), used only at cells of level at least one. The account prints no statement or proof of that bound. Result: the seed current is at most 0.48 r3(0), and the index-zero cube clause holds.
 3. **Sharpened criterion (Proposition C).** Lemmas A, B and the collar layer bound (CL) imply CA. The layer budget in (CL) is 48 times weaker than ARR (18.4).
-4. **(CL) stays open.** Three new attacks fail at stated points (section 6). The account's own layer bounds give the sup part of (CL) only for completion densities k up to a ceiling k*(gamma). The reason is structural: the old raw radius scales with the bare coupling g0, and the layer sources scale with gk. With the account's source bound, a proof needs a decay that grows with h = k - Nk; the account's k-independent separation does not give it (section 6.4).
+4. **The layers: (CL) proved for gamma small (Lemma E, Proposition F).** The account's cut-localisation bound alone gives (CL) only up to a density ceiling k*(gamma): the old raw radius scales with the bare coupling g0, the layer sources with gk, and the account's separation of Z_h from the cut does not grow with k (section 6.1). Lemma E adds the zones of levels 1 to h-1 between the raw collar and the cut: by the account's admissible geometry each is at least L cells thick, so the scaled distance grows like (L-2)(h-1). With the response-field theorem and the source identity applied as the account applies them, this gives (CL) uniformly, under one more ceiling on gamma chosen last.
+5. **Result: Proof, as an implication.** CA holds from the account's retained inputs plus the named inputs listed in the Result. The first place it can fail is (B-in).
 
 ## 1. Sources and scope
 
@@ -121,7 +122,7 @@ Each is below 3.65 r_a(0) < f_0(d^t) r_a(0) (ARR (10.3)). The same bounds hold w
 
 The budget eps* is 48 times the budget alpha_{*,0}/(16 Kcur) of ARR (18.4): the exact seed bound (0.04 instead of 1/24) and the consumers' threshold f_0 > 3.65 pay the difference.
 
-## 6. The collar layer bound: three attacks
+## 6. The collar layer bound
 
 Account facts used in this section:
 
@@ -131,12 +132,13 @@ Account facts used in this section:
 - (c4) Col(C) is in Z_h (Lemma A, input (a1)).
 - (c5) R^_k is non-increasing in k with R^_k < L t_k^r (I:131529-131531), and R^_k >= (log x^_k)^r, which tends to infinity as gamma -> 0 (I:21528-21530).
 - (c6) alpha_{i,lambda} <= (64/49) sqrt(lambda) alpha_{i,0} (I:141600; ARR (10.6)).
+- (c7) The admissible geometry, `4.21:def-strips-geometry` item (4) (I:63571-63586), stated there "in every label" with the citation CMP 119 (3.5), (3.20), p. 269: (a) Omega_{j+1} in Lambda_j in Omega_j; (b) the Omega_j are nested; (d) every zone Omega_j \ Omega_{j+1} is at least one pi_{j+1}-cube thick, dist_{j+1}(Omega_j^c, Omega_{j+1}) >= 1, that is, at least L cells of level j. Here pi_l is the partition into M-cubes of level l, and a cell of level j is a cube of pi_j (I:62741-62746, I:62765-62770). The thin zones left by earlier attempts are single layers of pi_{i+1}-cubes, L cells wide (I:114355-114357), so (d) covers them. For j <= h the zones of B''_k are those of the label, since Omega''_j = Omega_j (I:92002-92003).
 
 **A lattice fact used below (proved here).** Let U = e^{i eta A'} U with eta|A'| <= 1/80 on the stencil. Then eta^2 |(nabla_{U,mu} h_nu)(x)| = eta |Ad_{U(x,x+mu)} h_nu(x+mu) - h_nu(x)| <= (e^{1/40} + 1) sup eta|h|, because |Ad_{e^Y W} X| <= e^{2|Y|} |X| for unitary W (submultiplicativity, |e^Y| <= e^{|Y|}, unitary invariance). Hence N_y(h) <= 2.03 sup eta|h| over the read-set R(y) of y and its lattice neighbours. At unit spacing, derivative norms cost no smoothness.
 
 ### 6.1 Attack L1: cut localisation with the law-site separation
 
-By the lattice fact, eta|H(x)| <= Theta_0^loc(H)(x~) (m >= 0), and (c1)-(c4) at the points of R(Col(C)) (these lie in Z_h: the collar's one-cell neighbourhood lies in Omega_1 \ Lambda_1 or in Omega_1^c, both in Z_1):
+By the lattice fact, the reading (R) of 6.3 (eta|H(x)| <= Theta_0^loc(H)(x~), as m >= 0), and (c1)-(c4) at the points of R(Col(C)):
 
   sup_{y in Col(C)} N_y(t_s H_s) <= 2.03 (C_L K_Q / K_u) alpha^+_k e^{-delta_L (R^_k - 2)} <= C_1 sqrt(k) e^{-delta_L R^_k} alpha_{*,0},
 
@@ -144,67 +146,79 @@ By the lattice fact, eta|H(x)| <= Theta_0^loc(H)(x~) (m >= 0), and (c1)-(c4) at 
 
 with A^+ := sup_k alpha^+_k / max_i alpha_{i,k} and rho_C := max_i alpha_{i,0} / min_i alpha_{i,0}, both fixed with the radii (A^+ is finite if p_1 <= q in delta'_k = g_k A_1 t_k^{p_1}; otherwise a factor t_k^{p_1 - q} enters and must be tracked).
 
-**Exact failure.** (i) *Uniformity in k.* (CL) needs C_1 sqrt(k) e^{-delta_L R^_k} <= 3/(2 Kcur). At a fixed ceiling gamma, R^_k does not grow with k by (c5), while k is unbounded as the cutoff is removed. The account bounds alpha_{.,k}/alpha_{.,0} only by (1+beta_0)^2 sqrt(k) ((h1)-(h2) of `4.27:lem-level-zero-ratios`). This is not slack in the flow: under the one-loop flow, g_k/g_0 grows without bound as the cutoff is removed at fixed g_k (a property of the flow, not used as a step here). So L1 proves the sup part of (CL) only for completion densities k <= k*(gamma) := (3/(2 Kcur C_1))^2 e^{2 delta_L R_gamma}, R_gamma := inf_k R^_k. (ii) *The current increment.* The source term of the layers satisfies the identity I:94983-94986, j = (Delta_U - P_1 + K) A' - m_H(X) + F(U, H). The terms P_1 A' and m_H(X) are bounded there only through clause (b) of the localised small-solution theorem, in terms of the data norm (I:94992-94995). A sup bound on H, which is all Theta_0^loc gives, does not control them.
+**Exact failure.** (i) *Uniformity in k.* (CL) needs C_1 sqrt(k) e^{-delta_L R^_k} <= 3/(2 Kcur). At a fixed ceiling gamma, R^_k does not grow with k by (c5), while k is unbounded as the cutoff is removed. The account bounds alpha_{.,k}/alpha_{.,0} only by (1+beta_0)^2 sqrt(k) ((h1)-(h2) of `4.27:lem-level-zero-ratios`). This is not slack in the flow: under the one-loop flow, g_k/g_0 grows without bound as the cutoff is removed at fixed g_k (a property of the flow, not used as a step here). So L1 proves the sup part of (CL) only for completion densities k <= k*(gamma) := (3/(2 Kcur C_1))^2 e^{2 delta_L R_gamma}, R_gamma := inf_k R^_k. Lemma E in 6.2 removes this gap. (ii) *The current increment.* The source term of the layers satisfies the identity I:94983-94986, j = (Delta_U - P_1 + K) A' - m_H(X) + F(U, H). The terms P_1 A' and m_H(X) are bounded there only through clause (b) of the localised small-solution theorem, in terms of the data norm (I:94992-94995). A sup bound on H, which is all Theta_0^loc gives, does not control them.
 
-### 6.2 Attack L2: stratum prices through the response profiles
+### 6.2 Lemma E: the zones between the collar and the cut (new attack 3, closes the gap of 6.1(i))
 
-Clause (b) of the response-field theorem holds for every profile in the class M_delta (I:141777-141785), and the account uses it at the completion site (I:142540-142546). The profiles decay in the weighted contour distance d^, which pays w_M per crossed stratum: d^(y,y') >= w_M (|m - m'| - 1)^+ (input 1(a) of the arrest theorem, I:131582-131586); also d^ >= w d_sc (I:91725-91727). At B''_k the collar has level 0 and the cut has level h (CMP 122a (1.13), quoted at I:92531). If every datum of H_3, H_4 were supported at points of level at least h within S, the profile p(y) = c eps_Q(k) e^{-delta d^(y,S)} would give, at y in Col(C), d^(y,S) >= max{ w_M (h-1), w (R^_k - 1) }. With k = h + R^_k, sqrt(k) <= sqrt(h) + sqrt(R^_k), this yields, for N_y(H_s) and for the associated fields (hence for s^# through the identity in 6.1(ii), with constant Kcur):
+**Reading of d_sc** (stated, not proved). d_sc is the path metric that counts cells, the M-cubes of the local scale of B''_k (I:91723). The proof of (c3) measures the separating layer in M-cubes of level h, the local scale of B''_k there (I:91991-92024, I:92095-92097). This fixes the reading for (c1) and (c3).
 
-  <= C_2 ( sqrt(h) e^{-delta w_M (h-1)/2} + sqrt(R^_k) ) e^{-delta w (R^_k - 1)/2} alpha_{*,0},
+**Lemma E.** For every y in Col(C),
 
-which is below (3/(2 Kcur)) alpha_{*,0} for all k once R_gamma is large, that is for gamma small, in the account's order. So (CL) would follow.
+  d_sc(y, S) >= (R^_k - 1) + (L - 2)(h - 1).
 
-*Shell crossing, a partial result (Lemma D, proved here).* Let x lie in a component completed at a date (k';L) before d'. Then every lattice path from Col(C) to x passes through a point of level at least k' at d^t. *Proof.* At step k', x lies in a completed component of Z_{k'}. The points of Col(C) lie in Z_1, which is in Z_{k'}, and in a component of Z_{k'} that did not complete at k': otherwise (t4) would have lifted them into Omega_1 (I:133477-133478, I:134967-134968), and they could not be raw at d^t. So a path from Col(C) to x leaves Z_{k'} and meets Lambda_{k'} = Z_{k'}^c, which lies in Omega_{k'} by the nesting of (a1); its points have level at least k' after the T-step to k', and levels never decrease (`4.27:lem-determining-set-order` (b), I:133480-133482). QED. Hence the nest of shells of levels below the least such k' is never re-blocked between Col(C) and S. Inside an unre-blocked nest, the account's law-site lemma adds 10 R_min (h - m(s))^+ to the (beta) distance at pointwise law sites (I:91843-91849).
+**Proof.** Take a lattice path from y to a point z of S. By (c3), S does not meet Z_h, so S lies in Lambda_h, which lies in Omega_h by (c7)(a); thus z is in Omega_h. And y is outside Omega_1, hence outside every Omega_j (nesting). Fix j with 1 <= j <= h-1. Let tau_j be the first index at which the path is in Omega_{j+1}, and sigma_j the last index before tau_j at which it is in Omega_j^c. The points strictly between lie in the zone of level j. By (c7)(d) the two end points are at distance at least M L^{j+1} eta in the maximum norm, so the path makes at least M L^{j+1} - 1 steps inside the zone. In that zone a step has scaled length 1/(M L^j), one lattice unit in cells of level j. So this portion has d_sc-length at least L - 2. Portions for distinct j lie in distinct zones, so they are disjoint. They lie in Omega_h^c, which lies in Z_h by (c7)(a). After its last visit to Z_h, the path has d_sc-length at least R^_k - 1 by (c3). That portion lies outside Z_h, so it is disjoint from the zone portions. Adding the lengths gives the bound for every path, hence for d_sc(y, S). QED.
 
-**Exact failure.** (i) The first argument f_1 of H_3 is not supported in S or at levels at least h. The account bounds it by |f_1(y)| <= C sup|J^{b2}| e^{-delta_G d_sc(y,S)} (proof of `4.22:lem-current-localisation`, I:92576-92582). That decay comes from the kernel decay of G''_k per M-cube (hypothesis (e), I:92460-92461), which carries no stratum price. (ii) The account's own use of clause (b) at the completion site takes the profile e^{-delta d^(.,Z_L)} (I:142540-142546), which equals 1 on Col(C) in Z_L, because the data B_3, B_4 and J_3 are stated only to be supported in the completing component (I:142532-142534). (iii) Lemma D does not exclude a component completed at some k' < h, now at a level in [k', h], from the shells crossed between Col(C) and S. Across it the law-site increment "is not asserted" (I:91846-91849), and that increment is in any case asserted for law sites by citation of CMP 122a's stage geometry. CMP 122a/b are not available here. So no stated input gives the layer data a stratum price at Col(C).
+Lemma E uses only the zone thickness, which (c7) states in every label, re-blocked or not. So the restriction of the law-site increments to unre-blocked nests (I:91846-91849) does not arise. Proposition F needs only some fixed c_s > 0 in place of L - 2: any reading of d_sc that charges at least c_s for crossing a zone L cells thick gives the same conclusion.
 
-### 6.3 Attack L3: scale gain from the level of the sources
+### 6.3 Proposition F: the collar layer bound holds once gamma is small
 
-The layer sources sit near the cut, at level at least h; Col(C) is at level 0. In Balaban's propagator bounds the scale factors of the two localisations can be traded: CMP 99b Theorem 3.1, remark after (3.47) (p. 398), allows replacing (L^j eta)^alpha by (L^j eta)^beta (L^{j'} eta)^gamma with beta + gamma = alpha, using Lemma 2.1 of its reference [4] and part of the exponential decay; Theorem 3.13 extends the bounds to the propagator of the localised problem. If the layer bound (d) of `4.22:lem-current-localisation` carried such a factor, (ell_z/ell_y)^e with e >= 1 between the collar point z and a source cell y, the gain L^{-e h} would give
+**Named inputs beyond (c1)-(c7).** Each is the account's own usage of a stated result at the completion site.
 
-  sup_{Col(C)} N_y(t_s H_s) <= C_3 ( sqrt(h) L^{-h} + sqrt(R^_k) L^{-1} ) e^{-delta' R^_k} alpha_{*,0},
+- (P1) The layers H_3, H_4 are response fields of the response-field theorem, with data the arguments listed in the proof of `4.22:lem-current-localisation`. For H_3 these are f_1, with |f_1(x)| <= C sup|J^{b2}| e^{-delta_G d_sc(x,S)} (I:92576-92582), and an argument supported in S; for H_4 the argument g_k B, supported in S (I:92583-92587). Their sizes obey the budget K_u B_H sum sup|.| <= eps_Q(k) (hypothesis (d'), I:92454-92456), into which the account's proof of (c1) also absorbs the constant C sup|J^{b2}|. The account applies clause (b) of that theorem to these layers at the completion site (I:142540-142546). *Caution.* The account parametrises the layer data in two ways: after the criticality cancellation G''_k Q''^* = 0, as above (proof of `4.22:lem-current-localisation`), and before it, as B_3, B_4 and J_3, with J_3 built from the current at b2 and supported in the completing component (I:142532-142537). (P1) uses the first. With the second, clause (b) would bound the associated fields at Col(C) only by B_# times the seed current there, which is not small enough for the current part of (CL).
+- (P2) The partner current of a layer is the source term of the localised small solution, j = (Delta_U - P_1 + K) A' - m_H(X) + F(U,H) (I:94983-94986), and the five-term estimate of I:94988-95020 holds pointwise, each term read at the bond.
+- (R) eta|H(x)| <= Theta_0^loc(H)(x~) for x in the block B^top(x~) (definition at I:78205-78208).
 
-again below (3/(2 Kcur)) alpha_{*,0} for gamma small.
+**Proposition F.** Under the inputs of CA, Lemma E, (P1), (P2) and (R), there is gamma_* > 0, fixed by one more ceiling of supremum form chosen last in the account's order, such that for gamma <= gamma_* the collar layer bound (CL) holds.
 
-**Exact failure.** (i) Hypothesis (d), quoted from CMP 122a (1.45) (I:92449-92453), bounds Theta_0^loc(H_s)(z~) by B_H sup|arg| e^{-delta_1 d_sc(z,y)} with no scale factor, and Theta_0^loc at a raw point is the plain eta sup|H| (m = 0). (ii) The layers are not the propagator itself. They pass through the arguments of CMP 122b (1.50)-(1.55) and the layer map, whose bounds the account quotes only in the form (d). (iii) Moving the factor costs part of the decay rate per level (Lemma 2.1 of CMP 99b's reference [4]); with only the k-independent separation (c3) available, that cost must be paid from the shells between Col(C) and S, which is the unproved part of L2. CMP 122a, needed to check (1.45), answered with a bot check.
+**Proof.** *Sup part, first route ((c1), (R), the lattice fact).* Let y be in Col(C) and x in the read-set R(y). Then x lies in Z_h: the read-set lies within a few level-zero cells of y, hence in Omega_1^c or in Omega_1 \ Lambda_1, because the boundaries of Omega_1 and Lambda_1 are at least 2MR_1 apart (CMP 119, quoted at I:63572-63574); both sets lie in Z_1. Also d_sc(x,S) >= d_sc(y,S) - 1. By (c1), (c2), (R), Lemma E and the lattice fact,
 
-### 6.4 What any proof of (CL) must supply
+  N_y(t_s H_s) <= 2.03 (C_L K_Q / K_u) alpha^+_k e^{-delta_L (R^_k - 3 + (L-2)(h-1))}.
 
-This is an implication about the method, proved by the computation in 6.1. With the account's source bound (c2), a bound of the form "source size times decay" for the layers on Col(C) must have decay at most (3/(2 Kcur)) alpha_{*,0} / (C alpha^+_k). The account's inputs allow alpha^+_k / alpha_{*,0} up to a constant times sqrt(k). So the decay must grow with k at a fixed ceiling gamma. The separation (c3) does not grow with k. A proof therefore needs a separation or a scale gain that grows with h = k - N_k: a shell-crossing bound
+By (c6), alpha^+_k <= A^+ rho_C (64/49) sqrt(k) alpha_{*,0}. Since k = h + R^_k, sqrt(k) <= sqrt(h) + sqrt(R^_k), and
 
-  (SC)  d_sc(y, S) >= R^_k - 1 + c_s (h - 1)   for y in Col(C), with c_s > 0 fixed before gamma,
+  N_y(t_s H_s) <= C_1' ( S_L + sqrt(R^_k) ) e^{-delta_L R^_k} alpha_{*,0},
+  C_1' := 2.03 e^{3 delta_L} (C_L K_Q / K_u) A^+ rho_C (64/49),   S_L := sup_{h >= 1} sqrt(h) e^{-delta_L (L-2)(h-1)} < infinity.
 
-or the scale factor of 6.3, together with the same decay for the associated fields (6.1(ii)). Given (SC), the sup part of (CL) follows for gamma small by the computation of 6.1 with sqrt(k) <= sqrt(h) + sqrt(R^_k): the bound becomes C_1 ( S_s + sqrt(R^_k) ) e^{-delta_L R^_k} alpha_{*,0}, S_s := sup_{h >= 1} sqrt(h) e^{-delta_L c_s (h-1)} < infinity.
+*Second route, which also gives the current part ((P1), (P2)).* Cut f_1 into its restrictions to M-cubes Q and telescope the response over the pieces. Apply clause (b) to each difference, with second datum zero (where the response vanishes) and the weight e^{-delta_P d^(.,Q)}; exponential weights in d^ are admissible (I:72519-72522). With d^ >= w d_sc and the summation used in the account's proof of (c1),
 
-This also locates the content of the account's assumed collar corollary (I:142283-142291) for the layers. The account's alternative derivation at the completion site (I:142530-142546) gives on Z_L only N_y(H_s) <= B_# C_a alpha_{*,k} <= (64/49) sqrt(k) B_# C_a alpha_{*,0}, which grows with k.
+  sum_Q e^{-delta_G d_sc(Q,S) - delta_P w d_sc(y,Q)} <= C_rho e^{-delta_* d_sc(y,S)},   delta_* := min{delta_G, w delta_P}/2.
 
-No counterexample is claimed. The account gives only upper bounds for the layers, so a refutation of (CL) would need a lower bound on the actual layers at a raw collar point. That needs CMP 122b (1.50)-(1.55), which was not available here.
+Treat the arguments supported in S with the single weight e^{-delta_P d^(.,S)}. This bounds N^Delta_y(H_s) and the associated fields P_1 A', m_H(X) at y by C_6 eps_Q(k) e^{-delta_* d_sc(y,S)}, with C_6 a (d,L,M)-number. At a stratum bond b at y the base parameter is at most 1 (the seed plaquettes are at most 0.04 alpha_{0,0}), and the remainder hypothesis holds for small layers. So (P2) gives eta^3 |s^#_{sigma_s}[t_s H_s](b)| <= Kcur C_6 eps_Q(k) e^{-delta_* d_sc(y,S)}. Lemma E and the ratio bound then give, as in the first route,
+
+  N_y(t_s H_s) and eta^3 |s^#_{sigma_s}[t_s H_s](b)| / Kcur  <=  C_6' ( S_* + sqrt(R^_k) ) e^{-delta_* R^_k} alpha_{*,0},   S_* := sup_{h >= 1} sqrt(h) e^{-delta_* (L-2)(h-1)}.
+
+*Choice of gamma.* Let F_s(y) be the larger of the two bounds. For delta > 0 and S finite, R -> (S + sqrt(R)) e^{-delta R} tends to 0 as R -> infinity. By item (7) of `4.21:def-strips-geometry` (I:63600-63607), R^_k >= T^_k^r and T^_k >= T_gamma for every k, so R^_k >= T_gamma^r =: R_gamma, and T_gamma tends to infinity as gamma -> 0 (I:63521-63522, I:21528-21530). The new ceiling is
+
+  sup_{R >= R_gamma} max{ C_1' (S_L + sqrt R) e^{-delta_L R},  C_6' (S_* + sqrt R) e^{-delta_* R} } <= 3/(2 Kcur),
+
+a one-sided cap of degree minus infinity in the sense of the account (all constants in it are (d,L,M)-numbers, radius constants in A^+ and rho_C, or Kcur, fixed before gamma). Under it, and with alpha_{*,0} <= A <= 1/(24M) <= 1/170 from the ceilings (g), F_3 + F_4 <= min{1/85, (3/Kcur) alpha_{*,0}} uniformly in k, h, the history, the source and the parameters. QED.
+
+*Remark on A^+.* If p_1 > q in delta'_k = g_k A_1 t_k^{p_1}, then A^+ carries a factor t_k^{p_1-q}. Item (7) of `4.21:def-strips-geometry` gives t_k = T_k <= T^_k + 1 <= (R^_k)^{1/r} + 1 (I:63600-63607), so t_k^{p_1-q} e^{-delta R^_k} still tends to 0 as R^_k grows, and the same ceiling, with this factor included, applies.
+
+### 6.4 Routes tried and not needed
+
+- *L1 with (c3) alone* fails at uniformity in k (6.1(i)); Lemma E repairs it.
+- *Stratum prices through the law-site increments* (10 R_min per level, I:91843-91849). These are asserted only at law sites inside unre-blocked nests. A partial result, proved here: **Lemma D.** If x lies in a component completed at a date (k';L) before d', then every lattice path from Col(C) to x passes through a point of level at least k' at d^t. *Proof.* At step k', the points of Col(C) lie in Z_1, which is in Z_{k'}, in a component that did not complete at k', since (t4) would have lifted them into Omega_1 (I:133477-133478, I:134967-134968). So the path leaves Z_{k'} and meets Lambda_{k'}, which lies in Omega_{k'} by (c7)(a); its points have level at least k' after the T-step to k', and levels never decrease (I:133480-133482). QED. Lemma E makes this route unnecessary.
+- *Scale gain from the level of the sources* (CMP 99b Theorem 3.1, remark after (3.47)). Not needed.
 
 ## Result
 
-**Open lemma**
+**Proof**
 
-**(CL), the collar layer bound.** In the setting of CA, with the account's arrest hypotheses and primitive analytic inputs retained on their stated classes and without the level-zero chain proposition, the collar corollary (I:142269-142291) or the cube admission (I:142950): for every completing component C of a completion date d' = (k;L), every source pair of the prescribed arrested source with its full global rider, every parameter in the parameter domain, s in {3,4}, t_s in [0,1], y in Col(C) and stratum bond b at y,
+CA holds, as an implication, for every completing component C of every completion date, every source pair of the prescribed arrested source with its full global rider, every parameter, at b2, b3, b4 and on every segment, with the old index-zero cube clause on every whole cube meeting the collar, one field on overlaps and full stencils; uniformly in the cutoff, density, waiting depth, history and arrest age; once gamma is at most gamma_* of Proposition F, one further ceiling of supremum form chosen last. Constants are in the account's order L -> profiles -> kappa -> kappa_1 -> M_1 -> M -> (q, C) -> gamma; no birth domain or source domain is shrunk. Proof: Lemma A (section 3), Lemma B (section 4), Lemma E and Proposition F (section 6) give the seed bounds and (CL); Proposition C (section 5) gives CA. Proved by Claude, not yet checked by the other model.
 
-  N_y(t_s H_s) <= F_s,   eta^3 |s^#_{sigma_s}[t_s H_s](b)| <= Kcur F_s,   F_3 + F_4 <= min{ 1/85 , (3/Kcur) alpha_{*,0} },
+**Named inputs** (each cited where used). The account's statements retained by CA on their stated classes, among them fact (f), `4.22:lem-current-localisation`, `4.22:lem-law-site`, `4.27:lem-left-factor-algebra`, `4.27:lem-level-zero-ratios`, the inputs (a)-(g) of `4.27:lem-real-point-collar`, clause (b) of the response-field theorem, the admissible geometry of `4.21:def-strips-geometry` (4), and CMP 119 (2.10)-(2.14) as quoted. Beyond these:
 
-uniformly in the cutoff, density, waiting depth, history and arrest age, with Kcur = 3 + 18d + 2.2 KJ fixed before the final ceiling on gamma.
+1. (B-in), the base bound on the core, used only at cells of level at least one, with the scope fact (S-B). The account uses it in two proofs (I:136724-136733, I:138438-138450) and prints no statement or proof of it. **This is the first place the proof can fail.** Without (B-in), the missing step is Lemma B(i) only: a level-one bound of 0.04 alpha_{0,0} for U_2 on the plaquettes next to the collar.
+2. (P1), (P2), (R) and the reading of d_sc: how the account's response-field theorem, source identity and local layer norm apply to the completion layers. The account applies them there itself. The sup part of (CL) needs only (c1), (R) and Lemma E; the current part needs (P1) with the layer data taken after the criticality cancellation (see the caution in 6.3). **This is the second place the proof can fail.**
+3. (c7)(d) for labels changed by R operations: the account states it "in every label" with Balaban's citation for the RG-determined domains.
 
-**Proved here** (by Claude, not yet checked by the other model):
+**Not used.** The level-zero chain proposition and the collar corollary (I:142269-142291), and the cube admission (I:142950). No computer-assisted step.
 
-1. *Lemma A* (section 3). On every stratum bond of Col(C) the seed is the raw real datum, U_2(b) = V_0(b). So at b2: Q_1 = Q_5 < eps_0 < 0.04 r_1(0) and Q_6 = Q_7 = 0. Inputs: fact (f), the separation in `4.22:lem-law-site`, the splice comparison in `4.22:lem-current-localisation`, CMP 119 (2.10)-(2.11), and input (a) of `4.27:lem-real-point-collar`.
-2. *Lemma B* (section 4), as an implication from the account's base bound on the core (B-in), used only at cells of level at least one, with the scope fact (S-B). The side plaquettes are below 3 x 10^-4 alpha_{0,0}, Q_3 <= 0.48 r_3(0), and the index-zero cube clause holds. The account uses (B-in) in two proofs and prints no statement or proof of it.
-3. *Proposition C* (section 5). Lemma A, Lemma B and (CL) imply CA. The layer budget is 48 times weaker than ARR (18.4).
-4. *On (CL)* (section 6). Attack L1 gives its sup part for completion densities k <= k*(gamma). Lemma D: a region re-blocked at an earlier completion (k';L) lies behind points of level at least k'. Section 6.4: with the account's source bound, a proof needs a decay that grows with h = k - N_k, for example the shell-crossing bound (SC) or a scale factor in the layer bound; given (SC), the sup part of (CL) holds for gamma small, in the account's order of constants.
+**Kind (How we work, item 9).** Proof of a step the account assumes: its collar corollary, in the weaker form CA that all dated-collar consumers accept. The proof shows where the assumption's content lies: the layers need a decay that grows with h = k - N_k (section 6.1), and the account's own zone thickness (c7)(d) supplies it through Lemma E.
 
-**The three new attacks on (CL), and why each failed:**
+**What changes for consumers.** None. The consumers listed in `crca.md` sections 3.2-3.3 read CA as stated. The separate chain-margin inputs of `crca.md` section 3.3 (dying frame, kept holomorphy, carriers) are not addressed.
 
-- *L1, cut localisation with the law-site separation.* It fails at uniformity in k: the separation R^_k - 1 does not grow with k, while alpha^+_k / alpha_{*,0} may grow like sqrt(k). It also fails at the current increment: a sup bound on H does not control the terms P_1 A' and m_H(X) of the source identity.
-- *L2, stratum prices through the response profiles, with shell crossing.* It fails because the first argument f_1 of H_3 decays only in d_sc, through the kernel decay of G''_k per M-cube, with no stratum price. The account's own profile at the completion site equals 1 on Col(C). The law-site increments are not asserted across re-blocked regions, and they are asserted only by citation of CMP 122a.
-- *L3, scale gain from the level of the sources* (CMP 99b Theorem 3.1, remark after (3.47)). It fails because the layer bound (d), quoted from CMP 122a (1.45), carries no scale factor. The layers also pass through CMP 122b arguments that are quoted only in that form, and moving the factor costs decay per level. CMP 122a answered with a bot check.
+**The three new attacks.** (1) Lemma A, identity rows of the splice: succeeds for the pinned entries. (2) Lemma B, the account's base bound on the core at level-one cells: succeeds for the side plaquettes, the current and the cubes, conditional on (B-in). (3) Lemma E, zone thickness from the admissible geometry: succeeds for the layers, after the cut-localisation bound alone (6.1) failed at uniformity in k.
 
-**What changes for consumers.** None. CA now rests on (B-in) at its stated scope and on (CL). The seed part needs no new estimate beyond (B-in).
-
-**Not covered.** (CL) itself. Also (B-in), which is an existing account input, not a new statement; without it, the missing step is Lemma B(i), a level-one bound of 0.04 alpha_{0,0} for U_2 next to Col(C).
-
-**Suggested next steps, for the lead.** (a) One check by Codex, line by line, of Lemmas A, B, D and Proposition C. (b) Legal copies of CMP 122a/b from the owner. With them, a lane can read (1.45) and the stage geometry (1.64)-(1.69), find either the scale factor of L3 or the shell widths that give (SC), and so decide (CL). (c) Section 6.4 locates what the account's assumed collar corollary (I:142283-142291) carries for the layers: a decay that grows with h. Whether that is worth raising with the authors is the lead's decision, after (a) and the five checks of How we work, item 6.
+**Suggested next steps, for the lead.** (a) One line-by-line check by Codex of Lemmas A, B, D, E and Propositions C, F, with attention to (P1), (P2) and the reading of d_sc. (b) A lane on (B-in) at level-one cells next to the collar, or a decision to take it as the account's input. (c) Legal copies of CMP 122a/b, if the check questions (P1) or the d_sc reading.

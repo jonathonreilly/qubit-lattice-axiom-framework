@@ -220,7 +220,7 @@ Facts on file for the choice:
 
 ### 3.6 Owner decisions on charged sectors and the zoom's observables (2026-11-06)
 
-Two questions were put to the owner on 2026-11-06, from frozen parts `RCS1.md` and `ZM1.md`.
+Three questions were put to the owner on 2026-11-06, from frozen parts `RCS1.md`, `ZM1.md` and `LZ1.md`.
 
 **R-CS, the charged-sector prescription.** The facts on file: on both five-mode laws fermion parity is a product of local centre elements, so every odd band of a stationary, cell-invariant, gauge-invariant state is flat (`LZ1.md` Theorems 2.1-2.2), and no gauge-invariant odd composite exists (`RCS1.md` Theorem 4). `RCS1.md` states eight candidate prescriptions with four-test verdicts; the cleanest is the Fredenhagen–Marcu straight-string limit R-CS^str (tests P, C, C, C), with the referee's relative parity `χ_tot` as the odd label over parity-sharp backgrounds. The owner chose: **R-CS^str, with `χ_tot` over parity-sharp backgrounds, is a named working candidate for lanes. It is not adopted.** Lanes push RCS-P and MT1-S[R-CS^str] in the VC1 vacuum next; adoption waits until those settle. Nothing enters the working set.
 

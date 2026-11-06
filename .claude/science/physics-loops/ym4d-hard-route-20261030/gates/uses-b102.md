@@ -8,7 +8,7 @@ One reading by one model; not an audit; grants no status.
 
 Status: in progress. Sections are written as the check proceeds.
 
-Scope: every row of `library/uses-old.md` §5 (I: 108 rows, II: 54 rows, III: 30 rows, plus the 20 rows of "ambiguous mentions"), checked against `library/b102.md` round 3 (§8, H15–H25, and the Result), with H1–H14 as its inputs. For each row I read the cited lines of CA-I/II/III at `31a47c543775` (fetched by URL into a scratch folder; CA-I SHA-256 `4cb5cb5e…` matches b102 §1). I read the b102 statements H19–H25 in full and the two gate reports `gates/b102-gate-a.md`, `gates/b102-gate-b.md` (both: first failing step none). No numerical run was used.
+Scope: every row of `library/uses-old.md` §5 (I: 108 rows, II: 54 rows, III: 26 rows, plus the 20 rows of "ambiguous mentions"), checked against `library/b102.md` round 3 (§8, H15–H25, and the Result), with H1–H14 as its inputs. For each row I read the cited lines of CA-I/II/III at `31a47c543775` (fetched by URL into a scratch folder; CA-I SHA-256 `4cb5cb5e…` matches b102 §1). I read the b102 statements H19–H25 in full and the two gate reports `gates/b102-gate-a.md`, `gates/b102-gate-b.md` (both: first failing step none). No numerical run was used.
 
 Credit: T. Balaban (CMP 102 and its prerequisites); Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, for the account whose uses are mapped here; Codex for b102.
 
@@ -37,19 +37,19 @@ All of it is for d = 4 and G = SU(2), uniform in depth, fine spacing, volume and
 
 ## 3. Verdicts per row
 
-Codes: **C** covered (given G1–G7); **C+** covered after the stated ceiling or change; **N** not covered (reason; weakest statement needed). b_* is the R3-P9 ball radius.
+Codes: **C** covered (given G1–G3, G5–G7); **C+** covered after the stated ceiling or change, including G4 where the row reads the (172) radius; **N** not covered (reason; weakest statement needed). b_* is the R3-P9 ball radius.
 
 ### 3.1 Clear uses in CA-I (108 rows)
 
 | Row (I:) | Statement | Verdict | Reason, ceiling, or weakest statement |
 |---|---|---|---|
-| 1031–1035 | 1.5:def-domains | C | (R4) tower minimisers: R3-T1 at real data, R3-P9 at complex data within b_* of the real factor's data; both tower rules are admissible (CA-I 32834–32894), so G2 applies. |
+| 1031–1035 | 1.5:def-domains | C+ | (R4) tower minimisers: R3-T1 at real data, R3-P9 at complex data within b_* of the real factor's data; both tower rules are admissible (CA-I 32834–32894), so G2 applies. |
 | 1340;1510,1559;1670 | 2.3:not-stages-* | C+ | G3 (a₀, a₁ after R₁); B₅ needs gate-b S2 written into b102. |
 | 2063,2094 | 2.4:lem-no-cycle | C+ | G3. With it the no-cycle claim stands; R₁M₁a₁ stays a fixed number. |
 | 3136 | 3.1:thm-main (pointer) | C | Pointer to the Ch. 8 uses (II:71256 row). |
 | 3791 | 4.2:def-increment | C | The torus linearisation at V = 1 is R3-P9 at B = 0 (h = H₀w). The ℤ⁴ limit 𝔥_∞ in the same definition reads CMP 99b Thms 3.10, 3.12, not CMP 102; b102 gives only volume-uniform torus kernels. |
-| 10163–10202 | 4.4:not-response-bound | C | Second case: five members at real bases, complex data in (172) ⊂ b_*-ball (G4). The account's "P₁ member" is covered: P₁ = D_UPD_U*, and P₁h = DD*h when RD*h = 0 (H24 3366–3368, H17.5). The free-current first case is the account's own (G8 below). |
-| 10516–10522 | 4.4:lem-twist-stability (hyp.) | C | As the previous row; B₃ plaquette bound is R3-T1 (8). |
+| 10163–10202 | 4.4:not-response-bound | C+ | Second case: five members at real bases, complex data in (172) ⊂ b_*-ball (G4). The account's "P₁ member" is covered: P₁ = D_UPD_U*, and P₁h = DD*h when RD*h = 0 (H24 3366–3368, H17.5). The free-current first case is the account's own (G8 below). |
+| 10516,10521–10522 | 4.4:lem-twist-stability (hyp.) | C+ | As the previous row (G4); B₃ plaquette bound is R3-T1 (8). |
 | 10725–10738 | same | C+ | Ceiling 2(α_{1,n′} + h_{n′}) ≤ b_* replaces "lies in (172)"; it is a Stage-7 ceiling after b102's constants. |
 | 10747–10780 | same | C | First two members integrated from ℋ_p(0) = 0 (H24.12, H23.3); curvature 2B₃α₀ from R3-T1. |
 | 12793,12812,12892–12894 | 4.5:not-geometry-conventions | C+ | ε̄₁'s entries read a₁, R₁a₁, C₁: G3, G4. Uniqueness clause B₃ε₁ ≤ ε₀ ≤ a₀ is R3-T1. |
@@ -144,12 +144,161 @@ Codes: **C** covered (given G1–G7); **C+** covered after the stated ceiling or
 | 160157–160174,160187–160201,160288–160303 | 4.36:def-unit-directions | C+ | G4; SU(2) only (G1). |
 | 160601,160617–160638,160734–160738 | 4.36:lem-broken-paths | C+ | r₀ ≤ C₁a₁′/4 ≤ b_* by G4. |
 | 160800–160825,160840 | same | C | First member and η\|ℋ\| ≤ C_H\|v′\| (H23.3, H24.12); base curvature R3-T1 (8). |
-| 160924–160969,161262 | 4.36:rem-normalisation-inputs | C | |
-| 161303,161324–161330,161465,161672 | 4.36:lem-one-link-curvature | C | |
+| 160924–160969,161262 | 4.36:rem-normalisation-inputs | C+ | G4 (\|V′ − 1\| < C₁ε₁ in \|·\|). |
+| 161303,161324–161330,161465,161672 | 4.36:lem-one-link-curvature | C+ | \|ζ\| < 2r₀ with r₀ ≤ C₁a₁′/4: G4. Plaquette formula from R3-T1 (8) and H20's expansion. |
 | 161723–161724,161789–161843 | 4.36:rem-curvature-readings | C | (190) is in the operator norm \|·\|. |
 | 161964–161975 | 4.36:rem-frozen-background | C | |
 | 163160,163174 | 4.36:rem-order-of-choice | C | B₃(L) before A₀/A₁. The SU(N) reading is G1. |
 | 163377,163438 | 4.36:not-sun-conventions | C | For N = 2. For N ≥ 3: N (G1). |
-| 163795–163834,163932 | 4.36:not-probing-direction | C | |
+| 163795–163834,163932 | 4.36:not-probing-direction | C+ | r₀ ≤ ¼C₁^(102)a₁′: G4. |
 
 **G8, free current.** b102 proves its operator, Hessian and response bounds only at the physical current (H18 "at the **physical** current"; H24 "physical-current versions"). The account's chart bounds at an independent current (CA-I 4.5 (K8), (F2), the chart constants) are the account's own lemmas, proved there from its free-current operator inputs; b102 supplies them only on the diagonal J = J(U).
+
+**G9, "minimal".** b102 proves the unique minimum over the regular class (H22.4) and says it does not assert an absolute minimum over unrestricted configurations (§1). Rows that use the critical orbit, its uniqueness in the class, or the regular-class minimum are covered. A row that needs the unrestricted minimum is not.
+
+### 3.2 Clear uses in CA-II (54 rows)
+
+| Row (II:) | Statement | Verdict | Reason, ceiling, or weakest statement |
+|---|---|---|---|
+| 2165–2168 | 5.1:def-admitted-inputs | C | |
+| 3996–3998,4044 | 5.2:prop-box-comb-gauge | C | B₃ as the Lipschitz constant: G7. |
+| 4149–4150 | 5.2:rem-own-box | C | |
+| 4608,4662–4668 | 5.2:lem-extraction-cost | C+ | The row writes ‖𝗁_x‖ ≤ B₃e^{−δ₀dist(x,X)}; b102 gives rate δ₀/8 in Balaban's d (H24.12, H13). Read it at that rate, with B₃ ≥ C (G7) and Cauchy radius r_○ ≤ b_*. |
+| 9004 | 5.2:lem-random-walk-bounds | C | |
+| 9407–9411 | 5.2:lem-almost-invariance | C | The minimum is over regular U′, as H22 gives. |
+| 10231–10237,10322–10323,10344,10365–10369,10434 | 5.2:cor-true-pair-positivity | C+ | Cube parameter M must be a multiple of R₁M₁: true if 𝔐 is a power of L (add to G2), since M, R₁ are powers of L. Ceiling M ≤ M(ε_data) on γ, as in the row. |
+| 10608–10610 | 5.2:lem-response-containment | C | |
+| 13717 | 5.2:lem-animal-resummation | C | |
+| 17530–17533,17551–17553 | 5.2:def-plain-interior-units | C | |
+| 34841 | 5.5:def-weight-constants | C | |
+| 35582–35587 | 5.5:lem-weight | C | Residual gauges are 1 at determining sites (b102 §1). |
+| 35633,35647–35652 | 5.5:prf-box-regularity | C | 𝔅_p(Q) is a maximal (r₁) tower (G2). |
+| 35669–35675,35705–35706 | same | C+ | ℓ\|ℋ\|, ℓ²\|∇ℋ\|, ℓ^{2+β}‖∇ℋ‖_β ≤ K_h sup\|B\|: H23.3 and H24.10–H24.11 integrated (β = β_H < 1). Ceiling: the data radius under c_h is ≤ b_*. |
+| 43034,43096,43124–43143 | 5.5:def-remainder-constants | C | |
+| 43653,43675–43680 | 5.5:prf-box-field-charts | C+ | 𝒪 inside the b_*-ball. |
+| 44016–44021 | 5.5:thm-membership-remainder | C+ | The argument's domain bound ≤ b_*. |
+| 44402–44405,44415–44420 | 5.5:cor-thin-layers | C+ | 1.2α_{3,j}/L ≤ b_*. |
+| 50317–50320 | 5.7:prop-response-zeroth-order | C+ | a_Λ ≤ b_*. |
+| 50809–50812 | 5.7:not-canonical-loops | C+ | The ball containing B₀, B₁ lies in the b_*-ball about real V₀₀. |
+| 50918–50923 | 5.7:lem-native-loop-closeness | C | Hölder exponent below 1 (gate-b S1). |
+| 52177–52181 | 5.7:prop-critical-layer-closeness | C | |
+| 58995 | 5.9:def-variation-hypotheses | C | (181): H25. |
+| 59247–59250 | 5.9:thm-low-order-variation | C | |
+| 69929,70014–70016 | 8.1:lem-kernel-bounds (h1) | C | T1 (9)–(10) carry no kernel; the linear-minimiser kernel bounds are H24.12 at B = 0 (and H13/H15). The free-current operator theorem in (h1) is G8. |
+| 71256–71261 | 8.1:rem-extraction-errors | C | |
+| 75244–75252,75356 | 8.2:lem-curvature-contraction (I) | N | (5) bounds V_{j,n}'s curvature by B₃L^{−2n} times the max of V over a **fixed finite neighbourhood** 𝒩(p̄_{j+n}). R3-T1 is global: it gives the same with the max over all plaquettes of V (constant 2B₃ after CMP 98 Prop. 2, G6). The local form has no tail term and does not follow from T1; I expect it is false (a datum curved only outside 𝒩 gives a nonzero, exponentially small response), not proved here. (I) also asserts the minimum "over the configurations", which b102 does not prove (G9). Weakest statement b102 supports: (5) with the global sup. |
+| 85642,85655–85657 | 8.4:not-step-zones | C | Read "minimal" as G9. |
+| 85786,85794–85796 | 8.4:not-box-variation | C+ | B₅ needs gate-b S2; c_* = b102's C. |
+| 85913–85956 | 8.4:def-response-hypotheses (a1)–(a7) | C+ | (a1)–(a5), (a7) are H19, H23, H24.12 (functional derivative with ℓ⁴ measure; curl ≤ 2 × covariant difference for (a4)). (a6): a₉ := b_*. |
+| 85974–85987 | same (c1) | N | (c1) asks R3-T1/P9/(190) for (𝐁_j, V^base) under (7♭): (7) everywhere **except** deep zone-0 plaquettes, which may be large-field. R3-T1 needs (7) on all plaquettes, and its class 𝔘 includes zone-0 plaquettes, so it fails as stated. The account itself says the transfer is assumed. Weakest statement: R3-T1, R3-P9, R3-(190) for the Dirichlet problem on E₁ with V₀ fixed on C₀, hypotheses and class read only on plaquettes meeting E₁ ∪ C₀. b102's proofs read only those plaquettes in the Hessian, but its reference induction (H21) and class are stated globally; this localisation is not written. |
+| 86161 | 8.4:def-far-member-hypotheses | C | Comparison remark. |
+| 86291–86300 | 8.4:not-decay-weight | C | b102's d is CMP 96 (2.46) (H13). The comparison with dist_j or ρ_sc is the row's own hypothesis. |
+| 86786–86807 | 8.4:lem-far-member (hypotheses) | N | Assumes (c1). |
+| 86835,86866 | same | C+ | a₉ ≤ b_*; the gradient member is covariant at the reference (H24.12). |
+| 86904–86912 | same | N | The application of T1/P9 to V^base goes through (c1). |
+| 86983–87002 | same | C | Given (c1): holomorphic composition on the tube, sup\|B\| < a₉. |
+| 87015–87022 | same | C | Given (c1): real agreement, Landau form with fixed base. |
+| 87078–87094,87156 | 8.4:prf-far-member-proof | C | Given (c1): both members at every B of the ball, rate δ₀/8. |
+| 88384–88389,88428–88435 | 8.4:rem-own-scale-smallness | N | Same (c1) transfer. |
+| 95939–95969 | 8.5:def-critical-backgrounds | C | M_Q a multiple of R₁M₁, as in R3-T1. |
+| 96003–96034,96061–96122 | 8.5:lem-background-regularity | C+ | Ceiling M_Q ≤ M(ε′) on ε′. |
+| 96156–96159,96224–96234 | 8.5:lem-vacuum-subtraction | C+ | α_{3,j} ≤ b_*; the U_j^flat membership is the row's hypothesis. |
+| 97407–97412 | 8.5:lem-insertion-sup | C | |
+| 97568–97571 | 8.5:thm-averaged-extraction | C | |
+| 99758,99774–99778,99804–99806 | 8.5:lem-minimiser-regular | C+ | Hölder with B₄(β), β < 1; cube M a multiple of R₁M₁ (as above) with M ≤ M(ε′). |
+| 101126–101128 | 8.5:lem-branch-comparison | C | The (190) decay it rests on is H24.12. The domain-uniform localisation itself (global versus Ω-local minimiser) is the account's derivation, not a b102 statement. |
+| 106924–106931 | 8.6:prop-exponential-moment (i) | C | Local problem on □̃: its sup is local, so R3-T1 gives C_B = cB₃, α_B ≤ a₁/c (G6). |
+| 109951–109966 | 8.8:lem-stability-exponent | C | Ceiling 4g_k ≤ a₁. |
+| 117626 | 8.10:prop-window-lower-bound | C | |
+| 119733–119739 | 8.11:not-units-cap-amplitude | C | |
+| 138407–138410 | 8.17:not-top-step-notation | C | Continuity from R3-P9 on the crude-regular class (admitted data). |
+| 139604–139608 | 8.17:lem-crude-short-move | C | |
+| 139967–139974 | 8.17:prop-short-move-construction | C+ | Base is a real regular datum; Cauchy on \|t\| ≤ α_P/4 needs α_P/4 within b_*. |
+
+### 3.3 Clear uses in CA-III (26 rows)
+
+| Row (III:) | Statement | Verdict | Reason, ceiling, or weakest statement |
+|---|---|---|---|
+| 1065 | 9.1:not-constant-order | C | G3. |
+| 2194,2345,2389–2390 | 9.1:lem-glued-minimisers | C | |
+| 2919,2939 | 9.1:prop-hull-step | C+ | r_c ≤ b_*. |
+| 2999,3025–3030 | 9.1:lem-hull-exactness | C+ | r_c ≤ b_*. |
+| 6362 | 9.1:lem-slice-displacement | C | |
+| 7265–7269 | 9.1:cor-tolerance-rooms | C | P9 part. The "operator theorem at free current" item is G8. |
+| 18821 | 9.1:def-seed-criticality | C | |
+| 19103–19106 | 9.1:rem-cellwise-increments | C | |
+| 19435 | 9.1:lem-core-gauge | C | (T2) of b102 §1. |
+| 19882–19884 | 9.1:cor-seed-rotation | C | |
+| 22139,22178 | 9.1:def-natural-vertex | C | (189), (190) at vertices: H24.2, H24.12. The (180) operator bounds "in a strengthened form" in the same list are a separate input; not checked here. |
+| 31748 | 9.2:not-parameters-couplings | C | |
+| 34767–34840 | 9.3:not-minimiser-bounds | C | Two depths; Hölder exponent θ < 1. Cubes must be class cubes or use the H14 route (as at CA-I 15707). |
+| 35173–35176 | 9.3:lem-gauge-fixing | C | |
+| 35740–35749 | 9.3:thm-stationarity-minimisers | C | H24.2: rate δ₀/4, r for ε₃, N(A′) ≤ r for (77), N = max{\|·\|₍₋₁₎, \|∇·\|₍₋₂₎}. |
+| 35794–35796 | same (torus case) | C | Uses CMP 102 (98) (H4.1/H6), not (189). |
+| 35913–35916 | 9.3:cor-stationarity-level-data | C | |
+| 36002–36007 | 9.3:not-perfect-action | C+ | Replace "C₁ε₁ ≥ r_c" by r_c ≤ b_*; base at ε = a_A/2 needs a_A ≤ 2a₁. |
+| 36252–36256 | 9.3:thm-stationarity-jets | C | \|V′(A′)\|₍₋₃₋θ₎ ≤ Cε₂‖A′‖_θ is the account's integration of (189) along tA′ (V′(0) = 0); with H24.1's exponential weights the level reweighting L^{θ\|j−j′\|} is summable once δ₀R₁𝔐/4 > θ log L (a floor on R₁, placed before a₁ by G3). |
+| 36300–36314 | same | C+ | First (190) member: H24.12. "ℋ obeys (19)–(21) with B₅ε₁": needs gate-b S2. |
+| 36721–36728 | 9.3:thm-stationarity-covariance | C+ | Response decay (first member) and Cauchy at tube radius r ≤ b_*. |
+| 36974–36990 | 9.3:lem-refinement | C+ | Ceilings 2B₃ε ≤ a₁ and 2B₃²ε ≤ a₀; the refined sequence must be admissible above G2's floors. |
+| 37006–37015,37026–37030 | 9.3:lem-response-decay | C+ | r_c ≤ b_*; ℋ(0) = 0. |
+| 37042–37048 | same | C | First two members along tB; coordinate derivative = ℓ_{y′}⁴ × functional kernel. |
+| 37147–37152 | 9.3:prf-local-backgrounds | C | |
+| 37324–37330 | 9.3:rem-large-field-regions | C | |
+
+The three source declarations themselves are covered for SU(2): CA-I 35144–35199 (b102 §1 (T4)–(T5) are its cube clauses; gate-b: "covers what CA-I 4.9 quotes"), CA-II 85845–85895 ((a) uniqueness in B₃ε̂₁ ≤ ε̂₀ ≤ a₀; (b) the first two members at δ₀/8 with (L^{n′}η)^{−d}), CA-III 35577–35626 ((189) = H24.2; first (190) entry = H24.12).
+
+### 3.4 Ambiguous mentions, proposed routes, negative uses, inventories (20 rows)
+
+"n/a" means the row applies none of the four results, so nothing is needed from b102.
+
+| Row | Statement | Verdict | Note |
+|---|---|---|---|
+| I:10065–10072 | 4.4:def-group-factor-bounds | n/a | Rejected route needing 4B₃ ≤ L². b102 chooses B₃ ≥ 72d³L³B₀S_* (H21), and B₀, S_* ≥ 1, so 4B₃ > L² for every L: the rejection is final. |
+| I:15931–15951 | 4.5:rem-condition-iv | n/a | |
+| I:16701–16703 | 4.5:prf-increment-kernel | n/a | (19)–(21) not used; b102 does not state it either (gate-b S2). |
+| I:20141–20142 | 4.5:rem-not-asserted | n/a | Free-current members not asserted; consistent with G8. |
+| I:34928,35007–35018 | 4.8:rem-literal-inclusions | n/a | With b102's B₃, closure would need L^{2g} ≥ 288d³L³B₀S_*(1 + β); not used. |
+| I:45179–45190 | 4.13:lem-minimizer-unique | N | Proof outstanding in the account. b102 supplies part: H22 makes the orbit the unique minimum over the regular class, which gives the account's third step and the uniqueness half of its second. Still open: admitted fields satisfy (7) with ε₁ ≤ a₁, and every minimiser of CMP 109 Lemma 4's problem lies in 𝔘_k(a₀) (b102 gives no unrestricted minimum, G9). |
+| I:44893,44936–44963 | 4.12:rem-refined-minimiser | n/a | |
+| I:131690–131692 | 4.27:lem-t-step-layer | n/a | b102 does not change this: R3-P9 is at admitted real bases, and its external-background chart reads CMP 99b (3.38) and is a sketch. |
+| I:155507–155512 | 4.31:rem-non-minimiser-data | n/a | |
+| I:154200–154230,154275–154291 | 4.31:def-complex-background (W1)–(W2) | C+ | At base 1 these follow from R3-P9 (bounds from H23.3 and H20's plaquette and current expansions; normalised uniqueness from H20's unique chart point; real agreement; constant-gauge covariance from H25 at real gauges and the identity theorem). Ceiling β_W ≤ b_*. |
+| I:164436,164531 | 4.36:prf-regular-absorption | n/a | |
+| II:54241–54243 | 5.8:rem-kernel-rates | n/a | |
+| II:54659–54660 | 5.8:prop-local-decay | n/a | |
+| II:114770 | 8.10:def-window-structure (route) | C | R3-T1 gives the local minimiser's regularity B₃ε₁ from the data's ε₁ on admissible local nests; extracting B_W from it is the row's step. |
+| I:166573,166633 | inventories | n/a | |
+| II:60248–60253,60315 | 5.13:prop-sun-correlation | N for N ≥ 3 | G1. |
+| II:145545–145547 | inventory | n/a | Its inputs are covered as in §3, for SU(2). |
+| III:75776–75781 | inventory | n/a | |
+| III:110946 | synthesis | n/a | |
+| III:111362 | Ch. 13 inventory | C | The account lists "the passage between (189) and (190)" as outstanding. H24 (H24.3)–(H24.12) supplies it; gate-b: ADVANCE. |
+
+## 4. Summary
+
+Counts (rows of §3.1–§3.3, 192 in all): CA-I 108 rows: 56 C, 37 C+, 15 N. CA-II 54 rows: 30 C, 18 C+, 6 N. CA-III 30 rows: 19 C, 11 C+, 0 N. Plus §3.4: 2 C or C+, 2 N, 16 n/a. All for SU(2); every row is N for N ≥ 3 (G1).
+
+**Not covered, ranked by what each breaks.**
+
+1. **CA-II 8.4 (c1), the transfer under (7♭)** (II:85974–85987, 86786–86807, 86904–86912, 88384–88435; the far-member rows 86983–87156 are covered only given it). The small-field step's response at base data with level-0 large-field regions needs T1/P9/(190) with (7) and the regular class read only on plaquettes meeting E₁ ∪ C₀. b102 states both globally. The account says the transfer is assumed. Weakest statement: the Dirichlet-localised R3-T1, R3-P9, R3-(190) described in the row. This is the only gap that sits on the large-field route itself.
+2. **CA-I 4.12, the block-scale displays (b), (c)** (7 rows, I:43122–44704). The 4.12 determining-set hypothesis admits block partitions without the R₁𝔐 gap, and its uniqueness class drops the current bound. Weakest statement: restrict the hypothesis to admissible nests (if the level function and the boundary tower both come from admissible nests, their minimum is admissible: unions of aligned blocks, gap ≥ the smaller gap) and read clause (ii) in b102's class; the block-sum form (c) then follows from H24.12 by summation. Not done here.
+3. **Free current (G8)** (I:14847–14865, 15125–15432, 19806; partly I:30883, II:69929, III:7265). b102 proves (K8)-type bounds only at J = J(U). Weakest statement: H18 and H24 with the current a free variable of small (−3) norm.
+4. **CMP 109 (1.17) at complex averages** (I:29558–29565, 32532–32706). Not CMP 102 content. b102 supplies the real-data bound (R3-T1) and the continuation (R3-P9); b109 P20 supplies only the weaker (110).
+5. **CA-II 8.2 (I), strictly local curvature contraction** (II:75244–75356). Stronger than T1 and probably false as stated (no tail term). b102 supports the global-sup form with constant 2B₃.
+6. **CA-I 4.29 (τ4), holomorphy in the external configuration** (I:149961–149966). b102 has a sketch only (H23, gate-b S3).
+
+**Covered after ceilings that must be written somewhere** (none creates a cycle):
+
+- G3: in CA-I Stage 5, place a₀, a₁ (and b102's chart radius b_*) after R₁; no floor on R₁ reads a₁.
+- G2: 𝔐 a power of L and a multiple of M_P; R₁𝔐 above b102's localisation length and H14's auxiliary collars.
+- G4: fix C₁ before a₁ and require 2C₁a₁ ≤ b_*; each named radius (b_H, a₉, r_c, β_W, a_Λ, α_{3,j}, α_P, 2(α₁ + h), c_Qℓ_j sup\|𝐇_k\|) at most b_*.
+- The 12𝔐 cubes of CMP 99b (3.35) (I:15707–15735, 19876–20123): M′ = 6𝔐 is not a multiple of R₁𝔐, so neither printed T1 nor R3-T1 applies as the account reads it; R3-T1 regularity plus H14.1 covers them after one more entry in ε̄₁.
+- Rates: CA-I (A3) and CA-II 5.2:lem-extraction-cost ask decay e^{−δ₀dist}; b102 gives δ₀/8 in Balaban's d. Read them at δ₀/8.
+- B₅ and the (19)–(21) clause (I:1340, 151767; II:85786; III:36300): gate-b S2's one-line clause must be written into b102.
+
+**What b102 adds to the account.** The account's outstanding "passage between (189) and (190)" (CA-III 111362) is supplied by H24. The proof-outstanding 4.13:lem-minimizer-unique gets its uniqueness step from H22, leaving two named sub-steps.
+
+Not checked here: the account's own arguments in each row; whether each local, staircase, refined or box determining set the account builds is admissible above b102's floors (I took the account's admissibility claims as given wherever it makes them); every consumer of (A3) for the rate change.
+
+Checked line by line by Claude (Mini worker).

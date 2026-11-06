@@ -1,3 +1,5 @@
+Node status is kept in t0-tree.md (row 391); this file is history for status.
+
 # Port map: our YM4D T0 work onto Sussman and Alpoge's complete account (2026-11-05)
 
 Provenance: Claude Opus 5.5 (`claude-opus-5-5`), 2026-11-05, one session. Research text, not an audit. It grants no status, proves nothing, and has not been checked by another model. It edits no other file.

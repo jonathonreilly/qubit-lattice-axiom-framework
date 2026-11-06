@@ -1,3 +1,5 @@
+Node status is kept in t0-tree.md (row 391); this file is history for status.
+
 # Open-core synthesis: dependencies and remaining proof obligations
 
 Provenance: research synthesis in checkout b4295a5c5b3ceba3984088972e3237fc81a04998, 2026-11-05. Source text: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors, Yang–Mills outline and complete account at upstream revision 31a47c543775; local proof-lane notes as individually cited below. This text grants no audit or retained status; computations do not discharge proofs.

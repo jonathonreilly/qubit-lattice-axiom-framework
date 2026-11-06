@@ -1,3 +1,5 @@
+Node status is kept in t0-tree.md (row 391); this file is history for status.
+
 # T0 assembly status, 2026-11-05
 
 Provenance: Claude Opus 5.5 (`claude-opus-5-5`), 2026-11-05. Bookkeeping and reading only. No new mathematics. Not checked by another model. It grants no status. It does not edit `ym4-assembly.md` or any other file.

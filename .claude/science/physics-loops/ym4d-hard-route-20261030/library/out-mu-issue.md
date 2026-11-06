@@ -2,7 +2,7 @@
 
 Ethan and Levent,
 
-Your [constrained-minimizer lemma](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45162-L45201) is marked “Proof outstanding.” [This note](LINK-MU) gives the chart-admission, criticality and representative arguments for uniqueness and (3.38).
+Your [constrained-minimizer lemma](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45162-L45201) is marked “Proof outstanding.” [This note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/877743789c269744f7500a62087d21e545df72b1/.claude/science/physics-loops/ym4d-hard-route-20261030/library/out-mu.md) gives the chart-admission, criticality and representative arguments for uniqueness and (3.38).
 Its scope is \(Z\subset X\subset\tilde\square^2\), both tower rules, and \(1\le n\le p\le j\), under the explicit amplitude ceilings.
 It builds on your real refinement lemma and Tadeusz Balaban's results.
 

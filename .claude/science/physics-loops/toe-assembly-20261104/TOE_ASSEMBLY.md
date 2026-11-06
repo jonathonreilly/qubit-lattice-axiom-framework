@@ -226,7 +226,7 @@ Two questions were put to the owner on 2026-11-06, from frozen parts `RCS1.md` a
 
 **The zoom's observable class (ZM1-I1).** The question: which observables must a block map reproduce? In locally gauge-invariant vacua, charged two-point functions between distinct coarse sites vanish (`ZM1.md`, referee R-GI). The owner chose: **a lane first builds and four-tests several observable classes;** the owner chooses after that. ZM1-I1 is not worked until then.
 
-A third question, the definition of a light species (`LZ1.md` RC1 and the D4 scope note), is held. The owner asked that every owner question be checked by Codex `gpt-6-astra` at max effort before it is put to them.
+**Light species, LZ1-SC.** The owner asked that every owner question be checked by Codex `gpt-6-astra` at max effort before it is put to them. Astra (max) confirmed that RC1's failure comes from the static Gauss background and proposed a separate static class. The owner chose it, into the proposed-axiom-update section (PR #10140, "Owner decision LZ1-SC"): **"LZ1's census of bands with a node is unchanged. Its dispersion clause applies only to bands whose image lies in the orthogonal complement of the tick-fixed vectors, `ker(Ũ−1)^⊥`. Tick-fixed weight is recorded as a separate static class, which LZ1 does not constrain."** LZ1-i is unchanged; R-SC stays a separate open reading.
 
 ## 4. Plan of the derivation
 

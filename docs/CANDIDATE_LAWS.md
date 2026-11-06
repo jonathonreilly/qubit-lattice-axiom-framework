@@ -94,6 +94,14 @@ The question put to the owner: on the cube law of part LW1, frames on cells of o
 - **Check.** Tests 1-3 pass: the text names no group or target, it is closed, and it does not put in the 16 (#10027: site-bilinear `Spin(10)` on five-mode sites gives "vector class, never the 16"). Test 4 passes conditionally: the constant 5 comes from #10014 under its conditions (a)-(c), and #10014 itself calls condition (b), the Weyl-species reading, "an inserted identification, borderline".
 - **What it changes.** The text bends the Qubit axiom inside this working set only. The minimal axioms are unchanged. The law on five-mode sites is a new open item (LW1-5) of the TOE assembly.
 
+### Owner decision LZ1-SC, light species (2026-11-06)
+
+The question put to the owner: part LZ1 of the TOE assembly (frozen `LZ1.md` on branch `claude/toe-assembly`, draft PR #10139) defines a light species as a band with a node (its D4). That census counts static bands. The LZ1 referee proved that, with it, the common-light-cone statement fails on `L5-O` in every locally gauge-invariant, stationary, cell-invariant state, because a static Gauss-generator band exists (`LZ1_REFEREE.md` RC1). Codex `gpt-6-astra` at max effort checked the question before it was asked. It confirmed that the cause is the static background and proposed the option below. The owner chose it.
+
+- **LZ1-SC, static class apart.** "LZ1's census of bands with a node is unchanged. Its dispersion clause applies only to bands whose image lies in the orthogonal complement of the tick-fixed vectors, `ker(Ũ−1)^⊥`. Tick-fixed weight is recorded as a separate static class, which LZ1 does not constrain."
+- **Check (Astra, max).** Test 1 passes: it fixes no cone and no common speed. Test 2 passes: membership is a closed condition on the band's image. Test 3 passes: it settles neither MT1-S nor any boson's sector by premise, and it keeps moving bands whose slope vanishes at the node. Test 4 passes: it uses only the tick already in the law.
+- **What it changes.** The static Gauss bands of RC1 no longer count against LZ1(a). LZ1-i, the common speed of the moving species, is unchanged. Whether static physical weight is excluded is a separate question (the spectral reading R-SC), not settled here.
+
 ### Owner decisions without a working-set change (2026-11-05 and 2026-11-06)
 
 These decisions direct work on branch `claude/toe-assembly` (draft PR #10139). None adds text to this working set. They are recorded in `TOE_ASSEMBLY.md` sections 3.5 and 3.6.

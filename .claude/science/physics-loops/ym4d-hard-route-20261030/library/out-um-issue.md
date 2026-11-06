@@ -2,7 +2,7 @@
 
 Ethan and Levent,
 
-[This note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/31def2a2e1cd4d8f118d253d447770370d12fbd8/.claude/science/physics-loops/ym4d-hard-route-20261030/library/out-um.md) supplies the uniform extraction argument at your `4.2:lem-unmarked` star (CA-I 4084–4111, commit `31a47c543775`).
+[This note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/0fc778a741a61b20fde7f7bf0c99eacdd37aba72/.claude/science/physics-loops/ym4d-hard-route-20261030/library/out-um.md) supplies the uniform extraction argument at your `4.2:lem-unmarked` star (CA-I 4084–4111, commit `31a47c543775`).
 Under the four hypotheses at CA-I 4040–4058, it gives both bounds for every $l\ge1$:
 $$
  |\beta_l^{\mathfrak A}-\beta_l^0|\le C_{\rm rem}\varepsilon_1^{\mathrm I},\qquad |\beta_l^{\mathfrak A}|\le C_\beta.

@@ -74,8 +74,10 @@ favorable verdicts, note counts or PR counts.
    A lane's own checkout may not hold main or the open PRs, so the digest is
    the lane's map to them. The search runs over a plain-file copy of those
    sources with `grep`, bounded by path; never over git history (`git grep`
-   on whole refs, `git log -p` and `-S` searches exhausted memory and
-   crashed the lead machine on 2026-11-06). A lane that ran without a digest
+   on whole refs, `git log -p`, `-S` searches). On 2026-11-06 the lead machine
+   ran out of memory with git processes holding about 29 GB, while such
+   searches were running; the panic report did not name the command. A lane
+   that ran without a digest
    gets one afterwards, and its overlaps are recorded before it freezes.
 
 ## 3. Formal verification (Lean)

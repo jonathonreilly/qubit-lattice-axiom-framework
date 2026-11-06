@@ -12,6 +12,6 @@ It does not assert uniqueness of all complex critical points.
 This note does not cover every later nesting domain, the later composite radii, boxes without sequence domination, unbounded complex boxes, or the CA-III §9.1 uses.
 
 Codex wrote the working note; a fresh Claude session checked it line by line, first failing step: none.
-Codex wrote this outward version; its separate reading against the working note by Claude is pending.
+Codex wrote this outward version; Claude read it against the working note and your cited lines.
 Could its admission and restriction arguments help complete your lemma?
 This is a proposed proof for your review, not a claim of closure of the full account.

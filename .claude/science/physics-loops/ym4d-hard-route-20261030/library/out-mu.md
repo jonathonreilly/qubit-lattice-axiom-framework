@@ -191,7 +191,7 @@ Those scalar estimates are reused. No derivative-decay estimate or other backgro
 ## Who wrote and checked this
 
 Codex wrote the working note. A fresh Claude session checked it line by line; first failing step: none.
-Codex wrote this outward version. Its separate reading against the working note by Claude is pending.
+Codex wrote this outward version. Claude (Opus 5.5) then read it against the working note and against every cited line of your outline and account; the statement, scope, constants and inputs match.
 These are model readings of research text, not human review or an audit. They grant no scientific status.
 
 [Full working note](mu.md)

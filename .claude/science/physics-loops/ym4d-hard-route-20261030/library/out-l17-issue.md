@@ -4,7 +4,7 @@
 
 **Body:**
 
-I have a proposed local clarification of `5.2:lem-polydisc-containment`, based on your outline's ER8 argument. Credit for that argument and the quadratic tower mechanism belongs to Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of your text.
+I have a proposed local clarification of `5.2:lem-polydisc-containment`, based on your outline's ER8 argument.
 
 At [CA-II 4378–4384](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L4378-L4384), the proof invokes the inclusion at auxiliary radii equal to the target radii. The budget in [small pairs](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L34058-L34072) does not justify that invocation. This concerns the inference, not a counterexample to the lemma.
 

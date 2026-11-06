@@ -69,3 +69,60 @@ Kind of result: proof of the step they mark incomplete (CA-II 59607–59609), as
 
 So the corrected proposition has the same order of choice, letter for letter. This is the l17c pattern in its simplest form: the weaker statement is proved (by (b3), §2), and every consumer reads it.
 
+## 4. Theorem 1: the companion from the operator theorem, on local balls
+
+§2 closes (∗) at the account's citation standard. Our chain must rebuild cited inputs, so this section proves the companion clause from a statement the account proves, `4.14:thm-operator-theorem` (CA-I 46035–46129, status PROVED; our port `port/p4-operator.md`, A9). The class is the local balls of its clause (H): complex data given only near the walk, about a real base given on the whole lattice.
+
+**Inputs used, all from CA-I.** Notation 4.14 (45237–45330): m₁ = γ₀/4, δ₀ = μ₁/4, B₀ = 12·2^d/m₁, ε₁ = γ₀/(8γ₁), all (d,L)-numbers. Clause (B): Re 𝖰 ≥ m₁ on 𝒰(ε₁). Clause (D) with its proof (47864–47884): for every 𝔹 ⊂ 𝔹⁺ and every x ≥ 0, (x+𝖠)^{−1} ∈ 𝒮_u[M/4; B₀m₁/(m₁+2x), δ₀; ε₁], "with walks and domains independent of x". Clause (G) (48012–48017): "Each walk of n steps in the expansion of (x+𝖠)^{−1} carries the factor (1+2x/m₁)^{−(n+1)}", and the unit words are products of factors (48021–48022). Clause (I): the constants depend on d and L only. The decay property (Sh3) of a sheet, in the form displayed at 46616–46632: for each walk ν and blocks y, y′ of the unit frame, ‖χ_y T_ν χ_{y′}‖ ≤ a_ν(y) e^{−δ d(ν;y,y′)}, with Σ_ν a_ν(y) ≤ B (the frame has one level, so the scale factor is 1; 47889–47890). Lemma `4.14:lem-local-balls` (46800–46950, PROVED).
+
+Two readings of the sheet calculus are used and are named here, because the account states that calculus only by name (our port keeps it as the named input P4-H-sheet):
+
+- **(Inv-x)** Each term R_ν(x) of (x+𝖠)^{−1} is continuous in x ∈ [0,∞). Reason given in the account: the terms are products of factors (48021–48022), the x-dependent factors are one-box resolvents, and an accretive matrix B with Re B ≥ m₁ has (x+B)^{−1} analytic in x on Re x > −m₁ (Step 1 below).
+- **(Sh3-u)** The coefficients a_ν(y;x) of (Sh3) hold at every point of the analytic ball 𝒰(ε₁), not only pointwise. This is the form displayed at 46629 (coefficients built from the norm bound, not from the datum) and the form of hypothesis (W′), item 5 (CA-I 5547–5552).
+
+**Theorem 1.** Assume the hypotheses of `4.14:thm-operator-theorem`, fix 𝔹 ⊂ 𝔹⁺, and put 𝖠 = 𝖰_{𝔹𝔹}. For a walk ν of the sheet of (D) and a point 𝗎 of 𝒰(ε₁), put
+
+  𝖬_ν(𝗎) := (1/π) ∫₀^∞ x^{−1/2} R_ν(x;𝗎) dx.
+
+(a) The integral converges absolutely, entrywise. The series Σ_ν 𝖬_ν(𝗎) converges absolutely, entrywise, to 𝖲(𝗎) := (1/π)∫₀^∞ x^{−1/2}(x+𝖠(𝗎))^{−1}dx. This is the formula by which the account defines the root, `5.2:eq-covariance-root-1` (CA-II 10114–10116), and by which Balaban defines C^{1/2}(σ) (CMP 116 (2.7), as described at CA-II 8948: "At σ = 𝟙 the operator C_Λ^{1/2}(σ) of [(2.7) CMP 116] is the square root of C_Λ supplied by the square-root lemma").
+
+(b) For every walk ν and blocks y, y′: ‖χ_y 𝖬_ν(𝗎) χ_{y′}‖ ≤ ã_ν(y) e^{−δ₀ d(ν;y,y′)}, with Σ_ν ã_ν(y) ≤ B₀ (m₁/2)^{1/2} = 12·2^d (2m₁)^{−1/2}. The coefficients ã_ν(y) do not depend on 𝗎. The same holds with the roles of y and y′ exchanged.
+
+(c) Each 𝖬_ν is analytic on 𝒰(ε₁).
+
+(d) **Local balls.** Let U ∈ 𝒰_ℝ be given on the whole lattice, and let (A′,J) be given only on [ν]^≈, with every member of ‖(A′,J)‖_⋆ smaller than ε₁/2 there. Then 𝖬_ν is defined on this local ball by its value at the point (e^{iηχA′}U, χJ) of `4.14:lem-local-balls` (β). The value does not depend on the extension of the data. So defined, 𝖬_ν is analytic on the local ball and obeys (b) with the same coefficients.
+
+(e) The constants B₀(m₁/2)^{1/2} and δ₀ depend on d and L only. They do not depend on M, k, K, the nest, 𝔹, the volume or g. They can be fixed at Stage 5 of CA-I, and in the (d,L)-group of (5.1:eq-admitted-inputs-b), before Θ₁, ϖ_T, r′, ℓ and M.
+
+**Proof.**
+
+*Step 1 (one accretive matrix).* Let B be a finite complex matrix with Re⟨v,Bv⟩ ≥ m₁|v|² for all v, m₁ > 0. For complex x with Re x > −m₁ and every v: |v|·|(x+B)v| ≥ Re⟨v,(x+B)v⟩ ≥ (Re x + m₁)|v|². So x+B is injective, hence invertible (finite dimension), and ‖(x+B)^{−1}‖ ≤ (Re x + m₁)^{−1}. Its entries are rational functions of x with no pole in Re x > −m₁ (Cramer's rule; the determinant does not vanish there). In particular they are continuous on [0,∞). This is the reason recorded in (Inv-x).
+
+*Step 2 (the scalar integral).* For a > 0: (1/π)∫₀^∞ x^{−1/2} a/(a+x) dx = a^{1/2}. Substitute x = at², dx = 2at dt: the integral becomes (1/π)∫₀^∞ (a^{1/2}t)^{−1}·(1+t²)^{−1}·2at dt = (2a^{1/2}/π)∫₀^∞ dt/(1+t²) = a^{1/2}. With a = m₁/2, the function B₀m₁/(m₁+2x) equals B₀ a/(a+x), so (1/π)∫₀^∞ x^{−1/2} B₀m₁/(m₁+2x) dx = B₀(m₁/2)^{1/2}.
+
+*Step 3 (measurable majorants).* Fix ν and a block y. The torus is finite, so there are finitely many blocks y′. Put
+
+  a*_ν(y;x) := sup_{𝗎∈𝒰(ε₁)} max_{y′} ‖χ_y R_ν(x;𝗎) χ_{y′}‖ e^{δ₀ d(ν;y,y′)}.
+
+By (Inv-x) each function x ↦ ‖χ_y R_ν(x;𝗎)χ_{y′}‖ is continuous on [0,∞). A supremum of continuous functions is lower semicontinuous, hence Borel measurable; so a*_ν(y;·) is measurable. By (D) and (Sh3-u), a*_ν(y;x) ≤ a_ν(y;x) and Σ_ν a_ν(y;x) ≤ B₀m₁/(m₁+2x), for every x ≥ 0.
+
+*Step 4 (proof of (a) and (b)).* Put ã_ν(y) := (1/π)∫₀^∞ x^{−1/2} a*_ν(y;x) dx ∈ [0,∞]. The walks form a countable set and the a*_ν are non-negative and measurable. By Tonelli's theorem for a countable sum, and Steps 2–3,
+
+  Σ_ν ã_ν(y) = (1/π)∫₀^∞ x^{−1/2} Σ_ν a*_ν(y;x) dx ≤ (1/π)∫₀^∞ x^{−1/2} B₀m₁/(m₁+2x) dx = B₀(m₁/2)^{1/2}.
+
+In particular every ã_ν(y) is finite. For each 𝗎, each ν and each pair y, y′, ‖χ_y R_ν(x;𝗎)χ_{y′}‖ ≤ a*_ν(y;x)e^{−δ₀d(ν;y,y′)}, and the right side is integrable against x^{−1/2}. So the integral defining 𝖬_ν converges absolutely, and taking norms inside the integral gives (b). The blocks χ_y·χ_{y′} cover every entry, so the convergence is entrywise. For the series: Σ_ν ∫ x^{−1/2}‖χ_y R_ν(x)χ_{y′}‖dx ≤ π B₀(m₁/2)^{1/2} < ∞. Fubini's theorem therefore exchanges Σ_ν and ∫. For each x, Σ_ν R_ν(x) = (x+𝖠)^{−1} by (D), and the series converges absolutely by (Sh3). Hence Σ_ν 𝖬_ν = 𝖲. The column form of (b) is the same computation with the column sums of (Sh3).
+
+*Step 5 (proof of (c)).* For each x, R_ν(x;·) is analytic on 𝒰(ε₁): it is a term of a sheet whose analyticity radius is ε₁ (clause (D)). Its entries are bounded on 𝒰(ε₁) by a*_ν(y;x) times a constant, and x^{−1/2}a*_ν(y;x) is integrable (Step 4). Restrict to any complex line {𝗎₀ + z𝗏} meeting 𝒰(ε₁). Fubini's theorem and Cauchy's theorem for each fixed x give that the integral of 𝖬_ν over every closed triangle in the line vanishes; continuity of 𝖬_ν follows from dominated convergence. By Morera's theorem 𝖬_ν is analytic on each line. A function on a finite-dimensional complex domain that is continuous and analytic on each complex line is analytic (Hartogs' theorem in its elementary form for continuous functions, via the Cauchy integral in each variable). This proves (c).
+
+*Step 6 (proof of (d)).* Fix ν. For every x ≥ 0, (x+𝖠)^{−1} is a sheet of 𝒮_u[M/4; B₀m₁/(m₁+2x), δ₀; ε₁], so `4.14:lem-local-balls` applies to it with r = ε₁. Its cut-off χ of (4.14:eq-local-balls-1) depends only on [ν], and [ν] does not depend on x ("walks and domains independent of x"). So one point 𝗎̂ := (e^{iηχA′}U, χJ) ∈ 𝒰(ε₁) serves every x. By part (γ) of that lemma, R_ν(x;·) takes the same value at every point of 𝒰(ε₁) whose data agree with the given data on [ν]. Hence 𝖬_ν takes the same value at all such points, because it is an integral of these values; this is the independence of the extension. The map (A′,J) ↦ (χA′,χJ) is linear and sends the local ball into 𝒰(ε₁) (part (β)). So 𝖬_ν on the local ball is 𝖬_ν composed with an affine map, hence analytic by (c), and (b) holds at 𝗎̂ with the same coefficients.
+
+*Step 7 (proof of (e)).* B₀ = 12·2^d/m₁ and m₁ = γ₀/4, δ₀ = μ₁/4 are (d,L)-numbers by Notation 4.14 and clause (I). No step above introduced another constant. ∎
+
+**What Theorem 1 gives, and what it does not.**
+
+- It proves the companion clause of the proposition at rate δ₀ in place of μ₀, on the local balls of clause (H), from a proved theorem. With μ̂₀ replaced by min{μ₀, δ₀} in Lemma R, (c) of that lemma now adds one floor, δ₀M ≥ 2κ₁; it reads only Stage-5 constants and is imposed at Stage 6 with the others (the pattern of `cwch.md` (M7)).
+- The bound is stated in the distance d(ν;y,y′) of the unit frame. That is the distance in which clause (E) states the kernel 𝖢, which the account's proof uses for the first clause at local data (CA-II 59602–59605). So the two clauses now have the same proof at local data.
+- It covers 𝗌 ≡ 𝟙. The decoupled family of (b3) with |𝗌(Δ)| ≤ e^{κ₁} needs in addition a count of the cubes a walk meets, as in hypothesis (c) of `4.4:prop-local-real-base` (CA-I 8122–8127), which is itself outstanding.
+- It needs the real base U on the whole lattice, in 𝒰_ℝ. Data whose real part is given only locally are the subject of §5.
+- It does not use, and does not identify, the words of the account's assigned expansion (b3). It is an own-route family with the same σ = 𝟙 sum 𝖲.
+

@@ -218,6 +218,16 @@ Facts on file for the choice:
 - `L5-U`. Pure gauge-invariant states exist for every register sector (`LW1_5U_DRAFT.md` Proposition Σ-U). Local operators carry the `SU(5)` types `5bar`, `10` and `1`. `SU(2)` is exact. At one mode the law is `L_cube` with `S = 1/2`. Under `U(5)` or `SU(5)`, #10014's criteria do not pick `N = 5` (Proposition D), so under `L5-U` the number 5 is an underived datum of PS-5.
 - Both laws, and `L_cube`: on a periodic box, no pure, locally gauge-invariant, site-transitive state is half filled (`LW1_5U_DRAFT.md` Theorem F-U and Remark F.1). PS-7r already leaves the gauged vacuum to VC1, so this is VC1's question.
 
+### 3.6 Owner decisions on charged sectors and the zoom's observables (2026-11-06)
+
+Two questions were put to the owner on 2026-11-06, from frozen parts `RCS1.md` and `ZM1.md`.
+
+**R-CS, the charged-sector prescription.** The facts on file: on both five-mode laws fermion parity is a product of local centre elements, so every odd band of a stationary, cell-invariant, gauge-invariant state is flat (`LZ1.md` Theorems 2.1-2.2), and no gauge-invariant odd composite exists (`RCS1.md` Theorem 4). `RCS1.md` states eight candidate prescriptions with four-test verdicts; the cleanest is the Fredenhagen–Marcu straight-string limit R-CS^str (tests P, C, C, C), with the referee's relative parity `χ_tot` as the odd label over parity-sharp backgrounds. The owner chose: **R-CS^str, with `χ_tot` over parity-sharp backgrounds, is a named working candidate for lanes. It is not adopted.** Lanes push RCS-P and MT1-S[R-CS^str] in the VC1 vacuum next; adoption waits until those settle. Nothing enters the working set.
+
+**The zoom's observable class (ZM1-I1).** The question: which observables must a block map reproduce? In locally gauge-invariant vacua, charged two-point functions between distinct coarse sites vanish (`ZM1.md`, referee R-GI). The owner chose: **a lane first builds and four-tests several observable classes;** the owner chooses after that. ZM1-I1 is not worked until then.
+
+A third question, the definition of a light species (`LZ1.md` RC1 and the D4 scope note), is held. The owner asked that every owner question be checked by Codex `gpt-6-astra` at max effort before it is put to them.
+
 ## 4. Plan of the derivation
 
 The argument has four layers. First the **law**: one update, one odds rule, one actuality and formation rule and one initial condition (LW1). The axioms fix the frame (sites, one-site algebra, NN-determined odds, permanent records); the law fixes everything the axioms leave open. Today the law is underdetermined: `ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13` exhibits two covariant NN laws that satisfy the Admissibility contract. So LW1 is a choice among candidates plus a consistency proof, and it is where the owner's specifications enter.

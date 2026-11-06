@@ -1,0 +1,150 @@
+# LZ1 with MT1-S. Common light cone
+
+## 0. Status
+
+**Pass 2; not refereed or frozen.** The common-cone target LZ1 and MT1-S remain open in their intended physical meanings. The statements below are conditional mathematics on the named laws and readings; they do not select a vacuum, a charged sector, or a new axiom.
+
+**Proved, subject to the stated imported law definitions.** Local centre charges give a momentum-independent tick on the nontrivial finite-pattern subspace. In the proposed finite-fibre band reading, every odd band is flat at a node (Theorems 2.1–2.2). Conserved local observables give static spectral weight; under explicit clustering and the proposed spectral exclusions they are sharp (Theorem 3.1). On `L5-U`, sharp Gauss charges and site transitivity imply integer filling; half filling plus exponential Gauss-charge clustering produces static physical-sector spectral weight arbitrarily close to zero momentum (Theorem 3.2). The base tick also has nontrivial conserved frozen-star projectors (Theorem 3.3). On `L5-O[S_+]`, the star Casimir is conserved, and the dressed base tick has an antilinear symmetry (Theorems 3.4 and 5.2). A specified multiplicity-one node representation forces a Clifford triple up to a real scalar, which may be zero (Theorem 5.1). The symmetry and empty-matter results are in Theorems 4.1–4.3 and 6.1.
+
+**GAPs and corrections.** (G1) A finite-fibre band is a proposed reading, not a definition supplied by MT1-S; flatness in it does not settle charged sectors or infraparticles. (G2) The LZ1 dispersion statement alone does not imply R-SC: it constrains listed light species, not necessarily every fixed vector. R-SC and R-SC* are extra proposed spectral exclusions. (G3) Multiplicity one and the stated symmetries are sufficient for a Clifford cone only when the scalar is nonzero; they are not necessary, and MT1-S is not equivalent to that representation condition. (G4) Theorem 3.1 needs its stated clustering hypothesis for each observable: R-SC alone does not make all conserved operators sharp. (G5) The algebraic two-speed witness in Theorem 4.2 is not an interacting-law counterexample. Blockwise symmetry covariance alone does not exclude additional dynamical relations. (G6) The draft's deduction that B12 forces every D5 symmetry to commute with the tick does not follow from preservation of the time axis alone; D5 makes commutation a definition. (G7) The proposed update class contains a plaquette layer only if that layer actually has the specified gatewise gauge invariance, finite support and cell covariance. (G8) The draft calls the conditional class in Theorem 3.2 a counterexample without proving a state in that class exists; it is an incompatibility theorem. (G9) The draft's statement that R-SC can be posed *only* on the physical sector is too strong: static charged vectors obstruct an analogous exclusion on the full GNS space under the stated clustering conditions, but other readings remain possible.
+
+**Open by name.** LZ1-i; ZM1-i; MT1-S[R-CS]; R-CS, including CH1's charged-correlator prescription; the `L5-O` lift ambiguity C7 and the charged-node action of Θ; GA1-P-5; VC1 and the `L5-U` half-filling question LW1-5U-PS7; the rate and one-loop coefficient clauses of LZ1. Attacks A1–A3 and kill attempt K are recorded in §7. No candidate LZ1-C1–C4 passes all four proposed tests.
+
+**Provenance.** Pass 1: `LZ1_DRAFT.md`, Claude Opus 5.5, max, source SHA-256 `ef73317c22e37d163508de838c7f68c017cac8dd99f3c656e0297b71b074f124`. Pass 2: Codex CLI, model `gpt-6.1-terra`, reasoning effort high, session `01a1afd0-3780-7d23-bff8-70659279b85e` (from the run log). Checkout HEAD `79b02043bbaee0b2dd65229b1f8984ba37957ddf`; the draft reported `dfe1706ec0d6572406e9e1e326b8524216589229`. Context hashes agree with the draft's prefixes except `MT1.md`, now `232569f4b008ce8f`, rather than `c8263124f7df9bea`; therefore the draft's MT1 quotations and node imports require referee comparison to both revisions. No independent referee or numerical check was run in this pass. The draft reports a link-matrix scratch check for Theorem 5.2; it is not proof.
+
+## 1. Definitions inferred by the distiller
+
+These are proposed precisifications, not adopted physics. Use the laws and conventions of `LW1.md`, `LW1_5.md`, `MT1.md` and `MT1_REFEREE.md`. The base tick is `U₀ = W_E M_o M_e`. A **gauge-invariant update of the same form** appends finitely many finite-support, gatewise gauge-invariant layers, each covariant under the even translations. This is the exact scope of statements about added layers; GA1-P-5 remains unspecified.
+
+Write `τ_β` for translation by `2β`, `β ∈ Z³`, and `α(A)=U*AU` for the tick automorphism. The even translations preserve the tilings and the parity-dependent signs, hence commute with the base tick; appended layers do so by assumption.
+
+At site `z`, define local centre implementers `c_z`: `exp(iπQ_z)` for `L5-U`, with `Q_z=N_z+Σ_{ℓ∋z}p_{ℓ,z}`; the lift of `−1₁₀`, `ω_z=∏_{j=1}^5 exp(iπ𝒢_z^{2j−1,2j})`, for `L5-O[S_+]`; and `exp(iπ𝒢_z)` for `L_cube`. Their adjoint actions negate matter generators at `z` and the corresponding link-end generators; for `L_cube` they negate `J_ℓ,J_ℓ†` on each incident link. They fix other generators. They are even, commute pairwise as adjoint actions, are involutive as adjoint actions, and transform covariantly under `τ`. Every gauge-invariant gate commutes with them. On a local operator `A`, the product of their adjoint actions over a finite set containing all matter sites and both ends of all links in its support equals matter parity `θ`: each matter generator gets one sign, while each allowed link operator gets an even number. For `L5-U` link operators preserve total rishon number; for `L5-O` they are even Majorana products. The rotation commutators in `LW1_5.md` verify the `Spin(10)` action; number commutators verify the other two.
+
+A **D1 state** `ω` is stationary, even-translation invariant and invariant under each `Ad c_z`. Local gauge invariance implies the last property. Let `(H,π,Ω)` be its GNS representation. The unitary implementers `Ũ,T_β,U_z` fix `Ω` and implement `α,τ_β,Ad c_z`. They satisfy `ŨT_β=T_βŨ`, `ŨU_z=U_zŨ`, `T_βU_zT_β⁻¹=U_{z+2β}`, and `U_z²=1`, with commuting `U_z`. The local algebra is separable, hence so is `H`. Matter parity has implementer `U_θ`; write `H_even`, `H_odd` for its eigenspaces, and `H_phys=closure(π(A^G)Ω)` for the gauge-invariant algebra `A^G`.
+
+A **band** is `(d,F,V)`, where `d≥1`, `F:L²(T³;C^d)→H` is an isometry, `V:T³→U(d)` is continuous, and `T_βF=FM_β`, `ŨF=FM_V`; `M_β` multiplies by `exp(iK·β)`. A **node** `K₀` has `V(K₀)=1` and `V` is `C¹` nearby. Set `h=i log V` locally and `N_j=∂_j h(K₀)`. It **propagates** if some `N_j≠0`, and is **flat** if `V=1` on a neighbourhood. A **Clifford cone** has `{N_i,N_j}=2v²δ_ij` for `v>0`. A proposed **light species** is a band with a node, wholly in `H_even` or `H_odd`. Its directional speeds are the moduli of eigenvalues of `Σ n_jN_j`; a common cone means a Clifford cone with the same `v` for every species. These definitions exclude, for example, spectra without a finite-dimensional band fibre.
+
+A **D5 symmetry** is unitary or antiunitary `S` fixing `Ω`, commuting with `Ũ`, and satisfying `ST_βS⁻¹=T_{Qβ}` for a signed permutation `Q`. Bands are in the same orbit if a symmetry maps their images onto one another. This is a restricted definition, not a classification of all possible symmetries.
+
+**Proposed readings, not adopted.** R-loc reads MT1-S and LZ1's species in the vacuum GNS representation using the band definition. R-CS names an as-yet-unspecified charged-sector or gauge-invariant pair prescription. R-SC requires some `δ>0` such that no nonzero `Ũ`-fixed physical vector has translation spectral support in `{0<|K|<δ}`. R-SC* requires every `Ũ`-fixed physical vector to be translation invariant. R-SC follows from the target only with an additional coverage premise excluding all such static excitations, not from the stated species dispersion alone.
+
+## 2. Local charge patterns
+
+**Theorem 2.1 (pinned patterns).** For any D1 state of an update in §1, `H` is the orthogonal sum of subspaces `H(κ)={v:U_zv=κ(z)v}` indexed by finite-support sign patterns `κ`. The tick preserves each pattern; `T_β` translates it. The odd sector lies in the sum `H_nt` over nontrivial patterns. There are a separable `K` and a unitary `W` on it such that, on `H_nt`,
+\[
+ H_{nt}\simeq L²(T³;K),\qquad T_β=M_β,\qquad \widetilde U=1\otimes W.
+\]
+The trivial-pattern subspace is even.
+
+*Proof.* For a local `A` and a finite `Λ` containing its matter support and both ends of its links, the character projections
+\[
+ A_ε=2^{-|Λ|}\sum_{S\subseteq Λ}(\prod_{z\in S}ε_z)\operatorname{Ad}(\prod_{z\in S}c_z)(A)
+\]
+sum to `A` and have eigenvalues `ε_z` under each centre action in `Λ`, and `+1` outside it. If `A` is odd, the product of those eigenvalues is `−1` by §1. Apply the projections to `Ω`; cyclicity and local density give the orthogonal decomposition. The implementer relations give invariance and translation of patterns. A finite nonempty subset of `Z³` has no nonzero translation stabilizer. Choose one pattern in each nontrivial orbit and put `K` equal to the direct sum of the corresponding eigenspaces. Translating each representative gives a unitary `ℓ²(Z³;K)→H_nt`; Fourier transform gives the displayed form, with `W=Ũ|K`. In the trivial pattern the product of centre actions equals parity on each projected local vector; density proves evenness. □
+
+**Theorem 2.2 (flat nodes).** Every band in `H_nt` is identically `1` on any connected `C¹` neighbourhood of a node. In particular every odd light species in the proposed sense is flat there, with `N_j=0`.
+
+*Proof.* Under Theorem 2.1 the band isometry intertwines all multiplication characters. Its values on the constant basis vectors define a measurable fibre isometry `f(K):C^d→K`: orthonormality follows by testing all Fourier coefficients, and polynomial density extends the formula to all inputs. The tick intertwining gives `W f(K)=f(K)V(K)` almost everywhere. Thus the eigenvalues of `V(K)` belong almost everywhere to the countable point spectrum of `W`; separability makes it countable. For each `1≤r≤d`, the real and imaginary parts of `tr V(K)^r` are `C¹` and take values in a countable set almost everywhere. Such a function is constant on a connected open set: a nonzero derivative would make it strictly monotone along segments of a small box, contradicting Fubini. Newton's identities then make the characteristic polynomial constant. At the node all eigenvalues are `1`; unitarity makes `V(K)=1` throughout. □
+
+**Corollary 2.3.** Under R-loc, MT1-S's asserted odd Clifford node does not exist in any D1 vacuum of either law. The fermion clause of LZ1 is incompatible with a propagating odd band in this reading; if there are no odd bands it may be vacuous. This does not exclude a charged representation or dispersion inferred from gauge-invariant pairs. For local odd operators with disjoint translated supports, the same pattern decomposition gives vanishing unequal-support two-point functions at all tick times, as in `CH1_5UQ.md` Theorem 2.2 and RC7.
+
+## 3. Static spectral weight and Gauss charges
+
+**Theorem 3.1.** Let `ω` be stationary and cell invariant, and let local `Y` satisfy `α(Y)=Y`. Put `Y'=Y−ω(Y)`, `C(β)=ω(Y'* τ_β(Y'))`, and `v=π(Y')Ω`. Let `E` be the joint translation spectral measure. Then `v` and every `E(B)v` are tick-fixed, and `C(β)=∫exp(iK·β)d⟨v,E(K)v⟩`. If `C(β)→0` and `C(0)>0`, there is a nonzero tick-fixed vector orthogonal to translation-invariant vectors. If `C` decays exponentially and `C(0)>0`, such a vector exists with spectral support in every `{0<|K|<δ}`.
+
+If in addition `Y∈A^G`, R-SC* and the first decay condition, or R-SC and the exponential condition, imply `ω(Y*Y)=|ω(Y)|²`.
+
+*Proof.* Tick/translation covariance gives the fixed vectors and the spectral formula. If all spectral mass were at zero, `C(β)=C(0)`; this proves the first claim. Under exponential decay, the spectral measure has the real-analytic density `(2π)⁻³Σ_β C(β)e^(−iK·β)`, by uniqueness of Fourier coefficients. It is nonnegative and not identically zero when `C(0)>0`; analyticity prevents it vanishing on any open set. The physical sector is reducing for translations, so the spectral projections of `π(Y')Ω` stay physical. Each proposed exclusion contradicts the appropriate nonzero vector. □
+
+**Theorem 3.2 (`L5-U` filling).** Every `Q_x` is local, gauge invariant and conserved for any update in §1. If a cell-invariant state has every `Q_x` sharp, `q_x=ω(Q_x)` is an integer and
+\[
+ \sum_{x\in\{0,1\}³}ω(N_x)=\sum_x q_x-24m.
+\]
+If the state is also invariant under the site-transitive lifted cell group, `ω(N_x)=q−3m` for one integer `q`. Hence no such state is half filled. If instead a stationary, site-transitive state is half filled and its connected `Q_x` correlations decay exponentially, it has nonzero tick-fixed physical vectors at arbitrarily small nonzero cell momentum and violates R-SC.
+
+*Proof.* `Q_x` is the central `U(1)` gauge generator; gatewise gauge invariance makes it conserved, and centrality makes it gauge invariant. Sharpness puts `Ω` in an eigenspace of the finite-dimensional integer-spectrum operator `Q_x`. Cell invariance pairs the two ends of each positively oriented link in one cell: their numbers sum to `m`. There are eight such links in each of three directions, giving `24m`. Site transitivity makes all `q_x` and all `ω(N_x)` equal. Half filling contradicts the integer result, so some `Q_x` has positive variance; site transitivity makes the corresponding conclusion available at each site. Apply Theorem 3.1. □
+
+This is conditional on existence of the stated state. PS-7 asks for half filling; the update's site symmetry does not by itself require the vacuum to preserve it. Possible escapes include broken site transitivity, non-exponential Gauss-charge clustering, or a reading other than R-SC. In a sharp cell-invariant half-filled state the eight charges sum to `20+24m`.
+
+**Theorem 3.3 (frozen stars, base `L5-U`).** For each `x` and each `1≤m≤9`, the base tick has a local, nonzero, nonidentity, gauge-invariant conserved projector `P_x`.
+
+*Proof.* On the unconstrained rishon Fock space set `φ_{ℓ,x}=Σ_k r_{k}^{ℓ,x†}c_{x,k}` and `K_x=Σ_{ℓ∋x}(φ*φ+φφ*)`; let `P_x` project onto its kernel. This kernel is the common kernel of all `φ` and `φ*`. `K_x` preserves each end number and the matter number, so `P_x` respects link constraints. Each `φ` is a local `U(5)` singlet. For a link `(x,y)`, the hop is `φ_{ℓ,y}*φ_{ℓ,x}+φ_{ℓ,x}*φ_{ℓ,y}`; the opposite-end even bilinears commute. Thus it annihilates the kernel and its adjoint does too. Other hops commute with the projector; electric gates commute because `P_x` preserves end numbers. Hence the cube gates and tick commute with `P_x`. For `a=max(0,m−5)`, occupy the same `a` flavours in matter and every `x` end and complete each link to `m`: this gives a kernel vector. Occupy matter flavour 1 and choose `a≤4` end flavours excluding 1 at one end: `φ` acts nontrivially, so the projector is not identity. □
+
+Theorem 3.1 makes `ω(P_x)∈{0,1}` only when its applicable clustering and spectral hypotheses hold. A plaquette layer need not preserve `P_x`.
+
+**Theorem 3.4 (`L5-O[S_+]`).** The local star Casimir `C_x=Σ_{a<b}(𝒢_x^{ab})²` is gauge invariant and conserved under any update in §1. With the hypotheses of Theorem 3.1 applied to `C_x`, it is sharp. Locally gauge-invariant states are half filled by `LW1_5.md` H; Theorem 3.2 has no corresponding integer-filling conclusion here.
+
+*Proof.* The Casimir is invariant under the local `Spin(10)` group and other sites' transformations. Each gate commutes with its generators by gauge invariance. Apply Theorem 3.1. □
+
+On the end-pure `S_+` star, `LW1_5.md` SC.1 gives no local singlet, so the finite-dimensional Casimir has a positive lower bound. No state can make all `𝒢_x^{ab}` sharp: their commutators span `so(10)`, so simultaneous sharpness would force all eigenvalues to zero and contradict the Casimir bound. In a stationary cell-invariant state with clustering of the positive-variance generator, Theorem 3.1 gives static nonzero-momentum vectors in the full GNS space. In a gauge-invariant state they are orthogonal to `H_phys`, by averaging the nontrivial adjoint representation. This is the static-background issue LW1-5-BG, not a proof that physical-sector R-SC fails.
+
+## 4. Symmetry and speed
+
+**Theorem 4.1.** A D5 symmetry sends a band to a band, takes a node to a node, and preserves its directional speed set and Clifford speed. For unitary `S` the new fibre is `V(Q⁻¹K)`; for antiunitary `S` it is `overline{V(−Q⁻¹K)}`. No D5 symmetry maps a propagating band into `H_nt`; in particular it cannot map one into `H_odd`.
+
+*Proof.* In the unitary case use the coordinate change `f(K)↦f(Q⁻¹K)` in the band intertwiner. In the antiunitary case also conjugate components and reverse momentum; this compensates the conjugation of translation phases. Differentiate the resulting fibres. Signed permutations rotate directions and complex conjugation preserves eigenvalue moduli; the anticommutator transforms accordingly. Theorem 2.2 excludes nonzero slope in `H_nt`. □
+
+**Theorem 4.2 (block scaling and two cones).** If a finite-dimensional symmetry representation preserves each block of a block-diagonal covariant Hermitian triple `N=⊕N^(i)`, then `⊕λ_iN^(i)` is also covariant for arbitrary real `λ_i`. For two copies of the `L5-U`, `μ=τ_E=0` free-node representation, `N_j=G_j⊗1₅⊗M` respects its listed rotations, inversion, antiunitary, `σ` and `U(5)` whenever real symmetric `M` acts on the two copies. Its speeds are the absolute eigenvalues of `M`.
+
+*Proof.* Covariance is real-linear and acts within each preserved block. The free-node triple satisfies the listed covariance by Theorem 5.1's underlying representation calculation; the antiunitary fixes real `M`. Since `{G_i,G_j}=2δ_ij`, a directional operator squares to `1⊗1⊗M²`. □
+
+This witness shows that those node symmetries alone do not force equal speeds in the two-copy representation. It does not exhibit two bands in an admissible interacting law. Nor does block scaling prove that the dynamics of different symmetry orbits cannot relate their speeds.
+
+## 5. The node representation and the dressed `L5-O` tick
+
+**Theorem 5.1 (multiplicity-one conditional result).** At `μ=τ_E=0`, assume a finite-dimensional node fibre `E` has, up to phases, exactly one copy of the free `L5-U` node representation `C⁸⊗C⁵`: rotations `ρ̂(Q)⊗1`, inversion `ρ̂_I⊗1`, antiunitary `(D_r K)⊗K₅`, `σ=cχ_G⊗1`, and the fundamental `1⊗U(5)`. Let Hermitian `N_j` transform as a spatial vector under rotations, be odd under inversion, be fixed by the antiunitary, and commute with `σ` and `U(5)`. Then, in that representation, `N_j=aG_j⊗1₅` for a real `a`. If `a≠0`, the triple has a Clifford cone of speed `|a|`.
+
+*Proof.* Use the free-node matrices `A_j, Γ_j=iZ_jA_j` and `χ=−iΓ₁Γ₂Γ₃` of `MT1.md` and C4 of `MT1_REFEREE.md`. Conjugation by `U=exp(iεR_e/2)` takes `Γ_j` to `G_j`, and transports the hypotheses to the ungauged matrices: `U` commutes with the rotations, inversion, and `D_rK`, and `U*χ_GU=χ`. The `U(5)` commutant makes each transformed triple `M_j⊗1₅`.
+
+The 64 ordered monomials `Γ^S A^R` form a basis of `M₈(C)`. Commutation with `χ` requires even `|R|`; inversion requires odd `|S|`. The three coordinate half-turns leave only `S={j}` in `M_j`. A threefold rotation and a quarter turn then give
+\[
+ M_1=Γ_1(a+bA_1(A_2+A_3)),
+\]
+with the other components its rotations. Hermiticity makes `a` real and `b` imaginary. The antiunitary `D_rK` fixes the even-`R` monomials and conjugates their coefficients, so `b` is real. Thus `b=0`, and `M_j=aΓ_j`. The converse covariance follows directly from the free-node transformations. Conjugate back and use the Clifford relations of `G_j`. □
+
+This theorem imports the node-matrix identities of the named sources. Two copies allow unequal speeds by Theorem 4.2. The draft cites the `uZ_j^G` term of MT1 Theorem 10 when `σ` is absent and the inversion/antiunitary witnesses in C4; those demonstrate the stated algebraic hypotheses cannot simply be discarded. The theorem does not prove that an interacting charged node exists, carries this representation, or has `a≠0`. Clifford cones can exist in other representations, so the representation condition is not necessary.
+
+**Theorem 5.2 (antilinear symmetry of the `L5-O[S_+]` base tick).** There is an antilinear `*`-automorphism `Θ_O` of the quasi-local algebra such that
+\[
+ Θ_O(γ_{x,a})=-(-1)^{x_1+x_2+x_3}γ_{x,a},\qquad
+ Θ_O(η_iη_j)=η_iη_j
+\]
+on each link. It sends each link hop and end chirality `Γ^x` to its negative, fixes every cube gate and the electric layer, and commutes with the base tick automorphism for all real parameters.
+
+*Proof.* On matter, conjugate coefficients in the real Clifford algebra and apply the displayed site signs. On a link, realize 20 Majoranas by the Jordan–Wigner matrices `η_{2k−1}=Z^{⊗(k−1)}X`, `η_{2k}=Z^{⊗(k−1)}Y`. With `M=η₁η₃⋯η₁₉` and `J=MK`, `Jη_iJ⁻¹=−η_i`. Hence it fixes every even bilinear and the total chirality `−η₁⋯η₂₀`, preserving `S_+`; `J²=−1`. Its conjugation therefore gives an antilinear automorphism of `End(S_+)`. The matter and link maps combine consistently on finite tensor products and extend isometrically to the quasi-local algebra.
+
+For a link `U^{ab}=iη_a^yη_b^x` changes sign. The explicit `i` in the hop also changes sign; the matter signs at neighbouring endpoints multiply to `−1`. Hence `h_ℓ↦−h_ℓ`. Each `Γ^x=i⁵η_1^x⋯η_{10}^x` also changes sign. Antilinearity sends `e^(−itH)` to itself when `H↦−H`, so all cube and electric gates and their ordered product are fixed. □
+
+The pass-1 scratch check reports the 20-Majorana identities and all 190 bilinears on a 1024-dimensional module, including `J²=−1`; it was not rerun here. Theorem 5.2 addresses the missing dressed-tick antiunitary named in MT1 referee C6, but does not establish the required charged-node antiunitary. Composing with the centre transformation on even sites fixes matter Majoranas and acts as particle-hole conjugation on the number-conserving free walk. C7 and R-CS remain open.
+
+## 6. Empty matter and proposed readings
+
+**Theorem 6.1.** In the empty-matter subspace of the base `L5-U` or `L_cube` tick, each hop annihilates the state and the tick acts as the product of single-link electric unitaries `W_E`.
+
+*Proof.* Each oriented hopping term ends in a matter annihilator. Every cube generator therefore vanishes on this subspace, and both matter layers act as identity. □
+
+This does not rule out collective gauge modes in a matter-filled vacuum or modes introduced by added gates. The `L5-O` Majorana hop need not preserve empty matter.
+
+The draft's four tests ask whether a proposal (1) fixes a target, (2) is open-ended, (3) settles downstream physics by premise, or (4) adds unneeded structure. Its proposed assessments follow; they are judgments, not theorems.
+
+| Proposal | Test 1 | Test 2 | Test 3 | Test 4 | Scope |
+|---|---|---|---|---|---|
+| D2–D4 bands and species | pass | pass | conditional | pass | Finite fibres and `C¹` nodes omit possible infraparticles. |
+| D5 symmetries | pass | pass | pass | pass | Restricted by definition; B12 alone does not establish completeness. |
+| R-loc | pass | pass | pass | pass | Proposed vacuum-representation reading. |
+| R-CS | n/a | n/a | n/a | n/a | Named, not specified or adopted. |
+| R-SC, R-SC* | conditional | pass | pass | pass | Extra spectral exclusions unless the coverage premise is supplied. |
+| LZ1-C1: tune every light speed equal | fail | pass | fail | pass | Would supply the common speed as an input. |
+| LZ1-C2: a symmetry maps each light fermion to a light boson | pass | conditional | fail | fail | Requires an actual specified symmetry; Theorem 4.1 excludes such a mapping into an odd propagating band under R-loc. |
+| LZ1-C3: every other light species is a threshold composite of the fermion multiplet | pass | conditional | fail | pass | Threshold and charged-sector meanings are unspecified; it would prejudge gauge and graviton structure. |
+| LZ1-C4: all dimension-four speed differences are irrelevant at an IR fixed point | fail | pass | fail | pass | Restates a common-speed mechanism; a rate still needs proof. |
+
+None is adopted. The draft cites Anber–Donoghue, arXiv:1102.0789, for logarithmic weak-coupling speed convergence; Bednik–Pujolàs–Sibiryakov, arXiv:1305.0011, for power-law suppression in strongly coupled holographic examples; Bisio–D'Ariano–Perinotti, arXiv:1407.6928, for a composite-photon free model; and Collins et al., arXiv:gr-qc/0403053, and Polchinski, arXiv:1106.6346, for speed and tuning issues. These are the draft's literature reports, not independently verified in this pass and not inputs to the proofs. Logarithmic approach in particular does not by itself give the target's `O((a|k|)^p)` rate for `p≥2`.
+
+## 7. Open attacks and downstream scope
+
+**LZ1-i.** One common speed for all relevant propagating species remains open, as do the dispersion correction, leading Lorentz-violating operator, and one-loop coefficient. A1 (symmetry) reaches the limited block-scaling witness in Theorem 4.2; it does not prove a general dynamical no-go. A2 (continuity from the free node) lacks an interacting charged-sector continuation: Theorem 2.2 excludes an odd propagating band in the D1 vacuum GNS representation, and Theorem 6.1 describes only the empty-matter base sector. A3 (RG attraction) lacks a controlled zoom, ZM1-i, and a proved power-law rate. The draft's kill attempt K sought two exact propagating species with unequal speeds: K1 found frozen stars, K2 encountered pinned charge patterns and string configurations, and K3 reduced to another interacting link model. It found no exactly solvable propagating sector. This is a failed search, not a no-go.
+
+**MT1-S[R-CS].** R-CS must first specify charged excitations. On `L5-U`, Theorem 5.1 gives a sufficient conditional route at `μ=τ_E=0` if the node representation, symmetries and nonzero slope are established. On `L5-O`, C7 and the charged-node action of Θ remain open. The `MT1.md` source revision differs from the draft's reported input and must be reconciled before relying on its precise imports.
+
+**VC1, PS-7 and GA1-P-5.** Theorem 3.2 gives an incompatibility among half filling, site transitivity, exponential Gauss-charge clustering and R-SC on `L5-U`; it does not decide which, if any, VC1 supplies. Theorem 3.3 applies to the base tick; preservation by any particular plaquette class is open. `L5-O` half filling does not yield the same integer obstruction. The charged-correlator prescription is shared with CH1. Nothing here changes a working-set entry, law, axiom, or proposed reading.

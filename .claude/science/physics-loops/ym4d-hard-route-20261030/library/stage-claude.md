@@ -94,3 +94,189 @@ Taking t_□ ≡ z gives χ_t ≡ z, so Φ_t = E_z of `stage.md` (S11) with H = 
   * **(B)** the bump lemma: composite entries 2, 4 under e^{iη𝒦} in a frame, CA-I (4.26:eq-regularity-radius-10).
   The others are either elementary given (L) (first-order lines, second slot: `stage.md` Lemma 2 is the first-order line argument) or identifications (Σ = Σ♭; the frame 𝔅^{(n)}_k for both stages, §5).
 * What we would do differently: stop attacking AD-ST(2) as a new statement; port 5.2:cor-response-dilation; put proof work on (B), (L) and the frame identification. §§3–5 do that.
+
+## 3. Attack 7 (new): the bump lemma from ST1 Lemmas 7–8
+
+**Target.** Antecedent (h) of 5.2:cor-response-dilation, in its displayed form CA-I (4.26:eq-regularity-radius-10): for a frame, a pair 𝕎 in the fat class and a complex 1-form 𝒦 with N_y(𝒦) ≤ ϰ(y),
+
+  E_e(e^{iη𝒦}𝕎)(x) ≤ (1+π_×)E_e(𝕎)(x) + π r_e(x),  π = K_{S^b} ϰ(x)/α̃_{0,m},  π_× ≤ π,  e ∈ {2,4}.
+
+This is the composite-entry (auxiliary-configuration) increment. Both rounds of `stage.md` stopped here ("It supplies neither entry 2 nor entry 4", §7.1). The account cites it as "the bump lemma of the stage construction" with hypotheses (D0)–(D2), (S^b) that are not defined anywhere in the repository (§2.4).
+
+**Why ST1 Lemma 8 is the right supplier.** ST1 Lemma 8 (`st1-r4.md` lines 539–600; frozen, refereed in `gates/st1-r4-gate.md`) is a localized Lipschitz bound for tower quantities at fixed real factor, on an absolute ball, uniform in depth, volume, M and κ̄:
+
+  |G(U,w_1;e) − G(U,w_0;e)| ≤ K_T E^{δ_T}_{w_1−w_0}(x),  E^{δ_T}_w(x) = max_b e^{−δ_T d(x,b_−)} n(w;b),  n(w;b) = max{l(b)|w(b)|, l(b)²|∇^U w(b)|},   (ST1-49)
+
+for E^0_U, sup n(w_0), sup n(w_1) ≤ a_T, at settled tower elements; G = l(x)²η^{−2}(∂T_e − I) for curvature and l(x)²ξ'(x)J_bare(T_e) for current. The towers exist on open continuation domains, are holomorphic at fixed real U, and equal the real canonical backgrounds at real w.
+
+**Matching premises (stated, not proved here).**
+
+* (M-tower) At every sited point x of the frame, each composite entry E_e is, up to the fixed normalization of the next line, the ST1 tower quantity |G(U,w;e)| of a settled tower element of a separated subordinate sequence of a separated ambient sequence in the sense of ST1 §1 (3). The ambient sequence is the structure's own frame; for Balaban's towers B_p(X) ∪ {Γ_i}_{i<p} on a nest obeying (A1) (CA-I 45569–45585; PDA, refereed, supplies (A1) for the prepared nest) every element is settled: below level p the tower uses the nest's rows, and at level ≥ p it has reached its final level p.
+* (M-norm) E_2(x)/r_2(x) = |G|/α̃_{0,m} and E_4(x)/r_4(x) = |G|/α̃_{0,m} at the level m of the triple, with r_2(m) = α_{0,m}ℓ_m^{−2}, r_4(m,l') = α_{0,m}ℓ_m^{−2}ℓ_{l'}^{−1} (CA-I 128975–128980), α̃ carrying the same weight as r_e.
+* (M-rate) δ/2 ≤ δ_T, where δ is the rate of the weight class 𝔐^∧_{δ/2} (CA-I 116539: δ := δ_0/8) and δ_T is ST1's rate; and the frame's scaled distance obeys d^∧ ≤ d with d ST1's layer-scaled metric (CA-I 116546: "d^∧ ≤ d"). If δ_0/16 > δ_T, use δ := min{δ_0/8, 2δ_T}; the account's conditions on δ are a floor δw ≥ 16 ln L + 4 on w = M/M_1 and decay statements at rate δ, so a smaller δ costs only a larger M, chosen later (CA-I 1468–1649 order).
+
+**Lemma BL.** Assume (M-tower), (M-norm), (M-rate), ST1 Lemma 8 with its imports, and ST1 Lemma 7. Let 𝕎 = e^{iηw_0}U with U real, E^0_U ≤ a_T/2 and sup n(w_0) ≤ a_T/2. Let 𝒦 be a complex 1-form with N_b(𝒦) ≤ ϰ(b) at every bond, ϰ(b) ≤ ϰ(x)e^{(δ/2)d^∧(x,b)}, and sup ϰ ≤ a_T/218, all values inside ST1 Lemma 7's fixed ball. Then at every sited x and e ∈ {2,4},
+
+  E_e(e^{iη𝒦}𝕎)(x) ≤ E_e(𝕎)(x) + π r_e(x),  π := 109 K_T ϰ(x)/α̃_{0,m}.   (BL)
+
+So (4.26:eq-regularity-radius-10) holds with π_× = 0 and K_{S^b} := 109 K_T, a constant of ST1 fixed before κ.
+
+*Proof.* Step 1 (the shifted pair has the same real factor). Define w_1 by e^{iηw_1} := e^{iη𝒦}e^{iηw_0} bond by bond, with the principal logarithm on ST1 Lemma 7's fixed ball. Then e^{iη𝒦}𝕎 = e^{iηw_1}U, and U is unchanged.
+
+Step 2 (size of the change of potential). ST1 Lemma 7 (45), with H = 𝒦 and A' = w_0, gives on the fixed ball, at each bond b and with stencil maxima,
+
+  l(b)|w_1 − w_0|(b) ≤ 5 l(b)|𝒦|,  l(b)²|∇^U(w_1 − w_0)|(b) ≤ 13 l(b)²|∇^U𝒦| + 96 (η/l(b)) l(b)|𝒦| l(b)²|∇^U w_0|.
+
+Since η ≤ l(b) and l(b)²|∇^U w_0| ≤ sup n(w_0) ≤ 1, the right sides are at most 109 N_b(𝒦). Hence n(w_1 − w_0; b) ≤ 109 ϰ(b).
+
+Step 3 (both potentials stay in ST1's ball). sup n(w_1) ≤ sup n(w_0) + 109 sup ϰ ≤ a_T/2 + a_T/2 = a_T. With E^0_U ≤ a_T, ST1 Lemma 8 applies at w_0 and at w_1.
+
+Step 4 (the weight). By Step 2, the weight-class property of ϰ, d^∧ ≤ d and (M-rate),
+
+  E^{δ_T}_{w_1−w_0}(x) ≤ 109 max_b e^{−δ_T d(x,b)} ϰ(b) ≤ 109 ϰ(x) max_b e^{−(δ_T − δ/2) d(x,b)} ≤ 109 ϰ(x).
+
+Step 5 (conclusion). (ST1-49) gives |G(U,w_1;e)| ≤ |G(U,w_0;e)| + 109 K_T ϰ(x) at the settled element at x. Divide by α̃_{0,m} and use (M-norm): E_e(e^{iη𝒦}𝕎)(x)/r_e(x) ≤ E_e(𝕎)(x)/r_e(x) + 109K_Tϰ(x)/α̃_{0,m}. Multiply by r_e(x). ∎
+
+**Use in the corollary (closing estimate for entries 2, 4).** In the corollary's proof (CA-II 14067–14077), φ_γ(x) ≤ (11B_♯𝖼_□/𝖪_r) ρ_m α_{·,m} e^{−δd^∧/4} (its (5.2:eq-response-dilation-9)), with 𝖪_r ≥ 2^9 𝖼_□ K_{S^b} B_♯. Put ϰ := φ_γ. Then π ≤ (11K_{S^b}B_♯𝖼_□/𝖪_r) ρ_m (α_{·,m}/α̃_{0,m}) ≤ (11/2^9) ρ_m, using α_{·,m} ≤ α̃_{0,m}. By (BL), entries 2 and 4 rise by at most (11/2^9) ρ_m r_e < ⅛ ρ_m r_e. When the room of a composite clause at x is ρ_m w r_e with weight w ≥ 1 (the factor L_0^{2e} of (1.64), (1.66)), this is at most ⅛ of the room. With π_× = 0 no 2^Δ weighting has to be paid.
+
+**What Attack 7 does and does not give.**
+* It supplies the analytic content of antecedent (h), the composite increment, for every frame satisfying (M-tower), from a refereed lemma of ours. The constant is K_{S^b} = 109K_T, fixed before κ, so 𝖪_r and R_0 keep the account's order.
+* It does not supply the "general form" and the "two lemmas on the weighted space" of (h), which concern the Σ♭ weighting of structures born at earlier stages. When the room of an older structure carries a factor below one, (BL)'s additive increment must be compared with it; that comparison needs the definition of the Σ♭ weights, which is absent (§2.4).
+* (M-tower) is a reading of the stage spaces' composite entries. §5 shows where that reading carries the real difficulty.
+
+## 4. Attack 8 (new): the layer bound from the account's response chart
+
+**Target.** Antecedent (b) of 5.2:cor-response-dilation: N_y(ℍ) ≤ B_♯ p(y), p(y) = sup|b| e^{−δd^∧(y,𝒞_j)}, the product estimate, and Φ_t independent of t at b = 0; and antecedent (c) at χ ≡ 1. This is `stage.md`'s premise (S19)–(S20), assumed there.
+
+**Supplier.** 4.5:thm-chart-existence, "Existence, uniqueness and analyticity of the response chart" (CA-I 14496–14560; index PROVED, an implication from 4.5:lem-free-current-operators and 4.5:lem-nonlinear-correction, which take Balaban sentences "stated … without proof", and from the printed CMP 99b (3.132) through 4.5:prf-chart-linear-bounds; `port-map.md` row 1). For (U,J) ∈ 𝔖 and a block field B with |B| < c_9, clause (K1) gives existence, uniqueness and joint analyticity of the chart in (B,𝔞,J), and 4.5:prf-chart-variation-decay (CA-I 14803–14899, PROVED) gives (K4) for |B| ≤ c_9/2 and (K8):
+
+  |δℋ^J(x)/δB(c)| ≤ C^K_{190} ℓ_j^{−1}ℓ_{j'}^{−d}𝔈,  |∇_U δℋ^J(x)/δB(c)| ≤ C^K_{190} ℓ_j^{−2}ℓ_{j'}^{−d}𝔈,  |δ𝔍(x)/δB(c)| ≤ C^K_{190} ℓ_j^{−3}ℓ_{j'}^{−d}𝔈,
+
+with 𝔈 = e^{−c_*δ_0 d(y,y')}, x ∈ Δ(y), y ∈ Λ_j, c a block bond at y' ∈ Λ_{j'}, and "sums over y' carry the measure ℓ_{j'}^d".
+
+**Matching premise.** (M-chart) The frame 𝔅 = 𝔅^{(n)}_k is an admissible sequence for the chart (Balaban's CMP 102b (1); (A1) of CA-I 45569 is the geometric part, supplied for the stage nest by PDA and by "the lemma asserting that Balaban's stage nests are admissible", CA-I 48585–48590). The stage layer at datum (0,b) is the chart's ℋ^J at the block field b supported on the collar bonds 𝒞_j (CA-I 116567–116575 applies "the theorem that constructs the stage layer" at (𝔅; 𝕌,𝕁; σ; (0,b)) on 𝔎_P). The fat class lies in 𝔖. For the radii this is a γ-ceiling: γ_0^{(k)} ≤ γ̄_0(t_k) → 0 (CA-I 116610–116640, 4.26:def-regularity-radius (b), proved), while 𝔖's radii a_1, a_γ are (d,L)-numbers (CA-I 12935–12977); the cube-gauge clause of 𝔖 must be implied by (D0) of the fat class.
+
+**Lemma L.** Assume (M-chart) and the chart's clauses (K1), (K4), (K8). Put δ_L := c_*δ_0/2 and C_Σ := sup_y Σ_{y'} e^{−(c_*δ_0/2) d(y,y')}, the sum over block points of all levels. Let sup|b| ≤ c_9/2, and let the decoupling parameter be σ ≡ 1. Then, at every cell y of level j(y),
+
+  N_y(ℋ^J(b)) := max{ℓ_{j(y)}|ℋ^J(b)|, ℓ_{j(y)}²|∇_Uℋ^J(b)|} ≤ B_♯ sup|b| e^{−δ_L d(y,𝒞_j)},  ℓ_{j(y)}³|𝔍(b)| ≤ B_♯ sup|b| e^{−δ_L d(y,𝒞_j)},
+
+with B_♯ := n_b C^K_{190} C_Σ, n_b the number of block bonds at a block point. Moreover ℋ^J(0) = 0 and 𝔍(0) = 0, so at b = 0 the map Φ_t is the identity for every t. Since d^∧ ≤ d, the bound holds with d^∧ in place of d.
+
+*Proof.* Step 1 (the segment). For 0 ≤ t ≤ 1 the field tb has |tb| ≤ c_9/2, so (K1), (K4) and (K8) hold at B = tb. By (K1), t ↦ ℋ^J(tb) is analytic, hence
+
+  ℋ^J(b) − ℋ^J(0) = ∫_0^1 δℋ^J(tb)[b] dt,  δℋ^J(tb)[b](x) = Σ_c ℓ_{j'(c)}^d (δℋ^J(x)/δB(c))|_{tb} b(c).
+
+Step 2 (the value at zero). At B = 0 the map 𝒜 ↦ G̃_0[Θ_J𝒜 − 𝕍'^J(𝒜)] fixes 𝒜 = 0, because Θ_J is linear and 𝕍'^J(0) = 0 by the quadratic gradient bound (4.5:lem-gradient-bound). By uniqueness in (K1), 𝒜^J_0(0) = 0, so A_G = 0. The nonlinear correction vanishes at zero (4.5:lem-nonlinear-correction), so X_G = 0 and ℋ^J(0) = 𝔏^J(0) = 0. Then Ξ = 0, Λ^J(0) = 0 and F(U,0) = 0 by 4.5:eq-curvature-remainder-2, so 𝔍(0) = 0 (Definition 4.5:def-response-chart).
+
+Step 3 (the sum). By (K8), with b supported on 𝒞_j,
+
+  |δℋ^J(tb)[b](x)| ≤ C^K_{190} ℓ_{j(y)}^{−1} sup|b| Σ_{c ∈ 𝒞_j} e^{−c_*δ_0 d(y,y'_c)} ≤ n_b C^K_{190} ℓ_{j(y)}^{−1} sup|b| e^{−(c_*δ_0/2) d(y,𝒞_j)} Σ_{y'} e^{−(c_*δ_0/2) d(y,y')},
+
+using d(y,y') ≥ d(y,𝒞_j) for y' on 𝒞_j and splitting the exponent in halves. The last sum is at most C_Σ. Integrating over t gives the first bound for ℓ_{j(y)}|ℋ^J(b)|. The second and third bounds follow in the same way from the ∇_U member and the 𝔍 member of (K8). ∎
+
+*On C_Σ.* It is finite and depends on (d,L) only: in the layer-scaled metric each block point occupies a cell of unit scaled size, so at most C(d)r^{d} points lie within scaled distance r, and Σ_r r^{d−1}e^{−cr/2} converges. The account's 4.5:lem-kernel-algebra (PROVED) contains sums of this kind.
+
+**What Attack 8 does and does not give.**
+* It supplies the layer bound, the vanishing at b = 0, and the second-slot bound at χ ≡ 1 (antecedent (c) at χ ≡ 1, which is the only case the corollary's proof uses, CA-II 14079–14093), at σ ≡ 1 and rate δ_L = c_*δ_0/2. If c_*δ_0/2 < δ_0/8, the account's δ must be lowered to δ_L; this is the convention of (M-rate).
+* It does not supply the decoupled layer, |σ| ≤ e^{κ_1}. The stage theorem's cluster expansion needs it; AD-ST at σ ≡ 1 does not. The account's 4.5:prf-chart-walk-localisation (CA-I 15265, PROVED) states walk expansions and localization in the decoupling parameters; this note did not check that it gives (K8) at |σ| ≤ e^{κ_1}.
+* It does not discharge the chart's own printed input, CMP 99b (3.132) (`port-map.md` row 1, open there). Our P82 and CP12 Theorem 3 rebuild the real layered case.
+
+## 5. Attack 9 (new): which frame reads the composite entries
+
+### 5.1 The question
+
+The corollary reads its source and its target with "the same entries" (CA-II 13931): one family of composite clauses, the index set 𝓛_n of pairs (n',p) of hypothesis (h), in the frame 𝔅 = 𝔅^{(n)}_k (CA-II 13888). Its last antecedent is "the identification of the spaces written with Σ and with Σ♭" (CA-II 13982–13983). H-STAGE's source is Balaban's stage-(n+1) space. So the port needs
+
+  (SRC) every point of H-STAGE's stage-(n+1) space lies in the corollary's source, that is, satisfies the composite clauses of 𝓛_n at the stage-(n+1) bounds.
+
+The target side needs nothing: the corollary's target is the stage-n space with the 𝓛_n clauses. Two readings of the stage spaces decide (SRC).
+
+* **(R♭), birth frames.** The stage-l space carries a composite clause for every structure born at a stage l' ≤ l, each read in its own birth frame, with a bound fixed by (structure, point, stage). This is the account's ♭ design: "(Σ^♭)-structure with birth level m_ref", "every entry is compared with the entry of the same kind" (CA-I 117660–117668), and the index set 𝓛_n of the corollary.
+* **(R1), one frame.** The stage-l space carries the composite clauses of the towers B_p(X'') ∪ {Γ̂^{(l)}_i}_{i<p} of its own stage nest 𝒩^{(l)} only, for every admissible X''. This is the layered-space form (CA-I 9843–9846) read on the stage nest of CA-I 48555–48565.
+
+### 5.2 Under (R♭), (SRC) is free
+
+**Lemma F.** Under (R♭), 𝓛_n ⊂ 𝓛_{n+1}, and every clause of the corollary's source is a clause of the stage-(n+1) space with the same bound. Hence (SRC) holds and no room is spent.
+
+*Proof.* A structure born at a stage n' ≤ n is born at a stage ≤ n+1, so 𝓛_n ⊂ 𝓛_{n+1}. Under (R♭) the bound of the clause of a structure at a point and stage depends on the structure, the point and the stage, not on the latest frame. The corollary's source imposes the 𝓛_n clauses at the stage-(n+1) bounds; the stage-(n+1) space imposes the 𝓛_{n+1} clauses at the same bounds. ∎
+
+**Fact (the frames are nested).** Under the stage-nest reading, λ_{𝔅^{(n)}} ≤ λ_{𝔅^{(n+1)}} pointwise, so 𝔅^{(n)}_k ≼ 𝔅^{(n+1)}_k in the refinement order of CA-I 127213. *Proof.* The level of a frame built on a nest is λ(x) = max{i : x ∈ Ω̂_i}. The nests 𝒩^{(n)} and 𝒩^{(n+1)} differ only at level j+1, where Ω_{j+1} is replaced by Ω''_{j+1} ⊇ Ω_{j+1} (the collar R_n = Z_{j+1} ∖ Z''_{j+1} becomes small field at level j+1, CA-I 53800–53815). So Ω̂^{(n)}_i ⊆ Ω̂^{(n+1)}_i for every i, and the maximum can only increase. ∎ The older frame is the finer one. This is why, under (R♭), the bump lemma of §3 is applied to each structure in its own (finer, older) frame, where its elements are settled.
+
+### 5.3 Under (R1), (SRC) is a frame change; the direct proof fails
+
+Under (R1), only the towers with p ≥ j+1 change between the two frames: Γ̂_i depends on (Ω̂_i, Ω̂_{i+1}), and the nests differ only at level j+1, so Γ̂_j and Γ̂_{j+1} change on the collar and Γ̂_i, i ≤ j−1, do not (ST1 §1's definition of rows; CA-I 9843–9846). For p ≥ j+1 the old tower D (with the collar's level-j rows) is finer than the new tower D' (with the collar's level-(j+1) rows): the D'-data are functions of the D-data. Write Ψ_D, Ψ_{D'} for the critical branches.
+
+**Step 1 (nested criticality; `stage.md` Attack 3; 4.26:prf-nested-criticality, CA-I 128485, proved).** For a point P of the new space put Q := Ψ_{D'}(M_{D'}P), the new auxiliary configuration. Then Q = Ψ_D(M_D Q). The data M_D P and M_D Q agree off the collar's level-j rows and differ there by δd := M^j(P) − M^j(Q).
+
+**Step 2 (the old auxiliary configuration is a collar response).** Ψ_D(M_D P) − Q = Ψ_D(M_D Q + δd) − Ψ_D(M_D Q). This is the response of the finer frame to a collar datum δd, the object of Lemma L, taken at the pair Q.
+
+**Step 3 (size of δd).** On the collar, P's simple entries and Q's composite entries obey the stage-(n+1) clause, which is advanced: its radius index is one higher and its weight exponent at most one higher than the stage-n clause, so in stage-n units its curvature bound is at most (1+β_0)L_0^2L^{−2} times the stage-n bound (the computation of CA-I 120617–120660 for entries 6, 7, with p_e = 2 for curvature; α_{·,j+1} ≤ (1+β_0)α_{·,j}, CA-I 127217–127219; L_0^2 ≤ L/3, CA-I 45849). The persistent tower R := Ψ_{D_j}(M_{D_j}P), with p = j, carries P's level-j data and obeys the same advanced clause. R and Q have the same level-(j+1) averages on the collar. In a common axial gauge on each level-(j+1) block (side L in level-j steps), two fields with level-j plaquettes at most κ have potentials at most C_ax Lκ. Hence
+
+  |δd| ≤ 2C_ax L κ ≤ 2C_ax (1+β_0) L_0^2 L^{−1} τ_1,  κ := (1+β_0)L_0^2L^{−2}τ_1,
+
+where τ_1 is the stage-n curvature threshold on the collar, in level-j units.
+
+**Step 4 (what closes and what does not).** By Lemma L at the frame D and the pair Q, the old composite curvature at a point y differs from Q's by at most C_fc |δd| e^{−δ_L d(y,𝒞_j)}, C_fc a (d,L)-number made of B_♯ and ST1 Lemma 7's curvature constant. Next to the collar, on the persistent layer j, the room is the stage gap β2^{−1} times the threshold (CA-I 117668–117678). So the direct proof needs
+
+  2 C_fc C_ax (1+β_0) L_0^2 L^{−1} ≤ β/4,  i.e. C_fc C_ax ≤ 0.16 for β = 1/4, β_0 = 1/7, L_0^2 = L/3.   (FC-num)
+
+If one uses instead that δd is slowly varying (R and Q are both smooth), the response's curvature is of order κ rather than Lκ, and the condition becomes
+
+  C'_fc (1+β_0) L_0^2 L^{−2} ≤ β/8,  i.e. C'_fc ≤ 0.33 L,   (FC-L)
+
+with C'_fc the curvature-to-curvature collar constant (the Hölder member of (K8) enters here).
+
+**Failure 9 (exact reason).** In the zone I_M = {k_0+1,…,k} the weight L_0^{2e} of (1.64) and (1.66) takes back the scale gain L^{−1} of the advanced clause up to the fixed factor L_0^2/L ≤ 1/3. So (FC-num) is a numerical condition on uncomputed constants, and (FC-L) asks for a collar constant that grows slower than L. All the constants involved (C^K_{190}, B_0, C_ax, ST1 Lemma 7's 2^{12}) are (d,L)-numbers, which the account places after L (CA-II 2266–2268: "(d,L)-numbers. They are placed immediately after (L,δ)"). A floor on L therefore cannot beat them, and M, κ, γ do not enter. Outside I_M (no L_0 weight) the factor is (1+β_0)L^{−1} or (1+β_0)L^{−2} and the same obstruction applies. Neither inequality is shown false; neither is supplied by any choice in the account's order. No counterexample to (SRC) was attempted beyond this estimate. The obstruction found is quantitative: it is a missing constant bound, not evidence that (SRC) fails.
+
+## 6. Assembly: AD-ST at the reader's radius on the birth-frame reading
+
+**Theorem S.** Fix an ordinary preparatory stage n+1 (no live arrest), j = h+n, frame 𝔅 = 𝔅^{(n)}_k, σ ≡ 1. Read the stage spaces in the birth-frame form (R♭). Assume:
+
+1. 5.2:cor-response-dilation (CA-II 13933–14115), a proved implication (port; credit Sussman and Alpoge);
+2. (M-chart) and the response chart's clauses (K1), (K4), (K8) (CA-I 14496–14899, proved implications resting on the printed CMP 99b (3.132));
+3. (M-tower), (M-norm), (M-rate), and ST1 Lemmas 7–8 with ST1's imports (AV/CURV, PROF, (15), Lemmas 2–3, P81);
+4. (Z) the cover's profile bound, sup_{Δ̃(y)} max{|ζ_□|, ℓ|∇ζ_□|, ℓ²|∇∇ζ_□|} ≤ 5 summed over the cubes with □^ζ ∩ Δ̃(y) ≠ ∅, and the triangle inequality and d^∧ ≤ d for the scaled distance;
+5. (f) the absorption inequality (5.2:eq-response-dilation-6), a parameter condition (a γ-ceiling when q > q_*);
+6. (W♭) the room of every composite clause of 𝓛_n at a point of level m is at least ρ_m r_e, r_e the unweighted shell radius at the level of the triple (CA-I 116712–116713).
+
+Then for every P in the stage-(n+1) space on X̂, every complex collar datum b with sup|b| ≤ 1.1C_1δ'_j, and every |z| ≤ R_0 = e^{−C_2κ_1}/(2𝖪_rϑ) (so R_0 ≥ 2 and R_0 ≍ ϑ^{−1}), the pair E_z(P) = (e^{izηℍ}𝕌, 𝕁 + z𝒥^♯[1]) lies in the stage-n space on X̂, holomorphically in (P,b,z). Every entry of E_z(P) exceeds its stage-(n+1) bound by at most ⅛ of its room. Restriction to X ⊂ X̂ keeps this (the spaces are hereditary). In particular AD-ST(2) of `stage.md` holds, and so does the radius ϑ^{−1} that its reader needs (§2.3), on the (R♭) spaces.
+
+*Proof.* Lemma F gives (SRC). Take t_□ ≡ z; then χ_t ≡ z and |t_□| ≤ R_0 ≤ r^♯_□. Run the corollary's proof (CA-II 14004–14115) with these suppliers of its antecedents:
+
+* (a) holomorphy: (K1) gives joint analyticity of ℋ^J and 𝔍 in (B,𝔞,J); χ_t enters linearly.
+* (b) layer bound, b = 0 case: Lemma L, with B_♯ = n_bC^K_{190}C_Σ and rate δ_L. The product estimate N_y(χℍ) ≤ 2a(y)N_y(ℍ) is the lattice Leibniz rule: ∇(χℍ) = (shifted χ)∇ℍ + (∇χ)ℍ, so ℓ²|∇(χℍ)| ≤ a(y)(ℓ²|∇ℍ| + ℓ|ℍ|) ≤ 2a(y)N_y(ℍ), and ℓ|χℍ| ≤ a(y)N_y(ℍ).
+* (c) at χ ≡ 1, the only case used (CA-II 14079–14093): Lemma L's current bound, with K_χ := B_♯/2. The second slot 𝒥^♯[1] is the chart's 𝔍(b) (CA-II 14121–14125).
+* (d), (e): elementary from (Z), d^∧ ≤ d and the triangle inequality. For (e): for y' ∈ □^ζ, d^∧(y',𝒞_j) ≥ d^∧(□,R_n) = d^-_□ because 𝒞_j ⊂ R_n; so |c_□|p(y') ≤ R_0 sup|b| e^{−(1−θ)δd^∧(y',𝒞_j)}; then move from y' to y with the triangle inequality and use e^{−2δd(y,y')} ≤ e^{−(1+θ)δd(y,□̃)}e^{−(1−θ)δd(y,y')}.
+* (f): assumed.
+* (g): the weight claim is the triangle inequality for d^∧. The first-order lines come from ST1 Lemma 7 (46): |D|, |∇D| ≤ 2s and the curvature increment ≤ 4sη², under its fixed smallness conditions (met after γ-ceilings, with η/ℓ ≤ 1/13 from L ≥ 13). Constant 4 replaces the corollary's 3; its arithmetic becomes 4·11/2^9 = 44/2^9 < ⅛, so the conclusion is unchanged.
+* (h): Lemma BL with ϰ := φ_γ and the closing comparison of §3, which needs only (W♭), because π_× = 0.
+
+Entries 5 and the cube entry are unmoved because the real factor is kept (CA-II 14062–14063). The identification of Φ_{t≡z} with E_z: H = ℍ and K = 𝒥^♯[1]; at real points the chart is Balaban's construction (4.5:lem-true-pair-reduction, 4.5:prf-diagonal-exactness, proved; CA-I 72411), and two holomorphic maps that agree at the real points of a connected domain agree on it. The real passing support |B_j| < δ'_j/g_j lies in the disc sup|b| ≤ 1.1C_1δ'_j (CA-I 81839). ∎
+
+**Order of constants.** No new choice is made after γ except γ-ceilings. K_{S^b} = 109K_T and K_χ, B_♯ come from ST1 and the chart, both fixed before κ; 𝖪_r and R_0 are then the corollary's. (M-rate) may lower δ to min{δ_0/8, 2δ_T, c_*δ_0/2}; this enlarges M through the floor δw ≥ 16 ln L + 4, and M is chosen after the rates.
+
+## 7. Result
+
+**Open lemma**
+
+Kind: check of their proof (the account proves the admission as an implication), plus proof of inputs they cite but do not contain; and one open lemma where our reading of the stage spaces differs from theirs. Proved by Claude, not yet checked by Codex.
+
+1. **Consumer check (§2).** No weaker proved version of H-STAGE exists; every consumer (A10, 4.18:rem-decay-rates, 4.18:thm-action-domain, 4.6:rem-widened-support, the torus-independence list, 4.28:prop-kernel-membership, our A17) reads its conclusions as stated, and the account's own route leaves its stage lemma unwritten. The only reader of `stage.md`'s AD-ST(2) is the stage argument's Cauchy step, which needs a z-disc of radius of order ϑ^{−1}; radius two gives no smallness (Lemma A).
+2. **Check their proof first (§2.4).** AD-ST(2), and the radius ϑ^{−1}, are the all-blocks response dilation 5.2:cor-response-dilation (CA-II 13933–14131), proved in the account as an implication; 4.26:lem-family-consumption (CA-I 117492) is the same estimate in CA-I. `stage.md`'s open lemma is therefore not an open statement of the account. But the corollary's antecedents cite a "stage construction" (the response-layer theorem, the second-slot lemma, the bump lemma with (D0)–(D2), (S^b), the Σ♭ weighting lemmas) that is not stated anywhere in the repository at `31a47c543775`.
+3. **Suppliers for the absent antecedents.** Lemma BL (§3): the bump lemma's composite-entry increment, from our ST1 Lemmas 7–8, additive with K_{S^b} = 109K_T. Lemma L (§4): the layer bound, its b = 0 case and the second slot, from the account's response chart (K1), (K4), (K8), at σ ≡ 1, rate c_*δ_0/2. Lemma F (§5.2): the source inclusion is free under the account's birth-frame reading (R♭).
+4. **Theorem S (§6).** On the (R♭) spaces, AD-ST holds on the full disc |z| ≤ R_0 ≍ ϑ^{−1}, for all seven entries and the cube entry, with ⅛ of the room used, as an implication from the corollary, Lemmas L, BL, F and the premises listed there.
+
+**The open lemma (FC, frame change at one stage).** Read Balaban's stage spaces in the one-frame form (R1): the stage-l space carries the composite clauses of the towers B_p(X'') ∪ {Γ̂^{(l)}_i}_{i<p} of its own stage nest only. Prove that every point P of the stage-(n+1) space satisfies, for every tower D of the stage-n frame with p ≥ j+1 and every sited point y of level m, D's composite clauses (entries 2 and 4) at the stage-(n+1) bound plus at most ½β2^{−|m−j−1|} times the clause's unit; uniformly in stage, history, mesh and volume, with constants in the account's order. This is the last clause of the corollary's hypothesis (h), "the identification of the spaces written with Σ and with Σ♭", at the source.
+
+Why it stays open (three new attacks, §§3–5). Attacks 7 and 8 close the analytic antecedents of the corollary, so they do not stop at FC. FC is what remains when the stage spaces are Balaban's one-frame spaces, which is the form H-STAGE quotes. Attack 9 is the direct proof of FC: nested criticality writes the old auxiliary configuration as a collar response of the finer frame at the new one. It closes only under (FC-num) C_fcC_ax ≤ 0.16 or (FC-L) C'_fc ≤ 0.33L. In the zone I_M the L_0^{2e} weights take back the advanced clause's scale gain up to L_0^2/L ≤ 1/3, and all constants involved are (d,L)-numbers fixed after L. So the direct route fails at a missing constant bound, not at a counterexample.
+
+**What we would do differently.** Two ways forward, a choice for the lead:
+* adopt (R♭) for the stage spaces throughout, as the account does downstream (its inherited domains contain the Σ♭ spaces, 4.26:thm-inherited-expansion (b)); then FC is not needed, AD-ST is Theorem S, and A10 (b) is read on the ♭ spaces; or
+* keep Balaban's one-frame spaces, and attack FC with an L-free collar constant (the curvature-to-curvature response of the finer frame to slowly varying collar data, the Hölder member of (K8)).
+
+**What stays open besides FC.** The rest of H-STAGE (Gaussian normalization, cluster expansion, (1.70), cumulation): the account's stage lemma is unwritten and (1.70) is printed without proof. The decoupled layer, |σ| ≤ e^{κ_1}, which the cluster expansion needs (4.5:prf-chart-walk-localisation not checked here). The chart's printed input CMP 99b (3.132). ST1's imports. The matching premises (M-tower), (M-chart), (M-norm), (M-rate), (Z), (W♭): they are readings of definitions the repository does not contain; each is stated where it is used.
+
+**Defects found in earlier text (for the lead).**
+* `stage.md` §§5–7: its open lemma is treated by the account (FINISH rule 9). Its Attack 6 found 4.26:prop-source-image but not 5.2:cor-response-dilation or 4.26:lem-family-consumption. Its radius two is too small for its only reader (Lemma A).
+* The account (not a correction of a stated proof): 5.2:cor-response-dilation and CA-I 116656–116717 cite statements absent at `31a47c543775`. That is a missing reference, which FINISH item 6 excludes from contributions; Lemmas BL and L could become one only after a Codex check and the five-step test.
+* `port-map.md` row 5 (DOM) and FINISH row 335 should name 5.2:cor-response-dilation (proved implication) as the account's treatment of stage admission.

@@ -3,7 +3,7 @@ lease_until: 2026-11-07T09:40Z
 
 # b-in-r2: the three BLOCKs of gates/b-in-gate.md for library/b-in.md
 
-FINISH row 399. Pinned at 99d2c3b3f. Finished 2026-11-06T22:25Z. The Result is at the end.
+FINISH row 399. Pinned at 99d2c3b3f. Finished 2026-11-06T22:18Z. The Result is at the end.
 
 Started 2026-11-06T21:40Z on the Mac mini, worker 1. Proved by Claude, not yet checked by the other model, unless a line says otherwise.
 
@@ -19,12 +19,12 @@ Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of the
 
 ## 2. Conventions kept from b-in.md, with the gate's renaming
 
-- **Sets (gate section 3).** 𝖲 is the source band of the current localisation: the (2M_1+3 blocks)-neighbourhood of Ω''^{~2}_{h+1} in Λ (I:92468-92469). S := ∂(Ω''_{h+1})^~ is the cut of the room lemma (I:138358). They are different sets. b-in.md wrote S for 𝖲; here 𝖲 is written. G := (support of B_2) \ 𝖲, as in b-in.md section 3. o(y) := ℓ_{B''_k}(y), the level of y in B''_k read with precedence (I:132981-132989; I:136637-136640).
+- **Sets (gate section 3).** 𝖲 is the source band of the current localisation: the (2M_1+3 blocks)-neighbourhood of Ω''^{~2}_{h+1} in Λ (I:92468-92469). S := ∂(Ω''_{h+1})^~ is the cut of the room lemma (I:138358). They are different sets. b-in.md wrote S for 𝖲; here 𝖲 is written. G := (support of B_2) \ 𝖲, as in b-in.md section 3. o(y) := ℓ_{B''_k}(y), the level of y in B''_k read with precedence (I:132981-132989; I:136662-136665).
 - **Geometry, from the law-site proof (I:91991-92031).** D_2 = (Z'_h)^{~2} ∩ Λ is Z'_h ⊇ Z_h with two layers of LMR_{h+1}-cubes of level h round it; the cut is its outer boundary; (Ω''_{h+1})^{~2} = ((Z'_h)^~)^c (Balaban, CMP 122a p. 195, as quoted at I:92010-92013). So 𝖲 contains the outer layer of D_2 and 2M_1+3 blocks of the inner one, and one full layer separates Z_h from 𝖲: d_sc(Z_h, 𝖲) >= Ř_k - 1 ((β) at I:92094-92096). Here Ř_k = k - h (I:77938-77954).
 - **Corrected core (gate section 3).** K_0 := {cells y of D_2 ∩ G : d_sc(y, 𝖲) >= Ř_k/2}, K_+ := {y in K_0 : o(y) >= 1}, B_S := D_2 \ K_0.
-- **Inputs kept as named in b-in.md**, with the gate's repairs: (LR) read-complete (gate section 2: every stencil, averaging and gauge read of a reset patch in N(y); B_3 >= 12; a separate boundary inequality at vertices without a patch); (I-A); (I-D) on the full test set, mixed-level transports included (gate section 3); (I-G) including the reading of d_sc as a path metric that counts M-cubes of the local scale (I:91727); (I-N0), (I-R), (I-T), (I-K); floor (M). Theorem G, Lemmas I, C, J, BCH, A_n, E' and Corollary B1 are used as the gate passed them (gate sections 2-7). B2(a) is used as the gate passed it: "ADVANCE as a conditional estimate".
-- **Lemma C with read-complete patches (gate section 3, last sentence on Lemma C).** A reset patch at a block of level j now reads its box~ (within 4R_1M_1 L^j η of the block, CMP 102 (144)), the averaging contours inside it, the auxiliary gauge collar of total width at most 2W_aux L^j η (b102 1840-1846) and one-step stencils. So it reads within R_* L^j η of the block, R_* := 4R_1M_1 + 2W_aux + 1. In the proof of Lemma C the step bound becomes (R_* + L) L^l η <= 2 L R_* L^l η, using R_* >= L. Read the floor (M) as **(M*)** M >= max{16 L s_0, 8 L^2} R_* (and M >= 4 W_aux). Then (C0) and (C1) hold with the same proofs, since M/(2L R_*) >= s_0 + 1. (C2) holds too: a step moves less than M L^{l-1} η, one cell of level l - 1, since M > L(R_* + L). B1 and B2(a) read Lemma C only through (C0)-(C2), so they hold under (M*). W_aux and R_1M_1 are fixed before M, so (M*) is an admissible floor.
-- **Ceilings (gate section 4).** (Γ_1) has degree p_0 - q < 0 in t_γ; (Γ_3), (Γ_4) have degree p_0 + 2r - q < 0; (Γ_2), (Γ_5), (Γ_Sh) have degree minus infinity. All are upper bounds on γ, fixed last. None is a cap in the sense of I:1246-1253.
+- **Inputs kept as named in b-in.md**, with the gate's repairs: (LR) read-complete (gate section 2: every stencil, averaging and gauge read of a reset patch in N(y); B_3 >= 12; a separate boundary inequality at vertices without a patch); (I-A); (I-D) on the full test set, mixed-level transports included (gate section 3); (I-G) including the reading of d_sc as a path metric that counts M-cubes of the local scale (I:91727); (I-N0), (I-R), (I-T), (I-K); floor (M), read as (M*) below. Theorem G, Lemmas I, C, J, BCH, A_n, E' and Corollary B1 are used as the gate passed them (gate sections 2-7). B2(a) is used as the gate passed it: "ADVANCE as a conditional estimate".
+- **Lemma C with read-complete patches (gate section 3, last sentence on Lemma C).** A reset patch at a block of level j now reads its box~ (within 4R_1M_1 L^j η of the block, CMP 102 (144)), the averaging contours inside it, the auxiliary gauge collar of total width at most 2W_aux L^j η (b102 1840-1846) and one-step stencils. So it reads within R_* L^j η of the block, R_* := 4R_1M_1 + 2W_aux + 1. In the proof of Lemma C the step bound becomes (R_* + L) L^l η <= 2 L R_* L^l η, as R_*, L >= 1. Read the floor (M) as **(M*)** M >= max{16 L s_0, 8 L^2} R_* (and M >= 4 W_aux). Then (C0) and (C1) hold with the same proofs, since M/(2L R_*) >= s_0 + 1. (C2) holds too: a step moves less than M L^{l-1} η, one cell of level l - 1, since M > L(R_* + L). B1 and B2(a) read Lemma C only through (C0)-(C2), so they hold under (M*). W_aux and R_1M_1 are fixed before M, so (M*) is an admissible floor.
+- **Ceilings (gate section 4).** (Γ_1) has degree p_0 - q < 0 in t_γ; (Γ_3), (Γ_4), (Γ_0) have degree p_0 + 2r - q < 0; (Γ_2), (Γ_5), (Γ_Sh') have degree minus infinity. All are upper bounds on γ, fixed last. None is a cap in the sense of I:1246-1253.
 
 ## 3. BLOCK 1: B2(c) on the actual cube families
 
@@ -237,6 +237,7 @@ b-in.md is not edited (row 399). Each REVISE of gates/b-in-gate.md is applied in
 | §3 core definition; 𝖲 vs S | K_0, K_+, B_S as the gate defines them; 𝖲 and S kept apart (section 2). B_S identified with every consumer use (section 4.3). |
 | §3 (I-D) attribution | (I-D) is required on the full test set, mixed-level transports included; it is an input, not the account's (γ) alone (section 2). |
 | §3 Lemma C (C2): the last edge reaches the cut, and the cut region reached is the source band | Part of (I-G), as a geometric input (section 2). |
+| §3 Lemma C: enlarged reset neighbourhoods need their step bound rechecked | Rechecked with reach R_* = 4R_1M_1 + 2W_aux + 1; floor (M*) replaces (M) (section 2). |
 | §4 ceiling terminology | Section 2: degrees p_0 - q, p_0 + 2r - q, minus infinity; ceilings on γ, not caps. |
 | §5 B2(b) current step | The gate's formula η^3 J(U) = π Im(η D^{η*}_U ∂U), c_π <= 2, used in B2(b0). |
 | §5 B2 hypothesis list | (Γ_4) and the gauge smallness (Γ_5) are hypotheses of B2(c') (section 3.4). |
@@ -262,7 +263,7 @@ No numerical run. Each try is a hand argument.
 **New inputs of this note.**
 - (Q-pt): a cube of Q_𝔅(x) contains x. A weaker form suffices: each cube routed to the base bound contains a point of W_c.
 - (K-id): the kernels W_3 = U_2, W_4 = e^{iηH_3}U_2 on D_2, in one gauge (section 5.1), read from the layer construction at five places.
-- Floor (M'): M >= 8 L W_aux. Ceilings, all fixed last: Ř_k >= 64 L, (Γ_4), (Γ_5), (Γ_0), (Γ_Sh'), sup_{t >= t_γ} α_0(t) <= 1/10.
+- Floors (M*): M >= max{16 L s_0, 8 L^2} R_* with R_* = 4R_1M_1 + 2W_aux + 1 (section 2), and (M'): M >= 8 L W_aux. Ceilings, all fixed last: Ř_k >= 64 L, (Γ_4), (Γ_5), (Γ_0), (Γ_Sh'), sup_{t >= t_γ} α_0(t) <= 1/10.
 
 **Inputs kept from b-in.md**, with the gate's repairs: (LR) read-complete; (I-A); (I-D) on the full test set, level 0 included; (I-G) with the path-metric reading; (I-N0), (I-R), (I-T), (I-K); (Q); (Ref); ca-f's (N1)-(N8), (N7) read at W_3 and W_4, (G-sep) extended to K_0; input 1(e) with its premises, including (c4)/(Ce7) of the arrest hypotheses.
 

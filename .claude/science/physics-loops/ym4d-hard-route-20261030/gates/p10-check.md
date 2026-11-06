@@ -34,3 +34,31 @@ Target: `library/port/p10-stability.md` (1,686 lines), Codex port of CA-I rows A
 - (d) (L435–440): the homogeneity argument `(RT)(aρ)=a(RTρ)` follows from H-HOM as stated (T linear, R of degree one, no term contains E). It is a correct fill of 60862–60865.
 - (f) (L442–443): correct as an implication from P7 and H-AUX.
 - Verdict A15: faithful. Proved as an implication from H-TORUS, H-FLOW, H-CELL, H-HOM and H-AUX. No failing step.
+
+## A17 — 4.20:thm-representation (port L444–1008; CA-I 61095–61206)
+
+- Kind: the source gives no proof at the theorem. The proof is "the induction ... in the sections that follow" (61208–61210). The port is a conditional assembly from named inputs, and it says so (L450–452, L797–799). It is checked as that.
+- Statement (L453–599): (a), (b) with (A17.3), and (c) with (A17.4)–(A17.5) match 61095–61206. That includes the CMP 119 exceptions ((2.47) dropped, the integrated upper member in place of (2.50)), the hereditary-class reading, the two weaker cases of (b), and "no reverse comparison". (A17.1)–(A17.2) match `4.20:not-representation` (60940–61063). The constant `E_k[𝒮]` depends on the label. The source writes `E_k` inside `A_{k,𝒮}`, so this reading is allowed.
+- REP-PARAM (L459–494): agrees with (H1)–(H6) at 1126–1182. That includes the two unproved rank-`N≥3` statements and the separation of (H7). `2.4:prop-m-freeness` is incomplete at (∗) (1202–1205). Correct.
+- Antecedent table and frontier (L604–797): I spot-checked these status loci, and all are correct: `4.4:prop-local-real-base`, outstanding (8110, 8373); `4.13:lem-minimizer-unique` and `lem-own-constant`, outstanding (45163, 45204); `4.21:prop-relative-machine`, outstanding (61325), with the two unproved inputs at 61304–61310 and 61345–61349; the arrest theorem incomplete (137628); A18 outstanding (156837, 156953); core-freezing (146051); cubewise analysis (151575); frames-instance (153174); and `4.26:thm-inherited-expansion` (119813–119900), where the three hypotheses and (A17.6) match. The REP-RF expansion (f0)–(f4) matches 61243–61298. The published-input table and both open lists match 166563–166692 entry by entry. The Combes–Thomas entry is indeed "not used in the proof of clause (i)" (105192–105194). The port is right that the summary lists omit the local real base, near-group persistence and stored orbit supply.
+- Induction order (L807–816): matches 3593–3613.
+- Induction-object fill (L818–828): correct. The structural part of A17 at level `k` comes first. A19 at `k` follows from it with (h1)–(h11), and only then is the integrated member of A17(a) available. No integrated bound at `k` enters the structural step at `k`. This is the order 166702–166709 states.
+- Position-dependent coupling fill (L908–920): the same computation as 61066–61077. Correct.
+- Skeleton-entropy fill and (A17.7) (L922–971): this is `4.21:lem-skeleton` (c) (63275–63371) and `4.21:prop-birth-site` (c) (77510–77528), step for step. `d^θ(X)=d_j(sk(X))` is the definition at 975–978. `λ_θ=(1+3^d)𝖼_d\log2` is fixed exactly at 960, so the count `2^{(1+3^d)N_j(A)}≤e^{λ_θ(d_j(A)+1)}` holds with `N_j(A)≤𝖼_d(d_j(A)+1)`. The last line of (A17.7) uses `λ_θ≤β_sκ/4`. Correct. The port leaves implicit one condition the count needs: `X∩W` must be a union of whole strips (clause (u2), 77511). It is part of H-BIRTH.
+- Ratio fill (L983–991): with `t=x_j/x_n>1/2`, `max(1,t^2)≤4t^2` and `g_j^{κ_0}t^2=g_j^{κ_0−4}g_n^4`. Correct, and it handles steps where the coupling moves backward.
+- Verdict A17: faithful. It is a conditional assembly of 4.20 from REP-PARAM … REP-STABILITY, the published inputs, the PRINT-* inputs and the open inputs O-*, all named. REP-RF, REP-ARREST, REP-CORE, REP-POS and others stay open, as their own sources say. No failing step.
+
+## A19 — 4.33:thm-stability (port L1010–1360; CA-I 157000–157241)
+
+- Hypotheses (L1017–1137): (h1)–(h11) match 157028–157075 one by one. The port is right that the source has eleven hypotheses, not the "(h1)–(h8)" of `chain-ca.md` row A19. The conventions (L1020–1033: `N_k`, `ℓ_j`, `Z_j`, `Z_j^+`, `Γ_n`, the disintegration) match 157000–157026. The (h6) remark (L1095–1098) is right: 157243–157249 sketches a route and proves nothing.
+- §5.2 correction (L1139–1205): **correct.** I checked its premises and its algebra.
+  - Chapter 1's bare density has no vacuum constant: `ρ_0(U)=exp[−g_0^{-2}A(U)]` (CA-I 479). During the induction `E=0` (57047–57053).
+  - The vacuum theorem's label energy does include it: `E=Σ_{j<K}E^{(j)}(T,T)` and `E_k[𝒮]=E−Σ_{j<k}E^{(j)}(Ω_{j+1},Λ_{j+1})` (159153–159160). Its (a) is `𝔈_k=Σ_{j=k}^{K−1}E^{(j)}(T,T)=−𝔩_k+𝔯_k` (159321–159327).
+  - So (h4)(a) holds for `ρ̂=e^{−E_vac}ρ^{bare}` and not for the bare density. (A19.6)–(A19.7) follow at once.
+  - (A19.8) is 159414–159426 with `d=4` and `D=N^2−1`. `C_log=\tfrac92(N^2−1)L^4` at 159314 fixes `D`.
+  - (A19.9) is right: `Σ_{t=0}^{n−1}L^{−4(t+1)}=(1−L^{−4n})/(L^4−1)`, and `D_0/(L^4−1)=c_G^♯+K_*(E_0+1)/(L^4−1)=C_𝔯` (159312).
+  - The bare-variable restatements (L1254–1259) have the factor `e^{E_vac}` on the correct side.
+  - The source intends E-fixed densities at the Theorem 0 sites (57047–57053, 60862). So this is a needed precision of convention, not an error in 4.33's internal deduction. `gates/nrm-check.md` §5 reached the same finding first.
+- Conclusions (L1207–1259): match (i-b)(1)–(3) and (i-c) at 157077–157111.
+- Proof (L1262–1358): it follows 157114–157241 step by step. Lower member: keep the never-large term, then apply (h2) and (h3)+(h4)(a). Upper member: disintegrate, apply (h5), then (h4)(c), split off `n=k`, use `|Γ_k|≤N_k` with a nonnegative coefficient, then (h6). Next come mass preservation for T, the partition, R, (h9) and (h10), and finally the last-level constant. Each filled step is correct: the measure comparison, the sign for the volume swap, `E_+≤\max(a,b)(1+ℓ_k)`, and the kernel reading of the T step.
+- Verdict A19: faithful. Proved as an implication from (h1)–(h11), read in the vacuum-normalised convention of §5.2. REP-POS (A18) and (h6) stay assumed. No failing step.

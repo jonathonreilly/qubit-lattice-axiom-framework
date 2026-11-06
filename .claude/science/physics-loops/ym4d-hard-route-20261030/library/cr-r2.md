@@ -54,3 +54,40 @@ and assume ε_1′ ≤ a_1 and B_3ε_1′ ≤ ε_0. Then U^(q+1) = U(𝔅^(q), D
 *Proof.* The proof of cr-claude Lemma 6 applies word for word, with n_P replaced by 2^d. The only change is in the data condition. Let P be a plaquette of 𝕃(𝔅^(q)) with base point z_0. By Lemma 5, D_W = (e^{iB}D_0)^v. The ordered product around P gives ∂D_W(P) = v(z_0) ∂(e^{iB}D_0)(P) v(z_0)^{−1}. For unitary factors, |∏_i e^{iB_i}g_i − ∏_i g_i| ≤ Σ_i |e^{iB_i} − 1| ≤ Σ_i |B_i|. P has at most 2^d rows by Lemma 2.2. Hence |∂D_W(P) − 1| ≤ |∂D_0(P) − 1| + 2^d sup|B| ≤ 2α_kℓ_q^2 + 2^dC_RD F ℓ_(q+1)^2 = ε_1′. Here the first bound is (e) with SRC, and ℓ(P) ≤ ℓ_q because every block of 𝔅^(q) has level at most q. □
 
 In the ceilings (8.1), replace n_P by 2^d. The gate's conditional verdict on the rest of Lemma 6 (COMP gives the inclusion of the constraint manifolds; criticality restricts; the refinement keeps T1's threshold) is unchanged. **Status of n_P: discharged under the reading (EC).** (EC) is a reading of CA-I 42982, supported by CMP 98 p. 18, CMP 102 p. 278 and Lemma 2.1. It is not a hypothesis on the consumers.
+
+## 3. Geometry of the ladder sets
+
+Notation of `cr-claude.md` §2: E is an outside consumer, X'' a read domain, 𝔅^(q) := 𝔅_E(q, X'') with block level b_q := min(q, c_E, t_(X'')), n ≤ q ≤ p. For a level function f put f_≤m := {x : f(x) ≤ m} and f_≥m := {x : f(x) ≥ m}. The consumer level c_E is read on the sites of X'' only. The tower t := t_(X'') is extended by t := −1 on the sites outside X''. The **width** of level i of f is W_i(f) := dist(f_≤(i−1), f_≥(i+1)), the Euclidean distance between site sets (+∞ if one set is empty). For the tower this includes the distance of t_≥(i+1) from the complement of X''. "Big block of level j" means a cube of side M_1ℓ_j from the grid M_1ℓ_jℤ^d. These grids are nested with the block grids ℓ_jℤ^d.
+
+**Lemma 3.1 (widths and cubes pass to the minimum).** Let f be a level function on the sites of X'', and g a level function on all sites with g = −1 off X''. Put h := min(q, f, g) on X'' and h := −1 off X''. For every i < q, W_i(h) ≥ min(W_i(f), W_i(g)). If, for some j ≤ q, both f_≥j and g_≥j are unions of big blocks of level j, then so is h_≥j.
+
+*Proof.* For i < q, h_≤(i−1) = f_≤(i−1) ∪ g_≤(i−1) and h_≥(i+1) = f_≥(i+1) ∩ g_≥(i+1). So dist(h_≤(i−1), h_≥(i+1)) is the smaller of dist(f_≤(i−1), h_≥(i+1)) ≥ W_i(f) and dist(g_≤(i−1), h_≥(i+1)) ≥ W_i(g). For j ≤ q, h_≥j = f_≥j ∩ g_≥j. Each grid cube lies inside or outside each union, so the intersection is a union of grid cubes. □
+
+**Premises on the consumer and the tower.** These are properties of Balaban's constructions as the account quotes them. They are not proved here.
+
+- **(G-c)** For every level i: W_i(c_E) ≥ Mℓ_i, and (c_E)_≥i ∩ X'' is a union of big blocks of level i. Source: CA-I 43454-43458 ("Each region of constant intermediate level is at least one layer of cubes of side Mℓ wide ... for the thin shells, and for the shells Γ''_j and the old collars, this width is part of their construction in [CMP 122a, §1]"); CA-I 37559-37560 (thin shells are one layer of M-cubes of their level); CMP 119 p. 256 (the domains Ω_j are unions of MR_j-cubes, with boundaries at least 2MR_j apart); CMP 102 p. 279 (M is a multiple of R_1M_1).
+- **(G-t)** The boundary tower t_(X'') is Balaban's minimal-determining-set tower (CMP 119 p. 256): (t)_≥j is a union of big blocks of level j, and W_j(t) ≥ LM_1ℓ_j. CA-I 43062-43064 names these towers as one of the three constructions that item (iii) abstracts.
+
+The width (G-c) is not restricted to boxes in its source. The account restricts its separation statement (j) to boxes (CA-I 43442), but its justification of the widths (CA-I 43454-43458) cites the global construction.
+
+**Corollary 3.2.** Under (G-c) and (G-t), for every q ≤ p and every j < q, the layer {b_q = j} has width W_j(b_q) ≥ min(M, LM_1)ℓ_j, and the region Ω_j^(q) := (b_q)_≥j is a union of big blocks of level j.
+
+*Proof.* Lemma 3.1 with f = c_E and g = t_(X''). □
+
+## 4. R: coverage of every ladder set (gate §2 Lemma 7, §6 row R)
+
+R is the second case of `4.4:not-response-bound` (CA-I 10162-10204): at a real minimiser base, for complex data in the polydisc of CMP 102 (172), the five members of CMP 102 (190), each times the power of ℓ matching its order, are bounded by C_H sup_(y') |B(y')| e^(−δ_H d(y,y')). Here d is "the weighted distance of [CMP 96, (2.46)]" (CA-I 10164), and C_H depends only on L and d. Its standing hypotheses are three. The sequence of regions is admissible. The determining set has the form {Γ_i} or B_p(X'') ∪ {Γ_i}_(i<p) (CA-I 10175-10178). The background lies in the regularity class of that set.
+
+Admissibility is CMP 96 (2.1)-(2.2), p. 224, in the form of CMP 102 (1), p. 277: Ω_j is a union of big blocks of size M_1L^jη, and (L^jη)^(−1) dist(Ω_j^c, Ω_(j+1)) > w_adm, where w_adm (RM in CMP 96 and RM_1 in CMP 102) is fixed before M.
+
+**Proposition 4.1 (R covers the ladder).** Assume (G-c), (G-t), the floor M > w_adm, and the reading (R-form) below. Then for every q with n ≤ q ≤ p, R applies to 𝔅^(q) at the base U^(q) = U(𝔅^(q), D_0^(q)), with constants C_H, δ_H independent of q, k, E, X'' and the tower.
+
+- **(R-form), a reading.** 𝔅_E(q, X'') is a set of the form B_q(X'') ∪ {Γ_i}_(i<q) with Γ_i the consumer's level-i region. CA-I 43060-43064 says item (iii) abstracts exactly the sets B_p(X) ∪ {Γ_i}_(i<p) of CMP 122a, the towers of CMP 119 and the domains of CMP 109. The consumer level min(p, c_E, t) is the shell level c_E where c_E < p and the tower level min(p, t) elsewhere.
+
+*Proof.* Admissibility: Ω_j^(q) is a union of big blocks of level j, and dist((Ω_j^(q))^c, Ω_(j+1)^(q)) = W_j(b_q) ≥ min(M, LM_1)ℓ_j by Corollary 3.2. This exceeds w_adm ℓ_j by the floor on M. For the tower part, LM_1 > w_adm is Balaban's own use of CMP 102 on the sets B_j(Ω) of CMP 119 (CMP 119 p. 256, "we will use all the results of [15]"). The base is real and lies in the regularity class: U^(q) is the minimiser given by T1(i) (Lemma 6′ and Theorem 8′(a) below give its data condition). The constants come from the statement of R. □
+
+**Radius margin (gate §2, §5 item 3).** Fix ε̄_1 with ε̄_1 ≤ a_1 and B_3ε̄_1 ≤ ε_0, before the couplings. Read the polydisc of CMP 102 (172) at ε_1^(102) = ε̄_1: its logarithms range over |B'| < r_P := 2C_1ε̄_1 (CA-I 16567-16572). Require 2α_k ≤ ε̄_1. Then every base U^(q), whose data satisfy T1's condition with 2α_kℓ_q^2 ≤ ε̄_1, lies in the one fixed class. Require C_RD C_F α_k ≤ r_P/2 = C_1ε̄_1, so every datum B of Lemma 5 lies in the closed half polydisc. The radius is not shrunk from step to step.
+
+**Stencil and derivative conventions.** On ξ^+ the layer of a point y of 𝔅^(q) has side ℓ_(b_q(y)) ≥ ℓ_n/L (CA-I 44271-44303, read at slot q ≥ n). The derivative in (190) is the covariant derivative at the base (CA-I 14842-14869 writes it as ∇_U; gate §6 row R). A fixed reference point in a row changes d by a bounded amount, absorbed in C_H′ (gate §2).
+
+**Status of R.** Reduced to (R-form) and the geometric premises (G-c) and (G-t). Admissibility of every intermediate set, with its actual tower, is proved from them (Corollary 3.2, Proposition 4.1). The exact printed form of CMP 102 (190) is not rechecked here.

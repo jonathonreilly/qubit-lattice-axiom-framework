@@ -63,6 +63,21 @@ favorable verdicts, note counts or PR counts.
    verifying it (section 10). Novelty neither establishes nor discredits
    correctness.
 
+   **The repo search is enforced, not remembered.** Before any lane starts,
+   a cheap reading model writes `prior/<lane>.md` in the target folder: what
+   the repo already proves on the target (main, every open science PR, other
+   branches' libraries, the target folder), failed attempts and their failing
+   step, overlaps, missed inputs and consumers, each with path, line and a
+   short quote. The lane launcher refuses to start a lane, referee included,
+   whose digest is not committed. The lane reads the digest first, ports what
+   is proved instead of re-deriving it, and lists the prior results it used.
+   A lane's own checkout may not hold main or the open PRs, so the digest is
+   the lane's map to them. The search runs over a plain-file copy of those
+   sources with `grep`, bounded by path; never over git history (`git grep`
+   on whole refs, `git log -p` and `-S` searches exhausted memory and
+   crashed the lead machine on 2026-11-06). A lane that ran without a digest
+   gets one afterwards, and its overlaps are recorded before it freezes.
+
 ## 3. Formal verification (Lean)
 
 Lean is a targeted tool, not a blanket gate. Use it for a concrete risk: a

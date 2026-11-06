@@ -188,8 +188,8 @@ For your flow consumer, the supplied one-loop interval bound gives \(\sum_{l=i+1
 
 ## Who wrote and checked this
 
-Codex wrote the full working note. A fresh Claude session on the Mini checked it line by line: first failing step none.
-Its verdict was ADVANCE with citation repairs F1–F3; those repairs are applied here and in the working note.
+Codex wrote the full working note. A fresh Claude session checked it line by line and found no failing step.
+It asked for three citation repairs; they are applied here and in the working note.
 Codex wrote this outward version and read it against the repaired working note. Claude (Opus 5.5) then read it against that note and every cited line of your account and outline; the statement, scope, constants and inputs match.
 This is research text, not an audit; it grants no status. No computer-assisted step discharges an input.
 

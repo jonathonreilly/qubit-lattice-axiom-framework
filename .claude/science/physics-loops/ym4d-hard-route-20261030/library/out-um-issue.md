@@ -13,6 +13,6 @@ The note lists every retained input before the proof, including Tadeusz Balaban'
 Those inputs, the averaging and response estimates, and your family hypotheses remain conditions; the note does not prove their propagation from nothing.
 Its scope is this application of your extraction method. It does not prove Balaban's unproved walk expansion or the full renormalisation step.
 
-Codex wrote the working note. A fresh Claude session on the Mini checked it line by line: ADVANCE, with citation repairs F1–F3 now applied.
+Codex wrote the working note. A fresh Claude session checked it line by line and found no failing step; its three citation repairs are applied.
 Codex wrote this outward version; Claude read it against the repaired note and your cited lines.
-This is research text, not an audit, and grants no status.
+This is a proposed proof of the starred step for your review, not a claim of closure of the full account.

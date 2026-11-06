@@ -14,9 +14,9 @@ Kind of result (FINISH rule 9): proof of steps the account assumes, namely the r
 Claim first.
 
 1. **The independent current is not where CV can fail.** Inside V_ω, the free current 𝐉 enters through three routes only: the explicit free-current operators, the old terms read at the tube point ζ itself (rough copies), and the chain layers. Each route preserves reality at real independent pairs, given reality of its inputs (Lemmas R4, R5; Theorem A; Proposition B). Every other member reads ζ only through the configuration 𝐔. For those members, reality at an independent real pair is the same statement as reality at the real configuration (Lemma R3).
-2. **The reality clause of (H_j)(d) holds as an implication** (Theorem A). The account assumes it at CA-I 58252 ("They are real at real (𝐔,𝐉)") and in its family clause, CA-I 60651. Here it is proved by an induction that carries reality of every old term as a clause, from the formulas of CMP 119 (3.28)-(3.47) and the account's free-current operators.
-3. **The input-family gap of pd.md Attack 8 is closed** for every walk family whose letters are real. Wordwise reflection (Lemma R4) follows from letterwise reflection. The free-current letters, including the branching insertions, are real at real pairs (Lemma R5). The example (29)-(30) of pd.md needs letters that are individually nonreal. No letter of the account is of that kind.
-4. **What stays open** is one precise lemma, (CH) ∧ (PT) of §8. (CH): the chain layers are real at real independent pairs. (PT): the step-k terms that the account takes from CMP 122a/b as printed are real at real configurations. Neither has an independent-current difficulty that the lemmas here do not remove. Both need text (the layer theorem's construction, Balaban's printed formulas) that the account does not reproduce in full.
+2. **The reality clause of (H_j)(d) holds as an implication** (Theorem A). The account assumes it at CA-I 58253-58254 ("They are real at real (𝐔,𝐉)") and in its family clause, CA-I 60651. Here it is proved by an induction that carries reality of every old term as a clause, from the formulas of CMP 119 (3.28)-(3.47) and the account's free-current operators.
+3. **The input-family gap of pd.md Attack 8 is closed** for every walk family whose letters are real. Wordwise reflection (Lemma R4) follows from letterwise reflection. The free-current letters, including the branching insertions, are real at real pairs (Lemma R5). The example (29)-(30) of pd.md needs letters that are individually nonreal. Under inputs (L1)-(L2) of Lemma R5, which the account asserts operator by operator for the alphabet (CA-I 47589), no letter of the account is of that kind.
+4. **What stays open** is one precise lemma, (CH) ∧ (PT) of §7. (CH): the chain layers are real at real independent pairs. (PT): the step-k terms that the account takes from CMP 122a/b as printed are real at real configurations. Neither has an independent-current difficulty that the lemmas here do not remove. Both need text (the layer theorem's construction, Balaban's printed formulas) that the account does not reproduce in full.
 
 Result kind: **Open lemma**, a strict reduction of pd.md (34).
 
@@ -94,7 +94,7 @@ So for a member that reads only the configuration, reality at independent real p
 
 **Lemma R5 (letters).** Assume the following inputs (L1)-(L2). Then every operator and map in the list (J1)-(J8) of `4.5:lem-free-current-operators` (CA-I 13706-13799), the maps of `4.5:lem-nonlinear-correction` (CA-I 13980-14012) and the functionals of `4.5:def-higher-order-functional` (CA-I 14155-14186) is σ-equivariant. Each walk of their concatenated-walk expansions (J8) is σ-equivariant with the same footprint.
 
-- (L1) *Background operators.* The configuration-only operators D_U, D_U^*, R_b, G_0, G', R, P, Q, Q^*, ℓ (a positive number), 𝔊̃_0, H_0, C^{(2)} of CMP 99b (3.134)-(3.136), the nonlinear map C of CMP 102b (50)-(58) and its derivatives C', C'', and the Wilson Taylor remainder V_0, are holomorphic on connected domains whose real points are the G-valued configurations there, and they map real configurations and real arguments to real values. This is their definition at real backgrounds in CMP 99b, 102b, used by the account at CA-I 13670-13680 and 13980-14012. The account states reality operator by operator for the alphabet of the form assembly (CA-I 47577, "Symmetry and reality hold operator by operator"), and reality of the response chart at independent real 𝐉 (`4.5:prf-chart-covariance`(4), CA-I 15027-15028). By Lemma R1(a) these operators are σ-equivariant.
+- (L1) *Background operators.* The configuration-only operators D_U, D_U^*, R_b, G_0, G', R, P, Q, Q^*, ℓ (a positive number), 𝔊̃_0, H_0, C^{(2)} of CMP 99b (3.134)-(3.136), the nonlinear map C of CMP 102b (50)-(58) and its derivatives C', C'', and the Wilson Taylor remainder V_0, are holomorphic on connected domains whose real points are the G-valued configurations there, and they map real configurations and real arguments to real values. This is their definition at real backgrounds in CMP 99b, 102b, used by the account at CA-I 13670-13680 and 13980-14012. The account states reality operator by operator for the alphabet of the form assembly (CA-I 47589, "Symmetry and reality hold operator by operator"), and reality of the response chart at independent real 𝐉 (`4.5:prf-chart-covariance`(4), CA-I 15027-15028). By Lemma R1(a) these operators are σ-equivariant.
 - (L2) *Elementary walks.* Each elementary walk of G', G_0, T' and of the products DG', G'D^*, D^*G_0, G_0D (the elementary-sheet lemma, CA-I 47294-47313, from CMP 99b Theorems 3.4, 3.7, 3.9, 3.10) is a product of real local operators at real configurations. pd.md Attack 8 read this off CMP 99b (3.87)-(3.90), pp. 409-410: real partitions of unity, local propagators, commutator errors. These walks read 𝐔 only, so Lemma R1(a) makes each σ-equivariant.
 
 *Proof.* Write s for s_H on 𝔤^ℂ-valued fields and gauge parameters. All base points move from P to σP; this is not repeated.
@@ -115,7 +115,7 @@ with the right sides at σP. The left side is ⟨sλ, s(𝔧_J(A))⟩ by Lemma R
 
 (vii) *V^{J,disp}, W^J, V^J, 𝕍'^J.* Each is a real linear combination of pairings of σ-equivariant objects, plus V_0(𝔏^JA';U) (CA-I 14170-14186). Lemma R0 and (L1) make each σ-real. This agrees with the port of V^J in pd.md Attack 5; here it comes with the operators, not only the scalar. ∎
 
-**The branching insertions.** The assembly alphabet adds the vertex operators M_J, Δ^{(2)}[𝔧_0] and 𝒥[𝔧] (CA-I 47537-47567). M_J is linear in J with a configuration-only coefficient; Δ^{(2)}[𝖿] and 𝒥[𝖿] are configuration-only operators linear in the inserted field 𝖿 (CA-I 47340-47371, 47372-47378). Under (L1), which the account asserts for this alphabet at CA-I 47577, each is σ-equivariant for σ-equivariant 𝖿. The inserted fields 𝔧_0 and 𝔧 are images of the current under σ-equivariant operators, of the kind in (iii)-(iv). So Lemma R4 applies to the five stages of the assembly (CA-I 47555-47573). This closes the "termwise reflection with the rule's domain assignments" that pd.md Attack 8 left open, **given (L1)-(L2)**. The fixed rule itself (CA-I 8839-8910) builds each family from cells, words of the inversion rule, and composition of local letters, products, sums and branchings, with the real profile η_q of (F1) and the decompositions (F3). Its interpolation clause (R3) attaches real switch monomials by footprint. Lemma R4 covers each of these.
+**The branching insertions.** The assembly alphabet adds the vertex operators M_J, Δ^{(2)}[𝔧_0] and 𝒥[𝔧] (CA-I 47537-47567). M_J is linear in J with a configuration-only coefficient; Δ^{(2)}[𝖿] and 𝒥[𝖿] are configuration-only operators linear in the inserted field 𝖿 (CA-I 47340-47371, 47372-47378). Under (L1), which the account asserts for this alphabet at CA-I 47589, each is σ-equivariant for σ-equivariant 𝖿. The inserted fields 𝔧_0 and 𝔧 are images of the current under σ-equivariant operators, of the kind in (iii)-(iv). So Lemma R4 applies to the five stages of the assembly (CA-I 47555-47573). This closes the "termwise reflection with the rule's domain assignments" that pd.md Attack 8 left open, **given (L1)-(L2)**. The fixed rule itself (CA-I 8839-8910) builds each family from cells, words of the inversion rule, and composition of local letters, products, sums and branchings, with the real profile η_q of (F1) and the decompositions (F3). Its interpolation clause (R3) attaches real switch monomials by footprint. Lemma R4 covers each of these.
 
 **Lemma R6 (SU(2): the tubes are σ-invariant).** For W ∈ SL(2,ℂ), |s_G(W) − 1| = |W − 1| in the operator norm and in the Hilbert-Schmidt norm. Hence a set of pairs defined by bounds on |W(p) − 1| for plaquettes and other products of bond variables, on |A'| with 𝐔 = e^{iηA'}U, and on |𝐉|, all with such norms, is σ-invariant when G = SU(2).
 
@@ -123,4 +123,127 @@ with the right sides at σP. The left side is ⟨sλ, s(𝔧_J(A))⟩ by Lemma R
 
 For SU(N) with N ≥ 3 the first identity fails: W = diag(2,2,1/4) has |W − 1| = 1 and |W^{-1} − 1| = 3 in the operator norm. So for N ≥ 3 only the local form of Lemma R1 (on σ-invariant polydiscs) is available. CV in the pointwise form (34) does not need global invariance. Lemma R6 matters only for Attack 12 below.
 
-Status: §§0-3 written; §4 (Attack 10) follows.
+## 4. Attack 10: carry reality as a clause of the induction
+
+**Idea.** pd.md Attack 9 tried to get the reality of inherited members from the Route's clause (a) at levels j < k, which concerns weight factors only, and stopped there. Attack 10 instead strengthens the induction: it carries reality of every inherited term as a clause and proves that one step preserves it. This is not adding (H_j)(d) as an assumption. It proves the reality part of (H_j)(d), and of the family clause at CA-I 60651, from the step's formulas.
+
+**The clause.** (R_j): for every i ≤ j, every localised term held after step i is real at every real point of its domain. "Real point" means a real pair (𝐔,𝐉) of its tube, with 𝐉 independent of 𝐔, together with real values of its slot, integration and switch variables. The terms are the small-field terms E^{(i)}(X;·) and their pointed terms E^{(i)}(X;·,z), the terms R^{(i)}, B^{(i)}, B''^{(i)}, and the stored and frozen terms ℂ^{(i)}. Base: (R_0) holds, since the Wilson action extended by ½tr(W + W^{-1}) is σ-real (pd.md (24)).
+
+**Theorem A (the whole-lattice step preserves reality).** Fix the constants in the account's order. Let j ≥ 1. Let f = (f_i)_{i<j} be the input family of hypothesis (H_j), CA-I 58232-58240, with all its terms real at real points. Assume (L1), (L2) of Lemma R5. Assume the convergence and analyticity parts of (H_j)(d), and the account's reality of the response chart at real independent 𝐉, real data and real switches (`4.5:prf-chart-covariance`(4) and its switched form, CA-I 15027-15028, 15099-15102, 15324-15333). Then the terms E^{(j),♮}_𝔰(X;·,z), ♮ ∈ {𝔄,ℜ}, of the whole-lattice step j are real at every real pair (𝐔,𝐉) of the domain of CMP 119 (2.27)(ii).
+
+Consequently, by induction on j from (H_1)(d), the clause "They are real at real (𝐔,𝐉)" of (H_j)(d) holds for every j ≤ K as an implication from these inputs. So does the reality part of the family propagation that `4.38:cor-volume-families` takes as its hypothesis (c).
+
+*Proof.* (H_j)(d) defines the step (CA-I 58241-58248): it is the last logarithm in CMP 119 (3.28), with Ω_j = Λ_j the whole torus, pointed as in (3.37)-(3.42) and expanded as in (3.44)-(3.47) under the rule ℛ. Fix a real pair P. Every quantity below is evaluated at P. The fluctuation field A is a real integration variable.
+
+*Step 1 (the integrand).* The integrand of the last logarithm in (3.28) is χ^{(k)}(A)·exp[−½⟨A,𝖠(P)A⟩ + Σ (old terms at the chart point) + (higher-order action terms)], with the parameters s, t of (3.27) and (3.30). Here and below k = j − 1 in Balaban's numbering.
+- 𝖠(P) is σ-equivariant (Lemma R5), and is real symmetric at real P (`4.14:prf-form-walk-expansion`(c), CA-I 47274-47276).
+- The old terms are read at the response chart, a σ-equivariant map of (P,A) by the cited chart reality. The terms of f are real at real points. So each composite is real at (P,A).
+- The higher-order terms are V^J and its derivatives V'_k(tg_k,A,b) of (3.31). They are σ-real by Lemma R5(vii).
+- χ^{(k)} and χ^{(k)}_t are characteristic functions of real A. The parameters s, t ∈ [0,1], g_k and ℓ are real.
+So at real P the integrand is a real function of real A, and its Gaussian factor is positive.
+
+*Step 2 (expectations and logarithms).* The integral converges at P: the precision is coercive on the admitted domain (the accretivity used in pd.md Lemma 7, CA-I 105232-105254). Its Gaussian normalisation is a positive real number. Each expectation in (3.28), (3.30), (3.32), (3.37) is a ratio of an integral of a real function by a positive real integral, hence real. The t-integrals of (3.30) and (3.37) are over [0,1]. The logarithm of the determinant is written by (3.34)-(3.36) as −½∫_0^∞ tr[(C^*Δ^{(k)}C − λ_0)(C^*Δ^{(k)}C + λ)^{-1}]dλ with real λ_0 > 0. At real P the operators are real, so the integrand is a real trace. This is the branch of pd.md Lemma 7. The constant of (3.33) is real. So (3.38) is real at P.
+
+*Step 3 (pointing).* The functions h_z of (3.40) are products of max{1 − L^{-1}|t|, 0}, real. So the pointed functions E^{(k+1)}_0(Λ,z) of (3.41) are real at P.
+
+*Step 4 (localised expansions).* (3.44)-(3.47) are a cluster expansion of the expectations, a Mayer expansion of the exponential, and generalised random-walk expansions of the operators in the second term of (3.37).
+- The activities of the cluster expansion are expectations of products of real functions with real interpolation parameters. By Step 2 they are real.
+- The Mayer coefficients are integers (pd.md (19), CA-I 21005-21039). Absolute convergence keeps the sums real.
+- The walk expansions are those of the rule ℛ (CA-I 8839-8910). By Lemma R5 and its paragraph on branching insertions, each walk is σ-equivariant with its footprint. By Lemma R4 the masked sums and switch monomials are real at real switches. Each localised trace is a real number at P.
+- The split into 𝔄- and ℜ-terms is by a marking of the term's index (CA-I 58248-58250). It does not depend on P.
+Each E^{(j),♮}_𝔰(X;·,z) is a convergent real combination of such numbers. So it is real at P.
+
+*Induction.* (H_1)(d) is CMP 119 §3 read at k = 0, which the account identifies with CMP 119 §1 (CA-I 58269-58272). Its input is the Wilson action, real at real points by (R_0). The output family of step j is the input family of step j + 1, by (c^+) of (H_{j+1}). For 4.38, the new family is [log Z^{(k)} − log Z^{(k)}(1)] + 𝖲_{k+1}(g'^{-2},𝐄_f) (CA-I 60688). The first bracket is a function of the block configuration only, a logarithm of a positive normalising integral at real configurations, so it is real there. The second is real by the above. ∎
+
+**What Theorem A settles.** It discharges, as an implication from the named inputs, the reality clause the account assumes in (H_j)(d) and in its family clause. It also covers every inherited small-field term that V_ω reads at an independent real pair. In particular, a rough copy of a pointed term is read at ζ itself (CA-I 97681-97682). Its value at a real independent pair is real whenever the copied term is a term of the whole-lattice family, or is identified with one by `4.4:cor-localised-independence` (CA-I 9615-9669).
+
+**Exact failure of Attack 10 for CV itself.** The same induction must also cross the large-field half of each step: the preparatory operations of CMP 122a, the operation 𝐑, the operation 𝐓'_k and the operations CMP 122b (1.90)-(1.99). For these the step needs a recipe for each term, and Lemmas R2-R5 then apply term by term. The account reproduces only part of these recipes. Two kinds are taken by statement.
+- (a) The chain layers 𝒴(𝗌;b) and their current rider. The layer theorem is cited in `4.21:lem-exempted-set` by its clauses (a)-(f) only (CA-I 72396-72399). The account says that the layer is the unique solution, in the ball of that theorem, of equations built from the decoupled operators K(σ) (CA-I 72510-72514), and that at real points it is Balaban's layer (clause (d)). The layer reads (𝗌,b,𝐔,𝐉) (CA-I 72405-72420). Reality at a real **independent** pair is not stated.
+- (b) Balaban's step-k terms that the account takes as printed and files in C^♯: the terms of the domains 𝐁''_k in the class 𝒞 (CA-I 73100-73104), and the members of 𝐂_k beyond their description (CA-II 15985-16019).
+For (a), Lemma R2 reduces reality to σ-equivariance of the layer equations and σ-invariance of the ball. The decoupled operators are σ-equivariant at real 𝗌 by Lemmas R4-R5. The other ingredients of the layer equations (the datum b, the source 𝖩_3 of CMP 122b (1.55), Balaban's nonlinear background terms) are not written out in the parts of the account read here. For (b) the formulas are in CMP 122a/b, which are not available here. So the induction step is proved for the small-field half and stops at the first large-field term without a written recipe. This is a missing text, not a failing identity: no term was found that is nonreal at a real pair.
+
+## 5. Attack 11: remove the independent current from V_ω
+
+**Idea.** pd.md Attacks 1, 4 and 5 treated 𝐉 as a variable that every member may read. Attack 11 reads the account's conventions to find which members of V_ω read 𝐉 at all. Lemma R3 then disposes of the members that do not.
+
+**Proposition B (how the tube point enters V_ω).** Let C be a treated component at the operation 𝐑_k, ζ = (𝐔,𝐉) a real pair of 𝔖, and ϖ ∈ supp Π real. Each member of the five families of V^♯(C^♯;ζ;Φ_C,0) (CA-I 95977-96063) is of one of three kinds.
+- (B1) *Configuration only.* It reads ζ only through 𝐔, through the block averages M^·(𝐔) and the backgrounds built from them. This covers Balaban's step-k members, since Balaban replaces M^·(U_k), V'' by M^·(𝐔) (CMP 122b p. 375, quoted at CA-I 97745-97750); the smooth far copies, read at ext_v(ζ), the box-minimiser pair of the level-p_v averages of 𝐔 (CA-I 97650-97680); and the members of 𝐂_k (below).
+- (B2) *Old terms at ζ itself.* The rough copies and "every other copy" (CA-I 97681-97682; convention (b), CA-I 94133-94151).
+- (B3) *Terms read on the chain at ζ* (convention (a)). These are the old terms 𝐄, 𝐑, 𝐁^{(j)} with X ∩ Z ≠ ∅, the 𝐁''_k-terms and the frozen terms of the class 𝒞 (CA-I 73097-73105), read on the carrier pair chain(m).
+The members are combined by the vertex formula with real switches and masks, by connected series with integer coefficients, by the real weights w̄_v, by the frame average (2^dd!)^{-1}, by the real partition of unity, and by add-and-subtract with real coefficients. These operations preserve reality at real points (pd.md Lemma 3, (16), (19); Lemma R4).
+
+The list is read off the account's conventions (a)-(e) of `4.23:def-extension-conventions` and the copies definition. It is not a re-derivation of the localisation identity.
+
+**Consequences.**
+
+(i) *(B1) members.* By Lemma R3, such a member is real at the real pair (𝐔,𝐉) iff it is real at the real datum M^·(𝐔). The independent current plays no role.
+
+(ii) *The boundary family 𝔳^𝐂.* The account lists its members (CA-II 15985-16019): (Ca) remainders of the expansions of Wilson actions CMP 122b (1.17), (1.20), (1.24), (1.29), (1.36), (1.46)-(1.48) on Z; (Cb) their counterparts off Z, cut by the real partition of π_k; (Cc) I(U_0). The source part 𝔠_w is removed.
+- (Ca), (Cb): Wilson actions with real weights, their Taylor polynomials in real directions, their remainders and their differences between background evaluations are real at real arguments (pd.md Lemma 6). The backgrounds U_0, U^0 are built from 𝖵 = M^k(𝐔)|_{C∖Λ} through the Λ-datum, which is real at real arguments by `4.23:def-lambda-datum`(c) (CA-I 93980-93986). So they are real at real 𝐔. If an expansion's linear term pairs with the free current, the remainder is still real at real (𝐔,𝐉,A) by Lemma R0.
+- (Cc): U_0 = U_{k,C}(𝖵, V_Λ(𝖵)) reads 𝐔 only, and is real at real 𝐔. At real U_0, I(U_0) is real **provided** (I0): it is the logarithm of the denominator of CMP 122a (1.100) plus terms real at real U_0, as CMP 122b (1.11) and p. 374 print it (CA-II 15985-15988 describes it this way). The denominator is positive at real exteriors by 4.32(c), proved in pd.md Lemma 1 from the background-domain construction. So the logarithm is real.
+So 𝔳^𝐂 is real at every real pair, given (I0) and pd.md Lemma 1's input. This removes the exclusion of I(U_0) and of the other U_0-members that stopped pd.md Attack 7, up to (I0).
+
+(iii) *The quadratic form.* The second kept member does not read 𝐉 (CA-I 94387, "The variable 𝐉 does not enter it") and is at real points the form of CMP 122b (1.71) (clause (q0), CA-I 93890-93893). By Lemma R3 it is real at every real pair.
+
+(iv) *(B2) members.* They are real at real independent pairs by Theorem A and the induction (R_{k−1}).
+
+(v) *(B3) members.* An old term at the chain point is real when the chain point is a real pair: by (R_{k−1}), or by Theorem A for small-field terms.
+
+**Exact failure of Attack 11.** It proves CV for the members of kinds (B1) and (B2) up to two inputs, and reduces (B3) to the reality of the chain. Two statements stay open, and neither involves the independent current through a route not already covered.
+- (CH) The carrier pair chain(m) is real at real (ζ,ϖ,𝗌). By Lemma R2, this follows if the layer equations are σ-equivariant and the uniqueness ball is σ-invariant. The account states uniqueness in a ball and builds the equations from the decoupled operators, which are σ-equivariant (Lemmas R4, R5). The remaining ingredients are not written out in what was read (§4, failure (a)).
+- (PT) The (B1) members that Balaban prints are real at real data. The account gives their description for 𝐂_k (handled in (ii), up to (I0)) and their identification "at real points" with Balaban's members (CA-I 96028-96030), but not their recipes for the 𝐁''_k-terms. Note that under the filing hypothesis of `4.23:lem-filing-domains` no Y_0-term is filed at C (CA-I 96096-96103). So those are not part of V_ω.
+
+## 6. Attack 12: prescribe the real part
+
+**Idea.** The account says that off the real slice the extension of each term "is a choice made at each use" (CA-I 97738-97740). pd.md (9) noted that ½(v + v^#) is holomorphic and real at real points, and rejected it because it changes the prescribed function. Attack 12 asks whether the account's own freedom of choice lets us prescribe ½(m + m^#) for every member m filed in C^♯, at every level, with every consumer still served. This is a repair by convention. It is not a proof of CV for the literal prescription.
+
+**Proposition C.** Let G = SU(2). Replace each member m filed in C^♯, at each use and at each level, by m_R := ½(m + m^#). Then:
+- (a) m_R is defined and holomorphic on the same tube as m, by Lemma R6. sup|m_R| ≤ sup|m|. Every size bound of the account survives with the same constants.
+- (b) If a difference bound is stated for all pairs P, P' of the tube with a σ-invariant distance, it survives: |m_R(P) − m_R(P')| ≤ ½|m(P) − m(P')| + ½|m(σP) − m(σP')|. The oscillation seminorm's distances are built from |A'|, |B'|, |𝐉|-type norms, which are †-invariant.
+- (c) G-valued gauge invariance survives, since σ commutes with G-valued gauge maps (σ fixes them). Locality survives, since m^# reads the same variables as m.
+- (d) Every identity between members that is linear with real coefficients survives: add-and-subtract exactness, the vertex formula, the filing sums.
+- (e) V_ω is real at every real pair, by construction, whatever the chain does. So (CH) is not needed for the repaired prescription.
+- (f) At a real point P, m_R(P) = Re m(P). So the repair changes no value of m at real points where m is already real.
+
+*Proof.* (a) Lemma R6 makes the tube σ-invariant, so m^# is defined and holomorphic on it, and |m^#(P)| = |m(σP)| ≤ sup|m|. (b) is the triangle inequality. (c) If λ is G-valued then s_G(λ) = λ, so σ(ζ^λ) = (σζ)^λ, and m^#(ζ^λ) = \overline{m(σζ^λ)} = \overline{m((σζ)^λ)} = \overline{m(σζ)} = m^#(ζ). (d) Apply # to the identity; real coefficients are unchanged. (e) A finite sum of σ-real functions is σ-real (Lemma R1(b)). (f) At real P, m^#(P) = \overline{m(P)}. ∎
+
+**Exact failure of Attack 12.** The repair is harmless only where the members are already real at the points where the theory is read. Two obstructions remain.
+- *Diagonal points.* At a physical (diagonal) point the repair replaces a member by its real part. The density of a label of CMP 122b (1.72) is unchanged iff the sum of all exponents multiplying in one integrand is real there, because e^{Re a}e^{Re b} = e^{a+b} exactly when a + b is real. So the repair needs reality of label totals at diagonal points, which is a (PT)-type statement. With (PT) and (R_{k−1}) at diagonal points, together with clause (d) of the layer theorem (the chain at real diagonal points is Balaban's real chain), every member is real at diagonal points and the repair changes nothing there.
+- *N ≥ 3.* Lemma R6 fails (example after it). Then m_R exists only on 𝔖 ∩ σ𝔖, a tube of smaller radii. The account fixes radii before γ, γ_H, g, m, g_0, K (CA-I 1642-1717), and pd.md §7 forbids shrinking them afterwards. Every bound would have to be re-proved on the smaller tube.
+So for SU(2) Attack 12 removes (CH) at the cost of a convention change, but not (PT).
+
+## 7. Result
+
+**Open lemma**
+
+**(CH) ∧ (PT): reality of the chain layers and of Balaban's printed step-k terms at real arguments.** Fix the account's constants in its order: N, the Stage-0 data, L, Stages 1-7, then γ, then γ_H, then g, m, g_0, K (CA-I 1642-1717). For every level k ≤ K, every treated component C at the operation 𝐑_k, and every real ϖ ∈ supp Π:
+- (CH) for every link of the global chain and every real (ζ,ϖ,𝗌), with ζ = (𝐔,𝐉) a real pair of the source tube and 𝐉 independent of 𝐔, the layer 𝒴(𝗌;b) of the layer theorem (cited by clauses (a)-(f) in `4.21:lem-exempted-set`) and its current rider are real, so that the carrier pair chain(m) is a real pair. A sufficient form: the layer equations are σ-equivariant in (𝗌,b,𝐔,𝐉,𝒴) and the uniqueness ball of the layer theorem is σ-invariant (then Lemma R2 applies).
+- (PT) every step-k term that the account files in C^♯ and takes from CMP 122a/b by statement, and that reads the tube point only through M^·(𝐔), is real at real data. Concretely: the terms of the domains 𝐁''_k in the class 𝒞 (CA-I 73098-73104), and (I0): I(U_0) is the logarithm of the positive denominator of CMP 122a (1.100) plus terms real at real U_0, as CMP 122b (1.11) and p. 374 print it.
+
+Neither part asks for reality off a slice from values on the slice, which is the failure mode of pd.md Attacks 1-2. (PT) is a statement on real data only. (CH) is a statement about real equations with unique solutions.
+
+**Theorem (reduction; proved here, an implication).** Assume (CH) ∧ (PT) at every level. Assume also the inputs named above: (L1)-(L2) of Lemma R5; the account's chart reality at independent real 𝐉 (`4.5:prf-chart-covariance`(4) and its switched form); the convergence and analyticity parts of (H_j)(d); the background-domain input of pd.md Lemma 1; and the account's conventions and descriptions as quoted in §§4-5. Then:
+1. (R_j) holds for every j ≤ K: every inherited term is real at every real point of its domain.
+2. In particular the reality clause of (H_j)(d) and the family clause "reality at real points" hold. Theorem A gives these **without** (CH) or (PT).
+3. CV, pd.md (34), holds: V_ω(X^~;ξ;𝐔,𝐉) ∈ ℝ for every real ξ ∈ S_ω and every real independent pair (𝐔,𝐉) ∈ Reg_k(X), for every level k ≤ K. This includes the zero-current pairs (U,0) at which the island bound reads the operation (CA-I 21330-21345).
+
+*Proof.* Induction on k. (R_0) holds (§4). Assume (R_{k−1}). The whole-lattice step preserves reality (Theorem A). In the large-field half, Proposition B sorts the members of V^♯ into kinds (B1)-(B3). (B1) members are real at real pairs by Lemma R3 together with (PT), and by §5(ii)-(iii) for 𝔳^𝐂 and the form. (B2) members are real by (R_{k−1}) and Theorem A. (B3) members are real by (CH) and (R_{k−1}). The operations that combine members preserve reality (§5). So V^♯, and with it V_ω, is real at every real pair. The same sorting applies to every term the step stores, so (R_k) follows. ∎
+
+**For SU(2) (the first target of T0).** By Proposition C, (CH) can be dropped if the account's per-use choice of extension is fixed as m ↦ ½(m + m^#). That repair needs only (PT) and (R_{k−1}) at diagonal points, together with clause (d) of the layer theorem. It is a convention change, and it must be recorded as such wherever CV is used.
+
+**What this does and does not show.**
+- It does not prove CV for the literal prescription. Two inputs stay open, (CH) and (PT), and both need text that the account does not reproduce in the parts read here.
+- It shows that the independent current adds no obstruction of its own. The three routes by which 𝐉 enters V_ω each preserve reality, given reality of their inputs.
+- It proves, as an implication, the reality clause the account assumes in (H_j)(d) and in its family clause (Theorem A). A reader of `4.38:cor-volume-families` may drop the reality part of its hypothesis (c) on these inputs.
+- No nonreal ingredient and no counterexample to CV or to 4.32 was found.
+- 4.32 needs more than CV: the measure and support identities (c), (d1), (d2), (d5) and the other weight factors stay as in pd.md §§2-3.
+
+**Kinds (FINISH rule 9).** Theorem A is a proof of a step the account assumes. Lemmas R0-R6 are new general lemmas. Proposition B is a reading of the account's conventions; it re-derives nothing of theirs. Proposition C is a proposed repair by convention, not a correction of their text.
+
+**Next steps, each tied to the open item.**
+1. The other model checks Lemmas R0-R6, Theorem A and Propositions B-C line by line. This is the one check FINISH rule 5 asks for.
+2. (CH): locate the layer theorem's statement and its equations. Then check the two conditions of Lemma R2 (σ-equivariant equations, σ-invariant ball). The account's sentence at CA-I 72510-72514 says the equations separate over components and have a unique solution in a ball. That is the shape Lemma R2 needs.
+3. (PT): add it to the hardening tally of `library/t0-tree.md` as a theirs-cited Balaban statement (CMP 122a/b), to be checked against the printed formulas when they are obtained. It concerns real data only.
+4. If the lead prefers the SU(2) repair, record the convention change of Proposition C at the CV node. That removes (CH) for SU(2) and leaves (PT).
+
+Status: complete for this session. Not checked by the other model.

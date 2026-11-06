@@ -63,6 +63,23 @@ favorable verdicts, note counts or PR counts.
    verifying it (section 10). Novelty neither establishes nor discredits
    correctness.
 
+   **The repo search is enforced, not remembered.** Before any lane starts,
+   a cheap reading model writes `prior/<lane>.md` in the target folder: what
+   the repo already proves on the target (main, every open science PR, other
+   branches' libraries, the target folder), failed attempts and their failing
+   step, overlaps, missed inputs and consumers, each with path, line and a
+   short quote. The lane launcher refuses to start a lane, referee included,
+   whose digest is not committed. The lane reads the digest first, ports what
+   is proved instead of re-deriving it, and lists the prior results it used.
+   A lane's own checkout may not hold main or the open PRs, so the digest is
+   the lane's map to them. The search runs over a plain-file copy of those
+   sources with `grep`, bounded by path; never over git history (`git grep`
+   on whole refs, `git log -p`, `-S` searches). On 2026-11-06 the lead machine
+   ran out of memory with git processes holding about 29 GB, while such
+   searches were running; the panic report did not name the command. A lane
+   that ran without a digest
+   gets one afterwards, and its overlaps are recorded before it freezes.
+
 ## 3. Formal verification (Lean)
 
 Lean is a targeted tool, not a blanket gate. Use it for a concrete risk: a
@@ -174,10 +191,22 @@ only when a gate shows its hardest step fails or the other route closes that
 step.
 
 **Methods.** Lay out the complete skeleton of the argument, then attack the step
-it is most likely to die on first; routine steps wait. Test machinery on a
+it is most likely to die on first; routine steps wait. The skeleton is our own:
+an assembly overview of named parts, each with its main statement, imported
+hypotheses, dependencies and sources. Published work enters as a credited
+input. It is never a frame that we patch one gap at a time. Test machinery on a
 ladder of easier models of the same step: what works there is the first
-candidate, and what fails there is a cheap kill. For a standard, low-risk step,
-write one full draft, distil it to a minimal proof, then gate it. Freeze what
+candidate, and what fails there is a cheap kill. Every part, hard or routine,
+goes through three passes:
+1. One long session writes the full argument at length, with no brevity limit.
+2. A second session distils it to a minimal proof and lists every definition
+   it had to infer.
+3. A fresh session reads the whole distilled part line by line, once. It
+   must not be the provider that wrote the distilled text.
+
+Use the provider that drafts best for pass 1. Use the other provider for
+pass 2, and a fresh session of the first provider for pass 3. Keep the status of each step (proved or outstanding) in the
+text of the part, not in a separate per-lane log. Freeze what
 passes its gate; it reopens only on a `wrong` signal, or when an input it reads
 changes or is shown wrong. Independent lanes run in parallel across providers
 and machines, and the lead keeps every available worker on the critical path; a

@@ -128,7 +128,7 @@ Canonical clause IDs for the tally: AI-REP = (i-a), AI-STAB = (i-b,c), AI-EXACT 
 | PI | `port-pi.md:15–34,542–551`: `5.2:lem-pointed-irrelevance`. | **ported-unchecked** on admitted E-families and the one-layer box hypothesis. Does not supply cp12's full H-ct or CI's OSF-loc/(13). |
 | MU | `mu.md:245–280`: `4.13:lem-minimizer-unique`, both tower rules and arbitrary-subdomain nesting. | **proved/refereed** in the regular class and its stated analytic continuation. CMP 102b minimal orbit and CMP 98 averaging remain inputs; extended use coverage and its exceptions are recorded at MU-USES below; no blanket admission follows. |
 | LRB | `lrb.md:833–862`: `4.4:prop-local-real-base`, clauses (1)–(4). | **proved/refereed** under (a)–(d), W′, cell-resolvent/coercivity, symmetry and CMP 116 (2.14). Does not construct those primitive walks. |
-| OC | `oc.md:243–265`: `4.13:lem-own-constant`. | **proved/refereed** for widened smaller-cube gauges, own constants and one-step reproduction, under (3)–(7) and the cited background/gauge results. Not blanket complex admission. |
+| OC | `oc.md:243–265`: `4.13:lem-own-constant`. | **proved/refereed** for widened smaller-cube gauges, own constants and one-step reproduction, under (3)–(7) and the cited background/gauge results. Not blanket complex admission. Value check (`../gates/bundle-value.md`, OC section): their account already proves this result elsewhere (§4.9); their "Proof outstanding" label is stale; not offered outward. |
 | UI | `ui.md:549–572`: `4.5:lem-uniform-increment`. | **proved/checked** completion of the source continuation; retains (189)–(190)/C_H, gauge-map scale count and hierarchy-distance input. This UI is not RO1's small-ball insertion lemma. |
 | PDA | `pda.md:231–247`: geometric (A1) of `4.14:prop-prepared-data-admissible`. | **proved/refereed**, one operation and stopped prefixes given old (A1), with rule (C). PDA-T below gives an unchecked R1/N2 extension; (A2) and the all-history use are not promoted to checked. Analytic and separately cited geometry remain. |
 | LSC | `lsc.md:688–700,702–724`: `6.3:lem-last-scale-constants`. | **proved/refereed**, round 2. Keep e^{-E_vac} on both sides before cancellation. Frozen smaller-scope round 1 is superseded by the round-2 normalized result, not by a bare floor. |
@@ -497,3 +497,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-06, rule 0f, lead: CA-BIN records the written b-in proof; standing stays OPEN until its check (row 397).
 - 2026-11-06, rule 0f, lead: K2 = CR updated after cr-gate (row 396); stays OPEN.
 - 2026-11-06, rule 0f, lead: CA-BIN updated after b-in-gate (row 397); stays OPEN.
+- 2026-11-06, rule 0f, lead: OC annotated after bundle-value (row 400); standing unchanged.

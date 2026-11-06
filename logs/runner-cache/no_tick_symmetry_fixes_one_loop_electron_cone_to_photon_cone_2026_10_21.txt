@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/no_tick_symmetry_fixes_one_loop_electron_cone_to_photon_cone_2026_10_21.py
+runner_sha256: b01e3b4c40594e999b3d9b333f3bab480d18aaa671721defcf6211ea2322686e
+input_fingerprint_sha256: 9aac1da301e35682c0fb5489aaac5a030e547ea67fdf340bb4d532e3dfa3c24d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 33.46
+status: ok
+----- stdout -----
+== A. tick, step set and symmetry (exact / finite)
+[PASS] A1 real-space 8^3 tick = Bloch tick (M = 0, .5, 1); the copy mass leaves the light speed exactly sin(eps)/sqrt3; the partition (Yee) photon band equals the massless fermion band at every K  4e-15; speed/c0 - 1 <= 3e-10; band 1e-15
+[PASS] A2 THEOREM: the one-tick step set (81 displacements, both time senses) is kept by exactly 96 cone-preserving linear maps for every trial cone speed, all of them cubic rotations/reflections with or without time reversal: no symmetry maps a time step into a space step, and none distinguishes one cone speed from another; every step advances one tick, so the Euclidean hypercubic turn t -> x (the B4 route) is not a symmetry of any tick  counts [96, 96, 96]
+[PASS] A3 THEOREM: an isometry flipping the metric sign needs equal inertia: (1,1) in 1+1 has it (the null-lattice x <-> t exchange), (1,3) vs (3,1) in 3+1 does not; the 1+1 step-pi/2 tick dressed by any site phases is a permutation times phases with displacements +-2 per tick, so link dressing cannot change its speed; a power of any translation-invariant permutation tick on Z^3 is diagonal with phases affine in K (bands are planes, no cone), while W has 3 entries per row  1+1 displacements [-2, 2]; 3D: power 8, curvature + off-diagonal 6e-16
+[PASS] A4 bare-mass sensitivity of the light cone at mu = 0: zero without the copy mass (bands even in mu), O(K^2) relative with it, so the additive mass does not feed the limiting speed at O(alpha): mass and cone conditions are independent  M = .5: 2.3e-05, 9.1e-05, 3.7e-04 at K = .02, .04, .08
+== B. engine validation
+[PASS] B1 second-order Floquet formula = exact many-body shift (toy: 4 modes, 3 kicks, 2 insertions, quantised mode)  3.3e-06
+[PASS] B2 static transverse site-phase field on a 16x2x2 torus: exact light-level shift -> formula as amplitude^2  exact 0.003173, 0.003169; formula 0.003168
+[PASS] B3 Coulomb exchange with the sea, frame block charges: real-space 8^3 sum = Bloch sum (partition and bcc Gauss laws)  2e-15
+[PASS] B4 Ward identity: static pure-gauge centre phases give zero shift  9e-18
+   [2 s]
+== C. one loop: delta c/c = kappa alpha, kappa = 4 pi (dw/e^2)/p at small p, e^2 = 4 pi alpha c0; external light positive pair
+[PASS] C1 reference point eps = .3, M = .5: kappa is nonzero, O(1) and negative (electron slower than the photon), isotropic, p-independent, with no helicity splitting (no CPT-odd term)  kappa x(.03) -0.8437, x(.015) -0.8442, diag(.03) -0.8415; split 9e-15
+[PASS] C2 the Coulomb part runs with the continuum velocity log 2/(3 pi) per ln(1/p), the transverse part with the opposite log: equal tree cones cancel the logs and kappa is a finite lattice constant  slopes C +0.2062 (2/3pi = 0.2122), T -0.2070
+[PASS] C3 continuous-time limit (eps = .05; r = M/eps): kappa(r) stays negative and O(1) for every copy mass, -0.17 when the copies are near-degenerate to -1.0 near r = 3; eps .05 -> .025 at r = 10 moves it by < 3e-3  r 0.1: -0.180, r 1.0: -0.469, r 3.0: -1.014, r 10.0: -0.897, r pi/2: -0.860; r 10 at eps .025: -0.898
+[PASS] C4 photon-law variants (eps = .05): at r = 10 every variant stays negative and O(1); at near-degenerate copies (r = .1) bcc Gauss law plus linear photon crosses zero: a one-loop zero can be tuned from supplied choices, not protected  bcc Gauss -0.824, linear photon -0.681, no projection -0.902; r .1: register law -0.180, bcc + linear +0.036
+[PASS] C5 with the photon faster by delta = .1 the electron speed runs towards it, d kappa/d ln(1/p) = A delta: the speed-difference anomalous dimension is A alpha  A = 0.346
+   [30 s]
+== D. fix options
+[PASS] D1 a step is not a response variable: the vacuum phase falls monotonically with the step, so no stationarity of the total phase selects it; and the additive mass is unprotected, delta m L = O(alpha) (r = 10, after removing the Lorentz-invariant 3 alpha/4pi m ln term)  delta m L = -0.512 alpha
+== E. ESTIMATES (measured numbers supplied; not theorems)
+   no fix: delta c_e/c = kappa alpha = -7.4e-03 .. -1.3e-03 (photon faster): vacuum photon decay above 8-20 MeV; LHAASO 1.4 PeV (3e-19) exceeded 4e+15-2e+16x, LEP (1e-11) 1e+08-7e+08x
+   speed-difference flow cell -> m_e: suppression exp(-A alpha ln) = 0.88 (electron part; needs < 1e-8)
+   a tuned one-loop zero leaves O(alpha^2) ~ 5e-05 (x O(1)): still 5e+06x LEP, 2e+14x LHAASO
+   dressed-cone step (CL-1 option): sin eps_s = sin eps_edge/(1 + kappa_s alpha_s): electron step up by 0.13-0.74 %; dimension-4 offset 0 by construction; residual dimension-6 ~ (E L)^2 ~ 3e-25 at 1.4 PeV
+   additive mass with a fixed bare mu = mN: delta m/m_e ~ 2e+19; a potential changes L by ~Phi, so m_e moves by ~2e+19 Phi (Sun, annual 1.6e-10: 3e+09): mu must also be read as a dressed value, or protected
+[PASS] E1 arithmetic: every kappa excluded by > 1e8 (LEP) and > 1e15 (LHAASO); flow suppression > 0.5
+supplied: tick, copy mass and step (scanned), sea branch, photon law (band, lift, gauge projection, Gauss law,
+  continuous-time modes at the half-tick boundaries), Coulomb gauge, one loop, e^2 = 4 pi alpha c0, CL-3 photon cone,
+  cell = 5 l_P in E, measured bounds.  Forced: no symmetry fixes the cone (A2, A3), logs cancel, isotropy, no
+  helicity split, mass-cone independence; kappa != 0 in the register law at every copy mass.
+elapsed 33 s
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

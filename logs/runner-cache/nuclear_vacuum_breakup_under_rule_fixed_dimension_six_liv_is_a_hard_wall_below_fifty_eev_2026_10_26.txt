@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/nuclear_vacuum_breakup_under_rule_fixed_dimension_six_liv_is_a_hard_wall_below_fifty_eev_2026_10_26.py
+runner_sha256: adb4bc90710024bfbc051ea285a10e903398c4d28af1c27db00157b20cfed7ad
+input_fingerprint_sha256: a7bdc14735fe3faaf07f4a2660f61f14d8b08706527e74c8446d22c49f425faa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.16
+status: ok
+----- stdout -----
+PASS T1a matched velocities: A free universal nucleons at P/A carry LIV c P^3/A^2 = additive bound value; zero driver at the matched point
+PASS T1b sum x^3 is stationary on the simplex at x_i=1/A (equal gradients) with Hessian 6/A > 0, so c<0 gives NEGATIVE LIV curvature: the driver is second order (convexity of x^3), not a first-order sum x^3 < 1 term
+PASS T1c local instability of the matched point (no binding): lam|c| = M^2 A^4/3, i.e. P_inst = A (M^2 E*^2/6|c|)^(1/4)
+   deuteron P_inst axis/sky/body (eV): 2.30e+18 / 2.78e+18 / 3.98e+18
+PASS F1a closed-form k_perp integral = direct 2D quadrature (deuteron, lam|c|=2 GeV^2) [rel 2.2e-16]
+PASS F1b separable LF deuteron reproduces B = 2.2246 MeV at lam = 0 (g fixed there)
+   deuteron bound-state slope dM_B^2/d(lam|c|) at 0, 0.5, 0.95 lam_open: -0.2533, -0.2598, -0.3076  (additive -0.25, universal -1)
+PASS F1c the bound deuteron does NOT follow the flow: |c_eff|/|c| rises only from 1/4 to < 1/2 (universal = 1) before the pole dissolves [max 0.308]
+PASS F1d deuteron: no metastable state (pitchfork at lam|c| = 16M^2/3 = 4.702); bound pole meets the moving continuum minimum and dissolves at lam_open|c| = 6.600 GeV^2
+   deuteron dissolves at P (eV) axis/sky/body: 2.50e+18 / 3.03e+18 / 4.33e+18  (prior estimate 3.5-6.0e18)
+F2 cluster N + (A-1) (S = lowest single-nucleon separation, AME; core at c/(A-1)^2):
+   t    lam_open|c| = 19.93 GeV^2 (beta .2/.4: 19.7/20.4); P_open axis/sky/body 3.30e+18/3.99e+18/5.71e+18 eV; per nucleon axis 1.10e+18
+   He4  lam_open|c| = 45.51 GeV^2 (beta .2/.4: 45.3/45.9); P_open axis/sky/body 4.05e+18/4.90e+18/7.02e+18 eV; per nucleon axis 1.01e+18
+   N14  lam_open|c| = 928.9 GeV^2 (beta .2/.4: 929/929); P_open axis/sky/body 8.61e+18/1.04e+19/1.49e+19 eV; per nucleon axis 6.15e+17
+   Fe56 lam_open|c| = 1.741e+04 GeV^2 (beta .2/.4: 1.74e+04/1.74e+04); P_open axis/sky/body 1.79e+19/2.17e+19/3.10e+19 eV; per nucleon axis 3.20e+17
+PASS F2a breakup is REAL for every nucleus and P_open rises monotonically with A
+   weak-driver end c_N = 0.214 c_q: all P_open x 0.214^(-1/4) = 1.470 (exact scaling); Fe body worst case 4.56e+19 eV
+PASS F2b even at the weak-driver body-ray beta=0.4 corner the Fe wall lies below the Amaterasu energy 2.44e20 eV [4.56e+19]
+R complex-pole width of the frozen nucleus above P_open (Gamma_lab = Gamma_M2/2P, L = hbar c/Gamma):
+   He4: x1.1: no frozen pole (dissolved), L_form ~ 1.8e-07 m; x1.5: no frozen pole (dissolved), L_form ~ 2.3e-08 m; x2.0: no frozen pole (dissolved), L_form ~ 6.6e-09 m
+   N14: x1.1: Gamma_M2 3.06e-03 GeV^2 (gap 2.27e-01), L 1.2e-03 m; x1.5: Gamma_M2 7.56e-02 GeV^2 (gap 3.29e-01), L 6.7e-05 m; x2.0: Gamma_M2 7.35e-01 GeV^2 (gap 3.39e-01), L 9.3e-06 m
+   Fe56: x1.1: Gamma_M2 1.53e-03 GeV^2 (gap 1.07e+00), L 5.1e-03 m; x1.5: Gamma_M2 8.47e-03 GeV^2 (gap 1.10e+00), L 1.3e-03 m; x2.0: Gamma_M2 5.21e-02 GeV^2 (gap 1.18e+00), L 2.7e-04 m
+PASS R1 every computed decay/formation length above 1.1 P_open is < 1 kpc = 3.1e19 m: HARD WALL [max 5.1e-03 m]
+Confrontation (web-verified values; rays unoriented, so all three rays allowed):
+   t    wall band 3.29e+18 - 8.44e+18 eV (beta x c_N x ray)
+   He4  wall band 4.05e+18 - 1.03e+19 eV (beta x c_N x ray)
+   N14  wall band 8.61e+18 - 2.19e+19 eV (beta x c_N x ray)
+   Fe56 wall band 1.79e+19 - 4.56e+19 eV (beta x c_N x ray)
+PASS C1 no nucleus t..Fe-56 survives above 5e19 eV on any ray/beta/c_N corner: pure protons above (Auger heavy bin 50-100 EeV)
+   Fe wall vs Auger heavy <lnA> 50-100 EeV and Amaterasu 2.44e20 / Fly's Eye 3.2e20: see note
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

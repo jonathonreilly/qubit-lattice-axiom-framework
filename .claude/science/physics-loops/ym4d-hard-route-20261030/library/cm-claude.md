@@ -67,7 +67,9 @@ Kind of result: proof of the step they mark incomplete (CA-II 59607–59609), as
 - no width, ceiling or radius reads μ̂₀ except through these;
 - by (d), the original clause at μ₀ implies the corrected one. This is a weakening of their statement, not a refutation.
 
-So the corrected proposition has the same order of choice, letter for letter. This is the l17c pattern in its simplest form: the weaker statement is proved (by (b3), §2), and every consumer reads it.
+So the corrected proposition has the same order of choice, letter for letter.
+
+**If the rate comes from §4 or §5 instead of (b3).** Use two letters. Keep μ₀, the Combes–Thomas rate, wherever the account reads it at true pairs (root lemma, K₀, and δ₁ = min{μ₀/2, δ_W/2}); these do not read the local companion. Put μ̂₀ := min{μ₀, r}, where r is the rate proved there (δ₀ in Theorem 1, λ/2 in Theorem 2), in the companion clause only. Then (c) turns the first Stage-6 floor into μ₀M ≥ 2κ₁ together with rM ≥ 2κ₁. The second is a new floor on M; it reads only Stage-5 constants and is imposed at Stage 6 with the others (`cwch.md` (M7)). Part (b) is not needed in this case, because δ₁ keeps μ₀. This is the l17c pattern in its simplest form: the weaker statement is proved (by (b3), §2), and every consumer reads it.
 
 ## 4. Theorem 1: the companion from the operator theorem, on local balls
 
@@ -125,4 +127,83 @@ In particular every ã_ν(y) is finite. For each 𝗎, each ν and each pair y, 
 - It covers 𝗌 ≡ 𝟙. The decoupled family of (b3) with |𝗌(Δ)| ≤ e^{κ₁} needs in addition a count of the cubes a walk meets, as in hypothesis (c) of `4.4:prop-local-real-base` (CA-I 8122–8127), which is itself outstanding.
 - It needs the real base U on the whole lattice, in 𝒰_ℝ. Data whose real part is given only locally are the subject of §5.
 - It does not use, and does not identify, the words of the account's assigned expansion (b3). It is an own-route family with the same σ = 𝟙 sum 𝖲.
+
+## 5. Theorem 2: the account's own local companion family, in every admissible geometry
+
+This section treats the reading in which "the cells of the one family" are the cells 𝒬 of side ℓ of `4.4:def-auxiliary-parameters` (CA-I 6095–6150; "The numbers defined below are the same in every setting in which they are used"), and "the decomposition of the density" is the setting of CMP 116 (2.14) used by `4.4:prop-local-real-base` (CA-I 8110–8169). There the account's companion at local data is the family 𝖬^Y of `4.4:lem-cell-resolvent`(v), decoupled by the interpolation rule.
+
+### 5.1 Check of `mf.md` Lemma 1 (Codex)
+
+Checked line by line by Claude, first failing step none. Points verified against the source:
+
+- (6): |F(b,b′)| ≤ ν|b−b′|e^{ν|b−b′|}|T_X(b,b′)| uses |e^s−1| ≤ |s|e^{|s|} and that f is 1-Lipschitz. Then ν t e^{νt} = νt e^{−(δ−ν)t}·e^{δt} ≤ ν[e(δ−ν)]^{−1}e^{δt}, so the Schur sums give ‖F‖ ≤ ν𝖡/[e(δ−ν)] ≤ 2ν𝖡/(eδ) ≤ γ/8, by ν ≤ δ/2 and ν ≤ eγδ/(16𝖡).
+- (7): D(x+T_X)D^{−1} = x+T_X+F, Re(x+T_X+F) ≥ x+3γ/4, and an entry is at most the operator norm; with b₀ = b′ this gives (x+a)^{−1}e^{−ν|b−b′|}, a = γ/2.
+- (9): the single-cell weight. The book's argument (CA-I 6466–6470) is that rows and columns of P_q, B_q lie in q^♯, so d(q;b,b′) ≤ |b−b′|: the segment path from b₋ to b′₋ meets the single domain q^♯. Then the row sum is at most (x+a)^{−1}Σ_{b′}[Σ_qκ_q(b′)]e^{−(3ν/4)|b−b′|} ≤ S_ν/(x+a), and the column sum the same.
+- (10)–(11): |b″−b′| ≥ ℓ−2−r ≥ ℓ/2 (CA-I 6487–6499 and (k2)); λ = ν/4 gives e^{λ|b−b′|}e^{−ν|b″−b′|} ≤ e^{λ|b−b″|}e^{−(ν/2)|b″−b′|}e^{−νℓ/8}; λ ≤ δ_𝖠 so the 𝖠-row sum at rate λ is at most 𝖡; with (x+a)^{−1} ≤ 2/γ and floor (4) this is ≤ 1/2.
+- Far steps: d(ω;b,b′) ≥ d(ω) > r′ (lemma (c) after `4.4:def-walk-systems`, CA-I 4922–4925) gives |||E|||_{δ/2} ≤ 𝖡e^{−δr′/2}; the rate is monotone, so |||E|||_λ ≤ ε.
+- (12)–(13): submultiplicativity of |||·|||_λ for families (lemma (a) there), |||N|||_λ ≤ 2S_ν/(x+a) ≤ 4S_ν/γ, |||EN|||_λ ≤ 1/2 by floor (4), sum ≤ 4S_ν/(x+a); integration by Step 2 of §4.
+- Order: ν, λ, S_ν, a read only 𝖡, δ_𝖠, γ_*; floor (4) is a lower bound on r′, then on ℓ. None reads M.
+
+### 5.2 Lemma W (walk counting)
+
+This proves hypothesis (c) of `4.4:prop-local-real-base` (CA-I 8122–8127), which the account assumes there.
+
+**Lemma W.** Let ϖ be a walk in the sense of `4.4:def-walk-systems` (CA-I 4875–4900) whose step domains have sup-diameter at most LM/4. Let b, b′ be bonds and t := d(ϖ;b,b′). Let σ₀ be the cubes of side LM of a standard partition, and let m(ϖ) be the number of Δ ∈ σ₀ that meet |ϖ| in the sense of `4.4:def-interpolation-rule` (int Δ ∩ |ϖ| ≠ ∅; CA-I 5131–5133). Then m(ϖ) ≤ 3^d (2t/(LM) + 1). For d = 4 this is the account's bound 81(2t/(LM) + 1).
+
+**Proof.** Let η > 0 and let 𝒯 be a tree (a finite connected acyclic union of segments) that contains b₋, b′₋, meets every domain of ϖ, and has ℓ¹-length t_η ≤ t + η; by the definition of d(ϖ;b,b′) as the length of a shortest such tree, one exists. Doubling every segment of 𝒯 gives a connected multigraph in which every vertex has even degree, hence a closed path that runs through every point of 𝒯 and has length 2t_η. Parametrise it by arc length s ∈ [0, 2t_η], and mark the points p_j at s_j = jLM, j = 0, …, J, J := ⌊2t_η/(LM)⌋. There are J+1 ≤ 2t_η/(LM)+1 marked points. Every s lies within arc length LM/2 of some s_j or of 2t_η, and the path returns to p₀ at s = 2t_η. Arc length bounds ℓ¹-distance, which bounds sup-distance. So every point of 𝒯 is within sup-distance LM/2 of some p_j. Each domain of ϖ meets 𝒯 and has sup-diameter at most LM/4, so |ϖ| ⊂ ∪_j Q_j, where Q_j is the closed sup-ball of radius 3LM/4 about p_j, a cube of side 3LM/2.
+
+Count the cubes Δ ∈ σ₀ with int Δ ∩ Q_j ≠ ∅. Both are products of intervals. In one coordinate, an open cell (na,(n+1)a) of length a = LM meets a closed interval [x, x+3a/2] if and only if n lies in the open interval (x/a−1, x/a+3/2), of length 5/2; it contains at most 3 integers. So at most 3^d cubes per j, and m(ϖ) ≤ 3^d(2t_η/(LM)+1). Let η → 0; m(ϖ) is an integer and does not depend on η. ∎
+
+**Check of the domain hypothesis for the cell walks.** The steps of the walks of `4.4:lem-cell-resolvent`(i) have domains q^♯ (side at most 4ℓ ≤ M/12) or domains of far walks of 𝖠 (ℓ¹-diameter at most ρ_w by (W′) item 2, and ρ_w ≤ r ≤ ℓ by (k2)). By (k3), ℓ ≤ M/48. So all step domains have sup-diameter at most M/12 ≤ LM/4.
+
+### 5.3 Theorem 2
+
+**Setting.** Level k; an admissible geometry 𝔤 = (𝛀, Y) of §4.4, with any nest; a closed union W′ of M₁-cubes with W′ ⊂ Ω_{k+1}; a local datum 𝗎 ∈ 𝐏_{ρ,W′}. The form 𝖠 = Σ_ω 𝖠_ω satisfies (W′) with 𝖡, δ_𝖠, ρ_w, γ_* (CA-I 5517–5578, 6095–6100). Put ν, λ = ν/4, a = γ_*/2, S_ν as in `mf.md` (3).
+
+**Theorem 2.** Assume the hypotheses of `4.4:lem-cell-coercivity` (CA-I 6646–6660: (W′) with its local half; the positivity statement for the base setting 𝒮₀; (k1); the halved ceilings on the primed radii), the auxiliary parameters chosen under `mf.md` (4) and the book's (k2′), and M ≥ 48ℓ. Then, for every admissible geometry, every W′ ⊂ Ω_{k+1} and every 𝗎 ∈ 𝐏_{ρ,W′}:
+
+- (a) **Cell coercivity at every cell with q^♯ ⊂ W′.** For X ⊂ c*_q, Re⟨v, T_X(𝗎)v⟩ ≥ (7/8)γ_*|v|² for all v ∈ ℓ²(X; 𝔤^c).
+- (b) **Local families.** The families 𝖱^{Y,W′}(x), x ≥ 0, and 𝖬^{Y,W′} of `4.4:lem-cell-resolvent`(v), built from 𝗎 alone, are defined and analytic in 𝗎, and |||𝖱^{Y,W′}(x)|||_λ ≤ 4S_ν/(x+a), |||𝖬^{Y,W′}|||_λ ≤ 4S_ν/√a.
+- (c) **Decoupled families.** Let σ(Δ) ∈ ℂ, |σ(Δ)| ≤ e^{κ₁}, for Δ ∈ σ₀ (side LM), and K(σ) := (K_ϖ(𝗎)∏_{Δ meets |ϖ|}σ(Δ))_ϖ for K ∈ {𝖱^{Y,W′}(x), 𝖬^{Y,W′}}. If λLM ≥ 324κ₁, then |||K(σ)|||_{λ/2} ≤ e^{81κ₁}|||K|||_λ. In particular |Σ_ϖ 𝖬_ϖ(σ;𝗎)(b,b′)| ≤ e^{81κ₁}(4S_ν/√a)e^{−(λ/2)|b−b′|}, and each sum is holomorphic in σ on the open polydisc.
+- (d) **Order.** λ, a, S_ν read only 𝖡, δ_𝖠, γ_*, which depend on d, L and G only and are fixed before M (CA-I 6097–6100); the amplitude e^{81κ₁}4S_ν/√a reads κ₁ in addition. All are fixed at Stage 5, before Θ₁, ϖ_T, r′, ℓ and M. The new conditions λLM ≥ 324κ₁ and (for Lemma R) λM ≥ 4κ₁ are floors on M.
+
+**Proof.**
+
+(a) The rule of 𝖠 is local in the sense of `4.4:def-local-rules` ((W′) item 6, CA-I 5554–5556), and it does not read Y: rule (R1′) takes "the family of walks of the walk-expansion theorem for the quadratic form" (CA-I 8887–8890), and Y enters `4.4:lem-cell-resolvent` only through χ_Y and c*_q. Let 𝔤₀ be the trivial nest with the same Y. Then W′ ⊂ Ω_{k+1} ∩ T and Y ∩ W′ = Y ∩ W′, so W′ is uniform for (𝔤, 𝔤₀) (CA-I 5008–5016). By conditions (i) and (ii) of local rules (CA-I 5030–5037), the walks ω with |ω| ⊂ W′ are the same for 𝔤 and 𝔤₀, and their terms are the same functions on 𝐏′_{|ω|}. The walks entering T_X have d(ω) ≤ r′ and a row in X ⊂ q*, hence [ω] ⊂ (q*)^{+r} ⊂ q^♯ ⊂ W′ (Step (1) of the proof of `4.4:lem-cell-coercivity`, CA-I 6676–6684). So T_X[𝔤](𝗎) = T_X[𝔤₀](𝗎|_{q^♯}). The restriction is a local datum on q^♯ (`4.4:def-local-data-classes`(b), CA-I 4486–4487). `4.4:lem-cell-coercivity`, proved at 𝒮₀, gives the bound.
+
+(b) Every primitive of the families — the cell matrices T_q, the near blocks in B_q, the far steps — is a sum of terms 𝖠_ω with |ω| ⊂ W′. By (a) and locality they are the base-setting primitives evaluated at 𝗎. `mf.md` Lemma 1 (checked in 5.1) uses only: the datum-free majorants of (W′) on those primitives, the cell coercivity of (a) at every cell with q^♯ ⊂ W′, Σ_qκ_q ≤ 1 over those cells, and the geometry of cells. Its proof therefore applies verbatim and gives the two bounds. Analyticity: each term is analytic in 𝗎 (`4.4:lem-cell-resolvent`(v)) and the families converge normally on 𝐏_{ρ,W′}.
+
+(c) Fix b. For a walk ϖ and a bond b′, |K_ϖ(σ)(b,b′)| ≤ |K_ϖ(b,b′)|e^{κ₁m(ϖ)}. Lemma W (its domain hypothesis is checked in 5.2) gives m(ϖ) ≤ 81(2d(ϖ;b,b′)/(LM)+1). The floor λLM ≥ 324κ₁ gives 162κ₁/(LM) ≤ λ/2. Hence e^{κ₁m(ϖ)} ≤ e^{81κ₁}e^{(λ/2)d(ϖ;b,b′)}. Multiply by e^{(λ/2)d(ϖ;b,b′)} and sum over (ϖ, b′):
+
+  Σ_{ϖ,b′} |K_ϖ(σ)(b,b′)|e^{(λ/2)d(ϖ;b,b′)} ≤ e^{81κ₁} Σ_{ϖ,b′} |K_ϖ(b,b′)|e^{λd(ϖ;b,b′)} ≤ e^{81κ₁}|||K|||_λ.
+
+Columns are the same. For the entry bound, keep only the terms with the given b′ and use d(ϖ;b,b′) ≥ |b−b′|. Each term is a polynomial in the finitely many σ(Δ) (finite torus), and the majorant is uniform on the polydisc, so the sum is holomorphic on its interior.
+
+(d) Read off from `mf.md` (3) and CA-I 6097–6100. ∎
+
+**Consequence for the proposition.** In this reading, the companion at local data is 𝖬^{Y,W′} and its decoupled form, at every admissible geometry for W′ ⊂ Ω_{k+1}. Theorem 2 bounds it with M-free constants placed at Stage 5. Lemma R with μ̂₀ := min{μ₀, λ/2} then closes (∗): the first Stage-6 floor becomes μ₀M ≥ 2κ₁ and λM ≥ 4κ₁, a floor on M reading Stage-5 constants. `cwch.md` §4.1 rejected (M2) as covering "every actual local density datum" because cell coercivity is proved at 𝒮₀ (CA-I 6681–6687); part (a) removes that objection for every W′ ⊂ Ω_{k+1}, which is the region the account itself uses for general geometries ("In the setting 𝒮₀ any Z is admitted", CA-I 8137).
+
+## 6. Where each reading stands, and what stays open
+
+The account never defines "the companion kernel" at local data; it names the object only in the proposition. Each reading found in the account is covered:
+
+| Reading of "companion at local data" | Covered by | Standing |
+|---|---|---|
+| Chapter 5's assigned family C_{Λ*}^{1/2}(𝗌;𝐔,𝐉), on Balaban's analyticity space over Z ⊇ Z₀′, \|𝗌(Δ)\| ≤ e^{κ₁} | §2, clause (II) of (b3) | Implication from their admitted input, cited Balaban. In our chain: the leaf `5.2:lem-random-walk-bounds` (CITED). |
+| The termwise integral of the resolvent sheets of the operator theorem, at local complex data about a global real base | Theorem 1 (§4) | Proved from `4.14:thm-operator-theorem` (PROVED) and `4.14:lem-local-balls` (PROVED), with the two readings (Inv-x), (Sh3-u) of the named sheet calculus. |
+| §4.4's cell family 𝖬^{Y,W′} and its decoupled form, W′ ⊂ Ω_{k+1}, any admissible geometry | Theorem 2 (§5) | Proved from `4.4:lem-cell-resolvent` and `4.4:lem-cell-coercivity` (both PROVED) with their hypotheses ((W′), the 𝒮₀ positivity statement, (k1), (k2), (k2′), ceilings), `mf.md` Lemma 1 (checked in 5.1) and Lemma W. |
+
+In each row the corrected clause (∗′), with μ̂₀ := min{μ₀, r} for the rate r of that row, holds with constants fixed at Stage 5, for every M above its floors. By §2 and Lemma R, every consumer accepts it.
+
+**What stays open.** None of these is CM as a separate statement.
+
+- **O1.** If our chain keeps Balaban's own family in Chapter 5, the cited leaf `5.2:lem-random-walk-bounds` (CMP 99b Theorem 3.15; CMP 116 (1.7)–(1.11)) must be rebuilt. The chain needs it there anyway, for more than M-freeness: clauses (I) and (III), the reference operator 𝓜₀ and the family C_I(𝗌).
+- **O2.** No result here covers data whose real part is given only locally at cells whose hull is not inside Ω_{k+1} (non-trivial traces), outside the local balls of clause (H). No displayed consumer reads the companion there. Chapter 5 puts the covariance domains Λ*, Λ*∩Z₀ inside Ω^{∼−1}_{k+1} (CA-II 8956), and §4.4 restricts Z to Ω_{k+1} in a general geometry (CA-I 8137).
+- **O3.** Balaban's sentence on old terms beside a new region (`5.10:rem-old-terms-beside`, printed without proof) does not say which class of local data it reads. When that leaf is rebuilt, its proof must name the class. If the class is one of the three rows, (∗′) supplies it. If it is the class of O2, O2 becomes a precise open lemma there.
+- **O4.** Theorem 1 uses the readings (Inv-x) and (Sh3-u) of the sheet calculus, which the account states by name only (our port: P4-H-sheet). Theorem 2 does not use them.
+- **O5.** This note is proved by Claude and not yet checked by Codex.
+
+**For the lead (no other file is edited here).** In `open-core.md` §4, C_M can be replaced by (∗′) with the rate convention of Lemma R. The prescribed-word display (CM) is a sufficient condition that no consumer reads. In `port-map.md` row 105, the state could read: implication from `5.2:lem-random-walk-bounds` at their standard; own route by Theorems 1–2 of `library/cm-claude.md`.
+
+**Possible value to Sussman and Alpoge** (for the lead only; nothing is posted, and FINISH item 6 requires the five checks first): (i) their step (∗), CA-II 59607–59609, follows from their own admitted input (b3) under a rate convention that changes no condition of their order (Lemma R); (ii) Lemma W proves hypothesis (c) of their `4.4:prop-local-real-base`, which they assume; (iii) Theorem 2(a) extends their `4.4:lem-cell-coercivity` from 𝒮₀ to every admissible geometry for cells inside Ω_{k+1}, by their own locality rule. Item (i) is a proof of a step they mark incomplete; it uses only their text.
 

@@ -51,6 +51,7 @@ One cross-provider read each, not an audit, no status.
 
 ## How we work
 
+0a. **No duplicate attacks (owner, 2026-11-06: "how do we have 3 lanes doing the same work?").** Before attacking any open lemma, grep library/open-core.md, library/l17c.md and the FINISH rows for it. If it is already listed or being attacked, stop, name the match, and do not attack it; spend the round on what is not covered. The lead checks every reported open lemma against the open-core list before starting another round.
 0. **Port the complete account (owner, 2026-11-05).** Read GOAL.md's method section and `library/port-map.md` first. Port what Sussman and Alpoge prove; put proof lanes only on their open statements on the T0 chain and on the T0 clauses they do not assert. Each FINISH row names the CA label and its status.
 
 0. **Is it worth doing? Ask before every lane, check, edit or message, lead included.** It must name the open item on the critical path that it closes or kills (an obligation in `GOAL.md`, a row of `library/sa-ledger.md`'s top twenty, or a position in `library/route-decisions.md`), and what we would do differently if it succeeds or fails. No named item, or no change either way: do not do it. Each queue row opens with "Moves:" and that item. Each lead update lists what moved; work that moved nothing is named as waste, so it is not repeated.

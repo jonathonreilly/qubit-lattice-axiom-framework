@@ -2,7 +2,7 @@
 
 ## 0. Status
 
-**Pass 3 done (LZ1I_REFEREE.md); edits applied; ready to freeze** Subject to the imported results and proposed finite-band reading, Theorems 1–8 construct, for each even `m` in `L5-U[m]`, an admissible interacting update and a stationary, gauge-invariant, cell-invariant, half-filled state with two neutral propagating bands of different Clifford speeds. This refutes the unrestricted all-species assertion in that reading. It does not identify these bands as gauge bosons, fermions or gravitons, or select the VC1 vacuum.
+**FINISH: FROZEN 2026-11-06 after pass 3 (LZ1I_REFEREE.md); the referee's edits E1-E9 are applied.** Frozen means: the proved results below are not reopened; open statements are worked in their own files and enter by a dated amendment. The item enters `LZ1.md` as its Amendment 3. It is the first item run through the prior-work gate (`prior/LZ1I.md`). The lead (Claude Opus 5.5, laptop) checked that each of E1-E9 is in the text and the replaced text is gone; that is a text check, not a second referee. Subject to the imported results and proposed finite-band reading, Theorems 1–8 construct, for each even `m` in `L5-U[m]`, an admissible interacting update and a stationary, gauge-invariant, cell-invariant, half-filled state with two neutral propagating bands of different Clifford speeds. This refutes the unrestricted all-species assertion in that reading. It does not identify these bands as gauge bosons, fermions or gravitons, or select the VC1 vacuum.
 
 The pass-2 GAP on the relative budget is resolved. For these composites the relative and absolute budgets are equivalent, and Theorem 10′ needs no comparable-weight condition (`LZ1I_REFEREE.md` §4). Theorem 10′ also covers zooms, which fold the fine momenta.
 

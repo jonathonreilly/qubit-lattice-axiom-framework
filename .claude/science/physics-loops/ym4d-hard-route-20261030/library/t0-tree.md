@@ -500,3 +500,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-06, rule 0f, lead: OC annotated after bundle-value (row 400); standing unchanged.
 - 2026-11-06, rule 0f, lead: K2 = CR updated after cr-r2-gate (row 398); stays OPEN.
 - 2026-11-06, rule 0f, lead: STAGE-MATCH updated after fc-gate (row 392); stays OPEN.
+- 2026-11-06, rule 0f, lead: CA-BIN records the written b-in-r2 proof (row 399); standing stays OPEN until its check.

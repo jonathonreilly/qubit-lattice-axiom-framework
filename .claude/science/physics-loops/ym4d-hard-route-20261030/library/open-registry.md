@@ -957,7 +957,7 @@ Rows above retain exact source statements. This index adds their parent/supplier
 | J1 | Exact scope and evidence: t0-tree §5.4 | `t0-joins` | OPEN | [J1](t0-tree.md#node-j1) |
 | CA-PART | Exact scope and evidence: t0-tree §5.5 | `ca-claude` | proved | [CA-PART](t0-tree.md#node-ca-part) |
 | CA-BIN | Exact scope and evidence: t0-tree §5.5 | `b-in-r2` | OPEN (local BLOCKs conditionally repaired; full sealing BLOCK; `gates/b-in-r2-gate.md`, FINISH row 399) | [CA-BIN](t0-tree.md#node-ca-bin) |
-| CA-LAYER | Exact scope and evidence: t0-tree §5.5 | `stage-claude` | OPEN | [CA-LAYER](t0-tree.md#node-ca-layer) |
+| CA-LAYER | Exact scope and evidence: t0-tree §5.5 | `layer-thm` | OPEN (owner moved from `stage-claude` to `layer-thm`, lead 2026-11-07; proof round FINISH row 441) | [CA-LAYER](t0-tree.md#node-ca-layer) |
 | CA-FIELD | Exact scope and evidence: t0-tree §5.5 | none | OPEN | [CA-FIELD](t0-tree.md#node-ca-field) |
 | CA-MATCH | Exact scope and evidence: t0-tree §5.5 | `ca-claude` | OPEN | [CA-MATCH](t0-tree.md#node-ca-match) |
 | P20 | Exact scope and evidence: t0-tree §5.5 | `b109` | proved | [P20](t0-tree.md#node-p20) |

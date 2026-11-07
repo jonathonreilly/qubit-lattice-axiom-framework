@@ -4,7 +4,8 @@ lease_until: 2026-11-07T20:25Z
 # PRINT-INVERSE, round 2: the theorem on Balaban's literal rows, with the gate's repairs
 
 Queue row 428 (`pi-r2`). Checkout 3dc1c1a46. Proved by Claude (claude-opus-5-5, max effort),
-not yet checked by the other model. Not an audit; it grants no status.
+checked line by line by Codex (gpt-6-astra), with the repairs of `gates/pi-r2-gate.md` applied below.
+Not an audit; it grants no status.
 
 Kind: proof of a step the account cites as printed without proof (CA-I 13144-13178,
 4.5:rem-covariance-inverse-walks; registry row PRINT-INVERSE; tree node BP07), now for the
@@ -37,6 +38,14 @@ SHA-256 (d7f77d4d...d4b6f for SA, 4cb5cb5e...10e6e93 for CA-I) equal the identit
 argument, and finite arithmetic is displayed.
 
 ## 0. The gate's verdicts, and where each is met
+
+**Round-2 disposition: REVISE, then ADVANCE at the stated local scope.**
+`gates/pi-r2-gate.md` checked the proof line by line. Its written repairs are applied here and
+listed in §13. The theorem uses fixed SU(N), odd L >= 3, corner blocks, no-inward rows, the
+compressed whole-action Hessian, the stated separation and torus floors, supplied (S1-loc),
+and (S2), (S2+) on the coefficient read. The tile size precedes the radii. Setting locality
+is on the fixed grids; termwise lattice covariance (C1) remains an input. No audit or
+publication status is granted, and the unrestricted S1–S2 remark is not proved.
 
 | pi-gate verdict | Where it is met here |
 |---|---|
@@ -157,7 +166,7 @@ T^{(m)} are the same with l_{m+1} and T^{(m)}. Level-j big blocks are the cubes
 y + [0, M_b l_j)^4, y in M_b l_j Z^4, with M_b a power of L. A **tower** is the account's
 (CA-I 12712-12724): Omega_0 ⊃ ... ⊃ Omega_k, Omega_j a union of level-j big blocks,
 
-  (T)  l_j^{-1} dist(Omega_j^c, Omega_{j+1}) > R M_b,   R >= R_1,   Omega_{k+1} := ∅,
+  (T)  l_j^{-1} dist(Omega_j^c, Omega_{j+1}) > R M_b,   R >= R_1,   Omega_n := ∅ for every n > k,
 
 with Omega_0 any such union (Omega_0 = T_eta allowed). Balaban's restriction of Omega_0 to the
 RM-neighbourhood of Omega_1 (p.396) is **not** imposed. Lambda_j := T^{(j)} ∩ (Omega_j \
@@ -206,7 +215,7 @@ defined on the tops of that tower, which include every base point y_c and every 
 (S2+). Proposition 3.1 derives (S1-loc) from (S1) at the sites x with N(x) ⊂ Omega_0 of a tower
 with thick levels. Propositions 3.2 and 3.3 show that (S1), (S2) as fixed here do not give the
 remark's conclusion on the account's tower class: 3.2 with a thin remote finger, 3.3 at a
-single bond leaving any proper Omega_0. Neither is a claim about Balaban's p.396 class or about
+single bond leaving any nonempty proper Omega_0. Neither is a claim about Balaban's p.396 class or about
 his Theorem 3.3, whose boundary conventions the printed page does not fix.
 
 ## 3. Operators, norms, constants, and the statements
@@ -299,14 +308,16 @@ before the kernel algebra is applied (pi-gate §§3.3, 7).
 A **tile** is a cube of side M_t l_j of the level-j tile grid (corners in M_t l_j Z^4) that lies
 in Omega_j \ Omega_{j+1}; if Omega_0 ≠ T_eta, an **exterior tile** is a cube of the level-0 tile
 grid disjoint from Omega_0 that contains the initial point of a field bond (§5.2). A tile tau has
-a level j_tau (0 for exterior tiles) and a centre x_tau (a site, since M_t is odd). Its
+a level j_tau (0 for exterior tiles) and x_tau the centre of its run of fine lattice sites
+(a site, since M_t L^{j_tau} is odd). Its
 **footprint** F_tau is the closed l^inf cube of half-width r^ l_{j_tau} about x_tau. A **walk**
 is a sequence omega = (tau_0, ..., tau_n), n = |omega| >= 0, of tiles in which the boxes of
 half-width r_N l_{j} about consecutive centres meet. Its footprint is
 |omega| := F_{tau_0} ∪ ... ∪ F_{tau_n}. A **setting** s = (tower, U) on the box T_eta consists of
 a tower of 2.1 and a configuration U on the bonds of Omega_0^+. Two settings **agree on** a set W
 if Omega_n ∩ W = Omega'_n ∩ W for every n and U_b = U'_b for every bond b with both end-points
-in W.
+in W that lies in the common background domain (the intersection of the two supplied bond
+domains). The coefficients compared in §9 read that common domain inside the footprint.
 
 **Theorem PI.** Fix the constants of §3.3. Let k >= 0, let T_eta be a periodic fine box of side at
 least (2 r^ + 2) l_k, let the tower satisfy 2.1 with R >= R_1, and let U = e^{i eta 𝔞} U_r satisfy
@@ -350,6 +361,8 @@ q_omega^s = q_omega^{s'}. Hence, for every closed W ⊂ T_eta on which s and s' 
 restricted sums q_0^W := sum over walks with |omega| ⊂ W of q_omega are equal for s and s'
 (the same index set and the same terms). The support of q_omega lies at l^inf distance at least
 (2L + 1) M_t l_{j_{tau_0}} from the boundary of |omega| at the first end, and the same at the last.
+Here support is measured in the base-point coordinates of the kernel, as in (b)–(c). If it
+includes each entire row bond instead, subtract that bond's length from the margin.
 
 Part (a) uses no walk bound; (b) follows from (c) and (d); the field read in (c) is not enlarged
 by (e), which concerns only the tower read (pi-gate §5).
@@ -375,7 +388,7 @@ F at distance greater than (R + 24) M_b eta from Omega_1. Then there is a real U
 There is also a real U' with 𝔞 = 0 that satisfies (S1) and (S2) and has |∂U' - 1| = 2 at six
 plaquettes, so the plaquette bound of CA-I 12968-12973 fails when a_0 + a_1 < 1/2.
 
-**Proposition 3.3 (a single bond leaving Omega_0).** Let G = SU(2) and let Omega_0 ≠ T_eta, with
+**Proposition 3.3 (a single bond leaving Omega_0).** Let G = SU(2) and let ∅ ≠ Omega_0 ≠ T_eta, with
 the conventions of 2.2-2.3. Then there is a real U with 𝔞 = 0 that satisfies (S1) and (S2), at
 which Delta_a is singular. U differs from 1 only on one field bond that has an end-point
 outside Omega_0. By Theorem PI, (S1-loc) with a_0 <= a_0^* must fail at U, at a site whose box
@@ -393,8 +406,10 @@ The proof below uses the rows only through Lemma 4.4 (locality, holomorphy, cova
 value, depth-uniform comparison). `library/b109.md` P15 (71), (74) gives the same properties for
 the symmetric straightened rows of CMP 109 (SA (PX141)), with a read enlargement c_r of a double
 block; pi-gate §4.2 checked those steps. With Lemma 4.4 replaced by P15 and M_t >= 2 c_r L,
-Theorem PI holds verbatim for those rows (the operators "built from the rows of 𝓜" in SA
-10287). Those are not the target's rows; the target is the statement above.
+the estimates and construction of Theorem PI hold verbatim for those rows. Part (a) then
+identifies the specified symmetric operators (the operators "built from the rows of 𝓜" in
+SA 10287), not Balaban's literal CMP 99b operators. Those are not the target's rows; the target
+is the statement above.
 
 ## 4. Balaban's literal rows (item 1)
 
@@ -583,12 +598,24 @@ largest number satisfying (e1)-(e4) and the analogous smallness for the site row
 
 ### 4.4 The flat input and the corner blocks
 
-**Lemma 4.5 (corner and centred blocks).** For odd L, the translation tau(x) := x - ((L^k - 1)/2)
-eta (1,1,1,1) maps every corner block B^j(y), 0 <= j <= k, onto the centred block of side l_j about
-y' := y - l_j ((L^{k-j} - 1)/2)(1,1,1,1), and T^{(j)} onto itself.
+**Lemma 4.5 (corner and centred blocks).** Put h_j := ((L^j - 1)/2) eta (1,1,1,1).
+Translate fine sites and fine bonds by -h_k. Separately relabel a level-j site row, or both
+end-points of a level-j field row, by
 
-*Proof.* (L^k - 1)/2 = L^j (L^{k-j} - 1)/2 + (L^j - 1)/2, and (L^{k-j} - 1)/2 is an integer since
-L^{k-j} is odd. So tau(y + eta{0,...,L^j - 1}^4) = y' + eta{-(L^j-1)/2, ..., (L^j-1)/2}^4. ∎
+  y -> y' := y + h_j - h_k = y - l_j ((L^{k-j} - 1)/2)(1,1,1,1).
+
+This row relabelling preserves T^{(j)}. The fine translation maps B^j(y) onto the centred
+block of side l_j about y'. Under these separate identifications the flat mixed matrices
+are conjugate by coordinate permutations, so their inverse bounds transfer.
+
+*Proof.* Since L is odd, (L^{k-j} - 1)/2 is an integer. The identity
+(L^k - 1)/2 = L^j (L^{k-j} - 1)/2 + (L^j - 1)/2 gives
+B^j(y) - h_k = y' + eta{-(L^j-1)/2, ..., (L^j-1)/2}^4.
+The straight paths translate to those of the relabelled row; the block means obey the same
+identity. Translate regions as unions of blocks. Layer membership and outward-row membership
+are preserved. Fine pairings and row pairings are unchanged, and the differential operators
+translate on fine coordinates. Thus each flat matrix is conjugated by the separate fine
+and row permutations. The fine translation alone need not preserve T^{(j)}. ∎
 
 **[F]** (`library/flat-port.md` (8.10), §9.2, §12; checked by Claude, first failing step none,
 `gates/flat-port-gate.md:8`). There is B_F >= 1, depending on L, such that on every admitted
@@ -599,10 +626,11 @@ a union of level-n blocks of side M_F l_n of a nested block grid, l_n^{-1} dist(
 Omega'_{n+1}) >= rho_F, the conventions of §2, Dirichlet conditions outside Omega'_0.
 
 By Lemma 4.4 (iii) the literal flat rows are flat-port's straight averages (2.1) and block means
-on Balaban's corner family. flat-port fixes no origin for its grids (its (2.1) names only the
-block P_- of a row), and every norm, pairing and flat operator in [F] is covariant under
-translations of T_eta. So [F] holds on the corner family; if flat-port is read with centred
-blocks, Lemma 4.5 carries it to the corner family with the same constants. Sources: flat-port.md
+on Balaban's corner family. Read flat-port (2.1) and its block proofs directly on corner
+blocks. Its cutoff commutator proof uses oscillation across the double block and applies
+with the row reference point at the corner. Choose B_F, C_88 and c_h to cover this convention
+before the choices in §3.3. If the flat inverse is read on centred blocks, Lemma 4.5 transfers
+its inverse bound by separate fine and row permutations. Sources: flat-port.md
 :586 for M_4; :588 for M_3 and M_1; :666 for M_5; :816-818 for uniformity in depth, mesh, volume
 and the shape of the layers. The constants C_88 and c_h are those of flat-port (8.8), (8.6); B_F,
 C_88 and c_h are taken to cover all four systems, including the K blocks of §9.2 (pi-gate §4.1).
@@ -676,7 +704,8 @@ disjoint from Omega_0 and contain the initial point b_- of a field bond b (then 
 For such a tile take the first such bond in a fixed order (lexicographic in b_-, then in the
 direction) and put z_tau := b_+, a site of Omega_0 with
 |z_tau - x_tau|_inf <= (M_t - 1)eta/2 + eta. The level of an exterior tile is 0, as is the
-extended level of its sites. Since M_t L^j is odd, the centre x_tau of a tile is a site.
+extended level of its sites. The centre x_tau is the centre of the run of fine lattice sites
+in the tile; since M_t L^j is odd, it is a site.
 
 **Cutoffs.** Fix phi: R^4 -> [0,1] smooth, equal to 1 on [-1/2, 1/2]^4 and supported in [-1,1]^4.
 Put b_tau(x) := phi((x - x_tau)/(M_t l_{j_tau})) and h_tau := b_tau / (sum_sigma b_sigma^2)^{1/2}. A
@@ -742,9 +771,14 @@ points per coordinate gives at most 29 for j_sigma = j_tau, at most 15 + 14/L fo
 j_tau + 1, and at most 14 L + 15 for j_sigma = j_tau - 1 (pi-gate §4.3); each is <= 20 L. So at
 most D_* = 3 (20 L)^4 tiles sigma have N_sigma ∩ N_tau ≠ ∅, and each point lies in at most D_* of
 the boxes N_tau. Consecutive footprints of a walk meet in a set that contains a top: their
-centres are within l^inf distance 7 M_t(l_{j_sigma} + l_{j_tau}), so F_sigma ∩ F_tau contains a cube
-of side (2L + 2 - 7) M_t (l_{j_sigma} + l_{j_tau}) >= M_t l_i >= l_{i+1} (L >= 3, M_t >= L). That
-cube contains a point of T^{(i+1)}, which is a top of level i or i + 1.
+centres are within l^inf distance r_N(l_{j_sigma} + l_{j_tau}). In every coordinate the
+intersection length is at least
+
+  min{2 r^ min(l_{j_tau}, l_{j_sigma}), (r^ - r_N)(l_{j_tau} + l_{j_sigma})}.
+
+Both entries of this minimum are at least M_t l_i, where l_i is the smaller tile scale.
+Since M_t >= L, the intersection contains a cube of side at least l_{i+1}, hence a point
+of T^{(i+1)}, which is a top of level i or i + 1.
 
 ### 5.3 Local inverses
 
@@ -985,7 +1019,8 @@ Hence W_omega has the same kernel in both settings; it is supported in supp h_{t
 by Lemma 6.3 (iv), and q_omega^s = q_omega^{s'}. For a closed W on which s and s' agree, every walk
 of s with |omega| ⊂ W is a walk of s' with the same term, and conversely by symmetry: this is the
 equality of the restricted sums. The support statement holds because supp h_tau lies in the box
-of half-width M_t l_{j_tau} and F_tau has half-width (2L + 2) M_t l_{j_tau}. ∎
+of half-width M_t l_{j_tau} and F_tau has half-width (2L + 2) M_t l_{j_tau}. This margin
+uses base-point coordinates of the kernel; including a whole row bond costs its length. ∎
 
 **Who needs it.** The ordered word families of CA-I 5293-5470 (steps (e)-(g): "the cubes and
 partitions that can occur in omega are the same for s and for s'", "every letter of omega has the
@@ -1048,7 +1083,8 @@ singular. This is an explicit path and an existence argument; no value of t_* is
 (6) U' := U_1 satisfies (S1), (S2) and has |∂U' - 1| = |-1 - 1| = 2 at the six plaquettes, while the
 bound of CA-I 12968-12973 at level 0 is 4(a_0 + a_1) < 2 when a_0 + a_1 < 1/2. ∎
 
-*Proof of Proposition 3.3.* Since Omega_0 ≠ T_eta, some site x_0 of Omega_0 has a neighbour x_0 ± eta e_mu
+*Proof of Proposition 3.3.* Since ∅ ≠ Omega_0 ≠ T_eta and the periodic lattice is connected,
+some site x_0 of Omega_0 has a neighbour x_0 ± eta e_mu
 outside Omega_0; let b_0 be the positively oriented bond between them. It is a field bond with one
 end-point outside Omega_0. It is a row of level 0, since Omega_1 is more than R M_b eta from Omega_0^c.
 No class cube contains b_0, because class cubes lie in Omega_0 and the bonds of a cube have both
@@ -1067,14 +1103,17 @@ includes explicitly ("for G_0 this includes the plaquettes that stick out of Ome
 Account lines are CA-I unless marked II or III, at 31a47c543775 (hashes as in
 `library/prior/print-inverse.md:21-26`, rechecked here for all four files). "PI" is Theorem PI
 above: literal rows, the reading of §2, hypotheses (S1-loc), (S2), (S2+), rate delta_q, bare G_0.
-Every entry needs, for a proper Omega_0, (S1-loc) at the boundary and (S2+): Proposition 3.3 shows
-that (S1), (S2) do not give them. A consumer that writes Balaban's delta_0 reads the common rate
+Every entry needs (S1-loc) at the boundary and the explicit exterior-domain hypothesis (S2+).
+For a nonempty proper Omega_0, Proposition 3.3 shows that (S1), (S2) do not give the required
+boundary real-gauge control. Its twist is zero and already satisfies (S2+); it does not
+refute an implication concerning the exterior twist alone. A consumer that writes Balaban's
+delta_0 reads the common rate
 min{delta_0, delta_q} (Balaban's own definition of delta_0 as "a common, best possible, decay rate",
 quoted at II 54617-54620), and fixes its later floors, ceilings and decoupling sizes at that rate.
 
 | Lines | What is read | Supplied by PI? |
 |---|---|---|
-| 13143-13173 | the remark: (3.132), walks of type (3.98)-(3.99) with hull locality and (3.108)-type bounds, for every U in (S1), (S2) | **Not as stated**: Props. 3.2 and 3.3 are counterexamples on the account's tower class (thin remote finger; one bond leaving any proper Omega_0). **Supplied** under (S1-loc), (S2), (S2+), on every tower, for the literal rows: (b) a bound of the scale and decay form of (3.132) for the bare q_0, (c)-(d) walks with hull locality and majorants, (e) setting compatibility. (S1) gives (S1-loc) at interior points of thick towers (Prop. 3.1), and everywhere when Omega_0 = T_eta. |
+| 13143-13173 | the remark: (3.132), walks of type (3.98)-(3.99) with hull locality and (3.108)-type bounds, for every U in (S1), (S2) | **Not as stated**: Props. 3.2 and 3.3 are counterexamples on the account's tower class (thin remote finger; one bond leaving any nonempty proper Omega_0). **Supplied** under (S1-loc), (S2), (S2+), on every tower, for the literal rows: (b) a bound of the scale and decay form of (3.132) for the bare q_0, (c)-(d) walks with hull locality and majorants, (e) setting compatibility. (S1) gives (S1-loc) at interior points of thick towers (Prop. 3.1), and everywhere when Omega_0 = T_eta. |
 | 13589, 13624-13627 | q_0 in K_{-2}; a walk expansion at complex U | Supplied: (b) with constant 8 C_q and rate delta_q, once the floors 13413-13428 are imposed at that rate; (c). |
 | 13640-13665 | H_0 = G_0 Q^T q_0 l^{-1}, P_0 = I - G_0 Q^T q_0 Q and their identities | Supplied: (a) gives G_0, q_0 and q_0^T = q_0; the identities are then algebra. |
 | 13675 | N_beta(H_0 B) <= B_0 \|B\|, N_beta(G~_0 f) <= B'_0 \|f\|_{(-3)}, P_0^T in K_0 | Partly: q_0 in K_{-2} is supplied. The pointwise and Hölder bounds of G_0 (CMP 99b (3.42)-(3.45); rows B99b-T33, B99b-T34) are separate inputs; the energy-norm words (Remark after Lemma 6.3) do not give them. |
@@ -1086,23 +1125,41 @@ quoted at II 54617-54620), and fixes its later floors, ceilings and decoupling s
 | 14655 | analyticity of q_0 on the admitted complex domain | Supplied on the PI ball {N_{U_r}(𝔞) < a_1^*} with (S2+); the consumer's domain must lie in it by its radius choice. |
 | 14715-14774 (K3) | \|Q^T(q_0 - a)B~\|_{(-3)} <= C' \|B~\|_{(-1)} | Supplied for this estimate: q_0 in K_{-2}, the physical column bound of Q^T (Lemma 4.4 (iii), (iv)) and the kernel algebra (i). The rest of K3 is not proved here. |
 | 14831 | Q^T(q_0 - a) l^{-1} v in the first variation, with weights | Supplied at weight rates kappa <= delta_q/2. A first variation, not a second-response estimate. |
-| 15266-15490 (K10) | per walk: summable factors, two spare exponentials in the anchored tree length, analytic local terms, separation at zero switches | Supplied for q_0 with: the summation factor theta^{n/4} and the spare factor of (d); the localisation domains of a term are its footprints F_tau (full cubes, including parts where nothing depends); the decoupling cube side must exceed the footprint side 2 r^ l (then each footprint meets at most 2^4 cubes, an anchored tree through y, y' and the footprints has length at most (1 + 2^4) D_X (n+1), and (d) with Lambda := that length/(1 + 2^4) gives two spare exponentials at rate delta_q/(1 + 2^4)); separation at zero switches by (e). |
+| 15266-15490 (K10) | per walk: summable factors, two spare exponentials in the anchored tree length, analytic local terms, separation at zero switches | Supplied for the q_0 contribution, using full footprints F_tau as localisation domains, a decoupling cube side greater than 2 r^ l, and rate at most delta_q/17. Choose all subsequent constants at that rate. The endpoint construction below gives the anchored-tree bound 17 D_X(n+1). The other operators and nonlinear equations remain inputs. |
 | 15770-15796 | P_0^T Delta_a = Delta_a - Q^T q_0 Q; real minimiser, then complex B | Supplied for the inverse algebra. Real-minimiser identification, chart uniqueness and continuation in the datum remain the consumer's premises. |
 | 19744-19750 | operator-bounds theorem, importing J2-J8 and K10 | PI contributes only the q_0 inputs listed in this table (pi-gate §8 REVISE). |
-| 5293-5470, 5702-5712 (f4 ordered words; (C1)) | index set, letter values and supports equal in two settings agreeing on a footprint; absolute convergence of restricted operators | Supplied for the q_0 entry by the assignment of §9 (walks of fixed tile grids, letters S_tau and T_tau, footprints \|omega\|). Entrywise majorants and restricted sums converge by (c)-(d). Not supplied: the account's D, D', D'' families for the other operators of its table. |
+| 5293-5470, 5702-5712 (f4 ordered words; (C1)) | index set, letter values and supports equal in two settings agreeing on a footprint; absolute convergence of restricted operators | Supplied for the same-grid locality, support and convergence clauses of the q_0 entry. Identification with the account's full one-family hypothesis, including termwise lattice covariance on its domains, remains an input. |
 | 13323 | near bound frame: the remark "stands under" CMP 109 (3.31)-(3.32) | Attribution only; no inverse estimate is read. PI does not construct the frame. |
-| II 54464-54635 (5.8:prop-local-decay) | real backgrounds under (3.35); C_Q = q_0 with factor e^{-8 delta_1 d} | Supplied for C_Q on the literal rows at the common rate, under (S1-loc) (for (3.35)-backgrounds: at interior points of thick towers, Prop. 3.1). No bound for the other listed operators. II 54617-54620 says the exponential of (3.132) "does not depend on d(y,y')" within one layer; the page image of (3.132) decays in d(y,y') for all pairs, and so does (b). The discrepancy is recorded, not resolved here. |
+| II 54464-54635 (5.8:prop-local-decay) | real backgrounds under (3.35); C_Q = q_0 with factor e^{-8 delta_1 d} | Supplied for C_Q on the literal rows at the common rate, with 8 delta_1 <= delta_q and the other common-rate restrictions, under (S1-loc) (for (3.35)-backgrounds: at interior points of thick towers, Prop. 3.1). No bound for the other listed operators. II 54617-54620 says the exponential of (3.132) "does not depend on d(y,y')" within one layer; the page image of (3.132) decays in d(y,y') for all pairs, and so does (b). The discrepancy is recorded, not resolved here. |
 | II 60313 | list entry for (3.132)-(3.133) | (3.132) in the bare form above; (3.133) needs G_0's pointwise bounds (row 13675). |
 | III 36352-36370 | (3.132) for (Q G_1 Q^T)^{-1}, G_1 current-corrected, on (3.37)-(3.38) | Not supplied. G_1 is not G_0; a controlled perturbation argument (Balaban's Theorem 3.12) is needed. |
-| 166593-166594; III 111329 | status lists: "printed without proof; cited as printed" | No status is granted here. The proposed text for the lead: proved by Claude under (S1-loc), (S2), (S2+) for the literal rows, not yet checked by the other model; the remark as printed fails on the account's tower class (Props. 3.2, 3.3). |
+| 166593-166594; III 111329 | status lists: "printed without proof; cited as printed" | No status is granted here. Written by Claude and checked line by line by Codex (gpt-6-astra): REVISE, then ADVANCE at the stated local scope, with the written repairs applied. This supplies the bare inverse on (S1-loc), (S2), (S2+), not the unrestricted S1–S2 remark or C1. |
+
+**K10 endpoint detail (gates/pi-r2-gate.md §8).** A footprint whose side is smaller than the
+decoupling cube side meets at most 2^4 such cubes. Choose a representative in each intersection
+and join these representatives, consecutive-footprint joining points and the end anchors.
+There are at most 17(n+1) links of bounded layer length. If a thin intersection contains no
+top, choose a top inside its decoupling cube within l_{i+1} of it; that top lies in F_tau^+.
+The staircase argument extends to these end-points, with bound
+
+  16 L(L+1) M_t + 8L^2 + 12L <= 24 L^2 M_t = D_X
+
+for L >= 3 and M_t >= 4L. The larger staircase box still meets only the two heights by the
+gap floor. The tree length is therefore at most 17 D_X(n+1). Use (d) with Lambda equal to
+that length/17; each spare exponential has rate delta_q/17. At zero switches, a surviving
+word has its full connected footprint in the retained union and cannot connect distinct
+components. At switch value one, the original sum gives equality. This proves only the
+inverse contribution to K10.
 
 ## 12. Standing, what changed, and what stays open
 
 **Kind and standing.** Proof of a step the account cites as printed without proof (CA-I
 13164-13173, 166593-166594), on the literal rows of its target, under the local hypothesis
 (S1-loc) and (S2), (S2+); and correction of the remark's hypothesis on the account's tower class
-(Propositions 3.2, 3.3). Proved by Claude, not yet checked by the other model. It is an
-implication from:
+(Propositions 3.2, 3.3). Written by Claude (Opus 5.5), checked line by line by Codex
+(gpt-6-astra), with the written repairs of `gates/pi-r2-gate.md` applied. The disposition is
+**REVISE, then ADVANCE at the stated local scope**, not an unconditional closure of the
+account's remark. It is an implication from:
 - [F], `library/flat-port.md` §§8, 9.2, 12: checked by Claude, first failing step none;
 - Balaban's definitions, read from the page images (§1), and Lemma 4.1 (elementary analysis).
 It no longer reads `library/b109.md` P15-P17: the row comparison is Lemma 4.4, and the other block
@@ -1123,9 +1180,12 @@ is stated on the class where it is checked (size number >= 10, remote finger), e
 Balaban's Theorem 3.3 fails is removed, and Proposition 3.3 is added on the same terms.
 (8) Proposition 3.1 keeps its interior qualification.
 
-**Where it could still fail.** The new load-bearing step is Lemma 4.4: the bootstrap for the
-literal rows needs the covariance of Balaban's relative average under complex gauges near 1
-(Lemma 4.2 (iii)) and the margins of Lemma 4.2 (i). Propositions 3.2 and 3.3 rest on the
+**Scope of the check.** The line-by-line check supports Lemma 4.4's bootstrap, including
+complex-gauge covariance and logarithm margins. With the coordinate, overlap, setting and
+support repairs, it found no failure of Theorem PI under its local hypotheses. Constants
+are uniform in depth, fine mesh, volume, tower and background, for fixed N,L and the tile
+size chosen before the radii. Setting compatibility uses the fixed grids of §9.
+Propositions 3.2 and 3.3 rest on the
 conventions stated with them (cube bonds inside the cube; field bonds touching Omega_0; the Hessian
 of the full action on those fields); under other conventions they may not apply, and they say
 nothing about Balaban's restricted class or his Theorem 3.3.
@@ -1135,19 +1195,66 @@ nothing about Balaban's restricted class or his Theorem 3.3.
   B99b-T34), needed for H_0 and (3.133).
 - (3.132) for the current-corrected G_1 (III 36352-36364) and Balaban's Theorem 3.12.
 - The analytic averaging derivatives of CMP 98 §E (4.5:rem-averaging-analyticity, B98-P5; row 429).
-- (S1-loc) and (S2+) at the boundary of a proper Omega_0: each consumer with Omega_0 = X must supply
-  them from the regularity of U near the boundary of X; (S1) does not (Proposition 3.3).
+- The S1–S2 remark on arbitrary separated towers. At a nonempty proper Omega_0, each consumer
+  must supply the boundary real-gauge control (S1-loc); (S1), (S2) do not give it (Proposition
+  3.3). The explicit exterior twist hypothesis (S2+) is also required; the counterexample
+  already satisfies it.
+- The full covariant one-family input, including termwise lattice covariance (C1). §9 gives
+  only same-grid setting locality, support and convergence.
 - A gauge-gluing lemma deriving (S1-loc) at reentrant boundary points from a stronger, boundary-aware
   hypothesis; and the analogue of Proposition 3.1 on Balaban's restricted class.
 - A commutator estimate making the radii independent of M_t (not used).
 
-**For the lead (suggested; not edited here).** Registry PRINT-INVERSE / tree node BP07: "proved by
-Claude for the literal CMP 99b rows under (S1-loc), (S2), (S2+), not checked; the remark as printed
-fails on the account's tower class (thin finger; one bond leaving any proper Omega_0)". The check
-this needs is one line-by-line reading by Codex of §§2-10, starting with Lemma 4.4 and
-Proposition 3.3. As an outward contribution it has two candidate parts: the theorem for the
-literal rows, and the correction of the remark's hypothesis. Both must pass the five checks of
-FINISH "How we work" item 6; the second fails the account's statement as written only with the
-conventions of §2, which are the account's own (CA-I 12721-12722, 12953-12955).
+**For the lead (suggested; not edited here).** Registry PRINT-INVERSE / tree node BP07:
+"REVISE, then ADVANCE at the stated local scope; written by Claude and checked line by line
+by Codex, with the written repairs applied. Theorem PI supplies the bare inverse for the
+literal corner rows under (S1-loc), (S2), (S2+). The unrestricted remark fails on the stated
+broadened tower and touching-bond reading (thin remote finger; one bond leaving any nonempty
+proper Omega_0). Termwise lattice covariance remains an input." No registry, tree or status
+list is changed here. An outward posting still requires the owner's approval of its exact
+text under FINISH "How we work" item 6.
 
-RESULT: Proved by Claude (not yet checked by Codex) Theorem PI for Balaban's literal CMP 99b rows (CMP 98 one-contour relative averages on corner blocks, composed at the averaged backgrounds; Lemma 4.4 gives their depth-uniform complex comparison): under (S1-loc), (S2), (S2+), on every account tower, uniformly in depth, volume and U, q_0 = (QG_0Q^T)^{-1} exists, is holomorphic, equals Balaban's operator at real points, obeys a bound of the scale and decay form of (3.132) at rate delta_q, and has a walk expansion with hull locality, summation factor theta^{n/4}, a spare factor and two spare exponentials, plus a setting-compatible assignment with footprints of half-width (2L+2)M_t l. Every pi-gate verdict is applied (class fixed in §2, exterior tiles, part (d) narrowed and proved, no claim about Balaban's Theorem 3.3). (S1) gives (S1-loc) at interior points of thick towers (Prop. 3.1); the remark as printed fails on the account's tower class (Prop. 3.2, thin remote finger, any size number >= 10; Prop. 3.3, one bond leaving any proper Omega_0, under the account's touching-bond convention). Open: Codex's check (Lemma 4.4 and Prop. 3.3 first); (S1-loc) and (S2+) at the boundary of a proper Omega_0 as a consumer obligation; G_0's pointwise bounds (B99b-T33/T34); (3.132) for G_1; the averaging derivatives (BP09).
+RESULT: Theorem PI is REVISE, then ADVANCE at its stated local scope, with the repairs applied.
+The proof was written by Claude (Opus 5.5) and checked line by line by Codex (gpt-6-astra).
+It gives existence, holomorphy, literal-row identification of the bare operator, the density
+bound, an absolute walk expansion, spare factors and same-grid setting locality under
+(S1-loc), (S2), (S2+), with the fixed tile size, separation floors and torus room stated above.
+Proposition 3.1 retains thickness and interior scope. Propositions 3.2 and 3.3 concern the
+account's broadened class and touching-bond convention; 3.3 requires ∅ ≠ Omega_0 ≠ T_eta.
+They say nothing against Balaban's own class or Theorem 3.3. Not proved: the S1–S2 remark on
+arbitrary towers, the current-corrected G_1 inverse, pointwise/Hölder bounds for G_0, boundary
+gauge gluing, termwise lattice covariance (C1), or a tile-size-independent radius. This is
+research text, not an audit, and grants no status.
+
+## 13. Repairs applied from gates/pi-r2-gate.md
+
+All written repairs were applicable and have been applied. No other mathematics was changed.
+Original lines refer to the note at commit 7d845267e; repaired lines refer to this file.
+
+| Repair | Original note lines | Repaired note lines |
+|---|---|---|
+| Provenance and checked disposition | 6–7 | 7–8 |
+| Section 0 disposition | 39–56 | 40–48 |
+| Empty top levels | 160 | 169–169 |
+| Nonempty proper-region summaries | 209, 1077, 1146, 1153 | 218, 1116, 1212–1213, 1223 |
+| Tile centre convention | 302 | 311–312 |
+| Common background domain for settings | 306–309 | 318–320 |
+| PI(e) base-point support coordinates | 347–352 | 363–365 |
+| Proposition 3.3 excludes the empty region | 378 | 391–391 |
+| Qualification of “verbatim” for symmetric rows | 392–397 | 409–412 |
+| Lemma 4.5: fine translation and separate row relabelling | 586–591 | 601–618 |
+| Precise corner-block reading of [F] | 601–608 | 629–633 |
+| Tile centre in the construction | 679 | 707–708 |
+| Correct intersection lower bound for unequal tile heights | 745–747 | 774–781 |
+| Support-margin convention in the proof | 987–988 | 1022–1023 |
+| Nonempty-region premise in Proposition 3.3 proof | 1051 | 1086–1087 |
+| Boundary real-gauge control, distinct from the exterior twist | 1070–1071 | 1106–1110 |
+| K10 rate and scope | 1089 | 1128–1128 |
+| C1 replacement use-table row | 1092 | 1131–1131 |
+| Bare C_Q decay rate restriction | 1094 | 1133–1133 |
+| Status-list use row | 1097 | 1136–1136 |
+| K10 thin-intersection endpoint construction | 1089 (detail inserted after the table) | 1138–1154 |
+| Section 12 checked disposition | 1101–1107 | 1159–1162 |
+| Section 12 scope of the completed check | 1126–1131 | 1183–1188 |
+| Section 12 open scope: boundary gauges and C1 | 1138–1139 | 1198–1203 |
+| Lead summary and RESULT | 1144–1153 | 1208–1227 |

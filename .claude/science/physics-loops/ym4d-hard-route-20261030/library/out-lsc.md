@@ -13,6 +13,7 @@ The repair uses your existing vacuum-normalized convention:
 \widetilde Z=e^{-\mathcal E}\widehat Z.
 \]
 You write this convention explicitly at CA-II:140916–140926 and outline lines 23405–23415,23515–23527.
+At CA-II:140922–140923, you call the corrected density “the density $\rho_0$ of Definition 1.5”.
 The lower bound concerns $\widehat Z(0)$; its bare form retains $e^{E_{\rm vac}}$.
 This correction leaves probability expectations and source cumulants unchanged.
 
@@ -37,7 +38,7 @@ We reproduce these arguments below, retaining their inputs.
 
 The additions are the short offset proof for (a), the explicit common constants on the terminal coupling window,
 the normalization reconciliation, and the completion under the original torus floor.
-The normalization reconciliation comes from a separate Codex normalization check. It is not a second discovery here.
+The normalization reconciliation is taken from a separate Codex check of the normalization.
 The application is limited to the Chapter 6 uses listed in §6.5 and the original torus floor of clause (iii-b).
 
 **Lemma (reconstruction of `6.3:lem-last-scale-constants`).** Work in dimension four with SU(2) and normalized trace. Fix odd $L$, the auxiliary tuple $\mathfrak p$, $\gamma$, $\gamma_H<1$, and $\varrho>0$ in your prescribed order. Retain clause (0), the identification $b_{k+1}(0)=\beta_{k+1}$, and the correlation theorem's construction and estimates. In particular, retain its source-free representation, real-background, and sourced majorant inputs, specified in §2 below. Use the vacuum-energy convention of I:159153–159160 and II:140916–140926, with the correction to the bare reading of (h4)(a) proved in §3. Do not assume the last-scale conclusion or volume-free correlations.
@@ -298,7 +299,7 @@ This setting of the constant is visible in the formula, not inferred from normal
 The upper argument uses no floor. In its notation:
 
 1. Subtract $\mathcal E(z)=\sum_{j,X}[e^{(j)}(X;w)-e^{(j)}(X;0)]$. The missing shares cost $O(1)\sum_j|Z_j|$, paid by the existing history charges (II:59718–59739).
-2. Balaban’s sourced bounds and the retained complex-weight estimate make the Wilson contribution nonpositive. The extra zone-cell term is at most $2^{-4}(C_\sharp O(1)+1)\log x_j$ per zone cell (II:59741–59764).
+2. The retained sourced versions of Balaban's CMP 119 bounds (2.43)–(2.48) and clause (c) of your complex-weight lemma bound the Wilson part by \(-(1-\theta_W)A\le0\). The extra zone-cell term is at most $2^{-4}(C_\sharp O(1)+1)\log x_j$ per zone cell (II:59741–59764).
 3. Below $k=K'$, this joins the already paid logarithmic charges. A live arrested pile is paid in its own large-field region, never the top zone (II:59766–59799).
 4. Only the top-zone contribution must remain extensive at the last lattice. Balaban’s modulus-integration argument, with the retained live-component gas sum, gives the upper bound (II:59801–59813).
 
@@ -313,7 +314,7 @@ C_\Gamma(x)=\frac92(\log x+B_\sharp\gamma^2)+C_{\mathfrak r},
 \qquad E_+(x)=C_\Gamma(x)+C_{\rm maj}+c_M.                  \tag{12}
 \]
 
-The coefficient $9/2$ is the SU(2) value of $\frac32\dim SU(N)$. The letter $B_\sharp$ in (12) is the vacuum-energy constant used in I:157049, distinct from the first-passage constant $B^\sharp$. All energies and history masses in this calculation are normalized as in (N2).
+The coefficient $9/2$ is the SU(2) value of $\frac32\dim SU(N)$. The letter \(B_\sharp\) in (12) is the constant of I:157049. Your text writes the clause-(0) slope with the same symbol (I:641–667); this note writes that slope as \(B^\sharp\) in the first-passage formulas. No step needs the two to differ. All energies and history masses in this calculation are normalized as in (N2).
 
 There is also an explicit source for the logarithmic coefficient in that convention: I:159538–159550 bounds $-E_k^{\rm vac}[h]$ by
 \[
@@ -547,8 +548,7 @@ This proves the second assertion of (5), in the normalization (5a). Constants in
 
 ### 6.1 The per-ball deduction with a symbolic exponent
 
-There is an apparent circle if part (c) cites the *uniformity conclusion* of the per-ball theorem. Keep its proof in the following order. First retain
-$t=E_+^\sharp+C_{\rm low}$ as a numerical parameter throughout the proof of 6.4. Only its final paragraph invokes the uniform last-scale conclusion.
+There is an apparent circle if part (c) cites the *uniformity conclusion* of the per-ball theorem. Your proof has no circle. It keeps \(t=E_+^\sharp+C_{\rm low}\) as a numerical parameter throughout the proof of 6.4. Only its final paragraph invokes the uniform last-scale conclusion.
 
 Here are the ingredients of your proof at II:63964–64283, with their retained antecedents:
 
@@ -602,8 +602,7 @@ If at least two cells are occupied, every bulk summand omits one of the $n$ vari
 \]
 
 The original bare integral makes $Z_{\rm bare}(z)$ entire, by compactness of the finite product of bond groups and linearity of the source exponent. Thus
-$h''=e^{-\mathcal E''}\widehat Z/\widehat Z(0)=e^{-\mathcal E''}Z_{\rm bare}/Z_{\rm bare}(0)$ is holomorphic on the admitted ball. The chessboard estimate at a copied source, followed by the normalized upper bound (22) and floor (21), gives a cost $tN^4/|\mathcal C|=t\ell^4$ per occupied cell. Section 6.5 spells out the vacuum cancellation before this root. For a bulk domain in $\sigma c$, its relevant plaquettes lie within $2\eta$ of that cell.
-Other copied balls lie at least $R+2$ from its faces, and $\eta\le1$.
+$h''=e^{-\mathcal E''}\widehat Z/\widehat Z(0)=e^{-\mathcal E''}Z_{\rm bare}/Z_{\rm bare}(0)$ is holomorphic on the admitted ball. The chessboard estimate at a copied source, followed by the normalized upper bound (22) and floor (21), gives a cost $tN^4/|\mathcal C|=t\ell^4$ per occupied cell. Section 6.5 spells out the vacuum cancellation before this root. For a bulk domain in \(\sigma c\), its relevant plaquettes lie within \(2\varepsilon\) of that cell, where \(\varepsilon\le1\) is the lattice spacing used in your proof at II:64117–64120. Other copied balls lie at least \(R+2\) from its faces, so at distance at least \(R+2-2\varepsilon\ge R\) from those plaquettes.
 Thus no other copy contributes at those plaquettes. Locality gives
 \[
 \mathcal E^{\rm bulk}_{\sigma c}(w^{\rm ch}_{c,z})
@@ -685,7 +684,7 @@ For bounded random variables $Y_i$, expanding $\log\langle e^{\sum z_iY_i}\rangl
 
 Indeed, the term with $j$ factors of the nonconstant part of the moment generating function orders the $j$ nonempty blocks in $j!$ ways. Its logarithmic coefficient is $(-1)^{j-1}/j$, leaving $(-1)^{j-1}(j-1)!$. This finite coefficient identity is not a computer enumeration. Each moment product is at most $\prod_i\|Y_i\|_\infty$. The displayed local count therefore proves (8). No total-torus plaquette count occurs.
 
-For part (e), your clause (0), I:2533–2537, gives
+For part (e), your clause (0), I:2533–2537 (where \(B^\sharp\) is written \(B_\sharp\)), gives
 
 \[
 K(g_0,g)\ge\frac{g_0^{-2}-X}{B^\sharp}-1\longrightarrow\infty .
@@ -801,19 +800,19 @@ This note establishes neither an unconditional stability theorem nor an uncondit
 It supplies no factorial growth estimate, clustering result or rotation result.
 
 **Who wrote and checked.** Codex wrote the working proof; its exact model variant was not recorded.
-A fresh Claude session checked round 1 line by line. It rejected the identification with the bare mass.
+A fresh Claude session checked the first version line by line. It rejected the identification with the bare mass.
 It accepted the offset, lattice matching, local count and subsequence arguments.
 It also accepted the per-ball deductions conditional on a valid common exponent.
 A separate Codex check identified the missing vacuum term and the repair in your existing convention.
-That check also corrected the stronger claim that no normalization could work.
+That check also corrected the first checker's stronger claim that no normalization could work.
 
-A fresh Claude session checked the round-2 changes at revision `5129d8d4e`, retaining the accepted round-1 parts.
+A fresh Claude session then checked the repaired changes line by line, keeping the accepted parts of the first version.
 Its report says: “First failing step: none.”
 It checked the normalized floor, the upper bound in the same convention, the separate constants,
 and the four consumer cancellations. It explicitly retained the common-energy identification as an assumption.
 This acceptance is conditional on the inputs in §2.
 
-Codex wrote this outward version against the checked working proof and read the cited source ranges.
-This outward wording has not received a separate independent model check.
+Codex wrote this outward version against the checked working proof and read the cited source ranges. Claude (Opus 5.5) checked this version line by line against the working proof and the cited account lines; its fixes are applied.
+Claude (Opus 5.5) checked this note line by line against the working proof.
 The recorded checks are model readings, not human review or an audit. They grant no scientific status.
 Every proof step above is a written argument. Source searches and file checks do not discharge any mathematical claim.

@@ -511,7 +511,8 @@ E, with u a G-valued gauge on D and eps := l_j max_E |B| <= e_R. Then:
 argument within 1/2 of 1; these rows are holomorphic in B and read U only on E (on the bonds
 inside B^j(y) for the site row y);
 (ii) Q_j(U^g) = Ad_{g} Q_j(U) Ad_g^{-1} and Q'_j(U^g) = Ad_g Q'_j(U) Ad_g^{-1} for every G-valued g,
-with Ad_g acting on a bond component at its initial point and on a row at its base point;
+with Ad_g acting on a fine bond component and on a field row at its initial point (c_- for the
+row c), and on a site or a site row at that site;
 (iii) Q_j(1)A_c = L^{-5j} sum_{x in B^j(c_-)} sum_{t=0}^{L^j - 1} A_mu(x + t eta e_mu), which is
 `flat-port.md` (2.1) with P_- = B^j(c_-), and (Q'_j(1)lambda)(y) = L^{-4j} sum_{x in B^j(y)} lambda(x);
 (iv) for u = 1: sum_{b'} |Q_j(U)(c,b') - Q_j(1)(c,b')| <= C_R eps, and
@@ -547,10 +548,11 @@ For m = 0 all three hold. Assume them at m. Then |b_m| <= (3/2) e_R <= r_1/2, so
 using 𝒜(e^{ib})_c = z(c_-) e^{iF(b)_c} z(c_+)^{-1} and (W^z)^t = W^{tz}. This proves the claim. All
 logarithms met are those of Lemma 4.2 (i) at |b_m| < r_1, conjugated by t_m; so (i) holds.
 
-*Field rows (iv).* By Lemma 4.2 (iii), Q^ang((e^{ib})^t) = Ad_{t} Q^ang(e^{ib}) Ad_t^{-1}, and
-t_m^{-1} t_{m-1} = z_{m-1}^{-1} at level-m sites. So
-  L^j Q_j(U) = Ad_{t_{j-1}} A_{j-1} ... A_0,   A_m := Ad_{z_{m-1}^{-1}} Q^ang(e^{i b_m})  (A_0 := Q^ang(e^{i b_0})),
-while L^j Q_j(1) = S ... S (j factors). Let ||.||_row (||.||_col) be the largest row (column) sum
+*Field rows (iv).* By Lemma 4.2 (iii), Q^ang((e^{ib})^t) = Ad_{t} Q^ang(e^{ib}) Ad_t^{-1}, where
+the left Ad_t acts at the sites of the coarser level and the right one at those of the finer.
+At level-m sites t_m^{-1} t_{m-1} = z_{m-1}^{-1}. So
+  L^j Q_j(U) = Ad_{t_{j-1}} A_{j-1} ... A_0,   A_m := Q^ang(e^{i b_m}) Ad_{z_{m-1}^{-1}}  (A_0 := Q^ang(e^{i b_0})),
+where Ad_{z_{m-1}^{-1}} acts on level-m fields; while L^j Q_j(1) = S ... S (j factors). Let ||.||_row (||.||_col) be the largest row (column) sum
 of entry norms. By Lemma 4.2 (iv), (v) and |Ad_z - 1| <= C_N(|z - 1| + |z^{-1} - 1|),
   ||A_m - S||_row <= C_1 L eps s_m,   ||A_m - S||_col <= C_1 L^{-3} eps s_m,
 with C_1 depending on N and L (it contains 8L^4 · 3/r_1^2 and C_N/(L r_1)). Row norms are
@@ -563,8 +565,9 @@ C_N (6 eps/(r_1(L-1))) (3/2) L^j. Multiplying by L^{-j}: the row sum of Q_j(U) -
 most C_R eps, and the column sum at most C_R eps L^{-4j} = C_R eps (eta/l_j)^4. The column
 statement is the same computation on the union of the read sets of 𝒮, where the bootstrap holds
 with the same eps. (iii) is the case B = 0: the composition of one-step straight means is the
-long straight mean, because B^{m+1}(y) is the union of the level-m blocks of the points of
-B(y), and t'L^m + t, 0 <= t, t' < L, runs once through 0, ..., L^{m+1} - 1.
+long straight mean, because B^{m+1}(y) is the union of the level-m blocks B^m(y'') of the points
+y'' of B(y), B^m(y'' + t' l_m e_mu) = B^m(y'') + t' l_m e_mu, and t' L^m + t, with 0 <= t' < L and
+0 <= t < L^m, runs once through 0, ..., L^{m+1} - 1.
 
 *Site rows (iv).* With W_m := e^{i b_m}(Gamma_{x_{m+1},x_m}) and (C_m), the middle factors of the
 contour variable telescope, t_m(x_m)^{-1} t_{m-1}(x_m) = z_{m-1}(x_m)^{-1}:
@@ -600,3 +603,174 @@ blocks, Lemma 4.5 carries it to the corner family with the same constants. Sourc
 :586 for M_4; :588 for M_3 and M_1; :666 for M_5; :816-818 for uniformity in depth, mesh, volume
 and the shape of the layers. The constants C_88 and c_h are those of flat-port (8.8), (8.6); B_F,
 C_88 and c_h are taken to cover all four systems, including the K blocks of §9.2 (pi-gate §4.1).
+
+## 5. Local models
+
+### 5.1 Comparison of all blocks
+
+On an admitted geometry with local scale m (note m <= l_k = 1), let B be a 𝔤^c-valued bond field on
+the read set of its systems, and e(B) := max (m|B| + m^2|∂B|), with ∂ the flat forward differences.
+
+**Lemma 5.1.** There are e_C > 0 and C_C, depending on N and L, such that if e(B) <= e_C:
+(i) every coefficient of M_r(e^{i eta B}), r in {1,3,4,5}, is defined and holomorphic in B;
+(ii) ||M_r(e^{i eta B}) - M_r(1)||_{X^0 -> Y^0} <= C_C e(B), where X^0, Y^0 are the norms of §3.2 with
+flat differences;
+(iii) for every 𝔤-valued A' with e(A') <= e_C, the norms with differences covariant at e^{i eta A'}
+lie between (1 + C_C e(A'))^{-1} and (1 + C_C e(A')) times the flat ones.
+
+*Proof.* *Rows.* A field row of level j >= 1 reads its double block, which lies in the layers
+j - 1 and j, where m >= l_j/L. So l_j max|B| <= L e(B), and Lemma 4.4 applies with eps = L e(B)
+when L e_C <= e_R. Let T := Q(U) - Q(1) on the rows of level j. By Cauchy-Schwarz with the weights
+|T(c,b')|, then Lemma 4.4 (iv),
+  ||K(U)v - K(1)v||_count^2 = sum_c l_j^2 |(Tv)_c|_2^2 <= l_j^2 ||T||_row sum_{b'} (sum_c |T(c,b')|) |v_{b'}|_2^2
+     <= (C_R L e)^2 l_j^2 (eta/l_j)^4 sum_{b'} |v_{b'}|_2^2 <= (C_R L e)^2 ||m^{-1} v||_2^2,
+using eta^4 l_j^{-2} <= eta^4 m(b')^{-2} on the double block. A fine bond is read by rows of at
+most two levels (its own layer's and the next outward ones), which costs a factor 2. Site rows
+of level j have their blocks in layer j, where m = l_j; the same computation gives
+||m^{-2}(Q'(U) - Q'(1))lambda||_top <= C_R L e ||m^{-2}lambda||_2. The mass blocks are
+K(U)^T K(U) - K(1)^T K(1) = (K(U) - K(1))^T K(U) + K(1)^T (K(U) - K(1)), and the same for
+Q'^T m^{-2} Q'; one factor is bounded as above, the other by the flat counts of flat-port §3
+(||K(1)v||_count <= C ||m^{-1}v||_2, by Jensen), and transposes have the same bounds by duality.
+Rows of level 0 are identities and do not vary.
+
+*Differences.* (D_U - D_1)lambda(b) = c_b lambda(b_+) with c_b := eta^{-1}(Ad e^{i eta B_b} - 1).
+Since X ↦ Ad e^{iX} - 1 vanishes at 0 and has bounded derivative on |X| <= 1, |c_b| <= C|B_b| <=
+C e/m and |∂c| <= C|∂B| <= C e/m^2. The product rule then gives
+||(D_U^T D_U - D_1^T D_1)lambda||_2 <= C e (||m^{-2}lambda||_2 + ||m^{-1} D lambda||_2) (note
+||m^{-1}lambda|| <= ||m^{-2}lambda|| as m <= 1), |<v, (D_U D_U^T - D_1 D_1^T)w>| <= C e ||v||_E ||w||_E,
+and the same bound for the blocks -D_U, -D_U^T between h and A.
+
+*Wilson Hessian.* Fix a plaquette p with holonomy P := U(∂p) from its base point. For a field v let
+v'_1, ..., v'_4 be its values on the four bonds of ∂p, each transported to the base point along
+∂p and signed by orientation, and X_v := sum_k v'_k. Expanding tr(2 - W - W^{-1})/2 with
+W = E(s)P and E(s) the ordered product of the e^{i s eta v'_k} gives, for the second variation,
+  Psi_p(v, w) = (eta^2/2) tr(X_v X_w (P + P^{-1})) + (eta^2/4) tr(sum_{k<l} ([v'_k, w'_l] + [w'_k, v'_l])(P - P^{-1})),
+which is CMP 99b (3.10) per plaquette, and is eta^2 tr(X^1_v X^1_w) = eta^4 tr((dv)(p)(dw)(p)) at
+U = 1, X^1 being the untransported sum. Write P + P^{-1} = 2 + (P - 1)^2 P^{-1}. Since U = e^{i eta B},
+|P - 1| <= C eta^2 (|∂B| + |B|^2) <= C eta^2 e/m^2. So the remainder per plaquette is at most
+C |P - 1| eta^2 |v||w| <= C e eta^4 m^{-2} |v||w| (this is pi-gate §4.2's corrected normalisation:
+the raw remainder carries eta^2, not eta^4). The transports differ from 1 by at most C eta e/m,
+so |X_v - X^1_v| <= C eta e m^{-1}|v| and |X^1_v| = eta|(dv)(p)|. Summing over plaquettes, each bond
+lying in six, |<v, (Delta(U) - Delta(1)) w>| <= C e ||v||_E ||w||_E, the curvature term included.
+At the Dirichlet edge zero extensions are used; the plaquettes that leave Omega_0 read U on
+Omega_0^+, where B is defined.
+
+Adding the finitely many blocks gives (ii). (iii) is the bound |(∇_{e^{i eta A'}} - ∂)f| <=
+C|A'||f|, and its second-order analogue with |∂A'|, for each covariant difference in the norm.
+(i): the rows are holomorphic by Lemma 4.4 (i); the other coefficients are polynomials in the
+entries of e^{±i eta B}. ∎
+
+### 5.2 Tiles, cutoffs, footprints and models
+
+**Tiles.** For each level j, the layer Omega_j \ Omega_{j+1} is a union of cubes of the level-j
+tile grid (side M_t l_j, corners in M_t l_j Z^4), because Omega_j and Omega_{j+1} are unions of big
+blocks of sides M_b l_j and M_b l_{j+1} and M_t divides M_b. These cubes are the tiles of level j.
+**Exterior tiles** (pi-gate §4.3): if Omega_0 ≠ T_eta, the cubes of the level-0 tile grid that are
+disjoint from Omega_0 and contain the initial point b_- of a field bond b (then b_+ is in Omega_0).
+For such a tile choose one such bond and put z_tau := b_+, a site of Omega_0 with
+|z_tau - x_tau|_inf <= (M_t - 1)eta/2 + eta. The level of an exterior tile is 0, as is the
+extended level of its sites. Since M_t L^j is odd, the centre x_tau of a tile is a site.
+
+**Cutoffs.** Fix phi: R^4 -> [0,1] smooth, equal to 1 on [-1/2, 1/2]^4 and supported in [-1,1]^4.
+Put b_tau(x) := phi((x - x_tau)/(M_t l_{j_tau})) and h_tau := b_tau / (sum_sigma b_sigma^2)^{1/2}. A
+bond component uses the value at its initial point, a site component at its site, a row at its
+base point. Every reference point lies in a tile (exterior tiles cover the outer initial points),
+where its own bump is 1; so the denominator is >= 1 and sum_tau h_tau^2 = 1 on every component.
+Bumps that overlap have levels differing by at most one: if j_sigma >= j_tau + 2, then sigma ⊂
+Omega_{j_sigma} and tau ⊄ Omega_{j_sigma - 1}, so by (T) the tiles are more than R M_b l_{j_sigma - 1} >=
+M_t l_{j_sigma} apart, while the supports reach at most M_t(l_{j_sigma} + l_{j_tau})/2 beyond them.
+Hence the h_tau obey flat-port (8.6) with M = M_t and constants depending on L.
+
+**Footprints and two levels.** F_tau is the closed l^inf cube of half-width r^ l_{j_tau} about x_tau,
+and F^+_tau the one of half-width (r^ + L) l_{j_tau}. F^+_tau meets at most two levels {i, i+1}, and
+j_tau is i or i+1. Indeed points of F^+_tau are within Euclidean distance 2(r^ + L) l_{j_tau} of
+x_tau. A site of level <= j_tau - 2 lies outside Omega_{j_tau - 1}, at distance > R M_b l_{j_tau}/L >
+2(r^ + L) l_{j_tau} from x_tau in Omega_{j_tau}, by (T) and the floor R_1 M_b >= 4L(r^ + L) + 1. A site
+of level >= j_tau + 2 lies in Omega_{j_tau + 2}, at distance > R M_b l_{j_tau + 1} from x_tau, which is
+outside Omega_{j_tau + 1}. Sites of levels j_tau - 1 and j_tau + 1 are more than R M_b l_{j_tau} >
+4(r^ + L) l_{j_tau} apart, more than the diameter. For exterior tiles x_tau is outside Omega_0, and
+the same argument excludes the levels >= 2.
+
+**Models** (r1 §4.3, ADVANCE in pi-gate §4.3, with the exterior repair). N_tau := the l^inf box of
+half-width r_N l_{j_tau} about x_tau (inside F_tau). Let i = i_tau be the least level met by N_tau.
+C_tau is the smallest cube aligned with the grid of spacing M_F l_{i+1} that contains the box of
+half-width 4 M_t l_{j_tau} about x_tau; rounding adds at most M_F l_{i+1} <= M_t l_{j_tau}. Put
+K_n := C_tau for n >= i + 1, and for n <= i let K_n be C_tau enlarged on each side by
+sum_{p=n}^{i} rho'_F l_p <= 2 rho'_F l_{j_tau} <= M_t l_{j_tau}. So K_n ⊂ the box of half-width
+6 M_t l_{j_tau}. The model geometry 𝒢_tau is Omega^tau_n := Omega_n ∩ K_n, with Dirichlet conditions
+outside Omega^tau_0. It is admitted: the sets are nested unions of level-n blocks of side M_F l_n,
+and dist((Omega^tau_n)^c, Omega^tau_{n+1}) >= min{dist(Omega_n^c, Omega_{n+1}), dist(K_n^c, K_{n+1})} >=
+min{R M_b, rho'_F} l_n >= rho_F l_n for n <= i, while Omega^tau_n = ∅ for n >= i + 2. For an exterior
+tile the model is bare. M_{r,tau}(U) are the systems of §3.1 on 𝒢_tau, with the literal rows of the
+model. Their **read set** X_tau consists of the bonds read by their coefficients: the field bonds
+of the model, the bonds of the plaquettes through them (within 2 eta of K_0), and the double
+blocks of the model rows (rows of level <= i + 1 touching K_n, so within 2 l_{i+1} <= 2L l_{j_tau}
+of K_n). Hence X_tau ⊂ the box of half-width (6 M_t + 2L + 1) l_{j_tau}, which lies in N_tau since
+M_t >= 4L. For an exterior tile, X_tau ⊂ the box of half-width 6 M_t eta + 2 eta about x_tau,
+which lies in N(z_tau) since 6 M_t + 2 + M_t/2 + 1 <= 7 M_t.
+
+**Agreement.** On C_tau the model level of every site equals its actual level. So every coefficient
+whose stencil or row read set lies in A_tau := the box of half-width 3 M_t l_{j_tau} about x_tau is
+the same function of U in the model and in the actual system: a row's membership depends on the
+levels of its end-points, its value on its double block. The support of h_tau lies in the box of
+half-width M_t l_{j_tau}, and every stencil and row read set meeting it lies in the box of
+half-width (M_t + 2L) l_{j_tau} ⊂ A_tau.
+
+**Diameter.** Any two tops p, p' (of the tower with Omega_0 replaced by T_eta) in F_tau satisfy
+d(p, p') <= D_X = 24 L^2 M_t. Proof: by the two-level property only the layers i, i+1 occur in
+F^+_tau. If p has level i, the level-(i+1) block containing p is a union of level-i blocks disjoint
+from Omega_{i+1}, hence in layer i; go from p to its corner p_1 along the axial contour with bonds
+of T^{(i)}: at most 4(L - 1) bonds, cost at most 4(L - 1). If p has level i + 1, put p_1 = p. Do
+the same for p'. Join p_1 to p'_1 by a coordinate staircase of bonds of T^{(i+1)}. Each such bond
+lies, except for one end-point, in one block of level i + 1, hence in one layer; in layer i + 1 it
+is a bond of that layer's lattice, in layer i it is a union of L bonds of T^{(i)}. So the staircase
+is admissible for (2.46), stays in F^+_tau, and costs at most l_i^{-1} times its length, which is
+at most 4(2 r^ l_{j_tau} + l_{i+1}) <= 4L(2 r^ + 1) l_i. In total d(p,p') <= 8(L - 1) + 4L(2r^ + 1)
+<= 16 L(L + 1) M_t + 12L <= 24 L^2 M_t for L >= 3 and M_t >= 2.
+
+**Overlap.** If N_sigma meets N_tau then |j_sigma - j_tau| <= 1, by the argument above. The centres
+are then within l^inf distance 7 M_t (l_{j_sigma} + l_{j_tau}) of each other. Counting the grid
+points per coordinate gives at most 29 for j_sigma = j_tau, at most 15 + 14/L for j_sigma =
+j_tau + 1, and at most 14 L + 15 for j_sigma = j_tau - 1 (pi-gate §4.3); each is <= 20 L. So at
+most D_* = 3 (20 L)^4 tiles sigma have N_sigma ∩ N_tau ≠ ∅, and each point lies in at most D_* of
+the boxes N_tau. Consecutive footprints of a walk meet in a set that contains a top: their
+centres are within l^inf distance 7 M_t(l_{j_sigma} + l_{j_tau}), so F_sigma ∩ F_tau contains a cube
+of side (2L + 2 - 7) M_t (l_{j_sigma} + l_{j_tau}) >= M_t l_i >= l_{i+1} (L >= 3, M_t >= L). That
+cube contains a point of T^{(i+1)}, which is a top of level i or i + 1.
+
+### 5.3 Local inverses
+
+**Lemma 5.2 (the gauge estimate).** Assume (S1-loc), (S2), (S2+) with L^2 a_0, a_1 <= 1/8. For a
+tile tau let z := x_tau (z := z_tau for an exterior tile) and u the gauge of (S1-loc) on N(z),
+U_r^u = e^{i eta A}. Then U^u = e^{i eta B} on X_tau with B := (i eta)^{-1} log(e^{i eta 𝔞^u} e^{i eta A}),
+𝔞^u(b) := Ad u(b_-) 𝔞(b), and, with the model scale m,
+
+  (5.4)   e(B) <= C_S (L^2 a_0 + a_1),   e(A) <= 2 L^2 a_0.
+
+*Proof.* U^u_b = u(b_-) e^{i eta 𝔞_b} U_{r,b} u(b_+)^{-1} = e^{i eta 𝔞^u_b} U^u_{r,b}. The model scale never
+exceeds the actual (extended) scale: they agree on C_tau, the model level is lower on the collar,
+and both are eta outside Omega_0. So (S1-loc) gives m|A| <= L^2 a_0, m^2|∂A| <= L^2 a_0. (S2), (S2+)
+give m|𝔞^u| < a_1 and m^2 |∇_{e^{i eta A}} 𝔞^u| = m^2 |(∇_{U_r} 𝔞)^u| < a_1, by covariance of the
+covariant difference; and |∂𝔞^u| <= |∇_{e^{i eta A}} 𝔞^u| + C|A||𝔞^u|. Let rho(X,Y) := log(e^X e^Y) - X - Y on
+|X|, |Y| <= 1/8. It is holomorphic, vanishes when X = 0 or Y = 0, so by Lemma 4.1 (iv) applied to
+its partial derivatives |rho(X,Y)| <= C|X||Y| and |rho(X',Y') - rho(X,Y)| <= C(|X' - X||Y'| + |X||Y' - Y|).
+With X = i eta 𝔞^u and Y = i eta A: |B| <= |𝔞^u| + |A| + C eta|𝔞^u||A| and |∂B| <= |∂𝔞^u| + |∂A| +
+C eta(|∂𝔞^u||A| + |𝔞^u||∂A|). Multiply by m and m^2 and use eta <= m. ∎
+
+**Lemma 5.3 (local inverses).** Assume (S1-loc) with a_0 <= a_0^*, and (S2), (S2+) with a_1 <= a_1^*.
+For every tile tau (exterior tiles included) and r in {1,3,4,5}, M_{r,tau}(U) is invertible and
+||M_{r,tau}(U)^{-1}||_{Y_tau -> X_tau} <= 3 B_F. Its entries are holomorphic in 𝔞 and depend only on U
+restricted to X_tau and on 𝒢_tau, hence on the tower inside N_tau.
+
+*Proof.* Take z and u as in Lemma 5.2; for an exterior tile the gauge sits at z_tau, not at the
+exterior centre (pi-gate §4.3). Let 𝒰 act by Ad u on each bond component and field row at its
+initial point and on each site and site row at that site. D_U, D_U^T and Delta(U) are covariant
+by their finite formulas (CMP 99b (3.31)-(3.34)); the rows by Lemma 4.4 (ii). So
+M_{r,tau}(U^u) = 𝒰 M_{r,tau}(U) 𝒰^{-1}, and 𝒰 maps the norm covariant at U_r onto the norm covariant
+at e^{i eta A}. By (5.4) and §3.3 item 7, e(B) <= e_L <= e_C. By [F], ||M_{r,tau}(1)^{-1}|| <= B_F on
+the admitted 𝒢_tau. By Lemma 5.1 (ii), ||M_{r,tau}(e^{i eta B}) - M_{r,tau}(1)|| <= C_C e_L <= 1/(8 B_F),
+and the Neumann series for [I + M(1)^{-1}(M(U) - M(1))]^{-1} M(1)^{-1} gives invertibility with flat
+bound (8/7) B_F. By Lemma 5.1 (iii) with e(A) <= e_L and C_C e_L <= 1/8, the covariant norms are
+within the factor 9/8 of the flat ones, so the bound is at most (9/8)^2 (8/7) B_F < 3 B_F.
+Conjugating back by 𝒰 changes nothing. The entries are holomorphic in 𝔞 by Lemma 5.1 (i), and the
+determinant does not vanish; Cramer's rule gives holomorphic entries of the inverse. ∎

@@ -813,6 +813,5 @@ and the four consumer cancellations. It explicitly retained the common-energy id
 This acceptance is conditional on the inputs in §2.
 
 Codex wrote this outward version against the checked working proof and read the cited source ranges. Claude (Opus 5.5) checked this version line by line against the working proof and the cited account lines; its fixes are applied.
-Claude (Opus 5.5) checked this note line by line against the working proof.
 The recorded checks are model readings, not human review or an audit. They grant no scientific status.
 Every proof step above is a written argument. Source searches and file checks do not discharge any mathematical claim.

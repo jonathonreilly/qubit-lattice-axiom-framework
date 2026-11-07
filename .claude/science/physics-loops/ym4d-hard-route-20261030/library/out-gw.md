@@ -4,7 +4,7 @@ Ethan and Levent,
 
 This note supplies the graph-endpoint estimates stated below for the further operator walks of Tadeusz Balaban, CMP 99b §3, after Theorem 3.9. Your list at [CA-I 166595–166596](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L166595-L166596) records these walks as printed without proof. The result follows our issue #13 on the bare covariance inverse. It supplies the displayed bounds on the PI background class; it does not supply every operator or every domain in that list.
 
-All references to your account and outline use commit `31a47c543775`. CA-I and CA-III denote `theorem_0_complete_account_raw_I.tex` and `theorem_0_complete_account_raw_III.tex`. We use your labels `4.5:lem-free-current-operators`, `4.5:eq-higher-order-functional-a`, and `4.5:prf-chart-walk-localisation`.
+All references to your account and outline use commit `31a47c543775`. The outline means `YM4_sketch_500.tex` at the same commit. CA-I and CA-III denote `theorem_0_complete_account_raw_I.tex` and `theorem_0_complete_account_raw_III.tex`. We use your labels `4.5:lem-free-current-operators`, `4.5:eq-higher-order-functional-a`, and `4.5:prf-chart-walk-localisation`.
 
 ## Scope and inputs
 
@@ -29,9 +29,9 @@ The proof uses the following inputs which your account does not itself prove. Th
 
 1. **Theorem PI.** We use its four mixed inverses, literal row estimates, local coefficient comparison, model geometry, and setting-compatible walk assignment. We also use its bare \(q_0\) estimate and spare exponential factors. The linked note proves these under the hypotheses above. It supplies the input of your `4.5:rem-covariance-inverse-walks`; it does not supply the unrestricted S1–S2 assertion.
 
-2. **Flat estimates.** For each of the four systems \(M_1,M_3,M_4,M_5\), use the flat inverse and local periodic or bare-boundary models. Their energy expansions have the following absolute refinement: the sum of norms of all length-\(n\) words from either endpoint patch is at most \(B_Lq^n\), where \(q<1/2\). Each transition has a fixed layer diameter \(D\). These constants are uniform in mesh, volume, depth and admitted shape. We use physical row and column counts, and the free local Poisson estimate (P7), including its divergence-source and Hölder members. The flat construction precedes the main tile size. The strong inverse (P8) is derived below from these inputs. This is the flat method of Balaban, CMP 95, Proposition 1.1 and (1.89)–(1.90), and CMP 96, (2.95)–(2.141), Propositions 2.5–2.6. The input includes absolute individual-word bounds, not just a bound on the summed remainder.
+2. **Flat estimates.** For each of the four systems \(M_1,M_3,M_4,M_5\), use the flat inverse and local periodic or bare-boundary models. Their energy expansions have the following absolute refinement: the sum of norms of all length-\(n\) words from either endpoint patch is at most \(B_Lq^n\), where \(q<1/2\). Each transition has a fixed layer diameter \(D\). These constants are uniform in mesh, volume, depth and admitted shape. We use physical row and column counts, and the free local Poisson estimate (P7), including its divergence-source and Hölder members. The flat construction precedes the main tile size. The strong inverse (P8) is derived below from these inputs. These estimates are proved in the [working note on the flat propagators](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/@SHA@/.claude/science/physics-loops/ym4d-hard-route-20261030/library/flat-port.md): §4.1 for (P7), §§8 and 9.2 for the inverse, §11 for the absolute word bounds, and §12 for the torus room \(t_FM_F\). Codex (GPT-6) wrote it, and Claude (Opus 5.5) checked it line by line. Appendix A of the PI note prints its energy part. The free Poisson estimate (P7) and the absolute word bounds are not in the PI note. The argument rebuilds the flat method of Balaban, CMP 95, Proposition 1.1 and (1.89)–(1.90), and CMP 96, (2.95)–(2.141), Propositions 2.5–2.6. The input includes absolute individual-word bounds, not just a bound on the summed remainder.
 
-3. **Averaging estimates in a supplied frame.** Use the literal straightened averaging map of Balaban, CMP 98, Proposition 5, (156)–(157), with its analytic derivative estimates. We use the following implication. Let \(c\) be a row of scale \(s_c\), and let \(E_c\) contain all bonds of its double block. If one unitary gauge gives
+3. **Averaging estimates in a supplied frame.** Use the literal straightened averaging map of Balaban, CMP 98, pp. 23–24, (42)–(43), as in PI. His Proposition 5, (156)–(157), bounds its first derivatives at real backgrounds. We need the analytic form at complex backgrounds, with second and third derivatives and transposes. Balaban states that extension without proof (CMP 98 §E, p. 43). Your Remark `4.5:rem-averaging-analyticity`, CA-I 13175–13196, cites it as printed. We use a written proof of it as an implication from a frame bound: the [working note on the averaging derivatives](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/@SHA@/.claude/science/physics-loops/ym4d-hard-route-20261030/library/b98p5.md), §§2.1–2.5. Codex (gpt-6-astra) wrote it. Claude (Opus 5.5) checked it line by line, and its two repairs are applied. It rebuilds Balaban's map and his real-background method, and moves the reference without a factor that grows with depth. Its constants depend only on N and L. Its first-derivative constant is larger than the leading coefficient \(1+2C'_1\alpha_0\) of (156); no step here needs a coefficient near one. Its §3, on the frame bound for your full class, is not used. It proves the following implication. Let \(c\) be a row of scale \(s_c\), and let \(E_c\) contain all bonds of its double block. If one unitary gauge gives
 \[
  W^u=e^{i\eta B}\quad\hbox{on }E_c,\qquad
  s_c\|B\|_{\infty,E_c}<\rho,
@@ -55,15 +55,19 @@ A counting-coordinate derivative is \(\eta^4\) times this density. The same colo
 \[
  s_c\|B\|_{\infty,E_c}\le C_{N,L}(a_0+a_1).
 \]
-Choose \(a_0,a_1\le a_*\le\rho/(16C_{N,L})\), including norm conversions, and put the increment ball within the same margin. Thus the frame bound is not an additional hypothesis on this class. The averaging estimates themselves remain the stated input implication. No assertion about carriers on the full account class is used.
+Choose \(a_0,a_1\le a_*\le\rho/(16C_{N,L})\), including norm conversions, and put the increment ball within the same margin. Thus the frame bound is not an additional hypothesis on this class. The averaging estimates themselves remain the input implication of item 3, proved in the linked working note. No assertion about carriers on the full account class is used.
 
 The local Wilson estimates are proved in §7 below, including the step from real to complex backgrounds. They use Balaban's plaquette expansion, CMP 102b, (39) and (94)–(98). The kernel and current identities already proved in your account are used as such. In particular, we use your decomposition at CA-I 13811–13846, not the printed Hölder bounds cited there as a substitute for word estimates.
 
 Your bibliography at CA-III 111519–111544 gives the following paper names. The abbreviations refer to Balaban's *Propagators and renormalization transformations for lattice gauge theories. I* (CMP **95**, 17–40), part II (CMP **96**, 223–250), *Averaging operations for lattice gauge theories* (CMP **98**, 17–51), *Propagators for lattice gauge theories in a background field* (CMP **99**, 389–434; CMP 99b), *The variational problem and background fields in renormalization group method for lattice gauge theories* (CMP **102**, 277–309; CMP 102b), and *Renormalization group approach to lattice gauge field theories. II. Cluster expansions* (CMP **116**, 1–22). The citations here use the quotations and formulas in your account and the working proofs. Balaban's original pages were not checked for this note.
 
-**Limits.** The U01–U34 uses in the working note were not checked use by use. Admission of your account's localized and completion domains is not certified. The result does not identify a general-field response with your completion maps. It does not prove termwise lattice covariance, a boundary gauge-gluing theorem, or a graph bound for \(G_\pi^J\) or \(G_1^J\). It does not cover an older unspecified word assignment merely because its sum at one agrees. The stronger endpoint estimates below are not a claim that your whole walk proposition or account is complete.
+**Limits.** The individual uses of these bounds in your account were not checked one by one. Admission of your account's localized and completion domains is not certified. The result does not identify a general-field response with your completion maps. It does not prove termwise lattice covariance, a boundary gauge-gluing theorem, or a graph bound for \(G_\pi^J\) or \(G_1^J\). It does not cover an older unspecified word assignment merely because its sum at one agrees. The stronger endpoint estimates below are not a claim that your whole walk proposition or account is complete.
 
-Codex (gpt-6-astra) wrote the proof. Claude (Opus 5.5) checked it line by line; its repairs are applied. Codex prepared this outward note from that text. This is model-checked research text, not an audit, and grants no status. No computer-assisted step discharges an assertion. The [full working note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/ba4304ff6/.claude/science/physics-loops/ym4d-hard-route-20261030/library/walks-gw.md) records the proof and its source references.
+Codex (gpt-6-astra) wrote the proof. Claude (Opus 5.5) checked it line by line; its repairs are applied. The flat input was written by Codex (GPT-6) and the averaging input by Codex (gpt-6-astra); Claude checked each line by line. Codex prepared this outward note from the proof.
+
+Claude (Opus 5.5) checked this note line by line against the working proof.
+
+This is model-checked research text, not an audit, and grants no status. No computer-assisted step discharges an assertion. The [full working note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/ba4304ff6/.claude/science/physics-loops/ym4d-hard-route-20261030/library/walks-gw.md) records the proof and its source references.
 
 ## Objects and norms
 
@@ -297,10 +301,7 @@ This argument applies to every component of the mixed inverse.
 It does not use positivity of a mixed matrix.
 
 Here is the summation needed to apply (P3) to many source cells.
-We give the required shell count in PI's lattice-contour metric. It implements the scale summation of Balaban, CMP 96, (2.59)–(2.61). With gap \(\rho\) in local units, a path of cost \(t\) crosses
-at most \(1+t/\rho\) complete levels above or below its initial level.
-Its largest scale is at most \(L^{1+t/\rho}\) times the initial scale.
-Counting endpoints separately on each permitted grid gives
+Here is the shell count in PI's lattice-contour metric. It does the work of Balaban's scale summation, CMP 96, (2.59)–(2.61), which your account uses at CA-I 13420–13427. Let the gap be \(\rho\ge1\) in local units, and fix \(y\) of level \(i\). A path of cost at most \(t\) from \(y\) that reaches level \(h>i\) crosses every complete collar of levels \(i+1,\ldots,h-1\). Each crossing has Euclidean length at least \(\rho\ell_q\) at scale at most \(\ell_q\), so it costs at least \(\rho\). The crossings are disjoint. Hence every endpoint \(z\) has \(|j_z-i|\le1+t/\rho\), and the largest scale on the path is at most \(L^{1+t/\rho}m_y\). The lifted displacement is at most \(tL^{1+t/\rho}m_y\). At a fixed endpoint level, a cube of this radius holds at most \((3+2tL^{2+2t/\rho})^4\le(3+2t)^4L^{8+8t/\rho}\) grid points. There are at most \(3+2t/\rho\le5(1+t)\) levels, and \((m_z/m_y)^b\le L^{|b|(1+t/\rho)}\). Together these give
 \[
  \sum_{d(y,z)\le t}(m_z/m_y)^b
  \le 5L^{8+|b|}(1+t)(3+2t)^4
@@ -558,8 +559,7 @@ They obey
 \]
 Choose \(M_t\), a permitted power of \(L\), so that
 \(\theta_Z\le(4D_*)^{-4}\), where \(D_*=3(20L)^4\).
-Enlarge PI's \(B_F,c_h,C_K,C_C\) to cover these constants
-before applying its eight choices. This gives the stated common
+Enlarge PI's \(B_F,c_h,C_C\) and PI's flat commutator constant (also written \(C_{\rm com}\) in PI) to cover \(B_Z,c_Z,C_Z\) and the constant \(C_{\rm com}\) of (P11), before applying PI's eight choices. PI's \(C_K=3C_{\rm com}\) then covers it as well. This gives the stated common
 choice without changing a coefficient or an algebraic identity.
 Choose all radii afterwards. Include the flat torus room \(t_FM_F\)
 in (T1); it is not inferred from the other torus floor.
@@ -892,7 +892,7 @@ room for both blocks. PI's gauge estimate therefore gives
 Require \(a_*\le\rho/(16C_{N,L})\), in addition to the preceding
 comparison ceilings, where \(\rho\) is the radius
 in the supplied-frame averaging input. Choose the increment ball with the same margin.
-That input, from Balaban, CMP 98, Proposition 5, (156)–(157), gives the literal averaging
+That input (item 3: the written proof of the analytic form of Balaban's CMP 98 Proposition 5) gives the literal averaging
 remainder, its fine derivative density, its second and third
 directional derivatives, and their bilinear transposes on a
 common larger ball. At height zero the map is linear and its
@@ -1150,7 +1150,7 @@ so their definition precedes the final choice of \(\delta_*\).
 | 2 | flat gap \(\rho_F\ge\max\{\)flat-model floors, \(2(8+b_0)\log L/a'\}\); flat torus room \(t_FM_F\) | 1 | flat input; (P5), (T1) |
 | 3 | \(B_Z\) (all finite source/output pairs of §§2, 6) | 1, 2 | (P8), §6 |
 | 4 | \(C_Z\) (P9), norm-comparison constants, \(c_Z\), \(C_{\rm com}\) (P11); PI's \(r_1,e_R,C_R,e_C,C_C,C_S\) | 0 | PI §3.3 item 2; §§3–4 |
-| 5 | enlarge \(B_F\ge B_Z\), \(c_h\ge c_Z\), \(C_K\ge C_{\rm com}\), \(C_C\ge C_Z\) | 3, 4 | §4 |
+| 5 | enlarge \(B_F\ge B_Z\), \(c_h\ge c_Z\), PI's flat \(C_{\rm com}\ge\) the \(C_{\rm com}\) of (P11) (so \(C_K\ge C_{\rm com}\)), \(C_C\ge C_Z\) | 3, 4 | §4 |
 | 6 | \(M_t\): power of \(L\), multiple of \(LM_F\), \(\ge\max\{2\rho'_F,4L\}\), PI \(\theta\le(4D_*)^{-4}\) (so \(\theta_Z\le(4D_*)^{-4}\)) | 2, 5 | PI item 3; (P12) |
 | 7 | \(r_N,\widehat r,D_X\); \(\delta_q\); \(\mu=\log(1/\theta_Z)/(140D_X)\); \(N_t\) | 6 | PI items 4–5; (P14) |
 | 8 | insertion range \(c_\iota\) and costs \(e^{17\mu c_\iota}\); weighted majorants \(b^*,b^*_\Delta,g^*,h^*\) | 6, 7 | §5 |
@@ -1174,13 +1174,13 @@ For this test define, at fixed base and switches,
  A'=z+H_0b,\qquad X=C_\sigma(SA'-SHX),
  \quad T=I+\Gamma,\quad\Gamma=G\Theta_J.
 \]
-At \(j=0\), the first equation is your block-chart equation `4.5:eq-chart-walk-localisation-3`, CA-I 15311–15314. Its form at one is also given at CA-I 14377–14425. Here \(j\in E_p^\Delta\) is an independent source for a necessary linearization test. The displayed general-source equation is not asserted to identify your completion maps. Since \(V'_\sigma\) starts at degree two, its local small solution exists by the derivative bound (T2), after reducing the datum ball.
+At \(j=0\), the first equation is your block-chart equation `4.5:eq-chart-walk-localisation-3`, CA-I 15311–15314. Its form at one is also given at CA-I 14377–14425. Here \(j\in E_p^\Delta\) is an independent source for a necessary linearization test. The displayed general-source equation is not asserted to identify your completion maps. At weight one the local small solution exists. Fix \(r\le r_{\kappa_1}\) with \(C_{\kappa_1}r\le1/4\), and let \(\|j\|^\Delta_1+|b|_1\le c\,r\) with \(c\) small. Then \(N(H_0b)\le r/2\) by (T2). On the ball \(\|z\|^\Delta_1\le r/2\), every argument has \(N\le r\). Since \(GV'_\sigma(0)=0\), the third line of (T2) makes \(z\mapsto GV'_\sigma(z+H_0b)\) Lipschitz with constant \(C_{\kappa_1}r\le1/4\) on that ball, and of size at most \(r/4\). With \(\|Tj\|^\Delta_1+\|\Gamma H_0b\|^\Delta_1\le r/4\) from (T2), the right side maps the ball into itself and is a contraction. The inner equation for \(X\) is the small branch of §7.
 
 The linearization is at the zero datum with the base and switches fixed.
 Because \(V'(0)=DV'(0)=0\) and \(C(0)=DC(0)=0\), the defining equations give
 \[
  D_jA'(0)=-T,\qquad D_bA'(0)=TH_0,\qquad DX(0)=0.
- \tag{4.11}
+ \tag{L}
 \]
 Write \(h_0,h_\Delta,\gamma_\Delta\) for the actual bounds furnished
 above: \(h_0,h_\Delta\le C_{\kappa_1}\), and \(\gamma_\Delta\le C_{\kappa_1}|J|_{-3}\). Since \(\|u\|_p\le\|u\|^\Delta_p\),
@@ -1189,7 +1189,7 @@ above: \(h_0,h_\Delta\le C_{\kappa_1}\), and \(\gamma_\Delta\le C_{\kappa_1}|J|_
  \|TH_0b\|^\Delta_p
        \le(h_\Delta+\gamma_\Delta h_0)|b|_p.              \tag{P19}
 \]
-This proves the necessary bounds in (4.11) with the prescribed composite convention. No inverse identity for a switched sum enters.
+This proves the necessary bounds in (L) with the prescribed composite convention. No inverse identity for a switched sum enters.
 
 The theorem gives the three endpoint bounds (T2) and their absolute expansions on the PI class with the specified constants. A larger preassigned radius or a different word assignment requires its own proof.
 

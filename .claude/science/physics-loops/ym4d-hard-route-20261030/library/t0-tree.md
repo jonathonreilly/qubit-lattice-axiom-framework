@@ -539,3 +539,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: process catch-up (owner): layer-part-ref (row 452), out-lrb-check (439), out-lsc-check (442) moved from Mini worker 1 to laptop Claude subagents; out-pda-check (436, errata class) stays on the Mini; research/ym4d snapshot PR #10141 opened off main (16 frozen parts, posted notes #10-#14); standings unchanged.
 - 2026-11-07, rule 0f, lead: LSC outward note checked (row 442: FIX, no false step, defect real as stated); fixes row 458; standing unchanged.
 - 2026-11-07, rule 0f, lead: LRB outward note checked (row 439: FIX, no false step, gap as stated, issue text to narrow); fixes row 459; standing unchanged.
+- 2026-11-07, rule 0f, lead: LAYER-THM refereed (row 452): FREEZE WITH REPAIRS R1-R11, no BLOCK; (M3) holds as a gap in the account's assumed package; S1' and relaxed-K109 readings hold; repairs and freeze by row 460.

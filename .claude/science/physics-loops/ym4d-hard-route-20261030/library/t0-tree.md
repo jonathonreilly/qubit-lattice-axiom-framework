@@ -522,3 +522,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: BC1 / B98-P5 after b98p5-r2-gate (row 431): carrier bridge proved on S^pl and (TH); (D) false for the fixed-side-12 cube-only class; census incomplete (CA-II uses, minimiser tube, lowest levels); round 3 queued (row 433); standing OPEN.
 - 2026-11-07, rule 0f, lead: LAYER-THM chosen as our own end-to-end piece (owner: 'Both, layer first'); CA-LAYER/(N1) owner moved from `stage-claude` to `layer-thm`; package round queued (row 441); standing OPEN.
 - 2026-11-07, rule 0f, lead: BP07 / PRINT-INVERSE contribution posted as their issue #13 (out-pi.md at 94df5579a); standing OPEN (local scope only; G_1, G_0 pointwise bounds and C1 remain).
+- 2026-11-07, rule 0f, lead: LAYER-THM records layer-pkg (row 441, unchecked): conditional theorem proved; open GW (= PRINT-WALKS at graph level, owner moved to `layer-thm`, row 444), admission certificates, FM/FD, clause (e), RC; standing OPEN.

@@ -81,7 +81,9 @@ The first datum $j$ is a field. The base current $J$ is an independent
 complex source with only its weight-$-3$ ceiling; no derivative or
 own-current condition is imposed. Block weights use the consumer's actual
 block-to-cell convention. In particular $p=1$ is admitted and
-$p(z)\le e^{\delta d^\wedge(y,z)}p(y)$. Any further conditions defining
+$p(z)\le e^{\delta d^\wedge(y,z)}p(y)$. Here $\delta\le\delta_*$,
+where $\delta_*\le\mu$ is GW's common final rate (walks-gw constant
+step 11), below every composite rate used. Any further conditions defining
 $\mathfrak M_\delta$ must also be met. Transposes use the physical
 bilinear trace pairings, with fine measure $\eta^4$ and row measure
 $\ell_j^4$, not Hermitian adjoints.
@@ -104,8 +106,13 @@ projection, and $\Theta'_J\ne\Theta_J$. At switches these symbols mean
 the assigned words and composites, not inverses of switched operators.
 Each primitive concatenation, including its side branches, receives one
 factor per distinct visited decoupling cube. A composite retains the
-**product of its primitive tags**. Identity pieces are expanded as
-$I=\sum_\tau h_\tau^2I$, with the PI cutoffs and full footprints.
+**product of its primitive tags**. Inside the walk expansions of $R$ and
+of the PI parametrix, the identity is expanded as $I=\sum_\tau h_\tau^2I$
+with the PI cutoffs and full footprints, and each such piece is a walk
+term with its tag. All other factors that are not listed primitives
+($Q$, $Q'$, $a$, $\ell$, the identity in $T_\sigma=I+\Gamma$, in
+$P_0=I-G_0Q^Tq_0Q$ and in $(I-\cdot)^{-1}$ expansions) carry no tag,
+as in I 15306–15316.
 Retagging a composite by its union defines a different function.
 
 Set $H=H^J(\sigma)$, $G=\widetilde G^J(\sigma)$, $SA=\ell A$,
@@ -572,10 +579,13 @@ the constants of `adm-pl` (7):
  B_*=2^{24}n_*^2L^dr_0^{-2},\quad
  \rho=r_0/(2^{20}B_*),\quad K_*=128d^2L^2,
  \quad a_B=\rho/(16\sqrt NK_*),\\
- a=\tfrac12\min\{a_B,a_0^{PI},a_1^{PI},(16\sqrt N)^{-1}\}.
+ a=\tfrac12\min\{a_B,a_0^*,a_1^*,(16\sqrt N)^{-1}\}.
  \tag{26}
 \end{gathered}
 \]
+Here $a_0^*,a_1^*$ are the radii of walks-gw constant step 9
+(PI item 7 with enlarged constants, and $B_ZC_Ze\le1/8$); they are
+at most PI's radii.
 If $\ell_j\|v\|_F<\rho/16$, set
 $B_v=(i\eta)^{-1}\log(e^{i\eta v}e^{i\eta B})$. With
 $h_*=\eta/\ell_j\le1$, the exponential series gives
@@ -665,7 +675,8 @@ In particular
 \begin{gathered}
  r_N=7M_t,\quad\widehat r=(2L+2)M_t,\quad D_X=24L^2M_t,\\
  2r_NL+1\le11M_b,\quad R_1\ge24,\quad
- R_1M_b\ge\max\{\rho'_F,4L(\widehat r+L)+1,3\log L/\delta_q\}.
+ R_1M_b\ge\max\{\rho'_F,4L(\widehat r+L)+1,3\log L/\delta_q,\ 2(8+b_0)\log L/\delta'
+ \ (\text{every rate }\delta'\text{ used, }b_0=8)\}.
  \tag{31}
 \end{gathered}
 \]
@@ -673,9 +684,11 @@ The sizes are the prescribed powers/multiples of (L).
 Fix $\kappa_1$ and compatible switch geometry, with
 \[
  T_{\rm side}\ge\max\{2\widehat r+2,t_FM_F\}\ell_k,
- \qquad M_{\rm dec}\ge\max\{4\widehat r+8L,64\kappa_1/\mu\}.
+ \qquad M_{\rm dec}\ge\max\{4\widehat r+8L,\ c_\iota,\ 64\kappa_1/\mu\}.
  \tag{32}
 \]
+Here $c_\iota=c_\iota(N,L)$ is the layer diameter of a local insertion's
+complete carrier.
 Choose the real, twist and independent-current ceilings and datum
 radii afterwards, before the final running-coupling ceiling. GW's
 primitive current ceiling can precede $\kappa_1$; the optional
@@ -805,10 +818,20 @@ A tree of layer length $t$ has axial length at most $\ell_kt$.
 Double its edges and subdivide into arcs of length at most
 $M_{\rm dec}\ell_k/2$. Each arc meets at most sixteen cubes.
 Consequently at most $16+64t/M_{\rm dec}$ cubes are met, including
-the complete-footprint representatives. Thus (32) gives, for a
+the complete-footprint representatives. For a primitive concatenation,
+join each insertion point to the adjacent anchors and to one
+representative of every cube met by its complete carrier (the double
+blocks of its averaging rows, its plaquette reads, the reads of
+$\mathfrak j_J,\mathfrak k_J$ and its endpoint stencils). This adds at most
+$17c_\iota$ per insertion, so
+$t_\varpi\le\sum_i t_{\omega_i}+17c_\iota n_\iota$, and needs
+$M_{\rm dec}\ge c_\iota$. Each insertion is weighted by
+$e^{17\mu c_\iota}$ in $\theta^*,C_1,C_2,C_3$. Thus (32) gives, for a
 primitive concatenation and its local insertions,
 \[
- |\sigma_\omega|\le e^{16\kappa_1}e^{\mu t_\omega}.
+ |\sigma_\varpi|\le e^{16\kappa_1}e^{\mu t_\varpi}
+ \le e^{16\kappa_1}\prod_{\omega\subset\varpi}e^{\mu t_\omega}
+                         e^{17\mu c_\iota n_\iota}.
  \tag{37}
 \]
 The insertion length costs are charged before the current ceiling.
@@ -1139,8 +1162,8 @@ of $h=A'-HX$, without an inverse identity, gives only
                       -\Delta'A'-m_cX+F(W,h).
  \tag{M2}
 \]
-If $L_\sigma=\Delta_W+K_W-P_1(\sigma)$, its difference from
-the rider is exactly
+If $L_\sigma=\Delta_W+K_W-P_1(\sigma)$ and $m_H=m_c$, its difference
+from the rider is exactly
 \[
  \mathcal D_\sigma=P_0^T\Xi+Q^T(q_0-a)\ell^{-1}b
                               -(\Delta'+L_\sigma)A'.
@@ -1327,6 +1350,9 @@ completion domain. These are needed for the A′ graph member of N1,
 U07 and FD. PI's energy theorem alone supplies none of those additional
 pointwise/Hölder endpoint assertions. No estimate here is uniform in an
 arbitrarily changed tile size or at an older preassigned analytic radius.
+Include the insertion-carrier tree and the floors $M_{\rm dec}\ge c_\iota$,
+$R_1M_b\ge2(8+b_0)\log L/\delta'$ and $\delta\le\delta_*\le\mu$ of
+walks-gw constant steps 11–13.
 
 **Outstanding — AV.** The local analytic B98-P5 port, including its
 fine derivative densities, Hessian contractions, physical transposes and
@@ -1339,7 +1365,10 @@ majorants in §3.2. A value bound on the average cannot replace it.
 **Outstanding — R.** Identify the real reference and its full S1–S3
 and complete-read plaquette witnesses at each entry, including raw and
 exterior strata. The class named at I 10178 is not identified with a full
-CMP 109 or CMP 102 class by its wording. R is needed for (PL), then the
+CMP 109 or CMP 102 class by its wording. The account uses 'regularity
+class' for CMP 99b (3.35)–(3.38) at I 25219, 25290 and for $U^{\Sigma^1}$
+from I 30188; neither is attached to I 10178, and only $U^{\Sigma^1}$
+prints (1.11). R is needed for (PL), then the
 carrier/frame deduction at U01–U13, U16–U17, U22/U24/U26/U31 and any
 other newly entered domain. Clause (12) replaces only R's plaquette
 part when actually imposed on that same reference and read family; it
@@ -1366,8 +1395,12 @@ as inherited calls elsewhere. Interior thickness invokes Proposition
 
 **Outstanding — S.** Stage clauses Q5/Q8 must cover all complete reads
 with their grade conversions, including the continuation beyond $Y^+$.
-I 110268–110317 defines relaxed $K_{109}$ and $K_P$; it does not
-include full CMP 109 (i)–(iii). I 119615–119650 requires a global pair
+I 110268–110317 defines relaxed $K_{109}$ and $K_P$; it uses only
+CMP 99b (3.35), (3.37) and a current ceiling; it does not include
+CMP 109 (1.11)–(1.16), in particular the all-plaquette clause (1.11).
+I 116570 nevertheless names $\mathfrak K_P$ the space of CMP 109;
+whether that printed space contains (1.11) is not checked here
+(CMP 109 is not in the paper set). I 119615–119650 requires a global pair
 with direct bounds on $Y^+$, whose unlocalized continuation reads beyond
 it. These missing ambient reads affect U19–U30 and U34. If cube heredity
 is used, its exceptional case $C=2,j+1=k,m=k_0+1,N_0\ge2$,
@@ -1409,11 +1442,20 @@ current-word assignment, its diagonal localization, the P1/mH bounds
 (7), and equality with the current of each link. The candidate (M1) has
 a bound but leaves defect (M3). On a flat admitted torus, $J=0$, with
 all switches zero in a nonempty full family, all primitive sums vanish;
+here $\mathsf K=\emptyset$ (site (T), I 72704), and, as in I 15266–15339,
+$Q$, $a$ and the identities in $P_0=I-G_0Q^Tq_0Q$ and
+$\mathsf k=(q_J-a)\ell^{-1}$ are untagged composite factors;
 at $j=0$, (S5) gives $A'=X=h=0$. Yet the formula (M2) gives
 $J_{\rm def}=-Q^Ta\ell^{-1}b$, while the rider gives zero. Choose
 a nonzero averaging row and sufficiently small (b) so the former is
 nonzero. Also (M1) gives $m_c=-Q^Ta\ell^{-1}\ne0$, whereas
 I 72720–72728 requires a zero kernel for the empty retained region.
+The account's own switched current at I 15306–15313 is (M2). Its proved
+bounds at $s$ read only the definitional term list (I 14759–14765), so no
+proved account step uses the representation identity at $s\ne1$;
+I 15450–15451 leaves that identity unrestricted, which is too wide.
+The defect is the absence of a definition of $P_1(\sigma),m_H(\sigma)$
+at $\sigma\ne1$ in the assumed package.
 These are the source's symbolic tests of the two proposed extensions,
 not a refutation of the unnamed layer theorem. M is needed by the last
 two N1 entries and every actual rider use; the untagged candidate cannot
@@ -1606,3 +1648,4 @@ To keep the dependencies readable, use:
 | U33 — II 52390–52518 | General rippled parents, two cutoffs and full interpolation domains. | **Covered conditionally:** D on both sides, **P2**, and **RC** with all native hypotheses of (52)–(54), the actual slot/response identification or residual (56) control, and any required linear complex-ancestor/switched extension. The account already supplies the real-reference conditional profile theorem; N1 alone does not give this row. |
 | U34 — III 49210–49288, 49454–49502 | Relaxed earlier-frame class, direct clauses on $Y^+$, cutoff current and interface stencils. | **Covered conditionally:** D, **S**, ambient/new-entry **R** or its imposed (12) plaquette replacement, LC and FM/FD for source-bearing origins, at every earlier frame and full boundary read. The literal printed relaxed class does not establish these premises; its invocation of the response theorem at the stencil cannot prove its own admission. |
 
+**Status: frozen**, as a conditional theorem: the layer theorem as an implication from its named imports and premises. Outstanding, all named: PI, GW, AV, R, A0, L0, S, T, P2, ID/EQ/PH/LC, M (M3), RJ, FD, FM, E(e), RC. Refereed by Claude (Opus 5.5), gates/layer-part-ref.md; repairs R1-R11 applied.

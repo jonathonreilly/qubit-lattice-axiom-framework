@@ -1,0 +1,29 @@
+C1 constants
+  ok   cover count 6(100x+1)^2 <= 2^16 x^2, x>=100
+  ok   ball volume 36 pi < 2^7
+  ok   2^23 M^2 delta < 2^-17 given delta=2^-40(1+M)^-2
+  ok   cot(d/2) <= 2/d, d=1e-3
+  ok   ||DS|| <= 8/d^2, d=1
+  ok   ||D pi|| <= 1+sqrt(4) over rho>=1/2 gives 6
+  ok   (1+sqrt d) <= 3, d=3
+  ok   exp(4a)-1-4a <= 16 a^2, a=1/32
+  ok   (11): 96+432+8064 coefficients sum
+  ok   selected-cell count 24*4=96, volume 96*16=1536
+  ok   K0 <= t n^2 <= 4K0 at t=1
+  ok   K0 <= t n^2 <= 4K0 at t=0.5
+  ok   K0 <= t n^2 <= 4K0 at t=0.001
+  ok   K0 <= t n^2 <= 4K0 at t=1e-09
+  log2 E(0)=373, log2 K_3=4101, log2 C_*=41379, log2 C_a=41374
+C2 geometry
+  faces half-integer: True; brick sites [2,25] and [26,49]; bond (25, 26) in brick 0: False, in brick 1: False
+C3 Lemmas G,E,C on a 3-cell
+  n=  8 K=  1.883 G=   5.266 delta=1.559 drift=3.6e-16 exact=2.9e-16 max theta n^2=   27.717 ratio/boundary=  14.72 bound=5.72e+05 ok
+  n= 12 K=  1.946 G=   6.257 delta=1.559 drift=2.4e-16 exact=2.9e-16 max theta n^2=   33.486 ratio/boundary=  17.21 bound=7.76e+05 ok
+  n= 16 K=  1.969 G=   6.685 delta=1.559 drift=2.1e-16 exact=3.1e-16 max theta n^2=   39.151 ratio/boundary=  19.89 bound=8.74e+05 ok
+  n= 24 K=  1.986 G=   7.122 delta=1.559 drift=2.3e-16 exact=3.2e-16 max theta n^2=   46.360 ratio/boundary=  23.35 bound=9.8e+05 ok
+C4 Lemma H
+C1 PASS
+C2 PASS
+C3 PASS
+C4 PASS
+max RSS 0.067 GB

@@ -1,0 +1,24 @@
+blas threads 1 1
+TAIL range D = 4, |xi_c| = 1.567e+00
+  distance   0  max |d xi_c / d u_j| = 2.438e-01
+  distance   4  max |d xi_c / d u_j| = 1.763e-03
+  distance   8  max |d xi_c / d u_j| = 1.082e-05
+  distance  12  max |d xi_c / d u_j| = 4.682e-08
+  distance  21  max |d xi_c / d u_j| = 5.797e-13
+  distance  32  max |d xi_c / d u_j| = 3.415e-19
+  distance  40  max |d xi_c / d u_j| = 1.122e-23
+  worst beyond 5 D: 5.797e-13  FAIL-TAIL-LOCAL
+CENTRE alpha 1e-03 q    1.0  |Im s| / (alpha q) = 0.0632  ||Delta|| = 1.521e-03
+CENTRE alpha 1e-03 q   10.0  |Im s| / (alpha q) = 0.0632  ||Delta|| = 1.521e-03
+CENTRE alpha 1e-03 q  100.0  |Im s| / (alpha q) = 0.0632  ||Delta|| = 1.521e-03
+CENTRE alpha 1e-02 q    1.0  |Im s| / (alpha q) = 0.0632  ||Delta|| = 1.525e-03
+CENTRE alpha 1e-02 q   10.0  |Im s| / (alpha q) = 0.0632  ||Delta|| = 1.525e-03
+CENTRE alpha 1e-02 q  100.0  |Im s| / (alpha q) = 0.0632  ||Delta|| = 1.525e-03
+  FAIL-CENTRE-SMALL
+CONTOUR y 0.0  |I| = 0.997956  modulus bound 1.000e+00  shifted 0.998006
+CONTOUR y 1.0  |I| = 0.990036  modulus bound 1.649e+00  shifted 0.990054
+CONTOUR y 2.0  |I| = 0.986100  modulus bound 7.389e+00  shifted 0.986101
+CONTOUR y 3.0  |I| = 0.986100  modulus bound 9.002e+01  shifted 0.986101
+CONTOUR y 4.0  |I| = 0.990036  modulus bound 2.981e+03  shifted 0.990054
+  PASS-CONTOUR
+wrote /Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_ic/toy_tail_centre_results.json rss 293683200

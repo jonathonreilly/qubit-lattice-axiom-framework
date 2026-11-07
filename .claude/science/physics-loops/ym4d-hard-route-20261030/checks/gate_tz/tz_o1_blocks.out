@@ -1,0 +1,13 @@
+d 3 L 3 n 3 bonds 2187 E0 3.99138 residual 4.0e-09 |Yb| 117 |Yh| 54
+   block    rho 0.67199  s 0.7475
+   block-Q  rho 0.00000  s 0.0000
+   hull     rho 0.17482  s 0.1919
+d 3 L 5 n 3 bonds 10125 E0 2.78984 residual 2.8e-09 |Yb| 625 |Yh| 54
+   block    rho 0.54194  s 0.5892
+   block-Q  rho 0.00000  s 0.0000
+   hull     rho 0.01290  s 0.0224
+d 3 L 7 n 3 bonds 27783 E0 2.08843 residual 2.1e-09 |Yb| 1813 |Yh| 54
+   block    rho 0.47849  s 0.5135
+   block-Q  rho 0.00000  s 0.0000
+   hull     rho 0.00235  s 0.0056
+RSS guard stopped 4 3 3

@@ -1,0 +1,47 @@
+N1 N=12 max_boundary_link=8.88e-16 max_plaq=0.04363 T=0.05 sum_angles/2pi=1.000000 -> PASS
+N3 L=5 W=40 t=18 R=18 tip=20: chain_crosses_annulus_1=False (reach 19); smallest_inner_radius_of_a_closed_level1_layer=0; level0_room_in_annulus_0=35 (needs 18); family_exists=True -> FAIL
+N4 L  T^2  hops_available(<=L/2)  hops_needed=3 log L/(c c0 T^2)  ratio  m0/x_l
+      17 1.20e-05      8.5 3.453e+08 4.063e+07 2.339e-08
+     101 9.61e-09     50.5 4.302e+11 8.519e+09 6.846e-11
+    1001 9.96e-13    500.5 4.151e+15 8.294e+12 4.698e-14
+N2 L=3 Nc=5 band=6 links=450 free=285 mixed_rows=35 frozen_only_rows=15 constraint_residual=7.6e-16
+  side=left columns_from_band=0 C=1.2753 at plaquette (14, 2)
+  side=left columns_from_band=1 C=0.7502 at plaquette (13, 2)
+  side=left columns_from_band=2 C=0.2517 at plaquette (12, 2)
+  side=left columns_from_band=3 C=0.3401 at plaquette (11, 2)
+  side=left columns_from_band=4 C=0.1901 at plaquette (10, 2)
+  side=left columns_from_band=5 C=0.1901 at plaquette (9, 2)
+  side=left columns_from_band=6 C=0.3401 at plaquette (8, 2)
+  side=right columns_from_band=0 C=1.2753 at plaquette (5, 2)
+  side=right columns_from_band=1 C=0.7502 at plaquette (6, 2)
+  side=right columns_from_band=2 C=0.2517 at plaquette (7, 2)
+  side=right columns_from_band=3 C=0.3401 at plaquette (8, 2)
+  side=right columns_from_band=4 C=0.1901 at plaquette (9, 2)
+  side=right columns_from_band=5 C=0.1901 at plaquette (10, 2)
+  side=right columns_from_band=6 C=0.3401 at plaquette (11, 2)
+N2 L=3 C_bd=1.2753 -> above 1; below 2
+N2 L=5 Nc=4 band=10 links=800 free=420 mixed_rows=20 frozen_only_rows=12 constraint_residual=7.8e-16
+  side=left columns_from_band=0 C=1.8582 at plaquette (19, 4)
+  side=left columns_from_band=1 C=1.3698 at plaquette (18, 4)
+  side=left columns_from_band=2 C=0.9875 at plaquette (17, 4)
+  side=left columns_from_band=3 C=0.6583 at plaquette (16, 4)
+  side=left columns_from_band=4 C=0.3424 at plaquette (15, 4)
+  side=left columns_from_band=5 C=0.7592 at plaquette (14, 4)
+  side=left columns_from_band=6 C=0.3424 at plaquette (13, 4)
+  side=left columns_from_band=7 C=0.6583 at plaquette (12, 4)
+  side=left columns_from_band=8 C=0.9875 at plaquette (11, 4)
+  side=left columns_from_band=9 C=1.3698 at plaquette (10, 4)
+  side=left columns_from_band=10 C=1.8582 at plaquette (9, 4)
+  side=right columns_from_band=0 C=1.8582 at plaquette (9, 4)
+  side=right columns_from_band=1 C=1.3698 at plaquette (10, 4)
+  side=right columns_from_band=2 C=0.9875 at plaquette (11, 4)
+  side=right columns_from_band=3 C=0.6583 at plaquette (12, 4)
+  side=right columns_from_band=4 C=0.3424 at plaquette (13, 4)
+  side=right columns_from_band=5 C=0.7592 at plaquette (14, 4)
+  side=right columns_from_band=6 C=0.3424 at plaquette (15, 4)
+  side=right columns_from_band=7 C=0.6583 at plaquette (16, 4)
+  side=right columns_from_band=8 C=0.9875 at plaquette (17, 4)
+  side=right columns_from_band=9 C=1.3698 at plaquette (18, 4)
+  side=right columns_from_band=10 C=1.8582 at plaquette (19, 4)
+N2 L=5 C_bd=1.8582 -> above 1; below 2
+exit=0

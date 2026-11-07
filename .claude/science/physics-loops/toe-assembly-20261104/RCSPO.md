@@ -1,0 +1,138 @@
+# RCSPO. Spinor-class strings and a light cone on L5-O
+
+## 0. Status
+
+**Pass 2; not refereed or frozen.** The literal spinor-label target fails on the stated centre-sharp backgrounds for the straight strings of every finite Spin(20) register. On `L5-O[S_+]`, the odd string limits instead have relative parity `−1` and relative Z4 flux `−1`. A site contraction empties a local Casimir level even though each individual link entry is unitary. With the hypotheses below this distinguishes distant rays on finite-range circuit images of block products; an explicit background also gives a no-Clifford-node result without assuming factor sectors. These are conditional mathematical statements, not an identification of a physical particle or vacuum.
+
+**GAPs in pass 1.** Theorem 4's last sentence used a positive level weight on one line to claim a condition for *every* ray. That conclusion needs positive weight in every transverse residue class, or another proof for the remaining classes. Proposition 5's weight formula invokes commutation even for a displacement along the same line, where it is false; the formula is valid there only in the eventual zero case explained below. The assertion that the polar decomposition excludes all unitary transport of the sectors does not follow from the finite string's kernel. The phrase “every odd sector is vector class” for arbitrary L5-O registers also exceeds Theorem 2, which concerns `S_+`; Theorem 1 only fixes the specified `−1` boundary label for the wider family. The loop factorisation below is stated for simple loops, where its disjoint-family proof applies. These corrections leave the literal label obstruction intact.
+
+**Open by name.** RCSPO-CL′; CG16D-SC; RCS-P in its Clifford form on `L5-O[S_+]` outside the proved classes; MT1-S[R-CS^str] in the VC1 vacuum; R-CS; R-16^str′; RCSPC-CL, RCSPC-CL′ and RCSPC-NF on the witness; and the owner question on cancelling base layers. No Clifford node or mirror partner is constructed. A fresh referee must examine the full dependency chain, including the imported results.
+
+**Provenance.** Pass 1: `RCSPO_DRAFT.md`, Claude Opus 5.5, max effort. Pass 2: Codex `gpt-6.1-terra`, effort and session id: see run log. Draft SHA-256 `d927d21c03ed638fd0e0da9d8c4824331e19bb363b8c30d406b8a7d5d7126189`; `prior/RCSPO.md` SHA-256 `f2031a10a508c805b2ff562e0a133647b8987b5db05bed2cc7bedda6e8b9c146`. The existing digest records the earlier repository and literature searches. Its claimed prior results are cited by path below; their cited status is not an independent audit. Pass 1's scratch computations and resource-limit breaches are recorded in its opening; they are not proof. No computation was rerun for this distillation.
+
+## 1. Definitions inferred by the distiller
+
+1. **Algebra and law.** Sites are `Z³`, each with ten matter Majoranas `γ_{x,a}`. Links carry finite unitary `Spin(20)` representations, with `U^{ab}=2dρ(T_{a,10+b})`. Matter and whole-link algebras form the graded quasi-local field algebra `𝔄`; `𝔄^G` is its local Spin(10)-invariant subalgebra. On `S_+`, embed the 512-dimensional register in the 20-Majorana Fock space, with `T_{ij}=iη_iη_j/2` and total chirality `+1`. For each end let `Γ^{ℓ,z}=i^5∏_{a=1}^{10}η^{ℓ,z}_a`. Their product is total chirality, hence both equal `Γ_ℓ` on `S_+`. Each `Γ_ℓ` is gauge invariant. The lifted Z4 centre at a site is `c_z=iP_z∏_{ℓ∋z}Γ_ℓ`, with `c_z²=−1`; `z_z=c_z²` is the local lift of `−1∈Spin(10)`. See `LW1_5.md` §2, §5 and `RCS1.md` Theorem 2. A sharp unitary has a unit-modulus expectation; sharpness of parity means `ω(P_Λ)=ε_Λ∈{±1}` for every finite `Λ`.
+
+2. **Strings and limits.** Fix `x`, an axis `e₁`, `y_k=x+ke₁` and `ℓ_k=(y_{k−1},y_k)`. Set `(T_k)_{ac}=(U^{ca}_{ℓ_k})*` and
+\[
+ B_{r,b}=\sum_{a_0,\ldots,a_{2r-1}}\gamma_{x,a_0}(T_1)_{a_0a_1}\cdots(T_{2r})_{a_{2r-1}b},\quad
+ \omega^{(x)}_r(A)=\frac{\sum_b\omega(B_{r,b}^*AB_{r,b})}{\sum_b\omega(B_{r,b}^*B_{r,b})},\quad A\in\mathfrak A^G.
+\]
+Use only lengths with positive denominator. A ray state `ω_x` is a weak-* limit along lengths tending to infinity; `π_x` is its GNS representation. A covariant choice translates a chosen limit for each residue of `x` modulo `2Z³`. Cell translation `τ_β` shifts by `2β`; write `x_⊥=(x₂,x₃)`. “Built from ray sectors”, factor sectors, updates, bands and Clifford nodes mean `RCSPC.md` D3–D7. In particular the update is an automorphism commuting with gauge actions and cell translations, and a Clifford node has `{N_i,N_j}=2v²δ_ij`, `v>0`. D1 also requires the background's stationarity and invariances under the specified update (`LZ1.md` §1).
+
+3. **Labels.** For finite `Λ`, `P_Λ=∏_{x∈Λ}P_x` and `χ_tot` is the strong limit of `ε_Λπ(P_Λ)` along finite sets ordered by inclusion (`RCS1.md` R2). Let `ε_{ℓ,z}` be the end action of the central `−1∈Spin(10)` and `Φ_Λ=∏_{ℓ∈∂Λ}ε_{ℓ,in}`. For a sharp background write `φ_Λ=ω(Φ_Λ)`. The proposed, unadopted R-16^str′ calls the limit of `φ_Λπ(Φ_Λ)` the boundary label and calls `−1` spinor class (`CG16B.md` §7). For `S_+` also define `Ψ_Λ=∏_{ℓ∈∂Λ}iΓ_ℓ` and `ψ_Λ=ω(Ψ_Λ)`; its relative Z4 flux is the strong limit of `\bar ψ_Λπ(Ψ_Λ)` when defined. These two labels are distinct.
+
+4. **Finite-range product class.** For sites `S`, `𝔄(S)` contains their matter and links with both ends in `S`; `N_k(S)` is the lattice-distance `k` neighbourhood. A state is `SRE_{k,D}` if its restriction to `𝔄^G` equals `Φ∘α_C`, where `Φ` is an even-block product over a cell-translation-invariant partition of matter sites and whole links into finite blocks of diameter `<D`, and the even automorphism `α_C` maps `𝔄(S)` into `𝔄(N_k(S))` for all finite `S`. Diameters and separations use lattice graph distance between supports. This is a specified finite-range class, not a claim that every state called short-range entangled in the literature belongs to it. A finite-depth local circuit gives such a range when its underlying block partition meets these conditions.
+
+5. **Ray observables.** On `S_+`, for two links meeting at `y`, let
+\[
+ C_y=\sum_{a<b}(L^{ab}_{\ell,y}+L^{ab}_{\ell',y})²,\quad K_y=100-4C_y,\quad Q_y=1_{\{25\}}(C_y).
+\]
+At the head replace the first link generator by the matter generator, obtaining `K_0`. Along a ray write `K_k,Q_k` at `y_k` for its two adjacent links, `k≥1`. Also write `Q_{(s,c)}` for the two axial ends at `(s,c)`. On a cell-invariant state its expectation is constant along each parity subsequence and transverse residue. Set `q` to that expectation on the specified line and parity. A factor sector's translation stabilizer is `Γ_x={β:π_{x+2β} is quasi-equivalent to π_x}`.
+
+## 2. The label obstruction
+
+**Theorem 1.** For any finite Spin(20) link representations, every straight string commutes with every `ε_{ℓ,z}`, every `z_y` and every `Φ_Λ`. If `ω` is sharp in all `z_y`, every ray limit has `π_x(Φ_Λ)=φ_Λ1` for each finite `Λ`, hence boundary label and `χ_sp` equal `+1`. The same is true in direct sums and quasi-equivalent representations. On `S_+`, `Φ_Λ=1` in the algebra, so this last conclusion holds in every representation.
+
+*Proof.* `CG16D.md` Theorems 2–3 already prove that both end actions equal the image of the central `−1∈Spin(20)` and that `Φ_Λ` is a sign times `∏_{y∈Λ}z_y`. The central image commutes with each derived Lie-algebra generator and hence every link entry and string; it also commutes with matter. Sharpness and Cauchy–Schwarz give `ω(Y(Φ_Λ−φ_Λ))=0` for all `Y`, so each normalized string state has the same sharp value. The flux is central in `𝔄^G`; cyclicity extends its eigenvalue from the GNS vector to the representation. Normalized flux is identically one. On `S_+` each end sign is `−1`, while `|∂Λ|` is even. This scalar-flux result is already `CG16D.md` Theorem 4 and `CG16B.md` §7. □
+
+For a cell-invariant centre-sharp D1 background and the update class of `CG16D.md` Theorem 6(ii), its theorem and Lemma N also give `V=1` near each node in the stated `χ_sp=−1` representations. Lemma N is marked unrefereed there. Thus the requested spinor-class *straight-string* Clifford node has no instance under the specified proposed label. This does not classify charges made by other operators or define a label on a non-sharp background (CG16D-SC).
+
+**Theorem 2.** On `L5-O[S_+]`, let `ω` be parity-sharp and sharp in each `c_z`. Every ray limit preserves the `c_z` values, has `χ_tot=−1`, and has relative Z4 boundary flux `−1`.
+
+*Proof.* A string flips the head parity and the chirality of each traversed link. Thus it commutes with `c_z` except at the far endpoint, which eventually leaves every fixed site. Sharpness, Cauchy–Schwarz and centrality in `𝔄^G` give the first claim. For finite `Λ` containing the head, the string anticommutes with `P_Λ`, so the normalized string state has value `−ε_Λ`. Local gauge invariants are matter-even (`RCS1.md` Theorem 4); consequently `ε_Λπ(P_Λ)` tends strongly to `−1` on the local cyclic vectors and hence everywhere. The finite-region identity of `RCS1.md` Theorem 2 is `∏_{z∈Λ}c_z=s_ΛP_ΛF_Λ`, with `F_Λ=∏_{∂Λ}Γ_ℓ` and scalar `s_Λ`. Sharpness makes `f_Λ=ω(F_Λ)=±1`, and the identity in the ray representation gives `f_Λπ(F_Λ)=ε_Λπ(P_Λ)`. Since `Ψ_Λ=i^{|∂Λ|}F_Λ`, the normalized Z4 flux has the same limit. □
+
+Under the proposed Z4 interpretation this value is vector class; it does not establish an irreducible vector representation. The analogous centre and parity conclusions for the different (F)-law are already in `CG16B.md` Proposition L; the `S_+` flux identity is in `RCS1.md` Theorem 2. The `−1` boundary label of Theorem 1 is a different centre element.
+
+## 3. The site contraction
+
+**Lemma 3.1 (global Majoranas).** On a finite set of matter sites and links, all matter and link Majoranas can be represented as mutually anticommuting Majoranas without changing any even product on a single link. Link-even polynomials preserve the tensor product of `S_+` registers and restrict to the original operators.
+
+*Proof.* Order links and set `\hat η^{ℓ_j}_a=P_M P_1⋯P_{j−1}η^{ℓ_j}_a`, with each parity acting on its own earlier Fock factor. Keep the matter Majoranas unchanged. The parity strings give the required anticommutators; two occurrences on one link cancel. Even link products commute with total link chirality and preserve `S_+`. □
+
+**Theorem 3.2 (empty level and exact string weight).** On `S_+`, for every state and interior ray site, `Q_k B_{r,b}=0`. The operators `K_k,Q_k` are local, gauge invariant and even, commute with all `Γ_ℓ`, and `K_k≥0` has spectrum contained in `{0,4,16,36,64,100}`, with `Q_k=1_{\{0\}}(K_k)`. Moreover
+\[
+ B_{r,b}^*B_{r,b}=X_r:=K_0K_1\cdots K_{2r-1},
+\]
+a product of commuting positive factors, independent of `b`. Every ray state has `ω_x(Q_k)=0` for `k≥1` and `π_x(Q_k)→0` strongly. If `Z∈𝔄^G` commutes with all `B_{r,b}`, then `ω_r^{(x)}(Z)=ω(X_r Z)/ω(X_r)`.
+
+*Proof.* Use Lemma 3.1 and omit hats. Reorder each string word, with a sign depending only on its length, then sum indices independently. This gives
+\[
+ B_{r,b}=\varsigma_r i^{2r}J_0J_1\cdots J_{2r-1}\eta^{\ell_{2r},y_{2r}}_b,
+\quad J_0=\sum_a\gamma_{x,a}\eta^{\ell_1,x}_a,\quad
+ J_k=\sum_a\eta^{\ell_k,y_k}_a\eta^{\ell_{k+1},y_k}_a.
+\]
+The two Majorana families at each bracket are disjoint from all other brackets, so the even `J_k` commute. For any bracket let `f_a=(ξ_a+iζ_a)/2`. CAR gives `iJ=2N−10`, `N=∑f_a^*f_a`; hence the square has the stated spectrum and kernel `N=5`. The eigenvalue 5 space has dimension `binom(10,5)=252` before the physical link restrictions.
+
+Put `L^{ξ,ab}=iξ_aξ_b/2` and similarly for `ζ`. Direct expansion yields
+\[
+ (iJ)^2=10-8\sum_{a<b}L^{ξ,ab}L^{ζ,ab}
+ =100-4\sum_{a<b}(L^{ξ,ab}+L^{ζ,ab})^2.
+\]
+Thus `K=(iJ)²` and `Q` projects onto `ker J`. It follows that `Q_kB=0` and, since the far Majorana is unitary, `B^*B=X_r`. These expressions are link-even and are polynomials in the diagonal Casimir; they are local, even and gauge invariant. End chiralities commute with all bilinears involved. Passing to a ray limit gives zero expectation of each fixed `Q_k`. The projections eventually commute with each local observable, so they converge strongly to zero on a dense set of cyclic vectors and then everywhere. The weight formula follows by commuting `Z` through the strings and summing `b`. □
+
+The level is conventionally `Λ⁵C¹⁰=126⊕\overline{126}` under the diagonal action. This representation-theory name is not needed for the proof. `RCS1.md` R4 already shows individual link entries are self-adjoint unitaries and the full string is not an isometry. Theorem 3.2 is a site mechanism, not a bounded link-raising relation; it does not contradict `RCSPC.md` lines 356–365.
+
+## 4. When rays are distinguishable
+
+**Theorem 4.1 (finite-range backgrounds).** Let `ω` be cell invariant and `SRE_{k,D}`. Fix a line `c=x_⊥` with `ω(Q_{(s,c)})=q>0` on one parity of `s`. If `|c−x′_⊥|>2k+D+1` and the two ray limits exist, their representations are disjoint. For this `x`, if the covariantly chosen sectors are factors, `Γ_x⊆Ze₁`. If the positive-weight condition holds on at least one axial parity for **each** transverse residue class modulo `2Z²`, the same holds for every `x`; then no representation built from these factor ray sectors has a Clifford node, for any update in Definition 2.
+
+*Proof.* Take `Z_s=Q_{(s,c)}` on the chosen parity. Theorem 3.2 gives `π_x(Z_s)→0` strongly. For local gauge invariants `A,A′`, write `Y=∑_bB′_b{}^*A^*A′B′_b` for the string based on the other line. For sufficiently large `s`, independently of string length, `Z_s` commutes with the local factors and the string. The `k`-neighbourhoods of their supports meet disjoint product blocks: their transverse gap exceeds `2k+D`, and `s` eventually separates `Z_s` from the fixed local supports. Since the images are even, the product state factorizes, giving `ω(YZ_s)=qω(Y)`. Normalize and pass to the ray limit. Then `π_{x′}(Z_s)→q1` weakly on local cyclic vectors and hence weakly everywhere. `RCSPC.md` Lemma 6 gives disjointness. If a transverse component of `β` is nonzero, sufficiently large multiples move the line beyond the separation bound; the stabilizer is a subgroup, so such a `β` cannot be in it. Apply `RCSPC.md` Corollary 2 when this holds for all ray sectors. □
+
+**Corollary 4.2 (rishon carriers).** The same finite-range factorization extends `RCSPC.md` Theorem 7 to `SRE_{k,D}` on its U(16)-rishon witness and on `L5-U[m]`, for the stated register ranges and existing ray limits. Use the projection onto the background's lowest occupied target-end number on a fixed parity of links; its weight is positive. Distant rays are disjoint, and covariant factor sectors admit no Clifford node.
+
+*Proof.* `RCSPC.md` Lemma 5 proves strong convergence of that projection to zero on the ray, and its live-law extension is recorded at lines 331–338. On each residue class the lowest occupied level is fixed by cell invariance and has positive weight. The disjoint-block factorization in Theorem 4.1 then applies. The cited live-law closure is marked unrefereed in its source. □
+
+**Example 4.3.** Let `ω_+` be the product of normalized traces on `P_x=+1` at each matter site and `Γ_ℓ=+1` on each `S_+` link. It is gauge and cell invariant, parity- and centre-sharp, and D1 for the identity update. It is `SRE_{0,2}`; `q=126/256`, and every denominator is `10^{2r+1}`. Its ray states exist.
+
+*Proof.* The identity can be realized in the cited update class by cancelling the base layers with their inverses; whether to exclude such cancellation remains an owner question. In a two-end Fock splitting, the physical `Γ_ℓ=+1` subspace with both end chiralities `+1` is `16⊗16`, and the normalized trace factorizes over ends. For a pair of ends, `Γ^ξΓ^ζ=−(−1)^N`. On `N=5` the chiralities agree; `iξ_1ζ_1` exchanges the two equal-chirality subspaces while preserving `N`. Each therefore has dimension `252/2=126`, yielding `q=126/256`.
+
+The normalized trace of every end or matter generator `L^{ab}` on the chosen parity subspace is zero, since it is a commutator of generators there. Independence and the expression in Theorem 3.2 give `ω_+(K_k)=10`, including the head. The factors use disjoint pairs of independent end spaces; hence the denominator `10∏_kω_+(K_k)=10^{2r+1}`. In the trace, `B` flips the head parity and the traversed link chiralities, and `BB^*=X_r`. The resulting density is the product of the flipped projections and the `K_k`, normalized. For a fixed local observable, factors outside its support cancel, so its expectation is eventually constant in `r`. This proves the ray limit. □
+
+**Proposition 4.4 (necessary cone lift).** Suppose `ω` is cell invariant, its covariantly chosen ray sectors are factors, and a representation built from them has a Clifford node. Then for some `x` there is a finite-index subgroup `Γ≤Z³`, containing two independent transverse directions, such that
+\[
+ \lim_{s\to\infty}\omega_{x+2β}(Q_{(s,x_⊥)})=0\quad(β∈Γ).
+\]
+If this particular line has positive `q` on one parity, `ω` cannot belong to any `SRE_{k,D}`.
+
+*Proof.* `RCSPC.md` Corollary 2 supplies `x,Γ` and quasi-equivalence of the relevant factor representations. Its Lemma 8 says quasi-equivalent factor states agree asymptotically on bounded escaping local observables. Theorem 3.2 gives zero on the original ray. If `q>0`, Theorem 4.1 makes sufficiently distant translated rays disjoint, contradicting quasi-equivalence. □
+
+For `β_⊥≠0`, the tested `Q` commutes with the displaced string, so the values in Proposition 4.4 are limits of `ω(X′_rQ)/ω(X′_r)`. **GAP in pass 1:** for `β_⊥=0`, the cited commutation is not available. For each fixed `s` beyond both heads, sufficiently long strings instead have both `Q B′=0` and `X′Q=0`; both expressions are then zero. This repairs the eventual-tail formula, not the asserted commutation.
+
+**Proposition 4.5 (sharp electric relations).** Let two rays lie on distinct lines `c,c′`. Suppose fixed distinct lines `c₁=c,c₂,…,c_q` avoid `c′`, and for every sufficiently large `s`, `ω` is sharp with value `g_s=±1` in `G_s=∏_iΓ_{ℓ_{c_i,s}}`. If both ray states exist, their representations are disjoint.
+
+*Proof.* A sufficiently long string on `c` anticommutes with `G_s`; one on `c′` commutes. Sharpness and Cauchy–Schwarz give ray-state values `−g_s` and `g_s`, respectively. The bounded observables `g_sG_s` escape to infinity, so the two cyclic vectors are eventually eigenvectors with opposite eigenvalues. The escaping-observable criterion `RCS1.md` Lemma 6 gives disjointness. □
+
+**Corollary 4.6.** For `ω_+`, any separable covariant representation built from its covariantly chosen `e₁`-ray sectors has no Clifford node for any update of Definition 2. No factor assumption is needed. The sectors have `χ_tot=−1` and Z4 flux `−1`.
+
+*Proof.* Put `X_{c,s}=(1−Γ_{ℓ_{c,2s}})/2`. Proposition 4.5's sharpness argument makes its strong limit in a ray representation the scalar `1` on line `c` and `0` on every other line; translation gives the covariance required in `RCSPC.md` Proposition 3, condition S1. The density in Example 4.3 factors over finite pairs of ends and repeats along the far ray. Hence separated translates of a local observable factorize, and the limiting one-point function depends on the head only through its line. This is S2 of that proposition. Its label-structure result and `RCSPC.md` Theorem 1 exclude a Clifford node. The labels follow from Theorem 2. □
+
+## 5. Open lemma and attempted routes
+
+**RCSPO-CL′ (open, proposed wording).** On `L5-O[S_+]`, no cell-invariant D1 state sharp in parity and all `c_z` has covariantly chosen factor `e₁`-ray sectors with some `π_x` quasi-equivalent to `π_{x+2β}` for every `β` in a finite-index subgroup of `Z³`. `RCSPC.md` Corollary 2 makes this sufficient to exclude Clifford nodes in the specified factor-sector representations. Theorem 4.1 settles the individual stabilizer when its line has `q>0`; all residue classes must be covered to settle the full statement. Proposition 4.5 supplies another individual-pair test, not by itself the full quantified statement unless enough relations are assumed. Corollary 4.6 settles the explicit `ω_+` example even without factoriality.
+
+Three attacks remain incomplete:
+
+1. **Finite-depth factorization.** The exact disjoint-block argument works in `SRE_{k,D}` and for `q>0`. It supplies no finite-range factorization for a general state. Exponentially small absolute errors do not automatically control errors relative to the long-string weight: even in `ω_+`, `‖K‖=100` while its expectation is `10`. When `q=0`, the chosen projection cannot distinguish rays. No impossibility follows for the remaining states.
+2. **Static Z2 field.** On a simple closed path the same index reordering gives the contracted loop `W=θ∏_y iJ_y`, `|θ|=1`. Its factors use disjoint end families. A kernel vector for one factor exists in the physical space: the `N=5` level has equal-chirality pieces of dimension 126, and the other ends can have matching chirality. Thus `W` has a nonzero kernel and is not a nonzero scalar multiple of a unitary. For corner contractions sharing a family, `J=∑η^0_aη^1_a`, `J′=∑η^0_aη^2_a`, direct CAR expansion gives `[J,J′]=−2∑η^1_aη^2_a≠0`. These facts block the proposed direct unitary-loop construction; corner noncommutation alone is not a proof that whole loops fail to commute. Nor do they exclude other flux observables or an entangled background. □
+3. **String transport.** Theorem 3.2 gives `|B_{r,b}|=∏_k|iJ_k|`. Its polar partial isometry is, up to the fixed phase, `V_b=∏_k sgn(iJ_k)η_b`; its initial projection is `∏_k(1−Q_k)`. Since this projection is proper, the displayed finite string's polar factor is not unitary. It is an isometry between its initial and final corners, not an automorphism of the full algebra. **GAP:** this does not exclude a unitary extension, a limiting intertwiner, another construction, or sector transport. The representation-theory argument about other local chirality-flipping factors is an unchecked comparison and does not close that gap.
+
+The pass-1 literature search and the papers of Bravyi–Hastings–Verstraete, Chen–Gu–Wen, Kitaev, Levin–Wen, Senthil–Fisher and Naaijkens are recorded in `RCSPO_DRAFT.md` §2. They motivate these routes; no external result is used here as a proof of deconfinement or of the physical vacuum. Earlier failed routes and the existing finite-site, rishon and D-reg results are inventoried in `prior/RCSPO.md`. In particular `RCSP16.md` Theorems 7–8 already construct a longitudinal band on another witness and show it is not a three-dimensional Clifford cone.
+
+## 6. RC-W, readings and downstream scope
+
+`CG16S.md` Lemma RC-W proves zero winding for its specified translation-covariant finite-component walk that is a finite product of bounded-block layers. Its Weyl-pairing consequence also needs a finite node set consisting of Weyl points. No node is constructed here, and a microscopic circuit has not been shown to induce that walk on a charged sector over an entangled link background. Thus RC-W forces no mirror here. If those hypotheses were separately established, a two-component Clifford node is a Weyl point: the three Hermitian generators are `v` times an orthogonal transform of the Pauli matrices, with chirality the determinant. The pairing theorem would then require opposite net chirality among all nodes. A four-component Dirac-type node can contain opposite chiralities in one fibre; no additional partner follows from this observation alone. □
+
+The pass-1 four-test assessments below are retained as judgments, not adoptions. Tests 1–4 ask respectively whether the item fixes a target, is open-ended, settles downstream physics by premise, and adds unsupported structure; P/C/F mean pass/conditional/fail.
+
+| Item | Status | Tests 1–4 | Check |
+|---|---|---|---|
+| R-CS^str with `χ_tot` | Owner's working candidate, not adopted | P C C C | Inherited from `RCS1.md` §7. Limits and axes remain open choices. |
+| R-16^str′ | Proposed owner candidate, not adopted | P C P P | `CG16B.md` §7. Theorem 1 computes its label on the stated strings; it does not establish an irreducible 16. |
+| R-16^str′-O, relative Z4 flux with `±i` called spinor | Recorded, not proposed for adoption | P P P P | Pass 1's judgment. Theorem 2 computes `−1` for the stated `S_+` strings; the interpretation is additional to the calculation. |
+| `SRE_{k,D}` and `q>0` | Theorem hypotheses, not vacuum readings | P P P P each | Both are explicit and used in Theorem 4.1; positivity must cover the relevant residue classes. |
+| `ω_+` | Mathematical witness, not a proposed vacuum | — | As a vacuum pass 1 rates tests 3 and 4 F: the sharp parity and link choices are extra structure. D1 is shown only for the identity update. |
+| RCSPO-CL′ | Open statement, proposed wording | P P P P | It states the factor-sector obstruction without assuming its conclusion. |
+
+The work supplies no charged Clifford species for LZ1/CN1, no VC1 vacuum identification for MT1-S, and no moving 16 or chiral family for CG1, CH1 or SMG1. The static and boundary-label results concern their stated prescriptions; other charged constructions remain open. `TOE_ASSEMBLY.md` §§3.4–3.6 keeps both five-mode laws live and R-CS^str provisional. No law, axiom, reading or working-set entry is adopted here.

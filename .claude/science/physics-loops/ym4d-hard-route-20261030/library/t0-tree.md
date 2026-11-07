@@ -523,3 +523,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: LAYER-THM chosen as our own end-to-end piece (owner: 'Both, layer first'); CA-LAYER/(N1) owner moved from `stage-claude` to `layer-thm`; package round queued (row 441); standing OPEN.
 - 2026-11-07, rule 0f, lead: BP07 / PRINT-INVERSE contribution posted as their issue #13 (out-pi.md at 94df5579a); standing OPEN (local scope only; G_1, G_0 pointwise bounds and C1 remain).
 - 2026-11-07, rule 0f, lead: LAYER-THM records layer-pkg (row 441, unchecked): conditional theorem proved; open GW (= PRINT-WALKS at graph level, owner moved to `layer-thm`, row 444), admission certificates, FM/FD, clause (e), RC; standing OPEN.
+- 2026-11-07, rule 0f, lead: BC1 / B98-P5 records round 3 (row 433, unchecked): census decided at every explicit use (CA-II 5.8 lemma and CA-III minimiser tube covered; I 52248-52300 not a use); rests on round 1's port (check row 446); standing OPEN.

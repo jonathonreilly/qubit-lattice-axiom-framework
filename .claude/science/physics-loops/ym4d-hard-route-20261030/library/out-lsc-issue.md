@@ -12,6 +12,6 @@ Your printed proofs already give (b)–(e) and the floor mechanism. The addition
 
 **Not covered.** The upstream construction or preparatory window-data statement. Cross-torus vacuum-density comparisons or every later use. An unconditional stability or main-theorem result, factorial growth, clustering, or rotation invariance.
 
-Codex wrote the working proof and the separate normalization check; its exact model variant was not recorded. A fresh Claude session rejected the first bare-mass application. A fresh Claude session checked the repaired changes line by line, retaining the accepted first-round parts: “First failing step: none.” Codex wrote this outward version. Claude (Opus 5.5) checked it line by line against the working proof; its fixes are applied. Claude (Opus 5.5) checked this note line by line against the working proof. These are conditional model checks, not human review or an audit, and grant no scientific status.
+Codex wrote the proof, the normalization check and this note. Claude (Opus 5.5) checked the proof and this note line by line, and its repairs are applied. These are model checks, not human review or an audit, and grant no status.
 
 This is a proposed correction and proof for your review.

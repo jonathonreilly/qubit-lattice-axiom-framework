@@ -14,8 +14,6 @@ The tags follow your `4.5:prf-chart-walk-localisation`, CA-I 15266–15310: one 
 
 **Not covered.** The individual uses in your account were not checked one by one. Admission of your account's domains is not certified. General-field completion-map identification, termwise lattice covariance, boundary gauge gluing, and graph bounds for $G_\pi^J$ or $G_1^J$ are not supplied. The note does not prove the whole account walk proposition.
 
-Codex (gpt-6-astra) wrote the proof. Claude (Opus 5.5) checked it line by line, and its repairs are applied. The flat input was written by Codex (GPT-6) and the averaging input by Codex (gpt-6-astra); Claude checked each line by line. Codex prepared the outward note.
-
-Claude (Opus 5.5) checked this note line by line against the working proof.
+Codex wrote the proof and its two linked inputs; Claude (Opus 5.5) checked each line by line, and its repairs are applied. Codex prepared this note, and Claude checked it line by line against the proof.
 
 This is a proposed proof for your review. It is research text, not an audit, and grants no status.

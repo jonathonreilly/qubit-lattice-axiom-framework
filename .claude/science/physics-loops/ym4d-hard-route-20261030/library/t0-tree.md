@@ -535,3 +535,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: PRINT-WALKS repairs applied (row 454, b133dfe5f); outward note queued (row 455); standing OPEN.
 - 2026-11-07, rule 0f, lead: PRINT-WALKS outward note drafted (row 455) and checked (row 456: FIX, no false step; nine fixes, row 457); rule 0g clean; standing OPEN.
 - 2026-11-07, rule 0f, lead: PRINT-WALKS outward note fixed and linked (rows 457, 9a3ad2072); awaiting owner OK; standing OPEN.
+- 2026-11-07, rule 0f, lead: PRINT-WALKS outward note posted as issue #14 on owner OK (rule 0h); standing OPEN in our tree (PI class only).

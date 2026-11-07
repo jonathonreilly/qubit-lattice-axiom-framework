@@ -264,6 +264,10 @@ The questions put to the owner, after Codex `gpt-6-astra` at max effort checked 
 - **Check.** Codex `gpt-6-astra` at max effort wrote these texts and their tests (`SMG1_OWNER_CHECK.md`). It narrowed Lemma F's scope (it excludes no isolated fixed eigenvalue, no gap after removing the whole fixed space, and says nothing on finite rings), and the CH1 amendment was corrected to match.
 - **What it changes.** SMG1's rungs read "gap" through the bounded R-GEN, with tick stationarity (FLQ) still to prove. W2 keeps the full 16 with bilinear protection. "Nothing else is light" stays an open criterion. No law or axiom changes.
 
+### 3.11 Owner direction on GB1's generator reading (2026-11-07)
+
+The lead asked which generator reading GB1 should use (R-SUM, R-IA, strict R-GEN widened to GB1, non-strict R3), after a Codex `gpt-6-astra` max check (`GB1_GEN_OWNER_CHECK.md`). The owner answered: "cant we probe each of these? why do we need to pick?" So no reading is adopted, and all four stay live as parallel branches. A choice is needed only when the assembly theorem must name one Hamiltonian per law. On file: strict R-GEN and R3 give bounded generators and no lift (`GB1E.md`, closures R2-R3), so they are closed for the Euclidean transfer route; R-SUM gives the reflection-positive lift on even tori; R-IA gives a positive transfer by construction with one free step. The open probes are the isotropy step (H-class, Y3) under R-SUM and R-IA. Astra's record texts for each reading are kept in `GB1_GEN_OWNER_CHECK.md` for when a choice is needed.
+
 ## 4. Plan of the derivation
 
 The argument has four layers. First the **law**: one update, one odds rule, one actuality and formation rule and one initial condition (LW1). The axioms fix the frame (sites, one-site algebra, NN-determined odds, permanent records); the law fixes everything the axioms leave open. Today the law is underdetermined: `ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13` exhibits two covariant NN laws that satisfy the Admissibility contract. So LW1 is a choice among candidates plus a consistency proof, and it is where the owner's specifications enter.

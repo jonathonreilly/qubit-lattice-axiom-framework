@@ -345,11 +345,16 @@ Source: flat-port (8.10) (flat-port.md:586) for M_4; "the same construction, omi
 and column of (8.1), applies to the scalar saddle system" and "applying the construction directly
 to A_s" (flat-port.md:588) for M_3 and M_1; §9.2, "the entire construction (8.7)-(8.10) applies to
 this enlarged system" (flat-port.md:666), for M_5; uniformity in depth, mesh, volume and shape of
-the layers, flat-port §12 (flat-port.md:816-818). At U = 1 the compressed Wilson Hessian is the compressed curl
-form, so M_r(1) is literally the flat-port matrix. Standing: checked by Claude, first failing
+the layers, flat-port §12 (flat-port.md:816-818). At U = 1 the compressed Wilson Hessian is the
+compressed curl form, and the actual rows are flat-port's straight averages (2.1): the one-step
+map of CMP 109 (0.10)-(0.12) (b109 (42)) averages the straight segments [x, x + L eta e_mu] from every
+site x of the block, its linearisation at U = 1 is exactly that segment average S_L because the
+two u-factors of SA (PX141) cancel the internal path sums (SA 11525), and composing
+one-step segment averages gives the n-step segment average of flat-port (2.1). So M_r(1) is
+literally the flat-port matrix. Standing: checked by Claude, first failing
 step none, repairs W1-W3 not affecting these statements (`gates/flat-port-gate.md:8`).
 
-### 4.2 The complex comparison [C] (`library/b109.md` P15-P17, unchecked; re-derived here)
+### 4.2 The complex comparison [C] (`library/b109.md` P15-P17, Codex; read here by Claude)
 
 For an admitted geometry with local scale m (note m <= l_k = 1) and a g^c-valued bond field B on
 its read set, put e(B) := max (m|B| + m^2 |∂B|), with ∂ the flat first differences.
@@ -366,12 +371,14 @@ turns it into P15's unit-scale setting with potential l_n B, of size <= L e(B). 
 gives, for the physical rows, row sums <= C e(B) and column sums <= C e(B) (eta / l_n)^4 for
 Q(U) - Q(1) and Q'(U) - Q'(1); P15's proof is a contraction for the straightened recursion with
 the geometric bootstrap |b_m| <= 2 e s_m and the telescoping (79), so the constant does not grow
-with the number of levels; I read it as an input here and found no failing step. Weighted
+with the number of levels. I checked it against its source, SA (PX141)-(PX149) (SA 11510-11604):
+P15 takes the identity as reference, W_r = 1, so a_{r+1} = F_1(a_r) and (PX144) becomes P15 (74);
+SA (PX149) states the same row and column errors. Weighted
 Cauchy-Schwarz (P17 (92)-(94)) converts these sums into
 ||(K(U) - K(1)) v||_count <= C e(B) ||m^{-1} v||_2 and
 ||m^{-2} (Q'(U) - Q'(1)) lambda||_top <= C e(B) ||m^{-2} lambda||_2; the column factor (eta / l_n)^4
-cancels the fine measure. The two mass terms follow by writing X^T a X - X_1^T a X_1 =
-(X - X_1)^T a X + X_1^T a (X - X_1) and using ||m^{-1} Q v||_top <= C ||m^{-1} v||_2.
+cancels the fine measure. The two mass terms follow by writing Q^T a Q - Q_1^T a Q_1 =
+(Q - Q_1)^T a Q + Q_1^T a (Q - Q_1), with Q_1 := Q(1), and the same for Q', using ||m^{-1} Q v||_top <= C ||m^{-1} v||_2.
 For the differences, D_U - D_1 is a shift followed by multiplication by
 c_mu = eta^{-1}(Ad e^{i eta B_mu} - I), with |c_mu| <= C|B| <= C e/m and |∂ c_mu| <= C e/m^2 (P16,
 exponential series; a difference of B^q telescopes). The product rule then gives
@@ -679,9 +686,14 @@ not covered by this proof except through (S1-loc).
 Proved by Claude, not yet checked by the other model. It is an implication from:
 - [F], `library/flat-port.md` §§8, 9.2, 12: checked by Claude (Codex text), first failing step none;
 - the estimates of `library/b109.md` P15 (71) and P16 (81)-(88), with P17's weighted conversion
-  (92)-(95): Codex text, not checked by the other model. Lemma 4.1 restates them in layered
-  form. I read P15, P16 and P17's comparison paragraphs as inputs and found no failing step; that
-  reading is not a gate report.
+  (92)-(95): Codex text, with no recorded check by the other model. Lemma 4.1 restates them in
+  layered form. Following FINISH "How we work" item 5 (a lane that reads a result does its check
+  in its first section), I read P15, P16 and the comparison part of P17 line by line against
+  their sources: SA (PX141)-(PX149) and CMP 109's one-step mean as reconstructed in b109 (42) for
+  P15; the BCH, Schur, product-rule and plaquette-expansion steps of P16 (81)-(88), including the
+  symmetrisation behind (86); the weighted Cauchy-Schwarz of P17 (92)-(95). First failing step:
+  none. This is Claude reading Codex text, recorded here because this worker may write only this
+  file; it is not a gate report, and the lead decides whether it counts as the check.
 
 No computation was used; every step is a written argument, finite-dimensional except for the
 uniformity of constants, which is tracked in §3.5.
@@ -703,8 +715,9 @@ the terms have the structure and bounds of (3.98)-(3.99) with (L^j eta)^{-4} rep
 **Where it could still fail.** The hardest input is Lemma 4.1 (ii) for the field rows: the
 depth-uniform complex comparison of Balaban's straightened averaging (P15). It rests on the
 bootstrap |b_m| <= 2 e s_m and on the telescoping (79), whose errors sum geometrically over levels.
-If P15 were wrong, Lemma 4.2 would lose its radius, and with it the whole theorem. The flat
-input [F] is checked. Everything else here is finite algebra and counting.
+If P15 were wrong, Lemma 4.2 would lose its radius, and with it the whole theorem. I found no
+failing step in it (§9, first item), and SA (PX149) asserts the same bound. The flat input [F] is
+checked. Everything else here is finite algebra and counting.
 
 **Not proved here (separate rows).**
 - Balaban's pointwise and Holder bounds (3.42)-(3.47) for G_0 at complex U, needed for
@@ -717,7 +730,7 @@ input [F] is checked. Everything else here is finite algebra and counting.
 **Suggested tree and registry update (for the lead; not edited here).** BP07 / PRINT-INVERSE:
 proved by Claude under (S1-loc) and (S2), not checked; inputs flat-port (checked) and b109
 P15-P17 (unchecked). Hypothesis gap: thin towers (S1 versus S1-loc). Rate: delta_q.
-The check this needs is one line-by-line reading by Codex of §§3-7, with b109 P15-P16 read in the
-same pass, since they are now load-bearing.
+The check this needs is one line-by-line reading by Codex of §§3-7. b109 P15-P16 and the
+comparison part of P17 were read line by line here by Claude (§9, first item).
 
-RESULT: Proved (Claude; not yet checked by the other model) Theorem PI: for every U = e^{i eta a}U_r with (S2) and the local form (S1-loc) of (S1), on every admissible tower and uniformly in depth, volume and U, q_0 = (QG_0Q^T)^{-1} exists, is holomorphic in a, satisfies CMP 99b (3.132) |q_0(y,y')| <= C l_j^{-2} l_{j'}^{-4} e^{-delta_q d(y,y')}, and has a walk expansion of type (3.98)-(3.99) whose terms read U only on their hulls and carry summable factors and two spare exponentials; the proof runs Balaban's cube method on the local five-block mixed matrix (flat-port, checked) with the complex comparison of b109 P15-P16 (unchecked), and needs neither Theorem 3.10 nor domain-change estimates. Also proved: (S1) implies (S1-loc) on thick towers, and on a tower with a thin Omega_0 the remark as printed is false (an explicit real U in S1-S2 with Delta_a singular). Open: the check of this note and of P15-P16; thin fingers at levels j >= 1; the rate delta_q replacing Balaban's delta_0 in the consumers; and G_0's pointwise bounds (3.42)-(3.47), which the H_0 consumers also need.
+RESULT: Proved (Claude; not yet checked by Codex) Theorem PI: for every U = e^{i eta a}U_r with (S2) and the local form (S1-loc) of (S1), on every admissible tower and uniformly in depth, volume and U, q_0 = (QG_0Q^T)^{-1} exists, is holomorphic in a, satisfies CMP 99b (3.132) |q_0(y,y')| <= C l_j^{-2} l_{j'}^{-4} e^{-delta_q d(y,y')}, and has a walk expansion of type (3.98)-(3.99) whose terms read U only on their hulls and carry summable factors and two spare exponentials. The proof runs Balaban's cube method on the local five-block mixed matrix: flat input from flat-port (checked); complex comparison from b109 P15-P16 (Codex), which Claude read line by line here against SA (PX141)-(PX149), first failing step none. It needs neither Theorem 3.10 nor domain-change estimates. Also proved: (S1) implies (S1-loc) on thick towers, and on a tower with a thin Omega_0 the remark as printed is false (Prop. 3.2: an explicit real U in S1-S2 with Delta_a singular, so G_0 and q_0 do not exist). Open: Codex's check of this note; thin fingers at levels j >= 1 and reentrant corners of a proper Omega_0 (covered only through S1-loc); consumers must read the common rate min{delta_0, delta_q}; G_0's pointwise bounds (3.42)-(3.47) for the H_0 consumers (B99b-T33/T34).

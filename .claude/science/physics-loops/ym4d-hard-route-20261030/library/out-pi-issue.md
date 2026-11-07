@@ -2,7 +2,7 @@
 
 Ethan and Levent,
 
-Your [remark](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L13142-L13173) `4.5:rem-covariance-inverse-walks` cites the bounds (3.132) and the walk expansion of $\mathsf q_0=(QG_0Q^*)^{-1}$ as printed without proof in CMP 99b. [This note](@LINK@) gives a proof for Balaban's literal averaging rows under a local hypothesis. It also shows that (S1) and (S2) alone do not give the inverse on your tower class.
+Your [remark](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L13142-L13173) `4.5:rem-covariance-inverse-walks` cites the bounds (3.132) and the walk expansion of $\mathsf q_0=(QG_0Q^*)^{-1}$ as printed without proof in CMP 99b. [This note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/94df5579a/.claude/science/physics-loops/ym4d-hard-route-20261030/library/out-pi.md) gives a proof for Balaban's literal averaging rows under a local hypothesis. It also shows that (S1) and (S2) alone do not give the inverse on your tower class.
 
 **What the note proves (Theorem PI).** Assume (S1-loc): about each site of $\Omega_0$, a box of fixed size carries a unitary gauge with a small potential. Assume also (S2), and (S2+), which is (S2) on the bonds just outside $\Omega_0$. Then:
 - $\mathsf q_0$ exists and is holomorphic in the twist. At real $U$ it is Balaban's operator.
@@ -11,11 +11,13 @@ Your [remark](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/3
 
 The constants do not depend on depth, volume or background.
 
+This also supplies, under the same local hypothesis, the (3.132) input listed in our issue #11.
+
 **Where (S1) gives the local hypothesis.** On thick towers, at every site whose box lies in $\Omega_0$ (Proposition 3.1).
 
 **Where (S1)–(S2) do not suffice.** Take $G=SU(2)$ and your conventions at [CA-I 12712–12724](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L12712-L12724) and [CA-I 11016–11023](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L11016-L11023).
 - Proposition 3.2: $\Omega_0$ has a thin finger, at most 9 big blocks wide, far from $\Omega_1$. A real $U$ in (S1) and (S2) makes $\Delta_a$ singular, so $G_0$ and $\mathsf q_0$ do not exist. Balaban's restriction on CMP 99b p. 396 excludes such a finger.
-- Proposition 3.3: $\Omega_0$ is any nonempty proper subset of $T_\eta$. A real $U$ that differs from 1 on one field bond leaving $\Omega_0$ makes $\Delta_a$ singular. No tested cube contains that bond.
+- Proposition 3.3: $\Omega_0$ is any nonempty proper subset of $T_\eta$, on a box of the size Theorem PI needs. A real $U$ that differs from 1 on one field bond leaving $\Omega_0$ makes $\Delta_a$ singular. No tested cube contains that bond.
 
 Neither proposition says anything against Balaban's own class or his Theorem 3.3.
 

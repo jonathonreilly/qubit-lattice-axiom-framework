@@ -543,3 +543,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: LAYER-THM part library/layer-thm-part.md FROZEN as a conditional theorem (row 460, f5dd57a77); premises PI, GW, AV, R, A0, L0, S, T, P2, ID/EQ/PH/LC, M (M3), RJ, FD, FM, E(e), RC stay OPEN; CA-LAYER standing: conditional on those premises.
 - 2026-11-07, rule 0f, lead: LRB outward note posted as issue #15 and LSC outward note as issue #16, on owner OK (rule 0h); standings in our tree unchanged.
 - 2026-11-07, rule 0f, lead: errata-check (row 409) and out-pda-check (row 436) moved from Mini worker 1 to laptop Claude subagents (owner OK); errata 1 = the checked A/B entries plus PDA if it is errata-class; later errata findings collect for errata 2.
+- 2026-11-07, rule 0f, lead: PDA outward note checked (row 436: FIX, no false step; endpoint defect class A); it is a proof post for a printed-without-proof proposition, so it posts on its own, not in the errata; fixes row 461.

@@ -25,13 +25,13 @@ below are this project's own terms, defined here.
 
 Every file here is a byte-identical copy from the working branch
 `claude/ym4d-hard-route` (draft PR #10132) at commit
-`db91945e3ea40a585468c971dfc80a3fb7380848`, directory
+`af80bc9a5f58cd5b2f62c218fcdb8e2105aed972`, directory
 `.claude/science/physics-loops/ym4d-hard-route-20261030/`.
 
 The texts keep their relative links. Links to files in this snapshot work
 here. Links to working files that are not in this snapshot (drafts, other
 gates, the source digests) resolve on the working branch:
-<https://github.com/jonathonreilly/qubit-lattice-axiom-framework/tree/db91945e3ea40a585468c971dfc80a3fb7380848/.claude/science/physics-loops/ym4d-hard-route-20261030>
+<https://github.com/jonathonreilly/qubit-lattice-axiom-framework/tree/af80bc9a5f58cd5b2f62c218fcdb8e2105aed972/.claude/science/physics-loops/ym4d-hard-route-20261030>
 
 The working branch keeps its full history. Its history is never rewritten,
 because the posted issues link to its commits.
@@ -56,6 +56,7 @@ Each part has its referee report in `gates/`.
 | [Descent](library/descent.md) | Descent for H-M: Theorems A and B and Proposition C | [gate](gates/descent-gate.md) |
 | [FP1](library/fp1.md) | The classical flat propagator package | [gate](gates/fp1-gate.md) |
 | [H-M](library/hm.md) | The Gaussian matrix envelope | [gate](gates/hm-gate.md) |
+| [Layer theorem](library/layer-thm-part.md) | The layer theorem the account assumes at CA-I 72392–72399, as an implication from 16 named premises | [referee](gates/layer-part-ref.md) |
 | [IN1](library/in1.md) | Constant order, mass induction and first passage | [gate](gates/in1-gate.md) |
 | [LG1](library/lg1.md) | Lattice Gibbs states and all mirrors | [gate](gates/lg1-gate.md) |
 | [NL1 (L)](library/nl1-L.md) | Product-box holomorphy and the CI reduction | [gate](gates/nl1-L-gate.md) |

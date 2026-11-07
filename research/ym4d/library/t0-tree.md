@@ -536,3 +536,8 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: PRINT-WALKS outward note drafted (row 455) and checked (row 456: FIX, no false step; nine fixes, row 457); rule 0g clean; standing OPEN.
 - 2026-11-07, rule 0f, lead: PRINT-WALKS outward note fixed and linked (rows 457, 9a3ad2072); awaiting owner OK; standing OPEN.
 - 2026-11-07, rule 0f, lead: PRINT-WALKS outward note posted as issue #14 on owner OK (rule 0h); standing OPEN in our tree (PI class only).
+- 2026-11-07, rule 0f, lead: process catch-up (owner): layer-part-ref (row 452), out-lrb-check (439), out-lsc-check (442) moved from Mini worker 1 to laptop Claude subagents; out-pda-check (436, errata class) stays on the Mini; research/ym4d snapshot PR #10141 opened off main (16 frozen parts, posted notes #10-#14); standings unchanged.
+- 2026-11-07, rule 0f, lead: LSC outward note checked (row 442: FIX, no false step, defect real as stated); fixes row 458; standing unchanged.
+- 2026-11-07, rule 0f, lead: LRB outward note checked (row 439: FIX, no false step, gap as stated, issue text to narrow); fixes row 459; standing unchanged.
+- 2026-11-07, rule 0f, lead: LAYER-THM refereed (row 452): FREEZE WITH REPAIRS R1-R11, no BLOCK; (M3) holds as a gap in the account's assumed package; S1' and relaxed-K109 readings hold; repairs and freeze by row 460.
+- 2026-11-07, rule 0f, lead: LAYER-THM part library/layer-thm-part.md FROZEN as a conditional theorem (row 460, f5dd57a77); premises PI, GW, AV, R, A0, L0, S, T, P2, ID/EQ/PH/LC, M (M3), RJ, FD, FM, E(e), RC stay OPEN; CA-LAYER standing: conditional on those premises.

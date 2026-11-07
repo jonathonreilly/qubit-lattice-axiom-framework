@@ -52,7 +52,7 @@ Each use was read in the account at the lines given. "Sum" means the use reads o
 
 ## 3. Findings that change what a consumer may read, ranked
 
-1. **8.22 and 9.98 read the stability bounds in the wrong volume for LSC (U6, U7, U9).** They state $|\widetilde Z_m|\le e^{E_+^\sharp(2L^m)^4}$ and $\widetilde Z_m(0)\ge e^{-C_{\rm low}(2L^m)^4}$ with counterterm levels $j\le K$, as if the correlation theorem's last lattice were the unit lattice. At small $g$ that identification has no admissible data (F3). LSC supplies the bounds on the level-$K'$ lattice, $K'=K-b$, with $\mathsf V=L^{4b}(2L^m)^4$. Every conclusion of `8.22:thm-volume-transfer` and `9.98:prop-transfer-three-sources` survives with $\mathsf B$ replaced by $(C_+^*+C^*_{\rm low})L^{4b}\le E_*L^{4m_J(g)}$ and $C_{\rm face}(R)$ by $\max_{b\in\mathcal B(g)}C_{\rm face}(RL^b)$. The unit-site clause $\mathsf B\le C_{\mathsf B}(1+\log g^{-2})$ at II:140932–140933 does not survive. The one consumer that reads the size of $\mathsf B$ (U8) already makes this conversion at II:142285–142295 and stays correct with Lemma M. **For the T0 tree (node AIV):** P9's H-VT(d) (`port/p9-witness.md` 323, 388–393) keeps the printed unit-lattice form. LSC supplies H-VT(d) only in the last-lattice form above, Case A. P9's note that no automatic replacement is asserted is right; this is the replacement and its price.
+1. **8.22 and 9.98 read the stability bounds in the wrong volume for LSC (U6, U7, U9).** They state $|\widetilde Z_m|\le e^{E_+^\sharp(2L^m)^4}$ and $\widetilde Z_m(0)\ge e^{-C_{\rm low}(2L^m)^4}$ with counterterm levels $j\le K$, as if the correlation theorem's last lattice were the unit lattice. At small $g$ that identification has no admissible data (F3). LSC supplies the bounds on the level-$K'$ lattice, $K'=K-b$, with $\mathsf V=L^{4b}(2L^m)^4$. Every conclusion of `8.22:thm-volume-transfer` and `9.98:prop-transfer-three-sources` survives (Case A here; Case B by item 2) with $\mathsf B$ replaced by $(C_+^*+C^*_{\rm low})L^{4b}\le E_*L^{4m_J(g)}$ and $C_{\rm face}(R)$ by $\max_{b\in\mathcal B(g)}C_{\rm face}(RL^b)$. The unit-site clause $\mathsf B\le C_{\mathsf B}(1+\log g^{-2})$ at II:140932–140933 does not survive. The one consumer that reads the size of $\mathsf B$ (U8) already makes this conversion at II:142285–142295 and stays correct with Lemma M. **For the T0 tree (node AIV):** P9's H-VT(d) (`port/p9-witness.md` 323, 388–393) keeps the printed unit-lattice form. LSC supplies H-VT(d) only in the last-lattice form above, Case A. P9's note that no automatic replacement is asserted is right; this is the replacement and its price.
 
 2. **Case B of the volume transfer (U7, U9): repair, proved here.** For $K_J<m_J(g)$ the hypotheses (T1)–(T5) are not supplied (F2). LSC (d) at $n=2$ gives, on each torus, $|S^T_{2;K,m''}(F_1,F_2)|\le C^B_2(R)\|F_1\|_\infty\|F_2\|_\infty$ for $F_1,F_2$ supported in a ball of radius $R$, with $C^B_2(R)=2[12(2R+3)^4]^2L^{8m_J(g)}$, since $c_2=\sum_{\pi\in{\rm Part}(2)}(|\pi|-1)!=2$. LSC (d) needs no torus floor and no separation. By the triangle inequality and $\|F\|_\infty\le\|F\|_\sharp$,
    $$|S^T_{2;K,m}-S^T_{2;K,m'}|\le2C^B_2(R)\|F_1\|_\sharp\|F_2\|_\sharp .$$
@@ -65,3 +65,60 @@ Each use was read in the account at the lines given. "Sum" means the use reads o
 5. **"$b$ independent of $K$" (U1, U8).** LSC proves only $b\in\mathcal B(g)\subset[0,m_J(g)]$ (F1). Every use reads only the bound or the finiteness, so nothing breaks.
 
 None of these is a candidate contribution by itself. Items 1, 2 and 4 change constants or add a two-line case. The conclusions of the account's statements survive, and its own II:142285–142295 already makes the conversion of item 1 for the depth floor.
+
+## 4. Lemma M: a ceiling for $m_J(g)$ and the size of $E_*$
+
+Proved here by Claude, not yet checked by the other model. It supplies the two ceilings that U8 reads and lsc.md does not state.
+
+**Lemma M.** Fix $L,\mathfrak p,\gamma,\varrho$, the radius exponent $r$, and the flow constants $\lambda>0$, $b_+,c_2\ge0$. There are $C_J$, $C_x$, $C_E$, fixed before $g$, such that for every admitted $g$ (so $X=g^{-2}\ge4$, lsc.md §1):
+
+- (M1) $L^{m_J(g)}\le C_JL^{11}M(\log X)^r$; hence $L^b\le C_JL^{11}M(\log X)^r$ for every $b\in\mathcal B(g)$;
+- (M2) $x^*(g)\le C_xX$ and $E_*\le C_E(1+\log X)$, with $E_*$ of lsc.md (23).
+
+*Proof.* Step 0. If $x\ge e$ then $R_J(x)<L(\log x)^r$. Indeed let $L^j$ be the least power of $L$ with $L^j\ge y:=(\log x)^r\ge1$. If $j\ge1$ then $L^{j-1}<y$; if $j=0$ then $1\le y<Ly$.
+
+Step 1. Put $c:=b_++4c_2$ and $Y_m:=X+c+3\lambda m$, and assume $X\ge X_1:=\max\{4,3\lambda\}$. For integers $m,u\ge0$ we have $Y_m\ge3\lambda$ and $\log Y_m\ge\log4>1$, so
+$\log(Y_m+3\lambda u)\le\log Y_m+3\lambda u/Y_m\le\log Y_m+u\le(1+u)\log Y_m$. With Step 0 and the definition (CA-II 707–708),
+$$N_{\mathbb T}(g,m)\le L^{12}MS(\log Y_m)^r,\qquad S:=\sup_{u\ge0}L^{-u}(1+u)^r .$$
+
+Step 2. $S\le(1+u_1)^r$ with $u_1:=\lceil2r/\log L\rceil$. For $u\ge u_1$ the ratio of consecutive terms is $(1+\tfrac1{1+u})^r/L\le e^{r/(1+u)}/L\le L^{1/2}/L<1$, since $r/(1+u)\le\tfrac12\log L$. So the terms do not increase from $u_1$ on. Each term with $u\le u_1$ is at most $(1+u_1)^r$.
+
+Step 3. Let $m_0(X)$ be the least integer $m\ge0$ with $L^m\ge T:=L^{12}MS(2\log X)^r$. Since $T\ge1$, $L^{m_0}<LT$ as in Step 0, so $m_0<13+\log_L(MS)+r\log_L(2\log X)$. As $L\ge3>e$ and $2\log X>1$, $\log_L(2\log X)\le\log(2\log X)\le2\log X\le2X$. Hence
+$Y_{m_0}\le X+A_h+B_hX$ with $A_h:=c+3\lambda(13+\log_L(MS))\ge0$ and $B_h:=6\lambda r$. For $X\ge X_2:=\max\{X_1,1+A_h+B_h\}$ this gives $Y_{m_0}\le(1+A_h+B_h)X\le X^2$, so $\log Y_{m_0}\le2\log X$. By Step 1, $N_{\mathbb T}(g,m_0)\le T\le L^{m_0}$. So $m_0$ meets the floor, $m_J(g)\le m_0$, and $L^{m_J(g)}<2^rL^{13}MS(\log X)^r$.
+
+Step 4. Let $4\le X<X_2$. At fixed $m$, $N_{\mathbb T}(g,m)$ is non-decreasing in $X$: $R_J$ is non-decreasing and each argument $X+c+3\lambda(m+u)$ grows with $X$. Put $m_2:=m_0(X_2)$. Step 3 at $X_2$ gives $L^{m_2}\ge N_{\mathbb T}(X_2^{-1/2},m_2)\ge N_{\mathbb T}(g,m_2)$, so $m_J(g)\le m_2$ and $L^{m_J(g)}<2^rL^{13}MS(\log X_2)^r$.
+
+Since $\log X>1$ and $\log X_2>1$, Steps 3–4 give (M1) with $C_J:=2^rL^2S(\log X_2)^r$. Every $b\in\mathcal B(g)$ satisfies $0\le b\le m_J$.
+
+(M2). From (M1) and $\log_L\log X\le\log X\le X$, $m_J\le\log_L(C_JL^{11}M)+rX$. So
+$x^*=X+b_++3\lambda m_J+2c_2\le X+c+3\lambda\log_L(C_JL^{11}M)+3\lambda rX\le C_xX$, with $C_x:=1+3\lambda r+\tfrac14(c+3\lambda\log_L(C_JL^{11}M))$, using $X\ge4$. In (17), $p_0\ge0$ and $\log X>1$ give $\varepsilon_*\ge A_0(x^*)^{-1/2}$. Hence
+$\log s_*^{-1}\le D+\tfrac12\log x^*$ with $D:=\max\{\log2,\log(8/a_1),\log(8B_3/A_0),\log(8B_3)\}>0$. Then (23) gives
+$E_*\le|A_J+E_-+\tfrac34+4\log c_H^{-1}+12D|+(B_J+6)(\log C_x+\log X)\le C_E(1+\log X)$, with $C_E:=|A_J+E_-+\tfrac34+4\log c_H^{-1}+12D|+(B_J+6)(1+\log C_x)$. Every letter here is fixed before $g$ (lsc.md §7). $\square$
+
+**Use in U8.** In last-lattice units the cell side of 8.22 is $\ell L^b<32L^{b+1}$ at $R=1$, and $\mathsf B$ per last-lattice site is at most $E_*$. By (M1)–(M2), $\log C_T(g)$ is at most a constant times $1+(\log g^{-2})^{4r+1}$. This is the account's degree bound $4r_{\rm pr}+1$ for $s_T(g)$ (II:142291–142294), with $r=r_{\rm pr}$.
+
+The face constant at radius $L^b$ is not LSC's, but it does not spoil this degree. For $R'\ge1$ put $t_i:=R'L^i/(4M)$ in lsc.md (24). Since $R'+2\le3R'$, $\mathfrak a(R',i)\le(24t_i+6)^4$. Terms with $t_i\le3$ are at most $78^4$, and there are at most $1+\log_L(12M)$ of them, since $t_i\ge L^i/(4M)$. The terms with $t_i>3$ have indices $i_0,i_0+1,\dots$ with $t_{i_0+k}\ge3L^k$, and each is at most $\sup_{t\ge3L^k}(30t)^4e^{-c_\kappa(t-3)}$. This series in $k$ converges: once $3L^k\ge4/c_\kappa$ the function decreases on $[3L^k,\infty)$, so the supremum is its value at $3L^k$, and consecutive values have ratio $L^4e^{-3c_\kappa(L-1)L^k}\to0$. So $C_{\rm face}(R')$ is bounded by a constant fixed before $g$, uniformly in $R'\ge1$.
+
+## Result
+
+Frozen `library/lsc.md` supplies what each remaining use needs, in Case A, after the ceilings named above. Exceptions are listed below.
+
+- **Covered:** U2 (`6.3:cor-volume-free-constant` and the end of `6.3:rem-per-ball-reading`), exactly; U11 (dependency mentions).
+- **Covered after a stated ceiling:**
+  - U1: $b_*(g):=m_J(g)$.
+  - U3: $b_*(g):=m_J(g)$, $E_*$ inside each $C^\infty_n(\mathsf dL^b;RL^b)$, and the (ii-b) subsequence refined by LSC (e).
+  - U4: $Q_*$ of §2.
+  - U5: $E_*$.
+  - U6: unit-site constants $\times L^{4m_J(g)}$.
+  - U7: $\mathsf B\to(C_+^*+C^*_{\rm low})L^{4b}\le E_*L^{4m_J(g)}$ and $C_{\rm face}(RL^b)$; Case B by LSC (d) (§3, item 2).
+  - U8: Lemma M.
+  - U9: as U6 and U7; off our T0 path.
+  - U10: ceiling $m_J(g)$, in Chapter 5's sense of $m_{\mathbb T}$.
+- **Not covered:**
+  - The Case B instance of 8.22's (a)–(b) (and of 9.98 (a), (d)). There the correlation theorem supplies nothing, and LSC gives no partition-function bound. The transfer theorems' conclusions are recovered from LSC (d).
+  - The unit-site clause $\mathsf B\le C_{\mathsf B}(1+\log g^{-2})$ at II:140932–140933. Per last-lattice site it holds for LSC's $E_*$ (Lemma M).
+- **$E_{\rm vac}$:** cancels exactly at U1–U5 and at III:73918–73942, inside one run on one torus. It does not cancel at U7 or in the three-source transfer of U9. There the residue is the cross-torus vacuum-density bound, an input outside LSC, not checked here.
+- **$C_{\rm low}$ alone or the sum:** U2–U5 and III:73918–73942 read only the sum. U6, U7 and the three-source transfer of U9 read $C_{\rm low}$ and $E_+^\sharp$ separately, on different tori. LSC supplies each separately uniform ($C^*_{\rm low}$, $C^*_+$). U1 and U10 read neither.
+- **For the lead (evidence for another file's owner):** P9's H-VT(d) is supplied by LSC only in last-lattice volume, Case A, with the price above, plus the Case B repair. The node AIV line of `library/t0-tree.md` should carry that reading. The account's own II:142285–142295 already makes the same conversion.
+
+Checked line by line by Claude (Mini worker). Lemma M, the face-constant bound and the Case B repair (§3, item 2) are proved by Claude here and not yet checked by the other model. This is a check of implications at the account's standing; it grants no status.

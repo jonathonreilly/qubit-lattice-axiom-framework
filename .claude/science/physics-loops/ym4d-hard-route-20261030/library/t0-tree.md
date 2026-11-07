@@ -506,3 +506,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, lead: CH and CH4-AUX owner moved to `ch-r1` (rows 411-412); standing unchanged.
 - 2026-11-07, rule 0f, lead: K5 = CH records ch-r1 (row 412): CH4-AUX stays the first open input after three failed attacks; standing OPEN.
 - 2026-11-07, rule 0f, lead: K7 = CV records cv-claude round 3 (row 413, unchecked): Theorem A and the reduction to (CH-a) and (PT); standing OPEN until row 414.
+- 2026-11-07, rule 0f, lead: K7 = CV updated after cv-gate (row 414): Theorem A holds for the whole-lattice small-field step only; reduction and Proposition C not established; standing OPEN.

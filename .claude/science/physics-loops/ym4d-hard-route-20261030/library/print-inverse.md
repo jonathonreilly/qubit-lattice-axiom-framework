@@ -172,3 +172,243 @@ they are thick (for instance unions of cubes of side M_1 l_j with M_1 = R'_* M_b
 CA-I 12672-12680, if R_1 >= 12), and at the boundary of a proper Omega_0 when (S1) is read on
 the plaquettes the Dirichlet compression reads. This is a hypothesis gap in the remark as
 printed, not a counterexample; we do not claim the bounds fail on thin towers.
+### 3.3 Operators
+
+At a G^c-valued configuration U on the bonds read: D_U is the covariant site difference and
+D_U^T its bilinear transpose (CMP 99b (3.3), (3.8)); Delta(U) is the operator of the second
+variation of the Wilson action, CMP 99b (3.10), with its curvature part Delta' (so Delta(1) is
+the compressed curl form); Q(U) is the field-row map, the linear part of Balaban's averaging
+(CMP 99b (3.14)-(3.16), CMP 98 (89)-(92), (124)) with the symmetric contours of CMP 109, the
+same map as in `library/b109.md` P15; Q'(U) is the site-row map (CMP 99b (3.18)-(3.19)). All act
+on the Dirichlet spaces of Omega_0 (flat-port §8). Put a := l^{-2} on field rows, K := m Q
+(dimensionless rows, counting pairing), so that K^T = Q^T m^{-3}, and
+
+  A_s := D_U^T D_U + Q'^T m^{-2} Q',     B_v := Delta(U) + D_U D_U^T + Q^T a Q.
+
+On X = (A, h, lambda, mu, nu) (fine bond field, two fine site fields, site-row multiplier with
+top pairing, field-row multiplier with counting pairing) let
+
+           | B_v      -D_U    0      0      -K^T |
+           | -D_U^T    I      A_s    0       0   |
+  M_5(U) = | 0         A_s    0     -Q'^T    0   |       (flat-port (8.1) and §9.2; b109 (66))
+           | 0         0     -Q'     0       0   |
+           | -K        0      0      0       0   |
+
+M_4 := rows and columns 1-4 (flat-port (8.1)), M_3 := rows and columns 2-4 (the scalar saddle
+system), M_1 := A_s. The account's objects (CA-I 13583-13595, 13552-13571), at complex U by
+analytic continuation from the real ones: G' = (Delta_U + Q'^T alpha Q')^{-1} for a positive scalar
+mass alpha, R := I - G'Q'^T(Q'G'^2Q'^T)^{-1}Q'G', Delta_a := Delta + D_U R D_U^T + Q^T a Q,
+G_0 := Delta_a^{-1}, q_0 := (Q G_0 Q^T)^{-1}. At real U, R is the orthogonal projection onto
+Delta_U N(Q') (CMP 99b (3.21), (3.25)); it does not depend on alpha, because for lambda in N(Q')
+one has (Delta_U + Q'^T alpha Q') lambda = Delta_U lambda. By analytic continuation the same holds at
+complex U. We use alpha = m^{-2}, so G' = A_s^{-1}.
+
+### 3.4 Norms
+
+flat-port (8.3) with the row multiplier of §9.2, with differences covariant at the real part U_r
+and zero extension at the Dirichlet boundary, physical L^2 norms (weight eta^4):
+
+  ||X||_X^2 = ||∇A||^2 + ||m^{-1}A||^2 + ||h||^2 + ||m^{-2}lambda||^2 + ||m^{-1}D lambda||^2
+              + sum_{alpha,beta} ||D_alpha D_beta lambda||^2 + ||m^2 mu||_top^2 + ||nu||_count^2.
+
+X^* is the dual norm for the bilinear pairing. The norms of M_r are the restrictions to the
+variables of M_r. On a local model (§4) the same formula on its geometry defines X_tau. Every
+term is a sum of local terms, so on fields supported where a model and the actual geometry
+agree, the two norms coincide. Since ||nu||_count is a component, for every operator W one has
+
+  (E)  |W_{nu nu}(c,c')| <= ||W||_{X^* -> X}     (c, c' field rows; norm on the colour block),
+
+because the unit source at c' in the nu slot has dual norm <= 1 and the nu component at c of
+an element of X is bounded by its X norm.
+
+### 3.5 Constants and their order
+
+All depend only on N and L (d = 4), and are chosen in this order.
+1. From the flat package [F] (§4.1): its tile size M_F and separation rho_F (powers or multiples
+   of L), the bound B_F >= 1, and the cutoff constant c_h (multiplication by a cutoff obeying
+   flat-port (8.6) is bounded by c_h on X and on X^*). Put rho'_F := M_F ceil(rho_F / M_F).
+2. From the comparison [C] (§4.2): e_C > 0 and C_C. Put e_L := min{e_C, 1/(8 B_F C_C)}.
+3. The commutator constant C_K of Lemma 5.1 and the overlap number D_* of §5.1.
+4. The tile size M_t, a power of L, a multiple of L M_F, with M_t >= max{2 rho'_F, c_r L, C_d}
+   (c_r the read enlargement of a row in P15, C_d the seam-rounding constant of §4.3) and
+   theta := 3 B_F c_h^2 C_K / M_t <= 1/(16 D_*^2). Every larger power of L is also allowed.
+5. r_N := 7 M_t, and D_X := 16 d L M_t (a bound for Balaban-diameters of model read sets, §4.3).
+6. delta_q := log(1/theta) / (7 D_X) > 0.
+7. Floors: M_b a multiple of M_t with 2 r_N L + 1 <= 11 M_b; R_1 >= 12 sqrt(d) with
+   R_1 M_b >= max{rho'_F, 2 sqrt(d) L r_N + 1, 3 log L / delta_q}.
+8. Radii a_0^*, a_1^* with C_S (L^2 a_0^* + a_1^*) <= e_L, C_S the constant of (4.4).
+9. C_q := 4 D_* B_F c_h^2 L theta^{-1/2}.
+
+### 3.6 The theorem
+
+**Theorem PI.** Fix the constants of §3.5. For every k >= 0, every finite periodic fine box,
+every admissible tower with R >= R_1, and every U = e^{i eta a} U_r satisfying (S1-loc) with
+a_0 <= a_0^* and (S2) with a_1 <= a_1^*:
+
+(a) *Existence.* M_1 = A_s, M_3, M_4 and M_5 are invertible. Hence Q'G'^2Q'^T, R, Delta_a, G_0
+and q_0 exist. Each is holomorphic in a on {N_{U_r}(a) < a_1^*}, is Balaban's operator at real
+points (a G-valued), and q_0^T = q_0. Moreover q_0 = -m^{-3} [M_5^{-1}]_{nu nu} m.
+
+(b) *(3.132).* For field rows y in Lambda_j and y' in Lambda_{j'},
+
+  |q_0(y,y')| <= C_q l_j^{-2} l_{j'}^{-4} e^{-delta_q d(y,y')}.
+
+(c) *Walk expansion.* q_0 = sum_omega q_omega over walks omega = (tau_0, ..., tau_n), n >= 0, of
+tiles (§5.1) with X_{tau_{m-1}} ∩ X_{tau_m} nonempty, absolutely convergent at each (y, y'). Each
+q_omega is a holomorphic function of the restriction of U to the hull X(omega) := X_{tau_0} ∪ ...
+∪ X_{tau_n} alone; two configurations, towers or boxes with the same tiles and the same data on
+X(omega) give the same q_omega. With |omega| := n,
+
+  |q_omega(y,y')| <= C_q l_j^{-2} l_{j'}^{-4} theta^{|omega|/2} e^{-3 delta_q D_X (|omega|+1)},
+
+q_omega(y,y') = 0 unless y lies in X_{tau_0} and y' in X_{tau_n}, and then
+d(omega,y,y') <= D_X (|omega|+1) for Balaban's walk distance (3.93) with intermediate points in
+the sets X_{tau_m}. For every tile tau the walks starting at tau satisfy
+sum theta^{|omega|/2} <= 2, and so do the walks ending at tau.
+
+(d) *Type (3.99).* theta = C_theta / M_t with C_theta := 3 B_F c_h^2 C_K. So theta^{|omega|/2}
+splits as (theta^{1/4})^{|omega|} (walk summation) times (theta^{1/4})^{|omega|} (spare), and
+e^{-3 delta_q D_X(|omega|+1)} <= e^{-delta_q d(omega,y,y')} e^{-2 delta_q Lambda} for every length
+Lambda <= D_X(|omega|+1): one exponential for decay and two spare ones. The tile size M_t may be
+any allowed power of L; with M_t = M_b / (2L) the per-step factor is O(M_b^{-1}), the order of
+Balaban's O(M^{-1/2})^{|omega|} M^{-|omega|/2} in (3.99), with (L^j eta)^{-4} replaced by (L^j eta)^{-2}.
+
+Part (a) uses no walk bound. Part (b) follows from (c) by summation (§7).
+
+## 4. Inputs and local models
+
+### 4.1 The flat input [F] (`library/flat-port.md`, checked)
+
+Call a geometry G' *admitted* if it is a nested sequence Omega'_0 ⊃ Omega'_1 ⊃ ... ⊃ Omega'_k of
+site sets of the fine box (some possibly empty), Omega'_n a union of blocks of side M_F l_n of the
+level-n grid, with l_n^{-1} dist(Omega'_n^c, Omega'_{n+1}) >= rho_F, the default conventions of §3.1,
+and Dirichlet conditions outside Omega'_0. Here M_F, rho_F are the tile size and separation of
+flat-port §8.2 (functions of L; "Take the separation larger than a fixed L-dependent multiple
+of M", flat-port.md:550).
+
+**[F].** There is B_F >= 1, depending on L, such that on every admitted geometry the flat systems
+M_r(1), r in {1, 3, 4, 5}, are invertible with ||M_r(1)^{-1}||_{X^* -> X} <= B_F.
+
+Source: flat-port (8.10) (flat-port.md:586) for M_4; "the same construction, omitting the first row
+and column of (8.1), applies to the scalar saddle system" and "applying the construction directly
+to A_s" (flat-port.md:588) for M_3 and M_1; §9.2, "the entire construction (8.7)-(8.10) applies to
+this enlarged system" (flat-port.md:666), for M_5; uniformity in depth, mesh, volume and shape of
+the layers, flat-port §12 (flat-port.md:816-818). At U = 1 the compressed Wilson Hessian is the compressed curl
+form, so M_r(1) is literally the flat-port matrix. Standing: checked by Claude, first failing
+step none, repairs W1-W3 not affecting these statements (`gates/flat-port-gate.md:8`).
+
+### 4.2 The complex comparison [C] (`library/b109.md` P15-P17, unchecked; re-derived here)
+
+For an admitted geometry with local scale m (note m <= l_k = 1) and a g^c-valued bond field B on
+its read set, put e(B) := max (m|B| + m^2 |∂B|), with ∂ the flat first differences.
+
+**Lemma 4.1 [C].** There are e_C > 0 and C_C, depending on N and L, such that if e(B) <= e_C then
+(i) every coefficient of M_r(e^{i eta B}), r in {1,3,4,5}, is defined and holomorphic in B;
+(ii) ||M_r(e^{i eta B}) - M_r(1)||_{X^0 -> X^0*} <= C_C e(B), where X^0 is the flat norm of §3.4;
+(iii) if B is real, the norm with differences covariant at e^{i eta B} lies between
+(1 + C_C e(B))^{-1} and (1 + C_C e(B)) times the flat norm.
+
+*Proof.* Each estimate is local. A field row or site row of level n reads a fixed enlargement
+c_r l_n of its double block (P15, last paragraph), where m >= l_n / L. Rescaling that box by l_n
+turns it into P15's unit-scale setting with potential l_n B, of size <= L e(B). P15 (71) then
+gives, for the physical rows, row sums <= C e(B) and column sums <= C e(B) (eta / l_n)^4 for
+Q(U) - Q(1) and Q'(U) - Q'(1); P15's proof is a contraction for the straightened recursion with
+the geometric bootstrap |b_m| <= 2 e s_m and the telescoping (79), so the constant does not grow
+with the number of levels; I read it as an input here and found no failing step. Weighted
+Cauchy-Schwarz (P17 (92)-(94)) converts these sums into
+||(K(U) - K(1)) v||_count <= C e(B) ||m^{-1} v||_2 and
+||m^{-2} (Q'(U) - Q'(1)) lambda||_top <= C e(B) ||m^{-2} lambda||_2; the column factor (eta / l_n)^4
+cancels the fine measure. The two mass terms follow by writing X^T a X - X_1^T a X_1 =
+(X - X_1)^T a X + X_1^T a (X - X_1) and using ||m^{-1} Q v||_top <= C ||m^{-1} v||_2.
+For the differences, D_U - D_1 is a shift followed by multiplication by
+c_mu = eta^{-1}(Ad e^{i eta B_mu} - I), with |c_mu| <= C|B| <= C e/m and |∂ c_mu| <= C e/m^2 (P16,
+exponential series; a difference of B^q telescopes). The product rule then gives
+||(D_U^T D_U - D_1^T D_1) lambda||_2 <= C e (||m^{-2}lambda|| + ||m^{-1} D lambda||) and
+|<v, (D_U D_U^T - D_1 D_1^T) w>| <= C e ||v||_E ||w||_E (P16 (84)-(85) with the weights m).
+For the Wilson Hessian, P16 (86)-(88): per plaquette the form is the square of the transported
+curl plus a remainder bounded by C |P - I| eta^4 |v| |w|, with |P - I| <= C eta^2 e / m^2; the
+transported curl differs from the flat one by a multiplication of size C e / m. Summing over
+plaquettes with bounded incidence gives |<v, (Delta(U) - Delta(1)) w>| <= C e ||v||_E ||w||_E,
+curvature term included. At the bare level-0 band the rows are identities and do not vary; at
+the Dirichlet edge zero extensions are used, as in P17. Adding the finitely many blocks gives
+(ii). Part (iii) is the same multiplication estimate for covariant minus flat differences.
+Part (i): the coefficients are finitely many convergent analytic formulas of the bond values. ∎
+
+### 4.3 Tiles, cutoffs and local models
+
+**Tiles.** For each level j, tile the layer Omega_j \ Omega_{j+1} by cubes of side M_t l_j of the
+level-j grid; this is possible because Omega_j and Omega_{j+1} are unions of blocks of sides M_b l_j
+and M_b l_{j+1}, and M_t divides M_b. If Omega_0 is not the whole box, add level-0 tiles covering
+the initial points of the bonds of Omega_0 outside it (flat-port.md:543, "include a bare tiling
+outside Omega_0"). A tile tau has level j_tau
+and centre site x_tau (M_t L^j is odd). Its bump b_tau is a sampled smooth function equal to 1 on
+tau, supported in the concentric cube of side 2 M_t l_{j_tau}, with |∂b| <= C/(M_t l_{j_tau}) and
+|∂^2 b| <= C/(M_t l_{j_tau})^2; h_tau := b_tau / (sum_sigma b_sigma^2)^{1/2}. A bond component uses the
+value at its initial point, a row component the value at its reference point. Then
+sum_tau h_tau^2 = 1 on every component, the denominator is >= 1, and the h_tau obey flat-port (8.6)
+with M = M_t (adjacent levels differ by the factor L, absorbed in C).
+
+**Models.** Let N_tau := N(x_tau), the box of half-width r_N l_{j_tau} = 7 M_t l_{j_tau}. By step (1)
+of Proposition 3.1 (which uses only (T) and R_1 M_b > 2 sqrt(d) L r_N), the levels met by N_tau
+lie in {i, i+1} with i = i_tau the least one, and j_tau is i or i+1. Let C_tau be the smallest cube
+aligned with the grid of spacing M_F l_{i+1} that contains the box of half-width 4 M_t l_{j_tau}
+about x_tau; rounding adds at most M_F l_{i+1} <= M_t l_{j_tau}. Put K_n := C_tau for n >= i+1 and,
+for n <= i, K_n := C_tau enlarged on each side by sum_{p=n}^{i} rho'_F l_p. Each K_n is aligned with
+the level-n grid of spacing M_F l_n, and the total enlargement is at most
+rho'_F l_i L/(L-1) <= 2 rho'_F l_{j_tau} <= M_t l_{j_tau}. The model geometry G_tau is
+
+  Omega^tau_n := Omega_n ∩ K_n  (0 <= n <= k),   Dirichlet conditions outside Omega^tau_0.
+
+It is admitted: the sets are nested and are unions of level-n blocks of side M_F l_n (M_F divides
+M_b); and dist((Omega^tau_n)^c, Omega^tau_{n+1}) >= min{dist(Omega_n^c, Omega_{n+1}), dist(K_n^c, K_{n+1})},
+which is >= min{R M_b, rho'_F} l_n >= rho_F l_n for n <= i, while Omega^tau_n is empty for n >= i+2.
+Its outer layer is at level 0 (a point of K_0 \ K_1 has model level 0). The systems M_{r,tau}(U)
+are those of §3.3 built on G_tau; their read set X_tau is the set of bonds and plaquettes their
+coefficients read. Since K_0 lies in the box of half-width 6 M_t l_{j_tau} and a row of level
+<= i+1 reads at most c_r L l_{j_tau} <= M_t l_{j_tau} beyond its double block, X_tau ⊂ N_tau.
+
+*Agreement.* On C_tau the model level of every site equals its actual level (a site of C_tau lies
+in every K_n). Hence every coefficient of M_{r,tau} and of M_r whose stencil or row read set lies
+in the box A_tau of half-width 3 M_t l_{j_tau} about x_tau is the same function of U. The support of
+h_tau, together with every stencil and row read set meeting it, lies in A_tau.
+
+*Diameter.* Any two points of X_tau are joined by an admissible contour of cost at most
+D_X = 16 d L M_t: take a coordinate staircase inside N_tau; its Euclidean length is at most
+14 d M_t l_{j_tau} <= 14 d L M_t l_i, which costs at most 14 d L M_t at scale l_i; each segment
+crosses the boundary of the level-(i+1) region, a union of aligned cubes of side M_b l_{i+1}, at
+most 2(14 M_t / M_b + 1) <= 10 times, and each crossing costs at most a fixed C_d to reach the
+coarse lattice; M_t >= C_d gives the bound. *Overlap.* If N_sigma meets N_tau then
+|j_sigma - j_tau| <= 1 (two levels differing by 2 would lie within the gap), so the number of tiles
+sigma with X_sigma ∩ X_tau nonempty is at most D_* := 2 (16 L)^d, independent of M_t.
+
+**Lemma 4.2 (local inverses).** Assume (S1-loc) with a_0 <= a_0^* and (S2) with a_1 <= a_1^*. For
+every tile tau and r in {1, 3, 4, 5}, M_{r,tau}(U) is invertible and
+
+  ||M_{r,tau}(U)^{-1}||_{X_tau^* -> X_tau} <= 3 B_F.
+
+Its entries are holomorphic functions of a and depend only on U restricted to X_tau and on the
+tower inside N_tau (not on a gauge, the box, or anything outside N_tau).
+
+*Proof.* (S1-loc) at x_tau gives a G-valued u on the bonds of N_tau ⊃ X_tau with U_r^u = e^{i eta A}
+and l_{lambda(z)}|A| <= L^2 a_0, l_{lambda(z)}^2 |∇A| <= L^2 a_0. The model scale m never exceeds the
+actual scale l_{lambda(z)} (they agree on C_tau; on the collar the model level is lower). The twist
+transforms as a^u(b) = Ad u(b_-) a(b), and (S2) gives m|a^u| < a_1 and m^2 |∇_{e^{i eta A}} a^u|
+= m^2 |(∇_{U_r} a)^u| < a_1. Let B := (i eta)^{-1} log(e^{i eta a^u} e^{i eta A}) bondwise. P16 (81),
+read with the weight m on differences (the algebra norm |V| + m|∂V| is submultiplicative by the
+product rule with one shifted factor, and covariant minus flat differences of a^u are bounded by
+C |A| |a^u|), gives
+
+  (4.4)   e(B) <= C_S (L^2 a_0 + a_1) <= e_L.
+
+Let 𝒰 act by Ad u on every component at its reference point. The covariance identities
+CMP 99b (3.31)-(3.34) for D_U, Delta(U), Q(U), Q'(U) are identities between finite formulas and
+hold at complex U (for the rows by the exact covariance of the straightened construction, P15
+(74)); so M_{r,tau}(U^u) = 𝒰 M_{r,tau}(U) 𝒰^{-1}, and 𝒰 maps the norm covariant at U_r onto the
+norm covariant at e^{i eta A}. By [F], ||M_{r,tau}(1)^{-1}||_{X^0} <= B_F. By Lemma 4.1 (ii),
+||M_{r,tau}(e^{i eta B}) - M_{r,tau}(1)|| <= C_C e_L <= 1/(8 B_F); the identity
+M(U)^{-1} = [I + M(1)^{-1}(M(U) - M(1))]^{-1} M(1)^{-1} (b109 (69)) and its geometric series give
+invertibility with flat norm bound (8/7) B_F. By Lemma 4.1 (iii) with C_C e_L <= 1/8 the
+covariant norms are within the factor 9/8 of the flat ones, so the bound in X_tau is at most
+(9/8)^2 (8/7) B_F < 3 B_F. Conjugating back by 𝒰 changes nothing. The entries of M_{r,tau}(U) are
+holomorphic in a (Lemma 4.1 (i)); the determinant does not vanish; Cramer's rule gives
+holomorphic entries of the inverse. The gauge was used only for the bound. ∎

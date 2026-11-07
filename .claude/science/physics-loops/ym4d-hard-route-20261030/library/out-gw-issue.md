@@ -2,7 +2,7 @@
 
 Ethan and Levent,
 
-Following our issue #13, [this note](@LINK@) supplies the graph-endpoint walk estimates below for the further operators of Tadeusz Balaban, CMP 99b §3 after Theorem 3.9. Your list at [CA-I 166595–166596](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L166595-L166596) records these expansions as printed without proof. All account references use commit `31a47c543775`.
+Following our issue #13, [this note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/9a3ad2072/.claude/science/physics-loops/ym4d-hard-route-20261030/library/out-gw.md) supplies the graph-endpoint walk estimates below for the further operators of Tadeusz Balaban, CMP 99b §3 after Theorem 3.9. Your list at [CA-I 166595–166596](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L166595-L166596) records these expansions as printed without proof. All account references use commit `31a47c543775`.
 
 **What it supplies.** Absolute local expansions bound $H_0(\sigma):B_p\to E_p^\Delta$, $\widetilde G^J(\sigma)\Theta_J(\sigma):E_p\to E_p^\Delta$, and $D(\widetilde G^J(\sigma)V'_\sigma)(A):E_p\to E_p^\Delta$, with constants $C_{\kappa_1}$, $C_{\kappa_1}|J|_{(-3)}$, and $C_{\kappa_1}r$. The norm includes the component covariant Laplacian. The note gives the constant order and a necessary linearization test.
 

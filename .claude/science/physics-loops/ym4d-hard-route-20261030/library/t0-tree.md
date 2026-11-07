@@ -514,3 +514,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: STAGE-MATCH updated after fc-r2-gate (row 421): frame-change BLOCK stands; standing OPEN.
 - 2026-11-07, rule 0f, lead: LAYER-THM updated after layer-thm-gate (row 418): (b) reduces to CA-LAYER/(N1); (G) follows from (3); (3) rests on PRINT-INVERSE (row 424) and analytic CMP 98 Prop. 5; standing OPEN.
 - 2026-11-07, rule 0f, lead: BP07 / PRINT-INVERSE records Theorem PI (row 424, unchecked): proved under (S1-loc), (S2); thin-tower counterexample to the remark as printed (Prop. 3.2); standing OPEN until row 427.
+- 2026-11-07, rule 0f, lead: BP07 / PRINT-INVERSE updated after pi-gate (row 427): Theorem PI not correct as stated; repaired implication advances; Balaban Theorem 3.3 claim removed; standing OPEN; repair round row 428.

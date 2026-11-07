@@ -2,7 +2,7 @@
 
 Ethan and Levent,
 
-Your [prepared-data proposition](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45557-L45634) is marked printed without proof in CMP 122a, pp. 178–179. [This note](@LINK@) proves old (A1) implies prepared (A1) for one operation, including every componentwise stopped prefix.
+Your [prepared-data proposition](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45557-L45634) is marked printed without proof in CMP 122a, pp. 178–179. [This note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/39ab806ac/.claude/science/physics-loops/ym4d-hard-route-20261030/library/out-pda.md) proves old (A1) implies prepared (A1) for one operation, including every componentwise stopped prefix.
 
 Formula (C) explicitly chooses the intermediate sets. The proof retains old-label (A1), which the proposition leaves implicit, and your cell geometry, compatible grids, enlargement conventions, and ten-layer margin. Your account reads these, with the cell and alignment inputs and the quoted endpoints, from Balaban's text; neither your account nor the note proves them. It reuses your eight-layer argument from Tadeusz Balaban's CMP 119, (3.5), and the prepared construction quoted from his CMP 122a, pp. 178–179.
 

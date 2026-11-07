@@ -511,3 +511,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: LAYER-THM records layer-thm (row 417, unchecked): partial proof; U15 covered conditional on CA-LAYER/(N1); first unproved input (G); standing OPEN.
 - 2026-11-07, rule 0f, lead: STAGE-MATCH records fc-r2 (row 404, unchecked): frame-change BLOCK answered as implications; open lemma CX; standing OPEN until row 421.
 - 2026-11-07, lead: BP07 / PRINT-INVERSE owner set to `print-inverse` (rows 423-424); chosen as the next outward contribution target; standing OPEN.
+- 2026-11-07, rule 0f, lead: STAGE-MATCH updated after fc-r2-gate (row 421): frame-change BLOCK stands; standing OPEN.

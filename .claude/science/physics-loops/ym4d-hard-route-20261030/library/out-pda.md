@@ -5,13 +5,12 @@ It gives an explicit choice (C) for the intermediate sets in your `4.14:prop-pre
 All account references below refer to commit `31a47c543775`. CA-I denotes your complete account, volume I.
 
 **Old-label premise.** The label before the operation must satisfy (A1).
-Your proposition leaves this inductive premise implicit. Your representation sums over admissible sequences; the later produced-nest assertion concerns the whole history.
+Your proposition leaves this inductive premise implicit. Balaban's representation, CMP 119, (2.18), as your account cites it, sums over admissible sequences. Your later assertion about the produced nests concerns the whole history.
 This note assumes admission of the old label. It proves admission after one operation.
 See [CA-I 4224–4226](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L4224-L4226) and [CA-I 45557–45634](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45557-L45634).
 
 **Endpoint correction.** Put \(s=k-N_0+1\).
-Your [CA-I 51712](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L51712) names \(Z''_{k-1}\) as the second prescribed endpoint.
-The construction below instead uses \(Z''_s\), as named at [CA-I 45600](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45600).
+Your [CA-I 51712](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L51712) says that the two members defined in Balaban's (1.10) are \(Z''_k\) and \(Z''_{k-1}\). Your [CA-I 45600](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45600) and the quotation at [CA-I 92015](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L92015) name \(Z''_k\) and \(Z''_s\). The construction below uses \(Z''_s\) as the second endpoint. A one-index fix at 51712 would read: "The two end members \(Z''_k\) and \(Z''_{k-N_0+1}\) are defined in (1.10)."
 For each operated component \(X\), the endpoints are
 \[
  Z''_k\cap X=X\setminus\Omega_s^{(+5M)},\qquad
@@ -23,13 +22,15 @@ These endpoint indices coincide only when \(N_0=2\). Adoption of this proof requ
 
 **Limits.** This is one operation step. It does not prove (A2), admission of all produced nests, or the initial old-label premise.
 In particular, it does not prove the next domain's \(6M\) margin or its level-\(k\) \(LM\)-cube partition.
-Your text keeps (A2) separate at [CA-I 45589–45591 and 45622–45634](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45589-L45634).
+Your text keeps (A2) separate at [CA-I 45589–45591 and 45622–45624](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45589-L45624).
 The analytic supply conditions at [CA-I 49495–49546](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L49495-L49546) also remain outside this proof.
+Your account also cites CMP 122a, pp. 178–179, for other content at CA-II 145579 and CA-III 21303, 53328, 111073 and 111311, for example constant conditions and a point count. This note does not cover those uses.
 No gauge bound, field-domain inclusion, holomorphic extension, or operator theorem follows here.
 
 **Retained geometry.** We retain your compatible grids, cell geometry above the unchanged levels, and ten-layer margin.
 We also retain your agreement of metric and cell-layer enlargements, and the endpoints (E).
 These are account inputs, not conclusions of this note. They are stated precisely below.
+Your account reads the cell and alignment inputs from Balaban's text and does not prove them ([CA-I 53816–53831](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L53816-L53831), [48164–48168](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L48164-L48168), [92012](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L92012)). The same holds for the endpoint quotation at [92015](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L92015). This note does not prove them either.
 The eight-layer collar estimate is already proved in your account from Tadeusz Balaban's CMP 119, (3.5).
 We reuse that argument. Balaban's CMP 122a, pp. 178–179, supplies the prepared construction through your quotations.
 CMP 122a was not available to the checker. Neither this version nor its checked proof independently inspects that paper.
@@ -277,8 +278,5 @@ These are the stage and componentwise nests at [CA-I 48507–48523](https://gith
 
 ## Who wrote and checked this
 
-Codex wrote the proof. Claude checked it line by line; first failing step: none.
-Codex wrote this outward version.
-The recorded Claude check concerns the working proof, not this outward version.
-CMP 122a was not available to that checker; the check used your quotations and definitions.
+Codex wrote the proof and this note. Claude (Opus 5.5) checked the proof and this note line by line, and its repairs are applied. CMP 122a was not available to the checker, who used your quotations and definitions.
 These are model readings of research text, not human review or an audit. They grant no scientific status.

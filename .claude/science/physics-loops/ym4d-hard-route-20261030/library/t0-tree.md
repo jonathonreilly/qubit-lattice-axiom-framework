@@ -344,7 +344,7 @@ Each row is a node, or a named refinement of a parent node. **Owner** is a FINIS
 | CM-RW (K1/R8) | **OPEN**; `b99-w` | Full cited `5.2:lem-random-walk-bounds`, not supplied by an unfinished true-current W-b claim. `../gates/cm-gate.md:26`: “proof is expressly not reproduced”; `:87` retains the cited leaf. Clauses (I)/(III), reference transfer and complex local decouplings remain at their consumed scopes. |
 | P4-SHEET (P4/CM-PART) | **OPEN**; `port-p4` | `../gates/cm-gate.md:55`: “O4 is not discharged by this check.” Keep (Inv-x), (Sh3-u), one-box inversion and datum-uniform sheet majorants as named inputs; Theorem 1 is checked conditional on them. |
 
-| CH4-AUX (K5) | **OPEN**; `ch-bridge` | `ch-bridge.md:270–277`: first localized auxiliary-stage admission remains open; `cwch.md:372` retains it for the link-3 input. This child keeps its existing owner. |
+| CH4-AUX (K5) | **OPEN**; `ch-r1` | `ch-bridge.md:270–277`: first localized auxiliary-stage admission remains open; `cwch.md:372` retains it for the link-3 input. Owner moved from the finished `ch-bridge` lane to `ch-r1` by the lead, 2026-11-07 (row 412). Digest: `prior/ch.md`. |
 | B119-THEOREMS (R1/BC1) | **OPEN**; `b119` | `b119.md:1354–1419` supplies B1–B12, not full CMP 119 Theorems 1/2/Corollary 3; corrected K8 is only one ingredient (`../gates/p20-gate.md:95–97`). Existing `b119` ownership remains. |
 | MU-LITERAL (MU-RADII) | **OPEN**; `mu-radii` | `mu-radii.md:909–910`, `../gates/mur-gate.md:106–108`: literal gauge bound 2 and unweighted whole-rim/B₃ readings remain unproved and unneeded at the identified consumers. These are distinct from MU-RESIDUAL's domination/unbounded-box interfaces. |
 | PDA-A2 (R2) | **OPEN** at actual full-use scope; `pda` | `pda.md:245`: (A2) outside the checked one-operation geometric proof. PDA-T is an unchecked candidate for all-history geometry, with its retained hypotheses (`../gates/uses-pda-um.md:177–182`); no analytic supplier follows. |
@@ -503,3 +503,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-06, rule 0f, lead: CA-BIN records the written b-in-r2 proof (row 399); standing stays OPEN until its check.
 - 2026-11-06, rule 0f, lead: CA-BIN updated after b-in-r2-gate (row 399); stays OPEN.
 - 2026-11-07, rule 0f, lead: K2 = CR records the unchecked cr-prem round (row 408); stays OPEN.
+- 2026-11-07, lead: CH and CH4-AUX owner moved to `ch-r1` (rows 411-412); standing unchanged.

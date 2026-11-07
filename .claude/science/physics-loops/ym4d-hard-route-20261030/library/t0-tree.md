@@ -531,3 +531,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: PRINT-WALKS check (row 447) moved from Mini worker 1 to a laptop Claude subagent (owner OK); layer-part-ref (row 452) now follows b98p5-port-check on the Mini; standing OPEN.
 - 2026-11-07, rule 0f, lead: B98-P5 records b98p5-port-check (row 446): round-1 local port sections 2.1-2.5 pass as an implication from (11), first failing step none, two repairs (R1 covariance, R2 constant) applied by row 453; (11) on the account class and the r3-gate coverage items stay open; standing OPEN.
 - 2026-11-07, rule 0f, lead: B98-P5 port repairs applied (row 453, 212387d8c); standing OPEN.
+- 2026-11-07, rule 0f, lead: PRINT-WALKS records walks-gw-check (row 447): REVISE, no BLOCK; two repairs ((P15) cube count, complex-background Wilson vertex) and one wording fix, applied by row 454; standing OPEN.

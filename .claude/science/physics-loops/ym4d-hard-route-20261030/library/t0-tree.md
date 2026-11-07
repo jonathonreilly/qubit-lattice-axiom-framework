@@ -538,3 +538,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: PRINT-WALKS outward note posted as issue #14 on owner OK (rule 0h); standing OPEN in our tree (PI class only).
 - 2026-11-07, rule 0f, lead: process catch-up (owner): layer-part-ref (row 452), out-lrb-check (439), out-lsc-check (442) moved from Mini worker 1 to laptop Claude subagents; out-pda-check (436, errata class) stays on the Mini; research/ym4d snapshot PR #10141 opened off main (16 frozen parts, posted notes #10-#14); standings unchanged.
 - 2026-11-07, rule 0f, lead: LSC outward note checked (row 442: FIX, no false step, defect real as stated); fixes row 458; standing unchanged.
+- 2026-11-07, rule 0f, lead: LRB outward note checked (row 439: FIX, no false step, gap as stated, issue text to narrow); fixes row 459; standing unchanged.

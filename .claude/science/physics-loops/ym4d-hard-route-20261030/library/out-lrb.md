@@ -1124,6 +1124,6 @@ This list is not a claim about every transitive use in your account.
 
 ## Who wrote and checked this
 
-Codex wrote the proof. Claude checked it line by line and found no failing step; its clarifications are applied here. Codex wrote this outward version. Claude (Opus 5.5) then checked this version line by line against the proof, and its fixes are applied. Claude (Opus 5.5) checked this note line by line against the working proof.
+Codex wrote the proof and this note. Claude (Opus 5.5) checked the proof and this note line by line, and its repairs are applied.
 These are model readings of research text, not human review or an audit. They grant no scientific status.
 Every proof step above is a written argument. No computer-assisted step discharges an obligation.

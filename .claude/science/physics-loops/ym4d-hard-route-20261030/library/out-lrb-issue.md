@@ -15,6 +15,6 @@ No complete source text of those lemmas was available. The match is to the descr
 
 **Not covered.** Construction of the primitive walk families, their physical positivity, the full symmetry premise, or the CMP 116 potential bounds. The note retains the local half of W′, cell-resolvent and local-coercivity hypotheses, (b)'s inequalities, (c)'s count, and (d)'s floors. It uses the unit auxiliary Gaussian, fixed cutoffs, and the later potential and tail ceilings. CMP 116 inputs were read through your account, not checked against the paper. The note lists the covered direct consumers; it does not close the full account.
 
-Codex wrote the proof. Claude checked it line by line and found no failing step. Codex wrote this outward version, with the checker's clarifications. Claude (Opus 5.5) then checked this version line by line against the proof. Claude (Opus 5.5) checked this note line by line against the working proof. These are model readings of research text, not human review or an audit, and grant no scientific status.
+Codex wrote the proof and this note. Claude (Opus 5.5) checked the proof and this note line by line, and its repairs are applied. These are model readings of research text, not human review or an audit, and grant no scientific status.
 
 This is a proposed proof for your review.

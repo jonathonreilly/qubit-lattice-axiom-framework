@@ -23,6 +23,6 @@ Neither proposition says anything against Balaban's own class or his Theorem 3.3
 
 **Not covered.** The current-corrected $G_1$ inverse. The pointwise and Hölder bounds for $G_0$. A boundary gauge-gluing lemma. Termwise lattice covariance of the walk terms (your C1). Section 11 of the note lists which of your lines the result supplies, use by use.
 
-Claude (Opus 5.5) wrote the proof. Codex (gpt-6-astra) checked it line by line, and its repairs are applied. Codex wrote this outward version. Claude checked it line by line against the checked proof, and read your cited lines and the cited Balaban pages.
+Claude (Opus 5.5) wrote the proof. Codex (gpt-6-astra) checked it line by line, and its repairs are applied. Codex prepared the note from the checked proof; Claude checked it line by line against that proof, and read your cited lines and the cited Balaban pages.
 
 We hope this helps you close the remark. It is a proposed proof for your review. It does not claim that the full account is complete.

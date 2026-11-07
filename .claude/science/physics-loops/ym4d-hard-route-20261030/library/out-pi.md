@@ -40,15 +40,12 @@ Your definition at CA-I 13150–13152 uses the bare \(G_0\).
 Theorem PI proves a bound of the scale and spatial-decay form of (3.132) for the bare inverse.
 It does not identify the bare and corrected operators.
 
-At CA-II 54617–54619 your text says: "For $y$, $y'$ in one layer $\Lambda_{j}$ the exponential factor in the bound of [CMP 99b, (3.132)–(3.133)] for $C_{Q}$ does not depend on $d(y,y')$."
+At CA-II 54617–54619 your text says: "For $y$, $y'$ in one layer $\Lambda_{j}$ the exponential factor in the bound of [CMP 99b, (3.132)–(3.133)] for $C_{Q}$ does not depend on $d(y,y')$;" (citation key rendered)
 On CMP 99b p. 422, (3.132) reads \(|(QGQ^*)^{-1}(y,y')|\le O(1)(L^j\eta)^{-2}(L^{j'}\eta)^{-d}e^{-\delta_1d(y,y')}\) for \(y\in\Lambda_j\), \(y'\in\Lambda_{j'}\).
 It decays in \(d(y,y')\) for all pairs, including pairs in one layer.
 This discrepancy is separate from the bare/corrected distinction.
 
-The Balaban displays used here were read from page images of the journal pages: CMP 99b and CMP 98 by Codex, and CMP 99b pp. 421–422, CMP 96 p. 231, (2.46), and CMP 95 p. 18, (1.6)–(1.7) by Claude.
-
-**Who wrote and checked.** The proof was written by Claude (Opus 5.5), checked line by line by Codex (gpt-6-astra), with the repairs applied.
-Codex prepared this outward version from that repaired proof and included the flat inverse argument it uses.
+Balaban's displays were read from page images of the journal pages: CMP 99b and CMP 98 by Codex; CMP 99b pp. 421-422 also by Claude; CMP 95 p. 18, (1.6)-(1.7), and CMP 96 p. 231, (2.46), by Claude only. **Who wrote and checked.** The main proof was written by Claude (Opus 5.5) and checked line by line by Codex (gpt-6-astra); the repairs from that check are applied. The flat argument of Appendix A was written by Codex and checked line by line by Claude. Codex prepared this text from those two; Claude checked it line by line against them.
 This records model review of research text. It is not an audit and grants no status.
 No computer-assisted step discharges an assertion.
 
@@ -108,7 +105,7 @@ Supply the background on the bonds of
 \[
  \Omega_0^+=\{x:\operatorname{dist}_\infty(x,\Omega_0)\le2\eta\}.
 \]
-The local-gauge hypothesis below supplies the background and its gauge representation on every local read where it is invoked.
+Read (S1-loc) below on the bonds of \(N(x)\) in this domain. Every coefficient read lies there: field bonds touch \(\Omega_0\), plaquettes through them stay within \(2\eta\) of \(\Omega_0\), and a row of level \(j\ge1\) reads only bonds inside \(\Omega_0\).
 
 ### 2.3 Real gauges and complex twists
 
@@ -134,13 +131,14 @@ These differences use bonds of \(\Omega_0^+\).
 
 The theorem uses the following stronger real-gauge hypothesis.
 For every site \(x\in\Omega_0\), set \(j=\lambda(x)\) and let \(N(x)\) be the closed sup-norm box of half-width \(r_N\ell_j\) about \(x\).
-Assume a unitary gauge on \(N(x)\) such that, on its bonds,
+Assume a unitary gauge on \(N(x)\) such that, on its bonds in \(\Omega_0^+\),
 \[
  U_r^u=e^{i\eta A},\qquad
  \ell_{\lambda(z)}|A|\le L^2a_0,\qquad
- \ell_{\lambda(z)}^2|\nabla A|\le L^2a_0.
+ \ell_{\lambda(z)}^2|\nabla A|\le L^2a_0,
  \tag{S1-loc}
 \]
+at both endpoints \(z\) of each bond of \(N(x)\).
 The level is extended by zero outside \(\Omega_0\).
 The constant \(r_N\) is fixed in §3.3.
 This is a supplied local gauge. It is not a boundary gluing conclusion.
@@ -164,7 +162,7 @@ For \(R(V)X=VXV^{-1}\), put
 \[
  (D_U\lambda)(b)=\eta^{-1}\{R(U_b)\lambda(b_+)-\lambda(b_-)\}.
 \]
-This is Balaban's covariant difference, CMP 99b p. 391, (3.8).
+This is Balaban's covariant difference, CMP 99b pp. 391–392; its adjoint is his (3.8).
 Let \(\Delta(U)\) be his Wilson Hessian, (3.10), continued with \(U^{-1}\) in place of \(U^*\).
 Its explicit plaquette formula is proved in Lemma 5.1.
 Use the literal field and site rows \(Q,Q'\) of Definition 4.3, from CMP 99b pp. 392–393, (3.13)–(3.19).
@@ -231,8 +229,8 @@ The unit source at \(c'\) has dual norm one, and a \(\nu\)-component is bounded 
 
 Fix the constants in this order. They depend only on \(N,L\).
 
-1. The flat inverse lemma in §4.4 and Appendix A supplies a block size \(M_F\), gap \(\rho_F\), inverse bound \(B_F\ge1\), commutator constant \(C_{88}\), and cutoff multiplier bound \(c_h\ge1\), covering all four systems on corner blocks. Put \(\rho'_F=M_F\lceil\rho_F/M_F\rceil\).
-2. Lemma 4.4 supplies \(e_R,C_R\), with \(r_1=1/(500L)\). Lemma 5.1 supplies \(e_C\le e_R/L,C_C\); Lemma 5.2 supplies \(C_S\ge2\). Put \(C_K=3C_{88}\) and \(D_*=3(20L)^4\).
+1. The flat inverse lemma in §4.4 and Appendix A supplies a block size \(M_F\), gap \(\rho_F\), inverse bound \(B_F\ge1\), commutator constant \(C_{\rm com}\), and cutoff multiplier bound \(c_h\ge1\), covering all four systems on corner blocks. Put \(\rho'_F=M_F\lceil\rho_F/M_F\rceil\).
+2. Lemma 4.4 supplies \(e_R,C_R\), with \(r_1=1/(500L)\). Lemma 5.1 supplies \(e_C\le e_R/L,C_C\); Lemma 5.2 supplies \(C_S\ge2\). Put \(C_K=3C_{\rm com}\) and \(D_*=3(20L)^4\).
 3. Fix one power \(M_t\) of \(L\), divisible by \(LM_F\), such that
 \[
  M_t\ge\max\{2\rho'_F,4L\},\qquad
@@ -247,7 +245,7 @@ Fix the constants in this order. They depend only on \(N,L\).
 \]
 7. Put
 \[
- e_L=\min\{e_C,(8B_FC_C)^{-1},C_{88}/(2c_hC_CM_t)\}.
+ e_L=\min\{e_C,(8B_FC_C)^{-1},C_{\rm com}/(2c_hC_CM_t)\}.
 \]
 Choose \(a_0^*,a_1^*\in(0,1]\) with \(C_S(L^2a_0^*+a_1^*)\le e_L\).
 8. Put \(C_q=4D_*B_Fc_h^2L\theta^{-1/2}\).
@@ -272,7 +270,7 @@ A setting \(s=(\text{tower},U)\) uses the fixed box and grids above and supplies
 Two settings agree on \(W\) if their regions have the same intersection with \(W\) at every level, and their backgrounds agree on every bond with both endpoints in \(W\) in their common background domain.
 The coefficients compared in §9 read this common domain inside the footprint.
 
-**Theorem PI.** Fix the constants of §3.3. Let \(k\ge0\), let \(T_\eta\) be a periodic fine box of side at least \((2\widehat r+2)\ell_k\), let the tower satisfy §2.1 with \(R\ge R_1\), and let \(U=e^{i\eta\mathfrak a}U_r\) satisfy (S1-loc) with \(a_0\le a_0^*\), and (S2), (S2+) with \(a_1\le a_1^*\). The rows are Balaban's literal rows of Definition 4.3.
+**Theorem PI.** Fix the constants of §3.3. Let \(k\ge0\), let \(T_\eta\) be a periodic fine box of side at least \(\max\{(2\widehat r+2)\ell_k,t_FM_F\ell_k\}\), let the tower satisfy §2.1 with \(R\ge R_1\), and let \(U=e^{i\eta\mathfrak a}U_r\) satisfy (S1-loc) with \(a_0\le a_0^*\), and (S2), (S2+) with \(a_1\le a_1^*\). The rows are Balaban's literal rows of Definition 4.3.
 
 (a) *Existence and identification.* \(M_1=A_s,M_3,M_4,M_5\) are invertible. Hence \(Q'G'^2Q'^T,R,\Delta_a,G_0,q_0\) exist;
 \[
@@ -338,10 +336,10 @@ Thus \(G_0\) and \(q_0\) do not exist there.
 There is also such a real \(U'\) with \(|\partial U'-1|=2\) on six plaquettes.
 It violates the bound at CA-I 12968–12973 when \(a_0+a_1<1/2\).
 
-**Proposition 3.3.** Let \(G=SU(2)\) and \(\varnothing\ne\Omega_0\ne T_\eta\), with §2.2–§2.3's conventions.
+**Proposition 3.3.** Let \(G=SU(2)\) and \(\varnothing\ne\Omega_0\ne T_\eta\), with §2.2–§2.3's conventions. Require \(T_\eta\) to have side at least \(\max\{(2\widehat r+2)\ell_k,t_FM_F\ell_k\}\).
 There is a real \(U\), with \(\mathfrak a=0\), satisfying (S1) and (S2), at which \(\Delta_a\) is singular.
 It differs from 1 only on one field bond with an endpoint outside \(\Omega_0\).
-By Theorem PI, (S1-loc) with \(a_0\le a_0^*\) must fail at a site whose box contains that bond.
+By the box hypothesis and Theorem PI, (S1-loc) with \(a_0\le a_0^*\) must fail at a site whose box contains that bond.
 
 Both constructions also satisfy (S2+).
 Proposition 3.2 uses a region excluded by Balaban's restriction on CMP 99b p. 396.
@@ -644,7 +642,8 @@ Fine and row pairings are unchanged, and differential operators translate on fin
 This proves the conjugacy.
 The fine translation alone need not preserve the coarse grids. \(\square\)
 
-**Flat inverse lemma.** There are \(M_F,\rho_F,B_F,C_{88},c_h\), depending only on \(L\), with \(B_F,c_h\ge1\), such that the following holds.
+**Flat inverse lemma.** There are \(M_F,\rho_F,t_F\) and \(B_F\ge1\), depending only on \(L\), and for each \(C_\varphi\) there are \(c_h\ge1\) and \(C_{\rm com}\), depending only on \(L\) and \(C_\varphi\), such that the following holds.
+Let the periodic box have side at least \(t_FM_F\ell_k\).
 Let \(\Omega'_0\supset\cdots\supset\Omega'_k\) be nested unions of blocks of side \(M_F\ell_n\) in a nested block grid, with
 \[
  \ell_n^{-1}\operatorname{dist}((\Omega'_n)^c,\Omega'_{n+1})\ge\rho_F.
@@ -655,13 +654,14 @@ Then \(M_r(1)\), \(r\in\{1,3,4,5\}\), is invertible and
  \|M_r(1)^{-1}\|_{\mathcal Y_r\to\mathcal X_r}\le B_F.
 \]
 Its vector Schur complement is positive and controls the squared energy norm.
-A smooth cutoff on scale \(M\ell\), with first and second differences bounded by \(C/(M\ell)\) and \(C/(M\ell)^2\), multiplies the spaces with bound \(c_h\) and obeys
+Let \(M\ge1\) and \(0\le n\le k\), and let \(h\) take values in \([0,1]\), with \(|Dh|\le C_\varphi/(M\ell_n)\), \(|D^2h|\le C_\varphi/(M\ell_n)^2\), and local scale at most \(L\ell_n\) on the read closure of \(\operatorname{supp}h\).
+Then multiplication by \(h\) has norm at most \(c_h\) on \(\mathcal X_r\) and on \(\mathcal Y_r\), and
 \[
- \|[M_r(1),h]X\|_{\mathcal Y_r}\le(C_{88}/M)\|X\|_{\mathcal X_r}.
+ \|[M_r(1),h]X\|_{\mathcal Y_r}\le(C_{\rm com}/M)\|X\|_{\mathcal X_r}.
 \]
 
 Appendix A proves this statement.
-It rebuilds Balaban's one-scale and two-scale arguments and his partition-of-unity construction: CMP 95, (1.89)–(1.90), Proposition 1.2; CMP 96, (2.95)–(2.141), Propositions 2.5–2.6.
+It rebuilds Balaban's one-scale and two-scale arguments and his partition-of-unity construction: CMP 95, Proposition 1.1, (1.89)–(1.90); CMP 96, (2.95)–(2.141), Propositions 2.5–2.6.
 The paper page ranges are CMP 95 pp. 17–40 and CMP 96 pp. 239–248; the block-face calculation is on CMP 96 pp. 244–246, (2.123)–(2.128).
 Read the straight average directly on corner blocks.
 The cutoff argument uses oscillation across a double block, so it also permits the row reference point at the corner.
@@ -812,7 +812,7 @@ For \(n\le i_\tau\), their gap is at least
 Thus the model is admitted.
 
 Build \(M_{r,\tau}(U)\) on this geometry, with its actual rows and zero extensions.
-Its read set \(X_\tau\) contains its field bonds, the bonds of plaquettes through them, and the double blocks of its rows.
+Its read set \(X_\tau\) consists of its field bonds, the bonds of plaquettes through them, and the double blocks of its rows.
 These lie within half-width
 \[
  (6M_t+2L+2)\ell_{j_\tau}\le7M_t\ell_{j_\tau}=r_N\ell_{j_\tau}.
@@ -927,13 +927,13 @@ It equals \([M(U),h_\tau]\widetilde Y\) when \(\widetilde Y\) agrees with \(Y\) 
 Conjugate by the gauge of Lemma 5.3.
 The scalar cutoff commutes with that gauge.
 Write the commutator as its flat part plus \([V,h]\), where \(V=M_\tau(e^{i\eta B})-M_\tau(1)\).
-Appendix A bounds the flat part by \(C_{88}/M_t\).
+Appendix A bounds the flat part by \(C_{\rm com}/M_t\).
 Lemma 5.1 gives
 \[
- \|[V,h]Y\|\le2c_hC_Ce_L\|Y\|\le(C_{88}/M_t)\|Y\|.
+ \|[V,h]Y\|\le2c_hC_Ce_L\|Y\|\le(C_{\rm com}/M_t)\|Y\|.
 \]
 The norm conversions cost \((9/8)^2\), and \(2(9/8)^2<3\).
-This proves the assertion with \(C_K=3C_{88}\). \(\square\)
+This proves the assertion with \(C_K=3C_{\rm com}\). \(\square\)
 
 **Lemma 6.2.** Define the transplanted operators
 \[
@@ -1190,7 +1190,7 @@ A null vector vanishes on level-zero sites and propagates as zero along bonds, w
 Thus \(A_s(U_t)>0\).
 The disjoint site blocks and invertible transports make \(Q'\) onto.
 Hence \(Q'G'^2Q'^T>0\), and \(R(U_t)\) is a continuous orthogonal projection.
-At \(t=0\), the flat inverse lemma gives \(\Delta_a(1)>0\).
+At \(t=0\), the flat inverse lemma gives \(\Delta_a(1)>0\) on a box with the room of the flat inverse lemma.
 
 At \(t=1\), take \(A=\alpha\sigma_3\) on \(b_0\), zero elsewhere, so \(\|A\|_2^2=\eta^4\alpha^2\).
 Each of its six plaquettes has holonomy \(-I\).
@@ -1220,8 +1220,7 @@ Only the interior endpoint contributes to the compressed divergence, so
  \langle A,\Delta_a(U_1)A\rangle\le(-6+1+1)\eta^{-2}\|A\|_2^2<0.
 \]
 The same first-crossing construction gives singularity.
-At that field, Theorem PI precludes the full small (S1-loc) hypothesis.
-Any box not reading the changed bond sees the identity and satisfies it, so a failing box contains that bond.
+By the box hypothesis, \(T_\eta\) has side at least \((2\widehat r+2)\ell_k\). Then by Theorem PI, (S1-loc) with \(a_0\le a_0^*\) must fail at a site whose box contains that bond.
 The twist is zero throughout, including on the exterior read.
 This proves failure of boundary real-gauge control from S1–S2; it does not refute an assertion about the exterior twist alone. \(\square\)
 
@@ -1287,7 +1286,7 @@ They assert nothing against Balaban's own tower class or his Theorem 3.3.
 
 We give the flat argument in full at the energy and mixed-system level used above.
 We do not need flat pointwise or Hölder estimates.
-Balaban's sources for this method are CMP 95 (1984), pp. 17–40, (1.89)–(1.90) and Proposition 1.2; CMP 96 (1984), pp. 223–250, (2.17), (2.95)–(2.141), Propositions 2.5–2.6; and CMP 99b pp. 394–399, (3.25)–(3.27) and Theorems 3.1–3.3.
+Balaban's sources for this method are CMP 95 (1984), pp. 17–40, Proposition 1.1, (1.89)–(1.90); CMP 96 (1984), pp. 223–250, (2.17), (2.95)–(2.141), Propositions 2.5–2.6; and CMP 99b pp. 394–399, (3.25)–(3.27) and Theorems 3.1–3.3.
 The proof below makes no appeal to those inverse bounds.
 Write \(D\) for the scalar gradient, \(C\) for the field curl, and \(\Delta_s=D^TD\).
 At real flat data the bilinear transposes have the usual real Hilbert-space interpretation.
@@ -1376,7 +1375,7 @@ This is the smooth-lift duality argument behind Balaban's scalar inverse constru
 
 ### A.2 Uniform one-scale vector form
 
-This rebuilds the energy argument of Balaban, CMP 95, (1.89)–(1.90), Proposition 1.2.
+This rebuilds the energy argument of Balaban, CMP 95 p. 33, Proposition 1.1, (1.89)–(1.90).
 Normalize the row scale to one and put \(h=1/n\), \(n=L^j\).
 The Bloch transform on the coarse periodic lattice has momenta \(\vartheta\in[-\pi,\pi]^4\) and fine aliases \(p_\ell=\vartheta+2\pi\ell\) in the fine Brillouin zone.
 Set
@@ -1522,6 +1521,7 @@ Use \(|u+v|^2\le2|u|^2+2|v|^2\) and sum.
 If the neighbouring block is unmarked, its root paths need not vanish.
 Each has at most \(dL\) retained bare bonds, whose squared path integral is bounded by \(dL\) times their squared norm.
 The face sum costs at most \(C_dL^d\) times that bare norm, with bounded block overlap.
+Bonds with neither endpoint marked are retained bare bonds; there \(B_{\rm ax}=B\), and their squared norm is part of \(M_U(B)\).
 These are all possible faces, proving (A.16).
 This argument is discrete Stokes with explicit finite bounds, not machine enumeration.
 
@@ -1686,14 +1686,14 @@ This gives
 This includes the strong \(M_1\) system and the second-order dual sources of the other systems.
 It uses no sharp pillar cutoff on \(H^2\).
 
-Choose one power \(M_F=M\) with \(C_L/M<1/2\), then choose \(\rho_F\) and the torus room for its reads.
+Choose one power \(M_F=M\) with \(C_L/M<1/2\), then choose \(\rho_F\) and the torus room \(t_F\) for its reads.
 The local constants were fixed before the box size, so the order is noncircular.
 For each \(r\in\{1,3,4,5\}\),
 \[
  M_r(1)^{-1}=\mathbb B\sum_{n\ge0}(-\mathbb R)^n,\qquad
  \|M_r(1)^{-1}\|_{\mathcal Y_r\to\mathcal X_r}\le2C_L.
 \]
-Choose \(B_F\) to cover these four bounds and \(C_{88},c_h\) to cover (A.23) and cutoff multiplication for all four systems.
+Choose \(B_F\) to cover these four bounds and \(C_{\rm com},c_h\) to cover (A.23) and cutoff multiplication for all four systems.
 No constant depends on depth, fine mesh, volume or the admitted region shapes.
 
 Finally the scalar saddle inverse gives the actual projection \(R\), and elimination gives the actual vector Schur complement

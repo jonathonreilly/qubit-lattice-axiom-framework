@@ -46,7 +46,7 @@ constant O(1) depends on d and L only."
   |(QGQ^*)^{-1}(y,y')| <= O(1) (L^j eta)^{-2} (L^{j'} eta)^{-d} e^{-delta_1 d(y,y')},  y ∈ Λ_j, y' ∈ Λ_{j'},
 
 "and the same for the operator with G_1 instead of G." This agrees with the visual reading
-in `library/b99.md:123-129` (there with d = 4). The model it is "analyzed in the same way
+in `library/b99.md:121-128` (there with d = 4). The model it is "analyzed in the same way
 as" is Theorem 3.2, (3.48), journal p. 398:
 |(Q'G'^2Q'^*)^{-1}(y,y')| <= B_0 (L^j eta)^{-4} (L^{j'} eta)^{-d} e^{-delta_0 d(y,y')}.
 
@@ -90,7 +90,7 @@ What is reused, with its standing:
 
 d = 4, G = SU(N), and L is the block factor of the account (odd, as the symmetric contours of
 CMP 109 used by P15 require). Fine spacing eta = L^{-k}, l_j = L^j eta. The fine lattice is a
-finite periodic box. A tower {Omega_j}_{0<=j<=k} is admissible as in CA-I 12695-12710
+finite periodic box. A tower {Omega_j}_{0<=j<=k} is admissible as in CA-I 12712-12724
 (CMP 102b (1)): Omega_j is a union of blocks of side M_b l_j of the level-j block grid (the
 grids are nested), and
 
@@ -100,12 +100,12 @@ Here M_b is the account's block size of the propagator papers (written \mathfrak
 Balaban's M in CMP 99b). The level of a site x in Omega_0 is lambda(x) = max{j : x in Omega_j};
 layer j is Omega_j \ Omega_{j+1} = B^j(Lambda_j). Bond sets, layer bond sets, rows at seams and
 the Dirichlet compression to Omega_0 follow the default convention of `library/flat-port.md`
-§§2-3: the bond set of Omega_j is the set of bonds with an end point in Omega_j (CA-I 12707),
+§§2-3: the bond set of Omega_j is the set of bonds with an end point in Omega_j (CA-I 12721-12722),
 and layer bond sets are differences. A level-j field row c is a bond of the level-j coarse
 lattice in Lambda_j; a level-j site row is a point of Lambda_j. The local scale m is l_j on
 level-j objects (on a fine bond, the larger end-point scale, as in flat-port (8.3)).
 
-Pairings (CA-I 12740-12745): eta^4 sum tr on fine objects, l_j^4 sum tr on level-j rows
+Pairings (CA-I 12756-12759): eta^4 sum tr on fine objects, l_j^4 sum tr on level-j rows
 (the "top" pairing); ^T is the bilinear transpose. Kernels of row operators are densities
 for the top pairing: (T psi)(y) = sum_{y'} l_{j'}^4 T(y,y') psi(y').
 
@@ -165,14 +165,50 @@ Q ⊂ Omega_i \ Omega_{i+2} = B^i(Lambda_i) ∪ B^{i+1}(Lambda_{i+1}) and Q meet
 l_{lambda(z)} <= L l_i. ∎
 
 *Remark (the printed class does not reach thin layers).* Without (Thick), a layer may contain a
-finger one block of side M_b l_j wide and many blocks long, far from Omega_{j+1}. No cube of C_j
-fits in it, and for L >= 25 no cube of C_{j-1} (side 12 M_b l_{j-1}) reaches a site on its axis.
-Then (S1) puts no condition on U_r near that axis, and the averaging rows of level j there are
-unconstrained. The theorem below assumes (S1-loc); for the account's towers this holds when
-they are thick (for instance unions of cubes of side M_1 l_j with M_1 = R'_* M_b >= 12 M_b,
-CA-I 12672-12680, if R_1 >= 12), and at the boundary of a proper Omega_0 when (S1) is read on
-the plaquettes the Dirichlet compression reads. This is a hypothesis gap in the remark as
-printed, not a counterexample; we do not claim the bounds fail on thin towers.
+finger narrower than 12 blocks and many blocks long. No cube of C_j fits in it, and cubes of
+C_{j-1} must meet the finer layer, so they reach at most 11 M_b l_{j-1} into it from each side; for
+L = 3 a finger of width 8 to 11 blocks has an uncovered core. Proposition 3.2 shows that this is
+not only a gap in the proof.
+
+**Proposition 3.2 (the remark fails as printed on a thin Omega_0).** Let G = SU(2), d = 4, k >= 0,
+and let Omega_0 contain a finger F: a box of w x w x w x l blocks of side M_b eta (w <= 11, l large)
+attached to the rest of Omega_0, at distance > (R + 24) M_b eta from Omega_1. Then there is a real
+configuration U (a = 0) satisfying (S1) and (S2) at which Delta_a is singular, so G_0 does not exist
+and q_0 = (QG_0Q^T)^{-1} is not defined.
+
+*Proof.* (1) No cube of the account's class C_0 (side 12 M_b eta, a union of level-0 blocks, inside
+Omega_0 \ Omega_2) contains a site of the middle part of F, because near that site Omega_0 = F has
+cross-section w < 12 blocks; cubes of C_j, j >= 1, lie in Omega_1. So (S1) puts no condition on
+the bonds of the middle of F. (2) Fix a bond b_0 in the middle of F with its six plaquettes inside
+F, and let U_t(b_0) = exp(i pi t sigma_3), U_t = 1 on every other bond, t in [0, 1]. Each U_t is real
+and satisfies (S1) (with A = 0 on every cube of the class) and (S2). Every operator in Delta_a(U_t)
+is defined: level-0 rows are the identity (Q_0 = I, a = eta^{-2}); rows of level >= 1 read only bonds
+near Omega_1, where U_t = 1; G'(U_t) is positive definite and Q'G'^2Q'^T invertible at every real U;
+so R(U_t) is an orthogonal projection depending continuously on t. (3) At t = 0, Delta_a(1) is
+positive definite (flat-port (8.12)). (4) At t = 1, take A = alpha sigma_3 on b_0 and zero elsewhere,
+with ||A||^2 = eta^4 |alpha|^2. Each of the six plaquettes p through b_0 has holonomy -1, so its
+second-order term flips sign: with the normalisation Delta(1) = curl^T curl of CMP 99b (3.10)-(3.12),
+<A, Delta(U_1) A> = -6 eta^{-2} ||A||^2 (the commutator term of (3.10) vanishes for a one-bond field,
+and Im U(∂p) = 0). Further <A, D_U R D_U^T A> <= ||D_U^T A||^2 = 2 eta^{-2} ||A||^2 (two end points; Ad(-1)
+is the identity), and <A, Q^T a Q A> = eta^{-2} ||A||^2 (the level-0 row of b_0 is b_0 itself, and no
+row of level >= 1 reads b_0). So <A, Delta_a(U_1) A> <= -3 eta^{-2} ||A||^2 < 0. (5) The least
+eigenvalue of the real symmetric Delta_a(U_t) is continuous in t, positive at 0 and negative at 1,
+so it vanishes at some t_*; at U_{t_*}, Delta_a is singular. ∎
+
+So "for every U satisfying (S1), (S2)" is false on admissible towers with thin parts; Balaban's
+Theorem 3.3 for G fails at the same U. The fix is the local hypothesis (S1-loc), or thick towers.
+Balaban's own Omega_0 is the R M-neighbourhood of Omega_1 (CMP 99b p. 396), which is thick, and the
+account's localised terms take Omega_0 = X, a union of CMP 109 cubes of side M >> M_b
+(CA-I 12725-12726), so the uses we found are not hit. A thin finger at a level j >= 1 would need
+Balaban's averaging to be defined at the wild configuration, which this note does not settle.
+
+*Boundary of a proper Omega_0.* Proposition 3.1 covers points x with N(x) ⊂ Omega_0. Near a
+reentrant corner of Omega_0 the set N(x) ∩ Omega_0 is not contained in any cube of the class, so
+there (S1-loc) is an extra hypothesis. It should follow from (S1) on thick Omega_0 by gluing the
+gauges of two class cubes across their overlap with a cutoff of width M_t l_0 (the transition is
+almost constant there because both potentials are small); this is a sketch, not proved here.
+When Omega_0 is the whole periodic box there is no boundary.
+
 ### 3.3 Operators
 
 At a G^c-valued configuration U on the bonds read: D_U is the covariant site difference and
@@ -213,7 +249,11 @@ and zero extension at the Dirichlet boundary, physical L^2 norms (weight eta^4):
               + sum_{alpha,beta} ||D_alpha D_beta lambda||^2 + ||m^2 mu||_top^2 + ||nu||_count^2.
 
 X^* is the dual norm for the bilinear pairing. The norms of M_r are the restrictions to the
-variables of M_r. On a local model (§4) the same formula on its geometry defines X_tau. Every
+variables of M_r. Source spaces: for r = 3, 4, 5 the source space Y_r is the dual X_r^* (the saddle
+systems are symmetric, and flat-port (8.3) takes the duals E^*, L^2, (H^2_m)^*, top as sources);
+for r = 1 it is Y_1 := L^2, since flat-port treats A_s as a map H^2_m -> L^2 (flat-port.md:588).
+Below, "X^*" for the system r means Y_r, and "X -> X^*" means X_r -> Y_r; every estimate quoted
+from flat-port or b109 is in these spaces (for r = 1, b109 (84) is the H^2 -> L^2 bound). On a local model (§4) the same formula on its geometry defines X_tau. Every
 term is a sum of local terms, so on fields supported where a model and the actual geometry
 agree, the two norms coincide. Since ||nu||_count is a component, for every operator W one has
 
@@ -245,7 +285,7 @@ All depend only on N and L (d = 4), and are chosen in this order.
 8. C_q := 4 D_* B_F c_h^2 L theta^{-1/2}.
 
 Nothing here depends on k, eta, the volume, the tower, or U. The account's floors on M_b and
-R_1 M_b ("sufficiently large", CA-I 12665-12672, 13414-13428) are lower bounds of the same kind,
+R_1 M_b ("sufficiently large", CA-I 12671-12683, 13413-13428) are lower bounds of the same kind,
 so they can be taken together with item 6. The rate delta_q differs from Balaban's delta_0; see §8.
 
 ### 3.6 The theorem
@@ -470,7 +510,7 @@ so M(U) is invertible and M(U)^{-1} = Par sum_{n >= 0} (-Res)^n, the series conv
 supported in supp h_tau, so M(h_tau Z) = M_tau(h_tau Z) = h_tau M_tau Z + [M_tau, h_tau] Z =
 h_tau^2 F + T_tau F. Summing over tau and using sum h_tau^2 = 1 gives M Par = I + Res.
 Bounds: cutoff multiplication is bounded by c_h on X and X^*, and Lemma 4.2 bounds the local
-inverse by 3 B_F; this gives the bound on S_tau. For T_tau, pair with Y in X. The element [M_tau, h_tau] Z, Z := M_tau^{-1} h_tau F, is
+inverse by 3 B_F; this gives the bound on S_tau. For T_tau, pair with a test field Y in Y_r^* (that is X_r for r >= 3, and L^2 for r = 1). The element [M_tau, h_tau] Z, Z := M_tau^{-1} h_tau F, is
 supported in A_tau, so <T_tau F, Y> = <[M_tau, h_tau] Z, chi_tau Y>, where chi_tau is a cutoff
 obeying flat-port (8.6), equal to 1 on the read closure of supp h_tau and supported in A_tau. By
 Lemmas 5.1 and 4.2, |<T_tau F, Y>| <= (C_K/M_t) 3 B_F ||h_tau F||_{X_tau^*} ||chi_tau Y|| <=
@@ -611,7 +651,7 @@ Theorem PI under (S1-loc) and (S2), with the rate delta_q of §3.5 in place of B
 | 14377-14476 | chart definition and representation: inserts Q^T(q_0 - a)B~ and Q^T q_0 B~ | Yes (algebra and existence). |
 | 14655 | analyticity of q_0 on the full admitted complex domain | Yes: (a), holomorphic on the whole ball N_{U_r}(a) < a_1^*. |
 | 14715-14774 (K3) | |Q^T(q_0 - a)B~|_{(-3)} <= C'|B~|_{(-1)} with C' = C'(d,L) | Yes: q_0 in K_{-2} and kernel algebra (i) give |q_0 B~|_{(-3)} <= C|B~|_{(-1)}; |a B~|_{(-3)} = |B~|_{(-1)}; Q^T is block-local with bounded coefficients and keeps the level weight up to L. |
-| 14831 | Q^T(q_0 - a) l^{-1} v in the first variation, weighted decay | Yes, same as K3 with the weights rho of CA-I 12750, since q_0's rate delta_q exceeds the weight rate kappa when kappa <= delta_q / 2. |
+| 14831 | Q^T(q_0 - a) l^{-1} v in the first variation, weighted decay | Yes, same as K3 with the weights rho of CA-I 12762-12770, since q_0's rate delta_q exceeds the weight rate kappa when kappa <= delta_q / 2. |
 | 15271-15348 (K10) | per walk: factors summable by B_0, and two spare exponentials e^{-delta_0 |omega|_{y,y'}} in the anchored tree length; terms analytic and local, so that zero switches separate | Yes, with delta_0 read as delta_q / (1 + 2^d): a tree through y, y' and one point of each X_{tau_m} has length <= D_X(n+1); each X_{tau_m} meets at most 2^d cubes of sigma_0 (side M >> diam X_tau), and a branch to each costs <= D_X; so |omega|_{y,y'} <= (1 + 2^d) D_X (n+1), and (d) applies with Lambda = |omega|_{y,y'}/(1 + 2^d). Summability: (c). Locality: hulls. |
 | 15770-15796 | P_0^T Delta_a = Delta_a - Q^T q_0 Q, real minimiser, then complex B | Yes (algebra; existence from (a)). |
 | 19744-19750 | operator-bounds theorem: imports J2-J8, K10 | Yes for its q_0 inputs, as above. |
@@ -628,8 +668,9 @@ min{delta_0, delta_q}, which is how Balaban defines delta_0. Every condition we 
 rate to other constants (CA-I 13413-13428; K10's delta_1 M >= kappa_1 with M the CMP 116 cube
 side, chosen later) is a lower bound on a later constant, so it survives. (2) Hypothesis: the
 remark says "every U satisfying (S1), (S2)"; Theorem PI needs (S1-loc), which (S1) gives on
-thick towers (Prop. 3.1). For a thin tower the printed class does not reach the axis of a thin
-finger (remark after Prop. 3.1), so neither the remark nor this proof covers it as stated.
+thick towers (Prop. 3.1). On a tower whose Omega_0 has a thin finger the remark as printed is
+false (Prop. 3.2); thin fingers at levels j >= 1 and reentrant corners of a proper Omega_0 are
+not covered by this proof except through (S1-loc).
 
 ## 9. Standing, limits, and what stays open
 
@@ -646,9 +687,12 @@ No computation was used; every step is a written argument, finite-dimensional ex
 uniformity of constants, which is tracked in §3.5.
 
 **What changes for the account.** The remark's two properties hold with three readings made
-explicit. (1) The hypothesis is (S1-loc); (S1) gives it on thick towers (Prop. 3.1). For thin
-towers the printed regularity class does not reach thin fingers of a layer (remark after
-Prop. 3.1); neither the remark nor this proof covers them as stated. (2) The decay rate is
+explicit. (1) The hypothesis is (S1-loc); (S1) gives it on thick towers (Prop. 3.1), for example towers
+whose Omega_n are unions of cubes of side (CMP 119 block size) x l_n, that block size being
+R'_* M_b with R'_* >= max{R_1, 8} (CA-I 12684-12691), thick once R_1 >= 12. On a tower whose Omega_0
+has a finger narrower than 12 blocks, the remark as printed is false: Proposition 3.2 gives a
+real U in (S1), (S2) at which Delta_a is singular, so G_0 and q_0 do not exist (and Balaban's
+Theorem 3.3 fails at the same U). The account's uses we found have thick Omega_0. (2) The decay rate is
 delta_q, a constant of N and L fixed before M_b; consumers that use Balaban's delta_0 should read
 the common rate min{delta_0, delta_q}, which is Balaban's own definition of delta_0. (3) The
 expansion is built as in Theorem 3.9 (local inverses on cubes, squared partition of unity,
@@ -676,4 +720,4 @@ P15-P17 (unchecked). Hypothesis gap: thin towers (S1 versus S1-loc). Rate: delta
 The check this needs is one line-by-line reading by Codex of §§3-7, with b109 P15-P16 read in the
 same pass, since they are now load-bearing.
 
-RESULT: Proved (Claude; not yet checked by the other model) Theorem PI: for every U = e^{i eta a}U_r with (S2) and the local form (S1-loc) of (S1), on every admissible tower and uniformly in depth, volume and U, q_0 = (QG_0Q^T)^{-1} exists, is holomorphic in a, satisfies CMP 99b (3.132) |q_0(y,y')| <= C l_j^{-2} l_{j'}^{-4} e^{-delta_q d(y,y')}, and has a walk expansion of type (3.98)-(3.99) whose terms read U only on their hulls and carry summable factors and two spare exponentials; the proof uses Balaban's cube method on the local five-block mixed matrix (flat-port, checked) with the complex comparison of b109 P15-P16 (unchecked), not Theorem 3.10. Open: the hypothesis gap on thin towers (S1 does not imply S1-loc there), the rate delta_q in place of Balaban's delta_0, the check of P15-P16, and G_0's pointwise bounds (3.42)-(3.47) for the H_0 consumers.
+RESULT: Proved (Claude; not yet checked by the other model) Theorem PI: for every U = e^{i eta a}U_r with (S2) and the local form (S1-loc) of (S1), on every admissible tower and uniformly in depth, volume and U, q_0 = (QG_0Q^T)^{-1} exists, is holomorphic in a, satisfies CMP 99b (3.132) |q_0(y,y')| <= C l_j^{-2} l_{j'}^{-4} e^{-delta_q d(y,y')}, and has a walk expansion of type (3.98)-(3.99) whose terms read U only on their hulls and carry summable factors and two spare exponentials; the proof runs Balaban's cube method on the local five-block mixed matrix (flat-port, checked) with the complex comparison of b109 P15-P16 (unchecked), and needs neither Theorem 3.10 nor domain-change estimates. Also proved: (S1) implies (S1-loc) on thick towers, and on a tower with a thin Omega_0 the remark as printed is false (an explicit real U in S1-S2 with Delta_a singular). Open: the check of this note and of P15-P16; thin fingers at levels j >= 1; the rate delta_q replacing Balaban's delta_0 in the consumers; and G_0's pointwise bounds (3.42)-(3.47), which the H_0 consumers also need.

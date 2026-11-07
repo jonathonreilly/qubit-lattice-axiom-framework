@@ -536,3 +536,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: PRINT-WALKS outward note drafted (row 455) and checked (row 456: FIX, no false step; nine fixes, row 457); rule 0g clean; standing OPEN.
 - 2026-11-07, rule 0f, lead: PRINT-WALKS outward note fixed and linked (rows 457, 9a3ad2072); awaiting owner OK; standing OPEN.
 - 2026-11-07, rule 0f, lead: PRINT-WALKS outward note posted as issue #14 on owner OK (rule 0h); standing OPEN in our tree (PI class only).
+- 2026-11-07, rule 0f, lead: process catch-up (owner): layer-part-ref (row 452), out-lrb-check (439), out-lsc-check (442) moved from Mini worker 1 to laptop Claude subagents; out-pda-check (436, errata class) stays on the Mini; research/ym4d snapshot PR #10141 opened off main (16 frozen parts, posted notes #10-#14); standings unchanged.

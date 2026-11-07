@@ -4,7 +4,8 @@ lease_until: 2026-11-07T16:00Z
 # PRINT-INVERSE: bounds and walk expansion of q_0 = (Q G_0 Q^*)^{-1}
 
 Queue row 424. Commit 03ffc2764. Proved by Claude, not yet checked by the other model.
-Work in progress; sections are written as they close.
+Kind: proof of a step the account cites as printed without proof (CA-I 13164-13173). Theorem PI
+is stated in §3.6 and proved in §§4-7; the consumer check is §8; standing and open items are §9.
 
 Credit. The construction is Tadeusz Balaban's (CMP 96 Proposition 2.7 and §2; CMP 99b
 §3, Theorems 3.2, 3.9, 3.10). The target statement, its consumers and the class S1-S2
@@ -229,8 +230,8 @@ All depend only on N and L (d = 4), and are chosen in this order.
    cutoff constant c_h (multiplication by a cutoff obeying flat-port (8.6) is bounded by c_h on
    X and on X^*). Put rho'_F := M_F ceil(rho_F / M_F).
 2. From the comparison [C] (§4.2): e_C > 0, C_C, and the constant C_S of (4.4). Put
-   C_K := 3 C_{8.8} (Lemma 5.1) and the overlap number D_* := 2 (16 L)^d (§4.3).
-3. The tile size M_t, a power of L, a multiple of L M_F, with M_t >= max{2 rho'_F, c_r L, C_d}
+   C_K := 3 C_{8.8} (Lemma 5.1) and the overlap number D_* := 3 (20 L)^d (§4.3).
+3. The tile size M_t, a power of L, a multiple of L M_F, with M_t >= max{2 rho'_F, c_r L, 5 C_d}
    (c_r the read enlargement of a row in P15, C_d the seam-rounding constant of §4.3) and
    theta := 3 B_F c_h^2 C_K / M_t <= 1/(16 D_*^2). Every larger power of L is also allowed.
 4. r_N := 7 M_t, and D_X := 16 d L M_t (a bound for Balaban-diameters of model read sets, §4.3).
@@ -263,7 +264,7 @@ points (a G-valued), and q_0^T = q_0. Moreover q_0 = -m^{-3} [M_5^{-1}]_{nu nu} 
   |q_0(y,y')| <= C_q l_j^{-2} l_{j'}^{-4} e^{-delta_q d(y,y')}.
 
 (c) *Walk expansion.* q_0 = sum_omega q_omega over walks omega = (tau_0, ..., tau_n), n >= 0, of
-tiles (§5.1) with X_{tau_{m-1}} ∩ X_{tau_m} nonempty, absolutely convergent at each (y, y'). Each
+tiles (§4.3) with X_{tau_{m-1}} ∩ X_{tau_m} nonempty, absolutely convergent at each (y, y'). Each
 q_omega is a holomorphic function of a that depends on U only through its restriction to the hull
 X(omega) := X_{tau_0} ∪ ... ∪ X_{tau_n}; two settings whose towers agree on N_{tau_0} ∪ ... ∪
 N_{tau_n} and whose configurations agree on X(omega) give the same q_omega. With |omega| := n,
@@ -388,9 +389,12 @@ D_X = 16 d L M_t: take a coordinate staircase inside N_tau; its Euclidean length
 14 d M_t l_{j_tau} <= 14 d L M_t l_i, which costs at most 14 d L M_t at scale l_i; each segment
 crosses the boundary of the level-(i+1) region, a union of aligned cubes of side M_b l_{i+1}, at
 most 2(14 M_t / M_b + 1) <= 10 times, and each crossing costs at most a fixed C_d to reach the
-coarse lattice; M_t >= C_d gives the bound. *Overlap.* If N_sigma meets N_tau then
-|j_sigma - j_tau| <= 1 (two levels differing by 2 would lie within the gap), so the number of tiles
-sigma with X_sigma ∩ X_tau nonempty is at most D_* := 2 (16 L)^d, independent of M_t.
+coarse lattice; there are at most 10 d crossings, and M_t >= 5 C_d gives the bound.
+*Overlap.* If N_sigma meets N_tau then |j_sigma - j_tau| <= 1 (two levels differing by 2 would lie
+within the gap). The centres of such tiles lie within l^∞ distance 7 M_t (l_{j_sigma} + l_{j_tau})
+of x_tau, and tiles of level j_sigma are spaced M_t l_{j_sigma}; counting per coordinate gives at most
+20 L, 29 and 13 choices for j_sigma = j_tau - 1, j_tau, j_tau + 1. So the number of tiles sigma with
+X_sigma ∩ X_tau nonempty is at most D_* := 3 (20 L)^d, independent of M_t.
 
 **Lemma 4.2 (local inverses).** Assume (S1-loc) with a_0 <= a_0^* and (S2) with a_1 <= a_1^*. For
 every tile tau and r in {1, 3, 4, 5}, M_{r,tau}(U) is invertible and
@@ -454,23 +458,23 @@ with |∂h| <= C/(M_t m). Repeating the proof of Lemma 4.1 with these coefficien
 
 **Lemma 5.2 (parametrix).** Put S_tau := h_tau M_tau(U)^{-1} h_tau and
 T_tau := [M_tau(U), h_tau] M_tau(U)^{-1} h_tau (model operators, transplanted: the first h_tau
-cuts a global source into A_tau, and the outputs lie in A_tau), B := sum_tau S_tau and
-R := sum_tau T_tau. Then
+cuts a global source into A_tau, and the outputs lie in A_tau), Par := sum_tau S_tau and
+Res := sum_tau T_tau. Then
 
-  M(U) B = I + R,   ||S_tau||_{X^* -> X} <= 3 B_F c_h^2,   ||T_tau||_{X^* -> X^*} <= theta,
-  ||R||_{X^* -> X^*} <= D_* theta <= 1/2,
+  M(U) Par = I + Res,   ||S_tau||_{X^* -> X} <= 3 B_F c_h^2,   ||T_tau||_{X^* -> X^*} <= theta,
+  ||Res||_{X^* -> X^*} <= D_* theta <= 1/2,
 
-so M(U) is invertible and M(U)^{-1} = B sum_{n >= 0} (-R)^n, the series converging in norm.
+so M(U) is invertible and M(U)^{-1} = Par sum_{n >= 0} (-Res)^n, the series converging in norm.
 
 *Proof.* Identity: let F be a source and Z := M_tau^{-1} h_tau F (a model field). Then h_tau Z is
 supported in supp h_tau, so M(h_tau Z) = M_tau(h_tau Z) = h_tau M_tau Z + [M_tau, h_tau] Z =
-h_tau^2 F + T_tau F. Summing over tau and using sum h_tau^2 = 1 gives M B = I + R.
+h_tau^2 F + T_tau F. Summing over tau and using sum h_tau^2 = 1 gives M Par = I + Res.
 Bounds: cutoff multiplication is bounded by c_h on X and X^*, and Lemma 4.2 bounds the local
 inverse by 3 B_F; this gives the bound on S_tau. For T_tau, pair with Y in X. The element [M_tau, h_tau] Z, Z := M_tau^{-1} h_tau F, is
 supported in A_tau, so <T_tau F, Y> = <[M_tau, h_tau] Z, chi_tau Y>, where chi_tau is a cutoff
 obeying flat-port (8.6), equal to 1 on the read closure of supp h_tau and supported in A_tau. By
 Lemmas 5.1 and 4.2, |<T_tau F, Y>| <= (C_K/M_t) 3 B_F ||h_tau F||_{X_tau^*} ||chi_tau Y|| <=
-(3 B_F c_h^2 C_K / M_t) ||F|| ||Y|| = theta ||F|| ||Y||. For R use the same pairing and Cauchy-Schwarz over tau, with the
+(3 B_F c_h^2 C_K / M_t) ||F|| ||Y|| = theta ||F|| ||Y||. For Res use the same pairing and Cauchy-Schwarz over tau, with the
 two overlap inequalities (flat-port (8.9) and the paragraph after it)
 
   sum_tau ||chi_tau Y||^2 <= c_h^2 D_* ||Y||^2,   sum_tau ||h_tau F||_{X_tau^*}^2 <= c_h^2 D_* ||F||_{X^*}^2.
@@ -478,14 +482,14 @@ two overlap inequalities (flat-port (8.9) and the paragraph after it)
 The first holds because ||.||^2 is a sum of local terms and a point lies in at most D_* of the
 supports. For the second, choose Z_tau with ||Z_tau|| = t_tau := ||h_tau F||_{X_tau^*} and
 <F, h_tau Z_tau> = t_tau^2; then sum t_tau^2 = <F, sum h_tau Z_tau> <= ||F|| c_h D_*^{1/2}
-(sum t_tau^2)^{1/2}. So ||R|| <= (3 B_F C_K / M_t) c_h^2 D_* = D_* theta <= 1/(16 D_*) <= 1/2. Then
-(I + R) sum (-R)^n = I, so B sum (-R)^n is a right inverse of the square matrix M, hence its
+(sum t_tau^2)^{1/2}. So ||Res|| <= (3 B_F C_K / M_t) c_h^2 D_* = D_* theta <= 1/(16 D_*) <= 1/2. Then
+(I + Res) sum (-Res)^n = I, so Par sum (-Res)^n is a right inverse of the square matrix M, hence its
 inverse. ∎
 
 **Lemma 5.3 (patch words).** For a walk omega = (tau_0, ..., tau_n) put
 W_omega := S_{tau_0} (-T_{tau_1}) ... (-T_{tau_n}). Then:
 (i) M(U)^{-1} = sum_omega W_omega; at each n the sum over walks of length n is finite and equals
-B(-R)^n;
+Par (-Res)^n;
 (ii) W_omega = 0 unless supp h_{tau_{m-1}} meets the read closure of supp h_{tau_m} for every m; in
 particular X_{tau_{m-1}} ∩ X_{tau_m} is nonempty;
 (iii) ||W_omega||_{X^* -> X} <= 3 B_F c_h^2 theta^n;
@@ -494,9 +498,9 @@ particular X_{tau_{m-1}} ∩ X_{tau_m} is nonempty;
 to X(omega) = X_{tau_0} ∪ ... ∪ X_{tau_n}, on the tower inside N_{tau_0} ∪ ... ∪ N_{tau_n}, and on the
 cutoffs h_{tau_m}.
 
-*Proof.* (i) (-R)^n is the finite sum of the products (-T_{tau_1}) ... (-T_{tau_n}) over all
-n-tuples of tiles; B is the finite sum of the S_tau. (ii) The rightmost factor h_{tau_{m-1}} of
-T_{tau_{m-1}} (or of S_{tau_0}) multiplies the output of [M, h_{tau_m}], which lies in the read
+*Proof.* (i) (-Res)^n is the finite sum of the products (-T_{tau_1}) ... (-T_{tau_n}) over all
+n-tuples of tiles; Par is the finite sum of the S_tau. (ii) The rightmost factor h_{tau_{m-1}} of
+T_{tau_{m-1}} (or of S_{tau_0}) multiplies the output of [M_{tau_m}, h_{tau_m}], which lies in the read
 closure of supp h_{tau_m}. Both sets lie in the X's. (iii) Product of the bounds of Lemma 5.2.
 (iv) Leftmost and rightmost cutoffs. (v) Each factor is built from M_tau(U)^{-1} (Lemma 4.2),
 the coefficients of M near supp h_tau (which read X_tau) and h_tau; products of finitely many
@@ -517,8 +521,9 @@ invertible and T^{-1} = [M_4^{-1}]_{AA};
 (iii) Gamma := K T^{-1} K^T is invertible and Gamma^{-1} = -[M_5^{-1}]_{nu nu};
 (iv) Q G_0 Q^T = m^{-1} Gamma m^3 and q_0 = m^{-3} Gamma^{-1} m = -m^{-3} [M_5^{-1}]_{nu nu} m.
 
-*Proof.* We use one fact: if M = [[X, Y], [Z, W]] with W invertible, then
-M = [[I, Y W^{-1}], [0, I]] [[S, 0], [0, W]] [[I, 0], [W^{-1} Z, I]] with S := X - Y W^{-1} Z; the
+*Proof.* We use one fact: if M = [[X11, X12], [X21, W]] with W invertible, then
+M = [[I, X12 W^{-1}], [0, I]] [[S, 0], [0, W]] [[I, 0], [W^{-1} X21, I]] with
+S := X11 - X12 W^{-1} X21; the
 outer factors are invertible, so M is invertible if and only if S is, and then
 (M^{-1})_{11} = S^{-1}.
 (i) The source (g, 0, 0) for M_3 (unknowns h, lambda, mu) gives h + A_s lambda = g,
@@ -526,9 +531,9 @@ A_s h - Q'^T mu = 0, Q' lambda = 0. If Q'G'^2Q'^T mu_0 = 0 with mu_0 ≠ 0, then
 (G'Q'^T mu_0, -G'^2 Q'^T mu_0, mu_0) is a nonzero solution with g = 0, which is impossible. So the
 square matrix Q'G'^2Q'^T is invertible. Then h = G'Q'^T mu, lambda = G'(g - h), and
 Q'G'g = Q'G'^2Q'^T mu give mu = (Q'G'^2Q'^T)^{-1} Q'G' g and h = P g.
-(ii) Apply the fact to M_4 with W = M_3, X = B_v, Y = (-D_U, 0, 0), Z = Y^T: S = B_v - D_U P D_U^T
+(ii) Apply the fact to M_4 with W = M_3, X11 = B_v, X12 = (-D_U, 0, 0), X21 = X12^T: S = B_v - D_U P D_U^T
 by (i). And B_v - D_U P D_U^T = Delta + D_U (I - P) D_U^T + Q^T a Q.
-(iii) Apply it to M_5 with W = M_4 and X = 0 (the nu-nu block), Y = (-K, 0, 0, 0), Z = Y^T:
+(iii) Apply it to M_5 with W = M_4, X11 = 0 (the nu-nu block), X12 = (-K, 0, 0, 0), X21 = X12^T:
 S = -K T^{-1} K^T = -Gamma.
 (iv) K = m Q and K^T = Q^T m^{-3} (§3.3) give Gamma = m Q G_0 Q^T m^{-3}. ∎
 
@@ -625,3 +630,50 @@ side, chosen later) is a lower bound on a later constant, so it survives. (2) Hy
 remark says "every U satisfying (S1), (S2)"; Theorem PI needs (S1-loc), which (S1) gives on
 thick towers (Prop. 3.1). For a thin tower the printed class does not reach the axis of a thin
 finger (remark after Prop. 3.1), so neither the remark nor this proof covers it as stated.
+
+## 9. Standing, limits, and what stays open
+
+**Kind of result.** Proof of a step the account cites as printed without proof (CA-I 13164-13173,
+166593-166594): Balaban's sentence before CMP 99b (3.132), for q_0 at every U of (S1-loc), (S2).
+Proved by Claude, not yet checked by the other model. It is an implication from:
+- [F], `library/flat-port.md` §§8, 9.2, 12: checked by Claude (Codex text), first failing step none;
+- the estimates of `library/b109.md` P15 (71) and P16 (81)-(88), with P17's weighted conversion
+  (92)-(95): Codex text, not checked by the other model. Lemma 4.1 restates them in layered
+  form. I read P15, P16 and P17's comparison paragraphs as inputs and found no failing step; that
+  reading is not a gate report.
+
+No computation was used; every step is a written argument, finite-dimensional except for the
+uniformity of constants, which is tracked in §3.5.
+
+**What changes for the account.** The remark's two properties hold with three readings made
+explicit. (1) The hypothesis is (S1-loc); (S1) gives it on thick towers (Prop. 3.1). For thin
+towers the printed regularity class does not reach thin fingers of a layer (remark after
+Prop. 3.1); neither the remark nor this proof covers them as stated. (2) The decay rate is
+delta_q, a constant of N and L fixed before M_b; consumers that use Balaban's delta_0 should read
+the common rate min{delta_0, delta_q}, which is Balaban's own definition of delta_0. (3) The
+expansion is built as in Theorem 3.9 (local inverses on cubes, squared partition of unity,
+Neumann series in words over walks) but on the local mixed matrix M_5, not on the Gram matrix;
+the terms have the structure and bounds of (3.98)-(3.99) with (L^j eta)^{-4} replaced by
+(L^j eta)^{-2}, and the hull of a walk is the union of its model read sets.
+
+**Where it could still fail.** The hardest input is Lemma 4.1 (ii) for the field rows: the
+depth-uniform complex comparison of Balaban's straightened averaging (P15). It rests on the
+bootstrap |b_m| <= 2 e s_m and on the telescoping (79), whose errors sum geometrically over levels.
+If P15 were wrong, Lemma 4.2 would lose its radius, and with it the whole theorem. The flat
+input [F] is checked. Everything else here is finite algebra and counting.
+
+**Not proved here (separate rows).**
+- Balaban's pointwise and Holder bounds (3.42)-(3.47) for G_0 at complex U, needed for
+  N_beta(H_0 B) <= B_0|B|, (3.133) and P_0^T in K_0 (CA-I 13675): registry rows B99b-T33, B99b-T34.
+  The energy-norm walk expansion of G_0 (remark after Lemma 5.3) does not give them.
+- (3.132) for the current-corrected G_1 (III 36352-36364) and Balaban's Theorem 3.12.
+- The analytic averaging derivatives of CMP 98 §E (Remark 4.5:rem-averaging-analyticity, BP09).
+- The sharper commutator remark after Lemma 5.1, which would make the radii independent of M_t.
+
+**Suggested tree and registry update (for the lead; not edited here).** BP07 / PRINT-INVERSE:
+proved by Claude under (S1-loc) and (S2), not checked; inputs flat-port (checked) and b109
+P15-P17 (unchecked). Hypothesis gap: thin towers (S1 versus S1-loc). Rate: delta_q.
+The check this needs is one line-by-line reading by Codex of §§3-7, with b109 P15-P16 read in the
+same pass, since they are now load-bearing.
+
+RESULT: Proved (Claude; not yet checked by the other model) Theorem PI: for every U = e^{i eta a}U_r with (S2) and the local form (S1-loc) of (S1), on every admissible tower and uniformly in depth, volume and U, q_0 = (QG_0Q^T)^{-1} exists, is holomorphic in a, satisfies CMP 99b (3.132) |q_0(y,y')| <= C l_j^{-2} l_{j'}^{-4} e^{-delta_q d(y,y')}, and has a walk expansion of type (3.98)-(3.99) whose terms read U only on their hulls and carry summable factors and two spare exponentials; the proof uses Balaban's cube method on the local five-block mixed matrix (flat-port, checked) with the complex comparison of b109 P15-P16 (unchecked), not Theorem 3.10. Open: the hypothesis gap on thin towers (S1 does not imply S1-loc there), the rate delta_q in place of Balaban's delta_0, the check of P15-P16, and G_0's pointwise bounds (3.42)-(3.47) for the H_0 consumers.

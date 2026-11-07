@@ -252,3 +252,116 @@ The local form (sup taken at each y′, not globally) matters: the datum bound o
 **The exact admission (2), stated.** At a complex point, (2.3) holds in the form of Lemma S′ under (POLY), (B1), (EXT) and the ceilings. What is proved here: the real base's membership (Lemma Q), the real admission of nested criticality (Lemma Q(c)), and the continuation along the twist segment. What is not: (POLY) is a size statement on the twist part and the collar part of the data. Its collar part is Theorem G. Its twist part needs |M^D𝐔·(M^DU)⁻¹| and the twist of Q(𝐔) relative to Q(U) to be below c₉/4 in the datum norm. The account proves the first only in its window frame ((AX1), CA-I 17560-17575: |B′| ≤ c_Qα₁ℓ_n on the twist polydisc); for the stage spaces it is a premise (TW) with that form. The second follows from (K3) at the real base, N_β(ℋ) ≤ C^K₉|B|, once (TW) holds. (B1) is Balaban's analyticity of the background map, cited in the account as the analytic form of CMP 98 Proposition 5 (4.5:rem-averaging-analyticity, printed without proof) and CMP 102b Theorem 1.
 
 So (2.3)'s "membership of (Q^u, J(Q^u)) in 𝔖" is no longer needed at complex points; it is needed, and proved, at the real base. The complex frame factors ‖Ad_u‖, ‖Ad_{h_Q}‖ of `fc.md` (2.2) disappear: the base is real, and the only complex gauge is k, applied to the comparison configuration Q(𝐔), with ‖k^{±1}‖ ≤ e^{2εdL + C_τL²κ} (Lemma G′(iii)).
+
+## 4. Item (3): the reduction to a constant condition
+
+Kind: proof of steps the account does not state (the one-frame comparison is not in the account; `stage-claude.md` §5.3 is ours), with one correction of `fc.md` §2.7.
+
+Write O := U(D, M^D𝐔) for the old auxiliary configuration (old tower D, p ≥ j+1), Q := U(D′, M^{D′}𝐔) for the new one, and R := U(D_j, M^{D_j}𝐔) for the auxiliary configuration of the tower with top level p = j. The tower D_j is the same in both frames: the nests differ only at level j+1 (`stage-claude.md` §5.3). The stage-(n+1) clauses bound the entries of Q and of R. FC asks for the entries of O.
+
+Geometry of one stage (CA-I 53745-53830, 49596-49645). In the frame D the collar R_n is a level-j layer between Γ′_j (level j in both frames; outer side) and the old level-(j+1) region Ω_{j+1} (inner side). Its width is at least one layer of level-(j+1) M-cubes, at least ML level-j steps.
+
+### 4.1 Correction: the comparison with Q has no gain from L at the outer side
+
+**Proposition R0.** In the O–Q comparison (Theorem G with any base gauge k that keeps the datum on Γ′_j-bonds O(Lκ_red), κ_red the reduced collar curvature), the datum on a rim bond r (a level-j collar bond whose plaquettes reach Γ′_j) is the relative holonomy of a plaquette straddling Γ′_j and the collar. The sources bound it by 2C_av·κ_Γ, where κ_Γ is the fine-curvature bound on Γ′_j at level-j scale, without the factor (1+β₀)L₀²L⁻² of the collar.
+
+*Proof.* Let p be the plaquette with edge r whose three other edges b₂, b₃, b₄ have an endpoint in Γ′_j. These are D′-constraints, so V = Ṽ on them (`fc.md` Lemma N, ADVANCE). A datum O(Lκ_red) on Γ′_j forces k(x)Ṽ(b)k(x′)⁻¹ = Ṽ(b)e^{O(Lκ_red)} there, so at the corners of p the relative gauge is fixed up to O(Lκ_red). Telescoping around p, V(r)·Ṽ^k(r)⁻¹ equals V(∂p)·Ṽ(∂p)⁻¹ up to conjugation and O(Lκ_red). Each of V(∂p), Ṽ(∂p) is a level-j plaquette of an average whose four corner blocks lie half in Γ′_j and half in the collar; CMP 98 Proposition 2 (C_av = 2, CA-I 17687) bounds it by twice the largest fine-curvature bound over those blocks, which is κ_Γ. ∎
+
+This is an upper bound, not a counterexample: V(∂p) and Ṽ(∂p) may be closer than κ_Γ. But no source gives the reduced bound. `fc.md` §2.7 used |δd| ≤ 2C_axLκ_{n+1} with the collar's reduced curvature for every c ∈ 𝒞⁺, rim bonds included, and derived (FC*_j) at m = j "next to the collar". On the outer side that step is unsupported: the O–Q response there is of order B_♯·2C_av·κ_Γ, the size of the room's unit itself, with no factor L⁻¹. So **(FC*_j) of `fc.md` is not the right condition at m = j.** The next two propositions replace it.
+
+### 4.2 The outer zone: compare O with the persistent tower R
+
+**Proposition R1 (outer zone).** Let w_in be half the collar's width in scaled distance (so w_in ≥ ½ML in level-j units, and w_in ≥ ½cMR_{j+1} under (WT) below), and let 𝒪 be the set of sited points at scaled distance ≥ w_in from Ω_{j+1}. Assume the hypotheses of Theorem G for the pair (M^jO, M^j𝐔) on Ω_{j+1} near the collar, with curvature bound κ_Ω there, and the admission of Lemma Q for the tower D_j. Then for y ∈ 𝒪 the composite entries of O at y exceed those of R at y by at most
+  (4 + d)·B_♯^{(j)}·c_N C^♯_rel L κ_Ω·e^{−δ_L w_in}·(1 + small)
+in the units of y, where B_♯^{(j)} is Lemma L's constant for the tower D_j.
+
+*Proof.* O and R have the same D_j-data except on the level-j bonds of Ω_{j+1}: D reads levels ≥ j+1 there, D_j reads level j. O is critical for D_j with its own data (CA-I 128485 (a): D-data are averages of D_j-data). O lies in D_j's uniqueness domain: CMP 102b Theorem 1 for D puts O in 𝔘_k({Ω^D_i}, B_3ε₁) with ε₁ the regularity of M^D𝐔, and D_j's regularity conditions are a subset of D's (D_j stops at level j on the same regions), so 𝔘_k({Ω^D_i}, ε) ⊆ 𝔘_k({Ω^{D_j}_i}, ε); then Lemma Q(c)'s argument applies. So O and R are D_j-minimizers whose data differ only on Ω_{j+1}. Both have the same level-(j+1) data there, and their level-j plaquettes on Ω_{j+1} are bounded by κ_Ω := max(2·(stage bound at Ω_{j+1}, level-j scale), C·B_3ε₁), the second term from Theorem 1's cube bound (9) for O. So Theorem G applies to the pair (M^jO, M^j𝐔) on Ω_{j+1} with base freedom, and Lemma S′ gives the response bound; the datum lies at scaled distance ≥ w_in from y. The factor 4 is ST1 Lemma 7 (46) for curvature, the factor d the descent maps (§4.5). No input from §4.3 is used. ∎
+
+On 𝒪 the room needed is at least ¼β·unit(y), and R's entries satisfy the stage-(n+1) bound. So FC holds on 𝒪 if
+  (CC-out) (4+d)B_♯^{(j)}c_N C^♯_rel L·sup_{y∈𝒪} [κ_Ω/unit(y)]·e^{−δ_L w_in} ≤ ¼β·2^{−|m(y)−j−1|}.
+The unit at y is at least the unit on Ω_{j+1} (the weights do not decrease outward, CA-I 49618-49645: e grows by one per original layer from 0 next to Ω_{j+1} up to j+1−k₀ in the processed part), and κ_Ω ≤ C·B_3ε₁ with ε₁ ≤ 2(1+β₀)L₀^{2N₀}α_{0,·}, a γ-small quantity whose size is irrelevant here because it is multiplied by e^{−δ_L w_in}. So (CC-out) holds once δ_L·ML/2 ≥ ln[(4+d)B_♯^{(j)}c_N C^♯_rel·8L·2^{|m−j−1|}/β], uniformly in m because the decay distance also grows with |m−j| (CA-I 13471-13473). This is a floor on M, imposed after L; M is chosen after the (d,L)-numbers (CA-I 1537). **No constant condition arises on the outer side.**
+
+### 4.3 The inner zone: compare O with Q
+
+**Proposition R2 (inner zone).** Let ℐ be the sited points at scaled distance ≥ w_in from Γ′_j. Under Theorem G, Lemma S′ and the premises listed in §4.6, for y ∈ ℐ of level m the composite entries of O exceed those of Q^{k̃} at y by at most
+  (4 + d)·n_bC^K₁₉₀ Σ_{y′} e^{−c_*δ₀d(y,y′)}·c_N C^♯_rel L·κ_loc(y′),
+and those of Q^{k̃} exceed those of Q by at most γ_k·entry(y) on the 4L-neighbourhood of the collar, γ_k := e^{2(2εdL + C_τL²κ)} − 1, and not at all elsewhere.
+
+*Proof.* Lemma S′ with the local datum bound of Theorem G(a). The curvature of e^{iηℋ_O}U^♯₀ and e^{iηℋ_W}U^♯₀ differs by at most 4N_y(ℋ_O − ℋ_W) in curvature units (ST1 Lemma 7 (46), applied at the base e^{iηℋ_W}U^♯₀ with increment (1/iη)log(e^{iηℋ_O}e^{−iηℋ_W})); the currents differ by 𝔍(B_O) − 𝔍(B_W) ((K6)(b) at both points). The entries are read on Balaban's axial representatives; the Landau-to-axial maps of the two chart outputs differ by e^{O(N(ℋ_O − ℋ_W))} along descent paths of length ≤ dℓ_m/2, which costs the factor d (§4.5). k̃ is the fine lift of k, constant on the descent trees; ‖Ad_{k̃}^{±1}‖ ≤ 1 + γ_k by Lemma G′(iii), and k̃ = 1 off the 4L-neighbourhood by Lemma G′(iv). ∎
+
+The rim part of the datum is unreduced (Proposition R0) but lies at distance ≥ w_in from ℐ, so it enters only through e^{−δ_L w_in} and is paid by the same floor on M as (CC-out), with κ_Γ/unit(y) ≤ L_0^{2(j+1−k₀)}L²·(1+β₀)^{…} in place of κ_Ω/unit(y). This needs the floor δ_L ML/2 ≥ 2(j+1−k₀)ln L₀ + ln(…). Since j+1−k₀ ≤ N₀ ≤ R_k − 1 depends on the coupling (CA-I 53766-53775, 45848), this floor is not uniform unless the separation also grows with R_k; it does if the collar's inner layers have width ≍ MR_{j+1} (CMP 119 p. 256: the domains are unions of MR_j-cubes). Premise (WT) below states exactly this.
+
+What remains is the inner points close to the collar. There the datum is reduced: κ_loc(y′) = 2(1+β₀)^{1+Δ}L₀^{2Δ}·α_{0,m}L⁻²·unit(y) with Δ ≤ 1 the difference of weight exponents between neighbouring points of the inner side (one original layer at most, by the exponent formulas of CA-I 49618-49641). With the room ¼β2^{−|m−j−1|} per unit, FC holds on ℐ if
+
+  **(CC′)** 2(4+d)·B_♯·c_N·C^♯_rel·C_av·(1+β₀)²L₀²·L⁻¹ ≤ ¼β·(1 − γ_k)  with C_av = 2,
+
+together with the floor on R₁𝔐 for the far levels (§4.4) and the γ-ceiling γ_k ≤ β/16.
+
+### 4.4 Far levels, m = j−1, and the weights
+
+* **m = j−1.** Level-(j−1) points lie outside Ω_j. Admissibility of the new nest gives ℓ_j⁻¹dist(Ω_j^c, Ω″_{j+1}) > R𝔐 (CA-I 4.5 conventions item 7), and Ω″_{j+1} ⊇ R_n. So these points are at scaled distance > R𝔐 from the collar, and the decay applies. `fc.md`'s unresolved case "if level-(j−1) cells touch the collar" does not occur when the stage-(n+1) nest is admissible, which the D′ tower needs anyway.
+* **|m − j| ≥ 2.** The gate's casewise objection (`gates/fc-gate.md` §2.7) is answered by the local form: each datum point y′ enters with its own κ_loc(y′), and the ratio κ_loc(y′)/unit(y) is controlled by the exponent of y′ minus that of y. By CA-I 49618-49641 this difference is at most one per original layer crossed, plus one for the stage advance; each layer crossed costs scaled distance ≥ R₁𝔐 (CA-I 13471-13473). The sum Σ_{y′}e^{−δ_L d(y,y′)}L₀^{2Δe}(1+β₀)^{Δe} then converges with a factor ≤ 2 once δ_LR₁𝔐 ≥ ln(4(1+β₀)L₀²). This is a floor on R₁𝔐, of the kind of (4.5:eq-kernel-algebra-a), placed after L₀.
+* **Premise (WT).** The exponent of the clause at a point changes by at most one across each original layer, and the layers between the collar's outer side and its inner side have total width ≥ c·MR_{j+1} in level-j units, with c > 0 fixed. The exponent formulas (1.64), (1.66), (1.68) quoted at CA-I 148140-148204 give the first part; the second is a reading of CMP 119's MR_j-cube structure, not checked against CMP 122a (unavailable here).
+
+### 4.5 Gauge losses
+
+At real points there are none: k is G-valued (Lemma G′(v)), the base is real, and the entries are unitarily invariant. At complex points there are three, all local or proportional to the response: (i) ‖Ad_{k̃}‖ ≤ 1 + γ_k on the 4L-neighbourhood of the collar only (Lemma G′(iii),(iv)); (ii) the descent maps from the chart's Landau-gauge output to Balaban's axial representative, which differ between the two compared outputs by at most e^{(d/2)N(ℋ_O − ℋ_W)} (factor d in (CC′)); (iii) none from the base, which is real. This answers the gate's objection that a fixed unweighted ε_Ad cannot be paid at far levels (`gates/fc-gate.md` §2.7): no loss is fixed and unweighted; (i) vanishes off the collar and (ii) decays with the response.
+
+### 4.6 Theorem FC″: the reduction
+
+**Theorem FC″ (implication).** Fix an ordinary stage n+1 under the one-frame reading (R1). Assume:
+1. the premises of Theorem G: (GEO), (EXT), (CURV), (COORD), and the ceilings (CE), (CK), (CK3);
+2. Lemma Q's ceiling, and (POLY), (TW), (B1) of Lemma S′;
+3. (K1), (K6), (K8) of the response chart (CA-I 14496-14899, 15669-15700; proved implications from the printed CMP 99b (3.132)), ST1 Lemma 7, and nested criticality (a) (CA-I 128485);
+4. (WT), the floors δ_LR₁𝔐 ≥ ln(4(1+β₀)L₀²) and δ_L·w_in ≥ ln[(4+d)B_♯c_N C^♯_rel·8L/β] + 2N₀ln L₀, and the ceiling γ_k ≤ β/16. Since N₀ = 1 + log_L R_{k₀+1} (CA-I 53768) and w_in ≥ ½cMR_{j+1} by (WT), the second floor follows from one floor on M placed after L, uniformly in the coupling;
+5. (CC′).
+Then every point of the stage-(n+1) space satisfies, for every old tower D with p ≥ j+1 and every sited point y of level m, D's composite clauses (entries 2 and 4) at the stage-(n+1) bound plus at most ½β2^{−|m−j−1|} times the clause's unit. That is FC.
+
+*Proof.* Points of 𝒪 by Proposition R1 and (CC-out); points of ℐ by Proposition R2 and (CC′); 𝒪 ∪ ℐ is every point, because the collar is wider than 2w_in. The far levels and m = j−1 by §4.4, the losses by §4.5. On the collar itself the old unit is larger than the new bound by L²/((1+β₀)L₀²) (`fc.md` §2.7, third bullet), so any of the above estimates suffices there. ∎
+
+### 4.7 The constant condition
+
+**Lemma CC′ (open).** (CC′) holds for some admissible L, with L₀ ≥ 2 as small as the rest of the account permits.
+
+Only one factor in (CC′) can grow with L: B_♯ = n_bC^K₁₉₀C_Σ (`stage-claude.md` §4). The others are numbers: C_av = 2 at real data (CMP 98 Proposition 2 in the form of CA-I 17687; at complex data C_98 = 2 + O(α₁) along the account's route, printed without proof, CA-I 13252-13300); C^♯_rel ≤ 5.4·10⁵ depends on d only (Lemmas G′, G″); c_N = √N; (1+β₀)² < 1.31; and L₀ may be taken equal to 2, since the account's other constraints on L₀ are upper bounds (L₀² ≤ L/3, L₀^{6N₀} ≤ L^{4N₀}, CA-I 45849, 68334). So, with β = 1/4, β₀ = 1/7, L₀ = 2, d = 4, N = 2:
+
+  (CC′) ⟸ B_♯(L) ≤ L / (2.1·10⁹).
+
+Attacks, each with its failure (the three attacks of `fc.md` §2.8 stand as revised by the gate):
+* A1 (bound B_♯ from the sources at fixed L): the account never computes C^K₁₉₀ or the decay rate behind C_Σ; they are (d,L)-numbers placed after L (CA-II 2277-2278). Fails: no supplier.
+* A2 (L large): (CC′) asks only B_♯(L) = o(L) with an explicit constant. The kernel algebra's clause (i) carries L^{d+4} in an upper bound (CA-I 13433-13438); the gate showed this is not a lower bound. Neither direction is established. Fails: the L-dependence of C^K₁₉₀ is not traced in any source.
+* A3 (smooth-datum form): the datum of Theorem G is slowly varying on the inner side (relative curvature O(κ_red), sup O(Lκ_red)). A curvature-to-flux response bound with an L-uniform constant would remove the factor L and turn (CC′) into a condition of order B′/L. (K8) bounds the response by sup|B| only (CA-I 14842-14862). Fails: no supplier; an L-uniform Schauder-type estimate for Balaban's constrained minimizers is not in reach.
+No counterexample to FC was found. The structural facts of §2 and §4.1 show where the factor L sits; they do not decide (CC′).
+
+## 5. For the lead
+
+**What moved.** The three parts of the complex frame-change BLOCK of `gates/fc-gate.md` §2:
+* (1) Lemma G on all seams: `fc.md`'s construction refuted on seams (Proposition G0); replaced by Lemma G′ (all seams, complex fields, explicit d-number C_rel) and Lemma G″ (the interface correction of CMP 99a (1.31)); the order Lκ is shown necessary (Proposition G1); the D′-endpoint and exterior requirements are met by spending the gauge on the base (Lemma B); the datum is converted to Balaban's coordinates with its constant (Theorem G).
+* (2) Membership: proved at the real base, together with the real admission of nested criticality that the gate demanded (Lemma Q); at complex points the complex base is no longer needed (Lemma S′); the remaining admission is stated exactly ((POLY), (TW), (B1)).
+* (3) The reduction: rebuilt as Theorem FC″ with every premise listed. One correction to `fc.md`: its (FC*_j) at m = j next to Γ′_j is unsupported (Proposition R0); that side is handled by the persistent tower R with no constant condition (Proposition R1). The single remaining constant condition is (CC′) on the inner side, and it reduces to B_♯(L) ≤ L/(2.1·10⁹) with C_av = 2.
+
+**Registry.** FC under (R1) (`stage-claude` lineage): reduced to Lemma CC′ plus premises (GEO), (EXT), (WT), (COORD), (POLY), (TW), (B1), ceilings and two floors on R₁𝔐 and M. Lemma CC (fc.md) is superseded by CC′.
+
+**Defects for the owners (not edited here).**
+* `fc.md` §2.5 Lemma G: the displayed bound (2.2) fails for its construction on seams by the factor (L−1)/6 (Proposition G0). The gate's failure 1 is confirmed and sharpened.
+* `fc.md` §2.6 Lemma S: the complex base and its frame factors are unnecessary; use a real base and complex block data (Lemma S′).
+* `fc.md` §2.7: the m = j case of (FC*) next to Γ′_j is unsupported (Proposition R0); the m = j−1 case cannot touch the collar if the new nest is admissible (§4.4); C_av = 2 at real data.
+* `stage-claude.md` §5.3 Step 3 uses the same per-block axial gauge ("potentials at most C_axLκ"); the seam issue of Proposition G0 applies there too, and Step 4's (FC-num) sits at m = j next to Γ′_j, where Proposition R0 applies.
+
+**What we would do differently.** Nothing on the T0 chain if the stage spaces are read as (R♭), as the account does (`stage-claude.md` Lemma F). If (R1) must be imported, the only open quantity is the growth of B_♯ = n_bC^K₁₉₀C_Σ with L. A traced L-dependence of the chart's kernel constant (CMP 99b propagator bounds, CA-I 4.5:lem-kernel-algebra) would decide (CC′); a curvature-to-flux response bound would remove the factor L altogether (attack A3).
+
+**For the checker (in order of risk).** Proposition G0 (the triangle wave S, the coarse-data computation and the seam exponent); Lemma T(b) (the path S through intermediate centres and the exponent count); Lemma G′(ii) (the change of reference and the transport of the weights, which rests on Lemma T(c)); Lemma G″ (the bump average for d = 4 and the Brouwer step); Lemma Q (the inclusion of regularity spaces between the two nests, and the use of the uniqueness clause of CMP 102b Theorem 1); Proposition R0; Proposition R1 (D_j's conditions are a subset of D's).
+
+## 6. Result
+
+**Proof**, as implications from named imports, of the three repairs the gate asked for, plus one correction and one open constant lemma. Kind: correction of our own text (`fc.md`), and proof of steps the account states only at a real background. Proved by Claude (Mini worker 1), not yet checked by the other model. Nothing rests on computation; no numeric job was run.
+
+1. **Seams (item 1).** `fc.md`'s comb construction gives seam data κL(L−1)/2 on an explicit SU(2) pair with plaquettes ≤ κ and equal coarse data, against its claimed 3Lκ (Proposition G0). Every gauge leaves at least (L−1)κ/8 on that pair (Proposition G1), so Lκ is the right order. Lemma G′ (comb frames on L-boxes, patched by hat functions, transitions controlled by Balaban's coarse averages) attains C_rel·Lκ on all seams with C_rel ≤ 5.2·10³ (d = 4); Lemma G″ adds the block correction that CMP 99a (1.31) puts on the interlayer bonds, C^♯_rel ≤ 5.4·10⁵. Both depend on d only. The gauge acts on the base (Lemma B), so no D′-constraint and no exterior datum moves; Theorem G gives the chart datum in Balaban's coordinates with |b_D| ≤ √N·C^♯_rel·L·κ_loc.
+2. **Admission (item 2).** The real base is in 𝔖 and the real nested criticality is admitted, because the D′-regularity space is contained in the D-regularity space and CMP 102b Theorem 1's uniqueness clause then applies (Lemma Q). At complex points both compared configurations are charts at that real base with complex block data, so no complex base and no complex frame factor is needed (Lemma S′). Exact remaining admission: (POLY), (TW), (B1).
+3. **Reduction (item 3).** Theorem FC″: FC under (R1) follows from Lemma CC′ and the listed premises. Correction: next to Γ′_j the comparison with Q has no gain from L (the rim datum is bounded only at the unreduced level-j scale, Proposition R0), so `fc.md`'s (FC*_j) is not the right condition; that side is handled by the persistent tower R with no constant condition (Proposition R1). The far levels, m = j−1 and the gauge losses are settled in §4.4-4.5.
+
+**One precise open lemma: CC′** — B_♯(L) ≤ L/(2.1·10⁹) for some admissible L, with L₀ = 2 (C_av = 2, C^♯_rel and the rest are fixed numbers). Attacked three ways (§4.7): no source computes C^K₁₉₀; the kernel algebra's L^{d+4} is an upper bound only; a flux-form bound is not supplied. No counterexample to FC.
+
+**What stays open.** CC′ (only under (R1)). The premises (GEO), (EXT), (WT), (COORD) are readings of CMP 119/122a/122b geometry, not checked against CMP 122 (unavailable here); (POLY)'s twist part (TW); (B1) and the chart's printed CMP 99b (3.132). The boundary layer of the localized problems (premise (EXT)). Whether (R1) or (R♭) is CMP 122a's reading (unchanged; FC is not on the T0 path under (R♭)).
+
+RESULT: complex frame-change BLOCK of gates/fc-gate.md §2 answered as implications: Lemma G's comb construction refuted on seams (explicit SU(2) counterexample, factor (L−1)/6) and replaced by Lemmas G′/G″ (all seams and the layer-interface correction, constant a d-number, order Lκ shown necessary), with the gauge moved to the base so no D′-endpoint or exterior datum changes; (2.3) membership proved at a real base together with the real admission of nested criticality (Lemma Q), complex points handled as complex data at that real base (Lemma S′); FC under (R1) reduced (Theorem FC″) to the single open constant condition CC′: B_♯(L) ≤ L/(2.1·10⁹) with C_av = 2, after correcting fc.md's m = j condition (no L-gain next to Γ′_j; handled instead by the persistent tower). Open: CC′, premises (GEO), (EXT), (WT), (COORD), (TW), (B1); not checked by the other model.

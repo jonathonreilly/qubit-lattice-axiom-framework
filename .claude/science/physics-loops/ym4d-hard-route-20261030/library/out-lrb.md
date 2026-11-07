@@ -10,7 +10,7 @@ No complete source text of those lemmas was available, so the match is to the de
 This qualification applies to the “verbatim” comparison at [CA-I 8316–8318](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L8316-L8318) and the applications at [CA-I 8340–8347](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L8340-L8347).
 
 All account and outline citations refer to commit `31a47c543775`.
-CA-I and CA-II denote Parts I and II of your complete account.
+CA-I and CA-II denote Parts I and II of your complete account. SA denotes your outline `YM4_sketch_500.tex`.
 The interpolation and Gaussian cluster integral are Balaban's CMP 116 constructions.
 The walk setting follows Balaban's CMP 99b, as specified in your account at [CA-I 4875–4907](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L4875-L4907) and [CA-I 5120–5216](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L5120-L5216).
 We use the quotations and formulas in your account for Balaban's papers; we did not inspect CMP 116 itself.
@@ -163,11 +163,11 @@ The radius floor implies \(\varsigma/(\rho-\varsigma)\le\varepsilon_0^{P'}/3\) f
 **Balaban's CMP 116 (2.14) setting.** Retain the actual Mayer and contour representation, not an arbitrary potential.
 Retain the potential form (1.42), the bounds (1.36), (1.43), and the fixed real cutoffs.
 Their form in your account is [CA-II 3530–3537](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L3530-L3537), [CA-II 3562–3567](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L3562-L3567), and [CA-II 3598–3624](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L3598-L3624).
-Use the unit auxiliary Gaussian of Balaban's (2.8):
+Use the normalized unit auxiliary Gaussian:
 \[
 d\mu_0(X)=(2\pi)^{-n/2}e^{-|X|^2/2}\,dX.
 \]
-We retain this convention explicitly; your displayed integral alone does not define its covariance.
+We retain this convention explicitly. Your account calls \(d\mu_0\) the measure of \(X\) in Balaban's CMP 116 (2.8) ([CA-I 7311](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L7311)) and does not state its covariance. Your convergence test at [CA-I 8737](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L8737) uses this normalization. We did not check it against CMP 116. If \(d\mu_0\) has instead a bounded covariance \(\Sigma\) fixed before \(M\), replace \(D_X\) by \(\Sigma^{1/2}D_X\Sigma^{1/2}\) in proof §7 and \(v\) by \(\|\Sigma\|v\); only early constants change.
 For a possibly nonsymmetric localized matrix \(C\), use your normalized-density convention at [CA-I 7303–7364](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L7303-L7364):
 \[
 H_C=\operatorname{sym}(C^{-1}),\qquad
@@ -432,8 +432,7 @@ vertex integral retain their own later ceilings.
 ### 2. Weighted walks: clause (2σ)
 
 Let \(d_\varpi=d(\varpi;b,b')\). If a walk meets a parameter cube, its footprint leaves \(H\).
-Choose a point \(x\in\operatorname{int}\Delta\cap|\varpi|\) for a parameter cube \(\Delta\).
-Then \(x\notin\operatorname{int}H\), by the prescribed meeting convention.
+By the meeting convention there is a parameter cube \(\Delta\) and a point \(x\in\operatorname{int}\Delta\cap|\varpi|\). Since \(\Delta\subset Z\setminus\operatorname{int}H\), we have \(x\notin\operatorname{int}H\).
 Since \(H\supset Z_0^{+M}\), its sup-distance from \(Z_0\) is at least \(M\).
 A tree defining \(d_\varpi\) meets the step domain containing \(x\).
 Thus that tree comes within \(4\ell\) of \(x\).
@@ -855,8 +854,7 @@ order of your account. Let
  \tag{26}
 \]
 This is [CA-I 7306–7314](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L7306-L7314) and, at scalar parameter \(s=1\),
-[CA-II 3606–3618](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L3606-L3618). Take \(d\mu_0(X)=(2\pi)^{-n/2}e^{-|X|^2/2}dX\), the normalized unit Gaussian of Balaban’s CMP 116 (2.8).
-We retain this convention as read in your account. Let \(m\) be the real coordinate dimension on \(I\), and
+[CA-II 3606–3618](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L3606-L3618). Take \(d\mu_0(X)=(2\pi)^{-n/2}e^{-|X|^2/2}dX\), the normalized unit Gaussian retained in the Setting. Let \(m\) be the real coordinate dimension on \(I\), and
 \(n\) the dimension of \(X\). The following proof is uniform in both.
 
 Choose the early number
@@ -1096,14 +1094,7 @@ The definition also contains finitely many compact \(t(Y)\)-integrals and \(\tau
 The bound (36) holds uniformly on those contours. Integration over them therefore preserves analyticity.
 The resulting finite sum is your actual \(f(\sigma)\).
 
-At a vertex, a walk multiplier is one exactly when it meets no excluded parameter cube.
-To check the footprint condition, write \(|\varpi|=\overline O\) with \(O\) open.
-A closed cube meets \(\overline O\) through its interior exactly when it meets \(O\).
-Thus avoiding the excluded cubes implies \(\overline O\subset W(\sigma')\).
-Conversely, an intersection of \(O\) with an excluded cube's interior is an open subset of that cube.
-It cannot lie in the closure of the complement of the excluded cubes.
-This proves the reverse implication.
-Hence Balaban's interpolation rule, in your formulation at [CA-I 5154–5194](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L5154-L5194), gives \(K(1_{\sigma'};\mathsf u)=K^{W(\sigma')}(\mathsf u)\).
+At a vertex, your interpolation lemma, proved at [CA-I 5154–5194](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L5154-L5194) from the footprint convention, gives \(K(1_{\sigma'};\mathsf u)=K^{W(\sigma')}(\mathsf u)\), with \(Z\) as the ambient set.
 The integral just constructed therefore is the specified vertex
 functional, including its original \(F\).
 Its analyticity implies the \(C^1\) hypothesis on the real parameter
@@ -1133,8 +1124,6 @@ This list is not a claim about every transitive use in your account.
 
 ## Who wrote and checked this
 
-Codex wrote the proof. Claude checked it line by line; first failing step: none.
-Codex wrote this outward version and incorporated the checker's clarifications.
-The Claude check concerns the underlying proof, not a separate check of this outward version.
+Codex wrote the proof. Claude checked it line by line and found no failing step; its clarifications are applied here. Codex wrote this outward version. Claude (Opus 5.5) then checked this version line by line against the proof, and its fixes are applied. Claude (Opus 5.5) checked this note line by line against the working proof.
 These are model readings of research text, not human review or an audit. They grant no scientific status.
 Every proof step above is a written argument. No computer-assisted step discharges an obligation.

@@ -274,7 +274,8 @@ All depend only on N and L, and are fixed in this order.
    for multiplication by a cutoff obeying flat-port (8.6) on X and on Y. Put
    rho'_F := M_F ceil(rho_F / M_F).
 2. From §4: the one-step radius r_1 := 1/(500 L) and the constants e_R, C_R of Lemma 4.4. From
-   §5: e_C, C_C of Lemma 5.1 and C_S of (5.4). Put C_K := 3 C_88 and D_* := 3 (20 L)^4.
+   §5: e_C <= e_R/L and C_C of Lemma 5.1, and C_S >= 2 of (5.4). Put C_K := 3 C_88 and
+   D_* := 3 (20 L)^4.
 3. One tile size M_t: a power of L, a multiple of L M_F, with M_t >= max{2 rho'_F, 4L} and
    theta := 3 B_F c_h^2 C_K / M_t <= (4 D_*)^{-4}. (Every later constant is computed from this
    M_t. Another admissible M_t gives the theorem again with all of items 4-8 recomputed; no
@@ -287,7 +288,8 @@ All depend only on N and L, and are fixed in this order.
    with C_S (L^2 a_0^* + a_1^*) <= e_L.
 8. C_q := 4 D_* B_F c_h^2 L theta^{-1/2}.
 
-Nothing here depends on k, eta, the volume, the tower or U. The account's floors on M_b and
+Nothing here depends on k, eta, the volume, the tower or U. The constants depend on N; no
+uniformity in the rank N is claimed (pi-gate §3.3). The account's floors on M_b and
 R_1 M_b (CA-I 12671-12683; its kernel algebra 13413-13428) are lower bounds of the same kind.
 They must be imposed at the rate delta_q, or at the smaller common rate a consumer uses,
 before the kernel algebra is applied (pi-gate §§3.3, 7).
@@ -315,7 +317,7 @@ rows (Definition 4.3).
 Q'G'^2Q'^T, R, Delta_a, G_0 and q_0 exist; q_0 = -m^{-3} [M_5^{-1}]_{nu nu} m and q_0^T = q_0. Each
 is holomorphic in 𝔞 on the set where the hypotheses hold (for fixed U_r), and for 𝔞 with values
 in 𝔤 (so U is G-valued) each is the operator of CMP 99b §3 built with Balaban's averaging, the
-conventions of §2 and the mass a = l^{-2} of CA-I 13593.
+conventions of §2 and the mass a = l^{-2} of CA-I 13585.
 
 (b) *Bound of the form of (3.132).* For field rows c of level j and c' of level j',
 
@@ -636,7 +638,8 @@ Rows of level 0 are identities and do not vary.
 
 *Differences.* (D_U - D_1)lambda(b) = c_b lambda(b_+) with c_b := eta^{-1}(Ad e^{i eta B_b} - 1).
 Since X ↦ Ad e^{iX} - 1 vanishes at 0 and has bounded derivative on |X| <= 1, |c_b| <= C|B_b| <=
-C e/m and |∂c| <= C|∂B| <= C e/m^2. The product rule then gives
+C e/m and |∂c| <= C|∂B| <= C e/m^2. The weights m at neighbouring points differ by at most the
+factor L, which is absorbed in C (pi-gate §4.2). The product rule then gives
 ||(D_U^T D_U - D_1^T D_1)lambda||_2 <= C e (||m^{-2}lambda||_2 + ||m^{-1} D lambda||_2) (note
 ||m^{-1}lambda|| <= ||m^{-2}lambda|| as m <= 1), |<v, (D_U D_U^T - D_1 D_1^T)w>| <= C e ||v||_E ||w||_E,
 and the same bound for the blocks -D_U, -D_U^T between h and A.
@@ -644,10 +647,12 @@ and the same bound for the blocks -D_U, -D_U^T between h and A.
 *Wilson Hessian.* Fix a plaquette p with holonomy P := U(∂p) from its base point. For a field v let
 v'_1, ..., v'_4 be its values on the four bonds of ∂p, each transported to the base point along
 ∂p and signed by orientation, and X_v := sum_k v'_k. Expanding tr(2 - W - W^{-1})/2 with
-W = E(s)P and E(s) the ordered product of the e^{i s eta v'_k} gives, for the second variation,
-  Psi_p(v, w) = (eta^2/2) tr(X_v X_w (P + P^{-1})) + (eta^2/4) tr(sum_{k<l} ([v'_k, w'_l] + [w'_k, v'_l])(P - P^{-1})),
-which is CMP 99b (3.10) per plaquette, and is eta^2 tr(X^1_v X^1_w) = eta^4 tr((dv)(p)(dw)(p)) at
-U = 1, X^1 being the untransported sum. Write P + P^{-1} = 2 + (P - 1)^2 P^{-1}. Since U = e^{i eta B},
+W = E(s)P and E(s) the ordered product of the e^{i s eta v'_k} gives the second variation
+Psi_p(v,v) = (eta^2/2) tr(X_v^2 (P + P^{-1})) + (eta^2/2) tr(sum_{k<l} [v'_k, v'_l](P - P^{-1})), so
+  Psi_p(v, w) = (eta^2/4) tr((X_v X_w + X_w X_v)(P + P^{-1})) + (eta^2/4) tr(sum_{k<l} ([v'_k, w'_l] + [w'_k, v'_l])(P - P^{-1})).
+At unitary P, (P + P^{-1})/2 = Re P and (P - P^{-1})/2i = Im P, which is the per-plaquette form of
+CMP 99b (3.10). At U = 1 it is eta^2 tr(X^1_v X^1_w) = eta^4 tr((dv)(p)(dw)(p)), X^1 being the
+untransported sum. Write P + P^{-1} = 2 + (P - 1)^2 P^{-1}. Since U = e^{i eta B},
 |P - 1| <= C eta^2 (|∂B| + |B|^2) <= C eta^2 e/m^2. So the remainder per plaquette is at most
 C |P - 1| eta^2 |v||w| <= C e eta^4 m^{-2} |v||w| (this is pi-gate §4.2's corrected normalisation:
 the raw remainder carries eta^2, not eta^4). The transports differ from 1 by at most C eta e/m,
@@ -679,8 +684,9 @@ bond component uses the value at its initial point, a site component at its site
 base point. Every reference point lies in a tile (exterior tiles cover the outer initial points),
 where its own bump is 1; so the denominator is >= 1 and sum_tau h_tau^2 = 1 on every component.
 Bumps that overlap have levels differing by at most one: if j_sigma >= j_tau + 2, then sigma ⊂
-Omega_{j_sigma} and tau ⊄ Omega_{j_sigma - 1}, so by (T) the tiles are more than R M_b l_{j_sigma - 1} >=
-M_t l_{j_sigma} apart, while the supports reach at most M_t(l_{j_sigma} + l_{j_tau})/2 beyond them.
+Omega_{j_sigma} and tau is disjoint from Omega_{j_sigma - 1} ⊂ Omega_{j_tau + 1}, so by (T) the tiles
+are more than R M_b l_{j_sigma - 1} >= M_t l_{j_sigma} apart, while the two supports reach only
+M_t l_{j_sigma}/2 and M_t l_{j_tau}/2 beyond them.
 Hence the h_tau obey flat-port (8.6) with M = M_t and constants depending on L.
 
 **Footprints and two levels.** F_tau is the closed l^inf cube of half-width r^ l_{j_tau} about x_tau,
@@ -707,7 +713,7 @@ tile the model is bare. M_{r,tau}(U) are the systems of §3.1 on 𝒢_tau, with 
 model. Their **read set** X_tau consists of the bonds read by their coefficients: the field bonds
 of the model, the bonds of the plaquettes through them (within 2 eta of K_0), and the double
 blocks of the model rows (rows of level <= i + 1 touching K_n, so within 2 l_{i+1} <= 2L l_{j_tau}
-of K_n). Hence X_tau ⊂ the box of half-width (6 M_t + 2L + 1) l_{j_tau}, which lies in N_tau since
+of K_n). Hence X_tau ⊂ the box of half-width (6 M_t + 2L + 2) l_{j_tau}, which lies in N_tau since
 M_t >= 4L. For an exterior tile, X_tau ⊂ the box of half-width 6 M_t eta + 2 eta about x_tau,
 which lies in N(z_tau) since 6 M_t + 2 + M_t/2 + 1 <= 7 M_t.
 
@@ -866,8 +872,10 @@ by (i), and this equals Delta + D_U(I - P)D_U^T + Q^T a Q.
 (iii) Apply it to M_5 with W = M_4, X11 = 0, X12 = (-K, 0, 0, 0), X21 = X12^T: S = -K T^{-1} K^T = -Gamma.
 (iv) K = mQ and K^T = Q^T m^{-3} (§3.1) give Gamma = m Q G_0 Q^T m^{-3}. ∎
 
-*Proof of Theorem PI (a).* Lemma 6.2 gives the invertibility of A_s, M_3, M_4 and M_5, and Lemma 7.1
-gives the rest of the formulas. The entries are holomorphic in 𝔞 by Lemma 6.3 (v) and uniform
+*Proof of Theorem PI (a).* Every coefficient of M_5(U) is defined: its stencil or row read set
+lies in A_tau for a tile tau whose cutoff support contains its reference point, and there it
+equals a coefficient of M_{5,tau}(U) (Agreement), defined by Lemmas 5.2 and 4.4. Lemma 6.2 gives
+the invertibility of A_s, M_3, M_4 and M_5, and Lemma 7.1 gives the rest of the formulas. The entries are holomorphic in 𝔞 by Lemma 6.3 (v) and uniform
 convergence (Lemma 6.2), or by Cramer's rule since the determinants do not vanish. Symmetry:
 Delta(U), D_U R D_U^T and Q^T a Q are symmetric for the bilinear pairing, so G_0^T = G_0 and q_0^T = q_0.
 
@@ -1069,19 +1077,19 @@ quoted at II 54617-54620), and fixes its later floors, ceilings and decoupling s
 | 13143-13173 | the remark: (3.132), walks of type (3.98)-(3.99) with hull locality and (3.108)-type bounds, for every U in (S1), (S2) | **Not as stated**: Props. 3.2 and 3.3 are counterexamples on the account's tower class (thin remote finger; one bond leaving any proper Omega_0). **Supplied** under (S1-loc), (S2), (S2+), on every tower, for the literal rows: (b) a bound of the scale and decay form of (3.132) for the bare q_0, (c)-(d) walks with hull locality and majorants, (e) setting compatibility. (S1) gives (S1-loc) at interior points of thick towers (Prop. 3.1), and everywhere when Omega_0 = T_eta. |
 | 13589, 13624-13627 | q_0 in K_{-2}; a walk expansion at complex U | Supplied: (b) with constant 8 C_q and rate delta_q, once the floors 13413-13428 are imposed at that rate; (c). |
 | 13640-13665 | H_0 = G_0 Q^T q_0 l^{-1}, P_0 = I - G_0 Q^T q_0 Q and their identities | Supplied: (a) gives G_0, q_0 and q_0^T = q_0; the identities are then algebra. |
-| 13675 | N_beta(H_0 B) <= B_0 |B|, N_beta(G~_0 f) <= B'_0 |f|_{(-3)}, P_0^T in K_0 | Partly: q_0 in K_{-2} is supplied. The pointwise and Hölder bounds of G_0 (CMP 99b (3.42)-(3.45); rows B99b-T33, B99b-T34) are separate inputs; the energy-norm words (Remark after Lemma 6.3) do not give them. |
+| 13675 | N_beta(H_0 B) <= B_0 \|B\|, N_beta(G~_0 f) <= B'_0 \|f\|_{(-3)}, P_0^T in K_0 | Partly: q_0 in K_{-2} is supplied. The pointwise and Hölder bounds of G_0 (CMP 99b (3.42)-(3.45); rows B99b-T33, B99b-T34) are separate inputs; the energy-norm words (Remark after Lemma 6.3) do not give them. |
 | 13683; 19583-19600 | hypotheses "assume the bounds and the walk expansion of q_0" | Supplies the q_0 inverse input for the literal rows under the hypotheses above (pi-gate §8 REVISE: not "discharges BP07"). Every other hypothesis remains. |
 | 13766, 13899-13909 (J3) | q_J in K_{-2}, from q_J = (I + q_0 Q (G^J_pi - G_0) Q^T)^{-1} q_0 with C_J a_gamma <= 1/2 | Supplied for the q_0 input. Impose all of 13413-13428 at the rate used, and choose the current ceiling from the resulting kernel constants. |
 | 13787-13798, 13966-13979 (J8) | a walk family for q_0 "with bounds of the type of (3.108) and (1.7)", terms local, not re-summed | Supplied for q_0: (c)-(e); words local and holomorphic, absolute majorant, summation and spare factors, two spare exponentials. The differentiated vector norms and the current-insertion families remain separate. |
 | 13915-13923 (J4) | H^J decomposition using q_J - q_0 and the H_0 bound | The q_0 part is supplied; the H_0 bound as in row 13675. |
 | 14377-14476 | chart definition and representation; inserts Q^T(q_0 - a)B~ and Q^T q_0 B~ | Supplied for the inverse factors and the algebra. Chart existence and its fixed-point estimates remain inputs (pi-gate §8 REVISE). |
 | 14655 | analyticity of q_0 on the admitted complex domain | Supplied on the PI ball {N_{U_r}(𝔞) < a_1^*} with (S2+); the consumer's domain must lie in it by its radius choice. |
-| 14715-14774 (K3) | |Q^T(q_0 - a)B~|_{(-3)} <= C'|B~|_{(-1)} | Supplied for this estimate: q_0 in K_{-2}, the physical column bound of Q^T (Lemma 4.4 (iii), (iv)) and the kernel algebra (i). The rest of K3 is not proved here. |
+| 14715-14774 (K3) | \|Q^T(q_0 - a)B~\|_{(-3)} <= C' \|B~\|_{(-1)} | Supplied for this estimate: q_0 in K_{-2}, the physical column bound of Q^T (Lemma 4.4 (iii), (iv)) and the kernel algebra (i). The rest of K3 is not proved here. |
 | 14831 | Q^T(q_0 - a) l^{-1} v in the first variation, with weights | Supplied at weight rates kappa <= delta_q/2. A first variation, not a second-response estimate. |
 | 15266-15490 (K10) | per walk: summable factors, two spare exponentials in the anchored tree length, analytic local terms, separation at zero switches | Supplied for q_0 with: the summation factor theta^{n/4} and the spare factor of (d); the localisation domains of a term are its footprints F_tau (full cubes, including parts where nothing depends); the decoupling cube side must exceed the footprint side 2 r^ l (then each footprint meets at most 2^4 cubes, an anchored tree through y, y' and the footprints has length at most (1 + 2^4) D_X (n+1), and (d) with Lambda := that length/(1 + 2^4) gives two spare exponentials at rate delta_q/(1 + 2^4)); separation at zero switches by (e). |
 | 15770-15796 | P_0^T Delta_a = Delta_a - Q^T q_0 Q; real minimiser, then complex B | Supplied for the inverse algebra. Real-minimiser identification, chart uniqueness and continuation in the datum remain the consumer's premises. |
 | 19744-19750 | operator-bounds theorem, importing J2-J8 and K10 | PI contributes only the q_0 inputs listed in this table (pi-gate §8 REVISE). |
-| 5293-5470, 5702-5712 (f4 ordered words; (C1)) | index set, letter values and supports equal in two settings agreeing on a footprint; absolute convergence of restricted operators | Supplied for the q_0 entry by the assignment of §9 (walks of fixed tile grids, letters S_tau and T_tau, footprints |omega|). Entrywise majorants and restricted sums converge by (c)-(d). Not supplied: the account's D, D', D'' families for the other operators of its table. |
+| 5293-5470, 5702-5712 (f4 ordered words; (C1)) | index set, letter values and supports equal in two settings agreeing on a footprint; absolute convergence of restricted operators | Supplied for the q_0 entry by the assignment of §9 (walks of fixed tile grids, letters S_tau and T_tau, footprints \|omega\|). Entrywise majorants and restricted sums converge by (c)-(d). Not supplied: the account's D, D', D'' families for the other operators of its table. |
 | 13323 | near bound frame: the remark "stands under" CMP 109 (3.31)-(3.32) | Attribution only; no inverse estimate is read. PI does not construct the frame. |
 | II 54464-54635 (5.8:prop-local-decay) | real backgrounds under (3.35); C_Q = q_0 with factor e^{-8 delta_1 d} | Supplied for C_Q on the literal rows at the common rate, under (S1-loc) (for (3.35)-backgrounds: at interior points of thick towers, Prop. 3.1). No bound for the other listed operators. II 54617-54620 says the exponential of (3.132) "does not depend on d(y,y')" within one layer; the page image of (3.132) decays in d(y,y') for all pairs, and so does (b). The discrepancy is recorded, not resolved here. |
 | II 60313 | list entry for (3.132)-(3.133) | (3.132) in the bare form above; (3.133) needs G_0's pointwise bounds (row 13675). |
@@ -1141,3 +1149,5 @@ Proposition 3.3. As an outward contribution it has two candidate parts: the theo
 literal rows, and the correction of the remark's hypothesis. Both must pass the five checks of
 FINISH "How we work" item 6; the second fails the account's statement as written only with the
 conventions of §2, which are the account's own (CA-I 12721-12722, 12953-12955).
+
+RESULT: Proved by Claude (not yet checked by Codex) Theorem PI for Balaban's literal CMP 99b rows (CMP 98 one-contour relative averages on corner blocks, composed at the averaged backgrounds; Lemma 4.4 gives their depth-uniform complex comparison): under (S1-loc), (S2), (S2+), on every account tower, uniformly in depth, volume and U, q_0 = (QG_0Q^T)^{-1} exists, is holomorphic, equals Balaban's operator at real points, obeys a bound of the scale and decay form of (3.132) at rate delta_q, and has a walk expansion with hull locality, summation factor theta^{n/4}, a spare factor and two spare exponentials, plus a setting-compatible assignment with footprints of half-width (2L+2)M_t l. Every pi-gate verdict is applied (class fixed in §2, exterior tiles, part (d) narrowed and proved, no claim about Balaban's Theorem 3.3). (S1) gives (S1-loc) at interior points of thick towers (Prop. 3.1); the remark as printed fails on the account's tower class (Prop. 3.2, thin remote finger, any size number >= 10; Prop. 3.3, one bond leaving any proper Omega_0, under the account's touching-bond convention). Open: Codex's check (Lemma 4.4 and Prop. 3.3 first); (S1-loc) and (S2+) at the boundary of a proper Omega_0 as a consumer obligation; G_0's pointwise bounds (B99b-T33/T34); (3.132) for G_1; the averaging derivatives (BP09).

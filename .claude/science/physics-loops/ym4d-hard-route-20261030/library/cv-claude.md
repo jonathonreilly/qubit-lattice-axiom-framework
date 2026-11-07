@@ -34,7 +34,7 @@ The account was fetched at `31a47c543775` into a scratch folder. These ranges we
 | CA-I 93510-93660; 93990-94200 | The source tube, the boundary family 𝔳^𝐂 (printed without proof), the extension conventions (a)-(e). |
 | CA-I 94370-94400 | The second kept member: "The variable 𝐉 does not enter it." |
 | CA-I 95890-96070 | The five families of the resummed density V^♯. |
-| CA-I 97640-97752 | The copies reading: smooth far copies at ext_v(ζ), rough copies at ζ. "Off the real slice, the extension of each term is a choice made at each use." Balaban reads 𝐔 through M^·(𝐔) (CMP 122b p. 375). |
+| CA-I 97640-97752 | The copies reading: smooth far copies at ext_v(ζ), rough copies at ζ. "Off the real slice, the extension of each term is a choice made at each use." For the copies, Balaban reads 𝐔 through M^·(𝐔) (CMP 122b p. 375). |
 | CA-I 13670-13800; 13980-14060; 14155-14210 | The free-current operators (J1)-(J8), the fixed point D^J, the map 𝔏^J, the functional V^J. |
 | CA-I 47250-47610 | The form walk expansion, its alphabet, the branching insertions Δ^{(2)}[𝔧_0] and 𝒥[𝔧]. |
 | CA-I 5100-5160; 5500-5570; 8839-8912 | The interpolation rule, the form-walk hypothesis, the fixed walk rule (R1)-(R3). |
@@ -177,7 +177,7 @@ For (a), Lemma R2 reduces reality to σ-equivariance of the layer equations and 
 **Idea.** pd.md Attacks 1, 4 and 5 treated 𝐉 as a variable that every member may read. Attack 11 reads the account's conventions to find which members of V_ω read 𝐉 at all. Lemma R3 then disposes of the members that do not.
 
 **Proposition B (how the tube point enters V_ω).** Let C be a treated component at the operation 𝐑_k, ζ = (𝐔,𝐉) a real pair of 𝔖, and ϖ ∈ supp Π real. Each member of the five families of V^♯(C^♯;ζ;Φ_C,0) (CA-I 95977-96063) is of one of three kinds.
-- (B1) *Configuration only.* It reads ζ only through 𝐔, through the block averages M^·(𝐔) and the backgrounds built from them. This covers Balaban's step-k members, since Balaban replaces M^·(U_k), V'' by M^·(𝐔) (CMP 122b p. 375, quoted at CA-I 97745-97750); the smooth far copies, read at ext_v(ζ), the box-minimiser pair of the level-p_v averages of 𝐔 (CA-I 97650-97680); and the members of 𝐂_k (below).
+- (B1) *Configuration only.* It reads ζ only through 𝐔, through the block averages M^·(𝐔) and the backgrounds built from them. This covers the members extended by Balaban's rule "replace M^·(U_k), V'' by the corresponding M^·(𝐔)" (CMP 122b p. 375, quoted at CA-I 97748-97750; the account quotes it for the copies, and it is not claimed here for every member); the smooth far copies, read at ext_v(ζ), the box-minimiser pair of the level-p_v averages of 𝐔 (CA-I 97650-97680); and the members of 𝐂_k (below).
 - (B2) *Old terms at ζ itself.* The rough copies and "every other copy" (CA-I 97681-97682; convention (b), CA-I 94133-94151).
 - (B3) *Terms read on the chain at ζ* (convention (a)). These are the old terms 𝐄, 𝐑, 𝐁^{(j)} with X ∩ Z ≠ ∅, the 𝐁''_k-terms and the frozen terms of the class 𝒞 (CA-I 73097-73105), read on the carrier pair chain(m).
 The members are combined by the vertex formula with real switches and masks, by connected series with integer coefficients, by the real weights w̄_v, by the frame average (2^dd!)^{-1}, by the real partition of unity, and by add-and-subtract with real coefficients. These operations preserve reality at real points (pd.md Lemma 3, (16), (19); Lemma R4).

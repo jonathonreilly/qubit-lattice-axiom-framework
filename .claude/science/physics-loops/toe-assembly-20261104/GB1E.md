@@ -2,17 +2,19 @@
 
 ## 0. Status
 
-**Pass 2; not refereed.** All constructions below are on finite periodic boxes. They concern the proposed SU(2) test-law family of `GB1QL.md`, not a selected physical law. They do not establish the infinite-lattice Y1 target or a T0 hand-off.
+**Pass 3 done (GB1E_REFEREE.md); edits applied; ready to freeze**
+
+All constructions below are on finite periodic boxes. They concern the proposed SU(2) test-law family of `GB1QL.md`, not a selected physical law. They do not establish the infinite-lattice Y1 target or a T0 hand-off.
 
 **Proved, conditional on the displayed definitions.** For positive electric coefficient, the target Hamiltonian has a trace-class heat semigroup. The local heat-kernel lift is a gauge-invariant Haar-density probability measure with the stated transfer matrix. The exact semigroup has a finite-box lift, obtained as a total-variation limit of coarse local lifts. Both have coordinate link-reflection positivity. Their relation to the tick, the Wilson measure, the finite registers and their large-register limit is given below.
 
 **GAP 1: principal generator.** Draft Proposition 3.2(a) mistakes absence of the eigenvalue −1 for absence of −1 from the spectrum. For irrational \(\tau_E/\pi\), the electric phases are dense on the circle. Thus −1 is in the spectrum and the owner's strict \(\|X_g\|<\pi\) generator does not exist for the infinite-register electric gate. The bounded Borel wrapped generator exists with norm \(\pi\), but is not the owner's strict R-GEN. The draft's inference about R-GEN widened to the target therefore fails at existence of its generator. Section 5 gives the corrected finite-register and wrapped statements.
 
-**GAP 2: scope of the hand-off.** The constructed measures are finite-torus measures. A consistent infinite-volume measure, the full T0 reflection interface and membership in its unpinned class are not established. The draft's unconditional language that (H-4D), (H-RP), or Y1 is delivered on \(\mathbb Z^4\), and that (H-class) is the first failure, exceeds its proof. The fixed-register negativity result concerns the specified group-variable kernel and small Euclidean step; it does not exclude other representations.
+**GAP 2: scope of the hand-off.** The constructed measures are finite-torus measures. T0-start[G] quantifies over every torus side (`GA2_Y2_DRAFT.md` line 211). On a hypercubic torus of even side \(N = N_t \ge 4\), both lifts are measures of the kind it takes. The infinite-volume clause concerns Y1 on \(\mathbb Z^3 \times \mathbb Z\) and the \(\mathbb Z^4\) wording of `GB1QL.md` line 335. A consistent infinite-volume measure, the full T0 reflection interface and membership in its unpinned class are not established. The draft's unconditional language that (H-4D), (H-RP), or Y1 is delivered on \(\mathbb Z^4\), and that (H-class) is the first failure, exceeds its proof. The fixed-register negativity result concerns the specified group-variable kernel and small Euclidean step; it does not exclude other representations.
 
-**Open by name.** GB1E-ς: time–space exchange invariance of the exact lift at nonzero zeros of \(\Delta\) below; (H-class), including its class and topology; T0-start for anisotropic cube-face starts; Y3 and isotropy restoration; E-2, the framework state versus the ground state; VC1; T0-rate; volume-uniform regulator convergence; the infinite-volume consistency and reflection interface in GAP 2; and which generator reading GB1 uses. GB1-H, GB1-SU2, Y1 and Y2 remain open at their assembly scope.
+**Open by name.** GB1E-ς; (H-class) as a decision; the reflection interface of the consumer; Y1 on `Z³ × Z`; T0-start for anisotropic, cube-face starts; Y3 and isotropy restoration; E-2; VC1; T0-rate; a volume-uniform form of Theorem 8.3; owner question: which generator reading GB1 uses.
 
-**Provenance.** Pass 1: `GB1E_DRAFT.md`, Claude Opus 5.5, max, as recorded there. Pass 2: Codex, `gpt-6.1-terra`, effort and session id: see run log. Draft SHA-256 `aa1d0f932fdc3a6c568c4f2e8bd0ba3500a3223d1f20d3ed2d16be81420c4663`; digest `prior/GB1E.md` SHA-256 `f8bb1c9676f49e4252b9f43547ac80936f96839cb7cce6821383c092b754b745`. Source and proof checks here are not independent referee or audit results. Draft numerical checks are reported as such, not rerun.
+**Provenance.** Editing session: Codex gpt-6.1-terra, effort high, codex-cli 0.165.0, session id `01a1b826-5073-7991-ae9f-c88c81eda6f8`. Pass 1: `GB1E_DRAFT.md`, Claude Opus 5.5, max, as recorded there. Pass 2: Codex, `gpt-6.1-terra`, effort and session id: see run log. Draft SHA-256 `aa1d0f932fdc3a6c568c4f2e8bd0ba3500a3223d1f20d3ed2d16be81420c4663`; digest `prior/GB1E.md` SHA-256 `f8bb1c9676f49e4252b9f43547ac80936f96839cb7cce6821383c092b754b745`. Source and proof checks here are not independent referee or audit results. Draft numerical checks are reported as such, not rerun.
 
 ## 1. Definitions inferred by the distiller
 
@@ -35,7 +37,7 @@ The **local lift** \(\mu_{\rm loc}[\beta,t]\), \(t>0\), has unnormalized density
 \]
 Call its local weight class \(\mathcal A_{HK}\). The **exact lift** \(\mu_{\rm ex}\) is the transfer-kernel lift of \(e^{-a_0H}\), when constructed below. The class \(\mathcal A_{FK}\) consists of these exact lifts, equivalently their specified coarse-grained local limits. Neither class is identified with T0's \(\mathcal A_{k_0}(g)\).
 
-A coordinate **link reflection** is reflection in a plane halfway between sites, together with the second such plane on the even torus. Its positive algebra consists of bounded functions of bonds wholly in one open half. Reflection positivity means \(\langle\overline{F\circ\vartheta}F\rangle\ge0\), with reflection invariance separately required.
+A coordinate **link reflection** is reflection in a plane halfway between sites, together with the second such plane on the even torus. Its positive algebra consists of bounded functions of bonds wholly in one open half. A reflection acts on bond variables by \((\vartheta\cdot U)_b = U_{\vartheta b}\), inverted when \(\vartheta\) reverses the orientation of \(b\), as in (P8.1). Reflection positivity means \(\langle\overline{F\circ\vartheta}F\rangle\ge0\), with reflection invariance separately required.
 
 ## 2. Hamiltonian and heat kernel
 
@@ -85,7 +87,7 @@ The compact interacting Hamiltonian limit for a supplied anisotropic SU(3) cube 
 
 *Proof.* Move the half magnetic factor across the symmetric product. Substitute the parameters into Theorem 3.1, and apply Theorem 3.2. □
 
-The tick alone fixes neither its logarithm nor this continuation: `GB1.md` Theorem 2.1 already proves the logarithm ambiguity, and its Theorem 2.3 proves the finite \(\mathbb Z_2\) transfer identity. The positive local transfer defines \(-\lambda^{-1}\log T_{\rm loc}\); equality to \(H\) at finite \(\lambda\) is not claimed. The constants and angles are supplied data, not derived from the unitary alone.
+The tick alone fixes neither its logarithm nor this continuation: `GB1.md` Theorem 2.1 already proves the logarithm ambiguity, and its Theorem 2.3 proves the finite \(\mathbb Z_2\) transfer identity. The positive local transfer defines \(-\lambda^{-1}\log T_{\rm loc}\); equality to \(H\) at finite \(\lambda\) is not claimed. The constants and angles are supplied data, not derived from the unitary alone. \(W_E\) fixes \(\tau_E\) only modulo \(8\pi\), since \(4E^2\) has spectrum \(\{k(k+2)\}\). Each representative \(\tau_E + 8\pi n > 0\) gives its own ray; the step \(\lambda\) is the one free constant on each ray.
 
 The following four tests are the draft's: (1) fixes a target, (2) is open-ended, (3) settles downstream physics by premise, (4) adds unneeded structure. P passes, C is conditional, F fails. These are author-side checks, not owner decisions.
 
@@ -93,7 +95,7 @@ The following four tests are the draft's: (1) fixes a target, (2) is open-ended,
 |---|---|
 | **R-SUM, proposed** | Sum the written layer exponents, giving \(H=\tau_EA+\theta H_B\) and its finite-register analogue. Tests P P C C. It selects Euclidean correlations and uses angle representatives and the sign \(\tau_E>0\), neither fixed by the tick. It does not select the state or isotropy. It is not generally a logarithm of the product tick. |
 | **R-IA, proposed** | At a supplied \(\lambda>0\), continue the symmetric layers by multiplying their angles by \(-i\lambda\). Tests P C C C. It supplies the Euclidean continuation and an extra step; \(\tau_E>0\) is required here. |
-| **Bounded R-GEN, recorded for SMG1 only** | Sum strict principal gate generators in the certified decomposition. Its recorded SMG1 tests are C P C C. Applying it to GB1 is not an owner decision and encounters GAP 1. |
+| **Bounded R-GEN, recorded for SMG1 only** | Sum strict principal gate generators in the certified decomposition. Its recorded SMG1 tests are C P C C. Applying it to GB1 is not an owner decision and encounters GAP 1. Its SMG1 grades were made for finite-dimensional gates; on GB1 it fails the definedness check at irrational \(\tau_E/\pi\). |
 | **R-ISO, recorded, not proposed** | Choose the tree-level isotropic step of Theorem 7.3. Tests F P F C. This selects a target-based calibration; it does not make the measure hypercubic invariant. |
 
 ## 5. Bounded generators
@@ -104,9 +106,25 @@ The following four tests are the draft's: (1) fixes a target, (2) is open-ended,
 
 **Theorem 5.2 (corrected draft Proposition 3.2).** Assume \(\tau_E>0\), \(24|\theta|<\pi\), and \(\tau_E/\pi\) irrational. Every finite-register gate has a strict principal generator. Its sum equals the R-SUM \(H_s\) exactly when \(\tau_Es(s+2)/4<\pi\). On the infinite target the electric gate has no strict principal generator. The Borel wrapped sum \(H_{wr}=V_\theta+\sum_\ell w(\tau_EE_\ell^2)\), \(w(x)=x-2\pi\lfloor(x+\pi)/(2\pi)\rfloor\), is bounded and gauge invariant, and Theorem 5.1 applies to it.
 
-*Proof.* No finite electric eigenphase equals −1 under irrationality; the finite spectrum therefore has positive distance from −1. The magnetic norm is below \(\pi\). The wrapped and unwrapped electric eigenvalues agree exactly below \(\pi\), giving the finite-register criterion. On the infinite register, Weyl equidistribution for the quadratic sequence \(\tau_E k(k+2)/(8\pi)\) gives dense electric phases; hence −1 belongs to the closed spectrum. A self-adjoint \(X\) with \(\|X\|<\pi\) would have \(e^{-iX}\) spectrally separated from −1, a contradiction. Borel functional calculus gives the bounded wrapped operator, whose norm can equal \(\pi\); its exponential is the electric gate. □
+*Proof.* No finite electric eigenphase equals −1 under irrationality; the finite spectrum therefore has positive distance from −1. The magnetic norm is below \(\pi\). The wrapped and unwrapped electric eigenvalues agree exactly below \(\pi\), giving the finite-register criterion. On the infinite register, the quadratic phase lemma below, with \(\alpha=\tau_E/(8\pi)\), \(c=\alpha+1/2\), and \(m=k+1\), applied to \(\tau_E k(k+2)/4=2\pi\alpha((k+1)^2-1)\), puts electric eigenphases arbitrarily close to \(\pi\); hence −1 belongs to the closed spectrum. A self-adjoint \(X\) with \(\|X\|<\pi\) would have \(e^{-iX}\) spectrally separated from −1, a contradiction. Borel functional calculus gives the bounded wrapped operator, whose norm can equal \(\pi\); its exponential is the electric gate. □
 
-Thus the draft's partition-function obstruction is valid for this explicitly defined wrapped reading and for any supplied bounded gauge-invariant generator. It is not a consequence of strict R-GEN on the infinite target, where that reading is undefined. For \(\tau_E=0\), Theorem 5.1 applies to \(H=V_\theta\); for \(\tau_E<0\), the proposed transfer is unbounded by Theorem 2.1.
+**Quadratic phase lemma (referee closure, GB1E_REFEREE.md).** If \(\alpha\notin\mathbb Q\) and \(c\in\mathbb R\), then for every \(\epsilon>0\) there is \(m\ge1\) with \(\operatorname{dist}(\alpha m^2-c,\mathbb Z)<\epsilon\).
+
+*Proof.* Write \(e(x)=e^{2\pi ix}\). For \(|u_m|\le1\) on \(1\le m\le M\), zero otherwise, and \(1\le H\le M\), each \(u_m\) occurs \(H\) times in \(\sum_n\sum_{r<H}u_{n+r}\), with \(M+H-1\) values of \(n\). Cauchy–Schwarz and grouping pairs by \(h=r-r'\) give the van der Corput inequality
+\[
+ |\textstyle\sum_m u_m|^2\le\frac{M+H}{H}\sum_{|h|<H}(1-|h|/H)|S_h|,\qquad S_h=\sum_n u_{n+h}\overline{u_n}.
+\]
+For an integer \(j\ne0\), take \(u_m=e(j\alpha m^2)\). For \(h\ne0\), the geometric sum gives \(|S_h|\le1/|\sin(2\pi jh\alpha)|\), while \(|S_0|\le M\). Divide by \(M^2\), let \(M\to\infty\), then \(H\to\infty\): \(M^{-1}\sum_{m\le M}e(j\alpha m^2)\to0\).
+
+For \(0<\epsilon<1/2\), the tent function \(f(x)=\max(0,1-\operatorname{dist}(x-c,\mathbb Z)/\epsilon)\) has integral \(\epsilon\), is positive only within \(\epsilon\) of \(c+\mathbb Z\), and has absolutely summable Fourier coefficients \(\widehat f(j)=\epsilon e(-jc)(\sin(\pi j\epsilon)/(\pi j\epsilon))^2\), with the quotient interpreted as 1 at \(j=0\). Dominated convergence of its Fourier series and the preceding limit give \(M^{-1}\sum_{m\le M}f(\alpha m^2)\to\epsilon>0\), so some term is positive. □
+
+**Strict R-GEN on GB1 (referee closure, GB1E_REFEREE.md).** Widening the strict reading to GB1's finite-box cube and link gates defines its Hamiltonian exactly when every gate \(g\) has \(-1\notin\operatorname{spec}g\). For any unitary \(g\), a Hermitian \(X\) with \(e^{-iX}=g\) and \(\|X\|<\pi\) exists exactly under that condition and is unique: the forward direction follows from spectral mapping; conversely the continuous inverse of \(x\mapsto e^{-ix}\) on the spectral arc gives \(X\) by functional calculus, and the same inverse recovers any other such \(X\). This extends `SMG1.md` Lemma G0 to any dimension. Each principal generator commutes with gauge transformations, so their finite sum is bounded, self-adjoint and gauge invariant; Theorem 5.1 excludes its lift. If any gate has −1 in its spectrum, the reading defines no Hamiltonian, including for every irrational \(\tau_E/\pi\) by the quadratic phase lemma. A rational example of failure is \(\tau_E=\pi/2\), \(k=2\).
+
+Both cases occur: for \(\tau_E=\pi/3\), \(24|\theta|<\pi\), the cube generators have norm below \(\pi\), and a link phase is \(\pi\) modulo \(2\pi\) only if \((k+1)^2\equiv13\pmod{24}\), hence \((k+1)^2\equiv5\pmod8\), impossible for a square. The link phases take finitely many values, so −1 is outside their spectrum and the partition obstruction applies.
+
+**R3, recorded only.** If −1 is not an eigenvalue of a unitary \(g\), exactly one Hermitian \(X\) with \(\|X\|\le\pi\) has \(e^{-iX}=g\) (referee closure, GB1E_REFEREE.md). The report records a non-strict variant requiring uniqueness, with author-side tests P P C P; it is not proposed. At irrational \(\tau_E/\pi\) it gives the wrapped link generator, and Theorem 5.1 excludes a lift.
+
+Thus the draft's partition-function obstruction is valid for this explicitly defined wrapped reading and for any supplied bounded gauge-invariant generator. Strict R-GEN gives the same obstruction wherever it is defined, and is undefined at every irrational \(\tau_E/\pi\). For \(\tau_E=0\), Theorem 5.1 applies to \(H=V_\theta\); for \(\tau_E<0\), the proposed transfer is unbounded by Theorem 2.1.
 
 ## 6. Reflection positivity
 
@@ -142,6 +160,8 @@ For the exact lift, at \(\theta=0\) it is the local lift with \(\beta=0\), so it
  \Delta'(0)=-\frac2{Z_0}\int_0^{N_ta_0}\!\|e^{-u\tau_EA/2}(\operatorname{Tr}X_p)P_0e^{-(N_ta_0-u)\tau_EA/2}\|_2^2\,du<0.
 \]
 Thus \(\Delta\) is nonzero real analytic, and its zeros are discrete. Since the measure at zero is already noninvariant, the possible set excludes zero. □
+
+The sign field \(\Psi\) of Theorem 6.1 commutes with \(A\) and \(P_0\), and conjugates \(H_B\) to \(-H_B\). It changes the sign of each spatial plaquette trace, so \(\Delta(-\theta)=-\Delta(\theta)\); the possible exceptional set is symmetric (referee closure, GB1E_REFEREE.md).
 
 **Theorem 7.3 (tree-level dictionary).** Write
 \[
@@ -183,7 +203,7 @@ For bounded slice functions, their gauge-projected finite-temperature correlator
 
 *Proof.* Extend the finite-register potential by zero outside \(\Pi_s\). It is uniformly bounded and converges strongly to \(V_\theta\) by the plaquette approximation of `GB1QL.md` Lemma 4.7 and density of finite-flux vectors. Duhamel gives strong convergence of the heat operators. Min–max on projected low-energy eigenvectors gives the eigenvalue limsup; compactness of the electric form domain, strong convergence of the bounded potentials, and lower semicontinuity give the liminf. Each ordered eigenvalue is bounded below by \(\tau_E\alpha_i-C\). Dominated convergence therefore gives convergence of traces. Strong convergence plus convergence of traces for positive trace-class operators gives trace-norm convergence: split with a finite-rank projection and bound the tails by Cauchy–Schwarz for Hilbert–Schmidt operators. The compressed bounded slice multipliers converge strongly, as do their adjoints; trace-norm convergence and the nonzero limiting partition function yield the correlator statement. □
 
-The limit is fixed-box, fixed \(a_0,N_t\), then \(s\to\infty\). It does not prove that the fixed-register kernels are probability measures, nor a volume-uniform estimate. The fixed-volume SU(2) real-time regulator comparison was already proved in `GB1QL.md` Theorems 4.8–4.10; the digest also identifies a different supplied SU(3) local-observable cutoff result in `docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md`, with its own hypotheses and unaudited status.
+The limit is fixed-box, fixed \(a_0,N_t\), then \(s\to\infty\). It does not prove that the fixed-register kernels are probability measures, nor a volume-uniform estimate. The volume-uniform, finite-time SU(2) real-time regulator comparison was already proved in `GB1QL.md` Theorem 4.8 and Corollaries 4.9-4.10; the digest also identifies a different supplied SU(3) local-observable cutoff result in `docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md`, with its own hypotheses and unaudited status.
 
 ## 9. Hand-off and checks
 
@@ -195,7 +215,7 @@ The limit is fixed-box, fixed \(a_0,N_t\), then \(s\to\infty\). It does not prov
 | (H-class) | The local lift is not isotropic Wilson; both lifts fail time–space exchange generically. If the specified class consists only of hypercubic-invariant densities, this excludes the local lift and the exact lift outside the exceptional set. | Pin \(\mathcal A_{k_0}(g)\) and topology; decide the exceptional exact-lift cases and the small-coupling condition. |
 | T0-rate, Y3, E-2, VC1 | Not supplied. | See the named open items in §0. |
 
-The first missing input in the original infinite-lattice hand-off remains (H-4D) unless the finite-box construction is extended with the required consistency. `GB1QL.md` Lemma H already establishes that measure properties cannot be inferred merely from slice covariance. Under a specified finite-box R-SUM target, the construction supplies that finite object; (H-class) is then a conditional obstruction, not a completed decision. Under the wrapped bounded reading, Theorem 5.1 gives a finite-box partition obstruction. Strict R-GEN is undefined on the infinite electric gate under Theorem 5.2, so it cannot be used to claim that obstruction without changing the reading. No proposed reading is adopted here.
+The first missing input in the original infinite-lattice hand-off remains (H-4D) unless the finite-box construction is extended with the required consistency. `GB1QL.md` Lemma H already establishes that measure properties cannot be inferred merely from slice covariance. Under (i) T0-start[G] in its torus form with \(N_t=N\) even, (ii) (H-RP) read as (P8.1), and (iii) a class \(\mathcal A_{k_0}(g)\) of densities invariant under exchanging time with a space axis, (H-class) fails first: for the local lift at every parameter and for the exact lift outside the discrete exceptional set. With LG1 Theorem 13's mirror set, (H-RP) fails first. Without condition (iii), the class decision remains open; on \(\mathbb Z^4\), (H-4D) is not delivered. Under the wrapped bounded reading, Theorem 5.1 gives a finite-box partition obstruction. Under strict R-GEN widened to GB1, no \(\tau_E\) gives a Hamiltonian with a transfer-kernel lift; the first failing step is the existence of the generator at every irrational \(\tau_E/\pi\), and the partition function wherever the generator exists. No proposed reading is adopted here.
 
 The local transfer is the imaginary-angle continuation of the target tick, not the original unitary update as a positive transfer. The exact lift is the Trotter limit of those continued layers. Neither statement selects the framework state or proves its ground-state relation. The finite-temperature Gibbs trace converges to the target measure's correlators as \(s\to\infty\); this is not finite-\(s\) positivity or a proof of Y1 on \(\mathbb Z^3\times\mathbb Z\).
 

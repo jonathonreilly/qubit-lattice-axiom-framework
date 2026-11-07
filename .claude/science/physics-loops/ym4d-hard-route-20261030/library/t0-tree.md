@@ -507,3 +507,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: K5 = CH records ch-r1 (row 412): CH4-AUX stays the first open input after three failed attacks; standing OPEN.
 - 2026-11-07, rule 0f, lead: K7 = CV records cv-claude round 3 (row 413, unchecked): Theorem A and the reduction to (CH-a) and (PT); standing OPEN until row 414.
 - 2026-11-07, rule 0f, lead: K7 = CV updated after cv-gate (row 414): Theorem A holds for the whole-lattice small-field step only; reduction and Proposition C not established; standing OPEN.
+- 2026-11-07, rule 0f, lead: new registry row LAYER-THM (rows 416-417): the general layer theorem the account assumes but does not state; consumed by K7, STAGE-MATCH and K5; OPEN, owner `layer-thm`.

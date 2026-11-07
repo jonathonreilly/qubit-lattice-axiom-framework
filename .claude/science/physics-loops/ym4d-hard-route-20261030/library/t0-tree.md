@@ -508,3 +508,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: K7 = CV records cv-claude round 3 (row 413, unchecked): Theorem A and the reduction to (CH-a) and (PT); standing OPEN until row 414.
 - 2026-11-07, rule 0f, lead: K7 = CV updated after cv-gate (row 414): Theorem A holds for the whole-lattice small-field step only; reduction and Proposition C not established; standing OPEN.
 - 2026-11-07, rule 0f, lead: new registry row LAYER-THM (rows 416-417): the general layer theorem the account assumes but does not state; consumed by K7, STAGE-MATCH and K5; OPEN, owner `layer-thm`.
+- 2026-11-07, rule 0f, lead: LAYER-THM records layer-thm (row 417, unchecked): partial proof; U15 covered conditional on CA-LAYER/(N1); first unproved input (G); standing OPEN.

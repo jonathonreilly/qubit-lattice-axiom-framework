@@ -224,25 +224,34 @@ an element of X is bounded by its X norm.
 ### 3.5 Constants and their order
 
 All depend only on N and L (d = 4), and are chosen in this order.
-1. From the flat package [F] (§4.1): its tile size M_F and separation rho_F (powers or multiples
-   of L), the bound B_F >= 1, and the cutoff constant c_h (multiplication by a cutoff obeying
-   flat-port (8.6) is bounded by c_h on X and on X^*). Put rho'_F := M_F ceil(rho_F / M_F).
-2. From the comparison [C] (§4.2): e_C > 0 and C_C. Put e_L := min{e_C, 1/(8 B_F C_C)}.
-3. The commutator constant C_K of Lemma 5.1 and the overlap number D_* of §5.1.
-4. The tile size M_t, a power of L, a multiple of L M_F, with M_t >= max{2 rho'_F, c_r L, C_d}
+1. From the flat package [F] (§4.1): its tile size M_F and separation rho_F (multiples of
+   powers of L), the bound B_F >= 1, the commutator constant C_{8.8} of flat-port (8.8), and the
+   cutoff constant c_h (multiplication by a cutoff obeying flat-port (8.6) is bounded by c_h on
+   X and on X^*). Put rho'_F := M_F ceil(rho_F / M_F).
+2. From the comparison [C] (§4.2): e_C > 0, C_C, and the constant C_S of (4.4). Put
+   C_K := 3 C_{8.8} (Lemma 5.1) and the overlap number D_* := 2 (16 L)^d (§4.3).
+3. The tile size M_t, a power of L, a multiple of L M_F, with M_t >= max{2 rho'_F, c_r L, C_d}
    (c_r the read enlargement of a row in P15, C_d the seam-rounding constant of §4.3) and
    theta := 3 B_F c_h^2 C_K / M_t <= 1/(16 D_*^2). Every larger power of L is also allowed.
-5. r_N := 7 M_t, and D_X := 16 d L M_t (a bound for Balaban-diameters of model read sets, §4.3).
-6. delta_q := log(1/theta) / (7 D_X) > 0.
-7. Floors: M_b a multiple of M_t with 2 r_N L + 1 <= 11 M_b; R_1 >= 12 sqrt(d) with
+4. r_N := 7 M_t, and D_X := 16 d L M_t (a bound for Balaban-diameters of model read sets, §4.3).
+5. delta_q := log(1/theta) / (7 D_X) > 0.
+6. Floors: M_b a multiple of M_t with 2 r_N L + 1 <= 11 M_b; R_1 >= 12 sqrt(d) with
    R_1 M_b >= max{rho'_F, 2 sqrt(d) L r_N + 1, 3 log L / delta_q}.
-8. Radii a_0^*, a_1^* with C_S (L^2 a_0^* + a_1^*) <= e_L, C_S the constant of (4.4).
-9. C_q := 4 D_* B_F c_h^2 L theta^{-1/2}.
+7. e_L := min{e_C, 1/(8 B_F C_C), C_{8.8} / (2 c_h C_C M_t)}, and radii a_0^*, a_1^* with
+   C_S (L^2 a_0^* + a_1^*) <= e_L. (The radii shrink like 1/M_t. With M_t fixed by L they are
+   still constants depending on N and L. A sharper commutator estimate, sketched after
+   Lemma 5.1 and not proved here, would remove the factor 1/M_t.)
+8. C_q := 4 D_* B_F c_h^2 L theta^{-1/2}.
+
+Nothing here depends on k, eta, the volume, the tower, or U. The account's floors on M_b and
+R_1 M_b ("sufficiently large", CA-I 12665-12672, 13414-13428) are lower bounds of the same kind,
+so they can be taken together with item 6. The rate delta_q differs from Balaban's delta_0; see §8.
 
 ### 3.6 The theorem
 
-**Theorem PI.** Fix the constants of §3.5. For every k >= 0, every finite periodic fine box,
-every admissible tower with R >= R_1, and every U = e^{i eta a} U_r satisfying (S1-loc) with
+**Theorem PI.** Fix the constants of §3.5. For every k >= 0, every finite periodic fine box of
+physical side at least 2 r_N L + 2 (so that no box N(x) wraps), every admissible tower with
+R >= R_1, and every U = e^{i eta a} U_r satisfying (S1-loc) with
 a_0 <= a_0^* and (S2) with a_1 <= a_1^*:
 
 (a) *Existence.* M_1 = A_s, M_3, M_4 and M_5 are invertible. Hence Q'G'^2Q'^T, R, Delta_a, G_0
@@ -255,9 +264,9 @@ points (a G-valued), and q_0^T = q_0. Moreover q_0 = -m^{-3} [M_5^{-1}]_{nu nu} 
 
 (c) *Walk expansion.* q_0 = sum_omega q_omega over walks omega = (tau_0, ..., tau_n), n >= 0, of
 tiles (§5.1) with X_{tau_{m-1}} ∩ X_{tau_m} nonempty, absolutely convergent at each (y, y'). Each
-q_omega is a holomorphic function of the restriction of U to the hull X(omega) := X_{tau_0} ∪ ...
-∪ X_{tau_n} alone; two configurations, towers or boxes with the same tiles and the same data on
-X(omega) give the same q_omega. With |omega| := n,
+q_omega is a holomorphic function of a that depends on U only through its restriction to the hull
+X(omega) := X_{tau_0} ∪ ... ∪ X_{tau_n}; two settings whose towers agree on N_{tau_0} ∪ ... ∪
+N_{tau_n} and whose configurations agree on X(omega) give the same q_omega. With |omega| := n,
 
   |q_omega(y,y')| <= C_q l_j^{-2} l_{j'}^{-4} theta^{|omega|/2} e^{-3 delta_q D_X (|omega|+1)},
 
@@ -270,8 +279,10 @@ sum theta^{|omega|/2} <= 2, and so do the walks ending at tau.
 splits as (theta^{1/4})^{|omega|} (walk summation) times (theta^{1/4})^{|omega|} (spare), and
 e^{-3 delta_q D_X(|omega|+1)} <= e^{-delta_q d(omega,y,y')} e^{-2 delta_q Lambda} for every length
 Lambda <= D_X(|omega|+1): one exponential for decay and two spare ones. The tile size M_t may be
-any allowed power of L; with M_t = M_b / (2L) the per-step factor is O(M_b^{-1}), the order of
-Balaban's O(M^{-1/2})^{|omega|} M^{-|omega|/2} in (3.99), with (L^j eta)^{-4} replaced by (L^j eta)^{-2}.
+any allowed power of L. With M_t of order M_b the per-step factor is O(M_b^{-1}), the order of
+Balaban's O(M^{-1/2})^{|omega|} M^{-|omega|/2} in (3.99), with (L^j eta)^{-4} replaced by (L^j eta)^{-2};
+but then, by item 7 of §3.5, the radii shrink like 1/M_b, and delta_q is of order log M_b / M_b.
+The default is M_t fixed by L, with theta a fixed number <= 1/(16 D_*^2).
 
 Part (a) uses no walk bound. Part (b) follows from (c) by summation (§7).
 
@@ -412,3 +423,205 @@ covariant norms are within the factor 9/8 of the flat ones, so the bound in X_ta
 (9/8)^2 (8/7) B_F < 3 B_F. Conjugating back by 𝒰 changes nothing. The entries of M_{r,tau}(U) are
 holomorphic in a (Lemma 4.1 (i)); the determinant does not vanish; Cramer's rule gives
 holomorphic entries of the inverse. The gauge was used only for the bound. ∎
+
+## 5. Assembly and patch words
+
+Throughout this section U is as in Lemma 4.2, and r in {1, 3, 4, 5} is fixed; we drop r. A field
+supported in A_tau is identified with a model field and back ("transplant"); by the agreement
+property both norms coincide there.
+
+**Lemma 5.1 (commutators).** For every tile tau and every Y in the model space,
+[M_tau(U), h_tau] Y is supported in A_tau and depends only on Y on the read closure of
+supp h_tau; it equals [M(U), h_tau] Y~ for every global field Y~ that agrees with Y on A_tau; and
+
+  ||[M_tau(U), h_tau] Y||_{X_tau^*} <= (C_K / M_t) ||Y||_{X_tau},   C_K = 3 C_{8.8}.
+
+*Proof.* [M_tau, h_tau] Y = M_tau(h_tau Y) - h_tau M_tau Y reads Y only near supp h_tau, and its
+output lies in the read closure of supp h_tau; the rest is the agreement property (§4.3). For the bound, conjugate by
+𝒰 as in Lemma 4.2; h_tau is scalar and evaluated at the same reference points, so it commutes
+with 𝒰. Then [M_tau(U^u), h] = [M_tau(1), h] + [V, h] with V := M_tau(e^{i eta B}) - M_tau(1).
+flat-port (8.8) (flat-port.md:571; h obeys (8.6) with M = M_t) gives
+||[M_tau(1), h] Y||_{X^0*} <= (C_{8.8}/M_t) ||Y||_{X^0}. By Lemma 4.1 (ii),
+||[V, h] Y|| <= ||V (h Y)|| + ||h V Y|| <= 2 c_h C_C e(B) ||Y|| <= 2 c_h C_C e_L ||Y|| <=
+(C_{8.8}/M_t) ||Y||, by the choice of e_L. Passing between flat and covariant norms costs at most
+(9/8)^2 (Lemma 4.2). So the constant is at most (81/64) 2 C_{8.8} < 3 C_{8.8}. ∎
+
+*Remark (a sharper commutator; not proved here, not used).* Every block of V has range at most
+c_r L m. The commutator replaces a zeroth-order coefficient V(x,x') by V(x,x')(h(x') - h(x)),
+with |h(x') - h(x)| <= C c_r L / M_t, and in a difference block it moves one difference onto h,
+with |∂h| <= C/(M_t m). Repeating the proof of Lemma 4.1 with these coefficients should give
+||[V, h]|| <= C e(B) / M_t. That would make e_L, and so the radii, independent of M_t.
+
+**Lemma 5.2 (parametrix).** Put S_tau := h_tau M_tau(U)^{-1} h_tau and
+T_tau := [M_tau(U), h_tau] M_tau(U)^{-1} h_tau (model operators, transplanted: the first h_tau
+cuts a global source into A_tau, and the outputs lie in A_tau), B := sum_tau S_tau and
+R := sum_tau T_tau. Then
+
+  M(U) B = I + R,   ||S_tau||_{X^* -> X} <= 3 B_F c_h^2,   ||T_tau||_{X^* -> X^*} <= theta,
+  ||R||_{X^* -> X^*} <= D_* theta <= 1/2,
+
+so M(U) is invertible and M(U)^{-1} = B sum_{n >= 0} (-R)^n, the series converging in norm.
+
+*Proof.* Identity: let F be a source and Z := M_tau^{-1} h_tau F (a model field). Then h_tau Z is
+supported in supp h_tau, so M(h_tau Z) = M_tau(h_tau Z) = h_tau M_tau Z + [M_tau, h_tau] Z =
+h_tau^2 F + T_tau F. Summing over tau and using sum h_tau^2 = 1 gives M B = I + R.
+Bounds: cutoff multiplication is bounded by c_h on X and X^*, and Lemma 4.2 bounds the local
+inverse by 3 B_F; this gives the bound on S_tau. For T_tau, pair with Y in X. The element [M_tau, h_tau] Z, Z := M_tau^{-1} h_tau F, is
+supported in A_tau, so <T_tau F, Y> = <[M_tau, h_tau] Z, chi_tau Y>, where chi_tau is a cutoff
+obeying flat-port (8.6), equal to 1 on the read closure of supp h_tau and supported in A_tau. By
+Lemmas 5.1 and 4.2, |<T_tau F, Y>| <= (C_K/M_t) 3 B_F ||h_tau F||_{X_tau^*} ||chi_tau Y|| <=
+(3 B_F c_h^2 C_K / M_t) ||F|| ||Y|| = theta ||F|| ||Y||. For R use the same pairing and Cauchy-Schwarz over tau, with the
+two overlap inequalities (flat-port (8.9) and the paragraph after it)
+
+  sum_tau ||chi_tau Y||^2 <= c_h^2 D_* ||Y||^2,   sum_tau ||h_tau F||_{X_tau^*}^2 <= c_h^2 D_* ||F||_{X^*}^2.
+
+The first holds because ||.||^2 is a sum of local terms and a point lies in at most D_* of the
+supports. For the second, choose Z_tau with ||Z_tau|| = t_tau := ||h_tau F||_{X_tau^*} and
+<F, h_tau Z_tau> = t_tau^2; then sum t_tau^2 = <F, sum h_tau Z_tau> <= ||F|| c_h D_*^{1/2}
+(sum t_tau^2)^{1/2}. So ||R|| <= (3 B_F C_K / M_t) c_h^2 D_* = D_* theta <= 1/(16 D_*) <= 1/2. Then
+(I + R) sum (-R)^n = I, so B sum (-R)^n is a right inverse of the square matrix M, hence its
+inverse. ∎
+
+**Lemma 5.3 (patch words).** For a walk omega = (tau_0, ..., tau_n) put
+W_omega := S_{tau_0} (-T_{tau_1}) ... (-T_{tau_n}). Then:
+(i) M(U)^{-1} = sum_omega W_omega; at each n the sum over walks of length n is finite and equals
+B(-R)^n;
+(ii) W_omega = 0 unless supp h_{tau_{m-1}} meets the read closure of supp h_{tau_m} for every m; in
+particular X_{tau_{m-1}} ∩ X_{tau_m} is nonempty;
+(iii) ||W_omega||_{X^* -> X} <= 3 B_F c_h^2 theta^n;
+(iv) W_omega F is supported in supp h_{tau_0} and depends only on F on supp h_{tau_n};
+(v) every matrix entry of W_omega is a holomorphic function of a that depends only on U restricted
+to X(omega) = X_{tau_0} ∪ ... ∪ X_{tau_n}, on the tower inside N_{tau_0} ∪ ... ∪ N_{tau_n}, and on the
+cutoffs h_{tau_m}.
+
+*Proof.* (i) (-R)^n is the finite sum of the products (-T_{tau_1}) ... (-T_{tau_n}) over all
+n-tuples of tiles; B is the finite sum of the S_tau. (ii) The rightmost factor h_{tau_{m-1}} of
+T_{tau_{m-1}} (or of S_{tau_0}) multiplies the output of [M, h_{tau_m}], which lies in the read
+closure of supp h_{tau_m}. Both sets lie in the X's. (iii) Product of the bounds of Lemma 5.2.
+(iv) Leftmost and rightmost cutoffs. (v) Each factor is built from M_tau(U)^{-1} (Lemma 4.2),
+the coefficients of M near supp h_tau (which read X_tau) and h_tau; products of finitely many
+holomorphic matrices are holomorphic. ∎
+
+*Remark (by-products).* The same words for r = 4 give G_0 = [M_4^{-1}]_{AA} as a sum of local
+words in the energy norms of flat-port (8.3); for r = 3 they give P and (Q'G'^2Q'^T)^{-1}.
+These are energy-norm statements; they are not Balaban's pointwise and Holder bounds (3.42)-(3.47)
+for G_0, which this note does not prove.
+
+## 6. Identification of q_0 (proof of part (a))
+
+**Lemma 6.1 (Schur chain; b109 P1 and flat-port (8.2), (8.4), (9.2), reproved).** Let U be any
+configuration at which A_s, M_3, M_4 and M_5 are invertible. Put G' := A_s^{-1}. Then
+(i) Q'G'^2Q'^T is invertible and [M_3^{-1}]_{hh} = P := G'Q'^T(Q'G'^2Q'^T)^{-1}Q'G';
+(ii) T := B_v - D_U P D_U^T = Delta(U) + D_U R D_U^T + Q^T a Q = Delta_a, with R := I - P, is
+invertible and T^{-1} = [M_4^{-1}]_{AA};
+(iii) Gamma := K T^{-1} K^T is invertible and Gamma^{-1} = -[M_5^{-1}]_{nu nu};
+(iv) Q G_0 Q^T = m^{-1} Gamma m^3 and q_0 = m^{-3} Gamma^{-1} m = -m^{-3} [M_5^{-1}]_{nu nu} m.
+
+*Proof.* We use one fact: if M = [[X, Y], [Z, W]] with W invertible, then
+M = [[I, Y W^{-1}], [0, I]] [[S, 0], [0, W]] [[I, 0], [W^{-1} Z, I]] with S := X - Y W^{-1} Z; the
+outer factors are invertible, so M is invertible if and only if S is, and then
+(M^{-1})_{11} = S^{-1}.
+(i) The source (g, 0, 0) for M_3 (unknowns h, lambda, mu) gives h + A_s lambda = g,
+A_s h - Q'^T mu = 0, Q' lambda = 0. If Q'G'^2Q'^T mu_0 = 0 with mu_0 ≠ 0, then
+(G'Q'^T mu_0, -G'^2 Q'^T mu_0, mu_0) is a nonzero solution with g = 0, which is impossible. So the
+square matrix Q'G'^2Q'^T is invertible. Then h = G'Q'^T mu, lambda = G'(g - h), and
+Q'G'g = Q'G'^2Q'^T mu give mu = (Q'G'^2Q'^T)^{-1} Q'G' g and h = P g.
+(ii) Apply the fact to M_4 with W = M_3, X = B_v, Y = (-D_U, 0, 0), Z = Y^T: S = B_v - D_U P D_U^T
+by (i). And B_v - D_U P D_U^T = Delta + D_U (I - P) D_U^T + Q^T a Q.
+(iii) Apply it to M_5 with W = M_4 and X = 0 (the nu-nu block), Y = (-K, 0, 0, 0), Z = Y^T:
+S = -K T^{-1} K^T = -Gamma.
+(iv) K = m Q and K^T = Q^T m^{-3} (§3.3) give Gamma = m Q G_0 Q^T m^{-3}. ∎
+
+*Proof of Theorem PI (a).* Lemma 5.2 gives invertibility of A_s, M_3, M_4, M_5 for every
+admitted U, and Lemma 6.1 gives the rest of the formulas. The entries are holomorphic in a by
+Lemma 5.3 (v) and uniform convergence (Lemma 5.2); equivalently, by Cramer's rule, since the
+determinants do not vanish on the domain. At real points (a G-valued) the matrices are real
+symmetric and the formulas are Balaban's: G' is his (Delta'_a)^{-1} up to the scalar mass, which
+R does not depend on (§3.3), and Delta_a, G_0 are CMP 99b (3.26)-(3.27); Q G_0 Q^T is (3.132)'s
+operator. The domain {N_{U_r}(a) < a_1^*} is convex, and holomorphic functions on it agreeing
+on its real points agree everywhere; so our operators are the analytic continuations that the
+account calls G_0 and q_0 (CA-I 13552-13571). Symmetry: Delta(U), D_U R D_U^T and Q^T a Q are
+symmetric for the bilinear pairing, so G_0^T = G_0 and q_0^T = q_0. ∎
+
+## 7. The bound (3.132) and the walk bounds (proof of parts (b)-(d))
+
+Let y in Lambda_j and y' in Lambda_{j'} be field rows. By Lemma 6.1 (iv) and Lemma 5.3 (i),
+
+  q_0(y, y') = sum_omega q_omega(y, y'),   q_omega(y, y') := -l_j^{-3} l_{j'}^{-3} (W^{(5)}_omega)_{nu nu}(y, y'),
+
+as a density for the top pairing: (J psi)(y) = sum_{y'} l_{j'}^4 J(y,y') psi(y') and the counting
+entry of m^{-3} Gamma^{-1} m is l_j^{-3} Gamma^{-1}(y,y') l_{j'}; dividing by l_{j'}^4 gives the factor
+l_j^{-3} l_{j'}^{-3}.
+
+*Each term.* By (E) and Lemma 5.3 (iii), |(W_omega)_{nu nu}(y,y')| <= 3 B_F c_h^2 theta^n, n = |omega|.
+By Lemma 5.3 (iv) the entry vanishes unless y is in supp h_{tau_0} ⊂ X_{tau_0} and y' in
+supp h_{tau_n} ⊂ X_{tau_n}. Then, choosing y_m in X_{tau_{m-1}} ∩ X_{tau_m} and using the diameter
+bound of §4.3 on each X_{tau_m}, d(omega, y, y') <= D_X (n+1), and d(y,y') <= d(omega,y,y') by the
+triangle inequality. Write l_j^{-3} l_{j'}^{-3} = l_j^{-2} l_{j'}^{-4} (l_{j'}/l_j). By (SD),
+l_{j'}/l_j <= L^{|j-j'|} <= L exp((log L / (R M_b)) d(y,y')) <= L exp((delta_q/3) D_X (n+1)), since
+R M_b >= R_1 M_b >= 3 log L / delta_q. Finally theta^n = theta^{-1/2} theta^{n/2} theta^{(n+1)/2} and
+theta^{(n+1)/2} = exp(-(7/2) delta_q D_X (n+1)) by the choice delta_q = log(1/theta)/(7 D_X). Hence
+
+  |q_omega(y,y')| <= 3 B_F c_h^2 L theta^{-1/2} l_j^{-2} l_{j'}^{-4} theta^{n/2} e^{-3 delta_q D_X (n+1)},
+
+which is part (c) since 3 B_F c_h^2 L theta^{-1/2} <= C_q. Locality and holomorphy of q_omega are
+Lemma 5.3 (v) for the nu-nu entries.
+
+*Walk sums.* From a fixed tile there are at most D_*^n walks of length n (Lemma 5.3 (ii) and the
+overlap count), and D_* theta^{1/2} <= 1/4, so sum_{omega: tau_0 = tau} theta^{|omega|/2} <=
+sum_n 4^{-n} <= 4/3; the same holds for walks ending at tau.
+
+*(3.132).* At most D_* tiles tau_0 have y in supp h_{tau_0}. For nonzero terms
+e^{-3 delta_q D_X(n+1)} <= e^{-3 delta_q d(y,y')}. Summing the term bound over walks,
+
+  |q_0(y,y')| <= D_* (4/3) 3 B_F c_h^2 L theta^{-1/2} l_j^{-2} l_{j'}^{-4} e^{-3 delta_q d(y,y')}
+              <= C_q l_j^{-2} l_{j'}^{-4} e^{-delta_q d(y,y')}.
+
+The series converges absolutely, uniformly in a; this is part (b). In the kernel classes of
+CA-I 13402-13410: for f supported on the rows of one block y', |q_0 f| <= C_q c_b l_j^{-2}
+e^{-delta_q d(y,y')} sup|f| on the rows of y, with c_b the number of field rows of a block (d per
+block), so q_0 is in K_{-2} with constant c_b C_q and rate delta_q.
+
+*(d).* theta = C_theta / M_t is the definition. For any length Lambda <= D_X (n+1) and since
+d(omega,y,y') <= D_X(n+1): e^{-3 delta_q D_X(n+1)} <= e^{-delta_q d(omega,y,y')} e^{-2 delta_q Lambda}. ∎
+
+This completes the proof of Theorem PI.
+
+## 8. Use by use: what each consumer reads, and whether Theorem PI supplies it
+
+Account lines are CA-I unless marked II or III, at commit 31a47c543775 (hashes as in
+`library/prior/print-inverse.md` §0; checked again here). "Yes" means the read is a conclusion of
+Theorem PI under (S1-loc) and (S2), with the rate delta_q of §3.5 in place of Balaban's delta_0.
+
+| Lines | What is read | Supplied? |
+|---|---|---|
+| 13143-13173 | the remark itself: (3.132) and walks of type (3.98)-(3.99), hull locality, (3.108)-type bounds, for every U in S1-S2 | Yes, under (S1-loc) (Prop. 3.1 gives it from S1 on thick towers). Parts (b), (c), (d). |
+| 13589, 13624-13627 | q_0 in K_{-2} and has a walk expansion, at complex U | Yes: (b) and the K_{-2} sentence of §7; (c). |
+| 13640-13665 | H_0 = G_0Q^T q_0 l^{-1}, P_0 = I - G_0Q^T q_0 Q; QH_0 = l^{-1}, QP_0 = 0, P_0^TQ^T = 0, Delta_a G~_0 = P_0^T: invertibility and bilinear symmetry | Yes: (a) gives existence of G_0, q_0 and q_0^T = q_0; the identities are then algebra. |
+| 13675 | N_beta(H_0 B) <= B_0|B|, N_beta(G~_0 f) <= B'_0|f|_{(-3)}, P_0^T in K_0 | Partly. q_0 in K_{-2} is supplied. These bounds also need Balaban's pointwise and Holder bounds for G_0 (CMP 99b (3.42)-(3.45) via Theorems 3.3-3.4), registry rows B99b-T33, B99b-T34, not proved here. |
+| 13683; 19583-19600 | lemma and theorem hypotheses "assume the bounds and the walk expansion of q_0" | Yes, as hypotheses: Theorem PI discharges the BP07 bullet only; the other bullets (averaging analyticity BP09, C_H, ...) stay. |
+| 13766 (J3) | q_J in K_{-2}, from q_J = (I + q_0 Q(G^J_pi - G_0)Q^T)^{-1} q_0 with C_J a_gamma <= 1/2 | Yes for the q_0 input: a K_{-2} constant c_b C_q and rate delta_q depending on d, L. The kernel algebra's conditions (13413-13428) become lower bounds on R_1 M_b in terms of delta_q, compatible with item 6 of §3.5. |
+| 13787-13793, 13974-13975 (J8) | a walk family for q_0 "with bounds of the type of (3.108) and (1.7)", terms local in their domains, not re-summed | Yes: (c)-(d). The q_0 walks are words over tiles; their domains are the hulls X(omega). |
+| 13915-13918 (J4) | H^J decomposition using q_J - q_0 and the H_0 bound | q_0 part yes; the H_0 bound as in row 13675. |
+| 14377-14476 | chart definition and representation: inserts Q^T(q_0 - a)B~ and Q^T q_0 B~ | Yes (algebra and existence). |
+| 14655 | analyticity of q_0 on the full admitted complex domain | Yes: (a), holomorphic on the whole ball N_{U_r}(a) < a_1^*. |
+| 14715-14774 (K3) | |Q^T(q_0 - a)B~|_{(-3)} <= C'|B~|_{(-1)} with C' = C'(d,L) | Yes: q_0 in K_{-2} and kernel algebra (i) give |q_0 B~|_{(-3)} <= C|B~|_{(-1)}; |a B~|_{(-3)} = |B~|_{(-1)}; Q^T is block-local with bounded coefficients and keeps the level weight up to L. |
+| 14831 | Q^T(q_0 - a) l^{-1} v in the first variation, weighted decay | Yes, same as K3 with the weights rho of CA-I 12750, since q_0's rate delta_q exceeds the weight rate kappa when kappa <= delta_q / 2. |
+| 15271-15348 (K10) | per walk: factors summable by B_0, and two spare exponentials e^{-delta_0 |omega|_{y,y'}} in the anchored tree length; terms analytic and local, so that zero switches separate | Yes, with delta_0 read as delta_q / (1 + 2^d): a tree through y, y' and one point of each X_{tau_m} has length <= D_X(n+1); each X_{tau_m} meets at most 2^d cubes of sigma_0 (side M >> diam X_tau), and a branch to each costs <= D_X; so |omega|_{y,y'} <= (1 + 2^d) D_X (n+1), and (d) applies with Lambda = |omega|_{y,y'}/(1 + 2^d). Summability: (c). Locality: hulls. |
+| 15770-15796 | P_0^T Delta_a = Delta_a - Q^T q_0 Q, real minimiser, then complex B | Yes (algebra; existence from (a)). |
+| 19744-19750 | operator-bounds theorem: imports J2-J8, K10 | Yes for its q_0 inputs, as above. |
+| 5307-5308, 5702 (f4) | ordered word families; entry bound |K_omega(y,y')| <= kappa_omega term by term for coarse operators; (C1) absolute convergence of restricted operators | Yes for q_0: the term bound of (c) is an entry bound term by term, and restriction to any set of walks keeps absolute convergence. |
+| 13323 | the near bound frame: the remark "stands under" CMP 109 (3.31)-(3.32) | No new estimate is read. Theorem PI needs (S1-loc), (S2) only. |
+| II 54465-54622 (5.8:prop-local-decay) | real backgrounds with (3.35); C_Q = q_0 with factor e^{-8 delta_1 d}, delta_1 = delta_0/32; asserts that within one layer (3.132)'s exponential "does not depend on d(y,y')" | Yes, if delta_0 is the common rate of all the listed operators, as Balaban defines it ("a common, best possible, decay rate", quoted at II 54617-54620), so delta_0 <= delta_q. The within-layer sentence misreads (3.132): the printed bound decays in d(y,y') for all pairs (page image, §1), and so does (b). The lemma on the local decay of C_Q that II builds for this is then not needed for C_Q. |
+| II 60313 | list entry for (3.132)-(3.133) | (3.132): yes. (3.133) needs G_0's bounds (row 13675). |
+| III 36352-36364 | (3.132) for (QG_1Q^T)^{-1}, G_1 current-corrected, on (3.37)-(3.38) | Not supplied: G_1 is not G_0. The account's (J7) route builds (QG_1Q^T)^{-1} from q_0 by a Neumann series; that series needs G_1 - G_0 small (Theorem 3.12), not proved here. |
+| 166593-166594, III 111329 | status lists: "printed without proof; cited as printed" | Would read: proved in this note under (S1-loc), (S2), not yet checked by the other model. |
+
+Two global points for every consumer. (1) Rate: Theorem PI's delta_q is a constant of N, L, fixed
+before M_b and R_1; consumers that write Balaban's delta_0 should read the common rate
+min{delta_0, delta_q}, which is how Balaban defines delta_0. Every condition we found that ties a
+rate to other constants (CA-I 13413-13428; K10's delta_1 M >= kappa_1 with M the CMP 116 cube
+side, chosen later) is a lower bound on a later constant, so it survives. (2) Hypothesis: the
+remark says "every U satisfying (S1), (S2)"; Theorem PI needs (S1-loc), which (S1) gives on
+thick towers (Prop. 3.1). For a thin tower the printed class does not reach the axis of a thin
+finger (remark after Prop. 3.1), so neither the remark nor this proof covers it as stated.

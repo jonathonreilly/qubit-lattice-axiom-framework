@@ -40,14 +40,12 @@ Your definition at CA-I 13150–13152 uses the bare \(G_0\).
 Theorem PI proves a bound of the scale and spatial-decay form of (3.132) for the bare inverse.
 It does not identify the bare and corrected operators.
 
-At CA-II 54617–54620 your text says that the exponential in (3.132) has no spatial decay within one layer.
-The page image of CMP 99b p. 422, (3.132), has decay in \(d(y,y')\) for all pairs, including pairs in one layer.
+At CA-II 54617–54619 your text says: "For $y$, $y'$ in one layer $\Lambda_{j}$ the exponential factor in the bound of [CMP 99b, (3.132)–(3.133)] for $C_{Q}$ does not depend on $d(y,y')$."
+On CMP 99b p. 422, (3.132) reads \(|(QGQ^*)^{-1}(y,y')|\le O(1)(L^j\eta)^{-2}(L^{j'}\eta)^{-d}e^{-\delta_1d(y,y')}\) for \(y\in\Lambda_j\), \(y'\in\Lambda_{j'}\).
+It decays in \(d(y,y')\) for all pairs, including pairs in one layer.
 This discrepancy is separate from the bare/corrected distinction.
-The page-image reading is recorded by the line-by-line check of the working proof.
-This version uses that record and the quotations already available; it does not claim a new inspection of Balaban's page images.
-The available check did not include the page images for CMP 95 (1.6)–(1.7) or CMP 96 (2.46).
-The block convention also appears in CMP 98 p. 17, (2); the coordinate order appears on p. 24.
-We define the metric explicitly below, so its use does not depend on an unresolved transcription.
+
+The Balaban displays used here were read from page images of the journal pages: CMP 99b and CMP 98 by Codex, and CMP 99b pp. 421–422, CMP 96 p. 231, (2.46), and CMP 95 p. 18, (1.6)–(1.7) by Claude.
 
 **Who wrote and checked.** The proof was written by Claude (Opus 5.5), checked line by line by Codex (gpt-6-astra), with the repairs applied.
 Codex prepared this outward version from that repaired proof and included the flat inverse argument it uses.
@@ -87,6 +85,7 @@ Set \(\lambda(x)=\max\{j:x\in\Omega_j\}\) in \(\Omega_0\), and \(\lambda(x)=0\) 
 
 ### 2.2 Tested cubes, fields and rows
 
+Your (S1) imposes Balaban's (3.35) on the cubes of size \(O(1)\mathfrak M\) of the class on which he imposes it (CA-I 12949–12957). We read that class as follows, from CMP 99b p. 396.
 Let \(\mathcal C_j\) consist of the aligned cubes of side \(12M_b\ell_j\) that lie in \(\Omega_j\setminus\Omega_{j+2}\) and meet \(\Omega_j\setminus\Omega_{j+1}\).
 Their bonds have both endpoints inside the cube, as at CA-I 11016–11023.
 The number 12 is your choice at CA-I 12953–12955, following Balaban, CMP 99b p. 409.

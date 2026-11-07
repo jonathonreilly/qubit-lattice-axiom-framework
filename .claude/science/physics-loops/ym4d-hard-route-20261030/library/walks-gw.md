@@ -54,7 +54,7 @@ satisfies \(|J|_{-3}\le j_*\). Its derivatives are unrestricted.
 
 For every \(\kappa_1\ge0\), choose the common decoupling-cube side,
 in units of the largest scale, at least
-\(\max\{4\widehat r+8L,64\kappa_1/\mu\}\), where \(\mu>0\) is fixed
+\(\max\{4\widehat r+8L,c_\iota,64\kappa_1/\mu\}\), where \(\mu>0\) and the insertion range \(c_\iota\) are fixed
 in section 5, with the required grid divisibility. There are
 \(C_{\kappa_1}<\infty\) and \(r_{\kappa_1}>0\), uniform in depth,
 mesh, volume, admitted tower, background and weight, such that for
@@ -553,7 +553,8 @@ absolute majorants \(g_\Delta^*,h_\Delta^*,b_\Delta^*\) for
 \]
 They also give their first-order majorants \(g^*,h^*,b^*\).
 All convolutions use (P5); the transposed legs use the reversed-word
-bound. A local insertion's finite range costs a fixed exponential.
+bound. Each piece and local insertion carries the spare-length weight
+defined below.
 The finite scale powers cancel at each matched leg. They do not
 accumulate with the number of factors.
 
@@ -571,13 +572,28 @@ per coordinate, hence at most sixteen cubes. This proves
        \#\{\hbox{cubes met by the tree}\}
                    \le16+64t/M_{\rm dec}.
 \]
-Use a tree passing through a representative of every cube met by the
-complete footprints. PI's endpoint construction provides such a
-tree, including the thin-intersection representatives. Approximate
+For a primitive concatenation
+\(\varpi=(\omega_0;\iota_1,\omega_1;\dots;\iota_n,\omega_n)\), side branches included, build a tree
+\(T_\varpi\) as follows. For each piece \(\omega_i\) take the tree of pi-r2-gate.md §8: it passes through
+a representative of every decoupling cube met by the complete footprint of \(\omega_i\), and has layer
+length \(t_{\omega_i}\le17D_X(|\omega_i|+1)\). Each local insertion \(\iota_i\) has a complete carrier:
+the double blocks of its averaging rows, its plaquette reads, the reads of \(\mathfrak j_J,\mathfrak k_J\)
+and its endpoint stencils. This carrier has layer diameter at most a fixed \(c_\iota=c_\iota(N,L)\),
+hence axial diameter at most \(c_\iota\ell_k\). Impose the cube floor
+\(\max\{4\widehat r+8L,\ c_\iota,\ 64\kappa_1/\mu\}\). Then the carrier meets at most \(2^4\) cubes. Join
+the insertion point to the end anchor of \(\omega_{i-1}\), to the start anchor of \(\omega_i\), and to
+one representative in each cube met by the carrier. Since
+\(d(y'_{i-1},y_i)\le c_\iota\) (CA-I 15357), this adds at most \(17c_\iota\) of layer length. Attach each
+side branch at its insertion point in the same way. The result is a connected graph through every cube
+met by the term; prune it to a tree. So
+\[
+ t_\varpi\le\sum_i t_{\omega_i}+17c_\iota n_\iota ,
+\]
+and the Euler count applies to \(T_\varpi\). Approximate
 an infimum tree length from above if necessary. On a torus lift the
 traversal; repeated copies of a cube only overcount it. A partition
 consisting of the whole torus satisfies the bound directly.
-Thus \(M_{\rm dec}\ge64\kappa_1/\mu\) proves the required bound
+Thus \(M_{\rm dec}\ge\max\{4\widehat r+8L,c_\iota,64\kappa_1/\mu\}\) proves the required bound
 for the actual common-grid partition. No assertion about an arbitrary
 uncontrolled family of parameter sets is needed.
 
@@ -587,17 +603,27 @@ For a primitive concatenation \(\varpi\), it follows that
  \le e^{16\kappa_1}e^{\mu t_\varpi}
  \le e^{16\kappa_1}
           \prod_{\omega\subset\varpi}e^{\mu t_\omega}
-                      e^{\mu c_\iota n_\iota}.          \tag{P15}
+                      e^{17\mu c_\iota n_\iota}.        \tag{P15}
 \]
+For any rate \(0<\delta_*\le\mu\), define every first-order and graph majorant of §§5–8
+with each piece weighted by its spare factor:
+\(b^*:=\sup_y\sum_{\omega,z}k_\omega(y,z)e^{\mu t_\omega}e^{\delta_*d(y,z)}\), and the same for
+\(b^*_\Delta,g^*,g^*_\Delta,h^*,h^*_\Delta\); in \(\theta^*\) and in \(C_1,C_2,C_3\), weight each insertion
+by \(e^{17\mu c_\iota}\). By (P14), \(k_\omega e^{\mu t_\omega}\le C\theta_Z^{n/2}e^{-\mu d-\mu t_\omega}\),
+so these sums are finite for \(\delta_*\le\mu\). Use their common upper bounds for \(\delta_*\le\mu\) before choosing the final rate.
+They depend on \(\mu\) but not on \(\kappa_1\). With these
+definitions, (P15) and the term-by-term product give \(|\sigma_\varpi|\prod k\le e^{16\kappa_1}\prod(\text{weighted }k)\),
+which is the form used in (P18) and layer-pkg.md (2.2).
+
 Use the common smaller rate and full footprints in this inequality.
 This reconstructs the estimate used at CA-I 15368--15410 and in
 layer-pkg.md (2.2), without requiring the sharper printed count.
-The size floor is chosen after \(\mu,\kappa_1\).
+The size floor is chosen after \(\mu,c_\iota,\kappa_1\).
 The last factor of (P15) is charged
 to the local insertion constant, before the current ceiling.
 It is independent of \(\kappa_1\).
-One spare exponential pays (P15); one remains for weights and
-spatial decay. This proves the first line of (T2)--(T3), with the
+The piece weights and the insertion costs \(e^{17\mu c_\iota}\) pay (P15);
+the remaining exponential retains weights and spatial decay. This proves the first line of (T2)--(T3), with the
 appropriate finite number of primitive corner factors for \(H_0\).
 
 ### 6. The first-order branches needed for the current insertions
@@ -700,14 +726,17 @@ fixed exponent below one. Apply the vector differentiated-source
 bound to \(G_0D_U\varphi\) and the bounded-source bound to
 \(G_0\psi\). The result is an **absolute** first-order word
 majorant \(C_1|J|_{-3}\) for \(G_0\Theta'_J\).
-The finite insertion ranges and their spare-length costs are
-included in \(C_1\).
+Here \(C_1\) is the sum of the weighted product majorants of these
+terms per unit of current: each piece has weight \(e^{\mu t_\omega}\),
+and each local insertion has weight \(e^{17\mu c_\iota}\), as in section 5.
 
 Choose \(j_*\) so that \(C_1j_*\le1/4\).
 The geometric series for \(G_\pi^J\) now converges in this
 absolute word algebra. Its \(Q\)-compression differs from the
 bare compression by a term whose normalized majorant is
-\(C_2|J|_{-3}\). Reduce \(j_*\) to have \(C_2j_*\le1/4\).
+\(C_2|J|_{-3}\), with \(C_2\) defined by the same weighted products,
+including the compression's local carriers. These constants depend
+on \(\mu\), not on \(\kappa_1\). Reduce \(j_*\) to have \(C_2j_*\le1/4\).
 The Neumann expansion of
 \[
  q_J=(I+q_0Q(G_\pi^J-G_0)Q^T)^{-1}q_0
@@ -740,7 +769,8 @@ bounds justify that use; symmetry at one is not continued to switches.
 ### 7. The local averaging vertices and the nonlinear source
 
 For a positive-height row \(c\), its complete double-block carrier
-fits in an (S1-loc) box based at one of its interior endpoints.
+fits in the (S1-loc) box \(N_\tau\) of a tile of height \(j-1\) or \(j\)
+whose cutoff support contains the row's base point.
 The carrier meets only heights \(j-1,j\); \(M_t\ge4L\) leaves
 room for both blocks. PI's gauge estimate therefore gives
 \[
@@ -766,8 +796,8 @@ carriers. These facts give the weighted transpose bounds at every
 admitted \(p\), using its value ratio over the carrier. No
 derivative or special exponential form of \(p\) is used.
 
-The Wilson source estimates are the local calculation of
-b102.md H6, 637--718, not a consequence of analyticity alone.
+For the Wilson source estimates, use the local calculation of
+b102.md H6, 637--718, with the following complex-background extension.
 Its cubic term is
 \(\tfrac12\operatorname{tr}(D_UA)\sum_{i<j}i[X_i,X_j]\).
 For its first variation use the exact difference identity
@@ -782,14 +812,34 @@ The curvature-dependent cubic remainder has the extra
 \(\eta^2\ell^{-2}(a_0+a_1)\) factor. Terms of degree at least four
 are bounded by the exponential series
 \(\sum_{n\ge4}(4\eta|A|)^n/n!\).
+At the complex background, work in the local gauge of PI Lemma 5.2 on the box \(N_\tau\) that contains
+the plaquette. There \(W=e^{i\eta B}\) with \(m|B|+m^2|\partial B|\le e\le e_L\le1\), and \(u\) is unitary.
+Each transport is a product of at most four factors \(e^{\pm i\eta B_b}\). So it and its inverse have
+norm at most \(e^{4\eta|B|}\le e^4\), and each differs from the identity by at most \(C\eta e/m\). Hence the
+degree-\(n\) words of the plaquette expansion have total norm at most \((4e^4\eta|A|_{\partial p})^n/n!\),
+and the terms of degree at least four are bounded by \(C|A|^4_{\partial p}e^{4e^4\eta|A|_{\partial p}}\).
+The holonomy obeys \(|W_p-1|\le C\eta^2e/m^2\) (proof of PI Lemma 5.1); this replaces
+\(|U_p-1|\le\alpha\eta^2\ell^{-2}\) with \(\alpha=Ce\). The identities (H6.1) and (H6.2) are polynomial
+identities in the transported fields; they hold verbatim at complex transports in a common frame. The
+holomorphic trace term is \(\tfrac12\operatorname{tr}\{P(t)W_p+W_p^{-1}P(t)^{-1}\}\), as in H6. The Cauchy
+ball of radius proportional to \(r/\ell\) stays inside the exponential and logarithm domain for
+\(e\le1\) and \(r\) below a fixed constant. Conjugation by the unitary \(u\) returns the bounds to the
+original gauge and preserves the norms. Thus (H6.3), that is the order-two majorant for \(V_0'(A)\) and
+the order-one majorant for \(V_0''(A)u\) from \(E_p\) to \(F_p\), holds at \(W\) with constants depending
+only on \(N,L\).
+
 This proves absolute local analytic majorants of order two for
 \(V_0'(A)\), and order one for \(V_0''(A)u\), in \(F_p\) from
 \(E_p\). Their finite plaquette reads and source measures are retained.
 
-The paired quadratic averaging vertex therefore gives a majorant
+The paired quadratic averaging vertex therefore gives the weighted majorant
 \(\theta^*\le C_3|J|_{-3}\) for \(\Theta_J:E\to F\):
-pair its fine density with \(H^{J,T}J\).
-The latter has weight \(-4\), by the reversed-chain bounds above.
+pair its fine density with \(H^{J,T}J\). Define \(\theta^*\) by summing
+these product majorants with the section 5 piece weights and a factor
+\(e^{17\mu c_\iota}\) for every local insertion. Let \(C_3\) be its
+uniform bound per unit of current under the preceding ceilings.
+Thus \(C_3\) depends on \(\mu\), not on \(\kappa_1\).
+The field \(H^{J,T}J\) has weight \(-4\), by the reversed-chain bounds above.
 Reduce \(j_*\) once more so that \(b^*\theta^*\le1/4\).
 All these current choices precede \(\kappa_1\).
 
@@ -823,7 +873,8 @@ pairing measure. These are all the legs used below.
 
 For completeness, absolute nonlinear summation can be done with
 one scalar majorant. After inserting the switched primitive
-majorants, let \(H,C,s>0\) bound respectively the lift, all local
+majorants, with the piece weights and insertion costs of section 5,
+let \(H,C,s>0\) bound respectively the lift, all local
 averaging coefficients with one density leg, and their analytic
 radius. Polarization/Cauchy on the larger fixed ball lets us take
 \[
@@ -926,7 +977,9 @@ Summing nonnegative kernels in order gives
 \]
 This is a statement about the unre-summed concatenations, with
 the multiplier branch in each \(\Theta_J\) expanded.
-Its insertion constants already pay the last factor in (P15).
+All starred majorants use the piece weights \(e^{\mu t_\omega}\).
+Their insertion constants include \(e^{17\mu c_\iota}\) per insertion,
+which pays the last factor in (P15).
 Apply (P15) once to each complete primitive concatenation.
 Thus \(G(\sigma):F_p\to E^\Delta_p\) has an absolute majorant
 at most \(e^{16\kappa_1}g_\Delta^*\), with remaining decay.
@@ -939,7 +992,8 @@ the product of their primitive tags. Each fixed linear composite
 has only a fixed number of such corner factors.
 The nonlinear repeated factors were included before choosing
 the small radius in (P16). If a composite is union-tagged instead,
-apply (P15) to that union; the same estimates still suffice.
+apply (P15) to that union, with branches through every local
+carrier's cubes and the same weighted insertion costs; the same estimates suffice.
 No identity between the two assignments has been claimed.
 
 Products of absolutely summable kernels have absolutely summable
@@ -947,7 +1001,7 @@ tails: truncate the number of factors, then truncate the finitely
 many factor sums; the two discarded nonnegative tails tend to
 zero. The same argument applies to the positive scalar series
 in (P16). It proves (T3), the graph convergence and local uniform
-holomorphy. Choose \(\delta_*>0\) below the retained common rate
+holomorphy. Choose \(0<\delta_*\le\mu\) below the retained common rate
 and impose (P5) at every rate used. This completes the order of
 constants and the proof of (T2).
 
@@ -957,6 +1011,35 @@ local vertices cannot connect different components. Common
 complete footprints give identical coefficients and identical
 index sets by PI's assignment. These statements prove the
 restriction and setting clauses of the theorem. \(\square\)
+
+## Constant order
+
+Fix the constants in the following order. Row 0 lists the given data.
+The weighted majorants use common bounds for \(\delta_*\le\mu\),
+so their definition precedes the final choice of \(\delta_*\).
+
+| Step | Constant | Depends on | Source |
+|---|---|---|---|
+| 0 | \(N,L,\beta_0\); \(\epsilon=(1-\beta_0)/2\); \(b_0=8\) | given | theorem, §6 |
+| 1 | flat tile \(M_F\) with \(q<1/2\); \(D\), \(B_L\); flat rate \(a=\log(1/q)/D\), \(a'=a/2\) | 0 | flat-port §11; §2 |
+| 2 | flat gap \(\rho_F\ge\max\{\)flat-port floors, \(2(8+b_0)\log L/a'\}\); flat torus room \(t_FM_F\) | 1 | flat-port §§8.2, 12; (P5), (T1) |
+| 3 | \(B_Z\) (all finite source/output pairs of §§2, 6) | 1, 2 | (P8), §6 |
+| 4 | \(C_Z\) (P9), norm-comparison constants, \(c_Z\), \(C_{\rm com}\) (P11); PI's \(r_1,e_R,C_R,e_C,C_C,C_S\) | 0 | PI §3.3 item 2; §§3–4 |
+| 5 | enlarge \(B_F\ge B_Z\), \(c_h\ge c_Z\), \(C_{88}\ge C_{\rm com}\), \(C_C\ge C_Z\) | 3, 4 | §4 |
+| 6 | \(M_t\): power of \(L\), multiple of \(LM_F\), \(\ge\max\{2\rho'_F,4L\}\), PI \(\theta\le(4D_*)^{-4}\) (so \(\theta_Z\le(4D_*)^{-4}\)) | 2, 5 | PI item 3; (P12) |
+| 7 | \(r_N,\widehat r,D_X\); \(\delta_q\); \(\mu=\log(1/\theta_Z)/(140D_X)\); \(N_t\) | 6 | PI items 4–5; (P14) |
+| 8 | insertion range \(c_\iota\) and costs \(e^{17\mu c_\iota}\); weighted majorants \(b^*,b^*_\Delta,g^*,h^*\) | 6, 7 | §5 |
+| 9 | radii \(a_0^*,a_1^*\le a_*\): PI item 7 with enlarged constants; \(e\le c/(M_tC_Zc_Z)\); \(B_ZC_Ze\le1/8\); \(a_*\le\rho/(16C_{N,L})\) (b98p5 (2), (11)); increment ball | 4–6 | PI items 7–8; §§3, 4, 7 |
+| 10 | \(C_1,C_2,C_3\) (with the §5 weights); \(j_*\) with \(C_1j_*,C_2j_*\le1/4\), \(b^*\theta^*\le1/4\) | 3, 7–9 | §§6–7 |
+| 11 | \(\delta_*\le\mu\) and below every composite rate used | 7, 8 | §8 |
+| 12 | tower floors: \(M_b\), \(R_1M_b\ge\max\{\)PI item 6, \(2(8+b_0)\log L/\delta'\}\) at every rate \(\delta'\) used; torus side (T1) | 6, 7, 11 | PI item 6; (P5), (T1) |
+| 13 | given \(\kappa_1\): \(M_{\rm dec}\ge\max\{4\widehat r+8L,\ c_\iota,\ 64\kappa_1/\mu\}\) with grid divisibility | 6–8 | P15; §5 |
+| 14 | \(H,C,s\) of the scalar majorant (contain \(e^{16\kappa_1}\) tag factors); \(r_{\kappa_1}\); \(C_{\kappa_1}\) | 9–13 | §7 |
+
+The bounds \(B_Z,C_Z,c_Z,C_{\rm com}\) are uniform above the stated
+geometry floors. The floors in step 12 impose those hypotheses.
+The insertion costs precede \(j_*\) and \(\kappa_1\). The final
+nonlinear radius may depend on \(\kappa_1\); the current ceiling does not.
 
 ## Necessary test and obligations
 
@@ -1067,3 +1150,5 @@ its missing Git object could not be retrieved. No workflow launch,
 audit, registry, tree, prompt, platform instruction or public post
 was changed. Only this research note and its checks checkpoint
 belong to this task.
+
+Checked line by line by Claude (Opus 5.5), gates/walks-gw-check.md; repairs applied.

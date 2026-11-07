@@ -430,7 +430,7 @@ Two routes:
 
 (e) **Open inputs.** GA2-i; bridges Y1-Y5 of section 6; matter in the RG (T0 is pure gauge).
 
-### BR1. The lattice gauge bridge (owner 2026-11-07: "Both, layer first")
+### LG1. The lattice gauge bridge (owner 2026-11-07: "Both, layer first")
 
 (a) **Statement (skeleton, to be proved rung by rung).** Fix a gauge group `G` and a framework law `L` with an exact local `G` frame group (PS-6, PS-6r; GA1). There are a zoom rung `n` and a readout `Φ` of the owner's ZM1-INV form (a unital injective cell-covariant exponentially local *-homomorphism on gauge-invariant observables) such that the framework's link sector, restricted to the gauge-invariant algebra, equals a named lattice gauge theory `LGT_G` on `Z^3` with its time step: link Hilbert space, Gauss law, electric and magnetic operators, and update or transfer stated exactly. The target form is chosen by the lane and justified: either Hamiltonian (Kogut–Susskind type on `Z^3`, with the framework tick as a Trotter product `e^{-iτ_B H_B}e^{-iτ_E H_E}`) or Euclidean (Wilson type on `Z^3 × Z`, via a positive transfer matrix). Then the known construction results for `LGT_G` apply to the framework through `Φ`. The ladder is `G = Z_2`, then `U(1)`, then `SU(2)`. For each rung the part records either the theorem or the first failing step, exactly.
 
@@ -438,9 +438,9 @@ Two routes:
 
 (c) **Sources.** Section 6 (bridges Y1-Y5); GA2_Y2 (T0-start[G], T0-rate, Y2-W); the YM4D contract `GOAL.md` on `claude/ym4d-hard-route` (T0, T1, NT1, NT2) and the Sussman–Alpoge complete account CA-I `3.1:thm-main` at commit `31a47c543775` (indexed in `library/sa-index/ca-full/` on that branch). Literature to digest: Kogut–Susskind Hamiltonian lattice gauge theory; Creutz's transfer matrix for the Wilson action; Z_2 lattice gauge theory and the toric code (Kitaev; Wegner; Fradkin–Shenker); quantum link models and D-theory (Horn; Orland–Rohrlich; Chandrasekharan–Wiese; Brower–Chandrasekharan–Wiese); Balaban; Sussman–Alpoge.
 
-(d) **Status.** New 2026-11-07. Skeleton only. Prior-work digest `prior/BR1.md` first, then a Mini pass-1 lane.
+(d) **Status.** New 2026-11-07. Skeleton only. Prior-work digest `prior/LG1.md` first, then a Mini pass-1 lane.
 
-(e) **Open inputs.** BR1-Z2, BR1-U1, BR1-SU2 (the three rungs); BR1-FORM (Hamiltonian or Euclidean target, with reasons); BR1-H (the hand-off: which hypotheses of CA-I `3.1:thm-main`, Wilson SU(2) on 4D Euclidean `Z^4`, the bridge delivers and which it cannot, for example the 4D Euclidean form if time is emergent, hypercubic symmetry (Y3), and the exact Wilson action (Theorem N)).
+(e) **Open inputs.** LG1-Z2, LG1-U1, LG1-SU2 (the three rungs); LG1-FORM (Hamiltonian or Euclidean target, with reasons); LG1-H (the hand-off: which hypotheses of CA-I `3.1:thm-main`, Wilson SU(2) on 4D Euclidean `Z^4`, the bridge delivers and which it cannot, for example the 4D Euclidean form if time is emergent, hypercubic symmetry (Y3), and the exact Wilson action (Theorem N)).
 
 ### CH1. Chirality: a gauged chiral light sector
 

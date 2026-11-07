@@ -2,7 +2,7 @@
 
 ## 0. Status
 
-**Pass 3 done (GB1E_REFEREE.md); edits applied; ready to freeze**
+**FINISH: FROZEN 2026-11-07 after pass 3 (GB1E_REFEREE.md); the referee's edits E1-E6 are applied, with closures R1 and R2 (R3 recorded only).** Frozen means: the proved results below are not reopened; open statements are worked in their own files and enter by a dated amendment. The item enters `GB1.md` as its Amendment 3. The lead (Claude Opus 5.5, laptop) checked that the edits are in the text; that is a text check, not a second referee. 
 
 All constructions below are on finite periodic boxes. They concern the proposed SU(2) test-law family of `GB1QL.md`, not a selected physical law. They do not establish the infinite-lattice Y1 target or a T0 hand-off.
 

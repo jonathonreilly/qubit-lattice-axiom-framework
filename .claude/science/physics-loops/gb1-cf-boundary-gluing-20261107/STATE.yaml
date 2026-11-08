@@ -1,0 +1,30 @@
+goal: GB1-CF finite boundary flux and consistent patch gluing
+operation: bounded research
+base: f5af11cd0102cfd0b51aef0911f600130bf5beb1
+instruction_branch: 56c5c0ab64f532c5784e895b2f9aa6894fa334e0
+parent_science: 2fed163ac02350f31d8af53f38ee5feaf15b7e09
+parent_research_head: ba7790560e50afe712a68d42f550493e980cb19c
+branch: physics-loop/gb1-cf-pair-20261107
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10142
+pr_draft: false
+delivery_mode: milestone
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: completed exact finite edge subdivision and retained-boundary representation gluing
+bounded_result: five-state cuts are isometric and coassociative; transporters and adjoints preserve the image; all regional groupings reconstruct the same constrained space; four plaquettes give 18 closed states
+independent_check: separately derived coordinate and Haar/coefficient/fusion routes agree; full-note review and two clarifications checked; same model family, not formal audit
+note: docs/SU2_FINITE_BOUNDARY_FLUX_ASSOCIATIVE_GLUING_BOUNDED_THEOREM_NOTE_2026-11-07.md
+note_sha256: c2a8da27cfc860b2b5912e87251622ee69ee452aaa39a1aecf882f220b3d9876
+execution: both new content-bound caches fresh; old pair caches remain fresh; exact mutation witnesses reject all specified shortcuts
+failed_routes: unweighted cut electric sum doubles the term; premature zero-flux boundaries give 4 instead of 18; lost multiplicity or intermediate spin-one gives 16; no general exclusion inferred
+execution_failure_preserved: initial checker kernel-memory-limit refusal before mathematics; supported RSS-monitored final runs succeed
+native_axiom_bridge: open; no homogeneous qubit allocation, local record law, state, clock, coupling or continuum identification derived
+next_action: ready milestone awaits formal landing review and audit; next scientific proof is native homogeneous allocation plus a compatible covariant nearest-neighbor update/readout law
+checkpoint: HANDOFF.md
+verification: outputs/verification.json
+recovery: original primary source and fully reviewed note recover by inverse zero-context patches in outputs
+repository_authority_edits: []
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

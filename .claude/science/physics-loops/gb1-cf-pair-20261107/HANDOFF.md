@@ -25,7 +25,7 @@ identification remain open. There is no vacuum or mass-gap result.
 ## Sources and recovery
 
 Working branch: `physics-loop/gb1-cf-pair-20261107`.
-Draft milestone: [PR #10142](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10142).
+Milestone: [PR #10142](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10142), now ready for review at the user's request.
 Scientific source commit: `2fed163ac02350f31d8af53f38ee5feaf15b7e09`.
 Base and refreshed main: `f5af11cd0102cfd0b51aef0911f600130bf5beb1`.
 Instruction branch read: `56c5c0ab64f532c5784e895b2f9aa6894fa334e0`.
@@ -38,7 +38,8 @@ original runners and complete original logs are preserved in `outputs/`.
 PRIMARY.md and CHECKER.md describe those original executions, not the later
 canonical cache paths after integration. Their original hashes remain valid.
 
-The authoritative current checkpoint for this bounded task is STATE.yaml.
+The checkpoint for this completed pair calculation is STATE.yaml. Continuing
+boundary-flux work is tracked in `../gb1-cf-boundary-gluing-20261107/STATE.yaml`.
 The complete public-facing mathematical argument is
 `docs/SU2_FIVE_STATE_TWO_PLAQUETTE_GAUGE_SECTOR_BOUNDED_THEOREM_NOTE_2026-11-07.md`.
 

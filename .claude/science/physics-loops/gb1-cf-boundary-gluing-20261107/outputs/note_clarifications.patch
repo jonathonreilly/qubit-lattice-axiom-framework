@@ -1,0 +1,13 @@
+--- a/docs/SU2_FINITE_BOUNDARY_FLUX_ASSOCIATIVE_GLUING_BOUNDED_THEOREM_NOTE_2026-11-07.md
++++ b/docs/SU2_FINITE_BOUNDARY_FLUX_ASSOCIATIVE_GLUING_BOUNDED_THEOREM_NOTE_2026-11-07.md
+@@ -133 +133,2 @@
+-The adjoint identity holds as well. Consequently the cut image is preserved
++Repeating the same multiplication argument with \(M_g^\dagger\) proves
++\((U_2U_1)^\dagger S=SU^\dagger\). Consequently the cut image is preserved
+@@ -305,2 +306,4 @@
+-gluing. A boundary-charged operator needs its matching boundary action from
+-the other region; it is not automatically a standalone physical observable.
++gluing. At a vertex where Gauss law is being imposed, a boundary-charged
++operator needs its matching boundary action from the other region; it is not
++automatically a standalone physical observable. Unconstrained outer-boundary
++actions need no such matching.

@@ -1,0 +1,46 @@
+{
+  "note_sha256": "c2a8da27cfc860b2b5912e87251622ee69ee452aaa39a1aecf882f220b3d9876",
+  "syntax": "passed for both new runners",
+  "vocabulary": "final complete packet and both updated pair checkpoint files: zero violations",
+  "relative_note_links": "all exist",
+  "control_characters": "none",
+  "cache_status": {
+    "scripts/gb1_cf_boundary_gluing_exact_2026_11_07.py": {
+      "identity": "fresh",
+      "issue": null
+    },
+    "scripts/gb1_cf_boundary_fusion_check_2026_11_07.py": {
+      "identity": "fresh",
+      "issue": null
+    },
+    "scripts/gb1_cf_two_plaquette_s1_2026_11_07.py": {
+      "identity": "fresh",
+      "issue": null
+    },
+    "scripts/gb1_cf_two_plaquette_haar_check_2026_11_07.py": {
+      "identity": "fresh",
+      "issue": null
+    }
+  },
+  "original_primary_math_output_vs_integrated": "all emitted scientific fields identical",
+  "original_checker_final_baseline_vs_cache": "all mathematical output lines identical",
+  "worker_source_recovery": "inverse zero-context integration patch exactly recovers primary worker SHA-256",
+  "source_hashes": {
+    "scripts/gb1_cf_boundary_gluing_exact_2026_11_07.py": "bf2401c663ff8059145973b91dc45613313cb30c8c4554b21d7b8aea2f56fbc0",
+    "scripts/gb1_cf_boundary_fusion_check_2026_11_07.py": "e4291452252f60610eb40526d055e400bb3ef09a23c65d08c7b2918eba03044e"
+  },
+  "helper_extraction": [
+    "scripts/gb1_cf_boundary_fusion_check_2026_11_07.py"
+  ],
+  "full_pipeline": "not run; landing obligation",
+  "formal_landing_review_and_audit": "pending",
+  "diff_check": "git diff --cached --check passed for the complete milestone",
+  "original_reviewed_note_sha256": "b647a3d91afbd17c1b99d0ea512f3cef69cf77d87b79d4ee69fbc32a5615fe98",
+  "clarification_source_recovery": "inverse zero-context patch exactly recovers the fully reviewed note",
+  "frozen_derivations_and_logs": "all seven expected artifact/source hashes unchanged",
+  "mathematical_source_review": "complete source review plus hash-bound clarification review; no unresolved mathematical finding",
+  "review_hashes": {
+    "CHECKER_NOTE_REVIEW.md": "0708cd7ee75fbd25083e0446358551fd5c74ca5aec3f31d3273fd827d3ed8f5e",
+    "CHECKER_CLARIFICATION_REVIEW.md": "84c51d6e861c8a8798d4ddcd83aba36bb1860d9d4294fd1ddfc5085431489f92"
+  }
+}

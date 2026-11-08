@@ -1,0 +1,952 @@
+NEW NUMERIC SUITE holder=gb1-cf-boundary-checker-20261107-0e1f9f01d6a1433b9451ee401f5a608a
+Inherited configured model and effort retained; exact host receipt unavailable.
+Environment AUDIT_TIMEOUT_SEC=90; math thread variables=1; total suite deadline=90s.
+COMMAND ['python3', 'scripts/lab_ops.py', 'preflight', '--numeric']
+ok      disk: 120 GB free, limit 10
+ok      memory: 36% free, limit 25
+ok      load: 3.9, limit 8
+note    model floor: no target named, no floor checked
+ok      nice: works here
+note    memory cap: ulimit unavailable; a job must watch its own memory
+ok      network: origin reachable
+ok      numeric lock: free
+preflight: go
+EXIT 0
+COMMAND ['python3', 'scripts/lab_ops.py', 'numeric-lock', 'acquire', '--holder', 'gb1-cf-boundary-checker-20261107-0e1f9f01d6a1433b9451ee401f5a608a', '--purpose', 'independent finite SU(2) boundary certificate and fault suite', '--ttl-hours', '0.1']
+{
+  "lock": {
+    "expires_at": "2026-11-08T02:27:56.571885+00:00",
+    "holder_id": "gb1-cf-boundary-checker-20261107-0e1f9f01d6a1433b9451ee401f5a608a",
+    "owner": "gb1-cf-boundary-checker-20261107-0e1f9f01d6a1433b9451ee401f5a608a",
+    "pid": 5163,
+    "purpose": "independent finite SU(2) boundary certificate and fault suite",
+    "started_at": "2026-11-08T02:21:56.571885+00:00"
+  },
+  "status": "acquired"
+}
+EXIT 0
+COMMAND ['nice', '-n', '10', 'python3', 'scripts/gb1_cf_boundary_fusion_check_2026_11_07.py']
+CERTIFICATE_REJECTED ValueError: current limit exceeds maximum limit
+EXIT 1
+COMMAND ['python3', 'scripts/lab_ops.py', 'numeric-lock', 'release', '--holder', 'gb1-cf-boundary-checker-20261107-0e1f9f01d6a1433b9451ee401f5a608a']
+{
+  "lock": null,
+  "status": "released"
+}
+EXIT 0
+NEW NUMERIC SUITE holder=gb1-cf-boundary-checker-20261107-c80fe1b915ec4d9ab7d8a55e2db813a9
+Memory-limit compatibility correction; inherited model/effort unchanged; suite deadline=90s.
+COMMAND ['python3', 'scripts/lab_ops.py', 'preflight', '--numeric']
+ok      disk: 121 GB free, limit 10
+ok      memory: 31% free, limit 25
+ok      load: 5.1, limit 8
+note    model floor: no target named, no floor checked
+ok      nice: works here
+note    memory cap: ulimit unavailable; a job must watch its own memory
+ok      network: origin reachable
+ok      numeric lock: free
+preflight: go
+EXIT 0
+COMMAND ['python3', 'scripts/lab_ops.py', 'numeric-lock', 'acquire', '--holder', 'gb1-cf-boundary-checker-20261107-c80fe1b915ec4d9ab7d8a55e2db813a9', '--purpose', 'independent finite SU(2) boundary certificate and fault suite', '--ttl-hours', '0.1']
+{
+  "lock": {
+    "expires_at": "2026-11-08T02:28:41.734231+00:00",
+    "holder_id": "gb1-cf-boundary-checker-20261107-c80fe1b915ec4d9ab7d8a55e2db813a9",
+    "owner": "gb1-cf-boundary-checker-20261107-c80fe1b915ec4d9ab7d8a55e2db813a9",
+    "pid": 5398,
+    "purpose": "independent finite SU(2) boundary certificate and fault suite",
+    "started_at": "2026-11-08T02:22:41.734231+00:00"
+  },
+  "status": "acquired"
+}
+EXIT 0
+COMMAND ['nice', '-n', '10', 'python3', 'scripts/gb1_cf_boundary_fusion_check_2026_11_07.py']
+BOUNDS wall=90s cpu=90s RLIMIT_DATA=unavailable(current limit exceeds maximum limit) RLIMIT_AS=unavailable(current limit exceeds maximum limit) RSS_guard=270000000 poll_seconds=0.05 threads=1
+SOURCE_SHA256 4c37d3508fcea7f58b1fc9362e2d34134a45276b03641567437dd9c93297a5e4
+RUNTIME Python=3.13.5 platform=Darwin arithmetic=integer/Fraction model_effort=inherited_not_exposed
+HALF_FUSION {0: {0: 1}, 1: {1: 1}, 2: {2: 1, 0: 1}, 3: {3: 1, 1: 2}, 4: {4: 1, 2: 3, 0: 2}}
+FAULT_REJECTED unweighted fine energy equals coarse energy: faulty={((0, 0), (0, 0)): Fraction(3, 2), ((0, 1), (1, 0)): Fraction(3, 2)} independent={((0, 0), (0, 0)): Fraction(3, 4), ((0, 1), (1, 0)): Fraction(3, 4)}
+CUT coefficient-basis Gram comparisons=25 holonomy entries=20 associativity inputs=5 per-link Casimir inputs=10
+CUT range: j2=j1 in {0,1/2}, unique internal contraction, endpoint dimension=5
+EDGES [(0, ((0, 0), (1, 0))), (1, ((0, 0), (0, 1))), (2, ((1, 0), (2, 0))), (3, ((1, 0), (1, 1))), (4, ((2, 0), (2, 1))), (5, ((0, 1), (1, 1))), (6, ((0, 1), (0, 2))), (7, ((1, 1), (2, 1))), (8, ((1, 1), (1, 2))), (9, ((2, 1), (2, 2))), (10, ((0, 2), (1, 2))), (11, ((1, 2), (2, 2)))]
+REGION A dimension=325 sectors=18 multiplicity_sum=44
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=5 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=3 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=2 irrep_dimension=9
+  q=(0, 3, 1) multiplicity=1 irrep_dimension=8
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=5 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=3 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=3 irrep_dimension=12
+  q=(1, 3, 0) multiplicity=1 irrep_dimension=8
+  q=(1, 3, 2) multiplicity=1 irrep_dimension=24
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=3 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=2 irrep_dimension=9
+  q=(2, 2, 2) multiplicity=1 irrep_dimension=27
+  q=(2, 3, 1) multiplicity=1 irrep_dimension=24
+  OCCUPANCIES region=A local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)), ((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1), (32, (1, 1, 0), 1), (39, (2, 2, 0), 1), (59, (2, 1, 1), 1), (60, (1, 2, 1), 1), (64, (0, 1, 1), 1), (71, (1, 2, 1), 1), (91, (1, 1, 2), 1), (92, (0, 2, 2), 1), (96, (1, 2, 1), 1), (103, (2, 3, 1), 1), (123, (2, 2, 2), 1), (124, (1, 3, 2), 1)] weight_frontier_peak=87
+REGION B dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=B local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION L dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=L local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION M dimension=25 sectors=5 multiplicity_sum=5
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  q=(1, 2, 1) multiplicity=1 irrep_dimension=12
+  OCCUPANCIES region=M local_edge_order=(((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (1, (1, 1, 0), 1), (2, (0, 1, 1), 1), (3, (1, 2, 1), 1)] weight_frontier_peak=21
+REGION R dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=R local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+GLUING contributions=[((0, 0, 0), 4), ((0, 1, 1), 5), ((1, 0, 1), 4), ((1, 1, 0), 5)]
+FULL singlets=18 Haar_frontier_peak=189 even_subgraphs=16
+  FULL_CERT occupied_edges=[] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 7, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 7, 8, 10] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[2, 3, 4, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[7, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5, 7, 8, 9, 11] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 9, 10, 11] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+OPEN center_star_singlets=57 untouched_edges=8 dimension=22265625 Haar_frontier_peak=9
+FAULT_REJECTED prematurely project all regional boundary flux: faulty=4 independent=18
+FAULT_REJECTED discard local four-end invariant multiplicity: faulty=16 independent=18
+FAULT_REJECTED drop spin-one intermediate boundary channel in LR grouping: faulty=16 independent=18
+EARLY_PROJECT boundary_subset=(0, 0, 0) final_count=18
+EARLY_PROJECT boundary_subset=(0, 0, 1) final_count=9
+EARLY_PROJECT boundary_subset=(0, 1, 0) final_count=8
+EARLY_PROJECT boundary_subset=(0, 1, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 0, 0) final_count=9
+EARLY_PROJECT boundary_subset=(1, 0, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 0) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 1) final_count=4
+GROUPINGS LM_R=18 L_MR=18 LR_M=18 premature_each=[4, 4, 4]
+REGION LR dimension=169 sectors=13 multiplicity_sum=31
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=4 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=2 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=1 irrep_dimension=9
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=2 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=1 irrep_dimension=9
+TOTAL exact_equalities=83 failures=0
+RESOURCES elapsed_seconds=0.108559 peak_rss_bytes=25149440
+EXIT 0
+COMMAND ['nice', '-n', '10', 'python3', 'scripts/gb1_cf_boundary_fusion_check_2026_11_07.py', '--inject-fault', 'drop-flux']
+CERTIFICATE_REJECTED AssertionError: injected boundary fault must fail closed: actual=4 expected=18
+BOUNDS wall=90s cpu=90s RLIMIT_DATA=unavailable(current limit exceeds maximum limit) RLIMIT_AS=unavailable(current limit exceeds maximum limit) RSS_guard=270000000 poll_seconds=0.05 threads=1
+SOURCE_SHA256 4c37d3508fcea7f58b1fc9362e2d34134a45276b03641567437dd9c93297a5e4
+RUNTIME Python=3.13.5 platform=Darwin arithmetic=integer/Fraction model_effort=inherited_not_exposed
+HALF_FUSION {0: {0: 1}, 1: {1: 1}, 2: {2: 1, 0: 1}, 3: {3: 1, 1: 2}, 4: {4: 1, 2: 3, 0: 2}}
+FAULT_REJECTED unweighted fine energy equals coarse energy: faulty={((0, 0), (0, 0)): Fraction(3, 2), ((0, 1), (1, 0)): Fraction(3, 2)} independent={((0, 0), (0, 0)): Fraction(3, 4), ((0, 1), (1, 0)): Fraction(3, 4)}
+CUT coefficient-basis Gram comparisons=25 holonomy entries=20 associativity inputs=5 per-link Casimir inputs=10
+CUT range: j2=j1 in {0,1/2}, unique internal contraction, endpoint dimension=5
+EDGES [(0, ((0, 0), (1, 0))), (1, ((0, 0), (0, 1))), (2, ((1, 0), (2, 0))), (3, ((1, 0), (1, 1))), (4, ((2, 0), (2, 1))), (5, ((0, 1), (1, 1))), (6, ((0, 1), (0, 2))), (7, ((1, 1), (2, 1))), (8, ((1, 1), (1, 2))), (9, ((2, 1), (2, 2))), (10, ((0, 2), (1, 2))), (11, ((1, 2), (2, 2)))]
+REGION A dimension=325 sectors=18 multiplicity_sum=44
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=5 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=3 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=2 irrep_dimension=9
+  q=(0, 3, 1) multiplicity=1 irrep_dimension=8
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=5 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=3 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=3 irrep_dimension=12
+  q=(1, 3, 0) multiplicity=1 irrep_dimension=8
+  q=(1, 3, 2) multiplicity=1 irrep_dimension=24
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=3 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=2 irrep_dimension=9
+  q=(2, 2, 2) multiplicity=1 irrep_dimension=27
+  q=(2, 3, 1) multiplicity=1 irrep_dimension=24
+  OCCUPANCIES region=A local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)), ((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1), (32, (1, 1, 0), 1), (39, (2, 2, 0), 1), (59, (2, 1, 1), 1), (60, (1, 2, 1), 1), (64, (0, 1, 1), 1), (71, (1, 2, 1), 1), (91, (1, 1, 2), 1), (92, (0, 2, 2), 1), (96, (1, 2, 1), 1), (103, (2, 3, 1), 1), (123, (2, 2, 2), 1), (124, (1, 3, 2), 1)] weight_frontier_peak=87
+REGION B dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=B local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION L dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=L local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION M dimension=25 sectors=5 multiplicity_sum=5
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  q=(1, 2, 1) multiplicity=1 irrep_dimension=12
+  OCCUPANCIES region=M local_edge_order=(((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (1, (1, 1, 0), 1), (2, (0, 1, 1), 1), (3, (1, 2, 1), 1)] weight_frontier_peak=21
+REGION R dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=R local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+GLUING contributions=[((0, 0, 0), 4), ((0, 1, 1), 5), ((1, 0, 1), 4), ((1, 1, 0), 5)]
+FULL singlets=18 Haar_frontier_peak=189 even_subgraphs=16
+  FULL_CERT occupied_edges=[] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 7, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 7, 8, 10] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[2, 3, 4, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[7, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5, 7, 8, 9, 11] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 9, 10, 11] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+OPEN center_star_singlets=57 untouched_edges=8 dimension=22265625 Haar_frontier_peak=9
+FAULT_REJECTED prematurely project all regional boundary flux: faulty=4 independent=18
+FAULT_REJECTED discard local four-end invariant multiplicity: faulty=16 independent=18
+FAULT_REJECTED drop spin-one intermediate boundary channel in LR grouping: faulty=16 independent=18
+EARLY_PROJECT boundary_subset=(0, 0, 0) final_count=18
+EARLY_PROJECT boundary_subset=(0, 0, 1) final_count=9
+EARLY_PROJECT boundary_subset=(0, 1, 0) final_count=8
+EARLY_PROJECT boundary_subset=(0, 1, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 0, 0) final_count=9
+EARLY_PROJECT boundary_subset=(1, 0, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 0) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 1) final_count=4
+GROUPINGS LM_R=18 L_MR=18 LR_M=18 premature_each=[4, 4, 4]
+REGION LR dimension=169 sectors=13 multiplicity_sum=31
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=4 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=2 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=1 irrep_dimension=9
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=2 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=1 irrep_dimension=9
+EXIT 1
+COMMAND ['nice', '-n', '10', 'python3', 'scripts/gb1_cf_boundary_fusion_check_2026_11_07.py', '--inject-fault', 'drop-multiplicity']
+CERTIFICATE_REJECTED AssertionError: injected multiplicity fault must fail closed: actual=16 expected=18
+BOUNDS wall=90s cpu=90s RLIMIT_DATA=unavailable(current limit exceeds maximum limit) RLIMIT_AS=unavailable(current limit exceeds maximum limit) RSS_guard=270000000 poll_seconds=0.05 threads=1
+SOURCE_SHA256 4c37d3508fcea7f58b1fc9362e2d34134a45276b03641567437dd9c93297a5e4
+RUNTIME Python=3.13.5 platform=Darwin arithmetic=integer/Fraction model_effort=inherited_not_exposed
+HALF_FUSION {0: {0: 1}, 1: {1: 1}, 2: {2: 1, 0: 1}, 3: {3: 1, 1: 2}, 4: {4: 1, 2: 3, 0: 2}}
+FAULT_REJECTED unweighted fine energy equals coarse energy: faulty={((0, 0), (0, 0)): Fraction(3, 2), ((0, 1), (1, 0)): Fraction(3, 2)} independent={((0, 0), (0, 0)): Fraction(3, 4), ((0, 1), (1, 0)): Fraction(3, 4)}
+CUT coefficient-basis Gram comparisons=25 holonomy entries=20 associativity inputs=5 per-link Casimir inputs=10
+CUT range: j2=j1 in {0,1/2}, unique internal contraction, endpoint dimension=5
+EDGES [(0, ((0, 0), (1, 0))), (1, ((0, 0), (0, 1))), (2, ((1, 0), (2, 0))), (3, ((1, 0), (1, 1))), (4, ((2, 0), (2, 1))), (5, ((0, 1), (1, 1))), (6, ((0, 1), (0, 2))), (7, ((1, 1), (2, 1))), (8, ((1, 1), (1, 2))), (9, ((2, 1), (2, 2))), (10, ((0, 2), (1, 2))), (11, ((1, 2), (2, 2)))]
+REGION A dimension=325 sectors=18 multiplicity_sum=44
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=5 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=3 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=2 irrep_dimension=9
+  q=(0, 3, 1) multiplicity=1 irrep_dimension=8
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=5 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=3 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=3 irrep_dimension=12
+  q=(1, 3, 0) multiplicity=1 irrep_dimension=8
+  q=(1, 3, 2) multiplicity=1 irrep_dimension=24
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=3 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=2 irrep_dimension=9
+  q=(2, 2, 2) multiplicity=1 irrep_dimension=27
+  q=(2, 3, 1) multiplicity=1 irrep_dimension=24
+  OCCUPANCIES region=A local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)), ((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1), (32, (1, 1, 0), 1), (39, (2, 2, 0), 1), (59, (2, 1, 1), 1), (60, (1, 2, 1), 1), (64, (0, 1, 1), 1), (71, (1, 2, 1), 1), (91, (1, 1, 2), 1), (92, (0, 2, 2), 1), (96, (1, 2, 1), 1), (103, (2, 3, 1), 1), (123, (2, 2, 2), 1), (124, (1, 3, 2), 1)] weight_frontier_peak=87
+REGION B dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=B local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION L dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=L local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION M dimension=25 sectors=5 multiplicity_sum=5
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  q=(1, 2, 1) multiplicity=1 irrep_dimension=12
+  OCCUPANCIES region=M local_edge_order=(((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (1, (1, 1, 0), 1), (2, (0, 1, 1), 1), (3, (1, 2, 1), 1)] weight_frontier_peak=21
+REGION R dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=R local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+GLUING contributions=[((0, 0, 0), 4), ((0, 1, 1), 5), ((1, 0, 1), 4), ((1, 1, 0), 5)]
+FULL singlets=18 Haar_frontier_peak=189 even_subgraphs=16
+  FULL_CERT occupied_edges=[] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 7, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 7, 8, 10] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[2, 3, 4, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[7, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5, 7, 8, 9, 11] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 9, 10, 11] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+OPEN center_star_singlets=57 untouched_edges=8 dimension=22265625 Haar_frontier_peak=9
+FAULT_REJECTED prematurely project all regional boundary flux: faulty=4 independent=18
+FAULT_REJECTED discard local four-end invariant multiplicity: faulty=16 independent=18
+FAULT_REJECTED drop spin-one intermediate boundary channel in LR grouping: faulty=16 independent=18
+EARLY_PROJECT boundary_subset=(0, 0, 0) final_count=18
+EARLY_PROJECT boundary_subset=(0, 0, 1) final_count=9
+EARLY_PROJECT boundary_subset=(0, 1, 0) final_count=8
+EARLY_PROJECT boundary_subset=(0, 1, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 0, 0) final_count=9
+EARLY_PROJECT boundary_subset=(1, 0, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 0) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 1) final_count=4
+GROUPINGS LM_R=18 L_MR=18 LR_M=18 premature_each=[4, 4, 4]
+REGION LR dimension=169 sectors=13 multiplicity_sum=31
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=4 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=2 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=1 irrep_dimension=9
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=2 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=1 irrep_dimension=9
+EXIT 1
+COMMAND ['nice', '-n', '10', 'python3', 'scripts/gb1_cf_boundary_fusion_check_2026_11_07.py', '--inject-fault', 'truncate-intermediate']
+CERTIFICATE_REJECTED AssertionError: injected intermediate-spin fault must fail closed: actual=16 expected=18
+BOUNDS wall=90s cpu=90s RLIMIT_DATA=unavailable(current limit exceeds maximum limit) RLIMIT_AS=unavailable(current limit exceeds maximum limit) RSS_guard=270000000 poll_seconds=0.05 threads=1
+SOURCE_SHA256 4c37d3508fcea7f58b1fc9362e2d34134a45276b03641567437dd9c93297a5e4
+RUNTIME Python=3.13.5 platform=Darwin arithmetic=integer/Fraction model_effort=inherited_not_exposed
+HALF_FUSION {0: {0: 1}, 1: {1: 1}, 2: {2: 1, 0: 1}, 3: {3: 1, 1: 2}, 4: {4: 1, 2: 3, 0: 2}}
+FAULT_REJECTED unweighted fine energy equals coarse energy: faulty={((0, 0), (0, 0)): Fraction(3, 2), ((0, 1), (1, 0)): Fraction(3, 2)} independent={((0, 0), (0, 0)): Fraction(3, 4), ((0, 1), (1, 0)): Fraction(3, 4)}
+CUT coefficient-basis Gram comparisons=25 holonomy entries=20 associativity inputs=5 per-link Casimir inputs=10
+CUT range: j2=j1 in {0,1/2}, unique internal contraction, endpoint dimension=5
+EDGES [(0, ((0, 0), (1, 0))), (1, ((0, 0), (0, 1))), (2, ((1, 0), (2, 0))), (3, ((1, 0), (1, 1))), (4, ((2, 0), (2, 1))), (5, ((0, 1), (1, 1))), (6, ((0, 1), (0, 2))), (7, ((1, 1), (2, 1))), (8, ((1, 1), (1, 2))), (9, ((2, 1), (2, 2))), (10, ((0, 2), (1, 2))), (11, ((1, 2), (2, 2)))]
+REGION A dimension=325 sectors=18 multiplicity_sum=44
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=5 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=3 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=2 irrep_dimension=9
+  q=(0, 3, 1) multiplicity=1 irrep_dimension=8
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=5 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=3 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=3 irrep_dimension=12
+  q=(1, 3, 0) multiplicity=1 irrep_dimension=8
+  q=(1, 3, 2) multiplicity=1 irrep_dimension=24
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=3 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=2 irrep_dimension=9
+  q=(2, 2, 2) multiplicity=1 irrep_dimension=27
+  q=(2, 3, 1) multiplicity=1 irrep_dimension=24
+  OCCUPANCIES region=A local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)), ((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1), (32, (1, 1, 0), 1), (39, (2, 2, 0), 1), (59, (2, 1, 1), 1), (60, (1, 2, 1), 1), (64, (0, 1, 1), 1), (71, (1, 2, 1), 1), (91, (1, 1, 2), 1), (92, (0, 2, 2), 1), (96, (1, 2, 1), 1), (103, (2, 3, 1), 1), (123, (2, 2, 2), 1), (124, (1, 3, 2), 1)] weight_frontier_peak=87
+REGION B dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=B local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION L dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=L local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION M dimension=25 sectors=5 multiplicity_sum=5
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  q=(1, 2, 1) multiplicity=1 irrep_dimension=12
+  OCCUPANCIES region=M local_edge_order=(((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (1, (1, 1, 0), 1), (2, (0, 1, 1), 1), (3, (1, 2, 1), 1)] weight_frontier_peak=21
+REGION R dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=R local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+GLUING contributions=[((0, 0, 0), 4), ((0, 1, 1), 5), ((1, 0, 1), 4), ((1, 1, 0), 5)]
+FULL singlets=18 Haar_frontier_peak=189 even_subgraphs=16
+  FULL_CERT occupied_edges=[] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 7, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 7, 8, 10] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[2, 3, 4, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[7, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5, 7, 8, 9, 11] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 9, 10, 11] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+OPEN center_star_singlets=57 untouched_edges=8 dimension=22265625 Haar_frontier_peak=9
+FAULT_REJECTED prematurely project all regional boundary flux: faulty=4 independent=18
+FAULT_REJECTED discard local four-end invariant multiplicity: faulty=16 independent=18
+FAULT_REJECTED drop spin-one intermediate boundary channel in LR grouping: faulty=16 independent=18
+EARLY_PROJECT boundary_subset=(0, 0, 0) final_count=18
+EARLY_PROJECT boundary_subset=(0, 0, 1) final_count=9
+EARLY_PROJECT boundary_subset=(0, 1, 0) final_count=8
+EARLY_PROJECT boundary_subset=(0, 1, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 0, 0) final_count=9
+EARLY_PROJECT boundary_subset=(1, 0, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 0) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 1) final_count=4
+GROUPINGS LM_R=18 L_MR=18 LR_M=18 premature_each=[4, 4, 4]
+REGION LR dimension=169 sectors=13 multiplicity_sum=31
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=4 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=2 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=1 irrep_dimension=9
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=2 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=1 irrep_dimension=9
+EXIT 1
+SUITE baseline accepted; all three injected faults rejected with exit 1.
+COMMAND ['python3', 'scripts/lab_ops.py', 'numeric-lock', 'release', '--holder', 'gb1-cf-boundary-checker-20261107-c80fe1b915ec4d9ab7d8a55e2db813a9']
+{
+  "lock": null,
+  "status": "released"
+}
+EXIT 0
+FINAL FROZEN NUMERIC SUITE holder=gb1-cf-boundary-checker-final-20261107-5c00fc86c66f4dd4be2c6acb6db32903
+AUDIT_TIMEOUT_SEC absent from environment; runner literal default=85; suite deadline=90s; thread variables=1.
+COMMAND ['python3', 'scripts/lab_ops.py', 'preflight', '--numeric']
+ok      disk: 121 GB free, limit 10
+ok      memory: 43% free, limit 25
+ok      load: 5.2, limit 8
+note    model floor: no target named, no floor checked
+ok      nice: works here
+note    memory cap: ulimit unavailable; a job must watch its own memory
+ok      network: origin reachable
+ok      numeric lock: free
+preflight: go
+EXIT 0
+COMMAND ['python3', 'scripts/lab_ops.py', 'numeric-lock', 'acquire', '--holder', 'gb1-cf-boundary-checker-final-20261107-5c00fc86c66f4dd4be2c6acb6db32903', '--purpose', 'frozen independent SU(2) certificate with default timeout and faults', '--ttl-hours', '0.1']
+{
+  "lock": {
+    "expires_at": "2026-11-08T02:30:01.888019+00:00",
+    "holder_id": "gb1-cf-boundary-checker-final-20261107-5c00fc86c66f4dd4be2c6acb6db32903",
+    "owner": "gb1-cf-boundary-checker-final-20261107-5c00fc86c66f4dd4be2c6acb6db32903",
+    "pid": 5518,
+    "purpose": "frozen independent SU(2) certificate with default timeout and faults",
+    "started_at": "2026-11-08T02:24:01.888019+00:00"
+  },
+  "status": "acquired"
+}
+EXIT 0
+COMMAND ['nice', '-n', '10', 'python3', 'scripts/gb1_cf_boundary_fusion_check_2026_11_07.py']
+BOUNDS wall=85s cpu=85s RLIMIT_DATA=unavailable(current limit exceeds maximum limit) RLIMIT_AS=unavailable(current limit exceeds maximum limit) RSS_guard=270000000 poll_seconds=0.05 threads=1
+SOURCE_SHA256 e4291452252f60610eb40526d055e400bb3ef09a23c65d08c7b2918eba03044e
+RUNTIME Python=3.13.5 platform=Darwin arithmetic=integer/Fraction model_effort=inherited_not_exposed
+HALF_FUSION {0: {0: 1}, 1: {1: 1}, 2: {2: 1, 0: 1}, 3: {3: 1, 1: 2}, 4: {4: 1, 2: 3, 0: 2}}
+FAULT_REJECTED unweighted fine energy equals coarse energy: faulty={((0, 0), (0, 0)): Fraction(3, 2), ((0, 1), (1, 0)): Fraction(3, 2)} independent={((0, 0), (0, 0)): Fraction(3, 4), ((0, 1), (1, 0)): Fraction(3, 4)}
+CUT coefficient-basis Gram comparisons=25 holonomy entries=20 associativity inputs=5 per-link Casimir inputs=10
+CUT range: j2=j1 in {0,1/2}, unique internal contraction, endpoint dimension=5
+EDGES [(0, ((0, 0), (1, 0))), (1, ((0, 0), (0, 1))), (2, ((1, 0), (2, 0))), (3, ((1, 0), (1, 1))), (4, ((2, 0), (2, 1))), (5, ((0, 1), (1, 1))), (6, ((0, 1), (0, 2))), (7, ((1, 1), (2, 1))), (8, ((1, 1), (1, 2))), (9, ((2, 1), (2, 2))), (10, ((0, 2), (1, 2))), (11, ((1, 2), (2, 2)))]
+REGION A dimension=325 sectors=18 multiplicity_sum=44
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=5 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=3 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=2 irrep_dimension=9
+  q=(0, 3, 1) multiplicity=1 irrep_dimension=8
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=5 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=3 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=3 irrep_dimension=12
+  q=(1, 3, 0) multiplicity=1 irrep_dimension=8
+  q=(1, 3, 2) multiplicity=1 irrep_dimension=24
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=3 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=2 irrep_dimension=9
+  q=(2, 2, 2) multiplicity=1 irrep_dimension=27
+  q=(2, 3, 1) multiplicity=1 irrep_dimension=24
+  OCCUPANCIES region=A local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)), ((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1), (32, (1, 1, 0), 1), (39, (2, 2, 0), 1), (59, (2, 1, 1), 1), (60, (1, 2, 1), 1), (64, (0, 1, 1), 1), (71, (1, 2, 1), 1), (91, (1, 1, 2), 1), (92, (0, 2, 2), 1), (96, (1, 2, 1), 1), (103, (2, 3, 1), 1), (123, (2, 2, 2), 1), (124, (1, 3, 2), 1)] weight_frontier_peak=87
+REGION B dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=B local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION L dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=L local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION M dimension=25 sectors=5 multiplicity_sum=5
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  q=(1, 2, 1) multiplicity=1 irrep_dimension=12
+  OCCUPANCIES region=M local_edge_order=(((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (1, (1, 1, 0), 1), (2, (0, 1, 1), 1), (3, (1, 2, 1), 1)] weight_frontier_peak=21
+REGION R dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=R local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+GLUING contributions=[((0, 0, 0), 4), ((0, 1, 1), 5), ((1, 0, 1), 4), ((1, 1, 0), 5)]
+FULL singlets=18 Haar_frontier_peak=189 even_subgraphs=16
+  FULL_CERT occupied_edges=[] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 7, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 7, 8, 10] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[2, 3, 4, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[7, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5, 7, 8, 9, 11] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 9, 10, 11] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+OPEN center_star_singlets=57 untouched_edges=8 dimension=22265625 Haar_frontier_peak=9
+FAULT_REJECTED prematurely project all regional boundary flux: faulty=4 independent=18
+FAULT_REJECTED discard local four-end invariant multiplicity: faulty=16 independent=18
+FAULT_REJECTED drop spin-one intermediate boundary channel in LR grouping: faulty=16 independent=18
+EARLY_PROJECT boundary_subset=(0, 0, 0) final_count=18
+EARLY_PROJECT boundary_subset=(0, 0, 1) final_count=9
+EARLY_PROJECT boundary_subset=(0, 1, 0) final_count=8
+EARLY_PROJECT boundary_subset=(0, 1, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 0, 0) final_count=9
+EARLY_PROJECT boundary_subset=(1, 0, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 0) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 1) final_count=4
+GROUPINGS LM_R=18 L_MR=18 LR_M=18 premature_each=[4, 4, 4]
+REGION LR dimension=169 sectors=13 multiplicity_sum=31
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=4 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=2 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=1 irrep_dimension=9
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=2 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=1 irrep_dimension=9
+TOTAL exact_equalities=83 failures=0
+RESOURCES elapsed_seconds=0.103760 peak_rss_bytes=25509888
+EXIT 0
+COMMAND ['nice', '-n', '10', 'python3', 'scripts/gb1_cf_boundary_fusion_check_2026_11_07.py', '--inject-fault', 'drop-flux']
+CERTIFICATE_REJECTED AssertionError: injected boundary fault must fail closed: actual=4 expected=18
+BOUNDS wall=85s cpu=85s RLIMIT_DATA=unavailable(current limit exceeds maximum limit) RLIMIT_AS=unavailable(current limit exceeds maximum limit) RSS_guard=270000000 poll_seconds=0.05 threads=1
+SOURCE_SHA256 e4291452252f60610eb40526d055e400bb3ef09a23c65d08c7b2918eba03044e
+RUNTIME Python=3.13.5 platform=Darwin arithmetic=integer/Fraction model_effort=inherited_not_exposed
+HALF_FUSION {0: {0: 1}, 1: {1: 1}, 2: {2: 1, 0: 1}, 3: {3: 1, 1: 2}, 4: {4: 1, 2: 3, 0: 2}}
+FAULT_REJECTED unweighted fine energy equals coarse energy: faulty={((0, 0), (0, 0)): Fraction(3, 2), ((0, 1), (1, 0)): Fraction(3, 2)} independent={((0, 0), (0, 0)): Fraction(3, 4), ((0, 1), (1, 0)): Fraction(3, 4)}
+CUT coefficient-basis Gram comparisons=25 holonomy entries=20 associativity inputs=5 per-link Casimir inputs=10
+CUT range: j2=j1 in {0,1/2}, unique internal contraction, endpoint dimension=5
+EDGES [(0, ((0, 0), (1, 0))), (1, ((0, 0), (0, 1))), (2, ((1, 0), (2, 0))), (3, ((1, 0), (1, 1))), (4, ((2, 0), (2, 1))), (5, ((0, 1), (1, 1))), (6, ((0, 1), (0, 2))), (7, ((1, 1), (2, 1))), (8, ((1, 1), (1, 2))), (9, ((2, 1), (2, 2))), (10, ((0, 2), (1, 2))), (11, ((1, 2), (2, 2)))]
+REGION A dimension=325 sectors=18 multiplicity_sum=44
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=5 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=3 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=2 irrep_dimension=9
+  q=(0, 3, 1) multiplicity=1 irrep_dimension=8
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=5 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=3 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=3 irrep_dimension=12
+  q=(1, 3, 0) multiplicity=1 irrep_dimension=8
+  q=(1, 3, 2) multiplicity=1 irrep_dimension=24
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=3 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=2 irrep_dimension=9
+  q=(2, 2, 2) multiplicity=1 irrep_dimension=27
+  q=(2, 3, 1) multiplicity=1 irrep_dimension=24
+  OCCUPANCIES region=A local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)), ((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1), (32, (1, 1, 0), 1), (39, (2, 2, 0), 1), (59, (2, 1, 1), 1), (60, (1, 2, 1), 1), (64, (0, 1, 1), 1), (71, (1, 2, 1), 1), (91, (1, 1, 2), 1), (92, (0, 2, 2), 1), (96, (1, 2, 1), 1), (103, (2, 3, 1), 1), (123, (2, 2, 2), 1), (124, (1, 3, 2), 1)] weight_frontier_peak=87
+REGION B dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=B local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION L dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=L local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION M dimension=25 sectors=5 multiplicity_sum=5
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  q=(1, 2, 1) multiplicity=1 irrep_dimension=12
+  OCCUPANCIES region=M local_edge_order=(((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (1, (1, 1, 0), 1), (2, (0, 1, 1), 1), (3, (1, 2, 1), 1)] weight_frontier_peak=21
+REGION R dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=R local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+GLUING contributions=[((0, 0, 0), 4), ((0, 1, 1), 5), ((1, 0, 1), 4), ((1, 1, 0), 5)]
+FULL singlets=18 Haar_frontier_peak=189 even_subgraphs=16
+  FULL_CERT occupied_edges=[] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 7, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 7, 8, 10] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[2, 3, 4, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[7, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5, 7, 8, 9, 11] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 9, 10, 11] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+OPEN center_star_singlets=57 untouched_edges=8 dimension=22265625 Haar_frontier_peak=9
+FAULT_REJECTED prematurely project all regional boundary flux: faulty=4 independent=18
+FAULT_REJECTED discard local four-end invariant multiplicity: faulty=16 independent=18
+FAULT_REJECTED drop spin-one intermediate boundary channel in LR grouping: faulty=16 independent=18
+EARLY_PROJECT boundary_subset=(0, 0, 0) final_count=18
+EARLY_PROJECT boundary_subset=(0, 0, 1) final_count=9
+EARLY_PROJECT boundary_subset=(0, 1, 0) final_count=8
+EARLY_PROJECT boundary_subset=(0, 1, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 0, 0) final_count=9
+EARLY_PROJECT boundary_subset=(1, 0, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 0) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 1) final_count=4
+GROUPINGS LM_R=18 L_MR=18 LR_M=18 premature_each=[4, 4, 4]
+REGION LR dimension=169 sectors=13 multiplicity_sum=31
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=4 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=2 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=1 irrep_dimension=9
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=2 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=1 irrep_dimension=9
+EXIT 1
+COMMAND ['nice', '-n', '10', 'python3', 'scripts/gb1_cf_boundary_fusion_check_2026_11_07.py', '--inject-fault', 'drop-multiplicity']
+CERTIFICATE_REJECTED AssertionError: injected multiplicity fault must fail closed: actual=16 expected=18
+BOUNDS wall=85s cpu=85s RLIMIT_DATA=unavailable(current limit exceeds maximum limit) RLIMIT_AS=unavailable(current limit exceeds maximum limit) RSS_guard=270000000 poll_seconds=0.05 threads=1
+SOURCE_SHA256 e4291452252f60610eb40526d055e400bb3ef09a23c65d08c7b2918eba03044e
+RUNTIME Python=3.13.5 platform=Darwin arithmetic=integer/Fraction model_effort=inherited_not_exposed
+HALF_FUSION {0: {0: 1}, 1: {1: 1}, 2: {2: 1, 0: 1}, 3: {3: 1, 1: 2}, 4: {4: 1, 2: 3, 0: 2}}
+FAULT_REJECTED unweighted fine energy equals coarse energy: faulty={((0, 0), (0, 0)): Fraction(3, 2), ((0, 1), (1, 0)): Fraction(3, 2)} independent={((0, 0), (0, 0)): Fraction(3, 4), ((0, 1), (1, 0)): Fraction(3, 4)}
+CUT coefficient-basis Gram comparisons=25 holonomy entries=20 associativity inputs=5 per-link Casimir inputs=10
+CUT range: j2=j1 in {0,1/2}, unique internal contraction, endpoint dimension=5
+EDGES [(0, ((0, 0), (1, 0))), (1, ((0, 0), (0, 1))), (2, ((1, 0), (2, 0))), (3, ((1, 0), (1, 1))), (4, ((2, 0), (2, 1))), (5, ((0, 1), (1, 1))), (6, ((0, 1), (0, 2))), (7, ((1, 1), (2, 1))), (8, ((1, 1), (1, 2))), (9, ((2, 1), (2, 2))), (10, ((0, 2), (1, 2))), (11, ((1, 2), (2, 2)))]
+REGION A dimension=325 sectors=18 multiplicity_sum=44
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=5 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=3 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=2 irrep_dimension=9
+  q=(0, 3, 1) multiplicity=1 irrep_dimension=8
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=5 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=3 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=3 irrep_dimension=12
+  q=(1, 3, 0) multiplicity=1 irrep_dimension=8
+  q=(1, 3, 2) multiplicity=1 irrep_dimension=24
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=3 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=2 irrep_dimension=9
+  q=(2, 2, 2) multiplicity=1 irrep_dimension=27
+  q=(2, 3, 1) multiplicity=1 irrep_dimension=24
+  OCCUPANCIES region=A local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)), ((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1), (32, (1, 1, 0), 1), (39, (2, 2, 0), 1), (59, (2, 1, 1), 1), (60, (1, 2, 1), 1), (64, (0, 1, 1), 1), (71, (1, 2, 1), 1), (91, (1, 1, 2), 1), (92, (0, 2, 2), 1), (96, (1, 2, 1), 1), (103, (2, 3, 1), 1), (123, (2, 2, 2), 1), (124, (1, 3, 2), 1)] weight_frontier_peak=87
+REGION B dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=B local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION L dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=L local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION M dimension=25 sectors=5 multiplicity_sum=5
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  q=(1, 2, 1) multiplicity=1 irrep_dimension=12
+  OCCUPANCIES region=M local_edge_order=(((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (1, (1, 1, 0), 1), (2, (0, 1, 1), 1), (3, (1, 2, 1), 1)] weight_frontier_peak=21
+REGION R dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=R local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+GLUING contributions=[((0, 0, 0), 4), ((0, 1, 1), 5), ((1, 0, 1), 4), ((1, 1, 0), 5)]
+FULL singlets=18 Haar_frontier_peak=189 even_subgraphs=16
+  FULL_CERT occupied_edges=[] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 7, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 7, 8, 10] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[2, 3, 4, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[7, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5, 7, 8, 9, 11] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 9, 10, 11] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+OPEN center_star_singlets=57 untouched_edges=8 dimension=22265625 Haar_frontier_peak=9
+FAULT_REJECTED prematurely project all regional boundary flux: faulty=4 independent=18
+FAULT_REJECTED discard local four-end invariant multiplicity: faulty=16 independent=18
+FAULT_REJECTED drop spin-one intermediate boundary channel in LR grouping: faulty=16 independent=18
+EARLY_PROJECT boundary_subset=(0, 0, 0) final_count=18
+EARLY_PROJECT boundary_subset=(0, 0, 1) final_count=9
+EARLY_PROJECT boundary_subset=(0, 1, 0) final_count=8
+EARLY_PROJECT boundary_subset=(0, 1, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 0, 0) final_count=9
+EARLY_PROJECT boundary_subset=(1, 0, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 0) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 1) final_count=4
+GROUPINGS LM_R=18 L_MR=18 LR_M=18 premature_each=[4, 4, 4]
+REGION LR dimension=169 sectors=13 multiplicity_sum=31
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=4 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=2 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=1 irrep_dimension=9
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=2 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=1 irrep_dimension=9
+EXIT 1
+COMMAND ['nice', '-n', '10', 'python3', 'scripts/gb1_cf_boundary_fusion_check_2026_11_07.py', '--inject-fault', 'truncate-intermediate']
+CERTIFICATE_REJECTED AssertionError: injected intermediate-spin fault must fail closed: actual=16 expected=18
+BOUNDS wall=85s cpu=85s RLIMIT_DATA=unavailable(current limit exceeds maximum limit) RLIMIT_AS=unavailable(current limit exceeds maximum limit) RSS_guard=270000000 poll_seconds=0.05 threads=1
+SOURCE_SHA256 e4291452252f60610eb40526d055e400bb3ef09a23c65d08c7b2918eba03044e
+RUNTIME Python=3.13.5 platform=Darwin arithmetic=integer/Fraction model_effort=inherited_not_exposed
+HALF_FUSION {0: {0: 1}, 1: {1: 1}, 2: {2: 1, 0: 1}, 3: {3: 1, 1: 2}, 4: {4: 1, 2: 3, 0: 2}}
+FAULT_REJECTED unweighted fine energy equals coarse energy: faulty={((0, 0), (0, 0)): Fraction(3, 2), ((0, 1), (1, 0)): Fraction(3, 2)} independent={((0, 0), (0, 0)): Fraction(3, 4), ((0, 1), (1, 0)): Fraction(3, 4)}
+CUT coefficient-basis Gram comparisons=25 holonomy entries=20 associativity inputs=5 per-link Casimir inputs=10
+CUT range: j2=j1 in {0,1/2}, unique internal contraction, endpoint dimension=5
+EDGES [(0, ((0, 0), (1, 0))), (1, ((0, 0), (0, 1))), (2, ((1, 0), (2, 0))), (3, ((1, 0), (1, 1))), (4, ((2, 0), (2, 1))), (5, ((0, 1), (1, 1))), (6, ((0, 1), (0, 2))), (7, ((1, 1), (2, 1))), (8, ((1, 1), (1, 2))), (9, ((2, 1), (2, 2))), (10, ((0, 2), (1, 2))), (11, ((1, 2), (2, 2)))]
+REGION A dimension=325 sectors=18 multiplicity_sum=44
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=5 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=3 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=2 irrep_dimension=9
+  q=(0, 3, 1) multiplicity=1 irrep_dimension=8
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=5 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=3 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=3 irrep_dimension=12
+  q=(1, 3, 0) multiplicity=1 irrep_dimension=8
+  q=(1, 3, 2) multiplicity=1 irrep_dimension=24
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=3 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=2 irrep_dimension=9
+  q=(2, 2, 2) multiplicity=1 irrep_dimension=27
+  q=(2, 3, 1) multiplicity=1 irrep_dimension=24
+  OCCUPANCIES region=A local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)), ((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1), (32, (1, 1, 0), 1), (39, (2, 2, 0), 1), (59, (2, 1, 1), 1), (60, (1, 2, 1), 1), (64, (0, 1, 1), 1), (71, (1, 2, 1), 1), (91, (1, 1, 2), 1), (92, (0, 2, 2), 1), (96, (1, 2, 1), 1), (103, (2, 3, 1), 1), (123, (2, 2, 2), 1), (124, (1, 3, 2), 1)] weight_frontier_peak=87
+REGION B dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=B local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION L dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=L local_edge_order=(((0, 0), (1, 0)), ((0, 0), (0, 1)), ((0, 1), (1, 1)), ((0, 1), (0, 2)), ((0, 2), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+REGION M dimension=25 sectors=5 multiplicity_sum=5
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  q=(1, 2, 1) multiplicity=1 irrep_dimension=12
+  OCCUPANCIES region=M local_edge_order=(((1, 0), (1, 1)), ((1, 1), (1, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (1, (1, 1, 0), 1), (2, (0, 1, 1), 1), (3, (1, 2, 1), 1)] weight_frontier_peak=21
+REGION R dimension=13 sectors=4 multiplicity_sum=4
+  q=(0, 0, 0) multiplicity=1 irrep_dimension=1
+  q=(0, 1, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 0, 1) multiplicity=1 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=1 irrep_dimension=4
+  OCCUPANCIES region=R local_edge_order=(((1, 0), (2, 0)), ((2, 0), (2, 1)), ((1, 1), (2, 1)), ((2, 1), (2, 2)), ((1, 2), (2, 2)))
+  admissible_masks_degrees_multiplier=[(0, (0, 0, 0), 1), (7, (1, 1, 0), 1), (27, (1, 0, 1), 1), (28, (0, 1, 1), 1)] weight_frontier_peak=81
+GLUING contributions=[((0, 0, 0), 4), ((0, 1, 1), 5), ((1, 0, 1), 4), ((1, 1, 0), 5)]
+FULL singlets=18 Haar_frontier_peak=189 even_subgraphs=16
+  FULL_CERT occupied_edges=[] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 7] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 7, 8, 10] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 7, 8, 10] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[2, 3, 4, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 5, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[7, 8, 9, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 5, 7, 8, 9, 11] center_degree=4 invariant_multiplicity=2
+  FULL_CERT occupied_edges=[0, 1, 2, 4, 6, 9, 10, 11] center_degree=0 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[2, 3, 4, 5, 6, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[0, 1, 3, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+  FULL_CERT occupied_edges=[5, 6, 7, 9, 10, 11] center_degree=2 invariant_multiplicity=1
+OPEN center_star_singlets=57 untouched_edges=8 dimension=22265625 Haar_frontier_peak=9
+FAULT_REJECTED prematurely project all regional boundary flux: faulty=4 independent=18
+FAULT_REJECTED discard local four-end invariant multiplicity: faulty=16 independent=18
+FAULT_REJECTED drop spin-one intermediate boundary channel in LR grouping: faulty=16 independent=18
+EARLY_PROJECT boundary_subset=(0, 0, 0) final_count=18
+EARLY_PROJECT boundary_subset=(0, 0, 1) final_count=9
+EARLY_PROJECT boundary_subset=(0, 1, 0) final_count=8
+EARLY_PROJECT boundary_subset=(0, 1, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 0, 0) final_count=9
+EARLY_PROJECT boundary_subset=(1, 0, 1) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 0) final_count=4
+EARLY_PROJECT boundary_subset=(1, 1, 1) final_count=4
+GROUPINGS LM_R=18 L_MR=18 LR_M=18 premature_each=[4, 4, 4]
+REGION LR dimension=169 sectors=13 multiplicity_sum=31
+  q=(0, 0, 0) multiplicity=4 irrep_dimension=1
+  q=(0, 0, 2) multiplicity=2 irrep_dimension=3
+  q=(0, 1, 1) multiplicity=4 irrep_dimension=4
+  q=(0, 2, 0) multiplicity=2 irrep_dimension=3
+  q=(0, 2, 2) multiplicity=1 irrep_dimension=9
+  q=(1, 0, 1) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 0) multiplicity=4 irrep_dimension=4
+  q=(1, 1, 2) multiplicity=2 irrep_dimension=12
+  q=(1, 2, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 0, 0) multiplicity=2 irrep_dimension=3
+  q=(2, 0, 2) multiplicity=1 irrep_dimension=9
+  q=(2, 1, 1) multiplicity=2 irrep_dimension=12
+  q=(2, 2, 0) multiplicity=1 irrep_dimension=9
+EXIT 1
+FINAL SUITE baseline accepted; all three injected faults rejected with exit 1.
+COMMAND ['python3', 'scripts/lab_ops.py', 'numeric-lock', 'release', '--holder', 'gb1-cf-boundary-checker-final-20261107-5c00fc86c66f4dd4be2c6acb6db32903']
+{
+  "lock": null,
+  "status": "released"
+}
+EXIT 0

@@ -61,3 +61,31 @@ every native translation and proper cubic rotation. A periodic fixed-origin
 code alone is not full homogeneous placement. No axioms, authority files or
 shared prompts will be modified. Conditional encodings are not a derived
 Admissibility/Record law.
+
+## Neighborhood propagation and record law, 2026-11-08
+
+The user asks whether an admissibility/record law actually realizes the
+native code. They clarify that neighborhood influence can propagate through
+neighbors; a one-step range test does not answer this task. Current main and
+research input remain f5af11cd0102cfd0b51aef0911f600130bf5beb1 and
+febb4c812b1d38e9b33f2c97149ff2b8f0f363ea. Accepted conditional mathematical
+inputs are the five-state link and the previously checked native isometry.
+Tensor quantum dynamics, preparation, instruments and formation schedule
+must be supplied explicitly until derived. The goal is the correct framework,
+including a changed encoding or axioms if the evidence warrants it.
+
+The user separately authorizes proposing an axiom clarification and requires
+a PR with careful wording and landing. This supersedes the earlier no-axiom-edit
+task restriction only for that proposal. It does not authorize merging or
+using the proposal as adopted science. The proposal is isolated from this
+research branch. Current PS-Ar on PR #10140 must be considered before choosing
+wording. No physics result is to depend on an unapproved axiom revision.
+
+Route: construct a true permanent-record relay and a coherent adjacent-gate
+readout; compare data records with fresh output records. The decisive witnesses
+are a propagated record value, preserved quantum phase before readout, and
+the actual code subspace after output formation. Independent hand derivation
+is requested before source comparison. Evidence goes in native_law/; STATE.yaml
+remains the single current checkpoint. The literature and nearby repo search
+are recorded there. No standalone single-step obstruction is to be presented
+as a failure of neighborhood propagation.

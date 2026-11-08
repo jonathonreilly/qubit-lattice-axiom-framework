@@ -1,30 +1,30 @@
-goal: GB1-CF finite gauge gluing and homogeneous native qubit placement
+goal: GB1-CF finite gauge gluing, native qubit placement and neighborhood record realization
 operation: bounded research
 base: f5af11cd0102cfd0b51aef0911f600130bf5beb1
 instruction_branch: 56c5c0ab64f532c5784e895b2f9aa6894fa334e0
-parent_research_head: 17f68f575f3de7c1a24a4761e01c8307a9e99955
+parent_research_head: febb4c812b1d38e9b33f2c97149ff2b8f0f363ea
 branch: physics-loop/gb1-cf-pair-20261107
 pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10142
 pr_draft: false
 delivery_mode: milestone
-actual_current_surface_status: candidate-retained-grade
+actual_current_surface_status: conditional-support
 target_claim_type: bounded_theorem
 trace_class: upstream_support
 reachability_to_target: partially_closes
-active_route: completed conditional native placement with all encoding-origin sectors and finite-range operator extension
-bounded_result: four qubits per five-state link at spacing five; 125 orthogonal phases form a fully space-group-invariant code; local projectors give exact Hamiltonian intertwining
-independent_check: fresh separate derivation plus complete source review and confirmed gluing clarification; same model family, not a formal audit
-note: docs/SU2_HOMOGENEOUS_NATIVE_QUBIT_CODE_BOUNDED_THEOREM_NOTE_2026-11-08.md
-note_sha256: 0d457372fe995529ad1fc13e3c9d6f696fe27b9a5ee3b1ef78852214a928604c
+active_route: completed conditional neighborhood propagation and electric record readout
+bounded_result: 19 adjacent pair gates and seven onsite gates measure the full five-state electric Casimir with one fresh output and no work qubits
+independent_check: distinct frozen hand constructions, exact Gaussian-rational execution and complete integrated source check; same model family and author-lineage limits disclosed
+note: docs/SU2_NEIGHBORHOOD_PROPAGATION_RECORD_READOUT_BOUNDED_THEOREM_NOTE_2026-11-08.md
+note_sha256: 1cb33015822b869b4baf24ceaf04502c50e88ef92ec412642300ffac2423d51e
 previous_boundary_note: docs/SU2_FINITE_BOUNDARY_FLUX_ASSOCIATIVE_GLUING_BOUNDED_THEOREM_NOTE_2026-11-07.md
 previous_boundary_note_sha256: c2a8da27cfc860b2b5912e87251622ee69ee452aaa39a1aecf882f220b3d9876
-execution: new exact content-bound cache successful; three separate mutations rejected; prior four caches retained
-failed_routes: same-site-count full-sector encoding fails two finite dimension comparisons; a fixed grid origin loses fine translations; naive coherent phase averaging is not generally invariant
-native_axiom_bridge: open; code preparation, extra origin degree, nearest-neighbor probability/record law and physical identification are not derived
+execution: exact content-bound readout cache successful; four separate mutations rejected; prior five runner sources and caches unchanged
+failed_routes: data-first computational recording erases the phase and dephased J3 leaves half the code; previous finite capacity and origin witnesses retained
+native_axiom_bridge: open; coherent preparation, joint quantum-record law, all-origin output allocation and plaquette evolution remain unproved
 framework_stance: axioms and gauge model are hypotheses; compare alternatives rather than protect a desired framework
-next_action: test native nearest-neighbor probability/record realization of the code and observables; retain different codes, emergent sectors and alternative frameworks
-checkpoint: native_placement/HANDOFF.md
-verification: native_placement/outputs/verification.json
+next_action: homogeneous joint data/record law and plaquette dynamics remain open; await owner wording approval before separate axiom-only PR
+checkpoint: native_law/HANDOFF.md
+verification: native_law/outputs/verification.json
 recovery: source clarification patch recovers fully reviewed sources; prior boundary and pair recovery artifacts unchanged
 repository_authority_edits: []
 audit_required_before_effective_retained: true

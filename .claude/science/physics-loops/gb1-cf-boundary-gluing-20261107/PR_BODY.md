@@ -1,6 +1,6 @@
 The supplied five-state SU(2) link model needs compatible overlapping patches,
 retained boundary flux, and an explicit placement on native qubits. This PR
-provides three connected finite-model results, with the physical law and
+provides four connected finite-model results, with the physical law and
 continuum identifications kept separate.
 
 - **Two plaquettes:** the complete closed sector has four states, with exact
@@ -19,14 +19,27 @@ continuum identifications kept separate.
   Their direct sum is invariant under every native translation and proper
   cubic rotation. Local 24-qubit projectors distinguish the origins and give
   an exact finite-range extension of a supplied cubic gauge Hamiltonian.
+- **Neighborhood propagation and records:** a fixed conditional record-copy
+  law relays a record through successive neighbors. For the quantum code,
+  19 adjacent pair gates and seven onsite gates measure the full five-state
+  electric Casimir, with one fresh output and no work qubits. The completed
+  instrument restores the active code, preserves occupied-sector coherence
+  and commutes with endpoint gauge actions, including on entangled patches.
 
 The native construction retains an extra encoding-origin degree of freedom,
 12 active qubits and 113 fixed spectators per coarse cell. It is a chosen
 quantum code, not an origin-free single copy or a physical code-selection
-mechanism. Its interactions reach beyond nearest neighbors. Regional gluing
+mechanism. Elementary adjacent operations can mediate longer-range influence;
+no one-step range limit is assumed. Regional gluing
 on the fixed coarse graph is preserved; subdivision requires separate target
 register allocation. Native Admissibility/Record dynamics, physical state,
-clock, couplings, and continuum comparison remain open. No vacuum or mass-gap
+clock, couplings, and continuum comparison remain open. The readout supplies
+tensor quantum states, preparation, driven controls, a Born instrument and
+future freezing of its output. Output value one leaves the original fixed-zero
+spectator code, so its allowed output space must expand on the same native
+qubits. The experiment is for a fixed encoding origin; an autonomous law
+across all origins and magnetic plaquette evolution remain unconstructed.
+No vacuum or mass-gap
 closure, axiom edit, or evidence that the framework is physically correct is
 claimed. Explicit finite dimension comparisons also reject the same-site-count
 full-sector identification under ordinary tensor composition.
@@ -37,14 +50,22 @@ Validation and evidence:
   boundary results, with different graph-counting routes. A fresh native
   placement derivation independently gives capacity bounds and a different
   invariant code using spacing-nine markers. The supervisor's spacing-five
-  construction was frozen before reading that result. Same model family and
+  construction was frozen before reading that result. For electric readout,
+  separate hand derivations give a two-work-qubit vacuum test and a simpler
+  five-site parity flag. They agree on the code and differ off it. The
+  supervisor hand-checked both and simulated the explicit words independently.
+  Same model family and
   shared raw premises remain limitations on independence.
 - Complete mathematical source comparisons and scoped correction receipts
   are preserved. These are research checks, not formal landing panels or audits.
-- Five production runners have successful content-bound caches. The native
+- Six production runners have successful content-bound caches. The native
   runner checks all 625 matrix-unit products, all phase residues and proper
   rotations, support geometry and graph ranks using exact arithmetic. No
   enormous native Hilbert-space matrix is constructed.
+- Exact Gaussian-rational readout checks cover all five code columns with both
+  pointer inputs and the full clean-work basis of the alternate circuit.
+  Four separate mutations fail on routing return, square-root phases,
+  data-first dephasing and electric uncomputation.
 - Mutations test normalization, operator order, energy counting, boundary
   constraints and multiplicity in the earlier packets. Three separate native
   faults reject incorrect reversal parity, nonzero quiescent overlap, and a
@@ -61,4 +82,6 @@ registry, or shared instruction files change.
 The existing pair and boundary research packs index complete proofs, original
 outputs, worker briefs, source identities and recovery paths. The current
 checkpoint is `.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/STATE.yaml`;
-its `native_placement/HANDOFF.md` indexes the latest result.
+its `native_law/HANDOFF.md` indexes the latest result. The user's proposed
+two-word locality revision is awaiting exact wording approval and belongs
+to a separate axiom-only PR; it is neither included nor assumed here.

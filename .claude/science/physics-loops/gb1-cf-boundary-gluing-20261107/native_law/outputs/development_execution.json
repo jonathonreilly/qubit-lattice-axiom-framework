@@ -1,0 +1,48 @@
+[
+  {
+    "fault": null,
+    "command": [
+      "python3",
+      "scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py"
+    ],
+    "returncode": 0,
+    "stdout": "BOUNDS cpu=60s wall=60s RSS_guard=270000000 poll=0.05s threads=1\nSOURCE_SHA256 3491ed4651faa0506f0e6b2f5e32cad7f50078b8075d56550d2792ce4fd3de1c\nCIRCUIT pair_gates=74 onsite_H=2 full_basis_columns=32 code_columns=5\nPHASE p0(0)=1 p0(pi)=0 p0(pi/2)=1/2; data-dephased p0=1/2\nENCODING J3_Z_dephasing_code_survival=1/2; old_spectator_overlap=0\nELECTRIC pair_gates=65 onsite_gates=12 clean_work=2 output=1 full_clean_work_columns=32\nELECTRIC output1=zero-electric output0=3/4; all five code vectors preserved; work restored\nRELAY all64_binary_six_neighbor_conditions all24_rotations lengths1..32 colors2\nRELAY empty-neighbor Haar law and arbitrary-distance result are proved in prose\nper_element: all32 circuit basis columns and all five code columns checked exactly.\nper_site: adjacent supports and fresh output are explicit; old spectator sector changes.\nper_mode: checked and not executed - no momentum, mass gap or continuum claim.\nper_block: finite record relay and five-qubit quantum circuit checked separately.\nlattice_wide: checked and not executed - no autonomous homogeneous joint law is derived.\nTOTAL: PASS=4970 FAIL=0\n{\"seconds\": 0.05826462502591312, \"peak_rss_bytes\": 25133056}\n",
+    "stderr": ""
+  },
+  {
+    "fault": "drop-return",
+    "command": [
+      "python3",
+      "scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py",
+      "--inject-fault",
+      "drop-return"
+    ],
+    "returncode": 1,
+    "stdout": "BOUNDS cpu=60s wall=60s RSS_guard=270000000 poll=0.05s threads=1\nSOURCE_SHA256 3491ed4651faa0506f0e6b2f5e32cad7f50078b8075d56550d2792ce4fd3de1c\n",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 387, in <module>\n    main()\n    ~~~~^^\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 374, in main\n    circuit_checks(args.inject_fault)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 178, in circuit_checks\n    eq(f\"controlled reversal basis {z}\", run({z: ONE}, cf),\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n       {direct_cf(z): ONE})\n       ^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 59, in eq\n    raise AssertionError(f\"{label}: {actual!r} != {expected!r}\")\nAssertionError: controlled reversal basis 8: {16: (Fraction(1, 1), Fraction(0, 1))} != {8: (Fraction(1, 1), Fraction(0, 1))}\n"
+  },
+  {
+    "fault": "wrong-root",
+    "command": [
+      "python3",
+      "scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py",
+      "--inject-fault",
+      "wrong-root"
+    ],
+    "returncode": 1,
+    "stdout": "BOUNDS cpu=60s wall=60s RSS_guard=270000000 poll=0.05s threads=1\nSOURCE_SHA256 3491ed4651faa0506f0e6b2f5e32cad7f50078b8075d56550d2792ce4fd3de1c\n",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 387, in <module>\n    main()\n    ~~~~^^\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 374, in main\n    circuit_checks(args.inject_fault)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 178, in circuit_checks\n    eq(f\"controlled reversal basis {z}\", run({z: ONE}, cf),\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n       {direct_cf(z): ONE})\n       ^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 59, in eq\n    raise AssertionError(f\"{label}: {actual!r} != {expected!r}\")\nAssertionError: controlled reversal basis 1: {8: (Fraction(-1, 4), Fraction(-1, 4)), 4: (Fraction(1, 4), Fraction(-1, 4)), 2: (Fraction(1, 2), Fraction(0, 1)), 1: (Fraction(1, 2), Fraction(1, 2))} != {1: (Fraction(1, 1), Fraction(0, 1))}\n"
+  },
+  {
+    "fault": "record-first",
+    "command": [
+      "python3",
+      "scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py",
+      "--inject-fault",
+      "record-first"
+    ],
+    "returncode": 1,
+    "stdout": "BOUNDS cpu=60s wall=60s RSS_guard=270000000 poll=0.05s threads=1\nSOURCE_SHA256 3491ed4651faa0506f0e6b2f5e32cad7f50078b8075d56550d2792ce4fd3de1c\n",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 387, in <module>\n    main()\n    ~~~~^^\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 374, in main\n    circuit_checks(args.inject_fault)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 200, in circuit_checks\n    eq(\"phase-sensitive \" + label, prob, expected)\n    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 59, in eq\n    raise AssertionError(f\"{label}: {actual!r} != {expected!r}\")\nAssertionError: phase-sensitive plus: Fraction(1, 2) != 1\n"
+  }
+]

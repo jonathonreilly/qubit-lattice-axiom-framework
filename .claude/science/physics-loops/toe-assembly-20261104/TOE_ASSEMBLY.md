@@ -307,6 +307,23 @@ Format per part: (a) main statement; (b) premises and imports; (c) sources, with
 
 (e) **Open inputs.** LW1-i (reading of "conditions"); LW1-ii (infinite volume); the choice between PS-1L candidates (i) cube tick and (ii) D4 events; whether PS-3's transport stays well defined at infinite volume; the owner's decisions on PS-1 to PS-4.
 
+### LW2. Law revision: the law features behind the frozen negatives (owner 2026-11-08: "Yes, start it")
+
+The lead asked: "Start the law-revision part (growing registers, cube-coupling magnetic layer)?" The owner answered "Yes, start it". The reason: most frozen negatives trace to three features of the live laws `L5-U[m]` and `L5-O[S_+]`. These are fixed finite link registers, invariant algebras with a character (locked or oriented states), and a magnetic layer on one cube tiling. This part finds what a law must change to escape them, and what each change costs. It proposes law texts. It adopts nothing. `docs/MINIMAL_AXIOMS_2026-06-29.md` and the working set are unchanged.
+
+(a) **Statement.** Three open targets.
+1. **LW2-MAP, the feature map.** For each frozen negative, the exact law features its proof uses. The negatives are: the trace obstruction (`ZM1I1A.md`), the character obstruction (`GB1Z2L5.md` Theorem 2, `ZM1INV.md` Theorem 2.1), K-INV for odd coarse registers (`KINV.md` Theorem 2), the cube-face factorization (`GB1ISO.md`), the need for an infinite register (`GB1E.md`, `GB1QL.md`), no Clifford node (`RCSPC.md`, `RCSPO.md`), flat odd bands (`LZ1.md` Theorems 2.1-2.2), and no moving chiral 16 (`CG16B/D/S/K.md`, `RCSP16.md`). For each feature, give a variant law without it. Then either name the step where the proof fails, or prove the negative again by another argument.
+2. **LW2-G, growing registers.** A family `L[s]` of laws, each one fixed and finite and meeting PS-1, PS-5, PS-6 and NN-a. Decide which frozen positives hold uniformly in `s`: GB1QL's Kogut–Susskind rate, GB1E's lift, GA1-5's neutral band, and SGAP0's gap. Decide which negatives of item 1 fail at large `s`. Also probe a fixed finite register with internal structure (quantum-link or D-theory type) as a separate branch.
+3. **LW2-M, a magnetic layer that couples cubes.** The four-tiling layer FP of `GB1ISO.md` §6, or another cube-coupling layer. Give the NN-a check. Prove or refute GB1-CF at finite register. Work ISO-FP.
+
+(b) **Premises.** The working set (section 3), with PS-5, PS-6 and NN-a (section 3.7). ZM1-INV (section 3.9). All four GB1 generator readings stay live (section 3.11).
+
+(c) **Sources.** The frozen parts named in (a), with their amendments; `LW1_5.md`; `GA1_5.md`.
+
+(d) **Status.** Open. Pass-1 lanes: LW2 (items 1 and 2) and LW2M (item 3), each after its prior-work digest.
+
+(e) **Rules.** Each candidate law text is four-tested and goes to the owner. The lanes probe every branch and choose none (section 3.11).
+
 ### ZM1. The zoom: block maps and the long-distance limit
 
 (a) **Statement.** For the law `L` of LW1, there are block maps `B_k` (cubes of side `2^k a` in space, `2^k` ticks in time, graining by `c_t=c_s`) and effective laws `L_k` such that:
@@ -738,3 +755,5 @@ The owner asked how the TOE would attack its big walls if it followed the princi
 **W5. Three families, FAM1** (feeds FL1, FL2). No established programme derives the number of families. The frozen FL1 shows none of the 2³ cell, taste structure or #10022's turn argument fixes `N_f`. Kept as an open research wall; no lane until W2's rung 2, because #10022 ties family number to mirror gapping.
 
 Order of attack: W1 (running), then W2 and W3 in parallel (each from rung 1), then W4, then W5. GR is worked by the scale-ladder gravity session and is not listed here.
+
+**Law revision, LW2 (2026-11-08).** Positive results came where an established programme was ported. Most negatives trace to three features of the live laws: fixed finite registers, invariant algebras with a character, and a magnetic layer on one cube tiling. Part LW2 (section 5) finds what a law must change to escape them. It serves W1 (the register limit and isotropy) and W3's zoom (K-INV).

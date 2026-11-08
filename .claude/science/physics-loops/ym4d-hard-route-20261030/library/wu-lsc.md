@@ -18,7 +18,7 @@ Draft for the owner's review (queue row 352, `wu-lsc`). It is not sent anywhere.
 > \begin{remark}\label{6.3:lem-last-scale-constants}
 > The statement of this lemma is not written out here; parts of its proof are printed below.
 
-**What is printed.** Part (b), the admissible data and the last-scale coupling (CA-II 63369–63526), with the remark on what it relies on (63528–63565). Part (c), the per-ball bound across unit rescalings (63568–63689). Part (d), the local plaquette count (63691–63798). Part (e), bare couplings tending to zero (63800–63833). The corollary `6.3:cor-volume-free-constant` follows (63836–63899).
+**What is printed.** Part (b), the admissible data and the last-scale coupling (CA-II 63369–63526), with the remark on what it relies on (63528–63565). Part (c), the per-ball bound across unit rescalings (63568–63689). Part (d), the local plaquette count (63691–63798). Part (e), bare couplings tending to zero (63800–63833). The corollary `6.3:cor-volume-free-constant` follows (63836–63905).
 
 **What is not printed.** Part (a) is cited by the proof of (b): "Let $a:=K_J-K$, which lies in $\mathcal A$ by part (a)" (63371–63372). Part (d) cites "the inequality $K\le K_J$ … derived from hypotheses (I1), (I2) and (I3) of that lemma" (63700–63701). Neither part (a) nor (I1)–(I3) appears anywhere. The proof of (b) also takes the size of the last-scale constants from the correlation theorem, as a clause (63399–63410):
 \[
@@ -29,7 +29,7 @@ with $E_J$ "a function of the displayed arguments only". The correlation theorem
 
 **Status.** CA-III 110895–110899 lists the inputs of the per-ball volume-free bound and ends: "the uniformity of the last-scale constants in the torus exponent. The last of these is of status 'stated; proof incomplete'." CA-II 64603 says instead: "Statements of this book whose proofs are incomplete or outstanding: none." The two declarations conflict. We follow the first: it names this lemma, and the statement is in fact not written.
 
-**Why it matters for their main theorem.** Clause (iii-b) of Theorem 0, the per-ball volume-free bound (CA-I 2610–2620), rests on it (CA-III 110895–110899). Clause (ii), the limits on each torus and on $\mathbb R^4$, appeals to it by statement (CA-II 68362–68365). Four places read it directly: CA-II 63531–63565 (`6.3:rem-exponent-statements`), 63907–63946 (the corollary and `6.3:rem-per-ball-reading`), 64157–64283 (the proof of `6.4:thm-per-ball-bound`), and 68362–68368.
+**Why it matters for their main theorem.** Clause (iii-b) of Theorem 0, the per-ball volume-free bound (CA-I 2610–2620), rests on it (CA-III 110895–110899). Clause (ii), the limits on each torus and on $\mathbb R^4$, appeals to it by statement (CA-II 68362–68365). Four places read it directly: CA-II 63531–63565 (`6.3:rem-exponent-statements`), 63907–63949 (`6.3:rem-per-ball-reading`), 64157–64283 (the proof of `6.4:thm-per-ball-bound`), and 68362–68368.
 
 **What this note proves.** Lemma 6.3 as those four uses read it (§3), as an implication from inputs the account states; §8 gives the status of each. On the way it corrects one application in CA-I: 4.33 (h4)(a) does not hold for the bare density of Definitions 1.1 and 1.5 (§2). The correction uses the account's own vacuum-normalized convention.
 
@@ -114,7 +114,7 @@ as the account does at CA-II 140918–140924. Then the correlation theorem's par
 \[
 \widetilde Z(0)=\widehat Z(0)\ge e^{-C^*_{\rm low}(g)N^4},\qquad |\widetilde Z(w)|\le e^{C^*_+(g,\varrho)N^4}\ \text{ on }\mathbb D, \tag{3.2}
 \]
-with $C^*_{\rm low}$ of (5.5) and $C^*_+$ of (6.4). So (`6.3:eq-last-scale-coupling-c`) holds with $E_+^\sharp:=C^*_+$, $C_{\rm low}:=C^*_{\rm low}$ and
+with $C^*_{\rm low}$ of (5.5) and $C^*_+$ of (6.3). So (`6.3:eq-last-scale-coupling-c`) holds with $E_+^\sharp:=C^*_+$, $C_{\rm low}:=C^*_{\rm low}$ and
 \[
 E_*(L,\mathfrak p,g,\varrho):=C^*_+(g,\varrho)+C^*_{\rm low}(g)<\infty . \tag{3.3}
 \]
@@ -137,7 +137,7 @@ Now let Case A hold, so that $m=m_J$ is an admissible block exponent and the cor
 \]
 so $\lambda a<B^\sharp+c_5$ and $a\in\mathcal A$ (`6.3:eq-one-sided-floors-1`). No sign of a single increment is used. $\square$
 
-Why only Case A: the correlation theorem asserts its flow bounds for data with an admissible block exponent $m$, $m^J_{\mathbb T}(g)\le m\le K_J$ (CA-II 2869–2873). In Case B there is none. Every use of $a\in\mathcal A$ is in Case A: part (b), and part (e) after finitely many terms. Part (d) uses only $K\le K_J$ (CA-II 63700–63701), and part (e) needs only $a_i\ge0$ to get $K^{(i)}_J\ge K_i\to\infty$.
+Why only Case A: the correlation theorem asserts its flow bounds for data with an admissible block exponent $m$, $m^J_{\mathbb T}(g)\le m\le K_J$ (in Chapter 5's letters $m_{\mathbb T}(g)\le m\le K$, CA-II 2869–2873). In Case B there is none. Every use of $a\in\mathcal A$ is in Case A: part (b), and part (e) after finitely many terms. Part (d) uses only $K\le K_J$ (CA-II 63700–63701), and part (e) needs only $a_i\ge0$ to get $K^{(i)}_J\ge K_i\to\infty$.
 
 **The identification in (b): their printed proof.** CA-II 63422–63507 proves, in Case A, every assertion of the announcement except the bound on the constants. We use it as printed. In outline: the floors give $m_1-a\ge0$ and $b=m_J-a\ge0$, so $N_T=2L^{m_1-a}$ is an integer $\ge1$, and $L^{K_J}N_T=2L^{m_1+K}$ (`6.3:eq-last-scale-coupling-2`). So the dilation $y\mapsto y/(2L^{m_1})$ maps the bare lattice of spacing $L^{-K}$ on $\mathbb T_{m_1}$ onto the correlation theorem's bare lattice. The spacing of $T^{(k)}$ becomes $L^{k-K}$, so $T^{(K')}$ is the block lattice at level $K-b$, with $N=2L^{m_1+b}$ sites per side. For $\tilde f(y)=f(2L^{m_1}y)$ one has $\|\tilde f\|^J_\sharp=\max\{\|f\|_\infty,40ML^{-b}\operatorname{Lip}f\}\le\|f\|_\sharp$. Linearity of $A(c,U)$ in the weight gives $\rho^w_0=e^{-E}\exp[-x_0A(U)+\sum_iz_i\mathcal O(f_i)]$, so $Z=e^EZ^J$ and $S^T_{n;K,m_1}=S^{K_J}_n$. Finally (`6.3:eq-last-scale-coupling-1`) with $i=K'$, $j=K_J$ gives
 \[
@@ -145,11 +145,11 @@ X<x_{K'}\le x^*(g):=X+b_++\max\{0,\,3\lambda m_J+2c_2\} \tag{4.1}
 \]
 (CA-II 63492–63501). The right side is a function of $(L,\mathfrak p,g)$.
 
-With $E=E_{\rm vac}$ of (3.1), their identity $Z=e^EZ^J$ reads $Z^J=\widehat Z$. It identifies the probability laws and the cumulants. It does not equate $Z^J$ with the unshifted Chapter 1 integral $Z$; that equation is exactly the step §2 shows to fail.
+With $E=E_{\rm vac}$ of (3.1), their identity $Z=e^EZ^J$ reads $Z^J=\widehat Z$. It identifies the probability laws and the cumulants. It does not let one apply the lower member of 4.33 to the unshifted integral $Z(0)$; that is the step §2 shows to fail.
 
 ## 5. Proof of (b): the normalized floor
 
-Work in Case A at the last lattice $T^{(K')}$. Put $\mathsf V:=N^4$, its number of sites; $x:=x_{K'}\in(X,x^*]$ by (4.1); and $\eta:=L^{-K'}$, the fine spacing in level-$K'$ units. Let $a_1$ and $B_3\ge1$ be the constants of 4.31 (e), and $\varepsilon(x)=A_0x^{-1/2}(\log x)^{p_0}$, $p_0\ge0$, the small-field threshold (CA-I 153606–153610). All three are fixed before $g$ and do not depend on the torus. Define, after $g$,
+Work in Case A at the last lattice $T^{(K')}$. Put $\mathsf V:=N^4$, its number of sites; $x:=x_{K'}\in(X,x^*]$ by (4.1); and $\eta:=L^{-K'}$, the fine spacing in level-$K'$ units. Let $a_1$ and $B_3$ be the constants of 4.31 (e), with $B_3\ge1$ (replace $B_3$ by $\max\{B_3,1\}$ if needed; that weakens its conclusion and only strengthens the threshold imposed below). Let $\varepsilon(x)=A_0x^{-1/2}(\log x)^{p_0}$, $p_0\ge0$, be the small-field threshold (CA-I 153606–153610). These constants are fixed before $g$ and do not depend on the torus. Define, after $g$,
 \[
 \varepsilon_*(g):=A_0(x^*)^{-1/2}(\log X)^{p_0},\qquad
 s_*(g):=\min\Bigl\{\tfrac12,\ \tfrac{a_1}8,\ \tfrac{\varepsilon_*}{8B_3},\ \tfrac1{8B_3\sqrt{x^*}}\Bigr\}>0. \tag{5.1}
@@ -241,15 +241,15 @@ The same $E_{\rm vac}$ stands in both bounds because numerator and denominator a
 | Use | What it reads | Effect |
 |---|---|---|
 | CA-II 63531–63565 | the upper bound with its top-zone member, and the floor with $C_{\rm low}$ read through $x_{K'}$ | these are (6.2)–(6.3) and §5 (single-coupling form); $Z=e^EZ^J$ (63486) is used only for cumulants |
-| CA-II 63907–63946 | $E_+^\sharp+C_{\rm low}\le E_*$, then a maximum over $b$ | the cancellation (7.1) happens inside each run, before the maximum |
-| CA-II 64157–64183, 64246–64283 | (S) and (F) at a periodized weight and at zero source, on one torus; then the $|\mathcal C|$-th root; also $C_{\rm low}$ alone "bounded above by a quantity free of $m$" (64271–64273) | (7.1) before the root leaves $(A+B)N^4/|\mathcal C|=(A+B)\ell^4$ and no $E_{\rm vac}/|\mathcal C|$; $C^*_{\rm low}$ is uniform by itself |
+| CA-II 63907–63949 | $E_+^\sharp+C_{\rm low}\le E_*$, then a maximum over $b$ | the cancellation (7.1) happens inside each run, before the maximum |
+| CA-II 64157–64183, 64246–64283 | (S) and (F) at a periodized weight and at zero source, on one torus; then the $\lvert\mathcal C\rvert$-th root; also $C_{\rm low}$ alone "bounded above by a quantity free of $m$" (64271–64273) | (7.1) before the root leaves $(A+B)N^4/\lvert\mathcal C\rvert=(A+B)\ell^4$ and no $E_{\rm vac}/\lvert\mathcal C\rvert$; $C^*_{\rm low}$ is uniform by itself |
 | CA-II 68362–68368 | a dependency statement for clause (ii) | clause (ii) uses probability expectations and cumulants (66418–66477), which the scalar does not change |
 
 **7.3 The original floor of (iii-b): proof of (f), added.** Part (c) uses the stronger floor (`6.3:eq-one-sided-floors-c`). Clause (iii-b) asks only $m_1\ge m_{\mathbb T}(g_-(g))$ and $L^{m_1}\ge\ell(n,R)$ (CA-I 2610–2620). The torus exponents between the two floors form a finite set, and the torus bound covers them. Put
 \[
 J:=\max\{m_{\mathbb T}(g_-(g)),\ m_J+\log_L\ell(n,R)\},\qquad N_{\max}:=2L^{J+m_J},\qquad \Delta:=d/(2L^J). \tag{7.2}
 \]
-For $m_1\ge J$, (c) applies in Case A and (d) in Case B. Let $m_1<J$ and Case A. Then $N=2L^{m_1+b}\le N_{\max}$, the separation on the side-one torus is $d/(2L^{m_1})\ge\Delta$, and $\|\tilde f\|^J_\sharp\le\|f\|_\sharp$ (§4). Clause (iv) of the correlation theorem (CA-II 2937–2959), with $\mathsf Q\le e^{E_*N^4}\le e^{E_*N_{\max}^4}$ by (b), and its decreasing majorant $C_{UV}(\mathsf d)\le C\mathsf d^{-4}(1+\log^+\mathsf d^{-1})$, gives $|S^T_n(\vec f)|\le C^{\rm bd}_n(d;R)\prod_i\|f_i\|_\sharp$ with
+In Case B, (d) applies for every $m_1$. In Case A with $m_1\ge J$, (c) applies. Let $m_1<J$ and Case A. Then $N=2L^{m_1+b}\le N_{\max}$, the separation on the side-one torus is $d/(2L^{m_1})\ge\Delta$, and $\|\tilde f\|^J_\sharp\le\|f\|_\sharp$ (§4). Clause (iv) of the correlation theorem (CA-II 2937–2959), with $\mathsf Q\le e^{E_*N^4}\le e^{E_*N_{\max}^4}$ by (b), and its decreasing majorant $C_{UV}(\mathsf d)\le C\mathsf d^{-4}(1+\log^+\mathsf d^{-1})$, gives $|S^T_n(\vec f)|\le C^{\rm bd}_n(d;R)\prod_i\|f_i\|_\sharp$ with
 \[
 C^{\rm bd}_n(d;R):=\Bigl[C\Delta^{-4}(1+\log^+\Delta^{-1})+\log2\cdot\bigl(2e^{E_*N_{\max}^4}+2\bigr)^n\Bigr]\Bigl(\frac n\varrho\Bigr)^n .
 \]
@@ -280,7 +280,7 @@ Each entry is free of $K$, $g_0$, $m_1$ and positions and non-increasing in $d$,
 ## 9. Scope limits carried from the checks
 
 1. **An implication.** The lemma holds at the standing of (I)–(VI). It proves none of them. In particular the outstanding window-data statement of the correlation theorem (CA-II 2808–2812), the eight retained sourced hypotheses, the representation and vacuum-energy hypotheses, Bałaban's real-background theorem and identification (VI) stay open where the account leaves them (`gates/lsc2-gate.md`, verdict). So clause (iii-b) is no longer blocked by this lemma, but it is not unconditional.
-2. **What is uniform.** Uniformity is in the torus exponent $m_1$, at the fixed omitted-step exponent $m_J(g)$. $E_{\rm vac}$ is not bounded; it is about $-\tfrac92\log x_0$ per bare site, and it cancels only inside one run on one torus (7.1). The lemma proves $b\in\mathcal B(g)\subset[0,m_J(g)]$, not that $b$ is independent of $K$ (`gates/lsc-uses-check.md`, F1).
+2. **What is uniform.** Uniformity is in the torus exponent $m_1$, at the fixed omitted-step exponent $m_J(g)$. $E_{\rm vac}$ is not bounded: by `4.36:eq-never-large-exponent-b` it is $-\tfrac92\log x_0$ per bare site, up to a factor between $1-L^{-4}$ and $1$ and an additive constant. It cancels only inside one run on one torus (7.1). The lemma proves $b\in\mathcal B(g)\subset[0,m_J(g)]$, not that $b$ is independent of $K$ (`gates/lsc-uses-check.md`, F1).
 3. **Case B.** There no admissible data of the correlation theorem exist (`gates/lsc-uses-check.md`, F2). Only (d) holds there, and it gives no partition-function bound. For the same reason this note states $a\in\mathcal A$ in Case A only (§4); every use is in Case A.
 4. **Other uses of the lemma.** The four uses of §7.2 are checked (`gates/lsc2-gate.md`). `gates/lsc-uses-check.md` finds four more covered after stated ceilings (U1, U3–U5): `6.1:not-units-sources` (a), `6.4:rem-unit-conversion`, `6.4:rem-complex-sources` (Case A), and the paragraph after `6.2:prop-cell-covariance`. `6.4:rem-small-cutoffs` (U10) is an alternative route; its claim that no separate small-cutoff treatment is needed is not supported, since Case B needs (d). `8.22:not-partition-sources-cells` and `9.98` read the two bounds in unit-lattice volume $(2L^m)^4$ with levels $j\le K$. This lemma gives them only in last-lattice volume $L^{4b}(2L^m)^4$, in Case A. The unit-site clause $\mathsf B\le C_{\mathsf B}(1+\log g^{-2})$ (CA-II 140932–140933) is not supplied. Across two tori $E_{\rm vac}$ does not cancel; the residue is the vacuum-density difference (`8.22:lem-vacuum-energy-density`), an input outside this lemma. The ceiling Lemma M and the Case B transfer repair in `gates/lsc-uses-check.md` are Claude's, not checked by the other model, and not part of this note.
 5. **The correction elsewhere.** Other passages read the bare floor and need the same normalized reading (`gates/nrm-check.md` §6): 4.31 (d) and the fixed-depth limits, where a positive bare limit $Z_K\ge z_*>0$ is false by (2.2) (CA-I 156531–156656, 156782–156834); `8.8:lem-stability-exponent`; and the global quotients of 8.12 and 8.18. This note does not check them.

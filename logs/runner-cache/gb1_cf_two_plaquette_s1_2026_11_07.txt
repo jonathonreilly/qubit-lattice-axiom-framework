@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/gb1_cf_two_plaquette_s1_2026_11_07.py
+runner_sha256: 98e5dabbe9a6915309c0e10d5a83ed6d71995ab8567254f413bc05a81a09f2b2
+input_fingerprint_sha256: 6a02e186b9a88fa92063240c7f2bcd5b1e81f26cc22af92b6792380b4de2bc47
+timeout_sec: 80
+exit_code: 0
+elapsed_sec: 1.10
+status: ok
+----- stdout -----
+execution: {"arithmetic": "fractions.Fraction and exact Gaussian rational pairs", "dense_matrix_max_dimension": 10, "memory_stop_bytes": 240000000, "model_source": "self-contained definitions in this runner", "python": "3.13.5", "script_sha256": "98e5dabbe9a6915309c0e10d5a83ed6d71995ab8567254f413bc05a81a09f2b2", "thread_settings": {"MKL_NUM_THREADS": "1", "OMP_NUM_THREADS": "1", "OPENBLAS_NUM_THREADS": "1", "VECLIB_MAXIMUM_THREADS": "1"}, "time_limit_seconds": 80}
+link_identities: {"U_dagger_U_projector_rank": "4", "U_is_unitary": false, "coordinate_commutator": "[P_mu,P_nu]=i L_mu,nu/4", "endpoint_casimirs": "3/4 on four-state occupied sector; zero on empty state", "endpoint_commutators": "[N+_a,U]=-sigma_a U/2; [N-_a,U]=U sigma_a/2", "reversal": "diag(1,-1,-1,-1,1); exchanges N+ and N-"}
+physical_sector: {"all_18_vertex_generator_actions_vanish_on_each_basis_vector": true, "basis_order": ["empty-flux", "L", "R", "O"], "basis_support_sizes": [1, 64, 64, 1024], "completeness_argument_required": "Each occupied endpoint is spin 1/2; at degree <=3 a singlet exists only for degrees 0 or 2, with multiplicity one.", "dimension": 4, "gram": [["1", "0", "0", "0"], ["0", "1", "0", "0"], ["0", "0", "1", "0"], ["0", "0", "0", "1"]], "nonzero_amplitude_values": [["1"], ["-1/8", "1/8"], ["-1/8", "1/8"], ["-1/32", "1/32"]], "occupation_patterns_AB_BC_DE_EF_AD_BE_CF": [[0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 1, 0, 1, 1], [1, 0, 1, 0, 1, 1, 0], [1, 1, 1, 1, 1, 0, 1]]}
+B_L_physical: [["0", "2", "0", "0"], ["2", "0", "0", "0"], ["0", "0", "0", "1"], ["0", "0", "1", "0"]]
+B_R_physical: [["0", "0", "2", "0"], ["0", "0", "0", "1"], ["2", "0", "0", "0"], ["0", "1", "0", "0"]]
+B_O_physical: [["0", "0", "0", "2"], ["0", "0", "1", "0"], ["0", "1", "0", "0"], ["2", "0", "0", "0"]]
+commutator_BL_BR: [["0", "0", "0", "0"], ["0", "0", "3", "0"], ["0", "-3", "0", "0"], ["0", "0", "0", "0"]]
+commutator_witness: {"coefficient": "-3", "full_sparse_norm_squared": "9", "input": "L", "output": "R"}
+exchange_physical: [["1", "0", "0", "0"], ["0", "0", "1", "0"], ["0", "1", "0", "0"], ["0", "0", "0", "1"]]
+update_series: {"Strang_L_minus_Strang_R_L_empty_entry": {"3": "3/4i", "5": "-73/64i"}, "Strang_difference_cubic_matrix": [["0", "3/4i", "-3/4i", "0"], ["3/4i", "0", "0", "3/8i"], ["-3/4i", "0", "0", "-3/8i"], ["0", "3/8i", "-3/8i", "0"]], "joint_H": [["0", "2", "2", "0"], ["2", "0", "0", "1"], ["2", "0", "0", "1"], ["0", "1", "1", "0"]], "joint_identity": "H^3=10H and [exchange,H]=0", "ordered_minus_exchanged_L_empty_entry": {"3": "-3i", "5": "13/4i"}, "ordered_minus_exchanged_R_L_entry": {"2": "-3", "4": "5"}}
+logical_encoding: {"BL": "X_L (3I+Z_R)/2", "BR": "(3I+Z_L) X_R/2", "basis_order": ["00", "10", "01", "11"], "kinematical_qubits_for_separate_3_qubit_link_codes": 21, "native_homogeneous_site_allocation_proved": false, "physical_sector_logical_qubits": 2}
+electric_layer: {"commutes_with_geometric_exchange": true, "finite_step": "exp(-i theta (BL+BR)) exp(-i tau sum_link E_squared)", "sum_link_E_squared_diagonal": ["0", "3", "3", "9/2"], "symmetry_argument": "Each factor commutes with gauge transformations and exchange, hence so does the product for all real theta,tau.", "unique_physical_Hamiltonian_from_logarithm_claimed": false}
+cross_implementation_comparison: {"checker_source": "scripts/gb1_cf_two_plaquette_haar_check_2026_11_07.py", "limitation": "separate original derivations; same model family and supplied premises; not an audit", "magnetic_matrices_and_geometric_exchange_agree_exactly": true}
+resources: {"elapsed_seconds": 1.02, "largest_sparse_basis_vector": 1024, "peak_RSS_bytes": 29704192}
+AUTHOR CALCULATION COMPLETE: exact emitted identities and sparse certificates; no independent status.
+
+----- stderr -----
+

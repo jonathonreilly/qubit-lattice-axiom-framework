@@ -555,3 +555,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-08, rule 0f, lead: LAYER-M registered (owner m3) for premise M / (M3) of the frozen layer theorem; prior digest row 470 and proof lane row 471 queued.
 - 2026-11-08, rule 0f, lead: critical-path triage done (row 472, library/cp-triage.md). LAYER-M construction claimed (row 471, library/m3.md, unchecked); Claude check row 473.
 - 2026-11-08, rule 0f, lead: LAYER-M (premise M of the frozen layer theorem) proved conditionally and checked (row 473: ADVANCE, wording only); repairs and outward note queued (rows 474-475).
+- 2026-11-08, rule 0f, lead: M3 outward note posted as issue #20 on owner OK; LAYER-M stays conditional on PI-ADMIT. TPI (FREE join) claimed in library/tpi.md (row 479), Claude check row 481. PI-ADMIT digest launched (row 480).

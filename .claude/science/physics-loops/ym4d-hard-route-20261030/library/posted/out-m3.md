@@ -87,9 +87,7 @@ any proof, including the bare-mass lemma.
    Retain (S1-loc), (S2), (S2+), the supplied real gauges at a proper
    outer boundary, and all exterior coefficient reads. The group is
    fixed, $`L\ge3`$ is odd, and the torus has the room required there:
-   
    $`\operatorname{side}(T_\eta)\ge \max\{2\widehat r+2,t_FM_F\}\ell_k, \qquad \widehat r=(2L+2)M_t.`$
-
    The background and twist radii obey the common PI/GW ceilings.
    These hypotheses do not admit your unrestricted background classes.
 2. **GW, issue #14.** Use the [posted word estimates](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/9a3ad2072/.claude/science/physics-loops/ym4d-hard-route-20261030/library/out-gw.md),
@@ -127,9 +125,7 @@ any proof, including the bare-mass lemma.
 6. **Local current and cutoff estimates.** Put
    $`K_W=D_1^TD_1+D_0D_0^T-\Delta_W`$. Here $`\Delta_W`$ is the
    component covariant Laplacian. Assume $`\mathsf p(W)\le1`$ and
-   
    $`m_y^3|K_Wv|_y\le18d\,\mathsf p(W)m_y|v|_y, \quad m_y^3|F(W,h)|_y\le K_J(\mathsf p(W)+\Theta_0+\Theta_1)(\Theta_0+\Theta_1), \quad\Theta_0+\Theta_1\le2N_y(h).`$
-
    The remainder is local and holomorphic on the full stencil ball
    $`N_y(h)\le1/20`$, and $`F(W,0)=0`$. These are uniform coefficient
    hypotheses on the admitted complex domains. Use smooth response
@@ -528,9 +524,7 @@ operators $`P_1(s):E_p \to  F_p`$ and $`m_H(s):B_p \to  F_p`$. They satisfy:
 1. Joint holomorphy in the admitted base pair and switches, with locally
    uniform absolute word tails on a larger switch polydisc.
 2. For every admitted $`p`$, uniformly in mesh, volume and depth,
-   
    $`|P_1(s)u|_{-3,p}\le C_Pe^{16\kappa_1}\|u\|_p, \qquad |m_H(s)b|_{-3,p}\le C_Me^{16\kappa_1}|b|_p.   \qquad(7)`$
-
    The constants $`C_P,C_M`$ precede the switch radius. They depend on
    the fixed PI/GW, group, averaging and exponent choices.
 3. For every allowed cut subfamily, both kernel arguments and every
@@ -541,9 +535,7 @@ operators $`P_1(s):E_p \to  F_p`$ and $`m_H(s):B_p \to  F_p`$. They satisfy:
 4. All supplied gauge, reality and transport intertwiners are preserved.
    The required endpoint decay and a positive tree reserve remain.
 5. At one,
-   
    $`P_1(1)=D_0(I-R)D_0^T,\qquad m_H(1)=Q^*(q_J-a)\ell^{-1}+\Lambda^Tj_JH-\Delta'H.   \qquad(20)`$
-
 6. Equations (18)–(19), used as the current slots of the link and cut
    link, have the reduced rider's stated algebraic and analytic
    properties. They are jointly holomorphic in the base, datum, switches
@@ -1258,9 +1250,7 @@ numerical evaluation or machine enumeration.
    upper bounds above these floors, as in GW's constant order.
 6. Only now prescribe $`\kappa_1`$, put $`\kappa_1^+=\kappa_1+1`$, and choose
    the decoupling side with the required divisibility and
-   
    $`M_{\rm dec}\ge \max\{4\widehat r+8L,\ c_\iota,\ 64\kappa_1^+/\mu\}. \qquad(39)`$
-
    Thus (7) has the requested $`\exp(16\kappa_1)`$ factor, while there
    is room for holomorphy beyond that closed polydisc.
 7. Use the layer's prescribed composite constants on the enlarged

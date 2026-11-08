@@ -114,9 +114,7 @@ For $`j=|J|_{(-3)}\le j_*`$, (2) exists and has the following bounds.
    There is no Laplacian assertion for $`G_1^J`$.
 2. $`q_{1,J}\in\mathcal K_{-2}`$. Its density for the coarse physical
    pairing satisfies
-   
    $`|q_{1,J}(c,c')| \le C m_c^{-2}m_{c'}^{-4}e^{-\delta d(c,c')}. \qquad(3)`$
-
    The absolute word sums have both physical row and column majorants.
 3. $`H_1^J\in\mathcal K_{-1}`$, with the (J4) value, gradient and
    gradient-Hölder readouts, including their weighted versions.
@@ -1084,9 +1082,7 @@ None requires numerical evaluation.
    for $`0<\lambda\le\mu/4`$ above the required geometry floors.
    Choose $`j_*>0`$, with $`2j_*`$ below the preliminary ceiling, so that
    for $`0\le j\le2j_*`$
-   
    $`C_Kj\le\tfrac14,\qquad C_{\rm comp}\frac{C_Kj}{1-C_Kj}\le\tfrac14 .`$
-
 5. Choose a positive common $`\lambda\le\mu/4`$ below the retained
    GW endpoint rates, then $`0<\delta\le\lambda/4`$. Impose GW
    (P5) at every rate used, the scale-ratio floor of (35), and

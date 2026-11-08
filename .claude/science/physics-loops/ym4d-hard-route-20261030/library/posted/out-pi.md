@@ -258,27 +258,13 @@ Fix the constants in this order. They depend only on $`N,L`$.
 1. The flat inverse lemma in §4.4 and Appendix A supplies a block size $`M_F`$, gap $`\rho_F`$, inverse bound $`B_F\ge1`$, commutator constant $`C_{\rm com}`$, and cutoff multiplier bound $`c_h\ge1`$, covering all four systems on corner blocks. Put $`\rho'_F=M_F\lceil\rho_F/M_F\rceil`$.
 2. Lemma 4.4 supplies $`e_R,C_R`$, with $`r_1=1/(500L)`$. Lemma 5.1 supplies $`e_C\le e_R/L,C_C`$; Lemma 5.2 supplies $`C_S\ge2`$. Put $`C_K=3C_{\rm com}`$ and $`D_*=3(20L)^4`$.
 3. Fix one power $`M_t`$ of $`L`$, divisible by $`LM_F`$, such that
-
-```math
-M_t\ge\max\{2\rho'_F,4L\},\qquad
-\theta=\frac{3B_Fc_h^2C_K}{M_t}\le(4D_*)^{-4}.
-```
-
+$`M_t\ge\max\{2\rho'_F,4L\},\qquad \theta=\frac{3B_Fc_h^2C_K}{M_t}\le(4D_*)^{-4}.`$
 4. Put $`r_N=7M_t`$, $`\widehat r=(2L+2)M_t`$, and $`D_X=24L^2M_t`$.
 5. Put $`\delta_q=\log(1/\theta)/(7D_X)>0`$.
 6. Take $`M_b`$ to be a power of $`L`$, divisible by $`M_t`$, and impose
-
-```math
-2r_NL+1\le11M_b,\quad R_1\ge24,\quad
-R_1M_b\ge\max\{\rho'_F,\ 4L(\widehat r+L)+1,\ 3\log L/\delta_q\}.
-```
-
+$`2r_NL+1\le11M_b,\quad R_1\ge24,\quad R_1M_b\ge\max\{\rho'_F,\ 4L(\widehat r+L)+1,\ 3\log L/\delta_q\}.`$
 7. Put
-
-```math
-e_L=\min\{e_C,(8B_FC_C)^{-1},C_{\rm com}/(2c_hC_CM_t)\}.
-```
-
+$`e_L=\min\{e_C,(8B_FC_C)^{-1},C_{\rm com}/(2c_hC_CM_t)\}.`$
 Choose $`a_0^*,a_1^*\in(0,1]`$ with $`C_S(L^2a_0^*+a_1^*)\le e_L`$.
 8. Put $`C_q=4D_*B_Fc_h^2L\theta^{-1/2}`$.
 

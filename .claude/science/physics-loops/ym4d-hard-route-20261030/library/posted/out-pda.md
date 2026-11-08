@@ -97,9 +97,7 @@ Retain the following geometric inputs on every such component.
   The enlargements read inside $`X`$ agree with the metric enlargements by $`n\sigma_i`$.
   These are the cell and alignment readings at [CA-I 53816–53831](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L53816-L53831), [CA-I 48164–48168](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L48164-L48168), and [CA-I 92012](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L92012).
 - The old step geometry gives
-  
   $`d_\infty(Z_i\cap X,\Omega_{i+1}\cap X)\ge8\sigma_{i+1} \quad(h\le i<k). \qquad(3)`$
-
   Your proof of `4.4:lem-collar-avoidance(b)` gives this from Balaban's CMP 119, (3.5).
   The complement of $`B^{i+1}(P^1_{i+1})`$ contains five layers around $`Z'_i\supset Z_i`$.
   Formula (3.5) adds three more layers.
@@ -107,9 +105,7 @@ Retain the following geometric inputs on every such component.
   See [CA-I 12181–12225](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L12181-L12225).
   Only this eight-layer consequence enters; the other conclusions of the collar lemma are not needed.
 - The top margin contains the open $`10\sigma_k`$-neighbourhood of $`Z_{k-1}`$ in $`Z_k`$:
-  
   $`\{x:d_\infty(x,Z_{k-1})<10\sigma_k\}\subset Z_k. \qquad(4)`$
-
   This is the ten-layer input at [CA-I 53820–53825](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L53820-L53825).
 
 No cell alignment is assumed for the unchanged members at levels $`i\le h`$.

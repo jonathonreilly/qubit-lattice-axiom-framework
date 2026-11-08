@@ -1,6 +1,6 @@
 goal: GB1-CF finite gauge gluing, native qubit placement and neighborhood record realization
 operation: bounded research
-base: f5af11cd0102cfd0b51aef0911f600130bf5beb1
+base: 43a1fcc374711ca50626eca667441d3ca575c7d1
 instruction_branch: 56c5c0ab64f532c5784e895b2f9aa6894fa334e0
 parent_research_head: febb4c812b1d38e9b33f2c97149ff2b8f0f363ea
 branch: physics-loop/gb1-cf-pair-20261107
@@ -11,21 +11,27 @@ actual_current_surface_status: conditional-support
 target_claim_type: bounded_theorem
 trace_class: upstream_support
 reachability_to_target: partially_closes
-active_route: completed conditional neighborhood propagation and electric record readout
-bounded_result: 19 adjacent pair gates and seven onsite gates measure the full five-state electric Casimir with one fresh output and no work qubits
-independent_check: distinct frozen hand constructions, exact Gaussian-rational execution and complete integrated source check; same model family and author-lineage limits disclosed
+active_route: all-origin coarse-vertex output registers and covariant joint instrument
+bounded_result: one coarse-vertex output per cell preserves all 125 origins; a radius-four covariant electric instrument and the supplied magnetic generator preserve stored outputs
+independent_check: fresh-context vertex-output hand derivation agrees with frozen primary and adds a support guard and Gauss-compatible state-law diagnostic; integrated source confirmation complete; no fresh formal review or audit
 note: docs/SU2_NEIGHBORHOOD_PROPAGATION_RECORD_READOUT_BOUNDED_THEOREM_NOTE_2026-11-08.md
-note_sha256: 1cb33015822b869b4baf24ceaf04502c50e88ef92ec412642300ffac2423d51e
+note_sha256: 8ae0959b5c1f294cc7a9be67c2818f53c25ce2410d1103ac13054bd325d82b23
 previous_boundary_note: docs/SU2_FINITE_BOUNDARY_FLUX_ASSOCIATIVE_GLUING_BOUNDED_THEOREM_NOTE_2026-11-07.md
 previous_boundary_note_sha256: c2a8da27cfc860b2b5912e87251622ee69ee452aaa39a1aecf882f220b3d9876
-execution: exact content-bound readout cache successful; four separate mutations rejected; prior five runner sources and caches unchanged
+execution: exact residue geometry and bad-enlargement control completed; prior electric reader replay passed 5009 checks after correcting missing NUMEXPR thread setting
 failed_routes: data-first computational recording erases the phase and dephased J3 leaves half the code; previous finite capacity and origin witnesses retained
-native_axiom_bridge: open; coherent preparation, joint quantum-record law, all-origin output allocation and plaquette evolution remain unproved
+native_axiom_bridge: open; prepared-state provenance, a record-only sufficient conditional law, physical scheduler and resource renewal remain unproved
 framework_stance: axioms and gauge model are hypotheses; compare alternatives rather than protect a desired framework
-next_action: homogeneous joint data/record law and plaquette dynamics remain open; await owner wording approval before separate axiom-only PR
-checkpoint: native_law/HANDOFF.md
-verification: native_law/outputs/verification.json
+next_action: construct a preparation/program/history carrier and prove record-only neighborhood sufficiency preserved by the instrument and magnetic evolution
+checkpoint: native_records/HANDOFF.md
+verification: native_records/verification.json
 recovery: source clarification patch recovers fully reviewed sources; prior boundary and pair recovery artifacts unchanged
 repository_authority_edits: []
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
+axiom_change_landed: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10143
+current_probe: native_records/RESULT.md
+current_probe_status: conditional-support; residue geometry and separate hand derivation checked; integrated source confirmation complete; no fresh formal review or audit
+locality_reassessment: native_law/luna_reassessment/manifest.json
+prior_readout_verification: native_law/outputs/verification.json
+current_probe_sha256: 8299d2f298386c644951900b7d2c5405ec5ab8de35f8bb736535263e1c6b2657

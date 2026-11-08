@@ -1,0 +1,10 @@
+{
+  "runner": "scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "BOUNDS cpu=60s wall=60s RSS_guard=270000000 poll=0.05s threads=1\nSOURCE_SHA256 e3e48f00833e423a39b4663bb7201c98b5da2a13d9dd2c0b1a9bd547d57f6bae\nCIRCUIT pair_gates=74 onsite_H=2 full_basis_columns=32 code_columns=5\nPHASE p0(0)=1 p0(pi)=0 p0(pi/2)=1/2; data-dephased p0=1/2\nENCODING J3_Z_dephasing_code_survival=1/2; old_spectator_overlap=0\nELECTRIC_COMPACT pair_gates=19 onsite_gates=7 clean_work=0 output=1 code_columns=5 both_pointer_inputs\nELECTRIC_COMPACT native_predicate_rank=4 code_vacuum_rank=1; output b reads 3b/4\nELECTRIC pair_gates=65 onsite_gates=12 clean_work=2 output=1 full_clean_work_columns=32\nELECTRIC output1=zero-electric output0=3/4; all five code vectors preserved; work restored\nRELAY all64_binary_six_neighbor_conditions all24_rotations lengths1..32 colors2\nRELAY empty-neighbor Haar law and arbitrary-distance result are proved in prose\nper_element: all32 circuit basis columns and all five code columns checked exactly.\nper_site: adjacent supports and fresh output are explicit; old spectator sector changes.\nper_mode: checked and not executed - no momentum, mass gap or continuum claim.\nper_block: finite relay and distinct five-/seven-qubit electric instruments checked separately.\nlattice_wide: checked and not executed - no autonomous homogeneous joint law is derived.\nTOTAL: PASS=5009 FAIL=0\n{\"seconds\": 0.05736833400442265, \"peak_rss_bytes\": 25182208}\n",
+  "stderr": "",
+  "elapsed_sec": 0.12927913665771484,
+  "timeout_sec": 60,
+  "live_log": "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/logs/runner-cache/.in-progress/gb1_cf_neighborhood_record_readout_exact_2026_11_08.txt"
+}

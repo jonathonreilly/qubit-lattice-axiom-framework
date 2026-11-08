@@ -89,3 +89,26 @@ is requested before source comparison. Evidence goes in native_law/; STATE.yaml
 remains the single current checkpoint. The literature and nearby repo search
 are recorded there. No standalone single-step obstruction is to be presented
 as a failure of neighborhood propagation.
+
+## Approved wording and resumed output-register probe, 2026-11-08
+
+The owner explicitly approved the two governing neighborhood substitutions
+and merging the isolated axiom PR. PR #10143 is now merged at
+43a1fcc374711ca50626eca667441d3ca575c7d1; its exact validated tree was verified.
+This supersedes the earlier pending-approval checkpoint only for that wording.
+No additional axiom or primitive is authorized by this research continuation.
+
+The owner requests return to the gauge bridge after landing. Next bounded
+question: free only coarse-vertex qubits for permanent outputs and test all
+125 grid origins, local D_x detectors, a covariant electric instrument and
+compatibility with the supplied magnetic Hamiltonian. Preserve the distinction
+between a joint live-quantum/record process and a law whose complete physical
+state is its record configuration. Existing history-law kernels are conditional
+prior art; the next physical bridge must supply preparation/history information
+in the permitted complete neighborhood condition.
+
+Exact target: every side-5n torus, n>=3, arbitrary encoded input and passive
+reference, all origins including coherent superpositions, blank versus recorded
+zero, finite capacity and off-code instrument normalization. A conditional
+operator construction alone does not count as autonomous record-only law closure.
+Evidence goes in native_records/; STATE.yaml remains the current checkpoint.

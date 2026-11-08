@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py
 runner_sha256: e3e48f00833e423a39b4663bb7201c98b5da2a13d9dd2c0b1a9bd547d57f6bae
-input_fingerprint_sha256: f610fc7dcdb20126e0fbd0ab86872d242303f60974c429680015e8b5675c1c0d
-timeout_sec: 65
+input_fingerprint_sha256: 5aa29d23633c43dc2829ea903289603d3eff5a17d86291e66081c45be3e852b0
+timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 BOUNDS cpu=60s wall=60s RSS_guard=270000000 poll=0.05s threads=1
@@ -24,7 +24,7 @@ per_mode: checked and not executed - no momentum, mass gap or continuum claim.
 per_block: finite relay and distinct five-/seven-qubit electric instruments checked separately.
 lattice_wide: checked and not executed - no autonomous homogeneous joint law is derived.
 TOTAL: PASS=5009 FAIL=0
-{"seconds": 0.053743791999295354, "peak_rss_bytes": 24920064}
+{"seconds": 0.05736833400442265, "peak_rss_bytes": 25182208}
 
 ----- stderr -----
 

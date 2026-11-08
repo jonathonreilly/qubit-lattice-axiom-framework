@@ -1,0 +1,34 @@
+{
+  "docs/SU2_HOMOGENEOUS_NATIVE_QUBIT_CODE_BOUNDED_THEOREM_NOTE_2026-11-08.md": {
+    "before_sha256": "0d457372fe995529ad1fc13e3c9d6f696fe27b9a5ee3b1ef78852214a928604c",
+    "after_sha256": "15a10f8d6ddd39077cdad1be80924787d577d6614192077b75d0c4e0b2b4abca",
+    "replacements": [
+      [
+        "not an axiom-selected state, nearest-neighbor admissibility rule, record process",
+        "not an axiom-selected state, neighborhood admissibility rule, record process"
+      ],
+      [
+        "Test whether a native nearest-neighbor admissibility and record law",
+        "Test whether a native neighborhood admissibility and record law"
+      ],
+      [
+        "require a covariant\nnearest-neighbor probability law",
+        "require a covariant\nneighborhood probability law"
+      ]
+    ]
+  },
+  "docs/SU2_NEIGHBORHOOD_PROPAGATION_RECORD_READOUT_BOUNDED_THEOREM_NOTE_2026-11-08.md": {
+    "before_sha256": "1cb33015822b869b4baf24ceaf04502c50e88ef92ec412642300ffac2423d51e",
+    "after_sha256": "8ae0959b5c1f294cc7a9be67c2818f53c25ce2410d1103ac13054bd325d82b23",
+    "replacements": [
+      [
+        "The [current axioms](MINIMAL_AXIOMS_2026-06-29.md) are unchanged in this research\nbranch; proposed wording and its adoption belong to a separate owner-reviewed\nPR. No result below assumes that proposal has been adopted.",
+        "The construction was checked against the axiom wording at main `f5af11cd`.\nThe owner subsequently approved the two governing substitutions of\n\"neighborhood\" for \"nearest-neighbor\", landed separately in\n[PR #10143](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10143).\nThe [current axioms](MINIMAL_AXIOMS_2026-06-29.md) include that wording; it does\nnot supply the quantum preparations, gates or probability values used below."
+      ],
+      [
+        "subspace needed by records. The original axioms have not been changed.",
+        "subspace needed by records. This construction adds no axiom or primitive."
+      ]
+    ]
+  }
+}

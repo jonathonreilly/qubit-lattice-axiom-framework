@@ -9,19 +9,18 @@ For (g), it supplies only \(m\le h\). The restrictions are listed below.
 The searches in §8 found uses and geometric ingredients in your revised outline,
 but no proof there of this invariant through all the stated moves.
 
-Credit Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of your text,
-for the definitions, construction rules, and arguments cited here.
-Credit Tadeusz Balaban for the large-field method and preparation geometry.
+The definitions, the statement of the construction rules, and the arguments cited here are yours.
+The large-field method, the T rule and the preparation geometry are Tadeusz Bałaban's.
 Your account cites his CMP **119** (1988), §3, for T, and CMP **122** (1989),
 pp. 175–202, §1, for preparation. We use the rules as your account states them.
 
 Codex (gpt-6-astra) wrote the proof and this note. Claude (Opus 5.5) checked the proof line by line, and its repairs are applied.
-This is a proposed proof for your review. It is research text, not an audit, and grants no status.
+This is a proposed proof for your review. It is research text, not an audit.
 No computation supplies a proof step.
 
 **Sources.** **I** means your [complete account, Part I][account], at commit
-`31a47c543775`. **SA** means [YM4_sketch_500.tex][old-outline] at that commit.
-**N** means [YM4_1400.tex][new-outline] at commit
+`31a47c543775`. **SA** means your [YM4_sketch_500.tex][old-outline] at that commit.
+**N** means your [YM4_1400.tex][new-outline] at commit
 `2bc0658f91d2d03ba44e20bf695067e0a56a2ed9`.
 All line references below use these fixed revisions.
 
@@ -111,12 +110,11 @@ The contour hypothesis starts at [CA-I 85644](https://github.com/ethanwsussman/Y
 | Contour hypothesis | Not touched | — |
 
 Here “proved” means a written implication from the construction rules below.
-It grants no status to the account or its other hypotheses.
 In (c), a domain is tested only after its level exists.
 At R at step \(k\), an old live strip has \(m<k\).
 A new second-class output enters the next cycle.
 
-### Your construction rules used below
+### Construction rules used below, as your account states them
 
 | Input | Source and use |
 |---|---|
@@ -124,11 +122,11 @@ A new second-class output enters the next cycle.
 | Your fixed birth strip and its lifetime | [CA-I 63523–63544](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L63523-L63544). An interrupted attempt is not a new second-class strip. |
 | Your component size and separation at birth | [CA-I 63547–63562](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L63547-L63562); the fixed-grid strip calculation is [CA-I 20441–20468](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L20441-L20468). |
 | Your adjacent radius ratios and scale comparison | [CA-I 63563–63569](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L63563-L63569); telescoping proof at [CA-I 63643–63649](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L63643-L63649); radius floor at [CA-I 63621–63623](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L63621-L63623). |
-| Your eight-layer T rule, followed by two further layers and monotone boxing | [CA-I 50196–50229](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L50196-L50229) and [CA-I 50342–50368](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L50342-L50368). Your T-buffer proof is [CA-I 12187–12265](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L12187-L12265). |
+| Bałaban's T rule in your eight-layer form, followed by two further layers and monotone boxing | [CA-I 50196–50229](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L50196-L50229) and [CA-I 50342–50368](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L50342-L50368). Your T-buffer proof is [CA-I 12187–12265](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L12187-L12265). |
 | Your open exclusion window and whole-component eligibility | [CA-I 45985–46032](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45985-L46032). Operations at the lower endpoint are allowed. |
-| Your five-layer lower preparation | [CA-I 53783](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L53783); its layer side is given at [CA-I 63703–63716](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L63703-L63716). |
-| Your upper prepared gap | [CA-I 53778–53781](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L53778-L53781), including the change of scale. It is an input rule, not inferred from N's quiet-box formulas. |
-| Your nested prepared members, main box, and stage collars | [CA-I 53786–53819](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L53786-L53819); \(N>N_0\ge2\) and \(h+1\le k_0\) at [CA-I 53773](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L53773) and [CA-I 63590–63592](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L63590-L63592). |
+| Bałaban's five-layer lower preparation | [CA-I 53783](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L53783); its layer side is given at [CA-I 63703–63716](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L63703-L63716). |
+| Bałaban's upper prepared gap | [CA-I 53778–53781](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L53778-L53781), including the change of scale. It is an input rule, not inferred from N's quiet-box formulas. |
+| Bałaban's nested prepared members, main box, and stage collars | [CA-I 53786–53819](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L53786-L53819); \(N>N_0\ge2\) and \(h+1\le k_0\) at [CA-I 53773](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L53773) and [CA-I 63590–63592](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L63590-L63592). |
 | Your completed whole-component outcomes | [CA-I 64479–64497](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L64479-L64497). A completed localisation consumes the old pocket. |
 | Your frozen partial preparations, including \(n^+=n+1\) | [CA-I 64417–64442](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L64417-L64442) and [CA-I 64527–64535](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L64527-L64535). Arrested attempts are defined at [CA-I 64796–64847](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L64796-L64847). |
 | Your integration coordinates and incident-bond convention | [CA-I 74309–74320](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L74309-L74320) and [CA-I 159058–159075](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L159058-L159075). |
@@ -138,7 +136,7 @@ Use periodic sup-distances on the torus. The local birth and operation boxes
 have the admissible nonwrapping charts supplied with these rules.
 No lift of every recursive carrier is assumed or proved.
 
-Your earlier partial proof at [CA-I 63772–63800](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L63772-L63800) explicitly starts with clauses (e)–(i)
+Your earlier partial proof at [CA-I 63772–63800](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L63772-L63800) explicitly starts with clauses (e)–(i) of your Lemma 4.21
 and takes connectedness and retained-strip containment as input.
 The treated-collar subtraction at [CA-I 63908–63916](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L63908-L63916) is already yours.
 We supply the finite-history retention needed by that subtraction, not a new subtraction formula.
@@ -192,7 +190,7 @@ Once cell saturation and strip disjointness are established, define
 \]
 Formula (2) does not itself prove that its first case is single-valued.
 
-The birth size gives a port, not a fresh research claim.
+The birth size bound is your calculation.
 If the birth component has side at most \(100\check R_m u_m\), then
 \[
  s_i(Y)=s_m(Y)L^{-(i-m)}
@@ -205,7 +203,7 @@ The last is the proved radius comparison in [CA-I 63643–63649](https://github.
 The identity uses the fixed strip, not a succession of enlargements.
 For simultaneous births, separated boxing cells give
 \(\operatorname{dist}_m(S_Y,S_{Y'})\ge \check R_m-2q_m\ge1\).
-This is the same-level port from [CA-I 20441–20468](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L20441-L20468).
+This is your same-level calculation at [CA-I 20441–20468](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L20441-L20468).
 It does not establish separation between two different birth levels.
 
 ## 3. The lower prepared member on the same history
@@ -220,10 +218,10 @@ For \(t\ge2\), the T rule is
  \tag{4}
 \]
 Boxing and subsequent failures only enlarge the second set.
-This is your eight-layer T rule at [CA-I 50196–50229](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L50196-L50229), with the two further layers and monotone boxing at [CA-I 50342–50368](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L50342-L50368).
+This is Bałaban's T rule in the eight-layer form your account derives at [CA-I 50196–50229](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L50196-L50229), with the two further layers and monotone boxing at [CA-I 50342–50368](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L50342-L50368).
 [SA 17317–17332](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/YM4_sketch_500.tex#L17317-L17332) prints the same construction.
 Thus new failures and joining cannot reduce either buffer in (4).
-The T-buffer argument is already proved in [CA-I 12187–12265](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L12187-L12265); we port it here.
+The T-buffer argument is already proved in [CA-I 12187–12265](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L12187-L12265); we use it here.
 That lemma's coupling argument is unnecessary because the present radius comparison is already available.
 The first step has its separate tests and no incoming pockets, [CA-I 50231–50300](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L50231-L50300).
 No first-step version of (4) is needed for a live strip.
@@ -260,7 +258,7 @@ This proof does not use the statement at [CA-I 64468–64472](https://github.com
  \tag{6}
 \]
 Here is the endpoint check needed to use the published calculation.
-CA's exclusion interval is \((h,k)\), at [CA-I 45992–46032](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45992-L46032).
+Your account's exclusion interval is \((h,k)\), at [CA-I 45992–46032](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45992-L46032).
 An earlier standing second-class region in \(C\) therefore has birth level \(m\le h\).
 A standing arrest in \(C\) has step at most \(h\), by the same rule.
 The closed lower endpoint of [SA 17575](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/YM4_sketch_500.tex#L17575) is stronger and is not used here.
@@ -312,7 +310,7 @@ Suppose its containing component \(C\) is attempted at step \(k\), with \(h=k-N_
 Include a standing interrupted mark \(\mathfrak a=(A,m,n,n^+,e)\) in \(C\).
 At step \(m\), \(A\) and \(Y\) were different components with different outcomes.
 Later T steps may join their descendants.
-CA's class permits this joining and the mark at its lower endpoint, [CA-I 45992–46032](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45992-L46032).
+Your account's class permits this joining and the mark at its lower endpoint, [CA-I 45992–46032](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45992-L46032).
 The lower index is shared; the earlier interiors and their determining cells need not be flat.
 In (6), retain all of \(Z_m\cap C\), including the interrupted component.
 Replacing that set by \(Y\) would discard the history that must be checked.
@@ -476,13 +474,13 @@ Hence
  \ge \check R_k-q_k\ge(\check R_k+1)/2>0.
  \tag{13}
 \]
-For two new births, the stronger same-level port after (3) gives distance at least one.
+For two new births, your stronger same-level calculation after (3) gives distance at least one.
 Healing deletes pockets; it creates no strip.
 This completes the disjointness induction.
 Cell saturation now makes (2) single-valued.
 
 For the T-site bound, let the input level be \(i\).
-Use the ported T-buffer argument from [CA-I 12187–12265](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L12187-L12265).
+Use your T-buffer argument at [CA-I 12187–12265](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L12187-L12265).
 If \(m<i\), assertion 4 puts \(S_Y\) inside the input \(Z_i\).
 Equation (4) gives distance at least \(8L\check R_{i+1}\ge8\check R_i\).
 If \(m=i\), subtract the birth reach \(q_i\), as in (12).
@@ -501,7 +499,7 @@ In units of level \(h+1\), the strip's additional reach is at most
 \[
  q_m L^{-(h+1-m)}\le\tfrac12 \check R_{h+1}.
 \]
-The radius comparison is the port used in (3).
+The radius comparison is the one used in (3).
 Every collar \(R_\nu\) lies outside \(D_{h+1}\), by nesting.
 Subtracting this reach from (8) gives assertion 7's treated bound.
 This is the conditional argument already printed at [CA-I 63909–63915](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L63909-L63915).
@@ -562,7 +560,7 @@ This checks every integration site in the cycle of section 4 and in the inductio
 
 ## 7. Endpoints and scope
 
-The theorem is a finite-history geometric invariant on the account's stated rules.
+The theorem is a finite-history geometric invariant on your account's stated rules.
 The constants do not depend on a pocket's age or the number of attempts.
 The proof covers joining, interrupted preparations, and the next complete T/R cycle.
 Its narrowest retained birth collar is (9), including the extra raise before the (1.55) exit.
@@ -576,7 +574,6 @@ The passage [SA 17435–17440](https://github.com/ethanwsussman/Yang--Mills-LLM-
 Thus the critical \(h=m\) case in §4 is allowed by I but absent from that stricter class.
 The same bounds hold when that case is absent. The sets of admissible histories are not identical.
 
-The match to a separately revised operation and its selectors remains a separate question.
 The proof supplies no contour, norm, probe, or measure claim.
 It does not prove the box assertions in (f), or the box, margin, and touching assertions in (g).
 It does not prove (i1), (i2), the contour hypothesis, or any following reader or summation hypothesis.
@@ -586,21 +583,15 @@ Nothing here proves an interacting estimate or a Yang–Mills existence theorem.
 
 ## 8. Search record for the revised outline
 
-These searches ran on the whole pinned N file. Source reads were bounded excerpts.
+These searches ran on all of your revised outline N at the stated commit. Source reads were bounded excerpts.
 They are retrieval evidence, not proof steps. The search did not locate a proof of the
 finite-history invariant elsewhere in this revision. It found uses of the invariant,
 conditional consequences, and the construction ingredients used above.
 This finding concerns the specified revision only.
 
-The initial lookup used the full-read outline index, its neighbouring entries and obligations:
-[SA 6055–6115](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/YM4_sketch_500.tex#L6055-L6115), 17317–17449, and 17575 onward; and the CA index entries for
-[CA-I 45985–46032](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45985-L46032) and [CA-I 53765–53819](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L53765-L53819). The earlier prior-work comparison identified the
-candidate N passages at 81378–81393, 85170–85188, and 85294–85302.
-The repository already contained the checked proof reproduced here.
-This task packages that proof and repairs its citations; it does not rederive a completed result.
-The separate operation, code/read, and carrier-lift questions were not taken over.
+We first read [SA 6055–6115](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/YM4_sketch_500.tex#L6055-L6115), 17317–17449 and 17575 onward, and [CA-I 45985–46032](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L45985-L46032) and [CA-I 53765–53819](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L53765-L53819). We then ran the searches below on all of N.
 
-Commands, with `N` denoting the pinned `YM4_1400.tex`:
+Commands, with `N` denoting your `YM4_1400.tex` at the stated commit:
 
 ```sh
 rg -n -i 'live[- ]strips?|strip|proof outstanding|collar|101|5/2|7[[:space:]]*R' N
@@ -643,7 +634,7 @@ rg -n '7[[:space:]]*(\\[,;! ]|\\,)*[[:space:]]*(\\check|R_)|5[[:space:]]*\\check
 | [N 48083–48103](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/2bc0658f91d2d03ba44e20bf695067e0a56a2ed9/YM4_1400.tex#L48083-L48103); 68854–68873 | The symbol \(Y^\sharp\) denotes an ordinary coarse collar or stored formation support here. These are different objects. |
 | [N 17922–17947](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/2bc0658f91d2d03ba44e20bf695067e0a56a2ed9/YM4_1400.tex#L17922-L17947); 133520–133539 | The `px:level-barrier` hit is a layered-metric crossing estimate. Its later use concerns a shrinking boundary strip, not a live second-class birth strip. |
 
-In I, the partial proof is already explicit at 63772–63916: it starts with (e)–(i),
+In I, the partial proof is already explicit at 63772–63916: it starts with clauses (e)–(i) of your Lemma 4.21,
 uses retained-strip containment for (e), and gives the treated-collar subtraction for (h).
 This is why the new contribution is the persistence induction, especially the open-endpoint interruption.
 The geometric rules and the existing conditional calculations remain yours.

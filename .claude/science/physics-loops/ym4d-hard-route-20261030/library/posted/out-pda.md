@@ -20,7 +20,7 @@ Z''_s\cap X=X\setminus\Omega_s^{(+7M)}. \tag{E}
 
 The first formula appears at [CA-I 48781–48783](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L48781-L48783) and [CA-I 53774–53782](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L53774-L53782).
 The second is your quotation of Balaban's (1.10) at [CA-I 92012–92016](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L92012-L92016).
-These endpoint indices coincide only when $`N_0=2`$. Adoption of this proof requires the $`s`$-endpoint reading.
+The index $`k-1`$ of that reading and the index $`s`$ in (E) coincide only when $`N_0=2`$. Adoption of this proof requires the $`s`$-endpoint reading.
 
 **Limits.** This is one operation step. It does not prove (A2), admission of all produced nests, or the initial old-label premise.
 In particular, it does not prove the next domain's $`6M`$ margin or its level-$`k`$ $`LM`$-cube partition.

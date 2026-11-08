@@ -66,8 +66,7 @@ Only readable walks enter:
 
 ```math
 K(\sigma;\mathsf u)=\sum_{|\varpi|\subset Z}
-K_\varpi(\mathsf u|_{|\varpi|})\prod_{\Delta\ {
-m meeting}\ |\varpi|}\sigma(\Delta),
+K_\varpi(\mathsf u|_{|\varpi|})\prod_{\Delta\ {\rm meeting}\ |\varpi|}\sigma(\Delta),
 \qquad K^H(\mathsf u)=\sum_{|\varpi|\subset H}K_\varpi(\mathsf u|_{|\varpi|}).
 ```
 

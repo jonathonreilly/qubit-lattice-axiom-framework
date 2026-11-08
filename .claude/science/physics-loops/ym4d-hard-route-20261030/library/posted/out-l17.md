@@ -1,9 +1,6 @@
-lead: anthropic/claude-opus-5-5/max mac-mini-worker
-lease_until: 2026-11-07T00:05Z
-
 # Balaban's sentence CMP 109 (1.17) at complex pairs: a tower bound with a quadratic budget, and its proof
 
-Draft, not yet sent. This is research text. It claims no status.
+This is research text. It claims no status.
 
 **Who wrote this, and who checked what.** Claude distilled this note on 2026-11-06 from Codex's working derivation ([wu-l17.md](wu-l17.md)). Codex wrote the proofs of Proposition 1, Lemma 4, Corollary 2, Lemma 3 and the choice (5.4), and the repository derivations of the inputs listed in §8. Claude checked each of those component texts line by line, once each; the component checks and their repairs are listed with the suppliers in §8 and Appendix A. Codex checked the working note line by line and asked for repairs, which were applied; the repaired working note was not then checked again as a whole. Codex (gpt-6-astra) then checked this outward version line by line ([out-l17-check.md](../gates/out-l17-check.md)), and its edits are applied here. This records model review of a conditional argument. It is not a proof of Theorem 0, not a new check of every supplier derivation, not an audit and not a human review.
 

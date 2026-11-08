@@ -36,27 +36,10 @@ The proof uses the following inputs which your account does not itself prove. Th
 2. **Flat estimates.** For each of the four systems $`M_1,M_3,M_4,M_5`$, use the flat inverse and local periodic or bare-boundary models. Their energy expansions have the following absolute refinement: the sum of norms of all length-$`n`$ words from either endpoint patch is at most $`B_Lq^n`$, where $`q<1/2`$. Each transition has a fixed layer diameter $`D`$. These constants are uniform in mesh, volume, depth and admitted shape. We use physical row and column counts, and the free local Poisson estimate (P7), including its divergence-source and Hölder members. The flat construction precedes the main tile size. The strong inverse (P8) is derived below from these inputs. These estimates are proved in the [working note on the flat propagators](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/18d805bed/.claude/science/physics-loops/ym4d-hard-route-20261030/library/flat-port.md): §4.1 for (P7), §§8 and 9.2 for the inverse, §11 for the absolute word bounds, and §12 for the torus room $`t_FM_F`$. Codex (GPT-6) wrote it, and Claude (Opus 5.5) checked it line by line. Appendix A of the PI note prints its energy part. The free Poisson estimate (P7) and the absolute word bounds are not in the PI note. The argument rebuilds the flat method of Balaban, CMP 95, Proposition 1.1 and (1.89)–(1.90), and CMP 96, (2.95)–(2.141), Propositions 2.5–2.6. The input includes absolute individual-word bounds, not just a bound on the summed remainder.
 
 3. **Averaging estimates in a supplied frame.** Use the literal straightened averaging map of Balaban, CMP 98, pp. 23–24, (42)–(43), as in PI. His Proposition 5, (156)–(157), bounds its first derivatives at real backgrounds. We need the analytic form at complex backgrounds, with second and third derivatives and transposes. Balaban states that extension without proof (CMP 98 §E, p. 43). Your Remark `4.5:rem-averaging-analyticity`, CA-I 13175–13196, cites it as printed. We use a written proof of it as an implication from a frame bound: the [working note on the averaging derivatives](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/18d805bed/.claude/science/physics-loops/ym4d-hard-route-20261030/library/b98p5.md), §§2.1–2.5. Codex (gpt-6-astra) wrote it. Claude (Opus 5.5) checked it line by line, and its two repairs are applied. It rebuilds Balaban's map and his real-background method, and moves the reference without a factor that grows with depth. Its constants depend only on N and L. Its first-derivative constant is larger than the leading coefficient $`1+2C'_1\alpha_0`$ of (156); no step here needs a coefficient near one. Its §3, on the frame bound for your full class, is not used. It proves the following implication. Let $`c`$ be a row of scale $`s_c`$, and let $`E_c`$ contain all bonds of its double block. If one unitary gauge gives
-
-```math
-W^u=e^{i\eta B}\quad\hbox{on }E_c,\qquad
-s_c\|B\|_{\infty,E_c}<\rho,
-```
-
+$`W^u=e^{i\eta B}\quad\hbox{on }E_c,\qquad s_c\|B\|_{\infty,E_c}<\rho,`$
 then its dimensionless angle $`q_c(W,A)`$ and remainder
 $`R_c(W,A)=q_c(W,A)-D_Aq_c(W,0)A`$ are jointly holomorphic in the reference potential and increment on a common larger ball. With $`r_A=|A|_{(-1)}`$, $`r_v=|v|_{(-1)}`$, and $`r_h=|h|_{(-1)}`$, the estimates used are
-
-```math
-\begin{aligned}
-|R_c(W,A)|&\le Cr_A^2,\qquad R_c(W,0)=D_AR_c(W,0)=0,\\
-|D_Aq_c(W,A)(b)|_{\rm den}&\le Cs_c^{-3}1_{E_c}(b),\\
-|D_AR_c(W,A)(b)|_{\rm den}&\le Cr_As_c^{-3}1_{E_c}(b),\\
-|D_A^2R_c(W,A)[v,\cdot](b)|_{\rm den}&\le Cr_vs_c^{-3}1_{E_c}(b),\\
-|D_A^3R_c(W,A)[h,v,\cdot](b)|_{\rm den}&\le Cr_hr_vs_c^{-3}1_{E_c}(b),\\
-|(D_A^2R_c(W,A)-D_A^2R_c(W,0))[v,\cdot](b)|_{\rm den}
-&\le Cr_Ar_vs_c^{-3}1_{E_c}(b).
-\end{aligned}
-```
-
+$`\begin{aligned} |R_c(W,A)|&\le Cr_A^2,\qquad R_c(W,0)=D_AR_c(W,0)=0,\\ |D_Aq_c(W,A)(b)|_{\rm den}&\le Cs_c^{-3}1_{E_c}(b),\\ |D_AR_c(W,A)(b)|_{\rm den}&\le Cr_As_c^{-3}1_{E_c}(b),\\ |D_A^2R_c(W,A)[v,\cdot](b)|_{\rm den}&\le Cr_vs_c^{-3}1_{E_c}(b),\\ |D_A^3R_c(W,A)[h,v,\cdot](b)|_{\rm den}&\le Cr_hr_vs_c^{-3}1_{E_c}(b),\\ |(D_A^2R_c(W,A)-D_A^2R_c(W,0))[v,\cdot](b)|_{\rm den} &\le Cr_Ar_vs_c^{-3}1_{E_c}(b). \end{aligned}`$
 A counting-coordinate derivative is $`\eta^4`$ times this density. The same colour bounds hold for bilinear transposes. The physical transpose sums the density with row volume $`s_c^4`$. Adjacent-height carrier overlap is bounded, so it gives the corresponding weighted transpose estimates. In particular a block field of weight $`-4`$ gives a fine source of weight $`-3`$, with the marked variation in $`E_p`$. The first derivative gains $`r_A`$; the difference of second derivatives gains $`r_A`$. Cauchy estimates are applied to a density-bounded row on the larger ball, before summing fine coordinates. The remainder at height zero is zero.
 
 **The frame bound is supplied on this PI class.** A positive-height double block lies in the (S1-loc) box $`N_\tau`$ of a tile of height $`j-1`$ or $`j`$ whose cutoff support contains its base point. PI Lemma 5.2, using (S2) and (S2+) as well, gives

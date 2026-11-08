@@ -585,7 +585,8 @@ Work on PR #10132 of jonathonreilly/qubit-lattice-axiom-framework, branch claude
 | 517 | `bz-geom` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2e): C0-ETA at B_Z by its geometry; output library/bz-geom.md. |
 | 518 | `sj-r2` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2g): SJ round 2 by R-A then R-B; output library/sj.md. |
 | 519 | `fco-slot` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2f): FCO-slot and the restated UO2-geo; output library/fco-slot.md. |
-| 520 | `hcm-repair-check` | running 2026-11-08 (laptop Claude subagent, Opus 5.5); output gates/hcm-repair-check.md. |
+| 520 | `hcm-repair-check` | done 2026-11-08 (laptop Claude subagent, Opus 5.5): gates/hcm-repair-check.md, FIX. Payment (section 3) and (9), (11), (12) confirmed. HCM-SC asks too much; route 1 not a real route; consumer list misses Y 64088-64107, 71368-71382, 134088-134131. New route HCM-TB: keep the boundary tower at top level (CA-I 43000-43004 gives only a lower bound) and use Balaban's constrained minimizer on the level-m collar rows. Round 2 row 524. |
 | 521 | `out-live` | queued 2026-11-08 on Mini Codex (gpt-6-astra high, slot repo2h): citation repairs, YM4_1400 search, outward note and issue text for the live-strip invariant (CA-I 85575-85644). |
 | 522 | `hcm-r2` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2i): repairs to hcm-false.md, the pass-rate bound, and RIM-N; output library/hcm-r2.md. |
 | 523 | `w125-check` | running 2026-11-08 (laptop Claude subagent, Opus 5.5); output gates/w125-match-check.md. |
+| 524 | `hcm-tb` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2): repairs to hcm-repair.md and route HCM-TB; output library/hcm-tb.md. |

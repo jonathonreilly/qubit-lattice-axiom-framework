@@ -54,11 +54,11 @@ algebraic structure alone.
 
 ### Admissibility / Local Constraint
 
-There is one fixed nearest-neighbor admissibility rule, covariant under lattice
+There is one fixed neighborhood admissibility rule, covariant under lattice
 translations and proper cubic rotations.
 
 For each site, the probability distribution over the possibilities is
-determined by, and varies with, the nearest-neighbor conditions.
+determined by, and varies with, the neighborhood conditions.
 
 *Reading notes (interpretive, non-governing).* (1) The distribution is
 law-level: the general substrate is the weighted-branching realization, with
@@ -114,9 +114,9 @@ scientific dependency must be retained-derived or remain conditional/open.
 ## Relation To Dynamics And Kinetic Branch Selection
 
 Admissibility is not a dynamics axiom. It determines the local probability
-distribution by a nearest-neighbor rule: for each site, the probability
+distribution by a neighborhood rule: for each site, the probability
 distribution over the possibilities is determined by, and varies with, the
-nearest-neighbor conditions. It does not
+neighborhood conditions. It does not
 choose a Hamiltonian or transfer operator, supply transition-probability or
 weight values, select a scalar or nonzero kinetic branch, assert a Dirac-square
 carrier, define a time metric, or provide a record-production process or
@@ -160,9 +160,9 @@ readout structure:
 
 - Qubit names the domain of local possibilities and its full one-site algebraic
   presentation.
-- Admissibility names the nearest-neighbor rule by which, for each site, the
+- Admissibility names the neighborhood rule by which, for each site, the
   probability distribution over the possibilities is determined by, and
-  varies with, the nearest-neighbor conditions.
+  varies with, the neighborhood conditions.
 - Record names the fixed locking of one admissible local possibility,
   one-record-per-site uniqueness, permanence, content-determined readout, and
   the unreadability of a site with no record.
@@ -227,7 +227,7 @@ used the removed structure through fresh review and audit.
 This memo exposes the remaining minimal ontology needed by the blocked audit
 lanes: records are not arbitrary mosaics. The admissibility rule determines the
 probability distribution over the possibilities at each site from the
-nearest-neighbor conditions, and that distribution varies with those
+neighborhood conditions, and that distribution varies with those
 conditions, before a record can lock one available local possibility. The
 distribution's form and values, dynamics, readout contexts, and physical
 observable bridges remain downstream.

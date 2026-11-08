@@ -4,8 +4,7 @@ Ethan and Levent,
 
 Your (J7) says that “the arguments of (J1)--(J4) apply verbatim” to
 \(G_1^J\), \((QG_1^JQ^*)^{-1}\), and \(H_1^J\)
-([CA-I 13944–13955](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L13944-L13955)). Your (J8) builds their
-expansions on \(q_0\) ([CA-I 13957–13977](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L13957-L13977)).
+([CA-I 13944–13955](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L13944-L13955)). Your (J8) expands these operators into concatenated walks of Balaban's local propagators, joined by the current insertions ([CA-I 13957–13977](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L13957-L13977)). It takes the walks of \(q_0\) from your `4.5:rem-covariance-inverse-walks`, which is printed without proof, and builds the coarse inverses by concatenation from them.
 This note writes that port out on the PI class of issue #13,
 with the common constants of issue #14. It supplies termwise
 first-order bounds and coarse-kernel bounds for those three operators.
@@ -15,9 +14,9 @@ The primitive bounds are \(Ce^{16\kappa_1}\). Your composite lift has
 bound \(Ce^{32\kappa_1}\). The current ceiling is fixed before
 \(\kappa_1\). The smooth identity decomposition for \(\Pi\) is part
 of the assignment, specified below. No Laplacian bound for \(G_1^J\)
-or \(G_\pi^J\) is supplied. No use in the existence target needs one.
+or \(G_\pi^J\) is supplied. We found no use in your proof of Theorem 0 that needs one, but we did not check the uses one by one.
 The note does not assign the general layer map or switched current,
-and does not check every use in the existence proof.
+and does not check the uses in your proof of Theorem 0 one by one.
 
 All account and outline labels and line numbers refer to `31a47c543775`.
 CA-I and CA-III mean your first and third complete-account files.
@@ -25,7 +24,7 @@ The outline is your `YM4_sketch_500.tex` at that commit.
 Balaban's papers are cited through your account and the linked notes;
 his original pages were not read for this note.
 
-Codex wrote the proof and this note. Claude (Opus 5.5) checked the proof line by line, and its repairs are applied.
+Codex (gpt-6-astra) wrote the proof and this note. Claude (Opus 5.5) checked the proof and this note line by line, and its repairs are applied.
 This is research text, not an audit, and grants no status.
 Every argument below is written; no computation discharges a step.
 
@@ -178,10 +177,9 @@ prove these forms on the stated class.
    endpoint margins and equality on common footprints.
    It retains the local-gauge and boundary conditions of §1.
    It supplies your `4.5:rem-covariance-inverse-walks` on this class.
-   Your CA-I 13624–13627 and 13974–13977 cite the inverse-walk
-   assertion after Balaban's CMP 99b Theorem 3.9 as printed without proof.
+   Your CA-I 13624–13627 and 13974–13977 cite it as printed without proof. Your Remark, CA-I 13164–13171, places it in CMP 99b §3, in the sentence before (3.132), and quotes that sentence.
 2. **GW's absolute word estimates.** Use the [posted proof](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/9a3ad2072/.claude/science/physics-loops/ym4d-hard-route-20261030/library/out-gw.md),
-   (P5), (P7), (P11)–(P15), §§5–7, and its constant-order table.
+   (P4), (P5), (P7), (P11)–(P15), §§4–7, and its constant-order table.
    These include ordinary and differentiated source spaces,
    reversed words, scalar divergence bounds, vector Hölder-source
    bounds, the \(P\) readouts, and physical averaging rows.
@@ -376,8 +374,7 @@ in (8)--(9). All reads from that branch remain attached to the row \(c\).
 
 Let \(V_c(A,B)\) be the polarized quadratic coefficient
 \(C^{(2)}(\ell A)(c)\). Its two fine legs lie in the complete
-double-block carrier of \(c\). The one-leg density estimate of GW §7 uses the supplied-frame
-averaging input, following Balaban, CMP 98 Proposition 5, (156)–(157).
+double-block carrier of \(c\). The one-leg density estimate of GW §7 uses input 4 of §2, the analytic form of Balaban's CMP 98 Proposition 5.
 With the other normalized leg bounded, it gives
 
 \[
@@ -697,7 +694,7 @@ assert a Laplacian member for the corrected inverse.
 ## 5. The coarse inverse, with both physical scale factors
 
 This is your (J3) compression argument, CA-I 13899–13911,
-for the corrected inverse. Balaban gives its form in CMP 99b (3.132).
+for the corrected inverse. Your (J3) calls it the analogue of Balaban's CMP 99b (3.132). Balaban states (3.132) for \((QGQ^*)^{-1}\) and his own-current \((QG_1Q^*)^{-1}\) without proof; your CA-I 13164–13171 quotes the sentence.
 
 The following normalization avoids accumulating scale ratios.
 For a coarse operator with density \(q(c,c')\), define
@@ -1125,10 +1122,7 @@ common constants and assignment stated above.
 | [15322–15324](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L15322-L15324) | Primitive bounds \(Ce^{16\kappa_1}\); composite lift bound \(Ce^{32\kappa_1}\), allowed by \(c_{\mathbb K}\ge32\). The integer in [14512](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L14512) is independent of all parameters. |
 | [15333–15337](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L15333-L15337) | Component separation and equality at one for these primitives and their lift (§7.3). |
 
-No Laplacian (graph) bound for \(G_1^J\) or \(G_\pi^J\) is proved or
-used. No use in the existence target needs such a bound. Your outline
-10307 and 11714–11715 expressly exclude this member, following
-Balaban, CMP 99b Theorem 3.12.
+No Laplacian (graph) bound for \(G_1^J\) or \(G_\pi^J\) is proved or used. This note also does not prove the graph norm that your account asks of the general nonlinear layer, for example \(\|\mathbb H_1-\mathbb H_2\|^\Delta_p\) at [CA-I 112595](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L112595). We found no use in your proof of Theorem 0 that needs a Laplacian bound for \(G_1^J\) or \(G_\pi^J\); the uses were not checked one by one. Your outline 10307 and 11714–11715 expressly exclude this member, following Balaban, CMP 99b Theorem 3.12.
 
 The general layer map and switched current are not assigned here.
 In particular, this proof does not define their localized diagonal
@@ -1136,7 +1130,7 @@ terms \(P_1(s),m_H(s)\). No representation, constraint or inverse
 identity is carried through switching. Primitive and lift separation
 does not imply separation of the full chart current.
 
-There is no full check of the uses in the existence proof.
+The individual uses in your proof of Theorem 0 were not checked one by one.
 This note does not admit arbitrary account domains, prove physical
 positivity at independent current, supply a precision or root family,
 or prove termwise lattice covariance. Equality at one does not identify

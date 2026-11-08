@@ -547,3 +547,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: errata 1 checked (row 409): 35 entries (15 A, 20 B); 9 class C held out of the errata; 4 uncertain held for errata 2; awaiting owner OK.
 - 2026-11-08, rule 0f, lead: PDA outward note posted as issue #17 on owner OK; engagement check before posting (owner rule 2026-11-08) found no activity on #10-#16.
 - 2026-11-08, rule 0f, lead: errata 1 posted as issue #18 (34 entries: 15 A, 19 B), after Claude check and gpt-6.1-sol second reading; 5 held for errata 2; 9 class C held out.
+- 2026-11-08, rule 0f, lead: GW1 registered (owner gw1): current-corrected walk bounds completing (K10) on the PI class; prior digest row 463 first.

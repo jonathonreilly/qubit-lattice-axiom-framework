@@ -8,6 +8,8 @@ target_claim_type: bounded_theorem
 trace_class: upstream_support
 reachability_to_target: supports
 delivery_mode: milestone
+draft_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10142
+science_commit: 2fed163ac02350f31d8af53f38ee5feaf15b7e09
 active_route: completed exact five-state link algebra on the seven-link patch
 independent_check: sparse operator action and pre-exposure Haar derivation agree; focused source check complete with clarifications; same model family, not an audit
 axiom_compatibility: open; model specification is not an axiom derivation

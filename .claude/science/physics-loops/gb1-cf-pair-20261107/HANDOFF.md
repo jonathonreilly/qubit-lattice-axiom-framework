@@ -25,6 +25,8 @@ identification remain open. There is no vacuum or mass-gap result.
 ## Sources and recovery
 
 Working branch: `physics-loop/gb1-cf-pair-20261107`.
+Draft milestone: [PR #10142](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10142).
+Scientific source commit: `2fed163ac02350f31d8af53f38ee5feaf15b7e09`.
 Base and refreshed main: `f5af11cd0102cfd0b51aef0911f600130bf5beb1`.
 Instruction branch read: `56c5c0ab64f532c5784e895b2f9aa6894fa334e0`.
 Assembly context: PR #10139 at

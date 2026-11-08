@@ -621,8 +621,9 @@ Work on PR #10132 of jonathonreilly/qubit-lattice-axiom-framework, branch claude
 | 550 | `live-fgi-fix` | launched 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2j): repair the counterexample to separation 20a under both core forms, recheck sections 3-4, cite I 118402 and the later no-joining assumptions. Done: counterexample repaired to separation 20a under both core forms. Recheck row 555. |
 | 551 | `leaf-tbflat` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2): TB-FLAT, with out-mu.md and fp1.md as prior work; output library/leaf-tbflat.md. |
 | 552 | `leaf-rguard` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2b): R-GUARD, literal diagnostic only; output library/leaf-rguard.md. |
-| 553 | `leaf-sc-check` | running 2026-11-08 (laptop Claude subagent, Opus 5.5); output gates/leaf-sc-check.md. |
+| 553 | `leaf-sc-check` | done 2026-11-08 (laptop Claude subagent, Opus 5.5): gates/leaf-sc-check.md, ADVANCE. Both kill tests pass (seam BCH redone by hand); ported estimates, native site substitution, (9)-(16) confirmed; scope restricted. Four minor repairs (row 558). |
 | 554 | `live-nj-check` | running 2026-11-08 (laptop Claude subagent, Opus 5.5); output gates/live-nj-check.md. |
 | 555 | `live-fgi-recheck` | running 2026-11-08 (laptop Claude subagent, Opus 5.5); output gates/live-fgi-recheck.md. |
 | 556 | `leaf-hy-check` | running 2026-11-08 (laptop Claude subagent, Opus 5.5); output gates/leaf-hy-check.md. |
 | 557 | `tree2` | queued 2026-11-08 on Mini Codex (gpt-6-astra max): second tree sketch for SJ-PB, HC-MARGIN-0, J-ENTRY, HMA-BRANCH, D4-OLD-TOWER-ENTRY; output library/hstep-tree2.md. |
+| 558 | `leaf-sc-fix` | queued 2026-11-08 (laptop Codex gpt-6-astra high): apply the four minor repairs. |

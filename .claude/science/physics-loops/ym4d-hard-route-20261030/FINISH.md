@@ -631,3 +631,4 @@ Work on PR #10132 of jonathonreilly/qubit-lattice-axiom-framework, branch claude
 | 560 | `live-nj-fix` | queued 2026-11-08 (laptop Codex gpt-6-astra high): add the I 78969 core paragraph. |
 | 561 | `hy-fix` | queued 2026-11-08 (laptop Codex gpt-6-astra high): HY check repairs and consumer list. |
 | 562 | `out-live2` | queued 2026-11-08 (laptop Codex gpt-6-astra high, after rows 559-561): combined outward note: counterexample on the account's class, full proof under the outlines' rule, suggested repair. Then one faithfulness check and the owner OK. |
+| 563 | `bz-own` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2d): close BZ-CUT with our own buffered cut, without CMP 122 (owner asked whether we can make it ourselves); output library/bz-own.md. Open-access route also named to the owner: Dimock arXiv 1212.5562, 1304.0705, 1502.02946, 2009.01156 (download needs owner OK). |

@@ -1,9 +1,12 @@
 # FCO-slot: ownership of stored coordinates and record slots
 
+Checked line by line by Claude (Opus 5.5), gates/fco-slot-check.md: FIX, repairs applied.
+
 Codex, 2026-11-08. Source checkout `f70c307da5fd5d6eb0c0baf5db784cd340396a53`.
 FINISH row 519. Research text, not an audit. This text grants no status.
 No computation, enumeration or numerical bound supplies a proof step.
 **Result: stopping condition (a).** FCO-slot holds for the specified revised rules.
+Here “the specified revised rules” use N's two-range nest (Y 63773–63825), with SA 17421's \(X\setminus Z''_l\) labels.
 The proof gives UO2-geo at slot scope, the code count and the original reserve comparison.
 FCO-read remains a named input for history products.
 
@@ -68,6 +71,12 @@ The preparation is the explicit two-range preparation in Y 63773–63825.
 The class uses ancestral quarantine with its lower endpoint included.
 A match to a different operation remains GEOH-O1, owned elsewhere.
 We do not replace those rules by CA's weaker quarantine convention.
+
+The slot proof uses only \(D_h=G_h\), nesting (N1), and \(D_i\subset O_i\) (N3) from the nest.
+The thin rule (N) in `ti-2.md:43–50` supplies all three: \(a=h\), \(D_a=C=G_h\), and \(D_i\subset A_i=H_i^{[8]}=O_i\).
+Sections 3–4 therefore carry over unchanged, with the same constants.
+Y's row chart and prefix list (Y 75842–75960) for the thin first member remain an input owned by ti-2 / GEOH-O1.
+In particular, its first-stage “five of the eight layers” clause (Y 75863–75865) is not supplied by this slot transfer.
 
 A **slot** is an actual stored coordinate, a visible determining or action address, or an address in the discrete record.
 It retains its native level, position, type and creation identity.
@@ -167,7 +176,7 @@ Deleting its pivots only reduces the stock.
 
 For the newly solved rows, use the three-way split in Y 75845–75904.
 An inner row has its full double block in \(D_{j+1}\).
-A collar row has its double block in the old hole, inside the same component.
+A collar row has its double block outside the old \(\Omega_{j+1}\), inside the same component.
 Its endpoint is in \(O_{j+1}\); its fixed block reach remains within one owner-cell collar.
 An ordinary row retains its old reconstruction.
 Its pivot never becomes a second collar coordinate.
@@ -332,7 +341,7 @@ H-LF and the coarea port in Y 75915–75960 give exactly this convention.
 Let \(\tau\) bound the fixed types at a site for one ordinary or remaking stage.
 Include orientations, colour coordinates, gauge roles, shell transformations and seam roles in \(\tau\).
 This is the finite template used in Y 74655–74666 and `uo2-geo.md`, section 4.
-There are two native levels, at most two origins (ordinary and remade), and five geometry uses.
+There are two native levels, at most two origins (ordinary and remade), and five geometry uses (Y 73147–73158).
 Consequently the deliberately generous choice
 \[
  \mu=20\tau
@@ -341,6 +350,7 @@ Consequently the deliberately generous choice
 suffices before the one-step offsets.
 After projection, the per-owner site bound is \(\mu L^4\).
 The fixed record template contributes at most \(J\mu L^4\) discrete slots there.
+Here \(J\) is the fixed template constant of `uo2-geo.md:441–442`, independent of analytic factor counts.
 Stage headers are treated separately in section 7.
 A repeated analytic factor is not removed by this argument.
 It remains in the actual density and is outside the asserted multiplicity.

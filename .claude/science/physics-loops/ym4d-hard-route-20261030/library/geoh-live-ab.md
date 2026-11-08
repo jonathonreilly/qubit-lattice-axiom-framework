@@ -1,9 +1,11 @@
 # Live strips through an interrupted preparation
 
+Checked line by line by Claude (Opus 5.5), gates/geoh-live-ab-check.md: ADVANCE; citation repairs applied.
+
 Codex, 2026-11-08. Source revision `34be8fadc9f113211d6f5968d756e57241515b62`.
 FINISH row 498. Research text, not an audit. This text grants no status.
 No numerical calculation or machine enumeration supplies a proof step.
-Written and author-checked by Codex. Not independently checked.
+Written and author-checked by Codex; the subsequent line-by-line check is recorded above.
 
 ## 1. Sources and the exact target
 
@@ -147,7 +149,8 @@ No first-step version of (4) is needed for a live strip.
 For an attempt on \(C\) at step \(k\), put \(h=k-N_k\) and \(D_i=Z''_i\cap C\).
 The lower preparation uses five layers of the boxing grid of level \(i\).
 Its layer side is \(a_i\), for \(h<i\le k_0\).
-This is the convention stated in I 63703–63716 and made explicit in N 63773–63812.
+The five-layer rule is I 53783; the layer side is specified at I 63703–63716.
+N 63773–63812 makes the lower construction explicit for its quiet-box special case.
 The first member has \(h+1\le k_0\), since \(N_k>N_0\).
 The upper members use their prescribed native grids.
 They are nested and obey
@@ -158,13 +161,13 @@ They are nested and obey
  \tag{5}
 \]
 Distances here are inside the operation box, with its exterior margin retained.
-The upper convention is I 53776–53804.
-N 63798–63825 supplies its written quiet-box construction.
+The upper gap is the stated one-layer rule at I 53778–53781.
+N 63798–63825 gives quiet-box formulas for the special case without joining; those formulas are not used for the broader class here.
 We use that existing preparation; we do not replace its grid or selector.
 In the lower range, its gap follows directly from (4) and (6), applied at consecutive levels.
 The next hull contains \(Z_i\cap C\), which contains \(D_i\).
 Its three added layers give distance at least \(3a_{i+1}\ge u_{i+1}\).
-The upper range uses the one-layer rule quoted at I 53779–53782.
+The upper range uses the one-layer rule quoted at I 53778–53781.
 This proof does not use the statement at I 64468–64472 that live-region geometry already applies.
 
 **Lower-member calculation.** On the actual label at this attempt,
@@ -498,7 +501,7 @@ Only this output file was written by this lane.
 | Birth size and simultaneous-birth separation | Ported from the fixed-grid argument | I 20441–20468; 63547–63562 |
 | Radius comparison and scaled size for \(i\ge m\) | Ported from a proved argument | I 63643–63649; equation (3) here |
 | Eight-layer T construction | Input: specified transition rule | I 50196–50229, 50342–50368; SA 17317–17332 |
-| Lower preparation grid and upper prepared gap | Input: specified preparation; quiet-box construction ported | I 53776–53804, 63703–63716; N 63773–63825 |
+| Lower preparation grid and upper prepared gap | Input: specified preparation; lower gap proved by (6), upper gap supplied by the one-layer rule | I 53783 (five layers), 63703–63716 (layer side), 53778–53781 (upper gap); N 63773–63825 is the quiet-box special case only |
 | Whole-component exits and flat second-class output | Input: specified transition rule | I 64420–64442, 64479–64497; SA 17415–17440 |
 | Lower-member buffer at the open endpoint | Proved here from those rules | Equations (6)–(8); tracing method from N 63718–63771 |
 | Worst interrupted cycle, including \(n^+=n+1\) | Proved here | Section 4; exit rule I 64420–64442 |

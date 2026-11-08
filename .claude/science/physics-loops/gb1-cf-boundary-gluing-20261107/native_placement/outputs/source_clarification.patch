@@ -1,0 +1,15 @@
+--- a/docs/SU2_HOMOGENEOUS_NATIVE_QUBIT_CODE_BOUNDED_THEOREM_NOTE_2026-11-08.md
++++ b/docs/SU2_HOMOGENEOUS_NATIVE_QUBIT_CODE_BOUNDED_THEOREM_NOTE_2026-11-08.md
+@@ -211,2 +211,4 @@
+-between compatible observables, including the previously constructed gluing
+-maps when used within a fixed phase. The Hamiltonian does not mix phases.
++between compatible observables, including regional Gauss gluing on this fixed
++coarse graph. This placement does not allocate artificial subdivision vertices
++or additional cut-link registers. Transporting a subdivision map requires
++separately supplied source and target encodings. The Hamiltonian does not mix phases.
+--- a/docs/SU2_HOMOGENEOUS_NATIVE_QUBIT_CODE_SCOPE_CHECK_2026-11-08.md
++++ b/docs/SU2_HOMOGENEOUS_NATIVE_QUBIT_CODE_SCOPE_CHECK_2026-11-08.md
+@@ -1,0 +2,3 @@
++
++**Type:** meta
++**Status:** scope record; no scientific grade.

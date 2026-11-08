@@ -1,0 +1,46 @@
+{
+  "syntax": "py_compile passed",
+  "new_note_links": "all relative targets exist",
+  "control_characters": "none",
+  "runner_sha256": "01b492f31004ede51696fb73f0f391fbba272ba186f8e93757586c29f7f03819",
+  "cache_identity": "fresh",
+  "cache_evidence_issue": null,
+  "mutation_exit_codes": {
+    "reverse-sign": 1,
+    "include-quiescent": 1,
+    "preferred-phase": 1
+  },
+  "prior_science_and_axioms": "four selected sources unchanged from research parent",
+  "source_review": "complete mathematical/source review and exact clarification confirmation; sole gluing-scope finding resolved",
+  "diff_check": "complete staged diff passed git diff --cached --check",
+  "full_pipeline": "not run; formal landing obligation",
+  "audit": "not run; no verdict supplied",
+  "reviewed_source_recovery": "inverse clarification patch exactly recovers both completely reviewed source hashes",
+  "reviewed_theorem_sha256": "0d457372fe995529ad1fc13e3c9d6f696fe27b9a5ee3b1ef78852214a928604c",
+  "independence": "same-family separate-context proof followed by source comparison; no formal landing or audit verdict",
+  "vocabulary": "final packet: zero violations",
+  "cache_status": {
+    "scripts/gb1_cf_native_placement_exact_2026_11_08.py": {
+      "identity": "fresh",
+      "issue": null
+    },
+    "scripts/gb1_cf_boundary_gluing_exact_2026_11_07.py": {
+      "identity": "fresh",
+      "issue": null
+    },
+    "scripts/gb1_cf_boundary_fusion_check_2026_11_07.py": {
+      "identity": "fresh",
+      "issue": null
+    },
+    "scripts/gb1_cf_two_plaquette_s1_2026_11_07.py": {
+      "identity": "fresh",
+      "issue": null
+    },
+    "scripts/gb1_cf_two_plaquette_haar_check_2026_11_07.py": {
+      "identity": "fresh",
+      "issue": null
+    }
+  },
+  "source_manifests": "all 7 final/frozen source and review hashes match",
+  "staged_source_identity": "all reviewed/frozen source manifest hashes match staged bytes"
+}

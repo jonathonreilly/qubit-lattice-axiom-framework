@@ -2,7 +2,7 @@
 
 Ethan and Levent,
 
-Following issues #13 and #14, [this note](@LINK@) writes out your (J7) reduction for \(G_1^J\), \((QG_1^JQ^*)^{-1}\), and \(H_1^J\). Your (J7), CA-I 13944–13955, says the arguments of (J1)–(J4) apply verbatim; (J8), 13957–13977, expands them into concatenated walks, and takes the walks of \(q_0\) from a remark printed without proof. All account labels and lines refer to `31a47c543775`.
+Following issues #13 and #14, [this note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/7198d9fa2/.claude/science/physics-loops/ym4d-hard-route-20261030/library/out-gw1.md) writes out your (J7) reduction for \(G_1^J\), \((QG_1^JQ^*)^{-1}\), and \(H_1^J\). Your (J7), CA-I 13944–13955, says the arguments of (J1)–(J4) apply verbatim; (J8), 13957–13977, expands them into concatenated walks, and takes the walks of \(q_0\) from a remark printed without proof. All account labels and lines refer to `31a47c543775`.
 
 **What it supplies.** Termwise first-order and differentiated-source bounds with a fixed Hölder gap; coarse density and physical transpose bounds; analytic words, common-footprint restrictions, and zero-switch component separation for these operators. The proof follows your reduction and Balaban's CMP 99b (3.130)–(3.138).
 

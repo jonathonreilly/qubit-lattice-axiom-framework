@@ -331,6 +331,8 @@ Measured on the pushes so far: a resumed push carries about 300,000 to 580,000 t
 
 ## Rules
 
+- **Render before and after posting (2026-11-08).** Outward notes and issue texts use GitHub math only: inline $`...`$, display ```math fences outside lists, and a one-line $`...`$ display (\tag{n} as \qquad(n)) inside lists; inside table rows write | as \vert. Before an issue is posted, its text and the linked note go through GitHub's markdown API (gh api -X POST markdown, mode gfm; lead tools ~/ym4d-lead/tools/render.sh, conv3.py): every formula must be a math-renderer element, none raw, none in a code block. After posting, fetch the live body_html and check the same. Why: posts #19-#21 and eight linked notes showed raw LaTeX because every check read the source and none looked at the rendered page.
+
 - **Repo first (owner 2026-11-08; SCIENCE_WORKFLOW rule 9).** Before a lane derives anything, search this repository: origin/main and the open YM4D PR branches (#10114, #10133, #10134, #10141, #10144), not only this folder. The lead runs the search before queuing and puts the hits in the item as "Repo prior work"; the lane starts its output with a "Repo search" section. Lane headers carry this rule (laptop header.laptop.txt, Mini header.txt). Example of the cost of skipping it: r2-heal re-derived what loc-3/loc-4 Theorem W already proves (row 529).
 - **Landing (owner 2026-11-07, 2026-11-08).** This folder is the working branch (draft #10132); nothing lands from it directly. Posted notes and frozen parts land as small curated snapshot PRs under research/ym4d/, built fresh off main, byte-identical to the commits the issues link (#10141, #10144).
 

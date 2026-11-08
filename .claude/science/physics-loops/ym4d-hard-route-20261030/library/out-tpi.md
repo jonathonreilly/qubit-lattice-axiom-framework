@@ -9,26 +9,23 @@ retained background covariance elsewhere in that file.
 This note supplies that proof using your actual plaquette average
 and your strong inverse.
 
-The added step compares the actual blocked curvature law with the
-unit-coupling coarse Maxwell law. It does not identify those laws.
-The comparison gives a uniformly bounded coarse potential variance.
-Your strong inverse then gives the required fourth power of the mesh.
+Your CF12 at [N 5631–5634] already compares the classical blocked
+precision with the coarse Maxwell form: \(E_k(a)\ge\|\mathrm da\|^2\).
+We read this as a covariance bound for the actual blocked potential law.
+We then bound its diagonal on every coarse torus. Your curvature
+minimizer lifts this bound and gives the fourth power of the mesh.
 
 References marked **N** mean your [YM4_1400.tex][source] at
 2bc0658f91d2d03ba44e20bf695067e0a56a2ed9.
 SA and CA-II mean your older outline and complete account at 31a47c543775.
-Credit Ethan Sussman and Levent Alpoge, with Claude and Codex as authors
-of the source text, for the results ported below.
-Credit Tadeusz Balaban for the free-field minimizer method.
+The ported results below are yours.
+The free-field minimizer method is due to Tadeusz Balaban.
 Your [N 100996–101032][lift] implements that method for centered blocks.
 SA 26141 cites CMP **95** (1984), (1.103), Proposition 1.2 and (1.110),
 and CMP **96** (1984). Those papers were not available.
 We used your quotations and the existing library/lit-balaban.md record.
 
 Codex (gpt-6-astra) wrote the proof and this note. Claude (Opus 5.5) checked the proof line by line, and its repairs are applied.
-The check is recorded in gates/tpi-check.md. Its four repairs appear in
-library/tpi.md at checkout b1e0fea66d591b0810150925a1f66d755f2e0551.
-That check concerns the underlying proof, not a separate check of this outward text.
 This is a proposed proof for your review. It is research text, not an audit, and grants no status.
 No computation discharges a proof step.
 
@@ -65,16 +62,6 @@ and [N 100440–100456][background] give
 where \(F\) is standard Gaussian on \(E\).
 Here \(F_j\) is your retained background, not the blocked coarse curvature.
 
-The dictionary with library/tpi.md is:
-
-| Your notation, used here | TPI notation |
-|---|---|
-| \(G_j=C^{\mathrm{bg}}_{K,K-j}=P_{\mathsf W_j}\) | \(R_j\) |
-| \(\mathcal C_{(j)}=G_{j-1}-G_j\) | \(G_j\), the slice covariance |
-| \(a_K\) | \(a\) |
-| \(a_{K-j}\) | \(a_j=L^ja\) |
-| \(\eta_j=L^{-j}=a_K/a_{K-j}\) | \(a/a_j\) |
-
 **Claim.** A constant \(C_R\), independent of \(K,j,m,p,q\), satisfies
 \[
  0\le G_j(p,p)\le C_RL^{-4j},\qquad
@@ -88,7 +75,7 @@ We use its written proof and its curvature identification,
 [N 101007–101029][lift]. We also use your curvature contraction,
 [N 5568–5605][contraction]. These are your results, not new claims here.
 
-For the adjoining free tower we retain the **stipulated slice estimate**
+For the adjoining free tower we quote your slice estimate
 at [N 4337][slice] and [N 100994][slice2]:
 \[
  |\mathcal C_{(j)}(p,q)|
@@ -246,6 +233,7 @@ It differs from the retained fine field \(F_j\).
 Every star in this section uses counting coordinates.
 
 Your contraction proof, [N 5568–5605][contraction], applies to this map.
+Its consequence CF12, [N 5631–5634], is the precision form of (10) below.
 Its nonnegative row weights sum to \(n^2\).
 Its column weights sum to \(n^{-2}\).
 Weighted Cauchy–Schwarz gives
@@ -425,11 +413,12 @@ It does not change your telescoping argument or choice of segment.
 
 ## 6. Scope
 
-The new comparison is (9)–(15).
+The inequality (9)–(10) is the covariance form of your CF12.
+The new steps are the diagonal bound (11)–(13) and the pathwise lift (14)–(15).
 The averaging map, its contraction, the strong inverse, the curvature
 minimizer and the Gaussian projection algebra are yours.
 Balaban supplies the underlying free-field method.
-The slice estimate (4) remains stipulated and is not used to prove (15).
+We quote the slice estimate (4). We do not reprove it, and the proof of (15) does not use it.
 
 This note does not prove spatial decay of \(G_j\).
 It does not reprove the full-\(P\) continuum comparison, the
@@ -444,16 +433,6 @@ Setting a terminal *field* to zero never sets its unconditioned
 *covariance* to zero.
 
 ## 7. Search record and prior contribution
-
-The task began at checkout b1e0fea66.
-There was no library/prior/out-tpi.md.
-We read library/prior/tpi.md, the repaired library/tpi.md,
-and gates/tpi-check.md.
-The TP1-FREE registry row assigns this outward note to FINISH row 486.
-No separate ownership conflict was found.
-The old outline was approached through library/sa-index/README.md,
-neighboring rows in chunks 07, 08 and 24, and obligations.md.
-The CA-II index row for 8.1:lem-kernel-bounds was also consulted.
 
 All searches below ran over the whole pinned N file.
 They used the command rg -n -i -F 'PATTERN' YM4_1400.tex.
@@ -492,8 +471,9 @@ The candidate passages were read in bounded source ranges:
 
 | Passage | What it supplies |
 |---|---|
-| 4325–4340; 100440–100456 | Defines \(G_j\) through projections and states the slice estimate. Projection algebra alone gives no \(L^{-4j}\) diagonal bound. |
+| 4325–4340; 100440–100456 | Defines \(P_{\mathsf W_j}\) through projections and states the slice estimate. Projection algebra alone gives no \(L^{-4j}\) diagonal bound. |
 | 5568–5605 | Proves the actual curvature contraction used in (9). |
+| 5605–5634; 6522–6528 | CF11–CF12: \(E_k(a)\ge\|\mathrm da\|^2\). The precision form of (10). Used there for the fluctuation gap, not for the background covariance. |
 | 6208–6240 | FX7 is an auxiliary Feynman potential covariance in Fourier coordinates, not the retained bare curvature covariance. |
 | 6629–6639 | A first-step curved Hessian bound; explicitly not an iterated result. |
 | 25865–26025; 41659–42061; 100989–101032 | Proves the homogeneous strong inverse and curvature-lift bound. These are ported suppliers, not a proof there of (9)–(15). |
@@ -524,10 +504,6 @@ a proof of (3) elsewhere in N under another name.
 They located its assertion, later uses, and the ported results needed here.
 This is a finding about the pinned text.
 It is not a claim about later revisions or all published work.
-
-Only library/out-tpi.md and library/out-tpi-issue.md were written.
-No issue was posted. No live-repository or engagement check was made;
-this is the requested pinned-source draft.
 
 [source]: https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/2bc0658f91d2d03ba44e20bf695067e0a56a2ed9/YM4_1400.tex
 [target]: https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/2bc0658f91d2d03ba44e20bf695067e0a56a2ed9/YM4_1400.tex#L102278-L102281

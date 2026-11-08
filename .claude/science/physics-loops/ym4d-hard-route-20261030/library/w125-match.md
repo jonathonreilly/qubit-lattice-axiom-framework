@@ -1,5 +1,7 @@
 # W1, W2 and W5: certificates and history matching
 
+Checked line by line by Claude (Opus 5.5), gates/w125-match-check.md: FIX, repairs applied.
+
 Codex, 2026-11-08. Checkout `362d9dd3694d54dbcaf51d8eeb7e778a9413fc47`.
 Research text. Not an audit. Grants no status. No computation proves a step.
 
@@ -139,6 +141,9 @@ There is no linearization of the failed configuration in (5).
 For an ordinary test cube \(\square\), put \(D=\square^{\sim4}\).
 Let \(S_t\) contain all level-\(t\) plaquettes internal to \(D\).
 Use the specified separated \(M_1\)-tower of \(D\).
+The test partitions are aligned, with \(R_t\le R_k\le LR_t\), \(k=t-1\), all powers of \(L\)
+(Y 71849–71851). IN1's \(R_j\) is Y's \(\check R_j\).
+Its definition and IN1 (1) give these radius bounds for a sufficiently high \(X_0\).
 Its third enlargement lies in its top member.
 The torus has at least \(6\rho\) top sites in each direction.
 The regularity radius obeys
@@ -162,7 +167,7 @@ Thus its total failure gives
  E_{S_t}(U)\ge c_1\epsilon_t^2.                                \tag{7}
 \]
 
-Equivalently, the same real theorem contraposed gives a top plaquette
+Before (5) is applied, the same real theorem contraposed gives a top plaquette
 with \(f_{V_t}\ge c_{\rm lin}\epsilon_t\).
 This is IN1's H-C-PLAQUETTE witness.
 Its bare carrier is (4), not just a spanning sheet from (1).
@@ -409,12 +414,14 @@ The inset requirement concerns the whole read, including its blocks.
 An assertion only about the test cube's center would not suffice.
 
 Apply the same separated-tower criterion as in §2 on this interior carrier.
-Choose \(\zeta>0\) with \(B_3\zeta<1\).
+Require at least \(6\rho\) top sites in each torus direction, as in §2
+(Y 76890).
+Choose \(\zeta>0\) with \(\tfrac32B_3\zeta<1\).
 Increase the floor so that
 
 \[
- \zeta\epsilon_m\le a_1,\qquad
- B_3\zeta\epsilon_m\le\varepsilon_{\rm v}\le a_0,\qquad
+ \varepsilon_1=\tfrac32\zeta\epsilon_m\le a_1,\qquad
+ B_3\varepsilon_1\le\varepsilon_{\rm v}\le a_0,\qquad
  \zeta^2\epsilon_m^2\le2e_* .                                 \tag{19}
 \]
 
@@ -460,6 +467,8 @@ A containing operation may charge it only after supplying the whole paying carri
 This convention does not prove a fresh witness for every other kind of root failure.
 
 Let the outer cut count this island as \(b\le N_{\rm cut}\) artificial creation cells.
+Set IN1's \(c_{\rm w}=c_{\rm cut}\), as its order of constants permits;
+IN1's cut-leaf level \(t\) is this island's level \(m\).
 Take \(c_G\le c_{\rm cut}/(2N_{\rm cut})\).
 Increase \(X_0\) until \(P_m\ge1/c_{\rm cut}\).
 Then IN1's required allocation holds:
@@ -486,6 +495,7 @@ The retained coefficient of a birth at \(t\) uses indices no later than
 \(t+C_RR_t\). Its profile is a convex combination of those weights.
 For every index \(s\) in that profile, IN1 (1) gives
 \(\theta_s\ge\theta_t-C_6R_t-c_5\).
+Here \(C_6=\overline B C_R\).
 IN1 (3) gives \(x_s\ge3\theta_s/4\).
 Consequently
 
@@ -499,8 +509,8 @@ The local freeze rule is essential.
 An arbitrarily later running coefficient would not have this lower bound.
 
 At one birth level, each selected witness lies within two cells of its owning cell.
-The source's ordinary allocation has multiplicity at most \(D=5^4\).
-Divide the energy by \(D\), and retain a fixed positive integration fraction.
+The source's ordinary allocation has multiplicity at most \(D_{\rm ov}=5^4\).
+Divide the energy by \(D_{\rm ov}\), and retain a fixed positive integration fraction.
 Distinct untouched pieces have disjoint paying shares.
 A later mark spends Wilson energy outside its old floor.
 The protected birth cones lie inside that floor.

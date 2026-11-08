@@ -1,27 +1,26 @@
 ## Repo search
 
-The lead's search of 2026-11-08 found no live-strip work on `origin/main` or PRs #10114, #10133 and #10134.
-PR #10141 contains our own copies. I use that search record; I do not claim a second full search.
-Neither `prior/live-fgi.md` nor `prior/repo-search-2026-11-08.md` exists at this checkout.
+The lead's `prior/repo-search-2026-11-08.md` searched main and PRs #10114, #10133, #10134 and #10141.
+Section 6 found no outside-lane proof of the live-strip invariant. PR #10141 contains our own snapshots.
+For this repair I read that record and fetched main for the workflow and PR #10141 for its cited hits.
+In `research/ym4d/library/`, I checked `in1.md:157--159`, `st1-r4.md:1703--1707` and `open-registry.md:224--228`.
+The first retains genealogy as an input. The second concerns integration-slot matching. The third records those separate owners.
+None proves the core-box claim. This reuses the lead's search, without repeating a full search.
 
-I read `geoh-live-ab.md`, `../gates/geoh-live-ab-check.md`, `../gates/out-live-check.md` and `prior/geoh.md` whole.
-I also read the source-search section of `out-live.md`.
-The exact prior result is the persistent strip invariant in `geoh-live-ab.md`, checked by Claude (Opus 5.5).
-It supplies (a)--(e), (h), and only the inequality \(m\le h\) in (g).
-Its check expressly leaves the present four targets open.
-The digest's O-live-geometry rows (c) and (d) identify the box and probe suppliers.
-These are related inputs, not proofs of the present target.
-
-The registry leaves O-live-geometry without another owner. FINISH row 537 assigns this part here.
-The searches of `open-core.md`, `l17c.md` and `port-map.md` found no competing proof of these clauses.
-GEOH-O1 concerns our different selector; it is not the account's class examined here.
-I read the workflow on main at `43a1fcc374711ca50626eca667441d3ca575c7d1` without changing this checkout.
+The prior result in `geoh-live-ab.md`, checked by Claude, supplies (a)--(e), (h), and \(m\le h\) in (g).
+Claude's `../gates/live-fgi-check.md` supplies the present repair to separation \(20a\).
+`prior/live-fgi-fix.md` is absent at the repair pin `18b2f82f0`; the dated repository-search record is present.
+The registry leaves O-live-geometry without another owner. FINISH row 550 assigns this repair here.
+Row 549 owns the affirmative proof under no joining. This note does not take that task.
 
 # Live-region boxes and probes
 
-Codex, 2026-11-08. Checkout `3d14ea923a016dfe85b880a5ca8ea88efbd01e49`.
-FINISH row 537. Research text, not an audit. This text grants no status.
-Written and author-checked by Codex; not yet checked by the other model.
+Repair of Claude's FIX in [live-fgi-check.md](../gates/live-fgi-check.md), FINISH row 550.
+
+Codex, 2026-11-08. Original row 537; repair pinned at `18b2f82f0184e59bb66954489428e6f98ab4dd67`.
+Research text, not an audit. This text grants no status.
+Claude checked the original and the proposed repair; Codex applied it and rechecked sections 3--4 by hand.
+The edited text has not had a further independent check.
 Only this file is written. No computation supplies a proof step.
 
 Outcome **(b)**: an allowed joining makes the specified core \(\mathsf C_C\) disconnected.
@@ -47,6 +46,7 @@ Those arguments are prior work, not new proofs here.
 The distinction between the two classes is decisive.
 I 45992--46000 requires each previous region to be small and excludes creations and marks in its stated window.
 It does not exclude joining.
+I 118402 expressly says that condition (ii) bounds each previous component, not their number, and does not forbid joining.
 SA 17575 and N 63684 expressly add that exclusion.
 They already explain why two small regions can join without a creation.
 The calculation below applies that known distinction to the account's particular core \(\mathsf C_C\).
@@ -85,13 +85,19 @@ This is their written construction. It does not turn a union of predecessors int
  \tag{3}
 \]
 The enlargements in (3) have side \(u_k\), since \(R_{k_0+1}u_{k_0+1}=u_k\).
-I 63868--63892 separately defines
+I 78969 defines the core by removing two layers from \(Z''_{h+1}\); I 93532 repeats this definition.
+With \(E_2\) denoting that removal, write
 \[
  H:=Z'_h\cap C=\widehat{Z_h\cap C},
- \qquad \mathsf C_C=H^{\sim},
+ \qquad
+ \mathsf C_C:=\bigl((\Omega''_{h+1})^{\sim2}\bigr)^c\cap C
+ =E_2(Z''_{h+1})\cap C.
  \tag{4}
 \]
-where this hull and this layer use boxing cells of side \(a_{h+1}\).
+Here \(\Omega''_{h+1}=(Z''_{h+1})^c\), by I 63887.
+The hull and the layers use boxing cells of side \(a_{h+1}\).
+I 63870 gives the other form, \(\mathsf C_C=H^{\sim}\); I 78969 asserts that the two forms agree.
+We compute both forms in section 4, rather than assume their equality under joining.
 The hull is the union of meeting cubes, not a rectangular hull.
 This is I 50046--50054 and 59496--59501.
 The separate boxing map fills each connected small component; see I 50056--50095.
@@ -157,6 +163,8 @@ Take the fixed waiting depth \(N\) with
  \tag{7}
 \]
 These satisfy the geometric scale conditions in I 45827--45858 and 53762--53774.
+Indeed, constant radii obey \(R_i\le LR_j\) and \(R_j\le(L+1)(i-j)^{\beta_0}R_i\) for \(i>j\).
+Also \(L^{-N_0+1}R=1\), \(h>N>N_0\), \(k>N\), and \(R\ge103>38\).
 The argument only needs this permitted constant-radius, constant-depth instance of those conditions.
 Increasing \(p\) allows any further fixed radius floor.
 All sets lie well inside a torus chart; choose its period as a sufficiently large odd multiple of the top grid spacing.
@@ -166,11 +174,11 @@ Put \(a=a_{h+1}\), so \(a_h=a/L\).
 At step \(h\), take two second-class outputs
 \[
  Y_0=[-21a_h/2,21a_h/2]^d,
- \qquad Y_1=6ae_1+Y_0.
+ \qquad Y_1=20ae_1+Y_0.
  \tag{8}
 \]
 They are small boxing-cell boxes. Each side is \(21R\) native level-\(h\) units.
-Their separation exceeds one boxing-cell side.
+Their gap is \((20L-21)a_h>a_h\).
 The whole-component second-class rule gives their flat level-\(h\) labels and marks at \(h\), I 64479--64495.
 Their fixed strips use the birth enlargement of I 63523--63544.
 
@@ -183,10 +191,14 @@ Any box of at most 100 boxing cells per side fits strictly inside that cell, wit
 Choose its grid translation accordingly. Both copies use the same translation pattern.
 The first quiet step produces the centred box of side \(21a_{b+1}\).
 The preceding calculation then gives the boxes (8) after the \(N\) quiet steps.
-The two copies stay separate before \(h+1\), because their centre separation is \(6a_{h+1}\).
+For \(b<t\le h\), their gap is \((20L^{h+1-t}-21)a_t\ge(20L-21)a_t>a_t\).
+At \(b\), even side \(100a_b\) leaves gap at least \((20L^{N+1}-100)a_b>a_b\).
+Thus all these components are boxes with 1--100 cells per side, separated by at least one cell.
+This checks admissible geometry fact (1), I 63547--63551, before the joining.
 A creation at \(b\), the bottom of the birth waiting window, is allowed; the intervening steps have empty creation sets.
-For \(b<t<h\), one has \(t-N<b\), so that creation still prevents eligibility by I 51178--51189.
-At \(h\) it no longer does. The permitted completed second-class outcomes are therefore (8).
+For \(b\le t<h\), one has \(t-b<N\), so that creation prevents eligibility by I 51178--51189.
+At \(h\), \(h-b=N\). Each component is small, its preceding steps create nothing, and no earlier operation left a mark.
+Thus each passes (i), (ii-a), and (ii-b) at \(h\). The whole-component second-class outcome gives (8).
 This checks the geometric birth and waiting rules. It does not infer field support from chosen test labels.
 
 For the step \(h\to h+1\), set every new seed and growth-test set to empty.
@@ -194,35 +206,39 @@ These are the no-creation transitions of I 50196--50229 and 50342--50372.
 Let
 \[
  Q_0=[-a/2,a/2]^d,
- \qquad Q_6=6ae_1+Q_0.
+ \qquad Q_{20}=20ae_1+Q_0.
 \]
 Since \(21a_h<a\), the actual union-of-cubes hull is
 \[
- Z'_h=\widehat{Y_0\cup Y_1}=Q_0\cup Q_6.
+ Z'_h=\widehat{Y_0\cup Y_1}=Q_0\cup Q_{20}.
  \tag{9}
 \]
 There is no boundary ambiguity: both birth boxes lie strictly inside their hull cubes.
 
 Write \(N_r\) for adding \(r\) layers of these boxing cells.
 The step rule gives \(\Omega_{h+1}^c=N_8(Z'_h)\) and \(Z_{h+1}=\mathsf M N_{10}(Z'_h)\).
-The two enlarged cubes have identical transverse intervals and overlapping first intervals.
-Their unions are therefore exactly
+The eight-layer cubes have first intervals \([-17a/2,17a/2]\) and \([23a/2,57a/2]\).
+Their gap is \(3a\), so \(\Omega_{h+1}^c\) has two components.
+The ten-layer intervals are \([-21a/2,21a/2]\) and \([19a/2,61a/2]\).
+They overlap in an interval of width \(a\), and their transverse intervals agree.
+Consequently
 \[
  \begin{aligned}
  \Omega_{h+1}^c
- &= [-17a/2,29a/2]\times[-17a/2,17a/2]^{d-1},\\
+ &= [-17a/2,17a/2]^d\\
+ &\quad\cup\bigl([23a/2,57a/2]\times[-17a/2,17a/2]^{d-1}\bigr),\\
  Z_{h+1}
- &= [-21a/2,33a/2]\times[-21a/2,21a/2]^{d-1}.
+ &= [-21a/2,61a/2]\times[-21a/2,21a/2]^{d-1}.
  \end{aligned}
  \tag{10}
 \]
 The boxing map fixes the second box.
-It is one component, with sides \(27a,21a,\ldots,21a\), all below the cutoff \(100a\).
+It is one component, with sides \(41a,21a,\ldots,21a\), all below the cutoff \(100a\).
 The two old components have joined. No creation set was used.
 This is the joining mechanism already identified in SA 17575 and N 63684.
 
 At step \(h+2\), the box in (10) lies strictly inside the central boxing cell of side \(La\).
-Indeed its largest coordinate magnitude is \(33a/2<La/2\).
+Indeed its largest coordinate magnitude is \(61a/2<La/2\), since \(61<L\).
 Every subsequent no-creation step therefore has
 \[
  \Omega_i^c=[-17a_i/2,17a_i/2]^d,
@@ -238,9 +254,21 @@ Condition (ii-b) forbids an operation on their containing component.
 At step \(k\), the exclusion interval is \((h,k)\); it contains neither mark.
 The component \(C=Z_k\) satisfies all three class conditions in I 45992--46000:
 
-- Its sides are \(21R\) in native level-\(k\) units, so condition (i) holds.
-- The preceding \(N\) steps create nothing. Every preceding component has at most 27 boxing cells per side.
-- No operation introduces a mark at a level strictly between \(h\) and \(k\).
+- **(i).** Each side of \(C\) is \(21a_k<100a_k\), or \(21R<100R\) native level-\(k\) units.
+- **(ii-a), no creation.** All seed and growth-test sets in the steps \(h\to h+1,\ldots,k-1\to k\) are empty.
+  The joining in (10) therefore introduces no creation set.
+- **(ii-a), earlier sizes.** Each level-\(h\) component has side \(21a_h\).
+  The joined level-\((h+1)\) component has sides \(41a\) and \(21a\).
+  Every later component has side \(21a_i\); the prehistory components were checked above.
+  Each separate region fits its own \(100a_i\) cube. Every component also satisfies admissible geometry fact (1).
+- **(ii-b).** Only the operations at \(h\) leave large-field marks. Their level lies outside \((k-N,k)=(h,k)\).
+  No intervening operation is eligible, since \(t-N<h<t\) for \(h<t<k\).
+
+I 55350--55418 allows retained regions from an operation at \(s=h\) inside \(Z_h\cap C\).
+Its reading of condition (ii) at levels \(h+1,\ldots,k\) also passes here.
+Indeed, \(Z_{h+1}\cap C\) is the single \(41a\)-by-\(21a\) box, and each later \(Z_i\cap C\) is a \(21a_i\) cube.
+I 118402 states why the two level-\(h\) components need not satisfy one common size bound.
+The second clause bounds each previous component. The first forbids creation but not “the joining of components”.
 
 The class therefore treats \(C\). Each \((Y_r,h)\) remains live at its preparatory site.
 The containing component has not yet passed through localisation, the death event in I 63540--63544.
@@ -248,37 +276,47 @@ The containing component has not yet passed through localisation, the death even
 ## 4. The core is disconnected, while preparation remains possible
 
 The old level-\(h\) entry in \(C\) is still \(Y_0\cup Y_1\).
-The definition (4) and the hull (9) give
+First use the defining form at I 78969 and 93532.
+I 53783 gives \(Z''_{h+1}=(\Omega_{h+1}^{\sim5})^c\cap C\).
+The two \(17a\) cubes in (10) are separated, so removing five layers shrinks each separately to side \(7a\).
+Thus \(Z''_{h+1}=N_3(Q_0)\cup N_3(Q_{20})\).
+Removing two more layers gives two cubes of side \(3a\).
+The other form at I 63870 adds one layer to each hull cube and gives the same set:
 \[
  \begin{aligned}
  \mathsf C_C
- &=N_1(Q_0\cup Q_6)\\
+ &=E_2\bigl(N_3(Q_0)\cup N_3(Q_{20})\bigr)\cap C\\
+ &=N_1(Q_0\cup Q_{20})\\
  &=[-3a/2,3a/2]^d
- \cup\bigl([9a/2,15a/2]\times[-3a/2,3a/2]^{d-1}\bigr).
+ \cup\bigl([37a/2,43a/2]\times[-3a/2,3a/2]^{d-1}\bigr).
  \end{aligned}
  \tag{12}
 \]
 Both boxes lie in \(C\), so intersection with \(C\) removes nothing.
-They have a gap of width \(3a\) in the first direction.
-In particular, \(0\) and \(6ae_1\) belong to \(\mathsf C_C\), but their midpoint \(3ae_1\) does not.
+They have a gap of width \(17a\) in the first direction.
+In particular, \(0\) and \(20ae_1\) belong to \(\mathsf C_C\), but their midpoint \(10ae_1\) does not.
 Every rectangular box containing the first two points contains their midpoint.
-Thus \(\mathsf C_C\) is not a box. This contradicts (g) at I 85628.
+Thus \(\mathsf C_C\) is not a box under either form. This contradicts the box sentence of (g) at I 85629.
+Its total coordinate spans are \(23a\) and \(3a\).
+In level-\(h\) units, even the larger span is \(23LR\le104L\check R_{h+1}\).
+So exceeding the stated side bound is not the failure.
 
 This failure does not prevent the stated preparation from being formed.
-Eroding the first box in (10) by five boxing layers gives
+The five-layer removal used above gives explicitly
 \[
  Z''_{h+1}
- =[-7a/2,19a/2]\times[-7a/2,7a/2]^{d-1}
- =N_3(Q_0\cup Q_6).
+ =[-7a/2,7a/2]^d
+ \cup\bigl([33a/2,47a/2]\times[-7a/2,7a/2]^{d-1}\bigr)
+ =N_3(Q_0\cup Q_{20}).
  \tag{13}
 \]
-It is a single box and contains both components of (12).
-The two extra layers on each component overlap here, although the one-layer cores do not.
+These are two \(7a\) cubes with gap \(13a\). Each contains its component of (12), with two layers to spare.
+Each also contains its old \(Y_r\), with margin \((7-21/L)a/2>a/R=u_{h+1}\).
 For the remaining lower indices \(h+2\le i\le k_0\), (11) gives
 \(Z''_i=[-7a_i/2,7a_i/2]^d\).
-These boxes are nested, including the bottom pair, since \(L\ge103\).
-At the first lower pair, the next half-side is \(7La/2\), while the old box reaches only \(19a/2\).
-Their gap exceeds \(La=a_{h+2}\). Every later lower gap also exceeds the next boxing-cell side.
+These sets are nested, including the bottom union, since \(L\ge103\).
+If this lower range is nonempty, its first gap is \((7L-47)a/2>La=a_{h+2}\).
+Every later lower gap is \(7(1-1/L)a_i/2>a_i\).
 Thus these gaps exceed the required native-cube sides.
 
 At the change of scale, \(k_0+1\ge h+2\) by (7), and \(a_{k_0+1}=u_k\).
@@ -302,8 +340,9 @@ Its gap is therefore at least \((L-2)u_k/(L-1)>u_k/L\ge u_{k_0+2}\).
 If that index equals \(k\), the gap is \(2u_k\).
 The bottom upper box has half-side \(3u_k/2\).
 If \(k_0>h+1\), the preceding box has half-side \(7u_k/(2L)\).
-If \(k_0=h+1\), its largest coordinate magnitude is \(19u_k/(2L)\), by (13).
-In either case the gap exceeds \(u_k\).
+Its gap is \((3-7/L)u_k/2>u_k\).
+If \(k_0=h+1\), the preceding union reaches \(47u_k/(2L)\), by (13).
+Its gap is \((3-47/L)u_k/2>u_k\), since \(L>47\).
 This checks the upper one-layer gaps as well as the lower ones.
 
 In particular, (3) gives the centred boxes
@@ -319,6 +358,7 @@ Since \(Z=C\) has side \(21Ru_k\),
  =\frac{21R-11}{2}\ge9R.
  \tag{16}
 \]
+The last inequality is \(3R\ge11\), which follows from \(R\ge103\); also \(11\le112\).
 Thus even clause (f) holds in this example. Its main box does not repair the different core in (12).
 
 The strips are also harmless here.
@@ -331,9 +371,16 @@ Its distance to that component's exterior exceeds
  =LRu_h\ge\frac{R+1}{2}u_h.
  \tag{17}
 \]
-The core boundaries lie on native level-\(h\) faces.
-The core lies inside \(Z''_{h+1}\), and its exterior moat is in zone \(h\).
-It is therefore a union of current cells of levels at most \(h\), as in I 63879--63892.
+Since \(a=La_h\) and \(L\) is odd, the core boundaries lie on level-\(h\) boxing-cell faces.
+For each \(Q\in\{Q_0,Q_{20}\}\), the boundary of \(N_1(Q)\) lies in \(N_1(Q)\setminus Q\).
+This set lies outside \(Z_h\) and inside \(Z''_{h+1}\).
+This moat is in \(\Lambda_h\cap(\Omega''_{h+1})^c\subset\Omega_h\setminus\Omega''_{h+1}\), hence in zone \(h\).
+The core lies in \((\Omega''_{h+1})^c\), so its cells have level at most \(h\).
+Its aligned boundaries make it a union of these cells, as in I 63879--63892.
+The two strips lie in separate components of (12), so they are disjoint.
+Finally, \(Y_r^\sharp\subset Z''_{h+1}\subset Z''_k\).
+Any cube of level at most \(k\) has side at most \(u_k\).
+If it touches a strip, it lies in the one-layer enlargement \((Z''_k)^{(1)}=\Lambda_C\).
 There is no failure of unique cell ownership or of the persistent birth collar.
 Only the assertion that this core is one box has been contradicted.
 
@@ -357,16 +404,36 @@ They exclude both examples because \(C\cap Z_h\) has two components and the step
 Their quiet-box proof (1)--(2) is therefore consistent with the counterexample.
 It applies to a stricter class.
 
+The account itself adds a no-joining condition in later sections.
+I 115866 says “We assume moreover” before requiring that no components join inside \(Z\) during the window.
+I 125168 assumes this throughout its section. I 143731 adds it as hypothesis (a).
+Each is an added assumption of a later section.
+None is part of Definition 4.14's class, Definition 4.22's live-region hypotheses, or the proof at I 63772--63935.
+Imposing that condition would exclude the example; I 118394 uses it to obtain one previous component.
+The route remark at I 85716--85718 does mention nesting.
+In this chapter nesting means inclusion, as the use \(Z_{j'+1}\subset Z_{k-1}\) at I 91947 shows.
+The example satisfies inclusion. Inclusion does not prohibit joining.
+
 The first invalid sentence in the account's core argument is I 63870--63871:
 after defining \(\mathsf C_C=(Z'_h)^{\sim}\cap C\), it asserts that this set is rectangular.
-Its later use of a single small \(Z_h\cap C\) at I 63872 has the same missing restriction.
+The sentence at I 63872 is also false in this example, not merely unsupported:
+\[
+ \operatorname{span}_1(Z_h\cap C)
+ =20a+21a_h=(20L+21)a_h>100a_h.
+\]
+So \(Z_h\cap C\) cannot lie in one cube of side \(100\check R_h\) in level-\(h\) units.
 Condition (ii-a) bounds each previous region separately.
 It does not identify their union with one region.
-The distinction matters even though the total span in this particular example remains small.
+
+Claude's check also identifies why the original separation \(6a\) was insufficient.
+At that separation, \(E_2(Z''_{h+1})=[-3a/2,15a/2]\times[-3a/2,3a/2]^{d-1}\), a single box.
+The other form, \(N_1(Q_0\cup Q_6)\), has two components with gap \(3a\), where \(Q_6=6ae_1+Q_0\).
+Thus the equality asserted at I 78969 can itself fail under joining.
+The repaired separation \(20a\) makes both forms equal and refutes their box claim directly.
 
 Three possible changes must not be confused with proofs on the present rules.
-One could impose the outlines' single-predecessor and no-joining admission conditions.
-One could replace (4) by the rectangular hull of the union.
+One could impose the outlines' single-predecessor conditions or the account's later no-joining assumption.
+One could replace the core in (4) by the rectangular hull of the union.
 One could formulate the conclusion componentwise for a union of cores.
 The first changes the class. The other two change the core or its required geometry.
 Each needs a separate check of its consumers; none is adopted here.
@@ -374,8 +441,8 @@ In particular, the remark calling the core rectangular cannot itself serve as an
 
 This negative result has one witness and one scope: the core-box assertion for the printed geometric transition class.
 It claims no impossibility for repaired rules, no failure of a field integral, and no audit conclusion.
-The joining mechanism is Sussman--Alpoge's prior observation, SA 17575 and N 63684.
-The explicit match to the account's one-layer core is the result written here.
+The joining mechanism is Sussman--Alpoge's prior observation, SA 17575, N 63684 and I 118402.
+Claude's check supplied the separation repair. Sections 3--4 match it to both forms of the account's core.
 
 ## 6. Clause table and first open input
 
@@ -390,7 +457,7 @@ The explicit match to the account's one-layer core is the result written here.
 | (f): main enlarged box, side \(112\), margin \(9R_k\) | Conditional port; not established here for the entire class | I 63788--63857; N 63749--63834 requires single predecessors. Equations (15)--(16) verify (f) in the counterexample |
 | (g): \(m\le h\) | Prior proof | The account's open exclusion window |
 | (g): \(\mathsf C_C\) is a box | **False on the stated geometric rules** | The two components and missing midpoint in (12); all class tests checked in section 3 |
-| (g): cell union, side bound, strip containment and margin, touching-cube inclusion | Existing conditional arguments; no claim of the full clause | I 63870--63906. The cell and strip margins hold in the counterexample; they do not imply connectedness |
+| (g): cell union, side bound, strip containment and margin, touching-cube inclusion | Existing conditional arguments; no claim of the full clause | I 63870--63906. Section 4 checks these geometric assertions in the counterexample; they do not imply connectedness |
 | (i1): probe level at most birth level | Conditional port; still open here in general | I 63919--63924 uses separation in the probe's own units, not only the proved birth-unit collar |
 | (i2): at most \(2^d\) strips per probe | Conditional port given (i1) | I 63926--63933; vertex argument in section 2; disjointness already supplied |
 | \(909^d\) pocket packing and \(2d\) adjacent-anchor count | Different counts; not used as substitutes | N 127772--127780 and 127491--127502 |

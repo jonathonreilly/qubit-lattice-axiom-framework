@@ -18,7 +18,7 @@ Every primitive walk then vanishes. In your composite formulas,
  H_0=H^J=\widetilde G^J=q_0=q_J=0,\qquad
  P_0=I,\qquad \mathsf k=-a\ell^{-1}.
 \]
-The small fixed point gives \(A_G=X_G=h=\Xi=0\).
+The small fixed point gives \(A_G=X_G=\mathcal H^J=\Xi=0\).
 Your defining current therefore gives
 \[
  \mathfrak J(0;b)=-Q^Ta\ell^{-1}b.
@@ -32,11 +32,8 @@ whereas the locality clause requires a zero kernel because
 Here \(Q^T=Q^*\) denotes the physical bilinear transpose.
 
 Your sentence at [CA-I 15450–15451](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L15450-L15451) leaves the representation identity
-`4.5:eq-response-chart-a` unrestricted. Its proof, [CA-I 14455–14493](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L14455-L14493),
-uses inverse and constraint identities available only at switches one.
-No proved step of yours uses that identity at \(s\ne1\): the bounds
-extended by (K10) read the defining term list at [CA-I 14759–14765](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L14759-L14765),
-and (K6) uses the identity at one. Thus this is a missing definition
+`4.5:eq-response-chart-a` unrestricted. Its proof, [CA-I 14455–14493](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L14455-L14493), uses inverse and constraint identities that your account proves only at switches one. At zero switches one of them fails: there \(H_0=0\), so \(QH_0B=0\ne\tilde B\).
+No proved step of yours uses that identity at \(s\ne1\). (K10) extends (K1), (K3)–(K5) and (K8) by bounds and locality only. The (K3) proof bounds the terms listed at [CA-I 14759–14765](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L14759-L14765). Your text there introduces the list through the identity, but the list is exactly the defining one at [CA-I 14406–14408](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L14406-L14408). So these bounds hold without it. (K6) uses the identity at one only. Thus this is a missing definition
 in an assumed package, with an over-wide sentence, not a false proved step.
 
 Following issues #13, #14 and #19, this note defines the two missing
@@ -70,7 +67,7 @@ approximation and a coupling constant renormalization in four dimensions*,
 CMP **109** (1987). Your quotations used below are at [CA-I 13686–13739](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L13686-L13739),
 15288–15301, 15830–15846 and 111394–111410.
 
-Codex (gpt-6-astra) wrote the proof and this note. Claude (Opus 5.5) checked the proof line by line, and its repairs are applied.
+Codex (gpt-6-astra) wrote the proof and this note. Claude (Opus 5.5) checked the proof and this note line by line, and its repairs are applied.
 This is research text, not an audit, and grants no status.
 No computation discharges a proof step.
 
@@ -101,9 +98,7 @@ any proof, including the bare-mass lemma.
    averaging hypotheses carried by that proof. In particular, use the
    density, overlap, scale and transpose estimates (2)–(3) below.
    They are the per-unit-length form of the averaging derivative.
-   This averaging input follows Balaban's *Averaging operations for
-   lattice gauge theories*, CMP **98** (1985), Proposition 5,
-   (156)–(157), through the written proof linked in GW.
+   This averaging input is the analytic form of Balaban's *Averaging operations for lattice gauge theories*, CMP **98** (1985), Proposition 5, (156)–(157). Those bounds are for first derivatives at real backgrounds. Balaban states the analytic extension without proof (CMP 98 §E, p. 43), and your Remark `4.5:rem-averaging-analyticity`, [CA-I 13175–13196](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L13175-L13196), cites it as printed. GW, input 3, links a written proof.
    The full-word union-tag alternative in GW is used for (17).
 3. **GW1, issue #19.** Use the [posted stronger word estimates](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/7198d9fa2/.claude/science/physics-loops/ym4d-hard-route-20261030/library/out-gw1.md),
    §§3.1, 3.3, 7 and 8. Use the same words with tree weight
@@ -142,6 +137,7 @@ any proof, including the bare-mass lemma.
    hypotheses on the admitted complex domains. Use smooth response
    bumps with \(0\le\zeta\le1\), plateau \([-1/3,1/3]\), support in
    \([-2/3,2/3]\), \(|\zeta'|\le5\), \(|\zeta''|\le42\).
+   Your cutoff at [CA-I 111525–111527](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L111525-L111527) asks \(|\zeta''|\le5\). With this plateau and support, \(\zeta'(1/3)=\zeta'(2/3)=0\), so \(|\zeta''|\le5\) allows a total drop of at most \(5/36<1\). We therefore assume the weaker bound \(|\zeta''|\le42\); the existence of such a bump is part of this input. The constant \(c_\zeta\) in (33) does not change.
    The response bump is
    \(\widehat\chi_\square(x)=\prod_\nu
    \zeta((x_\nu-y_{\square,\nu})/(M\ell_\square))\).
@@ -945,8 +941,7 @@ If the radius is at least one, the Schwarz estimate at \(z=1\) gives
 give \(0.22K_J<8.8K_JD\). Both are at most \(9K_JD\).
 The four linear terms in (31) contribute \(3+18d\) times the maximum
 of the four entries. For \(K_W \delta A'\), use
-\(N_y(\delta A')\le N_y^\Delta(\delta A')\). Do not use the printed
-unsupported replacement of that size by \(N_y(\delta h)\). Thus
+\(N_y(\delta A')\le N_y^\Delta(\delta A')\). Your proof at [CA-I 111436–111439](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L111436-L111439) writes \(N_y(\delta\mathbb H)\) in this bound. The bound on \(K_W\) applies to \(\delta A'\), so we use \(N_y(\delta A')\). The entries and the constant \(3+18d\) do not change. Thus
 
 \[
  m_y^3|\delta J^\sharp[1]|_y
@@ -1178,9 +1173,7 @@ remain the separately furnished layer and datum estimates.
 
 ### 6.3 Use-by-use record
 
-This table matches the displayed interfaces at the cited lines.
-Those passages were read for this note. We have not reread every
-downstream consumer proof one by one. The table gives conditional
+This table matches the displayed interfaces at the cited lines. Claude's check read your text for ten rows: CA-I 72392–72399, 72714–72728, 72823–72860, 72918–72979, 111391–111410, 111530–111550, 112608–112625, 94980–94995, 14720–14727, and CA-II 39312–39335 with 39622–39650. For the other eight rows, the match is to the property each use needs, as stated in the table; your text there was not reread. No downstream consumer proof was reread one by one. The table gives conditional
 matches, with the layer, graph, profile and admission inputs retained.
 
 | Account consumer | Matching argument for this assignment |
@@ -1190,7 +1183,7 @@ matches, with the layer, graph, profile and admission inputs retained.
 | [CA-I 72754–72783](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L72754-L72783); 72823–72860 | Section 5.2 gives component dependence and \((0,0,1)\) on a source-free component. Section 6.2 gives bounded holomorphic reader composition on the admitted product domain. |
 | [CA-I 72918–72979](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L72918-L72979) | Section 6.2 proves the component derivative zeros and the Cauchy bounds with analytic room. |
 | [CA-I 111391–111486](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L111391-L111486) | Subtraction is at one fixed operator pair. Equation (31), then (32), supplies the rider estimate; (7) supplies its operator entries from layer response bounds. |
-| [CA-I 111512–111580](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L111512-L111580) | Formula (19) is the cut definition. Equation (33) uses the unchanged lift and repaired cutoff. The same \(K_{\mathsf j}=3+18d+9K_J\) and \(c_\zeta\) apply. |
+| [CA-I 111512–111580](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L111512-L111580) | Formula (19) is the cut definition. Equation (33) uses the unchanged lift and the cutoff of input 6. The same \(K_{\mathsf j}=3+18d+9K_J\) and \(c_\zeta\) apply. |
 | [CA-I 112072–112104](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L112072-L112104); 112181–112194 | Datum-affine families use (18); field cuts use (19). Linearity gives the third entry's split in (38). The fourth splits because \(\chi\) stays outside \(m_H\). |
 | [CA-I 112587–112625](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L112587-L112625) | At (T), (7) and the layer's admitted weighted differences give both operator entries. At (L), retain the distinct product-profile input; (36)–(37) prove its operator transfer when its source profile is supplied. |
 | [CA-I 112708–112738](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L112708-L112738); 115389–115407 | Use that same product bound on the enlarged amplitude disc, after the assumed `(e3)^+` admission. Local cut entries and (33) retain their supplied stencil bounds. |

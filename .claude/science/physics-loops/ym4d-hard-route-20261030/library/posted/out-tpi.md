@@ -9,7 +9,7 @@ retained background covariance elsewhere in that file.
 This note supplies that proof using your actual plaquette average
 and your strong inverse.
 
-Your CF12 at [N 5631–5634] already compares the classical blocked
+Your CF12 at [N 5631–5634](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/2bc0658f91d2d03ba44e20bf695067e0a56a2ed9/YM4_1400.tex#L5631-L5634) already compares the classical blocked
 precision with the coarse Maxwell form: $`E_k(a)\ge\|\mathrm da\|^2`$.
 We read this as a covariance bound for the actual blocked potential law.
 We then bound its diagonal on every coarse torus. Your curvature
@@ -269,7 +269,7 @@ It differs from the retained fine field $`F_j`$.
 Every star in this section uses counting coordinates.
 
 Your contraction proof, [N 5568–5605][contraction], applies to this map.
-Its consequence CF12, [N 5631–5634], is the precision form of (10) below.
+Its consequence CF12, [N 5631–5634](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/2bc0658f91d2d03ba44e20bf695067e0a56a2ed9/YM4_1400.tex#L5631-L5634), is the precision form of (10) below.
 Its nonnegative row weights sum to $`n^2`$.
 Its column weights sum to $`n^{-2}`$.
 Weighted Cauchy–Schwarz gives

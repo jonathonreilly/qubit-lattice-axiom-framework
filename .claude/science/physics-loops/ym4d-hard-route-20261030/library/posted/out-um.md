@@ -217,4 +217,4 @@ It asked for three citation repairs; they are applied here and in the working no
 Codex wrote this outward version and read it against the repaired working note. Claude (Opus 5.5) then read it against that note and every cited line of your account and outline; the statement, scope, constants and inputs match.
 This is research text, not an audit; it grants no status. No computer-assisted step discharges an input.
 
-[Full working note](um.md)
+[Full working note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/0fc778a741a61b20fde7f7bf0c99eacdd37aba72/.claude/science/physics-loops/ym4d-hard-route-20261030/library/um.md)

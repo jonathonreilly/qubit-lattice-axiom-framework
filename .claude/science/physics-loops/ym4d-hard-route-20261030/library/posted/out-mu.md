@@ -219,4 +219,4 @@ Codex wrote the working note. A fresh Claude session checked it line by line; fi
 Codex wrote this outward version. Claude (Opus 5.5) then read it against the working note and against every cited line of your outline and account; the statement, scope, constants and inputs match.
 These are model readings of research text, not human review or an audit. They grant no scientific status.
 
-[Full working note](mu.md)
+[Full working note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/877743789c269744f7500a62087d21e545df72b1/.claude/science/physics-loops/ym4d-hard-route-20261030/library/mu.md)

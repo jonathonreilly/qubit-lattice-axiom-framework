@@ -179,7 +179,7 @@ class ExtractionFidelityTest(FixtureTestCase):
             body = gen.norm(block_text(self.root, target.path))
             for sentence in (
                 "Physical sites are the points of the cubic lattice `Z^3`",
-                "There is one fixed nearest-neighbor admissibility rule, "
+                "There is one fixed neighborhood admissibility rule, "
                 "covariant under lattice translations and proper cubic rotations",
                 "Records form.",
                 "A site with no record cannot be read.",
@@ -251,7 +251,7 @@ class AxiomSourceEditTest(FixtureTestCase):
         text = read(self.root, self.axioms_rel)
         anchor = (
             "the probability distribution over the possibilities is\n"
-            "determined by, and varies with, the nearest-neighbor conditions."
+            "determined by, and varies with, the neighborhood conditions."
         )
         nested = (
             anchor
@@ -299,9 +299,9 @@ class AxiomSourceEditTest(FixtureTestCase):
         text = read(self.root, self.axioms_rel)
         revised = text.replace(
             "the probability distribution over the possibilities is\n"
-            "determined by, and varies with, the nearest-neighbor conditions.",
+            "determined by, and varies with, the neighborhood conditions.",
             "the probability distribution over the possibilities is\n"
-            "determined by the nearest-neighbor conditions and by nothing else.",
+            "determined by the neighborhood conditions and by nothing else.",
             1,
         )
         self.assertNotEqual(text, revised, "test edit did not apply")
@@ -314,7 +314,7 @@ class AxiomSourceEditTest(FixtureTestCase):
         self.assertEqual(run_generator(self.root, check=False)[0], 0)
         skills = self.skill_targets()
         self.assertInEveryTarget(
-            "determined by the nearest-neighbor conditions and by nothing else",
+            "determined by the neighborhood conditions and by nothing else",
             skills,
         )
         for target in skills:

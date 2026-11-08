@@ -48,21 +48,21 @@
   },
   "docs/MINIMAL_AXIOMS_2026-06-29.md": {
    "sections": {
-    "Admissibility / Local Constraint": "adfd9a423aec",
+    "Admissibility / Local Constraint": "1d228db05d98",
     "Audit-Pipeline Treatment": "10321a931853",
-    "Historical Context": "e24c1b831ad3",
+    "Historical Context": "bcb7cfcd4d5a",
     "Lattice / Physical Locality": "049996af50c4",
     "Open Gates Outside The Axioms": "31d6f96cb840",
     "Purpose": "37c8746f6b31",
     "Qualification": "3ee115daf95e",
     "Qubit / Site Possibility": "08c620aa728b",
     "Record / Fixed Reality": "4e423674e53b",
-    "Relation To Dynamics And Kinetic Branch Selection": "1cf2c6a2467b",
-    "Relation To The 2026-06-05 Record Wording": "90ac378b8869",
+    "Relation To Dynamics And Kinetic Branch Selection": "96b40e4c1ad5",
+    "Relation To The 2026-06-05 Record Wording": "b0e0d3afd3a9",
     "Relation To The Older Observable-Principle Parent": "9364ac68eb42",
-    "The Four Framework Axioms": "703dcc1ddfa7"
+    "The Four Framework Axioms": "3f9a77c05cb4"
    },
-   "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+   "sha256": "301bb33c1a743104208067c14684b34ba71d86674509111638ea898bc6e6c0dc"
   },
   "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
    "sections": {
@@ -85,7 +85,7 @@
    "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
   },
   "docs/audit/data/axiom_premise_nodes.json": {
-   "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+   "sha256": "e21007be1bc3d82304f3442a5e4f831a19241760c3f0ad486baebe1bc33ec5c5"
   }
  },
  "targets": {
@@ -98,7 +98,7 @@
   },
   "docs/ai_methodology/skills/audit-loop/SKILL.md": {
    "block_lines": 194,
-   "block_sha256": "d09a5fa4208fbc37ff7052965cd2606bfaccca068f5ffd309b40ecab70a4f0e0",
+   "block_sha256": "5c17fa9cdcf22e87db33b237981d82adef7c7a3a595f76410f588b1a2708b386",
    "spans": [
     "axioms",
     "primitives"
@@ -106,7 +106,7 @@
   },
   "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md": {
    "block_lines": 189,
-   "block_sha256": "16e3fc3edd3c1229ca17f2eb59ac541a016ceda3abb8fc150b507a5e11105715",
+   "block_sha256": "226c4f8703c661d08da57f8ef4c962a31b98deb77445dd0f2930207b5fb0aa67",
    "spans": [
     "axioms",
     "primitives"

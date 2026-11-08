@@ -1,0 +1,60 @@
+{
+  "base": "43a1fcc374711ca50626eca667441d3ca575c7d1",
+  "source_head_before_probe": "985f174411be88e0cb7e826f0df8f2ad3c16ea35",
+  "result_sha256": "8299d2f298386c644951900b7d2c5405ec5ab8de35f8bb736535263e1c6b2657",
+  "independent_sha256": "11dc277c43a69d2f623c3085a412c7fa155e94ddfb01704e9cae506a1a6b0d63",
+  "source_check_sha256": "91f8dddc0096593c45b64093c764ba390d6b69daaef455b47509c33048c78e0b",
+  "geometry": {
+    "source_sha256": "a620dcb53958f345aa26580b96895145fd9fb6583a398f74e9f58bcd7528e15e",
+    "phase_pairs_by_coordinate_difference": {
+      "1": 1500,
+      "2": 6000,
+      "3": 8000
+    },
+    "pairs_by_number_of_fixed_zero_edge_witnesses": {
+      "4": 1500,
+      "2": 6000,
+      "6": 8000
+    },
+    "rotations": 24,
+    "covariance_checks": 375000,
+    "qubits_per_cell": {
+      "output": 1,
+      "active": 12,
+      "frozen": 112
+    },
+    "free_all_unused_common_sector_witness": {
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "q": [
+        1,
+        1,
+        1
+      ],
+      "disjoint_active_sets": true
+    },
+    "elapsed_seconds": 0.8383950410061516,
+    "max_rss": 20561920,
+    "scope": "finite residue geometry; operator completeness and arbitrary-n proof require the hand argument"
+  },
+  "readout_replay": {
+    "status": "ok",
+    "checks": 5009,
+    "source_changed": false,
+    "initial_missing_NUMEXPR_setting_preserved": true
+  },
+  "checks": [
+    "complete independent hand derivation read",
+    "projector completeness re-derived",
+    "support-wide record guard checked",
+    "origin-coherence scope checked",
+    "H tensor I on enlarged code checked",
+    "Gauss-compatible 0 versus 1/3 witness re-derived",
+    "three final wording corrections confirmed in same checker context"
+  ],
+  "formal_landing_review": false,
+  "independent_audit": false
+}

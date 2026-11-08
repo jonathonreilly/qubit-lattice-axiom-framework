@@ -1,0 +1,12 @@
+{
+  "requested_models": {
+    "luna_gauge_locality": "gpt-6-luna/max",
+    "luna_record_locality": "gpt-6-luna/max"
+  },
+  "configuration_source": "collaboration.spawn_agent configuration; workers do not independently expose runtime telemetry",
+  "pinned_main": "f5af11cd0102cfd0b51aef0911f600130bf5beb1",
+  "reports": {
+    "GAUGE_DYNAMICS_LANES.md": "3f1db2f707d85b59c3c5b34b4528c945e87feb9cf85d1ace3c2140dd6579f07e",
+    "RECORD_LANES.md": "fe9d989b182c793a5628a143a5611513b12c88fb2d109ab5566c74955adedb29"
+  }
+}

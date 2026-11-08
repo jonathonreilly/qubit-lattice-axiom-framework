@@ -1,0 +1,36 @@
+{
+  "source_sha256": "a620dcb53958f345aa26580b96895145fd9fb6583a398f74e9f58bcd7528e15e",
+  "phase_pairs_by_coordinate_difference": {
+    "1": 1500,
+    "2": 6000,
+    "3": 8000
+  },
+  "pairs_by_number_of_fixed_zero_edge_witnesses": {
+    "4": 1500,
+    "2": 6000,
+    "6": 8000
+  },
+  "rotations": 24,
+  "covariance_checks": 375000,
+  "qubits_per_cell": {
+    "output": 1,
+    "active": 12,
+    "frozen": 112
+  },
+  "free_all_unused_common_sector_witness": {
+    "p": [
+      0,
+      0,
+      0
+    ],
+    "q": [
+      1,
+      1,
+      1
+    ],
+    "disjoint_active_sets": true
+  },
+  "elapsed_seconds": 0.8383950410061516,
+  "max_rss": 20561920,
+  "scope": "finite residue geometry; operator completeness and arbitrary-n proof require the hand argument"
+}

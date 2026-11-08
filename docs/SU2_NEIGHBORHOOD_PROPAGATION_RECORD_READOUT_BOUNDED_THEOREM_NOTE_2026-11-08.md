@@ -22,9 +22,12 @@ bare_retained_allowed: false
 The user clarified that neighborhood influence can propagate through neighbors.
 The results below use successive adjacent-site operations. An instantaneous
 in-code nearest-neighbor generator is a different target and is not imposed.
-The [current axioms](MINIMAL_AXIOMS_2026-06-29.md) are unchanged in this research
-branch; proposed wording and its adoption belong to a separate owner-reviewed
-PR. No result below assumes that proposal has been adopted.
+The construction was checked against the axiom wording at main `f5af11cd`.
+The owner subsequently approved the two governing substitutions of
+"neighborhood" for "nearest-neighbor", landed separately in
+[PR #10143](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10143).
+The [current axioms](MINIMAL_AXIOMS_2026-06-29.md) include that wording; it does
+not supply the quantum preparations, gates or probability values used below.
 
 ## 1. A permanent-record relay
 
@@ -194,7 +197,7 @@ law whose quantum state is reconstructed from its record history.
 Closed: a conditional record relay; an exact adjacent-gate electric
 instrument on the full active link code; compatibility of its completed
 action with finite Gauss gluing; and an explicit change to the output
-subspace needed by records. The original axioms have not been changed.
+subspace needed by records. This construction adds no axiom or primitive.
 
 The missing object is a specified joint law for live encoded data and permanent
 records, with preparation, local propagation, formation and fresh-site

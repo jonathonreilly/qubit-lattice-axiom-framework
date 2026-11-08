@@ -95,3 +95,12 @@ Editable task prompts changed: root GOAL.md was extended;
 native_law/INDEPENDENT_SPEC.md was created. Follow-up worker assignments were
 bounded tool messages. No shared skill, axiom, registry, or platform prompt
 was edited in this research branch.
+
+## Subsequent owner approval and continuation
+
+The earlier pending-approval paragraph is historical. The owner explicitly
+approved the two governing substitutions and merge. PR #10143 landed at
+43a1fcc374711ca50626eca667441d3ca575c7d1. The current checkpoint remains the
+root STATE.yaml and now points to native_records/HANDOFF.md. The two source
+notes' adoption/current-axiom prose was synchronized without changing their
+mathematical arguments; the readout cache was replayed on the new inputs.

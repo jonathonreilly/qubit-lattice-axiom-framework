@@ -1,7 +1,7 @@
 ---
 claim_id: su2_homogeneous_native_qubit_code_bounded_theorem_note_2026_11_08
 claim_type: bounded_theorem
-claim_scope: An explicit four-qubit code realizes the five-state SU(2) link and its orientation reversal by geometric site permutation. On every native cubic torus of side 5n, n >= 3, 125 orthogonal coarse-grid code sectors form a subspace invariant under all native translations and proper cubic rotations. Local phase projectors give an exact finite-range extension of a supplied cubic-invariant electric/plaquette Hamiltonian. This is a chosen tensor-product quantum code, not an axiom-selected state, nearest-neighbor admissibility rule, record process, or continuum theory.
+claim_scope: An explicit four-qubit code realizes the five-state SU(2) link and its orientation reversal by geometric site permutation. On every native cubic torus of side 5n, n >= 3, 125 orthogonal coarse-grid code sectors form a subspace invariant under all native translations and proper cubic rotations. Local phase projectors give an exact finite-range extension of a supplied cubic-invariant electric/plaquette Hamiltonian. This is a chosen tensor-product quantum code, not an axiom-selected state, neighborhood admissibility rule, record process, or continuum theory.
 upstream_dependencies: []
 runner: scripts/gb1_cf_native_placement_exact_2026_11_08.py
 actual_current_surface_status: candidate-retained-grade
@@ -12,7 +12,7 @@ target_blocker_text: Can the glued five-state SU(2) model be placed homogeneousl
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: Test whether a native nearest-neighbor admissibility and record law can realize this code and its observables, while comparing alternative frameworks.
+next_trace_action: Test whether a native neighborhood admissibility and record law can realize this code and its observables, while comparing alternative frameworks.
 conditional_surface_status: Ordinary qubit tensor composition, the supplied SU(2) link model, the code, and the coarse Hamiltonian are explicit conditions.
 hypothetical_axiom_status: null
 admitted_observation_status: null
@@ -262,7 +262,7 @@ basis symbols specify the encoding; they are not asserted to be privileged
 physical possibilities or readable Record contents.
 
 The [current axioms](MINIMAL_AXIOMS_2026-06-29.md) require a covariant
-nearest-neighbor probability law and permanent records with content-only
+neighborhood probability law and permanent records with content-only
 readout. Neither follows from this finite-range Hamiltonian. The realized-
 state primitive supplies no prepared code state or block origin. Enlarging
 local site content, placing fundamental degrees on links, changing the gauge

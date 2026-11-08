@@ -1,0 +1,10 @@
+{
+  "runner": "scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py",
+  "status": "nonzero_exit",
+  "exit_code": 1,
+  "stdout": "Traceback (most recent call last):\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 421, in <module>\n    main()\n    ~~~~^^\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 405, in main\n    started = bounds()\n  File \"/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py\", line 387, in bounds\n    raise RuntimeError(f\"{name}=1 required\")\nRuntimeError: NUMEXPR_NUM_THREADS=1 required\n",
+  "stderr": "",
+  "elapsed_sec": 0.07031702995300293,
+  "timeout_sec": 60,
+  "live_log": "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/logs/runner-cache/.in-progress/gb1_cf_neighborhood_record_readout_exact_2026_11_08.txt"
+}

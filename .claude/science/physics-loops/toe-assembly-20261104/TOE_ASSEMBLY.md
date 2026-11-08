@@ -320,7 +320,7 @@ The lead asked: "Start the law-revision part (growing registers, cube-coupling m
 
 (c) **Sources.** The frozen parts named in (a), with their amendments; `LW1_5.md`; `GA1_5.md`.
 
-(d) **Status.** Open. Pass-1 lanes: LW2 (items 1 and 2) and LW2M (item 3), each after its prior-work digest.
+(d) **Status.** Items 1 and 2 frozen in `LW2.md`; item 3 frozen in `LW2M.md` (both 2026-11-08; `GB1.md` Amendments 5 and 6). Finite growing registers keep every positive result and escape only small-step negativity and, with spectators, Kogut–Susskind links or s ∤ m, the character. FP fails cell covariance at finite register. No candidate text passed all four tests; none is adopted.
 
 (e) **Rules.** Each candidate law text is four-tested and goes to the owner. The lanes probe every branch and choose none (section 3.11).
 

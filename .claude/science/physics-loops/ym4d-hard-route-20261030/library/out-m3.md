@@ -1100,6 +1100,23 @@ its \(\exp((\delta_w+\delta_P)d(y,z))\) majorant. Summing proves (37).
 The localization cells and their enlargement are included in (36),
 so no unsupported pointwise sharp cutoff was inserted.
 
+For [CA-II 610–633](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L610-L633), instead use
+\(q_\square(y)=\sup_{z\in S}p_s(z)e^{-2\delta_Pd_{\mathfrak B_s}(y,z)}\), with \(S=\square^\zeta\).
+The triangle inequality gives
+\(q_\square(z)\le e^{2\delta_Pd_{\mathfrak B_s}(y,z)}q_\square(y)\).
+Retain input 7's metric comparison so this also holds with \(d(y,z)\).
+Thus this weight has variation rate \(\delta_w=2\delta_P\le\lambda\).
+On \(S\), choosing the same cell in the supremum gives \(q_\square(z)\ge p_s(z)\).
+The supplied cut clause of (36) at \(p_s\) therefore holds at \(q_\square\), with the same \(C_\chi B\).
+This needs the full cutoff stencils inside \(S\), as stipulated in (36).
+The uncut clause need not hold globally at \(q_\square\); the proof of (37) uses only the cut clause.
+Apply that proof with extra decay rate zero and multiply by \(|\tau|\).
+It gives \(m_y^3|\tau P_1(s)(\widehat\chi_\square A')|_y\le C_\chi C_Pe^{16\kappa_1}B|\tau|q_\square(y)\), with no extra factor.
+To read this as \(20K_\chi|\tau|q_\square(y)\), retain the consumer's cutoff and constant input
+\(C_\chi C_Pe^{16\kappa_1}B\le20K_\chi\).
+The weight change proves no layer bound or constant comparison.
+Reading (37) at \(p_s\) gives only the weaker middle bound of `5.2:eq-three-sites-c`.
+
 If the source-location input is
 \(p_s(y)\le a_s \exp(-\delta_P d^\wedge(y,F))\), (37) has **both** that
 factor and \(\exp(-\delta_P d(y,\square^\zeta))\).
@@ -1146,7 +1163,7 @@ for all its active switch values. A switch derivative on either
 unread component therefore annihilates the composition. This is
 an identity on the switch subspace with the other walls fixed at
 zero, not just a statement at one point. For the source-cell
-argument of [CA-II 21950–22080](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L21950-L22080), a source-free read component also has
+argument of [CA-II 21950–22082](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L21950-L22082), a source-free read component also has
 both summands in (38) zero. Its amplitude derivative vanishes.
 Never-cut regions and hubs remain in \(Y\) throughout this argument.
 
@@ -1173,7 +1190,7 @@ remain the separately furnished layer and datum estimates.
 
 ### 6.3 Use-by-use record
 
-This table matches the displayed interfaces at the cited lines. Claude's check read your text for ten rows: CA-I 72392–72399, 72714–72728, 72823–72860, 72918–72979, 111391–111410, 111530–111550, 112608–112625, 94980–94995, 14720–14727, and CA-II 39312–39335 with 39622–39650. For the other eight rows, the match is to the property each use needs, as stated in the table; your text there was not reread. No downstream consumer proof was reread one by one. The table gives conditional
+This table matches the displayed interfaces at the cited lines. Claude's checks read your text for all 18 rows: `gates/out-m3-check.md` and `gates/out-m3-rows-check.md`. No downstream consumer proof was reread one by one. The table gives conditional
 matches, with the layer, graph, profile and admission inputs retained.
 
 | Account consumer | Matching argument for this assignment |
@@ -1186,16 +1203,16 @@ matches, with the layer, graph, profile and admission inputs retained.
 | [CA-I 111512–111580](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L111512-L111580) | Formula (19) is the cut definition. Equation (33) uses the unchanged lift and the cutoff of input 6. The same \(K_{\mathsf j}=3+18d+9K_J\) and \(c_\zeta\) apply. |
 | [CA-I 112072–112104](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L112072-L112104); 112181–112194 | Datum-affine families use (18); field cuts use (19). Linearity gives the third entry's split in (38). The fourth splits because \(\chi\) stays outside \(m_H\). |
 | [CA-I 112587–112625](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L112587-L112625) | At (T), (7) and the layer's admitted weighted differences give both operator entries. At (L), retain the distinct product-profile input; (36)–(37) prove its operator transfer when its source profile is supplied. |
-| [CA-I 112708–112738](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L112708-L112738); 115389–115407 | Use that same product bound on the enlarged amplitude disc, after the assumed `(e3)^+` admission. Local cut entries and (33) retain their supplied stencil bounds. |
-| [CA-II 610–628](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L610-L628) | The standing profile must dominate the new four entries. Equations (7), (32) and (37) give the required operator contributions; the remaining profile and datum constants are the standing inputs. |
+| [CA-I 112708–112740](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L112708-L112740); 115389–115407 | Use that same product bound on the enlarged amplitude disc after `(e3)^+`, which step (i) derives from (A)–(E) in the remark and the list at 115387 assumes. Local cut entries and (33) retain their supplied stencil bounds. |
+| [CA-II 610–633](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L610-L633) | The standing profile must dominate the new four entries. Section 6.1 applies (37) at \(q_\square\), with variation rate \(2\delta_P\le\lambda\), extra decay zero and only the cut clause of (36). This gives the \(\tau\)-member at most \(20K_\chi|\tau|q_\square(y)\), under the stated cutoff, metric and constant inputs. At \(p_s\), (37) gives only the middle bound of `5.2:eq-three-sites-c`. The remaining profile and datum constants stay inputs. |
 | [CA-II 20794–20828](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L20794-L20828); 21125–21144 | Equation (38) proves the unique nonlocal amplitude term. Equation (37) preserves the two distance factors for the admitted source profile. |
-| [CA-II 21950–22080](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L21950-L22080) | Section 4.3 holds for every cut subfamily; §6.2 proves the switch and amplitude derivative zeros, keeping the never-cut set and hubs. |
+| [CA-II 21950–22082](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L21950-L22082) | Section 4.3 holds for every cut subfamily; §6.2 proves the switch and amplitude derivative zeros, keeping the never-cut set and hubs. |
 | [CA-II 23160–23169](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L23160-L23169); 23993–24005 | Each bracket uses (19) or (18) as specified. Finite composition and the current sum use §6.2 and the same admission inputs. |
 | [CA-II 39312–39335](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L39312-L39335); 39622–39650 | The own-level affine formula and its two operator derivative entries are proved in §6.2. No switch derivative is confused with \(\partial_\tau\). |
-| Outside multiple, [CA-II 13888–14105](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L13888-L14105) | Keep \(\chi J^\sharp[1]\). Multiplication preserves holomorphy and the local dependence on \(\chi\). Its entry bounds multiply the uncut bounds by the supplied multiplier bounds. It is not replaced by (19). |
+| Outside multiple, [CA-II 13888–14105](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L13888-L14105) | Keep \(\chi J^\sharp[1]\). Multiplication preserves holomorphy and the local dependence on \(\chi\). Its entry bounds multiply the uncut bounds by the supplied multiplier bounds. It is not replaced by (19). For the current, this proof uses its general-\(\chi\) hypotheses (a), (c) only at \(\chi=1\); this note proves cut bounds only for \(\chi=t+\tau\widehat\chi_\square\). |
 | [CA-I 94980–94995](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L94980-L94995) | At switches one, (20), (34) and the furnished layer estimates give the two operator entries in this reduced-current use. The identification \(A'=H^C\) remains a separate layer premise. |
 | Native \(P_1\) at [CA-I 14720–14727](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L14720-L14727), 14797–14800 | At one, (16) sums to the same \(D_0PD_0^T\). Bound (7) is a first-order-to-current bound for that operator, as required here. |
-| Older chart formulations [CA-I 19637–19685](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L19637-L19685); 29381–29412 | On your uncut chart at one, §5.3 identifies the current and its datum-affine continuation. Your native K10 functions away from one remain as defined. This note does not rename those functions or claim equality with (30). Any use of your F5 assertion for the new reduced family must use the explicit local-current, graph, profile and admission hypotheses above. |
+| Older chart formulations [CA-I 19637–19685](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L19637-L19685); 29381–29412 | On your uncut chart at one, §5.3's first paragraph identifies the current at each admitted datum, hence along \(B(t)+t_\square v\) and in its first variation. Your native K10 functions away from one remain as defined. This note does not rename those functions or claim equality with (30). Any use of your F5 assertion for the new reduced family must use the explicit local-current, graph, profile and admission hypotheses above. |
 
 The last row retains your older chart functions. The displayed reduced
 identities use an analytic current and its stated entries. They do not

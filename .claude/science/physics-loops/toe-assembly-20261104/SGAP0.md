@@ -1,8 +1,8 @@
 # SGAP0: the zero-hop charged gap
 
-**Status.** In the finite-ring model and conditional on the frozen atom and Gauss reduction, the arguments below give (G1′), (HF-alt), and S-GAP⁰ for the stated constants. This is pass 2, not a referee or audit verdict. **GAP corrected:** the draft calls every contractible polymer at least two cells. Singletons are contractible polymers; their activities vanish. The proof below excludes these zero-activity polymers from the gas. S-GAP at nonzero hopping, (G1) inside the vacuum sector, and the downstream items listed in §7 remain open. The small-ring calculation is a reported check, not proof.
+**FINISH: FROZEN 2026-11-08 after pass 3 (SGAP0_REFEREE.md); the referee's edits (the citation fix in Theorem 8 and the remainder sentence in Theorem 2) are applied.** Frozen means: the proved results below are not reopened; open statements are worked in their own files and enter by a dated amendment. The item enters `SGAP.md` by a dated amendment. The lead (Claude Opus 5.5, laptop) checked that the edits are in the text; that is a text check, not a second referee. **Status.** In the finite-ring model and conditional on the frozen atom and Gauss reduction, the arguments below give (G1′), (HF-alt), and S-GAP⁰ for the stated constants. Pass 3 done (SGAP0_REFEREE.md); edits applied; ready to freeze. **GAP corrected:** the draft calls every contractible polymer at least two cells. Singletons are contractible polymers; their activities vanish. The proof below excludes these zero-activity polymers from the gas. Open statements to carry: **S-GAP at `t≠0`**; **(G1) inside `𝒱_p`**; **Sharper constants** (open refinement); **A4's `W_odd≤Kw`**; **Downstream, unchanged:** R1.5-U, R1.5-D beyond the `t=0` charged-gap subcase, R15-GNS, P3, Q-R15, the tick/generator state comparison, W2-LIGHT, R1-H, FLQ, R2, R3-H, R3-D and W2/R4. **Proposed readings, unchanged:** R15-SPEC and R-COR stay proposed and not adopted. The small-ring calculation is a reported check, not proof.
 
-**Provenance.** Pass 1: Claude Opus 5.5, max, `SGAP0_DRAFT.md`. Pass 2: Codex `gpt-6.1-terra`, effort and session id: see run log. SHA-256: draft `71ee2dd593e9b067ea8333603f5c83641e286668f2234f4df723fef788dc93ca`; digest `77815dd273e0378093b01e3448ed974cbc5182a0f3c25e08f1854bfae3cd5435`; `SGAP.md` `be026f7cc7afcdfcb59c98473debee4ac7f9f600bea6ae92ff23d4fc845bdc91`; `SMG15.md` `b65cf2e1b52ff83b756e355b1293e54754da89be4bfa4db3bbd0502573b6a995`; `SMG1.md` `1e5a05a66d0b11016d18264351321165979d569cd84ad213e1dc4072cb021622`; `LW1.md` `78280bd620800eac671ddf6047d42e94c2ecf919d2f938909cc5595b168c09b9`; `TOE_ASSEMBLY.md` `0cdb4965d1df7fa279cad98c1be9bb5654043d01f677434df1e5f05f1ef32ee0`. Historical source revisions are those recorded in the draft; they were not refreshed with git. No scratch calculation was reproduced; `/tmp/toe-SGAP0` was unavailable.
+**Provenance.** Editing session: Codex `gpt-6.1-terra`, effort high, `codex-cli 0.165.0`; session id not visible. Pass 1: Claude Opus 5.5, max, `SGAP0_DRAFT.md`. Pass 2: Codex `gpt-6.1-terra`, effort and session id: see run log. SHA-256: draft `71ee2dd593e9b067ea8333603f5c83641e286668f2234f4df723fef788dc93ca`; digest `77815dd273e0378093b01e3448ed974cbc5182a0f3c25e08f1854bfae3cd5435`; `SGAP.md` `be026f7cc7afcdfcb59c98473debee4ac7f9f600bea6ae92ff23d4fc845bdc91`; `SMG15.md` `b65cf2e1b52ff83b756e355b1293e54754da89be4bfa4db3bbd0502573b6a995`; `SMG1.md` `1e5a05a66d0b11016d18264351321165979d569cd84ad213e1dc4072cb021622`; `LW1.md` `78280bd620800eac671ddf6047d42e94c2ecf919d2f938909cc5595b168c09b9`; `TOE_ASSEMBLY.md` `0cdb4965d1df7fa279cad98c1be9bb5654043d01f677434df1e5f05f1ef32ee0`. Historical source revisions are those recorded in the draft; they were not refreshed with git. No scratch calculation was reproduced; `/tmp/toe-SGAP0` was unavailable.
 
 ## 1. Definitions inferred by the distiller
 
@@ -27,17 +27,17 @@ The exact zero-coupling statement is already proved in `SGAP.md` Theorem 2: at `
 
 ## 3. Histories and polymer activities
 
-Fix `p`, an integer `n_s≥4`, and `β=n_s d`. Divide the time circle into slots `I_k=[kd,(k+1)d)`, `k∈Z_{n_s}`. Cells `(x,k)` form the graph `Z_L×Z_{n_s}` with nearest-neighbour edges. Its degree is four.
+Fix `p`, an integer `n_s≥4`, and `β=n_s d`. Divide the time circle into slots `I_k=[kd,(k+1)d)`, `k∈Z_{n_s}`. Cells `(x,k)` form the graph `Z_L×Z_{n_s}` with nearest-neighbour edges. Its degree is four. Write `Z_p=Tr_𝓗e^{−βH_p}`, and `Π_p^⊥` for the orthogonal projector onto `𝒱_p^⊥`.
 
 A **history** consists of a starting character configuration, finitely many distinct ordered times and bond/flavour labels, all moves active, with the final configuration equal to the initial one. Its path is piecewise constant and periodic. Write `ω_i` for its move amplitudes and
 
 `wt(h)=(-ε)^n (∏_i ω_i) exp[-∫_0^β H_0(χ(t))dt]`.
 
-The history measure sums over initial configurations and labels and integrates the ordered times. Its **shadow** contains each cell in which a site is excited at some time and both endpoint cells of every jump in that slot. Outside the shadow the site is vacuum throughout the slot and no jump touches it. A **polymer** is a nonempty connected cell set. Polymers are incompatible when they meet or have adjacent cells; `N[γ]` is the set incompatible with `γ`, including itself. They are **contractible** if they miss a time slot, **winding** otherwise. Let `m(γ)` be the minimum number of cells in one time slice. The activity `w_p(γ)` is the integral of `wt(h)` over histories with exactly that shadow. `A_γ(r)` is the corresponding sum of absolute weights with `|ε|` replaced by `r` and all `|ω_i|` replaced by one. Write `w_p^{(2)}` for the two-jump contribution.
+The history measure sums over initial configurations and labels and integrates the ordered times. Its **shadow** contains each cell in which a site is excited at some time and both endpoint cells of every jump in that slot. Outside the shadow the site is vacuum throughout the slot and no jump touches it. A **polymer** is a nonempty connected cell set. Polymers are incompatible when they meet or have adjacent cells; `N[γ]` is the set incompatible with `γ`, including itself. They are **contractible** if they miss a time slot, **winding** otherwise. Let `m(γ)` be the minimum number of cells in one time slice. Thus `m(γ)=0` for contractible `γ`. The activity `w_p(γ)` is the integral of `wt(h)` over histories with exactly that shadow. `A_γ(r)` is the corresponding sum of absolute weights with `|ε|` replaced by `r` and all `|ω_i|` replaced by one. Write `w_p^{(2)}` for the two-jump contribution.
 
 **Theorem 2 (Dyson expansion and factorization).** `Tr e^{-βH_p}` is the sum over compatible families of polymers of the product of their activities. Charge multiplies and `ν` adds over history components. Every contractible component has labels `(1,0)`. Thus a history with different labels has a winding component.
 
-*Proof.* For matrices `A≥0`, `B`, the Dyson series follows by iterating `F'(s)=−e^{sA}Be^{-sA}F(s)` for `F(s)=e^{sA}e^{-s(A+B)}`. The `n`th term has norm at most `(β‖B‖)^n/n!`; hence the expansion is absolutely convergent. Applying it to `H_0` and `ε∑T` and taking the trace gives the history integral.
+*Proof.* For matrices `A≥0`, `B`, the Dyson series follows by iterating `F'(s)=−e^{sA}Be^{-sA}F(s)` for `F(s)=e^{sA}e^{-s(A+B)}`. After `n` iterations the remainder is an integral of `B(s_1)⋯B(s_n)F(s_n)`, with `B(s)=e^{sA}Be^{−sA}`, over a simplex of volume `β^n/n!`; its norm is at most `(β sup_{s≤β}‖B(s)‖)^n sup_{s≤β}‖F(s)‖/n!→0` (referee closure, SGAP0_REFEREE.md). After multiplication by `e^{−βA}` on the left, the `n`th term has norm at most `(β‖B‖)^n/n!`; hence the expansion is absolutely convergent. Applying it to `H_0` and `ε∑T` and taking the trace gives the history integral.
 
 Each jump's endpoint cells lie in one shadow component. Restrict the path to one component and put the vacuum elsewhere. At the ends of each run of cells at a site, the adjacent outside cell is vacuum; hence the restricted path closes and uses precisely the jumps of that component. A move amplitude depends only on its two site factors, by the site-even factorization in `SGAP.md` Theorem 4, so amplitudes and the on-site energy weight factorize. Conversely, compatible component histories have disjoint, nonadjacent shadows; merging their jump sets gives one history. Coincident jump times form a null set, and the event-set measure is the product measure. This proves the partition-function identity. The labels compose because vacuum sites contribute `1` to `q` and `0` to `ν`. A contractible component is vacuum in a missing slot and has those labels there and hence at all times, by Theorem 1. `□`
 
@@ -51,9 +51,9 @@ Every closed history has an even number of jumps. A contractible history with no
 
 A singleton contractible polymer has zero activity. In a degree-four graph at most `16^{m−1}` connected `m`-cell sets contain a fixed cell.
 
-*Proof.* Choose a time at a slice of minimal occupancy. At most `16^{m(γ)}` initial configurations occur. A jump in a bond-slot requires both endpoint cells in `γ`; there are at most `|γ|` such bond-slots. For a chosen set `J` of occupied bond-slots, summing its events and eight flavours costs `u(r)` per slot. Every untouched shadow cell is excited for its entire slot and costs at most `v`. At most `2|J|` cells are touched. Drop all other constraints and sum over `J`: the result is bounded by `16^{m(γ)}2^{|γ|}φ(r)^{|γ|}`.
+*Proof.* Choose a time at a slice of minimal occupancy. At most `16^{m(γ)}` initial configurations occur. A jump in a bond-slot requires both endpoint cells in `γ`; there are at most `|γ|` such bond-slots. For a chosen set `J` of occupied bond-slots, summing its events and eight flavours costs `u(r)` per slot. Every untouched shadow cell is excited for its entire slot and costs at most `v`. At most `2|J|` cells are touched. Since `u≤1`, `u^{|J|}≤(√u)^{#touched}`, so each term is at most `φ(r)^{|γ|}`. Drop all other constraints and sum over `J`: the result is bounded by `16^{m(γ)}2^{|γ|}φ(r)^{|γ|}`.
 
-Let `j_x` count jumps on bond `x`. Closure forces `j_{x−1}+j_x` even at each site, since each touch flips parity. Thus all `j_x` have the same parity; `L` is even, so their sum is even. A contractible history is vacuum in a missing slot. Zero jumps then gives empty shadow. With two jumps the first creates two odd characters from vacuum, hence is active only at a wall; closure forces the same bond and flavour for the second. The displayed bounds follow by extracting at least two or four powers of `|ε|/r`. Every jump touches two distinct cells, so a contractible singleton has no history. Finally, a connected `m`-cell set has a spanning tree and is the range of a depth-first walk of `2(m−1)` steps from the chosen cell. There are at most `4^{2(m−1)}=16^{m−1}` walks. `□`
+Let `j_x` count jumps on bond `x`. Closure forces `j_{x−1}+j_x` even at each site, since each touch flips parity. Thus all `j_x` have the same parity; `L` is even, so their sum is even. A contractible history is vacuum in a missing slot. Zero jumps then gives empty shadow. With two jumps the first creates two odd characters from vacuum, hence is active only at a wall; closure forces the same bond and flavour for the second. The displayed bounds follow by extracting at least two or four powers of `|ε|/r` and using `m(γ)=0`. Every jump touches two distinct cells, so a contractible singleton has no history. Finally, a connected `m`-cell set has a spanning tree and is the range of a depth-first walk of `2(m−1)` steps from the chosen cell. There are at most `4^{2(m−1)}=16^{m−1}` walks. `□`
 
 **GAP in pass 1, corrected.** After its Lemma 4.4, the draft says every contractible *polymer* has at least two cells. A singleton is a counterexample to that set-theoretic statement. It has zero activity by Theorem 3. Below `𝒬` contains only contractible polymers with at least two cells. Removing the zero-activity singletons leaves every partition function unchanged and restores the lower limit `m=2` in all sums. Winding polymers have at least `n_s≥4` cells.
 
@@ -61,7 +61,7 @@ Let `j_x` count jumps on bond `x`. Closure forces `j_{x−1}+j_x` even at each s
 
 For a finite set `Q` of polymers with a symmetric, reflexive incompatibility relation, put `Z(Q)=∑_{X⊂Q compatible}∏_{γ∈X}w(γ)`.
 
-**Theorem 4 (Dobrushin induction).** Suppose nonnegative `μ(γ)` obey
+**Theorem 4 (Dobrushin induction).** Suppose nonnegative `μ(γ)`, `γ∈Q`, obey, for every `γ∈Q`,
 
 `|w(γ)|∏_{γ'∈Q∩N[γ]}(1+μ(γ'))≤μ(γ)`.
 
@@ -91,7 +91,7 @@ With `Z_c=Z(𝒬)` for the activities of `p` and `Z_p^⊥=Tr(Π_p^⊥e^{-βH_p})
 
 *Proof.* A polymer incompatible with `γ` meets `γ` or one of its neighbours, at most `5|γ|` cells. Put `y=16θe^{1/8}≤0.2095`. Theorem 3 bounds the sum of `μ` over polymers containing one cell by `(λ²/16)y²/(1−y)≤0.00347λ²`. Multiplication by five gives less than `λ²/50` per cell of `γ`. Thus `∏(1+μ)≤e^{|γ|λ²/50}≤e^{|γ|/8}`, which proves the criterion. Theorem 3 gives the required activity bound for both `p` and `p_alt`.
 
-A winding polymer meets slot zero, has `|γ|≥n_s` and `m(γ)≤|γ|/n_s`. Theorem 3 and the count give the bound on `ζ`, using `16^{1/n_s}≤2`. Split each compatible family into winding and contractible members. Repeated application of Theorem 4 bounds the ratio after excluding all neighbours of the winding members by `∏_γ e^{|γ|λ²/50}`. Sum their absolute activities and drop compatibility to obtain `e^ζ−1`. For the projected trace, Theorem 2 makes the label constraint depend only on winding pieces and forces at least one; absolute integration gives the same bound. `□`
+A winding polymer meets slot zero, has `|γ|≥n_s` and `m(γ)≤|γ|/n_s`. Theorem 3 and the count give `ζ≤L∑_{m≥n_s}16^{m−1}16^{m/n_s}x^m=L(16x)^{n_s}/(1−16^{1+1/n_s}x)`; then use `16^{1/n_s}≤2` in the denominator (referee closure, SGAP0_REFEREE.md). Split each compatible family into winding and contractible members. Repeated application of Theorem 4 bounds the ratio after excluding all neighbours of the winding members by `∏_γ e^{|γ|λ²/50}`. Sum their absolute activities and drop compatibility to obtain `e^ζ−1`. For the projected trace, Theorem 2 makes the label constraint depend only on winding pieces and forces at least one; absolute integration gives the same bound. `□`
 
 ## 5. Sector gap
 
@@ -113,7 +113,7 @@ Every ground vector of `H_p` therefore lies in `𝒱_p`. This does not prove a g
 
 **Theorem 7 (closed-history identity).** If a closed move sequence is active in two patterns and uses every bond an even number of times, its product of move amplitudes is the same in both chains. Consequently, if `p≠±p_alt`, then for a contractible polymer `γ` that sees no bond of `NW(p)`, `w_p(γ)=w_{p_alt}(γ)`. Here `γ` sees `b` when both endpoint cells of `b` occur in the same slot.
 
-*Proof.* The Gauss reduction of `SMG15.md` Theorem 2 identifies the closed product with a Fock-space matrix element; choice of phases for the one-site character vectors cancels. Write `T_{x,a}=M_{x,a}Λ_x`, where `M=iγ_{x,a}γ_{x+1,a}` uses mirror modes and `Λ=hop_x⁰` uses light modes. These even operators commute across the two mode sets. A fixed mirror-line vector and a light occupation vector therefore factor the closed matrix element into a mirror part, independent of `p`, and a light part.
+*Proof.* The Gauss reduction of `SMG15.md` Theorem 2 identifies the closed product with a Fock-space matrix element; choice of phases for the one-site character vectors cancels. Write `T_{x,a}=M_{x,a}Λ_x`, where `M=iγ_{x,a}γ_{x+1,a}` uses mirror modes and `Λ=hop_x⁰` uses light modes. These even operators commute across the two mode sets. The chain vector is, up to phase, `A_χB_n|0⟩`, where `A_χ` is a polynomial in mirror modes independent of `p` and `B_n=∏_{x↑}(c_x†)^{n_x}`; writing `M` and `Λ` for the respective ordered products, the closed element equals `⟨0|A_χ†MA_χ|0⟩·⟨n|Λ|n⟩`: a mirror part, independent of `p`, times a light part.
 
 Every active light hop exchanges different occupations. In increasing-site Fock order its sign is `+1` on non-wrap bonds and `(-1)^{N−1}` on the wrap bond. `N` is conserved and the wrap bond occurs an even number of times, so the light product is `+1` in either pattern. This proves the first statement.
 
@@ -123,9 +123,9 @@ If `p≠±p_alt` and `γ` sees no non-wall bond of `p`, all its jumps are at wal
 
 `e_p−e_{p_alt}≥|NW(p)| ε²/(6τ)`.
 
-Thus `e_{p_alt}=min_p e_p` and (HF-alt) holds with `δ=0`. For nonzero `ε` the inequality is strict unless `p=±p_alt`.
+Thus `e_{p_alt}=min_p e_p` and (HF-alt) holds with `δ=0`. For nonzero `ε`, `e_p>e_{p_alt}` unless `p=±p_alt`.
 
-*Proof.* The alternating patterns have equal energy by Theorem 1. Otherwise interpolate the contractible activities: `w_s=(1−s)w_p+sw_{p_alt}`, `0≤s≤1`, and put `Δw=w_{p_alt}−w_p`. Theorem 5 supplies one Dobrushin bound for every `s`. By Theorem 4,
+*Proof.* The alternating patterns have equal energy by Theorem 1. Otherwise interpolate the contractible activities: `w_s=(1−s)w_p+sw_{p_alt}`, `0≤s≤1`, and put `Δw=w_{p_alt}−w_p` and `Δw^{(2)}=w^{(2)}_{p_alt}−w^{(2)}_p`. Theorem 5 supplies one Dobrushin bound for every `s`. By Theorem 4,
 
 `log|Z_1|−log|Z_0| ≥ ∑_γ Re Δw^{(2)}(γ) − ∑_γ|Δw−Δw^{(2)}|(γ) − ∑_γ|Δw(γ)|(e^{|γ|λ²/50}−1)`.
 
@@ -133,7 +133,7 @@ The two-jump histories are vacuum pairs. On a common wall their weights agree. F
 
 `∑_γ Δw^{(2)}(γ) ≥ |NW(p)| β (2ε²/(7τ))(1−e^{-28τ(β−2d)})`.
 
-For either error sum, Theorem 7 restricts `γ` to polymers seeing some `b∈NW(p)`. Anchor one such polymer at `(b,k)`; there are at most `|NW(p)|n_s` anchors. For each anchor Theorems 3 and 4 give
+For either error sum, Theorem 7 restricts `γ` to polymers seeing some `b∈NW(p)`. Anchor one such polymer at `(b,k)`; there are at most `|NW(p)|n_s` anchors. For each anchor Theorem 3 gives
 
 `∑_{γ∋(b,k)} |Δw−Δw^{(2)}| ≤ (λ⁴/8)(16θ)²/(1−16θ) ≤ 0.00524λ⁴`,
 
@@ -153,7 +153,7 @@ For `|ε|≤2·10⁻¹⁰τ`, `τλ⁴/90≤0.0922 ε²/τ`, and `2/7−0.0922�
 
 For `ε≠0` in this range every half-filled ground vector lies in `K_{p_alt}⊕K_{−p_alt}`.
 
-*Proof.* Theorem 6 puts every ground vector of `H_{p_alt}` in the neutral vacuum-label sector. As `k(p_alt)=L/2`, it gives a neutral half-filled ground vector at energy `e_{p_alt}`. Theorem 8 says no block has lower energy; hence `E_0=E_1=e_{p_alt}`. Every charged vector belongs to the complement of `𝒱_p` in its block, so Theorem 6 gives `E_σ≥min_p e_p+7τ`. The final assertion follows from the strict part of Theorem 8. `□`
+*Proof.* Since `c₀τ≤10⁻⁸τ≤R`, Theorem 6 applies with the bound `7τ`. Theorem 6 puts every ground vector of `H_{p_alt}` in the neutral vacuum-label sector. As `k(p_alt)=L/2`, it gives a neutral half-filled ground vector at energy `e_{p_alt}`. Theorem 8 says no block has lower energy; hence `E_0=E_1=e_{p_alt}`. Every charged vector belongs to the complement of `𝒱_p` in its block, so Theorem 6 gives `E_σ≥min_p e_p+7τ`. The final assertion follows from the strict part of Theorem 8. `□`
 
 This proves a finite-ring subcase of the chirality target, conditional on the supplied model and prior results. It does not establish the 3+1-dimensional target in `TOE_ASSEMBLY.md`. `SGAP.md` Corollary 4.4 already proves even multiplicity at `t=0`; the above does not determine the full degeneracy.
 

@@ -1,14 +1,19 @@
 # HCM repair: smooth data on the renewed rim
 
+Check: [Claude's HCM-SC check](../gates/hcm-repair-check.md), FINISH row 520; repairs and HCM-TB follow-up, row 524.
+
 Codex, 2026-11-08. Pinned checkout `1e8cc3962ccbae7cc8d07f162da22e5a01b3a31f`.
 Research text. Not an audit. Grants no status. No computer-assisted proof.
 
-Result: stopping condition (c). The smooth collar insertion HCM-SC remains open after three routes.
+Result, corrected after the check: HCM-SC remains open after two genuine routes.
+The old Route 1 keeps the obstructing bare data, so it does not count as a repair attempt.
+Deleting artificial lower rows gives the distinct HCM-TB route in [hcm-tb.md](hcm-tb.md).
+That follow-up stops at TB-BC after three new routes; it does not claim the payment is proved.
 The required payment follows conditionally, but the repaired stage and all its consumers are not proved compatible.
 
 ## 1. Scope and source premises
 
-This is FINISH row 503. This session writes only this file.
+The original note is FINISH row 503. Row 524 repairs it at pinned commit `9f5dc5330`.
 There is no `library/prior/hcm-repair.md` at this checkout.
 The H-C-MARK registry row is open and has no other owner.
 The target is the proposed construction change in `gates/hc-mark-check.md`, finding 10.
@@ -76,7 +81,8 @@ Those bonds currently receive the face lift of \(V_m\).
 
 The proposed guard keeps (2), including its units.
 It replaces the artificial collar datum used to construct \(U^{\rm pr}_{m,X}\).
-It must use one fine interpolation and its actual successive averages on every artificial collar level.
+If lower artificial rows remain, it must use one fine interpolation and its actual successive averages there.
+It may instead delete those rows and change the artificial boundary tower, as HCM-TB proposes.
 Changing bare values while silently keeping incompatible intermediate values is not a definition of that datum.
 Physical retained rows and their delta functions still have their original values.
 New artificial rows are auxiliary boundary data, not replacements for the retained physical variables.
@@ -87,7 +93,7 @@ The initial one-step face lift and the terminal density-test lift need not be ch
 They serve different constructions.
 
 Calling a plaquette a level-\(m\) plaquette does not smooth its holonomy.
-Replacing (2) by a bound in joined-level units would weaken the positive expansion hypothesis of Y 61905.
+Replacing (2) by a bound in joined-level units would weaken Y 61905 and SA R4, lines 5672–5685.
 That is a different change, and is not used here.
 
 Bałaban's geometric R-class, described at I 55379–55392, does not prove this new guard admissible.
@@ -105,7 +111,7 @@ Include every plaquette needed by their datum tests.
 Let
 
 \[
- D_{m,X}=\max_{P\ {m read}}|1-\partial V_m(P)|.
+ D_{m,X}=\max_{P\ \mathrm{read}}|1-\partial V_m(P)|.
 \]
 
 All four-block bare carriers must avoid the old floor.
@@ -152,6 +158,12 @@ The island event itself is not being substituted for the rim event.
 One must still allocate this energy once.
 Y 76813–76864 proves the old mark-halo allocation for its stated carriers.
 A changed interpolation must fit those carriers, or prove the corresponding enlarged-carrier allocation.
+That halo adds only two level-\(m\) unit-cube layers, by Y 76817–76820.
+The check raises the possibility that the rim lies beyond that halo; a larger-carrier allocation would then be an input.
+The size comparison alone does not establish this: Y 63760–63771 identifies the localization box \(X\) with the component.
+The \(O(M)\) final integration box is the different box \(\Lambda^{\rm pr}\), Y 63825–63836.
+See [hcm-tb.md](hcm-tb.md), §5. Complete carriers inside \(X=C(u)\) fit the original halo.
+Any carrier extending beyond \(C(u)^+\) still needs the larger allocation, with floor exclusion and bounded overlap.
 Merely placing its output bond outside the floor does not place its full input there.
 After a fixed overlap division and an integration reserve, write the available share as \(c_*P_m^2\).
 The constants \(c_w,c_*\) are inputs from the retained action and ownership rules.
@@ -187,12 +199,14 @@ It does not prove those premises for a new collar.
 
 ## 4. The first supplier: HCM-SC
 
-**HCM-SC means an exact local smooth collar insertion.**
+**HCM-SC means an exact local smooth collar insertion. It is sufficient, not necessary.**
 It is a statement about replacing artificial determining data.
 It is not the global same-system extension called LOC-flat in `dom.md`, Lemma 12.
 That extension and general later-domain admission remain with the DOM-FULL registry row.
 
-Fix one actual stage geometry, its old common rows, and its artificial collar rows.
+Fix one actual stage geometry and its old physical common rows.
+The repair may change the artificial tower and delete its lower artificial rows.
+The conditions below apply only to artificial rows that remain.
 On the source collar, common rows have its top level; see Y 13116–13120.
 No freedom to overwrite old physical finer rows is assumed.
 Let \(\mathcal P_{\rm rim}\) contain every rim plaquette stencil touched by the replacement.
@@ -208,7 +222,7 @@ For all real top data with \(D_{m,X}\le d_0\), it must construct a fine connecti
 \(\mathscr I_{m,X}(V_m)\) on those padded collar stencils, with these properties:
 
 1. Its level-\(m\) averages equal \(V_m\) on every common top row.
-   Every lower artificial row is its actual iterated average.
+   Every retained lower artificial row is its actual iterated average; deleted rows impose no condition.
    Its mixed tests use those same averages on their complete carriers.
    It agrees with every old common row encountered by the replacement.
 2. It satisfies
@@ -241,9 +255,9 @@ R4 also needs controlled local gauges, complex potentials and independent curren
 R5–R6 quantify over every admitted subdomain, erosion and tower truncation.
 The source explicitly retains these application conditions at I 49495–49546.
 
-## 5. Three routes to HCM-SC
+## 5. The old obstruction and two routes to HCM-SC
 
-### Route 1: minimize with the existing joined boundary
+### Old Route 1: the unchanged-boundary obstruction, not a repair route
 
 This route keeps the joined determining set and applies Bałaban's constrained minimizer there.
 It preserves the original exact constraints and locality.
@@ -259,7 +273,7 @@ This is a reuse of their face-lift obstruction, not another history construction
 The account's bound (1) agrees with it: the local determining scale there is bare.
 Changing the minimizing functional without changing these four constraints cannot help.
 
-**Failed step:** obtaining top-scale smoothing from a minimizer with unchanged bare face data.
+This proves why the data must change. It is not one of the three routes required by stopping condition (c).
 
 ### Route 2: minimize at the top scale, then patch the collar
 
@@ -432,6 +446,16 @@ The pivot example does not show that every such correction fails.
 
 **Failed step:** upgrading the known linear smooth lift to a local nonlinear exact section without concentrating curvature.
 
+### HCM-TB: retain the top level at the artificial boundary
+
+CA-I 43000–43004 gives a lower bound on the boundary tower, not a forced descent there.
+Keep the ambient level-\(m\) rows at the outer join and retain the erosion toward the old core.
+Delete the artificial lower rows. Use the constrained minimizer on this changed determining set.
+Its top averages are exact constraints. There is then no collar face lift to smooth.
+The claimed rim scale is \(\ell_{\mathfrak B}=\ell_m\), so (1) has the desired factor \(L^{-2m}\).
+Applying that theorem at a free outer boundary, and preserving its consumers, still needs proof.
+This route is pursued in [hcm-tb.md](hcm-tb.md); a padded localized layer reduces to the same question.
+
 ## 6. Consumers of the face lift
 
 I searched Y and I for `face.?lift`, and followed the named collar-comparison labels in Y.
@@ -454,13 +478,17 @@ It is not a proof of any new evaluation in their domains.
 | Ordinary strip localization and shifts: Y 62432–62510 | The ordinary localization remains unchanged. Comparisons involving a repaired stage require its new domain and complete-carrier bounds. |
 | Canonical holomorphic collar target and covariance: Y 62717–62805 | Its original target reads one top bond and two full blocks. A changed target needs its own gauge law, holomorphy and declared carrier. Curvature control is insufficient. |
 | Strip/density comparison and prefinal/final inset read: Y 63182–63214, 64050–64087 | Exact top-row preservation keeps the ordinary test-cube datum identical. Comparing the repaired stage with that datum still needs HCM-SC(4). |
+| Prefinal exterior datum tests: Y 64088–64107 | The old tests reduce to identity or lifted top holonomy. With HCM-TB they become actual top-row tests. Existence and subsequent comparison on the changed tower still need proof. |
+| Stage curvature estimate at the artificial join: Y 71368–71382 | The old face lift transfers the top datum bound. HCM-TB deletes those artificial tests; its full free-boundary curvature estimate must replace their use. |
 | Inset positive evaluations and prospective global orbit: Y 64568–64617, 65536–65573 | These distinguish the interior seam from the outer face lift. Their inset and unchanged-global-row arguments do not cover the new full rim. |
 | Literal final regularity guard: Y 72324–72338 | This is the changed test of §2. Its numerical threshold stays fixed. |
 | Terminal product-ball and action bound: Y 98111–98163 | Unchanged. Its tested plaquettes already lie inside the top member. It is a useful model for the auxiliary tower, not a full-rim stage theorem. |
 | Linearized localized read: Y 102096–102126 | The ordinary localization is unchanged. A changed caller needs the new comparison before its derivative can be taken. |
 | Common-exterior precision comparison: Y 103250–103290 | It needs identical complete local inputs and a common joined background. Nonlocal completion of the rim datum would invalidate that premise. |
 | Lower/upper localized readout comparison and datum ball: Y 104134–104225 | The original localizations remain. Any repaired-stage use must retain the ancestor frames, logarithmic chart bounds and exponential collar estimate. |
+| Cutoff comparison on a test-cube tower: Y 134088–134131 | Unchanged by the collar-only modification. Its lifted test-radius datum is an independent localization, like Y 98111–98163. |
 | Exact constraint manifold: I 43100–43155 | The minimizer solves its prescribed constraint problem. It does not prove equivalence between two different determining systems. |
+| Tower localization: I 45115–45160 | The proposed outside-reblocking route requires compatibility between coarse constraints crossing the cut and finer constraints in the smaller tower. It is explicitly unproved there. A changed caller must supply its corresponding comparison. |
 | Real gauges and stopped-stage spaces: I 49495–49546; SA 17433–17447 | Each term keeps its creation domain, and stopped stages retain their actual determining sequence. New collar data need admission there; the old action sequence cannot be silently changed. |
 | Preparatory boundary theorem: I 54985–55024 | The theorem assumes the stage theorem and its analytic spaces. Its locality conclusion cannot be applied before verifying the changed reads. |
 | Bałaban's R-class and retained factors: I 55379–55420 | The geometric class and old stored factors do not prove this analytic insertion or provide another energy copy. |
@@ -472,8 +500,8 @@ No full consumer-preservation claim is made here.
 
 ## 7. Result and status
 
-**Stopping condition (c). HCM-SC remains open after three distinct routes.**
-Route 1 preserves exact boundary data but cannot smooth their fixed plaquette product.
+**The original claim of stopping condition (c) is withdrawn. Only two genuine repair routes were tried.**
+The old Route 1 preserves the very boundary data that HCM-SC proposes to replace.
 Route 2 supplies a smooth auxiliary field but not its insertion into the original stage and all its domains.
 Route 3 supplies a smooth linear inverse but not a local nonlinear correction with the required curvature scale.
 
@@ -481,7 +509,7 @@ The splice and pivot examples refute those recipes, not every smooth repair.
 There is no new counterexample to H-C-MARK in this note.
 The source's old face-lift counterexample does not refute a correctly inserted smooth collar either.
 
-The next supplier must prove the actual insertion clause, with its exact averaging and local input clauses.
+The next supplier may prove the insertion clause or delete the artificial lower rows by HCM-TB.
 It must control free rim stencils as well as the four-bond determining plaquettes.
 A homogeneous minimizer estimate alone would leave the same unproved step.
 
@@ -501,4 +529,4 @@ A homogeneous minimizer estimate alone would leave the same unproved step.
 | Its convolution correction has no finite-range inverse | Proved here, (11) | Support argument, independent of any numerical calculation. |
 | A one-pivot correction need not preserve bare-scale smoothness | Proved here using SA 8165–8199 | Exact commuting calculation; a distributed correction remains possible. |
 | All changed consumers retain their bounds | Input — not established | Specific dependencies are listed in §6. |
-| **First open input: HCM-SC, §4** | **Input — open after three routes** | **Exact local smooth insertion, including original-stage comparison and domain transport. H-C-MARK is not proved.** |
+| **First open input: the changed-boundary supplier in HCM-TB** | **Input — see [hcm-tb.md](hcm-tb.md)** | **HCM-SC is a sufficient alternative, open after two genuine routes. H-C-MARK is not proved here.** |

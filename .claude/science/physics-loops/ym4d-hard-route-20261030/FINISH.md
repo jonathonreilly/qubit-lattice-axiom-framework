@@ -626,11 +626,11 @@ Work on PR #10132 of jonathonreilly/qubit-lattice-axiom-framework, branch claude
 | 555 | `live-fgi-recheck` | done 2026-11-08 (laptop Claude subagent, Opus 5.5): gates/live-fgi-recheck.md, FIX (one line). Repairs in; at 20a both core forms give two pieces with the midpoint missing (computed by hand); class tests pass; section 4 holds; later no-joining conditions are added assumptions only. One gap: waiting depth R exactly (I 49762, I 51178): set N = R. Row 559. |
 | 556 | `leaf-hy-check` | done 2026-11-08 (laptop Claude subagent, Opus 5.5): gates/leaf-hy-check.md, ADVANCE. Both kill tests and both leaves confirmed. Covered: geo-2, geo-3, geo-4, geo-5, cond-c, inn-213, sa-2.8-terms. Must be restated: st1-r4 Lemma 2 and pda.md (L) (CA lower nest false at i >= h+2). Row 561. |
 | 557 | `tree2` | queued 2026-11-08 on Mini Codex (gpt-6-astra max): second tree sketch for SJ-PB, HC-MARGIN-0, J-ENTRY, HMA-BRANCH, D4-OLD-TOWER-ENTRY; output library/hstep-tree2.md. Done (library/hstep-tree2.md): first leaves SJ-EXPOSURE, HC-TOP-READ, J-OUTWARD-ID with H-ROWS (shared regional join), D-OLD-ANCHOR. Rows 564-567. |
-| 558 | `leaf-sc-fix` | queued 2026-11-08 (laptop Codex gpt-6-astra high): apply the four minor repairs. |
-| 559 | `live-fgi-fix2` | queued 2026-11-08 (laptop Codex gpt-6-astra high): set N = R for the waiting rule. |
-| 560 | `live-nj-fix` | queued 2026-11-08 (laptop Codex gpt-6-astra high): add the I 78969 core paragraph. |
-| 561 | `hy-fix` | queued 2026-11-08 (laptop Codex gpt-6-astra high): HY check repairs and consumer list. |
-| 562 | `out-live2` | queued 2026-11-08 (laptop Codex gpt-6-astra high, after rows 559-561): combined outward note: counterexample on the account's class, full proof under the outlines' rule, suggested repair. Then one faithfulness check and the owner OK. |
+| 558 | `leaf-sc-fix` | run 2026-11-08 (laptop Codex gpt-6-astra high): apply the four minor repairs. Done. |
+| 559 | `live-fgi-fix2` | run 2026-11-08 (laptop Codex gpt-6-astra high): set N = R for the waiting rule. Done. |
+| 560 | `live-nj-fix` | run 2026-11-08 (laptop Codex gpt-6-astra high): add the I 78969 core paragraph. Done. |
+| 561 | `hy-fix` | run 2026-11-08 (laptop Codex gpt-6-astra high): HY check repairs and consumer list. Done 22:36Z, 6d07d1e8d. |
+| 562 | `out-live2` | run 2026-11-08 (laptop Codex gpt-6-astra high, after rows 559-561): combined outward note: counterexample on the account's class, full proof under the outlines' rule, suggested repair. Then one faithfulness check and the owner OK. Done 22:44Z, 67551da79: combined note and issue. Faithfulness check row 570. |
 | 563 | `bz-own` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2d): close BZ-CUT with our own buffered cut, without CMP 122 (owner asked whether we can make it ourselves); output library/bz-own.md. Open-access route also named to the owner: Dimock arXiv 1212.5562, 1304.0705, 1502.02946, 2009.01156 (download needs owner OK). |
 | 564 | `leaf-sjexp` | queued 2026-11-08 on Mini Codex (gpt-6-astra max): SJ-EXPOSURE. |
 | 565 | `leaf-hctop` | queued 2026-11-08 on Mini Codex (gpt-6-astra max): HC-TOP-READ. |
@@ -638,3 +638,4 @@ Work on PR #10132 of jonathonreilly/qubit-lattice-axiom-framework, branch claude
 | 567 | `leaf-danchor` | queued 2026-11-08 on Mini Codex (gpt-6-astra max): D-OLD-ANCHOR. |
 | 568 | `leaf-cbr` | queued 2026-11-08 on Mini Codex (gpt-6-astra max): CBR (15) for TB-BC, routes distinct from leaf-tbflat. |
 | 569 | `bz-122` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2h): close BZ-CUT from Balaban's CMP 122a/122b, now on disk (owner downloads 2026-11-08 from Project Euclid: cmp/1104178393, cmp/1104178467); output library/bz-122.md. |
+| 570 | `out-live2-check` | running 2026-11-08 (laptop Claude subagent, Opus 5.5): faithfulness check of the combined live-region note; output gates/out-live2-check.md. |

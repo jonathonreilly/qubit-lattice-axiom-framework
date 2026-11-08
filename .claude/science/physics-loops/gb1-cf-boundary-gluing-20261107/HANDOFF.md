@@ -135,3 +135,11 @@ closure is claimed.
 Editable task prompts created are PRIMARY_SPEC.md and CHECKER_SPEC.md;
 GOAL.md is the task contract. No existing shared instruction or axiom file,
 platform-supplied instruction, audit verdict or authority record was edited.
+
+## Continuing native placement milestone, 2026-11-08
+
+The preceding sections preserve the completed boundary milestone. The
+current placement result and next scientific decision are indexed by
+`native_placement/HANDOFF.md`, with the single current checkpoint in STATE.yaml.
+An all-origin code now gives geometric homogeneous placement conditionally;
+the native nearest-neighbor probability/record law remains open.

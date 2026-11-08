@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/gb1_cf_native_placement_exact_2026_11_08.py
+runner_sha256: 01b492f31004ede51696fb73f0f391fbba272ba186f8e93757586c29f7f03819
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+BOUNDS cpu=60s wall=60s RSS_guard=270000000 poll=0.05s threads=1
+SOURCE_SHA256 01b492f31004ede51696fb73f0f391fbba272ba186f8e93757586c29f7f03819
+LINK {"native_qubits": 4, "code_rank": 5, "inversion_eigenvalues": [1, -1, -1, -1, 1], "matrix_unit_products": 625, "quiescent_orthogonal": true}
+GEOMETRY {"phases": 125, "rotations": 24, "active_per_cell": 12, "spectators_per_cell": 113, "torus_native_qubits": 3375, "torus_active_qubits": 324, "detector_qubits": 24, "seed_l1_radius": 9, "seed_l1_diameter": 13}
+PHASE_SEPARATION [{"phase":[0,0,1],"axis":0},{"phase":[0,0,2],"axis":0},{"phase":[0,0,3],"axis":0},{"phase":[0,0,4],"axis":0},{"phase":[0,1,0],"axis":0},{"phase":[0,1,1],"axis":0},{"phase":[0,1,2],"axis":0},{"phase":[0,1,3],"axis":0},{"phase":[0,1,4],"axis":0},{"phase":[0,2,0],"axis":0},{"phase":[0,2,1],"axis":0},{"phase":[0,2,2],"axis":0},{"phase":[0,2,3],"axis":0},{"phase":[0,2,4],"axis":0},{"phase":[0,3,0],"axis":0},{"phase":[0,3,1],"axis":0},{"phase":[0,3,2],"axis":0},{"phase":[0,3,3],"axis":0},{"phase":[0,3,4],"axis":0},{"phase":[0,4,0],"axis":0},{"phase":[0,4,1],"axis":0},{"phase":[0,4,2],"axis":0},{"phase":[0,4,3],"axis":0},{"phase":[0,4,4],"axis":0},{"phase":[1,0,0],"axis":1},{"phase":[1,0,1],"axis":1},{"phase":[1,0,2],"axis":1},{"phase":[1,0,3],"axis":1},{"phase":[1,0,4],"axis":1},{"phase":[1,1,0],"axis":2},{"phase":[1,1,1],"axis":0},{"phase":[1,1,2],"axis":0},{"phase":[1,1,3],"axis":0},{"phase":[1,1,4],"axis":0},{"phase":[1,2,0],"axis":2},{"phase":[1,2,1],"axis":0},{"phase":[1,2,2],"axis":0},{"phase":[1,2,3],"axis":0},{"phase":[1,2,4],"axis":0},{"phase":[1,3,0],"axis":2},{"phase":[1,3,1],"axis":0},{"phase":[1,3,2],"axis":0},{"phase":[1,3,3],"axis":0},{"phase":[1,3,4],"axis":0},{"phase":[1,4,0],"axis":2},{"phase":[1,4,1],"axis":0},{"phase":[1,4,2],"axis":0},{"phase":[1,4,3],"axis":0},{"phase":[1,4,4],"axis":0},{"phase":[2,0,0],"axis":1},{"phase":[2,0,1],"axis":1},{"phase":[2,0,2],"axis":1},{"phase":[2,0,3],"axis":1},{"phase":[2,0,4],"axis":1},{"phase":[2,1,0],"axis":2},{"phase":[2,1,1],"axis":0},{"phase":[2,1,2],"axis":0},{"phase":[2,1,3],"axis":0},{"phase":[2,1,4],"axis":0},{"phase":[2,2,0],"axis":2},{"phase":[2,2,1],"axis":0},{"phase":[2,2,2],"axis":0},{"phase":[2,2,3],"axis":0},{"phase":[2,2,4],"axis":0},{"phase":[2,3,0],"axis":2},{"phase":[2,3,1],"axis":0},{"phase":[2,3,2],"axis":0},{"phase":[2,3,3],"axis":0},{"phase":[2,3,4],"axis":0},{"phase":[2,4,0],"axis":2},{"phase":[2,4,1],"axis":0},{"phase":[2,4,2],"axis":0},{"phase":[2,4,3],"axis":0},{"phase":[2,4,4],"axis":0},{"phase":[3,0,0],"axis":1},{"phase":[3,0,1],"axis":1},{"phase":[3,0,2],"axis":1},{"phase":[3,0,3],"axis":1},{"phase":[3,0,4],"axis":1},{"phase":[3,1,0],"axis":2},{"phase":[3,1,1],"axis":0},{"phase":[3,1,2],"axis":0},{"phase":[3,1,3],"axis":0},{"phase":[3,1,4],"axis":0},{"phase":[3,2,0],"axis":2},{"phase":[3,2,1],"axis":0},{"phase":[3,2,2],"axis":0},{"phase":[3,2,3],"axis":0},{"phase":[3,2,4],"axis":0},{"phase":[3,3,0],"axis":2},{"phase":[3,3,1],"axis":0},{"phase":[3,3,2],"axis":0},{"phase":[3,3,3],"axis":0},{"phase":[3,3,4],"axis":0},{"phase":[3,4,0],"axis":2},{"phase":[3,4,1],"axis":0},{"phase":[3,4,2],"axis":0},{"phase":[3,4,3],"axis":0},{"phase":[3,4,4],"axis":0},{"phase":[4,0,0],"axis":1},{"phase":[4,0,1],"axis":1},{"phase":[4,0,2],"axis":1},{"phase":[4,0,3],"axis":1},{"phase":[4,0,4],"axis":1},{"phase":[4,1,0],"axis":2},{"phase":[4,1,1],"axis":0},{"phase":[4,1,2],"axis":0},{"phase":[4,1,3],"axis":0},{"phase":[4,1,4],"axis":0},{"phase":[4,2,0],"axis":2},{"phase":[4,2,1],"axis":0},{"phase":[4,2,2],"axis":0},{"phase":[4,2,3],"axis":0},{"phase":[4,2,4],"axis":0},{"phase":[4,3,0],"axis":2},{"phase":[4,3,1],"axis":0},{"phase":[4,3,2],"axis":0},{"phase":[4,3,3],"axis":0},{"phase":[4,3,4],"axis":0},{"phase":[4,4,0],"axis":2},{"phase":[4,4,1],"axis":0},{"phase":[4,4,2],"axis":0},{"phase":[4,4,3],"axis":0},{"phase":[4,4,4],"axis":0}]
+EVEN_VERTEX_SINGLET_MULTIPLICITIES [1, 1, 2, 5]
+CAPACITY {"E": 54, "V": 27, "cycle_dimension": 28, "incidence_rank": 26, "n": 3, "periodic": false, "physical_dimension_lower_bound": 268435456, "same_site_count_qubit_dimension": 134217728}
+CAPACITY {"E": 81, "V": 27, "cycle_dimension": 55, "incidence_rank": 26, "n": 3, "periodic": true, "physical_dimension_lower_bound": 36028797018963968, "same_site_count_qubit_dimension": 134217728}
+per_element: exact four-qubit matrix units preserve all five link states and inversion.
+per_site: one M2 factor per native site is used under supplied tensor composition.
+per_mode: checked and not executed - no momentum, spectral, or continuum mode claim.
+per_block: all 125 phase residues and all 24 proper rotations are exhausted exactly.
+lattice_wide: finite certificates support the general local proof; no full infinite tensor matrix is built.
+TOTAL: PASS=795 FAIL=0
+{"seconds": 0.00823512498755008, "peak_rss_bytes": 24920064}
+
+----- stderr -----
+

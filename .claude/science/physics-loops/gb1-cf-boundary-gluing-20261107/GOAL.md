@@ -37,3 +37,27 @@ file is to change. Keep full original evidence and negative witnesses.
 The supervisor owns note integration, status, commits and PR updates; workers
 write only their assigned paths. Use separate derivations and exact arithmetic.
 This is a bounded follow-up probe, not an unattended open-ended campaign.
+
+## Next bounded task, 2026-11-08
+
+User: tackle homogeneous native qubit placement of the glued five-state SU(2)
+model without changing the axioms. The user explicitly adds that the framework
+may be wrong: the objective is the right framework, not protecting these axioms.
+Treat both the lattice framework and the supplied gauge model as testable.
+Do not reinterpret a failed exact identification as closure. Compare exact
+same-spacing identification, finite-density coarse encodings, full native
+translation/rotation covariance, and the distinct physical-law requirement.
+
+Main and instruction refs remain f5af11cd0102cfd0b51aef0911f600130bf5beb1 and
+56c5c0ab64f532c5784e895b2f9aa6894fa334e0 after fresh fetch. Research input is
+17f68f575f3de7c1a24a4761e01c8307a9e99955. Current axiom memo and primitive
+registry re-read; no primitive supplies a block origin or physical code state.
+The current checkpoint stays in this packet; native task evidence goes under
+native_placement/. Previous exact source/review receipts remain unchanged.
+
+Decisive tests: exact capacity on finite cubic graphs, an explicit isometry
+with disjoint native supports, geometric endpoint reversal, and behavior under
+every native translation and proper cubic rotation. A periodic fixed-origin
+code alone is not full homogeneous placement. No axioms, authority files or
+shared prompts will be modified. Conditional encodings are not a derived
+Admissibility/Record law.

@@ -1,57 +1,64 @@
-Finite SU(2) plaquettes share noncommuting link operators, and treating every
-patch boundary as a singlet discards states needed by its neighbors. This PR
-derives the two-plaquette operators and an invariant joint gate, then extends
-the same five-state link model to exact cutting and boundary-flux gluing.
+The supplied five-state SU(2) link model needs compatible overlapping patches,
+retained boundary flux, and an explicit placement on native qubits. This PR
+provides three connected finite-model results, with the physical law and
+continuum identifications kept separate.
 
-For two closed plaquettes, the physical sector has four states and
-`[B_L,B_R]|L> = -3|R>`. The joint exponential preserves gauge invariance and
-square exchange at every angle; the specified ordered and Strang products
-have explicit exchange defects. The note gives finite qubit encodings with
-their initialization and locality limits.
+- **Two plaquettes:** the complete closed sector has four states, with exact
+  shared-link commutator `[B_L,B_R]|L> = -3|R>`. A joint exponential preserves
+  gauge invariance and square exchange; the specified ordered and Strang
+  products have explicit exchange defects.
+- **Boundary gluing:** cutting is an isometric, coassociative reconstruction
+  that intertwines transporters and their adjoints. Electric weights must
+  count the original edge once. Retaining boundary irreps and multiplicities
+  reconstructs all 18 closed states of the four-plaquette square in three
+  groupings; premature zero flux gives 4 and clipped multiplicity/channel
+  gives 16. The open-boundary count is obtained without a dense matrix.
+- **Native placement:** four collinear native qubits encode one link and its
+  reversal by literal site permutation. At coarse spacing five, all 125 grid
+  origins form orthogonal code sectors on the same one-qubit-per-site lattice.
+  Their direct sum is invariant under every native translation and proper
+  cubic rotation. Local 24-qubit projectors distinguish the origins and give
+  an exact finite-range extension of a supplied cubic gauge Hamiltonian.
 
-The boundary extension constructs an isometric link cut whose full image is
-the new-vertex singlet sector. It intertwines the transporter and its adjoint,
-is associative under repeated cuts, and identifies the electric weights needed
-to count each original link once. Regions glue by retaining boundary irreps
-and multiplicities until each complete vertex incidence is present. On the
-four-plaquette square, regional dimensions 325 and 13 reconstruct all 18
-singlet states in three groupings. Premature zero-flux boundaries give only
-4; deleting intertwiner multiplicity or an intermediate spin-one channel gives
-16. With the outer boundary left open, the exact dimension is 22,265,625,
-computed without a dense matrix.
-
-These are conditional bounded theorems and upstream support for GB1-CF in
-#10139. The finite gauge-model gluing obligation is established under the
-specified model; full GB1-CF is still open. Native homogeneous qubit allocation,
-spatially covariant nearest-neighbor updates, Admissibility/Record dynamics,
-state selection and continuum identification are not supplied. No axiom or
-authority record changes. Both author proposals await formal landing review
-and audit; ready-for-review status is not scientific acceptance.
+The native construction retains an extra encoding-origin degree of freedom,
+12 active qubits and 113 fixed spectators per coarse cell. It is a chosen
+quantum code, not an origin-free single copy or a physical code-selection
+mechanism. Its interactions reach beyond nearest neighbors. Regional gluing
+on the fixed coarse graph is preserved; subdivision requires separate target
+register allocation. Native Admissibility/Record dynamics, physical state,
+clock, couplings, and continuum comparison remain open. No vacuum or mass-gap
+closure, axiom edit, or evidence that the framework is physically correct is
+claimed. Explicit finite dimension comparisons also reject the same-site-count
+full-sector identification under ordinary tensor composition.
 
 Validation and evidence:
 
-- Separately authored exact coordinate/sparse-action and Haar/coefficient
-  derivations agree. For the graph, occupancy/fusion, independent signed
-  Laurent-character elimination and a direct cycle-space count agree.
-  Contexts share a model family and raw premises; no different-provider
-  independence is claimed.
-- Focused complete-note checks and correction dispositions are preserved in
-  the research packs. These are research checks, not formal landing panels.
-- All four production runners have successful content-bound caches. Each
-  primary statically imports its corresponding checker and declares that
-  source as a cache input; actual helper extraction confirms reachability.
-- The pair packet preserves seven scratch mutations and its checker faults.
-  The gluing packet rejects incorrect cut normalization, reversed chain order,
-  unweighted electric energy, premature boundary projection, discarded
-  multiplicity and a missing intermediate-spin channel. Separate graph fault
-  invocations fail with exit 1. Initial resource-limit failure evidence is
-  preserved alongside the successful bounded final runs.
-- Focused syntax, vocabulary, relative-link, cache-identity, source-recovery
-  and diff checks passed. Full pipeline and formal landing/audit checks remain
-  pending. There are no generated authority or dependency-policy edits.
+- Separate coordinate and Haar/fusion derivations agree on the pair and
+  boundary results, with different graph-counting routes. A fresh native
+  placement derivation independently gives capacity bounds and a different
+  invariant code using spacing-nine markers. The supervisor's spacing-five
+  construction was frozen before reading that result. Same model family and
+  shared raw premises remain limitations on independence.
+- Complete mathematical source comparisons and scoped correction receipts
+  are preserved. These are research checks, not formal landing panels or audits.
+- Five production runners have successful content-bound caches. The native
+  runner checks all 625 matrix-unit products, all phase residues and proper
+  rotations, support geometry and graph ranks using exact arithmetic. No
+  enormous native Hilbert-space matrix is constructed.
+- Mutations test normalization, operator order, energy counting, boundary
+  constraints and multiplicity in the earlier packets. Three separate native
+  faults reject incorrect reversal parity, nonzero quiescent overlap, and a
+  preferred origin. Full successful and failed execution evidence is preserved.
+- Focused syntax, vocabulary, local links, source identities, cache evidence
+  and diff checks passed. Full pipeline and formal landing/audit remain pending.
 
-The displayed failures are finite witnesses for particular shortcuts, not
-no-go claims against other encodings or laws. Proofs, full outputs, source
-identities, worker briefs and recovery paths are indexed by the two research
-handoffs under `.claude/science/physics-loops/gb1-cf-pair-20261107/` and
-`.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/`.
+These are conditional bounded theorems supporting GB1-CF, not full GB1-CF
+closure. The capacity evidence consists of explicit finite counterexamples;
+the committed scope check claims no general negative-packet PASS. Other codes,
+emergent sectors and frameworks remain live. No audit authority, premise
+registry, or shared instruction files change.
+
+The existing pair and boundary research packs index complete proofs, original
+outputs, worker briefs, source identities and recovery paths. The current
+checkpoint is `.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/STATE.yaml`;
+its `native_placement/HANDOFF.md` indexes the latest result.

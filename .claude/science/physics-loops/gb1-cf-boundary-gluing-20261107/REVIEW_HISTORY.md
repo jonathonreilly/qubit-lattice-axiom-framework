@@ -42,3 +42,16 @@ CHECKER_CLARIFICATION_REVIEW.md confirms both corrections and that no other
 source bytes changed. Both review receipts are copied unchanged from the
 checker worktree. Neither covers implementation/cache receipts, which were
 checked by the supervisor, nor confers a formal landing/audit verdict.
+
+## Native placement follow-up
+
+A fresh restricted-context proof probe derived an alternative spacing-nine
+marker construction before seeing the supervisor's frozen spacing-five code.
+The complete source comparison then checked the theorem, scope sidecar,
+runner and normal cache. The one gluing-scope finding was corrected and
+verified by the same checker; final theorem SHA-256 is
+`0d457372fe995529ad1fc13e3c9d6f696fe27b9a5ee3b1ef78852214a928604c`.
+Full proof and receipts are in native_placement/INDEPENDENT_PLACEMENT.md,
+NATIVE_SOURCE_REVIEW.md and NATIVE_CLARIFICATION_REVIEW.md. The supervisor
+reviewed the complete artifacts and separately checked mutation executions.
+No different-family, formal landing or audit check is claimed.

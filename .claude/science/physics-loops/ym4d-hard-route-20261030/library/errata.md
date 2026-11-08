@@ -89,6 +89,22 @@ Some entries narrow scope, add an explicit admission condition, or change the st
 | 48 | [17508–17508](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/YM4_sketch_500.tex#L17508-L17508) | see (2e), “Reality and positivity” | Section (2e), 19408–19524, has no paragraph with that title or the asserted support-normalization proof. | Remove this dangling reference. Give the actual support-normalization proof location separately if that assertion is retained. | [library/sa-findings.md:7](sa-findings.md#L7); [gates/share-check-199fac1cb.md:235](../gates/share-check-199fac1cb.md#L235) | reference |
 | 49 | [17887–17889](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/YM4_sketch_500.tex#L17887-L17889) | $O(k-j)$ | At j=k this would force zero. The earlier formulation at 17640 includes the endpoint allowance. | Use O(1+k−j), consistently with line 17640. | [library/sa-findings.md:10](sa-findings.md#L10); [library/sa-2.8.md:95](sa-2.8.md#L95) | constant |
 
+## Class C: not for the errata issue
+
+The line-by-line check (`library/errata-check.md`) moved these nine entries out of the issue. Each fix changes what a statement claims or needs a real argument. Entry 27 was dropped: the quoted sentence concerns the core lemma, and the short-single majorization is already printed at CA-II 36006–36007.
+
+| Entry | Location | Verdict |
+|---|---|---|
+| 5 | CA-I 16019–16020; 16238–16240 | The status lines do disagree with the continuation 16268–16990. Removing "proof incomplete" asserts that the continuation proves the lemma; that needs a full check, and entries 6–8 show slips in it. |
+| 13 | CA-I 45203–45204 | 4.9:cor-printed-pairs states similar content with B₁₂, c₁₂LM and reading (ℓ1); the lemma uses B, c_□ and the widened reading, and their open list (CA-I 166622–166623) still names it. Citing the corollary needs that identification. |
+| 16 | CA-I 154355–154366; 154697–154700; 155402–155403; 156010–156011; 156210–156214 | Replacing block-constant gauges by general relative gauges changes statements (a) and (c) and a constant, and needs a cost bound. Not checked to closure. |
+| 18 | CA-I 157039–157041 | Changes the stated normalization of 4.33 and its partition-function bounds; our checks report the lower member false for the Chapter 1 densities. |
+| 20 | CA-II 2869–2877 | The defect is real (empty m-range when K < m_𝕋(g)); moving (i)–(ii) outside the quantifier strengthens the theorem and needs a check that their proof does not use m. |
+| 26 | CA-II 35489–35503; 36787–36791 | The defect is real; the fix makes the block total conditional on a bound that is not a hypothesis of the lemma. |
+| 42 | CA-II 77439–77443 | The defect is real; the fix adds the enclosure of supp(G₁G₂) as a new hypothesis. |
+| 45 | CA-II 142705–142720; 145461–145465 | Restricting pair existence and its positivity consequences to 0 < ϑ ≤ 1/2 changes a positivity range. |
+| 47 | SA 10334–10336 | Restricting the gauge covariance of χ_Y𝖠χ_Y to block-constant maps changes a stated property; its uses would need checking. |
+
 ## Dropped candidate groups
 
 | Candidate | Record | Reason for exclusion |

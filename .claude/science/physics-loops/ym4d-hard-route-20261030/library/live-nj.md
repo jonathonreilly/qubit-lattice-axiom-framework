@@ -1,5 +1,14 @@
 ## Repo search
 
+Repair search, FINISH row 560, at `85d76598f`: `prior/live-nj-fix.md` is absent.
+Searched `origin/main`, `pr/10114`, `pr/10133`, `pr/10134` and `pr/10141` in the full repository.
+Terms: `live-nj`, `no-joining`, bounded line numbers `78969|93532|63870`, core with `two.layer|erosion`, and single-box quarantine.
+No target repair was found. Two files matched on `pr/10141`:
+`research/ym4d/library/lg1.md:365–367` states reflection positivity for every periodic Wilson DLR state, citing Y3 78969.
+`research/ym4d/library/st1-r4.md:1601,1622` distinguishes scalar and elementwise analytic cores and retains ER7 as assumed.
+Neither concerns the geometric core here. The initial bare-number search hit unrelated numbers and was replaced by bounded terms.
+The prior digest's sections 6–7 and the hits below remain the relevant prior work.
+
 The lead found no live-strip proof on main or PRs #10114, #10133 and #10134.
 I reused `prior/repo-search-2026-11-08.md`, especially its section 6, rather than repeating that search.
 `prior/live-nj.md` is absent at this checkout.
@@ -27,9 +36,11 @@ Neither prior result is rederived below.
 
 # Live geometry with no joining in an operation window
 
+Claude (Opus 5.5) checked the original note in [live-nj-check.md](../gates/live-nj-check.md); this revision applies its repairs.
+
 Codex, 2026-11-08. Source revision `cf13e06cc5db4b85832b077e26e7b4649a584ac1`.
 FINISH row 549. Research text, not an audit. This text grants no status.
-Written and author-checked by Codex; not yet checked by the other model.
+Repair by Codex, FINISH row 560, from checkout `85d76598f`; no fresh other-model reading of this revision.
 No computation supplies a proof step. Only this file is written.
 The shared checkout advanced during writing; the cited prior notes and index were unchanged from the source revision.
 
@@ -113,6 +124,7 @@ Thus its induction supplies (a)–(e) and (h), with their original constants.
 Clause (a) retains its stated domain \(i\ge m\).
 
 More precisely, a live birth at \(m\) carries a standing mark until its consuming localisation.
+An island carries a mark: SA 17433 calls islands and drop-outs the marked components.
 If its component is treated with lower index \(h\), closed-endpoint quarantine gives
 \[
  m<h. \tag{1}
@@ -265,7 +277,22 @@ The specified core, using the same component restriction as the preparation, is
  =H_{h+1}^{[a_{h+1}]}. \tag{10}
 \]
 Indeed, \(G_{h+1}=H_{h+1}^{[10a_{h+1}]}\subset C\), so intersection with \(C\) clips nothing.
+Every other component \(A\) of \(Z_h\) stays in a different component of \(Z_k\), since \(C\cap Z_h=G_h\).
+Its enlarged hull lies inside its ten-layer step output in \(Z_{h+1}\), so it cannot reach \(C\).
 The hull and layer are boxes. This is precisely where no joining excludes `live-fgi.md`'s disconnected core.
+
+Now check the defining form at I 78969 and 93532.
+By I 63883, \(\Omega''_{h+1}=(Z''_{h+1})^c\).
+Put \(H=H_{h+1}\) and \(a=a_{h+1}\). Equation (5) gives \(Z''_{h+1}\cap C=D_{h+1}=H^{[3a]}\).
+Since \(C\supset G_{h+1}=H^{[10a]}\), this box has distance at least \(7a\) from \(C^c\).
+Thus only \(C\setminus D_{h+1}\) contributes to the complement's two-layer enlargement inside \(D_{h+1}\).
+Adding two layers of \(a\)-cubes to that complement removes two layers from the grid box \(H^{[3a]}\).
+Hence
+\[
+ (\Omega''^{\,\sim2}_{h+1})^c\cap C
+ =H^{[a]}=(Z'_h)^{\sim}\cap C.
+\]
+Both defining forms give the same box as I 63870. The identity at I 78969 holds under the no-joining rule.
 
 The hull adds at most \(a_{h+1}\) at each face of \(G_h\).
 The final layer adds the same amount again.
@@ -434,7 +461,7 @@ Together with `geoh-live-ab.md`, this supplies every geometric clause (a)–(i2)
 The result concerns finite histories of the specified geometric transitions.
 It does not assert Wilson-field support for arbitrarily chosen test outcomes or identify a different revised operation with these rules.
 The contour and counting hypotheses beginning after I 85644 remain outside this task.
-The new argument and the ports here have not yet received an independent model check.
+Claude's check confirms the original argument apart from the missing defining-form paragraph, now supplied in section 5.
 
 | Clause | Conclusion under the outlines' rule | Proof or credited input |
 |---|---|---|
@@ -444,11 +471,11 @@ The new argument and the ports here have not yet received an independent model c
 | (d) | At T, \(\operatorname{dist}_i(Y^\sharp,\Omega_{i+1})\ge7R_i\). | Prior T-buffer proof; section 2 here. |
 | (e) | An untreated strip lies in its component and has distance at least \(R_k\) from the running treated region. | Prior sections 5–6; section 2 here. |
 | (f) | \(\widetilde\Lambda_C\) is a box; sides \(\le90\le112\) at level \(k\); distance from \(Z^c\) at least \(9R_k\). | Section 4, porting N 63749–63834 and I 63788–63857 with single predecessors. |
-| (g): level and core | \(m<h\), hence \(m\le h\); the core is a box of current cells of levels at most \(h\); sides \(\le104LR_{h+1}\). | Sections 2 and 5; I 63861–63892. |
+| (g): level and core | \(m<h\); both core forms give a box of current cells of levels at most \(h\); sides \(\le104LR_{h+1}\). | Sections 2 and 5; I 63870, 78969 and 93532. |
 | (g): containment and margin | \(Y^\sharp\subset\mathsf C_C\); \(\operatorname{dist}_h(Y^\sharp,\mathsf C_C^c)\ge R_h\ge(R_h+1)/2\). | Equation (12); the source's \(m<h\) branch, I 63898–63900. |
 | (g): touching cubes | Every native cube of level at most \(k\) touching the strip lies in \(\Lambda_C\). | Section 5; I 63905–63906. |
 | (h) | Treated P-collar distance \(5R_{h+1}/2\); untreated distance \(R_k\); no P integration bond meets a live strip. | Prior sections 5–6, including its actual coordinate and bond checks. |
-| (i1) | A probe meeting the strip has level at most \(m\). | Section 6: persistent separation \(\operatorname{dist}_n(Y^\sharp,\Omega_n)\ge3\) in the probe's own units for every \(n>m\); I 63919–63924's implication. |
+| (i1) | \(\operatorname{dist}_n(S,\Omega_n)\ge3\) for every existing \(n>m\); a probe meeting the strip has level at most \(m\). | Section 6, equation (13); I 63919–63924's implication. |
 | (i2) | A probe meets at most \(2^d\) live strips. | Section 7: I 63926–63933's vertex argument, now supplied with (i1) and the prior disjointness. |
 
 **First open input:** none for these four clauses under the stated geometric construction.

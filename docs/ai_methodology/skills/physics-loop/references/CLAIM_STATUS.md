@@ -91,11 +91,11 @@ algebraic structure alone.
 
 *Admissibility / Local Constraint*
 
-There is one fixed nearest-neighbor admissibility rule, covariant under lattice
+There is one fixed neighborhood admissibility rule, covariant under lattice
 translations and proper cubic rotations.
 
 For each site, the probability distribution over the possibilities is
-determined by, and varies with, the nearest-neighbor conditions.
+determined by, and varies with, the neighborhood conditions.
 
 *Reading notes (interpretive, non-governing).* (1) The distribution is
 law-level: the general substrate is the weighted-branching realization, with

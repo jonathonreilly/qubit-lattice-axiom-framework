@@ -98,6 +98,16 @@ axiom text, approved primitives, or audited derivation (section 1).
 
 Recorded explicitly approved axiom updates:
 
+- **2026-11-08 -- Admissibility: neighborhood wording (owner-approved).**
+  The owner explicitly approved substituting "neighborhood" for
+  "nearest-neighbor" in both governing Admissibility sentences in
+  `docs/MINIMAL_AXIOMS_2026-06-29.md`, and approved landing the axiom-only PR.
+  The resulting phrases are "one fixed neighborhood admissibility rule"
+  and "the neighborhood conditions". These are the only governing axiom
+  wording changes authorized by this entry. No clock, update, propagation
+  mechanism, neighborhood extent, or probability values are added.
+  Historical record of approval only; the axiom text is the premise source.
+
 - **2026-07-03 -- Record section polish: one-record-per-site restored and
   the record block unified.** The Record axiom's opening is edited in place
   (owner-approved, 2026-07-03) to one two-sentence block: "When present, a

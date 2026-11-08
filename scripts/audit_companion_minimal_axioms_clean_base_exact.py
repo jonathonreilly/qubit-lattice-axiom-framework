@@ -125,7 +125,7 @@ def governing_admissibility_distribution_sentence(note: str) -> str:
         return ""
     match = re.search(
         r"For each site,\s+the probability distribution over the possibilities is\s+"
-        r"determined by, and varies with, the nearest-neighbor conditions\.",
+        r"determined by, and varies with, the neighborhood conditions\.",
         section,
     )
     return normalize(match.group(0)) if match else ""
@@ -382,7 +382,7 @@ def source_boundary_checks() -> list[Check]:
         Check("Cl(3,0) is fenced as representation-only", "adds no further primitive structure" in note, ""),
         Check(
             "Admissibility local-constraint clause is present",
-            contains(note, "one fixed nearest-neighbor admissibility rule")
+            contains(note, "one fixed neighborhood admissibility rule")
             and contains(note, "covariant under lattice translations and proper cubic rotations")
             and bool(governing_distribution_sentence),
             "",
@@ -486,7 +486,7 @@ def run_checks() -> list[Check]:
     support = {possibility for possibility, probability in distribution.items() if probability > 0}
     checks.append(
         Check(
-            "Admissibility: nearest-neighbor conditions determine a normalized distribution and support",
+            "Admissibility: neighborhood conditions determine a normalized distribution and support",
             sum(distribution.values()) == 1.0 and support == {"down"},
             "toy distribution only: local conditions set lock-outcome odds and support; no transition or dynamics is used",
         )

@@ -637,3 +637,4 @@ Work on PR #10132 of jonathonreilly/qubit-lattice-axiom-framework, branch claude
 | 566 | `leaf-jh` | queued 2026-11-08 on Mini Codex (gpt-6-astra max): J-OUTWARD-ID and H-ROWS on one regional join. |
 | 567 | `leaf-danchor` | queued 2026-11-08 on Mini Codex (gpt-6-astra max): D-OLD-ANCHOR. |
 | 568 | `leaf-cbr` | queued 2026-11-08 on Mini Codex (gpt-6-astra max): CBR (15) for TB-BC, routes distinct from leaf-tbflat. |
+| 569 | `bz-122` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2h): close BZ-CUT from Balaban's CMP 122a/122b, now on disk (owner downloads 2026-11-08 from Project Euclid: cmp/1104178393, cmp/1104178467); output library/bz-122.md. |

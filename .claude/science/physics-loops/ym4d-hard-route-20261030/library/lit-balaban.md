@@ -215,3 +215,5 @@ Credit: Balaban for every statement located here; Sussman and Alpoge, with
 Claude and Codex as authors of their text, for the raw-account readings and
 page citations of Section 3; A. Goswami and W. Dybalski, A. Stottmeister,
 Y. Tanimoto for Section 2.
+
+- **2026-11-08, availability.** CMP 122 (1989) 175-202 (122a) and 355-392 (122b) are now on disk, downloaded by the owner from Project Euclid (cmp/1104178393 and cmp/1104178467): Mini ~/ym4d-papers/cmp122a.txt, cmp122b.txt with the PDFs; laptop ~/ym4d-lead/papers/. Text layers extracted with PDFKit; check formulas against the PDFs. Never commit the PDFs or text.

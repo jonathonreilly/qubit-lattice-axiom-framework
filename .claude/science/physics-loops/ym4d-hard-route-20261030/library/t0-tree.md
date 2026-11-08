@@ -545,3 +545,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-07, rule 0f, lead: errata-check (row 409) and out-pda-check (row 436) moved from Mini worker 1 to laptop Claude subagents (owner OK); errata 1 = the checked A/B entries plus PDA if it is errata-class; later errata findings collect for errata 2.
 - 2026-11-07, rule 0f, lead: PDA outward note checked (row 436: FIX, no false step; endpoint defect class A); it is a proof post for a printed-without-proof proposition, so it posts on its own, not in the errata; fixes row 461.
 - 2026-11-07, rule 0f, lead: errata 1 checked (row 409): 35 entries (15 A, 20 B); 9 class C held out of the errata; 4 uncertain held for errata 2; awaiting owner OK.
+- 2026-11-08, rule 0f, lead: PDA outward note posted as issue #17 on owner OK; engagement check before posting (owner rule 2026-11-08) found no activity on #10-#16.

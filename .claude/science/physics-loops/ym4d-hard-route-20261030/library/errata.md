@@ -150,3 +150,13 @@ This collection confirms local textual defects and proposes edits. It does not c
 Only `library/errata.md` and `library/errata-issue.md` were written. No editable prompt file or platform instruction was changed.
 
 RESULT: 49 kept entries; 33 dropped candidate groups.
+
+## Held for errata 2 (checker uncertain, 2026-11-07)
+
+The line-by-line check confirmed these, but marked them least certain. They stay out of errata 1 under the full-confidence rule.
+
+- Entry 7: Holds only if "chi = 0 off Q" lets chi be nonzero on the boundary of Q. Row: | I | [16742–16744](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L16742-L16744); [16874–16883](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L16874-L16883) | Off $Q$, $\nu=0$ | Choose χ = 1 on the r/2 cube and χ = 0 outside the 3r/4 cube, with \|∇χ\| ≤ 4/r. | As written, χ may be nonzero at boundary sites of Q. A bond leaving Q then has Ã ≠ Â, and the gauge of statement (b) is not available at its outer end. With the new χ every bond that meets supp ν lies in Q, since 3r/4 + 1 ≤ r. |
+- Entry 17: The checker did not open the CMP 109 page itself. Row: | I | [154422–154425](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex#L154422-L154425) | equal to $U_j$ | Change U_j to u_j in both places, as in your quotation of the same passage at 29235–29239. The value at block centres belongs to a gauge transformation. |
+- Entry 23: The account never says how sigma_rad and sigma_0 relate; the fix gives both options. Row: | II | [26547–26549](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L26547-L26549); [26562–26562](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex#L26562-L26562) | $\mathfrak{d}_j=\sigma_0 x_j$ | Use the radii σ_rad x_j, and put (8/3)·2r ≤ σ_rad g⁻² in the list defining γ_J. If σ_rad = σ₀ is intended, stating it suffices. | f_{k+1} is holomorphic on the radii σ_rad x_j (2890). σ₀ is the slot-disc width (25302), and no relation between the two constants is stated. |
+- Entry 48: The intended target of the reference is a guess. Row: | outline | [17508–17508](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/YM4_sketch_500.tex#L17508-L17508) | see (2e), “Reality and positivity” | Section (2e) (19408–19528) has no paragraph with this title. Point to the intended statement, possibly Proposition 4.5 “Reality and positivity at real sources” (22602), or remove the reference. |
+

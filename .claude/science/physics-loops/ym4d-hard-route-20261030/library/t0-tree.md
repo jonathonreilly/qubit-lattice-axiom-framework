@@ -554,3 +554,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-08, rule 0f, lead: GW1 outward note posted as issue #19 on owner OK.
 - 2026-11-08, rule 0f, lead: LAYER-M registered (owner m3) for premise M / (M3) of the frozen layer theorem; prior digest row 470 and proof lane row 471 queued.
 - 2026-11-08, rule 0f, lead: critical-path triage done (row 472, library/cp-triage.md). LAYER-M construction claimed (row 471, library/m3.md, unchecked); Claude check row 473.
+- 2026-11-08, rule 0f, lead: LAYER-M (premise M of the frozen layer theorem) proved conditionally and checked (row 473: ADVANCE, wording only); repairs and outward note queued (rows 474-475).

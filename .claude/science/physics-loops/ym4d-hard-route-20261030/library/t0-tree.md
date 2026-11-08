@@ -549,3 +549,4 @@ Synced by Codex (gpt-6.1-sol), reading only.
 - 2026-11-08, rule 0f, lead: errata 1 posted as issue #18 (34 entries: 15 A, 19 B), after Claude check and gpt-6.1-sol second reading; 5 held for errata 2; 9 class C held out.
 - 2026-11-08, rule 0f, lead: GW1 registered (owner gw1): current-corrected walk bounds completing (K10) on the PI class; prior digest row 463 first.
 - 2026-11-08, rule 0f, lead: GW1 narrowed by its prior digest (row 463) to the (J7) port for G_1^J, q_{1,J}, H_1^J on the PI class; proof lane row 464 launched.
+- 2026-11-08, rule 0f, lead: GW1 proof claimed (row 464, library/gw1.md, unchecked); Claude check row 465.

@@ -1,0 +1,522 @@
+#!/usr/bin/env python3
+"""Exact author calculation for the supplied five-state two-square model.
+
+No matrix larger than 10 by 10 is constructed. Loop states and actions use
+sparse dictionaries on seven five-state factors. Run under lab_ops preflight
+and a numeric lease, with BLAS thread counts pinned to one. This runner does
+not acquire the lease itself and does not confer independent-check status.
+"""
+
+from __future__ import annotations
+
+from fractions import Fraction as F
+from hashlib import sha256
+from itertools import product
+from pathlib import Path
+import json
+import os
+import platform
+import resource
+import signal
+import subprocess
+import sys
+import threading
+import time
+
+
+START = time.monotonic()
+AUDIT_TIMEOUT_SEC = 80
+MEMORY_LIMIT = 240_000_000
+
+
+def rss_bytes():
+    value = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+    return value if sys.platform == "darwin" else value * 1024
+
+
+def guard():
+    while True:
+        if rss_bytes() > MEMORY_LIMIT:
+            print("RESOURCE STOP: peak RSS exceeded 240 MB", flush=True)
+            os._exit(90)
+        time.sleep(0.1)
+
+
+class G:
+    """Gaussian rational, including exact zero tests."""
+
+    __slots__ = ("r", "i")
+
+    def __init__(self, r=0, i=0):
+        self.r, self.i = F(r), F(i)
+
+    @staticmethod
+    def coerce(x):
+        return x if isinstance(x, G) else G(x)
+
+    def __add__(self, other):
+        other = self.coerce(other)
+        return G(self.r + other.r, self.i + other.i)
+
+    __radd__ = __add__
+
+    def __neg__(self):
+        return G(-self.r, -self.i)
+
+    def __sub__(self, other):
+        return self + (-self.coerce(other))
+
+    def __mul__(self, other):
+        other = self.coerce(other)
+        return G(self.r * other.r - self.i * other.i,
+                 self.r * other.i + self.i * other.r)
+
+    __rmul__ = __mul__
+
+    def __truediv__(self, other):
+        other = self.coerce(other)
+        norm = other.r * other.r + other.i * other.i
+        return G((self.r * other.r + self.i * other.i) / norm,
+                 (self.i * other.r - self.r * other.i) / norm)
+
+    def conj(self):
+        return G(self.r, -self.i)
+
+    def __bool__(self):
+        return bool(self.r or self.i)
+
+    def __eq__(self, other):
+        other = self.coerce(other)
+        return self.r == other.r and self.i == other.i
+
+    def __str__(self):
+        if not self.i:
+            return str(self.r)
+        if not self.r:
+            return f"{self.i}i"
+        return f"{self.r}{'+' if self.i >= 0 else ''}{self.i}i"
+
+
+I = G(0, 1)
+
+
+def zero(n):
+    return [[G() for _ in range(n)] for _ in range(n)]
+
+
+def ident(n):
+    out = zero(n)
+    for k in range(n):
+        out[k][k] = G(1)
+    return out
+
+
+def madd(*matrices):
+    n = len(matrices[0])
+    return [[sum((m[r][c] for m in matrices), G())
+             for c in range(n)] for r in range(n)]
+
+
+def mscale(s, a):
+    return [[s * v for v in row] for row in a]
+
+
+def mmul(a, b):
+    n = len(a)
+    out = zero(n)
+    for r in range(n):
+        for k in range(n):
+            if a[r][k]:
+                for c in range(n):
+                    if b[k][c]:
+                        out[r][c] = out[r][c] + a[r][k] * b[k][c]
+    return out
+
+
+def comm(a, b):
+    return madd(mmul(a, b), mscale(-1, mmul(b, a)))
+
+
+def adj(a):
+    return [[a[c][r].conj() for c in range(len(a))]
+            for r in range(len(a))]
+
+
+def kron(a, b):
+    return [[a[r][c] * b[u][v]
+             for c in range(len(a)) for v in range(len(b))]
+            for r in range(len(a)) for u in range(len(b))]
+
+
+def trace(a):
+    return sum((a[k][k] for k in range(len(a))), G())
+
+
+def clean(v):
+    return {k: x for k, x in v.items() if x}
+
+
+def vadd(*vectors):
+    out = {}
+    for v in vectors:
+        for k, x in v.items():
+            out[k] = out.get(k, F(0)) + x
+    return clean(out)
+
+
+def vscale(a, v):
+    return clean({k: a * x for k, x in v.items()})
+
+
+def inner(v, w):
+    # The loop vectors and tensor actions here have real rational amplitudes.
+    return sum((x * w.get(k, F(0)) for k, x in v.items()), F(0))
+
+
+def emit(label, value):
+    print(label + ": " + json.dumps(value, default=str, sort_keys=True), flush=True)
+
+
+def matrix_strings(a):
+    return [[str(x) for x in row] for row in a]
+
+
+def eps(a, b, c):
+    if len({a, b, c}) < 3:
+        return 0
+    return 1 if (a, b, c) in ((1, 2, 3), (2, 3, 1), (3, 1, 2)) else -1
+
+
+def link_calculation():
+    p = {}
+    for mu in range(1, 5):
+        p[mu] = zero(5)
+        p[mu][mu][0] = p[mu][0][mu] = G(F(1, 2))
+
+    def ell(mu, nu):
+        out = zero(5)
+        if mu != nu:
+            out[mu][nu], out[nu][mu] = -I, I
+        return out
+
+    j = {1: ell(2, 3), 2: ell(3, 1), 3: ell(1, 2)}
+    k = {a: ell(a, 4) for a in range(1, 4)}
+    plus = {a: mscale(F(1, 2), madd(j[a], k[a])) for a in j}
+    minus = {a: mscale(F(1, 2), madd(j[a], mscale(-1, k[a]))) for a in j}
+    sigma = {
+        1: [[G(0), G(1)], [G(1), G(0)]],
+        2: [[G(0), -I], [I, G(0)]],
+        3: [[G(1), G(0)], [G(0), G(-1)]],
+    }
+    q = zero(5)
+    for mu in range(1, 5):
+        q[mu][mu] = G(1)
+    casimir = mscale(F(3, 4), q)
+    for a, b in product(range(1, 4), repeat=2):
+        bracket_plus = madd(*(mscale(I * eps(a, b, c), plus[c]) for c in j))
+        bracket_minus = madd(*(mscale(I * eps(a, b, c), minus[c]) for c in j))
+        assert comm(plus[a], plus[b]) == bracket_plus
+        assert comm(minus[a], minus[b]) == bracket_minus
+        assert comm(plus[a], minus[b]) == zero(5)
+    for fields in (plus, minus):
+        assert madd(*(mmul(fields[a], fields[a]) for a in fields)) == casimir
+    for mu, nu in product(range(1, 5), repeat=2):
+        assert comm(p[mu], p[nu]) == mscale(I / 4, ell(mu, nu))
+
+    u = madd(kron(ident(2), p[4]),
+             *(kron(mscale(I, sigma[a]), p[a]) for a in sigma))
+    for a in j:
+        t = kron(mscale(F(1, 2), sigma[a]), ident(5))
+        assert comm(kron(ident(2), plus[a]), u) == mscale(-1, mmul(t, u))
+        assert comm(kron(ident(2), minus[a]), u) == mmul(u, t)
+    s = madd(*(mmul(p[mu], p[mu]) for mu in p))
+    ud_u = madd(kron(ident(2), s),
+                *(kron(mscale(F(-1, 2), sigma[a]), minus[a]) for a in j))
+    u_ud = madd(kron(ident(2), s),
+                *(kron(mscale(F(-1, 2), sigma[a]), plus[a]) for a in j))
+    assert mmul(adj(u), u) == ud_u
+    assert mmul(u, adj(u)) == u_ud
+    assert mmul(ud_u, ud_u) == ud_u
+    assert mmul(u_ud, u_ud) == u_ud
+    assert trace(ud_u) == 4
+    assert ud_u != ident(10)
+    reversal = ident(5)
+    for a in j:
+        reversal[a][a] = G(-1)
+    assert mmul(mmul(kron(ident(2), reversal), u), kron(ident(2), reversal)) == adj(u)
+    for a in j:
+        assert mmul(mmul(reversal, plus[a]), reversal) == minus[a]
+
+    emit("link_identities", {
+        "endpoint_commutators": "[N+_a,U]=-sigma_a U/2; [N-_a,U]=U sigma_a/2",
+        "endpoint_casimirs": "3/4 on four-state occupied sector; zero on empty state",
+        "coordinate_commutator": "[P_mu,P_nu]=i L_mu,nu/4",
+        "U_dagger_U_projector_rank": str(trace(ud_u)),
+        "U_is_unitary": False,
+        "reversal": "diag(1,-1,-1,-1,1); exchanges N+ and N-",
+    })
+    return plus, minus, sigma
+
+
+LINKS = (("A", "B"), ("B", "C"), ("D", "E"), ("E", "F"),
+         ("A", "D"), ("B", "E"), ("C", "F"))
+LOOPS = {
+    "L": ((0, 1), (5, 1), (2, -1), (4, -1)),
+    "R": ((1, 1), (6, 1), (3, -1), (5, -1)),
+    "O": ((0, 1), (1, 1), (6, 1), (3, -1), (2, -1), (4, -1)),
+}
+EMPTY = (0,) * 7
+
+
+def qmul(a, b):
+    """e_a e_b = sign e_c, with e_j=i sigma_j and e_4=I."""
+    if a == 4:
+        return 1, b
+    if b == 4:
+        return 1, a
+    if a == b:
+        return -1, 4
+    c = 6 - a - b
+    return -eps(a, b, c), c
+
+
+def loop_terms(loop, sigma):
+    # Each Q_mu=2P_mu is a toggle, leaving only the scalar 2^-length.
+    # Both quaternion and 2x2 Gaussian-rational color multiplication are used
+    # here as author self-checks; neither is an independent research gate.
+    n = len(loop)
+    e = {a: mscale(I, sigma[a]) for a in sigma}
+    e[4] = ident(2)
+    out = []
+    for mus in product(range(1, 5), repeat=n):
+        sign, index = 1, 4
+        color = ident(2)
+        for (_, direction), mu in zip(loop, mus):
+            factor = -1 if direction == -1 and mu != 4 else 1
+            newsign, index = qmul(mu, index)
+            sign *= factor * newsign
+            color = mmul(mscale(factor, e[mu]), color)
+        coefficient = F(2 * sign if index == 4 else 0, 2 ** n)
+        assert trace(color) == coefficient * 2 ** n
+        if coefficient:
+            out.append((tuple((edge, mu) for (edge, _), mu in zip(loop, mus)), coefficient))
+    return out
+
+
+def apply_terms(terms, vector, scale=F(1)):
+    out = {}
+    for state, amplitude in vector.items():
+        for factors, coefficient in terms:
+            dest = list(state)
+            for edge, mu in factors:
+                if state[edge] == 0:
+                    dest[edge] = mu
+                elif state[edge] == mu:
+                    dest[edge] = 0
+                else:
+                    break
+            else:
+                key = tuple(dest)
+                out[key] = out.get(key, F(0)) + scale * coefficient * amplitude
+    return clean(out)
+
+
+def apply_endpoint(fields, vertex, vector):
+    # All endpoint matrices are purely imaginary. Return the rational
+    # coefficient of i in G_vertex|vector>.
+    out = {}
+    plus, minus, a = fields
+    for edge, (source, target) in enumerate(LINKS):
+        if vertex == source:
+            matrix = minus[a]
+        elif vertex == target:
+            matrix = plus[a]
+        else:
+            continue
+        for state, amplitude in vector.items():
+            for dest_index in range(5):
+                x = matrix[dest_index][state[edge]]
+                assert x.r == 0
+                if x.i:
+                    dest = list(state)
+                    dest[edge] = dest_index
+                    dest = tuple(dest)
+                    out[dest] = out.get(dest, F(0)) + x.i * amplitude
+    return clean(out)
+
+
+def reflect(vector):
+    # x -> 2-x. The four horizontal stored links reverse orientation.
+    old_to_new = (1, 0, 3, 2, 6, 5, 4)
+    out = {}
+    for state, amplitude in vector.items():
+        dest = [0] * 7
+        sign = 1
+        for old, new in enumerate(old_to_new):
+            dest[new] = state[old]
+            if old in (0, 1, 2, 3) and state[old] in (1, 2, 3):
+                sign = -sign
+        out[tuple(dest)] = sign * amplitude
+    return out
+
+
+def exp_series(a, order, scale=G(1)):
+    out = [ident(len(a))]
+    scaled = mscale(scale, a)
+    for degree in range(1, order + 1):
+        out.append(mscale(F(1, degree), mmul(scaled, out[-1])))
+    return out
+
+
+def series_product(left, right, order):
+    return [madd(*(mmul(left[k], right[n-k]) for k in range(n + 1)))
+            for n in range(order + 1)]
+
+
+def matrix_entry_series(series, row, col):
+    return {str(n): str(a[row][col]) for n, a in enumerate(series) if a[row][col]}
+
+
+def main():
+    signal.signal(signal.SIGALRM, lambda *_: (_ for _ in ()).throw(TimeoutError(f"{AUDIT_TIMEOUT_SEC}-second numeric budget")))
+    signal.setitimer(signal.ITIMER_REAL, AUDIT_TIMEOUT_SEC)
+    threading.Thread(target=guard, daemon=True).start()
+    root = Path(__file__).resolve().parents[1]
+    target = root / ".claude/science/physics-loops/gb1-cf-pair-20261107"
+    emit("execution", {
+        "script_sha256": sha256(Path(__file__).read_bytes()).hexdigest(),
+        "PRIMARY_SPEC_sha256": sha256((target / "PRIMARY_SPEC.md").read_bytes()).hexdigest(),
+        "GOAL_sha256": sha256((target / "GOAL.md").read_bytes()).hexdigest(),
+        "git_head": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True).strip(),
+        "assembly_revision": "fb9508e8390bf66da8f29ddb44611d2a531768cb",
+        "python": platform.python_version(),
+        "arithmetic": "fractions.Fraction and exact Gaussian rational pairs",
+        "dense_matrix_max_dimension": 10,
+        "time_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "memory_stop_bytes": MEMORY_LIMIT,
+        "thread_settings": {name: os.environ.get(name) for name in
+                            ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS")},
+    })
+    plus, minus, sigma = link_calculation()
+    terms = {name: loop_terms(loop, sigma) for name, loop in LOOPS.items()}
+    vectors = [{EMPTY: F(1)}] + [apply_terms(terms[name], {EMPTY: F(1)}) for name in ("L", "R", "O")]
+    labels = ("empty-flux", "L", "R", "O")
+    gram = [[inner(v, w) for w in vectors] for v in vectors]
+    assert gram == [[F(r == c) for c in range(4)] for r in range(4)]
+    sectors = []
+    for occupied in product((0, 1), repeat=7):
+        degrees = {v: sum(occupied[e] for e, ends in enumerate(LINKS) if v in ends)
+                   for v in "ABCDEF"}
+        if all(degree % 2 == 0 for degree in degrees.values()):
+            sectors.append(occupied)
+    assert len(sectors) == len(vectors)
+    actual_sectors = {tuple(bool(x) for x in next(iter(v))) for v in vectors}
+    assert actual_sectors == set(sectors)
+    for vertex, a, vector in product("ABCDEF", range(1, 4), vectors):
+        assert not apply_endpoint((plus, minus, a), vertex, vector)
+    emit("physical_sector", {
+        "dimension": len(sectors), "basis_order": labels,
+        "occupation_patterns_AB_BC_DE_EF_AD_BE_CF": sectors,
+        "basis_support_sizes": [len(v) for v in vectors],
+        "nonzero_amplitude_values": [sorted({str(x) for x in v.values()}) for v in vectors],
+        "gram": [[str(x) for x in row] for row in gram],
+        "all_18_vertex_generator_actions_vanish_on_each_basis_vector": True,
+        "completeness_argument_required": "Each occupied endpoint is spin 1/2; at degree <=3 a singlet exists only for degrees 0 or 2, with multiplicity one.",
+    })
+    reduced = {}
+    images = {}
+    for name in ("L", "R", "O"):
+        images[name] = [apply_terms(terms[name], v, F(2)) for v in vectors]
+        reduced[name] = [[G(inner(v, image)) for image in images[name]] for v in vectors]
+        assert reduced[name] == adj(reduced[name])
+        for col, image in enumerate(images[name]):
+            projection = vadd(*(vscale(reduced[name][row][col].r, vectors[row]) for row in range(4)))
+            assert image == projection
+        emit("B_" + name + "_physical", matrix_strings(reduced[name]))
+    a, b = reduced["L"], reduced["R"]
+    c = comm(a, b)
+    emit("commutator_BL_BR", matrix_strings(c))
+    witness = vadd(apply_terms(terms["L"], images["R"][1], F(2)),
+                   vscale(-1, apply_terms(terms["R"], images["L"][1], F(2))))
+    assert witness == vscale(c[2][1].r, vectors[2])
+    assert c[2][1]
+    emit("commutator_witness", {"input": "L", "output": "R", "coefficient": str(c[2][1]),
+                                 "full_sparse_norm_squared": str(inner(witness, witness))})
+    exchange = zero(4)
+    for source, dest in enumerate((0, 2, 1, 3)):
+        assert reflect(vectors[source]) == vectors[dest]
+        exchange[dest][source] = G(1)
+    assert mmul(mmul(exchange, a), exchange) == b
+    emit("exchange_physical", matrix_strings(exchange))
+
+    # Exact formal Taylor coefficients. Chronological L then R means exp(B)exp(A).
+    order = 5
+    ea = exp_series(a, order, -I)
+    eb = exp_series(b, order, -I)
+    ea_half = exp_series(a, order, -I / 2)
+    eb_half = exp_series(b, order, -I / 2)
+    ordered = series_product(eb, ea, order)
+    reverse = series_product(ea, eb, order)
+    ordered_diff = [madd(x, mscale(-1, y)) for x, y in zip(ordered, reverse)]
+    strang_l = series_product(series_product(ea_half, eb, order), ea_half, order)
+    strang_r = series_product(series_product(eb_half, ea, order), eb_half, order)
+    strang_diff = [madd(x, mscale(-1, y)) for x, y in zip(strang_l, strang_r)]
+    assert ordered_diff[0] == ordered_diff[1] == zero(4)
+    assert ordered_diff[2] == c
+    assert all(strang_diff[n] == zero(4) for n in range(3))
+    h = madd(a, b)
+    assert strang_diff[3] == mscale(-I / 8, comm(h, c))
+    assert mmul(mmul(h, h), h) == mscale(10, h)
+    assert mmul(exchange, h) == mmul(h, exchange)
+    emit("update_series", {
+        "ordered_minus_exchanged_R_L_entry": matrix_entry_series(ordered_diff, 2, 1),
+        "ordered_minus_exchanged_L_empty_entry": matrix_entry_series(ordered_diff, 1, 0),
+        "Strang_L_minus_Strang_R_L_empty_entry": matrix_entry_series(strang_diff, 1, 0),
+        "Strang_difference_cubic_matrix": matrix_strings(strang_diff[3]),
+        "joint_H": matrix_strings(h),
+        "joint_identity": "H^3=10H and [exchange,H]=0",
+    })
+
+    # Physical two-qubit encoding: basis |00>,|10>,|01>,|11>.
+    xl = zero(4)
+    xr = zero(4)
+    zl = zero(4)
+    zr = zero(4)
+    for n in range(4):
+        xl[n ^ 1][n] = xr[n ^ 2][n] = G(1)
+        zl[n][n] = G(1 if n & 1 == 0 else -1)
+        zr[n][n] = G(1 if n & 2 == 0 else -1)
+    assert a == mscale(F(1, 2), mmul(xl, madd(mscale(3, ident(4)), zr)))
+    assert b == mscale(F(1, 2), mmul(madd(mscale(3, ident(4)), zl), xr))
+    emit("logical_encoding", {
+        "basis_order": ["00", "10", "01", "11"],
+        "BL": "X_L (3I+Z_R)/2", "BR": "(3I+Z_L) X_R/2",
+        "kinematical_qubits_for_separate_3_qubit_link_codes": 21,
+        "physical_sector_logical_qubits": 2,
+        "native_homogeneous_site_allocation_proved": False,
+    })
+    electric = zero(4)
+    electric_values = []
+    for column, vector in enumerate(vectors):
+        values = {F(3, 4) * sum(mu != 0 for mu in state) for state in vector}
+        assert len(values) == 1
+        value = values.pop()
+        electric[column][column] = G(value)
+        electric_values.append(str(value))
+    assert comm(electric, exchange) == zero(4)
+    emit("electric_layer", {
+        "sum_link_E_squared_diagonal": electric_values,
+        "commutes_with_geometric_exchange": True,
+        "finite_step": "exp(-i theta (BL+BR)) exp(-i tau sum_link E_squared)",
+        "symmetry_argument": "Each factor commutes with gauge transformations and exchange, hence so does the product for all real theta,tau.",
+        "unique_physical_Hamiltonian_from_logarithm_claimed": False,
+    })
+    emit("resources", {"elapsed_seconds": round(time.monotonic() - START, 4),
+                       "peak_RSS_bytes": rss_bytes(),
+                       "largest_sparse_basis_vector": max(len(v) for v in vectors)})
+    print("AUTHOR CALCULATION COMPLETE: exact emitted identities and sparse certificates; no independent status.", flush=True)
+    signal.setitimer(signal.ITIMER_REAL, 0)
+
+
+if __name__ == "__main__":
+    main()

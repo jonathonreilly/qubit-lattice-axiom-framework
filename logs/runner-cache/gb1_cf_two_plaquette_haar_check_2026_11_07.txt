@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/gb1_cf_two_plaquette_haar_check_2026_11_07.py
+runner_sha256: 5f099d6156bee8e17bae73ff48130b9fd3738fab317cbb640f2e4bb9086f8d13
+timeout_sec: 85
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+{"check": "single_math_thread_environment", "ok": true}
+{"label": "provenance", "value": {"arithmetic": "exact Fraction rational; complex matrices are rational real/imag pairs", "basis_order": ["empty", "L", "R", "O"], "checker": "independently authored in a fresh same-family context; no primary imports; not an audit", "coordinate_order": ["x4", "x1", "x2", "x3"], "link_order": ["AB", "BC", "DE", "EF", "AD", "BE", "CF"], "model_source": "self-contained definitions in this runner", "source_sha256": "5f099d6156bee8e17bae73ff48130b9fd3738fab317cbb640f2e4bb9086f8d13"}}
+{"check": "supplied_local_normalization_matches_Haar", "derived_transition": "1/2", "ok": true}
+{"actual": "1/2", "check": "mutation_altered_local_coefficient_rejected", "mutated": "1", "ok": true}
+{"label": "Wilson_polynomials", "value": {"L": {"support": ["AB", "DE", "AD", "BE"], "terms": 64}, "O": {"support": ["AB", "BC", "DE", "EF", "AD", "CF"], "terms": 1024}, "R": {"support": ["BC", "EF", "BE", "CF"], "terms": 64}, "empty": {"support": [], "terms": 1}}}
+{"label": "six_vertex_fusion", "value": {"admissible": [{"links": [], "multiplicity": 1}, {"links": ["BC", "EF", "BE", "CF"], "multiplicity": 1}, {"links": ["AB", "DE", "AD", "BE"], "multiplicity": 1}, {"links": ["AB", "BC", "DE", "EF", "AD", "CF"], "multiplicity": 1}], "dimension": 4}}
+{"check": "basis_spans_every_singlet_assignment", "ok": true}
+{"check": "Haar_orthonormal_basis", "gram": [["1", "0", "0", "0"], ["0", "1", "0", "0"], ["0", "0", "1", "0"], ["0", "0", "0", "1"]], "ok": true}
+{"label": "shared_link_contraction", "value": {"outer_trace_ratios": ["1/2"], "terms": 1024, "triple_integral": "1/2"}}
+{"check": "index_identity_agrees_with_coordinate_Haar_contraction", "ok": true}
+{"check": "mutation_omitted_shared_dimension_factor_rejected", "ok": true, "witness": {"actual": "1", "coordinate_key": [0, 0, 0, 0, 0, -1, 0], "proposed": "2"}}
+{"check": "tamper_missing_contraction_term_fails_closed", "ok": true, "witness": {"actual": "1", "coordinate_key": [0, 0, 0, 0, 0, -1, 0], "proposed": "0"}}
+{"label": "B_L", "value": [["0", "2", "0", "0"], ["2", "0", "0", "0"], ["0", "0", "0", "1"], ["0", "0", "1", "0"]]}
+{"label": "B_R", "value": [["0", "0", "2", "0"], ["0", "0", "0", "1"], ["2", "0", "0", "0"], ["0", "1", "0", "0"]]}
+{"label": "E", "value": [["0", "0", "0", "0"], ["0", "3", "0", "0"], ["0", "0", "3", "0"], ["0", "0", "0", "9/2"]]}
+{"label": "X", "value": [["1", "0", "0", "0"], ["0", "0", "1", "0"], ["0", "1", "0", "0"], ["0", "0", "0", "1"]]}
+{"check": "Hermitian_magnetics", "ok": true}
+{"check": "reflection_is_unitary_involution", "ok": true}
+{"check": "reflection_maps_square_operators", "ok": true}
+{"check": "reflection_preserves_electric_sum", "ok": true}
+{"label": "magnetic_commutator", "value": [["0", "0", "0", "0"], ["0", "0", "3", "0"], ["0", "-3", "0", "0"], ["0", "0", "0", "0"]]}
+{"label": "magnetic_commutator_is_zero", "value": false}
+{"check": "commutator_antisymmetric_under_exchange", "ok": true}
+{"check": "joint_generator_exchange_commutator_zero", "ok": true}
+{"label": "ordered_exchange_difference_series_in_z_equals_minus_it", "value": {"2": [["0", "0", "0", "0"], ["0", "0", "3", "0"], ["0", "-3", "0", "0"], ["0", "0", "0", "0"]], "3": [["0", "-3", "3", "0"], ["3", "0", "0", "3/2"], ["-3", "0", "0", "-3/2"], ["0", "-3/2", "3/2", "0"]], "4": [["0", "0", "0", "0"], ["0", "0", "5", "0"], ["0", "-5", "0", "0"], ["0", "0", "0", "0"]]}}
+{"label": "Strang_exchange_difference_series_in_z_equals_minus_it", "value": {"3": [["0", "3/4", "-3/4", "0"], ["3/4", "0", "0", "3/8"], ["-3/4", "0", "0", "-3/8"], ["0", "3/8", "-3/8", "0"]], "4": [["0", "0", "0", "0"], ["0", "15/8", "0", "0"], ["0", "0", "-15/8", "0"], ["0", "0", "0", "0"]]}}
+{"check": "ordered_second_order_matches_commutator", "ok": true}
+{"check": "Strang_third_order_matches_nested_commutator", "ok": true}
+{"check": "Strang_through_second_order_equals_joint_series", "ok": true}
+{"check": "B_L_squared_spectrum_polynomial", "ok": true}
+{"check": "B_R_squared_spectrum_polynomial", "ok": true}
+{"label": "ordered_at_pi_over_2", "value": {"imag": [["0", "0", "0", "0"], ["0", "0", "0", "1"], ["0", "0", "0", "0"], ["0", "0", "1", "0"]], "real": [["1", "0", "0", "0"], ["0", "0", "0", "0"], ["0", "-1", "0", "0"], ["0", "0", "0", "0"]]}}
+{"label": "reversed_at_pi_over_2", "value": {"imag": [["0", "0", "0", "0"], ["0", "0", "0", "0"], ["0", "0", "0", "1"], ["0", "1", "0", "0"]], "real": [["1", "0", "0", "0"], ["0", "0", "-1", "0"], ["0", "0", "0", "0"], ["0", "0", "0", "0"]]}}
+{"label": "Strang_L_at_pi", "value": {"imag": [["0", "0", "0", "0"], ["0", "0", "0", "0"], ["0", "0", "0", "0"], ["0", "0", "0", "0"]], "real": [["1", "0", "0", "0"], ["0", "-1", "0", "0"], ["0", "0", "1", "0"], ["0", "0", "0", "-1"]]}}
+{"label": "Strang_R_at_pi", "value": {"imag": [["0", "0", "0", "0"], ["0", "0", "0", "0"], ["0", "0", "0", "0"], ["0", "0", "0", "0"]], "real": [["1", "0", "0", "0"], ["0", "1", "0", "0"], ["0", "0", "-1", "0"], ["0", "0", "0", "-1"]]}}
+{"label": "update_exchange_findings", "value": {"Strang_equal_at_pi": false, "joint_generator_commutes_with_exchange": true, "ordered_equal_at_pi": true, "ordered_equal_at_pi_over_2": false, "scope": "the x=1 patch reflection only; equal square coefficients"}}
+{"label": "resources", "value": {"RSS_limit_bytes": 250000000, "elapsed_seconds": 0.060837, "peak_RSS_bytes": 25706496, "wall_limit_seconds": 90}}
+{"label": "software_check_totals", "value": {"failed": 0, "passed": 19, "scientific_status": "bounded exact computation, not audit"}}
+
+----- stderr -----
+

@@ -1,0 +1,30 @@
+{
+  "python_syntax": "passed: both production runners and mutation driver",
+  "vocabulary": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to .claude/science/physics-loops/gb1-cf-pair-20261107/outputs/vocab_report.json",
+  "relative_links": "all theorem-note relative targets exist",
+  "frozen_source_and_raw_log_hashes": "all four unchanged",
+  "cache_status": {
+    "scripts/gb1_cf_two_plaquette_s1_2026_11_07.py": {
+      "identity": "fresh",
+      "evidence_issue": null
+    },
+    "scripts/gb1_cf_two_plaquette_haar_check_2026_11_07.py": {
+      "identity": "fresh",
+      "evidence_issue": null
+    }
+  },
+  "helper_packet_extractor": [
+    "scripts/gb1_cf_two_plaquette_haar_check_2026_11_07.py"
+  ],
+  "full_pipeline": "not run; integrated landing obligation",
+  "formal_review_and_audit": "pending",
+  "production_source_hashes": {
+    "scripts/gb1_cf_two_plaquette_s1_2026_11_07.py": "98e5dabbe9a6915309c0e10d5a83ed6d71995ab8567254f413bc05a81a09f2b2",
+    "scripts/gb1_cf_two_plaquette_haar_check_2026_11_07.py": "5f099d6156bee8e17bae73ff48130b9fd3738fab317cbb640f2e4bb9086f8d13"
+  },
+  "staged_diff_check": "passed after correcting the one Markdown trailing-space finding",
+  "focused_review_note_hash": "268835ffc74a72e29890f1291a65611caa9c0af5a9efa66da330eab12e814305",
+  "delivered_note_hash": "6fe2122dbe905547319f9347e45fcc122ecc07ba6bc5e7c3ad7f626dd6d7b43f",
+  "post_review_note_change": "only two trailing Markdown spaces removed; reinsertion reproduces reviewed SHA-256",
+  "initial_diff_check": "one trailing-space finding; corrected without wording or formula change"
+}

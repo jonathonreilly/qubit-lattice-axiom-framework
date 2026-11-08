@@ -1,5 +1,7 @@
 # HCM-R under the literal final-stage rim test
 
+Check: `../gates/hcm-false-check.md`, Claude (Opus 5.5); second round: `hcm-r2.md`.
+
 Codex, 2026-11-08. Checkout `9e8d6a446d57fd7f04da80366b99d9509fd38c54`.
 FINISH assignment 502. Research text. Not an audit. Grants no status.
 No computer-assisted proof. This note changes no test or construction.
@@ -8,6 +10,9 @@ No computer-assisted proof. This note changes no test or construction.
 rim-history mass lower bound in §4. Three routes to it fail in §5.
 HCM-R is neither proved nor refuted. Finding 9 does not yet prove its
 claimed divergence.
+This is the first-round result. The second round, hcm-r2.md, tests
+finding 7's shift proposal and stops at the earlier conditional
+escape supplier RIM-C. It does not justify narrowing the gap to RIM-N alone.
 
 ## 1. Ports and the question left by them
 
@@ -98,6 +103,10 @@ Failure of a deterministic implication supplies no lower bound on
 that conditional fluctuation scale. Nor does a counterexample with
 defect $8\varepsilon_mL^{-2m}$ prove that defects of order $g_m$
 reach every final stage with large mass.
+This does not rule out a quasi-invariance proof without a density bound.
+The check proposes that route, modulo a relative margin lemma.
+The second round finds additional scaling and noncommuting-shift
+obstructions; see hcm-r2.md §§3–8.
 
 ## 3. The conditional law and the order of quantifiers
 
@@ -206,16 +215,19 @@ The following concrete version would suffice:
     v_\Theta\ge(D-R-1)[1+\log(\Theta/2)](MR)^4.                \tag{5}
   \]
   The finite constants $C_0,C_*$ are independent of $\Theta$,
-  absolute level, cutoff and terminal level. They are fixed before
-  choosing the free price $c$ and the last floor $X_0$.
+  absolute level, cutoff and terminal level. IN1 row 7 already fixes
+  $c=C_vc_r$ and $c_{\rm ent}$. The bound must satisfy
+  $C_*<c+c_{\rm ent}$ for those constants. The refuter cannot increase
+  $c$ to obtain this inequality. All constants precede the last floor $X_0$.
 
 This asks for much less than continuation probability near one.
 It still requires the complete mass, including the cost of reaching
 each final test. No other registry row supplies this specialized
 lower bound; a general common-envelope upper bound is not (5).
 
-**Consequence of RIM-LB.** Choose $c>C_*$, then the final floor,
-then $\Theta$. The already proved schedule calculation in
+**Consequence of RIM-LB.** Keep IN1's fixed $c$ and $c_{\rm ent}$.
+Assume $C_*<c+c_{\rm ent}$, then choose the final floor and $\Theta$.
+The already proved schedule calculation in
 `hc-mark.md` §6.1 gives
 
 \[
@@ -382,9 +394,11 @@ probabilities are close to one. The actual segment integral includes
 its $Z$. A normalized law is unchanged when its density is multiplied
 by a positive constant. Its unnormalized mass is changed by that
 constant. Hence a normalized-law estimate alone cannot bound the
-product of these masses. The freedom to choose $c$ would overcome
-losses $e^{-C_*\Delta V}$ with a fixed $C_*$; establishing such a
-rate is exactly the remaining clause of RIM-LB.
+product of these masses. A loss $e^{-C_*\Delta V}$ suffices only if
+$C_*<c+c_{\rm ent}$ for IN1's already fixed $c=C_vc_r$.
+Establishing such a rate is the normalization clause of RIM-LB.
+Y 77545–77549 removes the interrupted stage's own normalizer,
+but retains the prefix's factors in their birth coordinates.
 
 One may choose a different exterior for a different finite horizon.
 Within each claimed history, the rows must still satisfy the stored
@@ -447,6 +461,6 @@ They do not establish either truth or falsity of HCM-R (4).
 | RIM-LB would refute HCM-R and the proposed old-birth financing | Proved here, (4)–(6) | Conditional; uses the schedule count already proved in `hc-mark.md` §6.1 |
 | Several candidate failing rims can be averages of one smooth field | Proved here, (8)–(10), using the affine averaging calculation ported from Y 72340–72367 | A field construction, not a complete stopped-history realization |
 | A strict regular finite-coordinate realization has positive mass | Proved here, (11) | Requires positive continuous density and strict indicators; no uniform rate |
-| Low energy, support, or conditional failure probability alone implies (5) | Refuted as an inference, §5 | The countermodels are not Yang–Mills histories |
+| Low energy and support alone imply a useful rim-failure probability | Refuted as an inference, §5 route 1 | The mixture is not a Yang–Mills history law; it does not refute a quasi-invariance argument. A probability estimate still needs the normalization comparison (12) to imply (5) |
 | Full admission, kernel supply, ordinary owned gains and H-E | Input | Held at their existing scopes; their other registry rows are not reopened |
 | **First open input: RIM-LB, the complete compatible repeated-rim history mass bound (5)** | **Input — open after three routes** | **No proof or refutation of HCM-R; no unconditional divergence or IN1 closure** |

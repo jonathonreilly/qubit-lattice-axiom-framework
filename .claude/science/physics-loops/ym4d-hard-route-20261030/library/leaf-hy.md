@@ -23,6 +23,8 @@ The targeted `open-core`, `l17c`, registry and FINISH search found no separate H
 
 # HY-UNITS and HY-READS
 
+Check: [Claude's line-by-line check](../gates/leaf-hy-check.md) (2026-11-08); its requested repairs are applied below.
+
 Codex, 2026-11-08. Source pin `b0be684f1131d66016b38103591ea5dc5de80cc9`.
 The shared checkout advanced externally to `2faf203b2a37bc739eaac1a0ebdb7182a79ae220` during writing.
 The cited local proof inputs were compared with the pin and remain unchanged.
@@ -223,6 +225,8 @@ If the literal starting bound is \(B_0R_hu_h\), use instead
 \]
 The source's small-box convention permits \(B_0=100\).
 This states explicitly which radius pays for the initial core.
+Credit [geo-3](geo-3.md), (2.4)–(2.6), for the earlier \(R_a\to R\) conversion: \(R_a\le D_RR\), \(D_R=L2^r\), fed into geo-2 (6.1) with \(B=b_{\rm box}D_R\).
+Equation (U7) uses that same conversion method with GEOH's window constant.
 
 Apply the counting argument already proved in geo-2 §6, with later increment constant \(K=2\).
 Equations (U5)–(U7) replace its initial-side constant.
@@ -320,7 +324,8 @@ Its replacement is (U6), already sufficient for the shell readers.
 For the main box, \(\Lambda=D_k^{[u_k]}\) has the native grid and stays inside \(X\).
 Indeed, \(k\ge h+2\), and (H1) gives \(\Lambda\subset H_k^{[3u_k]}\subset G_k\).
 It contains \(D_k\), as required by geoh-live-ab §6.
-This is the hybrid's main box, defined by one added native layer.
+Also, \(\Lambda\subset D_{h+1}^{[(2L/(L-1)+1)u_k]}\subset D_{h+1}^{[8u_k]}\subset H_{k_0+1}^{[8a_{k_0+1}]}=O_{k_0+1}\), using \(a_{k_0+1}=u_k\) (Y 63776–63778) and \(D_{h+1}\subset G_{k_0}\subset H_{k_0+1}\).
+The choice \(\Lambda=D_k^{[u_k]}\) is part of the hybrid specification, defined by one added native layer.
 No identity with CA's later thick boxes or its erosion formula for the main box is used.
 
 ### Covariance, including the first hull
@@ -402,8 +407,12 @@ Main integration remains a distinct site, as in the existing invariant.
 
 Finally, (H2) and (H3) give exactly the three nest inputs isolated in fco-slot §2:
 \(D_h=G_h\), (N1), and (N3).
-Its nest substitution therefore applies with the same slot constants.
-This does not change that theorem's remaining class, chart or coordinate assumptions.
+Its nest substitution keeps the same slot constants, conditional on its remaining hypotheses.
+But fco-slot assumes ancestral quarantine with the lower endpoint included; this hybrid keeps CA's open endpoint.
+Thus fco-slot does not yet cover the hybrid's open-endpoint histories; its class transfer is not supplied here.
+The chart and coordinate assumptions remain separate.
+The hybrid's first member is Y's own, so Y 75863–75865 supplies the first-stage “five of the eight layers” clause.
+That clause was left open for the thin first member in fco-slot §2.
 In particular, its full-read supplier FCO-read remains separate.
 
 ## 4. Every stopped prefix and the extra raised level
@@ -521,11 +530,24 @@ The window-ratio proof belongs to the earlier GEOH note and its Claude check.
 The live invariant belongs to geoh-live-ab; this note supplies its consumer match.
 
 HY-READS is the leaf after HY-UNITS, and is completed here.
-Section 9 names no further hybrid leaf.
-The next supplier boundary is the already owned analytic realization/FM-MATCH, not another scale or collar proof.
+The covered geometric consumers and remaining restatements are:
+
+| Consumer | Hybrid supply or required restatement |
+|---|---|
+| geo-2 §6 | (U5)–(U10) supply the initial side, later increments and shell counts. |
+| geo-3 §2 | (H1)–(H2), (P1) and (U11) supply containment, junction clearance and the final box. Its first-move upper bound (2.2) is replaced by (U6) for geo-2 (6.1). |
+| geo-4, geo-5 (3.1), cond-c, geo5c-count | (H2)–(H3) and the grid argument supply nesting, containment, gaps and face grids. |
+| inn-213 §7, inn-fix | (U9)–(U10) supply the nest-box bound through geo-2 §6, with the changed constants. |
+| sa-2.8-terms, Lemma W (GEO3) | (U9) supplies \(C_n=C_{\rm side}\). |
+| st1-r4 Lemma 2 | Its stated CA lower nest \(Z''_i=Z\cap(\Omega_i^{\sim5})^c\), \(h<i\le k_0\), is false for the hybrid at \(i\ge h+2\) in that range. Restate the lemma using (H3)'s gaps \(\ge LM\). |
+| pda.md (L) | Its CA lower-nest formula holds here only at \(i=h+1\), and is false at \(i\ge h+2\) in its lower range. Restate (L) and redo its (L1)–(L2), (U3) gap arguments with (H3). |
+
+Before the analytic realization/FM-MATCH handoff, those two consumer restatements remain open.
+So do ti-2's (N)/(N2) text for the new first member and fco-slot's transfer to the open-endpoint class.
+Then the next supplier boundary is the already owned analytic realization/FM-MATCH.
 GEOH-O3 and FCO-read retain their existing owners and scope.
 
-Written and author-checked by Codex. Not yet checked by another model.
+Written and author-checked by Codex; Claude's check is linked under the header. These repairs have not had a further independent check.
 Only this file was written. No audit, registry or scientific status was changed.
 
 | Item | Status in this text | Exact supply or limit |
@@ -539,6 +561,6 @@ Only this file was written. No audit, registry or scientific status was changed.
 | Open-endpoint pocket and first stop | Kill test passed; invariant premise supplied | (K5), (P1). |
 | Treated P collar and integration bonds | Original bounds preserved | (H4)–(H5), with the geoh-live-ab proof reused. |
 | Exceptional \(n=1,n^+=2\) exit | Kill test passed with both records | §4; the \(n\)-only record fails. |
-| FCO-slot's nest inputs | Matched | \(D_h=G_h\), (N1), (N3); other hypotheses retained. |
+| FCO-slot's nest inputs | Matched; class transfer open | \(D_h=G_h\), (N1), (N3); fco-slot assumes the closed endpoint, while this hybrid keeps CA's open endpoint. The first-stage five-layer clause is supplied. |
 | Whole CA selector, analytic admission and FM-MATCH | Not claimed | The hybrid is a specified new selector. |
-| First open input within these two leaves | None | Outside them: the existing analytic operation/FM-MATCH identification. |
+| First open input within these two leaves | None | Outside them: the consumer restatements and class transfer listed above, then the existing analytic operation/FM-MATCH identification. |

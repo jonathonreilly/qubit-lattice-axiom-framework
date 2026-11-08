@@ -1,5 +1,7 @@
 # TPI: the retained free background
 
+Checked line by line by Claude (Opus 5.5), gates/tpi-check.md: PASS; W1-W4 applied.
+
 Codex, 2026-11-08; checkout `43942f5fe45479712937aef15adb4697f772b83f`.
 Research text. Not an audit. This note grants no status.
 
@@ -144,8 +146,9 @@ Only the trivial flat reference and homogeneous periodic geometry are used.
 
 The gap proof uses compactness on one fixed Bloch cell.
 Its uniform first-derivative bound controls the squared L2 Fourier tail by C/T^2
-above frequency T. Finite Fourier truncations are compact. This is the
-compactness step in N:25938-25983; it requires no numerical spectral test.
+above frequency T. Finite Fourier truncations are compact. This paraphrases
+the source's trigonometric-interpolation and Rellich compactness argument
+in N:25941-25950; it requires no numerical spectral test.
 The zero-kernel argument at N:25991-26019 covers both fixed meshes
 and the continuum limit. Hence the resulting positive gap is uniform.
 
@@ -196,7 +199,7 @@ Let \(L_h=D_h^\sharp D_h\), \(G_s=(L_h+q^\sharp q)^{-1}\),
 and \(F_s=G_sq^\sharp\). Put
 
 \[
- P_s=F_s(F_s^\sharp F_s)^{-1}F_s^\sharp,\quad R_g=I-P_s,
+ \Pi_s=F_s(F_s^\sharp F_s)^{-1}F_s^\sharp,\quad R_g=I-\Pi_s,
  \quad K_0=d_h^\sharp d_h+D_hR_gD_h^\sharp+Q_h^\sharp Q_h.
 \]
 
@@ -207,7 +210,7 @@ For u = K_0^(-1)f these yield
 The site factorization
 
 \[
- D_hP_sD_h^\sharp
+ D_h\Pi_sD_h^\sharp
  =(D_hF_s)(F_s^\sharp F_s)^{-1}(D_hF_s)^\sharp
 \]
 
@@ -217,7 +220,7 @@ the cell norm and the relevant supremum norms.
 The flat Hodge identity now gives the scalar equation
 
 \[
- L_hu=f+D_hP_sD_h^\sharp u-Q_h^\sharp Q_hu.
+ L_hu=f+D_h\Pi_sD_h^\sharp u-Q_h^\sharp Q_hu.
 \]
 
 Its right side is bounded by \(C\|f\|_\infty\).
@@ -226,22 +229,22 @@ and the integrable first-derivative bound C(t+h^2)^(-1/2) give
 \(\|u\|_\infty+\|D_hu\|_\infty\le C\|f\|_\infty\).
 This is N:41960-41987, using N:41781-41884.
 
-Set \(S=Q_hK_0^{-1}Q_h^\sharp\). The source's exact right inverse E_Q
+Set \(S_Q=Q_hK_0^{-1}Q_h^\sharp\). The source's exact right inverse E_Q
 has bounded K_0 energy. Therefore
 
 \[
  \|b\|_2^2
  =\langle K_0^{-1}Q_h^\sharp b,K_0E_Qb\rangle
- \le C\langle b,Sb\rangle^{1/2}\|b\|_2.
+ \le C\langle b,S_Qb\rangle^{1/2}\|b\|_2.
 \]
 
-This gives S >= cI. The weighted inverse gives exponential decay of S;
-small conjugation and the lower bound give it also for S^(-1).
-Summing coarse cells makes S^(-1) bounded on the supremum norm.
+This gives S_Q >= cI. The weighted inverse gives exponential decay of S_Q;
+small conjugation and the lower bound give it also for S_Q^(-1).
+Summing coarse cells makes S_Q^(-1) bounded on the supremum norm.
 N:42009-42038 thus gives, with zero fine force,
 
 \[
- H_hB=K_0^{-1}Q_h^\sharp S^{-1}B,\qquad
+ H_hB=K_0^{-1}Q_h^\sharp S_Q^{-1}B,\qquad
  \|d_hH_hB\|_\infty\le C_H\|B\|_\infty.                \tag{5}
 \]
 
@@ -259,7 +262,9 @@ The saddle equation is
 Test it against D_h lambda with q lambda = 0.
 The curl and multiplier terms vanish. The identity
 ran R_g = L_h(ker q) makes the remaining tests fill ran R_g.
-Thus \(R_gD_h^\sharp H_hB=0\). The field minimizes curl energy on
+Thus \(R_gD_h^\sharp H_hB=0\). With the penalty zero, the saddle equation is
+the Euler equation of the convex curl energy on \(Q_hv=B\), hence gives
+a minimizer (N:101010-101013). The field minimizes curl energy on
 \(Q_hv=B\). This uses the source's proved site range identity.
 
 If an exact raw curvature f satisfies A_j f = d_c B, write f = dw.
@@ -299,10 +304,10 @@ Let F be the standard Gaussian on E. On the coarse torus put
 
 \[
  E_c=\operatorname{ran}d_c,\quad P_c=P_{E_c},\quad
- C_j=A_jF,\quad V_j=\operatorname{Cov}(C_j)=A_jPA_j^*.
+ F_j=A_jF,\quad V_j=\operatorname{Cov}(F_j)=A_jPA_j^*.
 \]
 
-C_j is the actual blocked curvature. Its law need not be a fresh Maxwell law.
+F_j is the actual blocked curvature. Its law need not be a fresh Maxwell law.
 
 The contraction \(\|A_j\|_{2\to2}\le1\) is already proved by
 Sussman and Alpoge: SA:8521-8554; N:5568-5605; FP1:157-159.
@@ -324,12 +329,12 @@ The restriction \(d_c:X_c\to E_c\) is a bijection. Denote its inverse by T_c.
 Define
 
 \[
- B_j=T_c C_j.                                             \tag{9}
+ B_j=T_c F_j.                                             \tag{9}
 \]
 
 This chooses the coexact representative of the actual blocked curvature.
 It removes gradients and constant one-forms only from that representative.
-It does not remove any component of C_j or of the retained fine background.
+It does not remove any component of F_j or of the retained fine background.
 The possibly degenerate Gaussian law in (9) is defined without a density
 or a potential gauge integral.
 
@@ -404,7 +409,7 @@ The comparison in (10) establishes it without replacing that law.
 
 By the finite conditioning result already ported in P3,
 \(Y_j=\mathbb E[F\mid A_jF]=P_{W_j}F\).
-It is the least-norm exact fine curvature with datum C_j.
+It is the least-norm exact fine curvature with datum F_j.
 Equation (6), applied to (9), has precisely that datum. Consequently
 
 \[
@@ -432,7 +437,7 @@ Apply P3's covariance inequality once more:
 \[
  |R_j(p,q)|\le\sqrt{R_j(p,p)R_j(q,q)}
  \le C_R L^{-4j}=C_R(a/a_j)^4,
- \qquad C_R=\max\{1,5C_H^2/4\}.                          \tag{16}
+ \qquad C_R=5C_H^2/4.                                    \tag{16}
 \]
 
 No parameter chosen in this proof depends on K, j, m, p, or q.
@@ -510,7 +515,7 @@ The next review should check (8)-(16) and the source-domain match (3)-(6).
 
 | Claim | Status | Source or limit |
 |---|---|---|
-| Actual centered curvature map and its contraction | Ported from SA:7634-7641,8521-8554; N:4324-4332,5568-5605 | Counting norms and periodic multiplicities. |
+| Actual centered curvature map and its contraction | Ported from SA:7634-7641,8521-8554; N:4329-4332,5568-5605 | Counting norms and periodic multiplicities. |
 | Nested projections, independent slices, retained terminal background | Ported from SA:7641-7649,26028-26036; N:4332-4340,100448-100456 | Finite algebra already checked in P3. |
 | Plain/soft-contour and straight/tree curvature laws agree | Ported from N:101043-101077; earlier conditional account at SA:26143-26148 | Full flat quadratic laws only. |
 | Uniform strong inverse and curvature lift | Ported from N:41659-42061,100989-101029 | Premise-by-premise trace in §2.2; SA:26141 was a sketch. |

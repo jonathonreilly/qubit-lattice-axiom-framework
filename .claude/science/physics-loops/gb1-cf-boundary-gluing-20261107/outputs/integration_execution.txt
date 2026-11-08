@@ -1,0 +1,26 @@
+ok      disk: 121 GB free, limit 10
+ok      memory: 30% free, limit 25
+ok      load: 5.4, limit 8
+note    model floor: no target named, no floor checked
+ok      nice: works here
+note    memory cap: ulimit unavailable; a job must watch its own memory
+ok      network: origin reachable
+ok      numeric lock: free
+preflight: go
+{
+  "lock": {
+    "expires_at": "2026-11-08T02:33:28.193729+00:00",
+    "holder_id": "gb1cf-boundary-integration-20261107",
+    "owner": "gb1cf-boundary-integration-20261107",
+    "pid": 6281,
+    "purpose": "bound finite gluing certificates to final production sources",
+    "started_at": "2026-11-08T02:27:28.193729+00:00"
+  },
+  "status": "acquired"
+}
+{"runner": "scripts/gb1_cf_boundary_gluing_exact_2026_11_07.py", "status": "ok", "exit_code": 0, "cache": "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/logs/runner-cache/gb1_cf_boundary_gluing_exact_2026_11_07.txt", "identity": "fresh", "evidence_issue": null}
+{"runner": "scripts/gb1_cf_boundary_fusion_check_2026_11_07.py", "status": "ok", "exit_code": 0, "cache": "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/logs/runner-cache/gb1_cf_boundary_fusion_check_2026_11_07.txt", "identity": "fresh", "evidence_issue": null}
+{
+  "lock": null,
+  "status": "released"
+}

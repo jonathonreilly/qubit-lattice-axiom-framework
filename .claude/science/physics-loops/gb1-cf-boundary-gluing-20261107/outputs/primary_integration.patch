@@ -1,0 +1,17 @@
+--- a/scripts/gb1_cf_boundary_gluing_exact_2026_11_07.py
++++ b/scripts/gb1_cf_boundary_gluing_exact_2026_11_07.py
+@@ -5 +5,2 @@
+-No mutable workflow, goal, specification, or other runner is read/imported.
++No mutable workflow, goal, or specification is read. The independently
++authored fusion checker is imported only after both derivations were frozen.
+@@ -24,0 +26,2 @@
++import gb1_cf_boundary_fusion_check_2026_11_07 as fusion_check
++
+@@ -26,0 +30 @@
++AUDIT_INPUT_PATHS = ("scripts/gb1_cf_boundary_fusion_check_2026_11_07.py",)
+@@ -518,0 +523,5 @@
++    # Integrated after freezing the separate coordinate and coefficient/fusion derivations.
++    fusion_check.cut_checks()
++    fusion_check.graph_checks(None)
++    emit("separately_authored_fusion_certificate", {"exact_equalities": fusion_check.CHECKS,
++         "helper": AUDIT_INPUT_PATHS[0], "formal_audit": False})

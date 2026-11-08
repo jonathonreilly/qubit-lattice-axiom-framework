@@ -570,7 +570,10 @@ Work on PR #10132 of jonathonreilly/qubit-lattice-axiom-framework, branch claude
 | 502 | `hcm-false` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2e): settle HCM-R under the literal rim test (finding 9), with the two open points; output library/hcm-false.md. |
 | 503 | `hcm-repair` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2f): smooth-interpolation rim repair and its payment (finding 10); output library/hcm-repair.md. |
 | 504 | `uo2-geo` | queued 2026-11-08 (laptop Codex gpt-6-astra max): UO2-geo, the geometric half of UO2; output library/uo2-geo.md. |
-| 505 | `hstep-map` | launched 2026-11-08 20:29Z on Mini Codex (gpt-6.1-sol high, slot repo2g) after owner asked for a VERY HIGH value contribution: maps every premise of their closure hypothesis H_step (Y 4152-4181) to our rows; output library/prior/hstep.md. |
+| 505 | `hstep-map` | launched 2026-11-08 20:29Z on Mini Codex (gpt-6.1-sol high, slot repo2g) after owner asked for a VERY HIGH value contribution: maps every premise of their closure hypothesis H_step (Y 4152-4181) to our rows; output library/prior/hstep.md. Done (library/prior/hstep.md). Top three: W6 failure-energy budget (rows 502-503), E2 common envelope (row 497, SJ), A1.4/D2 admission (row 496, C0-ETA). Unowned: A4.1 averaging change, I4 covariance supply, potential-age/SF, W1/W2/W5/OWN-GAIN matching, healed/loaded/floor assembly, source-extension kernel matches. |
 | 506 | `c0-sup-check` | running 2026-11-08 (laptop Claude subagent, Opus 5.5); output gates/c0-sup-check.md. |
 | 507 | `lfi-he-check` | running 2026-11-08 (laptop Claude subagent, Opus 5.5); output gates/lfi-he-check.md. |
 | 508 | `lfi-ho-check` | running 2026-11-08 (laptop Claude subagent, Opus 5.5); output gates/lfi-ho-check.md. |
+| 509 | `w125-match` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2): port and match witnesses W1, W2, W5 of H_step to actual carriers; feeds W6; output library/w125-match.md. |
+| 510 | `a41-avg` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2c): A4.1 change of averaging at every depth (unowned; retained by Y at general scope); output library/a41-avg.md. |
+| 511 | `r2-heal` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2d): R2 healed restriction (H-SUM-HEAL) on actual histories; output library/r2-heal.md. |

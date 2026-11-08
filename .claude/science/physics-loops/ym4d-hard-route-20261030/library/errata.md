@@ -151,7 +151,11 @@ Only `library/errata.md` and `library/errata-issue.md` were written. No editable
 
 RESULT: 49 kept entries; 33 dropped candidate groups.
 
-## Held for errata 2 (checker uncertain, 2026-11-07)
+## Errata 2 (open; errata 1 posted as issue #18 on 2026-11-08)
+
+New class A/B findings go here. Post at about 20-30 entries or with the next milestone snapshot.
+
+### Held from errata 1 (checker uncertain or disputed)
 
 The line-by-line check confirmed these, but marked them least certain. They stay out of errata 1 under the full-confidence rule.
 

@@ -33,6 +33,8 @@ Only `library/leaf-sc.md` was edited by this worker.
 
 # SC-NATIVE: the native symmetric rows
 
+Checked line by line by Claude (Opus 5.5), gates/leaf-sc-check.md: ADVANCE; minor repairs applied.
+
 Codex, 2026-11-08. FINISH row 541. Research text, not an audit.
 This note grants no status. No numerical calculation supplies a proof.
 No independent check of this note has occurred.
@@ -277,9 +279,10 @@ The proof is on a complex potential tube in the supplied unitary frame.
 It does not continue an inequality from real fields by an identity theorem.
 
 For the site row, replace each comb transport in `out-pi.md:597–609`
-by the prescribed mean transport.
+by the prescribed level-\(m\) mean transport at background \(M^m(U)\).
 Endpoint covariance is exact by `b98p5.md:394–422`.
-Its distance from identity at level \(i\) is at most \(C_L\varepsilon t_i\).
+The reference factors are bounded by `b98p5.md` (12)–(13).
+Its distance from identity at level \(m\) is at most \(C_L\varepsilon t_m\).
 The node products obey (1), so the full transported colour coefficient
 differs from identity by at most \(C_L\varepsilon\).
 The weights are \(n^{-4}\), with one block containing each fine site.
@@ -390,7 +393,8 @@ For \(T=Q_m(U)-Q_m(1)\), weighted Cauchy–Schwarz gives
  \tag{5}
 \]
 
-The last step uses both sums in §3, the two-height count and \(s_c/m_b\le L\).
+The last step uses both sums in §3, the two-height count and \(m_b\le s_c\)
+on the carrier (layers \(j-1,j\)).
 The site version gives
 \(\|s^{-2}(Q'_m(U)-Q'_m(1))\lambda\|_{\rm rows}
 \le C_L\varepsilon\|m^{-2}\lambda\|_{\rm fine}\).
@@ -402,7 +406,7 @@ This proves the native mixed energy comparison.
 
 The strong comparison also survives.
 Indeed a column error \(C\varepsilon(\eta/s)^4\), after transposition,
-cancels \(\eta^4\) against the row volume \(s^4\).
+cancels the fine pairing volume \(\eta^4\).
 For example \(K=sQ\), into counting rows, gives
 \[
  |(K_m(U)^T-K_m(1)^T)\nu|
@@ -637,4 +641,5 @@ This leaf stops at that existing owner. It does not create a duplicate lane.
 | Actual-history admission | Open, existing owner | PI-ADMIT/C0-SUP; no scientific status changed. |
 
 **First open input:** PI-ADMIT/C0-SUP on actual reached entries, with
-the caller's literal action, rows and complete reads matched to this class.
+the caller's literal action, rows, complete reads and translated region geometry
+matched to this class.

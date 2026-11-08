@@ -1,5 +1,12 @@
 ## Repo search
 
+For row 559 at `ed02bfda6`, I searched `live-fgi|waiting depth|waiting rule` across the same five refs below.
+No hits appeared on main, #10114 or #10133. PR #10134's `parts/hard-core--mapped.md:360` only mentions a waiting depth.
+PR #10141's `research/ym4d/library/pr-lay.md:343` points to SA 6035, which fixes the depth as \(\mathsf N_j=\check R_j\).
+Its `tp1.md:598--600` proves that survival need not require a fresh failure; `in1.md:159` leaves actual genealogy open.
+These are related inputs, not this timing repair. Claude's `live-fgi-recheck.md`, finding 2, supplies the repair applied here.
+`prior/live-fgi-fix2.md` is absent. O-live-geometry has no other owner in the registry.
+
 The lead's `prior/repo-search-2026-11-08.md` searched main and PRs #10114, #10133, #10134 and #10141.
 Section 6 found no outside-lane proof of the live-strip invariant. PR #10141 contains our own snapshots.
 For this repair I read that record and fetched main for the workflow and PR #10141 for its cited hits.
@@ -14,6 +21,8 @@ The registry leaves O-live-geometry without another owner. FINISH row 550 assign
 Row 549 owns the affirmative proof under no joining. This note does not take that task.
 
 # Live-region boxes and probes
+
+Applied [live-fgi-recheck.md](../gates/live-fgi-recheck.md), finding 2, for FINISH row 559; sections 3--4 rechecked by hand.
 
 Repair of Claude's FIX in [live-fgi-check.md](../gates/live-fgi-check.md), FINISH row 550.
 
@@ -156,9 +165,9 @@ If one restricts the class further by such a support condition, that restriction
 
 Choose an odd \(L\ge103\), above any other fixed lower floors.
 Choose a constant allowed radius \(R_j=R=L^p\), \(p\ge1\), over the finite window.
-Take the fixed waiting depth \(N\) with
+Take the fixed waiting depth \(N=R\), as required by I 49762--49765, with
 \[
- N_0=p+1<N\le R,
+ N_0=p+1<N=R,
  \qquad h>N+1,\qquad k=h+N.
  \tag{7}
 \]
@@ -196,8 +205,10 @@ At \(b\), even side \(100a_b\) leaves gap at least \((20L^{N+1}-100)a_b>a_b\).
 Thus all these components are boxes with 1--100 cells per side, separated by at least one cell.
 This checks admissible geometry fact (1), I 63547--63551, before the joining.
 A creation at \(b\), the bottom of the birth waiting window, is allowed; the intervening steps have empty creation sets.
-For \(b\le t<h\), one has \(t-b<N\), so that creation prevents eligibility by I 51178--51189.
-At \(h\), \(h-b=N\). Each component is small, its preceding steps create nothing, and no earlier operation left a mark.
+For \(b\le t<h\), one has \(t-b<N=R\), so that creation prevents eligibility by I 51178--51189.
+At \(h\), \(h-b=N=R\), so the waiting rule's requirement \(h-b\ge R\) holds.
+The creation at \(b=h-R\) lies outside \((h-R,h]\), the excluded window in I 49785--49800.
+Each component is small, its preceding steps create nothing, and no earlier operation left a mark.
 Thus each passes (i), (ii-a), and (ii-b) at \(h\). The whole-component second-class outcome gives (8).
 This checks the geometric birth and waiting rules. It does not infer field support from chosen test labels.
 
@@ -411,7 +422,8 @@ Each is an added assumption of a later section.
 None is part of Definition 4.14's class, Definition 4.22's live-region hypotheses, or the proof at I 63772--63935.
 Imposing that condition would exclude the example; I 118394 uses it to obtain one previous component.
 The route remark at I 85716--85718 does mention nesting.
-In this chapter nesting means inclusion, as the use \(Z_{j'+1}\subset Z_{k-1}\) at I 91947 shows.
+Here we read “nesting” at I 85717 as inclusion, consistent with \(Z_{j'+1}\subset Z_{k-1}\) at I 91947.
+Reading it as no joining would add that premise to the route remark.
 The example satisfies inclusion. Inclusion does not prohibit joining.
 
 The first invalid sentence in the account's core argument is I 63870--63871:

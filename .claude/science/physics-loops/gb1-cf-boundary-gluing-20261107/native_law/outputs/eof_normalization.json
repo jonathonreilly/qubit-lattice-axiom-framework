@@ -1,0 +1,50 @@
+[
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/native_law/AXIOM_WORDING_PENDING.md",
+    "old_sha256": "b09181a00a3e1b4f9bc904108a84813afaca85835043d3ee3686275569c2b40c",
+    "new_sha256": "8d2dd1ec9f1ffb49f12d8ec9c48d0f2de562bb17ac1466d9b46896c1f15e526a",
+    "change": "removed exactly one trailing blank line; append one LF to recover original bytes"
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/native_law/HANDOFF.md",
+    "old_sha256": "c6ee5d7c4a0c037524c8f43afb64a979a1ef38e29f9af1a210518cb90444ecdf",
+    "new_sha256": "80105c5c277d9a211f0e635ffd6d26d7991db075182c7e40553540157a21b390",
+    "change": "removed exactly one trailing blank line; append one LF to recover original bytes"
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/native_law/INDEPENDENT_SPEC.md",
+    "old_sha256": "a88fe4f3e8e61c61c6d86e53cfaa994c156e77d40f12be5227d7524058d23992",
+    "new_sha256": "664c425d369758df174587b20deedc3c94293c667d0500baf01f061d55b3da0c",
+    "change": "removed exactly one trailing blank line; append one LF to recover original bytes"
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/native_law/LITERATURE_AND_ROUTE.md",
+    "old_sha256": "48ac497008434542ef345e8ff505745905f88d119633d0b0c88b0b2686007c7c",
+    "new_sha256": "c835619c04a774a6b263980f526a8ca0d4ca73cd7d24e0bfae5e6608e5b84f63",
+    "change": "removed exactly one trailing blank line; append one LF to recover original bytes"
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/native_law/SUPERVISOR_CANDIDATE.md",
+    "old_sha256": "79f9cf5cf5b27729a5a1d2f51c0b611a8f431d69a03c9723bfbcfadad954e25d",
+    "new_sha256": "4369affe8d79078856d7f46c2e4d29dd879c3cad9e76b5aa32c5cb4715994d2b",
+    "change": "removed exactly one trailing blank line; append one LF to recover original bytes"
+  },
+  {
+    "path": "docs/SU2_NEIGHBORHOOD_PROPAGATION_RECORD_READOUT_BOUNDED_THEOREM_NOTE_2026-11-08.md",
+    "old_sha256": "879d7e3195f678a3f37f7d0c32f7ea30d348f86c7d3c7901af5a84dcf4b97915",
+    "new_sha256": "1cb33015822b869b4baf24ceaf04502c50e88ef92ec412642300ffac2423d51e",
+    "change": "removed exactly one trailing blank line; append one LF to recover original bytes"
+  },
+  {
+    "path": "docs/SU2_NEIGHBORHOOD_PROPAGATION_RECORD_READOUT_SCOPE_CHECK_2026-11-08.md",
+    "old_sha256": "4c263b6439db0d7c29843b9fc838bed9bd0c62cda1a9862a57fa74f85861ba40",
+    "new_sha256": "a26b1e5d00b30eb159972bf2cd0b59d359bde612cb1e3de783d3f88b8c5a38ee",
+    "change": "removed exactly one trailing blank line; append one LF to recover original bytes"
+  },
+  {
+    "path": "scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py",
+    "old_sha256": "d78f0a745f183341abe319a151c1681c9d386e2b0f6aadd0aff2ba388bbf0bd0",
+    "new_sha256": "e3e48f00833e423a39b4663bb7201c98b5da2a13d9dd2c0b1a9bd547d57f6bae",
+    "change": "removed exactly one trailing blank line; append one LF to recover original bytes"
+  }
+]

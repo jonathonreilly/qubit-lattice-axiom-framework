@@ -1,0 +1,13 @@
+{
+  "syntax": "ok",
+  "missing_links": [],
+  "cache_identity": "fresh",
+  "cache_evidence_issue": null,
+  "axiom_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+  "shared_authority_changes": [],
+  "source_check_sha256": "ec9dd7acbcd7866d5d9d17ee990665289f5b9e6dbb7b471eb08a3eb7bea6ef90",
+  "source_check": "no actionable mathematical or source/runner mismatch; research check, not formal fresh review",
+  "numeric_lease": "released",
+  "source_eof_recovery": "verified by appending exactly one LF to the three normalized science files",
+  "mathematical_stdout_unchanged_after_normalization": true
+}

@@ -1,5 +1,7 @@
 # PI-ADMIT: complete reads at actual entries
 
+Checked line by line by Claude (Opus 5.5), gates/pi-admit-check.md: ADVANCE; wording repairs applied.
+
 Codex; checkout `75f92f69536ea90fdeea5cec2df1f110dec0ba76`.
 FINISH row 482. Research text, not an audit. No scientific status is granted.
 This file is the only repository output. No computation supplies a proof.
@@ -86,7 +88,12 @@ whole-action Hessian. Identify its propagator block `M_b` with I's `M_1`.
 The later localization block `M` remains different.
 Use one matched fine lattice and region membership convention.
 The proposition assumes the row and index identification; it does not prove it.
-Assume the setting has the aligned shells and box cover used in I 52362–52419.
+Assume I's nest condition (A1), I 45570–45585: the regions are nested;
+each `Omega_j`, for `j>=1`, is a union of closed level-j `M`-cubes
+from partitions compatible under L-adic refinement;
+`dist_infty(Omega_j^c,Omega_{j+1}) >= M ell_j` for `1<=j<=k-1`;
+and `Omega_0` is the Dirichlet hull of `Omega_1`.
+These are the aligned shells; assume also the box cover used in I 52362–52419.
 In particular, `X_0` is the whole complement of `Omega_1`, with closure.
 Assume the data collar `(col)` and `(reg)^sharp` for the **actual** reference.
 The twist norm must include every PI bond and every required difference pair,
@@ -101,7 +108,10 @@ Choose the fixed blocks so that
  r_N+2\le4M_1^\sharp.                                      \tag{1}
 \]
 
-Retain the PI gap and torus floors as well. These are lower bounds on
+Retain the PI gaps (T) and torus floors as well. In particular, add the
+level-0 hypothesis `dist(Omega_0^c,Omega_1) > R M_b eta` from (T),
+with PI's Euclidean distance; (A1) does not impose this gap.
+These are lower bounds on
 fixed blocks. They impose no depth or volume dependence.
 
 Let the real bound be `a^sharp`. Let the twist-current norm of I 52620–52647
@@ -220,6 +230,8 @@ I 119615–119650 requires one **global** pair and its own ambient
 continuation. Separate local extensions cannot establish that membership
 if they disagree on shared actual reads. I 131725–131746 names the localized determining
 set and lists its ambient raw-stratum conditions. It does not print (5)–(6).
+I 137566–137569 places the localized set outside the input spaces' geometry
+and invokes the localized layer-function lemma with its proof incomplete.
 These are the precise extra reads to be supplied, rather than a new proof
 of the whole stage theorem.
 
@@ -359,7 +371,8 @@ missing.
 There is also a valid restriction step. Suppose an admitted pair is used
 unchanged on a smaller tower, at the same fine mesh, with
 `Omega'_j subset Omega_j`. Assume every new background read remains in the
-old complete background domain. Then
+old complete background domain. Require the smaller tower to satisfy (T)
+and the PI floors. Then
 
 \[
        m'(z)\le m(z),\qquad N'(x)\subset N(x).             \tag{13}
@@ -407,6 +420,7 @@ Let `H=sigma_3`, `K>0`, and put, on a complex parameter disc,
 These formulas specify positive bonds; reversed links are their inverses.
 The face is chosen far from other faces and torus identifications.
 The bond `b_2` belongs to the two-spacing background collar.
+It is tested only by the S1-loc and S2+ hypotheses; no PI coefficient reads it.
 It is neither a field bond nor the parallel one-step neighbour of a
 field bond. Hence a norm testing only field bonds and their first
 difference stencils is zero. The family `exp(i eta a(z))` is entire
@@ -417,7 +431,8 @@ and equals the flat field at `z=0`. But
 \]
 
 No fixed exterior bound follows from that interior norm or from
-holomorphy at the real centre. If the supplied norm includes `b_2` and
+holomorphy at the real centre. This tests a hypothesis index, not a coefficient PI reads.
+If the supplied norm includes `b_2` and
 its pairs, this example is excluded. Proposition 3.1 then uses those bounds.
 
 With a supplied real reference, one may choose a bounded filler on otherwise
@@ -515,6 +530,13 @@ complete certificates but cannot create their missing actual membership.
 Route 3 constructs the native inner boundary problem but does not identify
 the whole-action entry. None of these failures proves C0-SUP false.
 
+The interior supply of Proposition 3.1's inputs at actual entries also remains open.
+I 49503–49510 requires real-background membership and gauges on `Q intersect Omega_0`.
+I 137566–137569 places the localized set outside the input spaces' geometry
+and invokes a localized layer-function result whose proof is incomplete.
+The lemma itself is marked "Stated; proof incomplete" at I 131633.
+Thus C0-SUP is the first open input, not the only one.
+
 The digest does not exhibit a positive-weight history producing the old
 singular crossing-bond field. Neither does this note. Therefore it does not
 claim the task's counterexample alternative, or stop at that counterexample
@@ -530,8 +552,9 @@ corresponding large-field assignment. The identity
 factor for the new complement. N 62010–62019 expressly distinguishes these
 two requirements for totalized tests. No such modified expansion is claimed.
 
-Consequently the digest's consumer census remains conditional. The first
-bare inverse uses I 13142–13173. The localized setting used to formulate
+Consequently the digest's consumer census remains conditional.
+I 13142–13173 is the general (S1)–(S2) entry, not the first bare inverse.
+The localized setting used to formulate
 C0-SUP is I 131725–131746. Its complete ambient continuation is described
 at I 119615–119650. The same admission issue remains for the other fresh
 settings in the digest's section 5, including completion and paired frames.
@@ -539,8 +562,7 @@ This note neither admits those entries by renaming their operators nor
 asserts that their prescribed complex domains can be shrunk.
 
 The displayed estimates and matrix identities are hand arguments.
-No numerical run or finite enumeration was used. No independent check of
-this new text is claimed.
+No numerical run or finite enumeration was used.
 
 ## 9. Status table
 
@@ -549,12 +571,12 @@ this new text is claimed.
 | PI on its admitted class | Ported from `out-pi.md:273–321`; existing result | Actual-entry hypotheses remain. |
 | Enlarged boxes, all-index fitting and constant order | Ported from I 52362–52419, 52800–52925, 53164–53245 | Conditional on the stated shells, data collar and box gauges. |
 | Weighted perturbation norm and seam losses | Ported from I 52620–52663, 52762–52801 | Only indices included in the norm. |
-| Complete box interface implies S1-loc, S2, S2+ | Proved here, Proposition 3.1, using those ports | Actual reference and all reads must satisfy its inputs. |
+| Complete box interface implies S1-loc, S2, S2+ | Proved here, Proposition 3.1, using those ports | Interior supply of these inputs at actual entries is also open: I 49503–49510, 137566–137569, 131633; the localized set is outside the input spaces' geometry, and its layer-function lemma has proof incomplete. |
 | Original P0 partition supplies the bare boundary certificate | Proved here, (7)–(10), using N 61973–61991 and the gauge proof at N 5104–5125 | Tested bare field; fixed block and smallness floors. |
-| Same-field, complete-read restriction preserves admission | Proved here, (13); matches N 37360–37386 | Nested smaller tower, unchanged field and contained reads. |
+| Same-field, complete-read restriction preserves admission | Proved here, (13); matches N 37360–37386 | Nested smaller tower satisfying (T) and the PI floors, unchanged field and contained reads. |
 | Hull gauge constants and cutoff completions | Ported from I 49120–49189, 46800–46829, 46890–46930, 47789–47812 | Supplied gauges or global real reference; full-read equality retained. |
 | Protected inset and native proper background | Ported from N 35847–35907, 35634–35822 | Native inner action and its stated geometry and datum hypotheses. |
-| Interior norm plus holomorphic germ does not bound an unspecified exterior | Proved here, (14)–(15) | Test of an inference, not an actual-history counterexample. |
+| Interior norm plus holomorphic germ does not bound an unspecified exterior | Proved here, (14)–(15) | Test of a hypothesis index, not a coefficient PI reads or an actual-history counterexample. |
 | Native inner Hessian is not the whole-action Hessian | Proved here, (16)–(17); definitions at N 10540–10566, 16129 | Already different on a common variable at the flat reference. |
 | Arbitrary S1–S2 input class admits singular crossing-bond fields | Ported from `out-pi.md:339–347,1210–1225` | No realized RG history asserted. |
 | Construction and every consumer survive the refined field class | Input; not proved | Partition coverage alone does not give large-field bounds or actual continuation membership. |

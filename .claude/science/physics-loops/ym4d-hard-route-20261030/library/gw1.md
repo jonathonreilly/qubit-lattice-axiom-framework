@@ -95,7 +95,14 @@ For \(j=|J|_{(-3)}\le j_*\), (2) exists and has the following bounds.
 For the switch statement, expand (2) **at one**, including every current
 weight, scalar branch and coarse correction. Give each resulting
 \(G_1^J\) or \(q_{1,J}\) primitive word one tag per distinct cube met by
-its complete footprint. With GW's notation, assume
+its complete footprint.
+
+The words are PI/GW words, chosen by the rule of §7.1. The identity part of Π is assigned by (14),
+I_f = Σ_τ h_{τ,f}^2 I_f with PI's cutoffs and full footprints. This extends GW's convention for R
+to Π. The account does not fix it; at s ≡ 1 it gives the account's operator. The switched
+primitives identified here are those of this assignment.
+
+With GW's notation, assume
 
 \[
  M_{\rm dec}\ge
@@ -807,13 +814,14 @@ It proves \(H_1^{J,T}:F_3\to B_4\), including arbitrary admitted
 weights and absolute word tails.
 
 The identities in item 3 of the theorem now follow from (27), (33)
-and (38). They are used only at switches one. On the intersection
-with B99's admitted true-current class, with the same rows and
-Hessian, the account and B99 formulas identify these total operators
-with Balaban's corrected operators. B99's unscaled lift equals
-\(H_1^J\ell\); thus its induced-current weight \(-3\) corresponds
-to weight \(-4\) in (42). B99's existing true-current proof is not
-replaced by this port.
+and (38). They are used only at switches one.
+
+Remark (cited, not part of Theorem GW1). At switches one and own current J = J(U), on B99's
+admitted true-current class with the same rows and Hessian, the account identifies these totals
+with Balaban's corrected operators (CA-I 13755–13758 and (J7)); B99 B15 constructs those real
+operators. With the account's normalization, Balaban's lift is H_1^Jℓ, so B99's induced-current
+weight −3 corresponds to weight −4 in (42). This port does not re-prove that identification and
+does not replace B99's true-current proof.
 
 ## 7. Words, switches and exact restriction
 
@@ -1020,12 +1028,13 @@ assertion that its conditional (J7) proof was absent:
 
 | CA-I lines | Portion supplied on the admitted PI/GW class |
 |---|---|
-| 13758--13771, as invoked by (J7) at 13783--13784 | The J2 readouts, J3 coarse inverse and J4 lift for \(G_1^J,q_{1,J},H_1^J\), preserving the Laplacian exclusion. |
-| 13850--13874 and 13944--13955 | The left/right derivative allocation and fixed Hölder gap for the additional \(\Pi^T\Theta_J\Pi\) insertion, with complete termwise row and physical column accounting. |
-| 13896--13920, as invoked by 13954--13955 | The small coarse compression, its inverse series, density normalization and lift construction for the new branch. |
+| 13759--13774, as invoked by (J7) at 13783--13784 | The J2 readouts, J3 coarse inverse and J4 lift for \(G_1^J,q_{1,J},H_1^J\), preserving the Laplacian exclusion. |
+| 13847--13874 and 13944--13955 | The left/right derivative allocation and fixed Hölder gap for the additional \(\Pi^T\Theta_J\Pi\) insertion, with complete termwise row and physical column accounting. |
+| 13876--13897 | The J2 series, the ∇^* first iterate and the inverse identity for G_1^J (§4). |
+| 13899--13920, as invoked by 13954--13955 | The small coarse compression, its inverse series, density normalization and lift construction for the new branch. |
 | 13957--13977 | The new branch's analytic local words, all side branches, absolute convergence and coarse-inverse concatenations. |
 | 15278--15314 | Expansion at one, primitive union tags, and the account's subsequent product assignment for \(H_1^J(s)\). |
 | 15322--15324 | \(Ce^{16\kappa _1}\) for the new primitives, with the composite lift bound stated separately. |
 | 15333--15337 | Component separation and equality at one for these primitives and their lift. No general chart-current separation is inferred. |
 
-This derivation has not received an independent mathematical check.
+Checked line by line by Claude (Opus 5.5), gates/gw1-check.md; repairs R1-R3 applied.

@@ -23,7 +23,7 @@ The free-field minimizer method is due to Tadeusz Balaban.
 Your [N 100996–101032][lift] implements that method for centered blocks.
 SA 26141 cites CMP **95** (1984), (1.103), Proposition 1.2 and (1.110),
 and CMP **96** (1984). Those papers were not available.
-We used your quotations and the existing library/lit-balaban.md record.
+We used your quotations of them.
 
 Codex (gpt-6-astra) wrote the proof and this note. Claude (Opus 5.5) checked the proof line by line, and its repairs are applied.
 This is a proposed proof for your review. It is research text, not an audit, and grants no status.

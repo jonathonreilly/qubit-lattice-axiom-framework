@@ -578,7 +578,7 @@ Work on PR #10132 of jonathonreilly/qubit-lattice-axiom-framework, branch claude
 | 510 | `a41-avg` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2c): A4.1 change of averaging at every depth (unowned; retained by Y at general scope); output library/a41-avg.md. Launched 20:43Z. |
 | 511 | `r2-heal` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2d): R2 healed restriction (H-SUM-HEAL) on actual histories; output library/r2-heal.md. Launched 20:46Z. |
 | 512 | `geoh-o1` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2b): GEOH-O1 move-by-move dictionary, needed for geoh-live-ab to apply to the revised operation; output library/geoh-o1.md. |
-| 513 | `geoh-live-ab-check` | running 2026-11-08 (laptop Claude subagent, Opus 5.5): one line-by-line check, with a clause-by-clause table against CA-I 85575-85644; output gates/geoh-live-ab-check.md. |
+| 513 | `geoh-live-ab-check` | done 2026-11-08 (laptop Claude subagent, Opus 5.5): gates/geoh-live-ab-check.md, ADVANCE; no failing step. Against CA-I 85598-85644 ("Proof outstanding"): (a), (b), (c), (d), (e), (h) proved; (g) partly (m <= h); (f), (i1), (i2), contour hypothesis untouched. Construction rules match CA as specified. Two citation repairs. Outward note row 521. |
 | 514 | `uo2-geo-check` | done 2026-11-08 (laptop Claude subagent, Opus 5.5): gates/uo2-geo-check.md, FIX. Mark chain and owner-rule ports confirmed. FCO stronger than consumers need: split into FCO-slot (reserve and code use only stored slots; likely closable) and FCO-read (history-product row). Collar width in owner cells suffices. geoh-live-ab supplies one FCO-slot case only. Round 2 row 519. |
 | 515 | `ho-collar` | queued 2026-11-08 (laptop Codex gpt-6-astra max, 4h): prove b_V carrier by carrier (anchored-disc route) and apply the H-O check repairs. |
 | 516 | `hcm-false-check` | running 2026-11-08 (laptop Claude subagent, Opus 5.5); output gates/hcm-false-check.md. |
@@ -586,3 +586,4 @@ Work on PR #10132 of jonathonreilly/qubit-lattice-axiom-framework, branch claude
 | 518 | `sj-r2` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2g): SJ round 2 by R-A then R-B; output library/sj.md. |
 | 519 | `fco-slot` | queued 2026-11-08 on Mini Codex (gpt-6-astra max, slot repo2f): FCO-slot and the restated UO2-geo; output library/fco-slot.md. |
 | 520 | `hcm-repair-check` | running 2026-11-08 (laptop Claude subagent, Opus 5.5); output gates/hcm-repair-check.md. |
+| 521 | `out-live` | queued 2026-11-08 on Mini Codex (gpt-6-astra high, slot repo2h): citation repairs, YM4_1400 search, outward note and issue text for the live-strip invariant (CA-I 85575-85644). |

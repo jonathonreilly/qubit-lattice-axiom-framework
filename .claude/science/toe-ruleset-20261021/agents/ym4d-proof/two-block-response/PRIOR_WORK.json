@@ -1,0 +1,134 @@
+{
+  "inventory": "incremental_prior_work_two_block_boundary_response",
+  "source_checkout": "/Users/jonreilly/.codex/worktrees/su2-two-block-response/Physics",
+  "source_revision": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
+  "git_worktree_status": "clean; read-only inspection",
+  "complete_required_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "lines": 517,
+      "sha256": "a5d31da82721607e0ba04fef84675706bd3f2c568644224cce7dc86b0bb968e2",
+      "coverage": "1-517",
+      "main_disposition": "Finite-volume actual Wilson transfer and normalized SU(2) soft-kernel transport are derived. Fixed-volume Perron/Doob gap estimate loses uniformity with volume. Section 2 identifies exact transported loop correlations but does not provide their separation decay or the target's fine-to-coarse source representation. Physical mass gap remains open."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "lines": 511,
+      "sha256": "0cdbfd18a97f6240b07f4a6047073fe6dc2abe2949af9ccb6f6bd191498bae3d",
+      "coverage": "1-511",
+      "main_disposition": "Local ground-state ratios and an actual physical-time Doob transition are derived. At beta≤1/32 the actual half-slab posterior has Dobrushin row majorant Q(beta), yielding physical step contraction r(beta)≤18/359. At fixed spacing this gives a volume-uniform lattice gap. At larger beta the exact response identity remains, while its available summable covariance estimate is open."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "lines": 391,
+      "sha256": "2f41121ba740c77040f24be09a15f6671af3691dc28721400f5786722e49ba58",
+      "coverage": "1-391",
+      "main_disposition": "Independent analytic review plus finite Q8 analogue and mutation checks; confirms the bounded finite/fixed-spacing scope while explicitly leaving the cutoff-uniform physical-time/source bridge open. Review is not an audit verdict or continuum closure."
+    }
+  ],
+  "additional_full_file_read": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md",
+    "lines": 255,
+    "sha256": "8ab911c6e8705c086b0fd4e12930a7a66f8ea0ad03be2bb1bff5a55a62f3c9c1",
+    "coverage": "1-255",
+    "reason": "Most directly checks the normalized SU(2) kernel, the order-eight covariance coefficient, source normalization, total-covariance identity, and their limits."
+  },
+  "exact_definitions_and_geometry": {
+    "wilson_transfer": {
+      "source_lines": "MASS_GAP_CONSTRUCTION_ASTRA.md:84-154; independently reviewed in REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md:38-83",
+      "definition": "For finite periodic spatial cubic Gamma with side≥3, X=SU(N)^{E_s}, A_beta(U)=exp[-(beta/2) sum_{p in P_s}(1-w(U_p))], k_beta(U,V)=product_{e in E_s} exp[beta w(U_e V_e^{-1})], K_beta(U,V)=integral dh k_beta(U,h.V), and T_beta=A_beta K_beta A_beta. P is full spatial gauge Haar projection; T=A k P A on invariant states. The open-time slab carries A at both ends, A^2 in the interior, and k between adjacent slices; temporal gauge fixing retains spatial holonomies and the terminal half-factor."
+    },
+    "local_ground_state_response": {
+      "source_lines": "MASS_GAP_LOCAL_BLOCK_ASTRA.md:178-220",
+      "definition": "For bottom boundary edge e, changing U_e to U'_e inserts only H_e(V)=beta[w(U'_e V_e^dagger)-w(U_e V_e^dagger)] on first-layer copy (e,1), with |H_e|≤2beta and full oscillation ≤4beta. For distinct e,f, interpolate sH_e+tH_f in the normalized actual slab rho_(s,t), retaining every spatial plaquette, slab depth, and top boundary factor. The mixed finite difference of log R_n=log(psi_n/A(U_0)) is the integral over s,t in [0,1]^2 of Cov_{rho_(s,t)}(H_e,H_f). Perron limiting n gives the ground-state log-ratio identity."
+    },
+    "soft_kernel_and_path_geometry": {
+      "source_lines": "MASS_GAP_CONSTRUCTION_ASTRA.md:253-306 and 307-344",
+      "definition": "At one S4' step lambda=kappa/g_i^2>0; M_c(U)=(4!L^4)^-1 sum_(sigma,y) T_y^sigma(U), and normalized SU(2) kernel k_lambda(V_c;M_c)=exp[lambda w(V_c^{-1}M_c)]/Z(lambda,M_c). The exact path words T_y^sigma are supplied by referenced PROOF.md Decision 4/D4-norm and are not redefined in this source note. For M=rW, Z(z)=2I_1(z)/z and E[V_c|U]=f_lambda(r)M_c, f=b(lambda r)/r, b=I_2/I_1, continuous at r=0. Distinct coarse links are conditionally independent; fine path footprints may overlap, retaining fine-field dependence in Cov_mu_beta(B_C,B_D)."
+    },
+    "block_geometry_caveat": "For a block B of b spatial links, p_B counts spatial plaquettes touching B. The ground-state finite-energy ratio is D_B=2beta(p_B+b), but it has no distance tail. The source suggests fixed-physical-radius block comparison, with all-sector boundary data, but gives no block-posterior response formula or estimate beyond the single-link mixed response and the strong-coupling Dobrushin comparison."
+  },
+  "existing_response_and_mixing_results": [
+    {
+      "statement": "Exact mixed log-ratio/cumulant identity",
+      "source": "MASS_GAP_LOCAL_BLOCK_ASTRA.md:203-220 (eqs. 13-14); REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md:157-172",
+      "content": "The two source derivatives of normalized slab log partition are the covariance of H_e,H_f, integrated over both interpolation parameters. This exactly characterizes boundary response, with no estimate implied at arbitrary beta."
+    },
+    {
+      "statement": "Finite-volume slab posterior covariance estimate",
+      "source": "MASS_GAP_LOCAL_BLOCK_ASTRA.md:222-284 (eqs. 15-18)",
+      "content": "For positive finite product Gibbs density and symmetric influence majorant C with row q<1, D=(I-C)^-1 gives |Cov(f,g)|≤(1/4) sum_ij delta_i f D_ij delta_j g. For the actual half-slab, C^+_{(e,t),(f,s)}=beta[m_ef 1_{t=s}+1_{e=f}1_{|t-s|=1}], row 14beta. Thus for beta<1/14 the ground-state mixed response is bounded by 4 beta^2 D^+_{(e,1),(f,1)} after the direct local plaquette term is accounted for. The resolvent decays in graph distance uniformly in slab depth, spatial volume, and bottom boundary field."
+    },
+    {
+      "statement": "Actual physical Doob posterior and contraction",
+      "source": "MASS_GAP_LOCAL_BLOCK_ASTRA.md:285-338 (eqs. 19-26); REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md:173-195",
+      "content": "The output conditional keeps both A(V) and psi(V), plus the input-link kernel factor. Its off-diagonal output influence is C^step_ef=beta m_ef+beta^2 D^+_{(e,1),(f,1)}; row Q(beta)=12beta+beta^2/(1-14beta). An input-link perturbation has TV defect ≤beta at the same output edge, and comparison gives summed link oscillation contraction r=beta/[1-Q(beta)]. For 0<beta≤1/32, r≤18/359. This is a one-link influence norm for the actual posterior, but only in the small-beta endpoint."
+    },
+    {
+      "statement": "All-beta local posterior tilt / finite energy",
+      "source": "MASS_GAP_LOCAL_BLOCK_ASTRA.md:78-108; REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md:104-117",
+      "content": "For changing B of b links, Perron equation and touched plaquettes give log oscillation bound for pi=psi^2 conditional density: 2beta p_B+4beta b. Volume-independent for fixed finite B, but no decay with distance; block size comparable to fixed physical radius has b growing as (ell/a)^3."
+    },
+    {
+      "statement": "Normalized soft-kernel source cumulants and total covariance",
+      "source": "MASS_GAP_CONSTRUCTION_ASTRA.md:307-418; REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md:103-153",
+      "content": "For disjoint coarse edge sets, Cov_{mu_beta K_lambda}(W_C,W_D)=Cov_{mu_beta}(B_C,B_D); plaquette covariance has order-eight coefficient 4^-8 Cov_mu_beta(X_P,X_Q), with uniform bounded-coefficient remainder but no separation decay. For all fine local sources, integral dV W_lambda(V;J)=Z_beta(J); at lambda=0, W_0(V;J)=Z_beta(J), so its field-independent source-dependent log term differentiates to the original fine covariance. At lambda>0, Cov_mu(F,G)=Cov_nu(E[F|V],E[G|V])+E_nu Cov(F,G|V); both coarse covariance and conditional covariance need control. No full fine-to-coarse return/source map with decaying tails is supplied."
+    },
+    {
+      "statement": "High-beta/actual two-block obligation already named",
+      "source": "MASS_GAP_LOCAL_BLOCK_ASTRA.md:465-493 (eq. 31); MASS_GAP_CONSTRUCTION_ASTRA.md:439-461",
+      "content": "The unresolved quantity is the uniform, spatially summable Cov_{rho_(s,t;Gamma,n,U)}(H_e,H_f) for the actual Wilson half-slab at every depth, volume, bottom field, and interpolation; a physically sufficient block version must retain all boundary sectors. The construction note separately names a local block comparison for the actual ground-state kernel via exterior-data dependence of the Perron ratio, and a fixed-physical-scale two-source coefficient including source-only and conditional covariance terms."
+    }
+  ],
+  "rg_scope": {
+    "directory": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof",
+    "queries": [
+      "two.block",
+      "mixed.*osc",
+      "posterior",
+      "conditional covariance",
+      "Dobrushin",
+      "boundary response"
+    ],
+    "summary": "The strongest exact match is the mass-gap local-block construction and its same-family initial-endpoint snapshot. Search also found generic S4'/hard-block posterior and two-block contour work elsewhere in the YM packet, but their source models/objects are not automatically the Wilson half-slab Doob posterior. No wider claim of absence is made."
+  },
+  "duplication_and_scope": {
+    "near_duplicate": "checks/massgap_block_initial_endpoint.txt (SHA256 f7e1405bb263ea82898c96ca0c80edc8afa90aa76d45a6676f7ccab34fef0fe6) reproduces the local-block construction's initial endpoint derivation in a captured text artifact; it is not an independent derivation.",
+    "review_lineage": "REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md independently implements a finite Q8 analogue and analytic checks, but that evidence is not an SU(2) block theorem or continuum result. Its author/local-block scope overlaps exactly the one-link response formulas being reused.",
+    "proposed_attack_overlap": "An actual two-block boundary-response probe is already strongly anticipated by the exact two-source identity in MASS_GAP_LOCAL_BLOCK_ASTRA.md eq. (14) and the open consumer eq. (31), with the remaining need described as a fixed-physical-radius all-sector block sensitivity. A new probe should specify what it adds beyond estimating Cov(H_e,H_f) or the corresponding block posterior oscillation in this same interpolated half-slab.",
+    "not_solved": "No large-beta or cutoff/volume-uniform physical block-response estimate is proved here; no claim that the proposed probe is redundant in all its intended specifics."
+  },
+  "read_limits": "Three required files were read completely. One additional full file (REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md) was selected and read completely. Targeted rg was run over the requested directory. No additional candidate files were read fully. No mathematical derivation or no-go classification was attempted.",
+  "workspace_effect": "Only this requested JSON deliverable was written outside the repo; no repository edits, commits, or pushes.",
+  "additional_scoped_prior_art": {
+    "revision": "43a1fcc374711ca50626eca667441d3ca575c7d1",
+    "complete_file_reads": [
+      {
+        "path": "docs/GAUGE_VACUUM_PLAQUETTE_ADJACENT_WORD_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md",
+        "lines": "1-331",
+        "scope": "Finite tensor-word adjacent-character contraction. Eq. (5), lines 82-88: SU(3) shared-link Haar Schur identity integral chi_lambda(U A)chi_mu(U†B)dU = delta_(lambda,mu) chi_lambda(AB)/d_lambda; applies to unnormalized character gluing in a finite tensor-transfer lane, not normalized nonzero-lambda soft SU(2) conditional second moments. Bounded finite-packet claim and residuals lines 1-15, 133-169, 285-310; full physical spatial Wilson environment explicitly excluded."
+      },
+      {
+        "path": "docs/GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "lines": "1-211",
+        "scope": "Supplied compact SU(3) Hamiltonian. Uniform small-av planar loop area suppression imports marked polymer expansion (lines 21-27, 45-103); separate open-geometry Taylor coefficients for one square and two adjacent faces (lines 157-200), with shared-link Haar factor 1/3 on a seven-link union. This is ordinary Haar contraction in unnormalized perturbative ground-state coefficients, not a normalized tilted-Haar soft shared-edge moment; small-u and model/scope assumptions differ. Does not claim finite-coupling string tension or continuum confinement."
+      },
+      {
+        "path": "docs/GAUGE_MULTIPLAQUETTE_CHARACTER_GLUING_EMERGENT_INTEGER_SECTOR_RECORD_CONTEXT_AND_ACTION_PAIRING_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+        "lines": "1-495",
+        "scope": "Finite closed 2D U(1) and nonabelian SU(2)/SU(3) character gluing. Shared-link class-function identities and finite matched-label sectors (lines 114-157, 245-270) use ordinary Haar/character orthogonality, not an interacting normalized soft kernel or two-plaquette posterior moment. Scope section distinguishes 2D constraints from 3D/4D intertwiner-valued duals (lines 114-126); physical 4D carrier/pairing remains open (lines 272-299)."
+      }
+    ],
+    "proposed_target_comparison": {
+      "target_object": "Exact normalized nonzero-lambda SU(2) soft-kernel shared-edge two-plaquette moment, with one common tilted Haar link variable and its neighboring link factors/normalizers retained.",
+      "prior_art_found": "The adjacent-word and multi-plaquette notes contain general shared-link Haar-Schur contractions; the area-suppression note contains the adjacent-face fundamental Haar identity and Taylor coefficient. Those establish familiar group-integration scaffolding, not the target normalized nonzero-lambda joint moment.",
+      "not_claimed": "No claim that such a moment is absent elsewhere in the full repository. The targeted search is bounded and exact kernel-specific results may live in non-obvious files or scripts."
+    },
+    "targeted_search": {
+      "command_scope": "git grep at main across docs/*.md and the ym4d proof packet/scripts for normalized soft, f_lambda, I2/I1, tilted Haar, S3/quaternion Haar, second moments, and shared-edge/link patterns; results reviewed for same-kernel direct match.",
+      "direct_matches": "No additional full-file candidate met direct-match criterion for the normalized nonzero-lambda SU(2) soft shared-edge two-plaquette moment. General Haar/Schur hits were treated as standard reusable integration identities, not as the target result.",
+      "extra_full_files_read": []
+    },
+    "status_caveats": "The adjacent-word note labels its status authority as independent audit lane only and explicitly bounds the result to finite tensor-word packets (lines 1-15). The area suppression note is conditional-support and depends on imported marked-cluster theorem (lines 1-31, 57-81). The multiplaquette note is a bounded witness-surface result and explicitly leaves the 4D physical carrier and pairing open (lines 1-15, 272-299). No ledger status was independently reconciled in this pass."
+  }
+}

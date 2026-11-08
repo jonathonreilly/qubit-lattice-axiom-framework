@@ -1,0 +1,57 @@
+{
+  "scientific_base": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
+  "governance_main": "43a1fcc374711ca50626eca667441d3ca575c7d1",
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "sha256": "a5d31da82721607e0ba04fef84675706bd3f2c568644224cce7dc86b0bb968e2",
+      "read_scope": "Luna full-file read; supervisor inspected the complete kernel/source argument and necessary premises."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "sha256": "0cdbfd18a97f6240b07f4a6047073fe6dc2abe2949af9ccb6f6bd191498bae3d",
+      "read_scope": "Luna full-file read; supervisor read equations (12)-(18) and their complete slab/comparison arguments."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CROSSOVER_REDUCTION.md",
+      "sha256": "94901036d4eddc333c9f6a4a1c8f102d3cf821465d44ac6aeebab9636ba1fe2f",
+      "read_scope": "Full prior source coverage retained from the pinned planning pass; affected proof premises read again in this task."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b",
+      "read_scope": "Full prior source coverage retained from the pinned planning pass; affected proof premises read again in this task."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "6ee69cd974567f9baf7a2fd40fc088391df6536357b869c875b84f5833d49f69",
+      "read_scope": "Setting S4/S4-prime, lines 1976-2005. Whole-file hash is provenance, not a declaration of full-file review."
+    }
+  ],
+  "external_working_drafts": [
+    {
+      "name": "worker-two-block-sources.md",
+      "sha256": "fb8d76689692471441f625ae2ae6a27efaf9ebce072080c1de4a4b02169e0306",
+      "role": "author working record; not an additional theorem premise"
+    },
+    {
+      "name": "worker-two-block-bounds.md",
+      "sha256": "f4916d2d2d7dd5f949ce8bd6c8b14fcc083ef13ea79f3c65528a679853bbd935",
+      "role": "author working record; not an additional theorem premise"
+    },
+    {
+      "name": "check-shared-edge.md",
+      "sha256": "56fd1b97e02d741d91ff3bde873c54a65296e31fb714cd810eb54877ba1f7f25",
+      "role": "author working record; not an additional theorem premise"
+    },
+    {
+      "name": "two-block-prior-work.json",
+      "sha256": "3ce8dd1b8f185ab8c336d2bb5829668c3bd6e35a5f5d8af735ce84d3d4f99f1c",
+      "role": "author working record; not an additional theorem premise"
+    }
+  ],
+  "scope": "Exact finite source identities and one-step small-parameter sufficient estimate. No continuum or audit conclusion.",
+  "source_note_final_sha256": "934b10582986d3d484e158af2913050d872788d1ee3171720abe3e37daa1073c",
+  "full_proof_check_sha256": "0334a5242566eaf352a246f22fe21aa94a60af4d84394e6135e92a106c0c5806",
+  "shared_edge_check_included_sha256": "f01566a310ad033678101c77e34ddff76866192e41b50adc733f9e3677441a3e"
+}

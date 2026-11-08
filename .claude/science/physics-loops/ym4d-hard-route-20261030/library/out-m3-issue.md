@@ -2,7 +2,7 @@
 
 Ethan and Levent,
 
-Following issues #13, #14 and #19, [this note](@LINK@) supplies a reduced switched current on specified admitted domains. Your account assumes the layer package at CA-I 72392–72399 and consumes \(P_1(\sigma),m_H(\sigma)\) at 72720–72728, 72831–72851 and 111394–111399 without defining them at \(\sigma\ne1\). All labels and lines refer to `31a47c543775`.
+Following issues #13, #14 and #19, [this note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/9454bc54f/.claude/science/physics-loops/ym4d-hard-route-20261030/library/out-m3.md) supplies a reduced switched current on specified admitted domains. Your account assumes the layer package at CA-I 72392–72399 and consumes \(P_1(\sigma),m_H(\sigma)\) at 72720–72728, 72831–72851 and 111394–111399 without defining them at \(\sigma\ne1\). All labels and lines refer to `31a47c543775`.
 
 Your K10 current, CA-I 15306–15313, gives \(-Q^Ta\ell^{-1}b\) at zero switches at site (T). There the reduced rider gives zero, and the locality clause requires a zero mass kernel, but the composite mass is \(-Q^Ta\ell^{-1}\). The sentence at 15450–15451 leaves the representation identity unrestricted although its proof holds only at switches one. No proved step of yours uses it away from one. This is a missing definition in an assumed package, not a false proved step.
 

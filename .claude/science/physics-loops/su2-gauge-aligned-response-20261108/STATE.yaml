@@ -1,19 +1,23 @@
 status: open
-phase: research_checkpoint
-base: 1e0d3b58dcda7f83152b0bb51729260247454d65
+phase: awaiting_exact_text_publication_approval
+science_source_base: 1e0d3b58dcda7f83152b0bb51729260247454d65
+refreshed_main: bf92a1d763030836ed55631d5d7a7ef3b288f284
+previous_checkpoint: 55fd670ff8995427b24617b2273bd3f78b7559d9
 branch: physics-loop/su2-gauge-aligned-response-20261108
 delivery: milestone
 runtime: bounded_interactive_task
-actual_current_surface_status: open
+actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 trace_class: upstream_support
-next_action: prove connected full compact two-source/two-boundary response with exact normalization and coupling scaling
-checked_parts: [compact_forest, flat_two_step, nonlinear_chart, compact_energy, rough_density, local_conditional_tail, local_relative_coercivity, rough_component_bound]
-pending_check_parts: []
+reachability_to_target: partially_closes
+next_action: publish the prepared single main-based PR only after approval of the exact text
 mathematical_check: same_provider_fresh_context
 formal_audit: not_performed
 publication: local_only
-full_response_status: open
+full_compact_identity_terminal_response: bounded-support
+general_coarse_conditional_response: open
+all_depth_control: open
 mass_gap_status: open
+pending_check_parts: []
 public_writes: []
 prompt_files_changed: []

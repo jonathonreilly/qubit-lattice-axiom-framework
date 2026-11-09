@@ -2,7 +2,7 @@
   "science_base": "1e0d3b58dcda7f83152b0bb51729260247454d65",
   "historical_draft": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
   "branch": "physics-loop/su2-gauge-aligned-response-20261108",
-  "full_response_status": "open",
+  "full_response_status": "bounded-support",
   "mass_gap_status": "open",
   "formal_audit": "not performed",
   "public_writes": [],
@@ -19,7 +19,8 @@
       "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
       "git_blob": "6f3ed42e7c68551f3eb1a8ce4452476f3470f1f3",
       "sha256": "1c5bda5db3b59963290d75420a45a4857cf7f375417d64c4275a0e49490de4ca",
-      "read_scope": "Selected definition/proof windows specified in SOURCE_MAP.md; hash covers the complete source, not a full-read assertion."
+      "read_scope": "Complete instruction snapshot at the stated revision, not a scientific input or runtime replay requirement.",
+      "role": "instruction_snapshot"
     },
     {
       "revision": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
@@ -69,6 +70,20 @@
       "git_blob": "b92c15fad8ae8682a2ed5e2544fae7dbf17ebb27",
       "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
       "read_scope": "Selected definition/proof windows specified in SOURCE_MAP.md; hash covers the complete source, not a full-read assertion."
+    },
+    {
+      "revision": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "git_blob": "b800afe0907c3d220c26a4e43fd80c155dfd5469",
+      "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "read_scope": "Complete source read; architectural provenance. Actual two-step proof and consumer are re-established in the included parts."
+    },
+    {
+      "revision": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "git_blob": "abc12d270500f9da9692b26dd997f1e02699f1e1",
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "read_scope": "Complete source read; architectural provenance. Actual two-step proof and consumer are re-established in the included parts."
     }
   ],
   "reader_inventories": [
@@ -84,24 +99,63 @@
     }
   ],
   "output_hashes": {
-    "GOAL.md": "b201e3d040332164196679c03f4211a97e07f95d30d01a6d50a9ab0092e4b7b1",
-    "HANDOFF.md": "c6fbfabd113c0f8d5e140c4d617ba5c15c3bfd855492ef981e3c332b14d1dee6",
-    "SOURCE_MAP.md": "b5581dc45f27804ea381608ce3d3e366b4375f339fccbe2c820bb7b6a3d5abae",
-    "STATE.yaml": "e2e2e171de4c7661db2e13193b55e87f75cc9c427bc6649a03f70baccd7d544d",
+    "APPROACH_REGISTRY.md": "b64b9f0e883e6bc02fd610da036286c3649d144ea11ab039f6d9691171998e8b",
+    "ARTIFACT_PLAN.md": "62eaee6d74692dbfa4a90fbeef79debd40f1ecf119345ec0caf04f9261b70ee1",
+    "ASSUMPTIONS_AND_IMPORTS.md": "54e7cc4c141801582f34dc2dcdc5435d20fc280fae1d92239f1589ac2a9cbb9b",
+    "CLAIM_STATUS_CERTIFICATE.md": "3544f29457cca4b3f39bf1ae702512a0ffe8bec1dd89166641df8568f1e02537",
+    "GOAL.md": "75c533044cf523b646f60e225c3cc2350a21d908f0a473c293ec468def998279",
+    "HANDOFF.md": "fb97b0637a7bdcdc87676df2dd046b649f6f2ed8c40b6ac73aed0398870d0ec1",
+    "LITERATURE_BRIDGES.md": "2dc7c75c94d3a055bfb2f4b0de4bb506a412eeb40923c142b4c1cf209f0b59e2",
+    "NO_GO_LEDGER.md": "930614e6a872f5f8208fc36d4c738eafb6c1e8b5df2de2542e963c2a29247b1d",
+    "OPPORTUNITY_QUEUE.md": "03cb41a6351f162967486c2c6d1393bb86685ee21036cccb645eede05db57e61",
+    "PREPARED_PR.md": "b48b321be01505db294fd6c9d82a28c508e39a0b2f58379a90b941549596db0a",
+    "PR_BACKLOG.md": "fced850e0cae1722cedf4ff645e025485a5151cb2331d6550359b4b97667d65b",
+    "REVIEW_HISTORY.md": "7d2e8dbefad8eef3306e77f95db0a4e18705e03225870ffffce2954d6d10f6ec",
+    "ROUTE_PORTFOLIO.md": "6fd3b2a612ecf142e7f2b608f6daac146605157fb840889b94c8e5690a7fad58",
+    "SOURCE_MAP.md": "e375e7f042af5737d92a612f5ca712c6eb8c9eb7bd627215d515e54018ed803e",
+    "STATE.yaml": "afa7fcba1d45e14b0235dde7d24222555303c32a5a0c3aecece23d986cdc1ebf",
+    "TRACE_GATE.md": "b80966bdadd7c7326b972427fab8fa86203d4bea8726b3b2006d019cc130d793",
+    "gates/arbitrary-boundary-moments-check.md": "d4e7ae28bc3bcfedb4286dd9ef93c8bc5deb03b2a479ec3bb0efe9a68f85fdb3",
+    "gates/buffered-core-ratio-check.md": "a77a82e7a03f800547d95ea2728ae34e5c5afb765ba1c7d7a4d6a824ca8d6b32",
+    "gates/density-forest-source-check.md": "fdc8beca9170eaf8e30f15ecbf369d6c817746caaac6ca55370fb7c6ef1fe18f",
     "gates/final-scope-and-local-tail-check.md": "de0b490627aba42ec3c75f73c43116bc1982b7090ce44de51b49bca9fe43cb0c",
     "gates/forest-flat-check.md": "6d6e3a13c89bdf7fd70bae95d616669848078212ce35b40d871e46a436bcd988",
+    "gates/four-response-independent-check.md": "9eaa67d4f0d93db3578d01a12eca6741449291e9c04569129e5d89a0025a1860",
+    "gates/frozen-gaussian-producers-check.md": "fb4f53b921ba57d94acf379e4c1622ed04616e1cd9409b3e61871b25876ca9fa",
+    "gates/full-connected-four-response-check.md": "e714f72f4788c2882b31ecccff3cc87686be71915614f3b6ae56c48964045306",
+    "gates/global-chart-sector-ratio-check.md": "3272bdcc6cf517f032c80c2b83760ba91892b611ccf05584efac216ea70d5ede",
+    "gates/original-source-four-response-check.md": "4a41cdd580dbee3db3ddd9d7376ac435f1554cd2f61275b8df96f98abd262f6d",
+    "gates/primary-note-check.md": "eb304d67c25153dc053f33531dfc1b83a92be0852faae8ec038a2c74463cb98f",
     "gates/relative-component-check.md": "b73a1bf25fdfa16fc8f9655e502cf45d00a70297774eda28a827c07168fe8dcc",
+    "gates/source-marked-compact-check.md": "3dec659c79e655671c4bacf44105eabe12914aab6f67581f24aef308b96266ba",
+    "gates/two-step-compact-polymer-check.md": "98fde67bc98a4028e3254834a62adcc39881273bf92efc1ae5e6ac599d02c4c8",
+    "gates/zero-shift-density-forest-check.md": "714e3f3eda8429c2b382389e49af94b99ddc3e06f3ff6c18759fe5d6f5bb7a13",
+    "parts/arbitrary-boundary-interior-moments.md": "c58acdf2d0391847c631a358fcad2bd280e8f563c19947f976118272a4426d11",
+    "parts/buffered-core-conditional-ratio.md": "204f48f463fb69eebb6b309996c663698dadd5969728f2a311176e21b53b42c7",
+    "parts/chart-fourth-connected-bound.md": "848015af72eda20f25644b960ba52f5a438ad85c20a756cecadd510d7ee26aa4",
     "parts/compact-energy-coercivity.md": "7e8e798759239aadfc8c137125bf23f6d1de2cac18b714ddca70ea294cbaa4aa",
     "parts/compact-forest-exchange.md": "b0d3a76a94a8cd43de186b1c93deb38327ea2b29aa2b1bbc16e1caa2e22ecef2",
     "parts/flat-two-step-bound.md": "0f028f694bb686cf4272d8620329f1f2e8535d8af9a2d028bbde6965cab3f03a",
+    "parts/frozen-gaussian-producers.md": "ac4984909f5edbc5e79f9cb3ffd212862f43295d9a0537e0102fb4e38d0900c3",
+    "parts/full-compact-fourth-scaling.md": "549757b9574e7d50b8626ac0421889152cd2fae284f3d8589fe01309c3f86094",
+    "parts/full-connected-four-response.md": "04ef141738a356dd914608421a1d2cd135ff0f3cfbc1ac5f1ece81a71f0825c7",
+    "parts/global-chart-sector-ratio.md": "b757aa5ddbec0a1a96cb61d2ee531a4e6571712d97eab53bfae09703c596cede",
     "parts/local-conditional-tail.md": "cf47acdfe0deea09fe49f7b08d90d45a3aac0df3251062ba4f67f566e639072d",
     "parts/local-relative-coercivity.md": "6b7c3a0eba818566fad0cb34f13998a3cf98de632761d7942ca527c51c80cb37",
     "parts/nonlinear-chart-response.md": "5edacc8ee78d54b7fb853fb34da3d8cceffd8eb0e476f8510d15048f8f10f2d1",
+    "parts/original-source-four-response.md": "b305c708b5736f6dca707008bee7f3ceeb648b02bced785a82e5d1b3fa593f79",
     "parts/rough-component-bound.md": "1a4c40385f1fc492033f261f8ed938bed23f32475eb9a116347fd7361f9e9c44",
-    "parts/rough-density-bound.md": "cb23d1b835ae70ad79d145f891fb152fb71ae2fddd630b8c8469cba765973c20"
+    "parts/rough-density-bound.md": "cb23d1b835ae70ad79d145f891fb152fb71ae2fddd630b8c8469cba765973c20",
+    "parts/scalar-leg-forest-count.md": "6df5e3c0f1185e5f56bae18e8dc81053eb33b005244009a70ccc3ed542377f6f",
+    "parts/source-marked-compact-decomposition.md": "c6299e40fb15b87d5d01a007467e11468da72e949dd164b35f22ea0665f4fa8e",
+    "parts/two-step-compact-polymer-decomposition.md": "1e3772f4781fa082de6d117e8f61adef616deb00fe293bbd01e07f030107d54e",
+    "parts/zero-shift-marked-density-forest.md": "d44adc900daf7ac665e502ac950230a8739b120d1a2be4940fd292ea9a09087f",
+    "sources/connected-response-literature-scan-20261109.md": "3826e5a46894f25f168992304c71658114668829d45649a8b9eea0b903d5553d",
+    "sources/connected-response-repo-scan-20261109.md": "0bd2ccd95ef0ee66378b258c162bedf47dd8b8f7463ba374070fcb5deb1cf122",
+    "sources/frozen-forest-literature-addendum-20261109.md": "238180b21668096a1715d913d9e602543011ad799fd66590316039cf1c130bcd"
   },
-  "frozen_at_utc": "2026-11-09T02:40:12Z",
-  "mathematical_check": "Same-provider fresh-context mathematical check; eight source hashes bound by three immutable reports; not a formal audit.",
+  "frozen_at_utc": "2026-11-09T19:18:30.359211+00:00",
+  "mathematical_check": "Same-provider fresh-context independent mathematical derivations; all current part and primary-note hashes bound by reports. No formal audit or independent-provider claim.",
   "managed_worker_archives": [
     {
       "root": "/Users/jonreilly/.codex/worktrees/su2-gaussian-chain-worker/Physics",
@@ -110,15 +164,36 @@
     {
       "root": "/Users/jonreilly/.codex/worktrees/su2-gauge-exchange-worker/Physics",
       "attachment_id": "01a1be2d-65ca-7250-b77c-6c9c3e1495bd"
+    },
+    {
+      "root": "/Users/jonreilly/.codex/worktrees/su2-four-response-moments/Physics",
+      "attachment_id": "01a1bff6-32a5-7fc3-90e0-f93e5b9db21f"
+    },
+    {
+      "root": "/Users/jonreilly/.codex/worktrees/su2-four-response-gluing/Physics",
+      "attachment_id": "01a1bff6-3298-7df3-836d-6bce8a14bc2c"
     }
   ],
   "validation": {
     "vocabulary_violations": 0,
     "frozen_proofs_unchanged_by_lint": true,
+    "all_local_links_resolve_to_proposed_tracked_regular_files": true,
+    "mathematical_sources_bound_by_report_hashes": 21,
+    "complete_delta_whitespace_clean": true,
     "numerical_jobs": 0,
     "new_runner": false,
     "formal_pipeline": false,
+    "combined_landing_validation": "not run; required on integrated current-main tree before landing",
     "new_publication": false,
+    "execution_lease": "released",
     "prompt_files_changed": []
+  },
+  "refreshed_main": "bf92a1d763030836ed55631d5d7a7ef3b288f284",
+  "previous_local_checkpoint": "55fd670ff8995427b24617b2273bd3f78b7559d9",
+  "full_response_scope": "Full compact finite two-step terminal-I distinct-link response; original-source conditional covariance retained. General Q law and nonidentity terminal control remain open.",
+  "publication": "awaiting exact-text approval",
+  "primary_note": {
+    "path": "docs/SU2_CONNECTED_FOUR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-11-09.md",
+    "sha256": "3e4d97a68b95c0547c1a2ded6d01a75dd012d3ae0eee5cc016576e3d8ce0112b"
   }
 }

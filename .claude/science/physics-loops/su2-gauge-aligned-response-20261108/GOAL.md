@@ -31,3 +31,17 @@ An event-probability bound is not that connected coefficient. For an actual
 normalized coarse conditional, the corresponding complete log Q coefficient
 must still be subtracted. Nonidentity terminal backgrounds and further exact
 blocking remain part of the original broader target.
+
+
+## Current milestone
+
+The completed author derivation and its independent composition check supply
+that distinct-link coefficient for the FULL compact two-step posterior at V=I:
+C/u connecting-tree decay and weighted boundary-pair summability for fixed
+smooth quotient singlets. Original sources retain the exact conditional orbit
+covariance, with its possible O(1) merged-source term. The primary note and
+`parts/full-connected-four-response.md` state all hypotheses and sources.
+
+The broader goal is still open: the complete Q-law response when its varied
+parameters remain, nonidentity terminal control, and preservation for inherited
+further transitions. No physical mass-gap or all-depth conclusion is inferred.

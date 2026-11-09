@@ -9,6 +9,66 @@ These are not repairs. The note already leaves them unresolved.
 - Path: `docs/WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md`
 - The bound uses the supplied Hamiltonian convention. No physical-seconds identification is made. Exact source, calibration, coefficient correlations, seed, and physical identification stay conditional.
 
+## Note 2
+
+- Path: `docs/UNIFORM_SLOW_OUTPUT_RESOURCE_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Native coefficient supply, physical units, and an optimized frontier stay open.
+
+## Note 3
+
+- Path: `docs/TWO_QUBIT_SITE_SOLDERED_SPIN_STABILIZER_RULES_THREE_DIMENSIONAL_CHARGE_MOTION_FLIPS_A_FREE_LOCAL_VARIABLE_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Spin-unsoldered rules, and any electron identification, stay open.
+
+## Note 5
+
+- Path: `docs/THREE_SITE_PRODUCT_SOURCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Final integration review and physical identification of the apparatus stay open.
+
+## Note 6
+
+- Path: `docs/THREE_AXIS_QUBIT_SYMMETRIC_STABILIZER_RULES_FERMION_SEARCH_FINDS_NO_COHERENTLY_MOBILE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Non-maximal rules, trivial-stabilizer strings, and arbitrary-support fermions stay open.
+
+## Note 7
+
+- Path: `docs/THREE_AXIS_QUBIT_SITE_STABILIZER_RULES_UNSOLDERED_TORIC_CODES_MOVE_SOLDERED_MAXIMAL_RULES_DO_NOT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Soldered strings without `C4` or `C3` symmetry, and mobility of non-maximal sub-rules, stay open.
+
+## Note 9
+
+- Path: `docs/STRUCTURED_SOURCE_TOLERANCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Downstream coefficient errors and a native block supplier stay open.
+
+## Note 10
+
+- Path: `docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- The supplied ready packet and exact dark installation stay open.
+
+## Note 11
+
+- Path: `docs/SPINFUL_MAJORANA_PER_DIRECTION_CUBIC_CODE_EMERGENT_FERMION_DOUBLET_CARRIES_SPIN_HALF_CLASS_ON_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- A common invariant link ground vector, and the input that would fix the class, stay open.
+
+## Note 12
+
+- Path: `docs/SLOW_OUTPUT_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Native coefficient supply and a physical-seconds identification stay open.
+
+## Note 13
+
+- Path: `docs/SLOW_OUTPUT_COMPLETE_STATE_ONSET_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- A quantitative onset for the sharper infinite ceiling `0.001332` stays open.
+
+## Note 14
+
+- Path: `docs/SITE_LOCALIZABLE_STABILIZER_CODE_FERMION_CANNOT_CARRY_THE_SPIN_HALF_CLASS_DIRECTION_SHELL_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- The one-dimensional localized sector stays open.
+
+## Note 15
+
+- Path: `docs/SCALAR_BACKGROUND_OBSERVATIONS_NOTE_2026-10-17.md`
+- Which scalar history is realized, and local Planck-mass matching, stay open.
+
 ## Note 4
 
 - Path: `docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md`

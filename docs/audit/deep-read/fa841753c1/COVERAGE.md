@@ -13,6 +13,90 @@ Runners were not executed.
 - Checked: the new-site ratio is 20. The inventory counts match `M+236`, `M+241`, `M+237`, and `2M+277` at `M = 250,000,000`. The seven printed ceilings sum to 0.001907621, and the slack under 0.00191 is 0.000002379. The square of 0.00191 is 3.6481e-6, so the success floor is 0.9999963519. Twice 0.00191 is 0.00382. The seed comparison `0.00125^2 = 1.5625e-6` sits above the printed outside mass `1.558e-6`. Twice the printed `Eout` ceiling 0.000197 is 0.000394. The five background ceilings sum to about 0.00024904, under 0.000250. `sinh(1)` is about 1.175, under 1.2, and the transfer exponent is about `-1.50e7`, under `-1e7`. The total-qubit ratio is about 19.99998, under 20.
 - Not checked: the continuum and contour estimates, and the named runner. The note already says the runner does not prove those estimates and that this publication grants no retained audit status.
 
+## Note 2
+
+- Path: `docs/UNIFORM_SLOW_OUTPUT_RESOURCE_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: at `H=10^6` and `L=10^8`, `H/L=0.01`. The printed envelope sum is `0.002027701`.
+- Detail: `batches/notes_0002_0015.md`.
+
+## Note 3
+
+- Path: `docs/TWO_QUBIT_SITE_SOLDERED_SPIN_STABILIZER_RULES_THREE_DIMENSIONAL_CHARGE_MOTION_FLIPS_A_FREE_LOCAL_VARIABLE_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `2^8=256`. The torus counts `72`, `224`, and `520` equal `L^3+8` at `L=4, 6, 8`.
+- Detail: `batches/notes_0002_0015.md`.
+
+## Note 5
+
+- Path: `docs/THREE_SITE_PRODUCT_SOURCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `1-0.0006^2=0.99999964` and `2*0.0006=0.0012`. `1-0.001722^2=0.999997034716` and `2*0.001722=0.003444`.
+- Detail: `batches/notes_0002_0015.md`.
+
+## Note 6
+
+- Path: `docs/THREE_AXIS_QUBIT_SYMMETRIC_STABILIZER_RULES_FERMION_SEARCH_FINDS_NO_COHERENTLY_MOBILE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `4259+60=4319`, `1224+9=1233`, and `8*3+43+47=114`.
+- Detail: `batches/notes_0002_0015.md`.
+
+## Note 7
+
+- Path: `docs/THREE_AXIS_QUBIT_SITE_STABILIZER_RULES_UNSOLDERED_TORIC_CODES_MOVE_SOLDERED_MAXIMAL_RULES_DO_NOT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: the even-`L` deficits `48`, `72`, and `96` equal `12L` at `L=4, 6, 8`.
+- Detail: `batches/notes_0002_0015.md`.
+
+## Note 9
+
+- Path: `docs/STRUCTURED_SOURCE_TOLERANCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `M+243=50000243` at `M=50000000`.
+- Detail: `batches/notes_0002_0015.md`.
+
+## Note 10
+
+- Path: `docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: the contact weights `1+1+2+1+2+2=9`. The two printed numerators differ by exactly `0.001` on the shared denominator `27062500000000000`.
+- Detail: `batches/notes_0002_0015.md`.
+
+## Note 11
+
+- Path: `docs/SPINFUL_MAJORANA_PER_DIRECTION_CUBIC_CODE_EMERGENT_FERMION_DOUBLET_CARRIES_SPIN_HALF_CLASS_ON_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `2^3=8`. The phase checks `(-i)^5=-i` and the junction product were accepted from the prior read of this batch. This pass did not rebuild the cube lifts.
+- Detail: `batches/notes_0002_0015.md`.
+
+## Note 12
+
+- Path: `docs/SLOW_OUTPUT_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `0.00129+0.000410+0.0016+2*0.000041=0.003382`, under `0.0034`. `0.00129+0.000041=0.001331`. `1.5*10^13/(5*10^9)=3000`. The printed eigenvalue `(-7+24i)/25` has modulus 1.
+- Detail: `batches/notes_0002_0015.md`.
+
+## Note 13
+
+- Path: `docs/SLOW_OUTPUT_COMPLETE_STATE_ONSET_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `0.00190588324+0.0000016+0.000001=0.00190848324`, under `0.00191`. `1-0.00331^2=0.9999890439`.
+- Detail: `batches/notes_0002_0015.md`.
+
+## Note 14
+
+- Path: `docs/SITE_LOCALIZABLE_STABILIZER_CODE_FERMION_CANNOT_CARRY_THE_SPIN_HALF_CLASS_DIRECTION_SHELL_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: the printed shell sums `1+2+3=6`, `3+3=6`, `2+4=6`, `1+1+3+3=8`, `2+2+4=8`, `4+4=8`, and `1+2+3+6=12`. Character values were not recomputed.
+- Detail: `batches/notes_0002_0015.md`.
+
+## Note 15
+
+- Path: `docs/SCALAR_BACKGROUND_OBSERVATIONS_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `42-16*sqrt(2)` is about `19.37`, so the printed positivity bound is positive. The fixture determinant was not recomputed in this pass.
+- Detail: `batches/notes_0002_0015.md`.
+
 ## Note 4
 
 - Path: `docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md`

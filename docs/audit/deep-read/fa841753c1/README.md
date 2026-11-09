@@ -18,10 +18,10 @@ The continuum proofs and named runners are not executed during the read. A print
 
 ## Progress
 
-Read under this process: notes 1, 4, 8, and 16–27. None of them needs a repair. Notes 2, 3, 5–7, and 9–15 are still in progress.
+Read under this process: notes 1–27. None of them needs a repair.
 
 Extracted from the prior cards still on disk: notes 1551–1737. Two of those rows are repairs, notes 1716 and 1737. The other extracted notes are coverage and open items, not repairs.
 
-Next unread note: 2.
+Next unread note: 28.
 
 Notes 2–1550 have no surviving cards. The read continues there until it meets the extracted range. Notes after 1737 are still unread. The closed card dump in PR #10146 was not merged, and that remote branch was deleted.

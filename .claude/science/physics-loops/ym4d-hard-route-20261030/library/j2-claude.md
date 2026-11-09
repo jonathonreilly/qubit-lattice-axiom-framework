@@ -12,10 +12,10 @@ Sources: CA-I/II/III and SA fetched once into a private scratch folder from `raw
 ## 0. Repo search and prior work
 
 - `library/prior/j2-claude.md` (digest, rule 0b): "partly covered". Not covered: the common-data all-scale representation, repeated and mirror lists, the actual rooted geometry, and a named register of open suppliers. This note attacks exactly those four items.
-- `library/t0-joins.md:254–306` states the J2 contract (J2.1)–(J2.3) and a supplier table, with no proof. `library/ro1-vs-ca.md:42–48,148` says the missing step is "derive RO1's H-U from CA's correlation theorem". `library/t0-tree.md:147,156,265` list B04, B13 and J2 as **OPEN**.
+- `library/t0-joins.md:254–306` states the J2 contract (J2.1)–(J2.3) and a supplier table, with no proof. `library/ro1-vs-ca.md:42–48,145` says the missing step is "derive RO1's H-U from CA's correlation theorem". `library/t0-tree.md:147,156,265` list B04, B13 and J2 as **OPEN**.
 - `library/open-registry.md:31,923,932` registers J2, B04 and B13 to `j2-claude` only. `open-core.md` and `l17c.md` have no J2 entry. So there is no duplicate attack (rule 0a).
 - Ported suppliers read: P6 B3 (`port/p6-correlation.md:460–642`, the theorem; `:2645–2671`, the register; `:3431–3743`, the torus-bound proof); P8 H-LOC, H-DOM, H-TREE (`port/p8-positivity.md:152–198`); frozen LSC (`lsc.md:27–128,146–305,308–380,625–724`); P10 A20 (`port/p10-stability.md:1362–1440,1591–1680`).
-- `library/prior/repo-search-2026-11-08.md` has no hit on UV1, H-U or the rooted source package.
+- `library/prior/repo-search-2026-11-08.md` (the lead's repo-wide search) has no hit on UV1, H-U or the rooted source package. My own `git grep` of the whole HEAD tree outside this folder was stopped at its ten-minute limit with no output; it is not a search result.
 
 ## 1. Where the account treats the object (rule 9)
 
@@ -28,7 +28,7 @@ The account has no statement in the form of SR1 (4)–(6). It has the four ingre
 - **CA-II 60350–60438, `6.1:not-units-sources`**, items (b)–(d): last-lattice units, \(s_j=ML^{j-K'}\), \(D_j\) the wall-connected unions of \(\pi_j\)-cubes, \(d_j(X)\) the shortest tree length divided by \(s_j\), \(X^+\) one layer of cubes, \(\operatorname{plaq}(Y)\) the bare plaquettes that meet \(Y\).
 - **Balaban CMP 109, §0** (owner's copy, text layer lines 445–465): a localization domain is a union of a finite family of \(\pi_j\)-cubes connected through common walls, "their intersection is a \(d-1\)-dimensional cube"; \(d_j(X)\) is the length of a shortest tree graph in \(X\) meeting all its cubes, divided by \(M\), "graphs in the continuous space".
 
-Classification. The per-weight properties (L), (A), (B), (S), (F) are **proved as an implication** in the account, from the correlation theorem and its proof; their standing is the correlation theorem's (P6 B3 register, §6 below). The account does **not** state: the size \(m(X)\) of SR1 or a rooted count in it; physical units on the torus of side \(2L^{m_1}\); the small-cutoff branch; one common normalization with uniform constants. The last two are frozen LSC. So this note is a **proof of a step they do not state**, the J2 join, from their statements and our frozen ports. It also contains one **check of their argument**: Lemma 3 reads the torus-bound proof for the list-independence claim.
+Classification. The per-weight properties (L), (A), (B), (S), (F) are **proved as an implication** in the account, from the correlation theorem and its proof; their standing is the correlation theorem's (P6 B3 register, §8 below). The account does **not** state: the size \(m(X)\) of SR1 or a rooted count in it; physical units on the torus of side \(2L^{m_1}\); the small-cutoff branch; one common normalization with uniform constants. The last two are frozen LSC. So this note is a **proof of a step they do not state**, the J2 join, from their statements and our frozen ports. It also contains one **check of their argument**: Lemma 3 reads the torus-bound proof for the list-independence claim.
 
 ## 2. Statement
 
@@ -57,7 +57,7 @@ These are admissible correlation-theorem data (LSC (b)). The last lattice \(T^{(
 
 ### 2.2 Named hypotheses
 
-Each is used only as stated. Their standings are in §6.
+Each is used only as stated. Their standings are in §8.
 
 - **(H1) Local terms, class reading.** In Case A, at every \(v\in\mathcal W_{K'}\), for every \(j\le K'\) and \(X\in D_j\): (L) \(e_j(X;v)\) is a function of \((v(x_p))_{p\in\operatorname{plaq}(X^{[1]})}\) alone, and vanishes when these values vanish (the account's \(X^+\), one layer of cubes, lies in \(X^{[1]}\), so its (L) implies this); (A) \(v\mapsto e_j(X;v)\) is holomorphic on \(\mathcal W_{K'}\); (B) \(|e_j(X;v)|\le C_ee^{-(1-\delta)\kappa d_j(X)}\), with \(C_e\) independent of \(K,m_1,o\), the torus, the position and \(v\). This is CA-II 60714–60731 with the domain of 61745–61753 (i); in our register it is P8's H-LOC with H-DOM at \(\mathfrak r=1\) (`port/p8-positivity.md:152–166,200–208`).
 - **(H2) Normalized stability and floor (LSC).** In Case A, at every \(v\in\mathcal W_{K'}\),
@@ -68,7 +68,7 @@ Each is used only as stated. Their standings are in §6.
   with \(E_{\rm vac}\) real and source-independent, and \(C^*_+,C^*_{\rm low}\) uniform in \(K,g_0,m_1,o,N_T\) and positions. This is LSC's Result (`lsc.md:690–694`) and (5a)–(5b). Lemma 3 below records why the upper half holds at every such \(v\), not only at \(v=w_z\), once LSC's eight sourced hypotheses hold at \(v\).
 - **(H3) Common data (J1).** SR1's and RO1's first-passage data, their block size \(M\) and constant \(c_M\) are the ones above: the common flow is the account's (LSC §3 "Flow", II:63072–63081), \(M\) is the account's \(M\), and \(c_M=40M\). This is part of J1 (J1-CA, J1-ID, J1-ORDER item 2); J2 does not prove it.
 
-Lemma 3 also names the inputs behind (H2) at a general weight; §6 lists every upstream input with its standing.
+Lemma 3 also names the inputs behind (H2) at a general weight; §8 lists every upstream input with its standing.
 
 ### 2.3 Theorem J2
 
@@ -84,7 +84,7 @@ Lemma 3 also names the inputs behind (H2) at a general weight; §6 lists every u
 These are fixed once \(g\) is fixed. They do not depend on \(K,\beta,m_1\), the list, its coefficients, or positions. Then \(\kappa_{\rm src}-\kappa_D\ge 7\), and for every first-passage datum, every \(m_1\ge m_{\mathbb T}(g_-)\), every finite family \((f_i)\) of real Lipschitz functions on \(\mathbb T_\ell\) (repetitions and overlapping supports allowed), and every complex \(z\) with \(\sum_i|z_i|t_{f_i}<2r_{\rm src}\), the source \(W=\sum_iz_if_i\) satisfies SR1 (4)–(6) as follows.
 
 1. **(J2.1)** \(|Z_{K,\ell}(W)|\le\exp\{V+\operatorname{Re}[U(W)+\sum_{s=0}^K\sum_Xe_{s,X}(W)]+C_+\ell^4\}\) and \(Z_{K,\ell}(0)\ge e^{V-C_-\ell^4}\), with real \(V\) and \(U\equiv0\).
-2. **(J2.2)** The domain terms are indexed by pairs \((s,X)\), \(X\) a nonempty finite union of closed cubes of side \(Ma_s\) in \(\mathbb T_\ell\). Each \(e_{s,X}\) is a function of the restriction of \(W\) to \(X^+:=X^{[2]}\) (in fact of its values at the barycentres there), independent of the list representing \(W\). It is holomorphic in the coefficients on the source ball, vanishes when \(W|_{X^+}=0\), and obeys
+2. **(J2.2)** The domain terms are indexed by pairs \((s,X)\), \(X\) a nonempty finite union of closed cubes of side \(Ma_s\) in \(\mathbb T_\ell\): in Case A with \(s\ge b\), cubes of \(\pi_{K-s}\); otherwise (\(s<b\), or Case B) cubes of any fixed aligned grid of that side, and all those terms vanish. Each \(e_{s,X}\) is a function of the restriction of \(W\) to \(X^+:=X^{[2]}\) (in fact of its values at the barycentres there), independent of the list representing \(W\). It is holomorphic in the coefficients on the source ball, vanishes when \(W|_{X^+}=0\), and obeys
    \[
    |e_{s,X}(W)|\le A_{\rm src}e^{-\kappa_{\rm src}m(X)},\qquad
    \operatorname{diam}X^+\le C_{\rm dep}a_s(m(X)+1),                 \tag{2.5}
@@ -150,7 +150,7 @@ If \(X^{[2]}\) meets \(B(R)\), the argument of Lemma 1(e) gives a cube \(Q\) of 
 
 *Proof (reading, checked line by line against the source).* LSC proves the upper bound (13), (13a) and its Result from these inputs at one weight \(w\) (`lsc.md:233–301`). The representation is \(\widehat Z(w)=\int\rho^w_{K'}dV_{K'}\) with \(E=E_{\rm vac}\) (`lsc.md:199`, (N6), and the sourced integral identity). The bound then uses LSC's items 1–4 (`lsc.md:239–242`), which port CA-II 59718–59813. I read CA-II 59645–59822 in full, in the verbatim port `port/p6-correlation.md:3436–3613`, and against the fetched source. In that range the source enters only through the weight \(w\): through its local terms \(e^{(j)}(X;w)\) and their bound (3), through the history expansion of \(\rho^w_{K'}\), and through the sourced budget, complex-weight, zone-cell, modification, gas, count and label hypotheses at \(w\). The list \(w=\sum_iz_if_i\) is named at II:59685–59687 only to place \(w\) in the admissible ball. Its other uses are the independence of \(e_j(X;\cdot)\) from \(z_i\) when \(X^+\) misses \(\operatorname{supp}f_i\), and the separation \(\mathsf d\) and the order \(n\); all three are used only in the derivative estimates (\(\alpha\))–(\(\beta\)), II:59823–59924, which Lemma 3 does not use. The weight-class lemma (CA-II 2722–2790) puts every \(w_z\), \(z\in\mathbb D\), in \(\mathcal W_{K'}\), and only membership in \(\mathcal W_{K'}\) is used afterwards. So the deduction applies verbatim at every \(v\in\mathcal W_{K'}\) at which its inputs hold. \(\square\)
 
-This is the account's own remark, CA-II 61745–61815 part (i) (proof of (i) at 61781–61815), at its standing. The check here is of that deduction only. It does not show that the inputs hold at a general weight; the account asserts them for every weight in \(\mathcal W_k\) (CA-II 61784–61808), and they stay named (§6). The floor half of (2.3) is source-free and needs no such reading.
+This is the account's own remark, CA-II 61745–61815 part (i) (proof of (i) at 61781–61815), at its standing. The check here is of that deduction only. It does not show that the inputs hold at a general weight; the account asserts them for every weight in \(\mathcal W_k\) (CA-II 61784–61808), and they stay named (§8). The floor half of (2.3) is source-free and needs no such reading.
 
 ## 6. Proof of Theorem J2
 
@@ -227,7 +227,7 @@ Theorem J2 is an implication from (H1)–(H3). Behind them are the following inp
 | Input | Where it enters | Standing carried |
 |---|---|---|
 | CA correlation theorem (iii): induction format with sources at every level \(k\le K'\), uniformly on \(\mathcal W_j(X)\) (CA-II 2921–2936, 25012–25241) | (H1) (L), (A), (B); Lemma 3 | P6 B3 **ported, not yet checked**. Its register (`port/p6-correlation.md:2647–2670`): C-admitted; C-boundary (assumed); **C-preparation, window data "proof outstanding"** (II:2810–2812); **C-B1 polydisc holomorphy, "Proof outstanding"** (II:46131–46167), needed for (A) on actual terms; C-slots; C-frozen, whole-disc bound on \(Q_\zeta\); C-sites, eight step hypotheses; C-reference; C-one-loop, cited Balaban CMP 109 (1.22), Thm 3 and CMP 116 (2.41); **C-Mfree incomplete at (\*)**; **C-sixth not written out**. |
-| CA 6.2 (L), (A), (B) in the class reading (CA-II 60714–60731, 61745–61815) | (H1) | The account's deduction from (iii). Its domain claim (i) is the reading checked in Lemma 3. In our register this is P8 H-LOC with H-DOM at \(\mathfrak r=1\), a hypothesis of P8. |
+| CA 6.2 (L), (A), (B) in the class reading (CA-II 60714–60731, 61745–61815) | (H1) | The account's deduction from (iii). Its domain claim (i) is the reading checked in Lemma 3. In our register this is P8 H-LOC with H-DOM at \(\mathfrak r=1\), a hypothesis of P8. (H1) is read with the account's \(e^{(j)}(X;w)\) as defined at CA-II 59690–59697, which includes the gauge-fixing logarithm \(\log[\mathfrak z(a_j(y))/\mathfrak z(x_j)]\) on the cube of \(y\); P10's correction (`port/p10-stability.md:1613–1623`) notes that \(\mathfrak z(a)\) can depend on the source, so this inclusion matters for (S). |
 | LSC's eight retained sourced upper-bound hypotheses, at every \(v\in\mathcal W_{K'}\) (CA-II 59647–59680 less the floor) | (H2) upper half; Lemma 3 | C-last, at CA standing. The account asserts them for every weight in \(\mathcal W_k\) (CA-II 61784–61808). |
 | LSC (a), (b), (5), (5a)–(5b) and Result | (H2); Steps 1–4 | **Frozen**: checked line by line by Claude, first failing step none (`gates/lsc2-gate.md`). Inputs retained there: the flow and coefficient identification (II:63072–63081); the zero-source format and vacuum theorem (CA-I 4.36); equality at zero source of sourced and source-free one-step energies (assumed by the authors too, II:140916–140926); Balaban CMP 102b Theorem 1 (real background); positivity and representation hypotheses of the density theorem. |
 | P10 A20, exact sourced mass (CA-I 157263–157283) | Lemma 3 (representation of \(\widehat Z(v)\)) | **Ported, not yet checked**; premises H-SOURCE-IND, H-COMPLEX-MOVES, H-GAUGE-SECTOR, H-SOURCE-REFERENCE (Balaban CMP 122a pp. 176–177), H-FORWARD-REVERSE (CMP 122b). |
@@ -243,6 +243,7 @@ Not used: P8 H-TREE (Balaban CMP 116 (1.26)), which Lemmas 1–2 replace by a ha
 - It gives the torus statement only. All-state transfer, one-point comparison, graded moments and insertion density remain SR1 Lemmas 2–10 and RO1 Lemmas 1–3. Those are frozen implications from (4)–(6) and H-U; they now read Theorem J2.
 - It does not give J3 (state-uniform TU10), J4, J5, or the IN1 cross-construction identity J1-ID.
 - The small-cutoff branch (Case B) uses a crude bound with \(L^{4m_J}\). This suffices for J2 because \(m_J\) depends only on \(g\).
+- It covers tori with \(m_1\ge m_{\mathbb T}(g_-)\) only, the account's torus floor. This is the scope J2 asks for (`t0-joins.md`: "every sufficiently large compatible torus"): SR1 Lemmas 2–3 and RO1 Lemma 2 take the torus limit \(\ell\to\infty\) first. Smaller tori at small spacing get no uniform bound from this note.
 
 ## Result
 
@@ -250,7 +251,7 @@ Not used: P8 H-TREE (Balaban CMP 116 (1.26)), which Lemmas 1–2 replace by a ha
 
 Theorem J2 holds as an implication. Under (H1) (the account's local-term properties, class reading), (H2) (frozen LSC's normalized stability and floor) and (H3) (J1's common data), and with the admissible choice \(\kappa\ge4096\), SR1 (4)–(6) and RO1 (H.U) hold in their full scope. The scope is: every first-passage datum, both the Case A and the small-cutoff Case B; every sufficiently large torus \(\ell=2L^{m_1}\), \(m_1\ge m_{\mathbb T}(g_-)\); every finite real Lipschitz list, with repetitions and overlaps; mirror-periodized profiles with independent even and odd coefficient lists before conjugate evaluation; and all scales \(0\le s\le K\). The data are \(U\equiv0\), \(V=E_{\rm vac}\) in Case A and \(V=\log Z(0)\) in Case B, and the account's localized vacuum-energy differences transported to physical units in (6.1). They come with the actual rooted geometry: dependence region \(X^{[2]}\), \(m(X)\le162\,d_j(X)+161\) (Lemma 1), the rooted rate \(\kappa_D=22\log2\) with no extra type multiplicity, the margin \(\kappa_{\rm src}-\kappa_D>7\), and ST6 with explicit constants (Lemma 2). The constants are (2.4); \(C_\pm\) depend on \(g\), which SR1 and RO1 accept (§7).
 
-Kind (rule 9): a proof of a join the account does not state, plus one check of their argument. The account's claim that its stability bound holds at every weight, independently of the list presentation, was read against the proof of the torus bound, CA-II 59645–59822: first failing step none (Lemma 3).
+Kind (rule 9): a proof of a join the account does not state, plus one check of their argument. The account's claim that its stability bound holds at every weight, independently of the list presentation, was read line by line by Claude against the proof of the torus bound, CA-II 59645–59822: first failing step none (Lemma 3).
 
 Proved by Claude, not yet checked by the other model.
 

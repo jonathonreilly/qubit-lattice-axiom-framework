@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_su2_two_region_boundary_response.py
+runner_sha256: fbb3dc3975cb1ea6e885861a6cd570cef82ce8804b45e8a7f666d863f64efdab
+input_fingerprint_sha256: 91120ef3bd71fed45bd2474ac77207b10af7fc0cfa48504aaef41def183a008d
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 1.59
+status: ok
+----- stdout -----
+Source SHA256: 94986863c312a5880569cdf8d663c191a3d802a51542e2b671bcfdbc615e913c
+Exact finite controls only; general proof and physical-scale obligation are in the note.
+PASS: total cumulance order 2; all partition types exercised
+PASS: total cumulance order 3; all partition types exercised
+PASS: total cumulance order 4; all partition types exercised
+PASS: fourth cumulance with repeated insertion
+PASS: Haar fixed-remainder shared edge retains 1/4
+PASS: shared-edge exact series through degree six, orientation case 0
+PASS: shared-edge exact series through degree six, orientation case 1
+PASS: shared-edge exact series through degree six, orientation case 2
+PASS: block length 3: support, incidence, radius, repeated-edge control
+  supports=[459, 459, 459, 459] incidence=8 radius=5 repeated_paths=1920
+PASS: block length 5: support, incidence, radius, repeated-edge control
+  supports=[4125, 4125, 4125, 4125] incidence=8 radius=10 repeated_paths=14976
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

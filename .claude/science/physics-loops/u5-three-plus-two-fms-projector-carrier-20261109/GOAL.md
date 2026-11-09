@@ -1,0 +1,11 @@
+# Goal: U(5) Three-Plus-Two FMS Projector Calculus and Native Stabilizer Carrier
+
+## Scientific Objective
+
+Establish a self-contained operator-algebraic and representation-theoretic foundation on `main` for the gauge-invariant Fröhlich-Morchio-Strocchi (FMS) three-plus-two channel decomposition ($U(5) \to S(U(3)\times U(2))\{\pm I_5\}$):
+
+1. Prove the exact noncommuting $SU(2)$ adjoint projector defect identity $P_\pm^2 - P_\pm = \frac{1}{4r^2}(A^2 - r^2 I_{\mathcal{A}} \otimes I_2)$, the internal Hilbert-Schmidt orthogonality $|A^2 - r^2 I|_{\mathrm{HS}}^2 = 2 R_r^2 + \sum_{a,b} |[\Phi^a, \Phi^b]|^2$, the resulting state-$L^2$ equality with zero cross term, and the $SU(2)_X \times SU(2)_Y$ gauge invariance and completeness of the four projected strings $\mathcal{S}_{s,s'}(X,Y)$.
+2. Prove the $U(5)$ $3+2$ linear Lagrange projector defect identity $P_3(A)^2 - P_3(A) = (A - a I_5)(A - b I_5)/(a - b)^2$, the exact quadratic identity $C^2 = (6 I - N)C$ for the five-flavor CAR bilinear $C_{ik} = c_i^\dagger c_k$ on $\Lambda(\mathbb{C}^5)$ yielding exact noncommuting idempotents $P_{\mathrm{CAR}}^{(n)} = (6 - n)^{-1}C|_{\Lambda^n \mathbb{C}^5}$ with internal trace $\frac{n}{6-n} I$, and the joint certification functional $\mathcal{D}_{3+2}(A)$ separating rank-$3$ multiplicity from other $\{a,b\}$ strata.
+3. Prove the $\mathrm{Spin}(10)/\mathfrak{so}(10)$ orthogonal real $6+4$ projector identity for $Q_6(A), Q_4(A)$, the exact polynomial factorizations of $J_A^2 + I_{10}$ and $A - (a Q_6(A) + b Q_4(A))J_A$ through $Q_6(A)^2 - Q_6(A)$, and the centralizer dimension reduction $45 \to 21 \to 13$ in $\mathfrak{so}(10)$.
+4. Prove the exact group isomorphism $H = S(U(3)\times U(2)) \cong (SU(3)\times SU(2)\times U(1))/\mathbb{Z}_6$ and the joint stabilizer identity $K_{U(5)} = \operatorname{Stab}_{U(5)}(A_0, \zeta) = H\{\pm I_5\}$.
+5. Construct the nonvanishing fermion-even two-site determinant-square composite $\mathcal{O}_{xy}^{(10)} = B_x D_{xy} B_y$ on the half-filled five-mode rishon link register $\Lambda^5 \mathbb{C}^{10}$ ($\dim = 252$) and prove its determinant-word factorization from $U_\ell^{ij} = r_{y,i} r_{x,j}^\dagger$ and its exact $\mathfrak{gl}(5)_x \oplus \mathfrak{gl}(5)_y$ Gauss commutators $[G_x^{ij}, \mathcal{O}_{xy}^{(10)}] = 2\delta_{ij}\mathcal{O}_{xy}^{(10)}$ and $[G_y^{ij}, \mathcal{O}_{xy}^{(10)}] = 0$.

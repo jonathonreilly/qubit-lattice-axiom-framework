@@ -1,0 +1,20 @@
+# Handoff: U(5) Three-Plus-Two FMS Projector Calculus and Native Stabilizer Carrier
+
+## Milestone 01 Summary
+
+- **Claim status:** `bounded_theorem` / `bounded-support` (`trace_class: upstream_support`, `reachability_to_target: supports`)
+- **Primary theorem note:** [`docs/U5_THREE_PLUS_TWO_FMS_PROJECTOR_CARRIER_BOUNDED_THEOREM_NOTE_2026-11-09.md`](../../../../docs/U5_THREE_PLUS_TWO_FMS_PROJECTOR_CARRIER_BOUNDED_THEOREM_NOTE_2026-11-09.md)
+- **Primary runner:** [`scripts/frontier_u5_three_plus_two_fms_projector_carrier.py`](../../../../scripts/frontier_u5_three_plus_two_fms_projector_carrier.py) (`TOTAL: PASS=27 FAIL=0`, exact `fractions.Fraction` and integer bitmask arithmetic)
+- **Canonical cache:** [`logs/runner-cache/frontier_u5_three_plus_two_fms_projector_carrier.txt`](../../../../logs/runner-cache/frontier_u5_three_plus_two_fms_projector_carrier.txt)
+
+## Key Mathematical Results Established
+
+1. **Noncommuting $SU(2)$ Adjoint Projector Defect Identity (Theorem 1):** Proved $|A^2 - r^2 I_{\mathcal{A}} \otimes I_2|_{\mathrm{HS}}^2 = 2 R_r^2 + \sum_{a,b=1}^3 |[\Phi^a, \Phi^b]|^2$ as an exact operator equality in $\mathcal{A}$ with zero radial-commutator cross term, giving the exact state-$L^2$ idempotence formula for $P_\pm^2 - P_\pm$ and $SU(2)_X \times SU(2)_Y$ invariance of the four projected strings $\mathcal{S}_{s,s'}(X,Y)$.
+2. **$U(5)$ Three-Plus-Two Projector Calculus, CAR Bilinear Identity, and Rank Certification (Theorem 2):** Proved $P_3(A)^2 - P_3(A) = (A - a I_5)(A - b I_5)/(a - b)^2$, derived the exact noncommuting quadratic identity $C^2 = (6 I - N)C$ for $C_{ik} = c_i^\dagger c_k$ on the five-flavor CAR algebra $\Lambda(\mathbb{C}^5)$ (producing exact idempotents $P_{\mathrm{CAR}}^{(n)} = (6 - n)^{-1}C|_{\Lambda^n \mathbb{C}^5}$ with internal trace $\frac{n}{6-n} I$), and established the joint certification functional $\mathcal{D}_{3+2}(A)$ separating the $k = 3$ stratum from the $(A_{(4)}, A_{(2)})$ mixture witness.
+3. **Orthogonal Real $6+4$ Projectors and Complex-Structure Factorization (Theorem 3):** Proved that both $J_A^2 + I_{10}$ and $A - (a Q_6(A) + b Q_4(A))J_A$ factor identically through the quartic defect $Q_6(A)^2 - Q_6(A)$ in $\mathcal{A} \otimes M_{10}(\mathbb{R})$, and verified the centralizer dimension reduction $45 \to 21 \to 13$ in $\mathfrak{so}(10)$.
+4. **Joint Stabilizer $K_{U(5)} = H\{\pm I_5\}$ (Theorem 4):** Proved $H = S(U(3)\times U(2)) \cong (SU(3)\times SU(2)\times U(1))/\mathbb{Z}_6$ ($\dim = 12$) and $\operatorname{Stab}_{U(5)}(A_0, \zeta) = H\{\pm I_5\} \cong H \times \mathbb{Z}_2$.
+5. **Native Fermion-Even Determinant-Square Carrier on $\Lambda^5 \mathbb{C}^{10}$ (Theorem 5):** Proved $U_\ell^{i_1,j_1}\cdots U_\ell^{i_5,j_5} = \varepsilon_i \varepsilon_j D_{xy}$, $D_{xy} = -|5_x, 0_y\rangle\langle 0_x, 5_y|$ on the $252$-dimensional link register $\Lambda^5 \mathbb{C}^{10}$, and $[G_x^{ij}, \mathcal{O}_{xy}^{(10)}] = 2\delta_{ij}\mathcal{O}_{xy}^{(10)}$, $[G_y^{ij}, \mathcal{O}_{xy}^{(10)}] = 0$ for $\mathcal{O}_{xy}^{(10)} = B_x D_{xy} B_y$.
+
+## Remaining Downstream Blockers
+
+- Construct a stationary state $\omega$ of a coupled lattice tick in which $\omega(\mathcal{D}_{3+2}(A_X))$, the noncommuting entry commutator defects, and the multi-strand transport defects are simultaneously small.

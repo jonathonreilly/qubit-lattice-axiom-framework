@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/bell-faults-n184qvv9/landau-sign.py", line 315, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/bell-faults-n184qvv9/landau-sign.py", line 302, in main
+    "spatial_covariance_snapshots":covariance_checks,"standard_comparators":standard_bounds(),
+                                                                            ~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/bell-faults-n184qvv9/landau-sign.py", line 273, in standard_bounds
+    assert scale(matmul(d,d),F(1,2)) == plus(scale(kron(i,i),4),kron(comm_a,comm_b),1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,104 @@
+{
+  "source_sha256": "139618a1d9bbfde610351d528deeceae0b701fc7ebc11fccadcf946d96f63ae1",
+  "status": "ok",
+  "model": "four-event diagonal specialization of existing program theorem",
+  "examples": [
+    {
+      "r": "0",
+      "S": "0",
+      "correlators": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "replayed_states": 211,
+      "appends": 210,
+      "max_records": 103,
+      "positive_cylinders": 16
+    },
+    {
+      "r": "1/2",
+      "S": "2",
+      "correlators": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "-1/2"
+      ],
+      "replayed_states": 211,
+      "appends": 210,
+      "max_records": 103,
+      "positive_cylinders": 16
+    },
+    {
+      "r": "3/4",
+      "S": "3",
+      "correlators": [
+        "3/4",
+        "3/4",
+        "3/4",
+        "-3/4"
+      ],
+      "replayed_states": 211,
+      "appends": 210,
+      "max_records": 103,
+      "positive_cylinders": 16
+    },
+    {
+      "r": "1",
+      "S": "4",
+      "correlators": [
+        "1",
+        "1",
+        "1",
+        "-1"
+      ],
+      "replayed_states": 203,
+      "appends": 202,
+      "max_records": 103,
+      "positive_cylinders": 8
+    },
+    {
+      "r": "-1",
+      "S": "4",
+      "correlators": [
+        "-1",
+        "-1",
+        "-1",
+        "1"
+      ],
+      "replayed_states": 203,
+      "appends": 202,
+      "max_records": 103,
+      "positive_cylinders": 8
+    }
+  ],
+  "support_checks": 12216,
+  "spatial_covariance_snapshots": 72,
+  "standard_comparators": {
+    "local_vertices": 16,
+    "local_vertex_scores": [
+      -2,
+      2
+    ],
+    "quantum_square_identity": "exact",
+    "quantum_S": "2sqrt2",
+    "quantum_E_times_sqrt2": [
+      "1",
+      "1",
+      "1",
+      "-1"
+    ]
+  },
+  "interpretation": "exact conditional model test; no physical spacelike implementation",
+  "N5": {
+    "per_element": "rational diagonal program decoding and binary probabilities checked",
+    "per_site": "complete six-neighbor menus and occupied-site support checked",
+    "per_mode": "checked and not executed: no propagating-mode claim",
+    "per_block": "four-record cylinders and standard 4x4 Bell algebra checked",
+    "lattice_wide": "checked and not executed: finite apparatus on Z3, not an infinite dynamics simulation"
+  },
+  "elapsed_seconds": 0.7243333749938756,
+  "max_rss_host_units": 22560768
+}

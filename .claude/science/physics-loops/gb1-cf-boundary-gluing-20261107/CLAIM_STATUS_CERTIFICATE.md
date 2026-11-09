@@ -1,6 +1,23 @@
 # Author claim status
 
-## Current continuation
+## Current foundational observable test
+
+The current application is a bounded_theorem with actual status
+conditional-support and trace frontier_discovery, reachability unknown_frontier.
+The existing finite program construction gives an explicit CHSH score family
+covering [0,4] without a causal-separation requirement. Fixed-preparation law
+variants also change the score. The classical bound requires complete causal
+factorization and independent settings; the quantum bound requires the named
+composite/Born/measurement inputs. None is adopted as new framework content.
+This is a requested diagnosis and checked application of existing results, not
+a new Bell theorem, physical Bell experiment or general no-go.
+
+The full assumption ledger and exact scope are in foundational_bell/RESULT.md
+and ASSUMPTIONS.md. Independent source checks support a research decision,
+not retained standing. Formal review/audit and science landing remain separate;
+bare_retained_allowed is false. No governing axiom or primitive changes.
+
+## Previous autonomous continuation
 
 The autonomous-runtime result is a `bounded_theorem` with actual current
 surface status `conditional-support`, trace `upstream_support`, reachability

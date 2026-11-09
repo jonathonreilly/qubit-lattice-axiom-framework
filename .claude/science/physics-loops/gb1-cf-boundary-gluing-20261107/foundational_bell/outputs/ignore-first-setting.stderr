@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/foundational_bell/check.py", line 315, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/foundational_bell/check.py", line 295, in main
+    row,snapshots=replay(r,args.fault)
+                  ~~~~~~^^^^^^^^^^^^^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/foundational_bell/check.py", line 202, in replay
+    assert terminal[(x,y,a,b)] == expected, ("cylinder mismatch", r, x,y,a,b)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('cylinder mismatch', Fraction(1, 2), 1, 1, 0, 0)

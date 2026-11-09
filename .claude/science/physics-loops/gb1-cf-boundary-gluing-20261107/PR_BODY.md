@@ -1,7 +1,9 @@
 The supplied five-state SU(2) link model needs compatible overlapping patches,
-retained boundary flux, and an explicit placement on native qubits. This PR
-provides four finite-model notes and four checked research continuations. The
-physical law and continuum identifications remain open.
+native qubit placement and records with defined future probabilities. This PR
+constructs those finite models and tests whether the current axioms select an
+observable Bell correlation. It contains four finite-model notes, four research
+continuations and a foundational application. Physical law selection and the
+continuum identifications remain open.
 
 - **Two plaquettes:** the complete closed sector has four states, with exact
   shared-link commutator `[B_L,B_R]|L> = -3|R>`. A joint exponential preserves
@@ -65,6 +67,16 @@ physical law and continuum identifications remain open.
   1/4 and 3/4 under the same empty-neighbor condition. This establishes
   mathematical coherence and a concrete freedom in law selection, not empirical
   adequacy. Proofs are in `autonomous_runtime/RESULT.md`.
+
+- **Foundational Bell test (research application):** instantiate the existing
+  finite program theorem on four setting/outcome records. One fixed admissibility
+  rule realizes every CHSH score in [0,4] through supplied programs; an analytical
+  variant fixes the initial records and varies the law. The output marginals are
+  no-signalling, but the controller can depend on a remote setting, so these are
+  not spacelike Bell experiments. The classical bound 2 and quantum bound 2sqrt2
+  are checked with their separate complete causal and Born/composite assumptions.
+  The explicit ledger is in `foundational_bell/ASSUMPTIONS.md`; this is a diagnosis
+  using prior results, not a new Bell theorem or a framework prediction.
 
 The code retains an extra encoding-origin degree of freedom and needs a
 physical preparation/selection account. The explicit adjacent-gate readout
@@ -134,6 +146,14 @@ Validation and evidence:
   support checks and 1,458 six-neighbor conditions. Missing halt, unequal
   outcome rates and zero-support fallback faults fail. No native actuator,
   full-torus, infinite-lattice numerical simulation or general no-go is claimed.
+- The Bell diagnostic replays five rational program choices on actual Z3,
+  checks all reached branches, 12,216 support instances and 72 transformed
+  configurations, and compares the standard local and quantum algebra exactly.
+  Missing support, omitted setting, wrong frame, nonlocal response and wrong
+  commutator-sign controls fail. A fresh original-source proof checks the
+  construction and exposes two qualifications needed in the older causal note;
+  the application explicitly includes them. These are conditional research
+  checks; no physical Bell realization or empirical dataset is tested.
 - Complete mathematical source comparisons and scoped correction receipts
   are preserved. These are research checks, not formal landing panels or audits.
 - Six production runners have successful content-bound caches. The native
@@ -162,7 +182,7 @@ registry, or shared instruction files change.
 The existing pair and boundary research packs index complete proofs, original
 outputs, worker briefs, source identities and recovery paths. The current
 checkpoint is `.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/STATE.yaml`;
-its `autonomous_runtime/HANDOFF.md` indexes the latest continuation. The owner-approved
+its `foundational_bell/HANDOFF.md` indexes the latest test. The owner-approved
 two-word governing locality substitution landed separately in
 [PR #10143](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10143)
 at `43a1fcc374711ca50626eca667441d3ca575c7d1`, now merged into this branch.

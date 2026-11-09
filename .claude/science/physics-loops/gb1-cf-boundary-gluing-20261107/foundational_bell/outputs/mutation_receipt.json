@@ -1,0 +1,38 @@
+{
+  "original_source_sha256": "139618a1d9bbfde610351d528deeceae0b701fc7ebc11fccadcf946d96f63ae1",
+  "mutations": [
+    {
+      "label": "wrong-frame",
+      "exit_code": 1,
+      "elapsed_seconds": 0.4509581249731127,
+      "source_sha256": "f3bc1632085f6db8ee8dd40a21d0ce7e60a2abeb464509aabf615170997f3862",
+      "literal_replacement": {
+        "before": "    canonical = {add(FRAME_ROOT,",
+        "after": "    if root != FRAME_ROOT:\n        axes = list(IDENTITY_AXES)\n    canonical = {add(FRAME_ROOT,"
+      },
+      "execution": "nice -n 10 python3 scratch_source; same five thread variables and internal guards as original"
+    },
+    {
+      "label": "nonlocal-response",
+      "exit_code": 1,
+      "elapsed_seconds": 1.1045739999972284,
+      "source_sha256": "d2d3e6271fe3822a0376baaeb8752b7ff2f1eb8cb31c66169e3f9283acdcf13a",
+      "literal_replacement": {
+        "before": "classical.append(a0*b0+a0*b1+a1*b0-a1*b1)",
+        "after": "classical.append(a0*b0+a0*b1+a1*b0+a1*b1)"
+      },
+      "execution": "nice -n 10 python3 scratch_source; same five thread variables and internal guards as original"
+    },
+    {
+      "label": "landau-sign",
+      "exit_code": 1,
+      "elapsed_seconds": 0.827562874997966,
+      "source_sha256": "cd29a0bfe3c581d0bb09c87c47d79437da78c5799e095d6aea239cd27106409c",
+      "literal_replacement": {
+        "before": "kron(comm_a,comm_b),-1)",
+        "after": "kron(comm_a,comm_b),1)"
+      },
+      "execution": "nice -n 10 python3 scratch_source; same five thread variables and internal guards as original"
+    }
+  ]
+}

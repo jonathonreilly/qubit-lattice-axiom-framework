@@ -1,0 +1,46 @@
+{
+  "source_sha256": "139618a1d9bbfde610351d528deeceae0b701fc7ebc11fccadcf946d96f63ae1",
+  "execution_scope": "single serialized numerical lease; nice10; five threads pinned; CPU55/60, internal wall50/RSS250MiB, outer timeout60",
+  "runs": [
+    {
+      "label": "exact",
+      "exit_code": 0,
+      "elapsed_seconds": 0.8424309580004774,
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/foundational_bell/check.py"
+      ]
+    },
+    {
+      "label": "missing-buddy",
+      "exit_code": 1,
+      "elapsed_seconds": 0.07762604200979695,
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/foundational_bell/check.py",
+        "--fault",
+        "missing-buddy"
+      ]
+    },
+    {
+      "label": "ignore-first-setting",
+      "exit_code": 1,
+      "elapsed_seconds": 0.24252683398663066,
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/foundational_bell/check.py",
+        "--fault",
+        "ignore-first-setting"
+      ]
+    }
+  ]
+}

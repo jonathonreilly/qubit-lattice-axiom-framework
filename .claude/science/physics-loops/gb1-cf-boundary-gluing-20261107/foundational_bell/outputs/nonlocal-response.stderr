@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/bell-faults-n184qvv9/nonlocal-response.py", line 315, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/bell-faults-n184qvv9/nonlocal-response.py", line 302, in main
+    "spatial_covariance_snapshots":covariance_checks,"standard_comparators":standard_bounds(),
+                                                                            ~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/bell-faults-n184qvv9/nonlocal-response.py", line 267, in standard_bounds
+    assert set(classical) == {-2,2}
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

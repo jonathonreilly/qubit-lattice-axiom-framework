@@ -95,3 +95,7 @@ New material lands by a small curated PR built fresh off `main` at a
 milestone: newly frozen parts, newly posted notes, and the updated index
 files. Working state (lane drafts, queues, briefs) stays on the working
 branch.
+
+## Update, 2026-11-08: GitHub-rendering copies
+
+The five posted notes (issues #10–#14) and their issue texts are now the versions linked from the issues since 2026-11-08: the math is rewritten so GitHub renders it, and out-l17 drops two internal header lines and the words "Draft, not yet sent." The notes are byte-identical to `library/posted/` on the working branch at `64be8397d`; the issue texts are the issue bodies as posted, each ending with its edit note. No formula or claim is changed. The original versions stay at the commits the issues first linked.

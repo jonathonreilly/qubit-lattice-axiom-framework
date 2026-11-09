@@ -186,6 +186,17 @@ def internal_hs_square(m, d_alg: int, d_int: int):
     return partial_trace_internal(mat_mul(mat_adj(m), m), d_alg, d_int)
 
 
+def mat_tr(m):
+    return sum((m[i][i] for i in range(len(m))), ZERO)
+
+
+def pauli_matrices():
+    s1 = [[ZERO, ONE], [ONE, ZERO]]
+    s2 = [[ZERO, -IMAG], [IMAG, ZERO]]
+    s3 = [[ONE, ZERO], [ZERO, -ONE]]
+    return s1, s2, s3
+
+
 # ---------------------------------------------------------------------------
 # 1. Theorem 1 controls: noncommuting SU(2) adjoint projector defect & strings
 # ---------------------------------------------------------------------------
@@ -1028,17 +1039,566 @@ def theorem5_native_determinant_carrier_controls() -> None:
     )
 
 
+# ---------------------------------------------------------------------------
+# 6. Theorem 6 controls: Global quartic su(5) 3+2 orbit selection via cubic discriminant
+# ---------------------------------------------------------------------------
+
+
+def theorem6_su5_quartic_orbit_selection_controls() -> None:
+    # Theorem 6(1): 3-variable cubic discriminant identity
+    test_triples = [
+        (Q(-3), Q(1), Q(5)),
+        (Q(-2), Q(-2), Q(7)),
+        (Q(4), Q(-1), Q(4)),
+        (Q(0), Q(0), Q(0)),
+        (Q(-7, 3), Q(2, 5), Q(11, 4)),
+        (Q(5, 2), Q(5, 2), Q(-3, 4)),
+    ]
+    disc_identities_ok = True
+    for x, y, z in test_triples:
+        x_bar = (x + y + z) / 3
+        u = x - x_bar
+        v = y - x_bar
+        w = z - x_bar
+        r2 = u * u + v * v + w * w
+        u4_sum = u**4 + v**4 + w**4
+        x4_sum = x**4 + y**4 + z**4
+        rhs_x4 = 3 * (x_bar**4) + 6 * (x_bar**2) * r2 + Q(1, 2) * (r2**2) + 12 * x_bar * u * v * w
+        disc_lhs = ((u - v) ** 2) * ((v - w) ** 2) * ((w - u) ** 2)
+        disc_rhs = Q(1, 2) * (r2**3) - 27 * ((u * v * w) ** 2)
+        two_equal = (x == y) or (y == z) or (z == x)
+        if not (
+            u + v + w == 0
+            and u4_sum == Q(1, 2) * (r2**2)
+            and x4_sum == rhs_x4
+            and disc_lhs == disc_rhs
+            and disc_rhs >= 0
+            and ((disc_rhs == 0) == two_equal)
+        ):
+            disc_identities_ok = False
+            break
+
+    check(
+        "Theorem 6(1) 3-variable cubic discriminant identity Delta(u,v,w) = (1/2) r^6 - 27 (uvw)^2 >= 0",
+        disc_identities_ok,
+    )
+
+    # Theorem 6(2): Exact fourth-moment ratios on the four symmetry strata and off-stratum perturbations
+    def diag_su5(vals: list[Q]):
+        assert len(vals) == 5 and sum(vals) == 0
+        m = mat_zero(5)
+        for idx, val in enumerate(vals):
+            m[idx][idx] = Qi(val, 0)
+        return m
+
+    def tr_q(m) -> Q:
+        t = mat_tr(m)
+        assert t.im == 0
+        return t.re
+
+    def tr2_and_tr4(m) -> tuple[Q, Q]:
+        m2 = mat_mul(m, m)
+        m4 = mat_mul(m2, m2)
+        return tr_q(m2), tr_q(m4)
+
+    a_32 = diag_su5([Q(-2), Q(-2), Q(-2), Q(3), Q(3)])
+    a_212 = diag_su5([Q(-1), Q(-1), Q(0), Q(1), Q(1)])
+    a_131 = diag_su5([Q(-1), Q(0), Q(0), Q(0), Q(1)])
+    a_41 = diag_su5([Q(1), Q(1), Q(1), Q(1), Q(-4)])
+
+    s_32, f_32 = tr2_and_tr4(a_32)
+    s_212, f_212 = tr2_and_tr4(a_212)
+    s_131, f_131 = tr2_and_tr4(a_131)
+    s_41, f_41 = tr2_and_tr4(a_41)
+
+    ratio_32 = f_32 / (s_32**2)
+    ratio_212 = f_212 / (s_212**2)
+    ratio_131 = f_131 / (s_131**2)
+    ratio_41 = f_41 / (s_41**2)
+
+    check(
+        "Theorem 6(2) exact fourth-moment ratios 7/30 < 1/4 < 1/2 < 13/20 across all four symmetry strata",
+        ratio_32 == Q(7, 30)
+        and ratio_212 == Q(1, 4)
+        and ratio_131 == Q(1, 2)
+        and ratio_41 == Q(13, 20)
+        and ratio_32 < ratio_212 < ratio_131 < ratio_41
+        and (ratio_41 - ratio_32 == Q(5, 12))
+        and (ratio_212 - ratio_32 == Q(1, 60)),
+    )
+
+    # Off-stratum diagonal and non-diagonal Hermitian matrices in su(5)_sa
+    off_stratum_matrices = [
+        diag_su5([Q(-2) + Q(1, 5), Q(-2) - Q(1, 5), Q(-2), Q(3), Q(3)]),
+        diag_su5([Q(-2), Q(-2), Q(-2) + Q(1, 7), Q(3) - Q(1, 7), Q(3)]),
+        diag_su5([Q(-5), Q(-1), Q(0), Q(2), Q(4)]),
+        diag_su5([Q(-3), Q(-2), Q(1), Q(1), Q(3)]),
+    ]
+    # Add non-diagonal Hermitian perturbations with complex off-diagonal entries
+    m_nondiag_1 = diag_su5([Q(-2), Q(-2), Q(-2), Q(3), Q(3)])
+    m_nondiag_1[0][1] = Qi(Q(1, 3), Q(1, 4))
+    m_nondiag_1[1][0] = m_nondiag_1[0][1].conj()
+    off_stratum_matrices.append(m_nondiag_1)
+
+    m_nondiag_2 = diag_su5([Q(-2), Q(-2), Q(-2), Q(3), Q(3)])
+    m_nondiag_2[2][3] = Qi(Q(2, 5), Q(-1, 2))
+    m_nondiag_2[3][2] = m_nondiag_2[2][3].conj()
+    m_nondiag_2[0][4] = Qi(Q(1, 3), Q(0))
+    m_nondiag_2[4][0] = m_nondiag_2[0][4].conj()
+    m_nondiag_2[0][0] = Qi(Q(-2) + Q(1, 2), Q(0))
+    m_nondiag_2[1][1] = Qi(Q(-2) - Q(1, 2), Q(0))
+    off_stratum_matrices.append(m_nondiag_2)
+
+    bounds_strict_ok = True
+    for m_test in off_stratum_matrices:
+        s_val, f_val = tr2_and_tr4(m_test)
+        if not (Q(7, 30) * (s_val**2) < f_val < Q(13, 20) * (s_val**2)):
+            bounds_strict_ok = False
+            break
+
+    check(
+        "Theorem 6(2) strict inequality (7/30) s^2 < Tr(A^4) < (13/20) s^2 for off-orbit su(5)_sa matrices",
+        bounds_strict_ok,
+    )
+
+    # Theorem 6(3): Square-completed potential identity and unique 3+2 global minimum
+    # Choose mu^2 = 15/2 > 0, lambda_1 = -1/10 < 0, lambda_2 = 3/2 > 0 so kappa_{3+2} = -1/10 + 7/20 = 1/4 > 0
+    # and s_* = mu^2 / kappa_{3+2} = 30, which matches Tr(a_32^2) = 30!
+    mu2 = Q(15, 2)
+    lam1 = Q(-1, 10)
+    lam2 = Q(3, 2)
+    kappa_32 = lam1 + Q(7, 30) * lam2
+    s_star = mu2 / kappa_32
+    v_min = -(mu2**2) / (4 * kappa_32)
+
+    def eval_potential(m) -> Q:
+        s_val, f_val = tr2_and_tr4(m)
+        return -Q(1, 2) * mu2 * s_val + Q(1, 4) * lam1 * (s_val**2) + Q(1, 4) * lam2 * f_val
+
+    def eval_completed_square_rhs(m) -> Q:
+        s_val, f_val = tr2_and_tr4(m)
+        return (
+            v_min
+            + Q(1, 4) * kappa_32 * ((s_val - s_star) ** 2)
+            + Q(1, 4) * lam2 * (f_val - Q(7, 30) * (s_val**2))
+        )
+
+    all_test_mats = [a_32, a_212, a_131, a_41] + off_stratum_matrices
+    potential_ok = (
+        kappa_32 == Q(1, 4)
+        and s_star == Q(30)
+        and eval_potential(a_32) == v_min
+        and all(eval_potential(m) == eval_completed_square_rhs(m) for m in all_test_mats)
+        and all(eval_potential(m) > v_min for m in all_test_mats[1:])
+    )
+
+    check(
+        "Theorem 6(3) exact square-completed quartic potential identity and strict global minimum on 3+2 orbit",
+        potential_ok,
+    )
+
+
+# ---------------------------------------------------------------------------
+# 7. Theorem 7 controls: 25x25 Higgs Gram matrix, Pi_{Lie(H)} projector, and pinch identity
+# ---------------------------------------------------------------------------
+
+
+def theorem7_higgs_gram_and_pinch_controls() -> None:
+    a_val = Q(-2)
+    b_val = Q(3)
+    gap = a_val - b_val  # -5
+    gap_sq = gap * gap   # 25
+    kappa = Q(3, 2)
+    four_kappa_sq = 4 * kappa * kappa  # 9
+    twenty_kappa_sq = 20 * kappa * kappa  # 45
+
+    a0 = mat_zero(5)
+    for i in range(5):
+        a0[i][i] = Qi(a_val if i < 3 else b_val, 0)
+    eye5 = mat_eye(5)
+
+    def sym_basis(p: int, q: int):
+        m = mat_zero(5)
+        m[p][q] = ONE
+        m[q][p] = ONE
+        return m
+
+    def asym_basis(p: int, q: int):
+        m = mat_zero(5)
+        m[p][q] = -IMAG
+        m[q][p] = IMAG
+        return m
+
+    def diag_basis(vals: list[Q]):
+        m = mat_zero(5)
+        for idx, val in enumerate(vals):
+            m[idx][idx] = Qi(val, 0)
+        return m
+
+    # 12 basis matrices for Lie(H) = su(3) (+) su(2) (+) u(1)_Y
+    lie_h_basis = [
+        # su(3): 6 off-diagonal + 2 Cartan
+        sym_basis(0, 1),
+        asym_basis(0, 1),
+        sym_basis(0, 2),
+        asym_basis(0, 2),
+        sym_basis(1, 2),
+        asym_basis(1, 2),
+        diag_basis([Q(1), Q(-1), Q(0), Q(0), Q(0)]),
+        diag_basis([Q(1), Q(1), Q(-2), Q(0), Q(0)]),
+        # su(2): 2 off-diagonal + 1 Cartan
+        sym_basis(3, 4),
+        asym_basis(3, 4),
+        diag_basis([Q(0), Q(0), Q(0), Q(1), Q(-1)]),
+        # u(1)_Y
+        diag_basis([Q(-2), Q(-2), Q(-2), Q(3), Q(3)]),
+    ]
+
+    # 12 basis matrices for the broken coset m_{3x2}
+    coset_basis = []
+    for p in range(3):
+        for q in (3, 4):
+            coset_basis.append(sym_basis(p, q))
+            coset_basis.append(asym_basis(p, q))
+
+    # 1 central generator I_5
+    central_basis = [eye5]
+
+    full_u5_basis = lie_h_basis + coset_basis + central_basis
+
+    def inner_tr(x, y) -> Q:
+        t = mat_tr(mat_mul(x, y))
+        assert t.im == 0
+        return t.re
+
+    # Verify mutual orthogonality of the 25 basis elements (diagonal Gram matrix with positive diagonal)
+    gram_25 = [[inner_tr(b1, b2) for b2 in full_u5_basis] for b1 in full_u5_basis]
+    basis_orthogonal_and_complete = (
+        len(lie_h_basis) == 12
+        and len(coset_basis) == 12
+        and len(full_u5_basis) == 25
+        and all(gram_25[i][i] > 0 for i in range(25))
+        and all(gram_25[i][j] == 0 for i in range(25) for j in range(25) if i != j)
+    )
+
+    def apply_higgs_gram(y):
+        comm1 = mat_comm(a0, y)
+        comm2 = mat_comm(a0, comm1)
+        tr_y = mat_tr(y)
+        return mat_add(comm2, mat_scale(Qi(four_kappa_sq, 0) * tr_y, eye5))
+
+    lie_h_in_ker = all(apply_higgs_gram(b) == mat_zero(5) for b in lie_h_basis)
+    coset_eig_ok = all(
+        apply_higgs_gram(b) == mat_scale(Qi(gap_sq, 0), b) for b in coset_basis
+    )
+    central_eig_ok = apply_higgs_gram(eye5) == mat_scale(Qi(twenty_kappa_sq, 0), eye5)
+
+    # Also build the 25x25 matrix of M^2 in the basis to check rank, trace, and nonzero determinant
+    m2_diag_eigs = [
+        inner_tr(b, apply_higgs_gram(b)) / inner_tr(b, b) for b in full_u5_basis
+    ]
+    rank_m2 = sum(1 for ev in m2_diag_eigs if ev != 0)
+    tr_m2 = sum(m2_diag_eigs)
+    det_nonzero_part = Q(1)
+    for ev in m2_diag_eigs:
+        if ev != 0:
+            det_nonzero_part *= ev
+
+    check(
+        "Theorem 7(1) 25x25 Higgs Gram matrix M^2 spectrum: dim ker=12 (Lie(H)), 12x(a-b)^2 on m_{3x2}, 1x(20 kappa^2) on T_0",
+        basis_orthogonal_and_complete
+        and lie_h_in_ker
+        and coset_eig_ok
+        and central_eig_ok
+        and rank_m2 == 13
+        and tr_m2 == 12 * gap_sq + twenty_kappa_sq
+        and det_nonzero_part == twenty_kappa_sq * (gap_sq**12),
+    )
+
+    # Theorem 7(2): Exact polynomial projector Pi_{Lie(H)} on all 25 basis elements
+    p3_0 = mat_scale(Qi(Q(1) / gap, 0), mat_sub(a0, mat_scale(Qi(b_val, 0), eye5)))
+    p2_0 = mat_sub(eye5, p3_0)
+
+    def pi_commutator_form(x):
+        double_comm = mat_comm(a0, mat_comm(a0, x))
+        tr_x = mat_tr(x)
+        return mat_sub(
+            mat_sub(x, mat_scale(Qi(Q(1) / gap_sq, 0), double_comm)),
+            mat_scale(Qi(Q(1, 5), 0) * tr_x, eye5),
+        )
+
+    def pi_pinch_form(x):
+        pinched = mat_add(mat_mul(mat_mul(p3_0, x), p3_0), mat_mul(mat_mul(p2_0, x), p2_0))
+        tr_x = mat_tr(x)
+        return mat_sub(pinched, mat_scale(Qi(Q(1, 5), 0) * tr_x, eye5))
+
+    proj_forms_equal = all(pi_commutator_form(b) == pi_pinch_form(b) for b in full_u5_basis)
+    proj_fixes_lie_h = all(pi_commutator_form(b) == b for b in lie_h_basis)
+    proj_kills_perp = all(
+        pi_commutator_form(b) == mat_zero(5) for b in (coset_basis + central_basis)
+    )
+    proj_idempotent = all(
+        pi_commutator_form(pi_commutator_form(b)) == pi_commutator_form(b)
+        for b in full_u5_basis
+    )
+
+    check(
+        "Theorem 7(2) exact polynomial unbroken-subalgebra projector Pi_{Lie(H)} on all 25 basis elements of u(5)_sa",
+        proj_forms_equal and proj_fixes_lie_h and proj_kills_perp and proj_idempotent,
+    )
+
+    # Theorem 7(3): Universal noncommuting pinch-commutator identity on A = M_2(C), A, X in A (x) M_5(C)
+    # Build noncommuting 10x10 matrices A_op and X_op where [A_op, X_op] != 0 and D_A != 0
+    s1, s2, s3 = pauli_matrices()
+    i2 = mat_eye(2)
+    i10 = mat_eye(10)
+
+    a_op = mat_zero(10)
+    for idx in range(5):
+        lam = a_val if idx < 3 else b_val
+        e_ii = mat_zero(5)
+        e_ii[idx][idx] = ONE
+        a_op = mat_add(a_op, mat_kron(mat_scale(Qi(lam, 0), i2), e_ii))
+    # Add noncommuting operator perturbations to A_op so D_A = P_3(A)^2 - P_3(A) != 0
+    a_op = mat_add(a_op, mat_kron(mat_scale(Qi(Q(1, 2), 0), s1), sym_basis(0, 3)))
+    a_op = mat_add(a_op, mat_kron(mat_scale(Qi(Q(1, 3), 0), s2), asym_basis(2, 4)))
+
+    # Build a generic noncommuting X_op in M_2(C) (x) M_5(C)
+    x_op = mat_add(
+        mat_kron(s1, sym_basis(0, 1)),
+        mat_add(
+            mat_kron(s2, sym_basis(1, 3)),
+            mat_kron(s3, asym_basis(2, 4)),
+        ),
+    )
+
+    p3_op = mat_scale(Qi(Q(1) / gap, 0), mat_sub(a_op, mat_scale(Qi(b_val, 0), i10)))
+    p2_op = mat_sub(i10, p3_op)
+    d_a_op = mat_sub(mat_mul(p3_op, p3_op), p3_op)
+
+    pinch_x = mat_add(mat_mul(mat_mul(p3_op, x_op), p3_op), mat_mul(mat_mul(p2_op, x_op), p2_op))
+    comm_x = mat_sub(
+        x_op,
+        mat_scale(Qi(Q(1) / gap_sq, 0), mat_comm(a_op, mat_comm(a_op, x_op))),
+    )
+    lhs_diff = mat_sub(pinch_x, comm_x)
+    rhs_anti = mat_add(mat_mul(d_a_op, x_op), mat_mul(x_op, d_a_op))
+
+    check(
+        "Theorem 7(3) universal noncommuting pinch-commutator identity (P_3 X P_3 + P_2 X P_2) - (X - (a-b)^{-2}[A,[A,X]]) = D_A X + X D_A",
+        d_a_op != mat_zero(10) and lhs_diff != mat_zero(10) and lhs_diff == rhs_anti,
+    )
+
+
+# ---------------------------------------------------------------------------
+# 8. Theorem 8 controls: Single-link transport floor and K-copy coherent FMS scaling
+# ---------------------------------------------------------------------------
+
+
+def theorem8_transport_floor_and_coherent_scaling_controls() -> None:
+    # Theorem 8(1): Exact single-link two-sided transport defect identity on Lambda^5(C^10)
+    # In the 3-state decomposition { |0_x,5_y>, |5_x,0_y>, |perp> } of Lambda^5(C^10),
+    # D_{xy} = -|5_x,0_y><0_x,5_y|, P_0 = D_{xy}^* D_{xy} = diag(1,0,0), P_5 = D_{xy} D_{xy}^* = diag(0,1,0).
+    d_xy_3 = mat_zero(3)
+    d_xy_3[1][0] = -ONE
+    i3 = mat_eye(3)
+
+    state_weight_triples = [
+        (Q(0), Q(0), Q(1)),
+        (Q(1, 2), Q(1, 2), Q(0)),
+        (Q(1), Q(0), Q(0)),
+        (Q(1, 3), Q(1, 4), Q(5, 12)),
+        (Q(2, 5), Q(3, 5), Q(0)),
+    ]
+    gammas = [
+        Qi(Q(0), Q(0)),
+        Qi(Q(1), Q(0)),
+        Qi(Q(3, 5), Q(4, 5)),  # |gamma|^2 = 1
+        Qi(Q(2), Q(0)),        # |gamma|^2 = 4
+        Qi(Q(1, 2), Q(-2, 3)),
+    ]
+
+    transport_floor_ok = True
+    for p0, p5, p_perp in state_weight_triples:
+        assert p0 + p5 + p_perp == 1
+        for gam in gammas:
+            t_gam = mat_scale(gam, d_xy_3)
+            t_adj = mat_adj(t_gam)
+            def_plus_mat = mat_mul(
+                mat_sub(mat_mul(t_adj, t_gam), i3),
+                mat_sub(mat_mul(t_adj, t_gam), i3),
+            )
+            def_minus_mat = mat_mul(
+                mat_sub(mat_mul(t_gam, t_adj), i3),
+                mat_sub(mat_mul(t_gam, t_adj), i3),
+            )
+            d_plus = (
+                p0 * def_plus_mat[0][0].re
+                + p5 * def_plus_mat[1][1].re
+                + p_perp * def_plus_mat[2][2].re
+            )
+            d_minus = (
+                p0 * def_minus_mat[0][0].re
+                + p5 * def_minus_mat[1][1].re
+                + p_perp * def_minus_mat[2][2].re
+            )
+            gam_sq = gam.re * gam.re + gam.im * gam.im
+            rhs = 2 - (p0 + p5) + ((gam_sq - 1) ** 2) * (p0 + p5)
+            attains_one = (p0 + p5 == 1) and (gam_sq == 1)
+            if not (
+                d_plus + d_minus == rhs
+                and d_plus + d_minus >= 1
+                and ((d_plus + d_minus == 1) == attains_one)
+            ):
+                transport_floor_ok = False
+                break
+
+    check(
+        "Theorem 8(1) single-link two-sided transport defect D_+ + D_- = 2 - (p_0+p_5) + (|gamma|^2-1)^2 (p_0+p_5) >= 1",
+        transport_floor_ok,
+    )
+
+    # Theorem 8(2a): Multi-copy coherent SU(2) FMS projector defect scaling on H_K = (C^2)^{otimes K}
+    s1, s2, s3 = pauli_matrices()
+    paulis = (s1, s2, s3)
+    i2 = mat_eye(2)
+
+    def kron_list(mats):
+        res = mats[0]
+        for m in mats[1:]:
+            res = mat_kron(res, m)
+        return res
+
+    for k_copies in (1, 2, 3, 4):
+        dim_k = 1 << k_copies
+        ik = mat_eye(dim_k)
+        phi_k = []
+        for a_idx in range(3):
+            sum_mat = mat_zero(dim_k)
+            for nu in range(k_copies):
+                factors = [paulis[a_idx] if slot == nu else i2 for slot in range(k_copies)]
+                sum_mat = mat_add(sum_mat, kron_list(factors))
+            phi_k.append(mat_scale(Qi(Q(1, k_copies), 0), sum_mat))
+
+        # Casimir sum_a (Phi_K^a)^2
+        casimir_k = mat_zero(dim_k)
+        for a_idx in range(3):
+            casimir_k = mat_add(casimir_k, mat_mul(phi_k[a_idx], phi_k[a_idx]))
+
+        # Coherent state |psi_K> = |+>^{otimes K} corresponds to basis index 0
+        # Check that column 0 of casimir_k is (1 + 2/K) e_0
+        eig_val = Q(1) + Q(2, k_copies)
+        casimir_col0 = [casimir_k[row][0] for row in range(dim_k)]
+        expected_col0 = [Qi(eig_val, 0) if row == 0 else ZERO for row in range(dim_k)]
+
+        # Commutator square sum at |psi_K> (entry (0,0))
+        comm_sq_sum = mat_zero(dim_k)
+        for a_idx in range(3):
+            for b_idx in range(3):
+                c_ab = mat_comm(phi_k[a_idx], phi_k[b_idx])
+                comm_sq_sum = mat_add(comm_sq_sum, mat_mul(mat_adj(c_ab), c_ab))
+        omega_comm_sq = comm_sq_sum[0][0]
+
+        # Direct projector defect at r = 1: P_+(1) = (1/2)(I + sum_a Phi_K^a (x) sigma_a)
+        a_op = mat_zero(2 * dim_k)
+        for a_idx in range(3):
+            a_op = mat_add(a_op, mat_kron(phi_k[a_idx], paulis[a_idx]))
+        p_plus_1 = mat_scale(Qi(Q(1, 2), 0), mat_add(mat_eye(2 * dim_k), a_op))
+        d_plus_1 = mat_sub(mat_mul(p_plus_1, p_plus_1), p_plus_1)
+        hs_d_plus_1 = internal_hs_square(d_plus_1, dim_k, 2)
+        omega_defect_r1 = hs_d_plus_1[0][0]
+
+        # Defect at Casimir-matched radius r_K^2 = 1 + 2/K:
+        # Note r_K^2 is rational, and |P_+(r_K)^2 - P_+(r_K)|_{HS}^2 = (1 / (16 r_K^4)) * (2 R_{r_K}^2 + comm_sq_sum)
+        rk_sq = Q(1) + Q(2, k_copies)
+        r_rk = mat_sub(casimir_k, mat_scale(Qi(rk_sq, 0), ik))
+        r_rk_sq = mat_mul(r_rk, r_rk)
+        omega_r_rk_sq = r_rk_sq[0][0]
+        omega_defect_rk = (Qi(2, 0) * omega_r_rk_sq + omega_comm_sq) * Qi(
+            Q(1) / (16 * rk_sq * rk_sq), 0
+        )
+
+        expected_defect_r1 = Q(k_copies + 1, k_copies**3)
+        expected_defect_rk = Q(1, 2 * k_copies * (k_copies + 2))
+
+        check(
+            f"Theorem 8(2) K={k_copies} coherent SU(2) FMS defects: Casimir=1+2/{k_copies}, defect(r=1)={expected_defect_r1}, defect(r_K)={expected_defect_rk}",
+            casimir_col0 == expected_col0
+            and omega_comm_sq == Qi(Q(8 * (k_copies + 2), k_copies**3), 0)
+            and omega_r_rk_sq == ZERO
+            and omega_defect_r1 == Qi(expected_defect_r1, 0)
+            and omega_defect_rk == Qi(expected_defect_rk, 0),
+        )
+
+    # Theorem 8(2b): Multi-copy coherent determinant transport defect on (Lambda^5 C^10)^{otimes K}
+    # In the 2D basis {|0_x,5_y>, |5_x,0_y>} of each copy, D_{xy} = [[0, 0], [-1, 0]],
+    # and |theta> = (1/sqrt(2))(1, -1)^T (so 2 D_{xy} |theta> = |theta> - |theta_perp>
+    # and 2 D_{xy}^* |theta_perp> = -(|theta> + |theta_perp>)).
+    # For K copies, |Theta_K> = 2^{-K/2} (1, -1)^{otimes K}, so varpi_K(X) = 2^{-K} <v_K, X v_K>
+    # where v_K = (1, -1)^{otimes K} has exact integer entries!
+    d_single = [[ZERO, ZERO], [-ONE, ZERO]]
+    for k_copies in (1, 2, 3, 4):
+        dim_k = 1 << k_copies
+        ik = mat_eye(dim_k)
+        d_hat_k = mat_zero(dim_k)
+        for nu in range(k_copies):
+            factors = [d_single if slot == nu else i2 for slot in range(k_copies)]
+            d_hat_k = mat_add(d_hat_k, kron_list(factors))
+        d_hat_k = mat_scale(Qi(Q(2, k_copies), 0), d_hat_k)
+        d_hat_adj = mat_adj(d_hat_k)
+
+        # Build unnormalized integer vector v_K = (1, -1)^{otimes K}: entry at bitmask m is (-1)^{popcount(m)}
+        v_k = [Qi(Q(-1 if (m.bit_count() & 1) else 1), 0) for m in range(dim_k)]
+        norm_sq_vk = Q(1 << k_copies)
+
+        def varpi_expect(op_mat) -> Q:
+            total = ZERO
+            for r_idx in range(dim_k):
+                row_sum = ZERO
+                for c_idx in range(dim_k):
+                    if op_mat[r_idx][c_idx] != ZERO:
+                        row_sum = row_sum + op_mat[r_idx][c_idx] * v_k[c_idx]
+                total = total + v_k[r_idx].conj() * row_sum
+            assert total.im == 0
+            return total.re / norm_sq_vk
+
+        diff_d = mat_sub(d_hat_k, ik)
+        diff_d_adj = mat_sub(d_hat_adj, ik)
+        vec_def_1 = varpi_expect(mat_mul(mat_adj(diff_d), diff_d))
+        vec_def_2 = varpi_expect(mat_mul(mat_adj(diff_d_adj), diff_d_adj))
+
+        gram_plus = mat_sub(mat_mul(d_hat_adj, d_hat_k), ik)
+        gram_minus = mat_sub(mat_mul(d_hat_k, d_hat_adj), ik)
+        tr_def_plus = varpi_expect(mat_mul(gram_plus, gram_plus))
+        tr_def_minus = varpi_expect(mat_mul(gram_minus, gram_minus))
+
+        expected_vec_def = Q(1, k_copies)
+        expected_tr_def = Q(3 * k_copies + 2, k_copies**3)
+
+        check(
+            f"Theorem 8(2) K={k_copies} coherent determinant transport defect: ||(D_hat_K - I)|Theta_K>||^2 = 1/{k_copies}, varpi_K((D_hat_K^* D_hat_K - I)^2) = {expected_tr_def}",
+            vec_def_1 == expected_vec_def
+            and vec_def_2 == expected_vec_def
+            and tr_def_plus == expected_tr_def
+            and tr_def_minus == expected_tr_def
+            and ((k_copies < 3) or (tr_def_plus + tr_def_minus < 1)),
+        )
+
+
 def main() -> None:
     source = Path(__file__).resolve().parents[1] / AUDIT_INPUT_PATHS[0]
     print("Source SHA256:", hashlib.sha256(source.read_bytes()).hexdigest())
     print(
-        "Exact rational and Fock-space controls for Theorems 1-5 of the U(5) 3+2 FMS projector and stabilizer carrier note."
+        "Exact rational and Fock-space controls for Theorems 1-8 of the U(5) 3+2 FMS projector and stabilizer carrier note."
     )
     theorem1_su2_projector_controls()
     theorem2_u5_projector_and_car_controls()
     theorem3_orthogonal_projector_and_centralizer_controls()
     theorem4_stabilizer_and_z6_kernel_controls()
     theorem5_native_determinant_carrier_controls()
+    theorem6_su5_quartic_orbit_selection_controls()
+    theorem7_higgs_gram_and_pinch_controls()
+    theorem8_transport_floor_and_coherent_scaling_controls()
     print(f"TOTAL: PASS={PASS_COUNT} FAIL=0")
 
 

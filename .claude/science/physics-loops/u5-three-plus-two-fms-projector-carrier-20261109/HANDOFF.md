@@ -1,10 +1,10 @@
 # Handoff: U(5) Three-Plus-Two FMS Projector Calculus and Native Stabilizer Carrier
 
-## Milestone 01 Summary
+## Milestone 02 Summary
 
 - **Claim status:** `bounded_theorem` / `bounded-support` (`trace_class: upstream_support`, `reachability_to_target: supports`)
 - **Primary theorem note:** [`docs/U5_THREE_PLUS_TWO_FMS_PROJECTOR_CARRIER_BOUNDED_THEOREM_NOTE_2026-11-09.md`](../../../../docs/U5_THREE_PLUS_TWO_FMS_PROJECTOR_CARRIER_BOUNDED_THEOREM_NOTE_2026-11-09.md)
-- **Primary runner:** [`scripts/frontier_u5_three_plus_two_fms_projector_carrier.py`](../../../../scripts/frontier_u5_three_plus_two_fms_projector_carrier.py) (`TOTAL: PASS=27 FAIL=0`, exact `fractions.Fraction` and integer bitmask arithmetic)
+- **Primary runner:** [`scripts/frontier_u5_three_plus_two_fms_projector_carrier.py`](../../../../scripts/frontier_u5_three_plus_two_fms_projector_carrier.py) (`TOTAL: PASS=43 FAIL=0`, exact `fractions.Fraction` and integer bitmask arithmetic)
 - **Canonical cache:** [`logs/runner-cache/frontier_u5_three_plus_two_fms_projector_carrier.txt`](../../../../logs/runner-cache/frontier_u5_three_plus_two_fms_projector_carrier.txt)
 
 ## Key Mathematical Results Established
@@ -14,7 +14,10 @@
 3. **Orthogonal Real $6+4$ Projectors and Complex-Structure Factorization (Theorem 3):** Proved that both $J_A^2 + I_{10}$ and $A - (a Q_6(A) + b Q_4(A))J_A$ factor identically through the quartic defect $Q_6(A)^2 - Q_6(A)$ in $\mathcal{A} \otimes M_{10}(\mathbb{R})$, and verified the centralizer dimension reduction $45 \to 21 \to 13$ in $\mathfrak{so}(10)$.
 4. **Joint Stabilizer $K_{U(5)} = H\{\pm I_5\}$ (Theorem 4):** Proved $H = S(U(3)\times U(2)) \cong (SU(3)\times SU(2)\times U(1))/\mathbb{Z}_6$ ($\dim = 12$) and $\operatorname{Stab}_{U(5)}(A_0, \zeta) = H\{\pm I_5\} \cong H \times \mathbb{Z}_2$.
 5. **Native Fermion-Even Determinant-Square Carrier on $\Lambda^5 \mathbb{C}^{10}$ (Theorem 5):** Proved $U_\ell^{i_1,j_1}\cdots U_\ell^{i_5,j_5} = \varepsilon_i \varepsilon_j D_{xy}$, $D_{xy} = -|5_x, 0_y\rangle\langle 0_x, 5_y|$ on the $252$-dimensional link register $\Lambda^5 \mathbb{C}^{10}$, and $[G_x^{ij}, \mathcal{O}_{xy}^{(10)}] = 2\delta_{ij}\mathcal{O}_{xy}^{(10)}$, $[G_y^{ij}, \mathcal{O}_{xy}^{(10)}] = 0$ for $\mathcal{O}_{xy}^{(10)} = B_x D_{xy} B_y$.
+6. **Global Quartic $\mathfrak{su}(5)$ Three-Plus-Two Orbit Selection via Cubic Discriminant (Theorem 6):** Proved via $\Delta(u,v,w) = \frac{1}{2}r^6 - 27(uvw)^2 = (u-v)^2(v-w)^2(w-u)^2 \ge 0$ that $\frac{7}{30}s^2 \le \operatorname{Tr}(A^4) \le \frac{13}{20}s^2$ for all $A \in \mathfrak{su}(5)_{\mathrm{sa}}$ with $\operatorname{Tr}(A^2) = s > 0$, so $V_{\mu,\lambda_1,\lambda_2}(A)$ attains its strict global minimum exclusively on the $3+2$ orbit whenever $\mu^2 > 0, \lambda_2 > 0, 30\lambda_1 + 7\lambda_2 > 0$.
+7. **Joint $25 \times 25$ Higgs Gram Matrix Spectrum, $\Pi_{\operatorname{Lie}(H)}$ Projector, and Noncommuting Pinch Identity (Theorem 7):** Proved $\ker \mathcal{M}^2 = \operatorname{Lie}(H)$ ($\dim = 12$), eigenvalue $(a-b)^2$ ($\times 12$) on $\mathfrak{m}_{3\times 2}$, eigenvalue $20\kappa^2$ ($\times 1$) on $T_0$, the exact polynomial projector $\Pi_{\operatorname{Lie}(H)}$, and $(P_3(A)X P_3(A) + P_2(A)X P_2(A)) - (X - (a-b)^{-2}[A,[A,X]]) = D_A X + X D_A$.
+8. **Single-Link Two-Sided Transport Floor and Multi-Copy Coherent FMS Defect Scaling (Theorem 8):** Proved $D_+(\omega;\gamma) + D_-(\omega;\gamma) = 2 - (p_0 + p_5) + (|\gamma|^2 - 1)^2(p_0 + p_5) \ge 1$ on $\Lambda^5\mathbb{C}^{10}$, alongside the exact $K$-copy coherent rational defect formulas $\frac{K+1}{K^3}$ (at $r=1$), $\frac{1}{2K(K+2)}$ (at $r_K = \sqrt{1+2/K}$), and $\frac{3K+2}{K^3}$ (for $\widehat{D}_K$).
 
 ## Remaining Downstream Blockers
 
-- Construct a stationary state $\omega$ of a coupled lattice tick in which $\omega(\mathcal{D}_{3+2}(A_X))$, the noncommuting entry commutator defects, and the multi-strand transport defects are simultaneously small.
+- Derive the effective quartic coupling sign $\lambda_2 > 0$ and multi-copy coherent state preparation directly from the coupled five-mode Floquet tick.

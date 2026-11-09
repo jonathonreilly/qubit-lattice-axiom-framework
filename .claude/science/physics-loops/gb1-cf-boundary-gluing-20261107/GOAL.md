@@ -112,3 +112,40 @@ reference, all origins including coherent superpositions, blank versus recorded
 zero, finite capacity and off-code instrument normalization. A conditional
 operator construction alone does not count as autonomous record-only law closure.
 Evidence goes in native_records/; STATE.yaml remains the current checkpoint.
+
+## Preparation and history sufficiency, 2026-11-08
+
+User target: determine whether preparation and history records can fix future
+probabilities within the current axioms, or whether the state description must
+be reconsidered. Main and instruction source: 43a1fcc374711ca50626eca667441d3ca575c7d1;
+research parent: 40bf8ab61128cfa0ff7c2e99663300d4ee2b5c1f. Reuse unchanged
+workflow/skill readings; refresh scientific premises and relevant prior art.
+
+Exact finite target: a record-only kernel whose data are encoded solely on
+the already-free coarse vertices, with every prepared origin/frame transported
+covariantly. Require reconstruction through magnetic updates, an actual
+next-neighborhood sufficiency proof, unchanged old records, and no external
+step counter. Do not substitute a preparation label for a proof of its
+postcondition, sum hidden Kraus amplitudes, or claim a growing finite lookup
+radius is a uniform-range mediated implementation. Quantum history machinery,
+Born maps, Hamiltonians and calibration remain named conditional inputs.
+
+Closest prior work: the August projective-history calculator and September
+local-copy construction already establish conditional history reconstruction;
+the latter puts weights in outcome-dependent occurrence. New target is the
+native gauge-code carrier and common-target neighborhood kernel, plus an
+explicit preparation certificate. The standard CP history proof is reused
+with credit; no novelty claim is made for filtering.
+
+Routes: full ordered log plus fixed program (primary finite construction),
+future-effect equivalence (independent sufficiency criterion), and known-null
+marginalization (alternative to logging every attempt). Probe omitted order,
+unrecorded evolution and the wrong coherent sum; no universal impossibility
+claim is authorized by these controls. A rank-one preparation herald can
+retire the unknown post-success state while leaving its occurrence law open.
+
+Evidence goes in preparation_history/. The inherited-model/max checker starts
+from restricted original sources, with no supervisor candidate or script, then
+checks the integrated source. Keep the original candidates, all failures and
+source identities. Deliver a checked conditional milestone on the existing
+science PR; do not change axioms, primitives, audit authority or shared prompts.

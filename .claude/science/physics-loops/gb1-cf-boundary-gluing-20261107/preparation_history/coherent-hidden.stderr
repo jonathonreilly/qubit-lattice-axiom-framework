@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/preparation_history/check.py", line 205, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/preparation_history/check.py", line 197, in main
+    'geometry':geometry(args.fault),'algebra':algebra(args.fault)}
+                                              ~~~~~~~^^^^^^^^^^^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/preparation_history/check.py", line 145, in algebra
+    assert child == reconstructed, ('density/ensemble', h, b)
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('density/ensemble', (), 0)

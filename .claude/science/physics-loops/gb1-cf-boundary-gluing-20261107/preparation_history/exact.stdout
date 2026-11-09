@@ -1,0 +1,45 @@
+{
+  "source_sha256": "5ef10cd243d0eb6ba47b21b097d066171057f6ca7703c7fef6a8f30901394bb0",
+  "geometry": {
+    "parser_cases": 1536,
+    "phase_cases": 125,
+    "proper_rotations": 24,
+    "tested_d_N": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "radius_bound": "10(d+N)+35"
+  },
+  "algebra": {
+    "density_ensemble_comparisons": 42,
+    "zero_children": 0,
+    "horizon": 3,
+    "preparations": 3,
+    "unrecorded_magnetic_evolution_corner_probabilities": [
+      "0",
+      "192/625"
+    ],
+    "order_control_masses": [
+      "1/2",
+      "1/4"
+    ],
+    "order_control_future_Z1": [
+      "1/2",
+      "0"
+    ],
+    "scope": "exact reduced gauge/control fixtures, not a many-body native simulation"
+  },
+  "elapsed_seconds": 4.355307082994841,
+  "max_rss_host_units": 61079552,
+  "status": "ok"
+}

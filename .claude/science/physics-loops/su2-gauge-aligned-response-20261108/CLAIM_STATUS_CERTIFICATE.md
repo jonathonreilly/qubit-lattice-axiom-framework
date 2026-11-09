@@ -22,5 +22,7 @@ symmetry, terminal identity, fixed depth and coupling regime are explicit.
 
 No mathematical premise of the stated finite two-step theorem is left as the
 target itself. The broader Q-law, terminal-field, inherited-depth and physical
-continuum bridges remain open and are outside this theorem. Publication is
-local-only until approval of the exact public text; no author merge occurs.
+continuum bridges remain open and are outside this theorem. The exact-Q
+continuation closes normalization algebra and records residual
+gauge directions at zero sources and V_O=I; it does not close the quantitative
+Q-law. PR #10149 is open for continued work; no author merge occurs.

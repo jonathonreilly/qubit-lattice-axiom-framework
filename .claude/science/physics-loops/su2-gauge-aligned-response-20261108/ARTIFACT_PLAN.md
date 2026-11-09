@@ -5,9 +5,11 @@ Complete composition: `parts/full-connected-four-response.md`.
 Supporting sources: `parts/` with all original and new mathematical suppliers.
 Checks: `gates/`, preserving source hashes, findings and independent derivations.
 Recovery: HANDOFF, STATE, SOURCE_MAP, MANIFEST and external checkpoint.
-Publication text: PREPARED_PR.md after source and conformance freeze.
+Single working publication: PR #10149; PREPARED_PR.md preserves recovery.
+Proof map: PROOF_TREE.md, with checked finite results and open physical nodes.
+Continuation: exact partial-terminal algebra, gauge geometry and separate check.
 
 No runner cache, numerical receipt, generated audit data, prompt/workflow edit,
 or physical axiom is part of this milestone. Mechanical integrity evidence
-will identify the exact local commit and full file set. A prepared public
-text is not a published PR or a landed result.
+identifies the local source checkpoint and full file set. PR publication
+does not establish a landed or retained result.

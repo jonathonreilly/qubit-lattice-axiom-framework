@@ -1,128 +1,126 @@
-# SU(2) connected four-response: current checkpoint
+# SU(2) mass-gap lane: current checkpoint
 
-As of 2026-11-09, the full compact two-step identity-terminal response
-milestone is mathematically checked and its exact publication note is checked.
-All proof suppliers, the connected engine and the actual-model composition
-have frozen independent research reports. The Yang–Mills mass gap remains open.
-Publication awaits approval of the exact text; no new public write occurred.
+Single working [PR #10149](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10149)
+is open against main, published from 4a3f6be4cf4ea0321bb5042c2969fc035479e7c2
+on 2026-11-09. The owner requested one PR containing the full proof tree and
+continued work in it. Continue on branch
+physics-loop/su2-gauge-aligned-response-20261108; do not create a stack.
+The [proof tree](PROOF_TREE.md) is the current map of checked finite-model
+arguments and open quantitative/physical dependencies.
 
-Root branch: `physics-loop/su2-gauge-aligned-response-20261108`.
-Previous local commit: `55fd670ff8995427b24617b2273bd3f78b7559d9`.
-Science source base: `1e0d3b58dcda7f83152b0bb51729260247454d65`.
-Refreshed main: `bf92a1d763030836ed55631d5d7a7ef3b288f284`.
-The refresh changed audit/derived metadata only; the science and instruction
-sources used here retain their exact bytes. The main SU(2) note is unaudited,
-awaiting audit at this snapshot. Local research checks grant no retained status.
-Planning branch: `56c5c0ab64f532c5784e895b2f9aa6894fa334e0` (not scientific authority).
-Historical #10133: `89faef229ff6e6bde42baad15ed8270c2f4087d8`, open draft.
-#10114 also remains an open draft; only the standalone #10145 content was
-previously landed. The earlier public a50a62bf08 author commit is preserved.
+## Source identities and authority
 
-## Current exact claim
+Current main at the continuation check:
+bf92a1d763030836ed55631d5d7a7ef3b288f284.
+Original science source base:
+1e0d3b58dcda7f83152b0bb51729260247454d65.
+Planning branch snapshot:
+56c5c0ab64f532c5784e895b2f9aa6894fa334e0; it supplies no scientific status.
+Historical #10133 at 89faef229ff6e6bde42baad15ed8270c2f4087d8 and #10114
+remain open drafts at the last check. Only standalone #10145 previously
+landed. The current PR includes its unpublished suppliers and has no
+unlanded PR dependency. The old a50a62bf08 author commit is preserved.
 
-[Full composed proof](parts/full-connected-four-response.md) proposes, for
-fixed L,kappa, sufficiently large u, terminal V=I and distinct c,d,
-`|kappa4(F,G,A_c,A_d)| <= C/u exp(-mu tau)` uniformly in finite volume,
-with a weighted sum over boundary-link pairs, for fixed smooth quotient
-singlets. Both kernels, the actual two-layer density and every normalizer
-remain. The [primary note](../../../../docs/SU2_CONNECTED_FOUR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-11-09.md)
-is the review/publication surface being prepared.
+The finite two-step primary is an author bounded theorem with same-provider
+fresh-context mathematical checks, not a formal audit or retained result.
+Main authority and audit metadata are unchanged. The Yang-Mills mass gap
+and TOE identification remain open.
 
-For original sources the exact result retains
-`kappa4_pi = kappa4_nu(f,g,A_c,A_d) + kappa3_nu(C_FG,A_c,A_d)`.
-The second term has an O(1) tree bound and vanishes for disjoint Haar endpoint
-readers or an orbit-invariant source. It is not silently made O(1/u).
-A coarse conditional log N-log Q retains its entire Q coefficient.
+## Checked research content
 
-The compact correction uses one fixed Gaussian reference at terminal I and
-zero source. It is O(exp(-c log(2+u)^(2A))) in a connected reader norm;
-four fixed-source derivatives cost at most u^2. The exact chart estimate
-then supplies the C/u power. This is finite-depth auxiliary posterior decay,
-not a physical mass or an estimate stable under all further blocking.
+[Full compact response](parts/full-connected-four-response.md), with the
+[primary note](../../../../docs/SU2_CONNECTED_FOUR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-11-09.md)
+and [composition check](gates/full-connected-four-response-check.md), supplies
+C/u connecting-tree decay and weighted distinct-boundary-pair summability
+for fixed smooth quotient singlets, at terminal I, fixed two-step depth and
+sufficiently large u. Both actual kernels and all normalizers remain.
+Original sources retain the conditional orbit covariance, with its justified
+O(1) allowance. This posterior bound has not been identified with physical
+mass. All twenty earlier proof parts and the primary note retain their
+previous exact bytes; their full index is in PROOF_TREE.
 
-## Proof and check map
+The continuation supplies [exact partial-terminal normalization](parts/partial-terminal-normalization.md):
+integrating links J deletes precisely their entire last-layer kernels.
+Exterior derivatives of log p subtract the fourth cumulant of the actual
+marginal rho_J. Its disintegration has all fifteen conditional-cumulant
+terms, including covariance of conditional covariances. Empty/full J and
+original noninvariant sources are included. This is exact algebra, not a
+new decay bound.
 
-| Arguments | Frozen independent mathematical reports |
+[Released-terminal gauge directions](parts/released-terminal-gauge-directions.md)
+gives an explicit diagnostic: at zero sources and held V_O=I, if retained
+terminal edges have r connected components, the unchanged forest slice has
+3(r-1) gauge directions of rescaled chart precision 2/(3u). These are
+coordinate-Haar eigenvalues, not physical masses. The eight-edge witness
+does not settle the seven-edge two-plaquette marginal.
+
+[The continuation check](gates/partial-terminal-check.md) independently
+reconstructs both arguments. Its bounded counterexample detects omission
+of the covariance-of-covariances terms. It also caught and repaired an
+omitted zero-source/identity-exterior qualifier in the proof map. These are
+separate-context checks on the same provider, not independent-provider
+confirmation or an audit. Full hashes and coverage remain in the reports.
+
+The complete earlier report index is preserved for navigation:
+
+| Arguments | Frozen mathematical reports |
 |---|---|
-| Original eight forest/flat/chart/energy/conditional/relative/component suppliers | [Initial](gates/forest-flat-check.md), [scope/local tail](gates/final-scope-and-local-tail-check.md), [relative/components](gates/relative-component-check.md) |
-| Compact scaling and chart fourth response | [Four-response check](gates/four-response-independent-check.md) |
-| Original-source orbit identity and bounds | [Original-source check](gates/original-source-four-response-check.md) |
-| Arbitrary-exterior moments and radial profiles | [Moment check](gates/arbitrary-boundary-moments-check.md) |
-| Buffered regional log ratio and complete mixed jets | [Buffered-ratio check](gates/buffered-core-ratio-check.md) |
-| Exact global chart-sector comparisons | [Sector-ratio check](gates/global-chart-sector-ratio-check.md) |
-| Actual two-step compact insertion gas | [Compact-decomposition check](gates/two-step-compact-polymer-check.md) |
-| Actual frozen Gaussian suppliers | [Gaussian check](gates/frozen-gaussian-producers-check.md) |
-| Source-complete complex-parameter decomposition | [Marked-decomposition check](gates/source-marked-compact-check.md) |
-| Historical generic density engine | [Historical source check](gates/density-forest-source-check.md); conditional generic scope only |
-| New fixed-reference engine and exact scalar-leg counts | [Density-forest check](gates/zero-shift-density-forest-check.md) |
-| Actual-model final composition | [Composition check](gates/full-connected-four-response-check.md): exact supplier match, shrinking chart and retained orbit covariance. |
-| Primary publication note | [Text/source check](gates/primary-note-check.md): complete line-by-line check, repaired table and resolved review-history target. |
+| Forest, flat, chart, energy and local estimates | [Initial](gates/forest-flat-check.md), [scope/local tail](gates/final-scope-and-local-tail-check.md), [relative/components](gates/relative-component-check.md) |
+| Compact scaling and connected chart response | [Four-response](gates/four-response-independent-check.md) |
+| Original-source conditional orbit covariance | [Original-source](gates/original-source-four-response-check.md) |
+| Interior moments and radial profiles | [Moments](gates/arbitrary-boundary-moments-check.md) |
+| Buffered ratios and complete mixed jets | [Buffered ratios](gates/buffered-core-ratio-check.md) |
+| Global chart-sector comparison | [Sector ratios](gates/global-chart-sector-ratio-check.md) |
+| Actual compact insertion gas | [Compact decomposition](gates/two-step-compact-polymer-check.md) |
+| Frozen Gaussian suppliers | [Gaussian](gates/frozen-gaussian-producers-check.md) |
+| Source-complete decomposition | [Marked decomposition](gates/source-marked-compact-check.md) |
+| Generic historical engine and new actual engine | [Historical source](gates/density-forest-source-check.md), [density forest and scalar-leg count](gates/zero-shift-density-forest-check.md) |
+| Actual composition and primary text | [Composition](gates/full-connected-four-response-check.md), [primary note](gates/primary-note-check.md) |
 
-Reports bind exact hashes and retain findings/counterexamples. Frozen author
-headers saying checking was pending describe the authoring state; subsequent
-reports record the check. Same-provider fresh-context derivations are not a
-formal audit or independent-provider review. Main authority is unchanged.
+## Next decision and preserved failed shortcuts
 
-The strongest repairs in this continuation were the least-K rule, missing
-path endpoint factor, symmetric path assignment, full-cell chart-body
-activation and Gaussian price, nonempty priced primitive bases, and the
-linear/nonlinear source-only normalization distinction. The exact partial-cell
-counterexample is preserved in the density-forest gate.
+Attack compact coercivity for the actual seven-edge two-plaquette marginal
+with V_O=I, retaining every first-layer kernel and every remaining radial
+normalizer. The proposed detour construction and discriminating acceptance
+test are stated in PROOF_TREE. It is not yet a proved supplier. Then check
+the connected response of that marginal and the terminal/background classes
+actually needed for a third exact transition. No intermediate Wilson
+replacement is allowed. Depth/cutoff stability at physical scales,
+nontrivial continuum reconstruction and the physical spectral gap remain
+open; no completion percentage or success probability is supported.
 
-## Literature, original sources and failed shortcuts
+Preserve these distinctions: a rough-event tail is not a connected log
+bound; a globally good chart need not be uniformly likely in growing
+volume; separate orbit projections lose conditional covariance; pi_I alone
+does not control the released-terminal mixture; a positive pinned precision
+cannot be copied to arbitrary released-edge geometry on the same slice.
+These are specific checks and failed shortcuts, not a no-go for the target.
 
-Luna performed repo and primary-literature extraction:
-`sources/connected-response-repo-scan-20261109.md`,
-`sources/connected-response-literature-scan-20261109.md`, and
-`sources/frozen-forest-literature-addendum-20261109.md`. Root read the full HC734 and MK753 arguments
-at #10133, plus the exact earlier regional/response windows in SOURCE_MAP.
-A separate checker reconstructed the generic MK engine. One-step historical
-scope is preserved; no draft result is imported merely by its title.
+## Recovery and execution
 
-Abdesselam–Rivasseau supply forest architecture, and Lohmann supplies a useful
-comparison with different analytic-interaction/cutoff hypotheses. No searched
-clustering theorem was imported as an automatic full compact SU(2) theorem.
-The generalized avoidance comparison uses the stated Harvey–Vondrak method.
-Search coverage is not an absence or novelty proof.
+Luna read existing Q/response work and checked primary literature. The
+[continuation source record](sources/partial-terminal-repo-literature-20261109.md)
+distinguishes Luna extraction, direct supervisor source inspection and
+independent mathematical derivations. Brillinger's conditioning identity
+is credited; no searched theorem was imported as automatic SU(2) decay.
 
-Preserved failed shortcuts: a globally good chart is not uniformly likely
-in growing volume; a rough-event bound or sector ratio is not a connected
-log estimate; separately projecting original sources loses C_FG; a central
-block TV estimate alone is not a full influence contraction; and a positive
-Hessian alone does not discharge Menz's comparison hypotheses. These are
-scope/evidence distinctions, not a no-go theorem for the mass gap.
+The root profile remains unchanged for frontier judgments and decisive
+checking; the bounded normalization worker used medium effort by owner
+request, and Luna used low effort for reading. No numerical physics job,
+new runner, physical axiom or editable prompt/workflow change occurred.
+The combined pipeline/strict audit/changed-evidence checks still belong to
+the integrated-main landing stage; this author continuation does not merge.
 
-## Remaining work and recovery
+The manifest binds current files without itself being a mathematical proof.
+REVIEW_HISTORY records targeted checks and worker recovery. The external
+checkpoint under Documents/Codex/sussman-alpoge-process-review-20261108
+records the exact last published commit and PR body. Previous publication
+packet and manifest remain recoverable at 4a3f6be4cf. STATE is the short
+resume index; use the current Git revision and source hashes when resuming.
 
-The actual-model and primary-note checks are complete. Focused vocabulary,
-link, exact-hash and complete-delta checks are recorded in REVIEW_HISTORY.
-The refreshed manifest binds the complete local packet. This single coherent
-main-based publication packet contains its prior unpublished suppliers, so it
-does not create a dependency stack.
-The repo is public. New public claims require approval of their exact text
-under SCIENCE_WORKFLOW section 10; the prior approval was for a50a62bf08/10145.
-Prepare the complete reviewable result before any new publication request.
-No new public write has occurred and no author merge is authorized by the
-physics-loop delivery procedure.
-
-The nearest further science obligation is the actual coarse-conditional Q
-response with retained exterior parameters, coupled with nonidentity-terminal
-control. Then test preservation for a third exact normalized transition.
-Depth-uniform physical scaling, continuum reconstruction and mass gap remain
-open. Constants here are existence constants, not efficiently evaluated values.
-
-Root profile remains unchanged for frontier judgments and decisive checks;
-Luna low reads literature/repo; medium workers draft bounded proof pieces.
-No numerical job, new runner, formal audit, axiom/workflow/prompt edit ran.
-Managed worker roots are `su2-four-response-moments/Physics` and
-`su2-four-response-gluing/Physics` under `/Users/jonreilly/.codex/worktrees`.
-The physics-loop lease acquired at 2026-11-09T18:40:01Z was released after
-science completion. No numeric lease was held. Both worker trees were sent
-through managed archival after every needed artifact was copied and hashed;
-archive completion is recorded in the final manifest. Their snapshots remain
-recoverable. The lease was not a user runtime budget.
-
-The prior manifest remains recoverable at55fd670ff8. The current manifest
-binds this milestone, and STATE is its short resume index. The external
-checkpoint records the final local commit and prepared PR text. No editable
-prompt files changed.
+The continuation workers su2-partial-terminal and su2-terminal-check were
+archived through the managed tool after all outputs matched the root hashes;
+archival completion was observed and recovery snapshots remain available.
+The 19:37 UTC physics-loop lease was released after the checked science
+checkpoint; no numerical lease was held. The final main fetch remained at
+bf92a1d763030836ed55631d5d7a7ef3b288f284.

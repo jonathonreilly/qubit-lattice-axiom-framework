@@ -5,7 +5,15 @@
   "full_response_status": "bounded-support",
   "mass_gap_status": "open",
   "formal_audit": "not performed",
-  "public_writes": [],
+  "public_writes": [
+    {
+      "action": "push_branch_and_open_pr",
+      "head": "4a3f6be4cf4ea0321bb5042c2969fc035479e7c2",
+      "pr": 10149,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10149",
+      "created_at": "2026-11-09T19:36:44Z"
+    }
+  ],
   "pinned_inputs": [
     {
       "revision": "1e0d3b58dcda7f83152b0bb51729260247454d65",
@@ -100,21 +108,22 @@
   ],
   "output_hashes": {
     "APPROACH_REGISTRY.md": "b64b9f0e883e6bc02fd610da036286c3649d144ea11ab039f6d9691171998e8b",
-    "ARTIFACT_PLAN.md": "62eaee6d74692dbfa4a90fbeef79debd40f1ecf119345ec0caf04f9261b70ee1",
+    "ARTIFACT_PLAN.md": "ea00a0ba50cb54f2d70d3715a56ba4d7956e03499ae9daf1843dea330a6d403a",
     "ASSUMPTIONS_AND_IMPORTS.md": "54e7cc4c141801582f34dc2dcdc5435d20fc280fae1d92239f1589ac2a9cbb9b",
-    "CLAIM_STATUS_CERTIFICATE.md": "3544f29457cca4b3f39bf1ae702512a0ffe8bec1dd89166641df8568f1e02537",
+    "CLAIM_STATUS_CERTIFICATE.md": "bca88f4c97035b2448f3aef5ad9ea736518ecdb04071a98023bccbf7931cbaee",
     "GOAL.md": "75c533044cf523b646f60e225c3cc2350a21d908f0a473c293ec468def998279",
-    "HANDOFF.md": "fb97b0637a7bdcdc87676df2dd046b649f6f2ed8c40b6ac73aed0398870d0ec1",
+    "HANDOFF.md": "72c959fd199329718165e6ce492e245feb45d6af8aeccedcb1552a8a1ab923bb",
     "LITERATURE_BRIDGES.md": "2dc7c75c94d3a055bfb2f4b0de4bb506a412eeb40923c142b4c1cf209f0b59e2",
     "NO_GO_LEDGER.md": "930614e6a872f5f8208fc36d4c738eafb6c1e8b5df2de2542e963c2a29247b1d",
-    "OPPORTUNITY_QUEUE.md": "03cb41a6351f162967486c2c6d1393bb86685ee21036cccb645eede05db57e61",
-    "PREPARED_PR.md": "b48b321be01505db294fd6c9d82a28c508e39a0b2f58379a90b941549596db0a",
-    "PR_BACKLOG.md": "fced850e0cae1722cedf4ff645e025485a5151cb2331d6550359b4b97667d65b",
-    "REVIEW_HISTORY.md": "7d2e8dbefad8eef3306e77f95db0a4e18705e03225870ffffce2954d6d10f6ec",
+    "OPPORTUNITY_QUEUE.md": "fd30091af6b1f4f035f688bbbdfd0226568161cea65a5ae88f448805b2e8d428",
+    "PREPARED_PR.md": "d5708ca1bdf497741fe84591dc50912250a6ecf43d327a9f93ead74336c00a1d",
+    "PROOF_TREE.md": "9950a0cc73b614741922f0b69cd51a725baa7e7b660c183f937f17233af806d8",
+    "PR_BACKLOG.md": "9b999e0fe55eb2ba08cd779dda9becd33e001d1c528e0629949ba1003bea6657",
+    "REVIEW_HISTORY.md": "2eb22f6d0eeb5f6cc302bcf7a7a5abd6c9269077782b88beec21c245d1a10cf5",
     "ROUTE_PORTFOLIO.md": "6fd3b2a612ecf142e7f2b608f6daac146605157fb840889b94c8e5690a7fad58",
     "SOURCE_MAP.md": "e375e7f042af5737d92a612f5ca712c6eb8c9eb7bd627215d515e54018ed803e",
-    "STATE.yaml": "afa7fcba1d45e14b0235dde7d24222555303c32a5a0c3aecece23d986cdc1ebf",
-    "TRACE_GATE.md": "b80966bdadd7c7326b972427fab8fa86203d4bea8726b3b2006d019cc130d793",
+    "STATE.yaml": "3f43e2d0f072aa94b279819bb7381d91b2d5e2346be2df44fdc1c9ba7d3a5555",
+    "TRACE_GATE.md": "111a1bde7cd5b8f6224c1cf29fc07ba69e6d57abcccfe530ea079445f218b99d",
     "gates/arbitrary-boundary-moments-check.md": "d4e7ae28bc3bcfedb4286dd9ef93c8bc5deb03b2a479ec3bb0efe9a68f85fdb3",
     "gates/buffered-core-ratio-check.md": "a77a82e7a03f800547d95ea2728ae34e5c5afb765ba1c7d7a4d6a824ca8d6b32",
     "gates/density-forest-source-check.md": "fdc8beca9170eaf8e30f15ecbf369d6c817746caaac6ca55370fb7c6ef1fe18f",
@@ -125,6 +134,7 @@
     "gates/full-connected-four-response-check.md": "e714f72f4788c2882b31ecccff3cc87686be71915614f3b6ae56c48964045306",
     "gates/global-chart-sector-ratio-check.md": "3272bdcc6cf517f032c80c2b83760ba91892b611ccf05584efac216ea70d5ede",
     "gates/original-source-four-response-check.md": "4a41cdd580dbee3db3ddd9d7376ac435f1554cd2f61275b8df96f98abd262f6d",
+    "gates/partial-terminal-check.md": "a0b9982dbddd5934de8282dcfacf3300e60978b2eee1c3225d8bc8c1bb7ce5b8",
     "gates/primary-note-check.md": "eb304d67c25153dc053f33531dfc1b83a92be0852faae8ec038a2c74463cb98f",
     "gates/relative-component-check.md": "b73a1bf25fdfa16fc8f9655e502cf45d00a70297774eda28a827c07168fe8dcc",
     "gates/source-marked-compact-check.md": "3dec659c79e655671c4bacf44105eabe12914aab6f67581f24aef308b96266ba",
@@ -144,6 +154,8 @@
     "parts/local-relative-coercivity.md": "6b7c3a0eba818566fad0cb34f13998a3cf98de632761d7942ca527c51c80cb37",
     "parts/nonlinear-chart-response.md": "5edacc8ee78d54b7fb853fb34da3d8cceffd8eb0e476f8510d15048f8f10f2d1",
     "parts/original-source-four-response.md": "b305c708b5736f6dca707008bee7f3ceeb648b02bced785a82e5d1b3fa593f79",
+    "parts/partial-terminal-normalization.md": "722e622dd64763e7f85461ef037f78810ec1c96d5bb71ddc7d60647c858b9867",
+    "parts/released-terminal-gauge-directions.md": "a8271fb33178da46f747075f8b98f266cb06833ae900b99ef0544f36adcb403b",
     "parts/rough-component-bound.md": "1a4c40385f1fc492033f261f8ed938bed23f32475eb9a116347fd7361f9e9c44",
     "parts/rough-density-bound.md": "cb23d1b835ae70ad79d145f891fb152fb71ae2fddd630b8c8469cba765973c20",
     "parts/scalar-leg-forest-count.md": "6df5e3c0f1185e5f56bae18e8dc81053eb33b005244009a70ccc3ed542377f6f",
@@ -152,9 +164,10 @@
     "parts/zero-shift-marked-density-forest.md": "d44adc900daf7ac665e502ac950230a8739b120d1a2be4940fd292ea9a09087f",
     "sources/connected-response-literature-scan-20261109.md": "3826e5a46894f25f168992304c71658114668829d45649a8b9eea0b903d5553d",
     "sources/connected-response-repo-scan-20261109.md": "0bd2ccd95ef0ee66378b258c162bedf47dd8b8f7463ba374070fcb5deb1cf122",
-    "sources/frozen-forest-literature-addendum-20261109.md": "238180b21668096a1715d913d9e602543011ad799fd66590316039cf1c130bcd"
+    "sources/frozen-forest-literature-addendum-20261109.md": "238180b21668096a1715d913d9e602543011ad799fd66590316039cf1c130bcd",
+    "sources/partial-terminal-repo-literature-20261109.md": "f4feaf5f075f97fb77bc3a3ce9ceb054d92208bfd94d17a6f8dac7c08031a02b"
   },
-  "frozen_at_utc": "2026-11-09T19:18:30.359211+00:00",
+  "frozen_at_utc": "2026-11-09T20:00:24.104153+00:00",
   "mathematical_check": "Same-provider fresh-context independent mathematical derivations; all current part and primary-note hashes bound by reports. No formal audit or independent-provider claim.",
   "managed_worker_archives": [
     {
@@ -172,28 +185,60 @@
     {
       "root": "/Users/jonreilly/.codex/worktrees/su2-four-response-gluing/Physics",
       "attachment_id": "01a1bff6-3298-7df3-836d-6bce8a14bc2c"
+    },
+    {
+      "root": "/Users/jonreilly/.codex/worktrees/su2-partial-terminal/Physics",
+      "attachment_id": "01a1c1e2-b775-76e1-baf6-b242469059f2",
+      "status": "archived",
+      "copied_outputs_verified": true
+    },
+    {
+      "root": "/Users/jonreilly/.codex/worktrees/su2-terminal-check/Physics",
+      "attachment_id": "01a1c1e2-cfdb-7d70-929c-9023e9b44f70",
+      "status": "archived",
+      "copied_outputs_verified": true
     }
   ],
   "validation": {
     "vocabulary_violations": 0,
     "frozen_proofs_unchanged_by_lint": true,
     "all_local_links_resolve_to_proposed_tracked_regular_files": true,
-    "mathematical_sources_bound_by_report_hashes": 21,
+    "mathematical_sources_bound_by_report_hashes": 23,
     "complete_delta_whitespace_clean": true,
     "numerical_jobs": 0,
     "new_runner": false,
     "formal_pipeline": false,
     "combined_landing_validation": "not run; required on integrated current-main tree before landing",
-    "new_publication": false,
+    "new_publication": true,
     "execution_lease": "released",
-    "prompt_files_changed": []
+    "prompt_files_changed": [],
+    "old_proofs_and_gates_unchanged": true,
+    "local_markdown_links_checked": 97
   },
   "refreshed_main": "bf92a1d763030836ed55631d5d7a7ef3b288f284",
-  "previous_local_checkpoint": "55fd670ff8995427b24617b2273bd3f78b7559d9",
-  "full_response_scope": "Full compact finite two-step terminal-I distinct-link response; original-source conditional covariance retained. General Q law and nonidentity terminal control remain open.",
-  "publication": "awaiting exact-text approval",
+  "previous_local_checkpoint": "4a3f6be4cf4ea0321bb5042c2969fc035479e7c2",
+  "full_response_scope": "Full compact finite two-step terminal-I distinct-link numerator response; original-source conditional covariance retained. Exact partial-terminal Q algebra and zero-source identity-exterior gauge diagnostic checked. Quantitative Q law, nonidentity control and physical gap remain open.",
+  "publication": "open PR #10149; same-branch continuation",
   "primary_note": {
     "path": "docs/SU2_CONNECTED_FOUR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-11-09.md",
     "sha256": "3e4d97a68b95c0547c1a2ded6d01a75dd012d3ae0eee5cc016576e3d8ce0112b"
+  },
+  "continuation": {
+    "source_head": "4a3f6be4cf4ea0321bb5042c2969fc035479e7c2",
+    "proof_tree": "PROOF_TREE.md",
+    "new_proofs": [
+      "parts/partial-terminal-normalization.md",
+      "parts/released-terminal-gauge-directions.md"
+    ],
+    "check": "gates/partial-terminal-check.md",
+    "next_supplier": "quantitative compact coercivity for exact seven-edge two-plaquette marginal at V_O=I",
+    "source_record": "sources/partial-terminal-repo-literature-20261109.md",
+    "proof_tree_formatting": {
+      "checked_sha256": "d6073b88bcde640ec558c90f261d4a53c8eba79383a581d9367ad3b89ee5a812",
+      "published_sha256": "9950a0cc73b614741922f0b69cd51a725baa7e7b660c183f937f17233af806d8",
+      "operation": "removed one final blank line to satisfy git diff --check",
+      "exact_check": "before == after + newline; no other byte changed",
+      "checked_snapshot": "logs/su2-connected-response-20261109/PROOF_TREE-checked.md"
+    }
   }
 }

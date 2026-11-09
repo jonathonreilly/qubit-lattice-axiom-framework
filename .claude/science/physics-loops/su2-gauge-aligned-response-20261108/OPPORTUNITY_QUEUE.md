@@ -1,16 +1,22 @@
 # Next science decisions
 
-1. Write the actual coarse-conditional denominator Q as a hidden-chain integral
-   retaining its varied exterior coordinates; derive its complete four-label
-   response and determine whether the current fixed-terminal bound controls it.
-   This is the nearest unclosed term in the original normalized response.
-2. Extend the compact and chart estimates to a declared nonidentity terminal
-   class, checking how the stationary field and reader dependence change.
-   Do not assume the frozen-reference proof is uniform under that change.
-3. Test a third exact normalized transition with its actual inherited density.
-   The decisive question is whether coercivity, localization and source norms
-   remain bounded at the required scale, rather than gaining a separate finite-
-   depth theorem by allowing uncontrolled depth-dependent constants.
+The [proof tree](PROOF_TREE.md) is the complete current dependency map.
+The exact partial-terminal Q law, all fifteen conditioning terms and the
+residual component-gauge diagnostic now have mathematical research checks.
+The quantitative Q response remains open.
 
-Continuum reconstruction and the physical mass gap remain downstream. No
-success probability or percentage of mass-gap completion is assigned.
+1. Prove compact coercivity for the actual seven-edge two-plaquette marginal
+   with exterior V_O=I, or identify the precise failure of the proposed
+   estimate. Check the candidate retained-edge detours against actual means,
+   small mean norms, periodic geometry and every radial normalizer. Then
+   recheck chart/compact suppliers for that marginal and its source class.
+2. Control the nonidentity terminal backgrounds and larger conditional
+   geometries actually required for iteration. A fixed-terminal bound does
+   not bound all outer conditional means, covariances or higher cumulants.
+3. Test a third exact normalized transition with its inherited density.
+   Track coercivity, localization and source norms at the required scale,
+   instead of allowing uncontrolled depth-dependent constants.
+
+Depth/cutoff control at physical scales and a nontrivial continuum QFT with
+a positive finite physical mass remain downstream. No success probability,
+completion percentage or proof deadline is supported.

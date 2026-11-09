@@ -20,3 +20,10 @@ The broader normalized conditional requires its full log Q subtraction.
 The result is useful to that consumer and to a later blocking-stability test,
 but it does not by itself establish arbitrary terminal control, an all-depth
 renormalization estimate, continuum existence, a physical mass or TOE unification.
+
+The continuation derives the exact released-terminal marginal and its full
+four-variable conditioning identity, with a separate zero-source V_O=I
+component-gauge diagnostic. The quantitative seven-edge marginal estimate
+is the next supplier. PROOF_TREE distinguishes these exact finite identities
+from every open physical dependency; the diagram is a research plan, not a
+proved reduction to the mass-gap target.

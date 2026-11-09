@@ -1,14 +1,14 @@
-# Prepared publication entry point
+# Publication and recovery entry point
 
-Title: `[physics-loop] su2-connected-four-response bounded_theorem bounded-support`
+[PR #10149](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10149)
+is the single working PR for this lane, based on main. Its original exact
+packet was published at 4a3f6be4cf4ea0321bb5042c2969fc035479e7c2. The
+prepublication snapshot is preserved in that commit and in the external
+PREPARED_CONNECTED_RESPONSE_PR.md and prepared_connected_response_pr.json
+under Documents/Codex/sussman-alpoge-process-review-20261108/ym-mass-gap-bridge.
 
-The exact public body, primary-note hash, final commit and repository/base/head
-arguments are in the external prepared packet:
-`/Users/jonreilly/Documents/Codex/sussman-alpoge-process-review-20261108/ym-mass-gap-bridge/PREPARED_CONNECTED_RESPONSE_PR.md`
-and its adjacent `prepared_connected_response_pr.json`.
-
-The body is generated after the local commit so every GitHub proof/check link
-pins that exact commit. This file is a recovery pointer, not a claim that a PR
-has been opened. Approval covers the new exact primary note and body, not a
-new physical mass-gap claim. The proof is an author proposal with same-provider
-independent mathematical checks; formal audit remains separate.
+The owner's request to run one PR and work in it governs this continuation.
+The current proof tree, exact conditional normalization, gauge diagnostic,
+checks and open obligations belong in the same branch and PR. The external
+checkpoint records later publication heads and current PR text. No physical
+mass-gap claim or formal retained promotion is made by opening this PR.

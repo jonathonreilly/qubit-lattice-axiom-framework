@@ -2,7 +2,8 @@
 
 Date: 2026-11-09. This is an author packet with independent mathematical
 research checks. It is not a review-loop landing verdict, formal audit,
-retained-status ratification or public publication.
+retained-status ratification. The prepublication record below is preserved;
+PR #10149 was subsequently opened as recorded in the continuation section.
 
 ## Mathematical source checks
 
@@ -26,7 +27,7 @@ The separate line-by-line primary-note check is complete in
 `gates/primary-note-check.md`, binding note SHA
 `3e4d97a68b95c0547c1a2ded6d01a75dd012d3ae0eee5cc016576e3d8ce0112b`.
 The missing review-history target and unescaped table pipes were repaired.
-No public text has been posted.
+At this prepublication checkpoint no public text had been posted.
 The evidence is same-provider fresh-context checking. Reviewers disclose their
 contributions and source coverage; multiple favorable reports do not create
 independent-provider evidence or establish a physical result by themselves.
@@ -103,3 +104,63 @@ delta and every new mathematical argument were inspected. No proof source was
 altered by vocabulary cleanup. Both managed worker trees were archived only
 after their files matched the copied root artifacts; the execution lease was
 released. No editable prompt, workflow or axiom file changed.
+
+## Single-PR continuation, 2026-11-09
+
+The owner requested one mass-gap-lane PR containing the full proof tree and
+continued work within it. The prepared branch was pushed and PR #10149 was
+opened at 19:36:44 UTC from 4a3f6be4cf4ea0321bb5042c2969fc035479e7c2,
+based on main bf92a1d763030836ed55631d5d7a7ef3b288f284. Its initial body is
+preserved by the external prepared packet. No author merge occurred. Earlier
+statements above saying publication had not occurred describe the preceding
+checkpoint, not current state.
+
+Luna low performed a targeted repo/primary-literature read of the actual Q
+law and source terms. The supervisor used the unchanged selected profile
+for the residual-gauge derivation and frontier judgments; a fresh bounded
+worker at medium effort derived exact partial-terminal normalization and
+all fifteen total-cumulance partitions. The user explicitly authorized that
+execution split. Exact backend identifiers for the inherited profiles are
+not exposed. Both complete new arguments were read by the supervisor.
+
+The fresh-context checker kept the supervisor profile and reconstructed the
+component symmetry using a Ward identity, the normalized-law derivative,
+and total cumulance by finite moment-partition regrouping. Its bounded
+four-state example disproves deletion of the conditional-covariance-pair
+terms. No defect remained in either proof. The checker caught a missing
+zero-source/identity-exterior qualifier in PROOF_TREE; it was repaired and
+the final map was rechecked. The immutable continuation gate binds both
+proofs and the checked map hash. This is same-provider research checking with
+shared premises, not outside-provider confirmation or formal audit.
+
+New proofs: partial-terminal-normalization.md and
+released-terminal-gauge-directions.md. New report: gates/partial-terminal-check.md.
+The former supplies exact finite algebra, and the latter supplies explicit
+gauge/Haar directions. Neither proves the quantitative seven-edge marginal
+bound, arbitrary-background control, iteration or physical mass gap. All
+old proof and gate bytes and the primary note remain frozen.
+
+The supervisor visually inspected Brillinger pp. 215-216 after text extraction
+failed, using the PDF's embedded page images, and inspected the official
+Jaffe-Witten target. The source addendum separates this inspection from
+Luna's read record and the worker's initially unreadable PDF. No clustering
+theorem was imported based only on a literature search.
+
+This continuation changes only the same proof pack. Prompt, workflow,
+audit-authority and axiom files are unchanged. Focused source/hash/link/
+vocabulary/whole-delta checks and managed-worktree recovery are recorded
+in the updated manifest and local continuation integrity receipt. Combined
+integrated-main landing checks remain deferred until a landing is proposed.
+
+The continuation workers su2-partial-terminal and su2-terminal-check were
+archived through the managed tool after all outputs matched the root hashes;
+archival completion was observed and recovery snapshots remain available.
+The 19:37 UTC physics-loop lease was released after the checked science
+checkpoint; no numerical lease was held. The final main fetch remained at
+bf92a1d763030836ed55631d5d7a7ef3b288f284.
+
+Final whitespace validation found one extra blank line at the end of the
+proof map. It was removed after checking; byte comparison established that
+this was the only change. The manifest records the checked and publication
+map hashes separately, and the exact checked copy is preserved in local
+logs and the managed checker snapshot. No argument or proof-part byte changed.

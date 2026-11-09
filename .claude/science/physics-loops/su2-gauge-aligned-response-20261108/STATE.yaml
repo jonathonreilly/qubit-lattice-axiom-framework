@@ -1,23 +1,29 @@
 status: open
-phase: awaiting_exact_text_publication_approval
+phase: single_pr_conditional_normalization
+author_source_head: 4a3f6be4cf4ea0321bb5042c2969fc035479e7c2
 science_source_base: 1e0d3b58dcda7f83152b0bb51729260247454d65
 refreshed_main: bf92a1d763030836ed55631d5d7a7ef3b288f284
 previous_checkpoint: 55fd670ff8995427b24617b2273bd3f78b7559d9
 branch: physics-loop/su2-gauge-aligned-response-20261108
-delivery: milestone
+delivery: single_working_pr
 runtime: bounded_interactive_task
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 trace_class: upstream_support
 reachability_to_target: partially_closes
-next_action: publish the prepared single main-based PR only after approval of the exact text
+next_action: attack compact coercivity for the exact seven-edge two-plaquette marginal, then its connected response
 mathematical_check: same_provider_fresh_context
 formal_audit: not_performed
-publication: local_only
+publication: open_pr_10149
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10149
 full_compact_identity_terminal_response: bounded-support
+partial_terminal_normalization: exact_identity_checked
+released_terminal_gauge_directions: finite_model_checked
 general_coarse_conditional_response: open
 all_depth_control: open
 mass_gap_status: open
 pending_check_parts: []
-public_writes: []
+public_writes:
+  - branch_push_at_4a3f6be4cf
+  - opened_pr_10149
 prompt_files_changed: []

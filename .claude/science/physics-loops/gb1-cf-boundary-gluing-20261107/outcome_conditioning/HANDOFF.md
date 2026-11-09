@@ -31,13 +31,19 @@ non-governing research evidence. AXIOM_PROPOSAL.md now begins with the owner
 hold. metadata_delta.json verifies that this status insertion leaves the exact
 reviewed mathematical wording unchanged.
 
-The complete joint-model proof remains open. JOINT_MODEL_OBLIGATION.md states
-the next finite benchmark: allocate settings, activation, readout and all
-pointer/control resources, provide one permitted local law, and verify every
-proposed clause jointly at all legal intermediate histories. The current
-six-qubit dynamic carrier deliberately excludes those apparatus resources.
-The scope check is not a no-go or unique-ontology claim. Do not update axioms,
-open an axiom PR, or claim that guard PASS discharges this model-completion test.
+The owner then clarified the objective: simple principles for base reality,
+with laws emerging from them, eventually a TOE. The proposed quantum foundation
+is deferred. Completing JOINT_MODEL_OBLIGATION.md would check compatibility of
+that supplied model; it would not derive quantum mechanics from base principles
+or justify the proposal's necessity/minimality. The conditional mathematics and
+its original evidence remain unchanged.
+
+The active next investigation is the algebra-to-record probability bridge:
+which physical probability constraints follow from the existing structure, and
+which operational identifications or consistency conditions are additional
+inputs? Reuse the checked law-freedom witnesses at their precise scope. A derived
+density-matrix predictor need not be an additional physical state. No axiom
+change, new axiom PR, or quantum-law derivation is claimed by this checkpoint.
 
 The science PR remains open and ready for research review; no merge or audit
 is part of this milestone. The only editable task-prompt file changed is the

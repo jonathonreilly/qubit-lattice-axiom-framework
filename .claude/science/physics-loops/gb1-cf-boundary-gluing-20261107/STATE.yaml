@@ -1,4 +1,4 @@
-goal: Permanent outcome formation, conditioning and proof before any axiom revision
+goal: Simple principles for base reality, with physical laws derived toward a TOE
 operation: bounded research
 base: 1e0d3b58dcda7f83152b0bb51729260247454d65
 instruction_branch: 56c5c0ab64f532c5784e895b2f9aa6894fa334e0
@@ -11,7 +11,8 @@ actual_current_surface_status: conditional-support
 target_claim_type: bounded_theorem
 trace_class: frontier_discovery
 reachability_to_target: unknown_frontier
-active_route: Local absorbing quantum instruments and record-conditioned predictive state
+active_route: Examine the algebra-to-record probability bridge; quantum instruments remain a conditional
+  comparison model
 bounded_result: Conditional local formation, permanence and quantum statistics checked; full joint model
   of the candidate axiom package remains open
 independent_check: Fresh restricted-context hand proof plus exposed source/delta comparisons; same model
@@ -27,12 +28,12 @@ failed_routes: data-first computational recording erases the phase and dephased 
   future pointers leave dirty work; a pure-clean binary pointer does not realize the six-edge CP mixture;
   arbitrary unknown pre-herald input does not factor through fixed R; unequal outcome hazards retain no-event
   age; initial fair fallback was constant at T=0 and is repaired
-native_axiom_bridge: Non-governing candidate only; owner requires proof before axiom change; all four
-  governing edits restored
-framework_stance: axioms and gauge model are hypotheses; compare alternatives rather than protect a desired
-  framework
-next_action: Prove a complete allocated joint model of all candidate clauses before any axiom update;
-  see outcome_conditioning/JOINT_MODEL_OBLIGATION.md
+native_axiom_bridge: Quantum axiom package deferred; governing axioms unchanged; model compatibility alone
+  would not justify adoption
+framework_stance: Seek the right economical foundation and derived laws; preserve counterexamples; do
+  not retrofit axioms to a desired quantum formalism
+next_action: Separate consequences of current base principles from supplied quantum assumptions; isolate
+  the exact probability-law bridge using the existing checked counterexamples
 checkpoint: outcome_conditioning/HANDOFF.md
 verification: outcome_conditioning/verification.json
 recovery: outcome_conditioning/HANDOFF.md; frozen PRIMARY, checked conditional RESULT, exact streams,
@@ -75,3 +76,7 @@ axiom_revision_authorization: 'Owner correction: do not update the axiom until t
 axiom_proposal_branch: codex/quantum-record-formation-20261109 remains clean at main; uncommitted proposal
   preserved as research snapshots
 axiom_proposal_pr: null
+owner_goal_clarification: Simple principles for base reality and laws or rules that emerge from them,
+  eventually a TOE
+deferred_comparison_obligation: 'outcome_conditioning/JOINT_MODEL_OBLIGATION.md: full model of the proposed
+  quantum package, not the active foundation-derivation target'

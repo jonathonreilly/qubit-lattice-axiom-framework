@@ -285,3 +285,32 @@ non-governing candidate snapshots and restored to main. The immediate remaining
 test is joint satisfaction of every proposed clause by one allocated finite
 model; see outcome_conditioning/JOINT_MODEL_OBLIGATION.md. It must include
 physical controls, readout and record compatibility, not merely the output law.
+
+## Base-reality objective clarified by the owner, 2026-11-09
+
+Owner: "the goal is the simple set of principles for base reality and the laws
+or rules that emerge from them, eventually building a TOE".
+
+The research objective is an economical set of independently motivated base
+principles with physical laws derived from them. Reproducing quantum mechanics
+by adding its state, probability and instrument formalism to the foundation
+does not meet that objective. The tested quantum construction remains useful
+as a conditional comparison model. Its proposed foundation package is deferred;
+even a complete joint model would establish compatibility, not the desired
+derivation or the necessity/minimality of that package.
+
+Preserve the existing axioms while investigating what their actual structure
+forces. Keep a physical state separate from a derived mathematical predictor;
+the current work has not proved that an independent density-state variable must
+be added to the record ontology. Use the already checked law-freedom witnesses
+at their exact scope. They show underdetermination of the tested constraints,
+not an automatic justification for replacing the foundation with quantum rules.
+
+Next investigation: isolate the missing bridge from the supplied local algebra,
+neighborhood admissibility and permanent records to physical probabilities.
+Determine which operational identifications and consistency conditions can be
+derived and which remain additional inputs. Any new base principle must have
+independent motivation and consequences beyond matching the benchmark that
+suggested it. All framework choices remain testable hypotheses; neither the
+current framework nor a desired quantum result is protected from refutation.
+No axiom edit or adoption is authorized by this clarification.

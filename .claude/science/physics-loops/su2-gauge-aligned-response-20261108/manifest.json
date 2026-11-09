@@ -19,6 +19,13 @@
       "pr": 10149,
       "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10149",
       "role": "previous published checkpoint; current exact head is recorded in external checkpoint after push"
+    },
+    {
+      "action": "same_pr_coercivity_continuation_published",
+      "head": "fbdfb3c1b8852e5de302fab6f0f7cfc70ba04cac",
+      "pr": 10149,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10149",
+      "role": "previous published checkpoint; current exact head recorded externally after push"
     }
   ],
   "pinned_inputs": [
@@ -114,32 +121,34 @@
     }
   ],
   "output_hashes": {
-    "APPROACH_REGISTRY.md": "65c17ee8046d2fed7c877011cd29efcc023fc3b65b41ab395584bf1190dfddef",
-    "ARTIFACT_PLAN.md": "ea00a0ba50cb54f2d70d3715a56ba4d7956e03499ae9daf1843dea330a6d403a",
-    "ASSUMPTIONS_AND_IMPORTS.md": "54890f301fd7006a457620840c6bf8d4338a3a59eacacd90b7c7506c60b2be76",
-    "CLAIM_STATUS_CERTIFICATE.md": "31d2820519a257f8d953a9ceac3e3506c8fb175b217fb03686576164e2ea3215",
-    "GOAL.md": "224b2917efc837dea310a9de0fefa37527287db503441a389b238df7eef16e31",
-    "HANDOFF.md": "2d168d7a8ca76168bac74d356892cf7b9a933c9953bb71c3ed7b40f60fa120c4",
-    "LITERATURE_BRIDGES.md": "2dc7c75c94d3a055bfb2f4b0de4bb506a412eeb40923c142b4c1cf209f0b59e2",
+    "APPROACH_REGISTRY.md": "a5ed66860b3b946d0c05d1d56da75942fe707ab5276fd6756f357abd048ccfa7",
+    "ARTIFACT_PLAN.md": "35111bc7f9c78535cb91d24cc8d97adae2a005b80faf12527965e84e7d04c0cd",
+    "ASSUMPTIONS_AND_IMPORTS.md": "11bc03df7f31f2932a3e57ca819957460758e7581d92f8d88edb36777abe526c",
+    "CLAIM_STATUS_CERTIFICATE.md": "434b4cd7903c6bf89106ebf79ca04edd225f8bd5454a1e34ac4e12f7e9b4db5e",
+    "GOAL.md": "37b69621ad3aa2752488f4266d8b176a87546a80fbdb0278208e157288d211ea",
+    "HANDOFF.md": "fd2f1afcdaa0a8a91fb412b7e28c6b29b98f5600c7a4a7b9d07c8a20e84720b4",
+    "LITERATURE_BRIDGES.md": "a04d7cbecec88ea80833e1455b332828cd12a4fc40c85d39d3f3aa28251a792a",
     "NO_GO_LEDGER.md": "930614e6a872f5f8208fc36d4c738eafb6c1e8b5df2de2542e963c2a29247b1d",
-    "OPPORTUNITY_QUEUE.md": "228b8b1a4646645d68433a1c25d550f8f6413faffd51c7963391f38febe8f4a0",
-    "PREPARED_PR.md": "6dd3bec29d2b11d8a5cd0df3558816ed9cc5909c800e7e93c66f4dc3c9fc76eb",
-    "PROOF_TREE.md": "141d59926631c69ac1815dc1dc690c00364fec4a291c1b93316ef9dafeec72eb",
+    "OPPORTUNITY_QUEUE.md": "bd42be1197c60e646a686e4928d06cf2a1bb218eed3eac77195a03ec99ed6ea3",
+    "PREPARED_PR.md": "6560b26019b664fd3fb8fef477cb96dc1ea98411bfd04f8bec7a57ce6e88c34a",
+    "PROOF_TREE.md": "27f8019f8823524b5248ce65cf8f8599e1c91888f42a3f1b7ec8258f2b0a99e5",
     "PR_BACKLOG.md": "9b999e0fe55eb2ba08cd779dda9becd33e001d1c528e0629949ba1003bea6657",
-    "REVIEW_HISTORY.md": "12933379f57f3d4ae2792156b873bbb5a9fe50c81aad322a55232817d4ca1495",
-    "ROUTE_PORTFOLIO.md": "6fd3b2a612ecf142e7f2b608f6daac146605157fb840889b94c8e5690a7fad58",
-    "SOURCE_MAP.md": "ec31f4f54326b112f72c4e97051bcae4e79629ae1d203b201d4cdf4ec5f3cd6a",
-    "STATE.yaml": "1d3293155e723502499f8a0b48831279fc8f2f883d48522a7cf72794424a9b9a",
-    "TRACE_GATE.md": "49e6b6121fdbe21e58b312a3c40ebec364ce259c828ab1a8a12175a2b21bf54d",
+    "REVIEW_HISTORY.md": "febcea9f76632cc457dd47e1e2a81a04a5891420253c32364af9bb5d017b51be",
+    "ROUTE_PORTFOLIO.md": "e69737e5026dfedec1021c0e966034ced4a14c4360c65f46936e9c115be390e1",
+    "SOURCE_MAP.md": "971755cccf44f98d4837424ee45b5613bd0e349121a4d89f4d69c72a23ee2609",
+    "STATE.yaml": "518d36fa0a17fb91b6c5592d739e10c20eb3fb326c981b2049858f2df4175582",
+    "TRACE_GATE.md": "282d345cefedcbeae5e3f931cc5a5e4bbeb9be46bbb6851c16347734f1bab327",
     "gates/arbitrary-boundary-moments-check.md": "d4e7ae28bc3bcfedb4286dd9ef93c8bc5deb03b2a479ec3bb0efe9a68f85fdb3",
     "gates/buffered-core-ratio-check.md": "a77a82e7a03f800547d95ea2728ae34e5c5afb765ba1c7d7a4d6a824ca8d6b32",
     "gates/density-forest-source-check.md": "fdc8beca9170eaf8e30f15ecbf369d6c817746caaac6ca55370fb7c6ef1fe18f",
+    "gates/fable-marginal-regional-check.md": "3171fb0f0b2ebe55b707b0941219f228f94b4dfba4c9f9258287e7ac4f67e7ef",
     "gates/final-scope-and-local-tail-check.md": "de0b490627aba42ec3c75f73c43116bc1982b7090ce44de51b49bca9fe43cb0c",
     "gates/forest-flat-check.md": "6d6e3a13c89bdf7fd70bae95d616669848078212ce35b40d871e46a436bcd988",
     "gates/four-response-independent-check.md": "9eaa67d4f0d93db3578d01a12eca6741449291e9c04569129e5d89a0025a1860",
     "gates/frozen-gaussian-producers-check.md": "fb4f53b921ba57d94acf379e4c1622ed04616e1cd9409b3e61871b25876ca9fa",
     "gates/full-connected-four-response-check.md": "e714f72f4788c2882b31ecccff3cc87686be71915614f3b6ae56c48964045306",
     "gates/global-chart-sector-ratio-check.md": "3272bdcc6cf517f032c80c2b83760ba91892b611ccf05584efac216ea70d5ede",
+    "gates/marginal-regional-chart-check.md": "d2e2d1761e35492b48ef85a110cdda1551f0fd6a408c6e100dd23d3fea89d6b7",
     "gates/original-source-four-response-check.md": "4a41cdd580dbee3db3ddd9d7376ac435f1554cd2f61275b8df96f98abd262f6d",
     "gates/partial-terminal-check.md": "a0b9982dbddd5934de8282dcfacf3300e60978b2eee1c3225d8bc8c1bb7ce5b8",
     "gates/primary-note-check.md": "eb304d67c25153dc053f33531dfc1b83a92be0852faae8ec038a2c74463cb98f",
@@ -160,6 +169,10 @@
     "parts/global-chart-sector-ratio.md": "b757aa5ddbec0a1a96cb61d2ee531a4e6571712d97eab53bfae09703c596cede",
     "parts/local-conditional-tail.md": "cf47acdfe0deea09fe49f7b08d90d45a3aac0df3251062ba4f67f566e639072d",
     "parts/local-relative-coercivity.md": "6b7c3a0eba818566fad0cb34f13998a3cf98de632761d7942ca527c51c80cb37",
+    "parts/marginal-nonlinear-chart-estimates.md": "b1e26baa37cf1dc47331d9a98a834afda5e7634d62f31df50600fd321fc45cb7",
+    "parts/marginal-normalized-regional-coercivity.md": "bd3fa8b5eb989c7718ad5d760a913e33166f3e9edcf52b9f17f82cbd809ca255",
+    "parts/marginal-regional-moments-and-ratios.md": "b2d3d9bedfb52b11056788e1f72cd14c4f9846c733c86ee424c2240f13db647f",
+    "parts/marginal-regional-relative-coercivity.md": "2d142414fb4992c2a1e907d42d15ca9f7164ee6e90c892d8c3d529b39e297385",
     "parts/nonlinear-chart-response.md": "5edacc8ee78d54b7fb853fb34da3d8cceffd8eb0e476f8510d15048f8f10f2d1",
     "parts/original-source-four-response.md": "b305c708b5736f6dca707008bee7f3ceeb648b02bced785a82e5d1b3fa593f79",
     "parts/partial-terminal-normalization.md": "722e622dd64763e7f85461ef037f78810ec1c96d5bb71ddc7d60647c858b9867",
@@ -174,13 +187,15 @@
     "parts/zero-shift-marked-density-forest.md": "d44adc900daf7ac665e502ac950230a8739b120d1a2be4940fd292ea9a09087f",
     "sources/connected-response-literature-scan-20261109.md": "3826e5a46894f25f168992304c71658114668829d45649a8b9eea0b903d5553d",
     "sources/connected-response-repo-scan-20261109.md": "0bd2ccd95ef0ee66378b258c162bedf47dd8b8f7463ba374070fcb5deb1cf122",
+    "sources/fable-marginal-regional-approach-20261109.md": "51ede87b4ee11dfb4258a8665d64872e062b41ba09dc81cf88086d764b9d5dfb",
     "sources/fable-two-plaquette-approach-20261109.md": "97dfdcf67d353e80b9f6380639c040889cf5bac445f771da7fded467159e074c",
     "sources/frozen-forest-literature-addendum-20261109.md": "238180b21668096a1715d913d9e602543011ad799fd66590316039cf1c130bcd",
+    "sources/marginal-regional-chart-prior-art-20261109.md": "0f2365732c9c48e923a16bf0a78fb7821776f3e77fe9102c0812573c0f6a7c76",
     "sources/partial-terminal-repo-literature-20261109.md": "f4feaf5f075f97fb77bc3a3ce9ceb054d92208bfd94d17a6f8dac7c08031a02b",
     "sources/two-plaquette-coercivity-prior-art-20261109.md": "a22b57e45cb46a02a5e6421d76a4d5167c7a9925c27a4d8af45fe23e64bf358d"
   },
-  "frozen_at_utc": "2026-11-09T20:42:17.969025+00:00",
-  "mathematical_check": "Same-provider fresh-context independent mathematical derivations; all 24 current proof parts and both primary-note hashes bound by reports. No formal audit. Fable 5.2 approach advice is separately recorded and is not certification of the files.",
+  "frozen_at_utc": "2026-11-09T21:30:33.115570+00:00",
+  "mathematical_check": "Fresh inherited-profile host derivations/checks cover four new proofs and final primary/map; separately scoped fresh Fable 5.2 max check covers three pre-clarification candidates. 28 proof parts and three primary notes have exact current hash coverage in reports. Supplied ancestors are reused at unchanged bytes, not all recertified. No formal audit.",
   "managed_worker_archives": [
     {
       "root": "/Users/jonreilly/.codex/worktrees/su2-gaussian-chain-worker/Physics",
@@ -227,13 +242,31 @@
       "attachment_id": "01a1c209-569a-7581-8537-09c8541365bf",
       "status": "archived",
       "copied_outputs_verified": true
+    },
+    {
+      "root": "/Users/jonreilly/.codex/worktrees/su2-regional-luna/Physics",
+      "attachment_id": "01a1c234-5571-7142-ba62-529b0f85e0ef",
+      "status": "archived",
+      "copied_outputs_verified": true
+    },
+    {
+      "root": "/Users/jonreilly/.codex/worktrees/su2-marginal-chart/Physics",
+      "attachment_id": "01a1c234-6b5e-7f91-ae31-b6b7080ff910",
+      "status": "archived",
+      "copied_outputs_verified": true
+    },
+    {
+      "root": "/Users/jonreilly/.codex/worktrees/su2-marginal-regional/Physics",
+      "attachment_id": "01a1c234-8519-7512-ac76-26d8bf485e32",
+      "status": "archived",
+      "copied_outputs_verified": true
     }
   ],
   "validation": {
     "vocabulary_violations": 0,
     "frozen_proofs_unchanged_by_lint": true,
     "all_local_links_resolve_to_proposed_tracked_regular_files": true,
-    "mathematical_sources_bound_by_report_hashes": 26,
+    "mathematical_sources_bound_by_report_hashes": 31,
     "complete_delta_whitespace_clean": true,
     "numerical_jobs": 0,
     "new_runner": false,
@@ -243,14 +276,27 @@
     "execution_lease": "released",
     "prompt_files_changed": [],
     "old_proofs_and_gates_unchanged": true,
-    "local_markdown_links_checked": 117,
-    "frozen_previous_parts_and_gates": 38,
-    "current_new_scope_files_exact_hash_match": 4,
-    "whole_pr_files": 67
+    "local_markdown_links_checked": 139,
+    "frozen_previous_parts_and_gates": 41,
+    "current_new_scope_files_exact_hash_match": 6,
+    "whole_pr_files": 76,
+    "old_proofs_gates_and_primary_notes_unchanged": 43,
+    "explicit_math_not_link_exclusions": [
+      {
+        "file": ".claude/science/physics-loops/su2-gauge-aligned-response-20261108/parts/marginal-nonlinear-chart-estimates.md",
+        "expression": "[h(t r)](0)",
+        "reason": "derivative evaluation at zero, read explicitly"
+      },
+      {
+        "file": ".claude/science/physics-loops/su2-gauge-aligned-response-20261108/parts/marginal-nonlinear-chart-estimates.md",
+        "expression": "[-log j](0)",
+        "reason": "derivative evaluation at zero, read explicitly"
+      }
+    ]
   },
   "refreshed_main": "bf92a1d763030836ed55631d5d7a7ef3b288f284",
-  "previous_local_checkpoint": "551840d63d189573688c763445b2eff9f99559d1",
-  "full_response_scope": "Full compact finite two-step terminal-I distinct-link numerator response; original-source conditional covariance retained. Exact partial-terminal Q algebra and gauge diagnostic checked. Seven-edge identity-exterior compact coercivity and actual normalized finite-u identity precision checked. Quantitative marginal response, nonidentity control, iteration and physical gap remain open.",
+  "previous_local_checkpoint": "fbdfb3c1b8852e5de302fab6f0f7cfc70ba04cac",
+  "full_response_scope": "Full compact finite two-step terminal-I distinct-link numerator response; original-source conditional covariance retained. Exact partial-terminal Q algebra and gauge diagnostic checked. Seven-edge identity-exterior compact coercivity and actual normalized identity precision checked. New marginal regional complete-Haar-energy coercivity, all-u small-chart covariance, arbitrary-exterior radial moments and full buffered ratio jets. Marginal connected spatial response, compact nonidentity control, iteration and physical gap remain open.",
   "publication": "open PR #10149; same-branch continuation",
   "primary_note": {
     "path": "docs/SU2_CONNECTED_FOUR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-11-09.md",
@@ -279,6 +325,10 @@
     {
       "path": "docs/SU2_TWO_PLAQUETTE_MARGINAL_COERCIVITY_BOUNDED_THEOREM_NOTE_2026-11-09.md",
       "sha256": "3ccad623a10d425a72fdba6aaf63cd41910e687bd1e89d16084b7c56e3f42403"
+    },
+    {
+      "path": "docs/SU2_MARGINAL_REGIONAL_AND_CHART_ESTIMATES_BOUNDED_THEOREM_NOTE_2026-11-09.md",
+      "sha256": "487b639be4d9ed3138e7abcaf74daab0aa1f0249a4ecf30436e370ade07196d4"
     }
   ],
   "coercivity_continuation": {
@@ -306,5 +356,52 @@
     },
     "next_supplier": "actual marginal regional/chart estimates and complete connected fourth response; compact coercivity alone is insufficient",
     "local_logs": "logs/su2-two-plaquette-coercivity-20261109/"
+  },
+  "regional_chart_continuation": {
+    "source_head": "fbdfb3c1b8852e5de302fab6f0f7cfc70ba04cac",
+    "status": "bounded-support",
+    "scope": "Actual seven-edge two-plaquette marginal; complete normalized regional Haar-energy coercivity under small hidden collar and V_O=I, all u>=1; all-u small-chart Hessian/covariance with every reader small; arbitrary quotient-exterior radial profiles and large-u buffered ratio jets with complete source covariance.",
+    "new_proofs": [
+      "parts/marginal-nonlinear-chart-estimates.md",
+      "parts/marginal-normalized-regional-coercivity.md",
+      "parts/marginal-regional-moments-and-ratios.md",
+      "parts/marginal-regional-relative-coercivity.md"
+    ],
+    "primary_note": {
+      "path": "docs/SU2_MARGINAL_REGIONAL_AND_CHART_ESTIMATES_BOUNDED_THEOREM_NOTE_2026-11-09.md",
+      "sha256": "487b639be4d9ed3138e7abcaf74daab0aa1f0249a4ecf30436e370ade07196d4"
+    },
+    "host_check": {
+      "path": "gates/marginal-regional-chart-check.md",
+      "sha256": "d2e2d1761e35492b48ef85a110cdda1551f0fd6a408c6e100dd23d3fea89d6b7",
+      "coverage": "all four final proofs, primary note and map; independent pre-candidate derivations; inherited supervisor model/effort, exact backend identifiers not exposed"
+    },
+    "fable_check": {
+      "path": "gates/fable-marginal-regional-check.md",
+      "sha256": "3171fb0f0b2ebe55b707b0941219f228f94b4dfba4c9f9258287e7ac4f67e7ef",
+      "model": "claude-fable-5-2",
+      "effort": "max",
+      "status": "completed",
+      "coverage": "first three original frozen candidates; final clarifications checked by host; fourth proof and final primary/map not supplied"
+    },
+    "proof_tree_sha256": "27f8019f8823524b5248ce65cf8f8599e1c91888f42a3f1b7ec8258f2b0a99e5",
+    "source_record": "sources/marginal-regional-chart-prior-art-20261109.md",
+    "approach_consultation": {
+      "record": "sources/fable-marginal-regional-approach-20261109.md",
+      "model": "claude-fable-5-2",
+      "effort": "max",
+      "status": "completed",
+      "role": "advice; complete-kernel energy idea credited; separate from proof certification"
+    },
+    "next_supplier": "match exact marginal source-marked compact decomposition, regional chart-sector comparison and connected normalized-density forest; then complete connected fourth response",
+    "local_logs": "logs/su2-marginal-regional-chart-20261109/",
+    "publication_formatting": {
+      "path": "parts/marginal-normalized-regional-coercivity.md",
+      "checked_sha256": "4e858ca74ea12b7f5a34ef0ac459526268120c30c8061d1ad633bb720e4ec2f8",
+      "published_sha256": "bd3fa8b5eb989c7718ad5d760a913e33166f3e9edcf52b9f17f82cbd809ca255",
+      "operation": "remove one trailing ASCII space at line 259",
+      "exact_check": "before.replace(single exact line with trailing space, same line without space) == after; one byte removed; all other bytes unchanged",
+      "checked_snapshot": "logs/su2-marginal-regional-chart-20261109/marginal-normalized-regional-checked.md"
+    }
   }
 }

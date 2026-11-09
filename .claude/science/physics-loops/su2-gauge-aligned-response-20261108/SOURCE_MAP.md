@@ -127,3 +127,37 @@ The [Fable 5.2 consultation record](sources/fable-two-plaquette-approach-2026110
 states its exact input boundary, model/effort and disposition. Independent
 approach agreement is recorded as advice and is not a formal audit, an
 imported theorem or a check of files the consultant did not see.
+
+## Marginal regional and nonlinear chart continuation
+
+Starting head: fbdfb3c1b8852e5de302fab6f0f7cfc70ba04cac. Main remained
+bf92a1d763030836ed55631d5d7a7ef3b288f284 on refresh. Luna low read the
+existing actual-law work and checked primary literature before proof
+assignments. The [source record](sources/marginal-regional-chart-prior-art-20261109.md)
+separates the open-PR two-hidden-layer theorem from the landed one-step
+boundary identity; labels alone do not promote either to an imported result.
+The compact-marginal constant and exact identity Hessian are supplied lemmas.
+The old chart, regional-relative, arbitrary-boundary and buffered-ratio
+arguments are methods re-established for the deleted law, not copied claims.
+Their exact hashes and complete relevant reads are in the new proofs.
+
+The supervisor also read Bauerschmidt–Bodineau's 2019 Appendix A in the
+[primary text](https://d-nb.info/1202686133/34), and the title/abstract of
+[Kolesnikov–Milman](https://arxiv.org/abs/1310.2526). The former has a
+whole-Euclidean-space covariance contract; the latter's boundary results
+are comparators. Neither is used to bypass the Cartesian-cube mixed-domain
+proof. Luna's broader search coverage is recorded separately. Here kappa is
+fixed and u varies; no physical running law or large-kappa limit is inferred
+from comparative literature language.
+
+The [Fable approach record](sources/fable-marginal-regional-approach-20261109.md)
+credits its complete-kernel energy suggestion. The fourth new proof checks
+uniform global Lipschitz and local C3 bounds for the actual finite-u family;
+no compactness of the unbounded u-interval or globally bounded mean-zero
+Hessian is presumed. The host checker independently derived this extension
+before opening its author file. A separate fresh Fable session read the two
+supplied lemmas and first three complete new proofs; its exact coverage and
+minor-finding dispositions are in [the external check](gates/fable-marginal-regional-check.md).
+The [host check](gates/marginal-regional-chart-check.md) covers all four final
+proofs and the primary/map surfaces. These are research checks under pinned
+premises, not independent recertification of every ancestor or formal audit.

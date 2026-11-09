@@ -7,8 +7,8 @@ open nodes form a proved reduction of the mass-gap problem or an exhaustive
 list of every lemma a continuum construction will need.
 
 The present results are finite two-step posterior decay with terminal field
-fixed to identity, and compact coercivity for the seven-edge two-plaquette
-marginal with identity exterior. Their exact checking records are linked
+fixed to identity, and compact coercivity plus regional/chart estimates for
+the seven-edge two-plaquette marginal. Their exact checking records are linked
 below; they do not constitute formal audit or retained status. There is no proved physical
 mass gap and no evidence-based completion percentage or delivery date.
 
@@ -33,6 +33,7 @@ flowchart TD
   B[Full compact identity-terminal response]
   Q[Exact partial-terminal law and full cumulance identity]
   K[Seven-edge compact coercivity and actual flat precision]
+  U[Marginal nonlinear chart, regional energy, moments and ratio jets]
   D[OPEN: quantitative two-plaquette denominator]
   V[OPEN: required nonidentity terminal control]
   T[OPEN: third transition and inherited-action closure]
@@ -50,9 +51,11 @@ flowchart TD
   E --> Q
   R --> K
   Q --> K
+  K --> U
+  Q --> U
   B -. candidate input .-> D
   Q -. identifies terms .-> D
-  K -. requires marginal chart and compact estimates .-> D
+  U -. requires exact compact composition and connected cancellation .-> D
   D -. research route .-> T
   V -. research route .-> T
   T -. unproved iteration .-> S
@@ -119,6 +122,10 @@ all-depth, continuum, or physical spectral control.
 | Q-geometry | [Released terminal gauge directions](parts/released-terminal-gauge-directions.md) | Explicit residual component-gauge symmetry and precision eigenvectors on the unchanged forest slice. Fresh-context proof check completed; see the separate report below. |
 | Q-coercivity | [Seven-edge compact estimate](parts/two-plaquette-compact-coercivity.md) | Recovers all seven missing constraints through an unused coordinate direction, with positive local discrepancy forms and volume-uniform coefficient bounds. Identity exterior, zero sources, all compact configurations. |
 | Q-precision | [Actual normalized marginal Hessian](parts/partial-terminal-normalizer-hessian.md) | Exact finite-u Hessian for arbitrary deletion, conditional coercivity transfer, and its application to this seven-edge set. Every surviving radial normalizer and coordinate-Haar term is retained. |
+| Q-chart | [Marginal nonlinear chart](parts/marginal-nonlinear-chart-estimates.md) | Actual finite-u convexity, finite-order derivatives and weighted covariance on fixed Cartesian cubes and principal restrictions, with all readers small. Includes a direct cube-corner/mixed-domain argument. |
+| Q-relative | [Marginal regional relative energy](parts/marginal-regional-relative-coercivity.md) | Small hidden-reader collar, measurable stationary leading field, exponential penetration, all-compact relative coercivity and cap upper bound. This leading-energy statement does not assert a finite-u normalized-action minimum. |
+| Q-normalized | [Complete normalized regional energy](parts/marginal-normalized-regional-coercivity.md) | Uniform in all u>=1: the actual Haar-density mode, exponential penetration, global compact relative coercivity and cap upper bound under a small hidden collar. Also strengthens the chart Hessian bound to u c_J/2+1/2 for all u>=1 on a smaller cube. |
+| Q-regional | [Marginal moments and buffered ratios](parts/marginal-regional-moments-and-ratios.md) | Arbitrary quotient exterior, complete surviving factors, radial-profile interior moments and full two-source/two-distinct-boundary jets of the buffered whole-core-rough correction. It is not an all-good-chart or spatial connected estimate. |
 | Q-bound | Not yet proved | Quantitative connected four-response for the actual marginal with the seven-edge union of two adjacent plaquettes integrated and exterior terminal links held. |
 
 [The separate continuation check](gates/partial-terminal-check.md) reconstructs
@@ -131,6 +138,13 @@ Historical author headers remain frozen; the gate records subsequent checks.
 The new bound is uniform in volume, pair placement/orientation and arbitrary
 internal trees, including zero means and m=3 seams. It closes the named
 compact supplier for this geometry; it is not a connected-cumulant estimate.
+
+The subsequent [regional/chart primary note](../../../../docs/SU2_MARGINAL_REGIONAL_AND_CHART_ESTIMATES_BOUNDED_THEOREM_NOTE_2026-11-09.md)
+composes the four new suppliers above. Their exact mathematical and claim-
+surface checks are indexed in REVIEW_HISTORY. Compact regional estimates
+fix terminal exterior I; only the chart theorem allows a small nonidentity
+terminal neighborhood. General original sources keep their joint orbit
+integral and conditional covariance in the regional ratio derivatives.
 
 If both varied links lie in the exterior, the log-conditional response
 subtracts a fourth cumulant under a different hidden marginal. The exact
@@ -156,14 +170,18 @@ and actual identity Hessian just established on the unchanged forest slice.
 The next theorem is a volume-uniform summable bound for the complete fourth
 cumulant of this marginal, with both differentiated terminal links in O.
 
-Before invoking the earlier response architecture, re-establish its local
-nonlinear chart, regional relative-energy and source-marked compact
-suppliers for this exact deletion. The detour comparison has a finite
-recovery stencil, but a global energy bound alone does not prove regional
-ratios or connected logarithms. Every first-layer kernel, retained terminal
-kernel and radial normalizer must stay explicit. The source class, actual
-readers and full orbit conditional covariance must be carried through the
-estimate; the fifteen-term identity remains exact bookkeeping, not a bound.
+The actual marginal now has local nonlinear-chart control, regional relative
+coercivity for the complete normalized energy, arbitrary-exterior radial
+moments and complete buffered ratio jets.
+Next match the source-marked compact decomposition and normalized density-
+forest machinery to this deleted law, including any regional chart-sector
+comparison they require. The ratio's good event is the complement of an
+entire rough core, not the all-good chart, and overlapping buffers do not
+factorize. Local rarity and ratio jets do not themselves prove a connected
+logarithm. Every first-layer kernel, retained terminal kernel and radial
+normalizer must stay explicit. Carry the source class, actual readers and
+full orbit conditional covariance through the connected cancellations; the
+fifteen-term identity remains exact bookkeeping, not a bound.
 
 This local success still leaves the class of larger
 conditionals and terminal backgrounds needed for iteration to be specified

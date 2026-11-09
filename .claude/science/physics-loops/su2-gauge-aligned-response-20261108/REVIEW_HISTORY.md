@@ -230,3 +230,88 @@ verification limits. All worker outputs were copied and hash-matched before
 managed archival. The science lease was released after the completed
 mathematical check. Integrated-main landing checks and formal audit remain
 separate; this publication continues the same open PR without merging it.
+
+## Marginal regional and nonlinear chart estimates, 2026-11-09
+
+Source head fbdfb3c1b8852e5de302fab6f0f7cfc70ba04cac; current main remained
+bf92a1d763030836ed55631d5d7a7ef3b288f284. The owner requested this attack
+in the same PR, Luna repo/literature checks first, bounded proof workers and
+Fable 5.2 approach tips. Current-main repository instructions were used;
+installed distribution copies differed and were not substituted. No new PR,
+physical axiom, editable prompt, workflow or audit-authority file was added.
+
+Luna low read the closest actual-model proofs and primary sources before
+delegation. Its corrected record distinguishes landed one-step definitions
+from open-PR two-hidden-layer results and records precise bibliography/read
+limits. The supervisor read the old nonlinear, relative-energy, interior-
+moment and buffered-ratio proofs in full, plus direct primary-literature
+windows. No theorem with unmatched whole-space/smooth-boundary or influence
+hypotheses was imported. No novelty or exhaustive-search claim is made.
+
+Three bounded medium-effort proof workers, in managed worktrees, wrote the
+actual marginal chart, regional leading-relative and radial-profile/ratio
+proofs. The supervisor read the complete changed arguments, retaining the
+selected profile for decisive judgments. A fresh host checker first derived
+regional extension-by-identity, cube-domain, radial normalization and source
+quotient discriminators from the supplied compact/Hessian lemmas. It then
+read all three author files and necessary exact path/reader definitions.
+Its independent partition enumeration gives b=(2,6,26,150) and C4=5404.
+One-dimensional truncated Gaussians, an exact orbit-sign example and a
+normalized Bernoulli ratio distinguish the actual formulas from plausible
+omissions. No material mathematical error was found.
+
+The requested Fable maximum-effort approach consultation completed using
+observed claude-fable-5-2 with no tools. It saw existing methods, not new
+proofs. Its complete-kernel-energy idea led to a fourth medium-effort bounded
+proof: exact regional Haar-density mode/relative coercivity and an all-u
+small-chart strengthening. The host checker derived the formula and uniform
+bounds before reading this fourth file. Its mean-zero Hessian-growth and
+Haar-versus-Lebesgue-mode discriminators check the stated limits. The
+supervisor also reconstructed these arguments; the extension uses uniform
+bounds, not a compact-u parameter assertion.
+
+A separate fresh-context Fable maximum-effort call checked the two supplied
+lemmas and three original candidates. It found no load-bearing error and
+recomputed the cube domain, compact tangent-proxy cancellation, same-profile
+tower and 5404 coefficient. It did not read the fourth proof. Its minor
+reader/scope comments produced explicit Haar-reader and chart-expectation
+wording; the already verified 5L-4 path count is now written out. A constant
+factor is absorbed in K, and ineffective buffer constants remain explicit
+limitations. The original reviewed snapshots and final exact deltas are
+preserved. This provider-diverse research check is not a formal audit.
+
+The host checker read the full primary note and proof map. It corrected an
+unsupported negative statement about the leading-energy minimum: the proof
+does not assert equality with the normalized minimum, but does not prove
+inequality either. The final map says precisely that. The host report also
+binds the final chart clarification and refreshed source pin in the fourth
+proof. All earlier proof parts, gates and both previous primary notes remain
+byte-identical to the starting head.
+
+The final evidence is in gates/marginal-regional-chart-check.md and
+gates/fable-marginal-regional-check.md, with exact hashes in the manifest.
+The primary note records bounded-support and requires formal audit. These
+four suppliers do not establish marginal connected-four decay, overlapping-
+buffer composition, required compact nonidentity fields, a third transition,
+continuum reconstruction or physical spectral gap. The next consumer is the
+actual marginal's exact source-marked compact decomposition and connected
+normalized-density expansion. The good complementary ratio event is not
+an all-good chart.
+
+No numerical physics runner was needed. Focused vocabulary, local-link,
+source-hash and whole-PR whitespace checks are recorded in the local receipt
+and manifest. The integrated-main pipeline/strict audit/changed-evidence
+path remains required before a later landing. This is an author continuation
+of #10149, without merging or promoting audit status.
+
+All three managed worker archives completed after source-copy verification.
+Original author bytes and ignored logs remain recoverable in the root log
+folder; the final gate binds the checked clarifications. The science lease
+was released. The exact last published head/body are recorded externally so
+the manifest need not contain its own future commit hash.
+
+The final whole-PR whitespace check caught one trailing space in the new
+normalized-regional proof. Exactly that byte was removed, with the checked
+copy preserved. The manifest and external-check packet record both hashes
+and the exact byte comparison; no mathematical or source-pin change occurred.
+The original host report remains unchanged.

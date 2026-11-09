@@ -25,7 +25,9 @@ The continuation derives the exact released-terminal marginal and its full
 four-variable conditioning identity, with a separate zero-source V_O=I
 component-gauge diagnostic. A further continuation proves compact coercivity
 and the actual normalized identity Hessian for the seven-edge marginal.
-Regional/chart suppliers and its quantitative connected response remain
-the next obligations. PROOF_TREE distinguishes these finite results
+The regional/chart continuation supplies complete normalized-energy relative
+coercivity, all-u small-chart covariance, arbitrary-exterior moments and full
+buffered ratio jets. Exact compact decomposition and connected composition
+for this marginal remain the next obligations. PROOF_TREE distinguishes these finite results
 from every open physical dependency; the diagram is a research plan, not a
 proved reduction to the mass-gap target.

@@ -8,7 +8,51 @@ physics-loop/su2-gauge-aligned-response-20261108; do not create a stack.
 The [proof tree](PROOF_TREE.md) is the current map of checked finite-model
 arguments and open quantitative/physical dependencies.
 
-## Current continuation: seven-edge coercivity
+## Current continuation: regional and nonlinear chart suppliers
+
+Owner request, 2026-11-09, starting at published head
+fbdfb3c1b8852e5de302fab6f0f7cfc70ba04cac. Main and procedure sources remain
+bf92a1d763030836ed55631d5d7a7ef3b288f284. The [regional/chart primary note](../../../../docs/SU2_MARGINAL_REGIONAL_AND_CHART_ESTIMATES_BOUNDED_THEOREM_NOTE_2026-11-09.md)
+states four checked conditional finite-model suppliers for the exact marginal:
+
+- A nonlinear Cartesian-chart Hessian and mixed-domain covariance bound,
+  valid on arbitrary scalar principal restrictions with every reader small.
+- A localized leading-energy stationary field and global compact relative
+  coercivity under a small hidden-reader collar.
+- Arbitrary-exterior radial-profile moments and exact buffered whole-core-
+  rough ratio jets, retaining the joint source/orbit covariance and C4=5404.
+- A stronger complete normalized-energy regional Haar-density mode and
+  relative coercivity, uniform for all u>=1. The same extension improves the
+  small-chart Hessian to u c_J/2+1/2 for all u>=1 on a smaller cube.
+
+Luna's repo/primary-literature pass preceded proof delegation. Four bounded
+medium-effort proof assignments used managed worktrees. The supervisor read
+all changed arguments and retained the selected profile for frontier judgments.
+The [host check](gates/marginal-regional-chart-check.md) independently derived
+the mechanisms before candidate reads, then checked all four final proofs
+and the primary/map scope at exact hashes. Its discriminators cover cube
+faces, zero means, source quotient/orbit covariance and reference measure.
+All results remain conditional on the supplied compact c_J and finite model;
+the ancestral global-coercivity chain was not recertified this turn.
+
+Fable 5.2 maximum-effort [approach advice](sources/fable-marginal-regional-approach-20261109.md)
+suggested the complete-energy extension. A separate fresh maximum-effort
+[Fable check](gates/fable-marginal-regional-check.md) inspected the first three
+proofs and found no load-bearing defect. Its minor comments produced explicit
+Haar-reader, word-length and chart-expectation clarifications, whose exact
+deltas the host checker verified. That Fable check did not see the fourth
+proof or final wording changes. The host scope check also repaired a sentence
+that asserted more about coincidence of minima than the proof established.
+These are research checks, not formal audit or retained status.
+
+Current checkpoint: mathematics and claim surfaces are frozen; source/hash,
+local-link and vocabulary checks are complete. Continue publication on this
+same PR; the exact latest head and body are recorded in the external checkpoint.
+Every earlier proof, gate and previous primary note remains byte-identical.
+Full logs, original author snapshots, final deltas and worker-copy receipt
+are under logs/su2-marginal-regional-chart-20261109/. No numerical job ran.
+
+## Previous continuation: seven-edge coercivity
 
 The 2026-11-09 owner request targets compact coercivity for the exact
 seven-edge two-plaquette marginal in this same PR. Starting head is
@@ -102,10 +146,11 @@ The complete earlier report index is preserved for navigation:
 
 ## Next decision and preserved failed shortcuts
 
-Re-establish the chart and regional compact suppliers for the actual
-seven-edge marginal with V_O=I, then bound its complete connected fourth
-response. The new compact energy and identity precision estimates are inputs;
-they do not themselves give regional ratios or connected logarithms. Keep
+Match the exact source-marked compact decomposition, regional chart-sector
+comparisons and connected normalized-density forest to the actual seven-edge
+marginal at V_O=I, then prove its complete connected fourth response. The
+regional/chart suppliers are now available, but local ratio jets do not
+compose overlapping buffers or establish a connected logarithm. Keep
 every first-layer kernel, radial normalizer, source reader and conditional
 orbit covariance. Then check the terminal/background classes
 actually needed for a third exact transition. No intermediate Wilson
@@ -131,7 +176,7 @@ distinguishes Luna extraction, direct supervisor source inspection and
 independent mathematical derivations. Brillinger's conditioning identity
 is credited; no searched theorem was imported as automatic SU(2) decay.
 
-For the current coercivity task, the [new Luna source record](sources/two-plaquette-coercivity-prior-art-20261109.md)
+For the previous coercivity task, the [new Luna source record](sources/two-plaquette-coercivity-prior-art-20261109.md)
 includes current-main, historical draft and targeted open-PR searches.
 HOLEPAY concerns RG mask holes, not these terminal deletions. Dimock's
 finite-cube abelian axial-gauge result is a comparator; the supervisor also
@@ -165,7 +210,7 @@ The earlier 19:37 UTC physics-loop lease was released after the checked science
 checkpoint; no numerical lease was held. The final main fetch remained at
 bf92a1d763030836ed55631d5d7a7ef3b288f284.
 
-For this coercivity continuation, all outputs from su2-hole-luna,
+For the previous coercivity continuation, all outputs from su2-hole-luna,
 su2-hole-energy and su2-hole-check matched their root copies before managed
 archival; all three archival completions were observed. Full search and
 consultation logs and the worker-copy receipt remain under
@@ -173,3 +218,12 @@ consultation logs and the worker-copy receipt remain under
 was released after the completed mathematical check. The final main refresh
 again matched bf92a1d763030836ed55631d5d7a7ef3b288f284. Use the external
 checkpoint for the exact publication commit of this continuation.
+
+For this regional/chart continuation, su2-regional-luna, su2-marginal-chart
+and su2-marginal-regional were archived through the managed tool, and all
+three archival completions were observed. Fifteen changed worker files were
+preserved: thirteen match their root copies and two original author versions
+remain in logs beside the checked clarification deltas. Ignored worker logs
+were copied before archival. The 20:51:59 UTC science lease was released
+after mathematical/source checks; no process or numerical job remains active.
+The final main refresh remained bf92a1d763030836ed55631d5d7a7ef3b288f284.

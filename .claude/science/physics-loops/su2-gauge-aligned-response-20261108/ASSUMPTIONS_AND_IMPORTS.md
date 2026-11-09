@@ -28,6 +28,18 @@ its actual normalized-Hessian corollary is at identity for finite u>=1.
 It uses the same supplied family and forest. No general deletion geometry,
 source-tilted law or nonidentity exterior is asserted to satisfy that bound.
 
+The regional continuation keeps this exact deleted law. Compact relative
+coercivity uses identity surviving terminal outputs and a small hidden-reader
+collar; the complete normalized-energy mode is a mode relative to product
+Haar, uniformly in u>=1. The nonlinear cube estimate permits a small
+terminal-output chart and arbitrary principal coordinate restrictions with
+all touching readers small. Its covariance operator has mixed vector face
+conditions. Arbitrary quotient exterior is allowed for the radial-profile
+moment and buffered complementary-ratio estimates, which require large u
+for rarity. The ratio's good event is not the all-good chart. All original
+sources retain their joint orbit integral and conditional covariance. No
+claim of spatial connected decay is inferred from these regional jets.
+
 Open bridges: actual coarse-conditional Q response where exterior parameters
 remain; nonidentity terminal fields; inherited effective density at a third
 transition; uniform depth and physical scale; continuum reconstruction; physical

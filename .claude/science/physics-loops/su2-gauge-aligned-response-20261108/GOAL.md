@@ -1,6 +1,69 @@
 # Target contract
 
-## Active task: two-plaquette marginal compact coercivity
+## Current target: marginal regional and nonlinear chart estimates
+
+Owner request, 2026-11-09: continue this attack in #10149, with Luna repo and
+primary-literature checks first, bounded proof workers and Fable 5.2 approach
+advice. Starting head is fbdfb3c1b8852e5de302fab6f0f7cfc70ba04cac; freshly
+fetched main remains bf92a1d763030836ed55631d5d7a7ef3b288f284. Installed
+skill copies differ; current-main repository procedures govern this run.
+This is a bounded interactive continuation, not an unattended campaign.
+
+Use the actual rho_J law of the previous milestone: two hidden layers,
+odd L>=3, kappa>0, m>=3, seven deleted terminal edges of two adjacent
+plaquettes, all K0 and surviving terminal O kernels fully normalized.
+The terminal exterior is identity and sources are zero unless a narrower
+chart-only parameter neighborhood is explicitly proved. No intermediate
+Wilson density or physical clustering premise is supplied.
+
+Three quantified obligations form this milestone:
+
+1. Uniform nonlinear fixed-chart convexity and weighted spatial covariance,
+   globally and on arbitrary regional principal restrictions with all hidden
+   exterior readers in the same small chart. Prove the finite-u normalizer
+   derivative bounds and the actual Cartesian-cube boundary argument.
+2. For a small hidden-reader collar, construct a measurable leading-energy
+   stationary field with exponential boundary penetration, all-compact
+   relative coercivity, and a uniform cap upper bound. Select whole surviving
+   factors; distinguish this minimum from that of the full normalized action.
+3. Under arbitrary compact quotient exterior, re-establish regional radial-
+   profile exponential moments and buffered rough-core ratio jets with two
+   original sources and two distinct terminal variations. Keep every selected
+   normalizer, exact regional denominator and orbit conditional covariance.
+
+The completed Fable approach consultation suggested a fourth, stronger
+implication: absorb the exact radial factors into a u-indexed complete kernel
+energy. A separate bounded proof and independent check establish its global
+Lipschitz and local derivative bounds uniformly in u>=1, then construct the
+actual regional Haar-density mode with relative coercivity and a cap upper
+bound. The same exact normalizer correction removes the chart's large-u
+threshold on a smaller fixed cube. This strengthens obligations 1 and 2;
+it does not replace the complete-source and arbitrary-exterior obligations.
+
+Accepted mathematical inputs are the checked seven-edge compact inequality
+and exact normalized identity Hessian at the starting head. The old chart,
+relative-energy, arbitrary-boundary moment and buffered-ratio proofs are
+candidate methods, not automatically theorems for the deleted law. Luna's
+targeted source record identifies their statement/hypothesis matches and
+the limits of generic published HS/BL or influence-contraction results.
+
+The candidate route re-instantiates complete factor selection and finite
+reader bounds, then uses the new global compact constant and leading
+precision in those methods. The first failure tests are an omitted output
+or locally constant normalizer, loss of a collar term under localization,
+unjustified cube boundary conditions, nonsmooth mean differentiation, and
+loss of original-source orbit covariance. An explicit counterexample would
+redirect the affected step; favorable old labels or factor deletion alone
+would not close it. No registered primitive is used to derive this supplied
+SU(2) family; the current registry was checked and no primitive is added.
+
+Success means complete proofs of these stated regional/chart suppliers with
+fresh decisive checks, or an explicit identified failure. The marginal's
+complete connected four-response remains a separate composition task. The
+next consumer must verify compact decomposition and connected cancellations;
+moment bounds and local ratio jets do not supply spatial connected decay.
+
+## Completed target: two-plaquette marginal compact coercivity
 
 Owner request, 2026-11-09: attack this supplier in the existing PR #10149,
 with Luna repo/literature extraction before bounded proof workers and an

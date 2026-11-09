@@ -8,6 +8,8 @@
 | Compact insertion gas and normalized density forest | One exact compact/chart representation and connected ratio | Full argument now drafted and independently checked, with explicit fixed-reference contract and actual-model match. Selected mechanism for this milestone. |
 | Block comparison/low-temperature imported theorems | A contracting full influence matrix or matched published hypotheses | Literature hypotheses not discharged for this model; no result claimed from those comparisons. |
 | Transverse recovery of sparse terminal constraints | Positive local comparison E_all <= C E_J and exact normalized Hessian | Seven-edge adjacent-plaquette compact estimate proved with finite coefficient masses, including seams and zero means. It supplies energy/precision, not marginal response decay. |
+| Exact finite-u regional energy | Complete normalized kernel represented as H(kappa u) exp(-u Phi_u) | Uniform global Lipschitz and local third derivatives give the actual regional Haar-density mode and compact relative coercivity for a small hidden collar, all u>=1. No global chart probability follows. |
+| Marginal radial profiles and mixed cube domains | Same-profile conditional tower, exact buffered ratios and vector face conditions | Actual seven-edge chart covariance, arbitrary-exterior interior moments and full buffered two-source/two-boundary jets. Compact connected composition remains separate. |
 
 The successful continuation reuses #10133's compact-shell and marked-density
 architecture with the actual two-step law. Frozen source insertions remove

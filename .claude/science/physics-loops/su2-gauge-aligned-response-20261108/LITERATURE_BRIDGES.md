@@ -17,3 +17,15 @@ The new fixed-reference proof differentiates normalized Gaussian densities
 with bounded insertions held fixed. Its reference is frozen in the physical
 source parameters, while artificial covariance interpolation is still used
 inside the forest identity. No novelty or literature-exhaustion claim is made.
+
+The marginal continuation has a separate Luna repo/primary-literature record,
+`sources/marginal-regional-chart-prior-art-20261109.md`. Bauerschmidt–Bodineau's
+2019 Appendix A states whole-Euclidean-space covariance machinery; the
+supervisor read that appendix directly. Kolesnikov–Milman's boundary results
+are comparisons, not an imported cube-corner theorem. The new proof establishes
+the mixed Cartesian-cube form domain directly. Influence-contraction papers
+do not supply a contraction for this model without checking their hypotheses.
+The source record corrects the main-versus-open-PR distinction and preserves
+bounded search/read coverage. Fable's separately logged idea to use complete
+normalized energy is approach credit, with its subsequent proof checked as
+a separate argument.

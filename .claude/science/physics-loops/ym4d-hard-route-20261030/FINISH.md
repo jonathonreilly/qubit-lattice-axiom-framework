@@ -665,6 +665,6 @@ Work on PR #10132 of jonathonreilly/qubit-lattice-axiom-framework, branch claude
 | 590 | `leaf-braw` | done 2026-11-09: stop (c) at B-RAW, the common-coordinate residual (20) with the noncommuting current contribution (11), switch defect (16) and bound (23). |
 | 591 | `leaf-creflect` | done 2026-11-09: stop (c); direct row reflection fails, no admissible CFW counterexample. First open input: CFW's uniform combined row bound on J_h Z_h with the actual node/current compensation. All six tree-4 leaves stopped at (c); next: tree 5 over I-INCIDENCE coefficients, H-UNPAID, D-HOLONOMY, S-CALLER, B-RAW, CFW row bound. |
 | 592 | `tree5` | done 2026-11-09 (library/hstep-tree5.md): H-UNPAID and D-HOLONOMY judged probably false as stated; ranking S-CALLER, D-HOLONOMY, H-UNPAID, B-RAW, I-INCIDENCE, CFW. Top three queued (rows 593-595); the rest wait. |
-| 593 | `leaf-sseam` | queued 2026-11-09 on Mini Codex: S-ONE-SEAM for S-CALLER. |
-| 594 | `leaf-dcycle` | queued 2026-11-09 on Mini Codex: D-FIRST-CYCLE, falsification lane for D-HOLONOMY. |
+| 593 | `leaf-sseam` | launched 2026-11-09 on Mini Codex: S-ONE-SEAM for S-CALLER. Done: no counterexample; first open input again the residual fixed-slot list Q_R after composing inner, collar and ordinary kernels, with factorization (16) (third round on the same object). |
+| 594 | `leaf-dcycle` | launched 2026-11-09 on Mini Codex: D-FIRST-CYCLE, falsification lane for D-HOLONOMY. Done: the candidate curve gives exact cancellation (no witness); stop (c) at (DC) on a genuine surviving old argument. |
 | 595 | `leaf-hremote` | queued 2026-11-09 on Mini Codex: H-REMOTE, falsification lane for H-UNPAID. |

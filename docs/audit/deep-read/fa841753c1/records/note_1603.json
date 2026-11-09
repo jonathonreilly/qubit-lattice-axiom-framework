@@ -1,0 +1,81 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 17392,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-06",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Conditional reduction of two landed readout premises to one named premise, plus an exact single-site obstruction. FRAME-EXT is not proved. There is no bold Status header. The bold Type is bounded_theorem and is not an audit pass. The date line is 2026-07-06. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The runner scorecard is not an audit pass. The source path is dirty and was not stored. The title is dirty and was not stored. The next row is withheld. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [],
+    "lines": 60,
+    "note_hash_line": 42,
+    "shard": "re",
+    "total_pass": 0
+  },
+  "line_count": 260,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4610,
+    "citation_key": 4631,
+    "deps_hash": "9c7f3a5777fd",
+    "out_degree": 4
+  },
+  "not_filed": [
+    "If",
+    "It",
+    "an",
+    "as",
+    "at",
+    "be",
+    "bounded_theorem",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "readout_bridge_frame_extension_unification_2026_07_06",
+    "to"
+  ],
+  "note_number": 1603,
+  "open": [
+    "FRAME-EXT stays unproved.",
+    "The all-frame additivity gap stays open.",
+    "Gleason stays external and was not recomputed.",
+    "Two ledger deps stay withheld.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 260 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/readout_bridge_frame_extension_unification_2026_07_06.py",
+  "sha256": "52a7462faab72cba813783e901101a9a9a9fc6a5dc7787a143ed9892ec77bef5",
+  "source": "",
+  "status_line": "absent",
+  "title": "",
+  "wave": "BHM",
+  "yaml_status": "absent"
+}

@@ -1,0 +1,71 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 4172,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-21",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Consumer firewall for the conditional theta-to-slice family. The unresolved rho_E can enter a downstream consumer only through the E-channel center-excess coordinate. The note does not derive rho_E = 21/4 and does not close the endpoint triple. No bold Type, so the Type token is absent. No bold Status, so status_line is absent. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 57,
+    "note_hash_line": 39,
+    "shard": "s3",
+    "total_pass": 0
+  },
+  "line_count": 135,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4851,
+    "citation_key": 4874,
+    "deps_hash": "0a0bbad2549a",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "by",
+    "frontier_s3_time_route2_e_center_consumer_ambiguity_firewall_2026_06_21",
+    "is",
+    "it",
+    "md",
+    "on",
+    "or",
+    "py"
+  ],
+  "note_number": 1651,
+  "open": [
+    "rho_E = 21/4 is not derived.",
+    "The endpoint triple stays open.",
+    "A unique E-center Theta_R to Lambda_R result still needs that endpoint or an equivalent selection principle.",
+    "The expected PASS=12 FAIL=0 line was not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cached runner log was not opened.",
+    "The cited parent coupling note was not opened.",
+    "The upstream exact readout note named in the setup was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 135 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_s3_time_route2_e_center_consumer_ambiguity_firewall_2026_06_21.py",
+  "sha256": "175fcfe0eb4fd5d5602fe0c3e99234c9ff8165c434daed12cc1056a51a391546",
+  "source": "docs/S3_TIME_ROUTE2_E_CENTER_CONSUMER_AMBIGUITY_FIREWALL_NOTE_2026-06-21.md",
+  "status_line": "absent",
+  "title": "S3-Time Route-2 E-Center Consumer Ambiguity Firewall",
+  "wave": "BJI",
+  "yaml_status": "absent"
+}

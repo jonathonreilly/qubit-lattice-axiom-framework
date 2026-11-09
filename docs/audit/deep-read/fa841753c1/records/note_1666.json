@@ -1,0 +1,76 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 8434,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-21",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Conditional support. One Riesz dual leg gives lambda = 3/2, q_E = 5/4, and rho_E = 3/2. Two independent dual legs give lambda = 9/4, q_E = 15/8, and rho_E = 21/4. The current surface does not license those two legs. The title, source path, and runner are dirty and were not stored. No bold Type, so the Type token is absent. No bold Status, so status_line is absent. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 60,
+    "note_hash_line": 42,
+    "shard": "qu",
+    "total_pass": 0
+  },
+  "line_count": 252,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4547,
+    "citation_key": 4568,
+    "deps_hash": "5f1db4a768a9",
+    "out_degree": 4
+  },
+  "not_filed": [
+    "If",
+    "It",
+    "an",
+    "as",
+    "by",
+    "do",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1666,
+  "open": [
+    "The endpoint triple stays open.",
+    "rho_E = 21/4 is not derived from the current surface.",
+    "The two independent dual-normalized legs are not licensed.",
+    "Line 251 prints PASS=19 FAIL=0 and that line is not an audit pass. There is no TOTAL line.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cached runner log was not opened.",
+    "The 4 cited notes were not opened.",
+    "No helper module is named, and none was executed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 252 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "47fdc6a6fd9e3e84e39d677ce33df455c41ea837c53d14bde285261cb7ec5bd8",
+  "source": "",
+  "status_line": "absent",
+  "title": "",
+  "wave": "BJX",
+  "yaml_status": "absent"
+}

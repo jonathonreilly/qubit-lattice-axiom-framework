@@ -1,0 +1,77 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 8676,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": true,
+  "issues": [
+    {
+      "detail": "No breakthrough. The clean claim is bounded support for a supplied finite circulant context, not a physical carrier and not a value of R-eta. The displayed generator is H(delta) = a I + B exp(i delta) C + B exp(-i delta) C^T, and the clean proof map names sectors P_0, P_1, and P_2. The physical charged-lepton realization stays open. A_R-eta is named an open gate. The selection |delta| = 2/9 is not derived. The bold Type token is bounded_support_theorem. The ledger claim_type is bounded_theorem. Those differ, so grade_clash is true. The bold Status is the joined sentence source-side bounded support only. This note proposes no audit verdict, changes no ledger row, edits no Tier-A registry surface, and does not change the parent R-eta claim boundary. That status line is not an audit pass. The bold Date is 2026-06-18, so date_line is 2026-06-18. yaml_status is absent. The yaml dependency list is empty and the ledger dependency list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. prose_status not_evaluated_pre_vocab_lint is not an audit pass. total_pass is 0. The printed TOTAL row was not recomputed and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 133,
+    "note_hash_line": 43,
+    "shard": "ac",
+    "total_pass": 0
+  },
+  "line_count": 164,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 56,
+    "citation_key": 56,
+    "deps_hash": "b9ea7924767c",
+    "out_degree": 5
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "be",
+    "by",
+    "frontier_acphilambda_r_eta_w2_registrability_context_bridge_2026_06_18",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1718,
+  "open": [
+    "The physical charged-lepton carrier realization stays open.",
+    "A_R-eta stays an open gate.",
+    "The value |delta| = 2/9 stays underived.",
+    "The printed TOTAL row was not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache file was not opened.",
+    "The cited dependency notes were not opened.",
+    "The named 2026-06-05 Record memo was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 164 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_acphilambda_r_eta_w2_registrability_context_bridge_2026_06_18.py",
+  "sha256": "2b5374b4cfa53d3e7c8fe36951e595885dd734a58ea5235815651abacfa36ab7",
+  "source": "docs/ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md",
+  "status_line": "source-side bounded support only. This note proposes no audit verdict, changes no ledger row, edits no Tier-A registry surface, and does not change the parent R-eta claim boundary.",
+  "title": "AC_phi_lambda R-eta Record-Registrability Context Bridge -- Bounded Support Theorem",
+  "wave": "BLX",
+  "yaml_status": "absent"
+}

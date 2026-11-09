@@ -1,0 +1,77 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 12675,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-21",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Exact negative equivalence atlas and firewall. Under the granted T-side values the target faces rho_E = 21/4, q_E = 15/8, c_TE = -8/9, and lambda = 9/4 are equivalent discharge forms of one missing center primitive. Current named surfaces do not supply that primitive. No bold Type token is compared, so grade_clash is false. No bold Status, so status_line is absent. The actual-current-surface header is not a Status header and is not an audit pass. yaml_status is absent. The yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. Line 148 prints PASS, FAIL, and TOTAL and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 60,
+    "note_hash_line": 42,
+    "shard": "qu",
+    "total_pass": 0
+  },
+  "line_count": 230,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4544,
+    "citation_key": 4565,
+    "deps_hash": "e456c1aae4bc",
+    "out_degree": 4
+  },
+  "not_filed": [
+    "as",
+    "at",
+    "by",
+    "do",
+    "frontier_quark_route2_center_primitive_equivalence_atlas_2026_06_21",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1669,
+  "open": [
+    "The endpoint triple stays open.",
+    "The atlas equates supplied faces and does not derive the missing center primitive.",
+    "F_adj = 8/9 does not become c_TE unless the typed signed bridge is supplied.",
+    "The printed PASS, FAIL, and TOTAL row on line 148 is not an audit pass.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cached runner log was not opened.",
+    "The 4 ledger deps and the extra folded links were not opened.",
+    "No helper module was executed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 230 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_quark_route2_center_primitive_equivalence_atlas_2026_06_21.py",
+  "sha256": "85d5879b8fcf2abd0e5a7de0d8689556d7b49e1f954d018e94109524b16c97eb",
+  "source": "docs/QUARK_ROUTE2_CENTER_PRIMITIVE_EQUIVALENCE_ATLAS_NOTE_2026-06-21.md",
+  "status_line": "absent",
+  "title": "Quark Route-2 Center Primitive Equivalence Atlas",
+  "wave": "BKA",
+  "yaml_status": "absent"
+}

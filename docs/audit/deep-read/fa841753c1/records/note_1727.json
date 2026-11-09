@@ -1,0 +1,83 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 19332,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-17",
+  "grade_clash": true,
+  "issues": [
+    {
+      "detail": "No breakthrough. This note is a source inventory. On the current single-clock packet the only admitted physical-clock transfer is the supplied pair (T_hat^2, 2 a_tau). The printed generator is H = -(1/(2 a_tau)) log(T_hat^2/M_T), and the coefficient of the log is the reciprocal of the printed clock denominator 2 a_tau. Finite Stone uniqueness, given one positive Hermitian transfer and one positive scale, determines that generator and adds no second transfer. Record order and a KMS/APBC circle decorate a supplied time circle. The note attributes to the named 2026-06-29 memo that Lattice, Qubit, Admissibility, and Record supply no clock. That memo was not opened. The note says this wording is source-inventory support and does not claim physical uniqueness of time. The printed summary PASS=54 FAIL=0 and ADMITTED_PHYSICAL_CLOCK_TRANSFERS=1 were not recomputed and are not an audit pass. Bold Type joins to exact source-inventory support / N5 physical-clock-admission boundary, which differs from the ledger claim_type bounded_theorem, so grade_clash is true. No bold Status is present, so status_line is absent. The bold Date is 2026-06-17. yaml_status is absent. The ledger dependency list has length 5 and one entry is dirty, while the yaml list is empty, so deps_eq_yaml is false. The ledger effective status is unaudited and is not an audit pass. prose_status not_evaluated_pre_vocab_lint is not an audit pass. criticality critical is not an audit pass. total_pass is 0. The note has no TOTAL row. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 182,
+    "note_hash_line": 43,
+    "shard": "si",
+    "total_pass": 0
+  },
+  "line_count": 400,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4998,
+    "citation_key": 5023,
+    "deps_hash": "d65c6179d3da",
+    "out_degree": 5
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "On",
+    "an",
+    "as",
+    "be",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "single_clock_physical_clock_admission_inventory_n5_support_2026_06_17",
+    "so",
+    "to"
+  ],
+  "note_number": 1727,
+  "open": [
+    "A second physical-clock transfer is not admitted on this source surface.",
+    "Physical uniqueness of time is not claimed.",
+    "B-AXIS.1 and B-AXIS.2 are not derived in this note.",
+    "The printed summary rows were not recomputed.",
+    "The named 2026-06-29 memo was not opened.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache was not opened.",
+    "The dirty ledger dependency was not opened.",
+    "The cited axiom memo was not opened.",
+    "The ledger previous_audits entries are dirty and were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 400 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py",
+  "sha256": "73f3c5686c6937e1fab136458a6116d478ff2911bbe5cec720da476b58c586de",
+  "source": "docs/SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md",
+  "status_line": "absent",
+  "title": "Single-Clock Physical-Clock Admission Inventory N5 Support",
+  "wave": "BMG",
+  "yaml_status": "absent"
+}

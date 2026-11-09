@@ -1,0 +1,77 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 6319,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "absent",
+  "grade_clash": true,
+  "issues": [
+    {
+      "detail": "No breakthrough. The proved claim is that a finite chain of supplied affine maps T(x) = x - c L, with the identity carry I(x) = x at each marker, equals x minus the sum of the terms c_j L_j. The inverse maps add those terms back. A supplied jump at a marker adds that jump. The coefficient sequence c(n) = 11 - 2n/3 is a supplied definition and is positive for the integers n from 0 through 16. The filename names an alpha_s heavy-threshold matching kernel. The heading is a finite marked piecewise-affine map, and the note withdraws the earlier physical reading. The note does not derive QCD running, a decoupling rule, a Lambda parameter, or alpha_s(M_Z). The bold Type token is exact structural theorem. The ledger claim_type is positive_theorem. Those differ, so grade_clash is true. The bold Status is the single token proposed_retained. That status line is an author-side proposal and is not an audit pass. No bold Date is present, so date_line is absent. yaml_status is absent. Both dependency lists are empty, so deps_eq_yaml is true and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. prose_status not_evaluated_pre_vocab_lint is not an audit pass. total_pass is 0. The printed SUMMARY rows were not recomputed and are not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 197,
+    "note_hash_line": 37,
+    "shard": "al",
+    "total_pass": 0
+  },
+  "line_count": 194,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 472,
+    "citation_key": 473,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18",
+    "in",
+    "is",
+    "it",
+    "no",
+    "of",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1717,
+  "open": [
+    "The physical reading of this coefficient sequence stays withdrawn.",
+    "alpha_s(M_Z) stays unpromoted.",
+    "QCD running, a decoupling rule, and a Lambda parameter stay unsupplied.",
+    "The printed SUMMARY rows were not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache file was not opened.",
+    "No helper path is stored, and none was opened.",
+    "The ledger previous_audits entries were not copied.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 194 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18.py",
+  "sha256": "fca8658e629f61cf4b996acb1e9f5dce2e84472bccfd59aa7f5392a3a6aa21b8",
+  "source": "docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md",
+  "status_line": "proposed_retained",
+  "title": "Finite Marked Piecewise-Affine Map Structural Theorem (2026-06-18)",
+  "wave": "BLW",
+  "yaml_status": "absent"
+}

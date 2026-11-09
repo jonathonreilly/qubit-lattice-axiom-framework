@@ -1,0 +1,66 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 3149,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Bounded source-side partial bridge for one Family 3 distance-alpha slot. The live cache reports alpha = -1.150, R^2 = 0.971, and toward = 5/5 on the third family with drift 0.50 and restore 0.90. That fit was not recomputed. Geometry independence, a holdout check, Family 1/2 recomputation, and portability stay outside the bridge. No bold Type token is compared, so grade_clash is false. No bold Status is present, so status_line is absent. The actual-current-surface label is not a Status header and is not an audit pass. yaml_status is absent. The yaml list is empty, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The printed cache gates are not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 161,
+    "note_hash_line": 39,
+    "shard": "th",
+    "total_pass": 0
+  },
+  "line_count": 95,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5414,
+    "citation_key": 5448,
+    "deps_hash": "acb9533ed41f",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "as",
+    "is",
+    "md",
+    "or",
+    "py"
+  ],
+  "note_number": 1677,
+  "open": [
+    "Full card repair stays open. The closing requirement line was masked.",
+    "Geometry independence, a holdout check, Family 1/2 recomputation, and portability stay outside this bridge.",
+    "The distance-tail fit was not recomputed.",
+    "The expected bridge result was masked and is not an audit pass.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner path is dirty and was not stored or executed.",
+    "The named distance runner and firewall script were not executed.",
+    "The named cache was not opened.",
+    "The clean ledger dep was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 95 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "37533a3fa4f4a2e3fedbf7652e92f60a6137bb63d32025b33d92482fb422852a",
+  "source": "",
+  "status_line": "absent",
+  "title": "",
+  "wave": "BKI",
+  "yaml_status": "absent"
+}

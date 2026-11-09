@@ -1,0 +1,76 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 5146,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. The proved core is the finite Clifford relation on the 2^4 hypercube. The signed shifts alpha_mu are Hermitian involutions and obey the Cl_4 relation. The ordered combination Gamma_5^spin = alpha_0 alpha_1 alpha_2 alpha_3 squares to the identity, anticommutes with every alpha_mu, and splits the 16-dimensional space into two rank-8 parts. The algebra those shifts generate has dimension 16, and its commutant has dimension 16. The site parity epsilon anticommutes with every alpha_mu, is not plus or minus that volume element, lies outside the generated algebra, and does not commute with the whole commutant. The volume element does commute with the commutant. The note does not close P-REC, P-HY, P-COMP, P-ABJ, or B-AXIS, and it does not derive anomaly-to-inconsistency or a physical single-taste selector. No bold Type token is present, so no Type token is compared and grade_clash is false. No bold Status is present, so status_line is absent. The bold Date is 2026-06-18. yaml_status is absent. Both dependency lists are empty, so deps_eq_yaml is true and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. prose_status clean is not an audit pass. criticality critical is not an audit pass. total_pass is 0. The printed TOTAL row was not recomputed and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 3,
+    "helpers": [],
+    "lines": 1567,
+    "note_hash_line": 37,
+    "shard": "ab",
+    "total_pass": 0
+  },
+  "line_count": 127,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 35,
+    "citation_key": 35,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "On",
+    "an",
+    "by",
+    "frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18",
+    "in",
+    "is",
+    "it",
+    "md",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1720,
+  "open": [
+    "The physical P-REC chirality identification stays open.",
+    "P-HY, P-COMP, P-ABJ, and B-AXIS stay open.",
+    "Anomaly-to-inconsistency stays underived.",
+    "The printed TOTAL row was not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache file was not opened.",
+    "The linked epsilon note was not opened.",
+    "The ledger previous_audits entries were not copied.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 127 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
+  "sha256": "d2b7e3a2d55eea824728e75668d2116c941d21a7d97e3f78b120d14786fa0938",
+  "source": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "ABJ P-REC Spin/Taste Clifford-Core Bridge",
+  "wave": "BLZ",
+  "yaml_status": "absent"
+}

@@ -1,0 +1,75 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 4583,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. On the continuous-time spatial Z^3 surface, the central-difference kinetic term sum_i (2/a sin(a k_i/2))^2 expands as |k|^2 - (a^2/12) sum_i k_i^4 plus a higher order. The leading artifact A4 = kx^4 + ky^4 + kz^4 is independent of p0. Its axis-permutation-averaged spatial Hessian is 4 (kx^2 + ky^2 + kz^2) I_3, so the marginal quadratic channel is one O_h scalar with delta c_t = 0 and delta c_s = lambda. lambda is not fixed. This is source-side support for a spatial-only structural channel. It does not derive the one-loop coefficient or its sign, the interacting velocity RG, the fixed-point anomalous dimension, or LV-bound sufficiency. The bold Type token is bounded_theorem. The ledger claim_type is bounded_theorem, so grade_clash is false. No bold Status is present, so status_line is absent. That absence is not an audit pass. yaml_status is absent. Both dependency lists are empty, so deps_eq_yaml is true and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. prose_status clean is not an audit pass. total_pass is 0. The printed TOTAL row and the VERDICT sentence were not recomputed and are not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 3,
+    "helpers": [],
+    "lines": 1261,
+    "note_hash_line": 37,
+    "shard": "em",
+    "total_pass": 0
+  },
+  "line_count": 134,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 1540,
+    "citation_key": 1551,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "be",
+    "bounded_theorem",
+    "by",
+    "frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18",
+    "in",
+    "is",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1710,
+  "open": [
+    "The one-loop coefficient multiplying the spatial channel, including its sign, is not derived.",
+    "The interacting one-loop velocity RG stays underived in this note.",
+    "The fixed-point anomalous dimension stays underived.",
+    "LV-bound sufficiency stays open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache file was not opened.",
+    "The cited notes were not opened.",
+    "No helper script was named.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 134 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18.py",
+  "sha256": "df27236febdc3e20ea37fa710e790c3e223c9f3cfa99d58c9618fa12c973efb2",
+  "source": "docs/EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "Emergent Lorentz Spatial-BZ Power-Mixing Boundary Theorem",
+  "wave": "BLP",
+  "yaml_status": "absent"
+}

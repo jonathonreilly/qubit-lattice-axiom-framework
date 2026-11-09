@@ -1,0 +1,76 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 4755,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. On a locally constant scalar cell, H_s = H_0 + s I. At fixed energy, positive s lowers k_s where lambda_axis'(k0) > 0, so the normalized phase action falls. The bridge sets phi_action = c_E s with c_E = 1/(k0 lambda_axis'(k0)) > 0, matching the consumed weak-field form 1 - phi. In the small-k regime, k0 lambda_axis'(k0) = 2E + O(E^2). This does not set a physical Newton constant. No bold Type token is present, so grade_clash is false. The bold Date is 2026-06-18. No bold Status is present, so status_line is absent. yaml_status is absent. The parsed yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The expected TOTAL row prints PASS=28 FAIL=0 and was not recomputed. It is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [],
+    "lines": 111,
+    "note_hash_line": 39,
+    "shard": "gr",
+    "total_pass": 0
+  },
+  "line_count": 169,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 2164,
+    "citation_key": 2178,
+    "deps_hash": "066fb0c52929",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "At",
+    "It",
+    "On",
+    "as",
+    "by",
+    "frontier_gravity_scalar_shift_sign_normalization_2026_06_18",
+    "is",
+    "it",
+    "md",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1697,
+  "open": [
+    "The physical Newton constant stays unset.",
+    "Arbitrary-graph WKB, nonlinear gravity, and a tensor metric stay outside this packet.",
+    "Universal matter coupling stays underived.",
+    "The normalization stays internal to the one-axis fixed-energy packet.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache file was not opened.",
+    "The cited source-response note was not opened.",
+    "The expected TOTAL row was not recomputed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 169 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_gravity_scalar_shift_sign_normalization_2026_06_18.py",
+  "sha256": "28cd987fee0178492b3144a89b2ee1ef5f533fa712b097b0ea7fbcf62d3da8d5",
+  "source": "docs/GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "Gravity Scalar-Shift Sign and Fixed-Energy Normalization Bridge",
+  "wave": "BLC",
+  "yaml_status": "absent"
+}

@@ -1,0 +1,77 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 8282,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-04",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Supplied-context bridge for K/CPT orbit constancy and a phase-homomorphism boundary. There is no bold Status header and no bold Type header. The bold Date is 2026-07-04. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 9,
+    "helpers": [],
+    "lines": 433,
+    "note_hash_line": 39,
+    "shard": "kc",
+    "total_pass": 0
+  },
+  "line_count": 162,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 3188,
+    "citation_key": 3203,
+    "deps_hash": "c8eee4235fc9",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "an",
+    "as",
+    "by",
+    "frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04",
+    "if",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1616,
+  "open": [
+    "ORBIT-INDEXING and the homomorphism boundary stay supplied context.",
+    "The runner certificate was not rerun.",
+    "Lines 64, 92, 103, 135, and 136 were not copied.",
+    "The Record quotation is this note's quotation. The axiom memo was not opened.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The named context-handle notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 162 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py",
+  "sha256": "55a0fc3db9a18fb802ebc04129f3542919ab57a7d8ab2301860b23f9b3c61a0c",
+  "source": "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md",
+  "status_line": "absent",
+  "title": "K/CPT Orbit Constancy And Determinant-Character Boundary Supplied-Context Bridge",
+  "wave": "BHZ",
+  "yaml_status": "absent"
+}

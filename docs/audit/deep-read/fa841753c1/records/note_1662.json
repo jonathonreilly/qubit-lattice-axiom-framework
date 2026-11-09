@@ -1,0 +1,78 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 6860,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-21",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Current-bank no-go for a physical color-ray source line. If a ray psi in C^3 were supplied, H_psi = |psi><psi| - I_3/3 would select one adjoint line, the complement fraction would be 7/8, and the granted T-side values would give q_E = 15/8 and rho_E = 21/4. The current source bank does not supply that ray. No bold Type, so the Type token is absent. No bold Status, so status_line is absent. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 62,
+    "note_hash_line": 44,
+    "shard": "qu",
+    "total_pass": 0
+  },
+  "line_count": 161,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4559,
+    "citation_key": 4580,
+    "deps_hash": "5001f0f7bd36",
+    "out_degree": 6
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "be",
+    "frontier_quark_route2_physical_color_ray_source_primitive_no_go_2026_06_21",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1662,
+  "open": [
+    "The endpoint triple stays open.",
+    "rho_E = 21/4 is not derived.",
+    "The current bank does not supply a physical color ray.",
+    "The expected PASS=26 FAIL=0 TOTAL=26 line was not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cached runner log was not opened.",
+    "The authority-link notes were not opened.",
+    "The cited source-bank notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 161 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_quark_route2_physical_color_ray_source_primitive_no_go_2026_06_21.py",
+  "sha256": "b7462cd861179a58e7a2c01c7dbebdad13fa2353f57e2aedda6a1ada4be532d3",
+  "source": "docs/QUARK_ROUTE2_PHYSICAL_COLOR_RAY_SOURCE_PRIMITIVE_NO_GO_NOTE_2026-06-21.md",
+  "status_line": "absent",
+  "title": "Quark Route-2 Physical Color-Ray Source Primitive No-Go",
+  "wave": "BJT",
+  "yaml_status": "absent"
+}

@@ -1,0 +1,77 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 9659,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-17",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. The note splits one supplied two-step clock sentence into a source-supported internal denominator and an undischarged absolute unit. On the supplied object, T_hat^2 = exp(-2 a_tau H_hat) and H_hat = -log(T_hat^2)/(2 a_tau). The aligned parent reconstruction is H = -(1/(2 a_tau)) log(T_hat^2/M_T). Using the denominator a_tau on that same T_hat^2 doubles every non-vacuum energy. Replacing 2 a_tau by 2 c a_tau rescales H by 1/c and leaves T_hat^2 unchanged. The absolute physical value of a_tau stays outside Lattice, Qubit, Admissibility, Record, and post-record counts. The note says Record supplies durable realized outcomes and finite scalar additivity, and says Record supplies no time metric, dynamics, clock map, Hamiltonian, or transition rate. That attribution was not checked by opening the memo. The note does not close B-AXIS.2, does not add an axiom, and does not claim retained status. The printed TOTAL: PASS=37 FAIL=0 was not recomputed and is not an audit pass. No bold Type is present, so grade_clash is false. The Claim type line reads bounded_theorem and is not a Type token. No bold Status is present, so status_line is absent. The bold Date is 2026-06-17. The source path and the title fail the card scan and are not stored. yaml_status is absent. The ledger dependency list is nonempty and the yaml list is empty, so deps_eq_yaml is false. The ledger effective status is unaudited and is not an audit pass. prose_status not_evaluated_pre_vocab_lint is not an audit pass. criticality critical is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 292,
+    "note_hash_line": 43,
+    "shard": "si",
+    "total_pass": 0
+  },
+  "line_count": 213,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4995,
+    "citation_key": 5020,
+    "deps_hash": "d2ddde9d7a06",
+    "out_degree": 5
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "be",
+    "by",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1729,
+  "open": [
+    "The absolute physical value of a_tau is not derived.",
+    "B-AXIS.2 stays open, and B-AXIS.3 is untouched.",
+    "A separate clock/rate bridge is still required for a physical-rate claim.",
+    "The printed TOTAL rows were not recomputed.",
+    "The named 2026-06-29 memo was not opened.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner line is dirty and was not executed.",
+    "The ledger previous_audits entries are dirty and were not opened.",
+    "The cited axiom memo was not opened.",
+    "The cited input notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 213 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "e02bdf23c6cbe83836f80ba4a405007aab1a62079e46dc2eead9633a147ebe37",
+  "source": "",
+  "status_line": "absent",
+  "title": "",
+  "wave": "BMI",
+  "yaml_status": "absent"
+}

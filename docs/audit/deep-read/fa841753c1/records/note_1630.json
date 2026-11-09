@@ -1,0 +1,80 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 21078,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-02",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Finite pairing theorem: the rank-2 cross-plane pairing is diagonal-Weyl invariant and is not fixed by separate per-plane orbits. Values sit in (1/3)Z, the fractional part is the mod-3 center pairing, and the center-trivial subsector has the odd integer witness -1. No physical theta value is supplied. There is no bold Status header. There is no bold Type header. The bold Date is 2026-07-02. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The displayed TOTAL row is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 118,
+    "note_hash_line": 40,
+    "shard": "th",
+    "total_pass": 0
+  },
+  "line_count": 399,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5390,
+    "citation_key": 5422,
+    "deps_hash": "e21210cc45af",
+    "out_degree": 2
+  },
+  "not_filed": [
+    "No",
+    "On",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "theta_cartan_valued_cross_plane_pairing_weyl_frame_theorems_2026_07_02",
+    "to"
+  ],
+  "note_number": 1630,
+  "open": [
+    "Defect closure on the abelianized dual is open.",
+    "Relative-frame correlation across the 4D gluing is open.",
+    "The phase-type insertion is open.",
+    "No continuum statement is supplied.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not executed.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The cited dependency notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 399 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/theta_cartan_valued_cross_plane_pairing_weyl_frame_theorems_2026_07_02.py",
+  "sha256": "a228f1c4951e1b141da79b781612af87a1447fdcd8e9fc2a56dd5031b714bb0a",
+  "source": "docs/THETA_CARTAN_VALUED_CROSS_PLANE_PAIRING_DIAGONAL_WEYL_FRAME_THEOREMS_AND_TRIALITY_FRACTIONAL_VALUES_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "status_line": "absent",
+  "title": "The Cartan-Valued Cross-Plane Pairing: Diagonal-Weyl-Invariant Joint-Orbit Data, Provably Underdetermined by Per-Plane Weyl Orbits; Values in (1/3)Z with the Fractional Part Exactly the Mod-3 Center Pairing and an Integer Odd Witness on the Center-Trivial Subsector \u2014 the Frame Residual Sharpens to Relative-Frame Correlation Across the 4D Gluing (Bounded Theorem)",
+  "wave": "BIN",
+  "yaml_status": "absent"
+}

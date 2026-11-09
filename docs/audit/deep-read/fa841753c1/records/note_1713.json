@@ -1,0 +1,67 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 3854,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. This note is a source-side dispatch and readiness bridge. The archived row failed as a retained positive claim, and its historical 0.63 / 0.45 table is not live evidence. The live target is a narrower finite configured replay. The printed forward ratio 0.668 sits 1/750 above 2/3, and that gap over 2/3 equals 1/500. The archived pair quotient is 7/5, and 1.456 minus 7/5 equals 7/125. The printed ratios 1.456, 0.938, and 0.668 differ from both 0.63 and 0.45. Those equalities do not derive the ratios from field evolution. No bold Type token is present, so no Type token is compared and grade_clash is false. No bold Status is present, so status_line is absent. That absent status is not an audit pass. The bridge-role text is not a Status header. yaml_status is absent. The ledger dependency list has 1 label and the yaml dependency list is empty, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is meta and is not an audit pass. prose_status not_evaluated_pre_vocab_lint is not an audit pass. total_pass is 0. Line 94 is a SUMMARY row, not a TOTAL row. It was not recomputed and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 57,
+    "note_hash_line": 39,
+    "shard": "ca",
+    "total_pass": 0
+  },
+  "line_count": 95,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 705,
+    "citation_key": 710,
+    "deps_hash": "b9c3de515254",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "as",
+    "causal_propagating_field_live_reaudit_bridge_2026_06_18",
+    "is",
+    "md",
+    "or",
+    "py"
+  ],
+  "note_number": 1713,
+  "open": [
+    "The archived 0.63 / 0.45 table stays non-live.",
+    "The printed live ratios were not recomputed from field evolution.",
+    "Geometry independence, cross-family portability, and a physical wave-speed measurement stay unclaimed.",
+    "A self-consistent retarded-potential field equation and a framework carrier/readout theorem stay unclaimed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The live packet note was not opened.",
+    "The archived row was not opened.",
+    "The dispatch sidecar and the named caches were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 95 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/causal_propagating_field_live_reaudit_bridge_2026_06_18.py",
+  "sha256": "747bebeca1a5b5a347513392d53eaf29c450a6f705b6618c3a072a6d7fb50e28",
+  "source": "docs/CAUSAL_PROPAGATING_FIELD_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "Causal Propagating Field Live Re-Audit Bridge",
+  "wave": "BLS",
+  "yaml_status": "absent"
+}

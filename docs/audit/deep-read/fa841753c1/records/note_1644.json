@@ -1,0 +1,72 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 3720,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-27",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Conditional finite classification of a uniform lift from a 3-label axis law onto 4 endpoint labels. E/T-channel symmetry leaves exactly 2 lifted laws, with radial ratios 1:2 and 2:1. That split is a consequence of the stated premises. The physical quotient, the uniform lift, same-source readout, and calibration stay unproved. The note proposes no new framework primitive. The bold Type is bounded_theorem and is not an audit pass. No bold Status, so status_line is absent. The expected runner line PASS=103, FAIL=0 is not an audit pass. yaml_status is absent. deps_eq_yaml is true. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 105,
+    "note_hash_line": 37,
+    "shard": "s3",
+    "total_pass": 0
+  },
+  "line_count": 137,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4840,
+    "citation_key": 4863,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "be",
+    "frontier_s3_endpoint_fiber_uniform_lift_support_2026_06_27",
+    "is",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1644,
+  "open": [
+    "The physical quotient from 4 endpoint labels onto 3 axis labels is unproved.",
+    "The uniform conditional lift is unproved.",
+    "Same-source endpoint readout is unproved.",
+    "Typing and unit readout calibration stay open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cached runner log was not opened.",
+    "The axiom memo was not reopened for this note.",
+    "The next note was not opened.",
+    "No helper runner is named."
+  ],
+  "reader": "The parent read all 137 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_s3_endpoint_fiber_uniform_lift_support_2026_06_27.py",
+  "sha256": "58b77cf55c8a6447b2b24994535463ed3a88afbc4fa856bb937e9a84d798f1c2",
+  "source": "docs/S3_ENDPOINT_FIBER_UNIFORM_LIFT_SUPPORT_2026-06-27.md",
+  "status_line": "absent",
+  "title": "S3 Endpoint Fiber-Uniform Lift Support",
+  "wave": "BJB",
+  "yaml_status": "absent"
+}

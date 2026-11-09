@@ -64,6 +64,13 @@ Run `python3 docs/audit/scripts/ledger_io.py --materialize` before directly
 using a legacy monolith reader. All ledger writers must call
 `ledger_io.save_ledger()`; direct edits to the ignored monolith are refused.
 
+## External-reader log
+
+The docs-top external read at pin `fa841753c1` is in
+[deep-read/fa841753c1/README.md](deep-read/fa841753c1/README.md).
+Those cards are repair input for later agents. They are not audit verdicts
+and they do not change claim status.
+
 ## Scope-aware fields
 
 The audit lane separates **classification** from **verdict**. Authors may

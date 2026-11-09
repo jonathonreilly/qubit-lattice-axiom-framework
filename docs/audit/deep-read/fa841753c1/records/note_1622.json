@@ -1,0 +1,68 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 3703,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-04; exact supplier repair 2026-07-11",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Exact support for the determinant-power fork: the realification determinant equals the squared modulus of the complex determinant, and the displayed Berezin Gaussian returns the complex determinant. There is no bold Status header. There is no bold Type header. The claim-type line reads positive_theorem and is not a bold Type header. The bold Date is 2026-07-04; exact supplier repair 2026-07-11. yaml_status is absent. deps_eq_yaml is true. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The expected PASS=18, FAIL=0 display is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 1198,
+    "note_hash_line": 37,
+    "shard": "ac",
+    "total_pass": 0
+  },
+  "line_count": 116,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 52,
+    "citation_key": 52,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04",
+    "be",
+    "in",
+    "is",
+    "of",
+    "py",
+    "to"
+  ],
+  "note_number": 1622,
+  "open": [
+    "Physical charged-lepton carrier identification stays outside this theorem.",
+    "The ratio r remains a free dial.",
+    "The 2 by 2 and 3 by 3 Berezin expansions were not recomputed.",
+    "The expected PASS=18, FAIL=0 display was not rerun.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The separate source rows named on the failing lines were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 116 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py",
+  "sha256": "a154fe5c322ceac03859e735afd7aab48e5fa731ccaf5cf1acab7702e538fda5",
+  "source": "docs/ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md",
+  "status_line": "absent",
+  "title": "Complex Determinant and Realification Determinant Power",
+  "wave": "BIF",
+  "yaml_status": "absent"
+}

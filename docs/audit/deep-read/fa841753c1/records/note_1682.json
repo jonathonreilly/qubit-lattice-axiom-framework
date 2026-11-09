@@ -1,0 +1,76 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 6444,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. On a supplied determinant-character/log-character surface, an additive and K/CPT-even phase functional into (R, +) is identically 0, so only modulus/log-modulus data survives. The determinant-character boundary stays supplied and is not derived from Record. Strong-CP and AC_phi_lambda stay open. The bold Type token is absent, so grade_clash is false. The bold Date is 2026-06-18. No bold Status header is present, so status_line is absent. The Boundary line and the Status authority line are not Status headers and are not an audit pass. yaml_status is absent. The parsed yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 330,
+    "note_hash_line": 40,
+    "shard": "re",
+    "total_pass": 0
+  },
+  "line_count": 120,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4716,
+    "citation_key": 4739,
+    "deps_hash": "78fbe012cf29",
+    "out_degree": 2
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "by",
+    "frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18",
+    "in",
+    "is",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1682,
+  "open": [
+    "The physical readout identifications stay outside this algebraic core.",
+    "The determinant-character boundary stays supplied and is not derived from Record.",
+    "strong-CP and AC_phi_lambda still need their own physical-readout bridges.",
+    "Action-level or non-registrable orientation data on a physical strong-CP surface stay unaddressed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache file was not opened.",
+    "The cited Record axiom memo was not opened.",
+    "The cited KCPT bridge and the parent conditional row were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 120 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.py",
+  "sha256": "60530cd3dc3a5c1f16fac07ec02e1386d5c45bca36b59e5a08251502afe4dd27",
+  "source": "docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "Registrable Readout Determinant-Character Algebraic Core Split",
+  "wave": "BKN",
+  "yaml_status": "absent"
+}

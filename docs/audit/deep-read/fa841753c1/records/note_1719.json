@@ -1,0 +1,75 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 5128,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. The proved arithmetic is the scale-free trace pattern of a supplied 6+2 charge split Y_a = a P_6 - 3a P_2. With 6 copies of charge a and 2 copies of charge -3a, the linear trace is 0 and the cubic trace is -48 a^3, nonzero for every a other than 0. Under the supplied convention T(F)=1/2 the mixed color trace equals a and the mixed weak trace equals 0. The color-cubic count is 2. The supplied opposite-chirality witness (4a, -2a, -6a, 0) matches those traces, so the stated subtraction cancels them. At a=1/3 the witness is (4/3, -2/3, -2, 0) and the cubic display is -16/9. The note does not derive the physical U(1) role, P-COMP, P-ABJ, P-REC, or the d_t = 1 cap. No bold Type token is present, so no Type token is compared and grade_clash is false. No bold Status is present, so status_line is absent. The bold Date is 2026-06-18. yaml_status is absent. The yaml list is empty and the ledger list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. prose_status clean is not an audit pass. criticality critical is not an audit pass. total_pass is 0. The printed TOTAL row was not recomputed and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 114,
+    "note_hash_line": 39,
+    "shard": "ab",
+    "total_pass": 0
+  },
+  "line_count": 139,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 37,
+    "citation_key": 37,
+    "deps_hash": "26efa80d91ea",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "On",
+    "an",
+    "as",
+    "by",
+    "frontier_abj_scale_free_native_abelian_anomaly_core_2026_06_18",
+    "in",
+    "is",
+    "it",
+    "md",
+    "of",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1719,
+  "open": [
+    "The physical U(1) role of Y_a stays underived.",
+    "P-COMP, P-ABJ, and P-REC stay open.",
+    "The final d_t = 1 cap stays open.",
+    "The printed TOTAL row was not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cited dependency note was not opened.",
+    "No helper path is stored, and none was opened.",
+    "The ledger previous_audits entry was not copied.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 139 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_abj_scale_free_native_abelian_anomaly_core_2026_06_18.py",
+  "sha256": "8fdd377582a6e57e785c324c75ad5f88d1a1811c60bd1642b8c962c581063e3b",
+  "source": "docs/ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "ABJ Scale-Free Native Abelian Anomaly Core Boundary",
+  "wave": "BLY",
+  "yaml_status": "absent"
+}

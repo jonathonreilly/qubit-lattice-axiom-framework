@@ -1,0 +1,75 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 6013,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Exact spectral-projector algebra on one stipulated C^2. The displayed qubit projectors coincide with the spectral projectors of Q_H = diag(1, 0) on that basis. The physical same-surface carrier bridge stays open. No bold Type token is compared, so grade_clash is false. The bold Status is exact support; no positive Y_T closure. That status line is not an audit pass. yaml_status is absent. The yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The printed SUMMARY row is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 259,
+    "note_hash_line": 42,
+    "shard": "yt",
+    "total_pass": 0
+  },
+  "line_count": 209,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 7104,
+    "citation_key": 7143,
+    "deps_hash": "d15dce452b62",
+    "out_degree": 4
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "bounded_theorem",
+    "by",
+    "frontier_yt_ew_neutral_projector_same_surface_carrier",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1673,
+  "open": [
+    "The physical same-surface carrier bridge stays open.",
+    "Positive Y_T closure stays open.",
+    "The printed SUMMARY row has no numeric pass count and is not an audit pass.",
+    "The named generated output was not opened.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named generated output was not opened.",
+    "The clean ledger deps were not opened. The dirty ledger dep was not stored.",
+    "No helper module was executed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 209 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_yt_ew_neutral_projector_same_surface_carrier.py",
+  "sha256": "91465345686cec8ba03b2e54cbcb6bd2918580723710c192fe7451328933f51b",
+  "source": "docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md",
+  "status_line": "exact support; no positive Y_T closure.",
+  "title": "Y_T EW Neutral-Projector Same-Surface Carrier Theorem",
+  "wave": "BKE",
+  "yaml_status": "absent"
+}

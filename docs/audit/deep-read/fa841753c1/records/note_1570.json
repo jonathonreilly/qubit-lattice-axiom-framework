@@ -1,0 +1,82 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 20430,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-12",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Interesting exact compatibility: any normalized formation coordinate on the 2-cell menu can sit over the same tied measure, and the note-owned map sends share 1/2 to r = 1/2 and share 1/3 to r = 1 without selecting either share. This is not an axiom stop. total_pass is 0. There is no status header. The date line is 2026-07-12. The claim-type hint is bounded_theorem and is not a Type header. deps_eq_yaml is false. deps_order_differs is false. The path and the title were not stored. The runner path is stored. The next row is clean. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 5,
+    "helpers": [],
+    "lines": 62,
+    "note_hash_line": 44,
+    "shard": "ko",
+    "total_pass": 0
+  },
+  "line_count": 458,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 3313,
+    "citation_key": 3328,
+    "deps_hash": "f5e5f6540c0f",
+    "out_degree": 6
+  },
+  "not_filed": [
+    "At",
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "do",
+    "frontier_formation_gate_relocation_2026_07_12",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1570,
+  "open": [
+    "The note-owned energy dictionary stays open.",
+    "The formation coordinate on the 2-cell menu stays open.",
+    "A binding from that coordinate to the tied measure stays open.",
+    "A carrier beyond this tied two-slice corner stays open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 458 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_formation_gate_relocation_2026_07_12.py",
+  "sha256": "b57b98f70c738d6f152cf4f36320101f6688491abf2a795642daa0f95ebd45f1",
+  "source": "",
+  "status_line": "absent",
+  "title": "",
+  "wave": "BGF",
+  "yaml_status": "absent"
+}

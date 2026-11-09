@@ -1,0 +1,79 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 7501,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-17",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. The shipped complex 1-3 carriers are not a small correction to the Schur base. An independent exact check on the printed digits gives |xi_u| / |c13_u(base)| agreeing with 101.908728437 and |xi_d| / |c13_d(base)| agreeing with 6.643337509, with relative square error below 1e-7. Both ratios sit above 5, so the caps R <= 1, R <= 2, and R <= 5 exclude the shipped fit. The same check agrees with the printed shares 0.990442514 and 0.913327261 of the completed 1-3 slot. The capped-surface table, including J/T = 0.128867 at R = 1 and J/T = 0.984134 at R = 100, was not recomputed. The runner and the parent completion runner were not executed. xi_u, xi_d, the comparator targets, and a framework-native normalization stay open. No bold Type is present, so grade_clash is false and no Type token is compared. The ledger claim_type is bounded_theorem. The joined Status is the exact-support / bounded-support sentence and is not proposed_retained. The bold Date is 2026-06-17. yaml_status is absent. The ledger dependency list is empty and the yaml list is empty, so deps_eq_yaml is true. The ledger effective status is unaudited and is not an audit pass. prose_status clean is not an audit pass. criticality leaf is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [
+      "scripts/canonical_plaquette_surface.py",
+      "scripts/frontier_quark_cp_carrier_completion.py"
+    ],
+    "lines": 110,
+    "note_hash_line": 41,
+    "shard": "qu",
+    "total_pass": 0
+  },
+  "line_count": 196,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4518,
+    "citation_key": 4539,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "be",
+    "by",
+    "frontier_quark_cp_small_correction_boundary",
+    "in",
+    "is",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1737,
+  "open": [
+    "xi_u and xi_d stay underived.",
+    "The comparator targets stay underived.",
+    "A framework-native normalization for the non-perturbative carrier stays open.",
+    "The capped-surface scan was not recomputed.",
+    "The parent completion note was not opened.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not executed.",
+    "The helper runners were not executed.",
+    "The ledger previous_audits entry was not opened.",
+    "The parent completion note was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 196 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_quark_cp_small_correction_boundary.py",
+  "sha256": "697139f0731f69ec6163b8289b28303e6c9366966a6992a620e5f2a71755d664",
+  "source": "docs/QUARK_CP_SMALL_CORRECTION_BOUNDARY_NOTE_2026-06-17.md",
+  "status_line": "exact-support / bounded-support boundary for the small-correction residual; no retained-status upgrade",
+  "title": "Quark CP Small-Correction Boundary Note",
+  "wave": "BMQ",
+  "yaml_status": "absent"
+}

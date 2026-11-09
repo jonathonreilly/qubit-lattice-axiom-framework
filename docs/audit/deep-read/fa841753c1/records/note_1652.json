@@ -1,0 +1,73 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 7720,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-21",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Direct-consumer residual map for the open Route-2 endpoint triple. The target (-1, -2, 21/4) is exactly equivalent to rho_T = -1, mu = -2, rho_E = 21/4, q_T = 5/6, q_E = 15/8, c_TE = -8/9, and q_E/q_T = 9/4. The note does not derive the endpoint triple and does not close the parent open_gate row. No bold Type, so the Type token is absent. No bold Status, so status_line is absent. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 63,
+    "note_hash_line": 45,
+    "shard": "s3",
+    "total_pass": 0
+  },
+  "line_count": 140,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4844,
+    "citation_key": 4867,
+    "deps_hash": "8e4127b40283",
+    "out_degree": 7
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "do",
+    "frontier_s3_route2_endpoint_triple_residual_map_2026_06_21",
+    "is",
+    "it",
+    "md",
+    "of",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1652,
+  "open": [
+    "The endpoint triple is not derived.",
+    "The parent open gate stays open.",
+    "Each selector edge has its own proof burden and none is supplied here.",
+    "The surface sweep and PASS=102 were not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cached runner log was not opened.",
+    "The authority-link notes were not opened.",
+    "The parent coupling note was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 140 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_s3_route2_endpoint_triple_residual_map_2026_06_21.py",
+  "sha256": "8212e8b2a73a1e3c227e94ed6115984339bae5bb14407a286701aae8cdb08973",
+  "source": "docs/S3_ROUTE2_ENDPOINT_TRIPLE_RESIDUAL_MAP_BOUNDED_NOTE_2026-06-21.md",
+  "status_line": "absent",
+  "title": "S3 Route-2 Endpoint Triple Residual Map",
+  "wave": "BJJ",
+  "yaml_status": "absent"
+}

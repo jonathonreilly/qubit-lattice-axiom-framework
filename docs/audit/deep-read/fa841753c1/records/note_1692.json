@@ -1,0 +1,79 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 8539,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Supplied neutral order-parameter coordinate plus a positive coefficient gives rho_* = A(L) v(L)^4 and the positive ratio v(L)/v_ref = (A_ref/A(L))^(1/4). The note does not identify that coordinate with a physical Higgs density, does not select the endpoint surface, and does not fix the absolute electroweak scale. Bold Type bounded_theorem matches the ledger claim type, so grade_clash is false. The bold Date is 2026-06-18. The bold Status is bounded support with endpoint selection and absolute scale still open, and it is not an audit pass. The yaml fence is present, so yaml_status is present, while the parsed yaml list is empty. deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The expected TOTAL row was not recomputed and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [],
+    "lines": 560,
+    "note_hash_line": 296,
+    "shard": "hi",
+    "total_pass": 0
+  },
+  "line_count": 223,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 2248,
+    "citation_key": 2262,
+    "deps_hash": "fa28713ad572",
+    "out_degree": 2
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "at",
+    "bounded_theorem",
+    "by",
+    "frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1692,
+  "open": [
+    "Endpoint selection stays open.",
+    "The absolute electroweak scale stays unfixed.",
+    "The hierarchy endpoint coefficient surface is not identified with the physical Higgs density.",
+    "H is not established as a physical Higgs carrier, and gauge invariance stays unestablished.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cited fixed-density bridge was not opened.",
+    "The redacted ledger dep was not opened.",
+    "The expected TOTAL row was not recomputed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 223 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py",
+  "sha256": "cf8bfc734a10fca3f6a3a6c73afc80c6c7a62872c082050ba772a02bc2268c67",
+  "source": "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+  "status_line": "bounded support for the EW order-parameter D4 density readout bridge; endpoint selection and absolute scale remain open.",
+  "title": "Hierarchy EW Order-Parameter D4 Density Readout Bridge",
+  "wave": "BKX",
+  "yaml_status": "present"
+}

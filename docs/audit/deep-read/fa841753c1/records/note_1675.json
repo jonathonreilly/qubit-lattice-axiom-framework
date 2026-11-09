@@ -1,0 +1,74 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 4329,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Narrow route no-go. Record finite additivity and K/CPT orbit constancy do not force a per-record scalar to depend only on the registered datum. An unregistered scale q can rescale the additive functional. P-dep stays an extra premise. No bold Type token is compared, so grade_clash is false. No bold Status is present, so status_line is absent. The actual-current-surface label is not a Status header and is not an audit pass. yaml_status is absent. The yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The discipline-gate disposition is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 165,
+    "note_hash_line": 39,
+    "shard": "un",
+    "total_pass": 0
+  },
+  "line_count": 122,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5600,
+    "citation_key": 5638,
+    "deps_hash": "c8eee4235fc9",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "as",
+    "be",
+    "do",
+    "in",
+    "is",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py"
+  ],
+  "note_number": 1675,
+  "open": [
+    "P-dep stays an extra premise, not a consequence of the cited Record clauses.",
+    "A physical-readout or extensionality theorem that excludes unregistered context data stays open.",
+    "The discipline-gate disposition is not an audit pass.",
+    "The expected runner result was masked and was not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner path is dirty and was not stored or executed.",
+    "The cited axiom note was not opened.",
+    "No helper module was executed.",
+    "The conditional row named on a masked line was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 122 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "96480d47c70d12c771d1ad228bf868466bc2339ceebc6308a1e22417bca12934",
+  "source": "",
+  "status_line": "absent",
+  "title": "",
+  "wave": "BKG",
+  "yaml_status": "absent"
+}

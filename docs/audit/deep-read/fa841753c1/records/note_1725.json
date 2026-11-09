@@ -1,0 +1,83 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 6788,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-17",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. The checked identity is (1+s_a)*(1+s_b) = 1 + s_a + s_b + s_a*s_b, so the effect match Tr(rho (E_a tensor E_b)) = Tr(sigma E_a) Tr(sigma E_b) holds for every pair exactly when T_ab = s_a s_b. Substituting that relation into the supplied expansion gives rho = sigma tensor sigma. That is the usual recognition criterion on M_2(C). Equal marginals do not suffice: the diagonal witness has marginal diag(p, 1-p) on both copies and m(0,1) = 0, while the separated cell p(1-p) vanishes only at p = 0 and p = 1. The sample p = 2/5 gives the separated cell 6/25. Physical independence, iid repetition, record-stack stationarity, a measurement instrument, R-D, an occupancy cell, and a reason that repeated records obey the criterion stay open. The note does not add a new probability axiom or a new framework axiom. Bold Type bounded_theorem matches the ledger claim_type, so grade_clash is false. The joined Status is source-side exact support; independent audit required before any downstream status change. That sentence is not an audit pass. proposed_retained_exact is false. The bold Date is 2026-06-17. The source path and the title fail the card scan and are not stored. yaml_status is absent. The ledger dependency list has length 4 with one dirty entry, and the yaml list is empty, so deps_eq_yaml is false. The ledger effective status is unaudited and is not an audit pass. prose_status clean is not an audit pass. criticality medium is not an audit pass. total_pass is 0. The note has no TOTAL row. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [],
+    "lines": 127,
+    "note_hash_line": 42,
+    "shard": "st",
+    "total_pass": 0
+  },
+  "line_count": 175,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5200,
+    "citation_key": 5229,
+    "deps_hash": "ad3b0e02962c",
+    "out_degree": 4
+  },
+  "not_filed": [
+    "If",
+    "It",
+    "an",
+    "as",
+    "be",
+    "bounded_theorem",
+    "by",
+    "if",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1725,
+  "open": [
+    "Physical independence stays open.",
+    "iid repetition stays open.",
+    "Record-stack stationarity stays open.",
+    "A measurement instrument stays open.",
+    "R-D stays open.",
+    "An occupancy cell stays open, and r is not fixed.",
+    "A physical reason that repeated records obey the criterion stays open.",
+    "The two masked consequence levels were not copied.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner line is dirty and was not executed.",
+    "The dirty ledger dependency was not opened.",
+    "The ledger previous_audits entry is dirty and was not opened.",
+    "The cited axiom memo was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 175 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "f14d89abe84a216b409a4804d7c746088f11059b831e4ea43691901e3540d762",
+  "source": "",
+  "status_line": "source-side exact support; independent audit required before any downstream status change.",
+  "title": "",
+  "wave": "BME",
+  "yaml_status": "absent"
+}

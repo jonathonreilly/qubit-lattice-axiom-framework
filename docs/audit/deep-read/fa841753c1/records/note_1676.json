@@ -1,0 +1,82 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 15106,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Narrow route-exhaustion no-go on the current direct-universal surface. The reviewed current routes do not derive the full curvature-localization operator Pi_curv on PL S^3 x R. Preserved positives stay in place, including the A1 lapse/trace projector. The note is not an absolute GR no-go and does not say future routes are impossible. No bold Type token is compared, so grade_clash is false. No bold Status is present, so status_line is absent. The source-side status bounded-support is not a Status header and is not an audit pass. yaml_status is absent. The yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The printed PASS row is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 64,
+    "note_hash_line": 46,
+    "shard": "un",
+    "total_pass": 0
+  },
+  "line_count": 240,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5555,
+    "citation_key": 5593,
+    "deps_hash": "da68468a61c3",
+    "out_degree": 8
+  },
+  "not_filed": [
+    "If",
+    "It",
+    "No",
+    "On",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "do",
+    "frontier_universal_gr_picurv_route_exhaustion_no_go_2026_06_18",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1676,
+  "open": [
+    "A distinguished connection on the complement stays unsupplied.",
+    "The TT/gauge reduction on PL S^3 x R stays unsupplied.",
+    "Full Pi_curv on the direct-universal surface stays underived.",
+    "The printed PASS row was not recomputed and is not an audit pass.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache file was not opened.",
+    "The clean ledger deps were not opened. The dirty ledger dep was not stored.",
+    "No helper module was executed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 240 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_universal_gr_picurv_route_exhaustion_no_go_2026_06_18.py",
+  "sha256": "ee264af468b70e2105cd65c3209da80d284af6cfe9eae666f45f28d10a67cfa5",
+  "source": "docs/UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "Universal GR `Pi_curv` Route-Exhaustion No-Go Gate on the Current Direct-Universal Surface",
+  "wave": "BKH",
+  "yaml_status": "absent"
+}

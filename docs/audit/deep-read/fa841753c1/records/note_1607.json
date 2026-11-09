@@ -1,0 +1,79 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 8031,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-05",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Narrow equivariance bridge on the hw=1 corner triplet. A sigma-invariant value on that orbit is constant, so it does not label the corners by a bijection. There is no bold Status header. The bold Type is bounded_theorem and is not an audit pass. The date line is 2026-07-05. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [],
+    "lines": 149,
+    "note_hash_line": 41,
+    "shard": "st",
+    "total_pass": 0
+  },
+  "line_count": 128,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5157,
+    "citation_key": 5186,
+    "deps_hash": "2e938b5e5d65",
+    "out_degree": 3
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "bounded_theorem",
+    "by",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_2026_07_05",
+    "to"
+  ],
+  "note_number": 1607,
+  "open": [
+    "Admitted premises on the P1/P2/P3 surface stay outside this bridge.",
+    "Labeling values and paired AC content stay underived.",
+    "The axiom sentences stay attributions of this note.",
+    "The repo runner was not run. The word sweep here uses the 3-corner sign representation.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 128 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_2026_07_05.py",
+  "sha256": "9dd378b1cad052680bbb4ee8858749f25a6309b166df4451197aafaa1475b651",
+  "source": "docs/STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md",
+  "status_line": "absent",
+  "title": "Staggered-Dirac Substep 4 \u2014 A_min Joint-C\u2083 Automorphism / Selector-Invariance Bridge (Narrow Theorem)",
+  "wave": "BHQ",
+  "yaml_status": "absent"
+}

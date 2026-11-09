@@ -1,0 +1,82 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 11454,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-04",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Conditional bridge: if a graded constraint and full composite menus are assumed, imported Gleason forces Born trace form on the composite and on single-site restrictions. The grading primitive is not adopted. There is no bold Status header. The bold Type is bounded_theorem and is not an audit pass. The bold Date is 2026-07-04. yaml_status is present. deps_eq_yaml is true. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The displayed scorecard is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 1526,
+    "note_hash_line": 39,
+    "shard": "bo",
+    "total_pass": 0
+  },
+  "line_count": 200,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 631,
+    "citation_key": 636,
+    "deps_hash": "c8eee4235fc9",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "born_form_composite_gleason_bridge_2026_07_04",
+    "bounded_theorem",
+    "by",
+    "do",
+    "if",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1619,
+  "open": [
+    "The grading primitive is assumed, not approved, and is not shown to exist.",
+    "H4 composite-menu eligibility is a hypothesis, not axiom content.",
+    "Gleason is an imported bridge and was not re-proved.",
+    "The runner scorecard was not rerun.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "Gleason's 1957 source was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 200 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/born_form_composite_gleason_bridge_2026_07_04.py",
+  "sha256": "bd019a4a2ba0827b428c4af6db1720b2a0f27f0b1a0aaf8f065d0f90fb69163f",
+  "source": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+  "status_line": "absent",
+  "title": "Born Form From Lawful Graded Constraint via Composite Gleason (Bridge Note)",
+  "wave": "BIC",
+  "yaml_status": "present"
+}

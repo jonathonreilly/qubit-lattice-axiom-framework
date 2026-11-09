@@ -1,0 +1,76 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 9871,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-17",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. The note shows that a Route-2 endpoint constraint which does not evaluate the E-center column is independent of rho_E, so it cannot select rho_E = 21/4. An independent exact check confirms the printed images: the readout sends E-shell to (1, 0), T-shell to (0, -2), and T-center to (0, -5/3) for every rho_E, while the E-center image is (1 + rho_E/6, 0). The blind columns span a rank-3 space, and E-center minus E-shell = (0, 0, 1/6, 0) lies outside it. Under the granted T-side data, rho_E = 21/4, the ratio 15/8, and the ratio -8/9 are the same condition, and the last ratio recovers 21/4. The listed alternatives -1, 0, 1, and 21/4 share the blind images and differ on the E-center image. The target ratios are not derived. The runner was not executed. The printed PASS=14 FAIL=0 was not recomputed and is not an audit pass. The cited readout-map note was not opened. Bold Type is no_go and matches the ledger claim_type, so grade_clash is false. The Status line fails the card scan, so the text is not stored. proposed_retained_exact is false. The bold Date is 2026-06-17. yaml_status is absent. The ledger dependency list has length 1 and the yaml list is empty, so deps_eq_yaml is false. The ledger effective status is unaudited and is not an audit pass. prose_status not_evaluated_pre_vocab_lint is not an audit pass. criticality medium is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [],
+    "lines": 157,
+    "note_hash_line": 39,
+    "shard": "qu",
+    "total_pass": 0
+  },
+  "line_count": 291,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4548,
+    "citation_key": 4569,
+    "deps_hash": "5d74900d3513",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "by",
+    "frontier_quark_route2_e_center_blindness_no_go",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1736,
+  "open": [
+    "The positive target gamma_T(center)/gamma_E(center) = -8/9 stays open.",
+    "An E-center lift or source-domain rule stays open.",
+    "The cited readout-map note was not opened.",
+    "The runner was not executed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not executed.",
+    "The ledger previous_audits entries were not opened.",
+    "The cited readout-map note was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 291 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_quark_route2_e_center_blindness_no_go.py",
+  "sha256": "9f866b40e55ada0b50febac3c59c694b3de759371177925e85bcb46717ecdef3",
+  "source": "docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md",
+  "status_line": "",
+  "title": "Quark Route-2 E-Center Blindness No-Go",
+  "wave": "BMP",
+  "yaml_status": "absent"
+}

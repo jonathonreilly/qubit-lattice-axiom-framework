@@ -1,0 +1,80 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 10595,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-09",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Bounded carrier lemma on a finite region. Two supplied admissions, a commuting joint presentation and multiplicity m = 1, select the tensor carrier. This is not a derivation from the axioms. The bold Status line declares a bounded-premise packet and is not an audit pass. The bold Type is bounded_theorem and is not an audit pass. The date line is 2026-07-09. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The runner scorecard is not an audit grade. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [],
+    "lines": 1563,
+    "note_hash_line": 39,
+    "shard": "qu",
+    "total_pass": 0
+  },
+  "line_count": 207,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4591,
+    "citation_key": 4612,
+    "deps_hash": "c8eee4235fc9",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "bounded_theorem",
+    "by",
+    "frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1600,
+  "open": [
+    "The commuting joint presentation stays a supplied admission.",
+    "The multiplicity selection m = 1 stays a named admission.",
+    "The one-site Gleason route stays outside this carrier.",
+    "This note does not derive a probability measure.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 207 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py",
+  "sha256": "3ed48ed831b33b320565363662b3ae317149767388377f954e1e4b75acc8e7c8",
+  "source": "docs/QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md",
+  "status_line": "declared bounded-premise packet. This bridge consumes (J1) and",
+  "title": "Qubit-Lattice Joint Presentation Tensor Substrate Bridge (Narrow)",
+  "wave": "BHJ",
+  "yaml_status": "absent"
+}

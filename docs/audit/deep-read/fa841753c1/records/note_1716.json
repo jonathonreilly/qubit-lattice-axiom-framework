@@ -1,0 +1,71 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 3846,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "absent",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. The proved claim is the dimensionless Sommer root for a supplied Cornell potential and the supplied target 1.65. With F(R) = sigma + e/R^2, the identity F(r0) r0^2 = sigma (r0/a)^2 + e holds, and the note sets that equal to 1.65. The printed sigma, e, and r0/a satisfy that equation at binary rounding, and 0.5 divided by the printed root equals the printed a_fm in that same binary evaluation. The 0.5 fm anchor is not an input to r0/a. The note does not derive the physical fm scale, QCD running, or alpha_s(M_Z). The title names alpha_s, and the proved object is the dimensionless root. The bold Status is the single line exact support theorem / source-side audit unlock candidate. That status line is not an audit pass. No bold Type token is present, so no Type token is compared and grade_clash is false. No bold Date is present, so date_line is absent. yaml_status is absent. Both dependency lists are empty, so deps_eq_yaml is true and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. prose_status clean is not an audit pass. total_pass is 0. The printed SUMMARY row was not recomputed and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 184,
+    "note_hash_line": 37,
+    "shard": "al",
+    "total_pass": 0
+  },
+  "line_count": 164,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 473,
+    "citation_key": 474,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "If",
+    "It",
+    "as",
+    "by",
+    "frontier_alpha_s_sommer_static_potential_root_kernel_2026_06_18",
+    "in",
+    "is",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1716,
+  "open": [
+    "The physical anchor r0 = 0.5 fm stays underived.",
+    "alpha_s(M_Z) stays unpromoted.",
+    "QCD running, threshold matching, and Wilson-surface normalization stay unsupplied.",
+    "The printed Cornell coefficients were not recomputed from the certificate.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache file was not opened.",
+    "The certificate json was not opened.",
+    "The parent-pressure note was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 164 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_alpha_s_sommer_static_potential_root_kernel_2026_06_18.py",
+  "sha256": "af35cc4dd0d4be95f9493ef8eb8f2cf6d71f44acba06ad7ff71d10cfc11926a6",
+  "source": "docs/ALPHA_S_SOMMER_STATIC_POTENTIAL_ROOT_KERNEL_THEOREM_NOTE_2026-06-18.md",
+  "status_line": "exact support theorem / source-side audit unlock candidate",
+  "title": "Alpha_s Sommer Static-Potential Root Kernel Theorem Note (2026-06-18)",
+  "wave": "BLV",
+  "yaml_status": "absent"
+}

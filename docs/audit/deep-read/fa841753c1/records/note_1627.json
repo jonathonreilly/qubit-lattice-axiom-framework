@@ -1,0 +1,78 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 20460,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-02",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Bounded lattice-dual theorem. The heat-kernel member is an exact signed Gaussian on the regular rho-shifted lattice, gluing-stable, and the center grading is its coset shadow. A continuous Weyl-consistent label-shift theta slot on the nonabelian torus dual is obstructed. Residual (i-b) narrows to frame consistency and is not discharged. There is no bold Status header. The bold Type is bounded_theorem and is not an audit pass. The bold Date is 2026-07-02. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The runner scorecard is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 123,
+    "note_hash_line": 41,
+    "shard": "th",
+    "total_pass": 0
+  },
+  "line_count": 385,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5406,
+    "citation_key": 5438,
+    "deps_hash": "ac92544471f6",
+    "out_degree": 3
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1627,
+  "open": [
+    "Weyl-frame consistency for glued surfaces is not derived.",
+    "The pairing insertion (ii') is not derived.",
+    "Defect closure (i-a) stays open.",
+    "The shift-slot obstruction does not forbid theta.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The cited character-recurrence note and the RP-half note were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 385 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "732d945bcd46aeb84f8bba8937cba495329d802f44a3d004980d1601fbcddc8e",
+  "source": "",
+  "status_line": "absent",
+  "title": "",
+  "wave": "BIK",
+  "yaml_status": "absent"
+}

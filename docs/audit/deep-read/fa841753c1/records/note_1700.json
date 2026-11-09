@@ -1,0 +1,76 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 4644,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. The note splits supplied Gate B connectivity into GB-S3a, a label/offset-preserving forward stencil on a finite Z^3 slab, and GB-S3b, the still-open physical selection of that stencil. S has 9 offsets (1, dy, dz) with dy and dz in {-1, 0, 1}, layer step 1, and graph distance 1 + |dy| + |dz| at most 3. It does not derive Gate B dynamics, a physical gravity readout, GB-S1b scalar normalization, or GB-S2 propagation semantics. The bold Status is a source-bridge label and is not an audit pass. No bold Type token is present, so grade_clash is false. The bold Date is 2026-06-18. yaml_status is absent. Ledger deps and the parsed yaml list are both empty, so deps_eq_yaml is true and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. prose_status not_evaluated_pre_vocab_lint is not an audit pass. total_pass is 0. Line 110 prints TOTAL: PASS=13 FAIL=0 and was not recomputed. It is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [
+      "scripts/gate_b_connectivity_tolerance.py"
+    ],
+    "lines": 148,
+    "note_hash_line": 39,
+    "shard": "ga",
+    "total_pass": 0
+  },
+  "line_count": 111,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 1923,
+    "citation_key": 1937,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "be",
+    "by",
+    "gate_b_local_stencil_connectivity_bridge_2026_06_18",
+    "in",
+    "is",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1700,
+  "open": [
+    "Physical selection of this stencil as the Gate B growth rule stays open.",
+    "GB-S1b scalar normalization stays unsupplied.",
+    "GB-S2 propagation and readout semantics stay unsupplied.",
+    "A physical gravity readout for the parent Gate B row stays unsupplied.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache file was not opened.",
+    "The cited notes were not opened.",
+    "The helper script was not executed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 111 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/gate_b_local_stencil_connectivity_bridge_2026_06_18.py",
+  "sha256": "0c6d56737ed93e2a047dc8718cb517cde2672903fbd40f0cdd5ee093b1872c33",
+  "source": "docs/GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
+  "status_line": "bounded-support source bridge for `GB-S3a`; not a Gate B dynamics closure and not an audit-ratified effective status.",
+  "title": "Gate B Local Stencil Connectivity Bridge Bounded Theorem Note",
+  "wave": "BLF",
+  "yaml_status": "absent"
+}

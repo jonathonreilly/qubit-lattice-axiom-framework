@@ -1,0 +1,84 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 22522,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-12",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Interesting exact ensemble equality: under the note's declared readings, a real input through intertwining channels gives equal registered shares on the two conjugate doublet sectors. A jointly even witness still separates those sectors. The supplied grain family, if kept, has unique interior durable share 1/2 and hence r = 1/2, while the dimension comparator gives r = 1. Neither value is derived. This is not an axiom stop. total_pass is 0. There is no status header. The bold Type on line 4 is bounded_theorem. The date line is 2026-07-12. deps_eq_yaml is false. deps_order_differs is false. The path and the title were not stored. The runner path is stored. The next row is clean. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [],
+    "lines": 61,
+    "note_hash_line": 43,
+    "shard": "kc",
+    "total_pass": 0
+  },
+  "line_count": 484,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 3189,
+    "citation_key": 3204,
+    "deps_hash": "a130e116ecf1",
+    "out_degree": 5
+  },
+  "not_filed": [
+    "At",
+    "It",
+    "No",
+    "On",
+    "an",
+    "as",
+    "at",
+    "be",
+    "bounded_theorem",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "kcpt_orbit_constant_registered_occupancy_2026_07_12",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1573,
+  "open": [
+    "The real-input reading stays open.",
+    "The intertwining-channel reading stays open.",
+    "The supplied two-sector identification stays open.",
+    "A physical carrier identification stays open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 484 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/kcpt_orbit_constant_registered_occupancy_2026_07_12.py",
+  "sha256": "19b45435fc7cbbbdb5c1474b3e7642ed7abba66eab28c6c6b088fd047a09fbcf",
+  "source": "",
+  "status_line": "absent",
+  "title": "",
+  "wave": "BGI",
+  "yaml_status": "absent"
+}

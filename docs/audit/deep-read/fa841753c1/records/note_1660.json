@@ -1,0 +1,72 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 4732,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-21",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Current-bank gap no-go for a readout-only inverse-square coefficient shortcut. The structural value (w_E/w_T)^-2 = 9/4 is already in the bank. Promoting it to a readout coefficient law would give q_E = 15/8 and rho_E = 21/4. That coefficient arrow is absent. No bold Type, so the Type token is absent. No bold Status, so status_line is absent. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 59,
+    "note_hash_line": 41,
+    "shard": "qu",
+    "total_pass": 0
+  },
+  "line_count": 136,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4562,
+    "citation_key": 4583,
+    "deps_hash": "f2a1d23834bb",
+    "out_degree": 3
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "frontier_quark_route2_readout_inverse_square_gate_no_go_2026_06_21",
+    "is",
+    "it",
+    "md",
+    "no",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1660,
+  "open": [
+    "The endpoint triple stays open.",
+    "rho_E = 21/4 is not derived.",
+    "The coefficient arrow to readout_coefficient_law_p2 is absent.",
+    "The expected PASS=61 FAIL=0 line was not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cached runner log was not opened.",
+    "The authority-link notes were not opened.",
+    "The cited Route-2 notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 136 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_quark_route2_readout_inverse_square_gate_no_go_2026_06_21.py",
+  "sha256": "c9f30505e4234af4cf0fa6d2d60c035e0b72fd2c24e9513efa45fead9c5d0872",
+  "source": "docs/QUARK_ROUTE2_READOUT_INVERSE_SQUARE_GATE_NO_GO_NOTE_2026-06-21.md",
+  "status_line": "absent",
+  "title": "Quark Route-2 Readout Inverse-Square Gate No-Go",
+  "wave": "BJR",
+  "yaml_status": "absent"
+}

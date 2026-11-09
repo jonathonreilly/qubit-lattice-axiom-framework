@@ -1,0 +1,75 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 4975,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-17",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. On the supplied one-mode CAR surface, n = a^dag a is the number operator: n^2 = n, the spectrum is {0,1}, [n, a] = -a, and [n, a^dag] = a^dag. The same commutators leave an additive scalar, and the vacuum condition R|0> = 0 removes it, so the normalized generator is n = diag(0,1). On a finite site set the checked identity is [a_x^dag a_y, n_p] = delta_yp a_x^dag a_p - delta_px a_p^dag a_y. That is the usual CAR number-generator identity. Identifying rho_x = chibar_x chi_x with this n_x is a naming bridge on a supplied surface. The Kawamoto-Smit kinetic realization, the P-FLUX selector, boundary holonomy, species and generation labeling, anomaly cancellation, and continuum Noether theory stay open. The coefficient matrix remains a supplied exhibit. Bold Type positive_theorem matches the ledger claim_type, so grade_clash is false. No bold Status is present, so status_line is absent. The yaml fence records surface positive-theorem, proposal_allowed false, and bare_retained_allowed false. Those fields are not an audit pass. The bold Date is 2026-06-17. The yaml dependency list is empty while the ledger dependency list has length 1, so deps_eq_yaml is false. The ledger effective status is unaudited and is not an audit pass. prose_status clean is not an audit pass. criticality medium is not an audit pass. total_pass is 0. The note has no TOTAL row. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 161,
+    "note_hash_line": 39,
+    "shard": "st",
+    "total_pass": 0
+  },
+  "line_count": 152,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5142,
+    "citation_key": 5171,
+    "deps_hash": "db50a4c55f07",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "by",
+    "in",
+    "is",
+    "it",
+    "md",
+    "of",
+    "on",
+    "or",
+    "py",
+    "staggered_dirac_local_density_readout_bridge_2026_06_17"
+  ],
+  "note_number": 1726,
+  "open": [
+    "The Kawamoto-Smit kinetic realization stays open.",
+    "The P-FLUX selector stays open.",
+    "Boundary holonomy stays open.",
+    "Species and generation labeling stay open.",
+    "Anomaly cancellation and continuum Noether theory stay open.",
+    "The coefficient matrix remains a supplied exhibit.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache was not opened.",
+    "The Grassmann/CAR dependency was not opened.",
+    "The ledger previous_audits entries are dirty and were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 152 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/staggered_dirac_local_density_readout_bridge_2026_06_17.py",
+  "sha256": "ffa8df9a8d1eb5103b311f27d531dbb2f45eab5ae9fe7abd4e59c968f2161701",
+  "source": "docs/STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md",
+  "status_line": "absent",
+  "title": "Staggered-Dirac Local Density Readout Bridge Narrow Theorem Note",
+  "wave": "BMF",
+  "yaml_status": "fenced"
+}

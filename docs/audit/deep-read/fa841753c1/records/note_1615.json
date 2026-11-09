@@ -1,0 +1,75 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 6082,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-04",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Owner routing preview for a proposed Record sentence, later marked as having no pending owner decision. There is no bold Status header. The bold Type is meta and is not an audit pass. The bold Date is 2026-07-04. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is meta and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 57,
+    "note_hash_line": 39,
+    "shard": "re",
+    "total_pass": 0
+  },
+  "line_count": 116,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4629,
+    "citation_key": 4652,
+    "deps_hash": "b84390eaced6",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "at",
+    "by",
+    "if",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "to"
+  ],
+  "note_number": 1615,
+  "open": [
+    "No owner decision is pending on this pager.",
+    "The 2026-07-07 import-discipline note was not opened.",
+    "The reserve wording is only a fallback if a fresh-context audit refuses the inventory step.",
+    "This pager does not certify the chain or the arrow.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "No primary runner is named, so none was run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The 2026-07-07 import-discipline note was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 116 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "151a544c734d275a6e722e2d8ddfbb5a1fdf33529c7d085c54c7a1f6174e1381",
+  "source": "docs/RECORD_COMPARABILITY_OWNER_ONE_PAGER_2026-07-04.md",
+  "status_line": "absent",
+  "title": "Owner One-Pager: One Configuration Of Records",
+  "wave": "BHY",
+  "yaml_status": "absent"
+}

@@ -1,0 +1,80 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 13611,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-03",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Repair that withdraws a partition-ratio route to r = 1/2. The quoted Record sentences do not state the statistical-slot rule. A supplied slot rule makes outcome count 1 and Cartesian count 2 disagree, and a further supplied energy law then sets r. There is no bold Status header. The bold Type is bounded_theorem and is not an audit pass. The bold Date is 2026-07-03. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The gate PASS is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [],
+    "lines": 323,
+    "note_hash_line": 42,
+    "shard": "ko",
+    "total_pass": 0
+  },
+  "line_count": 314,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 3356,
+    "citation_key": 3371,
+    "deps_hash": "9cce8446040f",
+    "out_degree": 4
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "be",
+    "by",
+    "do",
+    "frontier_koide_occupancy_locked_record_outcomes_2026_07_03",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1625,
+  "open": [
+    "The quoted Record sentences do not state the statistical-slot rule.",
+    "n_d is not chosen by those sentences or by the determinant localization.",
+    "r = 1/2 is not derived.",
+    "Dynamics and Admissibility routes were not tested.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The companion note and the static-readout note were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 314 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py",
+  "sha256": "135ccc039292d59c039bdd861a90ba273278399c3e94f939931cef4c7a411979",
+  "source": "docs/KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md",
+  "status_line": "absent",
+  "title": "Locked Record Outcomes and the Conditional Statistical-Slot Bridge",
+  "wave": "BII",
+  "yaml_status": "absent"
+}

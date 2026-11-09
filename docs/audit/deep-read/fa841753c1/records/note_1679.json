@@ -1,0 +1,72 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 3678,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Native one-plaquette SU(2) enclosure for u0 at beta_W=16. The series ratio lies strictly between (9761/10000)**4 and (9762/10000)**4, so its power-4 inverse lies in [0.9761, 0.9762], and that interval sits inside [0.96, 0.98]. This does not derive a thermodynamic continuum limit, does not supply an observed g_2(v) input, and does not move the wider parent endpoints. The bold Type token bounded_theorem matches the ledger claim type, so grade_clash is false. The bold Date is 2026-06-18. The bold Status is the wrapped bounded-support sentence and is not an audit pass. yaml_status is present. The parsed yaml list is empty and the ledger dep is dirty, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The printed PASS=10 row is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 111,
+    "note_hash_line": 39,
+    "shard": "su",
+    "total_pass": 0
+  },
+  "line_count": 128,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5224,
+    "citation_key": 5255,
+    "deps_hash": "522e60fa8b64",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "an",
+    "at",
+    "bounded_theorem",
+    "by",
+    "in",
+    "is",
+    "md",
+    "no",
+    "py",
+    "su2_u0_single_plaquette_beta16_native_interval_2026_06_18",
+    "to"
+  ],
+  "note_number": 1679,
+  "open": [
+    "A thermodynamic SU(2) continuum limit stays outside this note.",
+    "An observed g_2(v) input stays outside this note.",
+    "The wider parent endpoints [0.96, 0.98] stay in place.",
+    "The printed PASS=10 row was not recomputed and is not an audit pass.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The direct quadrature was not rerun.",
+    "The cited G2 interval note was not opened.",
+    "The dirty ledger dep was not stored and was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 128 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/su2_u0_single_plaquette_beta16_native_interval_2026_06_18.py",
+  "sha256": "a3d6afc26c479b49ae2f0c9f599b44b39dcb5dad06b188b8b574077dcaa47863",
+  "source": "docs/SU2_U0_SINGLE_PLAQUETTE_BETA16_NATIVE_INTERVAL_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+  "status_line": "bounded support for the native SU(2) beta=16 one-plaquette `u_0` interval only.",
+  "title": "SU(2) u0 Single-Plaquette Beta=16 Native Interval",
+  "wave": "BKK",
+  "yaml_status": "present"
+}

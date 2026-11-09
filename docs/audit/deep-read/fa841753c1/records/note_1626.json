@@ -1,0 +1,80 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 8320,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-03",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Scoped obstruction: the tested projective holonomy and eta-style data do not equal the fixed-locus density 2/9, and they do not match the 1/9 + 1/9 split. A1 is not derived. The escape path stays open. There is no bold Status header. The bold Type is no_go and is not an audit pass. The bold Date is 2026-07-03. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The runner scorecard is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 59,
+    "note_hash_line": 41,
+    "shard": "ac",
+    "total_pass": 0
+  },
+  "line_count": 177,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 51,
+    "citation_key": 51,
+    "deps_hash": "61d82376598a",
+    "out_degree": 3
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "be",
+    "by",
+    "do",
+    "frontier_acphilambda_k_odd_carrier_datum_2026_07_03",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1626,
+  "open": [
+    "A1 is not derived on this carrier.",
+    "Record-content-alone readout is not established for these candidates.",
+    "The broader escape path remains open.",
+    "A2 stays untouched.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The cited carrier notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 177 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_acphilambda_k_odd_carrier_datum_2026_07_03.py",
+  "sha256": "9bfa469299d9c42db50a1465328506b816208d54fb3d1b8fc8675e1ab618a258",
+  "source": "docs/ACPHILAMBDA_K_ODD_CARRIER_REGISTERED_DATUM_TEST_BOUNDED_NOTE_2026-07-03.md",
+  "status_line": "absent",
+  "title": "AC_phi_lambda K-Odd Carrier Registered-Datum Test Against 2/9",
+  "wave": "BIJ",
+  "yaml_status": "absent"
+}

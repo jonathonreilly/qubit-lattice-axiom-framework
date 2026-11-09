@@ -1,0 +1,77 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 11397,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-01",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Finite-surface sign result. On the supplied staggered-only Case-A surface the real shift m no longer needs the m > 0 convention for the determinant sign. The note does not derive the determinant-channel identification, does not select a flavor dial, and does not touch Wilson-shifted or gauge-side surfaces. The bold Type is bounded_theorem and is not an audit pass. There is no bold Status header. The bold Date is 2026-07-01. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The displayed PASS row is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [],
+    "lines": 116,
+    "note_hash_line": 40,
+    "shard": "th",
+    "total_pass": 0
+  },
+  "line_count": 212,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5399,
+    "citation_key": 5431,
+    "deps_hash": "76146d25d1b8",
+    "out_degree": 2
+  },
+  "not_filed": [
+    "No",
+    "an",
+    "as",
+    "at",
+    "bounded_theorem",
+    "by",
+    "in",
+    "is",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1640,
+  "open": [
+    "The determinant-channel identification is not derived.",
+    "The flavor dial is scanned and is not selected.",
+    "Wilson-shifted surfaces stay outside this note.",
+    "The gauge side stays outside this note.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not executed.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The cited dependency notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 212 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "a887e49289be3cc959cb5d1c64ad6ac034443ad85843523a9dde032878623521",
+  "source": "",
+  "status_line": "absent",
+  "title": "",
+  "wave": "BIX",
+  "yaml_status": "absent"
+}

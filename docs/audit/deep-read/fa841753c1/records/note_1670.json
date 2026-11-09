@@ -1,0 +1,72 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 4356,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-21",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Bounded support packet. Under a declared one-power readout premise the unique endpoint-normalized source target is b_E/a_E = 7/2, and that target is not derived. The endpoint triple stays open. No bold Type token is compared, so grade_clash is false. No bold Status, so status_line is absent. The actual-current-surface header is not a Status header and is not an audit pass. yaml_status is absent. The yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. Line 152 prints PASS, FAIL, and TOTAL and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 58,
+    "note_hash_line": 40,
+    "shard": "qu",
+    "total_pass": 0
+  },
+  "line_count": 153,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4543,
+    "citation_key": 4564,
+    "deps_hash": "6a8b9ccede1a",
+    "out_degree": 2
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "frontier_quark_route2_center_excess_source_target_2026_06_21",
+    "is",
+    "md",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1670,
+  "open": [
+    "The endpoint triple stays open.",
+    "The typed source map with b_E/a_E = 7/2 is not derived.",
+    "The one-power readout premise is declared and is not derived here.",
+    "The printed PASS, FAIL, and TOTAL row on line 152 is not an audit pass.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cached runner log was not opened.",
+    "The 2 ledger deps were not opened.",
+    "No helper module was executed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 153 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_quark_route2_center_excess_source_target_2026_06_21.py",
+  "sha256": "05f4280e3b0562ba3f8903f2dcaea49fac123f831e31a8586d1880635a3f8897",
+  "source": "docs/QUARK_ROUTE2_CENTER_EXCESS_SOURCE_TARGET_NOTE_2026-06-21.md",
+  "status_line": "absent",
+  "title": "Quark Route-2 Center-Excess Source Target",
+  "wave": "BKB",
+  "yaml_status": "absent"
+}

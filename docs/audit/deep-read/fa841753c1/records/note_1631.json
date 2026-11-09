@@ -1,0 +1,79 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 22535,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-02",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Finite fixed-grading bookkeeping: the heat index is pinned to tr(eps), and the paired-shift integer is n = 2 tr(eps). On the balanced surface that integer is 0. No physical theta value is supplied. The bold Type is bounded_theorem and is not an audit pass. There is no bold Status header. The bold Date is 2026-07-02. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The note prints two different TOTAL rows, 85 and 82, and neither is an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 123,
+    "note_hash_line": 41,
+    "shard": "th",
+    "total_pass": 0
+  },
+  "line_count": 219,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5389,
+    "citation_key": 5421,
+    "deps_hash": "5d232d0316a6",
+    "out_degree": 3
+  },
+  "not_filed": [
+    "It",
+    "On",
+    "an",
+    "as",
+    "bounded_theorem",
+    "by",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "theta_assembly_paired_shift_fixed_grading_mckean_singer_2026_07_02",
+    "to"
+  ],
+  "note_number": 1631,
+  "open": [
+    "No physical value of theta_gauge is supplied.",
+    "No physical value of arg det M is supplied.",
+    "The continuum ABJ anomaly is not derived.",
+    "The nontrivial supplier direction stays open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not executed.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The cited dependency notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 219 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/theta_assembly_paired_shift_fixed_grading_mckean_singer_2026_07_02.py",
+  "sha256": "9b113bb16e54ea2c58c6ba29f22272a1b5b7efc8e99e69d4cfa8b0ee07f66440",
+  "source": "docs/THETA_ASSEMBLY_PAIRED_SHIFT_FIXED_GRADING_MCKEAN_SINGER_REDUCTION_NARROW_THEOREM_NOTE_2026-07-02.md",
+  "status_line": "absent",
+  "title": "Theta Assembly Paired-Shift Law From Fixed Grading",
+  "wave": "BIO",
+  "yaml_status": "absent"
+}

@@ -1,0 +1,75 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 6724,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": true,
+  "issues": [
+    {
+      "detail": "No breakthrough. Lattice + Quantum + Record, on the tested finite Pauli baseline, do not determine the NCG finite algebra, the order-one condition, or the KO-dim-6 real structure used by the P-LH route. The parent content row stays open. The note does not derive SM LH/RH content and does not approve those NCG structures as primitives. The bold Type token is bounded negative boundary / route-pruning support. The ledger claim type is bounded_theorem. Those differ, so grade_clash is true. The bold Date is 2026-06-18. The bold Status is bounded support only and is not an audit pass. yaml_status is absent. The parsed yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The expected FAIL=0 line was not recomputed and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 1715,
+    "note_hash_line": 39,
+    "shard": "p_",
+    "total_pass": 0
+  },
+  "line_count": 145,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4128,
+    "citation_key": 4147,
+    "deps_hash": "c8eee4235fc9",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "by",
+    "frontier_p_lh_ncg_primitive_underdetermination_2026_06_18",
+    "is",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1684,
+  "open": [
+    "The NCG finite algebra, order-one condition, and KO-dim-6 real structure stay undetermined by the tested baseline.",
+    "The P-LH content row stays open pending a separate derivation or explicit primitive approval.",
+    "SM LH/RH content stays underived.",
+    "The cited 2026-06-05 axiom memo was not opened.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named source runner was not executed.",
+    "The named runner cache was not opened.",
+    "The cited 2026-06-05 axiom memo was not opened.",
+    "The cited P-LH parent proposal was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 145 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
+  "sha256": "231e17fbbc256ac2972bc7787ba027c141f8d1a8f0a4081d979923bf9486b033",
+  "source": "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md",
+  "status_line": "bounded support only",
+  "title": "P-LH NCG Primitive Underdetermination Boundary",
+  "wave": "BKP",
+  "yaml_status": "absent"
+}

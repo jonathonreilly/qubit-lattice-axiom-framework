@@ -1,0 +1,81 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 12982,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18; algebra/convention split completed 2026-07-11.",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Theorems 1-3 locate a pin and do not choose it. The split (gamma, C/gamma) leaves the constructed link matrices, plaquette matrices, and Wilson action values unchanged, and gamma * F[C/gamma; gamma] = F[C; 1] at finite a. The canonical slot stays s = 1. Conditional on the explicit W-PHYS dictionary, the positive matched slot satisfies gamma*(beta)^2 = 2 N_c / beta, so gamma*(beta) = s if and only if beta = 2 N_c. At beta = 24 the exhibit gives gamma*^2 = 1/4 and gamma* = 1/2, which is not s. Same-slot identification, W-PHYS, Wilson action selection, and a Hamiltonian derivation stay open. No bold Type token is present, so grade_clash is false. The bold Date is 2026-06-18; algebra/convention split completed 2026-07-11. No bold Status is present, so status_line is absent. yaml_status is absent. The parsed yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The expected TOTAL row prints PASS=103 FAIL=0 and was not recomputed. It is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 213,
+    "note_hash_line": 40,
+    "shard": "g_",
+    "total_pass": 0
+  },
+  "line_count": 304,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 1879,
+    "citation_key": 1893,
+    "deps_hash": "aabdc59b5531",
+    "out_degree": 2
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18",
+    "if",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1695,
+  "open": [
+    "Same-slot identification of the Wilson coordinate with the finite-link canonical slot stays outside this theorem.",
+    "W-PHYS, Wilson action selection, and a continuum running coupling stay unsupplied.",
+    "A framework-native derivation from the operator or Hamiltonian surface stays open.",
+    "Improved or non-Wilson gauge actions stay unexcluded.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cited rigidity note was not opened.",
+    "The cited Wilson narrow theorem was not opened.",
+    "The same-slot convention note was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 304 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py",
+  "sha256": "04f1c1982f11611d255635072ca81c4be52f43595a530011b8c4c80ad3d8ecbd",
+  "source": "docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "G Bare Finite-Link/Wilson Split-Redundancy and Pin-Equivalence Theorem",
+  "wave": "BLA",
+  "yaml_status": "absent"
+}

@@ -1,0 +1,77 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 6218,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. On a supplied unitary dressing, b_eff = b * (sum_i z_i)/d with |z_i| = 1 and a_eff = a, so r_R = r0 * |sum_i z_i / d|^2. The finite identity d^2 - |sum z_i|^2 = sum_{i<j}|z_i-z_j|^2 is nonnegative, so |chi_R(U)| / d <= 1 and r_R <= r0. Equality holds when every eigenvalue has the same phase. A non-scalar link strictly suppresses the fibre-averaged hop. The note does not derive the dressing, does not select a value of r, and does not derive a sector-to-representation readout, gauge dynamics, or a continuum limit. No bold Type token is present, so no Type token is compared and grade_clash is false. No bold Status is present, so status_line is absent. That absence is not an audit pass. yaml_status is absent. The parsed yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. prose_status not_evaluated_pre_vocab_lint is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 209,
+    "note_hash_line": 43,
+    "shard": "fl",
+    "total_pass": 0
+  },
+  "line_count": 164,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 1753,
+    "citation_key": 1767,
+    "deps_hash": "917abdd4b61b",
+    "out_degree": 5
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "by",
+    "flavor_gauge_holonomy_character_suppression_kernel_2026_06_18",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1708,
+  "open": [
+    "The fibre-trace dressing stays supplied rather than derived.",
+    "No value of r is selected.",
+    "The sector-to-representation readout stays unsupplied.",
+    "Gauge dynamics, link distribution, coupling, and the continuum limit stay unsupplied.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache file was not opened.",
+    "The cited notes were not opened.",
+    "No helper script was named.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 164 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.py",
+  "sha256": "9c6a7baef825f7f16e7ff08ec9b9924afcd70ae286b41e592d4807cb9652357e",
+  "source": "docs/FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "Flavor Gauge Holonomy Character-Suppression Kernel",
+  "wave": "BLN",
+  "yaml_status": "absent"
+}

@@ -1,0 +1,76 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 5492,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-21",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. No-go for a two-slot shortcut inside the current conditional time family. The family has one readout slot, P_R, and no source-preparation slot, so it does not force p=2 or rho_E = 21/4. Readout-only canonical dualization gives p=1 and rho_E = 3/2. No bold Type, so the Type token is absent. No bold Status, so status_line is absent. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 60,
+    "note_hash_line": 42,
+    "shard": "qu",
+    "total_pass": 0
+  },
+  "line_count": 138,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4569,
+    "citation_key": 4590,
+    "deps_hash": "7b6193a89ea2",
+    "out_degree": 4
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "frontier_quark_route2_source_slot_dualization_gate_no_go_2026_06_21",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1655,
+  "open": [
+    "The endpoint triple stays open.",
+    "The current family has one readout slot and no source-preparation slot.",
+    "Neither a two-sided source slot nor a readout-only inverse-square coefficient law is supplied.",
+    "The expected PASS=46 FAIL=0 line was not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cached runner log was not opened.",
+    "The authority-link notes were not opened.",
+    "The parent coupling note was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 138 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_quark_route2_source_slot_dualization_gate_no_go_2026_06_21.py",
+  "sha256": "7aaad3c8378fb10b7005169d9cc24ca5fc4fedf4247dafd1c88071a9177a1cf3",
+  "source": "docs/QUARK_ROUTE2_SOURCE_SLOT_DUALIZATION_GATE_NO_GO_NOTE_2026-06-21.md",
+  "status_line": "absent",
+  "title": "Quark Route-2 Source-Slot Dualization Gate No-Go",
+  "wave": "BJM",
+  "yaml_status": "absent"
+}

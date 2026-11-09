@@ -1,0 +1,72 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 4391,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "absent",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Bounded algebraic support. Inside a stipulated one-site signed-record algebra, epsilon equals sigma_z and is affinely the lower projector. Inside a stipulated C^2 comparator, the lower-axis ray is fixed by P_- and sent to 0 by Q. The same physical carrier surface stays open. No bold Type token is compared, so grade_clash is false. No bold Status, so status_line is absent. No bold Date, so date_line is absent. yaml_status is present. The parsed upstream list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The printed TOTAL row is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 303,
+    "note_hash_line": 41,
+    "shard": "yt",
+    "total_pass": 0
+  },
+  "line_count": 142,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 7169,
+    "citation_key": 7208,
+    "deps_hash": "7621b56a2319",
+    "out_degree": 3
+  },
+  "not_filed": [
+    "as",
+    "bounded_theorem",
+    "do",
+    "frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18",
+    "in",
+    "is",
+    "md",
+    "of",
+    "or",
+    "py",
+    "so"
+  ],
+  "note_number": 1672,
+  "open": [
+    "The same physical carrier surface stays open.",
+    "The qubit signed-record source is not identified with the EW neutral radial source.",
+    "Hypercharge uniqueness and a physical-scale coupling stay outside this note.",
+    "The printed TOTAL row is not an audit pass.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "No cached runner log is named, and none was opened.",
+    "The clean ledger deps were not opened. The dirty ledger dep was not stored.",
+    "No helper module was executed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 142 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py",
+  "sha256": "b2ebce691949bbe5428c76407785c5e55a5ef9a01bb87414c5f821acdc23c49c",
+  "source": "docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "Y_T Signed-Record Lower-Projector Neutral-Ray Algebra Core",
+  "wave": "BKD",
+  "yaml_status": "present"
+}

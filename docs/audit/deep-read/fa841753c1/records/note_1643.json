@@ -1,0 +1,79 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 20219,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-29",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Historical proposal provenance note. It does not add, approve, or revise a framework axiom. The posit splits into a nonzero-evolution law and a contingent realized-branch primitive. The bold Type is meta and is not an audit pass. The bold Status says the file is a proposal, sets no audit status, and claims no theorem. That status is not an audit pass. A later section calls a bridge discharge a theorem. That section is not an audit pass. The bold Date is 2026-06-29. yaml_status is present. deps_eq_yaml is true. deps_order_differs is false. The ledger effective status is meta and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 55,
+    "note_hash_line": 37,
+    "shard": "dy",
+    "total_pass": 0
+  },
+  "line_count": 321,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 1494,
+    "citation_key": 1505,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1643,
+  "open": [
+    "The time arrow stays unowned.",
+    "Born, probability, and occupancy stay outside this proposal.",
+    "Couplings and the specific action stay free.",
+    "Generic flavor moduli stay free.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "No primary runner is named, and none was executed.",
+    "The cited dynamics notes were not opened.",
+    "The scratchpad script was not opened.",
+    "The axiom memo was not reopened for this note.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 321 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "24c1107ed58423e9e86096cf7dd58b9591eceb6e620f3c539cea567105123112",
+  "source": "docs/DYNAMICS_AXIOM_MINIMAL_NONTRIVIALITY_BRANCH_PROPOSAL_2026-06-29.md",
+  "status_line": "**PROPOSAL.** Sets **NO** audit status, claims no theorem, grants no promotion. **Owner + audit lane hold sole authority** over disposition, tier, and any landing. Original pre-validation draft with panel and bridge-attack outcomes recorded below for provenance.",
+  "title": "",
+  "wave": "BJA",
+  "yaml_status": "present"
+}

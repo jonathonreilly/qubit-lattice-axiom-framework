@@ -1,0 +1,79 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 11333,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-29",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Meta foundation memo. It names Lattice, Qubit, Admissibility, and Record. Admissibility states that for each site the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions. Finite additivity and I(empty)=0 are not Record content. The bold Type is meta and is not an audit pass. The bold Status is the memo's own status line and is not an audit pass. The bold Date is 2026-06-29. yaml_status is absent. deps_eq_yaml is true. deps_order_differs is false. The ledger effective status is meta and is not an audit pass. total_pass is 0. No new derivation."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 1176,
+    "helpers": [],
+    "lines": 55,
+    "note_hash_line": 37,
+    "shard": "mi",
+    "total_pass": 0
+  },
+  "line_count": 233,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 3730,
+    "citation_key": 3747,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "so",
+    "to"
+  ],
+  "note_number": 1642,
+  "open": [
+    "The distribution's form and values are not specified.",
+    "The formation site and rate remain downstream.",
+    "Dynamics and readout contexts remain downstream.",
+    "Physical observable bridges remain downstream.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not executed.",
+    "The axioms policy file was not opened.",
+    "The older observable-principle note was not opened.",
+    "The premise-node file was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 233 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/audit_companion_minimal_axioms_clean_base_exact.py",
+  "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+  "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+  "status_line": "current public framework axiom memo for the qubit-on-`Z^3` package with local admissibility and fixed record readout.",
+  "title": "Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)",
+  "wave": "BIZ",
+  "yaml_status": "absent"
+}

@@ -1,0 +1,78 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 7111,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Exact support on an already supplied one-complex SU(2)_L doublet: H_unit can name the invariant radial carrier and the neutral representative (0, rho)^T. It does not derive the full thermal doublet, and it does not change g_*. The bold Type token is absent, so grade_clash is false. The bold Date is 2026-06-18. The bold Status is the wrapped exact-support sentence and is not an audit pass. The Role line is not a Status header and is not a Type header. yaml_status is present. The parsed yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The printed SUMMARY row uses an ellipsis and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 119,
+    "note_hash_line": 40,
+    "shard": "sm",
+    "total_pass": 0
+  },
+  "line_count": 201,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5017,
+    "citation_key": 5045,
+    "deps_hash": "a868b5060bc9",
+    "out_degree": 2
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "be",
+    "bounded_theorem",
+    "by",
+    "frontier_sm_gstar_hunit_neutral_radial_orbit_2026_06_18",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1681,
+  "open": [
+    "The full one-complex SU(2)_L thermal doublet stays underived from H_unit.",
+    "The g_* Higgs-sector row stays on the declared-inventory premise.",
+    "Higgs potential dynamics, thermal equilibrium, hypercharge uniqueness, and physical-scale g_2(v) stay outside this note.",
+    "The printed SUMMARY row has no numeric pass count and is not an audit pass.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache file was not opened.",
+    "The named generated output was not opened.",
+    "The cited Ward, representation, and census notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 201 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_sm_gstar_hunit_neutral_radial_orbit_2026_06_18.py",
+  "sha256": "08845e5bf7deb9adce3d30cbc37b400f12b1cf8a9bd0a4b12f38601036abf5d4",
+  "source": "docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md",
+  "status_line": "exact support for a supplied-doublet radial carrier boundary; no positive `g_*` status change.",
+  "title": "SM g_* H_unit Neutral/Radial Orbit Support",
+  "wave": "BKM",
+  "yaml_status": "present"
+}

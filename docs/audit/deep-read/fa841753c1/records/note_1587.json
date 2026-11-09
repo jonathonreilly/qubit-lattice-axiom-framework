@@ -1,0 +1,80 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 22715,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-11",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Interesting exact separation of one-edge marginal laws from the cross-edge split law. A shared draw keeps every one-edge marginal and changes the cross term. This is not an axiom stop. total_pass is 0. The status line is a source-side bounded no-go and is not an audit pass. The bold Type line is absent. The date line is 2026-07-11. deps_eq_yaml is false. deps_order_differs is false. The path, the title, and the runner path are not stored. The next row is stored. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 63,
+    "note_hash_line": 45,
+    "shard": "g3",
+    "total_pass": 0
+  },
+  "line_count": 400,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 1861,
+    "citation_key": 1875,
+    "deps_hash": "532b2551c382",
+    "out_degree": 7
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "On",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1587,
+  "open": [
+    "Cross-edge independence on the registered quotient stays open.",
+    "Identical marginals across the two registrations stay open.",
+    "A future independence theorem stays open.",
+    "The statistics atom stays undischarged.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 400 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "acdcd1a0805a95e4511b8fcf63587509935d913d27617226e5339a8f6035d6cc",
+  "source": "",
+  "status_line": "source-side bounded no-go; independent audit required.",
+  "title": "",
+  "wave": "BGW",
+  "yaml_status": "absent"
+}

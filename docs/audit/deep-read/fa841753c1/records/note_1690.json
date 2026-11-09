@@ -1,0 +1,77 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 6848,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. The circulant quotient Q equals (1+2r)/3 and does not depend on the phase of b, and inside span{I, C, C^2} the only operator that anticommutes with Gamma_chi is zero. This localizes an older selector row. It does not supply the physical coupling bridge and does not derive r=1/2. No bold Type token is present, so grade_clash is false. The bold Date is 2026-06-18. The bold Status is a source-side bounded-localization certificate with audit still required, and it is not an audit pass. yaml_status is absent. The parsed yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The expected TOTAL row was not recomputed and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 193,
+    "note_hash_line": 42,
+    "shard": "ko",
+    "total_pass": 0
+  },
+  "line_count": 143,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 3309,
+    "citation_key": 3324,
+    "deps_hash": "5fc6b62e87fa",
+    "out_degree": 4
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "as",
+    "be",
+    "by",
+    "do",
+    "is",
+    "it",
+    "koide_first_order_selector_bounded_localization_certificate_2026_06_18",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so"
+  ],
+  "note_number": 1690,
+  "open": [
+    "The physical AC_phi_lambda coupling bridge stays unsupplied.",
+    "The selector value r=1/2 stays underived.",
+    "The chiral L-R coupling gate and the readout gate stay separate.",
+    "Native R^3, C3, and U(1)_b routes stay short of the physical selector.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named runner cache was not opened.",
+    "The cited Z3 no-go, Berry note, staggered Dirac gate, and r-half readout note were not opened.",
+    "The expected TOTAL row was not recomputed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 143 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/koide_first_order_selector_bounded_localization_certificate_2026_06_18.py",
+  "sha256": "61fa5f9204eee691f9b7d9d3c240790b0c5378d7162ea826033fdfe09455ec7d",
+  "source": "docs/KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md",
+  "status_line": "source-side bounded-localization certificate; independent audit required.",
+  "title": "Koide First-Order Selector Bounded Localization Certificate",
+  "wave": "BKV",
+  "yaml_status": "absent"
+}

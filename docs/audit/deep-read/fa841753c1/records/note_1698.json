@@ -1,0 +1,79 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 4595,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. High-precision rescaling keeps a post-leading tail correction on sampled rows where double precision loses it. The displayed ratios at k = 19, 20, 24, 30, 36, and 40 decrease and stay below 4.05, under the printed window value from k = 2. The analytic tail proof stays open, and the all-k bridge stays unclosed. No bold Type token is present, so grade_clash is false. The bold Date is 2026-06-18. No bold Status is present, so status_line is absent. yaml_status is absent. The parsed yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The expected TOTAL row prints PASS=14, FAIL=0 and was not recomputed. It is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [
+      "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+      "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+      "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
+      "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
+      "scripts/gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_2026_06_12.py",
+      "scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py"
+    ],
+    "lines": 66,
+    "note_hash_line": 48,
+    "shard": "ga",
+    "total_pass": 0
+  },
+  "line_count": 107,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 2052,
+    "citation_key": 2066,
+    "deps_hash": "7cf55d599c73",
+    "out_degree": 2
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "at",
+    "gauge_vacuum_plaquette_word_count_rescaled_tail_support_2026_06_18",
+    "in",
+    "is",
+    "md",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1698,
+  "open": [
+    "The analytic monotone tail proof stays open.",
+    "A bound on the rescaled tail ratio for every later k stays unproved.",
+    "The all-k bridge stays unclosed.",
+    "The displayed tail rows were not recomputed from the packet.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache file was not opened.",
+    "The cited notes were not opened.",
+    "The helper scripts were not executed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 107 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/gauge_vacuum_plaquette_word_count_rescaled_tail_support_2026_06_18.py",
+  "sha256": "33ca437a34ecaf9c9372298620802a27873bee6917413c9e1bbab0bd7cfde044",
+  "source": "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RESCALED_TAIL_SUPPORT_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "Gauge-Vacuum Plaquette Word-Count Rescaled Tail Support Note",
+  "wave": "BLD",
+  "yaml_status": "absent"
+}

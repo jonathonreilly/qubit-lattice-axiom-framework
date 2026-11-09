@@ -1,0 +1,69 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 4043,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-11",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Interesting exact identity for a positive real triple. The quotient equals 1/3 + 2r/3, so r=1/2 exactly when the quotient is 2/3. r remains a free dial. This is not an axiom stop. total_pass is 0. The bold Status line is absent. The bold Type line is absent. The date line is 2026-07-11. deps_eq_yaml is true. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. The path, the title, and the runner path are not stored. The next row is stored. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [],
+    "lines": 1291,
+    "note_hash_line": 37,
+    "shard": "ch",
+    "total_pass": 0
+  },
+  "line_count": 141,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 737,
+    "citation_key": 742,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "at",
+    "by",
+    "in",
+    "is",
+    "it",
+    "of",
+    "py",
+    "so"
+  ],
+  "note_number": 1591,
+  "open": [
+    "The functional that would feed the positive triple stays outside this theorem.",
+    "The free dial r is not selected.",
+    "The AC(i) and AC(ii) derivation obligations stay open.",
+    "Fixed-locus readout and absolute scale stay outside this theorem.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 141 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "96d829f594877f5c842fb081aa88f87ccd70dc32d63fc3ace3826fdee91cc9bb",
+  "source": "",
+  "status_line": "absent",
+  "title": "",
+  "wave": "BHA",
+  "yaml_status": "absent"
+}

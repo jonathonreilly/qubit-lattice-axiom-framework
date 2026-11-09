@@ -1,0 +1,79 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 8650,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-04",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Route-status synthesis for the positive theta gauge-side winding route. The residual separates into gates G1, G2, G3, and G4, and none of those gates is closed. There is no bold Status header. The bold Type is open_gate and is not an audit pass. The date line is 2026-07-04. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 63,
+    "note_hash_line": 45,
+    "shard": "th",
+    "total_pass": 0
+  },
+  "line_count": 151,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5394,
+    "citation_key": 5426,
+    "deps_hash": "5b83edfce59f",
+    "out_degree": 7
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "theta_gauge_positive_route_stretch_status_2026_07_04",
+    "to"
+  ],
+  "note_number": 1611,
+  "open": [
+    "G1 defect closure stays open.",
+    "G2 record or readout registration stays open.",
+    "G3 phase-type insertion stays open.",
+    "G4 physical theta assembly stays open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The source-packet notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 151 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/theta_gauge_positive_route_stretch_status_2026_07_04.py",
+  "sha256": "b6c4dca27ffba0d0d890a99d13dce6ec5c536e79af8db4370d823b1140595d72",
+  "source": "docs/THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md",
+  "status_line": "absent",
+  "title": "Theta Gauge Positive Route Stretch Status",
+  "wave": "BHU",
+  "yaml_status": "absent"
+}

@@ -1,0 +1,81 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 12747,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-11",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Interesting exact localization of a stage fork. Two analytic prescriptions differ, agree on the shared real locus, and do not select r. This is not an axiom stop. total_pass is 0. The status line is present and is not an audit pass. The bold Type line is absent. The date line is 2026-07-11. deps_eq_yaml is false. deps_order_differs is false. The path is stored. The title is not stored. The runner path is stored. The next row is stored. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 6,
+    "helpers": [],
+    "lines": 355,
+    "note_hash_line": 46,
+    "shard": "ko",
+    "total_pass": 0
+  },
+  "line_count": 259,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 3308,
+    "citation_key": 3323,
+    "deps_hash": "4f32e7a89e48",
+    "out_degree": 8
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "On",
+    "an",
+    "as",
+    "at",
+    "by",
+    "do",
+    "frontier_koide_first_order_section_question_2026_07_11",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1585,
+  "open": [
+    "The K-reality stage stays open.",
+    "The equipartition law for r stays open.",
+    "A full reflection-positivity test stays open.",
+    "An action-level stage theorem stays open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 259 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_koide_first_order_section_question_2026_07_11.py",
+  "sha256": "5c4d1970bc55f646cff100557382908629f94430fed842d1f06ab455ca68cca4",
+  "source": "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+  "status_line": "**UNDECIDED WITH EXACT RESIDUAL**; source-side bounded",
+  "title": "",
+  "wave": "BGU",
+  "yaml_status": "absent"
+}

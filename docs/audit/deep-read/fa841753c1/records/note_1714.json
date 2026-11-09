@@ -1,0 +1,70 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 3517,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. This note is a source-side re-audit bridge for a finite configured architecture sweep. The archived work-history packet is not live evidence. The clean cache lines print 4/4 architectures for a beta band within 10% of 1.0 and 4/4 for an attractive-force label, plus a Born I_3 < 1e-6 pass on measured ordered and staggered rows. Those lines were not recomputed and are not a Newton derivation. No bold Type token is present, so no Type token is compared and grade_clash is false. No bold Status is present, so status_line is absent. That absent status is not an audit pass. The actual-current-surface header is not a Status header. yaml_status is absent. The ledger dependency list has 1 label and the yaml dependency list is empty, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. prose_status clean is not an audit pass. total_pass is 0. Line 88 is a SUMMARY row, not a TOTAL row. It was not recomputed and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 114,
+    "note_hash_line": 39,
+    "shard": "ar",
+    "total_pass": 0
+  },
+  "line_count": 89,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 499,
+    "citation_key": 500,
+    "deps_hash": "664912e8f909",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "architecture_portability_live_reaudit_bridge_2026_06_18",
+    "as",
+    "at",
+    "is",
+    "md",
+    "of",
+    "on",
+    "or",
+    "py"
+  ],
+  "note_number": 1714,
+  "open": [
+    "The archived work-history packet stays non-live.",
+    "The printed cache rows were not recomputed.",
+    "Standalone Newton closure stays unclaimed.",
+    "Wilson Born-rule measurement and architecture-independent universality stay unclaimed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The sweep note was not opened.",
+    "The archived work-history target was not opened.",
+    "The named sweep cache and firewall script were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 89 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/architecture_portability_live_reaudit_bridge_2026_06_18.py",
+  "sha256": "b32c30aa38dedf3e8c43037947f7e4e9915f0d2194a6dd18a4c57c5f10161d1d",
+  "source": "docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "Architecture Portability Live Re-Audit Bridge",
+  "wave": "BLT",
+  "yaml_status": "absent"
+}

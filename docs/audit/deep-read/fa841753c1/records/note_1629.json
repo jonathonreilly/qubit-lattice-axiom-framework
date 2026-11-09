@@ -1,0 +1,80 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 19681,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-02",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Finite gluing theorem on SU(2): a shared-link integral leaves a class function of one composite holonomy, and real class data on a link star are dagger-even, so the orientation-odd branch is not carried. No physical theta value is supplied. The bold Status is a bounded scoping line and is not an audit pass. There is no bold Type header. The bold Date is 2026-07-02. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The displayed TOTAL row is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [],
+    "lines": 118,
+    "note_hash_line": 40,
+    "shard": "th",
+    "total_pass": 0
+  },
+  "line_count": 372,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5398,
+    "citation_key": 5430,
+    "deps_hash": "e21210cc45af",
+    "out_degree": 2
+  },
+  "not_filed": [
+    "No",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "theta_link_star_frame_correlation_gluing_2026_07_02",
+    "to"
+  ],
+  "note_number": 1629,
+  "open": [
+    "SU(3) star reduction to pairwise composite data is open.",
+    "The sector-level closed-surface statement is open.",
+    "The phase-type insertion for the orientation-odd branch is open.",
+    "No continuum statement is supplied.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not executed.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The cited dependency notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 372 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/theta_link_star_frame_correlation_gluing_2026_07_02.py",
+  "sha256": "a79fdbff53fbb43be15e65e181b75450234682131f11cd895d0bf73c187c79a3",
+  "source": "docs/THETA_LINK_STAR_GLUING_FRAME_CORRELATION_PAIR_COMPOSITE_DAGGER_EVENNESS_AND_ODD_BRANCH_PHASE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "status_line": "PASS as bounded scoping inside positive constructions. The",
+  "title": "",
+  "wave": "BIM",
+  "yaml_status": "absent"
+}

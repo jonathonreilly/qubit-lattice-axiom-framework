@@ -1,0 +1,75 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 4361,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-21",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Exact negative boundary. An endpoint-blind separable finite-box reparameterization preserves lambda = q_E/q_T, so it can hit q_E = 15/8 and q_T = 5/6 together only when the unrenormalized lambda is already 9/4. The printed box scan is near 9/4 only at N=15. No bold Type, so the Type token is absent. No bold Status, so status_line is absent. yaml_status is absent. Both dep lists are empty, so deps_eq_yaml is true and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 102,
+    "note_hash_line": 37,
+    "shard": "qu",
+    "total_pass": 0
+  },
+  "line_count": 101,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4552,
+    "citation_key": 4573,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "be",
+    "frontier_quark_route2_endpoint_blind_renormalization_no_go_2026_06_21",
+    "in",
+    "is",
+    "it",
+    "no",
+    "of",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1665,
+  "open": [
+    "The endpoint triple stays open.",
+    "rho_E = 21/4 is not derived.",
+    "Endpoint-blind separable finite-box renormalization preserves lambda and cannot close the triple unless lambda is already 9/4.",
+    "The note has no PASS, FAIL, or TOTAL line.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cached runner log was not opened.",
+    "The box-size scan cache was not opened.",
+    "No helper module is named, and none was executed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 101 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_quark_route2_endpoint_blind_renormalization_no_go_2026_06_21.py",
+  "sha256": "8e1fcde552899bb4be13a9a8d195f0f6e3772b5909550de7fa2ea0ec6c3a435e",
+  "source": "docs/QUARK_ROUTE2_ENDPOINT_BLIND_RENORMALIZATION_NO_GO_NOTE_2026-06-21.md",
+  "status_line": "absent",
+  "title": "Route-2 Endpoint-Blind Renormalization No-Go: Size-Stable Reparameterizations Cannot Rescue the E-Center Lift",
+  "wave": "BJW",
+  "yaml_status": "absent"
+}

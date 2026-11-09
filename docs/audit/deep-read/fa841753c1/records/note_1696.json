@@ -1,0 +1,77 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 14285,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": true,
+  "issues": [
+    {
+      "detail": "No breakthrough. The emergent-gravity mode sign is not selected, and it is not shown to be a new admission. The clean Clifford identity welds the spatial volume element to chirality, while the gravity-specific chi_eta bridge is imported. K/CPT returns a symmetric pair and does not pick a branch. Color stays on a separate carrier, so the unification is 2 of 3. No bold Status is present, so status_line is absent. The bold Type token differs from the ledger claim type positive_theorem, so grade_clash is true. The bold Date is 2026-06-18. yaml_status is absent. The parsed yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No TOTAL row is present. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 65,
+    "note_hash_line": 47,
+    "shard": "gr",
+    "total_pass": 0
+  },
+  "line_count": 191,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 2168,
+    "citation_key": 2182,
+    "deps_hash": "15f569d761ca",
+    "out_degree": 9
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1696,
+  "open": [
+    "The gravity-specific chi_eta identification with the e4 twist stays imported.",
+    "K/CPT selection of a definite sign stays unavailable.",
+    "The modular route to the mode sign stays a separate untested boundary.",
+    "Color stays on a separate carrier, so the unification stays 2 of 3.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named scripts were not executed.",
+    "The cited notes were not opened.",
+    "The axiom memo was not opened.",
+    "The printed branch value and the runner counts were not recomputed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 191 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "8467500d7017d37652be2e99d425fab8434340a44adf667921a731a5e90b6b65",
+  "source": "docs/GRAVITY_SIGN_IS_NOT_A_NEW_ADMISSION_REDUCES_TO_SHARED_ORIENTATION_DATUM_KCPT_CANNOT_SELECT_NARROW_THEOREM_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "The Emergent-Gravity Sign Is Not a New Admission: It Reduces (By Kind) to the Shared T-Odd Orientation Datum, and Record's K/CPT Cannot Select It (2-of-3 Unification)",
+  "wave": "BLB",
+  "yaml_status": "absent"
+}

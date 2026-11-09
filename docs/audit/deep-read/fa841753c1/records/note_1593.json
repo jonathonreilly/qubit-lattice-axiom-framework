@@ -1,0 +1,82 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 14573,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-10",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Interesting exact conditional lemma on an even ring. A site-independent assignment makes the tick covariant modulo local frames, and the modulus predicate is then zero. Off-site support stays an assumption of the faithfulness condition. This is not an axiom stop. total_pass is 0. The bold Status line proposes independent audit and is not an audit pass. The bold Type line is bounded_theorem. The date line is 2026-07-10. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. The source path is stored. The next row is stored. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 316,
+    "note_hash_line": 39,
+    "shard": "ti",
+    "total_pass": 0
+  },
+  "line_count": 323,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5430,
+    "citation_key": 5465,
+    "deps_hash": "c8eee4235fc9",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "On",
+    "an",
+    "as",
+    "at",
+    "be",
+    "bounded_theorem",
+    "by",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10",
+    "to"
+  ],
+  "note_number": 1593,
+  "open": [
+    "The physical tick realization bridge stays open.",
+    "Existence and choice of a realized tick stay open.",
+    "Off-site support remains an assumption of conditioning faithfulness.",
+    "Proper cubic covariance stays outside this one-axis surface.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 323 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py",
+  "sha256": "5479a5b5960bbd00969d3cb0a7c9cdf9f58b9a4952cfaba02c2068f8835218c1",
+  "source": "docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md",
+  "status_line": "bounded conditional algebraic lemma proposed for independent audit;",
+  "title": "Conditional Equivariant Tick-Realization Lemma on a Binary Ring",
+  "wave": "BHC",
+  "yaml_status": "absent"
+}

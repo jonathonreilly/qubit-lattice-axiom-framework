@@ -1,0 +1,87 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 12296,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-17",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. For every finite n the note places sites at (2k, 0, 0), takes the diagonal pair P_0 and P_1 inside a one-site copy of M_2(C), and under a declared admissibility instance, a declared diagonal readout context, a declared conjugation context, and a declared unit-count functional, reads n support-disjoint atoms as a finite sum equal to n. An independent exact check confirms the spacing is at least 2, so the chosen sites are pairwise nonadjacent and never occupy a nearest-neighbor slot of one another, that P_0 and P_1 are orthogonal idempotents summing to I_2 with trace 1 and fixed by entrywise conjugation, and that the unit-count sum of n atoms is n. The same check shows that any proposed finite bound B is exceeded by a collection of B+1 atoms. The runner, the toy admissibility instances, the corrupted-packet control, and the memo pin were not executed. The note says Lattice and Qubit supply sites and matrices and do not select the named packet (P-REC-a) through (P-REC-d). Selecting that surface stays open. The note attributes to the named 2026-06-29 memo a single fixed nearest-neighbor admissibility rule whose content the axioms name but do not supply, and it attributes K/CPT orbit structure to downstream readout-context content. That memo was not opened. The note also says a present record locks exactly one admissible local possibility, and that occurrence is axiom-forced by the sentence Records form., while a formation rule stays unsupplied. Those sentences were not checked against the memo. The note says no theorem content changed when the selections moved into the parsed packet. A measurement instrument, a physical readout basis, a physical K/CPT bridge, a canonical normalization, a clock or rate, persistence dynamics, an occupancy rule, a dial selector, the fixed admissibility content, and a completed infinite record stay open. Bold Type is bounded_theorem and matches the ledger claim_type, so grade_clash is false. The Claim type line is the same token and is not a Type line. The joined Status is the declared bounded-premise packet sentence and is not proposed_retained. The bold Date is 2026-06-17. yaml_status is absent. The ledger dependency list has length 2 and the yaml list is empty, so deps_eq_yaml is false. The ledger effective status is unaudited and is not an audit pass. prose_status not_evaluated_pre_vocab_lint is not an audit pass. criticality critical is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 1608,
+    "note_hash_line": 40,
+    "shard": "re",
+    "total_pass": 0
+  },
+  "line_count": 250,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4665,
+    "citation_key": 4688,
+    "deps_hash": "049a3bb15fb8",
+    "out_degree": 2
+  },
+  "not_filed": [
+    "At",
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "be",
+    "bounded_theorem",
+    "by",
+    "do",
+    "frontier_record_local_finite_atom_availability_2026_06_17",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1734,
+  "open": [
+    "Selecting the declared packet surface from the framework axioms stays open.",
+    "The content of the fixed admissibility rule stays open.",
+    "A physical readout basis stays open.",
+    "A physical K/CPT bridge stays open.",
+    "A clock, rate, persistence dynamics, occupancy rule, and dial selector stay open.",
+    "A completed infinite record stays open.",
+    "The named 2026-06-29 memo was not opened.",
+    "The runner was not executed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not executed.",
+    "The ledger previous_audits entries were not opened.",
+    "The cited axiom memo was not opened.",
+    "The cited input note was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 250 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py",
+  "sha256": "35e55b0a58c374b9c7df1d66a0b6171a1e56a83f98776041cd0ba4dd2082fe3e",
+  "source": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+  "status_line": "declared bounded-premise packet. The Lattice and Qubit axioms supply sites and matrices; they do not select (P-REC-a)\u2013(P-REC-d). This packet records the selections in audit-readable named-premise form; it does not derive them. Selecting this surface from the framework axioms remains the named open target, unchanged from the section above.",
+  "title": "Record Local Finite Atom Availability Narrow Theorem",
+  "wave": "BMN",
+  "yaml_status": "absent"
+}

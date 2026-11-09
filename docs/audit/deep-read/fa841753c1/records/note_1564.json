@@ -1,0 +1,81 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 22577,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-12",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Interesting exact local-section handoff: the weak payment is at most the strong payment, so the actual generated residual has a saturated local section with constant 1. Conditional same-activity scalar reuse fails at m = 10^44 and the arithmetic target closes at m = 10^46. That closure is not a marked-response theorem. The unchanged surcharge ledger becomes negative. This is not an axiom stop. total_pass is 0. The date line is 2026-07-12. The status line is unaudited candidate; effective status is pipeline-derived only after independent audit. The type is bounded_theorem. There is no bold claim-type header. The yaml dep list is absent. The ledger dep list has 5 stems, so deps_eq_yaml is false. deps_order_differs is false. Bare retention is not allowed. There is no grade clash. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 63,
+    "note_hash_line": 45,
+    "shard": "wi",
+    "total_pass": 0
+  },
+  "line_count": 439,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5687,
+    "citation_key": 5726,
+    "deps_hash": "46ec9d33b2c9",
+    "out_degree": 5
+  },
+  "not_filed": [
+    "At",
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1564,
+  "open": [
+    "The tree-span incidence bridge stays open.",
+    "The next correlated-center grammar stays open.",
+    "A generic source embedding stays open.",
+    "A critical trajectory stays open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The dependency series was not rerun.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 439 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "e5130abc51c11dbe844e20c1688ba52165bc3d186079506f586fe9cab226fc11",
+  "source": "",
+  "status_line": "unaudited candidate; effective status is pipeline-derived only after independent audit.",
+  "title": "",
+  "wave": "BFZ",
+  "yaml_status": "absent"
+}

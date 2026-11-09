@@ -1,0 +1,72 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 4958,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-21",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Source-selector no-go. An SU(3)-equivariant projector on the adjoint is only 0 or I, so it cannot supply rank 1 or rank 7. The chain e_E = 7/8, q_E = 15/8, rho_E = 21/4 stays conditional. No bold Type, so the Type token is absent. No bold Status, so status_line is absent. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 61,
+    "note_hash_line": 43,
+    "shard": "qu",
+    "total_pass": 0
+  },
+  "line_count": 76,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4564,
+    "citation_key": 4585,
+    "deps_hash": "972f9ba91075",
+    "out_degree": 5
+  },
+  "not_filed": [
+    "No",
+    "an",
+    "by",
+    "frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21",
+    "is",
+    "md",
+    "no",
+    "of",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1659,
+  "open": [
+    "The endpoint triple stays open.",
+    "rho_E = 21/4 is not derived.",
+    "An equivariant projector does not supply rank 1 or rank 7.",
+    "The note has no PASS, FAIL, or TOTAL line.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cached runner log was not opened.",
+    "The authority-link notes were not opened.",
+    "The cited bank notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 76 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py",
+  "sha256": "b5ddc0d1e8b7ba7886c9b3eacc71e5a730279a055139876e9da395fb4f8f4553",
+  "source": "docs/QUARK_ROUTE2_SINGLE_ADJOINT_LINE_CURRENT_BANK_NO_GO_NOTE_2026-06-21.md",
+  "status_line": "absent",
+  "title": "Route-2 Single-Adjoint-Line Selector: Current SU(3)-Equivariant Source Bank No-Go",
+  "wave": "BJQ",
+  "yaml_status": "absent"
+}

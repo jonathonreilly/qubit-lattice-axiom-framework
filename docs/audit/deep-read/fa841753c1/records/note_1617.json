@@ -1,0 +1,77 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 11492,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-04",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Orientation memo for a record-influence criterion and a graded-constraint program. The memo says it proves nothing and registers no primitive. There is no bold Status header. The bold Type is meta and is not an audit pass. The bold Date is 2026-07-04. yaml_status is absent. deps_eq_yaml is true because both dependency lists are empty. deps_order_differs is false. The ledger effective status is meta and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [],
+    "lines": 55,
+    "note_hash_line": 37,
+    "shard": "gr",
+    "total_pass": 0
+  },
+  "line_count": 201,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 2129,
+    "citation_key": 2143,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "by",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "so",
+    "to"
+  ],
+  "note_number": 1617,
+  "open": [
+    "The criterion stays scope discipline until a derivation or an axiom-clarity sentence lands.",
+    "Comparability stays an open owner question.",
+    "Graded constraint, the carrier rule, the stability clause, and the scale anchor are not registered here.",
+    "The Born-form route is a theorem target, not a landed result.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "No primary runner is named, so none was run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The policy file and the cited notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 201 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "d2a123540c5a892750e48f01a4d1bf9bfd33270cc7d9c9f39b8a8b82e1728a12",
+  "source": "docs/GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md",
+  "status_line": "absent",
+  "title": "The Record-Influence Criterion And The Graded-Constraint Program",
+  "wave": "BIA",
+  "yaml_status": "absent"
+}

@@ -1,0 +1,79 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 10291,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-17",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. The note constructs a curved 3+1 prism Regge second variation and records a tick-momentum channel dispersion. The printed numerical gates, including rel 4e-8, Hermitian 4e-16, Schlaefli 9e-16, the averaged-matrix residual 1.7e-15, and the non-critical residual near 3.55, were not recomputed. The printed deficit stand-in 2.5903 matches 2*pi - 3*arccos(1/3) to the printed digits. The ordering orbit has 120 elements, and 1+4+5 = 10. A separate exact check shows that the group average of a symmetric matrix commutes with the group, including for a matrix that is not the prism operator, so those commutation tests do not identify prism geometry. The note says the tested symmetric-representative route does not supply the distinguished connection, and that the prism is not a critical point of the Regge action. The continuum limit and the dimensionful GR calibration stay open. The printed TOTAL: PASS=11 FAIL=0 was not recomputed and is not an audit pass. Bold Type is bounded_theorem and matches the ledger claim_type, so grade_clash is false. The Claim type line is the same token and is not a Type line. No bold Status is present, so status_line is absent. The bold Date is 2026-06-17. yaml_status is absent. The ledger dependency list has length 4 with one dirty entry, and the yaml list is empty, so deps_eq_yaml is false. The ledger effective status is unaudited and is not an audit pass. prose_status not_evaluated_pre_vocab_lint is not an audit pass. criticality leaf is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 60,
+    "note_hash_line": 42,
+    "shard": "re",
+    "total_pass": 0
+  },
+  "line_count": 124,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4710,
+    "citation_key": 4733,
+    "deps_hash": "7e5bfd516c31",
+    "out_degree": 4
+  },
+  "not_filed": [
+    "No",
+    "as",
+    "at",
+    "bounded_theorem",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "regge_curved_prism_tick_dispersion_2026_06_17",
+    "to"
+  ],
+  "note_number": 1733,
+  "open": [
+    "The tested symmetric-representative route does not supply the distinguished connection.",
+    "The continuum limit stays open.",
+    "The dimensionful GR calibration stays import-bounded.",
+    "The printed numerical gates were not recomputed.",
+    "The named 2026-06-05 memo was not opened.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not executed.",
+    "The ledger previous_audits list is empty.",
+    "The cited axiom memo was not opened.",
+    "The cited input notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 124 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/regge_curved_prism_tick_dispersion_2026_06_17.py",
+  "sha256": "ab4d8bd13d309132e874fde8df8b906e1b9620898841bf1881233584085efc82",
+  "source": "docs/REGGE_CURVED_PRISM_TICK_DISPERSION_NARROW_THEOREM_NOTE_2026-06-17.md",
+  "status_line": "absent",
+  "title": "The Curved 3+1 Prism Regge Second Variation: Tick-Momentum Channel Dispersion on the Round \u2202\u0394\u2074 \u00d7 Z_\u03c4 \u2014 and Why the Symmetric-Representative Route Does Not Supply the Distinguished Connection",
+  "wave": "BMM",
+  "yaml_status": "absent"
+}

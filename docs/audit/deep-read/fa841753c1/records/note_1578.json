@@ -1,0 +1,70 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 2650,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-11",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Interesting exact classification of invariant Hermitian operators on the permutation representation of S_3. The spectrum is a singlet eigenvalue and a doublet eigenvalue. This is not an axiom stop. total_pass is 0. The status line is a proposed finite lemma. It is not an audit pass. There is no bold Type line. The date line is 2026-07-11. deps_eq_yaml is true. deps_order_differs is false. The path, the title, and the runner path are not stored. The next row is stored. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 2,
+    "helpers": [],
+    "lines": 209,
+    "note_hash_line": 37,
+    "shard": "s3",
+    "total_pass": 0
+  },
+  "line_count": 68,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4842,
+    "citation_key": 4865,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "by",
+    "is",
+    "no",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1578,
+  "open": [
+    "A physical generation identification stays open.",
+    "Invariance of a physical operator stays open.",
+    "A carrier identification stays open.",
+    "Other representations stay open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 68 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "c02adb4be1a11a19ee988fbdfffe5bf60eae8ca8a561b68d9138a6587fadb192",
+  "source": "",
+  "status_line": "proposed finite representation-theory lemma; no physical generation-carrier identification is claimed",
+  "title": "",
+  "wave": "BGN",
+  "yaml_status": "absent"
+}

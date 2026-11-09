@@ -1,0 +1,69 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 5457,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-17",
+  "grade_clash": true,
+  "issues": [
+    {
+      "detail": "No breakthrough. The checked arithmetic is 1+4+5 = 10 and the printed pair p^2 = -1.53, mu_TT = 0.765, which equals -(1/2)*p^2 exactly as decimals. The 5-dimensional count is the usual spin-2 count. The note reports channel projectors agreeing at about 1e-16 after a rotation inside the channel, and a gauge residual of 1.8e-16. Those float rows were not recomputed. The note says the sign pattern matches linearized Einstein and the magnitudes do not, so this is not the flat graviton dispersion. The bundle connection, the 5-to-2 reduction, the dispersion, and the G>0 sign stay open. Bold Type is present and differs from the ledger claim_type, so grade_clash is true. No bold Status is present, so status_line is absent. The bold Date is 2026-06-17. yaml_status is absent. The ledger dependency list has length 1 and the entry is dirty, while the yaml list is empty, so deps_eq_yaml is false. The ledger effective status is unaudited and is not an audit pass. prose_status not_evaluated_pre_vocab_lint is not an audit pass. criticality leaf is not an audit pass. total_pass is 0. The note has no TOTAL row. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 57,
+    "note_hash_line": 39,
+    "shard": "un",
+    "total_pass": 0
+  },
+  "line_count": 77,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5529,
+    "citation_key": 5567,
+    "deps_hash": "6beb934413a6",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "by",
+    "frontier_universal_gr_canonical_channel_section_and_einstein_signs_2026_06_17",
+    "is",
+    "no",
+    "of",
+    "on",
+    "py",
+    "to"
+  ],
+  "note_number": 1724,
+  "open": [
+    "The bundle connection stays open.",
+    "The 5-to-2 reduction stays open.",
+    "Flat graviton dispersion stays open.",
+    "The G_Newton magnitude and the G>0 sign stay open.",
+    "The printed float residuals were not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The ledger dependency entry is dirty and was not opened.",
+    "The ledger previous_audits list is empty.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 77 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_universal_gr_canonical_channel_section_and_einstein_signs_2026_06_17.py",
+  "sha256": "00df5fe94c4aae4113cf70f73607a9fa40d151ba8df2aa5adebb6bf297361cd3",
+  "source": "docs/UNIVERSAL_GR_CANONICAL_CHANNEL_SECTION_AND_EINSTEIN_SIGNS_NARROW_THEOREM_NOTE_2026-06-17.md",
+  "status_line": "absent",
+  "title": "The Polarization-Frame Ambiguity Is a Basis Artifact: a Canonical Irreducible-Channel Graviton Section With Linearized-Einstein Signs",
+  "wave": "BMD",
+  "yaml_status": "absent"
+}

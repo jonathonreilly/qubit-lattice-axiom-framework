@@ -1,0 +1,80 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 17934,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-06",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Conditional record-level color indistinguishability under named premises. This is strictly weaker than color-singletness and does not derive g2. There is no bold Status header. The bold Type is bounded_theorem and is not an audit pass. The date line is 2026-07-06. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The source path is dirty and was not stored. The runner path is dirty and was not stored. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 59,
+    "note_hash_line": 41,
+    "shard": "co",
+    "total_pass": 0
+  },
+  "line_count": 279,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 962,
+    "citation_key": 968,
+    "deps_hash": "8dd5888e935e",
+    "out_degree": 3
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "at",
+    "be",
+    "bounded_theorem",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1605,
+  "open": [
+    "MARGINAL-READ stays a named modeling premise, not axiom content.",
+    "Record-level indistinguishability stays strictly weaker than color-singletness.",
+    "FERMI-FILL stays a named premise, and the open-shell complement stays open.",
+    "The AD-INV route still presupposes link and carrier structure.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 279 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "8cf84c7dced4e2c7eb0f90403463828762eaef9fe52231462351d53a453eafe6",
+  "source": "",
+  "status_line": "absent",
+  "title": "Toward Color-Singlet Records (g2): Conditional Decomposition Under Named Premises -- Site-Local Locking Bounded Theorem",
+  "wave": "BHO",
+  "yaml_status": "absent"
+}

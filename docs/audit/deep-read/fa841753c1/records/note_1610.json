@@ -1,0 +1,79 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 12792,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-04",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. The updated axiom and primitive surface does not supply the theta gauge-side winding account. A straight contraction in the finite connected carrier changes the discrete winding counter. There is no bold Status header. The bold Type is no_go and is not an audit pass. The date line is 2026-07-04. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 140,
+    "note_hash_line": 43,
+    "shard": "th",
+    "total_pass": 0
+  },
+  "line_count": 231,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5396,
+    "citation_key": 5428,
+    "deps_hash": "526d44a95dcc",
+    "out_degree": 5
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "be",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "theta_gauge_winding_axiom_update_no_go_2026_07_04",
+    "to"
+  ],
+  "note_number": 1610,
+  "open": [
+    "The gauge action-class derivation stays open.",
+    "The emergent integer-Q bridge stays open.",
+    "The branch or section readout stays open.",
+    "The joint theta_bar combination stays unclosed on both sides.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 231 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/theta_gauge_winding_axiom_update_no_go_2026_07_04.py",
+  "sha256": "18cde6f4bf63082da861253a3c4bc86f5da587cee93a0d2b4f91fa58efcbadb9",
+  "source": "docs/THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md",
+  "status_line": "absent",
+  "title": "Theta Gauge Winding Axiom-Update No-Go",
+  "wave": "BHT",
+  "yaml_status": "absent"
+}

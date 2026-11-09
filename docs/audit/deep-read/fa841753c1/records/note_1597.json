@@ -1,0 +1,75 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 6286,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-10",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Exact rational check of a supplied hypercharge table and a supplied trace-normalization scheme. The squared-trace ratio gives k squared = 3/5. This is not a derivation from the axioms. total_pass is 0. The bold Status line declares a bounded-premise packet and is not an audit pass. There is no bold Type header. The claim-type line says bounded_theorem and is not a Type header. The date line is 2026-07-10. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. The source path is dirty and was not stored. The runner path is dirty and was not stored. The next row is stored. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 57,
+    "note_hash_line": 39,
+    "shard": "hy",
+    "total_pass": 0
+  },
+  "line_count": 128,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 3125,
+    "citation_key": 3140,
+    "deps_hash": "042e95908eff",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "bounded_theorem",
+    "by",
+    "in",
+    "is",
+    "it",
+    "md",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1597,
+  "open": [
+    "The framework-native derivation of 3/5 stays open.",
+    "The hypercharge table and the trace scheme stay supplied admissions.",
+    "An embedding claim stays unmade.",
+    "The identification note still quarantines this normalization.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 128 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "098e9065aea0522f2fcab096c83e5c713150d0d36d13b68fdd46e9e37689104a",
+  "source": "",
+  "status_line": "declared bounded-premise packet. The bridge consumes (D1) and",
+  "title": "Hypercharge GUT-Normalization 3/5 Declared Bounded-Premise Bridge",
+  "wave": "BHG",
+  "yaml_status": "absent"
+}

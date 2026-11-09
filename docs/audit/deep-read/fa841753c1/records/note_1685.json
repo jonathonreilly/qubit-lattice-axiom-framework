@@ -1,0 +1,82 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 8342,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": true,
+  "issues": [
+    {
+      "detail": "No breakthrough. Given supplied discrete Poisson inputs, the note says a finite branch computation closes: a 50-sweep solve, near-linear response, a Born cancellation bound, and a null at s=0. Those printed figures were not recomputed. Physical gravity, the Poisson equation, the source, the boundary, and the readout stay supplied. The bold Type token is bounded_theorem source proposal. The ledger claim type is bounded_theorem. Those differ, so grade_clash is true. The bold Date is 2026-06-18. The bold Status is wrapped through the sentence that this is not an audit verdict and not a new axiom. That sentence is not an audit pass. yaml_status is absent. Both dep lists are empty, so deps_eq_yaml is true and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The printed SUMMARY rows were not recomputed and are not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [
+      "scripts/poisson_self_field.py"
+    ],
+    "lines": 240,
+    "note_hash_line": 39,
+    "shard": "po",
+    "total_pass": 0
+  },
+  "line_count": 161,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4390,
+    "citation_key": 4409,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "be",
+    "bounded_theorem",
+    "if",
+    "in",
+    "is",
+    "it",
+    "no",
+    "of",
+    "on",
+    "or",
+    "poisson_self_field_supplied_branch_core_2026_06_18",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1685,
+  "open": [
+    "Physical gravity stays unclaimed.",
+    "The Poisson equation, source, boundary, normalization, readout, and longitudinal falloff stay supplied.",
+    "Continuum, asymptotic, retarded, time-dependent, and full 3D laws stay outside this finite branch.",
+    "The printed residual, slope, and Born figures were not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named helper was not executed.",
+    "The named cache file was not opened.",
+    "The cited parent note was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 161 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/poisson_self_field_supplied_branch_core_2026_06_18.py",
+  "sha256": "6d0f2d10fcb78f74767fc13a29725e9785c466df9e72617b05a991201c3cd30c",
+  "source": "docs/POISSON_SELF_FIELD_SUPPLIED_BRANCH_CORE_BOUNDED_NOTE_2026-06-18.md",
+  "status_line": "source-side bounded support split for the supplied Poisson branch. This is not an audit verdict, not a retained derivation of gravity, and not a new axiom.",
+  "title": "Poisson Self-Field Supplied-Branch Core Bounded Note",
+  "wave": "BKQ",
+  "yaml_status": "absent"
+}

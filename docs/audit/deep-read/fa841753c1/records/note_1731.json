@@ -1,0 +1,76 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 7734,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-17",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. In the two-sector class C = a I + b Gamma with Gamma = diag(+1,-1), the source vector is J_C = M (a+b, a-b). The exchange R = [[0,1],[1,0]] sends Gamma to -Gamma and fixes I, so the orientation-even line is b=0 and the odd line is a=0. When M is not 0, the target M(1,-1) forces a=0 and b=1. When M is 0 both sides vanish and a, b stay free. The even direction [+1,+1] cannot represent the odd target. The note prints a locked table in which the same odd coefficient must sit on both the source and the response. It says this does not derive S_int, does not promote the signed-gravity row, and leaves source-line activation as a separate premise. The printed gate line PASS was not recomputed and is not an audit pass. There is no TOTAL row. Bold Type is bounded_theorem and matches the ledger claim_type, so grade_clash is false. The Claim type line is the same token and is not a Type line. No bold Status is present, so status_line is absent. The bold Date is 2026-06-17. The source path and the title fail the card scan and are not stored. yaml_status is absent. The ledger dependency list has one dirty entry and the yaml list is empty, so deps_eq_yaml is false. The ledger effective status is unaudited and is not an audit pass. prose_status clean is not an audit pass. criticality leaf is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 110,
+    "note_hash_line": 39,
+    "shard": "si",
+    "total_pass": 0
+  },
+  "line_count": 192,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4974,
+    "citation_key": 4999,
+    "deps_hash": "bc9f017f1550",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "bounded_theorem",
+    "by",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1731,
+  "open": [
+    "S_int is not derived.",
+    "Source-line activation remains a separate premise.",
+    "The signed-gravity row is not promoted.",
+    "The printed gate line was not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner line is dirty and was not executed.",
+    "The cached-output line is dirty and was not opened.",
+    "The ledger previous_audits entry is dirty and was not opened.",
+    "The cited input notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 192 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "859cc56e91f70a3c229afee1699364ed18f65f128e0bd3c6be018c64d00ff5e2",
+  "source": "",
+  "status_line": "absent",
+  "title": "",
+  "wave": "BMK",
+  "yaml_status": "absent"
+}

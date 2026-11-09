@@ -1,0 +1,71 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 3752,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. With the supplied bound S_E >= (8*pi^2/g^2) |Q| and a supplied half-charge sector |Q| = 1/2, the action scale is S_half = 4*pi^2/g^2. This is finite algebra on supplied inputs. It does not prove meron existence, a regulator, a cap, a twist, a patching, or a physical scale ratio. No bold Type token is present, so grade_clash is false. The bold Date is 2026-06-18. No bold Status header is present, so status_line is absent. The Actual current-surface status paragraph is not a Status header and is not an audit pass. yaml_status is absent. The parsed yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The expected TOTAL row was not recomputed and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 116,
+    "note_hash_line": 40,
+    "shard": "me",
+    "total_pass": 0
+  },
+  "line_count": 115,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 3693,
+    "citation_key": 3710,
+    "deps_hash": "109f63cb28a2",
+    "out_degree": 2
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "be",
+    "in",
+    "is",
+    "md",
+    "meron_half_action_core_split_2026_06_18",
+    "of",
+    "or",
+    "py"
+  ],
+  "note_number": 1689,
+  "open": [
+    "The meron regulator, cap, twist, and patching stay unsupplied.",
+    "Meron existence and framework realization stay unproved.",
+    "No physical scale-ratio claim is made.",
+    "The parent boundary-construction gate stays open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named runner cache was not opened.",
+    "The cited half-instanton note and the topological-instanton infrastructure note were not opened.",
+    "The printed decimal approximation was not recomputed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 115 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/meron_half_action_core_split_2026_06_18.py",
+  "sha256": "e891af6cc0bcf2627c69b83b477f06bb84b4f771d78f0222bdb5069208acb1a0",
+  "source": "docs/MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "Meron Half-Action Algebra Core From Topological Infrastructure",
+  "wave": "BKU",
+  "yaml_status": "absent"
+}

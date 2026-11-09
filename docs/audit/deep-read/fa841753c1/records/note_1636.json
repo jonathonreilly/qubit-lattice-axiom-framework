@@ -1,0 +1,76 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 4708,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-02; narrowed 2026-07-31",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Finite local identity for the normal-plane density 2/9. The symmetric invariant-metric commutant on this one real plane has dimension 1. The note does not derive an APS or eta localization formula, a spin lift, a physical tangent class, or the readout map. The bold Type is bounded_theorem and is not an audit pass. There is no bold Status header. The bold Date is 2026-07-02; narrowed 2026-07-31. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The displayed PASS row is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 272,
+    "note_hash_line": 39,
+    "shard": "ko",
+    "total_pass": 0
+  },
+  "line_count": 107,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 3238,
+    "citation_key": 3253,
+    "deps_hash": "ee46925d7338",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "by",
+    "frontier_koide_aps_topological_robustness",
+    "is",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1636,
+  "open": [
+    "An operator-specific equivariant APS or eta localization formula is not established.",
+    "Fixed-point geometry, a spin lift, and a global PL compactification stay open.",
+    "A physical tangent class is not selected.",
+    "The R-eta carrier, unit, and readout map stay open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not executed.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The cited dependency notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 107 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_koide_aps_topological_robustness.py",
+  "sha256": "be1019c69f06c00e091cc8420a08e2c614e4f45848b67aa621c0ac15a8a7659c",
+  "source": "docs/KOIDE_APS_ETA_TOPOLOGICAL_ROBUSTNESS_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "status_line": "absent",
+  "title": "Local `Z_3` Normal-Plane Density `2/9` \u2014 Partial Narrowing",
+  "wave": "BIT",
+  "yaml_status": "absent"
+}

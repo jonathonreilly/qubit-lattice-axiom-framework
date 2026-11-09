@@ -1,0 +1,81 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 14945,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-23",
+  "grade_clash": true,
+  "issues": [
+    {
+      "detail": "No breakthrough. Partial-narrowing of a sign route. The tested stabilizer, coordinate boost, base-scalar subgroup, real exchange, sampled matrices, and on-site action do not themselves build the Lorentz-sign bridge. The former broad no-go is withdrawn. The full cyclic, projective, matter-attachment, readout, cone-classification, and record-dynamics routes stay open. The bold Type is partial-narrowing and is not an audit pass. The Claim type line and the ledger claim type say bounded_theorem, so grade_clash is true. Neither label is an audit pass. No bold Status, so status_line is absent. The disposition PASS and the expected runner line PASS=17, FAIL=0 are not audit passes. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 63,
+    "note_hash_line": 45,
+    "shard": "bo",
+    "total_pass": 0
+  },
+  "line_count": 236,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 625,
+    "citation_key": 630,
+    "deps_hash": "7a3314e8d4b0",
+    "out_degree": 7
+  },
+  "not_filed": [
+    "At",
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "boost_cone_apbc_sign_neutral_2026_06_23",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1646,
+  "open": [
+    "The Lorentzian sign eps = -1 is not derived.",
+    "The full cyclic, projective, and matter-attachment route stays open.",
+    "Emergent record-formation dynamics stay open.",
+    "The cone automorphism group is not classified.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cached runner log was not opened.",
+    "The cited notes were not opened.",
+    "The terminology index was not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 236 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/boost_cone_apbc_sign_neutral_2026_06_23.py",
+  "sha256": "e670ca42e8d94e4c4a57e596123bf6677df2ce06a24013c522fb5dafdaabe3d3",
+  "source": "docs/BOOST_CONE_APBC_SIGN_NEUTRAL_2026-06-23.md",
+  "status_line": "absent",
+  "title": "Boost-Cone and Antiperiodic-Boundary Sign Routes: Exact Finite Counterchecks and Open Bridges",
+  "wave": "BJD",
+  "yaml_status": "absent"
+}

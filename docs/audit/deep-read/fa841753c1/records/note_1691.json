@@ -1,0 +1,76 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 7679,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. The fixed-density relation rho_star = A_i v_i^4 gives v_i / v_j = (A_j / A_i)^(1/4) only after a positive density and an endpoint coefficient surface are supplied. Positive rescaling rho_star -> lambda^4 rho_star and v_i -> lambda v_i leaves ratios unchanged, so the ratio algebra does not fix an absolute electroweak scale. The surfaces A_2, A_4, and A_inf all stay compatible, so the algebra does not select the physical Higgs-density endpoint. This is a route-local no-go, not a global impossibility. No bold Type token is present, so grade_clash is false. The bold Date is 2026-06-18. The bold Status is a source-side exact negative boundary, and it is not an audit pass. yaml_status is absent. The parsed yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The expected SUMMARY row was not recomputed and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 142,
+    "note_hash_line": 40,
+    "shard": "hi",
+    "total_pass": 0
+  },
+  "line_count": 179,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 2249,
+    "citation_key": 2263,
+    "deps_hash": "5b327e8341ca",
+    "out_degree": 2
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "be",
+    "by",
+    "frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1691,
+  "open": [
+    "The physical Higgs-density endpoint surface stays unselected.",
+    "The absolute electroweak scale stays unfixed by the endpoint-ratio algebra.",
+    "A dynamics selector, an absolute-normalization theorem, and a Higgs-density identification stay open.",
+    "Fixing an absolute density does not choose among A_2, A_4, and A_inf.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cited fixed-density bridge and the EW coordinate bridge were not opened.",
+    "The dimensional-compression note was not opened.",
+    "The expected SUMMARY row was not recomputed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 179 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py",
+  "sha256": "910d471ab056faa6dfe48e6fbbe2b700177a1af7f5e19b300c2dd70167f189c9",
+  "source": "docs/HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md",
+  "status_line": "source-side exact negative boundary. Independent audit owns any effective status.",
+  "title": "Hierarchy Fixed-Density Endpoint Selector No-Go",
+  "wave": "BKW",
+  "yaml_status": "absent"
+}

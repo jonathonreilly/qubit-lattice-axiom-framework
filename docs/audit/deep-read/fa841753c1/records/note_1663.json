@@ -1,0 +1,79 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 6963,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-21",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Conditional support for a single-adjoint-line source selector. If that selector supplies one adjoint line and the E-center excess reads the complement rank 7/8, then rho_E = 21/4 and q_E = 15/8. The selector is absent from the current source bank. Reading F_adj = 8/9 as the excess misses the endpoint. No bold Type, so the Type token is absent. No bold Status, so status_line is absent. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 62,
+    "note_hash_line": 44,
+    "shard": "qu",
+    "total_pass": 0
+  },
+  "line_count": 144,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4550,
+    "citation_key": 4571,
+    "deps_hash": "661f274ab538",
+    "out_degree": 6
+  },
+  "not_filed": [
+    "If",
+    "It",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21",
+    "if",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1663,
+  "open": [
+    "The endpoint triple stays open.",
+    "rho_E = 21/4 is not derived from the current bank.",
+    "The single-adjoint-line selector is absent from the current source bank.",
+    "The note has no PASS, FAIL, or TOTAL line.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cached runner log was not opened.",
+    "The authority-link notes were not opened.",
+    "The cited Route-2 notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 144 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py",
+  "sha256": "f6a53a267ae1d117bd327e7b85e6217def43ca3437ba28ca62901f9683d1b29f",
+  "source": "docs/QUARK_ROUTE2_E_CENTER_SINGLE_ADJOINT_LINE_SELECTOR_CONDITIONAL_SUPPORT_NOTE_2026-06-21.md",
+  "status_line": "absent",
+  "title": "Route-2 E-Center Single-Adjoint-Line Selector: Conditional Support and the Exact Primitive That Would Force 21/4",
+  "wave": "BJU",
+  "yaml_status": "absent"
+}

@@ -1,0 +1,78 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 13607,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-03",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Bounded gauge-side branch table: an orientation-even multiplicative character on odd support collapses to {0, pi}, and the cited positive class selects the zero branch. There is no bold Status header. The bold Type is bounded_theorem and is not an audit pass. The bold Date is 2026-07-03. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. There is no PASS, FAIL, or TOTAL row. The title fails the card scan and was not stored. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 61,
+    "note_hash_line": 43,
+    "shard": "th",
+    "total_pass": 0
+  },
+  "line_count": 216,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5397,
+    "citation_key": 5429,
+    "deps_hash": "158566792693",
+    "out_degree": 5
+  },
+  "not_filed": [
+    "an",
+    "as",
+    "at",
+    "bounded_theorem",
+    "by",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "theta_gauge_z2_collapse_positive_class_zero_branch_2026_07_03",
+    "to"
+  ],
+  "note_number": 1624,
+  "open": [
+    "Whether the physical action class lies in the positive conjugation-paired class.",
+    "Orientation-evenness is still a named hypothesis.",
+    "The pi branch stays available to a class that allows negative sector values.",
+    "The admissibility rule under improper maps is open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The cited carrier, gluing, and link-star notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 216 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/theta_gauge_z2_collapse_positive_class_zero_branch_2026_07_03.py",
+  "sha256": "ef0cf0e25042bd9fc48f75a90b528d3dd16e83e26009f0d2c046e950a05983d6",
+  "source": "docs/THETA_GAUGE_Z2_CHARACTER_COLLAPSE_ODD_SUPPORT_AND_POSITIVE_CLASS_ZERO_BRANCH_SELECTION_BOUNDED_THEOREM_NOTE_2026-07-03.md",
+  "status_line": "absent",
+  "title": "",
+  "wave": "BIH",
+  "yaml_status": "absent"
+}

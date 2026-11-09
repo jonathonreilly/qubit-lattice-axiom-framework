@@ -1,0 +1,77 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 6999,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. On finite positive diagonals, continuous direct-sum additive readouts are one-site sums, and a single determinant-only readout across dimensions is the logarithmic quotient. The note does not derive T1-d from Record and does not supply the physical readout context. The bold Type token is absent, so grade_clash is false. The bold Date is 2026-06-18. No bold Status header is present, so status_line is absent. The Source-side status line and the Trace class line are not Status headers and are not an audit pass. yaml_status is absent. The parsed yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The expected TOTAL row was not recomputed and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 636,
+    "note_hash_line": 40,
+    "shard": "ob",
+    "total_pass": 0
+  },
+  "line_count": 171,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4058,
+    "citation_key": 4076,
+    "deps_hash": "92ebd754048c",
+    "out_degree": 2
+  },
+  "not_filed": [
+    "If",
+    "It",
+    "as",
+    "by",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1686,
+  "open": [
+    "T1-d stays underived from Record.",
+    "The determinant quotient and the source-to-record disjointness bridge stay unsupplied.",
+    "Trace-sensitive one-site readouts stay mathematically live on this surface.",
+    "The cited 2026-06-05 axiom memo and the 2026-06-16 no-go were not opened.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "No cache file is named in the note.",
+    "The cited 2026-06-05 axiom memo was not opened.",
+    "The cited 2026-06-16 no-go and the parent Observable Principle note were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 171 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py",
+  "sha256": "79a7a517aaa8c6bb66499cb7ec5c3202b54c740a7d05ca938858b8e84e8440dd",
+  "source": "docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "Observable-Principle T1-d Positive-Diagonal Readout Classifier",
+  "wave": "BKR",
+  "yaml_status": "absent"
+}

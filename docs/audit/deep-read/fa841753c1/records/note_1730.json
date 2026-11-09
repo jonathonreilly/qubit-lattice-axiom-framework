@@ -1,0 +1,78 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 5165,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-17",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. On a declared Euclidean staggered surface, signed adjacent exchanges transport a single-antiperiodic-axis boundary datum from axis a to axis a+1 and preserve the periodic staggered hop. Adjacent transpositions generate S4, checked here by a closed orbit of 24 permutations, so the antiperiodic-axis label is one S4 orbit and is not an absolute axis supplier. The note prints, for each adjacent pair in (0,1), (1,2), and (2,3), that the periodic operator is fixed, that the antiperiodic operator moves to the next axis, and that the moved operator differs from the original by norm 16. Those matrix norms were not recomputed. A parity grading is printed as exchange-inert and axis-label-free. The note says this does not derive a unique evolution axis, a time metric, or a dynamics, and that a native one-parameter dynamics over Z^3 remains a separate open gate. The printed TOTAL: PASS=22 FAIL=0 was not recomputed and is not an audit pass. Bold Type is bounded_theorem, matching the ledger claim_type, so grade_clash is false. The Claim type line is the same token and is not a Type line. No bold Status is present, so status_line is absent. The bold Date is 2026-06-17. yaml_status is absent. The ledger dependency list is minimal_axioms and the yaml list is empty, so deps_eq_yaml is false. The folded link minimal_axioms_2026-06-05 is not the same string as the ledger id minimal_axioms. The note attributes to that 2026-06-05 memo that Lattice, Quantum, and Record do not supply a dynamics or time metric. That memo was not opened. The ledger effective status is unaudited and is not an audit pass. prose_status clean is not an audit pass. criticality leaf is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 1477,
+    "note_hash_line": 39,
+    "shard": "si",
+    "total_pass": 0
+  },
+  "line_count": 126,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4992,
+    "citation_key": 5017,
+    "deps_hash": "c8eee4235fc9",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "at",
+    "be",
+    "bounded_theorem",
+    "by",
+    "in",
+    "is",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "single_clock_axis_datum_s4_transportable_check_2026_06_17",
+    "to"
+  ],
+  "note_number": 1730,
+  "open": [
+    "A unique physical time axis is not derived.",
+    "A native one-parameter dynamics over Z^3 remains an open gate.",
+    "The printed operator norms were not recomputed.",
+    "The named 2026-06-05 memo was not opened.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not executed.",
+    "The ledger previous_audits entries are dirty and were not opened.",
+    "The cited axiom memo was not opened.",
+    "The cited input notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 126 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/single_clock_axis_datum_s4_transportable_check_2026_06_17.py",
+  "sha256": "0f98f898f523d30574686e22f2c162f8fad605f74537d2b7c21465e3b4ef826a",
+  "source": "docs/SINGLE_CLOCK_ANTIPERIODIC_AXIS_DATUM_S4_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-06-17.md",
+  "status_line": "absent",
+  "title": "Single-Clock Antiperiodic Axis Datum S4-Transport Bounded Theorem",
+  "wave": "BMJ",
+  "yaml_status": "absent"
+}

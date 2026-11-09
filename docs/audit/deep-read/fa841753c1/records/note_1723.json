@@ -1,0 +1,76 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 9244,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-17",
+  "grade_clash": true,
+  "issues": [
+    {
+      "detail": "No breakthrough. The live result, dated 2026-10-04 in the note, is the coefficient of a supplied heat-kernel matching line: G = 3 pi/(N_f Lambda^2), conditional on the stated Dirac operator and regulator conventions. The spinor trace with E = -R/4 and spinor dimension 4 gives tr(6E + R I)/6 = -R/3. Rearrangement of 1/(16 pi G) = (4 pi)^{-2} (1/3) Lambda^2 N_f gives G = 3 pi/(N_f Lambda^2). The older printed 48 pi^3 is larger by exactly (4 pi)^2 = 16 pi^2. The note's decimals 157.9 and 9.42 are rounded stand-ins. The same boundary withdraws the later healthy-graviton list and the one-residual-wall conclusion as results of this packet. The physical metric, the graviton, its coupling, and the G>0 sign stay open. Bold Type is present and differs from the ledger claim_type, so grade_clash is true. No bold Status is present, so status_line is absent. The bold Date is 2026-06-17. yaml_status is absent. The yaml dependency list is empty and the ledger dependency list has length 1, so deps_eq_yaml is false. The ledger effective status is unaudited and is not an audit pass. prose_status not_evaluated_pre_vocab_lint is not an audit pass. criticality leaf is not an audit pass. total_pass is 0. The TOTAL row sits on a masked line and was not recomputed. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 57,
+    "note_hash_line": 39,
+    "shard": "un",
+    "total_pass": 0
+  },
+  "line_count": 131,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5564,
+    "citation_key": 5602,
+    "deps_hash": "93647542a57e",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "No",
+    "an",
+    "as",
+    "at",
+    "by",
+    "frontier_universal_gr_sakharov_gnewton_induced_scale_2026_06_17",
+    "in",
+    "is",
+    "it",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1723,
+  "open": [
+    "The physical metric stays underived.",
+    "The graviton and its coupling stay outside the live packet.",
+    "The G>0 sign stays open.",
+    "The TOTAL row was masked and was not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named channel note was not opened.",
+    "The ledger previous_audits list is empty.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 131 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_universal_gr_sakharov_gnewton_induced_scale_2026_06_17.py",
+  "sha256": "ec14da03a7405a511b00665ff91df149c896d941f49e2a2ca9b440873ffa785f",
+  "source": "docs/UNIVERSAL_GR_SAKHAROV_GNEWTON_INDUCED_RESIDUAL_IS_METRIC_DOF_POSIT_NARROW_THEOREM_NOTE_2026-06-17.md",
+  "status_line": "absent",
+  "title": "Emergent Gravity Reduces to One Admission: G_Newton Is Induced (~a\u00b2); the Residual Wall Is the Metric-DOF / Conformal-Class Posit",
+  "wave": "BMC",
+  "yaml_status": "absent"
+}

@@ -1,0 +1,76 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 3724,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": true,
+  "issues": [
+    {
+      "detail": "No breakthrough. Supplied P = 0.5934, the power 1/4, alpha_bare = 1/(4 pi), and the natural logarithm in the displayed ALPHA_HI formula give the printed live-constant decimals. ALPHA_LO is identified with alpha_LM. The natural-log evaluation of ALPHA_HI is 0.092264992618360, about 0.001597 above alpha_LM. Observed inputs ETA_OBS = 6.12e-10, OMEGA_DM_OBS = 0.268, and H_PARAM = 0.674, with the supplied coefficient 3.6515e-3, give the printed quotient 5.447934280745940. This is a source-side arithmetic certificate for one live-constants edge. It does not derive P, ETA_OBS, or OMEGA_DM_OBS, and it does not close DM or the selector premise. The bold Type token is bounded support theorem / dependency-edge certificate. The ledger claim_type is bounded_theorem, so grade_clash is true. The bold Status is the single line bounded support only. That status line is not an audit pass. yaml_status is absent. The parsed yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. prose_status clean is not an audit pass. total_pass is 0. The printed FAIL=0 line was not recomputed and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [
+      "scripts/canonical_plaquette_surface.py",
+      "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
+      "scripts/dm_full_closure_same_surface_thermal_support_common.py",
+      "scripts/dm_leptogenesis_exact_common.py"
+    ],
+    "lines": 240,
+    "note_hash_line": 44,
+    "shard": "dm",
+    "total_pass": 0
+  },
+  "line_count": 97,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 1317,
+    "citation_key": 1328,
+    "deps_hash": "4afbf5d4a27e",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "It",
+    "an",
+    "as",
+    "by",
+    "frontier_dm_live_constants_canonical_edge_2026_06_18",
+    "is",
+    "md",
+    "on",
+    "or",
+    "py"
+  ],
+  "note_number": 1711,
+  "open": [
+    "The plaquette value P = 0.5934 stays supplied.",
+    "ETA_OBS and OMEGA_DM_OBS stay observed inputs.",
+    "Packet-completeness and selector authority stay open.",
+    "DM closure stays open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cache file was not opened.",
+    "The cited notes were not opened.",
+    "The named helper scripts were not executed.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 97 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_dm_live_constants_canonical_edge_2026_06_18.py",
+  "sha256": "2c56412ccb2110794de0366ca670a1383063e1c0d36870a74b07c9a4fadc9d92",
+  "source": "docs/DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md",
+  "status_line": "bounded support only",
+  "title": "DM Live Constants Canonical Edge Certificate",
+  "wave": "BLQ",
+  "yaml_status": "absent"
+}

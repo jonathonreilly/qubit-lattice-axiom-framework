@@ -1,0 +1,81 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 25603,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-12",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Interesting exact local counterterm for a combined reference, plus one joint colored response on a declared graph domain. The response is O of the red row and is not an autonomous same-norm map, not a coarse-shadow contraction, and not a continuum result. The printed scalar 0.7805068324171649 is arithmetic compatibility only. total_pass is 0. The date line is 2026-07-12. The status line is unaudited candidate; effective status is pipeline-derived only after independent audit. The type is bounded_theorem. There is no bold claim-type header. The yaml dep list is empty. Bare retention is not allowed. There is no grade clash. The path, title, and runner are withheld. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 4,
+    "helpers": [],
+    "lines": 60,
+    "note_hash_line": 42,
+    "shard": "wi",
+    "total_pass": 0
+  },
+  "line_count": 524,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5701,
+    "citation_key": 5740,
+    "deps_hash": "de821b3ea4dc",
+    "out_degree": 4
+  },
+  "not_filed": [
+    "At",
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to"
+  ],
+  "note_number": 1552,
+  "open": [
+    "Coarse-shadow handoff stays open.",
+    "Future-center migration stays open.",
+    "Same-norm Hessian stays open.",
+    "A critical trajectory stays open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 524 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "7fec2e9aab9d85ed248b1b9c95eb93bc065e2067c418cefbdb67bb38234aa875",
+  "source": "",
+  "status_line": "unaudited candidate; effective status is pipeline-derived only after independent audit.",
+  "title": "",
+  "wave": "BFN",
+  "yaml_status": "absent"
+}

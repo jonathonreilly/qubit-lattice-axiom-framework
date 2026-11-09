@@ -1,0 +1,76 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 6304,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-21",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Gauge no-go for splitting a total reciprocal degree of 2 into independent source and readout legs. The endpoint ratio lambda = 9/4 fixes only a + b = 2. It does not select the split with source degree 1 and readout degree 1. The note leaves rho_E = 21/4 underived. No bold Type, so the Type token is absent. No bold Status, so status_line is absent. yaml_status is absent. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 0,
+    "helpers": [],
+    "lines": 60,
+    "note_hash_line": 42,
+    "shard": "qu",
+    "total_pass": 0
+  },
+  "line_count": 191,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4567,
+    "citation_key": 4588,
+    "deps_hash": "8373ec25b318",
+    "out_degree": 4
+  },
+  "not_filed": [
+    "It",
+    "No",
+    "an",
+    "as",
+    "be",
+    "do",
+    "if",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1657,
+  "open": [
+    "The endpoint triple stays open.",
+    "rho_E = 21/4 is not derived.",
+    "The degree relation a + b = 2 does not select source degree 1 and readout degree 1.",
+    "The expected PASS=13 FAIL=0 line was not recomputed.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The cached runner log was not opened.",
+    "The authority-link notes were not opened.",
+    "The cited Route-2 notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 191 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "",
+  "sha256": "c359061f07afe775ef624c1ac14f69f7728771ba767aed636300a0097d213cc1",
+  "source": "",
+  "status_line": "absent",
+  "title": "",
+  "wave": "BJO",
+  "yaml_status": "absent"
+}

@@ -1,0 +1,68 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 3609,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. The proved statement is an exact classification of a supplied finite polynomial system. With n = 0 and a != 0, the equations force z = -6a, xy = -8a^2, and {x, y} = {4a, -2a}. The two branches (4a, -2a, -6a, 0) and (-2a, 4a, -6a, 0) satisfy the equations. At a = 0 the same equations also hold for every pair with y = -x, z = 0, and n = 0, so the two-branch list is the solution set only when a != 0, which is the division step the note states. The note does not identify the variables with physical carriers and does not supply a realization, a species identification, a representation selection, a chirality-selection law, or a completion-minimality theorem. No bold Type token is present, so no Type token is compared and grade_clash is false. No bold Status is present, so status_line is absent. The bold Date is 2026-06-18. yaml_status is absent. Both dependency lists are empty, so deps_eq_yaml is true and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. prose_status not_evaluated_pre_vocab_lint is not an audit pass. criticality critical is not an audit pass. total_pass is 0. The note has no TOTAL row. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": true,
+    "deps_order_differs": false,
+    "direct_in_degree": 1,
+    "helpers": [],
+    "lines": 1684,
+    "note_hash_line": 37,
+    "shard": "ab",
+    "total_pass": 0
+  },
+  "line_count": 117,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 33,
+    "citation_key": 33,
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "not_filed": [
+    "an",
+    "by",
+    "frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18",
+    "in",
+    "is",
+    "of",
+    "or",
+    "py"
+  ],
+  "note_number": 1722,
+  "open": [
+    "Physical carrier identification stays open.",
+    "A realization, species identification, representation selection, and a chirality-selection law stay open.",
+    "Completion-minimality stays open.",
+    "The two-branch list is stated for a != 0.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named cached_runner_output helper was not executed.",
+    "The ledger previous_audits entries were not copied.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 117 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py",
+  "sha256": "38d9caea2981e2382604ceece520b33e96257e8a70a63821a3ec70f939e3826f",
+  "source": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+  "status_line": "absent",
+  "title": "Scale-Free Supplied Anomaly-Equation Classification",
+  "wave": "BMB",
+  "yaml_status": "absent"
+}

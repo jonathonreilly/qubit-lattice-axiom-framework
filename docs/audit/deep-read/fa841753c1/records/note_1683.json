@@ -1,0 +1,72 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 6074,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-06-18",
+  "grade_clash": true,
+  "issues": [
+    {
+      "detail": "No breakthrough. Inside an already explicit finite controlled-copy model, a stipulated kick at theta = pi/4 induces orthogonal record labels, and a fixed calibration turns that kick into the ideal write isometry W. It does not derive quantum-Darwinism record reading from the minimal axioms, and it supplies no physical Hamiltonian, action, coupling, clock, rate, or beta. The bold Type token is exact support theorem. The ledger claim type is bounded_theorem. Those differ, so grade_clash is true. The bold Date is 2026-06-18. The bold Status is exact support; source-side bridge only. That sentence is not an audit pass. yaml_status is present. The parsed yaml list is empty and the ledger dep list is not, so deps_eq_yaml is false and deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. total_pass is 0. The printed SUMMARY row uses an ellipsis and is not an audit pass. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 6,
+    "helpers": [],
+    "lines": 292,
+    "note_hash_line": 39,
+    "shard": "re",
+    "total_pass": 0
+  },
+  "line_count": 185,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4651,
+    "citation_key": 4674,
+    "deps_hash": "2ffb6666f845",
+    "out_degree": 1
+  },
+  "not_filed": [
+    "an",
+    "be",
+    "by",
+    "frontier_record_formation_controlled_copy_write_isometry_2026_06_18",
+    "is",
+    "md",
+    "of",
+    "on",
+    "or",
+    "py",
+    "to"
+  ],
+  "note_number": 1683,
+  "open": [
+    "The ideal write stays inside the explicit finite controlled-copy model.",
+    "Quantum-Darwinism record reading stays underived from the minimal axioms.",
+    "No physical Hamiltonian, action, coupling, clock, rate, or beta is supplied.",
+    "No Born rule or probability law is derived from post-record counts.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The named primary runner was not executed.",
+    "The named generated output was not opened.",
+    "The cited pointer-dynamics note was not opened.",
+    "The cited Kraus bridge and persistent-record note were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 185 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.py",
+  "sha256": "871872d01eccf53bf71bfd288ef30344ef1954aa434e239b19c563c03edc26a5",
+  "source": "docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md",
+  "status_line": "exact support; source-side bridge only.",
+  "title": "Record Formation Controlled-Copy Write-Isometry Theorem",
+  "wave": "BKO",
+  "yaml_status": "present"
+}

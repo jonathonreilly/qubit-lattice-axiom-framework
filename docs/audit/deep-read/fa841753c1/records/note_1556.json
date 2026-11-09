@@ -1,0 +1,83 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 43735,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-12",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Interesting exact recentering of an actual bare-range strong output around the extracted positive Hermitian next quadratic center, plus a strict strong-to-weak response at one large displayed coordinate. The split constant is exp(-1/2). It is not a same-domain map, not an invariant ball, and not a same-norm Hessian. total_pass is 0. The date line is 2026-07-12. The status line is unaudited candidate; effective status is pipeline-derived only after independent audit. The type is bounded_theorem. There is no bold claim-type header. The yaml dep list is empty. Bare retention is not allowed. There is no grade clash. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 4,
+    "helpers": [],
+    "lines": 59,
+    "note_hash_line": 41,
+    "shard": "wi",
+    "total_pass": 0
+  },
+  "line_count": 819,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 5697,
+    "citation_key": 5736,
+    "deps_hash": "6e3ed1b349dd",
+    "out_degree": 3
+  },
+  "not_filed": [
+    "At",
+    "It",
+    "No",
+    "On",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "do",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "so",
+    "to",
+    "wilson_staggered_future_s2_center_reference_ledger_2026_07_12"
+  ],
+  "note_number": 1556,
+  "open": [
+    "Same-domain return stays open.",
+    "A perturbative center update stays open.",
+    "A same-norm Hessian stays open.",
+    "A critical trajectory stays open.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 819 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/wilson_staggered_future_s2_center_reference_ledger_2026_07_12.py",
+  "sha256": "f2a2b65c8e368aace71b7e4301cab34ff9d099652b18cb20dd3bffaa76322d5c",
+  "source": "",
+  "status_line": "unaudited candidate; effective status is pipeline-derived only after independent audit.",
+  "title": "",
+  "wave": "BFR",
+  "yaml_status": "absent"
+}

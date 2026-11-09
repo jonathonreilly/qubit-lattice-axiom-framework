@@ -1,0 +1,85 @@
+{
+  "bare_retained_allowed": false,
+  "bytes": 16200,
+  "centre_lines": [],
+  "centre_pair": false,
+  "commit": "fa841753c1a6296e5ad45518375660b0f1004769",
+  "date_line": "2026-07-10",
+  "grade_clash": false,
+  "issues": [
+    {
+      "detail": "No breakthrough. Interesting exact conditional positivity lemma on a supplied two-slice surface. The joint Gram of mixed slice-1 observables is positive semidefinite for every nonnegative beta and every positive scalar m, and the normalization is strictly positive. The one-pair coefficient array is the diagonal 1, 1/2, 1/2, 1/4. This is not an axiom stop. total_pass is 0. There is no bold Status header, so the status line is absent. A runner scorecard is not an audit pass. The bold Type line is positive_theorem. The date line is 2026-07-10. deps_eq_yaml is false. deps_order_differs is false. The ledger effective status is unaudited and is not an audit pass. One ledger dep is withheld. The source path is stored. The next row is stored. No new axiom."
+    }
+  ],
+  "ledger": {
+    "deps_equal_yaml": false,
+    "deps_order_differs": false,
+    "direct_in_degree": 3,
+    "helpers": [
+      "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py",
+      "scripts/reflection_positivity_wilson_temporal_gauge_n7_independent_2026_07_18.py",
+      "scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py"
+    ],
+    "lines": 64,
+    "note_hash_line": 46,
+    "shard": "rp",
+    "total_pass": 0
+  },
+  "line_count": 410,
+  "line_count_method": "splitlines",
+  "manifests": {
+    "base_key": 4827,
+    "citation_key": 4850,
+    "deps_hash": "1e2d87e31deb",
+    "out_degree": 4
+  },
+  "not_filed": [
+    "At",
+    "It",
+    "No",
+    "an",
+    "as",
+    "at",
+    "be",
+    "by",
+    "in",
+    "is",
+    "it",
+    "md",
+    "no",
+    "of",
+    "on",
+    "or",
+    "py",
+    "rp_coupled_two_slice_gauge_staggered_berezin_gram_2026_07_10",
+    "so",
+    "to"
+  ],
+  "note_number": 1595,
+  "open": [
+    "Continuum and thermodynamic limits stay open.",
+    "Reconstruction of a transfer spectrum stays open.",
+    "Odd-period determinant extension stays open.",
+    "The parent row status stays unset by this supplier.",
+    "Formal audit was not performed."
+  ],
+  "parent_read_all_lines": true,
+  "parent_signed": true,
+  "proposed_retained": false,
+  "provenance_not_opened": [
+    "The primary runner was not run.",
+    "The runner cache was not opened.",
+    "The axioms memo was not opened.",
+    "The direct parent notes were not opened.",
+    "The next note was not opened."
+  ],
+  "reader": "The parent read all 410 lines. No separate reader was launched for this note.",
+  "rejected_reader_findings": [],
+  "runner": "scripts/rp_coupled_two_slice_gauge_staggered_berezin_gram_2026_07_10.py",
+  "sha256": "112e28df8715603287cd54b1333de845ca6d0b1d550151c780a8b232919113f6",
+  "source": "docs/RP_COUPLED_TWO_SLICE_GAUGE_STAGGERED_BEREZIN_GRAM_NARROW_THEOREM_NOTE_2026-07-10.md",
+  "status_line": "absent",
+  "title": "Coupled two-slice SU(3) gauge + staggered Berezin/OS Gram \u2014 narrow theorem note",
+  "wave": "BHE",
+  "yaml_status": "absent"
+}

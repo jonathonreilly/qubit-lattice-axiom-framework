@@ -139,6 +139,126 @@ These are not repairs. The note already leaves them unresolved.
 - Path: `docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md`
 - Physical seconds, minimum resources, calibration, the joint coefficient box, native supply, capture, reset, and reuse stay open.
 
+## Note 28
+
+- Path: `docs/CRITICAL_PRODUCT_SOURCE_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Common waveform, wrong-window coefficients, native calibration, and physical time stay open.
+
+## Note 29
+
+- Path: `docs/CORNER_FERMION_QUBIT_CODE_GENUINE_CUBE_ROTATION_ACTION_EMERGENT_FERMION_CARRIES_SPIN_HALF_CLASS_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- The mobile doublet, which dynamics selects the twist, and an axiom derivation of the corners stay open.
+
+## Note 30
+
+- Path: `docs/CORNER_FERMION_MASSLESS_DIRAC_PAIR_PROTECTED_BY_CUBE_ROTATIONS_AND_PSEUDOSCALAR_DIRAC_MASS_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Spontaneous mass, global low-energy status, the qubit form of `X` and `M`, and charge stay open.
+
+## Note 31
+
+- Path: `docs/CORNER_FERMION_LONG_WAVELENGTH_THEORY_IS_ONE_ISOTROPIC_SPIN_HALF_DOUBLET_AND_ONE_QUBIT_BLOCK_EMBEDDING_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Global uniqueness of the minimum, a uniform one-qubit rule, and charge stay open.
+
+## Note 32
+
+- Path: `docs/COMMON_SOURCE_OFFSET_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Native realization, physical seconds, and any single target for an unknown offset stay open.
+
+## Note 33
+
+- Path: `docs/COLLECTIVE_CORNER_RESPONSE_NOTE_2026-10-17.md`
+- An interaction from the fine Hamiltonian, the thermodynamic limit, and canonical or cosmological normalization stay open.
+
+## Note 34
+
+- Path: `docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- `D2` localization, other site-local encodings, and dynamics stay open.
+
+## Note 35
+
+- Path: `docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- `D2` localization, the mixed sectors, and which realization dynamics selects stay open.
+
+## Note 36
+
+- Path: `docs/BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_MINIMAL_ORBIT_FOUR_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Vertex-dependent orderings, couplings between copies, and ancillas stay open.
+
+## Note 37
+
+- Path: `docs/AUTONOMOUS_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Physical seconds, a native Record, early herald accuracy, and permanent halt or reset stay open.
+
+## Note 38
+
+- Path: `docs/ALL_LATE_THREE_SITE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- An evaluated all-late time, a native supplier, and uniform finite storage for all future times stay open.
+
+## Note 46
+
+- Path: `docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md`
+- The observation protocol, action class, species correspondence, scales, and nonlinear extension stay open.
+
+## Note 47
+
+- Path: `docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md`
+- The action class, registered `H`, `alpha`, and `mu`, calibration, and any physical initial state stay open.
+
+## Note 48
+
+- Path: `docs/SAMPLED_COUPLING_RECONSTRUCTION_NOTE_2026-10-16.md`
+- Clamped-sample calibration, the moving-`q` kinetic law, and empirical identification stay open.
+
+## Note 49
+
+- Path: `docs/RINGDOWN_ACTION_RECONSTRUCTION_NOTE_2026-10-16.md`
+- Rest preparation, force calibration, and extensions beyond the quadratic class stay open.
+
+## Note 50
+
+- Path: `docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Native controls, necessity of the allocations, symmetry-breaking budgets, and hardware closure stay open.
+
+## Note 51
+
+- Path: `docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- An emitted coefficient list, physical calibration, source preparation, reset, and halt stay open.
+
+## Note 52
+
+- Path: `docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- A certified integrable tail, physical clocks, reset, bandwidth, and apparatus work stay open.
+
+## Note 53
+
+- Path: `docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Necessity of the uniform allocations, generic faults, and microscopic work storage stay open.
+
+## Note 54
+
+- Path: `docs/POSITIVE_ONSITE_TARGET_COMPILATION_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Hardware supply, arbitrary-target compilation, and every physical drift, phase, clock, and isolation budget stay open.
+
+## Note 55
+
+- Path: `docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Native actuation, clock, isolation, drive outputs, autonomous halt or reuse, and retained audit stay open. The explicit `n` is an existence witness, larger than `Q^4`.
+
+## Note 56
+
+- Path: `docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Native preparation, vacant exterior geometry, anisotropic installation, calibration, records, reset or reuse, and retained audit stay open.
+
+## Note 57
+
+- Path: `docs/ORDER_BLIND_POSITIVE_FORMATION_IS_A_ONE_DEPENDENT_GIBBS_FIELD_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Gibbs uniqueness, dynamics, order-sensitive rules, rules with zeros, and adoption of any alphabet or reading stay open.
+
+## Note 58
+
+- Path: `docs/LOCAL_NETWORK_INTERVENTION_RESPONSE_NOTE_2026-10-16.md`
+- The map from preparation, forcing, a local connection change, and records onto this common response stays open.
+
 ## Note 1551
 
 - Path: `docs/WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md`

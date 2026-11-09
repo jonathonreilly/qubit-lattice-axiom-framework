@@ -4,6 +4,14 @@ Pin: `fa841753c1a6296e5ad45518375660b0f1004769`
 
 A row appears here only when the note is wrong or overclaims. One finding, one later repair. This file does not change claim status.
 
+## Note 46
+
+- Path: `docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md`
+- Defect: The eigenbasis disclaimer calls `n=11/10` a repeated root.
+- Evidence: The note says “not a claim of a complete eigenbasis at repeated roots (n=97/98 or 11/10)”. The quadratic `(2n-1)m(2m+7)+6=0` has discriminant `(2n-1)[49(2n-1)-48]`. For `n>1/2` the only double root is `n=97/98`, at `m=-7/4`. At `n=11/10` the discriminant is `324/25` and the roots are the distinct values `m=-5/2` and `m=-1`. The mode `m=-5/2` is also one of the two common modes with `Xi=0`.
+- Edit: Keep `n=97/98` as the repeated root. Describe `n=11/10` as the overlap of the root `m=-5/2` with that `Xi=0` mode. Leave the excluded denominator `m=-4` as it stands.
+- How this row was made: read on 2026-11-09. The discriminant and both roots were recomputed from the printed quadratic. The runner was not executed.
+
 ## Note 1696
 
 - Path: `docs/GRAVITY_SIGN_IS_NOT_A_NEW_ADMISSION_REDUCES_TO_SHARED_ORIENTATION_DATUM_KCPT_CANNOT_SELECT_NARROW_THEOREM_NOTE_2026-06-18.md`

@@ -197,6 +197,174 @@ Runners were not executed.
 - Checked: `2954065138388379/781250000000000000` is `0.003781203377137125` and sits under `0.004`. The finite numerator `3735315138388379/781250000000000000` sits under `0.005`. The failed substitutions `32/25` and `4/5` are exactly `1.28` and `0.8`.
 - Not checked: the family derivation beyond those printed bounds. The runner was not executed. Detail is in `batches/notes_0017_0027.md`.
 
+## Note 28
+
+- Path: `docs/CRITICAL_PRODUCT_SOURCE_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: at the open edge `j=0.0027`, `2 j sin(4*10^{-6})` is `2.15999999999424*10^{-8}`, above `2.15*10^{-8}`. `(4.1*10^{-6})^2 (2.15*10^{-8})^6` is `1.660345513...*10^{-57}`, above `1.600000006*10^{-57}`.
+- Not checked: the resolvent derivation. The runner was not executed. Detail is in `batches/notes_0028_0038.md`.
+
+## Note 29
+
+- Path: `docs/CORNER_FERMION_QUBIT_CODE_GENUINE_CUBE_ROTATION_ACTION_EMERGENT_FERMION_CARRIES_SPIN_HALF_CLASS_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `24*24=576`, `48*4^3=3072`, `48*6^3=10368`, and `12*64=768=32*24`. `(-i)^{1536}=1`. The note already says the historical `L=6` log `runner_qubits_L6.log` is not a current certificate, and its expected line for the current script is `PASS=19`.
+- Not checked: the group law. The runner was not executed. Detail is in `batches/notes_0028_0038.md`.
+
+## Note 30
+
+- Path: `docs/CORNER_FERMION_MASSLESS_DIRAC_PAIR_PROTECTED_BY_CUBE_ROTATIONS_AND_PSEUDOSCALAR_DIRAC_MASS_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: the printed mass strength `1.40405896` is the 8-decimal rounding of `1.4040589577986065`.
+- Not checked: the sampled ranks. The runner was not executed. Detail is in `batches/notes_0028_0038.md`.
+
+## Note 31
+
+- Path: `docs/CORNER_FERMION_LONG_WAVELENGTH_THEORY_IS_ONE_ISOTROPIC_SPIN_HALF_DOUBLET_AND_ONE_QUBIT_BLOCK_EMBEDDING_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: the 24 proper rotations give three free orbits on a centred `5*5*5` block. `(1,2,0)` and `(1,2,2)` represent two disjoint orbits of size 24, and `125-48=77` spectators. A centred `3*3*3` block has no free orbit.
+- Not filed: a proposed repair that treated `runner_qubits_L4_flux1011.log` as the historical log disclaimed in note 29. Note 29 names `runner_qubits_L6.log`. The flux-`1011` log was not executed. Detail is in `batches/notes_0028_0038.md`.
+
+## Note 32
+
+- Path: `docs/COMMON_SOURCE_OFFSET_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: the seven printed ceilings sum to `0.000984320445`, under `0.000985`. Adding a cut below `10^{-10}` stays under `0.000986`. At `M=50000000`, the counts `50000243` and `100000281` are `M+243` and `2M+281`. `sinh(1)<1.176`. With `cos(k_Δ)=-Δ/(2g)` and `v_Δ=2g sin(k_Δ)`, the cosine addition formula gives the printed identity `δ-Δ=v_Δ sin(x/v_Δ)+Δ(cos(x/v_Δ)-1)`.
+- Not checked: the family derivation. The runner was not executed. Detail is in `batches/notes_0028_0038.md`.
+
+## Note 33
+
+- Path: `docs/COLLECTIVE_CORNER_RESPONSE_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `12*4^3=768` and `4^3/2=32`. `7.157298788740841-1.0811934946903061` matches `6.076105294050535` within `10^{-15}`. `1.4040589577986065^2/(0.03*64)` equals `1.0267612275908902` and sits under the degenerate part. `1/0.15741488548471327` rounds to `6.352639`.
+- Not checked: the response derivation. The runner was not executed. Detail is in `batches/notes_0028_0038.md`.
+
+## Note 34
+
+- Path: `docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `6!=720`. The printed split `12+12+36=60`. Stabilizer orders `24/4`, `24/6`, and `24/12` are `6`, `4`, and `2`.
+- Not checked: the intertwiner. The runner was not executed. Detail is in `batches/notes_0028_0038.md`.
+
+## Note 35
+
+- Path: `docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `12*3+36+12*3=108` and `72+36=108`. For `N=2`, the factor `e^{i pi N/2}` is `-1`.
+- Not checked: the cohomology count. The runner was not executed. Detail is in `batches/notes_0028_0038.md`.
+
+## Note 36
+
+- Path: `docs/BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_MINIMAL_ORBIT_FOUR_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `C(6,3)=20`, `6!=720`, and `12+12+36=60`. The orbit sizes `4`, `6`, and `12` have stabilizer orders `6`, `4`, and `2` in a group of order 24.
+- Not checked: the no-go argument beyond that orbit table. The runner was not executed. Detail is in `batches/notes_0028_0038.md`.
+
+## Note 37
+
+- Path: `docs/AUTONOMOUS_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: the branch sum `0.001057+0.00216+0.00105+2*(2.5*10^{-6})` is `0.004272`, under `0.0045`. `0.9999994-0.004501=0.9954984`, above `0.99549`, and `(0.99549)^2` is above `0.991`. `3*60^{-36}` is under `10^{-63}`. At the printed `M`, `M+240=15000000000240`.
+- Not checked: the record theorem. The runner was not executed. Detail is in `batches/notes_0028_0038.md`.
+
+## Note 38
+
+- Path: `docs/ALL_LATE_THREE_SITE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: with `a1=lambda/sqrt(3)` and `a2=lambda sqrt(8/3)`, `a1 a2/lambda^2=2 sqrt(2)/3`, the printed `c_a`. Both eigenvalues of the printed `W` have modulus 1. For `z>0`, `sum_{n>=1}(z+n)^{-2}<=1/z`.
+- Not checked: the onset integral and the coefficient `102.78`. The runner was not executed. Detail is in `batches/notes_0028_0038.md`.
+
+## Note 46
+
+- Path: `docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md`
+- Result: fix filed.
+- Checked: the quadratic discriminant and the two roots at `n=11/10`. The background identities `U=(8/5)(n-1)t^7=(4/5)(2n-2)t^7` agree.
+- Detail: `batches/notes_0046_0054.md`. The runner was not executed.
+
+## Note 47
+
+- Path: `docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: the numerator factors in (14) and (15) have greatest common divisor `c-1`. The other real root of `2c^5+11c^4+20c^3+4` is `-0.6656106285...`, which rounds to the printed `-0.66561063`.
+- Not checked: the compatibility polynomial beyond that fixture. The runner was not executed. Detail is in `batches/notes_0046_0054.md`.
+
+## Note 48
+
+- Path: `docs/SAMPLED_COUPLING_RECONSTRUCTION_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: at `Gamma=0`, `Omega2=4`, and `Delta=0.35`, `[1-cos(sqrt(Omega2) Delta)]/Omega2` is positive. On `[0,1]`, `a=1+q` and `b=q+q^3/3` have nonconstant `a/b'=(1+q)/(1+q^2)`.
+- Not checked: the rectangular-pulse sign at `t=2`. The runner was not executed. Detail is in `batches/notes_0046_0054.md`.
+
+## Note 49
+
+- Path: `docs/RINGDOWN_ACTION_RECONSTRUCTION_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: `S-Q=(tau'/tau)(O-lambda^2)`, so `r=(S-Q)/L=tau'/tau` when `L=O-lambda^2`.
+- Not checked: the reconstruction beyond that coefficient identity. The runner was not executed. Detail is in `batches/notes_0046_0054.md`.
+
+## Note 50
+
+- Path: `docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: if `|r-x/(2pi)|<=1/4` and `k=floor(r)+2`, then `k-x/(2pi)` lies in `(3/4,9/4]`.
+- Not checked: the variance allocation. The runner was not executed. Detail is in `batches/notes_0046_0054.md`.
+
+## Note 51
+
+- Path: `docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: at `m=0` the printed ratio is `794689/16777216`, under `1/16`. At `m=44`, `p=3m+39=171`. `cos theta=3/5` and `sin theta=4/5` are a Pythagorean pair.
+- Not checked: the window induction. The runner was not executed. Detail is in `batches/notes_0046_0054.md`.
+
+## Note 52
+
+- Path: `docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: `int_0^1 (6x^4-9x^5+3x^6) dx=9/70`, and `8` times that integral is `36/35`. With `epsilon=2^{-m}` and `T=2^{2m+32}`, `2/sqrt(T)=epsilon/32768`.
+- Not checked: the launch theorem. The runner was not executed. Detail is in `batches/notes_0046_0054.md`.
+
+## Note 53
+
+- Path: `docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: `sin^2(pi/8)=(2-sqrt(2))/4>1/8`. The tail comparison `n^2/[64(2n+1)]>=n/192` holds for `n>=1`, and `n/96=L/192` when `L=2n`. At `L=384^2` and `delta=1/L` the small-delta threshold is saturated. Replacing `delta` by `epsilon/2` replaces the denominator `384` by `768`.
+- Not checked: the circuit identity beyond those constants. The runner was not executed. Detail is in `batches/notes_0046_0054.md`.
+
+## Note 54
+
+- Path: `docs/POSITIVE_ONSITE_TARGET_COMPILATION_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: `(-7+24i)/25` has modulus 1, and its square is `(-527-336i)/625`. `tan(4 atan(1/5))=120/119`. `16/r=147975045+3/25`, so `M=147975046`. With the explicit `n` from note 55, `24 M n` equals the printed `T`, and that `T` is below `2^{220}`. `384*81=31104`.
+- Not checked: the compilation argument. The runner was not executed. Detail is in `batches/notes_0046_0054.md`.
+
+## Note 55
+
+- Path: `docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: the 24 numerators match `192+((73j+41) mod 128)`, sum to `6028`, and give `sum a_j=1507/128` and `alpha0=13027/240`. `integral psi=8/15`, `c=16/15`, and `L=4096/225`. `Lt/s=1/2`, `rho=25/115605504`, `r=25/231211008`, and `4 c t=5/10752`. The majorant integral is `773/240`. `Q=591900181` and `M=147975046`, and both `Q^4` and `24 M Q^4` match the printed integers. The explicit `n` has 187 bits and Hamming weight 88, and it is larger than `Q^4`. `n e0<1/2` and `eta<10^{-35}`.
+- Not checked: the chart contraction and the executed enclosure. The runner was not executed. Detail is in `batches/notes_0055_0058.md`.
+
+## Note 56
+
+- Path: `docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: the positive gaps of `H_lambda` collide at `lambda=1/3` and `lambda=1/2`. At `lambda=1` the gap set is `{4,8,12,16,20,24}`. `(X+2Y+3Z)^2=14I`. The eigenvalues of `sqrt(14)I+X+2Y+3Z` are `0` and `2 sqrt(14)`. Five terms at `epsilon/16` give isometry error `5 epsilon/16` and the note’s trace-norm bound `5 epsilon/8`; with the two `epsilon/8` allowances the total is `7 epsilon/8`. Boxes with sides in `{1,2,3,4,5}` number `125`, and `125-4^3=61` have a side equal to `1`.
+- Not checked: the path count `729` and the controller induction. The runner was not executed. Detail is in `batches/notes_0055_0058.md`.
+
+## Note 57
+
+- Path: `docs/ORDER_BLIND_POSITIVE_FORMATION_IS_A_ONE_DEPENDENT_GIBBS_FIELD_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: `kappa/36=1/72` at `kappa=1/2`. A plaquette has `4!=24` orders, and neighbour patterns number `3^6`. The note already limits the Coulomb exclusion to strictly positive order-blind formation.
+- Not checked: the 48-point class variance. The runner was not executed. Detail is in `batches/notes_0055_0058.md`.
+
+## Note 58
+
+- Path: `docs/LOCAL_NETWORK_INTERVENTION_RESPONSE_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: `[[3/5,-4/5],[4/5,3/5]]` is a rotation. For `K=[[4,-1,0],[-1,5,-1],[0,-1,6]]`, `det K=110`, and the hidden rotation gives off-diagonals `-3/5`, `-4/5`, and `-1/5`, with row sums `13/5`, `29/5`, and `17/5`. For `w=(0,1,-1)`, `mu_1=-1` on the chain and `mu_1=1/5` after the rotation, so the squared leading-coefficient ratio is `25`. The rank-one test is the stated degree-3 polynomial in the three responses. The orders `t^3`, `t^7`, and `t^{11}` are `4d+3` at `d=0,1,2`.
+- Not checked: the tail series beyond the factorial comparison `(4d+5+2r)!>=(4d+5)! (2r)!`. The runner was not executed. Detail is in `batches/notes_0055_0058.md`.
+
 ## Note 1551
 
 - Path: `docs/WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md`

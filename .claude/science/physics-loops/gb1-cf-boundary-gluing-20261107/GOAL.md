@@ -149,3 +149,23 @@ from restricted original sources, with no supervisor candidate or script, then
 checks the integrated source. Keep the original candidates, all failures and
 source identities. Deliver a checked conditional milestone on the existing
 science PR; do not change axioms, primitives, audit authority or shared prompts.
+
+## Local verifier and record controller, 2026-11-08
+
+User asks for a lay update, then implementation through permitted neighborhood
+steps and a push. Extend the existing review PR; no science merge is authorized.
+Source parent e022e91b22 includes main 1e0d3b58dc. Current axiom and workflow
+sources are unchanged from the preceding checked reading.
+
+Target: exact finite preparation herald and read-only record control, with
+adjacent-gate routing, clean workspace, permanent-record protection and explicit
+output capacity. Distinguish gate compilation from physical generation of the
+gates, registration and autonomous timing. Compare an explicit presence encoding
+with the abstract presence predicate; a label is not a physical presence sensor.
+Temporary off-code work must be named and restored, with H suspended. No axiom
+change or unconditional microscopic record-state closure may be inferred.
+
+Evidence goes in local_implementation/. Use one same-family fresh restricted
+context checker in the existing checker worktree, maximum reasoning effort,
+original sources only before the supervisor candidate is frozen. Accept a
+construction, refutation or precise remaining obligation. Preserve failures.

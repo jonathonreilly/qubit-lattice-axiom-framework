@@ -1,0 +1,42 @@
+{
+  "source_sha256": "69c24418eda7a939bb429ad07ff01bbe54ada86cf51741b8595ba6cdcae5f1df",
+  "circuits": {
+    "1": {
+      "full_native_basis_columns": 32,
+      "pair_gates": 39,
+      "onsite_gates": 8,
+      "clean_work": 3
+    },
+    "2": {
+      "full_native_basis_columns": 512,
+      "pair_gates": 87,
+      "onsite_gates": 16,
+      "clean_work": 7
+    }
+  },
+  "routing": {
+    "paths_and_returned_permutations": 375,
+    "largest_sampled_path": 217,
+    "old_record_control_routes": 6,
+    "n_values": [
+      3,
+      12,
+      14
+    ],
+    "theorem_bound": "30n+2"
+  },
+  "controller": {
+    "prefix_outcome_cleanups": 236,
+    "branch_predicates": 11672,
+    "scope": "exact reversible copy/cleanup and compiled conjunction predicates; no formation simulator"
+  },
+  "witnesses": {
+    "two_flag_full_native_rank": 4,
+    "full_word_projector_rank": 1,
+    "recorded_zero_and_blank_zero_density_equal": true,
+    "interpretation": "specific encoding/interface witnesses, not axiom no-go claims"
+  },
+  "status": "ok",
+  "elapsed_seconds": 0.6249906250159256,
+  "max_rss_host_units": 21987328
+}

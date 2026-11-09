@@ -1,0 +1,132 @@
+{
+  "source_parent": "e022e91b224e8323f27352c367fc2648a7031104",
+  "main": "1e0d3b58dcda7f83152b0bb51729260247454d65",
+  "result_sha256": "6fe3d9fd46222aead330020237fa59e01128ffcb2af89862c8f1db6a35526f37",
+  "primary_sha256": "2cbf5ff6c0eb3ea502e0b15c1c4d3203d059c2222803275af53d1045ee35ef47",
+  "independent_sha256": "46f6537e09f8836d49ccdec91469ff63110be1fc4f96d6ccb5da6d0c573bc011",
+  "source_check_sha256": "39d7463a813344e311412024226757e164c17a78dbe5e2ead8055acfddc4dd4e",
+  "source_checked_result_sha256": "235658471216f23f3ea1231cf475b369a5e4412cc6baa85684b25f9ac28d9ac2",
+  "post_check_edit": "explicit completion append on failed herald before stable-boundary halt; monotone non-wrapping box routing checked separately in ROUTING_ADDENDUM.md and by supervisor source comparison and final exact run",
+  "probe": {
+    "source_sha256": "dab3a0c356d908c4a80a90b1bccc03c4f867a2fb4e0fc9a0ec39f197d726eec6",
+    "circuits": {
+      "1": {
+        "full_native_basis_columns": 32,
+        "pair_gates": 39,
+        "onsite_gates": 8,
+        "clean_work": 3
+      },
+      "2": {
+        "full_native_basis_columns": 512,
+        "pair_gates": 87,
+        "onsite_gates": 16,
+        "clean_work": 7
+      }
+    },
+    "routing": {
+      "paths_and_returned_permutations": 375,
+      "largest_sampled_path": 207,
+      "old_record_control_routes": 6,
+      "n_values": [
+        3,
+        12,
+        14
+      ],
+      "theorem_bound": "30n+2",
+      "embedding": "ordinary finite Z3 box, no periodic shortcut gates"
+    },
+    "controller": {
+      "prefix_outcome_cleanups": 236,
+      "branch_predicates": 11672,
+      "scope": "exact reversible copy/cleanup and compiled conjunction predicates; no formation simulator"
+    },
+    "witnesses": {
+      "two_flag_full_native_rank": 4,
+      "full_word_projector_rank": 1,
+      "recorded_zero_and_blank_zero_density_equal": true,
+      "interpretation": "specific encoding/interface witnesses, not axiom no-go claims"
+    },
+    "status": "ok",
+    "elapsed_seconds": 0.6430462500138674,
+    "max_rss_host_units": 22020096
+  },
+  "execution": {
+    "source_sha256": "dab3a0c356d908c4a80a90b1bccc03c4f867a2fb4e0fc9a0ec39f197d726eec6",
+    "runs": [
+      {
+        "label": "exact",
+        "exit_code": 0,
+        "elapsed_seconds": 0.7253252500086091,
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "python3",
+          ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/local_implementation/check.py"
+        ]
+      },
+      {
+        "label": "no-uncompute",
+        "exit_code": 1,
+        "elapsed_seconds": 0.039451415999792516,
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "python3",
+          ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/local_implementation/check.py",
+          "--fault",
+          "no-uncompute"
+        ]
+      },
+      {
+        "label": "unmasked-copy",
+        "exit_code": 1,
+        "elapsed_seconds": 0.6649556250195019,
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "python3",
+          ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/local_implementation/check.py",
+          "--fault",
+          "unmasked-copy"
+        ]
+      }
+    ]
+  },
+  "focused_checks": [
+    "complete source arguments read",
+    "independent and source-check copies exact",
+    "source hashes",
+    "probe source/output identity and intended mutation failures",
+    "initial executed source recovered with exact hash",
+    "compiled Python syntax",
+    "local Markdown file link targets",
+    "YAML checkpoint paths",
+    "vocabulary zero violations",
+    "inherited proof input hashes unchanged",
+    "six production runners/caches unchanged from prior verified commit",
+    "git diff --check",
+    "final non-wrapping routing algorithm hand proof",
+    "ordinary Z3 Manhattan adjacency assertion",
+    "all historical executed sources match their receipts"
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "platform": "darwin"
+  },
+  "formal_landing_review": false,
+  "independent_audit": false,
+  "canonical_packaging_pending": true,
+  "numeric_lease_released": true,
+  "editable_prompt_files": [
+    ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/GOAL.md"
+  ],
+  "bookkeeping_failures": "outputs/bookkeeping_failures.txt",
+  "routing_check_sha256": "dcc690b8e985be3118b5625194081c3a2109f9bf7e0edf202e8123c57e54da46",
+  "numeric_leases": [
+    "gb1-local-implementation-20261108 released",
+    "gb1-nonwrapping-routing-20261108 released"
+  ]
+}

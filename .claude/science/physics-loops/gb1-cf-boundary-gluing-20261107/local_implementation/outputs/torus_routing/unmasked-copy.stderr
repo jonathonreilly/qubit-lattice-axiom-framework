@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/local_implementation/check.py", line 339, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/local_implementation/check.py", line 332, in main
+    'controller': controller_checks(args.fault), 'witnesses': witnesses()}
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/local_implementation/check.py", line 295, in controller_checks
+    assert not any(bits[B:]), ('dirty controller', d, N, k, output)
+           ^^^^^^^^^^^^^^^^^
+AssertionError: ('dirty controller', 1, 1, 0, 1)

@@ -1,6 +1,26 @@
 # Trace to GB1-CF
 
-## Current preparation/history continuation, 2026-11-08
+## Current local-implementation continuation, 2026-11-08
+
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: Implement the preparation verifier and record controller through permitted neighborhood steps.
+source_of_blocker_text: user_goal
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: Supply a local microscopic sequencer and permanent formation law, with controller-phase records and capacity accounted for.
+```
+
+local_implementation/RESULT.md gives the full native rank-one herald and
+finite reversible record controller as adjacent-gate words. It accounts for
+disjoint work, permanent records and completion flags. This closes a driven
+circuit compilation obligation. The quantum gates, calibration, gated Record
+append and microscopic sequencer remain conditional; full native autonomous
+record-state dynamics and the continuum bridge remain open. The finite
+unobserved six-edge mixture is outside the clean-work implementation subset.
+
+## Previous preparation/history continuation, 2026-11-08
 
 ```yaml
 trace_class: upstream_support

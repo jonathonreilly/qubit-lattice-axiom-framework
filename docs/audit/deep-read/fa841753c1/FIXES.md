@@ -20,6 +20,14 @@ A row appears here only when the note is wrong or overclaims. One finding, one l
 - Edit: Keep `n=97/98` as the repeated root. Describe `n=11/10` as the overlap of the root `m=-5/2` with that `Xi=0` mode. Leave the excluded denominator `m=-4` as it stands.
 - How this row was made: read on 2026-11-09. The discriminant and both roots were recomputed from the printed quadratic. The runner was not executed.
 
+## Note 65
+
+- Path: `docs/COMMUTING_STATIC_EDGE_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Defect: The qualifications sentence joins two UTC stamps to an elapsed time they do not equal.
+- Evidence: It says the attempt ran from `20:43:34.657018` to `20:43:34.842313` UTC, elapsed `0.18528820807114244` seconds. The stamps differ by `0.185295` seconds, which is `6.792` microseconds more than the printed elapsed time. That gap is larger than the microsecond resolution of the stamps. The earlier sentence that reports the same elapsed time is a timer reading and is not joined to the stamps.
+- Edit: Do not present those stamps and that elapsed time as one interval. The stamps differ by `0.185295` seconds. Leave the earlier timer reading unless both values are recomputed from one clock.
+- How this row was made: read on 2026-11-09. The stamp difference was subtracted from the printed digits. The runner was not executed.
+
 ## Note 1696
 
 - Path: `docs/GRAVITY_SIGN_IS_NOT_A_NEW_ADMISSION_REDUCES_TO_SHARED_ORIENTATION_DATUM_KCPT_CANNOT_SELECT_NARROW_THEOREM_NOTE_2026-06-18.md`

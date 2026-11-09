@@ -414,6 +414,27 @@ Runners were not executed.
 - Checked: `[[3/5,-4/5],[4/5,3/5]]` is a rotation. For `K=[[4,-1,0],[-1,5,-1],[0,-1,6]]`, `det K=110`, and the hidden rotation gives off-diagonals `-3/5`, `-4/5`, and `-1/5`, with row sums `13/5`, `29/5`, and `17/5`. For `w=(0,1,-1)`, `mu_1=-1` on the chain and `mu_1=1/5` after the rotation, so the squared leading-coefficient ratio is `25`. The rank-one test is the stated degree-3 polynomial in the three responses. The orders `t^3`, `t^7`, and `t^{11}` are `4d+3` at `d=0,1,2`.
 - Not checked: the tail series beyond the factorial comparison `(4d+5+2r)!>=(4d+5)! (2r)!`. The runner was not executed. Detail is in `batches/notes_0055_0058.md`.
 
+## Note 63
+
+- Path: `docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: the cell `{-1,0,1}^3` has `27` points and the range-two stencil has `125`. The branch counts are `5×9×13=585` and `7×5=35`. The D4 residual forces `a0 a1=0`, `a1^2=b0^2`, and `a0^2+b0^2=1`. For `V=qx qy qz`, the printed `f` and `g` rebuild `V`, `f^2+|g|^2=1`, and `dg/dk` at `0` is the identity. Then `ω=|k|-n1 n2 n3 |k|^2+O(|k|^3)` and the ray speed is `1-2 n1 n2 n3 |k|+O(|k|^2)`. The maximum of `|n1 n2 n3|` is `1/(3√3)`, and `2/(3√3)≈0.384900` rounds to the printed `0.385`.
+- Not checked: the monomial counts and the radical-membership steps. The runner was not executed. Detail is in `batches/notes_0063_0065.md`.
+
+## Note 64
+
+- Path: `docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: the five ordinary dimensions `1,1,2,3,3` and the three spinorial dimensions `2,2,4` have square sum `48`. On `C3`, the character of `E` is `ω+ω̄=-1`. The modulus `32003` is prime.
+- Not checked: the multiplicity table, the search residuals, and the `32` unknowns in `336` equations. The runner was not executed. Detail is in `batches/notes_0063_0065.md`.
+
+## Note 65
+
+- Path: `docs/COMMUTING_STATIC_EDGE_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: fix filed.
+- Checked: `tan(π/4+atan(1/7))=4/3`, so `α=π-atan(4/3)=12 atan(1/5)-3 atan(1/239)-atan(1/7)`, with `cos α=-3/5` and `sin α=4/5`. Then `w+=(−7+24i)/25` and `det W=(−527−336i)/625`. The mean is `2+b+z+bx` and the variance is `1+b^2-2by-(z+bx)^2`. The window norm is `2|sin(α s/T)|`. The printed `T` has `66` digits and bit length `218`, so `T>2^64` and `T<2^300`. The exponent sums `3296+3296+8416=15008`, `202+527+202=931`, and `15008+931+1+300=16240` match. `|w+^2-1|=48/25`, so the printed sector bound is `δ≥12/25`. The omitted-scalar Gram is `(16/5)I`. One smoothstep has area `1/2` and maximum derivative `3/2`, so two ramps plus a plateau `T-2` have area `T-1`.
+- Not checked: the `60` recorded checks and the operation counts. The runner was not executed. The stamp repair is in `FIXES.md`. Detail is in `batches/notes_0063_0065.md`.
+
 ## Note 68
 
 - Path: `docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md`

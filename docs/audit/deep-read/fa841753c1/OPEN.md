@@ -294,6 +294,21 @@ These are not repairs. The note already leaves them unresolved.
 - Path: `docs/LOCAL_NETWORK_INTERVENTION_RESPONSE_NOTE_2026-10-16.md`
 - The map from preparation, forcing, a local connection change, and records onto this common response stays open.
 
+## Note 63
+
+- Path: `docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Range three, a certificate for the numerical `C3`, `C4`, and `D2` searches, a larger stencil or coin, and an audit stay open.
+
+## Note 64
+
+- Path: `docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- An electron identification, exact cofactor certificates, a six-neighbour moving walk, masses, and an audit stay open. The note does not derive three generations.
+
+## Note 65
+
+- Path: `docs/COMMUTING_STATIC_EDGE_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- A four-onsite actuator, native installation, a clock, permanent halt, reuse, and a retained audit stay open.
+
 ## Note 68
 
 - Path: `docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md`

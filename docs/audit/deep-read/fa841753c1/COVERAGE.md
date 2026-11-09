@@ -414,6 +414,13 @@ Runners were not executed.
 - Checked: `[[3/5,-4/5],[4/5,3/5]]` is a rotation. For `K=[[4,-1,0],[-1,5,-1],[0,-1,6]]`, `det K=110`, and the hidden rotation gives off-diagonals `-3/5`, `-4/5`, and `-1/5`, with row sums `13/5`, `29/5`, and `17/5`. For `w=(0,1,-1)`, `mu_1=-1` on the chain and `mu_1=1/5` after the rotation, so the squared leading-coefficient ratio is `25`. The rank-one test is the stated degree-3 polynomial in the three responses. The orders `t^3`, `t^7`, and `t^{11}` are `4d+3` at `d=0,1,2`.
 - Not checked: the tail series beyond the factorial comparison `(4d+5+2r)!>=(4d+5)! (2r)!`. The runner was not executed. Detail is in `batches/notes_0055_0058.md`.
 
+## Note 59
+
+- Path: `docs/LOCAL_CONSERVING_SPARSE_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: `T(1)=1`, `T(2)=4`, `T(3)=10`, and `T(4)=16`. The parity bounds and `152 T(k)<=171 k^2` hold for every `k<=4096`. The gate counts are `3*2+3*6=24`, `24+1+7+2=34`, `3*50+2=152`, and `2*34=68`. For `1<=q<=7` and `1<=L<=29`, `(2n-1)G0` stays at most `K_q L^4`. At `q=1`, `L=1`, `G0=6384`, `Gbar=44688`, and the printed route sum is `5040+1344+18336=24720`. For the printed `V`, `|1-det V|=24/13`. The slot identities `4 hbar Q_*/g=1` and `sqrt(4 pi hbar Q_*/sigma)=1` hold at `Q_*=6 pi`, `g=24 pi`, and `sigma=24 pi^2`. The maximum free energy is `37/10`. The printed cap `38.39911184307752` and work `1864221.0806401833` are the float64 values of `7/10+12 pi` and `24 pi*24725`. The exact `lambda` is inside `(3 pi/2, 9 pi/2]`.
+- Not checked: the generator matrices, the distance histogram, and the complex128 residuals. The runner was not executed. `proposed_retained` is paired with `bare_retained_allowed: false`. Detail is in `batches/notes_0059.md`.
+
 ## Note 63
 
 - Path: `docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md`

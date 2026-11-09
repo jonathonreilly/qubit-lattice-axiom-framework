@@ -661,3 +661,5 @@ Work on PR #10132 of jonathonreilly/qubit-lattice-axiom-framework, branch claude
 | 586 | `leaf-iinc` | done 2026-11-09 (library/leaf-iinc.md): stop (c) at I-INCIDENCE; kill test no counterexample. First open input: the coefficient comparison (K_m^Y - K_m^I) T_omega = 0 for every original multiplicity vector and frozen input, on the account coefficients' complete original localization domains. Constants, shift bound and whole-action comparison retained as requirements (14)-(15). |
 | 587 | `leaf-hunpaid` | done 2026-11-09: stop (c) at H-UNPAID (2)-(3) for the current datum pullback of each literal nonzero top occurrence. |
 | 588 | `leaf-dhol` | done 2026-11-09: stop (c) at D-HOLONOMY (DH) for the complete first old read on its original common domain. |
+| 589 | `leaf-scaller` | done 2026-11-09: stop (c) at S-CALLER, the actual residual fixed-slot map Q_R with its generating operations, field versions and whole-fibre identity (SC). |
+| 590 | `leaf-braw` | done 2026-11-09: stop (c) at B-RAW, the common-coordinate residual (20) with the noncommuting current contribution (11), switch defect (16) and bound (23). |

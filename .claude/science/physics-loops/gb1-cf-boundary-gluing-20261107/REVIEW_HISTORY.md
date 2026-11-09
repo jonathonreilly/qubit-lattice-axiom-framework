@@ -55,3 +55,48 @@ Full proof and receipts are in native_placement/INDEPENDENT_PLACEMENT.md,
 NATIVE_SOURCE_REVIEW.md and NATIVE_CLARIFICATION_REVIEW.md. The supervisor
 reviewed the complete artifacts and separately checked mutation executions.
 No different-family, formal landing or audit check is claimed.
+
+
+## Probability bridge follow-up, 2026-11-09
+
+PRIMARY.md was frozen before the fresh restricted-context checker received
+only the axiom source and neutral mathematical questions. INDEPENDENT.md
+was read completely. The supervisor separately checked every load-bearing
+calculation and read the full integrated RESULT.md. SOURCE_CHECK.md then
+reviewed the exposed source. DELTA_CHECK.md confirmed the final E0 and
+complex-algebra clarifications by exact reversible source reconstruction.
+These are research checks, not a formal landing review or audit. The
+same-provider/family, shared-premise and unattested-backend limits are in
+probability_bridge/AUTHOR_CHECK.md and INDEPENDENT_PROVENANCE.md.
+
+Conformance scope for this pure proof block (same main spec revision):
+
+1. Self-containment: all proofs and original/source/delta reports are carried
+   in this PR; canonical axioms are the unchanged main source. Earlier
+   packets are in the same PR and the reused argument is written out here.
+2. Cache/execution: no new numeric runner, cache or numerical replay exists;
+   cache-specific requirements do not apply to this proof block.
+3. Claim honesty: bounded_theorem / conditional-support; legal-domain,
+   comparison-structure and physical-identification conditions are explicit.
+4. Negative claims: four actual challenges and their limits are recorded.
+   The checklist explicitly lacks exhaustive-negative packet PASS; no
+   universal impossibility, necessary new axiom, or retained no-go is shipped.
+5. Proof obligations: E0-E3, calibrated preparation and the remaining
+   physical map are explicit; no unproved step is relabeled as derived.
+6. Runner validity: not applicable to a block with no science runner;
+   deterministic source/hash/link checks are integrity evidence only.
+7. Packet completeness: original primary, independent proof, exposed receipts,
+   reversible corrections, assumptions, source search and current handoff
+   are preserved, with final identities in verification.json.
+8. Links/citations: new relative links resolve; historical source pointers
+   carry no audit authority. Busch credit is mathematical context, with the
+   actual finite proof given. No citation-graph authority is edited.
+9. Note structure: self-contained research RESULT plus assumption/scope
+   sidecars; production theorem-note/runner packaging is not claimed.
+10. Propose/ratify: axioms, primitives and audit surfaces are untouched.
+11. Facts/counts: fractions are exact hand calculations, infinite-lattice
+   existence is analytic, and no check count is offered as proof strength.
+12. Focused gates: direct vocabulary coverage, whitespace, local links,
+   exact checked hashes and source guards recorded in verification.json.
+   CLI vocabulary filtering of .claude is disclosed; direct lint supplies
+   actual coverage. Full pipeline, formal review and audit were not run.

@@ -1,0 +1,54 @@
+{
+  "RESULT.md": {
+    "reviewed_sha256": "70dd5037ba567a9d2547f297944de55be022b229cc7e868496542c2090d2a30f",
+    "final_sha256": "63f289a3745e06d80e6efe8189074f7c50f41bb8da19321a39ae8487ee5fde52",
+    "reversible_replacements": [
+      {
+        "before": "The definition is invariant under algebra isomorphisms: for an isomorphism",
+        "after": "The definition is invariant under complex-algebra isomorphisms: for such an isomorphism",
+        "count": 1
+      },
+      {
+        "before": "supply all of the following on one M2(C) with a fixed adjoint:\n\nE1.",
+        "after": "supply all of the following on one M2(C) with a fixed adjoint, for the same\nfixed preparation record data r throughout:\n\nE0. Each admitted device context has a normalized probability measure on its\n    record events. For one forming site this may be its local Admissibility\n    law; for multi-record devices a joint record law/process must be supplied\n    or derived separately. No joint probability space spanning different\n    device contexts is required.\nE1.",
+        "count": 1
+      },
+      {
+        "before": "E1-E3 are proof obligations, not amended axioms. They identify physical\nevents and operator sums. Admissibility's ordinary event-set additivity\nthen gives",
+        "after": "E0-E3 are conditional proof obligations, not amended axioms. They supply\ncontext event laws and identify physical events with operator sums. Ordinary\nadditivity within each E0 context, followed by E2 across contexts, gives",
+        "count": 1
+      },
+      {
+        "before": "under E1-E3.",
+        "after": "under E0-E3.",
+        "count": 1
+      },
+      {
+        "before": "then prove E1-E3 (or a genuinely smaller",
+        "after": "then prove E0-E3 (or a genuinely smaller",
+        "count": 1
+      }
+    ]
+  },
+  "ASSUMPTIONS.md": {
+    "reviewed_sha256": "6e445f7facaca490b30eaca96736e4f36185ce66ed58a360a7cd9e4c10af6c07",
+    "final_sha256": "2194bce37b90b4a8e01a5db6d9f5df10452bc28409dc36d956f9d9251e2314d9",
+    "reversible_replacements": [
+      {
+        "before": "| All effects realizable (E1) |",
+        "after": "| Normalized event law in each context for the same preparation (E0) | Local law for a one-site context, or supplied/derived joint record process for a multi-record context | Ordinary within-context additivity; no joint space across different device contexts |\n| All effects realizable (E1) |",
+        "count": 1
+      },
+      {
+        "before": "Consequence of E1-E3 plus positive-effect mathematics",
+        "after": "Consequence of E0-E3 plus positive-effect mathematics",
+        "count": 1
+      },
+      {
+        "before": "E1-E3 form a",
+        "after": "E0-E3 form a",
+        "count": 1
+      }
+    ]
+  }
+}

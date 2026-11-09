@@ -1,4 +1,13 @@
-# Finite boundary flux and gluing milestone
+# Current campaign handoff
+
+The current checkpoint is STATE.yaml and [probability_bridge/HANDOFF.md](probability_bridge/HANDOFF.md).
+The owner-selected task is the probability bridge from the existing base
+principles. The quantum axiom proposal is deferred; no governing change is
+being made. Earlier finite gauge and outcome constructions below remain
+historical conditional evidence. The current main identity is recorded in
+the current checkpoint, not the original milestone snapshots below.
+
+# Original finite boundary flux and gluing milestone
 
 The explicitly supplied five-state SU(2) gauge model has consistent finite
 boundary gluing. A link cut is an isometry from five states onto the internal

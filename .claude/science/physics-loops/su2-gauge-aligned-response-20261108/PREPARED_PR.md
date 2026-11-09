@@ -9,6 +9,7 @@ under Documents/Codex/sussman-alpoge-process-review-20261108/ym-mass-gap-bridge.
 
 The owner's request to run one PR and work in it governs this continuation.
 The current proof tree, exact conditional normalization, gauge diagnostic,
-checks and open obligations belong in the same branch and PR. The external
+seven-edge compact coercivity, actual marginal Hessian, checks and open
+obligations belong in the same branch and PR. The external
 checkpoint records later publication heads and current PR text. No physical
 mass-gap claim or formal retained promotion is made by opening this PR.

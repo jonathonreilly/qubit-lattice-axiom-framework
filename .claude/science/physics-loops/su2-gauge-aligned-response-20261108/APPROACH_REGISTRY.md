@@ -7,6 +7,7 @@
 | Compact energy and conditional concentration | Full compact coercivity, radial-profile moment bounds and local ratios | Checked quantitative suppliers. Rare-event probabilities alone do not establish connected logarithms. |
 | Compact insertion gas and normalized density forest | One exact compact/chart representation and connected ratio | Full argument now drafted and independently checked, with explicit fixed-reference contract and actual-model match. Selected mechanism for this milestone. |
 | Block comparison/low-temperature imported theorems | A contracting full influence matrix or matched published hypotheses | Literature hypotheses not discharged for this model; no result claimed from those comparisons. |
+| Transverse recovery of sparse terminal constraints | Positive local comparison E_all <= C E_J and exact normalized Hessian | Seven-edge adjacent-plaquette compact estimate proved with finite coefficient masses, including seams and zero means. It supplies energy/precision, not marginal response decay. |
 
 The successful continuation reuses #10133's compact-shell and marked-density
 architecture with the actual two-step law. Frozen source insertions remove

@@ -8,6 +8,29 @@ physics-loop/su2-gauge-aligned-response-20261108; do not create a stack.
 The [proof tree](PROOF_TREE.md) is the current map of checked finite-model
 arguments and open quantitative/physical dependencies.
 
+## Current continuation: seven-edge coercivity
+
+The 2026-11-09 owner request targets compact coercivity for the exact
+seven-edge two-plaquette marginal in this same PR. Starting head is
+551840d63d189573688c763445b2eff9f99559d1; main and procedure sources remain
+unchanged. The [new primary note](../../../../docs/SU2_TWO_PLAQUETTE_MARGINAL_COERCIVITY_BOUNDED_THEOREM_NOTE_2026-11-09.md)
+states the compact bound and its actual normalized-Hessian consequence.
+
+The [compact proof](parts/two-plaquette-compact-coercivity.md) uses an unused
+coordinate direction to recover each deleted constraint through three
+retained edges. Fine plaquette filling and every lower-layer discrepancy
+are paid in positive local forms; finite coefficient masses control their
+overlap. The result is uniform in volume, pair position/orientation and
+internal trees, including zero means and m=3 seams. The same forest is used.
+
+The [normalized-Hessian proof](parts/partial-terminal-normalizer-hessian.md)
+keeps all surviving radial normalizers and the coordinate-Haar term. It
+gives the exact finite-u precision and transfers the compact constant at
+identity. The [fresh-context check](gates/two-plaquette-coercivity-check.md)
+derives a direct transport closure and independently verifies the normalizer
+via a Haar covariance identity. These are research checks, not formal audit.
+The actual marginal's connected response remains open.
+
 ## Source identities and authority
 
 Current main at the continuation check:
@@ -79,11 +102,12 @@ The complete earlier report index is preserved for navigation:
 
 ## Next decision and preserved failed shortcuts
 
-Attack compact coercivity for the actual seven-edge two-plaquette marginal
-with V_O=I, retaining every first-layer kernel and every remaining radial
-normalizer. The proposed detour construction and discriminating acceptance
-test are stated in PROOF_TREE. It is not yet a proved supplier. Then check
-the connected response of that marginal and the terminal/background classes
+Re-establish the chart and regional compact suppliers for the actual
+seven-edge marginal with V_O=I, then bound its complete connected fourth
+response. The new compact energy and identity precision estimates are inputs;
+they do not themselves give regional ratios or connected logarithms. Keep
+every first-layer kernel, radial normalizer, source reader and conditional
+orbit covariance. Then check the terminal/background classes
 actually needed for a third exact transition. No intermediate Wilson
 replacement is allowed. Depth/cutoff stability at physical scales,
 nontrivial continuum reconstruction and the physical spectral gap remain
@@ -94,6 +118,9 @@ bound; a globally good chart need not be uniformly likely in growing
 volume; separate orbit projections lose conditional covariance; pi_I alone
 does not control the released-terminal mixture; a positive pinned precision
 cannot be copied to arbitrary released-edge geometry on the same slice.
+Shortest torus detours can wind; the seven-edge proof instead constructs
+same-endpoint lifted squares. A connected complement graph alone does not
+provide the quantitative compact inequality.
 These are specific checks and failed shortcuts, not a no-go for the target.
 
 ## Recovery and execution
@@ -103,6 +130,19 @@ Luna read existing Q/response work and checked primary literature. The
 distinguishes Luna extraction, direct supervisor source inspection and
 independent mathematical derivations. Brillinger's conditioning identity
 is credited; no searched theorem was imported as automatic SU(2) decay.
+
+For the current coercivity task, the [new Luna source record](sources/two-plaquette-coercivity-prior-art-20261109.md)
+includes current-main, historical draft and targeted open-PR searches.
+HOLEPAY concerns RG mask holes, not these terminal deletions. Dimock's
+finite-cube abelian axial-gauge result is a comparator; the supervisor also
+read its proposition and proof in the primary text. No matching compact
+sparse-deletion theorem was imported. This bounded search claims no novelty.
+The [Fable 5.2 consultation](sources/fable-two-plaquette-approach-20261109.md)
+completed at maximum effort and independently suggested the transverse
+detour. It was approach advice with no tools or access to the new proofs,
+not certification. The fresh checker derived its argument before seeing
+that advice. The two bounded proof workers used medium effort; decisive
+checking retained the supervisor profile.
 
 The root profile remains unchanged for frontier judgments and decisive
 checking; the bounded normalization worker used medium effort by owner
@@ -118,9 +158,18 @@ records the exact last published commit and PR body. Previous publication
 packet and manifest remain recoverable at 4a3f6be4cf. STATE is the short
 resume index; use the current Git revision and source hashes when resuming.
 
-The continuation workers su2-partial-terminal and su2-terminal-check were
+The earlier continuation workers su2-partial-terminal and su2-terminal-check were
 archived through the managed tool after all outputs matched the root hashes;
 archival completion was observed and recovery snapshots remain available.
-The 19:37 UTC physics-loop lease was released after the checked science
+The earlier 19:37 UTC physics-loop lease was released after the checked science
 checkpoint; no numerical lease was held. The final main fetch remained at
 bf92a1d763030836ed55631d5d7a7ef3b288f284.
+
+For this coercivity continuation, all outputs from su2-hole-luna,
+su2-hole-energy and su2-hole-check matched their root copies before managed
+archival; all three archival completions were observed. Full search and
+consultation logs and the worker-copy receipt remain under
+`logs/su2-two-plaquette-coercivity-20261109/`. The 20:16 UTC science lease
+was released after the completed mathematical check. The final main refresh
+again matched bf92a1d763030836ed55631d5d7a7ef3b288f284. Use the external
+checkpoint for the exact publication commit of this continuation.

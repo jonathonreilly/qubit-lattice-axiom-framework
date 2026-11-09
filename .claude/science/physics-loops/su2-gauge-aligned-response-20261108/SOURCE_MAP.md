@@ -104,3 +104,26 @@ The primary publication note enumerates the complete included proof closure.
 Research checks, their exact source hashes and repaired findings are separate
 from formal audit and landing validation. No physical coupling flow, observed
 mass, clustering axiom or TOE identification is supplied by these inventories.
+
+## Seven-edge marginal continuation
+
+Starting at 551840d63d189573688c763445b2eff9f99559d1, Luna performed the
+targeted repo and primary-literature pass in
+[the coercivity source record](sources/two-plaquette-coercivity-prior-art-20261109.md).
+Current main stayed at bf92a1d763030836ed55631d5d7a7ef3b288f284. The existing
+all-terminal compact proof is the closest supplier; the exact marginal
+deletes seven full terminal kernels. Historical HOLEPAY and related recovery
+notes were screened for statement match, not imported as proofs. Dimock's
+2014 abelian finite-cube axial-gauge estimate is a methodological comparator;
+the parent read Proposition 1 and its proof in the primary HTML as well.
+
+The new compact proof supplies the missing transverse detours and complete
+positive discrepancy bookkeeping. The normalized-Hessian proof differentiates
+the actual Haar integral. Parent and fresh checker read both complete files;
+the check includes a separate Haar covariance derivation of the normalizer
+term. All old source hashes remain unchanged.
+
+The [Fable 5.2 consultation record](sources/fable-two-plaquette-approach-20261109.md)
+states its exact input boundary, model/effort and disposition. Independent
+approach agreement is recorded as advice and is not a formal audit, an
+imported theorem or a check of files the consultant did not see.

@@ -164,3 +164,69 @@ proof map. It was removed after checking; byte comparison established that
 this was the only change. The manifest records the checked and publication
 map hashes separately, and the exact checked copy is preserved in local
 logs and the managed checker snapshot. No argument or proof-part byte changed.
+
+## Seven-edge compact coercivity, 2026-11-09
+
+Source head: 551840d63d189573688c763445b2eff9f99559d1. Main was refreshed
+and remained bf92a1d763030836ed55631d5d7a7ef3b288f284. The owner requested
+this exact attack in #10149, Luna repo/literature reads first, bounded proof
+workers and an optional Fable 5.2 approach consultation. No new PR was made.
+
+Luna low checked the closest compact and exact-deletion suppliers before
+proof delegation, then broadened the statement/method search over current
+main, the pinned historical YM draft and targeted open PRs. Its source
+record corrects an initially mistyped source hash and distinguishes RG mask
+holes from terminal-output deletion. Dimock's primary axial-gauge text was
+read by both Luna and the supervisor; its abelian finite-cube hypotheses do
+not supply the compact SU(2) result. No absent-theorem or novelty conclusion
+is drawn from the search.
+
+Two sequential medium-effort proof workers in a managed detached worktree
+authored the exact normalized-Hessian calculation and compact inequality.
+The supervisor kept the selected profile for the geometry, full proof reads,
+constant checks and final primary-note composition. The compact argument
+restores each missing auxiliary gap with positive discrepancy terms and a
+three-edge transverse detour, then compares to the old all-terminal energy.
+All seven repairs have finite coefficient masses; the proof does not depend
+on disjoint supports, a complement-graph spectral gap or division by a mean.
+
+A fresh-context checker at the supervisor profile derived the local detour
+closure before receiving the author proofs. It kept root transporters
+explicit, obtaining the same compact result through a different final
+comparison. It checked seam and hinged cases at m=3, zero means, periodic
+congestion, arbitrary trees and source scope. In addition to a radial
+expansion, it used a Haar covariance/rotation identity to verify the sign
+of the normalizer Hessian. It then read both complete proofs and the final
+primary note and proof tree at exact hashes. No material defect remained.
+The primary's final notation edit defines the retained-link count and was
+included in the completed check. The report is
+`gates/two-plaquette-coercivity-check.md`, SHA-256
+`ae6ea01727dfc887093bdda2a74f55d7ab489516b3985548031e1944dd4f0a16`.
+
+Fable was invoked through the locally available CLI at maximum effort; the
+runtime confirmed `claude-fable-5-2`. The one tool-free consultation saw the
+existing supplier and task, not the new proofs or proposed unused-direction
+construction. It independently recommended the same transverse repair and
+flagged winding paths and normalizer signs. Its full answer is preserved
+locally, and the in-pack source record states which advice was used. It is
+not certification of the proof files or an independent-provider audit. The
+fresh checker did not read or use the advice record.
+
+The compact theorem and finite-u identity precision close this named
+seven-edge supplier at zero sources and identity exterior. They do not
+prove regional conditional ratios, the marginal's connected fourth
+response, arbitrary deletion/terminal geometry, iteration or physical gap.
+All prior proof and gate files and the earlier primary remain frozen.
+The full new arguments and claim surfaces were read by the supervisor;
+reused unchanged premises retain their earlier source-specific coverage.
+
+The new authored artifacts are two proof parts, one primary note, one check
+and two source records; the remaining changes update this lane's checkpoint
+and dependency map. No prompt, workflow, axiom or audit-authority file
+changed. No numerical runner was needed for these analytic arguments.
+The local mechanical receipt is under
+`logs/su2-two-plaquette-coercivity-20261109/`; the manifest records its
+verification limits. All worker outputs were copied and hash-matched before
+managed archival. The science lease was released after the completed
+mathematical check. Integrated-main landing checks and formal audit remain
+separate; this publication continues the same open PR without merging it.

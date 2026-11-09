@@ -3,13 +3,15 @@
 The [proof tree](PROOF_TREE.md) is the complete current dependency map.
 The exact partial-terminal Q law, all fifteen conditioning terms and the
 residual component-gauge diagnostic now have mathematical research checks.
-The quantitative Q response remains open.
+The seven-edge compact energy and actual normalized-Hessian suppliers now
+have separate proofs and a fresh-context check. The quantitative Q response
+remains open.
 
-1. Prove compact coercivity for the actual seven-edge two-plaquette marginal
-   with exterior V_O=I, or identify the precise failure of the proposed
-   estimate. Check the candidate retained-edge detours against actual means,
-   small mean norms, periodic geometry and every radial normalizer. Then
-   recheck chart/compact suppliers for that marginal and its source class.
+1. Re-establish the chart and regional compact suppliers for the actual
+   seven-edge two-plaquette marginal with exterior V_O=I. The global compact
+   inequality and identity Hessian are available; regional ratios, compact
+   connected expansion and the complete fourth response still need proofs.
+   Keep every radial normalizer, source reader and orbit covariance term.
 2. Control the nonidentity terminal backgrounds and larger conditional
    geometries actually required for iteration. A fixed-terminal bound does
    not bound all outer conditional means, covariances or higher cumulants.

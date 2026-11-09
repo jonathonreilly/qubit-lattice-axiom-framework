@@ -24,5 +24,9 @@ No mathematical premise of the stated finite two-step theorem is left as the
 target itself. The broader Q-law, terminal-field, inherited-depth and physical
 continuum bridges remain open and are outside this theorem. The exact-Q
 continuation closes normalization algebra and records residual
-gauge directions at zero sources and V_O=I; it does not close the quantitative
-Q-law. PR #10149 is open for continued work; no author merge occurs.
+gauge directions at zero sources and V_O=I. The seven-edge continuation now
+closes its compact coercivity and actual normalized identity-Hessian
+suppliers, including all compact configurations for the energy inequality.
+Its connected response remains open. Neither the energy nor precision bound
+is a physical spectral statement. PR #10149 remains the single working PR;
+no author merge occurs.

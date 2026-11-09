@@ -23,7 +23,9 @@ renormalization estimate, continuum existence, a physical mass or TOE unificatio
 
 The continuation derives the exact released-terminal marginal and its full
 four-variable conditioning identity, with a separate zero-source V_O=I
-component-gauge diagnostic. The quantitative seven-edge marginal estimate
-is the next supplier. PROOF_TREE distinguishes these exact finite identities
+component-gauge diagnostic. A further continuation proves compact coercivity
+and the actual normalized identity Hessian for the seven-edge marginal.
+Regional/chart suppliers and its quantitative connected response remain
+the next obligations. PROOF_TREE distinguishes these finite results
 from every open physical dependency; the diagram is a research plan, not a
 proved reduction to the mass-gap target.

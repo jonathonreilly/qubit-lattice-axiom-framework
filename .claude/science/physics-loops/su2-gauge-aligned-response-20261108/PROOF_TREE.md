@@ -6,9 +6,10 @@ The map covers the present research route. It does not claim that the listed
 open nodes form a proved reduction of the mass-gap problem or an exhaustive
 list of every lemma a continuum construction will need.
 
-The present result is finite two-step posterior decay with terminal field
-fixed to identity. Its complete argument has fresh-context mathematical
-checks, not a formal audit or retained status. There is no proved physical
+The present results are finite two-step posterior decay with terminal field
+fixed to identity, and compact coercivity for the seven-edge two-plaquette
+marginal with identity exterior. Their exact checking records are linked
+below; they do not constitute formal audit or retained status. There is no proved physical
 mass gap and no evidence-based completion percentage or delivery date.
 
 ## Target and decision order
@@ -31,6 +32,7 @@ flowchart TD
   G[Frozen Gaussian suppliers and density forest]
   B[Full compact identity-terminal response]
   Q[Exact partial-terminal law and full cumulance identity]
+  K[Seven-edge compact coercivity and actual flat precision]
   D[OPEN: quantitative two-plaquette denominator]
   V[OPEN: required nonidentity terminal control]
   T[OPEN: third transition and inherited-action closure]
@@ -46,8 +48,11 @@ flowchart TD
   C --> B
   G --> B
   E --> Q
+  R --> K
+  Q --> K
   B -. candidate input .-> D
   Q -. identifies terms .-> D
+  K -. requires marginal chart and compact estimates .-> D
   D -. research route .-> T
   V -. research route .-> T
   T -. unproved iteration .-> S
@@ -112,10 +117,20 @@ all-depth, continuum, or physical spectral control.
 |---|---|---|
 | Q-exact | [Partial-terminal normalization](parts/partial-terminal-normalization.md) | Exact deletion of integrated last-layer kernels, the two distinct-link derivative cases, and all 15 total-cumulance partitions. Fresh-context proof check completed; see the separate report below. |
 | Q-geometry | [Released terminal gauge directions](parts/released-terminal-gauge-directions.md) | Explicit residual component-gauge symmetry and precision eigenvectors on the unchanged forest slice. Fresh-context proof check completed; see the separate report below. |
+| Q-coercivity | [Seven-edge compact estimate](parts/two-plaquette-compact-coercivity.md) | Recovers all seven missing constraints through an unused coordinate direction, with positive local discrepancy forms and volume-uniform coefficient bounds. Identity exterior, zero sources, all compact configurations. |
+| Q-precision | [Actual normalized marginal Hessian](parts/partial-terminal-normalizer-hessian.md) | Exact finite-u Hessian for arbitrary deletion, conditional coercivity transfer, and its application to this seven-edge set. Every surviving radial normalizer and coordinate-Haar term is retained. |
 | Q-bound | Not yet proved | Quantitative connected four-response for the actual marginal with the seven-edge union of two adjacent plaquettes integrated and exterior terminal links held. |
 
 [The separate continuation check](gates/partial-terminal-check.md) reconstructs
 both new arguments. It does not promote them to formal retained status.
+
+The compact and precision continuation has its own
+[complete check](gates/two-plaquette-coercivity-check.md) and
+[primary theorem note](../../../../docs/SU2_TWO_PLAQUETTE_MARGINAL_COERCIVITY_BOUNDED_THEOREM_NOTE_2026-11-09.md).
+Historical author headers remain frozen; the gate records subsequent checks.
+The new bound is uniform in volume, pair placement/orientation and arbitrary
+internal trees, including zero means and m=3 seams. It closes the named
+compact supplier for this geometry; it is not a connected-cumulant estimate.
 
 If both varied links lie in the exterior, the log-conditional response
 subtracts a fourth cumulant under a different hidden marginal. The exact
@@ -136,23 +151,21 @@ claiming physical masslessness or ruling out this route.
 ## Next theorem to attack and its acceptance test
 
 Fix the actual seven-edge two-plaquette set J, exterior V_O=I, the present
-two-step Wilson/kernel parameters and source class. First establish a
-volume-uniform compact coercivity estimate for its exact marginal on a
-declared gauge slice, or exhibit the precise failure of that proposed
-estimate. The density has only the terminal kernels in O. Every first-layer
-kernel, retained terminal kernel and radial normalizer must stay explicit.
+two-step Wilson/kernel parameters and source class. Use the compact bound
+and actual identity Hessian just established on the unchanged forest slice.
+The next theorem is a volume-uniform summable bound for the complete fourth
+cumulant of this marginal, with both differentiated terminal links in O.
 
-A candidate construction is to replace each missing terminal constraint by
-a bounded retained-edge detour and controlled curvature terms. It requires
-a proof for the actual paired-root-leg means, including small mean norms,
-periodic geometry and all source readers. This is a proposal, not an invoked
-lemma. Graph connectivity alone and a finite-rank perturbation slogan do
-not provide the needed constant. If an adapted quotient is used, its orbit
-covariance and locality must be derived before invoking any chart supplier.
+Before invoking the earlier response architecture, re-establish its local
+nonlinear chart, regional relative-energy and source-marked compact
+suppliers for this exact deletion. The detour comparison has a finite
+recovery stencil, but a global energy bound alone does not prove regional
+ratios or connected logarithms. Every first-layer kernel, retained terminal
+kernel and radial normalizer must stay explicit. The source class, actual
+readers and full orbit conditional covariance must be carried through the
+estimate; the fifteen-term identity remains exact bookkeeping, not a bound.
 
-If this coercivity supplier closes, recheck the chart/compact decomposition
-and obtain a summable bound for the marginal's actual fourth cumulant with
-its source class stated. A local success still leaves the class of larger
+This local success still leaves the class of larger
 conditionals and terminal backgrounds needed for iteration to be specified
 and controlled. The first third-transition test must use the exact inherited
 law, not replace it with a fresh Wilson density.

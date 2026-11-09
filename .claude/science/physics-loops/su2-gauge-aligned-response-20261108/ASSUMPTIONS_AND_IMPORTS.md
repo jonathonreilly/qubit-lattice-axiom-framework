@@ -21,6 +21,13 @@ unreviewed scientific input. The historical Gaussian/forest architecture and
 published sources are credited in SOURCE_MAP and the literature records.
 Checks and author proposals do not confer audit-ratified status.
 
+The seven-edge marginal continuation assumes two elementary terminal
+plaquettes sharing exactly one edge, zero sources and identity exterior.
+Its energy inequality is compact and uniform in volume and tree choice;
+its actual normalized-Hessian corollary is at identity for finite u>=1.
+It uses the same supplied family and forest. No general deletion geometry,
+source-tilted law or nonidentity exterior is asserted to satisfy that bound.
+
 Open bridges: actual coarse-conditional Q response where exterior parameters
 remain; nonidentity terminal fields; inherited effective density at a third
 transition; uniform depth and physical scale; continuum reconstruction; physical

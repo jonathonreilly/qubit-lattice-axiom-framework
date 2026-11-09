@@ -1,0 +1,15 @@
+{
+  "source_sha256": "c0f006558c1e9392fe592a45e1dcff1885c5cc327c2b673d0059559d0b8f3c67",
+  "method": "Virtual note substitution only; unchanged source files. Each removed governing clause is copied into a historical paragraph to test section scoping.",
+  "rejected": {
+    "cp_only_in_history": [
+      "Admissibility constrains local instruments and separates conditioning"
+    ],
+    "record_only_state_restored": [
+      "Qualification records state and law discipline"
+    ],
+    "value_dependent_decoder": [
+      "Pointer readout is physical and its register sites are counted"
+    ]
+  }
+}

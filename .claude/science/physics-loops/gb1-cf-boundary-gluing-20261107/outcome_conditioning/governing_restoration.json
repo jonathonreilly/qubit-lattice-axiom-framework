@@ -1,0 +1,13 @@
+{
+  "base": "bf92a1d763030836ed55631d5d7a7ef3b288f284",
+  "worktree": "/Users/jonreilly/.codex/worktrees/admissibility-mediated-influence/Physics",
+  "clean": true,
+  "restored_sha256": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "301bb33c1a743104208067c14684b34ba71d86674509111638ea898bc6e6c0dc",
+    "docs/audit/AXIOM_MINIMALITY_POLICY.md": "179dfa0f41bbb147674c3f348a86e59698cd4c361da80fe88de2608626f673d4",
+    "docs/audit/data/axiom_premise_nodes.json": "e21007be1bc3d82304f3442a5e4f831a19241760c3f0ad486baebe1bc33ec5c5",
+    "scripts/audit_companion_minimal_axioms_clean_base_exact.py": "6717f18e4d4103ee197b03c322bea1fabde6f85d6ee3888fcef6986081562514"
+  },
+  "axiom_pr_opened": false,
+  "axiom_commit_or_push": false
+}

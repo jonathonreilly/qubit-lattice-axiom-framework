@@ -2,7 +2,7 @@ The supplied five-state SU(2) link model needs compatible overlapping patches,
 native qubit placement and records with defined future probabilities. This PR
 constructs those finite models and tests whether the current axioms select an
 observable Bell correlation. It contains four finite-model notes, research
-continuations and two foundational tests. Physical law selection and the
+continuations and three foundational tests. Physical law selection and the
 continuum identifications remain open.
 
 - **Two plaquettes:** the complete closed sector has four states, with exact
@@ -91,6 +91,20 @@ continuum identifications remain open.
   effect assumptions select. `joint_record_law/ASSUMPTIONS.md` lists every
   supplied condition. No new axiom is adopted.
 
+- **Permanent local outcome formation (research construction):** a local absorbing
+  instrument on a system qubit and two pointer qubits per detector gives
+  independently timed permanent outcomes, with genuine one-wing intermediate
+  states. Its quantum law needs no post-choice message or distant joint event.
+  Full-history and locally available conditionals differ; complete prepared
+  records can reconstruct the state, while general preparations require joint
+  predictive information beyond bare records. A fixed quantum readout gives an
+  explicit finite memory-capacity bound. The proposed quantum state/composition/
+  instrument amendments are exact old/new text in `outcome_conditioning/AXIOM_PROPOSAL.md`
+  as non-governing candidate text. The owner requires proof before an axiom
+  update: all four uncommitted governing edits were restored and no axiom PR
+  is opened. A complete allocated joint model of the candidate clauses remains
+  open in `outcome_conditioning/JOINT_MODEL_OBLIGATION.md`.
+
 The code retains an extra encoding-origin degree of freedom and needs a
 physical preparation/selection account. The explicit adjacent-gate readout
 circuit is for a fixed origin. The new all-origin instrument is an abstract
@@ -177,6 +191,14 @@ Validation and evidence:
   numerically replayed. Original and exposed checks and the scoped final code
   comparison are preserved. No physical preparation or spacelike record event
   is certified by these finite checks.
+- The local-formation diagnostic checks 49 setting pairs, 427 reached record
+  histories, all 448 tested local matrix-unit semigroup identities and 560
+  permanent reapplications. Three injected faults fail at coherence semigroup,
+  conditional-state or remote-control checks. A separate hand proof derives an
+  instrument-tree route; exposed comparison confirms the local semigroup by
+  generator eigenoperators and checks the pointer and measurable-outcome proofs.
+  Continuous-time and arbitrary-input claims are analytical, not numerical
+  extrapolations. Six qubits count system/pointers, not the full apparatus.
 - Complete mathematical source comparisons and scoped correction receipts
   are preserved. These are research checks, not formal landing panels or audits.
 - Six production runners have successful content-bound caches. The native
@@ -206,7 +228,7 @@ registry, or shared instruction files change.
 The existing pair and boundary research packs index complete proofs, original
 outputs, worker briefs, source identities and recovery paths. The current
 checkpoint is `.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/STATE.yaml`;
-its `joint_record_law/HANDOFF.md` indexes the latest test. The owner-approved
+its `outcome_conditioning/HANDOFF.md` indexes the latest test. The owner-approved
 two-word governing locality substitution landed separately in
 [PR #10143](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10143)
 at `43a1fcc374711ca50626eca667441d3ca575c7d1`, now merged into this branch.

@@ -242,3 +242,46 @@ and support checks. Any sequential obstruction must retain its quantifiers;
 no broad claim that records or the framework cannot describe quantum physics.
 A fresh independent original-source hand check is commissioned. Deliver on
 the existing research PR; no audit, merge, or public scientific announcement.
+
+## Permanent formation and conditioning, 2026-11-09
+
+Target: a finite two-detector process with permanent outcomes, accessible
+one-outcome intermediate states, no post-choice detector-setting messages,
+and a universal quantum joint law. Test neighborhood formation rather than
+only completed-trial marginals. Parent 8e0c276b60c16c745456f6f1036c5f7dc5eacd66;
+current main bf92a1d763030836ed55631d5d7a7ef3b288f284. The owner explicitly
+allows a needed axiom revision to select or represent quantum physics. Develop
+and test exact wording before adoption; keep proposed premises distinct from
+the currently governing four axioms and put any governing change through a PR.
+
+Accepted mathematical input: the independently checked joint_record_law
+packet, with all quantum assumptions still conditional. Closest tools:
+finite quantum instruments and nondemolition filtering, plus the existing
+record-sufficiency and full-conditional counterexamples. Search once for the
+new formation step; record exact scope in outcome_conditioning/.
+
+Decisive probes: (1) construct a local absorbing quantum instrument with a
+genuine one-wing-recorded state and prove its complete joint law, permanence,
+no-message property and order compatibility; (2) test full versus locally
+accessible conditioning at those states; (3) test whether a quantum state is
+independent data or reconstructible from preparation/history records;
+(4) require any proposed probability amendment to exclude the preserved
+polynomial superquantum control by a general consistency condition.
+
+Use an explicit finite quantum-jump/record process as the lead route because
+its local maps and occurrence probabilities can be proved rather than assumed
+to be one distant atomic event. Reverse the choice if locality, permanence or
+conditioning fails on an explicit state. Compare a prepared record-only
+restriction and a general quantum-state extension. A fresh restricted-context
+checker derives an alternative proof or counterexample. No canonical axiom,
+registry or audit status is changed by a conditional research construction.
+
+## Proof-before-axiom correction, 2026-11-09
+
+Owner: "dont update the axiom until we prove the change works". Do not open an
+axiom PR or update governing sources on the strength of the conditional finite
+construction. Four uncommitted edits on the separate branch were preserved as
+non-governing candidate snapshots and restored to main. The immediate remaining
+test is joint satisfaction of every proposed clause by one allocated finite
+model; see outcome_conditioning/JOINT_MODEL_OBLIGATION.md. It must include
+physical controls, readout and record compatibility, not merely the output law.

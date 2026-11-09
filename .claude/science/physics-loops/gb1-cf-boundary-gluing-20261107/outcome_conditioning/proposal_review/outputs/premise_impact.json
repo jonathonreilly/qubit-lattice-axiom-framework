@@ -1,0 +1,11 @@
+{
+  "affected_by_criticality": {},
+  "cascade": [],
+  "cost_basis": "defaults",
+  "direct": {},
+  "direct_reasons": {},
+  "estimated_months_of_credit": 0.0,
+  "estimated_reaudit_usd": 0,
+  "live_judgments": 0,
+  "scope": "science comparator only; downstream reach and cost are estimates"
+}

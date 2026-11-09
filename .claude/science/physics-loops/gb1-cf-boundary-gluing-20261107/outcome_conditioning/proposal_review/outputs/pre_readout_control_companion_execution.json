@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "scripts/audit_companion_minimal_axioms_clean_base_exact.py"
+  ],
+  "source_sha256": "84100b9615babe2540c54a302c88e0539a2c1d24221662a6f69a72902d491df7",
+  "exit_code": 0,
+  "elapsed_seconds": 0.084,
+  "threads": 1,
+  "cpu_soft_seconds": 20,
+  "wall_timeout_seconds": 30,
+  "rss_watch_limit_bytes": 268435456,
+  "sampled_peak_rss_bytes": 23379968,
+  "peak_child_rss_platform_bytes": 23396352,
+  "termination_reason": null,
+  "prelaunch_attempt": "The first wrapper did not launch the runner: RLIMIT_RSS rejected a hard cap (ValueError current limit exceeds maximum limit). This run uses CPU limits and an RSS monitor.",
+  "scope": "source and registry guard plus elementary notation, not a proof of quantum physics"
+}

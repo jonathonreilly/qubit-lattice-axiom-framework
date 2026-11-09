@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/audit_companion_minimal_axioms_clean_base_exact.py"
+  ],
+  "source_sha256": "c0f006558c1e9392fe592a45e1dcff1885c5cc327c2b673d0059559d0b8f3c67",
+  "exit_code": 0,
+  "elapsed_seconds": 0.132,
+  "threads": 1,
+  "cpu_soft_seconds": 20,
+  "wall_timeout_seconds": 30,
+  "rss_watch_limit_bytes": 268435456,
+  "sampled_peak_rss_bytes": 23511040,
+  "peak_child_rss_platform_bytes": 23527424,
+  "termination_reason": null,
+  "scope": "source and registry guard plus elementary notation, not a proof of quantum physics"
+}

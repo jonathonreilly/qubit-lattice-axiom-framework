@@ -1,0 +1,7 @@
+{
+  "reviewed_proposal_sha256": "8114435616610a8f2a217ec44e582cf76ad37522a9f0397997798a86854b4811",
+  "current_proposal_sha256": "c6cc9046b7190769658458124ac91c270630ce26808802099c0e8d5aad6202e6",
+  "change": "Inserted owner hold/status only; deleting that exact insertion reproduces the reviewed proposal hash. No mathematical or governing-clause wording changed.",
+  "new_scope_file": "JOINT_MODEL_OBLIGATION.md",
+  "scope_alignment": "Matches open obligations in DELTA_CHECK.md; no joint-model proof or adoption claimed."
+}

@@ -1,0 +1,144 @@
+{
+  "coverage": "Direct lint_one_file, because CLI skips .claude. No frozen file edited.",
+  "files_checked": 23,
+  "reports": [
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/ASSUMPTIONS.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/AUTHOR_CHECK.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/AXIOM_PROPOSAL.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/DELTA_CHECK.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/HANDOFF.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/INDEPENDENT.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/JOINT_MODEL_OBLIGATION.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/LITERATURE_AND_SCOPE.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/PRIMARY.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/RESULT.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/SOURCE_CHECK.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/check.py",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/proposal_review/AXIOM_PROPOSAL.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/proposal_review/README.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/proposal_review/candidate_sources/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/proposal_review/candidate_sources/docs/audit/AXIOM_MINIMALITY_POLICY.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/proposal_review/candidate_sources/scripts/audit_companion_minimal_axioms_clean_base_exact.py",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/GOAL.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/STATE.yaml",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/TRACE_GATE.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/CLAIM_STATUS_CERTIFICATE.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/PR_BODY.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    }
+  ]
+}

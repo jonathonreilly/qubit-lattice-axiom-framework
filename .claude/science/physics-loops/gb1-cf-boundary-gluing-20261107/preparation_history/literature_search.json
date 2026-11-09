@@ -1,0 +1,19 @@
+{
+  "raw_log_path": "/Users/jonreilly/.codex/review-evidence/gb1-cf-preparation-history-20261108/raw_literature_search.json",
+  "raw_sha256": "a8d168f7f2785acb0abdb5ca6c2ce1936686878cddd0193468bc3a206ab2d748",
+  "scope": "discovery metadata; not a proof input",
+  "queries": [
+    "quantum filtering discrete time conditional density matrix measurement history Kraus Bouten van Handel",
+    "quantum process predictive equivalence histories sufficient state instrument records quantum conditional state"
+  ],
+  "selected_primary_context": {
+    "authors": [
+      "Luc Bouten",
+      "Ramon van Handel",
+      "Matthew R. James"
+    ],
+    "title": "A discrete invitation to quantum filtering and feedback control",
+    "url": "https://arxiv.org/abs/math/0606118v4",
+    "use": "standard finite-dimensional filtering context; no external theorem imported"
+  }
+}

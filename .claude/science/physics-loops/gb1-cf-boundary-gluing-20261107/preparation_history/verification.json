@@ -1,0 +1,127 @@
+{
+  "source_parent": "40bf8ab61128cfa0ff7c2e99663300d4ee2b5c1f",
+  "base": "43a1fcc374711ca50626eca667441d3ca575c7d1",
+  "result_sha256": "65dcdeec4d83b3eda61ebd5b96fb17e7ce31cf9626caa9495dd14bbb0eec56ad",
+  "checker_sha256": "d3fa97363d2ed6443942ab33b17984ba7943df72b94d8931e076425f34144e3b",
+  "source_check_sha256": "17a3eb6518dfb9e888add34018cefcbb503454a37213f17595638af5a054ed70",
+  "probe": {
+    "source_sha256": "5ef10cd243d0eb6ba47b21b097d066171057f6ca7703c7fef6a8f30901394bb0",
+    "geometry": {
+      "parser_cases": 1536,
+      "phase_cases": 125,
+      "proper_rotations": 24,
+      "tested_d_N": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "radius_bound": "10(d+N)+35"
+    },
+    "algebra": {
+      "density_ensemble_comparisons": 42,
+      "zero_children": 0,
+      "horizon": 3,
+      "preparations": 3,
+      "unrecorded_magnetic_evolution_corner_probabilities": [
+        "0",
+        "192/625"
+      ],
+      "order_control_masses": [
+        "1/2",
+        "1/4"
+      ],
+      "order_control_future_Z1": [
+        "1/2",
+        "0"
+      ],
+      "scope": "exact reduced gauge/control fixtures, not a many-body native simulation"
+    },
+    "elapsed_seconds": 4.355307082994841,
+    "max_rss_host_units": 61079552,
+    "status": "ok"
+  },
+  "execution": {
+    "source_sha256": "5ef10cd243d0eb6ba47b21b097d066171057f6ca7703c7fef6a8f30901394bb0",
+    "runs": [
+      {
+        "label": "exact",
+        "exit_code": 0,
+        "elapsed_seconds": 4.4335233330202755,
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "python3",
+          ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/preparation_history/check.py"
+        ],
+        "expected_exit": "zero"
+      },
+      {
+        "label": "missing-marker",
+        "exit_code": 1,
+        "elapsed_seconds": 0.04376112500904128,
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "python3",
+          ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/preparation_history/check.py",
+          "--fault",
+          "missing-marker"
+        ],
+        "expected_exit": "nonzero"
+      },
+      {
+        "label": "coherent-hidden",
+        "exit_code": 1,
+        "elapsed_seconds": 4.009866792010143,
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "python3",
+          ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/preparation_history/check.py",
+          "--fault",
+          "coherent-hidden"
+        ],
+        "expected_exit": "nonzero"
+      }
+    ]
+  },
+  "existing_runner_caches": {
+    "gb1_cf_boundary_fusion_check_2026_11_07.py": "fresh",
+    "gb1_cf_boundary_gluing_exact_2026_11_07.py": "fresh",
+    "gb1_cf_native_placement_exact_2026_11_08.py": "fresh",
+    "gb1_cf_neighborhood_record_readout_exact_2026_11_08.py": "fresh",
+    "gb1_cf_two_plaquette_haar_check_2026_11_07.py": "fresh",
+    "gb1_cf_two_plaquette_s1_2026_11_07.py": "fresh"
+  },
+  "environment": {
+    "python": "3.13.5",
+    "platform": "darwin",
+    "sympy": "1.14.0"
+  },
+  "focused_checks": [
+    "source identities",
+    "local proof links",
+    "YAML recovery paths",
+    "probe source/output identity and exits",
+    "existing six cache identities and successful status",
+    "py_compile completed",
+    "vocabulary zero findings",
+    "complete independent proof/source check read"
+  ],
+  "formal_landing_review": false,
+  "independent_audit": false,
+  "canonical_packaging_pending": true,
+  "numeric_lease_released": true
+}

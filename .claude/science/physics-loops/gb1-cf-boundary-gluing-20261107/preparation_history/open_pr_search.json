@@ -1,0 +1,32 @@
+{
+  "raw_log_path": "/Users/jonreilly/.codex/review-evidence/gb1-cf-preparation-history-20261108/raw_open_pr_search.json",
+  "raw_sha256": "bac54ac638196f1c25ceb7f672d0b5027f3009a3b48cb084fab5ca260e0b725e",
+  "scope": "discovery metadata; not a proof input",
+  "query": "open PRs: \"history\" record",
+  "results": [
+    {
+      "title": "docs(science): consolidate records-born results from 14 source PRs",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10124"
+    },
+    {
+      "title": "docs(ym4d): add research/ym4d snapshot 2, notes posted as issues #15-#21",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10144"
+    },
+    {
+      "title": "[physics-loop] GB1-CF bounded_theorem conditional-support: SU(2) gluing, code and records",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10142"
+    },
+    {
+      "title": "[physics-loop] ym4d open_gate \u2014 existence and mass-gap proof work",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10114"
+    },
+    {
+      "title": "docs(science): consolidate vacuum-cosmology results from 28 source PRs",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10127"
+    },
+    {
+      "title": "docs(toe): assembly skeleton of the TOE on the four axioms (draft)",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10139"
+    }
+  ]
+}

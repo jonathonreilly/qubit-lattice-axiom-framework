@@ -11,27 +11,37 @@ actual_current_surface_status: conditional-support
 target_claim_type: bounded_theorem
 trace_class: upstream_support
 reachability_to_target: partially_closes
-active_route: all-origin coarse-vertex output registers and covariant joint instrument
-bounded_result: one coarse-vertex output per cell preserves all 125 origins; a radius-four covariant electric instrument and the supplied magnetic generator preserve stored outputs
-independent_check: fresh-context vertex-output hand derivation agrees with frozen primary and adds a support guard and Gauss-compatible state-law diagnostic; integrated source confirmation complete; no fresh formal review or audit
+active_route: prepared finite record histories, predictive sufficiency and rank-one preparation certificate
+bounded_result: a covariant binary marker/header/log on existing free vertices determines a common-target finite-neighborhood
+  CP history kernel; a rank-one herald fixes the post-success state
+independent_check: fresh restricted-context history/effect-space derivation complete; integrated source check and
+  three clarifications confirmed; no formal landing review or independent audit
 note: docs/SU2_NEIGHBORHOOD_PROPAGATION_RECORD_READOUT_BOUNDED_THEOREM_NOTE_2026-11-08.md
 note_sha256: 8ae0959b5c1f294cc7a9be67c2818f53c25ce2410d1103ac13054bd325d82b23
 previous_boundary_note: docs/SU2_FINITE_BOUNDARY_FLUX_ASSOCIATIVE_GLUING_BOUNDED_THEOREM_NOTE_2026-11-07.md
 previous_boundary_note_sha256: c2a8da27cfc860b2b5912e87251622ee69ee452aaa39a1aecf882f220b3d9876
-execution: exact residue geometry and bad-enlargement control completed; prior electric reader replay passed 5009 checks after correcting missing NUMEXPR thread setting
-failed_routes: data-first computational recording erases the phase and dephased J3 leaves half the code; previous finite capacity and origin witnesses retained
-native_axiom_bridge: open; prepared-state provenance, a record-only sufficient conditional law, physical scheduler and resource renewal remain unproved
+execution: exact native marker/log parsing and reduced gauge density/path comparisons pass; missing-marker and coherent-hidden
+  mutations fail; numeric leases released
+failed_routes: data-first computational recording erases the phase and dephased J3 leaves half the code; previous
+  finite capacity and origin witnesses retained
+native_axiom_bridge: finite prepared-domain state sufficiency is conditional and proved; calibrated physical preparation/controller,
+  universal law completion and scalable mediated influence remain open
 framework_stance: axioms and gauge model are hypotheses; compare alternatives rather than protect a desired framework
-next_action: construct a preparation/program/history carrier and prove record-only neighborhood sufficiency preserved by the instrument and magnetic evolution
-checkpoint: native_records/HANDOFF.md
-verification: native_records/verification.json
-recovery: source clarification patch recovers fully reviewed sources; prior boundary and pair recovery artifacts unchanged
+next_action: compile the preparation verifier and record controller into permitted neighborhood steps with explicit
+  record, propagation and time costs; compare predictive-state compression
+checkpoint: preparation_history/HANDOFF.md
+verification: preparation_history/verification.json
+recovery: source clarification patch recovers fully reviewed sources; prior boundary and pair recovery artifacts
+  unchanged
 repository_authority_edits: []
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 axiom_change_landed: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10143
-current_probe: native_records/RESULT.md
-current_probe_status: conditional-support; residue geometry and separate hand derivation checked; integrated source confirmation complete; no fresh formal review or audit
+current_probe: preparation_history/RESULT.md
+current_probe_status: conditional-support; finite prepared-domain proof, independent derivation, exact probes and
+  final integrated source check complete; formal review/audit pending
 locality_reassessment: native_law/luna_reassessment/manifest.json
 prior_readout_verification: native_law/outputs/verification.json
-current_probe_sha256: 8299d2f298386c644951900b7d2c5405ec5ab8de35f8bb736535263e1c6b2657
+current_probe_sha256: 65dcdeec4d83b3eda61ebd5b96fb17e7ce31cf9626caa9495dd14bbb0eec56ad
+prior_vertex_verification: native_records/verification.json
+preparation_history_parent: 40bf8ab61128cfa0ff7c2e99663300d4ee2b5c1f

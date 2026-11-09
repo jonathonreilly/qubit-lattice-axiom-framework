@@ -1,0 +1,18 @@
+{
+  "source_sha256": "d4b139b1d0df88d6899f84f794afced2d9b890449e1666cf8dc50c1f7b6b4a86",
+  "runs": [
+    {
+      "label": "exact",
+      "exit_code": 1,
+      "elapsed_seconds": 4.592598916991847,
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/preparation_history/check.py"
+      ],
+      "expected_exit": "zero"
+    }
+  ]
+}

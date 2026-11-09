@@ -1,5 +1,23 @@
 # Author claim status
 
+## Current continuation
+
+The preparation/history result is a `bounded_theorem` with actual current
+surface status `conditional-support`, trace class `upstream_support`, and
+reachability `partially_closes`. Its finite prepared-domain proof does not
+inherit retained status from the physics axioms or its research checks. It
+depends on the prior branch-local native code/instrument theorem and supplied
+quantum law, preparation/calibration and finite controller. No new axiom,
+primitive, empirical fit, physical constant prediction or audit verdict is
+introduced. The rank-one herald fixes only the post-success state.
+
+The canonical packaging and fresh formal landing review of both continuation
+packets remain pending. Independent audit is required before any effective
+retained status; `bare_retained_allowed` remains false. The original boundary
+proposal below is historical and is not a promotion of the latest result.
+
+## Earlier boundary proposal
+
 The source claim is a conditional `bounded_theorem`, proposed for review as
 `candidate-retained-grade`. It establishes finite link cutting, boundary
 representation gluing, compatible operators and the stated graph counts.

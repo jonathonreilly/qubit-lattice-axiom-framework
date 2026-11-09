@@ -1,6 +1,6 @@
 The supplied five-state SU(2) link model needs compatible overlapping patches,
 retained boundary flux, and an explicit placement on native qubits. This PR
-provides four finite-model notes and a checked research continuation. The
+provides four finite-model notes and two checked research continuations. The
 physical law and continuum identifications remain open.
 
 - **Two plaquettes:** the complete closed sector has four states, with exact
@@ -33,6 +33,15 @@ physical law and continuum identifications remain open.
   entire support. The supplied native Hamiltonian, including magnetic terms,
   restricts to `H tensor I_outputs` on the enlarged code. The proof and checks
   are in `native_records/RESULT.md`; canonical note packaging remains pending.
+- **Preparation and history (research packet):** a binary header and spatially
+  ordered permanent log on the existing free vertices determine a finite CP
+  history, with magnetic pulses or separately recorded magnetic ticks. Seven
+  intrinsic marker records identify the frame, so no external counter or
+  preferred origin is used. The next-content kernel reads a finite neighborhood
+  of radius `10(d+N)+35` for a fixed experiment budget. A rank-one preparation
+  herald certifies the post-success state independently of its earlier input.
+  The proof is in `preparation_history/RESULT.md`; the verifier, preparation
+  calibration and physical controller remain supplied.
 
 The code retains an extra encoding-origin degree of freedom and needs a
 physical preparation/selection account. The explicit adjacent-gate readout
@@ -43,14 +52,15 @@ coherence is not generally preserved. Record capacity is finite: one output
 per coarse cell. Regional gluing on the fixed coarse graph is preserved;
 subdivision requires separate target register allocation.
 
-The joint quantum-state/record process supplies tensor quantum states, a Born
-instrument and a finite scheduler. It does not yet produce a law whose complete
-conditions are records alone. Two allowed gauge states with the same empty
-record give probabilities 0 and 1/3 for outcome one, conditional on attempting
-a specified plaquette corner. The next obligation is a preparation/program/
-history carrier that determines the conditional state and remains sufficient
-after measurement and magnetic evolution. Native Admissibility/Record dynamics,
-physical state, clock, couplings and continuum comparison remain open. No
+The unrestricted joint quantum-state/record process does not factor through
+its bare outcome records: empty-flux and loop states with the same empty record
+give corner probabilities 0 and 1/3. The new prepared-domain construction puts
+the preparation and ordered process information in actual record slots and
+proves a record-only kernel for that finite model. It supplies tensor quantum
+states, Born instruments, a fixed dictionary and a scheduler; these inputs are
+not derived from the axioms. The neighborhood radius grows with the chosen
+history budget. A scalable mediated controller, preparation genesis and
+calibration, physical clock, couplings and continuum comparison remain open. No
 vacuum or mass-gap closure or evidence that the framework is physically correct
 is claimed. Explicit finite dimension comparisons also reject the same-site-count
 full-sector identification under ordinary tensor composition.
@@ -74,6 +84,14 @@ Validation and evidence:
   rotation/class images. The control that frees every unused site fails, with
   an explicit overlapping-sector witness. Enumeration checks geometry; the
   arbitrary-volume and operator claims rest on the hand arguments.
+- The preparation/history checker independently derives future-effect
+  sufficiency, CP history reconstruction and a different finite vertex
+  allocation. Exact checks test the supervisor's parser on 1,536 prefix/frame
+  cases and all 125 origin residues, and compare density-matrix and pure-path
+  propagation on reduced gauge fixtures. Missing-marker and coherent-hidden-
+  branch mutations fail. Omitted-order and omitted-magnetic-pulse examples
+  produce different future probabilities. These are research checks; full
+  formal review and audit of both continuation packets remain pending.
 - Complete mathematical source comparisons and scoped correction receipts
   are preserved. These are research checks, not formal landing panels or audits.
 - Six production runners have successful content-bound caches. The native
@@ -102,7 +120,7 @@ registry, or shared instruction files change.
 The existing pair and boundary research packs index complete proofs, original
 outputs, worker briefs, source identities and recovery paths. The current
 checkpoint is `.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/STATE.yaml`;
-its `native_records/HANDOFF.md` indexes the latest continuation. The owner-approved
+its `preparation_history/HANDOFF.md` indexes the latest continuation. The owner-approved
 two-word governing locality substitution landed separately in
 [PR #10143](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10143)
 at `43a1fcc374711ca50626eca667441d3ca575c7d1`, now merged into this branch.

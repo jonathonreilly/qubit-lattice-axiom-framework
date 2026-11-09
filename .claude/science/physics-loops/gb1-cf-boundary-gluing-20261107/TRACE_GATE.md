@@ -1,5 +1,28 @@
 # Trace to GB1-CF
 
+## Current preparation/history continuation, 2026-11-08
+
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: Can preparation and history records determine future probabilities within our current axioms?
+source_of_blocker_text: user_goal
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: Realize the calibrated preparation verifier and record controller through bounded neighborhood influence, with resource and time costs explicit.
+```
+
+The finite prepared-domain kernel is now proved in
+preparation_history/RESULT.md, including the common-target radius bound,
+magnetic ticks, permanent storage and a rank-one post-preparation certificate.
+It closes state sufficiency for that supplied finite experiment. It does not
+derive the physical instrument, dictionary, seed preparation or a scalable
+mediated law. The general GB1-CF physical identification remains open. This
+paragraph supersedes the earlier open allocation/history interfaces below;
+their historical evidence and original sources remain preserved.
+
+## Earlier boundary/readout trace
+
 ```yaml
 trace_class: upstream_support
 target_claim_id: null

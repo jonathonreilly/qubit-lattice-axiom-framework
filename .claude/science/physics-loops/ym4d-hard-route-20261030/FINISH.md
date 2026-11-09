@@ -298,7 +298,7 @@ Past rows are in `QUEUE_DONE.md`.
 
 ## Joining
 
-Use a fresh session at the item's effort. Model rule (owner 2026-11-09): Claude Fable 5.2 at high effort sets the science direction: the proof approach, the skeleton, restatements and the choice of route, on the laptop lead and on Mini Claude worker 1. Once the direction of a node is fixed, Claude Opus 5.5 writes the proof, at the effort the step needs (max for a hard estimate, high for a port or a routine step), on Mini Claude worker 2. gpt-6-astra max does the one line-by-line check and the decision lanes. gpt-6-luna or gpt-6.1-sol does bulk reading. Rows before 608 name the model that ran them. Do not resume the sessions of the running pushes.
+Use a fresh session at the item's effort. Model rule (owner 2026-11-09): Claude Fable 5.2 at high effort sets the science direction: the proof approach, the skeleton, restatements and the choice of route (laptop lead and Mini Claude worker 1). Claude Fable 5.2 at medium effort writes the hard proofs, once the direction of the node is fixed (worker 1). Claude Opus 5.5 checks those proofs line by line, and writes ports and routine steps, at the effort the step needs (Mini Claude worker 2). A proof is checked by a model that did not write it: Opus checks Fable's proofs; gpt-6-astra max checks Opus-written steps and runs decision lanes while Codex has capacity. gpt-6-luna or gpt-6.1-sol does bulk reading. Rows before 608 name the model that ran them. Do not resume the sessions of the running pushes.
 
 ```bash
 python3 scripts/lab_ops.py worktree-add ym4d-<item> --target claude/ym4d-hard-route --path .claude/science/physics-loops/ym4d-hard-route-20261030

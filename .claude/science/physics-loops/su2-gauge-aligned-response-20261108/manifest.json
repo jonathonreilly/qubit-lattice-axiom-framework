@@ -1,0 +1,124 @@
+{
+  "science_base": "1e0d3b58dcda7f83152b0bb51729260247454d65",
+  "historical_draft": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
+  "branch": "physics-loop/su2-gauge-aligned-response-20261108",
+  "full_response_status": "open",
+  "mass_gap_status": "open",
+  "formal_audit": "not performed",
+  "public_writes": [],
+  "pinned_inputs": [
+    {
+      "revision": "1e0d3b58dcda7f83152b0bb51729260247454d65",
+      "path": "docs/SU2_TWO_REGION_BOUNDARY_RESPONSE_BOUNDED_THEOREM_NOTE_2026-11-08.md",
+      "git_blob": "dcbb412b0985250b4daf27fbd909ef913c075cbb",
+      "sha256": "94986863c312a5880569cdf8d663c191a3d802a51542e2b671bcfdbc615e913c",
+      "read_scope": "Selected definition/proof windows specified in SOURCE_MAP.md; hash covers the complete source, not a full-read assertion."
+    },
+    {
+      "revision": "1e0d3b58dcda7f83152b0bb51729260247454d65",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "git_blob": "6f3ed42e7c68551f3eb1a8ce4452476f3470f1f3",
+      "sha256": "1c5bda5db3b59963290d75420a45a4857cf7f375417d64c4275a0e49490de4ca",
+      "read_scope": "Selected definition/proof windows specified in SOURCE_MAP.md; hash covers the complete source, not a full-read assertion."
+    },
+    {
+      "revision": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "git_blob": "27b7136dd6249f22c9ac3ce8f418aa6fe1344c70",
+      "sha256": "6ee69cd974567f9baf7a2fd40fc088391df6536357b869c875b84f5833d49f69",
+      "read_scope": "Selected definition/proof windows specified in SOURCE_MAP.md; hash covers the complete source, not a full-read assertion."
+    },
+    {
+      "revision": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "git_blob": "05c5e3168eac736e409c87b52ce6e5bb69d81513",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "read_scope": "Selected definition/proof windows specified in SOURCE_MAP.md; hash covers the complete source, not a full-read assertion."
+    },
+    {
+      "revision": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MANUSCRIPT_RG.md",
+      "git_blob": "06496bd23b9308eba7733ade61c01cbdd69c562c",
+      "sha256": "5cc781a8acdb6245a44077b9904cac8057570207d56d7d61065014de5df0ff63",
+      "read_scope": "Selected definition/proof windows specified in SOURCE_MAP.md; hash covers the complete source, not a full-read assertion."
+    },
+    {
+      "revision": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_ASTRA.md",
+      "git_blob": "8cd3b8cd8115991b8c3982b0624f5a804721db3e",
+      "sha256": "2eee991e4e4546aa3ed10ad0ffe40d840c5347a002d623aac47b2fc515fd7769",
+      "read_scope": "Selected definition/proof windows specified in SOURCE_MAP.md; hash covers the complete source, not a full-read assertion."
+    },
+    {
+      "revision": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "git_blob": "a6b54a0e3c1533d696c4265d6fdc0771f6678d41",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "read_scope": "Selected definition/proof windows specified in SOURCE_MAP.md; hash covers the complete source, not a full-read assertion."
+    },
+    {
+      "revision": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GLOBAL_RETURN_HISTORY_ASTRA.md",
+      "git_blob": "f932dcec4e015629eac08f6089c7f631aefecbb2",
+      "sha256": "0a3057554efc6469a96338fb31a8a0f60f3d1302ef33b00eb05284b96c2ea2e0",
+      "read_scope": "Selected definition/proof windows specified in SOURCE_MAP.md; hash covers the complete source, not a full-read assertion."
+    },
+    {
+      "revision": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "git_blob": "b92c15fad8ae8682a2ed5e2544fae7dbf17ebb27",
+      "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+      "read_scope": "Selected definition/proof windows specified in SOURCE_MAP.md; hash covers the complete source, not a full-read assertion."
+    }
+  ],
+  "reader_inventories": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/sussman-alpoge-process-review-20261108/ym-mass-gap-bridge/next-science-inventory.md",
+      "sha256": "15b7dfaf634c4cb7fcaf1f7c19ee35570a889c2104ac47bef44e85ebe090da33",
+      "role": "Luna targeted read inventory; not independent theorem certification"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/sussman-alpoge-process-review-20261108/ym-mass-gap-bridge/kernel-match-extraction.md",
+      "sha256": "65b6bedbcbb24f138e689107bf49124bbd195e0d813f3752097a921de3879159",
+      "role": "Luna targeted read inventory; not independent theorem certification"
+    }
+  ],
+  "output_hashes": {
+    "GOAL.md": "b201e3d040332164196679c03f4211a97e07f95d30d01a6d50a9ab0092e4b7b1",
+    "HANDOFF.md": "c6fbfabd113c0f8d5e140c4d617ba5c15c3bfd855492ef981e3c332b14d1dee6",
+    "SOURCE_MAP.md": "b5581dc45f27804ea381608ce3d3e366b4375f339fccbe2c820bb7b6a3d5abae",
+    "STATE.yaml": "e2e2e171de4c7661db2e13193b55e87f75cc9c427bc6649a03f70baccd7d544d",
+    "gates/final-scope-and-local-tail-check.md": "de0b490627aba42ec3c75f73c43116bc1982b7090ce44de51b49bca9fe43cb0c",
+    "gates/forest-flat-check.md": "6d6e3a13c89bdf7fd70bae95d616669848078212ce35b40d871e46a436bcd988",
+    "gates/relative-component-check.md": "b73a1bf25fdfa16fc8f9655e502cf45d00a70297774eda28a827c07168fe8dcc",
+    "parts/compact-energy-coercivity.md": "7e8e798759239aadfc8c137125bf23f6d1de2cac18b714ddca70ea294cbaa4aa",
+    "parts/compact-forest-exchange.md": "b0d3a76a94a8cd43de186b1c93deb38327ea2b29aa2b1bbc16e1caa2e22ecef2",
+    "parts/flat-two-step-bound.md": "0f028f694bb686cf4272d8620329f1f2e8535d8af9a2d028bbde6965cab3f03a",
+    "parts/local-conditional-tail.md": "cf47acdfe0deea09fe49f7b08d90d45a3aac0df3251062ba4f67f566e639072d",
+    "parts/local-relative-coercivity.md": "6b7c3a0eba818566fad0cb34f13998a3cf98de632761d7942ca527c51c80cb37",
+    "parts/nonlinear-chart-response.md": "5edacc8ee78d54b7fb853fb34da3d8cceffd8eb0e476f8510d15048f8f10f2d1",
+    "parts/rough-component-bound.md": "1a4c40385f1fc492033f261f8ed938bed23f32475eb9a116347fd7361f9e9c44",
+    "parts/rough-density-bound.md": "cb23d1b835ae70ad79d145f891fb152fb71ae2fddd630b8c8469cba765973c20"
+  },
+  "frozen_at_utc": "2026-11-09T02:40:12Z",
+  "mathematical_check": "Same-provider fresh-context mathematical check; eight source hashes bound by three immutable reports; not a formal audit.",
+  "managed_worker_archives": [
+    {
+      "root": "/Users/jonreilly/.codex/worktrees/su2-gaussian-chain-worker/Physics",
+      "attachment_id": "01a1be2d-3af2-7952-9a16-488d9518f2e9"
+    },
+    {
+      "root": "/Users/jonreilly/.codex/worktrees/su2-gauge-exchange-worker/Physics",
+      "attachment_id": "01a1be2d-65ca-7250-b77c-6c9c3e1495bd"
+    }
+  ],
+  "validation": {
+    "vocabulary_violations": 0,
+    "frozen_proofs_unchanged_by_lint": true,
+    "numerical_jobs": 0,
+    "new_runner": false,
+    "formal_pipeline": false,
+    "new_publication": false,
+    "prompt_files_changed": []
+  }
+}

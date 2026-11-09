@@ -190,3 +190,30 @@ countermodels rather than failure-to-find rhetoric. Literature/prior-controller
 search and rejected routes go in autonomous_runtime/. A fresh max-effort checker
 uses restricted original sources; early disclosed route ideas are recorded.
 The root reads and checks complete arguments before pushing a research milestone.
+
+## Foundational observable test, 2026-11-09
+
+User requests one observable consequence and a complete account of what the
+current axioms constrain and what additional assumptions are required.
+Target: the binary two-setting, two-wing CHSH score of four permanent
+setting/outcome records. Domain: supplied finite experiments, with all four
+setting pairs having positive probability; empirical identification separate.
+Source main 1e0d3b58dcda7f83152b0bb51729260247454d65; research parent
+c50d82b2d2e01e4622a037c8f7eafb2abb24e57d. No axiom edit or science merge.
+
+Use the existing finite program theorem and records-only causal Bell theorem
+as prior art. The task is an application and premise test, not a new Bell or
+programmability theorem. Compare ordinary binary probability constraints, a
+causally separated record process, and a supplied quantum/Born realization.
+Instantiate the fixed matrix program on the actual lattice, checking complete
+local menus, permanent support, settings, outcome readout and record-only
+control. A larger Bell score reached by communicated settings must not be
+called a spacelike experiment. Programmed probabilities are inputs.
+
+Decisive witness: either find an additional axiom-derived restriction on the
+CHSH statistic, or provide fully specified matching-premise records that
+separate the proposed bounds. Inspect physical assumptions in the current
+autonomous jump model. A fresh restricted-context checker examines original
+sources without reading the supervisor candidate. Preserve source identities
+and complete evidence in foundational_bell/. Reuse known algebra with credit;
+no numerical matching is evidence of a new law or an empirical prediction.

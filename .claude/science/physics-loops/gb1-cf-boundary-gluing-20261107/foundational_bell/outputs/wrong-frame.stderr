@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/bell-faults-n184qvv9/wrong-frame.py", line 317, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/bell-faults-n184qvv9/wrong-frame.py", line 300, in main
+    covariance_checks=covariance(snapshots)
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/bell-faults-n184qvv9/wrong-frame.py", line 240, in covariance
+    assert q == (transform(s) if s is not None else None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

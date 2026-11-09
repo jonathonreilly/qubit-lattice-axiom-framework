@@ -1,0 +1,175 @@
+{
+  "status": "checked research application; no formal audit",
+  "source_main": "1e0d3b58dcda7f83152b0bb51729260247454d65",
+  "parent_head": "c50d82b2d2e01e4622a037c8f7eafb2abb24e57d",
+  "identities": {
+    "PRIMARY.md": "6238af2bf87b7237bd0b112c20337e0a864d495d8fa15b7a9cdc8f6acee12956",
+    "RESULT.md": "b408820a8e38f969a21f70d6d8a53c05172cddfc52dfeba2f74ecb9c964ee321",
+    "ASSUMPTIONS.md": "d228e792ab7638302ab11d6b96171293ff77645f9f3ad046772dfbf735b0448d",
+    "INDEPENDENT.md": "dab9366f3a01adbdbe92c907a79f60f64b4e64d03cc9aef3fb1e52450a518d86",
+    "SOURCE_CHECK.md": "8584bbdfe77e391060234510d0223e4e5947056d2e3d5241c32dcad111532e06",
+    "DELTA_CHECK.md": "6e590e5417fd585a7c72b368befddbc9290abe5d3c46c7112b232fe15275c835",
+    "check.py": "139618a1d9bbfde610351d528deeceae0b701fc7ebc11fccadcf946d96f63ae1"
+  },
+  "science_source_hashes_refreshed_against_main": true,
+  "proof_check": "original-source hand check, exposed whole-file comparison, then three repaired passages; same model family",
+  "numeric_run": "historical exact evidence verified; unchanged source not rerun during packaging",
+  "numeric_examples": [
+    {
+      "r": "0",
+      "S": "0",
+      "correlators": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "replayed_states": 211,
+      "appends": 210,
+      "max_records": 103,
+      "positive_cylinders": 16
+    },
+    {
+      "r": "1/2",
+      "S": "2",
+      "correlators": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "-1/2"
+      ],
+      "replayed_states": 211,
+      "appends": 210,
+      "max_records": 103,
+      "positive_cylinders": 16
+    },
+    {
+      "r": "3/4",
+      "S": "3",
+      "correlators": [
+        "3/4",
+        "3/4",
+        "3/4",
+        "-3/4"
+      ],
+      "replayed_states": 211,
+      "appends": 210,
+      "max_records": 103,
+      "positive_cylinders": 16
+    },
+    {
+      "r": "1",
+      "S": "4",
+      "correlators": [
+        "1",
+        "1",
+        "1",
+        "-1"
+      ],
+      "replayed_states": 203,
+      "appends": 202,
+      "max_records": 103,
+      "positive_cylinders": 8
+    },
+    {
+      "r": "-1",
+      "S": "4",
+      "correlators": [
+        "-1",
+        "-1",
+        "-1",
+        "1"
+      ],
+      "replayed_states": 203,
+      "appends": 202,
+      "max_records": 103,
+      "positive_cylinders": 8
+    }
+  ],
+  "support_checks": 12216,
+  "spatial_covariance_snapshots": 72,
+  "fault_controls_expected_failure": [
+    "missing-buddy",
+    "ignore-first-setting",
+    "wrong-frame",
+    "nonlocal-response",
+    "landau-sign"
+  ],
+  "scratch_mutations_reconstructed": true,
+  "source_and_receipt_tamper_controls": "identity comparisons reject modified bytes and incorrect hash; not a numerical claim",
+  "syntax": "compile without executing or writing bytecode",
+  "vocabulary_files_checked": 16,
+  "vocabulary_violations": 0,
+  "local_links_checked": [
+    {
+      "file": "HANDOFF.md",
+      "target": "RESULT.md"
+    },
+    {
+      "file": "HANDOFF.md",
+      "target": "ASSUMPTIONS.md"
+    },
+    {
+      "file": "HANDOFF.md",
+      "target": "PRIMARY.md"
+    },
+    {
+      "file": "HANDOFF.md",
+      "target": "INDEPENDENT.md"
+    },
+    {
+      "file": "HANDOFF.md",
+      "target": "SOURCE_CHECK.md"
+    },
+    {
+      "file": "HANDOFF.md",
+      "target": "DELTA_CHECK.md"
+    },
+    {
+      "file": "HANDOFF.md",
+      "target": "AUTHOR_CHECK.md"
+    },
+    {
+      "file": "HANDOFF.md",
+      "target": "check.py"
+    },
+    {
+      "file": "RESULT.md",
+      "target": "../../../../../docs/PROJECTIVE_HISTORY_FIXED_FIRST_TARGET_LOCAL_PROGRAM_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+    },
+    {
+      "file": "RESULT.md",
+      "target": "../../../../../docs/DYNAMICS_CLAUSE_BELL_VALUES_OF_RECORD_LAWS_RECORDS_ONLY_FORMATION_STAYS_AT_TWO_THE_DYNAMICS_CLAUSE_REACHES_TWO_ROOT_TWO_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "file": "RESULT.md",
+      "target": "../autonomous_runtime/RESULT.md"
+    },
+    {
+      "file": "RESULT.md",
+      "target": "ASSUMPTIONS.md"
+    },
+    {
+      "file": "RESULT.md",
+      "target": "NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "file": "RESULT.md",
+      "target": "HANDOFF.md"
+    }
+  ],
+  "metadata_paths_and_source_hashes_checked": true,
+  "editable_prompt_files_changed": [
+    ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/GOAL.md"
+  ],
+  "repository_authority_edits": [],
+  "strong_physical_closure": false,
+  "negative_packet_pass": false,
+  "formal_audit_complete": false,
+  "limits": [
+    "Finite diagonal rational instances only; general F_v and full-r statements are hand proofs",
+    "No new experiment, physical causal realization, Born derivation, continuum or mass-gap result",
+    "Checker did not rerun the numerical diagnostic",
+    "Full repository pipeline and formal science landing are not claimed"
+  ]
+}

@@ -1,57 +1,67 @@
-goal: GB1-CF finite gauge gluing, native qubit placement and neighborhood record realization
+goal: Gauge bridge and foundational tests of record-law predictions
 operation: bounded research
 base: 1e0d3b58dcda7f83152b0bb51729260247454d65
 instruction_branch: 56c5c0ab64f532c5784e895b2f9aa6894fa334e0
-parent_research_head: 9213a55c3636c8bdbf4a1f692e902d4d6d7ac44a
+parent_research_head: c50d82b2d2e01e4622a037c8f7eafb2abb24e57d
 branch: physics-loop/gb1-cf-pair-20261107
 pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10142
 pr_draft: false
 delivery_mode: milestone
 actual_current_surface_status: conditional-support
 target_claim_type: bounded_theorem
-trace_class: upstream_support
-reachability_to_target: partially_closes
-active_route: chosen autonomous record-jump model and explicit coherent axiom models
-bounded_result: permanent phase ticks plus scalar-rate jumps give full-time record sufficiency for a selected finite-radius
-  law; two infinite-Z3 record-birth laws satisfy the axioms with different odds
-independent_check: fresh-context jump-clock derivation; source-exposed model/support/guard checks; final T=0 fallback
-  repair confirmed; no formal audit
+trace_class: frontier_discovery
+reachability_to_target: unknown_frontier
+active_route: 'CHSH observable: exact prepared record witnesses and explicit causal/quantum assumptions'
+bounded_result: The supplied four-event program realizes every S in [0,4]; fixed-preparation law variants also
+  vary S. Classical causal and quantum bounds require distinct named extra hypotheses.
+independent_check: Fresh same-family original-source derivation and final source-exposed comparison complete;
+  three repairs confirmed at exact hashes
 note: docs/SU2_NEIGHBORHOOD_PROPAGATION_RECORD_READOUT_BOUNDED_THEOREM_NOTE_2026-11-08.md
 note_sha256: 8ae0959b5c1f294cc7a9be67c2818f53c25ce2410d1103ac13054bd325d82b23
 previous_boundary_note: docs/SU2_FINITE_BOUNDARY_FLUX_ASSOCIATIVE_GLUING_BOUNDED_THEOREM_NOTE_2026-11-07.md
 previous_boundary_note_sha256: c2a8da27cfc860b2b5912e87251622ee69ee452aaa39a1aecf882f220b3d9876
-execution: 'exact two-qubit fixture: 32 reached states and 286 old-record support checks; 1458 six-neighbor conditions;
-  three deliberate faults fail; numeric leases released'
+execution: Five rational program instances, 12216 support checks, 72 covariance snapshots; five deliberate
+  faults rejected; numeric leases released
 failed_routes: data-first computational recording erases the phase and dephased J3 leaves half the code; previous
-  finite capacity and origin witnesses retained; two decoded flags have rank four off-code; unmasked future pointers
-  leave dirty work; a pure-clean binary pointer does not realize the six-edge CP mixture; arbitrary unknown pre-herald
-  input does not factor through fixed R; unequal outcome hazards retain no-event age; initial fair fallback was
-  constant at T=0 and is repaired
-native_axiom_bridge: external phase/calendar retired only inside a chosen finite-radius joint jump model; uniform
-  short-range physical gate/record actuation and law selection remain open
-framework_stance: axioms and gauge model are hypotheses; compare alternatives rather than protect a desired framework
-next_action: test a concrete short-range record-triggered dynamics or bridge for a discriminating consequence; do
-  not equate compatible simulation with axiom-selected physics
-checkpoint: autonomous_runtime/HANDOFF.md
-verification: autonomous_runtime/verification.json
-recovery: autonomous_runtime/HANDOFF.md indexes frozen source, complete checks, preserved fair-fallback diagnostic
-  and final varying-fallback evidence; previous packets unchanged
+  finite capacity and origin witnesses retained; two decoded flags have rank four off-code; unmasked future
+  pointers leave dirty work; a pure-clean binary pointer does not realize the six-edge CP mixture; arbitrary
+  unknown pre-herald input does not factor through fixed R; unequal outcome hazards retain no-event age; initial
+  fair fallback was constant at T=0 and is repaired
+native_axiom_bridge: Record support and local content laws are satisfied by the witnesses; Bell causal separation
+  and Born/joint-law selection remain additional physical obligations
+framework_stance: axioms and gauge model are hypotheses; compare alternatives rather than protect a desired
+  framework
+next_action: Specify a physically justified joint record-formation law and causal structure; test a complete
+  two-wing protocol without hidden setting communication or biased selection
+checkpoint: foundational_bell/HANDOFF.md
+verification: foundational_bell/verification.json
+recovery: foundational_bell/HANDOFF.md indexes frozen primary, independent proof, final source comparison,
+  exact replays and assumptions
 repository_authority_edits: []
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 axiom_change_landed: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10143
-current_probe: autonomous_runtime/RESULT.md
-current_probe_status: conditional-support; autonomous finite-radius construction and coherent axiom examples checked;
-  stronger physical closure not achieved
+current_probe: foundational_bell/RESULT.md
+current_probe_status: conditional-support; explicit observable witnesses and qualified comparisons checked
 locality_reassessment: native_law/luna_reassessment/manifest.json
 prior_readout_verification: native_law/outputs/verification.json
-current_probe_sha256: 7c156869a4b8fe1a29ef5eb997fa78f2e553546c03dc812798004ac4eb104e88
+current_probe_sha256: b408820a8e38f969a21f70d6d8a53c05172cddfc52dfeba2f74ecb9c964ee321
 prior_vertex_verification: native_records/verification.json
 preparation_history_parent: 40bf8ab61128cfa0ff7c2e99663300d4ee2b5c1f
 prior_preparation_history_verification: preparation_history/verification.json
-implementation_conditions: chosen quantum/Born/gate and atomic joint jump law, fixed record-indexed seed, no extra
-  background evolution, enlarged T+1-site clock, budget-dependent finite range
 prior_local_implementation_verification: local_implementation/verification.json
 strong_physical_closure: false
 axiom_model_result: explicit legal domain {absent,0,I}^Z3, positive neighbor-dependent support, finite-ancestry
   existence, distinct a=1/4 and a=3/4 laws
+foundational_test_checkpoint: Exact diagnostic, independent proof, exposed comparison and repaired-content
+  confirmation complete; research PR packaging
+prior_autonomous_verification: autonomous_runtime/verification.json
+prior_autonomous_implementation_conditions: chosen quantum/Born/gate and atomic joint jump law, fixed record-indexed
+  seed, no extra background evolution, enlarged T+1-site clock, budget-dependent finite range
+implementation_conditions: Declared four-record protocol, chosen F or F_v, prepared matrix banks, record-dependent
+  global routing, fixed binary dictionary; causal and quantum comparisons add their ledgered hypotheses
+hypothetical_axiom_status: null
+admitted_observation_status: null
+conditional_surface_status: conditional-support
+claim_type_reason: Application of existing finite programming and Bell bounds to current axioms, with explicit
+  matching-premise witnesses; no new physical-law derivation

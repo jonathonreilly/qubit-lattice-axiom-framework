@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/foundational_bell/check.py", line 315, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/foundational_bell/check.py", line 295, in main
+    row,snapshots=replay(r,args.fault)
+                  ~~~~~~^^^^^^^^^^^^^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/foundational_bell/check.py", line 167, in replay
+    supported(initial, initial)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/foundational_bell/check.py", line 161, in supported
+    assert menu(records, s).get(records[s], 0) > 0, ("old record lost support", s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('old record lost support', (37, 3, 0))

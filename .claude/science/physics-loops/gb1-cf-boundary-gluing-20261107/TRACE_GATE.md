@@ -1,6 +1,23 @@
 # Trace to GB1-CF
 
-## Current autonomous-model continuation, 2026-11-08
+## Current foundational Bell test, 2026-11-09
+
+~~~yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: Pick one observable consequence and see what our axioms actually constrain, explicitly accounting for every extra assumption.
+source_of_blocker_text: user_goal
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: Test a justified joint record law and physical causal realization against the full Bell protocol.
+~~~
+
+The requested observable test has explicit mathematical witnesses, a complete
+assumption ledger and exact finite replay. It diagnoses law freedom and the
+causal/Born premises needed for stronger bounds. It does not close the gauge
+bridge's physical actuation, continuum, vacuum or mass-gap obligations.
+
+## Previous autonomous-model continuation, 2026-11-08
 
 ```yaml
 trace_class: upstream_support

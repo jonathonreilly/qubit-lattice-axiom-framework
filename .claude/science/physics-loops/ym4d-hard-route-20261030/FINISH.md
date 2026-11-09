@@ -663,3 +663,4 @@ Work on PR #10132 of jonathonreilly/qubit-lattice-axiom-framework, branch claude
 | 588 | `leaf-dhol` | done 2026-11-09: stop (c) at D-HOLONOMY (DH) for the complete first old read on its original common domain. |
 | 589 | `leaf-scaller` | done 2026-11-09: stop (c) at S-CALLER, the actual residual fixed-slot map Q_R with its generating operations, field versions and whole-fibre identity (SC). |
 | 590 | `leaf-braw` | done 2026-11-09: stop (c) at B-RAW, the common-coordinate residual (20) with the noncommuting current contribution (11), switch defect (16) and bound (23). |
+| 591 | `leaf-creflect` | done 2026-11-09: stop (c); direct row reflection fails, no admissible CFW counterexample. First open input: CFW's uniform combined row bound on J_h Z_h with the actual node/current compensation. All six tree-4 leaves stopped at (c); next: tree 5 over I-INCIDENCE coefficients, H-UNPAID, D-HOLONOMY, S-CALLER, B-RAW, CFW row bound. |

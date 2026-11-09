@@ -304,6 +304,11 @@ These are not repairs. The note already leaves them unresolved.
 - Path: `docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md`
 - The imported synthesis proof, sparse compilation, and a target-specific certificate stay open. Microscopic drive, vacuum, phase reference, measured energy, an autonomous clock, halt, indefinite reuse, interacting old Hamiltonians, disconnected ports, a common phase for programs with different `W`, preparation on the root battery size, and retained audit stay open.
 
+## Note 61
+
+- Path: `docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Supplied complement actuators, independent vacuum, external timing, and readiness stay open. Carrying the runtime charge estimate through number-changing preparation, a dissipative heat ledger, an idle-envelope realization for every finite `L`, polynomial classical or oracle time, and retained audit stay open.
+
 ## Note 63
 
 - Path: `docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md`

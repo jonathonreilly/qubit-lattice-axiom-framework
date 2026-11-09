@@ -20,6 +20,14 @@ A row appears here only when the note is wrong or overclaims. One finding, one l
 - Edit: Keep `n=97/98` as the repeated root. Describe `n=11/10` as the overlap of the root `m=-5/2` with that `Xi=0` mode. Leave the excluded denominator `m=-4` as it stands.
 - How this row was made: read on 2026-11-09. The discriminant and both roots were recomputed from the printed quadratic. The runner was not executed.
 
+## Note 61
+
+- Path: `docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Defect: The ramp-integration sentence says the finest successive differences have observed ratios near four.
+- Evidence: With 256, 512, and 1024 slices, the note prints those differences as `1.664×10^{-8}` and `4.371×10^{-8}`. Their ratio is `4371/1664 = 2.6268…`. Moving either printed mantissa by one in the last digit leaves the ratio near `2.63`.
+- Edit: State that ratio, about `2.627`. Do not call it near four. Keep the next sentence, which already says these observations are not rigorous ODE enclosures.
+- How this row was made: read on 2026-11-09. The ratio was divided from the printed digits. The runner was not executed.
+
 ## Note 65
 
 - Path: `docs/COMMUTING_STATIC_EDGE_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md`

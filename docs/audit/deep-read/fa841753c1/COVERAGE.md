@@ -428,6 +428,13 @@ Runners were not executed.
 - Checked: `sum_{l=1}^L sin^2(pi l/(L+1))=(L+1)/2`, so the printed sine packet is normalized. Its mean battery index is `q+(L-1)/2`, and the range bound is `Var<=(L-1)^2/4`. Then `d_L=2 sin(pi/(2(L+1)))<=pi/(L+1)`. The author shift lies in `(3 pi/2, 9 pi/2]`, and the root gap is below `5/4`. The pulse `f_h` has integral `1`, maximum `2/h`, and variation `4/h`. The envelope `30 s^2(1-s)^2` has integral `1` and zero endpoint derivatives. At `q=1`, `L=3` the packet is `(1/2,1/sqrt(2),1/2)`. Omitting the phase at `x=pi/2` gives overlap `-1/2` and squared trace norm `3`. The branch phase gives `3/2-sqrt(6)/2`. Reversing both conditional `Y` axes gives overlap `0` and squared trace norm `4`. `[n,Y]=iX`. The reversed Hadamard order is orthogonal. Also `s_i^2>=1/5`, the arccos derivative is at most `sqrt(5)`, the preparation budget sums to `3e/4`, and `3 a^2 e` is larger than the variance gap `3 a^2 e/2`.
 - Not checked: the imported count `O(4^n n^(3/2))` and the printed hashes. The runner was not executed. `proposed_retained` is paired with `bare_retained_allowed: false`. Detail is in `batches/notes_0060.md`.
 
+## Note 61
+
+- Path: `docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: fix filed.
+- Checked: each branch sine packet has mean `(L+1)/2`, so `q` branches cost `mu_B=q Delta(L+1)/2`. Then `d_L=2 sin(pi/(2(L+1)))<=pi/(L+1)`. At `q=2`, `L=3`, `2q d_L=4 sqrt(2-sqrt(2))`, which rounds to the printed `3.06147`. The trace budget `epsilon/8+2(epsilon/16)+epsilon/4+2*4*(epsilon/16)` equals `epsilon`. The shift lies in `(3 pi/2, 9 pi/2]`. The smoothstep derivative has maximum `3/2`. `2(1+...+r)=r(r+1)`. For the printed `K`, `kappa=13/4` and `||K-2I||<=5/4`, and `||[K,N_S]||=5/4`. The printed work figures add: `-1.00909221+(-0.43059594)=-1.43968815`. The fixture dimension is `2^{14}=16384`. At `L=2` the phase-reversed packet is orthogonal.
+- Not checked: the complex128 residuals and the imported factor `131328`. The runner was not executed. The successive-difference repair is in `FIXES.md`. Detail is in `batches/notes_0061.md`.
+
 ## Note 63
 
 - Path: `docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md`

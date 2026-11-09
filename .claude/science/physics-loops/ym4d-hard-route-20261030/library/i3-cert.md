@@ -3,7 +3,7 @@ lease_until: 2026-11-10T10:40Z
 
 # i3-cert: the certificate `I(omega) = 1` on the entering support (registry row RIM-I3)
 
-Status: IN PROGRESS (started 2026-11-09T22:40Z; sections are appended as they are written).
+Status: DONE 2026-11-09 (one session, Claude Fable 5.2, medium; not checked by another model; no numerics run).
 
 Queue row: FINISH 624. Pinned at commit da6cf71d8. Source: Sussman and Alpoge,
 `YM4_1400.tex` at commit 2bc0658f91d2 of the Yang--Mills-LLM-experiment repository;
@@ -18,7 +18,38 @@ inputs the row allows, with its hypotheses checked), **gap** (not proved here).
 
 ## 0. Result
 
-(Filled in at the end of the session; see section 10 for the state if this line is still here.)
+**Verdict: stop condition (iii).** `I(omega) = 1` on the entering support is proved from the retained
+tests, with one named step not proved: the assignment lemma (COV) of section 5.4. No counterexample.
+Not checked by a second model.
+
+| Lemma of the row | Statement here | Status |
+|---|---|---|
+| 1 (definition) | Definitions 4.1-4.3: points, tests in force (E1)-(E5), admitted trajectories, `Ent_N`. Lemma 1: where the incoming term is not zero, the point is in `Ent_N` | definition; Lemma 1 **proved**, given that the term is an iterated integral |
+| 2 (test to defect) | Lemma 2: a supplier on the complete footprint gives defect `<= 2 alpha`. Lemma 2b: `2 psi_l eps_l <= C_2 e_l`. `L_flat^2 < L` enters only in Lemma F3; without it `C e_l` still holds from `L_flat < L` | **proved**, given the averaging corollary of Y in local form (read, not rebuilt). *Which* test supplies *which* plaquette is (COV): **gap** |
+| 3 (layer profile) | Lemma 3: defect `<= B e_l` at all levels gives `r_U <= K_w K_F B e_s` in layer `s`; `K_F` is bounded by an explicit convergent series (6.2), independent of the number of levels. Lemma D (layer distance) and Lemma F1 (growth of `e_l/e_s`) | **proved**, with `bgc:proper-background` and the weighted maximum **cited**, hypotheses checked in 6.1 |
+| 4 (prospective datum) | Lemma 4: every tested plaquette of the prospective global datum has defect `<= C_3 e_l`, `C_3 = 2 c_0 L^2 C_F(1) C_2`. Proof by one exact averaging step from the old level-j datum (Y 64097-64101). Remark 7.4: why the face lift does not enter | **proved**, given the base bound (Corollary 5.2) and the facts (G2), (G3) |
+| 5 (varied old datum) | Lemma 5a, 5b: the old datum over the chart has defect `<= C_6 e_l`; only levels `j`, `q` move | **proved** given (V), (Lip) (gaps; not needed for `I = 1`) |
+| crux | 9.2: a fixed chain of four constants at one entrance, restarted at `C_2` at every entrance; no product over levels or entrances | **proved** as a statement about this note's proof |
+
+Three findings the lead should know:
+
+1. **Statements (i) and (ii) do not need the profile.** Lemma 4 gets the new level-q holonomies from the
+   old level-j datum by one exact averaging step, as Y does at Y 64097-64101. Y's second form (Y 65536-65560,
+   through `U_in` and the level-j profile) proves the same with a larger constant (Remark 7.2). So
+   `I(omega) = 1` rests on (COV), the averaging estimate and the geometry, and on none of the four cited
+   inputs. The profile is needed for the layerwise curvature bounds and for Lemma 5.
+2. **The open step is the assignment, not an estimate.** (COV): every tested plaquette of the old global
+   datum has a retained test with complete footprint. Y gives it in prose. Inside `X` I checked it against
+   Y's boxes and found one uncovered case, which Y names itself (Y 78316-78319): loops at an *earlier*
+   prepared face when the operation does not carry the old crossings. The repair is the stage test of the
+   stage that prepared that face, used at its own moment, with the loop unchanged since (5.4, item 5).
+   Outside `X` nothing is checked.
+3. **T6 must not be used at the entrance.** The approximate collar test reads `S_X = M^j U^+`, which
+   exists only after the admission. The level-j collar rows are supplied by the exterior clauses of the
+   preceding guard T9 (5.4, item 4). `Ent_N` is defined without T6, T8, T11, T12, T13.
+
+`C_3` is uniform in `m`, the volume and the history. It depends on `(L, L_flat, r, c_5, Bbar, M, M_0, c_f)`;
+the row's list omits the frame constants and `M_0, c_f` (9.2).
 
 ## 1. Repo search
 
@@ -29,7 +60,8 @@ inputs the row allows, with its hypotheses checked), **gap** (not proved here).
 - In this lane the passage Y 65406-65591 is mentioned in FINISH row 624, `library/open-registry.md` (RIM-I3),
   `library/inset-chart.md` 5.2 (input (F1-Y), "I did not rebuild it") and `library/prior/i3-read.md` only.
 - This checkout has only the branch `claude/ym4d-hard-route`; `origin/main` and the other PR branches are
-  not fetched here, so I did not search them. I rely on the search recorded in `library/prior/i3-read.md`
+  not fetched here, so I did not search them. A `git grep` of `HEAD` for the two labels outside the lane
+  folder was stopped at its time limit without output; the checkout has no `research/ym4d` folder. I rely on the search recorded in `library/prior/i3-read.md`
   (its "Repo search" section: no interior-holonomy supplier on `origin/main`, #10114, #10133, #10134, #10141).
 - Used from the lane: `library/inset-chart.md` sections 2, 3, 5.1, 5.2 (setting, tests T1 to T13, the
   certificate), `library/rim-scale.md` (R1), (I4), `library/h-geo.md` (members and nest gaps inside `X`).
@@ -119,8 +151,10 @@ Geometric facts used, with their source. I did not re-derive them; inside `X` th
 - (G1) Both sequences, and the global ones, satisfy the separation with the floors of
   `hi:real-datum-profile` (Y 15317-15322): `sigma >= L^2 rho_c`, `frakM >= frakM_c`, `rho >= L^2 sigma`,
   at least `6 rho` sites in each direction at the top level.
-- (G2) `dist_infty(K, Omega_j^c) > 2 L^q` and `dist_infty(K, Omega'_{q+1}) > 2L^q`: the footprint of a
-  level-q plaquette with a corner in `K` and no corner in `Omega_q` lies in `Lay_j` ("the order-`q`
+- (G2) `dist_infty(K, Omega_j^c) > 2 L^q`. Consequence: the footprint of a level-q plaquette `P` with a
+  corner in `K` and no corner in `Omega_q` lies in `Lay_j`. (Each point of `F(P)` is within `3L^q/2` of the
+  corner in `K`, so `F(P) subset Omega_j`; `Omega_q` is a union of order-q blocks, so the block of a corner
+  outside `Omega_q` misses `Omega_q`.) Y: ("the order-`q`
   carrier stays inside the unchanged level-`j` member by the separation of the prospective sequence",
   Y 65550-65552; Y 72255-72258; Y 64097-64100).
 - (G3) A level-(q+1) completed edge of the old sequence has its double block in `Omega_q`, at distance
@@ -129,7 +163,7 @@ Geometric facts used, with their source. I did not re-derive them; inside `X` th
 ## 3. Frame lemmas (proved)
 
 `f(t) := t^{-1/2} (log t)^{p_0}` is decreasing for `t >= e^{2 p_0}`, and `eps_l = A_0 f(theta_l)`.
-Floors on `T` used below: (T1) `T >= max(e^{2p_0}, 2 c_5, e)`; (T2) `(1 + c_5/(T log T))^{p_0} <= 2`;
+Floors on `T` used below: (T1) `T >= max(e^{2p_0}, 2 c_5, 4)`; (T2) `(1 + c_5/(T log T))^{p_0} <= 2`;
 (T3) `c_5 + 2 Bbar (1 + r log_L log t) <= t` for all `t >= T`. Each holds for `T` large, and each depends
 only on `(c_5, Bbar, r, p_0, L)`.
 
@@ -177,7 +211,7 @@ Without (LF), from `L_flat < L` alone, it is at most `4^r L^2 L_flat^2 R_l^2`, s
 *Proof.* `e - 1 <= k - k_0 - 1 = log_L R_{k_0+1}`, so `L_flat^{2(e-1)} <= R_{k_0+1}^{2 log_L L_flat}`. Under
 (LF) the exponent is below 1; in general it is below 2. Then F2. `square`
 
-**Lemma F4 (weak coupling).** `max_l e_l <= ebar(gamma) := sup_{t >= gamma^{-2} - c_5} L^2 A_0 t^{-1/2} (log t)^{p_0 + 2r} sqrt(2)`,
+**Lemma F4 (weak coupling).** `max_l e_l <= ebar(gamma) := sup_{t >= gamma^{-2}} L^2 A_0 t^{-1/2} (log t)^{p_0 + 2r}`,
 and `ebar(gamma) -> 0` as `gamma -> 0`. The bound does not depend on the number of levels, the volume or
 the history.
 
@@ -410,3 +444,328 @@ This is the part of (COV) that statement (i) needs. Regions as in `library/inset
 
 Items 2 to 5 use that the shells are wider than a footprint (`7 a_i` or `u_{i+1}` against `3 L^{i+1}/2`).
 I did not write the containments as proofs; each is a comparison of box coordinates from Y 63786-63851.
+
+## 6. Lemma 3: the layer profile
+
+### 6.1 The two cited inputs, with their hypotheses
+
+**(BG) `bgc:proper-background` (Y 35634-35646).** "For the geometry fixed above there are `a_0, a_1, C_B > 0`,
+independent of depth and volume, with `C_B a_1 < a_0`, such that every real mixed datum whose ordinary and
+mixed test holonomies are within `eps <= a_1` of one has a constrained-critical configuration `U(V)` with
+`M_B U(V) = V`, `R_mat(U(V)) <= C_B eps`. Any two critical configurations for the same datum with
+`R <= a_0` lie in the same residual gauge orbit."
+Hypotheses here: the geometry is (G1); the datum is real; the test holonomies are the tested plaquettes of
+Definition T ("ordinary" = all edges rows, "mixed" = some edge completed, Y 10604-10611), with no pinch
+tests because no inward row is kept. The size hypothesis is supplied by Corollary 5.2 or Lemma 4 with
+`eps = C ebar(gamma)`.
+
+**(WM) `hi:real-datum-profile` with `mb:datum-profile`, `mb:weighted-maximum` (Y 15317-15338, 12471-12503,
+35618-35627).** In the geometry (G1), let `U` be critical and regular at the radius `a_c`. Let
+`r_U(x)` be the maximum of `L^{2 lambda(p)} norm(dU(p) - 1)` and `L^{3 lambda(b)} abs(J(U)(b))` (bare units)
+over the plaquettes and full bonds based at `x`, `lambda` the largest corner layer (Y 65501-65504,
+15327-15330). Let `v(tau)` be the defect of the datum test `tau`, and
+`P(x) := sup_tau e^{-delta d_B(x, tau)} v(tau)`, the distance to a tested plaquette being the minimum over
+its corners (Y 12451-12452). Then
+
+`r_U(x) <= K_w P(x)`,   (6.1)
+
+with `K_w` and `delta > 0` depending only on the constants of the local estimate (`K_loc`, `R = 20 L sigma`,
+`e^{delta R} = sqrt(2)`, `K_w = 5 K_loc` times the fixed factor for the displacement of a readout,
+Y 35620-35625). "No maximum has to be attained, so the proof works on infinite volume as well when the
+input radius is bounded" (Y 12492-12495).
+Hypotheses here: (G1); `U` is the orbit given by (BG), and its radius `C_B C ebar(gamma)` is at most `a_c`
+for `gamma` small. As in `library/rim-scale.md` Theorem 6.2, I use that the radius `R_mat` of (BG) bounds
+the radius `r_U` of (WM) up to a fixed factor; Y uses them so (Y 65495-65498) and I did not check the
+conversion.
+
+### 6.2 The layer distance (proved)
+
+`d_B` is the infimum over paths of `int ds / xi(s)`, `xi` the local pillar scale (Y 12395-12402); in `Lay_t`
+the pillar scale is `L^t` (bare units). A lattice version differs by a fixed factor; let `c_B in (0, 1]`
+be that factor.
+
+**Lemma D.** Let `x in Lay_s` and let `p` be a tested plaquette of level `l`. Then
+`d_B(x, p) >= c_B rho (abs(l - s) - 2)_+`.
+
+*Proof.* Let `y` be a corner of `p`; `y in Lay_{l'}` with `l' in {l - 1, l}`. Let `l' > s`. For each `t`
+with `s + 1 <= t <= l' - 1`: `x notin Omega_{s+1} supset Omega_t`, and `y in Omega_{l'} subset Omega_{t+1}`.
+A path from `x` to `y` has a first time in `Omega_{t+1}`, and before it a last time in `Omega_t^c`; between
+the two it runs in `Lay_t`, and its Euclidean length there is at least
+`dist_infty(Omega_t^c, Omega_{t+1}) > rho L^t`. Its weighted length there is at least `rho`. The pieces for
+different `t` lie in disjoint layers. There are `l' - 1 - s >= l - s - 2` values of `t`. For `l' < s`
+exchange the roles: for `l' + 1 <= t <= s - 1`, `y notin Omega_t` and `x in Omega_{t+1}`; there are
+`s - 1 - l' >= s - l - 1` values. `square`
+
+This is Y 65511-65515: "The place of a tested level-`l` plaquette is in `L_l`, and its corners lie in
+layers `l - 1, l`. From layer `s` the path to this read crosses the intervening layers, giving distance at
+least `c (abs(l - s) - 2)_+`", with `c = c_B rho`.
+
+### 6.3 The lemma
+
+Put `kappa := delta c_B rho`, `k_r := ceil(2r)`, and
+
+`K_F := sup_{n >= 0} C_F(n) e^{-kappa (n - 2)_+}`,
+`K_F <= S_F := sum_{n >= 0} C_F(n) e^{-kappa (n-2)_+} <= sqrt(2) L^2 e^{2 kappa} (1 + c_5 + Bbar)^{k_r} k_r! (1 - e^{-kappa})^{-(k_r + 1)}`.   (6.2)
+
+*Proof of (6.2).* `C_F(n) <= sqrt(2) L^2 (1 + c_5 + Bbar n)^{k_r} <= sqrt(2) L^2 (1 + c_5 + Bbar)^{k_r} (1 + n)^{k_r}`
+(both entries of the maximum in Lemma F1 are below this, since `L >= 3` and `1 + log(1 + u) <= 1 + u`).
+`(e^{-kappa(n-2)_+} <= e^{2 kappa} e^{-kappa n})`. And `sum_{n >= 0} (n + 1)^k x^n <= k! (1 - x)^{-(k+1)}` for
+`0 <= x < 1`, because `(n+1)^k <= k! binom(n + k, k)` and `sum_n binom(n + k, k) x^n = (1 - x)^{-(k+1)}`. `square`
+
+The series converges, and its bound contains `kappa, c_5, Bbar, r, L` only. The number of levels does
+not occur: the sum is over all `n >= 0`.
+
+**Lemma 3 (layer profile).** Assume (G1), (FR), (T1), (T2). Let `V` be a real datum on a region sequence,
+with every tested plaquette of level `l` of defect at most `B e_l`, for all `l`. Let `B ebar(gamma) <= a_1`
+and `C_B B ebar(gamma) <= a_c`. Then the orbit `U(V)` of (BG) satisfies, at every bare site `x in Lay_s`,
+
+`r_U(x) <= K_w K_F B e_s`.
+
+*Proof.* (BG) applies with `eps = B max_l e_l <= B ebar(gamma)` (Lemma F4). (WM) applies. By Lemma D and
+Lemma F1, `P(x) <= sup_l B e_l e^{-kappa (abs(l-s) - 2)_+} <= B e_s sup_l C_F(abs(l - s)) e^{-kappa (abs(l-s)-2)_+} <= B K_F e_s`.
+Then (6.1). `square`
+
+So `C' = K_w K_F B`: one application of (WM) to one datum. The constant is the product of three numbers
+fixed before `gamma`, and none of them is a power of a per-level factor. Y applies "the same profile on
+both stage sequences" (Y 65520-65521): Lemma 3 is used once for the old sequence (`B = C_2`) and once for
+the prospective one (`B = C_3`), each time from the datum bound of that sequence.
+
+## 7. Lemma 4: the prospective datum
+
+**Lemma 4.** Assume (G2), (G3), (AV1), Definition T, (E1), and the base bound of Corollary 5.2 at
+`x in Ent_N`. Let `gamma` be so small that `c_0 C_2 ebar(gamma) <= min(eps_L, L^2/C_L)`. Then every tested
+plaquette of level `l` of the prospective global datum `D'(x)` has defect at most `C_3 e_l`,
+
+`C_3 := 2 c_0 L^2 C_F(1) C_2`,  `C_F(1) = max(2 (1 + Bbar)^{1/2}, sqrt(2) L^2 (1 + log(1 + c_5 + Bbar))^{2r})`.
+
+*Proof.* `C_3 >= C_2`. I go through the levels (Y 65522-65535).
+
+`l < j`. `Omega_l, Omega_{l+1}` and `Omega_{l-1}` are unchanged, so the tested plaquettes, their row
+edges, their completed edges and all values are the old ones. Corollary 5.2.
+
+`l = j`. A prospective tested plaquette has a corner in `Omega_j` and none in `Omega'_q supset Omega_q`, so
+it is an old tested plaquette. Its row edges are old rows with the old values (`Gamma'_j subset Gamma_j`);
+its completed edges read `Lay_{j-1}`, unchanged. Corollary 5.2.
+
+`l = q`. Let `P` be a prospective tested plaquette of level `q`: a corner in `Omega'_q = Omega_q cup K`,
+none in `Omega_{q+1}`.
+
+Case A: no corner of `P` in the old `Omega_q`. Then `P` has a corner in `K`, and by (G2) `D(P)` lies in the
+old `Lay_j`. Every level-j bond of `D(P)` touches `Omega_j` and has no endpoint in `Omega_q`, so it is an
+old row; put `W := V_j` on `D(P)`. Every level-j plaquette of `D(P)` has its corners in `Lay_j`, so it is
+an old tested plaquette, with all four edges rows; by Corollary 5.2 and 2.3, `eps(W; D(P)) <= c_0 C_2 e_j`.
+Every edge `c` of `P` has the prospective value `M(W)(c)`: if `c` touches `K` it is a new row and (E1)
+gives `V_q(c) = M(V_j)(c)`; otherwise both ends are in `Lay'_j` and it is a completed edge of the
+prospective sequence, with value `M(V_j)(c)` on its double block, whose bonds are in `Gamma'_j subset Gamma_j`
+with the old values. So `D'(dP) = (M W)(dP)`, and (AV1) gives
+`abs(F_P) <= L^2 c_0 C_2 e_j + C_L (c_0 C_2 e_j)^2 <= 2 L^2 c_0 C_2 e_j <= 2 L^2 c_0 C_2 C_F(1) e_q`.
+
+Case B: `P` has a corner in the old `Omega_q`. Then `P` is an old tested plaquette of level `q`. An edge
+that touches the old `Omega_q` is an old row with its old value. An edge `c` that does not has both ends
+in the old `Lay_j`; in the old datum it is a completed edge with value `M(V_j)(c)`. In the prospective
+datum it is a new row (if it touches `K`), with value `M(V_j)(c)` by (E1), or a completed edge, with the
+same value as in case A. So the datum loop is the old one. Corollary 5.2.
+
+`l = q + 1`. The tested plaquettes are the old ones (`Omega_{q+1}, Omega_{q+2}` unchanged). Row edges keep
+their values. A completed edge has both ends in the old `Omega_q` (old separation) and, by (G3), its
+double block is in the old `Omega_q`, where `Gamma'_q` has the old rows with the old values. Corollary 5.2.
+
+`l > q + 1`. Nothing changes. `square`
+
+**Remark 7.1 (this is Y's argument).** Case A is Y 64097-64101 ("the averaging blocks of a newly tested
+plaquette are in the preceding member of level `j` ... Here the fine plaquettes are formed from the old
+determining rows, and the exact one-step average gives the coarse bound") and Y 65540-65549. Case B is
+Y 65538-65539 ("A determining row that met the old `Omega_q` keeps its value") with Y 72270-72276.
+
+**Remark 7.2 (Y's second form, through `U_in`).** Y 65536-65560 writes the same bound through the old
+orbit: with `U_in = U(D(x))` from (BG), `(M^j U_in) = V_j` on `D(P)`, so `D'(dP) = (M^q U_in)(dP)`; the old
+level-j profile (Lemma 3 with `B = C_2`) and the conversion of 2.3 give bare curvature at most
+`c_0 K_w K_F C_2 e_j L^{-2j}` on `F(P) subset Lay_j`; (AV2) gives `abs(F_P) <= 2 L^2 c_0 K_w K_F C_2 e_j`.
+This is "`C(L) e_j <= C'(L) e_q`" (Y 65556). It proves the same statement with the larger constant
+`2 c_0 L^2 K_w K_F C_F(1) C_2`. Lemma 4 as proved above does not use Lemma 3 at all; so statements (i)
+and (ii) do not depend on (WM), and of the four cited inputs they use none. Lemma 3 is needed for the
+curvature and current bounds "with `C e_s` in layer `s`" (Y 65561-65563) and for Lemma 5.
+
+**Remark 7.3 (the other convention for tested plaquettes).** If a level-q plaquette counts as tested by
+its place, there can be prospective tested plaquettes with the place in `K` that are not old tested
+plaquettes although a corner is in the old `Omega_q`. The loop is the same level-q loop as in case B, and
+in case B's convention it is covered. In the place convention its bound must come from a test: at the
+final stage it has a corner in a carried top density cube (Y 64093-64097), which gives `2.1 eps_m` by (I4)
+of `library/rim-scale.md`, and statement (i) excludes it. At an earlier stage use Remark 7.2 with the old
+profile on `Lay_j cup Lay_q`.
+
+**Remark 7.4 (why the face lift does not enter).** Y 65557-65558: "The artificial face lift of the
+localized problem does not enter this global calculation." Reason: Lemma 4 is about the global datum
+`D'(x)`. Its rows are rows of the global sequences. The lifted rows of the tower at `dX` are rows of the
+problem localized in `X` only; no edge of a tested plaquette of `D'(x)` is one of them. Every stencil
+`D(P)` of case A lies in the old `Lay_j` near `K`, and `K subset Omega_m^c cap X` is two level-m cells
+inside `X` (Y `eq:elab-history-quiet-boxes`: `O_m = H_m^{[8 a_m]}`, `X = H_m^{[10 a_m]}`), while the tower
+is within `3 M_1 L^q` of `X^c` (`library/h-geo.md` Lemma 3.1). The lift enters only in Lemma 6.
+
+**Lemma 6 (statement (i) from statement (ii)).** Let `p` be a tested plaquette of the prospective joined
+datum of `X` that is not a tower holonomy. Then `p` is a tested plaquette of the prospective global datum
+with the same datum loop. Hence its defect is at most `C_3 e_l`.
+
+*Proof.* The joined sequence is `J_l = Omega'_l cap T_l` with `T_.` the tower of `X` (`library/h-geo.md`
+Theorem). "Upon joining to the tower of the component, an interior holonomy is unchanged. A holonomy on
+the joining collar is trivial or equals a top plaquette holonomy of the original datum" (Y 72277-72280;
+Y 134207-134210; (R1) of `library/rim-scale.md`). A tested plaquette is "not a tower holonomy" when its
+footprint and the double blocks of its edges lie where `T_l = T_{l-1} =` everything, that is, where
+`J_l = Omega'_l` and `J_{l-1} = Omega'_{l-1}`; there Definition T gives the same edges with the same values
+for the two sequences. Lemma 4. `square`
+
+Lemma 6 takes the trichotomy as the definition of "tower holonomy"; the trichotomy itself is (R1) of
+`library/rim-scale.md`, which I did not re-prove.
+
+## 8. Lemma 5: the varied old datum
+
+Lemma 5 is not needed for `I(omega) = 1`. It is the last part of Y's paragraph (Y 65565-65585) and feeds
+(Y-PATH) of `library/inset-chart.md` 5.3: the old datum over the whole collar chart is regular.
+
+Setting. Let `x in Ent_N`, so by Lemma 4 the prospective global datum `D'` has the bounds `C_3 e_l`. Let
+`C_3 ebar(gamma) <= a_1` and `C_B C_3 ebar(gamma) <= a_c`, and let `U^+_g := U(D')` be the global prospective
+orbit of (BG). Put `D^0 := (M^l U^+_g on Gamma_l)_l`, the averages of this configuration on the *old*
+determining set (Y 65565-65567). Put
+
+`K_G := sup_{n >= 0} C_F(n) L^{-2n}` (finite by (6.2) with `e^{-kappa}` replaced by `L^{-2}`),
+`C_5 := 2 c_0 L^2 K_w K_F K_G C_F(1) C_3`.
+
+**Lemma 5a (the centre).** Assume in addition `rho >= 2L`, (AV2), and `L^2 c_0 K_w K_F K_G C_3 ebar(gamma) <= alpha_L`.
+Every tested plaquette `p` of level `l` of the old sequence has defect at most `C_5 e_l` in `D^0`.
+
+*Proof.* `l >= 1`. `p` has a corner `y_0` in `Omega_l`. Every corner of `p` is within `L^l` of `y_0` in the
+sup norm, and every point of `F(p)` is within `L^l/2` of a corner. So `F(p)` is within `3L^l/2` of
+`Omega_l`. Since `dist_infty(Omega_{l-1}^c, Omega_l) > rho L^{l-1} >= 2L^l`, `F(p) subset Omega_{l-1}`
+(Y 65568-65569: "its order-`l` carrier is inside the old member of level `l - 1`"). Since `Omega'_t supset Omega_t` for every `t`, each point of
+`F(p)` is in `Omega'_{l-1}`: its prospective layer is `lambda >= l - 1` (Y 65569-65570). By Lemma 3 for the
+prospective sequence (`B = C_3`) and 2.3, a bare plaquette `b` of `F(p)` with largest prospective corner
+layer `lambda` has
+
+`abs(F_b) <= c_0 K_w K_F C_3 e_lambda L^{-2 lambda} = c_0 K_w K_F C_3 [e_lambda L^{-2(lambda - l + 1)}] L^{-2(l-1)} <= c_0 K_w K_F K_G C_3 e_{l-1} L^{-2(l-1)}`,
+
+by Lemma F1 ("the powers `L^{-2(s-l+1)}` absorb the frame variation in `e_s/e_{l-1}`", Y 65571-65572). So
+`U^+_g` is a supplier of `p` for the datum `D^0` ((s1) holds by the definition of `D^0`) with
+`alpha = L^2 c_0 K_w K_F K_G C_3 e_{l-1}`. Lemma 2 gives defect `<= 2 alpha <= C_5 e_l`.
+`l = 0`: the bare plaquette has prospective layer `lambda >= 0`, and the same display gives
+`c_0 K_w K_F K_G C_3 e_0`. `square`
+
+**Lemma 5b (the fibre).** Let `V^B` be an old datum that equals `D^0` except on level-j rows, where
+`norm(V^B_j(b) D^0_j(b)^{-1} - 1) <= C_V delta'_j` (hypothesis (V)). Assume the one-step average is
+Lipschitz on its regular branch: `norm(M(W)(c) - M(W')(c)) <= C_M max_b norm(W(b) - W'(b))` over the double
+block of `c` (hypothesis (Lip), `C_M = C_M(L)`). Then every tested plaquette of level `l` of `V^B` has
+defect at most `C_6 e_l`, `C_6 := C_5 + 4 max(1, C_M) C_V C_F(1)`, and the defect differs from that in
+`D^0` only for `l in {j, q}`.
+
+*Proof.* By Definition T a level-j row is read by a tested plaquette of level `l` either as a row edge,
+and then `l = j`, or inside the double block of a completed edge, and then `l - 1 = j`. For `l = j` the
+four edge values move by at most `C_V delta'_j` each (the completed edges read level `j - 1` and do not
+move). For `l = q` the row edges do not move and each completed edge moves by at most `C_M C_V delta'_j`.
+For unitary factors `norm(abcd - a'b'c'd') <= norm(a - a') + norm(b - b') + norm(c - c') + norm(d - d')`. So
+the loop moves by at most `4 max(1, C_M) C_V delta'_j`, and
+`delta'_j <= eps_j <= e_j <= C_F(1) e_q`. `square`
+
+Then (BG) and Lemma 3 apply to `V^B` with `B = C_6`, for `gamma` small: "The old orbit on the varied fibre
+has the same layerwise bound from the weighted maximum" (Y 65581-65582).
+
+Status of (V) and (Lip): Y 65573-65579 ("Only level-`j` rows move, by `O_L(delta'_j)` including the
+reconstructed pivots ... On their full double blocks the regular average and the product of the four
+group factors change by `O_L(delta'_j)`"). On the free nonpivots (V) is the definition of the chart
+`Ch(omega)` with `C_V = 2` plus the comparison of the centres `S_g, S_X` ((Y-JOIN) of
+`library/inset-chart.md`); on the pivots it is (Y-PATH), (Y-MEAN) there. Both are **gaps** here. They do
+not touch `I(omega) = 1`.
+
+## 9. The statement, the constants, and the crux
+
+### 9.1 Theorem
+
+**Theorem 9.1 (I3-cert, given (COV)).** Assume:
+
+- (H1) the frame (FR) with the floors (T1), (T2), (T3), and (LF) (or `L_flat < L` with the larger constant
+  of 5.3);
+- (H2) the geometry (G2), (G3), Definition T, and the tests with the thresholds of the table in 5.2;
+- (H3) (AV1), (AV2) in the local form of 2.3;
+- (H4) the incoming term is an iterated integral in the sense of Lemma 1;
+- (H5) `gamma` so small that `C_2 ebar(gamma) <= alpha_L` and `c_0 C_2 ebar(gamma) <= min(eps_L, L^2/C_L)`;
+- (COV) of 5.4.
+
+Then at every point `x` of the entering support of the final stage at depth `m` (in particular wherever
+the incoming term is not zero), with `omega = pi(x)`:
+
+- (ii) every tested holonomy of level `l` of the global prospective datum is within `C_3 e_l` of one;
+- (i) every tested holonomy of level `l` of the prospective joined datum of `X` that is not a tower
+  holonomy is within `C_3 e_l` of one.
+
+In particular `I(omega) = 1` with this `C_3`, since `e_l <= max_q e_q`.
+
+*Proof.* Lemma 1 puts `x` in `Ent_N`. Corollary 5.2 gives the base bound `C_2 e_l` for the old datum.
+Lemma 4 gives (ii). Lemma 6 gives (i). `square`
+
+### 9.2 Where each constant comes from
+
+| Constant | Definition | Depends on | Source |
+|---|---|---|---|
+| `C_F(n)` | Lemma F1 | `Bbar, c_5, r, L` | frame |
+| `A_L` | (5.1) | `L, c_f, M, M_0` | thresholds of the tests |
+| `C_2` | `2^{r+1} L L_flat^2 A_L` | `L, L_flat, r, c_f, M, M_0` | Lemma 2b; one test, one footprint |
+| `C_3` | `2 c_0 L^2 C_F(1) C_2` | the above and `Bbar, c_5` | Lemma 4; one averaging step from level `j` to `q` |
+| `K_w, delta` | (WM) | `K_loc, L, sigma` | cited |
+| `K_F` | (6.2) | `delta c_B rho, Bbar, c_5, r, L` | Lemma 3; a convergent series in the level distance |
+| `K_G` | section 8 | `Bbar, c_5, r, L` | Lemma 5a |
+| `C_5, C_6` | section 8 | the above, `C_M, C_V` | Lemma 5 |
+
+`C_3` does not depend on `m`, on the volume, or on the history: the level enters only through `e_l`, and
+`ebar(gamma)` is a supremum over the coupling (Lemma F4). It does depend on the frame constants
+`(r, c_5, Bbar)` and, through (K-core) and (K-col), on `M_0` and `c_f`. The row lists
+`(L, L_flat, frakM, R_1, M_1, M)`; the frame constants and `M_0, c_f` are to be added. All are fixed
+before `gamma` in Y's order (Y 72931). `frakM, R_1, M_1` enter only through the geometric facts (G1)-(G3).
+
+**No constant is a product over levels or over entrances.** The chain at one entrance is
+
+`tests --(Lemma 2, 2b)--> C_2 --(Lemma 4)--> C_3 --(Lemma 3)--> K_w K_F C_3 --(Lemma 5)--> C_5, C_6`,
+
+of fixed length four. At the next entrance the chain starts again at `C_2`, because Corollary 5.2 takes
+its bound from (COV): each tested plaquette is supplied by a test with a threshold written in the
+definition of the operation, at the moment that test is carried, and the *value* of the loop is carried
+to the present by (c2). The number `C_3` obtained for a new level-q plaquette at one entrance is not the
+input of the next: at the next entrance that plaquette is an old one, and (COV) must supply it from the
+positive stage test of the stage that made it (items 3, 4, 5 of the list in 5.4), which gives `C_2` again.
+This is Y 65586-65591: "take the profile from the actual retained tests at each entrance, as in the
+levelwise datum bound. Repeatedly multiplying the adjacent comparison constant would not give a uniform
+profile." An induction that used `C_3` of entrance `N` as the base bound of entrance `N + 1` would give
+`(2 c_0 L^2 C_F(1))^N C_2`; no step above does that. The only induction in this note is Lemma 1, on sets,
+with no constant.
+
+Within one entrance, the level sums are suprema bounded by convergent series: `K_F` (weights
+`e^{-kappa n}` against `C_F(n)`) and `K_G` (weights `L^{-2n}` against `C_F(n)`).
+
+## 10. What stays open
+
+1. **(COV), section 5.4.** The one step of the chain to `I(omega) = 1` that is not proved here. It is the
+   lemma that is needed: *at an admitted point, every tested plaquette of the old global datum has a
+   supplier of one of the six kinds, with complete footprint (c1), unchanged loop since the test's moment
+   (c2), and the right averages (c3).* Y's lines: 65425-65474, 76654-76689, 78299-78323. Inside `X` at the
+   final entrance I checked the assignment against Y's box geometry (list in 5.4) and found one case where
+   Y's literal clauses do not cover the footprint (item 5, earlier faces in the default operation; Y
+   78316-78319 says so); the repair I propose is the earlier stage test plus (c2), unproved. Outside `X`
+   (statement (ii) for the rest of the history) I did not check anything: it needs the definitions of the
+   stopped components, islands, drop-outs and restored cores.
+2. **No counterexample.** I looked for a point of the entering support with a tested holonomy of the class
+   in (i) far from one. The candidates were: a loop at an earlier prepared face (item 5 of 5.4), a
+   level-m loop next to the old seam (covered by T4), a core loop (covered by T5). None gives one; for the
+   first, the stage test of the stage that prepared the face bounds the same loop.
+3. **Inputs read and not rebuilt:** (AV1), (AV2) in local form (2.3); the thresholds of the stage tests
+   (5.2); (G1)-(G3) (inside `X`: `library/h-geo.md`, given CORE); the form of the term (Lemma 1, remark 1);
+   the trichotomy of the joined datum (Lemma 6); for Lemma 5 only: (V), (Lip), and the conversion between
+   `R_mat` and `r_U`.
+4. **Definition T** is my reading. Remark 7.3 covers the other reading.
+
+For the owners of other files (I did not edit them):
+
+- `library/inset-chart.md` 5.2: (F1-Y) holds on the larger set `Ent_N` of Definition 4.3, which does not
+  impose T6, T8, T11, T12, T13. The certificate can be stated levelwise (`C_3 e_l` at level `l`), which is
+  stronger than `C_3 max_q e_q`.
+- `library/open-registry.md`, RIM-I3: `C` is `C_3` of 9.2, uniform in `m`, volume and history, with the
+  dependence listed there; the status becomes "proved given (COV)"; (COV) is the new open row.
+- The row's list of constants for `C_3` omits `(r, c_5, Bbar, M_0, c_f)`.
+- Y: `psi_l` is used at Y 65477-65478 and defined nowhere; (LF) `L_flat^2 < L` is used at Y 65481 and is
+  not among the conditions on `L_flat` at Y 63876.

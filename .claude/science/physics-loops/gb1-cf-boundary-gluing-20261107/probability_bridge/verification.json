@@ -1,0 +1,61 @@
+{
+  "source_parent": "37976c19e673305b1efafc0578327481d9f04c24",
+  "main_reference": "bf92a1d763030836ed55631d5d7a7ef3b288f284",
+  "claim_type": "bounded_theorem",
+  "status": "conditional-support",
+  "frozen_and_reviewed_sources": {
+    "PRIMARY.md": "c6256e9e9daac5be1bc9174342f0f2cd97bc59a27c481114893e6da92eb28b32",
+    "RESULT.md": "63f289a3745e06d80e6efe8189074f7c50f41bb8da19321a39ae8487ee5fde52",
+    "ASSUMPTIONS.md": "2194bce37b90b4a8e01a5db6d9f5df10452bc28409dc36d956f9d9251e2314d9",
+    "INDEPENDENT.md": "cf73c8a3aa2a7e6ec36bba981e22a0969025b77b893dce28e77a1458059caef3",
+    "SOURCE_CHECK.md": "08cd2d666ea159619ed6acd1585ca884cf4192cd85961b1cda24438d8f052c41",
+    "DELTA_CHECK.md": "e1b603a228af862185198f04158fc75855456c238450378e17a03e4db57436dc"
+  },
+  "governing_sources_equal_main": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "301bb33c1a743104208067c14684b34ba71d86674509111638ea898bc6e6c0dc",
+    "docs/audit/data/axiom_premise_nodes.json": "e21007be1bc3d82304f3442a5e4f831a19241760c3f0ad486baebe1bc33ec5c5",
+    "docs/audit/AXIOM_MINIMALITY_POLICY.md": "179dfa0f41bbb147674c3f348a86e59698cd4c361da80fe88de2608626f673d4",
+    "scripts/audit_companion_minimal_axioms_clean_base_exact.py": "6717f18e4d4103ee197b03c322bea1fabde6f85d6ee3888fcef6986081562514"
+  },
+  "verification_mode": "complete hand-proof/source comparison; deterministic provenance checks",
+  "new_numeric_jobs": 0,
+  "numeric_lease_acquired": false,
+  "independent_numeric_replay": false,
+  "checker_request": {
+    "fork_turns": "none",
+    "reasoning_effort": "max",
+    "model": "inherited; no override",
+    "runtime_model_and_effort_attested": false
+  },
+  "independence": "fresh restricted-context proof; subsequent exposed source/delta checks; same provider/family and shared-premise limitations",
+  "checks": {
+    "complete_independent_report_read": true,
+    "complete_integrated_argument_read": true,
+    "central_calculations_hand_verified": true,
+    "all_scientific_corrections_checked": true,
+    "exact_reviewed_hashes_match": true,
+    "vocabulary_files": 15,
+    "vocabulary_findings": 0,
+    "vocabulary_cli_excludes_claude_direct_coverage_used": true,
+    "local_links": {
+      "checked_local_links": 3,
+      "missing": []
+    },
+    "whitespace": "complete staged packet passed git diff --cached --check"
+  },
+  "formal_landing_review": false,
+  "formal_audit": false,
+  "negative_packet_pass": false,
+  "negative_scope": "explicit law nonuniqueness and individual refinement witnesses; no exhaustive no-go",
+  "strong_physical_closure": false,
+  "physical_obligations": [
+    "normalized event laws in each context for a common preparation",
+    "physical effect realization and identification",
+    "effect-context probability independence",
+    "common exclusive realization of every summable effect pair",
+    "preparation calibration and selected update law"
+  ],
+  "editable_prompt_files_changed": [],
+  "axiom_changes": [],
+  "shared_instruction_changes": []
+}

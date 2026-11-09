@@ -1,6 +1,27 @@
 # Trace to GB1-CF
 
-## Current local outcome formation and conditioning, 2026-11-09
+## Current probability bridge, 2026-11-09
+
+~~~yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: What follows from local algebra, neighborhood influence and records without Born or axiom changes?
+source_of_blocker_text: user_goal
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: Construct and justify a physical record-event/effect map with context independence and common realizations of effect refinements.
+~~~
+
+The intrinsic trace is derived algebraically. It is distinguished from a
+probability measure over matrix contents. Explicit lawful processes retain
+different local odds; a smooth binary comparison fails a three-outcome
+refinement. A conditional representation theorem gives the Born form only
+when the physical effect identification and refinement hypotheses hold.
+Those hypotheses remain open, and the quantum axiom package is deferred.
+This is progress in identifying a testable bridge, not a prediction of
+quantum probabilities or a proof that a new axiom is necessary.
+
+## Previous local outcome formation and conditioning, 2026-11-09
 
 ~~~yaml
 trace_class: frontier_discovery

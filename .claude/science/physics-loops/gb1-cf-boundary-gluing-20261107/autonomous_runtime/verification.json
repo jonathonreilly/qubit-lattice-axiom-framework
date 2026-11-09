@@ -1,0 +1,165 @@
+{
+  "source_parent": "9213a55c3636c8bdbf4a1f692e902d4d6d7ac44a",
+  "main_reference": "1e0d3b58dcda7f83152b0bb51729260247454d65",
+  "result_sha256": "7c156869a4b8fe1a29ef5eb997fa78f2e553546c03dc812798004ac4eb104e88",
+  "primary_sha256": "4ee06873b3d35b11db796f0c6030eac78804e7b277688752661018b0963d6d6c",
+  "checks": {
+    "INDEPENDENT.md": "06fd3908713f815731f382de8b365af47314b4281ea3d3015ba68f66aebf2871",
+    "SOURCE_CHECK.md": "9a51e6cd4142e1f4ee0c486435520c2a9477fadf35d63d5e12c17e74b6df1c08",
+    "FINAL_SOURCE_CHECK.md": "99ae4f63d2037b34d86b86f12cc99cb5031933163974ffd5276d4692a918b682",
+    "DELTA_CONFIRMATION.md": "e1cd185e3beeac492c7628b82e3b9625549335e6fcc077a7dc3c72fd7408153f"
+  },
+  "probe": {
+    "source_sha256": "2a917391599289a53f92f2043b5202a45feb6568a97125df6855169e496b489e",
+    "autonomous": {
+      "seeds": 2,
+      "reached_states": 32,
+      "zero_trace_children_excluded": 0,
+      "old_record_support_checks": 286,
+      "terminal_masses": [
+        {
+          "(1, 1)": "1/4",
+          "(1, 0)": "1/4",
+          "(0,)": "1/2"
+        },
+        {
+          "(1, 1)": "1/4",
+          "(1, 0)": "1/4",
+          "(0,)": "1/2"
+        }
+      ],
+      "scope": "two-data-qubit jump/record fixture, basis completion factors, exact path-density comparison"
+    },
+    "axiom_models": {
+      "six_neighbor_conditions": 1458,
+      "minimum_I_probabilities": [
+        "1/28",
+        "3/28"
+      ],
+      "maximum_I_probabilities": [
+        "25/28",
+        "27/28"
+      ],
+      "empty_neighbor_I_odds": [
+        "1/4",
+        "3/4"
+      ],
+      "infinite_lattice_existence": "hand proof, not a finite simulation"
+    },
+    "omission_controls": {
+      "omitted_tick_Z0": [
+        "1",
+        "1/2"
+      ],
+      "unequal_rate_no_event_Z0": [
+        "1/2",
+        "2/3"
+      ],
+      "arbitrary_preherald_success": [
+        "1",
+        "0"
+      ],
+      "T0_fallback_I_odds": [
+        "1/2",
+        "3/4"
+      ],
+      "scope": "specific explicit counterexamples, not a general no-go"
+    },
+    "N5": {
+      "per_element": "checked exact finite rational matrix entries; no physical gate calibration inferred",
+      "per_site": "checked both atoms stay supported in all 1458 six-neighbor conditions",
+      "per_mode": "checked and not executed \u2014 no field-mode or continuum decomposition is in this diagnostic",
+      "per_block": "checked finite two-qubit phase/record trajectories and normalized jump intensity",
+      "lattice_wide": "checked and not executed \u2014 infinite Z3 existence is the separately checked finite-ancestry proof"
+    },
+    "status": "ok",
+    "elapsed_seconds": 0.03228087502066046,
+    "max_rss_host_units": 21905408
+  },
+  "execution": {
+    "source_sha256": "2a917391599289a53f92f2043b5202a45feb6568a97125df6855169e496b489e",
+    "runs": [
+      {
+        "label": "exact",
+        "exit_code": 0,
+        "elapsed_seconds": 0.1327962499926798,
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "python3",
+          ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/autonomous_runtime/check.py"
+        ]
+      },
+      {
+        "label": "no-halt-guard",
+        "exit_code": 1,
+        "elapsed_seconds": 0.07722008400014602,
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "python3",
+          ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/autonomous_runtime/check.py",
+          "--fault",
+          "no-halt-guard"
+        ]
+      },
+      {
+        "label": "unequal-rate",
+        "exit_code": 1,
+        "elapsed_seconds": 0.07728391600539908,
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "python3",
+          ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/autonomous_runtime/check.py",
+          "--fault",
+          "unequal-rate"
+        ]
+      },
+      {
+        "label": "zero-fallback",
+        "exit_code": 1,
+        "elapsed_seconds": 0.07727554201846942,
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "python3",
+          ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/autonomous_runtime/check.py",
+          "--fault",
+          "zero-fallback"
+        ]
+      }
+    ]
+  },
+  "focused_checks": [
+    "all source arguments read",
+    "exact copied checker evidence",
+    "final result hash confirmed by delta checker",
+    "source/input identities unchanged",
+    "compiled syntax",
+    "intended fault assertions",
+    "old executed source recoverable by hash",
+    "local file links",
+    "YAML recovery paths",
+    "vocabulary zero findings",
+    "whitespace"
+  ],
+  "independence": "same-family fresh worker context; early route messages disclosed before primary freeze; later checks source-exposed",
+  "strong_physical_closure": false,
+  "formal_landing_review": false,
+  "independent_audit": false,
+  "negative_packet_pass": false,
+  "negative_scope": "explicit models and individual witnesses only; no exhaustive no-go",
+  "numeric_leases_released": true,
+  "environment": {
+    "python": "3.13.5",
+    "platform": "darwin"
+  },
+  "editable_prompt_files": [
+    ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/GOAL.md"
+  ]
+}

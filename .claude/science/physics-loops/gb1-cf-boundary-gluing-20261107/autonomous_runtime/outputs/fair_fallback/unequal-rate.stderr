@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/autonomous_runtime/check.py", line 239, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/autonomous_runtime/check.py", line 226, in main
+    'autonomous': autonomous_checks(args.fault), 'axiom_models': axiom_models(),
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/autonomous_runtime/check.py", line 124, in autonomous_checks
+    assert intensity == eye(), ('non-scalar total jump intensity', j)
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: ('non-scalar total jump intensity', 3)

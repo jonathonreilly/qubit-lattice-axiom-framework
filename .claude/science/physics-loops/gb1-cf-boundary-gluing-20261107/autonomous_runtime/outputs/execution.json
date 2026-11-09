@@ -1,0 +1,59 @@
+{
+  "source_sha256": "2a917391599289a53f92f2043b5202a45feb6568a97125df6855169e496b489e",
+  "runs": [
+    {
+      "label": "exact",
+      "exit_code": 0,
+      "elapsed_seconds": 0.1327962499926798,
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/autonomous_runtime/check.py"
+      ]
+    },
+    {
+      "label": "no-halt-guard",
+      "exit_code": 1,
+      "elapsed_seconds": 0.07722008400014602,
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/autonomous_runtime/check.py",
+        "--fault",
+        "no-halt-guard"
+      ]
+    },
+    {
+      "label": "unequal-rate",
+      "exit_code": 1,
+      "elapsed_seconds": 0.07728391600539908,
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/autonomous_runtime/check.py",
+        "--fault",
+        "unequal-rate"
+      ]
+    },
+    {
+      "label": "zero-fallback",
+      "exit_code": 1,
+      "elapsed_seconds": 0.07727554201846942,
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/autonomous_runtime/check.py",
+        "--fault",
+        "zero-fallback"
+      ]
+    }
+  ]
+}

@@ -169,3 +169,24 @@ Evidence goes in local_implementation/. Use one same-family fresh restricted
 context checker in the existing checker worktree, maximum reasoning effort,
 original sources only before the supervisor candidate is frozen. Accept a
 construction, refutation or precise remaining obligation. Preserve failures.
+
+## Autonomous phase and formation; framework assessment, 2026-11-08
+
+User asks to close the remaining sequencing/formation gap and explain its value,
+then asks whether the axioms are a coherent basis for physics. Continue the
+authorized research; do not equate a compatible model with a prediction.
+Parent 9213a55c3636c8bdbf4a1f692e902d4d6d7ac44a; main 1e0d3b58dc unchanged.
+
+Target: an explicit record-indexed autonomous finite process, including phase,
+old-record preservation, seed conditioning, capacity and no-event waiting.
+Probe whether a chosen jump law retires external sequencing or merely moves
+physical actuation into an assumption. Separate finite apparatus locality from
+uniform bounded-range implementation. No axiom edit is authorized.
+
+Also construct explicit models of the four axioms to test coherence and law
+selection. Do not claim that multiple models make a framework unscientific, or
+that a finite local simulator establishes empirical physics. Use actual
+countermodels rather than failure-to-find rhetoric. Literature/prior-controller
+search and rejected routes go in autonomous_runtime/. A fresh max-effort checker
+uses restricted original sources; early disclosed route ideas are recorded.
+The root reads and checks complete arguments before pushing a research milestone.

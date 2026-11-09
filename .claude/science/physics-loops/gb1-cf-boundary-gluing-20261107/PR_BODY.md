@@ -1,6 +1,6 @@
 The supplied five-state SU(2) link model needs compatible overlapping patches,
 retained boundary flux, and an explicit placement on native qubits. This PR
-provides four finite-model notes and three checked research continuations. The
+provides four finite-model notes and four checked research continuations. The
 physical law and continuum identifications remain open.
 
 - **Two plaquettes:** the complete closed sector has four states, with exact
@@ -52,7 +52,19 @@ physical law and continuum identifications remain open.
   native site allocation, with separate simultaneous scratch banks. The proof
   and exact compiler diagnostics are in `local_implementation/RESULT.md`.
   This implements finite driven words, including deterministic-edge electric
-  readers. Gated permanent registration and microstep sequencing remain supplied.
+  readers. That circuit theorem leaves permanent registration and sequencing supplied.
+- **Autonomous model and axiom coherence (research packet):** a permanent phase
+  tape and a chosen fixed jump law reproduce the compiled circuit instruments.
+  Scalar total jump intensity removes hidden waiting-age dependence: complete
+  records determine phase, intermediate work states and next-event odds. This
+  costs T+1 extra sites and a neighborhood radius growing with the apparatus.
+  The joint gate/tick and registration channels are chosen model inputs; their
+  uniform short-range physical realization is not proved. Separately, explicit
+  infinite-Z3 record-birth models satisfy the stated axioms with nonconstant
+  local probabilities and permanent support. Two choices give I probabilities
+  1/4 and 3/4 under the same empty-neighbor condition. This establishes
+  mathematical coherence and a concrete freedom in law selection, not empirical
+  adequacy. Proofs are in `autonomous_runtime/RESULT.md`.
 
 The code retains an extra encoding-origin degree of freedom and needs a
 physical preparation/selection account. The explicit adjacent-gate readout
@@ -74,8 +86,8 @@ history budget. The local compiler temporarily borrows frozen unrecorded
 qubits and restores them at completed boundaries, with unwanted H evolution
 suspended. It does not implement the unobserved six-edge mixture with all
 work returned pure, or synthesize arbitrary full magnetic exponentials.
-Autonomous microscopic control, preparation genesis and calibration, physical
-clock, couplings and continuum comparison remain open. No
+Uniform short-range actuation of the chosen autonomous jump law, preparation
+genesis/calibration, physical rates, couplings and continuum comparison remain open. No
 vacuum or mass-gap closure or evidence that the framework is physically correct
 is claimed. Explicit finite dimension comparisons also reject the same-site-count
 full-sector identification under ordinary tensor composition.
@@ -114,6 +126,14 @@ Validation and evidence:
   six record-control routes, 236 controller cases and 11,672 compiled predicates.
   Omitting AND cleanup or the history mask fails the checks. These are small
   circuit and pure-proof checks, not a full-torus or physical-clock simulation.
+- A fresh-context derivation checks the permanent jump clock, full-time
+  sufficiency and explicit capacity. Source checks repair admissibility support,
+  failure-halt guards, marker decoding and the T=0 variation edge case. A
+  separate source check verifies the infinite-lattice finite-ancestry argument.
+  Exact diagnostics cover 32 reached quantum fixture states, 286 old-record
+  support checks and 1,458 six-neighbor conditions. Missing halt, unequal
+  outcome rates and zero-support fallback faults fail. No native actuator,
+  full-torus, infinite-lattice numerical simulation or general no-go is claimed.
 - Complete mathematical source comparisons and scoped correction receipts
   are preserved. These are research checks, not formal landing panels or audits.
 - Six production runners have successful content-bound caches. The native
@@ -142,7 +162,7 @@ registry, or shared instruction files change.
 The existing pair and boundary research packs index complete proofs, original
 outputs, worker briefs, source identities and recovery paths. The current
 checkpoint is `.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/STATE.yaml`;
-its `local_implementation/HANDOFF.md` indexes the latest continuation. The owner-approved
+its `autonomous_runtime/HANDOFF.md` indexes the latest continuation. The owner-approved
 two-word governing locality substitution landed separately in
 [PR #10143](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10143)
 at `43a1fcc374711ca50626eca667441d3ca575c7d1`, now merged into this branch.

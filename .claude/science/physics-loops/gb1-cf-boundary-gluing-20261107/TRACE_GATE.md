@@ -1,6 +1,26 @@
 # Trace to GB1-CF
 
-## Current local-implementation continuation, 2026-11-08
+## Current autonomous-model continuation, 2026-11-08
+
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: Close the remaining sequencing/formation gap and assess whether the axioms are a coherent basis for physics.
+source_of_blocker_text: user_goal
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: Test a concrete short-range physical law or bridge for a discriminating consequence; do not relabel a chosen atomic jump as a derivation.
+```
+
+The finite-radius jump model in autonomous_runtime/RESULT.md makes phase,
+formation and no-event behavior functions of complete records. It supplies
+joint gate/tick channels rather than deriving their short-range actuation.
+The stronger physical target remains open. Separately checked infinite-Z3
+birth models give explicit coherence examples and differing conditional odds
+under the same axioms. This is useful framework diagnosis, not selection of
+nature's laws or a mass-gap result.
+
+## Previous local-implementation continuation, 2026-11-08
 
 ```yaml
 trace_class: upstream_support

@@ -1,0 +1,67 @@
+{
+  "source_sha256": "2a917391599289a53f92f2043b5202a45feb6568a97125df6855169e496b489e",
+  "autonomous": {
+    "seeds": 2,
+    "reached_states": 32,
+    "zero_trace_children_excluded": 0,
+    "old_record_support_checks": 286,
+    "terminal_masses": [
+      {
+        "(1, 1)": "1/4",
+        "(1, 0)": "1/4",
+        "(0,)": "1/2"
+      },
+      {
+        "(1, 1)": "1/4",
+        "(1, 0)": "1/4",
+        "(0,)": "1/2"
+      }
+    ],
+    "scope": "two-data-qubit jump/record fixture, basis completion factors, exact path-density comparison"
+  },
+  "axiom_models": {
+    "six_neighbor_conditions": 1458,
+    "minimum_I_probabilities": [
+      "1/28",
+      "3/28"
+    ],
+    "maximum_I_probabilities": [
+      "25/28",
+      "27/28"
+    ],
+    "empty_neighbor_I_odds": [
+      "1/4",
+      "3/4"
+    ],
+    "infinite_lattice_existence": "hand proof, not a finite simulation"
+  },
+  "omission_controls": {
+    "omitted_tick_Z0": [
+      "1",
+      "1/2"
+    ],
+    "unequal_rate_no_event_Z0": [
+      "1/2",
+      "2/3"
+    ],
+    "arbitrary_preherald_success": [
+      "1",
+      "0"
+    ],
+    "T0_fallback_I_odds": [
+      "1/2",
+      "3/4"
+    ],
+    "scope": "specific explicit counterexamples, not a general no-go"
+  },
+  "N5": {
+    "per_element": "checked exact finite rational matrix entries; no physical gate calibration inferred",
+    "per_site": "checked both atoms stay supported in all 1458 six-neighbor conditions",
+    "per_mode": "checked and not executed \u2014 no field-mode or continuum decomposition is in this diagnostic",
+    "per_block": "checked finite two-qubit phase/record trajectories and normalized jump intensity",
+    "lattice_wide": "checked and not executed \u2014 infinite Z3 existence is the separately checked finite-ancestry proof"
+  },
+  "status": "ok",
+  "elapsed_seconds": 0.03228087502066046,
+  "max_rss_host_units": 21905408
+}

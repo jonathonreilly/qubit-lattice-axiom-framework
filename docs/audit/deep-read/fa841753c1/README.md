@@ -24,4 +24,6 @@ Extracted from the prior cards still on disk: notes 1551–1737. Two of those ro
 
 Next unread note: 28.
 
+A seeded re-read of 8 preserved notes is in [THOROUGHNESS.md](THOROUGHNESS.md). On that draw the repair decision matches the old cards.
+
 Notes 2–1550 have no surviving cards. The read continues there until it meets the extracted range. Notes after 1737 are still unread. The closed card dump in PR #10146 was not merged, and that remote branch was deleted.

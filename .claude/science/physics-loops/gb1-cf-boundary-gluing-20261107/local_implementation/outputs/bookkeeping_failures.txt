@@ -1,0 +1,2 @@
+Initial vocabulary helper lookup: scripts/check_vocabulary.py does not exist; corrected to scripts/vocab_lint.py, which reported zero violations.
+Initial local-link validator: a broad regex misclassified the source-check mathematical factor ](2D+1) as a file destination. Corrected by validating actual path-like Markdown destinations; all explicit local file links resolve. No mathematical source or numerical outcome changed.

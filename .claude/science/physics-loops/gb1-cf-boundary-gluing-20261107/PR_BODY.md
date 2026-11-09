@@ -1,6 +1,6 @@
 The supplied five-state SU(2) link model needs compatible overlapping patches,
 retained boundary flux, and an explicit placement on native qubits. This PR
-provides four finite-model notes and two checked research continuations. The
+provides four finite-model notes and three checked research continuations. The
 physical law and continuum identifications remain open.
 
 - **Two plaquettes:** the complete closed sector has four states, with exact
@@ -40,8 +40,19 @@ physical law and continuum identifications remain open.
   preferred origin is used. The next-content kernel reads a finite neighborhood
   of radius `10(d+N)+35` for a fixed experiment budget. A rank-one preparation
   herald certifies the post-success state independently of its earlier input.
-  The proof is in `preparation_history/RESULT.md`; the verifier, preparation
-  calibration and physical controller remain supplied.
+  The proof is in `preparation_history/RESULT.md`; its physical law and
+  preparation calibration remain conditional.
+- **Local verifier and controller (research packet):** an exact adjacent-gate
+  herald certifies the empty-flux vector on the full native data space, with
+  coherent failure and clean returned work. All pair gates route inside an
+  ordinary finite Z3 box without periodic shortcuts. A finite reversible controller
+  reads old records without changing them. One added completion record per
+  output distinguishes recorded zero from unused zero; masked copies permit
+  clean workspace after the next pointer changes. All resources fit the same
+  native site allocation, with separate simultaneous scratch banks. The proof
+  and exact compiler diagnostics are in `local_implementation/RESULT.md`.
+  This implements finite driven words, including deterministic-edge electric
+  readers. Gated permanent registration and microstep sequencing remain supplied.
 
 The code retains an extra encoding-origin degree of freedom and needs a
 physical preparation/selection account. The explicit adjacent-gate readout
@@ -59,8 +70,12 @@ the preparation and ordered process information in actual record slots and
 proves a record-only kernel for that finite model. It supplies tensor quantum
 states, Born instruments, a fixed dictionary and a scheduler; these inputs are
 not derived from the axioms. The neighborhood radius grows with the chosen
-history budget. A scalable mediated controller, preparation genesis and
-calibration, physical clock, couplings and continuum comparison remain open. No
+history budget. The local compiler temporarily borrows frozen unrecorded
+qubits and restores them at completed boundaries, with unwanted H evolution
+suspended. It does not implement the unobserved six-edge mixture with all
+work returned pure, or synthesize arbitrary full magnetic exponentials.
+Autonomous microscopic control, preparation genesis and calibration, physical
+clock, couplings and continuum comparison remain open. No
 vacuum or mass-gap closure or evidence that the framework is physically correct
 is claimed. Explicit finite dimension comparisons also reject the same-site-count
 full-sector identification under ordinary tensor composition.
@@ -91,7 +106,14 @@ Validation and evidence:
   propagation on reduced gauge fixtures. Missing-marker and coherent-hidden-
   branch mutations fail. Omitted-order and omitted-magnetic-pulse examples
   produce different future probabilities. These are research checks; full
-  formal review and audit of both continuation packets remain pending.
+  formal review and audit of the continuation packets remain pending.
+- A separate fresh-context proof derives the full native herald and routing.
+  Its source-exposed check validates masked control and identifies three
+  repaired details: simultaneous workspace, failed-herald halt and route frame.
+  Exact diagnostics compare 544 native basis columns, check 375 returned routes,
+  six record-control routes, 236 controller cases and 11,672 compiled predicates.
+  Omitting AND cleanup or the history mask fails the checks. These are small
+  circuit and pure-proof checks, not a full-torus or physical-clock simulation.
 - Complete mathematical source comparisons and scoped correction receipts
   are preserved. These are research checks, not formal landing panels or audits.
 - Six production runners have successful content-bound caches. The native
@@ -120,7 +142,7 @@ registry, or shared instruction files change.
 The existing pair and boundary research packs index complete proofs, original
 outputs, worker briefs, source identities and recovery paths. The current
 checkpoint is `.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/STATE.yaml`;
-its `preparation_history/HANDOFF.md` indexes the latest continuation. The owner-approved
+its `local_implementation/HANDOFF.md` indexes the latest continuation. The owner-approved
 two-word governing locality substitution landed separately in
 [PR #10143](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10143)
 at `43a1fcc374711ca50626eca667441d3ca575c7d1`, now merged into this branch.

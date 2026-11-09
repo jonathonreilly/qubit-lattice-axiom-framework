@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/local_implementation/check.py", line 339, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/local_implementation/check.py", line 331, in main
+    'circuits': circuit_checks(args.fault), 'routing': routing_checks(),
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/local_implementation/check.py", line 128, in circuit_checks
+    assert actual == expected(z, p, m, pointer), ('herald', m, z, p)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('herald', 1, 1, 0)

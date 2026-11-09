@@ -414,6 +414,20 @@ Runners were not executed.
 - Checked: `[[3/5,-4/5],[4/5,3/5]]` is a rotation. For `K=[[4,-1,0],[-1,5,-1],[0,-1,6]]`, `det K=110`, and the hidden rotation gives off-diagonals `-3/5`, `-4/5`, and `-1/5`, with row sums `13/5`, `29/5`, and `17/5`. For `w=(0,1,-1)`, `mu_1=-1` on the chain and `mu_1=1/5` after the rotation, so the squared leading-coefficient ratio is `25`. The rank-one test is the stated degree-3 polynomial in the three responses. The orders `t^3`, `t^7`, and `t^{11}` are `4d+3` at `d=0,1,2`.
 - Not checked: the tail series beyond the factorial comparison `(4d+5+2r)!>=(4d+5)! (2r)!`. The runner was not executed. Detail is in `batches/notes_0055_0058.md`.
 
+## Note 68
+
+- Path: `docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: `b M_E+2(b-1)M_E=(3b-2)M_E` and `q N M_E+2q(N-1)M_E=q(3N-2)M_E`. The variance bound `E_2+2 B_N E_1` meets `δ_var` when `δ_2≤δ_var/2` and `δ_1≤δ_var/(4 B_N)`. `||M-L||≤ε/32` makes the trace cost at most `ε/16`, and with the working tolerance `ε/2` the budget is `9ε/16`. The `N=3` fixture has dimension `32` and code dimension `8`. At `ξ=1/5` the printed reserve is `1306/525`, the quartic entry `32/729` scales to `32/455625`, and `ξ^2 * 2 R * (-2/7)=-5224/91875`.
+- Not checked: the routed-bus gap. The runner was not executed. `proposed_retained` is paired with `bare_retained_allowed: false` and surface `conditional-support`. Detail is in `batches/notes_0068_0070.md`.
+
+## Note 70
+
+- Path: `docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: for `θ=atan(4/3)`, `exp(2iθ)=(-7+24i)/25`. At `k=π/2`, `r_0=1` and `r_{4J/3}=(-7-24i)/25`. The bound-state energy `2J+w+J^2/w` is above `4J` for `w>J`. The packet is `L2`-normalized, with `||f||_1=sqrt(15σ)/3` and `||f'||_1=sqrt(15)/(2 sqrt(σ))`. At `J=3/16` and `w=1/4`, the loads are `13/16`, `3/4`, and `1/4`; the fault caps are `7/8` and `5/16`; the one-head enclosure is `[1,4]`. For `w≤5J/3` the spectrum lies in `[0,17J/3]`.
+- Not checked: the Bessel tail. The runner was not executed. Detail is in `batches/notes_0068_0070.md`.
+
 ## Note 1551
 
 - Path: `docs/WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md`

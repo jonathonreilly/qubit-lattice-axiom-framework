@@ -294,6 +294,16 @@ These are not repairs. The note already leaves them unresolved.
 - Path: `docs/LOCAL_NETWORK_INTERVENTION_RESPONSE_NOTE_2026-10-16.md`
 - The map from preparation, forcing, a local connection change, and records onto this common response stays open.
 
+## Note 68
+
+- Path: `docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Native formation, preparation, isolation, calibration, measured energy, work, stopping, records, reset or reuse, and retained audit stay open.
+
+## Note 70
+
+- Path: `docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Native three-body boundary supply, incoming-packet preparation, reset or reuse, Record formation, and physical energy identification stay open. Finite `M` does not give an unbounded-time halt.
+
 ## Note 1551
 
 - Path: `docs/WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md`

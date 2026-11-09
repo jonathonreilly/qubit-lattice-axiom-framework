@@ -29,6 +29,90 @@ Runners were not executed.
 - Not checked: the thermal derivation beyond those printed bounds. The runner was not executed. Detail is in `batches/notes_0004_0008.md`.
 - Open: native thermal and controller supply, temporal noise, capture, reset/reuse, and physical Hamiltonian or Record identification stay open. The finite clock is claimed only on `[T,2T]`.
 
+## Note 16
+
+- Path: `docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `10^27/(4*10^21)=250000`, `4*10^21/10^19=400`, `4*10^21/(4*10^18)=1000`, `10^19/(3*10^17)=100/3`, and `4*10^21/(3*10^17)=40000/3`. The static sum `1.415*(0.000221+0.0000016+0.0000000454)+0.0000032` equals `0.000318243241`. `M=1.5*10^19` equals `50*(3*10^17)`.
+- Not checked: contours and the named runner. Detail is in `batches/notes_0016_0026.md`.
+
+## Note 17
+
+- Path: `docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `215527/5000000=0.0431054`, under `0.044`. `9/16-8/250=1061/2000=0.5305`. `(32/5)*(3/8)^9=19683/20971520`, under `0.001`.
+- Not checked: the preparation narrative beyond those identities. The runner was not executed. Detail is in `batches/notes_0017_0027.md`.
+
+## Note 18
+
+- Path: `docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: the installed majorant `500000000000000000000003/22500000000000000000000000000` and the complete majorant `84065000000000000000000003/22500000000000000000000000000` are both under `0.004`. `2057560027/540000000000` is under `0.004`. `2597560027/540000000000` is under `0.005`.
+- Not checked: the embedded source hashes. The runner was not executed. Detail is in `batches/notes_0017_0027.md`.
+
+## Note 19
+
+- Path: `docs/PREPARATION_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `129/14<10`. `2*(0.00483202+10^{-4})=0.00986404`. The split `x(4-3x)-(3x-2)^2=4(1-x)(3x-1)` is an identity.
+- Not checked: the calibration narrative beyond those identities. Detail is in `batches/notes_0016_0026.md`.
+
+## Note 20
+
+- Path: `docs/ONE_QUBIT_CUBIC_COVARIANT_NEAREST_NEIGHBOUR_STABILIZER_RULES_HAVE_NO_THREE_DIMENSIONALLY_MOBILE_DEFECT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: the prior read of the four curve ideals and the lineon example. This pass did not re-enumerate the ideals. The note already limits the no-go to the supplied Pauli-star class.
+- Detail: `batches/notes_0016_0026.md`.
+
+## Note 21
+
+- Path: `docs/NOMINAL_BANDCENTER_CONVERTER_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: the prior read's band-window and ceiling arithmetic. This pass did not recompute `j` from `q0`. Trace ceilings `0.003028` and `0.003030` are the doubles of `0.001514` and `0.001515`.
+- Detail: `batches/notes_0016_0026.md`.
+
+## Note 22
+
+- Path: `docs/MAJORANA_PER_DIRECTION_CUBIC_FERMION_CODE_HAS_ONE_SPECIES_COVARIANT_UNDER_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `32*32=1024`. The stated element orders `1+7+8+24+8` sum to `48`. The enumeration of `128` groups was not repeated in this pass.
+- Detail: `batches/notes_0016_0026.md`.
+
+## Note 23
+
+- Path: `docs/LARGE_FEATURE_SPECTRAL_RECONSTRUCTION_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: the prior read of the factored spectrum and the chamber gaps. This pass did not recompute the ten-decimal gaps. The note already says equations `(6)` and `(7)` do not identify a relativistic spectrum.
+- Detail: `batches/notes_0016_0026.md`.
+
+## Note 24
+
+- Path: `docs/HOPPING_CONTROLLED_FINITE_OUTPUT_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `1.5*10^19/(6*10^16)=250` and `36/0.15=240`. Adding transfer `<0.001` to note 16's `<0.000320` and `<0.000347` gives `<0.001320` and `<0.001347`.
+- Detail: `batches/notes_0016_0026.md`.
+
+## Note 25
+
+- Path: `docs/FASTER_THREE_SITE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: at `M=5000000` the printed counts `5000238`, `5000243`, `5000239`, and `10000281` are `M+238`, `M+243`, `M+239`, and `2M+281`. `(0.00086)^2=7.396*10^{-7}` and `1-7.396*10^{-7}=0.9999992604`.
+- Detail: `batches/notes_0016_0026.md`.
+
+## Note 26
+
+- Path: `docs/FACTORED_RECOVERY_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: at `M=2500000` the counts are `2500238`, `2500243`, `2500239`, and `5000281`. `(0.00076)^2=5.776*10^{-7}`, the success floor is `0.9999994224`, and the diamond ceiling is `0.00152`. `0.006*0.129*460=0.35604`, under `0.357`.
+- Detail: `batches/notes_0016_0026.md`.
+
+## Note 27
+
+- Path: `docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `2954065138388379/781250000000000000` is `0.003781203377137125` and sits under `0.004`. The finite numerator `3735315138388379/781250000000000000` sits under `0.005`. The failed substitutions `32/25` and `4/5` are exactly `1.28` and `0.8`.
+- Not checked: the family derivation beyond those printed bounds. The runner was not executed. Detail is in `batches/notes_0017_0027.md`.
+
 ## Note 1551
 
 - Path: `docs/WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md`

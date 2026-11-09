@@ -19,6 +19,66 @@ These are not repairs. The note already leaves them unresolved.
 - Path: `docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
 - Native thermal and controller supply, temporal noise, capture, reset/reuse, and physical Hamiltonian or Record identification stay open.
 
+## Note 16
+
+- Path: `docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Native Hamiltonian, pure seed, and physical time or Record identification stay open.
+
+## Note 17
+
+- Path: `docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Native preparation, thermal supply for the doubled device, controller heat, capture, reset, reuse, and physical seconds stay open.
+
+## Note 18
+
+- Path: `docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Native vacuum, excited seed, complex loop phase, ladder coefficients, physical seconds, calibration, and retained audit stay open.
+
+## Note 19
+
+- Path: `docs/PREPARATION_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Native calibration, seed manufacture, runtime noise, and physical identification stay open.
+
+## Note 20
+
+- Path: `docs/ONE_QUBIT_CUBIC_COVARIANT_NEAREST_NEIGHBOUR_STABILIZER_RULES_HAVE_NO_THREE_DIMENSIONALLY_MOBILE_DEFECT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Planon statistics, non-Pauli or non-star rules, and any electron identification stay open.
+
+## Note 21
+
+- Path: `docs/NOMINAL_BANDCENTER_CONVERTER_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Native coefficients, physical units, coefficient robustness, and permanent finite halt stay open.
+
+## Note 22
+
+- Path: `docs/MAJORANA_PER_DIRECTION_CUBIC_FERMION_CODE_HAS_ONE_SPECIES_COVARIANT_UNDER_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Unrestricted anyon invariance, a dynamical selection of the twist, and physical identification stay open.
+
+## Note 23
+
+- Path: `docs/LARGE_FEATURE_SPECTRAL_RECONSTRUCTION_NOTE_2026-10-17.md`
+- A collective mode that would determine `(a,b,c)`, `L`, and `U`, and any empirical calibration, stay open.
+
+## Note 24
+
+- Path: `docs/HOPPING_CONTROLLED_FINITE_OUTPUT_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Physical units, capture or reset, and a shorter onset than the inherited `T=3*10^17` stay open.
+
+## Note 25
+
+- Path: `docs/FASTER_THREE_SITE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Exact calibration, physical time, and behavior outside one read in `[T,2T]` stay open.
+
+## Note 26
+
+- Path: `docs/FACTORED_RECOVERY_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Supplied calibration and preparation stay conditional. No all-late halt and no physical-seconds conversion.
+
+## Note 27
+
+- Path: `docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Physical seconds, minimum resources, calibration, the joint coefficient box, native supply, capture, reset, and reuse stay open.
+
 ## Note 1551
 
 - Path: `docs/WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md`

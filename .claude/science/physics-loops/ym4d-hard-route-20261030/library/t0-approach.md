@@ -25,13 +25,13 @@ Their Theorem 0 (Y 156-164) is conditional: "Assume the uniform renormalization 
 
 The catalogue says which inputs carry the scalar route:
 
-- Y 1978-1986 of the catalogue head (Y 1962-1986 region): "the scalar route requires only its ordinary D1 and ultraviolet premises, together with the consequences derived from them." The joint induction A-C and the flow section must construct the data for D1.
-- H3 (Y 3013-3016): "Actual D1, F2--F3 and the existence of the admissible data supplying these hypotheses remain the model requirements."
-- H4 (Y 3044-3049): "Actual verification of D1 and of the interacting short-distance law is not supplied here."
+- Catalogue head, Y 1927-1934: "the scalar route requires only its ordinary D1 and ultraviolet premises, together with the consequences derived from them." The joint induction A-C and the flow section must construct the data for D1.
+- H3 (Y 3021-3023): "Actual D1, F2--F3 and the existence of the admissible data supplying these hypotheses remain the model requirements."
+- H4 (Y 3047-3051): "Actual verification of D1 and of the interacting short-distance law is not supplied here."
 - G1 (Y 2794-2804, finite-lattice symmetries and reflection positivity at all mirrors), G3 (Y 2861-2910, plateau law), G4 (Y 2912-2943, all-state moments from D1), H1 (Y 2949-2969, diagonal-flat extension from D2), H2 (Y 2976-2991) and H3 are stated as proved or derived there. I did not read their proofs (NOT READ: Y 96000-122700 except the ranges cited below).
 - G2 (Y 2806-2859), full O(4): "This proves G2 conditionally for this state class, using either supplier of (TU18)." TU18 is `t^8 Gamma_phi(t) -> 0` (Y 112885). Supplier 1 is the upper bound TU10 (Y 112711-112716): `0 <= S_2(f,h) <= u(d) |f|_inf |h|_inf` with `u(d) -> 0`, on the shape class with `theta_* = 1/12000`. Supplier 2 is `sec:angular-mirror-budget` (Y 112897 ff.), which uses D1 at every first-passage stop with stability-plus-floor constants bounded by `C(1 + log x)` (Y 113012-113022).
-- The far-shell flux (Ward) route for rotations is now separate and is not needed: "The angular proof does not establish those separate comparison estimates" (Y 2857-2859). So the CA-I wall "flux hypothesis derived nowhere" is replaced by TU18.
-- Clustering and the unique vacuum per component are `thm:phase-main` (3)(iii)-(iv) (Y 1900-1912), from G3 and G4.
+- The far-shell flux (Ward) route for rotations is now separate and is not needed: "The angular proof does not establish those separate comparison estimates" (Y 2858-2859). So the CA-I wall "flux hypothesis derived nowhere" is replaced by TU18.
+- Clustering and the unique vacuum per component are `thm:phase-main` (3)(iii)-(iv) (inside Y 1884-1910), from G3 and G4.
 - F4 (Y 2758-2766): the result is a scalar `tr(F^2)` theory. "A nonzero scalar Wightman field alone does not provide this identification." T0 as GOAL.md states it is this scalar sector, so F4 is outside T0.
 
 Consequence for T0. Three inputs remain, in their own words:
@@ -40,7 +40,7 @@ Consequence for T0. Three inputs remain, in their own words:
 2. **TU10 or the mirror budget**, for O(4). The mirror budget is D1 again, at all stops. So O(4) costs no new analytic input beyond D1 with the logarithmic constant.
 3. **F2-F3** (Y 2585-2640, 2685-2699), only for "non-trivial": F2 with `|r| <= 1/2` gives a nonzero two-point limit "by a closed lower bound" (Y 2698-2699).
 
-E2, E3 and E4 (tuning, matched cutoffs, calibration; Y 2504-2543) are not on the scalar route (Y 1982-1986: "Weighted and matched-run comparisons and typed Ward estimates remain requirements for the stronger statements that invoke them").
+E2, E3 and E4 (tuning, matched cutoffs, calibration; Y 2504-2543) are not on the scalar route (Y 1932-1934: "Weighted and matched-run comparisons and typed Ward estimates remain requirements for the stronger statements that invoke them").
 
 ### 1.1 The open inputs, one row each
 

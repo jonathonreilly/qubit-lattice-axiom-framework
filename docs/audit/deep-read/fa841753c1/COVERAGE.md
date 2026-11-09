@@ -421,6 +421,13 @@ Runners were not executed.
 - Checked: `T(1)=1`, `T(2)=4`, `T(3)=10`, and `T(4)=16`. The parity bounds and `152 T(k)<=171 k^2` hold for every `k<=4096`. The gate counts are `3*2+3*6=24`, `24+1+7+2=34`, `3*50+2=152`, and `2*34=68`. For `1<=q<=7` and `1<=L<=29`, `(2n-1)G0` stays at most `K_q L^4`. At `q=1`, `L=1`, `G0=6384`, `Gbar=44688`, and the printed route sum is `5040+1344+18336=24720`. For the printed `V`, `|1-det V|=24/13`. The slot identities `4 hbar Q_*/g=1` and `sqrt(4 pi hbar Q_*/sigma)=1` hold at `Q_*=6 pi`, `g=24 pi`, and `sigma=24 pi^2`. The maximum free energy is `37/10`. The printed cap `38.39911184307752` and work `1864221.0806401833` are the float64 values of `7/10+12 pi` and `24 pi*24725`. The exact `lambda` is inside `(3 pi/2, 9 pi/2]`.
 - Not checked: the generator matrices, the distance histogram, and the complex128 residuals. The runner was not executed. `proposed_retained` is paired with `bare_retained_allowed: false`. Detail is in `batches/notes_0059.md`.
 
+## Note 60
+
+- Path: `docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: `sum_{l=1}^L sin^2(pi l/(L+1))=(L+1)/2`, so the printed sine packet is normalized. Its mean battery index is `q+(L-1)/2`, and the range bound is `Var<=(L-1)^2/4`. Then `d_L=2 sin(pi/(2(L+1)))<=pi/(L+1)`. The author shift lies in `(3 pi/2, 9 pi/2]`, and the root gap is below `5/4`. The pulse `f_h` has integral `1`, maximum `2/h`, and variation `4/h`. The envelope `30 s^2(1-s)^2` has integral `1` and zero endpoint derivatives. At `q=1`, `L=3` the packet is `(1/2,1/sqrt(2),1/2)`. Omitting the phase at `x=pi/2` gives overlap `-1/2` and squared trace norm `3`. The branch phase gives `3/2-sqrt(6)/2`. Reversing both conditional `Y` axes gives overlap `0` and squared trace norm `4`. `[n,Y]=iX`. The reversed Hadamard order is orthogonal. Also `s_i^2>=1/5`, the arccos derivative is at most `sqrt(5)`, the preparation budget sums to `3e/4`, and `3 a^2 e` is larger than the variance gap `3 a^2 e/2`.
+- Not checked: the imported count `O(4^n n^(3/2))` and the printed hashes. The runner was not executed. `proposed_retained` is paired with `bare_retained_allowed: false`. Detail is in `batches/notes_0060.md`.
+
 ## Note 63
 
 - Path: `docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md`

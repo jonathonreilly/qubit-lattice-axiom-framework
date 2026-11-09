@@ -26,4 +26,6 @@ Next unread note: 28.
 
 A seeded re-read of 8 preserved notes is in [THOROUGHNESS.md](THOROUGHNESS.md). On that draw the repair decision matches the old cards.
 
+A blind re-read of five grade-clash cards is in [BLIND_TEST.md](BLIND_TEST.md). It did not copy the label mismatches. It found two scientific repairs, notes 1696 and 1711, that the old cards did not record.
+
 Notes 2–1550 have no surviving cards. The read continues there until it meets the extracted range. Notes after 1737 are still unread. The closed card dump in PR #10146 was not merged, and that remote branch was deleted.

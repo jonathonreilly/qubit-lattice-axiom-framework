@@ -1215,7 +1215,7 @@ Runners were not executed.
 ## Note 1696
 
 - Path: `docs/GRAVITY_SIGN_IS_NOT_A_NEW_ADMISSION_REDUCES_TO_SHARED_ORIENTATION_DATUM_KCPT_CANNOT_SELECT_NARROW_THEOREM_NOTE_2026-06-18.md`
-- Result: no fix.
+- Result: fix filed.
 - Finding: The emergent-gravity mode sign is not selected, and it is not shown to be a new admission. The clean Clifford identity welds the spatial volume element to chirality, while the gravity-specific chi_eta bridge is imported. K/CPT returns a symmetric pair and does not pick a branch. Color stays on a separate carrier, so the unification is 2 of 3. No bold Status is present, so status_line is absent.
 - Source: extracted from the prior card. Not re-read in this pass.
 
@@ -1320,7 +1320,7 @@ Runners were not executed.
 ## Note 1711
 
 - Path: `docs/DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md`
-- Result: no fix.
+- Result: fix filed.
 - Finding: Supplied P = 0.5934, the power 1/4, alpha_bare = 1/(4 pi), and the natural logarithm in the displayed ALPHA_HI formula give the printed live-constant decimals. ALPHA_LO is identified with alpha_LM. The natural-log evaluation of ALPHA_HI is 0.092264992618360, about 0.001597 above alpha_LM. Observed inputs ETA_OBS = 6.12e-10, OMEGA_DM_OBS = 0.268, and H_PARAM = 0.674, with the supplied coefficient 3.6515e-3, give the printed quotient 5.447934280745940. This is a source-side arithmetic certificate for one live-constants edge. It does not derive P, ETA_OBS, or OMEGA_DM_OBS, and it does not close DM or the selector premise.
 - Source: extracted from the prior card. Not re-read in this pass.
 

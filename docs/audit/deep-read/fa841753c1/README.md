@@ -30,11 +30,14 @@ reconstruct those strings from memory.
 
 ## Coverage
 
-Cards on disk when this branch was cut: notes 1552 through 1737, 169 JSON
-cards. The read lock was note 1738, which has no card yet.
+The read started at note 1. The log lived only under `/tmp`. That directory
+was wiped more than once. Notes 1–1550 have no card and no wave index in
+this snapshot. They were not rebuilt from memory.
 
-Notes 1485–1550 have no card and no wave index here. Those records were
-already absent. They were not rebuilt.
+What survived on disk at the cut: wave indexes for notes 1551–1737, 169
+files named `records/note_<N>.json` for 1552–1737, and 18 cards stored
+under the claim id instead of `note_<N>.json`. The read lock was note 1738,
+which has no card yet.
 
 These note numbers have a wave index and no `note_<N>.json`:
 

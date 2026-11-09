@@ -42,6 +42,6 @@
     1575,
     1576
   ],
-  "absent_before_first": "1485-1550 have neither a card nor a wave index in this set",
+  "absent_notes": "1-1550 have neither a card nor a wave index in this set. The read started at note 1. Those cards lived only under /tmp and were wiped. They were not rebuilt from memory.",
   "current_lock_note": 1738
 }

@@ -984,3 +984,15 @@ Rows above retain exact source statements. This index adds their parent/supplier
 | TC-CURRENT | Exact scope and evidence: t0-tree §5.6 | `ca-claude` | theirs-cited | [TC-CURRENT](t0-tree.md#node-tc-current) |
 
 Row-391 reconciliation is reading and bookkeeping only. The tree's §10 lists every extant FINISH result/check and the absent/unfinished outputs. No result or gate was authored here.
+
+## Rows added 2026-11-09 (lead): the I-ENTRY-MATCH chain
+
+Bookkeeping only. No result or check was authored in this section.
+
+| id | statement (one line, exact symbols) | stated at (path:line) | their label and status (CA-I/II/III line, or "not in their account") | owner lane (one FINISH name, or none) | standing (tree vocabulary on synced rows) | same as / scope | tree node |
+|---|---|---|---|---|---|---|---|
+| G0-SEED-CAI | On the unchanged CA-I item-10 source domains, each required raw read has a gauge with link bound $`a_\flat^Y`$ | `library/g-zero.md`; `library/g0-cover-check.md:354` | CA-I 131725–131739 (source clauses); no complete-box test there | none | superseded | Not proved, not refuted. Replaced by G0-COV-ADMIT on the YM4_1400 domain (FINISH row 606) | none |
+| LEMMA-A | Plaquettes within $`\varepsilon`$ of 1 on a nonwrapping box of half-width $`q`$ give a gauge with $`\eta\lVert A\rVert\le16q\varepsilon`$, $`\eta^2\lVert\nabla A\rVert\le32q\varepsilon`$ (SU(2), $`8q\varepsilon<1/4`$) | `library/g0-cover.md` | not in their account | `g0-cover` | checked | Written by the lead; checked line by line by Codex (gpt-6-astra max) | none |
+| G0-COV-ADMIT | Each operation of the history sum makes a triple with the clauses of `rg:structured-local-gauge` on its address | `library/g0-cover.md` (Decision) | Y 1251–1279, stated as a requirement | none | OPEN | Part of root R2 (ADMISSION) of `library/t0-approach.md`; successor of I-ENTRY-MATCH, IEM-LOCAL-SUPPLY, G-zero | none |
+| G0-COV-PAY | A failed complete-box test at $`p`$ is paid by $`\exp[-x_p\rho_B^2/(4D_*)]`$ from an unspent share of the Wilson weight of the same plaquette of the same field | `library/g0-cover-check.md:305` | Y 71592–71603, 72126–72146 (their stated payment and its restrictions) | none | OPEN | Part of root R5 (WITNESS); the allocation is not proved | none |
+

@@ -2,7 +2,8 @@
 
 Lead (Claude Fable 5.2), FINISH row 606. Checkout `770d40b77`.
 Research text, not an audit. This grants no scientific status.
-Not yet checked by another model. Lane `g0-cover` checks it.
+Lemma A was checked line by line by Codex (gpt-6-astra max), lane `g0-cover`: [g0-cover-check](g0-cover-check.md), Step 0. That is one reading by another model, not an audit.
+The lead's decision on the result is in the last section.
 
 Credit **Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text**.
 Credit **Tadeusz Bałaban** for the method: the tests on the localized background, CMP 122 (1989) 175–202, (1.19)–(1.23).
@@ -52,7 +53,8 @@ Plaquette size is gauge invariant and local. No shift $`h`$ appears.
 ## Fact B (the source method tests the background)
 
 The lead read CMP 122 p. 181 in the owner's PDF.
-The localized background $`U^{(n)}_{k,Z}`$ of (1.19)–(1.20) uses $`V`$ on $`\Omega_k`$ and substituted data $`M(Q^s_kV_k)`$ outside.
+The localized background $`U^{(n)}_{k,Z}`$ of (1.19)–(1.20) uses the original fields $`V`$ on $`Z\cap\Omega_k^c`$ and the substituted data $`M(Q^{s*}_kV_k)`$ on $`Z\cap\Omega_k`$.
+(Corrected 2026-11-09. The first draft had the two regions reversed. The check lane found this; the lead read p. 180 again on the page image.)
 Then (1.22)–(1.23) insert a decomposition of unity $`1=\chi^{(n)}_k+(1-\chi^{(n)}_k)`$ in each component of $`Z`$.
 The function $`\chi^{(n)}_k`$ restricts the plaquettes of the localized background itself:
 
@@ -86,7 +88,34 @@ Outcomes.
 
 | Statement | Status |
 |---|---|
-| Lemma A | Written here by the lead. Not checked by another model. |
-| Fact B | Read by the lead in the PDF. Its port in the account is not located. |
-| G0-COVER | OPEN. Lane `g0-cover` decides it. |
-| G0-SEED / G-zero outside completion | OPEN until G0-COVER is decided. |
+| Lemma A | Written by the lead. Checked line by line by Codex (gpt-6-astra max): pass, in dimension four. |
+| Fact B | Test and exclusion mechanism: read by the lead and by the check lane. Data-domain sentence corrected (above). The port is located: CA-I 54241–54303, 131947–132023; YM4_1400 63836–63876. |
+| G0-COVER as stated | Not decided. The check lane certified no complete T/M cover and no legal F plaquette on the original CA-I item-10 domains. |
+| G0-SEED on the unchanged CA-I item-10 domains | Not proved and not refuted. Closed as a work item by the decision below. |
+| G0-SEED on a domain with the complete-box test | Proved at a raw read, by Lemma A. The threshold is $`a_\flat^Y/(32q_B)`$. |
+
+## Decision (lead, 2026-11-09)
+
+Two lanes stopped at the same statement: `g-zero` and `g0-cover`. The rule is: restate, do not run a third proof lane on it.
+
+**What the check lane found.**
+
+- The original CA-I item-10 source domains do not contain a test of every plaquette of the box $`B(\widehat q)`$ for the real factor of the source. The lines are CA-I 131725–131739, 110264–110276, 133022–133039.
+- The CA-I text has a later repair on the never-averaged collar: the clause $`Q_5`$ at CA-I 141135–141161.
+- YM4_1400 has the clause in the definition of the domain. This is `rg:structured-local-gauge`, Y 1251–1274. The lead read Y 1247–1286.
+  - The structured space imposes the real and complex curvature bounds on every plaquette of the bare bonds in $`Y\cap\Omega_0`$.
+  - It requires good real gauges on a fixed family of cubes. The family includes all gauge cubes of the strip response.
+  - Y 1276–1279: when a substitution or a restriction is applied, the clauses must be verified for the resulting triple.
+
+**Decision.**
+
+1. Work on the YM4_1400 domain, not on the CA-I item-10 domain. The CA-I text is under `YM4/Old/` in their repository at `3ac0bf4f2973`.
+2. On that domain G0-SEED is a clause of the domain. No estimate of a shift is necessary.
+3. The open statement is the admission statement. Name: **G0-COV-ADMIT**. For each operation of the history sum (birth, sibling stage, T-step, later stage, completion elsewhere, dissolution), the triple that the operation makes has the clauses of `rg:structured-local-gauge` on its address. This is a part of root R2 (ADMISSION) in [t0-approach](t0-approach.md).
+4. The payment for a failed test is a second open statement. Name: **G0-COV-PAY**. A failure at a plaquette $`p`$ gives $`a_p(U)\ge\rho_B^2/2`$ for the Wilson action of the same plaquette of the same field. The factor is $`\exp[-x_p\rho_B^2/(4D_*)]`$ if the share $`x_p`$ is not spent and at most $`D_*`$ failures use $`p`$. The allocation is not proved. This is a part of root R5 (WITNESS).
+
+**Where the proof of G0-COV-ADMIT could die.** Lemma A gives the gauge from the plaquette test only at index 0.
+At index $`n`$ the clause is $`L^n|\mathsf v|,\ L^{2n}|\delta\mathsf v|\le a_\flat`$ on cubes of side $`12\mathfrak M\xi_n`$.
+If the cube has about $`L^n`$ bare sites on a side, the comb gauge with plaquettes of size $`\varepsilon L^{-2n}`$ gives $`L^n|\mathsf v|\lesssim\varepsilon`$ but $`L^{2n}|\delta\mathsf v|\lesssim L^n\varepsilon`$.
+So the difference clause at index $`n\ge1`$ needs the regularity of a minimizer (class M), not a plaquette test alone (class T).
+This scaling remark is a hand estimate by the lead. It is not checked, and the size of $`\xi_n`$ in bare units must be read from the text first.

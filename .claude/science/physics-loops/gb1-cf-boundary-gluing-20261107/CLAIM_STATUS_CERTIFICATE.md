@@ -2,21 +2,24 @@
 
 ## Current continuation
 
-The local verifier/controller result is a `bounded_theorem` with actual current
-surface status `conditional-support`, trace class `upstream_support`, and
-reachability `partially_closes`. Its finite driven circuit proof does not
-inherit retained status from the physics axioms or its research checks. It
-depends on the prior branch-local native code/instrument theorem and supplied
-quantum law, clean workspace, preparation/calibration, gated registration
-and a microscopic sequencer. It compiles the verifier and finite controller
-under those conditions and adds explicit completion-record encoding. No new axiom,
-primitive, empirical fit, physical constant prediction or audit verdict is
-introduced. The rank-one herald fixes only the post-success state.
+The autonomous-runtime result is a `bounded_theorem` with actual current
+surface status `conditional-support`, trace `upstream_support`, reachability
+`partially_closes`. It constructs a chosen finite-radius record-jump model,
+not an axiom-selected or uniformly short-range physical dynamics. Its complete
+R state includes permanent phase ticks; scalar total intensity removes hidden
+waiting age. The seed, quantum instruments and joint jump interpretation remain
+explicit inputs. The strong physical implementation target is not closed.
 
-The canonical packaging and fresh formal landing review of the research continuation
-packets remain pending. Independent audit is required before any effective
-retained status; `bare_retained_allowed` remains false. The original boundary
-proposal below is historical and is not a promotion of the latest result.
+Separate positive model constructions on infinite Z3 satisfy the stated four
+axioms and give different conditional odds. They establish coherence and a
+specific law freedom, not empirical adequacy or a general impossibility result.
+Narrow counterexamples and the negative-schema limitation are disclosed in the
+linked scope sidecar; no general no-go or five-route packet PASS is asserted.
+
+No axiom, primitive, fitted physical constant or audit status changes. Research
+checks do not confer retained standing. Canonical packaging, fresh formal
+landing review and independent audit remain later obligations;
+`bare_retained_allowed` remains false.
 
 ## Earlier boundary proposal
 

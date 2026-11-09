@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/autonomous_runtime/check.py", line 243, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/autonomous_runtime/check.py", line 230, in main
+    'autonomous': autonomous_checks(args.fault), 'axiom_models': axiom_models(),
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/autonomous_runtime/check.py", line 170, in autonomous_checks
+    assert law[b] > 0, ('old Record lost admissibility support', x, b)
+           ^^^^^^^^^^
+AssertionError: ('old Record lost admissibility support', ('start', 0), 1)

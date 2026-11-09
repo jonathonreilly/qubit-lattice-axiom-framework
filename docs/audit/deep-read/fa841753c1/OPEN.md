@@ -9,6 +9,16 @@ These are not repairs. The note already leaves them unresolved.
 - Path: `docs/WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md`
 - The bound uses the supplied Hamiltonian convention. No physical-seconds identification is made. Exact source, calibration, coefficient correlations, seed, and physical identification stay conditional.
 
+## Note 4
+
+- Path: `docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Native coefficients, the incoming packet, noise, capture, reset/reuse, and Record identification stay open.
+
+## Note 8
+
+- Path: `docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Native thermal and controller supply, temporal noise, capture, reset/reuse, and physical Hamiltonian or Record identification stay open.
+
 ## Note 1551
 
 - Path: `docs/WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md`

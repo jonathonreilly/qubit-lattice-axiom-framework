@@ -18,7 +18,7 @@ The continuum proofs and named runners are not executed during the read. A print
 
 ## Progress
 
-Read under this process: note 1.
+Read under this process: notes 1, 4, and 8. Notes 4 and 8 need no repair.
 
 Extracted from the prior cards still on disk: notes 1551–1737. Two of those rows are repairs, notes 1716 and 1737. The other extracted notes are coverage and open items, not repairs.
 

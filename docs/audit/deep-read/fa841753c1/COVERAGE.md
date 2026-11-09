@@ -13,6 +13,22 @@ Runners were not executed.
 - Checked: the new-site ratio is 20. The inventory counts match `M+236`, `M+241`, `M+237`, and `2M+277` at `M = 250,000,000`. The seven printed ceilings sum to 0.001907621, and the slack under 0.00191 is 0.000002379. The square of 0.00191 is 3.6481e-6, so the success floor is 0.9999963519. Twice 0.00191 is 0.00382. The seed comparison `0.00125^2 = 1.5625e-6` sits above the printed outside mass `1.558e-6`. Twice the printed `Eout` ceiling 0.000197 is 0.000394. The five background ceilings sum to about 0.00024904, under 0.000250. `sinh(1)` is about 1.175, under 1.2, and the transfer exponent is about `-1.50e7`, under `-1e7`. The total-qubit ratio is about 19.99998, under 20.
 - Not checked: the continuum and contour estimates, and the named runner. The note already says the runner does not prove those estimates and that this publication grants no retained audit status.
 
+## Note 4
+
+- Path: `docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: the printed isometry majorant `269134782504763/27062500000000000` is `0.009944934226503945` and sits under `0.009945`. The finite-packet and finite-clock additions of `10^{-3}` and `2*10^{-3}` stay under `0.011` and `0.012`. `75042263/32475000000` displays as `0.002310770223248653`. `91279763/16237500000` sits under `0.005622`. With the printed `eta`, `164/(1-eta)` is about `165.665`, under `166`.
+- Not checked: contour, scattering, and operator arguments. The runner was not executed. Detail is in `batches/notes_0004_0008.md`.
+- Open: native coefficients, the incoming packet, noise, capture, reset/reuse, and Record identification stay open.
+
+## Note 8
+
+- Path: `docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Result: no fix.
+- Checked: `(5*10^31+3)*(3/8)^100` is below `1/22500000000`. `10^32*(3/8)^130` is below `10^{-22}`. `(8/3)^40` is above `80000000000000019/19`. `19683/20971520` is below `0.001`. The printed resonance fraction stays under `118*10^{-6}` on the prior read's assembly of the printed pieces.
+- Not checked: the thermal derivation beyond those printed bounds. The runner was not executed. Detail is in `batches/notes_0004_0008.md`.
+- Open: native thermal and controller supply, temporal noise, capture, reset/reuse, and physical Hamiltonian or Record identification stay open. The finite clock is claimed only on `[T,2T]`.
+
 ## Note 1551
 
 - Path: `docs/WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md`

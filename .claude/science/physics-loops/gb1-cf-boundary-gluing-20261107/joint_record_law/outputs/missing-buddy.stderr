@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/check.py", line 387, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/check.py", line 289, in main
+    support_count += supported(records)
+                     ~~~~~~~~~^^^^^^^^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/check.py", line 249, in supported
+    assert menu(records,s).get(c,Q()) != 0, ('record support',s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('record support', (0, 1, 0))

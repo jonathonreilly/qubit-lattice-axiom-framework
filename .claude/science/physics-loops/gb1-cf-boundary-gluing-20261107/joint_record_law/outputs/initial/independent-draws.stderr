@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/check.py", line 327, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/check.py", line 253, in main
+    assert weight==pointer, 'local pointer/joint record mismatch'
+           ^^^^^^^^^^^^^^^
+AssertionError: local pointer/joint record mismatch

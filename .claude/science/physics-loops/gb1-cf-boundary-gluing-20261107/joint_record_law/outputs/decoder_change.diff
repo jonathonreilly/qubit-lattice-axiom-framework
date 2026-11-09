@@ -1,0 +1,109 @@
+--- initial/check.py
++++ check.py
+@@ -200,6 +200,48 @@
+                 if setting(records[x1]) and records.get(x2)==records[x1]:
+                     found.add(c)
+     return found
++
++
++def atomic_transition(records, fixed_source_density):
++    """Decode R on the declared apparatus domain; source density is fixed law data.
++
++    This is not a validator or law on arbitrary record mosaics. The two
++    one-outcome prefixes are expressly outside the atomic domain.
++    """
++    targets = sorted(targets_from_records(records))
++    assert len(targets)==2, 'declared pair domain'
++    present = [s in records for s in targets]
++    if any(present) and not all(present):
++        raise ValueError('one-outcome prefix outside atomic domain')
++    decoded = []
++    for s in targets:
++        values = [records[site_add(s,d)] for d in NEIGHBORS if site_add(s,d) in records]
++        programs = [v for v in values if setting(v)]
++        assert T in values and len(programs)==1
++        nmat = add(programs[0],scale(I,-2))
++        assert adj(nmat)==nmat
++        n = tuple(tr(mul(nmat,sigma))/2 for sigma in PAULI)
++        assert direction(n)==nmat and dot(n,n)==1
++        decoded.append(n)
++    weights = joint(fixed_source_density,*decoded)
++    if all(present):
++        outcomes = tuple(1 if records[s]==I else -1 for s in targets)
++        assert all(records[s]==scale(I,a) for s,a in zip(targets,outcomes))
++        assert weights[outcomes]!=0, 'positive terminal branch domain'
++        return [(dict(records),Q(1))]
++    branches = []
++    for outcomes,weight in weights.items():
++        if weight==0:
++            continue
++        post = dict(records)
++        for s,a in zip(targets,outcomes):
++            post[s] = scale(I,a)
++        branches.append((post,weight))
++    return branches
++
++
++def state_key(records):
++    return tuple(sorted(records.items()))
+ 
+ 
+ def supported(records):
+@@ -246,6 +288,10 @@
+             del records[(0,2,0)]
+         support_count += supported(records)
+         assert targets_from_records(records)==set(targets), 'target parser'
++        transitions = atomic_transition(records,rho)
++        decoded_weights = {tuple(1 if post[s]==I else -1 for s in targets):weight
++                           for post,weight in transitions}
++        assert all(decoded_weights.get(key,Q())==value for key,value in w.items()), 'record-decoded kernel'
+         for (a,b),weight in w.items():
+             ia,ib = int(a==-1),int(b==-1)
+             pointer = sum((full[((i*2+ia)*2+j)*2+ib][0].conj()*
+@@ -260,6 +306,7 @@
+                     assert s not in post
+                     post[s] = scale(I,value)
+                 assert all(post[s]==v for s,v in records.items())
++                assert atomic_transition(post,rho)==[(post,Q(1))], 'terminal absorption'
+                 support_count += supported(post)
+                 branches += 1
+         for a in (1,-1):
+@@ -274,13 +321,18 @@
+         n = axes[2] if args.fault!='remote-setting' else m
+         wa = joint(product_state,n,m)
+         assert sum((wa[1,b] for b in (1,-1)),Q())==1, 'remote setting entered Alice instrument'
+-    records,targets = prepared(axes[2],axes[0],17)
++    records,targets = prepared(axes[2],axes[3],17)
++    original_kernel = atomic_transition(records,rho)
+     covariance = 0
+     for transform in rotations():
+         transformed = {transform(s):v for s,v in records.items()}
+         assert targets_from_records(transformed)=={transform(s) for s in targets}
+         for s in list(records)+list(targets):
+             assert menu(transformed,transform(s))==menu(records,s)
++        expected = {state_key({transform(s):v for s,v in post.items()}):w
++                    for post,w in original_kernel}
++        actual = {state_key(post):w for post,w in atomic_transition(transformed,rho)}
++        assert actual==expected, 'atomic-kernel spatial covariance'
+         covariance += 1
+     selected = [(axes[2],axes[3]),(axes[2],axes[4]),(axes[0],axes[3]),(axes[0],axes[4])]
+     es = [corr(joint(rho,n,m)) for n,m in selected]
+@@ -300,10 +352,18 @@
+     left[targets[0]]=I;right[targets[0]]=scale(I,-1)
+     assert menu(left,targets[1])==menu(right,targets[1])
+     assert menu(left,targets[1])[I]==Q(F(1,2))
++    for partial in (left,right):
++        try:
++            atomic_transition(partial,rho)
++        except ValueError as exc:
++            assert str(exc)=='one-outcome prefix outside atomic domain'
++        else:
++            raise AssertionError('atomic kernel admitted a one-outcome prefix')
+     guard()
+     print(json.dumps({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+         'status':'exact finite diagnostics passed','arithmetic':'Q(i,sqrt(2))',
+         'setting_pairs':pairs,'positive_atomic_branches':branches,'old_and_new_support_instances':support_count,
++        'decoded_ready_kernels':pairs,'terminal_absorptions':branches,'one_outcome_prefixes_rejected':2,
+         'rotations_with_translation':covariance,'initial_records':10,'max_records':12,
+         'CHSH_signed_coefficients':signed.serial(),'nonlinear_signed_coefficients':bad_score.serial(),
+         'B_plus_conditioned_on_A_plus_minus':[x.serial() for x in conditional],

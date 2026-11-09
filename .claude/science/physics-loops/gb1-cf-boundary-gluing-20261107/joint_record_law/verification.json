@@ -1,0 +1,175 @@
+{
+  "date": "2026-11-09",
+  "scope": "conditional joint record law research milestone",
+  "claim_type": "bounded_theorem",
+  "actual_status": "conditional-support",
+  "trace_class": "frontier_discovery",
+  "reachability": "unknown_frontier",
+  "parent_research_head": "c7f096b935e85741ac365341ea550a9d465a37d7",
+  "main_verified_at_delivery": "bf92a1d763030836ed55631d5d7a7ef3b288f284",
+  "source_hashes_verified": 12,
+  "fixed_evidence_hashes": {
+    "PRIMARY.md": "27068e243481d4b8aeb184d2c05c449307e47a2c2d8adc55c3d02d0ceb49680a",
+    "RESULT.md": "d11abd8953071b60f674c87a16c095a01478344f34b363c07a9f944b51ebd6a3",
+    "ASSUMPTIONS.md": "83b5b28fc7063912a11040ace091658d71c63fbe17d58905396374b5f7c5bba8",
+    "INDEPENDENT.md": "b7a8451d1529c843a2cdf2da9a7b1356362a05b1f0be691386ead91f76d16c55",
+    "SOURCE_CHECK.md": "1d1bd376c63d8db75221721676b98940e3b4cc26b321aa55989cc851dd9478b0",
+    "DELTA_CHECK.md": "ee9890aea72459f04f4858bc163fb9ffb4e9b4ff05eac6bce10a791b9cb30923",
+    "check.py": "782e08dd478c6089ed1b61e01088a5616ad0947c0a1564593c0aa936ab8b5169",
+    "outputs/exact.stdout": "dee06cf5aa654076d683f876fc1da23fdde50bd707e256dae51cb881c2c7f739",
+    "outputs/decoder_change.diff": "4796fb975f35d608528ece617b2f9d776821c3bba428220a5586b82ec7e9dcb4",
+    "outputs/initial/check.py": "7db139b9378dc3f1e2f3b9f456672454e1cfdf3d33e7e6da337e9f88f860e081",
+    "outputs/initial/exact.stdout": "6cfe5abc0850dce367805c0d49c3cf23d748b26b66163ca6db1132d329976e47"
+  },
+  "independent_checks": {
+    "original_source": "INDEPENDENT.md",
+    "exposed_complete_comparison": "SOURCE_CHECK.md",
+    "scoped_final_change": "DELTA_CHECK.md",
+    "scope": "hand mathematics and inspected code/artifacts; same family fresh context; not formal audit",
+    "unresolved_correction": null
+  },
+  "execution_receipts": [
+    {
+      "revision": "final",
+      "source_sha256": "782e08dd478c6089ed1b61e01088a5616ad0947c0a1564593c0aa936ab8b5169",
+      "receipt_sha256": "a216e82ea686eef9a9abd61f3ea3e95c8535ca662c5c4272f9e6c233d5c245aa",
+      "exact_stdout_sha256": "dee06cf5aa654076d683f876fc1da23fdde50bd707e256dae51cb881c2c7f739",
+      "source_bound_receipts_and_expected_failure_streams": "verified",
+      "independent_rerun": false
+    },
+    {
+      "revision": "initial",
+      "source_sha256": "7db139b9378dc3f1e2f3b9f456672454e1cfdf3d33e7e6da337e9f88f860e081",
+      "receipt_sha256": "facd53e77a519bc232176b026ebbca7f2ac03d58b020ddbe863980aa98e3dad5",
+      "exact_stdout_sha256": "6cfe5abc0850dce367805c0d49c3cf23d748b26b66163ca6db1132d329976e47",
+      "source_bound_receipts_and_expected_failure_streams": "verified",
+      "independent_rerun": false
+    }
+  ],
+  "final_diagnostic_counters": {
+    "setting_pairs": 49,
+    "decoded_ready_kernels": 49,
+    "positive_atomic_branches": 182,
+    "terminal_absorptions": 182,
+    "old_and_new_support_instances": 2674,
+    "one_outcome_prefixes_rejected": 2,
+    "rotations_with_translation": 24
+  },
+  "syntax": "both diagnostic revisions compiled without execution or bytecode",
+  "vocabulary": "outputs/vocab.json",
+  "local_markdown_links_checked": [
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/HANDOFF.md",
+      "target": "RESULT.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/HANDOFF.md",
+      "target": "ASSUMPTIONS.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/HANDOFF.md",
+      "target": "PRIMARY.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/HANDOFF.md",
+      "target": "INDEPENDENT.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/HANDOFF.md",
+      "target": "SOURCE_CHECK.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/HANDOFF.md",
+      "target": "DELTA_CHECK.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/HANDOFF.md",
+      "target": "check.py"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/HANDOFF.md",
+      "target": "verification.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/HANDOFF.md",
+      "target": "artifact_hashes.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/HANDOFF.md",
+      "target": "AUTHOR_CHECK.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/PRIMARY.md",
+      "target": "../../../../../docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/PRIMARY.md",
+      "target": "../../../../../docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/PRIMARY.md",
+      "target": "../foundational_bell/RESULT.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/PRIMARY.md",
+      "target": "ASSUMPTIONS.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/PRIMARY.md",
+      "target": "HANDOFF.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/RESULT.md",
+      "target": "../../../../../docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/RESULT.md",
+      "target": "../../../../../docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/RESULT.md",
+      "target": "../foundational_bell/RESULT.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/RESULT.md",
+      "target": "ASSUMPTIONS.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/RESULT.md",
+      "target": "HANDOFF.md"
+    }
+  ],
+  "state_paths_and_probe_identity": "verified",
+  "diff_whitespace": {
+    "whole_staged_check": "two warnings in preserved raw unified diff",
+    "raw_evidence_file": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/outputs/decoder_change.diff",
+    "lines": [
+      49,
+      50
+    ],
+    "reason": "single-space context prefixes of blank lines",
+    "scoped_staged_check_excluding_raw_diff": "passed",
+    "no_code_or_prose_exception": true
+  },
+  "metadata_hashes": {
+    "GOAL.md": "95065972f62968be147de9279a047cfbef781b779ab620166a58f8f55d89315a",
+    "STATE.yaml": "d844ba4684cc3bec7f777cfab866a9480e8a03110e45ebac23d83b8ad68e6694",
+    "CLAIM_STATUS_CERTIFICATE.md": "61a47074904e2ac4a3ead183676b245fdba09ae61aa1ab3044e3cd114dbd690a",
+    "TRACE_GATE.md": "a0bc7b55776fcb2418eea5773b447ca28e51267396bad0be22dda072309a3489",
+    "PR_BODY.md": "53d103020bf6a22677ef5c78429859a3d3bd6c3017ea695f9a7175ac92a596b4"
+  },
+  "only_edited_task_prompt": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/GOAL.md",
+  "authority_edits": [],
+  "axiom_edits": false,
+  "physical_closure": false,
+  "formal_audit_completed": false,
+  "negative_packet_pass": false,
+  "limitations": [
+    "Finite diagnostics support analytic proofs; not exhaustive over axes or mosaics.",
+    "Eighteen-record alternative is hand proof only.",
+    "The atomic pair event is not a local causal formation mechanism.",
+    "Local quantum instrument realization supplies composite, probability, preparation, measurement and registration assumptions.",
+    "Physical formation and full-state versus accessible-history conditional semantics remain open.",
+    "Existing source-side tensor attribution is recorded but not repaired in this milestone."
+  ]
+}

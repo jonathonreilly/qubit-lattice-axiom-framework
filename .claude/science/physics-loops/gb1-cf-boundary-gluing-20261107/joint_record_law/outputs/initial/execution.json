@@ -1,0 +1,60 @@
+{
+  "source_sha256": "7db139b9378dc3f1e2f3b9f456672454e1cfdf3d33e7e6da337e9f88f860e081",
+  "runs": [
+    {
+      "label": "exact",
+      "exit_code": 0,
+      "elapsed_seconds": 1.134829541988438,
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/check.py"
+      ]
+    },
+    {
+      "label": "independent-draws",
+      "exit_code": 1,
+      "elapsed_seconds": 0.053915917000267655,
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/check.py",
+        "--fault",
+        "independent-draws"
+      ]
+    },
+    {
+      "label": "remote-setting",
+      "exit_code": 1,
+      "elapsed_seconds": 0.9455660420062486,
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/check.py",
+        "--fault",
+        "remote-setting"
+      ]
+    },
+    {
+      "label": "missing-buddy",
+      "exit_code": 1,
+      "elapsed_seconds": 0.04995370900724083,
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/check.py",
+        "--fault",
+        "missing-buddy"
+      ]
+    }
+  ],
+  "limits": "nice10, five thread variables=1, CPU45/50, wall50 internal/60 outer, RSS256MiB macOS bytes"
+}

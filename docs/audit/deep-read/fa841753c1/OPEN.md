@@ -194,6 +194,41 @@ These are not repairs. The note already leaves them unresolved.
 - Path: `docs/ALL_LATE_THREE_SITE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
 - An evaluated all-late time, a native supplier, and uniform finite storage for all future times stay open.
 
+## Note 39
+
+- Path: `docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Native four-qubit supply and a physical mediator identification stay open.
+
+## Note 40
+
+- Path: `docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- An irreducible-coin freeze, a rank-two positivity certificate, and a physical species identification stay open.
+
+## Note 41
+
+- Path: `docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Nearest-site certification and an axiom derivation of the one-amplitude sector stay open.
+
+## Note 42
+
+- Path: `docs/SCALAR_PRIMITIVE_KINETIC_NOTE_2026-10-16.md`
+- A unique `Q`, a global finite-energy completion, and any instrument precision stay open.
+
+## Note 43
+
+- Path: `docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md`
+- A survey realization, masks, and a useful instrument budget stay open.
+
+## Note 44
+
+- Path: `docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md`
+- A shared healthy scalar action for the power family, and an identification of measured `G` with `1/F`, stay open.
+
+## Note 45
+
+- Path: `docs/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md`
+- Joint background identification, nonlinear stability, and a measured noise level stay open.
+
 ## Note 46
 
 - Path: `docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md`

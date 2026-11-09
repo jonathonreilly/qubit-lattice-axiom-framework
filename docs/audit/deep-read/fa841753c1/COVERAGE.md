@@ -274,6 +274,55 @@ Runners were not executed.
 - Checked: with `a1=lambda/sqrt(3)` and `a2=lambda sqrt(8/3)`, `a1 a2/lambda^2=2 sqrt(2)/3`, the printed `c_a`. Both eigenvalues of the printed `W` have modulus 1. For `z>0`, `sum_{n>=1}(z+n)^{-2}<=1/z`.
 - Not checked: the onset integral and the coefficient `102.78`. The runner was not executed. Detail is in `batches/notes_0028_0038.md`.
 
+## Note 39
+
+- Path: `docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: the Bell eigenvalues of the printed `H2` are `(4π-2θ)/T`, `4π/T`, `-2θ/T`, and `0`. `tan(2 atan(1/5))=5/12` and `tan(4 atan(1/5))=120/119`. The numerator and denominator of `tan(4 atan(1/5)-atan(1/239))` are both `28561`. The two printed dyadic sums are `6325259/33554432` and `6325256/33554432`, both under `1/4`. With `ε=2^{-m}` and `T=2^{2m+32}`, `h_g=2^{-(2m+28)}` and `h_D=2^{-(m+13)}`.
+- Not checked: the window induction. The runner was not executed. Detail is in `batches/notes_0039_0045.md`.
+
+## Note 40
+
+- Path: `docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: fix filed.
+- Checked: the printed Gram identities and the order-four plane formula. The isotropic sextic numerator was recomputed from `G` and is `4s^4`, where the display prints `8s^4`. The anisotropy coefficient and `z(b_iso)` match that expansion.
+- Detail: `batches/notes_0039_0045.md`. The runner was not executed.
+
+## Note 41
+
+- Path: `docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: the spin-`3/2` weights `-3,-1,1,3` include two residues `3` mod `6`. From the printed cone formula, the speed off the common quasienergy `cos ω=1/2` is `1/3`.
+- Not checked: the transported grid evidence. The runner was not executed. Detail is in `batches/notes_0039_0045.md`.
+
+## Note 42
+
+- Path: `docs/SCALAR_PRIMITIVE_KINETIC_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: `-(9/32)(-20173/8314020)(41/1711710)=827093/50599790841600`. With the printed depth-3 bound `B`, `|M|/(2B)=1.0271814436405565...*10^{-8}`, which rounds to the printed `1.0271814436*10^{-8}`. On `η∈[-4,-3]` and `r∈[1,2]`, reception lies in `[-3,-1]` and every ray stays in `[-4,-1]`.
+- Not checked: the path integrals. The runner was not executed. Detail is in `batches/notes_0039_0045.md`.
+
+## Note 43
+
+- Path: `docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: the omission paragraph prints `beta_fit=0`, `C_fit=0.4`, `d_fit=2`, and `e_fit=3.8`. Those are `2/5` and `19/5` after subtracting `beta_fit` and `d_fit beta_fit`.
+- Not checked: the background identity and the coeval residuals. The runner was not executed. Detail is in `batches/notes_0039_0045.md`.
+
+## Note 44
+
+- Path: `docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: `(b,C)=(1/2,1)` gives `c=1` and `F∈(1,2)` on `1<r<2`, with potential `-1/(2F)`. `(b,C)=(1/3,4)` gives `c=2` and `F∈(4,16)`, with potential `-4`. The join `ω=-χ/2`, `V=-(1-χ)/(2F)-4χ` meets both ends, and `2ω+3=3-χ≥2` for `χ∈[0,1]`.
+- Not checked: the clock-orbit integral beyond `log R=∫ p dt/t` for `N=r^p`. The runner was not executed. Detail is in `batches/notes_0039_0045.md`.
+
+## Note 45
+
+- Path: `docs/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md`
+- Result: no fix.
+- Checked: the four-mode matrix with rows `(m,1,m Y,Y)` and `Y=(8m^2+12m+3)/(2m+3)` has determinant `96 ∏_{i<j}(m_j-m_i)/∏_i(2m_i+3)`.
+- Not checked: the fixture derivation and the lensing variance. The runner was not executed. Detail is in `batches/notes_0039_0045.md`.
+
 ## Note 46
 
 - Path: `docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md`

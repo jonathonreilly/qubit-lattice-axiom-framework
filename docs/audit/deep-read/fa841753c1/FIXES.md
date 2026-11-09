@@ -4,6 +4,14 @@ Pin: `fa841753c1a6296e5ad45518375660b0f1004769`
 
 A row appears here only when the note is wrong or overclaims. One finding, one later repair. This file does not change claim status.
 
+## Note 40
+
+- Path: `docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- Defect: The Theorem 7 on-plane display has the wrong isotropic sextic numerator.
+- Evidence: On the plane `b0=b1+2b2`, reversion of `cos ω=phi0^T G phi` gives `s^2(4s^4-5s^2+2)|k|^6/360`. The note prints `s^2(8s^4-5s^2+2)|k|^6/360`, which is larger by `s^6/90`. At `s^2=2/3` the series coefficient is `1/1215`; the printed numerator gives `1/243`. The same expansion reproduces the order-four term, the anisotropy `-(s^2/360)|k|^2 sum_a k_a^4`, and `z(b_iso)=sqrt(10)/9-16/45`. The Gram identities `v^T G v=1-s^2`, `w^T G w=s^2`, and `v^T G w=0` hold for the printed `G`.
+- Edit: In the Theorem 7 display, replace `8 s^4` by `4 s^4`. Keep the anisotropy term and `z(b_iso)`.
+- How this row was made: read on 2026-11-09. The series was recomputed from the printed Gram matrix. The runner was not executed.
+
 ## Note 46
 
 - Path: `docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md`

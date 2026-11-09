@@ -18,11 +18,11 @@ The continuum proofs and named runners are not executed during the read. A print
 
 ## Progress
 
-Read under this process: notes 1–38 and 46–58. Note 46 needs a repair. The others in that range do not. Notes 39–45 are not in this log yet.
+Read under this process: notes 1–58. Notes 40 and 46 need repairs. The others in that range do not.
 
 Extracted from the prior cards still on disk: notes 1551–1737. Four of those rows are repairs: notes 1696, 1711, 1716, and 1737. The other extracted notes are coverage and open items, not repairs.
 
-Next unread note: 39. After 39–45, the next unread note is 59.
+Next unread note: 59.
 
 A seeded re-read of 8 preserved notes is in [THOROUGHNESS.md](THOROUGHNESS.md). On that draw the repair decision matches the old cards.
 

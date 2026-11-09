@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/check.py", line 387, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/check.py", line 294, in main
+    assert all(decoded_weights.get(key,Q())==value for key,value in w.items()), 'record-decoded kernel'
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: record-decoded kernel

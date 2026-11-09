@@ -217,3 +217,28 @@ autonomous jump model. A fresh restricted-context checker examines original
 sources without reading the supervisor candidate. Preserve source identities
 and complete evidence in foundational_bell/. Reuse known algebra with credit;
 no numerical matching is evidence of a new law or an empirical prediction.
+
+## Joint record law test, 2026-11-09
+
+User target: obtain Bell violations up to the quantum bound without stored
+outcome tables or setting messages between detectors; expose every added
+assumption. Main 1e0d3b58dcda7f83152b0bb51729260247454d65; parent c7f096b935.
+Domain: one prepared finite two-wing binary experiment, with a universal law
+covering all measurement axes. Distinguish no-signalling, local quantum
+implementation, and a record-only transition on every intermediate state.
+
+Build on Busch/CFMR effect probability representation and existing Bell/local
+instrument results, without inheriting their old axiom or audit rhetoric.
+Test the strongest failure point first: a record formed at A changes the
+full conditional at B while B's own record neighborhood is unchanged. Compare
+an indivisible joint formation event with a genuinely sequential local law.
+Try a concrete finite Z3 allocation with permanent support and no external
+counter. A generic operator law is permitted as a named conditional model;
+it must not be described as derived from the four axioms. No axiom edit.
+
+Success evidence is a complete conditional joint kernel, a universal quantum
+bound and explicit preparation/setting protocol, with actual local marginal
+and support checks. Any sequential obstruction must retain its quantifiers;
+no broad claim that records or the framework cannot describe quantum physics.
+A fresh independent original-source hand check is commissioned. Deliver on
+the existing research PR; no audit, merge, or public scientific announcement.

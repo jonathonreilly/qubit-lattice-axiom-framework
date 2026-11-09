@@ -1,0 +1,110 @@
+{
+  "method": "direct lint_one_file calls; CLI excludes .claude even with explicit paths",
+  "rules_sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/ASSUMPTIONS.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/AUTHOR_CHECK.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/DELTA_CHECK.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/HANDOFF.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/INDEPENDENT.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/LITERATURE_AND_SCOPE.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/PRIMARY.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/RESULT.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/SOURCE_CHECK.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/check.py",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/joint_record_law/outputs/initial/check.py",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/GOAL.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/STATE.yaml",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/CLAIM_STATUS_CERTIFICATE.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/TRACE_GATE.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/PR_BODY.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    }
+  ],
+  "violations": 0,
+  "automatic_edits": 0
+}

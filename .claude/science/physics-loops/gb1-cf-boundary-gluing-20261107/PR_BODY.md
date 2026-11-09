@@ -1,8 +1,8 @@
 The supplied five-state SU(2) link model needs compatible overlapping patches,
 native qubit placement and records with defined future probabilities. This PR
 constructs those finite models and tests whether the current axioms select an
-observable Bell correlation. It contains four finite-model notes, four research
-continuations and a foundational application. Physical law selection and the
+observable Bell correlation. It contains four finite-model notes, research
+continuations and two foundational tests. Physical law selection and the
 continuum identifications remain open.
 
 - **Two plaquettes:** the complete closed sector has four states, with exact
@@ -77,6 +77,19 @@ continuum identifications remain open.
   are checked with their separate complete causal and Born/composite assumptions.
   The explicit ledger is in `foundational_bell/ASSUMPTIONS.md`; this is a diagnosis
   using prior results, not a new Bell theorem or a framework prediction.
+
+- **Joint record law (research construction):** a supplied positive,
+  context-independent probability function on composite effects gives the Born
+  form. A spin-zero preparation then yields correlations for every local axis,
+  with a derived quantum bound and explicit local quantum instruments requiring
+  no post-choice messages. A separate twelve-record atomic pair law satisfies
+  the native local marginals and permanent support; it is a distant joint event,
+  not a proved local causal formation mechanism. A sequential full-state
+  extension fails when one remote record changes the required odds at an
+  unchanged neighborhood. A universal polynomial alternative exceeds the
+  quantum bound under the same atomic record premises, exposing what the added
+  effect assumptions select. `joint_record_law/ASSUMPTIONS.md` lists every
+  supplied condition. No new axiom is adopted.
 
 The code retains an extra encoding-origin degree of freedom and needs a
 physical preparation/selection account. The explicit adjacent-gate readout
@@ -154,6 +167,16 @@ Validation and evidence:
   construction and exposes two qualifications needed in the older causal note;
   the application explicitly includes them. These are conditional research
   checks; no physical Bell realization or empirical dataset is tested.
+- The final joint-law diagnostic derives the singlet from a product-state
+  circuit, decodes actual setting records, and checks 49 exact complex setting
+  pairs, 182 positive atomic branches and terminal absorptions, 2,674 support
+  instances, and 24 transformed atomic kernels. It rejects one-outcome prefixes
+  and catches independent-draw, remote-setting and missing-buddy mutations.
+  A fresh hand proof supplies a separate eighteen-record setting-generation
+  model and an alternative general quantum-bound proof; that variant was not
+  numerically replayed. Original and exposed checks and the scoped final code
+  comparison are preserved. No physical preparation or spacelike record event
+  is certified by these finite checks.
 - Complete mathematical source comparisons and scoped correction receipts
   are preserved. These are research checks, not formal landing panels or audits.
 - Six production runners have successful content-bound caches. The native
@@ -169,7 +192,8 @@ Validation and evidence:
   faults reject incorrect reversal parity, nonzero quiescent overlap, and a
   preferred origin. Full successful and failed execution evidence is preserved.
 - Focused syntax, vocabulary, local links, source identities, cache evidence
-  and diff checks passed. Full pipeline and formal landing/audit remain pending.
+  and code/prose diff checks passed. The frozen decoder diff retains its two
+  blank-line context prefixes. Full pipeline and formal landing/audit remain pending.
   The readout replay after the axiom merge passed 5,009 checks; the initial
   launcher error from an omitted thread setting is preserved separately.
 
@@ -182,7 +206,7 @@ registry, or shared instruction files change.
 The existing pair and boundary research packs index complete proofs, original
 outputs, worker briefs, source identities and recovery paths. The current
 checkpoint is `.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/STATE.yaml`;
-its `foundational_bell/HANDOFF.md` indexes the latest test. The owner-approved
+its `joint_record_law/HANDOFF.md` indexes the latest test. The owner-approved
 two-word governing locality substitution landed separately in
 [PR #10143](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10143)
 at `43a1fcc374711ca50626eca667441d3ca575c7d1`, now merged into this branch.

@@ -1,6 +1,24 @@
 # Author claim status
 
-## Current foundational observable test
+## Current joint record-law continuation
+
+Claim type bounded_theorem; actual status conditional-support; trace
+frontier_discovery with reachability unknown_frontier. A supplied positive
+composite-effect calculus and singlet preparation give universal quantum
+joint probabilities and the quantum Bell bound. Separate local quantum
+instruments require no post-choice communication. A literal twelve-record
+atomic pair law preserves local formation marginals and permanent support;
+it is not a local causal or spacelike formation mechanism. A specified
+sequential full-state extension fails at unchanged remote neighborhoods.
+A matched polynomial alternative shows the quantum probability assumptions
+are load-bearing. No physical axiom, primitive or state type is adopted.
+
+The independent eighteen-record setting-generation alternative is analytical
+only. Exact diagnostic execution and independent hand checks support research
+use; formal audit and science landing remain separate. The ledger is
+joint_record_law/ASSUMPTIONS.md and evidence is indexed by its HANDOFF.md.
+
+## Previous foundational observable test
 
 The current application is a bounded_theorem with actual status
 conditional-support and trace frontier_discovery, reachability unknown_frontier.

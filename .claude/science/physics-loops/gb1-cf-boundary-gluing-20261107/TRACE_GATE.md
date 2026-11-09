@@ -1,6 +1,24 @@
 # Trace to GB1-CF
 
-## Current foundational Bell test, 2026-11-09
+## Current joint record-law test, 2026-11-09
+
+~~~yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: Can a joint record law give Bell violations up to the quantum limit without a stored answer table or setting communication, with every new assumption exposed?
+source_of_blocker_text: user_goal
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: Justify physical formation and the meaning of conditional probability at accessible one-outcome record states.
+~~~
+
+The conditional law, two distinct realization theorems and exact sequential
+collision resolve the stated finite mathematical test. They do not identify
+atomic pair updates with local quantum measurements or derive the probability
+calculus from the axioms. The gauge, continuum, vacuum and mass-gap obligations
+remain outside this result.
+
+## Previous foundational Bell test, 2026-11-09
 
 ~~~yaml
 trace_class: frontier_discovery

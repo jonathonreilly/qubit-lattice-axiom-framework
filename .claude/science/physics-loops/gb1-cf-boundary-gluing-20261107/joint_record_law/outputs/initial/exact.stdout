@@ -1,0 +1,46 @@
+{
+  "source_sha256": "7db139b9378dc3f1e2f3b9f456672454e1cfdf3d33e7e6da337e9f88f860e081",
+  "status": "exact finite diagnostics passed",
+  "arithmetic": "Q(i,sqrt(2))",
+  "setting_pairs": 49,
+  "positive_atomic_branches": 182,
+  "old_and_new_support_instances": 2674,
+  "rotations_with_translation": 24,
+  "initial_records": 10,
+  "max_records": 12,
+  "CHSH_signed_coefficients": [
+    "0",
+    "-2",
+    "0",
+    "0"
+  ],
+  "nonlinear_signed_coefficients": [
+    "0",
+    "-5/2",
+    "0",
+    "0"
+  ],
+  "B_plus_conditioned_on_A_plus_minus": [
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "N5": {
+    "per_element": "exact complex algebra and local pointer effects",
+    "per_site": "complete six-neighbor menus; permanent support",
+    "per_mode": "no propagating mode or causal timing computation",
+    "per_block": "two-wing instruments and one atomic record pair",
+    "lattice_wide": "finite translated/rotated patches only; physical realization open"
+  },
+  "elapsed_seconds": 1.0915693749848288,
+  "max_rss_host_bytes": 22724608
+}

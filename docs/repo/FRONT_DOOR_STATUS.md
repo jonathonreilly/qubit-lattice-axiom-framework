@@ -31,7 +31,7 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 5950 |
+| Ledger rows | 5951 |
 | Applied audit verdicts | 0 |
 | Retained-grade rows, including boxed decorations | 0 |
 | Retained positive theorems | 0 |
@@ -40,7 +40,7 @@ Owner-approval history for axioms and primitives:
 | Boxed decorations under retained parents | 0 |
 | Rows typed `open_gate` | 334 |
 | Rows with effective status `open_gate` | 0 |
-| Unaudited rows | 5573 |
+| Unaudited rows | 5574 |
 | Retained-pending-chain rows | 0 |
 | Audited conditional rows | 0 |
 | Audited renaming rows | 0 |
@@ -55,13 +55,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 5573 |
-| Ready rows | 1934 |
+| Total pending rows | 5574 |
+| Ready rows | 1933 |
 | Cycle-break targets | 83 |
 | Critical pending | 682 |
 | High pending | 452 |
 | Medium pending | 1445 |
-| Leaf pending | 2994 |
+| Leaf pending | 2995 |
 
 Next ready rows by queue order:
 
@@ -702,11 +702,11 @@ Source: deferred package (`archive/publication/ci3_z3/`).
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 7439 |
+| Citation-graph nodes | 7440 |
 | Critical nodes | 712 |
 | High nodes | 511 |
 | Medium nodes | 1637 |
-| Leaf nodes | 4579 |
+| Leaf nodes | 4580 |
 
 Top load-bearing rows by graph score:
 

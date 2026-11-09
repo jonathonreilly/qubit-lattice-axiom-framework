@@ -34,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+  "note_hash": "301bb33c1a743104208067c14684b34ba71d86674509111638ea898bc6e6c0dc",
   "note_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

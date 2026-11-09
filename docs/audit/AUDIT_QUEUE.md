@@ -1,20 +1,20 @@
 # Audit Queue
 
-**Total pending:** 5573
-**Ready (dependencies and deterministic forensic evidence):** 1934
-**Dependency-ready:** 2007
-**Forensic-evidence-ready:** 5190
+**Total pending:** 5574
+**Ready (dependencies and deterministic forensic evidence):** 1933
+**Dependency-ready:** 2008
+**Forensic-evidence-ready:** 5186
 
 By criticality:
 - `critical`: 682
 - `high`: 452
 - `medium`: 1445
-- `leaf`: 2994
+- `leaf`: 2995
 
 By work kind:
-- `fresh_scientific_audit`: 5190
+- `fresh_scientific_audit`: 5186
 - `legacy_packet_upgrade`: 0
-- `evidence_repair_required`: 383
+- `evidence_repair_required`: 388
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 

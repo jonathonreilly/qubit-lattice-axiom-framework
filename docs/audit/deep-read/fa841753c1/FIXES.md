@@ -4,6 +4,14 @@ Pin: `fa841753c1a6296e5ad45518375660b0f1004769`
 
 A row appears here only when the note is wrong or overclaims. One finding, one later repair. This file does not change claim status.
 
+## Note 1716
+
+- Path: `docs/ALPHA_S_SOMMER_STATIC_POTENTIAL_ROOT_KERNEL_THEOREM_NOTE_2026-06-18.md`
+- Defect: The title names `alpha_s`. The proved object is the dimensionless Sommer root for a supplied Cornell potential and the supplied target 1.65.
+- Evidence: The prior read checked the printed identity `F(r0) r0^2 = sigma (r0/a)^2 + e` against the printed `sigma`, `e`, and `r0/a`, and found it holds at binary rounding. The same read says the 0.5 fm anchor is not an input to `r0/a`, and the note does not derive the physical fm scale, QCD running, or `alpha_s(M_Z)`.
+- Edit: Change the title and the claim so they do not present that dimensionless root as `alpha_s`.
+- How this row was made: extracted from the prior card. The note was not re-read in this pass.
+
 ## Note 1737
 
 - Path: `docs/QUARK_CP_SMALL_CORRECTION_BOUNDARY_NOTE_2026-06-17.md`

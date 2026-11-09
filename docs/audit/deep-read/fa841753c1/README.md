@@ -20,8 +20,8 @@ The continuum proofs and named runners are not executed during the read. A print
 
 Read under this process: note 1.
 
-Extracted from the prior read, with the ratio check repeated: note 1737.
+Extracted from the prior cards still on disk: notes 1551–1737. Two of those rows are repairs, notes 1716 and 1737. The other extracted notes are coverage and open items, not repairs.
 
 Next unread note: 2.
 
-Notes 2–1736 and 1738 onward have not been judged under this process. The closed card dump in PR #10146 was not merged, and that remote branch was deleted.
+Notes 2–1550 have no surviving cards. The read continues there until it meets the extracted range. Notes after 1737 are still unread. The closed card dump in PR #10146 was not merged, and that remote branch was deleted.

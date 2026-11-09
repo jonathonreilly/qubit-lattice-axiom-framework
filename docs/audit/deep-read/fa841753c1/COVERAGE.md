@@ -3,7 +3,7 @@
 Pin: `fa841753c1a6296e5ad45518375660b0f1004769`
 
 A row means the note was judged. A missing note has not been judged.
-Notes 1551–1737 below were extracted from the prior cards still on disk. They were not re-read in this pass, except the note 1737 ratio check, which was repeated.
+Notes 1551–1737 below were extracted from the prior cards still on disk. Later re-reads are named in the row. The note 1737 base ratios do not match the printed components.
 Runners were not executed.
 
 ## Note 1
@@ -1054,16 +1054,16 @@ Runners were not executed.
 ## Note 1634
 
 - Path: `docs/QUARK_ROUTE2_RHOE_FLOOR_FAMILY_SIZE_PARAMETRIZED_LADDER_NOTE_2026-07-02.md`
-- Result: no fix.
-- Finding: Finite size-parametrized floor ladder for the Route-2 rho_E readout. Only size 15 is smooth and admitted, and the tail verdict is not convergent. The size-15 q_T admission against 5/6 is a cubic-spline artefact of a one-site spike: the origin differs by 1/6, and a local interpolation gives q_T = 1 and rho_E = 0. No physical rho_E is derived.
-- Source: extracted from the prior card. Not re-read in this pass.
+- Result: fix filed.
+- Finding: The corrigendum already says the size-15 `q_T` admission is a spline coincidence. Section 6 still offers a derivation of why that size-15 floor value is the physically selected one. That leftover sentence is the repair in `FIXES.md`. The spline identity itself is not a second repair.
+- Source: parent check on 2026-11-09, alongside the note 1635 re-read. The runner was not executed.
 
 ## Note 1635
 
 - Path: `docs/QUARK_ROUTE2_HONEST_GRAVITY_METRIC_RHOE_CHARACTERIZATION_NOTE_2026-07-02.md`
-- Result: no fix.
-- Finding: Finite gravity-metric ladder for rho_E = b_e / a_e. Only size 15 passes the q_T gate against 5/6, and the tail verdict is not convergent. The corrigendum says rho_E(15) = 5.2575 is not a target: the centre-minus-shell readout is a cubic-spline artefact of a one-site spike, the origin differs by 1/6, and a local interpolation gives q_T = q_E = 1 and rho_E = 0. No physical rho_E is derived.
-- Source: extracted from the prior card. Not re-read in this pass.
+- Result: fix filed.
+- Finding: The ladder quotients match the printed cells to display rounding. The corrigendum already says `rho_E(15) = 5.2575` is not a target. Section 7 still calls `+5.257476782081e+00` the sharpened target. That leftover sentence is the repair in `FIXES.md`.
+- Source: blind re-read on 2026-11-09. The reader did not file the leftover sentence. The parent did. The runner was not executed.
 
 ## Note 1636
 
@@ -1546,7 +1546,7 @@ Runners were not executed.
 - Path: `docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md`
 - Result: no fix.
 - Finding: Finite shells of integer momenta in Z^3 that stay closed under cubic signed permutations have equal axis-square sums, and each axis sum is n q / 3. The note concludes that the orbit-averaged kinetic stress is isotropic, with P_x / rho = P_y / rho = P_z / rho = 1/3, so the ideal radiation label is w_r = 1/3. For the pressureless case p = 0 the pressure components vanish while rho stays positive, so the ideal label is w_m = 0. The displayed moving-shell ratio w = q / (3 * (m^2 + q)) is positive and strictly below 1/3 when q > 0 and m^2 > 0, so that ratio is not the dust label. The note does not derive C1, C2, the full FRW backdrop, entropy conservation, the thermal history, the Friedmann equat...
-- Source: extracted from the prior card. Not re-read in this pass.
+- Source: re-read on 2026-11-09 in the non-label sample. The shell algebra holds, including `0 < q / (3(m^2+q)) < 1/3` when `q > 0` and `m^2 > 0`. No repair.
 
 ## Note 1705
 
@@ -1623,21 +1623,21 @@ Runners were not executed.
 - Path: `docs/ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md`
 - Result: no fix.
 - Finding: The heading is a defined polynomial vector-field algebra. The source path names an alpha_s universal beta kernel, and that path wording is not the theorem. With the supplied definitions N = 3, C_A = 3, C_F = 4/3, and T_F = 1/2, the displayed polynomials simplify to b0(n) = 11 - 2n/3 and b1(n) = 102 - 38n/3. Their slopes are -2/3 and -38/3. The roots are n = 33/2 and n = 153/19. On nonnegative integers, b0 stays positive through n = 16 and b1 stays positive through n = 8. The chain rule from g to alpha = g^2/(4 pi) and a = alpha/(4 pi) recovers the displayed induced fields. A rational stand-in for the positive constant checks that identity and is not a value of the circle constant. The note d...
-- Source: extracted from the prior card. Not re-read in this pass.
+- Source: re-read on 2026-11-09 in the non-label sample. The polynomial reductions, roots, and induced-field coefficients hold. The heading states the polynomial algebra, and the body disclaims a physical beta function. No repair.
 
 ## Note 1716
 
 - Path: `docs/ALPHA_S_SOMMER_STATIC_POTENTIAL_ROOT_KERNEL_THEOREM_NOTE_2026-06-18.md`
-- Result: fix filed.
-- Finding: The proved claim is the dimensionless Sommer root for a supplied Cornell potential and the supplied target 1.65. With F(R) = sigma + e/R^2, the identity F(r0) r0^2 = sigma (r0/a)^2 + e holds, and the note sets that equal to 1.65. The printed sigma, e, and r0/a satisfy that equation at binary rounding, and 0.5 divided by the printed root equals the printed a_fm in that same binary evaluation. The 0.5 fm anchor is not an input to r0/a. The note does not derive the physical fm scale, QCD running, or alpha_s(M_Z). The title names alpha_s, and the proved object is the dimensionless root.
-- Source: extracted from the prior card. Not re-read in this pass.
+- Result: no fix.
+- Finding: `F(R) = sigma + e/R^2` and `r0/a = sqrt((1.65 - e) / sigma)` hold. The printed `sigma` and `e` give `5.005676254205751`, and `0.5` divided by that root gives the printed `global_a_fm`. The body says the proved object is the dimensionless Sommer root and does not promote `alpha_s(M_Z)`. The title's `Alpha_s` name is the parent audit, not a second claim. An extracted title repair was removed after this re-read.
+- Source: blind re-read on 2026-11-09. The runner was not executed.
 
 ## Note 1717
 
 - Path: `docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md`
 - Result: no fix.
 - Finding: The proved claim is that a finite chain of supplied affine maps T(x) = x - c L, with the identity carry I(x) = x at each marker, equals x minus the sum of the terms c_j L_j. The inverse maps add those terms back. A supplied jump at a marker adds that jump. The coefficient sequence c(n) = 11 - 2n/3 is a supplied definition and is positive for the integers n from 0 through 16. The filename names an alpha_s heavy-threshold matching kernel. The heading is a finite marked piecewise-affine map, and the note withdraws the earlier physical reading. The note does not derive QCD running, a decoupling rule, a Lambda parameter, or alpha_s(M_Z).
-- Source: extracted from the prior card. Not re-read in this pass.
+- Source: re-read on 2026-11-09 in the non-label sample. `c(16) = 1/3`, `c(17) = -1/3`, and the note already withdraws the physical threshold reading. No repair.
 
 ## Note 1718
 
@@ -1776,6 +1776,6 @@ Runners were not executed.
 
 - Path: `docs/QUARK_CP_SMALL_CORRECTION_BOUNDARY_NOTE_2026-06-17.md`
 - Result: fix filed.
-- Finding: The shipped complex 1-3 carriers are not a small correction to the Schur base. An independent exact check on the printed digits gives |xi_u| / |c13_u(base)| agreeing with 101.908728437 and |xi_d| / |c13_d(base)| agreeing with 6.643337509, with relative square error below 1e-7. Both ratios sit above 5, so the caps R <= 1, R <= 2, and R <= 5 exclude the shipped fit. The same check agrees with the printed shares 0.990442514 and 0.913327261 of the completed 1-3 slot. The capped-surface table, including J/T = 0.128867 at R = 1 and J/T = 0.984134 at R = 100, was not recomputed. The runner and the parent completion runner were not executed. xi_u, xi_d, the comparator targets, and a framework-native...
-- Source: extracted from the prior card. Not re-read in this pass. The ratio check was repeated.
+- Finding: The negative small-correction claim is the note's own result, and caps `R <= 1` and `R <= 5` do exclude the shipped fit on either printed ratio. The repair is the joined base-ratio equality: the printed components give `101.908728360781…` and `6.643337541498…`, not `101.908728437` and `6.643337509`. The completed-slot shares match. Detail is in `FIXES.md`.
+- Source: blind re-read on 2026-11-09. The runner was not executed.
 

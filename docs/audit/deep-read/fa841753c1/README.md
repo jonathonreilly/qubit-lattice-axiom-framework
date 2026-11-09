@@ -20,12 +20,14 @@ The continuum proofs and named runners are not executed during the read. A print
 
 Read under this process: notes 1–61, 63–65, 68, and 70. Notes 40, 46, 61, and 65 need repairs. The others among those do not.
 
-Extracted from the prior cards still on disk: notes 1551–1737. Four of those rows are repairs: notes 1696, 1711, 1716, and 1737. The other extracted notes are coverage and open items, not repairs.
+Extracted from the prior cards still on disk: notes 1551–1737. Repairs in that range are notes 1634, 1635, 1696, 1711, and 1737. Note 1716 was removed from the fix list after a re-read. The other extracted notes are coverage and open items, not repairs.
 
 Next unread note: 62.
 
 A seeded re-read of 8 preserved notes is in [THOROUGHNESS.md](THOROUGHNESS.md). On that draw the repair decision matches the old cards.
 
 A blind re-read of five grade-clash cards is in [BLIND_TEST.md](BLIND_TEST.md). It did not copy the label mismatches. It found two scientific repairs, notes 1696 and 1711, that the old cards did not record.
+
+A re-read of five non-label content tensions is in [SCIENCE_BLIND.md](SCIENCE_BLIND.md). The readers filed no repair. Parent check filed leftover sentences in notes 1635 and 1634, replaced the note 1737 row with the false base-ratio join, and removed the note 1716 title row.
 
 Notes 2–1550 have no surviving cards. The read continues there until it meets the extracted range. Notes after 1737 are still unread. The closed card dump in PR #10146 was not merged, and that remote branch was deleted.

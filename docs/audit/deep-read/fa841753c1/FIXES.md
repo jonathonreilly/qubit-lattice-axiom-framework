@@ -36,6 +36,22 @@ A row appears here only when the note is wrong or overclaims. One finding, one l
 - Edit: Do not present those stamps and that elapsed time as one interval. The stamps differ by `0.185295` seconds. Leave the earlier timer reading unless both values are recomputed from one clock.
 - How this row was made: read on 2026-11-09. The stamp difference was subtracted from the printed digits. The runner was not executed.
 
+## Note 1634
+
+- Path: `docs/QUARK_ROUTE2_RHOE_FLOOR_FAMILY_SIZE_PARAMETRIZED_LADDER_NOTE_2026-07-02.md`
+- Defect: Section 6 still offers a derivation of why the size-15 smooth floor value is the physically selected one. The note's own corrigendum says that selection path was wrong.
+- Evidence: The 2026-09-30 corrigendum says section 6 offers that path, and that a size-15 selection argument would have no centre-minus-shell value to explain. Section 6 still ends by opening "an independent derivation of why the size-15 smooth floor value is the physically selected one." The spline account in the corrigendum is already the note's correction. This row is only the leftover sentence.
+- Edit: Drop that selection path from section 6. Keep the corrigendum and the runner-output tables.
+- How this row was made: parent check on 2026-11-09 of the same leftover pattern as note 1635. This note was not in the five-card draw. The runner was not executed.
+
+## Note 1635
+
+- Path: `docs/QUARK_ROUTE2_HONEST_GRAVITY_METRIC_RHOE_CHARACTERIZATION_NOTE_2026-07-02.md`
+- Defect: Section 7 still calls `rho_E(15) = +5.257476782081e+00` the sharpened target. The note's own corrigendum says that value is not a target.
+- Evidence: The 2026-09-30 corrigendum says section 7's sharpened-target sentence was wrong, and the corrected statement is that `rho_E(15) = 5.2575` is not a target. Section 7 still prints that the value "remains the sharpened target for any future E-center derivation path." The 2026-10-04 quantifier limits the all-site identity and the phrase "does not converge." It does not withdraw the target sentence. The ladder quotients were recomputed from the printed gammas and match the displayed cells to display rounding.
+- Edit: Rewrite section 7 so it does not call that value the sharpened target. Keep the corrigendum.
+- How this row was made: blind re-read on 2026-11-09, then a parent check. The reader treated the corrigendum as enough. The parent filed the sentence that is still printed. The runner was not executed.
+
 ## Note 1696
 
 - Path: `docs/GRAVITY_SIGN_IS_NOT_A_NEW_ADMISSION_REDUCES_TO_SHARED_ORIENTATION_DATUM_KCPT_CANNOT_SELECT_NARROW_THEOREM_NOTE_2026-06-18.md`
@@ -52,18 +68,10 @@ A row appears here only when the note is wrong or overclaims. One finding, one l
 - Edit: Print the exact fraction `454276/83385`, or say the displayed quotient is the binary64 value.
 - How this row was made: blind re-read on 2026-11-09. The prior card said the inputs give the printed quotient.
 
-## Note 1716
-
-- Path: `docs/ALPHA_S_SOMMER_STATIC_POTENTIAL_ROOT_KERNEL_THEOREM_NOTE_2026-06-18.md`
-- Defect: The title names `alpha_s`. The proved object is the dimensionless Sommer root for a supplied Cornell potential and the supplied target 1.65.
-- Evidence: The prior read checked the printed identity `F(r0) r0^2 = sigma (r0/a)^2 + e` against the printed `sigma`, `e`, and `r0/a`, and found it holds at binary rounding. The same read says the 0.5 fm anchor is not an input to `r0/a`, and the note does not derive the physical fm scale, QCD running, or `alpha_s(M_Z)`.
-- Edit: Change the title and the claim so they do not present that dimensionless root as `alpha_s`.
-- How this row was made: extracted from the prior card. The note was not re-read in this pass.
-
 ## Note 1737
 
 - Path: `docs/QUARK_CP_SMALL_CORRECTION_BOUNDARY_NOTE_2026-06-17.md`
-- Defect: The shipped complex 1-3 carriers are not a small correction to the Schur base. Caps at 1, 2, and 5 exclude the shipped fit.
-- Evidence: On the printed digits, `|xi_u| / |c13_u(base)|` agrees with 101.908728437 and `|xi_d| / |c13_d(base)|` agrees with 6.643337509. Relative square error is below 1e-8. Both ratios sit above 5. Printed inputs: `xi_u = +0.340735147 - 0.063202935 i`, `xi_d = +0.078186196 + 0.108371050 i`, `c13_u(base) = 3.400565729750e-03`, `c13_d(base) = 2.011510840850e-02`.
-- Edit: Stop calling the shipped fit a small correction inside those caps. State the ratios and that the caps exclude it.
-- How this row was made: extracted from the prior read. The ratio check was repeated. The rest of the note was not re-read in this pass.
+- Defect: The note calls `|xi_u| / |c13_u(base)| = 101.908728437` and `|xi_d| / |c13_d(base)| = 6.643337509` the exact ratios of the printed components. Those equalities are false for the printed digits.
+- Evidence: With `xi_u = +0.340735147 - 0.063202935 i` and `c13_u(base) = 3.400565729750e-03`, the modulus ratio is `101.908728360781…`. With `xi_d = +0.078186196 + 0.108371050 i` and `c13_d(base) = 2.011510840850e-02`, the modulus ratio is `6.643337541498…`. The completed-slot shares do match the printed `0.990442514` and `0.913327261`. The small-correction no-go is the note's own claim: the body already says the shipped fit is outside caps `R <= 1` and `R <= 5`. That claim is not this repair.
+- Edit: Do not present the printed components and those two ratio decimals as one exact equality. Print the ratio of the printed components, or say the displayed ratios come from a finer runner state. Leave the negative small-correction claim in place.
+- How this row was made: blind re-read on 2026-11-09. The reader saw the gap and did not file it. The parent recomputed the moduli from the printed components. The runner was not executed. An earlier row that told a later editor to stop calling the fit a small correction was removed, because the note already says that.

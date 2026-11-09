@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/check.py", line 321, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/check.py", line 249, in main
+    assert composed==local_channel(unit,n,F(1,4),Q(F(1,2)),fault), 'channel semigroup on coherences'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: channel semigroup on coherences

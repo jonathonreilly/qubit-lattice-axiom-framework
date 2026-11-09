@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "description": "Allowlist of canonical axiom and explicitly approved primitive premise nodes. These are the only supplied physics premise types. Each entry binds a stable un-dated claim_id to the current source-doc path. build_citation_graph.py canonicalizes listed paths to stable ids, so inbound citation edges and premise status survive re-dating. The structural guard enforces that each listed document contains only approved premise content. These premises chain-satisfy without bounding downstream rows; every other scientific input must be retained-grade or remain conditional/open.",
+  "canonical_ids": [
+    "minimal_axioms",
+    "scale_reference_primitive",
+    "kinetic_isotropy_primitive",
+    "realized_state_primitive"
+  ],
+  "nodes": {
+    "minimal_axioms": {
+      "current_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "aliased_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/MINIMAL_AXIOMS_2026-06-04.md",
+        "docs/MINIMAL_AXIOMS_2026-06-05.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "legacy_claim_ids": [
+        "minimal_axioms_2026-05-20",
+        "minimal_axioms_2026-06-04",
+        "minimal_axioms_2026-06-05",
+        "minimal_axioms_2026-06-29"
+      ],
+      "note": "Canonical Lattice+Qubit+Admissibility+Record axiom node. The 2026-11-09 quantum formation revision is substantive premise content; its owner authorization and PR adoption boundary are recorded in policy section 6. Physical sites have cubic nearest-neighbor adjacency, standard translations and proper cubic rotations about each site, with no site privileged and sites distinguished by the supplied lattice structure alone. The one-site algebra is M_2(C), with no possibility privileged and possibilities distinguished by the supplied algebraic structure alone. Finite-region joint algebras are tensor products with the usual adjoint and positive cone and consistent identity embeddings. A state description consists of a configuration of permanent records and a compatible joint quantum state: normalized positive linear functionals agreeing under restriction; a record-sufficient prepared domain may reconstruct that predictor. A fixed covariant law supplies neighborhood quantum operations and record formation. Finite-menu branch maps are linear and completely positive with trace-preserving sum; measurable menus use countably additive CP-map instruments. Controls use readable record values obtained through permitted neighborhood interactions. Probabilities and conditional updates use finite-region density matrices containing the instrument support and agree under restriction; continuous exact-outcome conditionals are defined almost everywhere with measurable versions and null-history domains specified by the fixed law. Content maps are measurable. Changing the conditioning history alone does not change actual controls. Conditioning on remote records is not their physical receipt or an available remote control; ignored local operations leave exterior statistics unchanged. Records form; a record locks exactly one admissible local possibility; a site never carries more than one record; records are permanent; only records are readable, a readout value is determined by record content alone, and a site with no record cannot be read. Physical pointer and readout-control sites are counted, and a permitted readout fixed for each pointer type independently of its stored value reproduces that value with certainty. A law privileges no states; its domain is a supplied condition and gives exactly one answer there. Specific context-selection rule, preparation, Hamiltonian, instrument family, calibration, formation-site or formation-rate rule, time metric, physical persistence dynamics, scale and source/action remain downstream theory consequence or conditional content. observable_principle_from_axiom_note is not an axiom-premise node. The 2026-11-09 proposal is a substantive premise change, not a retained-status promotion or a wording-only migration."
+    },
+    "scale_reference_primitive": {
+      "current_path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "aliased_paths": [
+        "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md"
+      ],
+      "legacy_claim_ids": [],
+      "note": "Explicitly approved framework primitive for the single dimensionful scale reference a^{-1}. Units conversion only: carries no dimensionless content and does not assert a/l_P=1. Dependencies on this primitive chain-satisfy without bounding downstream rows."
+    },
+    "kinetic_isotropy_primitive": {
+      "current_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "aliased_paths": [
+        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+      ],
+      "legacy_claim_ids": [],
+      "note": "Explicitly approved framework primitive for the space-time kinetic-form isotropy c_t=c_s (OS0 graining isotropy): the emergent tick is grained on the same footing as the spatial edge. A dimensionless STRUCTURAL premise, the time-direction analogue of the Lattice axiom's spatial cubic adjacency; carries no dimensionless DYNAMICAL content (no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or fit) and does not re-axiomatize emergent time. This primitive supplies only the kinetic form ratio, not an absolute scale, spacing-ratio theorem, dynamics, or downstream Lorentz theorem. Dependencies on this primitive chain-satisfy without bounding downstream rows."
+    },
+    "realized_state_primitive": {
+      "current_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "aliased_paths": [
+        "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
+      ],
+      "legacy_claim_ids": [],
+      "note": "Explicitly approved framework primitive for the realized-state interface: the axioms select no state; a physical history fixes one law-admissible realized state, and derivations may evaluate at it POINTWISE only. Supplies the slot, never the content: no state, state-selection rule, measure, typicality/genericity assumption, weighting, probability rule, preferred/default state, or state-contingent value. Policing clauses: no averaging over alternatives; 'typical'/'generic' banned as specialization predicates; the counterfactual test (a quoted number must be invariant over the law-admissible family, else it is registered data); law admissibility. The past hypothesis is explicitly NOT housed here (a strictly stronger specialness input; anchored at the arrow note). Dependencies on this primitive chain-satisfy without bounding downstream rows; the primitive itself carries no contingent content, and rows quoting data of a particular realized state remain conditional on that supplied data as supplied inputs always are."
+    }
+  }
+}

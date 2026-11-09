@@ -1,0 +1,60 @@
+{
+  "source_sha256": "46127f2c9050de484dc444e5a3543a9d9aa8d93072d65c34ec33ecc9f1d9e0d0",
+  "limits": "nice10; five thread variables=1; CPU50/55; wall55 internal/60 outer; RSS256MiB macOS bytes",
+  "runs": [
+    {
+      "label": "exact",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.9581153749895748
+    },
+    {
+      "label": "overwrite",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/check.py",
+        "--fault",
+        "overwrite"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 0.046074624988250434
+    },
+    {
+      "label": "frozen-condition",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/check.py",
+        "--fault",
+        "frozen-condition"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 0.472473625006387
+    },
+    {
+      "label": "remote-setting",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "python3",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/check.py",
+        "--fault",
+        "remote-setting"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 0.43939129199134186
+    }
+  ]
+}

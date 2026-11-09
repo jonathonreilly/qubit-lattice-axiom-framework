@@ -1,0 +1,85 @@
+{
+  "source_sha256": "46127f2c9050de484dc444e5a3543a9d9aa8d93072d65c34ec33ecc9f1d9e0d0",
+  "status": "exact finite formation diagnostics passed",
+  "counts": {
+    "local_completeness": 7,
+    "matrix_unit_semigroup": 448,
+    "occupied_matrix_units_fixed": 252,
+    "local_trace_preservation": 448,
+    "setting_pairs": 49,
+    "record_histories": 427,
+    "permanent_reapplications": 560
+  },
+  "local_native_qubits": 3,
+  "two_wing_native_qubits": 6,
+  "carrier_dimension": 64,
+  "CHSH_signed_coefficients": [
+    "0",
+    "-2",
+    "0",
+    "0"
+  ],
+  "conditional_B_plus": [
+    [
+      1,
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    [
+      -1,
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ]
+    ]
+  ],
+  "polynomial_diagonal_expectation": [
+    "0",
+    "-5/8",
+    "0",
+    "0"
+  ],
+  "quantum_diagonal_expectation": [
+    "0",
+    "-1/2",
+    "0",
+    "0"
+  ],
+  "partial_transpose_witness": [
+    "-1/2",
+    "0",
+    "0",
+    "0"
+  ],
+  "unordered_history_Z_plus": [
+    [
+      "1/2",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "no_event_q": "1/2",
+  "continuous_time_execution": false,
+  "N5": {
+    "element": "exact complex Kraus algebra",
+    "site": "two-site local pointer code and append-only R",
+    "mode": "no physical propagation mode simulated",
+    "block": "disjoint three-qubit detector channels with single-outcome intermediate sectors",
+    "lattice": "finite two-block embedding only"
+  },
+  "elapsed_seconds": 1.8972577079839539,
+  "max_rss_host_bytes": 23068672
+}

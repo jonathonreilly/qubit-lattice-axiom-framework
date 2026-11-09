@@ -1,0 +1,547 @@
+diff --git a/docs/MINIMAL_AXIOMS_2026-06-29.md b/docs/MINIMAL_AXIOMS_2026-06-29.md
+index c740addc83..5bab03ec83 100644
+--- a/docs/MINIMAL_AXIOMS_2026-06-29.md
++++ b/docs/MINIMAL_AXIOMS_2026-06-29.md
+@@ -18,8 +18,8 @@ constraint was named.
+ 
+ ## Purpose
+ 
+-This note states the framework's minimal ontology premises. They are named
+-rather than treated as bare letter codes:
++This note states the framework's ontology and quantum probability premises.
++They are named rather than treated as bare letter codes:
+ 
+ 1. **Lattice**
+ 2. **Qubit**
+@@ -52,25 +52,67 @@ adds no further primitive structure.
+ No possibility is privileged. Possibilities are distinguished by the supplied
+ algebraic structure alone.
+ 
+-### Admissibility / Local Constraint
++For every finite region Lambda, the joint possibility *-algebra is the tensor
++product of the one-site algebras in Lambda, with their usual adjoint and
++positive cone. The embedding into a larger region tensors with the identity
++on the additional sites. Disjoint-region
++operations act on their respective tensor factors.
+ 
+-There is one fixed neighborhood admissibility rule, covariant under lattice
+-translations and proper cubic rotations.
+ 
+-For each site, the probability distribution over the possibilities is
+-determined by, and varies with, the neighborhood conditions.
++### Admissibility / Local Constraint
+ 
+-*Reading notes (interpretive, non-governing).* (1) The distribution is
+-law-level: the general substrate is the weighted-branching realization, with
+-deterministic substrates as boundary realizations -- the law supplies the
+-odds; the realized state supplies the pick. (2) Read with Record, the
+-distribution concerns which possibility a forming record locks, conditional
+-on formation at that site; it does not supply the formation site, probability,
+-or rate. (3) The distribution is a probability measure on
+-the local possibility domain; "available"/"admissible" denotes its support --
+-on finite menus, exactly the possibilities of nonzero probability. On a
+-continuous domain, a supported exact point may have zero singleton measure;
+-Record locks a supported realization.
++There is one fixed law for neighborhood quantum operations and record
++formation, covariant under lattice translations and proper cubic rotations.
++For fixed accessible record controls, each operation is a quantum instrument
++supported in its finite neighborhood and extended by the identity outside.
++On a finite outcome menu its outcome maps are linear and completely positive,
++and their sum preserves trace. On a standard Borel outcome space it is a
++countably additive completely-positive-map-valued measure with trace-preserving
++total map. Instrument controls depend only on readable record values obtained
++through permitted neighborhood interactions. Influence may pass
++through successive overlapping neighborhoods.
++
++For a specified record history used for conditioning, choose a finite region
++containing the operation's support and its conditional reduced density matrix.
++The probability of a measurable outcome event is the trace of the instrument
++map, extended by the identity on the rest of that region, applied to this
++matrix. A positive-probability event updates the matrix by this map followed
++by normalization. These updates agree under restriction and define the updated
++state family; reductions to other regions use a region also containing the
++operation's support. For exact outcomes in a continuous menu, conditional
++states are measurable versions of the almost-everywhere instrument-density
++conditionals, not ratios of zero singleton probabilities. The fixed law
++specifies those versions and which null histories, if any, lie in its domain.
++Joint probabilities are obtained by composing the instruments. A no-formation
++outcome may be included. A forming record locks a supported outcome through
++the law's fixed measurable content map. Each realized formation has one outcome;
++probabilities describe the law of those outcomes. Conditioning on a recorded
++content event uses the instrument on its full preimage under the content map.
++Every operation preserves all existing record contents.
++
++Conditioning on a record and physically receiving that record are distinct.
++Changing only the history used for conditioning does not change the realized
++operation or its controls.
++If the conditioning history does not fix the local controls, predictions
++average the joint conditional control-and-quantum-state ensemble, equivalently
++retaining the control register in the composed instrument.
++Predictions available in a neighborhood condition only on its available
++record history. Additional remote records may change conditional predictions,
++but cannot control a local operation until conveyed through permitted
++interactions. Ignoring an operation's outcome gives its trace-preserving
++sum, which leaves statistics outside its support unchanged.
++
++*Reading notes (interpretive, non-governing).* The conditioning history and
++locally available control information are different objects. A remote result
++can change conditional predictions without being an available local control.
++The probability law of record contents is the pushforward of the instrument's
++outcome law through its fixed measurable content map. Conditioning on a
++recorded content uses its full preimage under that map, not an unavailable
++refinement of the instrument outcome. Admissibility is support in this
++law: on a finite menu this means nonzero probability; in an atomless law a
++supported exact point can have zero singleton mass. A measurable instrument
++on a finite carrier does not supply finite-register storage for a continuum
++of distinct perfectly readable values. All pointer resources must be allocated.
+ 
+ ### Record / Fixed Reality
+ 
+@@ -82,6 +124,12 @@ site never carries more than one record; records are permanent.
+ Only records are readable. A readout value is determined by record content
+ alone. A site with no record cannot be read.
+ 
++A record's readable value is encoded in a quantum pointer on allocated
++lattice sites and is reproduced with certainty by a permitted readout fixed
++for that pointer type, independently of the stored value.
++All sites used by that pointer and its readout controls are part of the
++physical register.
++
+ ## Qualification
+ 
+ These axioms state only their named primitive content. Further physical
+@@ -89,7 +137,15 @@ structure requires a retained derivation or bridge, or explicit approved-
+ primitive registration, before use as a premise. A choice not fixed by the
+ supplied structure remains a named conditional or open dependency.
+ 
+-A state is a configuration of records.
++A state description consists of a configuration of permanent records and a
++compatible joint quantum state of the lattice possibilities. The quantum
++state is a family of normalized positive linear functionals on the finite-
++region algebras, agreeing under restriction. It assigns probabilities to
++possible new records; it is not an additional directly readable record.
++Compatibility means that permitted readout of an existing record gives
++its recorded value with certainty under that same quantum probability rule.
++On a prepared domain where the records and fixed law uniquely determine this
++family, the quantum state may be represented by that reconstruction.
+ 
+ A law privileges no states. Its domain is a supplied condition, and at every
+ state where the condition holds it gives exactly one answer.
+@@ -113,21 +169,20 @@ scientific dependency must be retained-derived or remain conditional/open.
+ 
+ ## Relation To Dynamics And Kinetic Branch Selection
+ 
+-Admissibility is not a dynamics axiom. It determines the local probability
+-distribution by a neighborhood rule: for each site, the probability
+-distribution over the possibilities is determined by, and varies with, the
+-neighborhood conditions. It does not
+-choose a Hamiltonian or transfer operator, supply transition-probability or
+-weight values, select a scalar or nonzero kinetic branch, assert a Dirac-square
+-carrier, define a time metric, or provide a record-production process or
+-physical persistence dynamics.
+-
+-Static spatial kinetic questions, probability/process questions, and temporal
+-evolution questions should be tracked separately. A realized kinetic branch, if
+-proposed, is downstream content: it needs a retained derivation or bridge, or
+-an approved-primitive registry update, before audit rows may use it
+-as load-bearing content. The four axioms are compatible with such later
+-content, but do not include it.
++Admissibility specifies the quantum form of local operations, probabilities,
++conditional state updates and stochastic record registration. It does not
++choose a particular Hamiltonian, instrument family, preparation, measurement
++basis, outcome-content calibration, formation site/rate, time metric or causal
++speed. Those physical choices remain separately supplied or derived.
++
++Static spatial kinetic questions, quantum probability structure and the
++selection of physical dynamics are distinct. A realized kinetic branch needs
++a derivation or an explicitly approved primitive before it can supply that
++physical content. The quantum instrument clause does not select a scalar or
++nonzero kinetic branch, a Dirac-square carrier, physical couplings or a
++continuum limit. Permanent quantum pointers are an ideal requirement; their
++physical persistence dynamics and resource allocation are not supplied by a
++bare symbolic record label.
+ 
+ ## Relation To The Older Observable-Principle Parent
+ 
+@@ -137,15 +192,18 @@ packages additive scalar observables with further readout/log-det/modulus
+ structure. That older parent must not be moved wholesale into
+ `docs/audit/data/axiom_premise_nodes.json`.
+ 
+-Rows that require only the Record axiom should cite this minimal-axiom
+-authority. Rows that require P2/modulus, log-det, source/action, measurement,
+-Born weights, readout-context selection, central-sector decomposition, `K`/CPT
+-structure, transition relations, record-production dynamics, physical
+-persistence dynamics, local observability, or any other additional bridge must
+-cite separate retained authorities or remain bounded/pending according to the
+-audit ledger.
+-
+-Finite additivity, a named scalar collection functional `I`, and an assigned
++Rows using the generic quantum composition, probability, conditioning and
++record requirements should cite this minimal-axiom authority at its actual
++revision. Identifying a physical preparation, observable, instrument, pointer
++encoding, occurrence rate or dynamics still requires its own derived or
++conditional bridge. P2/modulus, log-det, source/action, central-sector
++selection and K/CPT identifications are not supplied by the generic quantum
++probability structure. Earlier judgments made under different axiom content
++must not be promoted or carried across the premise change without the
++applicable review and audit checks.
++
++Finite additivity over disjoint record collections, a named scalar collection
++functional `I`, and an assigned
+ value `I(empty)=0` are not Record axiom content. Rows that require any of those
+ structures must likewise cite a separate retained authority or remain
+ conditional/open.
+@@ -154,9 +212,10 @@ conditional/open.
+ 
+ The 2026-06-05 Record axiom named durable realized-outcome registration and
+ gave a `K`/CPT orbit reading once a finite central-sector readout context and
+-fixed `K`/CPT conjugation were supplied. This reset separates generic site
++fixed `K`/CPT conjugation were supplied. The 2026-06-29 reset distinguished generic site
+ possibility, local admissibility, and fixed records from context-specific
+-readout structure:
++readout structure. The following bullets describe that historical separation,
++before the proposed quantum formation revision:
+ 
+ - Qubit names the domain of local possibilities and its full one-site algebraic
+   presentation.
+@@ -178,12 +237,12 @@ gates. In particular, the following remain outside axiom content:
+ - the staggered-Dirac/finite-Grassmann realization and `AC_phi_lambda`;
+ - the strong-CP theta gauge and mass-side derivation obligations;
+ - P2/modulus/phase-blindness and any log-det readout theorem;
+-- context selection, measurement basis selection, Born weight values,
+-  probability rules beyond the distribution clause, update laws, decoherence
+-  mechanisms, and the remaining formation rules (the distribution's form and
+-  values, at which site, and at what rate);
++- physical context and measurement-basis selection, calibrated preparations,
++  observables, outcome-content maps, permitted instrument families, decoherence
++  mechanisms, and the remaining formation choices (at which site and at what
++  rate, with which physical coupling or apparatus);
+ - arrow, record-production dynamics, physical persistence dynamics, time metric,
+-  and local observability of records;
++  and physical implementation of record readout;
+ - source/action and physical-observable identification;
+ - `g_bare = 1` convention handling;
+ - the scale-reference primitive and the separate gravity self-consistency
+@@ -224,10 +283,17 @@ does not assign a scalar value to absence. The file path remains unchanged so
+ the premise-epoch guard can invalidate old judgments and send consumers that
+ used the removed structure through fresh review and audit.
+ 
+-This memo exposes the remaining minimal ontology needed by the blocked audit
+-lanes: records are not arbitrary mosaics. The admissibility rule determines the
+-probability distribution over the possibilities at each site from the
+-neighborhood conditions, and that distribution varies with those
+-conditions, before a record can lock one available local possibility. The
+-distribution's form and values, dynamics, readout contexts, and physical
+-observable bridges remain downstream.
++The 2026-11-09 quantum formation revision is proposed under the owner's
++explicit instruction to update the axiom as needed to correctly select or
++represent quantum physics. It adds finite-region quantum composition, a
++compatible joint quantum probability state, local instruments, explicit
++conditioning and a physical pointer requirement. It preserves definite
++permanent records and distinguishes available controls from remote
++conditioning. This is substantive new premise content, not a deduction from
++the previous record constraints or a wording-only migration. Exact adoption
++and landing remain governed by the axiom PR and the approval record.
++
++Records are not arbitrary mosaics: proposed formation operations and pointer
++readout must be compatible with the joint quantum state and all earlier
++records. The particular physical law, preparation, rates, apparatus and
++observable identifications remain downstream.
+diff --git a/docs/audit/AXIOM_MINIMALITY_POLICY.md b/docs/audit/AXIOM_MINIMALITY_POLICY.md
+index 4149ce9db4..3e9ba6dc9d 100644
+--- a/docs/audit/AXIOM_MINIMALITY_POLICY.md
++++ b/docs/audit/AXIOM_MINIMALITY_POLICY.md
+@@ -98,6 +98,20 @@ axiom text, approved primitives, or audited derivation (section 1).
+ 
+ Recorded explicitly approved axiom updates:
+ 
++- **2026-11-09 -- Quantum formation revision (owner-authorized scope).**
++  The owner instructed: "I mean update the axiom as needed to correctly select
++  or represent quantum physics." This authorizes the substantive foundation
++  revision developed in this task and submitted through a separate axiom PR.
++  The proposed text adds finite-region tensor composition, compatible positive
++  joint quantum states, local completely positive instruments with explicit
++  conditioning and stochastic registration, and physical pointer/readout
++  accounting. It preserves definite permanent records. It does not select a
++  physical Hamiltonian, preparation, apparatus, event rate, continuum theory or
++  mass gap. This is a substantive premise change, not a wording-only migration.
++  The owner's authorization is not independent mathematical validation or an
++  audit verdict. The PR remains the review and landing route; current-main
++  axiom content remains authoritative until that revision is merged.
++
+ - **2026-11-08 -- Admissibility: neighborhood wording (owner-approved).**
+   The owner explicitly approved substituting "neighborhood" for
+   "nearest-neighbor" in both governing Admissibility sentences in
+diff --git a/docs/audit/data/axiom_premise_nodes.json b/docs/audit/data/axiom_premise_nodes.json
+index 5e5663bee2..b5367a7383 100644
+--- a/docs/audit/data/axiom_premise_nodes.json
++++ b/docs/audit/data/axiom_premise_nodes.json
+@@ -22,7 +22,7 @@
+         "minimal_axioms_2026-06-05",
+         "minimal_axioms_2026-06-29"
+       ],
+-      "note": "Canonical Lattice+Qubit+Admissibility+Record axiom node. The source path may be re-dated; on re-date, update current_path and append the old path to aliased_paths so existing markdown links keep resolving to this stable id. The older observable_principle_from_axiom_note is not an axiom-premise node and must not be laundered as the Record axiom. The 2026-06-29 foundation reset, as clarified on 2026-07-02, 2026-07-03, and 2026-07-04, names physical sites as the cubic lattice Z^3 with nearest-neighbor adjacency, standard translations, and proper cubic rotations about each site, with no site privileged and sites distinguished by the supplied lattice structure alone; the domain of local possibilities and its full one-site algebraic presentation, with no possibility privileged and possibilities distinguished by the supplied algebraic structure alone; a fixed neighborhood admissibility rule, covariant under lattice translations and proper cubic rotations, for which: For each site, the probability distribution over the possibilities is determined by, and varies with, the neighborhood conditions. The two neighborhood terms reflect the 2026-11-08 owner-approved substitutions under policy section 6; the distribution clause dates from 2026-08-05, with availability as the distribution's support; and fixed record readout: records form; when present, a record locks exactly one admissible local possibility; a site never carries more than one record; records are permanent; only records are readable, a readout value is determined by record content alone, and a site with no record cannot be read. Further physical structure requires a retained derivation or bridge, or explicit approved-primitive registration, before use as a premise. A choice not fixed by the supplied structure remains a named conditional or open dependency. A state is a configuration of records. A law privileges no states; its domain is a supplied condition, and at every state where the condition holds it gives exactly one answer. It still supplies no context-selection rule, specific distribution form or values, realized-outcome selection, formation-site or formation-rate rule, update law, measurement/decoherence dynamics, record-production process, physical persistence dynamics, K/CPT structure, central-sector decomposition, source/action bridge, physical observable bridge, state-selection rule, law-domain derivation, law-level dependence on an unfixed choice, or downstream theory consequence."
++      "note": "Canonical Lattice+Qubit+Admissibility+Record axiom node. The 2026-11-09 quantum formation revision is substantive premise content; its owner authorization and PR adoption boundary are recorded in policy section 6. Physical sites have cubic nearest-neighbor adjacency, standard translations and proper cubic rotations about each site, with no site privileged and sites distinguished by the supplied lattice structure alone. The one-site algebra is M_2(C), with no possibility privileged and possibilities distinguished by the supplied algebraic structure alone. Finite-region joint algebras are tensor products with the usual adjoint and positive cone and consistent identity embeddings. A state description consists of a configuration of permanent records and a compatible joint quantum state: normalized positive linear functionals agreeing under restriction; a record-sufficient prepared domain may reconstruct that predictor. A fixed covariant law supplies neighborhood quantum operations and record formation. Finite-menu branch maps are linear and completely positive with trace-preserving sum; measurable menus use countably additive CP-map instruments. Controls use readable record values obtained through permitted neighborhood interactions. Probabilities and conditional updates use finite-region density matrices containing the instrument support and agree under restriction; continuous exact-outcome conditionals are defined almost everywhere with measurable versions and null-history domains specified by the fixed law. Content maps are measurable. Changing the conditioning history alone does not change actual controls. Conditioning on remote records is not their physical receipt or an available remote control; ignored local operations leave exterior statistics unchanged. Records form; a record locks exactly one admissible local possibility; a site never carries more than one record; records are permanent; only records are readable, a readout value is determined by record content alone, and a site with no record cannot be read. Physical pointer and readout-control sites are counted, and a permitted readout fixed for each pointer type independently of its stored value reproduces that value with certainty. A law privileges no states; its domain is a supplied condition and gives exactly one answer there. Specific context-selection rule, preparation, Hamiltonian, instrument family, calibration, formation-site or formation-rate rule, time metric, physical persistence dynamics, scale and source/action remain downstream theory consequence or conditional content. observable_principle_from_axiom_note is not an axiom-premise node. The 2026-11-09 proposal is a substantive premise change, not a retained-status promotion or a wording-only migration."
+     },
+     "scale_reference_primitive": {
+       "current_path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+diff --git a/scripts/audit_companion_minimal_axioms_clean_base_exact.py b/scripts/audit_companion_minimal_axioms_clean_base_exact.py
+index d04790740a..84582fdd1f 100644
+--- a/scripts/audit_companion_minimal_axioms_clean_base_exact.py
++++ b/scripts/audit_companion_minimal_axioms_clean_base_exact.py
+@@ -3,10 +3,10 @@
+ 
+ This runner checks elementary algebra/notation facts plus source/registry
+ firewalls for docs/MINIMAL_AXIOMS_2026-06-29.md. It does not derive the axioms
+-and does not import context selection, formation rules, sector generation,
+-log-det structure, P2/modulus, measurement, dynamics, specific probability
+-values, scale, source/action, Born weights, occupancy, local observability, or
+-observable identification.
++and does not derive their quantum composition, probability or instrument
++premises. It checks the proposed source/registry boundary without selecting
++physical preparation, Hamiltonians, apparatus, rates, scales, source/action,
++log-det, P2/modulus or observable identifications.
+ """
+ 
+ from __future__ import annotations
+@@ -116,19 +116,13 @@ def local_distribution(neighborhood_records: frozenset[str]) -> dict[str, float]
+     return {"up": 0.5, "down": 0.5}
+ 
+ 
+-def governing_admissibility_distribution_sentence(note: str) -> str:
+-    """Extract the governing distribution sentence from the live memo."""
++def governing_admissibility_section(note: str) -> str:
++    """Extract live operation/probability clauses, excluding reading/history notes."""
+     try:
+         section = note.split("### Admissibility / Local Constraint", 1)[1]
+-        section = section.split("*Reading notes", 1)[0]
++        return normalize(section.split("*Reading notes", 1)[0])
+     except IndexError:
+         return ""
+-    match = re.search(
+-        r"For each site,\s+the probability distribution over the possibilities is\s+"
+-        r"determined by, and varies with, the neighborhood conditions\.",
+-        section,
+-    )
+-    return normalize(match.group(0)) if match else ""
+ 
+ 
+ def governing_record_section(note: str) -> str:
+@@ -151,7 +145,9 @@ def source_boundary_checks() -> list[Check]:
+     legacy_ids = set(node.get("legacy_claim_ids") or [])
+     derivation_targets = history.get("derivation_targets") or {}
+     record_reclass = (history.get("reclassified_primitives") or {}).get("minimal_axioms_record", {})
+-    governing_distribution_sentence = governing_admissibility_distribution_sentence(note)
++    admissibility_section = governing_admissibility_section(note)
++    qualification_section = normalize(note.split("## Qualification", 1)[1].split("## Audit-Pipeline Treatment", 1)[0])
++    qubit_section = normalize(note.split("### Qubit / Site Possibility", 1)[1].split("### Admissibility", 1)[0])
+     record_section = governing_record_section(note)
+     registry_note = normalize(node.get("note", ""))
+     removed_record_phrases = (
+@@ -199,22 +195,21 @@ def source_boundary_checks() -> list[Check]:
+             "",
+         ),
+         Check(
+-            "Registry note records Admissibility and downstream-boundary firewall",
++            "Registry records the quantum proposal and remaining physical boundaries",
+             "Admissibility" in node.get("note", "")
+-            and bool(governing_distribution_sentence)
+-            and governing_distribution_sentence in normalize(node.get("note", ""))
+-            and "context-selection rule" in node.get("note", "")
+-            and "specific distribution form or values" in node.get("note", "")
+-            and "realized-outcome selection" in node.get("note", "")
+-            and "formation-site or formation-rate rule" in node.get("note", "")
+-            and "downstream theory consequence" in node.get("note", ""),
+-            "",
++            and "linear and completely positive" in registry_note
++            and "trace-preserving" in registry_note
++            and "conditional updates" in registry_note
++            and "formation-site or formation-rate rule" in registry_note
++            and "downstream theory consequence" in registry_note,
++            "quantum structure is supplied; particular physical dynamics is not",
+         ),
+         Check(
+-            "Registry note does not deny the adopted probability structure",
+-            "weighting, normalization, probability" not in node.get("note", "")
+-            and "which admissible possibility a new record locks" not in node.get("note", ""),
+-            "distribution, normalization, and supported outcomes are axiom content",
++            "Registry does not retain the old record-only state or deny quantum composition",
++            "A state is a configuration of records" not in registry_note
++            and "compatible joint quantum state" in registry_note
++            and "tensor products" in registry_note,
++            "a substantive state/composition revision, not a historical wording match",
+         ),
+         Check(
+             "Registry note records 2026-07-02/03 no-privilege/readout/state/law/record wording",
+@@ -224,7 +219,7 @@ def source_boundary_checks() -> list[Check]:
+             and "a readout value is determined by record content alone" in registry_note
+             and "a site with no record cannot be read" in registry_note
+             and "records are permanent" in registry_note
+-            and "A state is a configuration of records" in registry_note
++            and "A state description consists of a configuration of permanent records" in registry_note
+             and "A law privileges no states" in registry_note,
+             "",
+         ),
+@@ -245,11 +240,11 @@ def source_boundary_checks() -> list[Check]:
+         Check(
+             "Memo Record axiom carries the 2026-07-04 formation sentence",
+             "Records form." in note,
+-            "occurrence is axiom content; formation rules stay downstream",
++            "occurrence and quantum formation structure are supplied; rates and apparatus stay downstream",
+         ),
+         Check(
+             "Registry note records the formation sentence",
+-            "records form;" in node.get("note", ""),
++            "records form;" in registry_note.lower(),
+             "",
+         ),
+         Check(
+@@ -289,7 +284,7 @@ def source_boundary_checks() -> list[Check]:
+         ),
+         Check("Policy records 2026-06-29 foundation reset", "2026-06-29 -- Foundation reset: site possibility and local admissibility" in policy, ""),
+         Check(
+-            "Policy no-laundering clause lists Admissibility and Record boundaries",
++            "Policy preserves the historical 2026-06-29 Admissibility and Record boundaries",
+             contains(policy, "Admissibility does not choose the readout context, select a measurement basis, provide a formation rule, define probabilities")
+             and contains(policy, "Record does not supply readout-context selection, central decomposition, `K`/CPT structure"),
+             "",
+@@ -381,11 +376,39 @@ def source_boundary_checks() -> list[Check]:
+         ),
+         Check("Cl(3,0) is fenced as representation-only", "adds no further primitive structure" in note, ""),
+         Check(
+-            "Admissibility local-constraint clause is present",
+-            contains(note, "one fixed neighborhood admissibility rule")
+-            and contains(note, "covariant under lattice translations and proper cubic rotations")
+-            and bool(governing_distribution_sentence),
+-            "",
++            "Admissibility constrains local instruments and separates conditioning",
++            contains(admissibility_section, "one fixed law for neighborhood quantum operations and record formation")
++            and contains(admissibility_section, "covariant under lattice translations and proper cubic rotations")
++            and contains(admissibility_section, "linear and completely positive")
++            and contains(admissibility_section, "their sum preserves trace")
++            and contains(admissibility_section, "extended by the identity outside")
++            and contains(admissibility_section, "Conditioning on a record and physically receiving that record are distinct"),
++            "locality is support/control locality, not full-history conditional screening-off",
++        ),
++        Check(
++            "Measurable outcomes retain almost-everywhere conditioning",
++            contains(admissibility_section, "standard Borel outcome space")
++            and contains(admissibility_section, "countably additive completely-positive-map-valued measure")
++            and contains(admissibility_section, "almost-everywhere instrument-density conditionals")
++            and contains(admissibility_section, "which null histories, if any, lie in its domain")
++            and contains(admissibility_section, "fixed measurable content map")
++            and contains(admissibility_section, "Conditioning on a recorded content event uses the instrument on its full preimage under the content map")
++            and contains(admissibility_section, "not ratios of zero singleton probabilities"),
++            "finite carrier is not a finite outcome-menu assumption",
++        ),
++        Check(
++            "Quantum formation includes actuality, supported contents and permanence",
++            contains(admissibility_section, "Each realized formation has one outcome")
++            and contains(admissibility_section, "locks a supported outcome through the law's fixed measurable content map")
++            and contains(admissibility_section, "Every operation preserves all existing record contents"),
++            "stochastic actualization is supplied rather than derived by this runner",
++        ),
++        Check(
++            "Qubit composition includes positive tensor algebras and embeddings",
++            contains(qubit_section, "joint possibility *-algebra is the tensor product")
++            and contains(qubit_section, "usual adjoint and positive cone")
++            and contains(qubit_section, "tensors with the identity"),
++            "one-site M2 is retained; composition is newly explicit",
+         ),
+         Check(
+             "Record fixed-reality clause is present",
+@@ -406,7 +429,12 @@ def source_boundary_checks() -> list[Check]:
+         Check("Qualification is named-content-only language", "These axioms state only their named primitive content" in note, ""),
+         Check(
+             "Qualification records state and law discipline",
+-            "A state is a configuration of records." in note
++            contains(qualification_section, "A state description consists of a configuration of permanent records")
++            and contains(qualification_section, "compatible joint quantum state")
++            and contains(qualification_section, "normalized positive linear functionals")
++            and contains(qualification_section, "agreeing under restriction")
++            and contains(qualification_section, "represented by that reconstruction")
++            and "A state is a configuration of records." not in qualification_section
+             and "A law privileges no states." in note
+             and "Its domain is a supplied condition" in note
+             and "gives exactly one answer" in note,
+@@ -416,12 +444,37 @@ def source_boundary_checks() -> list[Check]:
+         Check("Observable-principle parent is explicitly outside the axiom node", "must not be moved wholesale into\n`docs/audit/data/axiom_premise_nodes.json`" in note, ""),
+         Check("Open gates outside axioms include staggered realization", "staggered-Dirac/finite-Grassmann realization" in note, ""),
+         Check("Open gates outside axioms include theta", "strong-CP theta gauge and mass-side derivation obligations" in note, ""),
+-        Check("Open gates outside axioms include context selection and formation rules", "context selection" in note and "formation rules (the distribution's form and\n  values, at which site, and at what rate)" in note, ""),
++        Check("Physical context and formation choices remain open", "physical context and measurement-basis selection" in note and "remaining formation choices (at which site and at what" in note, ""),
+         Check("Open gates outside axioms include physical persistence dynamics", "physical persistence dynamics" in note, ""),
+         Check("Open gates outside axioms include g_bare", "`g_bare = 1` convention handling" in note, ""),
+         Check("Open gates outside axioms include scale self-consistency", "natural unit equals the Planck length" in note, ""),
+     ]
+ 
++    checks.extend([
++        Check(
++            "Conditioning uses compatible finite-region matrices and fixed actual controls",
++            contains(admissibility_section, "choose a finite region containing the operation's support")
++            and contains(admissibility_section, "These updates agree under restriction")
++            and contains(admissibility_section, "Changing only the history used for conditioning does not change the realized operation or its controls")
++            and contains(admissibility_section, "readable record values obtained through permitted neighborhood interactions"),
++            "no global trace-class density matrix or unread metadata control is assumed",
++        ),
++        Check(
++            "Pointer readout is physical and its register sites are counted",
++            contains(record_section, "readable value is encoded in a quantum pointer on allocated lattice sites")
++            and contains(record_section, "reproduced with certainty by a permitted readout fixed for that pointer type, independently of the stored value")
++            and contains(record_section, "All sites used by that pointer and its readout controls are part of the physical register"),
++            "symbolic content labels do not certify quantum memory capacity",
++        ),
++        Check(
++            "Policy records the owner's quantum revision authorization without an audit claim",
++            contains(policy, "2026-11-09 -- Quantum formation revision (owner-authorized scope)")
++            and contains(policy, "I mean update the axiom as needed to correctly select or represent quantum physics")
++            and contains(policy, "not independent mathematical validation or an audit verdict"),
++            "PR review and landing remain distinct from the authorization",
++        ),
++    ])
++
+     guard = subprocess.run(
+         [sys.executable, str(PURITY_GUARD)],
+         cwd=ROOT,
+@@ -486,9 +539,9 @@ def run_checks() -> list[Check]:
+     support = {possibility for possibility, probability in distribution.items() if probability > 0}
+     checks.append(
+         Check(
+-            "Admissibility: neighborhood conditions determine a normalized distribution and support",
++            "Admissibility: an illustrative accessible-control menu is normalized",
+             sum(distribution.values()) == 1.0 and support == {"down"},
+-            "toy distribution only: local conditions set lock-outcome odds and support; no transition or dynamics is used",
++            "classical-control subcase only; this is not a full-history neighborhood-screening theorem",
+         )
+     )
+ 
+@@ -536,12 +589,13 @@ def run_checks() -> list[Check]:
+         )
+     )
+ 
+-    state = {"r1": {"site": origin, "possibility": "down"}}
++    state = {"records": {"r1": {"site": origin, "possibility": "down"}},
++             "unrecorded_qubit_density": scale(0.5, IDENTITY)}
+     checks.append(
+         Check(
+-            "Qualification: a state can be read as a configuration of records",
+-            "r1" in state and "open_site_hidden_value" not in state,
+-            "unrecorded openness carries no hidden possibility assignment in this toy state",
++            "Qualification: records and an unrecorded quantum predictor are distinguished",
++            "r1" in state["records"] and eq(state["unrecorded_qubit_density"], scale(0.5, IDENTITY)),
++            "toy partial specification only; not a proof of joint-state sufficiency",
+         )
+     )
+ 
+@@ -563,9 +617,9 @@ def run_checks() -> list[Check]:
+ 
+     checks.append(
+         Check(
+-            "Boundary: runner imports no context-selection/log-det/P2/measurement/dynamics/scale conclusion",
++            "Boundary: runner supplies no physical context, coupling, apparatus, rate or scale conclusion",
+             True,
+-            "script checks only algebraic notation, graph adjacency, local distribution/support bookkeeping, and fixed record readout",
++            "elementary notation and source/registry consistency only; no quantum premise derivation or physical validation",
+         )
+     )
+     return checks

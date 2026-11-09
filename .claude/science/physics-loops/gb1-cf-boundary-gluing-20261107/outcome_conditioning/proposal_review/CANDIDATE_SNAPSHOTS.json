@@ -1,0 +1,18 @@
+{
+  "/Users/jonreilly/.codex/worktrees/admissibility-mediated-influence/Physics/docs/MINIMAL_AXIOMS_2026-06-29.md": {
+    "snapshot": "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/proposal_review/candidate_sources/docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "sha256": "146b803b105b8d558f8ea97db8c11a23be7b12b7a8479a1ab7446553b79a4642"
+  },
+  "/Users/jonreilly/.codex/worktrees/admissibility-mediated-influence/Physics/docs/audit/AXIOM_MINIMALITY_POLICY.md": {
+    "snapshot": "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/proposal_review/candidate_sources/docs/audit/AXIOM_MINIMALITY_POLICY.md",
+    "sha256": "ebd5519f1ec8359ad4b2bdcf69ea21b23d8f8ca6b285a01847625558ff22c40b"
+  },
+  "/Users/jonreilly/.codex/worktrees/admissibility-mediated-influence/Physics/docs/audit/data/axiom_premise_nodes.json": {
+    "snapshot": "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/proposal_review/candidate_sources/docs/audit/data/axiom_premise_nodes.json",
+    "sha256": "cf66d44d0fc1839e8a6670275d62e8dce6ffc038c40b40a2ff255c620fe54c8c"
+  },
+  "/Users/jonreilly/.codex/worktrees/admissibility-mediated-influence/Physics/scripts/audit_companion_minimal_axioms_clean_base_exact.py": {
+    "snapshot": "/Users/jonreilly/.codex/worktrees/gb1-cf-pair/Physics/.claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/proposal_review/candidate_sources/scripts/audit_companion_minimal_axioms_clean_base_exact.py",
+    "sha256": "c0f006558c1e9392fe592a45e1dcff1885c5cc327c2b673d0059559d0b8f3c67"
+  }
+}

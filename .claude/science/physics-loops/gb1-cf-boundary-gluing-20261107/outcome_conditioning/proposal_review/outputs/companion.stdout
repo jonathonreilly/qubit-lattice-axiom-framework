@@ -1,0 +1,164 @@
+PASS: Source note exists
+      docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: Policy exists
+      docs/audit/AXIOM_MINIMALITY_POLICY.md
+PASS: Axiom-premise registry exists
+      docs/audit/data/axiom_premise_nodes.json
+PASS: Decision-history file exists
+      docs/audit/data/premise_decision_history.json
+PASS: Source type is meta
+      framework memo, not theorem row
+PASS: Source status is current public framework axiom memo
+      audit status remains independent
+PASS: Source cites owner approval authority
+      section 6
+PASS: Source registers primary runner
+      scripts/audit_companion_minimal_axioms_clean_base_exact.py
+PASS: Registry canonical ids include minimal_axioms
+      
+PASS: Registry node exists
+      minimal_axioms
+PASS: Registry current path points to this note
+      docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: Registry aliases current 2026-06-29 memo
+      ['docs/MINIMAL_AXIOMS_2026-05-20.md', 'docs/MINIMAL_AXIOMS_2026-06-04.md', 'docs/MINIMAL_AXIOMS_2026-06-05.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md']
+PASS: Registry aliases prior 2026-06-05 Record memo
+      
+PASS: Registry aliases prior 2026-06-04 Record memo
+      
+PASS: Registry aliases 2026-05-20 local-algebra memo
+      
+PASS: Registry does not alias superseded 2026-04-11 four-input stack
+      prevents stale A4/g_bare laundering
+PASS: Registry does not alias restored 2026-05-03 transition memo
+      keeps transition memo separate
+PASS: Registry note blocks observable-principle laundering
+      
+PASS: Registry records the quantum proposal and remaining physical boundaries
+      quantum structure is supplied; particular physical dynamics is not
+PASS: Registry does not retain the old record-only state or deny quantum composition
+      a substantive state/composition revision, not a historical wording match
+PASS: Registry note records 2026-07-02/03 no-privilege/readout/state/law/record wording
+      
+PASS: Registry excludes retired additive-I premise
+      no named scalar collection functional, additivity, or empty-value assignment
+PASS: Policy records 2026-07-02 foundation wording additions
+      
+PASS: Memo Record axiom carries the 2026-07-04 formation sentence
+      occurrence and quantum formation structure are supplied; rates and apparatus stay downstream
+PASS: Registry note records the formation sentence
+      
+PASS: Policy records 2026-07-04 formation-sentence entry
+      
+PASS: Policy records 2026-08-05 Admissibility likelihood revision
+      
+PASS: Policy records 2026-08-13 Record blank-unread revision
+      
+PASS: Policy records 2026-07-03 Record permanence restoration
+      
+PASS: Policy records 2026-07-03 Record section polish
+      
+PASS: Policy records 2026-06-29 foundation reset
+      
+PASS: Policy preserves the historical 2026-06-29 Admissibility and Record boundaries
+      
+PASS: Decision history has zero live premise inputs
+      0
+PASS: minimal_axioms is not a historical derivation target
+      
+PASS: Decision history records Record primitive provenance
+      
+PASS: Record provenance source is current memo
+      docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: Record provenance boundary forbids P2/log-det/source-action/context-selection laundering
+      
+PASS: Record provenance names blank unreadability and excludes retired additive-I premise
+      current primitive provenance must record both the adopted clause and the subtraction
+PASS: Note names exactly four framework axioms
+      
+PASS: Lattice locality clause is present
+      
+PASS: Qubit site-possibility and no-privilege clauses are present
+      
+PASS: Qubit distinction clause is present and joined to the no-privilege sentence
+      
+PASS: Policy records 2026-07-02 Qubit distinction clause
+      
+PASS: Registry note records the distinction clause
+      
+PASS: Lattice motion list is named about each site
+      
+PASS: Lattice site-distinction clause is present
+      
+PASS: Policy records 2026-07-02 Lattice site-distinction clause
+      
+PASS: Registry note records the site clause
+      
+PASS: Cl(3,0) is fenced as representation-only
+      
+PASS: Admissibility constrains local instruments and separates conditioning
+      locality is support/control locality, not full-history conditional screening-off
+PASS: Measurable outcomes retain almost-everywhere conditioning
+      finite carrier is not a finite outcome-menu assumption
+PASS: Quantum formation includes actuality, supported contents and permanence
+      stochastic actualization is supplied rather than derived by this runner
+PASS: Qubit composition includes positive tensor algebras and embeddings
+      one-site M2 is retained; composition is newly explicit
+PASS: Record fixed-reality clause is present
+      
+PASS: Live Record axiom excludes retired additive-I premise
+      historical discussion may quote the retired sentence; the governing section may not
+PASS: Qualification is named-content-only language
+      
+PASS: Qualification records state and law discipline
+      
+PASS: Audit-pipeline treatment says chain-satisfy without bounding
+      
+PASS: Observable-principle parent is explicitly outside the axiom node
+      
+PASS: Open gates outside axioms include staggered realization
+      
+PASS: Open gates outside axioms include theta
+      
+PASS: Physical context and formation choices remain open
+      
+PASS: Open gates outside axioms include physical persistence dynamics
+      
+PASS: Open gates outside axioms include g_bare
+      
+PASS: Open gates outside axioms include scale self-consistency
+      
+PASS: Conditioning uses compatible finite-region matrices and fixed actual controls
+      no global trace-class density matrix or unread metadata control is assumed
+PASS: Pointer readout is physical and its register sites are counted
+      symbolic content labels do not certify quantum memory capacity
+PASS: Policy records the owner's quantum revision authorization without an audit claim
+      PR review and landing remain distinct from the authorization
+PASS: Axiom/primitive purity guard passes
+        OK   realized_state_primitive (docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md): pure premise content
+PASS: Qubit: Pauli matrices provide a Cl(3,0)-compatible encoding
+      {sigma_i, sigma_j} = 2 delta_ij I checked as 2x2 complex matrices; encoding is notation-only
+PASS: Qubit: no nonzero 2x2 complex matrix anticommutes with all three Pauli generators
+      linear coefficient solve gives a=d=0, b+c=0, b-c=0, so M=0
+PASS: Lattice: Z^3 nearest-neighbor adjacency has six graph-distance-one neighbors
+      finite-range locality can be read as finite graph-distance range on this adjacency
+PASS: Admissibility: an illustrative accessible-control menu is normalized
+      classical-control subcase only; this is not a full-history neighborhood-screening theorem
+PASS: Record: a site with no record cannot be read
+      toy configuration: occupied site has a lock; blank site has no readout
+PASS: Record: a site never carries more than one record
+      toy configuration maps one site to one record identity; no double-lock at a site is used
+PASS: Record: records are permanent
+      same record identity and locked possibility persist; no resampling, re-selection, or removal is used
+PASS: Qubit: no possibility is privileged by the one-site domain
+      finite toy relabeling preserves the possibility domain; no default, weight, or selector is introduced
+PASS: Qualification: records and an unrecorded quantum predictor are distinguished
+      toy partial specification only; not a proof of joint-state sufficiency
+PASS: Qualification: supplied-condition law gives one answer where its condition holds
+      toy law has a supplied condition on record configurations and returns one determinate verdict when defined
+PASS: Boundary: runner supplies no physical context, coupling, apparatus, rate or scale conclusion
+      elementary notation and source/registry consistency only; no quantum premise derivation or physical validation
+
+runner_check_breakdown = {A: 80, B: 0, C: 0, D: 0, total_pass: 80}
+TOTAL: PASS=80 FAIL=0
+RESULT: PASS

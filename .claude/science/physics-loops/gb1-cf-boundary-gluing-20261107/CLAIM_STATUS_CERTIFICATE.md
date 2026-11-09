@@ -1,6 +1,25 @@
 # Author claim status
 
-## Current joint record-law continuation
+## Current permanent-outcome and conditioning continuation
+
+Claim type bounded_theorem; actual status conditional-support; trace
+frontier_discovery with reachability unknown_frontier. A supplied local quantum
+instrument and occurrence law produce permanent separated outcomes and positive
+one-wing intermediate states, without post-choice messages. Full-record and
+accessible-record conditionals differ. General state sufficiency requires
+joint predictive information; sufficient prepared records may reconstruct it.
+The polynomial superquantum control is excluded by added quantum consistency.
+
+The new foundation is non-governing candidate text. The owner requires a
+complete joint-model proof before any axiom update; no axiom PR is opened.
+All four uncommitted governing edits were restored. This science branch
+retains the governing axiom source. Exact finite
+checks, an original independent hand proof, exposed comparison and scoped delta
+review support this research milestone; none sets retained status. Physical
+preparation, calibration, actuation, rates, continuum and mass-gap questions
+remain open. outcome_conditioning/HANDOFF.md indexes the source and evidence.
+
+## Previous joint record-law continuation
 
 Claim type bounded_theorem; actual status conditional-support; trace
 frontier_discovery with reachability unknown_frontier. A supplied positive

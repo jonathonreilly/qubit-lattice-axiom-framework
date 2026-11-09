@@ -1,0 +1,115 @@
+{
+  "status": "conditional-support",
+  "main": "bf92a1d763030836ed55631d5d7a7ef3b288f284",
+  "parent": "8e0c276b60c16c745456f6f1036c5f7dc5eacd66",
+  "claims": {
+    "conditional_local_model_checked": true,
+    "all_candidate_clauses_jointly_realized": false,
+    "axiom_adoption": false,
+    "axiom_pr_opened": false,
+    "physical_actuation_or_calibration_derived": false,
+    "independent_numeric_replay": false,
+    "formal_audit": false,
+    "negative_packet_pass": false
+  },
+  "diagnostic": {
+    "source_sha256": "46127f2c9050de484dc444e5a3543a9d9aa8d93072d65c34ec33ecc9f1d9e0d0",
+    "limits": "nice10; five thread variables=1; CPU50/55; wall55 internal/60 outer; RSS256MiB macOS bytes",
+    "runs": [
+      {
+        "label": "exact",
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "python3",
+          ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/check.py"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 1.9581153749895748
+      },
+      {
+        "label": "overwrite",
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "python3",
+          ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/check.py",
+          "--fault",
+          "overwrite"
+        ],
+        "exit_code": 1,
+        "elapsed_seconds": 0.046074624988250434
+      },
+      {
+        "label": "frozen-condition",
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "python3",
+          ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/check.py",
+          "--fault",
+          "frozen-condition"
+        ],
+        "exit_code": 1,
+        "elapsed_seconds": 0.472473625006387
+      },
+      {
+        "label": "remote-setting",
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "python3",
+          ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/outcome_conditioning/check.py",
+          "--fault",
+          "remote-setting"
+        ],
+        "exit_code": 1,
+        "elapsed_seconds": 0.43939129199134186
+      }
+    ]
+  },
+  "exact_coverage": {
+    "settings": 7,
+    "setting_pairs": 49,
+    "reached_histories": 427,
+    "matrix_unit_semigroup_checks": 448,
+    "occupied_matrix_units_fixed": 252,
+    "permanent_reapplications": 560,
+    "dynamic_qubits": 6,
+    "continuous_time_numerically_executed": false
+  },
+  "proof_limits": [
+    "Calibration, preparation, rate and quantum operations supplied",
+    "Full joint-model completion remains open",
+    "One local two-site pointer write per event; no distant joint event",
+    "All-axis and arbitrary-reference results are analytical",
+    "General state may need more than bare records; prepared-domain reconstruction remains possible"
+  ],
+  "hashes": {
+    "PRIMARY.md": "de1c86b9dcf75ddb91e5b02ba98963ddfc6b4009696f6a599d4e2383c0a04eb5",
+    "RESULT.md": "1d359c695e04012f2f8b4737e4404b2cc992a09bf2402c7739a4ea38ca49cc2f",
+    "ASSUMPTIONS.md": "97ee3285e305396b0b1b4565c1d76013c14edcdfd2e1e09e040d18283d00f869",
+    "AXIOM_PROPOSAL.md": "c6cc9046b7190769658458124ac91c270630ce26808802099c0e8d5aad6202e6",
+    "INDEPENDENT.md": "1eea23f7ba75a9b269eb40b2667cf3a54002eecdd56396a5e4eefdc01b9ec999",
+    "SOURCE_CHECK.md": "41b5161c00f313d2588f0e2935c10ac6c717d01b12932c02476c2abc814cf232",
+    "DELTA_CHECK.md": "5edb4a30076ef5fa220cef2be3f99c23e6afa702cb2665a8a3ece13273bc9b00",
+    "check.py": "46127f2c9050de484dc444e5a3543a9d9aa8d93072d65c34ec33ecc9f1d9e0d0",
+    "outputs/exact.stdout": "663852ae828eb236c753d869e85e630f9cd7a7da3e3b8b83fdd1533b6a3c6c6e",
+    "outputs/exact.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/execution.json": "753a287902e4df1bd36d7f3153f3c8e983b7e1128a55a8d7b5920b46da1a32e0",
+    "JOINT_MODEL_OBLIGATION.md": "1e046f3626762796354243f7983b77b94216694bd3b57acbaedf72f44abd82ae",
+    "metadata_delta.json": "74535dfcf6200c8ae0938d38e72515689bd9b42b9f08412f67f3a06a34096217",
+    "governing_restoration.json": "aa30f3481777cf585c9cd97d05ec6a8b05d981a970094a3dcf9563d4860866cb"
+  },
+  "packaging_checks": {
+    "direct_vocabulary_files": 23,
+    "direct_vocabulary_violations": 0,
+    "python_syntax": true,
+    "json_parse": true,
+    "governing_worktree_clean_and_restored": true
+  }
+}

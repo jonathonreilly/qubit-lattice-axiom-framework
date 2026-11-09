@@ -1,6 +1,25 @@
 # Trace to GB1-CF
 
-## Current joint record-law test, 2026-11-09
+## Current local outcome formation and conditioning, 2026-11-09
+
+~~~yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: Can neighborhood influence form permanent quantum outcomes without passing settings, and what state or axiom revision is needed?
+source_of_blocker_text: user_goal
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: Prove joint satisfaction of all candidate clauses with allocated controls, readout and record compatibility before any axiom update.
+~~~
+
+Local absorbing instruments resolve the finite separate-event construction
+under named quantum assumptions. They retain permanence, distinguish actual
+local controls from conditional information and permit record-only predictors
+on sufficient prepared domains. The axiom proposal chooses broader quantum
+composition, states and formation openly. Neither the proof nor the proposal
+selects a fundamental dynamics, continuum limit, vacuum or mass gap.
+
+## Previous joint record-law test, 2026-11-09
 
 ~~~yaml
 trace_class: frontier_discovery

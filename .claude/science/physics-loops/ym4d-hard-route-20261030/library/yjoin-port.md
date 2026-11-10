@@ -5,7 +5,20 @@ lease_until: 2026-11-10T15:53Z
 
 Provenance: Claude Opus 5.5 (high), Mac mini worker 2, commit fbf9ba1cd, 2026-11-10. A port, not an audit. Source Y = YM4_1400.tex of Sussman and Alpoge (authors of the text with Claude and Codex), repository ethanwsussman/Yang--Mills-LLM-experiment at 2bc0658f91d2, fetched to a private scratch copy (136,637 lines); 'Y n' = line n. Everything taken from Y is credited to Y and is `unchecked` until another provider checks this port.
 
-(in progress; sections are written as they are checked)
+## 0. Result
+
+Stop condition (i): the port is complete. Statements J1, J1', J2, J3 (with Lemma AVG and Lemma J3.5), D, C, M and BT are written with hypotheses, constants and Y lines, and each step was checked as written. No step failed and no counterexample was found.
+
+- (1) `mb:real-collar-datum` (J1, section 2): holds with Y's constant `2 pi C_lift B_3 eps_1/(3(L^2-1))`. Two steps Y gives in a sentence are calculated: the geometric sum `sum_{t>=1} L^{-2t} = 1/(L^2-1)` (J1.4b), and the logarithm bound `|log h| <= (pi/3)|h - 1|` for `|h - 1| <= 1` (Lemma L3). One step Y uses without saying it: the face lift adds no curvature term to `mb:rigidity-defect`, because its block transports are 1 and its average is exact (J1.4).
+- (2) `mb:real-collar-norm` (J2, section 3): holds with `C_mu = e^{6 mu delta_0} B_5 C_row 2 pi C_lift B_3/(3(L^2-1))`. The conversion `e^{6 mu delta_0}` is `e^{(delta_0/2) 12 mu}`, with `12 mu` the weighted length of a staircase path from a wide-collar point to `W^c` (`l^1 <= 4 l^inf` in four dimensions, J2.2).
+- (3) The global use (J3, section 4): `sup_{b in R} |S_g S_X^{-1} - 1| <= 4 C_mu eps_* e^{-(delta_0/2) M R_m}`. Y's step "followed by averaging on these blocks" is done here as Lemma AVG: the level-`j` relative average moves by at most `2 L^j |A|_inf`, uniformly in `j`, by iterating the one-step expansion of `library/b98.md` Lemma 8 (needs `sum_n alpha_n` small and `L^j |A|` small). **The last equality `= o(delta'_j)` needs, as inequalities:** (FD) `theta_j <= theta_m + B_bar (m - j)`, with the stage window `m - j <= N_m = R_m` (stages run from `k_flat = m - N_m`, Y 63834); (RC) `R_m >= (log(theta_m - c_5))^r`, `r >= 2`; and `theta_m >= max(2c_5, 2e^2)`, `B_bar L (log theta_m)^r <= theta_m`, `(delta_0/2) M >= 1`. Then the ratio to `delta'_j` is at most `(8 C_mu eps_*/A_1) e^{-(delta_0 M/4) (log(theta_m/2))^2}` (Lemma J3.5). Without the stage window the equality can fail: (FD) alone lets `theta_j` grow with `m - j`.
+- (4) Y-DENS (D, section 5): holds; case split `q <= k_0 + 1` (inside the new box: shell clause `(1 - 3beta_s/4)`; outside: deep exterior, at most `(2/25) T_d`; astride the face: wholly in `Omega_j \ Omega_q`, `kappa_x`) and `q > k_0 + 1` (in one original layer: exterior clause, at most `T_d/2`; astride: Hölder translation, errors at most `T_d/4` in the compressed range). Fit: (D-s) `C_L delta'_j + C_D eps_* e^{-c R_j} <= (beta_s/2) eps_j`.
+- (5) Y-CONT (C, section 6): holds under (C-s) `C_mc pi delta'_j < eps_j`; no plaquette bound is used.
+- (6) Y-BELT (BT, section 7): holds under (BT-s); three centre comparisons (test cube `C eps_* e^{-c M_2 R_m}`, annulus `C eps_* e^{-c R_m}`, `S^-` to `S` `C(L) delta'_j`) and an exhaustive case split by the number of ends in the old `Omega_m`.
+- (7) Y-MEAN (M, section 6): the pivot is on the regular branch by `library/ypath-port.md` P3 (ported there, not redone); the collar block means are on their chart by C.4.
+- (8) Section 8: no step of (4)-(7), nor of (1)-(3), reads a plaquette bound of `U^+` on the outer cell layer of `X` at a sharp threshold. Two places enter that layer and the earlier readings do not list them: the datum bound BT.0 and the outer band of the annulus in BT.2. Both read datum holonomies (1, or lifted top holonomies of `V_m` bounded by T4) and admitted radii only. This is what Proposition 5.3 of `inset-chart.md` needs.
+
+What stays open: the inputs of section 9. Two of them carry the analysis and are **assumptions at the lines Y uses them**, not proved there: IN-PR (weighted kernels of the coupled inverse, "Assume ...", Y 13155; response inputs of A3, Y 16084-16085) and IN-POLY (the joined response polydisc / common admitted datum ball, Y 13244, 13345). The averaging input IN-AVX is `library/b98.md` Lemma 8, which waits for its other-provider check.
 
 ## Repo search
 
@@ -157,6 +170,8 @@ and the factor `u^s e^{-cMu^2/2}` tends to 0 as `theta_m -> infinity`. So the bo
 
 *Proof.* By (FD) and `R_m <= L(log theta_m)^r`: `theta_j <= theta_m + B_bar L (log theta_m)^r <= 2 theta_m`. So `delta'_j >= A_1 (2 theta_m)^{-1/2} = (A_1/2) e^{-u/2}` (since `2 theta_m = 4 e^u`). By (RC) and `theta_m - c_5 >= theta_m/2`: `R_m >= u^r >= u^2`, so `e^{-c M R_m} <= e^{-c M u^2}`. Hence `4 C_mu eps_* e^{-cMR_m} / delta'_j <= (8 C_mu eps_*/A_1) e^{u/2 - c M u^2} <= (8 C_mu eps_*/A_1) e^{-cMu^2/2}`, using `u/2 <= cMu^2/2` (`u >= 1`, `cM >= 1`). Finally `log theta_j <= log(2 theta_m) = u + log 4 <= 3u`, so `(log theta_j)^s <= 3^s u^s`. Square.
 
+(If `p_1 < 0`, use `delta'_j >= A_1 theta_j^{-1/2} (3u)^{p_1}` instead; this multiplies the bound by `(3u)^{|p_1|}`, and the conclusion is unchanged, since `u^{s + |p_1|} e^{-cMu^2/2} -> 0`.)
+
 So the last equality of Y needs exactly: the stage window `m - j <= N_m = R_m`, the upper frame drift `B_bar`, and `R_m` at least the square of `log(theta_m - c_5)`. Without the stage window it fails: (FD) alone allows `theta_j` as large as `theta_m + B_bar (m - j)` with `m - j` unbounded in terms of `theta_m`, and then `delta'_j` can be below `e^{-cMR_m}`.
 
 **Inputs of J1-J3 from outside the argument:** IN-IMP, IN-RES, IN-AV, IN-RIG, IN-BG, IN-POLY, IN-PR, IN-ROW, IN-AVX, IN-FRAME, (H-J), (H-R), the stencil constant `C_st`; Y lines in section 9.
@@ -202,10 +217,102 @@ Inputs of D: `G(omega) = 1` (inset guard clauses: shell, deep exterior, exterior
 C.1 (Y 64791-64796). The indicators use the order-`q` blocks based between the first and third layers outside `Omega_q`. These blocks lie in the collar `K`; the new gauge insertion starts beyond the third layer. As Y.
 C.2 (Y 64796-64800). All internal links of such a block are tested exterior nonpivots, so on the ball `|n(b) S(b)^{-1} - 1| < 2 delta'_j`, hence `d(n(b), S(b)) < pi delta'_j` by (N).
 C.3 (Y 64799-64801). After promotion the block contains no finer determining node, so in the prospective axial frame the mean contours of the reference `S` on the block are trivial: each equals 1. Y states this; it is the definition of the block axial frame with no interior node (input IN-AXF).
-C.4 (Y 64802-64808; the calculation). Let `T_B` be the mean contour map of the full block, from the internal links (sup of `d` per link) to the contour values. IN-MC: on the regular chart of radius `rho_mc` about the reference it has derivative at most `C_mc` (Y: "The mean contour map on the full block has a bounded derivative"; by IN-MEAN, lem:averaging-1a-1-1, Y 3714, and Cauchy estimates). The segment `n_t(b) = exp(t log(n(b)S(b)^{-1})) S(b)` stays in the ball (ypath-port P4(i)), so `d(T_B(n), T_B(S)) <= C_mc max_b d(n(b), S(b)) < C_mc pi delta'_j`. With C.3, `d(T_B(n), 1) < C_mc pi delta'_j < eps_j` by (C-s), and `|T_B(n) - 1| <= d(T_B(n), 1)` by (N). "Also after changing the stage centre" (Y 64803-64804): the same bound holds with `S^-` in place of `S`, since `|S^- S^{-1} - 1| <= C(L) delta'_j` (Y 64150-64160; ypath-port P4-P5), which changes `C_mc pi` to `C_mc (pi + pi C(L))`. Checked. Square.
+C.4 (Y 64802-64808; the calculation). Let `T_B` be the mean contour map of the full block, from the internal links (sup of `d` per link) to the contour values. IN-MC: on the regular chart of radius `rho_mc` about the reference it has derivative at most `C_mc` (Y: "The mean contour map on the full block has a bounded derivative"; by IN-MEAN, lem:averaging-1a-1-1, Y 3714, and Cauchy estimates). The segment `n_t(b) = exp(t log(n(b)S(b)^{-1})) S(b)` stays in the ball (ypath-port P4(i)), so `d(T_B(n), T_B(S)) <= C_mc max_b d(n(b), S(b)) < C_mc pi delta'_j`. With C.3, `d(T_B(n), 1) < C_mc pi delta'_j < eps_j` by (C-s), and `|T_B(n) - 1| <= d(T_B(n), 1)` by (N). "Also after changing the stage centre" (Y 64803-64804): the same bound holds with `S^-` in place of `S`, since `|S^- S^{-1} - 1| <= C(L) delta'_j` (BT.3 below, Y 64139-64168; ypath-port P4-P5), which changes `C_mc pi` to `C_mc (pi + pi C(L))`. Checked. Square.
 
 **Statement M (Y-MEAN).** On the approximate collar ball, (i) the actual pivot of every newly imposed coarse row is on the regular branch, and (ii) every block mean of the exterior collar used by the mean-contour axial readings is on its regular chart.
 
 *Port.* (i) is ypath-port P3.1-P3.4 (Y 64910-64958), ported and checked there (pivot within `C_3(e + delta'_j)` of `b^+`, then within `C_4 delta'_j`; regular branch by IN-REG under (S-e), (S-d)). Not redone. (ii) is C.4 with `rho_mc` in place of `eps_j`: `d(T_B(n), 1) < C_mc pi delta'_j <= rho_mc`. On the double block of `c` the plaquette defects of the induced field are at most `C_av e` (`O_L(e)`, Y 64929-64935; ypath-port P1(iii)), and the regular averaging formula puts the central transport within `C(L) e` of `W` (ypath-port P3.1 step (2)). Checked.
 
 Inputs: IN-AXF (Y 64799-64801), IN-MC/IN-MEAN (Y 3714, 64806-64808), the approximate collar test (Y 64032-64038), ypath-port P3 and its inputs (IN-AVF, IN-TRANS, IN-REG, IN-ROW).
+
+## 7. (Y-BELT 6) The fifth and sixth ordinary approximate-test groups, Y 64027-64211
+
+**Setting (Y 64027-64052).** Last stage: `j = m - 1`, `Y = Z''_m(X)`, `K = (Omega_m^c \ Y) cap X`. `S = M^j U_{m,X}^{(N_m)}` (centre of the approximate collar test), `S^-` the preceding-stage average, `L_j` the applicable ordinary centre (localized strip centre `V_j^{bg,loc}` on the actual strip read and substitution mask, the ordinary global centre otherwise; Y 64125-64133), `V^bg_{j,sq'}` the ordinary test-cube centre, formed on `sq'^{~4}`. The fifth and sixth groups are the ordinary approximate tests `1{|V_j(b) V^bg_{j,sq'}(b)^{-1} - 1| < 2 delta_j}` on the tested bonds `b` of `sq'^{~2}` other than the pivots, with bases in `(Omega_m^{~2} \ Omega_m) cap X` and `(Omega_m \ Lambda_m^~) cap X` (Y 64046-64052; test `chi'_k` as Y 61973). All comparisons are in the common block axial frame of the full read blocks (Y 64075, 64130, 64192-64193; input IN-FRAME').
+
+**Statement BT.** At every point of the complete chart (fixed admitted `omega` with `I(omega) = 1`, `T4 = 1`, and `B` in the approximate ball; the preceding guard kept during these comparisons, Y 64038-64039), every test of the fifth and sixth groups equals 1, provided
+
+  (BT-s) `(C_L + C(L)) delta'_j <= delta_j / 2` and `C_e eps_* (e^{-c R_m} + e^{-c M_2 R_m}) <= delta_j / 4`,
+
+with `C_e` the largest constant of BT.1 and BT.2.
+
+*Steps.*
+
+BT.0 (datum bound for `U_{m,X}`; Y 64087-64106). Each tested holonomy of the joined datum of `X` is within `eps_*` of one: retained level-`j` plaquettes keep their old holonomies; a level-`m` plaquette with a corner in a carried density cube is bounded by that test (T4); the density cubes on `Omega_m^{~4}` cover the plaquettes near the old seam; any other newly tested plaquette has its averaging blocks in the preceding member of level `j` outside the old `Omega_m`, and the exact one-step average of the fine plaquettes (old rows) gives the coarse bound; at the exterior tower a tested holonomy is 1 or a lifted top holonomy of `V_m`. These are datum bounds at the level of the datum, not divided by any fine spacing. This is part (i) of the certificate `I(omega)` of inset-chart 5.2 (input (I3), its proof is row 624, `library/i3-cert.md`). Cited, not redone.
+
+BT.1 (test-cube comparison; Y 64046-64082). The complete reads stay at distance at least `c M R_m` from `dX` (each added test layer has width `M_2 R_m` in level-`m` units; interior bases at least one level-`m` cell from `X^c`, exterior bases in `O_m` within two cells of `Omega_m`; Y 64053-64060). The test-cube box meets neither the prepared seam nor the tower collar at `dX` (Y 64060-64066), and the prospective joined sequence has top level `m` throughout it. On the box the top rows of `U_{m,X}` are `V_m`, so its joined datum for the test-cube localization is the one induced by the lift of `V_m`, whose background is the ordinary test-cube background (Y 64068-64073). By BT.0 the datum is below the ceiling of J1. Apply J1, J2 (`W` = the test-cube box, collar width fixed, distance of the read from the box boundary at least `c M_2 R_m` in level-`m` units, Y 64075-64077) and Lemma AVG as in J3.2-J3.4:
+
+  `|S(b) V^bg_{j,sq'}(b)^{-1} - 1| <= C_e eps_* e^{-c M_2 R_m}`  (BT.1)
+
+with `C_e = 4 C_mu`, `c = delta_0/2` times the fraction of Y 64076. This is Y's display at Y 64078-64081, with the averaging step done by Lemma AVG. It reads no plaquette bound of `U^+` at the artificial bare rim (Y 64083-64086).
+
+BT.2 (annulus comparison; Y 64108-64137). Outer box: `X` inset by a quarter level-`m` cell, rounded on the `M_1`-grid; excluded inner box `(Omega_m^{~2})^c cap X`. On the annulus both backgrounds (`S^-` side and ordinary side) have the same regions, the same determining rows and the same top data on the two boundary bands (the earlier stages alter rows only beyond the inner band; the new gauge draws of the last stage start outside `Omega_m^{~3}`; Y 64115-64123). Joining at level `m` on the outer band and at level `j` on the inner band gives one datum for both. By the two-sequence form of J1-J2 (Y 13414-13425: each against the common joined background, twice the constant) and Lemma AVG, with distance of order `M R_m` to the annulus boundary:
+
+  `|L_j(b) S^-(b)^{-1} - 1| <= C_e eps_* e^{-c R_m}`.  (BT.2)
+
+(Y states the weaker rate `e^{-c R_m}`; the distance gives `e^{-c M R_m}`. Only the weaker one is used.)
+
+BT.3 (`S^-` to `S`; Y 64139-64168). As Y and ypath-port P1-P5: the finer determining set at the prospective averages, then the freed level-`j` rows moved to their actual values; nonpivot increments `< 2 delta'_j` by the approximate collar test; freed pivots by the contour argument of `hi:real-finer-collar-path` (ypath-port P3.4, increment `C_4 delta'_j`); the datum increment is supported in the collar, and the real response bounds, on the common axial reads inside the old `Omega_m`,
+
+  `|S^-(b) S(b)^{-1} - 1| <= C(L) delta'_j`.  (BT.3)
+
+Y does this "after the approximate collar test and before the sharper collar split" (Y 64167-64168). The response bound is input IN-RESP (ypath-port section 4).
+
+BT.4 (the case split; Y 64170-64211). Let `b` be a tested nonpivot of the fifth or sixth group. For unitaries, `|x_1 x_2 ... x_r - 1| <= sum_i |x_i - 1|` (telescoping and unitary invariance). Three cases, exhaustive since a bond has 2, 0 or 1 endpoints in the old `Omega_m`:
+
+- (a) both ends in the old `Omega_m`. The carried or completed fluctuation test gives `|V_j(b) L_j(b)^{-1} - 1| < delta_j` (with the ordinary strip shift on its actual mask; Y 64170-64172). Then
+  `|V_j V^bg^{-1} - 1| <= |V_j L_j^{-1} - 1| + |L_j S^{-,-1} - 1| + |S^- S^{-1} - 1| + |S V^bg^{-1} - 1| < delta_j + C_e eps_* e^{-cR_m} + C(L) delta'_j + C_e eps_* e^{-c M_2 R_m} < 2 delta_j` by BT.1-BT.3 and (BT-s).
+- (b) neither end in the old `Omega_m`. Then the end outside `Omega_m` is in `K` (Y 64176-64177; geometry input), so the approximate collar test gives `|V_j S^{-1} - 1| < 2 delta'_j`, and `|V_j V^bg^{-1} - 1| < 2 delta'_j + C_e eps_* e^{-c M_2 R_m} < 2 delta_j` by BT.1 and (BT-s) (`2 delta'_j <= delta_j`).
+- (c) one end in the old `Omega_m` (a crossing of the old wall, direct graded rule). The full exterior endpoint block lies in `K`, the interior endpoint is in the first stored ordinary strip layer, and the completed strip test gives `|V_j(b) L_j(b)^{-1} - 1| < delta_j` in the original plain coordinate (Y 64184-64189). The centres are compared on the full two blocks by the mean-contour axial reading (Y 64190-64199): the exterior contour of the ordinary frame is determined by the internal bonds of the exterior block, which the direct collar test reads, so `|L_j(b) S(b)^{-1} - 1| <= C_L delta'_j + C_L eps_* e^{-c R_m}` (Y 64200-64203) without a collar bound on the crossing itself. With BT.1: `|V_j V^bg^{-1} - 1| < delta_j + C_L delta'_j + C_L eps_* e^{-cR_m} + C_e eps_* e^{-c M_2 R_m} < 2 delta_j` by (BT-s) (`C_L <= C_e` w.l.o.g.).
+
+In the incident-bond convention a crossing in the mask is case (b) with the direct collar bound in that convention's frame (Y 64209-64211). Checked. Square.
+
+The calculation Y gives as "fit in the remaining `delta_j`": (BT-s) holds at weak coupling, since `delta'_j / delta_j = (log theta_j)^{-(p_0 - p_1)}` (Y 63876, 1115-1118: `delta_j = (A_1/A_0) eps_j`, `delta'_j = g_j A_1 p_1(g_j)`) and `eps_* e^{-c R_m} / delta_j <= (2 eps_* A_0/(A_1 A_0)) e^{u/2 - c u^2} -> 0` by the argument of Lemma J3.5 (`delta_j >= A_1 theta_j^{-1/2} >= (A_1/2) e^{-u/2}`).
+
+Inputs of BT: (I3) (BT.0), IN-FRAME' (Y 64075, 64130, 64192-64193), the geometry (Y 64053-64066, 64108-64123, 64176-64177, 64184-64187), J1-J2 and Lemma AVG (BT.1, BT.2), IN-RESP and ypath-port P3-P5 (BT.3), the carried and completed fluctuation and strip tests (Y 64170-64172, 64186-64189), the approximate collar test (Y 64032-64038).
+
+## 8. (Item 8) Does any step read a plaquette bound on the outer cell layer of `X` at a sharp threshold?
+
+Answer, by the text: **no, in each of (Y-JOIN), (Y-DENS), (Y-CONT), (Y-BELT), (Y-MEAN).** The outer cell layer `E` of `X` (the artificial bare rim) is entered only in two ways: (1) through the existence of the admitted regular orbits and their radius below a fixed ceiling, and (2) through datum holonomies of the joined datum there, which are 1 or lifted top holonomies of `V_m` and are bounded by the carried top density tests (T4), not by the literal final-guard threshold on plaquettes of `U^+`. Place by place:
+
+| Argument | Where its reads lie | Reads in `E`? | What is read there |
+|---|---|---|---|
+| J1-J3 (Y-JOIN global use) | collar read set `R`, at weighted distance `>= M R_m` from `dX` (J3.1) | the joining collar `Q_a subset X \ O_m` meets `E` | J1 reads the datum tests (H-eps), at the collar the lift of `V_m`: kind (2); J1.1 reads the radius: kind (1). The output is used only on `R`. |
+| D (Y-DENS) | halo in `Omega_{j-1} \ Omega_q subset O_m`, two level-`m` cells inside `X` (D.1); density box in layer `j` | no | clauses of `chi_in`, `kappa_x` on the top inset (Y 64707-64708); Hölder in a comparison cube in the inset |
+| C, M (Y-CONT, Y-MEAN) | order-`q` blocks in `K` (C.1); double blocks in the old member of level `j` (ypath-port P2(i)) | no | no plaquette bound at all in C; in M only `C_av e` on the double block (kind (1)) |
+| BT.0 | the joined datum of `X`, including the exterior tower | yes | tower holonomies 1 or lifted top holonomies, density-cube tests of `V_m` (Y 64095-64106): kind (2). "They do not divide the top plaquette deviation by the square of the fine spacing" (Y 64105-64106). |
+| BT.1 | test-cube box, clear of the tower collar at `dX` (Y 64063-64066) | no | "does not require the discarded sharp bound at the artificial bare rim of `X`" (Y 64083-64086) |
+| BT.2 | annulus with outer boundary `X` inset by a quarter level-`m` cell | the outer band lies in `E` | the common top data `V_m` on the band (datum, kind (2)) and the regularity of both backgrounds (kind (1)); the output is used at distance of order `M R_m` from the band |
+| BT.3 | collar `K` and old `Omega_m` | no | response along the path (ypath-port) |
+| BT.4 (c) | crossing of the old wall, exterior block in `K` | no | the strip test and the internal bonds of the exterior block; "without assuming an additional collar bound on the crossing itself" (Y 64196-64198) |
+
+The two places that come nearest are BT.0 and BT.2, which the earlier readings (`prior/ypath-read.md` 5, inset-chart 5.3, inset-chart-check (7)) do not list: BT.2's outer band is inside `E`. What it reads there is datum (kind (2)), so Proposition 5.3 of `inset-chart.md` is not affected. Its premise for BT.2 is that the `V_m` tests on the outer band are within `eps_*` of one, which is T4 with the covering of the outer six cells by carried density cubes (Y 76692-76697, used in inset-chart Lemma 5.2). That is the statement Proposition 5.3 needs.
+
+## 9. Inputs from outside the argument (cited, not proved here)
+
+| Input | Used in | Content | Y lines | Status in Y at those lines |
+|---|---|---|---|---|
+| IN-IMP | J1.1 | regularity improvement: radius `B_3 eps_1` | 13293-13295 | stated, cited to the background theorem |
+| IN-RES | J1.2, J1' | `mb:restriction-identity`: restriction is critical at its induced datum | 12920-12955 | proved there, given regular uniqueness |
+| IN-AV | J1.3, J3.4 | `mb:uniform-real-average`: `|dM^n U - 1| <= 2 eps L^{2(n-k)}`, regular mean branches | 10976-11001 | proved (curvature recursion) |
+| IN-RIG | J1.4 | `mb:rigidity-defect`, `mb:rigidity-sum`: coefficient 1 on the coarse difference, `C_L varpi` per level | 10833-10885 | proved from `mb:finite-stokes`, `mb:mean-versus-comb` |
+| IN-BG | J1', D, BT | `bgc:proper-background`: existence, radius `C_B eps`, uniqueness at `a_0` | 35634-35646 (proof from 35651) | proposition with proof |
+| IN-POLY | J1' | the joined response polydisc of radius `r_B`; the real path stays in the common admitted datum ball | 13345-13350; 13244 ("Assume it stays in the common admitted datum ball") | **assumed at these lines**; `r_B` is named only at 13345 |
+| IN-PR | J2.1 | weighted pointwise kernels of the coupled inverse; point response `B_5 e^{-delta_0 d}` for all declared readouts | 13155-13163; 25741 ff.; 16080-16090 | **assumed** ("Assume the actual coupled inverse has weighted pointwise kernels", 13155); Y lists these as response inputs of A3 (16084-16085) |
+| IN-ROW | J2.1 | row sum at rate `delta_0/2` uniformly bounded | 13165-13178, 13376-13377 | the Schur premise of `mb:extended-source` is an input |
+| IN-AVX | J3.3 | one-step averaging expansion (A4)-(A5) | Balaban CMP 98 Prop. 3; rebuilt as `library/b98.md` Lemma 8 | b98 Lemma 8 is a hand proof by Codex, not yet checked by another provider |
+| IN-FRAME, IN-FRAME' | J3.4, BT | coordinates compared in the common node / block axial frame, so that their ratio is the double-bar average `S_j` | 65028-65031, 13362-13366, 64075, 64130, 64192-64193 | stated as the convention |
+| (H-J), (H-R), `C_st` | J3 | geometry of the joining collar at `dX`, clearance and spacing of the read set | 65026-65055, 63760-63766 | stated with reasons |
+| (I3) | BT.0, (H-eps) | datum bound `Ce_q` on the entering support (certificate `I`) | 64087-64106, 65417-65563, 134201-134205 | proved in Y on the entering support; port is row 624 |
+| `G(omega) = 1`, T3, T4 | D, BT | the inset guard clauses at the fixed prospective orbit | 63876, 64234-64313 | the guard (inset-chart 5.4) |
+| (E1), IN-RESP | D.5, BT.3 | the response along the collar path | 64979-65014 | ported in `library/ypath-port.md` P5 (IN-RESP open there) |
+| IN-HOL | D.4 | local regularity, Hölder bound of the curl | 15778-15812, 11901-11917 | proved under their analytic inputs |
+| IN-COMP | D.4 | compressed range `q >= m - O(log R_m)`, `m >= R_m` | 64764-64765, 63776-63778 | stated |
+| IN-DBOX | D.5 | density localization box, three-small-cube margin, error `C eps_* e^{-c R_j}` | 64776-64786 | stated, by the joined comparison |
+| IN-AXF, IN-MC | C | trivial mean contours in the prospective axial frame; bounded derivative of the mean contour map | 64799-64808; 3714 | stated; IN-MEAN proved at 3714 |
+| (FD), (RC) | J3.5, D.2, D.4, BT | frame drift and `R_m >= (log(theta_m - c_5))^r` | 1103-1111, 4583 | definitions |
+
+## 10. For the consumer (`library/inset-chart.md` 5.3)
+
+- (Y-JOIN) as used in inset-chart 5.3 and Proposition 5.5 (T6): hypotheses part (ii) of `I` (global datum within `eps_1`) and the geometry floors, as the note says; add (J1-s), (J1-r) on `eps_1`, the fixed collar width `mu` with `4 mu <= 2 M R_m`, and the conditions of Lemma J3.5 for `o(delta'_j)`. Conclusion J3 with `C = 4 C_mu`, `c = delta_0/2`.
+- (Y-DENS), (Y-CONT), (Y-BELT), (Y-MEAN): their hypotheses on `omega` are `G(omega) = 1`, T4, `I(omega) = 1` and the admitted `U^+` with radius below the ceiling, as inset-chart 5.3 and Proposition 5.5 say; the smallness conditions are (D-s), (C-s), (BT-s) and those of ypath-port (S-e), (S-d), (S-r), all of the form "`delta'_j/eps_j` small and `eps_* e^{-c R}` small against `delta_j`", which hold at weak coupling by Lemma J3.5 and its variants.
+- Proposition 5.3: confirmed for these arguments (section 8), with BT.0 and BT.2 added to its evidence list.

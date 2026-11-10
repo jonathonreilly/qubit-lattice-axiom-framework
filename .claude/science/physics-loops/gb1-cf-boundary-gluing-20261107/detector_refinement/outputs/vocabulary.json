@@ -1,0 +1,122 @@
+[
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/ASSUMPTIONS.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/AUTHOR_CHECK.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/DELTA_CHECK.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/HANDOFF.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/INDEPENDENT.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/INDEPENDENT_PROVENANCE.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/NO_GO_DISCIPLINE_CHECKLIST.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/PRIMARY.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/RESULT.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/SEARCH.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/SOURCE_CHECK.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/outputs/MEASUREMENT_NOTES.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/outputs/result_before_clarifications.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/check.py",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/outputs/primary_v1.py",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/reference_check.py",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/STATE.yaml",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/HANDOFF.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/TRACE_GATE.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/REVIEW_HISTORY.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  }
+]

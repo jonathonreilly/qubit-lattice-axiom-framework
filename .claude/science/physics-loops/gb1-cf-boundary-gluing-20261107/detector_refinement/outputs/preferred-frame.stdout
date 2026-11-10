@@ -1,0 +1,63 @@
+{
+  "status": "emitted; independent validation required",
+  "fault": "preferred-frame",
+  "cases": 16,
+  "states": 352,
+  "support_entries": 9472,
+  "terminal_laws": {
+    "direct_q1": {
+      "(1, 1)": "1/2",
+      "(2, 0)": "1/2"
+    },
+    "refined_q1": {
+      "(1, 1)": "1/4",
+      "(2, 1)": "1/4",
+      "(3, 0)": "1/2"
+    },
+    "tomography_s0_q1": {
+      "(1, 1)": "1"
+    },
+    "tomography_s1_q1": {
+      "(1, 1)": "1"
+    },
+    "tomography_s2_q1": {
+      "(2, 0)": "1"
+    },
+    "tomography_s3_q1": {
+      "(2, 0)": "1"
+    },
+    "direct_q2": {
+      "(1, 1)": "1/2",
+      "(2, 0)": "1/2"
+    },
+    "refined_q2": {
+      "(1, 1)": "1/6",
+      "(2, 1)": "1/6",
+      "(3, 0)": "2/3"
+    },
+    "tomography_s0_q2": {
+      "(1, 1)": "1"
+    },
+    "tomography_s1_q2": {
+      "(1, 1)": "1"
+    },
+    "tomography_s2_q2": {
+      "(2, 0)": "1"
+    },
+    "tomography_s3_q2": {
+      "(2, 0)": "1"
+    }
+  },
+  "finite_diagonal_checks": {
+    "diagonal_effects": 25,
+    "summable_pairs": 225,
+    "tomography_coefficients": [
+      "1",
+      "-1",
+      "-1",
+      "0"
+    ],
+    "tomography_determinant": "-1",
+    "scope": "exact finite arithmetic, not an M2 physical calibration"
+  }
+}

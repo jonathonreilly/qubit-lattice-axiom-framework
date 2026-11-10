@@ -1,0 +1,26 @@
+{
+  "command": [
+    "nice",
+    "-n",
+    "10",
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/check.py",
+    "--certificate",
+    ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/outputs/baseline.json"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 13.735,
+  "peak_rss_kib": 77280,
+  "termination_reason": null,
+  "cpu_limit_seconds": 120,
+  "wall_limit_seconds": 180,
+  "rss_limit_kib": 1572864,
+  "thread_variables": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "source_sha256": "997c04cc408a1fdaf4e3e5a6f0b4efda04bcc6004c61c0fc6d75e83f86cea2ec"
+}

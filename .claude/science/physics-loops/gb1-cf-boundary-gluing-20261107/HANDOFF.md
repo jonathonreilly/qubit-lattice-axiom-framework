@@ -1,11 +1,12 @@
 # Current campaign handoff
 
-The current checkpoint is STATE.yaml and [probability_bridge/HANDOFF.md](probability_bridge/HANDOFF.md).
-The owner-selected task is the probability bridge from the existing base
-principles. The quantum axiom proposal is deferred; no governing change is
-being made. Earlier finite gauge and outcome constructions below remain
-historical conditional evidence. The current main identity is recorded in
-the current checkpoint, not the original milestone snapshots below.
+The current checkpoint is STATE.yaml and [detector_refinement/HANDOFF.md](detector_refinement/HANDOFF.md).
+The owner-selected task is the neighborhood detector and refinement bridge
+without Born or axiom changes. A supplied finite record process now forms
+outcomes and a physical coarse output; full quantum effect identification
+remains open. The quantum axiom proposal is deferred. Earlier finite gauge,
+outcome and probability packets remain historical conditional evidence.
+The current main identity is recorded in the checkpoint.
 
 # Original finite boundary flux and gluing milestone
 

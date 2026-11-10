@@ -1,6 +1,100 @@
 # Scientific review lenses and findings
 
-Required for every review and affected-fix confirmation. Apply every lens whose trigger matches the actual content; conditional triggers are mandatory. The [focused landing review depth](../SKILL.md#focused-landing-review-owner-directed-2026-09-08) governs report granularity, while complete argument reading and independent checks remain required.
+Required for every review and affected-fix confirmation. Read the Review depth section first: it says whether the unit gets a scope read or the full read. In a full read, apply every lens whose trigger matches the actual content; conditional triggers are mandatory. The [focused landing review depth](../SKILL.md#focused-landing-review-owner-directed-2026-09-08) governs report granularity, while complete argument reading and independent checks remain required.
+
+## Review depth
+
+Owner choice, 2026-11-10 (`docs/ai_methodology/SETTINGS.md`, Landing review).
+Being on `main` means that a change was reviewed for honest scope and clean
+integration. It grants no standing (`docs/ai_methodology/RULES.md`, sections 1
+and 3). A landing read therefore has one of two depths. A script reads the
+depth from the unit's delta:
+
+```bash
+python3 docs/ai_methodology/skills/review-loop/scripts/review_depth.py \
+  --base origin/main <unit-head> [<unit-head> ...]
+```
+
+It prints `DEPTH scope` only when every changed path is working material:
+
+| Path | Change that counts |
+|---|---|
+| `.claude/science/` | any |
+| `research/` | any |
+| `docs/<name>.md` | added |
+| `scripts/<name>.py` | added |
+| `logs/runner-cache/` | added |
+
+Every other change gets the full read and prints `DEPTH full`. That covers a
+changed, renamed or deleted file that `main` already holds outside the two
+working folders. It also covers a new file anywhere else: rules, procedures,
+commands, tools, tests, audit data, controlled data and publication surfaces.
+One such path gives the whole unit the full read. If the script prints no
+`DEPTH` line, the unit gets the full read. The table is the script's
+`WORKING_MATERIAL` list, and the contract check fails when the two differ.
+
+The reviewer or the lander may raise a unit to the full read and records the
+reason. Nobody lowers a depth. Raise it when the owner or the request asks,
+or when the text alone cannot settle a question of honest scope.
+
+### Scope read
+
+A scope read asks one question: does the text say more than the work shows?
+Read every title, summary, status line and statement in the changed Markdown
+files, with the premises and domain that each statement gives. Do not read
+proofs, derivations, runner code or logs, except to find a number that the
+text quotes. Report these as findings, and nothing else:
+
+1. A title, summary or status line that claims more than the statements
+   under it.
+2. A statement that uses a premise, a domain limit, an imported value or a
+   published result that it does not name. A published result is named with
+   its authors and is `argued` unless a check record says more.
+3. Words that grant standing or an audit verdict, or that call the work
+   checked, retained, established or audited. The `proposed_` labels that
+   the validators require are not such words.
+4. A negative result that is worded beyond the family it rules out, or a
+   failed search that is presented as an obstruction.
+5. A fit, or a match found after the fact, that is presented as a
+   prediction.
+6. A quoted number or runner result that no committed log or cache shows.
+7. A new axiom, primitive or framework premise.
+8. An error that the reader sees while it reads. The reader does not search
+   for errors by derivation.
+
+Then list, apart from the findings, each statement that `RULES.md` section 3
+says to check before other work builds on it: a bridge that fixes an
+observable, a dynamics, a symmetry or a normalization; an interface between
+parts; an assembly; a result that matches a target unexpectedly well. The
+list holds nothing back from landing. The lander writes it on the PR.
+
+Where a lens, a gate or another passage of this skill asks for more than this
+list, it describes the full read. The source map, the pre-fix mechanics,
+same-session acceptance of fixes, every gate of `AUDIT_COMPATIBILITY.md`
+except gates 9 to 11, and the combined gate are the same at both depths.
+
+A scope read files no check record and moves no standing. What it admits is
+`argued`. It can admit a proof that has an error in it, a runner that does not
+test its claim, and runner code that no reviewer has read. A check finds
+those, where `RULES.md` section 3 says a check pays.
+
+Report shape:
+
+```text
+## Scope read (iteration N)
+Depth: scope (review_depth.py: <its "working material" line>)
+Read: <n> Markdown files, <UTC start> to <UTC end>
+### Scope: PASS | FIX | RAISE
+Findings: <number from the list, file and line, the words at fault, the
+narrowest fix>
+Check before other work builds on it: <statement and file, or "none seen">
+```
+
+### Full read
+
+The rest of this file describes the full read, together with gates 9 to 11 of
+`AUDIT_COMPATIBILITY.md`. A full-read report states `Depth: full` and the
+reason that `review_depth.py` printed or that the person who raised it gave.
 
 ## Reviewer Fanout
 

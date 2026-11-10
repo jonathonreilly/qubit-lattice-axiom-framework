@@ -99,3 +99,113 @@ J2.4 (integration; Y 13391-13396). `H_W(0) = 0`, so `f = int_0^1 (d/dt) H_W(tB) 
 and J1 gives `||B||_inf`. This is (mb:real-collar-norm) with the constant `C_mu` above. The factor `e^{6 mu delta_0}` is `e^{(delta_0/2) 12 mu}`, as Y says. Checked. Square.
 
 Remark (what `C_mu` depends on). `C_mu` depends on `mu` through `e^{6 mu delta_0}` and on the input constants only; Y 13394-13396: "independent of the depth and volume". It is not uniform as `mu -> infinity` (Y 13248-13250). In the global use (section 4) `mu` is a fixed constant, not `M R_m`; this matters, since a collar width growing like `M R_m` would cancel the decay.
+
+## 4. (Y-JOIN 3) The global real collar coordinates, Y 65019-65067
+
+**Setting (Y 65021-65031).** A stage transition `j -> q = j+1` of the operation of level `m`, so `k_flat = m - N_m <= j <= m - 1` (Y 63834: stages `j = k_flat, ..., k-1`; Y 1182 and 1121: `t_flat = t - N_t`, `N_t = R_t`; here `R_m` is Y's `\check R_m`). The prospective real datum `omega` is fixed, with its global critical orbit `U_g := U_m^{(n+1)}` and its local orbit `U_X := U_{m,X}^{(n+1)}` admitted. `S_g = M^j U_g`, `S_X = M^j U_X`. `a_m = M R_m L^m` (bare side of a level-`m` cell).
+
+**Hypotheses.**
+- (H-J) (Y 65026-65028, 13414-13425) The global and the local sequences agree on `W := X` as separated sequences, with real data agreeing on every determining bond with both ends in `X` ("the two joined problems have the same determining rows and data in the interior of `X`; the difference comes from the outer joining collar"). The localization to `X` is a joined sequence of section 1 with parts of level `j_a = m` and a fixed collar width `mu` (not growing with `M` or `R_m`). Its four-layer collars lie in `X \ O_m subset Omega_m`, the top layer, which needs `4 mu <= 2 M R_m` (`O_m = Omega_m^c cap X = H_m^{[8 a_m]}`, `X = H_m^{[10 a_m]}`, Y 63760-63766).
+- (H-eps) Both data have all test holonomies within `eps_*` of one, and `eps_1 := eps_*` satisfies (J1-s), (J1-r). For the global datum this is part (ii) of the certificate `I` of inset-chart 5.2; for the local datum part (i).
+- (H-R) (Y 65034-65053) Every point of the collar read set `R` (the order-`j` average carriers of the fine rows of `K`, the full double blocks of the new level-`q` rows and of every inherited coarse row whose stencil reads a changed fine bond, and the four-layer test-cube enlargements of the old groups at the `Omega_q` seam) is at bare sup distance at least `a_m` from `X^c`; and every point of `R` has joined top spacing at least `xi_j = L^j` (Y 65050-65053: "keeps these carriers out of finer layers").
+- (IN-FRAME) (Y 65028-65031, 13362-13366) On `R` the two coordinates are the node-framed averages: with `U_g|_W = (e^{i eta f_g} U_W^o)^{w_g}` and `U_X|_W = (e^{i eta f_X} U_W^o)^{w_X}` (J1' applied to each), the axial readings with the same retained node data are `P_• (b) = S_j[f_•](b) M^j U_W^o(b)`, where `S_j[f]` is the double-bar average of `library/b98.md` (A3) with `U_1 = e^{i eta f}`, `U_0 = U_W^o`. So `S_g(b) S_X(b)^{-1} = S_j[f_g](b) S_j[f_X](b)^{-1}`. This is the reading of "Use the prescribed block axial readings with the same retained node data. On the full blocks these readings include the node factors of the real response."
+
+**Statement J3.** Under these hypotheses, with `tau := C_mu eps_* e^{-delta_0 M R_m/2}`, if (J3-s) `2 tau <= c_3`, `M R_m >= 2 C_st` and `4 C_1 tau + 2 K_lin B_3 eps_* <= ln 2`, then
+
+  `sup_{b in R} |S_g(b) S_X(b)^{-1} - 1| <= 4 C_mu eps_* e^{-(delta_0/2) M R_m}`.  (J3)
+
+So Y's `C eps_* e^{-c M R_m}` holds with `C = 4 C_mu`, `c = delta_0/2`.
+
+*Proof.*
+
+J3.1 (distance; Y 65034-65056). `K subset Omega_q^c cap X subset O_m`, and `O_m` is two level-`m` cells inside `X`, so `dist_inf(K, X^c) >= 2 a_m`. The carriers add at most `C_st L^m` (Y 65038-65041), so with `M R_m >= 2 C_st`, `dist_inf(R, X^c) >= 2 a_m - C_st L^m >= a_m` (for the old groups this is (H-R)). A path from `y in R` to `X^c` has bare length at least `a_m`, and every spacing is at most `L^m` ("no layer has spacing greater than `L^m`", Y 65055), so its weighted length is at least `a_m / L^m = M R_m`. Thus `d_B(y, W^c) >= M R_m` on `R` (`W = X`).
+
+J3.2 (the comparison field). Apply J1, J1', J2 to each of the two backgrounds against the common joined background `U_W^o` (Y 13414-13425): for every bond `x` of `R`, `N_x(f_g), N_x(f_X) <= C_mu eps_* e^{-delta_0 M R_m/2} = tau`. The real gauge `g` of J1 is 1 on `R`, which is at distance `>= a_m > 3 mu L^m` from the collars.
+
+J3.3 (averaging; the calculation behind Y's "followed by averaging on these blocks", Y 65056-65057). **Lemma AVG.** Let `U_0` be real on the carrier of a level-`j` bond `b`, with `alpha_n` the largest raw plaquette defect of `M^n U_0` on the level-`n` double-block read boxes of the carrier, `alpha_n <= c_3` and `sum_{n<j} alpha_n <= sigma`. Let `A` be a perturbation of the bare bonds of the carrier with `L^j |A|_inf <= tau`. If `2 tau <= c_3` and `K_lin sigma + 4 C_1 tau <= ln 2`, then `|log S_j(b)| <= 2 L^j |A|_inf`.
+
+*Input (IN-AVX), `library/b98.md` Lemma 8 (Balaban CMP 98 Proposition 3, rebuilt by Codex, not yet checked by another provider).* For a real background `V_0` with plaquette defects `< alpha <= c_3` on the read boxes and `V_1 = e^{iA'}`, `|A'| < c_3`: `log S_{V_0}(V_1)(c) / i = L (Q(V_0) A')_c + C(V_0, A', c)` with `|C| <= C_1 L^2 |A'|^2` (b98 (A4)), and by the five-term formula (A5), `L |(Q(V_0) A')_c| <= L |A'| (1 + K_lin alpha)`. The second bound is read off (A5) as follows: the main term `sum_x w t_x` has `|t_x| <= L |A'|` and `sum_x w = L^d L^{-(d+1)} = L^{-1}`, so it is at most `|A'|`; each of the other four terms has a coefficient that vanishes at `Y = Y_x = 0` and is analytic on the fixed chart, hence is at most `K (|Y| + max_x |Y_x|) <= K c_d L^2 alpha` (each relative loop encloses at most `c_d L^2` plaquettes, b98 Lemma 8), multiplied by `|h_x|, |t_x|, |k_x| <= c_d L |A'|` or `L^{-1}|a| <= L^{-1}|A'|` and by weights summing to `L^{-1}`; so `K_lin := 4 K c_d^2 L^2` works.
+
+*Proof of Lemma AVG.* By b98 (c), `S_{n+1} = S_{M^n U_0}(S_n)`, `S_0 = e^{iA}`. Let `a_n` be the largest `|log S_n|` on the level-`n` bonds of the carrier, and `b_n = L^{-n} a_n`. As long as `a_n <= c_3`, IN-AVX gives
+
+  `a_{n+1} <= L (1 + K_lin alpha_n) a_n + C_1 L^2 a_n^2`, i.e. `b_{n+1} <= b_n (1 + K_lin alpha_n + C_1 L^{n+1} b_n)`.
+
+Claim: `b_n <= 2 b_0` for `0 <= n <= j`. Induction: if it holds up to `n < j`, then `a_i = L^i b_i <= 2 L^j b_0 <= 2 tau <= c_3` for `i <= n`, and
+
+  `b_{n+1} <= b_0 prod_{i=0}^{n} (1 + K_lin alpha_i + 2 C_1 L^{i+1} b_0) <= b_0 exp(K_lin sigma + 2 C_1 b_0 sum_{i=0}^{n} L^{i+1})`.
+
+`sum_{i=0}^{n} L^{i+1} = L (L^{n+1} - 1)/(L - 1) <= 2 L^{n+1} <= 2 L^j` for `L >= 2`. So the exponent is at most `K_lin sigma + 4 C_1 L^j b_0 <= K_lin sigma + 4 C_1 tau <= ln 2`, and `b_{n+1} <= 2 b_0`. Hence `|log S_j(b)| <= a_j <= 2 L^j |A|_inf`. Square.
+
+J3.4 (apply). Take `U_0 = U_W^o`, `A = eta f_•`. Its radius is at most `B_3 eps_*` (J1.1), and the read set lies in layers of top level at least `j`, so by IN-AV `alpha_n <= 2 B_3 eps_* L^{2(n-j)}` and `sigma := sum_{n<j} alpha_n <= 2 B_3 eps_*/(L^2 - 1) <= 2 B_3 eps_*`. The bare link angle at `x` is `|eta f(x)|`, and `N_x(f) >= xi_x |f(x)|` with `xi_x / eta >= L^j` on `R` (H-R), so `L^j |eta f(x)| <= N_x(f) <= tau` (J3.2). Lemma AVG gives `|log S_j[f_•](b)| <= 2 tau`, and by (IN-FRAME) and unitarity,
+
+  `|S_g S_X^{-1} - 1| <= |S_j[f_g] - 1| + |S_j[f_X] - 1| <= |log S_j[f_g]| + |log S_j[f_X]| <= 4 tau`.
+
+(`|e^{iZ} - 1| <= |Z|` for Hermitian `Z`.) This is (J3). Square.
+
+J3.5 (the last equality `= o(delta'_j)`; Y 65062-65067). Y names two conditions. As inequalities:
+
+- (FD) frame drift, Y 1103-1107: for `i <= l`, `lambda_low (l - i) - c_5 <= theta_i - theta_l <= B_bar (l - i)`. Used with `(i, l) = (j, m)`: `theta_j <= theta_m + B_bar (m - j) <= theta_m + B_bar N_m = theta_m + B_bar R_m` (stage window, setting above).
+- (RC) `R_m >= (log(theta_m - c_5))^r` with `r >= 2`. Proof from Y's definitions: `R_m = R(min_{i<=m} theta_i)`, `R(y)` the least power of `L` not below `(log y)^r` (Y 1108-1111); by the lower half of (FD) with `l = m`, `theta_i >= theta_m - c_5` for `i <= m`, and `R` is nondecreasing. Also `R_m <= L (log theta_m)^r`, since `min_i theta_i <= theta_m`.
+
+With `delta'_j = g_j A_1 p_1(g_j) = A_1 theta_j^{-1/2} (log theta_j)^{p_1} >= A_1 theta_j^{-1/2}` (Y 63834, 1111-1117; `log theta_j >= 1` since `theta_j >= gamma^{-2} > e`):
+
+**Lemma J3.5.** Assume (FD), (RC), `theta_m >= max(2 c_5, 2 e^2)`, `B_bar L (log theta_m)^r <= theta_m`, and `c M >= 1` with `c = delta_0/2`. Put `u := log(theta_m/2) >= 1`. Then for every `s >= 0`
+
+  `4 C_mu eps_* e^{-c M R_m} <= (8 C_mu eps_*/A_1) 3^s u^s e^{-c M u^2/2} delta'_j (log theta_j)^{-s}`,
+
+and the factor `u^s e^{-cMu^2/2}` tends to 0 as `theta_m -> infinity`. So the bound is `o(delta'_j)`, and `o(delta'_j (log theta_j)^{-s})` for each fixed `s` (Y 65066-65067).
+
+*Proof.* By (FD) and `R_m <= L(log theta_m)^r`: `theta_j <= theta_m + B_bar L (log theta_m)^r <= 2 theta_m`. So `delta'_j >= A_1 (2 theta_m)^{-1/2} = (A_1/2) e^{-u/2}` (since `2 theta_m = 4 e^u`). By (RC) and `theta_m - c_5 >= theta_m/2`: `R_m >= u^r >= u^2`, so `e^{-c M R_m} <= e^{-c M u^2}`. Hence `4 C_mu eps_* e^{-cMR_m} / delta'_j <= (8 C_mu eps_*/A_1) e^{u/2 - c M u^2} <= (8 C_mu eps_*/A_1) e^{-cMu^2/2}`, using `u/2 <= cMu^2/2` (`u >= 1`, `cM >= 1`). Finally `log theta_j <= log(2 theta_m) = u + log 4 <= 3u`, so `(log theta_j)^s <= 3^s u^s`. Square.
+
+So the last equality of Y needs exactly: the stage window `m - j <= N_m = R_m`, the upper frame drift `B_bar`, and `R_m` at least the square of `log(theta_m - c_5)`. Without the stage window it fails: (FD) alone allows `theta_j` as large as `theta_m + B_bar (m - j)` with `m - j` unbounded in terms of `theta_m`, and then `delta'_j` can be below `e^{-cMR_m}`.
+
+**Inputs of J1-J3 from outside the argument:** IN-IMP, IN-RES, IN-AV, IN-RIG, IN-BG, IN-POLY, IN-PR, IN-ROW, IN-AVX, IN-FRAME, (H-J), (H-R), the stencil constant `C_st`; Y lines in section 9.
+
+## 5. (Y-DENS 4) The lower density test on the inset-positive real collar chart, Y 64699-64789
+
+**Setting.** `h < j < m`, `q = j + 1`, a point `(omega, B)` of the real collar chart: `omega` with `G(omega) = 1` (the inset guard `chi_in`, `kappa_x` and T3 pass at the fixed prospective orbit `U^+`), `U^+` admitted with radius `e <= e_*`, and `B` in the approximate ball. The lower density test at level `j` reads the plaquettes of its four-layer halo in the preceding background localized as the density test prescribes (density box with the lifted `V_j` on the pure level-`j` tower; Y 64776-64782), with threshold `T_d := eps_j L^{-2j}` (Y 61975-61977 for the form at level zero; Y 64735-64737 and 64788 for the threshold at level `j`).
+
+**Statement D.** Assume (S-e), (S-d), (S-r) of ypath-port section 2, and (D-s) below. Then every plaquette `p` of the halo of every lower density cube of level `j` has `|dU_dens(p) - 1| < T_d` at every point of the chart, where `U_dens` is the background the density test reads. So the lower density test equals 1 there.
+
+*Steps.*
+
+D.1 (placement; Y 64699-64716). Bases are in `(Omega_j^{~4} \ Omega_q^~) cap X`; the halo extends less than one level-`j` cell, so (eight-cell gap to `Omega_{j-1}^c`, exclusion of `Omega_q^~`) it lies in `Omega_{j-1} \ Omega_q`, hence in `Omega_q^c cap X subset O_m` (the top inset of `X`), and it misses `Z''_j` (five cells from `Omega_j` for `j <= k_0`, seven at `j = k_0 + 1`, and `Z''_j` outside `Omega_{j-1}` later). As Y 64699-64716; the distances are those of `eq:elab-history-prepared-boxes` (Y 63776-63800).
+
+D.2 (adjacent thresholds). `eps_q <= 2 eps_j`. *Calculation.* `eps(theta) = A_0 theta^{-1/2}(log theta)^{p_0}` decreases for `theta > e^{2 p_0}`; by (FD) `theta_q >= theta_j - B_bar`; so `eps_q <= eps(theta_j - B_bar) <= 2 eps(theta_j)` once `theta_j >= theta_D(B_bar, p_0)`. (Y states `eps_{k+1} <= C eps_k`, Y 4583.)
+
+D.3 (case `q <= k_0 + 1`; Y 64718-64737). Three cases for a halo plaquette `p`, with the clause of the prospective guard that `G(omega) = 1` supplies:
+- (D3a) wholly inside the new prepared box `Z''_q`: new shell clause, `|dU^+(p) - 1| < (1 - 3 beta_s/4) eps_j L^{-2j} = (1 - 3beta_s/4) T_d` (`F_j = 1` since `j <= k_0`).
+- (D3b) wholly outside it: deep exterior clause with `i_0 = j`, `|dU^+(p) - 1| < (1 - beta_s/2) eps_q L^{-2q} <= 2 L^{-2} T_d <= (2/25) T_d` by D.2 and `L >= 5`.
+- (D3c) astride the new face: the face is `5 a_q` (or `7 a_q` at `q = k_0 + 1`) from `Omega_q`, and `dist(Omega_j^c, Omega_q) >= 8 a_q`; a bare plaquette astride it has all corners at distance in `[5a_q - 1, 7 a_q + 1] subset (0, 8 a_q)` from `Omega_q` (`a_q >= 2`), so it is wholly in `Omega_j \ Omega_q`. The preceding guard reads it, and the crossing test `kappa_x` gives `|dU^+(p) - 1| < (1 - 3beta_s/4) T_d`.
+So in case `q <= k_0 + 1`: `|dU^+(p) - 1| < (1 - 3beta_s/4) T_d` for every halo plaquette (`3beta_s/4 < 1 - 2/25`).
+
+D.4 (case `q > k_0 + 1`; Y 64739-64770). The halo misses both prepared boxes and lies in the prospective layer `q`.
+- (D4a) `p` wholly in one of the two original layers at the `Omega_j` wall: exterior clause, `|dU^+(p) - 1| <= (1 - beta_s/2) max{3, L_flat^2} eps_q L^{-2q} <= 2 max{3, L_flat^2} L^{-2} T_d <= (1/2) T_d`, by D.2, `L_flat < L/2` and `L >= 5` (`6/L^2 <= 6/25 < 1/2`).
+- (D4b) `p` astride the wall: translate it by a bounded number of bare spacings to `p'` wholly in the original layer `j`, inside the same prospective comparison cube; `p'` has the bound of (D4a). In a common real gauge, IN-HOL (`mb:local-regularity-conclusion`, Y 15778-15812; `mb:holder-reduction`, Y 11901-11917) bounds the change of the curl by `E_H := C_H eps_* L^{-(2+alpha) q}`, and the terms of order at least two in the plaquette logarithm vary by `E_2 := C_2' L^{-3q}` (Y 64757-64763). The calculation Y gives as "both errors are `o(eps_j L^{-2j})`" (Y 64763-64767): with `q = j + 1`, `E_H / T_d = C_H eps_* L^{-2} L^{-alpha q} / eps_j` and `E_2 / T_d <= C_2' L^{-q} / eps_j`. By IN-COMP (Y 64764-64765: in the compressed range `q >= m - C_c log R_m`, and `m >= R_m`), `q >= R_m - C_c log R_m >= R_m/2` once `R_m >= R_0(C_c)`. By the proof of Lemma J3.5 (`theta_j <= 2 theta_m`, `R_m >= u^2`, `u = log(theta_m/2)`), `eps_j >= A_0 theta_j^{-1/2} >= (A_0/2) e^{-u/2}`. So `(E_H + E_2)/T_d <= (2(C_H eps_* + C_2')/A_0) e^{u/2 - (alpha ln L/2) u^2}`, which is at most `1/4` once `u` is large (that is, `gamma` small). So `|dU^+(p) - 1| <= (1/2 + 1/4) T_d`.
+(The comparison of group defects through the plaquette logarithm uses (L3) and (N); both defects are below 1.)
+
+D.5 (transfer and localization; Y 64772-64789). By (E1) of ypath-port P5.4 (the halo is in `X cap Omega_m^c`, outside the old shells by D.1), `|dU^-(p) - 1| <= |dU^+(p) - 1| + C_L delta'_j L^{-2j}`. The density test background is the localization of the preceding background on the density box with the lifted `V_j` (Y 64776-64782); the inner plaquettes have the three-small-cube margin to the boundary of that localization, and the joined comparison (J1, J2, and the plaquette difference of Y 13398-13411) bounds the difference by `C_D eps_* e^{-c R_j} L^{-2j}` (Y 64783-64786; input IN-DBOX for the distance `c R_j` in level-`j` units).
+
+D.6 (fit). The smallest reserve in D.3-D.4 is `(3beta_s/4) T_d` (`beta_s < 1/4`). The condition
+
+  (D-s) `C_L delta'_j + C_D eps_* e^{-c R_j} <= (beta_s/2) eps_j`
+
+gives `|dU_dens(p) - 1| < (1 - beta_s/4) T_d < T_d`. (D-s) holds at weak coupling: `delta'_j / eps_j = (A_1/A_0)(log theta_j)^{-(p_0 - p_1)}`, and `eps_* e^{-c R_j} / eps_j -> 0` by the argument of Lemma J3.5 with `c` in place of `cM` (it needs `u >= 1/c`, a floor on `theta_j`). Checked. Square.
+
+Inputs of D: `G(omega) = 1` (inset guard clauses: shell, deep exterior, exterior; `kappa_x`), (E1) (ypath-port P5.4), IN-HOL, IN-COMP, IN-DBOX, J1-J2 with the plaquette difference (Y 13398-13411), (FD), the geometry of D.1 (Y 63776-63800, 63885-63896, 64701-64716).
+
+## 6. (Y-CONT 5) and (Y-MEAN 7): contour indicators and the regular branch, Y 64791-64810 and 64929-64953
+
+**Statement C (Y-CONT).** On the approximate collar ball over an admitted `omega`, every contour indicator of the old exterior belt equals 1 at its original threshold `eps_j`, provided (C-s) `C_mc pi delta'_j < min(eps_j, rho_mc)`.
+
+*Steps.*
+C.1 (Y 64791-64796). The indicators use the order-`q` blocks based between the first and third layers outside `Omega_q`. These blocks lie in the collar `K`; the new gauge insertion starts beyond the third layer. As Y.
+C.2 (Y 64796-64800). All internal links of such a block are tested exterior nonpivots, so on the ball `|n(b) S(b)^{-1} - 1| < 2 delta'_j`, hence `d(n(b), S(b)) < pi delta'_j` by (N).
+C.3 (Y 64799-64801). After promotion the block contains no finer determining node, so in the prospective axial frame the mean contours of the reference `S` on the block are trivial: each equals 1. Y states this; it is the definition of the block axial frame with no interior node (input IN-AXF).
+C.4 (Y 64802-64808; the calculation). Let `T_B` be the mean contour map of the full block, from the internal links (sup of `d` per link) to the contour values. IN-MC: on the regular chart of radius `rho_mc` about the reference it has derivative at most `C_mc` (Y: "The mean contour map on the full block has a bounded derivative"; by IN-MEAN, lem:averaging-1a-1-1, Y 3714, and Cauchy estimates). The segment `n_t(b) = exp(t log(n(b)S(b)^{-1})) S(b)` stays in the ball (ypath-port P4(i)), so `d(T_B(n), T_B(S)) <= C_mc max_b d(n(b), S(b)) < C_mc pi delta'_j`. With C.3, `d(T_B(n), 1) < C_mc pi delta'_j < eps_j` by (C-s), and `|T_B(n) - 1| <= d(T_B(n), 1)` by (N). "Also after changing the stage centre" (Y 64803-64804): the same bound holds with `S^-` in place of `S`, since `|S^- S^{-1} - 1| <= C(L) delta'_j` (Y 64150-64160; ypath-port P4-P5), which changes `C_mc pi` to `C_mc (pi + pi C(L))`. Checked. Square.
+
+**Statement M (Y-MEAN).** On the approximate collar ball, (i) the actual pivot of every newly imposed coarse row is on the regular branch, and (ii) every block mean of the exterior collar used by the mean-contour axial readings is on its regular chart.
+
+*Port.* (i) is ypath-port P3.1-P3.4 (Y 64910-64958), ported and checked there (pivot within `C_3(e + delta'_j)` of `b^+`, then within `C_4 delta'_j`; regular branch by IN-REG under (S-e), (S-d)). Not redone. (ii) is C.4 with `rho_mc` in place of `eps_j`: `d(T_B(n), 1) < C_mc pi delta'_j <= rho_mc`. On the double block of `c` the plaquette defects of the induced field are at most `C_av e` (`O_L(e)`, Y 64929-64935; ypath-port P1(iii)), and the regular averaging formula puts the central transport within `C(L) e` of `W` (ypath-port P3.1 step (2)). Checked.
+
+Inputs: IN-AXF (Y 64799-64801), IN-MC/IN-MEAN (Y 3714, 64806-64808), the approximate collar test (Y 64032-64038), ypath-port P3 and its inputs (IN-AVF, IN-TRANS, IN-REG, IN-ROW).

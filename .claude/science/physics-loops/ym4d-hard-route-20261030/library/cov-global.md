@@ -238,8 +238,9 @@ setting of Lemma 3.1 (a), let `Q(C)` be the set of level-h cells that contain a 
 
 *Proof.* (i) Let `q in Q(C)` and let `c subset q` be a level-m cell of C. The mark C stood at every moment
 between its creation (level `m <= h - 1`) and `S'_t`, in particular in `S_{h-1}`, the label that step `h`
-takes as input. By Lemma 3.0 and (R1) in that label, `c subset C subset Z_m subset Z_{h-1}`. So
-`q in hat Z_{h-1}`, and (R2) gives `N_8(q) subset Omega_h^c` at the output of step `h`, which is `S'_h`.
+takes as input. By Lemma 3.0 and (R1) in that label, `c subset C subset Z_m subset Z_{h-1}`. `Z_{h-1}` is a
+union of level-(h-1) cells and `c` has interior points, so the level-(h-1) cell that contains `c` is in
+`Z_{h-1}`; it lies in `q`. So `q in hat Z_{h-1}`, and (R2) gives `N_8(q) subset Omega_h^c` at the output of step `h`, which is `S'_h`.
 Now `N_8(q)` is a connected union of cells that contains `q` and lies in `Omega_h^c(S'_h) subset Z_h(S'_h)`
 (R1: `Lambda_h subset Omega_h`). The cell `q` lies in `G_h`: by Lemma 3.1 (a) the cell `c` is in `G_h`,
 which is a union of level-h cells, and `c` has interior points. By (R5)(b) at `i = h` the component of
@@ -276,15 +277,335 @@ Corollary 3.5 (levels at a mark; proved). Let `(C, m)` stand at a moment, and le
 plaquette of level `l` with a corner in `C^{[2 L^m]}`. Then `l <= m`. If moreover C lies in a class
 component X with window from `h`, then `l < h` and `F(p) subset O_h`.
 
-*Proof.* By (R1) `dist(C, Omega_{m+1}) >= dist(Z_m, Omega_{m+1}) >= M L^{m+1}`, and the determining members
-of index above `m` differ from the label only inside drop-outs of level above `m`, where they are smaller
-complements of boxes that contain C's box by Lemma 3.1 (c) (the affected levels of such a drop-out C'
-exceed `m'_flat > m`, and `Omega^det_l cap C' = C' minus Z''_l(C')` with `Z''_l(C') supset G_{m'_flat}(C') supset C`;
-the distance from `G_{h'}` to the exterior of `Z''_{h'+1}` is at least `3 a_{h'+1}`, Y 63817-63818). So no
-point within `2 L^m + L^{m+1} < M L^{m+1}` of C is in `Omega^det_{m+1}`. A tested plaquette of level
-`l >= m + 1` has a corner in `Omega^det_l subset Omega^det_{m+1}`, and its corners are within `L^l` of each
-other, on the level-l lattice. For `l = m + 1` this contradicts the distance. For `l > m + 1` the corner in
-`C^{[2 L^m]}` would be outside `Omega^det_{l-1}`, against `corners subset Lay_{l-1} cup Lay_l`. So `l <= m`.
-In X: `l <= m < h`; no corner of `p` is in `Omega^det_{l+1} cap X`, which contains `Omega_h cap X` and is a
-union of level-l blocks, so `F(p) subset X minus Omega_h = O_h` (`library/cov-x.md` Lemma P, case P1, and
-Lemma G (b)). `square`
+*Proof.* The determining sequence is the label, with the stage sequence on a component under operation
+(2.2), and (R1) holds for it. `C subset Z_m` by Lemma 3.0, so by (R1) no point at distance less than
+`M L^{m+1}` from C is in `Omega^det_{m+1}`. Let `x` be the corner in `C^{[2 L^m]}`. Then `x` is in no member
+of index above `m`, so it is in a layer of index at most `m`. The corners of a tested plaquette of level
+`l` are in `Lay_{l-1} cup Lay_l` (Definition T), so `l <= m + 1`. If `l = m + 1`, some corner `y` is in
+`Omega^det_{m+1}`, and `y` is within `L^{m+1}` of `x`, hence within `2 L^m + L^{m+1} < M L^{m+1}` of C
+(`M >= 2`, `L >= 3`): a contradiction. So `l <= m`. In X: `l <= m < h` by Lemma 3.1 (a). No corner of `p` is
+in `Omega^det_{l+1}`, which contains `Omega_h cap X` (`l + 1 <= h`) and is a union of aligned level-l
+blocks, so `F(p)` does not meet `Omega_h` (`library/cov-x.md` Lemma G (b)). Every point of `F(p)` is within
+`3 L^l / 2 < a_h` of `x`, and `x` lies in `N_1(Q(C))`, which is at least seven cells inside X (Lemma 3.2). So
+`F(p) subset X minus Omega_h = O_h`. `square`
+
+Remark 3.6. Lemma 3.0 is Y 76018-76019 ("While it stands, it remains a component of its original `Z_i` with
+all entries through level `i` unchanged"), which Y states without the induction.
+
+## 4. The moves: what each one changes (G2), and the base (G3)
+
+### 4.0 Moments, fresh plaquettes
+
+A *moment* is a place in the formula between two moves: after a step, at the entrance and the exit of a
+stage of a class component, after a stop, after the main step. (`library/i3-cert.md` Definition 4.1 takes
+the entrances of stages; the definition of an admitted trajectory, Definition 4.3 there, is used with all
+these moments.) Class components of one operation are disjoint and at distance at least `a_t`
+(Lemma 3.1 (b) argument), and each move below is a move of one component, so the order among them does
+not matter.
+
+**Definition 4.0.** Let `nu`, `nu + 1` be consecutive moments of a trajectory. A plaquette `p in P_{nu+1}`
+is *carried over* if `p in P_nu` and `W(p)(x_{nu+1}) = g W(p)(x_nu) g^{-1}` for some `g in SU(2)`. Otherwise
+it is *fresh* at the move.
+
+### 4.1 The frame statements (read) and the frame lemma (proved from them)
+
+Each statement gives the variables and the entries that the move writes. X is a class component of level
+`t` with window from `h`; boxes `O_i, G_i, Z''_i, K_i = O_{i+1} minus Z''_{i+1}` as in `library/cov-x.md` 2.1
+and (D1); `Lambda^pr = Z''_t` enlarged by one layer of level-t `M`-cubes (Y 63836 (1)).
+
+- **(F-step) Step `l` (Y 62174, 62078 (c), 76674-76676).** It adds the entries of index `l` and the level-l
+  field; it changes no entry of lower index. For a plaquette of level below `l` that is tested before and
+  after the step, the loop after is a conjugate of the loop before (the step moves retained rows only by
+  its gauge draws: "A gauge draw, a frame change or a tree gauge conjugates the holonomy").
+- **(F-stage) Stage of level `i` of X, `h <= i <= t - 1`.** (D1), (D2), (D3) of `library/cov-x.md` 2.2, read
+  there from Y 72244-72260, 64035-64036, 77767-77778, 63836 (1), 63849: the only member of the sequence that
+  changes is the one of index `i + 1`, which grows by `K_i`; (m2) each new row `c` of level `i + 1` gets
+  `V_{i+1}(c) = M(V_i)(c)`; (m1) the collar gauge acts on level-i bonds with an endpoint in `K_i` and is one
+  at the level-(i+1) sites; (m3) the level-i bonds with an endpoint in `K_i` and none in the old member of
+  index `i + 1` leave the point; nothing else changes, in X or outside ("the exterior of the component is
+  fixed", Y 77775; "The core operation ..., which contains the failed tests, is at no point unfolded",
+  Y 63849).
+- **(F-stop) A stop of X after `n` completed stages, of either kind (Y 77790-77791; (R4)).** No row and no
+  entry of the determining sequence changes: the sequence of a component with `n` completed stages and
+  the sequence (R21) with `nu = n` of the drop-out are the same. The moves of the unfinished stage before
+  a sharp collar split (regularity test, collar gauge, approximate test, completions, removals,
+  Y 77741-77763) write no row other than by the collar gauge, which conjugates the level-j loops and fixes
+  the coarse rows (Y 77765-77767).
+- **(F-main) Main step of X after `N_t` stages, outcome healed or island (Y 63836 (2), (3), 63876 (4);
+  (R4)).** The determining members become `Omega_l cup X` for all `l <= t`. The move writes `V_t` on the
+  bonds of the box (the level-t bonds with both ends in `Lambda^pr`): "Integrals against any bounded `F`
+  that is independent of `V_k` on the box are left unchanged by it". For a level-t plaquette with no edge
+  in the box, tested before and after, the loop after is a conjugate of the loop before (tree gauge and
+  its reverse, frame: Y 76674-76676, 76698-76699).
+- **(F-refresh) Late Haar refresh (m4) (Y 65470-65472, 76677-76679).** "A late Haar refresh leaves the old
+  determining datum in the inner slot." No row and no entry changes.
+
+**Lemma 4.1 (frame lemma; proved from F and Lemma 3.1).** At each move the fresh plaquettes are contained
+in the following sets.
+
+- (a) Step `l`: the tested plaquettes of level `l`.
+- (b) Stage of level `i` of X: `Fr_i(X)`, the level-(i+1) plaquettes with all four corners in `O_{i+1}` and
+  at least one corner in `K_i`. For these `F(p) subset X`, and their level is at least `h + 1`.
+- (c) A stop, a refresh: none.
+- (d) Main step of X with outcome healed or island: `B(X)`, the level-t plaquettes with an edge in the
+  box. After the move no plaquette of level below `t` with a corner in X is tested, and no tested
+  plaquette of level below `t` has a footprint that meets X.
+
+In particular a move of the operation on X changes no determining row and no entry outside X, none of
+level below `h` in X, and every fresh plaquette has its complete footprint in X.
+
+*Proof.* (a) Let `p in P_{nu+1}` have level `q < l`. Its tested status reads the members of index `q` and
+`q + 1`. If `q + 1 < l` these are unchanged, so `p in P_nu`. If `q = l - 1`: `p` has a corner in `Omega_{l-1}`,
+and before the step there is no member of index `l`, so `p in P_nu`. (F-step) gives the conjugacy.
+
+(b) Levels `q <= i`: `library/cov-x.md` Lemma 5.1 (b): `p` is tested after the stage only if it was tested
+before, and then the four edge values are the same. Levels `q > i + 1`: the members of index `q`, `q + 1`
+and the rows of level `q` are unchanged; a completed edge reads the level-(q-1) rows of its double block
+in `Lay_{q-1}`; for `q - 1 > i + 1` nothing there changes, and for `q - 1 = i + 1` the old rows of level
+`i + 1` keep their values (`Gamma_{i+1} subset Gamma'_{i+1}`, Lemma 5.1 (a) there) and the old layer of index
+`i + 1` is contained in the new one. So `p` is carried over with the same loop. Level `q = i + 1`: let `p`
+be tested after the stage. Suppose a corner of `p` is in the old member of index `i + 1`. Then `p` was
+tested before (the member of index `i + 2` is unchanged). An edge `e` of `p` that was a row keeps its
+value. An edge that is a row now and was not: its ends are corners of `p` outside the old member of index
+`i + 1`, so in the old `Lay_i`; it was a completed edge with value `M(V_i)(e)`, and by (m2) its value now is
+`V_{i+1}(e) = M(V_i)(e)` taken at `x_{nu_i}`: the same. An edge that is completed now has both ends in the
+new `Lay_i`, which is contained in the old one; its double block lies in the new `Lay_i`, whose level-i rows
+are old rows with unchanged values (`Gamma'_i subset Gamma_i`). So the loop is the same. Suppose no corner
+of `p` is in the old member of index `i + 1`. Then some corner is in `K_i subset O_{i+1}`, the other corners
+are within `L^{i+1}` of it, and `dist(O_{i+1}, X^c) >= 2 a_{i+1} > L^{i+1}` (`G_{i+1} = O_{i+1}^{[2 a_{i+1}]} subset X`);
+so all corners are in X and outside the old member, that is in `O_{i+1}`: `p in Fr_i(X)`. Every point of
+`F(p)` is within `3 L^{i+1} / 2 < 2 a_{i+1}` of a corner, so `F(p) subset X`.
+
+(c) is (F-stop), (F-refresh).
+
+(d) After the move X lies in the member of index `t`, the top one. A tested plaquette of level `q < t` has
+no corner in the member of index `q + 1 <= t`, so no corner in X; X is a union of aligned level-q blocks,
+so `F(p)` does not meet X (Lemma G (b) of `cov-x`), and by (F-main) and (R4) its status and its edge values
+do not change. Let `p` have level `t`, tested after the move, with no edge in the box. If no corner of `p`
+is in X, nothing it reads changes. Otherwise each edge of `p` has an end outside `Lambda^pr supset Z''_t`. An
+end in X outside `Z''_t` is in the member of index `t` before the move (`Omega^det_t cap X = X minus Z''_t`
+after `N_t` stages), and an end outside X that is a corner of a tested level-t plaquette with another
+corner in X is within `L^t < a_t` of X, hence in `Omega_t` (it is not in another component of `Z_t`, by the
+distance `a_t`, and `Omega_t^c subset Z_t`). So `p` was tested before, all four edges were rows, they are
+not bonds of the box, and (F-main) gives the conjugacy. `square`
+
+Remark 4.1' (the regions of (m1) to (m5), as the row asks). (m1): reads and writes level-i bonds in
+complete blocks with centre in `K_i` (Y 97530-97534: "centres in `((Omega_{iota+1}^{~3})^c minus Z''_{iota+1}) cap X`");
+(m2): reads the level-i bonds of the double blocks of the new rows, in `O_{i+1}^{[L^{i+1}]} minus Z''_i`, and
+writes the new rows; (m3): removes level-i bonds with an endpoint in `K_i`; (m4): writes a fresh slot that
+only outgoing rows read; (m5): writes `V_t` on the bonds of `Lambda^pr`. All of these lie in
+`G_t minus G_h` except (m5), which lies in `Lambda^pr` and replaces the core with everything in it. None
+meets `G_h` before the main step: `K_i` lies outside `Z''_{i+1}`, the double blocks of its rows are within
+`L^{i+1}` of it, and `dist(G_h, X minus Z''_{i+1}) >= M L^{i+1}` (`3 a_{h+1}` for `i = h`, Y 63817-63818; (B2) of
+`cov-x` for `i > h`). And `Fl^-(X) subset O_h subset G_h`. With Lemma 3.2: the
+operation on X neither reads for writing nor writes any variable in the witness of an older mark, until
+a healing or an island replaces the whole of X.
+
+### 4.2 The tests that supply the fresh plaquettes outside (COV-X*) (read)
+
+- **(R-ord) (Y 62078 (c), 1150-1152, 65426-65430, 76654-76660, 76021-76023; (R2); `library/cov-x.md` (D6)).** At
+  the output of step `l`, the density test `chi_l(square)` is carried, hence equals one on an admitted
+  trajectory, for every level-l test cube `square subset Omega_l`. The test cubes of level `l` partition
+  each level-l cell. If `chi_l(square) = 1` at a point, every level-l plaquette `q` with a corner in
+  `square` has `norm(W(q) - 1) <= 2.1 eps_l` for the loop of the level-l datum of that point, in which the
+  value on a bond that is not a row is the one-step average of the lower rows ((I4_l) of `cov-x`).
+- **(R-last) (Y 62104-62105, 76692-76697).** If X is healed, the last test has passed: `chi_t(square) = 1`
+  at the point after the main step, for the new level-t datum, for every level-t test cube
+  `square subset X^{[-6 a_t]}`; (I4_t) holds for it.
+- **(R-core) (Y 63836 (2), 63876 (4) and "The purpose of the stages", 65431-65433, 76680-76685).** After the
+  main step with outcome island (or healed), for every level-t bond `b` with an end in X:
+  `V_t(b) = V'(b) V_Lambda(b)`, where `V'(b) = 1` unless `b` is a bond of the box, the carried cutoff gives
+  `norm(log V'(b)) < M_0 eps_t`, and the reference `V_Lambda` satisfies
+  `norm(V_Lambda(dp) - 1) <= C(M) eps_t` for every level-t plaquette `p` with an edge in the box. (Y: "for
+  exterior data with `abs(dV_k - 1) < eps` one has `abs(dV_Lambda - 1) <= C(M) eps`"; the exterior bound is
+  the passed extension test and the surrounding density cubes.) This is the only analytic statement
+  imported; I did not rebuild it, and its form (which plaquettes, which constant) is my reading.
+
+**Lemma 4.2 (base, (G3); proved given (R-ord)).** Every plaquette that is fresh at step `l` has a corner
+in a level-l test cube `square subset Omega_l` whose test is carried at the output of the step, and
+`norm(W(p) - 1) <= 2.1 eps_l` there. In particular, at every moment before the first stage of any
+operation, each tested plaquette of level `l >= 1` has the supplier (S-ord): the density test of step `l`
+at the output of step `l`.
+
+*Proof.* By Lemma 4.1 (a) a fresh plaquette has level `l`; it has a corner `x in Omega_l`. `Omega_l` is a
+union of level-l cells (R1), each partitioned into test cubes, so `x` is in a test cube `square subset Omega_l`.
+(R-ord). The test reads the loop of the level-l datum of that moment, which is `W(p)`. Before the first
+stage only steps have occurred, and Lemma 5.2 below carries the supplier. `square`
+
+### 4.3 The hypothesis inside X
+
+**(COV-X*).** For each class component X, each `h <= i <= t - 1`, and each `p in Fr_i(X)` that is tested at
+the exit `nu_{i+1}` of the stage of level `i`: `p` has a supplier in the sense of `library/cov-x.md`
+Definition 3.1 (bare or coarse, with (c1), (c2'), (c3'), and `nu_{i+1}` in the place of `N`) at a moment
+`mu` with `nu_h <= mu <= nu_{i+1}`.
+
+What `library/cov-x.md` gives of it (not checked; row 633 is its check):
+
+| Instance | In `cov-x` | Status |
+|---|---|---|
+| `i <= t - 2`, a corner of `p` in `Z''_{i+1}` (mixed at the prepared face) | Lemma 6.3 (case P4 with `l = i + 1`): the exterior clause of the guard at the entrance `nu_i`; the footprint is within `2 L^{i+1}` of `dZ''_{i+1}`, so the set of such `p` at `nu_{i+1}` is the set at `N` | proved there |
+| `i = t - 2`, no corner in `Z''_{t-1}` | cases P5a, P5b (`l = j = t - 1`), supplier at `N = nu_{t-1}` | proved there |
+| `i < t - 2`, no corner in `Z''_{i+1}` | not stated. At `N` the survivors are in case P3, with a supplier at `N`, which is later than `nu_{i+1}`. A drop-out with `h + n = i + 1` needs the guard at `nu_{i+1}`: the proofs of P5a, P5b with `j` replaced by `i + 1`. (D4) of `cov-x` is stated for every `i`, so I expect the same proof; it is not written | **gap** (in row 628's scope) |
+| `i = t - 1` (the last stage; level-t plaquettes in `O_t` with a corner in `K_{t-1}`) | not treated: `cov-x` stops at the entrance of the final stage | **gap**; Remark 5.6 removes it for the healed outcome, from (R-last) and the top tests on `Omega_t^{~4}` |
+
+## 5. The invariant (G4), (G5)
+
+**Lemma 5.2 (carrying).** Let `p in P_{nu+1}` be carried over, and let `(mu, T, U)` be a supplier of `p` at
+`x_nu` with (c2') up to conjugation: `W(p)(x_nu)` is a conjugate of `(M^l U)(dp)` (bare), or of `(M^d W)(dp)`
+(coarse), or `norm(W(p)(x_nu) - 1) <= b` is given directly. Then the same holds at `x_{nu+1}`, with the same
+allowance.
+
+*Proof.* A conjugate of a conjugate; the norm of `W - 1` is invariant under conjugation. `square`
+
+**Theorem 5.1 (COV-G).** Assume R1 to R5, the frame statements F, (R-ord), (R-last), (R-core), (COV-X*),
+and `gamma` so small that the allowances are at most `alpha_L` (as in `cov-x` section 6). Let `x_0, ..., x_N`
+be an admitted trajectory. Then at every moment `nu <= N` every tested plaquette `p` of level `l >= 1` of
+the datum `D(x_nu)` has a certificate, namely the certificate it received at the last move `rho(p) <= nu`
+at which it was fresh, carried since by Lemma 5.2:
+
+| Last move at which `p` was fresh | Certificate, moment | Defect at `x_nu` | Row's name |
+|---|---|---|---|
+| step `l` | density test of level `l` on a cube in `Omega_l` that contains a corner of `p`, at the output of step `l` | `<= 2.1 eps_l` | (S-ord) |
+| stage of level `l - 1` of a class component X (now under operation, a standing drop-out, or healed or an island with `l = t`) | the supplier of (COV-X*), at a moment in `[nu_h, nu_l]` | `<= C_2' e_l` (`cov-x` Theorem 6.1) | (S-stage), (S-new); the seventh kind of `cov-x` P5b |
+| main step of X, healed, `l = t`, an edge in the box | last test on `X^{[-6 a_t]}`, after the main step | `<= 2.1 eps_t` | the top test of the new domain (Y 76697) |
+| main step of X, island, `l = t`, an edge in the box | cutoff and reference, (R-core), after the main step | `<= (4 M_0 + C(M)) eps_t` | (S-core) |
+
+In each case (c1) holds by the statement that supplies the certificate, (c2') holds up to conjugation by
+Lemma 5.2, and (c3') holds by Lemma 5.3.
+
+*Proof.* Induction on `nu`. At the first moment no plaquette of level `>= 1` is tested. Let the claim hold
+at `nu`, and let `p in P_{nu+1}`. If `p` is carried over, Lemma 5.2. If `p` is fresh, the move from `nu` to
+`nu + 1` is one of those of Lemma 4.1, and:
+
+*Step `l`.* Lemma 4.2.
+
+*Stage of level `i` of X.* `p in Fr_i(X)` by Lemma 4.1 (b), `l = i + 1`, and (COV-X*) gives the supplier.
+
+*Stop, refresh.* No fresh plaquette (Lemma 4.1 (c)).
+
+*Main step, healed.* `p in B(X)`: level `t`, with an edge whose ends are in `Lambda^pr`. In the notation of
+`cov-x` 2.1, `Lambda^pr = H^{[4 u_t]} subset H^{[10 u_t]} = G_{k_0+1} subset H_{k_0+2} subset ... subset H_t`
+(`G_{i-1} subset H_i`, `k_0 + 2 <= t`), and `X^{[-6 a_t]} = G_t^{[-6 a_t]} = H_t^{[4 a_t]} supset H_t`. So a corner
+of `p` is in a level-t cell of `X^{[-6 a_t]}`, hence in a test cube inside it, and (R-last) gives the bound.
+
+*Main step, island.* `p in B(X)`. Lemma 5.4.
+
+The bound in the second line: `cov-x` Lemma 3.2 with the allowances of its Theorem 6.1. `square`
+
+**Lemma 5.4 (the restored box; proved given (R-core)).** After the main step with outcome island, every
+level-t plaquette `p` with an edge in the box has `norm(W(p) - 1) <= (4 M_0 + C(M)) eps_t`.
+
+*Proof.* All four edges are rows after the move (X lies in the top member), with values
+`V'(b_i) V_Lambda(b_i)`. `W(p)` is the ordered product of these values or their inverses. Replace
+`V'(b_1), ..., V'(b_4)` by `1` one at a time. Each replacement changes the product by a term of norm
+`norm(V'(b_i) - 1) <= norm(log V'(b_i)) < M_0 eps_t`, because the other factors are unitary. After four
+replacements the product is `V_Lambda(dp)`. So `norm(W(p) - V_Lambda(dp)) < 4 M_0 eps_t`, and (R-core)
+bounds `norm(V_Lambda(dp) - 1)`. `square`
+
+**Lemma 5.3 ((c3), (G5); proved from Lemma 3.1 (c) and the carried constraints (E1)).**
+
+- (a) *One datum.* At each moment the determining sequence is one region sequence (Lemma 3.1 (c): at a
+  place and a level at most one standing drop-out is active), and the point carries one value on each
+  row. So each edge of each tested plaquette has one datum value: a loop never has links from two data.
+  The owner of a plaquette selects the supplier, not the values.
+- (b) *The test reads the datum loop.* Let `T` be the test of a certificate of `p` at the moment `mu`, and
+  let `R(e)` be the value that `T` reads on the edge `e` of `p`. If `e` is a row at `mu`, `R(e)` is the
+  carried link, which is the datum value. If `e` is a completed edge at `mu`, the datum value is
+  `M(V_{l-1})(e)`. A density test reads this average ((D6) of `cov-x`), or it reads a level-l variable
+  `V_l(e)` that the term still carries together with its constraint `V_l(e) = M(V_{l-1})(e)`; the
+  constraint holds at every point of an admitted trajectory (Definition 4.3 of `i3-cert`, (E1)), so
+  `R(e) = M(V_{l-1})(e)`. This is Y 65419-65424: "These values agree with the fields in the tests by the
+  retained averaging constraints." For a guard, the background has the averages of all rows of all
+  levels at once ((D5) of `cov-x`), and (c3') is part of (COV-X*).
+- (c) *A loop at the rim of a mark.* Let `(C, s)` stand and let `p` be a tested plaquette with a corner in C
+  and a corner outside C. Then `p` has level `s`, all its corners are in `Omega_s`, and its certificate is
+  the level-s density test of step `s`: the same ordinary datum on both sides of the rim.
+
+*Proof of (c).* Let `x in C` and `y notin C` be corners of `p`, of level `l`. By Corollary 3.5, `l <= s`, so
+`dist(x, y) <= L^s < a_s`. The point `y` is not in another component of `Z_s` (these are at distance at
+least `a_s` from C, as in Lemma 3.1 (b)), so `y in Lambda_s subset Omega_s`; and `y notin Omega_{s+1}`, which is
+at distance at least `M L^{s+1}` from `Z_s supset C` (R1). So `y in Lay_s`. The corners of `p` are in
+`Lay_{l-1} cup Lay_l`, so `l >= s`, hence `l = s`. The corner `x` is within `L^s < 2 a_s` of `C^c`, so it is in
+`C minus O_s(C)`, where `O_s(C)` is the old `Omega_s^c cap C`, two cells inside C. This set is in the member
+of index `s` of the determining sequence: for an island the member contains C; for a drop-out it is the
+old `Omega_s cap C = C minus O_s(C)`, or `C minus Z''_s(C)` with `Z''_s(C) subset O_s(C)` when `s` is an affected
+level. So all corners are in `Omega_s`. By Theorem 5.1 the certificate of `p` is the one of its last fresh
+move. That move is not a stage of C (`Fr_i(C)` has all corners in C), not a stage of a component that
+contains C (its fresh plaquettes have level above its `h > s`, Lemma 3.1 (a)), not a main step with
+outcome healed or island of a component that contains C (C would not stand), and not a move of a
+component that does not contain C (its fresh plaquettes have all corners in it or an edge deep in it,
+and it is disjoint from C; at level `s` it is at distance `a_s` from C). So it is step `s`. `square`
+
+**How the cases of the row's (G4) come out.**
+
+- *Footprint outside X with its collar.* Not fresh at any move of X (Lemma 4.1); carried.
+- *Complete footprint in X.* Levels `l < h`: never fresh at a move of X before the main step; carried from
+  the moment `nu_h` (this is case P1 of `cov-x`, which that note reduced to this row). Levels `l >= h`:
+  carried, or fresh at a stage and then (COV-X*).
+- *Footprint astride the rim of X.* The plaquette has level `t`, all corners in `Omega_t`, and is not fresh
+  at any stage (`Fr_i(X)` has all corners in `O_{i+1}`) nor at the main step (no edge in the box). Its
+  certificate is the top density test of step `t` on the complete exterior read, as Y 76666-76668. No
+  bound at the bare rim is used (Y 64083-64086). See finding 1 for the removal rule.
+- *An older mark in the floor of X.* By Lemma 3.1 (a) and Corollary 3.5 every tested plaquette with a corner
+  in `C^{[2 L^m]}` has level below `h` and footprint in `O_h`; it is not fresh at any stage of X or at a
+  stop. Its rows and the entries of the mark do not change (Lemma 4.1), and by Remark 4.1' and Lemma 3.2 no
+  variable in the witness of the mark is written. "The core operation is at no point unfolded".
+- *X healed.* All marks in X cease to stand (R4). After the move the tested plaquettes with a corner in X
+  have level `t`: an edge in the box, the last test; no edge in the box, carried (from step `t` if a
+  corner is in the old `Omega_t`; from the last stage otherwise, by (COV-X*) at `i = t - 1`, or by
+  Remark 5.6).
+- *X an island.* The same, with (S-core) in the place of the last test; the plaquettes between the box and
+  the old `Omega_t` have the supplier of the last stage ("the newly made layer uses its own regularity
+  guard", Y 76685-76687), which is (COV-X*) at `i = t - 1`.
+- *X a drop-out after `n` stages.* No mark disappears. Nothing is fresh at the stop. Each tested plaquette
+  with a corner in X has the certificate it had at the entrance of the unfinished stage: (S-ord) for the
+  levels below `h` and above `h + n`, for level `h`, and for every plaquette with a corner in the old
+  `Omega_t` or outside X; the supplier of (COV-X*) for the plaquettes of levels `h + 1, ..., h + n` made
+  fresh by the `n` stages.
+
+Remark 5.5 (against the table of the row). The theorem gives each tested plaquette one certificate of
+the row's kinds; it does not give the row's rule for *which* kind in two situations. (i) A plaquette of
+level `h` with footprint in the first shell `Z''_{h+1} minus O_h` of its owner has, by the invariant, the
+density test of step `h`; the row's table gives the last stage test (case P3 of `cov-x` with `l = h`,
+proved there at `N`). Both are suppliers. (ii) At a collar departure the invariant gives the supplier
+from the entrance of the unfinished stage, not `chi_i^{(n+1)}` with the collar test (finding 2). In every
+other situation the last fresh move decides the row of the table: a plaquette with an owner C whose
+level is not in the affected levels of C, or that is not in `Fr_i(C)` for a completed stage, was last fresh
+at a step and has (S-ord); a plaquette in `Fr_i(C)` has its footprint in the tested inset, or astride an
+original wall (the seventh kind, which the row's table files under "the footprint leaves the stage test
+region": the ordinary density test at the original cube).
+
+Remark 5.6 (the healed outcome without (COV-X*) at the last stage; read, not part of the theorem). Y
+supplies a healed component by two tests (Y 76692-76697): the final test on the six-cell inset, and "the
+old top test enlarged by four cells", which "covers the outer six cells of the component". Read: the top
+tests `chi_t(square)` are carried at the entrance `nu_{t-1}` of the last stage for the test cubes in
+`Omega_t^{~4}` (Y 64096-64097, 76021-76023), and they read level-t loops whose non-row edges are one-step
+averages. Then a level-t plaquette `p` with a corner in X after the healing has: a corner in
+`X^{[-6 a_t]}`, and the final test bounds it; or a corner in the outer six cells
+`X minus X^{[-6 a_t]} = (Omega_t cap X) cup (O_t minus O_t^{[-4 a_t]})`. In the first set, step `t`. In the
+second, the top test at `nu_{t-1}` bounds the loop of averages, the promotion (m2) of the last stage gives
+the rows these same values, and the plaquette is at distance at least `4 a_t` from the box
+(`Lambda^pr subset H_t`, `O_t^{[-4 a_t]} = H_t^{[4 a_t]}`), so it is carried through the main step. This is a
+coarse supplier of depth 0 at `nu_{t-1}`. For the island the region `H_t^{[4 a_t]} minus Lambda^pr` has no
+such test (the last test fails), and the guard of the last stage is needed.
+
+## 6. What stays open
+
+1. **(COV-X*) at the instances of section 4.3**: the exterior position at a stage of level `i < t - 2`
+   (needed for a drop-out that stops with `h + n = i + 1 < t - 1`), and the last stage `i = t - 1` (needed
+   for the island, and for a drop-out at the extension test). Exact statement missing: for `p in Fr_i(X)`
+   with no corner in `Z''_{i+1}`, the guard `chi_t^{(i+1-h)}` carried at `nu_{i+1}` has a clause region that
+   contains `F(p)`, or `F(p)` is astride an original wall `dO_{l'}`, `k_0 < l' <= i + 1`, and the level-l'
+   density tests supply it; for `i = t - 1` the guard is the last one, `chi_t^{(N_t)}`. Nearest lines:
+   Y 63876 (the clause list), Y 77609-77704, and `library/cov-x.md` Lemmas 6.2, 6.4, 6.5. These are inside X
+   and belong to row 628's scope; I did not attack them.
+2. **The read statements.** F (five frame statements), (R-ord), (R-last), (R-core) are Y's prose turned into
+   hypotheses. (R-core) is an estimate of Y (the extension by least action) with a constant `C(M)`; its
+   exact form at the plaquettes astride the face of the box is my reading. (F-step) and (F-main) are
+   stated at the level of loops ("conjugate"), because Y states them so (Y 76674-76676); a statement at the
+   level of rows needs the support of each gauge draw.
+3. **R1 to R5 for the operation of this lane.** For Y they are definitions and one ported proof (R5).
+   `library/geoh.md` line 34 keeps "quarantine identification" outstanding for the revised operation; the
+   window lemma uses the closed lower end (Remark 3.4).
+4. Not checked by another model. Row 633 checks `library/cov-x.md`, on which the second line of the table
+   of Theorem 5.1 rests.

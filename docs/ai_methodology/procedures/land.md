@@ -82,27 +82,27 @@ section 1). Reviewers are the landing-reviewer rows in `SETTINGS.md`.
    land. Evidence a statement needs is committed, not left in a PR body. Then
    restore generated audit outputs. On failure land nothing, keep the log and
    retry units singly in dependency order without guessing a culprit.
-9. **Push.** Re-verify every frozen head, that `main` is the gated base and
-   that the tree is the gated tree, then run the landing loop in the
-   `LANDING.md` reference. It pushes the candidate and proves the landed
-   commit is contained in `origin/main`. If `main` moved, rebuild and gate
-   again. Write on each carried PR what it carries, what it left out and where
-   that is kept. The owner has decided a landed PR should show as merged
-   (`SETTINGS.md`, PR state); the loop and its contract check change first.
+9. **Push.** Retarget to `main` every open PR based on a carried head
+   branch. Then run the landing loop in the `LANDING.md` reference. It
+   re-verifies heads, base and tree, saves each frozen head under a recovery
+   ref, moves each head under an exact lease to its reviewed commits,
+   fast-forwards `main` once and proves containment, so each carried PR shows
+   as merged (`SETTINGS.md`, PR state). If `main` moved, rebuild and gate
+   again. Write on each PR what it carries, what it left out and that ref.
 10. **Close out.** Check on `main` that each PR's carried content matches its
-    map; containment alone is not coverage. Run the salvage pass before
-    closing anything unmerged, hygiene and tooling PRs included; close it with
-    the reason and keep its branch. Delete a head branch only when all it
-    holds is on `main` or kept elsewhere, its head equals the frozen head, and
-    no open PR uses it as base: retarget dependents first and confirm they
-    stay open. A failed retarget never justifies closing unreviewed content.
+    map; containment alone is not coverage. Never close a landed PR; one that
+    does not show merged is reported to the owner. Run the salvage pass before
+    closing a PR from which nothing lands, hygiene and tooling PRs included;
+    close it with the reason and keep its branch. GitHub deletes a merged
+    PR's head branch: confirm its dependents stayed open. A failed retarget
+    never justifies closing unreviewed content.
 11. **Report** at the end and on material change (`RULES.md` section 6).
 
 ## Ends
 
-- Landed: on `main`, each carried PR naming what it carries (step 9).
+- Landed: each carried PR shows merged and names what it carries (step 9).
 - Held: the PR stays open with the exact obligation or changed input named.
-- Not landed: the PR is closed with the reason and its branch is kept.
+- Not landed: nothing is on `main`; closed with the reason, branch kept.
 - Review only: stops after step 6, or after step 8 on an isolated copy.
 
 ## Never
@@ -113,8 +113,8 @@ section 1). Reviewers are the landing-reviewer rows in `SETTINGS.md`.
 - Let the lander or author accept its own fix, a new session confirm one, or
   a reviewer edit the source or change GitHub state.
 - Add an axiom, primitive, premise or theory vocabulary (`RULES.md`
-  section 2, rule 2); force-push; replay a gate result on a moved `main`;
-  hand-merge a generated file.
+  section 2, rule 2); force-push anything but a carried head under the loop's
+  lease; replay a gate result on a moved `main`; hand-merge a generated file.
 - Restamp evidence, rerun science to change a label, pad a certificate or
   invent route coverage; report a check that could not run as not run.
 - Fill a reviewer role below its row in `SETTINGS.md` without the owner.

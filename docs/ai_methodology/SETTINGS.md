@@ -18,7 +18,7 @@ here with its date. Each campaign's retrospective says which settings stay.
 | PR checks | Hosted CI status on a PR is never waited on or reported; the landing gate is the gate. A session still reports any check it ran itself that failed | 2026-07-02, restated 2026-11-10 |
 | Published work | Searched once per route or step and put on record; built on at once with credit as `argued`; verified in parallel | 2026-11-02 |
 | Lane output | Closed proofs or explicit counterexamples; lanes run to closure; route choices recorded with reasons | 2026-11-02 |
-| PR state | Decided: a landed PR shows as merged and a closed PR means nothing from it is on `main`. Not yet in force: `land` still pushes the reviewed commits and closes the PR, and its contract check requires that. Until both change, read a PR's landing record | 2026-11-10 |
+| PR state | In force for every landing run with the loop in `skills/review-loop/references/LANDING.md` as changed on 2026-11-10: a landed PR shows as merged, and a PR closed without merging has nothing on `main`. A PR closed before that loop was in use may still have landed: read its landing record. Measure: the loop prints `MERGED` or `NOT_MERGED` for each carried PR. One `NOT_MERGED` line, or a dependent PR that GitHub closes when a landed head branch is deleted, suspends the setting until the owner decides | 2026-11-10 |
 | Negative-claim packet | Decided: the N1 to N8 packet becomes a checker's aid and an obstruction is judged as a theorem about an explicit family. Not yet in force: the audit gate still requires the packet with its five-route count, and landing still checks the N5 lines | 2026-11-10 |
 
 ## Method defaults (2026-11-02)

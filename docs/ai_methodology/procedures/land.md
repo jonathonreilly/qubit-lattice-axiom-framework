@@ -83,7 +83,7 @@ section 1). Reviewers are the landing-reviewer rows in `SETTINGS.md`.
    restore generated audit outputs. On failure land nothing, keep the log and
    retry units singly in dependency order without guessing a culprit.
 9. **Push.** Retarget to `main` every open PR based on a carried head
-   branch. Then run the landing loop in the `LANDING.md` reference. It
+   branch. Then run `land_train.sh` as the `LANDING.md` reference says. It
    re-verifies heads, base and tree, saves each frozen head under a recovery
    ref, moves each head under an exact lease to its reviewed commits,
    fast-forwards `main` once and proves containment, so each carried PR shows
@@ -136,7 +136,7 @@ section 1). Reviewers are the landing-reviewer rows in `SETTINGS.md`.
 | Step | Read at that step, at this file's revision | For |
 |---|---|---|
 | 1, 3 | `SK/references/REVIEW_SETUP.md` | base, changed set, pre-fix list |
-| 1, 7, 9 | `SK/references/LANDING.md` | sets, worktrees, batches, push loop |
+| 1, 7, 9 | `SK/references/LANDING.md` | sets, worktrees, batches, push script |
 | 2, 6 | `SK/references/REVIEW_UNITS.md` | map, reuse, `main` advances |
 | 2, 6 | `SK/references/UNIT_RECEIPT.md` | record schema for the checker |
 | 3, 5 | `AM/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` | one cure per defect class |

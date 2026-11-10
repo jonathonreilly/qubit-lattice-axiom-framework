@@ -23,7 +23,7 @@ KNOWN_BROKEN = {
     ),
     "test_citation_graph_build_serialization.py": (
         "5 cases: reads the landing loop from review-loop/SKILL.md; "
-        "it moved to references/LANDING.md"
+        "it is now review-loop/scripts/land_train.sh"
     ),
     "test_cycle873_authority_packet_repair.py": "1 case: body exceeds the target limit it pins",
     "test_cycle970_inter_site_packet.py": "1 case: the packet checker now exits 1",

@@ -52,6 +52,16 @@ REVIEW_ONLY_VALIDATION_RULES = (
     r"a matching `HEAD` alone is insufficient",
 )
 COMMAND_REL = ".claude/commands/review-loop.md"
+# The landing loop is a script in the skill package. Its structure is checked
+# in that file, and LANDING.md must run exactly that file.
+LANDING_SCRIPT_PACKAGE_PATH = "scripts/land_train.sh"
+LANDING_SCRIPT_REL = (
+    "docs/ai_methodology/skills/review-loop/" + LANDING_SCRIPT_PACKAGE_PATH
+)
+LANDING_RUN_COMMAND = 'bash "$SKILL_DIR/scripts/land_train.sh" "$TRAIN_FILE"'
+LANDING_SCRIPT_ENTRY = "land_train() {"
+LANDING_SCRIPT_READS_INPUT = 'read_train_file "$@"'
+LANDING_SCRIPT_CALL = 'land_train "$@"; exit'
 GENERATOR_REL = "docs/audit/scripts/generate_skill_axiom_baselines.py"
 PIPELINE_REL = "docs/audit/scripts/run_pipeline.sh"
 PLACEMENT_REFERENCES = {
@@ -293,24 +303,24 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"check_changed_audit_evidence\.py --base origin/main",
         r'git diff --check "\$review_base"\.\.HEAD',
         r"git diff --cached --check",
-        r'if \[ "\$\(git rev-parse origin/main\)" != "\$VALIDATED_BASE" \]; then',
-        r'if \[ "\$\(git rev-parse \'HEAD\^\{tree\}\'\)" '
-        r'!= "\$VALIDATED_TREE" \]; then',
+        r"^\s*VALIDATED_BASE=<origin-main-sha-used-by-the-combined-gate>$",
+        r"^\s*VALIDATED_TREE=<combined-candidate-tree-sha>$",
     ),
     "landing_train_head_guard": (
-        r"PR_NUMBERS=\(",
-        r"PR_HEADS=\(",
-        r"PR_HEAD_REFS=\(",
-        r"PR_TIPS=\(",
-        r"verify_frozen_pr_heads\(\)",
-        r"verify_pr_github_state\(\)",
-        r"record_recovery_refs\(\)",
+        r"^\s*PR_NUMBERS=<pr-a-number> <pr-b-number> \.\.\.$",
+        r"^\s*PR_HEADS=<pr-a-frozen-head-sha> <pr-b-frozen-head-sha> \.\.\.$",
+        r"^\s*PR_HEAD_REFS=<pr-a-head-branch> <pr-b-head-branch> \.\.\.$",
+        r"^\s*PR_TIPS=<pr-a-newest> <pr-b-newest> \.\.\.$",
         r"refs/review-loop/recovery/pr-",
-        r"move_pr_heads\(\)",
-        r"restore_frozen_pr_heads\(\)",
-        r"PR head moved; dissolve the train without pushing",
         r"post-push head check",
         r"force-with-lease=refs/heads/<head>:<frozen-head-sha>",
+    ),
+    "landing_script_entry": (
+        r"The train's fail-closed landing loop is the script\s+"
+        r"\[`scripts/land_train\.sh`\]\(\.\./scripts/land_train\.sh\)\.",
+        r"Never paste or edit a copy of\s+it\.",
+        r"^\s*COMMITS=<pr-a-oldest> \.\.\. <pr-a-newest> <pr-b-oldest> \.\.\.$",
+        r"The script parses the train file and never executes it\.",
     ),
     "landed_pr_shows_merged": (
         r"A landed PR shows as merged \(owner decision 2026-11-10\)\. Review-loop never\s+"
@@ -345,6 +355,47 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
     "manifest_landing": (
         r"acknowledged by the nightly\s+refresh",
         r"before EVERY push attempt",
+        r"write_citation_graph_manifest\.py",
+        r"citation_graph_manifest\.json",
+    ),
+    "disk_and_worktree_guards": (
+        r"5242880",
+        r"mktemp -d",
+        r"trap cleanup_review_wt EXIT",
+        r"retained worktree for recovery",
+        r"from science_fix_loop import cleanup_worktree",
+    ),
+}
+
+# The loop's own clauses. They must be active shell text of the landing
+# script: a comment, a multiline string or a heredoc that only mentions one
+# does not count. A family that also has prose clauses keeps them above.
+LANDING_SCRIPT_RULES: dict[str, tuple[str, ...]] = {
+    "landing_train_combined_gate": (
+        r'VALIDATED_BASE\) VALIDATED_BASE="\$\{entries\[0\]\}" ;;',
+        r'VALIDATED_TREE\) VALIDATED_TREE="\$\{entries\[0\]\}" ;;',
+        r'if \[ "\$\(git rev-parse origin/main\)" != "\$VALIDATED_BASE" \]; then',
+        r'if \[ "\$\(git rev-parse \'HEAD\^\{tree\}\'\)" '
+        r'!= "\$VALIDATED_TREE" \]; then',
+    ),
+    "landing_train_head_guard": (
+        r"PR_NUMBERS=\(",
+        r"PR_HEADS=\(",
+        r"PR_HEAD_REFS=\(",
+        r"PR_TIPS=\(",
+        r"verify_frozen_pr_heads\(\)",
+        r"verify_pr_github_state\(\)",
+        r"record_recovery_refs\(\)",
+        r"refs/review-loop/recovery/pr-",
+        r"move_pr_heads\(\)",
+        r"restore_frozen_pr_heads\(\)",
+        r"PR head moved; dissolve the train without pushing",
+    ),
+    "landing_script_entry": (
+        r"COMMITS=\(",
+        r"^read_train_file\(\) \{$",
+    ),
+    "manifest_landing": (
         r"run_citation_graph_build\.py",
         r"write_citation_graph_manifest\.py",
         r"citation_graph_manifest\.json",
@@ -357,13 +408,6 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"FAILED: manifest repair made no sequencer progress",
         r"FAILED: source conflict or sequencer failure",
         r"FAILED: manifest generation or staging during cherry-pick",
-    ),
-    "disk_and_worktree_guards": (
-        r"5242880",
-        r"mktemp -d",
-        r"trap cleanup_review_wt EXIT",
-        r"retained worktree for recovery",
-        r"from science_fix_loop import cleanup_worktree",
     ),
     "fail_closed_landing": (
         r"for attempt in 1 2 3 4",
@@ -444,14 +488,13 @@ SKILL_RULE_LOCATIONS = {
     "landing_train_scheduler": ("references/LANDING.md",),
     "landing_train_combined_gate": ("references/LANDING.md", "references/COMBINED_VALIDATION.md"),
     "landing_train_head_guard": ("SKILL.md", "references/LANDING.md"),
+    "landing_script_entry": ("references/LANDING.md",),
     "landed_pr_shows_merged": ("SKILL.md", "references/LANDING.md"),
     "dependent_pr_base_preservation": ("SKILL.md",),
     "live_surface_routing": ("references/REVIEW_SETUP.md", "references/SCIENCE_LENSES.md", "references/AUDIT_COMPATIBILITY.md"),
     "pipeline_strict_and_evidence": ("references/COMBINED_VALIDATION.md",),
     "manifest_landing": ("references/LANDING.md",),
-    "manifest_sequencer_progress": ("references/LANDING.md",),
     "disk_and_worktree_guards": ("references/LANDING.md",),
-    "fail_closed_landing": ("references/LANDING.md",),
 }
 UNIT_RULE_LOCATIONS = {
     "versioned_mechanical_receipt": ("references/REVIEW_UNITS.md",),
@@ -486,6 +529,8 @@ COMMAND_RULES: dict[str, tuple[str, ...]] = {
         r"force-with-lease=<ref>:<frozen-head-sha>",
         r"rechecks each landed head after the push",
         r"the loop closes no landed PR",
+        r"The landing loop is the skill's `scripts/land_train\.sh`: run that file",
+        r"never paste or edit a\s+copy of it",
     ),
     "command_dependent_base_preservation": (
         r"inventory open PRs using this branch as their base",
@@ -958,34 +1003,66 @@ def _context_is_top_level(shell: str, context: str) -> bool:
     return not scan.errors and balanced and len(starts) == 1 and depths[starts[0]] == 0
 
 
-def _landing_context_is_top_level(scan: MarkdownScan) -> bool:
-    candidates = [
-        body
-        for info, body in scan.fenced_blocks
-        if info.split(maxsplit=1)[0] in {"bash", "sh", "shell", "zsh"}
-        and CONTAINMENT_CONTEXT in body
-    ]
-    return len(candidates) == 1 and _context_is_top_level(
-        candidates[0], CONTAINMENT_CONTEXT
-    )
+def _landing_script_body(script: str) -> tuple[str, list[int]] | None:
+    """Return the active body of ``land_train`` and its command depths.
 
-
-def _train_shell(scan: MarkdownScan) -> tuple[str, list[int]] | None:
-    """Return the one active train-landing shell block and its command depths."""
-    candidates = [
-        body
-        for info, body in scan.fenced_blocks
-        if info.split(maxsplit=1)[0] in {"bash", "sh", "shell", "zsh"}
-        and "VALIDATED_BASE=<origin-main-sha-used-by-the-combined-gate>" in body
-        and "PR_NUMBERS=(<pr-a-number> <pr-b-number> ...)" in body
-    ]
-    if len(candidates) != 1:
-        return None
-    shell_scan = _active_shell(candidates[0])
+    The loop runs only if the script defines ``land_train`` once at the top
+    level and calls it as its last command, and it sees validated inputs only
+    if reading the train file is the first command of that body. Depths are
+    relative to the body: a command the loop always runs has depth zero. Any
+    lexical error, imbalance or other layout fails closed.
+    """
+    shell_scan = _active_shell(script)
+    lines = shell_scan.active.splitlines()
     depths, balanced = _shell_depths(shell_scan.active)
     if shell_scan.errors or not balanced:
         return None
-    return shell_scan.active, depths
+    entries = [
+        index
+        for index, line in enumerate(lines)
+        if line == LANDING_SCRIPT_ENTRY and depths[index] == 0
+    ]
+    if len(entries) != 1:
+        return None
+    start = entries[0]
+    end = next(
+        (index for index in range(start + 1, len(lines)) if depths[index] == 0),
+        None,
+    )
+    if end is None or lines[end] != "}":
+        return None
+    if [line for line in lines[end + 1 :] if line.strip()] != [LANDING_SCRIPT_CALL]:
+        return None
+    body = lines[start + 1 : end]
+    first = next((line.strip() for line in body if line.strip()), "")
+    if first != LANDING_SCRIPT_READS_INPUT:
+        return None
+    return "\n".join(body), [depth - 1 for depth in depths[start + 1 : end]]
+
+
+def _landing_containment_is_unconditional(script: str) -> bool:
+    """Require the one containment check as a command the loop always runs."""
+    shell = _landing_script_body(script)
+    return shell is not None and _active_context_is_at_depth(
+        shell[0], CONTAINMENT_CONTEXT, 0
+    )
+
+
+def _landing_run_command_ok(scan: MarkdownScan) -> bool:
+    """Require one shell block that runs the package script and nothing else."""
+    candidates = [
+        body
+        for info, body in scan.fenced_blocks
+        if info.split(maxsplit=1)[:1] in (["bash"], ["sh"], ["shell"], ["zsh"])
+        and "land_train.sh" in body
+    ]
+    if len(candidates) != 1:
+        return False
+    shell_scan = _active_shell(candidates[0])
+    commands = [
+        line.strip() for line in shell_scan.active.splitlines() if line.strip()
+    ]
+    return not shell_scan.errors and commands == [LANDING_RUN_COMMAND]
 
 
 def _ordered_lines_at_depth(
@@ -1050,10 +1127,10 @@ def _combined_validation_recipe_ok(scan: MarkdownScan) -> bool:
     return True
 
 
-def _train_combined_gate_structure_ok(scan: MarkdownScan) -> bool:
+def _train_combined_gate_structure_ok(scan: MarkdownScan, script: str) -> bool:
     if not _combined_validation_recipe_ok(scan):
         return False
-    shell = _train_shell(scan)
+    shell = _landing_script_body(script)
     if shell is None:
         return False
     active, depths = shell
@@ -1061,8 +1138,7 @@ def _train_combined_gate_structure_ok(scan: MarkdownScan) -> bool:
         active,
         depths,
         (
-            ("VALIDATED_BASE=<origin-main-sha-used-by-the-combined-gate>", 0),
-            ("VALIDATED_TREE=<combined-candidate-tree-sha>", 0),
+            (LANDING_SCRIPT_READS_INPUT, 0),
             ('if [ "$(git rev-parse origin/main)" != "$VALIDATED_BASE" ]; then', 1),
             (
                 'if [ "$(git rev-parse \'HEAD^{tree}\')" '
@@ -1074,8 +1150,8 @@ def _train_combined_gate_structure_ok(scan: MarkdownScan) -> bool:
     )
 
 
-def _train_head_guard_structure_ok(scan: MarkdownScan) -> bool:
-    shell = _train_shell(scan)
+def _train_head_guard_structure_ok(script: str) -> bool:
+    shell = _landing_script_body(script)
     if shell is None:
         return False
     active, depths = shell
@@ -1117,6 +1193,39 @@ def _train_head_guard_structure_ok(scan: MarkdownScan) -> bool:
     )
 
 
+def _landing_script_entry_ok(scan: MarkdownScan, script: str) -> bool:
+    """Bind the documented command to a script that checks and sets all inputs."""
+    if not _landing_run_command_ok(scan) or _landing_script_body(script) is None:
+        return False
+    active = _active_shell(script).active
+    depths, _ = _shell_depths(active)
+    return _ordered_lines_at_depth(
+        active,
+        depths,
+        (
+            ('if [ -z "${BASH_VERSION:-}" ]; then', 0),
+            ("read_train_file() {", 0),
+            (
+                '*[!0123456789]*) train_file_error '
+                '"$name entry is not a PR number: $entry" ;;',
+                5,
+            ),
+            ('if ! git check-ref-format "refs/heads/$entry"; then', 4),
+            ('if ! is_object_name "$entry"; then', 4),
+            ('if [ "${#entries[@]}" -ne 1 ]; then', 3),
+            ('VALIDATED_BASE) VALIDATED_BASE="${entries[0]}" ;;', 3),
+            ('VALIDATED_TREE) VALIDATED_TREE="${entries[0]}" ;;', 3),
+            ('COMMITS) COMMITS=("${entries[@]}") ;;', 3),
+            ('PR_NUMBERS) PR_NUMBERS=("${entries[@]}") ;;', 3),
+            ('PR_HEADS) PR_HEADS=("${entries[@]}") ;;', 3),
+            ('PR_HEAD_REFS) PR_HEAD_REFS=("${entries[@]}") ;;', 3),
+            ('PR_TIPS) PR_TIPS=("${entries[@]}") ;;', 3),
+            (LANDING_SCRIPT_ENTRY, 0),
+            (LANDING_SCRIPT_CALL, 0),
+        ),
+    )
+
+
 def _missing(text: str, rules: dict[str, tuple[str, ...]]) -> list[str]:
     return [
         name
@@ -1135,6 +1244,7 @@ def _append_once(items: list[str], name: str) -> None:
 
 def validate_texts(
     skill: str,
+    landing_script: str,
     generator: str,
     pipeline: str,
     command: str | None = None,
@@ -1154,6 +1264,8 @@ def validate_texts(
         + _missing(active_pipeline, PIPELINE_RULES)
         + (_missing(active_command, COMMAND_RULES) if command_scan is not None else [])
     )
+    for name in _missing(_active_shell(landing_script).active, LANDING_SCRIPT_RULES):
+        _append_once(missing, name)
     if scan.errors:
         _append_once(missing, "markdown_structure")
     if "docs/publication/ci3_z3" in active_skill:
@@ -1164,11 +1276,13 @@ def validate_texts(
         _append_once(missing, "pipeline_contract_registration")
     if not _reviewer_structure_ok(scan.prose):
         _append_once(missing, "reviewer_lenses")
-    if not _landing_context_is_top_level(scan):
+    if not _landing_script_entry_ok(scan, landing_script):
+        _append_once(missing, "landing_script_entry")
+    if not _landing_containment_is_unconditional(landing_script):
         _append_once(missing, "fail_closed_landing")
-    if not _train_combined_gate_structure_ok(scan):
+    if not _train_combined_gate_structure_ok(scan, landing_script):
         _append_once(missing, "landing_train_combined_gate")
-    if not _train_head_guard_structure_ok(scan):
+    if not _train_head_guard_structure_ok(landing_script):
         _append_once(missing, "landing_train_head_guard")
     if not _context_is_top_level(pipeline, PIPELINE_CONTRACT_CONTEXT):
         _append_once(missing, "pipeline_contract_registration")
@@ -1269,18 +1383,30 @@ def load_skill_contract(repo_root: Path) -> tuple[str, list[str]]:
     if not _combined_validation_recipe_ok(combined):
         _append_once(missing, "routed_landing_train_combined_gate")
     landing = _markdown_scan(sources.get("references/LANDING.md", ""))
-    if not _landing_context_is_top_level(landing):
-        _append_once(missing, "routed_fail_closed_landing")
-    if not _train_head_guard_structure_ok(landing):
-        _append_once(missing, "routed_landing_train_head_guard")
+    if not _landing_run_command_ok(landing):
+        _append_once(missing, "routed_landing_script_entry")
     parts = [entry] + [sources.get(name, "") for name in SKILL_CONTRACT_REFERENCES]
     return "\n\n".join(parts), missing
 
 
+def load_landing_script(repo_root: Path) -> tuple[str, list[str]]:
+    """Read the landing loop from its fixed place inside the skill package."""
+    package = (repo_root / SKILL_REL).parent
+    path = package / LANDING_SCRIPT_PACKAGE_PATH
+    if not path.resolve().is_relative_to(package.resolve()):
+        return "", ["landing_script_outside_package"]
+    try:
+        return path.read_text(encoding="utf-8"), []
+    except (OSError, UnicodeError):
+        return "", ["landing_script_unreadable"]
+
+
 def validate_repo(repo_root: Path) -> list[str]:
     skill, routing_failures = load_skill_contract(repo_root)
-    return routing_failures + validate_texts(
+    landing_script, script_failures = load_landing_script(repo_root)
+    return routing_failures + script_failures + validate_texts(
         skill,
+        landing_script,
         (repo_root / GENERATOR_REL).read_text(encoding="utf-8"),
         (repo_root / PIPELINE_REL).read_text(encoding="utf-8"),
         (repo_root / COMMAND_REL).read_text(encoding="utf-8"),
@@ -1301,7 +1427,7 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  missing invariant family: {name}")
         return 1
     family_count = (
-        len(SKILL_RULES)
+        len(set(SKILL_RULES) | set(LANDING_SCRIPT_RULES))
         + len(UNIT_PROSE_RULES)
         + len(GENERATOR_RULES)
         + len(PIPELINE_RULES)

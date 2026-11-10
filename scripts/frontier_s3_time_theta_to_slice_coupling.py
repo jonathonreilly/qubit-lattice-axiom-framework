@@ -6,9 +6,9 @@ The checked claim is deliberately narrow:
 * the Route-2 slice backbone supplies an exact conditional family
   `Xi_P(t; c) = (P_R c) x exp(-t Lambda_R) u_*` once an admissible
   readout map is supplied;
-* the upstream readout-map endpoint triple is not derived on the current
-  exact stack, so the parent row remains an `open_gate` rather than a
-  unique `Theta_R -> Lambda_R` coupling theorem.
+* the readout map on the restricted class is not unique, and the spline
+  triple is not a field value to derive, so the parent row remains an
+  `open_gate` rather than a unique `Theta_R -> Lambda_R` coupling theorem.
 """
 from __future__ import annotations
 
@@ -80,8 +80,7 @@ def part1_note_boundary() -> None:
     )
     check(
         "parent note names the inherited readout-map obstruction",
-        "readout-map endpoint triple" in note
-        and "not derived by the current exact stack" in note
+        "spline triple is not a field value to derive" in note
         and "readout map remains non-unique" in note,
         "non-unique readout map remains the blocker",
     )
@@ -174,7 +173,7 @@ def part3_inherited_open_gate() -> None:
     check(
         "upstream exact readout theorem does not land on the current surface",
         not theorem_lands,
-        "the endpoint triple remains the open theorem target",
+        "the printed triple is not a field value the live surface has to hit",
     )
     check(
         "distinct admissible maps agree at the E-shell but differ at E-center",
@@ -188,7 +187,7 @@ def part3_inherited_open_gate() -> None:
     )
     check(
         "safe endpoint is exact conditional family plus inherited open gate",
-        "remains `open_gate` until that target closes upstream" in note
+        "This row remains `open_gate`." in note
         and "no unique exact `Theta_R -> Lambda_R` coupling theorem on this arm" in note,
         "runner does not promote the parent row to retained or closed",
     )

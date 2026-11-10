@@ -304,7 +304,7 @@ def part4_one_dimensional_boundary() -> None:
     )
     check(
         "the parent S3 target remains upstream readout selection rather than a new slice law",
-        "The next theorem target is the missing readout-map endpoint triple" in text(PARENT_NOTE)
+        "The readout map on the restricted class is not unique, and the spline triple is not a field value to derive" in text(PARENT_NOTE)
         and "A future positive" in text(DIRECT_NOTE)
         and "attack the upstream readout selector" in text(DIRECT_NOTE),
         "direct-consumer packet points back to rho_E selection",

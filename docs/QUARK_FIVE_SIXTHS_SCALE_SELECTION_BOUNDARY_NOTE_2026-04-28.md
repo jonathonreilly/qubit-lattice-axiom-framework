@@ -166,7 +166,8 @@ R_self = m_s(2 GeV) / m_b(m_b) = 0.0223445...
 
 so `R_pred/R_self - 1 = +0.20%`.
 
-That is real bounded support. It is not a scale theorem.
+That mixed-scale figure is a convention coincidence, not bounded support.
+The corrigendum gives the common-scale miss as `+18.6% ± 1.2%`.
 
 ## 4. Scale-Selection Wall
 
@@ -184,8 +185,11 @@ T = 1.147466...
 R_same = 0.0194729...
 ```
 
-The same predicted ratio then differs from the common-scale comparator by
-about `+15%`.
+The inherited one-loop figures above give a common-scale gap of about
+`+15%` at `T = 1.1475`. The corrigendum withdraws that transport: four-loop
+running gives `T = 1.184`, and the common-scale miss is `+18.6% ± 1.2%`.
+The displayed `p_same = 0.803802...` is the inherited one-loop value; the
+corrigendum replaces `p_same` with `0.7975`.
 
 Equivalently, the exponent inferred from a fixed CKM value depends on the
 chosen mass-ratio surface:
@@ -228,8 +232,9 @@ The block-04 stretch attempt checked five frames:
    an exponentiation mechanism.
 2. **CKM-atlas frame.** `|V_cb| = alpha_s(v)/sqrt(6)` is retained, but the
    atlas gives a mixing amplitude, not a mass-ratio scale convention.
-3. **Threshold-local frame.** The bridge is numerically sharp on
-   `m_s(2 GeV)/m_b(m_b)`, so it remains valuable bounded support.
+3. **Threshold-local frame.** The `+0.20%` figure on
+   `m_s(2 GeV)/m_b(m_b)` is a mixed-scale coincidence. The corrigendum
+   withdraws it as bounded support.
 4. **Common-scale frame.** The same exponent on `m_s(m_b)/m_b(m_b)` fails by a
    material amount.
 5. **RG-covariant frame.** A promotion route must derive the scale surface or

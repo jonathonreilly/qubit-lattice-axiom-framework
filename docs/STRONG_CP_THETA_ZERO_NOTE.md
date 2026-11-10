@@ -316,14 +316,9 @@ discrete weak-sector source. The runner keeps the exact finite checks:
 - `|det V_CKM| = 1` (unitarity sanity only; see the Corrigendum),
 - explicit positive-mass `arg det(M_u M_d) = 0`.
 
-Thus the runner finds no CKM-to-`θ_eff` leakage on this bounded selected
-surface. This does not exclude a strong-sector phase after admitting a CP-odd
-action term or complex mass phase outside that surface.
-
-> Corrigendum pointer (2026-09-30): the check `|det V_CKM| = 1` holds for every
-> unitary matrix and is not a leakage test; the sentence above does not
-> follow from it. See the Corrigendum section near the top. Radiative
-> weak-sector leakage into `θ̄` remains open.
+`|det V_CKM| = 1` holds for every unitary matrix. It is not a test for
+CKM-to-`θ_eff` leakage, and this paragraph does not conclude that the runner
+found no such leakage. Radiative weak-sector leakage into `θ̄` remains open.
 
 ## Combined Result
 

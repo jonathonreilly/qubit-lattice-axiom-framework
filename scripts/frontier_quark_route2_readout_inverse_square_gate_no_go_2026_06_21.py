@@ -66,7 +66,7 @@ REQUIRED_MARKERS = {
         "arbitrary `rho_E` in the admissible 1-parameter family",
     ),
     "S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md": (
-        "The next theorem target is the missing readout-map endpoint triple",
+        "The readout map on the restricted class is not unique, and the spline triple is not a field value to derive",
         "exact conditional readout-to-slice family",
     ),
 }

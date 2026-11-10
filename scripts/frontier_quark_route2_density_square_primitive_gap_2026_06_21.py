@@ -159,7 +159,7 @@ QUOTE_ANCHORS: tuple[tuple[str, str, tuple[str, ...]], ...] = (
         "exact readout note leaves endpoint triple unproved and rho_E free",
         "QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md",
         (
-            "it still does not derive the exact dimensionless readout triple",
+            "21/4` is not the missing map entry of the field",
             "`rho_E = 0` and `rho_E = 21/4` are both exact admissible maps",
         ),
     ),
@@ -168,7 +168,7 @@ QUOTE_ANCHORS: tuple[tuple[str, str, tuple[str, ...]], ...] = (
         "S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md",
         (
             "endpoint triple is not yet derived",
-            "The next theorem target is the missing readout-map endpoint triple.",
+            "The readout map on the restricted class is not unique, and the spline triple is not a field value to derive.",
         ),
     ),
     (

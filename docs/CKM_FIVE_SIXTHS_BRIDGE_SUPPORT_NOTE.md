@@ -72,23 +72,13 @@ On the current `main` surface:
 - the bounded `5/6` bridge then gives
   `m_s/m_b = [alpha_s(v)/sqrt(6)]^(6/5)`
 
-This bounded extraction matches the threshold-local self-scale comparator
-`m_s(2 GeV)/m_b(m_b)` at `+0.20%`.
+The mixed-scale print against `m_s(2 GeV)/m_b(m_b)` is `+0.20%`. That is not
+a scale-consistent test and is not the live miss. The corrigendum gives the
+common-scale miss as `+18.6% ± 1.2%`. The inherited one-loop estimate of that
+gap is about `+15%`.
 
-If `m_s` is first run to the common scale `m_b`, the same comparison moves to
-`m_s(m_b)/m_b(m_b)` and the deviation widens to about `+15%`. The two
-comparison surfaces are related by the standard 1-loop transport factor
-
-$$
-\frac{m_s(2\,\mathrm{GeV})}{m_b(m_b)}
-=
-\frac{m_s(m_b)}{m_b(m_b)}
-\left[\frac{\alpha_s(2\,\mathrm{GeV})}{\alpha_s(m_b)}\right]^{12/25}.
-$$
-
-That is strong support for using the threshold-local mixed/self-scale
-comparator as the live observation surface for this bounded bridge. It is not
-yet a theorem-grade derivation of either:
+The threshold-local comparator is not the live observation surface. The note
+does not yet derive either:
 
 - the full non-perturbative `5/6` exponentiation mechanism at `g = 1`, or
 - the exact scale-selection rule from the framework alone.
@@ -136,7 +126,9 @@ $$
 = 0.0223445,
 $$
 
-so the bounded bridge misses by only `+0.20%`.
+so the mixed-scale print is `+0.20%`. That figure compares `m_s(2 GeV)` with
+`m_b(m_b)`. It is not the live miss. The corrigendum gives the common-scale
+miss as `+18.6% ± 1.2%`.
 
 ## Deviation decomposition
 
@@ -170,30 +162,21 @@ $$
 \frac{(m_s/m_b)_{\mathrm{obs\ from}\ |V_{cb}|}}{(m_s/m_b)_{\mathrm{self}}}.
 $$
 
-That is why the live `m_s/m_b` prediction lands at `+0.20%` rather than the
-`+0.28%` bridge-only offset.
+That product is the mixed-scale arithmetic. It is not a live miss of `+0.20%`.
+The common-scale comparison is the one in the corrigendum.
 
 ## Scale statement
 
-The live comparison surface is now:
-
-- **threshold-local self-scale comparator**
-  `m_s(2 GeV)/m_b(m_b)`
+The threshold-local comparator `m_s(2 GeV)/m_b(m_b)` is not the live
+comparison surface. The `+0.20%` print is a mixed-scale coincidence.
 
 The current safe interpretation is:
 
-- the bounded bridge is numerically coherent on the threshold-local
-  self-scale surface;
-- forcing a common-scale comparison strips off the one-loop transport factor
-  and creates the larger mismatch;
-- a theorem-grade derivation that this is the unique exact framework scale
-  surface is still open.
+- the common-scale comparison misses by `+18.6% ± 1.2%`;
+- the fitting exponent is `0.7975`, not `5/6`;
+- a theorem-grade derivation of the scale surface is still open.
 
-So the mass-ratio lane should not say only “mixed-scale works, same-scale is
-open.” The sharper current statement is:
-
-- threshold-local self-scale support is real;
-- full scale-choice closure is not yet theorem-grade.
+Full scale-choice closure is not theorem-grade.
 
 ## What this buys
 

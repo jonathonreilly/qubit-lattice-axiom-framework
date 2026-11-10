@@ -314,7 +314,7 @@ SWEEP_EXCEPTIONS: dict[tuple[str, str], str] = {
     ("QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md", "gamma_T = alpha_T u_T + beta_T delta_A1 u_T"): "formula inside anchored restricted readout class",
     ("QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md", "So `rho_E = 0` and `rho_E = 21/4` are both exact admissible maps on the"): "non-uniqueness statement, not an edge",
     ("QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md", "- exact bilinear carrier `K_R`: already present,"): "status summary of existing edge",
-    ("QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md", "- smallest exact missing map entry: `beta_E / alpha_E = 21/4` after the"): "status summary of target, not a relation edge",
+    ("QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md", "- the live endpoint-fixed readout is not the theorem target, and `21/4` is"): "status summary of target, not a relation edge",
     ("QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md", "`beta_E / alpha_E = 21/4`, and it does not claim retained `m_u` or `m_c`"): "scope hygiene, not an edge",
     ("QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md", "rho_E := beta_E / alpha_E = 21/4"): "target definition restating rho_E node",
     ("QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md", "This note asks whether `rho_E = 21/4` is forced by minimal Route-2 carrier"): "question framing, not an edge",

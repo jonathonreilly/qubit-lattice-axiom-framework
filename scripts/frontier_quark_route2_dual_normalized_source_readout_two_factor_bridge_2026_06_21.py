@@ -200,8 +200,8 @@ def main() -> int:
         "not an exact tensor observable" in constructed and "exact endpoint coefficient theorem" in constructed,
     )
     check(
-        "theta-to-slice note still names the missing readout-map endpoint triple as the uniqueness blocker",
-        "missing readout-map endpoint triple" in coupling
+        "theta-to-slice note says the spline triple is not a field value to derive",
+        "spline triple is not a field value to derive" in coupling
         and "unique-exact `Theta_R -> Lambda_R` coupling theorem **not** closed" in coupling,
     )
     check(

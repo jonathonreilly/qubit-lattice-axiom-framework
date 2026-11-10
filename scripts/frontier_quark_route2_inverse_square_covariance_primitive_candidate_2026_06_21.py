@@ -214,7 +214,7 @@ def part5_quote_anchors() -> None:
         "readout map keeps endpoint triple open",
         "QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md",
         (
-            "it still does not derive the exact dimensionless readout triple",
+            "21/4` is not the missing map entry of the field",
             "the irreducible missing map entry is the `E`-channel ratio",
         ),
     )

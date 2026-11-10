@@ -161,7 +161,7 @@ QUOTE_ANCHORS: tuple[tuple[str, str, tuple[str, ...]], ...] = (
         "theta-to-slice note localizes this block upstream of time transport",
         "S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md",
         (
-            "The next theorem target is the missing readout-map endpoint triple.",
+            "The readout map on the restricted class is not unique, and the spline triple is not a field value to derive.",
             "That\ntarget lives on the upstream readout-map row, not on this row.",
         ),
     ),

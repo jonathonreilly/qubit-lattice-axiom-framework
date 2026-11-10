@@ -62,7 +62,7 @@ REQUIRED_MARKERS = {
     "S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md": (
         "(beta_T / alpha_T, alpha_T / alpha_E, beta_E / alpha_E) = (-1, -2, 21/4)",
         "exact conditional readout-to-slice family",
-        "The next theorem target is the missing readout-map endpoint triple",
+        "The readout map on the restricted class is not unique, and the spline triple is not a field value to derive",
     ),
     "S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md": (
         "`|| (P_R c) ||` factor cancels",

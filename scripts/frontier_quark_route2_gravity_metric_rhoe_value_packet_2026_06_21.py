@@ -155,7 +155,7 @@ def main() -> int:
     ell_e = squash(texts["ell_e"])
     covariance = squash(texts["covariance"])
     parent = squash(texts["parent"])
-    check("exact readout prints live value and calls target missing map entry", "live endpoint-fixed readout" in exact and "missing map entry" in exact)
+    check("exact readout says the live print is not the field target", "not the theorem target" in exact and "not the missing map entry of the field" in exact)
     check("endpoint quotient says live value is nearest-rational bounded candidate", "nearest `E`-channel shell/center quotient is" in endpoint)
     check("endpoint quotient says bounded not exact theorem", "bounded, not retained" in endpoint)
     check("positivity note names gravity-metric live value near 5.2575", "gravity-metric" in positivity and "5.2575" in positivity)

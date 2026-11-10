@@ -122,9 +122,9 @@ def part1_note_and_authority_boundary() -> None:
         "status and scope firewall are explicit",
     )
     check(
-        "parent consumer still names the missing readout-map endpoint triple",
+        "parent consumer says the spline triple is not a field value to derive",
         "readout-map endpoint triple" in parent
-        and "remains `open_gate` until that target closes upstream" in parent,
+        and "This row remains `open_gate`." in parent,
         "block08 does not edit the parent open gate",
     )
     check(

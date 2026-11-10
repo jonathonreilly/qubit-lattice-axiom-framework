@@ -164,8 +164,8 @@ bridge exponent.
 | Prediction | Value | Observed | Error |
 |---|---|---|---|
 | `m_d/m_s` | 0.0517 | 0.0500 | +3.3% |
-| `m_s/m_b` | 0.02237 | 0.02234 | +0.13% |
-| `m_d/m_b` | 1.16e-3 | 1.12e-3 | +3.6% |
+| `m_s/m_b` | 0.02237 | 0.02234 | +0.13% (mixed-scale; withdrawn as agreement) |
+| `m_d/m_b` | 1.16e-3 | 1.12e-3 | +3.6% (mixed-scale; withdrawn as agreement) |
 
 Uses only promoted/exact framework inputs (atlas CKM, `alpha_s(v)`, SU(3)
 Casimirs).  Zero fitted parameters.  **Bounded secondary lane.**
@@ -282,11 +282,9 @@ closure).
 
 ## Retained vs bounded vs conditional
 
-**RETAINED (zero-free-parameter, sub-percent or few-percent to observation):**
+**RETAINED (zero-free-parameter, as scoped by each line):**
 
 - `m_d/m_s = alpha_s(v)/2` (Phase 1, +3.3%)
-- `m_s/m_b = [alpha_s(v)/sqrt(6)]^(6/5)` (Phase 1, +0.13%)
-- `m_d/m_b` chain (Phase 1, +3.6%)
 - `k_A = 7, k_B = 8` (Phase 4, integer theorem)
 - `rho = B/A = alpha_LM`, `eta_break = eps/B = alpha_LM/2` (Phase 4, exact)
 - `m_3`, `Dm^2_31` (Phase 4, +3.5%)
@@ -350,8 +348,9 @@ Expected result on `main`:
   `theta_23` upper-octant consequence is conditional/support, not retained;
 - the cosmological pie chart (`Omega_b, Omega_DM, Omega_m, Omega_Lambda`)
   lands within 2% across the board once `eta` is imported;
-- the five-phase attack reduces the ToE parameter count on the retained
-  surface by delivering the Phase 1 sub-percent down-type chain.
+- the five-phase attack does not deliver a sub-percent down-type chain.
+  `m_d/m_s` at `+3.3%` stands. The `m_s/m_b` and `m_d/m_b` mixed-scale
+  percentages are withdrawn as agreement.
 
 **Cannot claim:**
 

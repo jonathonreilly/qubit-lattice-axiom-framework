@@ -132,7 +132,7 @@ def main() -> int:
         "S3 gate is conditional on supplied P_R",
         "Xi_P(t ; c) = (P_R c) \u2297 V_R(t)" in s3_gate
         and "readout-map endpoint triple" in s3_gate
-        and "not derived by the current exact stack" in s3_gate,
+        and "spline triple is not a field value to derive" in s3_gate,
     )
     check(
         "factor-rigidity consumer localizes ambiguity to spatial prefactor",

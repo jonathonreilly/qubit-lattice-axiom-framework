@@ -79,7 +79,7 @@ def main() -> int:
     check(
         "parent note still names the endpoint triple as the blocker",
         "readout-map endpoint triple" in parent_note
-        and "not derived by the current exact stack" in parent_note,
+        and "spline triple is not a field value to derive" in parent_note,
     )
     check(
         "factor-rigidity note supplies the shared time-factor premise",
@@ -195,7 +195,7 @@ def main() -> int:
 
     check(
         "current authorities do not supply the E-center witness value as a theorem",
-        "not derived by the current exact stack" in parent_note
+        "spline triple is not a field value to derive" in parent_note
         and "irreducible missing map entry" in readout_note,
     )
 

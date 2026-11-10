@@ -157,8 +157,8 @@ With `alpha_s(v) = 0.103303816122`:
 Solving the partition equations using the observed ratios as comparator
 values (**not** as derivation inputs) yields:
 
-- `f_12 = sqrt((m_d/m_s)_obs / |V_us|^2) = 0.9839` (1-2 down-dominant at 1.6%)
-- `f_23 = sqrt((m_s/m_b)^(5/3)_obs / |V_cb|^2) = 0.9983` (2-3 down-dominant at 0.2%)
+- `f_12 = sqrt((m_d/m_s)_obs / |V_us|^2) = 0.9839` (1-2 down-dominant at 1.6%; both masses at 2 GeV, unchanged)
+- `f_23 = 0.9983` is the mixed-comparator value, not the common-scale partition. The corrigendum gives the common-scale partition `f_23 = 0.867`. The `0.2%` label is withdrawn.
 
 The residual up-sector admits:
 
@@ -173,12 +173,10 @@ The 1-2 sector `m_u/m_c` lands within 3% of the observed ratio at the
 observation-comparator partition, consistent with the classic Cabibbo-Fritzsch
 result `|V_us| ≈ sqrt(m_d/m_s) - phase(m_u/m_c)`.
 
-The 2-3 sector `m_c/m_t` lands 10x too small.  The cause is visible in
-the numerics: the Phase 1 down-sector bridge saturates `|V_cb|^2` to within
-0.2%, leaving too little room for any up-sector contribution under the
-CP-orthogonal ansatz.  The observed 2-3 sector requires a non-orthogonal
-relative phase (`cos(psi) ≈ 0.2`, not `cos(psi) = 0`) and/or a modified
-bridge combination rule.
+The 2-3 sector `m_c/m_t` line above is the mixed-comparator arithmetic at
+`f_23 = 0.9983`. The diagnosis that the Phase 1 bridge saturates `|V_cb|^2`
+to within 0.2% is an artefact of that mixed comparator. The corrigendum
+replaces it with the common-scale partition `f_23 = 0.867`.
 
 This mismatch is a **structural signature** of the bounded status: the
 parallel-bridge + CP-orthogonal ansatz is close to right for the 1-2 sector

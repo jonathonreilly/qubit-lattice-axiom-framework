@@ -223,7 +223,7 @@ def part3_source_markers() -> None:
     required = {
         "S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md": [
             "endpoint triple",
-            "not derived by the current exact stack",
+            "spline triple is not a field value to derive",
             "open_gate",
         ],
         "QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md": [

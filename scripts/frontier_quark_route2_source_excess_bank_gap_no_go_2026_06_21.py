@@ -62,7 +62,7 @@ REQUIRED_ANCHORS = {
         "lacks is a theorem that selects one unique `P_R`",
     ),
     "S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md": (
-        "The next theorem target is the missing readout-map endpoint triple",
+        "The readout map on the restricted class is not unique, and the spline triple is not a field value to derive",
         "exact conditional readout-to-slice family",
     ),
     "frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py": (

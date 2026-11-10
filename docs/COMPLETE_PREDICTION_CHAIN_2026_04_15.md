@@ -657,8 +657,10 @@ non-perturbative MC computation. Status: BOUNDED.
 
 The structural machinery is strong:
 - V_us = sqrt(m_d/m_s) to 0.31% (Gatto-Sartori-Tonin relation)
-- bounded `5/6` bridge support gives `V_cb = (m_s/m_b)^{5/6}` to `0.23%` on
-  the threshold-local self-scale comparator; full bridge/scale closure remains open
+- the `0.23%` figure for `V_cb = (m_s/m_b)^{5/6}` on the threshold-local
+  comparator is a mixed-scale coincidence and is not evidence for the bridge.
+  The common-scale miss is `+18.6% ± 1.2%`, and the fitting exponent is
+  `0.7975`, not `5/6`. Full bridge/scale closure remains open
 - delta_CP = 2pi/3 (exact, from Z_3)
 - Schur cascade: c_13 = c_12 * c_23 (exact, from NNI structure)
 

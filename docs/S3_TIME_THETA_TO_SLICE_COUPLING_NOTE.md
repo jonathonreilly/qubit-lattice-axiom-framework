@@ -3,7 +3,7 @@
 **Status:** open_gate route survey — exact conditional readout-to-slice
 coupling family obtained by composing cited upstream authorities, with the
 unique-exact `Theta_R -> Lambda_R` coupling theorem **not** closed because
-the underlying readout-map endpoint triple is not yet derived.
+the readout map `P_R` on the restricted class is not unique.
 **Date:** 2026-04-19 (audit-narrowing refresh: 2026-05-10)
 **Purpose:** state the current exact status of the Route-2 (s3-time)
 `Theta_R -> Lambda_R` coupling problem after the exact bilinear carrier and
@@ -12,8 +12,8 @@ the audited Route-2 readout / time-coupling notes.
 **Status authority:** independent audit lane only.
 **Primary runner:** [`scripts/frontier_s3_time_theta_to_slice_coupling.py`](../scripts/frontier_s3_time_theta_to_slice_coupling.py)
 **Authority role:** records, but does not close, the s3-time arm of the
-Route-2 readout-to-slice coupling family. Names the missing readout-map
-endpoint triple as the single open theorem target for this row.
+Route-2 readout-to-slice coupling family. The readout map on the restricted
+class is not unique, and the spline triple is not a field value to derive.
 
 
 ## Quantifier boundary (2026-10-04)
@@ -80,11 +80,10 @@ slice backbone, or readout map.
   bright readout class
   `gamma_E = alpha_E u_E + beta_E delta_A1 u_E`,
   `gamma_T = alpha_T u_T + beta_T delta_A1 u_T`, and the
-  **audited-clean no-go** that the endpoint dimensionless triple
-  `(beta_T / alpha_T, alpha_T / alpha_E, beta_E / alpha_E) = (-1, -2, 21/4)`
-  is not derived by the current exact stack. Imported as the readout-class
-  authority and as the canonical statement of the open obstruction this
-  row inherits.
+  **audited-clean no-go** that the readout map on the restricted class is
+  not unique. `rho_E = 0` and `rho_E = 21/4` are both admissible. The
+  centre-minus-shell entries of `(-1, -2, 21/4)` are not a field value to
+  derive. The middle entry `alpha_T / alpha_E` is not decided here.
 - [`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md)
   (`claim_type: no_go`, `audit_status: audited_conditional` as of the
   2026-05-10 fresh audit; previously `audited_clean`) — companion
@@ -97,11 +96,11 @@ slice backbone, or readout map.
 **Admitted-context derivation gap (real, not import-redirect):**
 
 The unique exact `Theta_R -> Lambda_R` coupling theorem on this s3-time
-arm requires the readout-map endpoint triple to be derived. The cited
+arm requires a unique admissible readout map `P_R`. The cited
 [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
-records this as an **audited-clean no-go**: the exact endpoint triple is
-not derived by the current exact stack on `main`. This row inherits that
-no-go and does not bypass it.
+records that `rho_E = 0` and `rho_E = 21/4` are both admissible, and that
+the spline triple is not a field value to derive. This row inherits that
+non-uniqueness and does not bypass it.
 
 ## Verdict (scope-bounded)
 
@@ -115,9 +114,9 @@ Conditional on the cited upstream authorities, this row records:
 - exact conditional coupling family
   `Xi_P(t ; c) = (P_R c) ⊗ V_R(t)`
   obtained algebraically once an admissible readout map `P_R` is supplied;
-- explicit absence, on `main`, of any retained-grade derivation of the
-  readout-map endpoint triple, and therefore explicit absence of any
-  unique exact `Theta_R -> Lambda_R` coupling theorem on this arm.
+- explicit absence, on `main`, of a unique admissible `P_R`, and therefore
+  explicit absence of any unique exact `Theta_R -> Lambda_R` coupling
+  theorem on this arm. The spline triple is not a field value to derive.
 
 So the honest endpoint is:
 
@@ -166,17 +165,10 @@ So the route does not lack a carrier-to-slice construction anymore.
 
 The cited
 [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
-records as an audited-clean no-go that the endpoint triple
-
-```text
-beta_T / alpha_T = -1
-alpha_T / alpha_E = -2
-beta_E / alpha_E = 21/4
-```
-
-is **not** derived by the current exact stack on `main`. Therefore the
-readout map remains non-unique on the restricted class, and the unique
-exact `Theta_R -> Lambda_R` coupling theorem is **not** closed on this
+records that the readout map remains non-unique on the restricted class:
+`rho_E = 0` and `rho_E = 21/4` are both admissible. The printed triple
+`(-1, -2, 21/4)` is not a field value to derive. The unique exact
+`Theta_R -> Lambda_R` coupling theorem is **not** closed on this
 s3-time arm.
 
 The cited Route-2 readout-map note documents the obstruction directly:
@@ -186,10 +178,10 @@ The cited Route-2 readout-map note documents the obstruction directly:
 - so they produce different exact spacetime tensors on the same slice
   backbone.
 
-The ambiguity is therefore localized to the unresolved readout-map
-endpoint triple — not to `Lambda_R` (audited_clean) and not to the
+The ambiguity is therefore localized to the non-uniqueness of `P_R` —
+not to `Lambda_R` (audited_clean) and not to the
 carrier `K_R` (audited_clean). This row imports that localization and
-does **not** bypass it.
+does **not** bypass it. The spline triple is not a field value to derive.
 
 ## Current blocker
 
@@ -210,12 +202,12 @@ Conditional on the cited upstream authorities, this row records:
 - exact conditional readout-to-slice family obtained algebraically from
   the imports,
 - no unique exact `Theta_R -> Lambda_R` coupling theorem on this arm,
-  because the readout-map endpoint triple is not derived (no-go inherited
-  from the cited Route-2 readout-map authority).
+  because `P_R` is not unique (inherited from the cited Route-2 readout-map
+  authority).
 
-The next theorem target is the missing readout-map endpoint triple. That
-target lives on the upstream readout-map row, not on this row. This row
-remains `open_gate` until that target closes upstream.
+The readout map on the restricted class is not unique, and the spline
+triple is not a field value to derive. The middle entry
+`alpha_T / alpha_E` stays undecided. This row remains `open_gate`.
 
 ## Primary runner
 

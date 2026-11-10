@@ -165,12 +165,14 @@ not an imported Hamiltonian and not a (non-existent) diagonal lattice edge.
 
 4. **(Conditional TM2 consequence.)** If a neutrino mass operator `M_nu`
    commutes with `V_4 = <S, P_23>` and the charged-lepton sector is diagonal
-   in the corner basis (`U_e = I`), then the PMNS matrix `U = U_e^dag U_nu`
-   has an **exact trimaximal column** (from `[M_nu, S] = 0`, i.e. `W` is an
-   eigenvector), a **mu-tau modulus residual** (from `[M_nu, P_23] = 0`), and
-   **maximal atmospheric mixing**, with `theta_13` **free** — `M_nu` is not
-   forced circulant, so the `C_3`-doublet block is unconstrained and there is
-   **no TM3 overshoot**.
+   in the corner basis (`U_e = I`), then `[M_nu, V_4] = 0` gives an **exact
+   trimaximal column**, a **mu-tau modulus residual**, **maximal atmospheric
+   mixing**, and **`theta_13 = 0`**. The Hermitian commutant is spanned by
+   `|W><W|`, `|xi><xi|`, and `|eta><eta|`. A non-degenerate spectrum has
+   eigenvectors `W`, `xi`, and `eta`, so `s13^2 = 0`. A degenerate doublet
+   block still commutes with `V_4` and fixes no mixing angle. The older
+   sentence that the `C_3`-doublet block is unconstrained, and that
+   `theta_13` stays free, is false. See the corrigendum.
 
 5. **(Reframing of the "must break the democratic structure" reading.)** A
    `W`-preserving (`S`-commuting) `M_nu` realizes `sin^2 theta_13` in the
@@ -213,14 +215,18 @@ the closure and checks order `4`, abelian, all involutions.
 so `W` is an eigenvector; with `U_e = I`, the corresponding PMNS column is
 `W = (1,1,1)/sqrt(3)`, magnitudes `1/3` (trimaximal). `[M_nu, P_23] = 0`
 gives the mu-tau modulus residual, hence (by the cited TM2 lemmas) maximal
-atmospheric mixing. The doublet `2x2` block of `M_nu` is unconstrained by
-`V_4`, so its eigenvectors carry a free `theta_13`. The runner constructs a
-`V_4`-symmetrized `M_nu`, checks it commutes with `S` and `P_23`, is **not**
-circulant, and reads off the exact trimaximal column + equal mu-tau rows.
+atmospheric mixing. `[M_nu, P_23] = 0` then forces that doublet block to
+be diagonal in the `P_23` eigenvectors `xi` and `eta`, so a non-degenerate
+`V_4`-invariant `M_nu` has `theta_13 = 0`. The doublet block is not a free
+`theta_13`. The runner constructs a `V_4`-symmetrized `M_nu`, checks it
+commutes with `S` and `P_23`, is **not** circulant, and reads off the exact
+trimaximal column + equal mu-tau rows. It does not by itself evaluate
+`|U_e3|^2`.
 
 **(5)** The runner scans `W`-preserving operators `a |W><W| + B_doublet` and
-exhibits one with an exact trimaximal column and `sin^2 theta_13` proxy
-`= 0.0213`; the full-circulant control returns all magnitudes `= 1/3`.
+exhibits one with an exact trimaximal column and a minimum `|U|^2` entry
+`= 0.0213`. The corrigendum records that this minimum is not `|U_e3|^2`.
+The full-circulant control returns all magnitudes `= 1/3`.
 
 ## Boundary
 
@@ -312,9 +318,9 @@ block "`S` is a native operation and `[M_nu,S]=0` is an admissible condition."
 
 Prior repo overclaims declared a lane closed after testing one representative
 operator. The `npNu` "must break the democratic structure" reading is exactly
-such an echo (it tested only the full circulant). This note avoids the echo by
-exhibiting the untested intermediate (`W`-preserving) operator and confirming
-it fits `theta_13`.
+such an echo (it tested only the full circulant). This note separates that
+full-circulant control from the intermediate `S`-only family. The corrigendum
+records that the printed `0.0213` proxy is not `|U_e3|^2`.
 
 ## Forbidden imports check
 
@@ -338,9 +344,9 @@ authority.
 The paired runner exercises class A finite-dimensional algebra only: magic-`S`
 spectrum/involution/`W`-fix, non-membership in `S_3` (permutation + monomial
 + Lagrange), the spectral identity `exp(i pi/3 H_dem) = exp(2 i pi/3) S`, the
-`<S,P_23> = V_4` closure, the `V_4`-invariant-`M_nu` => TM2 (trimaximal column
-+ mu-tau modulus + maximal atmospheric, non-circulant) consequence, the
-`W`-preserving `theta_13`-in-band exhibit, and two negative controls
+`<S,P_23> = V_4` closure, the `V_4`-invariant-`M_nu` trimaximal column,
+mu-tau modulus, and maximal-atmospheric consequence, a minimum-`|U|^2`
+scan that is not an `|U_e3|^2` witness, and two negative controls
 (full-circulant => TM3; charged-circulant rotation destroys the trimaximal
 column). Expected `runner_check_breakdown = {A: N, B: 0, C: 0, D: 0,
 total_pass: N}` where `N` is the printed `PASS` count in the cache.
@@ -348,8 +354,9 @@ total_pass: N}` where `N` is the printed `PASS` count in the cache.
 ## Honest auditor read
 
 The runner performs explicit class A matrix algebra; every load-bearing
-equality is checked to `1e-12`. The positive content (items 1–3, 5 and the
-conditional item 4) is exact and self-contained. The physics value is the
+equality is checked to `1e-12`. Items 1–3 stand. Item 4, as corrected above, forces `theta_13 = 0` for a
+non-degenerate `V_4`-invariant `M_nu`. The older reading that item 4 leaves
+`theta_13` free is false. The physics value is the
 **reframing**: an apparent flavor-group-size no-go for the TM2 trimaximal
 column is dissolved into a residual-symmetry question with a native generator,
 and the `theta_13` "must break `W`" reading is shown to test only the full

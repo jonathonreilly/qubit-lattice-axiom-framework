@@ -68,10 +68,10 @@ The honest endpoint on the live forward branch is therefore:
 - **exact endpoint fixation** of the current affine readout,
 - **exact reduction** of the remaining structural question to the channel ratios
   `r_E = b_E / a_E` and `r_T = b_T / a_T`,
-- **bounded live relations** such as
-  - `b_T / a_T ~ -1`,
-  - `a_T / a_E ~ -2.005`,
-  - `|b_E / b_T| ~ 2.6216`,
+- the corrigendum's withdrawal of `b_T / a_T ~ -1`, `b_E / a_E ~ 5.2575`,
+  and `|b_E / b_T| ~ 2.6216` as coefficient constraints. A local interpolation
+  gives `b_E = b_T = 0`. `a_T / a_E ~ -2.005` is a shell-only ratio and is
+  not stable across interpolations,
 - and an **exact note-level no-go** against promoting the current `E/T`
   readout to a theorem-grade coefficient law.
 
@@ -154,10 +154,11 @@ r_T = b_T / a_T
 
 with the shell amplitudes `a_E`, `a_T` already fixed by the endpoint values.
 
-## Bounded live relations
+## Spline-output record
 
-The runner then records the bounded live coefficient pattern on the same
-surface:
+The runner records the global-cubic-spline print on the same surface.
+These numbers are not coefficient constraints. The corrigendum withdraws
+them as a coefficient law.
 
 ```text
 r_E         = +5.257476782081
@@ -167,36 +168,11 @@ a_T / a_E   = -2.005382749600
 gamma_T(center)/gamma_T(shell) = 0.833328197623
 ```
 
-These are useful live constraints, but they remain bounded observations rather
-than theorem-grade identities.
-
-The strongest one is:
-
-```text
-r_T = b_T / a_T ~ -1
-```
-
-So the `T` channel is already effectively
-
-```text
-gamma_T(delta_A1) ~ a_T * (1 - delta_A1)
-```
-
-and therefore at the center endpoint
-
-```text
-gamma_T(e0) / gamma_T(s/sqrt(6)) ~ 1 - 1/6 = 5/6.
-```
-
-while the shell/intercept and slope ratios remain visibly nontrivial:
-
-- `r_E = b_E / a_E ~ 5.25748`
-- `a_T / a_E ~ -2.005`
-- `|b_E / b_T| ~ 2.6216`
-
-So the coefficient lane is already sharply structured, and the remaining
-unresolved primitive is now most naturally the `E`-channel readout ratio
-`r_E`, not the common denominator and not the `T`-channel shape.
+These printed numbers are the global-cubic-spline pipeline output. They are
+not coefficient constraints. A local interpolation gives `b_E = b_T = 0`.
+`a_T / a_E ~ -2.005` is a shell-only ratio and is not stable across
+interpolations. The `T`-channel shape `1 - delta_A1` is that spline pattern,
+not a coefficient law.
 
 ## Exact no-go from the current notes
 
@@ -237,10 +213,8 @@ The branch can now say precisely:
   values,
 - the exact support stack reduces the structural question to the channel ratios
   `r_E`, `r_T`,
-- the live coefficient ratios show a stable bounded pattern,
-- the `T` channel is already effectively `1 - delta_A1` on the live surface,
-- but the current notes still do not promote that pattern to an exact theorem,
-  and the unresolved primitive is still the `E`-channel ratio.
+- the spline-output ratios are not a stable coefficient law,
+- the current notes still do not support an exact coefficient theorem.
 
 That is the right disciplined endpoint for this coefficient lane.
 

@@ -354,7 +354,7 @@ def part3_exact_obstruction(data: RestrictedReadoutData, theorem_lands: bool) ->
         "with rho_T=-1 and mu=-2 fixed, the center E lift is exactly 1 + rho_E / 6",
     )
     check(
-        "the live endpoint-fixed readout still misses the exact E-channel map entry rho_E = 21/4",
+        "the printed live rho_E is not exactly 21/4; 21/4 is not the field target",
         abs(data.rho_e - (21.0 / 4.0)) > EXACT_TOL,
         f"live rho_E = {data.rho_e:+.12f}",
     )
@@ -363,8 +363,8 @@ def part3_exact_obstruction(data: RestrictedReadoutData, theorem_lands: bool) ->
         True,
         (
             "exact carrier facts and exact endpoint algebra are closed; "
-            "the unresolved theorem step is the readout map entry rho_E, with the full triple "
-            "(rho_T, mu, rho_E) still unproved on the current surface"
+            "rho_E = 0 and rho_E = 21/4 are both admissible, and the spline triple "
+            "is not a field value to derive"
         ),
     )
 

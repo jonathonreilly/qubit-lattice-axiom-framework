@@ -104,7 +104,7 @@ EXPECTED_CANDIDATE_SURFACES = {
 AUTHORITY_MARKERS = {
     "docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md": (
         "open_gate route survey",
-        "The next theorem target is the missing readout-map endpoint triple",
+        "The readout map on the restricted class is not unique, and the spline triple is not a field value to derive",
         "no unique exact `Theta_R -> Lambda_R` coupling theorem",
     ),
     "docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md": (

@@ -62,19 +62,12 @@ gamma_E = alpha_E u_E + beta_E delta_A1 u_E
 gamma_T = alpha_T u_T + beta_T delta_A1 u_T.
 ```
 
-That exact reduction is real progress. But the current exact stack still does
-**not** derive the endpoint ratio chain
-
-```text
-{5/6, -2, -8/9} -> 15/8 -> r_E = 21/4 -> D_E = 21/8.
-```
-
-Equivalently, it still does not derive the exact dimensionless readout triple
-
-```text
-(beta_T / alpha_T, alpha_T / alpha_E, beta_E / alpha_E)
-= (-1, -2, 21/4).
-```
+That exact reduction is real progress. The endpoint ratio chain and the
+dimensionless triple `(-1, -2, 21/4)` are size-15 cubic-spline outputs. The
+two centre-minus-shell entries are not a property of the field. A local
+interpolation gives both ratios `0`. The middle entry `alpha_T / alpha_E`
+is not decided by that correction. The live endpoint-fixed readout is not
+the theorem target, and `21/4` is not the missing map entry of the field.
 
 So the honest endpoint is:
 
@@ -138,7 +131,7 @@ alpha_T / alpha_E = -2
 beta_E / alpha_E = 21/4.
 ```
 
-This is the key compression of the theorem target.
+This is an algebraic equivalence of the spline-output triple. It is not a field target.
 
 ## 3. Theorem attempt on the live surface
 
@@ -158,11 +151,10 @@ s_TE = -2.005382749600
 c_TE = -0.890683778231.
 ```
 
-So the exact readout theorem does **not** land on the current surface.
-
-The important point is that this is no longer a vague “bad fit.” The branch
-now knows precisely what theorem would be needed, and exactly which readout
-ratios would have to be proved.
+These printed values are the size-15 global-cubic-spline readout. They are
+not ratios a readout theorem has to prove. A local interpolation gives the
+centre-minus-shell ratios `0`. The live endpoint-fixed readout is not the
+theorem target, and `21/4` is not the missing map entry of the field.
 
 ## 4. Smallest exact obstruction
 
@@ -175,11 +167,14 @@ beta_T / alpha_T = -1
 alpha_T / alpha_E = -2,
 ```
 
-then the entire remaining readout theorem collapses to one exact map entry:
+then the spline-output chain is equivalent to one printed entry:
 
 ```text
 beta_E / alpha_E = 21/4.
 ```
+
+That printed entry is not a field value to derive. A local readout gives
+`rho_E = 0`. Both values stay admissible on the restricted class.
 
 This is seen directly on the reduced exact family
 
@@ -210,10 +205,11 @@ The current Route-2 readout status is now:
 - exact bilinear carrier `K_R`: already present,
 - exact restricted readout reduction: closed,
 - exact endpoint ratio theorem: not derived,
-- smallest exact missing map entry: `beta_E / alpha_E = 21/4` after the
-  `T`-side candidates are granted.
-
-That is the right theorem endpoint for this block.
+- `rho_E = 0` and `rho_E = 21/4` are both admissible maps on the restricted
+  class;
+- a local readout gives `rho_E = 0`;
+- the live endpoint-fixed readout is not the theorem target, and `21/4` is
+  not the missing map entry of the field.
 
 ## Validation
 

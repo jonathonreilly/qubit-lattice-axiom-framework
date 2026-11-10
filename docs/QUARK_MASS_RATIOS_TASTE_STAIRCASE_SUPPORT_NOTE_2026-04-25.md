@@ -218,8 +218,9 @@ m_d(2 GeV) / m_b(m_b)    =  4.67 / 4180    =  0.001117
 
 The independent atlas path gives `|V_us|` and `|V_cb|` to the same
 numerical values to machine precision (Path A equals Path B
-algebraically). The mass-ratio comparators are reproduced to `+3.3%`
-and `+0.2%` on the threshold-local self-scale convention.
+algebraically). `m_d/m_s` at `+3.30%` is a common-scale ratio and stands.
+The `m_s/m_b` deviation `+0.20%` and the `m_d/m_b` deviation `+3.51%` are
+mixed-scale comparisons. The corrigendum withdraws both as agreement.
 
 ## 5. NNI texture self-consistency
 
@@ -305,7 +306,9 @@ The gate remains bounded at this layer because:
 - the non-perturbative `g = 1` mechanism behind the `5/6`
   exponentiation is still open.
 
-The match accuracy on the threshold-local self-scale comparator is
+The mixed-scale print on the threshold-local comparator is below. It is not
+the agreement. `m_d/m_s` at `+3.30%` stands. The `m_s/m_b` row at `+0.20%`
+is withdrawn as agreement. The common-scale miss is in the corrigendum.
 
 | Observable | Framework | PDG | Deviation |
 |------------|-----------|-----|-----------|
@@ -361,8 +364,9 @@ The runner verifies:
    `alpha_LM`, `alpha_s(v)`, `n_pair`, `n_quark`, `C_F`, `T_F`,
    `C_F - T_F`, `1/(C_F-T_F)`;
 2. closed-form mass ratios (Part 1) and their algebraic consistency;
-3. PDG threshold-local self-scale comparator (Part 2) at `+3.3%`,
-   `+0.2%`, `+3.5%` deviations;
+3. PDG threshold-local self-scale comparator (Part 2) prints `+3.3%`,
+   `+0.2%`, and `+3.5%`. The `+3.3%` on `m_d/m_s` stands. The `+0.2%` and
+   `+3.5%` cells are withdrawn as agreement;
 4. GST identity `V_us^2 = m_d/m_s` (Part 3) — algebraic and within
    `1.3%` of PDG `V_us`;
 5. `5/6` bridge `V_cb = (m_s/m_b)^{5/6}` (Part 4) — algebraic and within

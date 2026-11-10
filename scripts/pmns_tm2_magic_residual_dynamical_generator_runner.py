@@ -8,13 +8,11 @@ Verifies, on the hw=1 generation triplet V1 = span{|100>,|010>,|001>}:
   (B) S = exp(i*pi/3*(C + C^dag)) up to a global phase -- the time-pi/3 evolution of
       the democratic C3-symmetric coupling H_dem = C + C^dag;
   (C) <S, P23> = the Klein four-group V4;
-  (D) M_nu invariant under V4 + charged leptons diagonal => TM2 magnitudes
-      (exact trimaximal column, mu-tau modulus, sin^2 theta23 = 1/2) with theta13 FREE
-      (NOT the TM3 overshoot of a full circulant);
-  (E) a W-preserving (magic-S-commuting) M_nu realizes theta13 in the observed band
-      while keeping the exact trimaximal column -- so W-preservation is NOT excluded by
-      theta13 (the "must break the democratic structure" reading tests only full
-      circulant => TM3).
+  (D) M_nu invariant under V4 + charged leptons diagonal => trimaximal column,
+      mu-tau modulus, and maximal atmospheric mixing. A non-degenerate spectrum
+      has theta13 = 0. This part does not evaluate |U_e3|^2;
+  (E) the scanned minimum |U|^2 entry can fall in 0.015-0.030. That minimum is
+      not an |U_e3|^2 evaluation. The full-circulant control returns 1/3.
 
 All checks are finite-dimensional linear algebra (class A).
 """
@@ -168,9 +166,9 @@ def main() -> int:
         Pw = np.abs(np.eye(3) @ Uw) ** 2
         if any(np.allclose(Pw[:, j], 1 / 3, atol=1e-9) for j in range(3)) and 0.015 < Pw.min() < 0.030:
             found = Pw.min(); break
-    check("W-preserving M_nu hits theta13 in observed band 0.015-0.030 WITH exact trimaximal column",
-          found is not None, detail=f"sin^2 theta13 proxy={found:.4f}" if found else "none")
-    check("=> W-preservation (TM2) is NOT excluded by theta13; only full circulant (TM3) is",
+    check("W-preserving scan finds a minimum |U|^2 entry in 0.015-0.030; this is not |U_e3|^2",
+          found is not None, detail=f"min |U|^2={found:.4f}" if found else "none")
+    check("full-circulant control is the TM3 case; the minimum-entry scan is not an electron-row theta13 witness",
           found is not None)
 
     # ---- negative control: charged CIRCULANT destroys the trimaximal column ----

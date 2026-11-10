@@ -115,7 +115,7 @@ def main() -> int:
     check(
         "S3 gate names endpoint triple as the open theorem target",
         "readout-map endpoint triple" in s3_note
-        and "not derived by the current exact stack" in s3_note
+        and "spline triple is not a field value to derive" in s3_note
         and "not closed" in s3_note,
     )
     check(

@@ -235,8 +235,8 @@ def main() -> int:
     check("center obstruction note names source-domain bridge as extra premise", "additional source-domain bridge" in center_obstruction_note and "is supplied" in center_obstruction_note)
     check("cross-domain note separates spatial c_TE from fiber color", "c_TE is a cubic-lattice splitting ratio" in normalized_cross and "fiber-space color fraction" in normalized_cross)
     check("kappa note does not close physical selector", "does not close the kappa_EW = 0 selector" in normalized_kappa or "does not close the \u03ba_EW = 0 selector" in normalized_kappa)
-    check("readout note keeps endpoint triple not derived", "still does not derive the exact dimensionless readout triple" in normalized_readout)
-    check("s3 note inherits readout endpoint blocker", "readout-map endpoint triple" in normalized_s3 and "not derived by the current exact stack" in normalized_s3)
+    check("readout note keeps endpoint triple not derived", "not the missing map entry of the field" in normalized_readout)
+    check("s3 note inherits readout endpoint blocker", "readout-map endpoint triple" in normalized_s3 and "spline triple is not a field value to derive" in normalized_s3)
     check("minimal axiom note withholds readout/weighting bridge", "A record supplies no readout context" in normalized_axiom and "physical observable bridge" in normalized_axiom)
     check("primitive registry does not grant selector/readout bridge", "selector, readout bridge" in primitive_registry and "weighting, normalization" in primitive_registry)
 

@@ -203,7 +203,7 @@ def part5_quote_anchors() -> None:
         (
             "exact conditional coupling family",
             "unresolved readout exactness blocks a unique exact `Theta_R -> Lambda_R`",
-            "The next theorem target is the missing readout-map endpoint triple.",
+            "The readout map on the restricted class is not unique, and the spline triple is not a field value to derive.",
         ),
     )
     require_phrases(

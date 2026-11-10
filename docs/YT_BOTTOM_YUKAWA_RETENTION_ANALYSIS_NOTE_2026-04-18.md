@@ -852,8 +852,9 @@ itself. To close the absolute m_b scale:
 
 The bounded down-type mass-ratio CKM-dual note
 (`docs/DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md`) gives
-`m_s/m_b = [α_s(v)/√6]^(6/5)` and matches the threshold-local self-scale
-observed ratio to +0.2%. This is a **mass-ratio** result — it does not
+`m_s/m_b = [α_s(v)/√6]^(6/5)`. Its mixed-scale `+0.2%` match to the
+threshold-local ratio is not a success. The common-scale comparison misses
+by `+18.6% ± 1.2%`. This is a **mass-ratio** result — it does not
 close the absolute m_b scale. The present retention analysis addresses
 the absolute m_b scale under the species-uniform interpretation, and
 closes it scope-limitedly as falsified. The two notes are consistent:

@@ -180,15 +180,20 @@ convention:
 
 ## Scale qualifier
 
-The live comparison surface is the threshold-local self-scale comparator
-`m_s(2 GeV)/m_b(m_b)`.
+The threshold-local comparator is not the live comparison surface. The table
+rows `m_s/m_b` at `+0.2%` and `m_d/m_b` at `+3.5%` are mixed-scale prints.
+The corrigendum withdraws both as agreement. `m_d/m_s` at `+3.3%` stands.
+
+The one-loop common-scale estimate below (`+15.0%`, transport `1.14747`) is
+the inherited one-loop figure. The corrigendum replaces it: the common-scale
+miss is `+18.6% ± 1.2%`.
 
 If `m_s` is run to the common scale `m_b` using 1-loop QCD running, the same
 formula gives
 
 - `m_s(m_b)/m_b(m_b) = 0.01947`
 - framework prediction `0.02239`
-- deviation `+15.0%`
+- deviation `+15.0%` (inherited one-loop figure; see the corrigendum)
 
 The two comparison surfaces are related by the standard one-loop transport law
 
@@ -199,13 +204,12 @@ $$
 \left[\frac{\alpha_s(2\,\mathrm{GeV})}{\alpha_s(m_b)}\right]^{12/25},
 $$
 
-with transport factor `1.14747` on the current observation surface.
+with transport factor `1.14747` on the inherited one-loop surface.
 
 So the sharper current safe statement is:
 
-- the bounded lane matches the threshold-local self-scale comparator well;
-- forcing a common-scale read removes a material transport factor and gives the
-  larger mismatch;
+- the `+0.2%` and `+3.5%` rows are not agreement;
+- the common-scale comparison is the corrigendum's `+18.6% ± 1.2%`;
 - theorem-grade closure of the exact scale-selection rule remains open.
 
 ## What this buys

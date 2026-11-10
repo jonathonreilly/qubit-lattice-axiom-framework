@@ -206,7 +206,7 @@ def main() -> int:
     check("record-invariance color bridge keeps antecedent open", "does not force the antecedent" in color_bridge_compact and "matter realization" in color_bridge_compact)
     check("cross-domain note names spatial-color link as only escape", "typed N_c=3-from-d=3 spatial" in cross_domain_compact and "current stack does not supply" in cross_domain_compact)
     check("typed-bridge note says F_adj is not Route-2 center readout", "F_adj is not typed as a Route-2 center readout" in typed_bridge_compact)
-    check("readout note keeps endpoint triple unproved", "still does not derive the exact dimensionless readout triple" in readout_compact)
+    check("readout note keeps endpoint triple unproved", "not the missing map entry of the field" in readout_compact)
     check("Oh star note says kappa does not derive rho_E", "does not, by itself, derive any Route-2 readout entry" in oh_star_compact)
     check("Schur qE note says kappa squared bridge is forced by nothing named", "is forced by nothing named" in qe_schur_compact.lower())
 

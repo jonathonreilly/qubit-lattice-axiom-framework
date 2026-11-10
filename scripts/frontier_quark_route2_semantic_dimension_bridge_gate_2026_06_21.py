@@ -82,13 +82,13 @@ def main() -> int:
 
     banner("1. Current target localization")
     check(
-        "exact readout note names the endpoint triple as missing",
+        "exact readout note says 21/4 is not the field's missing map entry",
         "(-1, -2, 21/4)" in exact_readout
-        and "does not derive the exact dimensionless readout triple" in exact_readout,
+        and "not the missing map entry of the field" in exact_readout,
     )
     check(
         "S3 parent note keeps the unique readout-to-slice theorem open",
-        "not derived by the current exact stack" in parent_theta
+        "spline triple is not a field value to derive" in parent_theta
         and "readout-map endpoint triple" in parent_theta,
     )
     check(
@@ -183,7 +183,7 @@ def main() -> int:
     )
     check(
         "S3 parent note still routes closure upstream to the readout-map endpoint triple",
-        "The next theorem target is the missing readout-map endpoint triple" in parent_theta,
+        "The readout map on the restricted class is not unique, and the spline triple is not a field value to derive" in parent_theta,
     )
 
     banner("5. Minimal bridge requirements")

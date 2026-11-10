@@ -1779,3 +1779,98 @@ Runners were not executed.
 - Finding: The negative small-correction claim is the note's own result, and caps `R <= 1` and `R <= 5` do exclude the shipped fit on either printed ratio. The repair is the joined base-ratio equality: the printed components give `101.908728360781…` and `6.643337541498…`, not `101.908728437` and `6.643337509`. The completed-slot shares match. Detail is in `FIXES.md`.
 - Source: blind re-read on 2026-11-09. The runner was not executed.
 
+## Corrigendum leftovers
+
+These rows check only the sentence a corrigendum withdraws. The rest of each note is unread. The runner was not executed.
+
+## Note 2322
+
+- Path: `docs/PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md`
+- Result: fix filed.
+- Finding: Item 4 and the later restatement `(4)` still say `theta_13` is free because the `C_3`-doublet block is unconstrained. The corrigendum says item 4 forces `theta_13 = 0`. Detail is in `FIXES.md`.
+- Source: corrigendum scan on 2026-11-10. Only the withdrawn sentence was checked. The runner was not executed.
+
+## Note 3494
+
+- Path: `docs/QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md`
+- Result: fix filed.
+- Finding: Section 3 still ends with "That is real bounded support" after `R_pred/R_self - 1 = +0.20%`. The corrigendum withdraws that phrase and calls `+0.20%` a convention coincidence. Detail is in `FIXES.md`.
+- Source: corrigendum scan on 2026-11-10. Only the withdrawn sentence was checked. The runner was not executed.
+
+## Note 3548
+
+- Path: `docs/QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md`
+- Result: fix filed.
+- Finding: The Section 4 table and the next sentence still present `m_s/m_b` at `+0.20%` and `m_d/m_b` at `+3.51%` as the reproduced match. The corrigendum withdraws those two as agreement. `m_d/m_s` at `+3.30%` stays. Detail is in `FIXES.md`.
+- Source: corrigendum scan on 2026-11-10. Only the withdrawn sentence was checked. The runner was not executed.
+
+## Note 3821
+
+- Path: `docs/YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md`
+- Result: fix filed.
+- Finding: Section 5.4 still says the dual note matches the threshold-local ratio to `+0.2%`. The corrigendum says that is not a success. The statement that the dual note does not close absolute `m_b` stays. Detail is in `FIXES.md`.
+- Source: corrigendum scan on 2026-11-10. Only the withdrawn sentence was checked. The runner was not executed.
+
+## Note 4204
+
+- Path: `docs/UP_TYPE_MASS_RATIO_CKM_INVERSION_NOTE.md`
+- Result: fix filed.
+- Finding: The observation-comparator section still prints `f_23 = 0.9983` and says the bridge saturates `|V_cb|^2` to within `0.2%`. The corrigendum says the common-scale value is `f_23 = 0.867` and that the saturation is an artefact. `f_12 = 0.9839` stays. Detail is in `FIXES.md`.
+- Source: corrigendum scan on 2026-11-10. Only the withdrawn sentence was checked. The runner was not executed.
+
+## Note 4321
+
+- Path: `docs/STRONG_CP_THETA_ZERO_NOTE.md`
+- Result: fix filed.
+- Finding: The combined runner paragraph still says the runner finds no CKM-to-`theta_eff` leakage. The corrigendum says `|det V_CKM| = 1` holds for every unitary and is not a leakage test. Detail is in `FIXES.md`.
+- Source: corrigendum scan on 2026-11-10. Only the withdrawn sentence was checked. The runner was not executed.
+
+## Note 4609
+
+- Path: `docs/MASS_SPECTRUM_DERIVED_NOTE.md`
+- Result: fix filed.
+- Finding: The retained list still includes `m_s/m_b` at `+0.13%` and `m_d/m_b` at `+3.6%` under a sub-percent heading. The corrigendum withdraws those entries and that phrase. `m_d/m_s` at `+3.3%` stays. Detail is in `FIXES.md`.
+- Source: corrigendum scan on 2026-11-10. Only the withdrawn sentence was checked. The runner was not executed.
+
+## Note 4836
+
+- Path: `docs/DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md`
+- Result: fix filed.
+- Finding: The table still prints `+0.2%` and `+3.5%`, and the next section still calls the threshold-local comparator the live surface. The corrigendum withdraws that sentence and those agreements. `+3.3%` on `m_d/m_s` stays. Detail is in `FIXES.md`.
+- Source: corrigendum scan on 2026-11-10. Only the withdrawn sentence was checked. The runner was not executed.
+
+## Note 4887
+
+- Path: `docs/COMPLETE_PREDICTION_CHAIN_2026_04_15.md`
+- Result: fix filed.
+- Finding: Section 11.3 still says the `5/6` bridge gives `V_cb` to `0.23%` on the threshold-local comparator. The corrigendum says that figure is a mixed-scale coincidence. The open bridge-closure clause stays. Detail is in `FIXES.md`.
+- Source: corrigendum scan on 2026-11-10. Only the withdrawn sentence was checked. The runner was not executed.
+
+## Note 4898
+
+- Path: `docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`
+- Result: fix filed.
+- Finding: The body still says the bridge misses by only `+0.20%` and that the live `m_s/m_b` prediction lands at `+0.20%`. The scale statement still names the threshold-local comparator as the live surface. The corrigendum says that comparison is not scale-consistent. Detail is in `FIXES.md`.
+- Source: corrigendum scan on 2026-11-10. Only the withdrawn sentence was checked. The runner was not executed.
+
+## Note 3741
+
+- Path: `docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`
+- Result: fix filed.
+- Finding: The safe statement, section 2, section 3, and the honest endpoint still present `(-1, -2, 21/4)` and the section 3 live readout as the theorem target. The corrigendum says the two centre-minus-shell entries are spline artefacts. The admissibility of both `rho_E = 0` and `rho_E = 21/4` stays. Detail is in `FIXES.md`.
+- Source: corrigendum scan on 2026-11-10. The withdrawn sentences and their later restatements were checked. The runner was not executed.
+
+## Note 3748
+
+- Path: `docs/QUARK_ENDPOINT_READOUT_CONSTRAINTS_NOTE_2026-04-19.md`
+- Result: fix filed.
+- Finding: The safe statement and the later relations section still treat `b_T / a_T ~ -1`, `b_E / a_E ~ 5.2575`, and `|b_E / b_T| ~ 2.6216` as live constraints. The corrigendum says those three are spline artefacts. Detail is in `FIXES.md`.
+- Source: corrigendum scan on 2026-11-10. The withdrawn sentences and their later restatements were checked. The runner was not executed.
+
+## Note 4422
+
+- Path: `docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`
+- Result: fix filed.
+- Finding: The status block and the bottom line still name the endpoint triple `(-1, -2, 21/4)` as the single open theorem target. The corrigendum withdraws that sentence. The conditional family and the non-uniqueness of `P_R` stay. Detail is in `FIXES.md`.
+- Source: corrigendum scan on 2026-11-10. The header, the cited-authority block, and the bottom line were checked. The runner was not executed.
+

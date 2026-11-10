@@ -75,3 +75,107 @@ A row appears here only when the note is wrong or overclaims. One finding, one l
 - Evidence: With `xi_u = +0.340735147 - 0.063202935 i` and `c13_u(base) = 3.400565729750e-03`, the modulus ratio is `101.908728360781…`. With `xi_d = +0.078186196 + 0.108371050 i` and `c13_d(base) = 2.011510840850e-02`, the modulus ratio is `6.643337541498…`. The completed-slot shares do match the printed `0.990442514` and `0.913327261`. The small-correction no-go is the note's own claim: the body already says the shipped fit is outside caps `R <= 1` and `R <= 5`. That claim is not this repair.
 - Edit: Do not present the printed components and those two ratio decimals as one exact equality. Print the ratio of the printed components, or say the displayed ratios come from a finer runner state. Leave the negative small-correction claim in place.
 - How this row was made: blind re-read on 2026-11-09. The reader saw the gap and did not file it. The parent recomputed the moduli from the printed components. The runner was not executed. An earlier row that told a later editor to stop calling the fit a small correction was removed, because the note already says that.
+
+## Note 2322
+
+- Path: `docs/PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md`
+- Defect: Theorem item 4 still says a `V_4`-invariant `M_nu` leaves `theta_13` free because the `C_3`-doublet block is unconstrained. The note's own corrigendum says that sentence is false.
+- Evidence: The 2026-09-30 corrigendum says item 4 keeps the trimaximal column and maximal atmospheric mixing, and also forces `theta_13 = 0`. Item 4 still prints `theta_13` free and the doublet unconstrained. The later restatement `(4)` says the same: the doublet block is unconstrained, so its eigenvectors carry a free `theta_13`.
+- Edit: Replace both statements with the corrigendum's item 4. Keep the corrigendum.
+- How this row was made: corrigendum scan on 2026-11-10. The rest of the note was not read. The runner was not executed.
+
+## Note 3494
+
+- Path: `docs/QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md`
+- Defect: Section 3 still says the `+0.20%` mixed-scale match "is real bounded support." The note's own corrigendum withdraws that phrase.
+- Evidence: The 2026-09-30 corrigendum says the `+0.20%` is a convention coincidence and withdraws "real bounded support" in Section 3. Section 3 still ends with that sentence after printing `R_pred/R_self - 1 = +0.20%`.
+- Edit: Delete that sentence. Keep the corrigendum's common-scale miss.
+- How this row was made: corrigendum scan on 2026-11-10. The rest of the note was not read. The runner was not executed.
+
+## Note 3548
+
+- Path: `docs/QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md`
+- Defect: Section 4 still reports `m_s/m_b` at `+0.20%` and `m_d/m_b` at `+3.51%` as the reproduced match. The note's own corrigendum withdraws those entries as agreement.
+- Evidence: The 2026-09-30 corrigendum says those two mixed-scale entries are a convention coincidence. The Section 4 table still prints them as the deviations, and the following sentence says the mass-ratio comparators are reproduced to `+3.3%` and `+0.2%` on the threshold-local convention.
+- Edit: Do not present those two rows as agreement. Keep `m_d/m_s` at `+3.30%`, which the corrigendum says still stands.
+- How this row was made: corrigendum scan on 2026-11-10. The rest of the note was not read. The runner was not executed.
+
+## Note 3821
+
+- Path: `docs/YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md`
+- Defect: Section 5.4 still says the CKM-dual `m_s/m_b` prediction matches the threshold-local ratio to `+0.2%`. The note's own corrigendum says that is not a success.
+- Evidence: The 2026-09-30 corrigendum names that sentence and says the common-scale comparison misses by `+18.6% ± 1.2%`. Section 5.4 still prints the `+0.2%` match.
+- Edit: Delete the `+0.2%` success sentence from Section 5.4. Keep the statement that the dual note does not close the absolute `m_b` scale.
+- How this row was made: corrigendum scan on 2026-11-10. The rest of the note was not read. The runner was not executed.
+
+## Note 4204
+
+- Path: `docs/UP_TYPE_MASS_RATIO_CKM_INVERSION_NOTE.md`
+- Defect: The observation-comparator section still prints `f_23 = 0.9983` and says the Phase 1 bridge saturates `|V_cb|^2` to within `0.2%`. The note's own corrigendum withdraws both.
+- Evidence: The 2026-09-30 corrigendum says the common-scale partition is `f_23 = 0.867`, not `0.9983`, and that the saturation is an artefact of the mixed comparator. Both sentences are still printed as the current numerical reading.
+- Edit: Remove `0.9983` and the `0.2%` saturation from the current reading. Keep `f_12 = 0.9839`, which the corrigendum says is unchanged.
+- How this row was made: corrigendum scan on 2026-11-10. The rest of the note was not read. The runner was not executed.
+
+## Note 4321
+
+- Path: `docs/STRONG_CP_THETA_ZERO_NOTE.md`
+- Defect: The combined runner paragraph still concludes that the runner finds no CKM-to-`theta_eff` leakage. The note's own corrigendum says that conclusion does not follow from `|det V_CKM| = 1`.
+- Evidence: The 2026-09-30 corrigendum says `|det V|^2 = 1` for every unitary matrix, so the check cannot see a CKM phase. The paragraph still prints the leakage conclusion. A later pointer says the sentence does not follow. The conclusion is still on the page.
+- Edit: Delete the leakage conclusion. Keep the statement that `|det V_CKM| = 1` is a unitarity check.
+- How this row was made: corrigendum scan on 2026-11-10. The rest of the note was not read. The runner was not executed.
+
+## Note 4609
+
+- Path: `docs/MASS_SPECTRUM_DERIVED_NOTE.md`
+- Defect: The "Retained vs bounded vs conditional" list still calls the down-type chain sub-percent and still lists `m_s/m_b` at `+0.13%` and `m_d/m_b` at `+3.6%` as retained. The note's own corrigendum withdraws those entries and that phrase.
+- Evidence: The 2026-09-30 corrigendum says the `+0.13%` uses `m_s(2 GeV)/m_b(m_b)` and withdraws those two entries from the retained list. The list still prints them under "RETAINED (zero-free-parameter, sub-percent or few-percent to observation)."
+- Edit: Remove those two entries and the sub-percent wording. Keep `m_d/m_s` at `+3.3%`, which the corrigendum says still stands.
+- How this row was made: corrigendum scan on 2026-11-10. The rest of the note was not read. The runner was not executed.
+
+## Note 4836
+
+- Path: `docs/DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md`
+- Defect: The scale-qualifier section still says the live comparison surface is the threshold-local self-scale comparator. The note's own corrigendum withdraws that sentence, and it withdraws the `+0.2%` and `+3.5%` rows as agreement.
+- Evidence: The 2026-09-30 corrigendum names that sentence and withdraws it. The table above it still prints `m_s/m_b` at `+0.2%` and `m_d/m_b` at `+3.5%`, and the next section still calls that comparator the live surface.
+- Edit: Delete the live-surface sentence. Do not present those two deviations as agreement. Keep the `+3.3%` on `m_d/m_s`.
+- How this row was made: corrigendum scan on 2026-11-10. The rest of the note was not read. The runner was not executed.
+
+## Note 4887
+
+- Path: `docs/COMPLETE_PREDICTION_CHAIN_2026_04_15.md`
+- Defect: Section 11.3 still says the `5/6` bridge gives `V_cb = (m_s/m_b)^{5/6}` to `0.23%` on the threshold-local comparator. The note's own corrigendum says that figure is not evidence for the bridge.
+- Evidence: The 2026-09-30 corrigendum names that clause and says the common-scale comparison misses by `+18.6% ± 1.2%`. Section 11.3 still prints the `0.23%` bullet.
+- Edit: Replace that bullet with the corrigendum's corrected statement. Leave the clause that full bridge closure remains open.
+- How this row was made: corrigendum scan on 2026-11-10. The rest of the note was not read. The runner was not executed.
+
+## Note 4898
+
+- Path: `docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`
+- Defect: The note still calls `+0.20%` the live miss of the `m_s/m_b` bridge, and the scale statement still names the threshold-local comparator as the live comparison surface. The note's own corrigendum says that figure is not a scale-consistent test.
+- Evidence: The 2026-09-30 corrigendum says the `+0.20%` compares `m_s(2 GeV)` with `m_b(m_b)`. The body still prints "the bounded bridge misses by only `+0.20%`" and "the live `m_s/m_b` prediction lands at `+0.20%`." The scale statement then lists the threshold-local comparator as the live surface.
+- Edit: Do not call `+0.20%` the live miss. State the common-scale comparison from the corrigendum.
+- How this row was made: corrigendum scan on 2026-11-10. The rest of the note was not read. The runner was not executed.
+
+## Note 3741
+
+- Path: `docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`
+- Defect: The safe statement, section 2, section 3, and the honest endpoint still present the triple `(-1, -2, 21/4)`, the ratio chain `{5/6, -2, -8/9}`, and the section 3 live readout as the theorem target. The note's own corrigendum says those two centre-minus-shell entries are not a property of the field.
+- Evidence: The 2026-09-30 corrigendum says the triple, the ratio chain, and the "live endpoint-fixed readout" of section 3 are size-15 cubic-spline outputs, and that a local interpolation gives both centre-minus-shell ratios `0`. The safe statement still says the stack does not derive that triple. Section 2 calls it "the key compression of the theorem target." Section 3 still prints the live endpoint-fixed readout and says those ratios would have to be proved. The honest endpoint still says the missing map entry is `beta_E / alpha_E = 21/4` and that this is the right theorem endpoint.
+- Edit: Stop presenting that triple, that chain, and the section 3 live readout as the theorem target. Keep the statement that `rho_E = 0` and `rho_E = 21/4` are both admissible maps on the restricted class, and that a local readout gives `rho_E = 0`.
+- How this row was made: corrigendum scan on 2026-11-10. The withdrawn sentences and their later restatements were checked. The runner was not executed.
+
+## Note 3748
+
+- Path: `docs/QUARK_ENDPOINT_READOUT_CONSTRAINTS_NOTE_2026-04-19.md`
+- Defect: The safe statement and the "Bounded live relations" section still list `b_T / a_T ~ -1`, `b_E / a_E ~ 5.2575`, and `|b_E / b_T| ~ 2.6216` as live constraints, and the close still calls that pattern stable. The note's own corrigendum says those three numbers are spline artefacts, not constraints on a coefficient law.
+- Evidence: The 2026-09-30 corrigendum withdraws those three relations and says a local interpolation gives `b_E = b_T = 0`. The safe statement still prints them under "bounded live relations." The later section calls them useful live constraints, says the `T` channel is already `1 - delta_A1`, and names `r_E` as the unresolved primitive. "What this closes" still says the live ratios show a stable bounded pattern.
+- Edit: Remove those three relations from the current endpoint. Do not call the spline pattern a coefficient constraint. Keep `a_T / a_E` only as the corrigendum states it: a shell-only ratio that is not stable. Keep the exact endpoint-fixation algebra and the no-go against an exact coefficient theorem.
+- How this row was made: corrigendum scan on 2026-11-10. The withdrawn sentences and their later restatements were checked. The runner was not executed.
+
+## Note 4422
+
+- Path: `docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`
+- Defect: The status block and the bottom line still name the readout-map endpoint triple `(-1, -2, 21/4)` as the single open theorem target. The note's own corrigendum withdraws that sentence.
+- Evidence: The 2026-09-30 corrigendum says the two centre-minus-shell entries are not a field value to derive, and withdraws the sentence that names the missing triple as the next theorem target. The purpose block still says the coupling theorem is not closed because that triple is not yet derived. The authority role still names it as the single open theorem target. The bottom line still says "The next theorem target is the missing readout-map endpoint triple." The body repeats the same triple as the inherited no-go.
+- Edit: Delete those target sentences. Keep the conditional coupling family and the inherited non-uniqueness of `P_R`, including that `rho_E = 0` and `rho_E = 21/4` are both admissible. Do not present `(-1, -2, 21/4)` as a field value still to be derived. The middle entry `alpha_T / alpha_E` stays undecided, as the corrigendum says.
+- How this row was made: corrigendum scan on 2026-11-10. The header, the cited-authority block, and the bottom line were checked. The runner was not executed.

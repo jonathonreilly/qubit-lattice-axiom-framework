@@ -1,0 +1,88 @@
+{
+  "source_sha256": "20d2fe3b1cd4e2120b67c32270a70cc81ee7ca15c5efafdab265030cbf754501",
+  "cpu_limit_seconds": 120,
+  "wall_limit_seconds": 180,
+  "rss_limit_kib": 1572864,
+  "thread_variables": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "runs": [
+    {
+      "label": "baseline",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/check.py",
+        "--certificate",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/outputs/baseline.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.515,
+      "peak_rss_kib": 79200,
+      "termination_reason": null
+    },
+    {
+      "label": "reopen-race",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/check.py",
+        "--certificate",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/outputs/reopen-race.json",
+        "--small",
+        "--fault",
+        "reopen-race"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.429,
+      "peak_rss_kib": 32176,
+      "termination_reason": null
+    },
+    {
+      "label": "wrong-group",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/check.py",
+        "--certificate",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/outputs/wrong-group.json",
+        "--small",
+        "--fault",
+        "wrong-group"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.682,
+      "peak_rss_kib": 27120,
+      "termination_reason": null
+    },
+    {
+      "label": "preferred-frame",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/check.py",
+        "--certificate",
+        ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/detector_refinement/outputs/preferred-frame.json",
+        "--small",
+        "--fault",
+        "preferred-frame"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.698,
+      "peak_rss_kib": 26400,
+      "termination_reason": null
+    }
+  ]
+}

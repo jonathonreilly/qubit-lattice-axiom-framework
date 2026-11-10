@@ -1,6 +1,27 @@
 # Trace to GB1-CF
 
-## Current probability bridge, 2026-11-09
+## Current neighborhood detector and refinement, 2026-11-09
+
+~~~yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: Can effect mapping and regrouping emerge from a neighborhood detector without Born or axiom changes?
+source_of_blocker_text: user_goal
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: Specify a carrier-only input boundary and test its accessible effects and operational equivalences without assuming quantum geometry.
+~~~
+
+A selected finite record law now realizes actual formation, a permanent
+coarse writer and ordinary operational effect addition. Linear channel
+allocation realizes a finite commuting matrix dictionary and common
+summable pairs. A normalized alternative breaks nominal matrix-label
+identification across rebuilt devices. Classical-label access also prevents
+compressing the entire declared interface into one qubit. These are explicit
+conditional constructions and tests, not a universal no-go or a proof that
+an axiom amendment is necessary. The noncommuting quantum bridge remains open.
+
+## Previous probability bridge, 2026-11-09
 
 ~~~yaml
 trace_class: frontier_discovery

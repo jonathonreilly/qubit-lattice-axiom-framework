@@ -1,0 +1,30 @@
+--- a/RESULT.md
++++ b/RESULT.md
+@@ -89,6 +89,13 @@
+ uses only scalar contents, hence even independent local algebra relabelings
+ fix all used values. It is nonconstant; the fallback varies with k,l and
+ the legal predecessor contexts give Dirac laws. No global site is privileged.
++
++On the declared isolated-prefix domain, any enabled site must see the sole
++four header records and reconstruct their same frame. Its enabling branch
++then requires it to be one of that frame's race or output sites. Thus every
++site outside the finite target set has zero formation rate; all target sites
++see the whole patch. This proves all-site confinement rather than assuming
++that a finite candidate list covers arbitrary global record configurations.
+ 
+ Permanence also requires support, not just never overwriting. For an initial
+ record x, removing x from the visible condition leaves a mandatory seed hole,
+@@ -154,8 +161,11 @@
+ program uses their two integer columns and the remainder to 4. There are
+ 15^2=225 such ordered pairs. Its coarse output has the summed effect.
+ 
+-Merging program weights before running the q=1 constructor gives the same
+-coarse response as running the fine device and writing its grouped output.
++Within this at-most-four-outcome program family, merging weights before
++running the q=1 constructor gives the same coarse response as running the
++fine device and writing its grouped output. Refinements requiring more than
++four fine outcomes are outside this apparatus, even if every individual
++effect belongs to the quarter grid.
+ This cross-program equality follows from the actual counts and equal clock
+ law; it is not assumed as an abstract noncontextuality postulate. The
+ linearity of channel allocation n -> n identical clocks is a supplied

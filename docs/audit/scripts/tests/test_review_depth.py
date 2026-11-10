@@ -11,6 +11,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 SCRIPT_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(SCRIPT_DIR))
@@ -274,8 +275,6 @@ class ReviewDepthContractTest(unittest.TestCase):
         cls.script = SOURCE.read_text(encoding="utf-8")
         cls.skill, routing_failures = contract.load_skill_contract(ROOT)
         assert not routing_failures, routing_failures
-        cls.generator = (ROOT / contract.GENERATOR_REL).read_text(encoding="utf-8")
-        cls.pipeline = (ROOT / contract.PIPELINE_REL).read_text(encoding="utf-8")
         cls.command = (ROOT / contract.COMMAND_REL).read_text(encoding="utf-8")
 
     def copy_skill(self):
@@ -295,8 +294,30 @@ class ReviewDepthContractTest(unittest.TestCase):
         self.assertIn(old, text, f"mutation needle absent: {old}")
         return text.replace(old, new)
 
+    def missing(self, text, rules, family, prose_only):
+        """Evaluate one rule family the way the checker does, on one text."""
+        scan = contract._markdown_scan(text)
+        return contract._missing(
+            scan.prose if prose_only else scan.visible, {family: rules[family]})
+
+    def run_checker(self, root):
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            code = contract.main(["--repo-root", str(root)])
+        return code, out.getvalue()
+
     def test_the_live_repository_passes(self):
-        self.assertEqual(contract.validate_repo(ROOT), [])
+        self.assertEqual(contract.review_depth_failures(ROOT), [])
+        code, out = self.run_checker(ROOT)
+        self.assertEqual(code, 0, out)
+
+    def test_the_checker_reports_a_table_that_differs_from_the_script(self):
+        with mock.patch.object(
+            contract, "review_depth_paths_ok", return_value=False
+        ):
+            code, out = self.run_checker(ROOT)
+        self.assertEqual(code, 1)
+        self.assertIn("missing invariant family: review_depth_paths", out)
 
     def test_the_table_is_the_scripts_list(self):
         self.assertEqual(contract.review_depth_table(self.lenses), depth.WORKING_MATERIAL)
@@ -340,18 +361,15 @@ class ReviewDepthContractTest(unittest.TestCase):
                 mutated = self.replace(self.script, old, new)
                 self.assertFalse(contract.review_depth_paths_ok(self.lenses, mutated))
 
-    def test_a_missing_script_fails_the_repository_check(self):
-        root, _entry = self.copy_skill()
-        for relative in (contract.GENERATOR_REL, contract.PIPELINE_REL,
-                         contract.COMMAND_REL, *contract.PLACEMENT_REFERENCES.values()):
-            destination = root / relative
-            destination.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(ROOT / relative, destination)
-        self.assertEqual(contract.validate_repo(root), ["review_depth_paths"])
+    def test_a_missing_script_or_reference_fails_the_check(self):
+        root, entry = self.copy_skill()
+        self.assertEqual(contract.review_depth_failures(root), ["review_depth_paths"])
         script = root / contract.REVIEW_DEPTH_REL
         script.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(SOURCE, script)
-        self.assertEqual(contract.validate_repo(root), [])
+        self.assertEqual(contract.review_depth_failures(root), [])
+        (entry.parent / contract.REVIEW_DEPTH_LENSES_REL).unlink()
+        self.assertEqual(contract.review_depth_failures(root), ["review_depth_paths"])
 
     def test_the_depth_rule_cannot_be_weakened_in_the_lens_reference(self):
         section_start = "## Review depth\n"
@@ -412,8 +430,11 @@ class ReviewDepthContractTest(unittest.TestCase):
                     encoding="utf-8")
                 self.assertIn("routed_review_depth", contract.load_skill_contract(root)[1])
                 mutated = self.replace(self.skill, old, new)
-                self.assertIn("review_depth", contract.validate_texts(
-                    mutated, self.generator, self.pipeline, self.command))
+                self.assertEqual(
+                    self.missing(mutated, contract.UNIT_PROSE_RULES, "review_depth", True),
+                    ["review_depth"])
+        self.assertEqual(
+            self.missing(self.skill, contract.UNIT_PROSE_RULES, "review_depth", True), [])
 
     def test_the_depth_rule_cannot_be_weakened_in_the_command(self):
         mutations = {
@@ -425,10 +446,12 @@ class ReviewDepthContractTest(unittest.TestCase):
         for name, (old, new) in mutations.items():
             with self.subTest(name=name):
                 mutated = self.replace(self.command, old, new)
-                self.assertIn("command_review_depth", contract.validate_texts(
-                    self.skill, self.generator, self.pipeline, mutated))
-        self.assertEqual(contract.validate_texts(
-            self.skill, self.generator, self.pipeline, self.command), [])
+                self.assertEqual(
+                    self.missing(mutated, contract.COMMAND_RULES, "command_review_depth", False),
+                    ["command_review_depth"])
+        self.assertEqual(
+            self.missing(self.command, contract.COMMAND_RULES, "command_review_depth", False),
+            [])
 
     def test_the_full_read_keeps_its_lenses_and_gates(self):
         for family in ("reviewer_lenses", "independent_math_and_mutations",

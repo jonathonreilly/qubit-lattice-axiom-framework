@@ -53,13 +53,6 @@ REVIEW_ONLY_VALIDATION_RULES = (
     r"a matching `HEAD` alone is insufficient",
 )
 COMMAND_REL = ".claude/commands/review-loop.md"
-# The review depth is read by a script. Its path list and the table in the
-# lens reference are one rule in two places, so they are compared exactly.
-REVIEW_DEPTH_REL = "docs/ai_methodology/skills/review-loop/scripts/review_depth.py"
-REVIEW_DEPTH_LENSES_REL = "references/SCIENCE_LENSES.md"
-REVIEW_DEPTH_HEADING = "## Review depth"
-REVIEW_DEPTH_ROW_RE = re.compile(r"^\| `(?P<path>[^`|]+)` \| (?P<change>any|added) \|$")
-REPO_BOUND_FAMILIES = ("review_depth_paths",)
 GENERATOR_REL = "docs/audit/scripts/generate_skill_axiom_baselines.py"
 PIPELINE_REL = "docs/audit/scripts/run_pipeline.sh"
 PLACEMENT_REFERENCES = {
@@ -598,6 +591,71 @@ def _markdown_scan(text: str) -> MarkdownScan:
         fenced_blocks=tuple(fenced_blocks),
         errors=tuple(errors),
     )
+
+
+# The review depth is read by a script. Its path list and the table in the
+# lens reference are one rule in two places, so they are compared exactly.
+REVIEW_DEPTH_REL = "docs/ai_methodology/skills/review-loop/scripts/review_depth.py"
+REVIEW_DEPTH_LENSES_REL = "references/SCIENCE_LENSES.md"
+REVIEW_DEPTH_HEADING = "## Review depth"
+REVIEW_DEPTH_ROW_RE = re.compile(r"^\| `(?P<path>[^`|]+)` \| (?P<change>any|added) \|$")
+REPO_BOUND_FAMILIES = ("review_depth_paths",)
+
+
+def review_depth_table(lenses: str) -> tuple[tuple[str, str], ...] | None:
+    """Return the working-material rows of the one active Review depth section."""
+    prose = _markdown_scan(lenses).prose
+    if sum(line.strip() == REVIEW_DEPTH_HEADING for line in prose.splitlines()) != 1:
+        return None
+    section = prose.split(REVIEW_DEPTH_HEADING, 1)[1]
+    section = re.split(r"^## ", section, maxsplit=1, flags=re.MULTILINE)[0]
+    rows = (REVIEW_DEPTH_ROW_RE.match(line) for line in section.splitlines())
+    return tuple((row["path"], row["change"]) for row in rows if row)
+
+
+def review_depth_script_paths(script: str) -> tuple[tuple[str, str], ...] | None:
+    """Read WORKING_MATERIAL from the script source without running it."""
+    try:
+        tree = ast.parse(script)
+    except SyntaxError:
+        return None
+    assigned = [
+        node.value for node in tree.body
+        if isinstance(node, ast.Assign)
+        and any(isinstance(target, ast.Name) and target.id == "WORKING_MATERIAL"
+                for target in node.targets)
+    ]
+    if len(assigned) != 1:
+        return None
+    try:
+        value = ast.literal_eval(assigned[0])
+    except (ValueError, SyntaxError):
+        return None
+    if not isinstance(value, tuple) or not all(
+        isinstance(item, tuple) and len(item) == 2
+        and all(isinstance(part, str) for part in item)
+        for item in value
+    ):
+        return None
+    return value
+
+
+def review_depth_paths_ok(lenses: str, script: str) -> bool:
+    """The prose table and the script must list the same paths in the same order."""
+    table = review_depth_table(lenses)
+    return bool(table) and table == review_depth_script_paths(script)
+
+
+def review_depth_failures(repo_root: Path) -> list[str]:
+    """Name the families that fail when the table and the script disagree."""
+    try:
+        lenses = ((repo_root / SKILL_REL).parent / REVIEW_DEPTH_LENSES_REL).read_text(
+            encoding="utf-8"
+        )
+        script = (repo_root / REVIEW_DEPTH_REL).read_text(encoding="utf-8")
+    except (OSError, UnicodeError):
+        return list(REPO_BOUND_FAMILIES)
+    return [] if review_depth_paths_ok(lenses, script) else list(REPO_BOUND_FAMILIES)
 
 
 @dataclass
@@ -1231,53 +1289,9 @@ def load_skill_contract(repo_root: Path) -> tuple[str, list[str]]:
     return "\n\n".join(parts), missing
 
 
-def review_depth_table(lenses: str) -> tuple[tuple[str, str], ...] | None:
-    """Return the working-material rows of the one active Review depth section."""
-    prose = _markdown_scan(lenses).prose
-    if sum(line.strip() == REVIEW_DEPTH_HEADING for line in prose.splitlines()) != 1:
-        return None
-    section = prose.split(REVIEW_DEPTH_HEADING, 1)[1]
-    section = re.split(r"^## ", section, maxsplit=1, flags=re.MULTILINE)[0]
-    rows = (REVIEW_DEPTH_ROW_RE.match(line) for line in section.splitlines())
-    return tuple((row["path"], row["change"]) for row in rows if row)
-
-
-def review_depth_script_paths(script: str) -> tuple[tuple[str, str], ...] | None:
-    """Read WORKING_MATERIAL from the script source without running it."""
-    try:
-        tree = ast.parse(script)
-    except SyntaxError:
-        return None
-    assigned = [
-        node.value for node in tree.body
-        if isinstance(node, ast.Assign)
-        and any(isinstance(target, ast.Name) and target.id == "WORKING_MATERIAL"
-                for target in node.targets)
-    ]
-    if len(assigned) != 1:
-        return None
-    try:
-        value = ast.literal_eval(assigned[0])
-    except (ValueError, SyntaxError):
-        return None
-    if not isinstance(value, tuple) or not all(
-        isinstance(item, tuple) and len(item) == 2
-        and all(isinstance(part, str) for part in item)
-        for item in value
-    ):
-        return None
-    return value
-
-
-def review_depth_paths_ok(lenses: str, script: str) -> bool:
-    """The prose table and the script must list the same paths in the same order."""
-    table = review_depth_table(lenses)
-    return bool(table) and table == review_depth_script_paths(script)
-
-
 def validate_repo(repo_root: Path) -> list[str]:
     skill, routing_failures = load_skill_contract(repo_root)
-    failures = routing_failures + validate_texts(
+    return routing_failures + validate_texts(
         skill,
         (repo_root / GENERATOR_REL).read_text(encoding="utf-8"),
         (repo_root / PIPELINE_REL).read_text(encoding="utf-8"),
@@ -1285,18 +1299,6 @@ def validate_repo(repo_root: Path) -> list[str]:
         {name: (repo_root / path).read_text(encoding="utf-8")
          for name, path in PLACEMENT_REFERENCES.items()},
     )
-    try:
-        depth_ok = review_depth_paths_ok(
-            ((repo_root / SKILL_REL).parent / REVIEW_DEPTH_LENSES_REL).read_text(
-                encoding="utf-8"
-            ),
-            (repo_root / REVIEW_DEPTH_REL).read_text(encoding="utf-8"),
-        )
-    except (OSError, UnicodeError):
-        depth_ok = False
-    if not depth_ok:
-        _append_once(failures, "review_depth_paths")
-    return failures
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -1305,6 +1307,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     root = Path(args.repo_root).resolve()
     missing = validate_repo(root)
+    missing += review_depth_failures(root)
     if missing:
         print("check_review_loop_skill_contract: FAIL")
         for name in missing:

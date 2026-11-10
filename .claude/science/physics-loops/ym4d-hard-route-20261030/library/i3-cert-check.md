@@ -3,6 +3,8 @@ lease_until: 2026-11-10T16:13Z
 
 # i3-cert-check (FINISH row 630): line check of `library/i3-cert.md`
 
+Status: DONE 2026-11-10 (one session; not an audit; no numerics).
+
 Provenance: Claude Opus 5.5, high effort, Mac mini worker 2, one session, 2026-11-10, at commit
 52da449e5. This is a one-model line check, not an audit. `library/i3-cert.md` was written by
 Claude Fable 5.2 (row 624); I did not write it. Source: Sussman and Alpoge, `YM4_1400.tex` at commit
@@ -21,6 +23,51 @@ this is not a duplicate. I did not attack (COV) (row 628/632 own it).
 
 Verdict scale: HOLDS, HOLDS-WITH-REPAIR (a short repair given, the statement survives), FAILS (first line
 that fails).
+
+## 0. Verdict
+
+**Theorem 9.1 of `library/i3-cert.md` HOLDS given (COV)**, with the short repairs below, none of which
+changes its statement or `C_3`. With the four edits of `library/cov-x.md` it also holds, with
+`C_2' = max(C_2, 6 . 4^r)` in Lemma 2b, in (H5) and in `C_3`; no step uses the spare factor `1/R_l` of
+`psi_l <= C R_l` (item 12). One input i3-cert left unchecked is closed here: the conversion from Y's
+`R_mat` to `r_U` is Y 35290 (item 6). Another is closed by a short proof: the local form of the
+averaging estimate, Lemma 4.1 (item 4).
+
+| Item | Verdict |
+|---|---|
+| 1. Definitions 4.1-4.3 | 4.1, 4.2 HOLD; 4.3 HOLDS-WITH-REPAIR: move list incomplete (Y 76686-76688), "admitted" must read fail factors |
+| 2. Lemma 1, (H4) | HOLDS-WITH-REPAIR: measure form Lemma 1'; (H4) per summand, with indicator removal as an identity |
+| 3. F1-F4, (6.2), Lemma 2a | HOLD (one wrong line cite in F2) |
+| 4. (AV1), (AV2) local; Lemmas 2, 2b | HOLD given Lemma 4.1, proved here (Y's stencil has an extra layer) |
+| 5. Table of 5.2 | (K-ord), (K-shell), (K-core) HOLD; (K-ext) HOLDS for `l = j`; (K-x) not carried at the entrance; (K-col): `c_f` undefined in Y, short repair |
+| 6. Lemma 3, (BG), (WM) | HOLD; add `L >= 13` and the floors of Y 35270 to (G1) |
+| 7. Lemma 4, `C_3`, "no profile needed" | HOLD |
+| 8. Lemma 6, Remark 7.4 | Lemma 6 HOLDS-WITH-REPAIR (the set must include level `l + 1`); Remark 7.4 HOLDS |
+| 9. No product over levels or entrances | HOLDS |
+| 10. (H5), order of constants | HOLDS-WITH-REPAIR: `C_2 ebar <= 1` explicit, `L_flat` and `c_f` placed, `c_0` renamed |
+| 11. T6 not at the entrance; inset-chart Lemma 5.1 | HOLDS; Lemma 5.1 unchanged, Theorem 5.6 is an identity almost everywhere |
+| 12. The four cov-x edits | HOLD; `C_2'` also in (H5) |
+
+Defects, ranked by what they break (all repaired or outside the chain to Theorem 9.1):
+
+1. *Local averaging estimate* (item 4). Y's one-step proof reads curvature on `D_C`, a box with an extra
+   layer, not on `F(p)`. i3-cert's reason ("`M^l U` reads `U` only in `F(p)`") covers the values, not the
+   estimate. Without a repair, Lemma 2 and case A of Lemma 4 lose their hypothesis. Repaired by Lemma 4.1
+   (proved): `F(C)` serves as `D_C`.
+2. *Lemma 6* (item 8). The set "not a tower holonomy" ignores level `l + 1`, which decides rows and tested
+   plaquettes. Repair: add `t = l + 1`, or use Y's interior case `R(p) subset W^{(-2)}`.
+3. *(K-col)* (item 5). `c_f` is used once in Y (76670) and never defined. Repair (unproved, short):
+   `c_f := 3 sqrt 2 c_0 L^2`. Outside `X` only.
+4. *Moves* (item 1). Deletion of a determining plaquette (Y 76686-76688) is missing from (m1)-(m5).
+   Affects (c2) of (COV) outside `X`, not Lemma 1.
+5. *Lemma 1 form* (item 2). Repaired by Lemma 1'; (H4) needs finite sums and indicator removal
+   (Y 77757-77758).
+6. *(K-x)* (item 5). Y's `kappa_x` is a clause of the final inset test in the prospective background,
+   not carried at the entrance; consistent with cov-x finding 1.
+7. *(BG) hypotheses* (item 6): `L >= 13` and the raised floors (Y 35270-35275). Lemma 3 only.
+8. *(H5)* (item 10): defect `<= 1` for the conversion; `C_2'` with the cov-x edits; notation `c_0`.
+9. *(K-ext) for `l < j`* (item 5): `psi` gets a factor `(1 + Bbar)^{1/2}`; no step uses that case.
+10. *Cite* (item 3): the compression identity is Y 63749, 63774-63776, not Y 63798-63801.
 
 ## Item 1. Definitions 4.1-4.3
 
@@ -70,9 +117,11 @@ variables.
 ## Item 2. Lemma 1 and the hypothesis (H4)
 
 **The induction: HOLDS-WITH-REPAIR (statement form).** As written, "if the incoming term is not zero at
-`x_N`" is a pointwise statement about an object that is a density defined almost everywhere times delta
-measures, and "`x_N` in the support" gives only the closure of `Ent_N` (a support is closed; `Ent_N` is
-cut out by strict inequalities). The repair is the form Y itself uses (Y 78333-78335: "The pushforward
+`x_N`" holds when the term is read as the function given at every point by its iterated-integral
+formula (then the proof is right as it stands). For a density defined almost everywhere times delta
+measures it is not a pointwise statement, and the clause "`x_N` in the support" gives only the closure
+of `Ent_N` (a support is closed; `Ent_N` is cut out by strict inequalities). The repair is the form Y
+itself uses (Y 78333-78335: "The pushforward
 therefore assigns full mass to the set where this indicator is one"):
 
 > **Lemma 1'.** Let `mu_nu` be the (complex) measure of the incoming term at moment `nu`. For every Borel
@@ -205,3 +254,175 @@ shell; true, since a stage test of an operation of level `k` reads levels `<= k`
 **Norm convention (minor).** Y's Lie-algebra norm is `<X, Y> = (1/2) Tr(XY)` (Y 4699-4701), so
 `abs(F) = abs(phi)`; the test norm `abs(dU - 1)` is read as the operator norm. If Y's test norm were
 Hilbert-Schmidt, `c_0` would change by `sqrt 2`. It changes constants only.
+
+## Item 6. Lemma 3 and section 6.1: the hypotheses of (BG) and (WM)
+
+**(BG), `bgc:proper-background` (Y 35634-35646): quotation HOLDS; two hypotheses to add.** The quotation
+is exact. Hypotheses i3-cert checks: real datum, ordinary and mixed test holonomies (Definition T, no
+pinch tests since no inward row is kept; Y 12456-12458: "On a determining set in force all inward rows
+have been removed, so only tested plaquettes remain"), size `eps = B ebar(gamma) <= a_1`. Correct. Missing
+from 6.1: the section of (BG) works with `L >= 13` (Y 35270, "Use `L >= 13`, and the aligned separated
+geometry of `mb:datum-descent-critical-ascent`; increase its floors below when choosing a fixed local
+regularity patch"). So (G1) must include the floors of that geometry as raised at Y 35270-35275, not
+only those of `hi:real-datum-profile`, and `L >= 13`. Both are fixed before `gamma`; neither changes a
+constant of i3-cert.
+
+**The conversion `R_mat` to `r_U` (i3-cert: "I did not check"): HOLDS, closed here.** Y 35277-35291:
+`R(U) = max{ sup_p eta^{-2} L(p)^2 abs(dU(p) - 1), sup_b L(b)^3 abs(J(U)(b)) }`, which is `sup_x r_U(x)` of
+`hi:real-datum-profile` (Y 15325-15330, same two readouts), and `R(U) <= R_mat(U)` (`bgc:matrix-current`,
+Y 35290). So `U(V)` is regular at radius `a_c` as soon as `C_B B ebar(gamma) <= a_c`, the condition
+Lemma 3 states. No extra factor.
+
+**(WM) (Y 12471-12503, 15317-15338, 35615-35627): HOLDS as quoted.** `P` is Y's
+`tilde v_delta` (`mb:datum-profile`), the distance to a tested plaquette is the minimum over its corners
+(Y 12454-12455), `r_U <= 5 K P` with `e^{delta R} = sqrt 2` (Y 35617-35626), the fixed displacement
+factor is Y's (Y 35625-35626), and "No maximum has to be attained" is Y 12492-12494. The pillar scale
+`xi = L^t` in `Lay_t` is a reading of Y 12394-12401 ("at a seam the adjacent scales differ by `L`");
+Y does not write `L^t` at those lines. Acceptable.
+
+**Lemma D: HOLDS.** Checked both directions and the count of crossed layers (`l' - 1 - s >= l - s - 2`,
+`s - 1 - l' >= s - l - 1`). `kappa = delta c_B rho` is positive and fixed: `delta = (log 2)/(2R)`,
+`R = 20 L sigma`, `rho >= L^2 sigma`, so `kappa >= c_B L log 2/40`.
+
+**Lemma 3: HOLDS** (given (BG), (WM) and the two added hypotheses). One application of (WM) to one
+datum; `P(x) <= B e_s K_F` by Lemma D and F1.
+
+## Item 7. Lemma 4, the exact averaging step, and `C_3`
+
+**Lemma 4: HOLDS** (given Corollary 5.2, (G2), (AV1) local with Lemma 4.1 of item 4). I checked each level.
+`l < j`, `l = j`, `l = q + 1`, `l > q + 1`: the tested sets, the row sets and the double blocks read are
+unchanged (`Gamma_l` depends on `Omega_l, Omega_{l+1}` only, so only `Gamma_j` and `Gamma_q` move). `l = q`,
+case A: every edge of `P` either touches `K` and has no end in the old `Omega_q`, hence is a new row with
+`V_q(c) = M(V_j)(c)` by (E1), or is a prospective completed edge whose blocks lie in `Lay'_j` (both
+`Omega_q` and `K` are unions of order-q blocks), so its value is `M(V_j)(c)` with old values. Then (AV1)
+with `eps(W; D(P)) <= c_0 C_2 e_j <= min(eps_L, L^2/C_L)` (H5) gives `abs(F_P) <= 2 L^2 c_0 C_2 e_j`, and
+F1 with `n = 1` gives `e_j <= C_F(1) e_q`. Case B: the old loop is the new loop, edge by edge. So
+`C_3 = 2 c_0 L^2 C_F(1) C_2` is right, and `C_3 >= C_2`.
+
+Two remarks. (a) Case A needs that every level-j plaquette of the stencil `D(P)` is an old tested
+plaquette (corners in `Lay_j`). This is true for `D(P) = F(P)`; with Y's enlarged `D_C` (an extra layer)
+it would need (G2) with a larger margin. Lemma 4.1 of item 4 removes the issue. (b) Y 64093-64101 is
+the same argument: "the averaging blocks of a newly tested plaquette are in the preceding member of
+level `j` ... the exact one-step average gives the coarse bound"; for level-m plaquettes with a corner
+in the old `Omega_m` Y uses the carried density cube instead (Y 64093-64097), and i3-cert uses the old
+loop with Corollary 5.2. Both work.
+
+**The finding "(i) and (ii) do not need the layer profile": HOLDS.** The proof of Lemma 4 cites
+Corollary 5.2, (G2), (G3), (AV1), (E1) and Definition T, and no line of section 6. Lemma 6 adds only
+the trichotomy. Y's own route (Y 65536-65556, through `U_in` and the profile) is longer and gives a
+larger constant, as Remark 7.2 says.
+
+## Item 8. Lemma 6 and Remark 7.4
+
+**Lemma 6: HOLDS-WITH-REPAIR (the set that defines "not a tower holonomy").** i3-cert defines it as
+"footprint and double blocks of its edges lie where `T_l = T_{l-1} =` everything". Which edges of a
+level-l plaquette are rows also depends on level `l + 1` (rows have no endpoint in `J_{l+1}`), and which
+plaquettes are tested depends on `J_{l+1}` too. If a corner of `p` lies in `Omega'_{l+1}` but not in
+`T_{l+1}`, `p` is tested in the joined sequence and not in the global one, and the proof's sentence
+"Definition T gives the same edges with the same values" fails. Repair: require `J_t = Omega'_t` on
+`F(p)` for `t = l - 1, l, l + 1`; or use Y's own interior case `R(p) subset W^{(-2)}` (Y 13095-13100,
+13114-13116, "In the interior case all determining rows used by the test are ambient rows"), with Y's
+dichotomy (Y 13099-13112) proving that every other joined test is a collar test (trivial or a lifted
+level-`j_a` holonomy, Y 13117-13126). With either, the proof is the two lines of i3-cert. cov-x
+section 7 says it gives a set definition from Y 13095-13130; I did not check it (row 633).
+
+**Remark 7.4: HOLDS.** The reason that matters is the first one: Lemma 4 is a statement about the
+global datum `D'(x)`, whose rows are rows of the global sequences, so the lifted rows of the localized
+tower are not edges of any plaquette it bounds. The geometric sentence (stencils of case A within `3L^q/2`
+of `K`, `K` two level-m cells inside `X`, tower within `3 M_1 L^q` of `X^c`) is consistent with
+`O_m = H_m^{[8 a_m]}`, `X = H_m^{[10 a_m]}` and `a_m = M Ř_m L^m >> 3 M_1 L^m`; it is not needed for Lemma 4.
+
+## Item 9. Section 9.2: no constant is a product over levels or over entrances
+
+**HOLDS, of the written proofs.** I went through every estimate in sections 3 to 9.
+- Lemma 1 (and Lemma 1' of item 2) is an induction on sets and null sets; no constant.
+- Corollary 5.2 takes its bound at each plaquette from one test at one moment, with a threshold written
+  in the operation; the loop's *value* is carried to `x_N` by (c2) (or (c2')). No bound obtained at an
+  earlier entrance is fed into an estimate. The background a test reads at an earlier moment exists
+  under a ceiling on `gamma` that is uniform (`C_3 ebar(gamma) <= a_1`), not under an earlier
+  certificate's constant.
+- Lemma 4 is one averaging step; Lemma 3 is one application of (WM), with level sums bounded by the
+  convergent series `K_F` (and `K_G` in Lemma 5).
+- The one literal product over levels is the relaxation `L_flat^{2e}`, one factor `L_flat^2` per
+  overlapping compressed level. It is bounded by F3 (`e - 1 <= log_L R_{k_0+1}`), and absorbed into
+  `e_l = R_l^2 eps_l` with the fixed constant `2^r L L_flat^2`. So it is not a constant that grows with the
+  number of levels. Likewise (AV2)'s constant 2 is uniform in the depth (Y 4927-4948).
+The chain `C_2 -> C_3 -> K_w K_F C_3 -> C_5, C_6` has fixed length, restarted at `C_2` at each entrance.
+This matches Y 65586-65591.
+
+## Item 10. (H5) and the order of constants (Y 72931)
+
+**HOLDS-WITH-REPAIR (three additions).** Y's order (Y 72931-72932):
+`(r, p_0, p_1, q, kappa_0, beta_s, theta_s, theta_c) < L < (M_1, R_1) < ... < M < sigma_* < a_Lambda <
+(A_1, A_0, C_0, C_1, alpha_1, alpha_0, E_0, M_0, alpha', B) < (lambda, c_5, Bbar) < gamma`.
+`C_2, C_3` depend on `(L, L_flat, r, M, M_0, c_f)` and `(Bbar, c_5)`; `ebar(gamma)` on `(L, A_0, p_0, r)`;
+`alpha_L, eps_L, C_L` on `L` (Y 4704). The floors (T1)-(T3) on `T = gamma^{-2}` depend on
+`(c_5, Bbar, r, p_0, L)`. All precede `gamma`, so both conditions of (H5) and the floors are ceilings on
+`gamma`, satisfiable because `ebar(gamma) -> 0`. Additions:
+1. `L_flat` and `c_f` are not in Y's display. `L_flat` is "chosen together with `L`" (Y 63876), so it
+   sits with `L`. `c_f` is undefined in Y (item 5); with the repair there it is a function of `L`.
+2. The conversion `abs(F) <= c_0 . defect` needs defect `<= 1`, i.e. `C_2 ebar(gamma) <= 1`. It follows
+   from the second condition of (H5) only if `eps_L <= c_0`; state it as a third condition, or note that
+   Y's `eps_L` may be taken `<= 1`. With the cov-x edit, every `C_2` in (H5) becomes `C_2'`.
+3. Notation clash: i3-cert's `c_0 := pi/2` is not Y's `c_0` (`= 11 N^2 log L/(12 pi^2)`, Y 1681), which
+   fixes `lambda = c_0/4` (Y 72935). Rename i3-cert's (e.g. `c_pi`). Not a mathematical error.
+Lemma 3 adds the ceilings `B ebar <= a_1`, `C_B B ebar <= a_c` with `B = C_2, C_3`; again ceilings on
+`gamma`, not needed for Theorem 9.1.
+
+## Item 11. T6 at the entrance, and Lemma 5.1 of `library/inset-chart.md`
+
+**The finding HOLDS.** T6 (`chi'_j` at `2 delta'_j`, centre `S_X = M^j U^+`) is imposed by stage `n + 1`
+after the new localized test (Y 77744-77746: "Stage `n+1` first imposes the localized regularity test
+`chi_i^{(n+1)}`, the collar gauge and the approximate closeness test `chi'_j` at `2 delta'_j`"), and its
+centre needs `U^+`, which needs the certificate. No step of i3-cert reads T6, T8, T11, T12 or T13; the
+level-j collar rows are supplied by T9's exterior clauses (5.4 item 4; cov-x P5a).
+
+**Lemma 5.1 of inset-chart needs no change as a lemma** (it is pure logic, checked). Its use in
+Theorem 5.6 (`P = T9 T10 T11 T12 T13`, `A = T1 ... T5`, `Q` the kept factors, which include T6, T7, T8)
+needs (F1): `P Q != 0` implies `I = 1`. Every factor of `P` and `Q` is a factor of the term or an extra
+indicator, so `{P Q != 0}` lies in the support of the incoming term, which lies in `Ent_N` by Lemma 1;
+and `I = 1` on `Ent_N` uses none of T6, T8, T11-T13. So (F1-Y) holds and is not circular. One wording
+repair in inset-chart: with Lemma 1' (item 2), (F1) holds `|mu|`-almost everywhere rather than at every
+point, so the identity `P Q = I Q` of Theorem 5.6 is an identity of measures (equality almost
+everywhere for the incoming measure). That is all an integral uses; say so in 5.1 or 5.6. If the term is
+read as the function given at every point by its iterated-integral formula, the pointwise form holds too.
+
+## Item 12 (the item added 2026-11-10). Theorem 9.1 with the four edits of cov-x
+
+I take the four edits as stated in cov-x sections 0 and 8 and do not check cov-x's proofs (row 633).
+
+1. **(c2') for (c2): HOLDS.** The proof of Corollary 5.2 uses (c2) only to say that the loop at `x_N` is
+   the loop the supplier bounds; (c2') says exactly that (cov-x Lemma 3.2). No other step of i3-cert uses
+   "`p` is a tested plaquette of `D(x_nu')` for every `nu'`". Section 9.2's "the value is carried by (c2)"
+   reads the same with (c2').
+2. **One supplier for items 3 and 5 (the guard before the promotion): HOLDS for i3-cert.** i3-cert's
+   proofs use 5.4 items 3 and 5 only through (COV). Replacing the supplier changes `psi` to
+   `2 sqrt 2 c_0 L^2 L_flat^{2(l-k_0-2)_+}` (cov-x table, P4), which is within (5.1) with `e <= (l - k_0)_+`.
+   This agrees with item 5 above: the (K-x) clause is not carried at the entrance.
+3. **The seventh kind (K-wall), `psi_j` of order `R_j^2`: HOLDS for Theorem 9.1.** (5.1) fails for this
+   kind, as cov-x says. It is a coarse supplier (bounds on level-l' plaquettes, then depth `j - l'`
+   averages), so Lemma 2 is replaced by cov-x Lemma 3.2 for it; (AV2) on the level-l' lattice is the
+   same corollary (Y 4905-4960 holds for "every lattice admitting `k` block averages"), and in local form
+   it needs Lemma 4.1 of item 4 again.
+4. **`C_2' = max(C_2, 6 . 4^r)`: HOLDS,** provided it is used in (H5) as well (both conditions), so that
+   the allowance of (K-wall), `3 . 4^r e_j <= alpha_L`, is admitted.
+
+**Does any step of i3-cert use `psi_l <= C R_l` in a way `C_2' e_l` does not replace? No.** The spare
+factor `1/R_l` of Lemma 2b is used nowhere: Corollary 5.2, Lemma 4 (with `eps(W; D(P)) <= c_0 C_2' e_j`,
+including the P5b plaquettes of the stencil), (H5), Lemma 3 (`B = C_2'`, `C_3`) and Lemma 5 all read the
+bound `C e_l` only. The claim `psi_l <= C (log theta_l)^r` of Y 65479-65480 is not consumed in i3-cert.
+So Theorem 9.1 holds with the four edits and `C_3 = 2 c_0 L^2 C_F(1) C_2'`, given (COV) in the cov-x form.
+
+## What stays open
+
+- (COV) itself (rows 628, 632, 633; not attacked here).
+- The (K-col) constant `c_f` (repair proposed, unproved; outside `X` only).
+- Read and not rebuilt, as in i3-cert: (G1)-(G3), the thresholds of the tests, the trichotomy (R1), the
+  exponentiation step of Y's operation (item 2).
+
+For row 634 (`i3-repairs`): the repairs to carry into `library/i3-cert.md` are Lemma 4.1 (item 4),
+Lemma 1' (item 2), (m6) and the fail-factor reading (item 1), the level-`l + 1` condition in Lemma 6
+(item 8), `L >= 13` and the floors of Y 35270 in (G1) (item 6), the (K-x) and (K-col) rows of the table
+(item 5), the additions to (H5) (item 10), `C_2'` (item 12), and the cite of F2 (item 3).
+
+RESULT: Theorem 9.1 of i3-cert HOLDS given (COV), also with the four cov-x edits (C_2' = max(C_2, 6.4^r) in Lemma 2b, (H5) and C_3; no step uses the spare 1/R_l); repairs, none changing the statement: local averaging needs Lemma 4.1 (proved here: Y's stencil has an extra layer, F(C) suffices), Lemma 1 in measure form, move (m6) missing from Definition 4.3, Lemma 6's set must include level l+1, (K-x) not carried at the entrance, c_f undefined in Y (short repair, outside X), L >= 13 for (BG); open: (COV) and c_f.

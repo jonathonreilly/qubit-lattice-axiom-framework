@@ -1874,3 +1874,10 @@ These rows check only the sentence a corrigendum withdraws. The rest of each not
 - Finding: The status block and the bottom line still name the endpoint triple `(-1, -2, 21/4)` as the single open theorem target. The corrigendum withdraws that sentence. The conditional family and the non-uniqueness of `P_R` stay. Detail is in `FIXES.md`.
 - Source: corrigendum scan on 2026-11-10. The header, the cited-authority block, and the bottom line were checked. The runner was not executed.
 
+## Note 4937
+
+- Path: `docs/BH_ENTROPY_DERIVED_NOTE.md`
+- Result: fix filed.
+- Finding: "Reproduced Finite Results" still says the `1/L` intercept's closeness to `1/4` is evidence against declaring the finite data inconsistent with `1/4`. The corrigendum says `0.2492` is not that evidence. Detail is in `FIXES.md`.
+- Source: corrigendum scan on 2026-11-10. The corrigendum and the results section were checked. The runner was not executed.
+

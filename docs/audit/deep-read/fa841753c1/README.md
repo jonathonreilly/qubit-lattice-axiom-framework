@@ -23,7 +23,7 @@ Read under this process: notes 1–61, 63–65, 68, and 70. Notes 40, 46, 61, an
 
 Extracted from the prior cards still on disk: notes 1551–1737. Repairs in that range are notes 1634, 1635, 1696, 1711, and 1737. Note 1716 was removed from the fix list after a re-read. The other extracted notes are coverage and open items, not repairs.
 
-A corrigendum scan on 2026-11-10 filed leftover sentences in notes 2322, 3494, 3548, 3741, 3748, 3821, 4204, 4321, 4422, 4609, 4836, 4887, and 4898. Only the withdrawn sentence and its later restatement were checked. The rest of each note is unread.
+A corrigendum scan on 2026-11-10 filed leftover sentences in notes 2322, 3494, 3548, 3741, 3748, 3821, 4204, 4321, 4422, 4609, 4836, 4887, 4898, and 4937. Only the withdrawn sentence and its later restatement were checked. The rest of each note is unread.
 
 Next unread note: 62.
 

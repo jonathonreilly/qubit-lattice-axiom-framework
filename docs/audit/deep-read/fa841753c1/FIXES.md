@@ -179,3 +179,11 @@ A row appears here only when the note is wrong or overclaims. One finding, one l
 - Evidence: The 2026-09-30 corrigendum says the two centre-minus-shell entries are not a field value to derive, and withdraws the sentence that names the missing triple as the next theorem target. The purpose block still says the coupling theorem is not closed because that triple is not yet derived. The authority role still names it as the single open theorem target. The bottom line still says "The next theorem target is the missing readout-map endpoint triple." The body repeats the same triple as the inherited no-go.
 - Edit: Delete those target sentences. Keep the conditional coupling family and the inherited non-uniqueness of `P_R`, including that `rho_E = 0` and `rho_E = 21/4` are both admissible. Do not present `(-1, -2, 21/4)` as a field value still to be derived. The middle entry `alpha_T / alpha_E` stays undecided, as the corrigendum says.
 - How this row was made: corrigendum scan on 2026-11-10. The header, the cited-authority block, and the bottom line were checked. The runner was not executed.
+
+## Note 4937
+
+- Path: `docs/BH_ENTROPY_DERIVED_NOTE.md`
+- Defect: "Reproduced Finite Results" still says the two-dimensional `1/L` intercept being close to `1/4` is evidence against declaring the finite data inconsistent with `1/4`. The note's own corrigendum says that intercept is not evidence for `1/4`.
+- Evidence: The 2026-09-30 corrigendum says the mixed-state intercept `0.2492` is not evidence for the coefficient `1/4`, and that a pure half-filled state does not reach `1/4` under either printed fit. The results section still prints the evidence sentence, then points back at the corrigendum.
+- Edit: Delete the sentence that calls closeness to `1/4` evidence against inconsistency. Keep the printed intercept `0.2492` as a runner number, and keep the corrigendum.
+- How this row was made: corrigendum scan on 2026-11-10. The corrigendum and the results section were checked. The runner was not executed.

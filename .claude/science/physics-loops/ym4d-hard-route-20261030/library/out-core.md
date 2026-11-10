@@ -129,7 +129,7 @@ The proof uses two readings of your wording. Each is a reading, not a rule that 
 
 (R2) matters for the pair $`(0,1)`$ only. Your display concerns $`j\ge1`$ and does not use it. If healing did not fill $`\Omega_0`$, the pair $`(0,1)`$ would have gap $`0`$ inside a healed component that meets $`\Omega_0^c`$.
 
-An alternative to (R2) gives the pair $`(0,1)`$ as well. Read line 61973 as a standing rule: $`\Omega_0`$ is $`\Omega_1^\sim`$ at every moment. Then after healing $`\Omega_0=(\Omega_1\cup X)^\sim\supset\Omega_0\cup X`$, and Lemma 0 of section 5.2 gives $`\operatorname{dist}_\infty(\Omega_0^c,\Omega_1)\ge a_1`$ directly. Only the reading in which $`\Omega_0`$ is frozen at step $`1`$ and is not filled by healing breaks the pair $`(0,1)`$. We searched lines 61900-66000 for $`\Omega_0`$. It occurs at lines 61973, 62078, 62245, 63032, 63039 and 63374. None of these lines states the rule for $`\Omega_0`$ under healing.
+An alternative to (R2) gives the pair $`(0,1)`$ as well. Read line 61973 as a standing rule: $`\Omega_0`$ is $`\Omega_1^\sim`$ at every moment. Write $`\Omega_0',\Omega_1'`$ for the regions after healing, so that $`\Omega_1'=\Omega_1\cup X`$. Then $`\Omega_0'=(\Omega_1\cup X)^\sim\supset\Omega_0\cup X`$, and Lemma 0 of section 5.2 gives $`\operatorname{dist}_\infty((\Omega_0')^c,\Omega_1')\ge a_1`$ directly. Only the reading in which $`\Omega_0`$ is frozen at step $`1`$ and is not filled by healing breaks the pair $`(0,1)`$. We searched lines 61900-66000 for $`\Omega_0`$. It occurs at lines 61973, 62078, 62245, 63032, 63039 and 63374. None of these lines states the rule for $`\Omega_0`$ under healing.
 
 ## 5. The proof
 
@@ -347,8 +347,8 @@ No other constant is used. $`M`$ enters only through the units $`u_i=ML^i`$ and 
 
 ## 7. What this note does not show
 
-- It does not prove the statements (H1)-(H6). Section 3 gives their source passages in your text and the convention that (H1) adds. They are: the layer convention, the quiet boxes, the prepared boxes and the existence of the index $`k_0`$ with $`h<k_0\le k-2`$, "marks wait", the rule that a standing drop-out stays outside its top entry, and the no-wrapping statement. The proof of Theorem 6 uses them in the order stated there.
+- It does not prove the statements (H1)-(H6). Section 3 gives their source passages in your text and the convention that (H1) adds. They are: the layer convention, the quiet boxes, the prepared boxes and the existence of the index $`k_0`$ with $`h<k_0\le k-2`$, "Marks wait", the rule that a standing drop-out stays outside its top entry, and the no-wrapping statement. The proof of Theorem 6 uses them in the order stated there.
 - It does not decide the readings (R1) and (R2). The proof of your display uses (R1), through the inclusion $`Z_{t-1}\subset\widehat Y`$ in Lemma 2. It uses (R2) only for the pair $`(0,1)`$, which your display does not contain.
 - It does not treat the other sentences of your proposition: the gaps of at least $`cM\check R_j`$ for the regions that the steps produce (Lemma 2 gives $`8a_t`$ only at the moment of the step); "Every large-field region and every creation set is a union of cells of its own level"; the decomposition of unity and the two kinds of creation; and the identity $`\Omega^{\boldsymbol\nu_\mu}_l(\mathcal S_t)=\Omega_l(\mathcal S^\mu)\cup Z_{[j,t]}`$ of lines 62130-62133.
 - It does not prove the equality of Remark 2 after Theorem 6 as a statement about your labels; it uses only the lower bound.
-- No step uses a computation. Each step is a finite inclusion or distance argument between unions of grid cubes, so that a proof assistant can take it.
+- No step depends on numerical output or on a machine search. Each step is a finite inclusion, a distance bound or exact algebra on unions of grid cubes, so that a proof assistant can take it.

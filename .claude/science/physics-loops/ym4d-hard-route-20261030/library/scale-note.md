@@ -3,9 +3,9 @@ lease_until: 2026-11-11T08:17Z
 
 # Your scale comparison over one window, your index $`k_0`$, and the cells of your action sequence
 
-Provenance: Claude Opus 5.5 wrote Lemmas G, W and C with their corollaries, and Claude Fable 5.2 checked them line by line. Claude Fable 5.2 wrote Example F and Lemma K, and Claude Opus 5.5 checked them line by line. Claude Opus 5.5 added the last sentence of Lemma K and its proof during that check; no other model has checked that part. Not an audit.
+Provenance: Claude Opus 5.5 wrote Lemmas G, W and C with their corollaries, and Claude Fable 5.2 checked them line by line. Claude Fable 5.2 wrote Example F and Lemma K, and Claude Opus 5.5 checked them line by line. Claude Opus 5.5 added the last sentence of Lemma K and its proof during that check; Codex (gpt-6-astra) then checked that addition line by line and found no failing step. Not an audit.
 
-All rules, symbols and statements used below are yours. The source is `YM4/YM4_1400.tex` at commit `c7fef8b21b58` of ethanwsussman/Yang--Mills-LLM-experiment ([the file](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/c7fef8b21b58/YM4/YM4_1400.tex)). "Line n" means line n of that file. Two passages are in `YM4/EM/YM4_EM.tex` and `YM4/RT/YM4_RT.tex` at the same commit; for those the file is named.
+The frame, the geometric rules and the notation are yours. The ceiling, the counterexample and the deductions added below are ours. The source is `YM4/YM4_1400.tex` at commit `c7fef8b21b58` of ethanwsussman/Yang--Mills-LLM-experiment ([the file](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/c7fef8b21b58/YM4/YM4_1400.tex)). "Line n" means line n of that file. Two passages are in `YM4/EM/YM4_EM.tex` and `YM4/RT/YM4_RT.tex` at the same commit; for those the file is named.
 
 The note has three parts.
 
@@ -19,11 +19,11 @@ No step uses a computation. Every number is displayed and can be checked by hand
 
 ### 1.1 Your sentence, and what your text gives for it
 
-Lines 73376-73383 read: "Its carriers are in the enlargements of older islands or of strips of levels at most $`h_t=t-\mathsf N_t`$, where $`\mathsf N_t`$ is the number of preparatory stages. The stored bonds are in the inner core. The enlargement costs at most one cell of level $`h_t`$, and the next two shells have widths at least $`M\check R_t\xi_{h_t}`$ and $`LM\check R_t\xi_{h_t}`$. The scale comparison $`\check R_{h_t}\le L\check R_t`$ therefore puts every carrier inside $`Z''_{h_t+2}`$."
+Lines 73376-73384 read: "Its carriers are in the enlargements of older islands or of strips of levels at most $`h_t=t-\mathsf N_t`$, where $`\mathsf N_t`$ is the number of preparatory stages. The stored bonds are in the inner core. The enlargement costs at most one cell of level $`h_t`$, and the next two shells have widths at least $`M\check R_t\xi_{h_t}`$ and $`LM\check R_t\xi_{h_t}`$. The scale comparison $`\check R_{h_t}\le L\check R_t`$ therefore puts every carrier inside $`Z''_{h_t+2}`$."
 
 The sentence names the comparison as known. The lines before it give the widths of the shells, which are the reason for "puts every carrier inside". No reason for the comparison itself is given at these lines.
 
-The comparisons that your text states elsewhere relate neighbouring levels:
+The following comparisons in your text relate neighbouring levels:
 
 - Line 1110, in the frame definition: $`\check R_j\le L\check R_{j+1}`$.
 - Lines 73081-73082: "The size sequence has $`R_{j+1}/R_j\in\{1,L^{-1}\}`$, and two size drops are not consecutive."
@@ -45,7 +45,7 @@ Lines 1102-1113: "A frame is a real sequence $`\theta_0,\ldots,\theta_k\ge\gamma
 
 Line 1121: "The waiting depth is $`\mathsf N_j=\check R_j`$." Line 73378: $`h_t=t-\mathsf N_t`$.
 
-Constants, as your text fixes them: $`r\ge2`$ (line 62001); $`L\ge13`$ odd (line 650); $`\underline\lambda=\tfrac14c_0`$ and $`c_5=2c_2`$ (line 72936). The lemmas below assume $`\underline\lambda\ge0`$, $`c_5\ge0`$ and $`\bar B\ge0`$. If a frame has $`\bar B<0`$, its upper bound also holds with $`0`$ in place of $`\bar B`$.
+Constants, as your text fixes them: $`r\ge2`$ (line 62001); $`L\ge13`$ odd (lines 650-651); $`\underline\lambda=\tfrac14c_0`$ and $`c_5=2c_2`$ (line 72936). The lemmas below assume $`\underline\lambda\ge0`$, $`c_5\ge0`$ and $`\bar B\ge0`$. If a frame has $`\bar B<0`$, its upper bound also holds with $`0`$ in place of $`\bar B`$.
 
 Write $`m_j=\min_{i\le j}\theta_i`$, so that $`\check R_j=R(m_j)`$.
 
@@ -98,7 +98,7 @@ The comparison fails at $`t=14`$. Here $`\mathsf N_{14}=\check R_{14}=13`$ and $
 
 and $`r`$ and $`L`$ come at its start. So all constants of (G) come before $`\gamma`$. Line 72946 says: "a condition arising in the construction fits the order if, at the last of the constants on which it depends, it is of the kind named." The kind named at $`\gamma`$ is a ceiling. So (G) is one more ceiling on $`\gamma`$ that fits your order, and it restricts no earlier constant.
 
-Your text already uses a small $`\gamma`$ for the one-step comparison. Line 62001: "two consecutive drops never occur, because $`x`$ changes by $`O(1)`$ per step and $`\gamma`$ is small." (G) is a ceiling of the same kind for one window of $`\check R_t`$ steps. Your text does not state (G) or a condition that implies it.
+Your text already uses a small $`\gamma`$ for the one-step comparison. Line 62001: "two consecutive drops never occur, because $`x`$ changes by $`O(1)`$ per step and $`\gamma`$ is small." (G) is a ceiling of the same kind for one window of $`\check R_t`$ steps. In the passages found by our search, we found no explicit condition (G) or proof of this one-window comparison.
 
 ### 1.5 Lemma G
 
@@ -181,7 +181,7 @@ This is the inequality of your lines 73382-73383. (S) gives more: $`\check R_i\l
 
 Lines 63774-63778: "Let $`u_i=ML^i`$ be the side of an $`M`$-cube at level $`i`$ in bare units. In the scale choice used for the preparation, let $`k_0+1`$ be the last index with $`a_{k_0+1}=u_k`$, with $`h<k_0\le k-2`$. Thus $`a_i\le u_k`$ up to $`k_0+1`$, and $`a_i\ge Lu_k`$ thereafter."
 
-Here $`a_i=M\check R_iL^i`$ (line 63749: "set $`a_i=M\check R_iL^i`$, the side of a level-$`i`$ cell") and $`h=k_\flat=k-\mathsf N_k`$ (line 63684). Your text states that this index exists with $`h<k_0\le k-2`$. It gives no proof at these lines.
+Here $`a_i=M\check R_iL^i`$ (lines 63748-63749: "set $`a_i=M\check R_iL^i`$, the side of a level-$`i`$ cell") and $`h=k_\flat=k-\mathsf N_k`$ (line 63684). Your text states that this index exists with $`h<k_0\le k-2`$. It gives no proof at these lines.
 
 ### 2.2 Lemma K
 
@@ -232,7 +232,7 @@ Each set on the right is a hull in level-$`t`$ cells with layers of level-$`t`$ 
 
 **(R-WAIT) Marks wait.** Line 62128: "a mark of level $`s`$ lying inside a class component of level $`t`$ satisfies $`s<t_\flat`$. Hence standing marks that share a part are nested, their windows $`(s_\flat,s]`$ are disjoint, and at any one place and level at most one drop-out mark is active."
 
-**(R-NEST) Nested cells.** Line 62001: "Because it is a power of $`L`$, all partitions are nested." Lines 73081-73083: "The size sequence has $`R_{j+1}/R_j\in\{1,L^{-1}\}`$, and two size drops are not consecutive. Thus a passage between levels either coarsens these cells by $`L`$, or leaves their physical partition unchanged." Line 73066: "The torus and all partitions are chosen compatibly." So for $`l\le t`$ every level-$`t`$ cell is a union of level-$`l`$ cells. The level-$`l`$ cells partition the torus, so the complement of a union of level-$`l`$ cells is again one.
+**(R-NEST) Nested cells.** Line 62001: "Because it is a power of $`L`$, all partitions are nested." Lines 73081-73084: "The size sequence has $`R_{j+1}/R_j\in\{1,L^{-1}\}`$, and two size drops are not consecutive. Thus a passage between levels either coarsens these cells by $`L`$, or leaves their physical partition unchanged." Line 73066: "The torus and all partitions are chosen compatibly." So for $`l\le t`$ every level-$`t`$ cell is a union of level-$`l`$ cells. The level-$`l`$ cells partition the torus, so the complement of a union of level-$`l`$ cells is again one.
 
 **(R-LAB) Nested labels.** Lines 73087-73092: a label of height $`s`$ has $`\Lambda_j\subset\Omega_j`$, $`\Omega_{j+1}\subset\Lambda_j`$ and $`Z_j=\Lambda_j^c`$. So $`Z_s\subset Z_t`$ for $`s\le t`$.
 
@@ -244,7 +244,7 @@ Each set on the right is a hull in level-$`t`$ cells with layers of level-$`t`$ 
 
 Line 62128: "The choice $`\boldsymbol{\nu}=0`$ gives the action sequence, the regions for which the terms were constructed." Lines 73133-73140 write it as $`T\supset\Omega^{\mathsf a}_1\supset\Lambda^{\mathsf a+}_1\supset\Lambda^{\mathsf a}_1\supset\Omega^{\mathsf a}_2\supset\cdots\supset\Lambda^{\mathsf a}_s`$, $`Z_s^{\mathsf a}=Z_s`$. So, with $`\boldsymbol\nu=0`$, the action entries differ from the label entries only on a standing drop-out mark $`X`$ of level $`t`$, at the levels $`t_\flat<l\le t_\flat+n(X)`$ of its window, and there they are the stored entries $`\Omega^\circ_l`$, $`\Lambda^\circ_l`$.
 
-**Reading (K).** Your text does not define "component". We read it as follows: a component of a union of closed cells of one level is a connected component of that set. Line 73068 says "Closed cells are used for collars", and line 62195 says "two regions made of level-$`t`$ cells that do not touch are separated by at least one cell". Under (K), a component of a union of level-$`t`$ cells is a union of level-$`t`$ cells, two distinct components are disjoint, and a connected subset that meets a component lies in it.
+**Reading (K).** Your text does not define "component". We read it as follows: a component of a union of closed cells of one level is a connected component of that set. Line 73068 says "Closed cells are used for collars", and line 62195 says "two regions made of level-$`t`$ cells that do not touch are separated by at least one cell". Under (K), a component of a union of level-$`t`$ cells is a union of level-$`t`$ cells, two distinct components are disjoint, and a connected subset of that union that meets a component lies in it.
 
 ### 3.2 Lemma C
 
@@ -280,15 +280,15 @@ Lines 1462 and 1475-1477: "The profiles use the small-field regions of the actio
 
 **Corollary C.** For every label reached by a history and every level $`1\le j\le k`$, $`\Lambda^{\mathsf a}_j`$ is a union of level-$`j`$ cells. So is $`\Lambda^{\mathsf a}_j`$ together with the standing islands of level $`j`$. Hence, read on the action sequence, the first case of your rule at lines 1475-1477 always applies: $`\mathsf s_j=M\check R_j`$.
 
-*Proof.* The first sentence is Lemma C (i). This includes the cases $`\Lambda^{\mathsf a}_j=\emptyset`$ and $`\Lambda^{\mathsf a}_j`$ equal to the torus. The second sentence adds unions of level-$`j`$ cells, by Lemma C (ii). For the last sentence we read "those cubes" at line 1475 as the level-$`j`$ cells, the cubes of side $`M\check R_j`$ of the level-$`j`$ grid. Line 62096 calls the cells of level $`t`$ "$`M\check{R}_t`$-cubes of level $`t`$". With this reading the first case applies. $`\square`$
+*Proof.* The first sentence is Lemma C (i). This includes the cases $`\Lambda^{\mathsf a}_j=\emptyset`$ and $`\Lambda^{\mathsf a}_j`$ equal to the torus. The second sentence adds unions of level-$`j`$ cells, by Lemma C (ii). For the last sentence we read "those cubes" at line 1476 as the level-$`j`$ cells, the cubes of side $`M\check R_j`$ of the level-$`j`$ grid. Line 62096 calls the cells of level $`t`$ "$`M\check{R}_t`$-cubes of level $`t`$". With this reading the first case applies. $`\square`$
 
 Your text itself states the weaker form for the action regions. Line 62245: "$`\Omega^{\boldsymbol\nu}_l`$ is a region for $`\pi_l`$", and "The action regions are unions of coarse cubes". By Corollary C, the case $`\mathsf s_j=M`$ of line 1476 does not occur on the action sequence.
 
 ## What this note does not show
 
-- (G) is a condition that your text does not state. Lemma W, Corollary S and the existence part of Lemma K are proved under (G). Example F shows that the frame definition alone does not suffice, for $`r=2`$, $`L=13`$, $`\gamma\ge e^{-1}`$ and $`\bar B\ge e^{14}-e^5`$. Example F does not show that a ceiling on $`\gamma`$ which does not depend on $`\bar B`$ fails. It uses one pair $`(r,L)`$, and your text may fix other values.
+- (G) is a condition that your text does not state. Lemma W, Corollary S and the existence part of Lemma K are proved under (G). Example F shows that the frame definition alone does not suffice, for $`r=2`$, $`L=13`$, $`0\le\underline\lambda\le12`$, $`c_5\ge0`$, $`e^{-1}\le\gamma<e^{-1/2}`$ and $`\bar B\ge e^{14}-e^5`$. Example F does not show that a ceiling on $`\gamma`$ which does not depend on $`\bar B`$ fails. It uses one pair $`(r,L)`$, and your text may fix other values.
 - We do not know whether the ceiling behind "$`\gamma`$ is small" at line 62001 is meant to cover one window. If it is, (G) is a written form of it.
 - Lemma C takes your rules (R-STEP), (R-FATE), (R-WAIT), (R-NEST), (R-LAB) and (R-ACT) as stated, and uses reading (K). It does not prove them again. (R-STEP) cites "(119, p. 256)" at line 62080.
-- Corollary C uses one reading of "those cubes" at line 1475.
+- Corollary C uses one reading of "those cubes" at line 1476.
 - The note does not treat the uses of these statements elsewhere in your text, beyond the lines quoted.
 - No step uses a computation. Each step is an inequality between displayed numbers or an inclusion between unions of grid cells, so that a proof assistant can take it.

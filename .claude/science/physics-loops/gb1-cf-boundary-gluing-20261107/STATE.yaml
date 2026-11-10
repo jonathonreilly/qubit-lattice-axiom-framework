@@ -2,7 +2,7 @@ goal: Simple principles for base reality, with physical laws derived toward a TO
 operation: bounded research
 base: 1e0d3b58dcda7f83152b0bb51729260247454d65
 instruction_branch: 56c5c0ab64f532c5784e895b2f9aa6894fa334e0
-parent_research_head: 69c9765a6c29470f541b428c21df41ea909357b8
+parent_research_head: 95a40545b05ba3039a83819cf41158d049e2596a
 branch: physics-loop/gb1-cf-pair-20261107
 pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10142
 pr_draft: false
@@ -11,44 +11,44 @@ actual_current_surface_status: conditional-support
 target_claim_type: bounded_theorem
 trace_class: frontier_discovery
 reachability_to_target: partially_closes
-active_route: 'Neighborhood detector: actual permanent outcome formation, operational effects and physical
-  regrouping without Born or axiom changes'
-bounded_result: Finite detector and coarse writer constructed; linear channels give a finite commuting
-  effect bridge; normalized squared channels defeat nominal cross-program labels; classical-label access
-  limits quantum identification
-independent_check: Fresh restricted-context proof and separate global oracle, supervisor-executed; exposed
-  source and exact delta reviews; same provider/family limitations, backend unattested; no formal audit
+active_route: 'Carrier-only detector: common history kernels, distinguishability, native isolation and
+  effects without Born or quantum state geometry'
+bounded_result: Common-kernel theorem and sharp TV bounds; native label-isolated classifier and grouping
+  writer; conditional classical effects and arbitrary finite carrier-code capacity
+independent_check: Fresh restricted-context proof; complete exposed source check found and corrected a
+  trace equality and target-pattern ambiguity; final exact delta check complete; same provider/family
+  and unattested backend limits
 note: docs/SU2_NEIGHBORHOOD_PROPAGATION_RECORD_READOUT_BOUNDED_THEOREM_NOTE_2026-11-08.md
 note_sha256: 8ae0959b5c1f294cc7a9be67c2818f53c25ce2410d1103ac13054bd325d82b23
 previous_boundary_note: docs/SU2_FINITE_BOUNDARY_FLUX_ASSOCIATIVE_GLUING_BOUNDED_THEOREM_NOTE_2026-11-07.md
 previous_boundary_note_sha256: c2a8da27cfc860b2b5912e87251622ee69ee452aaa39a1aecf882f220b3d9876
-execution: 178 specified cases, 3268 reachable states and 87880 support entries accepted by independent
-  oracle; three code faults and three certificate tampers rejected; numeric leases released
+execution: Pure hand proofs and source/recovery checks; no new numerical job, numerical runner or numeric
+  lease
 failed_routes: data-first computational recording erases the phase and dephased J3 leaves half the code;
   previous finite capacity and origin witnesses retained; two decoded flags have rank four off-code; unmasked
   future pointers leave dirty work; a pure-clean binary pointer does not realize the six-edge CP mixture;
   arbitrary unknown pre-herald input does not factor through fixed R; unequal outcome hazards retain no-event
   age; initial fair fallback was constant at T=0 and is repaired
-native_axiom_bridge: Actual operational effects and grouping realized for a supplied finite law; full
-  noncommuting quantum effect map, restricted input interface and physical law selection remain open
+native_axiom_bridge: External preparation-label influence excluded for a supplied finite record law; equal
+  complete carrier laws have equal detector histories; quantum preparation/readout geometry remains open
 framework_stance: Seek the right economical foundation and derived laws; preserve counterexamples; do
   not retrofit axioms to a desired quantum formalism
-next_action: Specify a carrier-only interface without readable preparation labels; test its distinguishability
-  and effect geometry without installing a quantum state space or trace law
-checkpoint: detector_refinement/HANDOFF.md
-verification: detector_refinement/verification.json
-recovery: detector_refinement/HANDOFF.md; frozen primary/independent sources, exposed reviews, original
-  RESULT and exact clarification patch; previous packets unchanged
+next_action: Justify restrictions on preparable carrier contents and physically accessible readout tests;
+  test the resulting capacity/effect geometry before identifying a quantum sector
+checkpoint: carrier_interface/HANDOFF.md
+verification: carrier_interface/verification.json
+recovery: carrier_interface/HANDOFF.md; frozen primary/independent proofs, exposed source finding, archived
+  reviewed RESULT and exact correction patches; previous packets unchanged
 repository_authority_edits: []
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 axiom_change_landed: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10143
-current_probe: detector_refinement/RESULT.md
-current_probe_status: conditional-support; finite process and exact diagnostics checked; full quantum
-  identification remains open
+current_probe: carrier_interface/RESULT.md
+current_probe_status: conditional-support; independent derivation, complete source review and correction
+  delta check complete; quantum operational geometry remains open
 locality_reassessment: native_law/luna_reassessment/manifest.json
 prior_readout_verification: native_law/outputs/verification.json
-current_probe_sha256: 7f0d0aa5c0c6316c3066882de71734463a9260c50530711ae8cf38f75b5ee0b2
+current_probe_sha256: f980d1e29c0b6c4d5fe64becd7fa3a7abcf0f7e5ed7fafb517f439fc63eb0ff3
 prior_vertex_verification: native_records/verification.json
 preparation_history_parent: 40bf8ab61128cfa0ff7c2e99663300d4ee2b5c1f
 prior_preparation_history_verification: preparation_history/verification.json
@@ -56,25 +56,25 @@ prior_local_implementation_verification: local_implementation/verification.json
 strong_physical_closure: false
 axiom_model_result: explicit legal domain {absent,0,I}^Z3, positive neighbor-dependent support, finite-ancestry
   existence, distinct a=1/4 and a=3/4 laws
-foundational_test_checkpoint: Actual normalized detector histories and physical coarse record constructed;
-  regrouping and nominal quantum effect identification separated
+foundational_test_checkpoint: Label-access gap closed on a prepared isolated domain; carrier distinguishability
+  obeys data processing, while the chosen decoder permits classical capacities beyond a lone qubit
 prior_autonomous_verification: autonomous_runtime/verification.json
 prior_autonomous_implementation_conditions: chosen quantum/Born/gate and atomic joint jump law, fixed
   record-indexed seed, no extra background evolution, enlarged T+1-site clock, budget-dependent finite
   range
-implementation_conditions: Prepared 25-record seed, scalar code/decoder, radius-16 rule, independent equal
-  exponential clocks, latching and linear/squared channel allocation; comparison dictionaries supplied
-  separately
+implementation_conditions: Complete finite carrier input; preparation laws; common apparatus program,
+  placement and conditional correlations; specified joint history law; scalar code/decoder, radius-six
+  activation and source-independent clocks; optional mixture protocols
 hypothetical_axiom_status: null
 admitted_observation_status: null
 conditional_surface_status: conditional-support
-claim_type_reason: Conditional finite process construction, exact effect identities and explicit failed
-  identifications; no quantum foundation or axiom amendment adopted
+claim_type_reason: Closed conditional information and native-process proofs plus explicit counterexamples
+  to weaker premises; no Born law or quantum geometry adopted
 prior_foundational_bell_verification: foundational_bell/verification.json
 main_verified_at_delivery: bf92a1d763030836ed55631d5d7a7ef3b288f284
 prior_joint_record_verification: joint_record_law/verification.json
-axiom_revision_authorization: 'Owner correction: do not update the axiom until the change is proved to
-  work'
+axiom_revision_authorization: 'Current owner instruction: keep the axioms unchanged; no amendment authorized
+  in this task'
 axiom_proposal_branch: codex/quantum-record-formation-20261109 remains clean at main; uncommitted proposal
   preserved as research snapshots
 axiom_proposal_pr: null
@@ -88,3 +88,7 @@ prior_outcome_implementation_conditions: Tensor-positive quantum state, local co
 prior_probability_bridge_verification: probability_bridge/verification.json
 detector_failed_identifications: q=2 nominal I/2 label gives coarse 1/2 versus 1/3 across rebuilt devices;
   Pauli labels fail positivity; entire label-accessible interface requires d>=4 under density/POVM representation
+prior_detector_refinement_verification: detector_refinement/verification.json
+carrier_interface_failed_premises: Equal apparatus marginals alone allow XOR leakage; moving a source
+  outside the initial neighborhood does not prove lifetime isolation; a finite output alphabet and a finite
+  preparation menu constrain different capacities

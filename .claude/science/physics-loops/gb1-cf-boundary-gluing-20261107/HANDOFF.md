@@ -1,12 +1,13 @@
 # Current campaign handoff
 
-The current checkpoint is STATE.yaml and [detector_refinement/HANDOFF.md](detector_refinement/HANDOFF.md).
-The owner-selected task is the neighborhood detector and refinement bridge
-without Born or axiom changes. A supplied finite record process now forms
-outcomes and a physical coarse output; full quantum effect identification
-remains open. The quantum axiom proposal is deferred. Earlier finite gauge,
-outcome and probability packets remain historical conditional evidence.
-The current main identity is recorded in the checkpoint.
+The current checkpoint is STATE.yaml and [carrier_interface/HANDOFF.md](carrier_interface/HANDOFF.md).
+The owner-selected task is a detector without preparation-label access,
+with no Born or quantum state geometry assumed and no axiom changes.
+The finite model now isolates the source and supplies a common carrier-to-
+history law, operational effects and sharp distinguishability bounds.
+Physical quantum capacity and effect geometry remain unselected. The older
+finite gauge, outcome, probability and detector packets retain their original
+conditional evidence; the quantum axiom proposal remains deferred.
 
 # Original finite boundary flux and gluing milestone
 

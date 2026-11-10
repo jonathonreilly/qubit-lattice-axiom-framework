@@ -1,0 +1,13 @@
+--- a/RESULT.md
++++ b/RESULT.md
+@@ -176,3 +176,4 @@
+-cubic frame, all six mandatory DETECTOR seed records at their decoded
+-locations and values, and no extra visible records. The external source
+-record is never a seed requirement. At x=f assign Dirac content g(a)I when
++cubic frame and all six mandatory DETECTOR seed records at their decoded
++locations and values. Require equality to the complete target-specific
++pattern below; no records beyond that pattern may be visible. The external
++source record is never a seed requirement. At x=f assign Dirac content g(a)I when
+@@ -285 +286 @@
+-    1=tr(rho_a E_a)<=tr(E_a),   K<=sum_a tr(E_a)=d.
++    1=tr(rho_a E_a)<=tr(E_a),   K<=sum_(a=0)^(K-1) tr(E_a)<=d.

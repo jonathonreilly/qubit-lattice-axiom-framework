@@ -1,0 +1,23 @@
+{
+  "algorithm": "sha256",
+  "scope": "all packet files except this manifest",
+  "files": {
+    "ASSUMPTIONS.md": "9e06e542c393f386680c3f28d3929265c83aa74d1ee1507cea176b93ec173bc5",
+    "AUTHOR_CHECK.md": "3da497437ca5d0fadc2865f3cdacdf8d4d7942190e7ccadeb6b5d99db132cbf4",
+    "DELTA_CHECK.md": "909ee73efe784b0563a0b8d03c5a4c455d20e69b3dcf003e912e749bbe3094f6",
+    "HANDOFF.md": "6fba8411a4924d8ba0ac52e3d8efc8eec42d6c47e1a31737ccdb4289221b24f4",
+    "INDEPENDENT.md": "9ae83aa0dcc5b9fd4cf926526f2201ce0b72a56c1533eb0e341f3122ae8fb7a5",
+    "INDEPENDENT_PROVENANCE.md": "e1af91795b530263420b4483a43875f6d25d0dbac80359cb3efaa61d3752f54f",
+    "NO_GO_DISCIPLINE_CHECKLIST.md": "2f277fe840a00d012f1b2f09cd77aa44c28b2d93d0c98f4036de6abf66cbc593",
+    "PRIMARY.md": "a9a93fbcac940b5619f35ff960e5a761465d7b61bd51845ee1c052b2f6926e59",
+    "RESULT.md": "f980d1e29c0b6c4d5fe64becd7fa3a7abcf0f7e5ed7fafb517f439fc63eb0ff3",
+    "SEARCH.md": "a67789974499a71b299b2b4744c4890218951ab4f1e904473dcc77787c4e10b9",
+    "SOURCE_CHECK.md": "b52b979ded08be19d471773c97d1fdffa7fa1cc2d902220693e8d9e49030153b",
+    "outputs/primary_to_result.patch": "322f9f07781f2f514ba38016bbab4b1017eca5e64505e41be0aaadce6a66bb0d",
+    "outputs/repo_search.txt": "2390f3cb770c96dff002ecd46d93e2ecbe7d828d82e8ce045d90f0ab324de551",
+    "outputs/result_before_source_fixes.md": "ad12e660846dc8d1ccfa679f9842a7a37a8af1935293dd81cbafa6ac8a65901e",
+    "outputs/source_fixes.patch": "33aa97692bce9e76e4af767848cceaf41a848a27bbc2f45343f029b5ee14fcbb",
+    "outputs/vocabulary.json": "03106a48f187644b2a9c63f59df83c824054f7c53f64b1d91c780aa9f430aa45",
+    "verification.json": "f3346e41b4b8ab7dbb553de60b859af81de78425077ea3fa3001d1b86dee36f1"
+  }
+}

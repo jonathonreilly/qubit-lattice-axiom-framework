@@ -1,0 +1,170 @@
+--- a/RESULT.md
++++ b/RESULT.md
+@@ -3 +3,2 @@
+-2026-11-09 local date. Frozen supervisor proof before independent comparison.
++2026-11-09 local date. Integrated research source; comparison receipts are kept separately.
++PRIMARY.md preserves the original frozen proof.
+@@ -7 +8 @@
+-Claim type: bounded_theorem. Proposed status: conditional-support.
++Claim type: bounded_theorem. Status: conditional-support; not audited.
+@@ -16 +17,4 @@
+-program, H its accessible record history and B a declared output event.
++context (program, apparatus placement and orientation), H its accessible
++record history and B a declared output event. Those apparatus data are held
++fixed across the preparations being compared; spatial covariance alone does
++not prevent a preparation-dependent placement from carrying information.
+@@ -33,3 +37,4 @@
+-For finitely many steps, multiply the successive conditional kernels and
+-sum over a. Every factor is independent of lambda, so the resulting K_d is
+-independent of lambda. Adaptive controls also fit when they depend only on
++For finitely many steps, multiply the successive measurable conditional
++kernels and integrate over apparatus variables. Sums are integrals when
++waiting times or apparatus variables are continuous. Every factor is
++independent of lambda, so the resulting K_d is independent of lambda. Adaptive controls also fit when they depend only on
+@@ -80,2 +85,3 @@
+-Perfect discrimination requires disjoint input supports; it is sufficient
+-when all indicators can be tested. Repeated copying cannot evade this bound.
++Perfect discrimination that always returns a conclusive answer requires
++disjoint input supports; it is sufficient when all indicators can be tested.
++Repeated copying cannot evade this bound.
+@@ -87,0 +94,7 @@
++
++Postselection is different. For mu=(1/2,1/2,0) and nu=(0,1/2,1/2), reporting
++only carrier symbols 0 or 2 identifies the source without error on accepted
++trials, but rejects half the trials under either preparation. TV is 1/2;
++the best always-answering success probability is 3/4. A failure flag must
++remain in the full outcome law; conditioning on acceptance changes the
++ensemble and need not preserve the same TV bound or affine normalization.
+@@ -113 +126,2 @@
+-is tested only by its individual bits and their mixtures/complements, the
++uses a single-test family consisting only of individual bits and their
++mixtures/complements, the
+@@ -115 +129,2 @@
+-statistics despite different carrier laws. Allowing the parity test separates
++statistics despite different carrier laws. Allowing a joint read of both
++bits or the parity test separates
+@@ -120 +135 @@
+-## 4. A native family with a genuinely inaccessible source label
++## 4. A native family with an isolated source label
+@@ -159,5 +174,7 @@
+-Define the local rule at any site x as follows. From records at
+-0<||y-x||_1<=6, require exactly one of each header, a proper cubic frame,
+-all mandatory seed records at their decoded locations and values, and no
+-extra visible records. Enable x=f with Dirac content g(a)I when its visible
+-configuration is precisely the six-record detector seed. Enable x=z with
++Define the content kernel at any site x before applying an occupancy mask.
++From records at 0<||y-x||_1<=6, require exactly one of each header, a proper
++cubic frame and all six mandatory DETECTOR seed records at their decoded
++locations and values. Require equality to the complete target-specific
++pattern below; no records beyond that pattern may be visible. The external
++source record is never a seed requirement. At x=f assign Dirac content g(a)I when
++its visible configuration is precisely that detector seed. At x=z assign
+@@ -165,2 +182 @@
+-record. Each enabled absent site has rate one. All other sites have rate
+-zero and content law
++record. All other pattern/site conditions give the fallback content law
+@@ -172,2 +188,4 @@
+-invalid parses also take this fallback. Formation never acts on an occupied
+-site. The clock law uses independent exponential waits, with no correlation
++invalid parses also take this fallback. Formation rate is one exactly when
++one of the two Dirac patterns matches AND x is absent; it is zero otherwise.
++Occupancy never changes the center-excluded content kernel used to test old
++record support. The clock law uses independent exponential waits, with no correlation
+@@ -189,2 +207,2 @@
+-Every old record retains admissible support. Removing a seed record from
+-its own neighborhood leaves a mandatory hole, so the fallback supports it.
++Every old record retains admissible support. Removing a detector seed record
++from its own neighborhood leaves a mandatory hole, so the fallback supports it.
+@@ -199,2 +217,3 @@
+-condition and keep the detector seed/program otherwise fixed. The external
+-source record may contain lambda, but every detector transition, content and
++condition and keep the detector seed/program, placement and orientation
++otherwise fixed. Applying a common spatial transformation gives another
++experiment with the same result. The external source record may contain lambda, but every detector transition, content and
+@@ -210 +229,6 @@
+-h(g(a)), with both the carrier and fine record retained. Therefore
++h(g(a)), with both the carrier and fine record retained. The effects described
++next refer to these specified output questions; reads of other detector
++records can enlarge the allowed effect family. The common-kernel bound
++already covers that larger record history. No timestamp readout is supplied:
++the model's waiting times are mathematical variables, not automatically
++readable records. Therefore
+@@ -214,2 +238,18 @@
+-For every subset S of the K-symbol carrier alphabet, take M=2, g=1_S and
+-h(0)=0,h(1)=1. One rule with these fixed K,M realizes every such program.
++For a fixed program, observing only its fine/coarse outputs distinguishes
++carrier laws exactly through the pushed-forward distribution
++p_lambda(b)=sum_(g(a)=b) mu_lambda(a). The coarse record is a function of the
++fine record. For two preparations, the exact fine-output distance is
++
++    TV(g_*mu,g_*nu) = (1/2) sum_b |sum_(g(a)=b) [mu(a)-nu(a)]|.
++
++It equals input TV exactly when no g-fiber combines a strictly positive and
++a strictly negative input difference. This is the equality condition in the
++triangle inequality applied separately to each fiber. The same formula with
++h composed with g gives the coarse-output distance. Timing is a common
++independent factor and changes neither distance. Additional direct reads of
++the carrier would be a larger interface; they are not needed for the copying
++or programmed-indicator tests below.
++
++For every subset S of the K-symbol carrier alphabet and any fixed M>=2,
++take g=1_S and h(0)=0,h(1)=1, setting unused h entries to zero. One rule
++with these fixed K,M realizes every such program.
+@@ -223,3 +263,5 @@
+-With M=K and g(a)=a, one fixed program copies the incoming symbol to the
+-fine output while preserving the carrier. It perfectly distinguishes K
+-point-prepared carrier values without accessing the source label. For every
++Choose T>=K and include the K point preparations mu_a=delta_a. With M>=K
++and g(a)=a, one fixed program copies the incoming symbol to the fine output
++while preserving the carrier. It perfectly distinguishes those K prepared
++carrier values without accessing the source label. An arbitrary previously
++fixed preparation family need not contain these point preparations. For every
+@@ -232,0 +275,22 @@
++For a concrete separation between signal and preparation label, use T=2K
++procedures with mu_lambda=delta_(floor(lambda/2)). The copier distinguishes
++K different carrier contents, but each pair of external procedure labels is
++indistinguishable by the detector. The same law permits overlapping carrier
++laws, with their discrimination limited by section 2. It does not recover
++the preparation procedure merely by renaming its inaccessible label.
++
++As an OPTIONAL quantum-representation test, suppose these K point inputs
++could be represented by densities rho_a on C^d and one fixed POVM E_b with
++tr(rho_a E_b)=delta_(a,b). Then 0<=rho_a<=I implies
++
++    1=tr(rho_a E_a)<=tr(E_a),   K<=sum_(a=0)^(K-1) tr(E_a)<=d.
++
++For K>2 this interface cannot be faithfully represented by a lone qubit
++without extra accessible information. This is a consequence of the chosen
++scalar code and decoder, not a proof that a physical quantum sector is
++impossible. In this example the apparatus starts identically for every a,
++and the source label cannot affect its records; the obstruction in the
++comparison is no longer caused by access to that external label. The matrix
++pairing is used only to test the proposed representation, never to produce
++the detector's probabilities.
++
+@@ -241 +305,2 @@
+-available, every effect e in [0,1]^K is realized. Choose a random subset S
++available, it provides one sufficient way to realize every effect e in
++[0,1]^K through the specified coarse output. Choose a random subset S
+@@ -255,3 +320,6 @@
+-p_b(a). A fixed h groups those actual outputs. In particular e,f with
+-e+f<=1 have a common three-outcome realization with probabilities e,f,1-e-f.
+-Thus full classical effect addition and refinement are realizable under
++p_b(a). A fixed h groups those actual outputs. For a fixed M>=3, any e,f
++with e+f<=1 have a common three-outcome realization with probabilities
++e,f,1-e-f (all remaining fine labels have probability zero). Choosing
++M>=max(K,3) permits copying, all indicators and this refinement under one
++fixed K,M rule. Arbitrary menus larger than that fixed M are not claimed.
++Thus full classical effect addition and this pair refinement are realizable under
+@@ -277,0 +346,11 @@
++
++The finite total-variation testing identity is standard; see Yihong Wu,
++[Information-theoretic methods for high-dimensional statistics, section 4.3,
++Theorem 4.3](https://www.stat.yale.edu/~yw562/teaching/it-stats.pdf).
++Only the indexed theorem extract was accessible during this task; the full
++PDF fetch failed. The finite case and the required detector factorization
++are proved here, rather than imported as unchecked physical premises.
++[ASSUMPTIONS.md](ASSUMPTIONS.md) records the inputs and
++[NO_GO_DISCIPLINE_CHECKLIST.md](NO_GO_DISCIPLINE_CHECKLIST.md) limits the
++comparison claims. No novelty is asserted for data processing, classical
++statistical effects, randomization of deterministic maps, or the dimension bound.

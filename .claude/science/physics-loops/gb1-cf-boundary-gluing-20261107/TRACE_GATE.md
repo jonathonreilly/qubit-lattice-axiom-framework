@@ -1,6 +1,29 @@
 # Trace to GB1-CF
 
-## Current neighborhood detector and refinement, 2026-11-09
+## Current carrier-only detector, 2026-11-09
+
+~~~yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: What distinguishability and effects follow when the detector cannot access the preparation label, without Born or quantum state geometry?
+source_of_blocker_text: user_goal
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: Justify physically preparable carrier contents and accessible tests, then test their operational geometry rather than assuming a quantum state space.
+~~~
+
+A common history kernel follows from a complete carrier interface and a
+source-independent apparatus/process. Exact native birth confinement now
+realizes that boundary, including no later relay from the source label.
+The kernel gives ordinary effect addition and sharp total-variation limits.
+The chosen scalar decoder still supports arbitrary finite classical codes;
+optional independent program mixtures give the classical effect cube and
+pair refinements within a sufficiently large fixed fine-output alphabet.
+These close the selected interface question conditionally, while quantum
+capacity, preparation/readout selection and the full probability bridge
+remain open. No axiom change or universal quantum obstruction is proposed.
+
+## Previous neighborhood detector and refinement, 2026-11-09
 
 ~~~yaml
 trace_class: frontier_discovery

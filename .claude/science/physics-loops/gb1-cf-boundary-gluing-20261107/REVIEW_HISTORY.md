@@ -147,3 +147,49 @@ Conformance scope for this bounded detector block:
 12. Focused gates and final source identities are in verification.json. CLI
     vocabulary filtering is supplemented with direct coverage. No full
     pipeline, formal landing panel or audit is implied.
+
+## Carrier-only detector follow-up, 2026-11-09
+
+The primary proof was frozen before the fresh restricted-context checker
+received the raw model and neutral questions. Its full independent proof
+and checkpoint are preserved unchanged. The supervisor read all arguments,
+including the short passage omitted by an initial combined tool display.
+The checker separately reviewed the complete integrated RESULT/ASSUMPTIONS.
+That review found an incorrect trace equality when unused outcomes remain
+and an ambiguous global no-extra-records clause. Both were corrected and
+verified by a bounded delta check with exact reversible recovery. The
+findings are preserved; no clean first-pass result is claimed.
+
+Conformance scope for this pure proof block:
+
+1. Self-containment: the history-kernel theorem, native local law, all-site
+   confinement, complete old-record support, effects and testing proofs are
+   written out. Governing sources are unchanged current-main files.
+2. Execution/cache: no numerical job or production runner was created or
+   executed. Hash, text, link and recovery operations are source
+   integrity evidence only, not numerical physics or cache freshness.
+3. Claim honesty: bounded_theorem / conditional-support. Preparation laws,
+   apparatus context, decoder, local birth law and mixtures stay explicit.
+4. Negative scope: finite counterexamples and comparison bounds only. The
+   N1-N8 sidecar claims no exhaustive-negative PASS or required axiom change.
+5. Open obligations: physical preparation/readout restrictions, selected
+   dynamics, quantum geometry/composition and the continuum bridge remain open.
+6. Mathematical checks: TV and fiber bounds, all support cases and parameter
+   limits are analytic. No finite sample count is offered as a universal proof.
+   The independent matrix argument uses orthogonal supports; the author uses
+   trace counting. Shared elementary kernel/TV methods remain disclosed.
+7. Completeness/recovery: original primary, independent proof/provenance,
+   source and delta reviews, corrected source, exact patches, assumptions,
+   search record and current handoff are carried in carrier_interface.
+8. Literature: the accessible Wu theorem extract is credited, and the failed
+   full-PDF access is disclosed. The finite theorem is independently re-proved.
+   Historical repo reads supply context, not unverified mathematical premises.
+9. Artifact structure: a research proof packet, with no promoted production
+   theorem-note status or audit authority inferred from its packaging.
+10. Foundation: no axiom, primitive registry, shared instruction or audit edit.
+11. Counts/limits: eight detector sites plus one external source, two births,
+    fixed M bounds and required point preparations are explicit. A fixed
+    program, all programs, and optional mixtures have different interfaces.
+12. Final identities, direct vocabulary coverage, local links, recovery and
+    whitespace guards are recorded in verification.json. Formal landing
+    review, audit, numerical replay and proof-assistant checks were not run.

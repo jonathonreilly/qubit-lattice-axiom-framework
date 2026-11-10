@@ -80,7 +80,8 @@ limitation; an author's self-review is not independent confirmation.
   a negative claim. The reviewer must invoke the `no-go-discipline` skill
   and walk N1-N8 against the branch content (see
   [`docs/ai_methodology/skills/no-go-discipline/SKILL.md`](../../no-go-discipline/SKILL.md)):
-  N1 alternative-route enumeration (≥5 distinct routes), N2
+  N1 alternative-route enumeration (explicit family, every route inside it
+  closed, no route count), N2
   wall-independence audit, N3 hidden-wall scan, N4 residual matching,
   N5 rhetoric audit (per-element / per-mode / per-block / lattice-wide
   resolutions), N6 partial-closure path scan (convention-reframe vs new

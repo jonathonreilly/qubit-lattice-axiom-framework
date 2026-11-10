@@ -1259,7 +1259,7 @@ Answer these before choosing a verdict:
   target-equivalent to, or stronger than the headline claim?
 - Are numerical values current with the runner and the source note?
 - Would a hostile specialist be able to reject the conclusion without making a mistake?
-- If the claim is a `no_go`, a wall-naming `bounded_theorem`, or its rationale would cite walls: have at least 5 distinct attack routes against the no-go been considered (N1)? Are the named walls actually independent (N2)? Are any hidden in "bridge context" / "we assume" / "standard QFT" / "registered" prose (N3)? Do cited witness residuals match the claim's residual (N4)? Are "X is not a Y-fact" phrases verified at every named resolution (N5)? Is the "needs new axiom" framing actually a convention-reframe / labeling ratification (N6)? Can a steelman against the no-go be made convincing (N7)? Has a structurally similar prior wall been retired by a mechanism not considered here (N8)? See `no-go-discipline` skill.
+- If the claim is a `no_go`, a wall-naming `bounded_theorem`, or its rationale would cite walls: is the family ruled out stated with explicit quantifiers, and is every admissible route inside it closed (N1; no number of routes is required)? Are the named walls actually independent (N2)? Are any hidden in "bridge context" / "we assume" / "standard QFT" / "registered" prose (N3)? Do cited witness residuals match the claim's residual (N4)? Are "X is not a Y-fact" phrases verified at every named resolution (N5)? Is the "needs new axiom" framing actually a convention-reframe / labeling ratification (N6)? Can a steelman against the no-go be made convincing (N7)? Has a structurally similar prior wall been retired by a mechanism not considered here (N8)? See `no-go-discipline` skill.
 
 ## Law-Domain Audit Procedure
 
@@ -1327,7 +1327,7 @@ survives independently, state that narrow boundary in `claim_scope`.
 
 For claims with `claim_type: no_go`, `bounded_theorem` whose source note names walls/open conditions, or any verdict that would record walls in `verdict_rationale`, apply the No-Go Discipline gate (`no-go-discipline` skill, N1-N8) before recording. Any FAIL forbids `audited_clean`; instead, choose the non-clean verdict whose `verdict_rationale` reflects the corrected narrower claim scope. Specifically:
 
-- if N1 fails (fewer than 5 distinct attack routes considered against the no-go), record `audited_conditional` with `notes_for_re_audit_if_any: scope_too_broad — alternative attack routes not exhausted`;
+- if N1 fails (the family ruled out is not stated with explicit quantifiers, or an admissible route inside it is open or untested), record `audited_conditional` with `notes_for_re_audit_if_any: scope_too_broad — family not stated explicitly, or a route inside it not closed`;
 - if N2/N3 fails (walls not independent, or hidden walls promoted), record `audited_conditional` with the collapsed/expanded honest wall list;
 - if N4 fails (witness-residual mismatch in cited authorities), record `audited_conditional` with `notes_for_re_audit_if_any: missing_dependency_edge — cited witness residual does not match the claim residual`;
 - if N5/N6 fails (over-broad phrasing, or convention-reframe misclassified as new axiom), record `audited_renaming` if the failure is purely scope/framing, or `audited_conditional` with a sharper wall list;

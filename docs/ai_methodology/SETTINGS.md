@@ -18,7 +18,7 @@ here with its date. Each campaign's retrospective says which settings stay.
 | Published work | Searched once per route or step and put on record; built on at once with credit as `argued`; verified in parallel | 2026-11-02 |
 | Lane output | Closed proofs or explicit counterexamples; lanes run to closure; route choices recorded with reasons | 2026-11-02 |
 | PR state | Decided: a landed PR shows as merged and a closed PR means nothing from it is on `main`. Not yet in force: `land` still pushes the reviewed commits and closes the PR, and its contract check requires that. Until both change, read a PR's landing record | 2026-11-10 |
-| Negative-claim packet | Decided: the N1 to N8 packet becomes a checker's aid and an obstruction is judged as a theorem about an explicit family. Not yet in force: the audit gate still requires the packet with its five-route count, and landing still checks the N5 lines | 2026-11-10 |
+| Negative-claim packet | Decided: the N1 to N8 packet becomes a checker's aid and an obstruction is judged as a theorem about an explicit family. In force: the audit gate counts no routes or route classes; a passing N1 needs every listed route closed (gate) and the family stated with explicit quantifiers (auditor). Not yet in force: the audit gate still requires the packet, and landing still checks the N5 lines | 2026-11-10 |
 
 ## Method defaults (2026-11-02)
 

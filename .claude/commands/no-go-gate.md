@@ -24,7 +24,8 @@ routes fail; this gate makes that gap explicit.
 1. Read the skill file above before acting, and perform the skill freshness
    check in `docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`.
 2. Walk N1–N8 in writing against the actual claim text: alternative-route
-   enumeration (≥5 normalized mathematical approach families),
+   enumeration (the family ruled out, stated with explicit quantifiers, and
+   every route inside it closed; no number of routes is required),
    wall-independence audit, hidden-wall scan, residual matching, rhetoric
    audit, partial-closure path scan, concrete-mechanism steelman, cross-cycle
    echo.
@@ -40,8 +41,8 @@ routes fail; this gate makes that gap explicit.
 
 ## Non-Negotiables
 
-- Do not fabricate coverage to pass a claim. Narrow scope alone does not
-  satisfy the current five-route packet requirement; a packet limitation is
-  distinct from the validity of the mathematical theorem.
+- Do not fabricate coverage to pass a claim. No number of routes is required,
+  so never add a route to reach one; a packet limitation is distinct from the
+  validity of the mathematical theorem.
 - A FAIL means demote and reship narrower — never ship the original framing
   with the checklist attached as decoration.

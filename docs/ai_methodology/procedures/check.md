@@ -109,7 +109,7 @@ published route removes is not the physical one claimed.
 Interim rule. The N1 to N8 packet is a checker's aid: prompts, never a verdict.
 Until the validators change it stays a requirement of `land` (answers committed
 with the note; five N5 lines in the runner's cached output, checked by script)
-and `audit` (the structured packet and its five-route quota). A check neither
+and `audit` (the structured packet, with no route quota). A check neither
 writes nor grades it: never `wrong` for a missing or short packet, never
 `right` for a passing one, never an invented route family. Note its state
 under `## Steering`; a packet that cannot meet the schema stays pending.

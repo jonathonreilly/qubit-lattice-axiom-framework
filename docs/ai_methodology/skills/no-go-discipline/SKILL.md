@@ -60,8 +60,9 @@ the PR body or a review verdict is a courtesy, never the record.
 
 ### N1 — Alternative route enumeration
 
-Name at least **5 distinct attack routes** against the claim being declared
-closed. For each route, give:
+State the family the claim rules out, with explicit quantifiers: which
+objects, which premises, and which resolution (element, site, mode, block or
+lattice). Then list the attack routes inside that family. For each route, give:
 
 - one-sentence statement of what the route would attempt;
 - one-sentence statement of why the route fails (with retained-authority
@@ -76,21 +77,20 @@ object/formulation, load-bearing mechanism or invariant, or terminal proof
 obligation. Different agents, notation, or artifact types do not make distinct
 routes.
 
-**Packet failure condition:** fewer than 5 distinct routes cannot receive
-packet PASS under the current schema. List the real routes and distinguish
-the submission limitation from the theorem's mathematical validity. Never
-manufacture route families or describe the count itself as disproof.
+**Failure condition:** the family is not stated with explicit quantifiers, or
+an admissible route inside it is open or untested. An escape outside the
+stated family refutes nothing.
 
-This five-family minimum is the current packet validator's procedural rule,
-not a proof of exhaustiveness. Do not manufacture families or infer that a
-mathematical theorem is false because its packet cannot meet the quota. Report
-the packet limitation separately; do not claim PASS. The rule must be changed
-in the validator and auditor schema before using a different packet contract.
+No number of routes is required. A count of routes or of route classes is not
+evidence that a family is ruled out, so never add a route to reach a number.
+The packet validator no longer requires five route classes (owner decision
+2026-11-10); it still requires every listed route closed and bound to evidence.
 
-**Why 5:** small enough to be achievable in one cycle, large enough to force
-agents off the "I tried one obvious route" failure mode that produced three
-out of four overclaims in the v-scale-planck-convention campaign (see
-[`references/case-studies.md`](references/case-studies.md)).
+**Why an explicit family:** it is the guard against the "I tried one obvious
+route" failure mode that produced three out of four overclaims in the
+v-scale-planck-convention campaign (see
+[`references/case-studies.md`](references/case-studies.md)): one tested route
+closes only the family that route spans.
 
 ### N2 — Wall-independence audit
 
@@ -335,8 +335,8 @@ The cases illustrate:
 
 ## Non-Negotiables
 
-- N1 requires 5 normalized approach families, not 5 phrasings, agents, or
-  artifact types for the same mathematical route.
+- N1 requires an explicit family and every route inside it closed, not a
+  number of routes. Phrasings, agents, or artifact types are not routes.
 - N7 steelman must be the strongest counter-argument, not a token paragraph.
 - N6 "convention reframe vs new axiom" distinction must respect
   `feedback_no_new_axioms.md` — bounded condition with named import-retirement
@@ -347,7 +347,7 @@ The cases illustrate:
   cannot pass N1-N8, the negative claim is not yet ready to ship; that is
   the gate working correctly.
 - This gate checks scope and packet completeness. Narrowing an overclaim may
-  repair its science, but does not automatically satisfy the five-route schema.
+  repair its science, but does not by itself complete the N1-N8 packet.
   Report any remaining packet limitation separately and do not claim PASS.
 - This gate is also not a substitute for honest physics work. Passing N1-N8
   on a real no-go just records the discipline; the no-go itself stands or

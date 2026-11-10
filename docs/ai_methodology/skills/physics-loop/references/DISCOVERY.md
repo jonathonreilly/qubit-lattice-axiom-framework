@@ -271,7 +271,7 @@ For publication-facing or quantitative work, also inspect
 
    | # | Check | Failure condition |
    |---|---|---|
-   | N1 | Alternative route enumeration: name ≥5 distinct attack routes against the no-go, each with what it would attempt, why it fails (with retained-authority citation), and `ATTEMPTED` vs `RULED OUT BY PRIOR` marker. | Fewer than 5 distinct routes named — packet PASS is unavailable under the current schema; this count does not decide theorem validity. |
+   | N1 | Alternative route enumeration: state the family ruled out with explicit quantifiers (objects, premises, resolution), then name the attack routes inside it, each with what it would attempt, why it fails (with retained-authority citation), and `ATTEMPTED` vs `RULED OUT BY PRIOR` marker. No number of routes is required. | The family is not stated with explicit quantifiers, or an admissible route inside it is open or untested. A route count is not evidence either way. |
    | N2 | Wall-independence audit: pairwise table for all named walls/open conditions; collapse any wall that follows from another. | Source-note presents walls as independent when one follows from another. |
    | N3 | Hidden-wall scan: grep the proof for "we assume", "by construction", "bridge context", "naturally", "standard QFT", "registered", "canonical"; classify each hit as cited authority, hidden condition, or non-load-bearing context. | Any hidden condition found that should have been promoted to an explicit wall. |
    | N4 | Residual matching: for every prior no-go/wall/campaign cited as a witness, verify the residual matches exactly. Drop non-matching citations. | Witness count after dropping non-matches falls below what the claim needs. |

@@ -1,10 +1,10 @@
 # land
 
 Put reviewed work on `main`. The lander freezes one unit, obtains an
-independent read of its complete final source, runs the integration checks on
-the exact candidate for current `main`, and lands it. Landing admits honestly
-scoped work. It certifies nothing and changes no standing (`RULES.md`
-section 1). Reviewers are the landing-reviewer rows in `SETTINGS.md`.
+independent read of its final source, runs the integration checks on the exact
+candidate for current `main`, and lands it. Landing admits honestly scoped
+work. It certifies nothing and changes no standing (`RULES.md` section 1).
+Reviewers and escalation are the landing-review rows in `SETTINGS.md`.
 
 ## Use when
 
@@ -21,8 +21,8 @@ section 1). Reviewers are the landing-reviewer rows in `SETTINGS.md`.
   its number, head commit, declared base, merge base and original delta.
 - No drafts, and no owner-reserved content or anything a descendant inherits
   from it (`docs/repo/DEFERRED_DECISIONS.md`), until the owner releases it.
-- Every published or outside statement the unit reads must be `checked`;
-  otherwise the unit waits or is narrowed to what does not read it.
+- Every published or outside statement a full-read unit reads must be
+  `checked`; otherwise the unit waits or is narrowed to what does not read it.
 
 ## Steps
 
@@ -42,20 +42,20 @@ section 1). Reviewers are the landing-reviewer rows in `SETTINGS.md`.
    `scripts/vocab_lint.py --fix`, `py_compile` and the diff checks. Scope,
    proof, runner logic and whether an edge is intended are the reviewer's.
 4. **Independent read.** One reviewer per unit, independent as `RULES.md`
-   section 3 defines. With no other provider, use a separate restricted
-   context and label it so; if separation cannot be shown, hold. The reviewer
-   reads the complete changed argument and its premises, applies every
-   matching lens in one pass, and reports what is material: mathematical
-   errors, unsupported physical or quantified conclusions, lost source, and
-   evidence that does not reproduce or test the decisive claim. It re-derives
-   each changed formula, constant and expected value by a path sharing no
-   implementation, mutates each decisive check to see it fail, rebuilds the
-   proof-obligation graph, and inventories every imported value. Read the
-   registry sources before calling anything a premise or import. A negative
-   claim also gets the obstruction questions of `check`. Escalate only an
-   unresolved mathematical or premise question, disagreement or failed
-   decisive control, with its evidence, to the escalation row. Uncertainty
-   that matters to a stated result is never left for audit.
+   section 3 defines. With no other provider, use a separate restricted context
+   and label it so; if separation cannot be shown, hold. `review_depth.py` sets
+   the depth; raise it with a reason, never lower it. A unit that only adds
+   working material gets a scope read: titles, summaries, status lines and
+   statements against their stated premises, nothing re-derived. Any other unit
+   gets the full read: the reviewer reads the complete changed argument and its
+   premises, applies every matching lens in one pass, and reports what is
+   material: mathematical errors, unsupported physical or quantified
+   conclusions, lost source, and evidence that does not reproduce or test the
+   decisive claim. It re-derives each changed formula, constant and expected
+   value by a path sharing no implementation, mutates each decisive check to
+   see it fail, rebuilds the proof-obligation graph, and inventories every
+   imported value. A negative claim also gets the obstruction questions of
+   `check`. A doubt that matters to a stated result is never left for audit.
 5. **Fix by narrowing.** The lander or author, never the reviewer, makes the
    narrowest honest fix: correct a verified error; cut the claim to what the
    artifact shows; land the supported part and keep the rest with its open
@@ -140,7 +140,7 @@ section 1). Reviewers are the landing-reviewer rows in `SETTINGS.md`.
 | 2, 6 | `SK/references/REVIEW_UNITS.md` | map, reuse, `main` advances |
 | 2, 6 | `SK/references/UNIT_RECEIPT.md` | record schema for the checker |
 | 3, 5 | `AM/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` | one cure per defect class |
-| 4 | `SK/references/SCIENCE_LENSES.md` | lens triggers, prompt, findings |
+| 4 | `SK/references/SCIENCE_LENSES.md` | depth, lenses, prompt, findings |
 | 4 | `AM/skills/PRIMITIVE_REGISTRY_CHECK.md` | premise or import judgment |
 | 4, 8 | `SK/references/AUDIT_COMPATIBILITY.md` | audit guards, hard gates |
 | 5, 11 | `SK/references/FIXES_AND_REPORTING.md` | fix policy, checks, report |

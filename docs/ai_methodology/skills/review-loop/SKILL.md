@@ -156,6 +156,15 @@ that fails to reproduce or does not test the decisive claim. Fix known false
 claims, or narrow/defer them explicitly, before landing. A passing runner
 alone cannot supply a missing proof or physical premise.
 
+Since 2026-11-10 a landing read has one of two depths. This skill's
+`scripts/review_depth.py` reads the depth from the unit's delta: a scope read
+when the unit only adds working material, and the full read for every other
+change. The depth may be raised with a recorded reason and is never lowered.
+The Review depth section of
+[the lens reference](references/SCIENCE_LENSES.md) defines both depths and
+says what a scope read reports. This section, the lenses and scientific PASS
+gates 9 to 11 describe the full read wherever they ask for more than that.
+
 Use the [detailed lenses](references/SCIENCE_LENSES.md) to find these risks. Their exhaustive catalogs
 are escalation guidance: ordinary landing review does not require a separate
 report for every sentence, callable, predicate, tensor, array or conceivable
@@ -352,6 +361,7 @@ The routing summaries are not substitutes for the detailed instructions.
 | Creating a new canonical unit record, using supporting-proof relationships, or adapting an older record, including scoped-summary relationships | [Unit receipt schema and preflight](references/UNIT_RECEIPT.md) |
 | Historical payload consolidation, exclusive sequential checkout reuse, or dependent-PR head/base maintenance and recovery | [Guarded review operations](references/OPERATIONS.md) |
 
+The lenses named here belong to the full read.
 Apply CodeRunnerReviewer to changed code and runners, PhysicsClaimReviewer to
 claims and prose, ProofObligationReviewer to theorem/proof/derivation/reduction
 or closure claims, ImportSupportReviewer to supplied inputs,
@@ -359,9 +369,10 @@ NatureRetentionReviewer to claimed retention, LabelingConventionReviewer to
 labeling-based bounded-theorem candidates, RepoGovernanceReviewer to authority
 and placement, and MethodologySkillReviewer when methodology/skill/command
 files change. The full lens definitions and hard PASS gates control; this list
-does not limit their scope. In particular, a changed formula, constant, matrix,
-optimizer, expected value, or proof script requires an independent math check
-that does not share the implementation path under review.
+does not limit their scope. In particular, a full read of a changed formula,
+constant, matrix, optimizer, expected value, or proof script requires an
+independent math check that does not share the implementation path under
+review. A scope read applies the list in the Review depth section instead.
 
 Negative claims (`no_go`, `stretch_attempt`, `bounded_with_named_walls`,
 derived-no-go-boundary artifacts, or a reviewer's negative-claim `NO-GO`,

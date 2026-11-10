@@ -10,7 +10,7 @@ here with its date. Each campaign's retrospective says which settings stay.
 |---|---|---|
 | Cadence | Continuous discovery on a dedicated candidate branch, selective independent checks, PRs at coherent milestones | 2026-09-07 |
 | PR type | Regular PRs; draft only when the owner asks | 2026-09-07 |
-| Landing review | One independent fast reviewer per coherent unit; unresolved mathematical or premise questions escalate to the strongest reviewer | 2026-09-08 |
+| Landing review | One independent fast reviewer per coherent unit, at the depth that `skills/review-loop/scripts/review_depth.py` reads from the unit's delta: a scope read when the unit only adds working material, the full read for every other change (`procedures/land.md`, step 4). A depth may be raised with a recorded reason and is never lowered. Escalate only an unresolved mathematical or premise question, a disagreement or a failed decisive control, with its evidence, to the strongest reviewer. Measure: the start and end time on each reviewer report, by depth. The scope read is suspended until the owner decides if a unit that it landed is found to claim more, in a title, summary or status line, than its statements say. It is removed if scope reads prove no faster than full reads of units of similar size | 2026-11-10; reviewer and escalation since 2026-09-08 |
 | Original mathematics | Authorized within the task | 2026-10-08 |
 | Audit trigger | Only for a TOE candidate or a standalone proof the owner wants to publish, over that result's dependency closure. Routine research does not wait for audit | 2026-10-30 |
 | Audit tier | The forensic tier, over the closure at a pinned commit (`docs/audit/README.md`) | 2026-10-30 |

@@ -33,6 +33,9 @@ current-main loss check.
 Run every applicable reviewer lens on the complete final unit and its
 interactions. Preserve theorem, proof-obligation, import, independent-math,
 no-go, labeling, and governance standards without exception for batch size.
+The review depth that `scripts/review_depth.py` reads from the unit's delta
+decides which of them a read applies (`SCIENCE_LENSES.md`, Review depth);
+batch size never does.
 Use the same reviewer session for findings, fixes, and final confirmation.
 Freeze the disposition map hash, source/dependency/input blob hashes, original
 PR heads, reviewed commits/tree, confirmation base, and reviewer findings hash

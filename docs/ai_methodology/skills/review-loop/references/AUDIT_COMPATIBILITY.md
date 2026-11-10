@@ -247,6 +247,13 @@ large standalone cosmetic sweeps over audited claim notes. If the PR's only
 purpose is to rewrite existing local-path links across many audited source
 notes, apply the audit-hash churn guard above before landing any broad cleanup.
 
+**Gates 9 to 11 belong to the full read.** They are the reviewer's own
+scientific work: the N1-N8 walk, the independent math check and the
+proof-obligation pass. In a scope read the list in the Review depth section of
+`SCIENCE_LENSES.md` takes their place, and that list covers how a negative
+result is worded. Every other gate in this file is the same at both depths,
+including the committed evidence that gates 6a and 13 require.
+
 9. **No-Go Discipline PASS gate (hard).** Before issuing review-loop PASS,
    identify any artifact on the branch that ships a negative claim:
 

@@ -39,6 +39,12 @@ Mode selection:
    configured reviewer. Completed valid reviews remain reusable. Follow the skill's
    focused-landing section: concise material findings and decisive evidence;
    exhaustive claim certification belongs to the deferred formal audit.
+   Take the depth of the read from the skill's `scripts/review_depth.py`: a
+   scope read when the unit only adds working material, the full read for
+   every other change. Raise a depth with a recorded reason; never lower one.
+   The skill's Review depth section defines both. Where a later step or a
+   Non-Negotiable asks for more than a scope read lists, it describes the
+   full read.
 4. Fix only verified, narrow findings. Demote overclaims instead of patching
    missing science with prose. Use the skill's overlap-repairs guidance for
    authorized early finding handoffs against immutable originals, safe-boundary
@@ -58,7 +64,8 @@ Mode selection:
    judge the landed claim without an expectation of agreement. Block PASS when a changed claim has missing graph
    dependencies, author-prewritten audit verdicts, stale retained-status
    assumptions, or a runner that does not test the load-bearing bridge.
-7. For math-bearing runner/proof changes, do not trust PASS output alone:
+7. In a full read of math-bearing runner/proof changes, do not trust PASS
+   output alone:
    independently cross-check load-bearing formulas, signs, factors,
    normalizations, expected values, and edge cases before landing.
    Reconstruct nontrivial proof-obligation graphs and reject proof-complete
@@ -206,7 +213,8 @@ Mode selection:
   decisive artifact support, clear falsifiers, and no hidden semantic bridge.
 - Math-bearing runners require independent formula review: PASS lines do not
   establish that the runner's expression, sign, factor, normalization, or
-  expected value is correct.
+  expected value is correct. A scope read does not read runners and vouches
+  for none.
 - Branch-local or draft-PR vocabulary, including language leaked from PR230 or
   similar long-lived drafts, must be translated to native repo language before
   landing.

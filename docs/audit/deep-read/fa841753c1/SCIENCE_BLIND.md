@@ -26,3 +26,7 @@ Both readers filed no repair.
 - Note 1634 was not in the draw. The same leftover pattern is in its section 6, which still offers a physical selection of the size-15 floor after its corrigendum withdraws that path. That row is filed from the parent check.
 
 Raw reader files: `batches/blind_science_a.md` and `batches/blind_science_b.md`.
+
+## Rule change
+
+The instruction given to those readers, that a printed corrigendum is not a second repair, is withdrawn. A withdrawn sentence that is still printed is a repair. A recomputed gap is a repair unless the note itself prints the tolerance used to waive it. The replacement rule is [PROCEDURE.md](PROCEDURE.md).

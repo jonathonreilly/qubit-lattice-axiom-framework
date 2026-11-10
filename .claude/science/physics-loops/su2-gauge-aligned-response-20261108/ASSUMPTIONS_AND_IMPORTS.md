@@ -1,5 +1,25 @@
 # Assumptions and imports
 
+## Current small-background domain
+
+The new primary and four nonidentity parts use the same supplied finite
+SU(2) family and identity compact c_J as explicit premises. They allow
+sup chord(V_c,I)<=epsilon_* with one sufficiently small fixed constant.
+The actual normalized Haar-mode/compact and compact moment bounds hold
+for all u>=1; the centered shrinking chart and connected expansion need
+u>=u_0. Constants are uniform in volume, background, pair placement and
+all permitted internal trees. No useful numerical onset is asserted.
+
+For fixed local C2 quotient singlets the proved response bound is
+C(epsilon^2+u^-1) times tree decay. Original local singlets keep the exact
+conditional orbit term with a C(1+epsilon sqrt(u)) allowance where orbit
+readers meet. These powers are not claimed sharp. All terminal outputs
+must be small for the fully pinned companion and conditional-density
+corollary. Centers/cubes are frozen before distinct physical score jets;
+no terminal locality of their coefficients is inferred from hidden readers.
+Earlier identity-only premise statements below are historical scope records.
+
+
 The supplied mathematical family is four-dimensional compact SU(2), odd fixed
 L>=3, kappa>0, fine side L^2 m with m>=3, beta=u and both kernel strengths
 kappa u, with the original paired-root-leg arithmetic means. There is one fine

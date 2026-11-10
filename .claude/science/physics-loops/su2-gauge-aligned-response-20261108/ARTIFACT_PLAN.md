@@ -1,5 +1,17 @@
 # Milestone artifacts
 
+## Current continuation artifacts
+
+Latest primary: docs/SU2_NONIDENTITY_COMPACT_CONTROL_BOUNDED_THEOREM_NOTE_2026-11-09.md.
+New parts: nonidentity-marginal-compact-mode,
+nonidentity-centered-regional-estimates, nonidentity-frozen-gaussian-producers,
+and nonidentity-compact-connected-response. New report:
+gates/nonidentity-compact-check.md. Source records: Luna's nonidentity
+prior-art and current-main/open-PR addendum, plus Fable approach advice.
+All 55 prior proof/gate/primary files are preserved at source head 97fc90828ab.
+Earlier entries below identify historical milestones. Same PR #10149.
+
+
 Primary scientific statement: `docs/SU2_CONNECTED_FOUR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-11-09.md`.
 Complete composition: `parts/full-connected-four-response.md`.
 Supporting sources: `parts/` with all original and new mathematical suppliers.

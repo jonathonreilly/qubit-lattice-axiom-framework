@@ -33,6 +33,12 @@
       "pr": 10149,
       "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10149",
       "role": "previous published checkpoint; latest exact head recorded externally after push"
+    },
+    {
+      "action": "same_pr_compact_connected_continuation_published",
+      "head": "97fc90828ab071b5813d1c9b6c8a952dc042509b",
+      "pr": 10149,
+      "role": "previous published checkpoint; this continuation exact publication head recorded externally after push"
     }
   ],
   "pinned_inputs": [
@@ -128,23 +134,23 @@
     }
   ],
   "output_hashes": {
-    "APPROACH_REGISTRY.md": "62932d72bab37c9f7da47a821ea8850df236a9101fc7759542d67b0419ae4e28",
-    "ARTIFACT_PLAN.md": "580315632215f0ed2875dddc1236021b5212872e89b619e215db2bcd57a298b6",
-    "ASSUMPTIONS_AND_IMPORTS.md": "3700f5972de80f5e94f0d24c6c42fd289747deb72027ebdecb1aba62af890513",
-    "CLAIM_STATUS_CERTIFICATE.md": "b3619fbf8fe50b338fdd6f5c22963eb53f4e626d3cae53e2f60822a480616b8a",
-    "GOAL.md": "cb5425b052219c34af90c36a4c757e80d1b9aa125f2b642950913af9fc022e55",
-    "HANDOFF.md": "00683709ff265a5045dc44d9e9e2ce0468d5d175bd6c8bbc352dc001809545c2",
-    "LITERATURE_BRIDGES.md": "1624de9bb013307249786850376d3660a987761a3ec855e9fd953baaf6673d77",
-    "NO_GO_LEDGER.md": "b0a7173b351f77ec70ecd31a4084896ec697102b131f380cdc8c3127943fd401",
-    "OPPORTUNITY_QUEUE.md": "d507d7d72529a7a76805df9afac7362535818d138d43f7aff61f6cf6acc33d90",
-    "PREPARED_PR.md": "040160ecc3c12554bc209616f72bcb65a735db8ff149d64f36db27058b649616",
-    "PROOF_TREE.md": "065fe9a25aff771d056005d82bafc6e9497b4628cdd985f464b8f5b38d57855e",
-    "PR_BACKLOG.md": "9b999e0fe55eb2ba08cd779dda9becd33e001d1c528e0629949ba1003bea6657",
-    "REVIEW_HISTORY.md": "00b34364efd646c64fd047ba01d6b710e4724bdfa5c5547046fbc6b0504cc134",
-    "ROUTE_PORTFOLIO.md": "e69737e5026dfedec1021c0e966034ced4a14c4360c65f46936e9c115be390e1",
-    "SOURCE_MAP.md": "afcf29cc4adc016847392345c2a7221ee1445e1a3446a11d84fca25bf8067846",
-    "STATE.yaml": "83fc598911190c49a8196e4bca41b6ac0828444eddaba49e9056242d4531c5ea",
-    "TRACE_GATE.md": "531ad38c8c1b09ab0363b9efe1d1d657e3cd58c29c9a72137b5ddc948f29e7ce",
+    "APPROACH_REGISTRY.md": "421545d02c4d02453a05c806948ebe9183f41cb3b95de81e305a0d3500195794",
+    "ARTIFACT_PLAN.md": "41151511436e9a1cc7a6706a1b5ce66dacda6317b4ef33d1eb6b2572395c7a38",
+    "ASSUMPTIONS_AND_IMPORTS.md": "d7d5f88749d62795a50b28f63f373be0a5067a12b22293976e2b184241beba6f",
+    "CLAIM_STATUS_CERTIFICATE.md": "3d2425e7344d1cf25574067be34ab297be58d6378e54643b1a04be84597be8d3",
+    "GOAL.md": "c4fc0d5eb06af59112b38ba280ad936200d7edfeffd380bd226d1f651421638a",
+    "HANDOFF.md": "ece006ee34b21f700e3dfda5bacce74e149d897fc4da9f42c24ec972dc540dbe",
+    "LITERATURE_BRIDGES.md": "53d3f82258b7d361d78ddfb9bddc13461155f6d275125cbc8b3c32638881de7b",
+    "NO_GO_LEDGER.md": "da2e8f8625b89a5e06e8aa9aa01504f0fe8efc00fe5e8b384dd157e134f0ce07",
+    "OPPORTUNITY_QUEUE.md": "0d21d36df72134f9743ffa84cc2ce609e34eded9df2202bcd6a82c580b2d0975",
+    "PREPARED_PR.md": "dc1a2a11ffc30505b95a54b235c37c5ba2b1a4a02dfe8ceac215c2115e0af35f",
+    "PROOF_TREE.md": "76f1bae7fbdc4008e2d7c077e8461b2b6691cf0610712e44301e1106eca2acec",
+    "PR_BACKLOG.md": "875aa683670ce366d79f9f71426116d6547d270eff2e9f9fd651df5a80b36957",
+    "REVIEW_HISTORY.md": "8077e759750ec11dfde36f068f468d9df6e4faac9dc68689e87b15ef5d75fc81",
+    "ROUTE_PORTFOLIO.md": "3749a45f3ff9b8c230e810bd01c867bda189018e4d04fb6025ac040cc060adf3",
+    "SOURCE_MAP.md": "7c6f3944fd87db3440ec9981b2d8e7e3d2577da2860c61bc6bb9175c5802f554",
+    "STATE.yaml": "78ccdb5374b0591c576607f804e08c4aeaaf2a81f130eca9e003641e6d10ca71",
+    "TRACE_GATE.md": "8d38fa9ea7f47211b7df4af86ecef37050cbb21cbb73e2a1a61486ef3542b155",
     "gates/arbitrary-boundary-moments-check.md": "d4e7ae28bc3bcfedb4286dd9ef93c8bc5deb03b2a479ec3bb0efe9a68f85fdb3",
     "gates/buffered-core-ratio-check.md": "a77a82e7a03f800547d95ea2728ae34e5c5afb765ba1c7d7a4d6a824ca8d6b32",
     "gates/density-forest-source-check.md": "fdc8beca9170eaf8e30f15ecbf369d6c817746caaac6ca55370fb7c6ef1fe18f",
@@ -157,6 +163,7 @@
     "gates/global-chart-sector-ratio-check.md": "3272bdcc6cf517f032c80c2b83760ba91892b611ccf05584efac216ea70d5ede",
     "gates/marginal-connected-expansion-check.md": "7f9eabdb633edce88295c1f35ea8a0c90da8831f645f9f66b357818c892c1687",
     "gates/marginal-regional-chart-check.md": "d2e2d1761e35492b48ef85a110cdda1551f0fd6a408c6e100dd23d3fea89d6b7",
+    "gates/nonidentity-compact-check.md": "dd5545ffbf1585572ff625708252496ed642e7444296bee3ccd1d53415720015",
     "gates/original-source-four-response-check.md": "4a41cdd580dbee3db3ddd9d7376ac435f1554cd2f61275b8df96f98abd262f6d",
     "gates/partial-terminal-check.md": "a0b9982dbddd5934de8282dcfacf3300e60978b2eee1c3225d8bc8c1bb7ce5b8",
     "gates/primary-note-check.md": "eb304d67c25153dc053f33531dfc1b83a92be0852faae8ec038a2c74463cb98f",
@@ -184,6 +191,10 @@
     "parts/marginal-regional-moments-and-ratios.md": "b2d3d9bedfb52b11056788e1f72cd14c4f9846c733c86ee424c2240f13db647f",
     "parts/marginal-regional-relative-coercivity.md": "2d142414fb4992c2a1e907d42d15ca9f7164ee6e90c892d8c3d529b39e297385",
     "parts/marginal-source-marked-compact-decomposition.md": "4a30c12ef9c58eaf3d6ca1c82bab94137f088ee59cba73304fe30da9e04dcdd3",
+    "parts/nonidentity-centered-regional-estimates.md": "b125f4b80bb0143c4269024d426476deb118bc7b30030c15d31e5fbb0a98b9bc",
+    "parts/nonidentity-compact-connected-response.md": "00ef56147969096ed19888450553286269b0ed8f0ae9ca02ede4856231e47d42",
+    "parts/nonidentity-frozen-gaussian-producers.md": "7c2330f535d4ca82e7527f305523eac8ebbde9634981403fa44c5e78401ddd12",
+    "parts/nonidentity-marginal-compact-mode.md": "3ef73e9715111804f7ddc135e7bed62bbaaf36278f459e8d71d8fc15e127f83d",
     "parts/nonlinear-chart-response.md": "5edacc8ee78d54b7fb853fb34da3d8cceffd8eb0e476f8510d15048f8f10f2d1",
     "parts/original-source-four-response.md": "b305c708b5736f6dca707008bee7f3ceeb648b02bced785a82e5d1b3fa593f79",
     "parts/partial-terminal-normalization.md": "722e622dd64763e7f85461ef037f78810ec1c96d5bb71ddc7d60647c858b9867",
@@ -200,15 +211,18 @@
     "sources/connected-response-repo-scan-20261109.md": "0bd2ccd95ef0ee66378b258c162bedf47dd8b8f7463ba374070fcb5deb1cf122",
     "sources/fable-marginal-connected-approach-20261109.md": "494c6207c321946de2a87b46ed3ee08122c37110e329689007fc5258f1677234",
     "sources/fable-marginal-regional-approach-20261109.md": "51ede87b4ee11dfb4258a8665d64872e062b41ba09dc81cf88086d764b9d5dfb",
+    "sources/fable-nonidentity-compact-approach-20261109.md": "719306e98b51c038d95130f7fe3b8e9bd0260943156da2f8238df408bda9fe0b",
     "sources/fable-two-plaquette-approach-20261109.md": "97dfdcf67d353e80b9f6380639c040889cf5bac445f771da7fded467159e074c",
     "sources/frozen-forest-literature-addendum-20261109.md": "238180b21668096a1715d913d9e602543011ad799fd66590316039cf1c130bcd",
     "sources/marginal-connected-expansion-prior-art-20261109.md": "8d6ee0918b6cfbddd24f10de3fadba21040e80fc60711ee5bda69e91c4604c4d",
     "sources/marginal-regional-chart-prior-art-20261109.md": "0f2365732c9c48e923a16bf0a78fb7821776f3e77fe9102c0812573c0f6a7c76",
+    "sources/nonidentity-compact-prior-art-20261109.md": "f17b0579f4a7bf4d3a8d51f52e2519cf181f93c936f06daa03b1e4be6f3b1aae",
+    "sources/nonidentity-main-search-addendum-20261109.md": "c68c56523d1067839e2490d35e36b927fe974729df14293c7999687c5c336183",
     "sources/partial-terminal-repo-literature-20261109.md": "f4feaf5f075f97fb77bc3a3ce9ceb054d92208bfd94d17a6f8dac7c08031a02b",
     "sources/two-plaquette-coercivity-prior-art-20261109.md": "a22b57e45cb46a02a5e6421d76a4d5167c7a9925c27a4d8af45fe23e64bf358d"
   },
-  "frozen_at_utc": "2026-11-10T02:03:57.861497+00:00",
-  "mathematical_check": "Fresh inherited-profile host independently derived mechanisms before candidate reads, then checked all three final new proofs, the primary and map; corrected arbitrary-tree bridge; final notation delta checked. Fable 5.2 max advice saw five old texts, not new proofs. 31 proof parts and four primary notes have exact hash coverage across current and reused reports; supplied ancestors not all recertified. No formal audit.",
+  "frozen_at_utc": "2026-11-10T03:48:29.499859+00:00",
+  "mathematical_check": "Fresh inherited-profile host derived the contested mechanism and compact discriminators before candidate access, then checked four complete new proofs, full primary and complete final map. Later Fable advice separately assessed without importing its unproved strengthening. 35 proof parts and five primaries have exact hash coverage; 55 earlier proof/gate/primary files unchanged. Same-family fresh-context research check; ancestral compact/reader chain not recertified. No formal audit.",
   "managed_worker_archives": [
     {
       "root": "/Users/jonreilly/.codex/worktrees/su2-gaussian-chain-worker/Physics",
@@ -291,13 +305,31 @@
       "attachment_id": "01a1c331-7a38-7c43-920e-70dd1be3c284",
       "status": "archived",
       "copied_outputs_verified": true
+    },
+    {
+      "root": "/Users/jonreilly/.codex/worktrees/su2-background-mode/Physics",
+      "attachment_id": "01a1c38c-d4af-7940-b297-9064021edb7c",
+      "status": "archived",
+      "copied_outputs_verified": true
+    },
+    {
+      "root": "/Users/jonreilly/.codex/worktrees/su2-background-centered/Physics",
+      "attachment_id": "01a1c38d-a740-7282-8340-fc1b169fbde6",
+      "status": "archived",
+      "copied_outputs_verified": true
+    },
+    {
+      "root": "/Users/jonreilly/.codex/worktrees/su2-background-luna/Physics",
+      "attachment_id": "01a1c391-0e40-7150-9b40-8923aaf128e6",
+      "status": "archived",
+      "copied_outputs_verified": true
     }
   ],
   "validation": {
     "vocabulary_violations": 0,
     "frozen_proofs_unchanged_by_lint": true,
     "all_local_links_resolve_to_proposed_tracked_regular_files": true,
-    "mathematical_sources_bound_by_report_hashes": 35,
+    "mathematical_sources_bound_by_report_hashes": 40,
     "complete_delta_whitespace_clean": true,
     "numerical_jobs": 0,
     "new_runner": false,
@@ -306,11 +338,11 @@
     "execution_lease": "released",
     "prompt_files_changed": [],
     "old_proofs_and_gates_unchanged": true,
-    "local_markdown_links_checked": 166,
-    "frozen_previous_parts_and_gates": 47,
-    "current_new_scope_files_exact_hash_match": 5,
-    "whole_pr_files": 83,
-    "old_proofs_gates_and_primary_notes_unchanged": 50,
+    "local_markdown_links_checked": 187,
+    "frozen_previous_parts_and_gates": 51,
+    "current_new_scope_files_exact_hash_match": 6,
+    "whole_pr_files": 92,
+    "old_proofs_gates_and_primary_notes_unchanged": 55,
     "explicit_math_not_link_exclusions": [
       {
         "file": ".claude/science/physics-loops/su2-gauge-aligned-response-20261108/parts/marginal-nonlinear-chart-estimates.md",
@@ -321,13 +353,18 @@
         "file": ".claude/science/physics-loops/su2-gauge-aligned-response-20261108/parts/marginal-nonlinear-chart-estimates.md",
         "expression": "[-log j](0)",
         "reason": "derivative evaluation at zero; explicitly inspected"
+      },
+      {
+        "file": ".claude/science/physics-loops/su2-gauge-aligned-response-20261108/parts/nonidentity-frozen-gaussian-producers.md",
+        "expression": "[-log j](0)",
+        "reason": "derivative evaluation at zero; explicitly inspected"
       }
     ],
-    "previous_source": "c0497327ec81143f6f8b5369c86583ad3387d785"
+    "previous_source": "97fc90828ab071b5813d1c9b6c8a952dc042509b"
   },
   "refreshed_main": "bf92a1d763030836ed55631d5d7a7ef3b288f284",
-  "previous_local_checkpoint": "c0497327ec81143f6f8b5369c86583ad3387d785",
-  "full_response_scope": "Full compact finite two-step distinct-link numerator and actual seven-edge marginal responses at zero sources and identity exterior, with C/u singlet tree bounds and weighted sums, exact conditional-normalizer subtraction, arbitrary permitted trees and retained original-source orbit covariance. Includes all earlier compact/regional/chart suppliers. Compact nonidentity backgrounds, larger conditional geometries, further inherited transitions, continuum reconstruction and physical gap remain open.",
+  "previous_local_checkpoint": "97fc90828ab071b5813d1c9b6c8a952dc042509b",
+  "full_response_scope": "Identity two-step and seven-edge response, plus fixed sufficiently small nonidentity terminal class: all-u compact Haar-mode/relative control and regional moments; sufficiently-large-u connected compact correction, C(epsilon^2+u^-1) quotient-singlet response and explicit original-orbit allowance; actual all-small conditional normalizer subtraction. No all-depth or physical gap claim.",
   "publication": "open PR #10149; same-branch continuation",
   "primary_note": {
     "path": "docs/SU2_CONNECTED_FOUR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-11-09.md",
@@ -364,6 +401,10 @@
     {
       "path": "docs/SU2_MARGINAL_CONNECTED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-11-09.md",
       "sha256": "459a887cd6cbfd4b1cdadbc156f3b6cfd3d6a2dd3f8539224844ff681c8c8b48"
+    },
+    {
+      "path": "docs/SU2_NONIDENTITY_COMPACT_CONTROL_BOUNDED_THEOREM_NOTE_2026-11-09.md",
+      "sha256": "a445c663df41e8ea521051be56467b700182f79489bd353bb0faf932355124d6"
     }
   ],
   "coercivity_continuation": {
@@ -470,6 +511,56 @@
     },
     "next_supplier": "Compact nonidentity terminal-background control and conditional geometry/rough-component class needed by a further exact transition.",
     "local_logs": "logs/su2-marginal-connected-expansion-20261109/",
-    "independent_scope_finding": "Explicit restored-kernel argument now supplies arbitrary-tree uniformity for the fully pinned companion in p=N/Q; no translated-tree premise silently dropped."
+    "independent_scope_finding": "Explicit restored-kernel argument now supplies arbitrary-tree uniformity for the fully pinned companion in p=N/Q; no translated-tree premise silently dropped.",
+    "followed_by": "nonidentity_compact_continuation"
+  },
+  "latest_primary_note": {
+    "path": "docs/SU2_NONIDENTITY_COMPACT_CONTROL_BOUNDED_THEOREM_NOTE_2026-11-09.md",
+    "sha256": "a445c663df41e8ea521051be56467b700182f79489bd353bb0faf932355124d6"
+  },
+  "nonidentity_compact_continuation": {
+    "source_head": "97fc90828ab071b5813d1c9b6c8a952dc042509b",
+    "status": "bounded-support",
+    "scope": "Identity two-step and seven-edge response, plus fixed sufficiently small nonidentity terminal class: all-u compact Haar-mode/relative control and regional moments; sufficiently-large-u connected compact correction, C(epsilon^2+u^-1) quotient-singlet response and explicit original-orbit allowance; actual all-small conditional normalizer subtraction. No all-depth or physical gap claim.",
+    "new_proofs": [
+      "parts/nonidentity-marginal-compact-mode.md",
+      "parts/nonidentity-centered-regional-estimates.md",
+      "parts/nonidentity-frozen-gaussian-producers.md",
+      "parts/nonidentity-compact-connected-response.md"
+    ],
+    "primary_note": {
+      "path": "docs/SU2_NONIDENTITY_COMPACT_CONTROL_BOUNDED_THEOREM_NOTE_2026-11-09.md",
+      "sha256": "a445c663df41e8ea521051be56467b700182f79489bd353bb0faf932355124d6"
+    },
+    "host_check": {
+      "path": "gates/nonidentity-compact-check.md",
+      "sha256": "dd5545ffbf1585572ff625708252496ed642e7444296bee3ccd1d53415720015",
+      "coverage": "Independent pre-candidate mechanism, compact/normalizer/mean-zero discriminators, four full proofs, full primary, final full proof map; later advice C2 regularity discriminator; supplied ancestors not recertified."
+    },
+    "proof_tree_sha256": "76f1bae7fbdc4008e2d7c077e8461b2b6691cf0610712e44301e1106eca2acec",
+    "source_records": [
+      {
+        "path": "sources/nonidentity-compact-prior-art-20261109.md",
+        "sha256": "f17b0579f4a7bf4d3a8d51f52e2519cf181f93c936f06daa03b1e4be6f3b1aae"
+      },
+      {
+        "path": "sources/nonidentity-main-search-addendum-20261109.md",
+        "sha256": "c68c56523d1067839e2490d35e36b927fe974729df14293c7999687c5c336183"
+      },
+      {
+        "path": "sources/fable-nonidentity-compact-approach-20261109.md",
+        "sha256": "719306e98b51c038d95130f7fe3b8e9bd0260943156da2f8238df408bda9fe0b"
+      }
+    ],
+    "approach_consultation": {
+      "model": "claude-fable-5-2",
+      "effort": "max",
+      "status": "completed",
+      "role": "Five old texts and explicit candidate route, no new proof or forest access; advice only; stronger IBP/cumulant/gauge-extension proposals not imported."
+    },
+    "author_profiles": "Two user-authorized medium-effort bounded proof workers, Luna reading tier, supervisor retained selected model/effort; host checker fresh inherited context.",
+    "next_supplier": "Exact third-transition conditional geometry and rough terminal components; everywhere-small class not established sufficient.",
+    "local_logs": "logs/su2-nonidentity-compact-20261109/",
+    "prompt_files_changed": []
   }
 }

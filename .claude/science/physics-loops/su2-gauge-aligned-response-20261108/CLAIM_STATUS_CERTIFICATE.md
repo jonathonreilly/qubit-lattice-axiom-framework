@@ -8,30 +8,40 @@ reachability_to_target: partially_closes
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "Analytic finite two-step compact connected response for the pinned law and actual seven-edge marginal, with explicit source, identity-background, tree and coupling domains."
+claim_type_reason: "Conditional finite two-hidden-layer SU2 compact control and connected estimates on a fixed small terminal-background class; explicit coupling, geometry, source and orbit domains."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-Author proposes bounded finite-model theorems. The new independent host
-check derives mechanisms before candidate reads, checks the full new
-arguments and final primary/map, and records the corrected arbitrary-tree
-bridge. The Fable 5.2 call is separately scoped approach advice about five
-old input texts; it did not certify the new files. All source and report
-hashes are bound in manifest.json. Neither check is a formal audit verdict,
-retained status or a review-loop landing.
+The new primary supplies a unique global normalized Haar-density mode,
+all-compact relative energy, compensated regional bounds and moments for
+the actual seven-edge marginal. The centered Gaussian and marked shell
+producers meet the fixed-reference density-forest contract. The resulting
+compact/chart connected correction is uniform in volume and background.
+The full quotient-singlet response has the proved C(epsilon^2+u^-1) tree
+bound; original sources retain their exact conditional-orbit term with the
+displayed upper allowance. The restored-kernel companion also controls the
+actual conditional normalizer subtraction when all terminal values are small.
+These response powers are not asserted sharp.
 
-The new exact compact gas and Gaussian producers meet every hypothesis of
-the generic density forest. The compact activity count and actual chart
-cut proof yield the full marginal response. Original-source orbit covariance
-is retained. Restoring the seven kernels proves the required arbitrary-tree
-pinned companion, so the identity seven-edge p_J=N/Q_J subtraction is now
-bounded without dropping its second law. No lemma equivalent to this local
-target is left open inside the stated theorem.
+A fresh-context same-family checker independently reconstructed the central
+mechanisms before candidate access, then inspected the four complete new
+proofs, primary and changed map at final hashes. Explicit compact examples
+reject the raw regional-transfer and mean-zero shortcuts. The supervisor
+read all new arguments and retained the selected profile for frontier
+judgments. Fable approach advice has its own input/delivery record and does
+not certify the new files. No research check is a formal audit verdict.
 
-The supplied SU(2) family, c_J and earlier checked suppliers are mathematical
-premises included in this PR. They are not derived from framework primitives
-or identified with a physical theory here. The wider nonidentity, conditional-
-geometry, inherited-depth, continuum and physical-mass bridges remain open.
-PR #10149 remains the single working PR; no author merge occurs. Earlier
-primary notes and gate reports are frozen historical milestones.
+The supplied family, exact Haar quotient, reader templates and identity
+compact c_J remain mathematical premises with their included earlier
+proofs/checks. This work does not derive that family from framework axioms
+or supply a new primitive. No empirical prediction, physical running law
+or physical mass identification is claimed. The third-transition conditional
+class, rough terminal components, inherited depth/scale closure and continuum
+spectral gap remain open. No lemma equivalent to the stated bounded local
+target is hidden as an open premise; the inherited inputs remain explicit.
+
+The four earlier primary notes and all earlier mathematical/gate files are
+unchanged. PR #10149 stays the single working PR. Later integrated-main
+review, required validation and independent audit are separate from this
+author continuation; no author merge or retained promotion occurs.

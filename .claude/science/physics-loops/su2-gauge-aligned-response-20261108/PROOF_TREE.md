@@ -6,11 +6,13 @@ The map covers the present research route. It does not claim that the listed
 open nodes form a proved reduction of the mass-gap problem or an exhaustive
 list of every lemma a continuum construction will need.
 
-The present results are finite two-step posterior decay with terminal field
-fixed to identity, and compact connected response for the actual seven-edge
-two-plaquette marginal, including its conditional-normalizer subtraction.
-Their exact checking records are linked below; they do not constitute formal audit or retained status. There is no proved physical
-mass gap and no evidence-based completion percentage or delivery date.
+The present results include identity-terminal two-step response and compact
+control of the actual seven-edge marginal on a fixed small nonidentity
+terminal neighborhood. The new mode, regional and connected estimates also
+control its conditional-normalizer subtraction when all terminal values are
+small. Their exact checking records are linked below; they do not constitute
+formal audit or retained status. There is no proved physical mass gap and no
+evidence-based completion percentage or delivery date.
 
 ## Target and decision order
 
@@ -37,7 +39,12 @@ flowchart TD
   Pj[Marginal exact compact gas and actual Gaussian producers]
   Dj[Marginal connected-density expansion and fourth response]
   D[Identity two-plaquette conditional with Q subtraction]
-  V[OPEN: required nonidentity terminal control]
+  Vm[Small-background complete Haar mode and compact coercivity]
+  Vr[Compensated regional moments and marked shell ratios]
+  Vg[Centered actual Gaussian producers]
+  Vc[Small-background compact connected response]
+  Dv[Small-background conditional with both laws retained]
+  V[OPEN: rough terminals and required new conditional classes]
   T[OPEN: third transition and inherited-action closure]
   S[OPEN: depth and cutoff control at physical scales]
   X[OPEN: nontrivial continuum QFT reconstruction]
@@ -61,7 +68,17 @@ flowchart TD
   B --> D
   Q --> D
   Dj --> D
-  D -. research route .-> T
+  K --> Vm
+  U --> Vm
+  Vm --> Vr
+  Vm --> Vg
+  Vr --> Vg
+  Vr --> Vc
+  Vg --> Vc
+  G --> Vc
+  Q --> Dv
+  Vc --> Dv
+  Dv -. research route .-> T
   V -. research route .-> T
   T -. unproved iteration .-> S
   S -. unproved limits .-> X
@@ -191,27 +208,47 @@ research evidence, not formal audit or a recertification of every ancestor.
 The three earlier primary notes remain frozen historical milestones; this
 map and the new primary give the current result.
 
+## Nonidentity compact milestone
+
+The [small-background primary](../../../../docs/SU2_NONIDENTITY_COMPACT_CONTROL_BOUNDED_THEOREM_NOTE_2026-11-09.md)
+extends the actual marginal to fixed sup chord(V_c,I)<=epsilon_* with a
+volume- and u-independent small epsilon_*. It keeps the same allowed trees,
+complete kernels and exact root-fixed orbit disintegration. Earlier primary
+notes and their next-step paragraphs are frozen historical milestones.
+
+| Node | Proof | Stated finite-model result |
+|---|---|---|
+| V-mode | [Complete compact mode](parts/nonidentity-marginal-compact-mode.md) | Unique global Haar mode, O(epsilon) displacement, full compact two-sided relative energy for all u>=1; localized terminal response and small relative-collar regional modes. |
+| V-region | [Compensated regional estimates](parts/nonidentity-centered-regional-estimates.md) | Exact exterior-only linear compensation; arbitrary compact exterior regional bounds, moments on compact and centered cube domains, actual marked shell ratios and orbit covariance. |
+| V-Gaussian | [Centered Gaussian producers](parts/nonidentity-frozen-gaussian-producers.md) | Actual complete Hessian and shifted minimum, positive finite-range covariance core, whole-cell vertices and all physical normalization factors. |
+| V-bound | [Compact connected composition](parts/nonidentity-compact-connected-response.md) | Uniform connected compact/chart correction, C(epsilon^2+u^-1) quotient-singlet tree response and weighted pair sum. Original sources retain the displayed C(1+epsilon sqrt(u)) orbit allowance; the restored-kernel companion controls p_J=N/Q_J. |
+
+The [new research check](gates/nonidentity-compact-check.md) records independent
+pre-candidate derivations, compact counterexamples to uncorrected regional
+transfer and exact-zero-mean inference, and final source coverage. Source
+identities and Fable approach-advice limits are indexed in REVIEW_HISTORY.
+All new statements remain conditional on the supplied identity compact
+constant and finite model; no audit-ratified status is inferred. The source
+power bounds above are not asserted optimal.
+
 ## Next theorem to attack and its acceptance test
 
-The identity-exterior seven-edge normalization task is now the stated local
-milestone. The next supplier is compact connected control on an explicitly
-specified nonidentity terminal-background class, preserving actual kernel
-normalizers and source readers. A first bounded target is a fixed small
-terminal neighborhood: construct the actual centered field, prove full
-compact relative coercivity around it, and transport the source-marked
-connected estimate with constants uniform in volume and background.
-The existing small-chart theorem is useful, but it does not control that
-background's compact complement. An extensive action comparison is not a
-uniform local bound.
+Specify the conditional measures, larger deletion geometries and rough
+terminal components actually generated by a third exact transition. The
+new everywhere-small terminal class has NOT been shown sufficient for
+that consumer. Begin with its exact disintegration and readers, identify
+which new compact coercivity/quotient estimates it needs, and preserve all
+source/orbit and normalizer terms. A fresh Wilson replacement is not the
+inherited law. A useful next theorem must cover the required conditional
+class with a volume-uniform quantitative budget, or identify its precise
+unresolved mathematical obligation without claiming a route impossibility.
 
-Before using this as an iteration theorem, specify which larger conditional
-geometries and rough terminal components an exact third transition needs.
-It is not established that an everywhere-small background class suffices.
-The third-transition test must use the actual inherited law, not a new
-Wilson density, and must pay every new reader and normalization cost.
-These tasks remain open rather than being assumed in an arrow of the map.
+A separate possible sharpening is the small-background cumulant power:
+(N4)/(N22) give safe bounds, not evidence that their epsilon allowances are
+necessary. Any improvement must prove the extra connected cancellations.
+That refinement does not substitute for the third-transition geometry.
 
-Reachability is reassessed on those estimates: do their constants survive
-the iteration and physical-scale limit required by the target? Until that
-question and continuum reconstruction are answered, the repo supplies a
-concrete research attack rather than evidence that the mass gap is near.
+Reachability still requires inherited-action and depth/cutoff stability at
+physical scales, continuum reconstruction, and a positive physical spectral
+gap. The compact posterior mode and its cell-distance decay do not establish
+those identifications or a mass-gap completion percentage.

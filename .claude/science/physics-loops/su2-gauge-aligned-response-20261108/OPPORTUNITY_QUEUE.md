@@ -1,22 +1,25 @@
 # Next science decisions
 
-The [proof tree](PROOF_TREE.md) maps the current finite-model results and
-open physical dependencies. The identity seven-edge marginal compact gas,
-connected density expansion, full four-response and exact conditional-
-normalizer subtraction are now the stated local milestone.
+The [proof tree](PROOF_TREE.md) now includes compact control and a connected
+expansion for the actual seven-edge marginal on a fixed small nonidentity
+terminal neighborhood. The next target is its use in an actual further
+transition, whose required conditional class has not yet been established.
 
-1. Define a fixed small nonidentity terminal-background class and prove the
-   corresponding full compact centered estimate: actual stationary field,
-   relative coercivity, source/readers and connected response uniform in
-   volume and background. The existing small-chart bound does not control
-   that compact complement.
-2. Determine the larger conditional geometries and rough terminal components
-   required by the exact third transition. An everywhere-small background
-   class has not been shown sufficient for this consumer.
-3. Test that transition with the actual inherited density and normalizers.
-   Track coercivity, localization, source norms and scale dependence rather
-   than replacing the inherited law by a new Wilson action.
+1. Derive the exact third-transition conditional law, source/orbit factor,
+   surviving normalizers and full readers. Identify the deletion geometries
+   and terminal background classes it actually generates.
+2. Prove the needed compact estimates for those geometries, including rough
+   terminal components and their normalization/reader budget. Do not assume
+   the everywhere-small class covers this integration.
+3. Test inherited-action closure and constants under repeated exact blocking.
+   Track physical-scale dependence; do not replace the inherited law by a
+   fresh Wilson density.
 
-Uniform depth/cutoff control and a nontrivial continuum QFT with positive
-finite physical mass remain downstream. No completion percentage, success
-probability or proof deadline is supported by the current results.
+An independent optional refinement is the small-background response power:
+the proved C(epsilon^2+u^-1) singlet bound and original-orbit allowance may
+not be sharp. Extra cancellation would need its own proof. This refinement
+does not discharge the geometry and rough-background consumer.
+
+Depth/cutoff control, nontrivial continuum QFT and positive finite physical
+mass remain downstream. No completion percentage or success probability is
+supported by these finite-model estimates.

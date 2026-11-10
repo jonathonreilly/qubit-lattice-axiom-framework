@@ -15,3 +15,9 @@ All prior unpublished mathematical suppliers are included in the PR. The
 historical draft PRs are provenance rather than dependencies. Publication
 and mathematical checking grant no formal retained status. Before a later
 landing, run the required integrated current-main review/validation path.
+
+The current continuation starts from published 97fc90828ab and extends the
+same packet to compact control of a fixed small nonidentity terminal class.
+Its four new proofs, primary and proof-map update have a scoped fresh-context
+research check. Preserve the same publication branch and all earlier sources.
+The exact latest head and body remain in the external publication checkpoint.

@@ -1,9 +1,9 @@
 status: open
-phase: marginal_compact_connected_response_checked
-author_source_head: c0497327ec81143f6f8b5369c86583ad3387d785
+phase: nonidentity_compact_connected_response_checked
+author_source_head: 97fc90828ab071b5813d1c9b6c8a952dc042509b
 science_source_base: 1e0d3b58dcda7f83152b0bb51729260247454d65
 refreshed_main: bf92a1d763030836ed55631d5d7a7ef3b288f284
-previous_checkpoint: c0497327ec81143f6f8b5369c86583ad3387d785
+previous_checkpoint: 97fc90828ab071b5813d1c9b6c8a952dc042509b
 branch: physics-loop/su2-gauge-aligned-response-20261108
 delivery: single_working_pr
 runtime: bounded_interactive_task
@@ -11,8 +11,8 @@ actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 trace_class: upstream_support
 reachability_to_target: partially_closes
-next_action: control compact nonidentity terminal backgrounds and conditional geometries needed for a further exact transition
-mathematical_check: fresh_host_three_new_proofs_and_primary_map_with_independent_pre_candidate_derivations
+next_action: derive and control the actual third-transition conditional geometry and rough terminal background class
+mathematical_check: fresh_host_four_nonidentity_proofs_and_primary_map_with_independent_pre_candidate_derivation
 formal_audit: not_performed
 publication: open_pr_10149
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10149
@@ -26,7 +26,7 @@ pending_check_parts: []
 public_writes:
   - branch_push_at_4a3f6be4cf
   - opened_pr_10149
-  - same_pr_continuations_at_551840d63d_fbdfb3c1b8_and_c0497327ec
+  - same_pr_continuations_at_551840d63d_fbdfb3c1b8_c0497327ec_and_97fc90828ab
 prompt_files_changed: []
 two_plaquette_compact_coercivity: bounded-support
 two_plaquette_actual_flat_precision: bounded-support
@@ -40,3 +40,8 @@ marginal_normalized_regional_energy: bounded-support
 marginal_compact_connected_expansion: bounded-support
 identity_two_plaquette_conditional_subtraction: bounded-support
 fable_connected_consultation: claude-fable-5-2_max_completed_old_text_advice_only
+nonidentity_compact_control: bounded-support
+fable_nonidentity_consultation: claude_fable_5_2_max_completed_advice_only
+nonidentity_connected_compact_expansion: bounded-support
+small_background_conditional_subtraction: bounded-support
+nonidentity_source_powers: proved_upper_bounds_not_claimed_sharp

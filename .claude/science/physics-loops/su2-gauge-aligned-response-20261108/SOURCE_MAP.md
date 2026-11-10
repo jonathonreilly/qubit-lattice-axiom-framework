@@ -1,5 +1,18 @@
 # Sources, premise matching, and credit
 
+## Current continuation sources
+
+Author source: 97fc90828ab071b5813d1c9b6c8a952dc042509b. Current-main and
+procedure pin at launch: bf92a1d763030836ed55631d5d7a7ef3b288f284.
+The four new nonidentity proofs name exact inherited-source hashes and read
+coverage. No earlier proof, gate or primary bytes are replaced. Luna's two
+nonidentity source records distinguish repo content, inspected main/open-PR
+candidates, primary-literature leads and inaccessible full-text limits.
+The new fresh-context report independently reconstructs the disputed step
+before candidate reads; Fable's tool-free maximum-effort call is approach
+advice, not certification. Exact final hashes are in the report/manifest.
+
+
 Science source base: `1e0d3b58dcda7f83152b0bb51729260247454d65` on main.
 Refreshed main: `bf92a1d763030836ed55631d5d7a7ef3b288f284`; intervening
 changes are audit/derived metadata only on this checked snapshot.

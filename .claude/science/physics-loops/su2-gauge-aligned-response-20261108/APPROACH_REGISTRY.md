@@ -1,5 +1,20 @@
 # Mathematical approach registry
 
+## Current continuation: displaced compact center
+
+Use complete normalized energy, its finite-range inverse, and global
+stationarity to cancel common tangent proxies. Compensate each local factor
+before regional truncation; then the existing shell and density-forest
+architecture applies at a fixed background. The shifted chart uses radial
+profile moments rather than an assumed zero mean. Source powers are
+recomputed explicitly. No new physical axiom or imported compact theorem.
+
+The fixed small-background target is now the current author milestone,
+with its independent check in gates/nonidentity-compact-check.md. The next
+route decision is the actual third-transition conditional geometry and rough
+terminal component budget; no route has been declared impossible.
+
+
 | Approach family | Decisive object | Current evidence and next use |
 |---|---|---|
 | Shared gauge quotient and aligned exchange | Exact hidden-chain Haar quotient and original source factor | Checked. Retains conditional covariance; used throughout. |
@@ -21,5 +36,6 @@ and Gaussian producers, including entropy and normalized-density readers.
 It bounds the actual identity-exterior Q law and retains original orbit
 covariance; the pinned companion has an explicit arbitrary-tree bridge.
 
-Next family decision: establish nonidentity terminal and conditional-class control before
+At the previous identity milestone, the next family decision was nonidentity
+terminal and conditional-class control before
 claiming a blocking-stable response. No route has been declared impossible.

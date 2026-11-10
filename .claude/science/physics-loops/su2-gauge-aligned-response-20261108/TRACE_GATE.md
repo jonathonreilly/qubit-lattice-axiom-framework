@@ -7,8 +7,18 @@ target_blocker_text: "full connected two-source/two-boundary response and its se
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Specify and control the nonidentity terminal backgrounds and conditional geometries needed for another exact normalized transition."
+next_trace_action: "Identify and control the conditional geometries and rough terminal components required by a third exact normalized transition."
 ```
+
+The latest primary extends compact control to a fixed small nonidentity
+terminal neighborhood: unique displaced Haar mode, compensated regional
+estimates, centered Gaussian match and connected compact/chart correction.
+The full quotient-singlet response has the proved C(epsilon^2+u^-1)
+bound; original sources retain the displayed conditional-orbit allowance.
+Its complete conditional-density subtraction includes the restored-kernel
+companion. The remaining third-transition geometry is not assumed closed.
+The following paragraph records the earlier identity special case.
+
 
 The present finite two-step results include the full compact numerator law
 at terminal identity and the actual seven-edge two-plaquette marginal law
@@ -31,7 +41,7 @@ with their frozen research checks. The new composition uses their actual
 scopes; formal audit is still separate. The complete proof tree is in
 [PROOF_TREE](PROOF_TREE.md).
 
-Nonidentity compact backgrounds, larger conditional geometries, inherited
+Beyond the new fixed small-background class, larger conditional geometries, inherited
 third-transition closure, depth/cutoff control, continuum existence and a
 physical spectral gap remain open. These are proposed research dependencies,
 not a proved reduction or a claim that a mass-gap solution is near. No TOE

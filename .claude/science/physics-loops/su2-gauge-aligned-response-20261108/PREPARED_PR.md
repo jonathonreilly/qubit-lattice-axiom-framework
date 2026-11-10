@@ -11,7 +11,8 @@ The owner's request to run one PR and work in it governs this continuation.
 The current proof tree, exact conditional normalization, gauge diagnostic,
 seven-edge compact coercivity, actual marginal Hessian, regional normalized
 energy, chart covariance, moment/ratio suppliers, full compact marginal
-connected response and identity conditional-normalizer subtraction, checks and open
+connected response, nonidentity compact center and connected estimates,
+conditional-normalizer subtraction on the small-background class, checks and open
 obligations belong in the same branch and PR. The external
 checkpoint records later publication heads and current PR text. No physical
 mass-gap claim or formal retained promotion is made by opening this PR.

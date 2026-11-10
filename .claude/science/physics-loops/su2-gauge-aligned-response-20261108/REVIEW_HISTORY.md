@@ -1,5 +1,48 @@
 # Research review and publication preparation
 
+## 2026-11-09: compact nonidentity background continuation
+
+Source 97fc90828ab; main bf92a1d763 and planning 56c5c0ab64 unchanged after
+fresh fetch. The four new proof parts and primary/map have the exact
+six-surface check in [nonidentity compact gate](gates/nonidentity-compact-check.md).
+The checker retained the selected inherited profile in a fresh restricted
+context, independently derived the mechanism before candidate access, then
+read every new argument and its necessary forest/chart inputs. Its exact
+SU2 counterexamples reject raw regional quadratic transfer and unjustified
+mean-zero inference; the radial identity detects a lost normalizer. The
+supervisor read all changed arguments. Same-family context separation is
+recorded; no audit-independence grade is assigned and the complete ancestral
+compact/reader chain was not recertified.
+
+Luna used the user-selected reading tier for the initial repo/literature
+pass and a broader main/open-PR addendum. Two gpt-6.1-sol medium-effort
+workers performed the bounded mode, regional and Gaussian assignments.
+The supervisor kept its selected model/effort for composition and decisive
+judgment. Managed worktrees were isolated; all final outputs/logs are copied
+with byte receipts before archival. Full local records are in
+logs/su2-nonidentity-compact-20261109/.
+
+The [Fable 5.2 maximum-effort consultation](sources/fable-nonidentity-compact-approach-20261109.md)
+completed successfully via tool-free CLI with actual model observed. Its
+five old input texts and candidate-route prompt did not include the new
+proofs or abstract forest. Its stronger source-power/IBP proposals are
+separate unproved suggestions, not a conclusion incorporated into the
+primary. The complete public answer and input hashes remain in that record;
+any later checker advice disposition follows its completed independent
+candidate verdict and does not change that chronology.
+
+The current theorem is a conditional bounded-support finite-model statement.
+At small fixed nonidentity backgrounds it gives exact compact control,
+connected compact/chart estimates, safe response powers with the orbit term,
+and the restored-kernel conditional subtraction. It does not establish a
+third-transition admissible background class, physical-scale iteration,
+continuum reconstruction or the physical mass gap. Earlier 55 mathematical/
+gate/primary files are unchanged; exact final hashes and focused vocabulary,
+link and whitespace checks are in the manifest. The one extra link-parser
+exclusion is explicitly inspected `D²[-log j](0)`, not a file reference.
+No numerical physics run, prompt edit, audit output or new axiom was made.
+
+
 Date: 2026-11-09. This is an author packet with independent mathematical
 research checks. It is not a review-loop landing verdict, formal audit,
 retained-status ratification. The prepublication record below is preserved;

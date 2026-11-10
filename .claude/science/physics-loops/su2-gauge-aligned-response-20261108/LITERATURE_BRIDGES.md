@@ -1,5 +1,19 @@
 # Literature and repository bridges
 
+## Current nonidentity comparison
+
+Luna's sources/nonidentity-compact-prior-art-20261109.md preceded the
+bounded proof assignments; sources/nonidentity-main-search-addendum-20261109.md
+adds deterministic current-main inventories and targeted open-PR retrieval.
+The existing repo already supplies local charts for small nonidentity
+outputs. The new compact complement requires its own centered proof.
+Balaban's 1985 background-field variational paper is the closest conceptual
+primary comparator; only its abstract was accessible, so no detailed
+hypothesis or proof was imported. Dimock's abelian setting also differs.
+The main one-step Dobrushin result is in a different parameter/model regime.
+The bounded search establishes neither novelty nor literature exhaustion.
+
+
 Luna's records are `sources/connected-response-repo-scan-20261109.md`,
 `sources/connected-response-literature-scan-20261109.md`, and
 `sources/frozen-forest-literature-addendum-20261109.md`. Exact source identities
@@ -40,3 +54,10 @@ Fable's complete approach answer and exact input boundary are preserved in
 global-orbit counterexample and extra chart-forest clause are tested against
 the actual local Haar source class and fixed-order chart proof. Advice about
 old texts is not labeled a check of the new candidates.
+
+The current [Fable nonidentity advice](sources/fable-nonidentity-compact-approach-20261109.md)
+is complete. It supports the route conditionally and proposes a stronger
+cumulant lemma, but supplies no proof of that strengthening or the two
+unsupplied producer contracts. The checked new Gaussian/forest match is
+independent of that advice; C2/C3 regularity distinctions and the current
+unimproved upper bounds remain explicit.

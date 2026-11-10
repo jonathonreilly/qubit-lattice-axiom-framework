@@ -1,5 +1,69 @@
 # Target contract
 
+## Completed continuation: compact nonidentity terminal backgrounds
+
+Owner request, local 2026-11-09, source head
+97fc90828ab071b5813d1c9b6c8a952dc042509b. Continue the same PR #10149,
+branch physics-loop/su2-gauge-aligned-response-20261108. Refreshed main and
+procedure remain bf92a1d763030836ed55631d5d7a7ef3b288f284; planning remains
+56c5c0ab64f532c5784e895b2f9aa6894fa334e0. The external checkpoint records
+the exact published head/body after push. No author merge occurs.
+
+The [new primary](../../../../docs/SU2_NONIDENTITY_COMPACT_CONTROL_BOUNDED_THEOREM_NOTE_2026-11-09.md)
+supplies compact control for the actual seven-edge marginal whenever
+sup chord(V_c,I)<=epsilon_*, for one sufficiently small fixed constant.
+The complete normalized Haar energy has a unique global mode a*(V,u) and
+two-sided all-compact relative coercivity, uniformly in volume and u>=1.
+Small relative hidden collars have their own modes with boundary penetration;
+localized terminal perturbations have an exponentially localized response.
+All surviving radial normalizers, including zero means, remain.
+
+Local factors require explicit tangent compensation before regional
+truncation. Its selected remainder is exterior-only and cancels from the
+actual conditional. This proves arbitrary-exterior regional bounds and
+radial-profile moments on compact and centered cube domains without exact
+mean-zero symmetry. The new Gaussian producer retains the shifted minimum,
+all actual kernel counts and all physical/Haar/Gaussian factors. The exact
+marked shell construction and forest budgets then give a uniform connected
+compact/chart correction O(exp(-c log(u)^(2A))) at sufficiently large u.
+
+The full quotient-singlet response is bounded by
+C(epsilon^2+u^-1) times tree decay, with weighted boundary-pair summability.
+Original sources retain the exact conditional-orbit covariance and its
+proved C(1+epsilon sqrt(u)) allowance where orbit readers meet. The restored
+seven-kernel companion controls p_J=N/Q_J when all terminal outputs are
+small. These powers are upper estimates, not claimed sharp.
+
+Luna's repo/primary-literature check preceded proof delegation; a subsequent
+current-main/open-PR pass records wider search limits. Two medium-effort
+proof authors completed three bounded assignments; the supervisor retained
+the selected profile for frontier decisions and composition and read all
+new arguments. The [fresh-context research check](gates/nonidentity-compact-check.md)
+derived the key mechanism before candidate access, supplied explicit compact
+counterexamples to bad regional/mean-zero shortcuts, and checked all four
+new proofs, the complete primary and changed map at exact hashes. Its
+ancestral compact/reader premises remain supplied, not recertified.
+
+[Fable 5.2 max approach advice](sources/fable-nonidentity-compact-approach-20261109.md)
+completed tool-free with observed claude-fable-5-2. It read five old texts
+and a candidate route, not the new proofs or forest. Its proposed stronger
+cumulant/IBP and gauge-extension claims are not imported. The current bounds
+already retain its warned-about source powers. The full public advice,
+input hashes and scope dispositions remain in the record. Research checks
+and this consultation are not formal audit or retained promotion.
+
+All 55 earlier proof/gate/primary files remain unchanged. Exact source,
+worker-copy, mechanical and publication receipts are under
+logs/su2-nonidentity-compact-20261109/ and in manifest.json. No numerical
+physics job, new runner, physical axiom, prompt/workflow or audit-output
+change occurs. Managed workers are archived after evidence copy; lease
+and publication disposition are recorded in STATE and external checkpoint.
+
+Next: derive the actual third-transition conditional law/reader geometry and
+control its rough terminal components. The everywhere-small class is not
+proved sufficient for that consumer. Inherited-action/depth/physical-scale
+closure, continuum construction and positive physical mass remain open.
+
 ## Completed target: marginal compact decomposition and connected-density expansion
 
 Owner request, local date 2026-11-09: continue #10149 from

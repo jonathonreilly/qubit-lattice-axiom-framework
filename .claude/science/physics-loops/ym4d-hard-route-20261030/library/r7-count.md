@@ -44,7 +44,7 @@ Hypotheses, all for one fixed label through `k`.
 
 - (A1) `T = Omega^a_0`, and `Omega^a_1 ⊃ Lambda^a_1 ⊃ Omega^a_2 ⊃ ... ⊃ Lambda^a_k` (Y 73136-73140). Put `Omega^a_{k+1} = empty`.
 - (A2) `Omega^a_m` is aligned at level m for `1 <= m <= k` (Y 62245: "`Omega^nu_l` is a region for `pi_l`", with `nu = 0`; `pi_l` is the partition into `M`-cubes of level `l`, Y 643-644, and `M` is a power of `L`; Y 62246: "The action regions are unions of coarse cubes"). Lemma C (section 5) gives more: `Omega^a_m` is a union of level-`m` cells.
-- (A3) `Z^a_j = (Lambda^a_j)^c` is a union of cubes of one partition `pi_j` of `T^(j)` into congruent cubes, and `~` adds only cubes of `pi_j` that touch a cube of `Z^a_j` (Y 62037: "one layer of M-cubes of its level"; Y 84039: "one cell layer"; Y 78897: "the one-layer enlargement costs a fixed multiplicity").
+- (A3) `Z^a_j = (Lambda^a_j)^c` is a union of cubes of one partition `pi_j` of `T^(j)` into congruent cubes, and `~` adds only cubes of `pi_j` that touch a cube of `Z^a_j` (Y 62037: "one layer of M-cubes of its level"; Y 84039: "one cell layer"; Y 78897: "the one-layer enlargement costs a fixed multiplicity"). Here `pi_j` is the `M`-cube partition and `~` one layer of `M`-cubes (Y 645-646, 62037, 84040-84041; check, row 625, item 2). If `~` at Y 84039 is read as one layer of level-`j` cells instead, Theorem A still holds with the same 81, on the cell grid, because `Z^a_j` is a union of cells by Lemma C (section 5); so both readings of Y 84039 give the count.
 
 Put `Gamma^a_n = Omega^a_n \ Omega^a_{n+1}` for `0 <= n <= k`, `g_n = #_n(Gamma^a_n)`, and `a_m = #_m((Omega^a_m)^c)` for `1 <= m <= k`.
 

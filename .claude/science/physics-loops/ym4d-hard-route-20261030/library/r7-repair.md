@@ -84,3 +84,20 @@ So in either case the count closes with the same constant; the choice affects on
 
 **Tent fit (used by Y 84109 at the base points of Case D; not the count; unchecked part named).** Under Corollary C, `s_j = M Rcheck_j`. A base point `z` has its cell and the 80 cells touching it in `Lambda^a_j`, so `D_j(z) >= M Rcheck_j` in level-`j` units, up to the boundary convention of half-open cells (Y 644, 73068-73071: a fixed number of neighbouring cells). The tent `h_z` is supported within `C_h M` level-`j` units of its anchor (Y 95875-95876: `|x(p) - x(p_y)| <= C_h M a_{K-j}`). If the anchor lies within `M` of `z` (not checked: Y 95874 says only "anchors `p_y ∈ P_K`"), then on `supp h_z`, `D_j >= M Rcheck_j - (C_h + 2) M >= 3 M Rcheck_j/4` once `Rcheck_j >= 4 (C_h + 2)`, which holds for `gamma <= gamma_1(r, L, C_h)` since `Rcheck_j >= (log gamma^{-2})^r` (Y 1102-1113). Then `phi_j = 1` on `supp h_z` and `phi_j h_z = h_z`. Open: the anchor position (gap, outside this item).
 
+## (a), (b): what was carried into the note
+
+- (a) Section 4 of the note: ceiling (G); Lemma G (`gamma_0 = y_0^{-1/2}`, `y_0 = max{2 c_5, 4 (Bbar L (2r)^r)^2, 2^{1/(L^{1/r}-1)}, e}`); Lemma W with (S) `Rcheck_i <= L Rcheck_t` for `t - Rcheck_t <= i <= t` and (W); Corollary S = Y 73382-73383. Line by line as in the check, item 7, with two small changes: step (S) is stated for every `i` in the window (the check did `h+1` and `h`), and the induction for `2(p+2) <= L^p` is written as `2(p+3) <= L^p + L^p <= L^{p+1}`. (G) is not in Y; it depends on `r, L, c_5, Bbar`, which precede `gamma` in Y 72930-72931, so it is one more ceiling on `gamma` (Y 72946). Line numbers re-read: `L >= 13` is Y 650, `c_5 = 2 c_2` is Y 72935, `R_{j+1}/R_j ∈ {1, L^{-1}}` is Y 73081-73082.
+- (b) Section 5 of the note: Lemma R, with base points `B_j` one cell layer inside `Lambda^a_j`, the cell enlargement `(Z^a_j)^≈`, factor 81, and the chain through Theorems A and B. The first version's claim "rim ⊂ `Z_j^+`" is recorded as false. With Lemma C, (A3)'s wording risk at Y 84039 ("one cell layer") is also closed: Theorem A holds in both readings of `~`.
+
+## Table
+
+| part | verdict | first open input |
+|---|---|---|
+| (a) (G), Lemma W, Corollary S in the note | done; proofs as checked in row 625 | none new; (G) is a new ceiling on `gamma`, admissible at `gamma` |
+| (b) Lemma R replaces section 5 | done; factor 81 on the cell grid | (C), now Lemma C |
+| (c) input (C) | PROVED (Lemma C), from Y 62080, 62174-62177, 62105-62116, 62121-62128, 62001, 73081-73083, 73088-73092 | Y's step regions being unions of cells (Y 62080, Balaban 119 p. 256) used as stated; reading (K) of components |
+| (d) islands in base points | defect of Y's wording at Y 83993-83994 (not a wrong reading): Y 84109 fails at island base points for `phi_j` as built at Y 1462, 1475; count unchanged in both readings (Lemma I, Remark I) | tent fit at base points: anchor position (Y 95874-95876) not fixed by Y |
+
+Not checked by another model: Lemma C, Lemma I, Remark I, the tent-fit remark. Next: a check of these by a model other than Claude Opus 5.5.
+
+RESULT: `library/r7-count.md` repaired by the check of row 625: (a) Lemma W proves (W) and Y's unproved scale comparison `Rcheck_{h_t} <= L Rcheck_t` (Y 73382-73383) from the frame and one new ceiling (G) on `gamma` (not in Y, admissible at `gamma` in Y 72930-72946); (b) section 5 replaced by Lemma R (rim `Rcheck_j` `M`-cube layers deep, counted on the cell grid, factor 81); (c) input (C) PROVED (Lemma C: the action sequence never changes at a drop-out, and steps, heals and islands write unions of cells), so R7-COUNT and its rim use hold with `C = 81 L^4/(L^4-1) * 35410` under Y's geometry as stated and (G); (d) the island base points of Y 83993 are a wording defect of Y (Y 84109 fails there for `phi_j` as built at Y 1462, 1475), and the count is the same in both readings. Open: a check of Lemma C and Remark I by another model; Y 62080 and Y 63684-63835 used as stated; the tent fit (anchor position) behind Y 84109.

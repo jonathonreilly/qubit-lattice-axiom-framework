@@ -65,7 +65,7 @@ Five findings for the lead.
    level-(i+1) plaquettes with all corners in `O_{i+1}` and a corner in the collar `K_i`; at the main step
    the level-t plaquettes with an edge in the box `Lambda^pr`. A stop (stage failure or sharp collar
    split) makes no plaquette fresh, because "the retained determining list still has index `n`"
-   (Y 77790-77791). So the supplier (S-col) is not needed for (COV-G): at a collar departure every tested
+   (Y 77793-77794). So the supplier (S-col) is not needed for (COV-G): at a collar departure every tested
    plaquette keeps the supplier it had at the entrance of the stage. (S-col) gives a second supplier with
    the test `chi_i^{(n+1)}`; if a consumer wants that one, it is a statement inside X.
 3. **(COV-X) is needed at every stage, and after the last one.** `library/cov-x.md` Theorem 6.1 is stated
@@ -162,7 +162,7 @@ set of level-l cells at index distance at most `r` from a cell of `A` (the `r`-c
   fails in a component, that component drops out"). Kind *sharp collar split*: in stage `n + 1`, after the
   regularity test `chi_s^{(n+1)}`, the collar gauge, the approximate test `chi'_j` at `2 delta'_j`
   (`j = s_flat + n`) and the removal, the sharp test at `delta'_j` fails (Y 77741-77763); "the retained
-  determining list still has index `n`" (Y 77790-77791). The *least-level departure* of a place
+  determining list still has index `n`" (Y 77793-77794). The *least-level departure* of a place
   (Y 65425-65426) is the departure of its owner.
 - **Waiting window.** For an operation of level `t`: the levels `(t_flat, t]` (Y 62128: "their windows
   `(s_flat, s]`"); the operation is eligible only if `t_flat >= 0` (Y 1182-1183; `>= 1` at Y 63684). The
@@ -325,7 +325,7 @@ and (D1); `Lambda^pr = Z''_t` enlarged by one layer of level-t `M`-cubes (Y 6383
   index `i + 1` leave the point; nothing else changes, in X or outside ("the exterior of the component is
   fixed", Y 77775; "The core operation ..., which contains the failed tests, is at no point unfolded",
   Y 63849).
-- **(F-stop) A stop of X after `n` completed stages, of either kind (Y 77790-77791; (R4)).** No row and no
+- **(F-stop) A stop of X after `n` completed stages, of either kind (Y 77793-77794; (R4)).** No row and no
   entry of the determining sequence changes: the sequence of a component with `n` completed stages and
   the sequence (R21) with `nu = n` of the drop-out are the same. The moves of the unfinished stage before
   a sharp collar split (regularity test, collar gauge, approximate test, completions, removals,

@@ -100,12 +100,15 @@ Mode selection:
     with a useful ready batch as soon as the coordinator is available; no fixed
     collection wait. The combined mechanical gate runs once in one clean
     integration worktree, verifies every frozen PR head
-    immediately before push, pushes atomically, verifies containment, and
-    rechecks each head immediately before its own close. The next empty train
+    immediately before push, records each frozen head under a recovery ref,
+    moves each head with an exact `--force-with-lease=<ref>:<frozen-head-sha>`
+    to its landed commits, fast-forwards `main` once, verifies containment, and
+    rechecks each landed head after the push. GitHub then shows each carried PR
+    as merged; the loop closes no landed PR. The next empty train
     opens as soon as the old membership freezes. Source conflicts, moving heads,
     or changed semantic interactions hold the affected unit and its dependents
     for original-session confirmation. Verify accepted constituent source on
-    current main before closing and preserve rejected/deferred recovery handles.
+    current main after landing and name each PR's recovery ref on the PR.
     A named focused target flushes as a one-component train once confirmed
     unless explicitly added to an ongoing backlog drain.
 
@@ -215,21 +218,20 @@ Mode selection:
   audit/status diff can be evidence of a real repo defect; land the underlying
   source/tooling/pipeline repair when it strengthens auditability, but never
   treat hand-authored generated status as the authority.
-- Delete a closed PR's head branch **only if durable content actually landed**
-  (salvaged to `main`, or merged), no deferred content still needs its recovery
-  handle, and a just-fetched head still equals the
-  frozen reviewed SHA. For a same-repository branch, require an exact
-  `--force-with-lease=<ref>:<frozen-head-sha>` deletion and close only after it
-  succeeds; leave fork heads intact. If the head moved, leave both PR and branch
-  open for fresh review. **Do not delete the branch when a PR is closed without
+- A landed PR shows as merged and is never closed by hand: the landing loop
+  moves its head and GitHub marks it merged. Close a PR only when nothing from
+  it reaches `main`. **Do not delete the branch when a PR is closed without
   landing its content** (rejected / nothing salvaged / salvage deferred) --
-  keep it as the handle on the un-landed work. Never delete a head that still
-  backs another open PR, nor `main`.
-  Before deletion, inventory open PRs using this branch as their base, including
-  drafts and out-of-unit dependents. Freeze their original heads, bases and
-  deltas; after parent source lands, retarget dependent bases to `main` and
+  keep it as the handle on the un-landed work. When part of a PR lands, its
+  original head stays at the recovery ref the loop recorded; never delete that
+  ref. Never delete a head that still backs another open PR, nor `main`.
+  GitHub deletes a merged PR's head branch while automatic deletion is on, so
+  before the landing push inventory open PRs using this branch as their base,
+  including drafts and out-of-unit dependents. Freeze their original heads,
+  bases and deltas; retarget dependent bases to `main` and
   verify unchanged heads and open states. Re-list old-base dependents before
-  deleting; preserve the parent branch if any remain or a head changed.
+  the push; preserve the parent branch if any remain or a head changed, and do
+  not land that unit.
   Verify dependent PRs remain open after deletion. GitHub can close a PR when
   its base disappears; follow the canonical exact-ref restoration/reopen
   recovery if that occurs. Base maintenance grants no science acceptance.

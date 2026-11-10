@@ -62,6 +62,16 @@ lowering the review bar.
    saying why, for example: "runner only rechecks assumed premise",
    "claim depends on closed sibling", "noncanonical stretch packet with no
    theorem-grade boundary", or "overbroad theorem not supported by runner".
+   Close the PR only in this case, when nothing from it reaches `main`, and
+   keep its branch.
+9. A PR from which any slice lands shows as merged, not closed: the landing
+   loop in `LANDING.md` moves its head to the landed commits. Say on the PR
+   what landed, what was left out and why, and name the recovery ref that
+   holds its original head (`refs/review-loop/recovery/pr-<N>/<frozen-head-sha>`).
+   That ref is the handle on the unlanded remainder; never delete it. A
+   merged PR cannot land a second time: decide every slice before the first
+   landing where you can, because a later slice needs a new PR that its author
+   or lead opens from that ref.
 
 Salvageable examples:
 

@@ -75,40 +75,52 @@ branch, review-loop either fixes/narrows that existing landing path and lands it
 when requested, or rejects/closes it with a clear reason. Salvage, dependency
 chain repair, audit queue regeneration, and parent re-audit gates are part of
 that same landing path, not follow-up PRs.
-Delete a closed PR's head branch **only when durable content actually landed** --
-its reviewed content was salvaged to `main`, or it was merged. Preserve the
-branch instead when deferred content still needs that recovery
-handle; partial salvage does not authorize deleting unlanded work. Immediately
-before closing, refetch the PR head and require the frozen head SHA. If it moved,
-leave the PR open and the branch intact for a fresh review of the new head. For
-an unchanged same-repository head, delete only with an exact lease, for example
-`git push --force-with-lease=refs/heads/<head>:<frozen-head-sha> origin
-:refs/heads/<head>`, and close the PR only after that deletion succeeds. A fork
-head that cannot be lease-deleted from `origin` may be closed but must be left
-intact. **Do NOT delete the head branch when a PR is closed without landing its
-content** -- rejected as non-landable with nothing salvaged, or with salvage
-deferred to a later pass: keep that branch as the working handle on the
-un-landed work. Never delete a head that still backs another open PR, nor `main`
-or a protected branch. Before deleting a landed branch, list open PRs that
+A landed PR shows as merged (owner decision 2026-11-10). Review-loop never
+closes a landed PR and never merges one through GitHub's button or API: the
+[landing loop](references/LANDING.md) moves the PR's head, under an exact
+lease, to the landed commits, and GitHub marks the PR merged when `main`
+receives them. Close a PR only when nothing from it reaches `main`, with the
+reason, after the salvage pass. Immediately before closing, refetch the PR head
+and require the frozen head SHA. If it moved, leave the PR open and the branch
+intact for a fresh review of the new head. **Do NOT delete the head branch when
+a PR is closed without landing its content** -- rejected as non-landable with
+nothing salvaged, or with salvage deferred to a later pass: keep that branch as
+the working handle on the un-landed work. When only part of a PR lands, the PR
+still shows merged. Its original head stays at the recovery ref the loop
+recorded, `refs/review-loop/recovery/pr-<N>/<frozen-head-sha>`, which is then
+the handle on the unlanded part: name it on the PR and never delete it. A
+merged PR cannot land a second time, so that part lands later only from a new
+PR that its author or lead opens from the ref; review-loop still opens none.
+The loop cannot move a fork head: hold such a PR and report it.
+
+While automatic head-branch deletion is on for the repository, GitHub deletes
+the head branch of a merged PR within seconds, and GitHub closes open PRs whose
+base branch is deleted. So protect dependents before the landing push, not
+after it. Before the loop moves a head, list open PRs that
 use it as their base, including drafts and PRs outside the current review unit.
 Freeze each dependent PR's number, head SHA, original base and original delta.
 Fetch newly discovered child heads before computing their deltas and verify
 metadata again after fetching; [`references/OPERATIONS.md`](references/OPERATIONS.md) provides the guarded
 `scripts/review_workspace.py fetch-head` command. Missing local objects never
 justify skipping a child or substituting a stale base.
-After verifying the parent's complete reviewed source is durable on `main`,
-retarget those dependent PR bases to `main` without changing their heads or
-closing them. This is base maintenance, not review or landing of their content.
-Verify each dependent remains open with its frozen head and the new base, then
-re-list open PRs targeting the old base immediately before deletion. If any
-remain or a head changed, preserve the parent branch for recovery and record
-the pending base maintenance; do not delete it. GitHub closes open PRs whose
-base branch is deleted, so a same-head check alone cannot preserve the stack.
-After deletion, verify the expected dependent PRs remain open; if GitHub closed
+Then retarget those dependent PR bases to `main` without changing their heads
+or closing them. This is base maintenance, not review or landing of their
+content. Verify each dependent remains open with its frozen head and the new
+base, then re-list open PRs targeting the old base immediately before the
+landing push; the loop refuses to move a head while one remains. If any remain
+or a head changed, do not land that unit: preserve the parent branch for recovery
+and record the pending base maintenance.
+After the push, verify the expected dependent PRs remain open; if GitHub closed
 one, restore the exact deleted parent ref with an absent-ref lease, reopen the
-unchanged dependent, retarget its base, and repeat the checks before deletion.
+unchanged dependent, retarget its base, and repeat the checks.
 A failed retarget or recovery is a recorded operation failure, never permission
 to close unreviewed content.
+
+If a merged PR's head branch still exists, delete it only when it still equals
+the head the loop pushed and no open PR uses it as base, with an exact lease,
+for example `git push --force-with-lease=refs/heads/<head>:<landed-head-sha>
+origin :refs/heads/<head>`. Never delete a head that still backs another open
+PR, nor `main` or a protected branch.
 (Closed PRs retain their commits either way; the live
 branch matters as the recovery handle precisely when the content did not land.)
 It auto-corrects status vocabulary and terminology so a PR follows repo

@@ -89,7 +89,7 @@ TRAIN_CLEAN_CONTEXT = """   TRAIN_COMBINED_CLEAN_SCOPE=integrated-candidate
      echo "FAILED: candidate diff checks; do not land" >&2
      exit 1
    fi"""
-TRAIN_HEAD_FUNCTION_CONTEXT = """   verify_frozen_pr_head() {
+TRAIN_HEAD_FUNCTION_CONTEXT = """   verify_pr_head() {
      local pr="$1" expected="$2" live_ref actual
      case "$pr" in
        ''|*[!0-9]*) return 1 ;;
@@ -101,15 +101,54 @@ TRAIN_HEAD_FUNCTION_CONTEXT = """   verify_frozen_pr_head() {
      actual="$(git rev-parse --verify "$live_ref")" || return 1
      [ "$actual" = "$expected" ]
    }"""
+# The lander moves each PR head so that GitHub marks the PR merged. Every
+# guard below must run, in this order, before `main` is pushed: frozen heads,
+# GitHub state, recovery refs, the leased head push, and the wait for
+# refs/pull/<N>/head.
 TRAIN_PRE_PUSH_HEAD_CONTEXT = """     if ! verify_frozen_pr_heads; then
        echo "FAILED: PR head moved; dissolve the train without pushing" >&2
        exit 1
      fi
+     if ! verify_pr_github_state; then
+       echo "FAILED: a carried PR is not open on main from its recorded branch, or an open PR is based on a carried head; nothing was pushed" >&2
+       exit 1
+     fi
+     if ! record_recovery_refs; then
+       echo "FAILED: could not record every recovery ref; no head was moved" >&2
+       exit 1
+     fi
+     if ! move_pr_heads; then
+       echo "FAILED: leased head push refused; no head was moved" >&2
+       exit 1
+     fi
+     if ! wait_for_landed_pr_heads; then
+       echo "FAILED: a PR does not show the pushed head; main was not pushed" >&2
+       restore_frozen_pr_heads
+       exit 1
+     fi
      if git push -q origin HEAD:main; then"""
-TRAIN_POST_PUSH_HEAD_CONTEXT = """     if verify_frozen_pr_head "$pr" "$expected"; then
-       printf 'CLOSE_READY %s %s\\n' "$pr" "$expected"
-     else
+TRAIN_HEAD_MOVE_CONTEXT = """   move_pr_heads() {
+     local index
+     local -a leases specs
+     leases=()
+     specs=()
+     for index in "${!PR_NUMBERS[@]}"; do
+       leases+=("--force-with-lease=refs/heads/${PR_HEAD_REFS[$index]}:${PR_HEADS[$index]}")
+       specs+=("${PR_LANDED[$index]}:refs/heads/${PR_HEAD_REFS[$index]}")
+     done
+     git push -q --atomic "${leases[@]}" origin "${specs[@]}"
+   }"""
+TRAIN_HEAD_RESTORE_CONTEXT = """     if ! restore_frozen_pr_heads; then
+       echo "FAILED: main was not updated and a PR head could not be restored" >&2
+       exit 1
+     fi
+     sleep 3"""
+TRAIN_POST_PUSH_HEAD_CONTEXT = """     if ! verify_pr_head "$pr" "$expected"; then
        echo "LEAVE_OPEN $pr: PR head moved after landing" >&2
+     elif pr_shows_merged "$pr"; then
+       printf 'MERGED %s %s %s\\n' "$pr" "${PR_HEADS[$index]}" "$expected"
+     else
+       echo "NOT_MERGED $pr: main holds $expected but GitHub does not show the PR merged" >&2
      fi"""
 
 REVIEWER_BODY_RULES: dict[str, str] = {
@@ -261,18 +300,34 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
     "landing_train_head_guard": (
         r"PR_NUMBERS=\(",
         r"PR_HEADS=\(",
+        r"PR_HEAD_REFS=\(",
+        r"PR_TIPS=\(",
         r"verify_frozen_pr_heads\(\)",
+        r"verify_pr_github_state\(\)",
+        r"record_recovery_refs\(\)",
+        r"refs/review-loop/recovery/pr-",
+        r"move_pr_heads\(\)",
+        r"restore_frozen_pr_heads\(\)",
         r"PR head moved; dissolve the train without pushing",
         r"post-push head check",
         r"force-with-lease=refs/heads/<head>:<frozen-head-sha>",
     ),
+    "landed_pr_shows_merged": (
+        r"A landed PR shows as merged \(owner decision 2026-11-10\)\. Review-loop never\s+"
+        r"closes a landed PR and never merges one through GitHub's button or API",
+        r"Close a PR only when nothing from it reaches `main`",
+        r"The lander\s+merges nothing through GitHub and closes no landed PR\.",
+        r"A `NOT_MERGED` line means the mechanism failed for\s+that PR",
+        r"do not close it by hand, and report it to the owner",
+    ),
     "dependent_pr_base_preservation": (
+        r"So protect dependents before the landing push, not\s+after it\.",
         r"list open PRs that\s+use it as their base, including drafts",
         r"Freeze each dependent PR's number, head SHA, original base and original delta",
         r"retarget those dependent PR bases to `main` without changing their heads",
-        r"re-list open PRs targeting the old base immediately before deletion",
+        r"re-list open PRs targeting the old base immediately before the\s+landing push",
         r"preserve the parent branch for recovery",
-        r"After deletion, verify the expected dependent PRs remain open",
+        r"After the push, verify the expected dependent PRs remain open",
         r"restore the exact deleted parent ref with an absent-ref lease",
     ),
     "live_surface_routing": (
@@ -348,6 +403,10 @@ UNIT_PROSE_RULES: dict[str, tuple[str, ...]] = {
         r"A changed PR head fails the provenance\s+gate even if source bytes look identical\.",
         r"A changed premise, input, source byte,\s+or semantic interaction reopens the affected conclusion",
         r"Both require renewed frozen provenance and same-session confirmation\.",
+        r"^The lander's own push in the \[landing loop\]\(LANDING\.md\) is not a changed head in\s+this sense\.",
+        r"under an exact lease on that frozen SHA",
+        r"only after\s+the frozen head is recorded under a recovery ref",
+        r"Any other movement of a head,\s+before or after that push, still fails the gate\.",
     ),
     "shared_validation_placement": (
         r"^Perform focused source, runner, premise, vocabulary, and all three diff checks\s+per unit before freezing it\.",
@@ -362,8 +421,8 @@ UNIT_PROSE_RULES: dict[str, tuple[str, ...]] = {
         r"^Exclude drafts by default\. Explicit owner-directed draft triage may review a",
         r"mark-ready is not PASS, and a still-draft PR cannot land\.",
         r"Exclude owner-reserved\s+PRs from units and their inherited content unless that reservation is explicitly\s+lifted\.",
-        r"^   Before closing each constituent, verify its accepted/narrowed/superseding\s+source and evidence on current `origin/main` against the disposition map;",
-        r"never delete its recovery branch for partial salvage\.",
+        r"^   After the loop, verify each constituent's accepted/narrowed/superseding\s+source and evidence on current `origin/main` against the disposition map;",
+        r"never delete the recovery ref of such a PR\.",
         r"review-loop must\s+not invoke an auditor or apply a scientific verdict/status\.",
     ),
 }
@@ -385,6 +444,7 @@ SKILL_RULE_LOCATIONS = {
     "landing_train_scheduler": ("references/LANDING.md",),
     "landing_train_combined_gate": ("references/LANDING.md", "references/COMBINED_VALIDATION.md"),
     "landing_train_head_guard": ("SKILL.md", "references/LANDING.md"),
+    "landed_pr_shows_merged": ("SKILL.md", "references/LANDING.md"),
     "dependent_pr_base_preservation": ("SKILL.md",),
     "live_surface_routing": ("references/REVIEW_SETUP.md", "references/SCIENCE_LENSES.md", "references/AUDIT_COMPATIBILITY.md"),
     "pipeline_strict_and_evidence": ("references/COMBINED_VALIDATION.md",),
@@ -422,8 +482,10 @@ COMMAND_RULES: dict[str, tuple[str, ...]] = {
         r"double-buffered landing train",
         r"next empty train\s+opens as soon as the old membership freezes",
         r"verifies every frozen PR head\s+immediately before push",
-        r"rechecks each head immediately before its own close",
+        r"records each frozen head under a recovery ref",
         r"force-with-lease=<ref>:<frozen-head-sha>",
+        r"rechecks each landed head after the push",
+        r"the loop closes no landed PR",
     ),
     "command_dependent_base_preservation": (
         r"inventory open PRs using this branch as their base",
@@ -1017,23 +1079,40 @@ def _train_head_guard_structure_ok(scan: MarkdownScan) -> bool:
     if shell is None:
         return False
     active, depths = shell
-    if not _active_context_is_at_depth(active, TRAIN_HEAD_FUNCTION_CONTEXT, 0):
-        return False
-    if not _active_context_is_at_depth(active, TRAIN_PRE_PUSH_HEAD_CONTEXT, 1):
-        return False
-    if not _active_context_is_at_depth(active, TRAIN_POST_PUSH_HEAD_CONTEXT, 1):
-        return False
+    for context, depth in (
+        (TRAIN_HEAD_FUNCTION_CONTEXT, 0),
+        (TRAIN_HEAD_MOVE_CONTEXT, 0),
+        (TRAIN_PRE_PUSH_HEAD_CONTEXT, 1),
+        (TRAIN_HEAD_RESTORE_CONTEXT, 1),
+        (TRAIN_POST_PUSH_HEAD_CONTEXT, 1),
+    ):
+        if not _active_context_is_at_depth(active, context, depth):
+            return False
     return _ordered_lines_at_depth(
         active,
         depths,
         (
-            ("verify_frozen_pr_head() {", 0),
+            ("verify_pr_head() {", 0),
             ("verify_frozen_pr_heads() {", 0),
+            ("verify_pr_github_state() {", 0),
+            ("record_recovery_refs() {", 0),
+            ("move_pr_heads() {", 0),
+            ("wait_for_landed_pr_heads() {", 0),
+            ("restore_frozen_pr_heads() {", 0),
             ("if ! verify_frozen_pr_heads; then", 1),
+            ("if ! verify_pr_github_state; then", 1),
+            ("if ! record_recovery_refs; then", 1),
+            ("if ! move_pr_heads; then", 1),
+            ("if ! wait_for_landed_pr_heads; then", 1),
             ("if git push -q origin HEAD:main; then", 1),
+            ("if ! restore_frozen_pr_heads; then", 1),
             ('if ! git merge-base --is-ancestor "$landed" origin/main; then', 0),
-            ('if verify_frozen_pr_head "$pr" "$expected"; then', 1),
-            ("printf 'CLOSE_READY %s %s\\n' \"$pr\" \"$expected\"", 2),
+            ('if ! verify_pr_head "$pr" "$expected"; then', 1),
+            (
+                "printf 'MERGED %s %s %s\\n' \"$pr\" "
+                "\"${PR_HEADS[$index]}\" \"$expected\"",
+                2,
+            ),
         ),
     )
 

@@ -227,11 +227,38 @@ review-only flags contradict the drain's land-end-to-end contract).
    clean-state checks, and exact-tree receipts.
    No component is landed until those gates pass.
 
-   After the combined gate passes, push the exact candidate once to `main`.
+   After the combined gate passes, land the exact candidate so that every
+   carried PR shows as merged on GitHub (owner decision 2026-11-10;
+   `docs/ai_methodology/SETTINGS.md`, PR state). GitHub marks a PR merged when
+   its head becomes reachable from its base (GitHub documentation, "Indirect
+   merges"; confirmed on this repository on 2026-11-10 with PRs 10151 and
+   10152). The loop below therefore records each frozen head under
+   `refs/review-loop/recovery/pr-<N>/<frozen-head-sha>`, moves each PR's head
+   branch, under an exact
+   `--force-with-lease=refs/heads/<head>:<frozen-head-sha>`, to the candidate
+   commit that completes that PR's reviewed commits, so that the heads are
+   stacked in train order, waits until every `refs/pull/<N>/head` shows the
+   pushed head, and then pushes the exact candidate once to `main` as an
+   ordinary fast-forward. That one push merges the whole train. The lander
+   merges nothing through GitHub and closes no landed PR.
    `origin/main`'s fast-forward atomicity remains the serializer. If main moved
-   after the train base was fetched, do not replay a stale PASS or force-push:
-   fetch, rebuild the entire candidate on the new base, rerun the combined
-   gate, and try the ordinary fast-forward push again. A
+   after the train base was fetched, do not replay a stale PASS or force-push
+   `main`: the loop moves every head back to its frozen SHA, then fetch,
+   rebuild the entire candidate on the new base, rerun the combined gate, and
+   run the loop again.
+
+   Before the loop, every carried PR must be open, not a draft, from a branch
+   of this repository and based on `main`. Retarget to `main` a constituent
+   that is based on another constituent's branch. No other open PR, draft or
+   not, may use a carried head branch as its base: retarget those dependents
+   to `main` first under the
+   [dependent-PR rules](../SKILL.md#model-and-tool-boundary), because GitHub
+   deletes the head branch of a merged PR while automatic head-branch deletion
+   is on for the repository, as it was on 2026-11-10. The loop reads this state
+   through `gh` and refuses to push otherwise. A PR from a fork cannot be
+   landed by this loop: hold it and report it.
+
+   A
    conflict touching only `docs/audit/data/citation_graph_manifest.json`
    is resolved by regenerating it from the landed tree
    (`build_citation_graph.py` then `write_citation_graph_manifest.py`),
@@ -267,11 +294,45 @@ review-only flags contradict the drain's land-end-to-end contract).
    COMMITS=(<pr-a-oldest> ... <pr-a-newest> <pr-b-oldest> ...)
    PR_NUMBERS=(<pr-a-number> <pr-b-number> ...)
    PR_HEADS=(<pr-a-frozen-head-sha> <pr-b-frozen-head-sha> ...)
-   if [ "${#PR_NUMBERS[@]}" -ne "${#PR_HEADS[@]}" ]; then
-     echo "FAILED: PR number/head inventory mismatch" >&2
+   # Each PR's head branch in this repository, and the entry of COMMITS that
+   # completes that PR. List the PRs in the order of those entries. The last
+   # one is the last commit, so every landed commit belongs to a carried PR.
+   PR_HEAD_REFS=(<pr-a-head-branch> <pr-b-head-branch> ...)
+   PR_TIPS=(<pr-a-newest> <pr-b-newest> ...)
+   if [ -z "${BASH_VERSION:-}" ]; then
+     echo "FAILED: run the landing loop with bash" >&2
      exit 1
    fi
-   verify_frozen_pr_head() {
+   if [ "${#PR_NUMBERS[@]}" -eq 0 ] \
+      || [ "${#PR_NUMBERS[@]}" -ne "${#PR_HEADS[@]}" ] \
+      || [ "${#PR_NUMBERS[@]}" -ne "${#PR_HEAD_REFS[@]}" ] \
+      || [ "${#PR_NUMBERS[@]}" -ne "${#PR_TIPS[@]}" ]; then
+     echo "FAILED: PR number/head/branch/tip inventory mismatch" >&2
+     exit 1
+   fi
+   # PR_DEPTHS: how many entries of COMMITS the landed head of each PR holds.
+   total="${#COMMITS[@]}"
+   PR_DEPTHS=()
+   previous_depth=0
+   for tip in "${PR_TIPS[@]}"; do
+     depth=0
+     for index in "${!COMMITS[@]}"; do
+       if [ "${COMMITS[$index]}" = "$tip" ]; then
+         depth=$((index + 1))
+       fi
+     done
+     if [ "$depth" -lt 1 ] || [ "$depth" -lt "$previous_depth" ]; then
+       echo "FAILED: PR tip $tip is not in COMMITS in train order" >&2
+       exit 1
+     fi
+     PR_DEPTHS+=("$depth")
+     previous_depth="$depth"
+   done
+   if [ "$previous_depth" -ne "$total" ]; then
+     echo "FAILED: the last PR tip is not the last reviewed commit" >&2
+     exit 1
+   fi
+   verify_pr_head() {
      local pr="$1" expected="$2" live_ref actual
      case "$pr" in
        ''|*[!0-9]*) return 1 ;;
@@ -286,11 +347,110 @@ review-only flags contradict the drain's land-end-to-end contract).
    verify_frozen_pr_heads() {
      local index
      for index in "${!PR_NUMBERS[@]}"; do
-       if ! verify_frozen_pr_head \
+       if ! verify_pr_head \
             "${PR_NUMBERS[$index]}" "${PR_HEADS[$index]}"; then
          return 1
        fi
      done
+   }
+   # GitHub marks a PR merged only when its head becomes reachable from its
+   # base, and it deletes a merged PR's head branch while automatic deletion
+   # is on. So every carried PR must be open, not a draft, from this
+   # repository and based on main, with the recorded branch and frozen head,
+   # and no open PR may still use a carried head branch as its base.
+   verify_pr_github_state() {
+     local index pr ref seen
+     for index in "${!PR_NUMBERS[@]}"; do
+       pr="${PR_NUMBERS[$index]}"
+       ref="${PR_HEAD_REFS[$index]}"
+       seen="$(gh pr view "$pr" \
+         --json state,isDraft,isCrossRepository,baseRefName,headRefName,headRefOid \
+         --jq '[.state, .isDraft, .isCrossRepository, .baseRefName, .headRefName, .headRefOid] | map(tostring) | join(" ")')" \
+         || return 1
+       [ "$seen" = "OPEN false false main ${ref} ${PR_HEADS[$index]}" ] || return 1
+       seen="$(gh pr list --state open --base "$ref" --json number --jq length)" \
+         || return 1
+       [ "$seen" = 0 ] || return 1
+     done
+   }
+   # The frozen head must stay reachable after its branch is rewritten and
+   # after GitHub deletes that branch. Record it before any head moves.
+   record_recovery_refs() {
+     local index ref seen
+     local -a specs
+     specs=()
+     for index in "${!PR_NUMBERS[@]}"; do
+       ref="refs/review-loop/recovery/pr-${PR_NUMBERS[$index]}/${PR_HEADS[$index]}"
+       specs+=("${PR_HEADS[$index]}:${ref}")
+     done
+     git push -q origin "${specs[@]}" || return 1
+     for index in "${!PR_NUMBERS[@]}"; do
+       ref="refs/review-loop/recovery/pr-${PR_NUMBERS[$index]}/${PR_HEADS[$index]}"
+       seen="$(git ls-remote origin "$ref")" || return 1
+       [ "${seen%%[[:space:]]*}" = "${PR_HEADS[$index]}" ] || return 1
+       printf 'RECOVERY_REF %s %s\n' "${PR_NUMBERS[$index]}" "$ref"
+     done
+   }
+   # One atomic push: every head moves, each under an exact lease on its
+   # frozen SHA, or none does.
+   move_pr_heads() {
+     local index
+     local -a leases specs
+     leases=()
+     specs=()
+     for index in "${!PR_NUMBERS[@]}"; do
+       leases+=("--force-with-lease=refs/heads/${PR_HEAD_REFS[$index]}:${PR_HEADS[$index]}")
+       specs+=("${PR_LANDED[$index]}:refs/heads/${PR_HEAD_REFS[$index]}")
+     done
+     git push -q --atomic "${leases[@]}" origin "${specs[@]}"
+   }
+   verify_landed_pr_heads() {
+     local index
+     for index in "${!PR_NUMBERS[@]}"; do
+       if ! verify_pr_head \
+            "${PR_NUMBERS[$index]}" "${PR_LANDED[$index]}"; then
+         return 1
+       fi
+     done
+   }
+   # refs/pull/<N>/head follows the head branch a few seconds late. Do not
+   # push main until every PR shows the head this loop pushed.
+   wait_for_landed_pr_heads() {
+     local try
+     for try in 1 2 3 4 5 6 7 8 9 10; do
+       if verify_landed_pr_heads; then
+         return 0
+       fi
+       sleep 3
+     done
+     return 1
+   }
+   # Undo this loop's own head push, each head under an exact lease on the
+   # commit the loop pushed, so a head that someone else moved is left alone.
+   restore_frozen_pr_heads() {
+     local index ref failed
+     failed=""
+     for index in "${!PR_NUMBERS[@]}"; do
+       ref="refs/heads/${PR_HEAD_REFS[$index]}"
+       if ! git push -q \
+            --force-with-lease="${ref}:${PR_LANDED[$index]}" \
+            origin "${PR_HEADS[$index]}:${ref}"; then
+         echo "NOT_RESTORED ${PR_NUMBERS[$index]}: ${ref} is off its frozen head, kept at refs/review-loop/recovery/pr-${PR_NUMBERS[$index]}/${PR_HEADS[$index]}" >&2
+         failed=1
+       fi
+     done
+     [ -z "$failed" ]
+   }
+   pr_shows_merged() {
+     local pr="$1" try state
+     for try in 1 2 3 4 5 6 7 8 9 10; do
+       state="$(gh pr view "$pr" --json state --jq .state)" || state=""
+       if [ "$state" = MERGED ]; then
+         return 0
+       fi
+       sleep 3
+     done
+     return 1
    }
    refresh_manifest=""
    for commit in "${COMMITS[@]}"; do
@@ -387,13 +547,56 @@ review-only flags contradict the drain's land-end-to-end contract).
        echo "FAILED: integrated tree differs from the validated candidate" >&2
        exit 1
      fi
+     # The candidate is one new commit per reviewed commit on the gated base,
+     # so the landed head of each PR is the commit that completes its share.
+     if [ "$(git rev-list --count "$VALIDATED_BASE"..HEAD)" != "$total" ]; then
+       echo "FAILED: candidate is not one commit per reviewed commit" >&2
+       exit 1
+     fi
+     PR_LANDED=()
+     for index in "${!PR_NUMBERS[@]}"; do
+       depth="${PR_DEPTHS[$index]}"
+       if ! stacked="$(git rev-parse --verify "HEAD~$((total - depth))^{commit}")"; then
+         echo "FAILED: could not name the landed head of PR ${PR_NUMBERS[$index]}" >&2
+         exit 1
+       fi
+       PR_LANDED+=("$stacked")
+     done
      if ! verify_frozen_pr_heads; then
        echo "FAILED: PR head moved; dissolve the train without pushing" >&2
+       exit 1
+     fi
+     if ! verify_pr_github_state; then
+       echo "FAILED: a carried PR is not open on main from its recorded branch, or an open PR is based on a carried head; nothing was pushed" >&2
+       exit 1
+     fi
+     if ! record_recovery_refs; then
+       echo "FAILED: could not record every recovery ref; no head was moved" >&2
+       exit 1
+     fi
+     if ! move_pr_heads; then
+       echo "FAILED: leased head push refused; no head was moved" >&2
+       exit 1
+     fi
+     if ! wait_for_landed_pr_heads; then
+       echo "FAILED: a PR does not show the pushed head; main was not pushed" >&2
+       restore_frozen_pr_heads
        exit 1
      fi
      if git push -q origin HEAD:main; then
        landed="$(git rev-parse HEAD)"
        break
+     fi
+     # The remote may have accepted the push although this client saw an
+     # error. Land on containment; otherwise undo the head push and retry.
+     if git fetch -q origin +refs/heads/main:refs/remotes/origin/main \
+        && git merge-base --is-ancestor HEAD origin/main; then
+       landed="$(git rev-parse HEAD)"
+       break
+     fi
+     if ! restore_frozen_pr_heads; then
+       echo "FAILED: main was not updated and a PR head could not be restored" >&2
+       exit 1
      fi
      sleep 3
    done
@@ -411,35 +614,53 @@ review-only flags contradict the drain's land-end-to-end contract).
      exit 1
    fi
    echo "LANDED $landed"
-   # Build the close-ready set one PR at a time from a post-push head check.
+   # Report each PR from a post-push head check. The lander closes nothing
+   # and merges nothing: GitHub marks a PR merged once main holds its head.
    for index in "${!PR_NUMBERS[@]}"; do
      pr="${PR_NUMBERS[$index]}"
-     expected="${PR_HEADS[$index]}"
-     if verify_frozen_pr_head "$pr" "$expected"; then
-       printf 'CLOSE_READY %s %s\n' "$pr" "$expected"
-     else
+     expected="${PR_LANDED[$index]}"
+     if ! verify_pr_head "$pr" "$expected"; then
        echo "LEAVE_OPEN $pr: PR head moved after landing" >&2
+     elif pr_shows_merged "$pr"; then
+       printf 'MERGED %s %s %s\n' "$pr" "${PR_HEADS[$index]}" "$expected"
+     else
+       echo "NOT_MERGED $pr: main holds $expected but GitHub does not show the PR merged" >&2
      fi
    done
    ```
    Every step is conditioned; push success captures the landed sha; retry
    exhaustion and non-containment both exit nonzero — the loop can never
    report success without the landed sha verified inside `origin/main`.
-   Before closing each constituent, verify its accepted/narrowed/superseding
+   No ref is written before the base, tree, frozen-head and GitHub-state
+   checks pass, and no head moves before every recovery ref is confirmed on
+   the remote. The head push is atomic and leased: every head moves or none
+   does. If `main` is then not updated, the loop moves each head back to its
+   frozen SHA under an exact lease on the commit it pushed. A head it cannot
+   move back is printed as `NOT_RESTORED` with its recovery ref, and the loop
+   exits nonzero.
+
+   After the loop, verify each constituent's accepted/narrowed/superseding
    source and evidence on current `origin/main` against the disposition map;
-   record rejected/deferred content and its preserved recovery handle. Commit
-   containment alone does not establish constituent content coverage. A PR with
-   deferred content remains open unless its separate close-with-reason
-   disposition is explicit; never delete its recovery branch for partial salvage.
-   A `CLOSE_READY` line is only a head/containment observation, not content
-   approval or permission that survives another command. Refetch
-   that PR head again immediately before its own close. If it differs from the
-   frozen SHA, leave that PR open and its branch intact, and record that only the
-   older reviewed head landed. For an unchanged same-repository head, use the
-   lease-protected branch-deletion and dependent-base preservation rules in
-   [Model And Tool Boundary](../SKILL.md#model-and-tool-boundary);
-   close only after the required checks and exact lease succeed. Never let one moved head prevent unaffected train members from
-   being checked and closed individually.
+   record rejected/deferred content and the recovery ref that holds it. Commit
+   containment alone does not establish constituent content coverage. Write on
+   each landed PR what it carries, what was narrowed or left out and why, its
+   frozen head, its landed head and its recovery ref. A PR with rejected or
+   deferred content still shows merged, and the recovery ref is then the only
+   handle on that content: never delete the recovery ref of such a PR.
+   A merged PR cannot land a second time. Deferred content lands later only
+   from a new PR that its author or lead opens from that ref.
+   A `MERGED` line is only a head, containment and GitHub-state observation,
+   not content approval. A `NOT_MERGED` line means the mechanism failed for
+   that PR: `main` holds its head and GitHub does not show it merged. Leave
+   that PR as it is, do not close it by hand, and report it to the owner; it
+   is the result that reverts the PR-state setting. A `LEAVE_OPEN` line means
+   the head moved again after the loop's push: leave that PR open and its
+   branch intact, and record that only the older reviewed head landed. While
+   automatic head-branch deletion is on, GitHub deletes the head branch of
+   each merged PR; a branch that remains is handled under
+   [Model And Tool Boundary](../SKILL.md#model-and-tool-boundary). Never let
+   one moved head prevent unaffected train members from being checked
+   individually.
 
    If combined validation fails, preserve the failing command and log, do not
    push any part of the candidate, and dissolve the train. Rebuild its

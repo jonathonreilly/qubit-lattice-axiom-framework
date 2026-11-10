@@ -40,6 +40,12 @@ with that session's final source verdict. A changed PR head fails the provenance
 gate even if source bytes look identical. A changed premise, input, source byte,
 or semantic interaction reopens the affected conclusion even if a PR head did
 not change. Both require renewed frozen provenance and same-session confirmation.
+The lander's own push in the [landing loop](LANDING.md) is not a changed head in
+this sense. It moves a frozen head, under an exact lease on that frozen SHA, to
+the candidate commit that completes the PR's reviewed commits, and only after
+the frozen head is recorded under a recovery ref. The landing record keeps both
+identities, the frozen head and the landed head. Any other movement of a head,
+before or after that push, still fails the gate.
 
 ### Preserve frozen source across unrelated main advances
 

@@ -206,10 +206,11 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
 
     def test_dependent_base_preservation_is_required(self):
         for needle in (
+            "So protect dependents before the landing push",
             "including drafts",
-            "re-list open PRs targeting the old base immediately before deletion",
+            "re-list open PRs targeting the old base immediately before the",
             "preserve the parent branch for recovery",
-            "After deletion, verify the expected dependent PRs remain open",
+            "After the push, verify the expected dependent PRs remain open",
             "restore the exact deleted parent ref with an absent-ref lease",
         ):
             with self.subTest(needle=needle):
@@ -598,14 +599,36 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
              "unit_provenance_and_recheck"),
             ("mark-ready is not PASS, and a still-draft PR cannot land.",
              "mark-ready is PASS, and a still-draft PR can land.", "unit_scope_and_close"),
-            ("never delete its recovery branch for partial salvage.",
-             "delete its recovery branch for partial salvage.", "unit_scope_and_close"),
+            ("never delete the recovery ref of such a PR.",
+             "delete the recovery ref of such a PR.", "unit_scope_and_close"),
+            ("After the loop, verify each constituent's accepted/narrowed/superseding",
+             "After the loop, skip each constituent's accepted/narrowed/superseding",
+             "unit_scope_and_close"),
+            ("is not a changed head in\nthis sense.",
+             "is not a changed head in\nany sense.", "unit_provenance_and_recheck"),
+            ("under an exact lease on that frozen SHA",
+             "with a plain force-push", "unit_provenance_and_recheck"),
+            ("only after\nthe frozen head is recorded under a recovery ref",
+             "whether or not\nthe frozen head is recorded", "unit_provenance_and_recheck"),
+            ("before or after that push, still fails the gate.",
+             "before or after that push, is accepted.", "unit_provenance_and_recheck"),
         )
         for needle, replacement, family in cases:
             mutated = self.skill.replace(needle, replacement, 1)
             self.assertNotEqual(mutated, self.skill, needle)
             with self.subTest(needle=needle):
                 self.assertIn(family, self.missing(skill=mutated))
+
+    def test_landed_pr_is_merged_and_never_closed_by_hand(self):
+        for needle in (
+            "Review-loop never\ncloses a landed PR",
+            "Close a PR only when nothing from it reaches `main`",
+            "merges nothing through GitHub and closes no landed PR.",
+            "A `NOT_MERGED` line means the mechanism failed",
+            "do not close it by hand, and report it to the owner",
+        ):
+            with self.subTest(needle=needle):
+                self.assert_skill_mutation_fails(needle, "landed_pr_shows_merged")
 
     def test_shared_validation_identity_cannot_be_weakened(self):
         for needle in (
@@ -773,7 +796,14 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         for needle in (
             "PR_NUMBERS=(<pr-a-number> <pr-b-number> ...)",
             "PR_HEADS=(<pr-a-frozen-head-sha> <pr-b-frozen-head-sha> ...)",
+            "PR_HEAD_REFS=(<pr-a-head-branch> <pr-b-head-branch> ...)",
+            "PR_TIPS=(<pr-a-newest> <pr-b-newest> ...)",
             "verify_frozen_pr_heads()",
+            "verify_pr_github_state()",
+            "record_recovery_refs()",
+            "refs/review-loop/recovery/pr-",
+            "move_pr_heads()",
+            "restore_frozen_pr_heads()",
             "PR head moved; dissolve the train without pushing",
             "post-push head check",
             "force-with-lease=refs/heads/<head>:<frozen-head-sha>",
@@ -781,10 +811,15 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
             with self.subTest(needle=needle):
                 self.assert_skill_mutation_fails(needle, "landing_train_head_guard")
 
-    def test_train_head_checks_must_bracket_push_and_close(self):
+    def test_train_head_checks_must_bracket_every_push(self):
         for line in (
             "     if ! verify_frozen_pr_heads; then",
-            '     if verify_frozen_pr_head "$pr" "$expected"; then',
+            "     if ! verify_pr_github_state; then",
+            "     if ! record_recovery_refs; then",
+            "     if ! move_pr_heads; then",
+            "     if ! wait_for_landed_pr_heads; then",
+            "     if ! restore_frozen_pr_heads; then",
+            '     if ! verify_pr_head "$pr" "$expected"; then',
         ):
             mutated = self.skill.replace(
                 line,
@@ -810,8 +845,38 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
                 ),
             ),
             (
-                'if verify_frozen_pr_head "$pr" "$expected"; then',
-                "if true; then",
+                'if ! verify_pr_head "$pr" "$expected"; then',
+                "if false; then",
+            ),
+            ('elif pr_shows_merged "$pr"; then', "elif true; then"),
+            # The head push must stay leased on the frozen SHA and atomic.
+            (
+                '"--force-with-lease=refs/heads/${PR_HEAD_REFS[$index]}:${PR_HEADS[$index]}"',
+                '"--force"',
+            ),
+            (
+                'git push -q --atomic "${leases[@]}" origin "${specs[@]}"',
+                'git push -q "${leases[@]}" origin "${specs[@]}"',
+            ),
+            # A guard may not be dropped from the chain before the main push.
+            (
+                contract.TRAIN_PRE_PUSH_HEAD_CONTEXT,
+                contract.TRAIN_PRE_PUSH_HEAD_CONTEXT.replace(
+                    "     if ! record_recovery_refs; then", "     if false; then", 1
+                ),
+            ),
+            (
+                contract.TRAIN_PRE_PUSH_HEAD_CONTEXT,
+                contract.TRAIN_PRE_PUSH_HEAD_CONTEXT.replace(
+                    "       restore_frozen_pr_heads\n", "", 1
+                ),
+            ),
+            # A head that cannot be restored must stop the loop.
+            (
+                contract.TRAIN_HEAD_RESTORE_CONTEXT,
+                contract.TRAIN_HEAD_RESTORE_CONTEXT.replace(
+                    "       exit 1", "       true # nonfatal", 1
+                ),
             ),
         )
         for needle, replacement in mutations:
@@ -825,8 +890,10 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
             "double-buffered landing train",
             "next empty train",
             "immediately before push",
-            "immediately before its own close",
+            "records each frozen head under a recovery ref",
             "--force-with-lease=<ref>:<frozen-head-sha>",
+            "rechecks each landed head after the push",
+            "the loop closes no landed PR",
         ):
             with self.subTest(needle=needle):
                 self.assert_command_mutation_fails(needle, "command_landing_train")
@@ -1052,16 +1119,81 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         )
 
 
+# Test double for the GitHub behaviour the landing loop relies on, as observed
+# on 2026-11-10 with PRs 10151 and 10152: an open PR's refs/pull/<n>/head
+# follows its head branch; once main holds that head the PR is merged, its
+# pull ref stops moving and its head branch is deleted. Nothing here contacts
+# GitHub, so these tests check the loop against this model, not GitHub itself.
+GITHUB_DOUBLE_HOOK = """#!/bin/sh
+[ -e no-follow ] && exit 0
+while read -r old new ref; do
+  case "$ref" in
+    refs/heads/unit-[0-9]*)
+      n="${ref#refs/heads/unit-}"
+      [ -e "merged-$n" ] && continue
+      case "$new" in
+        0000000000000000000000000000000000000000) ;;
+        *) git update-ref "refs/pull/$n/head" "$new" ;;
+      esac
+      ;;
+  esac
+done
+for n in 1 2 3; do
+  [ -e "merged-$n" ] && continue
+  head="$(git rev-parse -q --verify "refs/pull/$n/head")" || continue
+  if git merge-base --is-ancestor "$head" refs/heads/main 2>/dev/null; then
+    : > "merged-$n"
+    git update-ref -d "refs/heads/unit-$n"
+  fi
+done
+"""
+
+GH_DOUBLE = """gh() {
+  printf 'gh %s\\n' "$*" >> "$CALL_LOG"
+  local head
+  [ -z "${GH_BROKEN:-}" ] || return 1
+  case "$1 $2" in
+    "pr list")
+      printf '%s\\n' "${GH_OPEN_DEPENDENTS:-0}"
+      ;;
+    "pr view")
+      head="$(command git --git-dir="$REMOTE" rev-parse "refs/pull/$3/head")" || return 1
+      case "$*" in
+        *isDraft*)
+          printf '%s %s false %s unit-%s %s\\n' "${GH_STATE:-OPEN}" \\
+            "${GH_DRAFT:-false}" "${GH_BASE:-main}" "$3" "$head"
+          ;;
+        *)
+          if [ -e "$REMOTE/merged-$3" ]; then echo MERGED; else echo OPEN; fi
+          ;;
+      esac
+      ;;
+    *) return 1 ;;
+  esac
+}
+"""
+
+
 @unittest.skipUnless(shutil.which("git") and shutil.which("bash"), "requires Git and Bash")
 class ReviewLoopLandingSequenceTest(unittest.TestCase):
     """Run the documented landing shell against three real local Git branches.
 
     Each branch adds a separate note and changes the same one-line manifest.
     Thus one invocation must handle two successive manifest conflicts. Remote
-    means a temporary local bare repository; these tests never use the network.
+    means a temporary local bare repository with a hook that stands in for
+    GitHub's pull-request bookkeeping; these tests never use the network.
     """
 
-    def run_sequence(self, fault=None, mutate_loop=False):
+    STATE_FAULTS = {
+        "pr-is-draft": "GH_DRAFT=true\n",
+        "pr-base-not-main": "GH_BASE=integration\n",
+        "pr-not-open": "GH_STATE=CLOSED\n",
+        "open-dependent": "GH_OPEN_DEPENDENTS=1\n",
+        "gh-unavailable": "GH_BROKEN=1\n",
+    }
+
+    def run_sequence(self, fault=None, mutate_loop=False, two_commit_unit=False,
+                     tips=None):
         env = dict(os.environ, GIT_CONFIG_NOSYSTEM="1", GIT_CONFIG_GLOBAL=os.devnull,
                    GIT_AUTHOR_NAME="Fixture", GIT_AUTHOR_EMAIL="fixture@example.invalid",
                    GIT_COMMITTER_NAME="Fixture", GIT_COMMITTER_EMAIL="fixture@example.invalid",
@@ -1078,6 +1210,11 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
                                       capture_output=True, check=True)
                 return proc.stdout.strip()
 
+            def ref(name):
+                proc = subprocess.run(["git", "rev-parse", "-q", "--verify", name],
+                                      cwd=remote, env=env, text=True, capture_output=True)
+                return proc.stdout.strip() or None
+
             def write(path, content):
                 dest = work / path
                 dest.parent.mkdir(parents=True, exist_ok=True)
@@ -1090,6 +1227,10 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
 
             manifest = "docs/audit/data/citation_graph_manifest.json"
             git(remote, "init", "--bare", "-q")
+            hook = remote / "hooks" / "post-receive"
+            hook.parent.mkdir(exist_ok=True)
+            hook.write_text(GITHUB_DOUBLE_HOOK)
+            hook.chmod(0o755)
             git(work, "init", "-q", "-b", "main")
             git(work, "config", "commit.gpgsign", "false")
             write("source.txt", "base\n")
@@ -1103,22 +1244,47 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
             base = commit("base")
             git(work, "remote", "add", "origin", str(remote))
             git(work, "push", "-q", "origin", "HEAD:main")
-            heads = []
+            heads, commits, notes = [], [], ["base"]
             for number, letter in enumerate("abc", 1):
                 git(work, "checkout", "-q", "--detach", base)
+                unit_notes = [letter]
                 write(f"notes/{letter}.md", letter + "\n")
                 write(manifest, json.dumps(sorted([letter, "base"])) + "\n")
                 if fault == "later-source-conflict" and letter in "ac":
                     write("source.txt", letter + "\n")
                 head = commit("unit " + letter)
+                commits.append(head)
+                if two_commit_unit and letter == "a":
+                    unit_notes.append("a2")
+                    write("notes/a2.md", "a2\n")
+                    write(manifest, json.dumps(sorted(["a", "a2", "base"])) + "\n")
+                    head = commit("unit a, second commit")
+                    commits.append(head)
                 heads.append(head)
-                git(work, "push", "-q", "origin", f"{head}:refs/pull/{number}/head")
+                notes += unit_notes
+                git(work, "push", "-q", "origin", f"{head}:refs/heads/unit-{number}")
             git(work, "checkout", "-q", "--detach", base)
-            for letter in "abc":
-                write(f"notes/{letter}.md", letter + "\n")
-            write(manifest, json.dumps(["a", "b", "base", "c"]) + "\n")
+            for note in notes[1:]:
+                write(f"notes/{note}.md", note + "\n")
+            write(manifest, json.dumps(sorted(notes)) + "\n")
             commit("validated candidate")
             tree = git(work, "rev-parse", "HEAD^{tree}")
+            # A commit that another lander could push to main meanwhile.
+            git(work, "checkout", "-q", "--detach", base)
+            write("notes/racer.md", "racer\n")
+            racer = commit("another landing")
+            git(work, "push", "-q", "origin", f"{racer}:refs/fixture/racer")
+            git(work, "checkout", "-q", "--detach", base)
+            if fault == "head-moved":
+                git(work, "push", "-q", "--force", "origin", f"{racer}:refs/heads/unit-2")
+            if fault == "lease-refused":
+                # The branch moved but GitHub has not yet shown it on the PR.
+                git(remote, "update-ref", "refs/heads/unit-2", racer)
+            if fault == "pull-refs-do-not-follow":
+                (remote / "no-follow").write_text("")
+            for number, head in enumerate(heads, 1):
+                expected = racer if fault == "head-moved" and number == 2 else head
+                self.assertEqual(ref(f"refs/pull/{number}/head"), expected)
             skill, routing_failures = contract.load_skill_contract(contract.REPO_ROOT)
             self.assertEqual(routing_failures, [])
             blocks = contract._markdown_scan(skill).fenced_blocks
@@ -1126,9 +1292,12 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
             replacements = {
                 "VALIDATED_BASE=<origin-main-sha-used-by-the-combined-gate>": f"VALIDATED_BASE={base}",
                 "VALIDATED_TREE=<combined-candidate-tree-sha>": f"VALIDATED_TREE={tree}",
-                "COMMITS=(<pr-a-oldest> ... <pr-a-newest> <pr-b-oldest> ...)": "COMMITS=(" + " ".join(heads) + ")",
+                "COMMITS=(<pr-a-oldest> ... <pr-a-newest> <pr-b-oldest> ...)": "COMMITS=(" + " ".join(commits) + ")",
                 "PR_NUMBERS=(<pr-a-number> <pr-b-number> ...)": "PR_NUMBERS=(1 2 3)",
                 "PR_HEADS=(<pr-a-frozen-head-sha> <pr-b-frozen-head-sha> ...)": "PR_HEADS=(" + " ".join(heads) + ")",
+                "PR_HEAD_REFS=(<pr-a-head-branch> <pr-b-head-branch> ...)": "PR_HEAD_REFS=(unit-1 unit-2 unit-3)",
+                "PR_TIPS=(<pr-a-newest> <pr-b-newest> ...)": "PR_TIPS=(" + " ".join(
+                    heads if tips is None else [heads[i] for i in tips]) + ")",
             }
             for old, new in replacements.items():
                 self.assertIn(old, code)
@@ -1143,7 +1312,10 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
                 code = (code[:start] + code[start:end].replace(old, 'if [ -z "$cherry_pick_complete" ]; then', 1)
                         + "\n     fi" + code[end + len("\n     done"):])
             prelude = f"CALL_LOG={shlex.quote(str(root / 'git-calls.log'))}\n"
+            prelude += f"REMOTE={shlex.quote(str(remote))}\nRACER={racer}\n"
+            prelude += self.STATE_FAULTS.get(fault, "") + GH_DOUBLE
             prelude += "sleep() { :; }\ngit() {\n  printf '%s\\n' \"$*\" >> \"$CALL_LOG\"\n"
+            main_push = '[ "$*" != "push -q origin HEAD:main" ]'
             injections = {
                 "inspect-fails": '[ "$*" != "diff --name-only --diff-filter=U" ] || return 7',
                 "head-lookup-fails": '[ "$*" != "rev-parse --verify CHERRY_PICK_HEAD" ] || return 7',
@@ -1152,6 +1324,13 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
                 # the index: real --continue must fail at the same commit.
                 "no-progress": f'[ "$*" != "add {manifest}" ] || return 0',
                 "continue-fails": '[ "$*" != "cherry-pick --continue" ] || return 7',
+                "recovery-push-fails": 'case "$*" in *refs/review-loop/recovery/*) [ "$1" != push ] || return 7 ;; esac',
+                # The push of main never reaches the remote.
+                "main-push-fails": main_push + " || return 7",
+                # The remote accepts the push but the client sees an error.
+                "main-push-reported-failed": main_push + ' || { command git "$@"; return 7; }',
+                # Another landing reaches main between the gate and the push.
+                "main-moved-during-landing": main_push + ' || command git --git-dir="$REMOTE" update-ref refs/heads/main "$RACER"',
             }
             if fault in injections:
                 prelude += "  " + injections[fault] + "\n"
@@ -1159,40 +1338,174 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
             if fault == "generator-fails":
                 prelude += "python3() { return 9; }\n"
             proc = subprocess.run(["bash", "-c", prelude + code], cwd=work, env=env,
-                                  text=True, capture_output=True, timeout=20)
-            calls = (root / "git-calls.log").read_text().splitlines()
+                                  text=True, capture_output=True, timeout=120)
+            log = root / "git-calls.log"
+            calls = log.read_text().splitlines() if log.exists() else []
+            pushes = [c for c in calls if c.startswith("push ")]
             return {
                 "exit": proc.returncode, "stdout": proc.stdout, "stderr": proc.stderr,
-                "pushes": sum(c.startswith("push ") for c in calls),
+                "pushes": len(pushes),
+                "push_order": [
+                    "recovery" if "refs/review-loop/recovery/" in c
+                    else "heads" if c.startswith("push -q --atomic ")
+                    else "main" if c == "push -q origin HEAD:main"
+                    else "restore" if c.startswith("push -q --force-with-lease=")
+                    else "other"
+                    for c in pushes
+                ],
+                "head_push": next((c for c in pushes if c.startswith("push -q --atomic ")), ""),
                 "starts": sum(c.startswith("cherry-pick ") and not c.startswith("cherry-pick --") for c in calls),
                 "continues": calls.count("cherry-pick --continue"),
-                "remote_changed": git(remote, "rev-parse", "refs/heads/main") != base,
+                "remote_changed": ref("refs/heads/main") != base,
+                "remote_main": ref("refs/heads/main"),
                 "remote_tree": git(remote, "rev-parse", "refs/heads/main^{tree}"),
                 "expected_tree": tree,
+                "base": base, "racer": racer, "frozen": heads,
+                "branches": [ref(f"refs/heads/unit-{n}") for n in (1, 2, 3)],
+                "pulls": [ref(f"refs/pull/{n}/head") for n in (1, 2, 3)],
+                "recovery": [ref(f"refs/review-loop/recovery/pr-{n}/{head}")
+                             for n, head in enumerate(heads, 1)],
+                "merged": [(remote / f"merged-{n}").exists() for n in (1, 2, 3)],
+                "landed_parents": [
+                    git(remote, "rev-list", "--count", f"{base}..refs/pull/{n}/head")
+                    for n in (1, 2, 3)
+                ],
             }
+
+    def assert_nothing_moved(self, result, pushes=0):
+        self.assertNotEqual(result["exit"], 0, result)
+        self.assertEqual(result["pushes"], pushes, result)
+        self.assertFalse(result["remote_changed"], result)
+        self.assertEqual(result["merged"], [False, False, False], result)
+        self.assertNotIn("MERGED", result["stdout"], result)
 
     def test_three_units_resolve_two_manifest_conflicts_without_replay(self):
         result = self.run_sequence()
         self.assertEqual(result["exit"], 0, result)
         self.assertEqual(result["starts"], 1, result)
         self.assertEqual(result["continues"], 2, result)
-        self.assertEqual(result["pushes"], 1, result)
+        self.assertEqual(result["push_order"], ["recovery", "heads", "main"], result)
         self.assertEqual(result["remote_tree"], result["expected_tree"], result)
-        self.assertEqual(result["stdout"].count("CLOSE_READY"), 3, result)
+
+    def test_every_carried_pr_ends_merged_on_a_stacked_head(self):
+        result = self.run_sequence()
+        self.assertEqual(result["exit"], 0, result)
+        # Each frozen head was recorded before any head moved.
+        self.assertEqual(result["recovery"], result["frozen"], result)
+        self.assertEqual(result["stdout"].count("RECOVERY_REF "), 3, result)
+        # Every head moved under an exact lease on its frozen SHA, atomically.
+        for number, head in enumerate(result["frozen"], 1):
+            self.assertIn(f"--force-with-lease=refs/heads/unit-{number}:{head}",
+                          result["head_push"])
+        self.assertIn("--atomic", result["head_push"])
+        # The landed heads are new commits, stacked in train order, and main
+        # is the last of them.
+        self.assertEqual(result["landed_parents"], ["1", "2", "3"], result)
+        self.assertEqual(result["pulls"][2], result["remote_main"], result)
+        # Units 2 and 3 land on new parents, so their heads are new commits.
+        # Unit 1 already sat on the gated base; with this fixture's fixed
+        # dates its cherry-pick is the same commit, and the leased push of an
+        # unchanged head is a no-op that must still end merged.
+        for frozen, landed in list(zip(result["frozen"], result["pulls"]))[1:]:
+            self.assertNotEqual(frozen, landed, result)
+        self.assertEqual(result["merged"], [True, True, True], result)
+        self.assertEqual(result["stdout"].count("\nMERGED "), 3, result)
+        self.assertNotIn("NOT_MERGED", result["stderr"], result)
+        self.assertNotIn("LEAVE_OPEN", result["stderr"], result)
+        # The model deletes merged head branches, as GitHub did in the trial.
+        self.assertEqual(result["branches"], [None, None, None], result)
+
+    def test_a_two_commit_pr_lands_on_the_commit_that_completes_it(self):
+        result = self.run_sequence(two_commit_unit=True)
+        self.assertEqual(result["exit"], 0, result)
+        self.assertEqual(result["landed_parents"], ["2", "3", "4"], result)
+        self.assertEqual(result["merged"], [True, True, True], result)
+        self.assertEqual(result["remote_tree"], result["expected_tree"], result)
+
+    def test_pr_tips_must_follow_commit_order_and_end_the_train(self):
+        for tips, message in (((1, 0, 2), "not in COMMITS in train order"),
+                              ((0, 1, 1), "last PR tip is not the last reviewed commit")):
+            with self.subTest(tips=tips):
+                result = self.run_sequence(tips=tips)
+                self.assert_nothing_moved(result)
+                self.assertEqual(result["starts"], 0, result)
+                self.assertIn(message, result["stderr"])
+
+    def test_github_state_guard_refuses_before_any_push(self):
+        for fault in self.STATE_FAULTS:
+            with self.subTest(fault=fault):
+                result = self.run_sequence(fault)
+                self.assert_nothing_moved(result)
+                self.assertEqual(result["branches"], result["frozen"], result)
+                self.assertIn("nothing was pushed", result["stderr"])
+
+    def test_moved_head_dissolves_the_train_before_any_push(self):
+        result = self.run_sequence("head-moved")
+        self.assert_nothing_moved(result)
+        self.assertIn("PR head moved; dissolve the train", result["stderr"])
+
+    def test_no_head_moves_without_a_recorded_recovery_ref(self):
+        result = self.run_sequence("recovery-push-fails")
+        self.assert_nothing_moved(result, pushes=1)
+        self.assertEqual(result["branches"], result["frozen"], result)
+        self.assertEqual(result["recovery"], [None, None, None], result)
+        self.assertIn("no head was moved", result["stderr"])
+
+    def test_refused_lease_moves_no_head_at_all(self):
+        result = self.run_sequence("lease-refused")
+        self.assert_nothing_moved(result, pushes=2)
+        self.assertEqual(result["push_order"], ["recovery", "heads"], result)
+        frozen = result["frozen"]
+        self.assertEqual(result["branches"], [frozen[0], result["racer"], frozen[2]], result)
+        self.assertEqual(result["pulls"], frozen, result)
+        self.assertIn("leased head push refused", result["stderr"])
+
+    def test_main_is_not_pushed_until_every_pr_shows_its_new_head(self):
+        result = self.run_sequence("pull-refs-do-not-follow")
+        self.assertNotEqual(result["exit"], 0, result)
+        self.assertFalse(result["remote_changed"], result)
+        self.assertNotIn("main", result["push_order"], result)
+        self.assertEqual(result["push_order"][:2], ["recovery", "heads"], result)
+        self.assertEqual(result["push_order"][2:], ["restore"] * 3, result)
+        self.assertEqual(result["branches"], result["frozen"], result)
+        self.assertIn("does not show the pushed head", result["stderr"])
+
+    def test_failed_main_push_restores_every_head(self):
+        result = self.run_sequence("main-push-fails")
+        self.assertNotEqual(result["exit"], 0, result)
+        self.assertFalse(result["remote_changed"], result)
+        self.assertEqual(result["starts"], 4, result)
+        self.assertEqual(result["branches"], result["frozen"], result)
+        self.assertEqual(result["pulls"], result["frozen"], result)
+        self.assertEqual(result["merged"], [False, False, False], result)
+        self.assertIn("landing did not complete after 4 attempts", result["stderr"])
+
+    def test_push_accepted_but_reported_failed_still_lands(self):
+        result = self.run_sequence("main-push-reported-failed")
+        self.assertEqual(result["exit"], 0, result)
+        self.assertEqual(result["starts"], 1, result)
+        self.assertNotIn("restore", result["push_order"], result)
+        self.assertEqual(result["remote_tree"], result["expected_tree"], result)
+        self.assertEqual(result["merged"], [True, True, True], result)
+        self.assertEqual(result["stdout"].count("\nMERGED "), 3, result)
+
+    def test_main_moved_during_landing_restores_heads_and_stops(self):
+        result = self.run_sequence("main-moved-during-landing")
+        self.assertNotEqual(result["exit"], 0, result)
+        self.assertEqual(result["remote_main"], result["racer"], result)
+        self.assertEqual(result["branches"], result["frozen"], result)
+        self.assertEqual(result["merged"], [False, False, False], result)
+        self.assertIn("main moved; rebuild and rerun the combined gate", result["stderr"])
 
     def test_single_repair_mutation_cannot_land_three_units(self):
         result = self.run_sequence(mutate_loop=True)
-        self.assertNotEqual(result["exit"], 0, result)
-        self.assertEqual(result["pushes"], 0, result)
-        self.assertFalse(result["remote_changed"], result)
+        self.assert_nothing_moved(result)
 
     def test_later_source_conflict_is_not_treated_as_another_manifest(self):
         result = self.run_sequence("later-source-conflict")
-        self.assertNotEqual(result["exit"], 0, result)
+        self.assert_nothing_moved(result)
         self.assertEqual(result["starts"], 1, result)
         self.assertEqual(result["continues"], 1, result)
-        self.assertEqual(result["pushes"], 0, result)
-        self.assertFalse(result["remote_changed"], result)
         self.assertIn("source conflict or sequencer failure", result["stderr"])
 
     def test_manifest_sequence_tool_failures_and_no_progress_fail_closed(self):
@@ -1200,10 +1513,8 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
                       "continue-fails", "generator-fails"):
             with self.subTest(fault=fault):
                 result = self.run_sequence(fault)
-                self.assertNotEqual(result["exit"], 0, result)
+                self.assert_nothing_moved(result)
                 self.assertEqual(result["starts"], 1, result)
-                self.assertEqual(result["pushes"], 0, result)
-                self.assertFalse(result["remote_changed"], result)
                 if fault == "no-progress":
                     self.assertIn("no sequencer progress", result["stderr"])
 

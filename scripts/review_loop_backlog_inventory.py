@@ -49,36 +49,44 @@ class InventoryError(RuntimeError):
     """A required read-only probe failed."""
 
 
-def run(cmd: list[str], cwd: Path) -> str:
+def run(cmd: list[str], cwd: Path, timeout: int = 60) -> str:
     try:
         proc = subprocess.run(
-            cmd, cwd=cwd, capture_output=True, text=True, timeout=60
+            cmd, cwd=cwd, capture_output=True, text=True, timeout=timeout
         )
     except subprocess.TimeoutExpired as exc:
-        raise InventoryError(f"{' '.join(cmd[:4])} timed out after 60 seconds") from exc
+        raise InventoryError(
+            f"{' '.join(cmd[:4])} timed out after {timeout} seconds"
+        ) from exc
     if proc.returncode != 0:
         detail = (proc.stderr or proc.stdout or "no diagnostic").strip()
         raise InventoryError(f"{' '.join(cmd[:4])} failed: {detail}")
     return proc.stdout
 
 
-def fetch_open_prs(
+def fetch_prs(
     repo_root: Path,
     limit: int = DEFAULT_LIMIT,
     runner: Run = run,
+    *,
+    state: str = "open",
+    fields: str = GH_FIELDS,
 ) -> list[dict]:
-    """Enumerate open PRs exactly once; fail closed on malformed output."""
+    """Enumerate PRs in one read-only call; fail closed on malformed output.
+
+    ``scripts/review_queue.py`` shares this call with a wider field list.
+    """
     text = runner(
         [
             "gh",
             "pr",
             "list",
             "--state",
-            "open",
+            state,
             "--limit",
             str(limit),
             "--json",
-            GH_FIELDS,
+            fields,
         ],
         repo_root,
     )
@@ -89,6 +97,15 @@ def fetch_open_prs(
     if not isinstance(payload, list):
         raise InventoryError("gh PR inventory was not a JSON list")
     return payload
+
+
+def fetch_open_prs(
+    repo_root: Path,
+    limit: int = DEFAULT_LIMIT,
+    runner: Run = run,
+) -> list[dict]:
+    """Enumerate open PRs exactly once; fail closed on malformed output."""
+    return fetch_prs(repo_root, limit=limit, runner=runner)
 
 
 def _pr_copy(raw: dict) -> dict:

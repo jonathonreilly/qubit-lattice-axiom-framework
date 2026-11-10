@@ -1,0 +1,253 @@
+{
+ "_about": "Rows for test_review_queue.py. Rows without `_built` are output of `gh pr list --state open --json <QUEUE_FIELDS>` recorded 2026-11-10, unchanged. No open PR had a comment or a review on that day, so each `_built` row puts recorded comments of closed PRs #10116 and #9838 (cut to their first paragraphs, keys author/body/createdAt/url) on an invented open PR.",
+ "prs": [
+  {
+   "additions": 777,
+   "baseRefName": "claude/rules-redesign",
+   "changedFiles": 9,
+   "comments": [],
+   "createdAt": "2026-11-10T21:45:18Z",
+   "deletions": 136,
+   "headRefName": "claude/land-merged-pr-state",
+   "headRefOid": "e259657700ad02abef63923e23d6fbda3022477b",
+   "isCrossRepository": false,
+   "isDraft": false,
+   "mergeStateStatus": "CLEAN",
+   "mergeable": "MERGEABLE",
+   "number": 10154,
+   "reviewDecision": "",
+   "reviews": [],
+   "title": "feat(land): show a landed PR as merged",
+   "updatedAt": "2026-11-10T21:45:19Z",
+   "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10154"
+  },
+  {
+   "additions": 1947,
+   "baseRefName": "main",
+   "changedFiles": 16,
+   "comments": [],
+   "createdAt": "2026-11-10T20:34:58Z",
+   "deletions": 321,
+   "headRefName": "claude/rules-redesign",
+   "headRefOid": "74629e0431b01add3fe489e4586eb938e4c1ac83",
+   "isCrossRepository": false,
+   "isDraft": false,
+   "mergeStateStatus": "BLOCKED",
+   "mergeable": "MERGEABLE",
+   "number": 10150,
+   "reviewDecision": "REVIEW_REQUIRED",
+   "reviews": [],
+   "title": "docs(ai): redesign agent rules into rules, settings and seven procedures",
+   "updatedAt": "2026-11-10T20:34:58Z",
+   "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10150"
+  },
+  {
+   "additions": 60397,
+   "baseRefName": "main",
+   "changedFiles": 224,
+   "comments": [],
+   "createdAt": "2026-11-04T20:14:08Z",
+   "deletions": 0,
+   "headRefName": "claude/toe-assembly",
+   "headRefOid": "70ef4aaf655005045d240bb86d54cf47aaa5f28c",
+   "isCrossRepository": false,
+   "isDraft": true,
+   "mergeStateStatus": "BLOCKED",
+   "mergeable": "MERGEABLE",
+   "number": 10139,
+   "reviewDecision": "REVIEW_REQUIRED",
+   "reviews": [],
+   "title": "docs(toe): assembly skeleton of the TOE on the four axioms (draft)",
+   "updatedAt": "2026-11-09T01:58:23Z",
+   "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10139"
+  },
+  {
+   "additions": 34,
+   "baseRefName": "main",
+   "changedFiles": 1,
+   "comments": [],
+   "createdAt": "2026-11-04T01:47:40Z",
+   "deletions": 14,
+   "headRefName": "docs/workflow-one-check-per-proof",
+   "headRefOid": "81d49bdbf959afea47c50d0b57071fa68503597f",
+   "isCrossRepository": false,
+   "isDraft": false,
+   "mergeStateStatus": "BLOCKED",
+   "mergeable": "MERGEABLE",
+   "number": 10137,
+   "reviewDecision": "REVIEW_REQUIRED",
+   "reviews": [],
+   "title": "docs(methodology): one check per proof, hardening once at the end",
+   "updatedAt": "2026-11-04T01:48:04Z",
+   "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10137"
+  },
+  {
+   "additions": 2554,
+   "baseRefName": "claude/ym4d-proof-draft",
+   "changedFiles": 18,
+   "comments": [],
+   "createdAt": "2026-11-01T10:45:50Z",
+   "deletions": 0,
+   "headRefName": "ym/crossover-reduction",
+   "headRefOid": "89faef229ff6e6bde42baad15ed8270c2f4087d8",
+   "isCrossRepository": false,
+   "isDraft": true,
+   "mergeStateStatus": "CLEAN",
+   "mergeable": "MERGEABLE",
+   "number": 10133,
+   "reviewDecision": "",
+   "reviews": [],
+   "title": "ym4d-proof: conditional mass-gap crossover reduction (closes no MG row)",
+   "updatedAt": "2026-11-01T22:50:59Z",
+   "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10133"
+  },
+  {
+   "additions": 633,
+   "baseRefName": "main",
+   "changedFiles": 8,
+   "comments": [],
+   "createdAt": "2026-10-21T20:22:49Z",
+   "deletions": 1462,
+   "headRefName": "codex/grok-final-prose-20261021",
+   "headRefOid": "237ed70d6b9a761657766d6eb53865812e48c62b",
+   "isCrossRepository": false,
+   "isDraft": false,
+   "mergeStateStatus": "DIRTY",
+   "mergeable": "CONFLICTING",
+   "number": 9870,
+   "reviewDecision": "REVIEW_REQUIRED",
+   "reviews": [],
+   "title": "Bound perturbative neutrino and multichannel coupling claims",
+   "updatedAt": "2026-10-21T20:22:50Z",
+   "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9870"
+  },
+  {
+   "_built": "HOLD comment names the current head",
+   "number": 90001,
+   "title": "built row 90001",
+   "isDraft": false,
+   "isCrossRepository": false,
+   "baseRefName": "main",
+   "headRefName": "built/90001",
+   "headRefOid": "884b39e8051dd5e58989bad82b25c979d81c5192",
+   "createdAt": "2026-10-30T14:03:53Z",
+   "updatedAt": "2026-10-30T16:48:26Z",
+   "url": "https://example.test/pull/90001",
+   "additions": 120,
+   "deletions": 4,
+   "changedFiles": 3,
+   "mergeable": "MERGEABLE",
+   "mergeStateStatus": "BLOCKED",
+   "reviewDecision": "REVIEW_REQUIRED",
+   "reviews": [],
+   "comments": [
+    {
+     "author": {
+      "login": "jonathonreilly"
+     },
+     "body": "Focused repo-native review-loop result: **HOLD / changes required**.\n\nReviewed PR head `884b39e8051dd5e58989bad82b25c979d81c5192` as one process-only unit against main `c93fcb388b60ad7974433b2aa1cb1d366aec52ff`: the shadow-state writer, its complete test file, the changed audit-loop skill paragraph, and the actual pipeline/renderer/nightly commit consumers. No independent audit was run.",
+     "createdAt": "2026-10-30T16:48:26Z",
+     "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10116#issuecomment-6528259984"
+    }
+   ]
+  },
+  {
+   "_built": "HOLD comment names an older head; a fix was pushed",
+   "number": 90002,
+   "title": "built row 90002",
+   "isDraft": false,
+   "isCrossRepository": false,
+   "baseRefName": "main",
+   "headRefName": "built/90002",
+   "headRefOid": "89a50f0bd3667c641ba60c322556bfd9f60d9e50",
+   "createdAt": "2026-10-30T14:03:53Z",
+   "updatedAt": "2026-10-30T16:48:26Z",
+   "url": "https://example.test/pull/90002",
+   "additions": 120,
+   "deletions": 4,
+   "changedFiles": 3,
+   "mergeable": "MERGEABLE",
+   "mergeStateStatus": "BLOCKED",
+   "reviewDecision": "REVIEW_REQUIRED",
+   "reviews": [],
+   "comments": [
+    {
+     "author": {
+      "login": "jonathonreilly"
+     },
+     "body": "Focused repo-native review-loop result: **HOLD / changes required**.\n\nReviewed PR head `884b39e8051dd5e58989bad82b25c979d81c5192` as one process-only unit against main `c93fcb388b60ad7974433b2aa1cb1d366aec52ff`: the shadow-state writer, its complete test file, the changed audit-loop skill paragraph, and the actual pipeline/renderer/nightly commit consumers. No independent audit was run.",
+     "createdAt": "2026-10-30T16:48:26Z",
+     "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10116#issuecomment-6528259984"
+    }
+   ]
+  },
+  {
+   "_built": "PASS comment after the HOLD names the current head",
+   "number": 90003,
+   "title": "built row 90003",
+   "isDraft": false,
+   "isCrossRepository": false,
+   "baseRefName": "main",
+   "headRefName": "built/90003",
+   "headRefOid": "89a50f0bd3667c641ba60c322556bfd9f60d9e50",
+   "createdAt": "2026-10-30T14:03:53Z",
+   "updatedAt": "2026-10-30T18:41:05Z",
+   "url": "https://example.test/pull/90003",
+   "additions": 120,
+   "deletions": 4,
+   "changedFiles": 3,
+   "mergeable": "MERGEABLE",
+   "mergeStateStatus": "BLOCKED",
+   "reviewDecision": "REVIEW_REQUIRED",
+   "reviews": [],
+   "comments": [
+    {
+     "author": {
+      "login": "jonathonreilly"
+     },
+     "body": "Focused repo-native review-loop result: **HOLD / changes required**.\n\nReviewed PR head `884b39e8051dd5e58989bad82b25c979d81c5192` as one process-only unit against main `c93fcb388b60ad7974433b2aa1cb1d366aec52ff`: the shadow-state writer, its complete test file, the changed audit-loop skill paragraph, and the actual pipeline/renderer/nightly commit consumers. No independent audit was run.",
+     "createdAt": "2026-10-30T16:48:26Z",
+     "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10116#issuecomment-6528259984"
+    },
+    {
+     "author": {
+      "login": "jonathonreilly"
+     },
+     "body": "Focused repo-native review-loop: **PASS / landed**.\n\nReviewed frozen head `89a50f0bd3667c641ba60c322556bfd9f60d9e50` against main `bdda29ee1cf2cabdba40efce5f17651daddae0d0`. The earlier churn-loss finding is resolved: ordinary batches preserve the saved baseline, and the next scheduled report retains the additions/removals. No new findings or review fixes; all three paths accepted unchanged.",
+     "createdAt": "2026-10-30T18:41:05Z",
+     "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10116#issuecomment-6530759495"
+    }
+   ]
+  },
+  {
+   "_built": "one comment that states no verdict word",
+   "number": 90004,
+   "title": "built row 90004",
+   "isDraft": false,
+   "isCrossRepository": false,
+   "baseRefName": "main",
+   "headRefName": "built/90004",
+   "headRefOid": "a5457b49c85b3393aef3e86e57678088a394aa67",
+   "createdAt": "2026-10-30T14:03:53Z",
+   "updatedAt": "2026-10-22T00:18:40Z",
+   "url": "https://example.test/pull/90004",
+   "additions": 120,
+   "deletions": 4,
+   "changedFiles": 3,
+   "mergeable": "MERGEABLE",
+   "mergeStateStatus": "BLOCKED",
+   "reviewDecision": "REVIEW_REQUIRED",
+   "reviews": [],
+   "comments": [
+    {
+     "author": {
+      "login": "jonathonreilly"
+     },
+     "body": "Reviewed source landed on main at 929e4a30f71638a0c31942b7fadd59c8d3c56930; original head a5457b49c85b3393aef3e86e57678088a394aa67. Accepted source/cache hashes were verified on remote main. Only the reviewed open-gate diagnostic salvage landed. The original general exclusion theorem remains deferred and recoverable on this PR branch; this PR and branch remain OPEN/preserved.",
+     "createdAt": "2026-10-22T00:18:40Z",
+     "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9838#issuecomment-6329537442"
+    }
+   ]
+  }
+ ]
+}

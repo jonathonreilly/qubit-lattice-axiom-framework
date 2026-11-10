@@ -132,9 +132,83 @@ Report:
   and units returned to fallback;
 - distinct source reviewed, reviewer/runner time, full pipeline count,
   integration retries, and scientific findings per unit;
+- the [landing record](#landing-record) written on each landed PR;
 - checks run and checks skipped;
 - remaining issues with disposition;
 - recommendation: `PASS`, `PASS WITH BOUNDED CLAIMS`, or `NEEDS MANUAL SCIENCE`.
 
 Do not claim Nature readiness. Say whether the branch meets this repo's
 Nature-grade retention bar or exactly what remains open.
+
+## Landing Record
+
+The landing comment on each landed PR carries one `landing-record` block. The
+block records what the landing cost, so that waiting time and review cost are
+read from the PR and not estimated later. Write every field. Write `none` for
+a field that does not apply. Do not leave a field out and do not estimate a
+value.
+
+```landing-record
+review_start_utc: 2026-11-10T14:03:53Z
+review_end_utc: 2026-11-10T15:33:50Z
+rounds: 2
+reviewer_provider: example-provider
+reviewer_model: example-model
+reviewer_effort: low
+gate_seconds: 415.5
+train: train-23
+frozen_head: 0123456789abcdef0123456789abcdef01234567
+landed_head: 89abcdef0123456789abcdef0123456789abcdef
+recovery_ref: refs/review-loop/recovery/pr-12345/0123456789abcdef0123456789abcdef01234567
+```
+
+| Field | Value |
+|---|---|
+| `review_start_utc` | The time the first reviewer run on this unit started, as `YYYY-MM-DDTHH:MM:SSZ`. |
+| `review_end_utc` | The time the reviewer confirmed the final content, in the same form. |
+| `rounds` | The number of reviewer passes over the unit. The confirming pass counts. |
+| `reviewer_provider`, `reviewer_model`, `reviewer_effort` | What the reviewer run reported, one word each. |
+| `gate_seconds` | Wall-clock seconds of the one combined validation of the train. `none` when an identical base/tree receipt was reused. |
+| `train` | The train identifier. Every PR of one train carries the same value. |
+| `frozen_head` | The full SHA of the PR head that was reviewed. |
+| `landed_head` | The full SHA on `main` that the landing loop verified. |
+| `recovery_ref` | The full name of the ref that keeps the original head. `none` when the loop recorded no such ref. |
+
+When a second reviewer ran for an escalation, the block gives the reviewer
+that confirmed the final content, and the comment text names the other one.
+Check a drafted comment before posting it:
+`python3 scripts/review_queue.py --check-record <file>` prints each problem
+and exits nonzero when the file has no block or a block has a problem.
+
+## Review Queue
+
+`python3 scripts/review_queue.py` lists the open PRs with age, size, review
+and comment counts, mergeable state and a next action. With `--history N` it
+lists the N most recently opened PRs that are merged or closed, with the hours
+from open to merged or closed, their landing records, the median and 90th
+percentile, and the number of PRs without a landing record. Each mode makes
+one read-only `gh pr list` call and writes nothing. The queue is computed on
+request. Do not keep a hand-written copy of it.
+
+The next action is the first row of this table that applies:
+
+| Next action | Condition |
+|---|---|
+| `draft` | The PR is a draft. |
+| `base is not main` | The base branch is not `main`. |
+| `conflicts with main` | GitHub reports the PR as `CONFLICTING`. |
+| `needs first review` | The PR has no review and no comment. |
+| `comments, no verdict` | No review or comment states a verdict. |
+| `needs re-review` | The newest verdict does not name the current head. |
+| `ready to land` | The newest verdict is `PASS` and names the current head. |
+| `findings posted` | The newest verdict is `HOLD` or `NEEDS MANUAL SCIENCE` and names the current head. |
+
+The command reads a verdict from the first paragraph of a PR comment or
+review. The first of the upper-case words `PASS`, `HOLD` and
+`NEEDS MANUAL SCIENCE` in that paragraph decides. A GitHub approval counts as
+`PASS` and a GitHub change request counts as `HOLD`. A verdict names a head
+when its text contains the first 12 or more characters of that head's SHA. A
+findings or verdict comment that starts with its verdict word and gives the
+reviewed head is therefore read correctly. A next action is a reading of
+these records. It is not a review result, and it replaces no lens, gate or
+landing check.

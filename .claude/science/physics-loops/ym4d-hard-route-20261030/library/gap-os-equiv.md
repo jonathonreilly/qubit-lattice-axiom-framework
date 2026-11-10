@@ -1,7 +1,7 @@
 lead: anthropic/claude-opus-5-5/high mac-mini-worker
 lease_until: 2026-11-11T09:30Z
 
-Statements: IN PROGRESS (written section by section; this line is replaced at the end).
+Statements: (1) PROVED; (2) PROVED; (3) PROVED, with the exact class condition (totality in $\mathcal H$, diagonal pairs suffice) and an example that a smaller class fails; (4) PROVED (rate $m$ in every direction with O(d); rate $m/\sqrt d$ in Euclidean distance with the hypercubic group); (5) PROVED in a stronger form: no bound on the constants is used, only one common rate, and the bounded constants of the row follow from the convergence; (6) PROVED: two explicit sequences for (6a) and the torus example (6b); (6a) with a fixed total class and reflection-positive members cannot exist, by (5), so each (6a) example breaks one hypothesis (the class changes; the members are not reflection positive); (7) PROVED for the cylinder (time infinite); OPEN: the comparison of cubic tori with cylinders in physical units (7c), and rotation invariance of volume limits of cylinders (7e), neither of which this row asked to prove. No spectral theorem is used. Awaiting the line-by-line check by another model.
 
 # Decay of correlations, the spectrum of H, and limits (queue row 668, `gap-os-equiv`)
 
@@ -202,7 +202,7 @@ Let $\mathcal K_{\mathcal C}$ be the closed linear span of $\{Q[F]:F\in\mathcal 
 (4a) Continuum. For a unit vector $e$, closed $X\subset\{x\cdot e\le0\}$ and $Y\subset\{x\cdot e\ge0\}$, $A\in L^2(\Sigma_X)$, $B\in L^2(\Sigma_Y)$ and $s\ge0$, with $\tau_{se}$ the translation by $se$:
 $$\big|\mathbb E[A\,(\tau_{se}\cdot B)]-\mathbb E[A]\,\mathbb E[B]\big|\le e^{-ms}\sigma_A\sigma_B .$$
 (4b) Continuum, balls. If $X,Y$ lie in the closed ball of radius $r$ about $0$ and $|v|\ge2r$, then $|\mathbb E[A(\tau_v\cdot B)]-\mathbb E[A]\mathbb E[B]|\le e^{-m(|v|-2r)}\sigma_A\sigma_B$.
-(4c) Lattice. (4a) holds for $e\in\{\pm e_1,\dots,\pm e_d\}$ and $s\in a\mathbb Z_+$. If $X,Y\subset[-r,r]^d$ with $r\in a\mathbb Z_+$, and $v\in a\mathbb Z^d$ has $|v|_\infty\ge2r$, the bound of (4b) holds with $|v|_\infty$ in place of $|v|$. Since $|v|_\infty\ge|v|/\sqrt d$, the rate in the Euclidean distance is at least $m/\sqrt d$; the hypotheses give no more.
+(4c) Lattice. (4a) holds for $e\in\{\pm e_1,\dots,\pm e_d\}$ and $s\in a\mathbb Z_+$. If $X,Y\subset[-r,r]^d$ with $r\in a\mathbb Z_+$, and $v\in a\mathbb Z^d$ has $|v|_\infty\ge2r$, the bound of (4b) holds with $|v|_\infty$ in place of $|v|$. Since $|v|_\infty\ge|v|/\sqrt d$, the rate in the Euclidean distance is at least $m/\sqrt d$. This file proves no better rate in diagonal directions.
 (4d) Schwinger functions. If instead $\mathfrak G$ acts on the test tuples and preserves the Schwinger functional, the same steps give the bound with the constant $\|Q[R\cdot F]\|$ of the rotated tuple. That is the reflection form at the rotated mirror; it is not $b(F,F)$, and a bound uniform over $R$ needs a moment bound per ball (T0's (c)(2), as `gap-skeleton.md` 1.2 says). In the measure instance the constant $\sigma_A$ is invariant under $\mathfrak G$ and no such bound is needed.
 
 **Proof.**
@@ -299,3 +299,12 @@ Then $\mathfrak D_\infty$ has a unique invariant vector and the gap (G$_m$); wit
 8.5. The skeleton's (U) (1.4) is (U$_\ell$) of (7d), stated on the sector of the class. Only the rate has to be uniform.
 8.6. The skeleton's direction "(T) $\Rightarrow$ (S)" (1.2) is a sketch through spectral measures. Statement (3) proves it with Lemma A2 and no spectral theorem.
 
+## 9. Summary, places to check, what stays open
+
+9.1. **Proved, by hand, from the listed properties only:** (1)-(5) in the abstract setting S; (6a-1), (6a-2), (6b) as explicit finite or explicit Gaussian examples; (7a), (7b), (7d), (7e), (7f). The only cited, not rebuilt, fact is the existence of a countable independent Gaussian family in 6.8, and the counterexample (6a-2) does not need it (6.8, last sentence).
+
+9.2. **The finding that matters for the chain.** For reflection-positive approximants, a gap passes to a limit with no uniformity other than one common rate (5). Concretely for (G-ell) $\to$ (G-inf): a rate $m$ uniform in $\ell$ on the sector of a class that is total in the limit, plus convergence of the class's diagonal reflected two-point functions, gives the infinite-volume gap $\ge m$ and a unique vacuum. Uniform constants, uniform moment bounds and spatial decay at finite $\ell$ are not needed for this step; uniform moment bounds remain needed to construct the limit. The same holds for the continuum limit at fixed $\ell$ (lattice spacing $\to0$).
+
+9.3. **Places a checker should look hardest.** E.8-E.11 (the isolated point $0$ of $\operatorname{spec}(H')$ is excluded by norm limits of polynomials, without the spectral theorem); 1.9-1.14 (generator, self-adjointness, uniqueness of the semigroup); Lemma A2 (log-convexity, the zero case A2.2); 5.2 (limits with $t_n\in2\mathbb T_n$); 6.3 and 6.9 (the eigenvalue ordering and the two Hankel minors); K.3 (reflection positivity of reversible chains through reversibility of the path weights).
+
+9.4. **Open, outside this row.** (G-ell) and (G-inf) themselves; the existence of continuum cylinder theories (skeleton node A1); invariance of volume limits of cylinders under exchange of time and space (7e; skeleton (J2)); a physical-units version of (7c); the free massless field version of (6b) with a proved lower bound (Remark 6.15).

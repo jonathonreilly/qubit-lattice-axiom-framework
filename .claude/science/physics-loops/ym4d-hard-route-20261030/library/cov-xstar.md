@@ -41,7 +41,8 @@ Five findings for the lead.
 
 1. **The wall `dO_{i+1}` is not among the walls of (U2).** The row asks for `k_0 < l' <= i + 1`. A plaquette
    of `Fr_i(X)` has all corners in `O_{i+1}`, a union of aligned level-(i+1) blocks, so `F(p) subset O_{i+1}`:
-   it does not meet `dO_{i+1}`. The walls are `k_0 < l' <= i`, and the depth `i + 1 - l'` is at least 1. A
+   it is not astride `dO_{i+1}` (it lies in `O_{i+1}`; it can touch the face from inside, and it is then
+   inside one region of (X1)). The walls are `k_0 < l' <= i`, and the depth `i + 1 - l'` is at least 1. A
    level-(i+1) plaquette astride `dO_{i+1}` has a corner in the old member `X minus O_{i+1}`; it is carried
    over by the stage (Lemma 4.1 (b) of `cov-global`), it is fresh only at step `i + 1`, and its supplier is
    (S-ord). Y's sentence "When `q = l` the bound follows directly from the original positive density test"
@@ -162,7 +163,8 @@ clause is in `Omega_{i_0+1}^c`, where `i_0 + 1 <= j`, and the other exterior cla
   that `F(p)` meets `O_{l'}` and is not contained in it. Then `F(p) subset N_{2 L^{i+1}}(dO_{l'}) cap K_i`.
 
 For `i <= k_0` only (Q1) and (Q2) occur, and in (Q2) `R = O_{i+1} minus O_i`. In no case does `F(p)` meet
-`Z''_i` (for `i = h`: `O_h`), and in no case does `F(p)` meet `dO_{i+1}` or leave `O_{i+1}`.
+`Z''_i` (for `i = h`: `O_h`), and in no case is `F(p)` astride `dO_{i+1}` or outside `O_{i+1}` (it lies in `O_{i+1}`; it can touch the face
+from inside, and it is then inside one region of (X1)).
 
 *Proof.* `O_{i+1}` is a union of aligned level-(i+1) blocks and contains the four corners, so
 `F(p) subset O_{i+1}` (Lemma G (b)).
@@ -269,10 +271,12 @@ lies in `O_{k_0+1}^{[-5 u_t]} subset O_{l'}^{[-5 u_t]} subset O_{l'}^{[-2 L^{i+1
 empty for every `q`. (iv) Hence, for `l' <= q <= i`: `N subset O_{l'+1} minus Z''_q subset O_{q+1} minus Z''_q = Lay^q_q`
 and `N subset O_{q+1} minus Z''_{q+1} = K_q`.
 
-Step 2 (c1, c3'). By (i), (ii), `N` lies in `O_{l'+1}^{[-a_{l'+1}]} minus O_{l'}^{[-4 a_{l'}]}`, a union of level-l'
-cells; each site of it is in a level-l' test cube inside it, whose test is carried at `nu_{l'}` ((DENS),
+Step 2 (c1, c3'). By (i), (ii), `N` lies in `O_{l'+1}^{[-a_{l'+1}]} minus O_{l'}^{[-4 a_{l'}]}`, and every site of it lies in a
+level-l' cell inside `O_{l'+1}^{[-a_{l'+1}]} minus O_{l'}^{[-4a_{l'}]}`; each site of it is in a level-l' test cube inside it, whose test is carried at `nu_{l'}` ((DENS),
 `h < l' <= t - 1`). By (iv) with `q = l'`, every level-l' bond with both ends in `F` is a row of `D_{l'}`. By
-(I4_{l'}), every level-l' plaquette `q` with its corners in `F` has `abs(F_q(W)) <= 2.1 eps_{l'}`.
+(I4_{l'}) (Y 134117-134118 gives `abs(dV_{l'} - 1) <= 2 eps_{l'}`; with the norm of i3-cert 2.3,
+`abs(F) = 2 arcsin(norm/2) <= 2 arcsin(eps_{l'}) <= (2 pi/3) eps_{l'} < 2.1 eps_{l'}` for `eps_{l'} <= 1/2`),
+every level-l' plaquette `q` with its corners in `F` has `abs(F_q(W)) <= 2.1 eps_{l'}`.
 
 Step 3 (c2'). For `l' <= q <= i + 1` let `B_q` be the set of level-q bonds `b` such that the order-q blocks
 of both endpoints lie in `F`. Claim: every `b in B_q` is a row of `D_q`, and
@@ -297,7 +301,8 @@ at depth `d` (Lemma 3.2 of `cov-x`).
 
 ## 6. The last stage, and the statement at every stage exit (X5, X6)
 
-**Theorem 6.1 (COV-X\*).** Assume (D1), (D2), (D3\*), (D4), (D5), (D6), (FR), (T1), (T3) of `i3-cert`, (AV2).
+**Theorem 6.1 (COV-X\*).** Assume (D1), (D2), (D3\*), (D4), (D5), (D6), (FR), (T1), (T3) of `i3-cert`, (LF) (or,
+without (LF), read `C_2` as the constant `2 . 4^r L^2 L_flat^2 A_L` of i3-cert 5.3), (AV2).
 Let X be a class component of level `t` with window from `h`, `h <= i <= t - 1`, and `p in Fr_i(X)` tested
 at the exit `nu_{i+1}` of the stage of level `i`. Then `p` has a supplier in the sense of Definition 3.1
 of `cov-x`, with (c1), (c2'), (c3') and `nu_{i+1}` in the place of `N`, at a moment `mu` with
@@ -321,11 +326,12 @@ The guard is T9 of `cov-x`, `chi_t^{(t-1-h)}` at `nu_{t-1}`, with the background
 - Suppliers: (Q1) at the last prepared face, in `E^{t-1}_0` (Lemma 4.1); (Q2) in one region, with the factor
   3 in `O_t minus O_{t-1}` (Lemma 4.2); (Q3) at a wall `dO_{l'}`, `k_0 < l' <= t - 1` (Lemma 5.1).
 - Carrying. The supplier is at a moment `<= nu_{t-1}`, and (c2') is proved at `x_{nu_t}`. After `nu_t`:
-  a stop at the extension test changes no row and no entry ((F-stop) of `cov-global`), so `p` is carried
-  over with the same loop. At the main step a plaquette of `Fr_{t-1}(X)` with no edge in the box is tested
+  at a stop at the extension test `p` stays tested and its loop changes at most by conjugation (the weak
+  form of (F-stop), row 638). That is the hypothesis of Lemma 5.2 of `cov-global`, which uses only the
+  conjugacy class of the loop. At the main step a plaquette of `Fr_{t-1}(X)` with no corner in `Lambda^pr` is tested
   before and after, with a conjugate loop ((F-main); Lemma 4.1 (d) of `cov-global`). Lemma 5.2 of
-  `cov-global` (carrying) then keeps the supplier with the same allowance. A plaquette with an edge in the
-  box is fresh at the main step; its supplier is (R-last) or (R-core) of `cov-global`, not this row.
+  `cov-global` (carrying) then keeps the supplier with the same allowance. A plaquette with a corner in
+  `Lambda^pr` is fresh at the main step; its supplier is (R-last) or (R-core) of `cov-global`, not this row.
   The carrying rests on (F-stop), (F-main), which are read statements of `cov-global` (row 638).
 - Comparison with Y 76685-76687 ("If a determining plaquette is deleted, the newly made layer uses its own
   regularity guard") and Y 77817-77825 ("Within the covered part use `chi_i^{(n+1)}` ... On footprints

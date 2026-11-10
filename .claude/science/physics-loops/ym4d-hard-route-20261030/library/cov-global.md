@@ -83,7 +83,8 @@ Five findings for the lead.
 5. **(S-core) is a direct bound, and it is the one analytic import.** At an island the last test fails, so
    no density test bounds the level-t loops that touch the restored box. Y's supplier is the cutoff
    `abs(log V') < M_0 eps_t` with the bound on the reference `V_Lambda` from the passed extension test
-   (Y 63836 (2), 63876, 76680-76685). I state it as (R-core) and did not rebuild it. The loop algebra from
+   (the reference bound Y 71488, with Y 63864 as summary; the extension test Y 63836 (2); Y 76680-76685).
+   I state it as (R-core) and did not rebuild it. The loop algebra from
    (R-core) to the defect is four lines (Lemma 5.4).
 
 What stays open: (COV-X*) in the instances of finding 3; the read statements (R-ord), (R-last), (R-core)
@@ -113,8 +114,9 @@ and F as statements about the actual operation (they are Y's prose, not rebuilt)
 ## 2. Setting and definitions (G0)
 
 Lengths are in bare units, distances in the sup norm. `a_l = M R_l L^l` is the side of a level-l cell
-(Y 63748). `R_l` is a power of `L` and is non-increasing in `l` (Y 62001), so every level-(l+1) cell is a
-union of level-l cells. Cells are closed cubes of a grid. For a set `A` of level-l cells, `N_r(A)` is the
+(Y 63748). `R_l` is a power of `L` with `R_k <= L R_{k+1}`, and all partitions are nested (Y 62001: "Because it is a
+power of L, all partitions are nested"; "`R_k <= L R_{k+1}`"), so every level-(l+1) cell is a
+union of level-l cells. (Non-increasing alone would not give this.) Cells are closed cubes of a grid. For a set `A` of level-l cells, `N_r(A)` is the
 set of level-l cells at index distance at most `r` from a cell of `A` (the `r`-cell neighbourhood).
 
 ### 2.1 The rules of the history (read)
@@ -195,8 +197,9 @@ that stands in a label `S` later than its creation. Then `C subset Z_m(S)`, and 
 
 *Proof.* C was a component of `Z_m(S'_m)`, a connected union of level-m cells. At its creation
 `Lambda_m cap C` is empty (drop-out) or unchanged (island) by (R4), so `C subset Z_m(S_m)`. Induction over
-the later moves. A step copies the entries of index `m` (R2). An operation of level `s > m` changes
-entries only inside its class components (R4). Let X' be one. By the induction hypothesis and the nesting
+the later moves. A step copies the entries of index `m` (R2). An operation of level `s >= m` other than the one on C changes
+entries only inside its class components (R4) (for `s = m` these are components of `Z_m(S'_m)` other than C,
+so disjoint from C, and the second case below holds). Let X' be one. By the induction hypothesis and the nesting
 (R1), `C subset Z_m subset Z_s` in `S'_s`; C is connected and X' is a component of `Z_s(S'_s)`, so
 `C subset X'` or `C cap X'` is empty. In the second case nothing changes on C. In the first case: if X' is
 healed or becomes an island, C is swallowed and does not stand afterwards (R4), against the hypothesis.
@@ -229,7 +232,7 @@ component's exterior buffer" (Y 77773-77774). I did not find a single definition
 the operation in Y; (b) holds for every enlargement by less than `a_t`.
 
 **Lemma 3.2 (the witness lies in the protected floor; proved from R1, R2, R5 and Lemma 3.1).** In the
-setting of Lemma 3.1 (a), let `Q(C)` be the set of level-h cells that contain a level-m cell of C. Then
+setting of Lemma 3.1 (a), with `M >= 2` and `R_h >= 1`, let `Q(C)` be the set of level-h cells that contain a level-m cell of C. Then
 
 - (i) `N_8(Q(C)) subset O_h = Fl(X)`;
 - (ii) `N_7(Q(C)) subset Fl^-(X)`;
@@ -251,7 +254,9 @@ which is a union of level-h cells, and `c` has interior points. By (R5)(b) at `i
 (ii) A level-h cell that touches a cell `q''` of `N_7(Q(C))` is in `N_8(Q(C))`, hence in `O_h` by (i), hence
 not a cell of `Omega_h`, and it is in X.
 
-(iii) `2 L^m < a_h`, because `a_h = M R_h L^h >= M L^{m+1}` and `M >= 2`. A point within `2 L^m` of a cell
+(iii) `2 L^m < a_h`, because `a_h = M R_h L^h >= M L^h >= M L^{m+1}` (`R_h >= 1`, `m + 1 <= h`) and `M >= 2`.
+`R_h >= 1` holds because `R_h` is the smallest power of `L` not less than `(log min x_i)^r` (Y 62001),
+which is at least 1 when `min x_i >= e`. A point within `2 L^m` of a cell
 `c subset q` lies in `q` or in a cell that touches `q`. `square`
 
 Remark 3.3 (what Y has). Y states the lemma at Y 78062-78070 and argues it at Y 76830-76840 in two cases
@@ -313,7 +318,7 @@ Each statement gives the variables and the entries that the move writes. X is a 
 `t` with window from `h`; boxes `O_i, G_i, Z''_i, K_i = O_{i+1} minus Z''_{i+1}` as in `library/cov-x.md` 2.1
 and (D1); `Lambda^pr = Z''_t` enlarged by one layer of level-t `M`-cubes (Y 63836 (1)).
 
-- **(F-step) Step `l` (Y 62174, 62078 (c), 76674-76676).** It adds the entries of index `l` and the level-l
+- **(F-step) Step `l` (Y 62174, 62078 (c), 76676-76677).** It adds the entries of index `l` and the level-l
   field; it changes no entry of lower index. For a plaquette of level below `l` that is tested before and
   after the step, the loop after is a conjugate of the loop before (the step moves retained rows only by
   its gauge draws: "A gauge draw, a frame change or a tree gauge conjugates the holonomy").
@@ -324,7 +329,10 @@ and (D1); `Lambda^pr = Z''_t` enlarged by one layer of level-t `M`-cubes (Y 6383
   at the level-(i+1) sites; (m3) the level-i bonds with an endpoint in `K_i` and none in the old member of
   index `i + 1` leave the point; nothing else changes, in X or outside ("the exterior of the component is
   fixed", Y 77775; "The core operation ..., which contains the failed tests, is at no point unfolded",
-  Y 63849).
+  Y 63849). For the last stage `i = t - 1`, `cov-x` defines no exit; there (F-stage) is the read hypothesis
+  (D3*) of `library/cov-xstar.md`: (D1), (D2), (D3) stated for the last stage, with exit `nu_t` and
+  `A^t_q = X minus Z''_q` (`h < q <= t`) (Y 64097-64100, 64119-64124, 77644-77645). Y states it in prose,
+  not at the level of rows.
 - **(F-stop) A stop of X after `n` completed stages, of either kind (Y 77793-77794; (R4)).** No row and no
   entry of the determining sequence changes: the sequence of a component with `n` completed stages and
   the sequence (R21) with `nu = n` of the drop-out are the same. The moves of the unfinished stage before
@@ -336,7 +344,7 @@ and (D1); `Lambda^pr = Z''_t` enlarged by one layer of level-t `M`-cubes (Y 6383
   bonds of the box (the level-t bonds with both ends in `Lambda^pr`): "Integrals against any bounded `F`
   that is independent of `V_k` on the box are left unchanged by it". For a level-t plaquette with no edge
   in the box, tested before and after, the loop after is a conjugate of the loop before (tree gauge and
-  its reverse, frame: Y 76674-76676, 76698-76699).
+  its reverse, frame: Y 76676-76677, 76698-76699).
 - **(F-refresh) Late Haar refresh (m4) (Y 65470-65472, 76677-76679).** "A late Haar refresh leaves the old
   determining datum in the inner slot." No row and no entry changes.
 
@@ -358,7 +366,9 @@ level below `h` in X, and every fresh plaquette has its complete footprint in X.
 `q + 1`. If `q + 1 < l` these are unchanged, so `p in P_nu`. If `q = l - 1`: `p` has a corner in `Omega_{l-1}`,
 and before the step there is no member of index `l`, so `p in P_nu`. (F-step) gives the conjugacy.
 
-(b) Levels `q <= i`: `library/cov-x.md` Lemma 5.1 (b): `p` is tested after the stage only if it was tested
+(b) Levels `q <= i`: `library/cov-x.md` Lemma 5.1 (b) (stated there for `i < t - 1`; for `i = t - 1` its proof
+reads only (D1), (D2), and goes through word for word with (D1), (D2) of the last stage from (F-stage),
+that is (D3*)): `p` is tested after the stage only if it was tested
 before, and then the four edge values are the same. Levels `q > i + 1`: the members of index `q`, `q + 1`
 and the rows of level `q` are unchanged; a completed edge reads the level-(q-1) rows of its double block
 in `Lay_{q-1}`; for `q - 1 > i + 1` nothing there changes, and for `q - 1 = i + 1` the old rows of level
@@ -406,13 +416,20 @@ a healing or an island replaces the whole of X.
 - **(R-ord) (Y 62078 (c), 1150-1152, 65426-65430, 76654-76660, 76021-76023; (R2); `library/cov-x.md` (D6)).** At
   the output of step `l`, the density test `chi_l(square)` is carried, hence equals one on an admitted
   trajectory, for every level-l test cube `square subset Omega_l`. The test cubes of level `l` partition
-  each level-l cell. If `chi_l(square) = 1` at a point, every level-l plaquette `q` with a corner in
+  each level-l cell. (Not stated in Y: Y 62001 says only that a test cube has side of order `M_2 R_l`, `M_2`
+  a power of `L`, and lies well inside a cell. This clause is a choice of the construction: the test cubes
+  of level `l` are the grid of side `M_2 R_l L^l`, and `M` is chosen a power of `L`.) If `chi_l(square) = 1` at a point, every level-l plaquette `q` with a corner in
   `square` has `norm(W(q) - 1) <= 2.1 eps_l` for the loop of the level-l datum of that point, in which the
-  value on a bond that is not a row is the one-step average of the lower rows ((I4_l) of `cov-x`).
+  value on a bond that is not a row is the one-step average of the lower rows ((I4_l) of `cov-x`). The
+  constant 2.1 is not in Y as a number (Y 76667-76668: "of order `eps_q`"). It is (I4) of
+  `library/rim-scale.md`, with the constant of `library/rim-scale-check.md`; by `library/cov-xstar-check.md`
+  R2 it follows from Y 134117-134118 (`abs(dV - 1) <= 2 eps`) by `2 arcsin(eps) <= (2 pi/3) eps < 2.1 eps`
+  for `eps <= 1/2`.
 - **(R-last) (Y 62104-62105, 76692-76697).** If X is healed, the last test has passed: `chi_t(square) = 1`
   at the point after the main step, for the new level-t datum, for every level-t test cube
   `square subset X^{[-6 a_t]}`; (I4_t) holds for it.
-- **(R-core) (Y 63836 (2), 63876 (4) and "The purpose of the stages", 65431-65433, 76680-76685).** After the
+- **(R-core) (the reference bound Y 71488 (Proposition "minimiser in a box"), with Y 63864 as summary;
+  the extension test Y 63836 (2); "The purpose of the stages", 65431-65433, 76680-76685).** After the
   main step with outcome island (or healed), for every level-t bond `b` with an end in X:
   `V_t(b) = V'(b) V_Lambda(b)`, where `V'(b) = 1` unless `b` is a bond of the box, the carried cutoff gives
   `norm(log V'(b)) < M_0 eps_t`, and the reference `V_Lambda` satisfies
@@ -437,7 +454,8 @@ stage only steps have occurred, and Lemma 5.2 below carries the supplier. `squar
 **(COV-X*).** For each class component X, each `h <= i <= t - 1`, and each `p in Fr_i(X)` that is tested at
 the exit `nu_{i+1}` of the stage of level `i`: `p` has a supplier in the sense of `library/cov-x.md`
 Definition 3.1 (bare or coarse, with (c1), (c2'), (c3'), and `nu_{i+1}` in the place of `N`) at a moment
-`mu` with `nu_h <= mu <= nu_{i+1}`.
+`mu` with `nu_h <= mu <= nu_{i+1}`, with defect at `x_{nu_{i+1}}` at most `C_2'' e_{i+1}`, where
+`C_2'' = max(C_2, 6 . 4^r L^2)` (the form of `library/cov-xstar.md` Theorem 6.1).
 
 What `library/cov-x.md` gives of it (not checked; row 633 is its check):
 
@@ -466,7 +484,7 @@ at which it was fresh, carried since by Lemma 5.2:
 | Last move at which `p` was fresh | Certificate, moment | Defect at `x_nu` | Row's name |
 |---|---|---|---|
 | step `l` | density test of level `l` on a cube in `Omega_l` that contains a corner of `p`, at the output of step `l` | `<= 2.1 eps_l` | (S-ord) |
-| stage of level `l - 1` of a class component X (now under operation, a standing drop-out, or healed or an island with `l = t`) | the supplier of (COV-X*), at a moment in `[nu_h, nu_l]` | `<= C_2' e_l` (`cov-x` Theorem 6.1) | (S-stage), (S-new); the seventh kind of `cov-x` P5b |
+| stage of level `l - 1` of a class component X (now under operation, a standing drop-out, or healed or an island with `l = t`) | the supplier of (COV-X*), at a moment in `[nu_h, nu_l]` | `<= C_2'' e_l`, `C_2'' = max(C_2, 6 . 4^r L^2)` ((COV-X*); `library/cov-xstar.md` Theorem 6.1) | (S-stage), (S-new); the seventh kind of `cov-x` P5b |
 | main step of X, healed, `l = t`, an edge in the box | last test on `X^{[-6 a_t]}`, after the main step | `<= 2.1 eps_t` | the top test of the new domain (Y 76697) |
 | main step of X, island, `l = t`, an edge in the box | cutoff and reference, (R-core), after the main step | `<= (4 M_0 + C(M)) eps_t` | (S-core) |
 
@@ -490,7 +508,8 @@ of `p` is in a level-t cell of `X^{[-6 a_t]}`, hence in a test cube inside it, a
 
 *Main step, island.* `p in B(X)`. Lemma 5.4.
 
-The bound in the second line: `cov-x` Lemma 3.2 with the allowances of its Theorem 6.1. `square`
+The bound in the second line: the allowance of (COV-X*), carried by Lemma 5.2 (`cov-x` Lemma 3.2 with the
+allowances of `library/cov-xstar.md` Theorem 6.1). `square`
 
 **Lemma 5.4 (the restored box; proved given (R-core)).** After the main step with outcome island, every
 level-t plaquette `p` with an edge in the box has `norm(W(p) - 1) <= (4 M_0 + C(M)) eps_t`.
@@ -532,7 +551,9 @@ old `Omega_s cap C = C minus O_s(C)`, or `C minus Z''_s(C)` with `Z''_s(C) subse
 level. So all corners are in `Omega_s`. By Theorem 5.1 the certificate of `p` is the one of its last fresh
 move. That move is not a stage of C (`Fr_i(C)` has all corners in C), not a stage of a component that
 contains C (its fresh plaquettes have level above its `h > s`, Lemma 3.1 (a)), not a main step with
-outcome healed or island of a component that contains C (C would not stand), and not a move of a
+outcome healed or island of a component that contains C (C would not stand), nor the main step of C
+itself, whose box plaquettes have all corners in C (every corner is within `L^s` of
+`Lambda^pr(C) subset H_s(C) subset C^{[-6 a_s]}`), and not a move of a
 component that does not contain C (its fresh plaquettes have all corners in it or an edge deep in it,
 and it is disjoint from C; at level `s` it is at distance `a_s` from C). So it is step `s`. `square`
 
@@ -602,7 +623,7 @@ such test (the last test fails), and the guard of the last stage is needed.
 2. **The read statements.** F (five frame statements), (R-ord), (R-last), (R-core) are Y's prose turned into
    hypotheses. (R-core) is an estimate of Y (the extension by least action) with a constant `C(M)`; its
    exact form at the plaquettes astride the face of the box is my reading. (F-step) and (F-main) are
-   stated at the level of loops ("conjugate"), because Y states them so (Y 76674-76676); a statement at the
+   stated at the level of loops ("conjugate"), because Y states them so (Y 76676-76677); a statement at the
    level of rows needs the support of each gauge draw.
 3. **R1 to R5 for the operation of this lane.** For Y they are definitions and one ported proof (R5).
    `library/geoh.md` line 34 keeps "quarantine identification" outstanding for the revised operation; the

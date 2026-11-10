@@ -1,27 +1,27 @@
 # Agent entry point
 
-1. **Rules:** read `docs/ai_methodology/SCIENCE_WORKFLOW.md`. It is the single
-   operating map: evidence rules, current owner settings, stages, where
-   material belongs and, in section 10, how sessions on any provider work as a
-   lab.
-2. **Procedure:** pick the skill for the job from section 6 of that file
-   (`docs/ai_methodology/skills/<name>/SKILL.md`). `.claude/commands/` are thin
-   adapters to the same skills.
-3. **Planning state:** dispatcher instructions, the TOE scorecard and campaign
-   status live on the orphan `ai/execution` branch, which never merges into
-   `main`. Read without touching your working tree:
+`origin/main` is the authority for rules, science and standing. A local
+checkout may be behind it: `python3 scripts/lab_ops.py doctor` says whether
+this one's rules are current, and `git show origin/main:<path>` reads the
+current ones.
 
-   ```bash
-   git fetch origin ai/execution --quiet
-   git show origin/ai/execution:AGENTS.md
-   ```
+1. **Rules.** `docs/ai_methodology/RULES.md`. Read it once per task. It is short
+   on purpose and everything else defers to it.
+2. **Settings.** `docs/ai_methodology/SETTINGS.md`: the owner's current choices
+   (cadence, method defaults, audit trigger, models by role). No other rule or
+   procedure prescribes a model.
+3. **Procedure.** Pick one from `docs/ai_methodology/PROCEDURES.md` and read
+   that one.
+4. **Foundation.** The axioms are `docs/MINIMAL_AXIOMS_2026-06-29.md`. Quote
+   them from `origin/main`, never from a summary, a skill or memory.
+   `docs/ai_methodology/FRAMEWORK_PRIMER.md` says how to read them.
+5. **State.** A target's state is its folder on its pushed branch;
+   `python3 scripts/lab_ops.py status <folder>` summarises it. Planning notes
+   and the list of targets are on the orphan `ai/execution` branch
+   (`git show origin/ai/execution:CAMPAIGN_STATUS.md`). They are an as-of aid
+   and grant nothing.
 
-   Planning supplies no scientific status. `origin/main` is the only authority
-   for science content and audit status. Do not check `ai/execution` files out
-   into a `main` working tree.
+`docs/work_history/`, `archive/` and dated campaign packs are history. Read
+them for recovery; never execute them as procedure.
 
-Original mathematics is welcome within the user's task. It does not by itself
-add a physical axiom or establish a physical identification.
-
-Historical automation protocols are in `docs/work_history/automation/` and must
-not be executed.
+This repository is public by design. Everything pushed is public.

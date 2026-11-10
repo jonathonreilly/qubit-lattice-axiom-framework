@@ -38,3 +38,41 @@ Candidates I checked and found covered:
 - T4: `chi_m(square)` is formed with the localized background `U_{m,square}(V_m)` and depends on `V_m` within `O(1)` test cubes (Y 62003). The halos of cubes based in `Omega_m^{~4} minus Omega_m` read level-`m` rows in `K`; these are the averaging targets `V_m(c)`, which are in `omega`.
 - T5: Y 64022-64025 (gap at least `3 a_q`, halos less than `a_q`), Y 64836-64837.
 
+
+## 3. Item (3): Lemma 4.2 and Proposition 4.3
+
+**Verdict: HOLDS AFTER REPAIR.** The supports are one-bond balls, and Y's overlap estimate applies, after three small repairs. None changes a conclusion.
+
+Lemma 4.2 is correct as written: `1 - I_alpha <= sum_{b in S_alpha} 1{|z_b| >= h}`; the product expands into the stated sum; indicators are idempotent; the preimage of `b` under `alpha -> b_alpha` lies in `{alpha : b in S_alpha}`, which has at most `nu` elements, so the image has at least `|A|/nu` elements. It is the displayed inequality of Y 64536-64541.
+
+Y's hypotheses for a selector kept in the expansion (Y 64506-64512): fixed in the real integration coordinates on the whole parameter domain, fixed carrier, accepts the smaller ball. T7 is the fixed ball in `B_g` (Y 65104-65106; for the global sharp branch Y keeps `B_g` as the variable of the ball, Y 65868-65877). T8 is in the original strip coordinate: "The tests inside the integral are in their original real slots ... The domain of a hard cutoff stays in its original coordinate" (Y 69547-69551). Carriers are single bonds. Proposition 4.3 (3) is correct: with Y's norm (`<X,Y> = (1/2) Tr XY`, Y 4701-4702) a traceless Hermitian `theta` with eigenvalues `+-t` has `|theta| = t` and `norm(e^{i theta} - 1) = 2 sin(t/2) <= t`; unitary invariance gives `norm(e^{i theta} C - 1) <= delta'_j + delta'_j/8 < 2 delta'_j`. Y states the same implication (Y 65074-65075, 65868-65870). The Gaussian tail itself is Y's (Y 64542-64548), cited, as the note says.
+
+Repairs:
+
+- **R3-a (multiplicity).** `nu = 1` needs two merges. The three ordinary indicators at one strip slot count as one selector, their conjunction (Y 69538-69540). T6 and T7 read the same bond `b`; if both are kept as failure selectors (before the sharp split), `nu = 2`. On the passing sharp branch T6 is identically one (Y 65869-65870), and then `nu = 1`. The tail changes only by `c h^2 |A|/2` in place of `c h^2 |A|`.
+- **R3-b (normalization).** Item (2) writes T8 as `abs(a_b) < rho_b` with `rho_b` a fraction of `delta_j`, and the line after Proposition 4.3 asks `g_j h <= rho_b`. These agree only if `a_b` is in field units and the ball is `abs(g_j a_b) < rho_b` (Y's angular coordinate `a' = g_j A^s_j`, Y 72106). Write T8 as `prod_b 1{abs(g_j a_b) < rho_b}`.
+- **R3-c (missing hypothesis in the proof of (2)).** The identity "a hard test with threshold at most `29 delta_j/24` is the same function of the new variable as of the old one" holds under the strip bound `|H_b| <= delta_j/8` (Y 62300-62301, 64681-64682). Add it. It holds at weak coupling: the centre shift is `C_L eps_j e^{-c R_q}` (Y 63937-63939) and `delta_j/eps_j = A_1/A_0` is fixed (Y 62068).
+
+Wording only: "No domain depends on `omega`" (after Proposition 4.3) is false for T6, whose centre `C_b(omega)` moves with the datum. It is harmless: the datum is real and fixed on the fibre, and T6 is one on the T7 ball.
+
+## 4. Item (4): Lemma 5.1 and its uses
+
+**Verdict: Lemma 5.1 HOLDS. Its use in Theorem 5.6 HOLDS. One sentence after Theorem 5.6 does not follow and needs repair R4.**
+
+The lemma: two cases on `I(pi(x))`, each one line. Correct. In Theorem 5.6, (F1) is "`P Q != 0` implies `I = 1`". The incoming term contains `P` and every factor of `Q` except the new stage factors, so `P Q != 0` implies that `x` is on the entering support, where (F1-Y) gives `I = 1`. Y's derivation of the datum bound uses exactly the preceding-stage support and T4 (Y 64088-64106, 134200-134216), not the final guard. So there is no circle: (F1) uses `P`, and (F2) proves `P = 1` from `A I = 1`. The identity holds also off `K_0`: there T6 or T8 is zero, and both are in `Q`.
+
+**R4.** The last paragraph of 5.6 says: "Since `I(pi(x)) = 1` on the entering support, the factor `I` can be dropped again after the integration; the measure does not change." This does not follow. The integrated kernel at `omega` is `I(omega) int Q dz`. At an `omega` with `I(omega) = 0`, (F1) gives `P Q = 0` on the whole fibre, but the note shows no factor of `Q` that vanishes there, so `int Q dz` may be nonzero (for example when part (ii) of `I`, the global datum, fails while `G T4 T8 = 1`; I did not decide whether the other carried factors of the term exclude this). Dropping `I` then adds mass that the original term does not have. Repair: keep `I` as a factor of kind (A) outside the collar logarithm. It is the factor that replaces `P`. It may be dropped only on a set where the outgoing `omega`-measure is already known to vanish when `I = 0`, which is the content of (F1) and has to be applied before the integration, not after. No other line of the note uses the dropped form.
+
+Other uses: section 6 item 5 inserts `chi_E` on `{G T4 I = 1}`. That is not Lemma 5.1. It needs the stronger half of RIM-REG; see item (5).
+
+## 5. Item (5): Lemma 5.2 against Theorem 6.2 with R-a to R-d
+
+**Verdict: HOLDS for the first half (existence, uniqueness, radius on the whole joined set, `E` included). HOLDS AFTER REPAIR R5 for the claim in section 6 item 3 that the stronger half also holds on the same set.**
+
+Hypotheses, first half. Theorem 6.2 needs H-GEO; `eps_int <= a_1`; `2 eps_m <= a_1` (2.1 after the constant of `rim-scale-check.md`); `C_B eps_int <= a_0`; (a) the carried top density tests on the cubes covering `X cap Omega_m`, which is the outer two cell layers by (63760) (R-c); (b) the interior bound (I3). Lemma 5.2 has H-GEO; `eps_bar <= a_1`, which contains the first two; `C_B eps_bar < a_0` follows from `C_B a_1 < a_0`, which is part of `bgc:proper-background` (Y 35633-35635); (a) is contained in T4 (bases in `Omega_m^{~4}`, Y 64096-64097); (b) is replaced by T4 plus part (i) of `I`. That replacement is sound. Part (i) asks the bound only of tested holonomies that are not tower holonomies and have no corner in a carried top density cube. Those that have such a corner are top plaquettes, bounded by T4 and (I4). Tower holonomies are one or top plaquettes of `V_m` (R1) whose four blocks lie in `X` (cells are aligned, so a block is inside or outside `X`), hence they have corners in the covered outer layers. So the three kinds exhaust the tested holonomies (Y 134207-134210), and part (i) is implied by (I3) with `C_3 = C`. Y argues the same way: "Hence the joined datum is `bar eps`-regular for `bar eps > C max_q e_q` ... The regular orbit for the localized set in force therefore exists before the prospective guard is applied" (Y 134211-134216).
+
+R-a, R-b and R-d do not touch the first half: R-a and R-b concern the profile bound on `E`; R-d concerns Corollary 6.3. R-c concerns a citation; Lemma 5.2 cites coverage (Y 76692-76697) instead of (G1), which is enough.
+
+Conclusion on `E`. `bgc:proper-background` bounds `R_mat`, a supremum over the whole joined set, so `R(U^+) <= C_B eps_bar` holds on `E` and the tower. With R-a this is `norm(dU^+(p) - 1) <= C_B eps_bar L^{-2 lambda(p)}` on `E`. It is a bound by `eps_bar`, which is of order `C_3 max_q R_q^2 eps_q`, not of order `eps_m`. That is all that Proposition 5.3 says the inputs read on `E` (existence, a radius below a fixed ceiling, the top rows), so the conclusion on `E` that the note uses follows.
+
+**R5.** Section 6 item 3 adds: "The stronger half of RIM-REG (curvature at most `2 K_w eps_m L^{-2 lambda(p)}` on `E`, so `chi_E = 1`) holds on the same set." Lemma 5.2's hypotheses do not give it. Theorem 6.2's second half also needs `C_B eps_int <= a_c` (the profile, (I2)), `eps_int e^{-delta d} <= eps_m/2` with `d` the weighted distance from `E` to `X cap Omega_m^c`, and R-a, R-b. Section 8 item 5 lists neither condition. Repair: add both to the coupling ceiling (both hold at weak coupling: `d >= c M R_m`, Y 71386-71391), or restrict the sentence to that case. Nothing else in the note uses the stronger half, except the insertion of `chi_E` in section 6 item 5.

@@ -3,7 +3,7 @@ lease_until: 2026-11-11T02:53Z
 
 # A proposed proof of your `prop:large-field-2-3`
 
-Provenance: written by Claude Opus 5.5; checked line by line by Claude Fable 5.2. Not an audit.
+Provenance: Claude Opus 5.5 wrote the proof and this note. Claude Fable 5.2 and Codex (GPT-6) each checked the proof line by line. Not an audit.
 
 All rules, symbols and statements used below are yours. The source is `YM4/YM4_1400.tex` at commit `c7fef8b21b58` of ethanwsussman/Yang--Mills-LLM-experiment ([the file](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/c7fef8b21b58/YM4/YM4_1400.tex)). "Line n" means line n of that file.
 
@@ -97,7 +97,7 @@ O_i:=\Omega_i^c\cap X=H_i^{[8a_i]},\qquad G_i=H_i^{[10a_i]},\qquad G_k=X,
 
 for $`k_\flat<i\le k`$, where "$`\Omega_i,Z_i`$ without a label refer to $`\mathcal S'_k`$" (lines 63766-63767).
 
-**(H3) Prepared boxes.** Lines 63776-63779: "let $`k_0+1`$ be the last index with $`a_{k_0+1}=u_k`$, with $`h<k_0\le k-2`$." Lines 63783-63784:
+**(H3) Prepared boxes.** Lines 63775-63777: "let $`k_0+1`$ be the last index with $`a_{k_0+1}=u_k`$, with $`h<k_0\le k-2`$." Lines 63783-63784:
 
 ```math
 w_{k_0+1}=2u_k,\qquad w_k=0,\qquad w_i=\sum_{q=i+1}^k u_q\quad (k_0+2\le i<k).

@@ -50,7 +50,7 @@ Y uses the letter $h$ twice: for a history (Lemma 5, Theorem 6) and for the dept
 
 Site conventions: a site or bond set lies in its closed carrier, so a lower bound on carrier distance is a lower bound on site distance. Nothing is lost by working with carriers.
 
-### 2.3 Three readings (not missing rules)
+### 2.3 Two readings and one rule of Y (not missing rules)
 
 - (R1) The live region $Y=\mathcal Z_{t-1}$ of step $t$ is $Z_{t-1}(\mathcal S_{t-1})$: "let $\mathcal Z_k(h)$ be the live region after healing" (Y 1586); islands and drop-outs stay in $Z_t$ (Y 62106-62107). Only $Z_{t-1}\subset\widehat Y$ is used.
 - (R2) The fate rules "for $l\le t$" (Y 62105-62106) include the entry $l=0$, since "a label's sequence starts at $\Omega_0$". Used only for the pair $(0,1)$; the display of Y concerns $j\ge1$ and does not need it. (If healing did not fill $\Omega_0$, the pair $(0,1)$ would have gap $0$ inside a healed component that meets $\Omega_0^c$.) A second reading gives the pair $(0,1)$ as well: if $\Omega_0$ is defined at every moment as $\Omega_1^\sim$ (Y 61973 read as a standing rule), then after healing $\Omega_0=(\Omega_1\cup X)^\sim\supset\Omega_0\cup X$, and Lemma 0 gives $d(\Omega_0^c,\Omega_1)\ge a_1$ directly. Only the reading in which $\Omega_0$ is frozen at step 1 and not filled by healing breaks the pair $(0,1)$.
@@ -150,7 +150,7 @@ In one line: **yes**, Theorem 6 gives hypothesis CORE of `library/h-geo.md` sect
 
 ## 7. What stays open, and checks
 
-1. **Not checked by another model.** One line-by-line check is needed, preferably by Codex (FINISH rule 2: another provider).
+1. **Checked twice, line by line (2026-11-10):** by Claude Fable 5.2 medium (`library/core-gaps-check.md`; repairs R1-R7 applied) and by Codex, launched as gpt-6-astra max (`library/core-gaps-xcheck.md`; first failing step none, no repair).
 2. **[Y] inputs used as stated, not re-derived here:** the quiet boxes, from Y's tracing and restriction paragraphs (Y 63694-63766); the prepared-box formula with the index $k_0$, $h<k_0\le t-2$ (Y 63774-63809; its existence above a scale floor is `library/geoh.md` 186-190, by `h-geo.md` section 6 item 4); "marks wait", from the quarantine condition (Y 62128, Y 63684-63690); and that standing marks keep $\Lambda_s\cap X_o=\emptyset$ until a healing or island swallows them (Y 62107-62128). Each is Y's own statement with Y's reason; the box arithmetic was checked in `h-geo-check.md`.
 3. **Readings (R1)-(R3)** of section 2.3. Only (R2), that healing and islands fill $\Omega_0$, matters, and only for the pair $(0,1)$. Y's display ($j\ge1$) does not need it.
 4. **Out of scope** (other sentences of the proposition): the gaps $cM\check R_j$ for regions as produced by steps (Lemma 2 gives $8a_t$ at the moment of the step only); "every large-field region and every creation set is a union of cells of its own level"; the decomposition of unity and the creation counts; the identity $\Omega^{\boldsymbol\nu_\mu}_l(\mathcal S_t)=\Omega_l(\mathcal S^\mu)\cup Z_{[j,t]}$ (Y 62128).

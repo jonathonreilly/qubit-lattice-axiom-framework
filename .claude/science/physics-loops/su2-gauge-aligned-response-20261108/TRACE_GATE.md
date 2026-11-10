@@ -3,31 +3,36 @@
 ```yaml
 trace_class: upstream_support
 target_claim_id: null
-target_blocker_text: "full connected two-source/two-boundary response"
+target_blocker_text: "full connected two-source/two-boundary response and its seven-edge marginal normalizer"
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Bound the actual coarse-conditional Q response with its retained exterior parameters and extend terminal-field control before further exact blocking."
+next_trace_action: "Specify and control the nonidentity terminal backgrounds and conditional geometries needed for another exact normalized transition."
 ```
 
-The new result supplies the full compact numerator law at terminal identity:
-a C/u connected tree bound and weighted two-boundary summability for quotient
-singlets, together with the exact original-source orbit-covariance extension.
-It replaces the earlier chart-only spatial estimate with a compact-law bound
-through an exact normalized connected correction.
+The present finite two-step results include the full compact numerator law
+at terminal identity and the actual seven-edge two-plaquette marginal law
+at identity exterior. Each has C/u connected tree decay and weighted
+boundary-pair summability for fixed local C2 quotient singlets. The full
+original-source response retains the conditional orbit covariance and its
+possible O(1) merged-source term. The exact p_J=N/Q_J coefficient is now
+controlled, including the exterior-dependent normalizer subtraction.
 
-The broader normalized conditional requires its full log Q subtraction.
-The result is useful to that consumer and to a later blocking-stability test,
-but it does not by itself establish arbitrary terminal control, an all-depth
-renormalization estimate, continuum existence, a physical mass or TOE unification.
+The marginal proof rebuilds source-marked regional integrals and actual
+frozen Gaussian producers, pays the compact-label entropy, and matches all
+hypotheses of the normalized-density forest. It then adds the actual chart
+logarithm using complete connected cut cancellations. Rarity, positive
+local precision and local ratio jets alone are not used as that conclusion.
 
-The continuation derives the exact released-terminal marginal and its full
-four-variable conditioning identity, with a separate zero-source V_O=I
-component-gauge diagnostic. A further continuation proves compact coercivity
-and the actual normalized identity Hessian for the seven-edge marginal.
-The regional/chart continuation supplies complete normalized-energy relative
-coercivity, all-u small-chart covariance, arbitrary-exterior moments and full
-buffered ratio jets. Exact compact decomposition and connected composition
-for this marginal remain the next obligations. PROOF_TREE distinguishes these finite results
-from every open physical dependency; the diagram is a research plan, not a
-proved reduction to the mass-gap target.
+The earlier exact partial-terminal identity, all 15 cumulance terms and
+component-gauge diagnostic remain unchanged. Seven-edge compact coercivity,
+normalized precision and regional/chart suppliers remain explicit premises
+with their frozen research checks. The new composition uses their actual
+scopes; formal audit is still separate. The complete proof tree is in
+[PROOF_TREE](PROOF_TREE.md).
+
+Nonidentity compact backgrounds, larger conditional geometries, inherited
+third-transition closure, depth/cutoff control, continuum existence and a
+physical spectral gap remain open. These are proposed research dependencies,
+not a proved reduction or a claim that a mass-gap solution is near. No TOE
+identification or physical running law is inferred from the supplied family.

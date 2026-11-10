@@ -315,3 +315,87 @@ normalized-regional proof. Exactly that byte was removed, with the checked
 copy preserved. The manifest and external-check packet record both hashes
 and the exact byte comparison; no mathematical or source-pin change occurred.
 The original host report remains unchanged.
+
+
+## Actual marginal compact/connected continuation — 2026-11-09
+
+Started at c0497327ec81143f6f8b5369c86583ad3387d785. Main was refreshed
+before launch and packaging and remains bf92a1d763030836ed55631d5d7a7ef3b288f284.
+Current-main workflow and repo skill sources govern. Preflight passed with
+105 GB disk free, 29% memory free, load 4.2, working nice and origin/push
+access; no model floor was declared and a memory cap was unavailable.
+This was a bounded interactive proof task, not an unattended campaign.
+
+Luna low completed the repo/primary-literature pass before author delegation.
+Its bounded inventory distinguishes actual-law suppliers from old fully
+pinned methods and unmatched APS/Lohmann/BKAR contracts. Two medium-effort
+bounded workers derived the compact source-marked gas and actual Gaussian
+producers in separate managed trees. The supervisor read those complete
+arguments and retained the selected profile for the activity count, exact
+forest match and connected response composition. No external theorem with
+unchecked model or insertion hypotheses is imported.
+
+A fresh inherited-profile host checker reconstructed the shell, denominator,
+Gaussian and normalized-density mechanisms before reading new candidates.
+It independently counted compact labels by the unique core components and
+bounded their tree encodings, then checked the full producer/composition
+arguments. Its exact four-state enumeration gives -3/4, while independently
+derived frozen-denominator algebra gives -3/8. Further examples detect lost
+exterior readers and omitted unused-scalar chart bodies. These checks target
+specific errors; agreement between model answers is not the proof.
+
+One material scope finding was corrected: the conditional-density corollary
+initially invoked the older pinned theorem without extending its translated-
+tree supplier to arbitrary allowed trees. The revised proof restores the
+seven kernels, uses E_full>=E_J and the already maximal incidence constants,
+and matches the actual normalization counts and finite-template Gaussian/
+chart arguments again. The checker read the final composition in full,
+the final primary, its added dependency table and the whole proof map. The
+metric-only Gaussian clarification is also byte-mapped. The final report is
+[gates/marginal-connected-expansion-check.md](gates/marginal-connected-expansion-check.md).
+
+The requested tool-free Fable call observed claude-fable-5-2 at max effort
+and completed successfully. It inspected exactly five existing method/primary
+texts, not new proofs. It reconstructed the shell and abstract forest and
+flagged source-polydisc, path and chart/orbit requirements. The final proof
+already meets the smaller source radius and symmetric-path conditions.
+Its shared-global-orbit example is outside the actual local product-Haar
+singlet class; the full chart fourth coefficient is controlled by the
+actual chart covariance and all cut cancellations. The host checker examined
+these two objections only after its independent new-file verdict. The
+complete answer, input boundary and dispositions are preserved in the source
+record. This advice is not labeled new-file certification or formal audit.
+
+The new theorem gives the full compact marginal C/u tree response and weighted
+boundary-pair sum, preserves original orbit covariance and bounds the exact
+seven-edge conditional normalizer subtraction at identity. The accepted
+c_J and earlier chart/regional/forest proofs remain explicit unchanged
+premises. No claim of compact nonidentity, arbitrary geometry, repeated-link,
+iteration, continuum or physical spectral control has been added.
+
+Conformance was checked section by section against the current
+REVIEW_LOOP_PR_CONFORMANCE_SPEC. Section 1: all mathematical dependencies
+are included or on main, with source hashes; process hashes are provenance,
+not replay requirements. Sections 2 and 6: no physics runner or cache is
+introduced; exact manual/finite combinatorial discriminators provide an
+independent path for the changed formulas. Section 3: all current surfaces
+state finite depth, identity exterior, source class and large-u threshold.
+Section 4: no no-go or universal impossibility is asserted; specific
+counterexamples remain scoped tests. Section 5: the new primary links the
+obligation closure and the actual-law match leaves no target-equivalent
+lemma open. Section 7: no helper-runner registry or policy change is needed
+for pure analytic proofs. Section 8: new load-bearing links and full packet
+local links are verified; no generated authority output is included.
+Sections 9 and 10: complete author status/trace metadata, explicit supplied
+family and retained-status firewall. Section 11: file counts/hashes are
+recomputed for the final packet. Section 12: focused vocabulary, hash,
+local-link and complete main-to-index whitespace checks are recorded in
+the manifest and local receipts. The shared integrated-current-main pipeline,
+strict audit lint and changed-evidence pass remain required before landing;
+they are not claimed run during this author continuation. No Python source
+or cached numeric runner changed. A later formal audit remains separate.
+
+No editable prompt or platform instruction changed. Earlier proof, gate
+and primary-note bytes remain unchanged. Needed worker artifacts/logs were
+copied and hash-checked before managed cleanup; archive and lease receipts
+are recorded at publication. PR #10149 alone is updated, without merging.

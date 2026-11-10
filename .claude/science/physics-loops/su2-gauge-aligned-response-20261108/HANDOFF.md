@@ -1,14 +1,76 @@
 # SU(2) mass-gap lane: current checkpoint
 
 Single working [PR #10149](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10149)
-is open against main, published from 4a3f6be4cf4ea0321bb5042c2969fc035479e7c2
+is open against main, first published from 4a3f6be4cf4ea0321bb5042c2969fc035479e7c2
 on 2026-11-09. The owner requested one PR containing the full proof tree and
 continued work in it. Continue on branch
 physics-loop/su2-gauge-aligned-response-20261108; do not create a stack.
 The [proof tree](PROOF_TREE.md) is the current map of checked finite-model
 arguments and open quantitative/physical dependencies.
 
-## Current continuation: regional and nonlinear chart suppliers
+## Completed continuation: compact decomposition and connected density
+
+The current local milestone starts from published
+c0497327ec81143f6f8b5369c86583ad3387d785. Main and planning refs were
+refreshed again before packaging and remain
+bf92a1d763030836ed55631d5d7a7ef3b288f284 and
+56c5c0ab64f532c5784e895b2f9aa6894fa334e0. The latest publication head
+and exact PR body are recorded in the external checkpoint after push.
+Continue the same PR, not a stack.
+
+The [new primary theorem](../../../../docs/SU2_MARGINAL_CONNECTED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-11-09.md)
+now supplies the full compact seven-edge marginal connected response at
+identity exterior. The exact source-marked compact gas keeps all actual
+surviving normalizers, source-dependent regional denominators and complete
+readers. The actual Gaussian producer retains whole-cell bodies, symmetric
+paths and the common physical prefactor without translation symmetry. A
+core-union animal count closes the compact half of the density-forest
+budget. The connected correction is O(exp(-c log(u)^(2A))). Adding the
+actual chart fourth coefficient gives C/u tree decay and a weighted
+boundary-pair sum for fixed C2 quotient singlets. Original sources retain
+the exact conditional-orbit term and its O(1) allowance where readers meet.
+
+This also controls the actual p_J=N/Q_J coefficient at identity, including
+the exterior-dependent normalizer subtraction. The independent checker
+identified an unstated arbitrary-tree extension in the older pinned
+supplier. The new composition now proves that companion directly by
+restoring the seven nonnegative leading kernel energies and repeating the
+finite-template/actual-count match. No tree-class hypothesis is dropped.
+
+Luna's repo and live primary-literature pass preceded two bounded medium-
+effort proof workers. The supervisor retained the selected model/effort
+for composition and decisive judgments and read all changed arguments.
+The [new host check](gates/marginal-connected-expansion-check.md) first
+reconstructed the mechanisms independently, then checked all three final
+proofs and the primary/map at exact hashes. An exact four-state cumulant
+is -3/4 versus -3/8 after freezing a regional source denominator. Separate
+reader and whole-cell tests detect omissions. Supplied compact/chart
+ancestors remain pinned premises, not recertified from scratch.
+
+The [Fable 5.2 max approach consultation](sources/fable-marginal-connected-approach-20261109.md)
+completed successfully with observed claude-fable-5-2, tool-free. It read
+five old texts, never the new candidates. The entire final advice and
+input hashes are preserved. Small source radii and symmetric paths were
+already implemented. Its shared-global-orbit objection does not apply to
+the actual local product-Haar singlet class; its demand to control the
+chart log is satisfied by the fixed-order chart cut proof. The host checker
+assessed these after its independent verdict. This is advice plus a scoped
+host research check, not formal audit or retained status.
+
+All earlier proof/gate/primary bytes are preserved. Current exact hashes
+and final mechanical checks are in manifest.json and
+logs/su2-marginal-connected-expansion-20261109/. Worker outputs and logs
+were copied with byte verification before managed archiving. No numerical
+physics job, new runner, physical axiom, prompt edit or audit-output edit
+is part of this continuation. Lease disposition is recorded in STATE.
+
+Next: compact control for a specified nonidentity terminal-background
+class, then the conditional geometries and rough terminal components
+needed for another exact transition. An everywhere-small class has not
+been proved sufficient for iteration. Inherited-action closure, physical-
+scale limits, continuum QFT and a positive physical gap remain open.
+
+## Completed continuation: regional and nonlinear chart suppliers
 
 Owner request, 2026-11-09, starting at published head
 fbdfb3c1b8852e5de302fab6f0f7cfc70ba04cac. Main and procedure sources remain

@@ -1,6 +1,55 @@
 # Target contract
 
-## Current target: marginal regional and nonlinear chart estimates
+## Completed target: marginal compact decomposition and connected-density expansion
+
+Owner request, local date 2026-11-09: continue #10149 from
+c0497327ec81143f6f8b5369c86583ad3387d785. Main remains
+bf92a1d763030836ed55631d5d7a7ef3b288f284. Luna performs the repo and
+primary-literature matching first; bounded proof workers and Fable 5.2
+maximum-effort advice follow. No new PR, axiom, audit or landing is requested.
+
+Target the actual seven-edge two-plaquette marginal at V_O=I, zero source,
+fixed odd L>=3, kappa>0, m>=3 and sufficiently large u. Retain q_u, every
+K0 and every surviving terminal kernel/normalizer. Use the already checked
+marginal chart, compact and radial-profile bounds with their exact domains.
+Construct the exact source-marked compact insertion representation and its
+normalized connected-density expansion, with quantitative volume-uniform
+reader-weighted bounds. Aim to compose the complete distinct-terminal
+four-response if all suppliers match; do not substitute a list of obligations
+for a required connected estimate.
+
+Candidate route: reinstate first-successful-shell regional integrals with
+the marginal's constants, frozen Gaussian covariance and real fixed-score
+sources, then verify the connected forest contract. The first decisive
+checks target double use of core energy, omitted source denominators,
+overlap of dummy regions/readers, scalar-activity factorization, unsigned
+loss of connected cancellations and Gaussian interpolation hypotheses.
+Factor deletion or a positive local Hessian alone is not the consumer proof.
+The nearest old fully pinned decomposition/forest is prior method, not an
+automatic theorem for this different law. A direct connected expansion is
+an alternative if its hardest hypothesis is easier to establish; a failure
+must be a specific calculation or counterexample, not an asserted no-go.
+
+Success is a complete checked compact decomposition and connected-density
+bound for this marginal, with full source/orbit reconstruction if the final
+response is reached. Required nonidentity compact backgrounds, larger
+conditional geometries, further inherited blocking and physical continuum
+spectral identification remain separate. The supplied SU(2) family and its
+c_J premise are explicit; no framework primitive is added or used to derive
+that family. Exact source/search records and next decisions remain here.
+
+
+The current derivation supplies the exact source-marked compact gas, actual
+Gaussian producers, full connected compact/chart correction and complete
+C/u marginal four-response for the stated quotient singlets. Original sources
+keep their conditional orbit covariance. The restored-kernel companion is
+matched explicitly to arbitrary allowed trees, completing the identity-base
+p_J=N/Q_J subtraction. The independent check and final hashes are recorded
+in REVIEW_HISTORY and the manifest. Nonidentity compact backgrounds and the
+conditional classes needed by another exact transition remain open.
+
+
+## Completed target: marginal regional and nonlinear chart estimates
 
 Owner request, 2026-11-09: continue this attack in #10149, with Luna repo and
 primary-literature checks first, bounded proof workers and Fable 5.2 approach
@@ -156,6 +205,6 @@ smooth quotient singlets. Original sources retain the exact conditional orbit
 covariance, with its possible O(1) merged-source term. The primary note and
 `parts/full-connected-four-response.md` state all hypotheses and sources.
 
-The broader goal is still open: the complete Q-law response when its varied
-parameters remain, nonidentity terminal control, and preservation for inherited
+The broader goal is still open: Q-law control beyond the identity seven-edge
+case, nonidentity terminal control, and preservation for inherited
 further transitions. No physical mass-gap or all-depth conclusion is inferred.

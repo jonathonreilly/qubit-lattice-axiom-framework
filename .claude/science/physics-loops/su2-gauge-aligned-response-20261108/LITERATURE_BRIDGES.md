@@ -29,3 +29,14 @@ The source record corrects the main-versus-open-PR distinction and preserves
 bounded search/read coverage. Fable's separately logged idea to use complete
 normalized energy is approach credit, with its subsequent proof checked as
 a separate argument.
+
+The compact/connected continuation has a new bounded Luna repo/primary-
+literature record, `sources/marginal-connected-expansion-prior-art-20261109.md`.
+APS, Lohmann and Abdesselam–Rivasseau provide architecture with distinct
+Gaussian, interaction and insertion hypotheses. The current proof matches
+the already proved repo forest instead of importing a theorem by name.
+Fable's complete approach answer and exact input boundary are preserved in
+`sources/fable-marginal-connected-approach-20261109.md`. Its proposed shared-
+global-orbit counterexample and extra chart-forest clause are tested against
+the actual local Haar source class and fixed-order chart proof. Advice about
+old texts is not labeled a check of the new candidates.

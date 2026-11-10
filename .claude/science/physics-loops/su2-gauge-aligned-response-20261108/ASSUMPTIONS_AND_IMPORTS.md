@@ -40,7 +40,16 @@ for rarity. The ratio's good event is not the all-good chart. All original
 sources retain their joint orbit integral and conditional covariance. No
 claim of spatial connected decay is inferred from these regional jets.
 
-Open bridges: actual coarse-conditional Q response where exterior parameters
-remain; nonidentity terminal fields; inherited effective density at a third
+The compact/connected continuation now proves that spatial estimate for the
+identity-exterior seven-edge law using an exact source-marked gas and the
+proved density-forest contract. The source polydisc is chosen from its smallness
+budget, not merely the phase-wedge radius. Bounded measurable quotient sources
+are admitted for the compact/chart connected correction; C2 singlets are
+required for the full-response u^-1 gain. Original sources retain their exact
+orbit covariance. Arbitrary-tree uniformity of the pinned companion is
+proved explicitly by restoring the seven positive kernel energies.
+
+Open bridges: coarse conditionals beyond that identity seven-edge case;
+nonidentity terminal fields; inherited effective density at a third
 transition; uniform depth and physical scale; continuum reconstruction; physical
 mass gap; identification of this supplied family with a TOE derivation.

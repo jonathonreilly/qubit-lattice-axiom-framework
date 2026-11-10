@@ -1,27 +1,22 @@
 # Next science decisions
 
-The [proof tree](PROOF_TREE.md) is the complete current dependency map.
-The exact partial-terminal Q law, all fifteen conditioning terms and the
-residual component-gauge diagnostic now have mathematical research checks.
-The seven-edge compact energy and actual normalized-Hessian suppliers now
-have separate proofs and a fresh-context check. Regional coercivity for the
-complete normalized energy, nonlinear cube covariance, interior moments and
-complete buffered ratio jets are now available. The quantitative Q response
-remains open.
+The [proof tree](PROOF_TREE.md) maps the current finite-model results and
+open physical dependencies. The identity seven-edge marginal compact gas,
+connected density expansion, full four-response and exact conditional-
+normalizer subtraction are now the stated local milestone.
 
-1. Match the exact source-marked compact decomposition, regional chart-sector
-   comparisons and normalized density forest to the actual seven-edge
-   marginal at V_O=I, then prove the full connected fourth response. The
-   complement of an entirely rough core is not the all-good chart, and
-   overlapping buffers do not factorize. Keep every radial normalizer,
-   source reader and orbit covariance term through connected cancellations.
-2. Control the nonidentity terminal backgrounds and larger conditional
-   geometries actually required for iteration. A fixed-terminal bound does
-   not bound all outer conditional means, covariances or higher cumulants.
-3. Test a third exact normalized transition with its inherited density.
-   Track coercivity, localization and source norms at the required scale,
-   instead of allowing uncontrolled depth-dependent constants.
+1. Define a fixed small nonidentity terminal-background class and prove the
+   corresponding full compact centered estimate: actual stationary field,
+   relative coercivity, source/readers and connected response uniform in
+   volume and background. The existing small-chart bound does not control
+   that compact complement.
+2. Determine the larger conditional geometries and rough terminal components
+   required by the exact third transition. An everywhere-small background
+   class has not been shown sufficient for this consumer.
+3. Test that transition with the actual inherited density and normalizers.
+   Track coercivity, localization, source norms and scale dependence rather
+   than replacing the inherited law by a new Wilson action.
 
-Depth/cutoff control at physical scales and a nontrivial continuum QFT with
-a positive finite physical mass remain downstream. No success probability,
-completion percentage or proof deadline is supported.
+Uniform depth/cutoff control and a nontrivial continuum QFT with positive
+finite physical mass remain downstream. No completion percentage, success
+probability or proof deadline is supported by the current results.

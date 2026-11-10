@@ -161,3 +161,38 @@ minor-finding dispositions are in [the external check](gates/fable-marginal-regi
 The [host check](gates/marginal-regional-chart-check.md) covers all four final
 proofs and the primary/map surfaces. These are research checks under pinned
 premises, not independent recertification of every ancestor or formal audit.
+
+## Actual marginal compact and connected-density continuation
+
+Source head c0497327ec81143f6f8b5369c86583ad3387d785; refreshed main
+bf92a1d763030836ed55631d5d7a7ef3b288f284. The new Luna source record is
+[sources/marginal-connected-expansion-prior-art-20261109.md](sources/marginal-connected-expansion-prior-art-20261109.md).
+It records complete closest-method reads, bounded main/current-PR searches
+and direct primary-literature coverage before author delegation. Absence
+wording is restricted to that recorded search. APS/Lohmann/BKAR are method
+comparators, not imported theorems satisfying this SU(2) insertion contract.
+
+The supervisor read the complete old compact/source-marked decomposition,
+sector-ratio, frozen Gaussian, generic density forest, chart-fourth and full
+connected arguments; exact unchanged hashes are recorded in the new proofs.
+The new author files were read completely. The compact c_J and actual
+marginal chart/regional suppliers remain accepted at their frozen revisions;
+no assertion of re-proving their entire ancestry is made.
+
+The three new proofs are [compact insertion](parts/marginal-source-marked-compact-decomposition.md),
+[Gaussian producers](parts/marginal-frozen-gaussian-producers.md), and
+[connected composition](parts/marginal-connected-density-expansion.md).
+A fresh host check independently reconstructed mechanisms before reading
+those files. The composition adds an explicit arbitrary-tree bridge for
+the restored-kernel pinned companion after the check identified the older
+translated-tree restriction. The final primary links the complete included
+mathematical dependency closure.
+
+The [Fable consultation](sources/fable-marginal-connected-approach-20261109.md)
+received exactly five existing texts, never new author files or favorable
+verdicts. Its full public answer is retained. Its source-radius and path
+requirements were already met; its shared-global-orbit and chart-log
+objections are assessed under the actual source class and chart cut proof.
+The [host report](gates/marginal-connected-expansion-check.md) distinguishes
+its initial independent derivations, candidate checks and later advice
+reconciliation. No profile substitution occurred for frontier judgments.

@@ -16,5 +16,10 @@ architecture with the actual two-step law. Frozen source insertions remove
 moving-reference requirements at terminal identity. This is a change in proof
 mechanism and checked hypotheses, not a new physical axiom.
 
-Next family decision: establish Q-law and nonidentity terminal control before
+The marginal continuation now matches the exact source-marked compact gas
+and Gaussian producers, including entropy and normalized-density readers.
+It bounds the actual identity-exterior Q law and retains original orbit
+covariance; the pinned companion has an explicit arbitrary-tree bridge.
+
+Next family decision: establish nonidentity terminal and conditional-class control before
 claiming a blocking-stable response. No route has been declared impossible.

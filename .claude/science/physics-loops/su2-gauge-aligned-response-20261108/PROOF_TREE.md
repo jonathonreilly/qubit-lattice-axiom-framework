@@ -7,9 +7,9 @@ open nodes form a proved reduction of the mass-gap problem or an exhaustive
 list of every lemma a continuum construction will need.
 
 The present results are finite two-step posterior decay with terminal field
-fixed to identity, and compact coercivity plus regional/chart estimates for
-the seven-edge two-plaquette marginal. Their exact checking records are linked
-below; they do not constitute formal audit or retained status. There is no proved physical
+fixed to identity, and compact connected response for the actual seven-edge
+two-plaquette marginal, including its conditional-normalizer subtraction.
+Their exact checking records are linked below; they do not constitute formal audit or retained status. There is no proved physical
 mass gap and no evidence-based completion percentage or delivery date.
 
 ## Target and decision order
@@ -34,7 +34,9 @@ flowchart TD
   Q[Exact partial-terminal law and full cumulance identity]
   K[Seven-edge compact coercivity and actual flat precision]
   U[Marginal nonlinear chart, regional energy, moments and ratio jets]
-  D[OPEN: quantitative two-plaquette denominator]
+  Pj[Marginal exact compact gas and actual Gaussian producers]
+  Dj[Marginal connected-density expansion and fourth response]
+  D[Identity two-plaquette conditional with Q subtraction]
   V[OPEN: required nonidentity terminal control]
   T[OPEN: third transition and inherited-action closure]
   S[OPEN: depth and cutoff control at physical scales]
@@ -53,9 +55,12 @@ flowchart TD
   Q --> K
   K --> U
   Q --> U
-  B -. candidate input .-> D
-  Q -. identifies terms .-> D
-  U -. requires exact compact composition and connected cancellation .-> D
+  U --> Pj
+  Pj --> Dj
+  G --> Dj
+  B --> D
+  Q --> D
+  Dj --> D
   D -. research route .-> T
   V -. research route .-> T
   T -. unproved iteration .-> S
@@ -66,9 +71,9 @@ flowchart TD
 
 Solid arrows summarize the current finite-model argument. Dotted arrows
 are proposed research dependencies with open hypotheses, not established
-implications. The exact-Q node has its separate check status below. A direct
-estimate of its marginal law could avoid bounding every conditional term
-separately; the diagram does not force one analytic route.
+implications. The exact-Q and marginal nodes have separate source/check records below.
+The direct marginal estimate bounds the complete conditional cumulant,
+without discarding any of the 15 total-cumulance terms.
 
 ## Complete current finite-model packet
 
@@ -126,7 +131,9 @@ all-depth, continuum, or physical spectral control.
 | Q-relative | [Marginal regional relative energy](parts/marginal-regional-relative-coercivity.md) | Small hidden-reader collar, measurable stationary leading field, exponential penetration, all-compact relative coercivity and cap upper bound. This leading-energy statement does not assert a finite-u normalized-action minimum. |
 | Q-normalized | [Complete normalized regional energy](parts/marginal-normalized-regional-coercivity.md) | Uniform in all u>=1: the actual Haar-density mode, exponential penetration, global compact relative coercivity and cap upper bound under a small hidden collar. Also strengthens the chart Hessian bound to u c_J/2+1/2 for all u>=1 on a smaller cube. |
 | Q-regional | [Marginal moments and buffered ratios](parts/marginal-regional-moments-and-ratios.md) | Arbitrary quotient exterior, complete surviving factors, radial-profile interior moments and full two-source/two-distinct-boundary jets of the buffered whole-core-rough correction. It is not an all-good-chart or spatial connected estimate. |
-| Q-bound | Not yet proved | Quantitative connected four-response for the actual marginal with the seven-edge union of two adjacent plaquettes integrated and exterior terminal links held. |
+| Q-compact | [Marginal source-marked compact gas](parts/marginal-source-marked-compact-decomposition.md) | Exact complex-source insertion identity with actual surviving counts, source-dependent regional denominators and complete readers. |
+| Q-Gaussian | [Actual marginal Gaussian producers](parts/marginal-frozen-gaussian-producers.md) | Exact normalized nontranslation-invariant Hessian; positive covariance core, symmetric paths, whole-cell vertices and all physical prefactors. |
+| Q-bound | [Marginal connected expansion and response](parts/marginal-connected-density-expansion.md) | Actual compact activity count, F1–F7 match, connected compact/chart correction, C/u singlet tree response, original orbit covariance and exact seven-edge conditional subtraction at identity. |
 
 [The separate continuation check](gates/partial-terminal-check.md) reconstructs
 both new arguments. It does not promote them to formal retained status.
@@ -151,8 +158,10 @@ subtracts a fourth cumulant under a different hidden marginal. The exact
 conditioning formula contains the expected conditional fourth cumulant,
 four third-cumulant/mean covariances, three covariance/covariance terms,
 six third cumulants of one conditional covariance and two means, and the
-fourth cumulant of the means. The current pi_I theorem does not bound all
-these terms or the full released-terminal integration domain.
+fourth cumulant of the means. The new direct marginal proof bounds their combined value on the full
+compact released-terminal integration domain through the exact rho_J law;
+it does not assert that the individual terms vanish. The first pi_I theorem
+alone did not supply that bound.
 
 The geometry diagnostic also prevents indiscriminate reuse of the fully
 pinned precision bound: at zero sources and V_O=I, when the retained terminal
@@ -162,33 +171,47 @@ The eight-edge isolated-vertex example is NOT the seven-edge two-plaquette
 problem. It directs attention to the correct quotient and geometry, without
 claiming physical masslessness or ruling out this route.
 
+## Marginal compact/connected milestone
+
+The [new primary note](../../../../docs/SU2_MARGINAL_CONNECTED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-11-09.md)
+composes the actual compact gas and Gaussian producers with the existing
+abstract density-forest theorem. The core union determines its unique
+components; an explicit animal count pays all shell, reader and Gaussian
+costs. Its connected compact/chart correction is O(exp(-c log(u)^(2A))).
+The actual marginal chart covariance then gives the C/u connected fourth
+response for fixed C2 quotient singlets, with boundary-pair summability.
+Original source reconstruction retains the O(1) conditional-orbit allowance.
+The complete p_J=N/Q_J coefficient is controlled by the two actual laws.
+
+The [independent mathematical check](gates/marginal-connected-expansion-check.md)
+records its own derivations before new author proofs, exact normalization
+and reader discriminators, and final-file scope. Its result and the separate
+Fable approach record are indexed in REVIEW_HISTORY. This is bounded-support
+research evidence, not formal audit or a recertification of every ancestor.
+The three earlier primary notes remain frozen historical milestones; this
+map and the new primary give the current result.
+
 ## Next theorem to attack and its acceptance test
 
-Fix the actual seven-edge two-plaquette set J, exterior V_O=I, the present
-two-step Wilson/kernel parameters and source class. Use the compact bound
-and actual identity Hessian just established on the unchanged forest slice.
-The next theorem is a volume-uniform summable bound for the complete fourth
-cumulant of this marginal, with both differentiated terminal links in O.
+The identity-exterior seven-edge normalization task is now the stated local
+milestone. The next supplier is compact connected control on an explicitly
+specified nonidentity terminal-background class, preserving actual kernel
+normalizers and source readers. A first bounded target is a fixed small
+terminal neighborhood: construct the actual centered field, prove full
+compact relative coercivity around it, and transport the source-marked
+connected estimate with constants uniform in volume and background.
+The existing small-chart theorem is useful, but it does not control that
+background's compact complement. An extensive action comparison is not a
+uniform local bound.
 
-The actual marginal now has local nonlinear-chart control, regional relative
-coercivity for the complete normalized energy, arbitrary-exterior radial
-moments and complete buffered ratio jets.
-Next match the source-marked compact decomposition and normalized density-
-forest machinery to this deleted law, including any regional chart-sector
-comparison they require. The ratio's good event is the complement of an
-entire rough core, not the all-good chart, and overlapping buffers do not
-factorize. Local rarity and ratio jets do not themselves prove a connected
-logarithm. Every first-layer kernel, retained terminal kernel and radial
-normalizer must stay explicit. Carry the source class, actual readers and
-full orbit conditional covariance through the connected cancellations; the
-fifteen-term identity remains exact bookkeeping, not a bound.
+Before using this as an iteration theorem, specify which larger conditional
+geometries and rough terminal components an exact third transition needs.
+It is not established that an everywhere-small background class suffices.
+The third-transition test must use the actual inherited law, not a new
+Wilson density, and must pay every new reader and normalization cost.
+These tasks remain open rather than being assumed in an arrow of the map.
 
-This local success still leaves the class of larger
-conditionals and terminal backgrounds needed for iteration to be specified
-and controlled. The first third-transition test must use the exact inherited
-law, not replace it with a fresh Wilson density.
-
-Reachability is reassessed on these estimates: do their constants survive
+Reachability is reassessed on those estimates: do their constants survive
 the iteration and physical-scale limit required by the target? Until that
 question and continuum reconstruction are answered, the repo supplies a
 concrete research attack rather than evidence that the mass gap is near.

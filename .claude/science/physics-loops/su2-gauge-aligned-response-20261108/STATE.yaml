@@ -1,9 +1,9 @@
 status: open
-phase: checked_regional_chart_milestone
-author_source_head: fbdfb3c1b8852e5de302fab6f0f7cfc70ba04cac
+phase: marginal_compact_connected_response_checked
+author_source_head: c0497327ec81143f6f8b5369c86583ad3387d785
 science_source_base: 1e0d3b58dcda7f83152b0bb51729260247454d65
 refreshed_main: bf92a1d763030836ed55631d5d7a7ef3b288f284
-previous_checkpoint: fbdfb3c1b8852e5de302fab6f0f7cfc70ba04cac
+previous_checkpoint: c0497327ec81143f6f8b5369c86583ad3387d785
 branch: physics-loop/su2-gauge-aligned-response-20261108
 delivery: single_working_pr
 runtime: bounded_interactive_task
@@ -11,8 +11,8 @@ actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 trace_class: upstream_support
 reachability_to_target: partially_closes
-next_action: match actual marginal compact decomposition and connected density forest, then prove the full connected fourth response
-mathematical_check: fresh_host_all_four_and_separately_scoped_fable_three
+next_action: control compact nonidentity terminal backgrounds and conditional geometries needed for a further exact transition
+mathematical_check: fresh_host_three_new_proofs_and_primary_map_with_independent_pre_candidate_derivations
 formal_audit: not_performed
 publication: open_pr_10149
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10149
@@ -26,14 +26,17 @@ pending_check_parts: []
 public_writes:
   - branch_push_at_4a3f6be4cf
   - opened_pr_10149
-  - same_pr_continuations_at_551840d63d_and_fbdfb3c1b8
+  - same_pr_continuations_at_551840d63d_fbdfb3c1b8_and_c0497327ec
 prompt_files_changed: []
 two_plaquette_compact_coercivity: bounded-support
 two_plaquette_actual_flat_precision: bounded-support
-two_plaquette_connected_response: open
+two_plaquette_connected_response: bounded-support
 fable_approach_consultation: claude-fable-5-2_max_completed_advice_only
 execution_lease: released
 marginal_regional_chart: bounded-support
 fable_regional_consultation: claude-fable-5-2_max_completed_advice_only
 fable_regional_proof_check: claude-fable-5-2_max_completed_three_original_candidates
 marginal_normalized_regional_energy: bounded-support
+marginal_compact_connected_expansion: bounded-support
+identity_two_plaquette_conditional_subtraction: bounded-support
+fable_connected_consultation: claude-fable-5-2_max_completed_old_text_advice_only

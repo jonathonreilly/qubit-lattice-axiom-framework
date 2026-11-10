@@ -3,9 +3,9 @@ lease_until: 2026-11-11T02:53Z
 
 # A proposed proof of your `prop:large-field-2-3`
 
-Provenance: Claude Opus 5.5 wrote the proof and this note. Claude Fable 5.2 and Codex (GPT-6) each checked the proof line by line. Not an audit.
+Provenance: Claude Opus 5.5 wrote the proof and this note. Claude Fable 5.2 and Codex (GPT-6) each checked the proof line by line. Claude Fable 5.2 compared this note with the checked proof and with your cited lines, and edited it. Not an audit.
 
-All rules, symbols and statements used below are yours. The source is `YM4/YM4_1400.tex` at commit `c7fef8b21b58` of ethanwsussman/Yang--Mills-LLM-experiment ([the file](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/c7fef8b21b58/YM4/YM4_1400.tex)). "Line n" means line n of that file.
+The rules and the source statements used below are from your text. The labels, the notation of section 5.1, the two readings, the lemmas and the theorem are introduced here. The source is `YM4/YM4_1400.tex` at commit `c7fef8b21b58` of ethanwsussman/Yang--Mills-LLM-experiment ([the file](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/c7fef8b21b58/YM4/YM4_1400.tex)). "Line n" means line n of that file.
 
 ## 1. Your proposition, and what your text gives for it
 
@@ -21,9 +21,9 @@ with the words "(level-$`j`$ units; layers of $`M`$-cubes of level $`j`$)". Line
 
 What your text gives for it:
 
-- Inside the proposition, one reference: "(119, p. 256)". It is attached to "the regions that the steps produce".
+- Inside the proposition, one reference to the literature: "(119, p. 256)". It is attached to "the regions that the steps produce".
 - No proof follows. The proposition ends at line 62101, and line 62103 begins the paragraph "Three fates, marked components, two sequences of regions".
-- The label `prop:large-field-2-3` occurs at lines 62080, 62128 and 63716 only. Line 62128 says "and so \cref{prop:large-field-2-3} applies to it". Line 63716 says "We use the nesting of \cref{prop:large-field-2-3} on these labels". Both lines use the proposition. Neither proves it.
+- The label `prop:large-field-2-3` occurs at lines 62080, 62128 and 63716 only. Line 62128 says "and so \cref{prop:large-field-2-3} applies to it". Lines 63715-63716 say "We use the nesting of \cref{prop:large-field-2-3} on these labels". Both passages use the proposition. Neither proves it.
 
 What this note treats. This note proves the nesting and the display for every history, at every moment of a history, and for every stopping vector (Theorem 6 in section 5). Section 7 lists the sentences of the proposition that this note does not treat.
 
@@ -51,7 +51,7 @@ Z^{[0]}=\mathsf{bx}\big((\Omega_t^c)^{\sim2}\cup R_t'^{\sim}\big),\qquad Z^{[n+1
 
 Line 61990: "The set $`Z_t=\Lambda_t^c`$ is the final $`Z^{[n]}`$". Lines 71099-71100 state the consequence: "The pre-operation region $`Z_h`$ contains $`(\Omega_h^c)^{\sim2}`$".
 
-**(S6) Cells and cubes.** Line 62096: the cells of level $`t`$ "are $`M\check{R}_t`$-cubes of level $`t`$". Lines 643-644: "The partition $`\pi_j`$ consists of the centered, half-open $`M`$-cubes in level-$`j`$ units." Line 63749: "$`a_i=M\check R_iL^i`$, the side of a level-$`i`$ cell". Line 63774: "Let $`u_i=ML^i`$ be the side of an $`M`$-cube at level $`i`$ in bare units."
+**(S6) Cells and cubes.** Line 62096: the cells of level $`t`$ "are $`M\check{R}_t`$-cubes of level $`t`$". Lines 642-644: "The partition $`\pi_j`$ consists of the centered, half-open $`M`$-cubes in level-$`j`$ units." Line 63749: "$`a_i=M\check R_iL^i`$, the side of a level-$`i`$ cell". Lines 63774-63775: "Let $`u_i=ML^i`$ be the side of an $`M`$-cube at level $`i`$ in bare units."
 
 **(S7) The size $`\check R`$ and nested partitions.** Line 62001: "The size $`\check{R}_k`$ is the smallest power of $`L`$ that is not less than $`(\log\min_{i\le k}x_i)^r`$, with $`r\ge2`$. Because it is a power of $`L`$, all partitions are nested." Line 62195: "since $`\mathsf{N}_t=\check{R}_t`$ is non-increasing". Line 63882: "Since $`\mathsf{N}_k=\check{R}_k\approx(\log x_k)^r`$".
 
@@ -60,7 +60,7 @@ Line 61990: "The set $`Z_t=\Lambda_t^c`$ is the final $`Z^{[n]}`$". Lines 71099-
 **(S9) Three fates.** Line 62103: "We set $`t_\flat:=t-\mathsf{N}_t`$. In each component $`X`$ of its class [...], the operation $`\mathbf{R}`$ of level $`t`$ prepares a nest $`Z''_l(X)`$, $`t_\flat<l\le t`$." Line 62105, healed: "$`\Omega_l,\Lambda_l,S_l\mapsto\Omega_l\cup X,\Lambda_l\cup X,S_l\setminus X`$ for $`l\le t`$, and $`X`$ leaves the label." Line 62106, island: "the same replacement is made for $`l<t`$ and for $`\Omega_t`$, $`S_t`$, but $`\Lambda_t`$ is left unchanged. Thus $`X\subset Z_t`$ remains". Line 62107, drop-out: "(some test fails after $`n\le\mathsf{N}_t`$ stages): $`X`$ remains in $`Z_t`$". Lines 62110-62115:
 
 ```math
-\Omega_l\cap X=X\setminus Z''_l(X)\ \ (t_\flat<l\le t_\flat+n),\qquad \Lambda_l\cap X=X\setminus Z''_l(X)\ \ (\text{the same }l,\ l<t),
+\Omega_l\cap X=X\setminus Z''_l(X)\ \ (t_\flat<l\le t_\flat+n),\qquad \Lambda_l\cap X=X\setminus Z''_l(X),\quad S_l\cap X=\emptyset\ \ (\text{the same }l,\ l<t),
 ```
 
 "all other entries unchanged, so $`\Lambda_t\cap X=\emptyset`$."
@@ -81,13 +81,13 @@ Line 62128: "The choice $`\boldsymbol{\nu}=n`$ gives the *determining sequence*"
 
 **(S14) The torus.** Line 1640: "$`T_\ell=(\mathbb R/\ell\mathbb Z)^4`$". Line 61911: "the torus is admissible up to level $`k`$ [...]; that is, $`\ell L^{K-j}\ge2L^{11}M\check{R}_j`$ for $`j\le k`$". Line 63692: "Hence no cell, no box and no neighbourhood of a box wraps around the torus."
 
-**(S15) The constant $`L`$.** Line 650: "Take $`L\ge13`$ odd".
+**(S15) The constant $`L`$.** Lines 650-651: "Take $`L\ge13`$ odd".
 
-## 3. Statements taken from your text as stated
+## 3. Statements that the proof assumes
 
-The proof takes the following statements from your text as stated. It does not prove them again. Each is a hypothesis of Theorem 6.
+The proof assumes the statements (H1)-(H6). It does not prove them. Each is a hypothesis of Theorem 6. Each statement below has its source passages in your text. (H1) also has a convention that this note adds.
 
-**(H1) Layers.** Adding $`r`$ layers of level-$`t`$ cells to a union $`A`$ of level-$`t`$ cells gives a set that contains $`A^{[ra_t]}`$, the set of points at sup distance at most $`ra_t`$ from $`A`$. Your lines 645-648 define the addition of layers. Your line 63684 defines $`B^{[r]}`$ on a box by pushing each face out by $`r`$ cells. Your lines 63686-63690 give the step output on a quiet component as $`\Omega_i^c\cap X=H_i^{[8]}`$, and lines 63760-63763 write the same set as $`H_i^{[8a_i]}`$, with "enlargement by a distance $`s`$ in the sup norm" (line 63751). So your text states (H1) for a box. We use the same sup-norm convention for every union of cells of one level.
+**(H1) Layers.** Adding $`r`$ layers of level-$`t`$ cells to a union $`A`$ of level-$`t`$ cells gives a set that contains $`A^{[ra_t]}`$, the set of points at sup distance at most $`ra_t`$ from $`A`$. Your lines 645-648 define the addition of layers. Your line 63684 defines $`B^{[r]}`$ on a box by pushing each face out by $`r`$ cells. Your lines 63686-63690 give the step output on a quiet component as $`\Omega_i^c\cap X=H_i^{[8]}`$, and lines 63760-63763 write the same set as $`H_i^{[8a_i]}`$, with "enlargement by a distance $`s`$ in the sup norm" (lines 63750-63751). So your text states (H1) for a box. We assume the same sup-norm convention for every union of cells of one level.
 
 **(H2) Quiet boxes.** Let $`X`$ be a class component of level $`k`$ and $`h=k_\flat`$. Lines 63684 and 63756: $`H_i`$ is the hull, in level-$`i`$ cells, of $`G_{i-1}:=X\cap Z_{i-1}`$, and "$`G_{i-1}\subset H_i\subset G_{i-1}^{[a_i]}`$". Lines 63752-63753: "The oldest component $`G_h`$ is a nonempty box". Lines 63760-63766, `eq:elab-history-quiet-boxes`:
 
@@ -113,7 +113,7 @@ Lines 63805-63809: "The first box is a union of level-$`i`$ cells. [...] Since $
 
 **(H4) Marks wait.** Line 62128: "a mark of level $`s`$ lying inside a class component of level $`t`$ satisfies $`s<t_\flat`$. Hence standing marks that share a part are nested, their windows $`(s_\flat,s]`$ are disjoint".
 
-**(H5) A standing drop-out stays outside its top entry.** A drop-out $`X_o`$ of level $`s`$ keeps $`\Lambda_s\cap X_o=\emptyset`$ for every stage index, until a later healed component or island swallows it. Lines 62115, 62171 and 62121 state this: "so $`\Lambda_t\cap X=\emptyset`$", "At $`l=s`$ the drop-out keeps $`q`$ outside $`\Lambda_s`$", and "A mark persists until a later healed component or island swallows it."
+**(H5) A standing drop-out stays outside its top entry.** A drop-out $`X_o`$ of level $`s`$ keeps $`\Lambda_s\cap X_o=\emptyset`$ for every stage index, until a later healed component or island swallows it. Lines 62115, 62170-62171 and 62121 state this: "so $`\Lambda_t\cap X=\emptyset`$", "At $`l=s`$ the drop-out keeps $`q`$ outside $`\Lambda_s`$", and "A mark persists until a later healed component or island swallows it."
 
 **(H6) No wrapping.** Line 63692: "no cell, no box and no neighbourhood of a box wraps around the torus." Lines 63770-63771: a class component has "at most $`100`$" cells along each side. We use this so that balls, boxes, and the enlargements of boxes up to the sizes below are those of a lift to $`\mathbb R^4`$.
 
@@ -125,11 +125,11 @@ The proof uses two readings of your wording. Each is a reading, not a rule that 
 
 **(R1) The live region of step $`t`$.** We read the live region $`Y=\mathcal Z_{t-1}`$ of step $`t`$ (rule (S2)) as $`Z_{t-1}(\mathcal S_{t-1})`$, the region $`Z_{t-1}`$ of the label after the operation of level $`t-1`$. Your text supports this reading. Line 1586: "let $`\mathcal Z_k(h)`$ be the live region after healing". Line 62106: for an island, "$`X\subset Z_t`$ remains". Line 62107: a drop-out "$`X`$ remains in $`Z_t`$". The proof uses only the inclusion $`Z_{t-1}\subset\widehat Y`$.
 
-**(R2) Healing and islands at the entry $`l=0`$.** We read the fate rules "for $`l\le t`$" (line 62105) and "for $`l<t`$" (line 62106) as including the entry $`l=0`$, because "A label's sequence starts at $`\Omega_0`$" (line 61973). So a healed component or an island $`X`$ replaces $`\Omega_0`$ by $`\Omega_0\cup X`$.
+**(R2) Healing and islands at the entry $`l=0`$.** We read the fate rules "for $`l\le t`$" (line 62105) and "for $`l<t`$" (line 62106) as including the entry $`l=0`$, because "A label's sequence starts at $`\Omega_0=\Omega_1^\sim`$" (line 61973). So a healed component or an island $`X`$ replaces $`\Omega_0`$ by $`\Omega_0\cup X`$.
 
 (R2) matters for the pair $`(0,1)`$ only. Your display concerns $`j\ge1`$ and does not use it. If healing did not fill $`\Omega_0`$, the pair $`(0,1)`$ would have gap $`0`$ inside a healed component that meets $`\Omega_0^c`$.
 
-A second reading gives the pair $`(0,1)`$ as well. Read line 61973 as a standing rule: $`\Omega_0`$ is $`\Omega_1^\sim`$ at every moment. Then after healing $`\Omega_0=(\Omega_1\cup X)^\sim\supset\Omega_0\cup X`$, and Lemma 0 gives $`d(\Omega_0^c,\Omega_1)\ge a_1`$ directly. Only the reading in which $`\Omega_0`$ is frozen at step $`1`$ and is not filled by healing breaks the pair $`(0,1)`$. We searched lines 61900-66000 for $`\Omega_0`$. It occurs at lines 61973, 62078, 62245, 63032, 63039 and 63374. None of these lines states the rule for $`\Omega_0`$ under healing.
+An alternative to (R2) gives the pair $`(0,1)`$ as well. Read line 61973 as a standing rule: $`\Omega_0`$ is $`\Omega_1^\sim`$ at every moment. Then after healing $`\Omega_0=(\Omega_1\cup X)^\sim\supset\Omega_0\cup X`$, and Lemma 0 of section 5.2 gives $`\operatorname{dist}_\infty(\Omega_0^c,\Omega_1)\ge a_1`$ directly. Only the reading in which $`\Omega_0`$ is frozen at step $`1`$ and is not filled by healing breaks the pair $`(0,1)`$. We searched lines 61900-66000 for $`\Omega_0`$. It occurs at lines 61973, 62078, 62245, 63032, 63039 and 63374. None of these lines states the rule for $`\Omega_0`$ under healing.
 
 ## 5. The proof
 
@@ -194,11 +194,6 @@ The cases are:
 - (d) $`l=k_0+1`$: $`g_{k_0+1}=w_{k_0+1}-w_{k_0+2}`$, which is $`2u_t`$ if $`k_0+2=t`$, and is at least $`u_t\tfrac{L-2}{L-1}`$ otherwise.
 - (e) $`k_0+2\le l<t`$: $`g_l=w_l-w_{l+1}=u_{l+1}`$.
 
-Two more box facts hold. They are not used below.
-
-- (f) For $`h<i<t`$: $`D_i\subset O_i`$ and $`O_{i+1}\supset O_i^{[2a_i+8a_{i+1}]}`$. Hence, for $`h<j+1<t`$, $`D_{j+1}^{[8a_{j+2}]}\subset O_{j+2}`$.
-- (g) $`Z''_t(X)^{[5u_t+2a_t]}\subset X`$.
-
 Consequence: for $`h\le l<t`$, $`d(D_l,X\setminus D_{l+1})\ge u_{l+1}`$.
 
 *Proof.* We use the box formulas (H2) and (H3) with $`k=t`$, and $`(A^{[r]})^{[s]}=A^{[r+s]}`$ (section 5.1). Also $`A\subset B`$ implies $`A^{[s]}\subset B^{[s]}`$. By (H2), $`G_{i-1}\subset H_i`$ for $`h<i\le t`$.
@@ -225,13 +220,9 @@ The inclusion $`D_l\subset D_{l+1}`$ follows from $`D_l\subset D_l^{[g_l]}\subse
 
 The inclusion $`D_l\subset G_l`$. For $`l=h`$ it is an equality. For $`h<l\le k_0`$, $`H_l^{[3a_l]}\subset H_l^{[10a_l]}=G_l`$. For $`l>k_0`$: first, $`w_l\ge0`$, so $`D_l=H_{k_0+1}^{[3u_t-w_l]}\subset H_{k_0+1}^{[8u_t]}=H_{k_0+1}^{[8a_{k_0+1}]}=O_{k_0+1}`$. Next, for $`h<i<t`$, $`O_i=H_i^{[8a_i]}\subset H_i^{[10a_i]}=G_i\subset H_{i+1}\subset O_{i+1}`$. So $`D_l\subset O_{k_0+1}\subset O_l\subset G_l`$.
 
-(f) $`D_i\subset O_i`$: for $`h<i\le k_0`$, $`3a_i\le8a_i`$; for $`i>k_0`$, this is the chain just shown. Next, $`O_{i+1}=H_{i+1}^{[8a_{i+1}]}\supset G_i^{[8a_{i+1}]}=H_i^{[10a_i+8a_{i+1}]}=O_i^{[2a_i+8a_{i+1}]}`$. Hence $`D_{j+1}^{[8a_{j+2}]}\subset O_{j+1}^{[8a_{j+2}]}\subset O_{j+2}`$.
-
-(g) $`Z''_t(X)=H_{k_0+1}^{[3u_t]}`$, since $`w_t=0`$. Then $`Z''_t(X)^{[5u_t]}=H_{k_0+1}^{[8u_t]}=O_{k_0+1}\subset O_t`$ by the chain above. By (H2), $`X=G_t=H_t^{[10a_t]}=O_t^{[2a_t]}`$. So $`Z''_t(X)^{[5u_t+2a_t]}\subset X`$.
-
 The consequence. All boxes above lie in the lift of $`X`$ (H6). The periodic distance is the minimum over translates. So the inclusion $`D_l^{[g_l]}\subset D_{l+1}`$ in the lift gives the same inclusion on the torus. $`D_{l+1}`$ is a union of $`M`$-cubes of level $`l+1`$: for $`l+1\le k_0`$ it is a union of level-$`(l+1)`$ cells (H3), and each such cell is a union of $`M`$-cubes of level $`l+1`$, because the partitions are nested (rule (S7)); for $`l+1>k_0`$ this is (H3). $`X`$ is a union of level-$`t`$ cells, so it is a union of $`M`$-cubes of level $`l+1`$ (rule (S7)). So $`X\setminus D_{l+1}`$ is a union of $`M`$-cubes of level $`l+1`$, none of them in $`D_{l+1}`$. Lemma 0, with $`\mathcal G`$ the $`M`$-cubes of level $`l+1`$, $`B=D_{l+1}`$, $`A=D_l`$ and $`g=g_l`$, gives $`d(D_l,X\setminus D_{l+1})\ge g_l\ge u_{l+1}`$. $`\square`$
 
-Your lines 63821-63824 state the separations of (b) and (e): "$`Z''_i(X)`$ is separated from the exterior of $`Z''_{i+1}(X)`$ in $`X`$ by at least $`7a_i`$", and "For $`k_0<i<k`$, the separation is $`w_i-w_{i+1}`$."
+Your lines 63820-63824 state the separations of (b) and (e): "$`Z''_i(X)`$ is separated from the exterior of $`Z''_{i+1}(X)`$ in $`X`$ by at least $`7a_i`$", and "For $`k_0<i<k`$, the separation is $`w_i-w_{i+1}`$."
 
 ### 5.6 The invariant
 
@@ -246,7 +237,7 @@ Iterating (N) gives $`Z_l\subset\Omega_t^c`$ for $`l<t\le s`$: $`Z_l=\Lambda_l^c
 
 ### 5.7 Lemma 4 (an operation: all fates, all stage counts)
 
-**Lemma 4.** Let $`\mathcal L'`$ be a label at top level $`t`$, just after step $`t`$. Assume that $`\mathcal L'`$ satisfies (N) and (G), that every entry of $`\mathcal L'`$ of level $`i`$ is a union of $`M`$-cubes of level $`i`$, and that $`Z'_t\supset(\Omega_t'^c)^{\sim2}`$ (rule (S5), as in Lemma 1). Let $`X_1,\dots,X_r`$ be distinct components of $`Z'_t`$. Let each $`X=X_i`$ have a nest $`D_\cdot(X)`$ with the conclusions of Lemma 3, with $`D_h(X)=Z'_h\cap X`$ for $`h=t_\flat`$. Give each $`X`$ one outcome: healed, island, or *stopped after $`m(X)`$ stages*, with $`0\le m(X)\le\mathsf N_t`$. Let $`\mathcal L`$ be the label given by your rules (S9):
+**Lemma 4.** Let $`\mathcal L'`$ be a label at top level $`t`$, just after step $`t`$. Assume that $`\mathcal L'`$ satisfies (N) and (G), that every entry of $`\mathcal L'`$ of level $`i`$ is a union of $`M`$-cubes of level $`i`$, and that $`Z'_t\supset(\Omega_t'^c)^{\sim2}`$ (rule (S5), as in Lemma 1). Let $`X_1,\dots,X_r`$ be distinct components of $`Z'_t`$. Let each $`X=X_i`$ have a nest $`D_\cdot(X)`$ with the conclusions of Lemma 3, with each $`D_i(X)`$ a union of $`M`$-cubes of level $`i`$, and with $`D_h(X)=Z'_h\cap X`$ for $`h=t_\flat`$. Give each $`X`$ one outcome: healed, island, or *stopped after $`m(X)`$ stages*, with $`0\le m(X)\le\mathsf N_t`$. Let $`\mathcal L`$ be the label given by your rules (S9):
 
 - nothing changes outside $`\bigcup_iX_i`$;
 - healed: $`\Omega_l\cap X=\Lambda_l\cap X=X`$ for $`l\le t`$;
@@ -257,7 +248,7 @@ Then $`\mathcal L`$ satisfies (N) and (G), and every entry of $`\mathcal L`$ of 
 
 "Stopped after $`m`$" is a drop-out with $`n=m`$, the label after $`m`$ stages, and for $`m=\mathsf N_t`$ the prepared sequence (lines 62080, 62107-62115, 62128). A component that the operation has not yet treated is stopped after $`0`$ stages.
 
-*Proof.* The entries of $`\mathcal L`$ are unions of $`M`$-cubes of the level of the entry. Entries outside $`\bigcup X_i`$ are those of $`\mathcal L'`$. A healed or island filling adds $`X`$, a union of level-$`t`$ cells, hence of $`M`$-cubes of every level $`i\le t`$ (rule (S7)). A window entry is $`X\setminus D_i`$, and $`D_i`$ is a union of $`M`$-cubes of level $`i`$ (proof of Lemma 3).
+*Proof.* The entries of $`\mathcal L`$ are unions of $`M`$-cubes of the level of the entry. Entries outside $`\bigcup X_i`$ are those of $`\mathcal L'`$. A healed or island filling adds $`X`$, a union of level-$`t`$ cells, hence of $`M`$-cubes of every level $`i\le t`$ (rule (S7)). A window entry is $`X\setminus D_i`$, and $`D_i`$ is a union of $`M`$-cubes of level $`i`$ (hypothesis).
 
 Two facts.
 
@@ -326,7 +317,7 @@ in level-$`j`$ units, with layers of $`M`$-cubes of level $`j`$. Here $`Z_j^\sim
 - (N), (G) and the cube property for $`\mathcal L'`$: by induction.
 - $`Z'_t\supset(\Omega_t'^c)^{\sim2}`$: the top entries do not depend on $`\boldsymbol\nu`$ (Lemma 5 (a)), and $`\mathcal L'`$ is the label just after step $`t`$; so this is Lemma 1, first paragraph.
 - The class components are distinct components of $`Z'_t`$ (rule (S8)).
-- Their nests have the conclusions of Lemma 3. Lemma 3 is about the determining label $`\mathcal S'_t`$. Inside $`X`$, the entries at levels $`\ge t_\flat`$, and so the sets $`G_i`$ for $`i\ge t_\flat`$, are the same in $`\mathcal L'`$ as in the determining label (Lemma 5 (a), which uses (N) for the determining label of $`h'`$, an induction hypothesis). So $`D_h(X)=Z'_h\cap X`$ in $`\mathcal L'`$ too.
+- Their nests have the conclusions of Lemma 3. Lemma 3 is about the determining label $`\mathcal S'_t`$. Inside $`X`$, the entries at levels $`\ge t_\flat`$, and so the sets $`G_i`$ for $`i\ge t_\flat`$, are the same in $`\mathcal L'`$ as in the determining label (Lemma 5 (a), which uses (N) for the determining label of $`h'`$, an induction hypothesis). So $`D_h(X)=Z'_h\cap X`$ in $`\mathcal L'`$ too. Each $`D_i(X)`$ with $`h<i\le t`$ is a union of $`M`$-cubes of level $`i`$, by (H3) and rule (S7), as in the proof of Lemma 3. $`D_h(X)=Z'_h\cap X`$ is a union of $`M`$-cubes of level $`h`$, by the cube property of $`\mathcal L'`$.
 
 Order. Your derivation of (H2) at level $`t`$ (lines 63714-63766) uses the nesting (N), and the fact that earlier operations only shrink each $`Z_i`$ (which is (F1) of Lemma 4), only for the determining labels of the moves before the operation of level $`t`$. These are induction hypotheses here. So (H2) at level $`t`$ is available at this move. The induction is joint: (N) and (G) for all moves up to step $`t`$; then (H2) at level $`t`$; then Lemma 3; then Lemma 4.
 
@@ -340,13 +331,15 @@ Lemma 4 now gives that $`\mathcal L^{\boldsymbol\nu}(h)`$ satisfies (N), (G) and
 
 The pair $`(0,1)`$ is (G) at $`l=0`$. The chain $`\Omega_0\supset\Omega_1\supset\Lambda_1\supset\cdots\supset\Lambda_s`$ is (N). $`T_\ell`$ is the whole torus (rule (S14)), so $`T_\ell\supset\Omega_0`$. $`\square`$
 
-**Remark.** Your lines 62089-62094 say that the gap is attained at the active indices $`k_0(t)+2\le j<t`$ of a prepared nest, and is $`w_j-w_{j+1}`$ at $`j=k_0(t)+1`$. Lemma 3 (d) and (e) give the same values for the gaps between consecutive prepared boxes. The proof above uses only the lower bound.
+**Remark 1.** By (N), $`\Lambda_j\subset\Omega_j`$, so $`\Omega_j^c\subset Z_j`$. Hence (G) gives $`d(\Omega_j^c,\Omega_{j+1})\ge u_{j+1}`$ for $`0\le j<s`$.
+
+**Remark 2.** Your lines 62089-62094 say that the gap is attained at the active indices $`k_0(t)+2\le j<t`$ of a prepared nest, and is $`w_j-w_{j+1}`$ at $`j=k_0(t)+1`$. Lemma 3 (d) and (e) give the same values for the gaps between consecutive prepared boxes. The proof above uses only the lower bound.
 
 ## 6. The constants used
 
 The proof uses these constants and conditions, and no others:
 
-- $`L\ge3`$ and $`L`$ odd. Your line 650 takes $`L\ge13`$ odd. The bound $`L\ge3`$ is used once, in Lemma 3 (d), as $`L^2-3L+1\ge0`$. Oddness is used for the alignment of the prepared boxes (H3), lines 63805-63809.
+- $`L\ge3`$ and $`L`$ odd. Your lines 650-651 take $`L\ge13`$ odd. The bound $`L\ge3`$ is used once, in Lemma 3 (d), as $`L^2-3L+1\ge0`$. Oddness is used for the alignment of the prepared boxes (H3), lines 63805-63809.
 - Each $`\check R_i`$ is a power of $`L`$ with $`\check R_i\ge1`$. Being a power of $`L`$ is your rule (S7), line 62001; it makes the partitions nested. The bound $`\check R_i\ge1`$ gives $`a_i\ge u_i`$, used in Lemmas 1, 2 and 3. Your text does not state $`\check R_i\ge1`$ in one line. It follows from your lines as follows. $`\check R_k`$ is the smallest power of $`L`$ not less than $`(\log\min_{i\le k}x_i)^r`$ (line 62001). $`g_j=x_j^{-1/2}`$ (line 83084), and $`g_j\le\gamma`$ (line 61911). If $`\gamma<e^{-1/2}`$, as in your definition of a frame at lines 1102-1103, then $`x_i\ge\gamma^{-2}>e`$, so $`(\log\min_{i\le k}x_i)^r>1`$ and $`\check R_k\ge1`$. We state $`\check R_i\ge1`$ as a hypothesis of Theorem 6 so that the proof does not depend on which $`\gamma`$ line 61911 means.
 - The torus floor: the torus is admissible (rule (S14)), $`\ell L^{K-j}\ge2L^{11}M\check R_j`$ (line 61911), so that no cell, box or neighbourhood of a box wraps (line 63692). It is used through Lemma 0 and (H6), and for the lift of a class component in Lemma 3.
 
@@ -354,8 +347,8 @@ No other constant is used. $`M`$ enters only through the units $`u_i=ML^i`$ and 
 
 ## 7. What this note does not show
 
-- It does not prove the statements (H1)-(H6). They are taken from your text as stated: the layer convention, the quiet boxes, the prepared boxes and the existence of the index $`k_0`$ with $`h<k_0\le k-2`$, "marks wait", and the rule that a standing drop-out stays outside its top entry. The proof of Theorem 6 uses them in the order stated there.
-- It does not decide the readings (R1) and (R2). Only (R2) matters, and only for the pair $`(0,1)`$, which your display does not contain.
+- It does not prove the statements (H1)-(H6). Section 3 gives their source passages in your text and the convention that (H1) adds. They are: the layer convention, the quiet boxes, the prepared boxes and the existence of the index $`k_0`$ with $`h<k_0\le k-2`$, "marks wait", the rule that a standing drop-out stays outside its top entry, and the no-wrapping statement. The proof of Theorem 6 uses them in the order stated there.
+- It does not decide the readings (R1) and (R2). The proof of your display uses (R1), through the inclusion $`Z_{t-1}\subset\widehat Y`$ in Lemma 2. It uses (R2) only for the pair $`(0,1)`$, which your display does not contain.
 - It does not treat the other sentences of your proposition: the gaps of at least $`cM\check R_j`$ for the regions that the steps produce (Lemma 2 gives $`8a_t`$ only at the moment of the step); "Every large-field region and every creation set is a union of cells of its own level"; the decomposition of unity and the two kinds of creation; and the identity $`\Omega^{\boldsymbol\nu_\mu}_l(\mathcal S_t)=\Omega_l(\mathcal S^\mu)\cup Z_{[j,t]}`$ of lines 62130-62133.
-- It does not prove the equality of the Remark after Theorem 6 as a statement about your labels; it uses only the lower bound.
+- It does not prove the equality of Remark 2 after Theorem 6 as a statement about your labels; it uses only the lower bound.
 - No step uses a computation. Each step is a finite inclusion or distance argument between unions of grid cubes, so that a proof assistant can take it.

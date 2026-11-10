@@ -1,0 +1,98 @@
+[
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/ASSUMPTIONS.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/AUTHOR_CHECK.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/DELTA_CHECK.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/HANDOFF.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/INDEPENDENT.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/INDEPENDENT_PROVENANCE.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/NO_GO_DISCIPLINE_CHECKLIST.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/PRIMARY.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/RESULT.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/SEARCH.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/SOURCE_CHECK.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/outputs/result_before_source_fixes.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/STATE.yaml",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/HANDOFF.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/TRACE_GATE.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  {
+    "path": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/REVIEW_HISTORY.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  }
+]

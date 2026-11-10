@@ -1,0 +1,119 @@
+{
+  "source_parent": "95a40545b05ba3039a83819cf41158d049e2596a",
+  "main_reference": "bf92a1d763030836ed55631d5d7a7ef3b288f284",
+  "planning_reference": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0",
+  "claim_type": "bounded_theorem",
+  "status": "conditional-support",
+  "frozen_and_reviewed_sources": {
+    "PRIMARY.md": "a9a93fbcac940b5619f35ff960e5a761465d7b61bd51845ee1c052b2f6926e59",
+    "RESULT.md": "f980d1e29c0b6c4d5fe64becd7fa3a7abcf0f7e5ed7fafb517f439fc63eb0ff3",
+    "ASSUMPTIONS.md": "9e06e542c393f386680c3f28d3929265c83aa74d1ee1507cea176b93ec173bc5",
+    "INDEPENDENT.md": "9ae83aa0dcc5b9fd4cf926526f2201ce0b72a56c1533eb0e341f3122ae8fb7a5",
+    "INDEPENDENT_PROVENANCE.md": "e1af91795b530263420b4483a43875f6d25d0dbac80359cb3efaa61d3752f54f",
+    "SOURCE_CHECK.md": "b52b979ded08be19d471773c97d1fdffa7fa1cc2d902220693e8d9e49030153b",
+    "DELTA_CHECK.md": "909ee73efe784b0563a0b8d03c5a4c455d20e69b3dcf003e912e749bbe3094f6",
+    "outputs/result_before_source_fixes.md": "ad12e660846dc8d1ccfa679f9842a7a37a8af1935293dd81cbafa6ac8a65901e",
+    "outputs/source_fixes.patch": "33aa97692bce9e76e4af767848cceaf41a848a27bbc2f45343f029b5ee14fcbb"
+  },
+  "governing_sources_equal_main": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "301bb33c1a743104208067c14684b34ba71d86674509111638ea898bc6e6c0dc",
+    "docs/audit/data/axiom_premise_nodes.json": "e21007be1bc3d82304f3442a5e4f831a19241760c3f0ad486baebe1bc33ec5c5",
+    "docs/audit/AXIOM_MINIMALITY_POLICY.md": "179dfa0f41bbb147674c3f348a86e59698cd4c361da80fe88de2608626f673d4",
+    "scripts/audit_companion_minimal_axioms_clean_base_exact.py": "6717f18e4d4103ee197b03c322bea1fabde6f85d6ee3888fcef6986081562514"
+  },
+  "verification_mode": "complete hand proofs; restricted-input independent derivation; complete source-exposed check and bounded correction check",
+  "new_numeric_jobs": 0,
+  "numeric_lease_acquired": false,
+  "independent_numeric_replay": false,
+  "checker_request": {
+    "fork_turns": "none",
+    "reasoning_effort": "max",
+    "model": "inherited; no override",
+    "runtime_model_and_effort_attested": false
+  },
+  "independence": "same provider/model family; raw-model and governing-premise overlap; fresh context, separate matrix proof route, then explicitly exposed source/delta review",
+  "preflight": {
+    "disk_gb_free": 89,
+    "memory_percent_free": 39,
+    "load": 2.7,
+    "nice": "available",
+    "network": "origin reachable",
+    "model_floor": "no target named; not checked",
+    "memory_cap": "ulimit unavailable; no numerical job launched"
+  },
+  "checks": {
+    "complete_primary_and_independent_arguments_read": true,
+    "initial_truncated_report_passage_retrieved": true,
+    "source_findings": {
+      "F1": "incorrect POVM trace equality corrected to inequality; unused-label counterexample retained",
+      "F2": "target-specific exact patterns replace ambiguous common no-extra-records clause"
+    },
+    "source_findings_final_delta_confirmed": true,
+    "exact_reviewed_hashes_match": true,
+    "recoveries": {
+      "outputs/source_fixes.patch": {
+        "recovered": "outputs/result_before_source_fixes.md",
+        "sha256": "ad12e660846dc8d1ccfa679f9842a7a37a8af1935293dd81cbafa6ac8a65901e"
+      },
+      "outputs/primary_to_result.patch": {
+        "recovered": "PRIMARY.md",
+        "sha256": "a9a93fbcac940b5619f35ff960e5a761465d7b61bd51845ee1c052b2f6926e59"
+      }
+    },
+    "vocabulary_files": 16,
+    "vocabulary_findings": 0,
+    "vocabulary_cli_excludes_claude_direct_coverage_used": true,
+    "local_links": [
+      {
+        "file": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/RESULT.md",
+        "target": "ASSUMPTIONS.md",
+        "exists": true,
+        "archived_source_base": false
+      },
+      {
+        "file": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/RESULT.md",
+        "target": "NO_GO_DISCIPLINE_CHECKLIST.md",
+        "exists": true,
+        "archived_source_base": false
+      },
+      {
+        "file": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/outputs/result_before_source_fixes.md",
+        "target": "ASSUMPTIONS.md",
+        "exists": true,
+        "archived_source_base": true
+      },
+      {
+        "file": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/carrier_interface/outputs/result_before_source_fixes.md",
+        "target": "NO_GO_DISCIPLINE_CHECKLIST.md",
+        "exists": true,
+        "archived_source_base": true
+      },
+      {
+        "file": ".claude/science/physics-loops/gb1-cf-boundary-gluing-20261107/HANDOFF.md",
+        "target": "carrier_interface/HANDOFF.md",
+        "exists": true,
+        "archived_source_base": false
+      }
+    ],
+    "whitespace": {
+      "command": "git diff --cached --check",
+      "exit_code": 0,
+      "output": ""
+    }
+  },
+  "formal_landing_review": false,
+  "formal_audit": false,
+  "proof_assistant_check": false,
+  "negative_packet_pass": false,
+  "strong_physical_closure": false,
+  "physical_obligations": [
+    "physical preparation and apparatus genesis",
+    "selected carrier code and readable distinctions",
+    "source-independent physical formation law",
+    "noncommuting operational geometry and quantum identification",
+    "quantum composition and continuum bridge"
+  ],
+  "editable_prompt_files_changed": [],
+  "axiom_changes": [],
+  "shared_instruction_changes": []
+}

@@ -4,6 +4,8 @@ Pin: `fa841753c1a6296e5ad45518375660b0f1004769`
 
 A row appears here only when the note is wrong or overclaims. One finding, one later repair. This file does not change claim status.
 
+The fourteen corrigendum leftovers, notes 2322, 3494, 3548, 3741, 3748, 3821, 4204, 4321, 4422, 4609, 4836, 4887, 4898, and 4937, are patched in PR #10157, commit `8024bdeba8`. The rows remain the defect record.
+
 ## Note 40
 
 - Path: `docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md`

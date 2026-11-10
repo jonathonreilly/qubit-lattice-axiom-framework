@@ -5,7 +5,9 @@
   worktree-remove  remove a worktree once its work is pushed
   preflight        check machine, model floor and sandbox before a launch
   numeric-lock     hold the one numeric job allowed on this machine
-  status           leads, leases, requests and open obligations of a target
+  status           leads, leases, requests and computed standing of a target
+  check-hash       print the hash lines a check record needs
+  doctor           refuse when this checkout's rules differ from origin/main
 
 Machine limits come from flags or LAB_MIN_DISK_GB, LAB_MIN_MEM_PCT,
 LAB_MAX_LOAD and LAB_LOCK_DIR. Exit 0 means go or done, 1 means refused, and
@@ -17,6 +19,7 @@ from __future__ import annotations
 import argparse
 from collections import Counter
 import datetime as dt
+import hashlib
 import os
 from pathlib import Path
 import re
@@ -44,8 +47,23 @@ THREAD_VARS = (
     "MKL_NUM_THREADS",
     "VECLIB_MAXIMUM_THREADS",
 )
-OBLIGATION_RE = re.compile(r"^- (gap|unchecked|implication|discharged): ")
+# Older part files type one of four labels by hand. Current ones type only
+# `open` or `argued`; anything further is computed from check records.
+OBLIGATION_RE = re.compile(
+    r"^- (gap|unchecked|implication|discharged|open|argued): (.+)$"
+)
+OLD_LABELS = ("gap", "unchecked", "implication", "discharged")
+HEADING_RE = re.compile(r"^(#{1,6})\s+(.*?)\s*$")
 FLOOR_RE = re.compile(r"^model_floor\s+([\w-]+):\s*(.+)$")
+RULE_PATHS = (
+    "AGENTS.md",
+    "CLAUDE.md",
+    "docs/ai_methodology/RULES.md",
+    "docs/ai_methodology/SETTINGS.md",
+    "docs/ai_methodology/PROCEDURES.md",
+    "docs/ai_methodology/procedures",
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+)
 
 
 def run(*cmd: str, cwd: Path | str | None = None, timeout: int = 120):
@@ -167,6 +185,43 @@ def worktree_remove(args: argparse.Namespace) -> int:
     return 0
 
 
+# --- doctor ----------------------------------------------------------------
+
+
+def stale_rules(fetch: bool) -> tuple[list[str] | None, str]:
+    """Rule files here that differ from origin/main, and a note on the comparison.
+
+    The list is None when no comparison could be made.
+    """
+    note = ""
+    if fetch:
+        fetched = git("fetch", "-q", "origin",
+                      "+refs/heads/main:refs/remotes/origin/main", timeout=60)
+        if fetched.returncode:
+            note = "origin not reachable; compared with the last fetched main"
+    diff = git("diff", "--name-only", "origin/main", "--", *RULE_PATHS)
+    if diff.returncode:
+        return None, diff.stderr.strip() or "cannot compare with origin/main"
+    return diff.stdout.split(), note
+
+
+def doctor(args: argparse.Namespace) -> int:
+    changed, note = stale_rules(fetch=not args.no_fetch)
+    if changed is None:
+        return refuse(f"cannot compare rules with origin/main: {note}")
+    behind = git("rev-list", "--count", "HEAD..origin/main").stdout.strip() or "?"
+    print(f"checkout: {behind} commits behind origin/main"
+          + (f" ({note})" if note else ""))
+    if not changed:
+        print("rules: match origin/main")
+        return 0
+    for path in changed:
+        print(f"differs: {path}")
+    print("rules: differ from origin/main; read the current ones with "
+          "git show origin/main:<path>")
+    return 1
+
+
 # --- preflight -------------------------------------------------------------
 
 
@@ -252,6 +307,14 @@ def preflight(args: argparse.Namespace) -> int:
     online = git("ls-remote", "--exit-code", "origin", "HEAD", timeout=30).returncode == 0
     report("ok" if online else "note", "network", "origin reachable" if online else
            "origin not reachable from here")
+    changed, _ = stale_rules(fetch=False)
+    if changed is None:
+        report("note", "rules", "cannot compare with origin/main here")
+    elif changed:
+        report("note", "rules", f"{len(changed)} rule file(s) differ from the last "
+               "fetched origin/main; run lab_ops.py doctor")
+    else:
+        report("ok", "rules", "match the last fetched origin/main")
     if args.needs_push:
         probe = git("push", "--dry-run", "origin",
                     "HEAD:refs/heads/lab-preflight-dry-run", timeout=30)
@@ -311,8 +374,141 @@ def lease_state(value: str | None, now: dt.datetime) -> str:
     return f"live until {value}" if until > now else f"expired {value}"
 
 
+def span_hash(root: Path, ref: str) -> str | None:
+    """SHA-256 of a file, or of one heading's section when ref is PATH#HEADING.
+
+    A section runs from its heading to the next heading of the same or a
+    higher level. None means the file or the heading is not there.
+    """
+    path, _, heading = ref.partition("#")
+    try:
+        data = (root / path).read_bytes()
+    except OSError:
+        return None
+    if not heading:
+        return hashlib.sha256(data).hexdigest()
+    kept: list[str] = []
+    level = 0
+    fenced = False
+    for line in data.decode("utf-8", errors="replace").splitlines(keepends=True):
+        if line.lstrip().startswith(("```", "~~~")):
+            fenced = not fenced
+            found = None
+        else:
+            found = None if fenced else HEADING_RE.match(line.rstrip("\r\n"))
+        if not level:
+            if found and found[2] == heading:
+                level = len(found[1])
+                kept.append(line)
+            continue
+        if found and len(found[1]) <= level:
+            break
+        kept.append(line)
+    return hashlib.sha256("".join(kept).encode()).hexdigest() if level else None
+
+
+def content_hash(lines: list[str]) -> str:
+    return hashlib.sha256("\n".join(lines).encode()).hexdigest()
+
+
+def read_check(path: Path) -> dict | None:
+    """Front matter of one check record, or None when it has none."""
+    lines = path.read_text(encoding="utf-8").splitlines()
+    if not lines or lines[0] != "---":
+        return None
+    record: dict = {"file": path.name, "text": [], "reads": [], "raw": [], "bad": False}
+    key = ""
+    for line in lines[1:]:
+        if line == "---":
+            return record
+        if line.startswith("  - ") and key in ("text", "reads"):
+            want = 2 if key == "text" else 3
+            fields = line[4:].split(" ", want - 1)
+            record["raw"].append(line)
+            if len(fields) == want:
+                record[key].append(tuple(fields))
+            else:
+                record["bad"] = True
+            continue
+        key, _, value = line.partition(":")
+        key = key.strip()
+        if key not in ("text", "reads"):
+            record[key] = value.strip()
+    return None
+
+
+def session_of(provenance: str) -> str:
+    return provenance.split(" ", 1)[1].strip() if " " in provenance else ""
+
+
+def record_counts(root: Path, record: dict) -> bool:
+    """True while the record is intact, independent and about the current text."""
+    if record["bad"] or not record["text"]:
+        return False
+    if content_hash(record["raw"]) != record.get("content"):
+        return False
+    for entry in record["text"] + record["reads"]:
+        if span_hash(root, entry[-1]) != entry[0]:
+            return False
+    checker = session_of(record.get("checker", ""))
+    return bool(checker) and checker != session_of(record.get("author", ""))
+
+
+def compute_standing(root: Path, folder: Path) -> tuple[dict[str, dict], Counter]:
+    """Standing of every statement that has a counting check record.
+
+    Returns the standing by statement name and, by name, how many records no
+    longer count (edited text, same session on both sides, or a broken record).
+    """
+    live: dict[str, list[dict]] = {}
+    stale: Counter = Counter()
+    for path in sorted((folder / "checks").glob("*.md")):
+        record = read_check(path)
+        if not record or not record.get("statement"):
+            continue
+        if record_counts(root, record):
+            live.setdefault(record["statement"], []).append(record)
+        else:
+            stale[record["statement"]] += 1
+    found: dict[str, dict] = {}
+    for name, records in live.items():
+        answered = {r.get("answers", "none") for r in records}
+        records = [r for r in records if r["file"] not in answered]
+        wrong = [r for r in records if r.get("verdict") == "wrong"]
+        right = [r for r in records if r.get("verdict") == "right"]
+        if wrong and right:
+            word = "argued"
+        elif any(r.get("failure", "").startswith("counterexample") for r in wrong):
+            word = "refuted"
+        elif wrong:
+            word = "open"
+        elif right:
+            word = "checked"
+        else:
+            continue
+        reads = {e[1] for r in right for e in r["reads"] if e[1] != "-"}
+        found[name] = {"word": word, "disputed": bool(wrong and right), "reads": reads}
+
+    def rests_on(name: str, seen: frozenset[str]) -> set[str]:
+        unmet: set[str] = set()
+        for read in found[name]["reads"]:
+            if read in seen:
+                continue
+            if found.get(read, {}).get("word") != "checked":
+                unmet.add(read)
+            else:
+                unmet |= rests_on(read, seen | {read})
+        return unmet
+
+    for name, entry in found.items():
+        entry["given"] = sorted(rests_on(name, frozenset({name}))) \
+            if entry["word"] == "checked" else []
+    return found, stale
+
+
 def read_part(path: Path) -> dict:
-    part: dict = {"lead": None, "lease": None, "counts": Counter(), "requests": []}
+    part: dict = {"lead": None, "lease": None, "counts": Counter(), "requests": [],
+                  "typed": []}
     in_requests = False
     for line in path.read_text(encoding="utf-8").splitlines():
         if line.startswith("lead:") and part["lead"] is None:
@@ -324,14 +520,22 @@ def read_part(path: Path) -> dict:
         elif in_requests and line.startswith("- "):
             part["requests"].append(line[2:].strip())
         found = OBLIGATION_RE.match(line)
-        if found:
+        if not found:
+            continue
+        if found[1] in OLD_LABELS:
             part["counts"][found[1]] += 1
+        else:
+            name = re.split(r" given | -> ", found[2], maxsplit=1)[0].strip()
+            part["typed"].append((found[1], name))
     return part
 
 
 def status(args: argparse.Namespace) -> int:
     folder = Path(args.folder)
     now = dt.datetime.now(dt.timezone.utc)
+    top = git("rev-parse", "--show-toplevel", cwd=folder)
+    root = Path(top.stdout.strip()) if top.returncode == 0 else folder.resolve()
+    standing, stale = compute_standing(root, folder)
     goal = folder / "GOAL.md"
     if goal.exists():
         head = read_part(goal)
@@ -341,20 +545,64 @@ def status(args: argparse.Namespace) -> int:
     for path in sorted((folder / "parts").glob("*.md")):
         part = read_part(path)
         counts = part["counts"]
+        notes: list[str] = []
         if "--" in path.stem:
             tally = "attempt file, not counted"
         else:
-            tally = " ".join(
-                f"{label} {counts[label]}"
-                for label in ("gap", "unchecked", "implication", "discharged")
-            )
-            open_total += counts["gap"] + counts["unchecked"] + counts["implication"]
+            words = Counter({"open": counts["gap"], "argued": counts["unchecked"],
+                             "checked": counts["discharged"]})
+            given = counts["implication"]
+            for typed, name in part["typed"]:
+                entry = standing.get(name)
+                word = entry["word"] if entry else typed
+                if entry and entry["word"] == "checked" and entry["given"]:
+                    given += 1
+                    notes.append(f"checked given {', '.join(entry['given'])}: {name}")
+                else:
+                    words[word] += 1
+                if entry and entry["disputed"]:
+                    notes.append(f"disputed, so argued: {name}")
+                if stale[name]:
+                    notes.append(f"{stale[name]} check record(s) no longer count: {name}")
+            tally = (f"open {words['open']} argued {words['argued']} "
+                     f"checked-given {given} checked {words['checked']} "
+                     f"refuted {words['refuted']}")
+            open_total += words["open"] + words["argued"] + given
         print(f"{path.stem}: {part['lead'] or 'no lead'} "
               f"({lease_state(part['lease'], now)}); {tally}")
+        for note in notes:
+            print(f"  {note}")
         requests += [f"{path.stem}: {text}" for text in part["requests"]]
     print(f"open obligations: {open_total}")
     for request in requests:
         print(f"request from {request}")
+    return 0
+
+
+def check_hash(args: argparse.Namespace) -> int:
+    top = git("rev-parse", "--show-toplevel")
+    root = Path(top.stdout.strip()) if top.returncode == 0 else Path.cwd()
+    lines: list[str] = []
+    for ref in args.text:
+        digest = span_hash(root, ref)
+        if digest is None:
+            return refuse(f"cannot read {ref} under {root}")
+        lines.append(f"  - {digest} {ref}")
+    split = len(lines)
+    for item in args.reads:
+        name, sep, ref = item.partition("=")
+        if not sep or " " in name:
+            return refuse(f"--reads takes NAME=PATH[#HEADING], with no space in NAME: {item}")
+        digest = span_hash(root, ref)
+        if digest is None:
+            return refuse(f"cannot read {ref} under {root}")
+        lines.append(f"  - {digest} {name or '-'} {ref}")
+    print(f"content: {content_hash(lines)}")
+    print("text:")
+    print("\n".join(lines[:split]))
+    print("reads:")
+    if lines[split:]:
+        print("\n".join(lines[split:]))
     return 0
 
 
@@ -403,6 +651,20 @@ def build_parser() -> argparse.ArgumentParser:
     show = commands.add_parser("status", help="summarise a target folder")
     show.add_argument("folder")
     show.set_defaults(handler=status)
+
+    hashes = commands.add_parser("check-hash", help="hash lines for a check record")
+    hashes.add_argument("--text", action="append", required=True, metavar="PATH[#HEADING]",
+                        help="the statement and its argument; repeat as needed")
+    hashes.add_argument("--reads", action="append", default=[],
+                        metavar="NAME=PATH[#HEADING]",
+                        help="something the statement reads; NAME is its statement "
+                             "name, or - when it is not a statement")
+    hashes.set_defaults(handler=check_hash)
+
+    fresh = commands.add_parser("doctor", help="check this checkout's rules are current")
+    fresh.add_argument("--no-fetch", action="store_true",
+                       help="compare with the last fetched origin/main")
+    fresh.set_defaults(handler=doctor)
     return parser
 
 

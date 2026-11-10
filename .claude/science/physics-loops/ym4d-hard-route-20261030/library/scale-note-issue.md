@@ -4,7 +4,7 @@ Ethan and Levent,
 
 This concerns `YM4/YM4_1400.tex` at commit `c7fef8b21b58` ([the file](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/c7fef8b21b58/YM4/YM4_1400.tex)). Three statements of yours are treated. At lines 73382-73383 your text uses "the scale comparison $`\check R_{h_t}\le L\check R_t`$" between levels that are $`\mathsf N_t=\check R_t`$ apart. At lines 63775-63777 it takes an index $`k_0`$ with $`h<k_0\le k-2`$. Lines 1475-1477 provide $`\mathsf s_j=M`$ for a $`\Lambda_j`$ that is not a union of cells. No proof of the first two is given at those lines. The ratios your text states elsewhere (line 1110, lines 73081-73082, and `rt:eq-adjacent-cell` in `YM4/RT/YM4_RT.tex`) are of one step.
 
-[This note](LINK-TO-NOTE) gives these results, in three parts.
+[This note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/164df47e956d44b54dfed4de615705720ce22994/.claude/science/physics-loops/ym4d-hard-route-20261030/library/posted/scale-note.md) gives these results, in three parts.
 
 - Example F: a frame that meets your definition at lines 1102-1113 and has $`\check R_{h_{14}}=L^2\check R_{14}`$, for $`r=2`$, $`L=13`$, $`0\le\underline\lambda\le12`$, $`c_5\ge0`$, $`e^{-1}\le\gamma<e^{-1/2}`$ and $`\bar B\ge e^{14}`$.
 - Corollary S: your comparison holds under one added ceiling (G) on $`\gamma`$. (G) depends only on $`r,L,c_5,\bar B`$, so it fits your order of constants (lines 72930-72931, 72946).

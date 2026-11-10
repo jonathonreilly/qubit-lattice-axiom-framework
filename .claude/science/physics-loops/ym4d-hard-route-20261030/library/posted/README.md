@@ -24,5 +24,6 @@ No other word or formula is changed. The originals stay at the commits the issue
 | out-m3.md | #20 | 43942f5fe |
 | out-tpi.md | #21 | 464eed258 |
 | out-live.md | #22 | 32de21a18 |
+| out-core.md | #23 | 164df47e9 |
 
 Converted 2026-11-08. Each copy was rendered through GitHub's markdown API: every formula renders, none is raw or in a code block, and every formula sits in the same kind of container (list item, table cell or block) as in GitHub's render of the original. Each copy was diffed against its original: identical apart from the delimiters and the three repairs above. Two independent readers (Codex gpt-6-luna and gpt-6.1-sol) checked every pair.

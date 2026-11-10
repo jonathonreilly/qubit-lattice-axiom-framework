@@ -122,4 +122,26 @@ Not applied, as the row says: the repairs of r7-repair-check section 7 (Remark I
 
 Found while editing, not changed (row 657: "Change nothing else"): the display cited as Y 61981-61985 begins at Y 61982 (Y 61981 is blank); the citation was applied as given; in section 1 of r7-count, the quote "\(\Omega^n_l=\Omega_l\), so that the entries make up the determining sequence" is on Y 62245, not Y 62246; the citation "(Y 62106, 62197)" in section 6 for the all-small-field label points at the island rule, while the healed rule is Y 62105.
 
-(Section C report follows below.)
+## Section C: the note and the issue draft
+
+Written: `library/scale-note.md` (Parts 1-3 and "What this note does not show") and `library/scale-note-issue.md` (title, greeting, 16 lines, link placeholder LINK-TO-NOTE). Nothing posted, no issue opened. Every quotation in the note was compared with my fetched copy of Y, `YM4_EM.tex` and `YM4_RT.tex` at c7fef8b21b58 (EM lines 448-452 and RT lines 1027-1033 are the one-step passages; RT's label line is 1032). Local check of the math syntax: every `$`` has its closing pair, the `math` fences are balanced, no raw `\(`, `\[`, `\emph` or `\cref` outside math. The render check through GitHub's markdown API was not run, because it sends the text off this machine; it is the lead's step.
+
+Deviations from the row's wording, by decision of section A:
+- The row asks the note to say Example F "shows that the comparison needs a ceiling on gamma that is fixed after Bbar". A.1 (d) finds that Example F alone shows only that some added condition is needed (every `gamma < e^{-1}` excludes it). The note says that, and says that Example F does not show that a ceiling independent of `Bbar` fails. The family F(gamma) of A.1 (e), which would show it, is not in the note: it is new and unchecked.
+- The range is stated exactly: `Bbar >= e^{14} - e^5` (the round `e^{14}` is a subset), plus `c_5 >= 0`, `0 <= lambda <= 12`, `r = 2`, `L = 13`.
+- The provenance line has one added sentence: Opus added the last sentence of Lemma K and its proof in this check, unchecked by another model.
+- Lemma K's hypothesis is `L >= 4`, as A.2 (c) found.
+
+## Note against `library/r7-count.md` (after section B), statement by statement
+
+Places where the wording of a statement differs:
+
+1. Frame constants. r7-count asserts `lambda = c_0/4 >= 0`, `c_5 = 2c_2 >= 0` and `Bbar >= 0` as facts with Y lines. The note states `lambda >= 0`, `c_5 >= 0`, `Bbar >= 0` as assumptions of the lemmas, and `r >= 2`, `L >= 13` odd from Y 62001, 650.
+2. "(G) is new". r7-count: "(G) is not one of Y's conditions and does not follow from them". The note: "Your text does not state (G) or a condition that implies it." The note does not say "does not follow".
+3. Example F. r7-count gives `lambda <= 12`, `Bbar >= e^{14}`, `e^{-1} <= gamma`, without `c_5 >= 0` or `gamma < e^{-1/2}`, and without the exact range or the limit of what it shows. The note gives all numbers, the exact range and the limit.
+4. Lemma W, (W). r7-count: "For every operation of level `k` with window bottom `h` and index `k_0` as above". The note adds the hypothesis `h = k - Rcheck_k >= 0` and says Part 2 proves that `k_0` exists.
+5. Corollary S. r7-count: "For every `t` with `h_t >= 0`" (frame and (G) from context). The note states "Assume the frame and (G)" in the corollary.
+6. Lemma K. Same statement; the note splits it into two list items and its proof into ten numbered steps. r7-count's proof is compact and has the same steps.
+7. Lemma C. r7-count: "For every admitted label through `k` and `1 <= j <= k`, `Lambda^a_j` and `Omega^a_j` are unions of level-`j` cells; every standing island or drop-out mark of level `s` is a union of level-`s` cells contained in `Z_s`." The note: "For every label reached by a history, and every level `l >= 1`", with a third clause (iii), action entries equal label entries outside active drop-out windows (taken from `library/r7-repair.md` (c)). r7-count gives the proof only as a pointer to `library/r7-repair.md` (c); the note gives it in full, with the two cases that r7-repair-check section 5 added (level `l = t` at a drop-out with `n = N_t`; a mark swallowed later).
+8. Corollary C. r7-count has no statement of it (one sentence in the proof of Lemma C: "by Lemma C that case does not occur for the action sequence"). The note states Corollary C, with the reading of "those cubes".
+9. Lemma G. Same statement and proof; the note writes out `y >= e > 1` and the positivity of the outer logarithm.

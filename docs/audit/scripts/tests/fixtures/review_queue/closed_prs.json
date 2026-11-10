@@ -1,0 +1,228 @@
+{
+ "_about": "Rows for test_review_queue.py. Rows without `_built` are output of `gh pr list --state closed --json <HISTORY_FIELDS>` (and `gh pr view` with the same fields for #10116 and #10115) recorded 2026-11-10; each comment keeps the keys author/body/createdAt/url and its first two paragraphs. No recorded PR carries a landing-record block, so the `_built` rows carry invented ones.",
+ "prs": [
+  {
+   "additions": 0,
+   "baseRefName": "main",
+   "changedFiles": 0,
+   "closedAt": "2026-11-10T21:12:55Z",
+   "comments": [],
+   "createdAt": "2026-11-10T21:11:58Z",
+   "headRefOid": "3b6e5c0baf4295645a07cbfc99813501c8c08c63",
+   "mergedAt": "2026-11-10T21:12:55Z",
+   "number": 10152,
+   "state": "MERGED",
+   "title": "test(land): PR merged-state trial B (throwaway, do not review)",
+   "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10152"
+  },
+  {
+   "additions": 21856,
+   "baseRefName": "main",
+   "changedFiles": 360,
+   "closedAt": "2026-11-09T02:27:47Z",
+   "comments": [
+    {
+     "author": {
+      "login": "jonathonreilly"
+     },
+     "body": "Closing without merging. This branch is a card dump, not the repair list. A new PR will hold the fix list.",
+     "createdAt": "2026-11-09T02:27:47Z",
+     "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10146#issuecomment-6730786152"
+    }
+   ],
+   "createdAt": "2026-11-09T02:14:34Z",
+   "headRefOid": "e0448676ccd1d09ddcb61aa8dce02f4f8e718d1a",
+   "mergedAt": null,
+   "number": 10146,
+   "state": "CLOSED",
+   "title": "docs(audit): publish docs-top external-reader records",
+   "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10146"
+  },
+  {
+   "additions": 40,
+   "baseRefName": "main",
+   "changedFiles": 8,
+   "closedAt": "2026-11-08T21:25:03Z",
+   "comments": [],
+   "createdAt": "2026-11-08T21:09:44Z",
+   "headRefOid": "b41467898cc49537960667bf6411c0eb7a867483",
+   "mergedAt": "2026-11-08T21:25:03Z",
+   "number": 10143,
+   "state": "MERGED",
+   "title": "Use neighborhood wording in Admissibility (owner approved)",
+   "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10143"
+  },
+  {
+   "additions": 136,
+   "baseRefName": "main",
+   "changedFiles": 11,
+   "closedAt": "2026-11-02T12:58:58Z",
+   "comments": [
+    {
+     "author": {
+      "login": "JONbridgerapps"
+     },
+     "body": "PR #10136 landed on main at f5af11cd0102cfd0b51aef0911f600130bf5beb1. GitHub confirms MERGED.\n\nIndependent review: Astra reviewed the Claude-authored original 11-file delta, then confirmed the three-file fixes in the same session. Two review rounds; two P2 methodology findings fixed; zero skipped or unresolved findings. Exercise now searches before reductions/fanout and preserves offline searches. First-principles now permits labelled provisional literature use while retaining verification-before-closure and the exact-statement Lean exception.",
+     "createdAt": "2026-11-02T12:59:51Z",
+     "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10136#issuecomment-6577755749"
+    }
+   ],
+   "createdAt": "2026-11-02T12:19:44Z",
+   "headRefOid": "66962bfc2d422ede0f944173930b58e08ce52b5c",
+   "mergedAt": "2026-11-02T12:58:57Z",
+   "number": 10136,
+   "state": "MERGED",
+   "title": "docs(methodology): adopt literature-first and hard-core process rules",
+   "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10136"
+  },
+  {
+   "additions": 179,
+   "baseRefName": "main",
+   "changedFiles": 3,
+   "closedAt": "2026-10-30T18:41:04Z",
+   "comments": [
+    {
+     "author": {
+      "login": "jonathonreilly"
+     },
+     "body": "Focused repo-native review-loop result: **HOLD / changes required**.\n\nReviewed PR head `884b39e8051dd5e58989bad82b25c979d81c5192` as one process-only unit against main `c93fcb388b60ad7974433b2aa1cb1d366aec52ff`: the shadow-state writer, its complete test file, the changed audit-loop skill paragraph, and the actual pipeline/renderer/nightly commit consumers. No independent audit was run.",
+     "createdAt": "2026-10-30T16:48:26Z",
+     "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10116#issuecomment-6528259984"
+    },
+    {
+     "author": {
+      "login": "jonathonreilly"
+     },
+     "body": "Focused repo-native review-loop: **PASS / landed**.\n\nReviewed frozen head `89a50f0bd3667c641ba60c322556bfd9f60d9e50` against main `bdda29ee1cf2cabdba40efce5f17651daddae0d0`. The earlier churn-loss finding is resolved: ordinary batches preserve the saved baseline, and the next scheduled report retains the additions/removals. No new findings or review fixes; all three paths accepted unchanged.",
+     "createdAt": "2026-10-30T18:41:05Z",
+     "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10116#issuecomment-6530759495"
+    }
+   ],
+   "createdAt": "2026-10-30T14:03:53Z",
+   "headRefOid": "89a50f0bd3667c641ba60c322556bfd9f60d9e50",
+   "mergedAt": null,
+   "number": 10116,
+   "state": "CLOSED",
+   "title": "fix(audit): stop empty nightly commits from the shadow-state date",
+   "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10116"
+  },
+  {
+   "additions": 864,
+   "baseRefName": "main",
+   "changedFiles": 10,
+   "closedAt": "2026-10-30T15:30:37Z",
+   "comments": [
+    {
+     "author": {
+      "login": "jonathonreilly"
+     },
+     "body": "Focused repo-native review-loop result: **HOLD**.\n\nReviewed original head `1e9ce320606f250d9c7ccf2ab511b8a404ff34a4` against main `bcab5d2ee4a908fbb4e6025635fb878e6c157ebe`, using that main revision's review-loop skill and command. All 10 changed files and relevant caller/policy context were reviewed. One independent Astra-low reviewer, separate from Claude authorship, confirmed the fixes in the same session. The app restart lost an earlier unfinished reviewer; no verdict from it was reused.",
+     "createdAt": "2026-10-30T14:09:10Z",
+     "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10115#issuecomment-6524822154"
+    },
+    {
+     "author": {
+      "login": "jonathonreilly"
+     },
+     "body": "Focused repo-native **review-loop PASS**. Reviewed commits landed directly on main, ending at [`c93fcb388b60ad7974433b2aa1cb1d366aec52ff`](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/commit/c93fcb388b60ad7974433b2aa1cb1d366aec52ff). This PR is **closed without merging**.\n\nFrozen head: `320b4d5eeee585c4ba9c4e3a49918b9e638bd1aa`; current-main validation base: `9368251322ebd46e5a5951a60e17a26b07c6fa62`. Used that main revision's review-loop skill and command in focused single-target mode.",
+     "createdAt": "2026-10-30T15:33:50Z",
+     "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10115#issuecomment-6526660838"
+    }
+   ],
+   "createdAt": "2026-10-30T13:05:48Z",
+   "headRefOid": "320b4d5eeee585c4ba9c4e3a49918b9e638bd1aa",
+   "mergedAt": null,
+   "number": 10115,
+   "state": "CLOSED",
+   "title": "docs(process): run physics targets as a multi-provider lab",
+   "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/10115"
+  },
+  {
+   "_built": "valid block",
+   "number": 90010,
+   "title": "built row 90010",
+   "state": "MERGED",
+   "baseRefName": "main",
+   "headRefOid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "createdAt": "2026-11-11T08:00:00Z",
+   "closedAt": "2026-11-11T12:30:00Z",
+   "mergedAt": "2026-11-11T12:30:00Z",
+   "additions": 50,
+   "changedFiles": 2,
+   "comments": [
+    {
+     "author": {
+      "login": "built"
+     },
+     "body": "Landed on main.\n\n```landing-record\nreview_start_utc: 2026-11-11T10:00:00Z\nreview_end_utc: 2026-11-11T12:00:00Z\nrounds: 2\nreviewer_provider: example-provider\nreviewer_model: example-model\nreviewer_effort: low\ngate_seconds: 415.5\ntrain: train-90\nfrozen_head: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nlanded_head: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nrecovery_ref: refs/review-loop/recovery/pr-90010/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n```\n\nNothing was left out.",
+     "createdAt": "2026-11-11T12:30:00Z",
+     "url": "https://example.test/pull/90010#c"
+    }
+   ],
+   "url": "https://example.test/pull/90010"
+  },
+  {
+   "_built": "valid block, same train and landed head, CRLF line ends",
+   "number": 90011,
+   "title": "built row 90011",
+   "state": "MERGED",
+   "baseRefName": "main",
+   "headRefOid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "createdAt": "2026-11-11T06:00:00Z",
+   "closedAt": "2026-11-11T12:30:00Z",
+   "mergedAt": "2026-11-11T12:30:00Z",
+   "additions": 50,
+   "changedFiles": 2,
+   "comments": [
+    {
+     "author": {
+      "login": "built"
+     },
+     "body": "Landed on main.\r\n\r\n```landing-record\r\nreview_start_utc: 2026-11-11T11:00:00Z\r\nreview_end_utc: 2026-11-11T12:00:00Z\r\nrounds: 1\r\nreviewer_provider: example-provider\r\nreviewer_model: example-model\r\nreviewer_effort: low\r\ngate_seconds: 415.5\r\ntrain: train-90\r\nfrozen_head: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\r\nlanded_head: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\r\nrecovery_ref: refs/review-loop/recovery/pr-90011/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\r\n```",
+     "createdAt": "2026-11-11T12:30:00Z",
+     "url": "https://example.test/pull/90011#c"
+    }
+   ],
+   "url": "https://example.test/pull/90011"
+  },
+  {
+   "_built": "block with four problems and gate_seconds none",
+   "number": 90012,
+   "title": "built row 90012",
+   "state": "MERGED",
+   "baseRefName": "main",
+   "headRefOid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "createdAt": "2026-11-11T09:00:00Z",
+   "closedAt": "2026-11-11T13:00:00Z",
+   "mergedAt": "2026-11-11T13:00:00Z",
+   "additions": 50,
+   "changedFiles": 2,
+   "comments": [
+    {
+     "author": {
+      "login": "built"
+     },
+     "body": "```landing-record\nreview_start_utc: 2026-11-11T10:00:00Z\nreview_end_utc: 2026-11-11T12:00:00Z\nrounds: two\nreviewer_provider: example-provider\nreviewer_model: example-model\nreviewer_effort: low\ngate_seconds: none\ntrain: train-91\nfrozen_head: abc123\nlanded_head: cccccccccccccccccccccccccccccccccccccccc\ntokens: 5\n```",
+     "createdAt": "2026-11-11T13:00:00Z",
+     "url": "https://example.test/pull/90012#c"
+    }
+   ],
+   "url": "https://example.test/pull/90012"
+  },
+  {
+   "_built": "closed without merge, no comment",
+   "number": 90013,
+   "title": "built row 90013",
+   "state": "CLOSED",
+   "baseRefName": "main",
+   "headRefOid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "createdAt": "2026-11-11T09:00:00Z",
+   "closedAt": "2026-11-11T09:30:00Z",
+   "mergedAt": null,
+   "additions": 50,
+   "changedFiles": 2,
+   "comments": [],
+   "url": "https://example.test/pull/90013"
+  }
+ ]
+}

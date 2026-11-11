@@ -30,7 +30,7 @@ fetched from the URL of the row at revision `1eb15ac428`, read in full).
 | 4 assumptions | done | 23 rows; first five: b2 (N fixed), c1+c2 (F and the far base), a2+a1 (periodic, global), c4+c3 (one-way, scalar), c6 (class-wide) |
 | 5 compare | done; scope of the branch search in 5.3 | C1, C2, C4, C6 partly in rows 712, 720; C7, C9 found again; the form-by-form table and the Martinelli-Olivieri step are added |
 | 6 filters | done | no verdict of the 36 changes; one necessity claim (row 712, L92) is too strong as a claim about proofs; one in-class test added (compact Gaussian, every value above s_1) |
-| 7 routes | not started | |
+| 7 routes | done | seven routes; E (a control inside class K) and F (a reading item) survive; A and C blocked-equivalent; B and D wounded; the form F retired as the default brief |
 | 8 attempts | not started | |
 | 9 report | not started | |
 
@@ -382,3 +382,65 @@ From the definitions: a tool for T must verify a clustering criterion for a box 
 **Are the tests enough?** For tools: Step 2 names no model that the lane's list lacks. For necessity claims the lane had no test before this run; the controls A1 to A10 are the first.
 
 **The other kinds of reason, in the valid form.** "Needs a small number" (5, 6, 7, 22): valid as a range only, and by C3 it is true of every proved case without exact closure, so as a filter it leaves only exact closure and correlation inequalities. "Other setting" (16, 17, 20): the hypothesis that fails is named in each row of 2.D (frustration-freeness; an Abelian duality; a positive cluster representation). "Was tried": not used.
+
+## Step 7. Routes: generate, try to kill, rank
+
+`docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md` was read in full before this step. No subagents: the passes below are separate passes of one session, and they are not independent.
+
+**Exact target contract (governance).** Target: T of Step 1 (a seed of one of three kinds at one physical size, uniformly in the cutoff; or (G_ev)). Domain: Wilson SU(2), four dimensions, the trajectory of the account. Allowed premises: the lane's checked statements; the account as cited. Forbidden weakenings: a fixed beta; a hypothesis that restates the seed; a numerical step. Edge cases: two dimensions; Z_2 at large beta; SU(2) at small beta; U(1) at weak coupling; the two models of 6c. Completion witness: a written proof. Not closure: a map of routes; a reduction to a target-equivalent statement.
+
+### 7.1 Routes
+
+Sources: the first five assumptions of Step 4 (b2 left out: an owner decision), the corrected claim N1, C3, and the "least a tool must use" of 6b.
+
+| Route | Family (object; mechanism; terminal obligation) | Assumption changed | What one would have to believe | First artifact | Cost | What it would change |
+|---|---|---|---|---|---|---|
+| A | effective action at the scale xi; a single-scale criterion with a two-sided hypothesis; (I) and (J) of 3.4 | c1, c2, c4 | that a hypothesis on block variables at coupling of order one exists that a single-scale argument can use, and that the flow lands in it | the exact statement (P-c) | a long author run with no mechanism | the crux is stated as in every proved multi-scale case |
+| B | all boundary values of one box, for centre-blind functions; Dobrushin-Shlosman; the mixing hypothesis | a2, a1 | that the influence of a boundary value decays for every boundary value | a test on the proved gauge cases: does the hypothesis hold for Z_2 at large beta? | one short test | whether row 691's form can be the crux |
+| C | the SU(2) trajectory; contradiction at a first bad size; (Z-UNB) | c6 | that "no seed at any size" contradicts a property that the account proves below that size | Theorem ZD (row 720) is the reduction; the contradiction has no mechanism | - | - |
+| D | a correlation inequality with a parameter; a dichotomy "a seed at some size, or order" (A7) | c5 | that Wilson SU(2) has a positive graphical representation, or a monotone order parameter | a search for such an inequality for the centre-even sector | one reading item, then a short author run | the only pattern among the controls that reaches a large correlation length without a small number |
+| E | the lane's own class K on a proved case; Theorem S-w; the full and kappa seeds of Z_2 at large beta at N = 3 | none (a control) | nothing | Proposition Z2 (Step 8) | one hour | the filter "Z_2 at large beta" goes from recalled to argued; a proved instance of base = sufficiency inside the lane's frame |
+| F | the literature; a counterexample to belief B4 | e4 | that some proved gap has a large correlation length with no small number, no exact closure and no correlation inequality | a reading item with a list of candidates | one reading lane | a template, if one exists; if none, C8 is better founded |
+| G (misframing pass) | the question; "is there a step?" replaced | c1 | - | the replacing question, 7.4 | - | the brief of the next author run |
+
+**Lenses.** Chosen from the structure of the wall (a flow across scales with no small number). *Dynamical systems:* the object is the step map on dimensionless torus quantities; the theorem type is a Lyapunov function, which excludes fixed points without computing the flow. The known one in four dimensions is the a-theorem (recalled: Komargodski and Schwimmer): it orders the two ends and does not exclude a free massless end, so it gives no gap. Toy: the two-dimensional c-function does not prove the gap of O(3) either. Found empty for T. *Probability, coupling (the outside lens):* A3 proves clustering by a swap of two independent copies on a set where the defect clusters of the two copies do not connect the two regions; the object would be a "defect" of SU(2) at the scale xi with a small density. None is known; this is route A in another language. *Logic:* Gosset and Mozgunov recall that the gap is undecidable for general two-dimensional Hamiltonians (their page 2); so a finite criterion that is necessary and sufficient cannot exist for a class that large. It bears on "necessity" claims only. *Convexity, variational:* in use (Lemma K). *Operator algebras, topology, number theory, categories:* considered; nothing to state.
+
+**Reframes tried.** *Exact theorem against bounded theorem:* a gap for a fixed, large but finite range of beta at fixed N is what A8 gives for O(N); the analogue here would be the seed for beta in [beta_1, beta_2] by one two-sided expansion with no continuum statement. It is weaker than T and does not need the join (J). I record it; I did not try it. *Finite carrier against limiting family; local against global:* 3.5.
+
+### 7.2 The kill pass
+
+| Route | Assumes the target? | Contradicts a checked result? | Tried before (Step 5)? | Fails a test of Step 6 in the valid form? | Breaks a rule? | Terminal obligation target-equivalent? | Verdict |
+|---|---|---|---|---|---|---|---|
+| A | no | no | named as "what the account would need" (`gap-skeleton-final.md` L564; `gap-phys-seed.md` Part 4) | no | no | (P-c) is stronger than the seed in what it controls, and no mechanism exists | **blocked-equivalent.** A statement of the crux, not a route. |
+| B | no | no | row 691 owns (DS-tw), a hypothesis | **the unrestricted form fails a positive control, by a sketch:** in Z_2 at large beta a boundary value with a loop of frustrated plaquettes on the boundary forces a sheet of frustrated plaquettes across the box, so the law of a plaquette at the centre depends on a boundary value at distance of the box size. (GAP) holds there (A3). So "for every boundary value" is not necessary and is false in a model where the target is true. *Sketch, not proved: I did not show that the sheet passes the centre with probability near one.* It is the gauge form of the remark in A6 that strong mixing fails for some volumes in the ordered Ising model. | no | not shown | **wounded:** the criterion must restrict the boundary values (typical, or twisted as in row 691), and then its verification is open at order one. |
+| C | no | no | row 720, Theorems ZD, ZD-c | - | no | (Z-UNB) with (BDD-Delta) is equivalent to the seed (given row 720, unchecked on 2026-11-11) | **blocked-equivalent.** |
+| D | no | no | row 712, methods 1, 2, 20: "no such inequality or dual form is known for SU(2)"; row 733, Lemma NP: the Z_2 splitting has no pointwise sign (`gap-kappa-order.md` L54) | F4: monotony in the coupling carries a seed toward strong coupling only; the dichotomy form is not excluded by F4 | no | unknown | **wounded:** no positive representation is known, and one sign obstruction is proved. |
+| E | no | no | partly (5.1, last row) | - | no | off the path of T (a control) | **survives**; done in Step 8. |
+| F | no | no | the digests ranked sources as tools, not as precedents | - | no | - | **survives** as a reading item. |
+| G | - | - | - | - | - | - | gives 7.4 |
+
+### 7.3 Rank and registry
+
+| Rank | Route | Family | Terminal obligation | Strength against T | Status (governance) | Concrete evidence | Stop or reopen condition |
+|---|---|---|---|---|---|---|---|
+| 1 | E | class K on a proved case | Proposition Z2 | weaker (a control) | active; done in Step 8 | 8.1 | - |
+| 2 | F | literature precedent | a proved case of the kind of B4 | unknown | unexplored | - | stop if the listed candidates all have a small number, closure or an inequality |
+| 3 | D | correlation inequality, dichotomy | a positive representation for the centre-even sector of SU(2) | unknown/comparable | blocked-local | `gap-kappa-order.md` Lemma NP | reopen if a signed-weight form of the switching lemma, or a positivity after averaging over the SO(3) part, is found |
+| 4 | B | boundary values | a restricted mixing hypothesis at one physical size | stronger or comparable | blocked-local (row 691 owns it) | the Z_2 sketch of 7.2 | reopen with a class of boundary values that passes the Z_2 control |
+| 5 | A | effective action at scale xi | (P-c) | target-equivalent or stronger | blocked-equivalent | A8: not proved even at large N | reopen if a second small number is found for SU(2) at the scale xi |
+| 6 | C | first bad size | (Z-UNB) | target-equivalent | blocked-equivalent | row 720 | reopen with a property of the account that "no seed" contradicts |
+| - | the form F (a step for a torus quantity) | torus quantity; one-way inequality; a step at every value | target-equivalent at each value (row 720), and blocked at every value above s_1 for class-wide tools (F5) | - | **retired as the default brief**; blocked-equivalent | A9; C1; F5 | reopen if a step is found whose proof uses a property that the compact Gaussian and two-phase models lack, at one value above s_1 |
+
+### 7.4 The replacing question (the misframing pass)
+
+The lane asked: "which torus quantity has a one-way step from a small size to the seed size?" The proved cases answer a different question: **"at which scale, and by which of four means, is the criterion verified?"** The four means are: a small number at that scale; a second small number that survives to the scale xi after an exact change of variables; exact closure; a correlation inequality with a parameter. For Wilson SU(2) at the scale xi none of the four is known, and for each the reason can be named: the coupling is of order one; no dual or large-N variable is known; block integration does not close (it makes larger loops); the known positive representations fail by a sign (Lemma NP of row 733). *reading; this is a map and a price, not a proof that no fifth means exists.*
+
+## Step 8. Real attempts
+
+Budget: about two hours. Before each attempt I searched `library/open-core.md`, `library/open-registry.md` and the FINISH rows for the statement (patterns: "kappa", "full seed", "Z_2", "G_ev", "EV-STEP"): no row holds the statements of 8.1 or 8.2.
+
+### 8.0 A guide run for F5, registered before it was run
+
+**What is run.** The oscillator product of the compact Gaussian model on the lattice, Pi_m := product over the non-zero momenta k of the periodic cube of side 2m of (1 - exp(-m eps_k))^(-1), with 2 cosh(eps_k) = 2 + sum over i of (2 - 2 cos(2 pi k_i/(2m))) (`gap-seed-shape.md` L225, L237), for m = 3, 4, 6, 8, 12, 16, 24. By F5 the two theta factors at rho >= 1/2 give a factor of at least 1.99 when the size doubles, and they do not depend on m. So on the lattice S(2m) > S(m) at every rho >= 1/2 if Pi_{2m}/Pi_m > 1/1.99.
+
+**Pass (registered 2026-11-11, before the run):** Pi_{2m}/Pi_m >= 0.51 for m = 3, 4, 6, 8, 12. Then F5 holds on the lattice at these sizes (a guide, not a proof for all m). **Fail:** a ratio below 0.51 at one of these m. Then the lattice remark in F5 is wrong at that size, and F5 stands for the continuum formula only. The run also prints s_1(m) = theta(1/4) theta(pi^2)^3 Pi_m - 1, the value of S at rho = 1/2. A run decides nothing; it can refute the lattice remark.

@@ -1,5 +1,13 @@
 # SU(2) mass-gap lane: current checkpoint
 
+## Re-pointed by the owner (2026-11-11): read this first
+
+The owner reviewed this lane on 2026-11-11 and re-pointed it. Do not extend the small-field construction (the third transition, rough terminal backgrounds) in the next session. Reason, in short: the small-field, small-coupling side is the ultraviolet end, which the complete account of Sussman and Alpoge (after Balaban) already covers; this lane's own map puts the physical gap four open nodes away, at the step "positive physical spectral gap", which is the open crux of the main gap program. That program runs on branch `claude/ym4d-hard-route` (draft PR #10132); its plan is `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-skeleton-final.md` (Sections 13.12 to 13.15 are the newest) and its queue is `FINISH.md` in the same folder.
+
+**Next task for this lane when MacBook Codex usage resets:** FINISH row 730 on that branch, `gap-zd-astra`: a cross-provider check (gpt-6-astra max) of `library/gap-phys-seed.md` Sections 3.1 and 3.2. The brief is the row text. Write the output on branch `claude/ym4d-hard-route`, not here. The work already in this PR stays as it is; nothing in it is withdrawn. The owner's rule for the Mac mini: work from this lane goes there only if it is on the critical path of the crux.
+
+Written by Claude Opus 5.5 (lead session of the gap program) on the owner's instruction.
+
 ## Completed continuation: compact nonidentity terminal backgrounds
 
 Owner request, local 2026-11-09, source head

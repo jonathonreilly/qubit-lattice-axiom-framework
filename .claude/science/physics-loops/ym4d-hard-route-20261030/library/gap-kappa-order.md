@@ -114,7 +114,21 @@ So a violation needs both: single twists that are cheap (ratio above about one h
 **Finite-group checks of the mechanism (PROVED, finite arithmetic; these are other groups, not SU(2)).** Let G be a finite group with a central element z of order 2, and take the limit beta = infinity of a Wilson action that is maximal only at the identity. Then Z^k is proportional to N_k := the number of (g_1..g_4) in G^4 with [g_mu, g_nu] = z^{k_{mu nu}} (flat connections on a torus are fixed by their holonomies, with a weight that does not depend on the holonomy class once summed over the class; the count does not depend on the sides).
 
 - G = Q_8. With v_mu the image of g_mu in G/Z = F_2^2 and omega the symplectic form, k_{mu nu} = omega(v_mu, v_nu). So k = a ∧ b for (a, b) in F_2^4 x F_2^4, Pf(k) = 0, and N_0 : N_k = 46 : 6 for the 35 non-zero k with Pf = 0 (46 pairs (a, b) are linearly dependent; each plane has 6 ordered bases; 46 + 35 x 6 = 256). (KP-b): 35 x 6 = 210 <= 7 x 46 = 322. (KP) holds.
-- Every extraspecial 2-group (G/Z = F_2^{2n} with a symplectic form): 64 Y_h is the sum over v in (F_2^{2n})^4 of (-1)^{sum h_{mu nu} omega(v_mu, v_nu)}, which is |G/Z|^2 times the order of a kernel, positive. (KP) holds.
+- Every extraspecial 2-group (G/Z = F_2^{2n} with a symplectic form): 64 Y_h is the sum over v in (F_2^{2n})^4 of (-1)^{sum h_{mu nu} omega(v_mu, v_nu)}, which is |G/Z|^(4 - rank(h)/2) > 0 (a Gauss sum of a quadratic form of hyperbolic type; rank(h) is 0, 2 or 4). (KP) holds.
 - For SU(2) itself at beta = infinity the periodic class has all the weight (previous item).
 
 I did not find a group for which the flat count violates (KP), and I did not prove that none exists.
+
+## 5. Runs (guides; a run can refute or guide, it proves nothing)
+
+Numeric lock held as `gap-kappa-order-w1`. Memory free was 49 to 52 percent during the session; each job was started at 50 percent or more, except one 5-second timing test that started at 49 percent (my error). Scripts and logs: `/tmp/gko_scratch/` on the Mini (`run1.py`, `run3.py`, `run3s.py`, `*.json`, `*.log`); not in git.
+
+**Run 1, one-site torus (sides 1, outside the scope of (KP); a test of the sign of the class weights only).** Z^k = Haar mean of exp(beta sum_{mu<nu} s^k_{mu nu} x_{mu nu}), x_{mu nu} = (1/2) tr [U_mu, U_nu]; 10^7 Haar samples. Criterion written first: signal if the sum of Y_h over Pf(h) = 1 is negative by 5 standard errors at some beta. Result, beta = 0.5, 1, 1.5, 2, 2.5, 3, 4, 5: every one of the 64 class weights Y_h is positive by more than 190 standard errors; 35 r_0 - 28 r_1 = 6.08, 4.04, 2.37, 1.37, 0.82, 0.53, 0.26, 0.16 (all below 7); r_0 falls like beta^{-2} at large beta, as in Section 4. No signal. This run cannot see the open regime: on one site no twist is ever free at a beta where half-integer charge has a price.
+
+**Hand value used as a check of the fine terms.** J(1/2,1/2,1/2) = 8 E[x_12 x_13 x_23] = 5/9 > 0. (With U_i = cos(theta_i) + i sin(theta_i) n_i.sigma: x_ij = 1 - 2 s_i^2 s_j^2 |n_i x n_j|^2, s_i = sin(theta_i); E s^2 = 3/4, E s^4 = 5/8; E|n_i x n_j|^2 = 2/3; E of the product of the three cross terms = 64/225; so E[x x x] = 1 - 9/4 + 15/8 - 5/9 = 5/72.) So the lowest branching term, three planes through one site, is positive. Higher spins: not done.
+
+**Run 3, Wilson SU(2) on the 3^4 torus (in scope).** Heat bath (Creutz), 12 sub-lattices of mutually independent links per sweep. Ratio of partition functions along a tree of twists (one stack at a time): ln(Z^{k+plane}/Z^k) = -beta integral over lambda in [-1,1] of <X>_lambda, X the sum of x_p over the stack, lambda the coupling of the stack; Gauss-Legendre with 10 nodes; errors by jackknife over independent replicas. Orbit representatives of the non-zero twists under permutations of the axes on the symmetric torus (size of orbit; Pf): a = 12 (6; 0), b = 12+13 (12; 0), c = 12+13+14 (4; 0), d = 12+13+23 (4; 0), e = 12+34 (3; 1), i = 12+34+13 (12; 1), g = 12+34+13+24 (3; 0), h = 12+13+14+23 (12; 1), f = 12+13+14+23+24 (6; 0), j = all six (1; 1). Criterion written first: Q := 6 r_a + 12 r_b + 4 r_c + 4 r_d + 3 r_g + 6 r_f - 3 r_e - 12 r_i - 12 r_h - r_j; (KP-b) is Q <= 7; signal of a violation if Q - 7 > 5 errors.
+
+Checks of the code: mean plaquette 0.1925 at beta = 0.8 (strong coupling beta/4 - beta^3/96 = 0.195) and 0.509 at beta = 2.0; r_a at beta = 2.0 by the integration, 0.81(4), and by an independent route (flip the 9 plaquettes of the stack one at a time, reweighting each), 0.83(4).
+
+Results are appended below as the jobs finish.

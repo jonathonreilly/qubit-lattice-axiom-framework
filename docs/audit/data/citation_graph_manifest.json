@@ -1,6 +1,6 @@
 {
  "edge_count": 16087,
- "node_count": 7440,
+ "node_count": 7451,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1414,6 +1414,10 @@
    "deps_hash": "8062508cb173",
    "out_degree": 2
   },
+  "ai_methodology.framework_primer": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "ai_methodology.llm_skill_pack_2026-04-25": {
    "deps_hash": "5f9ac28949c1",
    "out_degree": 12
@@ -1439,6 +1443,38 @@
    "out_degree": 0
   },
   "ai_methodology.methodology_synthesis_review_2026-04-25": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "ai_methodology.procedures": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "ai_methodology.procedures.audit": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "ai_methodology.procedures.check": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "ai_methodology.procedures.dispatch": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "ai_methodology.procedures.land": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "ai_methodology.procedures.repair": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "ai_methodology.procedures.research": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "ai_methodology.procedures.write": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -1698,7 +1734,15 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "ai_methodology.rules": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "ai_methodology.science_workflow": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "ai_methodology.settings": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

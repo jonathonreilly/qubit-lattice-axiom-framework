@@ -57,7 +57,7 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 |---|---:|
 | Total pending rows | 5574 |
 | Ready rows | 1933 |
-| Cycle-break targets | 83 |
+| Cycle-break targets | 81 |
 | Critical pending | 682 |
 | High pending | 452 |
 | Medium pending | 1445 |
@@ -702,11 +702,11 @@ Source: deferred package (`archive/publication/ci3_z3/`).
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 7440 |
+| Citation-graph nodes | 7451 |
 | Critical nodes | 712 |
 | High nodes | 511 |
 | Medium nodes | 1637 |
-| Leaf nodes | 4580 |
+| Leaf nodes | 4591 |
 
 Top load-bearing rows by graph score:
 

@@ -132,3 +132,15 @@ Numeric lock held as `gap-kappa-order-w1`. Memory free was 49 to 52 percent duri
 Checks of the code: mean plaquette 0.1925 at beta = 0.8 (strong coupling beta/4 - beta^3/96 = 0.195) and 0.509 at beta = 2.0; r_a at beta = 2.0 by the integration, 0.81(4), and by an independent route (flip the 9 plaquettes of the stack one at a time, reweighting each), 0.83(4).
 
 Results are appended below as the jobs finish.
+
+Coarse scan, 3^4, 8 replicas, 1200 sweeps per node (errors in brackets, jackknife):
+
+| beta | plaquette | r_a | r_b | r_e (Pf=1) | r_i (Pf=1) | r_h (Pf=1) | r_j (Pf=1) | Q (must be <= 7) |
+|---|---|---|---|---|---|---|---|---|
+| 2.0 (6 replicas, 500 sweeps) | 0.509 | 0.81(4) | 0.74(3) | 0.73(4) | 0.63(3) | 0.64(6) | 0.49(6) | 6.4(8) |
+| 2.2 | 0.587 | 0.360(18) | 0.198(18) | 0.116(6) | 0.095(5) | 0.069(4) | 0.055(5) | 3.9(3) |
+| 2.4 | 0.640 | 0.155(9) | 0.063(5) | 0.011(1) | 0.009(1) | 0.007(1) | 0.006(1) | 1.94(14) |
+| 2.6 | 0.675 | 0.094(7) | 0.036(3) | 0.001 | 0.001 | 0.001 | 0.000 | 1.25(7) |
+| 2.9 | 0.715 | 0.060(6) | 0.023(3) | 0.000 | 0.000 | 0.000 | 0.000 | 0.79(7) |
+
+Reading. The price of half-integer charge is seen: r_e/r_b is about 1 at beta = 2.0, 0.6 at 2.2, 0.17 at 2.4, 0.03 at 2.6. But it sets in only where the single twist is already expensive (r_a = 0.36 at beta = 2.2, below the value 0.48 under which (KP) holds for any price in the model of Lemma PD). From beta = 2.2 on, Q is far below 7. The only place left for a violation on this torus is the narrow window beta in (2.0, 2.2), where the twists become free; a finer scan of it follows.

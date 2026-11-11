@@ -15,6 +15,7 @@ here with its date. Each campaign's retrospective says which settings stay.
 | Audit trigger | Only for a TOE candidate or a standalone proof the owner wants to publish, over that result's dependency closure. Routine research does not wait for audit | 2026-10-30 |
 | Audit tier | The forensic tier, over the closure at a pinned commit (`docs/audit/README.md`) | 2026-10-30 |
 | Questions for the owner | Axiom edits, public posts, spending and pace only | 2026-10-30 |
+| PR checks | Never waited on or reported. The PR smoke workflow is an early signal on tooling changes; the landing gate is the gate | 2026-07-02 |
 | Published work | Searched once per route or step and put on record; built on at once with credit as `argued`; verified in parallel | 2026-11-02 |
 | Lane output | Closed proofs or explicit counterexamples; lanes run to closure; route choices recorded with reasons | 2026-11-02 |
 | PR state | Decided: a landed PR shows as merged and a closed PR means nothing from it is on `main`. Not yet in force: `land` still pushes the reviewed commits and closes the PR, and its contract check requires that. Until both change, read a PR's landing record | 2026-11-10 |
@@ -22,8 +23,8 @@ here with its date. Each campaign's retrospective says which settings stay.
 
 ## Method defaults (2026-11-02)
 
-These are how the owner currently wants hard targets attacked. A target may
-depart from one by recording why in its `GOAL.md`.
+These are how the owner wants hard targets attacked. Only the owner changes
+them.
 
 - **Skeleton first, hardest step first.** Lay out the whole argument, then
   attack the step it is most likely to die on. Routine steps wait. For a

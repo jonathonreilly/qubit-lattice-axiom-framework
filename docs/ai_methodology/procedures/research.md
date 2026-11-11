@@ -47,8 +47,8 @@ lease_until: <UTC time past your next checkpoint>
 - <part, interface or person>: <what is asked and what it blocks>
 ```
 
-- List only critical-path obligations, named as in their check records. Write
-  `open` or `argued` only; `lab_ops.py status <folder>` computes the rest.
+- List only critical-path obligations, named as in their check records (no
+  spaces), as `open` or `argued`; `lab_ops.py status` computes the rest.
 - Only leads hold leases, one per file: commit the two header lines and push. A
   rejected push or a conflict on a lease line means you lost. A session that
   cannot push holds none; its launcher does. Tasks and probes need none.
@@ -66,9 +66,9 @@ lease_until: <UTC time past your next checkpoint>
 2. **Select.** Write the contract and critical path. Class routes by object,
    mechanism and terminal obligation, not artifact or session; rank by
    `SETTINGS.md`, Method defaults. Attempt only what could close, kill or
-   isolate a critical-path obligation: a one-step corollary of a landed result
-   is churn even when correct. A route ending at a lemma as strong as the target
-   is blocked until a new mechanism appears.
+   isolate a critical-path obligation: a short standard proof that closes one
+   is valuable, and a one-step variant that closes none is churn even when
+   correct. A route ending at a lemma as strong as the target is blocked.
 3. **Attempt.** Set the budget, then pick the unit: a sustained attempt on one
    obligation; a race of independent attempts under neutral briefs; a bounded
    task (`dispatch`); a probe with its decisive outcome stated first. Split only

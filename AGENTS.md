@@ -19,7 +19,8 @@ current ones.
    `python3 scripts/lab_ops.py status <folder>` summarises it. Planning notes
    and the list of targets are on the orphan `ai/execution` branch
    (`git show origin/ai/execution:CAMPAIGN_STATUS.md`). They are an as-of aid
-   and grant nothing.
+   and grant nothing. That branch never merges into `main`; do not check its
+   files out into a `main` working tree.
 
 `docs/work_history/`, `archive/` and dated campaign packs are history. Read
 them for recovery; never execute them as procedure.

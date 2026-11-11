@@ -19,9 +19,10 @@ record. Whatever the repairer believes, the repaired statement is `argued`
 
 ## Takes
 
-- The exact defect, quoted from the record on current `origin/main`, with
-  the record's identity. A stale local copy, a generated prompt or a summary
-  authorizes nothing.
+- The exact defect, quoted from its record with the record's identity: for
+  landed work the record on current `origin/main`, for unlanded work the
+  check record on the target branch that still counts. A stale local copy, a
+  generated prompt or a summary authorizes nothing.
 - The statements that read the defective one. Know the list before the
   first edit: each returns to `argued`.
 - The scope asked for: source only, which is the default, or a drain that
@@ -29,20 +30,21 @@ record. Whatever the repairer believes, the repaired statement is `argued`
 
 ## Steps
 
-1. **Start clean.** A dedicated worktree at current `origin/main`
-   (`lab_ops.py worktree-add`). Keep incident files as provenance and never
-   commit them.
+1. **Start clean.** A dedicated worktree (`lab_ops.py worktree-add`) at
+   current `origin/main`, or on the target branch for unlanded work. Keep
+   incident files as provenance and never commit them.
 2. **Inventory and route.** List every candidate and give each exactly one
    route: source repair, tool repair, wait for a check in progress, a fresh
    checker, or not actionable with the reason. An item without a route is an
    unfinished inventory. (`science_fix_loop.py --dry-run`; reference:
    inventory, route table.)
 3. **Validate the authority.** A source edit needs a record that matches
-   `origin/main` field by field. An invalidated or archived record is advice
-   only. Malformed checker output is never an instruction.
+   its source field by field: `origin/main`, or the target branch head. An
+   invalidated, archived or rejected record is advice only. Malformed checker
+   output is never an instruction.
    (`science_fix_loop.py --handoff-file`, `--from-archived`.)
-4. **Reproduce first.** Show the defect on current `origin/main`. If `main`
-   already settles it, make no edit and report "settled on main" with the
+4. **Reproduce first.** Show the defect on that source. If `main` already
+   settles it, make no edit and report "settled on main" with the
    evidence. Reproduce a tool failure before editing a tool. (Reference:
    inventory.)
 5. **Weigh the edit.** An edit to a `checked` or `retained` statement reopens

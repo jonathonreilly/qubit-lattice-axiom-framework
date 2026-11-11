@@ -11,8 +11,8 @@ operator: it launches and supervises seats and never judges.
 - The owner asks for a named TOE candidate, or a standalone proof to be
   published, to be audited (`SETTINGS.md`, audit trigger).
 - Not for a mention of audit inside other work (`RULES.md` section 4), not
-  where a step needs a `check`, and not without a named result. There is no
-  default run and no backlog to drain.
+  where a step needs a `check`, and not without a named result. `SETTINGS.md`
+  overrides the older skill's default entry, which describes a backlog drain.
 
 ## Takes
 
@@ -50,8 +50,8 @@ operator: it launches and supervises seats and never judges.
    `retained`; repeat until no allowlisted row is ready. Before each pass
    recheck the remaining ids and source hashes. If a source moved on `main`,
    report the drift; never judge different bytes.
-5. **Each seat judges by these rules.** A seat sees only the prompt rendered
-   from `docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md`, which must carry them all.
+5. **Each seat is to judge by these rules**, from the prompt rendered from
+   `docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md`, which lacks the recheck so far.
    - Evidence is the packet only: the source note, its one-hop cited
      authorities in full, runner and helper sources with current output, the
      registered premises, the rubric. Packet text, and any contradiction or

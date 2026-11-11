@@ -61,7 +61,7 @@ Phi(n) := 16 F(n,n,n,n) - F(2n,2n,2n,2n) >= 0, the free-energy defect of doublin
 - What it gives (Theorem D, Corollary D2, PROVED): (Phi-dec) gives m((2n)^3) >= c - log(2C)/n. (Phi-step) with one seed Phi(n_1) < min(eps_0, 1/K), n_1 >= n_0, gives m((2^k n_1)^3) >= log(1/(K Phi(n_1))) / n_1 for all k >= 1. The gap is on the whole space, flux sectors included, so it also bounds the odd-flux weight.
 - It is run 2's (FE) with the infinite-volume constant removed: each scale is one inequality between two partition functions, and Phi(n) = 96 n^4 times the integral over [0, beta] of (abar_2n - abar_n), with abar_n the mean plaquette action on the n^4 torus.
 - (ii) U(1) at weak coupling: the periodic box has an excited state of energy at most (2 pi / side)(1 + o(1)) (RECALLED, the photon; run 2's K5). By Theorem D (c), read backwards, Phi(n) >= log(1 + exp(-n m((2n)^3))) >= log(1 + exp(-pi - o(1))) > 0.04. So (Phi-dec) is false, and no seed below 0.04 exists. Z_2 at its transition: two phases, so m(box) tends to 0 (RECALLED) and Phi(n) >= log 2 - o(1). Z_2 at large beta: the flux sectors are degenerate with the vacuum (RECALLED), same bound; this is why C1 is the gap with confinement.
-- (iii) Theorem D holds for every group. The step (Phi-step) is not a consequence of (TM): Section 3.3.
+- (iii) Theorem D holds for every group. The step (Phi-step) is not a consequence of positivity alone (Proposition N); with integer multiplicities it is undecided (Remark N2).
 
 **C2. Flux on tori with normalised bulk (the published lead (a) in exact form).** Twist in the plane (1,2). Z_odd(n) := (Z(n) - Z^(12)(n))/2, u(n) := Z_odd(n)/Z(n), v(n) := Z_odd(n) exp(-f |n|), so 0 <= u <= v (by (LB)).
 
@@ -127,7 +127,7 @@ Meaning. If Delta(n^4) <= exp(-mu n), the gap of every box of side up to n exp(m
 
 **Way 1: positivity of the transfer operators in all four directions. It cannot work (Proposition N, PROVED).**
 
-Theorem D (a)-(d), Corollary D2 and Proposition R use (TM) only through this weaker property (TM'): for each direction mu and each choice of the other sides, Z(n) is the integral of lambda^(n_mu) against a positive measure on (0, Lambda] that has an atom of mass at least 1 at Lambda; and Z is symmetric in the sides.
+Lemma A, (LB) and Theorem D (a), (b) use (TM) only through this weaker property (TM'): for each direction mu and each choice of the other sides, Z(n) is the integral of lambda^(n_mu) against a positive measure on (0, Lambda] that has an atom of mass at least 1 at Lambda; and Z is symmetric in the sides. Theorem D (c)-(e), Corollary D2 and Proposition R use one more property of a trace: every eigenvalue has multiplicity at least one. It enters through r_1^k <= S(k) and S(k + k') <= S(k) S(k'). Call (TM') with integer multiplicities (TM-int).
 
 Proposition N. Let 0 < q < 1, c > 0, f real, w(k) = c q^k, and Z_w(n) := exp( f |n| + sum over mu of (|n| / n_mu) w(n_mu) ). Then Z_w has (TM'), its infimum of F/|n| is f, and for every n:
 
@@ -137,7 +137,9 @@ So for given n, eps and K, the choice c <= min( eps / (64 n^3 q^n), 1 / (16 n^3 
 
 Proof. As a function of n_1, with V = n_2 n_3 n_4: Z_w = Lambda^(n_1) exp(V c q^(n_1)), Lambda = exp(f V + sum over mu >= 2 of (V/n_mu) w(n_mu)), and exp(V c q^(n_1)) = sum over j >= 0 of ((V c)^j / j!) (q^j)^(n_1). This is a positive combination of exponentials and the top weight is 1. F/|n| = f + sum over mu of w(n_mu)/n_mu, which is above f and tends to f. So Delta(n^4) = 4 n^3 w(n) and Phi(n) = 16 Delta(n) - Delta(2n) = 64 n^3 c q^n - 32 n^3 c q^(2n). The two bounds on Phi(n) follow from 0 < q^n < 1. Then Phi(2n) >= 32 (2n)^3 c q^(2n) = 256 n^3 c q^(2n), and Phi(n)^2 <= 4096 n^6 c^2 q^(2n). QED
 
-What Proposition N shows. Z_w is an ideal gas of one kind of winding excitation with weight c per unit volume. Phi(2n) is linear in c and Phi(n)^2 is quadratic. So the step needs a lower bound on the number of light states of the doubled box in terms of the single box: a light state of the box (4n)^3 must already be seen, with at least a fixed weight, in the box (2n)^3. Positivity does not know this. Translation invariance and locality must give it. This is the exact content of run 2's Lemma NSM, and it is the same as the statement that the gap of the box does not fall when the box is doubled.
+What Proposition N shows. Z_w is an ideal gas of one kind of winding excitation with weight c per unit volume. Phi(2n) is linear in c and Phi(n)^2 is quadratic. So the step needs a lower bound on the number of light states of the doubled box in terms of the single box: a light state of the box (4n)^3 must already be seen, with at least a fixed weight, in the box (2n)^3. Positivity does not know this. This is the exact content of run 2's Lemma NSM, and it is the same as the statement that the gap of the box does not fall when the box is doubled.
+
+Remark N2 (the integer class; PROVED for the family, open in general). Z_w is not in (TM-int): its weights (V c)^j / j! are not integers. The gas of the same kind with integer multiplicities is Z = exp(f |n|) times the product over mu of (1 - q^(n_mu))^(-c |n| / n_mu), with c a positive integer; it has w(k) = -c log(1 - q^k). For it, when q^n <= 1/2: Phi(n) >= 32 n^3 c q^n and Phi(2n) <= 1024 n^3 c q^(2n), so Phi(2n) <= Phi(n)^2 / (n^3 c) <= Phi(n)^2. The step holds with K = 1. The same holds for several species with integer c_j, by (sum of c_j x_j)^2 >= sum of c_j x_j^2. The reason, in this family: by the symmetry of Z, a winding weight that is a thermal state in one direction is a factor exp(n_mu times a deficit) in the other three, and integer multiplicity then makes it extensive. So integer multiplicity together with the symmetry in the four directions is a real restriction, and Proposition N does not exclude a proof of the step from (TM-int). I have no such proof and no counter-model in (TM-int). A counter-model would be a local model with a light state that exists only in boxes above a certain size. The two max plans did not separate (TM') from (TM-int); this is the one soft structure that this file leaves undecided.
 
 I do not know a local reflection-positive lattice model in which (Phi-step) fails. For local quantum Hamiltonians without positivity no finite-size criterion can exist: the spectral gap problem is undecidable (GUIDE: Cubitt, Perez-Garcia and Wolf; recalled, not read here).
 
@@ -158,7 +160,7 @@ This is true and of order beta n^3. Theorem D needs Phi(n) < log 2. The bound ca
 
 For spin models with a continuous symmetry, a twist is spread over the whole torus and costs only a gradient energy. The lattice gauge measure has no continuous global symmetry. The deformations at hand multiply links by fixed elements h_l. By Lemma J the first-order cost of a plaquette is beta (1 - abar) (1 - product over corners of (1/2) tr k_c) >= 0, where k_c is the product of the h at the corner. It is zero only if every k_c is in the centre, that is, only if the deformation is a gauge transformation times a field with values in the centre. For an Abelian spreading of the flux pi over the plane (1,2), k_c = exp(i a_c σ_3) with a_c of order pi times a coordinate over n_1 n_2, and the cost is beta (1 - abar) times a sum of a_c^2 / 2. The sum is of order pi^2 |n| / min(n_1, n_2)^2. It grows with the size of the torus. For U(1) the same spreading is covariant and costs beta pi^2 n_3 n_4 / (2 n_1 n_2), which does not grow on symmetric tori. So first-order comparison sees the gauge potential of the deformation, not its field strength. It gives nothing that is uniform in the size.
 
-**Stop.** (Phi-step) failed in three ways: positivity (Proposition N: impossible), gluing (exact surface term), deformation (Lemma J: no covariant first-order comparison). The one exact next statement of this attempt:
+**Stop.** (Phi-step) failed in three ways: positivity (Proposition N: impossible without integer multiplicities; undecided with them), gluing (exact surface term), deformation (Lemma J: no covariant first-order comparison). The one exact next statement of this attempt:
 
 (FIT) There are n_0 and theta in (0, 1] such that for all n >= n_0: S(2n; (4n)^3) <= (1/theta) S(n; (2n)^3)^2 whenever S(n; (2n)^3) <= theta. In words: the thermal sum of the doubled box at the doubled time is at most a constant times the square of the thermal sum of the box.
 
@@ -221,5 +223,70 @@ Write U_l = s_l V_l with s_l = +-1 and V_l in a measurable section of SU(2) over
 u(SU(2), beta) = expectation over V of u(Z_2 with couplings beta J(V)), where V has the law with density Z_(Z_2)[beta J(V)] / Z.
 
 The odd-flux weight of SU(2) is the mean of the odd-flux weight of a Z_2 gauge theory in a random SO(3) environment (Mack and Petkova, GUIDE, use this splitting for Wilson loops). For the group Z_2 the environment is trivial and J = 1. For SU(2) the environment can make J_p small and can change its sign. This is the place where Fact T acts: a twist of the SO(3) field costs no classical action. No bound follows from the identity alone.
+
+## 5. The leads (a) to (d), and the verdict
+
+**Lead (a), the twist ratio and the Tomboulis-Yaffe inequality.** Its exact form here is C2 with Theorem F and Proposition T. The inequality holds for every group. Its premise is the confinement half of the crux. A premise taken from a Migdal-Kadanoff comparison does not pass test (ii): that recursion drives U(1) to strong coupling in four dimensions as well (RECALLED; this is the objection of Ito and Seiler to the argument of Tomboulis, known here from the digests only).
+
+**Lead (b), seed and doubling.** The answer has three parts.
+
+1. What a seed gives is exact: Theorem D (two tori, one doubling), Proposition R (exponentially many scales, with the constant f), Theorem F (all multiples in the two directions of the sheet).
+2. The step that carries a seed to all scales is (FIT) for the gap and (TUBE') for the flux. It does not follow from positivity (Proposition N). For true traces it is undecided (Remark N2). Run 1's argument at its line 128 and run 2's no-go in its Section 1.5 exclude a step without a threshold; they do not exclude a step below a threshold.
+3. U(1) does not fail at the step. It fails at the seed: Phi >= 0.04 at every size, and u is near 1/2 on square tori at weak coupling. (TUBE) fails for it on thin sections only.
+
+A guess about the sigma model, whose preprint nobody here has read: the O(3) model has a continuous global symmetry, so a twist can be spread by a covariant deformation, and first-order comparison then gives a true lower bound for a twisted partition function (the Mermin-Wagner comparison). Lower bounds for partition functions of larger tori are what positivity lacks. The gauge theory has no such deformation (Lemma J). If the doubling step of the preprint uses the symmetry in this way, it does not transfer to the gauge theory.
+
+**Lead (c), two-scale disintegration.** In two dimensions the plaquettes are independent after an axial gauge fixing, so the two scales are one plaquette and a product measure. In four dimensions the Bianchi constraint ties the plaquettes of every cube. A two-scale criterion then needs a small coupling between the scales, and that is a mixing statement of the kind of (W). I see no new handle (abstract only).
+
+**Lead (d), logarithmic Sobolev inequality and mixing.** It is an equivalence between two forms of one hypothesis. It could carry (W) to a uniform Poincare constant, and so toward (HS-sup). It is not a mechanism.
+
+**Verdict.**
+
+1. I found no statement of the crux that is weaker than the gap and still closes the tree. I found no exact tool in which the group acts at couplings of order one. The exact tools of this lane are: positivity of the transfer operators in four directions, the centre flips, reflection positivity, first-order comparison, and the finite-box criterion. Each holds for every compact group with a central Z_2. The group enters through Fact T, which is used at weak coupling in the twisted chart, and through Fact B, which no exact inequality uses.
+2. Run 1's third test says the same from outside: SU(2) with an adjoint Higgs field has the centre, reflection positivity and Fact B, and it has a phase with a photon (RECALLED there). So a proof must use the pure Wilson form at a quantitative step at couplings of order one. I know no method by hand for such a step. This agrees with the verdict of both max plans.
+3. What this run adds is on the soft side. Each half of the crux has an exact finite form, a proved criterion and one named step. The one new question is Remark N2: is the step a consequence of positivity with integer multiplicities and the symmetry of the four directions? It costs little to decide and nobody had separated it.
+4. A proof of (FIT) would still leave the seed. The seed is one inequality between two partition functions at the scale of the correlation length. The rate filter forbids a seed at a perturbative scale, and no method by hand computes a number at couplings of order one. The gain over (W) would be this: the seed is a statement about periodic tori with no boundary values, and by Theorem D (f) a run can measure it from plaquette averages. A run is a guide and not a proof.
+
+**What changes in the plan (the author's reading; the lead decides).**
+
+- The tree can carry C1 as a third conditional form next to (W) and (DOM_B): "(Phi-dec) in scaling form gives a gap of periodic boxes that is uniform in physical units" (Theorem D and Corollary D2 with rates c a(beta)). It needs no complex coupling and no free walls. It is a form of the hypothesis and not a reduction of it: it is as strong as the gap with confinement.
+- Order of work that I recommend: item 1, then item 2, then item 3 of Section 6. Items 4 and 5 only if the lead has spare capacity.
+- I do not recommend another restatement run before one of these exists: a correlation inequality of Griffiths type for SU(2); a dual representation with positive weights; a covariant first-order comparison (a way around Lemma J); or a positive answer to item 2.
+
+## 6. Part 3: status block (final)
+
+**Proved here by hand. Not checked by another model.** Inputs: (TM) and (TM-c) (rows 667, 671; run 2, Lemma 1'), Lemma A (run 2, Lemma 1).
+
+| Statement | Content | Section |
+|---|---|---|
+| Theorem D | Phi(n) = 16 F(n^4) - F((2n)^4) bounds the thermal sum, the gap, the count of states and the odd-flux weight of the box (2n)^3; Phi is an integral of plaquette differences | 3.1 |
+| Corollary D2 | (Phi-dec) gives a uniform box gap; (Phi-step) with one seed gives a uniform gap on dyadic boxes | 3.1 |
+| Proposition R | a seed for Delta reaches boxes of side n exp(mu n / 3), not infinite volume | 3.2 |
+| Proposition N, Remark N2 | (Phi-step) does not follow from positivity; in the integer family it holds with K = 1 | 3.3 |
+| Lemma J, seam bound | exact first-order value of a deformed or glued plaquette; Phi(n) <= beta (192 n^3 - 96 n^2)(1 - abar_n) | 3.3 |
+| (FIT) closes C1 | implication, by induction | 3.3 |
+| Theorem F | v = Z_odd exp(-f abs(n)) obeys v(ja, kb) <= v(a, b)^(jk); a seed v < 1 gives area decay of the odd-flux weight on all multiples; the alternative (e) | 4.1 |
+| Proposition T | (TUBE), a bounded Delta and one seed give (FLUX-4) on dyadic symmetric tori | 4.3 |
+| Identity 4.4 | the odd-flux weight of SU(2) is a mean over SO(3) environments of the odd-flux weight of a Z_2 theory | 4.4 |
+
+**Failed, and why.**
+
+- (Phi-step), in the form (FIT): positivity alone cannot give it (Proposition N); gluing pays the exact surface term beta (1 - abar) per seam plaquette; no deformation other than a gauge transformation times a centre field is free at first order (Lemma J).
+- (TUBE), in the form (TUBE'): the odd-flux weight is not a trace in the transverse directions; reflection positivity across the section gives only a cost per plaquette of the stack; deformation fails by Lemma J. At Gaussian order (TUBE) is false for U(1) on thin sections (estimate, not proved).
+
+**The one exact next statement of each attempt.**
+
+- Attempt 1: (FIT) of Section 3.3. Before it, the question of item 2.
+- Attempt 2: (TUBE') of Section 4.3 on tori with a square section.
+
+**Not done.** No numeric job was started. The bodies of `gap-zf-box-x.md`, `gap-zf-box-s.md` and `gap-ac-lat.md` were not read. The Gaussian estimates for U(1) (the photon bound 0.04, the value 0.41, the threshold 0.78 g) are estimates from recalled formulas; no proof uses them. The Tomboulis-Yaffe inequality is not rebuilt here; the area law in Theorem F and Proposition T is stated for the odd-flux weight, and for Wilson loops only through that GUIDE.
+
+**Proof items for the medium workers.**
+
+1. `gap-defect-check` (worker 2, check). Check line by line every row of the table above. Inputs: the statement of (TM) in `library/gap-transfer.md` and its check; `gap-skeleton-max-b.md` lines 241-256. Read: Sections 1, 3, 4 of this file. Points that carry weight: Theorem D (e) uses that the top eigenvector is even under the centre flips; Theorem F (a) uses (TM-c) for both directions of the twist plane; Theorem D (c)-(e) use integer multiplicity.
+2. `gap-int-class` (worker 1, proof). Statement: let Z be a function of the sides that is symmetric and has (TM-int) in each direction (Section 3.3). Prove or refute: there are theta > 0 and n_0, which may depend on Z, with (FIT). Start in two dimensions, where the class is Z(a, b) = Z(b, a) = sum of lambda_i(b)^a with integer multiplicities, and (FIT) reads S(2n; 4n) <= (1/theta) S(n; 2n)^2. Known here: the class is closed under sums and products; a single extra state forces lambda(b) = q^b (from 1 + lambda(b)^a = 1 + lambda(a)^b); the integer gases satisfy the step. A refutation is a table of spectra, consistent with the symmetry for all sizes, with a light state that first appears at one size. A proof must name the step where integer multiplicity is used. If it is refuted, the missing input is locality and not integrality, and the soft side is closed. Read: Section 3.3 here; run 2, Section 1.5.
+3. `gap-defect-guide` (guide run, under the numeric lock). Compute Phi(n; beta) by Theorem D (f) from plaquette averages on the tori n^4 and (2n)^4 for n = 3, 4, for SU(2) at beta from 0 to 2.6 and for U(1) at beta from 0 to 1.2. Write the pass and fail criteria first. Prediction for SU(2): Phi(n; beta) stays below log 2 up to a coupling that grows with n. Prediction for U(1): Phi rises above log 2 near beta = 1.0 and stays there. The plaquette difference must be known to better than 0.1 / (96 n^4 beta). What the run can show: at which sizes a seed exists, and if Phi(2n) <= K Phi(n)^2 holds in the data. It can show no proof step.
+4. `gap-tube-test` (worker 1, proof, then guide). Decide (TUBE') on tori (a, b | c, c) in the strong-coupling disc: expand both sides in polymers and find the sign of the first order at which they differ. Then a run on the smallest tori at beta between 1.5 and 2.5. Consumer: Proposition T. Low priority: (TUBE') is needed at every scale.
+5. `gap-defect-sc` (worker 1, proof). Prove Phi(n; beta) <= C n^3 (beta / r_1)^(4n) for 0 <= beta <= r_1 with explicit C and r_1, for periodic tori (the periodic form of Theorem SC; the exponent 4n is the smallest tube that winds once). Consumer: the base of C1, and a cross-check of Theorem D against kappa_0 = 4 log 2. Low priority.
 
 <!-- END -->

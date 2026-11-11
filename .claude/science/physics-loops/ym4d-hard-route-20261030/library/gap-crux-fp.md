@@ -13,8 +13,8 @@ Author run of Claude Fable 5.2 (model id claude-fable-5-2, max effort), Mac mini
 
 - Part 1 (first principles): done (Section 1). Proved there: P1 (the seed torus is at least 7.4 by 14.8 correlation lengths), P2 (the seed forces Z^tw/Z > 1 - 1/825). Conclusions C1 to C6.
 - Part 2 (assumptions): done (Section 2). 29 assumptions in six groups, ranked in 2.7. Lemma 2.A: the glue half alone has no symmetric function, so Theorem S needs the flux sectors.
-- Part 3 (compare): not started.
-- Part 3b (tool blockage): not started.
+- Part 3 (compare): done (Section 3). New against the earlier work: the ranges where the tests bind, the N-test and the dimension test, Lemma 2.A, the form (C).
+- Part 3b (tool blockage): done (Section 3b). 22 methods listed with reasons. Propositions T1 to T3: the worded U(1) and K7 tests are false, the valid form is proved, and below beta of about 1 the tests forbid nothing. Two verdicts are too strong in that range; one tool comes back (conditioning on one direction).
 - Part 4 (attempts): not started.
 
 ## 0. What was read before Part 1 (the row's reading rule)
@@ -177,4 +177,127 @@ Written after Part 1 and before the attack files were opened. Each line: the ass
 8. **c5, c6** (one beta at a time, one tool).
 9. **f** (the rules). Small effect on R1, none on R2.
 10. **b2, b3, b4.** Needed by the method; no gain from a change.
+
+## 3. Part 3: compare with the earlier work
+
+Read for this part: `library/gap-mid-max.md` Sections 2, 5, 9, 10; `library/gap-skeleton-final.md` 13.11, 13.12; `library/gap-crux-restate.md` Section 4 (the flux half, to avoid a duplicate). Grep of `library/gap-*.md` and `library/prior/gap-*.md` for the key words of Parts 1 and 2.
+
+| Item of Part 1 or 2 | Already in the earlier work? | Where |
+|---|---|---|
+| P1, the seed torus is at least 7.4 by 14.8 correlation lengths | Used as a guide (10.4 to 12 inverse masses from a gas model); the one-line bound is not stated | 13.11; row 706 |
+| P2, the seed forces the twist ratios near 1 | **Yes, and stronger:** Identity FL, 1 + S = (1 + S_0)/(1 - U) | `gap-mid-max.md` Section 6 |
+| P3, the seed as a pressure; the size n(beta) | Yes. Row 706 finds larger boxes than my estimate: n = 10 at beta = 2.30, n = 24 at 2.60. Use those numbers, not mine. | 13.11 |
+| P4, the smallest object is two free energies | Yes | Theorem D, D-shape, Proposition Delta |
+| (A) and (B): the step is blind, the group must enter in the base | Yes ("the fall has to come from the group") | 13.11 |
+| Tests U(1), Z_2, K7 | Yes | `gap-mid-max.md` Section 2 |
+| **N-test and dimension test** | **New.** No file names SU(N >= 5) or five dimensions. | - |
+| (C), the seed on a physical torus, uniform in the spacing | Not found in the passages read. The target (GAP) of the final skeleton is a continuum statement; the files of rows 697 to 710 work at fixed beta. To be checked against 13.8 to 13.10 before use. | - |
+| 1.4.2, a gap fails only by a massless level or a second vacuum | Yes in substance | Theorem CRIT, "What it says" |
+| 1.4.3, the continuous centre symmetry of U(1) and its Goldstone mode | Yes | run 2, `gap-skeleton-max-b.md` line 114 |
+| 1.4.5 and 1.4.6, "the flow goes one way"; step scaling | Yes | run 2, A5 (STEP); (CAS) |
+| **C1, C2, the split R1 / R2, and "in R1 the tests forbid nothing"** | **New as a statement.** Theorem DOB's remark (3) accepts a group-blind tool at small beta; no file says where the tests start to bind. | Part 3b gives the ranges |
+| C6, the valid form of the tests | Partly. 13.12 says "cannot give the seed at every coupling". The digests use the stronger form ("NO as an SU(2)-true/U(1)-false input"). | Part 3b |
+| a2 with Lemma 2.A (the glue half has no symmetric function) | **New** | - |
+| b3, a twist in the plane (3,4) keeps Lemmas K, X, E for the pair (1,2) | In substance yes: Remark F3 of `gap-crux-restate.md` 4.3 | - |
+| c4, a comparison across couplings | Yes in another form: Theorem TR carries the seed along beta on one box, given (VIR_K) | `gap-mid-max.md` Section 4 |
+| c5, "no first critical point" | **Yes:** Theorem CRIT and (NOCRIT) | `gap-mid-max.md` 5.1 |
+| c6, the seed is two statements | Yes | Identity FL |
+| d3, more tests are needed | New (N-test, dimension test; and Part 4 adds a test that rests on a theorem) | - |
+| e6, both series are numerically good up to the crossover | Not found | - |
+| f, the rules do not block R2 | Not found as a statement | - |
+
+**Reading.** The earlier work had most of the structure: the split of the seed, the first critical coupling, the tests U(1) and K7, and the remark that the Wilson weight is log-linear in x. What Parts 1 and 2 add: the ranges in which the tests bind; two more tests; Lemma 2.A; and the form (C).
+
+## 3b. Part 3b: the tool blockage
+
+### 3b.1 The methods that were set aside, and the reason given
+
+From the files of Part 3 and the digests `prior/gap-crux-lit-2.md` (synthesis, C1, "Routes bounded"), `prior/gap-crux-lit-cross.md` (synthesis), `prior/gap-crux-lit-nonab.md` (synthesis), `prior/gap-seed-lit.md` (final synthesis). The digests were read at their synthesis sections only.
+
+| # | Method | Reason given | Kind |
+|---|---|---|---|
+| 1 | Correlation inequalities of Griffiths type (Griffiths, Kelly, Sherman; Ginibre) | They hold for Z_2 and U(1), where the seed fails | U(1) |
+| 2 | Dual forms with positive weights (surfaces, currents) | The same | U(1) |
+| 3 | A monotone quantity along the scale (the deficit kappa; (CAS); step scaling) | It exists for every group; strictness restates the seed | restates |
+| 4 | Derivative in beta, (VIR_K) and (DEF_K) | Three ways failed: the pointwise constant is off by a factor 8; the locality constant depends on the gap; convexity bounds second derivatives | gap; wrong quantity |
+| 5 | Curvature: Bakry and Emery (Shen, Zhu and Zhu; (BE-block)) | The tensor is negative above beta = 1/3 at an explicit configuration; published range beta < 1/48 in four dimensions | small number; K7 |
+| 6 | Dobrushin's condition on one link (Theorem DOB; `gap-zf-box-x.md`) | alpha = 18 beta < 1; with the sharp one-link bound about 0.10 | small number |
+| 7 | Cluster expansion (Osterwalder and Seiler; `gap-seed-sc.md`) | beta < 1/12800 in the written form | small number |
+| 8 | Zeros of Z in complex beta, continued along the coupling | The zero-free radius shrinks like a power of the gap; the continuation ends at a finite coupling | gap |
+| 9 | Polchinski flow and two-scale logarithmic Sobolev criteria (Bauerschmidt and Bodineau; Otto and Reznikoff) | A Hessian bound at every scale is needed; it would not tell U(1) from SU(2) | U(1); unverified |
+| 10 | Migdal-Kadanoff bounds (Tomboulis) | An unproved inequality (Ito and Seiler); the argument would also confine U(1) | U(1) |
+| 11 | Simon and Lieb; Aizenman and Simon (gap above the mean-field temperature for N-component ferromagnets) | A spin system; it includes O(2), so "NO as an SU(2)-true/U(1)-false input" | U(1) |
+| 12 | Infrared bounds (Frohlich, Simon and Spencer) | They prove order, not decay | wrong quantity |
+| 13 | Durhuus and Frohlich: gauge theory in d dimensions against the sigma model in d - 1 (run 1, B8) | The comparison model orders at large beta; a comparison across two dimensions is open | large beta |
+| 14 | Loop equations and bootstrap (Kazakov and Zheng; (BOOT_eps)) | Numerical optimisation; bounds for local observables, not for two volumes | rule f; wrong quantity |
+| 15 | Twist ratios: Tomboulis and Yaffe, Kanazawa; (TUBE'); the Z_2 splitting of Mack and Petkova | The premise is open at the needed coupling; "no bound follows from the identity alone" | open |
+| 16 | Finite-size criteria for frustration-free chains (Knabe; Lemm and Mozgunov) | Another setting; excluded by the rate filter | setting |
+| 17 | Exact duality in three dimensions (Gopfert and Mack) | Abelian only | setting |
+| 18 | Small-volume spectrum (Luscher; Koller and van Baal) | Small volume only | setting |
+| 19 | Curvature of the orbit space (Singer; Mondal) | Heuristic; depends on a regulator | unverified |
+| 20 | Random-cluster sharpness for gauge models (Duncan and Schweinhart) | Potts gauge models only | setting |
+| 21 | Mixing hypotheses on a box, (W), (DS-tw) (row 691) | A hypothesis; no verification at order one | open |
+| 22 | Large N (Kopper for O(N)) | N must be large | small number |
+
+### 3b.2 First principles: what a tool must do
+
+**From the definitions.** By Theorem D-shape (13.11) the seed is 2 F(a, B) - F(2a, B) <= log(1 + t), about 6 x 10^(-4) at r = 2. Each F is of the order of the volume, 6 beta a abs(B) at most. So a tool must control the difference of two extensive quantities to an absolute error of 6 x 10^(-4). A bound on each term cannot do this. Only two kinds of statement can:
+
+- (i) **locality**: the difference is a sum over places of responses to a far change, and each response is exponentially small in the distance (Lemma M and Proposition MIX of `gap-mid-max.md` are this form);
+- (ii) **an identity** that removes the extensive part exactly.
+
+Every method of the table that proves something is of kind (i): it proves a contraction at the lattice scale (lines 5, 6, 7, 9, 22) and so needs a small number at that scale. The methods of kind (ii) (lines 3, 4, 12, 14) give a sign or a bound on the wrong side. This is the blockage in one sentence: **a contraction is known only at the scale where it is visible in one step, and no identity is known.** A contraction at a larger scale is an induction over scales, and its base step is a computation with no small number.
+
+**The least that a tool must use, by range.** The tests give this as a list of models in which the seed fails at every size. A tool must use a property that fails in each of them. The marks say how each failure is known.
+
+| Model where the seed fails | Known how | What the tool must use | From which beta of the Wilson SU(2) axis the test binds |
+|---|---|---|---|
+| U(1) Wilson at large beta | THM, RECALLED (F8) for large beta; numerics for beta > 1.01 | the group is not abelian | about 1.01 for a tool that sees the weight only on a maximal torus (Proposition T3) |
+| Z_2 at large beta | THM, RECALLED (F9) | the group is connected (flux half only) | about 0.44 for a tool blind to the difference of SU(2) and its centre |
+| Mixed weight K7 on its line | GUIDE (numerics) | the weight is not too convex in x | about 1.6 for a tool that sees only the oscillation of log w; about 3.9 for one that sees only its Lipschitz constant in x (numbers in 3b.3) |
+| Weight exp(beta ((1+x)/2)^p), p large | THM (van Enter and Shlosman; Proposition V of Part 4) | the same; and: a single well is not enough | large (of the order of log p) |
+| SU(N) Wilson, N >= 5 | GUIDE (numerics) | N <= 4; for SU(2), that the group is a round sphere | at the bulk transition |
+| SU(2) Wilson in five dimensions | GUIDE (numerics) | the dimension | about 1.6 |
+
+So below beta of about 1 no test asks anything of a tool. Above about 2 a tool must use all of: a non-abelian connected group, a weight close to log-linear in x, N <= 4, dimension at most four. No single exact property does it. In particular the remark of 13.12, "a proof must use the Wilson weight itself, which means its loop equations", is too narrow in two ways. First, the family exp(beta ((1+x)/2)^p) contains the Wilson weight at p = 1 and has a transition at large p, with every qualitative property of the Wilson weight except linearity (single well, monotone in x, positive characters, same continuum limit). So what a tool must use is a bound on the non-linearity, a number, not a qualitative property. Second, the loop equations are not the only place where the linearity of the weight is used: see line 12 in 3b.4.
+
+### 3b.3 The two tests: what is valid, what is not
+
+A model of the class: a compact group, a positive class function w as one-plaquette weight with non-negative character coefficients, a dimension, a coupling. Seed(M) means: there is a >= 3 with S(a; (2a)^3) below the threshold of Theorem SH. A tool is a hypothesis H on models together with a proof of "H(M) implies Seed(M)" for every model M of a class that contains SU(2) Wilson.
+
+**Proposition T1 (the valid form; PROVED, it is logic).** If M' is in the class of the tool and Seed(M') is false, then H(M') is false. So a tool is refuted by one model in its class with H true and the seed false. It is not refuted by a model with H true and the seed true, and not by the fact that its proof also runs for that model.
+
+**Proposition T2 (the worded form is false; PROVED by two examples).** "A tool that also holds for U(1) (or for the weight of K7) cannot give the seed" is false. Example 1: Theorem DOB. Lemma DC is blind to the model, and Lemma INF holds for U(1), for Z_2 and for the mixed weight with the oscillation of the one-link exponent in place of 4 s. The tool gives the seed for SU(2) at beta < 1/18. Example 2: the cluster expansion of `gap-seed-sc.md`. Both are sound because their hypothesis fails for U(1) at every coupling where the U(1) seed fails.
+
+**Proposition T3 (the range form; PROVED GIVEN the failure of the seed in the comparison model).** Let H be blind to a difference of two models: H(M at coupling beta) implies H(M' at coupling beta). Then the tool proves nothing for M at any beta at which Seed(M') fails. Proof: T1. Three uses:
+
+- *Blind to the group beyond a maximal torus.* On a maximal torus the SU(2) Wilson weight exp(beta cos phi) is the U(1) Wilson weight at the same beta. Lemma INF is blind in this sense. Such a tool ends below beta_U := the smallest beta at which the U(1) seed fails at every size. RECALLED theorem (F8): beta_U is finite. GUIDE: beta_U is about 1.01.
+- *Blind to the weight beyond its oscillation.* At the end point of the K7 line, (beta_F, beta_A) = (1.48, 0.90), log w = beta_F x + beta_A (4 x^2 - 1)/3 has its minimum at x = -3 beta_F/(8 beta_A) = -0.617, value -0.756, and its maximum 2.38 at x = 1. The oscillation is 3.14, which is that of the Wilson weight at beta = 1.57. The Lipschitz constant in x is beta_F + 8 beta_A/3 = 3.88. (GUIDE values of the end point; the arithmetic is by hand.)
+- *Blind to the dimension, or to N.* The tool ends below the transition of the five-dimensional model, or of SU(5).
+
+**Corollary (what the tests forbid).** A tool whose hypothesis is a number computed from the one-plaquette weight and the incidence numbers of the lattice (Dobrushin, Bakry and Emery, cluster expansion: lines 5 to 7) is sound, and the tests bound its range by about beta = 1 (U(1)) and 1.6 (K7). These tools stop at 0.1 to 0.33 for their own reasons, far below the bound of the tests. So in R1 the tests explain nothing. What stops the tools there is the size of their constants.
+
+**Standing of the two tests.** The U(1) test rests on a theorem only at large beta. Test K7 rests on numerics. Proposition V in Part 4 gives a test of the same kind that rests on a published theorem.
+
+### 3b.4 Each verdict: what it assumes, and what follows if it is wrong
+
+| # | The verdict assumes | Valid? | If wrong, or what is left |
+|---|---|---|---|
+| 1, 2 | The tool is the mechanism by itself, at every beta | Valid above beta_U. Moot: no such inequality or dual form is known for SU(2). | Nothing to bring back. |
+| 3 | Monotone is not strict | Valid. | - |
+| 4 | The constant is needed at the same box and coupling | Valid as computed there; I did not re-derive it. | The form (VIR-log) stays; row 710 owns it. |
+| 5 | The criterion is pointwise in the configuration | Valid in that form (Proposition BE is a counterexample, not an estimate). | An averaged form is a mixing hypothesis (row 691). |
+| 6, 7 | The small number is the bare beta, and all 18 neighbours of a link count | **Too strong for the flux half.** By conditioning on all links but those of one direction (the idea of line 13), the flux half needs a contraction with 6 neighbours, not 18. | Part 4, Attempt 2: Proposition TW proves the flux half for beta < 1/6. |
+| 8 | The radius depends on the gap as a power | Valid as reported; not re-derived. | - |
+| 9 | A Gaussian reference measure with scales exists | Valid: Haar measure is a product, so there is no flow to integrate. The remark "it would not tell U(1) from SU(2)" is the worded test and adds nothing. | - |
+| 10 | - | Valid at large beta by T1 (U(1) fails there). | - |
+| 11 | The input must be false for U(1) | **Not valid in R1** (T2). The true obstacle is another one: in a gauge theory the spin model appears only after conditioning, with a background gauge field, and the inequalities of Aizenman and Simon need ferromagnetic couplings. | Dobrushin's estimate is uniform in the background and replaces them: Part 4, Attempt 2. Open: a gap above the mean-field temperature, beta < 2/3, uniformly in a background (statement (AS-bg) there). |
+| 12 | The quantity bounded is on the wrong side | Valid. But the method deserves a line: Gaussian domination is the one classical tool whose proof uses exactly the linearity of the Wilson weight in the coordinates of R^4 (x_p = 1 - (1/2) abs(u - u')^2 for a time-like plaquette in temporal gauge). Its proof fails for the weight of K7 and for the weights of Proposition V. It holds for U(1), Z_2 and every SU(N). It gives the mean plaquette at least 1 - 2/beta (RECALLED method of Frohlich, Simon and Spencer; the gauge form is not proved here). | It passes K7 "the right way" and fails the U(1) test and the N-test. So it cannot be the mechanism. It shows that the loop equations are not the only carrier of the weight. |
+| 13 | The tool is used at large beta | **Not valid in R1.** | Part 4, Attempt 2. |
+| 14 | Rule f | Valid under the rule. | - |
+| 15 | - | The flux half is open at order one. | Part 4, Attempt 2 gives a second exact form of it (Identity L). |
+| 16 to 20, 22 | The setting differs | Valid. | - |
+| 21 | - | A hypothesis, not a tool. | - |
+
+**Summary of 3b.** No verdict that matters at a correlation length above one lattice unit is wrong. Two verdicts (lines 11 and 13) and the reading of lines 6 and 7 are too strong below it: they discard a tool by the worded U(1) test or by its failure at large beta, in a range where neither applies. The tool that comes back is the conditioning of Durhuus and Frohlich with Dobrushin's estimate. It goes to Part 4.
 

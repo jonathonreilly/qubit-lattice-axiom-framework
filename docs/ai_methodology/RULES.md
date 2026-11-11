@@ -61,9 +61,10 @@ Standing is computed from records. Nobody writes it by hand.
 3. **Never fabricate.** No invented log, number or pass. No prefactor tuned to
    a comparison target. A test's expected value is justified independently of
    the code it tests.
-4. **Predictions are declared first.** State criteria and uncertainty before
-   looking. Anything else is a fit or a post hoc match and is labelled so;
-   disclose prior exposure to the target.
+4. **Predictions are not fits.** Keep predictions apart from calibration,
+   fitted inputs and post hoc matches. Declare comparison criteria and
+   uncertainty before looking at the result where possible; disclose prior
+   exposure when not.
 5. **Exact claims need exact statements.** Domain, quantifiers, edge cases and
    a proof or exhaustive certificate. Numerical agreement proves no general
    theorem.
@@ -192,8 +193,8 @@ lanes, PRs and passes written are not progress.
   writes and checks; nobody edits one by hand.
 - Budgets: this file 200 lines, `AGENTS.md` 30, a procedure's core 150 with
   its mechanics in scripts. Adding past a budget means removing something.
-- Settings carry a date. Each campaign ends with one short retrospective:
-  what was measured and what stays. A rule or procedure that caught nothing in
-  two campaigns is removed by PR.
+- Settings carry a date. Each campaign ends with one short retrospective: for
+  each process change in force, what was measured and whether it stays.
+  Revert by PR what did not help.
 - Platform instructions are outside this repository. Report conflicts with
   them; never claim to override them.

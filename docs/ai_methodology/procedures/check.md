@@ -51,9 +51,8 @@ bridge, and at assembly. An author's own skeptic pass writes no record.
 
 ## The record
 
-One file per check, `checks/<statement>-<commit>.md` (twelve hex digits; if
-the name is taken append `-b`, `-c`). Never edit a pushed record. Front matter
-is flat `key: value` lines; `text` and `reads` are lists of `  - ` lines.
+One file per check, `checks/<statement>-<commit>.md` (twelve hex digits; add
+`-b`, `-c` if taken), never edited once pushed. Front matter is flat lines.
 
 ```text
 ---
@@ -76,20 +75,21 @@ steer: advance <consumer>|no-advance|none
 
 `lab_ops.py check-hash` prints the `content`, `text` and `reads` lines. A hash
 is SHA-256 of the file, or with `#<heading>` of that section up to the next
-heading of equal or higher level. `text` is the statement and its argument;
-`reads` is every premise, lemma, number, log and runner it reads, each led by
-its statement name or `-`. `author` is the `Provenance` of the commit that
-last changed `text`. `answers` names another record whose verdict this one
-tests directly, by a path neither side used. `steer` is the steering note
-(`advance`: yes to questions two and three), never standing. Body:
-`## Finding` (required unless `right`), `## Not run`, `## Steering`.
+heading of equal or higher level; the heading must occur once. Names have no
+spaces. `text` is the statement and its argument; `reads` is every premise,
+lemma, number, log and runner it reads, each led by its statement name or `-`.
+`author` is the `Provenance` of the commit that last changed `text`. `answers`
+names a record whose verdict this one tests directly, by a path neither side
+used. `steer` (`advance`: yes to questions two and three) is never standing.
+Body: `## Finding` (required unless `right`), `## Not run`, `## Steering`.
 
-`lab_ops.py status` computes standing. A record counts while every `text` and
-`reads` hash matches the checkout, `checker` and `author` sessions differ, and
-no counting record `answers` it. A `right` and a `wrong` together leave the
-statement `argued`, shown as disputed, until a third path answers one. Else a
-`wrong` with a counterexample gives `refuted`, any other `wrong` gives `open`,
-and a `right` gives `checked`, naming what it rests on that is not.
+`lab_ops.py status` computes standing. It rejects, by name, a record with a
+missing field, one session on both sides or a wrong `content`; a rejected
+`wrong` still blocks `checked`. A record counts while every hash matches the
+checkout and no live record `answers` it. `right` and `wrong` together leave
+the statement `argued`, shown as disputed; else a counterexample gives
+`refuted`, another `wrong` gives `open`, and a `right` gives `checked`, naming
+what it rests on that is not, circles included.
 
 ## Obstructions
 
@@ -107,12 +107,12 @@ the same residual. An obstruction that a relabelling, a convention or a
 published route removes is not the physical one claimed.
 
 Interim rule. The N1 to N8 packet is a checker's aid: prompts, never a verdict.
-Until the validators change it stays a requirement of `land` (answers committed
-with the note; five N5 lines in the runner's cached output, checked by script)
-and `audit` (the structured packet and its five-route quota). A check neither
-writes nor grades it: never `wrong` for a missing or short packet, never
-`right` for a passing one, never an invented route family. Note its state
-under `## Steering`; a packet that cannot meet the schema stays pending.
+Until the tooling changes it stays required by `land` (answers committed with
+the note; five N5 runner-output lines, checked by script), by `audit` (the
+packet and its five-route quota) and, in prose, by the older `no-go-discipline`
+skill. A check neither writes nor grades it: never `wrong` for a missing or
+short packet, never `right` for a passing one, never an invented route family.
+Note its state under `## Steering`; a packet failing the schema stays pending.
 
 ## At assembly
 

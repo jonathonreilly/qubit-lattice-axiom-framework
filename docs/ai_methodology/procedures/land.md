@@ -14,8 +14,9 @@ section 1). Reviewers are the landing-reviewer rows in `SETTINGS.md`.
 
 ## Takes
 
-- The request: target, focus, iteration cap (default five), and whether it is
-  review only. No named target or set means ask; a drain is never the default.
+- The request: target, focus, iteration cap (default five), review only or
+  not. A bare `review-loop` invocation keeps its older meaning, the default
+  set in `LANDING.md`; any other request naming no target or set means ask.
 - A unit: one coherent argument in one PR or several dependent PRs, each with
   its number, head commit, declared base, merge base and original delta.
 - No drafts, and no owner-reserved content or anything a descendant inherits
@@ -83,12 +84,11 @@ section 1). Reviewers are the landing-reviewer rows in `SETTINGS.md`.
    restore generated audit outputs. On failure land nothing, keep the log and
    retry units singly in dependency order without guessing a culprit.
 9. **Push.** Re-verify every frozen head, that `main` is the gated base and
-   that the tree is the gated tree, then run the landing loop in the
-   `LANDING.md` reference. It pushes the candidate and proves the landed
-   commit is contained in `origin/main`. If `main` moved, rebuild and gate
-   again. Write on each carried PR what it carries, what it left out and where
-   that is kept. The owner has decided a landed PR should show as merged
-   (`SETTINGS.md`, PR state); the loop and its contract check change first.
+   that the tree is the gated tree, then run the landing loop in `LANDING.md`:
+   it pushes the candidate and proves the landed commit is in `origin/main`.
+   If `main` moved, rebuild and gate again. Write on each carried PR what it
+   carries, what it left out and where that is kept. A landed PR is to show
+   as merged once the loop and its contract check change (`SETTINGS.md`).
 10. **Close out.** Check on `main` that each PR's carried content matches its
     map; containment alone is not coverage. Run the salvage pass before
     closing anything unmerged, hygiene and tooling PRs included; close it with

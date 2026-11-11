@@ -26,8 +26,8 @@ fetched from the URL of the row at revision `1eb15ac428`, read in full).
 | 0 record, closed list | done | open and closed lists written; own literature pass, since the lane's digests are closed |
 | 1 wall twice | done | no blind check ran (no subagents) |
 | 2 inventory | done | ten source notes (2.A), the lane's statements (2.B), beliefs (2.C), one table (2.D) |
-| 3 reason up | not started | |
-| 4 assumptions | not started | |
+| 3 reason up | done | C1 to C9: no proved case without exact closure has a step in the size; base = sufficiency in all of them; F is vacuous as logic, its content is the far base |
+| 4 assumptions | done | 23 rows; first five: b2 (N fixed), c1+c2 (F and the far base), a2+a1 (periodic, global), c4+c3 (one-way, scalar), c6 (class-wide) |
 | 5 compare | not started | |
 | 6 filters | not started | |
 | 7 routes | not started | |
@@ -181,3 +181,91 @@ Marks: all rows are THM with the reading state of 2.A. "Scale" is the size at wh
 | A9' Migdal-Kadanoff model (recalled) | flow to strong coupling, D <= 4, SU(N) and U(N) | exact recursion | yes | **yes, exact** | yes | - |
 | A10 2D gauge theory, exact | all thermal sums explicit | independence of plaquettes | yes | **yes, exact** (Step 8, Proposition 2D) | yes | - |
 
+
+## Step 3. Reasoning up from the inventory
+
+Only the items of Step 2 are used. Marks are at the end of each item.
+
+### 3.1 What follows at once
+
+**F1 (the count).** In table 2.D a (STEP) in the size occurs in four rows: A2, A9', A10, and the second layer of A6. In A2, A9' and A10 the integration over a block is exact and stays inside a family with one function (the plaquette weight); I call this *exact closure*. In A6 the step is for the gap of the dynamics, and its hypothesis is the equilibrium clustering. No row has a (STEP) for a quantity of a periodic system, in a model without exact closure, that is used to reach the clustering. *reading of 2.D; as strong as the reading states of A1 to A10.*
+
+**F2 (base equals sufficiency).** In every row where clustering is proved without exact closure, the criterion is verified at the scale at which it is applied, and that scale is at least one correlation length: the lattice spacing in A3 and A4 (there xi is below one spacing); the scale xi in A1 and A8, with a small number that is not the coupling at that scale (the monopole activity; 1/N); one finite size by exact computation in A5; and in A7 the criterion holds at some finite size by the definition of beta_c. *reading of 2.D.*
+
+**F3 (F is vacuous as a logical form).** Let a model of the class K have a seed at size N: s = S_w(N; (2N)^3) < 1/5041. Put Q(L) := S_w(D/2; L^3) with D as in Corollary S3'. Then (BASE) holds at L = 2N, (STEP) holds in the form Q(2L) <= 5041 Q(L)^2 for dyadic multiples of 2N, and (SUFF) is the seed. So every model with a seed fits F, with the base at the seed size. The content of F is therefore one clause only: **the base is at a size far below the seed size**, where the criterion fails. *argued, from L1.*
+
+**F4 (monotony in the coupling points the wrong way).** In A1 the correlation inequality carries the result from large beta (where the expansion works) to smaller beta. For SU(2) the seed is known at small beta (L12) and wanted at large beta. At a fixed lattice size n it is false for large beta: by L3 a seed at (n, s) needs n > 8.5/m, and the lattice gap m tends to 0 as beta grows (the rate filter of `gap-skeleton-final.md` L64; proved there with the account, unchecked). So the set of beta at which the seed holds at a fixed n is bounded. A statement "the seed at (beta, n) gives the seed at (beta', n) for beta' > beta" is false, and a statement in the other direction gives nothing new. Monotony can only be wanted along a curve n(beta) that grows like the correlation length, and that is the scaling statement itself. *argued, given the rate filter (unchecked) and L3, L12.*
+
+**F5 (a model that moves the wrong way blocks a class-wide step at that value).** Let Q be a function of the model and of the size. Let (STEP_x) be: "for every model of K and every L >= L_0 with Q(L) = x: Q(2L) <= sigma(x)", with sigma(x) < x. If one model of K has Q(L) = x and Q(2L) >= x at some L >= L_0, (STEP_x) is false. This is the refutation form of the skill's step 6c, applied to one value. Apply it to Q(n) = S(n; (2n)^3) and to the compact Gaussian model Z_R of L9, with R = rho/n. In the continuum form of L9, 1 + S = theta(1/(16 rho^2)) theta(4 pi^2 rho^2)^3 Pi, with Pi the oscillator product, which does not depend on rho. At the size 2n the same model has rho' = 2 rho. theta(A) = sum over P of exp(-A P^2) decreases in A. Let rho >= 1/2. For A >= pi^2: 1 <= theta(A) <= 1 + 2 exp(-A)/(1 - exp(-3A)) < 1 + 4 exp(-A) (P^2 >= 1 + 3(P - 1) for P >= 1). So theta(16 pi^2 rho^2)^3 >= 1, while theta(4 pi^2 rho^2)^3 <= (1 + 4 exp(-pi^2))^3 < 1.001. By Poisson summation theta(A) = (pi/A)^(1/2) theta(pi^2/A), so theta(1/(16 rho^2)) = 4 rho pi^(1/2) theta(16 pi^2 rho^2), with the last factor in [1, 1 + 4 exp(-4 pi^2)]. So the first factor doubles when rho doubles, up to a factor that differs from 1 by less than 10^(-15). Together: 1 + S(2n) >= 1.99 (1 + S(n)), and S grows. As rho runs over [1/2, infinity) the value S(n) runs over [s_1, infinity) with s_1 := S at rho = 1/2 (continuity in rho). Hence: **for every value x >= s_1 there is a model in K whose S(n; (2n)^3) equals x at one size and is larger at the doubled size.** No improving step for this Q can be proved from the properties of K at any value x >= s_1. *argued for the continuum formula, given L9; on the lattice the oscillator products at n and 2n differ by a factor that tends to 1 as n grows, which I did not write out; the number s_1 is a GUIDE (L9 gives inf over R of S = 3.1 at this shape, so s_1 is a few units).* For the value 1 the two-phase Ising model plays the same part (L9: S tends to 1; that it stays there at large sizes is recalled, Peierls).
+
+**F6.** By B2 (a belief) the thermal sum of SU(2) on a small torus is above 7. The seed is below 1/1650. So a flow of this Q from the base to the seed passes every value in between. By F5, at every value above s_1 and at the value 1, the step must use a property that the compact Gaussian model, or the two-phase model, does not have. *belief, because B2 is one; the logic is F5.*
+
+### 3.2 The least a solution must contain
+
+Any proof of T in the scaling form (a) is false for U(1) in four dimensions, so it uses the group; (b) is a statement about a box of at least 12.9 correlation lengths (L4), where the effective coupling is of order one (`gap-skeleton-final.md` L33-35); (c) by F2 it must verify a criterion at that scale. The proved cases offer four ways to do (c): a small number at that scale; exact closure; a correlation inequality together with a parameter; a two-sided control of the effective action down to that scale. By L11 the group enters through Fact T and Fact B only, and neither is a small number at the scale xi. *argued from F2, L4, L11; "four ways" is a reading of 2.D, not a theorem that no fifth exists.*
+
+### 3.3 The smallest object
+
+The smallest model where F fits is two-dimensional gauge theory (Proposition 2D, Step 8): the step is exact, and the wall does not bite. The smallest model in which the wall bites is, in my reading, the two-dimensional O(3) model on a periodic circle with the seed of Corollary S2 (`gap-crux-restate.md` L215): asymptotically free, no small number at the scale xi, no exact closure for the lattice model, and open (B4). I did not build it. *reading.*
+
+### 3.4 Where the result can come from; one problem or several
+
+Three problems, which A8 shows apart: (U) the ultraviolet flow down to the scale where the coupling is of order one, with two-sided control; (I) a criterion at a scale of order xi; (J) the join: the output of (U) lies in the class that (I) needs. In A1 one expansion does all three, because the dual variables are weakly coupled at every scale. In A8, (I) is proved with 1/N, and (U) and (J) are not proved. In the lane, the account is (U) down to its torus floor (L7); (I) is the seed; F is an attempt to do (I) and (J) together by one inequality that needs no control of the effective action. *reading.*
+
+### 3.5 Make the requirement less wrong
+
+(GAP) reads the clustering of the limit state on centre-blind local functions (Theorem EV-L (d), L2). (G_ev) and the three seeds are sufficient forms of it that are global (a trace over a sector of a periodic box). A3 and A4 prove the clustering locally, with no torus quantity. So "a torus quantity" is a choice of the lane (SUPPLIED), made because Theorem S is the finite criterion it found. The local finite criterion is the one with all boundary values (C3 of `gap-crux-restate.md` L66; A6 shows that for spin systems it is necessary as well as sufficient). *argued from L2; the last clause is from A6, read in part.*
+
+### 3.6 Price
+
+If no step exists, the missing input is one of three statements, which I cannot show equivalent: (P-a) one of the three seeds at one physical size, uniformly in the cutoff (the crux as the skeleton states it); (P-b) the all-boundary criterion at one physical size; (P-c) a two-sided bound on the effective action at an effective coupling of order one, good enough for a single-scale criterion (`gap-skeleton-final.md` L564). *open.*
+
+### 3.7 Conclusions
+
+- **C1.** No proved case without exact closure uses a (STEP) in the size to reach clustering. (A1 to A10; reading.)
+- **C2.** Where a (STEP) is proved, it is exact closure (A2, A9', A10), or it takes the clustering as its hypothesis (A6, second layer).
+- **C3.** In each proved case the criterion is verified at its own scale: base = sufficiency. What does it: a small number at the lattice scale; a second small number at the scale xi (dual activity, 1/N); exact computation; or a correlation inequality with a parameter, which gives a dichotomy.
+- **C4.** F is vacuous as a logical form (F3). Its content is the base far below the seed size. That clause is needed by the method (the account stops at small tori, L7). It is not needed by T.
+- **C5.** Monotony in the coupling cannot give the scaling form for SU(2) (F4; given the rate filter).
+- **C6.** For Q = S(n; (2n)^3), no improving step can be proved from the class K at any value above s_1, nor at the value 1 (F5; argued for the continuum formula; s_1 a guide).
+- **C7.** The one attempt at F in this setting (A9) failed at the inequality that had to tell SU(2) from U(1), and that inequality is known only where there is a small number.
+- **C8 (belief).** The set of proved cases with xi far above the lattice spacing, no second small number, no exact closure and no correlation inequality is empty; the nearest open case is the two-dimensional O(3) model (B4). So the wall is not made by F: F is one wording of "no small number at the scale xi".
+- **C9.** (GAP) reads local clustering; the torus form is the lane's choice (3.5).
+
+## Step 4. The assumptions table
+
+Taken from the wall's statement (row 735), the open files of Step 0 and Steps 2, 3. "Check" names a check that exists or the cheapest one.
+
+| ID | Assumption | Where it is used | Needed or habit | If wrong or dropped | Easier? | Check |
+|---|---|---|---|---|---|---|
+| a1 | The target is a seed, or (G_ev): a trace over a sector of a periodic box. | `gap-skeleton-final.md` L570-586 | needed by the method (Theorem S, Theorem EV-L) | (GAP) reads local clustering (C9); a local criterion would do | not by itself; it admits the tools of A3, A4, A6 | none run |
+| a2 | The quantity is one of periodic systems only (no boundary values). | row 735; `gap-crux-restate.md` L66 | habit, with a reason: the account and Theorem S live on tori | all-boundary criteria (A6): necessary and sufficient for spin systems | unknown; boundary values of a gauge field are a large space | `gap-ds-gauge.md` (closed until Step 5) |
+| a3 | The scaling form: one physical size, uniformly in the cutoff. | `gap-seed-limit.md` L186 | needed by the target (a continuum gap) | at one fixed beta the gap is a different, weaker statement | yes at small beta (L12); not at large beta | - |
+| b1 | The Wilson action, exactly. | `gap-skeleton-final.md` L63 | needed by the account | another action in the same class (heat kernel) gives exact closure in 2D only | no in 4D | - |
+| b2 | The group is SU(2); N is fixed. | `GOAL.md` T0 | needed by the target (owner: SU(2) first) | at large N a second small number exists (A8) | (I) becomes a known pattern; (U) and (J) stay open even there | A8, read in part. **Owner decision; named as a price only.** |
+| b3 | The frame for exact tools is the class K. | `gap-crux-restate.md` L174 | needed by the method | a smaller class that excludes the compact Gaussian and the two-phase models | yes, if a property that defines it can be used in a proof | F5 names the two models to exclude |
+| c1 | F: base, one-way step, sufficiency. | row 735 | **habit** as a proof form (C1, C4) | the criterion is verified at its own scale, as in every proved case | no: it then needs a tool at coupling of order one | this run, 2.D |
+| c2 | The base is where the account works: a small torus at weak coupling. | row 735 ("a base at one small size") | needed by the method (L7) | base = seed size | no | - |
+| c3 | One scalar Q with one function sigma for all beta and L. | row 735 ("for every value in an interval") | habit | a family of quantities, or the whole effective action (A1) | two-sided control is far more work, and it is what the proved multi-scale cases do | - |
+| c4 | The step is one-way (an inequality). | row 735 | habit, from Theorem S and reflection positivity | (P-c) | no | A9 shows what one-way bounds cost: they hold for every group |
+| c5 | The flow is in the size, at fixed beta. | row 735 | habit | a flow in beta (blocked: F4), in the shape, in the twist, in N | F4 closes one; the others not examined here | F4 |
+| c6 | The step must hold at every value of an interval, for a class of models. | row 735 | habit | a step along the true trajectory only, proved by contradiction at a first bad size | unknown; no proved case of this kind was found either | - |
+| c7 | The tools for a step are the exact inequalities of K (positivity, crossing, convexity). | `gap-skeleton-final.md` L42 | needed by the method | a tool that sees the group at coupling of order one | - | F5: such tools give no step above s_1 |
+| d1 | "It also holds for U(1)" sets a tool aside. | `gap-skeleton-final.md` L59 | discard test | valid as a range (skill 6c); for Q = S the compact Gaussian model binds at every value above s_1 (F5) | - | F5 |
+| d2 | "It needs a small number" sets a tool aside. | reason kind of the skill's 6a; used in row 712 (seen in a `grep` hit: "small number") | discard test | every proved case without exact closure has a small number (C3). Used as a filter it removes every known proof pattern; valid only as a range | - | 2.D |
+| d3 | "Abelian only" sets three-dimensional U(1) aside. | `exercise-skill-v2.md` L1213 (quoting row 712) | discard test | the method is Abelian; the pattern (U), (I), (J) of 3.4 is not | - | A1 |
+| d4 | "No candidate step is easier than the seed" ends the search for a step. | `gap-skeleton-final.md` L555, L566 | discard verdict | consistent with C1, C6, C7 | - | Step 6 |
+| e1 | B1: SU(2) has a gap at every beta. | everywhere | belief | the target is false; the two-phase and massless models of L9 show what that would look like | - | none |
+| e2 | B2: the base value is large (above 7). | `gap-skeleton-final.md` L553 | belief | a base below s_1 would escape F5 | yes | a hand estimate on the small torus (the lane has small-volume readings, closed) |
+| e3 | B3: one-parameter scaling. | step-scaling candidates of row 720 | belief | sigma does not exist as a function | no | - |
+| e4 | B4: no proved precedent. | C8 | belief | a precedent would be a template | yes | a literature item (Step 9) |
+| f1 | No computer-assisted steps. | `GOAL.md` | owner rule; obeyed | A5-type proofs verify the criterion by machine; a seed box of tens of correlation lengths is far beyond any machine anyway | no | not used |
+| f2 | T0 first, SU(2) first. | `GOAL.md` | owner rule; obeyed | see b2 | - | not used |
+
+**Ranking** (by how much the problem changes if the assumption is dropped), with what the lane would do differently.
+
+1. **b2** (N fixed). The only row whose drop gives a proved pattern for (I). The lane would state (GAP) at large N as a later target. *It would change an owner decision; I name it as a price and do not propose it.*
+2. **c1 with c2** (F, and the far base). The lane would stop asking for a step and would state the crux as (I) and (J) of 3.4: a criterion at the scale xi, and the class of effective actions on which it is proved.
+3. **a2 with a1** (periodic, global). The lane would test the all-boundary criterion against the proved gauge cases (A3, A4) before another torus quantity.
+4. **c4 with c3** (one-way, scalar). The lane would ask what two-sided statement about the effective action at coupling of order one would suffice for a single-scale criterion ((P-c)).
+5. **c6** (class-wide). The lane would look for a contradiction at a first bad size along the SU(2) trajectory, using asymptotic freedom below that size.

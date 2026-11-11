@@ -9,22 +9,30 @@ lease_until: 2026-11-12T06:52Z
 
 **What this run did not cover** (kept current):
 
-- (filled as the run goes)
+- No check by another model. No blind check of the plain version and no independent kill pass (no subagents allowed).
+- origin/main and the other YM4D pull-request branches were not searched (this checkout holds only `origin/claude/ym4d-hard-route`; nothing was fetched). Every "new" mark means "not found in this branch's record", with the scope of Step 5.
+- No primary paper was read. 't Hooft (1979), Aharony, Seiberg and Tachikawa (2013), Kaufman, Schultz-Mattis-Lieb, and the facts on Z_2 and U(1) are recalled.
+- The account `YM4_1400.tex`: lines 140-175, 1680-1730, 1884-1910 only.
+- (TM-tw), the transfer operator for twisted spatial weights with all 64 twists, was not re-derived; it is taken from two check files (8.1).
+- `gap-transfer.md`: Section 8, 9.3 and Lemma A0 read; Sections 1 to 7 not read. The 36 verdicts of rows 712 and 720 are listed in Step 6; 33 are "as reported, not re-derived". The cells of row 720's table were read to 330 characters.
+- The passage from Theorem EV-L to the transfer operator of the limit and to the continuum (Theorem L3 (e), Propositions P, P' of row 700, with 𝔄 in place of all local functions) was not rewritten.
+- (EV-STEP) and (KP) for SU(2) are open. No statement here is about SU(N), N >= 3.
+- No four-dimensional gauge theory was run; the runs are a two-dimensional toy and a finite enumeration.
 
 ## Status block
 
 | Step | State | Main result |
 |---|---|---|
-| 0 Locate the record | started | |
-| 1 State the wall twice | not started | |
-| 2 Inventory | not started | |
-| 3 Reason up | not started | |
-| 4 Assumptions table | not started | |
-| 5 Compare with earlier work | not started | |
-| 6 Discard tests and set-aside methods | not started | |
-| 7 Routes | not started | |
-| 8 Real attempts | not started | |
-| 9 Report | not started | |
+| 0 Locate the record | done | open and closed lists; `open-core.md` has no line on this wall |
+| 1 State the wall twice | done | (Q1), (Q2); no blind check |
+| 2 Inventory | done | 23 items with marks; the wall sits in two SUPPLIED items (periodic seed, periodic limit) |
+| 3 Reason up | done | C1 to C9: the limit half reads the even sector only; crossing exchanges electric and magnetic twists; three self-dual sector sets |
+| 4 Assumptions table | done | 21 rows; first: c1 (whole space in the limit half, needed by the method only), c3 (periodic seed, a habit) |
+| 5 Compare with earlier work | done | found again: Remark 2.A, Remark Y, Identity FL, run 2's zero-flux function; new in this branch: Theorem EV-L, the kappa set, the classification, S_kappa <= S_full |
+| 6 Discard tests and set-aside methods | done | 3 corrected (W1, W2, the Z_2 test); 33 as reported |
+| 7 Routes | done | A (limit by mixture) survives; B (kappa seed) wounded; C (full seed) dead for SU(2) under a belief; D (even step) wounded |
+| 8 Real attempts | done | 8.2 Theorem EV-L; 8.3 Proposition CL; 8.4 Theorem S-w, Corollary EV; 8.5 (*), sum rule, loss, Proposition AS, (EV-STEP) open; 8.6 runs; 8.7 Lemma GS, (KP) proved for Z_2, open for SU(2) |
+| 9 Report | done | answer: (GAP) needs (G_ev) only; the known step needs one of three seeds with seven flux sectors |
 
 ## Step 0. Where the record is; what is open and what stays closed
 
@@ -582,5 +590,102 @@ S_ev(n; 2n) at K_c stays above 1/20 for every n tried (it decreases towards abou
 
 **Fresh adversarial check of the negative readings.** Not available as an independent check (no subagents). A separate pass by the same session re-read the readings: the violations of the even Lemma E are violations of one inequality in one model, not a no-go for (EV-STEP); the text above says only that.
 
-<!-- END -->
+### 8.7 The three sums by surface class; (KP) in exact form. Written after 8.6, on the open statement (KP) of 8.4.
+
+Rule 0a: (KP) is named in no other row (grep of the scope of Step 5 for "kappa", "Pfaffian": no hit outside this file).
+
+**Definition.** For h in K = Z_2^6 put <k, h> := sum over the six planes of k_{mu nu} h_{mu nu} (mod 2), and
+
+Y_h(n) := (1/64) sum over k in K of (-1)^{<k,h>} Z^k(n). Then Z^k = sum over h of (-1)^{<k,h>} Y_h (Fourier inversion on Z_2^6).
+
+**Lemma GS (exact, for every model with twisted partition functions Z^k; no transfer operator is used).**
+
+W_per = sum over h of Y_h, W_kappa = sum over h of (-1)^{Pf(h)} Y_h, W_full = 8 Y_0.
+
+So W_per - W_kappa = 2 sum over the 28 classes h with Pf(h) = 1 of Y_h, and **(KP) is the statement that this sum is non-negative.**
+
+Proof. The first and third lines are the definitions. For the second: W_kappa = (1/8) sum_k (-1)^{Pf(k)} sum_h (-1)^{<k,h>} Y_h, so it is enough that (1/8) sum_k (-1)^{Pf(k) + <k,h>} = (-1)^{Pf(h)}. Let (*u)_{12} = u_34, (*u)_{34} = u_12, and the same for the pairs (13, 24) and (14, 23). Then Pf(k + u) = Pf(k) + <k, *u> + Pf(u), Pf(*u) = Pf(u) and **u = u. With u = *h: Pf(k) + <k, h> = Pf(k + *h) + Pf(h) (mod 2). So sum_k (-1)^{Pf(k)+<k,h>} = (-1)^{Pf(h)} sum_k (-1)^{Pf(k)}, and sum_k (-1)^{Pf(k)} is the cube of sum over x, y in Z_2 of (-1)^{xy} = 2, that is 8. The count: Pf(h) = 0 has 36 solutions and Pf(h) = 1 has 28, because 36 - 28 = 8 and 36 + 28 = 64. QED
+
+**Proposition KP-Z2 ((KP) holds for the Z_2 Wilson theory).** For the Z_2 theory of Proposition AS, Y_h >= 0 for every h. So W_kappa <= W_per on every torus, and also W_kappa >= -W_per.
+
+Proof. exp(-beta (1 - s_p sigma_p)) = e^(-beta) (cosh beta + s_p sigma_p sinh beta). Expand the product over the plaquettes and average over sigma: the average of the product of sigma_p over a set S of plaquettes is 1 if every link lies in an even number of plaquettes of S (S closed), and 0 otherwise. So Z^k = e^(-beta |P|) sum over closed S of (cosh beta)^(|P| - |S|) (sinh beta)^(|S|) prod over p in S of s^k_p. The last product is (-1)^{<k, h(S)>}, where h(S)_{mu nu} is the parity of the number of plaquettes of S in the stack of the plane (mu, nu). Hence Y_h = e^(-beta |P|) sum over closed S with h(S) = h of (cosh beta)^(|P|-|S|) (sinh beta)^(|S|) >= 0. QED
+
+**What this gives.** In every model whose class weights Y_h are non-negative, the kappa seed is implied by the periodic seed (W_kappa <= W_per gives S_kappa <= S_per) and by the full seed (C7): it is the weakest of the three. The two-dimensional analogue (classes of closed graphs by their winding parities) explains the 900 points of run 2. For SU(2) the character expansion has the same form with weights that are integrals of products of characters; I did not show that they are non-negative. For SU(2), given (TM-tw), Y_h >= 0 holds for each h whose planes share one axis (in the frame of that axis Y_h is (1/8) of a sum of sector sums), and all these h have Pf(h) = 0. **(KP) for SU(2) is open**; it is the exact statement "the classes with Pf(h) = 1 carry non-negative total weight". Reading, not proved: at the lowest order of the character expansion at small beta a class with Pf(h) = 1 is carried by two flat sheets of spin-1/2 plaquettes that meet in one site and share no link, and the weight of such a pair is positive; so I expect (KP) for SU(2) at small beta.
+
+## Step 9. Report
+
+Every claim carries a mark. "argued" = proved in this file by Claude Fable 5.2, not checked by another model.
+
+### 9.1 The wall, in plain words (corrected)
+
+We want to show that the lightest particle has a positive mass. The plan reduces this to one inequality on a box of one size with wrap-around walls, and a proved step carries the inequality to every larger box. The inequality counts all states of the box, and some of them carry a line of force that winds around the box ("flux"). Measurements inside a bounded region cannot see flux. The question was whether the flux states must be counted. The answer has two parts. For passing from large boxes to infinite space they need not be counted: only the flux-free states matter (argued). For the step from one box to all larger boxes some flux states must be counted, because the step exchanges a space direction with the time direction, and that exchange turns one kind of flux into another. There are exactly three consistent ways to choose which flux states to count (argued). No way is known that counts none.
+
+### 9.2 What the exercise found
+
+1. **The limit half reads the even sector only** (Theorem EV-L, 8.2; argued; inputs checked by other models). On gauge-invariant local observables the periodic torus state equals the flux-free state up to an explicit error that tends to zero, because the flux-free state clusters and a clustering state is not a mixture. So small flux-free thermal sums on all cubes, (G_ev), give the gap of the account's periodic volume-first limit on the tr(F^2) sector. No hypothesis on a flux sector enters. I did not find this in the branch's record (search scope in Step 5).
+2. **The step needs a self-dual set of sectors, and there are exactly three** (Proposition CL, Theorem S-w, 8.3, 8.4; argued, given (TM-tw)). Periodic (the present form: seven electric flux sectors), full (seven magnetic sectors), kappa (seven sectors with electric flux equal to magnetic flux; the twist sum with the sign (-1)^{Pf(k)}). Each seed at one size gives (G_ev) at all sizes, and with item 1 the gap. The kappa form and the classification were not found in the branch's record. "Exactly three" is proved for weights that are invariant under all permutations of the axes and admissible in the sense of 8.3; it is a statement about the crossing step of Theorem S, not about every possible step. The flux-free sector alone is not self-dual (Proposition CL (a)); in an explicit Z_2 model its trace is not symmetric (Proposition AS; argued).
+3. **A sum rule** (Corollary SR; argued, given (TM-tw)): on a torus with two equal sides, fifteen flux sectors carry exactly three times the weight of the flux-free sector. This is why a seed on the flux-free sector alone cannot be crossed.
+4. **What changed since the start.** The crux was named "the gap with confinement on the whole space". It is now: (G_ev) is what (GAP) needs; a seed with seven flux sectors of one of three kinds is what the known step needs. For SU(2) I have no proof that the kappa seed is easier than the periodic one; under the belief that SU(2) confines, both are confinement statements and the full seed is false (belief).
+5. **Attempts.** Proofs: 8.2, 8.3, 8.4, 8.5. Runs (guides): the three sets are symmetric in the two-dimensional Ising model, the kappa seed holds there in both phases, the even form of Lemma E fails there, and the even form of the doubling inequality fails at the critical point for n >= 12.
+6. **Answer to the row.** (Q1) No: (GAP) does not need the seed on the whole space; it needs (G_ev) (argued). (Q2) A statement on tori of one physical size that gives (GAP) with a proved step exists in three forms, each with seven flux sectors; none is about the even sector alone, and for SU(2) confinement stays on the path of the step unless (EV-STEP) of 8.5 is proved (open) or the kappa seed is reached by a tool that does not need heavy electric flux (not known).
+
+### 9.3 Filters corrected
+
+- **W1** (row 712 Remark 2.A (d), row 708 Remark Y): "a seed for the centre-even sector cannot be obtained by symmetrizing over twists". Too strong. Valid form: the sum over all twists with equal weights has no seed where magnetic flux is light (belief for SU(2)). The sum with the sign (-1)^{Pf(k)} is symmetric and holds no purely magnetic sector. What comes back: Theorem S for W_kappa. Range: where the sectors with equal electric and magnetic flux are heavy.
+- **W2** (row 712, a3): "no finite criterion is known for a gap of local observables in a gauge theory" beside (DS-tw). Corrected: Corollary EV gives three, and two of them do not need a gap on the whole space.
+- **The Z_2 test** (`gap-crux-restate.md` L227; `gap-crux-fp.md` L280-281; `gap-skeleton-final.md` L562). Valid for the periodic seed. For (G_ev) and (GAP), Z_2 at large beta is a model where the target holds (recalled), so it refutes no tool for them. It binds such a tool only at the Z_2 transition point, and above it only if the tool's hypothesis is monotone in beta.
+- Not corrected: the U(1) test, and the 22 + 14 verdicts of rows 712 and 720 apart from the above ("as reported; not re-derived").
+
+### 9.4 Routes worth doing (at most three)
+
+1. **Restate the consumer.** Believe: nothing. Cost: one check (work item 1) and a short edit by the lead. First test: the check of 8.2. Change: `gap-seed-limit.md` Theorem L and the skeleton's crux read (G_ev); the flux half ((TUBE'), (MF), (VORT), Route T) is off the path of the limit.
+2. **Price the three seeds against data.** Believe: published lattice numbers on twist free energies at sizes of some tens of correlation lengths exist. Cost: one reading lane. First test: is the electric (or dyonic) flux weight at the seed size below the even thermal sum? Change: whether the choice of seed matters for the size of the seed box (belief e2).
+3. **(KP) for SU(2): W_kappa <= W_per.** Believe: that the surface classes with Pf(h) = 1 carry non-negative total weight (8.7). It is proved for Z_2 (Proposition KP-Z2; argued). Cost: one short author run. First test: the sign of the class weights in the character expansion at second order in beta on a small torus. Change: if true, the kappa seed is implied by the periodic seed and by the full seed; it is then the weakest of the three and the natural form of the crux.
+
+### 9.5 What not to do next
+
+- No author run on the full seed for SU(2): under belief 16 it is false at large size.
+- No author run on (EV-STEP) now: no mechanism is in sight, crossing is excluded (8.5), and the two-dimensional test shows the known inequality fails.
+- No further work on the flux half as a prerequisite of the limit: 8.2 removes it there.
+- Do not use Z_2 at large beta as a model where the target fails.
+
+### 9.6 The exact price
+
+For the even sector alone the wall is equivalent to nothing I can prove. The exact open statement is **(EV-STEP)** (8.5). The exact proved alternative is: **one of the three seeds** S_w(N; (2N)^3) < 1/5041, w in {periodic, full, kappa}, at one physical size, uniformly in the cutoff; in free-energy form 16 log W_w(N^4) - log W_w((2N)^4) <= 1.9 x 10^(-4).
+
+### 9.7 Work items
+
+**Item 1 (first): check of this file.** A model that did not write it (Claude Opus 5.5 high, or Codex gpt-6-astra) reads `library/gap-flux-exercise.md` Steps 3, 5, 8 line by line. Statements, in order: Lemma CB, Lemma MX, Lemma L1-ev, Theorem EV-L (c), (d); Lemma CL1, Proposition CL (a), (b); Lemma W, Theorem S-w, Corollary EV; Proposition X16, Corollary SR, Proposition EVL, Proposition AS; (S1), (S2), (S3) of 3.1. Read with them: `gap-transfer.md` Section 8 and 9.3; `gap-seed-limit.md` Sections 1 to 4; `gap-crux-restate.md` L174-219; `gap-seed-check.md` L30-40, L177; `gap-crux-fp-check.md` L30-38. Points to test first: (1) Lemma CB, the gauge transformation on a slab with time-like links, and the choice of r; (2) Lemma MX (b), positivity with C^e and independence of the slab; (3) the count of d and d' in Theorem EV-L (c); (4) Proposition CL (b), Steps 2 and 3; (5) (TM-tw) for twists with Pf(k) = 1, where an electric and a magnetic stack meet; (6) Theorem S-w where the top eigenvalue could be degenerate; (7) the three "new" marks of Step 5, by a search of its own that includes origin/main and the other pull-request branches. Verdict per statement: HOLDS, HOLDS AFTER CORRECTION, FAILS. Output: `library/gap-flux-exercise-check.md`. Stop at the first statement that breaks Theorem EV-L, and report it.
+
+**Item 2: (TM-tw) as a lemma of its own.** Write `library/gap-transfer-twisted.md`: for every box with sides at least 3 and every k in Z_2^6, the operator T_{B,m}, its positivity, trace class, simple top eigenvalue, commutation with the flips, Tr(T_{B,m}^a C^e) = Z^{e+m}, and Z^{sigma k}(sigma n) = Z^k(n), each step written from `gap-transfer.md` Sections 1 to 4 and 9.3 (not "word for word"). Sources: `gap-seed-check.md` L30-40, L177; `gap-crux-fp-check.md` L30-38. Then one check. Reason: 8.4 and 8.5 rest on it, and today it lives in two check files.
+
+**Item 3: reading lane on twist free energies.** Read the published lattice results on twisted partition functions and electric flux free energies of SU(2) in four dimensions (de Forcrand and von Smekal; Kovacs and Tomboulis; later work), open copies only. Question: at a torus of L/xi between 10 and 40, what are Z^k/Z for one-plane twists and for the two-plane twist with Pf = 1, and what do they give for S_per - S_ev and S_kappa - S_ev at time L/2? Mark every number GUIDE. Output: `library/prior/gap-twist-data.md`. Stop if no source gives a size above 5 correlation lengths.
+
+**Item 4: (KP) for SU(2).** Prove or refute: for Wilson SU(2) on every torus with sides at least 3, the sum of Y_h over the 28 classes h with Pf(h) = 1 is non-negative (Lemma GS, 8.7; Y_h = (1/64) sum_k (-1)^{<k,h>} Z^k). Proved here for Z_2 (Proposition KP-Z2). Points to test first: the character expansion of the SU(2) weight (are the class weights sums of non-negative terms?); the Z_2 splitting of Mack and Petkova (`gap-crux-restate.md` L290-294), where the Z_2 couplings beta J_p(V) can be negative; a small torus by hand at small beta (second order in beta is enough to see a sign). Stop after three distinct ways. Output: `library/gap-kappa-order.md`.
+
+**Not proposed:** an author run on (EV-STEP) (no mechanism); the full seed for SU(2) (believed false); an attack on (DS-tw) (row 691 owns it); the extension to SU(N) (the sector sets must be classified again for Z_N; not needed for T0, SU(2) first); edits of `gap-skeleton-final.md`, `t0-tree.md` or the registry (the lead's files).
+
+### 9.8 Appendix
+
+The tables are in Steps 2 (inventory), 4 (assumptions), 5 (compare), 6 (methods and tests), 7 (routes, kill pass, rank, registry), 8.6 (runs).
+
+- **Assumptions most likely to be wrong:** e2 (flux is far heavier than the lightest even state at the seed size); the reading that the kappa seed is "confinement again" (C8, a belief).
+- **Assumptions most expensive to be wrong:** (TM-tw), because 8.3 to 8.5 rest on it; item 16 (confinement), because every seed for SU(2) rests on it in one form.
+- **Literature proofs worth translating:** 't Hooft's duality argument for flux free energies in a massive phase (it would turn "the light crossed sectors form a group of four" from a recalled reading into a statement with hypotheses); the Peierls or duality proof of the gap of Z_2 gauge theory at large beta (it would turn the corrected Z_2 test from recalled to proved).
+
+## Measure of the skill (row 721, Section 4.6)
+
+- **Discard tests or verdicts corrected: 3.** W1 (too strong), W2 (corrected), the Z_2 test (valid for the periodic seed only). All three are on the path of the choice of the seed. 34 other verdicts were listed and left "as reported".
+- **Statements of this run and their status.** argued, not checked: Lemma CB, Lemma MX, Lemma L1-ev, Theorem EV-L, Lemma CL1, Proposition CL, Lemma W, Theorem S-w, Corollary EV, Proposition X16, Corollary SR, Proposition EVL, Proposition AS, (S1) to (S3), Lemma GS, Proposition KP-Z2 (18 items; (S1) to (S3) and those of 8.4 and 8.5 except Proposition AS are "argued, given (TM-tw)"; 8.2, 8.3, Proposition AS and 8.7 do not use (TM-tw)). open: (EV-STEP); (KP) for SU(2). belief: C8. guide: the three runs. A check has not been made, so the counts "right / right after correction / wrong" are not known.
+- **"New" marks and their support (4).** Theorem EV-L (c), (d); the kappa set with its Theorem S; the classification (exactly three, none the even sector alone); S_kappa <= S_full. Search: grep of all `library/gap-*.md`, `library/prior/gap-*.md`, `exercise-skill-v2.md`, `l17c.md`, `gates/`, `parts/` and FINISH rows 697 to 730, with the wordings listed in Step 5; every hit read. Not searched: origin/main and the other pull-request branches (not in this checkout). So the marks mean "new in this branch's record".
+- **The compare step found by its own search:** (SEED-phys) of row 700 (open list), Identity FL of row 708, Remark 2.A of row 712, Remark Y of row 708, run 2's zero-flux function and Corollary 5, (DS-tw) of row 691, and the (TM-tw) re-derivation in the check of row 716.
+- **Cost.** About 11 dollars on this session's budget meter and about 45 minutes of wall time to the end of step 8; one session, no subagents; three small numeric runs under the lock.
+- **Did the pre-registration rule bind?** Once: R7's validation failed its own tolerance for a trivial reason (printed digits); a dated follow-up R7b was added and the original reading was not changed.
+- **Should a next long run change?** Yes. (1) Before any further author run on the seed or on the flux half, run work item 1; if Theorem EV-L holds, brief every later run with (G_ev) as the consumer and with the three seeds. (2) A long run on (TUBE'), (MF) or Route T as a prerequisite of (GAP) is no longer justified by the limit half. (3) The step-5 search should be given the other branches; this run could not search them.
+
+**Did the exercise succeed, by the skill's own list?** A corrected filter: yes (three, argued, not checked). A route with its first test run: yes (routes A and B, proofs written; runs as guides). An exact price for the even-only form: only a named open statement, (EV-STEP); no equivalence is proved. The wall is not solved: no seed is proved for SU(2) at any coupling of order one, and no mass gap is proved.
+
+**Credits.** Sussman and Alpoge, with Claude and Codex (the account; the notions of volume-first limit and canonical component; no statement of theirs is used in a proof here). Balaban (the ultraviolet basis of the account). Osterwalder and Seiler, Luscher (transfer operator, through rows 667, 671). 't Hooft (twists, electric and magnetic flux, duality). Aharony, Seiberg and Tachikawa (the three global forms). Kaufman; Schultz, Mattis and Lieb; Onsager (the Ising spectrum, in a guide run). Mack and Petkova (the Z_2 splitting, named in a work item). Rows 667 to 720 of this lane: the authors and checkers named in Step 5.
+
+RESULT: argued, not checked by another model: (1) Theorem EV-L: on centre-blind local observables the periodic torus state equals the flux-free (centre-even) state up to an explicit error, so small even-sector thermal sums on all cubes, (G_ev), give exponential clustering of every periodic volume-first limit in four directions; (GAP) does not need the flux sectors in its limit half. (2) Proposition CL and Theorem S-w (given the twisted transfer operator of rows 698, 716): the crossing step works for exactly three sector sets, periodic (the present seed), full, and kappa (twist sum with sign (-1)^{Pf(k)}, new in this branch); each seed at one size gives (G_ev) and the gap; none is the even sector alone; S_kappa <= S_full; W_kappa <= W_per for Z_2 (Lemma GS, Proposition KP-Z2). (3) Sum rule, loss identity, and an explicit Z_2 model where the even trace is not symmetric. Corrected: three filters (Remark 2.A (d) and Remark Y too strong; row 712 a3; the Z_2 test valid for the periodic seed only). Open: (EV-STEP), a step for the even sector alone, neither proved nor refuted (guide: the even form of the known inequality fails in the two-dimensional Ising model); (KP) for SU(2); every seed at a coupling of order one; so for SU(2) confinement stays on the path of the step, as a belief about which seed can hold, and no mass gap is proved.
 

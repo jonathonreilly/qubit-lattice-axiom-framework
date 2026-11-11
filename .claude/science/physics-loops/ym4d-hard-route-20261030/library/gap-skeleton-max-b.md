@@ -106,3 +106,105 @@ For SU(2) each of these changes: (a) the Gaussian fixed point is unstable in the
 None of (a), (b), (c) is a proof of a gap. (a) says the massless free theory is left behind. It does not say where the flow ends. (b) says nothing protects a massless particle. (c) is a statement at the lattice scale.
 
 **(K6) A test the row does not list, which I add because it is also a fact: SU(2) at the deconfinement temperature.** On a slab with one periodic direction of length 1/T_c and the other three infinite, the SU(2) theory is critical (recalled: second-order transition in the universality class of the three-dimensional Ising model). The transfer operator along an infinite direction has no gap there, also on tr(F^2) observables, which couple to the energy operator of the Ising model. So an argument that proves decay on every periodic geometry is wrong. An argument must use that all four directions are large, or it must work on symmetric tori only.
+
+### 1.2 The question itself: why is there a gap, as mathematics?
+
+I separate what is forced from what is not.
+
+**What is equivalent to the gap (exact reformulations).** Let T be the transfer operator on a finite spatial lattice, H = -(1/a) log T, Psi_0 > 0 its ground state (Perron-Frobenius on a compact space with a strictly positive kernel), nu = Psi_0^2 dU.
+
+- (R1) Coercivity: m = inf over psi orthogonal to Omega of <psi, (H - E_0) psi> / <psi, psi>. In the ground-state representation this is a Poincare inequality for nu with the Dirichlet form of H (the electric, link-wise form), uniform in the volume, with a constant that scales like a m.
+- (R2) Decay: exponential decay in time of <F, e^{-tH} G> - <F,Omega><Omega,G> on a dense set, with one rate.
+- (R3) Free energy, new in this note as far as my own thinking goes (Section 1.5, Lemma 1): for every torus, sum_{i >= 1} exp(-l_1 (E_i - E_0)) <= exp(Delta) - 1, where Delta = log Z(torus) - Vol f_infinity >= 0 is the excess free energy of the torus. So a gap on tori follows if the torus partition function equals its bulk term up to an exponentially small error.
+
+**What is not a reason.** Compactness of the group gives a gap in finite volume and nothing more (U(1) is compact). Positivity of the transfer kernel gives uniqueness of the vacuum in finite volume and nothing more. Reflection positivity and Euclidean invariance are satisfied by massless theories. Asymptotic freedom says the massless Gaussian theory is not the infrared limit. It does not say what the limit is.
+
+**What I believe the true reason is, stated so that it can be false.** The family of finite-volume continuum theories on symmetric tori has one parameter, l Lambda. Let Delta(l) be the excess free energy of the symmetric torus (restricted to zero electric flux if one wants only local observables). At small l the existence estimates give Delta(l) = kappa log(1/g(l)) + O(1) with kappa > 0 from the count of constant modes (this is K4 in another form: many states lie below 1/l). The gap, with confinement, is the statement Delta(l) -> 0 exponentially. A massless infrared phase is the statement Delta(l) -> Delta_* > 0. For U(1), Delta is constant in l at weak coupling: nothing moves. So the gap is the statement that the flow of one number, which asymptotic freedom starts, does not stop before zero. In mathematics this is the absence of a second scale-invariant theory on the way. I know no property of the measure, of the transfer operator, of the configuration space or of the group that forces this without a quantitative estimate at the scale where the coupling is of order 1. The three structural facts that separate SU(2) from U(1) are (a) b_0 proportional to the adjoint Casimir, (b) Ric_G > 0, (c) the 1-form symmetry is discrete. (a) acts only where the coupling is small. (b) acts only where the lattice coupling beta is below about 0.1. (c) forbids nothing. Between the reach of (a) and the reach of (b) lies the whole difficulty, and Section 1.4 shows that two candidate bridges fail there.
+
+**A warning that sharpens the tests (K7, recalled from simulations, not rigorous).** The SU(2) lattice theory with a fundamental plus adjoint plaquette action has a first-order line that ends at a critical point close to the Wilson axis (recalled: Bhanot and Creutz). At that end point the scalar channel is massless at a finite lattice coupling. That theory has the same group, gauge invariance, locality and reflection positivity (for a non-negative adjoint coupling) as the Wilson theory. So a proof of a lattice gap at all couplings that uses only those properties is wrong. A proof must use the continuum limit (where the adjoint term is irrelevant) or the exact Wilson form.
+
+### 1.3 Approaches
+
+Each approach has: mechanism; CRUX; why it could be true; U(1) test (the line where the non-commutative group is used); known-answer test (2D, strong coupling, finite group, small torus, and K6/K7 where they bite); how it dies.
+
+**A1. Excess free energy of symmetric tori (a different object to bound).**
+Mechanism: bound numbers, not correlations. By Lemma 1 the gap on tori follows from an upper bound on Delta(l) = log Z(l^4) - l^4 f_infinity.
+CRUX (FE): there are m > 0 and C such that Delta_a(l) <= C exp(-m l) for all l >= l_0, uniformly in the lattice spacing a along first-passage data. Weaker crux (FE-0): Delta(l) -> 0.
+Why it could be true: Delta is a sum over excitations that wind around the torus; with a gap and a string tension they cost exp(-m l) and exp(-sigma l^2).
+U(1) test: Delta tends to the Casimir amplitude of the photon plus the flux sums, a positive constant. The non-commutative group must enter the proof that no constant survives. Passes the test in the sense that the statement is false for U(1).
+Known answers: 2D: Z = sum_lambda (c_lambda)^{Area}, Delta = log(1 + sum_{lambda != 0} (c_lambda / c_0)^{Area}), exponentially small in the area: correct. Strong coupling: only winding polymers contribute: correct. Finite group at weak coupling: Delta -> log(number of flux sectors) > 0 although local correlations decay. So (FE) is stronger than the local gap: it is the gap plus no vacuum degeneracy on the torus. With the projection to zero electric flux the constant disappears. Small torus: Delta = kappa log(1/g) + O(1), large: correct (many low states).
+How it dies: (FE) is equivalent in strength to the gap with confinement. Soft inequalities (positivity of transfer operators in all four directions) do not give it: Section 1.5 shows they are satisfied with Delta constant.
+
+**A2. Renormalisation group to an exit domain (the specialist's route).**
+Mechanism: continue the block renormalisation past the unit scale until the effective coupling is large, then use a convergent expansion.
+CRUX (EXIT): there is an explicit set D of effective lattice gauge actions such that every action in D has uniform exponential clustering, and the trajectory started at weak coupling enters D.
+Why it could be true: simulations show no transition; the Migdal-Kadanoff recursion flows to strong coupling in four dimensions.
+U(1) test: the U(1) coupling does not run, so the trajectory never moves. The group enters through b_0 > 0. But the Migdal-Kadanoff recursion also flows to strong coupling for U(1) in four dimensions, which is wrong (K5). So that recursion is not evidence.
+Known answers: 2D and 3D: the coupling has a dimension and the flow reaches strong coupling, but in 3D the crossing is as hard as in 4D and the 3D gap is also open. K7: the fundamental-adjoint end point shows that D cannot be reached by every trajectory of every nearby action.
+How it dies: in the crossing region the weak-coupling analysis has no small parameter and the provable strong-coupling domain is two to three orders of magnitude away in g^2.
+
+**A3. Multiscale functional inequality (turn the control at every scale into decay).**
+Mechanism: a Poincare or log-Sobolev inequality for the composite measure from one-sided Hessian bounds on the renormalised action at each scale (the Polchinski-flow criterion, or the two-scale criterion), plus Ric_G > 0 at the end.
+CRUX (HESS): along the renormalisation flow the effective actions satisfy Ric + Hess S_k >= -mu_k with sum_k mu_k finite uniformly in the cutoff through the crossing region, and >= rho > 0 after it.
+Why it could be true: the criterion needs only one-sided bounds, and it tolerates a bounded total negative part.
+U(1) test: Ric_{U(1)} = 0, and the fluctuation Hessians are the same as for SU(2) at one loop, so the positive end value rho must come from Ric_G > 0 at strong effective coupling. That is the line. But U(1) at strong coupling has a gap with Ric = 0, so the mechanism does not explain K2 for U(1): it is sufficient, not the reason.
+Known answers: strong coupling: gives the gap for beta below about 0.1 (SU(2)), nothing for U(1). 2D: works in plaquette variables. Finite groups: not applicable (no Riemannian structure).
+How it dies: the bound Ric + beta_k Hess A >= rho holds only for beta_k below about 0.1; at the last scale that the existence estimates reach, beta_k is large. Section 1.4 gives the numbers. A Poincare inequality for the four-dimensional Langevin form also loses the rate: it gives decay at rate rho, not sqrt(rho), unless a weighted estimate on 1-forms is proved.
+
+**A4. Transport in the coupling (a differential inequality for the mass).**
+Mechanism: d/d beta of any expectation is an insertion of the total action, which is the account's observable with f = 1. Prove -d log m / d beta <= c_AF + integrable error, and integrate from strong coupling.
+CRUX (DEF): in the first excited state the magnetic energy is lower than in the vacuum by at most (c/4) m (1 + o(1)) with the sharp one-loop constant c; equivalently the Hessian of the solution h of the Poisson equation L h = A - <A> is bounded uniformly in beta.
+Why it could be true: it is the trace-anomaly mass formula m = <1| theta |1> read as an inequality.
+U(1) test: at the U(1) transition the transport map cannot be Lipschitz, so the bound must fail there. For SU(2) I see no line where the group would enter a proof. Fails the test in this sense: no mechanism.
+Known answers: K7 kills every version with a non-sharp constant, because the mass vanishes at the end point of a nearby action.
+How it dies: Section 1.4: the natural operator inequality |E^2 - B^2| <= E^2 + B^2 is off by the factor 1/g^2 after vacuum subtraction, and only an identity can give the sharp constant.
+
+**A5. Finite-size scaling with a monotone coupling.**
+Mechanism: base at small l (K4), then a step from l to 2l.
+CRUX (STEP): there is a finite-volume coupling u(l) with u(2l) >= sigma(u(l)), sigma(u) > u on (0, u_*), and u >= u_* implies a gap of order 1/l in all larger volumes.
+Why it could be true: for every coupling defined so far the step function is positive in simulations.
+U(1) test: u is constant for U(1); the group enters through sigma(u) - u = b_0 u^2 at small u. Beyond small u there is no line.
+Known answers: K6: on a slab the step function has a fixed point at 1/T_c. So the coupling must be defined on symmetric tori.
+How it dies: strict monotonicity is not enough; u can converge to a finite limit below u_*.
+
+**A6. Centre flux duality ('t Hooft; exact Z_2 Fourier transform).**
+Mechanism: on a symmetric torus exp(-F_e) = tanh(F_m / 2) exactly, where exp(-F_m) = Z_twisted / Z. Show F_m(l) -> 0.
+CRUX (VORT): 1 - Z_twisted(l)/Z(l) <= C exp(-sigma l^2).
+Why it could be true: thick vortices cost no action at large size.
+U(1) test: for U(1) with a Z_N twist the ratio does not tend to 1. No line in a proof is known to me.
+Known answers: Z_2 at weak coupling: ratio tends to 0, no confinement, yet a local gap. So (VORT) is confinement, a different statement from (GAP), and neither implies the other without more.
+How it dies: it bounds a different object; the link to tr(F^2) decay is a second open theorem.
+
+**A7. Geometry of the orbit space (Bakry-Emery for the ground-state measure).**
+Mechanism: gap(H) is the Poincare constant of nu = Psi_0^2. The orbit space has sectional curvature (3/4)|[X,Y]^vert|^2 >= 0 (O'Neill), zero for U(1).
+CRUX (BE-0): Ric + Hess(2W) >= rho > 0 on the orbit space for Psi_0 = e^{-W}, with rho of order a m / g^2, uniformly in the volume.
+U(1) test: curvature zero: passes at the first line.
+Known answers: on the lattice, log-concavity of Psi_0 with Ric_G > 0 would give a gap of order g^2/a, which is false at weak coupling (the true gap is far smaller). So Hess W has negative directions that cancel Ric almost exactly.
+How it dies: the needed rho is exponentially small in 1/g^2; a pointwise curvature bound cannot produce it without a multiscale step, and then it is A3.
+
+**A8. Gribov region and log-concavity.**
+Mechanism: in Landau gauge the Faddeev-Popov operator M(A) is linear in A, the region {M >= 0} is convex, and det M is log-concave on it (log det of a positive operator that depends linearly on a parameter is concave). For a log-concave measure a bounded covariance gives a Poincare inequality up to the constant of the Kannan-Lovasz-Simonovits problem.
+CRUX (LC): the gauge-fixed measure is a bounded perturbation, uniformly per degree of freedom in a way that the Poincare constant survives, of a log-concave measure whose covariance has no pole at zero momentum.
+U(1) test: det M is constant for U(1). Passes at the first line.
+How it dies: the Yang-Mills action is not convex in A: its Hessian has the term 2<F_A, [B,B]>, which is the same paramagnetic term that gives asymptotic freedom. Also the restriction to one Gribov copy is not known to be the right measure.
+
+**A9. Correlation inequalities and sharpness.**
+Mechanism: an inequality of Simon-Lieb type would give a finite-size criterion with no boundary conditions.
+CRUX (SL): <a_p; a_q> <= sum over r in a surface separating p from q of <a_p; a_r>_inside <a_r; a_q>.
+U(1) test: for U(1) Ginibre inequalities exist and the criterion fails at weak coupling, as it must.
+How it dies: the dual (spin-network) weights of SU(2) have signs; I know no inequality of this type. On one 3-cube the covariance of two plaquette characters is non-negative by a positive dual measure (checked by hand in my notes), but that does not extend. K7 forbids a criterion that holds for all actions and is met at all couplings.
+
+**A10. Dilation identity (trace anomaly).**
+Mechanism: l d/dl of log Z on a torus is the integrated one-point function of tr(F^2). So l dDelta/dl = l^4 (theta(l) - theta(infinity)), the finite-size shift of the condensate.
+CRUX (SHIFT): l^4 |theta(l) - theta(infinity)| <= C exp(-m l), and the constant of integration Delta(infinity) is zero.
+U(1) test: the shift is zero for a scale-invariant theory, and Delta(infinity) is the photon amplitude. The second clause is the line.
+How it dies: the constant of integration is the whole question.
+
+**A11. Monopole plasma (Polyakov's mechanism).** CRUX: the monopole loops of an abelian projection condense. U(1) test: in 4D they do not at weak coupling (K5). Dies at once in four dimensions: loops, not points.
+
+**A12. Plaquette variables (the Wilson measure as a Gaussian restricted to the Bianchi variety).**
+Mechanism: for SU(2) = S^3 in R^4, beta a_p = (beta/2)|U_p - 1|^2. So the Wilson measure in plaquette variables is the Gaussian of variance 1/beta centred at the point (1,...,1), restricted to the variety of plaquette fields that satisfy the Bianchi identity, with a Jacobian.
+CRUX: a Poincare inequality in the plaquette metric.
+Verdict: FALSE as a route. For U(1) at weak coupling the covariance of the plaquette field is (1/beta) times a projection, so the Poincare inequality in the plaquette metric holds with constant beta although the photon is massless. A bounded covariance in the magnetic metric says nothing about decay. The Dirichlet form must be the link-wise (electric) one.
+
+**Choice.** I choose A1 (with A10 as its differential form) as the frame, because its entry is an exact inequality with no loss, its object is the one the existence estimates control, and it turns the gap into the behaviour of one number per scale. I take A3 as the second approach because it fails in a different way (a rate and a threshold, not a constant of integration). I attack three cruxes below: (FE) of A1, (DEF) of A4, and (HESS) of A3. My plain judgement, argued in 1.4-1.6: none of the twelve closes by hand with structures I know; the reason is one and the same, and I state the best conditional theorem.

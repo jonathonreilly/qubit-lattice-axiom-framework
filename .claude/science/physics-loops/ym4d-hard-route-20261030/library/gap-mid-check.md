@@ -100,3 +100,58 @@ The step to monotonicity: psi = phi - eps s has D^+ psi <= -eps < 0. If psi(s_2)
 - Existence of a: a^4 alpha^(floor(a/2) - 1) -> 0 for alpha < 1. Correct.
 - **The example beta = 1/36, a = 90 holds.** alpha = 1/2; 768 beta/(1 - alpha) = 768/18 = 42.67 <= 42.7; floor(90/2) - 1 = 44; 90^4 = 65,610,000; 2^44 = 17,592,186,044,416, so 2^(-44) = 5.684 x 10^(-14); 42.7 x 6.561 x 10^7 x 5.684 x 10^(-14) = 1.592 x 10^(-4) < 1.6 x 10^(-4) <= 6 x 10^(-4). Second route, through eps directly: eps = 8 x 2^(-44) x 2 = 2^(-40) = 9.095 x 10^(-13); Phi_B <= 12 x 90 x 180^3 x (1/36) x 2^(-40) = 1.7496 x 10^8 x 9.095 x 10^(-13) = 1.591 x 10^(-4). Agree.
 - Remark (1) (beta <= 1/10 with the bound of `gap-zf-box-x.md`) is labelled "not ported" and used nowhere. A check of its plausibility: (B2) there gives total-variation influence at most c(x)/2 per neighbour, c(x) = x (1 + 9 x^2 e^(6x))^(1/2); at x = 1/10, c = 0.10789 and 9 c = 0.971 < 1. The factor 2 over Lemma INF comes from using the true variance of a coordinate under the near-Haar one-link law (about 1/4) in place of the worst case (osc/2)^2. Plausible; not proved here. Remark (2): 0.06/90 = 6.67 x 10^(-4) (the file writes 6.7 x 10^(-4), a rounding; the proved 0.074/a gives 8.2 x 10^(-4)). Remark (3): holds as a remark.
+
+## 6. The questions the row adds
+
+**Is Theorem DOB new?** Yes, as a proved statement in this repository; its method is classical (Dobrushin's comparison estimate).
+- Against `gap-seed-sc.md`: that file proves the seed on periodic tori for beta < 1/12800 by a zero-free disc (polymer expansion, complex beta, Theorem 1 (iii)). Theorem DOB proves the seed on periodic cubes for beta < 1/18, at real beta only, with no analyticity, through a different chain (Lemma M, Proposition MIX, Theorem D-shape (d)). The range grows by a factor of about 711. The rate is far worse (0.07/a with a = 90 at beta = 1/36, against 4 log(1/(12800 beta)) there), so it is not "a better constant" either: a wider range with a worse rate, by another route.
+- Against `gap-zf-box-x.md` Lemma 2.1 and 2.5.2: that file proves the one-link Dobrushin condition 9 c(x) < 1 (up to about 0.102) for boxes with free walls, as the real end of a complex zero-free tube, and only RECALLS (2.5.2) that it gives uniqueness and decay; its gap (Corollary 3.3) is on boxes with free walls, given (TM_B) and (SC_B), and astronomically small. It proves no comparison estimate and nothing on periodic tori. So Theorem DOB is not a restatement of it. Its Lemma INF is cruder than (B2) there by a factor of 2 per neighbour (threshold 1/18 against about 0.102); porting (B2) is row 708's proof item 2.
+- What it is not: still strong coupling, true for every compact group (the file says so in Remark (3)). No mass gap at a coupling of order one.
+
+**RECALLED and GUIDE statements: does any proof use one?** No numbered proof in Sections 4 to 8 and 10 uses one. I traced each input list: Lemma 4.1, 4.2, TR, LEV, Delta, TR1, CRIT, BE, M, MIX, DC, INF, DOB use only (TM), (TM-c), Lemma A, (LB), Theorem D-shape, Theorem SH, `gap-seed-sc.md` Theorem 1 (iii). Two places to keep honest: (1) the independence of the two parts in Section 6 is half RECALLED (Z_2 at large beta), as labelled; the PROVED half uses only the proved bullet of `gap-seed-shape.md` 4.1, not (P1), (P2). (2) The C-D verdict "worth beta < 1/3" rests on RECALLED curvature results (see Proposition BE above); it is a sentence, not a numbered statement. The "tests" (ii) and (iv) of every candidate, the readings of beta* as a phase transition, and the Ising threshold of Section 4.4 are tests or GUIDE; none is a proof step.
+
+**Does K7 enter any proof?** No. K7 (the fundamental-adjoint first-order line, RECALLED from Bhanot and Creutz) appears in the tests (iv), in the sentence after (NOCRIT), and in the author's conclusions 3 and 4. No numbered statement lists it as an input, and no proof line reads it.
+
+**Candidate C-E (not numbered; one remark).** "What it gives" holds if "each central plaquette of Q" includes all six orientations: both tori are invariant under all four translations, so abar is the mean of the six per-orientation means. (SYM) asks reflection positivity of the torus law; the usual proof of reflection positivity on a torus uses even periods, so read (SYM) with a and the sides of B even, or drop the word. No proof depends on C-E.
+
+## 7. Two independent hand tests
+
+**Test 1: Theorem DOB at beta = 1/54 (a second pair).** alpha = 18/54 = 1/3, 1/(1 - alpha) = 3/2, 768 beta/(1 - alpha) = 768/36 = 21.333. Condition: 21.333 a^4 3^(-(floor(a/2) - 1)) <= 6 x 10^(-4).
+- a = 50: exponent 24; 3^24 = 282,429,536,481; 50^4 = 6,250,000; 21.333 x 6.25 x 10^6 = 1.3333 x 10^8; quotient 4.721 x 10^(-4) <= 6 x 10^(-4). Holds.
+- Route two, through eps: eps = 8 x 3^(-24) x 3/2 = 12 x 3^(-24) = 4.249 x 10^(-11); Phi_B <= 12 x 50 x 100^3 x (1/54) x 4.249 x 10^(-11) = 1.1111 x 10^7 x 4.249 x 10^(-11) = 4.721 x 10^(-4). Agree.
+- a = 48 and 49 (exponent 23; 3^23 = 94,143,178,827): 48^4 = 5,308,416, value 1.203 x 10^(-3) > 6 x 10^(-4). Fails. So a_D(1/54) = 50 for this criterion.
+- Then S(50; 100^3; 1/54) <= exp(4.721 x 10^(-4)) - 1 < 4.723 x 10^(-4) < 1/1650, and m(L^3) >= 0.074/50 = 1.48 x 10^(-3) for L >= 3200. Consistent with the theorem.
+
+**Test 2: Corollary TR1 at b = 256.** t_0 = 8, a = 128, the allowed integral of K is log(128/8) = log 16 = 2.773. With theta <= 1/2, exact powers of 2 in place of the monotone bound of the file: Delta(8^4) <= 0.01 x 4096 x 2^(-32) x (1 + 2 x 10^(-5)) = 9.537 x 10^(-9); g(8; 256^3; beta_0) <= (256/8)^3 x Delta(8^4) = 32768 x 9.537 x 10^(-9) = 3.125 x 10^(-4) (the file's route gives 0.0101/32 = 3.156 x 10^(-4); both below 3.7 x 10^(-4)). After transport, S(128; 256^3; beta_1) < 3.127 x 10^(-4). Then s_1 <= exp(64 x 3.127 x 10^(-4)) - 1 = 0.02021; 22.2 s_1 = 0.4488; log(1/0.4488) = 0.8013; for k >= 4 (L >= 8192 = 32 b): m(L^3) >= (0.8013 - 0.8424/16)/128 = 5.85 x 10^(-3) > 0.12/256 = 4.69 x 10^(-4). Consistent; the file's constant is the worst case s = 1/1650.
+
+## 8. Summary
+
+| Statement | Verdict | What changes |
+|---|---|---|
+| Lemma 4.1 (a) | HOLDS | |
+| Lemma 4.1 (b) | HOLDS AFTER CORRECTION | add the dominated-convergence line for d/dt; t >= 4 is not needed, t > 3 suffices (t = 3 fails as proved) |
+| Lemma 4.2 | HOLDS AFTER CORRECTION | write the two-line proof that derivatives of convex functions converge where the limit is differentiable; abar_inf is defined outside N_B only |
+| Theorem TR | HOLDS | |
+| Remark CH | HOLDS | |
+| Remark LEV | HOLDS | |
+| Proposition Delta | HOLDS | |
+| Corollary TR1 | HOLDS | (one line: F(N^4)/N^4 tends to f because F/abs(n) is non-increasing in each side by unit steps) |
+| Theorem CRIT (a) to (e) | HOLDS | |
+| Identity FL, consequences, product model | HOLDS | |
+| Proposition BE | HOLDS AFTER CORRECTION | read abs(X)^2 as -2 tr X^2 (the unscaled norm); the C-D verdict and table should say "worth at most beta <= 1/3": the positive side below 1/3 is not proved |
+| Lemma M | HOLDS | |
+| Proposition MIX | HOLDS | |
+| Lemma DC | HOLDS AFTER CORRECTION | add the mass accounting for fact (c), and osc(f_i) non-increasing for Step 3 |
+| Lemma INF | HOLDS | |
+| Theorem DOB | HOLDS AFTER CORRECTION | positions on the circle R/aZ, or note that every plaquette of the slab [a - 1, a] has all its links in D |
+
+**No statement fails. No correction changes a threshold, a constant used downstream, or a conclusion.** The constants 8, 96, 768, 0.0101, 0.85, 0.128, 6.1 x 10^(-4), 5.1 x 10^(-4), 1/12800 and the example (1/36, 90) are re-derived. Every use of Theorem SH is a use of the corrected statement of row 707.
+
+**Defects, ranked by what they break (none breaks a consumer).**
+1. Theorem DOB, the distance: one proof sentence is false as written (wrap-around slab); the bound d >= floor(a/2) - 1 holds with the stated repair.
+2. Lemma DC, fact (c) and Step 3: asserted without the accounting; true with the two lines supplied.
+3. Proposition BE scope: the C-D verdict and the final table claim more than is proved ("worth beta < 1/3").
+4. Lemma 4.2: a recalled fact on convex limits, and abar_inf defined at every beta.
+5. Lemma 4.1 (b): differentiation under the integral not justified; the restriction t >= 4 is a convenience.
+
+**What the check does not show.** It is one reading by a model of the same provider as the author. It does not check (TM), (TM-c), Lemma A, (LB), Theorem SH or `gap-seed-sc.md` Theorem 1 (iii); those were checked in rows 671, 698, 699, 704, 707. It does not check any RECALLED or GUIDE statement. It does not decide whether (VIR-log), (NOCRIT), (MF), (S_0) or (BOOT_eps) hold. Nothing here bears on a mass gap at a coupling of order one. No numeric job was run (none was needed; all arithmetic is by hand above). Nothing was committed or pushed; the only file written is this one.

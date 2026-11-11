@@ -13,8 +13,8 @@ Row 720 of `FINISH.md`. Author run of Claude Fable 5.2 (model id claude-fable-5-
 
 - Section 0 (repo search, reading state, credits): done.
 - Part 1 (what each end gives): done (Section 1). Result: the account controls log Z of its own tori up to an additive term C l^4 with l above a floor, at one time extent; this gives no bound for S near the threshold. On a small physical torus S is large (RECALLED physics), so no small torus can hold the seed. The large end needs a cube of at least 12.9 of its own correlation lengths.
-- Part 2 (the flow; candidates and tests): not started.
-- Part 3 (real attempts): not started.
+- Part 2 (the flow; candidates and tests): done (Section 2). Fourteen candidates in three classes. Class I (S, the Casimir free energy, the doubling defect, the gap with the Casimir number, the thermal pressure) is sufficient for the seed, and its one-way step is false in every model without a seed, so the tests do not filter it. Class II (twist ratios, the Schrodinger functional coupling, the twisted Polyakov loop coupling, the force) holds the flux half at most and fails the test of a point with two confining phases. Two candidates are refuted in SU(2) itself as one-way statements. The account controls the base of no sufficient candidate.
+- Part 3 (real attempts): done (Section 3). Proved (unchecked): Lemma Z, Corollary Z1, Lemma Z3, Theorems ZD and ZD-c ((PHYS-SEED) is equivalent to: the Casimir free energy of the symmetric torus is bounded, and the gap of the periodic cube in units of the inverse side is unbounded), Corollary Z2 (a converse of Theorem S), Lemma DIL, Proposition MB (monotony along the coupling and one weak-coupling number give the bound), Proposition NM. A guide run refutes monotony for the Ising model in its ordered phase.
 - Part 4 (what must be extended): not started.
 
 ## 0. Repo search, reading state, credits
@@ -236,3 +236,194 @@ Three classes, by what (SUF_Q) can be.
 5. The account controls the base of no Class I quantity. Part 4 says what must be added.
 
 **What Part 2 does not find.** No quantity that is at once (a) controlled at small L by weak-coupling analysis, (b) sufficient for the seed, and (c) carried by a step whose proof at one value of Q is easier than the seed itself. The step for a Class I quantity at a value of order one is a statement about one pair of tori at a coupling of order one. It has the same form and the same difficulty as the seed. What the continuum form adds is the list of what the step may use that the fixed-beta problem could not: the trajectory is asymptotically free, so the base is at infinity for Class I, and the question is only whether the flow stalls.
+
+## 3. Part 3: real attempts
+
+Rule 0a, done before each attempt: `library/open-core.md` has no entry on a thermal sum, a Casimir free energy, a flux ratio or a monotone quantity. The FINISH rows that hold the neighbouring open statements are named in Section 0, and none of those statements is attacked here. Attempt 1 works on candidate Q3, Attempt 2 on candidate Q2. Both stay in Class I. Attempt 3 is the flux candidate Q5; it stops at the match with rows 697 and 708.
+
+Notation for this part: D(a) := Delta(a, a, a, a). For an integer rho >= 2, Phi_rho(n) := rho^4 F(n^4) - F((rho n)^4) >= 0 (four uses of Lemma A (a)), and Phi := Phi_2.
+
+### 3.1 Attempt 1: the seed from one gap and one Casimir number (candidate Q3)
+
+**Aim.** The seed asks for a thermal sum below 6 x 10^(-4). A thermal sum has two parts: how high the first level is, and how many levels there are. I separate them. The count is carried by the Casimir free energy of a smaller symmetric torus. What is left is one number, the lowest gap of the cube in units of its side.
+
+**Lemma Z (PROVED GIVEN Proposition Delta of row 708, checked row 709).** Let T_0 >= 3, b >= T_0 and T >= T_0 be integers. Then
+
+S(T; b^3) <= (exp((b/T_0)^3 D(T_0)) - 1) exp(-(T - T_0) m(b^3)).
+
+Proof. Put r_i = lambda_i/lambda_0 for the cube of side b; r_i <= r_1 = exp(-m(b^3)) for i >= 1. So S(T; b^3) = sum of r_i^(T - T_0) r_i^(T_0) <= r_1^(T - T_0) S(T_0; b^3). By Proposition Delta, g(T_0; b^3) <= (b/T_0)^3 D(T_0), and S = exp(g) - 1. QED
+
+**Corollary Z1 (the gap form of the seed; PROVED GIVEN Lemma Z).** Let b >= 12 be divisible by 4. If
+
+(C_b) b m(b^3) >= 256 D(b/4) + 29.64,
+
+then S(b/2; b^3) <= 1/1650, which is the seed of Theorem SH at the shape r = 2.
+Proof. Lemma Z with T_0 = b/4 and T = b/2: S(b/2; b^3) <= exp(64 D(b/4) - (b/4) m(b^3)). By (C_b), (b/4) m(b^3) >= 64 D(b/4) + 7.41, and log 1650 < 7.409. QED
+
+Remark (other shapes; same proof). For a shape r with threshold t(r), a time b/r and T_0 = theta b/r, 0 < theta < 1: the seed S(b/r; b^3) <= t(r) follows from b m(b^3) >= (r/(1 - theta)) [(r/theta)^3 D(theta b/r) + log(1/t(r))]. At r = 2, theta = 2/3 this is 162 D(b/3) + 44.5; at r = 4, theta = 1/2 it is 4096 D(b/8) + 25.8.
+
+**Lemma Z3 (a seed forces the Casimir free energy to zero; PROVED GIVEN Theorem S, Lemma E', Corollary S3' of row 697/699, checked).** Let N >= 3, s = S(N; (2N)^3) < 1/5041, q = 5041 s. For an integer L >= 2N let k >= 0 be such that D_k := 2^(k+1) N <= L < 2 D_k, and put s_k := q^(2^k)/5041. Then
+
+Phi(L) <= 15360 s_k and D(L) <= 1024 s_k. For L = D_k: Phi(L) <= 1920 s_k and D(L) <= 128 s_k.
+
+Proof. Step 1 (the doubling defect as four thermal terms). For a box B and a time n: F(n, B) = n e(B) + g(n; B), so 2 F(n, B) - F(2n, B) = 2 g(n; B) - g(2n; B) <= 2 g(n; B). Double the four sides of the torus n^4 one after the other and use the symmetry of Z to call the doubled side the time:
+
+Phi(n) = 8 d_1 + 4 d_2 + 2 d_3 + d_4, d_i = 2 F(n, B_i) - F(2n, B_i), B_1 = (n, n, n), B_2 = (2n, n, n), B_3 = (2n, 2n, n), B_4 = (2n, 2n, 2n).
+
+(Check: 16 F(n^4) = 8 d_1 + 8 F(2n, n, n, n) = 8 d_1 + 4 d_2 + 4 F(2n, 2n, n, n) = ... = 8 d_1 + 4 d_2 + 2 d_3 + d_4 + F((2n)^4).) So Phi(n) <= 16 g(n; B_1) + 8 g(n; B_2) + 4 g(n; B_3) + 2 g(n; B_4).
+Step 2 (the thermal terms). By Theorem S, S(D_k/2; D_k^3) <= s_k. Let H be a box with sides h_i in [D_k, 4 D_k). Lemma E' with a = D_k/2 and b = D_k, once in each direction, has the exponents h_i/(D_k - D_k/2) = 2 h_i/D_k < 8. So g(D_k/2; H) <= 512 log(1 + s_k) <= 512 s_k. If all h_i <= 2 D_k the exponents are at most 4 and the factor is 64.
+Step 3. Take n = L. The boxes B_i have sides L or 2L, all in [D_k, 4 D_k), and the time L is at least D_k/2; g does not increase with the time. So each g(L; B_i) <= 512 s_k and Phi(L) <= 30 x 512 s_k. For L = D_k the factor is 64 and Phi(L) <= 1920 s_k.
+Step 4. D(L) = sum over i >= 0 of 16^(-(i+1)) Phi(2^i L) (the telescoping sum of row 697, Proposition R). The size 2^i L lies in [D_(k+i), 2 D_(k+i)) and s_(k+i) <= s_k. So D(L) <= 15360 s_k/15. QED
+
+**Theorem ZD (four forms of the seed at one coupling; PROVED GIVEN Theorem SH, Proposition Delta, Lemma Z, Lemma Z3).** For a model of the class at one coupling the following are equivalent.
+
+- (A) There is N >= 3 with S(N; (2N)^3) < 1/5041.
+- (B) There is a >= 3 with D(a) <= 6.1 x 10^(-4).
+- (C) There is b >= 12, divisible by 4, with b m(b^3) >= 256 D(b/4) + 29.64.
+- (D) The Casimir free energy is bounded and the gap is not of the order of 1/b: there are a_0 and D_0 with D(a) <= D_0 for all a >= a_0, and the supremum of b m(b^3) over the multiples b of 4 is infinite.
+
+Proof. (A) gives (B): Lemma Z3 at L = D_k with k so large that 128 s_k <= 6.1 x 10^(-4). (B) gives (A): by Proposition Delta, S(a; (4a)^3) <= exp(64 x 6.1 x 10^(-4)) - 1 < 1/25. By Theorem SH (i) at the line r = 4, the numbers s'_k := S(2^k a; (2^(k+2) a)^3) satisfy 22.2 s'_k <= (22.2 s'_0)^(2^k), so they tend to 0. With N = 2^(k+1) a: S(N; (2N)^3) <= (s'_k)^2 by (T). (A) gives (D): Lemma Z3 gives D(L) <= 1024/5041 for every L >= 2N, and Corollary S3' gives m(L^3) >= log(1/q)/N for every L >= 2N. (D) gives (C): take a multiple b >= 4 a_0 of 4 with b m(b^3) >= 256 D_0 + 29.64. (C) gives (A): by Corollary Z1, S(b/2; b^3) <= 1/1650; by the line "r = 2, two stages" of `gap-seed-shape.md` 1.5, S(b/2; (2b)^3) < 1/25, which is the seed at r = 4 with a = b/2; then as in "(B) gives (A)". QED
+
+**Corollary Z2 (a converse of Theorem S; PROVED GIVEN Theorem ZD).** Let the periodic cubes have a uniform gap: m(b^3) >= m_0 > 0 for all b >= b_0. If the lower limit of D(a)/a, as a grows, is below m_0/64, then the model has a seed. So a model of the class with a uniform gap on its periodic cubes and no seed must have D(a) >= (m_0/64) a - 0.12 for all large a: its Casimir free energy grows at least linearly with the side.
+Proof. Choose a >= b_0/4 with D(a)/a <= m_0/64 - 0.116/a and put b = 4a. Then b m(b^3) >= 4 a m_0 >= 256 D(a) + 29.64, which is (C). QED
+
+Row 697 left open whether a uniform gap forces a seed ("it needs a bound on the number of states"). Corollary Z2 names the bound: sublinear growth of D. I do not know a model of the class with a uniform gap and linear growth of D. OPEN, not on the path.
+
+**Theorem ZD-c (the continuum form; PROVED GIVEN Theorem ZD and its inputs).** Let (a_j, beta_j) be a trajectory, and let P = {2^i l_1 : i >= 0} for one physical size l_1 such that l_1/(4 a_j) is an integer at least 3 for all large j. Put D^+(L) := the upper limit over j of D_j(L/a_j), and z^-(L) := the lower limit over j of (L/a_j) m_j((L/a_j)^3). In (Z-UNB) below, "unbounded" means: for every number C and every size L' there is L >= L' in P with z^-(L) > C. The following are equivalent.
+
+- (PHYS-SEED): there is l in P such that the upper limit over j of S_j(l/(2 a_j); (l/a_j)^3) is below the threshold of Theorem SH (1/5041, or 1/1650 with the two-stage line).
+- (PHYS-SEED-Delta): there is l' in P with D^+(l') < 6.1 x 10^(-4).
+- (BDD-Delta) and (Z-UNB) together:
+ (BDD-Delta) there are L_0 in P and D_0 with D^+(L) <= D_0 for every L >= L_0 in P;
+ (Z-UNB) z^- is unbounded on P.
+
+Proof. The proof of Theorem ZD, with every constant uniform in j. From (PHYS-SEED): fix q' < 1 with 5041 S_j <= q' for all large j; Lemma Z3 gives D_j <= 1024 q'^(2^k)/5041 at every size from 2^k l on, and Corollary S3' gives (L/a_j) m_j >= 2 (L/l) log(1/q'). From (BDD-Delta) and (Z-UNB): choose L_1 >= 4 L_0 in P with z^-(L_1) > 256 D_0 + 30; for all large j, (C_b) holds at b = L_1/a_j, with D_j(L_1/(4 a_j)) <= D_0 + 10^(-3), so S_j(L_1/(2 a_j); (L_1/a_j)^3) <= 1/1650. The step between the first two forms is "(A) gives (B)" and "(B) gives (A)" with uniform constants. QED
+
+**Corollary Z4 (a dichotomy in the plain gap variable; PROVED GIVEN Theorem ZD).** Let D(a) <= D_0 for all a >= a_0. Then either b m(b^3) < 256 D_0 + 29.64 for every multiple b >= 4 a_0 of 4, or there are N and c > 0 with m(L^3) >= c/N for every L >= 2N, so that L m(L^3) grows at least linearly. The gap of the cube in units of its inverse side cannot stay above 256 D_0 + 29.64 without growing for ever. In particular, at a coupling with no seed and bounded D (the critical coupling beta* of Theorem CRIT of row 708, if D is bounded there), every periodic cube of side b has a level within (256 D_0 + 29.64)/b of its ground state.
+Proof. If (C_b) holds for one such b, Theorem ZD gives (A), and Corollary S3' gives the gap. QED
+
+**What Attempt 1 gives.** The crux in continuum form is equivalent to two statements with no small number in them:
+
+- (BDD-Delta): the Casimir free energy of the symmetric torus stays bounded as the torus grows.
+- (Z-UNB): the lowest gap of the periodic cube, in units of the inverse side, is unbounded. By (TM-c) the space of the cube splits into the eight flux sectors, so (Z-UNB) says two things along one sequence of sizes: L m_0(L) is unbounded (m_0 the gap of the zero-flux sector), and L E_e(L) is unbounded for every flux e (E_e the lowest level of the sector e above the vacuum). The flux part is far weaker than an area law: it asks that the flux energy is not of the order of 1/L. With a bound D_0 on the Casimir free energy, one size with L m(L^3) above 256 D_0 + 29.64 is enough.
+
+The numbers 6 x 10^(-4) and "20 correlation lengths" are then consequences, through Theorem SH, and not hypotheses.
+
+**The tests in this form.** U(1) at weak coupling: (BDD-Delta) holds (GUIDE: scale invariance), (Z-UNB) fails: z stays bounded (the photon; the compact constant modes). Z_2 at large beta, and a point with two phases: (BDD-Delta) holds (D tends to the logarithm of the number of sectors or phases; RECALLED), (Z-UNB) fails: z tends to 0. SU(2) in five dimensions at weak coupling: (Z-UNB) fails, z falls with L (GUIDE). So in every comparison model the failing half is (Z-UNB), and (BDD-Delta) holds. I know one kind of model where (BDD-Delta) fails: a broken continuous symmetry, where the torus partition function carries a power of L from the zero modes (RECALLED; not a gauge model of the class).
+
+**A run that tried to refute Lemma Z (GUIDE; a run can refute, not prove).** Two-dimensional Ising model, exact transfer matrices on rings of 3 to 10 sites, six couplings from 0.15 to 0.6, free energy density from Onsager's formula. Tested: the two-dimensional forms of Proposition Delta (g(T_0; b) <= (b/T_0) D(T_0)), of Lemma Z (all T_0 <= b, all T from T_0 to 3b) and of Step 1 of Lemma Z3 (Phi(n) <= 4 g(n; n) + 2 g(n; 2n)). 4050 cases, no violation; smallest margin 2.3 x 10^(-7) in Proposition Delta. Script /tmp/gap-phys-seed-scratch/scripts/lemz_check.py on the Mac mini, not kept in the repository. The numeric lock was taken and released; memory free was 58 percent.
+
+### 3.2 Attempt 2: monotony along the coupling carries the bound on the Casimir free energy (candidate Q2)
+
+**Aim.** (BDD-Delta) is a statement at every large size. I look for a one-way statement that would carry it from one small size. The dilation identity gives the exact form of such a statement: a sign of a finite-size shift.
+
+**Lemma DIL (the Casimir free energy along the coupling; PROVED GIVEN Lemma 2 of run 2, quoted as Theorem D (f) in row 697, checked rows 698, 699).** f is convex in beta and f(0) = 0. Put abar_inf(s) := -f'(s)/6 where f is differentiable (all but countably many s). Then for every torus n:
+
+Delta(n; beta) = 6 abs(n) times the integral over [0, beta] of (abar_inf(s) - abar_n(s)).
+
+So Delta(n; .) is non-decreasing on an interval J if and only if abar_n <= abar_inf almost everywhere on J.
+Proof. F(n; beta) = -6 abs(n) times the integral of abar_n over [0, beta] (dF/dbeta = -6 abs(n) abar_n, F(n; 0) = 0). f is the limit of F/abs(n) along the cubes 2^k n_0, a limit of convex functions, so it is convex, and f(beta) is the integral of f' over [0, beta]. QED
+
+**(MONO-Delta)** on [beta_min, infinity): for every integer n >= 3, D(n; beta) is non-decreasing in beta there. In words: at every coupling above beta_min the mean plaquette action of a finite symmetric torus is at most that of the infinite lattice. On a trajectory the spacing falls as beta rises, so (MONO-Delta) says that the Casimir free energy of a torus of n sites does not rise when its physical size grows. It is the statement for the symmetric torus that the positivity of the interaction measure, eps - 3p >= 0, is for the thermal geometry.
+
+**Proposition MB (monotony and one weak-coupling number give (BDD-Delta); PROVED).** Let rho >= 2 be an integer, nu_0 > 0, and N := {nu_0 rho^i : i >= 0} a set of inverse spacings. Let beta be a non-decreasing function on N (the trajectory). Let L_0 be a size with n_0 := L_0 nu_0 an integer at least 3. Assume:
+
+- (MONO-Delta) on [beta(nu_0), infinity);
+- (BASE-Phi): Phi_rho(L_0 nu; beta(nu)) <= P_0 for every nu in N. This is a bound on the doubling defect of the two tori of sides L_0 and rho L_0, uniform in the spacing;
+- (APR): D(L_0 nu; beta(nu)) <= A for every nu in N, for some finite A.
+
+Then for every nu in N and every k >= 0: D(rho^k L_0 nu; beta(nu)) <= P_0/(rho^4 - 1). So (BDD-Delta) holds on the sizes rho^k L_0, with D_0 = P_0/(rho^4 - 1), uniformly in the spacing.
+
+Proof. Put M(nu) := D(L_0 nu; beta(nu)). The identity F(n^4)/n^4 - F((rho n)^4)/(rho n)^4 = Phi_rho(n)/(rho^4 n^4) gives D(n) = rho^(-4) (Phi_rho(n) + D(rho n)) at every coupling. At n = L_0 nu and the coupling beta(nu): M(nu) <= rho^(-4) (P_0 + D(rho L_0 nu; beta(nu))). The torus of rho L_0 nu sites is also the torus of the size L_0 at the finer spacing 1/(rho nu), where the coupling is beta(rho nu) >= beta(nu). By (MONO-Delta), D(rho L_0 nu; beta(nu)) <= D(L_0 rho nu; beta(rho nu)) = M(rho nu). So M(nu) <= rho^(-4) (P_0 + M(rho nu)). After i steps: M(nu) <= P_0 (rho^(-4) + ... + rho^(-4i)) + rho^(-4i) M(rho^i nu) <= P_0/(rho^4 - 1) + rho^(-4i) A. Let i grow. Last, by (MONO-Delta) again, D(rho^k L_0 nu; beta(nu)) <= M(rho^k nu). QED
+
+Remarks. (i) No scaling hypothesis is used: the torus of n sites at two couplings of the trajectory is one lattice object at two physical sizes. (ii) (APR) follows from the account as in 1.1.5 (iii) when L_0 is one of its tori. (iii) (BASE-Phi) contains only the two tori L_0 and rho L_0. If both are small it is a weak-coupling statement. It is not in the account (Proposition 1.1); Part 4 says what is missing. Its expected size is about 45 log(1/g(L_0)) at rho = 2 (GUIDE). (iv) Since the trajectory can start at any fine spacing, beta_min can be taken as large as one likes. (MONO-Delta) is then a statement at weak bare coupling only, but for every lattice size n, also for tori that are large in physical units.
+
+**Corollary MB1 (PROVED GIVEN Proposition MB, Theorem ZD-c).** (BASE-Phi), (MONO-Delta) and (Z-UNB) on the sizes 4 rho^k L_0 give (PHYS-SEED): it is enough that z^-(L_1) > 256 P_0/(rho^4 - 1) + 30 at one size L_1 = 4 rho^k L_0.
+
+**Is (MONO-Delta) true? Three known answers.**
+
+1. Two dimensions, Wilson SU(2) (RECALLED: the character expansion; not re-derived). The torus of A plaquettes has Z = sum over j of c_j(beta)^A up to the bulk factor, with c_j = I_(2j+1)(beta)/I_1(beta) increasing in beta. So D = log(1 + sum over j > 0 of c_j^A) is increasing: (MONO-Delta) holds.
+2. Wilson SU(2) in four dimensions, the two ends. For small beta, D(n) = sum of 16^(-(k+1)) Phi(2^k n) with Phi(n) = 192 n^3 (beta/4)^(4n) (1 + O(beta)) for n >= 5 (`gap-seed-sc.md` Theorem 2, checked row 704): the values rise with beta; the derivative is not bounded there, so the sign of the shift is not proved by this. For fixed n and large beta, D is about (3/2) log beta (GUIDE, 1.2): rising. The middle is open.
+3. **The Ising model: (MONO-Delta) is false in the ordered phase (GUIDE run, with the leading term by hand).** Exact transfer matrices of the two-dimensional Ising model, tori n^2 with n = 3 to 8 and (4, 8), (3, 9), couplings K = 0.02 to 1.20: D rises to a maximum above log 2 and then falls to log 2. Values: D(3^2) = 0.6971 at K = 0.56 and 0.6965 at K = 0.60, against log 2 = 0.6931; D(8^2) = 0.69384 at K = 0.50 and 0.69318 at K = 0.60. For the torus (4, 8): 0.7255 at K = 0.44, 0.7000 at K = 0.60. The reason, at leading order of the low-temperature expansion: on the torus a band of flipped rows between two walls that wrap costs 2n broken bonds, whatever its width, and a cluster of as many flipped spins that does not wrap costs more. For each ground state there are n(n - 1) such bands (two directions, and the pairs of n wall positions, each pair counted once for the two ground states). So D(n^2; K) = log 2 + n(n - 1) exp(-4nK) (1 + o(1)) as K grows: it tends to log 2 from above. A second run with 40 digits gives for the quotient (D - log 2)/(n(n - 1) exp(-4nK)) the values 1.038, 1.040, 1.022, 1.007 at n = 3 and 1.517, 1.246, 1.111, 1.033 at n = 4, for K = 0.8, 1.0, 1.2, 1.5. (The leading term is by hand; the remainder is not bounded here, so this is not a proof.) Scripts /tmp/gap-phys-seed-scratch/scripts/mono_check.py and lowT_check.py; lock taken and released each time; memory free 58 percent.
+
+So (MONO-Delta) is not a property of the class. It fails where a larger coupling means a larger box in units of the correlation length. Before the run I expected (MONO-Delta) to follow, for the abelian models, from the inequalities of Griffiths and Ginibre by identifying the links of the infinite lattice modulo the torus. That argument is wrong: the identification multiplies the coupling by the number of copies. The run refutes the conclusion for the Ising model. I record this because row 697 names an inequality of Griffiths type as one of the three tools that could prove the seed: for the Casimir free energy it would not give the sign.
+
+**Proposition NM (where monotony must fail; PROVED GIVEN Proposition Delta and Lemma Z3).** In a model of the class let beta_t < beta_1 be two couplings such that no size has a seed at beta_t and some size N has a seed at beta_1. Then for every large k, with n = 2^(k+1) N: D(n; beta_1) <= 6.1 x 10^(-4) < D(n; beta_t). So D(n; .) is not non-decreasing on [beta_t, beta_1], and abar_n > abar_inf on a set of positive measure there.
+Proof. At beta_t, (B) of Theorem ZD fails, so D(a; beta_t) > 6.1 x 10^(-4) for every a >= 3. At beta_1, Lemma Z3 gives D(2^(k+1) N; beta_1) <= 128 q^(2^k)/5041, which is below 6.1 x 10^(-4) for large k. QED
+
+Use. If the weights w_p of Proposition V, or SU(N) for N >= 5, have a seed on the weak side of their transition (GUIDE: both phases confine with a gap), then (MONO-Delta) is false for them. So a proof of (MONO-Delta) for the Wilson SU(2) weight must use what separates it from w_p, as for the seed itself. In the other direction: in a model where (MONO-Delta) holds on [beta_min, infinity), a seed that is lost at one coupling above beta_min is lost at every larger coupling.
+
+**What Attempt 2 gives.** A second reduction, by implication only:
+
+(BASE-Phi) and (MONO-Delta) and (Z-UNB) give (PHYS-SEED).
+
+(BASE-Phi) is one weak-coupling number. (MONO-Delta) is a sign with no small number in it; it is true at both ends of the Wilson axis (item 2, GUIDE at the weak end), true in two dimensions, false in ordered phases of other models, and open in the middle. (Z-UNB) is the crux in its plain form. This is not an equivalence: (PHYS-SEED) gives (BDD-Delta) but I do not know that it gives (MONO-Delta). The exact open statements are (MONO-Delta) on [beta_min, infinity) for Wilson SU(2), and (Z-UNB).
+
+### 3.3 Attempt 3: the flux candidate (Q5) stops at earlier rows
+
+In the continuum form the twist ratio of the symmetric torus, zeta(L), runs from 0 at small L (GUIDE) to 1 at large L, and the seed forces zeta >= 1 - 2t/(1 + t) (P2). The step from L to 2L splits into the two directions of the twisted plane and the two transverse directions. The first is Theorem F of row 697 (proved). The second is (TUBE') of row 697, the same open step as (MF) of row 708 and (VORT) of run 2. By rule 0a I stop here and name the match. The continuum form adds one remark, from Theorem ZD-c: for the seed the flux half is needed only in the weak form "L E_e(L) is unbounded", and not as an area law.
+
+### 3.4 Result of Part 3
+
+| Statement | Mark |
+|---|---|
+| Lemma Z: S(T; b^3) <= (exp((b/T_0)^3 D(T_0)) - 1) exp(-(T - T_0) m(b^3)) | PROVED GIVEN Proposition Delta (checked) |
+| Corollary Z1: b m(b^3) >= 256 D(b/4) + 29.64 gives the seed at r = 2 | PROVED GIVEN Lemma Z |
+| Lemma Z3: a seed gives D(L) <= 1024 q^(2^k)/5041 at every size L >= 2N | PROVED GIVEN Theorem S, Lemma E' (checked) |
+| Theorem ZD and ZD-c: the seed is equivalent to "D bounded and b m(b^3) unbounded"; (PHYS-SEED) is equivalent to (BDD-Delta) with (Z-UNB) | PROVED GIVEN the above and Theorem SH (checked) |
+| Corollary Z2: a uniform gap with sublinear D gives a seed | PROVED GIVEN Theorem ZD |
+| Lemma DIL, Proposition MB, Corollary MB1: (BASE-Phi), (MONO-Delta), (Z-UNB) give (PHYS-SEED) | PROVED (the hypotheses are open) |
+| Proposition NM: monotony fails between a coupling with no seed and a larger coupling with a seed | PROVED GIVEN Proposition Delta, Lemma Z3 |
+| (MONO-Delta) is false for the Ising model in its ordered phase | GUIDE (exact transfer matrices; leading term by hand) |
+| (Z-UNB); (MONO-Delta) for Wilson SU(2); (BASE-Phi) | OPEN |
+
+## 4. Part 4: what in the T0 chain must be extended
+
+**The best candidate.** It is Class I in the form of Corollary MB1: (BASE-Phi), (MONO-Delta), (Z-UNB). In the form of Theorem ZD-c, (BDD-Delta) with (Z-UNB), no base is needed at all, but then both statements live at large sizes. Only (BASE-Phi) is a statement that the T0 chain could supply.
+
+**What the T0 chain gives now, at this place.** (UV-Z) of 1.1.2 on tori of four equal sides above the floor l_*(g), with the additive error C l^4. It gives (APR) of Proposition MB (1.1.5 (iii)). It does not give (BASE-Phi): the doubling defect is a difference of two free energies, each known up to C l^4.
+
+**What (BASE-Phi) asks.** One number P_0 with Phi_rho(L_0/a; beta(a)) <= P_0 for all fine spacings a, where the two tori have the sides L_0 and rho L_0 (rho = L fits the tori of the account). P_0 enters the final threshold as 256 P_0/(rho^4 - 1), so an additive error of order one is enough; no small number is needed. The expected value is 15 x 3 log(1/g(L_0)) at rho = 2 (GUIDE). Three extensions are needed.
+
+- **E1, exact cancellation of the bulk between two tori.** In rho^4 F(n^4) - F((rho n)^4) every local term that does not wrap must cancel exactly, at every scale and for every kind of term (small-field terms, large-field terms, boundary terms, vacuum numbers). The complete account declares the needed statements for its localized terms: "Torus-independence of the localized terms" (CA-I 4.38, line 58187) and the torus-independence of the vacuum-energy density up to delta_vac-bar (CA-II 8.22, line 141276). I read only the second statement. What is left after the cancellation: the terms that wrap, and the difference of the two last integrals. Constants: the density bound delta_vac-bar is multiplied by the number of unit cells, so it is of order one only when the tori have at most about 1/delta_vac-bar unit cells; an exact cancellation, not a bound on a density, is what (BASE-Phi) needs.
+- **E2, below the torus floor.** The last integrals are those of the unit lattice with l^4 sites, l >= l_*(g), at the coupling g. The account bounds each by exp(C l^4) and does not evaluate it. To evaluate their difference the block steps must go on until the block lattice has a bounded number of sites on a side. That removes (RF35): the domains that wrap are then not exponentially rare, and their leading terms must be computed, not bounded. The backgrounds are flat connections with holonomies; the outline has the classical gap with holonomies of any size (SA L8733-8760, L9552-9565) and says that the interacting comparison "still need[s] their own quantitative comparison" (SA L8765-8771). Physical size: any L_0 such that the coupling at the scale L_0/(C_0 M) is below the ceilings of the account, C_0 a fixed number of blocks.
+- **E3, the constant modes.** The last integral, over the fields on a lattice of a bounded number of sites at small coupling, is not Gaussian. Near each of the sixteen flat connections with central holonomies the twelve constant modes have a quartic action, and along the valley of commuting holonomies the transverse modes have a frequency that vanishes at those points. This is Luscher's small-volume problem (1.2). For the partition function it is one finite-dimensional integral. For SU(2) in four dimensions the quartic integral is at the border of convergence (GUIDE: my count gives a logarithm of beta from the valley, the integral of d^4x/abs(x)^4 between the scales beta^(-1/4) and 1), so the compactness of the holonomies must be used. Output: Phi_rho(L_0) = (rho^4 - 1)(3/2) log beta_eff(L_0) up to lower terms, with an error of order one.
+
+**Is this extension of the same difficulty as the crux? No.** E1 to E3 are statements at small coupling. They are of the kind of the T0 chain itself: block renormalization on a torus, with one new finite-dimensional integral at the end. They are long. E2 changes the geometry of every step near the end (domains that wrap), and E3 is new work with no counterpart in the account. But no step needs a coupling of order one.
+
+**What the extension would not do.** It gives (BASE-Phi) only. It does not touch (MONO-Delta) or (Z-UNB). With the base alone nothing follows about the gap: the comparison models have a base too (2.3). So the extension has no value for (GAP) before a tool for (Z-UNB) exists. Its value by itself is a theorem short of the gap: the low spectrum of the continuum theory on a small periodic torus (run 2's (W3), and the statement of 1.2 that S is large there, which is RECALLED physics at present).
+
+**The extension that would be the crux.** To carry the T0 chain past first passage, to effective couplings of order one, is run 2's (EXIT) and is the crux itself. By the reading of (M3) in 2.1 it needs a bound on the distance of the effective actions from the Wilson weight at a coupling of order one. Nothing in the account, in this target or in the literature read gives such a bound.
+
+## 5. Final status, RESULT, and proof items for workers
+
+**No mass gap is proved. (PHYS-SEED) is open, and no tool for the flow across scales was found.**
+
+### 5.1 What this file adds
+
+1. *Part 1.* The exact place where the account stops: tori of four equal sides above the floor l_*(g), the logarithm of the partition function up to C l^4, at one time extent. Proposition 1.1: this is short of the seed by the number of unit cells. The small end is the wrong end for the seed: S is large on a small torus (RECALLED physics), and the seed needs a cube of at least 12.9 of its own correlation lengths (P1 for the shapes of Theorem SH).
+2. *Part 2.* A classification of the flow candidates by what they can imply. Only quantities that hold the whole thermal sum (Class I) can give the seed, and for them the tests in the valid form are no filter. Every coupling of the step-scaling kind (Schrodinger functional, twisted Polyakov loop, force, gradient flow) and every twist ratio holds the flux half at most or a local density, and fails at a point with two confining phases. Two candidates fail as one-way statements in SU(2) itself (the two-point coupling of the account; the gap of a twisted box). The reading of Proposition V for a flow: no step can be proved for all lattice actions with the Wilson quadratic form at large quadratic coupling.
+3. *Part 3.* (PHYS-SEED) is equivalent to two statements with no small number: (BDD-Delta), the Casimir free energy of the symmetric torus is bounded at large sizes; (Z-UNB), the gap of the periodic cube in units of its inverse side is unbounded (Theorems ZD, ZD-c; Lemmas Z, Z3). A converse of Theorem S given sublinear growth of the Casimir free energy (Corollary Z2). A dichotomy for the plain gap variable (Corollary Z4). An implication with one weak-coupling number and one sign: (BASE-Phi), (MONO-Delta), (Z-UNB) give (PHYS-SEED) (Proposition MB). (MONO-Delta) is not a property of the class (Proposition NM; the Ising run).
+4. *Part 4.* The extension of the T0 chain that the base needs (E1 to E3) is weak-coupling work, not of the difficulty of the crux, and has no value for (GAP) before a tool for (Z-UNB) exists.
+
+### 5.2 What this run did not cover
+
+(1) No proof of the account was read; its statements are quoted from the lines named in Section 0, and CA-III was not fetched. (2) The primary papers on the small-volume spectrum (Luscher; Luscher and Munster; Koller and van Baal) were not read; the numbers are from van Baal's review, pages 10-12 and 31-34. (3) The statements on the Schrodinger functional coupling at large size, on the twisted Polyakov loop coupling, on the gradient flow coupling and on the phases of the large-N torus are from memory. (4) Every entry of the tables of 2.3 about a comparison model is RECALLED or GUIDE. (5) The count kappa = 3 and the logarithm in E3 are my own counts on a fixed lattice, not proofs. (6) The low-temperature statement on the Ising model has its leading term by hand and its remainder from a run. (7) Lemmas Z, Z3, DIL, Theorems ZD, ZD-c, Corollaries Z1, Z2, Z4, MB1 and Propositions MB, NM, 1.1 are not checked by another model. (8) Boxes that are not cubes, and sides that are not multiples of 4, are not treated in Theorem ZD. (9) Whether a model of the class can have a uniform gap on its periodic cubes and no seed is left open (Corollary Z2).
+
+### 5.3 Proof items for workers (each is a complete brief)
+
+**Item 1, check (another model; high effort).** Check line by line `library/gap-phys-seed.md` Sections 1.1.5 (with Proposition 1.1), 1.3, 2.1 (Lemma FLOW), 3.1 (Lemma Z, Corollary Z1, Lemma Z3, Theorem ZD, Corollaries Z2 and Z4, Theorem ZD-c) and 3.2 (Lemma DIL, Proposition MB, Corollary MB1, Proposition NM). Inputs to open: `library/gap-crux-restate.md` Sections 1 and 3.4 (Lemma A, (LB), Theorem S, Lemma E', Corollary S3'); `library/gap-seed-shape.md` 1.4 and 1.5 (Theorem SH, the lines r = 2 and r = 4); `library/gap-mid-max.md` Section 4.3 (Proposition Delta) with `library/gap-mid-check.md`. Points to test first: in Lemma Z3, the decomposition Phi = 8 d_1 + 4 d_2 + 2 d_3 + d_4 and the range of the sides in Step 2 (exponents below 8); in Theorem ZD, the step "(B) gives (A)" (the use of (T) to pass from the shape r = 4 to r = 2) and the step "(C) gives (A)"; in Theorem ZD-c, the uniformity in j; in Proposition MB, the use of (MONO-Delta) at the torus of rho L_0 nu sites and the limit of rho^(-4i) A; in Lemma DIL, the convexity of f. Report the first failing step, or none. Output `library/gap-phys-seed-check.md`.
+
+**Item 2, lead note (no proof).** Record in `library/gap-skeleton-final.md`, next to (PHYS-SEED) in Section 13.14: (PHYS-SEED) is equivalent to (BDD-Delta) with (Z-UNB) (Theorem ZD-c of `library/gap-phys-seed.md`, unchecked until Item 1), and the classification of Section 2.2 (only quantities that hold the whole thermal sum can give the seed; the step-scaling couplings hold the flux half at most). State that the open statements on the path of (GAP) are now (Z-UNB) and (BDD-Delta), or (Z-UNB), (MONO-Delta) and (BASE-Phi).
+
+**Item 3, reading (Codex runner; downloads allowed; guide only).** Find published Monte Carlo values of the mean plaquette of four-dimensional Wilson SU(2) on symmetric periodic lattices n^4, n = 4, 6, 8, 12, 16, at the same couplings in the range beta = 1.5 to 3.0 (standard convention beta = 4/g^2), with their errors, and the infinite-volume or largest-lattice value at each coupling. Answer one question with a table: does the mean plaquette action 1 - (1/2) tr U_p on the smaller lattice exceed that of the larger lattice at any coupling, outside the errors? This tests (MONO-Delta) of `library/gap-phys-seed.md` 3.2 (the Casimir free energy of a symmetric torus does not fall as the coupling rises). Also quote, from the thermodynamics literature for SU(2), the sign of the interaction measure eps - 3p at all temperatures (the same statement for the thermal geometry). Output `library/prior/gap-mono-lit.md`. No proof step may use these numbers.
+
+**Item 4, reading (Codex runner; downloads allowed).** Read in full: M. Luscher, Nucl. Phys. B219 (1983) 233; M. Luscher and G. Munster, Nucl. Phys. B232 (1984) 445; J. Koller and P. van Baal, Nucl. Phys. B302 (1988) 1; P. van Baal, arXiv:hep-ph/0008206, Sections 2 to 4. Answer with quotes and page numbers: (a) which statements about the low levels of the periodic box are proved and which are computed (the effective Hamiltonian, the value eps_1, the flux splitting formula (12) of the review); (b) the range of z = m L in which each description is claimed to hold; (c) the published one-loop coefficients of the twisted box (Table 1 of the review) and the statement that z_0 falls with the volume there; (d) for the twisted Polyakov loop coupling (de Divitiis, Frezzotti, Guagnelli, Petronzio, Nucl. Phys. B422 (1994) 382) and the Schrodinger functional coupling: what is stated about their behaviour at large box size. This replaces the RECALLED marks of `library/gap-phys-seed.md` 1.2 and 2.2 by quotations. Output `library/prior/gap-small-volume-lit.md`.
+
+**Item 5, proof (author; medium effort; off the path of (GAP), a test of a statement).** Prove or refute by hand: for the two-dimensional Ising model on the torus n^2, n >= 3, D(n^2; K) = log 2 + n(n - 1) exp(-4nK) (1 + o(1)) as K tends to infinity, with a bound for the remainder (a convergent low-temperature expansion of log Z on the torus and of Onsager's f; the terms that do not wrap cancel). Then state the consequence: (MONO-Delta) of `library/gap-phys-seed.md` 3.2 fails for every n at large K. Known: a run with exact transfer matrices gives the quotient 1.007 at n = 3, K = 1.5 and 1.033 at n = 4, K = 1.5. Output `library/gap-mono-ising.md`. Say at the top that this is a statement about a comparison model.
+
+**Item 6, proof (author; only if the lead wants the base; long).** The fixed-lattice form of (BASE-Phi): for Wilson SU(2) on the tori n^4 and (2n)^4 with n fixed, prove Phi(n; beta) = (45/2) log beta + O(log log beta) as beta tends to infinity, by Laplace asymptotics at the flat connections (the sixteen central points with their twelve quartic constant modes, the valley of commuting holonomies, the gauge directions). Inputs: the chart of row 679 (`library/gap-twist-chart.md`) for the technique of a chart at a minimal orbit; Section 4, E3, of `library/gap-phys-seed.md` for the count. Stop rule: a proof, or the exact place where the valley integral is not controlled. This is a statement at one lattice size and is not uniform in the spacing; it does not give (BASE-Phi) on a trajectory. Output `library/gap-base-fixed-lattice.md`.
+
+**Not proposed.** A proof lane on E1 to E3 of Section 4 (the base on a trajectory): it is long weak-coupling work and has no value for (GAP) before a tool for (Z-UNB) exists. Another author run on a step inequality: Part 2 finds no candidate whose step at one value is easier than the seed.
+
+RESULT: no mass gap is proved and no tool for the flow across scales was found; stated exactly: the account controls log Z on its own tori (four equal sides above a floor) up to C l^4 at one time extent, which gives no bound for S near the threshold, and S is large on small tori (recalled physics), while the seed needs a cube of at least 12.9 of its own correlation lengths; fourteen candidate quantities classed and tested in the valid form: only those that hold the whole thermal sum can give the seed, the step-scaling couplings and twist ratios hold the flux half at most and fail at a point with two confining phases, and two candidates fail in SU(2) itself; proved here (unchecked): (PHYS-SEED) is equivalent to "the Casimir free energy of the symmetric torus is bounded and the gap of the periodic cube times its side is unbounded" (Lemmas Z, Z3, Theorems ZD, ZD-c), a converse of Theorem S under sublinear Casimir growth, and the implication "(BASE-Phi), (MONO-Delta), (Z-UNB) give (PHYS-SEED)" with Proposition NM; a guide run refutes monotony along the coupling for the Ising model; open: (Z-UNB) (the crux in plain form), (BDD-Delta) or (MONO-Delta) for Wilson SU(2), and the weak-coupling base (BASE-Phi), whose proof needs the T0 chain below its torus floor with the constant modes and is not of the difficulty of the crux.

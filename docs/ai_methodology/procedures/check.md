@@ -84,12 +84,12 @@ used. `steer` (`advance`: yes to questions two and three) is never standing.
 Body: `## Finding` (required unless `right`), `## Not run`, `## Steering`.
 
 `lab_ops.py status` computes standing. It rejects, by name, a record with a
-missing field, one session on both sides or a wrong `content`; a rejected
-`wrong` still blocks `checked`. A record counts while every hash matches the
-checkout and no live record `answers` it. `right` and `wrong` together leave
-the statement `argued`, shown as disputed; else a counterexample gives
-`refuted`, another `wrong` gives `open`, and a `right` gives `checked`, naming
-what it rests on that is not, circles included.
+missing, repeated or unknown field, one session on both sides or a wrong
+`content`; a rejected `wrong` blocks `checked` until a record `answers` it or
+the text changes. A record counts while every hash matches the checkout and no
+live record `answers` it. `right` and `wrong` together leave the statement
+`argued`, shown as disputed; else a counterexample gives `refuted`, another
+`wrong` gives `open`, and a `right` gives `checked`, naming reads that are not.
 
 ## Obstructions
 

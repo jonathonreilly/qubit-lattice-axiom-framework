@@ -254,6 +254,72 @@ So the Lipschitz constant of this transport grows like L delta on typical fields
 
 **D.4 Verdict on (T).** (a) The frame is exact: Lemma 1, Lemma 2. (b) The pointwise form of (T) is refuted for the product transport in the solvable model (Lemma 3), and no argument gives it for the gradient transport; the maximum principle fails at the soft directions. I do not claim a counterexample for the gradient transport. (c) The form that is necessary and sufficient is (T-avg). It involves the gap mode f_b itself. It is true in the solvable model with c of order 1/b (there gamma_L(b) is the diffusion constant 1/Var_b(eta) times (2 pi/L)^2). It says that the long-wave mode sees only an average of Hess phi; a proof would be a homogenization statement for the pair (phi_b, f_b), and no method gives that on the interval of couplings where it is needed. (d) So the attack ends with a sharper statement and not with a handle: **(T-avg) is the statement "the gap does not close faster than exponentially in b" in differential form.** Its use is as an a priori estimate in a continuity argument: the set of b with a uniform gap is open, and (T-avg) with a constant that does not depend on the gap would close it. What is missing is any bound of <f (-Delta) f> by b <|grad f|^2> that does not use the size of gamma.
 
+### 1.E Attack on the crux (RGI)
+
+**E.1 The exact frame.** Torus of sides (l_1, l_2; l_3, l_4), twist n_{34} = 1, Z_0 and Z_n the two partition functions, f_m = -log(Z_n/Z_0), r = (Z_0 - Z_n)/(Z_0 + Z_n) = tanh(f_m/2) = e^{-F_e}. Two representations, both from the transfer operator of the lattice theory, which is positive and self-adjoint:
+
+- time along 1 (or 2): Z_0 = Tr T^{l_1} on the periodic space of the slice (2,3,4), Z_n = Tr T_m^{l_1} on the slice space with the twist in (3,4);
+- time along 3 (or 4): Z_0 +- Z_n = 2 Tr_{even/odd} T^{l_3} on the slice (1,2,4), where even and odd refer to the centre operator V_4, which commutes with T.
+
+For a positive trace-class operator S put R(S, l) = log((Tr S^l)^2 / Tr S^{2l}) >= 0, the Renyi entropy of order two of the state S^l / Tr S^l. It is zero if and only if S^l has rank one, and it is small when l times the gap of -log S is large.
+
+*Lemma 4 (doubling identities).* (D-sheet) f_m(2 l_1) = 2 f_m(l_1) + R(T_m, l_1) - R(T, l_1). (D-plane) r(2 l_3) = r(l_3)^2 exp(R(T_even, l_3) - R(T_odd, l_3)). The same with 2 in place of 1 and 4 in place of 3.
+Proof. Tr S^{2l} = (Tr S^l)^2 e^{-R(S,l)} for each of the four operators. QED
+
+Consequences, all exact. (i) r(2 l_3) <= r(l_3)^2 e^{R(T_even, l_3)}: the electric flux free energy F_e is superadditive in the directions of its world sheet, up to an entropy. This is a recursion of the shape asked for in (F), f_m(2 l_3) <= (1/2) f_m(l_3)^2 e^{R} for small f_m. (ii) f_m(2 l_1) <= 2 f_m(l_1) + R(T_m, l_1): the magnetic free energy is subadditive in the directions of the vortex sheet, up to an entropy. (iii) For U(1) with the Gaussian (Villain) weight the classical parts satisfy both with equality and zero entropy difference: f = 2 pi^2 b n^2 l_1 l_2/(l_3 l_4).
+
+**E.2 Symmetric doubling.** Double l_3, l_4, l_1, l_2 in turn. With r small, f = 2 artanh r is about 2r, and
+
+f_m(2l) <= 4 f' + 2 R(T_m, l_1) + R(T_m', l_2), f' <= 2 r(l)^4 exp(2 R(T_even, l_3) + R(T_even', l_4)) (1 + o(1)),
+
+where the primes mean the operators on the tori already doubled. So f_m(2l) <= 8 r(l)^4 e^{entropies} + (three entropies of twisted sectors). **If all the entropies were below a constant times f_m(l)^2, the recursion f_m(2l) <= C f_m(l)^2 would hold, and with it, by Tomboulis-Yaffe, the area law.** The entropies are small exactly when, on each torus of the chain, the side being doubled is long against the inverse gap of the transfer operator across it.
+
+**E.3 Where it fails.** In the scaling region below the correlation length the gap of every slice operator is of order 1/l, the entropies are of order one (the Stefan-Boltzmann value for free gluons is about 1.2 for a cubic slice), and the additive entropies in (ii) alone keep the bound on f_m(2l) of order one. The recursion closes only on tori that are already larger than the correlation length in every direction. Below it the identities are bookkeeping: all the dynamics is in the finite-size terms C = log Z + f_infinity |Lambda| of the tori, and reflection positivity gives only C(2 l_i) <= 2 C(l_i) and convexity in each l_i. For U(1) these terms are scale invariant and never small. So (RGI) is not obtained: the missing statement is an upper bound for R(T_m, l) - R(T, l), the change of the entropy of a slab of thickness l caused by a twist in two of its long directions, in terms of f_m at the same scale. In a phase with screening this difference is exponentially small; proving it is the gap again.
+
+**E.4 What the attack found: thin tori.** The entropies can be made small without the gap by making tori thin. Take l_1 = l_2 = s with g(s) small, and l_3, l_4 long. Then the slice operators along 3 and 4 act on a system with two short directions, the reduced theory is two-dimensional, and a two-dimensional gauge theory confines by the Coulomb law. So on T^2_s x T^2_l the flux free energy has an area law with a tension of order g(s)^2/s^2 at tree level (in the untwisted case the light adjoint scalars made of the two holonomies do not screen a fundamental charge, but they make the reduced theory strongly coupled; the twisted case B14 has no light field). The step from two short directions to one short direction is the infrared problem of the three-dimensional theory (magnetic screening), and the step to none is the problem of this file. The cleanest member of the family has a twist in the short torus; it is added as B14.
+
+**Verdict on (RGI).** Exact doubling identities (Lemma 4) give the recursion in the directions of the sheet and reduce everything to entropies of slabs. No inequality bounds these entropies below the correlation length, and U(1) shows that none can follow from positivity alone. The attack fails at one named place: an upper bound on R(T_m, l) - R(T, l).
+
+**B14 (added to 1.B during the attack; own thinking, the physics is recalled from memory). The thin torus with a twist: a family in which every member is gapped at tree level at one end.**
+
+- *Mechanism.* Put the theory on R^2 x T^2_s with 't Hooft twist n_{12} = 1 in the small torus. The transition functions i sigma_1, i sigma_2 leave no constant mode: every component of the gauge field is antiperiodic in at least one short direction. All modes have mass at least pi/s at tree level. The gauge symmetry is broken to the centre by the boundary condition, and no Higgs field is used. When g(s) is small the theory is a weakly coupled massive theory in two dimensions with a Z_2 gauge symmetry. Its Wilson loops in R^2 have an area law from a dilute gas of centre vortices (fractional instantons of action 4 pi^2/g^2), with sigma ~ s^{-2} exp(-4 pi^2/g(s)^2). The gap is m(s) >= c/s.
+- **CRUX (AC').** inf over s of m(s) is positive, where m(s) is the gap on R^2 x T^2_s with the twist. For s below the unit of length the gap is a weak-coupling theorem to prove, (W-twist); for s large it is (GAP) up to finite-size terms; the content is the range of s where g(s) is of order one.
+- *U(1) test.* Passed at the first line: a pair of non-commuting transition functions does not exist in U(1). There the twist is a constant flux, the photon is neutral and stays massless.
+- *Known answers.* It is the small-torus row of A.2 without its defect: there are no flat valleys, so the gap is c/s and not g^{2/3}/s, and two directions are infinite. Adjoint Higgs test: the twist gives the same masses with the field present; the test applies only at large s, where the crux is.
+- *How it dies.* At (AC'), the wall. But (W-twist) is a theorem within reach of the method of the existence account plus a cluster expansion for a massive field and a dilute gas: a mass gap and an area law, at weak coupling, with two infinite directions, uniformly in the cutoff.
+
+### 1.F Attack on the crux (AC') of B14
+
+Setting: T_s is the theory on R^2 x T^2_s with the twist, at a fixed lattice spacing or in the continuum; m(s) is its gap and sigma(s) its string tension for loops in R^2. For each s it is a two-dimensional reflection-positive system whose "spin" at a point of R^2 is the field on the fibre T^2_s.
+
+**F.1 What is exact.**
+
+*Lemma 5 (in this family a gap gives the area law).* The twist operator tau(x), which inserts the twist n_{34} at a point x of R^2, is a positive local observable with e^{-2 b |S|} <= tau <= e^{2 b |S|}, |S| the number of plaquettes of the fibre. Hence f_m(L_3, L_4; s) = -log <tau> <= 2 b |S| for all L_3, L_4, and F_e = -log tanh(f_m/2) >= F_0(b, s) > 0, uniformly in the size of the large torus. With (D-plane) of Lemma 4: F_e(2 L_3) >= 2 F_e(L_3) - R(T_even, L_3). If the slice operator on T^2_s x S^1_{L_4} has a gap m in its even sector, uniformly in L_4, then R(T_even, L_3) <= C L_4 e^{-m L_3}, and iterating from L_0 = C' m^{-1} log(1/F_0) in both directions gives F_e >= sigma L_3 L_4 with sigma >= c F_0 / L_0^2. By the Tomboulis-Yaffe inequality this is the area law. So in the family, confinement is not a second problem: it follows from the gap by positivity. (The hypothesis "uniformly in L_4" is a finite-size statement that a constructive proof of the gap gives; it is not automatic.)
+
+*The untwisted family must have a transition.* Without the twist the centre symmetry of the short cycles is broken at small s (the holonomies sit at +-1) and unbroken at large s. So the untwisted thin torus has a critical point at s of the order of the correlation length, and no statement like (AC') holds for it. With the twist the holonomies are frozen at i sigma_1, i sigma_2, where tr P = 0: the centre symmetry is unbroken at both ends. This is the reason to choose the twist.
+
+*Small s (memory of the one-loop law).* sigma(s) ~ s^{-2} exp(-4 pi^2/g(s)^2) = Lambda^2 (s Lambda)^{5/3}, because 4 pi^2/g(s)^2 = (11/3) log(1/(s Lambda)) for N = 2. So sigma increases with s from zero and, extended to s ~ 1/Lambda, is of order Lambda^2; m(s) decreases from pi/s.
+
+**F.2 What was tried for the continuity itself.**
+
+1. *Monotonicity of m(s) or of s m(s).* Reflection positivity gives concavity of ground-state energies in a side length (1.B, B3), not monotonicity of a gap. For periodic or twisted boundary conditions there is no domain monotonicity.
+2. *The c-theorem in two dimensions.* For fixed s the c-function is monotone in the distance r. It relates nothing at different s, and its ultraviolet value is infinite (the theory is four-dimensional at r << s).
+3. *Derivative in s.* By dimensional analysis d log(s m)/d log s is the derivative in the coupling, which by (HF) of 1.D is a one-particle matrix element of the action density. No sign, no bound.
+4. *Doubling s.* A field on T^2_s with the twist is a field on T^2_{2s} without twist that is invariant under the half-translations combined with the colour rotations by i sigma_1, i sigma_2. So T_s is a symmetric sector of the untwisted theory at 2s. Positivity gives no inequality between a sector and the whole.
+5. *A general theorem for two-dimensional systems with compact fibre and range one.* Uniqueness holds at high temperature only. A continuous symmetry gives power-law bounds, not a gap.
+
+**Verdict on (AC').** One exact gain: in the family the area law follows from the gap (Lemma 5), so there is one crux and not two. The continuity itself is not touched by any exact tool. It fails at the same place as (T) and (RGI): the range of s where g(s) is of order one.
+
+### 1.G The choice after the attacks
+
+The attacks changed the order of 1.C.
+
+- (T), pointwise, is false for the product transport in a solvable model, and (T-avg) is the conclusion in differential form. B1 keeps its exact identities and loses its handle.
+- (RGI) is reduced by exact identities to entropies of slabs, and these are small only beyond the correlation length, or on thin tori.
+- The thin torus with a twist, B14, came out of that reduction. It is the only approach in this file whose first node is a theorem that looks provable now, by a mechanism that uses the group at its first line, and whose family contains the target as a limit without a change of phase at either end.
+
+**Final choice: B14.** Crux (AC'). Second approach, failing in a different way: B1 on the unit lattice, crux (T-avg), which fails for lack of an a priori estimate in the coupling and has no gapped member at weak coupling. The conditional theorem of B6 is kept as the fall-back form of the crux in finite volume. My judgement of 1.C stands: no approach here has a real chance at the crux with known methods; what the run gives is the exact form of the crux in three languages, the reductions that are exact, and one new theorem to prove short of the gap, (W-twist).
+
 <!-- PART1-END -->
 
 ## Part 2. The literature, after Part 1

@@ -3,7 +3,7 @@ lease_until: 2026-11-11T09:49Z
 
 # gap-zero-transport: from zeros of torus partition functions to a spectral gap
 
-Written by the author run of FINISH row 670 (`library/gap-skeleton-max-b.md`), as a self-contained unit for a line-by-line check. Proved by Claude Fable 5.2, not yet checked by another model. Research-stage working state. It grants no status. It proves implications only. It does not prove a mass gap.
+Written by the author run of FINISH row 670 (`library/gap-skeleton-max-b.md`), as a self-contained unit for a line-by-line check. Proved by Claude Fable 5.2, not yet checked by another model. Research-stage working state. It grants no status. It proves implications only. It does not prove a mass gap. Section 6 (boxes with free walls) is the version that the plan uses after its correction 2.5; Sections 2, 3 and 5 are about periodic tori.
 
 Credits. The transfer operator is classical (Luescher; Osterwalder and Seiler; not read in this run) and is the object of FINISH row 667 (`library/gap-transfer.md`, not opened by me). The twisted partition functions are 't Hooft's (not read). The two-constants theorem is Nevanlinna's and classical. The use of analyticity to get decay is in the manner of Lebowitz and Penrose (not read). The picture that zeros of the partition function in the complex coupling plane bound the flows to strong coupling, with numerical evidence for SU(2), is due to Denbleyker, Du, Liu, Meurice and Zou (arXiv:1005.1993, read). What is added here is the chain of exact inequalities from "no zeros" to a gap with a rate.
 
@@ -77,9 +77,31 @@ Remarks. (i) The hypothesis is that explicit entire functions have no zeros in D
 **Corollary B (scaling form; this is Corollary 5 of the plan).** Let a(beta) > 0 be a function on the real axis (the lattice spacing in physical units). Assume, for each n in a doubling sequence, a domain D_n as in Theorem Z, cut at Re beta = X_n, on which Z^(0)((2^j n)^4; .) has no zeros for all j, with theta and r_0 independent of n, and assume (HM): the harmonic measure of the circle in D_n satisfies omega(beta) >= eps a(beta) for real beta in [beta_1, X_n - s]. Then for such beta and n: Delta^(0)(n^4; beta) <= C (1 + X_n) n^5 exp(-kappa_0 eps' a(beta) n) with eps' = eps (1 - o(1)), and the gap of the zero-flux sector of the box n^3 is at least kappa_0 eps' a(beta) - (5 log n + C')/n in lattice units. In physical units, with l = n a(beta), the gap is at least kappa_0 eps' - (5 log(l/a(beta)) + C')/l. It is at least kappa_0 eps/2 once l >= C'' log(1/a(beta)).
 Proof. Theorem Z on D_n. The harmonic measure in the domain shrunk by 1/n differs from that in D_n by a factor that tends to 1 when X_n/n tends to 0 (in a strip of half-width w the exponent pi x/(2w) changes by pi x/(2 w^2 n)); this is the o(1). To be written out with the domain of (HM). QED given that estimate.
 
-## 6. What is not proved here
+## 6. Warning on Corollary B, and the version for boxes with free walls
 
-- (TM): row 667. (SC): to be written with constants.
-- (ZF) on any domain beyond the strong-coupling disc. This is the open crux. It is false for U(1) and for Z_2 on any domain that crosses their transitions, and (by simulations) for an SU(2) action with an adjoint term beyond its critical end point.
-- (HM) for the asymptotic-freedom domain, and the choice of D_n (tori that are physically large).
-- The passage from Corollary B to the continuum limit (rows 668 and the plan's item 6).
+**Warning.** On a periodic torus the hypothesis of Theorem Z can hold in the scaling region only in a tube of half-width pi/(4 c_a), where c_a = -d log a/d beta, because the zero-flux sector contains pairs of winding flux tubes and the vacuum energy contains winding sheets, whose weights involve the string tension, a quantity of dimension two (plan, 2.5). The harmonic measure of that tube decays like a(beta)^2. So Corollary B, applied to periodic tori, gives a lattice mass of at least c a(beta)^2 and no gap in physical units. Theorem Z and Corollary A stand as stated. The version that the plan uses is the following.
+
+Setting. B is a finite box in Z^3 with free boundary conditions: the links are those with both ends in B, the spatial plaquettes are those inside B, every link carries time-like plaquettes, time is periodic with k steps, and gauge transformations act at every site of B. Z(k, B; beta) is the partition function, entire in beta, with exp(-12 k |B| beta) <= Z <= 1 for real beta >= 0 (there are at most 6 k |B| plaquettes) and |Z(beta)| <= exp(12 k |B| max(0, -Re beta)).
+
+Input (TM_B). For real beta > 0 there is a positive semi-definite trace-class operator T_B with a simple largest eigenvalue lambda_0 > 0 and Z(k, B; beta) = Tr T_B^k for k >= 3. (The construction of row 667 with free walls; not written here.) Notation: s_k = sum_{i >= 1} (lambda_i/lambda_0)^k, gap m_B = log(lambda_0/lambda_1).
+
+Input (SC_B). There are r_0, C_0, kappa_0 > 0, independent of B, such that for |beta| <= 2 r_0, k >= 4, q >= 1: |log Z(k,B;beta) - (1/q) log Z(qk,B;beta)| <= C_0 |B| k exp(-kappa_0 k), with the branches of the logarithms that are real on the real axis (Z has no zeros in that disc).
+
+**Theorem ZB.** Let D be a domain as in Theorem Z (bounded, simply connected, symmetric, containing |beta| <= r_0 and [0, X), its part in Re beta <= 0 inside |beta| < 2 r_0, shape condition (TUBE) with theta, H = sup |Im beta|). Assume (TM_B), (SC_B) and
+(ZF_B) Z(k, B; beta) != 0 for all beta in D and all k >= k_0.
+Then for every real beta in D with beta > r_0: m_B(beta) >= kappa_0 omega_D(beta), where omega_D is the harmonic measure of the arc {|beta| = r_0, Re beta >= 0} in the domain {beta in D: Re beta > 0, |beta| > r_0}.
+
+Proof.
+Step 1. Fix k >= k_0, q >= 1. By (ZF_B) the functions L_1 = log Z(k,B;.) and L_q = (1/q) log Z(qk,B;.) are analytic on D. For both: the real part is at most 12 k |B| r_0 on D, and at real x in [0, X) the value is real and lies in [-12 k |B| x, 0]. The Borel-Caratheodory inequality on the disc of (TUBE), as in step 1 of Theorem Z, gives |L(beta)| <= 12 k |B| (r_0 + x)(1 + 4|y|/(theta d(beta))) for beta = x + iy in D, x >= 0.
+Step 2. Put g_q = L_1 - L_q. On D_k = {beta in D: Re beta > 0, |beta| > r_0, d(beta) > 1/k}: the boundary consists of the arc, a segment of the imaginary axis inside |beta| < 2 r_0, and points with d = 1/k. On the first two, |g_q| <= eps_k := C_0 |B| k exp(-kappa_0 k) by (SC_B). On the third, |g_q| <= M_k := 24 k |B| (r_0 + X)(1 + 4 H k/theta). Theorem LP: |g_q(beta)| <= max(M_k, 1) max(C_0 |B| k, 1) exp(-kappa_0 omega_k(beta) k) on D_k, where omega_k is the harmonic measure of the arc in D_k. The bound is uniform in q.
+Step 3. Let beta be real. By (TM_B), Z(k,B) = lambda_0^k (1 + s_k) and Z(qk,B) = lambda_0^{qk}(1 + s_{qk}) where s_j = sum_{i >= 1} (lambda_i/lambda_0)^j. Each ratio is below 1 and s_k is finite, so s_{qk} -> 0 as q -> infinity by dominated convergence. The powers of lambda_0 cancel in g_q. So g_q(beta) = log(1 + s_k) - (1/q) log(1 + s_{qk}) -> log(1 + s_k) as q -> infinity. Hence log(1 + s_k(beta)) <= max(M_k,1) max(C_0|B|k,1) exp(-kappa_0 omega_k(beta) k).
+Step 4. exp(-k m_B) <= s_k <= exp(R_k) - 1 with R_k the right side of Step 3. For k large R_k <= 1 and s_k <= 2 R_k. So m_B >= kappa_0 omega_k(beta) - (1/k) log(2 max(M_k,1) max(C_0|B|k,1)). As k -> infinity the domains D_k increase to the domain of the statement, omega_k(beta) increases to omega_D(beta) (harmonic measure is monotone in the domain and continuous under increasing unions), and the last term tends to 0. QED.
+
+**Corollary 5'.** If (TM_B), (SC_B), (ZF_B) hold for every box B with sides at least n_min on one domain D, and omega_D(beta) >= eps a(beta) for real beta >= beta_1, then m_B(beta) >= kappa_0 eps a(beta) for all those boxes and couplings.
+
+## 7. What is not proved here
+
+- (TM): row 667. (TM_B): the same construction with free walls, to be written. (SC), (SC_B): to be written with constants.
+- (ZF) and (ZF_B) on any domain beyond the strong-coupling disc. This is the open crux. It is false for U(1) and for Z_2 on any domain that crosses their transitions, and (by simulations) for an SU(2) action with an adjoint term beyond its critical end point.
+- The harmonic-measure bound for the asymptotic-freedom domain.
+- The passage from Corollary 5' to infinite volume and to the continuum limit, and the relation between limits of boxes with free walls and the periodic Gibbs states of the account (plan, nodes N9 to N11).

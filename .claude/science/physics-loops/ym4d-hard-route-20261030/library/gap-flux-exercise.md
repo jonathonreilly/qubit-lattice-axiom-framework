@@ -274,5 +274,127 @@ Rows whose drop would change an owner decision: c1, c3 (whether "gap with confin
 **What the fresh pass added.** C3 (c), (d); the kappa set and its Theorem S; the classification; (SR); C7; the slab form of C1.
 **What it only found again.** (F1), the zero-flux function, the full 64-twist sum, the statement that the even trace has no symmetric form, the split of the seed into a glue half and a flux half.
 
+## Step 6. The blockage: discard tests and set-aside methods
+
+Here T, the statement a tool must give, changes. Rows 712 and 720 judged every method against T_0 = the periodic seed on the whole space. By C3 the consumer is T_1 = (G_ev). By C6 three seeds give T_1.
+
+### 6a and 6d. Every method set aside, and its verdict re-judged for T_1
+
+Sources read first-hand: `gap-crux-fp.md` L222-246 (22 methods, row 712); `gap-phys-seed.md` L190-216 (Q1 to Q14, row 720; lines read to 330 characters, so the long cells are read in part); `gap-crux-fp.md` L114-124 and `gap-mid-max.md` L234 for W1 to W3. "As reported" means: valid as reported, not re-derived here, and the reason does not read the flux sectors.
+
+| # | Method (authors) | Reason given | Kind | Verdict for T_1 |
+|---|---|---|---|---|
+| W1 | A seed for the even sector by a sum over twists (row 712 Remark 2.A (d); row 708 Remark Y) | in a confining phase the magnetic twists cost little, so the sum has eight nearly equal top eigenvalues | fails a test; the test is RECALLED ('t Hooft) | **too strong.** It assumes equal weights. The sum with the sign (-1)^{Pf(k)} is symmetric and admissible (C5), and it holds no purely magnetic sector. What comes back: Theorem S for the kappa set (8.4). Range: wherever the dyonic sectors are heavy |
+| W2 | A gap for local observables in infinite volume as the target (row 712, a3) | "no finite criterion is known for it in a gauge theory" beside (DS-tw) | open premise | **corrected.** C3 with C6 gives three finite criteria; the full and kappa seeds do not need a gap on the whole space |
+| W3 | The zero-flux function of periodic tori in Route Z (run 2, `gap-skeleton-max-b.md` L450-452) | it holds pairs of winding flux tubes and winding sheets; the zero-free tube has measure a^2 | wrong quantity | as reported. It concerns zeros in complex beta, not this wall |
+| 1 | Griffiths-type inequalities (Griffiths, Kelly, Sherman; Ginibre) | hold for Z_2 and U(1), where the seed fails | test | the U(1) half stands (T_1 fails for U(1) at large beta). The Z_2 half is valid for T_0 only: see 6c |
+| 2 | Dual forms with positive weights | the same | test | the same |
+| 3 | A monotone quantity along the scale | restates the seed | circular | as reported |
+| 4 | Derivative in beta, (VIR_K), (DEF_K) | three ways failed | wrong quantity | as reported |
+| 5 | Bakry and Emery (Shen, Zhu, Zhu) | small beta only | small number | as reported; range as in row 712 |
+| 6 | Dobrushin on one link (Theorem DOB) | 18 beta < 1 | small number | as reported. It gives T_1 directly where it holds (all boundary values) |
+| 7 | Cluster expansion (Osterwalder and Seiler) | beta < 1/12800 | small number | as reported |
+| 8 | Zeros of Z along the coupling | radius shrinks with the gap | gap-dependent constant | as reported |
+| 9 | Polchinski flow, two-scale log-Sobolev (Bauerschmidt and Bodineau; Otto and Reznikoff) | Hessian bound at every scale; blind to the group | test; unverified | as reported |
+| 10 | Migdal-Kadanoff bounds (Tomboulis) | an unproved inequality (Ito and Seiler) | open premise | as reported |
+| 11 | Simon and Lieb; Aizenman and Simon | spin systems; includes O(2) | other setting | as reported |
+| 12 | Infrared bounds (Frohlich, Simon, Spencer) | order, not decay | wrong quantity | as reported |
+| 13 | Durhuus and Frohlich | comparison across two dimensions open | open premise | as reported |
+| 14 | Loop equations and bootstrap (Kazakov and Zheng) | numerical; local observables, not two volumes | rule f; wrong quantity | as reported. T_1 is still a statement on a box |
+| 15 | Twist ratios (Tomboulis and Yaffe; Kanazawa); (TUBE'); the Z_2 splitting (Mack and Petkova) | premise open at the needed coupling | open premise | valid. **Its place changes:** these tools give the electric flux half. By C3 that half is not on the path of the limit; it is on the path only inside the periodic seed |
+| 16 | Knabe; Lemm and Mozgunov | other setting; rate filter | other setting | as reported |
+| 17 | Gopfert and Mack | abelian | other setting | as reported |
+| 18 | Small-volume spectrum (Luscher; Koller and van Baal) | small volume only | other setting | as reported |
+| 19 | Orbit-space curvature (Singer; Mondal) | heuristic | unverified | as reported |
+| 20 | Random-cluster sharpness (Duncan and Schweinhart) | Potts gauge models | other setting | as reported |
+| 21 | Mixing on a box, (W), (DS-tw) (row 691) | a hypothesis; not verified at order one | open premise | as reported. It is the lane's one earlier criterion that reads no flux sector |
+| 22 | Large N (Kopper) | N large | small number | as reported |
+| Q1-Q4 | Flow quantities that hold the whole thermal sum (row 720, class I) | none is easier than the seed | circular / open | as reported for T_0. For T_1 each has a kappa form and a full form (S_kappa, the defect of W_kappa). Whether one of them is easier is not known; C8 (belief) says no for SU(2) |
+| Q5-Q8 | Twist ratios, Schrodinger functional, twisted Polyakov loop, force (class II) | they hold the flux half at most | wrong quantity | valid for T_0. For T_1: still wrong quantity (they do not hold S_ev) |
+| Q9-Q12 | Gradient flow coupling, the account's coupling, plaquette shift, kappa(b) | local, or monotone in every model | wrong quantity | as reported |
+| Q13 | The lowest zero-flux gap of a twisted box | (STEP) is false at weak coupling | fails in SU(2) itself (RECALLED one-loop number) | as reported. Note: the kappa set contains sectors of twisted boxes, so Q13's small-volume data bear on the kappa seed at small size |
+| Q14 | Route T, the twisted thin torus | its crux is (AC') | open premise | as reported |
+
+Where the corrected verdicts matter: W1 and W2 are on the path of (GAP), in the choice of the seed. The Z_2 half of rows 1 and 2 is off the path at present (no tool waits behind it).
+
+### 6b. First principles on the blockage
+
+A tool for this wall must give (G_ev): small even thermal sums on a sequence of cubes. Three kinds of statement can do it. (i) A seed on one size with a crossing step. Crossing exchanges electric and magnetic twists (C4), so the seed must be on a self-dual set of sectors, and there are three (C5). (ii) A bound over all boundary values of one cube ((DS-tw), row 691). (iii) An even step by another mechanism; none is known. The least a tool of kind (i) must use: which flux is heavy at the seed size. **The blockage in one sentence:** the step from one size to all sizes is a duality between the two time directions, the duality exchanges electric and magnetic flux, and so a one-size criterion that crosses must say which flux is heavy; for SU(2) that statement is confinement.
+
+### 6c. The discard tests in their logical form
+
+| Test (model M') | Class K | The exact T that fails in M' | How the failure is known | What a tool must use to pass | From which value it binds |
+|---|---|---|---|---|---|
+| U(1), four dimensions, weak coupling | groups that contain -1, Wilson-type weights | T_0, T_1, all three seeds, (GAP): the photon is centre-blind and lies in the even sector | THM recalled (Guth; Frohlich and Spencer), large beta only; no source read in this run | a property that U(1) does not have | from beta_U (row 712: GUIDE, about 1.01) |
+| Z_2, four dimensions, large beta | the same | **T_0 only** (the eight electric sectors are degenerate). T_1 and (GAP) hold; the full and kappa seeds are expected to hold | failure of T_0 at fixed size: proved by hand in `gap-seed-check.md` L191-195 given the Z_2 form of Lemma 1.1 (not written). The gap of plaquette observables: recalled, no source read | for T_0: a property that Z_2 does not have. **For T_1: nothing.** A tool for T_1 may hold for Z_2 at large beta | for T_0: from about 0.44 (row 712, GUIDE). For T_1: at the transition point only, and above it only for a tool whose hypothesis is monotone in beta |
+| Z_2 at its transition | the same | T_0 and T_1 (two phases: two nearly equal top eigenvalues in the even sector) | BELIEF (numerics; a first-order transition is not proved) | - | one coupling |
+| Product of SU(2) at small beta with an Ising model at large J (row 708) | the abstract setting | T_1 for the product algebra (S_0 tends to 1); T_0 too | PROVED GIVEN two recalled Ising facts (`gap-seed-shape.md` lead note, point 1) | - | shows that U small does not give S_0 small |
+| SU(2) on a small torus at weak coupling | SU(2) itself | all three seeds at small size (many low levels; in the twisted box m = (1,1,1) the sector e = (1,1,1) is degenerate with its vacuum, `gap-phys-seed.md` L110) | RECALLED small-volume physics | not a test of a tool: it bounds the seed size from below | - |
+
+**The corrected filter.** "Z_2 at large beta: the seed is false, and it must be" (`gap-crux-restate.md` L227; the range bound "about 0.44" for tools blind to the group, `gap-crux-fp.md` L280-281; "in every comparison model the half that fails is (Z-UNB)", `gap-skeleton-final.md` L562). Valid form: these are statements about T_0. For T_1 the model Z_2 at large beta is a model where the target holds. So it refutes no tool for T_1, and it constrains only tools for the periodic seed. A pass is still no support.
+
+**Are the tests enough?** For T_1 the lane has one test that rests on a theorem at large beta (U(1)) and none that separates the three seeds for SU(2). The statement "SU(2) is in the phase where electric flux is heavy" is a belief.
+
+## Step 7. Routes: generate, try to kill, rank
+
+`docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md` read in full before this step. No subagents: the passes below were made one after the other by the main agent, so they are not independent.
+
+**Exact target contract.** Target: (Q1), (Q2) of Step 1. Quantifiers: Wilson SU(2), one real beta, tori with sides at least 3; "one size" means one cube and one time. Allowed premises: the checked statements of Step 2 and (TM-tw). Forbidden weakenings: a hypothesis at all sizes sold as one size; clustering assumed for the limit. Edge cases: non-simple top eigenvalue of a sector sum; observables that touch a flip plane; time extents below half the side. Completion witness: a written proof, or an explicit model. Not closure: a belief about confinement; a run.
+
+**Routes.**
+
+| Route | Family (object; mechanism; terminal obligation) | Assumption dropped | What one must believe | First artifact | Cost | What it changes |
+|---|---|---|---|---|---|---|
+| A | the even state as a mixture of eight twisted states; a clustering state is not a mixture; no terminal obligation | c1, c6 | nothing | Theorem EV-L (8.2) | done | the limit half reads the even sector only |
+| B | the signed twist sum W_kappa; crossing; the kappa seed at one physical size | c3 | that the dyonic sectors are heavy at the seed size | Theorem S for W_kappa (8.4) | done; the seed is open | a second form of the crux, true in every phase where electric or magnetic flux is heavy |
+| C | the full twist sum; crossing; the full seed | c3 | that magnetic flux is heavy | the same theorem | done | a form of the crux for a deconfined massive phase |
+| D | the even trace and the sixteen crossed sectors; an even step with no flux sector; (EV-STEP) | c2 | that light flux at one size cannot make light even states at twice the size | (EV-LOSS), a test model (8.5, 8.6) | hours | confinement would leave the path |
+| E | conditional laws on one cube; Dobrushin-Shlosman mixing; (DS-tw) | c2 | a mixing bound at order one | row 691 | not attacked: row 691 owns it (rule 0a) | the same as D |
+| F (misframing pass) | "does (GAP) need the flux sectors" joins two questions. The limit does not (A). The step needs a choice of phase (C5). The question that replaces it: which of the three seeds can a tool reach, and can lattice data separate them at the seed size? | the framing | - | Step 6 | done | the name of the crux |
+
+**Outside view (literature).** No source was fetched in this run. All entries are recalled, or read as lines of the lane's digests.
+
+| Source | What it shows | Maps to the repo? | Reading state |
+|---|---|---|---|
+| 't Hooft, Nucl. Phys. B 153 (1979) 141 | twisted boundary conditions; electric flux sectors as a Z_N Fourier transform of twisted partition functions; duality between electric and magnetic flux free energies under the exchange of axes | yes: (F1), C4, (SR) re-derive the finite identities from items 5, 6 and (TM-tw) | recalled |
+| Aharony, Seiberg, Tachikawa, JHEP 08 (2013) 115 | theories with algebra su(2): SU(2), SO(3)_+, SO(3)_-; the last differs by a sign (-1)^{P(w_2)/2} in the sum over bundles; which line operators exist in each | names the three sets of C5; the sign on the four-torus is Pf(k) mod 2. The identification is not used in a proof | recalled |
+| Tomboulis and Yaffe (1985); Kanazawa; the Ito-Seiler criticism | inequalities between Wilson loops and twist ratios | already in the lane: `prior/gap-seed-lit.md` L69, row 697 Theorem F | digest line read |
+| de Forcrand and von Smekal (2002); Kovacs and Tomboulis (2000) | lattice data on twist and electric-flux free energies of SU(2) | would test belief e2 (size of the flux weights at the seed size) | recalled; not read |
+| Koller and van Baal; van Baal's review | small-volume spectra, twisted boxes | already in the lane: `prior/gap-small-volume-lit.md`, row 720 | digest lines read |
+
+**Lenses used.** (1) Finite groups and bilinear forms: the twist group Z_2^6, the pairing of electric with magnetic twists, self-orthogonal subgroups (toy: the two-dimensional Ising model with its three sector sets; falsifier: a fourth invariant set; artifact: 8.3 and the enumeration of 8.6). (2) Ergodic theory: extremal invariant states (toy: a mixture of two product states; falsifier: a positive functional below a clustering state that differs from it; artifact: 8.2). (3) Outside the lane's vocabulary: global forms of a gauge theory and one-form symmetry (item 23). Considered and found empty for this wall: number theory, logic and independence, K-theory and index theory, optimization.
+
+**Reframes tried.** Object against readout: the object (the transfer operator on the whole space) holds more than the readout (tr(F^2)) reads. Local pattern against global structure: flux is global, the target is local. Finite carrier against limiting family: (G_ev) is a family statement, the seeds are finite carriers. Obstruction against missing input: the even step is a missing input, not an obstruction.
+
+**Kill pass (same agent, separate pass; not independent).**
+
+| Route | Assumes the target? | Against a checked result? | Tried before? | Fails a valid test? | Rule broken? | Terminal obligation | Verdict |
+|---|---|---|---|---|---|---|---|
+| A | no | no; it agrees with Theorem L3 (b) where both apply | no (Step 5) | U(1): hypothesis (G_ev) false there, as it must be | no | none | survives |
+| B | no | no | no | U(1): the kappa seed is false (photon). Z_2 at large beta: no failure needed | no | the kappa seed: unknown/comparable to the periodic seed; not shown weaker for SU(2) | wounded: no proof that it is easier than the periodic seed; by C8 (belief) it is confinement again |
+| C | no | no | partly (Remark 2.A (c), (d)) | - | no | the full seed: believed false for SU(2) at large size | dead for SU(2) if item 16 holds (a belief, so not a refutation); survives for a deconfined massive model |
+| D | no | no | named open in row 712 | the inequality form of the even step fails in a two-dimensional test model (8.6, guide) | no | (EV-STEP): weaker than every seed; its truth is open | wounded: no mechanism |
+| E | - | - | row 691 | - | - | (DS-tw) | not attacked here |
+
+**Rank** (change if it works, over cost).
+
+| Rank | Route | Terminal obligation | Strength against (GAP) | Kill verdict | First artifact | What it changes | Stop or reopen |
+|---|---|---|---|---|---|---|---|
+| 1 | A | none | - | survives | 8.2 | consumer becomes (G_ev) | reopen only on a WRONG from the check |
+| 2 | B | kappa seed | sufficient; not known necessary | wounded | 8.4 | a second form of the crux | stop unless lattice data or a tool separates the kappa seed from the periodic one |
+| 3 | D | (EV-STEP) | sufficient with (G_ev); weaker than the seeds | wounded | 8.5, 8.6 | confinement off the path | reopen on a new mechanism that bounds the crossed flux weights |
+| 4 | C | full seed | sufficient | dead for SU(2) under belief 16 | 8.4 | - | reopen if SU(2) data showed heavy magnetic flux |
+
+**Approach registry (this wall).**
+
+| Family | Object | Mechanism | Terminal obligation | Strength vs target | Status | Evidence | Reopen condition |
+|---|---|---|---|---|---|---|---|
+| limit by mixture | even state = mixture of twisted states | extremality of a clustering state | none | - | candidate-complete (not checked) | 8.2 | - |
+| periodic seed | W = Z | crossing | (SEED-phys) | stronger than (GAP) needs | blocked: no tool | rows 697 to 720 | a tool at order one |
+| kappa seed | W_kappa | crossing | kappa seed | unknown/comparable | provisional | 8.4 | a separation from the periodic seed |
+| full seed | sum of all twists | crossing | full seed | believed false for SU(2) | retired for SU(2) (belief) | 8.4, Remark 2.A (d) | - |
+| even step | sixteen crossed sectors | none known | (EV-STEP) | weaker | blocked-local | 8.5, 8.6 | a bound on crossed flux weights from even data |
+| boundary values | conditional laws on a cube | Dobrushin-Shlosman | (DS-tw) | unknown | owned by row 691 | - | - |
+
 <!-- END -->
 

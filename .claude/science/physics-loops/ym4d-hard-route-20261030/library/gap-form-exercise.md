@@ -17,7 +17,16 @@ fetched from the URL of the row at revision `1eb15ac428`, read in full).
   `FINISH.md` sections "How we work", "Working efficiently" and "Rules" (read
   in full). This replacement is the one the skill allows for a standalone
   proof target.
-- What this run did not cover: filled in at the end (Section "Not covered").
+- **What this run did not cover** (kept true):
+  - No check by another model. No blind check of the plain version, and no independent kill pass (no subagents allowed; the passes of Step 7 are one session).
+  - **No proved case was read in full.** Read in part, with pages in 2.A: Gopfert and Mack (preprint pages 1 to 10 of 51 sheets; the proofs not read); Piazza and Shen (pages 1 to 5, parts of 8, 9); Forsstrom (pages 1 to 4); Adhikari and Cao (pages 1 to 6); Gosset and Mozgunov (pages 1 to 3); Nachtergaele (abstract, pages 10, 11); Martinelli's lectures (pages 9 to 11, 43, 44, from a crude text of the PostScript); Duminil-Copin and Tassion (pages 2, 9, 10); Kopper (pages 1 to 4); Ito and Seiler 0711.4930 (pages 1 to 8); Chatterjee 2602.00436 (pages 1 to 6). Abstract only: Shen, Zhu and Zhu; Tomboulis; Ito and Seiler 0803.3019.
+  - **Recalled, not read:** Osterwalder and Seiler; Knabe's own paper (read as quoted); Stroock and Zegarlinski; Martinelli and Olivieri (read through Martinelli's lectures); Ito's and Muller-Schiemann's papers on the Migdal-Kadanoff model; the two-dimensional character formula; the Peierls facts on the Ising model; the a-theorem; every statement on U(1) in four dimensions.
+  - Project Euclid (bot check) and the Hamburg server (403) refused downloads; I stopped there.
+  - The lane's own Theorem DOB was seen through one-line search hits only. Rows 712 and 720 were read in the ranges listed in Step 5, not whole. The 36 verdicts of rows 712 and 720 were not re-derived.
+  - The other branches were searched in part only; Section 5.3 lists what was and was not searched.
+  - (TM-tw-Z2), the Z_2 transfer operator with twists, is an input of Proposition Z2 and is not written anywhere in the lane.
+  - The sketch of 7.2 (route B) is not a proof. Routes A, C, D were not attempted.
+  - Nothing here is about SU(N), N >= 3, and no statement about SU(2) at a coupling of order one is proved.
 
 **Status block** (kept current).
 
@@ -26,13 +35,13 @@ fetched from the URL of the row at revision `1eb15ac428`, read in full).
 | 0 record, closed list | done | open and closed lists written; own literature pass, since the lane's digests are closed |
 | 1 wall twice | done | no blind check ran (no subagents) |
 | 2 inventory | done | ten source notes (2.A), the lane's statements (2.B), beliefs (2.C), one table (2.D) |
-| 3 reason up | done | C1 to C9: no proved case without exact closure has a step in the size; base = sufficiency in all of them; F is vacuous as logic, its content is the far base |
+| 3 reason up | done | C1 to C9: none of the proved cases read has a step in the size without exact closure; base = sufficiency in all of them; F is vacuous as logic, its content is the far base |
 | 4 assumptions | done | 23 rows; first five: b2 (N fixed), c1+c2 (F and the far base), a2+a1 (periodic, global), c4+c3 (one-way, scalar), c6 (class-wide) |
 | 5 compare | done; scope of the branch search in 5.3 | C1, C2, C4, C6 partly in rows 712, 720; C7, C9 found again; the form-by-form table and the Martinelli-Olivieri step are added |
 | 6 filters | done | no verdict of the 36 changes; one necessity claim (row 712, L92) is too strong as a claim about proofs; one in-class test added (compact Gaussian, every value above s_1) |
 | 7 routes | done | seven routes; E (a control inside class K) and F (a reading item) survive; A and C blocked-equivalent; B and D wounded; the form F retired as the default brief |
-| 8 attempts | not started | |
-| 9 report | not started | |
+| 8 attempts | done | Proposition Z2 (the full and kappa seeds of Z_2 at beta >= 91, N = 3; argued, given the Z_2 transfer operator); Remark 2D; one guide run, pass |
+| 9 report | done | the form is a habit as a proof form: none of the ten proved cases read has it outside exact closure; the wall stays: no known means to verify a criterion at the scale xi |
 
 ## Step 0. Where the record is; what is open and what stays closed
 
@@ -222,7 +231,7 @@ If no step exists, the missing input is one of three statements, which I cannot 
 
 ### 3.7 Conclusions
 
-- **C1.** No proved case without exact closure uses a (STEP) in the size to reach clustering. (A1 to A10; reading.)
+- **C1.** None of the proved cases A1 to A10 without exact closure uses a (STEP) in the size to reach clustering. (Reading; the proofs of A1 and A8 were read in their introductions only.)
 - **C2.** Where a (STEP) is proved, it is exact closure (A2, A9', A10), or it takes the clustering as its hypothesis (A6, second layer).
 - **C3.** In each proved case the criterion is verified at its own scale: base = sufficiency. What does it: a small number at the lattice scale; a second small number at the scale xi (dual activity, 1/N); exact computation; or a correlation inequality with a parameter, which gives a dichotomy.
 - **C4.** F is vacuous as a logical form (F3). Its content is the base far below the seed size. That clause is needed by the method (the account stops at small tori, L7). It is not needed by T.
@@ -444,3 +453,193 @@ Budget: about two hours. Before each attempt I searched `library/open-core.md`, 
 **What is run.** The oscillator product of the compact Gaussian model on the lattice, Pi_m := product over the non-zero momenta k of the periodic cube of side 2m of (1 - exp(-m eps_k))^(-1), with 2 cosh(eps_k) = 2 + sum over i of (2 - 2 cos(2 pi k_i/(2m))) (`gap-seed-shape.md` L225, L237), for m = 3, 4, 6, 8, 12, 16, 24. By F5 the two theta factors at rho >= 1/2 give a factor of at least 1.99 when the size doubles, and they do not depend on m. So on the lattice S(2m) > S(m) at every rho >= 1/2 if Pi_{2m}/Pi_m > 1/1.99.
 
 **Pass (registered 2026-11-11, before the run):** Pi_{2m}/Pi_m >= 0.51 for m = 3, 4, 6, 8, 12. Then F5 holds on the lattice at these sizes (a guide, not a proof for all m). **Fail:** a ratio below 0.51 at one of these m. Then the lattice remark in F5 is wrong at that size, and F5 stands for the continuum formula only. The run also prints s_1(m) = theta(1/4) theta(pi^2)^3 Pi_m - 1, the value of S at rho = 1/2. A run decides nothing; it can refute the lattice remark.
+
+**Result of the run (2026-11-11, 22:27Z; numeric lock held, holder `gfe-735-fable`; memory free 54 percent; one thread; script `/tmp/gfe-735/scripts/zr_step.py` on the Mac mini, printed in 9.8; not in the repository).**
+
+```text
+m= 3  Pi=3.013613  s_1=9.6863      ratio Pi_6/Pi_3   = 0.610308  pass
+m= 4  Pi=2.284136  s_1=7.0996      ratio Pi_8/Pi_4   = 0.759396  pass
+m= 6  Pi=1.839234  s_1=5.5219      ratio Pi_12/Pi_6  = 0.911387  pass
+m= 8  Pi=1.734563  s_1=5.1508      ratio Pi_16/Pi_8  = 0.955936  pass
+m=12  Pi=1.676253  s_1=4.9440      ratio Pi_24/Pi_12 = 0.981805  pass
+m=16  Pi=1.658131  s_1=4.8797
+m=24  Pi=1.645753  s_1=4.8359      theta(1/4) theta(pi^2)^3 = 3.546008      RESULT: PASS
+```
+
+Reading, as registered: **pass.** At the tested sizes the lattice form of F5 holds: for rho >= 1/2 the thermal sum of the compact Gaussian model grows when the size doubles (factor at least 1.99 x 0.61 = 1.21 at m = 3). s_1 is about 4.8 for large m (guide). The run did not move the wall. It supports the remark that the test of F5 binds on the lattice too; it proves nothing for other m. No adversarial check of this run was made; it is a positive guide, not a negative conclusion.
+
+### 8.1 Proposition Z2: in Z_2 gauge theory at large beta the full seed and the kappa seed hold at N = 3. A control; off the path of T0.
+
+**Why.** Row 731 expects this and does not prove it (`gap-flux-exercise.md` L337, L519). It is the proved case nearest to ours inside the lane's own frame: a four-dimensional gauge theory, the periodic seed false, (G_ev) true. The question of this run is how the seed is reached there.
+
+**Setting.** Torus n with all sides at least 3, |n| sites, 4|n| links, link variables sigma_l in {+1, -1}, plaquette variable sigma_p = the product of the four links. For a twist k in Z_2^6 with signs s^k_p as in `gap-flux-exercise.md` L111:
+
+Z^k(n) := sum over all sigma of the product over p of exp(-beta (1 - s^k_p sigma_p)), x := exp(-2 beta).
+
+A plaquette is *frustrated* (for k) if s^k_p sigma_p = -1. So Z^k(n) = sum over sigma of x^(number of frustrated plaquettes). W_full(n) := (1/8) sum over k of Z^k(n), W_kappa(n) := (1/8) sum over k of (-1)^Pf(k) Z^k(n) (Proposition CL (b)).
+
+**Input (not written in the lane).** (TM-tw-Z2): the statements (TM-tw), Lemma W and Theorem S-w of `gap-flux-exercise.md` L115, L503-513 for this model. The lane states that Theorem S holds for every group (`gap-crux-restate.md` L227) and uses the Z_2 transfer operator once, unwritten (`gap-seed-check.md` L191). For Z_2 the operators are finite matrices with positive entries. I use one consequence: 1 + S_w(N; (2N)^3) <= exp(Phi_w(N)), Phi_w(N) = 16 log W_w(N^4) - log W_w((2N)^4), for w = full, kappa.
+
+**Lemma Z2-a (flat configurations).** On the torus with sides m_1, ..., m_4 >= 2 and V = m_1 m_2 m_3 m_4 sites, the number of sigma with every sigma_p = +1 is 2^(V+3).
+
+Proof. *At least.* For g: sites -> {+1, -1} put sigma_xy = g_x g_y; every plaquette is +1. Two functions g give the same sigma only if they differ by a global sign (the torus is connected): 2^(V-1) configurations. For a set A of directions let Z_A flip every link (x, mu) with mu in A and x_mu = 0. A plaquette in a plane (mu, nu) holds two mu-links with the same coordinate x_mu and two nu-links with the same x_nu, so Z_A changes no plaquette. The product of sigma along a straight closed line in direction mu does not change under g and changes sign under Z_A exactly when mu is in A. So the 16 maps Z_A applied to the 2^(V-1) pure gauges give 16 x 2^(V-1) different flat configurations.
+*At most.* Tree T: the links (y, 1) with y_1 <= m_1 - 2; the links (y, 2) with y_1 = 0, y_2 <= m_2 - 2; the links (y, 3) with y_1 = y_2 = 0, y_3 <= m_3 - 2; the links (y, 4) with y_1 = y_2 = y_3 = 0, y_4 <= m_4 - 2. It has (m_1 - 1) m_2 m_3 m_4 + (m_2 - 1) m_3 m_4 + (m_3 - 1) m_4 + (m_4 - 1) = V - 1 links and joins every site to 0 by one path. For every sigma there is exactly one g with g_0 = 1 such that the gauge transform of sigma is +1 on T. So the number of flat sigma is 2^(V-1) times the number of flat sigma that are +1 on T. Let sigma be such a configuration. Call a link (y, mu) *inner* if y_mu <= m_mu - 2. (i) Every inner link is +1. For mu = 1 they are in T. For mu = 2, by induction on y_1: y_1 = 0 is in T; the (1,2)-plaquette at y - e_1 holds the links (y - e_1, 1) and (y - e_1 + e_2, 1), which are inner 1-links, and (y - e_1, 2) and (y, 2), so sigma(y, 2) = sigma(y - e_1, 2). For mu = 3: by induction on y_2 at y_1 = 0 with the (2,3)-plaquettes (their 2-links are inner), then on y_1 with the (1,3)-plaquettes. For mu = 4: the same with one more induction. (ii) Let (y, mu) have y_mu = m_mu - 1, and nu != mu with y_nu <= m_nu - 2. The (mu, nu)-plaquette at y holds (y, mu), (y + e_nu, mu) and two inner nu-links. So sigma(y, mu) = sigma(y + e_nu, mu). Hence sigma is one sign h_mu on all links (y, mu) with y_mu = m_mu - 1. There are at most 16 such sigma. QED
+
+**Lemma Z2-b (the twisted sectors).** Let k != 0, with k_{mu nu} = 1, and let rho, tau be the other two directions. Every sigma has at least n_rho n_tau frustrated plaquettes for k. So Z^k(n) <= 2^(4|n|) x^(n_rho n_tau).
+
+Proof (the argument of `gap-seed-check.md` L193-195, row 698's checker). Fix the coordinates x_rho, x_tau: a two-dimensional torus of (mu, nu)-plaquettes. Each of its links lies in exactly two of its plaquettes, so the product of sigma_p over it is +1. It holds exactly one plaquette of the stack of (mu, nu) (base point x_mu = x_nu = 0), and no plaquette of another stack. So the product of s^k_p sigma_p over it is -1, and it holds a frustrated plaquette. There are n_rho n_tau such tori, with disjoint sets of plaquettes. QED
+
+**Lemma Z2-c.** For the symmetric torus of side m, V = m^4: 2^(V+3) <= Z^0 <= 2^(V+3) + 2^(4V) x, and
+
+2^V <= W_full <= 2^V (1 + 2^(3V+3) x),  2^V (1 - (7/2) 2^(3V) x^(m^2)) <= W_kappa <= 2^V (1 + 2^(3V+3) x).
+
+Proof. Z^0: the flat configurations have weight 1 (Lemma Z2-a), every other has weight at most x, and there are 2^(4V) configurations. For k != 0, 0 < Z^k <= 2^(4V) x^(m^2) <= 2^(4V) x (Lemma Z2-b). W_full: the lower bound keeps k = 0; the upper bound is (1/8)(2^(V+3) + 64 x 2^(4V) x). W_kappa: Pf(k) = k_12 k_34 + k_13 k_24 + k_14 k_23 is 1 for exactly 28 of the 64 twists (count: the number of (a, b) in Z_2^3 x Z_2^3 with a.b = 1 is 7 x 4 = 28), and Pf(0) = 0. So W_kappa >= (1/8)(Z^0 - 28 x 2^(4V) x^(m^2)), and W_kappa <= (1/8) sum over k of Z^k. QED
+
+**Proposition Z2.** Given (TM-tw-Z2). For Z_2 gauge theory on four-dimensional tori and every beta >= 91:
+
+S_full(3; 6^3) < 1/5041 and S_kappa(3; 6^3) < 1/5041.
+
+Hence, by Corollary EV: (G_ev) holds along every sequence of sides, and every limit point of the periodic symmetric tori clusters exponentially on the centre-blind local functions, in all four directions, at the rate m_0 = log(1/(5041 s))/3, which is at least (2 beta - 182)/3 for beta >= 91.5. For general N >= 3 the two seeds hold at N when beta >= ((3 N^4 + 7) log 2 + 9)/2.
+
+Proof. N = 3, V = 81 at side 3 and V' = 1296 at side 6. Full: Phi_full(3) <= 16 log(1 + 2^(3V+3) x) - 0 <= 2^(3V+7) x = 2^250 x, because log W_full((2N)^4) >= 16 V log 2 and 16 log W_full(N^4) <= 16 V log 2 + 16 log(1 + 2^(3V+3) x). Now 250 log 2 < 173.29 and log(1/(1.9 x 10^(-4))) < 8.57. So for 2 beta >= 181.86, that is beta >= 90.93: Phi_full(3) <= 1.9 x 10^(-4), and exp(1.9 x 10^(-4)) - 1 < 1.91 x 10^(-4) < 1/5041. Kappa: Phi_kappa(3) <= 2^250 x - log(1 - (7/2) 2^(3V') x^36). For beta >= 91: 2^250 x <= exp(173.29 - 182) = exp(-8.71) < 1.65 x 10^(-4), and (7/2) 2^3888 x^36 <= exp(1.26 + 2695.0 - 6552) < 10^(-1000), so the last term is below 10^(-999). Sum below 1.9 x 10^(-4). The rate: s <= exp(Phi) - 1 <= 1.001 x 2^250 x, so 5041 s <= exp(8.53 + 0.001 + 173.29 - 2 beta) <= exp(182 - 2 beta). General N: the same with V = N^4; the kappa term needs 8 beta N^2 > 48 N^4 log 2 + 2, which the stated bound gives for N >= 3: it gives 2 beta > 3 N^4 log 2, so 8 beta N^2 > 12 N^6 log 2 = (N^2/4) x 48 N^4 log 2 >= 2.25 x 48 N^4 log 2. QED
+
+**Standing.** argued (Claude Fable 5.2, not checked), given (TM-tw-Z2), which is not written anywhere in the lane, and given Corollary EV (checked for SU(2); its proof uses only the class properties and (L), whose Z_2 form is also not written). The arithmetic is by hand: 250 x 0.693148 = 173.287; -log(1.9 x 10^(-4)) = 8.568; 3888 x 0.693148 = 2694.96; 72 x 91 = 6552; log 5041 = 8.525.
+
+**What it shows for this run.**
+
+1. *A consistency test of the lane's machinery on a proved case.* The conclusion (exponential clustering of functions of plaquettes at large beta) is a theorem of Forsstrom (A3: for 30 exp(-4 beta) < 1, with a rate of about 4 beta per lattice unit). Corollary EV gives the weaker rate (2 beta - 182)/3 on a smaller range. No contradiction. Had the full seed implied a false statement here, Corollary EV would have been refuted.
+2. *The form.* The seed is verified at the lattice scale, at the size N = 3 where it is used, by a small number. Base = sufficiency. There is no step. The periodic seed is false in the same model (`gap-seed-check.md` L191-195: s >= 7 - o(1) at fixed size), so the choice among the three seeds is the whole content here: the choice of the phase.
+3. *It moves the wall in no direction for SU(2).* It turns "expected" (row 731) into "argued, given (TM-tw-Z2)", and with it the corrected Z_2 test of row 731 has a proof inside the lane for the first time (for the range beta >= 91; the true range is far larger).
+
+### 8.2 Remark 2D: the form F in two dimensions (found again; the reading is added)
+
+For two-dimensional Wilson SU(2) on the torus of sides a, b: Z(a, b) = (bulk factor)^(ab) sum over j = 0, 1/2, 1, ... of c_j^(ab), with c_j = I_{2j+1}(beta)/I_1(beta) in (0, 1) for j > 0 (`gap-skeleton-max-b.md` L316, `gap-phys-seed.md` L369; recalled there, not re-derived here). So the transfer operator of the circle of length b has the eigenvalue ratios c_j^b, each once, and
+
+S(a; b) = h(ab), h(A) := sum over j > 0 of c_j^A.
+
+The thermal sum depends on the area only. Put Q(L) := S(L/2; L) = h(L^2/2). Then: (BASE) Q(L_0) = h(L_0^2/2) is finite at every size; (STEP) Q(2L) = h(4 x L^2/2) = sigma(Q(L)) with sigma := h(4 h^(-1)(.)), and sigma(x) < x for every x > 0 because h is strictly decreasing; in particular Q(2L) <= c_{1/2}^(3 L^2/2) Q(L); (SUFF) Corollary S2 of `gap-crux-restate.md` L215: Q <= 1/20. So F fits, at every beta, with an exact step at every value. *argued, given the recalled character formula.*
+
+Why it fits: the partition function of every torus is a function of one number, the area, and the whole flow is the one function h. This is exact closure in its plainest form, and it is the same fact that carries A2 (the block weight is w^{*n}). In four dimensions the torus (n_1, ..., n_4) has no such reduction, and block integration leaves the family of plaquette weights.
+
+### 8.3 What was not attempted, and what each deferred test waits on
+
+- Route F (a precedent against B4): a reading item; it waits on the lead and a reading lane (work item 2).
+- Route B: the sketch of 7.2 (failure of the unrestricted all-boundary criterion in Z_2 at large beta) was not proved. The smallest test: a Peierls bound for the sheet spanned by a boundary loop in a box of side 4. It waits on a decision whether row 691's form stays on the list at all.
+- Route D: not attempted; Lemma NP of row 733 is the known obstruction.
+- (TM-tw-Z2) was not written. It waits on work item 3, and it is worth doing only if Proposition Z2 is to be kept as a library control.
+
+**Summary of Step 8.** One proposition with a proof (8.1, a control, off the path of T0), one remark (8.2), one guide run with its registered reading (8.0, pass). None moves the wall for SU(2).
+
+## Step 9. Report
+
+Every claim carries a mark. "argued" = proved in this file by Claude Fable 5.2, not checked by another model. "reading" = my reading of a source, with the pages of 2.A.
+
+### 9.1 The wall, in plain words (corrected)
+
+We want to show that the lightest particle has a positive mass. The plan needs one inequality on one large box, many particle wavelengths wide. Our account controls only very small boxes. So the lane gave every tool one shape: a number that is known on a small box and can only improve each time the box is doubled. This exercise looked at the models where a positive mass, or the decay of correlations, is proved, and asked whether those proofs have that shape. They do not, with two kinds of exception: models in which the doubling can be done exactly (two dimensions; a simplified model), and a doubling rule that takes the decay of correlations as already known. Every other proof checks its criterion directly at the scale where it is used. It can do so because something is small at that scale, or because of a special inequality that our theory is not known to have. So the doubling rule is a habit of the lane. Dropping it opens no door by itself: what is missing is the thing that makes a direct check possible.
+
+### 9.2 What the exercise found
+
+1. **None of the proved cases read has the form, outside exact closure** (C1, C2; reading; table 2.D; each source read in part). Ten families were read from open copies. A one-way step in the size is proved in two-dimensional gauge theory (Piazza and Shen; the exact formula) and in the Migdal-Kadanoff model (recalled), where block integration is exact, and in the recursion of Martinelli and Olivieri, whose hypothesis is the clustering itself. Three-dimensional U(1) (Gopfert and Mack), strong coupling, finite groups at weak coupling, the criteria of Knabe and Nachtergaele, sharpness (Duminil-Copin and Tassion) and O(N) at large N (Kopper) have none.
+2. **In all of those the criterion is verified at its own scale** (C3; reading). What makes that possible is one of four things: a small number at the lattice scale; a second small number that survives to the correlation length after an exact change of variables (the monopole activity; 1/N); exact closure; a correlation inequality with a parameter, which gives a dichotomy "a criterion at some size, or order".
+3. **The form is empty as logic** (F3; argued). Every model with a seed fits it with the base at the seed size. Its content is one clause: the base lies far below the seed size. That clause comes from the method (the account stops at small tori). The target does not ask for it.
+4. **The form was tried once in exactly this setting, and it failed where it had to tell SU(2) from U(1)** (C7; found again in rows 669, 670, 712; Ito and Seiler read first-hand here).
+5. **For the lane's own quantity, no step can be proved from the properties of the class at any value above about 4.8** (F5; argued for the continuum formula of `gap-seed-shape.md`; the number is a guide; a registered guide run passes on the lattice for sizes 3 to 24).
+6. **A proved control inside the lane's frame** (Proposition Z2; argued, given the Z_2 transfer operator, which the lane has not written). In Z_2 gauge theory at beta >= 91 the full and the kappa seed hold at N = 3. Corollary EV then gives the clustering that Forsstrom proved by other means: the lane's machinery passes a test on a case with a known answer. The seed is reached there with no step.
+7. **What changed since the start.** Nothing for SU(2): no seed, no step, no gap. What changed is the brief (9.4, 9.5) and one sentence of row 712 (9.3).
+
+### 9.3 Filters corrected
+
+- **N1, a necessity claim** (`gap-crux-fp.md` L92, row 712; the origin of the form F of row 720): "A proof in R2 must contain, in some form, the statement that the flow goes one way: a quantity defined at each scale ... for every value of the quantity." **Too strong as a claim about proofs.** Valid form: the theorem implies such a flow trivially (F3), so the sentence is true and empty; the proofs that cross many scales (A1, A8) contain no such quantity and use a two-sided control with a small number. Range: wherever the sentence is used to shape a brief. What comes back: the crux stated as (U), (I), (J) of 3.4. *reading plus F3; not checked; by the skill's rule this is a suggestion until a check reads A1 and A8 beyond their introductions.*
+- **N4** (`gap-crux-fp.md` L62): "one number cannot be enough". Valid for the free energy of periodic boxes. Too strong in general: the criteria of A3, A4, A6, A7 are statements at one size; they are not about periodic boxes. *reading.*
+- **A test added, not a correction:** the compact Gaussian model with R = rho/n, as a test of a step at each value (6c). Row 720 had the U(1) form of it as a guide.
+- **Verdicts:** none of the 36 (rows 712, 720) changes. None was re-derived. For one (method 10) the source was read first-hand; for two (method 3 and candidate Q1) F5 is an argument of this run.
+- **A new kind of test.** A model where the target is true tests necessity claims, not tools. The lane had none before; A1 to A10 and Proposition Z2 are its first.
+
+### 9.4 Routes worth doing (at most three)
+
+1. **The check of this file** (work item 1). Believe: nothing. Cost: one check lane. First test: A1 and A8 read past their introductions; if either proof holds a one-way step in the size used above its threshold, C1 falls. Change: N1 and the brief rule of 9.5 stand or fall with it.
+2. **A reading item against belief B4** (work item 2). Believe: that a proved gap may exist at a correlation length far above the lattice spacing with no small number, no exact closure and no correlation inequality. Cost: one reading lane. First test: the hierarchical O(N) model and the Gross-Neveu model, read for the scale at which the mass is proved and for whether the join with the ultraviolet flow is proved. Change: a template, if one exists; otherwise C8 moves from a belief toward a documented statement about the literature.
+3. **One paragraph in the skeleton** (the lead; no lane). State the crux as: a criterion at the scale xi ((I)), and the class of effective actions on which it is proved ((J)); list the four means of 9.2 and why each is absent. Believe: nothing. Change: the line "Not queued: another author run on a step inequality" gets its reason, and a rule for when an author run is justified: its brief must name one of the four means, or a fifth.
+
+### 9.5 What not to do next
+
+- **No long author run whose brief is a one-way step for a torus quantity.** Reasons: C1 (no precedent outside exact closure), F5 (no class-wide step above about 4.8 for the lane's quantity), C7 (the one attempt), and row 720's own result (each candidate step is as hard as the seed). This agrees with the lead's "Not queued" of 13.15 and 13.16.
+- **No author run on (Z-UNB), or on a criterion at the scale xi, without a named mechanism.** Theorem ZD of row 720 already reduces the seed to (Z-UNB); the four means are the known mechanisms.
+- **Do not hope for monotony in the coupling.** In A1 it carries the result toward strong coupling. For SU(2) the seed is known at strong coupling and wanted at weak coupling (F4; argued, given the rate filter).
+- **Do not use "it needs a small number" to set a tool aside.** Every proved tool outside exact closure needs one (C3). The reason is valid only as a range.
+- **Do not read a positive control as support for a tool.** It refutes a necessity claim, or it shows which means a proof used.
+
+### 9.6 The exact price
+
+No equivalence is proved here. The price, in words: **T needs a criterion verified at a scale of at least one correlation length, and none of the proved cases read verifies one without a small number, exact closure or a correlation inequality.** The three candidate statements (P-a) a seed, (P-b) a restricted all-boundary criterion, (P-c) a two-sided bound on the effective action at coupling of order one, are not shown equivalent. This part of the exercise is a map with marks, and I say so: by the skill's list the run delivers one route with its first test run (route E, a control, off the path of T0), two filter corrections that are suggestions until checked, and one in-class test.
+
+### 9.7 Work items
+
+**Item 1 (first): check of this file.** A model that did not write it reads `library/gap-form-exercise.md`. Statements, in order: F3, F4, F5 (Step 3.1); Lemma Z2-a, Lemma Z2-b, Lemma Z2-c, Proposition Z2 (8.1); Remark 2D (8.2). Readings to test against the sources: table 2.D, rows A1, A2, A6, A8, A9, with the open copies named in 2.A (the DESY preprint 81/036 from the INSPIRE record of Gopfert and Mack; arXiv:2610.35286; mp_arc 97-578; arXiv:math-ph/9902020; arXiv:0711.4930). Points to test first: (1) A1 beyond page 10 and A8 beyond page 4: does either proof hold an inequality between two sizes that is used above the threshold of its criterion? This is the one finding that would break C1 and N1. (2) F5: that the same model at the doubled size has rho doubled; the Poisson step; the claim on the lattice (the script is in 9.8). (3) Lemma Z2-a, the upper count (the tree and the two inductions). (4) Lemma Z2-c: 28 twists with Pf = 1. (5) Proposition Z2: the arithmetic, and whether the clause 1 + S_w <= exp(Phi_w) of Theorem S-w needs anything that a finite positive matrix does not give. (6) The verdict on N1: is "too strong as a claim about proofs" fair to row 712's "in some form"? (7) The marks "partly" and "added" of 5.1, 5.2, by a search of its own that includes the branches of 5.3 and the parts 5.3 lists as not searched. Verdict per statement: HOLDS, HOLDS AFTER CORRECTION, FAILS. Stop at a finding under (1) and report it. Output: `library/gap-form-exercise-check.md`.
+
+**Item 2: reading item, a precedent against B4.** Read from open copies (stop at a refusal; mark what is recalled): Gawedzki and Kupiainen, the hierarchical O(N) sigma model (Commun. Math. Phys. 106, 1986); Pordt and Reiss (hierarchical sigma model); Kopper, Magnen and Rivasseau (Gross-Neveu at large N, Commun. Math. Phys. 169, 1995); Kupiainen (the 1/n expansion, Commun. Math. Phys. 73, 1980); Ito and Tamura (Commun. Math. Phys. 1999); Ito's two papers on the Migdal-Kadanoff model (Commun. Math. Phys. 95, 1984; Phys. Rev. Lett. 55, 1985); Brydges and Federbush (Debye screening, 1980); Kopper (arXiv:math-ph/9902020) in full. For each: (a) the statement; (b) the ratio of the correlation length to the lattice spacing or cutoff at which the gap is proved; (c) the small number, exact closure or inequality that carries it; (d) whether the proof joins an ultraviolet flow to the infrared criterion; (e) whether any inequality between two sizes is used above the threshold of a criterion. Stop rule: stop after the list; if every source has (c), report "B4 stands in the read set". Output: `library/prior/gap-precedent-lit.md`. Mark every number GUIDE.
+
+**Item 3 (only if the lead wants Proposition Z2 kept as a control): the Z_2 transfer operator with twists.** Write `library/gap-z2-control.md`: for Z_2 gauge theory on boxes with sides at least 3, the finite matrices T_{B,m}, their positivity and symmetry, the flips C_nu, Tr(T_{B,m}^a C^e) = Z^{e+m}, the permutation symmetry of Z^k, and the Z_2 form of Theorem L of `gap-seed-limit.md` as far as Corollary EV uses it; then Proposition Z2 of this file with its three lemmas. Sources: `gap-transfer.md` Sections 1 to 4, 8, 9.3; `gap-flux-exercise.md` L109-122, L495-517; `gap-seed-check.md` L177, L191-195. Then one check. It closes no item on the path of T0; it makes one test model of the lane a proved one.
+
+**Not proposed:** an author run on a step for a torus quantity; on (Z-UNB); on route A, (P-c); a large-N target (an owner decision; named in Step 4 as a price only); a proof of the sketch of 7.2 (route B); (EV-STEP) and (KP) (rows 731, 733 advise against); edits of `gap-skeleton-final.md`, `t0-tree.md` or the registry (the lead's files).
+
+### 9.8 Appendix
+
+The tables are in Steps 2 (2.A to 2.D), 4, 5 (5.1 to 5.3), 6 (6a/6d, 6c), 7 (routes, kill pass, rank and registry) and 8.
+
+- **Assumptions most likely to be wrong:** the reading of A1 and A8 from their introductions (C1 rests on it); e4 = B4 (no precedent); e2 (the base value is above s_1).
+- **Assumptions most expensive to be wrong:** C1 (if a proved case has a step, the lane is missing a template); e1 (the gap itself).
+- **Literature proofs worth translating:** the recursion of Martinelli and Olivieri (Theorems 4.5, 4.6 of Martinelli's lectures): a proved one-way doubling step for a worst case over boundary values, given clustering, with the device that turns a fixed loss per doubling into a summable one; the plan of Duminil-Copin and Tassion (one finite criterion and a differential inequality), as the model of a dichotomy; Gopfert and Mack's iterated Mayer expansion, as the model of crossing many scales with two-sided control.
+
+The script of 8.0 (`/tmp/gfe-735/scripts/zr_step.py`):
+
+```python
+import math, resource, sys
+import numpy as np
+
+def log_pi(m):
+    b = 2 * m
+    c = 2.0 - 2.0 * np.cos(2.0 * np.pi * np.arange(b) / b)
+    k2 = c[:, None, None] + c[None, :, None] + c[None, None, :]
+    k2 = k2.reshape(-1)[1:]          # drop k = 0
+    eps = np.arccosh(1.0 + 0.5 * k2)
+    return float(-np.sum(np.log1p(-np.exp(-m * eps))))
+
+def theta(A, P=200):
+    return 1.0 + 2.0 * sum(math.exp(-A * p * p) for p in range(1, P))
+
+th = theta(0.25) * theta(math.pi ** 2) ** 3
+vals = {}
+for m in (3, 4, 6, 8, 12, 16, 24):
+    vals[m] = log_pi(m)
+    print("m=%2d  log Pi=%.6f  Pi=%.6f  s_1=%.4f" % (m, vals[m], math.exp(vals[m]), th * math.exp(vals[m]) - 1.0))
+    if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss > 2 * 1024 ** 3:
+        sys.exit("RSS above 2 GB; stop")
+ok = True
+for m in (3, 4, 6, 8, 12):
+    r = math.exp(vals[2 * m] - vals[m])
+    print("ratio Pi_%d/Pi_%d = %.6f  %s" % (2 * m, m, r, "pass" if r >= 0.51 else "FAIL"))
+    ok = ok and r >= 0.51
+print("theta(1/4)*theta(pi^2)^3 = %.6f" % th)
+print("RESULT:", "PASS" if ok else "FAIL")
+```
+
+
+## Measure of the skill (row 721, Section 4.6)
+
+- **Discard tests or verdicts corrected.** Verdicts: 0 of 36. Necessity claims re-judged as too strong: 2 (N1, the sentence of row 712 from which the form F came; N4). Tests added: 1 (the compact Gaussian model at each value). The two corrections are readings plus one short argument (F3); by the skill's rule they are suggestions until a check.
+- **Statements of this run and their status.** argued, not checked: F3; F4 (given the rate filter); F5 (for the continuum formula); Lemma Z2-a; Lemma Z2-b; Lemma Z2-c; Proposition Z2 (given (TM-tw-Z2)); Remark 2D (given the recalled character formula). reading: table 2.D, C1 to C3, C7, C9, N1, N4, 7.4. belief: C8, F6. guide: one run (pass). open: (P-a), (P-b), (P-c). No check has been made, so the counts right / right after correction / wrong are not known.
+- **"New" marks.** None is written as "new". Section 5.2 lists five items as "added"; each carries the scope of 5.1 and 5.3 ("not found in this branch's `library/`, `library/prior/`, `FINISH.md`, and in the searched part of pull request 10114, main, 10133, 10135, 10141, 10144"). One item that I had taken for my own in Steps 2 and 3 (Kopper's remark that the two-dimensional testbed is itself open) was found in pull request 10114 by the search of 5.3.
+- **What the compare step found by its own search:** the sentence of `gap-crux-fp.md` L92 that N1 corrects; rows c1, c4, c5 of row 712; the test (M1) and readings 1, 3 of row 720; the counting bounds of `gap-seed-check.md` L193-195; the two-dimensional formula in rows 670 and 720; the digest of Piazza and Shen (row 719); the Kopper passage and an Ito-Seiler reading in pull request 10114.
+- **Cost.** About 12.5 dollars on this session's budget meter; wall time from 21:53Z to about 22:35Z by the machine clock; one session, no subagents; one numeric run under the lock (a product over at most 110,592 momenta); eight downloads of open copies into `/tmp/gfe-735/dl/`, none committed; one scratch fetch of seven refs.
+- **Did the pre-registration rule bind?** Once (8.0). The run passed its registered reading; the reading was not changed.
+- **Did the closed list hold?** With one leak, disclosed in A4: a search for the place of Theorem DOB printed twelve one-line hits from closed files before Step 5.
+- **Should a next long run change?** The lead had already not queued another author run on a step (13.15, 13.16). This run gives that decision a reason from proved cases, and a rule: an author brief on the crux must name the means by which a criterion is verified at the scale xi (one of the four of 9.2, or a new one). It cancels nothing that was queued.
+- **Notes on the skill, from this run.** (1) Step 6 has no slot for a model where the target is true. Such a model tests necessity claims ("every proof must contain X"), not tools; this run had to add that form (6c). (2) Step 5's rule for the other branches is workable from a checkout that lacks them: a scratch fetch at depth 1 with lazy blobs, searched by path; it took about ten minutes, most of it in fetching blobs one by one. (3) A positive-control run reads many sources in part; the header rule "a source read in part is listed as read in part" carried most of the honesty of this file.
+
+**Did the exercise succeed, by the skill's own list?** A route with its first test run: yes, route E (Proposition Z2, a control; off the path of T0). A corrected filter: two, as suggestions (not checked). A misframing: the evidence is a reading of ten sources in part, and one short argument; it is a suggestion until checked, with the replacing question in 7.4. An exact price: no. Much of the result is a map with marks. **The wall is not solved: no seed, no step and no mass gap is proved for SU(2).**
+
+**Credits.** Gopfert and Mack; Guth; Brydges and Federbush; Glimm, Jaffe and Spencer (three-dimensional U(1) and the expansions it rests on). Piazza and Shen (two dimensions; their text notes the use of Claude for literature search). Forsstrom; Adhikari and Cao; Borgs; Seiler (finite groups). Osterwalder and Seiler; Shen, Zhu and Zhu (strong coupling). Knabe; Gosset and Mozgunov; Nachtergaele (finite-size criteria). Stroock and Zegarlinski; Martinelli and Olivieri; Martinelli; Schonmann; Dobrushin and Shlosman (mixing). Aizenman, Barsky and Fernandez; Duminil-Copin and Tassion (sharpness). Kopper; Kupiainen; Ito and Tamura; Kopper, Magnen and Rivasseau (large N). Tomboulis; Ito and Seiler; Migdal; Kadanoff (the decimation route). Chatterjee (the 2026 note on a central U(1)). Sussman and Alpoge, with Claude and Codex (the account; no statement of theirs is used in a proof here). In this repository: rows 669 and 670 (the two max plans), 697 to 699 (Theorem S and its checks; the Z_2 counting argument of the row-698 check), 700, 705, 707 (limit and shape; the compact Gaussian model), 712 (first principles; the 22 methods), 719 (the digest of Piazza and Shen and of the chain criteria, gpt-6-luna), 720 (the form, Lemma FLOW, the 14 candidates), 721 (the question of this run), 731 to 733 (the three seeds, their check by gpt-6-astra, Lemma NP), and the soft-kernel route of pull request 10114 (the Kopper passage).
+
+RESULT: argued, not checked by another model: (1) F3: the form "base, one-way step, sufficiency" is satisfied by every model with a seed, with the base at the seed size; its only content is a base far below the seed size, which the method asks for and the target does not. (2) F5: for the lane's quantity S(n; (2n)^3) no improving step can be proved from the properties of the class at any value above s_1 (about 4.8, a guide), because the compact Gaussian model of row 705 grows there (continuum formula; a registered lattice guide run passes). (3) Proposition Z2 with Lemmas Z2-a to Z2-c: in Z_2 gauge theory at beta >= 91 the full and the kappa seed hold at N = 3, given the Z_2 transfer operator with twists (not written in the lane); a proved control inside the lane's frame, reached with no step. Reading, from open copies read in part: of ten families of proved gap or clustering results, a one-way step in the size occurs only where block integration is exact (two dimensions, Piazza-Shen; the Migdal-Kadanoff model, recalled) or where clustering is the hypothesis (Martinelli-Olivieri); Gopfert-Mack, strong coupling, finite groups, Knabe, Nachtergaele, sharpness and large N verify their criterion at its own scale by a small number, exact computation or a correlation inequality. Corrected (as suggestions until checked): the sentence of row 712 that a proof "must contain" a one-way flow at every value (too strong as a claim about proofs), and "one number cannot be enough" (valid for periodic free energies only); none of the 36 verdicts of rows 712 and 720 changes. Verdict on the row's question: the form is a habit as a proof form, and the next author brief on the crux should name the means by which a criterion is verified at the scale of the correlation length (a small number there, a second small number after an exact change of variables, exact closure, or a correlation inequality), not a step. Open: every seed and (G_ev) for SU(2) at a coupling of order one; (P-a), (P-b), (P-c) and their relation; belief B4 (no precedent without one of the four means), for which a reading item is proposed; (TM-tw-Z2). No mass gap is proved.

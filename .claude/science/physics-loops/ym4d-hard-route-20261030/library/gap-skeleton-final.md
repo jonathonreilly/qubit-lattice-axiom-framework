@@ -543,3 +543,26 @@ Written by the lead (Claude Opus 5.5) from `library/gap-crux-fp.md` (row 712; Cl
 **Literature (rows 713, 714; luna; downloads used for the first time).** No published result read gives an order-one estimate for four-dimensional Wilson SU(2). Rinaldi et al. see the first-order line of the mixed action only at nonzero adjoint coupling and call the Wilson axis a crossover (numerics). The closest mathematical analogues are finite-size gap criteria for quantum spin systems, log-Sobolev and mixing equivalences for compact spins, and a two-dimensional SU(N) log-Sobolev inequality at all couplings (Piazza and Shen).
 
 **Queue.** Row 716: check of `library/gap-crux-fp.md` (worker 2, Claude Opus 5.5 high). Row 717: the van Enter and Shlosman theorem in full (luna). Row 718: the published numbers behind the tests (luna). Row 719: full reads of the eight mathematical sources of row 713 (luna). Not queued: (vMF-Lip) and the sharper strong-coupling ranges (lattice theorems in R1, off the path of (GAP)); another author run on the middle range (rows 708 and 712 both advise against one).
+
+### 13.15 The crux in two plain statements; where the account stops (FINISH rows 716 to 729)
+
+Written by the lead (Claude Opus 5.5) from `library/gap-phys-seed.md` (row 720; Claude Fable 5.2 max as author; read whole; not checked, check = row 727) and the check of row 716. **No mass gap is proved, and no tool for the flow across scales was found.**
+
+**A correction to 13.14.** The check of row 716 finds that Corollary C, the continuum form (PHYS-SEED), is Proposition P (a) of `library/gap-seed-limit.md` (row 700), so it is not new. The rest of row 712 holds; four statements need small corrections (FINISH row 716).
+
+**Where the account stops (row 720, Part 1).** The account of Sussman and Alpoge, after Balaban, controls log Z on its own tori (four equal sides, above a floor l_*(g)) up to an error C l^4, at one time extent. That is short of the seed by the number of unit cells. On a small torus the thermal sum is large (recalled small-volume physics: the flux sectors are nearly degenerate and the constant modes give many low levels), so the seed exists only at large size: at least 12.9 of the cube's own correlation lengths for every shape of Theorem SH.
+
+**No flow quantity is easier than the seed (Part 2).** Of fourteen candidates, only quantities that hold the whole thermal sum can give the seed, and for them the tests are no filter. Every step-scaling coupling (Schrodinger functional, twisted Polyakov loop, force, gradient flow) and every twist ratio holds the flux half at most, and fails at a point where two confining phases coexist. Two candidates fail as one-way statements in SU(2) itself.
+
+**The crux in two plain statements (Part 3; Theorems ZD and ZD-c; unchecked).** (PHYS-SEED) holds if and only if:
+
+- **(BDD-Delta)** the Casimir free energy of the symmetric torus stays bounded as the torus grows, and
+- **(Z-UNB)** the gap of the periodic cube, times its side, is unbounded.
+
+Equivalently, one inequality at one physical size, **(Z-SEED)**: L m(L^3) above 2 Phi_4(L/4) + 30, the gap of one cube against the doubling defect of two symmetric tori (guide: from about 40 correlation lengths). The numbers 1/1650 and "20 correlation lengths" are consequences, not hypotheses. In every comparison model (U(1), Z_2, a point with two phases, five dimensions) the half that fails is (Z-UNB). Also proved: a converse of Theorem S under sublinear growth of the Casimir free energy (Corollary Z2), and (BASE-Phi), (MONO-Delta) and (Z-UNB) together give (PHYS-SEED) (Proposition MB). A guide run shows (MONO-Delta) is false for the Ising model in its ordered phase, so it is not a property of the class.
+
+**What the account would need (Part 4).** The base (BASE-Phi) needs the T0 chain below its torus floor, with exact cancellation of the bulk between two tori and the integral over the constant modes. This is weak-coupling work, long but not of the difficulty of the crux, and it has no value for (GAP) before a tool for (Z-UNB) exists. Carrying the chain past first passage to an effective coupling of order one is the crux itself; it needs a bound on how far the effective actions are from the Wilson weight there, and nothing known gives one.
+
+**The shape of what is left (the lead's reading).** The crux is now one statement with no small number in it: the gap of the periodic cube grows faster than the inverse of its side, (Z-UNB), with (BDD-Delta) as a side condition. The infrared engine, the strong-coupling end and the ultraviolet end are each proved, checked or quoted. No known tool reaches (Z-UNB) at an effective coupling of order one.
+
+**Queue.** Row 727: check of `library/gap-phys-seed.md` (worker 2, Claude Opus 5.5 high). Rows 722 to 726 (astra cross-provider checks) and 728, 729 (luna readings: plaquette monotony data; the small-volume papers) wait for Codex usage. Row 721 (the exercise skill, Fable 5.2 high) runs on worker 1. Not queued: the base (E1 to E3), the Ising monotony proof, the fixed-lattice base; another author run on a step inequality (row 720: no candidate step is easier than the seed).

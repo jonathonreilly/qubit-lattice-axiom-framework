@@ -68,28 +68,28 @@ failure: none|step <path>:<line>|counterexample <path>:<line>
 path: <derivation or implementation used, and how it differs>
 checker: <provider>/<model>/<effort> <session id>
 author: <provider>/<model>/<effort> <session id>
-answers: <record file>|none
+answers: <record files>|none
 steer: advance <consumer>|no-advance|none
 ---
 ```
 
-`lab_ops.py check-hash` prints the `content`, `text` and `reads` lines. A hash
-is SHA-256 of the file, or with `#<heading>` of that section up to the next
-heading of equal or higher level; the heading must occur once. Names have no
-spaces. `text` is the statement and its argument; `reads` is every premise,
-lemma, number, log and runner it reads, each led by its statement name or `-`.
-`author` is the `Provenance` of the commit that last changed `text`. `answers`
-names a record whose verdict this one tests directly, by a path neither side
-used. `steer` (`advance`: yes to questions two and three) is never standing.
-Body: `## Finding` (required unless `right`), `## Not run`, `## Steering`.
+`lab_ops.py check-hash` prints the `content`, `text` and `reads` lines: SHA-256
+of the file, or with `#<heading>` of that section up to the next heading of
+equal or higher level (it must occur once). Names have no spaces. `text` is
+the statement and its argument; `reads` is every premise, lemma, number, log
+and runner it reads, led by its statement name or `-`. `author` is the
+`Provenance` of the commit that last changed `text`. `answers` names records
+whose verdict this one tests by a third path. `steer` (`advance`: yes to
+questions two and three) is never standing. Body: `## Finding`, `## Not run`.
 
 `lab_ops.py status` computes standing. It rejects a record with a missing,
 repeated or unknown field, one session on both sides or a wrong `content`.
-Unless it plainly says `right` or `undecided`, a rejected record blocks
-`checked` until a record `answers` it or the text changes. A record counts
-while every hash matches and no live record `answers` it. `right` and `wrong`
-together leave the statement `argued`, shown as disputed; else a counterexample
-gives `refuted`, another `wrong` `open`, a `right` `checked` given its reads.
+A record counts while every hash matches and no live record `answers` it.
+Every `wrong` record, even about an earlier text, and every rejected one that
+does not plainly say `right` or `undecided`, keeps `checked` away until a live
+record `answers` it. `right` and `wrong` together leave the statement `argued`,
+shown as disputed; else a counterexample gives `refuted`, another `wrong`
+`open`, and a `right` `checked` given its reads.
 
 ## Obstructions
 
@@ -112,7 +112,7 @@ the note; five N5 runner-output lines, checked by script), by `audit` (the
 packet and its five-route quota) and, in prose, by the older `no-go-discipline`
 skill. A check neither writes nor grades it: never `wrong` for a missing or
 short packet, never `right` for a passing one, never an invented route family.
-Note its state under `## Steering`; a packet failing the schema stays pending.
+Note its state in the record body; a packet failing the schema stays pending.
 
 ## At assembly
 

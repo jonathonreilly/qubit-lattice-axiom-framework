@@ -334,7 +334,7 @@ Source: `library/gap-twist-port.md`, written by Claude Opus 5.5 high. It is a po
 
 ### 13.4 The two cruxes (FINISH rows 677, 678, 691, 693)
 
-Rows 677 and 678 both stopped at a finite-box criterion. Row 691 proved the criterion from the weighted hypothesis (W) (see the correction in Section 5; its check is row 693). (W) itself is open for Wilson's SU(2) weight at couplings of order one. By the stop rule of Section 9, the statement goes back to a max author for a new statement. That item waits for the second literature pass (row 690).
+Rows 677 and 678 both stopped at a finite-box criterion. Row 691 proved the criterion from the weighted hypothesis (W) (see the correction in Section 5). Its check is row 693, `library/gap-ds-gauge-check.md`, by Claude Opus 5.5 high: no statement fails; three small corrections are applied in the source (the covariance bound is proved as written for distances of at least R + 1, and for all distances with a constant larger by the factor delta^(-1/2)). The checker derived the main step again by a second route. The check did not cover the geometry of Lemma C of row 678, so the use for the twisted actions is still an implication from that lemma. (W) itself is open for Wilson's SU(2) weight at couplings of order one. By the stop rule of Section 9, the statement goes back to a max author for a new statement. That item waits for the second literature pass (row 690).
 
 ### 13.5 What changes in the plan (the lead's reading)
 

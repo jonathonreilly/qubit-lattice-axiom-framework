@@ -3,7 +3,9 @@ lease_until: 2026-11-11T15:52Z
 
 # gap-ds-gauge (FINISH row 691): the finite-box criterion (DS-tw)
 
-Provenance: Claude Fable 5.2, medium effort, one session, pinned at commit 53b90e6c9. Proved by Claude, not yet checked by another model. Research-stage working state; no status is granted.
+Provenance: Claude Fable 5.2, medium effort, one session, pinned at commit 53b90e6c9. Proved by Claude. Research-stage working state; no status is granted.
+
+Check: checked line by line by Claude Opus 5.5 (high), `library/gap-ds-gauge-check.md` (FINISH row 693). No statement fails. Three corrections, applied in place by the lead (Claude Fable 5.2) on 2026-11-11 and marked "Corrected 2026-11-11": the trivial case of (A), the range of distances in (C), and one word in Corollary 3.6. The check did not cover Lemma C of `library/gap-ac-lat.md` (apart from its sign rule), Lemma 6' of `library/gap-transport-check.md`, the claims on other files, or the heuristics.
 
 ## 0. Repo search and duplicate check
 
@@ -87,9 +89,9 @@ In words: one changed link on the boundary of the cube changes, on average, at m
 For a finite set Lambda of links, Lambda° is the set of the l in Lambda such that every cube V_R + a that contains l lies in Lambda, and B_Lambda = (Lambda minus Lambda°) union the boundary of Lambda.
 
 **Theorem W.** Let gamma satisfy (W) at (R, delta) with delta < 1. Put eps = ln(1/delta) / (2 (R + 2)).
-(A) (Finite sets.) For every finite set Lambda of links, all boundary values tau, tau', and every S contained in Lambda°, the laws that gamma_Lambda(. | tau) and gamma_Lambda(. | tau') induce on S satisfy TV <= (sqrt(delta) / (1 - sqrt(delta))) |B_Lambda| exp(-eps d(S, B_Lambda)).
+(A) (Finite sets.) For every finite set Lambda of links, all boundary values tau, tau', and every S contained in Lambda°, the laws that gamma_Lambda(. | tau) and gamma_Lambda(. | tau') induce on S satisfy TV <= (sqrt(delta) / (1 - sqrt(delta))) |B_Lambda| exp(-eps d(S, B_Lambda)). (Corrected 2026-11-11 after the check: if B_Lambda is empty, which can happen only on a torus with Lambda the set of all links, then gamma_Lambda does not depend on tau and TV = 0. The proof below is for B_Lambda not empty.)
 (B) (One Gibbs state.) On Z^4 there is exactly one Gibbs state for gamma.
-(C) (Covariance.) Let mu be the Gibbs state of (B), or the measure Z^{-1} exp(-sum over all p of phi_p) on a torus with all n_i >= R + 4. For bounded measurable F, G that depend on the links of finite sets X, Y with D = d(X, Y): |mu(FG) - mu(F) mu(G)| <= (1 - sqrt(delta))^{-1} sup|G| osc(F) 4 |X| (2D + 1)^4 exp(-eps D). No constant depends on the torus.
+(C) (Covariance.) Let mu be the Gibbs state of (B), or the measure Z^{-1} exp(-sum over all p of phi_p) on a torus with all n_i >= R + 4. For bounded measurable F, G that depend on the links of finite sets X, Y with D = d(X, Y): |mu(FG) - mu(F) mu(G)| <= (1 - sqrt(delta))^{-1} sup|G| osc(F) 4 |X| (2D + 1)^4 exp(-eps D). No constant depends on the torus. (Corrected 2026-11-11 after the check. The proof below needs X inside Lambda°, so it covers D >= R + 1 only. As written, (C) is proved for D >= R + 1, and for every D when delta >= 324^{-2}; the value delta_4 = 1/4 used below is in that range. For every delta < 1 and every D >= 0 the proved form is (C'): the same bound with the constant (sqrt(delta)(1 - sqrt(delta)))^{-1} in place of (1 - sqrt(delta))^{-1}. For D <= R, (C') follows from the trivial bound |Cov(F, G)| <= osc(F) sup|G| and exp(-eps R) >= sqrt(delta). The proof of (C') is in Section 3 of `library/gap-ds-gauge-check.md`.)
 (D') (Flips.) Let the fibre be SU(2) and let (W) hold at (R, delta) for Wilson's specification at beta on Z^4. Then (W) holds at (R, delta), with the same k_z, on every torus with all n_i >= R + 4 for every action sum of phi_p such that for each a there is a set L_a of links with phi_p(phi_{L_a} sigma) = beta (1 - (1/2) tr sigma(dp)) for every plaquette p that meets V_R + a. So (A), (C) hold for these actions. The twisted actions A_S of `library/gap-ac-lat.md` are of this kind when the fibre side is at least R + 4 (Lemma C there, applied to the cube with its boundary).
 
 With delta_4 = 1/4: eps = ln 2 / (R + 2) >= 0.46 / R for R >= 4, and the bound of (C) is 8 sup|G| osc(F) |X| (2D+1)^4 2^{-D/(R+2)}. Since (2D+1)^4 exp(-eps D / 2) <= (16/eps)^4 for eps <= 1, this is at most C(F, G) exp(-c D / R) with c = 0.23 and C(F, G) = 8 sup|G| osc(F) |X| (16 (R+2) / ln 2)^4.
@@ -156,7 +158,7 @@ Remark on what is proved. The decay in (A) is in the distance from B_Lambda, the
 
 ### 3.6 Corollary: (W) gives (D) at a larger scale
 
-Let (W) hold at (R, delta), delta < 1. For the cube Lambda = V_{R'} (R' divisible by 4) and S its inner cube: a link with both ends at site distance at least R from the complement of the site box is in Lambda°, so d(S, B_Lambda) >= R'/4 - R - 1, and |B_Lambda| <= 4 (R' + 3)^4. By (A), (D) holds at (R', delta') as soon as (sqrt(delta)/(1 - sqrt(delta))) 4 (R' + 3)^4 exp(-eps (R'/4 - R - 1)) <= delta'. For fixed delta, delta' this holds for R' >= C R ln R. So (W) at R is at least as strong as (D) at a scale of order R ln R. Whether (D) gives (W) at some scale is open for positive specifications and false with hard constraints (Proposition H: there (D) holds at (R, 0) and the conclusion of (A) fails).
+Let (W) hold at (R, delta), delta < 1. For the cube Lambda = V_{R'} (R' divisible by 4) and S its inner cube: a link with both ends at site distance at least R + 1 from the complement of the site box is in Lambda° (corrected 2026-11-11 after the check; the first version said R, which is off by one, and the bound that follows holds as written), so d(S, B_Lambda) >= R'/4 - R - 1, and |B_Lambda| <= 4 (R' + 3)^4. By (A), (D) holds at (R', delta') as soon as (sqrt(delta)/(1 - sqrt(delta))) 4 (R' + 3)^4 exp(-eps (R'/4 - R - 1)) <= delta'. For fixed delta, delta' this holds for R' >= C R ln R. So (W) at R is at least as strong as (D) at a scale of order R ln R. Whether (D) gives (W) at some scale is open for positive specifications and false with hard constraints (Proposition H: there (D) holds at (R, 0) and the conclusion of (A) fails).
 
 ## 4. Statement (b): the size of the hypothesis
 
@@ -192,7 +194,7 @@ So: exponential decay of the influence of one boundary link, uniform in the boun
 
 **Stop:** rule (ii) of row 691, in this exact sense: a counterexample to the group-free and positivity-free form of (a) (Proposition H), the corrected hypothesis (W), and a proof of (a) under (W) (Theorem W). (a) with the plain (D) for Wilson's positive weight is neither proved nor refuted.
 
-**Proved here** (by hand, one author, Claude; not checked by another model; no numeric run):
+**Proved here** (by hand, one author, Claude; checked line by line by Claude Opus 5.5 high, `library/gap-ds-gauge-check.md`, row 693: no statement fails, three corrections marked above; no numeric run):
 - Proposition H: a range-one Z_2 link specification on Z^4 with hard constraints for which (D) holds at (R, 0) for every cube, with two Gibbs states and no decay of the influence of the boundary.
 - Theorem W: under (W) at (R, delta), delta < 1: (A) weak mixing for every finite set, TV <= (sqrt(delta)/(1 - sqrt(delta))) |B_Lambda| exp(-eps d(S, B_Lambda)), eps = ln(1/delta)/(2(R+2)); (B) one Gibbs state on Z^4; (C) covariance bound for all bounded measurable local F, G on Z^4 and on every torus with sides at least R + 4, constants independent of the torus; (D') transfer of (W) to every action conjugate to Wilson's by a flip in each cube. With delta_4 = 1/4: rate ln 2/(R+2).
 - Lemmas 1-3: gluing of couplings, a measurable family of couplings without a selection theorem, the resampling step.

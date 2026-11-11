@@ -6,13 +6,13 @@ lease_until: 2026-11-12T02:35Z
 Written by Claude Fable 5.2 at high effort (Mac mini worker 1), at commit 3d74e7aa3 of `claude/ym4d-hard-route`.
 This is a process item. It makes no physics claim and grants no status. Nothing here is committed or pushed by the worker; the lead lands changes by a pull request to main.
 
-Status of this file: in progress. Parts are appended in the order of the queue row: (0) sources read, (1) evaluation, (2) improved skill, (3) command wrapper and `openai.yaml`, (4) edits to the process stack, (5) application to this lane.
+**Status of this file: complete for this run (2026-11-11).** Parts, in the order of the queue row: (0) sources read, (1) evaluation, (2) improved skill, (3) command wrapper and `openai.yaml`, (4) edits to the process stack, (5) application to this lane, (6) final status, what was not covered, and the RESULT line. Nothing in this file is checked by another model.
 
 ## 0. Sources read
 
 Repo search (rule "Repo first"): `grep` for `exercise-skill`, `skills/exercise`, `commands/exercise` in this checkout. Hits: FINISH row 721 only (the brief), and the local copy of the skill, which is older than main. No earlier run of this item exists; this file starts it. Open-lemma check (rule 0a): this row attacks no lemma, so there is nothing to match in `library/open-core.md`.
 
-Fetched from the public repository at main commit 1ddab64621 into `/tmp/exskill-v2-src/` (scratch, not committed), each read whole:
+Fetched from the public repository at main commit 1ddab64621 into `/tmp/exskill-v2-src/` (scratch, not committed). Each was read whole unless its note says otherwise. The last row was read from the clone of section 3.2.
 
 | File at 1ddab64621 | Lines | Note |
 |---|---|---|
@@ -26,10 +26,15 @@ Fetched from the public repository at main commit 1ddab64621 into `/tmp/exskill-
 | `docs/ai_methodology/PROCEDURES.md` | 48 | not in the row's list; line 32 says `research` supersedes the `exercise` skill and command as entry point |
 | `docs/ai_methodology/procedures/research.md` | 150 | not in the row's list; **the one place that says when the exercise runs** (step 3, lines 77-78, and the step-reference row at line 147). At its 150-line budget. |
 | `scripts/sync_methodology_skills.py` | 301 | searched only; it copies skill folders and reads no skill text |
+| `docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md` | 35 | not in the row's list; the skill cites it |
+| `docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md` | 126 | not in the row's list; the skill cites it |
+| `docs/ai_methodology/skills/physics-loop/references/assumption-import-audit.md` | L1-90 only | not in the row's list; it holds an earlier "counterfactual pass" on assumptions |
+
+Fetched and not read: `procedures/dispatch.md`, `procedures/check.md`, `procedures/write.md`, `AGENTS.md` (searched for the words exercise, panel, blocked, wall only).
 
 **Finding that changes part 4.** The row asks for edits to `SCIENCE_WORKFLOW.md` that say when the exercise runs. At 1ddab64621 that rule lives in `procedures/research.md` step 3, and `RULES.md` section 7 says "One home per rule". So part 4 gives the rule edit for `procedures/research.md` (line-neutral, the file is at its budget), a pointer-only edit for `SCIENCE_WORKFLOW.md`, and the edit for `first-principles.md`. The lead chooses. The local checkout's `SCIENCE_WORKFLOW.md` (242 lines) is an older file and is not the edit target.
 
-From this checkout, read whole: `library/gap-crux-fp.md` (502 lines), FINISH rows 712 and 716, `library/gap-crux-fp-check.md`, `library/gap-skeleton-final.md` Section 13.14; FINISH rows 697 to 726 and Section 13 of the skeleton for part 5.
+From this checkout, read whole: `library/gap-crux-fp.md` (502 lines); FINISH.md L1-84 and L299-355 (state, how we work, joining, efficiency, rules); FINISH rows 712 and 716 to 726; `GOAL.md`; `library/gap-skeleton-final.md` Sections 1 to 3 and 13.4 to 13.14. Read in part: see section 6, item 3.
 
 ## 1. Evaluation of row 712
 
@@ -60,7 +65,7 @@ Downstream use, as evidence that the output was usable by others: rows 716 to 71
 ### 1.2 What did not produce results
 
 1. **No tool for the crux.** "No mass gap at a coupling of order one is proved. The seed there is open, and I found no tool for it" (fp L464). "Not proposed: another author run on the middle range" (fp L500).
-2. **Most of Part 1 found again what the lane had.** 12 of the 21 compared items were already in the earlier work, among them P2 (in the stronger form of Identity FL), P3, P4, the first critical point (c5 is Theorem CRIT) and the step-scaling picture (fp L194-203, L209-210). This is the cost of the reading rule "do not read the attack files yet". The run has no control arm, so I cannot say that the new items (C6, the split R1/R2) needed that rule.
+2. **Most of Part 1 found again what the lane had.** 12 of the 21 compared items were already in the earlier work, among them P2 (Identity FL of row 708 has it as an identity for the whole sum; chk L26), P3, P4, the first critical point (c5 is Theorem CRIT) and the step-scaling picture (fp L194-203, L209-210). This is the cost of the reading rule "do not read the attack files yet". The run has no control arm, so I cannot say that the new items (C6, the split R1/R2) needed that rule.
 3. **19 of 22 re-judged verdicts stand**, and the three that change are in a range that the same file takes off the path (fp L309, L445).
 4. **Everything proved in Part 4 is strong coupling or a restatement.** Proposition TW, Lemma P and the reductions R-a, R-b "move a lattice theorem. They do not move the crux" (fp L445). Corollary C is one line (fp L449-450).
 5. **Group (e), beliefs, produced no check.** Each row names a check that is "numerics only" or none (fp L159-164). The group's value was the mark GUIDE on each belief, which then drove rows 717 and 718.
@@ -1164,3 +1169,91 @@ One line added (48 to 49). Without it, "unedited" is false for one skill. The le
 - **Revert.** If three runs in a row correct no filter and give no statement on the path of their target, revert E1 to the old sentence and keep the skill as an option the lead may choose. If a check again finds a wrong "new" mark in a run that followed step 5, step 5 has failed: fix that step before the next run.
 
 Not proposed: a new row in `SETTINGS.md`. Its method defaults are the owner's ("Only the owner changes them"), and E1 already carries the timing.
+
+## 5. Application to this lane: where to run the improved exercise next
+
+Scope: the gap program, FINISH rows 697 to 720 and `library/gap-skeleton-final.md` Section 13. Sources for this part: Sections 1 to 3 and 13.4 to 13.14 of the skeleton (read whole), rows 712 and 716 to 726 (read whole), the files of part 1. Rows 697 to 711 and 713 to 715 were read through the skeleton sections that report them, not as rows.
+
+Two facts frame the list.
+
+- The mass gap is a later target, not part of T0 (`GOAL.md` L37: "Later targets: ... and the mass gap"). No exercise below moves the T0 chain.
+- Three author runs in a row end with "no tool" and advise against another author run on the same statement (rows 708, 712 and 720: skeleton L512; fp L500; ps L453). Under edit E1 the exercise comes before any further long run. So the list below is short on purpose. An exercise is proposed only where an assumption or a filter of the lane is still unexamined.
+
+### 5.1 The open items, sorted
+
+| Open item | Where | On the path of (GAP)? | Blocked, or not yet attacked? |
+|---|---|---|---|
+| (PHYS-SEED) = (SEED-phys) along the cutoffs of the T0 limit; equivalent forms (BDD-Delta) with (Z-UNB), and (Z-SEED) | fp L454; chk L130-142; ps L398, L432 (unchecked) | yes; it is the crux | blocked: no tool (ps L426) |
+| The flow across scales: (MONO-Delta), a step inequality, (EXIT) | ps L401-404, L422 | yes | blocked; (MONO-Delta) fails in a comparison model (ps L403, GUIDE) |
+| The limit step P' with its inputs (P1) to (P4), (H2), (TOT) | chk L141-153 | yes | not attacked; T0-chain statements |
+| The base (BASE-Phi), extensions E1 to E3 of the T0 chain | ps L412-420 | yes, for the base only | not attacked; "no value for (GAP) before a tool for (Z-UNB) exists" (ps L420) |
+| A step from one size to all sizes for the centre-even sector alone | fp L120-124, L482 | unknown; this is question 1 below | not attacked |
+| (NOCRIT), (VIR-log), (BOOT_eps), (CAS) | skeleton L503-510 | no: fixed-beta forms (fp L458; chk L139) | blocked; row 712 was the exercise on them |
+| The flux half at order one: (TUBE'), (MF), (VORT), (AC') of Route T | skeleton L410; fp L305; ps L388 | only in the weak form "L E_e(L) is unbounded" (ps L388, unchecked) | blocked |
+| Route Z: (DOM_B), (SCAL_B), (CP), (2L) | skeleton L356 | not needed by the seed form (skeleton L406) | set aside when (SEED) became the working form |
+| (W), (DS-tw) | skeleton L337; fp L245 | hypotheses, not tools | open |
+| (vMF-Lip), (AS-bg), (BAND-sc), a sharper Theorem DOB | fp L410-445; skeleton L527 | no: lattice theorems in R1 | not attacked; not queued (skeleton L545) |
+| The filters of skeleton Section 3 other than U(1) and K7: K3, K6, the rate filter, the upper bounds, two dimensions; the comparison models M1 to M4 of row 720 | skeleton L59-67; ps L173-179 | they decide routes | not audited in the valid form; every "how known" mark of M1 to M4 is RECALLED or GUIDE |
+| Cross-provider checks | rows 722 to 726; ps L441 | - | check items, not exercises |
+
+### 5.2 Ranked proposals
+
+Ranked by what the answer would change, divided by the cost to get it.
+
+**1. The target and the reduction in continuum form: is the flux half needed?** Full exercise (steps 0 to 9), aimed at groups (a) and (c).
+
+- *The one question:* does the target (GAP), a gap on the cyclic sector of the one field tr(F^2) (skeleton L33), need the seed on the whole space of the torus, flux sectors included, or is there a statement on one physical torus about the centre-even sector alone that gives (GAP), with a step from one size to all sizes?
+- *Why here.* Row 712 found the assumption (a2: "needed by the method; not needed for a bulk gap", fp L114; a3: "a weaker target ... and is what the Wightman theory needs", fp L115) and ranked it sixth for the fixed-beta problem (fp L181). It left the decisive part open: Remark 2.A (b) "I did not prove that this trace is not symmetric" (fp L122), and the open statement "a step from one size to all sizes for the centre-even sector alone" (fp L482). In the continuum form the question is sharper: P' gives a gap only "on the Hilbert space that this class generates" (chk L151), and row 720 needs the flux half only in a weak form (ps L388). No other file of the lane treats the question (grep of `library/gap-*.md` for "centre-even": row 712 and the skeleton's report of it only).
+- *What changes.* If such a statement exists, confinement leaves the path of (GAP): (TUBE'), (MF), (VORT) and Route T become results beside the target. If it is proved that none of this form exists (for example a model of the class with a seed for the even sector at one size and no gap), the present form is confirmed and Remark 2.A becomes a theorem.
+- *Duplicates to name before it starts:* (DS-tw) of row 691 is the one candidate for a gap of local observables (fp L115); Identity FL (row 708) already splits the thermal sum.
+- *Cost.* One high-effort run. The attempts are short lemmas on traces with flips, of the kind of Remark 2.A.
+
+**2. The form of the tool: a positive control for "base, step, sufficiency".** Full exercise, aimed at group (c) and at step 6.
+
+- *The one question:* is the form that row 720 gave to every candidate (one torus quantity with a base at small size, a one-way step for every value, and sufficiency: ps L155-164) needed by (PHYS-SEED), or is it a habit? Test it on the cases where a gap is proved: which of them fit that form, and what do the others use in its place?
+- *Why here.* The lane tested its candidates only against models where the seed fails. It has no test against a model where the target is true for a known reason. Row 712 lists one such case and sets it aside in one line: three-dimensional U(1), "the only proved case of a gap-type statement at all couplings where perturbation theory shows no gap" (fp L47), verdict "Abelian only ... setting" (fp L241, L306). Neither `library/gap-phys-seed.md` nor `library/gap-mid-max.md` nor the skeleton names it (grep for the authors: no hit). The other proved cases are in the record: strong coupling (Theorem DOB), two dimensions (skeleton L67), finite groups at weak coupling (skeleton L62, L371). Step 2 of the skill asks for exactly this list ("the nearest models where the target is false or true for a known reason").
+- *What changes.* If no proved case uses a one-way step for a torus quantity, the search for (STEP_Q) is a habit and the next author run gets a different brief. If the proved cases fit the form, the form is confirmed, and each gives a worked example of the step.
+- *Cost.* One high-effort run with reading (the owner allowed downloads of open copies for reading items on 2026-11-11: rows 717 to 719). The inventory needs the statements of the proved cases, read and not recalled.
+- *Rule.* This is the exercise that E1 puts before any further long author run on (Z-UNB) or on a step inequality.
+
+**3. The filters that still decide routes: standing and range.** Step 6c only, on a list; medium effort is enough.
+
+- *The one question:* for each filter of skeleton Section 3 (L59-67) and each comparison model of row 720 (ps L173-179): in which class is it, which exact statement fails in it, is that failure a theorem that was read or a belief, and from which scale or coupling does the test bind on the path of (PHYS-SEED)?
+- *Why here.* The skeleton says "a route that does not pass these is wrong" (L57) and marks four of the seven filters "recalled" (L61-64). Row 712 audited two of them. Rows 717 and 718 have since changed the standing of two tests: the theorem behind Proposition V has no written proof for SU(2) in four dimensions (ves L36), and a later paper puts the end point of the K7 line near (1.2, 1.25) (tests L61). The rate filter was used to exclude a method (fp L240) and has not been stated in the valid form.
+- *What changes.* The lane gets one table of its discard tests with the mark and the range of each. Expected effect on verdicts: small. Row 712 found no wrong verdict above one correlation length (fp L309), and the max plan of row 669 already states its U(1) test in the form "the crux statement must fail for U(1)" (`library/gap-skeleton-max.md` L109).
+- *Cost.* Low. The lead can also do it as a note; it needs no author run.
+
+**4. The two routes that were set aside by a change of working form.** Steps 5 and 6d only; low rank.
+
+- *The one question:* Routes T and Z were left when (SEED) became the working form (skeleton L406, L414). Under the continuum form, does any proved node of theirs give a part of what row 720 asks: the base on a small torus without the constant modes (the chart (CH) of the twisted thin torus, checked in row 695; fp L132; ps L416), or a bound on the Casimir free energy?
+- *Why low.* The answer can help the base only, and the base has no value for (GAP) before a tool for (Z-UNB) exists (ps L420).
+
+### 5.3 Not proposed
+
+- An exercise on the fixed-beta middle range, (NOCRIT), (VIR-log), (BOOT_eps): row 712 was that exercise, and those forms are off the path of (GAP).
+- An exercise on (vMF-Lip), (AS-bg), (BAND-sc): these are not blocked. They are unattacked lattice statements in R1, and an attempt costs less than an exercise.
+- An exercise on the inputs of P' or on E1 to E3: these are weak-coupling statements of the T0 chain. They are long, not blocked.
+- A second exercise on the same wall with the same sources. The skill says to name what is new before a mapped wall is worked again (step 0).
+
+### 5.4 First use as a test of the skill
+
+Proposal 1 is the right first run of v2: it is small, its question has a yes or no answer, and it uses every step. Measure it as section 4.6 says. The compare step is the one to watch: the run must find (SEED-phys) of row 700, Identity FL of row 708 and Remark 2.A of row 712 by its own search, with no hint in the brief.
+
+## 6. Final status
+
+**What this file delivers.** (1) An evaluation of row 712 with line evidence. (2) The full text of an improved `SKILL.md` (700 lines). (3) The full text of the command wrapper (135 lines) and of `agents/openai.yaml`. (4) Exact edits: two for `procedures/research.md` (line-neutral), one for `.claude/commands/first-principles.md`, one optional pointer row for `SCIENCE_WORKFLOW.md`, two optional truth edits, and the change statement that `RULES.md` section 7 asks for. (5) Four ranked places to run the exercise next, each with one question.
+
+**What this run did not cover or verify.**
+
+1. No proof was re-checked. Every verdict on a statement of row 712 is the verdict of row 716 (Claude Opus 5.5, same provider as the author).
+2. The improved skill has not been run. It is built from one run (row 712) and from the text of v1. I read no earlier exercise packet on main (for example `.claude/science/exercises/koide-counting-bit-20260724/`), so "what works in v1" is judged from v1's text and from row 712 only.
+3. Read in part: `library/gap-crux-fp-check.md` (L1-62 and L84-186; not the verdict bodies of Lemma COV and Lemma REG, L64-83); `library/gap-phys-seed.md` (L1-52, L151-182, L386-455); `library/prior/gap-ves-read.md` and `library/prior/gap-tests-lit.md` (headers, comparison and verdict lines); `library/gap-skeleton-max.md` (outline, L55-58, L98-104, the U(1) test lines). FINISH rows 697 to 711 and 713 to 715 were not read as rows.
+4. The tooling search on main covered 111 files (section 3.2). The other files under `scripts/` were not searched.
+5. The row asked for edits to `SCIENCE_WORKFLOW.md` that say when the exercise runs. At main 1ddab64621 that file holds no rule, so the rule edit is given for `procedures/research.md` and the map gets a pointer row. The lead decides whether this meets the row.
+6. Edit E1 removes one clause from `procedures/research.md` to stay inside the 150-line budget. Edit E5 touches a sentence that can be read as "skill entry files stay unedited". Both need the lead's decision.
+7. Six changes to v1 are choices (section 2, list "accept or strike"), among them the default of `--subagents`.
+8. Nothing in this file is checked by another model. This is a process item: it makes no physics claim and grants no status.
+
+**Scratch, not in the repository:** `/tmp/exskill-v2-src/` (the fetched files), `/tmp/exskill-v2-out/` (the three new files as separate files, and `edited/` with E1 to E5 applied to copies), `/tmp/exskill-v2-clone/` (a shallow clone of main without blobs, for the search). No numeric job was run. No file other than this one was written in the repository.
+
+RESULT: process item, no physics claim. Delivered in this file: the evaluation of row 712 (productive as an audit of the lane's filters and habits: the valid form of the discard tests, the reading that the fixed-beta range is off the path, two lemmas and one conditional test, all checked in row 716 with four corrections; not productive as a search for a tool; one defect, a statement of row 700 marked as new because the compare step was too narrow); the full improved `SKILL.md`, command wrapper and `openai.yaml`; exact line-neutral edits for `procedures/research.md` and an edit for `first-principles.md`, with a pointer-only edit for `SCIENCE_WORKFLOW.md` because that file is a section map at main 1ddab64621; and four ranked uses in the gap program, first the question whether the target (GAP) needs the flux half of the seed. Open: the skill is untested (first run proposed in 5.4); the lead must decide the six marked choices, the removed clause in E1 and whether the pointer row meets the row's request; nothing here is checked.

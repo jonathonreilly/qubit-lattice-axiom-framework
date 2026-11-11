@@ -94,17 +94,22 @@ class StatusTest(unittest.TestCase):
 def write_check(folder: Path, name: str, statement: str, verdict: str,
                 text: tuple[str, ...], reads: tuple[tuple[str, str], ...] = (),
                 failure: str = "none", checker: str = "p/m/e s2",
-                author: str = "p/m/e s1", answers: str = "none") -> None:
+                author: str = "p/m/e s1", answers: str = "none",
+                drop: tuple[str, ...] = ()) -> Path:
     lines = [f"  - {lab_ops.span_hash(folder, ref)} {ref}" for ref in text]
     split = len(lines)
     lines += [f"  - {lab_ops.span_hash(folder, ref)} {who} {ref}" for who, ref in reads]
-    (folder / "checks" / name).write_text("\n".join([
-        "---", f"statement: {statement}", "commit: " + "0" * 40,
+    front = [
+        f"statement: {statement}", "commit: " + "0" * 40,
         f"content: {lab_ops.content_hash(lines)}", "text:", *lines[:split],
         "reads:", *lines[split:], f"verdict: {verdict}", f"failure: {failure}",
         "path: a different derivation", f"checker: {checker}", f"author: {author}",
-        f"answers: {answers}", "steer: none", "---", "## Finding", "",
-    ]), encoding="utf-8")
+        f"answers: {answers}", "steer: none",
+    ]
+    front = [line for line in front if line.split(":")[0] not in drop]
+    path = folder / "checks" / name
+    path.write_text("\n".join(["---", *front, "---", "## Finding", ""]), encoding="utf-8")
+    return path
 
 
 class StandingTest(unittest.TestCase):
@@ -120,12 +125,11 @@ class StandingTest(unittest.TestCase):
         )
         for name in ("gamma", "delta", "epsilon", "zeta"):
             (self.folder / "notes" / f"{name}.md").write_text(f"{name}\n", encoding="utf-8")
+
+    def part(self, *lines: str) -> None:
         (self.folder / "parts" / "core.md").write_text(
             "lead: p/m/e s1\nlease_until: 2999-01-01T00:00Z\n## Obligations\n"
-            "- argued: alpha -> x\n- argued: beta given alpha -> x\n"
-            "- argued: gamma -> x\n- argued: delta -> x\n"
-            "- argued: epsilon -> x\n- argued: zeta given beta -> x\n",
-            encoding="utf-8",
+            + "".join(f"{line}\n" for line in lines), encoding="utf-8",
         )
 
     def status(self) -> str:
@@ -135,8 +139,10 @@ class StandingTest(unittest.TestCase):
 
     def test_standing_is_computed_from_check_records(self):
         folder = self.folder
+        self.part("- argued: alpha -> x", "- argued: beta given alpha -> x",
+                  "- argued: gamma -> x", "- argued: delta -> x",
+                  "- argued: epsilon -> x", "- argued: zeta given beta -> x")
         write_check(folder, "alpha-1.md", "alpha", "right", ("notes/proofs.md#Alpha",))
-        # Same session on both sides: the record does not count.
         write_check(folder, "beta-1.md", "beta", "right", ("notes/proofs.md#Beta",),
                     checker="p/m/e s1")
         write_check(folder, "gamma-1.md", "gamma", "wrong", ("notes/gamma.md",),
@@ -153,45 +159,166 @@ class StandingTest(unittest.TestCase):
         self.assertIn("open obligations: 4", text)
         self.assertIn("checked given beta: zeta", text)
         self.assertIn("disputed, so argued: delta", text)
-        self.assertIn("1 check record(s) no longer count: beta", text)
+        self.assertIn("rejected check record beta-1.md: checker and author are the "
+                      "same session", text)
 
         # A third path answers the wrong record: delta is checked.
         write_check(folder, "delta-3.md", "delta", "right", ("notes/delta.md",),
                     checker="p/m/e s4", answers="delta-2.md")
         self.assertIn("open 1 argued 1 checked-given 1 checked 2 refuted 1", self.status())
 
-    def test_an_edit_returns_only_that_statement_to_argued(self):
+    def test_an_edit_returns_a_checked_statement_to_argued_not_open(self):
         folder = self.folder
+        self.part("- open: alpha -> x", "- argued: beta -> x")
         write_check(folder, "alpha-1.md", "alpha", "right", ("notes/proofs.md#Alpha",))
         write_check(folder, "beta-1.md", "beta", "right", ("notes/proofs.md#Beta",))
-        self.assertIn("argued 4 checked-given 0 checked 2", self.status())
+        self.assertIn("open 0 argued 0 checked-given 0 checked 2", self.status())
         proofs = folder / "notes" / "proofs.md"
         proofs.write_text(proofs.read_text().replace("beta argument", "beta, revised"),
                           encoding="utf-8")
         text = self.status()
-        self.assertIn("argued 5 checked-given 0 checked 1", text)
-        self.assertIn("1 check record(s) no longer count: beta", text)
+        self.assertIn("open 0 argued 1 checked-given 0 checked 1", text)
+        self.assertIn("1 check record(s) are about an earlier text: beta", text)
+        proofs.write_text(proofs.read_text().replace("alpha argument", "alpha, revised"),
+                          encoding="utf-8")
+        self.assertIn("open 0 argued 2 checked-given 0 checked 0", self.status())
 
-    def test_a_tampered_record_does_not_count(self):
+    def test_a_record_with_the_wrong_content_hash_is_rejected(self):
+        self.part("- argued: alpha -> x")
+        record = write_check(self.folder, "alpha-1.md", "alpha", "right",
+                             ("notes/proofs.md#Alpha",))
+        self.assertIn("argued 0 checked-given 0 checked 1", self.status())
+        lines = record.read_text().splitlines()
+        lines = ["content: " + "0" * 64 if line.startswith("content:") else line
+                 for line in lines]
+        record.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        text = self.status()
+        self.assertIn("rejected check record alpha-1.md: content does not match", text)
+        self.assertIn("argued 1 checked-given 0 checked 0", text)
+
+    def test_a_record_missing_a_field_is_rejected(self):
+        self.part("- argued: alpha -> x")
+        for field in ("author", "commit", "path", "verdict"):
+            with self.subTest(field=field):
+                write_check(self.folder, "alpha-1.md", "alpha", "right",
+                            ("notes/proofs.md#Alpha",), drop=(field,))
+                text = self.status()
+                self.assertIn(f"rejected check record alpha-1.md: {field} is missing", text)
+                self.assertIn("argued 1 checked-given 0 checked 0", text)
+
+    def test_a_rejected_wrong_record_still_blocks_checked(self):
+        self.part("- argued: epsilon -> x")
+        write_check(self.folder, "epsilon-1.md", "epsilon", "right", ("notes/epsilon.md",))
+        write_check(self.folder, "epsilon-2.md", "epsilon", "wrong", ("notes/epsilon.md",),
+                    failure="counterexample notes/epsilon.md:1", checker="p/m/e s3",
+                    answers="epsilon-2.md")
+        text = self.status()
+        self.assertIn("rejected check record epsilon-2.md: a record cannot answer itself",
+                      text)
+        self.assertIn("argued 1 checked-given 0 checked 0", text)
+        self.assertIn("a rejected wrong record names it, so not checked: epsilon", text)
+
+    def test_an_answered_record_stops_suppressing(self):
         folder = self.folder
-        write_check(folder, "alpha-1.md", "alpha", "right", ("notes/proofs.md#Alpha",))
-        record = folder / "checks" / "alpha-1.md"
-        record.write_text(record.read_text().replace("#Alpha", "#Beta"), encoding="utf-8")
-        self.assertIn("argued 6 checked-given 0 checked 0", self.status())
+        self.part("- argued: gamma -> x")
+        write_check(folder, "gamma-1.md", "gamma", "right", ("notes/gamma.md",))
+        write_check(folder, "gamma-2.md", "gamma", "wrong", ("notes/gamma.md",),
+                    failure="step notes/gamma.md:1", checker="p/m/e s3")
+        write_check(folder, "gamma-3.md", "gamma", "right", ("notes/gamma.md",),
+                    checker="p/m/e s4", answers="gamma-2.md")
+        self.assertIn("argued 0 checked-given 0 checked 1", self.status())
+        write_check(folder, "gamma-4.md", "gamma", "wrong", ("notes/gamma.md",),
+                    failure="step notes/gamma.md:1", checker="p/m/e s5",
+                    answers="gamma-3.md")
+        text = self.status()
+        self.assertIn("argued 1 checked-given 0 checked 0", text)
+        self.assertIn("disputed, so argued: gamma", text)
 
-    def test_check_hash_prints_lines_a_record_accepts(self):
+    def test_a_suppressed_answer_does_not_suppress(self):
+        # The right record that answered the failure is itself answered, so the
+        # failure stands again and the statement is open.
+        folder = self.folder
+        self.part("- argued: zeta -> x")
+        write_check(folder, "zeta-1.md", "zeta", "wrong", ("notes/zeta.md",),
+                    failure="step notes/zeta.md:1")
+        write_check(folder, "zeta-2.md", "zeta", "right", ("notes/zeta.md",),
+                    checker="p/m/e s3", answers="zeta-1.md")
+        self.assertIn("open 0 argued 0 checked-given 0 checked 1", self.status())
+        write_check(folder, "zeta-3.md", "zeta", "undecided", ("notes/zeta.md",),
+                    checker="p/m/e s4", answers="zeta-2.md")
+        self.assertIn("open 1 argued 0 checked-given 0 checked 0", self.status())
+
+    def test_an_answer_cycle_suppresses_nothing(self):
+        folder = self.folder
+        self.part("- argued: delta -> x")
+        write_check(folder, "delta-1.md", "delta", "right", ("notes/delta.md",),
+                    answers="delta-2.md")
+        write_check(folder, "delta-2.md", "delta", "wrong", ("notes/delta.md",),
+                    failure="counterexample notes/delta.md:1", checker="p/m/e s3",
+                    answers="delta-1.md")
+        self.assertIn("disputed, so argued: delta", self.status())
+
+    def test_a_circle_of_reads_is_not_closed(self):
+        folder = self.folder
+        self.part("- argued: alpha -> x", "- argued: beta -> x")
+        write_check(folder, "alpha-1.md", "alpha", "right", ("notes/proofs.md#Alpha",),
+                    reads=(("beta", "notes/proofs.md#Beta"),))
+        write_check(folder, "beta-1.md", "beta", "right", ("notes/proofs.md#Beta",),
+                    reads=(("alpha", "notes/proofs.md#Alpha"),))
+        text = self.status()
+        self.assertIn("checked-given 2 checked 0", text)
+        self.assertIn("open obligations: 2", text)
+        self.assertIn("(a circle of reads)", text)
+
+    def test_a_repeated_heading_names_no_text(self):
+        note = self.folder / "notes" / "twice.md"
+        note.write_text("## Same\nfirst\n\n## Same\nsecond\n", encoding="utf-8")
+        self.assertIsNone(lab_ops.span_hash(self.folder, "notes/twice.md#Same"))
+        self.assertIsNone(lab_ops.span_hash(self.folder, "notes/twice.md#Missing"))
+        cwd = Path.cwd()
+        try:
+            os.chdir(self.folder)
+            self.assertEqual(call("check-hash", "--text", "notes/twice.md#Same")[0], 1)
+        finally:
+            os.chdir(cwd)
+
+    def test_obligation_lines_allow_spacing_and_fail_closed(self):
+        self.part("-  open: alpha -> x", "- argued:\tbeta given alpha -> x",
+                  "- checked: gamma -> x", "- argued: two words -> x", "- note this")
+        text = self.status()
+        self.assertIn("open 1 argued 1 checked-given 0 checked 0", text)
+        self.assertIn("open obligations: 5", text)
+        self.assertIn("unreadable obligation, counted open: - checked: gamma -> x", text)
+        self.assertIn("unreadable obligation, counted open: - argued: two words -> x", text)
+
+    def test_a_typed_legacy_label_does_not_outrank_a_check_record(self):
+        self.part("- discharged: epsilon -> x", "- discharged: zeta -> x")
+        write_check(self.folder, "epsilon-1.md", "epsilon", "wrong", ("notes/epsilon.md",),
+                    failure="counterexample notes/epsilon.md:1")
+        text = self.status()
+        self.assertIn("typed discharged, but check records give refuted: epsilon", text)
+        self.assertIn("typed, not computed: gap 0 unchecked 0 implication 0 discharged 2",
+                      text)
+        self.assertIn("open obligations: 1", text)
+
+    def test_check_hash_matches_hashes_computed_independently(self):
+        import hashlib
+        section = hashlib.sha256(b"## Alpha\nalpha argument\n\n").hexdigest()
+        whole = hashlib.sha256(b"gamma\n").hexdigest()
+        text_line = f"  - {section} notes/proofs.md#Alpha"
+        reads_line = f"  - {whole} gamma notes/gamma.md"
+        content = hashlib.sha256(f"{text_line}\n{reads_line}".encode()).hexdigest()
         cwd = Path.cwd()
         try:
             os.chdir(self.folder)
             code, text = call("check-hash", "--text", "notes/proofs.md#Alpha",
-                              "--reads", "beta=notes/proofs.md#Beta")
+                              "--reads", "gamma=notes/gamma.md")
             self.assertEqual(code, 0)
-            lines = text.splitlines()
-            self.assertEqual(lines[1], "text:")
-            self.assertEqual(lines[3], "reads:")
-            self.assertEqual(lines[0], "content: " + lab_ops.content_hash([lines[2], lines[4]]))
-            self.assertTrue(lines[4].endswith(" beta notes/proofs.md#Beta"))
+            self.assertEqual(text.splitlines(),
+                             [f"content: {content}", "text:", text_line, "reads:", reads_line])
             self.assertEqual(call("check-hash", "--text", "notes/proofs.md#Missing")[0], 1)
+            self.assertEqual(call("check-hash", "--text", "notes/gamma.md",
+                                  "--reads", "two words=notes/gamma.md")[0], 1)
         finally:
             os.chdir(cwd)
 
@@ -286,6 +413,44 @@ class DoctorTest(unittest.TestCase):
                 code, text = call("doctor")
                 self.assertEqual(code, 1)
                 self.assertIn("differs: AGENTS.md", text)
+            finally:
+                os.chdir(cwd)
+
+    def test_step_references_count_as_rules_and_raw_captures_do_not(self):
+        skill = "docs/ai_methodology/skills/x/SKILL.md"
+        raw = "docs/ai_methodology/raw/capture.md"
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp).resolve()
+            remote = root / "remote.git"
+            subprocess.run(["git", "init", "-q", "--bare", "-b", "main", str(remote)],
+                           check=True)
+            seed = root / "seed"
+            subprocess.run(["git", "clone", "-q", str(remote), str(seed)],
+                           check=True, capture_output=True)
+            for rel in (skill, raw):
+                (seed / rel).parent.mkdir(parents=True)
+                (seed / rel).write_text("one\n", encoding="utf-8")
+            git("add", ".", cwd=seed)
+            git("commit", "-q", "-m", "seed", cwd=seed)
+            git("push", "-q", "origin", "HEAD:main", cwd=seed)
+            work = root / "work"
+            subprocess.run(["git", "clone", "-q", str(remote), str(work)],
+                           check=True, capture_output=True)
+            cwd = Path.cwd()
+            try:
+                os.chdir(work)
+                (seed / raw).write_text("two\n", encoding="utf-8")
+                git("commit", "-q", "-am", "raw capture", cwd=seed)
+                git("push", "-q", "origin", "HEAD:main", cwd=seed)
+                self.assertEqual(call("doctor")[0], 0)
+
+                (seed / skill).write_text("two\n", encoding="utf-8")
+                git("commit", "-q", "-am", "skill rule", cwd=seed)
+                git("push", "-q", "origin", "HEAD:main", cwd=seed)
+                code, text = call("doctor")
+                self.assertEqual(code, 1)
+                self.assertIn(f"differs: {skill}", text)
+                self.assertNotIn(raw, text)
             finally:
                 os.chdir(cwd)
 

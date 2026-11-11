@@ -50,19 +50,25 @@ THREAD_VARS = (
 # Older part files type one of four labels by hand. Current ones type only
 # `open` or `argued`; anything further is computed from check records.
 OBLIGATION_RE = re.compile(
-    r"^- (gap|unchecked|implication|discharged|open|argued): (.+)$"
+    r"^-\s+(gap|unchecked|implication|discharged|open|argued)\s*:\s*(\S.*)$"
 )
 OLD_LABELS = ("gap", "unchecked", "implication", "discharged")
+NAME_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]*\Z")
+# A typed obligation is `<name> [given <premises>] -> <consumer>`.
+TYPED_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]*\s+(given\s+\S.*\s+)?->\s+\S")
+PROVENANCE_RE = re.compile(r"\S+/\S+/\S+ \S.*\Z")
+VERDICTS = ("right", "wrong", "undecided")
+REQUIRED_FIELDS = ("statement", "commit", "content", "verdict", "failure", "path",
+                   "checker", "author")
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.*?)\s*$")
 FLOOR_RE = re.compile(r"^model_floor\s+([\w-]+):\s*(.+)$")
+# Entry files, rules, procedures and the step references they bind.
 RULE_PATHS = (
     "AGENTS.md",
     "CLAUDE.md",
-    "docs/ai_methodology/RULES.md",
-    "docs/ai_methodology/SETTINGS.md",
-    "docs/ai_methodology/PROCEDURES.md",
-    "docs/ai_methodology/procedures",
-    "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+    "docs/ai_methodology",
+    ".claude/commands",
+    ":(exclude)docs/ai_methodology/raw",
 )
 
 
@@ -215,8 +221,10 @@ def doctor(args: argparse.Namespace) -> int:
     if not changed:
         print("rules: match origin/main")
         return 0
-    for path in changed:
+    for path in changed[:20]:
         print(f"differs: {path}")
+    if len(changed) > 20:
+        print(f"differs: {len(changed) - 20} more")
     print("rules: differ from origin/main; read the current ones with "
           "git show origin/main:<path>")
     return 1
@@ -378,7 +386,8 @@ def span_hash(root: Path, ref: str) -> str | None:
     """SHA-256 of a file, or of one heading's section when ref is PATH#HEADING.
 
     A section runs from its heading to the next heading of the same or a
-    higher level. None means the file or the heading is not there.
+    higher level. None means the file is not there, or the heading is missing
+    or appears more than once, so the reference names no single text.
     """
     path, _, heading = ref.partition("#")
     try:
@@ -387,24 +396,22 @@ def span_hash(root: Path, ref: str) -> str | None:
         return None
     if not heading:
         return hashlib.sha256(data).hexdigest()
-    kept: list[str] = []
-    level = 0
+    lines = data.decode("utf-8", errors="replace").splitlines(keepends=True)
+    headings: list[tuple[int, int, str]] = []
     fenced = False
-    for line in data.decode("utf-8", errors="replace").splitlines(keepends=True):
+    for index, line in enumerate(lines):
         if line.lstrip().startswith(("```", "~~~")):
             fenced = not fenced
-            found = None
-        else:
-            found = None if fenced else HEADING_RE.match(line.rstrip("\r\n"))
-        if not level:
-            if found and found[2] == heading:
-                level = len(found[1])
-                kept.append(line)
             continue
-        if found and len(found[1]) <= level:
-            break
-        kept.append(line)
-    return hashlib.sha256("".join(kept).encode()).hexdigest() if level else None
+        found = None if fenced else HEADING_RE.match(line.rstrip("\r\n"))
+        if found:
+            headings.append((index, len(found[1]), found[2]))
+    matches = [entry for entry in headings if entry[2] == heading]
+    if len(matches) != 1:
+        return None
+    start, level, _ = matches[0]
+    end = next((i for i, lvl, _ in headings if i > start and lvl <= level), len(lines))
+    return hashlib.sha256("".join(lines[start:end]).encode()).hexdigest()
 
 
 def content_hash(lines: list[str]) -> str:
@@ -441,92 +448,153 @@ def session_of(provenance: str) -> str:
     return provenance.split(" ", 1)[1].strip() if " " in provenance else ""
 
 
-def record_counts(root: Path, record: dict) -> bool:
-    """True while the record is intact, independent and about the current text."""
-    if record["bad"] or not record["text"]:
-        return False
-    if content_hash(record["raw"]) != record.get("content"):
-        return False
-    for entry in record["text"] + record["reads"]:
-        if span_hash(root, entry[-1]) != entry[0]:
-            return False
-    checker = session_of(record.get("checker", ""))
-    return bool(checker) and checker != session_of(record.get("author", ""))
+def record_problem(record: dict) -> str | None:
+    """Why a record can never count, or None. A broken record is rejected, not skipped."""
+    if record["bad"]:
+        return "a text or reads line is malformed"
+    for key in REQUIRED_FIELDS:
+        if not record.get(key):
+            return f"{key} is missing"
+    if not NAME_RE.match(record["statement"]):
+        return "statement is not a name without spaces"
+    if not re.fullmatch(r"[0-9a-f]{40}", record["commit"]):
+        return "commit is not 40 hex digits"
+    if record["verdict"] not in VERDICTS:
+        return "verdict is not right, wrong or undecided"
+    failure = record["failure"].split(" ")
+    if record["verdict"] == "wrong":
+        if failure[0] not in ("step", "counterexample") or len(failure) < 2:
+            return "a wrong verdict names `step <where>` or `counterexample <where>`"
+    elif failure != ["none"]:
+        return "only a wrong verdict names a failure"
+    if not record["text"]:
+        return "text lists nothing"
+    if any(name != "-" and not NAME_RE.match(name) for _, name, _ in record["reads"]):
+        return "a reads line names something that is not a statement name"
+    for who in ("checker", "author"):
+        if not PROVENANCE_RE.match(record[who]):
+            return f"{who} is not `<provider>/<model>/<effort> <session>`"
+    if session_of(record["checker"]) == session_of(record["author"]):
+        return "checker and author are the same session"
+    if content_hash(record["raw"]) != record["content"]:
+        return "content does not match the text and reads lines"
+    if record.get("answers", "none") == record["file"]:
+        return "a record cannot answer itself"
+    return None
 
 
-def compute_standing(root: Path, folder: Path) -> tuple[dict[str, dict], Counter]:
-    """Standing of every statement that has a counting check record.
+def live_records(records: list[dict]) -> list[dict]:
+    """Records left once every record answered by a live record is set aside.
 
-    Returns the standing by statement name and, by name, how many records no
-    longer count (edited text, same session on both sides, or a broken record).
+    An answer counts only when it names another counting record of the same
+    statement. Records on an answer cycle suppress nothing and stay live.
     """
-    live: dict[str, list[dict]] = {}
+    by_file = {r["file"]: r for r in records}
+    target = {r["file"]: r.get("answers", "none") for r in records}
+    cyclic: set[str] = set()
+    for start in by_file:
+        seen, at = [], start
+        while at in by_file and at not in seen:
+            seen.append(at)
+            at = target[at]
+        if at in seen:
+            cyclic.update(seen[seen.index(at):])
+    answerers: dict[str, list[str]] = {}
+    for file, aim in target.items():
+        if aim in by_file:
+            answerers.setdefault(aim, []).append(file)
+    state: dict[str, bool] = {}
+
+    def live(file: str) -> bool:
+        if file not in state:
+            state[file] = file in cyclic or not any(live(a) for a in answerers.get(file, []))
+        return state[file]
+
+    return [r for r in records if live(r["file"])]
+
+
+def compute_standing(root: Path, folder: Path) -> tuple[dict, Counter, list, set]:
+    """Standing from the check records in a target's checks/ folder.
+
+    Returns the standing by statement name; by name, how many records are
+    about an earlier text; the rejected records with the reason for each; and
+    the names a rejected `wrong` record points at, which cannot be `checked`
+    until that record is repaired or withdrawn.
+    """
+    counting: dict[str, list[dict]] = {}
     stale: Counter = Counter()
+    rejected: list[tuple[str, str]] = []
+    blocked: set[str] = set()
     for path in sorted((folder / "checks").glob("*.md")):
         record = read_check(path)
-        if not record or not record.get("statement"):
+        if record is None:
+            rejected.append((path.name, "no front matter"))
             continue
-        if record_counts(root, record):
-            live.setdefault(record["statement"], []).append(record)
-        else:
+        problem = record_problem(record)
+        if problem:
+            rejected.append((path.name, problem))
+            if record.get("verdict") == "wrong" and record.get("statement"):
+                blocked.add(record["statement"])
+            continue
+        if any(span_hash(root, e[-1]) != e[0] for e in record["text"] + record["reads"]):
             stale[record["statement"]] += 1
+            continue
+        counting.setdefault(record["statement"], []).append(record)
     found: dict[str, dict] = {}
-    for name, records in live.items():
-        answered = {r.get("answers", "none") for r in records}
-        records = [r for r in records if r["file"] not in answered]
-        wrong = [r for r in records if r.get("verdict") == "wrong"]
-        right = [r for r in records if r.get("verdict") == "right"]
+    for name, records in counting.items():
+        records = live_records(records)
+        wrong = [r for r in records if r["verdict"] == "wrong"]
+        right = [r for r in records if r["verdict"] == "right"]
         if wrong and right:
             word = "argued"
-        elif any(r.get("failure", "").startswith("counterexample") for r in wrong):
+        elif any(r["failure"].startswith("counterexample") for r in wrong):
             word = "refuted"
         elif wrong:
             word = "open"
         elif right:
-            word = "checked"
+            word = "argued" if name in blocked else "checked"
         else:
             continue
         reads = {e[1] for r in right for e in r["reads"] if e[1] != "-"}
         found[name] = {"word": word, "disputed": bool(wrong and right), "reads": reads}
 
-    def rests_on(name: str, seen: frozenset[str]) -> set[str]:
+    def rests_on(name: str, trail: frozenset[str]) -> set[str]:
         unmet: set[str] = set()
         for read in found[name]["reads"]:
-            if read in seen:
-                continue
-            if found.get(read, {}).get("word") != "checked":
-                unmet.add(read)
+            if read in trail or found.get(read, {}).get("word") != "checked":
+                unmet.add(read)  # not checked, or a circle of reads
             else:
-                unmet |= rests_on(read, seen | {read})
+                unmet |= rests_on(read, trail | {read})
         return unmet
 
     for name, entry in found.items():
         entry["given"] = sorted(rests_on(name, frozenset({name}))) \
             if entry["word"] == "checked" else []
-    return found, stale
+    return found, stale, rejected, blocked
 
 
 def read_part(path: Path) -> dict:
     part: dict = {"lead": None, "lease": None, "counts": Counter(), "requests": [],
-                  "typed": []}
-    in_requests = False
+                  "typed": [], "legacy": [], "unreadable": []}
+    section = ""
     for line in path.read_text(encoding="utf-8").splitlines():
         if line.startswith("lead:") and part["lead"] is None:
             part["lead"] = line.split(":", 1)[1].strip()
         elif line.startswith("lease_until:") and part["lease"] is None:
             part["lease"] = line.split(":", 1)[1].strip()
         elif line.startswith("## "):
-            in_requests = line.strip().lower() == "## requests"
-        elif in_requests and line.startswith("- "):
+            section = line.strip().lower()
+        elif section == "## requests" and line.startswith("- "):
             part["requests"].append(line[2:].strip())
         found = OBLIGATION_RE.match(line)
-        if not found:
-            continue
-        if found[1] in OLD_LABELS:
+        if found and found[1] in OLD_LABELS:
             part["counts"][found[1]] += 1
-        else:
-            name = re.split(r" given | -> ", found[2], maxsplit=1)[0].strip()
-            part["typed"].append((found[1], name))
+            name = re.split(r"\s+given\s+|\s+->\s+", found[2], maxsplit=1)[0].strip()
+            part["legacy"].append((found[1], name))
+        elif found and TYPED_RE.match(found[2]):
+            part["typed"].append((found[1], found[2].split()[0]))
+        elif found or (section == "## obligations" and line.lstrip().startswith("-")):
+            part["unreadable"].append(line.strip())
     return part
 
 
@@ -535,7 +603,9 @@ def status(args: argparse.Namespace) -> int:
     now = dt.datetime.now(dt.timezone.utc)
     top = git("rev-parse", "--show-toplevel", cwd=folder)
     root = Path(top.stdout.strip()) if top.returncode == 0 else folder.resolve()
-    standing, stale = compute_standing(root, folder)
+    standing, stale, rejected, blocked = compute_standing(root, folder)
+    for file, reason in rejected:
+        print(f"rejected check record {file}: {reason}")
     goal = folder / "GOAL.md"
     if goal.exists():
         head = read_part(goal)
@@ -549,25 +619,45 @@ def status(args: argparse.Namespace) -> int:
         if "--" in path.stem:
             tally = "attempt file, not counted"
         else:
-            words = Counter({"open": counts["gap"], "argued": counts["unchecked"],
-                             "checked": counts["discharged"]})
-            given = counts["implication"]
+            words: Counter = Counter()
+            given = 0
             for typed, name in part["typed"]:
                 entry = standing.get(name)
                 word = entry["word"] if entry else typed
+                if not entry and (stale[name] or name in blocked):
+                    word = "argued"
                 if entry and entry["word"] == "checked" and entry["given"]:
                     given += 1
-                    notes.append(f"checked given {', '.join(entry['given'])}: {name}")
+                    circle = " (a circle of reads)" if name in entry["given"] else ""
+                    notes.append(f"checked given {', '.join(entry['given'])}{circle}: {name}")
                 else:
                     words[word] += 1
                 if entry and entry["disputed"]:
                     notes.append(f"disputed, so argued: {name}")
+                if name in blocked:
+                    notes.append(f"a rejected wrong record names it, so not checked: {name}")
                 if stale[name]:
-                    notes.append(f"{stale[name]} check record(s) no longer count: {name}")
+                    notes.append(f"{stale[name]} check record(s) are about an earlier "
+                                 f"text: {name}")
+            contradicted = 0
+            for label, name in part["legacy"]:
+                entry = standing.get(name)
+                closed = entry and entry["word"] == "checked" and not entry["given"]
+                if label in ("implication", "discharged") and entry and not closed:
+                    contradicted += label == "discharged"
+                    notes.append(f"typed {label}, but check records give "
+                                 f"{entry['word']}: {name}")
+            for line in part["unreadable"]:
+                notes.append(f"unreadable obligation, counted open: {line}")
             tally = (f"open {words['open']} argued {words['argued']} "
                      f"checked-given {given} checked {words['checked']} "
                      f"refuted {words['refuted']}")
-            open_total += words["open"] + words["argued"] + given
+            if part["legacy"]:
+                tally += ("; typed, not computed: " + " ".join(
+                    f"{label} {counts[label]}" for label in OLD_LABELS))
+            open_total += (words["open"] + words["argued"] + given + contradicted
+                           + len(part["unreadable"]) + counts["gap"]
+                           + counts["unchecked"] + counts["implication"])
         print(f"{path.stem}: {part['lead'] or 'no lead'} "
               f"({lease_state(part['lease'], now)}); {tally}")
         for note in notes:
@@ -586,17 +676,20 @@ def check_hash(args: argparse.Namespace) -> int:
     for ref in args.text:
         digest = span_hash(root, ref)
         if digest is None:
-            return refuse(f"cannot read {ref} under {root}")
+            return refuse(f"cannot hash {ref}: no such file, or the heading is "
+                          "missing or appears more than once")
         lines.append(f"  - {digest} {ref}")
     split = len(lines)
     for item in args.reads:
         name, sep, ref = item.partition("=")
-        if not sep or " " in name:
-            return refuse(f"--reads takes NAME=PATH[#HEADING], with no space in NAME: {item}")
+        if not sep or not (name == "-" or NAME_RE.match(name)):
+            return refuse(f"--reads takes NAME=PATH[#HEADING]; NAME is a statement "
+                          f"name without spaces, or -: {item}")
         digest = span_hash(root, ref)
         if digest is None:
-            return refuse(f"cannot read {ref} under {root}")
-        lines.append(f"  - {digest} {name or '-'} {ref}")
+            return refuse(f"cannot hash {ref}: no such file, or the heading is "
+                          "missing or appears more than once")
+        lines.append(f"  - {digest} {name} {ref}")
     print(f"content: {content_hash(lines)}")
     print("text:")
     print("\n".join(lines[:split]))

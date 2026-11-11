@@ -60,6 +60,7 @@ PROVENANCE_RE = re.compile(r"\S+/\S+/\S+ \S.*\Z")
 VERDICTS = ("right", "wrong", "undecided")
 REQUIRED_FIELDS = ("statement", "commit", "content", "verdict", "failure", "path",
                    "checker", "author")
+RECORD_FIELDS = REQUIRED_FIELDS + ("answers", "steer")
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.*?)\s*$")
 FLOOR_RE = re.compile(r"^model_floor\s+([\w-]+):\s*(.+)$")
 # Entry files, rules, procedures and the step references they bind.
@@ -419,11 +420,16 @@ def content_hash(lines: list[str]) -> str:
 
 
 def read_check(path: Path) -> dict | None:
-    """Front matter of one check record, or None when it has none."""
+    """Front matter of one check record, or None when it has none.
+
+    Only the fields a record may carry are kept, each once. Anything else is
+    noted under "bad" so the record is rejected instead of half-read.
+    """
     lines = path.read_text(encoding="utf-8").splitlines()
     if not lines or lines[0] != "---":
         return None
-    record: dict = {"file": path.name, "text": [], "reads": [], "raw": [], "bad": False}
+    record: dict = {"file": path.name, "text": [], "reads": [], "raw": [], "bad": ""}
+    seen: set[str] = set()
     key = ""
     for line in lines[1:]:
         if line == "---":
@@ -435,12 +441,21 @@ def read_check(path: Path) -> dict | None:
             if len(fields) == want:
                 record[key].append(tuple(fields))
             else:
-                record["bad"] = True
+                record["bad"] = record["bad"] or f"a {key} line is malformed"
             continue
-        key, _, value = line.partition(":")
-        key = key.strip()
-        if key not in ("text", "reads"):
-            record[key] = value.strip()
+        key, colon, value = line.partition(":")
+        key, value = key.strip(), value.strip()
+        if not colon or key not in RECORD_FIELDS + ("text", "reads"):
+            record["bad"] = record["bad"] or f"unknown line: {line.strip()[:40]}"
+            key = ""
+        elif key in seen:
+            record["bad"] = record["bad"] or f"{key} appears twice"
+        elif key in ("text", "reads"):
+            if value:
+                record["bad"] = record["bad"] or f"{key} takes list lines"
+        else:
+            record[key] = value
+        seen.add(key)
     return None
 
 
@@ -451,7 +466,7 @@ def session_of(provenance: str) -> str:
 def record_problem(record: dict) -> str | None:
     """Why a record can never count, or None. A broken record is rejected, not skipped."""
     if record["bad"]:
-        return "a text or reads line is malformed"
+        return record["bad"]
     for key in REQUIRED_FIELDS:
         if not record.get(key):
             return f"{key} is missing"
@@ -487,7 +502,8 @@ def live_records(records: list[dict]) -> list[dict]:
     """Records left once every record answered by a live record is set aside.
 
     An answer counts only when it names another counting record of the same
-    statement. Records on an answer cycle suppress nothing and stay live.
+    statement. Answers that form a cycle are void, so its members stay live
+    unless a live record outside the cycle answers one of them.
     """
     by_file = {r["file"]: r for r in records}
     target = {r["file"]: r.get("answers", "none") for r in records}
@@ -501,13 +517,13 @@ def live_records(records: list[dict]) -> list[dict]:
             cyclic.update(seen[seen.index(at):])
     answerers: dict[str, list[str]] = {}
     for file, aim in target.items():
-        if aim in by_file:
+        if aim in by_file and file not in cyclic:
             answerers.setdefault(aim, []).append(file)
     state: dict[str, bool] = {}
 
     def live(file: str) -> bool:
         if file not in state:
-            state[file] = file in cyclic or not any(live(a) for a in answerers.get(file, []))
+            state[file] = not any(live(a) for a in answerers.get(file, []))
         return state[file]
 
     return [r for r in records if live(r["file"])]
@@ -518,28 +534,37 @@ def compute_standing(root: Path, folder: Path) -> tuple[dict, Counter, list, set
 
     Returns the standing by statement name; by name, how many records are
     about an earlier text; the rejected records with the reason for each; and
-    the names a rejected `wrong` record points at, which cannot be `checked`
-    until that record is repaired or withdrawn.
+    the names that cannot be `checked` because a rejected `wrong` record about
+    the current text points at them and no counting record answers it.
     """
     counting: dict[str, list[dict]] = {}
     stale: Counter = Counter()
     rejected: list[tuple[str, str]] = []
-    blocked: set[str] = set()
+    blockers: dict[str, set[str]] = {}
     for path in sorted((folder / "checks").glob("*.md")):
         record = read_check(path)
         if record is None:
             rejected.append((path.name, "no front matter"))
             continue
+        spans = record["text"] + record["reads"]
+        moved = any(span_hash(root, e[-1]) != e[0] for e in spans)
         problem = record_problem(record)
         if problem:
             rejected.append((path.name, problem))
-            if record.get("verdict") == "wrong" and record.get("statement"):
-                blocked.add(record["statement"])
+            name = record.get("statement", "")
+            # A broken record that says wrong still blocks, unless its own
+            # hashes show it is about an earlier text.
+            if record.get("verdict") == "wrong" and NAME_RE.match(name) \
+                    and not (spans and moved):
+                blockers.setdefault(name, set()).add(path.name)
             continue
-        if any(span_hash(root, e[-1]) != e[0] for e in record["text"] + record["reads"]):
+        if moved:
             stale[record["statement"]] += 1
             continue
         counting.setdefault(record["statement"], []).append(record)
+    for name, files in blockers.items():
+        files -= {r.get("answers", "none") for r in live_records(counting.get(name, []))}
+    blocked = {name for name, files in blockers.items() if files}
     found: dict[str, dict] = {}
     for name, records in counting.items():
         records = live_records(records)
@@ -641,12 +666,20 @@ def status(args: argparse.Namespace) -> int:
                                  f"text: {name}")
             contradicted = 0
             for label, name in part["legacy"]:
+                if label not in ("implication", "discharged"):
+                    continue
                 entry = standing.get(name)
                 closed = entry and entry["word"] == "checked" and not entry["given"]
-                if label in ("implication", "discharged") and entry and not closed:
-                    contradicted += label == "discharged"
-                    notes.append(f"typed {label}, but check records give "
-                                 f"{entry['word']}: {name}")
+                if entry and not closed:
+                    why = f"check records give {entry['word']}"
+                elif name in blocked:
+                    why = "a rejected wrong record names it"
+                elif stale[name] and not closed:
+                    why = f"{stale[name]} check record(s) are about an earlier text"
+                else:
+                    continue
+                contradicted += label == "discharged"
+                notes.append(f"typed {label}, but {why}: {name}")
             for line in part["unreadable"]:
                 notes.append(f"unreadable obligation, counted open: {line}")
             tally = (f"open {words['open']} argued {words['argued']} "

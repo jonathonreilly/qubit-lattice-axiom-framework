@@ -74,8 +74,8 @@ lease_until: <UTC time past your next checkpoint>
    task (`dispatch`); a probe with its decisive outcome stated first. Split only
    what can be frozen. A pass returns a lemma with its open steps named, a
    construction, a counterexample, or the exact missing lemma and failed step,
-   never a status report. A part that keeps failing the same way gets the wall
-   exercise; a map of attacks with nothing tried is not a result. Long and
+   never a status report. The wall exercise comes first when a part keeps
+   failing the same way, and when a discard test decides a route. Long and
    numeric jobs pass `lab_ops.py preflight`; numerics hold `numeric-lock`.
 4. **Checkpoint.** Edit the part file, commit with the provenance trailer, and
    push with the command `lab_ops.py worktree-add` printed: after grounding,
@@ -144,7 +144,7 @@ and `RULES.md` wins any difference, status words too.
 |---|---|---|
 | 1 | `DISCOVERY.md` steps 2-4; `assumption-import-audit.md`; `literature-bridge-protocol.md`; `../../PRIMITIVE_REGISTRY_CHECK.md` | Search commands and outcomes; classing premises; search records |
 | 2 | `proof-search-governance.md`; `route-patterns.md`; `.claude/commands/`: `frontier`, `hypothesis`, `first-principles` | Contract, families, strength test; churn; picking, framing and deriving a target |
-| 3 | `long-running-execution.md`, Lab Operation; `../../exercise/SKILL.md`; `DISCOVERY.md`, Deep Work Rules | Units, leases, handover, disagreement; the wall exercise; fan-out when stuck |
+| 3 | `long-running-execution.md`, Lab Operation; `../../exercise/SKILL.md`; `DISCOVERY.md`, Deep Work Rules | Units, leases, handover, disagreement; the wall exercise, run before any further long attempt on a blocked part (it audits the lane's assumptions and discard tests; its work items brief the next attempt, race or panel); fan-out when stuck |
 | 3 | `.claude/commands/`: `design-experiment`, `sweep`, `analyze`, `investigate-physics` | Runner design, sweeps, reading output, anomalies |
 | 6 | `DELIVERY.md`; `CLAIM_STATUS.md`; `../../../REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` | Branching, forbidden outputs, PR fields validators require; conformance |
 | Runs | `CAMPAIGN.md`; `long-running-execution.md` up to Stop Cleanly | Third-PR evaluator brief; continuation and stop detail |

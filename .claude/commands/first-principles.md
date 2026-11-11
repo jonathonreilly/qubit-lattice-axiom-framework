@@ -95,6 +95,12 @@ record it. Do not blur it into vague prose, and do not declare
 closed route only with a concrete changed mechanism, scope, premise, or
 counterexample that addresses the original proof.
 
+When a second route stops at the same wall, run `/exercise` on that wall
+before a third route. Its inventory starts from this file's premise ledger.
+It lists the assumptions behind the target and behind the routes, and it
+audits the reasons for which earlier routes were set aside. A route that
+survives it comes back here as a new derivation.
+
 ## Output
 
 Write the derivation to `.claude/science/derivations/{slug}-{date}.md`:

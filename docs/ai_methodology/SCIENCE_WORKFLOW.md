@@ -25,6 +25,7 @@ no rule and grants no status. Remove it when nothing cites it.
 | Section 4, current owner settings | `SETTINGS.md` |
 | Section 5, research cadence | `SETTINGS.md`, cadence; `RULES.md` sections 1 and 3 |
 | Section 6, stages and authority | `RULES.md` section 4; `PROCEDURES.md` |
+| Section 6, "Skills by job", the exercise | `procedures/research.md` step 3 (when it runs); `skills/exercise/SKILL.md` (how) |
 | Section 7, selecting work | `procedures/research.md`; `SETTINGS.md`, method defaults; `RULES.md` section 6 |
 | Section 8, where material belongs | `RULES.md` section 5; `AGENTS.md` |
 | Section 9, changing this process | `RULES.md` section 7 |

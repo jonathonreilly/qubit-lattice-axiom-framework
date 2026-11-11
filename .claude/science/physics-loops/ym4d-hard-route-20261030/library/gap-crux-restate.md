@@ -30,7 +30,7 @@ Status of this file: in progress. Sections are appended as each step ends. The s
 
 Torus with sides n = (n_1, ..., n_4), all n_mu >= 3. Action A(U) = sum over plaquettes of (1 - (1/2) tr U_p). Z(n) = integral of exp(-beta A) over Haar measure, F(n) = log Z(n), |n| = n_1 n_2 n_3 n_4. beta > 0 is fixed unless said.
 
-**(TM)** (input; `library/gap-transfer.md`, row 667, check row 671). For each direction mu and each choice of the other three sides there is a positive trace-class operator T on a Hilbert space with Z(n) = Tr T^(n_mu).
+**(TM)** (input; `library/gap-transfer.md`, row 667, check row 671). For each direction mu and each choice of the other three sides there is a positive trace-class operator T on a Hilbert space with Z(n) = Tr T^(n_mu). Its largest eigenvalue is simple, with a strictly positive eigenfunction.
 
 **(TM-c)** (input; run 2, Lemma 1'). For nu different from mu, the centre flip C_nu (multiply by -1 every link of direction nu that crosses the plane x_nu = 0 of the slice) is a unitary involution that commutes with T, and Tr(T^(n_mu) C_nu) = Z^(mu nu)(n). Here Z^(mu nu) is the partition function with the sign of beta changed on one stack of (mu,nu)-plaquettes, one plaquette for each value of the other two coordinates. It is positive, and it is symmetric in mu and nu.
 
@@ -60,7 +60,7 @@ Phi(n) := 16 F(n,n,n,n) - F(2n,2n,2n,2n) >= 0, the free-energy defect of doublin
 - (Phi-step), the form with a seed: there are eps_0 > 0, K and n_0 with: Phi(n) <= eps_0 and n >= n_0 give Phi(2n) <= K Phi(n)^2.
 - What it gives (Theorem D, Corollary D2, PROVED): (Phi-dec) gives m((2n)^3) >= c - log(2C)/n. (Phi-step) with one seed Phi(n_1) < min(eps_0, 1/K), n_1 >= n_0, gives m((2^k n_1)^3) >= log(1/(K Phi(n_1))) / n_1 for all k >= 1. The gap is on the whole space, flux sectors included, so it also bounds the odd-flux weight.
 - It is run 2's (FE) with the infinite-volume constant removed: each scale is one inequality between two partition functions, and Phi(n) = 96 n^4 times the integral over [0, beta] of (abar_2n - abar_n), with abar_n the mean plaquette action on the n^4 torus.
-- (ii) U(1) at weak coupling: the periodic box has an excited state of energy at most (2 pi / side)(1 + o(1)) (RECALLED, the photon; run 2's K5). By Theorem D (c), read backwards, Phi(n) >= log(1 + exp(-n m((2n)^3))) >= log(1 + exp(-pi - o(1))) > 0.04. So (Phi-dec) is false, and no seed below 0.04 exists. Z_2 at its transition: two phases, so m(box) tends to 0 (RECALLED) and Phi(n) >= log 2 - o(1). Z_2 at large beta: the flux sectors are degenerate with the vacuum (RECALLED), same bound; this is why C1 is the gap with confinement.
+- (ii) U(1) at weak coupling: the periodic box has an excited state of energy at most (2 pi / side)(1 + o(1)) (RECALLED, the photon; run 2's K5). By Theorem D (c), read backwards, Phi(n) >= log(1 + exp(-n m((2n)^3))) >= log(1 + exp(-pi - o(1))) > 0.04. With the twelve lowest photon states of the box (six momenta, two polarisations, energy pi/n each; RECALLED) Theorem D (b) gives Phi(n) >= log(1 + 12 exp(-pi)) - o(1), about 0.41. So (Phi-dec) is false, and no seed below these values exists. Z_2 at its transition: two phases, so m(box) tends to 0 (RECALLED) and Phi(n) >= log 2 - o(1). Z_2 at large beta: the flux sectors are degenerate with the vacuum (RECALLED), same bound; this is why C1 is the gap with confinement.
 - (iii) Theorem D holds for every group. The step (Phi-step) is not a consequence of positivity alone (Proposition N); with integer multiplicities it is undecided (Remark N2).
 
 **C2. Flux on tori with normalised bulk (the published lead (a) in exact form).** Twist in the plane (1,2). Z_odd(n) := (Z(n) - Z^(12)(n))/2, u(n) := Z_odd(n)/Z(n), v(n) := Z_odd(n) exp(-f |n|), so 0 <= u <= v (by (LB)).
@@ -232,7 +232,7 @@ The odd-flux weight of SU(2) is the mean of the odd-flux weight of a Z_2 gauge t
 
 1. What a seed gives is exact: Theorem D (two tori, one doubling), Proposition R (exponentially many scales, with the constant f), Theorem F (all multiples in the two directions of the sheet).
 2. The step that carries a seed to all scales is (FIT) for the gap and (TUBE') for the flux. It does not follow from positivity (Proposition N). For true traces it is undecided (Remark N2). Run 1's argument at its line 128 and run 2's no-go in its Section 1.5 exclude a step without a threshold; they do not exclude a step below a threshold.
-3. U(1) does not fail at the step. It fails at the seed: Phi >= 0.04 at every size, and u is near 1/2 on square tori at weak coupling. (TUBE) fails for it on thin sections only.
+3. U(1) does not fail at the step. It fails at the seed: Phi >= 0.04 at every size (about 0.41 with the twelve lowest photon states), and u is near 1/2 on square tori at weak coupling. (TUBE) fails for it on thin sections only.
 
 A guess about the sigma model, whose preprint nobody here has read: the O(3) model has a continuous global symmetry, so a twist can be spread by a covariant deformation, and first-order comparison then gives a true lower bound for a twisted partition function (the Mermin-Wagner comparison). Lower bounds for partition functions of larger tori are what positivity lacks. The gauge theory has no such deformation (Lemma J). If the doubling step of the preprint uses the symmetry in this way, it does not transfer to the gauge theory.
 

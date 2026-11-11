@@ -3,7 +3,7 @@ lease_until: 2026-11-11T21:15Z
 
 # gap-seed-limit: from the seed to exponential clustering in every limit state (row 700)
 
-Author run at commit 547801e01, started 2026-11-11T09:15Z. Research-stage working state. **No mass gap is proved by this file.** Everything is conditional on Hypothesis (G) below, which is the conclusion of Theorem S of `library/gap-crux-restate.md` (row 697, not yet checked; checks are rows 698, 699). Nothing here is checked by a model that did not write it. No computer run was made for this file.
+Author run at commit 547801e01, started 2026-11-11T09:15Z. Research-stage working state. **No mass gap is proved by this file.** Everything is conditional on Hypothesis (G) below, which is the conclusion of Theorem S of `library/gap-crux-restate.md` (row 697, not yet checked; checks are rows 698, 699). Check state (2026-11-11, added by the lead): this file is checked line by line by Claude Opus 5.5 (row 703, `library/gap-seed-limit-check.md`, Part A). Every statement HOLDS. One remark in Section 6 is corrected below and marked with its row. Theorem S and Lemma X are checked by two models (rows 698, 699). Part B of the check file ports this file to every integer side at least 2N (Hypothesis (G-all), Lemma V, constant 1.085 off the dyadic sides); read it together with this file. Not checked: the guide on free particles in Section 6. No computer run was made for this file.
 
 ## Status block (kept current)
 
@@ -233,9 +233,9 @@ A uniform gap alone does not give the seed by any argument in this file: the gap
 
 **OPEN (NS-gap), the exact extra bound.** For the SU(2) Wilson theory at the given beta: if the cubes of side 2n, n in an infinite set, have gaps at least m > 0, then there are theta < 1 and constants A_n with (NS) and liminf (log A_n)/n < (1 - theta) m.
 
-Guide, not a proof: for a gas of free particles of mass m in the cube of side 2n, log N(E) is at most of the order (n^3 E^3)^(1/4) + log(n^3) for E >= m, which is below theta n E + C(theta) for every theta > 0. So (NS) is what a particle picture gives with a large margin; what is missing is any proof of a bound on the number of states of the Wilson transfer operator in a large cube beyond the trace bound Tr R / lambda_0 <= e^(12 beta L^3) of `gap-transfer.md` 6.3, which is (NS) with theta = 0 and log A of the order n^3, and that is too weak by the power n^2.
+Guide, not a proof: for a gas of free particles of mass m in the cube of side 2n, log N(E) is at most of the order (n^3 E^3)^(1/4) + log(n^3) for E >= m, which is below theta n E + C(theta) for every theta > 0. So (NS) is what a particle picture gives with a large margin; what is missing is any proof of a bound on the number of states of the Wilson transfer operator in a large cube beyond the trace bound Tr R / lambda_0 <= e^(12 beta L^3) of `gap-transfer.md` 6.3, which is (NS) with theta = 1/n and log A = 96 beta n^3 (corrected, row 703: the trace bound gives N(E) e^(-E) <= S(1) <= e^(12 beta (2n)^3); it does not give theta = 0, which would bound the number of states at every energy by one constant), and that is too weak by the power n^2.
 
-**A second exact form of the seed (PROVED GIVEN Lemma X of row 697, unchecked).** Fix the two sides (2n, 2n) of the directions 3, 4 and use the notation of Section 3.4 there: kappa(b) is the deficit of the ground-state energy of the box (b, 2n, 2n), and g(a, b) = log(1 + S(a; (b, 2n, 2n))). Lemma X with a = n, b = 2n reads
+**A second exact form of the seed (PROVED GIVEN Lemma X of row 697; Lemma X is checked, rows 698 and 699; this form is checked, row 703).** Fix the two sides (2n, 2n) of the directions 3, 4 and use the notation of Section 3.4 there: kappa(b) is the deficit of the ground-state energy of the box (b, 2n, 2n), and g(a, b) = log(1 + S(a; (b, 2n, 2n))). Lemma X with a = n, b = 2n reads
 
 log(1 + S(n; (2n)^3)) = 2n kappa(n) - n kappa(2n) + log(1 + S(2n; (n, 2n, 2n))).
 
@@ -270,10 +270,10 @@ whenever F and H are separated by d >= 1 in one of the four coordinate direction
 | Input | What it is | Status |
 |---|---|---|
 | (SEED) | the inequality at one size | OPEN; the crux; not attempted here (row 701 treats strong coupling) |
-| Theorem S | (SEED) gives (G) | row 697, PROVED there, not yet checked (rows 698, 699). Parts 2 to 4 use only its conclusion (G); if its proof is corrected and the conclusion changes only in constants, replace 5041 and the exponent accordingly |
+| Theorem S | (SEED) gives (G) | row 697, PROVED there; checked by two models (rows 698, 699), no statement fails. Parts 2 to 4 use only its conclusion (G); if its proof is corrected and the conclusion changes only in constants, replace 5041 and the exponent accordingly |
 | (TR) | `gap-transfer.md` (1.2), 1.3, (1) to (5), 6.1, (8a)-(8c), Lemmas A0, A4 | checked, HOLDS (`gap-transfer-check.md`); (8e), Kolmogorov extension, is not used: limit states are functionals on local functions |
 | os-equiv | `gap-os-equiv.md` (1), (3), Lemma E; (5a)-(5c) for Proposition P' | checked, HOLDS for these parts |
-| Proved here | Lemma T, Proposition C, Theorems L1, L2, Lemmas FE, M, RPc, Theorem L3, Propositions P, N1, N2 | PROVED, unchecked |
+| Proved here | Lemma T, Proposition C, Theorems L1, L2, Lemmas FE, M, RPc, Theorem L3, Propositions P, N1, N2 | PROVED; checked line by line by Claude Opus 5.5 (row 703), all HOLD |
 | Continuum datum | existence, (H2), (TOT) for Proposition P' | OPEN (the T0 chain) |
 
 **Open, each one exact statement.**
@@ -281,8 +281,8 @@ whenever F and H are separated by d >= 1 in one of the four coordinate direction
 - (SEED) at one n >= 3 for the given beta (or (SEED-phys) uniformly in the cutoff).
 - (U): convergence of <F>_{(L_k)^4} in k for every continuous local F. Without it the theorem speaks of every limit point.
 - (NS-gap): the state count that would give the converse (Section 6).
-- Sizes other than 2^(k+1) n are not covered by (G).
-- Time extents with d' < n_k (a pair separated by nearly half the time circle, within the widths) are not covered.
+- Sizes other than 2^(k+1) n are not covered by (G). (Row 703: REMOVED for every integer side L >= 2N, by (G-all) of `library/gap-seed-limit-check.md` Part B. Any sequence of integer sides that tends to infinity is admissible; the symmetric tori L^4 serve for every integer L.)
+- (Row 703: REDUCED by Lemma V of the check file: on the cube of side L every d' >= max(N, (6/m_0) log L) is covered.) Time extents with d' < n_k (a pair separated by nearly half the time circle, within the widths) are not covered.
 - Diagonal directions: the rate proved in Euclidean distance is m_0/2, not m_0.
 
 **What this file does not show.** It proves no mass gap: (SEED) is not proved at any coupling here. It does not show that the limit state is unique, that it is a Gibbs state, or anything about a continuum limit beyond the conditional Proposition P'.

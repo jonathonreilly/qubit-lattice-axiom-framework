@@ -452,3 +452,23 @@ Not queued: the author's items `gap-seed-guide` (a numeric guide under the numer
 Open in that file: (U), whether the limit depends on the subsequence of sizes; (NS-gap), the state count; the rate in diagonal directions (proved: m_0/2). Its open item on sides other than 2^(k+1) n is covered for the gap by Corollary S3'; row 703 asks for the limit-state form on all integer sides.
 
 **State of the chain.** (SEED) at one size gives: gap on all cubes of side at least 2N (checked by two models) and exponential clustering in every limit state (one author, check queued). What is missing is (SEED) itself. Rows 701 (the seed at strong coupling, as a test that the criterion can be met at all) and 702 (literature pass 3) are the two items aimed at it.
+
+### 13.10 The seed is proved at strong coupling; the limit theorem is checked; literature pass 3 (FINISH rows 701 to 706)
+
+**No mass gap at a coupling of order one is proved.** The seed inequality there is not proved and no tool for it is named.
+
+**The chain works end to end in one regime (row 701, `library/gap-seed-sc.md`; Claude Fable 5.2 medium; not yet checked by another model, check = row 704).** For beta below 1/12800 the seed is proved by hand with explicit constants: Phi(n; beta) is at most 0.16 n^4 (12800 beta)^e(n) with e(n) = min(4n, n^2), so Phi(n; beta) is at most 1.9e-4 for every n at least 4 with n (12800 beta)^n at most 0.18. With Theorem S and Corollary S3' every periodic cube of integer side at least 2n has gap at least 4 log(1/(12800 beta)) - (4 log n + log 1614)/n. The plan's target was false at n = 3: on the torus 3^4 a plane of 9 plaquettes winds, and Phi(3; beta) has exact order beta^9. The exact leading term for n at least 5 is 192 n^3 (beta/4)^(4n). Theorem S loses nothing in the exponential rate here. This regime is the known strong-coupling regime. Its value is that every input of the chain seed, Theorem S, gap on all cubes is now proved somewhere.
+
+**The limit theorem is checked (row 703, `library/gap-seed-limit-check.md`; Claude Opus 5.5 high).** Every statement of `library/gap-seed-limit.md` holds; one remark that no proof uses is corrected. Part B ports it to every integer side: (G-all), Lemma V (time extents down to max(N, (6/m_0) log L)), constant 1.085 off the dyadic sides, the symmetric tori L^4 for every integer L. Removed open items: other sizes; compatibility of sequences. Still open: (SEED), (U), (NS-gap), the diagonal rate.
+
+**Literature pass 3 (row 702, `library/prior/gap-seed-lit.md`; Codex gpt-6-luna; reading only).** It found no published tool that bounds the SU(2) seed and is false for U(1). That is a limit of what was read. A preprint by Ursachi (two-dimensional O(3) model, abstract only) states a criterion of the same form as Theorem S. Not reached: Luscher 1983; Frohlich, Simon and Spencer 1981; Koller and van Baal 1986 and 1988; the body of the Ursachi preprint.
+
+**The shape of what is left (the lead's reading, Claude Fable 5.2 high).** The proof has three parts.
+
+- Ultraviolet: from the lattice spacing to a box of small physical size. This is the account of Sussman and Alpoge after Balaban (the T0 chain); in a small box the coupling is small.
+- Infrared: from one box that holds the seed to every larger cube and to every limit state. This is Theorem S (checked by two models) with the limit theorem (checked by one).
+- Between: a finite range of box sizes, from the small box to a box of about 17 correlation lengths, where the coupling is of order one. The seed is the statement at the upper end of this range. For a fixed lattice coupling it is one inequality on one finite lattice. No by-hand tool is known for it, and every exact tool found so far holds for U(1) as well.
+
+A scale-invariant theory keeps S(n; (2n)^3) of order one at every size. A theory with a gap drives it to zero. The threshold 1/5041 is what the present lemmas give; the best possible threshold of a theorem of this kind is at most of order one. Row 705 asks how far the threshold can be raised, which moves the infrared end of the open range down. Row 706 puts published numbers on the size of the seed box at beta from 2.2 to 2.6.
+
+**Queue.** Row 704: check of the strong-coupling seed (worker 2, Opus 5.5 high). Row 705: the seed for other shapes, the limit of the method and a ceiling (worker 1, Fable 5.2 medium). Row 706: size of the seed box from published data (Codex gpt-6-luna; guide). Not queued: the numeric part of the author's item 3 (a measurement of Phi at n = 3, 4 for SU(2) and U(1); a guide, and row 706 first says where it could see anything); `gap-tube-test`.

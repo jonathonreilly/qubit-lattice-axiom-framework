@@ -428,7 +428,8 @@ def read_check(path: Path) -> dict | None:
     lines = path.read_text(encoding="utf-8").splitlines()
     if not lines or lines[0] != "---":
         return None
-    record: dict = {"file": path.name, "text": [], "reads": [], "raw": [], "bad": ""}
+    record: dict = {"file": path.name, "text": [], "reads": [], "raw": [], "bad": "",
+                    "said": {}, "spans_ok": True}
     seen: set[str] = set()
     key = ""
     for line in lines[1:]:
@@ -442,9 +443,12 @@ def read_check(path: Path) -> dict | None:
                 record[key].append(tuple(fields))
             else:
                 record["bad"] = record["bad"] or f"a {key} line is malformed"
+                record["spans_ok"] = False
             continue
         key, colon, value = line.partition(":")
         key, value = key.strip(), value.strip()
+        if colon and key in RECORD_FIELDS:
+            record["said"].setdefault(key, []).append(value)
         if not colon or key not in RECORD_FIELDS + ("text", "reads"):
             record["bad"] = record["bad"] or f"unknown line: {line.strip()[:40]}"
             key = ""
@@ -534,8 +538,8 @@ def compute_standing(root: Path, folder: Path) -> tuple[dict, Counter, list, set
 
     Returns the standing by statement name; by name, how many records are
     about an earlier text; the rejected records with the reason for each; and
-    the names that cannot be `checked` because a rejected `wrong` record about
-    the current text points at them and no counting record answers it.
+    the names that cannot be `checked` because a rejected record that may say
+    `wrong` about the current text names them and no counting record answers it.
     """
     counting: dict[str, list[dict]] = {}
     stale: Counter = Counter()
@@ -551,12 +555,17 @@ def compute_standing(root: Path, folder: Path) -> tuple[dict, Counter, list, set
         problem = record_problem(record)
         if problem:
             rejected.append((path.name, problem))
-            name = record.get("statement", "")
-            # A broken record that says wrong still blocks, unless its own
-            # hashes show it is about an earlier text.
-            if record.get("verdict") == "wrong" and NAME_RE.match(name) \
-                    and not (spans and moved):
-                blockers.setdefault(name, set()).add(path.name)
+            said = record["said"]
+            # A broken record blocks every statement it names, unless it plainly
+            # says right or undecided, or an intact manifest shows that it is
+            # about an earlier text. Corrupted hashes show nothing.
+            intact = record["spans_ok"] and bool(spans) \
+                and said.get("content") == [content_hash(record["raw"])]
+            harmless = said.get("verdict") in (["right"], ["undecided"])
+            if not harmless and not (intact and moved):
+                for name in said.get("statement", []):
+                    if NAME_RE.match(name):
+                        blockers.setdefault(name, set()).add(path.name)
             continue
         if moved:
             stale[record["statement"]] += 1
@@ -660,7 +669,7 @@ def status(args: argparse.Namespace) -> int:
                 if entry and entry["disputed"]:
                     notes.append(f"disputed, so argued: {name}")
                 if name in blocked:
-                    notes.append(f"a rejected wrong record names it, so not checked: {name}")
+                    notes.append(f"a rejected record names it, so not checked: {name}")
                 if stale[name]:
                     notes.append(f"{stale[name]} check record(s) are about an earlier "
                                  f"text: {name}")
@@ -673,7 +682,7 @@ def status(args: argparse.Namespace) -> int:
                 if entry and not closed:
                     why = f"check records give {entry['word']}"
                 elif name in blocked:
-                    why = "a rejected wrong record names it"
+                    why = "a rejected record names it"
                 elif stale[name] and not closed:
                     why = f"{stale[name]} check record(s) are about an earlier text"
                 else:

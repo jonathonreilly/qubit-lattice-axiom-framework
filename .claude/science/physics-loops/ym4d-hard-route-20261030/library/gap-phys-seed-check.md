@@ -7,7 +7,7 @@ Provenance: Claude Opus 5.5, high effort, Mac mini worker 2, commit 258009092. T
 
 ## Status
 
-Started 2026-11-11T14:34Z. Read whole: `gap-phys-seed.md` (455 lines); `gap-crux-restate.md` Sections 1, 3.1, 3.2, 3.4; `gap-seed-shape.md` lead note, 1.1 to 1.6; `gap-mid-max.md` lead note of row 709 and Section 4.3. Verdicts below are written one section at a time.
+Started 2026-11-11T14:34Z. Read whole: `gap-phys-seed.md` (455 lines); `gap-crux-restate.md` Sections 1, 3.1, 3.2, 3.4; `gap-seed-shape.md` lead note, 1.1 to 1.6; `gap-mid-max.md` lead note of row 709 and Section 4.3. Verdicts below are written one section at a time. **Complete (2026-11-11):** no statement fails; four hold after correction (Proposition 1.1, (PHYS-SEED-Delta), Corollary Z4, Corollary MB1, which misses the hypothesis (APR)); Corollary Z2 duplicates row 700 Corollary N3 in substance. Table in Section 7.
 
 **Not covered by this check.** The proofs of the inputs (Lemma A, Lemma K, Lemma X, Lemma E', Theorem S, Corollary S3', Theorem SH, Proposition Delta) are taken as checked in rows 698, 699, 707, 709; I re-read their statements and the lines used, not their proofs. Sections 1.1.1 to 1.1.4, 1.2, 1.4, 2.2, 2.3, 3.3 and 4 are outside the item (RECALLED and GUIDE text) and get no verdict. The Ising runs were not re-run. No numeric job was run.
 
@@ -78,3 +78,60 @@ Scope: "a model of the class" means the abstract setting of `gap-seed-shape.md` 
 One point of wording: D^+ and psi^+ may be infinite; the statement handles this correctly as written.
 
 **Corollary Z4.** HOLDS AFTER CORRECTION. The dichotomy is right for multiples b of 4 with b >= max(4 a_0, 12) (for b = 4 or 8, D(b/4) is a torus with sides below 3 and is not defined). The last sentence over-reaches: "every periodic cube of side b has a level within (256 D_0 + 29.64)/b of its ground state" is proved only for b a multiple of 4 with b >= max(4 a_0, 12). Text to use: "every periodic cube whose side b is a multiple of 4, b >= max(4 a_0, 12), has a level within (256 D_0 + 29.64)/b of its ground state."
+
+## 5. Section 3.2, Attempt 2
+
+**Lemma DIL.** HOLDS, with one line to add. Care point 5, the convexity of f. F(n; .) is the logarithm of a Laplace transform, so it is convex and smooth, with F(n; 0) = 0 (Haar probability measure) and dF/dbeta = -6 abs(n) abar_n (6 abs(n) plaquettes). f is the limit of F/abs(n) along the cubes 2^k n_0 (decreasing, and equal to the infimum over all tori, see 1.1.5 (iii) above), so it is a pointwise limit of convex functions and is convex. The missing line: f(beta) = integral of f' over [0, beta] needs f continuous at 0 from the right. It is: 0 <= 1 - (1/2) tr U_p <= 2 gives -12 beta <= F(n; beta)/abs(n) <= 0, so -12 beta <= f(beta) <= 0. Then f is convex and finite on [0, infinity) and continuous on [0, beta], hence absolutely continuous there. Delta(n; .) is then absolutely continuous with derivative 6 abs(n)(abar_inf - abar_n) almost everywhere, and the "if and only if" holds for absolutely continuous functions. abar_inf is defined outside a countable set only, as the row-709 note says for Lemma 4.2 of row 708; the file says this.
+
+**Proposition MB.** HOLDS. Care point 6.
+- The identity: Phi_rho(n)/(rho^4 n^4) = F(n^4)/n^4 - F((rho n)^4)/(rho n)^4, so D(n) = rho^(-4)(Phi_rho(n) + D(rho n)) at one coupling. Checked by inserting F = D + f abs(n).
+- The use of (MONO-Delta) at the torus of rho L_0 nu sites: D(rho L_0 nu; beta(nu)) and M(rho nu) = D(L_0 rho nu; beta(rho nu)) are the same lattice torus (rho L_0 nu >= 3 sites on a side) at two couplings beta(nu) <= beta(rho nu), both at least beta(nu_0) because beta is non-decreasing on N. So (MONO-Delta) gives the inequality in the right direction. Checked.
+- The limit of rho^(-4i) A: induction gives M(nu) <= P_0 (rho^(-4) + ... + rho^(-4i)) + rho^(-4i) M(rho^i nu), and (APR) bounds M(rho^i nu) by one A for every i, because rho^i nu is in N. So the remainder tends to 0. Without (APR) the step fails: M(nu) = c nu^4 satisfies the recursion M(nu) <= rho^(-4)(P_0 + M(rho nu)) for every c, so the recursion alone bounds nothing. (APR) can be weakened to rho^(-4i) M(rho^i nu) -> 0 for each nu.
+- Last step: D(rho^k L_0 nu; beta(nu)) <= M(rho^k nu) by (MONO-Delta) at the torus of rho^k L_0 nu sites. Checked.
+
+Remark (ii) of the file, "(APR) follows from the account as in 1.1.5 (iii) when L_0 is one of its tori", carries the two assumptions noted in my Section 1 (identification of V with E_m; uniformity of delta in the cutoff), and in addition that the physical unit of the account (first passage) is the unit of the trajectory. I did not check it; it is not a numbered statement.
+
+**Corollary MB1.** HOLDS AFTER CORRECTION. The hypothesis (APR) of Proposition MB is missing from the statement. As written ("(BASE-Phi), (MONO-Delta) and (Z-UNB) ... give (PHYS-SEED)") it does not follow: Proposition MB needs (APR), and by the example M = c nu^4 above, (BASE-Phi) and (MONO-Delta) do not give it. Text to use: "(BASE-Phi), (MONO-Delta), (APR) and (Z-UNB) on the sizes 4 rho^k L_0 give (PHYS-SEED)". With (APR) added the proof holds: D_j(L_1/(4 a_j)) <= D_0 = P_0/(rho^4 - 1) for every j (not only in the upper limit), L_1/a_j = 4 rho^k L_0 nu is a multiple of 4 and at least 12, and z^-(L_1) > 256 D_0 + 30 gives (C_b) for all large j, hence S_j <= exp(-7.5) < 1/1650 uniformly. The same omission is in "What Attempt 2 gives" (line 382), in the table of 3.4 (line 401), in 5.1 item 3, in the RESULT line, and in the FINISH row 720 result text. The lead should add (APR) there, or "(APR), which the account gives under the assumptions of 1.1.5 (iii)".
+
+**Proposition NM.** HOLDS. At beta_t no size has a seed, so (A) of Theorem ZD fails, so (B) fails: D(a; beta_t) > 6.1 x 10^(-4) for every a >= 3. At beta_1, Lemma Z3 at L = D_k = 2^(k+1) N gives D <= 128 q^(2^k)/5041, below 6.1 x 10^(-4) for large k. So D(n; .) is not non-decreasing on [beta_t, beta_1], and by Lemma DIL abar_n > abar_inf on a set of positive measure there. Correction to the mark only: the proof uses Theorem ZD ((B) => (A), so Theorem SH as well), not only Proposition Delta and Lemma Z3. The "Use" paragraph (a seed lost at one coupling above beta_min stays lost above it, under (MONO-Delta)) is the contrapositive and holds.
+
+## 6. Duplicates with earlier files
+
+Read for this: `gap-seed-limit.md` Sections 5 and 6 (row 700); `gap-crux-restate.md` Section 5; `gap-skeleton-max-b.md` A1 and A5.
+
+**Theorem ZD-c.** Partly a duplicate. The direction (PHYS-SEED) => uniform gap in physical units is Proposition P of `gap-seed-limit.md` Section 5 (row 700, with a seed size that may vary below ell_*), and item 4 of the verdict in `gap-crux-restate.md` Section 5 (in the form Phi <= 1.9 x 10^(-4)). The equivalence (PHYS-SEED) <=> (PHYS-SEED-Delta) is Proposition Delta (row 708, checked row 709) with Lemma Z3, run uniformly in j. New: the equivalence with (BDD-Delta) together with (Z-UNB), and with (Z-SEED). `gap-skeleton-max-b.md` A1 has (FE) and (FE-0) (Delta tends to 0), which are the small-number forms; A1 also notes that for a finite group Delta tends to the logarithm of the number of flux sectors, which is the case "(BDD-Delta) holds, (Z-UNB) fails" of this file, but A1 does not state the split. So the split of the seed into a bounded Casimir free energy and an unbounded scaled gap is new in this repository, as far as these files show.
+
+**(Z-SEED).** Not a duplicate. `gap-crux-restate.md` Section 5 item 4 is the form with a small number (Phi below 1.9 x 10^(-4) at one physical size). (Z-SEED) allows Phi_4 of order one and puts the gap of the cube on the other side.
+
+**Corollary Z2.** A duplicate in substance of Corollary N3 of `gap-seed-limit.md` Section 6 (row 700), with the state count supplied by Proposition Delta. Derivation: Proposition N1 there gives N_(4a)(E) <= e^(aE) S(a; (4a)^3), and Proposition Delta gives S(a; (4a)^3) <= e^(64 D(a)). So (NS) holds on the cube of side 2n = 4a with theta = 1/2 and A_n = e^(64 D(n/2)). The condition of Corollary N3, liminf (log A_n)/n < (1 - theta) m, reads 64 D(a)/(2a) < m/2, that is liminf D(a)/a < m/64: the condition of Corollary Z2, with the same constant 64. Corollary Z2's route (Lemma Z and Theorem ZD) is different, and its contrapositive gives the explicit bound D(a) > (m_0/64) a - 0.116. The file says "Row 697 left open whether a uniform gap forces a seed" and does not cite row 700, where this question is answered by (NS) and the open statement (NS-gap) is named. What Corollary Z2 adds to row 700: a sufficient condition for (NS-gap) in terms of the Casimir free energy, liminf D(a)/a < m/64. The file should cite Corollary N3 and say this.
+
+`gap-skeleton-max-b.md` A5 is the crux (STEP) for step scaling; Lemma FLOW is its elementary positive form, and Part 2 cites A5. No numbered statement of the file duplicates A5.
+
+## 7. Verdict table
+
+| Statement | Verdict |
+|---|---|
+| 1.1.5 (i), (ii) | HOLDS |
+| 1.1.5 (iii) | HOLDS as a conditional; add to the assumption that delta_vac-bar is uniform in the cutoff and that V of (ST5) is E_m of CA-II (not checked against the source here) |
+| Proposition 1.1 | HOLDS AFTER CORRECTION: a comparison of sizes, not a theorem that (UV-Z) cannot give the seed; "log(1 + t(r)) <= log 1.1" false for r >= 24, use "< log 2" |
+| P1 (1.3) | HOLDS (minimum 12.88 at r = 4, also over the general lines r >= 4j) |
+| Flux half at the large end (1.3), fragment of 1.2 | HOLDS |
+| (PHYS-SEED-Delta) (1.3) | HOLDS AFTER CORRECTION: m >= 0.12/n_j on the dyadic cubes 2^k 4 n_j only; on every cube of side at least 64 n_j, m >= 0.06/n_j |
+| Lemma FLOW | HOLDS (add the line that the sequence stays above u_0) |
+| Lemma Z, Corollary Z1, Remark on other shapes | HOLDS |
+| Lemma Z', Corollary Z1' | HOLDS (both monotony uses checked) |
+| Lemma Z3 | HOLDS (split and exponents checked) |
+| Theorem ZD | HOLDS |
+| Corollary Z2 | HOLDS; duplicate in substance of row 700 Corollary N3 with Proposition Delta |
+| Theorem ZD-c | HOLDS (every constant uniform in j; the bound at L_1 is strict, exp(-7.436)) |
+| Corollary Z4 | HOLDS AFTER CORRECTION: the last sentence holds for sides b that are multiples of 4 with b >= max(4 a_0, 12) only |
+| Lemma DIL | HOLDS (add: -12 beta <= f <= 0, so f is continuous at 0) |
+| Proposition MB | HOLDS |
+| Corollary MB1 | HOLDS AFTER CORRECTION: the hypothesis (APR) is missing; without it the statement does not follow (M = c nu^4 meets the recursion) |
+| Proposition NM | HOLDS (its inputs include Theorem ZD and so Theorem SH) |
+
+No statement FAILS. Four hold after correction, and no correction changes a threshold or a constant used later. The correction that changes the reduction is Corollary MB1: the open statements of the second reduction are (BASE-Phi), (MONO-Delta), (APR) and (Z-UNB), and (APR) is supplied by the account only under the assumptions of 1.1.5 (iii). The same omission is in line 382, the table of 3.4, 5.1 item 3, the RESULT line, and the result text of FINISH row 720.
+
+## 8. Status (final)
+
+Done 2026-11-11. Every numbered statement in the sections of the item has a verdict above. Not covered: the proofs of the checked inputs; the source lines of the account (I did not fetch CA-II to test the assumption of 1.1.5 (iii)); the GUIDE estimates (40 correlation lengths for (Z-SEED), kappa = 3, the Ising runs); Sections 1.2, 1.4, 2.2, 2.3, 3.3 and 4. This check is by Claude Opus 5.5, a model of the same provider as the author (Claude Fable 5.2); no model of another provider read the file. No mass gap is claimed.

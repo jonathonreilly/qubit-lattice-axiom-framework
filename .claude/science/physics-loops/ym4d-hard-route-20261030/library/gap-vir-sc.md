@@ -5,7 +5,7 @@ lease_until: 2026-11-11T23:45Z
 
 Research-stage working state. It grants no status. Nothing here is a public claim.
 
-Pinned at commit dd62c14ce on `claude/ym4d-hard-route`. Written by Claude Fable 5.2, medium effort, one session, no subagents. Author run, not a check. Written in steps (save rule, row 675).
+Pinned at commit dd62c14ce on `claude/ym4d-hard-route`. **Lead note (row 715, 2026-11-11; Claude Opus 5.5, lead session):** checked line by line by Claude Opus 5.5 high (`library/gap-vir-sc-check.md`; same provider). Every numbered statement holds, Theorem U at every s below 4 included. Theorem B1 holds after two corrections of its input marks: the continuity of lambda_1 comes from min-max or (RK) (2), not from Lemma 4.1; the (VIR_K) clause needs the Peter-Weyl theorem (RECALLED), which belongs in the mark. Written by Claude Fable 5.2, medium effort, one session, no subagents. Author run, not a check. Written in steps (save rule, row 675).
 
 ## 0. Log of the run
 

@@ -78,9 +78,148 @@ Phi(n) := 16 F(n,n,n,n) - F(2n,2n,2n,2n) >= 0, the free-energy defect of doublin
 
 **The five are one statement.** C1 is the gap with confinement on periodic boxes. C2 is its flux half. C3 and C4 are stronger (all boundary values; complex beta). C5 is C1 for another family. I could not find a sixth statement that is weaker than the gap and still closes the tree.
 
-## Status block (first version, after Part 1; kept current at the end of the file)
+## Status block (kept current; the final version is Section 6)
 
-- Written: Sections 0-2. Proofs of Theorems D and F, Lemma J and Proposition R follow in Sections 3 and 4.
-- Open: every candidate. No attempt has been made yet at this point of the file.
+- Written: Sections 0-2 (Part 1), Section 3 (attempt 1, ended at its stop statement (FIT)), Section 4 (attempt 2, ended at its stop statement (TUBE')).
+- Proved here, not checked: Theorem D, Corollary D2, Proposition R, Proposition N, Lemma J with the seam bound, Theorem F, Proposition T.
+- Open: every candidate of Part 1.
+
+## 3. Part 2, attempt 1: the gap on periodic boxes from two tori per scale (C1; lead (b))
+
+Lead (b) asks for a seed and a doubling step for ratios of partition functions of small tori. This section proves the part of it that is exact, names the step that is missing, and writes down three ways in which the step failed.
+
+### 3.1 Theorem D (PROVED from (TM), (TM-c), Lemma A)
+
+Let n >= 3, Phi(n) = 16 F(n,n,n,n) - F(2n,2n,2n,2n), and let T be the transfer operator in direction 1 of the box B_2 = (2n, 2n, 2n).
+
+- (a) Phi(n) >= 0.
+- (b) 1 + S(n; B_2) <= exp(Phi(n)).
+- (c) exp(-n m(B_2)) <= exp(Phi(n)) - 1. So if Phi(n) < log 2, then m(B_2) >= (1/n) log(1 / (exp(Phi(n)) - 1)). Read backwards: Phi(n) >= log(1 + exp(-n m(B_2))).
+- (d) The number N(E) of eigenvalues lambda_i, i >= 1, with log(lambda_0 / lambda_i) <= E satisfies N(E) <= exp(n E) (exp(Phi(n)) - 1).
+- (e) The odd-flux weight of the torus (2n)^4, for each of the six planes, satisfies u <= S(2n; B_2) <= (exp(Phi(n)) - 1)^2. So 1 - Z^(mu nu)/Z <= 2 (exp(Phi(n)) - 1)^2.
+- (f) Phi(n; beta) = 96 n^4 times the integral over s in [0, beta] of (abar_2n(s) - abar_n(s)), where abar_n(s) is the expectation of 1 - (1/2) tr U_p on the n^4 torus at coupling s.
+
+Proof. (a) Lemma A (a) with j = 2, in the direction mu: Z(..., 2 n_mu, ...) <= Z(..., n_mu, ...)^2. Four such steps give Z((2n)^4) <= Z(n^4)^16.
+(b) Tr T^n = Z(n, 2n, 2n, 2n) =: Z_1 and Tr T^(2n) = Z((2n)^4). By Lemma A (b), lambda_0^n >= Z((2n)^4) / Z_1. So 1 + S(n; B_2) = Tr T^n / lambda_0^n <= Z_1^2 / Z((2n)^4). Three steps of (a), in the directions 2, 3, 4, give Z_1 <= Z(n^4)^8. So 1 + S(n; B_2) <= Z(n^4)^16 / Z((2n)^4) = exp(Phi(n)).
+(c) r_1^n <= S(n; B_2), and r_1 = exp(-m(B_2)).
+(d) N(E) exp(-n E) <= S(n; B_2).
+(e) Z_odd = Tr(T^(2n) P) with P = (1 - C_nu)/2. The eigenvector of lambda_0 is strictly positive, and C_nu maps positive functions to positive functions and commutes with T. So this eigenvector is even, and Tr(T^(2n) P) <= sum over i >= 1 of lambda_i^(2n) = lambda_0^(2n) S(2n; B_2). Also Z >= lambda_0^(2n), and S(2n; B_2) <= S(n; B_2)^2.
+(f) dF(n)/dbeta = -6 |n| abar_n and F(n; 0) = 0 (run 2, Lemma 2). So d Phi/d beta = -96 n^4 abar_n + 96 n^4 abar_2n. QED
+
+**Corollary D2 (PROVED).** (i) If Phi(n) <= C exp(-c n) <= 1, then m((2n)^3) >= c - log(2C)/n. (Use e^x - 1 <= 2x on [0,1].)
+(ii) Let (Phi-step) hold with K >= 2 and eps_0 <= 1/2, and let n_1 >= n_0 with Phi(n_1) < min(eps_0, 1/K). Put Phi_k = Phi(2^k n_1). Then K Phi_k <= (K Phi_0)^(2^k), and for every k >= 0:
+
+m((2^(k+1) n_1)^3) >= (1/(2^k n_1)) log(1/(2 Phi_k)) >= log(1/(K Phi(n_1))) / n_1.
+
+Proof of (ii). Induction: K Phi_(k+1) <= (K Phi_k)^2, and Phi_k <= Phi_0 < eps_0 keeps the step valid. Then Theorem D (c) with e^x - 1 <= 2x, and log(1/(2 Phi_k)) >= 2^k log(1/(K Phi_0)) + log(K/2). QED
+
+So one seed and the step give a gap for all dyadic boxes, with a rate that does not depend on the box. The rate is in the units of the seed size n_1. The rate filter then says that the seed size is at least of the order of the correlation length.
+
+### 3.2 Proposition R: a seed has an exponential reach, and no more (PROVED)
+
+Let Delta(n,n,n,n) <= eps. Then for every k >= 0 with 8^k eps <= 1: m((2^k n)^3) >= (1/n) log(1/(2 8^k eps)).
+
+Proof. Multiply three sides by 2^k: Delta(n, 2^k n, 2^k n, 2^k n) <= 8^k eps. By run 2's Lemma 1 (d), 1 + S(n; (2^k n)^3) <= exp(Delta(n, 2^k n, 2^k n, 2^k n)). Then r_1^n <= exp(8^k eps) - 1 <= 2 8^k eps. QED
+
+Meaning. If Delta(n^4) <= exp(-mu n), the gap of every box of side up to n exp(mu n / 3) is at least mu - (3k log 2 + log 2)/n. Positivity alone carries a seed over exponentially many scales. It does not carry it to infinite volume, and it uses f, which is a limit over all sizes: Delta(n^4) = sum over k >= 0 of 16^(-(k+1)) Phi(2^k n). Theorem D is the form that uses two finite tori and reaches one doubling.
+
+### 3.3 The missing step (Phi-step), and three ways that failed
+
+**Way 1: positivity of the transfer operators in all four directions. It cannot work (Proposition N, PROVED).**
+
+Theorem D (a)-(d), Corollary D2 and Proposition R use (TM) only through this weaker property (TM'): for each direction mu and each choice of the other sides, Z(n) is the integral of lambda^(n_mu) against a positive measure on (0, Lambda] that has an atom of mass at least 1 at Lambda; and Z is symmetric in the sides.
+
+Proposition N. Let 0 < q < 1, c > 0, f real, w(k) = c q^k, and Z_w(n) := exp( f |n| + sum over mu of (|n| / n_mu) w(n_mu) ). Then Z_w has (TM'), its infimum of F/|n| is f, and for every n:
+
+32 n^3 c q^n <= Phi(n) <= 64 n^3 c q^n and Phi(2n) >= Phi(n)^2 / (16 n^3 c).
+
+So for given n, eps and K, the choice c <= min( eps / (64 n^3 q^n), 1 / (16 n^3 K) ) gives Phi(n) <= eps and Phi(2n) >= K Phi(n)^2.
+
+Proof. As a function of n_1, with V = n_2 n_3 n_4: Z_w = Lambda^(n_1) exp(V c q^(n_1)), Lambda = exp(f V + sum over mu >= 2 of (V/n_mu) w(n_mu)), and exp(V c q^(n_1)) = sum over j >= 0 of ((V c)^j / j!) (q^j)^(n_1). This is a positive combination of exponentials and the top weight is 1. F/|n| = f + sum over mu of w(n_mu)/n_mu, which is above f and tends to f. So Delta(n^4) = 4 n^3 w(n) and Phi(n) = 16 Delta(n) - Delta(2n) = 64 n^3 c q^n - 32 n^3 c q^(2n). The two bounds on Phi(n) follow from 0 < q^n < 1. Then Phi(2n) >= 32 (2n)^3 c q^(2n) = 256 n^3 c q^(2n), and Phi(n)^2 <= 4096 n^6 c^2 q^(2n). QED
+
+What Proposition N shows. Z_w is an ideal gas of one kind of winding excitation with weight c per unit volume. Phi(2n) is linear in c and Phi(n)^2 is quadratic. So the step needs a lower bound on the number of light states of the doubled box in terms of the single box: a light state of the box (4n)^3 must already be seen, with at least a fixed weight, in the box (2n)^3. Positivity does not know this. Translation invariance and locality must give it. This is the exact content of run 2's Lemma NSM, and it is the same as the statement that the gap of the box does not fall when the box is doubled.
+
+I do not know a local reflection-positive lattice model in which (Phi-step) fails. For local quantum Hamiltonians without positivity no finite-size criterion can exist: the spectral gap problem is undecidable (GUIDE: Cubitt, Perez-Garcia and Wolf; recalled, not read here).
+
+**Way 2: compare the torus (2n)^4 with sixteen tori n^4 by cutting and gluing. Exact result, of the wrong size (PROVED).**
+
+The links of the torus (2n)^4 are the disjoint union of the links of sixteen blocks, and each block is the link set of a torus n^4. A plaquette of the large torus lies in one block, or it is a seam plaquette that has links of at least two blocks. The number of seam plaquettes is N_seam = 96 n^4 (1 - (1 - 1/n)^2) = 192 n^3 - 96 n^2.
+
+Lemma J (gauge averaging; PROVED). Let mu be a probability measure on link configurations that is invariant under all gauge transformations. Let p be a plaquette with corners x_0, ..., x_3, and let k_1, k_2, k_3 be fixed elements of SU(2). Then the expectation of (1/2) tr(U_01 k_1 U_12 k_2 U_32^(-1) k_3 U_03^(-1)) equals (1/2 tr k_1)(1/2 tr k_2)(1/2 tr k_3) times the expectation of (1/2) tr U_p. (Seam case.) If the links of p belong to two independent systems, each with a gauge-invariant law, then the expectation of (1/2) tr U_p is 0.
+Proof. A gauge transformation g replaces k_c by g_c^(-1) k_c g_c and leaves mu invariant. Average over g_c with Haar measure: the average of g^(-1) k g commutes with SU(2), so it is the scalar (1/2) tr k. Seam case: a gauge transformation of the second system at one end of its link multiplies that link by g and leaves the links of the first system fixed; the Haar average of g is 0. QED
+
+Consequence. Under the product of the sixteen Gibbs measures, a seam plaquette of the large torus has expectation of (1/2) tr equal to 0 (seam case: its links lie in at least two blocks), and the plaquette of a small torus that it replaces has 1 - abar_n. Jensen's inequality for Z((2n)^4) / Z(n^4)^16 gives
+
+Phi(n) <= beta (192 n^3 - 96 n^2) (1 - abar_n(beta)).
+
+This is true and of order beta n^3. Theorem D needs Phi(n) < log 2. The bound cannot be improved at first order: by Lemma J the first-order cost of a seam plaquette is exactly beta (1 - abar_n), whatever the coupling. A gluing of independent pieces always pays the full plaquette energy on the seam.
+
+**Way 3: a smooth deformation in place of a cut (the Mermin-Wagner idea). It fails for the same exact reason.**
+
+For spin models with a continuous symmetry, a twist is spread over the whole torus and costs only a gradient energy. The lattice gauge measure has no continuous global symmetry. The deformations at hand multiply links by fixed elements h_l. By Lemma J the first-order cost of a plaquette is beta (1 - abar) (1 - product over corners of (1/2) tr k_c) >= 0, where k_c is the product of the h at the corner. It is zero only if every k_c is in the centre, that is, only if the deformation is a gauge transformation times a field with values in the centre. For an Abelian spreading of the flux pi over the plane (1,2), k_c = exp(i a_c σ_3) with a_c of order pi times a coordinate over n_1 n_2, and the cost is beta (1 - abar) times a sum of a_c^2 / 2. The sum is of order pi^2 |n| / min(n_1, n_2)^2. It grows with the size of the torus. For U(1) the same spreading is covariant and costs beta pi^2 n_3 n_4 / (2 n_1 n_2), which does not grow on symmetric tori. So first-order comparison sees the gauge potential of the deformation, not its field strength. It gives nothing that is uniform in the size.
+
+**Stop.** (Phi-step) failed in three ways: positivity (Proposition N: impossible), gluing (exact surface term), deformation (Lemma J: no covariant first-order comparison). The one exact next statement of this attempt:
+
+(FIT) There are n_0 and theta in (0, 1] such that for all n >= n_0: S(2n; (4n)^3) <= (1/theta) S(n; (2n)^3)^2 whenever S(n; (2n)^3) <= theta. In words: the thermal sum of the doubled box at the doubled time is at most a constant times the square of the thermal sum of the box.
+
+(FIT) closes C1 in this sense (PROVED implication; the seed can be read from two tori, by Theorem D (b)): if S(n_1; (2 n_1)^3) < theta for one n_1 >= n_0, then S(2^k n_1; (2^(k+1) n_1)^3) <= theta (S(n_1; (2n_1)^3)/theta)^(2^k), so m((2^(k+1) n_1)^3) >= log(theta / S(n_1; (2 n_1)^3)) / n_1 for all k. The proof is the induction of Corollary D2, with r_1^k <= S(k; B). Remark, not a proof for a lattice model: for the gas Z_w the two sides of (FIT) are about 64 n^3 w(2n) and 64 n^6 w(n)^2 / theta, so (FIT) holds exactly when n^3 c, the weighted number of one-particle states of the box of side n, is at least of order theta. Proposition N is the case where n^3 c is made small by hand.
+
+## 4. Part 2, attempt 2: the flux half (C2; lead (a))
+
+### 4.1 Theorem F (PROVED from (TM), (TM-c), Lemma A, (LB))
+
+Torus with sides (a, b | c, d) in the directions (1, 2 | 3, 4), twist in the plane (1,2), Z_odd = (Z - Z^(12))/2, Z_even = (Z + Z^(12))/2, u = Z_odd / Z, v = Z_odd exp(-f |n|).
+
+- (a) Z_odd = Tr(T_1^a P_2) = Tr(T_2^b P_1), where T_mu is the transfer operator in direction mu and P_nu = (1 - C_nu)/2 is the projection on the odd subspace of C_nu. So 0 <= Z_odd < Z_even.
+- (b) Z_odd(ja, kb | c, d) <= Z_odd(a, b | c, d)^(jk) for all integers j, k >= 1.
+- (c) v(ja, kb | c, d) <= v(a, b | c, d)^(jk), and u <= v on every torus.
+- (d) If v(a_0, b_0 | c, d) < 1, put sigma = log(1 / v(a_0, b_0 | c, d)) / (a_0 b_0). Then u(j a_0, k b_0 | c, d) <= exp(-sigma (j a_0)(k b_0)) for all j, k >= 1.
+- (e) If v >= 1 on every torus (a, b | c, d) with the same c, d, then for every a the top eigenvalue mu_0(a) of T_2 on the odd subspace of the slice (a, c, d) satisfies log mu_0(a) >= f a c d. So the flux energy log(lambda_0(a)/mu_0(a)) is at most the deficit log lambda_0(a) - f a c d of that slice, for every a.
+
+Proof. (a) (TM-c) for the pairs (mu, nu) = (1, 2) and (2, 1); Z^(12) is symmetric in the two directions and positive. (b) P_2 commutes with T_1, so T_1 P_2 is a positive trace-class operator and (T_1 P_2)^a = T_1^a P_2. Lemma A (a) gives Tr (T_1 P_2)^(ja) <= (Tr (T_1 P_2)^a)^j. This is the step in direction 1. On the torus (ja, b | c, d) do the same in direction 2 with T_2 P_1. (c) f |n| is multiplied by jk; u <= v is (LB). (d) from (c). (e) Z_odd(a, b)^(1/b) tends to mu_0(a) as b grows (Lemma A (a)), and v >= 1 says Z_odd(a, b)^(1/b) >= exp(f a c d). QED
+
+What it says. The doubling of run 1's Lemma 4 carries an entropy term because it uses the ratio Z_odd / Z_even. With the bulk constant f in place of Z_even there is no entropy term. For fixed transverse sides there is an exact alternative: either one torus has v < 1, and then the odd-flux weight decays like the exponential of the area of the face (1,2) on all its multiples; or the flux energy never exceeds the deficit of the slice. With the Tomboulis-Yaffe inequality (GUIDE: Kanazawa, Theorem 1: the Wilson loop of a rectangle C in the plane (1,2) is at most 2 u^(A_C / (n_1 n_2))) case one is the area law, with tension sigma, on Z^2 times the transverse torus. This is close to node T3 (b) of the final skeleton; I did not open its source, and the proof above does not use it.
+
+Theorem F does not reach four dimensions. The tension sigma depends on (c, d). The four-dimensional statement is (FLUX-4) of Part 1.
+
+### 4.2 How C1 and C2 are tied
+
+v = u exp(Delta) on every torus. By Theorem D (e), on the torus (2n)^4: u <= (exp(Phi(n)) - 1)^2. So C1 bounds the odd-flux weight, but with the rate of the gap: (Phi-dec) gives u <= exp(-2cn + const), not exp(-sigma n^2). And C2 says nothing about the zero-flux sector. The gap and the area law are two statements, and each half has its own missing step.
+
+### 4.3 The transverse step (TUBE): what it would give, where it fails, three ways that failed
+
+**(TUBE).** There are K >= 1 and n_0 such that on all tori with all sides at least n_0: Z_odd(a, b | 2c, d) <= K Z_odd(a, b | c, d) Z(a, b | c, d), and the same with d doubled.
+
+In words: when the transverse section is doubled, the odd flux sits in one of the two halves, and the other half is in its vacuum. The flux does not gain by spreading over both.
+
+**Proposition T (PROVED implication).** Assume (TUBE), and D := sup over L >= L_0 of Delta(L, L, L, L) finite, with L_0 >= n_0. Put M = K^8 exp(12 D). If v(L_0, L_0 | L_0, L_0) < M^(-1/3), then with sigma = log(1/(M^(1/3) v(L_0^4))) / L_0^2 and L = 2^k L_0:
+
+u(L, L | L, L) <= v(L, L | L, L) <= exp(-sigma L^2) for all k >= 0.
+
+Proof. (TUBE) and the definition of v give v(a, b | 2c, d) <= K exp(Delta(a, b, c, d)) v(a, b | c, d). So v(L, L | 2L, L) <= K exp(Delta(L^4)) v(L^4), and v(L, L | 2L, 2L) <= K exp(Delta(L, L, 2L, L)) v(L, L | 2L, L) <= K^2 exp(3 Delta(L^4)) v(L^4), because doubling one side at most doubles Delta. Theorem F (c) with j = k = 2 gives v((2L)^4) <= v(L, L | 2L, 2L)^4 <= M v(L^4)^4. So M^(1/3) v((2^k L_0)^4) <= (M^(1/3) v(L_0^4))^(4^k). QED
+
+So one seed, (TUBE), and a bounded excess free energy give (FLUX-4) on dyadic symmetric tori. The seed is one inequality between three partition functions and the number f.
+
+**(TUBE) against U(1) (estimate at Gaussian order, not a proof).** For the Gaussian weight, Z_odd / Z_even is about 2 exp(-x) for large x, with x = (g^2/2) a b / (c d): the flux spreads over the section, and its energy falls like the inverse of the section. Doubling c halves x. The ratio of the two sides of (TUBE) is then about exp(x/2 - R), where R = 2F(c) - F(2c) is the doubling defect of the photon gas in direction 3, about 0.41 a b d / c^3 when c is the shortest side. So the ratio is exp( (a b / (c d)) (g^2/4 - 0.41 d^2/c^2) ), which is unbounded in a b when d < 0.78 g c. (TUBE) for all shapes is false for U(1): it fails on sections that are thin in the direction that is not doubled. On square sections at weak coupling the estimate does not refute it, and there the seed fails instead (u is near 1/2).
+
+**Way 1: positivity.** In direction 3, Z and Z^(12) are traces of two operators on two spaces, T^c on the periodic slice and T_tw^c on the slice with the twist. Z_odd is half their difference, and Lemma A gives only Z(2c) <= Z(c)^2 and Z^(12)(2c) <= Z^(12)(c)^2. With Z_even in place of Z and K = 2, (TUBE) is
+
+(TUBE') Z(c)^2 - Z(2c) >= Z^(12)(c)^2 - Z^(12)(2c), that is, Tr Lambda^2(T_tw^c) <= Tr Lambda^2(T^c),
+
+because Z^2 - (Z^(12))^2 = 4 Z_odd Z_even and (Tr S)^2 - Tr S^2 = 2 Tr Lambda^2 S. The first elementary symmetric function obeys the same inequality (Z^(12) <= Z). Positivity gives nothing for the second: the two operators act on different spaces and no map between them is known that is positive.
+
+**Way 2: reflection positivity across the section.** Let c be even, and split the stack of twisted plaquettes into two halves H and theta H by two reflection planes that bisect links of direction 3. Put G_H = product over p in H of exp(-beta tr U_p), so Z^(12)/Z is the expectation of G_H times theta G_H, and put tau = expectation of G_H. Reflection positivity in direction 3 (the input behind (TM)) and the Schwarz inequality give tau^2 <= Z^(12)/Z, so u <= (1 - tau^2)/2. This is an upper bound on the odd-flux weight, of the right direction. But G_H is a stack with a boundary, a pair of 't Hooft loops, and the only lower bound that I have for tau is Jensen's, exp(-2 beta (1 - abar) |H|) with |H| = c d / 2. For c and d powers of two, iterating the reflection in the directions 3 and 4 down to single plaquettes gives Z^(12)/Z >= (expectation of exp(-beta tr U_p))^(c d): a cost per plaquette of the section. It is the trivial bound. It does not see that the stack can be moved for free.
+
+**Way 3: move the flux into one half by a deformation.** By Lemma J every such deformation pays beta (1 - abar) (1 - product of normalised corner traces) per plaquette. A deformation that is not a gauge transformation times a centre field pays on a set of plaquettes of positive density.
+
+**Stop.** (TUBE) failed in three ways. The one exact next statement of this attempt is (TUBE'), for tori with square section: prove it, or find a torus on which it fails for SU(2). It is one inequality between four partition functions, and it can be tested by a run before any proof is tried.
+
+### 4.4 Where the group sits in the flux weight (an exact identity, PROVED; no attempt)
+
+Write U_l = s_l V_l with s_l = +-1 and V_l in a measurable section of SU(2) over SO(3). Haar measure is the product. (1/2) tr U_p = s_p J_p(V), with s_p the product of the four signs and J_p(V) = (1/2) tr of the product of the V_l around p, a number in [-1, 1]. For fixed V this is a Z_2 gauge theory with couplings beta J_p(V). The twist changes the sign of s_p on the stack, so it acts on the Z_2 part only. So
+
+u(SU(2), beta) = expectation over V of u(Z_2 with couplings beta J(V)), where V has the law with density Z_(Z_2)[beta J(V)] / Z.
+
+The odd-flux weight of SU(2) is the mean of the odd-flux weight of a Z_2 gauge theory in a random SO(3) environment (Mack and Petkova, GUIDE, use this splitting for Wilson loops). For the group Z_2 the environment is trivial and J = 1. For SU(2) the environment can make J_p small and can change its sign. This is the place where Fact T acts: a twist of the SO(3) field costs no classical action. No bound follows from the identity alone.
 
 <!-- END -->

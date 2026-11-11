@@ -5,7 +5,7 @@ lease_until: 2026-11-11T13:38Z
 
 Provenance: Claude Opus 5.5, high effort, Mac mini worker 2, commit d76689eed. One line-by-line reading by a model that did not write the proofs. Not an audit. FINISH row 681; brief: `library/gap-skeleton-max-b.md` Part 4 Item 3 (lines 549-554).
 
-Status: in progress. Sections are appended as each check finishes.
+Status: complete. Verdicts (table in Section 10): Theorem ZB, Theorem Z, Corollary 5' HOLD AFTER CORRECTION (their shape condition (TUBE) holds for no bounded domain, so as written they are vacuous; repaired by (TUBE') and a Harnack-chain bound, conclusion unchanged); Theorem LP HOLDS AFTER CORRECTION (proof repair at irregular boundary points); Lemma HM, Lemmas 1, 1', 2, 3, Proposition 3 and the Hessian bound HOLD. (TM_B) is written out in Section 9 as a port of row 667.
 
 ## 0. Repo search and scope
 
@@ -93,7 +93,7 @@ Hence omega_k(beta) -> omega_D(beta), and step 4 gives m_B(beta) >= kappa_0 omeg
 
 ### 3.6 Corrected statement
 
-**Theorem ZB (corrected).** Let D be a bounded, simply connected domain, symmetric under conjugation, with |beta| <= r_0 in D, [0, X) in D and D in {Re beta < X}, D intersected with {Re beta <= 0} inside {|beta| < 2 r_0}, D intersected with {|beta| < 2 r_0} connected, and (TUBE') with theta. Assume (TM_B) (Section 10 below), (SC_B), and (ZF_B): Z(k, B; beta) != 0 for beta in D and k >= k_0. Then for every real beta in D with beta > r_0: m_B(beta) >= kappa_0 omega_D(beta), with omega_D the harmonic measure of the arc {|beta| = r_0, Re beta >= 0} in {beta in D: Re beta > 0, |beta| > r_0}. Proof: the file's steps 2-4 with Lemma S as step 1 and 3.5 for the limit.
+**Theorem ZB (corrected).** Let D be a bounded, simply connected domain, symmetric under conjugation, with |beta| <= r_0 in D, [0, X) in D and D in {Re beta < X}, D intersected with {Re beta <= 0} inside {|beta| < 2 r_0}, D intersected with {|beta| < 2 r_0} connected, and (TUBE') with theta. Assume (TM_B) (Section 9 below), (SC_B), and (ZF_B): Z(k, B; beta) != 0 for beta in D and k >= k_0. Then for every real beta in D with beta > r_0: m_B(beta) >= kappa_0 omega_D(beta), with omega_D the harmonic measure of the arc {|beta| = r_0, Re beta >= 0} in {beta in D: Re beta > 0, |beta| > r_0}. Proof: the file's steps 2-4 with Lemma S as step 1 and 3.5 for the limit.
 
 Inputs still open: (SC_B) (queue item `gap-sc-box`) and (ZF_B). Not checked here: whether (SC_B) as stated is true; I only note that its form (only polymers winding the time circle survive in the difference; such a polymer has at least 4k plaquettes) is the right one.
 
@@ -152,3 +152,63 @@ The proof writes "f_inf >= liminf (V_{a,l'} - C_- l'^4)/l'^4". f_inf is per latt
 Count: with H = -(1/a) log T on the box (l/a)^3 and time n_1 = l/a, S(n_1) = sum_{i>=1} e^{-l (E_i - E_0)}. If N eigenvalues (with multiplicity, including E_0) lie in [E_0, E_0 + E], then N e^{-lE} <= 1 + (N - 1) e^{-lE} <= 1 + S(n_1) <= e^{Delta} (Lemma 1(d)). So N <= exp(lE + (C_+ + C_- + C_V) l^4), uniformly in a. Correct.
 
 Not checked: whether (ST5) of the account is stated as quoted (lines 98405-98413 of the complete account were not opened in this run); (V-ext) is an added hypothesis the account does not state (the plan says so). The paragraph "Meaning" after the proposition is not part of it and is not a proof: a weak limit of spectral measures with at most N atoms below E gives discrete spectrum below E, but "spec(H_l) in {0} union [m(l), infinity) with m(l) > 0" needs also that the vacuum stays simple in the limit, or must be read on the orthocomplement of ker H_l.
+
+## 8. The Hessian bound of 1.4 — plan 1.4, "Attack on (HESS): the numbers"
+
+**Verdict: HOLDS** (the bound Hess a_p >= -5 sum_{b in p} |v_b|^2 and Ric + beta Hess A >= 2 - 30 beta). The Bakry-Emery criterion that turns it into a Poincare inequality is classical and cited, not rebuilt. The heuristic paragraphs of 1.4 ((DEF), "the other end", the Langevin rate) are labelled heuristics in the plan and are not checked.
+
+Checked:
+- SU(2) = unit S^3 in R^4, round metric, Ric = 2 g. Left and right multiplications are isometries, t -> U e^{i t y.sigma} is a geodesic of speed |y|, and on a product manifold the Hessian along v is the second derivative along the product of geodesics.
+- U_p(t) = U_1 e^{ity_1.s} U_2 e^{ity_2.s} e^{-ity_3.s} U_3^{-1} e^{-ity_4.s} U_4^{-1} = e^{it w_1.s} e^{it w_2.s} e^{it w_3.s} e^{it w_4.s} U_p, with w_b obtained from +-y_b by rotations (conjugation), so |w_b| = |v_b|. The order is fixed by the plaquette; the bound below does not use it.
+- prod_b e^{it w_b.s} = 1 + it W.s - (t^2/2) |W|^2 - i t^2 sum_{b<b'} (w_b x w_b').s + O(t^3), W = sum w_b, using (a.s)(b.s) = a.b + i (a x b).s. With (1/2) tr((w_0 + i w.s)(u_0 + i u.s)) = w_0 u_0 - w.u: a_p(t) = 1 - u_0 + t W.u + (t^2/2) u_0 |W|^2 - t^2 u.sum_{b<b'} (w_b x w_b') + O(t^3). So Hess a_p(v, v) = u_0 |W|^2 - 2 u.sum_{b<b'} w_b x w_b', as stated.
+- |W|^2 <= 4 sum |w_b|^2; |sum_{b<b'} w_b x w_b'| <= sum_{b<b'} |w_b||w_b'| = ((sum |w_b|)^2 - sum |w_b|^2)/2 <= (3/2) sum |w_b|^2; so Hess a_p >= -(4|u_0| + 3|u|) sum |v_b|^2 >= -5 sum |v_b|^2 (Cauchy-Schwarz, u_0^2 + |u|^2 = 1).
+- Each link is in 2(d-1) = 6 plaquettes for d = 4 (sides >= 3), so Hess A >= -30 |v|^2 and Ric + beta Hess A >= (2 - 30 beta) g for every configuration and every volume. Correct.
+- U(1): Ric = 0 and Hess a_p = cos(theta_p) (sum +-v_b)^2 takes negative values, so the criterion never holds for beta > 0. Correct.
+
+## 9. (TM_B) written out: the transfer operator of a box with free walls
+
+Credit: this is the construction of FINISH row 667 (`library/gap-transfer.md`, statements (1)-(5)), which ports Sussman and Alpoge's layer transfer operator (GL3, GL8; `YM4_sketch_500.tex` at 31a47c543775, lines 2196-2335; Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text); classical sources Luescher (1977) and Osterwalder-Seiler (1978), not read. Row 667's general lemmas A0-A4 hold for any compact metric probability space and are reused verbatim. Only the lattice changes. Standing: proved here as a port of row 667, which is itself awaiting its check by another model; I read row 667's steps 1.1-5.7 and A3 in full while porting and found no failing step, but row 667 was written by the same model (Opus 5.5) as this check, so that reading is not an independent check.
+
+**Setting.** B = {0, ..., L_1 - 1} x {0, ..., L_2 - 1} x {0, ..., L_3 - 1} in Z^3 (the argument works for any finite set B of sites). Links E_B = {(x, i): x, x + e_i in B}; spatial plaquettes P_B = {(x; i < j): x, x + e_i, x + e_j, x + e_i + e_j in B}; |E_B| <= 3|B|, |P_B| <= 3|B|. X_B = G^{E_B} with product Haar measure du, H_B = L^2(X_B). Gauge group G^B acting by (h . u)_{(x,i)} = h(x) u_{(x,i)} h(x + e_i)^{-1}. Space-time B x Z_k, k >= 2: spatial links (x, i, t) for (x, i) in E_B; time-like links (x, t) for x in B; spatial plaquettes (p, t) for p in P_B; one time-like plaquette (x, i, t) for each (x, i) in E_B and t in Z_k. These are exactly the plaquettes of the box with free walls of `gap-zero-transport.md` Section 6 (a plaquette is present when its four links are). Z(k, B; beta) = int exp(-beta sum_P (1 - (1/2) tr U_P)) dU.
+
+**Objects.** V_B(u) = beta sum_{p in P_B} (1 - (1/2) tr u_p), in [0, 2 beta |P_B|]. c(g) = exp(-beta (1 - (1/2) tr g)). K_B(u, v) = prod_{l in E_B} c(u_l v_l^{-1}), in [e^{-2 beta |E_B|}, 1]. T_0(u, v) = e^{-V_B(u)/2} K_B(u, v) e^{-V_B(v)/2}. A_B(u, v) = int_{G^B} T_0(u, h . v) dh. T_B = the integral operator on H_B with kernel A_B (equal to P T P = T P with T the operator of kernel T_0 and P the gauge average, as in row 667 (1a)). kappa_B := exp(-2 beta (|P_B| + |E_B|)) >= exp(-12 beta |B|).
+
+**Statement (TM_B).** Let beta > 0 be real.
+(a) A_B is real, symmetric, continuous, gauge invariant in each variable, and kappa_B <= A_B <= 1.
+(b) T_B is bounded, self-adjoint, T_B >= 0, and trace class with Tr T_B <= int e^{-V_B} du <= 1.
+(c) Z(k, B; beta) = Tr T_B^k for every k >= 2.
+(d) lambda_0 = ||T_B|| is a simple eigenvalue of T_B on H_B, kappa_B <= lambda_0 <= 1; its eigenvector Omega has a continuous, gauge-invariant representative with kappa_B <= Omega <= 1/kappa_B; T_B maps every nonzero f >= 0 to a function >= kappa_B int f > 0 everywhere.
+(e) Every other eigenvalue lambda_i (i >= 1, with multiplicity) satisfies 0 <= lambda_i <= lambda_0 (1 - kappa_B^2). So m_B = log(lambda_0/lambda_1) >= -log(1 - kappa_B^2) > 0, and for every k >= 2, Z(k, B; beta) = lambda_0^k (1 + s_k) with s_k = sum_{i>=1} (lambda_i/lambda_0)^k <= (1 - kappa_B^2)^{k-1} (Tr T_B)/lambda_0 < infinity.
+(f) If at least two of the L_i are >= 2 (so P_B is non-empty), lambda_1 > 0 and m_B < infinity. (Not needed by Theorem ZB. If P_B is empty, for example a one-dimensional box, T_B restricted to gauge-invariant functions is lambda_0 times the projection on constants: this is the plan's two-dimensional test of 2.5.)
+
+**Proof (by row 667, step by step, with the replacements Lambda -> B, E -> E_B, spatial plaquettes -> P_B, G^V -> G^B, and the constants e^{-12 beta N^3} -> kappa_B).**
+1. Plaquettes and factorization (row 667, 1.1-1.2). A time-like plaquette at (x, t) in the plane (0, i) exists exactly when (x, i) is in E_B; its holonomy is g_t(x) U(t+1)_{(x,i)} g_t(x + e_i)^{-1} U(t)_{(x,i)}^{-1} = (g_t . U(t+1))_{(x,i)} U(t)_{(x,i)}^{-1}; for k >= 2 these plaquettes are distinct. V_B(h . u) = V_B(u) because (h . u)_p = h(x) u_p h(x)^{-1} for p in P_B based at x. No step uses periodicity in space. Hence e^{-S} = prod_{t in Z_k} T_0(U(t), g_t . U(t+1)), as in (1.2).
+2. Gauge average and trace identity (row 667, 1.3-1.7). Each g_t occurs in one factor; integrating it gives A_B(U(t), U(t+1)). The properties of A_B in (a) follow as in 1.4: continuity by uniform continuity on the compact X_B x G^B x X_B; bounds from e^{-V_B/2} >= e^{-beta |P_B|} and K_B >= e^{-2 beta |E_B|}; invariance and symmetry from the invariance of Haar measure. P is an orthogonal projection and T P = S_{A_B} = P T P (1.5-1.6). By Lemma A0(e) and Fubini, Z(k, B; beta) = int prod_t A_B(U(t), U(t+1)) prod_t dU(t) = Tr T_B^k (1.7). This is (c).
+3. Positivity (row 667, 2.2-2.4). The Gram expansion (2.2) holds with I = E_B x {1,2}^2, sum_i |iota_i(u)|^2 = 2|E_B| and w_n = e^{-beta |E_B|} (beta/2)^n/n!; so the operator with kernel K_B is >= 0, hence T >= 0 and T_B = P T P >= 0. Bounded and self-adjoint since A_B is real, symmetric and <= 1.
+4. Trace class (row 667, 3.2-3.3). With R built from the same expansion, the operator of kernel K_B is R R^* with ||R||_HS = 1, T = (R^* M)^* (R^* M) with Tr T = int e^{-V_B} <= 1, and T_B = (R^* M P)^* (R^* M P) with Tr T_B <= Tr T. This is (b).
+5. Jentzsch (row 667, 4.1-4.3, Lemma A3 with kappa_1 = kappa_B, kappa_2 = 1). A_B is real, symmetric, continuous, kappa_B <= A_B <= 1, T_B >= 0, on the compact metric probability space X_B. A3 gives (d): positivity improving, lambda_0 simple with kappa_B <= lambda_0 <= 1, the bounds on Omega; gauge invariance of Omega as in 4.2.
+6. Gap (row 667, 5.2). A3(d) gives <phi, T_B phi> <= lambda_0 (1 - delta) ||phi||^2 for phi orthogonal to Omega, with delta >= kappa_B lambda_0 >= kappa_B^2. By the min-max formula of A2(iii) every eigenvalue other than the first is <= lambda_0 (1 - kappa_B^2). Then s_k = sum_{i>=1} r_i^k <= (1 - kappa_B^2)^{k-1} sum_{i>=1} r_i <= (1 - kappa_B^2)^{k-1} Tr T_B/lambda_0, and Tr T_B^k = sum_i lambda_i^k (A2(iv) applied to T_B^k). This is (e).
+7. (f) is row 667, 5.3-5.7, with the plaquette p_* taken in P_B: the proof uses one spatial plaquette with four distinct links and nothing else about the lattice. QED.
+
+What (TM_B) gives Theorem ZB: Z(k, B) = Tr T_B^k for k >= 2 (ZB asks k >= 3), lambda_0 simple, r_i <= 1 - kappa_B^2 < 1 for i >= 1 (step 3), s_k finite. What it does not give: any bound on m_B uniform in B or in beta; the explicit bound (e) decays like exp(-24 beta |B|).
+
+## 10. Table of verdicts
+
+| Statement | Where | Verdict | Defect (ranked by what it breaks) |
+|---|---|---|---|
+| Theorem ZB | gap-zero-transport 6; plan 2.5 | HOLDS AFTER CORRECTION | Z1: (TUBE) holds for no bounded domain, so the theorem is vacuous as written (3.1, with proof). Repaired by (TUBE') and Lemma S (3.2); added (X) and (C) (3.3); limit k -> infinity proved (3.5). Conclusion unchanged. |
+| Theorem Z | gap-zero-transport 5; plan 1.9 | HOLDS AFTER CORRECTION | Same Z1, (X), (C). Constants: item 1 becomes 72 (r_0 + x)(1 + |y|/d)^{4.4/theta}; item 4's 5 log n becomes (4 + 4.4/theta) log n, c depends on H; max(M_j, 1) in item 3. |
+| Corollary 5' | gap-zero-transport 6; plan 2.5 | HOLDS AFTER CORRECTION | Inherits Z1; "for real beta >= beta_1" must be "for real beta in D (or in a family D_X)". New constraint on N5: the domain must satisfy (TUBE'). |
+| Theorem LP | gap-zero-transport 4; plan 1.7 | HOLDS AFTER CORRECTION | Proof only: the boundary step fails at irregular points of Gamma_2; replaced by the Perron upper-class argument (Section 1). Statement unchanged. |
+| Lemma HM | gap-zero-transport 4; plan 1.7 | HOLDS | none |
+| Lemma 1 | gap-zero-transport 2; plan 1.5 | HOLDS | none (needs (TM) for non-cubic boxes, same construction; Section 9 does it for any finite spatial set) |
+| Lemma 1' | gap-zero-transport 3; plan 1.5 | HOLDS | none |
+| Lemma 2 | gap-zero-transport 2; plan 1.5 | HOLDS | none |
+| Lemma 3 | gap-zero-transport 3 | HOLDS | none |
+| Proposition 3 | plan 1.5 | HOLDS | one line mixes per-site and per-volume units; written out in Section 7. Input (ST5) not compared with the account's lines; the "Meaning" paragraph is not a proof. |
+| Hessian bound | plan 1.4 | HOLDS | none (Bakry-Emery cited, not rebuilt) |
+| (TM_B) | new, Section 9 | PROVED here as a port of row 667 | row 667 itself awaits another model's check |
+
+What this moves (brief: nodes N1, N3, N4 and the side results): N3 (LP, HM) checked, LP with a proof repair. N4 (Theorem ZB) checked and repaired; it now holds as an implication from (TM_B), (SC_B), (ZF_B) on domains with (TUBE'). N1 (TM_B) written out, standing on row 667. Side results (Lemmas 1, 1', 2, 3, Proposition 3, Hessian bound, Theorem Z) checked.
+
+What stays open: (SC_B) (queue item `gap-sc-box`), (ZF_B) on any domain beyond the strong-coupling disc (N6, N7), the harmonic-measure bound (N5), which must now be proved for a domain that satisfies (TUBE') or for a comparison domain inside it, and the check of row 667 by a model other than Opus 5.5. The follow-up `gap-comb` named in the brief (harmonic measure of a slit strip) is not touched; note that a strip with slits {Re beta = x_j, |Im beta| >= h} does not satisfy (TUBE') near the slit tips if the tube is taken wider than h, so that item should state its domain with (TUBE') in mind or prove its own replacement of Lemma S.

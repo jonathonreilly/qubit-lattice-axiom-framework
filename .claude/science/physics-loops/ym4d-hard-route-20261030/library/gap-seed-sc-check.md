@@ -8,7 +8,7 @@ Provenance: written by Claude Opus 5.5 (effort high), Mac mini worker 2, on bran
 ## Status block (kept current)
 
 - Started 2026-11-11T10:06Z. Section order: repo search; independent hand count (before reading the author's count); verdicts one statement at a time.
-- Not yet covered: everything below is filled in as it is done.
+- Complete for this run. Every numbered statement of `gap-seed-sc.md`: HOLDS (Section 3 table). The independent hand count (Section 1) gives A_3 = 27/8192, A_4 = 13824 * 4^(-16) (planes and tubes), A_n = 192 n^3 4^(-4n), equal to the file. No correction needed. Not covered: the inputs with their own checks (TM, Theorem D, Theorem S, Corollary S3', SC lemmas), the recalled literature; same-provider check only.
 
 ## 0. Repo search and what was read
 
@@ -75,3 +75,44 @@ These are the length of cycles on a periodic box: shortest cycle min(4, b_1, b_2
 **Theorem 1. HOLDS.** (i) Zero-freeness on |beta| <= R for n^4 and (2n)^4 (and for the mixed tori of (T)) is (P); real on [0, R] by (P); Phi >= 0 for beta > 0 is Theorem D (a) (uses (TM)), Phi(0) = 0. (ii) For n >= 4 every B_j has all sides >= 4, c_B = 4, order >= 4n; for n = 3, B_1, B_2, B_3 have a side 3 (c = 3, order >= 9) and B_4 = (6,6,6) has c = 4 (order >= 12). So order >= e(n) = min(4n, n^2) (9 = min(12, 9); 16 = 16; 4n < n^2 for n >= 5). (iii) the step above.
 
 **Corollary 1'. HOLDS.** r_1 = R/2: (beta/R)^(4n) = 16^(-n) (beta/r_1)^(4n). n^4 16^(-n) is decreasing for n >= 4 ((5/4)^4 = 2.44... < 16), equal to 1/256 at n = 4; 0.16/256 = 1/1600; 1/1600 <= n^3/100. n = 3: 0.16 * 81 = 12.96.
+
+**Lemma 4.1. HOLDS.** M(X) = int U X U^(-1) dU commutes with 1, i sigma_1, i sigma_2, i sigma_3, which span M_2(C), so M(X) = (1/2)(tr X) 1. (O2) = tr(A M(B)). (O1): U_ji (U^(-1))_kl = (U E_ik U^(-1))_jl integrates to (1/2) delta_ik delta_jl, giving (1/2) sum A_ij B_ji = (1/2) tr(AB).
+**Lemma 4.2. HOLDS.** The 2ak links are distinct (distinct edges of the cycle, distinct times mod k; distinct vertices, distinct slabs). The display is the path product (u_x, t+1) -> (u_x, t) -> (u_(x+1), t) -> (u_(x+1), t+1) -> (u_x, t+1); any other orientation or multiplication convention changes the joint law of (s_p) only by the Haar-preserving map U_l -> U_l^(-1) on all links, under which tr of the reversed word equals tr of the original for SU(2), so the expectation is convention-free. Row induction re-derived: with X = v(0)^(-1) h(0,t) ... h(j-1,t), Y = h(j-1,t+1)^(-1) ... h(0,t+1)^(-1), the accumulated factor is tr(X v(j) Y) = tr(A U), A = Y X, U = v(j); the next is tr(U^(-1) B), B = h(j,t) v(j+1) h(j,t+1)^(-1); no other factor of the integrand contains v(j,t) for 1 <= j <= a-1 (v(a) = v(0) != v(a-1) for a >= 2); (O1) gives (1/2) tr(X h(j,t) v(j+1) h(j,t+1)^(-1) Y). At j = a, (O2) with W = v(0)^(-1) gives (1/2)^a tr H_t tr H_(t+1)^(-1). Product over the cyclic t gives 2^(-ak) prod_t (tr H_t)^2; the H_t are independent Haar; E (tr H)^2 = E tr H tr H^(-1) = 1 by (O1). So E prod s_p = 2^(-ak) 2^(-ak) = 4^(-ak). Independent route: the gluing rule of Section 1 gives int prod chi_(1/2) = 2^(chi_E - F) = 2^(-ak) for this genus-1 surface (V = ak, E = 2ak, F = ak); same value.
+**Lemma 4.3. HOLDS.** Each link of M lies in exactly two plaquettes of M (v(x,t): the two cycle edges at u_x; h(x,t): slabs t-1 and t, distinct for k >= 2); M is connected; so for a proper non-empty A there is p in A with a link whose other plaquette is outside A, SC Lemma 2.1 (c) makes s_p independent of the rest of A, and E s_p = 0 (V -> -V). In log(1 + x) the coefficient of t_1 ... t_m from x^j, j >= 2, is a sum of products of moments of proper subsets (exponents add to (1, ..., 1), so each monomial is square-free and the blocks are disjoint): all zero. So the cumulant equals the moment (and kappa = coefficient, since the monomial is square-free).
+**Proposition 4.4. HOLDS.** W_k(ck): non-short means every one of the k slabs is occupied, >= c each, |M| <= ck, so equality throughout: T lists M once, no spatial plaquette, each G_t has exactly c edges and contains a cycle of length >= c, so G_t is that cycle; Lemma 2.1 (c) and equal sizes give G_(t+1) = G_t; M = gamma x Z_k. Conversely each such M is good (Lemma 4.3 (1)) with (ck)! orderings, each with kappa = 4^(-ck). W~_(qk)(ck) = 0: a non-short set of Lambda_(qk) occupies >= k slabs with >= c each, so exactly k slabs and no spatial plaquette, and Lemma 2.1 (c) propagates occupation to all qk > k slabs. cyc(B): unit squares 3|B| (lower corner and plane; distinct for sides >= 3), straight lines |B|/b_i per direction with b_i = c.
+
+**Theorem 2. HOLDS** (and agrees with the independent test of Section 1). Coefficient = 2 * 4^(-e(n)) (8 cyc(B_1) + 4 cyc(B_2) + 2 cyc(B_3) + cyc(B_4)), B_4 absent at n = 3.
+- n >= 5: cyc = 3n^3, 6n^3, 12n^3, 24n^3; bracket 24 + 24 + 24 + 24 = 96 n^3; A_n = 192 n^3 4^(-4n).
+- n = 4: cyc(B_1) = 192 + 48 = 240; cyc(B_2) = 3 * 128 + 2 * 32 = 448; cyc(B_3) = 3 * 256 + 64 = 832; cyc(B_4) = 1536; bracket 1920 + 1792 + 1664 + 1536 = 6912; A_4 = 13824 * 4^(-16). Planes and tubes are both counted (split check in Section 1: planes 1536 = 16 * 96, tubes 12288 = 16 * 768).
+- n = 3: cyc(B_1) = 3 * 9 = 27, cyc(B_2) = 2 * 18 = 36 (B_2 = (6,3,3), |B_2| = 54), cyc(B_3) = 1 * 36 = 36 (|B_3| = 108); bracket 216 + 144 + 72 = 432; A_3 = 864 * 4^(-9) = 864/262144 = 27/8192.
+- The claim that a plane of 9 plaquettes winds on 3^4: HOLDS: it is gamma x Z_3 with gamma a straight line of 3 links in a direction of side 3, all links covered twice, genus 1, moment 4^(-9) != 0. The failure of the row's exponent 12 at n = 3: HOLDS (27/8192 > 0 versus a bound o(beta^9)).
+- The file's "direct count on n^4" cross-check is asserted without the four-dimensional minimality argument; the proof of Theorem 2 does not use it, and Section 1 above supplies that argument independently.
+
+**Theorem 3. HOLDS.** 0.16 n^4 theta^(4n) = 0.16 (n theta^n)^4 <= 0.16 * 0.18^4 = 0.16 * 0.00104976 = 0.000167962 < 1.9 * 10^(-4). y e^(-y/2) <= 2/e; n theta^n <= (2/(e lambda)) e^(-lambda n/2) <= 0.18 iff e^(-lambda n/2) <= 0.09 e lambda; 0.09 * 2.71828 * 4.1 = 1.0030 > 1, so n >= (2/lambda) log(4.1/lambda) suffices; for lambda >= 4.1 every n qualifies. n = 3 (theta <= 1/4): 12.96/262144 = 4.94 * 10^(-5) < 5 * 10^(-5). n = 5 (theta <= 1/2): 100/1048576 = 9.54 * 10^(-5) < 9.6 * 10^(-5); also 5/32 = 0.156 <= 0.18, consistent with the main clause.
+
+**Theorem 4. HOLDS** (given Theorem D (b), Theorem S, Corollary S3', (TM), as labelled). s <= e^Phi - 1 <= 2 Phi; 5041 * 2 * 0.16 = 1613.12 <= 1614; q < 1 because Phi <= 1.9 * 10^(-4) gives s < 1.91 * 10^(-4) < 1/5041 = 1.98 * 10^(-4). Corollary S3' with N = n: m(L^3) >= log(1/q)/n >= 4 log(1/theta) - (4 log n + log 1614)/n for every integer L >= 2n. liminf: n' = floor(L/2) >= n_seed(beta) and >= 4 for large L, and 2n' <= L; the correction tends to 0. Numbers at theta = 1/2: 4 log 2 = 2.7726; n = 5: (6.4378 + 7.3865)/5 = 2.7649 (bound 0.0077 > 0); n = 40: (14.7555 + 7.3865)/40 = 0.5536 < 0.56, so m > 2.2 for L >= 80. The comparison with 4 log(4/beta) stays labelled RECALLED (Muenster, not read) and is used in no proof; the derived statement liminf_(beta -> 0) (m((2n)^3) - 4 log(4/beta)) >= -(3 log n + log 192)/n follows from Theorem D (c) and Theorem 2 for fixed n >= 5. The gap of 4 log 51200 = 43.37 between the uniform bound and the recalled value: arithmetic HOLDS. The sentences "Theorem S loses nothing in the exponential rate" and "the two rates agree in order, and their leading constants are equal" are comparisons of a gap bound with the decay rate kappa_0 of a different quantity (the winding part of log Z); they are correct as arithmetic (both equal 4 log(1/theta)) and are not theorems.
+
+No gap is claimed outside beta < 1/12800 anywhere in the file: HOLDS (Section 5 remark and Section 7 table mark beta >= 1/12800 OPEN).
+
+## 3. Summary
+
+| Statement of `gap-seed-sc.md` | Verdict |
+|---|---|
+| (T) telescoping identity | HOLDS |
+| (P) port of SC Proposition 3.6, each entry of the port list (Section 2.2) | HOLDS |
+| Lemma 2.1 (a), (b), (c) | HOLDS |
+| Lemma 2.2 (a), (b), (c) | HOLDS |
+| Corollary 2.3 | HOLDS |
+| Maximum-principle step (2048, 0.16) | HOLDS |
+| Theorem 1 (i), (ii), (iii) | HOLDS |
+| Corollary 1' | HOLDS |
+| Lemma 4.1, Lemma 4.2, Lemma 4.3 | HOLDS |
+| Proposition 4.4 | HOLDS |
+| Theorem 2 (A_3 = 27/8192, A_4 = 13824 * 4^(-16), A_n = 192 n^3 4^(-4n)); the row's exponent 12 at n = 3 is false | HOLDS; matches the independent hand count |
+| Theorem 3 (seed, n_seed, n = 3, n = 5) | HOLDS |
+| Theorem 4 (gap bound, 1614, liminf) | HOLDS given Theorem D (b), Theorem S, Corollary S3', (TM) |
+| Comparison with 4 log(4/beta) | labelled RECALLED, used in no proof: correct |
+
+Defects: none that break a statement. Two remarks, neither a correction: (1) the "direct count on n^4" cross-check in the proof of Theorem 2 is asserted without its minimality argument; Section 1 here supplies one, and Theorem 2's proof does not need it. (2) "Theorem S loses nothing in the exponential rate" compares a gap bound with the rate of a different quantity; true as arithmetic only.
+
+**Not covered by this check.** The inputs taken as given: (TM), Theorem D, Theorem S, Lemma E', Corollary S3' (rows 698, 699) and SC Lemmas 2.1, 2.2, (F1)-(F3), 3.1-3.5 (row 694); I read the SC lemmas in full for the port and re-did the arithmetic of SC Proposition 3.6, but did not re-check their proofs line by line. Osterwalder-Seiler and Muenster were not read. The leading-order step of Section 1 uses the SU(2) character orthogonality relations (two standard identities, recalled; the file's Lemma 4.1 proves the case it needs). This is a same-provider check (Claude reading Claude); a different-provider check has not been done. No numerics, no network, no other file edited.

@@ -28,8 +28,8 @@ fetched from the URL of the row at revision `1eb15ac428`, read in full).
 | 2 inventory | done | ten source notes (2.A), the lane's statements (2.B), beliefs (2.C), one table (2.D) |
 | 3 reason up | done | C1 to C9: no proved case without exact closure has a step in the size; base = sufficiency in all of them; F is vacuous as logic, its content is the far base |
 | 4 assumptions | done | 23 rows; first five: b2 (N fixed), c1+c2 (F and the far base), a2+a1 (periodic, global), c4+c3 (one-way, scalar), c6 (class-wide) |
-| 5 compare | not started | |
-| 6 filters | not started | |
+| 5 compare | done; scope of the branch search in 5.3 | C1, C2, C4, C6 partly in rows 712, 720; C7, C9 found again; the form-by-form table and the Martinelli-Olivieri step are added |
+| 6 filters | done | no verdict of the 36 changes; one necessity claim (row 712, L92) is too strong as a claim about proofs; one in-class test added (compact Gaussian, every value above s_1) |
 | 7 routes | not started | |
 | 8 attempts | not started | |
 | 9 report | not started | |
@@ -269,3 +269,116 @@ Taken from the wall's statement (row 735), the open files of Step 0 and Steps 2,
 3. **a2 with a1** (periodic, global). The lane would test the all-boundary criterion against the proved gauge cases (A3, A4) before another torus quantity.
 4. **c4 with c3** (one-way, scalar). The lane would ask what two-sided statement about the effective action at coupling of order one would suffice for a single-scale criterion ((P-c)).
 5. **c6** (class-wide). The lane would look for a contradiction at a first bad size along the SU(2) trajectory, using asymptotic freedom below that size.
+
+## Step 5. Compare with the earlier work
+
+The closed list was opened after Step 4. Read first-hand: `gap-phys-seed.md` L151-242 (Part 2: the form, the 14 candidates, the tests), L340-348, L386-405, L428-434; `gap-crux-fp.md` L53-104, L135-145, L174-186, L219-247, L289-310; `gap-seed-check.md` L172-198; `prior/gap-fullread-2.md` L17-34, L172-186; `gap-ds-gauge.md` L1-14. Searched by `grep` over `library/gap-*.md`, `library/prior/gap-*.md`, `library/exercise-skill-v2.md` and `FINISH.md`: the authors of A1 to A9 (13 patterns), "habit", "positive control", "true for a known reason", "full seed", "kappa seed", "two dimensions". The other branches: see 5.3.
+
+### 5.1 Item by item
+
+| Item | In the earlier work? | Where | Scope of the search for "new" |
+|---|---|---|---|
+| The question itself | yes | `exercise-skill-v2.md` L1211-1216 (row 721, proposal 2) | - |
+| The form F | yes; stated more exactly there, with Lemma FLOW (the minimum of sigma(u) - u over the interval carries the flow) | `gap-phys-seed.md` L155-164 (row 720) | I use that statement from here on |
+| C1 (no proved case without exact closure has a step in the size) | **partly.** The sources are in the record, as tools that were set aside: Knabe "another setting; excluded by the rate filter", Gopfert-Mack "Abelian only", sharpness "Potts gauge models only", Kopper "N must be large" (`gap-crux-fp.md` L240, L241, L244, L246); Piazza-Shen read in full, "closed doors: two-dimensional" (`prior/gap-fullread-2.md` L17-27, L182; gpt-6-luna, row 719); Dobrushin-Shlosman and Martinelli-Olivieri by a reader's report (`gap-skeleton-final.md` L371). The question "does the proof have a step" is asked of none of them. The opposite is written as a necessity: "A proof in R2 must contain, in some form, the statement that the flow goes one way: a quantity defined at each scale that moves toward disorder under doubling, for every value of the quantity" (`gap-crux-fp.md` L92, row 712). | as cited | the statement not found in the files and patterns above; branches: 5.3 |
+| C2 (a step is proved under exact closure, or given the clustering) | **partly.** The contraction of Piazza-Shen is described in `prior/gap-fullread-2.md` L23-27 (credit: that digest; my reading agrees with it). The recursion of Martinelli (Theorems 4.5, 4.6) is not in the record: `gap-ds-gauge.md` L15 says Martinelli-Olivieri were not read by anyone there. | as cited | the recursion: not found by the patterns "Martinelli", "recursive" in the files above |
+| C3 (base = sufficiency) | **partly.** "Infinite-volume criteria (Dobrushin, cluster expansion, logarithmic Sobolev) are local and reach only where the coupling between neighbours is small" (`gap-crux-fp.md` L139); the split R1/R2 (L96-99). | row 712 | the form "in every proved case" not found |
+| C4, F3 (F is vacuous as logic; the content is the far base) | **partly.** "For them the test is not a filter ... their (SUF) is a theorem" (`gap-phys-seed.md` L234); "the small end is the wrong end for the seed" (L430). | row 720 | the trivial fit with the base at the seed size: not found |
+| C5, F4 (monotony in the coupling) | **partly.** A step across couplings is assumption c4 of row 712 (`gap-crux-fp.md` L142); monotony of the Casimir free energy along the coupling is (MONO-Delta), with Proposition NM (`gap-phys-seed.md` L340-348, L401). F4 is a weaker, different remark: the seed set at fixed lattice size is bounded in beta. Its content is in P3 of row 712 (L60: the seed size grows like exp(2.69 beta)). | rows 712, 720 | - |
+| C6, F5 (blocked values for a class-wide step) | **partly.** Row 720 has the test (M1): for U(1) "every dimensionless quantity of the torus tends to a constant in L", marked GUIDE for torus quantities, and its reading 1: the proof of the step must use the group "at every value of Q and not only at the weak end" (`gap-phys-seed.md` L173, L232). Added here: for Q1 at ratio 2 a model inside the class K (the compact Gaussian model with R = rho/n) in which Q grows at every value above s_1, argued from the lane's own formula. | row 720; `gap-seed-shape.md` L223-246 | the use of Z_R as a test of a step: not found by "Z_R", "compact Gaussian" outside `gap-seed-shape.md` |
+| C7 (Tomboulis; Ito-Seiler) | **yes.** `gap-crux-fp.md` L142, L234; `gap-skeleton-max.md` L130, L336, L361 (read there through a digest and the ar5iv text); `gap-skeleton-max-b.md` L152, L411. Added: Ito-Seiler's Theorem 2.1 and page 6 read first-hand. | rows 669, 670, 712 | found again |
+| C8 (no precedent) | **partly**, as a statement about what was read: "No published result read gives an order-one estimate for four-dimensional Wilson SU(2). The closest mathematical analogues are ..." (`gap-skeleton-final.md` L543). | the lead, rows 713, 714 | a belief in both places |
+| C9 ((GAP) reads local clustering) | **yes.** Row 731, Theorem EV-L. | `gap-flux-exercise.md` L420-465 | found again |
+| b2 (N fixed) | yes | `gap-crux-fp.md` L246 | found again |
+| c6 (class-wide) and the first-bad-point form | partly: for beta, "there is no first critical point" (`gap-crux-fp.md` L143) | row 712 | the size version: not found |
+| The exact two-dimensional formula (for Step 8) | **yes.** Z = sum over j of (2 I_{2j+1}(beta)/beta)^A (`gap-skeleton-max-b.md` L316); `gap-phys-seed.md` L369. | rows 670, 720 | found again; only the reading as an instance of F is added |
+| Z_2 at large beta: the full and kappa seeds (for Step 8) | **partly.** "Expected to hold", not proved (`gap-flux-exercise.md` L337, L519). The counting bounds for the twisted Z_2 partition functions at fixed size are in `gap-seed-check.md` L193-195 (the checker of row 698), used there for the failure of the periodic seed. | rows 698, 731 | a proof for the full or kappa seed: not found by "full seed", "kappa seed", "Z_2" in the files above |
+
+**Correction of my inventory from the earlier work.** (1) Row 720 states F with a uniformity that the row's wording does not show: the step holds "for every L >= L_0, uniformly in j" (the cutoff index), and Lemma FLOW needs the minimum of sigma(u) - u over the whole interval. Step 1's precise version is to be read with this. (2) Row 712 lists more comparison models than my 2.B (the mixed action, SU(N >= 5) at its bulk point, five dimensions; `gap-phys-seed.md` L171-177). They are tests of the kind "T false"; this run adds none of that kind.
+
+### 5.2 What the fresh pass added, and what it found again
+
+Added (all subject to 5.3 for the other branches):
+
+- the table 2.D: each proved case read for the form of its proof, with pages; the answer "exact closure, or given the clustering" for where a step in the size is proved;
+- the recursion of Martinelli and Olivieri as a proved (STEP), with its hypothesis (A6);
+- Gopfert and Mack's own words on how "all couplings" is reached: an expansion with a small number at every scale, then Guth's inequality (A1);
+- Kopper's page 2: at large N the ultraviolet part and the join are not proved (A8);
+- F3 (the trivial fit), F5 (the in-class test at every value above s_1).
+
+Found again: C7, C9, b2, the two-dimensional formula, the first-critical-point form, most of C3 and C8.
+
+
+### 5.3 The other branches
+
+Fetched on 2026-11-11 into a scratch repository of my own (`/tmp/gfe-735/git`, depth 1, no checkout; the working checkout was not touched): main (a527a6fda), and the heads of pull requests 10114 (f76f6c649), 10133, 10134, 10135, 10141, 10144. Pull request 10132 is this branch.
+
+- **Searched.** In pull request 10114: every `.md` file under `.claude/science/toe-ruleset-20261021/agents/ym4d-*/` (about 1,190 files), for the pattern "Knabe, Nachtergaele, Stroock, Martinelli, Gopfert, Kopper, Piazza, Duminil, one-way step, step scaling, Migdal, Ito and Seiler, finite-size criteri, positive control, exact closure" (case-insensitive). In main and in 10133, 10135, 10141, 10144: the text files whose path contains "ym4d" or "yang-mills", outside the folder of 10114 (21, 4, 4, 53 and 21 files), for the same pattern without the last two terms.
+- **Not searched.** The `.py`, `.json` and `.txt` files of 10114; the copy of the 10114 folder inside 10133 where it differs from 10114; pull request 10134, which holds an older copy of this lane's folder (317 files) that the search of this branch covers only if nothing was deleted since; all files of main whose path has no "ym4d" or "yang-mills" (about 92,000).
+- **Hits.** Main, 10133, 10135, 10141, 10144: none. Pull request 10114, three that touch this run:
+  1. `RTARGET.md` L38-41 (and `PROOF.md` L2729): "As of 1999 the UV analysis of the full 2D O(N) model had 'so far only [been] performed in the hierarchical case' (Kopper ...). So the 2D testbed is itself an open construction, not a solved template." **This is the observation of A8 and of 3.3, made earlier there.** Credit: the lead of the soft-kernel route (PR 10114).
+  2. `checks/review_massgap_block_literature.md` L111-118: a later note of Ito and Seiler (arXiv:0901.4246) read in full there; it "separates two obligations in a Migdal-Kadanoff-type route: actual flow to strong coupling and a common interpolation parameter controlling twisted and untwisted partition functions"; "a useful warning ... not a no-go theorem for all RG mechanisms". Consistent with A9; I did not read 0901.4246.
+  3. `PROOF.md` L5755-5757: a Migdal-Kadanoff SU(2) toy in four dimensions used as a finite diagnostic. Not a statement about the form.
+  The other hits are the words "positive control", "step scaling" and "Stroock" in unrelated places (rotation, sphere and seam notes); I read the file names and counts, not each line.
+- **Result for the "new" marks.** No statement of 5.2 was found in the searched part of the other branches, except the Kopper observation (hit 1). The marks of 5.1 stand with this scope written next to them: "not found in this branch's `library/`, `library/prior/`, `FINISH.md`, and in the searched part of 10114, main, 10133, 10135, 10141, 10144".
+
+## Step 6. The blockage: discard tests and set-aside methods
+
+### 6a and 6d. Every method set aside, and its verdict re-judged
+
+Two lists exist: the 22 methods of row 712 (`gap-crux-fp.md` L223-246, read first-hand; that table was itself built from digests) and the 14 flow candidates of row 720 (`gap-phys-seed.md` L187-215, read first-hand). Row 712 re-judged its 22 (L291-308) and row 731 re-judged all 36 for (G_ev) (`gap-flux-exercise.md` 6a; not re-read here). I re-judge them for one question only: does the verdict rest on the form F, or on the necessity claim of `gap-crux-fp.md` L92? "As reported" = valid as reported; not re-derived.
+
+| # | Method (authors) | Reason given | Kind | Re-judged for this question |
+|---|---|---|---|---|
+| 1, 2 | Griffiths-type inequalities; dual forms with positive weights | hold for Z_2 and U(1) | U(1) | as reported. A7 and A1 show what such inequalities give where they exist: monotony in the coupling and a dichotomy, not a step in the size. By F4 monotony in the coupling carries a seed toward strong coupling only. |
+| 3 | A monotone quantity along the scale (kappa; (CAS); step scaling) | exists for every group; strictness restates the seed | restates | **valid, and now with a test at each value**: F5 for Q = S. |
+| 4 | Derivative in beta ((VIR_K), (DEF_K)) | three ways failed | gap; wrong quantity | as reported |
+| 5, 6, 7 | Bakry-Emery; Dobrushin on one link; cluster expansion | need small beta | small number | as reported. These are the proved cases A4; in them base = sufficiency (C3). |
+| 8 | Zeros of Z in complex beta | the radius shrinks with the gap | gap | as reported |
+| 9 | Polchinski flow; two-scale log-Sobolev criteria | a Hessian bound at every scale | U(1); unverified | as reported. A2 is the one case where the two-scale method reaches all couplings, and it rests on exact closure. |
+| 10 | Migdal-Kadanoff bounds (Tomboulis) | an unproved inequality; would confine U(1) | U(1) | valid (A9, read first-hand). **This is the form F itself**, in the lane's own setting. |
+| 11 | Simon-Lieb; Aizenman-Simon | spin system | U(1) | as re-judged by row 712 (not valid in R1) |
+| 12 | Infrared bounds | prove order | wrong quantity | as reported |
+| 13 | Durhuus-Frohlich | orders at large beta | large beta | as re-judged by row 712 |
+| 14 | Loop equations, bootstrap | numerical | rule f | as reported |
+| 15 | Twist ratios; (TUBE'); Mack-Petkova | premise open | open | as reported |
+| 16 | Knabe; Lemm-Mozgunov | another setting; rate filter | setting | valid as a verdict on the tool. As a control (A5): (SUFF) at one size, verified at that size. |
+| 17 | Gopfert-Mack | Abelian only | setting | valid as a verdict on the tool. **As a control it was not used**: it is the one proved case with a correlation length that grows like exp(c beta), and it has no step (A1). |
+| 18 | Small-volume spectrum (Luscher; Koller-van Baal) | small volume only | setting | as reported. It is the (BASE) of F. |
+| 19 | Curvature of the orbit space | heuristic | unverified | as reported |
+| 20 | Random-cluster sharpness (Duncan-Schweinhart) | Potts gauge models only | setting | valid; not read here. A7 is the same pattern for spins. |
+| 21 | Mixing hypotheses on a box, (W), (DS-tw) | a hypothesis | open | as reported. A6: for spin systems this form is necessary as well as sufficient. |
+| 22 | Large N (Kopper) | N must be large | small number | valid. As a control (A8): the mass is proved with a second small number, and the join with the ultraviolet flow is open even there. |
+| Q1, Q2, Q2', Q3, Q4 | Class I flow candidates | (STEP) restates the seed | restates | valid. F5 adds: for Q1 no class-wide step exists at any value above s_1. |
+| Q5 to Q8 | twist ratio; Schrodinger functional; twisted Polyakov loop; force | the flux half at most; fail at a point with two confining phases | wrong quantity | as reported |
+| Q9 to Q12 | gradient flow; two-point coupling; plaquette shift; kappa | local, not one-way, or not strict | wrong quantity | as reported |
+| Q13 | lowest zero-flux gap of a twisted box | (STEP) false at weak coupling in SU(2) itself | fails | as reported (a recalled one-loop number) |
+| Q14 | Route T, thin torus with a twist | crux (AC') open | open | as reported |
+
+**Where the verdicts matter.** None of the 36 verdicts changes. What changes is the status of one sentence that sits above them (6c, N1).
+
+### 6b. First principles on the blockage
+
+From the definitions: a tool for T must verify a clustering criterion for a box of at least 12.9 correlation lengths (L4), or a local criterion at a scale of order xi. The proved cases verify such a criterion in four ways (C3). The least property of the model that a tool must use is one that makes one of the four available at the scale xi. **The blockage in one sentence: every proved way to verify a clustering criterion at its own scale uses a small number at that scale, exact closure, or a correlation inequality with a parameter, and none of the three is known for SU(2) at the scale xi.** *reading of 2.D; "every proved way" means the cases A1 to A10.*
+
+### 6c. The tests in their logical form
+
+**Tests of the kind "T false" (they bind a tool).** The lane's list (`gap-phys-seed.md` L171-177; `gap-crux-fp.md` L70-76) stays as it is. This run adds one row and sharpens one.
+
+| Test (model M') | Class | The exact T that fails in M' | How the failure is known | What a tool must use to pass | From which value it binds |
+|---|---|---|---|---|---|
+| The compact Gaussian model Z_R with R = rho/n, rho >= 1/2 | K (`gap-seed-shape.md` L229-241) | "S(n; (2n)^3) = x implies S(2n; (4n)^3) <= sigma(x) < x" | argued (F5), for the continuum form of the lane's formula; the lattice correction is not written; s_1 is a guide | a property that this model lacks. It has a continuous symmetry (shifts of the field) and a zero mode whose level spacing is 1/(R^2 V). | every value x >= s_1 |
+| The Ising model with two phases | K | the same at x = 1 | S -> 1 proved in the lane; "no gap" and the limit along sizes recalled | uniqueness of the vacuum in the sector that is summed | the value 1 |
+
+**Tests of the kind "T true" (the positive controls).** By the skill's rule a pass is no support for a tool. A model where T is true tests something else: a *necessity claim*, that is, a sentence "every proof of T must contain X". Such a claim is refuted by one proved case of T whose proof has no X. The lane's necessity claims, tested:
+
+| # | Necessity claim | Where | Control | Verdict |
+|---|---|---|---|---|
+| N1 | "A proof in R2 must contain, in some form, the statement that the flow goes one way: a quantity defined at each scale that moves toward disorder under doubling, for every value of the quantity." | `gap-crux-fp.md` L92; it became the form F of row 720 | A1 (the correlation length grows like exp(c beta); many scales are crossed; no such quantity appears in the argument as the authors describe it); A8 (the same with 1/N) | **too strong as a claim about proofs.** Valid form: the *theorem* T implies a monotone flow trivially (F3), so "in some form" is true and empty. A proof may cross the scales by a two-sided control of the effective action with a small number (A1), and may verify the criterion at the scale xi with a second small number (A8). What comes back: the split (U), (I), (J) of 3.4 as the statement of the crux, in place of a step. Limit of this verdict: the controls were read in part (introductions), and both use a small number that SU(2) lacks. |
+| N2 | (GAP) needs the seed on the whole space, flux included. | row 712, a2 | Z_2 at large beta | corrected by row 731 (found again) |
+| N3 | The seed needs a box of at least 7.4 (12.9) correlation lengths. | `gap-crux-fp.md` L55 | none needed | a theorem for the seed (P1). For other criteria it is not a necessity: row 712, c1 says so. |
+| N4 | "One number cannot be enough ... what matters is how a quantity changes when the size doubles." | `gap-crux-fp.md` L62 | A3, A4, A7: a criterion at one finite set or one scale | valid for the periodic free energy (every single box has a gap). Too strong in general: the criteria phi_beta(S) < 1 (A7) and the conditions of A3, A4, A6 are one-size statements. They are not partition functions of periodic boxes. |
+
+**Are the tests enough?** For tools: Step 2 names no model that the lane's list lacks. For necessity claims the lane had no test before this run; the controls A1 to A10 are the first.
+
+**The other kinds of reason, in the valid form.** "Needs a small number" (5, 6, 7, 22): valid as a range only, and by C3 it is true of every proved case without exact closure, so as a filter it leaves only exact closure and correlation inequalities. "Other setting" (16, 17, 20): the hypothesis that fails is named in each row of 2.D (frustration-freeness; an Abelian duality; a positive cluster representation). "Was tried": not used.

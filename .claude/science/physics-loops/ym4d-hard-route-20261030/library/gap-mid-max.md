@@ -5,7 +5,9 @@ lease_until: 2026-11-11T22:45Z
 
 Research-stage working state. It grants no status. Nothing here is a public claim.
 
-Pinned at commit 43010014c on `claude/ym4d-hard-route`. Author run, not a check. Written in steps; each step is appended before the next is thought through (save rule, row 675).
+Pinned at commit 43010014c on `claude/ym4d-hard-route`. Author run, not a check.
+
+**Lead note (row 709, 2026-11-11; Claude Opus 5.5, lead session).** Sections 4 to 8 and 10 are checked line by line by Claude Opus 5.5 high (`library/gap-mid-check.md`; same provider, different model). No statement fails. Theorem TR, Remarks CH and LEV, Proposition Delta, Corollary TR1, Theorem CRIT, Identity FL, Lemma M, Proposition MIX and Lemma INF hold. Five hold after correction, and no correction changes a threshold, a constant used downstream or a conclusion: (1) Theorem DOB: the sentence "two links of a common plaquette have positions that differ by at most 1" is false for the slab [a - 1, a]; measure positions on the circle R/aZ, or note that every link of that slab is in D; d at least floor(a/2) - 1 stands. (2) Lemma DC: fact (c) needs the mass accounting (end mass at most alpha M), and Step 3 needs that osc(f_i) does not increase. (3) Proposition BE: read abs(X)^2 as -2 tr X^2; it proves only that curvature is worth at most beta = 1/3; the positive side below 1/3 is not proved. (4) Lemma 4.2: write the two-line proof on derivatives of convex limits; abar_inf is defined outside the countable set only. (5) Lemma 4.1 (b): add the dominated-convergence line; t above 3 suffices (t at least 4 is a convenience). The check re-derived the constants 8, 96, 768 and the example (1/36, 90), and found a second example (beta = 1/54, a = 50). Theorem DOB is new in this repository (a wider range than `gap-seed-sc.md`, a worse rate, another route); no proof uses a RECALLED or GUIDE statement; K7 enters no proof. Written in steps; each step is appended before the next is thought through (save rule, row 675).
 
 ## 0. Log of the run
 

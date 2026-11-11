@@ -111,3 +111,102 @@ Proof. Z(m; beta) = exp(-beta N_m) E_m exp(beta S_m), since a_p = 1 - s_p. The b
 
 What this section shows, in the brief's words. Only "winding" contributions survive in D. In the precise form: only good tuples whose plaquette set has time-like plaquettes over every slab, and by Lemma 2.3 such a set has at least 4k plaquettes. I did not show that the order 4k is attained, and nothing below needs it.
 
+## 3. Zero-freeness and a volume bound on the disc |beta| <= R
+
+Throughout this section, m >= 3, Lambda = Lambda_m, P = P_m and N = N_m.
+
+**Lemma 3.1 (one plaquette).** Let |beta| <= 1/4 and c_0(beta) := E exp((beta/2) tr V) over Haar V; c_0 is entire. Then |c_0 - 1| <= (4/3)|beta| <= 1/3. The function g(U) := exp((beta/2) tr U)/c_0 - 1 satisfies |g| <= 4|beta| on SU(2), and g is analytic in beta for |beta| < 1/4.
+Proof. For |z| <= y < 1: |e^z - 1| <= e^y - 1 <= y/(1 - y), since e^{-y} >= 1 - y. Take z = (beta/2) tr U, so |z| <= |beta| <= 1/4. Then |e^z - 1| <= (4/3)|beta|. Hence |c_0 - 1| = |E(e^z - 1)| <= (4/3)|beta| <= 1/3, and
+|g| = |e^z - c_0|/|c_0| <= (|e^z - 1| + |c_0 - 1|)/(2/3) <= (8/3)|beta| (3/2) = 4|beta|. QED.
+
+**Lemma 3.2 (polymer representation).** A polymer is a nonempty connected set X of plaquettes of Lambda (connected in the sense of 2.3). Two polymers are incompatible, written X ~/~ Y, if they share a link. This relation is reflexive and symmetric. Put w(X) := E prod_{p in X} g(U_p). For |beta| <= 1/4:
+Z(m; beta) = exp(-beta N) c_0(beta)^N Xi(beta),
+where Xi = sum over families F of pairwise compatible polymers (F empty allowed) of prod_{X in F} w(X). Also |w(X)| <= (4|beta|)^{|X|}, and each w(X) is analytic in |beta| < 1/4.
+Proof. exp(beta s_p) = c_0 (1 + g(U_p)), so
+Z = exp(-beta N) E prod_p exp(beta s_p) = exp(-beta N) c_0^N sum_{Q subset of P} E prod_{p in Q} g(U_p).
+Split Q into its components (maximal connected subsets). Distinct components share no link, since a shared link would make them adjacent. So the factors depend on disjoint sets of independent link variables, and E prod_Q g = prod over components X of w(X).
+The map Q -> {components of Q} is a bijection from subsets of P onto compatible families; its inverse is the union. To check this, let F be compatible and X in F. A plaquette of the union adjacent to X lies in some Y in F that shares a link with X, so Y = X. Hence X is a component of the union.
+The bound holds since the integrand is bounded by (4|beta|)^{|X|}. Analyticity: the integrand is analytic in beta and jointly continuous, on a compact space. QED.
+
+**Lemma 3.3 (counting).** (a) In Lambda_m (m >= 3) each link lies in at most 6 plaquettes, and each plaquette is adjacent to at most 20 others.
+(b) For each plaquette p_0 and n >= 1, there are at most 400^{n-1} connected sets of n plaquettes that contain p_0.
+Proof. (a) Take a spatial link in direction e_i at time t. It lies in at most 4 spatial plaquettes: two planes {i, j} with j != i, and two positions in each. It also lies in the time-like plaquettes over it in slabs t and t-1, which are distinct for m >= 2. That makes at most 6. A time-like link at (x, slab t) lies in the plaquettes e' x [t, t+1] with x in e', and there are at most 6 spatial links e' at x. Each plaquette has 4 links, each in at most 5 other plaquettes, so it has at most 20 neighbours.
+(b) Let X be such a set, with a spanning tree of its adjacency graph. A depth-first traversal from p_0 crosses each tree edge twice. It is a walk of length 2(n-1) in the adjacency graph, starting at p_0, whose set of vertices is X. So X is determined by such a walk, and there are at most 20^{2(n-1)} = 400^{n-1} of them. QED.
+
+**Lemma 3.4 (Dobrushin's criterion; recalled from Dobrushin 1996 and the Kotecky-Preiss line, rebuilt here).** Let Gamma be a finite set, ~/~ a reflexive symmetric relation on Gamma, and w: Gamma -> C. For S a subset of Gamma, let Xi_S be the sum over subsets F of S whose distinct elements are pairwise compatible of prod_{X in F} w(X), with Xi_empty = 1. Suppose c: Gamma -> [0, infinity) satisfies, for every X,
+(D) |w(X)| <= (1 - e^{-c(X)}) exp(- sum_{Y ~/~ X, Y != X} c(Y)).
+Then for every S: Xi_S != 0. For X in S, Xi_S / Xi_{S \ X} = 1 + u with
+|u| <= |w(X)| exp(sum_{Y ~/~ X, Y != X} c(Y)) <= 1 - e^{-c(X)},
+and in particular |Xi_{S \ X} / Xi_S| <= e^{c(X)}.
+Proof. Induction on |S|. For S empty, Xi = 1 and there is nothing more to show. Let |S| = s >= 1, assume the claim for all sets of size < s, and fix X in S. Let N[X] = {Y : Y ~/~ X}, which contains X. Split the families by whether they contain X:
+Xi_S = Xi_{S \ X} + w(X) Xi_{S \ N[X]}.
+By induction Xi_{S \ X} != 0. Enumerate (N[X] \ {X}) intersected with S as Y_1, ..., Y_r. Put T_0 = S \ {X} and T_i = T_{i-1} \ {Y_i}, so T_r = S \ N[X]. Each T_{i-1} has size < s. So by induction Xi_{T_i} != 0 and |Xi_{T_i} / Xi_{T_{i-1}}| <= e^{c(Y_i)}. Multiplying, |Xi_{S \ N[X]} / Xi_{S \ X}| <= exp(sum_{Y ~/~ X, Y != X} c(Y)).
+Put u = w(X) Xi_{S \ N[X]} / Xi_{S \ X}. By (D), |u| <= 1 - e^{-c(X)}. So |Xi_S / Xi_{S \ X}| = |1 + u| >= e^{-c(X)} > 0. QED.
+
+**Corollary 3.5 (log bound).** Assume (D). Enumerate Gamma = {X_1, ..., X_K} and put Gamma_i = {X_1, ..., X_i}. Then Xi_Gamma = prod_i (1 + u_i) with u_i = Xi_{Gamma_i}/Xi_{Gamma_{i-1}} - 1 and |u_i| <= rho_i := |w(X_i)| exp(sum_{Y ~/~ X_i, Y != X_i} c(Y)) <= 1 - e^{-c(X_i)}. Put log Xi_Gamma := sum_i Log(1 + u_i), with the principal branch. Then
+|log Xi_Gamma| <= sum_{X in Gamma} |w(X)| exp(sum_{Y ~/~ X} c(Y)),
+where the inner sum now includes Y = X.
+Suppose further that the w(X) are analytic in beta on an open set O and (D) holds at every beta in O with one fixed c. Then each u_i is analytic on O, since it is a ratio of polynomials in the w's with a nonvanishing denominator. So log Xi_Gamma is analytic on O and exp(log Xi_Gamma) = Xi_Gamma.
+Proof. For |u| < 1: |Log(1+u)| <= sum_{n>=1} |u|^n/n = -log(1 - |u|) <= |u|/(1 - |u|). Here 1 - |u_i| >= e^{-c(X_i)}, so |Log(1 + u_i)| <= rho_i e^{c(X_i)}, which is the i-th term of the claimed sum. QED.
+
+**Proposition 3.6.** Let R = 1/12800, m >= 3 and |beta| <= R. Then Z(m; beta) != 0. The function
+log Z(m; beta) := -beta N + N Log c_0(beta) + log Xi(beta)
+(Lemma 3.2 and Corollary 3.5) is analytic on |beta| < R, vanishes at 0, is real on the real segment and satisfies exp(log Z) = Z. Moreover |log Xi(beta)| <= (32/3)|beta| N.
+Proof. Put x = 4|beta| <= 1/3200 and take Gamma = the polymers of Lambda, with w from Lemma 3.2, so |w(X)| <= x^{|X|}. Set c(X) := (4x)^{|X|}.
+Step 1, sum over incompatible polymers. If Y ~/~ X, then Y contains a plaquette through some link of X. X has at most 4|X| links, each in at most 6 plaquettes (Lemma 3.3(a)), and Lemma 3.3(b) bounds the polymers through a given plaquette. Using 1600x <= 1/2:
+sum_{Y ~/~ X} c(Y) <= 4|X| * 6 * sum_{n>=1} 400^{n-1} (4x)^n = 24|X| * 4x/(1 - 1600x) <= 192 x |X| <= 0.06 |X|.
+Step 2, check (D). c(X) <= 4x <= 1/800 <= 1, so 1 - e^{-c} >= c - c^2/2 >= c/2. Hence the right side of (D) is at least
+(1/2)(4x)^{|X|} e^{-0.06|X|} = (1/2)(4 e^{-0.06})^{|X|} x^{|X|} >= (1/2) 2^{|X|} x^{|X|} >= x^{|X|} >= |w(X)|.
+This uses 4 e^{-0.06} >= 4(1 - 0.06) > 2.
+Step 3, conclude. By Lemma 3.4, Xi != 0. By Lemma 3.1, c_0 != 0, so Z != 0. Corollary 3.5, with the sum over polymers bounded by summing over a plaquette and the polymers through it, gives
+|log Xi| <= sum_X x^{|X|} e^{0.06|X|} <= N sum_{n>=1} 400^{n-1} (x e^{0.06})^n.
+Since x e^{0.06} <= 2x <= 1/1600, the factor 400 x e^{0.06} is <= 1/4. So |log Xi| <= N (2x)/(1 - 1/4) = (8/3) x N = (32/3)|beta| N.
+Analyticity: Lemma 3.2 and Corollary 3.5 on the open disc; Log c_0 is analytic since |c_0 - 1| <= 1/3. At beta = 0 we have c_0 = 1 and g = 0, so w = 0 and u_i = 0, and log Z = 0. For real beta, c_0 > 0 and all w(X) are real. Then each u_i is real with |u_i| < 1, so every term is real. QED.
+
+Because the disc is simply connected and Z has no zero there, this log Z is the unique branch with value 0 at 0. So it is the branch named in Theorem SC(i) and Corollary 2.6, and the branch "real on the real axis" of Theorem ZB (`library/gap-zero-transport-check.md`, point (C)).
+
+## 4. Assembly: proof of Theorem SC
+
+(i) This is Proposition 3.6 with m = k.
+(ii) Let k >= 3 and q >= 1, and put D = log Z(k) - (1/q) log Z(qk) on |beta| < R. By Proposition 3.6 and N_{qk} = q N_k (proof of Proposition 2.5), the terms -beta N + N Log c_0 cancel exactly:
+D = log Xi_k - (1/q) log Xi_{qk}, so |D| <= (32/3)|beta| (N_k + N_{qk}/q) = (64/3)|beta| N_k.
+Now N_k = k (P_s + L_s) <= 6 |B| k, since a site is the lower corner of at most 3 spatial plaquettes and at most 3 spatial links. So on |beta| < R,
+|D| <= (64/3) R * 6 |B| k = 128 |B| k / 12800 = |B| k / 100 =: M.
+D is analytic on |beta| < R, and its Taylor series at 0 converges there. By Corollary 2.6 its coefficients of order < 4k vanish. So D(beta) = beta^{4k} h(beta) with h analytic on the disc. For |beta| < r < R, the maximum principle gives |h(beta)| <= max_{|z| = r} |D(z)| / r^{4k} <= M / r^{4k}. Letting r -> R:
+|D(beta)| <= (|B| k / 100) (|beta| / R)^{4k} = (|B| k / 100) (12800 |beta|)^{4k}.
+The specializations stated in Section 1 follow by substituting |beta| <= theta R. QED.
+
+Remark (what is uniform). The constants R, C_0 = 1/100 and c = 12800 do not depend on B, k or q. The theorem needs k >= 3; the brief's k >= 4 is covered. The proof never uses that the integrand of g has mean zero. All the cancellation is in Section 2, and Section 3 is a crude volume bound. The constants are far from optimal. Each step is a displayed inequality between explicit rationals, or the bound e^{-0.06} >= 0.94, so the whole proof is checkable by hand and has no computed step.
+
+## 5. Status
+
+Kind of result: a proof of a step the plan states as an input (node N2 / Z2). It is not a check of anyone's proof and not a correction. Stop rule (i) is met: a proof with explicit constants.
+
+**Proved here (Claude Opus 5.5 high; not yet checked by another model):**
+- Theorem SC. For every finite B in Z^3 with free walls, every k >= 3 and q >= 1, and |beta| < R = 1/12800:
+  - Z(k, B; beta) has no zero (also for |beta| = R);
+  - |log Z(k,B;beta) - (1/q) log Z(qk,B;beta)| <= (|B| k/100)(12800 |beta|)^{4k}.
+  So (SC_B) holds as the brief states it, with c = 12800 and C_0 = 1/100, and in the form Theorem ZB reads with r_0 = 1/51200, C_0 = 1/100 and kappa_0 = 4 log 2.
+- Supporting lemmas, each proved in full:
+  - the cumulant identity kappa_n(S_{qk}) = q kappa_n(S_k) for n < 4k (Proposition 2.5, from Lemmas 2.1-2.4);
+  - the count "a covered plaquette set meeting a slab has at least 4 time-like plaquettes there" (Lemma 2.3);
+  - Dobrushin's zero-freeness criterion with a log bound (Lemma 3.4, Corollary 3.5);
+  - the polymer representation and the counting (Lemmas 3.2, 3.3).
+
+**What this moves.** Node N2 (Z2 in `library/gap-skeleton-final.md`) goes from OPEN to "proved, not checked". The consumers now have (SC_B) as a proved input rather than an assumption: Theorem ZB (`library/gap-zero-transport.md` Section 6, corrected in `library/gap-zero-transport-check.md` 3.6), and Theorem ZB-chain and Corollaries 3.2-3.3 of `library/gap-zf-box-x.md`. This file does not edit them; the lead forwards it.
+
+**Open (not touched here):**
+- (ZF_B) beyond the base region (nodes N6, N7);
+- the harmonic-measure bound (N5);
+- the limit nodes N9-N11.
+Nothing of Theorem SC is open.
+
+**Not done.** I did not read Osterwalder-Seiler, Dobrushin (1996) or Kotecky-Preiss. The attributions in Section 0 are from memory. The proof does not depend on them. No numerics were run. I did not commit or push (no push rights on this machine).
+
+**Credits.** The idea of comparing log Z on a time circle and on its q-fold cover, where only winding contributions survive, is the plan's (`library/gap-skeleton-max-b.md` 2.5, Claude Fable 5.2, row 670). That plan's method of strong-coupling polymer expansions goes back to Osterwalder and Seiler. The zero-freeness criterion of Section 3 is Dobrushin's, rebuilt here. Conventions follow `library/gap-zf-box-x.md` (Claude Fable 5.2, row 677). Nothing is taken from the Sussman-Alpoge account, which does not treat this object.
+
+**The one exact next statement.** A line-by-line check of Theorem SC (Sections 2-4 of this file) by a model that did not write it. Under the 2026-11-09 model rule, that is gpt-6-astra (max) for Opus-written steps. The check should give a verdict on:
+- Lemma 2.3, the count;
+- Lemma 2.4 with (F1)-(F3), the covering;
+- Proposition 3.6, the arithmetic of (D);
+- the Schwarz step.

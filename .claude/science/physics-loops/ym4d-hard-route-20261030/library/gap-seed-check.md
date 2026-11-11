@@ -9,8 +9,8 @@ Provenance: Claude Opus 5.5, effort high, Mac mini worker 2, at commit 547801e01
 
 - Started 2026-11-11T09:12Z. Read: FINISH row 698, `library/gap-crux-restate.md` in full.
 - Read also: `library/gap-transfer.md` (notation, A, Sections 1-5, 9, 10), `library/gap-transfer-check.md` (verdicts, R1-R8, correction table), `library/gap-skeleton-max-b.md` lines 241-282 (run 2, Lemmas 1, 1', 2).
-- Points done: (1), (2), (3).
-- Next: point (4), Proposition R.
+- Points done: (1)-(10).
+- Next: point (11), the RECALLED claims; then (12), own attempt to break Theorem S.
 
 ## Repo search
 
@@ -76,3 +76,107 @@ Setting: T = transfer operator in direction 1 of B_2 = (2n, 2n, 2n), n >= 3, so 
 **Corollary D2 (ii).** Assume (Phi-step) with K >= 2, eps_0 <= 1/2, and Phi_0 = Phi(n_1) < min(eps_0, 1/K), n_1 >= n_0. Induction hypothesis: Phi_k <= Phi_0 and K Phi_k <= (K Phi_0)^(2^k). Since 2^k n_1 >= n_0 and Phi_k <= Phi_0 < eps_0, the step applies: K Phi_(k+1) <= (K Phi_k)^2 <= (K Phi_0)^(2^(k+1)), and Phi_(k+1) <= (K Phi_k) Phi_k <= (K Phi_0) Phi_k < Phi_k. Then (c) at time 2^k n_1 for the box (2^(k+1) n_1)^3, with Phi_k <= 1/2 and e^x - 1 <= 2x: m >= (1/(2^k n_1)) log(1/(2 Phi_k)) and log(1/(2 Phi_k)) = log(K/2) + log(1/(K Phi_k)) >= log(K/2) + 2^k log(1/(K Phi_0)) >= 2^k log(1/(K Phi_0)) (K >= 2). **Holds** as an implication; (Phi-step) is not proved, and the text says it is no longer needed (Theorem S replaces it).
 
 **Verdict (3): HOLDS** (with the corrected reading of Z^(mu nu) from point (1), used in (e)).
+
+## Point (4). Proposition R
+
+**Statement.** Delta(n^4) <= eps and 8^k eps <= 1 give m((2^k n)^3) >= (1/n) log(1/(2 8^k eps)).
+
+**Check.** Multiplying one side by 2^k multiplies Delta by at most 2^k (point (2)); three sides give Delta(n, 2^k n, 2^k n, 2^k n) <= 8^k eps. Run 2, Lemma 1 (d) (checked: log lambda_0 = lim over n_1 of F/n_1 = n_2 n_3 n_4 lim f >= n_2 n_3 n_4 f, so Z = lambda_0^(n_1)(1 + S(n_1)) >= exp(f |n|)(1 + S(n_1)), i.e. 1 + S(n_1) <= exp(Delta)) gives 1 + S(n; (2^k n)^3) <= exp(8^k eps). With e^x - 1 <= 2x on [0, 1] and r_1^n <= S: the claim. **Holds.**
+
+The identity Delta(n^4) = sum over k >= 0 of 16^(-(k+1)) Phi(2^k n): Phi(n) = 16 Delta(n^4) - Delta((2n)^4) (the f terms cancel, 16 n^4 = (2n)^4), so Delta(n^4) = sum over k < K of 16^(-(k+1)) Phi(2^k n) + 16^(-K) Delta((2^K n)^4), and 16^(-K) Delta((2^K n)^4) = n^4 (F((2^K n)^4)/(2^K n)^4 - f) -> 0 because F/|n| is non-increasing in each side, so its infimum over all tori equals its limit along the cubes. **Holds.**
+
+**Wording correction (line 123).** "the gap of every box of side up to n exp(mu n / 3)" must read "the gap of every cube of side 2^k n <= n exp(mu n/3)" (the proof covers dyadic multiples; any integer multiple j n with j^3 eps <= 1 works the same way, other sides do not). The rate mu - (3k log 2 + log 2)/n is right for side 2^k n.
+
+**Verdict (4): HOLDS** (wording correction above).
+
+## Point (5). Lemma K (a)-(d)
+
+Setting of the lemmas (line 174), as used: W(a, b) = Z(a, b, c, d), c, d >= 3 fixed, a, b >= 3; T_b = transfer operator in direction 1 of the box (b, c, d) (Lemma 1.1), W(a, b) = Tr T_b^a; symmetry W(a, b) = W(b, a) is Lemma 1.1 (v) (exchange of the axes 1, 2). ell = inf over a, b of log W(a, b)/(ab) >= -12 beta c d is finite. Note: ell depends on (c, d); it is not the four-dimensional f times cd. The lemmas never compare it with f, so this is consistent; I flag it only because Section 1 and Section 3.4 use the word deficit for both Delta and kappa.
+
+**(a).** By Lemma A (a) for T_b, a -> (1/a) log W(a, b) is non-increasing on a >= 3 and tends to e(b). A non-increasing sequence tends to its infimum. **Holds.**
+
+**(b).** W(a, jb) = W(jb, a) = Tr T_a^(jb) <= (Tr T_a^b)^j = W(b, a)^j = W(a, b)^j (symmetry twice, Lemma A (a) for T_a). Divide by a, let a -> infinity, use (a): e(jb) <= j e(b). e(b)/b = inf over a of log W(a, b)/(ab) by (a), so inf over b of e(b)/b = ell, and kappa(b) = b(e(b)/b - ell) >= 0. **Holds.**
+
+**(c) (weight: convexity from the crossed direction, and passage to the limit).** Fix a. h_a(b) := (1/a) log W(a, b) = (1/a) log Tr T_a^b (symmetry, then the transfer operator T_a of the box (a, c, d) in direction 2). With the eigenvalues mu_j of T_a (multiplicity): Tr T_a^b = sum of mu_j^b, and Cauchy-Schwarz on the sequence (mu_j^((b-1)/2) mu_j^((b+1)/2)) gives (Tr T_a^b)^2 <= Tr T_a^(b-1) Tr T_a^(b+1). So h_a(b+1) + h_a(b-1) - 2 h_a(b) >= 0 for every integer b >= 4 (so that b - 1 >= 3 and W(a, b-1) is a partition function; as operator traces it holds for b >= 2). By (a), h_a(b) -> e(b) as a -> infinity, for each fixed b. The inequality is a non-strict inequality between three numbers that each converge; it passes to the limit: e(b+1) + e(b-1) - 2 e(b) = lim over a of (h_a(b+1) + h_a(b-1) - 2 h_a(b)) >= 0. Subtracting the linear ell b does not change second differences. **Holds** on the integers b >= 4, which is all that (d) uses. (The text's phrase "a sum of exponentials of b with positive weights" is right: the weights are the multiplicities, and the sum may be infinite; the Cauchy-Schwarz form above covers the infinite case.)
+
+**(d) (weight: from convexity and the infimum to a non-increasing deficit).** Suppose kappa(b_0 + 1) - kappa(b_0) = c > 0 for some b_0 >= 3. By (c), for every j >= b_0 + 1 (so j >= 4), kappa(j + 1) - kappa(j) >= kappa(j) - kappa(j - 1); by induction every increment from b_0 on is >= c. So kappa(b) >= kappa(b_0) + c(b - b_0) >= c(b - b_0) for b >= b_0 (kappa(b_0) >= 0 by (b)), and for b >= 2 b_0: e(b)/b = ell + kappa(b)/b >= ell + c/2. Since ell = inf over b of e(b)/b, there is b_1 >= 3 with e(b_1)/b_1 < ell + c/2. By (b), e(j b_1)/(j b_1) <= e(b_1)/b_1 < ell + c/2 for every j >= 1; take j with j b_1 >= 2 b_0. Contradiction. So kappa(b + 1) <= kappa(b) for every b >= 3. **Holds.** Every step is explicit; the only inputs are (b) (subadditivity along multiples) and (c) (convexity at the integers >= 4).
+
+A consistency check by hand (not a proof step): for a free massless field in two dimensions the ground state energy of a circle of length b is eps b - pi c/(6b) + o(1/b), so kappa(b) = pi c/(6b) + o(1/b): non-negative, convex, decreasing, as (b)-(d) require.
+
+**Verdict (5): HOLDS.**
+
+## Point (6). Lemma X and Lemma E
+
+**Lemma X.** W(a, b) = lambda(b)^a (1 + S(a; b)) is the definition of S(a; b) (line 174), and W(b, a) = lambda(a)^b (1 + S(b; a)); W(a, b) = W(b, a). Logarithms: a e(b) + g(a, b) = b e(a) + g(b, a); subtract ell a b from both sides: a kappa(b) + g(a, b) = b kappa(a) + g(b, a). For a < b: g(b, a) >= 0 and kappa(a) >= kappa(b) (Lemma K (d)), so a kappa(b) + g(a, b) >= b kappa(b), i.e. (b - a) kappa(b) <= g(a, b). **Holds.**
+
+**Lemma E.** For a < b: W(a, 2b) = W(2b, a) = Tr T_a^(2b) <= (Tr T_a^b)^2 = W(a, b)^2 (Lemma A (a), j = 2). Write both sides with the definition of S: lambda(2b)^a (1 + S(a; 2b)) <= lambda(b)^(2a) (1 + S(a; b))^2, so 1 + S(a; 2b) <= (1 + S(a; b))^2 exp(a(2 e(b) - e(2b))). And 2 e(b) - e(2b) = 2 kappa(b) - kappa(2b) (the ell terms: 2 ell b - ell 2b = 0) <= 2 kappa(b) (kappa(2b) >= 0). By Lemma X, kappa(b) <= g(a, b)/(b - a). So 1 + S(a; 2b) <= (1 + S(a; b))^2 exp(2a g(a, b)/(b - a)) = (1 + S(a; b))^(2 + 2a/(b - a)), and 2 + 2a/(b - a) = 2b/(b - a). For a = b/2: 2b/(b/2) = 4. **Holds.**
+
+The same proof with W(a, jb) <= W(a, b)^j gives 1 + S(a; jb) <= (1 + S(a; b))^(jb/(b-a)) (used in Section 3.4, first bullet of "What Theorem S is and is not"; checked in point (7)).
+
+**Verdict (6): HOLDS.**
+
+## Point (7). Theorem S
+
+Notation: for a box B = (b_1, b_2, b_3) and k >= 1, S(k; B) is the thermal sum of the transfer operator in direction 1 of the 4-torus (time | B), i.e. of the operator T_B of Lemma 1.1 on the box B: S(k; B) = sum over i >= 1 of (lambda_i/lambda_0)^k, the list of positive eigenvalues with multiplicity (A2), lambda_0 simple. So 1 + S(k; B) = Tr T_B^k / lambda_0^k, and s = S(n; (2n)^3).
+
+**The three uses of Lemma E, with the fixed sides.**
+
+1. Pair (1, 2); sides of directions 3, 4 fixed at (2n, 2n). W(x, y) := Z(x, y, 2n, 2n), T_y = transfer in direction 1 of the box (y, 2n, 2n), W(x, y) = W(y, x) by exchange of the axes 1, 2. Then S(x; y) of the lemma is S(x; (y, 2n, 2n)). Lemma E with a = n, b = 2n (a < b, a = b/2): 1 + S(n; (4n, 2n, 2n)) <= (1 + S(n; (2n, 2n, 2n)))^4 = (1 + s)^4. Correct.
+2. Pair (1, 3); sides of directions 2, 4 fixed at (4n, 2n). W(x, y) := Z(x, 4n, y, 2n), T_y = transfer in direction 1 of (4n, y, 2n), symmetry by exchange of the axes 1, 3. Lemma E, a = n, b = 2n: 1 + S(n; (4n, 4n, 2n)) <= (1 + S(n; (4n, 2n, 2n)))^4 <= (1 + s)^16. Correct.
+3. Pair (1, 4); sides of directions 2, 3 fixed at (4n, 4n). W(x, y) := Z(x, 4n, 4n, y), T_y = transfer in direction 1 of (4n, 4n, y), symmetry by exchange of the axes 1, 4. Lemma E: 1 + S(n; (4n)^3) <= (1 + S(n; (4n, 4n, 2n)))^4 <= (1 + s)^64. Correct.
+
+Each use has its own ell and kappa (they depend on the fixed sides); each use is self-contained, so nothing is mixed. Each needs Lemma 1.1 for boxes with unequal sides (point (1)): (y, 2n, 2n), (4n, y, 2n), (4n, 4n, y) for all y >= 3 (Lemma K takes limits over y), and the transposed boxes (x, 2n, 2n) etc. for T_a. All sides >= 3 since n >= 3.
+
+**The step S(2n; B) <= S(n; B)^2 for B = (4n)^3.** This is S(k + k') <= S(k) S(k') with k = k' = n (point (2)): sum over i >= 1 of r_i^(2n) <= r_1^n S(n) and r_1^n <= S(n). S is the sum over all excited eigenvalues counted with multiplicity, including all flux sectors; the top eigenvalue is simple (Lemma 1.1 (iii)), so r_1 < 1 and the eigenvalue lambda_0 is not part of S. (If lambda_0 were degenerate, S(n; B) >= 1 and the induction hypothesis s_k < 1/5041 could not hold; simplicity is therefore also forced by the conclusion, but it is proved anyway.) Hence S(2n; (4n)^3) <= S(n; (4n)^3)^2 <= ((1 + s)^64 - 1)^2. **Holds.**
+
+**Constants.**
+- For 0 <= x <= 1/640: (1 + x)^64 <= e^(64x) (since 1 + x <= e^x); e^y - 1 <= y e^y for y >= 0 (mean value theorem); with y = 64 x <= 0.1: (1 + x)^64 - 1 <= 64 x e^(0.1). e^(0.1) = 1.10517... (series: 1 + 0.1 + 0.005 + 0.000167 + 0.000004 = 1.105171), and 64 x 1.105171 = 70.731 <= 71. So (1 + x)^64 - 1 <= 71 x and the map is <= (71 x)^2 = 5041 x^2 (71^2 = 5041). Correct.
+- 1/5041 = 1.98373 x 10^(-4) < 1/640 = 1.5625 x 10^(-3). Correct.
+- exp(1.9 x 10^(-4)) - 1 = 1.9 x 10^(-4) + 1.805 x 10^(-8) + ... < 1.901 x 10^(-4) < 1.91 x 10^(-4) < 1.9837 x 10^(-4) = 1/5041. Correct.
+- Part 1 (line 60) claims gap >= 0.04/n under Phi(n) <= 1.9 x 10^(-4): 5041 x 1.9002 x 10^(-4) = 0.95789, log(1/0.95789) = 0.04302 >= 0.04. Correct.
+- Corollary S3's bullet (line 213): 1 + S(n_k; (2 j n_k)^3) <= (1 + s_k)^(8 j^3) by the generalized Lemma E (exponent jb/(b-a) = 2j in each of three directions, (2j)^3 = 8 j^3). With y = 8 j^3 s_k and 14 j^3 s_k < 1: y < 4/7, and (e^y - 1)/y is increasing, equal to 1.349 at y = 4/7 (e^(4/7) = 1.7708), so (1 + s_k)^(8j^3) - 1 <= 1.349 y < 14 j^3 s_k. So m >= (1/n_k) log(1/(14 j^3 s_k)). Correct. (The crude bound y e^y used for 71 would give 14.2 here; the claim is still true by the sharper bound.)
+- Line 214: s >= 1/5041 for every n gives Phi(n) >= log(1 + 1/5041) = 1.98353 x 10^(-4) >= 1.98 x 10^(-4) (by Theorem D (b)). Correct.
+
+**Induction.** Put s_k = S(n_k; (2 n_k)^3), n_k = 2^k n; s_0 = s, and the step above with n_k in place of n (n_k >= 3) gives s_(k+1) <= ((1 + s_k)^64 - 1)^2. Hypothesis: 5041 s_k <= (5041 s)^(2^k) < 1. Then s_k < 1/5041 <= 1/640, so s_(k+1) <= 5041 s_k^2 and 5041 s_(k+1) <= (5041 s_k)^2 <= (5041 s)^(2^(k+1)). Correct.
+
+**Gap bound.** r_1^(n_k) <= s_k (r_1 for the box (2 n_k)^3), so m((2 n_k)^3) >= (1/n_k) log(1/s_k), and log(1/s_k) >= log 5041 + 2^k log(1/(5041 s)), so m >= log(1/(5041 s))/n + (log 5041)/n_k >= log(1/(5041 s))/n. Correct.
+
+**Last claim.** s <= exp(Phi(n)) - 1 (Theorem D (b), same box (2n)^3, same time n). With Phi(n) <= 1.9 x 10^(-4): s < 1/5041. Correct.
+
+**Verdict (7): HOLDS.** Theorem S is proved from Lemma 1.1 (which supplies (TM) for every box and the symmetry of Z), Lemma A, and the elementary inequalities above. It uses no property of SU(2) beyond Lemma 1.1.
+
+## Point (8). Corollaries S2 and S3
+
+**Corollary S2.** For a symmetric W as in the setting of the lemmas (a two-dimensional model: W(a, b) the partition function of the a x b torus): Lemma E with a = n, b = 2n gives 1 + S(n; 4n) <= (1 + S(n; 2n))^4, and S(2n; 4n) <= S(n; 4n)^2. For x <= 1/20: (1 + x)^4 - 1 = x(4 + 6x + 4x^2 + x^3) <= x(4 + 0.3 + 0.01 + 0.000125) = 4.3101 x <= 4.32 x, and 4.32^2 = 18.66 < 19. Induction: if x_0 = S(n; 2n) <= 1/20 then 19 x_0 <= 0.95 < 1, 19 x_k <= (19 x_0)^(2^k), x_k <= x_0 <= 1/20, and the gap of the circle of length 2^(k+1) n is >= (1/n_k)(2^k log(1/(19 x_0)) + log 19) >= log(1/(19 x_0))/n. **Holds** for every W satisfying the setting (positive trace-class transfer operators in both directions with simple top eigenvalue, symmetry, ell finite).
+
+**Correction (line 205).** "This is a statement for every reflection-positive model on the square lattice with a positive transfer operator, the O(3) sigma model included." The corollary needs a positive trace-class transfer operator with simple top eigenvalue for every circle length >= 3, and W(a, b) = W(b, a). For the O(3) model these are not proved in this repository (Lemma 1.1 is for SU(2) lattice gauge theory). The analogue for the nearest-neighbour O(3) model is very likely true by the same Gram-expansion and Jentzsch argument (the kernel exp(beta sum_x s_x . s'_x) is a positive-definite kernel on (S^2)^b), but that is a remark, not a proved input. Replace by: "This is a statement for every model on the square lattice that satisfies the setting of the lemmas; for the O(3) model that setting is plausible by the argument of `gap-transfer.md` and is not proved here."
+
+**Corollary S3.** For 3 <= a <= b/2: 2b/(b - a) <= 4 iff a <= b/2. The three uses of Lemma E as in point (7) with (a, b) for (n, 2n) and boxes (2b, b, b), (2b, 2b, b), (2b)^3: 1 + S(a; (2b)^3) <= (1 + S(a; b^3))^(e^3) with e = 2b/(b - a) <= 4, so <= (1 + S(a; b^3))^64 (base >= 1). Then S(2a; (2b)^3) <= S(a; (2b)^3)^2. The pair (2a, 2b) again has 2a <= (2b)/2. For L >= 2N there is a unique k >= 0 and b in [2N, 4N) with L = 2^k b; a = floor(b/2) satisfies N <= a <= b/2 (so a >= 3) and a < 2N. The recursion and the gap bound of Theorem S give m(L^3) >= log(1/(5041 s_max))/a >= log(1/(5041 s_max))/(2N) (the logarithm is positive since s_max < 1/5041). **Holds.**
+
+**Verdict (8): S2 HOLDS AFTER CORRECTION (the scope sentence about O(3)); S3 HOLDS.**
+
+## Point (9). Proposition N, Remark N2, Lemma J and the seam bound
+
+**Proposition N.** As a function of n_1 with V = n_2 n_3 n_4: the term mu = 1 of the exponent is V w(n_1) = V c q^(n_1), and the terms mu >= 2 are n_1 (V/n_mu) w(n_mu). So Z_w = Lambda^(n_1) exp(V c q^(n_1)) with log Lambda = f V + sum over mu >= 2 of (V/n_mu) w(n_mu), and exp(V c q^(n_1)) = sum over j >= 0 of ((Vc)^j/j!) (q^j)^(n_1): the integral of lambda^(n_1) against the measure with masses (Vc)^j/j! at Lambda q^j, mass 1 at Lambda. Symmetric in the sides. F/|n| = f + sum over mu of w(n_mu)/n_mu > f, tending to f, so the infimum is f. Delta(n^4) = 4 n^3 c q^n, Phi(n) = 16 Delta(n^4) - Delta((2n)^4) = 64 n^3 c q^n - 32 n^3 c q^(2n). Since 0 < q^(2n) <= q^n: 32 n^3 c q^n <= Phi(n) <= 64 n^3 c q^n. Phi(2n) >= 32 (2n)^3 c q^(2n) = 256 n^3 c q^(2n) and Phi(n)^2 <= 4096 n^6 c^2 q^(2n), so Phi(2n) >= Phi(n)^2/(16 n^3 c). The choice of c: Phi(n) <= 64 n^3 c q^n <= eps and 1/(16 n^3 c) >= K. **Holds.** The claim that Lemma A, (LB) and Theorem D (a), (b) use only (TM') is right: Lemma A (a), (b) hold for integrals of lambda^k against a positive measure with an atom of mass >= 1 at the top (lambda_0^k <= the integral is exactly the atom), and (LB) is the definition of f.
+
+**Remark N2.** As a function of n_1, the factor mu = 1 is (1 - q^(n_1))^(-cV) = sum over j of binom(cV + j - 1, j) q^(j n_1), integer coefficients since cV is a positive integer; the factors mu >= 2 are n_1-th powers. So (TM-int) holds. With x = q^n: Delta(n^4) = -4 n^3 c log(1 - x), and Phi(n) = -64 n^3 c log(1 - x) + 32 n^3 c log(1 - x^2) = 32 n^3 c log((1 + x)/(1 - x)) >= 64 n^3 c x (since log((1+x)/(1-x)) = 2(x + x^3/3 + ...) >= 2x). Phi(2n) = 256 n^3 c log((1 + x^2)/(1 - x^2)) <= 256 n^3 c 2x^2/(1 - x^4) <= 546 n^3 c x^2 when x <= 1/2 (2 x 16/15 x 256 = 546.1). So the text's bounds Phi(n) >= 32 n^3 c q^n and Phi(2n) <= 1024 n^3 c q^(2n) hold (with room), and Phi(2n) <= Phi(n)^2/(n^3 c) <= Phi(n)^2. Several species: Phi(n) >= 64 n^3 sum c_j x_j, Phi(2n) <= 546 n^3 sum c_j x_j^2 <= 546 n^3 (sum c_j x_j)^2 (c_j >= 1 integers), so Phi(2n) <= Phi(n)^2. **Holds.** The sentence "Section 3.4 gives such a proof, for the thermal sums (the form (FIT))" is right: Theorem S gives (FIT) with theta = 1/5041 (point (7)).
+
+**Lemma J.** Convention (h.U)_(xy) = h_x U_(xy) h_y^(-1). Under h, U_01 k_1 U_12 becomes h_0 U_01 (h_1^(-1) k_1 h_1) U_12 h_2^(-1), and likewise k_2 -> h_2^(-1) k_2 h_2 (U_32^(-1) -> h_2 U_32^(-1) h_3^(-1)), k_3 -> h_3^(-1) k_3 h_3, and h_0 cancels in the trace. The corners x_1, x_2, x_3 are distinct (sides >= 2). Invariance of mu and Fubini: the expectation equals its average over independent Haar h_1, h_2, h_3; the expression is linear in each conjugated k_c, and the Haar average of h^(-1) k h commutes with every element of SU(2), hence with all 2 x 2 complex matrices (SU(2) spans them: 1, i sigma_1, i sigma_2, i sigma_3), so it is the scalar (1/2) tr k. **Holds.** Seam case: I checked the geometry of the sixteen blocks (block = links (x, mu) with x in one sub-cube of side n; the link leaving the sub-cube is identified with the wrap-around link of the small torus). A big-torus plaquette at x in the plane (mu, nu) is a seam plaquette iff x_mu or x_nu is n - 1 in local coordinates; then the link (x + e_mu, nu) (or (x + e_nu, mu)) is the only link of the plaquette in its block, and the gauge transformation of that block's small torus at its base vertex multiplies it on the left by g and moves no other link of the plaquette. Independence of the blocks and the Haar average of g, which is 0 (invariance under g -> -g), give expectation 0. **Holds.**
+
+**Seam bound.** The interior plaquettes of the big torus and of the small tori are the same functions; the big torus has N_seam = 96 n^4 (1 - (1 - 1/n)^2) = 192 n^3 - 96 n^2 seam plaquettes and the sixteen small tori have the same number of wrap-around plaquettes. Z((2n)^4)/Z(n^4)^16 is the expectation, under the product of the sixteen Gibbs measures, of exp(-beta(A_big - sum of A_small)) >= exp(-beta times the expectation) (Jensen); the expectation is N_seam (1 - 0) - N_seam abar_n... more exactly each seam plaquette contributes E(1 - (1/2) tr) = 1 and each wrap-around plaquette E(1 - (1/2) tr) = abar_n, so the difference is N_seam (1 - abar_n). Hence Phi(n) <= beta (192 n^3 - 96 n^2)(1 - abar_n). **Holds.** (Line 152 says the replaced small-torus plaquette "has 1 - abar_n"; this is the expectation of (1/2) tr, with abar_n = E(1 - (1/2) tr) as in Theorem D (f). Consistent.)
+
+**Verdict (9): HOLDS.**
+
+## Point (10). Theorem F, Section 4.2, Proposition T, Remark F3, Identity 4.4
+
+**Theorem F.** (a) Lemma 1.1 (iv), (v) with the corrected twisted weight: Tr(T_1^a C_2) = Z^(12) = Tr(T_2^b C_1), so Z_odd = Tr(T_1^a P_2) = Tr(T_2^b P_1) >= 0; Z_even - Z_odd = Z^(12) > 0. Holds. (b) P_2 is an orthogonal projection commuting with T_1, so T_1 P_2 = P_2 T_1 P_2 is positive and trace class (T_1 = X^* X with X Hilbert-Schmidt gives P_2 T_1 P_2 = (X P_2)^*(X P_2)), and (T_1 P_2)^a = T_1^a P_2. Lemma A (a): Z_odd(ja, b | c, d) <= Z_odd(a, b | c, d)^j. On the torus (ja, b | c, d) the same in direction 2 with T_2' (box (ja, c, d)) and P_1', using Z_odd = Tr(T_2'^b P_1') from Lemma 1.1 (v). Holds. (c) f|n| scales by jk; u <= v is (LB). Holds. (d) From (c). Holds. (e) If T_2 P_1 = 0 then v = 0 < 1, excluded; else Z_odd(a, b)^(1/b) = (Tr (T_2 P_1)^b)^(1/b) tends to the top eigenvalue mu_0(a) of T_2 P_1, which is the top of T_2 on the odd subspace; v >= 1 for every b gives mu_0(a) >= exp(f a c d). Holds (the hypothesis must be read as "for every b", as written: "on every torus"). **Theorem F: HOLDS** (with the corrected Z^(12) of point (1)).
+
+**Section 4.2.** v = Z_odd e^(-f|n|) = u Z e^(-f|n|) = u e^Delta. On (2 n_k)^4: u <= S(2 n_k; (2 n_k)^3) <= s_k^2 (Theorem D (e)). "Falls like an exponential of the side": s_k^2 <= (5041 s)^(2^(k+1))/5041^2, an upper bound linear in the side 2 n_k; it is a statement about the bound, not a lower bound on u. **HOLDS.**
+
+**Proposition T.** (TUBE) gives v(a, b | 2c, d) = Z_odd(a, b | 2c, d) e^(-2f abcd) <= K v(a, b | c, d) Z(a, b | c, d) e^(-f abcd) = K e^(Delta(a, b, c, d)) v(a, b | c, d). Then v(L, L | 2L, L) <= K e^(Delta(L^4)) v(L^4); with d doubled on (L, L | 2L, L) and Delta(L, L, 2L, L) <= 2 Delta(L^4): v(L, L | 2L, 2L) <= K^2 e^(3 Delta(L^4)) v(L^4). Theorem F (c), j = k = 2: v((2L)^4) <= v(L, L | 2L, 2L)^4 <= K^8 e^(12 Delta(L^4)) v(L^4)^4 <= M v(L^4)^4 for L >= L_0. So M^(1/3) v((2L)^4) <= (M^(1/3) v(L^4))^4, and by induction M^(1/3) v((2^k L_0)^4) <= (M^(1/3) v(L_0^4))^(4^k). Since M >= 1: v(L^4) <= exp(-4^k L_0^2 sigma) = exp(-sigma L^2). Sides >= L_0 >= n_0 keep (TUBE) applicable. **HOLDS** as an implication. (TUBE) is open; at Gaussian order it is estimated false for U(1) on thin sections (an estimate, not checked here beyond its form).
+
+**Remark F3.** The extra input, (TM) for the twisted action in the transfer direction 3 (twisted plaquettes spatial), follows from `gap-transfer.md` word for word: the proof of statements (1)-(4) uses of the spatial potential only that it is real, bounded, continuous and gauge invariant; the twisted potential V' = beta sum over p of (1 - (1/2) eps_p tr u_p), eps_p = +-1, has these properties (0 <= V' <= 6 beta |Lambda|), so T' = M' C_E M' is positive, trace class, with simple top eigenvalue and positive eigenfunction; Statement (5) is not needed. I record this as a checked extension (same status as Lemma 1.1), so the qualifier "given a transfer operator for the twisted slice" can be dropped. Symmetry in (c, d): exchange of the axes 3, 4 keeps the plane (1, 2). The inequality: log W = ell c d + c kappa(d) + g(c; d) for both families, so f_m - tau c d = c(kappa(d) - kappa_tw(d)) + g(c; d) - g_tw(c; d); Lemma X gives 0 <= c kappa(d) <= c g/(d - c) for each family; hence f_m - tau cd <= (d/(d-c)) g(c; d) and >= -(d/(d-c)) g_tw(c; d). tau >= 0 because Z^(12) <= Z. **HOLDS.** The reading "the area law is the statement that tau(a, b) falls like exp(-sigma ab)" is an interpretation, not a claim; I do not check it.
+
+**Identity 4.4.** Haar measure is invariant under U -> -U, so for a measurable section Sigma of SU(2) -> SO(3) the map (s, V) -> sV, {+-1} x Sigma -> SU(2), carries (uniform on +-1) x (2 Haar restricted to Sigma) to Haar measure: product. (1/2) tr U_p = s_p J_p(V) (signs are central, s^(-1) = s). For fixed V the integrand is the Z_2 gauge theory with couplings beta J_p(V); the twist replaces s_p J_p by -s_p J_p on the stack, which is the twisted Z_2 theory with the same couplings. Integrating over V: Z_odd/Z = integral of Z_Z2[beta J(V)] u_Z2[beta J(V)] dV / integral of Z_Z2[beta J(V)] dV. **HOLDS** (normalizations of the Z_2 sums and of dV cancel in the ratio).
+
+**Verdict (10): HOLDS** (Theorem F with the corrected Z^(12); Remark F3's extra input is supplied above).

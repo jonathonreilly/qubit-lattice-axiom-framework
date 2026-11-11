@@ -114,6 +114,8 @@ The brief of row 712 does not name the skill. The match below is by content.
 11. A grep for duplicates before each real attempt, with the matches named (fp L313).
 12. Proof items for workers, each a complete brief, and a "not proposed" list (fp L488-500).
 
+**Not new to this lane.** Items 1 and 2 have a precedent in rows 669 and 670 (the two max plans): the brief of row 669 says "Part 1, your own thinking, BEFORE you read any digest or paper on the gap" (FINISH row 669), and `library/gap-skeleton-max.md` L55-57 keeps Part 1 unedited with facts "from memory" marked and corrected in Part 2. Each of its approaches B1 to B14 carries "the U(1) test" in the form "the crux statement must fail for U(1)" (for example L109). So what row 712 added in this lane is the explicit inventory table, the assumptions table with the groups (d) to (f), and the audit of the tests and verdicts as objects in their own right.
+
 **In v1, not used by row 712, and worth keeping (my judgement, not a measured gain):** the plain statement of the wall; pre-registered readings for the two guide runs; the rule to check strong words against what was actually done. v1 states that rule for subagent results. Applied to the run's own summary it names the three words that the check corrected: "new", "THM", "is sound".
 
 ### 1.5 Verdict of this evaluation
@@ -122,7 +124,7 @@ The exercise was productive in one specific way: it audited the lane's own filte
 
 ## 2. The improved skill (full text)
 
-Ready to replace `docs/ai_methodology/skills/exercise/SKILL.md` at main 1ddab64621. The text is between the two four-backtick fences below: 681 lines, 34,787 bytes, sha256 prefix `32009c1919d290f9` (the file starts at the line `---` and ends at the line that ends "against what it actually computed."). v1 is 424 lines.
+Ready to replace `docs/ai_methodology/skills/exercise/SKILL.md` at main 1ddab64621. The text is between the two four-backtick fences below: 700 lines, 35,807 bytes, sha256 prefix `5673d58a50bb28d3` (the file starts at the line `---` and ends at the line that ends "against what it actually computed."). v1 is 424 lines.
 
 **What is kept from v1, word for word or nearly:** the Skill Freshness section; the purpose and the three success forms; the model and tool boundary; the Framework Refresher Read; the arguments `--artifact`, `--slug`, `--subagents`, `--no-web`, `--test-budget`; the plain and the precise statement of the wall with the blind check; the text on what each approved primitive grants; the fan-out rules, the lenses and the reframes; the kill checks; the ranking rule; the rules for runs (pre-registration, searched class, no long extrapolation, fresh adversarial check before a negative conclusion); the plain-language report; the non-negotiables.
 
@@ -142,6 +144,8 @@ Ready to replace `docs/ai_methodology/skills/exercise/SKILL.md` at main 1ddab646
 | Step 9, "filters corrected", work items as complete briefs, a RESULT line, the strong-words pass over the run's own report | fp L488-502; defects 1.3.1, 1.3.4, 1.3.5 |
 | Output rules: write as you go, header with "not covered", status block | fp L8-20; FINISH "Save as you go" |
 | A fourth success form, "a corrected filter" | fp L274-276 |
+| The section "Relation to other procedures" (first-principles, races and panels, checks) | FINISH row 721, deliverable (4); `RULES.md` section 3 |
+| Step 4 starts from an existing counterfactual pass | `skills/physics-loop/references/assumption-import-audit.md` L57-90 at main (found by a search of main for "exercise") |
 
 **Changes to v1 that the lead should accept or strike (each is a choice, not a need):**
 
@@ -207,8 +211,24 @@ that is all the exercise produced.
 The exercise may produce routes, proof plans, lemmas with proofs, runners and
 literature bridges. It must not apply audit verdicts, promote claims, add
 axioms, primitives or imports, or treat existing repo content as
-unquestionable. `docs/ai_methodology/procedures/research.md` step 3 says when
-a target runs the exercise. This file says how.
+unquestionable.
+
+## Relation to other procedures
+
+- `docs/ai_methodology/procedures/research.md` step 3 says when a target
+  runs the exercise. This file says how.
+- `/first-principles` derives one target from the allowed premises. The
+  exercise uses the same discipline on a wall: the inventory of step 2 is
+  that command's premise ledger, with a mark on every entry. A route that
+  leaves step 7 as a derivation goes to `/first-principles`.
+- A race or a panel is several independent attempts or readers on one
+  question. It answers a question that is already posed. The exercise asks
+  whether the question and the filters are right. On a blocked part, run the
+  exercise first and brief the race or panel from its work items (step 9).
+  The judicial panel of the audit path is a different thing; the exercise
+  never touches it.
+- The exercise is not a check. Its statements are `argued` until
+  `procedures/check.md` records a check of them.
 
 ## Model And Tool Boundary
 
@@ -475,7 +495,10 @@ List every assumption you can find, in these six groups. Take them from the
 wall's statement, the governing notes' premise lists and the runners, not
 from memory. Then add the hidden ones: finiteness, locality, smoothness,
 symmetry, perturbative level, choice of state, boundary conditions, readings
-of the axioms, and "obvious" steps.
+of the axioms, and "obvious" steps. Where the lane already has an
+assumptions and imports ledger with a counterfactual pass
+(`../physics-loop/references/assumption-import-audit.md`), start from its
+rows and do not write them again.
 
 - **(a) Target.** What is wanted: which theorem, which limit, which
   observables, which domain, which strength, and who consumes it.
@@ -1005,4 +1028,139 @@ policy:
   allow_implicit_invocation: true
 ```
 
-Not verified: I did not run `scripts/sync_methodology_skills.py --check` (it compares installed copies outside the repository, which is outside this item's scope), and I did not search main for a test that pins the text of the exercise skill or command. `PROCEDURES.md` L32 lists no tooling that reads them; the lead should grep `scripts/` and `tests/` on main for `exercise` before landing.
+Tooling. I searched main at 1ddab64621 (a shallow clone without blobs in `/tmp/exskill-v2-clone/`, then `git grep -i exercise` over `scripts/check_*`, `scripts/validate_*`, `scripts/sync_*`, `scripts/lab_ops.py`, `tests/`, `.github/`, `docs/ai_methodology/` without `raw/`, `.claude/commands/`, `AGENTS.md`, `CLAUDE.md`: 111 files). No script, test or workflow file in that set names the exercise skill or command, which agrees with `PROCEDURES.md` L32. Other files that name it, and need no edit: `.claude/commands/pstack.md` L39 and L81, `docs/ai_methodology/README.md` L37 ("Reframe a blocked investigation"), `procedures/research.md` L78 and L147 (edited in part 4), `skills/physics-loop/references/assumption-import-audit.md` L67. Not searched: the other 1000+ files under `scripts/`. Not run: `scripts/sync_methodology_skills.py --check` (it compares installed copies outside the repository).
+
+## 4. Exact edits to the process stack
+
+All line numbers are those of the files at main 1ddab64621. I applied every edit below to a scratch copy with a script that requires the old text to occur exactly once, and counted lines afterwards. No edit touches axiom text, audit language, a ledger or a setting.
+
+### 4.0 Where the rule lives, and what the row asked
+
+The row asks for edits to `docs/ai_methodology/SCIENCE_WORKFLOW.md` that say when the exercise runs. At 1ddab64621 that file is a section map: "It adds no rule and grants no status. Remove it when nothing cites it" (L6-7). The rule "when" is in `docs/ai_methodology/procedures/research.md` step 3 (L77-78), and `RULES.md` section 7 says "One home per rule. Other files point to it and none restate it." So:
+
+- E1 and E2 put the rule in `procedures/research.md`, where it already is. This is my recommendation.
+- E4 gives `SCIENCE_WORKFLOW.md` a pointer row only, so that the map still adds no rule. Land it only if the lead wants the map to name the exercise.
+- If the lead's branch has a `SCIENCE_WORKFLOW.md` that still holds rules (the copy in this checkout is such an older file, 242 lines), the same sentences go there in its Section 7, "Selecting work"; I give no old/new text for it because main is the stated target.
+
+`procedures/research.md` is at its 150-line budget and `RULES.md` at its 200-line budget (`RULES.md` section 7: "Adding past a budget means removing something"). E1 and E2 keep `research.md` at 150 lines. No edit to `RULES.md` or `SETTINGS.md` is proposed.
+
+### 4.1 E1: `docs/ai_methodology/procedures/research.md`, step 3, L77-79 (the rule: when)
+
+Old:
+
+```text
+   never a status report. A part that keeps failing the same way gets the wall
+   exercise; a map of attacks with nothing tried is not a result. Long and
+   numeric jobs pass `lab_ops.py preflight`; numerics hold `numeric-lock`.
+```
+
+New:
+
+```text
+   never a status report. The wall exercise comes first when a part keeps
+   failing the same way, and when a discard test decides a route. Long and
+   numeric jobs pass `lab_ops.py preflight`; numerics hold `numeric-lock`.
+```
+
+What changes. (1) "Comes first": the exercise runs before the next attempt on the blocked part, so before a new long author run. (2) A second trigger: a route choice that rests on a discard test. (3) Removed, to stay inside the budget: "a map of attacks with nothing tried is not a result". That rule stays in the skill ("A long map of possible attacks with nothing tried is not success. Say so") and in the sentence before it in step 3 ("never a status report"). Lines: 150 before, 150 after; widest prose line 80, as before.
+
+### 4.2 E2: `docs/ai_methodology/procedures/research.md`, step references, L147 (relation to attempts, races and panels)
+
+Old (one table row):
+
+```text
+| 3 | `long-running-execution.md`, Lab Operation; `../../exercise/SKILL.md`; `DISCOVERY.md`, Deep Work Rules | Units, leases, handover, disagreement; the wall exercise; fan-out when stuck |
+```
+
+New (one table row):
+
+```text
+| 3 | `long-running-execution.md`, Lab Operation; `../../exercise/SKILL.md`; `DISCOVERY.md`, Deep Work Rules | Units, leases, handover, disagreement; the wall exercise, run before any further long attempt on a blocked part (it audits the lane's assumptions and discard tests; its work items brief the next attempt, race or panel); fan-out when stuck |
+```
+
+Optional, for truth after the skill is replaced (L138-141; 4 lines before, 4 after):
+
+Old:
+
+```text
+say so. All predate this file: a loop-pack file they name is now the part file,
+and `RULES.md` wins any difference, status words too.
+```
+
+New:
+
+```text
+say so. All but `exercise/SKILL.md` predate this file: a loop-pack file they
+name is now the part file, and `RULES.md` wins any difference, status words too.
+```
+
+### 4.3 E3: `.claude/commands/first-principles.md`, section "If the Derivation Blocks", after L96 (relation to first-principles)
+
+Old (the end of the paragraph, L95-96):
+
+```text
+closed route only with a concrete changed mechanism, scope, premise, or
+counterexample that addresses the original proof.
+```
+
+New:
+
+```text
+closed route only with a concrete changed mechanism, scope, premise, or
+counterexample that addresses the original proof.
+
+When a second route stops at the same wall, run `/exercise` on that wall
+before a third route. Its inventory starts from this file's premise ledger.
+It lists the assumptions behind the target and behind the routes, and it
+audits the reasons for which earlier routes were set aside. A route that
+survives it comes back here as a new derivation.
+```
+
+Six lines added (168 to 174). The "Allowed Starting Points" section, which holds axiom text, and the `/no-go-gate` sentence are not touched. The other direction of the relation is in the skill, section "Relation to other procedures".
+
+### 4.4 E4: `docs/ai_methodology/SCIENCE_WORKFLOW.md`, table "Where each section went", after L27 (pointer only; optional)
+
+Old:
+
+```text
+| Section 6, stages and authority | `RULES.md` section 4; `PROCEDURES.md` |
+```
+
+New:
+
+```text
+| Section 6, stages and authority | `RULES.md` section 4; `PROCEDURES.md` |
+| Section 6, "Skills by job", the exercise | `procedures/research.md` step 3 (when it runs); `skills/exercise/SKILL.md` (how) |
+```
+
+Why this row and no more: the older file named the exercise once, in the "Skills by job" line of its Section 6 (this checkout, `docs/ai_methodology/SCIENCE_WORKFLOW.md` L130-131). The map resolves old references; this row resolves that one. It states no rule.
+
+### 4.5 E5: `docs/ai_methodology/PROCEDURES.md`, L27-28 (optional; for truth after the skill is replaced)
+
+Old:
+
+```text
+A skill's own `SKILL.md` entry file is superseded by the procedure below. It
+stays in place, unedited, because tooling still reads it.
+```
+
+New:
+
+```text
+A skill's own `SKILL.md` entry file is superseded by the procedure below. It
+stays in place, unedited, because tooling still reads it. One exception:
+`skills/exercise/SKILL.md` was revised after the procedures and is current.
+```
+
+One line added (48 to 49). Without it, "unedited" is false for one skill. The lead may read "unedited" as a rule against this whole item; then the owner's request (row 721) is the override, and the PR should say so.
+
+### 4.6 What `RULES.md` section 7 asks of a process change
+
+"Each change states the defect, a realistic case it decides differently, how it will be measured, and the result that reverts it." Text for the pull request:
+
+- **Defect.** The lane discarded tools with two tests in a wording that is false (`library/gap-crux-fp.md` L274-276, checked in row 716), and three of 22 verdicts were too strong (L309). v1 of the skill has no step that audits a lane's filters, no mark on what is known, and no rule for the word "new"; the run of row 712 marked as new a statement of row 700 (`library/gap-crux-fp-check.md` L126-139). The procedure names no time for the exercise. In this lane two long author runs (rows 697, 708) came before it; I cannot say that an earlier exercise would have changed them.
+- **A case it decides differently.** A tool is proposed, and a digest says "it also holds for U(1)". Before: set aside. After: step 6c asks for a model in the tool's class where its hypothesis holds and the needed statement fails; with none, the tool stays, with the range where the test binds. Second case: a part has failed the same way twice and a lead wants another long author run. Before: launch. After: the exercise runs first, and its work items brief the run.
+- **Measure.** For each run of the exercise, from its file and its check record: the number of discard tests or verdicts corrected; the number of its statements that a check finds right, right after correction, and wrong; the number of "new" marks that a check finds wrong (the aim is zero); its cost; and whether the next long run on that part was changed or cancelled by it.
+- **Revert.** If three runs in a row correct no filter and give no statement on the path of their target, revert E1 to the old sentence and keep the skill as an option the lead may choose. If a check again finds a wrong "new" mark in a run that followed step 5, step 5 has failed: fix that step before the next run.
+
+Not proposed: a new row in `SETTINGS.md`. Its method defaults are the owner's ("Only the owner changes them"), and E1 already carries the timing.

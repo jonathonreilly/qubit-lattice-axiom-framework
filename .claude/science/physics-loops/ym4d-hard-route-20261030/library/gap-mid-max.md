@@ -63,7 +63,7 @@ A second remark, on K7. It is the sharpest test, and I use it as test (iv) next 
 **C-C. Flux sectors (lead (b)).**
 
 - Identity FL (Section 6, PROVED from (TM-c)): with S_0 the thermal sum of the sector of zero electric flux and U := (1/8) sum over k in Z_2^3, k not 0, of (1 - Z[k]/Z), where Z[k] = Tr(T^t C^k): 1 + S = (1 + S_0)/(1 - U). So the seed S <= t holds if and only if (1 + S_0) <= (1 + t)(1 - U).
-- (MF) at one box: U <= t/2 (the twists in the three time planes cost almost nothing), together with (S_0): S_0 <= t/3.
+- (MF) at one box: U <= t/3 (the twists in the three time planes cost almost nothing), together with (S_0): S_0 <= t/3. For t <= 1 the two give S <= t.
 - (i) Fact T of row 697 (the twist has zero classical cost for SU(2)). (ii) U(1): the Z_2 twist costs beta pi^2 times a ratio of sides at Gaussian order, so U stays of order one at weak coupling; Z_2 at large beta: U tends to 7/8 while S_0 tends to 0. (iii), (iv): on the first-order line of K7 (MF) can hold and (S_0) fails.
 - Verdict: the seed does not reduce to one part. The two parts are independent in the class (Section 6). (MF) is run 2's (VORT) and row 697's flux half, whose open step is (TUBE'); by rule 0a I do not attack it. Only the identity and the independence are added.
 
@@ -137,7 +137,7 @@ integral of K over [beta_0, beta_1] <= log(a/t_0).
 
 Then S(a; b^3; beta_1) < 5.1 x 10^(-4) < 1/1650 = t(2). So, at beta_1, every periodic cube has a gap, inf over L >= 2b of m(L^3) > 0, and m(L^3) >= 0.06/a = 0.12/b for every integer L >= 32 b.
 
-Proof. Strong coupling: by `gap-seed-sc.md` Theorem 1 (iii), Phi(n; beta_0) <= 0.16 n^4 theta^(4n) for n >= 4. Since F(N^4)/N^4 decreases to f along N = 2^k n, Delta(n^4) = sum over k >= 0 of 16^(-(k+1)) Phi(2^k n) <= 0.01 n^4 sum over k of theta^(4 n 2^k) <= 0.0101 n^4 theta^(4n) (theta^16 <= 2^(-16)). With n = t_0 >= 8 and Proposition Delta: g(t_0; b^3; beta_0) <= 0.0101 b^3 t_0 theta^(4 t_0) <= 0.0101 b^3 t_0 16^(-t_0) <= 0.0101 t_0/b, because 16^(-t_0) <= b^(-4). For b >= 256, t_0/b <= 9/256... more exactly t_0 <= log_2 b + 1 and (log_2 b + 1)/b <= 9/256 < 0.036, so g(t_0; b^3; beta_0) < 3.6 x 10^(-4) (bound not sharp) and in every case below 5.05 x 10^(-4). Transport: E(beta_1) <= a/t_0, so [t_0, t_0 E(beta_1)] lies in [t_0, a], and Theorem TR gives G(t_0 E(beta_1); b^3; beta_1) <= g(t_0; b^3; beta_0). Since a >= t_0 E(beta_1): g(a; b^3; beta_1) < 5.05 x 10^(-4), S < 5.1 x 10^(-4). Gap: by the line "r = 2, two stages" of `gap-seed-shape.md` 1.5, s_1 = S(a; (4a)^3) <= 0.0396, and Theorem SH (ii) for the pair (a, 4a) with K_SH = 22.2 gives m(L^3) >= (1/a)(log(1/(22.2 x 0.0396)) - 0.85 x 2^(-k)) for L >= 2^k 4a. log(1/0.8792) > 0.128, and for k >= 4 the second term is below 0.054. So m(L^3) >= 0.07/a for L >= 64 a = 32 b. QED
+Proof. Strong coupling: by `gap-seed-sc.md` Theorem 1 (iii), Phi(n; beta_0) <= 0.16 n^4 theta^(4n) for n >= 4. Since F(N^4)/N^4 decreases to f along N = 2^k n, Delta(n^4) = sum over k >= 0 of 16^(-(k+1)) Phi(2^k n) <= 0.01 n^4 sum over k of theta^(4 n 2^k) <= 0.0101 n^4 theta^(4n) (theta^16 <= 2^(-16)). With n = t_0 >= 8 and Proposition Delta: g(t_0; b^3; beta_0) <= 0.0101 b^3 t_0 theta^(4 t_0) <= 0.0101 b^3 t_0 16^(-t_0) <= 0.0101 t_0/b, because 16^(-t_0) <= b^(-4). For b >= 256: t_0 <= log_2 b + 1, and (log_2 b + 1)/b is decreasing there, so t_0/b <= 9/256 < 0.036 and g(t_0; b^3; beta_0) < 3.7 x 10^(-4) < 5.05 x 10^(-4). Transport: E(beta_1) <= a/t_0, so [t_0, t_0 E(beta_1)] lies in [t_0, a], and Theorem TR gives G(t_0 E(beta_1); b^3; beta_1) <= g(t_0; b^3; beta_0). Since a >= t_0 E(beta_1): g(a; b^3; beta_1) < 5.05 x 10^(-4), S < 5.1 x 10^(-4). Gap: by the line "r = 2, two stages" of `gap-seed-shape.md` 1.5, s_1 = S(a; (4a)^3) <= 0.0396, and Theorem SH (ii) for the pair (a, 4a) with K_SH = 22.2 gives m(L^3) >= (1/a)(log(1/(22.2 x 0.0396)) - 0.85 x 2^(-k)) for L >= 2^k 4a. log(1/0.8792) > 0.128, and for k >= 4 the second term is below 0.054. So m(L^3) >= 0.07/a for L >= 64 a = 32 b. QED
 
 **What the corollary says.** The seed at beta_1 follows from the strong-coupling seed (proved) and one inequality on one cube in which nothing is small: the logarithmic rate K_b of the box b^3 on [beta_0, beta_1] is at most log(b/(2 t_0))/(beta_1 - beta_0). The side b is free. So the mass gap at beta_1 is implied by: K_b grows more slowly than (log b)/(beta_1 - beta_0) along some sequence of sides. The price is the size: b is of the order exp(integral of K). With the GUIDE value K about 3.3 for beta between 2.3 and 2.6 (from the values of a sqrt(sigma) in `prior/gap-seed-size.md`: log(0.29023/0.36778)/0.0728 = -3.25, and -3.41, -3.51, -3.35 on the next three intervals) and K of order 1/(beta log(4/beta)) at small beta (GUIDE, from E = n log(4/beta)), the box at beta = 2.3 would have b of order 10^3 to 10^4 lattice units. The seed box of row 706 has b about 20. So the theorem trades a small box with a small number for a large box with an inequality of order one.
 
@@ -164,3 +164,71 @@ A step is an interval [s, s + delta] of couplings on the box b^3. The inequality
 6 abs(B) (abar_(inf,B) - abar_(t,B)) <= K times the thermal mean of the energy at time t.
 
 Both sides are of the size of the thermal sum, so they are exponentially small in t m. A hand proof cannot estimate each side and compare: it would need each to a relative precision of order one, that is, an absolute precision of order exp(-t m). It needs an identity that produces the ratio. In the continuum that identity is the trace anomaly: the dilation current gives the action deficit of a state at rest as its energy divided by the beta function. The lattice has no dilation. Its substitute is a comparison of the theory at (s, lattice of spacing 1) with the theory at (s', lattice of spacing 2), which is one block step of a renormalization map at a coupling of order one, with the two sides of the comparison equal up to a factor of order one in every level of the box. So lead (e) in the coupling direction returns to lead (a): the one step that is needed is a block step in the middle range with relative errors of order one. No such step is proved anywhere, and I see no way to one by hand. The number of steps is not the difficulty: about seven doublings, or an interval of couplings of length about 2.5.
+
+## 5. Part 2, attempt 2: the scale direction and the first critical coupling (C-B)
+
+### 5.1 Theorem CRIT (PROVED GIVEN Theorem SH, Proposition Delta, and `gap-seed-sc.md` Theorem 1 (iii))
+
+For t' in (0, 1/25] let Sigma(t') be the set of couplings beta > 0 for which there is an integer a >= 3 with S(a; (4a)^3; beta) < t'. Let beta*(t') be the supremum of the beta with (0, beta) inside Sigma(t').
+
+**Theorem CRIT.**
+(a) Sigma(t') is open.
+(b) Sigma(t') contains (0, 1/12800). So beta*(t') >= 1/12800.
+(c) For every beta < beta*(1/25) the cubes at beta have a uniform gap: inf over L >= 4a of m(L^3) > 0, with a the seed size at beta.
+(d) If beta* := beta*(t') is finite, then S(a; (4a)^3; beta*) >= t' for every a >= 3. For t' = 1/25 also Delta(a^4; beta*) > 6.1 x 10^(-4) for every a >= 3.
+(e) Let beta* = beta*(1/25) be finite and t'' < 1/25. If beta_j tends to beta* and a_j are integers with S(a_j; (4a_j)^3; beta_j) < t'', then a_j tends to infinity.
+
+Proof. (a) For a fixed a, S(a; (4a)^3; beta) = Z(a, (4a)^3; beta)/lambda_0^a - 1 is continuous in beta (Lemma 4.1 (a)). Sigma(t') is a union over a of open sets. (b) Let theta = 12800 beta < 1. As in the proof of Corollary TR1, Delta(a^4) <= 0.01 a^4 theta^(4a)/(1 - theta^(4a)) for a >= 4, which tends to 0 as a grows. By Proposition Delta, g(a; (4a)^3) <= 64 Delta(a^4). (c) Theorem SH, line r = 4. (d) Every beta < beta* is in Sigma(t'). If beta* were in Sigma(t'), then by (a) so would be an interval around it, and (0, beta* + eps) would lie in Sigma(t'). The bound on Delta: g(a; (4a)^3) <= 64 Delta(a^4) and g >= log(1.04) > 0.0392. (e) If not, a subsequence has a_j = a fixed, and by continuity S(a; (4a)^3; beta*) <= t'' < 1/25, against (d). QED
+
+The same holds with the shape r = 2 and the threshold 1/1650, or with any finite set of shapes of the table of `gap-seed-shape.md` 1.5.
+
+**What it says.** The middle range, in the coupling, is the question whether beta*(1/25) is finite. If it is, beta* is a critical coupling of the lattice theory in the sense of the class: at beta* every cube of ratio 4 has a thermal sum of at least 1/25, the Casimir free energy of every symmetric torus is above 6.1 x 10^(-4), and the size of the seed box diverges as beta rises to beta*. A first-order point with two phases and a point with an infinite correlation length are both of this kind. So:
+
+(NOCRIT) beta*(1/25) is infinite for the Wilson SU(2) theory.
+
+(NOCRIT) gives the gap of all cubes at every coupling. By Corollary TR1, (VIR-log) for every beta_1 gives (NOCRIT) (the corollary gives S(a; (2a)^3) < 1/1650, and then S(a; (4a)^3) <= 0.0396 < 1/25). By K7 (RECALLED) the same statement is false for the weight with an adjoint term on its first-order line. So (NOCRIT) is a statement about the Wilson weight and not about the group.
+
+### 5.2 (CAS): why it is not attacked
+
+1. (PROVED, Proposition Delta.) In a model of the class with no uniform gap, Delta(a^4) stays above 6.1 x 10^(-4) at every size. The class contains such models (`gap-seed-shape.md` 4.1 and 4.2). So no property of the class gives theta < 1.
+2. (GUIDE.) At the ultraviolet end theta tends to 1. In a small periodic box the flat connections form a set of positive dimension, the integral over them is not Gaussian in every direction, and Delta(a^4) is c_1 log(1/g^2(a)) + c_2 to leading order, with g(a) the running coupling at the size a (RECALLED: Luscher; van Baal; the constants are not computed here). One doubling changes it by about - 2 c_1 b_0 g^2 log 2, which tends to 0 with g. So (CAS) with one theta < 1 can hold only from a size where the coupling is of order one, and M is of order one.
+3. On the interval that is left, theta < 1 is one block step at a coupling of order one with a relative error below one. This is the statement that lead (e) needs (Section 4.5).
+
+So (CAS) has the same strength as the seed and I name no lemma under it. Its exact form in the coupling is (NOCRIT).
+
+## 6. The flux split (C-C): an identity and the independence of the two parts
+
+**Identity FL (PROVED from (TM) and (TM-c)).** Time is direction 0, the box is B, and C_1, C_2, C_3 are the centre flips of (TM-c). They are unitary involutions that commute with T. They commute with each other, because each multiplies by -1 the links of one direction on one plane. For k in Z_2^3 put C^k = C_1^(k_1) C_2^(k_2) C_3^(k_3), Z[k] := Tr(T^t C^k), P_0 := the product of the (1 + C_i)/2 = (1/8) sum over k of C^k, the projection on the sector of zero electric flux. Let 1 + S_0 := Tr(T^t P_0)/lambda_0^t and U := Tr(T^t (1 - P_0))/Tr T^t = (1/8) sum over k not 0 of (1 - Z[k]/Z). Then
+
+S_0 >= 0, 0 <= U <= S/(1 + S) < 1, and 1 + S = (1 + S_0)/(1 - U).
+
+Proof. The top eigenvector is strictly positive, each C_i maps positive functions to positive functions and commutes with T, and the top eigenvalue is simple. So the top eigenvector is fixed by each C_i and lies in the range of P_0. P_0 commutes with T, so Tr(T^t P_0) is the sum of lambda_i^t over an eigenbasis of the range of P_0, which contains the vacuum: S_0 >= 0. Tr(T^t (1 - P_0)) is a sum of lambda_i^t over excited states only, so it is at most lambda_0^t S. Then Tr(T^t P_0) = Tr T^t (1 - U). QED
+
+For k a unit vector, Z[k] is the partition function with one twisted stack in the plane (0, i), by (TM-c). For the other k it is defined by the trace; I did not need its form as an integral.
+
+**Consequences.** (1) S <= t if and only if (1 + S_0) <= (1 + t)(1 - U). (2) If U <= t/3 and S_0 <= t/3 with t <= 1, then S <= t. (3) The seed forces U <= t/(1 + t): each of the three single twists has 1 - Z[k]/Z <= 8t.
+
+**The two parts are independent in the class.**
+- U small, S_0 not small (PROVED GIVEN the strong-coupling seed and `gap-seed-shape.md` 4.1): take the product of the Wilson SU(2) theory at a small coupling with an independent four-dimensional Ising model at large J on the sites. The partition function is the product, so it is symmetric; the transfer operator is the tensor product, positive, trace class, with a simple top eigenvalue; the centre flips act on the gauge factor only. Then U is the U of the gauge factor, which is at most S_gauge and small, and S_0 >= S_Ising, which tends to 1.
+- S_0 small, U not small (RECALLED): the Z_2 theory at large beta, where U tends to 7/8.
+So neither part gives the other without the group and the weight. The seed is both.
+
+**Remark Y (a sketch; not proved here).** One could ask for a theorem like Theorem S for the sector of zero flux alone. The crossed direction does not allow it. Seen from a space direction, the projection on zero electric flux of the first direction is a sum over the two values of a magnetic twist of the slice. So the function to which Lemma E would apply is a trace of powers of a direct sum of transfer operators of twisted slices (given the transfer operator for twisted weights, Lemma 1.1 of `gap-seed-check.md`, and a form of (TM-c) for several stacks, which I did not write out). Its top eigenvalue is that of the untwisted slice. When the twist costs nothing, the twisted slices have top eigenvalues almost equal to it, and the thermal sum of the direct sum is near the number of twisted sectors, up to 7. This is 't Hooft's duality at a finite size: where electric flux is heavy, magnetic flux is light, and a doubling lemma for one sector pays for the other.
+
+By rule 0a the flux half is not attacked here: its open step is (TUBE') of row 697, and (VORT) of run 2.
+
+## 7. Part 2, attempt 3: curvature at a block scale (C-D), ended by a counterexample
+
+**Setting.** Lambda is the set of links of a torus with all sides at least 3. M = SU(2)^Lambda with a product of bi-invariant metrics, one positive multiple for each link. For a tangent vector X = i omega (n . sigma), n a unit vector, at the identity of one factor, exp(sX) has trace 2 cos(s omega). With the metric abs(X)^2 = -2 tr(X^2) = 4 omega^2 the group is the sphere of radius 2 and Ric = (1/2) times the metric. The measure has the density exp(-Psi), Psi = -beta sum over plaquettes of x_p + W, x_p = (1/2) tr U_p, where W is the logarithm of a blocking weight, or 0.
+
+**Proposition BE (PROVED).** Let l_0 be a link and U# the configuration with U_(l_0) = -1 and U_l = 1 for every other link. For a tangent vector X at the link l_0:
+
+(Ric + Hess Psi)(X, X) at U# = (1/2 - 3 beta/2) abs(X)^2 + Hess W(X, X).
+
+The value does not depend on the multiples of the metric. So if W does not depend on U_(l_0), the Bakry-Emery tensor of the measure has a negative direction at U# for every beta > 1/3.
+
+Proof. The six plaquettes through l_0 are distinct (sides at least 3) and each contains l_0 once. At U# each of them has U_p = -1, a central element. Move U_(l_0) to exp(sX) U_(l_0) (or U_(l_0) exp(sX), according to the orientation; the result is the same because -1 is central and the trace is a class function). Then x_p(s) = (1/2) tr(-exp(sX)) = -cos(s omega), and the second derivative of -beta x_p at s = 0 is -beta omega^2 = -(beta/4) abs(X)^2. The curve s -> exp(sX) U_(l_0) is a geodesic of every bi-invariant metric, so the second derivative along it is the Hessian. Six plaquettes give -(3 beta/2) abs(X)^2. The plaquettes that do not contain l_0 do not move. The Ricci tensor of a product is the sum of the Ricci tensors of the factors, and the Ricci tensor of a factor does not change when its metric is multiplied by a constant. QED
+
+**What it kills.** (BE-block) as stated in C-D, for every blocking whose weight leaves one link free, for example a decimation. For a blocking whose weight depends on every link, the proposition gives the price: Hess W must be at least (3 beta/2 - 1/2 + rho) on every link direction at the configurations U#. Then the blocking weight pins every link to within about beta^(-1/2), the conditional law is almost a point, and the law of the block variables is the full problem again. The same computation for U(1) gives -6 beta (d theta)^2 with no Ricci term, and for the weight of K7 it gives a number of the same size. So the positive curvature of SU(2) is worth the range beta < 1/3 of the pointwise criterion, at every scale, and nothing in the middle range. U# has a small probability at large beta; a criterion that weighs configurations by their probability is a mixing hypothesis of the kind of (W) (row 691) and is covered there.
+
+Test: (i) the group enters through Ric = 1/2; (ii) for U(1) the criterion fails at every beta > 0, and U(1) has a gap at small beta all the same, so the criterion is not the reason for a gap; (iii) the line that breaks is the lower bound on the Hessian; (iv) K7: the same Hessian bound.

@@ -270,6 +270,82 @@ class StandingTest(unittest.TestCase):
         self.assertIn("open obligations: 2", text)
         self.assertIn("(a circle of reads)", text)
 
+    def test_each_invalid_field_is_rejected_by_name(self):
+        self.part("- argued: gamma -> x")
+        cases = (
+            ("commit: " + "0" * 40, "commit: abc", "commit is not 40 hex digits"),
+            ("verdict: right", "verdict: maybe", "verdict is not right, wrong or undecided"),
+            ("checker: p/m/e s2", "checker: nobody", "checker is not"),
+            ("author: p/m/e s1", "author: p/m s1", "author is not"),
+            ("failure: none", "failure: step notes/gamma.md:1",
+             "only a wrong verdict names a failure"),
+            ("verdict: right", "verdict: wrong", "a wrong verdict names"),
+            ("verdict: right", "verdict: wrong\nverdict: right", "verdict appears twice"),
+            ("text:", "raw: x\ntext:", "unknown line: raw: x"),
+            ("statement: gamma", "statement: gamma two", "statement is not a name"),
+        )
+        for old, new, reason in cases:
+            with self.subTest(new=new):
+                record = write_check(self.folder, "gamma-1.md", "gamma", "right",
+                                     ("notes/gamma.md",))
+                self.assertIn("checked-given 0 checked 1", self.status())
+                body = record.read_text()
+                self.assertEqual(body.count(old), 1)
+                record.write_text(body.replace(old, new), encoding="utf-8")
+                text = self.status()
+                self.assertIn(f"rejected check record gamma-1.md: {reason}", text)
+                self.assertIn("checked-given 0 checked 0", text)
+
+    def test_a_rejected_wrong_record_is_cleared_by_an_answer_or_a_new_text(self):
+        folder = self.folder
+        self.part("- argued: epsilon -> x")
+        write_check(folder, "epsilon-1.md", "epsilon", "right", ("notes/epsilon.md",))
+        write_check(folder, "epsilon-2.md", "epsilon", "wrong", ("notes/epsilon.md",),
+                    failure="counterexample notes/epsilon.md:1", checker="p/m/e s3",
+                    answers="epsilon-2.md")
+        self.assertIn("argued 1 checked-given 0 checked 0", self.status())
+        # A counting record that answers the rejected one clears it.
+        write_check(folder, "epsilon-3.md", "epsilon", "right", ("notes/epsilon.md",),
+                    checker="p/m/e s4", answers="epsilon-2.md")
+        self.assertIn("argued 0 checked-given 0 checked 1", self.status())
+        # So does a new text: the rejected record is then about an earlier one.
+        (folder / "checks" / "epsilon-3.md").unlink()
+        (folder / "notes" / "epsilon.md").write_text("epsilon, revised\n", encoding="utf-8")
+        write_check(folder, "epsilon-4.md", "epsilon", "right", ("notes/epsilon.md",),
+                    checker="p/m/e s5")
+        text = self.status()
+        self.assertIn("argued 0 checked-given 0 checked 1", text)
+        self.assertNotIn("so not checked: epsilon", text)
+
+    def test_a_record_outside_an_answer_cycle_can_still_answer_into_it(self):
+        folder = self.folder
+        self.part("- argued: delta -> x")
+        write_check(folder, "delta-1.md", "delta", "right", ("notes/delta.md",),
+                    answers="delta-2.md")
+        write_check(folder, "delta-2.md", "delta", "wrong", ("notes/delta.md",),
+                    failure="counterexample notes/delta.md:1", checker="p/m/e s3",
+                    answers="delta-1.md")
+        self.assertIn("disputed, so argued: delta", self.status())
+        write_check(folder, "delta-3.md", "delta", "right", ("notes/delta.md",),
+                    checker="p/m/e s4", answers="delta-2.md")
+        self.assertIn("argued 0 checked-given 0 checked 1", self.status())
+
+    def test_a_typed_legacy_label_reopens_on_a_stale_or_rejected_record(self):
+        folder = self.folder
+        self.part("- discharged: gamma -> x", "- discharged: zeta -> x")
+        write_check(folder, "gamma-1.md", "gamma", "right", ("notes/gamma.md",))
+        self.assertIn("open obligations: 0", self.status())
+        (folder / "notes" / "gamma.md").write_text("gamma, revised\n", encoding="utf-8")
+        text = self.status()
+        self.assertIn("typed discharged, but 1 check record(s) are about an earlier text: "
+                      "gamma", text)
+        self.assertIn("open obligations: 1", text)
+        write_check(folder, "zeta-1.md", "zeta", "wrong", ("notes/zeta.md",),
+                    failure="counterexample notes/zeta.md:1", answers="zeta-1.md")
+        text = self.status()
+        self.assertIn("typed discharged, but a rejected wrong record names it: zeta", text)
+        self.assertIn("open obligations: 2", text)
+
     def test_a_repeated_heading_names_no_text(self):
         note = self.folder / "notes" / "twice.md"
         note.write_text("## Same\nfirst\n\n## Same\nsecond\n", encoding="utf-8")
@@ -418,6 +494,7 @@ class DoctorTest(unittest.TestCase):
 
     def test_step_references_count_as_rules_and_raw_captures_do_not(self):
         skill = "docs/ai_methodology/skills/x/SKILL.md"
+        command = ".claude/commands/x.md"
         raw = "docs/ai_methodology/raw/capture.md"
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp).resolve()
@@ -427,7 +504,7 @@ class DoctorTest(unittest.TestCase):
             seed = root / "seed"
             subprocess.run(["git", "clone", "-q", str(remote), str(seed)],
                            check=True, capture_output=True)
-            for rel in (skill, raw):
+            for rel in (skill, command, raw):
                 (seed / rel).parent.mkdir(parents=True)
                 (seed / rel).write_text("one\n", encoding="utf-8")
             git("add", ".", cwd=seed)
@@ -451,6 +528,12 @@ class DoctorTest(unittest.TestCase):
                 self.assertEqual(code, 1)
                 self.assertIn(f"differs: {skill}", text)
                 self.assertNotIn(raw, text)
+                self.assertNotIn(command, text)
+
+                (seed / command).write_text("two\n", encoding="utf-8")
+                git("commit", "-q", "-am", "command", cwd=seed)
+                git("push", "-q", "origin", "HEAD:main", cwd=seed)
+                self.assertIn(f"differs: {command}", call("doctor")[1])
             finally:
                 os.chdir(cwd)
 

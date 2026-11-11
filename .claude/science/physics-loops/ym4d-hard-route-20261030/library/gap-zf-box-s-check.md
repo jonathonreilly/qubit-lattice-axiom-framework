@@ -5,6 +5,8 @@ lease_until: 2026-11-11T17:07Z
 
 Provenance: Claude Opus 5.5, effort high, Mac mini worker 2, branch claude/ym4d-hard-route at 332192a46. One reading by one model; not an audit. The checked text was written by Claude Fable 5.2 (row 680); this checker wrote none of it. Same vendor, different model: not an independent check in the sense of the working rules.
 
+Status: complete. Twelve verdicts (table at the end): no FAILS; points 2, 4, 5, 6, 8, 9, 10 HOLD; points 1, 3, 11, 12 and Proposition D (point 7) HOLD AFTER CORRECTION, none of the corrections changes a conclusion. (FD) is rebuilt by hand in Point 5.
+
 ## Repo search
 
 - No earlier check of `library/gap-zf-box-s.md`: `grep -rl gap-zf-box-s library/` gives only the file itself, `gap-skeleton-final.md` and `gap-skeleton-max-b.md` (references, not checks); `library/open-registry.md` has no row for it.
@@ -157,4 +159,60 @@ Conclusion: no counterexample; Theorem V HOLDS as stated.
 - Theorem V on D_X (bounded, connected, contains the closed disc |beta| <= r_0, r_0 <= R/4), then Theorem HM-s (for X >= X_0, beta in [beta_1, X - s]) and (2L): m_B(beta) >= kappa_0 omega_{D_X}(beta) >= kappa_0 (eps/C_2) a(beta). Every real beta >= beta_1 lies in [beta_1, X - s] for X large. eps depends on (c, p, r_0, w_0, beta_1) only; kappa_0 and C_2 do not depend on B. HOLDS.
 - Neither Theorem V nor Theorem HM-s uses the Lipschitz constant of D_X, so Corollary 5'' does not need (B0) of Point 3. It does need max(w_0, 5 r_0/4) < pi/(2c) ("as in Section 2"); for SU(2), pi/(2 c_a) = 0.58 > 1/2 >= w_0.
 - The Note (only (DOM_B) on an open set containing D'_X intersected with {Re beta <= beta_1} is needed, if the crux is proved as dominance) is right: Theorem V needs (DOM_B) on D'_X and nothing else about the tube.
+
+## Point 10. Example 3.8. HOLDS (one note on where the zeros sit)
+
+- Family. T(beta) = diag(1, e^{-F}, e^{-F}), F = e^{-phi}. On S(x_*), arg F = -Im phi in (-pi/2, pi/2), so Re F > 0, (DOM) holds, gap Re F. Tr T^k = 1 + 2 e^{-kF} = 0 iff kF = log 2 + i pi(2j + 1), j in Z. HOLDS.
+- Contraction. Phi(beta) = (zeta + p Log beta)/c on the closed half-plane {Re beta >= xi/c}, xi >= c(x_* + 1): there |beta| >= x_* + 1 >= 2, so Re Phi = (xi + p log|beta|)/c >= xi/c; and |Phi(b) - Phi(b')| <= (p/c) sup|1/beta| |b - b'| <= (p/(c(x_* + 1))) |b - b'| <= (1/4)|b - b'| (segments stay in the half-plane, x_* >= 4p/c). Banach: a unique fixed point, phi(beta) = zeta. Im phi(beta) = -alpha, |alpha| < pi/2, so beta in S(x_*) by (F2). HOLDS.
+- Upper bound on Re beta. |beta| <= Re beta + |Im beta| <= Re beta + W, so xi = c Re beta - p log|beta| >= c Re beta - p log(Re beta + W), and the right side is increasing (derivative c - p/(Re beta + W) > 0). So xi <= c X_1 - p log(X_1 + W) gives Re beta <= X_1. HOLDS.
+- Count of the indices j. zeta = -Log(t_j/k): xi = log(k/|t_j|), alpha = arg t_j in (0, pi/2) for j >= 0; F(beta) = e^{-zeta} = t_j/k. The two conditions are k e^{-c X_1}(X_1 + W)^p <= |t_j| <= k e^{-c(x_* + 1)}. For X_1 large, e^{-c X_1}(X_1 + W)^p < e^{-c(x_* + 1)}, so the interval has length (e^{-c(x_*+1)} - e^{-cX_1}(X_1 + W)^p) k, linear in k. |t_j| lies in [pi(2j + 1), pi(2j + 1) + log 2], so consecutive |t_j| differ by at most 2 pi + log 2. Once k e^{-c(x_*+1)} >= |t_0| and the length exceeds 2 pi + log 2, some j fits; the number of such j grows linearly in k. HOLDS.
+- Note (where the zeros sit). arg t_j >= arctan(pi/log 2) = 1.354 > 1.35, so every zero of this family has 1.354 <= |Im phi| < pi/2: all zeros lie in the band next to the side curves, and none lies in {|Im phi| <= 1.35}. This agrees with Lemma E (no zeros for large k on compact subsets of the dominance region). The file's "distance of order 1/(k|F(beta)|) from a side curve" is right: in the phi-coordinate the distance is pi/2 - arg t_j = arctan((log 2)/(pi(2j + 1))) <= (log 2)/(pi(2j + 1)) <= 1.23 (log 2)/|t_j| = 1.23 (log 2)/(k|F|) (using |t_j| <= pi(2j + 1)(1 + (log 2)/pi)), and |phi' - c| <= c/4 converts it to the beta-plane up to a factor in [4/(5c), 4/(3c)].
+- Note (the region S(beta_1)). The zeros found have Re beta >= x_* + 1. To place them in the brief's region S(beta_1), run the same proof with x_* + 1 replaced by beta_1 + 1 (only xi >= c(x_* + 1) is used; any larger lower bound works). No change to the conclusion.
+- Consequence 1, against the brief (`library/gap-skeleton-max-b.md` 545-548, Item 2 (ii)): the brief asks to "reduce (ZF_B-s) to" (CP), with (ZF_B-s) on the region of part (i), "between the curves on which the continuation of a(beta) is imaginary". Take T_{B_n}(beta) := diag(1, e^{-F}, e^{-F}) for every n. This is exact scaling in the sense of (SCAL_B) with I = {1}, e_1 = 1, eta = 0 (levels F = F e_1(nF)), and (CP) holds: Re(e^{-i theta}) = cos theta > 0. Yet Tr T^k has zeros in that region for every large k. So the implication "scaling + (CP) => (ZF_B-s) on the region up to the side curves, for k >= k_0" is false. This is the brief's own stop clause "a counterexample to the reduction", and the file says rightly that it is an abstract family, not the Wilson theory. HOLDS.
+- Consequence 2 is labelled an expectation. Its arithmetic: w^3 + w^2 + 1 has the real root w = -1.4656 (check: -3.148 + 2.148 + 1 = 0.000) and the product of the roots is -1, so the complex pair has modulus 1.4656^{-1/2} = 0.826 < 1, i.e. Re t > 0. HOLDS as arithmetic; the claim about the lattice theory stays an expectation.
+
+## Point 11. Lemma U, Theorem R and its converse. HOLDS (one reading fixed in the converse)
+
+**Lemma U.**
+- (a) P convex, Re phi' >= 3c/4 > 0, so phi(b) - phi(a) = (b - a) int_0^1 phi'(a + t(b - a)) dt != 0 for a != b. F(beta) = F(beta') on S(x_*) gives phi(beta) - phi(beta') in 2 pi i Z with |Im| < pi, so 0. HOLDS.
+- (b) zeta = -Log q = xi - i alpha with xi = -log|q| > xi_* = c(x_* + 1) and alpha = arg q in (-pi/2, pi/2); the contraction of Point 10 gives beta with phi(beta) = zeta, Re beta >= xi/c > x_* + 1, |Im phi| < pi/2, F(beta) = q; uniqueness from (a). HOLDS.
+- The map beta -> l = n F(beta) from S^0 onto the half-disc {Re l > 0, |l| < n q_*}: injective (a), into (Re F > 0 on S, |F| < q_* on S^0), onto (b). arg l = -Im phi. HOLDS. For admissible psi: Re psi' >= 3c/4, same argument for (a). HOLDS.
+
+**Theorem R.**
+- beta in S_psi(beta_1) iff |Im psi(beta)| < pi/2 (F2). With theta = Im psi(beta): l = n e^{-psi} = |l| e^{-i theta}, F^ e_i(l) = (l/n) e_i(l), so Re(F^ e_i(l)) = (|l|/n) Re(e^{-i theta} e_i(|l| e^{-i theta})) > 0 by (CP). (S2) with 1 - eta > 0 gives -log|lambda/lambda_0| > 0, i.e. |lambda| < |lambda_0|, for every nonzero eigenvalue lambda != lambda_0; (S1) makes lambda_0 simple; the rest of the spectrum of the compact operator is at most {0}; the nonzero spectrum is discrete, so the maximum in rho is attained and < 1. (DOM) holds. HOLDS.
+- Second part. (D_X^psi)' intersected with {Re beta > beta_1} lies in S_psi(beta_1) (height <= Y_psi); the rest is covered by the assumed open set. So (DOM_{B_n}) holds on (D_X^psi)'. Theorem V (r_0 <= R/4), Theorem HM-s' and (2L_psi) give m >= kappa_0 eps e^{-psi} >= (kappa_0 eps/C_2) a on [beta_1, X - s]; X -> infinity. HOLDS (with the parameter conditions of HM-s': max(w_0, 5 r_0/4) < 2 pi/(5c), beta_1 >= x_*).
+- Converse. "Surjective assignment" must be read pointwise: for every n >= n_min, every beta in S_psi(beta_1) and every i in I there is a nonzero eigenvalue lambda != lambda_0 with -log|lambda/lambda_0| = Re(F^ e_i(n F^)). Under that reading: (DOM) gives Re(F^ e_i(l)) > 0 for every i, which is (CP) at l = n F^(beta) and theta = Im psi(beta); and (CP) gives (DOM) by the first part. HOLDS. If the assignment were only surjective over all (n, beta) together, (DOM) at one point would give (CP) only for the indices used there; the file's sentence is right under the pointwise reading, which is the natural one.
+- The file's remarks on what (SCAL_B) contains, about the account: checked by search only. In `YM4_1400.tex`, "free boundary" occurs only for internal bonds of an RG construction (62660-63040), and the account says at 126124: "No spectral gap above the invariant subspace has been proved". No hit for a spatial box with free walls or for convergence of spectra. A search that finds nothing does not prove absence; it agrees with the file.
+
+## Point 12. Lemma 2L and its one-sided form. HOLDS AFTER CORRECTION (one implicit condition made explicit)
+
+- Missing condition. The proof takes logarithms of x_k and bounds sums by 1/x_min with x_min = g^{-2} + B_sharp - 2 c_0. It needs **x_min > 0, i.e. g^{-2} + B_sharp > 2 c_0**. True for the account's small reference coupling g; add it to the hypotheses of Lemma 2L and of its one-sided form.
+- x_min < x_K <= g^{-2} + B_sharp: x_{K-1} > g^{-2} + B_sharp (first passage) and b_K <= 2 c_0. HOLDS.
+- Summation: beta - x_K = sum_k b_k = c_0 K + c_1 sum_k 1/x_{k-1} + sum_k r_k. HOLDS.
+- Per step: b_k/x_{k-1} <= int_{x_k}^{x_{k-1}} dx/x <= b_k/x_k, so 0 <= delta_k <= b_k/x_k - b_k/x_{k-1} = b_k^2/(x_k x_{k-1}) <= 4 c_0^2/(x_k x_{k-1}). HOLDS.
+- Bounded sums: the x_k decrease by at least c_0/2 and stay above x_min, so sum 1/(x_k x_{k-1}) <= sum 1/x_k^2 <= sum_{m>=0} (x_min + m c_0/2)^{-2} <= 1/x_min^2 + (2/c_0)/x_min, uniformly in beta. sum |b_k - c_0|/x_{k-1} <= |c_1| sum 1/x_{k-1}^2 + R_Sigma/x_min. HOLDS.
+- Conclusion: c_0 sum 1/x_{k-1} = log(beta/x_K) + O(1) = log beta + O(1); then c_0 K = beta - (c_1/c_0) log beta + O(1), and a = L^{-K} = beta^p e^{-c beta} e^{O(1)} with c = (log L)/c_0, p = c_1 (log L)/c_0^2. With c_0 = 11 N^2 log L/(12 pi^2), c = 12 pi^2/(11 N^2). HOLDS.
+- One-sided form. (c_0 - b_k)_+ <= C_3/x_{k-1} + |r_k| gives sum (c_0 - b_k)_+/x_{k-1} <= C_3 sum 1/x_{k-1}^2 + R_Sigma/x_min = O(1). Since delta_k >= 0: c_0 sum 1/x_{k-1} = log(beta/x_K) - sum (b_k - c_0)/x_{k-1} - sum delta_k <= log beta - log x_min + O(1). The upper bound on b_k gives beta - x_K <= c_0 K + c_1 sum 1/x_{k-1} + R_Sigma, and c_1 >= 0 lets the upper bound on sum 1/x_{k-1} enter: c_0 K >= beta - (c_1/c_0) log beta - O(1). So a(beta) <= C' beta^p e^{-c beta}, which is (2L). HOLDS. (c_1 >= 0 is no loss: if the upper bound holds with c_1 < 0 it holds with c_1 = 0, giving (2L) with p = 0, hence with every p >= 0.)
+- The file's standing paragraph (B3's f_j bound is not summable; (B3+) is beyond the account) agrees with Point 1.
+
+## Summary table
+
+| # | Statement(s) | Verdict | Correction or note |
+|---|---|---|---|
+| 1 | Claims about the account (Sections 1, 5) | HOLDS AFTER CORRECTION | Line numbers: 1662-1670 (first passage), 1672-1679 (dilation identity), 1755 (clause (a)). "f_j is not summable" should read "the account's bound on f_j is not summable"; the account's own RF27 (83909-83925) gives only Delta_g(s) = O(s^{1/2} polylog s). No two-loop form anywhere (search). |
+| 2 | (F0)-(F4), Lemma A (7 steps) | HOLDS | Cosmetic: strict "pi/(2c) < Y" is "<=" when p = 0; the line "A(xi_0) is in the closure of R" supplied. |
+| 3 | Lemma B, connectedness of D'_X | HOLDS AFTER CORRECTION | tau = median + 2(x - beta_1)_+ has slope 4 where both vary; add (B0): r_0 <= 1 and r_0 + abs(w_0 - 5 r_0/4)/2 <= beta_1 (true for all uses; else Lambda = 4, theta = 1/sqrt 17). D'_X connected: holds. |
+| 4 | Theorem HM-s (steps 1-6), Theorem HM-s' | HOLDS | HM-s does not depend on Lemma B's Lipschitz constant; HM-s' uses only (F0)-(F3), Y <= W, tau(beta_1) < Y(beta_1), e^{-psi~} >= e^{-psi}: confirmed. |
+| 5 | (TM_B-c) (c1)-(c3); (FD) | HOLDS | (FD) stated exactly; the part Lemma G uses rebuilt by hand as (FD') and (FD5) from Riesz theory, no determinant. (TM_B) stands on row 667 (no second-model check yet). |
+| 6 | Lemma G | HOLDS | none |
+| 7 | Proposition C; Proposition D | C HOLDS; D HOLDS AFTER CORRECTION | Step 2 of 3.4 is pointwise at complex beta (Theorem LP and Lemma S are pointwise). Proposition D's statement must be restricted to beta with omega_D(beta) > 0 (all of D' when D' is connected), as its proof already says. |
+| 8 | Lemma V, Theorem V | HOLDS | Own route for diagonal families agrees and shows the constant is sharp; four finite-dimensional attempts to break it fail. |
+| 9 | Lemma E, Corollary 5'' | HOLDS | Does not need (B0); needs max(w_0, 5 r_0/4) < pi/(2c) (true for SU(2)). |
+| 10 | Example 3.8 | HOLDS | All zeros lie in the band 1.354 <= abs(Im phi) < pi/2; for S(beta_1) replace x_* + 1 by beta_1 + 1. Consequence 1 is a counterexample to the brief's reduction "(CP) => (ZF_B-s)" with exact scaling (e = 1, eta = 0). |
+| 11 | Lemma U, Theorem R, converse | HOLDS AFTER CORRECTION | Converse needs "surjective" read pointwise (every index attained at every (n, beta)). |
+| 12 | Lemma 2L, one-sided form | HOLDS AFTER CORRECTION | Add g^{-2} + B_sharp > 2 c_0 (x_min > 0). |
+
+No FAILS. No numeric run was made; every step above is by hand. Independence: the checker is Claude Opus 5.5 and the author Claude Fable 5.2, same vendor; by the working rules this is not an independent check, and (TM_B) (row 667) still needs a check by a model other than Opus 5.5.
+
+**What a consumer may use.** Lemma A and Theorems HM-s / HM-s' as unconditional statements about the explicit lens (with (B0) for its Lipschitz-lens property); Lemma G, (FD'), (FD5), Lemma V and Lemma E as general operator facts; (TM_B-c) and Proposition C given (TM_B) of row 667 and Theorem SC (checked by Codex, row 694); Proposition D given the hypotheses of the corrected Theorem ZB, at points with omega_D > 0; Theorem V given (DOM_B) on D' and r_0 <= 1/51200; Corollary 5'' given (ZF_B-x) on the tube lens, (DOM_B-s) on S(beta_1) and (2L); Theorem R given (SCAL_B), (CP), dominance on the tube and (2L_psi); Lemma 2L given (B3+) (or its one-sided form) and g^{-2} + B_sharp > 2 c_0; Example 3.8 as a refutation of the reduction to (ZF_B-s), which is why node Z7 is replaced by (DOM_B-s). Open and not touched here: (SCAL_B), (CP), (2L) / (B3+), (ZF_B-x) (node Z6), and the second-model check of row 667.
 

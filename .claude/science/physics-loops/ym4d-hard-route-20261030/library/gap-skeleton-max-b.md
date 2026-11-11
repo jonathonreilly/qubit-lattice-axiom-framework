@@ -433,3 +433,94 @@ Results, with the criteria as I wrote them before each run.
 5. Third observable (chosen after 3 and 4; not blind): the number of steps the flow needs to reach strong coupling, on 500 values of Re beta over one period, at fixed heights. At heights 0.10, 0.20, 0.25, 0.26 the count is constant within one step and no point is delayed. At height 0.27 thirty points are delayed by 3 steps or more; at 0.28 and 0.29 some points do not converge at all. The same onset, between 0.26 and 0.27, appears at Re beta in [8, 8.25] and in [12, 12.25].
 What this supports, and what it does not. The onset height 0.265 is 7 percent below the predicted 0.285, it does not depend on Re beta, and it is on the side that the transport theorem requires (a wider zero-free tube would give a lower bound above the true string tension). Thin vertical sets of zeros that reach down to height h make the effective width a little larger than h, which is the sign of the deviation. So the strip law, and the sharpness of the transport bound, are supported in a hierarchical asymptotically free model, at the level of a guide. It is not a test of the lattice theory: a hierarchical model has only discrete scale covariance, and it flows to strong coupling for every group, U(1) included.
 A structural point that the run made clear and that holds for the lattice theory as well: where the renormalisation map is a translation of beta, the zero-free region is invariant under that translation. So in the scaling region it is a strip of constant width, and the width is fixed by one period. This is the reduction used in (ZF-s).
+
+## Part 3. The skeleton
+
+### 3.1 The chosen approach: zeros of the zero-flux torus partition function (A13 with A1)
+
+Labels: PROVED (where, checked by whom), IN LITERATURE (reference, read or not read), IN REPO (row), OPEN, FALSE. "Proved here" means: written in this file by this author run, not checked by another model.
+
+Object (Part 0): the Wilson SU(2) measures on tori at first-passage data (K, beta), their limits at fixed spacing as the torus grows (periodic Gibbs states), and the continuum limits of those (volume-first limits), under the existence estimates of the account.
+
+| Node | Statement | Standing |
+|---|---|---|
+| N0 | The existence estimates of the account (packages A-F, in particular D1) | OPEN in the account ("Those estimates require proofs beyond the finite-dimensional and reference calculations given here", 1921-1925). Our T0 chain works on them. Not a gap node. |
+| N1 (TM) | Transfer operator T of a box: positive, trace class, strictly positive kernel, Z = Tr T^n, simple top eigenvalue | IN REPO: FINISH row 667 (`library/gap-transfer.md`, not opened by me; its check is row 671). IN LITERATURE: Luescher; Osterwalder-Seiler (not read). |
+| N2 | Twisted partition functions: Tr(T^n C^k) = Z_{n,k}; the centre flips C_i commute with T and fix the ground state; contractible-loop observables preserve the zero-flux subspace | IN LITERATURE ('t Hooft, not read). The three facts are one-line checks given N1. OPEN as a written proof (routine). |
+| N3 | Lemma 1 and 1': 1 + S^(0)(n_1) <= exp(Delta^(0)); the gap of the box is at least (1/n_1) log(1/(exp(Delta^(0)) - 1)) | PROVED here (1.5), given N1, N2. Not checked. |
+| N4 | Lemma 2: Delta(n; beta) = 6|n| int_0^beta (abar_inf - abar_n) | PROVED here (1.5). Not checked. Not used by the main line; it is the bridge to the account's observable. |
+| N5 (SC) | For |beta| <= r_0, complex: |log(Z^(0)_n(beta) exp(-n^4 f_inf(beta)))| <= C_0 n^4 exp(-kappa_0 n), kappa_0 = 4 log(1/(c r_0)) | IN LITERATURE as a method (convergent strong-coupling expansion, Osterwalder-Seiler, not read). OPEN as a written proof with the winding count (routine to hard). |
+| N6 | Theorem LP (two constants) and Lemma HM (half-strip) | PROVED here (1.7). Classical. Not checked. |
+| N7 | Theorem Z: no zeros of Z^(0)_n in a tube D implies Delta^(0)_n(beta) <= C(1+X) n^5 exp(-kappa_0 omega_n(beta) n) on the real axis | PROVED here (1.9), given N1, N5, (TUBE). Not checked. |
+| N8 (HM-AF) | For the domain bounded by the curves on which the scale function a(beta) of the account is imaginary: omega(beta) >= eps a(beta) on the real axis | OPEN (complex analysis: comparison of two positive harmonic functions that vanish on the sides; needs the two-loop form of a(beta) from the flow package of the account). Routine to hard. |
+| N9 (ZF-x) | No zeros of Z^(0)_n(beta), n = 2^k n_0, in a complex neighbourhood of [r_0, beta_1] | OPEN. **This is the node where the approach dies if it dies.** Numerical evidence for the full Z on 4^4 and 6^4: arXiv:1005.1993 (read). False for U(1), for Z_2, at fixed short time side, and at the end point of the fundamental-adjoint action. Equivalent real form (CUM-x): the cumulants of the total action satisfy |kappa_k| <= 6 n^4 k! C^k uniformly in n and in beta in [r_0, beta_1]. |
+| N10 (ZF-s) | For Re beta >= beta_1 and tori of physical size at least l_0: no zeros of Z^(0)_n in the asymptotic-freedom tube | OPEN. Reduces by the renormalisation map to one period. Needs N0 at complex coupling (the account has complex sources of fixed radius) and a regularity statement for the infrared theory under complex dilation. Supported by the hierarchical guide (2.4), by the O(N) computation of arXiv:1005.1993, not by any proof. |
+| N11 | Corollary 5: uniform gap m > 0 in physical units for the zero-flux sector of boxes with n a(beta) >= C log(1/a(beta)) | Follows from N3, N7, N8, N9, N10. |
+| N12 | Infinite volume at fixed spacing: every limit of these tori has truncated functions of positive-time observables bounded by ||[F]|| ||[G]|| exp(-m t), with the reflection-positivity norms | IN REPO as an interface: FINISH row 668 (`library/gap-os-equiv.md`, not opened). OPEN for the identification of the limits of tori with the periodic Gibbs states that the account uses for volume-first limits (the account takes "a limit point of the periodically extended torus measures", 1677-1680: same objects). |
+| N13 | Continuum: the bound of N12 is uniform in the cutoff, the norms ||[F]|| are bounded by the account's (c)(2), so every volume-first limit satisfies (GAP-E) with rate m | Routine given N12 and N0 (limits of Laplace transforms of positive measures with support in {0} union [m, infinity)). OPEN as a written proof. |
+| N14 | (GAP) for each canonical component, and the decomposition is trivial (W7) | Follows from N13: a state whose truncated functions tend to zero is ergodic. Routine. OPEN as a written proof. |
+
+The node where the approach dies: N9. If the Wilson SU(2) theory had a transition on (r_0, beta_1), N9 would be false and the gap could still hold on the far side by scaling from another anchor; then this approach proves nothing. If N9 is true, I know no way to prove it by hand.
+
+Results short of the full gap that would be new theorems, in the order of what they need:
+1. N7 with N3 as a theorem on lattice gauge theory at a fixed coupling: "if the zero-flux partition functions of the symmetric tori have no zeros in a complex neighbourhood of [0, beta], the transfer operator has a gap at beta, with a rate given by a harmonic measure". Needs N1, N2, N5 only. Not found in the sources read.
+2. Proposition 3 and (W2): the continuum Hamiltonian in a finite periodic box has discrete spectrum. Needs N0, (V-ext), and the cylinder limit.
+3. The upper bound for the gap, (8 + o(1))/r for r in the window where the coupling is small (1.5). Needs N0 only.
+4. Corollary 5 for a fixed beta_1 beyond the strong-coupling disc: any explicit complex zero-free neighbourhood of an interval [0, beta_1] with beta_1 above 1/12 would give a lattice gap at a coupling where none is proved.
+
+### 3.2 The second approach, which fails in a different way: multiscale functional inequality (A3)
+
+| Node | Statement | Standing |
+|---|---|---|
+| M1 | Ric + beta Hess A >= 2 - 30 beta on (S^3)^{links}; Poincare inequality uniform in the volume for beta < 1/15 | PROVED here (1.4). Not checked. Sharper and with more conclusions: Shen, Zhu, Zhu (abstract read). |
+| M2 | A multiscale criterion: one-sided Hessian bounds on the renormalised actions give a log-Sobolev constant | IN LITERATURE (Bauerschmidt, Bodineau, Dagallier; abstract read). Not for gauge fields with hard block constraints: OPEN. |
+| M3 (HESS) | The bounds of M2 along the flow, with a finite total negative part through the crossing and a positive end value | OPEN. **Dies here**: no bound for effective couplings between about 1/15 and about 40. |
+| M4 | From the four-dimensional Poincare constant rho to decay at rate sqrt(rho), not rho | OPEN (a weighted estimate for the Witten Laplacian on 1-forms). Without it the continuum limit is lost even if M3 holds. |
+| M5 | (GAP) | Would follow from M2-M4 and N12-N14. |
+
+A3 dies by a threshold and a rate. A13 dies by a zero of an entire function. A proof of N9 would not help M3, and a proof of M3 would not give N9. That is the sense in which they fail differently.
+
+### 3.3 If no approach has a real chance: the plain statement
+
+I judge that neither tree can be closed by hand with known structures, because N9 and M3 are both statements about the Wilson theory at couplings of order 1, where no expansion has a small parameter and no exact structure is known that U(1) or the fundamental-adjoint action does not share. The best conditional theorem is Corollary 5. Its one hypothesis beyond the existence estimates and routine nodes is (ZF-L) = N9 with N10: the zero-flux partition functions of physically large symmetric tori have no zeros in the tube D.
+
+## Part 4. The queue: the first six proof items
+
+Each item is a text for a queue row. Paths are relative to the lane folder. "This file" is `library/gap-skeleton-max-b.md`. The account is `YM4_1400.tex` at commit 2bc0658f91d2 (Sussman and Alpoge, with Claude and Codex); credit it where it is used. Matches found by the duplicate check: the transfer operator is row 667 and the decay-spectrum-limit interface is row 668; no item below repeats them.
+
+**Item 1, `gap-zf-x` (the crux; hard proof).**
+Moves: node N9 of this file, the node where the chosen approach dies or lives.
+Statement. Let Z_{n,k}(beta) be the partition function of Wilson SU(2) theory on the symmetric torus n^4 with centre twist k in Z_2^3 in the three planes that contain direction 1 (the sign of beta is reversed on one stack of plaquettes per twisted plane), and Z^(0)_n = (1/8) sum_k Z_{n,k}. Prove or refute: there are r_0 > 0, beta_1 > r_0, an open set U in the complex plane that contains [r_0, beta_1], and n_0, such that Z^(0)_n(beta) != 0 for all beta in U and all n = 2^j n_0. Equivalent real form to prove first (both directions, with constants): (CUM-x) the cumulants of the total twisted-averaged action obey |kappa_k| <= 6 n^4 k! C^k for all k, uniformly in n and in real beta in [r_0, beta_1].
+Inputs. This file: Lemma 1' (1.5), Theorem Z steps 1-3 (1.9), the tests K5-K7 (1.1, 1.2), the Hessian bound of 1.4 (Ric + beta Hess A >= 2 - 30 beta). `library/gap-transfer.md` (row 667) for the transfer operator. arXiv:1005.1993 and arXiv:1112.2734 for the numerical picture (zeros of the full Z at height above 0.15 on 4^4 and 6^4, moving horizontally with the volume).
+Order of attack. (a) Base: (CUM-x) on [0, beta_BE) with beta_BE = 1/15 from the uniform Poincare and log-Sobolev inequality, through tree bounds on truncated functions. (b) Continuation: from decay with length xi at a real coupling, a zero-free disc of radius c xi^{-4}; then Theorem Z on the tube with the real segment as part of the anchor; write the resulting differential inequality for the mass with its constant, and the largest coupling it reaches. (c) Search for an identity for the integrated action insertion in the crossing region that plays the part the dilation identity plays in the scaling region. Any beta_1 above 1/12 is a new lattice theorem.
+Kind: hard proof. Stop rule: a proof with explicit U and beta_1; or a proof that zeros approach the real axis at some coupling in (r_0, beta_1] as n grows; or one named lemma that failed in three ways.
+Follow-up for the likely stop (step (b) reaches zero mass at a finite coupling): `gap-zf-x-2`. Statement: for real beta in the range reached by (b), prove the bound sum over p of <F; a_p> <= C ||F|| with C independent of the correlation length for local F in the zero-flux algebra, or show by an explicit family that it fails. Inputs: step (b) of item 1; the Hellmann-Feynman computation of 1.4. Stop rule as above.
+
+**Item 2, `gap-zf-s` (hard proof, with one named hypothesis allowed).**
+Moves: nodes N10 and N8.
+Statement. (i) Complex first passage: for bare coupling beta = x + i y with |y| <= rho (the source radius of the account), the flow of the account is defined, the scale function a(beta) and the unit-scale effective action are holomorphic in the strip, and the imaginary part of the running inverse coupling differs from y by at most C g^2 at every step down to the unit scale. (ii) Reduction: if the torus partition functions of the unit-scale effective theories with zero flux have no zeros for all complex couplings of one period of the flow inside the tube and all tori of at least l_0 unit cells, then Z^(0)_n(beta) != 0 for all beta in the tube with Re beta >= beta_1 and n |a(Re beta)| >= l_0. (iii) Harmonic measure: for the domain between the curves on which a(beta) is imaginary, omega(beta) >= eps a(beta) for real beta, including the cut at X_n as in 1.9.
+Inputs. The account: first passage and the dilation identity (1658-1671), the constants and the source radius (1744-1746), fixed-torus uniqueness and the bi-Lipschitz map of couplings (1826-1833), the source hypothesis (98395-98440). This file: 1.9, 2.4 (translation invariance of the zero-free region). Kind: hard. Stop rule: proofs of (i)-(iii) with the hypothesis of (ii) stated exactly; or a counterexample to (ii); or a named lemma that failed in three ways.
+Follow-up for the likely stop (the account's flow is written for real beta and fixes discrete choices by the coupling): `gap-zf-s-2`. Statement: the reference run with frozen choices (the run with theta_k = g^{-2} + c_0 (K-k) of the account, line 1667) is holomorphic in beta on |beta - beta_K| <= rho/4 with the bounds of (i). Inputs: the account, 1667 and clause (d).
+
+**Item 3, `gap-zero-transport-check` (check and completion; routine to hard).**
+Moves: nodes N2, N3, N6, N7 from "proved here, not checked" to checked.
+Statement. Check line by line, by a model that did not write them: Lemma 1, Lemma 1', Lemma 2, Proposition 3 (1.5), the Hessian bound (1.4), Theorem LP and Lemma HM (1.7), Theorem Z and Corollary 5 (1.9). Write the three facts of N2 with proofs (the centre flips commute with T, the trace with a flip is the twisted partition function, contractible-loop observables preserve the zero-flux subspace). Verdict per statement.
+Inputs: this file; `library/gap-transfer.md`. Stop rule: a verdict per statement, with each defect's explicit failure.
+Follow-up for the likely stop (the shape condition (TUBE) and the cut at X_n): `gap-comb`. Statement: for a strip of half-width H with thin vertical slits {Re beta = x_j, |Im beta| >= h}, x_{j+1} - x_j = D, the harmonic measure of the left end at a real point x is at least c exp(-pi x / (2 (h + C D))). Inputs: Lemma HM; the hierarchical guide 2.4, where the zeros come in this form.
+
+**Item 4, `gap-sc-complex` (routine to hard).**
+Moves: node N5, the anchor.
+Statement. There are r_0 > 0, c, C_0 such that for all complex beta with |beta| <= r_0 and all n >= 4: f_inf is analytic, and |log( Z^(0)_n(beta) exp(-n^4 f_inf(beta)) )| <= C_0 n^4 (c |beta|)^{4n}. For the sectors with flux: the same with n^2 in the exponent in place of 4n. Give r_0, c, C_0 explicitly.
+Inputs: the polymer expansion (Osterwalder-Seiler, to be rebuilt; credited); this file 1.7 (the count: a winding closed surface has at least 4n plaquettes, a planar one n^2). Stop rule: a proof with explicit constants, or a counterexample to the count.
+
+**Item 5, `gap-finite-volume` (routine to hard).**
+Moves: result 2 of 3.1, the first unconditional-on-the-gap theorem: discrete spectrum in a finite box.
+Statement. Under the source hypothesis of the account at W = 0 and (V-ext) of this file (to be derived from the account's flow package or from our chain), the number of eigenvalues of the lattice Hamiltonian of the box l^3 below E_0 + E is at most exp(l E + C l^4), uniformly in the cutoff (Proposition 3). Then: every continuum limit on the cylinder l^3 x R has a Hamiltonian with discrete spectrum. State what is needed for the cylinder limit to exist.
+Inputs: this file 1.5; the account 98395-98413; `library/gap-os-equiv.md` (row 668) for the passage to limits. Stop rule: a proof, or the exact missing input.
+
+**Item 6, `gap-limit-chain` (routine).**
+Moves: nodes N12-N14.
+Statement. From the conclusion of Corollary 5 (a gap m in physical units, in the zero-flux sector, for boxes with n a(beta) >= C log(1/a(beta))): (i) every limit at fixed spacing of these tori has truncated functions of positive-time contractible-loop observables bounded by the product of the reflection-positivity norms times exp(-m t); (ii) every volume-first limit of the account satisfies (GAP-E) of 0.4 with rate m; (iii) its canonical decomposition has one component.
+Inputs: this file 0.4, 1.9; the account 1673-1680, 1777-1782, 1884-1908; `library/gap-os-equiv.md`. Stop rule: a proof, or the exact step where the periodic Gibbs states of the account differ from limits of the tori.
+
+Guides, not proof items (a calculation may guide or refute). (G1) The two-dimensional theory as a complete known-answer check: prove by hand the bound on I_k/I_1 in the domain of 1.7 and run Theorem Z to the end; the answer must be a string tension of order 1/beta. (G2) Fisher zeros of Z^(0) against those of the full Z on small lattices from the density of states: the prediction of 1.9 is that the zeros of Z^(0) lie higher. (G3) The O(N) model at infinite N on a torus, where the gap is known: check that the transport bound is sharp.

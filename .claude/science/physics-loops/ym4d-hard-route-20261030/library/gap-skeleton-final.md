@@ -79,8 +79,8 @@ Nodes are run 1's N0-N7 (3.1, lines 459-475), renamed T0-T7.
 | Node | Statement (short form; exact form in the source) | State |
 |---|---|---|
 | T0 | The account (form N1 or M1 of the source). | conditional outline; statements read, proofs not read |
-| T1 | Port of the account to T^2_s x T^2_l with twist for s below l_*(g): after K block steps the measure on Lambda(n_0, M) is exp(-beta_* A^tw - W), with W small in a polymer norm that decays in the base, uniformly in K and M. | OPEN (item `gap-twist-port`) |
-| T2 | (W-twist-lat). For each n >= 2 there are beta_0(n), eps_0(n) and an absolute c > 0 with: covariance of gauge-invariant F, G in [-1, 1] over base sets X, Y is at most C(n, beta) size(X) size(Y) exp(-(c/n) dist(X, Y)), for beta >= beta_0(n), all M, and all W with norm at most eps_0(n). | OPEN; run 1: "Looks provable now" (items `gap-twist-chart`, `gap-twist-lat`) |
+| T1 | Port of the account to T^2_s x T^2_l with twist for s below l_*(g): after K block steps the measure on Lambda(n_0, M) is exp(-beta_* A^tw - W), with W small in a polymer norm that decays in the base, uniformly in K and M. | OPEN. Statement made exact and corrected in Section 13.3 (row 684): conditional on the account's inputs and on three estimates for regions that wrap the fibre |
+| T2 | (W-twist-lat). For each n >= 2 there are beta_0(n), eps_0(n) and an absolute c > 0 with: covariance of gauge-invariant F, G in [-1, 1] over base sets X, Y is at most C(n, beta) size(X) size(Y) exp(-(c/n) dist(X, Y)), for beta >= beta_0(n), all M, and all W with norm at most eps_0(n). | OPEN; run 1: "Looks provable now" (items `gap-twist-chart`, `gap-twist-lat`). The chart (CH) is proved and not checked (Section 13.2; row 679). For use after T1 the statement must be made again for the class of Section 13.3 |
 | T3 | Area law for loops in the base. (a) From the gap: Lemma 5 + Lemma 4 + the Tomboulis-Yaffe inequality. (b) Without the gap, at every beta > 0 and n: tension at least c (-log tanh(beta n^2)). | (a) sketch; (b) remark; neither checked (item `gap-flux-identities`) |
 | T4 | (W-twist). For s <= s_0 the continuum limit on R^2 x T^2_s with twist exists along subsequences, with decay exp(-(c/s) d) uniformly in K. So m(s) >= c/s. | OPEN; from T1, T2 and row 668 |
 | **T5** | **(AC'). There is m_0 > 0 such that for every s >= s_0 and every K the theory on R^2 x T^2_s with twist has decay exp(-m_0 d).** Lattice form (AC'-lat): there is beta_1 with inf over n >= 2 of m(beta, n) > 0 for every beta >= beta_1. | **OPEN. Run 1: "The approach dies here."** (item `gap-ac-lat`) |
@@ -103,7 +103,7 @@ Nodes are run 2's N0-N11 (3.1, lines 484-513), renamed Z0-Z11.
 |---|---|---|
 | Z0 | The account's estimates, used through a(beta) and Z9-Z11. | conditional outline |
 | Z1 | (TM_B). The transfer operator T_B of the box is positive, trace class, with a simple largest eigenvalue. | OPEN, routine (row 667's construction with free walls; part of item `gap-zero-transport-check`) |
-| Z2 | (SC_B). abs(log Z(k, B; beta) - (1/q) log Z(q k, B; beta)) <= C_0 size(B) k exp(-kappa_0 k) for abs(beta) <= 2 r_0, k >= 4, q >= 1. | OPEN, routine to hard (item `gap-sc-box`) |
+| Z2 | (SC_B). abs(log Z(k, B; beta) - (1/q) log Z(q k, B; beta)) <= C_0 size(B) k exp(-kappa_0 k) for abs(beta) <= 2 r_0, k >= 4, q >= 1. | PROVED on abs(beta) <= 1/12800, with r_0 = 1/51200, C_0 = 1/100, kappa_0 = 4 log 2 and k >= 3; checked line by line by Codex gpt-6-astra, holds after correction (Section 13.1; rows 683, 694) |
 | Z3 | Theorem LP and Lemma HM. | PROVED-UNCHECKED |
 | Z4 | Theorem ZB. Given Z1, Z2 and (ZF_B) on D: m_B(beta) = log(lambda_0 / lambda_1) >= kappa_0 omega_D(beta) for real beta in D above r_0, independent of the size of B. | PROVED-UNCHECKED given Z1, Z2 |
 | Z5 | (HM). omega_D(beta) >= eps a(beta) for real beta >= beta_1. | OPEN, routine to hard (needs the two-loop a(beta); item `gap-zf-box-s`) |
@@ -284,3 +284,60 @@ Source: `library/gap-zf-box-x.md`, written by Claude Fable 5.2 medium. **It is n
 2. The crux of Route Z is sharper. (ZF_B) above $\beta = 1/10$ needs a zero-free radius that does not shrink with the gap. (HS-sup) is the exact form. This is the first stop on this statement; a second stop sends it back to a max author for a new statement.
 3. Order of work: `gap-ac-lat` (the crux of Route T) runs next. The lead then compares the two cruxes before `gap-zf-box-x-2` is queued.
 4. Section 6 of this file still lists the statements of run 2 as not checked. Row 681 is their check; the table is kept as a record of the state at 2026-11-11 01:40 UTC.
+
+## 13. Results after the second round (2026-11-11)
+
+Three more items ended, and one check. **No mass gap is proved.** The source files win over this summary.
+
+### 13.1 Route Z, node Z2: (SC_B) on the strong-coupling disc (FINISH rows 683, 694)
+
+Source: `library/gap-sc-box.md`, written by Claude Opus 5.5 high. Check: `library/gap-sc-box-check.md`, a line-by-line reading by Codex gpt-6-astra high, which did not write the proof. Verdict: holds after correction. The lead applied the corrections in the source on 2026-11-11.
+
+- Theorem SC. Let B be a finite subset of Z^3 with free walls, k >= 3 and q >= 1. Then Z(k, B; beta) has no zero for abs(beta) <= R = 1/12800, and for abs(beta) < R: abs(log Z(k, B; beta) - (1/q) log Z(qk, B; beta)) <= (size(B) k / 100) (12800 abs(beta))^(4k).
+- So (SC_B) holds in the form that Theorem ZB reads, with r_0 = 1/51200, C_0 = 1/100 and kappa_0 = 4 log 2.
+- The corrections do not change a constant. They are: the case q = 1 of the covering argument, one fixed majorant for the analytic logarithm, the description of the Sussman-Alpoge polymer theorem, and one credit.
+- This is a strong-coupling disc. The check did not cover Theorem ZB, Theorem ZB-chain, (TM_B), or (ZF_B) outside the disc.
+
+### 13.2 Route T, the chart (CH) (FINISH row 679)
+
+Source: `library/gap-twist-chart.md`, written by Claude Fable 5.2 medium. **It is not checked by another model.** The check is FINISH row 695.
+
+- Theorem (CH). Let n >= 2, let B be a rectangle of the base with free base boundary, and let U have all plaquette defects at most delta <= delta_0(n). Then:
+  - (a) a gauge transformation h gives U^h = V exp(X) with X transverse and sup abs(X) <= C(n) sqrt(delta). The chart is unique up to the centre among charts with small X;
+  - (b) A^tw(U) >= (mu_n / 16) sum_l abs(X_l)^2, with mu_n = (2 sin(pi / 2n))^2;
+  - (c) locality: if two configurations agree within base distance r of a link, their charts differ at that link by at most C_c(n) (sqrt(delta) + sqrt(delta')) exp(-r / (3n)). The two configurations may live on different rectangles.
+- Constants: C(n) = 6.1e4 n^9 and delta_0(n) of order n^(-32). The file does not decide if the natural size n^(-4) holds.
+- Not proved there: the chart over base regions with holes (the class in H^1(D; Z_2) is an extra datum), derivative bounds for the map from U to X, and the bound on bad regions.
+
+### 13.3 Route T, node T1 made exact (FINISH row 684)
+
+Source: `library/gap-twist-port.md`, written by Claude Opus 5.5 high. It is a port reading of the account's text `YM4_1400.tex` at 2bc0658f. The statements of the account were read; its proofs were not. **It is not checked by another model.**
+
+**Correction of the T1 row of Section 4.1.** Read that row with these four changes.
+
+1. Not "after K block steps". The block steps stop at the level i_s, the last level i <= K at which the fibre side s L^(K-i) is at least the account's floor 2 L^11 M R_i. The floor is there so that localization cubes do not wrap the fibre.
+2. Not "one fixed n_0". The fibre side at the stopping level is n_s, with 2 L^11 M R <= n_s < 2 L^12 M R. It grows like (log beta_*)^r.
+3. Not "exp(-beta_* A^tw - W) with W small in a polymer norm". The law of the block field after i_s steps lies in the account's class F_(i_s) on the lattice (Z/n_s)^2 x (Z/M_s)^2. That is a sum over large-field labels of a small-field characteristic function times exp(-beta_* A^tw(U_(i_s)(V)) + a sum of local terms), with the account's bound on the large-field mass.
+4. beta_* = x_(i_s)(beta), the account's flow at the stopping level, and beta_* >= g^(-2) + lambda log_L(1/s) - C. It grows as the fibre gets thin.
+
+**State of T1.** An exact statement, conditional on two groups of inputs.
+
+- The account's inputs, with the changes that the port file names (its packages A1-A4, B1-B4, C1-C4, E1). Below the stopping level, a term on a domain that does not wrap the fibre equals the term of the periodic torus. The port file derives this; the derivation is not checked. It needs the account's Statement 3.4 to be natural under covering maps composed with constant gauge transformations.
+- Three estimates that the account does not have, for regions that wrap the fibre: (W1) the background field and its response on small-field regions, a global elliptic problem whose admitted flat holonomies include the commuting adjoint pair of the twist; (W2) the activities of polymers that wrap the fibre; (W3) the stability floor.
+
+**Consequences.**
+
+- T2 must be stated again for the class of change 3. The Hessian lower bound of its background action at the twisted minimum is open.
+- The match of T1 to T2 needs the thresholds of T2 to be polynomial in n. The threshold delta_0(n) of (CH) is polynomial.
+- For T4: reflection positivity at mirrors through the fibre is open. At base mirrors it holds.
+- The physical decay rate stays c/s.
+
+### 13.4 The two cruxes (FINISH rows 677, 678, 691, 693)
+
+Rows 677 and 678 both stopped at a finite-box criterion. Row 691 proved the criterion from the weighted hypothesis (W) (see the correction in Section 5; its check is row 693). (W) itself is open for Wilson's SU(2) weight at couplings of order one. By the stop rule of Section 9, the statement goes back to a max author for a new statement. That item waits for the second literature pass (row 690).
+
+### 13.5 What changes in the plan (the lead's reading)
+
+1. Z2 is closed on the disc. The open inputs of Route Z are the crux (ZF_B) beyond the base region, the nodes Z5 and Z7 (row 680, running), and the reading of the check of (TM_B) (row 671).
+2. Route T has one more layer than Section 4.1 says. T1 feeds T2 a class of measures, not the Wilson weight with a small term. The stand-alone theorem S1 (plain Wilson weight, fixed n) is still a target of its own.
+3. Queued: the check of (CH) (row 695). Not queued until T2 is stated again: `gap-twist-lat` and `gap-twist-bad`. The port file names (W1) as the next exact statement of T1.

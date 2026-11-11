@@ -3,13 +3,15 @@ lease_until: 2026-11-11T16:15Z
 
 # gap-sc-box: the winding bound (SC_B) on the strong-coupling disc (FINISH row 683, node Z2 / N2)
 
-Provenance: one session, Claude Opus 5.5 (high), Mac mini worker 2, commit cecc90ccd. Not checked by another model. Written step by step; the status block at the end is the summary.
+Provenance: one session, Claude Opus 5.5 (high), Mac mini worker 2, commit cecc90ccd. Written step by step; the status block at the end is the summary.
+
+Check: checked line by line by Codex (gpt-6-astra, high), `library/gap-sc-box-check.md` (FINISH row 694). Verdict: Theorem SC holds after correction; the constants and the consumer form (SC_B) do not change. The lead (Claude Fable 5.2) applied the corrections in place on 2026-11-11. Each one is marked "Corrected 2026-11-11" below. One of them (Proposition 3.6) is applied in a shorter form than the check wrote; that paragraph says so.
 
 ## 0. Repo search, duplicate check, sources
 
 - Duplicate check. `library/open-core.md` has no hit for SC_B, sc-box or strong coupling. In the FINISH rows, (SC_B) is owned only by row 683 (this row). Other files only consume it as an input: `library/gap-zero-transport.md` (Section 6, line 88), `library/gap-zero-transport-check.md` (lines 76, 98, 214), `library/gap-zf-box-x.md` (lines 10, 142-151) and its check, and `library/gap-skeleton-final.md` (node Z2, line 106). No file proves it.
 - Conventions taken from `library/gap-zf-box-x.md` Section 0, which match the brief: a_p = 1 - (1/2) Re tr U_p, A = sum_p a_p, Z(beta) = int exp(-beta A) dU, and N = |P| <= 6 k |B|.
-- Sussman-Alpoge account: `library/sa-index/` has no strong-coupling expansion. Its "polymer expansion" hits (lines 179-184 and 19532-19538 of their text) are for the renormalised multiscale construction, not for a box at small bare coupling. Nothing of theirs is used below. Plan 2.5 also says that a box with free walls is outside their estimates.
+- Sussman-Alpoge account (corrected 2026-11-11 after the check; the first version overlooked their general polymer theorem). Their text has an abstract theorem for finite polymer systems: `YM4_sketch_500.tex` at `31a47c543775`, lines 1150-1174 (the setting) and 1271-1347 (the Kotecky-Preiss criterion, a rooted-tree estimate, and the theorem that the expansion converges absolutely and the partition function is not zero). Their lines 4693-4713 give a Schwarz and logarithm lemma for a normalized bound. Their text says that the estimate on the activities is a separate analytic task. The lead read these lines in the local copy of their file. These are general tools of the same kind as Lemma 3.4 and Section 4 below. They do not contain the activity estimate for a box at small bare coupling, the count of Lemma 2.3 or the covering identity of Section 2. Their other "polymer expansion" hits (lines 179-184 and 19532-19538 of their text) are for the renormalised multiscale construction. Section 3 below rebuilds Dobrushin's criterion and does not use their theorem. A port of Section 3 to their theorem is possible and is not done here. Plan 2.5 also says that a box with free walls is outside their estimates.
 - Literature. The brief names the convergent strong-coupling expansion of Osterwalder and Seiler (Ann. Phys. 110 (1978)) as the method. I recall it and did not read it. The proof below does not use it. It uses three elementary pieces, each written out in full here:
   (a) joint cumulants under Haar measure and a covering argument for the count "a winding set has at least 4k plaquettes" (Section 2);
   (b) Dobrushin's inductive criterion for a hard-core polymer gas to be zero-free, with a log bound. This is recalled from Dobrushin (1996) and from the Kotecky-Preiss line (CMP 103 (1986)). Neither was read. It is rebuilt in Section 3;
@@ -79,16 +81,18 @@ Remark. This is the only place where the free walls enter. In a spatial torus of
 Let k >= 3 and q >= 1, and let pi: Lambda_{qk} -> Lambda_k be (x, t mod qk) -> (x, t mod k). It maps links to links and plaquettes to plaquettes of the same type and direction. It maps the ordered list of the four links of p~ to the ordered list of the links of pi(p~). For a set G of plaquettes, L(G) is the set of links of plaquettes in G.
 
 Fix t_0 in {0, ..., k-1}. For j = 0, ..., q-1, let W_j = {t_0 + jk + 1, ..., t_0 + (j+1)k}, read mod qk. These are q disjoint windows of k consecutive times, and together they cover Z_{qk}. Put:
-- G_j := the spatial plaquettes at times in W_j, together with the time-like plaquettes over slabs s with s and s+1 both in W_j;
+- G_j := the spatial plaquettes at times in W_j, together with the time-like plaquettes over the k-1 interior slabs of W_j. These are the slabs s = t_0 + jk + 1, ..., t_0 + (j+1)k - 1, read mod qk. For each of them, s and s+1 both lie in W_j;
 - R(t_0) := P_k minus the time-like plaquettes over slab t_0 of Lambda_k.
 
+Corrected 2026-11-11 after the check (point 4a). The first version defined the interior slabs as the slabs s with s and s+1 both in W_j. For q >= 2 that is the same set, since W_j is then an arc of k consecutive times in a circle of qk > k times. For q = 1 it is not the same set: W_0 is the whole time circle, every slab qualifies, and G_0 would be P_k and not R(t_0). With the explicit list, G_0 = R(t_0) for q = 1. In that case pi is the identity, and (F1)-(F3), Lemma 2.4, Proposition 2.5 and D = 0 are trivial.
+
 (F1) pi restricted to G_j is a bijection onto R(t_0), and pi restricted to L(G_j) is a bijection onto L(R(t_0)).
-Proof. pi on times is a bijection from W_j onto Z_k. So the spatial plaquettes at times in W_j go bijectively onto all spatial plaquettes of Lambda_k. The k-1 slabs s with s, s+1 in W_j go bijectively onto the slabs of Lambda_k other than t_0. Indeed, the excluded element t_0 + (j+1)k of W_j is the one congruent to t_0. So pi maps G_j bijectively onto R(t_0), and L(G_j) onto L(R(t_0)).
-pi is injective on L(G_j) for these reasons. Spatial links of L(G_j) sit at times in W_j, which are distinct mod k. Time-like links of L(G_j) sit over the slabs above, which are distinct mod k. And pi preserves type and spatial position.
+Proof. pi on times is a bijection from W_j onto Z_k. So the spatial plaquettes at times in W_j go bijectively onto all spatial plaquettes of Lambda_k. The k-1 interior slabs go bijectively onto the slabs of Lambda_k other than t_0: their residues mod k are t_0 + 1, ..., t_0 + k - 1. So pi maps G_j bijectively onto R(t_0), and L(G_j) onto L(R(t_0)).
+pi is injective on L(G_j) for these reasons. Spatial links of L(G_j) sit at times in W_j, which are distinct mod k. Time-like links of L(G_j) sit over the interior slabs, which are distinct mod k. And pi preserves type and spatial position.
 Consequence: for p~ in G_j and a link l~ in L(G_j), p~ contains l~ if and only if pi(p~) contains pi(l~). The forward direction holds because pi maps the links of p~ to the links of pi(p~). Conversely, if pi(l~) is a link of pi(p~), then pi(l~) = pi(l~') for a link l~' of p~, and injectivity on L(G_j) gives l~ = l~'. The same argument gives: U_{pi p~} is the same ordered word in the variables U_{pi l~} as U_{p~} is in the U_{l~}.
 
 (F2) pi^{-1}(R(t_0)) is the disjoint union of G_0, ..., G_{q-1}, and L(G_j) and L(G_{j'}) are disjoint for j != j'.
-Proof. Let p~ be a spatial plaquette at time a. Then a lies in exactly one W_j. Let p~ be a time-like plaquette over slab s with s not congruent to t_0 mod k. Then s lies in some W_j and is not its last element, so s+1 is in W_j. Conversely G_j lies in pi^{-1}(R(t_0)). Disjointness of the links: spatial links of L(G_j) sit at times in W_j, and time-like links sit over slabs inside W_j. These sets are disjoint for different j.
+Proof. Let p~ be a spatial plaquette at time a. Then a lies in exactly one W_j. Let p~ be a time-like plaquette over slab s with s not congruent to t_0 mod k. Then s lies in exactly one W_j and is not its last element t_0 + (j+1)k, so s is an interior slab of W_j. Conversely G_j lies in pi^{-1}(R(t_0)). Disjointness of the links: spatial links of L(G_j) sit at times in W_j, and time-like links sit over the interior slabs of W_j. These sets are disjoint for different j.
 
 (F3) By (F2), a connected subset of pi^{-1}(R(t_0)) lies in a single G_j.
 
@@ -109,7 +113,7 @@ Proof. Z(m; beta) = exp(-beta N_m) E_m exp(beta S_m), since a_p = 1 - s_p. The b
 - order 1: (kappa_1(S_k) - N_k) - (1/q)(kappa_1(S_{qk}) - N_{qk}) = 0, by Proposition 2.5 with n = 1 and N_{qk} = q N_k;
 - orders 2 to 4k-1: Proposition 2.5. QED.
 
-What this section shows, in the brief's words. Only "winding" contributions survive in D. In the precise form: only good tuples whose plaquette set has time-like plaquettes over every slab, and by Lemma 2.3 such a set has at least 4k plaquettes. I did not show that the order 4k is attained, and nothing below needs it.
+What this section shows, in the brief's words. Only "winding" contributions survive in D. In the precise form: only good tuples whose plaquette set has time-like plaquettes over every slab of Lambda_k (for a tuple of Lambda_{qk}: over a slab of every residue mod k; wording corrected 2026-11-11 after the check), and by Lemma 2.3 such a set has at least 4k plaquettes. I did not show that the order 4k is attained, and nothing below needs it.
 
 ## 3. Zero-freeness and a volume bound on the disc |beta| <= R
 
@@ -132,6 +136,7 @@ The bound holds since the integrand is bounded by (4|beta|)^{|X|}. Analyticity: 
 (b) For each plaquette p_0 and n >= 1, there are at most 400^{n-1} connected sets of n plaquettes that contain p_0.
 Proof. (a) Take a spatial link in direction e_i at time t. It lies in at most 4 spatial plaquettes: two planes {i, j} with j != i, and two positions in each. It also lies in the time-like plaquettes over it in slabs t and t-1, which are distinct for m >= 2. That makes at most 6. A time-like link at (x, slab t) lies in the plaquettes e' x [t, t+1] with x in e', and there are at most 6 spatial links e' at x. Each plaquette has 4 links, each in at most 5 other plaquettes, so it has at most 20 neighbours.
 (b) Let X be such a set, with a spanning tree of its adjacency graph. A depth-first traversal from p_0 crosses each tree edge twice. It is a walk of length 2(n-1) in the adjacency graph, starting at p_0, whose set of vertices is X. So X is determined by such a walk, and there are at most 20^{2(n-1)} = 400^{n-1} of them. QED.
+Credit (added 2026-11-11 after the check). The count in (b) is the rooted-set count that the lane already has: PR 10141, `research/ym4d/library/in1.md` lines 530-538 (the proof of Lemma 9 there). It is not new here.
 
 **Lemma 3.4 (Dobrushin's criterion; recalled from Dobrushin 1996 and the Kotecky-Preiss line, rebuilt here).** Let Gamma be a finite set, ~/~ a reflexive symmetric relation on Gamma, and w: Gamma -> C. For S a subset of Gamma, let Xi_S be the sum over subsets F of S whose distinct elements are pairwise compatible of prod_{X in F} w(X), with Xi_empty = 1. Suppose c: Gamma -> [0, infinity) satisfies, for every X,
 (D) |w(X)| <= (1 - e^{-c(X)}) exp(- sum_{Y ~/~ X, Y != X} c(Y)).
@@ -152,16 +157,18 @@ Proof. For |u| < 1: |Log(1+u)| <= sum_{n>=1} |u|^n/n = -log(1 - |u|) <= |u|/(1 -
 **Proposition 3.6.** Let R = 1/12800, m >= 3 and |beta| <= R. Then Z(m; beta) != 0. The function
 log Z(m; beta) := -beta N + N Log c_0(beta) + log Xi(beta)
 (Lemma 3.2 and Corollary 3.5) is analytic on |beta| < R, vanishes at 0, is real on the real segment and satisfies exp(log Z) = Z. Moreover |log Xi(beta)| <= (32/3)|beta| N.
-Proof. Put x = 4|beta| <= 1/3200 and take Gamma = the polymers of Lambda, with w from Lemma 3.2, so |w(X)| <= x^{|X|}. Set c(X) := (4x)^{|X|}.
-Step 1, sum over incompatible polymers. If Y ~/~ X, then Y contains a plaquette through some link of X. X has at most 4|X| links, each in at most 6 plaquettes (Lemma 3.3(a)), and Lemma 3.3(b) bounds the polymers through a given plaquette. Using 1600x <= 1/2:
-sum_{Y ~/~ X} c(Y) <= 4|X| * 6 * sum_{n>=1} 400^{n-1} (4x)^n = 24|X| * 4x/(1 - 1600x) <= 192 x |X| <= 0.06 |X|.
-Step 2, check (D). c(X) <= 4x <= 1/800 <= 1, so 1 - e^{-c} >= c - c^2/2 >= c/2. Hence the right side of (D) is at least
-(1/2)(4x)^{|X|} e^{-0.06|X|} = (1/2)(4 e^{-0.06})^{|X|} x^{|X|} >= (1/2) 2^{|X|} x^{|X|} >= x^{|X|} >= |w(X)|.
+Proof. Put x = 4|beta| and x_* = 4R = 1/3200, so x <= x_*. Take Gamma = the polymers of Lambda, with w from Lemma 3.2, so |w(X)| <= x^{|X|} <= x_*^{|X|}. Set c(X) := (4 x_*)^{|X|} = (1/800)^{|X|}. This c does not depend on beta.
+Corrected 2026-11-11 after the check (point 8b). The first version took c(X) = (4x)^{|X|}, which depends on beta, but the analytic clause of Corollary 3.5 needs one fixed c. The check keeps the beta-dependent c for the bound and adds the fixed one for analyticity. The lead uses the fixed c for both, since Step 3 uses only the bound 0.06 |X| on the incompatible sum, and the numbers u_i do not depend on c. Steps 1 and 2 are the first version's inequalities, read at x_*. This shorter form is the lead's and was not read by the checker.
+Step 1, sum over incompatible polymers. If Y ~/~ X, then Y contains a plaquette through some link of X. X has at most 4|X| links, each in at most 6 plaquettes (Lemma 3.3(a)), and Lemma 3.3(b) bounds the polymers through a given plaquette. Using 1600 x_* = 1/2:
+sum_{Y ~/~ X} c(Y) <= 4|X| * 6 * sum_{n>=1} 400^{n-1} (4x_*)^n = 24|X| * 4x_*/(1 - 1600x_*) = 192 x_* |X| = 0.06 |X|.
+Step 2, check (D). c(X) <= 4x_* = 1/800 <= 1, so 1 - e^{-c} >= c - c^2/2 >= c/2. Hence the right side of (D) is at least
+(1/2)(4x_*)^{|X|} e^{-0.06|X|} = (1/2)(4 e^{-0.06})^{|X|} x_*^{|X|} >= (1/2) 2^{|X|} x_*^{|X|} >= x_*^{|X|} >= x^{|X|} >= |w(X)|.
+So (D) holds with this one c at every beta with |beta| <= R.
 This uses 4 e^{-0.06} >= 4(1 - 0.06) > 2.
 Step 3, conclude. By Lemma 3.4, Xi != 0. By Lemma 3.1, c_0 != 0, so Z != 0. Corollary 3.5, with the sum over polymers bounded by summing over a plaquette and the polymers through it, gives
 |log Xi| <= sum_X x^{|X|} e^{0.06|X|} <= N sum_{n>=1} 400^{n-1} (x e^{0.06})^n.
 Since x e^{0.06} <= 2x <= 1/1600, the factor 400 x e^{0.06} is <= 1/4. So |log Xi| <= N (2x)/(1 - 1/4) = (8/3) x N = (32/3)|beta| N.
-Analyticity: Lemma 3.2 and Corollary 3.5 on the open disc; Log c_0 is analytic since |c_0 - 1| <= 1/3. At beta = 0 we have c_0 = 1 and g = 0, so w = 0 and u_i = 0, and log Z = 0. For real beta, c_0 > 0 and all w(X) are real. Then each u_i is real with |u_i| < 1, so every term is real. QED.
+Analyticity: Lemma 3.2 and Corollary 3.5 on the open disc, with the one fixed c above; Log c_0 is analytic since |c_0 - 1| <= 1/3. At beta = 0 we have c_0 = 1 and g = 0, so w = 0 and u_i = 0, and log Z = 0. For real beta, c_0 > 0 and all w(X) are real. Then each u_i is real with |u_i| < 1, so every term is real. QED.
 
 Because the disc is simply connected and Z has no zero there, this log Z is the unique branch with value 0 at 0. So it is the branch named in Theorem SC(i) and Corollary 2.6, and the branch "real on the real axis" of Theorem ZB (`library/gap-zero-transport-check.md`, point (C)).
 
@@ -182,7 +189,7 @@ Remark (what is uniform). The constants R, C_0 = 1/100 and c = 12800 do not depe
 
 Kind of result: a proof of a step the plan states as an input (node N2 / Z2). It is not a check of anyone's proof and not a correction. Stop rule (i) is met: a proof with explicit constants.
 
-**Proved here (Claude Opus 5.5 high; not yet checked by another model):**
+**Proved here (Claude Opus 5.5 high; checked line by line by Codex gpt-6-astra high, `library/gap-sc-box-check.md`, row 694: holds after the corrections marked above):**
 - Theorem SC. For every finite B in Z^3 with free walls, every k >= 3 and q >= 1, and |beta| < R = 1/12800:
   - Z(k, B; beta) has no zero (also for |beta| = R);
   - |log Z(k,B;beta) - (1/q) log Z(qk,B;beta)| <= (|B| k/100)(12800 |beta|)^{4k}.
@@ -193,7 +200,7 @@ Kind of result: a proof of a step the plan states as an input (node N2 / Z2). It
   - Dobrushin's zero-freeness criterion with a log bound (Lemma 3.4, Corollary 3.5);
   - the polymer representation and the counting (Lemmas 3.2, 3.3).
 
-**What this moves.** Node N2 (Z2 in `library/gap-skeleton-final.md`) goes from OPEN to "proved, not checked". The consumers now have (SC_B) as a proved input rather than an assumption: Theorem ZB (`library/gap-zero-transport.md` Section 6, corrected in `library/gap-zero-transport-check.md` 3.6), and Theorem ZB-chain and Corollaries 3.2-3.3 of `library/gap-zf-box-x.md`. This file does not edit them; the lead forwards it.
+**What this moves.** Node N2 (Z2 in `library/gap-skeleton-final.md`) goes from OPEN to "proved, not checked", and on 2026-11-11 to "proved and checked line by line by Codex (gpt-6-astra); holds after correction". The consumers now have (SC_B) as a proved input rather than an assumption: Theorem ZB (`library/gap-zero-transport.md` Section 6, corrected in `library/gap-zero-transport-check.md` 3.6), and Theorem ZB-chain and Corollaries 3.2-3.3 of `library/gap-zf-box-x.md`. This file does not edit them; the lead forwards it.
 
 **Open (not touched here):**
 - (ZF_B) beyond the base region (nodes N6, N7);
@@ -203,9 +210,9 @@ Nothing of Theorem SC is open.
 
 **Not done.** I did not read Osterwalder-Seiler, Dobrushin (1996) or Kotecky-Preiss. The attributions in Section 0 are from memory. The proof does not depend on them. No numerics were run. I did not commit or push (no push rights on this machine).
 
-**Credits.** The idea of comparing log Z on a time circle and on its q-fold cover, where only winding contributions survive, is the plan's (`library/gap-skeleton-max-b.md` 2.5, Claude Fable 5.2, row 670). That plan's method of strong-coupling polymer expansions goes back to Osterwalder and Seiler. The zero-freeness criterion of Section 3 is Dobrushin's, rebuilt here. Conventions follow `library/gap-zf-box-x.md` (Claude Fable 5.2, row 677). Nothing is taken from the Sussman-Alpoge account, which does not treat this object.
+**Credits.** The idea of comparing log Z on a time circle and on its q-fold cover, where only winding contributions survive, is the plan's (`library/gap-skeleton-max-b.md` 2.5, Claude Fable 5.2, row 670). That plan's method of strong-coupling polymer expansions goes back to Osterwalder and Seiler. The zero-freeness criterion of Section 3 is Dobrushin's, rebuilt here. Conventions follow `library/gap-zf-box-x.md` (Claude Fable 5.2, row 677). The rooted-set count of Lemma 3.3(b) is the lane's (PR 10141, `research/ym4d/library/in1.md` lines 530-538). Nothing is taken from the Sussman-Alpoge account. It has general polymer tools (Section 0) and does not treat this object.
 
-**The one exact next statement.** A line-by-line check of Theorem SC (Sections 2-4 of this file) by a model that did not write it. Under the 2026-11-09 model rule, that is gpt-6-astra (max) for Opus-written steps. The check should give a verdict on:
+**The one exact next statement.** Done 2026-11-11: `library/gap-sc-box-check.md` (Codex gpt-6-astra high, row 694). The check did not cover Theorem ZB, Theorem ZB-chain, (TM_B) or (ZF_B) outside the disc. The first version of this paragraph read: A line-by-line check of Theorem SC (Sections 2-4 of this file) by a model that did not write it. Under the 2026-11-09 model rule, that is gpt-6-astra (max) for Opus-written steps. The check should give a verdict on:
 - Lemma 2.3, the count;
 - Lemma 2.4 with (F1)-(F3), the covering;
 - Proposition 3.6, the arithmetic of (D);

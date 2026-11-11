@@ -402,7 +402,7 @@ No mechanism in the sources read crosses the wall of A.4, and none is of way II 
 | B2 strip, (S) | Mechanism for a complex field: Lebowitz-Penrose, Frohlich-Rodriguez (abstracts READ). Complex coupling of a gauge theory: only numerical zeros (Denbleyker et al., abstract READ) | No zero-free theorem for complex temperature | No |
 | B3 centre flux, (F) | 't Hooft (NOT READ); Tomboulis-Yaffe (inequality READ in Tomboulis's text); Tomboulis 2007 (introduction and section 6 READ); Ito-Seiler (digest) | The inequality that carries the recursion from the bounds to the ratio is not proved | No. Lemma 4 gives exact identities and names the entropy difference as the missing bound |
 | B4 curvature after renormalization, (C) | Bauerschmidt, Bodineau, Dagallier; Shenfeld (abstracts READ); single scale: Shen-Zhu-Zhu (digest) | Massive super-renormalizable models; strong coupling | No |
-| B5 ground-state measure, (G) | Not found as a route to this gap; L. Gross's programme on the Yang-Mills heat semigroup is named by Chatterjee's survey (line READ: "Charalambous and Gross") | - | No; pointwise convexity already fails on the small torus |
+| B5 ground-state measure, (G) | Not found as a route to this gap. (Chatterjee's survey names the papers of Charalambous and Gross on the Yang-Mills heat flow as a regularization in d = 3, line READ; that is a different use) | - | No; pointwise convexity already fails on the small torus |
 | B6 finite-size criterion, (D) | Dobrushin-Shlosman (NOT READ). Chatterjee 2020 uses decay under all boundary conditions as a hypothesis (digest). Repository: the beta = 6 reduction | Verification needs the scale of the correlation length | No. It is the conditional theorem |
 | B7 local-gap threshold, (K), and the rule (RGI) | Knabe, Gosset-Mozgunov, Lemm-Mozgunov, Anshu (abstracts READ), for quantum spin systems. For gauge theory: not found | - | Negative result here: excluded by A.1 |
 | B8 comparison, (DF2) | Durhuus-Frohlich (abstract READ; theorems 1.2-1.3 READ as restated by Cao, Nissim and Sheffield, arXiv:2509.04688, section 2 of the source) | Their condition is a gap of the slab sigma model uniformly in the boundary fields; verified only at strong coupling ('t Hooft regime, 2025) | No; a comparison across two dimensions is not found and no proof idea exists |
@@ -431,11 +431,58 @@ No mechanism in the sources read crosses the wall of A.4, and none is of way II 
 6. *A.2.* Row 3 (U(1), d = 4, large beta, massless) and row 5 (U(1), d = 3, mass exponentially small in beta) are now supported by abstracts READ (Frohlich-Spencer; Gopfert-Mack). Row 7 (g^{2/3}/l) and rows 8, 9 stay (memory).
 7. *B14.* The name of the approach in the literature is "anomaly-preserving compactification" or T^2 with 't Hooft flux. "The physics is recalled from memory" in B14 is now replaced by the reading in 2.2. The existence of a fractional instanton that saturates the bound is numerical, not proved (2.2); (W-twist) must not use it. Lemma 5 does not.
 
-<!-- PART2-END -->
 
 ## Part 3. The skeleton
 
-(pending)
+### 3.0 Judgement
+
+No approach has a real chance at its crux with known methods. The reason is one fact: between the unit of length, where the existence account ends, and the correlation length there is a finite range of scales on which the coupling is of order one, and every exact tool found here (reflection positivity, the transfer operator, convexity, the doubling identities, transport) is true for U(1) as well and so cannot decide what happens there. The skeleton below is therefore: one new theorem that can be proved, one crux, and the conditional theorem.
+
+**The best conditional theorem.** (GAP) for at least one theory of the account's class follows from the account (in the form N1 or M1 below) and one hypothesis, in either of two forms:
+
+- **(AC')**, in the family of thin tori with a twist: inf_s m(s) > 0;
+- **(D)**, at one scale on the unit lattice: for the effective measures at beta_*, the law of the inner half of one cube of side R depends on the boundary condition by less than delta_4 in total variation.
+
+(D) is a statement about finitely many integrals. (AC') is a statement about a family with a proved (to be proved) gapped end. Neither is implied by anything in the account.
+
+### 3.1 The chosen approach: the thin torus with a twist (B14)
+
+Objects. Lattice Lambda(n, M) = (Z/n)^2 x (Z/M)^2 with coordinates (x_1, x_2 | x_3, x_4); "base" is the second factor. A^tw(U) = sum_{p not in P_0} (1 - (1/2) tr U_p) + sum_{p in P_0} (1 + (1/2) tr U_p), where P_0 is the set of (1,2)-plaquettes at (x_1, x_2) = (0,0), one for each base point. mu^tw = Z^{-1} exp(-beta A^tw) dU. The twist-eating configuration is U_1 = i sigma_1 on the links with x_1 = n-1, U_2 = i sigma_2 on the links with x_2 = n-1, all other links 1; it has A^tw = 0. In physical units the fibre has side s and the lattice spacing is a_K, with the coupling at the first-passage datum of the account.
+
+| Node | Exact statement | Status |
+|---|---|---|
+| N0 | The account: continuum limits of the connected functions of O(f) on tori and on R^4, with the axioms and the uniform bounds of Part 0.1-0.2, under packages A-H | IN LITERATURE as a conditional outline (YM4_1400, statement READ, proofs not read); in this lane partly ported (`library/t0-tree.md`) |
+| N1 | The same construction on T^2_s x T^2_l with the twist, for s below the size l_*(g) that the account needs: after K block steps the measure on the lattice Lambda(n_0, M), for one fixed n_0, is exp(-beta_* A^tw - W) with W small in a norm of gauge-invariant polymer activities that decay in the base, uniformly in K and M | OPEN. A port: the method is local, and the twist is invisible locally; the places where the account uses l >= l_*(g) and periodicity are not listed yet (item P6) |
+| N2 | **(W-twist-lat).** For each n >= 2 there are beta_0(n) and eps_0(n), and an absolute c > 0, such that for beta >= beta_0(n), all M, all W with norm at most eps_0(n), and all gauge-invariant F, G with values in [-1,1] that depend on the links over base sets X, Y: \|Cov(F, G)\| <= C(n, beta) \|X\| \|Y\| exp(-(c/n) dist(X, Y)) | OPEN. Looks provable now: unique minimum of A^tw up to gauge, Hessian bounded below by (2 sin(pi/2n))^2 on its transverse space, expansion for a massive field with rare bad regions. Items P2, P3 |
+| N3 | In the family, the gap gives the area law for loops in the base: Lemma 5 with Lemma 4 and the Tomboulis-Yaffe inequality | PROVED here as a sketch with one hypothesis written out (uniform gap of the slice operators on T^2_s x S^1); not checked by any other model. The general implication is IN LITERATURE (Durhuus-Frohlich 1980 as restated in arXiv:2509.04688, READ; Chatterjee 2020, digest; Tomboulis-Yaffe as quoted by Tomboulis, READ) |
+| N4 | **(W-twist).** For s <= s_0: the continuum limit (K to infinity) on R^2 x T^2_s with the twist exists along subsequences, and the connected functions of O(f) decay as exp(-(c/s) d) in the base distance d, uniformly in K; hence a gap m(s) >= c/s for the Hamiltonian of a base direction | OPEN; follows from N1, N2 and the interface of row 668 (`library/gap-os-equiv.md`) |
+| N5 | **(AC'), the crux.** There is m_0 > 0 such that for every s >= s_0 and every K, the theory on R^2 x T^2_s with the twist has decay exp(-m_0 d) for the observables of N4 | OPEN. **The approach dies here.** Attacked in 1.F: one exact gain (N3), no handle on the continuity |
+| N6 | From N5: limit points as s tends to infinity are infinite-volume Gibbs states at the first-passage datum, translation invariant, with the account's uniform bounds, and with decay exp(-m_0 d) in the direction x_3; their continuum limits have a unique vacuum and spec(H) in {0} and [m_0, infinity), H the generator of translations in x_3 | OPEN; routine-looking: compactness from the account's bounds, then row 668 |
+| N7 | (GAP) for every canonical component of every volume-first limit | OPEN; needs uniqueness of the Gibbs state at the datum, which the hypothesis (D) would give and (AC') alone does not |
+
+*The result short of the full gap that would be a new theorem:* N2, on the lattice and with no input from the account; and N4, with it. N4 is a mass gap and (by N3) an area law for a four-dimensional SU(2) theory at weak coupling with two infinite directions, uniformly in the cutoff. The group is used at the first line of N2: the twist-eating pair does not exist for U(1).
+
+### 3.2 The second approach, which fails in a different way: transport in the coupling on the unit lattice (B1)
+
+| Node | Exact statement | Status |
+|---|---|---|
+| M1 | The account gives, uniformly in K, effective measures on the unit lattice of the form exp(-beta_* A - W), W small in a polymer norm, on large tori | OPEN (to be extracted from the account's proof; statement not fixed) |
+| M2 | At b_0 < 1/48 the Wilson measure on Z^4 has a Poincare inequality for the link Dirichlet form, uniformly in the volume | IN LITERATURE: Shen, Zhu and Zhu, arXiv:2204.12737 (abstract READ by the digest: \|beta\| < 1/(16(d-1))); not rebuilt here |
+| M3 | Lemma 1 (transport), Lemma 2 (the four forms of gamma'), for any smooth path of actions | PROVED here (1.D); not checked by any other model |
+| M4 | **(T-avg), the crux**, along a path from (b_0, W = 0) to (beta_*, W): <Hess phi_t(grad f_t, grad f_t)> >= -c <\|grad f_t\|^2>, with c independent of the volume | OPEN. **Dies here.** The pointwise form is FALSE for the product transport in the solvable model (Lemma 3, proved here, not checked) |
+| M5 | A uniform Poincare inequality gives exponential clustering, and with M1 and the transport of the observable gives (GAP) | First half IN LITERATURE (used by Shen-Zhu-Zhu, not read); second half OPEN |
+
+It fails for lack of an a priori estimate in the coupling, on the whole measure, with no gapped member at weak coupling. B14 fails for lack of continuity in a size, with a gapped member at weak coupling at one end.
+
+### 3.3 The finite form (B6)
+
+| Node | Exact statement | Status |
+|---|---|---|
+| D1 | The constructive criterion for a Markov field with compact fibres and range one: weak dependence on the boundary in one cube, below a constant of the dimension, gives uniqueness and exponential clustering at rate c/R; gauge invariance needs no change (B6) | IN LITERATURE (Dobrushin-Shlosman 1985, NOT READ); to be rebuilt for gauge fields |
+| D2 | **(D)** for the effective measures of M1 at one R | OPEN; it is the gap in finite form |
+| D3 | M1, D1, D2 give (GAP) for every component (uniqueness comes with D1) | OPEN, routine after M1 |
+
+<!-- PART3-END -->
 
 ## Part 4. The queue
 

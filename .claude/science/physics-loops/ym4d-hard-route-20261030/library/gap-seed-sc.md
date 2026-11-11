@@ -3,7 +3,7 @@ lease_until: 2026-11-11T21:40Z
 
 # gap-seed-sc: the seed on a strong-coupling disc (FINISH row 701)
 
-Provenance: one session, Claude Fable 5.2 (medium), Mac mini worker 1, commit 87f777e7a, started 2026-11-11T09:40Z. Written step by step. Not checked by another model. No computer run was made; every step is by hand.
+Provenance: one session, Claude Fable 5.2 (medium), Mac mini worker 1, commit 87f777e7a, started 2026-11-11T09:40Z. Written step by step. Checked line by line by Claude Opus 5.5 high (FINISH row 704, `library/gap-seed-sc-check.md`, 2026-11-11): every numbered statement holds; two remarks, no correction (lead note). Not checked by a model of another provider. No computer run was made; every step is by hand.
 
 **No mass gap at a coupling of order one is proved by this file.** The seed is proved only for beta below 1/12800.
 

@@ -278,7 +278,7 @@ The flux states change no entry by more than 0.1 at this sigma (the boxes are lo
 
 ## 6. Target 6: the test at strong coupling
 
-Inputs: `library/gap-seed-sc.md` Theorem 1 (iii): Phi(n; beta) <= 0.16 n^4 theta^(4n) for n >= 4, theta = 12800 beta < 1 (PROVED GIVEN there; its check, row 704, is not yet in). Theorem D (b): s = S(n; (2n)^3) <= exp(Phi(n)) - 1. That file bounds only the symmetric defect Phi(n), so only the shape r = 2 can be tested.
+Inputs: `library/gap-seed-sc.md` Theorem 1 (iii): Phi(n; beta) <= 0.16 n^4 theta^(4n) for n >= 4, theta = 12800 beta < 1 (PROVED GIVEN there; its check, row 704, is in since this file was written: every statement holds, `library/gap-seed-sc-check.md`; lead note 2026-11-11). Theorem D (b): s = S(n; (2n)^3) <= exp(Phi(n)) - 1. That file bounds only the symmetric defect Phi(n), so only the shape r = 2 can be tested.
 
 **Theorem 4' (PROVED GIVEN `gap-seed-sc.md` Theorem 1 (iii), Theorem D (b), and the line "r = 2, two stages" of 1.5).** Let 0 < beta < 1/12800, theta = 12800 beta, and n >= 4 with n theta^n <= 0.247. Then for every integer L >= 4n, with k >= 0 the largest integer such that 2^k 4n <= L:
 

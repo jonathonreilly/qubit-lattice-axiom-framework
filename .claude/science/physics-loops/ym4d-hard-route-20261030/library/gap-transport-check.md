@@ -158,3 +158,63 @@ Check at b = 0: phi_0 = A/2 + const (c_{+-e_x} = -1/4), Hess = (1/2) sum cos(eta
 
 What Theorem A says and does not say. It decides the question for the circle model at high temperature, two-sided and pointwise in theta. The integer frequencies are what make the expansion local: (n, M n) >= 2 for every non-zero n, so no long-wave denominator appears. At large b (the regime that matters for the analogy with weak coupling) phi_b approaches the Gaussian form (eta, M^{-1} eta)/(4b), which is non-local in eta, and this expansion cannot reach it. The constant b_0 is far from optimal (the bound Q <= 17 is crude).
 
+### 7.2 Two exact statements for the line model (proved here)
+
+**Identity Q (the Gaussian part is exact for every W).** Let q(theta) = \|P theta\|^2/2 = (eta, M^{-1} eta)/2. Then L_b q = sum_x (b eta_x W'(eta_x) - 1), a sum of one-site functions, and Hess_theta q = P.
+Proof. d_eta q = M^{-1} eta, so M d_eta q = eta and (d_eta, M d_eta) q = tr(M M^{-1}) = L. Hence L_b q = -L + b (W'(eta), eta). QED
+So for every kappa, phi_b = kappa q + psi with L_b psi = sum_x h_kappa(eta_x), h_kappa = g - kappa (b eta W'(eta) - 1), g = W - mean, and Hess phi_b >= -c P iff Hess psi >= -(c + kappa) P. In the Gaussian case kappa = 1/(2b) gives h = 0 and psi = 0. The long-wave, non-local part of phi_b is carried by q with a bounded Hessian; the question is whether the remainder psi, the solution for a one-site source, has a Hessian bounded in the P-norm. That is the same kind of question as the original one (A itself is a sum of one-site functions), so Identity Q does not decide it.
+
+**The exact formula of 3.6, checked** (it was marked "proved in three lines, not checked"). At fixed L, for W in C^3 with W'' >= kappa_0 > 0 and W''' bounded: with the Langevin flow d theta = -b grad A dt + sqrt(2) dB (additive noise, so theta_t is a smooth function of theta_0 path by path), J_t = D theta_t / D theta_0, xi_t = d J_t v,
+
+  Hess phi_b(v, v) = (\|P v\|^2 - E \|P J_infinity v\|^2)/(2b) - b int_0^infinity E[ sum_x W'''(eta_x(s)) G_x(eta_s) xi_x(s)^2 ] ds,   G := d grad_theta phi_b.   (7.2)
+
+Derivation: Hess phi(v, v) = int_0^infinity E[Hess A(theta_t)(J_t v, J_t v) + <grad A(theta_t), K_t>] dt with K_t the second variation (d/dt K = -b Hess A K - b grad^3 A(J v, J v), K_0 = 0); the first part is -(1/(2b)) int d/dt E\|P J_t v\|^2 dt; in the second, write K_t = -b int_0^t U(t,s) grad^3 A(theta_s)(J_s v, J_s v) ds (U the derivative of theta_t in theta_s), exchange the integrals, and use E[int_s^infinity U(t,s)^T grad A(theta_t) dt \| F_s] = grad phi(theta_s), which is the pathwise formula grad P_t A = E[J_t^T grad A(theta_t)] with the Markov property. grad^3 A(a, a, c) = sum_x W'''(eta_x) (da)_x^2 (dc)_x. All integrals converge absolutely at fixed L because \|P J_t\| <= e^{-b kappa_0 lambda_min(d^T d) t}. The formula of 3.6 is correct; under convexity P J_infinity = 0.
+
+**Lemma R (convex line model: a sufficient condition).** Assume W'' >= kappa_0 > 0 (for W = eta^2/2 + lambda w: lambda sup\|w''\| <= 1 - kappa_0) and W''' bounded. If Gamma := sup over L, eta, x of \|W'''(eta_x) G_x(eta)\| / W''(eta_x) is finite, then Hess phi_b(v, v) >= (1/(2b) - Gamma/2) \|P v\|^2 for all L, theta, v.
+Proof. In (7.2), \|sum_x W''' G_x xi_x^2\| <= Gamma sum_x W''(eta_x) xi_x^2 = Gamma Hess A(J v, J v), and b int_0^infinity E Hess A(J_s v, J_s v) ds = \|P v\|^2/2 (the first part of (7.2) with P J_infinity = 0). QED
+Status of the condition: not proved. At first order in lambda it holds: G = eta/(2b) + O(lambda), and W''' G / W'' = lambda w'''(eta_x) eta_x/(2b) + O(lambda^2), bounded by lambda U/b (this is Lemma 7 again). At second order it needs a bound on G^{(1)} = M int_0^infinity e^{-btM} E[u'(eta_t)] dt that is uniform over all fields eta at the sites where w''' != 0. The crude estimate gives \|G^{(1)}_x\| <= C(1 + \|eta\|_inf log L); the logarithm comes from \|\|M e^{-btM}\|\|_{inf->inf} <= C/(1 + bt), and I found neither a field on which it is attained nor a proof that it is not. So Lemma R reduces the convex case to a sup bound that may be false even though the Hessian bound is true: (7.2) splits Hess phi into two pieces, and Lemma 7 shows the split can lose (at first order each piece is fine, but the route needs pointwise control of G, which Lemma 7 does not use).
+
+### 7.3 Three routes to the general case that failed, with the reason for each
+
+1. *Local expansion at large b (circle) or fixed lambda (line).* Theorem A works because every non-zero integer mode has (n, M n) >= 2. At large b, or on the line, phi_b contains the Gaussian part kappa q with Hess_eta q = M^{-1}, whose entries are of size L^2 and whose range is the whole chain. No expansion in modes or polymers of bounded support converges to it uniformly in L. Identity Q removes it exactly, but the remainder psi then solves a problem of the same kind (7.2).
+2. *Iteration around the Gaussian in the norm \|\|\|F\|\|\| = sup_eta \|\|D^2_eta F\|\|.* Lemma 7's mechanism gives Hess(L_0^{-1} F)(v, v) <= \|\|\|F\|\|\| \|P v\|^2/(2b). At the next order F = L_1 phi_1 = b (w'(eta), M d_eta phi_1), and D^2 F contains 2 b sum_x w''(eta_x) nu_x (M D^2 phi_1 nu)_x. A bound on Hess phi_1 in the P-norm controls \|\|M^{1/2} D^2 phi_1 M^{1/2}\|\|, not \|\|M D^2 phi_1\|\|. So the second-order term is bounded by C \|nu\| \|M^{-1/2} nu\|, and on a mode with eigenvalue lambda_k of M the time integral of \|nu_t\| \|M^{-1/2} nu_t\| is \|P v\|^2 lambda_k^{-1/2}, which is of order L \|P v\|^2 for the longest wave. The iteration does not close in this norm. The actual second-order term is expected to be smaller, by the cancellation that makes M int e^{-btM} a e^{-btM} dt = a/(2b) local when a is constant; for the fluctuating coefficient a = E u''(eta_t) the cancellation is not exact, and I have no estimate of the defect uniform in eta.
+3. *Maximum principle, and the sup bound of Lemma R.* The maximum principle fails at soft directions (skeleton D.3, correctly). Lemma R replaces it with a sup bound on W''' G / W'', which is open (7.2). The integration-by-parts form G_psi = (1/b)[rho(eta) + E int_0^infinity Phi_t (2 rho''(eta_t) - b rho'(eta_t) (M W'(eta_t))) dt], with rho = r/W'' and Phi_t the propagator of the non-divergence equation d r/dt = -b D(eta_t) M r (which has a maximum principle when W'' >= 0), has an integrand of equilibrium mean zero (E[rho' W'] = E[rho'']/b), but bounding its time integral uniformly in the starting field is a homogenisation estimate in sup norm, and I did not find one.
+
+Not tried: the Lipschitz results for heat-flow and Langevin transport maps in the literature (Kim-Milman; Mikulincer-Shenfeld; Fathi-Mikulincer-Shenfeld), from memory, not read. As I recall them, they transport a Gaussian onto a bounded or log-Lipschitz perturbation of it, with constants that depend on the size of the perturbation. Here the perturbation lambda sum_x w(eta_x) has size of order L in both senses, so they would not give constants independent of L without a new argument. This is memory, not a citation.
+
+### 7.4 Search for a counterexample (by hand; no numeric job was run)
+
+Candidates for a tangent vector with Hess phi_b(v, v) <= -c L^eps \|P v\|^2, each estimated at large b, where phi_b = (1/b) int_0^infinity (Q_s A - mu A) ds with Q_s the small-noise flow:
+- a single saddle (one increment at the top of W, e.g. eta_{x0} = pi on the circle): the unstable eigenvector of Hess A is localised (decay e^{-\|x - x0\| ln 3} on the circle), and Hess phi in that direction is of order -(energy of the saddle)/(unstable rate), independent of L;
+- many saddles, or a block of increments in the concave region: the energy is released mode by mode, the short waves are unstable at rate of order b \|W''\| . 4 and the long waves only at b \|W''\| / L^2, so the configuration breaks up locally before a long wave grows; the long-wave Hessian picks up -\|W''\| lambda_k T_escape, which is small;
+- a tilted field eta = c everywhere (a ramp in theta): in the bulk it is stationary for the drift, the long waves relax hydrodynamically, and the long-wave Hessian is a ratio of the type e''(c)/sigma''(c) (energy against free energy of the tilted one-site law), which is bounded for each c and tends to the Gaussian value as \|c\| -> infinity on the line.
+None gives growth in L. These are heuristic estimates, not proofs.
+
+Guide for the next attempt (heuristic, not proved): the hydrodynamic picture predicts that Hess phi_b, restricted to long waves on a field with local tilt c, converges as L -> infinity to a bounded multiple of P, with the multiple a function of c, b and W; so a counterexample of the form -c L^eps is not expected, and a proof would need a sup-norm homogenisation estimate for the tangent dynamics d xi/dt = -b M D(eta_t) xi.
+
+### 7.5 Verdict on the question of P5
+
+- **Circle, W = 1 - cos, b <= 1/(102 e): DECIDED, the bound holds** (Theorem A): \|Hess phi_b(v, v)\| <= 8e \|P v\|^2, uniformly in L, theta, v.
+- **Circle at larger b; line, W = eta^2/2 + lambda w at fixed lambda > 0: NOT DECIDED.** Proved here: Identity Q, the formula (7.2), and Lemma R (the convex case follows from one sup bound on W''' G / W'', itself open). No tangent vector with Hessian below -c L^eps was found; the candidates tried give bounds independent of L.
+- For the use in 1.D and B1 this is the less useful half: Theorem A is the high-temperature regime, while the analogy with weak coupling needs large b. The skeleton's statement "(T) for the gradient transport is not decided" (3.6) remains true for large b.
+
+## 8. Table of verdicts
+
+| Statement (`library/gap-skeleton-max.md`) | Verdict | What changes |
+|---|---|---|
+| Lemma 1 (transport), 1.D line 224 | HOLDS | the cited uniqueness of the continuity equation replaced by a two-line duality proof (section 1, item 3) |
+| Lemma 2 (four forms HF1-HF4), line 227 | HOLDS | a.e. differentiability of gamma supplied: log gamma is 2 osc(A)-Lipschitz (section 2, item 1) |
+| Corollary (T-avg), line 238 | HOLDS AFTER CORRECTION | "iff" only with the bound for every pair b_0 <= b in the interval (section 2) |
+| Lemma 3 (product transport), line 248 | HOLDS AFTER CORRECTION | the displayed bound is not a bound modulo constants when R is near L; corrected Lemma 3': R <= (L-1)/2, factor 1/2, R >= 12K/delta^2, \|P D Theta v\| >= (delta R/34) \|v\| on typical fields (section 3) |
+| Lemma 7 (chain, first order), 3.6 line 524 | HOLDS | as a statement about the first-order coefficient phi_1; that it equals d phi_lambda/d lambda is presupposed (section 4) |
+| Exact formula of 3.6 (used for the question) | HOLDS | checked for W'' >= kappa_0 > 0, W''' bounded, fixed L: formula (7.2) |
+| Lemma 6 (upper bound on the gap), 3.5 line 515 | HOLDS AFTER CORRECTION | for a component the account gives (c)(4), not (c)(3): constant (log 48 + 8 log(9/2))/3 instead of (log 3 + 8 log(9/2))/3; the lattice bound is a separate statement from (c)(3) for periodic Gibbs states, Lemma 6' (section 5) |
+| Fact 1 (A^tw(V) = 0), 3.4 | HOLDS | none |
+| Fact 2 (uniqueness, stabilizer), 3.4 | HOLDS | the cited gauge-equivalence criterion proved for central plaquette values (section 6) |
+| Fact 3 (Hessian >= (2 sin(pi/2n))^2), 3.4 | HOLDS | "frame in which V is trivial" exists only for Ad V (wording); for a rectangle base the plane-wave count replaced by the product splitting of the Hodge Laplacian (section 6) |
+| P5 question, circle, b <= 1/(102e) | DECIDED: bound holds | Theorem A: \|Hess phi_b(v, v)\| <= 8e \|P v\|^2 uniformly in L, theta, v (section 7.1) |
+| P5 question, circle at larger b; line at fixed lambda > 0 | OPEN | Identity Q, formula (7.2), Lemma R proved; three failed routes (7.3); no counterexample found (7.4) |
+
+No statement checked here FAILS. None of the corrections breaks a consumer: the uses of Lemma 3 (refuting the pointwise bound for the product transport) and of Lemma 6 (the filter of 3.5, m_lat <= C exp(-c_AF beta (1 + o(1)))) survive with the corrected statements.
+
+State of this file: COMPLETE for row 682, run 1, 2026-11-11T03:10Z to 2026-11-11T03:40Z, at pinned commit b1671559b. One reader, Claude Opus 5.5 high; Theorem A, Identity Q, Lemma R and the corrected statements are new here and have not been checked by any other model. No numeric job was run (memory free was 58 percent at the start; no run was needed for a decision, and a run could not have discharged one). Source fetched by URL: `YM4_1400.tex` at 2bc0658f91d2 (Sussman and Alpoge), lines 1748-1800 and 1884-1910 read.

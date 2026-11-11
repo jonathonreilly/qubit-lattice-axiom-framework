@@ -132,3 +132,29 @@ Definitions used (3.1, line 461): A^tw = sum_{p not in P_0} (1 - (1/2) tr U_p) +
 
 **HOLDS** (item 3 supplied for a rectangle base; item 2 is a wording point). The quadratic form is (1/8)(X, K_V X) >= (1/8) s_n^2 \|X\|^2 on the transverse space, which is the form P2 (b) quotes.
 
+## 7. The question of P5: is Hess phi_b bounded below uniformly in L in the chain model?
+
+Model (D.3): open chain, sites 0..L, theta in T^{L+1} (circle case, W = 1 - cos) or R^{L+1} (line case, W = eta^2/2 + lambda w), eta = d theta in T^L or R^L, mu_b proportional to e^{-bA}, A = sum_x W(eta_x); under mu_b the eta_x are i.i.d. M = d d^T is the L x L matrix with 2 on the diagonal and -1 next to it (Dirichlet). P = projection off constants in theta-space. The norm that matters is \|P v\|^2 = (nu, M^{-1} nu), nu = d v (Lemma 1 uses \|D Phi\| on the quotient by the gauge direction, section 3 item 3). Hess_theta phi(v, v) = nu^T (D^2_eta phi) nu. The bound asked: Hess_theta phi_b(v, v) >= -c \|P v\|^2 for all theta, v, with c independent of L.
+
+### 7.1 Theorem A (circle, small b): proved
+
+**Theorem A.** For W = 1 - cos on the circle and 0 <= b <= b_0 := 1/(102 e), for every L, every theta and every v: \|Hess_theta phi_b(v, v)\| <= 8e \|P v\|^2.
+
+Proof. *Fourier form.* Write functions of eta as sums of e_n = e^{i n.eta}, n in Z^L. On functions of eta, -Delta_theta = -sum_{x,y} M_{xy} d_x d_y, so -Delta_theta e_n = (n, M n) e_n. For n != 0, (n, M n) = \|d^T n\|^2 = sum_{y=0}^{L} (n_{y-1} - n_y)^2 (with n_{-1} = n_L = 0) is an integer >= 2. Also <grad_theta A, grad_theta e_n> = sum_{x,y} M_{xy} sin(eta_x) (i n_y) e_n = (1/2) sum_x mu_x(n) (e_{n+e_x} - e_{n-e_x}), with mu_x(n) := (M n)_x. The right side A - mu_b(A) = L r(b) - (1/2) sum_x (e_{e_x} + e_{-e_x}), r = I_1(b)/I_0(b), has coefficients s_{+-e_x} = -1/2, s_0 = L r(b), and 0 otherwise. So phi = sum_n c_n e_n solves L_b phi = A - mu_b(A) if, for every n != 0,
+
+  (n, M n) c_n + (b/2) sum_x [mu_x(n - e_x) c_{n-e_x} - mu_x(n + e_x) c_{n+e_x}] = s_n,   c_0 = 0.   (7.1)
+
+(The n = 0 equation is then automatic: L_b phi - (A - mu_b A) is a constant with mu_b-mean zero.) With Lambda = diag((n, M n)) and (T c)_n = (1/(2(n, M n))) sum_x [mu_x(n - e_x) c_{n-e_x} - mu_x(n + e_x) c_{n+e_x}] for n != 0, (7.1) is c = Lambda^{-1} s - b T c.
+
+*Norm.* For alpha > 0 put \|c\|_alpha = sup_y sum_{n : y in supp n} \|c_n\| e^{alpha \|n\|_1}. It is a complete norm.
+
+*Bound on T.* Group (T c) by the old mode m: m feeds n = m + e_x with weight \|mu_x(m)\|/(2 (n, M n)) and n = m - e_x with the same form, n != 0, and (m +- e_x, M (m +- e_x)) = E +- 2 mu_x + 2, E := (m, M m). With a_y = (d^T m)_y integers, mu_x = a_x - a_{x+1}, so sum_x \|mu_x\| <= 2 \|a\|_1 <= 2 \|a\|_2^2 = 2E and mu_x^2 <= 2E. Put Q(m) = sum_x sum_{+-} \|mu_x(m)\|/(2 (m +- e_x, M(m +- e_x))) over the terms with m +- e_x != 0. If E <= 17, each denominator is >= 2, so Q(m) <= (1/2) sum_x \|mu_x\| <= E <= 17. If E >= 18, each denominator is >= E + 2 - 2 sqrt(2E) >= E/3 (equivalent to E/3 + 1 >= sqrt(2E), true at E = 18 and beyond), so Q(m) <= (1/2)(2E)(6/E) = 6. So Q(m) <= 17 for all m != 0. mu_x(m) != 0 only for x in supp m or next to it, so supp n is contained in supp m union {x}; a mode n containing y comes from m containing y, or from m containing y - 1 or y + 1 with x = y. Using \|n\|_1 <= \|m\|_1 + 1: \|T c\|_alpha <= 3 . 17 . e^alpha \|c\|_alpha.
+
+*Solution.* \|Lambda^{-1} s\|_alpha = 2 . (1/4) e^alpha = e^alpha/2 (the modes +-e_y, (e_y, M e_y) = 2). For alpha = 1 and b <= 1/(102 e), \|b T\| <= 1/2, so c = sum_k (-bT)^k Lambda^{-1} s converges with \|c\|_1 <= e. For fixed L, sum_n \|c_n\| \|n\|^k < infinity for every k, so phi_c = sum c_n e_n is smooth and (7.1) holds termwise; by uniqueness of the mean-zero solution, phi_b = phi_c + const.
+
+*Hessian.* Hess_theta phi(v, v) = -sum_n c_n (n.nu)^2 e_n. By Cauchy-Schwarz on supp n, (n.nu)^2 <= \|n\|_1^2 sum_{x in supp n} nu_x^2, and t^2 <= 2 e^t, so \|Hess_theta phi(v, v)\| <= sum_x nu_x^2 sum_{n ni x} \|c_n\| \|n\|_1^2 <= 2 \|c\|_1 \|nu\|^2 <= 2e . 4 \|P v\|^2, since \|nu\|^2 = (v, d^T d v) <= 4 \|P v\|^2 (d^T d is the Laplacian of the path, norm <= 4, kernel the constants). QED
+
+Check at b = 0: phi_0 = A/2 + const (c_{+-e_x} = -1/4), Hess = (1/2) sum cos(eta_x) nu_x^2, bounded by 2 \|P v\|^2. Agrees.
+
+What Theorem A says and does not say. It decides the question for the circle model at high temperature, two-sided and pointwise in theta. The integer frequencies are what make the expansion local: (n, M n) >= 2 for every non-zero n, so no long-wave denominator appears. At large b (the regime that matters for the analogy with weak coupling) phi_b approaches the Gaussian form (eta, M^{-1} eta)/(4b), which is non-local in eta, and this expansion cannot reach it. The constant b_0 is far from optimal (the bound Q <= 17 is crude).
+

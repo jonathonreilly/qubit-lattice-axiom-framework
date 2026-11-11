@@ -15,8 +15,8 @@ section 1). Reviewers are the landing-reviewer rows in `SETTINGS.md`.
 ## Takes
 
 - The request: target, focus, iteration cap (default five), review only or
-  not. A bare `review-loop` invocation keeps its older meaning, the default
-  set in `LANDING.md`; any other request naming no target or set means ask.
+  not. A bare or focus-only `review-loop` invocation keeps its older meaning
+  (the default set in `LANDING.md`); otherwise no target or set means ask.
 - A unit: one coherent argument in one PR or several dependent PRs, each with
   its number, head commit, declared base, merge base and original delta.
 - No drafts, and no owner-reserved content or anything a descendant inherits

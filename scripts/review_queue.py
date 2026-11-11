@@ -573,7 +573,9 @@ def build_history(raw_prs: list[dict], requested: int, now: datetime) -> dict:
     rows.sort(key=lambda row: (row["ended_at"], row["number"]), reverse=True)
     with_cost = [row for row in rows if row["cost"] is not None]
     gate_by_landing = {
-        row["cost"]["landed_head"] or f"pr-{row['number']}": row["cost"]["gate_seconds"]
+        (("train", row["cost"]["train"]) if row["cost"]["train"] else
+         ("head", row["cost"]["landed_head"]) if row["cost"]["landed_head"] else
+         ("pr", row["number"])): row["cost"]["gate_seconds"]
         for row in with_cost
         if row["cost"]["gate_seconds"] is not None
     }
@@ -607,7 +609,8 @@ def build_history(raw_prs: list[dict], requested: int, now: datetime) -> dict:
             "rounds": _stat(
                 [row["cost"]["rounds"] for row in with_cost if row["cost"]["rounds"]]
             ),
-            # One gate serves a whole train: count it once per landed head.
+            # One gate serves a train even when its PRs have distinct landed heads.
+            # Legacy records without a train fall back to head, then PR.
             "gate_seconds": _stat(list(gate_by_landing.values())),
         },
         "prs": rows,
@@ -669,7 +672,7 @@ def render_history(history: dict, title_width: int = DEFAULT_TITLE_WIDTH) -> str
         ("open to review start, hours", "open_to_review_start_hours"),
         ("review start to review end, hours", "review_hours"),
         ("review rounds", "rounds"),
-        ("gate seconds, one per landed head", "gate_seconds"),
+        ("gate seconds, one per train", "gate_seconds"),
     ):
         stat = summary[key]
         lines.append(

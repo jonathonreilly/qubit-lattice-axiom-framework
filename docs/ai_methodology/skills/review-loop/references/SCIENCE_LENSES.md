@@ -22,13 +22,14 @@ It prints `DEPTH scope` only when every changed path is working material:
 | `.claude/science/` | any |
 | `research/` | any |
 | `docs/<name>.md` | added |
-| `scripts/<name>.py` | added |
 | `logs/runner-cache/` | added |
 
 Every other change gets the full read and prints `DEPTH full`. That covers a
 changed, renamed or deleted file that `main` already holds outside the two
 working folders. It also covers a new file anywhere else: rules, procedures,
 commands, tools, tests, audit data, controlled data and publication surfaces.
+New files under `scripts/` get the full read: a path alone cannot distinguish
+a science runner from an operational tool.
 One such path gives the whole unit the full read. If the script prints no
 `DEPTH` line, the unit gets the full read. The table is the script's
 `WORKING_MATERIAL` list, and the contract check fails when the two differ.

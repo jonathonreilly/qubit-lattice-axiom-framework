@@ -188,7 +188,10 @@ lists the N most recently opened PRs that are merged or closed, with the hours
 from open to merged or closed, their landing records, the median and 90th
 percentile, and the number of PRs without a landing record. Each mode makes
 one read-only `gh pr list` call and writes nothing. The queue is computed on
-request. Do not keep a hand-written copy of it.
+request. Do not keep a hand-written copy of it. Gate-time summaries count
+one observation per train, even when its PRs have different landed heads.
+Older records without a train identifier fall back to the landed head, then
+to the PR number when neither identity was recorded.
 
 The next action is the first row of this table that applies:
 

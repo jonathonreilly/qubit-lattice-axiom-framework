@@ -30,7 +30,6 @@ WORKING_MATERIAL = (
     (".claude/science/", "any"),
     ("research/", "any"),
     ("docs/<name>.md", "added"),
-    ("scripts/<name>.py", "added"),
     ("logs/runner-cache/", "added"),
 )
 REGULAR_MODES = frozenset({"100644", "100755"})

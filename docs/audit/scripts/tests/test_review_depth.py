@@ -43,14 +43,13 @@ class ReviewDepthRuleTest(unittest.TestCase):
             Change("A", "research/ym4d/parts/t0.md"),
             Change("M", "research/ym4d/FINISH.md"),
             Change("A", "docs/NEW_BOUNDED_THEOREM_NOTE_2026-11-10.md"),
-            Change("A", "scripts/frontier_new_runner.py", "100755"),
             Change("A", "logs/runner-cache/frontier_new_runner.txt"),
         ])
         self.assertEqual(result["depth"], "scope")
         self.assertEqual(result["full_read"], [])
         self.assertEqual(result["working_material"], {
             ".claude/science/": 3, "research/": 2, "docs/<name>.md": 1,
-            "scripts/<name>.py": 1, "logs/runner-cache/": 1,
+            "logs/runner-cache/": 1,
         })
 
     def test_every_other_change_gets_the_full_read(self):
@@ -61,7 +60,9 @@ class ReviewDepthRuleTest(unittest.TestCase):
             (Change("M", "docs/EXISTING_NOTE.md"), held),
             (Change("D", "docs/EXISTING_NOTE.md", "000000"), held),
             (Change("T", "docs/EXISTING_NOTE.md"), held),
-            (Change("M", "scripts/frontier_existing.py"), held),
+            (Change("M", "scripts/frontier_existing.py"), outside_changed),
+            (Change("A", "scripts/review_queue.py"), outside_new),
+            (Change("A", "scripts/frontier_new_runner.py", "100755"), outside_new),
             (Change("D", "logs/runner-cache/existing.txt", "000000"), held),
             (Change("R", "docs/RENAMED_NOTE.md"), held),
             (Change("M", "AGENTS.md"), outside_changed),
@@ -165,7 +166,6 @@ class ReviewDepthGitTest(unittest.TestCase):
 
     def add_working_material(self):
         self.write("docs/NEW_NOTE.md", "# New note\n")
-        self.write("scripts/new_runner.py", "print('new')\n")
         self.write("logs/runner-cache/new_runner.txt", "new\n")
         self.write("research/target/STATE.md", "state two\n")
         self.write(".claude/science/physics-loops/gap/HANDOFF.md", "handoff\n")
@@ -179,7 +179,7 @@ class ReviewDepthGitTest(unittest.TestCase):
         self.assertEqual(lines[0], "DEPTH scope")
         self.assertIn(
             "working material: .claude/science/ 1, research/ 1, docs/<name>.md 1, "
-            "scripts/<name>.py 1, logs/runner-cache/ 1", lines)
+            "logs/runner-cache/ 1", lines)
         self.assertNotIn("full-read paths", out)
 
     def test_a_changed_note_prints_full(self):
@@ -189,7 +189,7 @@ class ReviewDepthGitTest(unittest.TestCase):
         code, out, _ = self.run_script("unit")
         self.assertEqual(code, 0)
         self.assertEqual(out.splitlines()[0], "DEPTH full")
-        self.assertIn("full-read paths: 1 of 6", out)
+        self.assertIn("full-read paths: 1 of 5", out)
         self.assertIn(
             "  M docs/OLD_NOTE.md: changes or deletes a file that the base holds", out)
 
@@ -213,7 +213,7 @@ class ReviewDepthGitTest(unittest.TestCase):
         self.assertEqual(result["depth"], "full")
         self.assertEqual(reasons(result), {
             "AGENTS.md": "changes a file outside the working-material paths",
-            "scripts/old_runner.py": "changes or deletes a file that the base holds",
+            "scripts/old_runner.py": "changes a file outside the working-material paths",
             "tests/test_new.py": "new file outside the working-material paths",
         })
 
@@ -254,7 +254,7 @@ class ReviewDepthGitTest(unittest.TestCase):
         code, out, _ = self.run_script("unit", "second")
         self.assertEqual(code, 0)
         self.assertEqual(out.splitlines()[0], "DEPTH full")
-        self.assertIn("full-read paths: 1 of 6", out)
+        self.assertIn("full-read paths: 1 of 5", out)
 
     def test_a_failure_prints_no_depth_line(self):
         self.add_working_material()

@@ -466,10 +466,32 @@ class HistoryTest(unittest.TestCase):
         )
         self.assertEqual(summary["review_hours"], {"n": 3, "median": 2.0, "p90": 2.0})
         self.assertEqual(summary["rounds"], {"n": 2, "median": 1.5, "p90": 2})
-        # #90010 and #90011 share one landed head, so one gate is counted.
+        # #90010 and #90011 share one train, so one gate is counted.
         self.assertEqual(
             summary["gate_seconds"], {"n": 1, "median": 415.5, "p90": 415.5}
         )
+
+    def test_gate_cost_counts_trains_with_legacy_fallback(self):
+        cases = [
+            (("train-a", "a" * 40), ("train-a", "b" * 40), 1),
+            (("train-a", "a" * 40), ("train-b", "a" * 40), 2),
+            ((None, "a" * 40), (None, "a" * 40), 1),
+            ((None, None), (None, None), 2),
+        ]
+        for first, second, count in cases:
+            with self.subTest(first=first, second=second):
+                rows = []
+                for number, (train, head) in enumerate((first, second), 1):
+                    cost = dict(LandingRecordTest.FULL, train=train, landed_head=head)
+                    rows.append({
+                        "number": number, "state": "MERGED",
+                        "createdAt": "2026-11-10T00:00:00Z",
+                        "mergedAt": "2026-11-11T12:00:00Z",
+                        "comments": [{"body": queue.format_cost_block(cost)}],
+                    })
+                history = queue.build_history(rows, 2, NOW)
+                self.assertEqual(history["summary"]["gate_seconds"],
+                                 {"n": count, "median": 415.5, "p90": 415.5})
 
     def test_nearest_rank_percentile(self):
         self.assertEqual(queue._percentile(list(range(1, 11)), 90), 9)
@@ -542,7 +564,7 @@ class RenderTest(unittest.TestCase):
         )
         self.assertIn("| #10152 |", text)
         self.assertIn("| open to merged, hours | 6 |", text)
-        self.assertIn("| gate seconds, one per landed head | 1 | 415.5 | 415.5 |", text)
+        self.assertIn("| gate seconds, one per train | 1 | 415.5 | 415.5 |", text)
         self.assertIn("7 of 10 PRs carry no cost fields", text)
         self.assertIn("1 carry a block with a problem.", text)
         self.assertIn("#90012 landing-record: missing field: recovery_ref", text)

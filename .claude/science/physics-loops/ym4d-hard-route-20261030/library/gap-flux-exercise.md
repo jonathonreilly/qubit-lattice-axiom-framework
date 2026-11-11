@@ -237,5 +237,42 @@ Hidden assumptions added: (h1) "flux sector" always meant electric flux; magneti
 
 Rows whose drop would change an owner decision: c1, c3 (whether "gap with confinement" is the right name of the crux).
 
+## Step 5. Compare with the earlier work
+
+**What was opened and how.** Search by grep over `library/gap-*.md` (45 files), `library/prior/gap-*.md` (19), `library/exercise-skill-v2.md`, `library/l17c.md`, `gates/*.md`, `parts/*.md` and FINISH rows 697 to 730, for the objects and two or more wordings each: "even sector / even subspace / centre-even / zero-flux / zero flux"; "magnetic flux / magnetic twist / dyon / SO(3) / electric-magnetic / Pfaffian / Pontryagin"; "'t Hooft"; "extremal / ergodic / mixture / convex combination / dominated / Cesaro / 1/8"; "average over twists / sum over twists / all twists"; "contractible"; "same limit / periodic limit / zero-flux ... limit". Every matching line was read. Read in full: `gap-crux-fp.md` L108-126 and L176-184 (Remark 2.A, ranking), L222-246 and L270-288 (methods, tests); `gap-crux-fp-check.md` L28-42; `gap-mid-max.md` L218-238 (Identity FL, Remark Y); `gap-skeleton-max-b.md` L362-378 (zero-flux function, Corollary 5); `gap-zero-transport.md` L34-46 (Lemma 3, Lemma 1'); `gap-seed-check.md` L30-40, L177, L191-195; `gap-phys-seed.md` L190-216, L326-330, L386-390; `gap-skeleton.md` L104-106; `exercise-skill-v2.md` L1162-1172, L1204-1210. **Not read:** the bodies of the other gap files beyond the matching lines; `gap-skeleton-final.md` Sections 4 to 13.14 beyond the matching lines (L100, L410, L508, L539). **Not searched:** origin/main and the other YM4D pull-request branches; this checkout holds only `origin/claude/ym4d-hard-route`, and I did not fetch.
+
+| Item | In the earlier work? | Where | Scope of a "new" mark |
+|---|---|---|---|
+| (F1), P_0, Z_{0,0} = (1/8) sum of the eight time-twisted Z | yes | run 2, `gap-skeleton-max-b.md` L254 (Lemma 1'), L368; `gap-zero-transport.md` L38-41 (Lemma 3); `gap-mid-max.md` L219 (Identity FL); `gap-crux-fp.md` L121 (Remark 2.A (a)) | - |
+| (TM-tw): transfer operator for twisted spatial weights, several flips, all 64 twists, covariance under permutations of the axes | yes, checked by one model | `gap-seed-check.md` L177 (Remark F3 point, Claude Opus 5.5, row 698); `gap-crux-fp-check.md` L30-38 (row 716, Claude Opus 5.5: re-derived, HOLDS) | - |
+| C1, single-slice form: functions of contractible spatial loops commute with the flips | yes | `gap-zero-transport.md` L38 Lemma 3 (d) | - |
+| C1, slab form for the class 𝔄, with the gauge-transformation argument | partly (the slab form is not in the files I searched) | - | not found in the searched files |
+| C2 (S1), (S2), (S3) | partly: Z^(0) <= Z and the even ground state are in Lemma 1' and Identity FL; lambda_m <= lambda_0 is used in Remark Y ("its top eigenvalue is that of the untwisted slice") without proof; (S1) for twisted boxes and (S2) for all 64 twists are not stated | `gap-zero-transport.md` L43-44; `gap-mid-max.md` L234 | not found in the searched files |
+| C3 (b): Theorem L1 in the even sector | partly: run 2 asserts the consequence in one sentence, with no proof ("So every infinite-volume limit ... of these tori has exponential decay of the truncated functions of contractible-loop observables") | `gap-skeleton-max-b.md` L375 | - |
+| C3 (c), (d): the periodic state equals the even state on 𝔄 (mixture argument, explicit bound); (G_ev) gives the gap of the periodic volume-first limit | **new** | - | all of the scope above; wordings searched: mixture, extremal, ergodic, convex combination, dominated, Cesaro, "1/8", "same limit", "periodic limit", "zero-flux ... limit". The nearest earlier lines: `gap-crux-fp.md` L115 (a3: "A gap for local observables in infinite volume is weaker ... no finite criterion is known for it in a gauge theory"), `gap-skeleton.md` L104 (cylinder limits are not by definition in the account's class of cubic tori), `exercise-skill-v2.md` L1206 (P' gives a gap only on the space its class generates). None states or proves C3 (c) |
+| C4, first half: the even trace is not symmetric "by its form"; crossing turns the electric twists (1,3), (1,4) into magnetic ones | yes | `gap-crux-fp.md` L122 (Remark 2.A (b)); `gap-mid-max.md` L234 (Remark Y) | - |
+| C4, identity (*) with the factor 1/4 and the projection (1 + C_1)/2; the sum rule (SR) | partly: Remark Y says "a sum over the two values of a magnetic twist of the slice" as a sketch, "not proved here"; the factor, the sixteen sectors and (SR) are not there | `gap-mid-max.md` L234 | (SR): not found in the searched files |
+| C5, full set: the sum over all 64 twists is symmetric and is 8 Tr of the direct sum over magnetic twists of T^(m) P_0 | yes | `gap-crux-fp.md` L123 (Remark 2.A (c)), checked `gap-crux-fp-check.md` L34-38 | - |
+| C5, kappa set (the sign (-1)^{Pf(k)}, sectors with electric flux equal to magnetic flux) | **new** | - | grep for dyon, Pfaffian, Pontryagin, SO(3), "electric-magnetic", "sign" near "twist": the only SO(3) lines are the Mack-Petkova splitting (`gap-crux-restate.md` L290-294) and literature notes; none is a twist sum with a sign |
+| C5, classification: exactly three; four sectors for one pair; none is the even sector alone | **new** (the "none" part sharpens Remark 2.A (b), which says "I did not prove that this trace is not symmetric") | - | same scope |
+| C6: Theorem S for the full set | partly: Remark 2.A (c), (d) sets up the full sum and reads it as having no seed in a confining phase; Theorem S for it is not stated | `gap-crux-fp.md` L123-124 | - |
+| C6: Theorem S for the kappa set | **new** | - | same scope as C5 |
+| C7: S_kappa <= S_full | **new** | - | same scope |
+| C8 (belief): in a confining phase the magnetic sectors are light | yes, RECALLED there | `gap-crux-fp.md` L124; `gap-mid-max.md` L234 | - |
+| Step 4, row c1 (the limit half needs the even sector only) | partly: named as an assumption (a2, a3), ranked sixth, not resolved | `gap-crux-fp.md` L114-115, L181 | - |
+| Step 4, row d2 (Z_2 at large beta is not a model where the target fails) | partly: a2 says "Z_2 at large beta has a bulk gap and fails the seed (F9)"; the tests of L280-281 still use it with T = the whole-space seed | `gap-crux-fp.md` L114, L280-281 | - |
+| Identity FL: 1 + S = (1 + S_0)/(1 - U); the two halves independent in the class | yes; I did not derive it; it is the stronger form of my split and I use it | `gap-mid-max.md` L219-232 (row 708) | - |
+| (Z-UNB) splits into L m_0(L) unbounded and L E_e(L) unbounded | yes | `gap-phys-seed.md` L328 (row 720, unchecked) | - |
+| (DS-tw), (W): a one-box criterion over boundary values for local observables | yes; it is the lane's one earlier candidate without flux sectors | `gap-ds-gauge.md` (row 691); `gap-crux-fp.md` L115, L245 | - |
+
+**Corrections to my inventory.** Item 5/6: (TM-tw) is not an open input. It is the Remark F3 point of `gap-seed-check.md` with the extension in `gap-crux-fp-check.md` L30-38, checked by Claude Opus 5.5 (same provider as this run). I use it with that standing. Step 3.6: the range of 1 + V is corrected in 8.5.
+
+**Where the earlier work is stronger.** Identity FL is an exact identity for the periodic box; my C2 is weaker on the periodic box and adds the twisted boxes. Run 2's Lemma 1' bounds S^(0) by the free-energy defect of the even function.
+
+**Credit.** Run 2 of Claude Fable 5.2 max (rows 670, 681: Lemma 1', Lemma 3, the zero-flux function, Corollary 5). Row 708 author (Identity FL, Remark Y). Row 712 author (Remark 2.A, assumptions a2, a3). Rows 698 and 716, Claude Opus 5.5 (the twisted transfer operator and the 64-twist form). Row 697 author (Theorem S, Theorem F). Row 700 author (Theorem L). 't Hooft (twists, electric and magnetic flux, duality). Aharony, Seiberg and Tachikawa (the three global forms; recalled).
+
+**What the fresh pass added.** C3 (c), (d); the kappa set and its Theorem S; the classification; (SR); C7; the slab form of C1.
+**What it only found again.** (F1), the zero-flux function, the full 64-twist sum, the statement that the even trace has no symmetric form, the split of the seed into a glue half and a flux half.
+
 <!-- END -->
 

@@ -57,9 +57,9 @@ If g = exp(lambda), then (V e^X)^g at the link l = (y, mu) is e^{lambda(y)} V_l 
 
 (b) A^tw(U) >= (mu_n / 16) sum over links of |X_l|^2.
 
-(c) If U' is a second configuration on Sigma_B with all defects at most delta_0(n), and U' = U on all links whose two ends have base distance at most r from the base point b_0 of a link l, then |X_l(U) - X_l(U')| <= C(n) (sqrt(delta) + sqrt(delta')) exp(-r / (3n)). [This is the meaning given to "X at a link depends on U at base distance r with weight at most C exp(-c r/n)"; c = 1/3 is absolute.]
+(c) If U' is a second configuration on Sigma_B with all defects at most delta' <= delta_0(n), and U' = U on all links whose two ends have base distance at most r from the base point b_0 of a link l, then |X_l(U) - X_l(U')| <= C_c(n) (sqrt(delta) + sqrt(delta')) exp(-r / (3n)). [This is the meaning given to "X at a link depends on U at base distance r with weight at most C exp(-c r/n)"; c = 1/3 is absolute.]
 
-Values: C(n) is a power of n (n^16 with the crude constants below) and delta_0(n) is a negative power of n. They are not optimised; see 8.3 for what an optimisation would give.
+Values (8.1): C(n) = 6.1 x 10^4 n^9, C_c(n) = 1.1 x 10^4 n^7 C(n), delta_0(n) of order n^{-32}. They are not optimised; see 8.3.
 
 Plan: section 2 linear theory (Lemma L: gap; Lemma G: Green function), 3 group estimates, 4 Lemma R (rough gauge), 5 Lemma T (transverse gauge), 6 Lemma Q (uniqueness), 7 part (b), 8 part (c) and the constants, 9 sanity check, 10 status.
 
@@ -146,3 +146,115 @@ By G3 there is k with rho(k A k^{-1}, Gamma_1), rho(k B k^{-1}, Gamma_2) <= 1.2 
 *Where a vortex would enter, and why it does not.* The only global step is C. The signs e_a(b) are a Z_2 gauge field on the base, and its curvature at a base plaquette is forced to vanish by the small defect of that plaquette. On a rectangle a flat Z_2 field is a pure gauge. So over a rectangle there is no configuration with all defects small that is not a small perturbation of V up to gauge: the second alternative of the stop rule does not occur. (On a periodic base the two base cycles carry signs that cannot be removed: the four minima of Fact 2. A centre vortex needs one base plaquette with defect of order one in each fibre over its core.) The price is the size of delta_0: Step A needs n^2 theta small and Step B n^3 theta small.
 
 *State after section 4:* rough gauge done with eps_0 = 6.5 n^3 pi sqrt(2 delta). Next: section 5, the transverse gauge by contraction.
+
+## 5. Lemma T (transverse gauge by contraction)
+
+Constants: K' := 14 K_n = 350 n^6 (so 8 K_n <= 8 e^{alpha_n} K_n <= K', as alpha_n <= 1/2), and
+
+    eps_1 := 1 / (12 C_3 K' n) = 1 / (4200 C_3 n^7).
+
+For lambda on sites and X^0 on links with all norms at most 1/2 put, by (1.2),
+
+    F_l(lambda, X^0) := L_3(tau_l lambda(y), X^0_l, -lambda(y+mu)) = X^0_l - (D_0 lambda)_l + N_l(lambda, X^0),   N_l := N_3(tau_l lambda(y), X^0_l, -lambda(y+mu)),
+
+so that (V e^{X^0})^{exp(lambda)} = V exp(F(lambda, X^0)). By (3.1) and N_3(0, b, 0) = 0: if sup |lambda|, sup |lambda'| <= r and sup |X^0| <= r then
+
+    |N_l(lambda, X^0) - N_l(lambda', X^0)| <= 2.5 C_3 r max(|lambda - lambda'|(y), |lambda - lambda'|(y+mu)),   |N_l(lambda, X^0)| <= 2.5 C_3 r max(|lambda(y)|, |lambda(y+mu)|).     (5.1)
+
+(The argument u = (tau lambda(y), X^0_l, -lambda(y+mu)) has |u| <= sqrt 3 r, tau is an isometry, and the difference of two arguments has norm at most sqrt 2 times the max; sqrt 6 <= 2.5.)
+
+**Lemma T.** Let U = V exp(X^0) on Sigma_B with sup |X^0| <= eps_0 and 6 K' eps_0 <= eps_1. Then there is lambda with sup |lambda| <= r := 2 K' eps_0 such that X := F(lambda, X^0) is transverse, and sup |X| <= 3 r = 6 K' eps_0.
+
+Proof. X = F(lambda, X^0) is transverse iff Delta_0 lambda = D_0^*(X^0 + N(lambda, X^0)), iff lambda = Phi(lambda) := G_0 D_0^* (X^0 + N(lambda, X^0)). Work in the ball sup |lambda| <= r of the finite-dimensional space of site functions with the sup norm. Here r <= eps_1/3 <= 1/2, eps_0 <= r, and 2.5 C_3 K' r <= 2.5/(36 n) <= 1/2. By Lemma G(ii) with phi = 0 and sup |D_0^* Y| <= 8 sup |Y|, the sup norm of G_0 D_0^* is at most 8 K_n <= K'. By (5.1): sup |Phi(lambda)| <= K' eps_0 + K' 2.5 C_3 r^2 <= r/2 + r/2, and sup |Phi(lambda) - Phi(lambda')| <= K' 2.5 C_3 r sup |lambda - lambda'| <= (1/2) sup |lambda - lambda'|. So Phi has a fixed point in the ball. For it, |X_l| <= |X^0_l| + |(D_0 lambda)_l| + |N_l| <= r/2 + 2r + 2.5 C_3 r^2 <= 3r. QED
+
+## 6. Lemma Q (uniqueness)
+
+**Lemma Q.** Let X, X' be transverse link fields on Sigma_B with sup |X|, sup |X'| <= eps <= eps_1, and g a gauge transformation with (V e^X)^g = V e^{X'}. Then g = 1 or g = -1 everywhere, and X' = X.
+
+Proof. *g is near the centre.* At a link l = (y, mu): g(y) V_l e^{X_l} g(y+mu)^{-1} = V_l e^{X'_l}, so g(y+mu) = e^{-X'_l} V_l^{-1} g(y) V_l e^{X_l} and rho(g(y+mu), V_l^{-1} g(y) V_l) <= 2 eps. Around the fibre cycle of direction i = 1, 2 through y: rho(g(y), Gamma_i^{-1} g(y) Gamma_i) <= 2 n eps <= 2. By G2, rho(g(y), z(y)) <= 2.4 n eps =: r_eps with z(y) in {1, -1}. For neighbours, V_l^{-1} g(y) V_l is within r_eps of z(y), so z(y+mu) != z(y) would give 2 pi <= 2 r_eps + 2 eps, which is false (r_eps <= 2.4 n eps_1 < 1). Sigma_B is connected, so z is constant and g = z exp(lambda) with sup |lambda| <= r_eps <= r_1 := 2.4 n eps_1 = 1/(5 C_3 K').
+*lambda = 0.* The centre drops out of (1.2): V e^{X'} = (V e^X)^{exp(lambda)} = V exp(F(lambda, X)), and since |X'_l| < 2 pi and F is the logarithm of norm below 2 pi, X' = F(lambda, X) = X - D_0 lambda + N(lambda, X). Both X and X' are transverse, so Delta_0 lambda = D_0^* N(lambda, X) and lambda = G_0 D_0^* N(lambda, X). By (5.1) with r = r_1 (eps <= r_1): sup |lambda| <= K' 2.5 C_3 r_1 sup |lambda| = (1/2) sup |lambda|. So lambda = 0, g = z, X' = F(0, X) = X. QED
+
+**Proof of Theorem (a)** (constants in 8.1). Lemma R gives h_1 with U^{h_1} = V e^{X^0}, sup |X^0| <= eps_0 = 6.5 n^3 pi sqrt(2 delta). Lemma T gives lambda; h := exp(lambda) h_1 has U^h = V e^X with X transverse, sup |X| <= 6 K' eps_0 = C(n) sqrt(delta) <= eps_1. If h' is as in (a), then g := h' h^{-1} satisfies (V e^X)^g = V e^{X'}, and Lemma Q gives h' = +-h, X' = X. If U is replaced by U^k, then h k^{-1} is a chart for U^k with the same X, so X(U^k) = X(U). QED
+
+## 7. Part (b): the quadratic lower bound
+
+Let U^h = V e^X with X transverse and sup |X| <= eps, where eps <= eps_2 := min(eps_1, 1/(13 C_4 n)). A^tw is gauge invariant, and by (1.1), d_p = 1 - cos(|Y_p|/2) with Y_p = log E_p = (D_1 X)_p + Q_p, Q_p = Q_4 of the four arguments tau_nu X_mu(y), X_nu(y+mu), -X_mu(y+nu), -tau_mu X_nu(y) (all of norm at most eps <= 1/2). Let u_p be the vector of the four arguments; |u_p|^2 is the sum of |X_l|^2 over the four links of p, and |u_p| <= 2 eps. By (3.2), |Q_p| <= (C_4/2) |u_p|^2 <= C_4 eps |u_p|. Each link lies in at most 6 plaquettes, so sum_p |u_p|^2 <= 6 |X|^2 (|X|^2 := sum over links of |X_l|^2), and |Q| <= sqrt 6 C_4 eps |X| in l^2 over plaquettes. By Lemma L(ii), |D_1 X| >= sqrt(mu_n) |X|. Since sqrt(mu_n) >= 2/n and eps <= 1/(13 C_4 n): sqrt 6 C_4 eps <= sqrt(mu_n)/10. So
+
+    |Y| >= |D_1 X| - |Q| >= (9/10) sqrt(mu_n) |X|.
+
+Each |Y_p| <= |(D_1 X)_p| + |Q_p| <= 4 eps + 2 C_4 eps^2 <= 1, and 1 - cos(t/2) >= (t^2/8)(1 - t^2/48) >= (47/48) t^2/8. Hence
+
+    A^tw(U) = sum_p (1 - cos(|Y_p|/2)) >= (47/48)(1/8)(81/100) mu_n |X|^2 >= (mu_n/16) |X|^2.      QED (b)
+
+In the same way A^tw(U) <= (1/8)(|D_1 X| + |Q|)^2, so A^tw(U) = (1/8) |D_1 X|^2 (1 + O(C_4 n eps)): the quadratic form is (1/8)(X, K_V X) with K_V = D_1^* D_1, as in Fact 3; the constant 1/16 can be replaced by any number below 1/8 at the price of a smaller delta_0.
+
+*State after section 7:* (a) and (b) proved. Next: section 8, part (c) and the list of constants.
+
+## 8. Part (c), and the constants
+
+### 8.1 The constants, in order of choice
+
+1. C_3, C_4 >= 1: absolute, from G4.
+2. mu_n = (2 sin(pi/2n))^2, alpha_n = sqrt(mu_n/8), K_n = 25 n^6, K' = 350 n^6.
+3. eps_1 = 1/(4200 C_3 n^7); eps_2 = min(eps_1, 1/(13 C_4 n)).
+4. C(n) := 6.1 x 10^4 n^9, which is at least 6 K' x 6.5 n^3 x pi sqrt 2 = 60647 n^9.
+5. delta_0(n) := (eps_2 / C(n))^2. Then for delta <= delta_0: eps_0 = 6.5 n^3 pi sqrt(2 delta) satisfies 6 K' eps_0 <= C(n) sqrt(delta) <= eps_2 <= eps_1 (hypothesis of Lemma T, and of (b)), and 27 n^3 theta = (27/6.5) eps_0 <= eps_2 < 2 pi (hypothesis of Lemma R).
+6. C_c(n) := 1.1 x 10^4 n^7 C(n), the constant of (c).
+
+So delta_0(n) is of order n^{-32} and C(n) of order n^9. These are crude; see 8.3.
+
+### 8.2 Proof of (c), in a slightly stronger form
+
+**(c').** Let U on Sigma_B and U' on Sigma_{B'} have all defects at most delta, delta' <= delta_0(n). Let b_0 be in both rectangles, r >= 0, R := {b : |b - b_0|_1 <= r}, and suppose B and B' have the same intersection with R and U = U' on every link whose two ends lie over R. Then for every link l with base point b_0 (in both lattices), |X_l(U) - X_l(U')| <= C_c(n) (sqrt(delta) + sqrt(delta')) exp(-alpha_n r/2), and alpha_n/2 >= 1/(2 sqrt 2 n) >= 1/(3n).
+
+Proof. Let h, X and h', X' be the charts, eps := max(sup |X|, sup |X'|) <= C(n)(sqrt(delta) + sqrt(delta')) and eps <= eps_1. If r < 2 the claim follows from |X_l - X'_l| <= 2 eps. Let r >= 2. Write R for R intersected with B as well; it is connected (from any of its points one can move one coordinate at a time towards b_0 inside R and B).
+
+*Step 1.* g := h' h^{-1} on the sites over R satisfies g(y) V_l e^{X_l} g(y+mu)^{-1} = V_l e^{X'_l} on every link with both ends over R, because U = U' there. The first part of the proof of Lemma Q used only the fibre links over one base point and connectedness; so g = z exp(lambda) over R with one sign z and sup |lambda| <= r_eps = 2.4 n eps, and X'_l = F_l(lambda, X) on the links over R.
+
+*Step 2.* Let R^o := {|b - b_0|_1 <= r-1} and R^oo := {|b - b_0|_1 <= r-2} (inside B). For y over R^o, every link of Sigma_B at y has both ends over R, and the links at y are the same in Sigma_B and Sigma_{B'}. So (D_0^* X)(y) = 0 = (D_0^* X')(y) reads (D_0^* D_0 lambda)(y) = (D_0^* N(lambda, X))(y), for y over R^o.
+Let lam := lambda on the sites over R^o and 0 on all other sites of Sigma_B; Nt_l := N_3(tau_l lam(y), X_l, -lam(y+mu)) on all links of Sigma_B; f := Delta_0 lam - D_0^* Nt. For y over R^oo all neighbours of y are over R^o, so f(y) = 0. For every y: |f(y)| <= 16 sup |lam| + 8 x 2.5 C_3 r_eps sup |lam| <= 17 r_eps (using (5.1) and 2.5 C_3 r_eps <= 1/(2K')).
+
+*Step 3.* lam = G_0 f + G_0 D_0^* Nt on Sigma_B. Let w(y) := exp(-(alpha_n/2) |b(y) - b_0|_1) and |v|_w := sup w |v|, with w of a link taken at its starting site. Neighbouring sites have w within a factor e^{alpha_n/2}. By (5.1), |Nt|_w <= 2.5 C_3 r_eps e^{alpha_n/2} |lam|_w; |D_0^* Y|_w <= 8 e^{alpha_n/2} |Y|_w; and Lemma G(ii) with phi = -|b - b_0|_1 gives |G_0 v|_w <= K_n |v|_w. So
+
+    |lam|_w <= K_n |f|_w + K_n 8 e^{alpha_n} 2.5 C_3 r_eps |lam|_w <= K_n |f|_w + (1/2) |lam|_w,
+
+since K_n 8 e^{alpha_n} <= K' and 2.5 C_3 K' r_eps <= 2.5 C_3 K' r_1 = 1/2. And f vanishes over R^oo, so |f|_w <= 17 r_eps exp(-(alpha_n/2)(r-1)). Hence |lam|_w <= 34 K_n r_eps exp(-(alpha_n/2)(r-1)).
+
+*Step 4.* The two ends of l have base distance 0 and at most 1 from b_0; both are over R^o, where lam = lambda. So |lambda| <= m := 34 K_n r_eps exp(-(alpha_n/2)(r-2)) at both ends, and X'_l - X_l = -(D_0 lambda)_l + N_l(lambda, X) has norm at most 2m + 2.5 C_3 r_eps m <= 3m = 102 K_n 2.4 n eps e^{alpha_n} exp(-alpha_n r/2) <= 1.1 x 10^4 n^7 eps exp(-alpha_n r/2). QED
+
+(c) of the theorem is the case B' = B.
+
+*What (c') gives beyond (c).* The chart is local: the chart of a sub-rectangle and the chart of the whole rectangle agree, up to C_c sqrt(delta) exp(-r/(3n)), at base distance r inside the sub-rectangle. So X_l is, up to that error, a function of the links within base distance r.
+
+### 8.3 Remarks on the sizes (not proved here, not used)
+
+- With the heat-kernel bound of the remark in 2.3 in place of K_n in Lemmas T and Q, eps_1 becomes of order 1/(n^3 log n), and delta_0(n) of order n^{-12} (log n)^{-2}, limited by eps_0 ~ n^3 theta of Lemma R times the norm n^2 log n of G_0, and by Lemma Q.
+- The natural size is delta_0(n) of order n^{-4}: Step A of Lemma R needs the commutator of the fibre holonomies within O(1) of -1, that is n^2 theta small. Whether the chart exists for all delta below c n^{-4} is not decided here; the brief's guess was this order. It affects only the value of beta_0(n) in the follow-up.
+- sup |X| <= C(n) sqrt(delta) cannot be improved to a constant free of n in general: a slowly varying fibre holonomy costs defect of order (angle/n)^2 per plaquette.
+
+### 8.4 Regions with holes (remark for `gap-twist-bad` and `gap-twist-lat`; argument indicated, not written out)
+
+For the follow-ups the good region is the complement of bad blocks, not a rectangle. What changes:
+- Steps A and B of Lemma R use one fibre and one base link at a time; they hold over any set of base points and base links.
+- Step C needs the flat Z_2 field e_a(b) on the good base region D to be a pure gauge. If D has holes, the class of e in H^1(D; Z_2) is an invariant of U (it is the centre flux through each hole: the vortex sectors). Then U^h = e V exp(X) with a fixed representative e of the class; e is central, so the transports tau, the operators D_0, D_1, and Lemmas T and Q are unchanged, and the plaquettes of D keep z_p.
+- Lemma L was proved with the product of four one-dimensional complexes. For a base region D that is any subcomplex of Z^2, write Sigma_D as the product of the fibre torus complex and D: the same anticommutation gives d^* d + d d^* = Delta_fibre x 1 + 1 x Delta_D, Delta_fibre >= mu_n in all degrees by (2.1) for the torus alone, and Delta_D >= 0. Lemma G uses only that a site has at most four base neighbours.
+So (CH) should hold over any connected good region with the class in H^1(D; Z_2) as extra discrete datum. This is the form the polymer expansion will need; it is a statement to prove in `gap-twist-bad`, not a result of this file.
+
+## 9. Sanity check (guides only; discharges nothing)
+
+Script `/tmp/gtc-scratch/check_L.py` on the worker (not committed), run under the numeric lock at 62 percent memory free. Pass criteria written first: the least eigenvalue of Delta_0 and of D_1^* D_1 + D_0 D_0^* on Sigma_B, built from the definitions of 1.2 with the 3 x 3 matrices Ad(V), is at least mu_n; D_1 D_0 = 0; and A^tw(V e^X) / ((1/8)|D_1 X|^2) is within 10^-3 of 1 for a random transverse X of size 10^-3. Result: PASS for (n, B) = (2, 1x1), (2, 3x2), (3, 2x2), (3, 3x1), (4, 2x1); in every case both least eigenvalues equal mu_n to six digits (2, 1, 0.585786), and the ratio is 1 within 3 x 10^-5. This supports the sign conventions of (1.1), D_0, D_1 and the value 1/8; it does not test Lemmas R, T, Q or part (c).
+
+## 10. Status block
+
+**Proved here (by hand, not checked by another model; label: unchecked).**
+- Theorem (CH), parts (a), (b), (c), for every n >= 2 and every rectangle B, with delta_0(n) = (eps_2/C(n))^2, C(n) = 6.1 x 10^4 n^9, eps_2 = min(1/(4200 C_3 n^7), 1/(13 C_4 n)), c(n) = mu_n/16 in (b), rate 1/(3n) and constant 6.7 x 10^8 n^16 in (c); C_3, C_4 are the two absolute second-derivative bounds of G4, defined by compactness.
+- On the way: Lemma L (gap mu_n of the twisted Hodge form on all cochains, free boundary), Lemma G (Green function of Delta_0: kernel decay at rate alpha_n >= 1/(sqrt 2 n), weighted sup norm at most 25 n^6), Lemma R (rough gauge), Lemma T (transverse gauge), Lemma Q (uniqueness up to the centre), (c') (locality across different rectangles).
+- The second alternative of the stop rule does not occur over a rectangle: no configuration with all defects below delta_0(n) fails to be a small perturbation of V up to gauge (Step C of Lemma R).
+
+**Differences from the brief's wording.** (i) Uniqueness in (a) is among charts with sup |X| <= eps_1(n). (ii) (c) is stated as a comparison of two configurations that agree near the link. (iii) delta_0(n) is of order n^{-32}, far below the n^{-4} that the brief names as the natural limit; the statement asked only for delta_0(n) > 0.
+
+**Open (nothing inside this row).** Not done because not asked: explicit values of C_3, C_4; the optimal delta_0(n) (8.3); the chart over regions with holes (8.4); derivative bounds for U -> X (the Jacobian of the chart, which `gap-twist-lat` will need for the change of variables).
+
+**The one exact next statement (`gap-twist-bad`, with the constants of this file).** Fix n >= 2 and delta_0 = delta_0(n) of 8.1. For base blocks of side n and a connected set D of blocks in (Z/M)^2, let Z_D(beta) be the integral of exp(-beta A^tw(U)) dU over the configurations on Lambda(n, M) that have, in each block of D, a plaquette over that block with d_p(U) > delta_0, and Z(beta) the unrestricted integral. Then Z_D(beta)/Z(beta) <= exp(-(beta delta_0/2 - C n^4) |D|) for all M and beta, with a constant C to be found (the form is the brief's; neither the form nor the power n^4 is checked here). Inputs from here: (a) and (b) for the lower bound on Z (Gaussian integral over the chart on the good configurations), and 8.4 for regions with holes.
+
+RESULT: (CH) proved by hand in full, parts (a), (b), (c), over every rectangle, with explicit delta_0(n) ~ n^{-32}, C(n) ~ n^9, c(n) = mu_n/16, decay rate 1/(3n); no vortex obstruction over a rectangle. Unchecked by another model. Open: nothing in the row; follow-up `gap-twist-bad` (and the chart over regions with holes, 8.4).

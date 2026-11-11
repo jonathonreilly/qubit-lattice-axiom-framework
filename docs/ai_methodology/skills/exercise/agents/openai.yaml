@@ -1,7 +1,7 @@
 interface:
   display_name: "Exercise"
-  short_description: "Get past a physics wall, or price it"
-  default_prompt: "Use $exercise to state the current physics wall plainly, find the premise it rests on, generate and try to kill independent routes, run the cheapest decisive test, and report in plain language."
+  short_description: "Get past a blocked lane, or price it"
+  default_prompt: "Use $exercise on the current wall: state it plainly, list what is known to be true with a mark on each item, reason up from that list before reading earlier attacks, list every assumption and what follows if it is wrong, audit the discard tests and re-judge every set-aside method, compare with earlier work, make real attempts, and report in plain language."
 
 policy:
   allow_implicit_invocation: true

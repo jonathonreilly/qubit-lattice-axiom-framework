@@ -7,7 +7,9 @@ Queue row 680. Pinned commit dcb15d3d2. Brief: Item 2 of Part 4 of `library/gap-
 
 ## Step 0. Started 2026-11-11T04:40Z
 
-Reading: the brief, sections 1.7, 2.4, 2.5 of `library/gap-skeleton-max-b.md`, `library/gap-skeleton-final.md` (nodes Z5, Z7), the account lines named in the brief. Nothing proved yet.
+Reading: the brief, sections 1.7, 2.4, 2.5 of `library/gap-skeleton-max-b.md`, `library/gap-skeleton-final.md` (nodes Z5, Z7), the account lines named in the brief.
+
+**Run ended 2026-11-11T06:50Z. The summary is the status block, Section 7.** In one paragraph: part (i) is proved for the explicit two-loop function beta^p e^{-c beta} (Theorem HM-s); its use for the account's a(beta) needs an input (2L) that the account does not contain. Part (ii): the literal node Z7 (no zeros in the scaling region) is not implied by positivity of the levels (Example 3.8); it is replaced by dominance of one eigenvalue, from which the gap bound follows directly (Theorem V); under the named hypothesis (SCAL_B), dominance follows from the positivity statement (CP) of the brief (Theorem R). Nothing here is checked by another model. No mass gap is proved.
 
 ## 1. Repo search, duplicate check, sources (done 04:40-05:10Z)
 
@@ -68,7 +70,7 @@ Remark (what the lemma is). In the coordinate zeta = psi(beta) the set R is the 
 
 ### 2.3 The domain: a Lipschitz lens inside the brief's domain
 
-Parameters: r_0 > 0 (strong-coupling radius), w_0 > 0 (half-width of the tube over [r_0, beta_1]), beta_1 >= x_*, with
+Parameters: r_0 > 0 (strong-coupling radius), w_0 > 0 (half-width of the tube over [r_0, beta_1]), beta_1 >= x_*, r_0 < beta_1, with
   max(w_0, 5 r_0/4) < pi/(2c).   (For SU(2): w_0 <= 1/2, r_0 <= 2/5 suffice. Theorem SC has r_0 = 1/51200.)
 For X > beta_1 + 4 put, with med the middle one of three numbers and (s)_+ = max(s, 0),
   tau(x) = med{ w_0, 5 r_0/4 - 2 (x - r_0)_+, 5 r_0/4 + 2 (x - r_0)_+ } + 2 (x - beta_1)_+,
@@ -106,7 +108,7 @@ Take eps = min{(eps_1/2) e^{xi_0}, eps_2/F_max}. QED.
 Remarks.
 1. **The constants eps_1 and eps_2 are defined by an existence argument** (the minimum of a positive continuous function on a compact set). They depend on the tube over [r_0, beta_1] through the harmonic measure of D_{X_0}. Lemma HM (plan 1.7) and Harnack chains would make them explicit; no consumer needs that.
 2. **Corollary 5' (check, Section 4) now has its harmonic-measure input** in the form it asks for: a family D_X of lenses, the same r_0, and omega_{D_X}(beta) >= eps' a(beta) on [beta_1, X - s], given (2L).
-3. **Robust form (Lemma A is the tool).** Let psi be any function analytic on P, real on the real axis, with Re psi' >= c/2 and |psi' - c| <= c/2. Then (F1), (F2) hold for psi, and the proof of 2.4 gives: if a lens D_X follows the curve y = Y_psi^(x) of some psi^ with Y_psi < Y_psi^, then omega_X(beta) >= eps e^{-psi(beta)} on [beta_1, X - s]. Example: psi = phi + kappa'/beta for any kappa' in [-c/4, c/4]; its region differs from S by an angle of order |Im beta|/|beta|^2. So a correction factor 1 + O(1/beta) in the scale function, real on the real axis, moves the curves and changes only eps. A change of p changes the answer by a power of beta: for the region of beta^{p'} e^{-c beta} the bound is eps beta^{p'} e^{-c beta}.
+3. **Robust form.** The exact statement is Theorem HM-s' in 4.0: the same bound, omega >= eps e^{-psi}, for the lens that follows the curves of any admissible psi. Example: psi = phi + kappa'/beta; its region differs from S by an angle of order |Im beta|/|beta|^2. So a correction factor 1 + O(1/beta) in the scale function, real on the real axis, moves the curves and changes only eps. A change of p changes the answer by a power of beta: for the region of beta^{p'} e^{-c beta} the bound is eps beta^{p'} e^{-c beta}.
 4. **What it does not show.** It does not show that the lattice theory is zero-free, or has a dominant eigenvalue, in S. It does not show (2L). It is a statement about harmonic functions in an explicit domain.
 5. Sharpness (expected, not proved, not used): in the coordinate zeta = phi(beta) the function Re F = e^{-Re zeta} cos(Im zeta) is positive harmonic in S and vanishes on the sides. So I expect that no domain inside S has harmonic measure larger than a constant times F on the real axis far to the right, that is, that the exponent is exact. A proof needs a comparison at the corners of a cross-cut (a boundary Harnack inequality), which I did not write.
 
@@ -276,3 +278,51 @@ Converse (exact scaling). If (S2) holds with equality and eta = 0 for a surjecti
 5. Why (S2) is relative to the real part. In test 1, the margin is Re sqrt(...) which tends to k/|l| > 0 at theta -> +-pi/2 for k != 0 but to 0 for k = 0 (a particle at rest: e^{-i theta} m). So near the side curves the real part of the lowest levels is a small fraction of their modulus, and an error relative to the modulus (lattice artefacts, or the difference between psi and the exact scale function) can change its sign in a thin sliver along the sides. The remedy within the present framework: such errors change the region to that of another admissible function (4.0), and Theorem HM-s' then loses only a constant, as long as the change of angle is at most of order |Im beta|/|beta|^2. A larger change, of order 1/|beta|, changes the power of beta in the bound (Section 2, Remark 3). I did not write this as a theorem, because the error terms are not known.
 
 **Standing after Step 4 (06:35Z).** The scaling statement is the named hypothesis (SCAL_B). The reduction to the continuum levels is Theorem R. Open: (SCAL_B) itself, (CP), (2L).
+
+## 5. The input (2L) in terms of the flow (a reduction; the hypothesis is not in the account)
+
+Setting (account 1658-1664; Sussman and Alpoge, with Claude and Codex): x_0 = beta, x_k = x_{k-1} - b_k, K(beta, g) = min{k: x_k <= g^{-2} + B_sharp}, a(beta) = L^{-K(beta, g)}.
+
+**Lemma 2L.** Assume (B3+): there are c_0 > 0, c_1 real and R_Sigma such that, for every run and every step k <= K(beta, g), b_k = c_0 + c_1/x_{k-1} + r_k with sum_k |r_k| <= R_Sigma and c_0/2 <= b_k <= 2 c_0. Then there is C with
+  | K(beta, g) - (beta - (c_1/c_0) log beta)/c_0 | <= C  for all beta >= g^{-2} + B_sharp,
+and so C'^{-1} beta^p e^{-c beta} <= a(beta) <= C' beta^p e^{-c beta} with c = (log L)/c_0 and p = c_1 (log L)/c_0^2. With c_0 = 11 N^2 log L/(12 pi^2) this is c = 12 pi^2/(11 N^2).
+Proof. Write K = K(beta, g) and x_min = g^{-2} + B_sharp - 2 c_0, so x_min < x_K <= g^{-2} + B_sharp. Summing the steps: beta - x_K = c_0 K + c_1 sum_{k<=K} 1/x_{k-1} + sum r_k. For each step, int_{x_k}^{x_{k-1}} dx/x = b_k/x_{k-1} + delta_k with 0 <= delta_k <= b_k^2/(x_k x_{k-1}) <= 4 c_0^2/(x_k x_{k-1}). So log(beta/x_K) = c_0 sum 1/x_{k-1} + sum (b_k - c_0)/x_{k-1} + sum delta_k. The x_k decrease in steps of at least c_0/2 and stay above x_min, so sum_k 1/(x_k x_{k-1}) and sum_k 1/x_{k-1}^2 are at most (2/c_0)/x_min + 1/x_min^2. With |b_k - c_0| <= |c_1|/x_{k-1} + |r_k|, the last two sums are bounded uniformly in beta. So sum 1/x_{k-1} = (1/c_0) log beta + O(1), and c_0 K = beta - (c_1/c_0) log beta + O(1). QED.
+
+Standing. The account's statement B3 (2254-2263) has b_j = b_j^0 + f_j + q_j with |f_j| <= C x_{j-1}^{-1/2}(log x_{j-1})^p. That error is not summable; it allows a(beta) to differ from every beta^p e^{-c beta} by a factor exp(O(beta^{1/2} polylog)). So (B3+), the flow law with its second coefficient and a summable remainder, is a statement beyond the account's catalogue. The expected value is c_1 (log L)/c_0^2 = 51/121 for SU(2) (two-loop coefficient; literature, recalled).
+
+One-sided form. Theorem HM-s uses only a(beta) <= C_2 beta^p e^{-c beta}, that is K >= (beta - (c_1/c_0) log beta)/c_0 - C: many steps. This follows from **(B3+, one-sided)**: c_1 >= 0, c_0/2 <= b_k <= 2 c_0, and c_0 - C_3/x_{k-1} - |r_k| <= b_k <= c_0 + c_1/x_{k-1} + |r_k| with sum_k |r_k| <= R_Sigma. Proof: the lower bound on b_k gives sum (c_0 - b_k)_+/x_{k-1} = O(1), so the identity for log(beta/x_K) in the proof above gives sum 1/x_{k-1} <= (1/c_0) log beta + O(1). The upper bound on b_k gives beta - x_K <= c_0 K + c_1 sum 1/x_{k-1} + R_Sigma. So c_0 K >= beta - (c_1/c_0) log beta - O(1). QED. The second coefficient is needed only as an upper bound for the increments.
+
+## 6. What failed, what was not done
+
+1. **The literal node Z7 failed** (Example 3.8 and its consequence 2): zero-freeness of all Z(k, B; .) on a domain that follows the side curves is not implied by positivity of the levels and is expected to be false. Repaired by Theorem V. This is one failure, repaired; the stop rule's "three ways" does not apply.
+2. **The scaling statement is not derived from the account's estimates.** The brief asks for a proof "under a named hypothesis on the existence estimates for boxes with free walls at complex bare coupling". I could not state such a hypothesis at the level of the estimates (the source bound D1, packages A-F) and derive scaling of the spectrum from it: the account does not derive convergence of spectra even on periodic tori at real coupling. So (SCAL_B) is stated at the level of its conclusion, in the weakest form that Theorem R uses. The brief foresaw this stop ("the account has no boxes with free walls").
+3. **(2L) is not in the account** (Sections 1, 5). Theorem HM-s is unconditional as a statement about the explicit function beta^p e^{-c beta}; its use for a(beta) needs (2L).
+4. **Not done.** No numeric run (none was needed; every step is by hand). No reading of row 667 beyond what the check quotes. No reading of the checks of rows 683 and 677. The cited input (FD) (Fredholm determinant of a trace-class operator, multiplicities) is not rebuilt. The constants eps_1, eps_2 of Theorem HM-s are not explicit.
+5. **Scope note.** Theorem V, Lemma G and Propositions C, D were not named in the brief. I checked `library/open-core.md`, `library/open-registry.md` and the FINISH rows: no row covers them. They are the content of the correction of Z7, so they belong to this item.
+
+## 7. Status block
+
+**Proved here (by Claude Fable 5.2 medium; not checked by another model).**
+- Theorem HM-s and HM-s' (2.4, 4.0), with Lemma A and Lemma B: for the Lipschitz lens D_X that follows the curves on which beta^p e^{-c beta} (or e^{-psi}, psi admissible) is imaginary, omega_{D_X}(beta) >= eps beta^p e^{-c beta} on [beta_1, X - s], eps independent of X. The lens satisfies every shape hypothesis of the corrected Theorem ZB. This is node Z5 (N5), given the input (2L).
+- (TM_B-c) (3.1): the transfer operator of a box with free walls is entire in beta in trace norm, and Tr T_B(beta)^k = Z(k, B; beta) for complex beta.
+- Lemma G (3.3) and Proposition C (3.4): Theorem SC implies a simple strictly dominant eigenvalue of T_B(beta), with gap at least 4 log(1/(12800 |beta|)), at every complex beta in the disc |beta| < 1/12800. Rests on Theorem SC (row 683) and the cited input (FD).
+- Proposition D (3.5): under the hypotheses of the corrected Theorem ZB, dominance and m_B >= kappa_0 omega_D hold at every complex point of the domain. Rests on the check's bound (row 681).
+- Lemma V (Vesentini, rebuilt) and Theorem V (3.6): dominance on D' implies m_B >= kappa_0 omega_D on D'. No shape condition, no zero-freeness.
+- Lemma E, Corollary 5'' (3.7): the conditional theorem of Route Z with hypotheses (ZF_B-x) on the tube lens, (DOM_B-s) in the scaling region, (2L).
+- Example 3.8: scaling and positivity of the levels do not imply (ZF_B-s).
+- Lemma U (4.1), Theorem R (4.3): under (SCAL_B), the statement (CP) on the continuum levels implies (DOM_B-s), and with the other inputs the gap in physical units.
+- Lemma 2L (Section 5): (2L) from a flow law with second coefficient and summable remainder.
+
+**Verdicts for the skeleton.**
+- Z5 (HM): PROVED-UNCHECKED, given (2L). (2L) is a new open input under Z0.
+- Z7 (ZF_B-s): as stated, NOT IMPLIED by its intended reduction and expected false; REPLACED by (DOM_B-s). The reduction of (DOM_B-s) to (CP) is PROVED-UNCHECKED under the named hypothesis (SCAL_B).
+- Z4, Z8: Theorem V and Corollary 5'' are alternatives to Theorem ZB and Corollary 5' whose hypothesis in the scaling region can hold.
+- Z6 is untouched. Proposition D shows that its zero-free form on a lens gives dominance there, so the two forms of the crux fit together.
+
+**Open.**
+- (SCAL_B): scaling of the levels of boxes with free walls at complex bare coupling. No part of it is proved, at real or complex coupling.
+- (CP): Re(e^{-i theta} (E_i - E_0)(|l| e^{-i theta})) > 0 for the continuum box. Passes the free tests 1, 2 of 4.4; fails for a level of dimension two (test 3) and at a branch point of the vacuum level (test 4).
+- (2L), equivalently the one-sided (B3+).
+- The checks of this file by another model: Lemma A and Theorem HM-s; Lemma G; Theorem V; Proposition D against the check's 3.4.
+
+**The one exact next statement.** (B3+, one-sided), for the account's flow: there are c_1 >= 0, C_3 and R_Sigma such that for every run and every step before first passage, c_0 - C_3/x_{k-1} - |r_k| <= b_k <= c_0 + c_1/x_{k-1} + |r_k| with sum_k |r_k| <= R_Sigma, c_0 = 11 N^2 log L/(12 pi^2); with the value c_1 (log L)/c_0^2 = 51/121 for N = 2. It is perturbative, it is at real coupling, it is on the account's own objects, and without it node Z5 says nothing about a(beta). (The brief's follow-up `gap-zf-box-s-2`, the source bound for a box with free walls with a wall term, stays the first step toward (SCAL_B); it is at real coupling and does not by itself give convergence of spectra.)

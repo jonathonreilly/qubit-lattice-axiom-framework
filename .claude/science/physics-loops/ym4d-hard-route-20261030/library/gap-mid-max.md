@@ -11,6 +11,9 @@ Pinned at commit 43010014c on `claude/ym4d-hard-route`. Author run, not a check.
 
 - 2026-11-11 10:45 UTC. Started. No earlier work of this item in the file at the pinned commit. Reading the files the row names.
 - Step 1 done: reading, duplicate check, Part 1 and the first status block (Sections 1 to 3).
+- Step 2 done: attempt 1, the coupling direction (Section 4).
+- Step 3 done: attempt 2 (Section 5), the flux split (Section 6), attempt 3 (Section 7).
+- Step 4 done: Section 8 and the final status block (Section 9). A last pass over the proofs follows; corrections, if any, are marked in the text.
 
 ## 1. Position, reading state, duplicate check, credits
 
@@ -29,7 +32,7 @@ Pinned at commit 43010014c on `claude/ym4d-hard-route`. Author run, not a check.
 
 **Marks.** PROVED = proved by hand in this file from the named inputs; not checked by another model. PROVED GIVEN (X). GUIDE = estimate or recalled number, used in no proof. RECALLED = a known fact used only in a test. OPEN.
 
-**Notation.** As in `gap-crux-restate.md` Section 1 and `gap-seed-shape.md` Section 1. Box B = (b_1, b_2, b_3), abs(B) = b_1 b_2 b_3, all sides at least 3. T_B(beta) is the transfer operator, lambda_0 > lambda_1 >= ... its eigenvalues, rho_i = lambda_i / lambda_0, E_i = log(1/rho_i). For real t >= 2:
+**Notation.** As in `gap-crux-restate.md` Section 1 and `gap-seed-shape.md` Section 1. Box B = (b_1, b_2, b_3), abs(B) = b_1 b_2 b_3, all sides at least 3. T_B(beta) is the transfer operator, lambda_0 > lambda_1 >= ... its eigenvalues, rho_i = lambda_i / lambda_0, E_i = log(1/rho_i). For real t >= 3 (T^3 is trace class, so the sum converges):
 
 G(t; B; beta) := log(1 + sum over i >= 1 of rho_i^t) = log Tr T_B^t - t log lambda_0.
 
@@ -54,7 +57,7 @@ A second remark, on K7. It is the sharpest test, and I use it as test (iv) next 
 
 **C-B. Strict fall of the Casimir free energy of the symmetric torus (lead (a)).**
 
-- Proposition Delta (Section 5, PROVED GIVEN Theorem SH): for every a >= 3 and r = b/a > 1, S(a; b^3) <= exp(r^3 Delta(a, a, a, a)) - 1. So Delta(a^4) <= 6.1 x 10^(-4) at one a gives the seed at r = 4. In a model of the class with no uniform gap, Delta(a^4) > 6.1 x 10^(-4) for every a >= 3.
+- Proposition Delta (Section 4.3, PROVED GIVEN Theorem SH): for every a >= 3 and r = b/a > 1, S(a; b^3) <= exp(r^3 Delta(a, a, a, a)) - 1. So Delta(a^4) <= 6.1 x 10^(-4) at one a gives the seed at r = 4. In a model of the class with no uniform gap, Delta(a^4) > 6.1 x 10^(-4) for every a >= 3.
 - (CAS) There are theta < 1 and M such that Delta(3^4) <= M and, for every a >= 3 with 6.1 x 10^(-4) < Delta(a^4) <= M: Delta((2a)^4) <= theta Delta(a^4).
 - What it gives: after at most log(M / 6.1 x 10^(-4)) / log(1/theta) doublings from a = 3 the seed holds (immediate from Proposition Delta).
 - (i) The group would enter in the proof of theta < 1. (ii) U(1) at weak coupling: Delta(a^4) tends to a constant of the free Maxwell field on the symmetric torus (RECALLED: scale invariance), so no theta < 1; by Proposition Delta that constant is above 6.1 x 10^(-4), a fact about every massless theory of the class. Z_2 at large beta: Delta(a^4) rises to log 8 (RECALLED: eight flux sectors). (iii) No proof exists. (iv) On the first-order line Delta(a^4) rises to log 2.
@@ -76,10 +79,10 @@ A second remark, on K7. It is the sharpest test, and I use it as test (iv) next 
 
 ## 3. Status block (kept current)
 
-- Written: Sections 0 to 3 (Part 1) and Section 4 (attempt 1). Sections 5 to 7 follow; statements quoted above with "Section 5" to "Section 7" are not yet written out below unless this line is updated.
-- Proved so far in this file (not checked): Lemma 4.1, Lemma 4.2, Theorem TR, Proposition Delta (stated in 4.3, proof there), Corollary TR1, Remark LEV.
-- Failed: the deficit bound (DEF_K), in three ways (Section 4.4).
-- Open: (VIR_K) for SU(2) with K of order log b; (CAS); (MF) and (S_0); the seed at a coupling of order one.
+- Written: Sections 0 to 9. The file is complete for this run. The final status block is Section 9.
+- Proved in this file (not checked): Lemma 4.1, Lemma 4.2, Theorem TR, Remark LEV, Proposition Delta, Corollary TR1, Theorem CRIT, Identity FL, Proposition BE, Lemma M, Proposition MIX.
+- Failed: the deficit bound (DEF_K), in three ways (Section 4.4); (BE-block), by a counterexample (Section 7).
+- Open: (VIR-log) for SU(2); (NOCRIT); (MF) and (S_0); the seed at a coupling of order one.
 
 ## 4. Part 2, attempt 1: transport of the seed along the coupling (C-A)
 
@@ -117,11 +120,13 @@ By the mean value theorem in t the first bracket is (dG/dt)(xi_h; s+h)(tau(s+h) 
 A continuous function with this property is non-increasing. (For eps > 0 let psi(s) = phi(s) - eps s. If psi(s_2) > psi(s_1) for some s_1 < s_2, take c strictly between, and s* the supremum of the s in [s_1, s_2] with psi(s) <= c. Then s* < s_2, psi(s*) = c and psi > c on (s*, s_2], so the upper right derivative of psi at s* is at least 0. But it is at most -eps. So psi is non-increasing for every eps > 0, and so is phi.)
 Last claim: G is non-increasing in t. QED
 
+**Remark CH (PROVED, by the same proof).** The proof uses (VIR_K) only at the one time t = t_0 E(s) for each s, on the characteristic curve. So the hypothesis can be weakened to: for every s in [beta_0, beta_1), the inequality holds at t = t_0 E(s). On that curve the thermal sum is at most its value at (t_0, beta_0), which is small in the use below. So what has to be bounded is the rate K at times where the box is already cold.
+
 **Remark LEV (a transparent sufficient condition; PROVED).** Order the levels, E_1(s) <= E_2(s) <= ... . If for all s < s' in the interval and all i >= 1
 
 (LEV_K) E_i(s') >= E_i(s) exp(- integral of K over [s, s']),
 
-then G(t exp(integral of K over [s, s']); B; s') <= G(t; B; s) for every t >= 2, term by term in the sum. So the conclusion of Theorem TR holds with no derivative. (LEV_K) says: no ordered level falls faster than at the logarithmic rate K. (VIR_K) asks this only for the thermal mean. Where the levels are differentiable, (LEV_K) is - dE_i/ds <= K E_i, and - dE_i/ds is the action of one time slab in the vacuum minus its action in the level i (first-order perturbation; interpretation, used in no proof). I call this difference the action deficit of the level.
+then G(t exp(integral of K over [s, s']); B; s') <= G(t; B; s) for every t >= 3, term by term in the sum. So the conclusion of Theorem TR holds with no derivative. (LEV_K) says: no ordered level falls faster than at the logarithmic rate K. (VIR_K) asks this only for the thermal mean. Where the levels are differentiable, (LEV_K) is - dE_i/ds <= K E_i, and - dE_i/ds is the action of one time slab in the vacuum minus its action in the level i (first-order perturbation; interpretation, used in no proof). I call this difference the action deficit of the level.
 
 ### 4.3 From strong coupling to beta_1 (PROVED GIVEN Theorem SH of row 705, not yet checked, and `gap-seed-sc.md` Theorem 1 (iii), checked in row 704)
 
@@ -153,9 +158,11 @@ Proof. Strong coupling: by `gap-seed-sc.md` Theorem 1 (iii), Phi(n; beta_0) <= 0
 
 **Stop.** (DEF_K) failed in three ways. The exact next statement of this attempt:
 
-(VIR-log) For the Wilson SU(2) theory and beta_1 > 0 there are beta_0 <= 1/25600 and infinitely many even b such that (VIR_K) holds on the cube b^3 on [beta_0, beta_1], for the times [ceil(log_2 b), b/2], with integral of K at most log(b/(2 ceil(log_2 b))).
+(VIR-log) For the Wilson SU(2) theory and beta_1 > 0 there are beta_0 <= 1/25600 and an even b >= 256 such that (VIR_K) holds on the cube b^3 on [beta_0, beta_1], for the times [ceil(log_2 b), b/2] (by Remark CH: on the characteristic curve only), with integral of K at most log(b/(2 ceil(log_2 b))).
 
-It is equivalent to nothing weaker that I know. It is implied by (LEV_K) with a constant K, which is the statement that the lattice beta function, read from every level of the box, is bounded away from zero on [beta_0, beta_1].
+**How the threshold log b separates the cases (GUIDE; two-dimensional Ising model, recalled from Onsager's solution, used in no proof).** On a ring of length b, in the phase with one state the lowest level tends to the mass m(J) > 0 and - d log E_1/dJ stays bounded on compact sets of couplings: K_b is bounded in b. At the critical coupling E_1 is of order 1/b with a derivative of order one: K_b grows like b. In the phase with two states E_1 is the tunnel splitting, of order exp(-tau(J) b), and - d log E_1/dJ = b tau'(J): K_b grows like b at every coupling of that phase. So a growth of K_b below log b holds in the first case and fails in the other two, with room to spare.
+
+I know no weaker statement that gives the seed along the coupling. It is implied by (LEV_K) with a constant K, which is the statement that the lattice beta function, read from every level of the box, is bounded away from zero on [beta_0, beta_1].
 
 ### 4.5 Lead (e): what a hand proof of one step would need
 
@@ -232,3 +239,84 @@ Proof. The six plaquettes through l_0 are distinct (sides at least 3) and each c
 **What it kills.** (BE-block) as stated in C-D, for every blocking whose weight leaves one link free, for example a decimation. For a blocking whose weight depends on every link, the proposition gives the price: Hess W must be at least (3 beta/2 - 1/2 + rho) on every link direction at the configurations U#. Then the blocking weight pins every link to within about beta^(-1/2), the conditional law is almost a point, and the law of the block variables is the full problem again. The same computation for U(1) gives -6 beta (d theta)^2 with no Ricci term, and for the weight of K7 it gives a number of the same size. So the positive curvature of SU(2) is worth the range beta < 1/3 of the pointwise criterion, at every scale, and nothing in the middle range. U# has a small probability at large beta; a criterion that weighs configurations by their probability is a mixing hypothesis of the kind of (W) (row 691) and is covered there.
 
 Test: (i) the group enters through Ric = 1/2; (ii) for U(1) the criterion fails at every beta > 0, and U(1) has a gap at small beta all the same, so the criterion is not the reason for a gap; (iii) the line that breaks is the lower bound on the Hessian; (iv) K7: the same Hessian bound.
+
+## 8. Lead (c) without a derivative: the seed as a locality statement for one observable
+
+Theorem D-shape (d) writes the seed as an integral over the coupling of abar_(2a,B) - abar_(a,B). The next lemma shows that this difference is the response of one plaquette to a change of the local rules at a distance of about a/2. It is the place where any mixing input enters the chain.
+
+**Setting.** a >= 3, B a box, n = (a, B), n' = (2a, B), coupling s. Lambda_0 is the set of the links of n' in the first half: the space links with time coordinate 0, ..., a - 1 and the time links from time j to j + 1 for j = 0, ..., a - 1. Reducing the time coordinate modulo a is a bijection from Lambda_0 to the links of n. Let mu' be the Gibbs measure of n' and mu~ the law on the configurations of n that is the image of the marginal of mu' on Lambda_0. Let D be the set of these links of n: the space links at the times 0 and a - 1, and the time links from time a - 1.
+
+**Lemma M (PROVED).** For every link l of n outside D, the conditional law under mu~ of U_l given all other links has the density proportional to exp(s times the sum of x_p over the six plaquettes of n through l) with respect to Haar measure. This is the one-link law of the Gibbs measure mu_n of n.
+
+Proof. Let l' in Lambda_0 be the link that maps to l. If l is a space link at a time j with 1 <= j <= a - 2, its plaquettes in n' are four space plaquettes of the slice j and two time plaquettes of the slabs [j - 1, j] and [j, j + 1]. If l is a time link from j <= a - 2, its six plaquettes lie in the slab [j, j + 1]. In both cases every link of these plaquettes is in Lambda_0, and the bijection maps them to the six plaquettes of n through l, with no wrapping. Under mu' the conditional law of U_(l') given all other links of n' has the density proportional to exp(s sum of x_p over these six plaquettes). It depends on links of Lambda_0 only. The conditional law given the links of Lambda_0 other than l' is the mean of that law over the remaining links, and the law does not depend on them. QED
+
+So mu~ and mu_n are two laws on the same space with the same one-link conditional laws outside D, and D is the cut where the first half of the long torus is closed on itself.
+
+**Proposition MIX (PROVED from Lemma M and Theorem D-shape (a), (d)).** Let j = floor(a/2) and let P be the set of the 3 abs(B) space plaquettes at time j and the 3 abs(B) time plaquettes of the slab [j - 1, j]. Their links have time distance at least floor(a/2) - 1 from D. Suppose that for every s in (0, beta] and every p in P
+
+abs( mu_n(x_p) - mu~(x_p) ) <= eps(a).
+
+Then Phi_B(a; beta) = 2 F(a, B) - F(2a, B) <= 12 a abs(B) beta eps(a), and S(a; B; beta) <= exp(12 a abs(B) beta eps(a)) - 1.
+
+Proof. mu_n and mu' are invariant under time translations, so abar_(a,B) is the mean over p in P of mu_n(1 - x_p), and abar_(2a,B) is the mean over the same plaquettes of mu'(1 - x_p) = mu~(1 - x_p). So abs(abar_(2a,B) - abar_(a,B)) <= eps(a) at every s. Integrate (Theorem D-shape (d)); then Theorem D-shape (a). QED
+
+**What it asks of SU(2).** A bound eps(a) <= C exp(-m_* a/2) for all couplings up to beta: the plaquette at mid-height does not feel the rules at the cut. Test: (ii) for U(1) at weak coupling the response to the cut falls like a power of a (RECALLED: the Casimir effect of the photon), and with eps(a) of order a^(-4) the bound 12 a abs(B) beta eps(a) is of order one at r = 2, in agreement with the failure of the seed; for Z_2 at its transition the two laws can sit in different phases. (iv) On the line of K7 the same. For small beta the bound follows from Dobrushin's uniqueness condition by his comparison theorem (RECALLED; this is proof item 2). Above the Dobrushin range it is a strong mixing statement for one observable, weaker than (W) of row 691 in that it concerns one observable and one pair of laws, and not known.
+
+## 9. Part 3: status block (final)
+
+**No mass gap at a coupling of order one is proved here. The seed in the middle range is open, and I found no tool for it.**
+
+**Proved here by hand, not checked by another model.**
+
+| Statement | Content | Inputs | Section |
+|---|---|---|---|
+| Lemma 4.1 | lambda_0, G and dG/dt are continuous in the coupling (t >= 4), from the traces alone | (TM), Lemma A | 4.1 |
+| Lemma 4.2 | at integer t the derivative of the thermal sum in beta is 6 t abs(B) (abar_inf - abar_t), outside a countable set | (TM), Lemma A | 4.1 |
+| Theorem TR | (VIR_K) on one box carries the thermal sum along t(s) = t_0 exp(integral of K) | Lemma 4.1 | 4.2 |
+| Remark LEV | the same from (LEV_K): no ordered level falls faster than at the rate K | none | 4.2 |
+| Proposition Delta | g(a; b^3) <= (b/a)^3 Delta(a^4); Delta(a^4) <= 6.1 x 10^(-4) is a seed at r = 4; gapless models of the class have Delta(a^4) > 6.1 x 10^(-4) at every size | Lemma A, (LB), Theorem SH | 4.3 |
+| Corollary TR1 | (VIR_K) on one cube b^3 with integral of K <= log(b/(2 ceil(log_2 b))) gives the seed at beta_1 and m >= 0.12/b on cubes of side >= 32 b | Theorem TR, Theorem SH, `gap-seed-sc.md` Theorem 1 (iii) | 4.3 |
+| Theorem CRIT | the set of couplings with a seed is open; its first boundary point is a critical coupling: all thermal sums at ratio 4 are >= 1/25, Delta(a^4) > 6.1 x 10^(-4) at every size, the seed size diverges on approach | Lemma 4.1, Proposition Delta, Theorem SH, `gap-seed-sc.md` | 5.1 |
+| Identity FL | 1 + S = (1 + S_0)/(1 - U); the seed needs both the zero-flux sum and the twist weight small; the two are independent in the class (one half of the independence RECALLED) | (TM), (TM-c), `gap-seed-shape.md` 4.1 | 6 |
+| Proposition BE | the Bakry-Emery tensor of the lattice measure is (1/2 - 3 beta/2) on a link direction at an explicit configuration; negative for beta > 1/3 | none | 7 |
+| Lemma M, Proposition MIX | the plaquette shift between the tori of time a and 2a is the response of a plaquette at mid-height to a change of the one-link laws at the cut; a bound eps(a) on it gives Phi_B(a) <= 12 a abs(B) beta eps(a) | Theorem D-shape | 8 |
+
+Theorem SH (row 705) was not yet checked when this file was written (its check is row 707). Every statement above that names it is PROVED GIVEN Theorem SH.
+
+**Failed, and why.**
+
+- (DEF_K), the bound of the action deficit of a level by K times its energy with K independent of the box (Section 4.4), in three ways. Pointwise: the natural inequality gives K = 1/beta, which the published scale values contradict by a factor of about 8 (GUIDE), so the truth is a cancellation. Locality: the constant of a stability theorem depends on the gap, and the resulting bound ends at a finite coupling (the same end as Proposition B of row 677). Convexity: it bounds second derivatives of F and e, not the first derivative of their difference; and the Ising model of the class shows that no property of the class can give it.
+- (BE-block): false above beta = 1/3 in the pointwise form (Proposition BE).
+- (CAS) and the flux split: not mechanisms. (CAS) restates the seed in steps. The flux split shows that the seed is two independent statements.
+
+**The leads of the row, answered.**
+
+- (a) Doubling map. The weakest statement that gives the seed is the seed after finitely many doublings; an inequality that excludes a fixed point on a compact interval is (CAS), and it needs only theta < 1, a number of order one. In the class a gapless model keeps Delta(a^4) above 6.1 x 10^(-4) at every size (Proposition Delta). No inequality for SU(2) was found.
+- (b) Flux sectors. The seed does not reduce to one part (Identity FL and the two models). The flux part is (MF), which is (TUBE') and (VORT) of the earlier rows.
+- (c) Derivative form. Yes, as a theorem: Theorem TR and Corollary TR1. The input from SU(2) is (VIR-log): the logarithmic rate K_b of the box b^3 grows more slowly than log b. Without a derivative: Proposition MIX.
+- (d) Curvature. No. It covers beta < 1/3 in the pointwise form at every scale.
+- (e) Finite number of steps. The steps are few. Each step is an inequality of order one between two quantities that are each exponentially small, so a hand proof of a step needs an identity and not two estimates; the identity that the continuum has (the trace anomaly) has no lattice form (Section 4.5).
+
+**The one exact next statement of each attempt.**
+
+- Attempt 1 (coupling direction): (VIR-log) of Section 4.4.
+- Attempt 2 (scale direction): (NOCRIT) of Section 5.1: beta*(1/25) is infinite. By Corollary TR1 it follows from (VIR-log).
+- Attempt 3 (curvature): none; the statement is false.
+- Flux: (TUBE') of row 697, unchanged.
+
+**What the author concludes (the lead decides).**
+
+1. The middle range now has an exact name. In the coupling it is the first critical coupling beta*(1/25) of Theorem CRIT. The mass gap of the periodic cubes at every coupling is (NOCRIT).
+2. What is missing can be stated with no small number: an order-one bound on a logarithmic derivative on one large box, (VIR-log). The strong-coupling seed (proved) and Theorem SH supply every small number. This is a change of form, not of difficulty.
+3. K7 is decisive for the method. A statement that is true for the one-plaquette weights with a small positive adjoint term cannot give (NOCRIT), because such a weight has a first-order line near beta_F = 1.5 (RECALLED, not proved by anyone here). So a proof at every coupling must use a property of the Wilson weight that an adjoint term destroys. The only exact such property I can name is that the weight is log-linear in x = (1/2) tr U_p. I know no inequality that uses it. Mean-field theory predicts a transition for the Wilson weight itself (RECALLED), so the property must be used with a precision that mean-field arguments do not have.
+4. For the scaling form (large beta) the middle range is the same range in physical size, and the effective weight at the scale where the coupling is of order one is a weight of the kind of K7. So the scaling form does not avoid the question.
+5. I do not recommend another max run on the middle range before a new tool exists. The two items below that are worth a worker's time are the check and the Dobrushin seed.
+
+**Proof items for the medium workers.**
+
+1. `gap-mid-check` (check; first). Check Sections 4 to 8 line by line. Read: this file; `gap-crux-restate.md` Section 1 and 3.4; `gap-seed-shape.md` 1.4, 1.5, 2, 4.1; `gap-seed-sc.md` Theorem 1. Points that carry weight: (i) Lemma 4.1 (b): the moment argument and the restriction t >= 4; (ii) Theorem TR: the step from the upper right derivative to monotonicity, and the use of joint continuity of dG/dt; (iii) Corollary TR1: the arithmetic and the use of Theorem SH (ii) for the pair (a, 4a); (iv) Proposition Delta: three uses of Lemma A (a) with sides b >= a >= 3; (v) Theorem CRIT (d), (e); (vi) Identity FL: that the three flips commute and fix the vacuum; the product model; (vii) Proposition BE: the normalisation Ric = 1/2 and the six distinct plaquettes; (viii) Lemma M: which links are excluded, and the conditioning step.
+2. `gap-seed-dob` (proof; medium). Statement: let alpha := the supremum over s in (0, beta] of 9 c(s) with c of Lemma 2.1 of `gap-zf-box-x.md`, and alpha < 1 (true for beta <= 1/10 by that file, 2.5.2). Then eps(a) <= 8 alpha^(floor(a/2) - 2)/(1 - alpha) in Proposition MIX, so for B = (2a)^3: Phi_B(a; beta) <= 768 a^4 beta alpha^(floor(a/2) - 2)/(1 - alpha), and the seed S(a; (2a)^3) < 1/1650 holds for every a above an explicit a_D(beta). With Theorem SH this is a gap of all periodic cubes for beta <= 1/10, in place of beta < 1/12800. Inputs: Proposition MIX and Lemma M; the one-link influence bound of `gap-zf-box-x.md` Lemma 2.1 (18 neighbours, each of influence at most c/2); Dobrushin's comparison theorem, to be rebuilt in the file for a finite set of links (two laws, one of them with the Dobrushin condition; the difference of the means of f is at most the sum over l, l' of the oscillation of f at l, times D(l, l'), times the distance of the one-link laws at l', with D the sum of the powers of the influence matrix; row sums of the n-th power are at most alpha^n, and the influence matrix joins only links of a common plaquette, so D(l, l') summed over l' in the cut is at most alpha^d/(1 - alpha) at distance d). The constants 8 and the exponent are to be fixed by the worker. Consumer: the base of the chain, and the template by which a mixing input enters the seed. Value: moderate; it is still the strong-coupling regime.
+3. `gap-vir-sc` (proof; hard; only if the lead wants C-A tested). Decide whether (VIR_K) or (LEV_K) can be proved in the strong-coupling range for all cubes, with K(s) of order 1/(s log(1/s)): expand G(t; b^3; s) in polymers that wind around the time direction and compare s dG/ds with -t dG/dt term by term. If this fails where everything converges, C-A is not a usable route. Read: `gap-seed-sc.md` Sections 2 and 3; `gap-sc-box.md`.
+4. `gap-vir-guide` (GUIDE; small run under the numeric lock). For the two-dimensional Ising model (in the class; Corollary S2), from exact transfer matrices of rings of length b up to 12: K_b(J) := the maximum over the excited levels below a cut of - d log E_i/dJ. Write pass and fail first. Prediction: bounded in b for J below the critical value, growth like a power of b at the critical value. It can show whether the threshold "log b" of Corollary TR1 separates the two cases at sizes that can be reached. It can show no proof step.
+
+**Not done.** No numeric job was run. No paper was read; every statement about U(1), Z_2, the mixed action, the small-volume expansion, mean-field theory and published masses is RECALLED or GUIDE and is used in no proof. The launch text allowed fetching public sources; the row forbids the network for this item, and I followed the row. The body of `library/gap-transfer.md` was not read: Lemma 4.1 uses the traces only, and the sentence on first-order perturbation in Remark LEV is an interpretation. The bound K <= 12 abs(B)/m of Section 4.4 is not proved. Remark Y is a sketch. Nothing was committed or pushed; the only file written is this one.

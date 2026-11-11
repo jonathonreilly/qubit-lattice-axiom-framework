@@ -12,8 +12,8 @@ Author run of Claude Fable 5.2 (model id claude-fable-5-2, max effort), Mac mini
 ## Status block (kept current)
 
 - Part 1 (first principles): done (Section 1). Proved there: P1 (the seed torus is at least 7.4 by 14.8 correlation lengths), P2 (the seed forces Z^tw/Z > 1 - 1/825). Conclusions C1 to C6.
-- Part 2 (assumptions): done (Section 2). 29 assumptions in six groups, ranked in 2.7. Lemma 2.A: the glue half alone has no symmetric function, so Theorem S needs the flux sectors.
-- Part 3 (compare): done (Section 3). New against the earlier work: the ranges where the tests bind, the N-test and the dimension test, Lemma 2.A, the form (C).
+- Part 2 (assumptions): done (Section 2). 29 assumptions in six groups, ranked in 2.7. Remark 2.A: the centre-even trace is not symmetric by its form, and its symmetrized version cannot have a seed in a confining phase; so Theorem S needs the flux sectors.
+- Part 3 (compare): done (Section 3). New against the earlier work: the ranges where the tests bind, the N-test and the dimension test, Remark 2.A, the form (C).
 - Part 3b (tool blockage): done (Section 3b). 22 methods listed with reasons. Propositions T1 to T3: the worded U(1) and K7 tests are false, the valid form is proved, and below beta of about 1 the tests forbid nothing. Two verdicts are too strong in that range; one tool comes back (conditioning on one direction).
 - Part 4 (attempts): Attempt 1 done (4.1): Lemma COV, Lemma REG (a uniform seed makes the free energy C^(1,1)), Proposition V (a weight test that rests on a theorem of van Enter and Shlosman). Attempt 2 done (4.2): Identity L (the flux half is the response of a three-dimensional spin model to antiperiodic boundary conditions), Proposition TW (the twist ratios for beta < 1/6, uniformly in the background), open statement (AS-bg). Attempt 3 done (4.3): Corollary C and (PHYS-SEED). Final section in progress.
 
@@ -109,13 +109,17 @@ Written after Part 1 and before the attack files were opened. Each line: the ass
 | # | Assumption | Needed or habit | If it is wrong or dropped | Easier? | Check |
 |---|---|---|---|---|---|
 | a1 | The gap is the gap of the transfer operator on periodic cubes at one fixed beta. | Habit for the Clay target, which is a continuum statement. | The target becomes item (C) of 1.3: the seed on one physical torus, uniformly in the spacing. R1 leaves the path. The lattice gap at beta = 2 is then not needed. | Not easier (R2 stays), but smaller: one range instead of two. | Exact: Theorem S applies on the fine lattice as it is (1.3 (C)). |
-| a2 | The gap is on the whole space of the box, flux sectors included. | Needed by the method; not needed for a bulk gap. Z_2 at large beta has a bulk gap and fails the seed (F9). | If SU(2) had a bulk gap without confinement at some beta, the seed would be false at every size and the method could not see a true gap. Dropping a2 needs a new step from one size to all sizes. | No. See Lemma 2.A below: the glue half alone has no symmetric function. | P2 shows the flux half is forced by the seed. |
+| a2 | The gap is on the whole space of the box, flux sectors included. | Needed by the method; not needed for a bulk gap. Z_2 at large beta has a bulk gap and fails the seed (F9). | If SU(2) had a bulk gap without confinement at some beta, the seed would be false at every size and the method could not see a true gap. Dropping a2 needs a new step from one size to all sizes. | No. See Remark 2.A below: the glue half alone has no function that is symmetric by its form. | P2 shows the flux half is forced by the seed. |
 | a3 | Observables: every gauge-invariant function of one time slice. | Same as a2. | A gap for local observables in infinite volume is weaker and is what the Wightman theory needs. | Weaker target, but no finite criterion is known for it in a gauge theory (row 691 owns the one candidate, (DS-tw)). | - |
 | a4 | The group is SU(2). | Set by T0 (SU(2) first). | SU(3): same problem. SU(N), N >= 5: the Wilson axis has a bulk transition (F15, GUIDE), so the lattice gap at every beta is false there and only (C) can be true. | No group is known for which the seed at a correlation length of order one is easier. | N-test of 1.3. |
 | a5 | Dimension four. | Set by the target. | In three dimensions the correlation length grows like beta, not like exp(2.69 beta): R2 has about log_2(beta) doublings. Still open. | A smaller model of the same crux; not our target. | - |
 | a6 | "At every beta", or "at a coupling of order one". | Habit. The continuum needs only large beta; the lattice statement at every beta is a separate theorem. | See C1 to C3. | The split R1/R2 makes two problems, each with fewer constraints. | - |
 
-**Lemma 2.A (why a2 cannot simply be dropped; PROVED GIVEN (TM-c) and its extension to products of flips, which I have not seen stated; so this is a reduction with one named input).** The centre-even trace Tr(T_B^a P_0), P_0 = the projection on the functions that are even under all three flips, equals (1/8) times the sum of the partition functions over the 8 choices of twists in the planes (1,2), (1,3), (1,4). It is not invariant under the exchange of the directions 1 and 2: that exchange maps the planes (1,3), (1,4) to (2,3), (2,4). The smallest invariant object is the sum over all 64 twists of the six planes. Seen from any time direction, it is the trace over the even sector of the direct sum of the 8 boxes with magnetic twists. Reading: in a confining phase the magnetic twists cost exponentially little ('t Hooft's duality, RECALLED), so this direct sum has eight nearly equal top eigenvalues, and its thermal sum is near 7. So a seed for the centre-even sector cannot be obtained by symmetrizing over twists. A gap of the glue half alone needs a different step from one size to all sizes. OPEN.
+**Remark 2.A (why a2 cannot simply be dropped).** Let P_0 be the projection on the functions that are even under all three centre flips, and Z[k] = Tr(T^a C^k) as in Identity FL of `gap-mid-max.md`.
+(a) PROVED (from the definition of P_0): Tr(T_B^a P_0) = (1/8) times the sum of Z[k] over the 8 elements k of Z_2^3. These are the twists in the planes (1,2), (1,3), (1,4).
+(b) The exchange of the directions 1 and 2 maps the planes (1,3), (1,4) to (2,3), (2,4), which are not in the sum. So the proof of Lemma X, which needs W(a, b) = W(b, a), does not apply to the centre-even trace. I did not prove that this trace is not symmetric.
+(c) PROVED GIVEN (TM) for the twisted spatial action (Lemma 1.1 of `gap-seed-check.md`, as cited in Remark F3 of `gap-crux-restate.md`): the sum over all 64 twists of the six planes is invariant under every permutation of the directions. Seen from any time direction it is 8 times the trace of the power of the direct sum, over the 8 magnetic twists m of the box, of T^(m) P_0.
+(d) Reading (RECALLED: 't Hooft 1979, duality of electric and magnetic flux): in a confining phase the magnetic twists cost exponentially little. Then this direct sum has eight nearly equal top eigenvalues and its thermal sum is near 7. So a seed for the centre-even sector cannot be obtained by symmetrizing over twists. A gap of the glue half alone needs a different step from one size to all sizes. OPEN.
 
 ### 2.2 Group (b): the lattice formulation
 
@@ -172,7 +176,7 @@ Written after Part 1 and before the attack files were opened. Each line: the ass
 3. **d1, d2 in the worded form.** Dropping the wording for the valid form re-admits every quantitative tool in R1.
 4. **c4** (the same beta at every step). A proved comparison across couplings would be the missing statement itself.
 5. **c1, c3** (the size of the criterion). A criterion at one or two correlation lengths would shrink the box by a factor of about 7 per side.
-6. **a2** (flux included). Dropping it loses Theorem S (Lemma 2.A).
+6. **a2** (flux included). Dropping it loses Theorem S (Remark 2.A).
 7. **b1** (the Wilson weight). Free for target (C).
 8. **c5, c6** (one beta at a time, one tool).
 9. **f** (the rules). Small effect on R1, none on R2.
@@ -197,7 +201,7 @@ Read for this part: `library/gap-mid-max.md` Sections 2, 5, 9, 10; `library/gap-
 | 1.4.5 and 1.4.6, "the flow goes one way"; step scaling | Yes | run 2, A5 (STEP); (CAS) |
 | **C1, C2, the split R1 / R2, and "in R1 the tests forbid nothing"** | **New as a statement.** Theorem DOB's remark (3) accepts a group-blind tool at small beta; no file says where the tests start to bind. | Part 3b gives the ranges |
 | C6, the valid form of the tests | Partly. 13.12 says "cannot give the seed at every coupling". The digests use the stronger form ("NO as an SU(2)-true/U(1)-false input"). | Part 3b |
-| a2 with Lemma 2.A (the glue half has no symmetric function) | **New** | - |
+| a2 with Remark 2.A (the glue half has no function that is symmetric by its form) | **New** | - |
 | b3, a twist in the plane (3,4) keeps Lemmas K, X, E for the pair (1,2) | In substance yes: Remark F3 of `gap-crux-restate.md` 4.3 | - |
 | c4, a comparison across couplings | Yes in another form: Theorem TR carries the seed along beta on one box, given (VIR_K) | `gap-mid-max.md` Section 4 |
 | c5, "no first critical point" | **Yes:** Theorem CRIT and (NOCRIT) | `gap-mid-max.md` 5.1 |
@@ -206,7 +210,7 @@ Read for this part: `library/gap-mid-max.md` Sections 2, 5, 9, 10; `library/gap-
 | e6, both series are numerically good up to the crossover | Not found | - |
 | f, the rules do not block R2 | Not found as a statement | - |
 
-**Reading.** The earlier work had most of the structure: the split of the seed, the first critical coupling, the tests U(1) and K7, and the remark that the Wilson weight is log-linear in x. What Parts 1 and 2 add: the ranges in which the tests bind; two more tests; Lemma 2.A; and the form (C).
+**Reading.** The earlier work had most of the structure: the split of the seed, the first critical coupling, the tests U(1) and K7, and the remark that the Wilson weight is log-linear in x. What Parts 1 and 2 add: the ranges in which the tests bind; two more tests; Remark 2.A; and the form (C).
 
 ## 3b. Part 3b: the tool blockage
 
@@ -394,7 +398,7 @@ Step 6 (several flips, and U). For k with two or three flips, I(u, c^k v)/I(u, v
 
 **What this is, and what it is not.**
 - It is the flux half of the seed in the range 1/18 <= beta < 1/6, where it was not proved. Theorem DOB gives both halves below 1/18.
-- It does not give the seed above 1/18. The glue half (S_0) still needs the mixing of the four-dimensional measure, with 18 neighbours. I found no way to condition it away: with the links of one direction as one block and the rest as background, the block version of Dobrushin's condition gives 12 beta/(1 - 6 beta) < 1, which is beta < 1/18 again.
+- It does not give the seed above 1/18. The glue half (S_0) still needs the mixing of the four-dimensional measure, with 18 neighbours. I found no way to condition it away: with the links of one direction as one block and the rest as background, a rough count of the block version of Dobrushin's condition (not a proof) gives 12 beta/(1 - 6 beta) < 1, which is beta < 1/18 again.
 - Tests. The proof runs for U(1) and for Z_2 with other constants in Step 1. That is right (Proposition T2): both confine at small beta. For Z_2 the flat background at large beta gives I(1, c 1)/I(1, 1) of the order exp(-2 beta b^2), far from 1, as it must be (F9).
 - The range 1/6 is what the crude influence bound gives. A sharper one-site bound moves it by a constant factor (GUIDE: the total variation distance of two von Mises-Fisher laws on S^3 whose parameters differ by 2 beta is about 0.42 beta for small beta, which would give about 0.39).
 
@@ -408,6 +412,30 @@ Step 6 (several flips, and U). For k with two or three flips, I(u, c^k v)/I(u, v
 - Beyond that, only the mean over the true law of (u, v) can be small: (MF) itself, in the form of Identity L. At large beta the slices are close to a pure gauge at short distance and the layer model is ordered up to the correlation length. This is the same crux, seen in a three-dimensional spin model with a random background.
 
 **Marks.** Identity L: PROVED. Proposition TW: PROVED GIVEN Lemma DC (checked, row 709). (AS-bg) between 1/6 and 2/3: OPEN. Nothing here is checked.
+
+### 4.2b The approach reduced to one single-site statement: (vMF-Lip)
+
+The range 1/6 of Proposition TW comes from the total variation distance in Lemma INF. Dobrushin's method also runs with a transport distance. Then the constant per neighbour is a property of one law on S^3.
+
+**Notation.** For F in R^4, mu_F is the law on S^3 (the unit sphere of R^4, which is SU(2)) with density proportional to exp(<h, F>) with respect to the uniform law. It is the one-site law of the layer model and the one-link law of the gauge measure, with F = beta times the sum of the neighbour terms, abs(F) <= 6 beta. A function phi on S^3 is chord-Lipschitz if abs(phi(h) - phi(h')) <= abs(h - h') (distance in R^4). Every y_b and every x_p is chord-Lipschitz in each of its variables.
+
+**(vMF-Lip) at radius rho.** For every F with abs(F) <= rho, every unit vector e of R^4 and every chord-Lipschitz phi: abs( Cov_F(phi, <h, e>) ) <= 1/4.
+
+By the duality of Kantorovich and Rubinstein, integrated along the segment from F to F', this is the same as: the transport distance W_1 (with the chord distance) of mu_F and mu_F' is at most abs(F - F')/4, for F, F' in the ball of radius rho.
+
+**Lemma P (the case e orthogonal to F; PROVED).** If <e, F> = 0, then abs(Cov_F(phi, <h, e>)) <= E_F(<h, e>^2) <= 1/4, for every F.
+Proof. Let R be the reflection of R^4 that changes the sign of the coordinate h_e = <h, e>. R keeps S^3, the uniform law, and <h, F> (because e is orthogonal to F). So R keeps mu_F, and E_F(h_e) = 0. Then E_F(phi h_e) = (1/2) E_F( (phi(h) - phi(Rh)) h_e ), and abs(phi(h) - phi(Rh)) <= abs(h - Rh) = 2 abs(h_e). So abs(Cov_F(phi, h_e)) <= E_F(h_e^2).
+The value. Let t = <h, F>/abs(F) and kappa = abs(F). The three coordinates orthogonal to F have the same law, so E_F(h_e^2) = (1 - E_F(t^2))/3. E_F(t^2) is non-decreasing in kappa: its derivative is Cov(t^2, t) = (1/2) E( (t - t')^2 (t + t') ) for two independent copies, and the substitution (t, t') -> (-t, -t') in the integral against the even base law shows that this is a positive multiple of the integral of (t - t')^2 (t + t') sinh(kappa (t + t')), which is >= 0. At kappa = 0, E(t^2) = 1/4 (four coordinates with the same law, squares adding to 1). So E_F(h_e^2) <= (1 - 1/4)/3 = 1/4. QED
+
+**The general direction is OPEN.** For e not orthogonal to F there is no reflection that keeps mu_F. The crude bound (Schwarz, Var(phi) <= 1) gives 0.56 in place of 0.25, which is no better than Lemma INF.
+
+**GUIDE (a run; it can refute, not prove).** After averaging over the circle that fixes F and e, phi is a function on the unit disk with the uniform base law and the distance d^2 = (x - x')^2 + (y - y')^2 + (r - r')^2, r = (1 - x^2 - y^2)^(1/2). The supremum over phi is a linear program. On grids of 16 and 26 points per side, for kappa = 0, 0.5, 1, 2, 3, 3.9 and angles 0, pi/4, pi/2 between e and F: the supremum is largest at the angle pi/2, where it equals E_F(h_e^2) of Lemma P up to the grid bias that is seen at kappa = 0 (0.2541 for 1/4 at 26 points). At the angle 0 the values are 0.2475, 0.2289, 0.1754, 0.1260, 0.0939 for kappa = 0.5 to 3.9, against 0.2515, 0.2439, 0.2194, 0.1913, 0.1682 at pi/2. So the run does not refute (vMF-Lip) at radius 4, and it suggests the sharper statement: the supremum over e and phi is E_F(h_e^2) for e orthogonal to F. Script: /tmp/gap-crux-fp-scratch/scripts/vmf_lip.py on the Mac mini, not kept in the repository. Memory free was 59 percent; the numeric lock was taken and released.
+
+**What (vMF-Lip) would give (REDUCTIONS; not proved statements).** Lemma DC has a form for chord-Lipschitz functions: replace delta_l(f) by the Lipschitz constant of f in the variable at l, and C(l, k) by the supremum of W_1(gamma_l(. | w), gamma_l(. | w')) / abs(w_k - w'_k). Two steps of its proof change. Step 1: delta_k(Gamma_l g) <= delta_k(g) + C(l, k) delta_l(g), by the duality. Step 4: abs(Gamma~_l g - Gamma_l g) <= 2 delta_l(g), because the diameter of S^3 is 2 (in place of "d of two laws is at most 1"). The conclusion gets the factor 2. I wrote out these two steps only; the full lemma in this form is not proved here.
+- R-a. In the layer model a change of one neighbour changes F by at most beta times the chord distance. With (vMF-Lip) at radius 4, C <= beta/4, alpha <= 6 beta/4, and the proof of Proposition TW gives (AS-bg) for every beta_1 < 2/3. This is the mean-field value N/(2d) of the O(4) model in three dimensions.
+- R-b. In the gauge measure a change of one of the 18 neighbour links changes F by at most beta times the chord distance (multiplication by unit quaternions is an isometry). With (vMF-Lip) at radius 4/3, alpha <= 18 beta/4, and the proof of Theorem DOB gives the seed, both halves, for beta < 2/9. Proved today: 1/18.
+
+Both statements are in R1. They move a lattice theorem. They do not move the crux.
 
 ### 4.3 Attempt 3: the form (C), the seed on a physical torus
 

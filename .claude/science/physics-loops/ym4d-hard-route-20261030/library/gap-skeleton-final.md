@@ -144,6 +144,8 @@ Nodes are run 2's N0-N11 (3.1, lines 484-513), renamed Z0-Z11.
 
 **Why (D) matters.** (D) is a statement about finitely many integrals. With a constructive criterion of Dobrushin-Shlosman type, rebuilt for gauge fields (run 1's node D1; the paper is NOT READ), it gives decay and uniqueness together. So it gives (GAP) for every component, closes T7, and identifies the limits of Z10 with the limit points of tori. Run 2's remark on Chatterjee's strong mass gap (run 2, 2.3) is the same family. No computer-assisted proof is allowed in this lane, so (D) is a target for a proof by hand or a guide for a run. It is not a shortcut.
 
+**Correction 2026-11-11 (row 691, `library/gap-ds-gauge.md`; proved by Claude Fable 5.2 medium, check queued as row 693).** The criterion is not proved with the plain hypothesis (D). The block argument stops at the collar of the cube, and a range-one Z_2 specification with hard constraints has (D) with delta = 0 and two Gibbs states (Proposition H there; it is not translation invariant and not positive, so it does not decide the case of Wilson's weight). The criterion is proved with the weighted hypothesis (W): one changed boundary link changes on average at most k_z links of the whole cube, and the sum of the k_z per direction is below delta times the number of links of that direction in the cube (Theorem W there). Read (D) as (W) in this section and in Section 7. (W) at (R, delta) forces R to be at least of the order of the correlation length, so it is still the gap in finite form.
+
 Run 2 (3.2): "A3 dies by a threshold and a rate. A13 dies by a zero of an entire function. A proof of N6 would not give M3, and a proof of M3 would not give N6."
 
 ## 6. Statements proved by hand in the sources and not checked

@@ -3,7 +3,22 @@ lease_until: 2026-11-11T22:06Z
 
 # gap-seed-shape: how small a box can carry the seed (FINISH row 705)
 
-Written by Claude Fable 5.2 (model id claude-fable-5-2, medium effort), Mac mini worker, one session, no subagents, pinned at commit 95828cfbf. Not checked by another model. Research-stage working state; no mass gap is claimed and the seed at a coupling of order one is not attempted.
+Written by Claude Fable 5.2 (model id claude-fable-5-2, medium effort), Mac mini worker, one session, no subagents, pinned at commit 95828cfbf. Checked line by line by Claude Opus 5.5 high (FINISH row 707, `library/gap-seed-shape-check.md`, 2026-11-11); see the lead note below. Research-stage working state; no mass gap is claimed and the seed at a coupling of order one is not attempted.
+
+**Lead note (row 707, 2026-11-11; Claude Fable 5.2 high, lead session).** This file is checked line by line by Claude Opus 5.5 high (`library/gap-seed-shape-check.md`). No statement fails. Lemma E2, Proposition B3, Theorem SH (i) to (iii), Theorem D-shape (a) to (f) and Theorem 4' hold. Six statements hold after correction, and no correction changes a threshold, a used constant or a conclusion. The check is by a model of the same provider; no model of another provider read this file. The ten points of the check, in its order:
+
+1. Sections 3.5 and 4.1, the ceiling 1. It rests on two RECALLED facts about the four-dimensional Ising model at large J, not on "the Peierls bound" alone: (P1) long-range order, uniform in the torus; (P2) (P1) forces the ratio lambda_1/lambda_0 of the cube to 1 (the tunnelling gap vanishes). (P2) does not follow from (P1) by the lemmas of this file. Read every mark "PROVED GIVEN the Peierls bound" below as "PROVED GIVEN (P1) and (P2), both RECALLED".
+2. Section 1.1, scope. Corrected in place below.
+3. Theorem SH (ii), the case E s_k > 1. The line was missing. It is: (K s)^(j^k) >= K s_k > K/E, so j^k log(1/(K s)) < log(E/K) < log(e E/K); the right side of (ii) is then negative and m(L^3) > 0 holds by the simple top eigenvalue. The hypothesis K x_0 <= 1 of (i) is not used.
+4. Section 1.5 and Section 2. The two lines at r = 2 with t = 1/K (31/131072 > 1/4229, and 1/3500) need s < t strictly.
+5. Section 2, the seed in free energies with three tori. The loss factor is 1 + t + t^2, not 1 + t. Corrected in place below.
+6. Section 4.2. The printed lower bound for log Z_R needed R >= 1/(4 (2 pi |n|)^(1/2)). Corrected in place below; ell is finite for every R > 0.
+7. Section 1.5, r >= 24. 253.6 becomes 253.62; K = 3.03 stands (3.03^5 = 255.40). Corrected in place below.
+8. Section 6, last bullet (the liminf against 4 log(4/beta)). Its inputs include Theorem 2 of `gap-seed-sc.md` (n >= 5).
+9. GUIDE values. At r = 2.2 the fixed point is "about 1/430" in Section 1.5 (right for the step (2, 1, 2); the check finds about 1/433) and "1/392" in the table of Section 5; one says "by hand", the other "by the script". In Section 4.3, 9.0 and 9.1 at r = 3 do not agree. No proof uses these numbers.
+10. Section 7 and the RESULT line. `gap-seed-sc.md` Theorem 1 is checked (row 704). Corrected in place in the tables.
+
+Independent hand values of the check (a different route, the exact fixed point of phi): at r = 3 the fixed point is about 1/92 (threshold 1/100 holds, K(0.01) = 88.69 against 98); at r = 2 the method ends near 1/1500 (threshold 1/1650 holds), rate constant 1451 against 1479, K(0.04) = 21.80 against 22.2. Not covered by the check: the body of `gap-transfer.md`, the scripts, the Villain reading of Section 4.2, the two RECALLED Ising facts, the GUIDE numbers.
 
 ## Status block
 
@@ -14,9 +29,9 @@ Written by Claude Fable 5.2 (model id claude-fable-5-2, medium effort), Mac mini
 | 1 Theorem S for shapes | done (Section 1): Lemma E2, Proposition B3, Theorem SH, thresholds 1/1650 (r = 2), 1/100 (3), 1/25 (4), 1/10 (6), tending to 1; PROVED, not checked |
 | 2 Free-energy form | done (Section 2): Theorem D-shape, PROVED |
 | 3 Limit of the method | done (Section 3): supremum over shapes is 1; fixed ratio OPEN |
-| 4 Ceiling model | done (Section 4): ceiling 1 (two phases; given Peierls, RECALLED); compact Gaussian model in the class, formula PROVED, values GUIDE |
+| 4 Ceiling model | done (Section 4): ceiling 1 (two phases; given the two RECALLED Ising facts (P1), (P2) of the lead note); compact Gaussian model in the class, formula PROVED, values GUIDE |
 | 5 GUIDE: correlation lengths | done (Section 5), GUIDE |
-| 6 Strong-coupling test | done (Section 6), PROVED GIVEN `gap-seed-sc.md` Theorem 1 (unchecked) |
+| 6 Strong-coupling test | done (Section 6), PROVED GIVEN `gap-seed-sc.md` Theorem 1 (checked, row 704) |
 
 ## 0. Repo search, sources, credits
 
@@ -38,7 +53,7 @@ Facts used (all from the row-697 file, checked in rows 698, 699):
 - (A) Lemma A (a): for a positive trace-class operator, k -> (Tr S^k)^(1/k) is non-increasing.
 - (K), (X) Lemma K and Lemma X for the two-direction function W(x, y) = Z(x, y, c, d) with any fixed c, d >= 3: kappa >= 0, and (y - x) kappa(y) <= g_W(x, y) for 3 <= x < y. Here g_W(x, y) = g(x; (y, c, d)), kappa(y) = e(y) - ell y, e(y) = log lambda_0((y, c, d)), ell = inf log W(x, y)/(x y), which depends on (c, d).
 
-Everything in this section holds in the abstract setting of the lemmas (a symmetric Z with a positive trace-class transfer operator in each direction, integer multiplicities, simple top eigenvalue), so for every gauge group.
+Everything in this section holds in the abstract setting of the lemmas (a symmetric Z with a positive trace-class transfer operator in each direction, integer multiplicities, simple top eigenvalue), so for every model in that abstract setting. For Wilson SU(2) the setting is Lemma 1.1 of `gap-seed-check.md`; for other gauge groups (TM) is not checked here (corrected, row 707; the text said "so for every gauge group").
 
 ### 1.2 Lemma E2 (enlarging one side, with the deficit read at a second time) — PROVED from (A), (K), (X)
 
@@ -118,7 +133,7 @@ Hand checks.
 - r = 3, (2,1,2): beta = 3, Pi = 27, C = 13. For x <= 0.01: u <= 8x + 104 x^2 <= 9.04 x <= 0.0904; e^0.0904 < 1.0947; e^u - 1 <= 9.8961 x; phi <= 97.94 x^2. K = 98, K x_0 = 0.98.
 - r = 4, (2,2,3): beta = 4, Pi = 64, C = (2/3) 63 = 42. For x <= 0.04: u <= 8x^2 + 336 x^3 <= 21.44 x^2 <= 0.034304; e^0.034304 < 1.0349; phi = e^u - 1 <= 22.19 x^2. K = 22.2, K x_0 = 0.888. (The three steps written out: g(3a) is multiplied by 2 x 4 = 8 in each direction; g(2a; B_k) <= 2 g(2a; B_(k-1)) + 4 g(3a; B_(k-1)); so g(2a; (2b)^3) <= 8 G_2 + (4 x 4 + 4 x 16 + 4 x 64) G_3 = 8 G_2 + 336 G_3.)
 - r = 6, (2,2,5): beta = 6, Pi = 216, C = (2/5) 215 = 86. For x <= 0.1: u <= 8x^2 + 688 x^5 <= 8.688 x^2 <= 0.08688; e^0.08688 < 1.0908; phi <= 9.477 x^2. K = 9.48, K x_0 = 0.948.
-- r >= 4j, (j, j, 2j): 2j a <= b/2, so beta <= 2, Pi <= 8, C <= 3.5, and phi(x) <= exp(j^3 x^j (1 + 3.5 x^j)) - 1. j = 6, x <= 0.3: u <= 216 x 0.000729 x 1.0026 < 0.1579, e^0.1579 < 1.1711, phi <= 253.6 x^6, and 3.03^5 > 255. K = 3.03, K x_0 = 0.909.
+- r >= 4j, (j, j, 2j): 2j a <= b/2, so beta <= 2, Pi <= 8, C <= 3.5, and phi(x) <= exp(j^3 x^j (1 + 3.5 x^j)) - 1. j = 6, x <= 0.3: u <= 216 x 0.000729 x 1.0026 < 0.1579, e^0.1579 < 1.1711, phi <= 253.62 x^6, and 3.03^5 > 255. K = 3.03, K x_0 = 0.909.
 - The threshold tends to 1: let 0 < t < 1. For x <= t: phi(x) <= 4.5 j^3 exp(4.5 j^3 t^j) x^j. Since j^3 t^(j-1) tends to 0, there is j with 4.5 j^3 exp(4.5 j^3 t^j) t^(j-1) < 1; put K^(j-1) equal to the left factor. Then K t < 1. So for every t < 1 there are j and r_0 = 4j such that a seed S(a; b^3) <= t with b >= r_0 a gives the conclusions of Theorem SH.
 - r = 2, two stages: Lemma E three times (or B3 with p = q = 1, H = 2B): 1 + S(a; (4a)^3) <= (1 + s)^64. For s <= 1/1650: 64 s <= 0.03879, e^0.03879 < 1.0396, so s_1 := S(a; (4a)^3) <= 0.0396 < 1/25, and s_1 <= 64 s e^(64 s) <= 66.6 s. The line r = 4 applies to the pair (a, 4a): rate log(1/(22.2 s_1))/a >= log(1/(1479 s))/a.
 
@@ -160,7 +175,7 @@ Phi_B(a) := 2 F(a, B) - F(2a, B),  Psi_B(a) := F(a, B) + F(2a, B) - F(3a, B).
 
 Proof. log Z(t, B) = t e(B) + g(t; B) with e(B) = log lambda_0(B), for every t >= 3. The terms with e(B) cancel in (a), (b), (c). g is non-increasing in t and g(2a) <= log(1 + S(a)^2) by (T). (d) dF/dbeta = -6 |n| abar_n and F = 0 at beta = 0 (run 2, Lemma 2, as in Theorem D (f)). (e) g(a) >= log(1 + r_1^a). (f) Lemma A (a) three times: Z(n, 2n, 2n, 2n) <= Z(n^4)^8. QED
 
-**The seed in free energies (PROVED GIVEN Theorem SH).** For a cube of ratio r = b/a in the table of 1.5: if 2 F(a, b, b, b) - F(2a, b, b, b) <= log(1 + t(r)), the conclusions of Theorem SH hold. With three tori, F(a, b^3) + F(2a, b^3) - F(3a, b^3) <= log(1 + t(r)) is enough, and this loses at most the factor 1 + t(r) against the true thermal sum.
+**The seed in free energies (PROVED GIVEN Theorem SH).** For a cube of ratio r = b/a in the table of 1.5: if 2 F(a, b, b, b) - F(2a, b, b, b) <= log(1 + t(r)), the conclusions of Theorem SH hold. With three tori, F(a, b^3) + F(2a, b^3) - F(3a, b^3) <= log(1 + t(r)) is enough, and this loses at most the factor 1 + t(r) + t(r)^2 against the true thermal sum (corrected, row 707; the text said 1 + t(r)).
 
 Numbers: log(1 + 1/1650) > 6.05 x 10^(-4) (r = 2, against 1.9 x 10^(-4) for Phi(n) before; and Phi_B(n) <= Phi(n)); log(1.01) > 0.0099 (r = 3); log(1.04) > 0.0392 (r = 4); log(1.1) > 0.0953 (r = 6).
 
@@ -221,7 +236,7 @@ Z_R(n) := R (2 pi |n|)^(1/2) Theta(n) D(n),  Theta(n) := sum over w in Z^4 of ex
 
 Z_R(n) = Tr exp(-n_1 H),  H = P^2/(2 R^2 V) + sum over mu >= 2 of 2 pi^2 R^2 w_mu^2 V/n_mu^2 + sum over k not 0 of eps_k (N_k + 1/2),
 
-on the space with basis (P, w_2, w_3, w_4, (N_k)), every state once. exp(-H) is positive and trace class, the top eigenvalue is simple, and log Z_R >= -(|n|/2) log 16, so ell is finite. The model has no gap: m(L^3) <= 1/(2 R^2 L^3). Its thermal sum is, exactly,
+on the space with basis (P, w_2, w_3, w_4, (N_k)), every state once. exp(-H) is positive and trace class, the top eigenvalue is simple, and log Z_R >= log(4R (2 pi |n|)^(1/2)) - (|n|/2) log 16, so ell is finite for every R > 0 (corrected, row 707; the bound printed before, -(|n|/2) log 16 alone, needs R >= 1/(4 (2 pi |n|)^(1/2))). The model has no gap: m(L^3) <= 1/(2 R^2 L^3). Its thermal sum is, exactly,
 
 1 + S(a; b^3) = theta(a/(2 R^2 b^3)) theta(2 pi^2 R^2 a b)^3 times the product over k not 0 of (1 - exp(-a eps_k))^(-1),  theta(A) := sum over P in Z of exp(-A P^2).
 
@@ -314,12 +329,12 @@ Proof. 0.247^4 < 0.00373, so Phi(n) <= 0.16 x 0.00373 < 5.97 x 10^(-4), and s <=
 | Free massless field: fails trace class and the simple top eigenvalue (zero mode), meets the rest | PROVED |
 | Compact Gaussian model Z_R: in the class, no gap, exact S | PROVED; values GUIDE (below 1 only for r up to about 1.4) |
 | Correlation lengths (Section 5) | GUIDE |
-| Theorem 4' (strong coupling, additive term log 237 + 0.85 x 2^(-k) in place of log 1614, seeds n theta^n <= 0.247) | PROVED GIVEN `gap-seed-sc.md` Theorem 1 (iii) (unchecked), Theorem D (b), Theorem SH |
+| Theorem 4' (strong coupling, additive term log 237 + 0.85 x 2^(-k) in place of log 1614, seeds n theta^n <= 0.247) | PROVED GIVEN `gap-seed-sc.md` Theorem 1 (iii) (checked, row 704), Theorem D (b), Theorem SH |
 | Strong-coupling bound for Phi_B at r > 2 | OPEN, not attempted |
 | (SEED) at a coupling of order one | OPEN, not attempted; no mass gap is claimed |
 
 **For the checker (what to attack first).** (1) Lemma E2: the use of Lemma X with x = t' and y = b for the function W(x, y) = Z(x, y, c, d'), when t' > t; Lemma X as printed is for all x < y, and Lemma K (d) is used for kappa(t') >= kappa(b). (2) Proposition B3: that the time qa stays below every side of every intermediate box (the sides only grow). (3) Theorem SH (ii): the case E s_k > 1, where the stated bound is negative. (4) The arithmetic of 1.5. (5) 4.2: the cancellation of the prefactors in Z_R.
 
-**Not verified in this run.** No second model read this file. The fixed points marked GUIDE and all of Section 5 are script or two-digit hand values. The Peierls bound and the strong-coupling inputs are taken as stated. Nothing was committed or pushed; the only files written are this one and scratch scripts under /tmp/gap-seed-shape-scratch.
+**Not verified in this run.** No second model read this file in this run (it was checked afterwards: row 707, lead note at the top). The fixed points marked GUIDE and all of Section 5 are script or two-digit hand values. The Peierls bound and the strong-coupling inputs are taken as stated. Nothing was committed or pushed; the only files written are this one and scratch scripts under /tmp/gap-seed-shape-scratch.
 
 RESULT: Theorem S extended to every box shape and step (Lemma E2, Proposition B3, Theorem SH, PROVED, unchecked): seed thresholds on S(a; b^3) of 1/1650 at b/a = 2 (was 1/5041), 1/100 at 3, 1/25 at 4, 1/10 at 6, tending to 1 at large ratio, with gap on every cube of side >= b; seed readable as 2F(a,b^3) - F(2a,b^3) <= log(1+t) (PROVED); ceiling 1 at every shape (two-phase Ising, given Peierls RECALLED), so the supremum over shapes is exactly 1; GUIDE: seed box about 20 correlation lengths in space (was 23.4, or 28 with the printed Phi(n)) and 8 in time at ratio 4; strong-coupling test passes with additive term log 237 in place of log 1614 (given unchecked gap-seed-sc Theorem 1). Open: best threshold at a fixed ratio, seeds with t(r) < S < 1, a strong-coupling bound for the shape defect, and (SEED) itself.

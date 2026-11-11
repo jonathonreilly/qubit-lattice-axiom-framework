@@ -25,7 +25,7 @@ fetched from the URL of the row at revision `1eb15ac428`, read in full).
 |---|---|---|
 | 0 record, closed list | done | open and closed lists written; own literature pass, since the lane's digests are closed |
 | 1 wall twice | done | no blind check ran (no subagents) |
-| 2 inventory | in progress | 2.A (proved cases, ten source notes) written; 2.B to 2.D follow |
+| 2 inventory | done | ten source notes (2.A), the lane's statements (2.B), beliefs (2.C), one table (2.D) |
 | 3 reason up | not started | |
 | 4 assumptions | not started | |
 | 5 compare | not started | |
@@ -136,4 +136,48 @@ Written source by source. Part A is the proved cases (the positive controls), ea
 - Recalled, not read: Ito's proofs for the Migdal-Kadanoff (hierarchical) model (Commun. Math. Phys. 95, 1984; Phys. Rev. Lett. 55, 1985); Muller and Schiemann (1988). In that model the flow of the plaquette weight is an exact map, and the step is a theorem.
 
 **A10. Two dimensions, exact.** The torus formula Z = sum over irreducible representations of c_r^(area) (Migdal) is **recalled**; I prove the form needed here by hand in Step 8 (Proposition 2D), so no source is needed for it.
+
+### 2.B The lane's own statements (from the open list only)
+
+| # | Item | Mark | Source | Standing, reading state |
+|---|---|---|---|---|
+| L1 | Theorem S with Lemmas K, X, E, E' and Corollary S3': in the class K (W(a,b) = W(b,a) = Tr T_b^a, T_b positive, trace class, ell finite), s = S(N; (2N)^3) < 1/5041 gives m(L^3) >= log(1/(5041 s))/N for every L >= 2N. The inequalities are used below the threshold only. | THM | `gap-crux-restate.md` L170-231 | checked by two models (rows 698, 699), with the corrections printed there; read in full |
+| L2 | Theorem EV-L, Proposition CL, Theorem S-w, Corollary EV: three seeds (periodic, full, kappa); each gives (G_ev) at all sizes and the clustering of every periodic limit on centre-blind local functions. | THM | `gap-flux-exercise.md` L420-522 | checked line by line by gpt-6-astra max (row 732), HOLDS, given (TM-tw); read in full |
+| L3 | Scaling form: (SEED-phys) gives a gap M_* in physical units (Proposition P). Rate filter: a seed at (n, s) needs n > 8.5/m. | THM | `gap-seed-limit.md` L186-204 | argued there; a check is named in the skeleton heading 13.10, not read |
+| L4 | Thresholds for other shapes tend to 1 (Theorem SH); no threshold above 1 is possible in K; the seed needs at least 12.9 correlation lengths. | THM | `gap-seed-shape.md` Sections 3, 4, 7; `gap-skeleton-final.md` L553 | argued; "checked" by the heading of 13.12 only |
+| L5 | The alternative: either S(n; (2n)^3) >= 1/5041 for every n >= 3, or a uniform gap on the dyadic cubes from some size on. | THM | `gap-crux-restate.md` L226 | follows from L1 |
+| L6 | The seed bounds the number of states (N1); a gap with a state count of exponent theta < 1 gives the seed (N2); a gap alone is not shown to give it. | THM | `gap-seed-limit.md` L206-236 | argued; second form checked (row 703) |
+| L7 | The account controls log Z of its own tori up to C l^4, which is short of the seed by the number of unit cells. | reading | `gap-skeleton-final.md` L553 | the lead's reading of row 720; not re-read |
+| L8 | (PHYS-SEED) holds if and only if (BDD-Delta) and (Z-UNB): the Casimir free energy stays bounded and (gap of the periodic cube) x (side) is unbounded. | THM | `gap-skeleton-final.md` L557-562 | unchecked on 2026-11-11 (check = row 727); statement only |
+| L9 | In the class K: the Ising model with two phases has S -> 1 at every shape and no gap; the compact Gaussian model Z_R has no gap and an exact thermal sum that depends, in the continuum limit, on the shape and on R only. | THM | `gap-seed-shape.md` L205-246 | first: proved, "no gap" recalled (Peierls); second: formula proved, values GUIDE (inf over R of S = 3.1 at ratio 2) |
+| L10 | Filters: U(1) in four dimensions has no gap at weak coupling; Z_2 at large beta: the periodic seed fails and (G_ev) holds. | THM, recalled | `gap-skeleton-final.md` L59, L584 | recalled by the runs; Forsstrom (A3) is a proof of the clustering half, read in part |
+| L11 | The group enters the definitions through two facts only: the single-plane twist has classical cost zero (Fact T), and b_0 > 0 (Fact B). | reading | `gap-crux-restate.md` L41 | the author's statement |
+| L12 | The periodic seed holds at strong coupling (beta < 1/12800; Dobrushin: beta < 1/18). | THM | heading of 13.10; `grep` hits (A4) | checked per those lines; not read |
+
+### 2.C Beliefs (used in no proof)
+
+| # | Belief | Where it comes from |
+|---|---|---|
+| B1 | Four-dimensional SU(2) has a gap and confines at every beta. | numerics, physics; the Clay problem |
+| B2 | On a small torus the thermal sums are large (flux sectors nearly degenerate, many low levels of the constant modes); a seed exists only from some tens of correlation lengths. | `gap-skeleton-final.md` L553, L560 (recalled small-volume physics; guide values) |
+| B3 | In the continuum limit a dimensionless torus quantity at physical size l is a function of l alone. | scaling; assumed by every step-scaling method |
+| B4 | No gap is proved, in any model that is not exactly solvable, at a correlation length far above the lattice spacing without a second small number or a correlation inequality. The two-dimensional O(3) model at large beta is the nearest open case. | my reading of A1 to A9; Kopper page 2 reports the doubts of Patrascioiu and Seiler. A belief about the literature, not a theorem. |
+
+### 2.D The proved cases in one table
+
+Marks: all rows are THM with the reading state of 2.A. "Scale" is the size at which the criterion is verified, in correlation lengths xi.
+
+| Case | Statement | What carries it | (BASE) | (STEP) in size | (SUFF) | In the place of (STEP) |
+|---|---|---|---|---|---|---|
+| A1 3D U(1), Gopfert-Mack | string tension > 0 at all g; mass about m_D | duality; iterated Mayer expansions; expansion about mean field at scale 1/m_D; Guth's inequality | no | no | expansion at scale xi | weak coupling in the dual variables at every scale (two-sided control of the effective action); monotony in beta |
+| A2 2D SU(N), Piazza-Shen | log-Sobolev at all beta, uniform in L | exact block integration = convolution; Doeblin contraction; Bakry-Emery | yes | **yes, exact** (effective weight, not a torus quantity) | yes | - |
+| A3 finite groups, weak coupling | clustering of loop functions | defects, coupling or swapping | = (SUFF) | no | one scale, lattice spacing > xi | a small number, exp(-beta Delta_G) |
+| A4 strong coupling | clustering; log-Sobolev; the periodic seed | cluster expansion; Dobrushin; Bakry-Emery | = (SUFF) | no | one scale, lattice spacing > xi | a small number, beta |
+| A5 Knabe; Gosset-Mozgunov; Nachtergaele | gap of frustration-free chains | operator inequality H^2 >= c H; martingale method | = (SUFF) | no | one finite size | exact computation at that size; zero ground-state energy at all sizes |
+| A6 Stroock-Zegarlinski; Martinelli-Olivieri | strong mixing, gap of the dynamics and log-Sobolev are equivalent; one finite class of volumes suffices | all boundary values; recursion in the size | trivial | **yes**, for the dynamical gap, given the clustering | yes, and necessary | for the clustering itself: a small number, or weak mixing from correlation inequalities (2D) |
+| A7 sharpness, Duminil-Copin-Tassion | clustering for all beta < beta_c | finite criterion phi_beta(S) < 1; differential inequality in beta | no | no | one finite set | a dichotomy (criterion at some size, or long-range order), from correlation inequalities; one-way in the coupling |
+| A8 O(N) at large N, Kopper | mass with ultraviolet cutoff, N > exp(c beta) | interpolating field; one cluster expansion at scale xi | no | no | expansion at scale xi | a second small number, 1/N; the join with the ultraviolet flow is not proved |
+| A9 Tomboulis; Ito-Seiler | (claimed) confinement at all couplings, 4D SU(2) | Migdal-Kadanoff bounds with interpolation | yes | **claimed; not proved** | yes | fails: the bounds hold for U(1) as well |
+| A9' Migdal-Kadanoff model (recalled) | flow to strong coupling, D <= 4, SU(N) and U(N) | exact recursion | yes | **yes, exact** | yes | - |
+| A10 2D gauge theory, exact | all thermal sums explicit | independence of plaquettes | yes | **yes, exact** (Step 8, Proposition 2D) | yes | - |
 

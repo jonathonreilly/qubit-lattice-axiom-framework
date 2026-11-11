@@ -428,7 +428,11 @@ def read_check(path: Path) -> dict:
     """
     record: dict = {"file": path.name, "text": [], "reads": [], "raw": [], "bad": "",
                     "said": {}}
-    lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
+    try:
+        lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
+    except OSError as exc:
+        record["bad"] = f"cannot be read ({exc.__class__.__name__})"
+        return record
     if not lines or lines[0] != "---":
         record["bad"] = "no front matter"
         return record
@@ -510,34 +514,45 @@ def record_problem(record: dict) -> str | None:
     return None
 
 
-def live_records(records: list[dict]) -> list[dict]:
-    """Records left once every record answered by a live record is set aside.
+def live_records(records: list[dict]) -> tuple[list[dict], set[str]]:
+    """The records that stand, and the files of those whose answers carry weight.
 
-    A record with no answerer is live; one answered by a live record is set
-    aside; one whose answerers are all set aside is live again. Records that
-    only answer one another in a circle settle nothing: they stay live and
-    their answers are void.
+    Records that answer one another in a circle settle nothing: their answers
+    are void, for setting a record aside and for lifting a block alike. Among
+    the rest, a record with no answerer stands, one answered by a standing
+    record is set aside, and one whose answerers are all set aside stands again.
+    A record on a circle stands unless a record outside it answers it.
     """
-    files = {r["file"] for r in records}
-    answerers: dict[str, set[str]] = {file: set() for file in files}
-    for record in records:
-        for aim in answers_of(record):
-            if aim in files:
-                answerers[aim].add(record["file"])
+    by_file = {r["file"]: r for r in records}
+    aims = {file: [a for a in answers_of(r) if a in by_file] for file, r in by_file.items()}
+
+    def reaches(start: str) -> bool:
+        seen: set[str] = set()
+        todo = list(aims[start])
+        while todo:
+            at = todo.pop()
+            if at == start:
+                return True
+            if at not in seen:
+                seen.add(at)
+                todo.extend(aims[at])
+        return False
+
+    circular = {file for file in by_file if reaches(file)}
+    answerers: dict[str, list[str]] = {file: [] for file in by_file}
+    for file, targets in aims.items():
+        if file not in circular:
+            for aim in targets:
+                answerers[aim].append(file)
     state: dict[str, bool] = {}
-    changed = True
-    while changed:
-        changed = False
-        for file in files - state.keys():
-            by = answerers[file]
-            if any(state.get(a) is True for a in by):
-                state[file] = False
-            elif all(state.get(a) is False for a in by):
-                state[file] = True
-            else:
-                continue
-            changed = True
-    return [r for r in records if state.get(r["file"], True)]
+
+    def stands(file: str) -> bool:
+        if file not in state:
+            state[file] = not any(stands(a) for a in answerers[file])
+        return state[file]
+
+    standing = [r for r in records if stands(r["file"])]
+    return standing, {r["file"] for r in standing} - circular
 
 
 def compute_standing(root: Path, folder: Path,
@@ -579,11 +594,12 @@ def compute_standing(root: Path, folder: Path,
     live = {name: live_records(records) for name, records in counting.items()}
     blocked: dict[str, list[str]] = {}
     for name, files in negative.items():
-        left = files - {a for r in live.get(name, []) for a in answers_of(r)}
+        records, voiced = live.get(name, ([], set()))
+        left = files - {a for r in records if r["file"] in voiced for a in answers_of(r)}
         if left:
             blocked[name] = sorted(left)
     found: dict[str, dict] = {}
-    for name, records in live.items():
+    for name, (records, _) in live.items():
         wrong = [r for r in records if r["verdict"] == "wrong"]
         right = [r for r in records if r["verdict"] == "right"]
         if wrong and right:
@@ -644,11 +660,24 @@ def status(args: argparse.Namespace) -> int:
     now = dt.datetime.now(dt.timezone.utc)
     top = git("rev-parse", "--show-toplevel", cwd=folder)
     root = Path(top.stdout.strip()) if top.returncode == 0 else folder.resolve()
-    parts = [(path, read_part(path)) for path in sorted((folder / "parts").glob("*.md"))]
+    parts = []
+    for path in sorted((folder / "parts").glob("*.md")):
+        try:
+            parts.append((path, read_part(path)))
+        except OSError as exc:
+            print(f"unreadable part file {path.name} ({exc.__class__.__name__}), "
+                  "counted as one open obligation")
+            parts.append((path, {"lead": None, "lease": None, "counts": Counter(gap=1),
+                                 "requests": [], "typed": [], "legacy": [],
+                                 "unreadable": []}))
     names = {name for _, part in parts for _, name in part["typed"] + part["legacy"]}
     standing, stale, rejected, blocked = compute_standing(root, folder, names)
     for file, reason in rejected:
         print(f"rejected check record {file}: {reason}")
+    checks = folder / "checks"
+    for stray in sorted(checks.iterdir()) if checks.is_dir() else []:
+        if stray.suffix != ".md":
+            print(f"not a check record, ignored: checks/{stray.name}")
     goal = folder / "GOAL.md"
     if goal.exists():
         head = read_part(goal)

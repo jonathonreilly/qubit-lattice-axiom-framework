@@ -400,6 +400,55 @@ class StandingTest(unittest.TestCase):
                       text)
         self.assertIn("not checked until a record answers second-look.md: gamma", text)
 
+    def test_a_circle_of_answers_lifts_no_block(self):
+        folder = self.folder
+        self.part("- argued: epsilon -> x", "- argued: gamma -> x")
+        # A rejected negative record, then two right records that answer each
+        # other, one of which also names the negative record.
+        write_check(folder, "epsilon-9.md", "epsilon", "wrong", ("notes/epsilon.md",),
+                    failure="counterexample notes/epsilon.md:1", answers="epsilon-9.md")
+        write_check(folder, "epsilon-a.md", "epsilon", "right", ("notes/epsilon.md",),
+                    checker="p/m/e s3", answers="epsilon-b.md epsilon-9.md")
+        write_check(folder, "epsilon-b.md", "epsilon", "right", ("notes/epsilon.md",),
+                    checker="p/m/e s4", answers="epsilon-a.md")
+        # The same against a wrong record about an earlier text.
+        write_check(folder, "gamma-1.md", "gamma", "wrong", ("notes/gamma.md",),
+                    failure="step notes/gamma.md:1")
+        (folder / "notes" / "gamma.md").write_text("gamma, repaired\n", encoding="utf-8")
+        write_check(folder, "gamma-a.md", "gamma", "right", ("notes/gamma.md",),
+                    checker="p/m/e s3", answers="gamma-b.md, gamma-1.md")
+        write_check(folder, "gamma-b.md", "gamma", "right", ("notes/gamma.md",),
+                    checker="p/m/e s4", answers="gamma-a.md")
+        text = self.status()
+        self.assertIn("open 0 argued 2 checked-given 0 checked 0", text)
+        self.assertIn("not checked until a record answers epsilon-9.md: epsilon", text)
+        self.assertIn("not checked until a record answers gamma-1.md: gamma", text)
+        # A record outside the circle answers each, and both are checked.
+        write_check(folder, "epsilon-c.md", "epsilon", "right", ("notes/epsilon.md",),
+                    checker="p/m/e s5", answers="epsilon-9.md")
+        write_check(folder, "gamma-c.md", "gamma", "right", ("notes/gamma.md",),
+                    checker="p/m/e s5", answers="gamma-1.md")
+        self.assertIn("open 0 argued 0 checked-given 0 checked 2", self.status())
+
+    def test_files_that_cannot_be_read_are_reported_not_fatal(self):
+        folder = self.folder
+        self.part("- argued: gamma -> x")
+        write_check(folder, "gamma-1.md", "gamma", "right", ("notes/gamma.md",))
+        (folder / "checks" / "gamma-bad.md").symlink_to(folder / "nowhere.md")
+        (folder / "checks" / "gamma-note.txt").write_text("aside\n", encoding="utf-8")
+        text = self.status()
+        self.assertIn("rejected check record gamma-bad.md: cannot be read", text)
+        self.assertIn("not checked until a record answers gamma-bad.md: gamma", text)
+        self.assertIn("not a check record, ignored: checks/gamma-note.txt", text)
+        self.assertIn("open obligations: 1", text)
+        write_check(folder, "gamma-2.md", "gamma", "right", ("notes/gamma.md",),
+                    checker="p/m/e s3", answers="gamma-bad.md")
+        self.assertIn("open obligations: 0", self.status())
+        (folder / "parts" / "lost.md").symlink_to(folder / "nowhere.md")
+        text = self.status()
+        self.assertIn("unreadable part file lost.md", text)
+        self.assertIn("open obligations: 1", text)
+
     def test_unreadable_records_block_what_they_name(self):
         import hashlib
         folder = self.folder

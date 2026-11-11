@@ -89,7 +89,7 @@ Every `wrong` record, even about an earlier text, and every rejected one that
 does not plainly say `right` or `undecided`, keeps `checked` away until a live
 record `answers` it. `right` and `wrong` together leave the statement `argued`,
 shown as disputed; else a counterexample gives `refuted`, another `wrong`
-`open`, and a `right` `checked` given its reads.
+`open`, and a `right` `checked` given its reads. Answers in a circle are void.
 
 ## Obstructions
 

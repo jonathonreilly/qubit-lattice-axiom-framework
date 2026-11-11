@@ -7,7 +7,7 @@ Provenance: written by Claude Opus 5.5, effort high, Mac mini worker 2, at commi
 
 ## Status block
 
-Started 2026-11-11T12:19Z. In progress. Verdicts are appended one at a time below.
+Started 2026-11-11T12:19Z. Complete. No statement fails; Theorem B1 holds after two corrections of its input marks; see the summary table in Section 12 and the final status block.
 
 Read whole: `gap-vir-sc.md` (232 lines); `gap-transfer.md` lead note (row 671), Notation, Sections A and 1 to 4; `gap-mid-max.md` lead note (row 709) and Sections 4.1 to 4.5; `gap-seed-sc.md` Theorem 4 (statement and proof). Not read: the inputs of Theorem 4 (Theorems S, D, 3, Corollary S3'); they are checked rows (698, 699, 704) and are taken as given. Sussman-Alpoge account: not opened; their GL3 (link weights in Bessel form) enters only through `gap-transfer.md` Remark 2.6, and Lemma J (d) agrees with it.
 
@@ -64,3 +64,91 @@ Verdict: **(i) to (iv) HOLD.** Two convergence lines are missing; they are suppl
 - Branch form. On an analytic branch DD = lambda'/lambda = (log lambda)'. d/ds [Ehat/log(4/s)] = Ehat'/log(4/s) + Ehat/(s log^2(4/s)) >= 0 is the same as -s Ehat' <= Ehat/log(4/s). So Ehat/log(4/s) is non-decreasing on each branch; for an ordered level it extends across the finitely many junctions by continuity (consequence (2)). Checked.
 - Where s < 4 is used: only in the bounds 0 <= 1 - r <= 1 (Lemma J (e)), eta >= 0 and log(4/s) > 0. The identity s DD = <N>_w - s <V_1> - s <R>_w and the identity -log lambda = <eta>_w + D hold at every s > 0 (for the second, D >= 0 still holds, and eta >= 0 at every s > 0 because (2j+1)^2 c_j <= sum over k of (2k+1)^2 c_k = 1 by the trace argument of Lemma C; only the bound eta >= log(4/s) N needs s < 4 to be useful). The statement as written is restricted to s < 4 and is correct there.
 
+## 5. Proposition EL (no spatial plaquettes)
+
+Verdict: **HOLDS.**
+
+- With V_1 = 0, T = C_s P, and C_s, P, Pi_n commute (Lemma C), so T is c_n on Pi_n H_inv and 0 on Y. The vacuum label n = 0 (constants, dimension 1) is the unique top: c_j/c_0 = J_(2j+1)/J_1 = r_1 ... r_(2j) < 1 for s <= 2 (Lemma J (c)). Checked.
+- -s E' = sum over links of [(2j_l - s(1 - r_(2j_l+1))) - (0 - s(1 - r_1))] = N - s times the sum over links with j_l > 0 of (r_1 - r_(2j_l+1)). This is at most N + s times the sum of r_(2j_l+1) over those links. r_(2j+1) <= s/(2(2j+2)) <= s/6 for j >= 1/2, and there are at most N such links. So -s E' <= N(1 + s^2/6). Checked.
+- J_1 >= s/2. (2j+1+k)!/(2j+1)! = (2j+2)...(2j+1+k) >= (k+1)! >= 2^k, so J_(2j+1) <= ((s/2)^(2j+1)/(2j+1)!) e^(s^2/8). Then eta_j - eta_0 >= 2j log(2/s) + log((2j+1)!) - s^2/8, and this is >= 2j(log(4/s) - s^2/8) because log((2j+1)!) >= 2j log 2 and (1 - 2j) s^2/8 <= 0 for j >= 1/2. log(4/s) - s^2/8 is decreasing on (0, 2], with value log 2 - 1/2 > 0.19 at s = 2. Checked.
+- From branches to ordered levels: every label gives an explicit level satisfying E(s') >= E(s) exp(-integral of K). Pointwise domination of a countable family (finitely many members below any bound) gives the same domination of its order statistics. So (LEV_K) holds for the ordered levels with no (RK). The file says this in one line; it is right. Checked.
+- K(s) s log(1/s) = (1 + s^2/6) log(1/s)/(log(4/s) - s^2/8) tends to 1. Checked. Section 8 item 2 calls the rate "exact" in this model; it is exact only to leading order (K is (1 + s^2/6)/(s (log(4/s) - s^2/8)), not 1/(s log(4/s))). Wording only.
+
+## 6. Corollary U'
+
+Verdict: **HOLDS.** s DD(psi) <= Ehat/log(4/s) = (E + Ehat_0)/log(4/s) by Theorem U (iv); Ehat_0 <= 12 s abs(B) by `gap-transfer.md` (4b) (kappa_- = exp(-12 beta N^3), with N^3 replaced by abs(B) for a box, `gap-crux-restate.md` line 33); -s DD(psi_0) <= 9 s abs(B) by Theorem U (ii). Sum: s(DD(psi) - DD(psi_0)) <= E/log(4/s) + s abs(B)(9 + 12/log(4/s)). The orthogonality psi ⊥ psi_0 is not used in the inequality; it only makes E >= 0 meaningful. Checked.
+
+## 7. Theorem B1 ((LEV_K) with a box term)
+
+Verdict: **HOLDS AFTER CORRECTION.** Two input attributions are wrong or missing; no inequality changes.
+
+- On an analytic branch of an excited eigenvalue: -E' = DD(psi) - DD(psi_0) (E = log lambda_0 - log lambda). By Corollary U', -E' <= E/(s log(4/s)) + abs(B)(9 + 12/log(4/s)). Since lambda_0 is simple at every s, no other branch meets it, so E >= m on every excited branch, and the box term is at most abs(B)(9 + 12/log(4/s)) E/m. So (log E)' >= -K_B. Checked.
+- Ordered levels: by (RK) (2), log E_i is continuous and piecewise one branch on [s, s'] while lambda_i stays positive (it then stays above a positive bound by compactness). Integrate across the finitely many pieces. Checked.
+- **Correction 1.** "m = E_1 is continuous by (RK) (2) or by Lemma 4.1". Lemma 4.1 of `gap-mid-max.md` gives the continuity of lambda_0 only, not of lambda_1. Corrected text: "m = E_1 is continuous: lambda_0 by Lemma 4.1 (a), and lambda_1 by the min-max formula, abs(lambda_1(s) - lambda_1(s')) <= norm(T(s) - T(s')), or by (RK) (2). m > 0 by `gap-transfer.md` Statement (5)." K_B is then continuous and positive on (0, 4).
+- (VIR_K) from (LEV_K). Remark LEV of `gap-mid-max.md` gives G(t exp(I_h); s+h) <= G(t; s), I_h = integral of K over [s, s+h]; the mean value theorem in t, (exp(I_h) - 1)/h -> K(s) (K continuous), and the joint continuity of dG/dt for t >= 4 (Lemma 4.1 (b); t > 3 suffices by the row-709 note) give the upper limit <= -K(s) t (dG/dt)(t; s). Checked.
+- **Correction 2.** Remark LEV pairs the i-th ordered level at s with the i-th at s + h, for all i. This needs every eigenvalue of T on H_inv to be positive on [s, s+h], which the proof gets from Peter-Weyl (named in its last parenthesis, RECALLED). The statement's mark omits it. Corrected mark: "PROVED GIVEN Corollary U', (RK), Lemma 4.1 of `gap-mid-max.md`, and, for the (VIR_K) clause, the Peter-Weyl theorem for SU(2) (RECALLED; it makes C_s injective, hence T(s) injective on H_inv)." The injectivity step is: <f, T f> = <M f, C M f> = 0 forces M f in Y = 0, and M is invertible. Without Peter-Weyl the (LEV_K) clause for positive levels stands, and the (VIR_K) clause is not proved as written.
+
+## 8. Theorem B (the target on a restricted range)
+
+Verdict: **HOLDS.** Arithmetic redone by hand:
+
+- `gap-seed-sc.md` Theorem 4 with n = 4: s <= 10^(-6) gives theta = 12800 s <= 0.0128 < 1 and 4 theta^4 <= 1.1 x 10^(-7) <= 0.18; b >= 8 = 2n. So m >= 4 log(1/theta) - (4 log 4 + log 1614)/4.
+- log 12800 = 7 log 2 + 2 log 10 = 4.852 + 4.605 = 9.457 < 9.47. 4 log 4 = 5.545 < 5.55. log 1614 = 7.3865 < 7.39 (e^7.39 = 1619.7). (5.55 + 7.39)/4 = 3.235 < 3.24.
+- m >= 4(L - 9.47) - 3.24 = 4L - 41.12. L >= 6 log 10 = 13.8155, so 3L >= 41.446 >= 41.12, and m >= L. Checked.
+- log(4/s) = L + 1.386 > 15.2, so 9 + 12/log(4/s) < 9.79 < 10, and 1/(s log(4/s)) <= 1/(sL). K_B <= 1/(sL) + 10 b^3/L = (1 + 10 s b^3)/(sL). For s <= 1/(10 b^3) this is at most 2/(sL). Both (LEV_K) and (VIR_K) are monotone in K (exp(-integral of K) decreases; -t dG/dt >= 0). Checked.
+- The (VIR_K) clause inherits Correction 2 of Theorem B1 (Peter-Weyl).
+- "What Theorem B gives": d/ds log L(s) = -1/(sL), so the integral of 2/(sL) over [beta_0, beta_1] is 2 log(L_0/L_1). Checked. b >= 256 gives 1/(10 b^3) <= 1/(1.678 x 10^8) < 6 x 10^(-9). Checked. This range lies inside `gap-seed-sc.md` (beta < 1/12800) and Theorem DOB (beta < 1/18): nothing new is reached. Agreed.
+
+## 9. Proposition SUF
+
+Verdict: **HOLDS.** The cited bound and the arithmetic were redone.
+
+- Cited bound G(4; B; s) <= (4 abs(B)/100)(12800 s)^16. `gap-sc-box.md` Theorem SC (ii) with k = 4 gives abs(log Z(4) - (1/q) log Z(4q)) <= (abs(B) 4/100)(12800 s)^16 for every q, on free-wall boxes. The periodic form needs (P) of `gap-seed-sc.md` (log Xi bounded by (32/3) abs(beta) N, with N = 6 k abs(B) on the torus, the same M) and Corollary 2.3 there (order of vanishing 4k when every spatial side is at least 4, c_B = 4). (1/q) log Z(4q) -> 4 log lambda_0 as q -> infinity (Lemma A), and the bound is uniform in q. So the bound holds for the periodic box with sides at least 4 and real 0 < s < 1/12800. I read Theorem SC and the statements of (P) and Corollary 2.3, not their proofs (checked rows 694, 704).
+- G(t; .) is real-analytic for integer t >= 2 (Tr T^t analytic; lambda_0 a simple analytic branch). d/ds Tr T^t = t Tr(T^(t-1) T'). Evaluated in any orthonormal eigenbasis of T on H_inv, this is t times the sum of lambda_i^t DD(psi_i); zero eigenvalues drop out because t - 1 >= 1. **This step uses no branches**: it holds for any choice of eigenbasis in a degenerate eigenspace. (H2) and Corollary U' are stated for every unit eigenvector, so they apply to that basis. Good design; checked.
+- D_s G = (t/(1+S)) sum over i >= 1 of (DD_i - DD_0) rho_i^t and -t dG/dt = (t/(1+S)) sum over i >= 1 of E_i rho_i^t. Checked. (VIR_K) at integer t is the sum over i >= 1 of d_i rho_i^t <= 0 with d_i = s(DD_i - DD_0) - (C_1 + 1) E_i/L. Checked.
+- Levels with E_i < 5L: d_i <= C_1 - (C_1 + 1) m/L <= -1 (m >= L, Theorem B). By (H1), m <= 4.5 L < 5L, so i = 1 is one of them; their part is at most -rho_1^t = -exp(-tm) <= -s^(4.5 t). Checked.
+- Levels with E_i >= 5L: d_i <= E_i/L + 10 s b^3 - (C_1 + 1) E_i/L <= 10 s b^3. rho_i^t <= exp(-5L(t-4)) rho_i^4, so their sum of rho_i^t is at most s^(5t-20) S(4). (T') gives G(4) <= 1, and e^x - 1 <= 2x on [0, 1] (convexity, endpoint values 0 and e - 3 < 0), so S(4) <= 0.08 b^3 12800^16 s^16. Their part is at most 10 s b^3 x s^(5t-20) x 0.08 b^3 12800^16 s^16 = 0.8 b^6 12800^16 s^(5t-3). Checked.
+- Total at most s^(4.5t)(-1 + 0.8 b^6 12800^16 s^(t/2 - 3)) <= 0 by (T). Checked.
+- Example (s <= e^(-200), 256 <= b <= e^1000, integer t >= ceil(log_2 b)): t >= 8 so t/2 - 3 > 0, and a larger L only helps. 16 log 12800 = 151.32 < 151.4. t/2 >= log b/(2 log 2) = 0.72135 log b. 200(0.7213 log b - 3) >= 151.4 + 6 log b iff 138.27 log b >= 751.4 iff log b >= 5.435; log 256 = 5.545. Checked. (T'): the exact condition is 3 log b <= 16L - 16 log 12800 + log 25, that is 3 log b <= 3200 - 151.32 + 3.22; the file writes "- 3.3" in place of "+ 3.22". That is a stricter condition, still sufficient, and 3000 <= 3045.3. A sign slip with no effect.
+- What SUF does not cover (the file says so): non-integer times, and the hypotheses (H1), (H2), which are (BAND-sc), open.
+
+## 10. Labels outside the numbered statements
+
+- **Section 8 (direction).** The section heading says "Direction, not proof", and its first line says nothing in it is proved beyond the two formulas of Theorem U. That one line covers every sentence of the section; the sentences carry no separate marks. Each identity it quotes is proved elsewhere in the file: item 1's formula for s D_s G at integer t is the computation in the proof of Proposition SUF, and E = Delta eta + Delta D follows from Theorem U (iii). Item 3 ("E + s dE/ds = Delta D + s Delta V_1 + (small)") is heuristic. Its sign and the reading K s - 1 = -(Delta D + s Delta V_1)/E were re-derived from the large-s form of the Bessel ratio, I_(2j+1)/I_1 about exp(-2j(j+1)/s), and they are consistent; that ratio is marked RECALLED there. One overstatement: item 2 says the rate is "exact" in the model of Proposition EL; it is right only to leading order (Section 5 above). **Verdict: Section 8 marks every non-proved sentence as direction, through its heading and first line.**
+- **Section 6, one label is too strong.** "Why no bound of this kind can reach the target (PROVED, one line)" gives a reason, not a precise statement with a proof: "a bound of this kind" is not defined. Corrected mark: GUIDE, unless the claim is stated exactly (which bounds, which constants) and proved; the file does not do this. No proof uses this sentence. The rest of Section 6 is marked sketch or GUIDE, and the normal-family step is flagged as not written.
+- **Section 7, the GUIDE paragraph.** I checked one line of it: the vacuum side of the "soft route". log lambda_0 is convex in s (`gap-mid-max.md` Lemma 4.2), so DD(psi_0)(s) >= its limit at s -> 0+, which is -6 abs(B) (psi_0 -> 1, <V_1> -> 3 abs(B), R -> 3 abs(B), and the first gauge-invariant label with N > 0 is a plaquette with N = 4, whose weight w vanishes as s -> 0). So -s DD(psi_0) <= 6 s abs(B), which equals the leading term of s(<V_1> + <R>) in any state. This supports the sentence. The excited side is not done, as the file says.
+- **Section 1, one phrase.** "every real time" should read "every real t >= 4" (as in Theorem B). Wording only.
+
+## 11. Inputs that are recalled, not rebuilt
+
+- (RK), Rellich's theorem (Kato, Chapter VII Section 3): used in consequence (1) only for the branch form of Theorem U, in consequence (2) for Theorem B1, and in (3). Correctly marked RECALLED. Proposition EL and Proposition SUF do not use it (SUF uses only the analyticity of Tr T^t and of the simple lambda_0, and (3) for the latter).
+- Schur: Lemma C uses Schur's lemma together with the irreducibility of D^j (neither is proved in `gap-transfer.md`, whose 2.5 only defines D^l and computes chi_l), and Schur orthogonality (mutual orthogonality of the H_j, orthonormality of characters). The file marks "Schur orthogonality" only; the corrected mark names all three. Orthonormality of characters can be read from Weyl's formula by hand.
+- Peter-Weyl for SU(2): used in Theorem B1 (and so in Theorem B) for the (VIR_K) clause, to make every level positive. Named in the proof, missing from the mark (Section 7 above).
+- Weyl's integration formula for SU(2), in Lemma J (d): the file derives it in one line from N.1 of `gap-transfer.md` (Haar = surface measure of S^3; the polar slice at angle x has area proportional to sin^2 x). Adequate.
+
+## 12. Summary table
+
+| Statement | Verdict |
+|---|---|
+| Lemma J (a), (b), (c), (d), (e), (f) | HOLDS (each); hand test of (d), (e), (f) at j = 1/2, s = 1 passes, and (d) at j = 1/2 holds as a series identity by a second derivation (semicircle moments) |
+| Lemma C | HOLDS; mark should name Schur's lemma, irreducibility of D^j and Schur orthogonality as RECALLED; the trace argument without Peter-Weyl is correct |
+| Consequences (1), (2), (3) of (RK) | HOLD given (RK); (RK) is correctly cited |
+| Theorem U (i) | HOLDS |
+| Theorem U (ii) | HOLDS; three terms of T' and the minus sign of the magnetic term checked; P psi = psi used correctly (twice); finiteness of <N>_w is a missing line, supplied |
+| Theorem U (iii) | HOLDS; the split into <eta>_w + D needs one convergence line, supplied; D >= 0 also follows from w log(w/q) >= w - q |
+| Theorem U (iv) and the branch form | HOLDS; valid at every 0 < s < 4 for every box with sides at least 3 |
+| Proposition EL | HOLDS; Section 8 calls its rate "exact", it is right to leading order |
+| Corollary U' | HOLDS |
+| Theorem B1 | HOLDS AFTER CORRECTION: continuity of lambda_1 is from min-max or (RK) (2), not Lemma 4.1; the (VIR_K) clause needs Peter-Weyl, which belongs in the mark |
+| Theorem B | HOLDS; all arithmetic redone; (VIR_K) clause inherits the Peter-Weyl input |
+| Proposition SUF and its example | HOLDS; the cited bound on G(4) is Theorem SC (ii) at k = 4 on the periodic box, limit q -> infinity; one sign slip in the (T') arithmetic of the example ("- 3.3" for "+ 3.22") is harmless |
+| Section 8 | marks every non-proved sentence as direction (by heading and first line) |
+| Section 6, "PROVED, one line" | label too strong; should be GUIDE; no proof uses it |
+
+No statement FAILS. The first-order formula is right, so Theorem U can be used at a coupling of order one below 4, for every level of every box, given (RK) for its branch form and the Schur facts above. The open statement of the source, (BAND-sc), is not touched by this check.
+
+## Status block (final)
+
+Completed 2026-11-11 (12:19Z to 12:28Z). Check of our own new text; not a proof of an open lemma; no open lemma attacked. No numerics were run; the hand test is displayed arithmetic. Same provider as the author (Claude), different model; so by the rules of this folder it is not the other-provider check. Not covered: the proofs of the cited checked inputs (`gap-seed-sc.md` Theorems S, D, 3, Corollary S3', (P), Corollary 2.3; `gap-sc-box.md` Theorem SC), Section 5 (GUIDE run; not re-run), and the literature names (Schor, O'Carroll, Braga, Michael, Rothe, Karsch). Nothing was committed or pushed; the only file written is this one.
+
+RESULT: every numbered statement of `gap-vir-sc.md` holds — Lemma J (a)-(f), Lemma C, the (RK) consequences, Theorem U (i)-(iv) at every s < 4, Proposition EL, Corollary U', Theorem B, Proposition SUF — and Theorem B1 holds after correcting two input attributions (continuity of lambda_1 by min-max, Peter-Weyl for the (VIR_K) clause); recalled inputs are Rellich-Kato, Schur's lemma with irreducibility and orthogonality, and Peter-Weyl; the hand test at j = 1/2, s = 1 passes; Section 8 is marked as direction; (BAND-sc) stays open.

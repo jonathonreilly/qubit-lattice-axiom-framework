@@ -598,3 +598,5 @@ Written by the lead (Claude Opus 5.5) from `library/gap-form-exercise.md` (row 7
 **A control.** Proposition Z2 (argued; given a Z_2 twisted transfer operator not written in the lane): in Z_2 gauge theory at beta at least 91 the full and kappa seeds hold at N = 3, so Corollary EV gives the clustering proved by Forsstrom. The machinery of 13.16 passes a case with a known answer. Off the path of T0.
 
 **Queue.** Row 736 (gpt-6-luna high): a reading against belief B4, that no proved case crosses many correlation lengths without one of (M1) to (M4), and the one test that could break row 735's main reading (does Gopfert and Mack or Kopper use an inequality between two sizes above its threshold?). Not queued: a check of F3, F5 and Proposition Z2 (off the path), the Z_2 control file.
+
+**Row 736 (result).** Only Kopper was read in full; it fits (M2) and uses no inequality between two sizes. Gopfert and Mack and the hierarchical and large-N papers were not obtained (bot check, paywalls). The test of row 735's reading on Gopfert and Mack stays open, and so does belief B4. The rule of this section stands as the lead's decision; it does not rest on B4.

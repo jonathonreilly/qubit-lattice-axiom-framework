@@ -119,3 +119,43 @@ Answer, labelled by what it rests on.
 - Recalled, `unchecked`: Osterwalder-Seiler's strong-coupling expansion gives analyticity, uniformly in the volume, in a complex disc about beta = 0 whose radius is small and, in their text as I recall it, not given as a number like 1/10. Theorem A's interval [0, 1/10] with a tube of width 10^{-7} is a different shape (long and thin) and is not obviously inside their disc.
 - So: Theorem A is of the known Dobrushin type in method (the file says so in 2.5.2 and in its credits), it may be a special case of a known continuous-spin extension of complete analyticity, and I could not establish that. Nothing in the chain depends on the answer, since the proof checked above is complete and self-contained.
 
+## 13. Defects, ranked by what each breaks
+
+None breaks Theorem A, Theorem ZB-chain or Proposition B.
+1. Corollary A2, domain (TUBE). "A subdomain of T with the shape condition (TUBE), for instance a thin rectangle" names a condition that no bounded domain satisfies (`gap-zero-transport-check.md` 3.1); a thin rectangle fails at its right end. Breaks the second sentence of A2 as written. Repair (checked above, 8 (b1), (b2)): use Theorem ZB-chain (Corollary 3.3), or the corrected Theorem ZB with a Lipschitz lens satisfying (TUBE').
+2. Corollary A2, open set. U = interior of Q does not contain beta_1 = 1/10. Repair: U = T.
+3. Interpretation of Proposition B (in the file's 3.2 closing paragraph and in the FINISH row 677 summary): "no hypothesis in which the zero-free radius shrinks with the gap can cross the region" holds for a transport whose loss is exponential in the number of discs, that is, for the two-constants route; it is not a theorem about every continuation. Suggested wording: "with the two-constants transport (Theorem ZB-chain), no hypothesis of the form r = c mu^p crosses ...".
+4. Remark 2.5.1 (several couplings) omits the closedness of the 1-form sum_p c(a_p, beta) d beta_p; one line (equal mixed derivatives at real points, identity theorem) repairs it.
+5. Section 4, status of (HS-sup): "on the base it holds in the integrated form of Corollary A4" is loose. A4 bounds |sum_p <F; a_p>| by a constant times sup|F| that grows like (1.0008)^{n_F}; it does not bound sup|grad_b Phi| and does not give the form C sum_b sup|grad_b F|. (HS-sup) is proved nowhere, on the base or above it.
+6. Small precisions: Corollary 3.3's range is [r_0, 1/10 - 10^{-7}] and needs r_0 <= 1/10 - 10^{-7} (status block item 4 says [r_0, 1/10)); in 2.3 the step "c < 0.0508, so 9c < 0.457" needs the sharper c(1/20) = 0.050754 (true). No consequence.
+
+## 14. Table of verdicts
+
+| Statement (file `library/gap-zf-box-x.md`) | Verdict | Note |
+|---|---|---|
+| Lemma 2.3 (one-link inequality) | HOLDS | Leibniz formula, vanishing terms, mass-zero pairing, [lambda] bounds all checked (Section 1) |
+| Lemma 2.4 (sweep contraction) | HOLDS | Dropping the empty-set term is correct (Section 2) |
+| Lemma 2.1 (B2) | HOLDS | Variance bound re-derived; E v_1^4 = 1/8 by a second route (Section 3) |
+| Lemma 2.1 (B1), (B3) | HOLDS | Section 3 |
+| Lemma 2.2 | HOLDS | Section 7 |
+| Theorem A (1) | HOLDS | Section 4 |
+| Theorem A (2) | HOLDS | Identity-theorem step correct; T simply connected (Section 4) |
+| Theorem A (3) | HOLDS | Section 4 |
+| Theorem ZB-chain | HOLDS | Steps 1-3 checked; branch issue (C) does not arise; no limit of harmonic measures needed (Section 5) |
+| Corollary 3.2 | HOLDS | Section 8 |
+| Corollary 3.3 | HOLDS | Range [r_0, 1/10 - 10^{-7}] (Section 8) |
+| Proposition B | HOLDS | As an implication; its reading is for the two-constants transport only (defect 3) |
+| Proposition 0 (i), (ii), equivalence | HOLDS | Section 7 |
+| Corollary A1 | HOLDS | Section 8 |
+| Corollary A2 | HOLDS AFTER CORRECTION | U = T; (TUBE) replaced by Theorem ZB-chain or by (TUBE') with a Lipschitz lens (defects 1, 2) |
+| Corollary A3 | HOLDS | Constant 2.1 x 10^7 checked |
+| Corollary A4 | HOLDS | Constant 10^7 (1 + 2.1 x 10^7 ((1.0008)^{n_F} - 1)) checked |
+| Lemma 4.1 (i)-(iii) | HOLDS | Re-derived (Section 9) |
+| Remark 2.5.1 | HOLDS AFTER CORRECTION | Closedness of the 1-form (defect 4) |
+| Remark 2.5.2 | HOLDS | Dobrushin coefficient sum <= 9 c(x); the consequences are Dobrushin's theorem, recalled, unused |
+| Constants: gamma, x_D in (0.102, 0.103), width 10^{-7}, region T, 1/20 by 3 x 10^{-5} rectangle, omega_*, Lambda | HOLD | By hand (Section 11) |
+| Theorem A from a known theorem | UNDETERMINED | Dobrushin-Shlosman, Osterwalder-Seiler not read; see Section 12 |
+
+In the vocabulary of the FINISH rules: Theorem A and Theorem ZB-chain ADVANCE (correct, and new statements on the route: an explicit volume-uniform zero-free region for boxes with free walls, and a transport with no shape condition); Proposition B is CORRECT-NO-ADVANCE (it limits the route, it does not extend it); nothing is WRONG beyond the corrected Corollary A2 and the noted wordings.
+
+Status. Checked by Claude Opus 5.5 (high) on the Mac mini at 53b90e6c9; a second reader of the same vendor, with the steps marked "re-derived" done by a different route. Not checked here: (TM_B), (SC_B) (inputs, rows 681 and 683), the three failed ways and the Ising consistency test of 3.3 (reports, not statements), Remark 2.5.3, the Hessian bound of plan 1.4. Open after this check, unchanged by it: (SC_B), (TM_B), (H_p), (HS-sup), any zero-free neighbourhood of a real coupling above x_D.

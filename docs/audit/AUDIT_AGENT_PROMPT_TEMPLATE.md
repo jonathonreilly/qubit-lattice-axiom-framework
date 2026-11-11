@@ -371,10 +371,22 @@ exhaustive index coverage.
 Record all eight checks in `no_go_discipline`. A gate `FAIL` is allowed with a
 conservative non-clean verdict, `chain_closes=false`, an explicitly narrowed
 `claim_scope`, a corrected wall set, and the next untested route. It can never
-support `audited_clean`. A gate `PASS` requires at least five genuinely distinct
-N1 mechanism classes, every route closed, complete structured N2-N8 records,
-no unresolved items, a resolved steelman, a complete cross-cycle scan, and no
-failure items. Do not turn five phrasings of one route into five routes. A
+support `audited_clean`. A gate `PASS` requires every N1 route closed, complete
+structured N2-N8 records, no unresolved items, a resolved steelman, a complete
+cross-cycle scan, and no failure items.
+
+Judge the negative claim as a theorem about an explicit family. For `PASS`,
+`claim_scope` must state the family that is ruled out with explicit
+quantifiers: which objects, which premises, and which resolution (element,
+site, mode, block, or lattice). N1 lists the admissible routes inside the
+family the source claims to rule out, including the route of the N7 steelman.
+Each listed route is closed by a test you ran or by a prior authority, or it
+is recorded as open or untested. An open or untested route inside that family
+forces `FAIL`; the narrowed `claim_scope` then states the smaller family that
+is ruled out. An escape outside the claimed family refutes nothing and does
+not make N1 fail. N1 has no minimum number of routes or route classes: a count
+is not evidence that a family is ruled out. Do not add a route to reach a
+number, and do not turn several phrasings of one route into several routes. A
 route's `attempt` must name the route-specific calculation or restricted-packet
 test. Normalized `attempt` strings must be pairwise distinct; do not reuse one
 attempt sentence across routes. A
@@ -676,8 +688,9 @@ validator still requires substantive values whenever the condition applies.
 ```
 
 For every N1 route, `mechanism`, `attempt`, and `outcome` must each occur
-verbatim at the single cited `evidence_path`. The combined text must contain a
-literal marker accepted for its `route_class`:
+verbatim at the single cited `evidence_path`. `route_class` is a descriptive
+label: several routes may share a class, and nothing counts classes. The
+combined text must contain a literal marker accepted for its `route_class`:
 
 - `algebraic_rearrangement`: algebra, identity, rearrange, factor, cancel, solve;
 - `symmetry_or_representation`: symmetry, invariant, representation, commutator, character, irrep, group;
@@ -711,9 +724,9 @@ markers use their literal ASCII spelling; Unicode letters and combining marks
 continue a token rather than manufacturing a boundary or a case-insensitive
 lookalike.
 
-When the gate is `FAIL`, list only the genuinely evidenced routes; fewer than
-five is valid and records the N1 failure. Do not fabricate extra routes merely
-to reach five.
+At either gate status, list only the genuinely evidenced routes. No number of
+routes is required, and a short list is not an N1 failure. Do not fabricate a
+route.
 
 For `PASS`, keep the five FAIL-only fields present: set `demotion`,
 `prior_claim_scope`, `narrowed_claim_scope`, and `next_route` to `null`, and

@@ -178,7 +178,8 @@ wired at `docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md` "NO-G
 GATE". The checked-in gate binds every N1-N8 statement to evidence in the
 restricted audit packet (`docs/audit/scripts/no_go_discipline_gate.py`).
 
-- N1: at least **five materially distinct** attack routes, each with a
+- N1: the family ruled out, stated with explicit quantifiers (which objects,
+  premises and resolution), and the attack routes inside it, each with a
   one-sentence statement of what the route would attempt, a one-sentence
   statement of why it fails with its authority cited, and exactly one honesty
   marker — `ATTEMPTED` (tested this cycle) or `RULED OUT BY PRIOR`, which
@@ -186,7 +187,8 @@ restricted audit packet (`docs/audit/scripts/no_go_discipline_gate.py`).
   Two routes are distinct only when they materially differ in primary
   object/formulation, load-bearing mechanism or invariant, or terminal proof
   obligation; different agents, notation, or artifact types do not make distinct
-  routes. Fewer than five distinct routes means the no-go is premature: list
+  routes. No number of routes is required, and a count is not evidence. An
+  open or untested route inside the family means the no-go is premature: list
   what you have and stop.
 - N2: the full pairwise independence table of the walls, WITH collapse applied —
   dependent walls collapse and the headline claim uses the collapsed set.

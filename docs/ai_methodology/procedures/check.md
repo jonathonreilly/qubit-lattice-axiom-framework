@@ -109,7 +109,7 @@ published route removes is not the physical one claimed.
 Interim rule. The N1 to N8 packet is a checker's aid: prompts, never a verdict.
 Until the tooling changes it stays required by `land` (answers committed with
 the note; five N5 runner-output lines, checked by script), by `audit` (the
-packet and its five-route quota) and, in prose, by the older `no-go-discipline`
+packet, with no route quota) and, in prose, by the older `no-go-discipline`
 skill. A check neither writes nor grades it: never `wrong` for a missing or
 short packet, never `right` for a passing one, never an invented route family.
 Note its state in the record body; a packet failing the schema stays pending.

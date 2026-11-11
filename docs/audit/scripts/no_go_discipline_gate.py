@@ -3,9 +3,13 @@
 
 The gate binds every N1-N8 statement to evidence visible in the restricted
 audit packet.  It does not try to prove semantic correctness mechanically; it
-does prevent empty prose, synthetic route counting, unsupported prior-authority
+does prevent empty prose, duplicated routes, unsupported prior-authority
 claims, unresolved steelmen, and failed checklists from authorizing a clean
 negative verdict.
+
+It sets no minimum number of N1 routes or route classes.  A negative claim is
+judged as a theorem about an explicitly quantified family, and a count is not
+evidence that the family is ruled out.
 """
 from __future__ import annotations
 
@@ -90,6 +94,11 @@ EVIDENCE_SNAPSHOT_ENTRY_REQUIRED_FIELDS = frozenset(
 PRIOR_AUTHORITY_PREMISE_TYPES = {
     "axiom_or_approved_primitive",
 }
+# `route_class` is a descriptive label from this controlled list, and the list
+# prompts the auditor with kinds of escape to consider.  Nothing counts
+# classes, and several routes may share one.  The keyword markers below only
+# keep a route's label consistent with its own mechanism/attempt/outcome text;
+# neither the label nor a marker is evidence that a route is closed.
 ROUTE_CLASSES = {
     "algebraic_rearrangement",
     "symmetry_or_representation",
@@ -3456,11 +3465,21 @@ def _unresolved_error(section: dict, label: str, status: str) -> str | None:
 
 
 def _validate_n1(packet: dict, status: str, manifest: dict[str, dict] | None) -> str | None:
+    """Validate the listed alternative routes.
+
+    Each route is bound to evidence, mechanisms and attempts are pairwise
+    distinct, and PASS requires every listed route CLOSED.  No minimum number
+    of routes or route classes applies: a count is not evidence that a family
+    is ruled out.  Whether `claim_scope` states that family with explicit
+    quantifiers, and whether every admissible route inside it is listed, is
+    the auditor's judgment and is not checked here.  A valid packet still
+    lists at least one route, because `_validate_n7` requires the steelman to
+    name one.
+    """
     routes = packet.get("N1_alternative_routes")
     if not _list(routes):
         return "N1_alternative_routes must be a list"
     route_ids: set[str] = set()
-    route_classes: set[str] = set()
     for index, route in enumerate(routes, 1):
         if not isinstance(route, dict):
             return f"N1 route {index} must be an object"
@@ -3545,9 +3564,6 @@ def _validate_n1(packet: dict, status: str, manifest: dict[str, dict] | None) ->
         if status == "PASS" and disposition != "CLOSED":
             return f"No-Go Discipline PASS cannot contain N1 route {index} disposition={disposition}"
         route_ids.add(route_id)
-        route_classes.add(route_class)
-    if status == "PASS" and len(route_classes) < 5:
-        return "No-Go Discipline PASS requires at least 5 distinct route_class values"
     mechanisms = [_semantic_norm(route["mechanism"]) for route in routes]
     attempts = [_semantic_norm(route["attempt"]) for route in routes]
     if not all(mechanisms) or not all(attempts):

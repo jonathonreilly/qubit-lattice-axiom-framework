@@ -211,7 +211,9 @@ def _set_no_go_scan_coverage(packet: dict, manifest: dict[str, dict]) -> None:
 def _no_go_packet(
     *,
     status: str = "PASS",
-    route_count: int = 5,
+    # Three routes, on purpose fewer than the retired five-class minimum: the
+    # gate counts no routes or classes, so every PASS fixture must validate.
+    route_count: int = 3,
     evidence_path: str = "audit-packet://runner-stdout/test_no_go",
     evidence_locator: str = "No-go obstruction",
     source_path: str = "docs/TEST_NO_GO.md",
@@ -223,7 +225,9 @@ def _no_go_packet(
     claim_id: str = "test_no_go",
     cross_cycle_candidates: tuple[str, ...] = (),
 ) -> dict:
-    failures = [] if status == "PASS" else ["N1: fewer than five routes close"]
+    failures = [] if status == "PASS" else [
+        "N1: an admissible route inside the family is untested"
+    ]
     route_classes = [
         "algebraic_rearrangement",
         "symmetry_or_representation",
@@ -8781,35 +8785,79 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertIn("in_flight_reframe:docs/repo/ACTIVE_REVIEW_QUEUE.md", candidate_ids)
         self.assertEqual(rendered["search_scope"]["meta_notes"]["scanned_count"], 1)
 
-    def test_pass_requires_five_distinct_routes(self):
+    def test_pass_sets_no_minimum_on_routes_or_route_classes(self):
         m = _import("no_go_discipline_gate")
         audit = {
             "claim_type": "no_go",
             "verdict": "audited_clean",
             "chain_closes": True,
-            "no_go_discipline": _no_go_packet(route_count=4),
         }
-        self.assertIn(
-            "at least 5 distinct route_class values",
-            m.validate_no_go_discipline(audit) or "",
-        )
+        # A count of routes or of route classes is not evidence that a family
+        # is ruled out, so PASS validates at every size from one closed route.
+        for route_count in (1, 2, 3, 4, 5, 6):
+            with self.subTest(route_count=route_count):
+                audit["no_go_discipline"] = _no_go_packet(route_count=route_count)
+                self.assertIsNone(m.validate_no_go_discipline(audit))
+                self.assertIsNone(
+                    m.validate_no_go_discipline(
+                        audit, evidence_manifest=self._manifest()
+                    )
+                )
 
-        audit["no_go_discipline"] = _no_go_packet(route_count=5)
-        self.assertIsNone(m.validate_no_go_discipline(audit))
-
-    def test_pass_rejects_duplicate_route_classes_and_open_routes(self):
+    def test_pass_floor_is_the_steelman_route_not_a_count(self):
         m = _import("no_go_discipline_gate")
-        packet = _no_go_packet()
-        for route in packet["N1_alternative_routes"]:
-            route["route_class"] = "algebraic_rearrangement"
+        packet = _no_go_packet(route_count=0)
         audit = {
             "claim_type": "no_go",
             "verdict": "audited_clean",
             "chain_closes": True,
             "no_go_discipline": packet,
         }
+        # N1 accepts an empty list. N7 does not: the steelman must name a
+        # listed route, so a valid packet lists at least that one.
+        self.assertIsNone(m._validate_n1(packet, "PASS", None))
+        self.assertEqual(
+            "N7.route_id must name an evidenced N1 route",
+            m.validate_no_go_discipline(audit),
+        )
+
+    def test_pass_allows_shared_route_class_and_rejects_unsupported_class_and_open_routes(self):
+        m = _import("no_go_discipline_gate")
+        audit = {
+            "claim_type": "no_go",
+            "verdict": "audited_clean",
+            "chain_closes": True,
+        }
+
+        # Nothing counts classes, so two closed routes may share one.
+        manifest = self._manifest()
+        shared_mechanism = "factor the determinant identity"
+        shared_attempt = "solve the factored identity for every coefficient"
+        manifest["audit-packet://runner-stdout/test_no_go"]["text"] += (
+            "\n" + shared_mechanism + "\n" + shared_attempt
+        )
+        packet = _no_go_packet(route_count=2)
+        packet["N1_alternative_routes"][1].update({
+            "route_class": "algebraic_rearrangement",
+            "mechanism": shared_mechanism,
+            "attempt": shared_attempt,
+        })
+        _set_no_go_scan_coverage(packet, manifest)
+        self.assertEqual(
+            {"algebraic_rearrangement"},
+            {route["route_class"] for route in packet["N1_alternative_routes"]},
+        )
+        audit["no_go_discipline"] = packet
+        self.assertIsNone(
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest)
+        )
+
+        # A label that the route's own text does not support is still rejected.
+        packet = _no_go_packet()
+        packet["N1_alternative_routes"][1]["route_class"] = "algebraic_rearrangement"
+        audit["no_go_discipline"] = packet
         self.assertIn(
-            "route_class",
+            "N1 route 2.route_class='algebraic_rearrangement' is not supported",
             m.validate_no_go_discipline(
                 audit, evidence_manifest=self._manifest()
             ) or "",
@@ -9814,7 +9862,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         )
         stdout_path = "audit-packet://runner-stdout/test_no_go"
         manifest[stdout_path]["text"] += "\n" + wall_line
-        packet = _no_go_packet()
+        packet = _no_go_packet(route_count=5)
         route = packet["N1_alternative_routes"][4]
         route.update({
             "route_id": "unit_normalization",
@@ -9992,7 +10040,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                         )
                     )
                     manifest = self._manifest()
-                    packet = _no_go_packet()
+                    packet = _no_go_packet(route_count=5)
                     route = packet["N1_alternative_routes"][4]
                     compound_marker_line = (
                         f"N2 route {marker_case}: the touching near-markers "

@@ -253,3 +253,32 @@ Worker 1 writes proofs (Claude Fable 5.2, medium effort). Worker 2 checks, ports
 - The digests `library/prior/gap-prior.md`, `library/gap-lit.md`, `library/gap-lit-2.md` (FINISH rows 655, 656, 661).
 
 Every citation above is the runs' statement. Before any outward post, each one is read in the primary text.
+
+## 12. Results after the first round (2026-11-11)
+
+Two items of the queue ended. **No mass gap is proved.** The source files win over this summary.
+
+### 12.1 Route Z, the transport theorem (FINISH row 681)
+
+Source: `library/gap-zero-transport-check.md`. It is one line-by-line reading by Claude Opus 5.5 high, which did not write the proofs.
+
+- Theorem ZB, Theorem Z and Corollary 5′ hold after a correction. No bounded domain satisfies the shape condition (TUBE), so the theorems were vacuous as written. The check replaces (TUBE) with (TUBE′), adds the hypotheses (X) and (C), and proves Lemma S. The conclusion $m_B(\beta) \ge \kappa_0\,\omega_D(\beta)$ is unchanged. Use the corrected statement of its Section 3.6.
+- Theorem LP holds; one step of its proof was replaced. Lemma HM, Lemmas 1, 1′, 2, 3, Proposition 3 and the Hessian bound hold.
+- (TM_B) is written out there as a port of `library/gap-transfer.md` (row 667). The check of row 667 by another model is `library/gap-transfer-check.md` (row 671).
+- Constraint on node N5: its domain must satisfy (TUBE′), or the item must prove its own replacement of Lemma S. A slit strip does not satisfy (TUBE′) near the slit tips.
+
+### 12.2 Route Z, the crux (FINISH row 677)
+
+Source: `library/gap-zf-box-x.md`, written by Claude Fable 5.2 medium. **It is not checked by another model.** The check is FINISH row 685.
+
+- Theorem A (the base). For every box with free walls, of every size, $Z(\beta)$ has no zero in a tube around $\lvert \mathrm{Re}\,\beta\rvert \le 1/10$. The tube does not depend on the box. At real $\beta$ the condition is Dobrushin’s, with threshold near 0.102. This is a strong-coupling statement: the crossover is near $\beta = 2$.
+- Theorem ZB-chain. Theorem ZB along a chain of discs, with no shape condition and no global domain. If its check holds, it replaces (TUBE′) on real intervals.
+- Proposition B. Take any hypothesis in which a common gap $\mu$ gives a zero-free disc of radius $c\,\min(1,\mu)^p$. Then the continuation ends at a finite coupling. So a zero-free radius that shrinks with the gap cannot cross the region of coupling of order one.
+- The one exact next statement, (HS-sup): for some explicit $\beta_2 > 1/10$ and every real $\beta$ in $[1/10, \beta_2]$, a constant independent of the lattice bounds the link gradient of the solution of the Poisson equation for the action. Prove it, or give a family of boxes where it fails.
+
+### 12.3 What changes in the plan (the lead’s reading)
+
+1. Route Z stays. Its transport theorem is now a checked implication from (TM_B), (SC_B) and (ZF_B).
+2. The crux of Route Z is sharper. (ZF_B) above $\beta = 1/10$ needs a zero-free radius that does not shrink with the gap. (HS-sup) is the exact form. This is the first stop on this statement; a second stop sends it back to a max author for a new statement.
+3. Order of work: `gap-ac-lat` (the crux of Route T) runs next. The lead then compares the two cruxes before `gap-zf-box-x-2` is queued.
+4. Section 6 of this file still lists the statements of run 2 as not checked. Row 681 is their check; the table is kept as a record of the state at 2026-11-11 01:40 UTC.

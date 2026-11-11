@@ -449,6 +449,17 @@ class StandingTest(unittest.TestCase):
         self.assertIn("unreadable part file lost.md", text)
         self.assertIn("open obligations: 1", text)
 
+    def test_a_part_file_with_bad_bytes_keeps_its_obligations_and_adds_one(self):
+        self.part("- argued: alpha -> x", "- open: beta -> x")
+        damaged = self.folder / "parts" / "core.md"
+        damaged.write_bytes(damaged.read_bytes() + b"- argued: gam\xffma -> x\n\xff\n")
+        text = self.status()
+        self.assertIn("open 1 argued 1 checked-given 0 checked 0", text)
+        self.assertIn("this file is not valid UTF-8, counted as one more open obligation",
+                      text)
+        # alpha, beta, the line that can no longer be read, and one for the damage
+        self.assertIn("open obligations: 4", text)
+
     def test_unreadable_records_block_what_they_name(self):
         import hashlib
         folder = self.folder

@@ -372,3 +372,57 @@ Source: `library/prior/gap-crux-lit-2.md` (417 lines; Codex gpt-6-luna high; a r
 5. **Orbit-space curvature.** No lower bound on the Ricci curvature of SU(2)^n modulo gauge with a constant independent of the volume was found. Capel et al., arXiv:2606.13453: a logarithmic Sobolev inequality on a quotient under a free action; the action of the periodic lattice gauge group is not free (the constant centre acts trivially), and the result covers U(1) too (reader's report).
 
 **The lead's reading.** (a) The pass agrees with both max plans and with row 691: the inequalities and the criteria are the same for every group, so a proof must put the group into the premise. (b) Two objects now carry that premise in the published work and in this lane: the twist ratio Z^(-)/Z on a box (Route T, lead 1) and the dominance of the transfer operator on a complex neighbourhood (Route Z, Section 13.6). Lead 2 reports a seed-and-doubling criterion on exactly the first kind of object, in a model one step simpler. (c) Next step, by the stop rule of Section 9: one author run by Claude Fable 5.2 max for a new statement of the crux (FINISH row 697). It gets the three stop statements, the test against U(1) and Z_2, and these leads as data.
+
+### 13.8 The crux restated by the max author: one seed inequality (FINISH rows 697 to 702)
+
+Source: `library/gap-crux-restate.md` (353 lines; Claude Fable 5.2 max as author; read whole by the lead). **Nothing in it is checked by a model that did not write it. No mass gap is proved.** The lead derived the main chain again and found no error; the lead is the same model as the author, so that is not an independent check.
+
+**The new conditional form (C1).** Let F = log Z for the Wilson SU(2) theory on a periodic torus, and
+
+```math
+\Phi(n) \;=\; 16\,F(n,n,n,n) \;-\; F(2n,2n,2n,2n) \;\ge\; 0 .
+```
+
+*Theorem D (b).* The thermal sum $`s = S(n;(2n)^3)`$ of the periodic cube of side 2n at time n obeys $`1 + s \le e^{\Phi(n)}`$.
+
+*Theorem S.* For n at least 3:
+
+```math
+S(2n;(4n)^3) \;\le\; \big((1+s)^{64}-1\big)^2 .
+```
+
+If $`s < 1/5041`$, then every periodic cube of side $`2^{k+1} n`$ has a transfer-operator gap of at least $`\log(1/(5041\,s))/n`$.
+
+So one inequality at one size,
+
+```math
+\textbf{(SEED)}\qquad \Phi(n) \;\le\; 1.9\times 10^{-4}\quad\text{for one } n \ge 3 ,
+```
+
+gives a gap of at least 0.04/n on all the dyadic cubes. The gap is on the whole space, flux sectors included.
+
+**What it uses.** A positive trace-class transfer operator in each direction with a simple top eigenvalue (TM); the centre flips (TM-c) for the flux statements; the invariance of Z under exchange of two axes. The step that the two max plans left open closes by a new lemma (Lemma K): the deficit $`\kappa(b) = e(b) - \ell\,b`$ of the ground-state energy against the bulk free energy is non-negative, convex and non-increasing in the side b. Convexity comes from the crossed direction, in which the same partition function is a trace of powers.
+
+**What it no longer needs.** Free or fixed walls, a complex neighbourhood of the coupling, (2L), (SCAL_B), (CP), (HS-sup), (W). The price: the seed is a statement at a size of the order of the correlation length (side times mass about 24, by the author's estimate), so it is false in a small physical volume and it lives where the coupling is of order one.
+
+**The test against U(1) and Z_2.** Theorem S holds for every group. The group enters only through the seed. By recalled estimates, used in no proof, the seed fails for U(1) at weak coupling at every size (the photon keeps Phi at about 0.04 or more) and for Z_2 at its transition. So this form passes test (ii) in the right way: the general part is the same for all groups and the premise is not.
+
+**The flux half.** Theorem F: the odd-flux weight v on a torus obeys $`v(ja,kb) \le v(a,b)^{jk}`$, so one seed v below 1 gives area decay on all multiples at a fixed section. Proposition T: a transverse inequality (TUBE), a bounded defect and one seed give the area law of the odd-flux weight on dyadic symmetric tori. The exact open statement is (TUBE'): $`\operatorname{Tr}\Lambda^2(T_{tw}^{\,c}) \le \operatorname{Tr}\Lambda^2(T^{c})`$ on tori with a square section. It is needed at every scale. Identity 4.4 writes the SU(2) odd-flux weight as a mean of Z_2 odd-flux weights over SO(3) environments.
+
+**Where the program stands (the lead's reading).**
+
+1. The crux of the gap half now has three conditional forms: (DOM_B) (Route Z, Section 13.6), (W) (Section 13.4) and (SEED). (SEED) is the only one that is a single inequality at one size with no boundary values. It becomes the working form, if the two checks hold.
+2. The difficulty has not moved. The author made no attempt at the seed at a coupling of order one and names no tool. The author does not recommend another restatement run. A proof of the seed needs a correlation inequality of Griffiths type for SU(2), or a representation with positive weights, or a quantity that is monotone along the scale.
+3. A dependency to settle first: `library/gap-transfer.md` (row 667) states the transfer operator for the cube with equal sides. Theorem S uses boxes with unequal sides. The extension is expected to be routine; it is not established. Both checkers give a verdict on it.
+
+**Queued.**
+
+| Row | Item | Model | What it settles |
+|---|---|---|---|
+| 698 | `gap-seed-check` | Claude Opus 5.5 high | line-by-line check of the whole file; the transfer operator on boxes with unequal sides |
+| 699 | `gap-seed-check-astra` | Codex gpt-6-astra high | second check, other provider: the chain to Theorem S only |
+| 700 | `gap-seed-limit` | Claude Fable 5.2 medium | (SEED) gives exponential clustering in every limit state; the scaling form; the converse question |
+| 701 | `gap-seed-sc` | Claude Fable 5.2 medium | the seed on the strong-coupling disc with explicit constants; test of Theorem S against the known rate |
+| 702 | `gap-seed-lit` | Codex gpt-6-luna high | is Theorem S or Lemma K published; tools for the seed (correlation inequalities, positive dual forms, monotone quantities, finite-volume results) |
+
+Not queued: the author's items `gap-seed-guide` (a numeric guide under the numeric lock), `gap-seed-shape` (a better constant from the shape of the box) and `gap-tube-test`. They wait for the two checks.

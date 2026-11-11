@@ -3,7 +3,9 @@ lease_until: 2026-11-11T16:30Z
 
 # gap-twist-chart: the gauge chart (CH) at the twist-eating configuration
 
-Queue row 679 of `FINISH.md`, item P2 of Part 4 of `library/gap-skeleton-max.md` (lines 548-553). Worker session on the Mac mini, pinned at commit 1b6bf3372, written section by section. Research-stage working state; not checked by any other model; nothing here is a public claim.
+Queue row 679 of `FINISH.md`, item P2 of Part 4 of `library/gap-skeleton-max.md` (lines 548-553). Worker session on the Mac mini, pinned at commit 1b6bf3372, written section by section. Research-stage working state; nothing here is a public claim.
+
+Check: checked line by line by Claude Opus 5.5 (high), `library/gap-twist-chart-check.md` (FINISH row 695). All ten points hold; nine hold as written. Two corrections, applied in place by the lead (Claude Fable 5.2) on 2026-11-11 and marked "Corrected 2026-11-11": the radius r in (c) and (c') is an integer, and one arithmetic value in the constants. No other provider has checked the file.
 
 ## 0. Repo search, duplicate check, credits
 
@@ -57,7 +59,7 @@ If g = exp(lambda), then (V e^X)^g at the link l = (y, mu) is e^{lambda(y)} V_l 
 
 (b) A^tw(U) >= (mu_n / 16) sum over links of |X_l|^2.
 
-(c) If U' is a second configuration on Sigma_B with all defects at most delta' <= delta_0(n), and U' = U on all links whose two ends have base distance at most r from the base point b_0 of a link l, then |X_l(U) - X_l(U')| <= C_c(n) (sqrt(delta) + sqrt(delta')) exp(-r / (3n)). [This is the meaning given to "X at a link depends on U at base distance r with weight at most C exp(-c r/n)"; c = 1/3 is absolute.]
+(c) If U' is a second configuration on Sigma_B with all defects at most delta' <= delta_0(n), and U' = U on all links whose two ends have base distance at most r from the base point b_0 of a link l, then |X_l(U) - X_l(U')| <= C_c(n) (sqrt(delta) + sqrt(delta')) exp(-r / (3n)). [This is the meaning given to "X at a link depends on U at base distance r with weight at most C exp(-c r/n)"; c = 1/3 is absolute.] (Corrected 2026-11-11 after the check: in (c) and (c') r is a non-negative integer. This loses nothing, since the hypothesis depends only on the integer part of r. For a real r the bound holds with C_c(n) replaced by 1.3 x 10^4 n^7 C(n). The first version let r be real; Step 3 of the proof of (c') then loses a factor of at most exp(alpha_n/2).)
 
 Values (8.1): C(n) = 6.1 x 10^4 n^9, C_c(n) = 1.1 x 10^4 n^7 C(n), delta_0(n) of order n^{-32}. They are not optimised; see 8.3.
 
@@ -197,7 +199,7 @@ In the same way A^tw(U) <= (1/8)(|D_1 X| + |Q|)^2, so A^tw(U) = (1/8) |D_1 X|^2 
 1. C_3, C_4 >= 1: absolute, from G4.
 2. mu_n = (2 sin(pi/2n))^2, alpha_n = sqrt(mu_n/8), K_n = 25 n^6, K' = 350 n^6.
 3. eps_1 = 1/(4200 C_3 n^7); eps_2 = min(eps_1, 1/(13 C_4 n)).
-4. C(n) := 6.1 x 10^4 n^9, which is at least 6 K' x 6.5 n^3 x pi sqrt 2 = 60647 n^9.
+4. C(n) := 6.1 x 10^4 n^9, which is at least 6 K' x 6.5 n^3 x pi sqrt 2 = 60645.3 n^9 (corrected 2026-11-11 after the check; the first version wrote 60647; no bound changes).
 5. delta_0(n) := (eps_2 / C(n))^2. Then for delta <= delta_0: eps_0 = 6.5 n^3 pi sqrt(2 delta) satisfies 6 K' eps_0 <= C(n) sqrt(delta) <= eps_2 <= eps_1 (hypothesis of Lemma T, and of (b)), and 27 n^3 theta = (27/6.5) eps_0 <= eps_2 < 2 pi (hypothesis of Lemma R).
 6. C_c(n) := 1.1 x 10^4 n^7 C(n), the constant of (c).
 
@@ -246,7 +248,7 @@ Script `/tmp/gtc-scratch/check_L.py` on the worker (not committed), run under th
 
 ## 10. Status block
 
-**Proved here (by hand, not checked by another model; label: unchecked).**
+**Proved here (by hand; checked line by line by Claude Opus 5.5 high, `library/gap-twist-chart-check.md`, row 695: holds, with the two corrections marked above).**
 - Theorem (CH), parts (a), (b), (c), for every n >= 2 and every rectangle B, with delta_0(n) = (eps_2/C(n))^2, C(n) = 6.1 x 10^4 n^9, eps_2 = min(1/(4200 C_3 n^7), 1/(13 C_4 n)), c(n) = mu_n/16 in (b), rate 1/(3n) and constant 6.7 x 10^8 n^16 in (c); C_3, C_4 are the two absolute second-derivative bounds of G4, defined by compactness.
 - On the way: Lemma L (gap mu_n of the twisted Hodge form on all cochains, free boundary), Lemma G (Green function of Delta_0: kernel decay at rate alpha_n >= 1/(sqrt 2 n), weighted sup norm at most 25 n^6), Lemma R (rough gauge), Lemma T (transverse gauge), Lemma Q (uniqueness up to the centre), (c') (locality across different rectangles).
 - The second alternative of the stop rule does not occur over a rectangle: no configuration with all defects below delta_0(n) fails to be a small perturbation of V up to gauge (Step C of Lemma R).

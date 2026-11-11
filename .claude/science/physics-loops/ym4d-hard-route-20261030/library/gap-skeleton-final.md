@@ -80,7 +80,7 @@ Nodes are run 1's N0-N7 (3.1, lines 459-475), renamed T0-T7.
 |---|---|---|
 | T0 | The account (form N1 or M1 of the source). | conditional outline; statements read, proofs not read |
 | T1 | Port of the account to T^2_s x T^2_l with twist for s below l_*(g): after K block steps the measure on Lambda(n_0, M) is exp(-beta_* A^tw - W), with W small in a polymer norm that decays in the base, uniformly in K and M. | OPEN. Statement made exact and corrected in Section 13.3 (row 684): conditional on the account's inputs and on three estimates for regions that wrap the fibre |
-| T2 | (W-twist-lat). For each n >= 2 there are beta_0(n), eps_0(n) and an absolute c > 0 with: covariance of gauge-invariant F, G in [-1, 1] over base sets X, Y is at most C(n, beta) size(X) size(Y) exp(-(c/n) dist(X, Y)), for beta >= beta_0(n), all M, and all W with norm at most eps_0(n). | OPEN; run 1: "Looks provable now" (items `gap-twist-chart`, `gap-twist-lat`). The chart (CH) is proved and not checked (Section 13.2; row 679). For use after T1 the statement must be made again for the class of Section 13.3 |
+| T2 | (W-twist-lat). For each n >= 2 there are beta_0(n), eps_0(n) and an absolute c > 0 with: covariance of gauge-invariant F, G in [-1, 1] over base sets X, Y is at most C(n, beta) size(X) size(Y) exp(-(c/n) dist(X, Y)), for beta >= beta_0(n), all M, and all W with norm at most eps_0(n). | OPEN; run 1: "Looks provable now" (items `gap-twist-chart`, `gap-twist-lat`). The chart (CH) is proved, and checked line by line by Claude Opus 5.5 (Section 13.2; rows 679, 695). For use after T1 the statement must be made again for the class of Section 13.3 |
 | T3 | Area law for loops in the base. (a) From the gap: Lemma 5 + Lemma 4 + the Tomboulis-Yaffe inequality. (b) Without the gap, at every beta > 0 and n: tension at least c (-log tanh(beta n^2)). | (a) sketch; (b) remark; neither checked (item `gap-flux-identities`) |
 | T4 | (W-twist). For s <= s_0 the continuum limit on R^2 x T^2_s with twist exists along subsequences, with decay exp(-(c/s) d) uniformly in K. So m(s) >= c/s. | OPEN; from T1, T2 and row 668 |
 | **T5** | **(AC'). There is m_0 > 0 such that for every s >= s_0 and every K the theory on R^2 x T^2_s with twist has decay exp(-m_0 d).** Lattice form (AC'-lat): there is beta_1 with inf over n >= 2 of m(beta, n) > 0 for every beta >= beta_1. | **OPEN. Run 1: "The approach dies here."** (item `gap-ac-lat`) |
@@ -300,7 +300,7 @@ Source: `library/gap-sc-box.md`, written by Claude Opus 5.5 high. Check: `librar
 
 ### 13.2 Route T, the chart (CH) (FINISH row 679)
 
-Source: `library/gap-twist-chart.md`, written by Claude Fable 5.2 medium. **It is not checked by another model.** The check is FINISH row 695.
+Source: `library/gap-twist-chart.md`, written by Claude Fable 5.2 medium. Check: `library/gap-twist-chart-check.md` (FINISH row 695), a line-by-line reading by Claude Opus 5.5 high, which did not write the proof. All ten points hold. Two corrections are applied in the source: the radius r of the locality statement is an integer, and one arithmetic value. The two absolute constants C_3 and C_4 of the group estimates come from compactness and have no value, so delta_0(n) is explicit only up to them. No other provider has checked it.
 
 - Theorem (CH). Let n >= 2, let B be a rectangle of the base with free base boundary, and let U have all plaquette defects at most delta <= delta_0(n). Then:
   - (a) a gauge transformation h gives U^h = V exp(X) with X transverse and sup abs(X) <= C(n) sqrt(delta). The chart is unique up to the centre among charts with small X;
@@ -340,4 +340,4 @@ Rows 677 and 678 both stopped at a finite-box criterion. Row 691 proved the crit
 
 1. Z2 is closed on the disc. The open inputs of Route Z are the crux (ZF_B) beyond the base region, the nodes Z5 and Z7 (row 680, running), and the reading of the check of (TM_B) (row 671).
 2. Route T has one more layer than Section 4.1 says. T1 feeds T2 a class of measures, not the Wilson weight with a small term. The stand-alone theorem S1 (plain Wilson weight, fixed n) is still a target of its own.
-3. Queued: the check of (CH) (row 695). Not queued until T2 is stated again: `gap-twist-lat` and `gap-twist-bad`. The port file names (W1) as the next exact statement of T1.
+3. Done: the check of (CH) (row 695), see Section 13.2. Not queued until T2 is stated again: `gap-twist-lat` and `gap-twist-bad`. The port file names (W1) as the next exact statement of T1.

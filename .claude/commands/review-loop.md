@@ -116,6 +116,9 @@ Mode selection:
     or changed semantic interactions hold the affected unit and its dependents
     for original-session confirmation. Verify accepted constituent source on
     current main after landing and name each PR's recovery ref on the PR.
+    The landing loop is the skill's `scripts/land_train.sh`: run that file on
+    a train file as `references/LANDING.md` says, and never paste or edit a
+    copy of it.
     A named focused target flushes as a one-component train once confirmed
     unless explicitly added to an ongoing backlog drain.
 

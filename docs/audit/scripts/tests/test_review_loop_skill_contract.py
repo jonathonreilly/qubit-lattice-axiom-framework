@@ -29,10 +29,12 @@ class ReviewLoopReferenceRoutingTest(unittest.TestCase):
         source = contract.REPO_ROOT / contract.SKILL_REL
         self.entry.parent.mkdir(parents=True)
         shutil.copyfile(source, self.entry)
-        for relative in contract.REFERENCE_TRIGGER_RULES:
+        for relative in (*contract.REFERENCE_TRIGGER_RULES,
+                         contract.LANDING_SCRIPT_PACKAGE_PATH):
             destination = self.entry.parent / relative
             destination.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source.parent / relative, destination)
+        self.script = self.entry.parent / contract.LANDING_SCRIPT_PACKAGE_PATH
 
     def load(self):
         return contract.load_skill_contract(self.root)
@@ -123,10 +125,46 @@ class ReviewLoopReferenceRoutingTest(unittest.TestCase):
         root = contract.REPO_ROOT
         failures = contract.validate_texts(
             skill,
+            (root / contract.LANDING_SCRIPT_REL).read_text(),
             (root / contract.GENERATOR_REL).read_text(),
             (root / contract.PIPELINE_REL).read_text(),
         )
         self.assertIn("versioned_mechanical_receipt", failures)
+
+    def test_landing_script_is_read_from_the_package_only(self):
+        script, missing = contract.load_landing_script(self.root)
+        self.assertEqual(missing, [])
+        self.assertEqual(script, (contract.REPO_ROOT / contract.LANDING_SCRIPT_REL).read_text())
+        outside = self.root / "other-land-train.sh"
+        shutil.copyfile(self.script, outside)
+        self.script.unlink()
+        self.assertEqual(contract.load_landing_script(self.root),
+                         ("", ["landing_script_unreadable"]))
+        self.script.symlink_to(outside)
+        self.assertEqual(contract.load_landing_script(self.root),
+                         ("", ["landing_script_outside_package"]))
+
+    def test_landing_reference_must_run_the_package_script(self):
+        landing = self.entry.parent / "references/LANDING.md"
+        original = landing.read_text()
+        command = "   " + contract.LANDING_RUN_COMMAND + "\n"
+        self.assertEqual(original.count(command), 1)
+        for mutated in (
+            # Another file, a second command, or no command at all.
+            original.replace(command, '   bash "$TMPDIR/land_train.sh" "$TRAIN_FILE"\n'),
+            original.replace(command, command + "   git push origin HEAD:main\n"),
+            original.replace(command, "   # " + command.strip() + "\n"),
+            original.replace(command, ""),
+            # The command hidden from a reader, or run a second time elsewhere.
+            original.replace("   ```bash\n" + command, "   ```text\n" + command),
+            original + "\n```bash\n" + contract.LANDING_RUN_COMMAND + "\n```\n",
+        ):
+            self.assertNotEqual(mutated, original)
+            landing.write_text(mutated)
+            with self.subTest(mutated=mutated[-200:]):
+                self.assertIn("routed_landing_script_entry", self.load()[1])
+        landing.write_text(original)
+        self.assertEqual(self.load()[1], [])
 
     def test_review_only_cannot_mutate_callers_source_or_index(self):
         self.edit(self.entry.parent / "references/COMBINED_VALIDATION.md",
@@ -147,6 +185,8 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         root = contract.REPO_ROOT
         cls.skill, routing_failures = contract.load_skill_contract(root)
         assert not routing_failures, routing_failures
+        cls.script, script_failures = contract.load_landing_script(root)
+        assert not script_failures, script_failures
         cls.command = (root / contract.COMMAND_REL).read_text(encoding="utf-8")
         cls.generator = (root / contract.GENERATOR_REL).read_text(encoding="utf-8")
         cls.pipeline = (root / contract.PIPELINE_REL).read_text(encoding="utf-8")
@@ -157,10 +197,11 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
 
     def missing(
         self, *, skill=None, command=None, generator=None, pipeline=None,
-        placement_references=None,
+        placement_references=None, script=None,
     ) -> list[str]:
         return contract.validate_texts(
             self.skill if skill is None else skill,
+            self.script if script is None else script,
             self.generator if generator is None else generator,
             self.pipeline if pipeline is None else pipeline,
             self.command if command is None else command,
@@ -172,6 +213,16 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         mutated = self.skill.replace(needle, "REMOVED_BY_MUTATION")
         self.assertTrue(mutated != self.skill, f"mutation needle absent: {needle}")
         self.assertIn(family, self.missing(skill=mutated))
+
+    def assert_script_mutation_fails(self, needle: str, family: str) -> None:
+        mutated = self.script.replace(needle, "REMOVED_BY_MUTATION")
+        self.assertNotEqual(mutated, self.script, f"mutation needle absent: {needle}")
+        self.assertIn(family, self.missing(script=mutated))
+
+    def mutate_script(self, needle: str, replacement: str) -> str:
+        mutated = self.script.replace(needle, replacement, 1)
+        self.assertNotEqual(mutated, self.script, f"mutation needle absent: {needle}")
+        return mutated
 
     def assert_command_mutation_fails(self, needle: str, family: str) -> None:
         mutated = self.command.replace(needle, "REMOVED_BY_MUTATION")
@@ -727,11 +778,21 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
             ),
             'git diff --check "$review_base"..HEAD',
             "git diff --cached --check",
+            "VALIDATED_BASE=<origin-main-sha-used-by-the-combined-gate>",
+            "VALIDATED_TREE=<combined-candidate-tree-sha>",
+        ):
+            with self.subTest(needle=needle):
+                self.assert_skill_mutation_fails(
+                    needle, "landing_train_combined_gate"
+                )
+        for needle in (
+            'VALIDATED_BASE="${entries[0]}"',
+            'VALIDATED_TREE="${entries[0]}"',
             'if [ "$(git rev-parse origin/main)" != "$VALIDATED_BASE" ]; then',
             'if [ "$(git rev-parse \'HEAD^{tree}\')" != "$VALIDATED_TREE" ]; then',
         ):
             with self.subTest(needle=needle):
-                self.assert_skill_mutation_fails(
+                self.assert_script_mutation_fails(
                     needle, "landing_train_combined_gate"
                 )
 
@@ -781,23 +842,33 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
             '     if [ "$(git rev-parse origin/main)" != "$VALIDATED_BASE" ]; then',
             '     if [ "$(git rev-parse \'HEAD^{tree}\')" != "$VALIDATED_TREE" ]; then',
         ):
-            mutated = self.skill.replace(
-                line,
-                "     if false; then\n" + line + "\n     fi",
-                1,
+            mutated = self.mutate_script(
+                line, "     if false; then\n" + line + "\n     fi"
             )
-            self.assertNotEqual(mutated, self.skill)
             with self.subTest(line=line):
                 self.assertIn(
-                    "landing_train_combined_gate", self.missing(skill=mutated)
+                    "landing_train_combined_gate", self.missing(script=mutated)
                 )
 
     def test_train_head_guard_is_fail_closed(self):
+        # The documented train file and the prose that describes the loop.
         for needle in (
-            "PR_NUMBERS=(<pr-a-number> <pr-b-number> ...)",
-            "PR_HEADS=(<pr-a-frozen-head-sha> <pr-b-frozen-head-sha> ...)",
-            "PR_HEAD_REFS=(<pr-a-head-branch> <pr-b-head-branch> ...)",
-            "PR_TIPS=(<pr-a-newest> <pr-b-newest> ...)",
+            "PR_NUMBERS=<pr-a-number> <pr-b-number> ...",
+            "PR_HEADS=<pr-a-frozen-head-sha> <pr-b-frozen-head-sha> ...",
+            "PR_HEAD_REFS=<pr-a-head-branch> <pr-b-head-branch> ...",
+            "PR_TIPS=<pr-a-newest> <pr-b-newest> ...",
+            "refs/review-loop/recovery/pr-",
+            "post-push head check",
+            "force-with-lease=refs/heads/<head>:<frozen-head-sha>",
+        ):
+            with self.subTest(needle=needle):
+                self.assert_skill_mutation_fails(needle, "landing_train_head_guard")
+        # The loop itself.
+        for needle in (
+            "PR_NUMBERS=(",
+            "PR_HEADS=(",
+            "PR_HEAD_REFS=(",
+            "PR_TIPS=(",
             "verify_frozen_pr_heads()",
             "verify_pr_github_state()",
             "record_recovery_refs()",
@@ -805,11 +876,9 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
             "move_pr_heads()",
             "restore_frozen_pr_heads()",
             "PR head moved; dissolve the train without pushing",
-            "post-push head check",
-            "force-with-lease=refs/heads/<head>:<frozen-head-sha>",
         ):
             with self.subTest(needle=needle):
-                self.assert_skill_mutation_fails(needle, "landing_train_head_guard")
+                self.assert_script_mutation_fails(needle, "landing_train_head_guard")
 
     def test_train_head_checks_must_bracket_every_push(self):
         for line in (
@@ -821,17 +890,13 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
             "     if ! restore_frozen_pr_heads; then",
             '     if ! verify_pr_head "$pr" "$expected"; then',
         ):
-            mutated = self.skill.replace(
-                line,
-                "     if false; then\n" + line + "\n     fi",
-                1,
+            mutated = self.mutate_script(
+                line, "     if false; then\n" + line + "\n     fi"
             )
-            self.assertNotEqual(mutated, self.skill)
             with self.subTest(line=line):
-                self.assertIn("landing_train_head_guard", self.missing(skill=mutated))
+                self.assertIn("landing_train_head_guard", self.missing(script=mutated))
 
     def test_train_head_fetch_compare_and_failure_are_structurally_bound(self):
-        marker = "VALIDATED_BASE=<origin-main-sha-used-by-the-combined-gate>"
         mutations = (
             (
                 'if ! git fetch -q origin "+pull/$pr/head:$live_ref"; then',
@@ -880,9 +945,9 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
             ),
         )
         for needle, replacement in mutations:
-            mutated = self.mutate_skill_fence(marker, needle, replacement)
+            mutated = self.mutate_script(needle, replacement)
             with self.subTest(needle=needle):
-                self.assertIn("landing_train_head_guard", self.missing(skill=mutated))
+                self.assertIn("landing_train_head_guard", self.missing(script=mutated))
 
     def test_command_train_contract_is_fail_closed(self):
         for needle in (
@@ -913,24 +978,36 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
 
     def test_manifest_landing_is_fail_closed(self):
         self.assert_skill_mutation_fails("before EVERY push attempt", "manifest_landing")
+        self.assert_script_mutation_fails(
+            "run_citation_graph_build.py", "manifest_landing"
+        )
+
+    def test_manifest_sequencer_progress_is_fail_closed(self):
+        for needle in (
+            'while [ -z "$cherry_pick_complete" ]; do',
+            'if [ "$conflicted_commit" = "$last_conflicted_commit" ]; then',
+            "FAILED: manifest repair made no sequencer progress",
+        ):
+            with self.subTest(needle=needle):
+                self.assert_script_mutation_fails(
+                    needle, "manifest_sequencer_progress"
+                )
 
     def test_disk_worktree_guards_are_fail_closed(self):
         self.assert_skill_mutation_fails("5242880", "disk_and_worktree_guards")
 
     def test_landing_containment_is_fail_closed(self):
-        self.assert_skill_mutation_fails(
+        self.assert_script_mutation_fails(
             'if ! git merge-base --is-ancestor "$landed" origin/main; then',
             "fail_closed_landing",
         )
 
     def test_inert_landing_containment_tokens_are_fail_closed(self):
-        mutated = self.skill.replace(
+        mutated = self.mutate_script(
             'if ! git merge-base --is-ancestor "$landed" origin/main; then',
             'if false; then # git merge-base --is-ancestor "$landed" origin/main',
-            1,
         )
-        self.assertNotEqual(mutated, self.skill)
-        self.assertIn("fail_closed_landing", self.missing(skill=mutated))
+        self.assertIn("fail_closed_landing", self.missing(script=mutated))
 
     def test_outer_conditional_containment_is_fail_closed(self):
         block = (
@@ -939,35 +1016,29 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
             "     exit 1\n"
             "   fi"
         )
-        mutated = self.skill.replace(
-            block,
-            "   if false; then\n" + block + "\n   fi",
-            1,
-        )
-        self.assertNotEqual(mutated, self.skill)
-        self.assertIn("fail_closed_landing", self.missing(skill=mutated))
+        mutated = self.mutate_script(block, "   if false; then\n" + block + "\n   fi")
+        self.assertIn("fail_closed_landing", self.missing(script=mutated))
 
     def test_whole_containment_context_outer_conditional_is_fail_closed(self):
-        start = self.skill.index(contract.CONTAINMENT_CONTEXT)
-        end = self.skill.index('   echo "LANDED $landed"', start)
+        start = self.script.index(contract.CONTAINMENT_CONTEXT)
+        end = self.script.index('   echo "LANDED $landed"', start)
         mutated = (
-            self.skill[:start]
+            self.script[:start]
             + "   if false; then\n"
-            + self.skill[start:end]
+            + self.script[start:end]
             + "   fi\n"
-            + self.skill[end:]
+            + self.script[end:]
         )
-        self.assertIn("fail_closed_landing", self.missing(skill=mutated))
+        self.assertIn("fail_closed_landing", self.missing(script=mutated))
 
     def test_containment_context_in_heredoc_is_fail_closed(self):
-        mutated = self.skill.replace(
+        mutated = self.mutate_script(
             contract.CONTAINMENT_CONTEXT,
             "   cat <<'HIDDEN_CONTAINMENT'\n"
             + contract.CONTAINMENT_CONTEXT
             + "\nHIDDEN_CONTAINMENT",
-            1,
         )
-        self.assertIn("fail_closed_landing", self.missing(skill=mutated))
+        self.assertIn("fail_closed_landing", self.missing(script=mutated))
 
     def test_containment_context_in_second_heredoc_is_fail_closed(self):
         for opener in (
@@ -977,16 +1048,15 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
             "   cat <<'FIRST' &&\n     cat <<'HIDDEN-CONTAINMENT'\n",
             "   cat <<'FIRST' ||\n     cat <<'HIDDEN-CONTAINMENT'\n",
         ):
-            mutated = self.skill.replace(
+            mutated = self.mutate_script(
                 contract.CONTAINMENT_CONTEXT,
                 opener
                 + "FIRST\n"
                 + contract.CONTAINMENT_CONTEXT
                 + "\nHIDDEN-CONTAINMENT",
-                1,
             )
             with self.subTest(opener=opener):
-                self.assertIn("fail_closed_landing", self.missing(skill=mutated))
+                self.assertIn("fail_closed_landing", self.missing(script=mutated))
 
     def test_containment_context_in_general_substitutions_is_fail_closed(self):
         for opener, closer in (
@@ -996,18 +1066,89 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
             ("   hidden=` :\n", "\n   ` || true"),
             ("   ( :\n", "\n   ) || true"),
         ):
-            mutated = self.skill.replace(
+            mutated = self.mutate_script(
                 contract.CONTAINMENT_CONTEXT,
                 opener + contract.CONTAINMENT_CONTEXT + closer,
-                1,
             )
             with self.subTest(opener=opener):
-                self.assertIn("fail_closed_landing", self.missing(skill=mutated))
+                self.assertIn("fail_closed_landing", self.missing(script=mutated))
 
     def test_unterminated_landing_shell_context_is_fail_closed(self):
         marker = '   echo "LANDED $landed"'
-        mutated = self.skill.replace(marker, marker + "\n   hidden=$( :", 1)
-        self.assertIn("fail_closed_landing", self.missing(skill=mutated))
+        mutated = self.mutate_script(marker, marker + "\n   hidden=$( :")
+        self.assertIn("fail_closed_landing", self.missing(script=mutated))
+
+    def test_landing_script_must_define_read_inputs_and_run_the_loop(self):
+        call = contract.LANDING_SCRIPT_CALL
+        read = "   " + contract.LANDING_SCRIPT_READS_INPUT + "\n"
+        mutations = (
+            # The loop is defined and never run, run conditionally, or run
+            # with more commands after it.
+            ("\n" + call + "\n", "\n"),
+            ("\n" + call + "\n", "\nif false; then\n" + call + "\nfi\n"),
+            ("\n" + call + "\n", "\n# " + call + "\n"),
+            ("\n" + call + "\n", "\n" + 'land_train "$@"' + "\nexit 0\n"),
+            ("\n" + call + "\n", "\n" + call + "\ngit push origin HEAD:main\n"),
+            # The body is not the function body.
+            ("\nland_train() {\n", "\nland_train_unused() {\n"),
+            ("\nland_train() {\n", "\nif false; then\nland_train() {\n"),
+            # The inputs are not read first, or are read conditionally.
+            (read, ""),
+            (read, "   if false; then\n" + read + "   fi\n"),
+            (read, "   git push origin HEAD:main\n" + read),
+            # An entry is accepted without its form check.
+            ('if ! is_object_name "$entry"; then', "if false; then"),
+            ('if ! git check-ref-format "refs/heads/$entry"; then', "if false; then"),
+            ("*[!0123456789]*) train_file_error", "*[!0123456789]*) true"),
+            ('if [ "${#entries[@]}" -ne 1 ]; then', "if false; then"),
+            # A name the documented train file sets is not assigned.
+            ('COMMITS) COMMITS=("${entries[@]}") ;;', "COMMITS) ;;"),
+            ('PR_TIPS) PR_TIPS=("${entries[@]}") ;;', "PR_TIPS) ;;"),
+            ('VALIDATED_TREE) VALIDATED_TREE="${entries[0]}" ;;', "VALIDATED_TREE) ;;"),
+            ("\nread_train_file() {\n", "\nread_train_file_unused() {\n"),
+        )
+        for needle, replacement in mutations:
+            mutated = self.mutate_script(needle, replacement)
+            with self.subTest(needle=needle, replacement=replacement):
+                self.assertIn("landing_script_entry", self.missing(script=mutated))
+        for needle in (
+            "The train's fail-closed landing loop is the script",
+            "Never paste or edit a copy of",
+            "COMMITS=<pr-a-oldest> ... <pr-a-newest> <pr-b-oldest> ...",
+            "The script parses the train file and never executes it.",
+            contract.LANDING_RUN_COMMAND,
+        ):
+            with self.subTest(needle=needle):
+                self.assert_skill_mutation_fails(needle, "landing_script_entry")
+
+    def test_every_loop_guard_fails_with_the_loop_outside_the_function(self):
+        # Closing the function early leaves the loop text in place but no
+        # longer inside the body that the last line runs.
+        read = "   " + contract.LANDING_SCRIPT_READS_INPUT + "\n"
+        mutated = self.mutate_script(read, read + "}\nunused_loop() {\n")
+        missing = self.missing(script=mutated)
+        for family in ("fail_closed_landing", "landing_train_combined_gate",
+                       "landing_train_head_guard"):
+            with self.subTest(family=family):
+                self.assertIn(family, missing)
+
+    def test_commented_out_loop_clauses_do_not_count(self):
+        cases = (
+            ("   for attempt in 1 2 3 4; do", "fail_closed_landing"),
+            ('       echo "FAILED: PR head moved; dissolve the train without pushing" >&2',
+             "landing_train_head_guard"),
+            ('         echo "FAILED: manifest repair made no sequencer progress" >&2',
+             "manifest_sequencer_progress"),
+        )
+        for line, family in cases:
+            mutated = self.mutate_script(line + "\n", "# " + line + "\n")
+            with self.subTest(line=line):
+                self.assertIn(family, self.missing(script=mutated))
+
+    def test_command_names_the_landing_script(self):
+        for needle in ("`scripts/land_train.sh`", "never paste or edit a"):
+            with self.subTest(needle=needle):
+                self.assert_command_mutation_fails(needle, "command_landing_train")
 
     def test_generated_router_is_fail_closed(self):
         mutated = self.generator.replace("missing_authority_router_coverage", "removed")
@@ -1174,14 +1315,21 @@ GH_DOUBLE = """gh() {
 """
 
 
+LANDING_SCRIPT = contract.REPO_ROOT / contract.LANDING_SCRIPT_REL
+
+
 @unittest.skipUnless(shutil.which("git") and shutil.which("bash"), "requires Git and Bash")
 class ReviewLoopLandingSequenceTest(unittest.TestCase):
-    """Run the documented landing shell against three real local Git branches.
+    """Run the landing script against three real local Git branches.
 
     Each branch adds a separate note and changes the same one-line manifest.
     Thus one invocation must handle two successive manifest conflicts. Remote
     means a temporary local bare repository with a hook that stands in for
     GitHub's pull-request bookkeeping; these tests never use the network.
+
+    The script file itself runs, on a train file, as LANDING.md says. Bash
+    reads the file named by BASH_ENV before a script, so the `gh`, `git`,
+    `sleep` and `python3` doubles are shell functions defined there.
     """
 
     STATE_FAULTS = {
@@ -1193,7 +1341,7 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
     }
 
     def run_sequence(self, fault=None, mutate_loop=False, two_commit_unit=False,
-                     tips=None):
+                     tips=None, train_edit=None):
         env = dict(os.environ, GIT_CONFIG_NOSYSTEM="1", GIT_CONFIG_GLOBAL=os.devnull,
                    GIT_AUTHOR_NAME="Fixture", GIT_AUTHOR_EMAIL="fixture@example.invalid",
                    GIT_COMMITTER_NAME="Fixture", GIT_COMMITTER_EMAIL="fixture@example.invalid",
@@ -1285,23 +1433,36 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
             for number, head in enumerate(heads, 1):
                 expected = racer if fault == "head-moved" and number == 2 else head
                 self.assertEqual(ref(f"refs/pull/{number}/head"), expected)
+            # The train file is the block LANDING.md documents, filled in.
             skill, routing_failures = contract.load_skill_contract(contract.REPO_ROOT)
             self.assertEqual(routing_failures, [])
             blocks = contract._markdown_scan(skill).fenced_blocks
-            code = next(body for _, body in blocks if "VALIDATED_BASE=<" in body)
+            train_text = textwrap.dedent(
+                next(body for _, body in blocks if "VALIDATED_BASE=<" in body)) + "\n"
             replacements = {
                 "VALIDATED_BASE=<origin-main-sha-used-by-the-combined-gate>": f"VALIDATED_BASE={base}",
                 "VALIDATED_TREE=<combined-candidate-tree-sha>": f"VALIDATED_TREE={tree}",
-                "COMMITS=(<pr-a-oldest> ... <pr-a-newest> <pr-b-oldest> ...)": "COMMITS=(" + " ".join(commits) + ")",
-                "PR_NUMBERS=(<pr-a-number> <pr-b-number> ...)": "PR_NUMBERS=(1 2 3)",
-                "PR_HEADS=(<pr-a-frozen-head-sha> <pr-b-frozen-head-sha> ...)": "PR_HEADS=(" + " ".join(heads) + ")",
-                "PR_HEAD_REFS=(<pr-a-head-branch> <pr-b-head-branch> ...)": "PR_HEAD_REFS=(unit-1 unit-2 unit-3)",
-                "PR_TIPS=(<pr-a-newest> <pr-b-newest> ...)": "PR_TIPS=(" + " ".join(
-                    heads if tips is None else [heads[i] for i in tips]) + ")",
+                "COMMITS=<pr-a-oldest> ... <pr-a-newest> <pr-b-oldest> ...": "COMMITS=" + " ".join(commits),
+                "PR_NUMBERS=<pr-a-number> <pr-b-number> ...": "PR_NUMBERS=1 2 3",
+                "PR_HEADS=<pr-a-frozen-head-sha> <pr-b-frozen-head-sha> ...": "PR_HEADS=" + " ".join(heads),
+                "PR_HEAD_REFS=<pr-a-head-branch> <pr-b-head-branch> ...": "PR_HEAD_REFS=unit-1 unit-2 unit-3",
+                "PR_TIPS=<pr-a-newest> <pr-b-newest> ...": "PR_TIPS=" + " ".join(
+                    heads if tips is None else [heads[i] for i in tips]),
             }
             for old, new in replacements.items():
-                self.assertIn(old, code)
-                code = code.replace(old, new)
+                self.assertIn(old, train_text)
+                train_text = train_text.replace(old, new)
+            self.assertNotIn("<", train_text)
+            if train_edit is not None:
+                edited = train_edit(train_text)
+                self.assertNotEqual(edited, train_text)
+                train_text = edited
+            train = root / "train.txt"
+            train.write_text(train_text)
+            script = LANDING_SCRIPT
+            if mutate_loop or fault == "script-replaced-mid-run":
+                script = root / "land_train.sh"
+                code = LANDING_SCRIPT.read_text()
             if mutate_loop:
                 # A single conditional repair recreates the reviewed defect:
                 # the second conflict reaches the final tree guard unresolved.
@@ -1311,7 +1472,10 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
                 end = code.index("\n     done", start)
                 code = (code[:start] + code[start:end].replace(old, 'if [ -z "$cherry_pick_complete" ]; then', 1)
                         + "\n     fi" + code[end + len("\n     done"):])
+            if script != LANDING_SCRIPT:
+                script.write_text(code)
             prelude = f"CALL_LOG={shlex.quote(str(root / 'git-calls.log'))}\n"
+            prelude += f"SCRIPT={shlex.quote(str(script))}\n"
             prelude += f"REMOTE={shlex.quote(str(remote))}\nRACER={racer}\n"
             prelude += self.STATE_FAULTS.get(fault, "") + GH_DOUBLE
             prelude += "sleep() { :; }\ngit() {\n  printf '%s\\n' \"$*\" >> \"$CALL_LOG\"\n"
@@ -1331,19 +1495,26 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
                 "main-push-reported-failed": main_push + ' || { command git "$@"; return 7; }',
                 # Another landing reaches main between the gate and the push.
                 "main-moved-during-landing": main_push + ' || command git --git-dir="$REMOTE" update-ref refs/heads/main "$RACER"',
+                # A carried commit rewrites the script while it runs: larger
+                # than before, so bash would find text at its old offset.
+                "script-replaced-mid-run": '[ "$1" != cherry-pick ] || for n in $(seq 4000); do echo "echo REPLACED; exit 97"; done > "$SCRIPT"',
             }
             if fault in injections:
                 prelude += "  " + injections[fault] + "\n"
             prelude += '  command git "$@"\n}\n'
             if fault == "generator-fails":
                 prelude += "python3() { return 9; }\n"
-            proc = subprocess.run(["bash", "-c", prelude + code], cwd=work, env=env,
+            doubles = root / "doubles.sh"
+            doubles.write_text(prelude)
+            proc = subprocess.run(["bash", str(script), str(train)], cwd=work,
+                                  env=dict(env, BASH_ENV=str(doubles)),
                                   text=True, capture_output=True, timeout=120)
             log = root / "git-calls.log"
             calls = log.read_text().splitlines() if log.exists() else []
             pushes = [c for c in calls if c.startswith("push ")]
             return {
                 "exit": proc.returncode, "stdout": proc.stdout, "stderr": proc.stderr,
+                "calls": calls, "executed": (work / "executed").exists(),
                 "pushes": len(pushes),
                 "push_order": [
                     "recovery" if "refs/review-loop/recovery/" in c
@@ -1496,6 +1667,197 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
         self.assertEqual(result["branches"], result["frozen"], result)
         self.assertEqual(result["merged"], [False, False, False], result)
         self.assertIn("main moved; rebuild and rerun the combined gate", result["stderr"])
+
+    def test_candidate_must_match_the_gated_base_and_tree(self):
+        # Both values are well-formed object names; only the loop's own
+        # comparison with the fetched main and the rebuilt tree can refuse.
+        for replacement, starts, message in (
+            (r"VALIDATED_BASE=\1\nVALIDATED_TREE=\1", 1,
+             "integrated tree differs from the validated candidate"),
+            (r"VALIDATED_BASE=\2\nVALIDATED_TREE=\2", 0,
+             "main moved; rebuild and rerun the combined gate"),
+        ):
+            with self.subTest(message=message):
+                result = self.run_sequence(train_edit=lambda text: re.sub(
+                    r"(?m)^VALIDATED_BASE=(\w+)\nVALIDATED_TREE=(\w+)$", replacement, text))
+                self.assert_nothing_moved(result)
+                self.assertEqual(result["starts"], starts, result)
+                self.assertIn(message, result["stderr"])
+
+    def test_script_replaced_while_it_runs_still_lands_the_same_train(self):
+        result = self.run_sequence("script-replaced-mid-run")
+        self.assertEqual(result["exit"], 0, result)
+        self.assertNotIn("REPLACED", result["stdout"], result)
+        self.assertEqual(result["push_order"], ["recovery", "heads", "main"], result)
+        self.assertEqual(result["remote_tree"], result["expected_tree"], result)
+        self.assertEqual(result["stdout"].count("\nMERGED "), 3, result)
+
+    # A well-formed train file for a repository that has none of its objects.
+    SHAS = tuple(letter * 40 for letter in "abcd")
+    TRAIN = (
+        "VALIDATED_BASE={0}\nVALIDATED_TREE={3}\nCOMMITS={1} {2}\n"
+        "PR_NUMBERS=1 2\nPR_HEADS={1} {2}\nPR_HEAD_REFS=unit-1 unit-2\n"
+        "PR_TIPS={1} {2}\n"
+    ).format(*SHAS)
+
+    def run_reader(self, train_text, shell="bash"):
+        """Run the script on a train file in an empty repository with no remote.
+
+        Nothing can be fetched or pushed there, so a train file that passes
+        the form checks still ends in a refusal. The log shows every `git`,
+        `gh` and `python3` call the script made.
+        """
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            work, log = root / "work", root / "calls.log"
+            work.mkdir()
+            env = dict(os.environ, GIT_CONFIG_NOSYSTEM="1", GIT_CONFIG_GLOBAL=os.devnull,
+                       GIT_CEILING_DIRECTORIES=str(root), BASH_ENV=str(root / "doubles.sh"))
+            subprocess.run(["git", "init", "-q", "-b", "main"], cwd=work, env=env, check=True)
+            (root / "train.txt").write_text(train_text)
+            (root / "doubles.sh").write_text(
+                f"CALL_LOG={shlex.quote(str(log))}\n"
+                "git() { printf 'git %s\\n' \"$*\" >> \"$CALL_LOG\"; command git \"$@\"; }\n"
+                "gh() { printf 'gh %s\\n' \"$*\" >> \"$CALL_LOG\"; return 1; }\n"
+                "python3() { printf 'python3 %s\\n' \"$*\" >> \"$CALL_LOG\"; return 1; }\n"
+                "sleep() { :; }\n")
+            proc = subprocess.run([shell, str(LANDING_SCRIPT), str(root / "train.txt")],
+                                  cwd=work, env=env, text=True, capture_output=True, timeout=60)
+            return {
+                "exit": proc.returncode, "stdout": proc.stdout, "stderr": proc.stderr,
+                "calls": log.read_text().splitlines() if log.exists() else [],
+                "executed": (work / "executed").exists(),
+            }
+
+    def test_well_formed_train_file_reaches_the_loop_and_its_guards(self):
+        result = self.run_reader(self.TRAIN)
+        self.assertEqual(result["exit"], 1, result)
+        self.assertIn("git check-ref-format refs/heads/unit-1", result["calls"])
+        self.assertIn("git fetch -q origin +refs/heads/main:refs/remotes/origin/main",
+                      result["calls"])
+        self.assertIn("FAILED: landing did not complete after 4 attempts", result["stderr"])
+        # The guards of the loop still judge the inventory, not the reader.
+        for edit, message in (
+            (("PR_NUMBERS=1 2", "PR_NUMBERS=1"),
+             "FAILED: PR number/head/branch/tip inventory mismatch\n"),
+            (("PR_NUMBERS=1 2", "PR_NUMBERS="),
+             "FAILED: PR number/head/branch/tip inventory mismatch\n"),
+            (("PR_TIPS={1} {2}".format(*self.SHAS), "PR_TIPS={2} {1}".format(*self.SHAS)),
+             "FAILED: PR tip {1} is not in COMMITS in train order\n".format(*self.SHAS)),
+            (("PR_TIPS={1} {2}".format(*self.SHAS), "PR_TIPS={1} {1}".format(*self.SHAS)),
+             "FAILED: the last PR tip is not the last reviewed commit\n"),
+        ):
+            with self.subTest(message=message):
+                self.assertIn(edit[0], self.TRAIN)
+                result = self.run_reader(self.TRAIN.replace(*edit))
+                self.assertEqual(result["exit"], 1, result)
+                self.assertEqual(result["stderr"], message, result)
+                self.assertFalse([c for c in result["calls"]
+                                  if not c.startswith("git check-ref-format ")], result)
+
+    def test_malformed_train_file_stops_before_any_other_command(self):
+        def line(name, value):
+            return lambda text: re.sub(rf"(?m)^{name}=.*$", f"{name}={value}", text)
+
+        def drop(name):
+            return lambda text: re.sub(rf"(?m)^{name}=.*\n", "", text)
+
+        sha = "0123456789abcdef0123456789abcdef01234567"
+        cases = (
+            (lambda text: text + "EXTRA=1\n", "line 8 is not one of the seven"),
+            (lambda text: text + "export PR_TIPS\n", "line 8 is not one of the seven"),
+            (lambda text: " " + text, "line 1 is not one of the seven"),
+            (lambda text: text + "PR_NUMBERS=1 2\n", "line 8 sets PR_NUMBERS a second time"),
+            (drop("VALIDATED_BASE"), "VALIDATED_BASE is missing"),
+            (drop("COMMITS"), "COMMITS is missing"),
+            (drop("PR_TIPS"), "PR_TIPS is missing"),
+            (line("VALIDATED_BASE", ""), "VALIDATED_BASE needs exactly one entry"),
+            (line("VALIDATED_TREE", f"{sha} {sha}"), "VALIDATED_TREE needs exactly one entry"),
+            (line("VALIDATED_BASE", sha[:12]), "VALIDATED_BASE entry is not a full object name"),
+            (line("VALIDATED_BASE", sha.upper()), "VALIDATED_BASE entry is not a full object name"),
+            (line("VALIDATED_BASE", sha + "0"), "VALIDATED_BASE entry is not a full object name"),
+            (line("VALIDATED_TREE", "HEAD^{tree}"), "VALIDATED_TREE entry is not a full object name"),
+            (line("COMMITS", "unit-1 unit-2"), "COMMITS entry is not a full object name: unit-1"),
+            (line("PR_HEADS", f"{sha}\t{sha}"), "PR_HEADS entry is not a full object name"),
+            (line("PR_TIPS", f"{sha} {sha}\r"), "PR_TIPS entry is not a full object name"),
+            (line("PR_NUMBERS", "1 #2"), "PR_NUMBERS entry is not a PR number: #2"),
+            (line("PR_NUMBERS", "1 -2"), "PR_NUMBERS entry is not a PR number: -2"),
+            (line("PR_NUMBERS", "*"), "PR_NUMBERS entry is not a PR number: *"),
+            (line("PR_HEAD_REFS", "unit-1 unit..2"), "PR_HEAD_REFS entry is not a branch name: unit..2"),
+            (line("PR_HEAD_REFS", "unit-1 unit-2:main"), "PR_HEAD_REFS entry is not a branch name: unit-2:main"),
+            (line("PR_HEAD_REFS", "*"), "PR_HEAD_REFS entry is not a branch name: *"),
+        )
+        for edit, message in cases:
+            with self.subTest(message=message):
+                edited = edit(self.TRAIN)
+                self.assertNotEqual(edited, self.TRAIN)
+                result = self.run_reader(edited)
+                self.assertEqual(result["exit"], 1, result)
+                self.assertEqual(result["stdout"], "", result)
+                self.assertIn("FAILED: train file: " + message, result["stderr"], result)
+                # Only the form of a branch name was asked of git: no fetch,
+                # no cherry-pick, no push and no call to GitHub.
+                self.assertFalse([c for c in result["calls"]
+                                  if not c.startswith("git check-ref-format ")], result)
+
+    def test_train_file_is_parsed_and_never_executed(self):
+        payloads = (
+            "$(touch executed)",
+            "`touch executed`",
+            "unit-1; touch executed",
+            "unit-1\ntouch executed",
+            "unit-1 && touch executed",
+            "unit-1 | touch executed",
+            "unit-1 > executed",
+        )
+        for name in ("VALIDATED_BASE", "COMMITS", "PR_NUMBERS", "PR_HEAD_REFS"):
+            for payload in payloads:
+                with self.subTest(name=name, payload=payload):
+                    result = self.run_reader(re.sub(
+                        rf"(?m)^{name}=.*$", lambda _: f"{name}={payload}", self.TRAIN))
+                    self.assertEqual(result["exit"], 1, result)
+                    self.assertFalse(result["executed"], result)
+                    self.assertIn("FAILED: ", result["stderr"], result)
+                    self.assertFalse([c for c in result["calls"] if c.startswith("git push")
+                                      or c.startswith("gh ")], result)
+
+    def test_branch_names_that_look_like_commands_move_nothing(self):
+        # Three entries that git accepts as branch names: the inventory
+        # matches, so the refusal comes from the GitHub-state guard.
+        result = self.run_sequence(train_edit=lambda text: text.replace(
+            "PR_HEAD_REFS=unit-1 unit-2 unit-3", "PR_HEAD_REFS=unit-1; touch executed"))
+        self.assert_nothing_moved(result)
+        self.assertFalse(result["executed"], result)
+        self.assertIn("nothing was pushed", result["stderr"])
+
+    def test_train_file_comments_blank_lines_and_missing_final_newline(self):
+        result = self.run_sequence(
+            train_edit=lambda text: "# frozen train\n\n" + text.replace("\nPR_", "\n\n# next\nPR_").rstrip("\n"))
+        self.assertEqual(result["exit"], 0, result)
+        self.assertEqual(result["stdout"].count("\nMERGED "), 3, result)
+        self.assertEqual(result["remote_tree"], result["expected_tree"], result)
+
+    def test_script_needs_exactly_one_readable_train_file(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            for args, message in (
+                ([], "FAILED: usage: land_train.sh <train-file>"),
+                (["a", "b"], "FAILED: usage: land_train.sh <train-file>"),
+                (["missing-train-file"], "FAILED: train file: cannot read missing-train-file"),
+                ([tmp], f"FAILED: train file: cannot read {tmp}"),
+            ):
+                with self.subTest(args=args):
+                    proc = subprocess.run(["bash", str(LANDING_SCRIPT), *args], cwd=tmp,
+                                          text=True, capture_output=True, timeout=60)
+                    self.assertEqual(proc.returncode, 1, proc)
+                    self.assertEqual(proc.stdout, "", proc)
+                    self.assertEqual(proc.stderr.strip(), message, proc)
+
+    @unittest.skipUnless(shutil.which("dash"), "requires dash")
+    def test_a_shell_that_is_not_bash_is_refused_at_the_first_command(self):
+        result = self.run_reader(self.TRAIN, shell="dash")
+        self.assertEqual(result["exit"], 1, result)
+        self.assertEqual(result["calls"], [], result)
+        self.assertEqual(result["stderr"].strip(), "FAILED: run the landing loop with bash")
 
     def test_single_repair_mutation_cannot_land_three_units(self):
         result = self.run_sequence(mutate_loop=True)

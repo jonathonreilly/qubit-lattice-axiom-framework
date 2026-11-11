@@ -426,3 +426,29 @@ gives a gap of at least 0.04/n on all the dyadic cubes. The gap is on the whole 
 | 702 | `gap-seed-lit` | Codex gpt-6-luna high | is Theorem S or Lemma K published; tools for the seed (correlation inequalities, positive dual forms, monotone quantities, finite-volume results) |
 
 Not queued: the author's items `gap-seed-guide` (a numeric guide under the numeric lock), `gap-seed-shape` (a better constant from the shape of the box) and `gap-tube-test`. They wait for the two checks.
+
+### 13.9 Theorem S checked by two models; the limit theorem (FINISH rows 698 to 700, 703)
+
+**No mass gap is proved.** The seed inequality at a coupling of order one is not proved and no tool for it is named.
+
+**Theorem S is checked.** Proved by Claude Fable 5.2 (row 697). Checked line by line by Claude Opus 5.5 (row 698, `library/gap-seed-check.md`) and by Codex gpt-6-astra (row 699, `library/gap-seed-check-astra.md`). Both find no failing step in the chain Lemma A, Lemma K, Lemma X, Lemma E, Theorem S, and both verify the constants. The statement: if s = S(n; (2n)^3) is below 1/5041 at one n at least 3 (it suffices that 16 F(n^4) - F((2n)^4) is at most 1.9e-4), the cubes of side 2^(k+1) n have gap at least log(1/(5041 s))/n.
+
+**The transfer operator on boxes with unequal sides is settled.** Theorem S uses boxes (y, 2n, 2n), (4n, y, 2n), (4n, 4n, y). `library/gap-transfer.md` states the operator for equal sides. Both checks find that no step there uses equal sides (Lemma 1.1 of `gap-seed-check.md`; point 1 of `gap-seed-check-astra.md`).
+
+**Corrections, all applied to `library/gap-crux-restate.md`.** (TM-c): the twist replaces the weight exp(-beta(1 - (1/2) tr U_p)) by exp(-beta(1 + (1/2) tr U_p)); it is not a changed sign of beta (both checks). Lemma A (b) needs a nonzero operator (row 699). Lemma K (c) holds for b at least 4 (both). Wording of Proposition R; scope of Corollary S2 (row 698).
+
+**One disagreement, resolved.** The proof of Corollary S3 used that every integer L at least 2N is 2^k b with an integer b in [2N, 4N). That is false (N = 3, L = 13). Row 698 accepted the step; row 699 refuted it and repaired it with Lemma E': for integers h at least b, b above a, a at least 3, 1 + S(a; h) is at most (1 + S(a; b))^(h/(b-a)). The repair gives a stronger result, Corollary S3': **one seed below 1/5041 at size N gives gap at least log(1/(5041 s))/N on every cube of integer side at least 2N.** Seeds on a block of sizes are not needed. Written by Codex gpt-6-astra; the lead (Claude Fable 5.2) re-derived it line by line.
+
+**What Theorem S does not use.** Nothing about SU(2) beyond the transfer operator and the axis symmetry. The group enters only through the seed. The claims that the seed fails for U(1) and Z_2 stay RECALLED: the checks prove only versions at fixed size and large beta.
+
+**The limit theorem (row 700, `library/gap-seed-limit.md`; Claude Fable 5.2 medium; not checked by another model; check queued as row 703).** Given the conclusion of Theorem S:
+
+- on the tori (L_k)^3 x T the truncated two-point function of two bounded local functions at time distance d is at most e^(-m_0 d) + 6 s_k^(floor(d'/n_k)) times the sup norms, where d' is the distance around the back of the time circle and must be at least n_k; on the symmetric tori the second term is at most 0.12 percent of the first;
+- every sequence of sizes k_i to infinity with T_i - n_(k_i) to infinity has a convergent subsequence; the limit state does not depend on the time extents; it is invariant under translations and the hypercubic group, reflection positive, and clusters with rate m_0 in each of the four coordinate directions; its transfer operator has a unique vacuum and norm at most e^(-m_0) on the complement;
+- a seed that holds uniformly in the cutoff at a fixed physical size gives a rate in physical units that is uniform in the cutoff; the continuum datum is an open input (the T0 chain);
+- converse: a uniform gap together with a count of states N(E) at most A e^(theta n E) with theta below 1 gives the seed. A uniform gap alone is not shown to give it. The seed itself gives the count with theta = 1.
+- rate filter: the seed can hold only at a size n above 8.5 correlation lengths of the cube.
+
+Open in that file: (U), whether the limit depends on the subsequence of sizes; (NS-gap), the state count; the rate in diagonal directions (proved: m_0/2). Its open item on sides other than 2^(k+1) n is covered for the gap by Corollary S3'; row 703 asks for the limit-state form on all integer sides.
+
+**State of the chain.** (SEED) at one size gives: gap on all cubes of side at least 2N (checked by two models) and exponential clustering in every limit state (one author, check queued). What is missing is (SEED) itself. Rows 701 (the seed at strong coupling, as a test that the criterion can be met at all) and 702 (literature pass 3) are the two items aimed at it.

@@ -7,7 +7,7 @@ Author run, started 2026-11-11T07:45Z at commit 51785e8cb. Research-stage workin
 
 Status of this file: complete for this run (ended 2026-11-11, about 10:30Z). The final status block is Section 6. The main result is Theorem S (Section 3.4).
 
-**No mass gap is proved here.** Nothing in this file is checked by a model that did not write it.
+**No mass gap is proved here.** Check state (2026-11-11, added by the lead): the statements of Sections 1, 3 and 4 are checked line by line by Claude Opus 5.5 (row 698, `library/gap-seed-check.md`), and Sections 1, 3.1 and 3.4 also by Codex gpt-6-astra (row 699, `library/gap-seed-check-astra.md`). No statement fails. The corrections of the two checks are applied below and each is marked with its row. Not checked: the candidates and estimates of Section 2, and Section 5. The seed inequality itself is not proved.
 
 ## 0. Position, repo search, reading state
 
@@ -30,11 +30,11 @@ Status of this file: complete for this run (ended 2026-11-11, about 10:30Z). The
 
 Torus with sides n = (n_1, ..., n_4), all n_mu >= 3. Action A(U) = sum over plaquettes of (1 - (1/2) tr U_p). Z(n) = integral of exp(-beta A) over Haar measure, F(n) = log Z(n), |n| = n_1 n_2 n_3 n_4. beta > 0 is fixed unless said.
 
-**(TM)** (input; `library/gap-transfer.md`, row 667, check row 671). For each direction mu and each choice of the other three sides there is a positive trace-class operator T on a Hilbert space with Z(n) = Tr T^(n_mu). Its largest eigenvalue is simple, with a strictly positive eigenfunction.
+**(TM)** (input; `library/gap-transfer.md`, row 667, check row 671). For each direction mu and each choice of the other three sides there is a positive trace-class operator T on a Hilbert space with Z(n) = Tr T^(n_mu). Its largest eigenvalue is simple, with a strictly positive eigenfunction. (Rows 698, 699: `gap-transfer.md` states this for the cube with equal sides. Both checks find that no step there uses equal sides. The statement for every box with sides at least 3 is Lemma 1.1 of `library/gap-seed-check.md` and point 1 of `library/gap-seed-check-astra.md`: replace N^3 by the product of the three sides and keep the gauge projection.)
 
-**(TM-c)** (input; run 2, Lemma 1'). For nu different from mu, the centre flip C_nu (multiply by -1 every link of direction nu that crosses the plane x_nu = 0 of the slice) is a unitary involution that commutes with T, and Tr(T^(n_mu) C_nu) = Z^(mu nu)(n). Here Z^(mu nu) is the partition function with the sign of beta changed on one stack of (mu,nu)-plaquettes, one plaquette for each value of the other two coordinates. It is positive, and it is symmetric in mu and nu.
+**(TM-c)** (input; run 2, Lemma 1'). For nu different from mu, the centre flip C_nu (multiply by -1 every link of direction nu that crosses the plane x_nu = 0 of the slice) is a unitary involution that commutes with T, and Tr(T^(n_mu) C_nu) = Z^(mu nu)(n). Here Z^(mu nu) is the partition function with the weight exp(-beta (1 - (1/2) tr U_p)) replaced by exp(-beta (1 + (1/2) tr U_p)) on one stack of (mu,nu)-plaquettes (corrected, rows 698 and 699: the first wording, "the sign of beta changed", gives an extra factor exp(2 beta) for each plaquette of the stack), one plaquette for each value of the other two coordinates. It is positive, and it is symmetric in mu and nu.
 
-**Lemma A** (run 2, Lemma 1 (a), (b); two-line proofs there). Let S >= 0 be trace class with eigenvalues lambda_0 >= lambda_1 >= ... . (a) k -> (Tr S^k)^(1/k) is non-increasing and tends to lambda_0. So Tr S^(jk) <= (Tr S^k)^j for integers j, k >= 1. (b) lambda_0^k >= Tr S^(2k) / Tr S^k.
+**Lemma A** (run 2, Lemma 1 (a), (b); two-line proofs there). Let S >= 0 be trace class with eigenvalues lambda_0 >= lambda_1 >= ... . (a) k -> (Tr S^k)^(1/k) is non-increasing and tends to lambda_0. So Tr S^(jk) <= (Tr S^k)^j for integers j, k >= 1. (b) for S not zero and integers k >= 1 (corrected, row 699: for S = 0 the quotient is 0/0), lambda_0^k >= Tr S^(2k) / Tr S^k.
 
 **Consequences used below** (run 2, Lemma 1 (c)). F(n)/|n| is non-increasing in each side. f := inf over n of F(n)/|n| is finite, and
 
@@ -120,7 +120,7 @@ Let Delta(n,n,n,n) <= eps. Then for every k >= 0 with 8^k eps <= 1: m((2^k n)^3)
 
 Proof. Multiply three sides by 2^k: Delta(n, 2^k n, 2^k n, 2^k n) <= 8^k eps. By run 2's Lemma 1 (d), 1 + S(n; (2^k n)^3) <= exp(Delta(n, 2^k n, 2^k n, 2^k n)). Then r_1^n <= exp(8^k eps) - 1 <= 2 8^k eps. QED
 
-Meaning. If Delta(n^4) <= exp(-mu n), the gap of every box of side up to n exp(mu n / 3) is at least mu - (3k log 2 + log 2)/n. Positivity alone carries a seed over exponentially many scales. It does not carry it to infinite volume, and it uses f, which is a limit over all sizes: Delta(n^4) = sum over k >= 0 of 16^(-(k+1)) Phi(2^k n). Theorem D is the form that uses two finite tori and reaches one doubling.
+Meaning. If Delta(n^4) <= exp(-mu n), the gap of every cube of side 2^k n <= n exp(mu n / 3) (corrected, row 698: the proof covers these cubes, not every box up to that side) is at least mu - (3k log 2 + log 2)/n. Positivity alone carries a seed over exponentially many scales. It does not carry it to infinite volume, and it uses f, which is a limit over all sizes: Delta(n^4) = sum over k >= 0 of 16^(-(k+1)) Phi(2^k n). Theorem D is the form that uses two finite tori and reaches one doubling.
 
 ### 3.3 The doubling step: three ways that failed (kept as a record; Section 3.4 has the way that works)
 
@@ -175,7 +175,7 @@ This is the main result of the file. It answers lead (b) with yes. The step that
 
 The use: W(a, b) = Z(a, b, c, d) with c, d fixed. It is symmetric in a and b because Z is invariant under the lattice symmetry that exchanges two axes. T_b is the transfer operator of the box (b, c, d). Then S(a; b) is S(a; (b, c, d)) of Section 1. The same holds for any two of the four directions.
 
-**Lemma K (the deficit is non-negative, convex and non-increasing; PROVED).** (a) e(b) = lim over a of (1/a) log W(a, b) = inf over a. (b) e(jb) <= j e(b) for integers j >= 1, and ell = inf over b of e(b)/b, so kappa >= 0. (c) e and kappa are convex: e(b+1) + e(b-1) >= 2 e(b). (d) kappa(b+1) <= kappa(b) for all b.
+**Lemma K (the deficit is non-negative, convex and non-increasing; PROVED).** (a) e(b) = lim over a of (1/a) log W(a, b) = inf over a. (b) e(jb) <= j e(b) for integers j >= 1, and ell = inf over b of e(b)/b, so kappa >= 0. (c) e and kappa are convex: e(b+1) + e(b-1) >= 2 e(b) for b >= 4 (domain corrected, rows 698 and 699: all three sizes must be at least 3; this is all that (d) uses). (d) kappa(b+1) <= kappa(b) for all b >= 3.
 
 Proof. (a) Lemma A (a) for T_b. (b) W(a, jb) = Tr T_a^(jb) <= (Tr T_a^b)^j = W(a, b)^j by the symmetry and Lemma A (a) for T_a; take (1/a) log and let a grow. The formula for ell follows from (a). (c) For fixed a, b -> log W(a, b) = log Tr T_a^b is the logarithm of a sum of exponentials of b with positive weights, so it is convex in b. By (a), e is a pointwise limit of convex functions. (d) Suppose kappa(b_0 + 1) - kappa(b_0) = c > 0. By convexity the increments do not decrease, so kappa(b) >= c (b - b_0) for b >= b_0, and e(b)/b >= ell + c/2 for all large b. Choose b_1 with e(b_1)/b_1 < ell + c/2. By (b), e(j b_1)/(j b_1) < ell + c/2 for all j. Contradiction. QED
 
@@ -202,11 +202,23 @@ By Theorem D (b), s <= exp(Phi(n)) - 1. So the seed holds if Phi(n) = 16 F(n,n,n
 Proof. Lemma E with a = n, b = 2n, for the pair of directions (1, 2) with the sides (2n, 2n) of the directions 3, 4 fixed: 1 + S(n; (4n, 2n, 2n)) <= (1 + s)^4. Lemma E for the pair (1, 3) with the sides (4n, 2n) fixed: 1 + S(n; (4n, 4n, 2n)) <= (1 + s)^16. Lemma E for the pair (1, 4) with the sides (4n, 4n) fixed: 1 + S(n; (4n)^3) <= (1 + s)^64. Then S(2n; (4n)^3) <= S(n; (4n)^3)^2, because every eigenvalue has multiplicity at least one.
 For x <= 1/640: (1 + x)^64 - 1 <= e^(64x) - 1 <= 64 x e^(64x) <= 64 e^(0.1) x <= 71 x, so the map sends x to at most 5041 x^2. If 5041 s < 1, induction gives 5041 s_k <= (5041 s)^(2^k), and all s_k stay below 1/5041 < 1/640. The top eigenvalue is simple, so r_1^(n_k) <= s_k and m((2 n_k)^3) >= (1/n_k) log(1/s_k) >= (1/n_k)(2^k log(1/(5041 s)) + log 5041) >= log(1/(5041 s))/n. Last claim: exp(1.9 x 10^(-4)) - 1 < 1.91 x 10^(-4) < 1/5041. QED
 
-**Corollary S2 (two dimensions, same proof with one doubling).** For a symmetric W as above: S(2n; 4n) <= ((1 + S(n; 2n))^4 - 1)^2. If S(n; 2n) <= 1/20, then S(2n; 4n) <= 19 S(n; 2n)^2 and the circles of length 2^(k+1) n have gap at least log(1/(19 S(n; 2n)))/n. (For x <= 1/20: (1 + x)^4 - 1 <= 4.32 x, and 4.32^2 < 19.) This is a statement for every reflection-positive model on the square lattice with a positive transfer operator, the O(3) sigma model included.
+**Corollary S2 (two dimensions, same proof with one doubling).** For a symmetric W as above: S(2n; 4n) <= ((1 + S(n; 2n))^4 - 1)^2. If S(n; 2n) <= 1/20, then S(2n; 4n) <= 19 S(n; 2n)^2 and the circles of length 2^(k+1) n have gap at least log(1/(19 S(n; 2n)))/n. (For x <= 1/20: (1 + x)^4 - 1 <= 4.32 x, and 4.32^2 < 19.) This is a statement for every model on the square lattice that satisfies the setting of the lemmas. For the O(3) sigma model that setting is plausible by the argument of `gap-transfer.md` and is not proved here (scope corrected, row 698).
 
 **Corollary S3 (all cubes from a seed on one block of sizes; PROVED).** Theorem S holds with (a, b) in place of (n, 2n) whenever 3 <= a <= b/2: S(2a; (2b)^3) <= ((1 + S(a; b^3))^64 - 1)^2. So let N >= 3 and s_max := the maximum over the integers b with 2N <= b < 4N of S(floor(b/2); b^3). If s_max < 1/5041, then every cube of side L >= 2N has m(L^3) >= log(1/(5041 s_max)) / (2N).
 
 Proof. For a <= b/2 the exponent 2b/(b - a) of Lemma E is at most 4, and the pair (2a, 2b) has the same property; the proof of Theorem S is unchanged. Every integer L >= 2N is 2^k b with one b in [2N, 4N); apply the recursion from (floor(b/2), b), and use floor(b/2) < 2N. QED
+
+**Correction (row 699, Codex gpt-6-astra).** The last sentence of this proof is false. Not every integer L >= 2N is 2^k b with an integer b in [2N, 4N): take N = 3 and L = 13. The check of row 698 accepted the step; the check of row 699 is right. As proved above, Corollary S3 covers only the sides 2^k b. The conclusion holds for every integer side, and from one seed, by the next two statements. They are written by Codex gpt-6-astra (`library/gap-seed-check-astra.md`, point 8). The lead (Claude Fable 5.2) re-derived both line by line and found no error.
+
+**Lemma E' (row 699).** For integers h >= b > a >= 3: 1 + S(a; h) <= (1 + S(a; b))^(h/(b - a)).
+
+Proof. By Lemma A (a) for T_a and h >= b: W(a, h) = Tr T_a^h <= (Tr T_a^b)^(h/b) = W(a, b)^(h/b). Take logarithms: a e(h) + g(a, h) <= (h/b)(a e(b) + g(a, b)). The terms ell a h cancel, and kappa(h) >= 0 (Lemma K (b)). So g(a, h) <= (a h / b) kappa(b) + (h/b) g(a, b). By Lemma X, kappa(b) <= g(a, b)/(b - a). So g(a, h) <= (h/b)(a/(b - a) + 1) g(a, b) = (h/(b - a)) g(a, b). QED
+
+**Corollary S3' (every cube from one seed; row 699).** Let N >= 3 and s = S(N; (2N)^3) < 1/5041, q = 5041 s. Then for every integer L >= 2N: m(L^3) >= log(1/q)/N. More exactly, with k >= 0 such that D := 2^(k+1) N <= L < 2D: S(D/2; L^3) <= q^(2^k)/71.
+
+Proof. By Theorem S, S(D/2; D^3) <= s_k = q^(2^k)/5041. Apply Lemma E' with a = D/2, b = D, h = L three times, once in each direction, with the other two sides fixed at (D, D), then (L, D), then (L, L). Each exponent is L/(D - D/2) = 2L/D < 4. So 1 + S(D/2; L^3) <= (1 + s_k)^64, and S(D/2; L^3) <= 71 s_k = q^(2^k)/71 by the estimate in the proof of Theorem S. The lowest excited eigenvalue ratio rho_1 of the cube of side L obeys rho_1^(D/2) <= S(D/2; L^3), and D/2 = 2^k N. So m(L^3) >= (2^k log(1/q) + log 71)/(2^k N) >= log(1/q)/N. QED
+
+So seeds at other block sizes are not needed.
 
 **What Theorem S is and is not.**
 
@@ -265,7 +277,7 @@ because Z^2 - (Z^(12))^2 = 4 Z_odd Z_even and (Tr S)^2 - Tr S^2 = 2 Tr Lambda^2 
 
 **Way 3: move the flux into one half by a deformation.** By Lemma J every such deformation pays beta (1 - abar) (1 - product of normalised corner traces) per plaquette. A deformation that is not a gauge transformation times a centre field pays on a set of plaquettes of positive density.
 
-**Remark F3 (the same lemmas in the transverse plane; PROVED given a transfer operator for the twisted slice).** For fixed (a, b), both Z and Z^(12) are symmetric in (c, d), and each is a trace in c and in d (for Z^(12) the twisted plaquettes are spatial, so the transfer operator has the same form; this input is (TM) for the twisted action and is not in row 667). So Lemmas K and X apply to both. With tau(a, b) := ell(a, b) - ell_tw(a, b) >= 0, the difference of the two free energies per unit of transverse area, and f_m = log(Z / Z^(12)): for c < d,
+**Remark F3 (the same lemmas in the transverse plane; PROVED given a transfer operator for the twisted slice).** (Row 698, point 10: this input, (TM) for the twisted action, is supplied by Lemma 1.1 of `library/gap-seed-check.md`. One model checked this.) For fixed (a, b), both Z and Z^(12) are symmetric in (c, d), and each is a trace in c and in d (for Z^(12) the twisted plaquettes are spatial, so the transfer operator has the same form; this input is (TM) for the twisted action and is not in row 667). So Lemmas K and X apply to both. With tau(a, b) := ell(a, b) - ell_tw(a, b) >= 0, the difference of the two free energies per unit of transverse area, and f_m = log(Z / Z^(12)): for c < d,
 
 -(d/(d-c)) g_tw(c; d) <= f_m(a, b | c, d) - tau(a, b) c d <= (d/(d-c)) g(c; d),
 
@@ -313,7 +325,7 @@ The abstract of Ursachi's preprint reports a criterion of this shape for the O(3
 
 ## 6. Part 3: status block (final)
 
-**Proved here by hand. Not checked by another model.** Inputs: (TM) and (TM-c) (rows 667, 671; run 2, Lemma 1'), Lemma A (run 2, Lemma 1), and the invariance of Z under permutations of the four sides.
+**Proved here by hand. Checked line by line by Claude Opus 5.5 (row 698; Sections 1, 3, 4) and by Codex gpt-6-astra (row 699; Sections 1, 3.1, 3.4). No statement fails; the corrections are applied in the text. The proof step of Corollary S3 was false and is replaced by Lemma E' and Corollary S3' (Section 3.4).** Inputs: (TM) and (TM-c) (rows 667, 671; run 2, Lemma 1'), Lemma A (run 2, Lemma 1), and the invariance of Z under permutations of the four sides.
 
 | Statement | Content | Section |
 |---|---|---|
@@ -322,7 +334,8 @@ The abstract of Ursachi's preprint reports a criterion of this shape for the O(3
 | Lemma E | 1 + S(a; 2b) <= (1 + S(a; b))^(2b/(b-a)) for a < b | 3.4 |
 | **Theorem S** | S(2n; (4n)^3) <= ((1 + S(n; (2n)^3))^64 - 1)^2; a seed S(n; (2n)^3) < 1/5041, or Phi(n) <= 1.9 x 10^(-4), gives a uniform gap on the cubes of side 2^(k+1) n | 3.4 |
 | Corollary S2 | the same in two dimensions: seed S(n; 2n) <= 1/20 | 3.4 |
-| Corollary S3 | seeds on one block of sizes 2N <= b < 4N give a uniform gap on every cube of side at least 2N | 3.4 |
+| Corollary S3 | seeds on one block of sizes 2N <= b < 4N give a uniform gap on the cubes of side 2^k b (as first stated, on every cube: that proof step was false, row 699) | 3.4 |
+| Lemma E', Corollary S3' | one seed s = S(N; (2N)^3) < 1/5041 gives m(L^3) >= log(1/(5041 s))/N on every cube of integer side L >= 2N (row 699) | 3.4 |
 | Theorem D | Phi(n) = 16 F(n^4) - F((2n)^4) bounds the thermal sum, the gap, the count of states and the odd-flux weight of the box (2n)^3; Phi is an integral of plaquette differences | 3.1 |
 | Corollary D2, Proposition R | consequences of a decay of Phi; the reach of a seed for Delta | 3.1, 3.2 |
 | Proposition N, Remark N2 | the step fails for positive measures without integer multiplicity; the place is the doubling of the time | 3.3 |

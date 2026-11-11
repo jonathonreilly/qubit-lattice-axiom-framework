@@ -216,7 +216,7 @@ class StandingTest(unittest.TestCase):
         self.assertIn("rejected check record epsilon-2.md: a record cannot answer itself",
                       text)
         self.assertIn("argued 1 checked-given 0 checked 0", text)
-        self.assertIn("a rejected wrong record names it, so not checked: epsilon", text)
+        self.assertIn("a rejected record names it, so not checked: epsilon", text)
 
     def test_an_answered_record_stops_suppressing(self):
         folder = self.folder
@@ -343,8 +343,50 @@ class StandingTest(unittest.TestCase):
         write_check(folder, "zeta-1.md", "zeta", "wrong", ("notes/zeta.md",),
                     failure="counterexample notes/zeta.md:1", answers="zeta-1.md")
         text = self.status()
-        self.assertIn("typed discharged, but a rejected wrong record names it: zeta", text)
+        self.assertIn("typed discharged, but a rejected record names it: zeta", text)
         self.assertIn("open obligations: 2", text)
+
+    def test_a_corrupted_hash_does_not_pass_for_an_earlier_text(self):
+        folder = self.folder
+        self.part("- argued: epsilon -> x")
+        write_check(folder, "epsilon-1.md", "epsilon", "right", ("notes/epsilon.md",))
+        wrong = write_check(folder, "epsilon-2.md", "epsilon", "wrong",
+                            ("notes/epsilon.md",), checker="p/m/e s3",
+                            failure="counterexample notes/epsilon.md:1")
+        self.assertIn("disputed, so argued: epsilon", self.status())
+        # Corrupt the span hash only: the source has not changed.
+        real = lab_ops.span_hash(folder, "notes/epsilon.md")
+        body = wrong.read_text()
+        self.assertEqual(body.count(f"  - {real} "), 1)
+        wrong.write_text(body.replace(f"  - {real} ", "  - " + "0" * 64 + " "),
+                         encoding="utf-8")
+        text = self.status()
+        self.assertIn("rejected check record epsilon-2.md: content does not match", text)
+        self.assertIn("argued 1 checked-given 0 checked 0", text)
+        self.assertIn("open obligations: 1", text)
+
+    def test_a_broken_record_blocks_unless_it_plainly_says_right(self):
+        folder = self.folder
+        self.part("- argued: gamma -> x")
+        write_check(folder, "gamma-1.md", "gamma", "right", ("notes/gamma.md",))
+        cases = (
+            ("verdict: right", "verdict: right\nverdict: wrong", True),
+            ("verdict: right", "verdict: wrong\nverdict: right", True),
+            ("verdict: right\n", "", True),
+            ("verdict: right", "verdict: maybe", True),
+            ("path: a different derivation\n", "", False),
+            ("verdict: right", "verdict: undecided\nsteer: none", False),
+        )
+        for old, new, blocks in cases:
+            with self.subTest(new=new):
+                broken = write_check(folder, "gamma-2.md", "gamma", "right",
+                                     ("notes/gamma.md",), checker="p/m/e s3")
+                body = broken.read_text()
+                self.assertEqual(body.count(old), 1)
+                broken.write_text(body.replace(old, new), encoding="utf-8")
+                text = self.status()
+                self.assertIn("rejected check record gamma-2.md", text)
+                self.assertIn("checked 0" if blocks else "checked 1", text)
 
     def test_a_repeated_heading_names_no_text(self):
         note = self.folder / "notes" / "twice.md"

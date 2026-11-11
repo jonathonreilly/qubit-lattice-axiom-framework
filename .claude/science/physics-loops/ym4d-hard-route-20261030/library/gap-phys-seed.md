@@ -144,3 +144,95 @@ Lengths in units of the correlation length xi of the lightest glueball. From the
 So in physical units the distance from the largest box with a semi-analytic description to the seed box is a factor of about 4, two doublings. The distance from a box in which the coupling at the box scale is small (alpha below 0.1; L below about 0.05 fm) is a factor of about 50, between five and six doublings. On the whole way S falls from infinity to 6 x 10^(-4). The step of Theorem S, s -> 5041 s^2 or the map phi of Theorem SH, contracts only below the threshold. Above it the lemmas allow growth, and the class contains models where S does not fall (the ceiling models of `gap-seed-shape.md` Section 4).
 
 **Summary of Part 1.** (a) The account controls, on tori of four equal sides above the floor l_*(g) and under its packages A to F: the logarithm of the partition function up to C l^4 at the one time extent equal to the side; connected correlations of the action density on separated supports; the two-point law at distances below the unit. It gives no value and no useful bound for S. The true S on a small torus is large. (b) The seed needs a cube of at least 12.9 of its own correlation lengths (14.8 at the shape of Theorem S) and twist ratios above 1 - 2t/(1 + t). Between the two ends S must fall from a power of 1/g(L) to 6 x 10^(-4), over five to six doublings of the physical size.
+
+## 2. Part 2: the flow. Candidates, step inequalities, tests
+
+### 2.1 What a flow candidate is, and what a test can show
+
+Along the trajectory (a_j, beta_j) write Q_j(L) for a lattice quantity on the torus of physical side L (n_j a_j = L), and Q(L) for its limit, or its upper or lower limit, as j grows. A flow candidate is a quantity Q with three statements.
+
+- (BASE_Q) At one small size L_0, where the coupling is small, Q(L_0) lies in a known set. The weak-coupling analysis must give this.
+- (STEP_Q) There is a continuous function sigma on a compact interval I, with sigma(u) > u on I (or sigma(u) < u for a quantity that must fall), such that Q(2L) >= sigma(Q(L)) whenever Q(L) is in I, for every L >= L_0, uniformly in j. I reaches from the base value to the target value. This is "the flow goes one way, for every value of Q".
+- (SUF_Q) A value of Q beyond the target implies the seed on a torus of a fixed multiple of that size.
+
+**Lemma FLOW (PROVED; elementary).** Let sigma be continuous on I = [u_0, u_1] with sigma(u) > u there, and delta := min over I of (sigma(u) - u) > 0. Let q_0 >= u_0 and q_(k+1) >= sigma(q_k) whenever q_k is in I. Then q_k > u_1 for some k <= (u_1 - u_0)/delta + 1.
+Proof. While q_k is in I, q_(k+1) - q_k >= delta. QED
+
+So (BASE_Q), (STEP_Q) and (SUF_Q) give (PHYS-SEED) at the size 2^k L_0 times the factor of (SUF_Q), with k bounded as in the lemma. A strict inequality alone is not enough (run 2, A5): the minimum delta over the whole interval is what carries the flow, so (STEP_Q) is a statement at every value between the two ends.
+
+**What a test can show (Proposition T1 of row 712, applied).** Let M' be a comparison model in which the seed fails at every size. Then (BASE), (STEP) and (SUF) cannot all hold in M'. There are two outcomes.
+
+- *Pass.* (STEP_Q) is false in M' (the quantity stalls or flows back). The candidate is not refuted. The test says what a proof of (STEP_Q) must use.
+- *Fail.* (BASE_Q) and (STEP_Q) hold in M', or can hold. Then (SUF_Q) is false in M': the quantity does not see what stops the gap there. The candidate cannot be the whole tool.
+
+**The comparison models, in the form that fits a flow.**
+
+| Model | Where the seed fails | Mark | What the flow does there |
+|---|---|---|---|
+| (M1) U(1) in four dimensions, weak coupling | every size | THM, RECALLED, at large beta (Guth; Frohlich and Spencer); the statement on all torus quantities is GUIDE | scale invariance at large scales: every dimensionless quantity of the torus tends to a constant in L |
+| (M2) SU(2) Wilson in five dimensions, weak coupling | every size | GUIDE (numerics; row 718 reads the sources) | the dimensionless coupling g_5^2/L falls as L grows: the flow runs toward the free end |
+| (M3) the weights w_p = exp(beta ((1 + x)/2)^p), p large, at the coupling beta_t(p) | every size, at beta_t | THM GIVEN van Enter and Shlosman in the reading of row 712 (Proposition V; row 717 reads the paper) | two phases coexist at one lattice spacing |
+| (M4) SU(N) Wilson, N >= 5, at its bulk transition | every size, at that coupling | GUIDE (numerics) | two phases coexist at one lattice spacing; at N infinite the dependence on L has jumps (finite-volume transitions; RECALLED: Kiskis, Narayanan and Neuberger) |
+| (K6) SU(2) Wilson itself on a slab of width 1/T_c (run 2) | no gap along the long directions | GUIDE (numerics) | a fixed point of the flow in the long directions at one shape |
+
+A remark on (M3) and (M4) in the continuum form. The transition of w_p sits at one finite coupling beta_t(p). The continuum trajectory of w_p passes it once and is then, by the usual belief (GUIDE), in the class of the Wilson weight. So (M3) does not give a continuum theory without a gap. It gives this: in the variable beta_W = p beta/2, the coupling of the quadratic form of w_p at the identity, the point beta_t(p) lies at larger and larger beta_W as p grows (GUIDE: beta_t grows with p). So there is no number beta_0 such that every weight of the family is "in the scaling region" for beta_W > beta_0. **A proof of a step that works for every lattice action with the Wilson quadratic form, once the quadratic coupling is large, is refuted by (M3).** The proof must use a bound on the distance of the weight from the Wilson weight, or the Wilson weight itself. The same holds for the effective actions that a renormalization step produces: at an effective coupling of order one they are not the Wilson weight, and nothing known bounds their distance from it.
+
+### 2.2 The candidates
+
+Three classes, by what (SUF_Q) can be.
+
+**Class I: quantities that hold the whole thermal sum.** For these (SUF) is a theorem of this target.
+
+| Q | Definition | (BASE): value at small L | (SUF) | (STEP), the one-way statement |
+|---|---|---|---|---|
+| Q1 | s_r(L) = S(L/r; L^3), g = log(1 + s) | tends to infinity like a power of 1/g(L) (GUIDE, 1.2); not controlled by the account (Proposition 1.1) | it is the seed: s_r(L) <= t(r) (Theorem SH) | (STEP-S): s(2L) <= sigma(s(L)), sigma(s) < s, for s in [t(r), s(L_0)] |
+| Q2 | D(L) = Delta(L^4), the Casimir free energy of the symmetric torus | about 3 log(1/g(L)) + O(1) (GUIDE) | D <= 6.1 x 10^(-4) (Proposition Delta) | (CAS) of row 708: D(2L) <= theta D(L) while D > 6.1 x 10^(-4) |
+| Q2' | Phi(L) = 16 F(L^4) - F((2L)^4), the doubling defect | about 15 D(L) (GUIDE) | Phi <= 1.9 x 10^(-4) (Theorem D) | Phi(2L) <= sigma(Phi(L)); for small Phi this is (Phi-step) of row 697 |
+| Q3 | the pair (z(L), D(L/4)), z = L m(L^3) the lowest gap of the cube in units of 1/L | z tends to 0 like g^(5/3) exp(-12.46/g) (RECALLED, 1.2); D as above | z >= 256 D(L/4) + 29.64 (Lemma Z, Part 3; new) | (Z-GROW): z(L) passes 256 D(L/4) + 29.64 at one size |
+| Q4 | pi(a) = a^4 p(1/a), the dimensionless thermal pressure in infinite space, with the cube b >= 24 a | the Stefan-Boltzmann value of six gluon modes, pi^2/15, with corrections in g (RECALLED) | g(a; b^3) <= 0.26 at b >= 24 a (Theorem SH, r >= 24); it follows from Delta(a, b^3) <= 0.26 | pi(2a) <= sigma(pi(a)); the non-strict form "p/T^4 does not fall as T rises" is the positivity of the interaction measure, eps - 3p >= 0 |
+
+**Class II: quantities that hold the flux half only.**
+
+| Q | Definition | (BASE) | What it can give | (STEP) |
+|---|---|---|---|---|
+| Q5 | zeta(L) = Z^(mu nu)(L^4)/Z(L^4), a twist ratio of the symmetric torus; U(L) of Identity FL; the flux free energies of 't Hooft | zeta tends to 0, U to 7/8 (GUIDE: the flux sectors are degenerate, 1.2) | (MF) of row 708, the flux half; not the seed (Identity FL: the zero-flux sum S_0 is a second, independent number) | zeta(2L) >= sigma(zeta(L)), sigma(u) > u on (0, 1). The proved part is Theorem F of row 697 (the two directions of the sheet); the open part is (TUBE') |
+| Q6 | the Schrodinger functional coupling gbar^2(L) (Luscher, Narayanan, Weisz, Wolff): the response of log <C'| T_B^(L/a) |C> to a constant abelian boundary field; B is the periodic cube, the same transfer operator as in the seed | perturbative: gbar^2 = g^2 + c_1 g^4 + ... (read in `prior/gap-fullread-1.md`); the unique minimum of the action is a theorem of that paper on the lattice; fixed boundary values are not in the account | not known; at large L the boundary fields enter through their spatial holonomies only (they are flat), so this is a flux quantity (GUIDE, not derived) | the step-scaling function: gbar^2(2L) = sigma(gbar^2(L)) with sigma(u) > u. Seen in simulations on the measured range (RECALLED: Luscher, Sommer, Weisz, Wolff); no inequality is proved (`prior/gap-vir-lit.md`) |
+| Q7 | the twisted Polyakov loop coupling (de Divitiis, Frezzotti, Guagnelli, Petronzio): a ratio of Polyakov loop correlations in a twisted and an untwisted direction | perturbative, no constant modes (RECALLED, not read) | the ratio tends to 1 when the centre symmetry holds in every direction, so the coupling tends to a finite constant (RECALLED, not read). A flux quantity | one-way up to a finite end value |
+| Q8 | r^2 times the force between static charges; Creutz ratios at the scale L | perturbative | the area law, with the inequality of Tomboulis and Yaffe as in row 697 | r^2 F(r) grows; no inequality known |
+
+**Class III: local quantities and others.**
+
+| Q | Definition | (BASE) | Why it is not the tool |
+|---|---|---|---|
+| Q9 | the gradient flow coupling: t^2 <E(t)> at sqrt(8t) = c L | perturbative; with periodic sides the constant modes enter (RECALLED) | a local density at the scale L. It grows like L^4 times a condensate in every theory with a non-zero condensate, gap or no gap |
+| Q10 | the coupling of the account: the two-point function of the action density at distance d, divided by the free kernel; it is zeta_K(d)^2 (3 (N^2 - 1)/pi^4) g(d)^4 (1 + eps) | **controlled by the account as it stands** for d <= d_0 (Theorem 0 (c)(3)) | it rises with d at small d and falls at large d if there is a gap: not one-way. Its exponential fall would give the gap on the one-field vectors only (run 2, (W5)) |
+| Q11 | the finite-size shift of the plaquette, n^4 (abar_inf - abar_n): the derivative of Q2 along the coupling (Lemma DIL, Part 3) | positive at weak coupling (GUIDE) | it is the derivative of a Class I quantity, not a quantity that flows; its sign is the monotony (MONO-Delta) of Part 3 |
+| Q12 | the deficit kappa(b) of Lemma K | - | monotone in every model of the class (Lemma K (d)); it is thermodynamic stability (the pressure is convex in the temperature) and cannot be strict by itself (row 708) |
+| Q13 | the lowest zero-flux gap of a twisted box, z_0 = L m_0 | 2 sqrt(2) pi + g^2(L) gamma/(16 pi^2), gamma = -92.08 (RECALLED, 1.2) | (STEP) is false for SU(2) itself at weak coupling: z_0 falls as L grows, by the published one-loop coefficient. It must turn later. A one-way statement for every value does not exist for this quantity |
+| Q14 | Route T: the gap of the thin torus R^2 x T^2_s with a twist, in units of 1/s | of order one at small s (tree level; the chart (CH), rows 679, 695) | its crux is (AC'), rows 678 and 691; not attacked here |
+
+### 2.3 The tests, candidate by candidate
+
+"Pass" and "fail" as defined in 2.1. Every entry on a comparison model is RECALLED or GUIDE, as marked in the table of 2.1.
+
+| Candidate | (M1) U(1), d = 4 | (M2) SU(2), d = 5 | (M3) w_p at beta_t | (M4) SU(N) at the bulk point | In SU(2) itself |
+|---|---|---|---|---|---|
+| Q1, Q2, Q2', Q3 (Class I) | pass: the quantity is constant in L, (STEP) is false | pass: the quantity moves the other way | pass: no size has a seed, so the quantity never crosses the target | pass, the same | the step function depends on the shape; at the slab shape (K6) it has a fixed point |
+| Q4 (pressure) | pass: p/T^4 is the constant of two photon modes | pass: p/T^5 rises toward the free value as T falls in lattice units | pass | pass | the non-strict form is the sign of the interaction measure |
+| Q5 (twist ratio) | pass: the Z_2 twist of U(1) costs a fixed action at every scale, zeta is constant below 1 | pass: zeta falls with L | **fail**, if both phases confine: zeta can rise to 1 while the seed fails (GUIDE). In the abstract class of Theorem S the failure is PROVED: a product with a decoupled factor without a gap keeps every twist ratio and loses the seed | fail, the same | - |
+| Q6 (Schrodinger functional) | pass: the coupling tends to the renormalized charge | pass | fail, as Q5 (GUIDE) | fail | - |
+| Q7 (twisted Polyakov loop) | pass | pass | fail, as Q5 | fail | the coupling stops at a finite value: no step beyond it |
+| Q8 (force) | pass: r^2 F tends to a constant | pass | fail, as Q5 | fail | - |
+| Q9 (gradient flow) | pass | pass | fail: a condensate, no gap | fail | - |
+| Q10 (two-point coupling) | pass | pass | not one-way | not one-way | **(STEP) is false**: the quantity rises, then falls |
+| Q13 (twisted box gap) | - | - | - | - | **(STEP) is false** at weak coupling (RECALLED one-loop sign) |
+
+**Reading of the table.**
+
+1. No candidate is refuted by (M1) or (M2). Both tests say the same thing about every candidate: the proof of the step must use the sign of the one-loop coefficient in four dimensions for a non-abelian group, at every value of Q and not only at the weak end.
+2. Every quantity of Class II and Q9 fail (M3) and (M4): they can flow to their strong end at a point with two phases. They see confinement, not the glue half. This is the statement of row 708 (C-C) for (MF), now for every coupling of the step-scaling kind. A proof that such a coupling grows without bound, if it existed, would give the flux half at most.
+3. The quantities of Class I pass every test, and for a reason that has no content: their (SUF) is a theorem, so their (STEP) holds in no model without a seed. For them the test is not a filter. The content is in (STEP) itself, and row 708 says of its form (CAS) that it restates the seed in steps.
+4. Two candidates are refuted in SU(2) itself as one-way statements: Q10 (the only one whose base the account controls as it stands) and Q13.
+5. The account controls the base of no Class I quantity. Part 4 says what must be added.
+
+**What Part 2 does not find.** No quantity that is at once (a) controlled at small L by weak-coupling analysis, (b) sufficient for the seed, and (c) carried by a step whose proof at one value of Q is easier than the seed itself. The step for a Class I quantity at a value of order one is a statement about one pair of tori at a coupling of order one. It has the same form and the same difficulty as the seed. What the continuum form adds is the list of what the step may use that the fixed-beta problem could not: the trajectory is asymptotically free, so the base is at infinity for Class I, and the question is only whether the flow stalls.

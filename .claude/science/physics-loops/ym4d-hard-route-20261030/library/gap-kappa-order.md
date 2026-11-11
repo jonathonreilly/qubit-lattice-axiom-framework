@@ -144,3 +144,44 @@ Coarse scan, 3^4, 8 replicas, 1200 sweeps per node (errors in brackets, jackknif
 | 2.9 | 0.715 | 0.060(6) | 0.023(3) | 0.000 | 0.000 | 0.000 | 0.000 | 0.79(7) |
 
 Reading. The price of half-integer charge is seen: r_e/r_b is about 1 at beta = 2.0, 0.6 at 2.2, 0.17 at 2.4, 0.03 at 2.6. But it sets in only where the single twist is already expensive (r_a = 0.36 at beta = 2.2, below the value 0.48 under which (KP) holds for any price in the model of Lemma PD). From beta = 2.2 on, Q is far below 7. The only place left for a violation on this torus is the narrow window beta in (2.0, 2.2), where the twists become free; a finer scan of it follows.
+
+Fine scan of the window, 3^4, 8 replicas, 2500 sweeps per node:
+
+| beta | plaquette | r_a | r_b | r_e (Pf=1) | r_i (Pf=1) | r_h (Pf=1) | r_j (Pf=1) | Q (must be <= 7) |
+|---|---|---|---|---|---|---|---|---|
+| 2.05 | 0.531 | 0.734(9) | 0.589(12) | 0.565(4) | 0.498(18) | 0.437(19) | 0.377(24) | 6.02(29) |
+| 2.10 | 0.552 | 0.607(17) | 0.469(13) | 0.372(16) | 0.325(12) | 0.296(11) | 0.245(9) | 6.00(21) |
+| 2.15 | 0.572 | 0.470(12) | 0.302(11) | 0.218(10) | 0.181(11) | 0.148(6) | 0.116(4) | 4.85(23) |
+
+**Result of run 3.** No violation of (KP) on the 3^4 torus at any of the eight values beta = 2.0 to 2.9. Q is below 7 by 3 to 5 errors at beta = 2.05 and 2.10, and by much more above. What the run cannot establish: (a) it is one torus; the larger and the asymmetric tori are not tested; (b) for beta <= 2.0 the margin 7 - Q is smaller than the error of the run (6.4(8) at beta = 2.0), so the run does not resolve the sign there; Theorem SB gives the sign only for beta < beta_0(n), which is not computed; (c) the quadrature error of the 10-node rule was checked only through the agreement of r_a with the independent route at beta = 2.0; (d) a run never discharges a statement.
+
+What the run does show, as a guide: on 3^4 the twists with Pf = 1 are not more expensive than the other twists of the same number of planes while the single twist is cheap (r_e/r_b = 0.96(2) at beta = 2.05, where r_a = 0.73), and the price of half-integer charge appears only once the single twist is expensive. This is the order of events under which (KP) holds (Lemma PD). The dyonic situation of Proposition ND is not seen.
+
+## 6. Report
+
+**Kind of result.** Proof work on our own open statement (KP) of `gap-flux-exercise.md` 8.4 / 8.7. The Sussman-Alpoge account has no such statement; nothing is ported.
+
+**Verdict: (KP) for Wilson SU(2) is neither proved nor refuted. It stays open.** Three distinct ways were carried out, as the row asks.
+
+| Way | What was done | Outcome |
+|---|---|---|
+| 1. Character expansion | Proposition SC: Y_h = e^{-beta|P|} sum over closed S in the class h of the integral of prod_{S} sinh(beta x_p) prod_{not S} cosh(beta x_p). Fine terms: positive for manifold sheets, discs glued on a circle, two sheets through one site, and the three-plane term at spin 1/2 (5/9). | Exact formula, **no sign**. No negative term found; non-negativity of all terms not proved. Fails as a proof at: branching vertices of higher spin, where the group integral is a signed recoupling sum. |
+| 2. Mack-Petkova splitting | It is the same formula before the average over the SO(3) field. Lemma NP: at fixed environment the class weight is negative on a set of positive measure, for every class. | **Fails as a proof**: no pointwise sign; the sign is the SO(3) twist paired with h. |
+| 3. Small torus / small beta | Theorem SB (with Lemmas M, F, T): on every torus with sides at least 3, sum_{Pf(h)=1} Y_h = N_* |Lambda| (beta/4)^{a_*} (1 + O(beta)) > 0. | **(KP) proved, strictly, for 0 < beta < beta_0(n)**. Not uniform in the torus. |
+
+**Also established (all by hand, not yet checked by another model).**
+
+1. (KP) is the inequality sum_{k != 0} (-1)^{Pf(k)} Z^k <= 7 Z^0 (Section 1). It holds whenever the mean of Z^k/Z^0 over the 35 non-zero twists with Pf = 0 is at most 1/5. It is an equality when all twists are free.
+2. Proposition ND: (KP) cannot be derived from the sector positivity Z_{chi,m} >= 0 and (S1) in the four frames at one size. An explicit table of 64 positive numbers satisfies all of these and violates (KP). The violating pattern is the dyonic one: Pf = 0 twists free, Pf = 1 twists suppressed.
+3. Lemma PD: (KP) holds if the planes are independent, and the exact threshold for an extra factor q on half-integer charge.
+4. Finite groups at beta = infinity: (KP) holds for Q_8 and for every extraspecial 2-group.
+
+**Argued, with a gap.** (KP) for beta >= beta_1(n) on a fixed torus (Laplace's method; constants not written).
+
+**Guides.** Run 1 (one site): all 64 class weights positive. Run 3 (3^4, beta from 2.0 to 2.9): no violation; margin at least 3 errors from beta = 2.05 up.
+
+**The exact open statement.** For every torus with sides at least 3 and every beta in [beta_0(n), beta_1(n)]: sum over the 28 twists with Pf(k) = 1 of (Z^0 - Z^k) <= sum over the 35 non-zero twists with Pf(k) = 0 of (Z^0 - Z^k). Why each way stops there: ways 1 and 2 need the sign of an SO(3) average that is negative pointwise on a set of positive measure; way 3 is perturbative at both ends; and by Proposition ND no argument from the transfer operators of one size can close it. A proof needs an input that ties the weight of half-integer charge to the weight of the single twists across the crossover. I know of no such input.
+
+**For the lead (what changes).** Do not use (KP) in the chain: the three seeds of Corollary EV stay three separate options, and the order S_kappa <= S_per is not available (S_kappa <= S_full is, by (S1)). If the order is wanted at one fixed size N only, the statement needed is (KP) on the two tori N^4-type sizes of the seed at one beta; by the rule on computer-assisted steps a run cannot supply it. I see no cheaper route and do not recommend a further lane on (KP) before a seed is chosen. Open-registry / t0-tree: (KP) remains OPEN, owner none; I did not edit those files.
+
+RESULT: (KP) for Wilson SU(2) is NOT proved and NOT refuted; it stays open for beta between beta_0(n) and beta_1(n). Proved by hand (not yet checked by another model): the exact surface formula for Y_h (Proposition SC) with no pointwise sign (Lemma NP); (KP) strictly for 0 < beta < beta_0(n) on every torus with sides >= 3, with the leading term N_* |Lambda| (beta/4)^{a_*} (Theorem SB); (KP) is equivalent to sum_{k != 0} (-1)^{Pf(k)} Z^k <= 7 Z^0 and cannot follow from single-size sector positivity (Proposition ND); it holds for independent planes, for Q_8 and for extraspecial groups at beta = infinity. Argued with a gap: (KP) at large beta on a fixed torus. Guide runs (one site; 3^4 at beta = 2.0 to 2.9) found no violation. Open: the crossover regime, any bound uniform in the torus, and the sign of the higher-spin branching terms.

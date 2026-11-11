@@ -182,7 +182,7 @@ If the even-only seed is wanted, the missing input is exact: an **even step**, a
 
 (EV-LOSS) 1 + S_ev(a; (2b,c,d)) <= (1 + S_ev(a; (b,c,d)))^2 exp(a (2 kappa(b) - kappa(2b))) (1 + V),
 
-where kappa is the deficit of Lemma K for the periodic box and 1 + V = (sum_x y_x^2)/((1/4)(sum_x y_x)^2) in [1/4... ] is fixed by the sixteen crossed sector weights y_x (8.5 gives the exact form). The losses vanish when the light crossed sectors form one group of four, which is the statement that one of the admissible seeds holds.
+where kappa is the deficit of Lemma K for the periodic box and 1 + V := Theta = 4 (sum_x y_x^2)/(sum_x y_x)^2, a number in [1/4, 4] fixed by the sixteen crossed sector weights y_x (8.5 gives the exact form; corrected at step 5). Theta is 1 when four crossed sectors carry equal weight and the other twelve none, which is the case of a seed on a group of four.
 
 ### 3.7 Conclusions
 
@@ -395,6 +395,192 @@ A tool for this wall must give (G_ev): small even thermal sums on a sequence of 
 | full seed | sum of all twists | crossing | full seed | believed false for SU(2) | retired for SU(2) (belief) | 8.4, Remark 2.A (d) | - |
 | even step | sixteen crossed sectors | none known | (EV-STEP) | weaker | blocked-local | 8.5, 8.6 | a bound on crossed flux weights from even data |
 | boundary values | conditional laws on a cube | Dobrushin-Shlosman | (DS-tw) | unknown | owned by row 691 | - | - |
+
+## Step 8. Real attempts
+
+Rule 0a before each attempt: `library/open-core.md` has no line for the even sector, a twist sum or a seed (Step 0). The FINISH rows 697 to 730 name "a step from one size to all sizes for the centre-even sector alone" as open (row 712) and assign it to this row (row 721, proposal 1). (TUBE'), (MF), (VORT) and (DS-tw) belong to rows 697, 708, 670 and 691; I do not attack them.
+
+All proofs below are by Claude Fable 5.2 and are not checked by another model.
+
+### 8.1 Inputs and their standing
+
+- **(TR)**: `library/gap-transfer.md` statements (1) to (4), (8), Lemma A0, and 9.3 (the flips Z_k, the sectors). Checked by Claude Opus 5.5 (row 671), for every box by rows 698, 699 (Lemma 1.1 of `gap-seed-check.md`). Read here: Section 8 and 9.3 in full, Lemma A0 (statement).
+- **(L)**: `library/gap-seed-limit.md` Lemma T, Proposition C, Theorem L1, Theorem L3 (a). Checked by Claude Opus 5.5 (row 703). Read in full.
+- **(S)**: `library/gap-crux-restate.md` Lemmas A, K, X, E, E', Theorem S, Corollary S3', Theorem D (b). Checked by Claude Opus 5.5 and Codex gpt-6-astra (rows 698, 699). Read in full.
+- **(TM-tw)**: for every box B and every magnetic twist m, the operator T_{B,m} = M' C_E M' with the twisted spatial potential is positive, trace class, with a simple top eigenvalue and a strictly positive eigenfunction; the flips commute with it; Tr(T_{B,m}^a C^e) = Z^{e+m}(a, B); a permutation of the axes maps the twist k to its image and keeps Z^k. Source: `gap-seed-check.md` L177 (Remark F3 point) and `gap-crux-fp-check.md` L30-38, both by Claude Opus 5.5 in check files. They state the extension "word for word" from `gap-transfer.md` and re-derive it in a few lines. I did not re-derive it. Standing: argued in two check files by one model; no separate check of it exists. 8.2 does not use (TM-tw). 8.4 and 8.5 do.
+
+### 8.2 Theorem EV-L (the limit half reads the even sector only). On the path of (GAP).
+
+**Setting.** Torus Lambda x Z_T with Lambda = (Z/L)^3, L >= 3, time direction 1, T_P the transfer operator of (TR), Rn = T_P/lambda_0. For nu = 2, 3, 4, C_nu f = f o Z_nu, where Z_nu flips the links (x, nu) with x_nu = 0. For e in {0,1}^3, C^e is the product of the C_nu with e_nu = 1. P_0 = (1/8) sum_e C^e. By 9.3 of (TR) the C_nu are commuting unitary involutions that commute with T_P, and Omega is in the range of P_0.
+
+**The class 𝔄.** A slab function F on [a, b] (Section 8 of (TR)) is in 𝔄_L if (i) F(g.U) = F(U) for every g from the sites of the slab to {+1, -1}, where (g.U)(x, mu) = g(x) g(x + mu) U(x, mu) for spatial and time-like links; (ii) for each nu the nu-range of F has width at most L - 2. Functions of the numbers tr U_p of finitely many plaquettes, and of traces of contractible closed loops, satisfy (i).
+
+**Lemma CB (centre-blind).** For F in 𝔄_L on [a, b]: K_F(Z_nu u, Z_nu v) = K_F(u, v). So the operator k_F := lambda_0^(-(b-a)) S_{K_F} (for b = a: k_F = M_F) commutes with each C_nu and with P_0.
+
+Proof. In the integral that defines K_F substitute U(t) -> Z_nu U(t) for a < t < b. Haar measure is invariant. By 9.3, T_0(Z_nu u, g.Z_nu v) = T_0(Z_nu u, Z_nu(g.v)) = T_0(u, g.v). It remains to show F(Z_nu U(a), ..., Z_nu U(b); g) = F(U; g). By (ii) there is r != 0 such that no link (x, nu) with x_nu = r is in the support of F: the nu-range [alpha, beta'] holds the beta' - alpha <= L - 2 link positions alpha, ..., beta' - 1, so at least two of the L positions are free, and one of them is not 0. Put g(x) = -1 on the sites of all slices with x_nu in {1, ..., r} (cyclic order) and +1 elsewhere. Then g.U differs from U exactly on the links (x, nu) with x_nu = 0 and with x_nu = r: a link in another spatial direction or in the time direction joins two sites with the same x_nu. F does not read the links at x_nu = r. So F(Z_nu U) = F(g.U) = F(U) by (i). For b = a the statement is F(Z_nu u) = F(u), the same argument. QED
+
+**Definitions.** For F in 𝔄_L on a slab of width w <= T - 2 and e in {0,1}^3:
+
+omega^e(F) := Tr(C^e k_F Rn^(T-w)) / Tr(C^e Rn^T), omega_ev(F) := Tr(P_0 k_F Rn^(T-w)) / Tr(P_0 Rn^T), q_e := Tr(C^e Rn^T) / sum over e' of Tr(C^e' Rn^T).
+
+omega^0 = omega_per, the periodic torus state (8.1 of (TR)). S_ev(t) := Tr(P_0 Rn^t) - 1 >= 0 (the sum over the excited eigenvalues of T_P in the range of P_0, an invariant subspace that contains Omega). m_ev := log(lambda_0/lambda_1^ev), lambda_1^ev the second eigenvalue of T_P on the range of P_0.
+
+**Lemma MX (mixture).** (a) Tr(C^e Rn^T) > 0 and q_0 >= 1/8. (b) Each omega^e is linear on the slab functions of 𝔄_L of a given slab, does not depend on the slab chosen for F, is invariant under time translations, and satisfies omega^e(F) >= 0 for F >= 0 and omega^e(1) = 1. (c) omega_ev = sum_e q_e omega^e. (d) For real X in 𝔄_L: omega_per(X)^2 <= omega_per(X^2) <= 8 omega_ev(X^2).
+
+Proof. (a) C^e T_P^T has the kernel a_T(Z^e u, v), a_T the kernel of T_P^T. By A0(e) of (TR), Tr(C^e T_P^T) is the integral of a_T(Z^e u, u). a_T is strictly positive ((4) of (TR)), so the trace is positive. C^e is a unitary involution that commutes with T_P^T >= 0, so Tr(C^e T_P^T) <= Tr T_P^T. Hence q_0 >= 1/8.
+(b) Linearity: K_F is linear in F. Positivity: for F >= 0, K_F >= 0, and Tr(C^e S_{K_F} T_P^s) is the integral of K_F(Z^e u, v) a_s(v, u) >= 0 (A0(e); s = T - w >= 2). Normalisation: K_1 = a_w (8.3 of (TR)), so k_1 = Rn^w. Slab: if [a', b'] contains [a, b], integrating the extra slices and time-like links gives K'_F = a_{a-a'} * K_F * a_{b'-b} (the computation of 8.5 of (TR)), so k'_F = Rn^(a-a') k_F Rn^(b'-b); C^e commutes with Rn and the trace is cyclic, so the value does not change. Time translation: K_F depends on F only through its position relative to the slab.
+(c) P_0 = (1/8) sum_e C^e in numerator and denominator.
+(d) omega_per is positive and normalised on the algebra of slab functions of 𝔄_L of one slab (which is closed under products), so omega_per((X - t)^2) >= 0 for all real t gives the first inequality. By (c), omega_ev - q_0 omega_per = sum over e != 0 of q_e omega^e >= 0 on positive functions; apply it to X^2 and use (a). QED
+
+**Lemma L1-ev (Theorem L1 in the even sector).** Let F, H in 𝔄_L be as in Lemma T of (L): time ranges [0, b] and [a', b'], d = a' - b >= 1, d' = T - b' >= 1, T - w(F) >= 2, T - w(H) >= 2, and the product FH in 𝔄_L. Then
+
+|omega_ev(FH) - omega_ev(F) omega_ev(H)| <= ||F|| ||H|| (exp(-m_ev d) + 6 S_ev(d')), and |omega_ev(F) - <F>_{L,inf}| <= 2 ||F|| S_ev(T - w(F)).
+
+Proof. Choose the orthonormal eigenvectors phi_j of T_P as eigenvectors of the C_nu (each eigenspace of a positive eigenvalue is finite-dimensional and invariant; `gap-seed-check.md` L69). Let J be the set of j with P_0 phi_j = phi_j; 0 is in J. By Lemma CB, k_F and k_H commute with P_0. So Tr(P_0 k_F Rn^d k_H Rn^(d')) = sum over i, j in J of rho_i^d rho_j^(d') <phi_j, k_F phi_i><phi_i, k_H phi_j>, by the proof of Lemma T with P_0 Rn^t = sum over j in J of rho_j^t |phi_j><phi_j|. Split into (0,0); i != 0, j = 0; i = 0, j != 0; i, j != 0, as in Proposition C. With (K1), (K2) of (L): the first term is f h; |u| <= ||F|| ||H|| exp(-m_ev d); |u'| <= ||F|| ||H|| exp(-m_ev d'); |v| <= ||F|| ||H|| exp(-m_ev d) S_ev(d'). The one-point functions are (f + alpha)/(1 + S_ev(T)) with |alpha| <= ||F|| S_ev(T - w(F)), and the same for H. Also |omega_ev(FH)| <= ||F|| ||H|| by Lemma MX (b), (c). The algebra of Theorem L1 of (L) is then unchanged, with S_ev in place of S; S_ev(t) is non-increasing in t and exp(-m_ev t) <= S_ev(t). The second claim is the Remark after Theorem L2 of (L). QED
+
+**Theorem EV-L.** (c) Let A in 𝔄_L be real with time width w, delta >= w + 1 and N >= 1 integers with N delta <= T - 2. Then
+
+|omega_per(A) - omega_ev(A)| <= ||A|| ( 8 [ (1/N)(1 + 2/(exp(m_ev) - 1)) + 6 S_ev(T - N delta) ] )^(1/2).
+
+(d) Let L_i -> infinity, n_i <= L_i/2, with sigma_i := S_ev(n_i; L_i^3) -> 0 and m_ev(L_i^3) >= m_0 > 0 for all i, and L_i - n_i -> infinity. Then for every local function F of Z^4 that satisfies (i): omega_per on L_i^4, omega_ev on L_i^4 and the cylinder state on L_i^3 x Z differ by amounts that tend to 0. Every limit point nu of the periodic states on L_i^4 (they exist along subsequences, Theorem L3 (a) of (L)) satisfies, for F, H with (i), separated by d >= 1 in one of the four directions,
+
+|nu(FH) - nu(F) nu(H)| <= ||F|| ||H|| exp(-m_0 d).
+
+Proof of (c). Let c = omega_ev(A), tau the time translation, X := (1/N) sum over j = 0..N-1 of (tau_{j delta} A - c). X is a slab function of width (N-1) delta + w <= N delta - 1 <= T - 3, real, in 𝔄_L. By Lemma MX (b), omega_per(X) = omega_per(A) - c. By Lemma MX (d), |omega_per(X)|^2 <= 8 omega_ev(X^2), and
+
+omega_ev(X^2) = (1/N^2) sum over j, l of [omega_ev(tau_{j delta} A tau_{l delta} A) - c^2].
+
+For j = l the term is at most ||A||^2. For j < l apply Lemma L1-ev to F = tau_{j delta} A and H = tau_{l delta} A (after a translation by -j delta): d = (l - j) delta - w >= l - j, because delta >= w + 1; d' = T - (l - j) delta - w >= T - N delta + 1. The term is at most ||A||^2 (exp(-m_ev (l - j)) + 6 S_ev(T - N delta)). Sum: N diagonal terms, and for each r >= 1 at most 2N ordered pairs with |l - j| = r, and sum over r >= 1 of exp(-m_ev r) = 1/(exp(m_ev) - 1). QED
+
+Proof of (d). Let F have time width w and satisfy (i); for large i it is in 𝔄_{L_i} and T = L_i. Real and imaginary parts are treated one at a time. Take delta = w + 1 and N_i = floor((L_i - n_i - 2)/delta), which tends to infinity. Then S_ev(L_i - N_i delta) <= S_ev(n_i) = sigma_i, and (c) gives |omega_per(F) - omega_ev(F)| -> 0. By Lemma L1-ev, |omega_ev(F) - <F>_{L_i,inf}| <= 2 ||F|| S_ev(L_i - w) <= 2 ||F|| sigma_i for large i. So the three sequences have the same limit points. Time direction: on the cylinder, by C1 (Lemma CB and 8.5 of (TR) with the even eigenvectors), |<FH>_inf - <F>_inf <H>_inf| <= ||F|| ||H|| exp(-m_ev(L_i^3) d) <= ||F|| ||H|| exp(-m_0 d); F, H and FH all satisfy (i), so the three expectations converge along the subsequence that defines nu. Space directions: the periodic state on L_i^4 is invariant under the exchange g of the axis mu with the time axis (Theorem L3 (c) of (L)); g maps functions with (i) to functions with (i); so nu(FH) = nu((gF)(gH)), and the time case applies. QED
+
+**What 8.2 gives and does not give.** It gives: the lattice form of (GAP) on the algebra generated by 𝔄, for every limit of periodic symmetric tori, from (G_ev) alone. The passage to the transfer operator of nu and to the scaling form is Theorem L3 (e) and Propositions P, P' of (L), read with the functions of 𝔄 in place of all local functions; I did not rewrite those proofs (argued, given (L)). It does not give (G_ev): that is the step (8.4, 8.5). It covers no function that fails (i).
+
+### 8.3 Proposition CL: the crossing-symmetric sector sets. Finite algebra; on the path as the list of admissible seeds.
+
+**Coordinates.** A twist k in K = Z_2^6 is written in frame 1 as (e; m), e = (e_2, e_3, e_4) = (k_12, k_13, k_14), m = (m_2, m_3, m_4) = (k_34, k_24, k_23). A sector is (chi; m) with chi in Z_2^3, and chi(e) = (-1)^{chi.e}. For w: K -> R,
+
+what(chi; m) := sum over e of w(e; m) (-1)^{chi.e}, w(e; m) = (1/8) sum over chi of what(chi; m) (-1)^{chi.e}.
+
+A permutation of {2, 3, 4} permutes the indices of e, of m and of chi alike. The exchange tau of the axes 1 and 2 fixes k_12 and k_34 and exchanges k_13 with k_23 and k_14 with k_24: tau(e_2, e_3, e_4; m_2, m_3, m_4) = (e_2, m_4, m_3; m_2, e_4, e_3). w is **admissible** if what has values in {0} union [1, infinity) and what(0; 0) = 1.
+
+On Z_2^4 with x = (chi_3, chi_4, m_3, m_4) put B(x, y) = x_1 y_4 + x_2 y_3 + x_3 y_2 + x_4 y_1 (mod 2). B is bilinear, symmetric, and B(x, x) = 0.
+
+**Lemma CL1.** w o tau = w if and only if, for each (chi_2, m_2), the slice G(x) := what(chi_2, x_1, x_2; m_2, x_3, x_4) satisfies G(x) = (1/4) sum over y in Z_2^4 of (-1)^{B(x,y)} G(y) for all x.
+
+Proof. tau does not move e_2 and m_2. Put h(e_3, e_4, m_3, m_4) := sum over e_2 of w(e; m) (-1)^{chi_2 e_2}, for fixed (chi_2, m_2). The map w -> (h for all chi_2, m_2) is a bijection, so w o tau = w if and only if every h satisfies h(e_3, e_4, m_3, m_4) = h(m_4, m_3, e_4, e_3). Now G(chi_3, chi_4, m_3, m_4) = sum over e_3, e_4 of h(e_3, e_4, m_3, m_4) (-1)^{chi_3 e_3 + chi_4 e_4} and h(e_3, e_4, m_3, m_4) = (1/4) sum over psi_3, psi_4 of G(psi_3, psi_4, m_3, m_4) (-1)^{psi_3 e_3 + psi_4 e_4}. Let h'(e_3, e_4, m_3, m_4) := h(m_4, m_3, e_4, e_3) and G' its transform. Then G'(chi_3, chi_4, m_3, m_4) = sum over e_3, e_4 of (1/4) sum over psi of G(psi_3, psi_4, e_4, e_3) (-1)^{psi_3 m_4 + psi_4 m_3 + chi_3 e_3 + chi_4 e_4}. Rename mu_3 = e_4, mu_4 = e_3: G'(x) = (1/4) sum over y = (psi_3, psi_4, mu_3, mu_4) of (-1)^{B(x,y)} G(y). And h' = h if and only if G' = G. QED
+
+**Proposition CL.** Let w be admissible.
+(a) If w o tau = w, then the set L of x in Z_2^4 with what(0, x_1, x_2; 0, x_3, x_4) > 0 is a subgroup with exactly four elements, what = 1 on it, and B(x, y) = 0 for all x, y in L. In particular L is not {0}: **the even sector alone is not the sector set of any admissible w with w o tau = w.**
+(b) If w is invariant under every permutation of the four axes, then what is the indicator of one of the three sets
+ Sigma_per = {(chi; 0)}, Sigma_full = {(0; m)}, Sigma_kappa = {(chi; m): chi = m},
+and w is, in this order, the indicator of k = 0, the constant 1/8, and (1/8)(-1)^{Pf(k)} with Pf(k) = k_12 k_34 + k_13 k_24 + k_14 k_23. Each of the three is admissible and invariant.
+
+Proof. (a) Let G be the slice at (chi_2, m_2) = (0, 0). G >= 0 and G(0) = 1. Lemma CL1 at x = 0: sum_y G(y) = 4. At any x: G(x) <= (1/4) sum_y G(y) = 1. A value in {0} union [1, infinity) that is at most 1 is 0 or 1. So G is the indicator of a set L with four elements. For x in L: 1 = (1/4) sum over y in L of (-1)^{B(x,y)}, so every sign is +. For x, x' in L: G(x + x') = (1/4) sum over y in L of (-1)^{B(x,y) + B(x',y)} = 1, so x + x' is in L.
+(b) Step 1. For any (chi_2, m_2), the slice G is non-negative and G(0) = (1/4) sum_y G(y); so if G(0) = 0 then G = 0. Let A be the set of (c, n) in Z_2^2 with what(0, 0, c; 0, 0, n) > 0. By the invariance under the permutations of {2, 3, 4}, what(c, 0, 0; n, 0, 0) > 0 if and only if (c, n) is in A. So what(chi; m) > 0 implies (chi_2, m_2) in A, and by the same invariance (chi_nu, m_nu) in A for nu = 3, 4. Hence the support Sigma of what lies in A^3 := {(chi; m): (chi_nu, m_nu) in A for nu = 2, 3, 4}.
+Step 2. By (a), L has four elements and lies in {x: (x_1, x_3) in A and (x_2, x_4) in A}, which has |A|^2 elements. So |A| >= 2. L contains {(0, c, 0, n): (c, n) in A} and {(c, 0, n, 0): (c, n) in A}. If |A| = 4, each of these two sets has four elements, so both equal L; they are different sets. So |A| is 2 or 3. A is a subgroup, because {(0, c, 0, n): (c, n) in A} is the intersection of the subgroup L with a subgroup. So |A| = 2, A = {0, alpha}, and L = {x: (x_1, x_3) in A, (x_2, x_4) in A}.
+Step 3. The slice at (chi_2, m_2) = alpha has G(0) = what(alpha_1, 0, 0; alpha_2, 0, 0) = what(0, 0, alpha_1; 0, 0, alpha_2) = 1, since (0, alpha_1, 0, alpha_2) is in L. The argument of (a) applies to it: it is the indicator of a set of four elements, inside A x A by Step 1, so equal to A x A. So what is the indicator of A^3. For alpha = (1, 0), (0, 1), (1, 1) this is Sigma_per, Sigma_full, Sigma_kappa.
+Step 4. The inverse transform: for Sigma_per, w(e; m) = (1/8) sum_chi (-1)^{chi.e} for m = 0 and 0 otherwise, the indicator of k = 0. For Sigma_full, w = 1/8. For Sigma_kappa, w(e; m) = (1/8)(-1)^{m.e} = (1/8)(-1)^{k_34 k_12 + k_24 k_13 + k_23 k_14}. The first two are invariant. Pf(k) is the sum over the three ways to split {1,2,3,4} into two pairs of the product of the two entries; a permutation of the axes permutes these three splittings. QED
+
+Cross-check (guide; `scripts/classify.py`, 8.6): an enumeration over all unions of orbits finds exactly these three sets.
+
+### 8.4 Theorem S for the three sector sets, and the gap of the periodic limit. On the path of (GAP).
+
+**Setting.** Given (TM-tw). Let w be one of the three functions of Proposition CL (b), Sigma its sector set, and
+
+W_w(n) := sum over k of w(k) Z^k(n), for tori n with all sides at least 3.
+
+So W_per = Z; W_full = (1/8) sum over all 64 twists of Z^k; W_kappa = (1/8) sum over all 64 twists of (-1)^{Pf(k)} Z^k.
+
+**Lemma W.** (a) W_w is invariant under permutations of the sides. (b) For a box B, let P_{Sigma,m} be the sum of the projections P_chi with (chi; m) in Sigma, and T_B^w the direct sum over m of T_{B,m} P_{Sigma,m}, on the direct sum of eight copies of the space of the box. T_B^w is positive and trace class, and W_w(a, B) = Tr (T_B^w)^a = sum over (chi; m) in Sigma of Z_{chi,m}(a; B). (c) The largest eigenvalue of T_B^w is lambda_0(B), the top eigenvalue of the periodic box, and W_w(a, B) >= lambda_0(B)^a > 0. (d) inf over a, b of log W_w(a, b, c, d)/(ab) >= -12 beta c d.
+
+Proof. (a) Z^{sigma k}(sigma n) = Z^k(n) by (TM-tw), and w o sigma = w. (b) Z^{e+m}(a, B) = Tr(T_{B,m}^a C^e) and C^e = sum_chi (-1)^{chi.e} P_chi, so sum_e w(e; m) C^e = sum_chi what(chi; m) P_chi = P_{Sigma,m}. P_{Sigma,m} is an orthogonal projection that commutes with T_{B,m}, so T_{B,m} P_{Sigma,m} is positive, trace class, and its a-th power is T_{B,m}^a P_{Sigma,m}. (c) (0; 0) is in Sigma and Omega is in the range of P_0, so lambda_0(B) is an eigenvalue. Every eigenvalue of T_{B,m} is at most lambda_m(B) <= lambda_0(B) by (S3). (S3) is proved in 3.1 from (S2): Z^m(a, B)^(1/a) -> lambda_m(B) (Lemma A (a)) and Z^m <= Z^0. (d) Each plaquette weight is at least exp(-2 beta), a torus has 6 |n| plaquettes and the Haar measure has mass one, so Z(n) >= exp(-12 beta |n|) and lambda_0(b, c, d) = lim Z(a, b, c, d)^(1/a) >= exp(-12 beta b c d). Use (c). QED
+
+**Theorem S-w.** Given (TM-tw) and (S). Let w be one of the three, S_w(a; B) := W_w(a, B)/lambda_0(B)^a - 1 >= 0. Then Lemmas K, X, E, E', Theorem S and Corollary S3' of (S) hold with W_w in place of Z and S_w in place of S. In particular, if N >= 3 and s := S_w(N; (2N)^3) < 1/5041, q := 5041 s, then for every integer L >= 2N, with k >= 0 such that D := 2^(k+1) N <= L < 2D:
+
+S_w(D/2; L^3) <= q^(2^k)/71, and every eigenvalue of T^w_{L^3} other than the simple eigenvalue lambda_0 is at most lambda_0 exp(-m_0), m_0 = log(1/q)/N.
+
+Also 1 + S_w(n; (2n)^3) <= exp(Phi_w(n)) with Phi_w(n) := 16 log W_w(n^4) - log W_w((2n)^4) >= 0. So the seed holds if Phi_w(N) <= 1.9 x 10^(-4).
+
+Proof. For fixed c, d >= 3 put W(a, b) := W_w(a, b, c, d) and T_b := T^w_{(b,c,d)}. By Lemma W: W is positive, W(a, b) = W(b, a), W(a, b) = Tr T_b^a with T_b positive and trace class, and ell is finite. This is the setting of the lemmas (`gap-crux-restate.md` L174), with lambda(b) = lambda_0(b, c, d). The same holds for each pair of directions. The proofs of Lemmas K, X, E, E' use nothing else. The proofs of Theorem S and Corollary S3' use these lemmas, the inequality S(k + k') <= S(k) S(k') for sums of powers of numbers in [0, 1], and, to pass from a bound on S to the gap, that the top eigenvalue is simple. Here: if S_w(t; B) < 1 for some t, then lambda_0(B) has multiplicity one in T_B^w (a second copy would add 1 to S_w), and the second eigenvalue lambda' satisfies (lambda'/lambda_0)^t <= S_w(t; B). The bounds on S_w in the recursion do not use simplicity, and each of them is below 1, so this applies at every size reached. Theorem D (b) of (S) uses Lemma A (a), (b) for the traces Tr T^n and Tr T^(2n) and the symmetry; it holds for W_w word for word. QED
+
+**Corollary EV (three seeds, one conclusion).** Given (TM-tw), (S), (L). If for one of the three w there is N >= 3 with S_w(N; (2N)^3) < 1/5041, then (G_ev) holds along every sequence of integer sides L_i -> infinity, with n_i = D_i/2 <= L_i/2 and m_0 = log(1/(5041 s))/N. By Theorem EV-L (d) every limit point of the periodic symmetric tori clusters exponentially at rate m_0 on the functions with (i), in all four directions.
+
+Proof. S_ev <= S_w because (0; 0) is in Sigma and all terms are non-negative; m_ev >= the gap of T^w. D_i/2 tends to infinity with L_i, S_ev(D_i/2; L_i^3) <= q^(2^k)/71 -> 0, and L_i - D_i/2 >= L_i/2. QED
+
+**Reading (not a proof).** The three seeds say: besides the even sector, seven flux sectors are heavy at the size N. Periodic: the seven electric sectors of the periodic box. Full: the even sectors of the seven magnetically twisted boxes. Kappa: in each twisted box m the sector with electric flux m. Which of these can hold is the phase of the model. For Z_2 at large beta the periodic seed fails (proved at fixed size in `gap-seed-check.md` L191-195, given the Z_2 form of the transfer operator); I expect the full and kappa seeds to hold there (recalled gap; not proved). For SU(2), under belief 16, the full seed fails at large size and the kappa seed holds where the periodic one does.
+
+**Order of the seeds.** S_kappa <= S_full for every box and time: Z_{m,m} <= Z_{0,m} by (S1). argued, given (TM-tw). The statement **(KP): W_kappa <= W_per**, that is, sum over chi != 0 of (Z_{chi,0} - Z_{chi,chi}) >= 0, is open. If true, the kappa seed is implied by each of the other two and is the weakest of the three. In the two-dimensional Ising model no violation was found at 900 points (8.6; guide).
+
+### 8.5 The even sector alone: what crossing gives, and what it does not. On the path of the question (Q2).
+
+Given (TM-tw). Box sides (b, c, d), time a, all at least 3. Write Z_{chi,m}(t; B) for the sector sums of the box B at time t.
+
+**Proposition X16 (crossing of the even sector).** Let X be the set of the sixteen sectors (chi; m) of the box (a, c, d) with chi = (0, chi_3, chi_4) and m = (0, m_3, m_4). (The box (a, c, d) has the old time direction as its first direction; chi_3, chi_4 are the parities under the flips in the directions of the sides c, d; m_3, m_4 are the twists of the planes spanned by the first side and d, respectively the first side and c.) Then
+
+(*) Z_{0,0}(a; (b, c, d)) = (1/4) sum over x in X of Z_x(b; (a, c, d)).
+
+Proof. Z_{0,0}(a; (b,c,d)) = (1/8) sum over e in E_1 of Z^e(a, b, c, d) by (F1). The exchange tau of the axes 1, 2 gives Z^e(a, b, c, d) = Z^{tau e}(b, a, c, d), and tau maps E_1 onto the twists in the planes (1,2), (2,3), (2,4). For the torus (b, a, c, d) in frame 1 these are: the electric twist (1,2), and the magnetic twists m_4 = k_23, m_3 = k_24, with m_2 = k_34 = 0. So the sum is sum over m' with m'_2 = 0 of [Tr(T_{(a,c,d),m'}^b) + Tr(T_{(a,c,d),m'}^b C_2)] = 2 sum over m' of Tr(T_{(a,c,d),m'}^b (1 + C_2)/2), and (1 + C_2)/2 is the sum of the P_chi with chi_2 = 0. QED
+
+**Corollary SR (sum rule).** On a torus with a = b: the fifteen sectors of X other than (0; 0) satisfy sum of Z_x(a; (a, c, d)) = 3 Z_{0,0}(a; (a, c, d)). So on such a torus the flux sectors of X are never all light or all heavy relative to the even sector: their total weight is exactly three times its weight.
+
+**Proposition EVL (the loss of an even step).** Put y_x := Z_x(b; (a, c, d)) for x in X, Theta := 4 (sum_x y_x^2)/(sum_x y_x)^2, and kappa(b) := log lambda_0(b, c, d) - ell b as in Lemma K for W = Z. Then 1/4 <= Theta <= 4,
+
+1 + S_ev(a; (2b, c, d)) <= Theta (1 + S_ev(a; (b, c, d)))^2 exp(a (2 kappa(b) - kappa(2b))), and (b - a) kappa(b) <= log(1 + S_ev(a; (b, c, d))) + log 4 for a < b.
+
+Proof. By (*) at the sides b and 2b, and Lemma A (a) in each sector (Z_x(2b; .) = Tr((T P)^(2b)) <= Z_x(b; .)^2): Z_{0,0}(a; (2b, c, d)) <= (1/4) sum_x y_x^2 = Theta ((1/4) sum_x y_x)^2 = Theta Z_{0,0}(a; (b, c, d))^2. Divide by lambda_0(2b, c, d)^a; the terms ell a b cancel. Theta <= 4 because sum y^2 <= (sum y)^2; Theta >= 1/4 by the Schwarz inequality for sixteen terms. For the last claim: by (*), Z_{0,0}(a; (b,c,d)) >= (1/4) Z_{0,0}(b; (a,c,d)) >= (1/4) lambda_0(a, c, d)^b. Take logarithms: a kappa(b) + log(1 + S_ev(a; (b,c,d))) >= b kappa(a) - log 4 >= b kappa(b) - log 4, by Lemma K (d). QED
+
+So crossing gives, for the even sector alone, 1 + S_ev(a; 2b) <= 64 (1 + S_ev(a; b))^4 at a = b/2 at best. This is true and useless: the constants 4 and 16 are the price of the twelve crossed sectors that the even data do not see. In the periodic proof the same two steps have Theta = 1 and no log 4.
+
+**Proposition AS (the even trace is not symmetric; an explicit model of the class).** For the Z_2 Wilson theory (link variables +1, -1, normalised counting measure, weight exp(-beta (1 - s^k_p sigma_p))), let a < b < c and E := 4 a b c^2 (the number of links of the torus (a, b, c, c)). If 2 beta (b - a) c > E log 2 + log 7, then
+
+(1/8) sum over e in E_1 of Z^e(b, a, c, c) > (1/8) sum over e in E_1 of Z^e(a, b, c, c).
+
+So the function (a, b) -> Z_{0,0}(a; (b, c, c)), defined by the twist average, is not symmetric. This settles, for the class, the point that row 712 left unproved (Remark 2.A (b)). It is not shown for SU(2).
+
+Proof. A plane twist in the plane (mu, nu) puts one twisted plaquette in each two-dimensional (mu,nu)-slice of the torus; the number of slices is N_{mu nu}, the product of the other two sides. In a slice the product of sigma_p over all plaquettes is 1 (each link is in two of them), so the product of s_p sigma_p over the slice is -1 if the slice holds one twisted plaquette: at least one plaquette of the slice has weight exp(-2 beta). Stacks of other planes hold no plaquette of this plane. So Z^k <= exp(-2 beta N_{mu nu}) for every k with k_{mu nu} = 1. From below: the configuration sigma = 1 has weight exp(-2 beta N_{mu nu}) for the twist in the plane (mu,nu) alone, so Z^{(mu nu)} >= 2^(-E) exp(-2 beta N_{mu nu}). On (a, b, c, c): N_12 = c^2, N_13 = N_14 = b c. Every e != 0 in E_1 has a plane with N >= b c, so sum over e != 0 of Z^e(a, b, c, c) <= 7 exp(-2 beta b c). On (b, a, c, c): N_13 = a c, so sum over e != 0 of Z^e(b, a, c, c) >= 2^(-E) exp(-2 beta a c). Z^0 is the same on both tori. The hypothesis gives 2^(-E) exp(-2 beta a c) > 7 exp(-2 beta b c). QED
+
+**The statement that decides (Q2) for the even sector alone.**
+
+**(EV-STEP).** For Wilson SU(2) at the couplings of the scaling form there are t_0 > 0 and N_0 such that S_ev(N; (2N)^3) <= t_0 for one N >= N_0 implies: S_ev(n_i; L_i^3) -> 0 and m_ev(L_i^3) >= m_0 > 0 along a sequence L_i -> infinity with n_i <= L_i/2.
+
+With (EV-STEP), Theorem EV-L gives the gap of the periodic limit from a seed on the even sector of one periodic cube, and confinement leaves the path. I could not prove or refute (EV-STEP). What is established:
+
+- It does not follow from crossing: Proposition CL (a), Proposition EVL. argued.
+- Its two-dimensional analogue cannot have the recursion of Corollary S2: in the Ising model the even form of Lemma E fails at every coupling tried, and the even form of the doubling inequality fails at the critical coupling for n >= 12 (8.6). guide.
+- No model of the class is known to me in which the even seed holds at one size and the even gap closes later. In the two-dimensional test the critical model stays just above the threshold: S_ev(n; 2n) decreases to about 0.0511 > 1/20. guide.
+- It follows from: "an even seed at N forces one of the three seeds of 8.4 at a comparable size". This is a statement about the fifteen crossed weights y_x: by (SR) their sum is fixed, and a seed needs them to be concentrated on three sectors that form a group with (0; 0). In a massive phase 't Hooft's argument says that they are (recalled; not proved).
+
+### 8.6 Runs (guides; a run can refute or guide, it proves nothing)
+
+Scripts and outputs: `/tmp/gfx-work/scripts/` on the Mac mini (`classify.py`, `ising2d.py`, `ising_ff.py`, `ising_val.py` and their `.out` files); not in the repository. The numeric lock was held (holder gap-flux-exercise-731) and released; memory free was 53 percent before the first run. Readings R1 to R7 were written in the script headers before the runs.
+
+**Run 1, `classify.py` (finite enumeration).** Class searched: all 2^19 unions of orbits, under the permutations of the axes 2, 3, 4, of the 64 sectors, that contain (0; 0); test: w invariant under the three transpositions (12), (23), (34). Result: exactly three sets, each with 8 sectors: periodic, full, kappa; for kappa, 8 w(k) = (-1)^{Pf(k)} for all 64 k. This agrees with Proposition CL (b) for indicator weights. It does not cover weights above 1 (the proof does).
+
+**Run 2, `ising2d.py`.** Two-dimensional Ising model, couplings K = 0.2, 0.3, 0.38, 0.42, K_c, 0.46, 0.5, 0.6, 0.8; chains of length 3 to 12 with periodic and antiperiodic closing, symmetric transfer matrix, sectors by parity. Results against the readings:
+
+- R1 pass. The three sets {(0,0),(1,0)}, {(0,0),(0,1)}, {(0,0),(1,1)} give W(a, b) = W(b, a) for 3 <= a, b <= 12: the largest difference of logarithms is 4.3 x 10^(-13). The even set alone is not symmetric: differences of logarithms up to 0.62.
+- R2 pass. No violation of Lemma E or of the doubling inequality at n = 3 for the three sets.
+- R3 pass. The two-dimensional sum rule Z_10 + Z_01 + Z_11 = Z_00 at a = b holds to 5 x 10^(-14).
+- R4. **The even form of Lemma E is violated in 36 of the cases tried**, at every coupling. Example: K = 0.2, a = 3, b = 6: 1 + S_ev(3; 12) = 1.005647 against (1 + S_ev(3; 6))^4 = 1.004751. The even form of the doubling inequality is not violated at n = 3.
+- R5 pass. S_kappa <= S_full at all points. Recorded: S_kappa <= S_per at all 900 points (a, b, K).
+- The seeds at K = 0.2 (disordered): S_per(6; 12) = 1.8 x 10^(-3), S_full = 1.0, S_kappa = 1.8 x 10^(-3). At K = 0.8 (ordered): S_per = 1.0, S_full = 2.2 x 10^(-3), S_kappa = 2.2 x 10^(-3). So the kappa seed can hold in both phases, and each of the other two fails in one. At K_c all three are above 0.5.
+
+**Run 3, `ising_ff.py`, with the follow-up `ising_val.py`.** The even sector of the periodic chain by the free-fermion formula (recalled: Kaufman; Schultz, Mattis, Lieb). R7's validation, as pre-registered, compared with values printed to seven digits and asked for 10^(-8); the difference was 3 x 10^(-7), so by its own reading that validation is void. Follow-up test R7b (dated 2026-11-11, reading fixed before its run): agreement with the brute-force sums in double precision to 10^(-9) at nine points; result 1.2 x 10^(-13), pass. Results at K_c:
+
+| n | S_ev(n; 2n) | S_ev(2n; 4n) | ((1 + S_ev(n; 2n))^4 - 1)^2 | even doubling inequality |
+|---|---|---|---|---|
+| 6 | 0.054657 | 0.051923 | 0.056270 | holds |
+| 8 | 0.052993 | 0.051567 | 0.052635 | holds |
+| 12 | 0.051923 | 0.051317 | 0.050371 | **violated** |
+| 24 | 0.051317 | 0.051170 | 0.049114 | violated |
+| 64 | 0.051148 | 0.051128 | 0.048767 | violated |
+
+S_ev(n; 2n) at K_c stays above 1/20 for every n tried (it decreases towards about 0.0511; the leading terms of the scaling value are q + 4 q^2 = 0.0507 with q = exp(-pi), recalled conformal data). At K = 0.43 and 0.45 the even sum falls below 1/20 at n = 8 and n = 12 and the inequality holds at all n tried.
+
+**What the runs moved.** They did not move the wall. They support 8.3 and 8.4 in a toy, and they show that an even step, if it exists, is not the inequality of Theorem S.
+
+**Fresh adversarial check of the negative readings.** Not available as an independent check (no subagents). A separate pass by the same session re-read the readings: the violations of the even Lemma E are violations of one inequality in one model, not a no-go for (EV-STEP); the text above says only that.
 
 <!-- END -->
 

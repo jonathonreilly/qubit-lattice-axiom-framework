@@ -82,3 +82,39 @@ So there is beta_0(n) > 0 such that W_kappa < W_per for 0 < beta < beta_0(n).
 Proof. A(S) is an entire function of beta, and A(S) = beta^{|S|} I(S) + O(beta^{|S|+2}) with I(S) the integral of prod_{p in S} x_p, because sinh(beta x) = beta x + O(beta^3) and cosh(beta x) = 1 + O(beta^2) uniformly for |x| <= 1. The number of sets S is finite and e^{-beta|P|} = 1 + O(beta). Pf(h) = 1 means that h contains an odd number of the three complementary pairs. So h contains a pair; if h is not that pair, a(h) >= a_* + 9. By Lemma M the terms of order beta^{a_*} come only from the pair classes with a(h) = a_* and from their S with |S| = a(h). By Lemma F these are the n_1 n_2 n_3 n_4 unions of two planes. The two planes have no common link (one has 1- and 2-links, the other 3- and 4-links), so I(S) = T(n_1,n_2) T(n_3,n_4) = 4^{-a_*} by Lemma T. QED
 
 **What Theorem SB does not show.** beta_0 depends on the torus. A bound uniform in the torus needs a convergent polymer expansion of the ratio of the pair-class weight to its leading term; not done here. This confirms, with proof, the reading at the end of 8.7 of `gap-flux-exercise.md` ("two flat sheets that meet in one site").
+
+## 4. What the transfer-operator structure alone gives, and what (KP) says
+
+**Proposition ND ((KP) does not follow from sector positivity at one size; PROVED, finite arithmetic).** Let 0 < eps <= t and 5t + 4 eps <= 1 (for example t = eps = 1/10). Put Y_0 = 1, Y_h = t for h != 0 with Pf(h) = 0, Y_h = -eps for Pf(h) = 1, and Z^k := sum_h (-1)^{<k,h>} Y_h. Then, in each of the four frames, with the sector sums defined by (F1):
+
+- Z_{0,0} = 1 + 7t, Z_{0,m} = 1 - t for m != 0, Z_{chi,0} = 4(t - eps), Z_{chi,chi*} = 4(t + eps), and Z_{chi,m} = 0 for the other pairs (chi != 0). Here chi* is the magnetic twist paired with chi by Pf: Pf(e + m) = <e*, m>.
+- So every Z_{chi,m} >= 0, every Z_{chi,m} <= Z_{0,m} (S1), and 0 < Z^k <= Z^0: Z^0 = 1 + 35t - 28 eps, Z^k = 1 + 3t + 4 eps for k != 0 with Pf(k) = 0, Z^k = 1 - 5t - 4 eps for Pf(k) = 1.
+- W_per - W_kappa = -56 eps < 0.
+
+Proof. In a frame, h = h_E + h_M and Z_{chi,m} = sum over h with h_E = chi of (-1)^{<m, h_M>} Y_h (insert Z^k = sum_h (-1)^{<k,h>} Y_h in (F1)). Pf(chi + h_M) = <chi*, h_M>. For chi = 0 all h have Pf = 0: Z_{0,m} = 1 + t (8 delta_{m,0} - 1). For chi != 0: Y = (t - eps)/2 + ((t + eps)/2) (-1)^{<chi*, h_M>}, and the sum over the eight h_M of (-1)^{<m,h_M>} times this is 4(t - eps) delta_{m,0} + 4(t + eps) delta_{m,chi*}. For Z^k use sum over Pf(h) = 0 of (-1)^{<k,h>} = 32 delta_{k,0} + 4 (-1)^{Pf(k)} and sum over Pf(h) = 1 of (-1)^{<k,h>} = 32 delta_{k,0} - 4 (-1)^{Pf(k)} (the Gauss sum in the proof of Lemma GS). The data depend on h only through Pf(h) and h = 0, so the four frames are alike. QED
+
+Reading. The numbers of Proposition ND are not shown to come from a model; the proposition says only that no argument which uses, at one size, just Z_{chi,m} >= 0 and (S1) in the four frames can prove (KP). In the example, with t = eps = 1/10: all 35 non-zero twists with Pf = 0 cost nothing (Z^k = Z^0 = 1.7), and the 28 twists with Pf = 1 are suppressed (Z^k = 0.1). In sector language, the sector of the box with magnetic twist m and electric flux m* is heavier than the electric sector m* of the periodic box. That is the picture of 't Hooft's oblique (dyonic) phase. **(KP) is the statement that the Wilson SU(2) torus is never in that situation**: the twists with half-integer topological charge are not much more expensive than the others (Section 1).
+
+**Lemma PD ((KP) is true when the planes are independent; PROVED).** If Z^k/Z^0 = prod over the planes of p_{mu nu}^{k_{mu nu}} with 0 <= p <= 1, then 64 Y_h / Z^0 = prod (1 + (-1)^{h_{mu nu}} p_{mu nu}) >= 0 for every h. If instead Z^k/Z^0 = q^{Pf(k)} p^{|k|} (one p for all planes, an extra factor q for half-integer charge), then (KP) is
+
+q >= q_c(p) := (6p + 12p^2 + 8p^3 + 3p^4 + 6p^5 - 7) / (3p^2 + 12p^3 + 12p^4 + p^6).
+
+q_c(p) <= 0 for p <= 0.48; q_c(0.55) is about 0.45, and q_c(p) = 1 - (3/7)(1-p)^2 + O((1-p)^3) as p -> 1.
+
+Proof. The first claim is the Fourier transform of a product. For the second, count the twists by |k|: with Pf = 0 there are 6, 12, 8, 3, 6 twists with |k| = 1..5; with Pf = 1 there are 3, 12, 12, 1 twists with |k| = 2, 3, 4, 6. (Pf(k) = 1 if and only if k contains an odd number of the three complementary pairs.) Insert in (KP-b). At q = 1 the left side minus the right side of (KP-b) is -(1/4) sum_{Pf(h)=1} (1-p)^{|h|} (1+p)^{6-|h|}, whose leading term at p -> 1 is -(1/4) 3 (1-p)^2 16; divide by the derivative in q, which is 28 at p = 1. QED
+
+So a violation needs both: single twists that are cheap (ratio above about one half), and a real extra price for half-integer charge, larger than about (3/7) times the square of the single-twist deficit. This is only a model of the dependence on k (a guide, not a claim on SU(2)).
+
+**The two ends on a fixed torus.**
+
+- Small beta: (KP) holds strictly (Theorem SB). All twists become free; the extra price of the Pf = 1 twists is of the order of the product of two plane deficits, with the right sign.
+- Large beta, fixed torus: (KP) holds for beta >= beta_1(n). **Argued, constants not written (gap).** For k != 0 with Pf(k) = 0 the minima of the twisted action are finitely many gauge orbits (the holonomies anticommute in pairs; their image in SO(3) is a Klein four-group), and they are non-degenerate, because the adjoint local system has no invariant vector and so no first cohomology on the torus. The periodic minima form a family of dimension 4 (commuting holonomies), non-degenerate in the transverse directions at generic points. Laplace's method gives Z^k/Z^0 = O(beta^{-2}). For Pf(k) = 1 there is no flat connection and Z^k/Z^0 is exponentially small. So r_0 -> 0 and (KP-c) holds. A hand proof needs a quadratic lower bound of the twisted action by the distance to its minimum set, with explicit constants; I did not write it.
+- Between the two ends nothing is proved. On a symmetric torus the single-twist ratio goes from near 1 (small beta) to near 0 (large beta), and by Lemma PD the sign of (KP) is decided there by the price of half-integer charge.
+
+**Finite-group checks of the mechanism (PROVED, finite arithmetic; these are other groups, not SU(2)).** Let G be a finite group with a central element z of order 2, and take the limit beta = infinity of a Wilson action that is maximal only at the identity. Then Z^k is proportional to N_k := the number of (g_1..g_4) in G^4 with [g_mu, g_nu] = z^{k_{mu nu}} (flat connections on a torus are fixed by their holonomies, with a weight that does not depend on the holonomy class once summed over the class; the count does not depend on the sides).
+
+- G = Q_8. With v_mu the image of g_mu in G/Z = F_2^2 and omega the symplectic form, k_{mu nu} = omega(v_mu, v_nu). So k = a ∧ b for (a, b) in F_2^4 x F_2^4, Pf(k) = 0, and N_0 : N_k = 46 : 6 for the 35 non-zero k with Pf = 0 (46 pairs (a, b) are linearly dependent; each plane has 6 ordered bases; 46 + 35 x 6 = 256). (KP-b): 35 x 6 = 210 <= 7 x 46 = 322. (KP) holds.
+- Every extraspecial 2-group (G/Z = F_2^{2n} with a symplectic form): 64 Y_h is the sum over v in (F_2^{2n})^4 of (-1)^{sum h_{mu nu} omega(v_mu, v_nu)}, which is |G/Z|^2 times the order of a kernel, positive. (KP) holds.
+- For SU(2) itself at beta = infinity the periodic class has all the weight (previous item).
+
+I did not find a group for which the flat count violates (KP), and I did not prove that none exists.

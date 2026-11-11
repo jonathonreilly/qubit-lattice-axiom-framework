@@ -165,8 +165,8 @@ Standing is computed from records. Nobody writes it by hand.
 - Summaries are computed, not written (`lab_ops.py status`).
 - Science and rules reach `main` only through `land`, from a PR. Audit
   records and generated pipeline refreshes are written to `main` by their own
-  tools and by nothing else. Whether a PR landed is read from its landing
-  record, never guessed from its state (`SETTINGS.md`, PR state).
+  tools and by nothing else. Whether a PR landed is read from its state or
+  its landing record as `SETTINGS.md`, PR state, says; it is never guessed.
 - Stage intended paths only. Regenerate derived files with their owning tool;
   never copy generated files from a moving `main` into an older branch. On
   failure, preserve dirty or unpushed work and report where it is.

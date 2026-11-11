@@ -216,7 +216,7 @@ class StandingTest(unittest.TestCase):
         self.assertIn("rejected check record epsilon-2.md: a record cannot answer itself",
                       text)
         self.assertIn("argued 1 checked-given 0 checked 0", text)
-        self.assertIn("a rejected record names it, so not checked: epsilon", text)
+        self.assertIn("not checked until a record answers epsilon-2.md: epsilon", text)
 
     def test_an_answered_record_stops_suppressing(self):
         folder = self.folder
@@ -296,7 +296,7 @@ class StandingTest(unittest.TestCase):
                 self.assertIn(f"rejected check record gamma-1.md: {reason}", text)
                 self.assertIn("checked-given 0 checked 0", text)
 
-    def test_a_rejected_wrong_record_is_cleared_by_an_answer_or_a_new_text(self):
+    def test_a_rejected_wrong_record_is_cleared_only_by_an_answer(self):
         folder = self.folder
         self.part("- argued: epsilon -> x")
         write_check(folder, "epsilon-1.md", "epsilon", "right", ("notes/epsilon.md",))
@@ -304,18 +304,151 @@ class StandingTest(unittest.TestCase):
                     failure="counterexample notes/epsilon.md:1", checker="p/m/e s3",
                     answers="epsilon-2.md")
         self.assertIn("argued 1 checked-given 0 checked 0", self.status())
-        # A counting record that answers the rejected one clears it.
-        write_check(folder, "epsilon-3.md", "epsilon", "right", ("notes/epsilon.md",),
-                    checker="p/m/e s4", answers="epsilon-2.md")
-        self.assertIn("argued 0 checked-given 0 checked 1", self.status())
-        # So does a new text: the rejected record is then about an earlier one.
-        (folder / "checks" / "epsilon-3.md").unlink()
+        # A new text does not clear it: a broken record's hashes show nothing.
         (folder / "notes" / "epsilon.md").write_text("epsilon, revised\n", encoding="utf-8")
+        write_check(folder, "epsilon-3.md", "epsilon", "right", ("notes/epsilon.md",),
+                    checker="p/m/e s4")
+        text = self.status()
+        self.assertIn("argued 1 checked-given 0 checked 0", text)
+        self.assertIn("not checked until a record answers epsilon-2.md: epsilon", text)
+        # A counting record that answers it does.
+        write_check(folder, "epsilon-4.md", "epsilon", "right", ("notes/epsilon.md",),
+                    checker="p/m/e s5", answers="epsilon-2.md")
+        self.assertIn("argued 0 checked-given 0 checked 1", self.status())
+
+    def test_a_wrong_record_about_an_earlier_text_still_needs_an_answer(self):
+        folder = self.folder
+        self.part("- argued: gamma -> x")
+        write_check(folder, "gamma-1.md", "gamma", "wrong", ("notes/gamma.md",),
+                    failure="step notes/gamma.md:1")
+        self.assertIn("open 1 argued 0 checked-given 0 checked 0", self.status())
+        (folder / "notes" / "gamma.md").write_text("gamma, repaired\n", encoding="utf-8")
+        self.assertIn("open 0 argued 1 checked-given 0 checked 0", self.status())
+        write_check(folder, "gamma-2.md", "gamma", "right", ("notes/gamma.md",),
+                    checker="p/m/e s3")
+        text = self.status()
+        self.assertIn("open 0 argued 1 checked-given 0 checked 0", text)
+        self.assertIn("not checked until a record answers gamma-1.md: gamma", text)
+        write_check(folder, "gamma-3.md", "gamma", "right", ("notes/gamma.md",),
+                    checker="p/m/e s4", answers="gamma-1.md")
+        self.assertIn("open 0 argued 0 checked-given 0 checked 1", self.status())
+
+    def test_one_record_can_answer_several_and_a_chain_needs_them_all(self):
+        folder = self.folder
+        self.part("- argued: gamma -> x")
+        write_check(folder, "gamma-1.md", "gamma", "wrong", ("notes/gamma.md",),
+                    failure="step notes/gamma.md:1")
+        (folder / "notes" / "gamma.md").write_text("gamma, second try\n", encoding="utf-8")
+        write_check(folder, "gamma-2.md", "gamma", "wrong", ("notes/gamma.md",),
+                    failure="step notes/gamma.md:1", checker="p/m/e s3",
+                    answers="gamma-1.md")
+        (folder / "notes" / "gamma.md").write_text("gamma, third try\n", encoding="utf-8")
+        # Answering only the later failure leaves the earlier one outstanding.
+        answer = write_check(folder, "gamma-3.md", "gamma", "right", ("notes/gamma.md",),
+                             checker="p/m/e s4", answers="gamma-2.md")
+        self.assertIn("not checked until a record answers gamma-1.md: gamma", self.status())
+        answer.unlink()
+        write_check(folder, "gamma-3.md", "gamma", "right", ("notes/gamma.md",),
+                    checker="p/m/e s4", answers="gamma-1.md, gamma-2.md")
+        self.assertIn("open 0 argued 0 checked-given 0 checked 1", self.status())
+
+    def test_a_long_answer_chain_alternates(self):
+        # wrong <- right <- wrong <- right: the last is live, so the third is set
+        # aside, the second stands again and the first is set aside.
+        folder = self.folder
+        self.part("- argued: delta -> x")
+        write_check(folder, "delta-1.md", "delta", "wrong", ("notes/delta.md",),
+                    failure="step notes/delta.md:1")
+        write_check(folder, "delta-2.md", "delta", "right", ("notes/delta.md",),
+                    checker="p/m/e s3", answers="delta-1.md")
+        write_check(folder, "delta-3.md", "delta", "wrong", ("notes/delta.md",),
+                    failure="step notes/delta.md:1", checker="p/m/e s4",
+                    answers="delta-2.md")
+        self.assertIn("open 1 argued 0 checked-given 0 checked 0", self.status())
+        write_check(folder, "delta-4.md", "delta", "right", ("notes/delta.md",),
+                    checker="p/m/e s5", answers="delta-3.md")
+        self.assertIn("open 0 argued 0 checked-given 0 checked 1", self.status())
+
+    def test_an_answer_that_was_itself_set_aside_lifts_nothing(self):
+        folder = self.folder
+        self.part("- argued: epsilon -> x")
+        write_check(folder, "epsilon-1.md", "epsilon", "wrong", ("notes/epsilon.md",),
+                    failure="counterexample notes/epsilon.md:1", answers="epsilon-1.md")
+        write_check(folder, "epsilon-2.md", "epsilon", "right", ("notes/epsilon.md",),
+                    checker="p/m/e s3", answers="epsilon-1.md")
+        self.assertIn("argued 0 checked-given 0 checked 1", self.status())
+        write_check(folder, "epsilon-3.md", "epsilon", "undecided", ("notes/epsilon.md",),
+                    checker="p/m/e s4", answers="epsilon-2.md")
         write_check(folder, "epsilon-4.md", "epsilon", "right", ("notes/epsilon.md",),
                     checker="p/m/e s5")
         text = self.status()
-        self.assertIn("argued 0 checked-given 0 checked 1", text)
-        self.assertNotIn("so not checked: epsilon", text)
+        self.assertIn("argued 1 checked-given 0 checked 0", text)
+        self.assertIn("not checked until a record answers epsilon-1.md: epsilon", text)
+
+    def test_a_truncated_record_is_held_against_the_statement_it_names(self):
+        folder = self.folder
+        self.part("- argued: gamma -> x")
+        write_check(folder, "gamma-1.md", "gamma", "right", ("notes/gamma.md",))
+        # The file name does not start with the statement's name.
+        record = write_check(folder, "second-look.md", "gamma", "wrong",
+                             ("notes/gamma.md",), checker="p/m/e s3",
+                             failure="counterexample notes/gamma.md:1")
+        record.write_text(record.read_text().replace("\n---\n## Finding", "\n## Finding"),
+                          encoding="utf-8")
+        text = self.status()
+        self.assertIn("rejected check record second-look.md: front matter is not closed",
+                      text)
+        self.assertIn("not checked until a record answers second-look.md: gamma", text)
+
+    def test_unreadable_records_block_what_they_name(self):
+        import hashlib
+        folder = self.folder
+        self.part("- argued: gamma -> x", "- argued: zeta -> x")
+        write_check(folder, "gamma-1.md", "gamma", "right", ("notes/gamma.md",))
+        write_check(folder, "zeta-1.md", "zeta", "right", ("notes/zeta.md",))
+        self.assertIn("checked-given 0 checked 2", self.status())
+
+        def wrong(name: str) -> Path:
+            return write_check(folder, name, "gamma", "wrong", ("notes/gamma.md",),
+                               failure="counterexample notes/gamma.md:1",
+                               checker="p/m/e s3")
+
+        def redigest(body: str) -> str:
+            raw = [line for line in body.splitlines() if line.startswith("  - ")]
+            digest = hashlib.sha256("\n".join(raw).encode()).hexdigest()
+            return "\n".join(f"content: {digest}" if line.startswith("content:") else line
+                             for line in body.splitlines()) + "\n"
+
+        real = lab_ops.span_hash(folder, "notes/gamma.md")
+        cases = (
+            # the closing line of the front matter is missing
+            (lambda body: body.replace("\n---\n## Finding", "\n## Finding"),
+             "front matter is not closed", 1),
+            # not front matter at all: held against the name its file starts with
+            (lambda body: "garbage\n", "no front matter", 1),
+            # a hash that is not a hash, with the digest recomputed to match
+            (lambda body: redigest(body.replace(real, "not-a-sha")),
+             "a text line is not `<sha256> ...`", 1),
+            # the text section twice
+            (lambda body: body.replace("reads:\n", "text:\nreads:\n"),
+             "text appears twice", 1),
+            # two statements named: both are held
+            (lambda body: body.replace("statement: gamma", "statement: gamma\nstatement: zeta"),
+             "statement appears twice", 0),
+        )
+        for change, reason, left in cases:
+            with self.subTest(reason=reason):
+                record = wrong("gamma-2.md")
+                record.write_text(change(record.read_text()), encoding="utf-8")
+                text = self.status()
+                self.assertIn(f"rejected check record gamma-2.md: {reason}", text)
+                self.assertIn(f"checked-given 0 checked {left}", text)
+                self.assertIn("not checked until a record answers gamma-2.md: gamma", text)
+                answer = write_check(folder, "gamma-3.md", "gamma", "right",
+                                     ("notes/gamma.md",), checker="p/m/e s4",
+                                     answers="gamma-2.md")
+                self.assertIn(f"checked-given 0 checked {left + 1}", self.status())
+                answer.unlink()
 
     def test_a_record_outside_an_answer_cycle_can_still_answer_into_it(self):
         folder = self.folder
@@ -343,7 +476,7 @@ class StandingTest(unittest.TestCase):
         write_check(folder, "zeta-1.md", "zeta", "wrong", ("notes/zeta.md",),
                     failure="counterexample notes/zeta.md:1", answers="zeta-1.md")
         text = self.status()
-        self.assertIn("typed discharged, but a rejected record names it: zeta", text)
+        self.assertIn("typed discharged, but no record answers zeta-1.md: zeta", text)
         self.assertIn("open obligations: 2", text)
 
     def test_a_corrupted_hash_does_not_pass_for_an_earlier_text(self):

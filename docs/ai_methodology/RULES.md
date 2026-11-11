@@ -28,8 +28,8 @@ Standing is computed from records. Nobody writes it by hand.
 
 - Standing binds to content. Editing a statement, or anything it reads,
   returns it to `argued` until it is checked again.
-- A check that finds a failing step, but no counterexample, returns the
-  statement to `open` and keeps the failure on record.
+- A failing step without a counterexample returns the statement to `open`.
+  The failure stands against `checked` until a later check answers it.
 - A statement is no stronger than the weakest thing it reads. A `checked`
   theorem resting on an `argued` lemma is checked given that lemma; say so.
 - A conditional theorem proves an implication, not that its hypotheses hold in

@@ -632,9 +632,16 @@ def compute_standing(root: Path, folder: Path,
 
 def read_part(path: Path) -> dict:
     part: dict = {"lead": None, "lease": None, "counts": Counter(), "requests": [],
-                  "typed": [], "legacy": [], "unreadable": []}
+                  "typed": [], "legacy": [], "unreadable": [], "damaged": False}
+    data = path.read_bytes()
+    try:
+        text = data.decode("utf-8")
+    except UnicodeDecodeError:
+        # Keep what can be read; status counts the damage as one more obligation.
+        text = data.decode("utf-8", errors="replace")
+        part["damaged"] = True
     section = ""
-    for line in path.read_text(encoding="utf-8").splitlines():
+    for line in text.splitlines():
         if line.startswith("lead:") and part["lead"] is None:
             part["lead"] = line.split(":", 1)[1].strip()
         elif line.startswith("lease_until:") and part["lease"] is None:
@@ -669,7 +676,7 @@ def status(args: argparse.Namespace) -> int:
                   "counted as one open obligation")
             parts.append((path, {"lead": None, "lease": None, "counts": Counter(gap=1),
                                  "requests": [], "typed": [], "legacy": [],
-                                 "unreadable": []}))
+                                 "unreadable": [], "damaged": False}))
     names = {name for _, part in parts for _, name in part["typed"] + part["legacy"]}
     standing, stale, rejected, blocked = compute_standing(root, folder, names)
     for file, reason in rejected:
@@ -729,6 +736,9 @@ def status(args: argparse.Namespace) -> int:
                 notes.append(f"typed {label}, but {why}: {name}")
             for line in part["unreadable"]:
                 notes.append(f"unreadable obligation, counted open: {line}")
+            if part["damaged"]:
+                notes.append("this file is not valid UTF-8, counted as one more "
+                             "open obligation")
             tally = (f"open {words['open']} argued {words['argued']} "
                      f"checked-given {given} checked {words['checked']} "
                      f"refuted {words['refuted']}")
@@ -736,7 +746,7 @@ def status(args: argparse.Namespace) -> int:
                 tally += ("; typed, not computed: " + " ".join(
                     f"{label} {counts[label]}" for label in OLD_LABELS))
             open_total += (words["open"] + words["argued"] + given + contradicted
-                           + len(part["unreadable"]) + counts["gap"]
+                           + len(part["unreadable"]) + part["damaged"] + counts["gap"]
                            + counts["unchecked"] + counts["implication"])
         print(f"{path.stem}: {part['lead'] or 'no lead'} "
               f"({lease_state(part['lease'], now)}); {tally}")

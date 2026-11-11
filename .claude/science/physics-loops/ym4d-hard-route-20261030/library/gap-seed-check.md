@@ -9,8 +9,7 @@ Provenance: Claude Opus 5.5, effort high, Mac mini worker 2, at commit 547801e01
 
 - Started 2026-11-11T09:12Z. Read: FINISH row 698, `library/gap-crux-restate.md` in full.
 - Read also: `library/gap-transfer.md` (notation, A, Sections 1-5, 9, 10), `library/gap-transfer-check.md` (verdicts, R1-R8, correction table), `library/gap-skeleton-max-b.md` lines 241-282 (run 2, Lemmas 1, 1', 2).
-- Points done: (1)-(10).
-- Next: point (11), the RECALLED claims; then (12), own attempt to break Theorem S.
+- Points done: (1)-(12), verdict table, inputs, not covered. **Check complete** (2026-11-11).
 
 ## Repo search
 
@@ -163,7 +162,7 @@ Each use has its own ell and kappa (they depend on the fixed sides); each use is
 
 **Lemma J.** Convention (h.U)_(xy) = h_x U_(xy) h_y^(-1). Under h, U_01 k_1 U_12 becomes h_0 U_01 (h_1^(-1) k_1 h_1) U_12 h_2^(-1), and likewise k_2 -> h_2^(-1) k_2 h_2 (U_32^(-1) -> h_2 U_32^(-1) h_3^(-1)), k_3 -> h_3^(-1) k_3 h_3, and h_0 cancels in the trace. The corners x_1, x_2, x_3 are distinct (sides >= 2). Invariance of mu and Fubini: the expectation equals its average over independent Haar h_1, h_2, h_3; the expression is linear in each conjugated k_c, and the Haar average of h^(-1) k h commutes with every element of SU(2), hence with all 2 x 2 complex matrices (SU(2) spans them: 1, i sigma_1, i sigma_2, i sigma_3), so it is the scalar (1/2) tr k. **Holds.** Seam case: I checked the geometry of the sixteen blocks (block = links (x, mu) with x in one sub-cube of side n; the link leaving the sub-cube is identified with the wrap-around link of the small torus). A big-torus plaquette at x in the plane (mu, nu) is a seam plaquette iff x_mu or x_nu is n - 1 in local coordinates; then the link (x + e_mu, nu) (or (x + e_nu, mu)) is the only link of the plaquette in its block, and the gauge transformation of that block's small torus at its base vertex multiplies it on the left by g and moves no other link of the plaquette. Independence of the blocks and the Haar average of g, which is 0 (invariance under g -> -g), give expectation 0. **Holds.**
 
-**Seam bound.** The interior plaquettes of the big torus and of the small tori are the same functions; the big torus has N_seam = 96 n^4 (1 - (1 - 1/n)^2) = 192 n^3 - 96 n^2 seam plaquettes and the sixteen small tori have the same number of wrap-around plaquettes. Z((2n)^4)/Z(n^4)^16 is the expectation, under the product of the sixteen Gibbs measures, of exp(-beta(A_big - sum of A_small)) >= exp(-beta times the expectation) (Jensen); the expectation is N_seam (1 - 0) - N_seam abar_n... more exactly each seam plaquette contributes E(1 - (1/2) tr) = 1 and each wrap-around plaquette E(1 - (1/2) tr) = abar_n, so the difference is N_seam (1 - abar_n). Hence Phi(n) <= beta (192 n^3 - 96 n^2)(1 - abar_n). **Holds.** (Line 152 says the replaced small-torus plaquette "has 1 - abar_n"; this is the expectation of (1/2) tr, with abar_n = E(1 - (1/2) tr) as in Theorem D (f). Consistent.)
+**Seam bound.** The interior plaquettes of the big torus and of the small tori are the same functions; the big torus has N_seam = 96 n^4 (1 - (1 - 1/n)^2) = 192 n^3 - 96 n^2 seam plaquettes and the sixteen small tori have the same number of wrap-around plaquettes. Z((2n)^4)/Z(n^4)^16 is the expectation, under the product of the sixteen Gibbs measures, of exp(-beta(A_big - sum of A_small)) >= exp(-beta times the expectation) (Jensen); in the expectation each seam plaquette contributes E(1 - (1/2) tr U_p) = 1 (Lemma J, seam case) and each wrap-around plaquette of a small torus contributes E(1 - (1/2) tr U_p) = abar_n, so the expectation of A_big - sum of A_small is N_seam (1 - abar_n). Hence Phi(n) <= beta (192 n^3 - 96 n^2)(1 - abar_n). **Holds.** (Line 152 says the replaced small-torus plaquette "has 1 - abar_n"; this is the expectation of (1/2) tr, with abar_n = E(1 - (1/2) tr) as in Theorem D (f). Consistent.)
 
 **Verdict (9): HOLDS.**
 
@@ -180,3 +179,75 @@ Each use has its own ell and kappa (they depend on the fixed sides); each use is
 **Identity 4.4.** Haar measure is invariant under U -> -U, so for a measurable section Sigma of SU(2) -> SO(3) the map (s, V) -> sV, {+-1} x Sigma -> SU(2), carries (uniform on +-1) x (2 Haar restricted to Sigma) to Haar measure: product. (1/2) tr U_p = s_p J_p(V) (signs are central, s^(-1) = s). For fixed V the integrand is the Z_2 gauge theory with couplings beta J_p(V); the twist replaces s_p J_p by -s_p J_p on the stack, which is the twisted Z_2 theory with the same couplings. Integrating over V: Z_odd/Z = integral of Z_Z2[beta J(V)] u_Z2[beta J(V)] dV / integral of Z_Z2[beta J(V)] dV. **HOLDS** (normalizations of the Z_2 sums and of dV cancel in the ratio).
 
 **Verdict (10): HOLDS** (Theorem F with the corrected Z^(12); Remark F3's extra input is supplied above).
+
+## Point (11). The RECALLED claims about U(1) and Z_2
+
+**Where they occur.** Line 53 (classical twist costs), 62 (C1 (ii): the photon, twelve photon states, Z_2 at its transition and at large beta), 69 (C2 (ii)), 74 (C4 (ii)), 76 (C5 (ii)), 215 (third bullet after Theorem S), 256 (U(1) estimate for (TUBE)), 286, 291, 303 (Section 5). **No proof uses them.** I checked every proof block of Sections 3 and 4 (Theorem D, D2, R, N, N2, J, seam bound, K, X, E, S, S2, S3, F, T, F3, 4.4): none cites U(1), Z_2, the photon, a phase transition or a recalled energy. They appear only in the tests (ii) and in comments. Confirmed.
+
+The arithmetic of the recalled numbers is right: 12 e^(-pi) = 0.5186 (line 215: "about 0.52"); log(1 + 12 e^(-pi)) = 0.418 (line 62: "about 0.41"); log(1 + e^(-pi)) = 0.0423 > 0.04 (line 62; the margin is small, so the o(1) matters).
+
+**My own arguments.** I have short arguments only for a fixed size n with beta -> infinity; none for the claims as stated at a fixed coupling uniformly in the size (which is what "the seed is false at every size" needs).
+
+*(Z_2, fixed n, large beta; checker's argument, by hand, not used by any proof.)* Assume for the Z_2 gauge theory the analogue of Lemma 1.1 (its transfer operator has the same Gram-expansion proof; not written out here). For the box B = (2n)^3 and the eight characters e of Z_2^3, E_e = (1/8) sum over k in Z_2^3 of e(k) C^k are orthogonal projections commuting with T, Omega lies in the range of E_0 (point (3) (e)), so lambda_0^n <= Tr(T^n E_0) = (1/8) sum over k of Z_k, where Z_k = Tr(T^n C^k) is the twisted partition function. Hence
+
+1 + s = Tr T^n / lambda_0^n >= 8 / (1 + sum over k != 0 of Z_k/Z).
+
+Bounds: with normalized counting measure, Z >= 2^(-|E|) 2^(|V|-1) (the pure-gauge configurations sigma_xy = g_x g_y have no frustrated plaquette); for k != 0 every 2-torus slice in a twisted plane (0, i) contains exactly one twisted plaquette, and the product of sigma_p over a 2-torus slice is 1 (each link appears twice), so each slice has a frustrated plaquette, at least 4n^2 in all, and Z_k <= exp(-2 beta 4n^2). So Z_k/Z <= 2^(|E| - |V| + 1) e^(-8 beta n^2) with |E| - |V| = 3 |V| = 24 n^4, which tends to 0 as beta -> infinity at fixed n. So s(n; beta) -> 7 or more: at each fixed n the seed fails for Z_2 at large enough beta (beta of order n^2). This is the fixed-size version of the text's "Z_2 at large beta has s >= 7 - o(1)". The fixed-beta, all-n version needs a Peierls bound with entropy control (deconfined phase); I have no short proof.
+
+*(U(1), fixed n, large beta; sketch.)* The flux group is U(1)^3, with rotations R_theta commuting with T and E_0 = (2 pi)^(-3) integral of R_theta d theta. As above, 1 + s >= Z / Tr(T^n E_0) = Z / ((2 pi)^(-3) integral of Z(theta) d theta). For |theta| >= delta, every 2-torus slice in a twisted plane has plaquette phases summing to theta_i mod 2 pi, so some plaquette has |phase| >= delta/(4n^2) and Z(theta) <= exp(-beta(1 - cos(delta/(4n^2)))); and Z >= (Haar measure of the set where every link is within beta^(-1/2) of 1, a power of beta^(-1/2)) times e^(-C) . So the ratio tends to 0 as beta -> infinity for each delta > 0, and 1 + s >= (2 pi/delta)^3 (1 - o(1)): s -> infinity at fixed n. The seed fails at each fixed size at large enough beta. Not written out in full (the constant C and the measure of the small set are standard estimates I did not do line by line); marked as a sketch. The fixed-beta statement (the photon at every size) is the massless phase of Guth and Frohlich-Spencer; I have no short proof.
+
+*(Z_2 at its transition.)* No argument. It rests on the existence and the nature of the transition, which is not proved here.
+
+**Verdict (11): HOLDS** for "no proof uses them". The claims themselves stay RECALLED; I add proofs only of the fixed-size, beta -> infinity versions (Z_2 by hand, U(1) as a sketch). These versions do not show that the seed fails at a fixed coupling for every size.
+
+## Point (12). My attempt to break Theorem S
+
+Pass and fail criterion, written first: Theorem S fails in a model if S(2n; (4n)^3) > ((1 + s)^64 - 1)^2 with s = S(n; (2n)^3) <= 1/640 (or if the symmetric trace structure holds and the induction gives a gap bound that the model violates). Everything below is by hand; no run.
+
+**Model 1: layered two-dimensional models (exact, integer multiplicities).** Let a two-dimensional model have W_2(a, b) = sum over l >= 0 of m_l w_l^(ab), m_0 = 1, m_l positive integers, 1 = w_0 > w_1 >= ... > 0 with sum of m_l w_l^3 finite (two-dimensional lattice gauge theory on a torus has this form, character expansion; recalled, used only as motivation, the model is defined abstractly). Its transfer operator on a circle of length b is the diagonal operator with eigenvalues w_l^b, multiplicity m_l: positive, trace class, simple top. Put Z(n) = product over planes mu < nu of W_2(n_mu, n_nu)^(|n|/(n_mu n_nu)) (independent copies on every plane). Transfer in direction 1 of the box B: the factors of planes not containing 1 are n_1-th powers of numbers; the factor of the plane (1, nu) is (Tr T_(b_nu)^(n_1))^(|B|/b_nu) = Tr of the tensor power. So Z = Tr T_B^(n_1) with T_B a tensor product of positive trace-class operators: positive, trace class, simple top, integer multiplicities; Z is symmetric in the four sides. With sigma(x) := sum over l >= 1 of m_l w_l^x: 1 + S(t; B) = product over nu of (1 + sigma(t b_nu))^(|B|/b_nu). Hence s = (1 + sigma(2n^2))^(12 n^2) - 1 and S(2n; (4n)^3) = (1 + sigma(8n^2))^(48 n^2) - 1. Since the m_l are integers >= 1, sigma(4x) <= sigma(x)^4. If s <= 1/640 then, with sigma := sigma(2n^2), 12 n^2 log(1 + sigma) = log(1 + s) < 1/640, so sigma < 1/(7000 n^2); then S(2n; (4n)^3) <= exp(48 n^2 sigma^4) - 1 <= 49 n^2 sigma^4, while ((1 + s)^64 - 1)^2 >= (64 log(1 + s))^2 = (768 n^2 log(1 + sigma))^2 >= (760 n^2 sigma)^2 (log(1 + sigma) >= sigma/(1 + sigma)). The ratio left/right is at most 49 sigma^2/(760^2 n^2) < 10^(-11). **No violation**; the margin is huge because these excitations are strings (energy proportional to the length), so S falls like an exponential of an area.
+
+**Model 2: independent modes (free massive lattice field; formula recalled, used only in this test).** For the Gaussian field with nearest-neighbour action and mass M, the transfer operator of a box B is a product of oscillators: 1 + S(t; B) = product over the momenta k of B of (1 - x_k(t))^(-1), x_k(t) = e^(-t omega_k), cosh omega_k = 1 + (M^2 + sum_j 4 sin^2(k_j/2))/2 (recalled; positive trace-class, simple top, symmetric W). Put X = sum over k in the grid G_2n of the box (2n)^3 of e^(-n omega_k). Then log(1 + s) >= X. For the box (4n)^3 at time 2n, the grid G_4n contains G_2n; send each k in G_4n to k' in G_2n by rounding each coordinate toward 0 on the coarser grid. omega is increasing in each |k_j| on (-pi, pi], so e^(-n omega_k) <= e^(-n omega_(k')), and the map is at most 27-to-1 (in each coordinate at most 3 points go to 0 and 2 to every other point). Hence sum over G_4n of e^(-2n omega_k) <= 27 sum over G_2n of e^(-2n omega_(k')) <= 27 X^2, and log(1 + S(2n; (4n)^3)) <= sum over G_4n of x/(1 - x) with x = e^(-2n omega_k) <= 27 X^2/(1 - e^(-2nM')) where M' = omega_0 > 0. So for s <= 1/640 (so X < 1/640): S(2n; (4n)^3) <= 28 X^2 (once e^(-2n M') <= 1/50, i.e. at all n with 2nM' >= 4), while ((1 + s)^64 - 1)^2 >= 4096 X^2. Ratio at most 28/4096 < 1/146. **No violation**, for every mass, in the whole range where the seed holds and 2nM' >= 4 (for 2nM' < 4 one has X >= e^(-2) > 1/640, outside the range). The loss of Theorem S against this model is a factor of about 150: most of it is the exponent 4 of Lemma E in each of three directions (64 against the true 8 at first order).
+
+**Where a counterexample would have to sit.** By Lemmas K and X, a model whose small box has s small but whose large boxes have a light state must lower the ground-state deficit kappa at a larger size, which Lemma K (d) forbids, or produce many states at a fixed time that Lemma E does not see; Lemma E is exact up to its exponent. I found no candidate. This is not a proof; Theorem S is proved in point (7).
+
+**Verdict (12): no counterexample found; Theorem S survives both hand-solvable models with margins of about 10^11 and 150.**
+
+## Verdict table
+
+| Point | Statement(s) | Verdict |
+|---|---|---|
+| (1) | (TM), (TM-c) for every periodic box with sides >= 3; symmetry of Z | HOLDS AFTER CORRECTION: Lemma 1.1 above (no step of `gap-transfer.md` uses equal sides); the twisted weight of (TM-c) is exp(-beta(1 + (1/2) tr U_p)) on the stack, not "beta with its sign changed" |
+| (2) | Lemma A and its uses; consequences of Section 1 | HOLDS |
+| (3) | Theorem D (a)-(f), Corollary D2 | HOLDS (D (e) with the corrected Z^(mu nu)) |
+| (4) | Proposition R | HOLDS; wording: "every box of side up to" -> "every cube of side 2^k n up to" |
+| (5) | Lemma K (a)-(d) | HOLDS |
+| (6) | Lemma X, Lemma E (exponent 2b/(b-a)) | HOLDS |
+| (7) | Theorem S (three uses of Lemma E, S(2n) <= S(n)^2, constants 64, 71, 5041, 1/640, 1.9 x 10^(-4), induction, gap) | HOLDS |
+| (8) | Corollary S2; Corollary S3 | S2 HOLDS AFTER CORRECTION (the O(3) scope sentence is not proved); S3 HOLDS |
+| (9) | Proposition N, Remark N2, Lemma J, seam bound | HOLDS |
+| (10) | Theorem F, Section 4.2, Proposition T, Remark F3, Identity 4.4 | HOLDS (F with the corrected Z^(12); F3's extra input supplied in point (10)) |
+| (11) | RECALLED claims unused by proofs | HOLDS; own proofs only of fixed-size, beta -> infinity versions (Z_2 by hand, U(1) sketch) |
+| (12) | Own attempt to break Theorem S | no counterexample; two hand-solvable models satisfy it with margins about 10^11 and 150 |
+
+No statement FAILS. In the row 675 terms: Theorem S and its lemmas CORRECT-NO-ADVANCE on the seed itself, ADVANCE on the step (the doubling step that the earlier plans left open is proved).
+
+## Exact list of inputs of Theorem S
+
+1. For every box B = (b_1, b_2, b_3) with all sides >= 3 (needed: (y, 2n, 2n), (4n, y, 2n), (4n, 4n, y) and their transposes, y >= 3 arbitrary, and (2 n_k)^3): a positive trace-class operator T_B with Z(t | B) = Tr T_B^t for every t >= 3, and a simple top eigenvalue (Lemma 1.1 (i)-(iii); from `gap-transfer.md` statements (1b), (2c), (3), (4b) with N^3 replaced by |B|). The positive eigenfunction is not needed by Theorem S (only by Theorem D (e) and Theorem F).
+2. Invariance of Z under the exchange of two axes (Lemma 1.1 (v)).
+3. Finiteness of ell for each pair of fixed sides: e^(-12 beta |n|) <= Z <= 1.
+4. Lemma A (a), (b) (elementary, point (2)); the spectral theorem for compact positive operators (A2 of `gap-transfer.md`) for Tr T^k = sum of lambda_i^k with multiplicity.
+5. For the last line only: Theorem D (b) (same inputs).
+
+Nothing about SU(2) beyond these enters. (TM-c), the centre flips, are not inputs of Theorem S.
+
+## What this check did not cover
+
+- `gap-transfer.md` Sections 6-8 and its check's foundations table: not re-checked (not used by the text). Sections 1-5 and 9.3 were read and their side-dependence checked, not re-proved line by line; I rely on the row 671 check for (1)-(5).
+- Section 2 of the text (the candidates C1-C5, tests (i)-(iii)), the Ways 2 and 3 of Section 3.3 beyond Lemma J and the seam bound, Section 4.3's U(1) Gaussian estimate for (TUBE), Sections 5 and 6 (plans and verdicts): read, not checked as mathematics (they are estimates, recalled facts or opinions). The claim "every exact tool holds word for word for U(1)" is not checked.
+- The Tomboulis-Yaffe inequality and every GUIDE item: not checked, and not used by any checked proof.
+- The O(3) transfer structure (Corollary S2's scope) and the Z_2/U(1) transfer structures used in my point (11) arguments: not proved here.
+- The sanity runs of Section 3.4 (scripts in a scratch folder of the author): not re-run; they are guides only. I ran no numeric job.
+- Independence: same provider as the author (Anthropic), different model. Row 699 is the check by another provider.
+
+**No mass gap is proved by this file or by the checked text, whatever the verdicts.** (SEED) at couplings of order one, (TUBE'), and C3-C5 stay open.

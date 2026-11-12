@@ -172,6 +172,25 @@ Proof. Put s_k := S_w(a/2; a^3) <= q^(2^k)/5041 (Theorem S-w). *eps.* The even s
 
 **Open (named).** (ES-1) Is there, for Wilson SU(2), a bound delta <= C eps or delta <= C S_ev at a comparable shape? It would make the even seed one number. A route: the deficit kappa(a) is the growth rate of the even thermal sum on long boxes, kappa(a) = lim over b of (1/b) log(1 + S_ev(a; (b, c, d))) (from Lemma R1 (a): only the sectors of the crossed box with top eigenvalue lambda_0 survive as b grows); what is missing is the step from the box of length a to long boxes without the factor 4.
 
-### 4.10 A guide run in two dimensions
+### 4.10 A guide run in two dimensions (a run can refute or guide; it proves nothing)
 
-(to be appended)
+**What was run.** The two-dimensional Ising model, where the same algebra has four sectors z = (chi, m) (parity under the global flip; antiperiodic closing), B_2(z, z') = chi m' + chi' m, H_2 = (1/2)(-1)^{B_2}, sum p = 2 and the bound of R3 reads Q <= 2 theta. Exact transfer matrices by parity blocks, chains of length a and 2a for a = 3, 4, 5, 6, couplings K = 0.2, 0.3, 0.38, K_c, 0.5, 0.6, 0.8. Script `/tmp/gmm-737/scripts/rigid2d.py`, output `/tmp/gmm-737/out/rigid2d.out` on the Mini; not in git. Numeric lock held as `gap-means-max-737` and released; memory free 53 percent at the start; BLAS threads 1; the script stops above 2 GB.
+
+**Criteria, written in the script header before the run.** C1: rho(a; a) = H_2 rho(a; a). C2: Z_00(a; 2a) = (1/2) sum_z Z_z(2a; a). C3: p <= 1, Delta >= 0 and Q <= 2 theta. C4: 1 + S_w(a; 2a) <= (1 + S_w(a; a))^2 exp(Delta) for the three sets. FAIL at any point would mean that the algebra of Section 4 is wrong in two dimensions.
+
+**Result: PASS at all 28 points.** C1 and C2 hold to 10^(-13). Selected rows (p for the sectors (1,0), (0,1), (1,1)):
+
+| K | a | eps | Delta | theta | Q | 2 theta - Q | p | S_per, S_full, S_kappa at (a; 2a) |
+|---|---|---|---|---|---|---|---|---|
+| 0.2 | 6 | 2.3 x 10^(-7) | 1.81 x 10^(-3) | 1.81 x 10^(-3) | 3.62 x 10^(-3) | 4 x 10^(-6) | 0.0009, 0.9982, 0.0009 | 0.0018, 1.00, 0.0018 |
+| 0.3 | 6 | 7.1 x 10^(-5) | 0.040 | 0.040 | 0.078 | 0.0015 | 0.024, 0.960, 0.017 | 0.042, 1.00, 0.041 |
+| K_c | 6 | 2.2 x 10^(-3) | 0.401 | 0.334 | 0.580 | 0.087 | 0.453, 0.453, 0.093 | 0.80, 0.80, 0.50 |
+| 0.6 | 6 | 1.1 x 10^(-4) | 0.053 | 0.052 | 0.102 | 0.0026 | 0.947, 0.032, 0.021 | 1.00, 0.056, 0.055 |
+| 0.8 | 6 | 3.2 x 10^(-7) | 2.15 x 10^(-3) | 2.15 x 10^(-3) | 4.30 x 10^(-3) | 6 x 10^(-6) | 0.9978, 0.0011, 0.0010 | 1.00, 0.0022, 0.0022 |
+
+**Readings (guides).**
+
+1. The inequality Q <= 2 theta is close to an equality away from the critical point. So R3 loses little.
+2. In the disordered phase the light sector is the magnetic one and the periodic and kappa seeds are small; in the ordered phase the light sector is the electric one and the full and kappa seeds are small. This is Theorem R in two dimensions.
+3. At K_c the weights tend to about (0.45, 0.45, 0.09) and Delta to about 0.40 (pi/8 = 0.393): the recalled conformal values of 4.8. The even sum eps is small there, and the hypothesis fails through Delta alone.
+4. **In every row eps is far below Delta, and Delta is about Q/2.** So the deficit is not a side condition. It is the number that carries the flux information: the vacuum energy of the periodic box feels every light object that can wind the box, and by crossing these are the sectors of the crossed box. (ES) has no flux sector in its *form*. In substance its second number weighs the heavy sectors. The gain of Theorem R is one object (vacuum energies and the even thermal sum of periodic cubes) in the place of three sums over flux sectors, and an equivalence in the place of three one-way statements. It is not a weaker statement, and by Corollary R5 it cannot be.

@@ -626,3 +626,19 @@ Written by the lead (Claude Opus 5.5) from `library/gap-means-max-check.md` (row
 **What is open.** (ES) for SU(2) at a coupling of order one, uniformly in the cutoff. (ES-1): whether a small even thermal sum bounds the defect, so that (ES) is one number (row 748, astra max). The defect carries the flux information (2D Ising guide), so (ES-1) is not expected to be free.
 
 **Queue.** Rows 746, 747 (luna readings) run; then row 748 (astra max on (ES-1)) and row 749 (luna, the literature on finite-size vacuum-energy corrections). Row 743 (the exercise at Fable max) stopped at Step 1 when the Mini's weekly Fable allowance ran out; it resumes after the reset.
+
+### 13.20 The even seed under attack from five sides (FINISH rows 746 to 763)
+
+Written by the lead (Claude Opus 5.5) from the RESULT lines of rows 746 to 762 and the verdict tables of their checks. The Mini's Fable allowance was used up on 2026-11-12, so these rows ran on Codex gpt-6-astra max (authors and checks), gpt-6-luna (readings) and Claude Opus 5.5 on the lead's MacBook (authors and checks). **No mass gap is proved.**
+
+**(ES-1) fails in its linear form (rows 748, 751, 753).** Two providers found it separately: astra on Wilson SU(2) at small beta, Opus on Z_2 at large beta; same mechanism (delta of order X^9, the even sums of order X^12). Checked by astra (row 753). So (ES) needs both numbers.
+
+**What the defect is (row 751, Theorem V; checked, row 753).** The vacuum-energy defect equals the weight of the twelve heavy crossed flux sectors, up to even sums. Theorem LB bounds it on long boxes. A fusion input (F-h) would give delta of order eps^(1/2); it is open and needs locality (literature: none, row 752; the trial-function form (LOC): none, row 757).
+
+**Correlation inequalities (rows 738, 746, 754, 756).** Unrestricted Wilson-loop association fails (row 738); the narrow form (EP) is **false** for SU(2) (Theorem EP-NO, row 754; checked, row 756); U(1) and Z_2 satisfy it.
+
+**Loop equations with positivity (rows 754 to 762).** The SU(2) loop equations hold for every shape tried (checked). The two numbers of (ES) are integrated finite-size shifts of the plaquette mean. Row 754's no-go claims were wrong (row 756); row 760 (checked by Opus, row 762) bounds both numbers by short-staple moments (Corollary P-shift, passes the U(1) test), but that certificate's own slack makes its sufficient test false above beta of about 0.03/a, and Theorem O shows that no fixed-radius certificate with separate states for the two volumes can reach (ES) at large a. What is not excluded: certificates that tie the two volumes together, or grow with a, and carry information the witness families violate (literature on such certificates: row 761).
+
+**Block criteria (rows 750, 758, 759, 763).** The Knabe-type block certificate PA fails at weak coupling by a gauge corner, for every overlapping product-box cover (checked by Opus, row 758). The gauge-invariant form PA_g is conditional and open; its corner plaquette-pair correlation is the first test (row 763). No such criterion exists in the literature for a continuous gauge group (row 759).
+
+**The crux now.** Unchanged in substance: (ES) at one physical size at order-one coupling. Ruled out in the stated forms: linear (ES-1); (EP); fixed-radius separate-state loop certificates; the full-L2 block certificate. Live, all open: (F-h)/(LOC); cross-volume or growing loop certificates; PA_g; the three means of row 737 for the even half.

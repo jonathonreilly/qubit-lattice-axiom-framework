@@ -133,7 +133,7 @@ I do not claim that this list is complete.
 
 - *First statement:* T4a of 2.4: is every term of the character expansion non-negative? **Done here: no.** Corollary NS0: the lattice projective plane S_0 has a negative term. Not checked by another model.
 - *Where the route failed:* at its first statement, in four dimensions. In three dimensions the sign of S_0 cannot occur, and the guide on the branching integrals found no negative value.
-- *What changes:* route D of row 735 ("a positive graphical representation for the centre-even sector") is closed in its term-by-term form by a counterexample, not by a belief. The form of (M4) that stays open for the even half is an inequality after the sum over surfaces, and I know no mechanism for it. If the check finds an error in S_0 or in the case chi = 1 of Proposition NS, Lemma NP of row 733 is again the only sign obstruction.
+- *What changes:* route D of row 735 ("a positive graphical representation for the centre-even sector") is closed in its term-by-term form by a counterexample, not by a belief. The form of (M4) that stays open for the even half is an inequality after the sum over surfaces, and I know no mechanism for it. If the check finds an error in S_0 or in the case chi = 1 of Proposition NS, the sign obstruction on record is again Lemma NP of row 733 alone.
 
 **What the ranking is.** Route 1 is first because its first statement is proved and changes what every other route must verify. Route 2 is second because it is the one place where I know a small number for this action. Route 3 was cheap and decided one door; it is closed. None of the three reaches (ES) at a coupling of order one. I know no route that does.
 
@@ -215,9 +215,9 @@ eps is the thermal sum of the centre-even sector of the cube of side a at the ti
 
 **Theorem R.** delta >= 0. If (ES) holds at a, then there is exactly one alpha in {(1,0), (0,1), (1,1)} such that:
 
-(a) for each of the two w in {per, full, kappa} with alpha_w != alpha: S_w(a; (a, a, a)) <= 1.27 x 10^(-5), and
+(a) for each of the two w in {per, full, kappa} with alpha_w != alpha: S_w(a; (a, a, a)) <= 1.28 x 10^(-5), and
 
-S_w(a; (2a, 2a, 2a)) <= 1.02 x 10^(-4) < 1/5041;
+S_w(a; (2a, 2a, 2a)) <= 1.03 x 10^(-4) < 1/5041;
 
 (b) for the w with alpha_w = alpha: S_w(a; (a, a, a)) > 2.
 
@@ -233,7 +233,7 @@ Proof. *Step 0 (the three deficits).* Put Delta_1 := a (2 e(a, a, a) - e(2a, a, 
 
 *Step 4 (two sector sets are small on a^4).* Let alpha_w != alpha and sigma in Sigma_w, sigma != 0. Some nu has (chi_nu, m_nu) = alpha_w. By dominance and symmetry rho(sigma) <= rho(sigma|nu) = p(x*), with x* := (0, alpha_w1, 0, alpha_w2). x* is not in L, because alpha_w is not in A_0. So rho(sigma) <= eta. Now 1 + S_w(a; (a,a,a)) = (1 + eps) sum over sigma in Sigma_w of rho(sigma), so
 
-S_w(a; (a, a, a)) <= eps + 7 eta (1 + eps) <= 10^(-7) + 7 (1.8 x 10^(-6))(1 + 10^(-7)) < 1.27 x 10^(-5).
+S_w(a; (a, a, a)) <= eps + 7 eta (1 + eps) <= 10^(-7) + 7 (1.8 x 10^(-6))(1 + 10^(-7)) < 1.28 x 10^(-5).
 
 *Step 5 (three doublings of the box at the fixed time a).* Let B be a box and B' the box with one side doubled, from a to 2a, the other two sides fixed. W_w is invariant under permutations of the sides, and W_w(t, B) = Tr (T^w_B)^t with top eigenvalue lambda_0(B) (Lemma W). Cross the doubled side with the time: W_w(a, B') = Tr (T^w_{B_a})^(2a) <= (Tr (T^w_{B_a})^a)^2 = W_w(a, B)^2, where B_a is the box with the sides a (the old time) and the two fixed sides; Lemma A (a). So
 
@@ -243,7 +243,7 @@ Apply this along (a, a, a), (2a, a, a), (2a, 2a, a), (2a, 2a, 2a):
 
 1 + S_w(a; (2a)^3) <= (1 + S_w(a; a^3))^8 exp(4 Delta_1 + 2 Delta_2 + Delta_3) = (1 + S_w(a; a^3))^8 exp(delta).
 
-With Step 4: S_w(a; (2a)^3) <= exp(8 x 1.27 x 10^(-5) + 10^(-7)) - 1 = exp(1.017 x 10^(-4)) - 1 < 1.02 x 10^(-4), and 1/5041 > 1.98 x 10^(-4).
+With Step 4: S_w(a; (2a)^3) <= exp(8 x 1.28 x 10^(-5) + 10^(-7)) - 1 = exp(1.025 x 10^(-4)) - 1 < 1.03 x 10^(-4), and 1/5041 > 1.98 x 10^(-4).
 
 *Step 6 (the third set).* For alpha_w = alpha the three points of L other than 0 are sectors of Sigma_w. So S_w(a; a^3) >= (1 + eps)(3 - eta) > 2. alpha is unique because A_0 is defined by the weights. QED
 
@@ -251,9 +251,9 @@ With Step 4: S_w(a; (2a)^3) <= exp(8 x 1.27 x 10^(-5) + 10^(-7)) - 1 = exp(1.017
 
 **Corollary R4 ((ES) at one size gives (G_ev) at all sizes, and the gap of the periodic limit on the centre-blind functions).** Let (ES) hold at a. Then for every integer L >= 2a, with k >= 0 such that D := 2^(k+1) a <= L < 2D:
 
-S_ev(D/2; L^3) <= q^(2^k)/71 with q <= 5041 x 1.02 x 10^(-4) < 0.515, and m_ev(L^3) >= log(1/q)/a > 0.66/a.
+S_ev(D/2; L^3) <= q^(2^k)/71 with q <= 5041 x 1.03 x 10^(-4) < 0.52, and m_ev(L^3) >= log(1/q)/a > 0.65/a.
 
-Every limit point of the periodic symmetric tori clusters exponentially at the rate 0.66/a on the functions with (i) of 8.2, in the four directions.
+Every limit point of the periodic symmetric tori clusters exponentially at the rate 0.65/a on the functions with (i) of 8.2, in the four directions.
 
 Proof. Theorem R (a) is the hypothesis of Corollary EV with N = a. QED
 
@@ -337,13 +337,13 @@ Proof. For a box B let S := T_B P_0 >= 0, with top eigenvalue lambda_0(B). Tr S^
 
 ## 6. Report
 
-**Kind of result.** A direction document (row 737), with one proof of a step that the lane's record and the account of Sussman and Alpoge do not hold (Section 4), three guide runs, and a plan.
+**Kind of result.** A direction document (row 737), with a proof of a step that the lane's record and the account of Sussman and Alpoge do not hold (Section 4), a counterexample on our own open point of row 733 (Section 2.4), four guide runs (two-dimensional Ising model; the integrals J(a, b, c); the hemicube; a finite search of small boxes), and a plan.
 
 **Proved here (Claude Fable 5.2 max; not checked by another model), given the checked inputs of 4.1.**
 
 - Lemma R1, Lemma R2, Proposition R3: on a torus with two equal sides, the sixteen crossed sector weights, divided by the even weight, lie in [0, 1], sum to 4, and satisfy sum p(1 - p) <= 4 theta with theta = 1 - exp(-Delta)(1 + eps)^(-2). For theta < 1/20 four are within 8 theta of 1, twelve within 8 theta of 0, and the four form an isotropic group.
-- Theorem R: (ES) at a (eps, delta <= 10^(-7) on the cubes of side a and 2a) gives S_w(a; (2a)^3) <= 1.02 x 10^(-4) < 1/5041 for two of the three w, and S_w(a; a^3) > 2 for the third.
-- Corollary R4: (ES) at one size gives (G_ev) at all sizes and exponential clustering of every periodic limit on the centre-blind functions, at the rate 0.66/a. This is (EV-STEP) with (ES) as hypothesis.
+- Theorem R: (ES) at a (eps, delta <= 10^(-7) on the cubes of side a and 2a) gives S_w(a; (2a)^3) <= 1.03 x 10^(-4) < 1/5041 for two of the three w, and S_w(a; a^3) > 2 for the third.
+- Corollary R4: (ES) at one size gives (G_ev) at all sizes and exponential clustering of every periodic limit on the centre-blind functions, at the rate 0.65/a. This is (EV-STEP) with (ES) as hypothesis.
 - Corollary R5: a seed of any of the three kinds gives (ES) at a larger size. So the two forms of the crux are equivalent.
 - Corollary R7: a sufficient form of (ES) in four even partition functions.
 - Proposition NS for chi(S) = 1, the surface S_0 and Corollary NS0 (Section 2.4): a lattice projective plane of 92 plaquettes, whose term in the surface formula of row 733 is -2^(-183) beta^92 (1 + O(beta^2)). This answers the open point of row 733: a negative fine term exists in four dimensions. The list S_0 was checked by a script; the check is a finite count that a person can repeat.

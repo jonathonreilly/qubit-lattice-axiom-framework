@@ -612,3 +612,17 @@ Written by the lead (Claude Opus 5.5) from `library/gap-means-max.md` (row 737; 
 **The means, from two providers apart.** Both rows 737 and 738 find no means for the even half at order-one coupling. Row 738 refutes unrestricted Wilson-loop association even in the even state, leaves the narrower (EP) open, and names a fifth candidate, a geometric Poincare bound for the physical-time kernel of the even ground state. Rows 739 to 742 (luna; Grok) found no proved bound on any seed or on (G_ev) at the physical scale, and no parameter-monotone correlation inequality for SU(2). The closest literature: the Tomboulis-Yaffe inequality as extended by Kanazawa (a Wilson loop bounded by a twist free energy at every beta), Kovacs's unproved vortex inequalities, and conditional reductions (Eriksson; a one-cube Dobrushin-Shlosman criterion).
 
 **Queue.** Row 744: astra max check of Theorem R and Corollary NS0. Row 743: the exercise at Fable 5.2 max on the crux, with the framing questioned. Not queued until row 744 reports: any work that takes (ES) as the crux.
+
+### 13.19 Theorem R is checked; the crux is the even seed (FINISH rows 743 to 749)
+
+Written by the lead (Claude Opus 5.5) from `library/gap-means-max-check.md` (row 744; Codex gpt-6-astra max; read: the verdict table and Section 7) and `library/prior/gap-lit-rigid.md` (row 745; read: its RESULT). **No mass gap is proved.**
+
+**Theorem R is checked line by line by Codex gpt-6-astra max (row 744).** Every step holds: Lemmas R1, R2, Proposition R3, Theorem R, Corollaries R4, R5, R7. So the crux of 13.16 has one form with no flux sector in it: **the even seed (ES)** at one physical size, uniformly in the cutoff, two numbers of the centre-even sector of periodic cubes (the even thermal sum of the torus a^4 and the vacuum-energy defect a(8e(a^3) - e((2a)^3))). (ES) at some size is equivalent to each of the three seeds at some size. (EV-STEP) holds with (ES) as its hypothesis (Corollary R4). The order of the seeds and (KP) leave the list of things to decide.
+
+**Credit and novelty (rows 744, 745).** The electric-magnetic duality and the qualitative statement that the light fluxes of a gapped phase form a self-dual group of four are known: 't Hooft (1979); Nguyen, Tanizaki and Unsal (JHEP 08 (2023) 013, Appendix A), under a gapped-vacuum hypothesis and binary limiting sector ratios; Morikawa and Suzuki (arXiv:2501.07042) for the duality on cubic boxes. Neither search found the finite quantitative implication of Theorem R, or its equivalence with the seeds.
+
+**The negative term.** Corollary NS0 holds (the surface S_0: 92 squares, closed, Euler characteristic 1; coefficient -2^(-183) at order beta^92), with one added hypothesis in Proposition NS. The sign mechanism is in Cao, Park and Sheffield (arXiv:2307.06790, Proposition 6.27); the explicit cubical construction was not found earlier.
+
+**What is open.** (ES) for SU(2) at a coupling of order one, uniformly in the cutoff. (ES-1): whether a small even thermal sum bounds the defect, so that (ES) is one number (row 748, astra max). The defect carries the flux information (2D Ising guide), so (ES-1) is not expected to be free.
+
+**Queue.** Rows 746, 747 (luna readings) run; then row 748 (astra max on (ES-1)) and row 749 (luna, the literature on finite-size vacuum-energy corrections). Row 743 (the exercise at Fable max) stopped at Step 1 when the Mini's weekly Fable allowance ran out; it resumes after the reset.

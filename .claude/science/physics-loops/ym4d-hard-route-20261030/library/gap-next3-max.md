@@ -389,3 +389,196 @@ Honest reading of the table. No candidate has P2 above 2 percent. The difference
 
 Step 4 done. Next: Step 5, choose three.
 
+## Step 6 (done before Step 5, because its outcome changes the choice). First step of C1: can the seed engine run on free walls?
+
+### 6.0 What Theorem S uses (READ gap-crux-restate.md L176-205)
+
+Setting there: W(a, b) symmetric, W(a, b) = Tr T_b^a with T_b positive trace class. Steps: (K) e(jb) at most j e(b), from Tr T^(jb) at most (Tr T^b)^j; so the deficit kappa(b) = e(b) - ell b is at least 0, convex, non-increasing. (X) a kappa(b) + g(a, b) = b kappa(a) + g(b, a); so (b - a) kappa(b) at most g(a, b). (E) 1 + S(a; 2b) at most (1 + S(a; b))^(2b/(b-a)). Then three uses of (E) and "S(2n; B) at most S(n; B)^2, because every eigenvalue has multiplicity at least one". Trace-only inputs: the sub-multiplicativity in (K) and (E), and the squaring. Both rest on integer multiplicities.
+
+### 6.1 Setup and four elementary facts (PROVED here unless marked)
+
+Box Lambda = product of {1..n_mu}; a direction is P (periodic) or F (free walls: no link leaves the box). Weight: product over plaquettes of exp(beta x_p), x_p = (1/2) tr U_p, Haar probability on links. In direction 1 with cross-section B: B_0(U) = product of the slice's plaquette weights; K = (projection on gauge-invariant functions) composed with (link-wise convolution by the weight); M = B_0^(1/2) K B_0^(1/2); u = B_0^(1/2) 1. K is positive because the Wilson weight has positive character coefficients and the convolution commutes with gauge transformations (this is the lane's (TM); READ gap-crux-core-check-astra.md section 8 for the same factorization; its extension to a free-wall cross-section is ARGUED: the construction is link-local). Then: periodic time gives Z = Tr M^(n_1); free time gives Z = <u, M^(n_1 - 1) u>.
+
+**FW1 (no flux sectors behind free walls).** If direction i of the cross-section is F, the flip C of all i-links crossing a plane {x_i = c | c+1} equals the gauge transformation Omega(x) = -1 for x_i above c, +1 otherwise. Proof: Omega(x) U Omega(y)^(-1) = -U exactly on the links that cross the plane, because no link closes around direction i. The range of M lies in the gauge-invariant functions. So C acts as the identity on the range of M. QED. With three F space directions there is no centre sector and no twist. (If direction i is P, only products of two flips are gauge transformations, and the sectors return.)
+
+**FW2 (free walls are super-multiplicative).** For an F direction mu: Z(n_mu = b_1 + b_2) at least Z(b_1) Z(b_2), the other sides and patterns fixed. Proof: cut between the sites b_1 and b_1 + 1. Under the product of the two box measures, with the crossing links Haar distributed, Z(b_1 + b_2) = Z(b_1) Z(b_2) E[exp(beta sum over crossing plaquettes of x_p)]. Jensen. Every crossing plaquette contains a crossing link U that is uniform and independent of the rest, so E[x_p] = 0. QED. Consequence: for the top eigenvalue of the time transfer, e(b) := log lambda_0 with free side b, e(b_1 + b_2) at least e(b_1) + e(b_2) (take (1/a) log and a to infinity). This is the opposite sign to Lemma K (b).
+
+**FW3 (the wall cost is finite and the deficit is monotone).** b -> log Z(a; b) is convex in an F direction (Z = <v, R^(b-1) v> is a positive combination of exponentials of b), so e is convex in b. Put f = sup e(b)/b = lim e(b)/b and D(b) = f b - e(b), at least 0. D is concave and bounded below, so D is non-decreasing. D is bounded above: the crossing factor in FW2 is at most exp(beta N a), N the number of crossing plaquettes per time step, so e(b_1 + b_2) at most e(b_1) + e(b_2) + beta N and f b at most e(b) + beta N. Put D_inf = sup D (the cost of two free walls per unit time) and delta_e(b) = D_inf - D(b). Then delta_e is at least 0, non-increasing, tends to 0, and e(b) = f b - D_inf + delta_e(b). QED.
+
+**FW4 (the trace seed gives the gap of its own box).** For the trace form, S(a; B) is at least (lambda_1/lambda_0)^a, so m(B) is at least log(1/S(a; B))/a. The engine's content is only the passage to larger boxes.
+
+### 6.2 The vector engine (W-ENG) cannot be proved from positivity and axis exchange (PROVED: a counterexample in the class)
+
+Class: functions Z(n_1, ..., n_4), symmetric, with Z(0, .) = 1 and, in each variable, Z = sum over k of w_k lambda_k^(n) with w_k at least 0 and sum w_k = 1 (the spectral form of a unit vector under a positive operator), and super-multiplicative in each variable (FW2). This is every property of the all-free family that 6.1 has.
+
+Example. Fix f real, m above 0, z^2 above 0. With V = n_1 n_2 n_3 n_4 and V_mu = V/n_mu put
+
+  log Z(n) = f V + z^2 sum over mu of V_mu (e^(-m n_mu) - 1).
+
+Check. Symmetric. In the variable t = n_1 with (b, c, d) fixed: log Z = t [f bcd + z^2 (cd(e^(-mb) - 1) + bd(e^(-mc) - 1) + bc(e^(-md) - 1))] + N (e^(-mt) - 1), N = z^2 bcd. So Z(t) = sum over k at least 0 of [e^(-N) N^k/k!] (lambda_0 e^(-mk))^t: Poisson weights, eigenvalues lambda_0 e^(-mk). Z(0) = 1. Super-multiplicative: the difference of the two sides is N (1 - e^(-mt))(1 - e^(-mt')), at least 0.
+Its vector thermal sum is S_W(t; (b, c, d)) = exp(z^2 bcd e^(-mt)) - 1. Its gap on the cyclic subspace is m for every box.
+Now fix any s_W in (0, 1) and any C. Take N_0 at least 3, s below s_W with C s below 1, z^2 = s/(16 N_0^3), and m = mu/N_0 with 0 below mu below log(1/(C s)). Then S_W(N_0; (2N_0)^3) = exp((s/2) e^(-mu)) - 1 is below s. The conclusion of (W-ENG) asks a gap at least log(1/(C S_W))/N_0, which is at least log(1/(C s))/N_0, above mu/N_0 = m. False. QED
+
+Reading. The walls exchange one light particle with a small coupling z. A vector sum sees a state only through its overlap with the wall vector. No integrality protects it. So row 900's crux (W-ENG), as stated, needs an input beyond positivity and axis exchange: a lower bound on the wall overlap of every light state. This is the outcome row 900 named as a stop: "a trace-only step shown necessary by a counterexample". It does not say (W-ENG) is false for the Wilson model. A second defect stands even if it were true (ARGUED): a gap on the cyclic subspace of the wall vector is wall-to-wall decay; a local observable A applied to a state is not in that subspace in general, so decay of local correlations does not follow.
+
+
+### Lead note received during Step 6 (2026-11-13), and rows 899, 901 as READ (clone at b130977d2; FINISH.md line 976; gap-wall-assume-max.md L289-354; gap-wall-assume-check-astra.md, final RESULT line)
+
+- Row 899 (Fable, assumptions exercise on five walls). Six shared assumptions: (SA1) bare unit lattice at one order-one Wilson coupling, while the real object is first passage; (SA2) uniformity in a conditioning variable; (SA3) absolute values where the true quantity is a likelihood-ratio mean with cancellation; (SA4) the torus and its conserved centre charge, forced by the consumer; (SA5) one coupling; (SA6) group-blind proofs. Reduction (VAR-SLAB): for the half-torus slab twist ratio rho under the two-slice law, E[rho^2] = 1, Var(rho) = 4p(1-p), p/(1-2p) = E_tw[sinh^2(X/2)], X = log rho; so 4p(1-p) is at most E|grad X|^2 divided by the gauge-invariant Langevin gap lambda. The flux half at one coupling follows from lambda and one L^2 force response (FR). Also: the flat-wall slab orders up to a thickness near the deconfinement length (GUIDE at beta 2.3).
+- Row 901 (check, Codex astra): the VAR-SLAB identities, the Poincare step and the conditional FR reduction HOLD. SA6's "every compact group with a centre" statement FAILS. SA4 HOLDS for the named torus consumer. (FR) and lambda at order one stay OPEN.
+- Use in this note. (VAR-SLAB) is a checked edge "glue in Langevin form plus (FR) gives the flux half". Together with SA4 it says the same thing as my ordering remark in Step 4: the flux half is tied to the torus consumer, and the open content sits in the glue half plus one response statement. I add it as candidate C17 in Step 5.
+
+### 6.3 The trace engine (W'-ENG): what ports, the exact enlargement inequality, and where it stops
+
+Family: W(a, b) = Z(P: a; F: b, F: c, F: d), time periodic, space free, c and d fixed. It is NOT symmetric in (a, b): the exchange turns the trace into a vector element. Two expansions of the same number (PROVED, notation of 6.1):
+
+- time channel: W(a, b) = Tr M_b^a = lambda_0(b)^a (1 + S(a; b)); g(a, b) = log(1 + S) at least 0; e(b) = f b - D_inf + delta_e(b) (FW3);
+- space channel: W(a, b) = <v_a, R_a^(b-1) v_a> = w_0(a) r_0(a)^(b-1) (1 + S_W(b; a)); gamma(b, a) = log(1 + S_W) at least 0, non-increasing in b; eps(a) = log r_0(a), omega(a) = log w_0(a). (w_0 above 0: ARGUED from strict positivity of the kernel.)
+
+**Lemma FW5 (crossing with walls; PROVED).** (i) p(a) := lim over b of g(a, b)/b exists, p(a) = eps(a) - a f, and p(a) is at least 0. (ii) With c(a) := omega(a) - a (f - D_inf):
+  g(a, b) = (b - 1) p(a) + c(a) + gamma(b, a) - a delta_e(b).
+Proof. Equate the two expansions: a e(b) + g(a, b) = (b - 1) eps(a) + omega(a) + gamma(b, a). Divide by b and let b grow: e(b)/b tends to f, gamma is bounded. This gives (i). Insert e(b) = f b - D_inf + delta_e(b) and eps(a) = a f + p(a). QED
+Reading: p(a) is the bulk thermal density per unit length; c(a) is the thermal wall term; a delta_e(b) is the zero-temperature wall-to-wall term at separation b; gamma is the vector sum of the crossed channel. The extensive wall cost D_inf cancels exactly.
+
+**Lemma FW6 (enlarging a free side at fixed time; PROVED).** For h at least 1:
+  g(a, b + h) at most g(a, b) + h p(a) + a [delta_e(b) - delta_e(b + h)], at most g(a, b) + h p(a) + a delta_e(b).
+Proof. Each eigenvalue of R_a is at most r_0(a), so W(a, b + h) at most r_0(a)^h W(a, b). Take logarithms, use both expansions in the time channel and e(b + h) - e(b) = f h + delta_e(b + h) - delta_e(b). QED
+
+**What ports.** The squaring S(2a; B) at most S(a; B)^2 holds (trace, multiplicities at least one). FW4 gives the gap of the seed box itself. FW6 replaces Lemma E.
+
+**Where it stops.** Lemma E closed because Lemma X bounded the deficit by the thermal sum of the same family: (b - a) kappa(b) at most g(a, b). Here the same closure needs two bounds that I could not prove from the class:
+  (WALL-1) b p(a) at most C_1 g(a, b). By FW5 (ii) this is a lower bound on the thermal wall term: c(a) at least -(C_1 - 1) g(a, b) + (lower-order terms).
+  (WALL-2) a delta_e(b) at most C_2 g(a, b) for a at most b/2: the zero-temperature wall-to-wall term at the larger separation is dominated by the thermal sum at the shorter time.
+Given (WALL-1) and (WALL-2) with absolute constants, FW6 with h = b gives g(a, 2b) at most (1 + C_1 + C_2) g(a, b), three uses give the cube, the squaring gives the step, and the recursion of Theorem S runs with 5041 replaced by a constant depending on C_1, C_2 (ARGUED; constants not written).
+Why they do not follow (PROVED limits, then ARGUED). delta_e belongs to the time-channel operators M_b, which the all-free family also uses; there it equals the density of a VECTOR thermal sum between the two walls (from the symmetric identity of the all-free family, by the same division; ARGUED, written in my scratch reasoning, not here). Vector sums see states through wall overlaps. 6.2 shows that wall overlaps are not controlled by positivity and axis exchange. (WALL-2) says in physical words: the walls do not couple to the light states exponentially more strongly than the heat bath does. (WALL-1) says: free walls do not remove more thermal weight than a fixed fraction of the bulk. Both are true for a free massive field (ARGUED) and both are locality statements about walls.
+I found no counterexample to (W'-ENG) in the class. A candidate (a wall that raises the mass in small boxes) violates positivity in the crossed channel: exp(-a kappa e^(-mu b)) has alternating coefficients in e^(-k mu b) (PROVED, one line). So (W'-ENG) is OPEN, neither proved nor refuted.
+
+**A corollary that does hold (PROVED from the READ statement of Corollary S2).** Take two periodic directions (time and one space direction) and keep the two free sides (c, d) fixed. Then W(a, b) = Z(P: a, P: b; F: c, F: d) is symmetric and is a trace in both variables. Corollary S2 of gap-crux-restate.md applies verbatim: S(2n; 4n) at most ((1 + S(n; 2n))^4 - 1)^2, and a seed at most 1/20 gives a gap on the tubes (2^k n)^2 x (c, d). The thermal sum of such a seed grows with c d, so this is a statement about a tube of fixed cross-section, not a four-dimensional engine. It does show that one winding direction (hence one electric flux sector and one twist plane, no magnetic twist) can be carried without any free-direction lemma.
+
+**Outcome of the first step.** PROVED: FW1 to FW6 and the counterexample of 6.2. OPEN: (WALL-1), (WALL-2), hence (W'-ENG). The route stops at two wall-locality inequalities in the class. If they hold for the Wilson model, the whole seed is one glue number on a free-wall box, with no flux half, no twist and no finite-group test.
+
+## Step 5. The choice
+
+### 5.0 One more candidate, from rows 899 and 901
+
+**C17. The L^2 pair of row 899: (FR) with the Langevin gap. KNOWN since today (row 899, check 901 HOLDS).** Crux: (FR), E_w[|Delta G_b|^2] at most eps^2 for the boundary force under a far centre flip; then p(1 - p) at most (3|B|/(2 lambda)) eps^2. F1: fails for U(1) in both factors. F2: fails for ordered Z_2, frozen Q_8, 2T (Var is near 1). F3: an L^2 statement under the true law, no supremum. F4: no tool; row 899 says its natural proof returns the flux energy. It needs the glue half first (lambda). P1 5, P2 1.
+
+### 5.1 What decides the choice
+
+1. The number has no supplier in any form (Step 4 table; rows 878, 895, 899 say the same). A fourth, fifth and sixth proof lane on the number in a new form is the pattern that row 878 named saturation. So I do not spend all three attacks on the number.
+2. Every form of the number in use carries avoidable load: the flux half and the twists come from the torus consumer (SA4 of row 899; FW1 here); the finite-group tests come with the flux half; the supremum comes from the criteria (SA2); the bare coupling comes from working off the account (SA1).
+3. Since (VAR-SLAB) (checked, row 901) and Proposition K (checked, row 893), every flux route needs the glue half first. The glue half is on every path and has had one proof lane.
+4. One route in the whole list has a KNOWN TOOL for an order-one input that is uniform in the cutoff: the centre-disordering weight (C3), where the electric flux is heavy by a Z_2 expansion at fixed beta_F. It needs the account's permission to choose the weight (C2).
+
+So the three attacks are: remove the flux half from the consumer (C1); obtain the flux half from a known tool by choice of the weight (C2 then C3); and one glue-first attack on the number (C5 in two transports). They use three disjoint inputs: the class (positivity and axis exchange), the account, and the SU(2) measure at order one. C1 and C2-C3 are two independent ways to the same end (a crux that is glue only); either suffices.
+
+Why these beat the others. C9, C10, C11 and C17 attack the flux half in the confined pattern at order one: each is conditional on glue, each has the finite-group tests against it, and C1 or C3 would make each unnecessary. C6 has no margin at 2.3 by row 876's own guide. C7 stops at W4/W12. C12 and C13 are off the 4D order-one crux. C14 and C15 fail a fact test. C4 fails F2. C16 has no proof idea. C8 is folded into attack 3.
+
+### 5.2 Attack 1 (top): the free-wall seed engine
+
+- What. Replace the torus consumer by boxes with free walls in space and periodic time. Then the seed is one glue number and the flux half, the twists and the finite-group tests leave the path (FW1).
+- Exact crux lemma. In the family W(a, b) = Z(P: a; F: b, F: c, F: d) with the notation of FW3 and FW5, for all shapes with 3 at most a at most b/2 and the other two free sides at least b:
+  (WALL-1) b p(a) at most C_1 g(a, b);  (WALL-2) a delta_e(b) at most C_2 g(a, b);
+  with absolute C_1, C_2. Conditional theorem (ARGUED from FW6; constants to be written): then 1 + S(a; (2b)^3) at most (1 + S(a; b^3))^(k^3) with k = 1 + C_1 + C_2, and S(2a; (2b)^3) at most ((1 + S(a; b^3))^(k^3) - 1)^2. So a seed S_fw(a; b^3) below an explicit s'(C_1, C_2) gives a gap on every dyadic free-wall cube, as in Theorem S.
+- Why it beats the others. It is the only candidate whose first lemma changes the crux itself. It needs nothing at order one. It also removes the object the account cannot read (twisted tori, row 837 2.4 item 4).
+- First concrete step (after Step 6). Decide (WALL-2) and (WALL-1) by hand in the lattice free massive scalar field with free walls in space, where every term of FW5 is a Gaussian determinant. If either fails there with constants that grow with the box, drop the engine. If both hold, the proof must use a property the class lacks and the Wilson model has: finite range in the free direction. Look for it as a bound on the wall overlap: the weight ratio w_k/w_0 of FW5's vector form against the trace multiplicity.
+- Second node, to write only after the engine: the gap of free-wall boxes gives the gap of the limit state on local observables (a port of the limit step, rows 700 and 703, from tori to boxes), and the free-wall limit state must be identified with the account's state. Both are OPEN and not started.
+- Model and effort. Claude Fable 5.2 max as author (a new engine is hard, stuck direction). The Gaussian test is routine: Claude Opus 5.5. Check: Codex gpt-6-astra xhigh, line by line, first on 6.2 and FW5, FW6 of this note.
+- Stop condition. Stop with success when (WALL-1) and (WALL-2) are proved with explicit constants for the Wilson weight. Stop and drop when the free scalar violates either, or when a counterexample to (W'-ENG) in the class is written. Park after one max lane that reaches neither.
+- Honest chance. 20 percent that an engine theorem lands (lowered from 45 after Step 6). It supplies no number.
+
+GUIDE for attack 1 (my hand estimate in the continuum free massive scalar; it decides nothing). With Neumann walls, Euler-Maclaurin gives g(a, b) = b p(a) + (1/2) g_2(a) + (exponentially small), g_2 the thermal sum of the wall modes, at least 0. So (WALL-1) holds with C_1 = 1; with Dirichlet walls the sign flips and C_1 is 1 + O(a/b). The zero-temperature wall term is the Casimir energy: a delta_e(b) is about a c d e^(-2mb) (m/b)^(3/2) for m b large, and (pi^2/1440) a c d/b^3 at m = 0, against g(a, b) of about b c d (m/(2 pi a))^(3/2) e^(-ma), or (pi^2/90) b c d/a^3 at m = 0. The ratio is at most about (1/16)(a/b)^4 at m = 0 and exponentially small for m a large. So (WALL-2) holds there with a small C_2. Both inequalities look true for a local free field. What an interacting proof must overcome (ARGUED): the wall vector has an overlap with the vacuum that is exponentially small in the wall volume, so the crude comparison of a vector sum with a trace loses an extensive factor.
+
+### 5.3 Attack 2: the flux half from a known tool, by choice of the bare weight
+
+- What. Use a weight exp(beta_F x_p + (centre-blind part)) with beta_F small and fixed, and let only the centre-blind coupling run to the continuum. Then thin centre vortices are cheap at every cutoff and the flux half is a convergent Z_2 expansion.
+- Exact crux statements, in order.
+  (UNIV-FP) (a question to the account; READ only through row 900, the file YM4_1400.tex is not among the sources on disk at /Users/jonreilly/ym4d-lead/sa): the account's fixed-horizon universality holds at the first-passage horizon with constants uniform in K, covers a weight of this mixed type, and bounds the difference of the seed numbers of two weights below half the margin.
+  (FLUX-Z2) For beta_F with C tanh(beta_F) below 1 (C the surface-counting constant of the four-dimensional lattice), every torus, every centre-blind part and every twist v: Z^v/Z^0 is at least 1 - (C tanh beta_F)^(A_v), A_v the least area of a closed surface of odd class against v.
+  Argument for (FLUX-Z2) (ARGUED here; it is the comparison of Mack and Petkova 1979 and Frohlich 1979 as recalled in row 876 idea 31, not read by me; to be rebuilt in the repo before any use). Write U = z U~, z in Z_2. Then x_p(U) = (dz)_p x~_p, so given U~ the centre is a Z_2 gauge theory with couplings K_p = beta_F x~_p, and |K_p| is at most beta_F for EVERY U~ (row 876 idea 2 proves the splitting). Its expansion in tanh K_p is a sum over closed surfaces; the twist changes the sign of the odd-class surfaces only; so the Z_2 ratio is at least 1 - (C tanh beta_F)^(A_v) for every U~. Both Z_2 partition functions are positive, so the bound survives the average over U~. On the torus (a, b, b, b) this gives Q_0 at most (1/2)(C tanh beta_F)^(ab): (CORE), uniformly in the volume and in the centre-blind coupling.
+  (MULTIPLET) Theorems S and R for a transfer operator whose top of spectrum is a multiplet of eight states with splittings and mixings bounded by e^(-c x area) (row 876 G11: with cheap thin vortices the SO(3) bundle classes of a slice are nearly degenerate vacua of the periodic box, so (ES) fails as stated).
+- Fact tests. F1: no such centre quotient acts in U(1) Coulomb. F2: the supremum over U~ is taken below its ceiling by the choice of beta_F, which is the point; Q_8 and 2T would pass (FLUX-Z2) too, and correctly so (their fundamental loops are disordered by the same thin vortices). F3: a uniform bound, but in its convergent range by construction. F4: a known tool reaches the flux half; the glue half stays.
+- Why it beats the other flux routes. It is the only route where an order-one input is supplied uniformly in the cutoff by a convergent expansion. C9, C10, C11, C17 ask the same half of the Wilson measure at order one with no tool.
+- First concrete step. Port the universality subsection of the account with line references, at the commit the lane cites for the outline (row 837 names 2bc0658f91d2): its hypotheses on the bare weight, whether the horizon may be first passage, whether the constants depend on K. Decide yes or no.
+- Model and effort. Claude Opus 5.5 high for the port. If yes: Claude Opus 5.5 max rebuilds (FLUX-Z2) with constants (routine expansion); Claude Fable 5.2 medium proves or refutes (MULTIPLET); Codex gpt-6-astra xhigh checks each.
+- Stop condition. Stop the whole attack if the port says no (fixed horizon only, K-dependent constants, or a weight class that excludes the mixed weight). Stop (MULTIPLET) at a proof or a counterexample in the class.
+- Note. If attack 1 lands, (MULTIPLET) is not needed (free-wall boxes carry no bundle classes), but (UNIV-FP) is still worth its port: it decides SA1-type questions for every later lane.
+- Honest chance. A usable yes from the port: 25 percent. The whole chain: under 10 percent. It supplies the flux half only.
+
+### 5.4 Attack 3: the glue number first, by transport from a proved region, in the mean
+
+- What. The glue half is on every path (5.1 item 3) and has no tool. Attack it once, before any further flux lane, in the one family of statements that has exact identities and proved starting regions.
+- Exact crux lemma (GLUE-1). At one beta in [2.3, 2.6] there are a and b at least 24a with S_ev(a; b^3) at most 1/10 (periodic even form; with (CORE) it is the SH seed, Corollary O1 of row 892, checked). If attack 1 lands, the same with the free-wall sum S_fw and the engine's threshold. Transport form (THERM-DI): with X = log(1 + S_ev) at a fixed box shape, dX/d(parameter) is at most -C a dX/da along a path that starts in a proved region, with C independent of the box. In words: along the path, the thermal mean of the loss of level energies is at most C times the thermal mean energy.
+- The two paths (both READ). The coupling path: Proposition TR and Corollary TR1 (row 895; check 896: TR HOLDS, TR1 HOLDS AFTER CORRECTION; start beta at most 0.3609). The pin path at fixed beta: Theorem HL of row 861 (check 877 HOLDS); proved region {beta below 2/9, all a} union {a above 24 beta, all beta} (READ gap-exit-max.md L513); the strip 0 below a at most 24 beta is open. The pin path starts at the target coupling; the coupling path must cross the bare crossover near 2.2.
+- Why the mean form. Check 896 (L390-392): the thermal inequality follows from the level-wise one and is weaker; its converse is not proved. The level-wise form needs an all-level estimate (check 896 D5 gives an analytic family without one). The mean form asks one inequality between two expectations of the thermal state. This breaks SA2 and SA3 of row 899 for the glue half.
+- Fact tests. F1: must fail for U(1) where a level closes (the Coulomb transition on the coupling path; the Higgs transition on the pin path). F2: not needed for the glue half (frozen finite groups are gapped). F3: no supremum if the pin configuration is kept at V = 1 (Theorem HL's path) and the inequality is in the mean. F4: at one bare coupling only (SA1 stands). GUIDE, recalled and not verified by me: the SU(2) model with a fundamental pin has a first-order line at large beta that ends near beta 2.7; if so the pin path is transition-free only below that value and cannot serve along first passage.
+- First concrete step (a decision probe, not a proof lane). (1) Write dX/d(beta) and dX/d(a_pin) as differences of plaquette or pin expectations between the thermal torus and the long torus (the sum rule; C8). (2) Evaluate the mean inequality by hand in three exact settings: SU(2) at leading strong coupling, Z_2 gauge theory at large beta, the two-dimensional heat-kernel model; and show where it fails in Villain U(1). (3) Decide whether a box-uniform C can exist on the band; if yes, state the inequality as the crux lemma with its constant.
+- Model and effort. Codex gpt-6-astra max for the probe. Check by Claude Opus 5.5 high. Promote to Claude Fable 5.2 max only if a box-uniform inequality survives step (2).
+- Stop condition. Close the transport family if no box-uniform mean inequality survives the exact settings. In a proof lane, stop at the first step that needs a supremum over environments or over levels.
+- Honest chance. A clean decision: 60 percent. A surviving inequality worth a proof lane: 10 percent. A seed at order one: 1 percent.
+
+### 5.5 Held, with the order in which I would release them
+
+1. (FR) with (VAR-SLAB) (C17): the best flux statement on the torus, if attacks 1 and 2 both fail. It needs the glue half first.
+2. EXC (C10) and the decoder (C11): keep closed while 1 is open.
+3. The twisted thin torus for all M (C13): a real theorem with a small parameter, off the order-one crux; release only by an owner decision on priorities.
+4. No further fresh-framing exercise (the lead's decision in row 878 stands; this note found nothing against it).
+
+## Step 7. Self-check and corrections
+
+Corrections to earlier text of this note.
+1. Table 4.4, row C1: P1 = 45 was written before Step 6. After Step 6 it is 20 (the vector form fails in the class; the trace form needs (WALL-1) and (WALL-2)).
+2. C1 as first written offered row 900's vector form (W) and my trace form (W') side by side. After 6.2 only (W') is proposed. Row 900's (W-ENG) should not get a lane as stated.
+3. (FLUX-Z2) in 5.3: the bound "1 - (C tanh beta_F)^(A_v)" hides an entropy factor. The honest form is by a cluster expansion of log(Z^v/Z^0): it is at least -2 N_v (C_0 t)^(A_v)/(1 - C_0 t), t = tanh beta_F, N_v the number of positions of an odd-class surface (at most b^2 on the torus (a, b, b, b)), C_0 the constant of connected surfaces. Since b^2 is at most e^(ab), the stated form holds with a larger C. The activities are signed (K_p has both signs); the expansion needs only their absolute bound t^|S|. Still ARGUED, not proved here.
+4. FW3 and FW5 are stated for sides at least 3, as the lane's Lemma K (domain correction of rows 698, 699).
+5. 6.2 uses the normalization Z(0, .) = 1 of row 900's convention (Z = <1, L^n 1>). In the convention of 6.1 (u = B_0^(1/2) 1) the total weight is the one-slice partition function instead of 1; the example adapts by one factor and the conclusion does not change (ARGUED).
+
+Checks of my own PROVED items (re-read line by line; this is a re-read by the author, not an independent check).
+- FW1: M = B_0^(1/2) P_G C_w B_0^(1/2); P_G C_w = K by the substitution U' -> gauge transform of U'; the range is gauge invariant; the plane flip is the gauge transformation by -1 beyond the plane. Holds.
+- FW2: the crossing links occur only in crossing plaquettes; under the product measure each crossing plaquette has mean 0; Jensen. Holds for the Wilson weight exp(beta x). For a general weight it needs E[log w] = 0 on crossing plaquettes, which is false in general; then the statement gets a constant per crossing plaquette (not written).
+- FW3: concave and bounded below gives non-decreasing; the upper bound uses |x_p| at most 1. Holds.
+- 6.2: the difference of the two sides of super-multiplicativity is N (1 - e^(-mt))(1 - e^(-mt')); the seed number is exp((s/2) e^(-mu)) - 1, below s; the gap is mu/N_0. Holds.
+- FW5, FW6: algebra re-done; D_inf cancels. Hold, given w_0 above 0 (ARGUED).
+
+Fact tests of the three chosen attacks, once more.
+- Attack 1 is an implication in the class; it holds for every group if it holds at all. Its seed fails for U(1) Coulomb (scale-free thermal sum of the box; row 900's estimate and the Stefan-Boltzmann values are GUIDE). It uses no worst-case bound. It reduces the crux; it does not reach order one.
+- Attack 2: F1 passes; F2 is satisfied in the allowed way (the route does not need SU(2) to differ from Q_8 or 2T, because it does not go through the Wilson measure's own confinement); F3: the uniform bound is used strictly inside its convergent range; F4: reaches the flux half by a known expansion, conditional on (UNIV-FP).
+- Attack 3: F1 must be exhibited by the probe (Villain U(1)); F3 passes in the mean form; F4 only at one bare coupling.
+
+Disposition of the lead's inputs.
+- Row 896 (glue check): used; row 895's no-go claims are not used (2d of Step 2).
+- Row 900 item 1 (route W): taken as attack 1 in trace form; its vector form refuted in the class (6.2). Item 2 (UNIV-FP): taken as the first step of attack 2. Item 3 (SURF): not chosen; row 900 itself reads it as (E17) or stronger with a group-blind free end, and check 874 found the same for (C2).
+- Rows 899 and 901 ((VAR-SLAB), (FR)): recorded as C17, held first in line (5.5). SA4 supports attack 1; SA1 supports attack 2; SA2 and SA3 shape attack 3.
+
+Limits of this note. Nothing at order one is proved. No mass gap. The chances are judgments. I did not open the Sussman-Alpoge sources (the cited outline file is not on disk at the given path); every statement about the account is READ from lane files (credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text). Balaban's estimates are not used. Literature items (Mack-Petkova, Frohlich, Tomboulis, Ito-Seiler, Chatterjee, Gopfert-Mack, the SU(2)-Higgs phase diagram, Casimir and Stefan-Boltzmann values) are recalled or READ through lane rows, not read at source. No numeric run was made. Row 894 was unchecked when read (check 897 had no RESULT). My reading of rows 830-897 is from FINISH.md RESULT texts and the named files, not from every library file.
+
+## Step 8. Final
+
+### 8.1 The three attacks
+
+| # | Attack | Exact crux lemma | First step | Model | Stop |
+|---|---|---|---|---|---|
+| 1 | Free-wall seed engine (C1, trace form) | (WALL-1) b p(a) at most C_1 g(a, b) and (WALL-2) a delta_e(b) at most C_2 g(a, b), absolute constants, in the family Z(P: a; F: b, c, d); then (W'-ENG) by FW6 and the squaring | Decide both in the lattice free massive scalar with free walls; then seek the wall-overlap bound for the Wilson weight | Claude Fable 5.2 max author; Claude Opus 5.5 for the Gaussian test; Codex astra xhigh check | Proof with constants; or a violation in the free scalar or a class counterexample; park after one max lane |
+| 2 | Flux half by a known tool (C2 then C3) | (UNIV-FP) for a mixed weight at the first-passage horizon; (FLUX-Z2) Z^v/Z^0 at least 1 - (C tanh beta_F)^(A_v) for every centre-blind part; (MULTIPLET) Theorems S and R above a multiplet of eight | Port the account's universality subsection with lines; yes or no | Claude Opus 5.5 high port; then Opus 5.5 max and Fable 5.2 medium; astra xhigh checks | Stop all if the port says no; (MULTIPLET) at proof or counterexample |
+| 3 | Glue number first, transport in the mean (C5 with C8) | (GLUE-1) S_ev(a; b^3) at most 1/10 at one beta in the band, via (THERM-DI): dX/d(parameter) at most -C a dX/da with box-uniform C, on the coupling path (from 0.3609) or the pin path at fixed beta (from a above 24 beta) | Sum rule for both paths; evaluate in three exact settings and in Villain U(1); decide whether a box-uniform C can exist | Codex astra max probe; Opus 5.5 high check; Fable 5.2 max only if an inequality survives | Close the family if none survives; in a proof lane stop at the first supremum over environments or levels |
+
+Independence: attack 1 uses only positivity and axis exchange; attack 2 uses the account and a convergent Z_2 expansion; attack 3 uses the SU(2) measure at one order-one coupling. Attacks 1 and 2 aim at the same end (a crux that is glue only) by disjoint means. Attack 3 is the glue half itself.
+
+### 8.2 What is proved here and what is open
+
+PROVED in this note (by hand, elementary; re-read by the author; checked by no one):
+1. FW1: a box with free walls in space has no centre sector and no twist (each plane flip is a gauge transformation).
+2. FW2, FW3: free walls are super-multiplicative (Jensen, Wilson weight); the top eigenvalue's deficit against bulk plus wall is at least 0, non-increasing, with a finite wall cost. The sign is opposite to Lemma K.
+3. 6.2: an explicit symmetric family with positive spectral forms and super-multiplicativity in every direction that satisfies the vector seed and has an arbitrarily small gap. So row 900's (W-ENG) cannot be proved from positivity and axis exchange.
+4. FW5, FW6: the crossing identity with walls, g(a, b) = (b - 1) p(a) + c(a) + gamma(b, a) - a delta_e(b), and the enlargement inequality g(a, b + h) at most g(a, b) + h p(a) + a delta_e(b). The extensive wall cost cancels exactly.
+5. The tube corollary: with two periodic directions and fixed free sides, Corollary S2 applies verbatim.
+
+ARGUED here: the conditional engine from (WALL-1), (WALL-2); (FLUX-Z2) by the Z_2 splitting and a cluster expansion; the ordering remark (the flux half is a torus artifact for the target sector); the free-field plausibility of the wall inequalities (GUIDE).
+
+OPEN: (WALL-1), (WALL-2), (W'-ENG) and its second node; (UNIV-FP); (MULTIPLET); (THERM-DI) and (GLUE-1); and, unchanged, every order-one number of the lane: (CORE), (FR), the Langevin gap, (GLUE-FP), (SEED-FP). No mass gap. Nothing at order one.
+
+### 8.3 Where the top attack stopped
+
+At two wall-locality inequalities. The trace engine ports through the squaring step and through an exact enlargement inequality (FW6) in which the extensive wall cost cancels. It does not close, because the two channels of the free-wall family are different functions and Lemma X's monotonicity argument has no analogue: the thermal wall term c(a) and the zero-temperature wall-to-wall term delta_e(b) are not bounded by the thermal sum from positivity and axis exchange. They look true in a free field. A proof needs a bound on how strongly a free wall couples to light states.
+
+RESULT: Row 898 (Claude Fable 5.2 max, unchecked): the next three attacks are (1) the free-wall seed engine, crux (WALL-1) b p(a) at most C_1 g(a, b) and (WALL-2) a delta_e(b) at most C_2 g(a, b) in the family with periodic time and free space walls, which would make the whole seed one glue number with no flux half, no twist and no finite-group test (first step done: FW1-FW6 PROVED; row 900's vector form (W-ENG) refuted in the class by an explicit family; the trace form stops at the two wall inequalities, OPEN); (2) the flux half from a known tool by choice of the bare weight, crux (UNIV-FP) for a mixed weight at the first-passage horizon, then (FLUX-Z2) Z^v/Z^0 at least 1 - (C tanh beta_F)^(A_v) and (MULTIPLET); (3) the glue number first, crux (GLUE-1) S_ev(a; b^3) at most 1/10 at one coupling in the band through the mean transport inequality (THERM-DI) on the coupling path or the pin path, as a decision probe before any proof lane; held in order: (FR) with (VAR-SLAB), EXC, the decoder; no order-one statement is proved and no candidate has a known tool for the order-one number.

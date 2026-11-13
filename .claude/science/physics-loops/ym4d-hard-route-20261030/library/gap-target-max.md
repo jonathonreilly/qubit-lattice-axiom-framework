@@ -162,3 +162,174 @@ Let A = sum over plaquettes of (1 - x_p) on M = SU(2)^E with the bi-invariant me
 So the transport corrector is phi_b = -A/3 - (b/3) chi_b with L_b chi_b = |grad A|^2 - <|grad A|^2>. The first part has a bounded Hessian. So (T) for the Wilson weight is exactly a one-sided bound on the Hessian of the corrector of the squared force. The identity uses that the Wilson weight is an eigenfunction of the Laplacian plus a constant. It fails for the mixed weight of K7 (the adjoint character has another eigenvalue), so it passes K7 in kind. It holds for U(1) with 4 in place of 3, so it is not selective between U(1) and SU(2).
 
 Stop of step 3. Next: step 4, the ranking, written short.
+
+### Step 4. The ranking. [ARGUED throughout; the numbers in the last column are my judgement, not measurements]
+
+4.0 Four tests I apply to every attack, beyond the brief's fact tests. Each comes from steps 2 and 3.
+- BOTH: does the next statement carry both halves of the seed? A flux-only result needs GLUE, and GLUE has no tool (row 895). A glue-only result needs the flux half.
+- SLACK: how sharp must the proved inequality be? "Unlimited" means any finite constant serves.
+- KIND: is the missing statement structural (a proof may use symmetry, positivity, the Lie algebra) or quantitative in the weight (K7 and Proposition V forbid a structural proof)?
+- LINE: does success reach (SEED-FP), or a bare-window lattice theorem only? By 2.5(ii) and 3c.3(iv) every one-coupling result is a lattice theorem. I count that as real value (no such theorem exists above strong coupling), and I say which is which.
+One more search fact governs the last column: fresh framing has returned the inventory three times in this note (3d.2) and once in row 878. So "chance in a few lane-hours" is the chance that the attack's OPEN statement falls to work on the present inputs.
+
+4.1 The table.
+
+| # | Attack and its next statement | BOTH | SLACK | KIND | LINE | Fact tests | Cheaper model? | Chance of a checked order-one step in a few lane-hours |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Coupling transport of the full thermal trace: (LEV_K)/(VIR-log), equivalently (T-avg) (rows 669, 708, 710; THERM-DI-beta of row 905 in its full-trace form) | yes | unlimited (any K; K of order log b is enough) | one order-one inequality; must use the Wilson weight (fails at any transition, so at K7's line) | lattice gap at every beta in the interval; not the continuum (3c.3(iv)) | pass by construction: fails for U(1), Z_2, Q_8, 2T at their transitions; no worst-case block or layer bound is asked | no; needs invention | under 1 in 100. Three Fable or astra passes found no handle (rows 669, 708, 710, 905). |
+| 2 | EXIT / (PATH) with PIN-MIX: exact block steps from first passage into the zone O (rows 846, 861) | yes | zone radii are explicit (0.05 to 0.14) | quantitative; no small parameter in the crossover | the only attack on (SEED-FP) itself | passes only if the block step is not exterior-uniform; no candidate | no | under 1 in 1000. No object: the account gives no block law. |
+| 3 | EXC / (DRESS): an order-L_i lower bound on the boosted magnetic-cut response (rows 872-890) | flux only | thin: theta below 1 against a margin gamma of about 0.010; R''(0) is about -20 gamma L_i (check 890) | structural, SU(2)-specific through the spin-5/2 filter (check 864) | lattice (E17) at one coupling | passes U(1), Q_8, 2T by the filter; the electric start is group-blind (check 881) | partly: astra max wrote rows 871, 875 | under 1 in 200, and then GLUE is still missing |
+| 4 | (VAR-SLAB): flux half from the Langevin gap lambda and (FR) (row 899) | flux only; lambda is glue-type | (FR) needs eps about 9e-5 lambda^(1/2) | lambda quantitative; (FR) is the flux energy again (row 899, 7.4) | lattice, one coupling | passes; no supremum over slices | no | under 1 in 500. Two open inputs, one behind W2. |
+| 5 | Decoder: (SEED-DEC-U) with (S1), and (S2) (rows 887, 892) | flux only | density 1/9 needed against GUIDE 0.33 | (S1) structural; (S2) group-blind combinatorics | lattice | selective by contraposition (check 891) | (S2) and RIG: yes, astra or Opus | under 1 in 500 |
+| 6 | (KURT) floor 1.66 (rows 886, 894) | flux only, and needs GLUE at the Corollary K' level | floor 1.66 against one-tube GUIDE 1.53 | no mechanism for SU(2) (symmetry theorems need a circle of symmetries) | lattice | passes Q_8 (4), fails to separate SU(2) from 2T, 2O in 2D (all 2) | the small-box decision: yes, Opus | under 1 in 500 |
+| 7 | (GLUE-FP): (Z0) with (COUNT) (row 895) | glue only | unlimited in the gap size (the box is free) | quantitative (K7); "no tool is named" | lattice | the frozen-group PASS verdict failed (check 896) | no | under 1 in 1000 |
+| 8 | Free-wall engine: (JOIN-TH_kappa) on cold boxes (rows 898-911) | glue only by design (no flux on free walls); plus a seed on one cold box; plus the OPEN limit-state node | kappa any absolute constant | "a new input at every scale that the seed does not imply" (row 910): it trades the structural half for a quantitative statement at every scale | lattice, dyadic cubes; limit node OPEN | U(1) fails through the seed; the periodic Q_8/2T test does not apply | no | under 1 in 500 per scale, and every scale is needed |
+| 9 | THERM-DI-pin (check 908) | yes | unlimited in K | quantitative near the Higgs end point | lattice, and only below the first-order Higgs line (RECALLED: near beta 2.73) | passes | no | under 1 in 500 |
+| 10 | (BOOT_eps): a positivity certificate over the Wilson loop equations (row 708, C-E) | yes | eps about 3e-10 at a = 10 (row 899's arithmetic) | the only proof object that changes with the weight | lattice | passes all, K7 included | certificates: Codex with exact arithmetic could search; the owner's rule admits only hand-size certificates | under 1 in 1000 by hand |
+
+4.2 What the table says.
+(a) By what closing buys: 2 first (it is the finish line), then 1 (a gap at every coupling, both halves), then the rest. Attack 2 has no object to work on today, so its hours would be spent restating.
+(b) By kind and slack: 1 stands alone. It is the one statement that is a single inequality of order one with unlimited slack and both halves. Its weakness is known and I repeat it: in every form found so far it is the conclusion in differential form (row 669), and its three failed proofs (pointwise, locality, convexity; row 708) are on record.
+(c) Attacks 3 to 6 are flux-only. Even a proof leaves GLUE, which is quantitative and has no tool. I rank them below 1 for that reason alone. Among them 3 has the only proved SU(2)-specific inequality, and its margin is thin.
+(d) Attack 8 removes the structural half and keeps the quantitative one at every scale. I rank it below 3.
+(e) Order by expected value per Fable hour: 1, 3, 2, 9, 8, 4, 5, 6, 7, 10. The gaps between ranks are small against the common factor: none has a visible proof.
+
+4.3 Three things the list misses. Each is for Opus or Codex, not for Fable.
+- (ONE-K), ARGUED. (SEED-L) is an open condition on a pair of total masses. If the first-passage densities at consecutive cutoffs at one g satisfy, on T_ell and T_(L ell), log of the integral of rho_(K+1) minus log of the integral of rho_K = c_K vol + O(eps_K) with one constant c_K for both tori and the sum of eps_K finite, then (SEED-L) at one cutoff K_0 with margin gives (SEED-L) for every K at least K_0. Call the hypothesis (UNIV-K). It is a weak-coupling statement on the account's own objects, including large-field terms and vacuum factors, which row 904 found the account's universality leaves out. It would cut "uniformly over all first-passage data" down to one datum. It does not touch the crux.
+- K7 as a standing fact test, with Proposition V of row 712 as its proved relative. Row 912 does not list it. It is what separates GLUE-type from flux-type statements (3b.3 P1).
+- The bodies of the Lipschitz-transport papers. READ `library/gap-skeleton-max.md` L368: Shenfeld (arXiv:2205.01642) and Bauerschmidt, Bodineau and Dagallier (arXiv:2307.07619) were read as abstracts only; the criterion "is from memory". They are the one source of one-sided Hessian tools with slack that the lane has not read in the primary text. A luna reading row on their exact hypotheses is cheap.
+
+Stop of step 4. Next: step 5, the choice.
+
+### Step 5. The choice.
+
+5.1 The target. Attack 1 of the table: transport of the full thermal trace along the Wilson coupling.
+
+5.2 Its crux lemma, exactly. READ `library/gap-mid-max.md` L160-172 (row 708; its Theorem TR and Corollary TR1 are L118-158).
+(VIR-log). For the Wilson SU(2) theory and each beta_1 > 0 there are beta_0 at most 1/25600 and an even b at least 256 such that, on the cube B = b^3, for every s in [beta_0, beta_1) and every real t on the characteristic curve t = t_0 E(s), t_0 = ceil(log_2 b), E(s) = exp(integral of K over [beta_0, s]):
+   upper right derivative in s of G(t; B; s)  <=  - K(s) t (dG/dt)(t; B; s),
+with K continuous, non-negative, and integral of K over [beta_0, beta_1] at most log(b/(2 ceil(log_2 b))).
+Here G(t; B; s) = log Tr T_B(s)^t - t log lambda_0(B; s). At integer t the left side is 6 t |B| (abar_(inf,B) - abar_(t,B)), the shift of the mean plaquette action between infinite and finite time extent (Lemma 4.2 there). The right side is K t times the thermal mean of the energy.
+Sufficient level form (Remark LEV there): (LEV_K), no ordered level of the box falls faster than at the logarithmic rate K. Consequence (Corollary TR1 there, PROVED GIVEN Theorem SH and the strong-coupling seed): S(b/2; b^3; beta_1) < 1/1650, a gap on every periodic cube at beta_1, at least 0.12/b on cubes of side at least 32 b.
+I restate what kind of statement it is. K need not be bounded in b. Any bound of the form K_b at most (log b)/(beta_1 - beta_0) minus a little serves. Nothing small has to be proved.
+
+5.3 Why it beats the others. ARGUED; from 4.2.
+- It is the one attack whose next statement carries both halves, has unlimited slack, and holds on a whole interval of couplings. A proof with a terrible constant is a proof.
+- Its fact tests are automatic. By Theorem TR read backwards, (VIR-log) fails on any interval that crosses a transition: U(1) near 1.01, Z_2, Q_8 and 2T at their freezing points, K7's line. A proof must therefore contain a step that uses the Wilson weight. No worst-case block or layer bound is asked for, so the caps 2/3, 0.775 and 1.0109 do not apply to the statement.
+- Flux-only attacks (3 to 6) leave GLUE, and GLUE is the same kind of statement as (VIR-log) with less to offer. The free-wall engine (8) asks a quantitative input at every scale.
+- EXIT (2) buys more and has no object.
+- What it does NOT buy: the continuum gap. It gives the lattice gap at each coupling of the interval, with a box of side exp(integral of K). (SEED-FP) still needs the hand-off or a nearly exact rate at weak coupling (3c.3(iv)). I rank it first knowing this, because a gap for Wilson SU(2) through the band would be the first order-one theorem of the lane and would fix what the hand-off has to land on.
+
+5.4 What is already known to fail, so that the next lane-hours do not repeat it. READ `library/gap-mid-max.md` L160-185, `library/gap-skeleton-max.md` L246-255, FINISH.md L787.
+- A pointwise operator inequality for the electric and magnetic parts of a level: false at the published rates (K about 3.3 against 1/s about 0.4, GUIDE).
+- Locality theorems with a gap-dependent constant C m^(-p): the bound ends at a finite coupling.
+- Convexity in the coupling: bounds the wrong derivative; Ising is in the class.
+- The pointwise Hessian bound (T) for the product transport: false in a solvable chain. For the gradient transport: undecided.
+- Strong coupling (Theorem B of row 710): holds only for s at most 1/(10 b^3). The term that breaks is the vacuum subtraction.
+- Row 708's verdict on a hand proof: it "needs an identity that produces the ratio"; the lattice has no dilation; the substitute is one block step at order one with relative errors of order one in every level.
+
+5.5 Stop condition. Two lane-hours, or earlier at any of these.
+(S-a) A box-uniform counterexample: a model in the lane's class WITH the Wilson one-plaquette weight structure used by the proof attempt (for example the exact loop equation of step 6) and with K_b growing faster than log b on an interval with no transition. Then the attempted mechanism is group-blind and stops.
+(S-b) The attempt reduces again to (T-avg) or to (DEF_K) with no new term. Then it is the conclusion in differential form (row 669) and stops.
+(S-c) Any step that needs a supremum over configurations of a non-local quantity (the Hessian of a corrector, a conditional covariance of a slice). That is SA2 again; stop and record the extremal configuration.
+Continue only if one of these appears: an exact identity that expresses the action deficit of a level through its energy with a remainder of one sign; or a box-uniform bound on K on any interval that leaves the range of Theorem B of row 710.
+
+5.6 Work around it for Opus and Codex.
+- Codex astra xhigh: check step 6 of this note line by line (identities F1 to F4 and the anisotropic comparison). Recompute every constant.
+- Codex luna (reading): the bodies of Shenfeld arXiv:2205.01642 and Bauerschmidt-Bodineau-Dagallier arXiv:2307.07619, and Luscher's trivializing-map paper; the question is the exact hypothesis of the multiscale criterion and whether it tolerates a one-sided bound that is integrable over scales. Also Araki, Lett. Math. Phys. 19 (1990), for the log-majorization used in 6.4 (I RECALL it; it must be read or rebuilt before it carries a step).
+- Opus 5.5 high: rebuild Araki's inequality in the repo from Lowner-Heinz (it is short), so that 6.4 does not rest on a citation.
+- Codex (GUIDE, one numeric worker): on 2^3 x t and 3^3 x t boxes with an exact-kernel or validated heat-bath sampler, measure the two sides of (VIR_K) through F4 of step 6 (plaquette shift against force-overlap shift) for beta from 0.3 to 2.6. This tests the identity and gives K_b on tiny boxes. It proves nothing.
+- Opus 5.5 max: the two ARGUED links (c) and (e) of the chain from (SEED-FP) to (GAP), and the statement (ONE-K) of 4.3 with its account-side hypothesis (UNIV-K). These are on the critical path and need no invention.
+- Not for any model now: a fifth fresh-framing pass on the inventory.
+
+Stop of step 5. Next: step 6, the first step.
+
+### Step 6. First step on (VIR-log): what is exact about the rate, and the exact place where it stops.
+
+Setting. A periodic box B with periods at least 3. X = SU(2)^(spatial links of B), SU(2) the unit quaternions in R^4, <a, c> = Re(a conj(c)). W = sum over spatial plaquettes of (1 - x_p) >= 0. M_b = multiplication by exp(-b W), so 0 < M_b <= 1 and M_(theta b) = M_b^theta. K_b = convolution on every link by exp(b (x - 1)), restricted to gauge-invariant functions. With two couplings, T(b_t, b_s) = M_(b_s)^(1/2) K_(b_t) M_(b_s)^(1/2). The lane's transfer operator (READ `library/gap-wall-assume-max.md` L301: kernel e^(-(V(u)+V(v))/2) I(u, v)) is a positive scalar multiple of T(s, s). The centre flips commute with M and K, so every statement below holds in each electric-flux sector.
+
+6.1 Lemma F (loop equation for the plaquette, in force form). PROVED.
+(F1) On M = SU(2)^E with the product of unit round metrics, Delta x_p = -12 x_p.
+(F2) For plaquettes p, q through a link e: <grad_e x_p, grad_e x_q> = x_(p v q) - x_p x_q, where x_(p v q) is the normalized trace of the six-link loop "p and q with e removed" (x_(p v p) = 1).
+(F3) Let omega be any state with omega(Delta_e f) = b omega(<grad_e A_eps, grad_e f>) for smooth f and the four links e of p, where A_eps = sum over q of (1 - eps_q x_q), eps_q = +1 or -1. This holds for the Gibbs measure of weight exp(-b A_eps) on every torus, twisted or not, and for limits of such. Then
+   12 omega(x_p) = b omega(Phi_p),  Phi_p = sum over e in p, q through e, of eps_q (x_(p v q) - x_p x_q).
+(F4) So for two such states at the same b: omega(x_p) - omega'(x_p) = (b/12) (omega(Phi_p) - omega'(Phi_p)). Summed over p with eps = 1: sum of Phi_p = |grad A|^2. Hence the left side of (VIR_K) at integer t (Lemma 4.2 of row 708) is (s/12) times the shift of the mean squared force between the time-t torus and the infinite cylinder; the derivative of the twist ratio ((T1) of row 899) is (s/12) times the shift of the mean squared force between the twisted and the untwisted torus.
+Proof. (F1) For e in p and the other three links fixed, x_p = <q_e, w> with w a unit quaternion (the staple). A linear function on R^4 restricted to the unit 3-sphere is a spherical harmonic of degree 1, with eigenvalue -3. The four links of p are distinct (periods at least 3), other links contribute 0. (F2) The gradient of q -> <q, w> on the sphere is w - <q, w> q. So the product is <w, w'> - <q, w><q, w'>, and <w, w'> is the normalized trace of staple times inverse staple. (F3) Apply the hypothesis to f = x_p, sum over e in p, use (F1), grad_e A_eps = - sum of eps_q grad_e x_q, and (F2). (F4) Subtract. QED
+Checks by hand. Small b: omega(x_p) = b/4 + O(b^2) for one plaquette (I_2/I_1), and (b/12) Haar(Phi_p) = (b/12) 4 (1 - 1/4) = b/4. Large b in 4D: 12 (1 - 3/(4b)) on the left; on the right the diagonal term gives 4 b 2 (3/(4b)) = 6, so the twenty cross terms give the other 6.
+Remarks. (i) This is the first Schwinger-Dyson equation of the Wilson weight; it is not new (the bootstrap papers start from it; the lane's (BOOT_eps) names the family). What I add is its use: it answers row 708's sentence "I found no inequality that uses this" with the one exact consequence of log-linearity, Delta A = 12 (N_p - A). (ii) K7. For the mixed weight exp(b_F x + b_A (4 x^2 - 1)/3) the adjoint term is a harmonic polynomial of degree 2 in each link (Delta_(R^4)(4 <q,w>^2 - |q|^2) = 8 - 8 = 0), with eigenvalue -8 per link, -32 per plaquette. So the action is no longer an eigenfunction plus a constant, and the scalar identity (F3) is replaced by a system with a second observable. The identity changes with the weight, as K7 demands. (iii) It holds for U(1) with 4 in place of 12. It is not selective between U(1) and SU(2).
+
+6.2 Lemma KF (the level condition can be weakened to its Ky Fan form). PROVED.
+Let D_i(s) = E_i(s) - E_0(s), i >= 1, be the ordered excitation energies of the box. If for some theta' in (0, 1] and all m >= 1
+   D_1(s') + ... + D_m(s') >= theta' (D_1(s) + ... + D_m(s)),          (KF-LEV)
+then S(t; B; s') <= S(theta' t; B; s) for every t > 0. So Theorem TR's conclusion follows from (KF-LEV) with theta' = exp(-integral of K), in place of (LEV_K) for each level.
+Proof. Put x_i = D_i(s'), y_i = theta' D_i(s), phi(u) = e^(-t u), c_i = -phi'(x_i) >= 0. The x_i are non-decreasing and phi is convex, so the c_i are non-increasing. Convexity gives phi(y_i) - phi(x_i) >= c_i (x_i - y_i). Abel summation: the sum over i <= N of c_i (x_i - y_i) equals the sum over m <= N of (c_m - c_(m+1)) S_m with c_(N+1) = 0 and S_m = sum over i <= m of (x_i - y_i) >= 0. So the sum of phi(x_i) is at most the sum of phi(y_i). Let N grow. QED
+Why it matters: Ky Fan sums are variational (the product of the top k eigenvalues is the supremum of det(P T P) over k-dimensional subspaces), single ordered levels are not.
+
+6.3 Theorem ABS (absolute levels obey the electric rate, at every coupling, in every box and sector). PROVED GIVEN the Lowner-Heinz theorem (t -> t^theta is operator monotone for 0 <= theta <= 1; RECALLED, classical, to be rebuilt) and the monotonicity of Bessel ratios (RECALLED; the lane has checked Bessel lemmas in rows 843 and 854, which I did not re-read).
+Notation. On one link, K_b acts on the spin-j sector as e^(-b) 2 I_(2j+1)(b)/b. Put eps_n(b) = log(I_1(b)/I_n(b)) >= 0 for n = 2j+1, and K^_b = K_b divided by its spin-0 value on every link, so 0 < K^_b <= 1 and K^_b = exp(-sum over links of eps_(n_l)(b)). Put T^(b_t, b_s) = M_(b_s)^(1/2) K^_(b_t) M_(b_s)^(1/2) <= 1, with eigenvalues lam_0 >= lam_1 >= ... in a sector, E^_i = -log lam_i >= 0, and the Ky Fan sums EE_k = E^_0 + ... + E^_(k-1). For b < b' put theta(b, b') = inf over n >= 2 of eps_n(b')/eps_n(b), in [0, 1].
+(AN) For b_t < b_t', every b_s >= 0, theta = theta(b_t, b_t'), and every k >= 1: EE_k(b_t', theta b_s) >= theta EE_k(b_t, b_s).
+(ABS) For s < s' and theta = theta(s, s'), on the isotropic line: EE_k(s') >= theta EE_k(s) for every k >= 1.
+Proof. (1) eps_n(b') >= theta eps_n(b) for all n, so K^_(b_t') <= K^_(b_t)^theta (commuting spectral calculus). (2) Conjugate by M_(b_s)^(theta/2) = M_(theta b_s)^(1/2): T^(b_t', theta b_s) <= M^(theta/2) K^^theta M^(theta/2), with M = M_(b_s), K^ = K^_(b_t). For compact 0 <= Y_1 <= Y_2 the ordered eigenvalues satisfy lam_i(Y_1) <= lam_i(Y_2). (3) Araki's log-majorization: for positive A, B and 0 < theta <= 1, the product of the top k eigenvalues of B^(theta/2) A^theta B^(theta/2) is at most the theta-th power of that of B^(1/2) A B^(1/2). For k = 1 this is the Cordes inequality ||X^theta Y^theta|| <= ||X Y||^theta with X = A^(1/2), Y = B^(1/2): scale to ||X Y|| = 1; then Y X^2 Y <= 1, so X^2 <= Y^(-2), so X^(2 theta) <= Y^(-2 theta) by Lowner-Heinz, so Y^theta X^(2 theta) Y^theta <= 1 (non-invertible Y by approximation). For k > 1 apply the case k = 1 to the k-th antisymmetric tensor powers, which respect products and powers and whose norm is the product of the top k singular values. (4) Combine (2) and (3): (AN). (5) M_b decreases in b, so T^ decreases in b_s and every E^_i increases in b_s; since theta s <= s', (ABS) follows from (AN) at (b_t, b_s) = (s, s). QED
+GUIDE (a run that guides only; one-plaquette model on class functions, 60 characters; script `guide/araki_guide.py` next to this file, a few seconds). (AN) held in six test cases with margin between 5e-3 and 0.23 for k up to 6. On the isotropic line of that toy the first gap falls at the rate K_1 = 0.19 at s = 2.3 against the electric rate 0.41, and rises again above s near 4. The toy has no running; it only confirms the direction of the inequality.
+Content. (ABS) is (LEV_K) for the Ky Fan sums of ABSOLUTE energies, with the electric rate K_el(s) = sup over n >= 2 of (-d log eps_n/ds), at every coupling, for every compact group with its own eps (the proof is group-blind). It is the exact Wilson-operator form of the continuous-time fact 0 <= x de/dx <= e of 3c.3(ii).
+
+6.4 The exact obstruction. PROVED (algebra).
+Put Dfc_k(s, s') = EE_k(s') - theta(s, s') EE_k(s) >= 0, the defect of (ABS). For the excitation energies D_i = E^_i - E^_0 and any theta' <= theta:
+   sum over i = 1..k-1 of [D_i(s') - theta' D_i(s)] = Dfc_k - k Dfc_1 + (theta - theta') sum over i = 1..k-1 of D_i(s).
+So (KF-LEV) with theta' holds if and only if
+   (SUPER-D)   k Dfc_1(s, s') - Dfc_k(s, s') <= (theta - theta') (D_1(s) + ... + D_(k-1)(s))   for all k >= 2.
+In words: the vacuum's defect, counted k times, may exceed the defect of the lowest k levels by at most a multiple of their excitation energy. The defect has three non-negative sources, read off the proof of 6.3: the spread of the Bessel ratios over the spins (step 1), the non-commutativity of M and K^ (step 3), and the magnetic step from theta s to s' (step 5), which contributes (s' - theta s) times the magnetic action of each level. The third source is the magnetic deficit of row 708's Way 1: for an excited level it is below the vacuum's by about 3 times the energy (GUIDE, published rates). So (SUPER-D) is not a small correction to (ABS). It is the statement that this deficit is at most K times the energy.
+
+6.5 Where the first step stops.
+- PROVED here: Lemma F, Lemma KF, Theorem ABS given two classical inputs, the identity of 6.4. None is at order one in the sense of the crux; all hold at every coupling.
+- The step from absolute energies to excitation energies is (SUPER-D). 6.4 shows that it is (DEF_K) of row 708 again, now exact for the Wilson operator and in Ky Fan form. No new term has appeared. By stop rule (S-b) of 5.5 this line of attack stops here.
+- What a continuation would need, stated so that it can be tested: an exact identity or inequality in which the magnetic action of a level MINUS that of the vacuum appears with a remainder of one sign. (F3) gives such a difference as a difference of force overlaps (F4), which is an identity between two differences, not a bound on either. The Ky Fan variational form gives upper bounds on EE_k, hence on Dfc_k from above, which is the wrong side for the vacuum term k Dfc_1.
+- So the first step ends at the known wall, in exact form. It adds no handle. I record this as the outcome, not as progress on the crux.
+
+### Step 7. Hand check of step 6, and the fact tests on it. [mine; a re-derivation by the author is not an independent check]
+
+7.1 Re-derived line by line.
+- (F1): eigenvalue of a degree-1 harmonic on the unit S^3 is -k(k+2) = -3; four links; -12. Holds.
+- (F2): <w - <q,w>q, w' - <q,w'>q> = <w,w'> - <q,w><q,w'>, using |q| = 1. Holds. A link traversed backwards gives Re(a conj(q_e) c) = <q_e, c a>, again linear with a unit covector.
+- (F3): signs. L f = Delta f - b <grad A_eps, grad f>, grad_e A_eps = - sum of eps_q grad_e x_q, so L x_p = -12 x_p + b Phi_p and the mean of L x_p is 0. Holds. Small-b check with a twist sign: eps_p b/4 on both sides.
+- (F4): sum over p of Phi_p (eps = 1) = sum over e of |sum over q through e of grad_e x_q|^2 = |grad A|^2. Holds.
+- Lemma KF: Abel identity checked term by term; the last term uses c_(N+1) = 0 and c_N >= 0. The x_i must be the ordered levels at s'; the y_i need no order. Holds.
+- Theorem ABS, the single-link eigenvalue: the Haar integral of e^(b cos th) chi_j is I_(2j)(b) - I_(2j+2)(b) = (2(2j+1)/b) I_(2j+1)(b). Divided by 2j+1 it is 2 I_(2j+1)(b)/b. Holds. K commutes with gauge transformations because the link kernel is a class function. Holds.
+- CORRECTION to the wording of 6.3 step (5) and of "T^ decreases in b_s". M^(1/2) K^ M^(1/2) is not monotone in M in operator order. Its non-zero spectrum equals that of K^^(1/2) M K^^(1/2), which is monotone in M. So the ordered eigenvalues decrease in b_s. The conclusion (ABS) is unchanged. In the same way, step (2) conjugates the inequality K^_(b_t') <= K^_(b_t)^theta, which is legitimate as written.
+- Araki step: the theta <= 1 form follows from the r >= 1 form by A -> A^theta, B -> B^theta, r = 1/theta, and a theta-th power. The Cordes step is three lines given Lowner-Heinz. Compactness: K^ is compact on gauge-invariant functions (finite multiplicities of spin networks), so the products are compact and the antisymmetric powers are legitimate. theta <= 1 uses that I_n/I_1 increases in b (RECALLED). If that monotonicity failed for some n the theorem would need theta replaced by min(1, theta); the GUIDE values are 0.19 to 0.89.
+- 6.4: sum over i = 1..k-1 of D_i = EE_k - k EE_1. The identity follows by adding and subtracting theta EE. Holds.
+
+7.2 Fact tests.
+- U(1) Coulomb: (F3) holds with 4 for 12; Theorem ABS holds (the proof is group-blind). Neither gives a gap, and neither should: both concern absolute energies. The selective statement is (SUPER-D), which fails wherever levels collapse.
+- Q_8 and 2T: Theorem ABS holds with their own kinetic eigenvalues (positive; for Q_8 they are (cosh b - 1)/4 on the sign characters and (sinh b)/4 on the doublet, by direct sum over the eight elements, before normalization). So nothing proved in step 6 distinguishes SU(2) from Q_8 or 2T. (F1) to (F4) have no meaning for finite groups (no Laplacian), which is the only place where step 6 uses the Lie group.
+- K7: (F3) changes form for the mixed weight (6.1 remark ii). Theorem ABS does not: it holds for any positive-definite class weight with monotone ratios.
+- Worst-case caps: no step uses a single-site, vertex-block or layer bound. Every inequality is an operator inequality valid at all couplings.
+- Order one: nothing in step 6 reaches it. The step reduces nothing to a statement a known tool reaches. It locates the crux lemma of the chosen target exactly ((SUPER-D)) and shows that it is the known one.
+
+7.3 What a checker should attack first. The direction of the log-majorization in 6.3 (3) (it is RECALLED and it carries (AN)); the claim that the kinetic operator of the lane's transfer operator is the link-wise convolution on gauge-invariant functions with the eigenvalues stated; the Bessel monotonicity; the convergence in Lemma KF.
+
+### Step 8. Close.
+
+8.1 PROVED in this note (by hand, by the author; not checked by another model).
+- Lemma F (6.1): Delta x_p = -12 x_p; the force form 12 omega(x_p) = b omega(Phi_p) of the plaquette loop equation in every Gibbs state, twisted or not; hence every plaquette shift between two such states is (b/12) times a force-overlap shift.
+- Lemma KF (6.2): the level condition of Theorem TR can be weakened to Ky Fan sums of excitation energies.
+- Theorem ABS (6.3), GIVEN Lowner-Heinz and the monotonicity of Bessel ratios (both RECALLED): the Ky Fan sums of absolute energies of the Wilson transfer operator fall no faster than at the electric rate, at every coupling, in every box and flux sector; and its anisotropic form (AN).
+- The identity of 6.4: (KF-LEV) is equivalent to (SUPER-D).
+- The identity of 3d.3 (the transport corrector is A/12 minus (b/12) times the corrector of the squared force, in the unit round metric; the constants 3 written in 3d.3 belong to the metric of radius 2).
+
+8.2 ARGUED, not proved.
+- The ranking of step 4 and its three structural points (3b.3): GLUE-type statements are quantitative, flux-type can be structural; one-coupling results are lattice theorems; the tolerance point rests on RECALLED transition values.
+- (ONE-K) of 4.3.
+- The reading that every one of my fresh framings was already in the lane (3c.1, 3d.2).
+
+8.3 GUIDE. The one-plaquette run of 6.3. It checks the direction of (AN) and nothing else.
+
+8.4 OPEN.
+- (VIR-log), in any of its forms: (LEV_K), (KF-LEV), (SUPER-D), (T-avg). Nothing in this note moves it at order one.
+- An exact relation that bounds the magnetic action of a level minus that of the vacuum by its energy, with a remainder of one sign. This is the single missing object of the chosen target.
+- Every order-one number of the lane, unchanged: (CORE), GLUE, (SEED-FP), EXIT.
+
+8.5 Advice on the spend, from the outcome of the first step. ARGUED.
+The chosen target is the best-shaped of the live attacks, and its first step ended at the known wall with no new term. So its stop rule (S-b) has already fired once. I advise: at most one more Fable lane-hour on it now, on the one question of 8.4; then hold Fable on the crux until one of the cheap rows of 5.6 returns a new input (the primary texts on Lipschitz transport along a flow, the GUIDE measurement of K_b and of the defects Dfc_k on small boxes, the check of step 6). No other live attack ranks above it, and the same holds for them: none has a visible proof on present inputs. The certain critical-path work (links (c) and (e), (ONE-K) with (UNIV-K)) needs no Fable.
+
+RESULT: chosen target = transport of the full thermal trace along the Wilson coupling (attack 1 of step 4; it alone carries both halves with unlimited slack and automatic fact tests, but it gives a lattice gap, not (SEED-FP)); crux lemma = (VIR-log) of row 708, equivalently (SUPER-D) of 6.4: the vacuum's anisotropy defect counted k times exceeds that of the lowest k levels by at most K times their excitation energy, with the integral of K at most log(b/(2 ceil(log_2 b))); first step outcome = PROVED Lemma F (force form of the plaquette loop equation), Lemma KF (Ky Fan weakening of the level condition) and, given Lowner-Heinz and Bessel monotonicity, Theorem ABS (absolute levels obey the electric rate at every coupling), and it STOPS at the vacuum subtraction, which is row 708's (DEF_K) again in exact form: no handle at order one, nothing on the crux proved.

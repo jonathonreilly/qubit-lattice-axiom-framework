@@ -13,11 +13,17 @@ name: audit-lane
 #   (a) the auto-commit-back-to-main creates a feedback loop concern, and
 #   (b) at hundreds of pushes/day the run count would be UI-noise excessive.
 # The nightly cron keeps main refreshed. Review-loop is the landing gate:
-# it must inspect the PR, rebase/salvage against moving main, regenerate the
-# pipeline, and verify caches before landing.
+# it integrates the reviewed commits onto current main, regenerates the
+# pipeline, and verifies caches before landing. A PR's author does not rebase
+# (docs/ai_methodology/SETTINGS.md, row "PR base").
 #
 # This workflow does NOT perform audits. Audit verdicts are minted only by
 # the configured independent auditor via apply_audit.py.
+#
+# This workflow never edits a science note. The dependency-edge step runs in
+# report mode and prints the edges it would add. Adding one is a deliberate
+# step of a repair lane (docs/ai_methodology/procedures/repair.md), run as
+# `repair_missing_dependency_edges.py --apply` and landed through a PR.
 
 on:
   schedule:
@@ -52,8 +58,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-release.txt
 
-      - name: Repair missing dependency edges
-        run: python3 docs/audit/scripts/repair_missing_dependency_edges.py --apply
+      - name: Report missing dependency edges (no edits)
+        run: python3 docs/audit/scripts/repair_missing_dependency_edges.py
 
       - name: Report main-branch cache drift (warning only)
         run: |
@@ -123,7 +129,6 @@ jobs:
             echo "Push attempt $attempt failed; regenerating from latest origin/main..."
             git fetch origin main
             git reset --hard origin/main
-            python3 docs/audit/scripts/repair_missing_dependency_edges.py --apply
             bash docs/audit/scripts/run_pipeline.sh
             python3 docs/audit/scripts/generate_conditional_prompts.py
             python3 docs/audit/scripts/compute_science_fix_backlog.py

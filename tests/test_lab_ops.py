@@ -83,6 +83,20 @@ class PriorDigestTest(unittest.TestCase):
             (target / "prior" / ".gitignore").write_text("a3.md\n", encoding="utf-8")
             (target / "prior" / "a3.md").write_text("ignored\n", encoding="utf-8")
             self.assertTrue(refused("--lane", "a3"), "ignored, never committed")
+            (target / "prior" / "payload.txt").write_text("not tracked\n", encoding="utf-8")
+            (target / "prior" / ".gitignore").write_text("a3.md\npayload.txt\n",
+                                                         encoding="utf-8")
+            os.symlink("payload.txt", target / "prior" / "a4.md")
+            git("add", "target/prior/a4.md", cwd=repo)
+            git("commit", "-q", "-m", "digest that is a link", cwd=repo)
+            self.assertTrue(refused("--lane", "a4"), "a link to an untracked payload")
+            other = repo / "other"
+            other.mkdir()
+            os.symlink(target / "prior", other / "prior")
+            code, out = call("preflight", "--target", str(other), "--lane", "a1",
+                             "--min-disk-gb", "0", "--min-mem-pct", "0")
+            self.assertEqual(code, 1, "the prior folder is a link")
+            self.assertIn("refuse  prior digest", out)
             digest.write_text("edited after the commit\n", encoding="utf-8")
             self.assertTrue(refused("--lane", "a1"), "changed since the commit")
             self.assertEqual(

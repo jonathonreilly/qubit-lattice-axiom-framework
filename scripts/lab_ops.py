@@ -272,6 +272,8 @@ def digest_refusal(target: str, lane: str) -> str | None:
     if not LANE_RE.fullmatch(lane):
         return f"lane name {lane!r} is not a plain file name"
     digest = Path(target) / "prior" / f"{lane}.md"
+    if digest.is_symlink() or digest.parent.is_symlink():
+        return f"{digest} is reached through a symbolic link; commit the file itself"
     if not digest.is_file():
         return f"{digest} does not exist"
     if not digest.read_bytes().strip():

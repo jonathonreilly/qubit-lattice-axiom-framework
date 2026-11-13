@@ -171,19 +171,19 @@ So the thermal wall term c(a) exceeds the bulk unit p(a) exactly when cutting co
 - Lower: from P(a, n) <= e^(beta a N_1) W(a, n) with n -> infinity: c(a) >= p(a) - a (beta N_1 - D_inf).
 Both defects are of order a x (wall area). (WALL-1) needs c(a) + tau(a, b) >= -(1 - 1/C_1) (b-1) p(a) + p(a)/C_1, a bound with p(a) on the right, which is exponentially small in a in a massive phase. The soft lower bound misses it by the whole wall cost. Same failure as 3.3, on the thermal side.
 
-### 5.3 A reduction that uses the ring engine (PROVED implication)
+### 5.3 A reduction that uses the ring engine (PROVED implication; CORRECTED in Step 10: g_P must be the centre-even ring sum g_P^ev, otherwise the hypothesis carries a flux number)
 
 (RING-CMP_theta): |g(a, n) - g_P(a; n)| <= theta g_P(a; n), for n in {b, 2b}, some theta < 1. By (CUT) this says: the thermal excess of the cut free energy is at most theta times the ring's thermal log-sum.
 Claim. (RING-CMP_theta) on a <= b/2 gives (WALL-1) with C_1 = 2/(1 - theta) and (DBL_k) with k = 4 (1 + theta)/(1 - theta).
 Proof. (D3): g_P(a; b) >= (b - a) p(a) >= (b/2) p(a); so b p(a) <= 2 g_P(a; b) <= 2 g(a, b)/(1 - theta). Lemma E of the ring family (READ gap-next3-max.md L396; the tube corollary, check 902 HOLDS): g_P(a; 2b) <= (2b/(b - a)) g_P(a; b) <= 4 g_P(a; b). So g(a, 2b) <= (1 + theta) g_P(a; 2b) <= 4 (1 + theta) g_P(a; b) <= 4 (1 + theta) g(a, b)/(1 - theta). QED
 This route never meets delta_e or FW6. It needs the ring comparison for each of the three free directions in turn (ring in the doubled direction, the other two free).
-Expected sign (ARGUED): restoring the cut layer lowers excitation energies, so g <= g_P for Wilson (as for the Maxwell edge towers); then only the lower half, g >= (1 - theta) g_P, has content: a free wall removes at most the fraction theta of the ring's thermal weight when a <= b/2. Row 903's GUIDE values correspond to theta about 0.2 (Maxwell, natural walls) to 0.4 (Dirichlet scalar).
+Sign (corrected after the GUIDE run of Step 9): the sign of g - g_P depends on the wall type. Neumann scalar: g >= g_P. Dirichlet scalar: g <= g_P. For Wilson it is not known. If g <= g_P, only the lower half, g >= (1 - theta) g_P, has content: a free wall removes at most the fraction theta of the ring's thermal weight when a <= b/2. Row 903's GUIDE values correspond to theta about 0.2 (Maxwell, natural walls) to 0.4 (Dirichlet scalar).
 
 ### 5.4 Verdict on (WALL-1)
 
 Not proved. Exact failing step: the thermal wall term is the thermal excess of the cut free energy (5.1), and positivity bounds it only extensively (5.2). (WALL-1) holds in the ring family with C_1 = 2 (D3) and at leading order at small beta (4.3: g/(b p) = n_s(b)/(b n_t), between 1 - 1/b and 1). OPEN at order one.
 
-PROVISIONAL RESULT (written in case the run is cut; the final RESULT line, if present below, replaces it): Row 907 (Claude Fable 5.2 max, unchecked): (WALL-1) and (WALL-2) are NOT proved for Wilson SU(2). Proved: p(a) is the ring deficit of the tube family; RP across planes perpendicular to the free axis gives only convexity, FW6 and a one-sided image inequality delta_e(b) <= p(2b)/2 + Delta_w whose defect Delta_w >= delta_e(1) makes it void; an exact doubling identity shows the engine needs only g(a,2b) <= k g(a,b), not (WALL-2); a Gaussian model with a boundary field shows no absolute C_2 exists in the class of local RP models; the image bound delta_e(b) <= C p(2b) fails for the Wilson wall at small beta (tube exchange, argued). Open: the doubling bound at order one.
+(A provisional result line stood here during the run; the RESULT line at the end of the file replaces it.)
 
 
 Correction and upgrade to 3.1 (D1) (PROVED, no READ input needed). eps is convex in n because n -> P(a, n) = Tr R_a^n is log-convex (Cauchy-Schwarz) and eps(n) = lim_a (1/a) log P(a, n). So p = eps - f n is convex. p >= 0 (FW5). p(n)/n -> 0 (3.1 (c)). A convex sequence that is bounded below and is o(n) cannot increase. So p is non-increasing. Correction to 5.2: the sign of the last term in the displayed (WALL-1) condition is + p(a)/C_1 (fixed in place).
@@ -214,3 +214,112 @@ Every PROVED statement of Steps 3 to 5 is group-blind: it uses the positive char
 - Large beta (ARGUED). Free-wall boxes have no centre sector (FW1) and, for a finite group at freezing coupling, a single flat class (check 902, F2, READ). Excitations cost of order e^(-c beta) per unit. So the free-wall seed is small and the conclusion "gap on free-wall cubes" is TRUE for Z_2, Q_8 and 2T in their deconfined phases. The free-wall engine therefore does not distinguish SU(2) from Q_8 or 2T, and it must not: its conclusion is a glue statement, not a flux statement. This is row 898's point, and it is also the route's limit: a gap on free-wall cubes says nothing about confinement.
 - None of my statements uses a property that Q_8 or 2T lack. None is a worst-case, vertex-block or background-uniform bound, and (AN1) is not used.
 
+## Step 7. The conditional engine theorem, with all hypotheses
+
+### 7.1 Theorem C (PROVED implication; it is check 902's corrected engine with the wall hypotheses replaced by the weaker doubling hypothesis)
+
+Setting. Wilson SU(2), one fixed beta >= 0, weight exp(beta x_p), Haar probability, unrestricted gauge group at the walls. Boxes Z(P: a; F: n_1, n_2, n_3), a >= 3. S(a; n) := Tr M_n^a / lambda_0(n)^a - 1, g := log(1 + S), m(n) := log(lambda_0/lambda_1) of M_n.
+Hypotheses. Fix integers a_0 >= 3, b_0 >= 2 a_0, and k >= 1. Put a_j = 2^j a_0, b_j = 2^j b_0.
+  (H-DBL) For every j >= 0 and each of the three steps (b, b, b) -> (2b, b, b) -> (2b, 2b, b) -> (2b, 2b, 2b), b = b_j, at time a = a_j: g(after) <= k g(before).
+  (H-SEED) s_0 := S(a_0; b_0^3) < 1/B, where A = k^3, B = 4 A^2.
+Conclusion. s_j := S(a_j; b_j^3) <= (B s_0)^(2^j)/B and m(b_j^3) >= log(1/(B s_0))/a_0 for every j >= 0.
+Proof. (i) Three uses of (H-DBL): 1 + S(a_j; b_(j+1)^3) <= (1 + s_j)^A. (ii) Squaring, a trace fact: S(2a; n) = sum_{i >= 1} x_i^(2a) <= (sum_{i >= 1} x_i^a)^2 = S(a; n)^2, x_i = lambda_i/lambda_0. So s_(j+1) <= ((1 + s_j)^A - 1)^2. (iii) (READ check 902 L146-152) for 0 <= x <= 1/B: (1 + x)^A - 1 <= 2 A x; so s_(j+1) <= B s_j^2 and B s_j <= (B s_0)^(2^j). (iv) FW4: S(a; n) >= e^(-a m(n)); so m(b_j^3) >= log(1/s_j)/a_j >= (2^j log(1/(B s_0)) + log B)/(2^j a_0). QED
+What it does not give. Boxes that are not dyadic cubes of the ladder. Decay of local correlations or a limit state (row 898's second node, OPEN, not touched here). Any statement about flux, twists or confinement. Any transfer to the first-passage action.
+
+### 7.2 Four sufficient conditions for (H-DBL) (each PROVED as an implication; each OPEN as a statement about Wilson at order one)
+
+On each step of the ladder, with (a, b) = (a_j, b_j), the doubled side in the role of b and the two other sides as spectators:
+  (S1) [row 898; check 902] (WALL-1) b p(a) <= C_1 g(a, b) and (WALL-2) a delta_e(b) <= C_2 g(a, b). Then k = 1 + C_1 + C_2 (FW6).
+  (S4) [Step 11] (H-W) p(a) - c(a) <= C_w g(a, b) and (H-tau) tau(a, 2b) - 2 tau(a, b) <= C_tau g(a, b). Then k = 2 + C_w + C_tau (DBL-ID2). No (WALL-1), no delta_e.
+  (S2) [4.1] (WALL-1) and (CORNER) tau(a, 2b) - tau(a, b) <= C_2 g(a, b), tau = g - (b-1) p - c. Then k = 1 + C_1 + C_2 (DBL-ID). (WALL-2) implies (CORNER). (CORNER) does not see the zero-temperature wall source: in the boundary-field model (4.2) and in family T (6.1) it holds uniformly in J and z, while C_2 of (WALL-2) is unbounded.
+  (S3) [5.3; read in the even form of Step 10] (RING-CMP_theta): |g - g_P| <= theta g_P for the ring in the doubled direction, at sizes b and 2b, theta < 1. Then k = 4 (1 + theta)/(1 - theta). By (CUT) this is one statement: the thermal excess of the cut free energy, F_cut(a; n) - a phi_cut(n), is at most theta g_P(a; n) in absolute value. It uses the ring engine (Lemma E) and never meets delta_e.
+Helpful reductions, PROVED: (WALL-1) and the half-distance bound delta_e(b) <= C' p(floor(b/2)) give (WALL-2) with C_2 = C' C_1/2 on a <= b/2 (by (D1)). (WALL-1) holds in the ring family with C_1 = 2 (D3).
+
+### 7.3 The missing lemma (OPEN; read in the even form of Step 10; a sharper flux-free pair, (H-W) and (H-tau), is in Step 11)
+
+(CUT-TH) At the order-one coupling, for n in {b, 2b} on the ladder and a <= b/2: -theta' g_P(a; n) <= F_cut(a; n) - a phi_cut(n) <= theta g_P(a; n), with theta < 1.
+Exact form of the middle term (PROVED: differentiate log Z in the strength s of the cut layer): F_cut(a; n) - a phi_cut(n) = beta int_0^1 [ <X_cut>_(a, n; s) - a lim_T <X_cut>_(T, n; s)/T ] ds. It is the thermal shift of the mean plaquette of ONE layer of the ring, integrated over that layer's coupling. So (CUT-TH) is a statement about how much of the ring's thermal weight sits within reach of one layer. It is a locality statement in the doubled direction at finite temperature. It has no extensive term on either side. I have no proof and no counterexample.
+Remark (PROVED): no operator bound of the wall by the bulk can replace it. If R >= kappa Q for some kappa > 0, then (as in 3.3) delta_e(b) <= p(2b)/2 + Delta_kappa and Delta_kappa >= 2 delta_e(b') - delta_e(2b') >= delta_e(b') for every b', Delta_kappa := D_inf - (1/a) log kappa in the limit a -> infinity. The defect always dominates.
+
+### 7.4 Status of every statement
+
+PROVED here (by hand; re-read once by the author; checked by no one): 3.1 (a)-(e), (D1)-(D3) (p is the ring deficit; convex, non-increasing; ring (WALL-1) with C_1 = 2); 3.2 (the Cauchy-Schwarz family reduces to convexity and (CS-1), which FW6 and convexity imply); Lemma OS and (OS1)-(OS3); (RP-IMAGE) and Delta_w >= delta_e(1) (the one-sided image inequality is void); 4.1 (DBL-ID); 4.2 (boundary-field model: unbounded C_2, given row 903's mode formulas); 4.4 (COV); 5.1 (CUT); 5.2 (two extensive bounds on c(a)); 5.3 (ring-comparison implication); 6.1 (b) (family T is in the class and has C_2 >= z^2/(8n)); Theorem C; 7.2; the remark in 7.3.
+READ: FW1-FW6, the class counterexample, Lemma E and the tube corollary (gap-next3-max.md, lines cited; check 902 says HOLD); the engine arithmetic (check 902); the Neumann scalar formulas and g(a, 2b) <= 2 g(a, b) (gap-fw-gauss-opus.md; unchecked, check 906 has no file).
+ARGUED: 4.3 (small-beta leading orders; the image bound fails for the Wilson wall; the b^(3/2) growth of delta_e(b)/p(b)); the expected sign g <= g_P; 6.1 (d) beyond the stated ansatz; the U(1), Z_2, Q_8, 2T readings in 6.2, 6.3.
+GUIDE: only numbers quoted from row 903. No numeric run was made in this lane.
+OPEN: (WALL-1), (WALL-2), (CORNER), (RING-CMP), (CUT-TH), (H-DBL) for Wilson SU(2) at any beta (a uniform small-beta proof needs the one-particle band, not only the polymer expansion: the leading-order comparison is uniform only for a u^2 small); the unconditional trace engine in the class; the second node. No mass gap. Nothing at order one.
+Not used: Balaban's estimates; the Sussman-Alpoge sources (not opened); rows 786, 838, 839, 843, 845 enter only as fact tests (6.2, 6.3).
+
+## Step 8. Final
+
+What the brief asked, and the answers.
+1. "What does reflection positivity across a plane perpendicular to a free axis give for delta_e(b)?" Convexity, monotonicity, FW6, and the one-sided image inequality delta_e(b) <= p(2b)/2 + Delta_w. The defect Delta_w = D_inf - N_1 log c_0 is at least delta_e(1). The inequality is void. (3.2, 3.3, 7.3 remark.)
+2. "Does it compare delta_e with the winding cost p(a) as the image identity did?" No. And the image comparison itself is false for the Wilson wall: the wall emits single glueballs (tube clusters), so delta_e(b) is of order p(b + 3/2), far above p(2b). (4.3, argued.)
+3. "Which step fails; build the obstruction." The step is the cancellation of the wall cost: every positivity bound between wall and bulk loses a constant per wall link. Obstruction A: a local RP Gaussian model with a boundary field has C_2 unbounded. Family T: the same inside row 898's class with integer multiplicities. (4.2, 6.1.)
+4. "How is the Step 6.2 counterexample avoided?" For the trace engine its mechanism (weak wall coupling) is harmless by integrality. Its mirror image (strong wall coupling) breaks (WALL-2) in the class and is not avoided by any property written down so far. The engine does not need (WALL-2): it needs the doubling bound, which both obstructions satisfy. (4.1, 6.1.)
+5. "The conditional engine theorem." Theorem C with (H-DBL) and (H-SEED); three sufficient conditions (S1)-(S3); the missing lemma (CUT-TH). (7.1-7.3.)
+
+Recommended next step (one line): the scalar test of (CUT-TH) is done in Step 9 (GUIDE); repeat it for the Maxwell and Proca towers of row 903, then seek a proof of g >= (1 - theta) g_P for the Wilson weight, starting from the layer-coupling formula of 7.3.
+
+
+## Step 9. GUIDE run and author's re-read
+
+### 9.1 GUIDE: (RING-CMP) and (DBL) in the free scalar (script and log: scratchpad/lane907/guide/guide_cutth.py, guide_cutth.log; mode sums from row 903 L33-37; under 1 minute, under 100 MB; it decides nothing)
+
+Scan: m in {0.01, 0.1, 0.3, 1}; b in {6, 8, 12, 16, 24, 32}; c = d in {b, 2b}; a in {3, b/4, b/2}, a <= b/2. Ring = periodic in the doubled direction, Neumann transverse. Slab = Neumann in the doubled direction (the bond-removal cut; row 903's Wilson-matched wall), or Dirichlet in the doubled direction (a variant with a negative wall term).
+
+| slab wall | (g - g_P)/g_P at b and 2b, range | g(a, 2b)/g(a, b), max | worst case |
+|---|---|---|---|
+| Neumann | +0.016 to +0.30 | 1.97 | m = 0.1, a = b/2, b = 32 |
+| Dirichlet | -0.71 to -0.005 | 2.77 | m = 0.01, a = b/2 (the light zero mode of the ring carries most of g_P) |
+| ring itself | 0 | 2.00 | |
+
+Reading (GUIDE). (RING-CMP_theta) holds in both free models with theta < 1: theta <= 0.30 (Neumann, upper half only) and theta <= 0.71 (Dirichlet, lower half only). The doubling ratio stays below 2.8. The sign of g - g_P is the sign of the wall term. Nothing grows with b on the scan. Free fields do not kill (CUT-TH); they do not prove it either.
+
+### 9.2 Author's re-read of the PROVED items (a re-read by the author, not an independent check)
+
+- 3.1: P/W is the mean of exp(beta sum of a N_1 crossing plaquettes); each crossing plaquette has two distinct Haar links for ring sizes >= 3. Holds. f = ell uses |e(n) - eps(n)| <= beta N_1. Holds.
+- 3.2: Tr(A*B) for A = R^n, B = R^k Q R^l is W(a, n+k+l+1); Tr(B*B) = W(a, 2k+1) W(a, 2l+1); wall counts match; (CS-1) follows from FW6 at the midpoint k+l+1 and convexity. Holds.
+- Lemma OS: the single-link convolution has eigenvalue (coefficient of chi_j)/d_j = 2 I_(2j+1)(beta)/beta, decreasing in j; tensor products keep the order of positive operators; the gauge projection commutes. Holds. (OS1)-(OS3) use symmetric sandwiches only. Hold. The unequal-size version of (OS3) is NOT claimed (the kernel of K - c_0^N |1><1| is not pointwise positive).
+- Delta_w >= 2 delta_e(b) - delta_e(2b): from (OS3) and FW3, for b in FW3's domain. Holds.
+- (DBL-ID): FW5 at b + h minus FW5 at b. Holds.
+- 4.2: the source is constant in time and in (c, d), so <s, C s> = a cd (2 G_b(1,1) + 2 G_b(1,b)); the image sum for the Neumann path; g unchanged because the shift is linear in a. Holds, given row 903's bound omega >= mu on every mode.
+- (COV): the affine parts of e cancel in e(b) + e(2L + b) - 2 e(L + b). Holds.
+- (CUT) and 5.3: definitions and (D2), (D3), Lemma E (re-derived: g_P(a; 2b) <= 2 g_P(a; b) + 2 a p(b) and a p(b) <= a g_P(a; b)/(b - a)). Hold.
+- Family T: at a = b/2, m = (2 log 2)/b the ratio is (z^2/n)(1/2)(1/4)/log 2 = 0.18 z^2/n. Holds.
+- Theorem C: steps (i)-(iv). Holds. The hypothesis b_0 >= 2 a_0 is not used by the proof; it is the domain on which (S1)-(S3) are stated.
+Weak points a checker should attack first: (1) Lemma OS for the free-wall slice (the transfer construction with unrestricted gauge group at the walls is taken from row 898 and check 902); (2) the interchange of limits in 5.1 (n -> infinity after T -> infinity); (3) 4.3, which is only argued; (4) 6.1 (d).
+
+## Step 10. Correction from the Z_2 test: the ring comparison must use the centre-even ring sum
+
+Defect found by the test of 6.3. The ring has one winding direction, so its time transfer has a centre-odd sector (one unit of electric flux round the ring), and g_P contains it. For a frozen finite group the odd sector is degenerate with the even one: g_P tends to log 2 or more while g tends to 0. So (RING-CMP_theta) with theta < 1 FAILS for Z_2, Q_8, 2T at freezing coupling, although the engine's conclusion holds there. As written in 5.3, 7.2 (S3) and 7.3, the ring comparison carries one flux number. This is a real defect, not a remark. Fix:
+
+- READ (gap-crux-restate.md L236-238 and L105, stated there for the torus): with one twist plane, Z_odd = (Z - Z^tw)/2 = Tr(T_1^a P_2) = Tr(T_2^b P_1), P = (1 - C)/2, and the Perron vector is even. Re-derived here for free transverse sides (PROVED): C flips the links of one periodic direction across one plane; it commutes with B_0 (each space plaquette at the plane holds two flipped links) and with K; inserting it once in the trace flips the sign of exactly the cd plaquettes of the twist stack, and that stack is the same set of plaquettes for both channels.
+- Even ring family (PROVED, given the READ identity). P^ev(a, n) := (P + P^tw)/2 is symmetric in (a, n). In each variable it is the trace of a power of a positive operator restricted to its even subspace, with the same top eigenvalue. So it has the same eps, f and p, and the proofs of (D2), (D3) and Lemma E apply word for word to g_P^ev(a; n) := log(P^ev(a, n)/r_0(n)^a) >= 0:
+    a p(n) + g_P^ev(a; n) = n p(a) + g_P^ev(n; a);  g_P^ev(a; n) >= (n - a) p(a) for n >= a;  g_P^ev(a; 2b) <= (2b/(b - a)) g_P^ev(a; b).
+  In particular p(a) <= g_P^ev(a; n)/(n - a): the bulk unit p is bounded by the EVEN thermal sum of the ring, with no flux term.
+- The flux number: g_P - g_P^ev = -log(1 - u), u = Z_odd/Z in [0, 1/2).
+- Corrected (S3). (RING-CMP-ev_theta): |g(a, n) - g_P^ev(a; n)| <= theta g_P^ev(a; n) for n in {b, 2b}, theta < 1. Then (WALL-1) holds with C_1 = 2/(1 - theta) and (DBL_k) with k = 4 (1 + theta)/(1 - theta). Same proof as 5.3.
+- Corrected (CUT) and (CUT-TH). Place the twist stack on the cut. Then P^ev_s := (Z_s + Z_s^tw)/2 interpolates from W (s = 0) to P^ev (s = 1), and
+    g_P^ev(a; n) - g(a, n) = F_cut^ev(a; n) - a phi_cut(n),  F_cut^ev := log P^ev - log W = F_cut + log(1 - u) = beta int_0^1 <X_cut>_(ev; a, n; s) ds,
+  where <X_cut>_(ev; s) := [Z_s <X>_s + Z_s^tw <X^eta>_s^tw]/(Z_s + Z_s^tw) and X^eta counts the cd twisted plaquettes with the opposite sign: the mean cut energy in the centre-even ensemble. (The zero-temperature rate is unchanged because P/2 <= P^ev <= P.) (CUT-TH), corrected: -theta' g_P^ev <= F_cut^ev(a; n) - a phi_cut(n) <= theta g_P^ev, theta < 1.
+- The free scalar has no centre; Step 9's table is unchanged.
+- Fact tests after the fix. Frozen finite groups: u -> 1/2, g_P^ev and g are both small; the even comparison is not excluded (ARGUED; no estimate made). U(1): flux sectors are integers, "even" means zero flux; the same structure (ARGUED). The even comparison is a glue statement. It still contains the twisted ring P^tw as an object, but no smallness of u is asked.
+Every later mention of (S3), (RING-CMP) and (CUT-TH) is to be read in this even form.
+
+## Step 11. A second exact identity: doubling without (WALL-1) (PROVED)
+
+The free-wall analogue of Tr R^(2b) <= (Tr R^b)^2. From W(a, n) = w_0 r_0^(n-1) e^(gamma(n, a)):
+  W(a, 2b) = (r_0(a)/w_0(a)) W(a, b)^2 e^(gamma(2b, a) - 2 gamma(b, a)) <= (r_0(a)/w_0(a)) W(a, b)^2,
+because 0 <= gamma(2b, a) <= gamma(b, a). The price of joining two boxes is at most the inverse of the wall's overlap with the vacuum of the crossed channel, in units of r_0. In the thermal variables (FW5 at b and at 2b):
+  (DBL-ID2) g(a, 2b) = 2 g(a, b) + [p(a) - c(a)] + [tau(a, 2b) - 2 tau(a, b)],
+  and p(a) - c(a) = log(r_0(a)/w_0(a)) - a D_inf.
+So (DBL_k) holds with k = 2 + C_w + C_tau as soon as
+  (H-W) p(a) - c(a) <= C_w g(a, b): the wall's thermal term is not more negative than C_w thermal sums; equivalently log(r_0(a)/w_0(a)) <= a D_inf + C_w g(a, b);
+  (H-tau) tau(a, 2b) - 2 tau(a, b) <= C_tau g(a, b).
+(WALL-1) is not needed. This is condition (S4). It is the sharpest pair found here: both terms are purely thermal, and neither contains delta_e or an extensive wall term.
+Checks against the models. Neumann scalar (READ row 903 L62-67): c - p = W_N > 0 and tau > 0 with tau(2b) <= 2 tau(b) (row 903 L119), so C_w = C_tau = 0 and k = 2, as row 903 found. Boundary-field model and family T: c, p, tau do not see J or z; k = 2. Dirichlet scalar (GUIDE, Step 9): k up to 2.77, so C_w + C_tau up to 0.77. The real-multiplicity family of 6.1 (d) with a deep depletion layer violates (WALL-1) and (H-W) separately but not their sum: only (DBL_k) itself is intrinsic.
+Why a <= b/2 matters for (H-W) (ARGUED). p(a) - c(a) decays in a at the rate of the infinite tube's gap; g(a, b) decays at the rate of the box's gap, which is larger by the momentum quantisation of the box. On a <= b/2 the mismatch is a bounded factor (at most about e^(pi/2) for a massless mode). For a much larger than b the hypothesis fails whenever c < p.
+The zero-temperature form of the same inequality, from W(a, 2b) <= (r_0/w_0) W(a, b)^2 alone: g(a, 2b) <= 2 g(a, b) + [p(a) - c(a)] + a [2 delta_e(b) - delta_e(2b)]. It has the same defect as FW6: the term a [2 delta_e(b) - delta_e(2b)] >= a delta_e(b) is what gamma(2b) - 2 gamma(b) cancels. So any proof must keep gamma; it cannot use r_k <= r_0 or gamma >= 0 alone.
+
+RESULT: Row 907 (Claude Fable 5.2 max, by hand, unchecked): (WALL-1) and (WALL-2) are NOT proved for Wilson SU(2) at any beta, and the suggested route is closed with exact reasons. PROVED: p(a) is the deficit of the ring (tube) family, hence convex and non-increasing, and p(a) <= g_P^ev(a;n)/(n-a) with the centre-even ring sum; reflection positivity across planes perpendicular to the free axis gives for delta_e only convexity, monotonicity, FW6 and the one-sided image inequality delta_e(b) <= p(2b)/2 + Delta_w, whose defect Delta_w = D_inf - N_1 log c_0 >= delta_e(1) makes it void (the same for every operator bound R >= kappa Q); the exact doubling identity g(a,b+h) = g(a,b) + h p(a) + tau(a,b+h) - tau(a,b), tau = gamma - a delta_e, shows the engine needs only g(a,2b) <= k g(a,b), which does not contain delta_e; a local reflection-positive Gaussian model with a boundary field, and a family inside row 898's class with integer multiplicities, have C_2 unbounded while the doubling bound holds, so (WALL-2) with an absolute constant is a quantitative statement about the wall's linear coupling to the lightest scalar and cannot follow from structure; the cut identity g_P^ev - g = F_cut^ev(a;n) - a phi_cut(n) reduces (WALL-1) and the doubling bound to one flux-free statement (CUT-TH): the thermal excess of the centre-even cut free energy is at most a fraction theta < 1 of the even ring's thermal log-sum, giving k = 4(1+theta)/(1-theta) through the ring engine (with the full ring sum the statement carries one flux number and fails for frozen finite groups: found by the Z_2 test, corrected in Step 10); a second exact identity g(a,2b) = 2 g(a,b) + [p(a) - c(a)] + [tau(a,2b) - 2 tau(a,b)], with p - c = log(r_0/w_0) - a D_inf, gives the doubling bound with k = 2 + C_w + C_tau from two purely thermal hypotheses and without (WALL-1); Theorem C (conditional engine on dyadic cubes from the doubling hypothesis and a seed s_0 < 1/(4k^6)). ARGUED: at small beta the Wilson wall exchanges single tubes, delta_e(b) = 4 n_t u^(4b+6), p(a) = n_t u^(4a), so the image bound delta_e(b) <= C p(2b) is false while (WALL-1), (WALL-2) hold at leading order. GUIDE (free scalar): (g - g_P)/g_P in [+0.02, +0.30] for Neumann walls and [-0.71, -0.005] for Dirichlet walls on a <= b/2; doubling ratio at most 2.8. OPEN: (H-W), (H-tau), (CUT-TH), (CORNER), (WALL-1), (WALL-2) and the doubling bound at order one; the unconditional trace engine in the class; the limit-state node. No mass gap; nothing at order one.

@@ -60,7 +60,7 @@ to `main` (as `audit-bot`, with `[skip ci]` to prevent feedback loops).
 
 The workflow commits generated files only. It never edits a science note:
 its dependency-edge step runs `repair_missing_dependency_edges.py` in report
-mode and prints the edges it would add. Adding an edge is a deliberate step
+mode and reports counts of candidate edges. Adding an edge is a deliberate step
 of a repair lane, run with `--apply` and landed through a PR.
 
 The full pipeline adds:

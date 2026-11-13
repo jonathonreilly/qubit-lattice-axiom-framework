@@ -21,7 +21,7 @@ name: audit-lane
 # the configured independent auditor via apply_audit.py.
 #
 # This workflow never edits a science note. The dependency-edge step runs in
-# report mode and prints the edges it would add. Adding one is a deliberate
+# report mode and reports counts of candidate edges. Adding one is a deliberate
 # step of a repair lane (docs/ai_methodology/procedures/repair.md), run as
 # `repair_missing_dependency_edges.py --apply` and landed through a PR.
 

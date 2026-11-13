@@ -1,0 +1,20 @@
+N=4 b=2 beta=0.7 a=2: log(1+S_ev)=1.638927412218e-04  INS integral=1.638927412237e-04  ref integral=-2.906e-17
+   Z_theta(0)/Z_0(a)=1.000000000000  Z_theta(1)/lam0^a=1.000000000000  Phi0/lam0^(a+1)=1.000000000000 Phi1/lam0^(a+1)=1.000000000000  R1: Phi(.3)/Phi(.7)=1.000000000000
+   Lemma E: Delta_0=4.3206652386e-04 vs u_aev-u_inf=4.3206652382e-04; Delta_1=-3.616e-14
+   BR: E0(rho)=1.000163906172 vs 1+S_ev=1.000163906172; E1(rho)=1.000000000000; max_theta|Delta|/Delta_0=0.9976; Delta at theta=0.04,0.5,0.96: 4.2655e-04 6.1412e-05 8.3661e-11
+N=4 b=2 beta=1.5 a=3: log(1+S_ev)=4.301032666916e-03  INS integral=4.301032666909e-03  ref integral=-1.197e-16
+   Z_theta(0)/Z_0(a)=1.000000000000  Z_theta(1)/lam0^a=1.000000000000  Phi0/lam0^(a+1)=1.000000000000 Phi1/lam0^(a+1)=1.000000000000  R1: Phi(.3)/Phi(.7)=1.000000000000
+   Lemma E: Delta_0=4.0312195396e-03 vs u_aev-u_inf=4.0312195397e-03; Delta_1=6.543e-14
+   BR: E0(rho)=1.004310295383 vs 1+S_ev=1.004310295383; E1(rho)=1.000000000000; max_theta|Delta|/Delta_0=0.9981; Delta at theta=0.04,0.5,0.96: 3.9920e-03 1.1723e-03 4.2805e-09
+N=4 b=2 beta=3.0 a=4: log(1+S_ev)=1.848259934711e-01  INS integral=1.848259934711e-01  ref integral=-2.082e-17
+   Z_theta(0)/Z_0(a)=1.000000000000  Z_theta(1)/lam0^a=1.000000000000  Phi0/lam0^(a+1)=1.000000000000 Phi1/lam0^(a+1)=1.000000000000  R1: Phi(.3)/Phi(.7)=1.000000000000
+   Lemma E: Delta_0=3.3689996574e-02 vs u_aev-u_inf=3.3689996574e-02; Delta_1=7.076e-14
+   BR: E0(rho)=1.203009090478 vs 1+S_ev=1.203009090478; E1(rho)=1.000000000000; max_theta|Delta|/Delta_0=1.5847; Delta at theta=0.04,0.5,0.96: 3.3577e-02 4.0025e-02 1.1074e-06
+N=6 b=2 beta=2.0 a=3: log(1+S_ev)=2.312535046040e-03  INS integral=2.312535046039e-03  ref integral=-4.337e-17
+   Z_theta(0)/Z_0(a)=1.000000000000  Z_theta(1)/lam0^a=1.000000000000  Phi0/lam0^(a+1)=1.000000000000 Phi1/lam0^(a+1)=1.000000000000  R1: Phi(.3)/Phi(.7)=1.000000000000
+   Lemma E: Delta_0=1.5438728726e-03 vs u_aev-u_inf=1.5438728727e-03; Delta_1=1.337e-13
+   BR: E0(rho)=1.002315211018 vs 1+S_ev=1.002315211018; E1(rho)=1.000000000000; max_theta|Delta|/Delta_0=0.9978; Delta at theta=0.04,0.5,0.96: 1.5261e-03 5.4452e-04 2.3801e-09
+N=2 b=2 beta=1.0 a=3: log(1+S_ev)=1.110223024625e-15  INS integral=-7.979727989493e-17  ref integral=2.229e-16
+   Z_theta(0)/Z_0(a)=1.000000000000  Z_theta(1)/lam0^a=1.000000000000  Phi0/lam0^(a+1)=1.000000000000 Phi1/lam0^(a+1)=1.000000000000  R1: Phi(.3)/Phi(.7)=1.000000000000
+   Lemma E: Delta_0=8.8817841970e-16 vs u_aev-u_inf=2.2204460493e-16; Delta_1=-6.661e-16
+   BR: E0(rho)=1.000000000000 vs 1+S_ev=1.000000000000; E1(rho)=1.000000000000; max_theta|Delta|/Delta_0=1.5000; Delta at theta=0.04,0.5,0.96: 8.8818e-16 0.0000e+00 -1.1102e-15

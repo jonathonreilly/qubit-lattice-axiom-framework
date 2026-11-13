@@ -239,3 +239,66 @@ Readings (GUIDE). (1) No algebra error was found in (INS), Lemma E, Lemma BR or 
 - No worst case. (SEAM) and (I1)-(I3) are expectations under the true laws (PROVED by inspection of the statements). The caps 2/3, 0.775, 4 G_3 = 1.0109 and (AN1) concern sup-over-environment statements and do not apply to them; they reappear only inside Route D's (D-good).
 - The transition points (U(1) 1.01, Z_2 0.44, Q_8 1.15, 2T 2.15; GUIDE) do not enter: the chain is at one coupling.
 
+## Step 8. Corrections found on re-reading, the ledger, and the result
+
+### 8.0 Corrections to Steps 2-6 (found on re-reading the file; they supersede the text above)
+
+1. Step 2.3 item 3 is WRONG as a size claim. I held G = g(a/2; a^3) at its a = 10 value; but G falls like a^3 e^(-m a/2). Redone (GUIDE, dilute gas, m_0 = 1.22 at beta 2.3, one to three 0++ states): Lemma G5's condition m_ev a >= 2[110592 G + log(1/sigma)] is met first at a about 21 to 23, against a about 10 to 11 for (GLUE-FP) itself in the same model. So (Z0) + (COUNT) costs about a factor 2 in a (the count must be of order one on the whole box at HALF the time; the single gap then removes one particle), not a factor 300. The reasons that remain for preferring (INS)/(SEAM) are items 1, 2, 4, 5 and 6 of Step 2.3: static, exact, local, no worst case, and a fact-test profile at one coupling that also sees the Q_8/2T flat states (which a local gap (Z0) does not, check 896 D3). Lemma C3 also loses about a factor 2 in a (Step 5 reading); (SEAM) itself loses nothing.
+2. Normalization. Step 2.2 counts 6 b^3 seam plaquette pairs and gives 5.0e-10 per pair; Step 4.4 counts 3 b^3 links with the four-term delta_l and gives 1.0e-9 per link. Both are right in their own normalization; Step 4.4's is the one used from Step 4 on.
+3. Arithmetic in 4.4: at (a, beta) = (15, 2.5) the level is log(1.1)/(3 x 2.5 x 360^3) = 2.7e-10, not 3.2e-10.
+4. Step 6.3's Helffer-Sjostrand statement is RECALLED structure (ARGUED), not a proof written here; Stop L does not depend on it.
+
+### 8.1 PROVED here (by hand; checked by no one; the 2D Z_N run is GUIDE support for the algebra only)
+
+- Lemma S1 (the partly glued seam step commutes with the centre flips) and Lemma S2 (its endpoints are T and lambda_0 |Omega><Omega|).
+- Proposition INS: log(1 + S_ev(a; b^3)) = beta int_0^1 sum_l [E_theta^(a) - E_theta^(inf)](delta_l) dtheta, exact, at one coupling; the reference part integrates to 0 because Phi_0 = Phi_1; R1 (the reference is odd about theta = 1/2); R2 (one number per link: log(1 + S_ev) = 3 b^3 beta int Delta_theta); R3 (the finite-s form D_ev(a, s)).
+- The crux lemma in exact form: (SEAM)_psi gives log(1 + S_ev) <= 3 b^3 beta psi; (GLUE-FP) at b = 24 a needs psi <= 1.0e-9 at (a, beta) = (10, 2.3) and 2.7e-10 at (15, 2.5); conversely (GLUE-FP) bounds the theta-average of Delta.
+- Lemma C1 (Delta_theta = Cov(delta_l, pbar_(a-1))/E pbar_(a-1) under the doubled-vacuum seam measure), Lemma C2 (|Delta| <= 8 d_TV <= 4 sqrt(chi2) of one link's seam variables: local indistinguishability), Lemma C3 (time localization: |Delta| <= ||F_d - E F_d||_2 sqrt(chi2_R) + two L^1 localization errors; inputs (I1)-(I3), all averaged).
+- Lemma E (Delta_0 = u_(a,ev)^t - u_inf^t, Delta_1 = 0), Lemma BR (log(1 + S_ev) = log E_0(rho) - log E_1(rho), the theta-path moves copy 1's seam slices from the bridge pi of B1 to nu x nu), Lemma V (d/dbeta_t log(1 + S_ev) = 3 a b^3 Delta_0: the static endpoint is the anisotropy transport rate).
+- Fact tests: U(1) Coulomb fails (SEAM) at least at its endpoint Delta_0 (PROVED reduction; the photon value is GUIDE); frozen Q_8, 2T fail (SEAM) at the GLUE level (PROVED given check 896 D6, READ).
+
+### 8.2 ARGUED (not proved)
+
+The dilute-gas readings (Delta of order e^(-m a), b-independent); the localization of the Q_8/2T failure in (I2); Route L's conditional implication (Bakry-Emery for the seam measure gives (I1)-(I3)); all stops of Step 6 as statements about methods (none is a theorem that the method cannot work; the list of routes is not closed); the note that the account supplies no input at the seed size.
+
+### 8.3 GUIDE
+
+Box sizes (row 918 as corrected by check 919); the corrected G5 size (a about 21 to 23 at beta 2.3); the photon-gas power law; the 2D Z_N run (INS, E, BR, R1 to 12 digits; sup_theta Delta = 1.58 Delta_0 at (4, 3.0, 4)).
+
+### 8.4 OPEN
+
+(SEAM) at order one; equivalently (GLUE-FP) at beta in [2.3, 2.6] and at first passage; each of (I1), (I2), (I3) at beta 2.3 on about 12 correlation lengths; a bound of sup_theta Delta_theta by Delta_0 (false in general by the GUIDE run; open for Wilson SU(2)); a Bakry-Emery or multi-scale Bakry-Emery bound for the Wilson action across the window; (BC-ord1).
+
+### 8.5 Where it stops, exactly
+
+(GLUE-FP) is now one exact identity plus one inequality on one link at one coupling: sup over theta of |Delta_theta(a; 24 a)| <= 1.0e-9 at a = 10, beta = 2.3. The attempt reduces that inequality to clustering of the true seam measure in L^2 for typical environments ((I1)-(I3)) and stops there: the Langevin route at the convexity of the action (Bakry-Emery proved only for beta_W < 1/4), the block route at (BC-ord1), the endpoint route at sup_theta versus theta = 0 (refuted in general by a GUIDE example), the bridge route at an extensive projective oscillation, the account at its weak-coupling first passage. Nothing at order one is proved. No mass gap.
+
+Limits of this note. Lane files were read in bounded ranges (rows 892, 895, 896, 899, 901, 863, 918, 919 and the finish line); rows 786, 838, 839, 843, 845 only through those digests. Sussman-Alpoge source read: YM4_sketch_500.tex L6836-6869 only (credit Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text). Balaban's estimates are not used. No repository file was edited.
+
+Superseded by Step 9 (kept for the record; not the result line): Row 920 (Claude Opus 5.5 max, unchecked): PARTIAL, nothing proved at order one. Target fixed as (GLUE-FP) S_ev(a; (24a)^3) <= 1/10 at a = 10-11 (beta 2.3) / 15-18 (beta 2.5) (GUIDE sizes), attacked in a new static form: the insertion identity (INS, PROVED) log(1 + S_ev(a; b^3)) = 3 b^3 beta int_0^1 Delta_theta dtheta, exact at one coupling, where Delta_theta is the change of one seam link's plaquettes when a length-a ring is reglued into the vacuum cylinder (the reference part cancels since Phi_0 = Phi_1); crux lemma (SEAM): sup_theta |Delta_theta| <= 1.0e-9 at (10, 2.3); PROVED around it: covariance form (C1), local total-variation form (C2), time localization to three averaged local inputs (I1)-(I3) with no worst case (C3), endpoints Delta_0 = u^t_(a,ev) - u^t_inf and Delta_1 = 0 (E), bridge reading (BR), anisotropy face d/dbeta_t log(1 + S_ev) = 3ab^3 Delta_0 (V); U(1) Coulomb fails at the endpoint (photon value GUIDE) and frozen Q_8/2T fail at the GLUE level (from check 896 D6); 2D Z_N GUIDE run confirms the algebra to 12 digits and refutes sup_theta Delta = Delta_0 in general (ratio 1.58); the attempt stops at L^2 clustering of the seam measure at beta 2.3 (Langevin: convexity, Bakry-Emery only below 1/4; blocks: (BC-ord1); endpoint: sup vs theta = 0; bridge: extensive oscillation; account: ends at weak coupling); correction: (Z0)+(COUNT) via G5 costs about a factor 2 in a (a about 21-23 at 2.3, GUIDE), not a factor 300 as first written.
+
+## Step 9. Lead note (2026-11-13): the margins are downgraded; the target is restated without them
+
+Input (lead note; READ D/library/gap-margins-check-astra.md L125-148 and its RESULT L357, row 919, Codex gpt-6-astra). Only the hot-box NO ROOM of row 918 stands. The cold seed, its glue half and the box sizes are UNMEASURED. The dilute-gas forecasts are parameter scenarios, not brackets. "The glue half carries the whole seed" fails at one advertised box (S_ev/S about 0.524 at beta 2.5, m_0 = 0.9, N = 14).
+
+### 9.1 What is withdrawn
+
+- Step 2.1's box-size paragraph (a = 10 to 11 at beta 2.3, b = 240 to 264; a = 15 to 18 at beta 2.5; m_0 a about 12.5 to 13.5) and its "about one more lattice unit" margin remark.
+- Step 1f's reading line ("the glue half is the size-setting half") and the "about 12 correlation lengths" wording in Steps 6 and 8.5.
+- The size numbers in Step 2.3 item 3 and in correction 8.0 (1) (a about 21 to 23): they came from a free-gas model of the same kind check 919 calls a scenario. What survives is structural (ARGUED, no numbers): Lemma G5 uses the count g(a/2; a^3) at HALF the time and removes only one particle with r_1^(a/2). So in any model where the half-time count is set by the same decay rate, it needs about twice the a of the target. It stays a sufficient pair. (SEAM) has no such loss.
+- The numeric levels "1.0e-9 at (10, 2.3)" and "2.7e-10 at (15, 2.5)" are arithmetic at illustrative a only, not a size claim.
+
+### 9.2 The target, restated (supersedes Step 2.1)
+
+Torus (a, b, b, b), b = 24 a (row 892's Theorem SH line r >= 24, READ). For bare Wilson SU(2) at one coupling beta in the window [2.3, 2.6], and in the real problem for every first-passage datum at one physical pair (ell_t, 24 ell_t) with a = ell_t/a_K:
+  (GLUE-FP)_a   S_ev(a; (24 a)^3) <= 1/10, at some a.
+The size a is an unknown of the problem. No measured value supports any particular a. The one surviving GUIDE fact is a lower bound in hot boxes: row 918's direct runs give G = log(1 + S) of 4 to 27 at times t = 2, 3 on b = 4, 6 (NO ROOM there, check 919). Proposition INS gives the crux lemma at every a:
+  (SEAM)_a   sup over theta of |Delta_theta(a; 24 a)| <= psi_*(a, beta) := log(1.1)/(3 beta (24 a)^3),
+which is sufficient for (GLUE-FP)_a (PROVED, Step 4.4). Its theta-average form is necessary (PROVED). This statement uses nothing from rows 918 and 919.
+Why this form (Step 2.3 items 1, 2, 4, 5, 6 stand; none uses the margins). Item 6 now reads: the time-regluing construction HOLDS on the used geometries (check 919 L111), and the only values measured with it that stand are the hot-box ones.
+
+### 9.3 What does not change
+
+Every PROVED statement (S1, S2, INS with R1-R3, C1-C3, E, BR, V, and the two fact-test reductions of 7.2) holds at every a, b, beta. None uses a box size. The Step 6 stops do not depend on a: Stop L is a statement about beta (Bakry-Emery proved only for beta_W < 1/4); Stop D is (BC-ord1); Stop V is sup over theta against theta = 0; Stop B is extensivity in b; Stop A is the end of the account at weak coupling. The 2D Z_N GUIDE run (7.1) is unaffected. In 7.2 the U(1) entry needs no size: a power of 1/a against psi_*(a, beta), which falls like a^(-3); the photon-gas exponent (about a^(-4)) is a recalled, not measured, value (GUIDE). So the U(1) failure is shown only for the GUIDE exponent, and the PROVED part is the reduction to Delta_0.
+
+RESULT: Row 920 (Claude Opus 5.5 max, unchecked): PARTIAL, nothing proved at order one; target stated with no input from the downgraded margins, as (GLUE-FP)_a S_ev(a; (24a)^3) <= 1/10 at an unknown size a (the margins' sizes are withdrawn, and only the hot-box NO ROOM stands as GUIDE), and attacked in a new static form: the insertion identity (INS, PROVED) log(1 + S_ev(a; b^3)) = 3 b^3 beta int_0^1 Delta_theta dtheta, exact at one coupling and every size, where Delta_theta is the change of one seam link's plaquettes when a length-a ring is reglued into the vacuum cylinder (the reference part cancels since Phi_0 = Phi_1); crux lemma (SEAM)_a: sup_theta |Delta_theta(a; 24a)| <= log(1.1)/(3 beta (24a)^3); PROVED around it: covariance form (C1), local total-variation form (C2), time localization to three averaged local inputs (I1)-(I3) with no worst case (C3), endpoints Delta_0 = u^t_(a,ev) - u^t_inf and Delta_1 = 0 (E), bridge reading (BR), anisotropy face d/dbeta_t log(1 + S_ev) = 3ab^3 Delta_0 (V); U(1) Coulomb fails at the endpoint (exponent GUIDE) and frozen Q_8/2T fail at the GLUE level (from check 896 D6); a 2D Z_N GUIDE run confirms the algebra to 12 digits and refutes sup_theta Delta = Delta_0 in general (ratio 1.58); the attempt stops at L^2 clustering of the seam measure at beta about 2.3 (Langevin: convexity, Bakry-Emery only below 1/4; blocks: (BC-ord1); endpoint: sup vs theta = 0; bridge: extensive oscillation; account: ends at weak coupling); (Z0)+(COUNT) via G5 stays sufficient and loses about a factor 2 in a by structure (half-time count), with no size number claimed.

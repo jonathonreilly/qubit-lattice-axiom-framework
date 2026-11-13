@@ -44,6 +44,14 @@ and
 The handoff records that the owner re-pointed this lane to the main gap
 program on 2026-11-11, and that nothing in the lane's record is withdrawn.
 
+## Verification
+
+None yet. No note here names a compute check or a Lean file. That is an open
+obligation under the row "Proof verification" of
+`docs/ai_methodology/SETTINGS.md`: each of the five results needs a check that
+could show it wrong, which means finite instances of its bound and a control
+that fails when the statement is perturbed, or a Lean certificate.
+
 ## Links and hashes
 
 The notes are unchanged byte for byte, so the SHA-256 values that the lane's

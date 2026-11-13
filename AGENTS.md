@@ -23,6 +23,7 @@ current ones.
    files out into a `main` working tree.
 
 `docs/work_history/`, `archive/` and dated campaign packs are history. Read
-them for recovery; never execute them as procedure.
+them for recovery; never execute them as procedure. `research/` holds research
+records in which no framework axiom enters (`research/README.md`).
 
 This repository is public by design. Everything pushed is public.

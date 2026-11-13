@@ -122,9 +122,10 @@ The current runner reports:
   species-universality, Hilbert-dimension, or bond-dimension result.
 
 The fit intercepts are model-dependent finite-size summaries. The 2D
-`1/L` intercept being close to `1/4` is evidence against declaring the finite
-data inconsistent with `1/4`; the separate `c+a/log L` fit in the Widom runner
-favors a value near `1/6`. Neither fit is an all-`L` theorem.
+`1/L` intercept `0.2492` is a runner number. Its closeness to `1/4` is not
+evidence against declaring the finite data inconsistent with `1/4`. The
+separate `c+a/log L` fit in the Widom runner favors a value near `1/6`.
+Neither fit is an all-`L` theorem.
 See the Corrigendum above: the `1/L` intercept depends on the zero-mode
 prescription and is not evidence for `1/4`.
 

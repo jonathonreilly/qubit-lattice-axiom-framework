@@ -348,6 +348,11 @@
       "source_sha256": "9fe449b1e20ff2b6455cd1a592773fe80b58c813cb35724f0ce4e09e4ed679c4",
       "timeout_sec": 120
     },
+    "scripts/frontier_bh_entropy_rt_ratio_widom.py": {
+      "reason": "Explicit source-bound cap for the imported helper in the BH finite-size interpretation correction; matches the existing same-source 120-second capture. No new execution or scientific standing is asserted.",
+      "source_sha256": "09b850e2e896fde9fdf05b41d1be54073bf557410350bde8dc31997762f8b071",
+      "timeout_sec": 120
+    },
     "scripts/frontier_bh_quarter_wald_noether_framework_carrier.py": {
       "rationale": "Bounded review cap; no change to numerical predicates or scientific status.",
       "source_sha256": "8d4c7a6176a1508f2c09d2cea1d47ad3e58aa6b8f98ab4124fb3c72d458ccd52",

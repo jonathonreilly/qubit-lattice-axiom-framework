@@ -171,3 +171,272 @@ So the thermal seed at the isotropic point is: G(0) + integral of Delta <= log(1
 
 Fact tests on Attack 1: it does not prove the seed for U(1) or 2T (it stops before using any SU(2) property). It respects F1-F3. It does not finish.
 
+
+## Resumed 2026-11-13 after the 03:06Z interrupt
+
+- Clone commit now: 9f1e04272b03270994c98fb4b9716e071924bac4 (git pull --ff-only: already up to date). The header commit 2b6acd17 was the clone state of the first run.
+- State found on disk: Steps 1, 2 and 3 are finished (skeleton S0, identities I1-I4, fine split, pre-registered requirements, Attack 1 with its stop at (SHIFT)). They are not redone.
+- Remaining plan (one step per response, each appended before the next):
+  - Step 4. Reshape the skeleton so the difficulty moves off (SHIFT) to a statement with a real handle. Attack 2 on that statement, one stage per response (4a, 4b, ...). Record exactly where it stops.
+  - Step 5. Attack 3 on the next reshaped node (again staged), if Attack 2 stops.
+  - Step 6. Only then: read D/library/gap-assume-opus.md (row 838), D/library/gap-skeleton-final.md Section 13, FINISH rows 830-862 by grep, and the RESULT lines of FINISH rows 860-875. Compare node by node.
+  - Step 7. Correct the skeleton with what the lane has. Say what is new here.
+  - Step 8. Final skeleton with statuses, the one or two next statements, the RESULT line.
+
+## Step 4. Reshape R1 and Attack 2: the thermal part as a property of the slice law alone
+
+Attack 1 put the difficulty on a path in the coupling (SHIFT). A path statement is circular: "the gap does not close along the path" is the claim itself (4.5 below makes this exact). R1 moves the difficulty to a statement about one measure at the target coupling: the law nu of one time slice.
+
+Notation as in 1.1 and 2.1. beta_t sits in the one-link kernel w(g) = exp(beta_t (1/2) tr g) / c(beta_t); b = beta_s sits in V. k_orb is the orbit kernel of I4. N_b = 3|B| is the number of spatial bonds.
+
+### 4.1 Lemma B1 (bridge form of the two-slice law; PROVED, uniqueness is a standard theorem)
+
+The joint law of two adjacent slices under the infinite-time measure is
+  pi(dU, dU') = a(U) k_orb(U, U') a(U') dU dU',  a = e^(-V/2) Omega / sqrt(lambda_0).
+Both marginals are nu. Proof: pi = Omega(U) T(U,U') Omega(U') / lambda_0 and T(U,U') = e^(-V(U)/2) k_orb(U,U') e^(-V(U')/2). QED.
+Standard theorem (Beurling 1960; Csiszar 1975): for a continuous strictly positive kernel on a compact space, a coupling of two given marginals of the form a x a' x kernel is unique. So pi is the static Schroedinger bridge from nu to nu with reference kernel k_orb.
+Consequence. The whole spectrum {r_i} of the slice chain P is a function of the pair (k_orb, nu). The magnetic coupling b enters the thermal part only through nu. (k_orb depends on beta_t only.)
+
+### 4.2 Lemma B2 (a gap bound that does not see the magnetic term; PROVED from Hopf's theorem)
+
+Hopf's theorem (E. Hopf 1963; Birkhoff 1957): an integral operator with continuous kernel T(x,y) > 0 on a compact space, with cross-ratio bound kappa = sup T(x,y) T(x',y') / (T(x,y') T(x',y)), has |lambda| <= tanh((log kappa)/4) lambda_0 for every eigenvalue lambda other than lambda_0.
+The cross-ratio of T(U,U') = e^(-V(U)/2) k_orb(U,U') e^(-V(U')/2) does not contain V. Each bond factor of k_orb lies in [e^(-beta_t), e^(beta_t)]/c, so kappa <= e^(4 beta_t N_b). Hence, for every b >= 0, every box B, and every compact group:
+  r_1 <= tanh(3 beta_t |B|),  E_1 = -log r_1 >= 2 exp(-6 beta_t |B|).
+Reading. In a fixed finite box the gap never closes along the whole path b in [0, infinity), with a bound uniform in b. The bound is extensive in the exponent, so it says nothing at the seed size (|B| = 27000 gives exp(-4 x 10^5)). It holds for U(1), so its decay with |B| is forced. It is the worst case over pairs of slices; an average over nu-typical pairs is what the seed needs (I2).
+
+### 4.3 Lemma B3 (increment form of the gap; PROVED, standard)
+
+P is self-adjoint and non-negative on L^2(nu). So
+  1 - r_1 = inf over f with nu(f) = 0 of E_pi[(f(U') - f(U))^2] / (2 Var_nu(f)).
+(INC). W-gap at rate mu is the statement: Var_nu(f) <= C E_pi[(f(U') - f(U))^2] for every slice function f in the even sector, with 1/(2C) = 1 - e^(-mu a).
+In words: no gauge-invariant function of one slice has a variance much larger than its mean-square change over one time step. In temporal gauge U'_l = U_l W_l with W_l the time-like plaquette over the link l, so the change is a kick by the electric field.
+Continuous-time form (standard, ground-state transform): gap(H) = (1/2) inf of (integral of |grad f|^2 d nu) / Var_nu(f). The gap is half the Poincare constant of nu for the electric Dirichlet form.
+Gaussian check (PROVED by direct computation in one mode): for nu = N(0, sigma) and a Gaussian kernel of variance eps, the bridge has correlation r = sqrt(1 + (eps/(2 sigma))^2) - eps/(2 sigma). So E_1 is about eps/(2 sigma) for a soft mode. The gap is small exactly when the vacuum has a collective coordinate of large equal-time variance. For the photon sigma(k) = 1/(2|k|), which is unbounded; (INC) fails for U(1) through the long-wavelength modes, as it must.
+
+### 4.4 Attack 2: prove (INC) from the curvature of SU(2)
+
+What SU(2) has: Ricci curvature 1/2 per link in the units where the Casimir is j(j+1). U(1) has 0. Q_8 and 2T have no tangent space.
+Standard theorem (Bakry-Emery 1985; Lichnerowicz): if nu = e^(-phi) on a manifold with Ric + Hess phi >= kappa > 0 at every point, then the Poincare constant of nu is at least kappa, with no dependence on the dimension.
+- At b = 0: nu is Haar measure, phi = 0, kappa = 1/2. The criterion gives gap(H_el) >= 1/4 in every volume. (True value 3/2 on gauge-invariant states: four links at j = 1/2.)
+- At b > 0: phi = -2 log Omega. Needed: Hess(-2 log Omega) >= -(1/2 - kappa) at every slice configuration, uniformly in the volume.
+- STOP 1. No pointwise information on Hess log Omega is available away from small b. The same pointwise demand on the four-dimensional action fails at once: by direct computation (PROVED, for one plaquette p with holonomy cos(theta) + i sin(theta) n.sigma and tangent vectors x, y on two of its links, y' = y transported to the base point)
+    Hess S_p (x, y) = (beta/4) [ cos(theta) x.y' - sin(theta) n.(x cross y') ],  Hess S_p (x, x) = (beta/4) cos(theta) |x|^2  (tangent vector X = i x.sigma/2, |x| the Euclidean norm; S_p = -(beta/2) tr U_p),
+  the off-diagonal sum over the 18 neighbouring links is about 18 beta/4 = 11 at beta = 2.5 against Ric = 1/2. This is the known strong-coupling range of the Bakry-Emery argument (beta below about 0.1). It is a worst-case criterion.
+- The averaged form of the criterion is exact but is not a handle: gap >= lambda if and only if the Witten Laplacian on exact 1-forms, nabla* nabla + Ric + Hess phi, is >= lambda. That is the same spectral problem.
+- One trick tried and refuted. The commutator part of Hess S is weighted by sin(theta_p) n_p, which is the gradient of S_p along a link, so one may hope to integrate it by parts into a term without beta. It fails: the Gibbs measure integrates by parts only the full gradient (the sum over the six plaquettes at a link), and the Hessian contains each plaquette's own term. The remainder is of order beta times the field strength, about sqrt(beta) per link.
+- STOP 2. A pointwise curvature bound is false in the window; an averaged one is the problem itself.
+
+### 4.5 Why a path in the coupling cannot carry the difficulty (PROVED, a remark on Attack 1)
+
+Feynman-Hellmann on the path of 3.3: d E_i / d b = <N>_i - <N>_0 with N = sum over the spatial plaquettes of one slice of (1 - (1/2) tr U_p) >= 0, taken in the eigenvectors of T. If |<N>_1 - <N>_0| <= C E_1 on [0, b_1] uniformly in B, then E_1(b; B) >= E_1(0; B) e^(-C b) by Gronwall, and E_1(0; B) = -4 log u_(1/2). Conversely a positive differentiable E_1 has such a C at each b. So the virial inequality with a locally bounded C is equivalent to the absence of a critical point; it is a restatement, not a reduction. Tree-diagram bounds of the Aizenman type would give d(m^2)/db >= -c at best, which allows m to reach zero at finite b.
+
+### 4.6 Two tempting flux lemmas that are false (ARGUED; they close two side doors)
+
+- "Electric flux costs at least the Coulomb energy g^2 n_2/(n_3 n_4)". False for SU(2): in a small periodic box the Z_2 flux energy is exponentially small in 1/g (tunnelling between toron valleys; Luescher, van Baal). So no Gauss-law lower bound on the flux energy exists; A1 cannot be upgraded this way.
+- "Spread the centre twist over a thick sheet by a measure-preserving change of variables, at a cost of order beta times (sheet area)/(transverse area)". This is the abelian Mermin-Wagner construction. For SU(2) the rotation axis must be covariantly constant along the sheet and across it. The cost of the best axis is beta alpha^2 times the lowest eigenvalue of the adjoint covariant Laplacian of the background on a three-dimensional slab, which is of order one per site in a rough background. So the cost is extensive. Also, in four dimensions the classical cost at a symmetric box is scale-invariant (beta pi^2/2), so no logarithm helps.
+
+### 4.7 Where Attack 2 stops, and what moved
+
+- Gained: (B1) the thermal part depends on b only through nu; (B2) a b-uniform, finite-volume gap bound from the cancellation of V in cross-ratios; (B3) the exact variance-increment form (INC); (4.5) the path form is a restatement.
+- Not gained: any volume-uniform estimate in the window.
+- The difficulty did not shrink. It now sits in one sentence about one measure: nu has no gauge-invariant collective coordinate with equal-time variance much larger than its one-step increment. What is known about nu without the answer: it is the slice marginal of a reflection-positive measure. Step 5 uses exactly that.
+- Fact tests: U(1) fails (INC) through soft photons (4.3). Curvature is absent in U(1), Q_8, 2T (4.4). B2 holds for all groups and is extensive, as it must be.
+
+## Step 5. Reshape R2 and Attack 3: the whole seed as one number of the torus
+
+R1 kept the split into a thermal part and a flux part. R2 removes the split. It uses only what is known about nu without the answer: reflection positivity in every direction and the symmetry of the action under exchange of axes.
+
+### 5.1 Lemma T1 (symmetric form of the seed; PROVED)
+
+For an isotropic reflection-positive action put p(n_1, n_2, n_3, n_4) = log Z(torus) / (n_1 n_2 n_3 n_4). Then:
+ (a) p is symmetric in its four arguments;
+ (b) p is non-increasing in each argument;
+ (c) p_inf := inf over all tori = the limit as all sides grow, in any order;
+ (d) with F(n) := log Z(n^4 torus) - n^4 p_inf >= 0:  S(n; (2n)^3) <= exp(8 F(n)) - 1.
+Proof. (a) Relabel the axes. (b) Z = sum over j of lambda_j^(n_1) with lambda_j >= 0 (N2), so Z^(1/n_1) is an l^(n_1) norm of a fixed sequence, which is non-increasing in n_1; use (a). (c) A function non-increasing in each argument and bounded below has this property. (d) log(1 + S(t; B)) = log Z(t x B) - t log lambda_0(B) = t|B| (p(t, B) - p(inf, B)) <= t|B| (p(t, B) - p_inf). At t = n, B = (2n)^3 use (b) three times: p(n, 2n, 2n, 2n) <= p(n, n, n, n). QED.
+
+(TORUS). F(n) <= (1/8) log(1 + 1/5041) = 2.48 x 10^(-5) for one n. By T1 it implies the seed of N6 at that size, flux part and thermal part together.
+Doubling form (PROVED, telescoping): F(n) = sum over k >= 0 of 16^(-k) D_k, D_k = log Z((2^k n)^4) - (1/16) log Z((2^(k+1) n)^4) >= 0.
+Coupling form (N5 again): F(n)(beta) = 6 n^4 times the integral over b in [0, beta] of (P_n(b) - P_inf(b)), P the mean plaquette.
+
+### 5.2 The two fact tests are visible in the one function F (ARGUED)
+
+- U(1), Coulomb phase: F(n) tends to a positive constant (the thermal sum of massless modes at aspect ratio one is scale invariant; twelve lowest modes weigh e^(-2 pi) per direction, and the toron sectors add more). (TORUS) fails.
+- Q_8, 2T at large beta: the even sector is gapped, but F(n) tends to log(number of gauge classes of flat connections on the four-torus) > 0. (TORUS) fails through the flux part.
+- SU(2), small physical size: F is large (toron valleys). SU(2), confined and gapped: F(n) is about 4 x (number of light states) x e^(-m n).
+So F(n) -> 0 says "gapped and no topological sectors" in one line. A proof of (TORUS) must fail for a group with massless modes and for a group with isolated flat connections.
+
+### 5.3 Lemma T2 (cut-and-reglue identity; PROVED)
+
+Let mu_t be the Gibbs measure on t x B, and take two independent copies with slices U_0..U_(t-1) and U'_0..U'_(t-1). Then
+  Z(2t x B) / Z(t x B)^2 = E[R],  R = k_orb(U_(t-1), U'_0) k_orb(U'_(t-1), U_0) / ( k_orb(U_(t-1), U_0) k_orb(U'_(t-1), U'_0) ).
+Proof. Write each Z as the integral of the product over time steps of e^(-V(U_tau)) k_orb(U_tau, U_(tau+1)). Exchanging the two junction kernels turns the product of the two t-torus integrands into the 2t-torus integrand. QED.
+The same holds in each direction, so e^(-16 D_0) is a product of four such means. E[R] = Tr rho_t^2 is the collision probability of the thermal ensemble (N4, I3): the seed says that two independent thermal samples are in the same state with probability at least 1 - 2 s_*.
+
+### 5.4 Attack 3: bound F(n), or one doubling defect, from below-type estimates
+
+The seed needs a LOWER bound Z(big torus) >= (1 - small) x Z(small torus)^(16). Lower bounds on a partition function are the easy direction (Jensen, restriction). So try them on T2.
+
+- Stage 1, Jensen. E[R] >= exp(E[log R]) = exp(-2J), J = E_adjacent[log k_orb] - E_independent[log k_orb] >= 0. J is extensive: each of the 3|B| bonds gains about beta_t (0.65 - 0) (GUIDE numbers at beta = 2.5). So the bound is exp(-10^5). FAILS. Reason, exact: R is a likelihood ratio between "adjacent" and "independent" slices. It is almost zero on a set of probability almost one, and E[R] close to 1 comes from an exponentially rare set where two independent samples nearly agree up to gauge. No first-moment or typical-configuration estimate of R can see it.
+- Stage 2, chessboard estimates as the source of averaged a-priori bounds (reflection positivity gives P(event on every plaquette of a set X) <= q^|X| with q a ratio of constrained to free partition functions). To use them at beta = 2.5 one needs the free energy per plaquette f(beta) = log Z / (number of plaquettes) to within about 0.1. By hand (PROVED bounds, Bessel values I_1(2.5) = 2.5167, I_1(7.5) = 249.7):
+    lower: f >= (1/2) log(2 I_1(beta)/beta) = 0.350  (keep the three time-like orientations, which are independent in axial gauge; Jensen on the rest, whose mean is 0);
+    upper: f <= (1/3) log(2 I_1(3 beta)/(3 beta)) = 1.40  (Hoelder over the three pairs of orthogonal orientations (12)(34), (13)(24), (14)(23); each pair is a product of independent two-dimensional models).
+  The true value is about 0.78 (GUIDE: integral of the Monte Carlo plaquette 0.24, 0.50, 0.65 at beta = 1, 2, 2.5). With 0.35 <= f <= 1.40 every chessboard constant for a plaquette event comes out above 1. FAILS by hand. A warning recorded on the way: the "independent plaquette" value log(2 I_1/beta) = 0.70 is NOT an upper bound for f (the Bianchi constraint raises the plaquette); the valid Hoelder bound is the one above.
+- Stage 3, what would close it. Because of Stage 1 the proof must control a collective, exponentially rare event, which is a spectral statement in disguise. Because of Stage 2 even the simplest averaged input costs two-sided free-energy bounds ten times sharper than the hand tools give. STOP.
+
+### 5.5 What Attack 3 gained
+
+- (T1) the seed, both parts, is one inequality on one scalar function F(n) of torus partition functions. No transfer operator, no sector language, no slice law is needed to state it.
+- Because F is made of torus partition functions only, it is expressed directly by what the Sussman-Alpoge steps keep exactly: the total mass of the unit-lattice density (N1). In D_0 = log Z(l^4) - (1/16) log Z((2l)^4) every extensive local term of the renormalization steps cancels (ARGUED: local terms are translation invariant; terms that wrap the torus are exponentially small in the size over the step scale). What is left is the same doubling defect for the unit-lattice density at first passage. The statement "the last integral is known to e^(O(l^4))" is exactly the statement that D_0 is not known.
+- (T2) and Stage 1: the exact reason why estimates of typical configurations cannot give the seed.
+- Stage 2: a calibration of the hand tools at beta = 2.5.
+- The difficulty did not move off the window. It is now the single statement (TORUS) for the first-passage unit-lattice density on N^4 and (2N)^4 sites, N = l / (unit spacing).
+
+### 5.6 State before the comparison
+
+Three attacks are on disk. Each stops at the same place in a different form:
+ - (SHIFT): no finite-temperature shift of the space-like plaquette along a coupling path (Attack 1);
+ - (INC): no soft collective coordinate in the slice law (Attack 2);
+ - (TORUS): the torus free-energy excess F(n) below 2.48 x 10^(-5) at one size (Attack 3).
+Proved on the way: N3, N4, N5, I1-I4, A1, A2, the path identity, B1-B3, 4.5, T1, T2, the two bounds on f. None of them is an estimate inside the window. I did not find a statement inside the window that I can prove.
+
+## Step 6. Comparison with the lane (read only now, after three attacks were on disk)
+
+### 6.0 What was read
+
+- READ D/library/gap-skeleton-final.md Section 13 whole (L288-L644; lines cut at 1500 characters).
+- READ D/library/gap-assume-opus.md (row 838): Part 1 whole (L21-L183, the 116-row ledger; rows cut at 520 characters), 3.6 to 3.9 and the report (L492-L548). Part 2 and 3.1 to 3.5 were NOT read; I use only their summary in FINISH row 838 and the report.
+- READ FINISH rows 830-862: author rows whole, check and reading rows from their RESULT text. READ the RESULT text of rows 860-875 (row 875 has none yet; rows 876, 877 have none yet).
+- GREP of D/library and FINISH for: anisotrop, Hopf, Birkhoff, Sinkhorn, Schroedinger bridge, cross-ratio, Doob, ground-state transform, electric-only, collision probability, conformal window. READ the hits at gap-brainstorm-max.md L317, gap-shape-exercise-astra.md L163-L212, gap-crux-fp.md L131, gap-compress-opus.md L20, prior/gap-lit-geom.md L12-L18 and L38-L52.
+- Not independent of the lane's authors: rows 697, 708, 712, 720, 737, 860, 861 are by the same model as this file. Agreement with them is a second sample, not a check.
+
+### 6.1 Node by node
+
+| Mine | The lane | State in the lane | Verdict |
+|---|---|---|---|
+| N2 | (TM), (TM-c); rows 667, 671, 698, 699 | checked, two providers | same |
+| N3 (flux/even split) | Identity FL (row 708, checked 709); ledger row 64 | checked | already there |
+| N4 (doubling form, Tr rho^2) | Theorem D-shape (row 705, checked 707): seed = 2F(a,B) - F(2a,B) <= log(1 + t(r)); row 839 (checked 849): seed = chi-square information between slices, min-entropy, rank one | checked | already there |
+| N5 (integrated plaquette shift) | Section 13.20: the two numbers of (ES) are integrated finite-size shifts of the plaquette; Proposition MIX (row 708) | checked | already there |
+| N6 (SEED-FP) | row 837 | port, not checked | same node |
+| N7, N8 | Theorem S, S3', SH, limit theorem, P, P' | checked | same; thresholds are better than my 1/5041: 1/1650 at ratio 2, 1/25 at ratio 4 |
+| C-a / C-b / C-c | flux half / glue half; (NS-gap), (M5-H) for the state count | open | already there |
+| F1-F3 (what a proof must respect) | Proposition T1 (valid form of a test), K6, K7, Proposition V, ceilings 2/3, 0.775, 4 G_3 | checked in part | mine are weaker; see 7.1 |
+| I1, B3, (INC) | (M5-G): a uniform Poincare inequality for the Doob kernel of the even ground state (row 738; prior/gap-lit-geom.md) | open, "restates the gap variationally" | already there |
+| I2 (chi-square between slices) | row 839 | checked | already there |
+| I3 (swap twist, collision probability) | row 839 (min-entropy, rank one) | checked | same content, other words |
+| I4 (layer model in the background of two slices) | Identity L (row 712); Lemma S and Theorem A (row 825, area law below 2/3); Durhuus-Froehlich 1980 (row 831) | checked | already there |
+| A1 (flux costs electric energy) | Theorem HS and P1, P2 of row 860 (checked 864): the odd sector is an odd number of half-integer edges in the cut | checked | already there in stronger form |
+| A2 (electric-only model is seeded at every beta_t) | named as an idea only: gap-brainstorm-max.md L317 (idea 32); gap-shape-exercise-astra.md L212 (varying "one common beta") | no statement, no proof | NEW as a proved lemma |
+| path identity 3.3, (SHIFT) | Proposition MIX (row 708); (PATH) and PIN-MIX (row 861); Theorem TR, (VIR-log) (row 708) on the isotropic path | open | same wall; my path is the anisotropic one |
+| 4.5 (virial = no critical point) | Theorem CRIT, (NOCRIT), (VIR-log), Theorem U (rows 708-715) | checked | already there, in sharper form |
+| 4.4 (curvature stops) | Proposition BE (row 708, checked 709): curvature route ends at beta <= 1/3; lit pass 13.7 item 5; K7 shares the Ricci curvature | checked | already there; K7 is the stronger reason |
+| B1 (bridge form: b enters only through nu) | no hit for Schroedinger bridge, Sinkhorn | absent | NEW (a structure, no estimate) |
+| B2 (Hopf bound, V cancels) | "Birkhoff's projective-metric contraction is a lead the lane could not read" (gap-compress-opus.md L20) | absent | NEW: it answers that lead; the bound is extensive |
+| 4.6 (two false flux lemmas) | small-volume flux degeneracy recalled in 13.15; row 867's exclusion of six separating structures FAILS its check (row 869) | partly | the Mermin-Wagner obstruction is NEW as an argument (ARGUED only) |
+| T1, (TORUS), F(n) | Theorem D (b): 1 + s <= e^(Phi(n)), Phi(n) = 16 F(n^4) - F((2n)^4), (SEED): Phi <= 1.9e-4 (row 697, checked 698, 699); Proposition Delta: Casimir free energy Delta(a^4) <= 6.1e-4 (row 708); (BDD-Delta), (Z-UNB), (Z-SEED) (row 720) | checked | already there and sharper: Phi needs two tori, my F needs all scales |
+| 5.2 (both tests in one function) | 13.15: in every comparison model the half that fails is (Z-UNB) | checked in part | already there |
+| T2 (cut-and-reglue) and Stage 1 | Lemma M, Proposition MIX (row 708); row 845/852: annealed conditions are worst case in disguise | checked | same lesson; the identity itself I did not find stated |
+| Stage 2 (hand bounds on f at 2.5) | row 842 Theorem BAD uses chessboard at large beta only | absent at order one | NEW as a calibration (numbers only) |
+| F2 guide example (adjoint matter, conformal) | no hit | absent | NEW candidate test, GUIDE, recalled, not read |
+
+### 6.2 What the lane has that my skeleton lacked
+
+1. The limit half needs only the centre-even sector (Theorem EV-L, row 732). (GAP) on the tr(F^2) sector does not ask for confinement. Flux sectors enter only through the step.
+2. The crossing step works for three sector sets (periodic, full, kappa), and by Theorem R (row 744) the crux has one form with no flux sector: the even seed (ES), two numbers. (ES-1) in linear form fails (rows 748-753).
+3. The flux half has a cutoff-uniform physical form (E17-phys-CA) given the port (SD-cyl-CA) (rows 844, 848, 865, 868), and an exact topological form: the parity of half-integer edges is a wrapping 't Hooft surface (rows 860, 866, 867). Live inputs: (C2) and EXC (rows 871-874). All OPEN.
+4. A second architecture for the window: (EXIT), exact block steps past first passage into an open zone where a proved block criterion holds (rows 846, 850). Row 861 shows that the size of the landed action is free and its locality is the crux (PIN-MIX, (PATH)).
+5. Sharper tests than mine: K7 and Proposition V (the proof must see how far log w is from linear), Q_8 near 1.15 and 2T near 2.15 as the binding finite groups (row 838), the valid form of a test (Proposition T1).
+6. Proved lattice ranges: seed and gap for beta_W below 0.3609 (rows 836, 841), area law below 2/3 (row 825), surface classes to 6/25 with the original Z_m (rows 833, 847).
+
+### 6.3 What the comparison says about this run
+
+Written before reading: three forms of the crux, (SHIFT), (INC), (TORUS). The lane has each one: (PATH)/Proposition MIX, (M5-G), (SEED)/Proposition Delta. The same model wrote both, so this is not an independent confirmation. It does say that a fresh start from the first-passage action, without the lane's files, lands on the same three statements and on no tool.
+
+## Step 7. Corrections to my skeleton, and what is new here
+
+### 7.1 Corrections (each replaces a sentence of Steps 1 to 5)
+
+1. F3 (1.4) and the remark under I4 said that worst-case criteria stop "because a frozen abelian background orders". Wrong word. The proved ceiling is at the FLAT background: background-uniform layer twist bounds are false above 4 G_3 = 1.0109 there, given Froehlich-Simon-Spencer (READ FINISH row 839, Proposition TB2; checked, row 849).
+2. F1 to F3 must be read in the valid form of a test (READ ledger row 90, Proposition T1 of row 712): a tool is refuted only by a model in its class where its hypothesis holds and the seed fails. F1 has that form. F2 rests on a recalled example with matter fields; it binds only tools whose class contains such models. It is a candidate test, GUIDE.
+3. Thresholds. 1/5041 (N6, N7, 5.1) is the first threshold of the lane. Theorem SH gives 1/1650 at ratio 2 and 1/25 at ratio 4 (READ Section 13.11, 13.12; checked row 707). The finite form of (TORUS) to use is the lane's (SEED): Phi(n) = 16 F(n^4) - F((2n)^4) <= 1.9e-4 (Theorem D (b), checked rows 698, 699). My T1 is weaker: it needs p_inf, that is, every larger scale.
+4. 5.5, second bullet, claimed that the extensive local terms of the renormalization steps cancel in the doubling defect. NOT available: the account's vacuum-energy density is torus-independent only up to a constant per unit cell (READ ledger row 27), the account controls log Z only up to C l^4 (READ Section 13.15), and exact cancellation of the bulk between two tori is named as missing weak-coupling work, (BASE-Phi) (READ Section 13.15, Part 4). Read my bullet as: "(TORUS) for the full theory needs (BASE-Phi) and then the doubling defect at first passage". Lemma FL (row 837; holds per check row 848) is the lane's exact form.
+5. 5.4 Stage 2 said "every chessboard constant for a plaquette event comes out above 1". Proved only for the events {A_p <= a} on one orientation: the bound is q <= exp(beta a + (5/3) x 4.198 - 6 x 0.350) = exp(2.5 a + 4.9) at beta = 2.5, above 1 for every a >= -1. (The (5/3) comes from Hoelder on the five remaining orientations, grouped as (34), (13)(24), (14)(23).)
+6. 2.2 said that Q_8 and 2T fail the flux part "at large beta". The binding couplings are about 1.15 (Q_8) and 2.15 (2T) (GUIDE, READ FINISH row 838). In the window 2.3 to 2.6 both are frozen, so both bind there; 2I does not (it freezes near 5.7).
+7. 4.4: the stronger reason why no argument from curvature and reflection positivity alone can work at every coupling is test K7: the mixed fundamental-adjoint weight shares the group, the centre, reflection positivity and the Ricci curvature, and has a first-order line (READ Section 13.12 item 4; K7 itself is recalled there, GUIDE).
+8. 1.4 named one architecture for the window (the seed at one physical size). The lane has a second: (EXIT), exact block steps into an open zone (rows 846, 850, 861). Its crux is locality of the landed action (PIN-MIX), the same wall.
+
+### 7.2 What is new in this file, after the comparison (small; no estimate inside the window)
+
+- A2 (PROVED, unchecked). The model with only the three time-like orientations is seeded at every beta_t, with an explicit bound: S(t; B) <= exp(6 (10e)^3 eps_t^4 |B|) - 1, eps_t = sum over j >= 1/2 of (2j+1)^2 u_j(beta_t)^t. It is a proved endpoint for the lane's idea 32 (gap-brainstorm-max.md L317). Limits, both exact: Theorem S does not apply at or near this endpoint (two couplings break the exchange of time with space; READ gap-crux-fp.md L131), and the path from it to the isotropic point is a restatement (4.5).
+- B1 (PROVED; uniqueness is a standard theorem). The two-slice law is the Schroedinger bridge from nu to nu for the electric orbit kernel. The spectrum of the slice chain is a function of (k_orb, nu). No estimate follows yet.
+- B2 (PROVED from Hopf's theorem, unchecked). r_1 <= tanh(3 beta_t |B|) for every magnetic coupling and every compact group. This answers the lead "Birkhoff's projective-metric contraction" that the lane could not read (gap-compress-opus.md L20): the magnetic term cancels in the cross-ratio, and the price is an exponent of the order of the volume.
+  - B2 cannot be made uniform in the volume inside its class (ARGUED): at b = infinity the slices are flat and the chain is a walk on flat connections with step variance of order 1/(beta_t L), so inf over b of E_1 is at most C/(beta_t L). For Z_2 at large beta the flux sectors of the cube are split by an amount exponentially small in the area (ARGUED here: changing the holonomy class of a slice flips a full plane of links), so an exponential loss is forced in the class of all groups.
+  - Consequence for the dominance form (DOM_B) of Section 13.6 (ARGUED): a real gap of 2 exp(-6 beta |B|) and analytic perturbation give dominance on a complex neighbourhood whose width shrinks exponentially with the box. Nothing uniform follows.
+- T2 (PROVED, unchecked) and its reading: the doubling ratio is the mean of a likelihood ratio that is almost zero almost surely, so Jensen and every typical-configuration bound lose an extensive exponent.
+- Two proved hand bounds: 0.350 <= f(2.5) <= 1.40 for the free energy per plaquette (5.4 Stage 2), with the warning that log(2 I_1(beta)/beta) is not an upper bound. Check of the lower bound (PROVED): a space-like plaquette has mean exactly zero in the time-like-only model, because multiplication by (1/2) tr U_P changes the spin of four links by 1/2 each and so has no diagonal element in the basis where K is diagonal.
+- The Mermin-Wagner obstruction for the centre twist (4.6; ARGUED only).
+- A candidate test for flow arguments (GUIDE, recalled, not read): a theory that is asymptotically free, centre symmetric, reflection positive, and scale invariant at large distance. It lies outside the class of one-plaquette weights.
+
+### 7.3 What this run refuted of its own
+
+- "Electric flux costs at least a Coulomb energy" (4.6): false for SU(2).
+- "The commutator part of the Hessian integrates by parts into a term without beta" (4.4): false.
+- "The independent-plaquette value bounds f from above" (5.4): false.
+- "A coupling path from a seeded model carries the difficulty to an easier statement" (Attack 1): no; (4.5).
+
+## Step 8. Final skeleton, the next statements, the result
+
+**No mass gap is proved. No estimate inside the order-one window is proved. Nothing in this file is checked by another model.** Marks: PROVED = by hand in this file. READ = statement read at the cited place; "checked" is the lane's own record of who checked it.
+
+### 8.1 The final skeleton (corrected by Step 7)
+
+| Node | Statement | Status |
+|---|---|---|
+| K0 | First-passage data (K, beta); the unit-lattice density has total mass Z exactly; its action is Wilson at x_K in (g^(-2), g^(-2) + B_sharp] plus local and large-field terms; log Z of the account's tori is known up to C l^4. Sussman and Alpoge, with Claude and Codex; Balaban's estimates. | READ gap-finishline-opus.md L38-172; Section 13.15 |
+| K1 | (TM), (TM-c): positive trace-class transfer operator on every box, simple top eigenvalue, centre flips. Osterwalder-Seiler, Luescher. | READ; checked (rows 667, 671, 698, 699) |
+| K2 | Seed identities: flux/even split (N3), doubling form (N4), coupling form (N5), chi-square form (I2), symmetric form (T1). | PROVED here; each is already in the lane (6.1) |
+| K3 | Theorem SH, Theorem S, Corollary S3': a thermal sum below a threshold on one box gives a gap on every larger cube. Holds for every group. | READ; checked (rows 698, 699, 707) |
+| K4 | The limit theorem with Propositions P, P' and the continuum datum of the T0 chain: a seed at one physical size, uniform in the cutoff, gives (GAP). | READ; checked in part; the continuum datum is an open input |
+| K5a | (BASE): the seed read on the account's objects. Lemma FL (one inequality on two of the account's tori). Exact cancellation of the bulk between two tori, (BASE-Phi). | Lemma FL READ (row 837, holds per row 848). (BASE-Phi) OPEN, weak-coupling work |
+| **K5b** | **Glue half at one physical size, order-one coupling.** Exact forms: (INC) with a state count (B3, 2.2); the lane's (M5-G), (M5-H); (SHIFT)/(PATH); as part of (SEED)/(ES). | **OPEN. No tool.** The equivalences are PROVED or READ |
+| **K5c** | **Flux half at one physical size, order-one coupling.** Exact forms: I4 = Identity L; the wrapping 't Hooft surface (rows 860, 867); (E17-phys-CA) given (SD-cyl-CA) (rows 844, 865, 868). Live inputs of the lane: (C2), EXC. | **OPEN** |
+| K5' | One form for both halves: (SEED), Phi(n) <= 1.9e-4; or the even seed (ES), two numbers (Theorem R). | Forms READ, checked (rows 698, 699, 744). The inequality is OPEN |
+| K5'' | Second architecture: (EXIT), exact block steps into an open zone, then Theorem HO. | Conditional theorem READ (rows 846, 850). OPEN at PIN-MIX (row 861) |
+| E1 | Edge of the window, new: the time-like-only model is seeded at every beta_t (A2), with the path identity in beta_s (3.3). | PROVED here |
+| E2 | Edge of the window, lane: seed and gap for beta_W below 0.3609; area law below 2/3. | READ (rows 836, 841, 825, 828) |
+| E3 | In a fixed box the gap is at least 2 exp(-6 beta_t |B|) for every magnetic coupling and every group (B2). | PROVED here from Hopf's theorem |
+| E4 | The slice chain is the Schroedinger bridge of (k_orb, nu) (B1). | PROVED here |
+
+**The node that carries the whole difficulty: K5b and K5c together.** One sentence: on a box of about twenty correlation lengths, for the measure that the renormalization steps deliver, show that two time slices half a box apart are independent to within chi-square 1/1650, with no small parameter. Three direct attacks from this file stop there: (SHIFT), (INC), (TORUS).
+
+A reading that sorts the tests (ARGUED; the lane's test tables already hold both kinds): the seed can fail in two ways. (a) Coexistence: an exponentially light state from tunnelling, as for frozen Q_8 and 2T, K7, the one-well weights of Proposition V. (b) A massless point: a soft collective coordinate, as for U(1) in its Coulomb phase. B2 bounds what either kind can do in a fixed box: no level comes closer to the vacuum than 2 exp(-6 beta_t |B|), which is the size of a tunnelling splitting. (INC) is the exact form of the absence of kind (b). A proof needs one input against each, or one input against both.
+
+### 8.2 Statements for a next proof lane
+
+I found no statement inside the window that I can prove, and I name no tool for K5b. I do not call any route the only one. Two statements follow; the first is provable now and is not on the crux, the second is the crux form to hand to an author when a tool exists.
+
+**Statement 1, (KS-ZONE). Bounded; expected provable by hand; means: one small number.**
+There is an absolute c_0 > 0 such that for every beta_t >= 1 and every beta_s with beta_s beta_t <= c_0, in the SU(2) model with weight beta_t on the three time-like orientations and beta_s on the three space-like ones, on every periodic box B with sides at least 4:
+ (i) E_1(B) >= 2 |log u_(1/2)(beta_t)| (half of its value at beta_s = 0), flux sectors included;
+ (ii) S(t; B) <= 1/1650 for t >= C beta_t log(beta_t) and |B| <= exp(t/(C beta_t)).
+- Status: OPEN. A2 is the case beta_s = 0 (PROVED). 3.4 argues the expansion in beta_s. A second route to test: B1 with Bakry-Emery, since nu is close to Haar measure there (4.4 gives kappa = 1/2 at beta_s = 0).
+- What it is: the Kogut-Susskind strong-coupling regime with the time cutoff free (beta_t unbounded). It closes idea 32 of row 859 with a theorem. It would be the lane's first proved regime in which one coupling is not small.
+- What it is not: a step through the window. Theorem S does not apply there (no exchange of time with space). By the lane's own rule it counts for (GAP) only if a hand-off can reach it; a hand-off by blocking space alone keeps the transfer operator in time exact, but needs the same locality as PIN-MIX. I do not claim that it can.
+- Fact tests: it holds for U(1), Q_8, 2T as well (small magnetic coupling), as every strong-coupling statement does.
+
+**Statement 2, (INC-FP). The glue half in the form of this file; not queueable until a means is named.**
+For first-passage data with K >= K_0, let nu_K be the law of one time slice of the periodic cube of physical side l (centre-even part), and pi_K the law of two slices at physical time distance delta. Then Var(f) <= C E[(f(U') - f(U))^2] for every gauge-invariant slice function f, with C independent of K. With a state count of the kind (M5-H) it gives the even thermal sum, hence K5b.
+- Status: OPEN. It is the lane's (M5-G) in the form (B3); B1 adds that the left side and the right side depend on (k_orb, nu) only.
+- A proof must (pre-registered in 2.3, corrected by 7.1): bound a collective coordinate, not a typical configuration (5.4 Stage 1); use the Wilson weight beyond its curvature and symmetries (K7); fail for U(1) through soft photons (4.3). Pointwise curvature (4.4), a coupling path (4.5) and a volume-blind positivity bound (B2) are shown here not to do it.
+- On the flux half K5c this file adds no statement to the lane's live inputs (C2) and EXC (rows 871 to 875). A1 and 4.6 agree with the lane: it is an order-one confinement input.
+
+### 8.3 What is proved and what is open (this file)
+
+PROVED here, by hand, unchecked: N3, N4, N5; I1 to I4; A1; A2; the path identity 3.3; B1 (uniqueness quoted as a standard theorem); B2 (from Hopf's theorem, quoted); B3; the Hessian formula of 4.4; 4.5; T1; the doubling and coupling forms of F; T2; the bounds 0.350 <= f(2.5) <= 1.40.
+ARGUED: the physical reading in 1.3 and 1.4; 4.6; 5.2; the sharpness remarks on B2 in 7.2; the sorting of the tests in 8.1.
+GUIDE: all numbers for beta = 2.5 that are not Bessel values; the candidate test with matter fields.
+OPEN: K5b, K5c (the crux); (BASE-Phi); (KS-ZONE); (INC-FP).
+New against the lane (6.1, 7.2): A2, B1, B2, T2 as an identity, the two hand bounds on f, the argument of 4.6. Everything else was already in the lane, most of it in sharper form.
+
+RESULT: PARTIAL, nothing proved inside the order-one window and no tool named for the crux. Own skeleton written before any lane file, then three direct attacks on the node that carries the difficulty; each stops at the same statement in another form: (SHIFT) along a coupling path, (INC) for the slice law, (TORUS) for one torus number. The comparison (Section 13, row 838, rows 830 to 875) finds all three already in the lane as (PATH)/Proposition MIX, (M5-G) and (SEED)/Proposition Delta, most in sharper form; same model as those rows, so a second sample, not a check. PROVED and new, unchecked: Lemma A2 (the time-like-only model is seeded at every beta_t, explicit bound), B1 (the two-slice law is a Schroedinger bridge, so the magnetic coupling enters the glue half only through the slice law), B2 (Hopf bound: gap at least 2 exp(-6 beta_t |B|) for every magnetic coupling and every group; it answers the Birkhoff lead and is extensive), T2 (cut-and-reglue identity; Jensen loses an extensive exponent), 0.350 <= f(2.5) <= 1.40 by hand. Refuted here: a Coulomb lower bound for the flux energy, integration by parts of the commutator Hessian term, a coupling path as a reduction (it restates the absence of a critical point). Corrections to my own text in 7.1 (flat, not abelian, background; bulk cancellation is not available from the account). OPEN: the glue half and the flux half at one physical size (K5b, K5c). Next statements: (KS-ZONE), a bounded strong-coupling-in-space theorem with the time coupling free, provable and off the crux; (INC-FP), the glue half in bridge form, not queueable until a means is named. No route is called the only one.

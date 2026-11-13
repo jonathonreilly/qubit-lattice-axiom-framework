@@ -16,8 +16,8 @@ here with its date. Each campaign's retrospective says which settings stay.
 | Audit tier | The forensic tier, over the closure at a pinned commit (`docs/audit/README.md`) | 2026-10-30 |
 | Questions for the owner | Axiom edits, public posts, spending and pace only | 2026-10-30 |
 | PR checks | Hosted CI status on a PR is never waited on or reported; the landing gate is the gate. A session still reports any check it ran itself that failed | 2026-07-02, restated 2026-11-10 |
-| Published work | Searched once per route or step and put on record; built on at once with credit as `argued`. A step the source proves in detail is a cited input, still `argued`, until the hardening pass re-derives it; a step it sketches or assumes is proved when the chain reaches it. Lanes go to steps the source sketches, assumes or gets wrong | 2026-11-04 |
-| Checks during research | One line-by-line check of each new proof by another model, which names the first failing step or confirms it. Hostile readings, panels and reviews of a review run only in the hardening pass, once the candidate is complete | 2026-11-04 |
+| Published work | Searched once per route or step and put on record; built on at once with credit as `argued`. A step the source proves in detail is a cited input, still `argued`. Its re-derivation waits for the hardening pass, except where `RULES.md` section 3 places a check earlier: a bridge that fixes an observable, dynamics, symmetry or normalization, or a step at an interface between parts, is checked before heavy work rests on it. A step the source sketches or assumes is proved when the chain reaches it. Lanes go to steps the source sketches, assumes or gets wrong | 2026-11-04 |
+| Checks during research | One line-by-line check of each new proof by another model, which names the first failing step or confirms it. Like every check it attacks premises, domains, normalization and physical identification, and the checks that `RULES.md` section 3 places stay where it places them: before other work builds heavily on a step, at every interface between parts, at assembly, and early when a result matches a target unexpectedly well. What waits for the hardening pass is what goes beyond those: panels, reviews of a review, and a repeat hostile reading of a step that already has its check | 2026-11-04 |
 | Lane output | Closed proofs or explicit counterexamples; lanes run to closure; route choices recorded with reasons | 2026-11-02 |
 | PR state | In force for every landing run with the loop `skills/review-loop/scripts/land_train.sh`, run as `skills/review-loop/references/LANDING.md` says, as changed on 2026-11-10: a landed PR shows as merged, and a PR closed without merging has nothing on `main`. A PR closed before that loop was in use may still have landed: read its landing record. Measure: the loop prints `MERGED` or `NOT_MERGED` for each carried PR. One `NOT_MERGED` line, or a dependent PR that GitHub closes when a landed head branch is deleted, suspends the setting until the owner decides | 2026-11-10 |
 | Negative-claim packet | Decided: the N1 to N8 packet becomes a checker's aid and an obstruction is judged as a theorem about an explicit family. In force: the audit gate counts no routes or route classes; a passing N1 needs every listed route closed (gate) and the family stated with explicit quantifiers (auditor). Not yet in force: the audit gate still requires the packet, and landing still checks the N5 lines. The packet applies when a no-go claim is landed or made public; inside a target a failed attempt is recorded as a failed search, without a packet | 2026-11-10; scope 2026-11-04 |
@@ -40,9 +40,16 @@ them.
   and their failing step, overlaps, missed inputs and consumers, each with
   path, line and a short quote. A lane, referee included, is launched through
   `lab_ops.py preflight --lane <lane>`, which refuses it until the digest is
-  committed. The lane reads the digest first, ports what is proved instead of
-  re-deriving it, and lists the prior results it used. Its own checkout may
-  not hold `main` or the open PRs, so the digest is its map to them. The
+  committed as a regular file. So the digest is prepared and committed before
+  every lane; what differs is when the lane opens it. A port, proof, repair,
+  check or referee lane reads it first, ports what is proved instead of
+  re-deriving it, and lists the prior results it used. A lane run for a fresh
+  view, which is a direction document or a wall exercise, first opens only
+  the target statement, the definitions and the statements of results it may
+  cite. It writes its own approaches to disk, then opens the digest and the
+  rest, calls nothing new before that, and records what the digest changed
+  (the exercise skill gives its own order). A lane's checkout may not hold
+  `main` or the open PRs, so the digest is its map to them. The
   search runs over a plain-file copy of those sources with `grep`, bounded by
   path, never over git history (`git grep` on whole refs, `git log -p`, `-S`
   searches): on 2026-11-06 the lead machine ran out of memory with git
@@ -51,9 +58,10 @@ them.
   afterwards, and its overlaps are recorded before it freezes.
 - **Sources first.** Before proving a step, find and quote where the sources
   treat it: proved, sketched or assumed. A step a source proves in detail is
-  a cited input until the hardening pass. Lanes go to steps the sources
-  sketch, assume or get wrong, and a note says a source "assumes" or "does
-  not show" something only with the quoted passages that build it.
+  a cited input; the row "Published work" says when it is checked. Lanes go
+  to steps the sources sketch, assume or get wrong, and a note says a source
+  "assumes" or "does not show" something only with the quoted passages that
+  build it.
 - **Three passes.** Every part, hard or routine, goes through three passes.
   One long session, on the provider that drafts best, writes the full
   argument at length, with no brevity limit. A second session, on the other
@@ -63,10 +71,13 @@ them.
   once. Keep the status of each step, proved or outstanding, in the text of
   the part, not in a separate per-lane log.
 - **Hardening.** Once a candidate argument is complete, run one hardening pass
-  on its consolidated document: re-derive the published steps it cites, run
-  the adversarial readings of premises, domains, normalization and
-  identifications, and review the whole chain line by line. Until then these
-  readings wait; they are not a step of every lane.
+  on its consolidated document: re-derive the published steps it cites that
+  have no check yet, read premises, domains, normalization and
+  identifications adversarially across the whole chain, and review the chain
+  line by line. This pass adds to the checks that `RULES.md` section 3 places
+  during research and replaces none of them. Panels, reviews of a review and
+  repeat hostile readings are not a step of every lane; they wait for this
+  pass.
 - **Kill first.** When unsure a statement is true, try the counterexample
   before the long proof.
 - **Ladder.** Test machinery on easier models of the same step. What works
@@ -100,25 +111,57 @@ them.
 
 ## Models by role
 
-The only place where the rules and procedures prescribe a model. A target
-sets its own floor with `model_floor <role>: <model>@<effort>` lines in its
-`GOAL.md`, and `lab_ops.py preflight` refuses a launch below that floor. This
-table is the default a lead copies into a new target. Proof-critical checks
-use the strongest suitable reasoning available. If a named model is not
-available, say so and record what was used; never substitute silently.
+The only place where the rules and procedures prescribe a model. A role
+names a tier, never a model id. A tier is a position in a provider's range,
+and the "Now" column is the model that held it on the date shown.
 
-| Role | Model and effort | Since |
+| Tier | Position it holds | Now | Resolved |
+|---|---|---|---|
+| Anthropic top | Anthropic's strongest reasoning model | `claude-fable-5-2` | 2026-11-12 |
+| Anthropic second | The next Anthropic model down | `claude-opus-5-5` | 2026-11-12 |
+| OpenAI top | OpenAI's frontier reasoning model in Codex | `gpt-6-astra` | 2026-11-12 |
+| OpenAI workhorse | OpenAI's current workhorse model in Codex | `gpt-6.1-sol` | 2026-11-12 |
+| OpenAI cheap | OpenAI's fast, low-cost model in Codex | `gpt-6-luna` | 2026-11-12 |
+
+Keeping the tiers current is a lead's job, done without asking the owner
+(owner, 2026-11-12):
+
+- A newer version of the same family takes the tier on the day a lead sees it
+  available on the machines that run the role. The lead changes the row and
+  its date in a PR. A successor in a reading tier first passes a reading test
+  with a known answer (owner, 2026-11-05).
+- A model of another family takes a tier only when its provider presents it
+  as that position. The PR quotes the provider.
+- A row stays on the older model only with recorded evidence that the newer
+  one does that role worse.
+- `python3 scripts/lab_ops.py models` reads the tier table. It reports a tier
+  for which a model list on the machine has a newer version of the same
+  family, and a tier resolved more than 30 days ago. It reads the Codex model
+  list, and `--known <ids>` adds the ids a session's own environment lists.
+  `doctor` prints the same findings at the start of a session.
+- An effort level is the provider's word. A new level above one named below
+  is a spending choice and stays with the owner.
+
+A target sets its own floor with `model_floor <role>: <model>@<effort>` lines
+in its `GOAL.md`, and `lab_ops.py preflight` refuses a launch below that
+floor. The role table is the default a lead copies into a new target, with
+each tier written as its current model. Proof-critical checks use the
+strongest suitable reasoning available. If a named model is not available,
+say so and record what was used; never substitute silently.
+
+| Role | Tier and effort | Since |
 |---|---|---|
-| Direction: approach, skeleton, restatement, route choice | `claude-fable-5-2`, high. A program's direction document is authored at max from the goal and the primary object alone, before its author reads any plan, route list or literature digest, and it attacks the crux statement, not the entry lemma. The strongest model never reviews a weaker model's direction work | 2026-11-09; direction document 2026-11-10 |
-| Hard proofs | `claude-fable-5-2`, medium, once a direction names the statement, domain, route and stop conditions | 2026-11-09 |
-| Ports and routine steps | `claude-opus-5-5`, effort by the step; never at max to write a hard proof | 2026-11-09 |
-| Checker | A model that did not write the proof: `claude-opus-5-5` for a hard proof, `gpt-6-astra` at max for a step that Opus wrote, while Codex has capacity. A checker from the author's provider works in a separate context from restricted inputs and is labelled so (`RULES.md` section 3) | 2026-11-09 |
-| Decision lanes and proof-tree sketches | `gpt-6-astra`, max, which is for physics only | 2026-10-30; 2026-11-08; 2026-11-09 |
-| Bulk reading, source search and digests | `gpt-6.1-sol` for comprehension reads; `gpt-6-luna` for mechanical extraction, and for bulk reading when Codex usage runs low; not `gpt-6-sol`. Spot-check each list against one known answer. Neither writes a proof or a verdict | 2026-11-05; 2026-11-09 |
-| Consolidation, editorial and coordination work | No higher than high | 2026-10-30 |
+| Direction: approach, skeleton, restatement, route choice | Anthropic top, high. A program's direction document is authored at max. Its author starts from the goal and the primary object and writes its own approaches before it opens any plan, route list or digest (method default "Prior work digest"). It attacks the crux statement, not the entry lemma. The strongest model never reviews a weaker model's direction work | 2026-11-09; direction document 2026-11-10 |
+| Hard proofs | Anthropic top, medium, once a direction names the statement, domain, route and stop conditions | 2026-11-09 |
+| Ports and routine steps | Anthropic second, effort by the step; never at max to write a hard proof | 2026-11-09 |
+| Distilling a part, the second of the three passes | OpenAI top, effort by the step | 2026-11-04; tier set by a lead 2026-11-12 |
+| Checker | Never the model that wrote the text under check, and from another provider where one is available. In the three passes that is Anthropic second reading a part that OpenAI top distilled. A step that Anthropic second wrote goes to OpenAI top at max, while Codex has capacity. A checker from the author's provider works in a separate context from restricted inputs and is labelled so (`RULES.md` section 3) | 2026-11-09 |
+| Decision lanes and proof-tree sketches | OpenAI top, max. Max on that tier is for physics only | 2026-10-30; 2026-11-08; 2026-11-09 |
+| Bulk reading, source search and digests | OpenAI workhorse for comprehension reads; OpenAI cheap for mechanical extraction, and for bulk reading when Codex usage runs low. Spot-check each list against one known answer. Neither writes a proof or a verdict | 2026-11-05; 2026-11-09 |
+| Consolidation, editorial and coordination work | Any tier, no higher than high | 2026-10-30 |
 | Lead, worker and any role not listed | The model running the session. A lead may raise one block's worker or checker to the strongest available model and records it | |
-| Landing reviewer, fast | Astra, low (the owner's Codex choice), from a different model family than the author when one is available | 2026-09-08 |
-| Landing reviewer, escalation | Astra, xhigh | 2026-09-08 |
+| Landing reviewer, fast | OpenAI top, low (the owner's Codex choice), from a different model family than the author when one is available | 2026-09-08 |
+| Landing reviewer, escalation | OpenAI top, xhigh | 2026-09-08 |
 | Auditor | The seat `codex_audit_runner.py` is configured to launch; the runner records what it used | |
 
 Two scripts still pass a model and effort of their own, which overrides the

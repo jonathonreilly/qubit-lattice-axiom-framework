@@ -163,31 +163,23 @@ explicit full-backlog request, subject to any additional user constraints.
   is non-authoritative history and must never satisfy or bound a dependency.
   Scientific content outside the axiom/approved-primitive foundation must be
   retained-derived or remain conditional/open.
-- Apply the No-Go Discipline gate (`no-go-discipline` skill, checks N1-N8)
-  before recording any verdict on a row with `claim_type: no_go`, a
-  `bounded_theorem` whose source note names walls/open conditions, or an
-  `audited_conditional` whose `verdict_rationale` would name walls. **Tier
-  scope (owner-approved 2026-07-12):** the gate is always applied as auditor
-  JUDGMENT, but the heavyweight evidence plumbing is tier-scoped -- see
-  "Two-Tier Assurance" below. Every incoming audit still declares
-  `negative_assertion_classes`; a non-empty declaration requires the
-  structured N1-N8 packet on the same terms as the output trigger (clean
-  verdicts, no-go rows, forensic runs), and an empty declaration never
-  bypasses the mechanical source/output triggers.
-  Forensic packets (manifest-backed containment, live runner-stdout citation,
-  complete index dispositions) are mandatory for `claim_type: no_go` rows,
-  source paths matching the no-go-name trigger (including obstruction,
-  firewall, negative-boundary, no-uniform-sign, and stretch-attempt names),
-  and `AUDIT_FORENSIC_MODE=1` certification runs. Development-tier rows supply
-  the N1-N8 packet as structured judgment with quoted evidence when the packet
-  is required or voluntarily included; otherwise non-clean verdicts record the
-  judgment in rationale prose. Any supplied packet is validated structurally.
-  Negative-claim overclaims foreclose investigation paths
-  permanently and require the same scrutiny as positive-claim overclaims. If
-  any N1-N8 check fails on the source note, choose the more conservative
+- Judge an obstruction as `docs/ai_methodology/procedures/audit.md` step 5
+  says, on a row with `claim_type: no_go`, a `bounded_theorem` whose source
+  note names walls/open conditions, or a verdict whose `verdict_rationale`
+  would name walls: `claim_scope` states the family it rules out, with
+  explicit quantifiers; `verdict_rationale` says whether the title, summary
+  and status lines claim no more than that; a clean verdict needs both, and
+  no open admissible route inside the family. The N1-N8 packet of the
+  `no-go-discipline` skill is optional (2026-11-13): its checks are prompts
+  for that judgment, and a supplied packet is validated in its tier's terms
+  (see "Two-Tier Assurance" below) and must agree with the verdict. Every
+  incoming audit still declares `negative_assertion_classes`; a declaration
+  requires no packet. Negative-claim overclaims foreclose investigation paths
+  and need the same scrutiny as positive-claim overclaims. When the family is
+  not stated, or a route inside it is open, choose the more conservative
   non-clean verdict whose `verdict_rationale` reflects the honest narrower
-  claim scope; do not record `audited_clean`, and do not transcribe the source
-  note's inflated wall list into the ledger.
+  claim scope; do not record `audited_clean`, and do not transcribe the
+  source note's inflated wall list into the ledger.
 - **Vocabulary is auto-corrected, not adjudicated.** The repo's process vocabulary is canonical in [`docs/repo/controlled_vocabulary.yaml`](../../../repo/controlled_vocabulary.yaml) (design in [`VOCABULARY_HYGIENE_DESIGN.md`](../../../repo/VOCABULARY_HYGIENE_DESIGN.md)). Before writing an audit verdict, run `scripts/vocab_lint.py --fix` on the source note under audit. Routine local drift that has a non-link-aware rewrite rule, such as legacy aliases and deprecated wording, is rewritten mechanically; link-aware filename suffix migrations and F-letter finding-label migrations are reported but deferred to Cleanup-2 tooling. This is a normal commit step, never a science verdict. Record what was rewritten in the ledger row's `prose_corrections` field and set `prose_status: auto_corrected`. When `vocab_lint --fix` changed the source note, include a `pre_audit_prose_fix` envelope on the audit blob carrying `{old_hash, new_hash, prose_status, prose_corrections}` so `apply_audit.py` atomically refreshes `note_hash` before the hash-drift check. If `vocab_lint` cannot mechanically rewrite a violation (genuinely new term, link-aware rename pending, or F-letter migration pending), set `prose_status: needs_human_vocab_decision` — but **do not** translate this into a non-clean `audit_status`. Physics and prose are separate verdicts. A clean derivation with vocabulary drift lands as `(audit_status: audited_clean, prose_status: auto_corrected)`; a clean derivation that introduces a genuinely new term lands as `(audit_status: audited_clean, prose_status: needs_human_vocab_decision)`. Never assign `audited_renaming` or `audited_conditional` on prose grounds alone.
 - Repo-wide axioms and explicitly approved framework primitives are accepted
   premises only when already registered in
@@ -414,22 +406,18 @@ packet.
   runner, premise hashes) and survive unrelated repository growth.
   Independent cross-family re-derivation at xhigh and two-pass
   cross-confirmation on critical rows are unchanged and remain the heart of
-  the audit. When walls are named, answer N1-N8 in the structured packet when
-  it is required or voluntarily included, and otherwise in rationale prose.
-  A supplied packet is validated structurally (no manifest-containment scans,
-  no live-stdout precondition, no full-universe dispositions, no transport
-  envelope). The structured packet is MANDATORY
-  for `audited_clean` verdicts that name walls (and always on no-go rows);
-  for non-clean verdicts on non-no-go rows it is optional — state the
-  wall-naming judgment in `verdict_rationale` prose instead, since those
-  verdicts re-enter the repair queue and foreclose nothing. A supplied
-  packet is validated in full either way.
+  the audit. When walls are named, record the obstruction judgment in
+  `claim_scope` and `verdict_rationale`. The structured N1-N8 packet is
+  optional for every verdict (2026-11-13). A supplied packet is validated
+  structurally (no manifest-containment scans, no live-stdout precondition,
+  no full-universe dispositions, no transport envelope).
 - **Forensic tier.** Mandatory for `claim_type: no_go` rows and source paths
   matching the no-go-name trigger (including obstruction, firewall,
   negative-boundary, no-uniform-sign, and stretch-attempt names); forced
   lane-wide by `AUDIT_FORENSIC_MODE=1` (used for freeze/certification runs
-  against a pinned commit). Requires the full
-  heavyweight regime: orchestrator evidence transport
+  against a pinned commit). Requires orchestrator evidence transport, and a
+  supplied N1-N8 packet must meet the full heavyweight regime: orchestrator
+  evidence transport
   (`CODEX_AUDIT_TRUSTED_EVIDENCE_MANIFEST` envelope: schema
   `codex_audit_trusted_manifest_v1`, matching `claim_id` and 32-hex
   `audit_invocation_id`, timezone-aware `issued_at` within 2 hours,
@@ -965,7 +953,7 @@ Repair and re-entry are reason-specific:
 | `blocked_row_reentry_quarantined` | Repair the recorded classifier promotion, dependency/status cycle, note-hash drift, or other invalidation cause. Require one converged full pipeline. | Start a new campaign only after the row no longer immediately returns to the same dep-ready state. |
 | `claim_transaction_quarantined` | Fix the recorded apply, pipeline, or lint defect and prove the clean full pipeline converges. The failed delivery minted no verdict. | Use a fresh seat in a new campaign unless canonical tooling verifies an exact preserved-envelope replay against the current source/seat fingerprint. |
 | `dependencies are not retained-grade` | Audit or repair the named upstream dependency; do not force the downstream row. | Automatic when dependency closure becomes retained-grade and the pipeline refreshes the queue. |
-| `no_go row` or `source shape requires forensic tier` | Run the required N1-N8 forensic path, one canary at a time. | Through the forensic selector, never by forcing the development batch. |
+| `no_go row` or `source shape requires forensic tier` | Run the forensic path, one canary at a time. | Through the forensic selector, never by forcing the development batch. |
 | `claim_type ... not batch-auditable` | Route `meta` or `decoration` only when explicitly requested and through their compatible apply contract. | Targeted audit, not default development selection. |
 | `missing ledger row` | Restore or register the canonical row and pass the full pipeline, strict lint, and repository invariants. | New campaign after registry repair. |
 | `judicial_panel_required` | No repair: this is the normal two-seat disagreement handoff. | Immediate five-judge panel, then resume the same lane. |
@@ -1259,7 +1247,7 @@ Answer these before choosing a verdict:
   target-equivalent to, or stronger than the headline claim?
 - Are numerical values current with the runner and the source note?
 - Would a hostile specialist be able to reject the conclusion without making a mistake?
-- If the claim is a `no_go`, a wall-naming `bounded_theorem`, or its rationale would cite walls: is the family ruled out stated with explicit quantifiers, and is every admissible route inside it closed (N1; no number of routes is required)? Are the named walls actually independent (N2)? Are any hidden in "bridge context" / "we assume" / "standard QFT" / "registered" prose (N3)? Do cited witness residuals match the claim's residual (N4)? Are "X is not a Y-fact" phrases verified at every named resolution (N5)? Is the "needs new axiom" framing actually a convention-reframe / labeling ratification (N6)? Can a steelman against the no-go be made convincing (N7)? Has a structurally similar prior wall been retired by a mechanism not considered here (N8)? See `no-go-discipline` skill.
+- If the claim is a `no_go`, a wall-naming `bounded_theorem`, or its rationale would cite walls: does `claim_scope` state the family ruled out with explicit quantifiers, do the title, summary and status lines claim no more than that, and is every admissible route inside the family closed? These two questions decide; the N1-N8 prompts that follow are an optional aid. Are the named walls actually independent (N2)? Are any hidden in "bridge context" / "we assume" / "standard QFT" / "registered" prose (N3)? Do cited witness residuals match the claim's residual (N4)? Are "X is not a Y-fact" phrases verified at every named resolution (N5)? Is the "needs new axiom" framing actually a convention-reframe / labeling ratification (N6)? Can a steelman against the no-go be made convincing (N7)? Has a structurally similar prior wall been retired by a mechanism not considered here (N8)? See `no-go-discipline` skill.
 
 ## Law-Domain Audit Procedure
 
@@ -1325,7 +1313,7 @@ In every case name the exact terminal obligation and explain why its strength
 is comparable to or greater than the headline target. If a clean narrow lemma
 survives independently, state that narrow boundary in `claim_scope`.
 
-For claims with `claim_type: no_go`, `bounded_theorem` whose source note names walls/open conditions, or any verdict that would record walls in `verdict_rationale`, apply the No-Go Discipline gate (`no-go-discipline` skill, N1-N8) before recording. Any FAIL forbids `audited_clean`; instead, choose the non-clean verdict whose `verdict_rationale` reflects the corrected narrower claim scope. Specifically:
+For claims with `claim_type: no_go`, `bounded_theorem` whose source note names walls/open conditions, or any verdict that would record walls in `verdict_rationale`, apply the obstruction rule of `docs/ai_methodology/procedures/audit.md` step 5 before recording. The N1-N8 checks of the `no-go-discipline` skill are optional prompts for it (2026-11-13). A defect found either way forbids `audited_clean`; instead, choose the non-clean verdict whose `verdict_rationale` reflects the corrected narrower claim scope. Typical defects, by the check that names them:
 
 - if N1 fails (the family ruled out is not stated with explicit quantifiers, or an admissible route inside it is open or untested), record `audited_conditional` with `notes_for_re_audit_if_any: scope_too_broad — family not stated explicitly, or a route inside it not closed`;
 - if N2/N3 fails (walls not independent, or hidden walls promoted), record `audited_conditional` with the collapsed/expanded honest wall list;

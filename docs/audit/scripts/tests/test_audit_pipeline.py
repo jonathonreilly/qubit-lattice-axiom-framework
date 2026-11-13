@@ -1591,13 +1591,13 @@ class ApplyAuditTest(unittest.TestCase):
             "no_go_discipline": None,
             "negative_assertion_classes": ["bounded_with_named_walls"],
         }
-        self.assertIn(
-            "N1-N8 packet is required",
+        # 2026-11-13: a declaration without a packet is accepted.
+        self.assertIsNone(
             m.cross_summary_no_go_error(
                 declared_without_packet,
                 source_required=False,
                 current_evidence_manifest=None,
-            ) or "",
+            )
         )
 
         with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
@@ -2449,7 +2449,10 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertEqual(updated["verdict_rationale"], "first rationale")
         self.assertEqual(updated["audit_invocation_id"], "d" * 32)
 
-    def test_no_go_requires_and_preserves_discipline_packet(self):
+    def test_no_go_packet_is_optional_and_preserved_when_supplied(self):
+        # 2026-11-13: a no_go verdict applies without the N1-N8 packet; the
+        # forensic tier still needs trusted evidence transport, and a supplied
+        # packet is validated and kept.
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
         self._seed_one_row(
@@ -2481,11 +2484,18 @@ class ApplyAuditTest(unittest.TestCase):
 
         ok, msg = m.apply_one(led, dict(base))
         self.assertFalse(ok)
-        self.assertIn("N1-N8 packet is required", msg)
+        self.assertIn("trusted orchestrator evidence transport", msg)
 
         packet = _no_go_packet()
         manifest = m.no_go_discipline_gate.build_evidence_manifest(
             led["rows"]["test_no_go"], led["rows"], self.tmp_root
+        )
+        packetless_led = copy.deepcopy(led)
+        with mock.patch.object(m, "trusted_evidence_manifest", return_value=manifest):
+            ok, msg = m.apply_one(packetless_led, dict(base))
+        self.assertTrue(ok, msg)
+        self.assertIsNone(
+            packetless_led["rows"]["test_no_go"].get("no_go_discipline")
         )
         _set_no_go_scan_coverage(packet, manifest)
         audit = {**base, "no_go_discipline": packet}
@@ -2570,19 +2580,19 @@ class ApplyAuditTest(unittest.TestCase):
                 summary, source_required=False, current_evidence_manifest={}
             )
         )
-        self.assertIn(
-            "N1-N8 packet is required",
+        # 2026-11-13: a packetless no_go prior seat is no longer refused.
+        self.assertIsNone(
             m.cross_summary_no_go_error(
                 {**summary, "claim_type": "no_go"},
                 source_required=True,
                 current_evidence_manifest={},
-            ) or "",
+            )
         )
 
     def test_dev_tier_prior_conditional_seat_packet_optional(self):
-        """A prior non-clean seat whose rationale names walls does not need
-        the structured packet in the development tier; a prior clean seat
-        with the same rationale still does."""
+        """Since 2026-11-13 no prior seat needs the structured packet: not a
+        non-clean or clean seat whose rationale names walls, in either
+        tier."""
         m = _import("apply_audit")
         seat = {
             "verdict": "audited_conditional",
@@ -2596,20 +2606,18 @@ class ApplyAuditTest(unittest.TestCase):
                     seat, source_required=False, current_evidence_manifest={}
                 )
             )
-            self.assertIn(
-                "N1-N8 packet is required for the prior seat",
+            self.assertIsNone(
                 m.cross_summary_no_go_error(
                     {**seat, "verdict": "audited_clean"},
                     source_required=False,
                     current_evidence_manifest={},
-                ) or "",
+                )
             )
         with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
-            self.assertIn(
-                "N1-N8 packet is required for the prior seat",
+            self.assertIsNone(
                 m.cross_summary_no_go_error(
                     seat, source_required=False, current_evidence_manifest={}
-                ) or "",
+                )
             )
 
     def test_packeted_audit_archives_invalid_first_and_reuses_fresh_source_packet(self):
@@ -2640,6 +2648,9 @@ class ApplyAuditTest(unittest.TestCase):
                     "verdict": "audited_clean", "claim_type": "no_go",
                     "claim_scope": "the scoped selector obstruction mechanism",
                     "load_bearing_step_class": "A",
+                    # Since 2026-11-13 a packetless seat is valid; a supplied
+                    # packet without an authenticated snapshot is not.
+                    "no_go_discipline": {"required": True, "status": "PASS"},
                 },
                 "second_audit": None,
                 "status": "awaiting_second",
@@ -2878,7 +2889,9 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertFalse(ok)
         self.assertIn("ratified_claim_scope", msg)
 
-    def test_judicial_no_go_requires_discipline_packet(self):
+    def test_judicial_no_go_packet_is_optional(self):
+        # 2026-11-13: neither the judgment nor the sided seat needs the
+        # N1-N8 packet; supplied packets are validated and carried.
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
         self._seed_one_row(
@@ -2937,22 +2950,26 @@ class ApplyAuditTest(unittest.TestCase):
         before_rejected = json.dumps(led, sort_keys=True)
         ok, msg = m.apply_one(led, dict(judgment))
         self.assertFalse(ok)
-        self.assertIn("N1-N8 packet is required", msg)
+        self.assertIn("trusted orchestrator evidence transport", msg)
         self.assertEqual(json.dumps(led, sort_keys=True), before_rejected)
+
+        manifest = m.no_go_discipline_gate.build_evidence_manifest(
+            led["rows"]["test_judicial_no_go"], led["rows"], self.tmp_root
+        )
+        packetless_led = copy.deepcopy(led)
+        with mock.patch.object(m, "trusted_evidence_manifest", return_value=manifest):
+            ok, msg = m.apply_one(packetless_led, dict(judgment))
+        self.assertTrue(ok, msg)
+        self.assertIsNone(
+            packetless_led["rows"]["test_judicial_no_go"].get("no_go_discipline")
+        )
 
         judgment["no_go_discipline"] = _no_go_packet(
             evidence_path=runner_path,
             source_path="docs/TEST_JUDICIAL_NO_GO.md",
             claim_id="test_judicial_no_go",
         )
-        manifest = m.no_go_discipline_gate.build_evidence_manifest(
-            led["rows"]["test_judicial_no_go"], led["rows"], self.tmp_root
-        )
         _set_no_go_scan_coverage(judgment["no_go_discipline"], manifest)
-        with mock.patch.object(m, "trusted_evidence_manifest", return_value=manifest):
-            ok, msg = m.apply_one(led, judgment)
-        self.assertFalse(ok)
-        self.assertIn("cannot ratify invalid first audit", msg)
         prior_packet = _no_go_packet(
             evidence_path=runner_path,
             source_path="docs/TEST_JUDICIAL_NO_GO.md",
@@ -5764,8 +5781,10 @@ class AuditLintTest(unittest.TestCase):
         with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}), \
              contextlib.redirect_stdout(buf):
             rc = m.main()
-        self.assertEqual(rc, 1)
-        self.assertIn("lacks structured No-Go Discipline", buf.getvalue())
+        # 2026-11-13: a packetless clean verdict with a declaration is not a
+        # lint error; the packet is optional.
+        self.assertEqual(rc, 0, buf.getvalue())
+        self.assertNotIn("lacks structured No-Go Discipline", buf.getvalue())
 
         self.fx.write_ledger(original_ledger)
         buf = io.StringIO()
@@ -7046,79 +7065,72 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 })
             )
 
-    def test_dev_tier_packet_demand_binds_clean_verdicts_only(self):
-        """Development-tier calibration (2026-07-12): the wall-naming
-        output/declaration trigger mandates the structured packet only for
-        claim-cementing audited_clean verdicts. Non-clean verdicts are the
-        repair queue — the wall-naming judgment stays in prose there — while
-        no-go judgments, source-required rows, and the forensic tier bind
-        every verdict, and a supplied packet is always validated."""
+    def test_packet_is_optional_for_every_verdict_and_tier(self):
+        """2026-11-13: no verdict, claim type, source trigger or tier requires
+        the N1-N8 packet. A supplied packet is still validated and must agree
+        with the verdict: a FAIL packet forbids audited_clean."""
         m = _import("no_go_discipline_gate")
-        packet_required = "No-Go Discipline N1-N8 packet is required for this audit"
         wall = {
             "claim_type": "bounded_theorem",
             "claim_scope": "an affirmative identity",
             "verdict_rationale": "A residual selector wall persists.",
         }
-        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}):
-            for verdict in ("audited_conditional", "audited_failed"):
-                with self.subTest(verdict=verdict):
-                    self.assertIsNone(
-                        m.validate_no_go_discipline(
-                            {
-                                **wall,
-                                "verdict": verdict,
-                                "negative_assertion_classes": [
-                                    "conditional_wall_rationale"
-                                ],
-                            },
-                            require_declaration=True,
+        for forensic in ("", "1"):
+            with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": forensic}):
+                for verdict in (
+                    "audited_clean", "audited_conditional", "audited_failed"
+                ):
+                    with self.subTest(forensic=forensic, verdict=verdict):
+                        self.assertIsNone(
+                            m.validate_no_go_discipline(
+                                {
+                                    **wall,
+                                    "verdict": verdict,
+                                    "negative_assertion_classes": [
+                                        "conditional_wall_rationale"
+                                    ],
+                                },
+                                require_declaration=True,
+                            )
                         )
-                    )
-            self.assertEqual(
-                m.validate_no_go_discipline(
-                    {
-                        **wall,
-                        "verdict": "audited_clean",
-                        "negative_assertion_classes": [
-                            "conditional_wall_rationale"
-                        ],
-                    },
-                    require_declaration=True,
-                ),
-                packet_required,
+                        self.assertIsNone(
+                            m.validate_no_go_discipline(
+                                {**wall, "claim_type": "no_go", "verdict": verdict}
+                            )
+                        )
+                        self.assertIsNone(
+                            m.validate_no_go_discipline(
+                                {**wall, "verdict": verdict},
+                                source_required=True,
+                            )
+                        )
+        # A supplied packet is validated rather than waved through.
+        self.assertIsNotNone(
+            m.validate_no_go_discipline(
+                {
+                    **wall,
+                    "verdict": "audited_conditional",
+                    "no_go_discipline": {"required": True},
+                }
             )
-            self.assertEqual(
-                m.validate_no_go_discipline(
-                    {**wall, "claim_type": "no_go", "verdict": "audited_conditional"}
-                ),
-                packet_required,
-            )
-            self.assertEqual(
-                m.validate_no_go_discipline(
-                    {**wall, "verdict": "audited_conditional"},
-                    source_required=True,
-                ),
-                packet_required,
-            )
-            # A packet supplied alongside a non-clean verdict is still
-            # validated structurally rather than waved through.
-            self.assertIsNotNone(
-                m.validate_no_go_discipline(
-                    {
-                        **wall,
-                        "verdict": "audited_conditional",
-                        "no_go_discipline": {"required": True},
-                    }
-                )
-            )
-        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
-            self.assertEqual(
-                m.validate_no_go_discipline(
-                    {**wall, "verdict": "audited_conditional"}
-                ),
-                packet_required,
-            )
+        )
+        self.assertEqual(
+            m.validate_no_go_discipline(
+                {**wall, "verdict": "audited_conditional", "no_go_discipline": "x"}
+            ),
+            "no_go_discipline must be an object or null",
+        )
+        # And it must agree with the verdict.
+        self.assertEqual(
+            m.validate_no_go_discipline(
+                {
+                    **wall,
+                    "verdict": "audited_clean",
+                    "no_go_discipline": {"required": True, "status": "FAIL"},
+                }
+            ),
+            "audited_clean is forbidden when No-Go Discipline status is not PASS",
+        )
 
     def test_n3_excludes_explicit_accepted_premise_vocabulary(self):
         m = _import("no_go_discipline_gate")
@@ -7468,9 +7480,10 @@ class NoGoDisciplineGateTest(unittest.TestCase):
 
     def test_declaration_layer_owns_semantic_classes(self):
         """Exact genuine-negative phrasings outside the mechanical floor:
-        the mandatory auditor declaration is the layer that gates them.
+        the mandatory auditor declaration is the layer that records them.
         Each case documents floor behavior and asserts that an honest
-        declaration forces the N1-N8 packet."""
+        declaration is accepted without the N1-N8 packet, which is optional
+        since 2026-11-13."""
         m = _import("no_go_discipline_gate")
         for body in (
             "After the finite-case check, the attempted route did not close.",
@@ -7554,11 +7567,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                     },
                     require_declaration=True,
                 )
-                self.assertEqual(
-                    error,
-                    "No-Go Discipline N1-N8 packet is required for this audit",
-                    body,
-                )
+                self.assertIsNone(error, body)
 
     def test_coverage_routing_controls_stay_exempt(self):
         """Exact coverage-routing, affirmative, and misparse controls must
@@ -7666,7 +7675,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
 
     def test_negative_assertion_declaration_contract(self):
         """The auditor's semantic declaration is mandatory on incoming
-        audits and requires the packet independently of the regex floor."""
+        audits; since 2026-11-13 neither it nor the regex floor requires the
+        packet."""
         m = _import("no_go_discipline_gate")
         base = {
             "claim_type": "bounded_theorem",
@@ -7685,16 +7695,13 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             require_declaration=True,
         )
         self.assertIn("unknown classes", error or "")
-        # A declared class requires the packet even when the regex floor
-        # does not fire.
+        # A declared class no longer requires the packet.
         error = m.validate_no_go_discipline(
             {**base, "negative_assertion_classes": ["derived_no_go_boundary"]},
             require_declaration=True,
         )
-        self.assertEqual(
-            error, "No-Go Discipline N1-N8 packet is required for this audit"
-        )
-        # An empty declaration does not bypass the mechanical floor.
+        self.assertIsNone(error)
+        # Nor does wall-naming prose under an empty declaration.
         error = m.validate_no_go_discipline(
             {
                 **base,
@@ -7703,9 +7710,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             },
             require_declaration=True,
         )
-        self.assertEqual(
-            error, "No-Go Discipline N1-N8 packet is required for this audit"
-        )
+        self.assertIsNone(error)
         # Empty declaration + clean prose passes without a packet.
         self.assertIsNone(
             m.validate_no_go_discipline(
@@ -10060,12 +10065,11 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "no_go_discipline": None,
         }
         self.assertIsNone(m.validate_verdict(positive, "positive"))
-        self.assertIn(
-            "N1-N8 packet is required",
+        # 2026-11-13: the source trigger no longer requires the packet.
+        self.assertIsNone(
             m.validate_verdict(
                 positive, "positive", source_requires_no_go=True
             )
-            or "",
         )
         clipped_manifest = {
             "docs/BIG.md": {
@@ -10359,6 +10363,29 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "A path whose manifest role is `source` cannot be `retained_authority`",
             template_flat,
         )
+
+    def test_prompt_states_obstruction_rule_and_optional_packet(self):
+        template = (
+            PROJECT_ROOT / "docs" / "audit" / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
+        ).read_text(encoding="utf-8")
+        template_flat = " ".join(template.split())
+        self.assertIn(
+            "`claim_scope` states the family it rules out, with explicit "
+            "quantifiers.",
+            template_flat,
+        )
+        self.assertIn(
+            "`verdict_rationale` says whether the title, summary and status "
+            "lines claim no more than that.",
+            template_flat,
+        )
+        self.assertIn(
+            "packet is optional for every verdict, in both tiers",
+            template_flat,
+        )
+        self.assertIn("a `FAIL` packet forbids `audited_clean`", template_flat)
+        self.assertNotIn("you MUST include the structured", template_flat)
+        self.assertNotIn("carry the mandatory packet", template_flat)
 
     def test_prompt_carries_proof_obligation_closure_gate(self):
         template = (
@@ -11545,7 +11572,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertNotIn("no_go_discipline", reset)
         self.assertNotIn("negative_assertion_classes", reset)
 
-    def test_packetless_clean_no_go_is_invalidated(self):
+    def test_packetless_clean_no_go_is_not_invalidated(self):
+        # 2026-11-13: a missing packet is no longer a reset reason.
         m = _import("invalidate_stale_audits")
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -11569,9 +11597,16 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "legacy_science_epoch_change",
                 return_value=None,
             ):
+                self.assertIsNone(
+                    m.detect_invalidation(row, {"legacy_no_go": row})
+                )
+                # A supplied packet that is not an object still resets.
                 self.assertEqual(
-                    m.detect_invalidation(row, {"legacy_no_go": row}),
-                    "no_go_discipline_packet_missing",
+                    m.detect_invalidation(
+                        {**row, "no_go_discipline": "not-a-packet"},
+                        {"legacy_no_go": row},
+                    ),
+                    "no_go_discipline_packet_invalid",
                 )
 
     def test_packetless_declared_negative_conditional_remains_repair_queue(self):
@@ -13396,6 +13431,38 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             "transport-bounded N8 evidence forbids audited_clean",
         )
 
+        # 2026-11-13: the packet is optional. The bound still forbids clean
+        # without one; a non-clean verdict needs no packet, and a supplied
+        # packet must still record the cut-off scan as an incomplete FAIL.
+        packetless = {**blob, "no_go_discipline": None}
+        self.assertEqual(
+            m.validate_verdict(
+                packetless,
+                "target",
+                expected_invocation_id="a" * 32,
+                transport_bounded_n8=True,
+            ),
+            "transport-bounded N8 evidence forbids audited_clean",
+        )
+        self.assertNotIn(
+            "transport-bounded",
+            m.validate_verdict(
+                {**packetless, "verdict": "audited_conditional"},
+                "target",
+                expected_invocation_id="a" * 32,
+                transport_bounded_n8=True,
+            ) or "",
+        )
+        self.assertEqual(
+            m.validate_verdict(
+                {**blob, "verdict": "audited_conditional"},
+                "target",
+                expected_invocation_id="a" * 32,
+                transport_bounded_n8=True,
+            ),
+            "transport-bounded N8 evidence requires no_go_discipline.status=FAIL",
+        )
+
     def test_transport_capacity_error_is_distinct_from_manifest_integrity(self):
         m = _import_codex_audit_runner()
         cid = "oversized-source"
@@ -14075,59 +14142,53 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             "scientific_reaudit_required",
         )
 
-    def test_forensic_readiness_requires_live_n5_resolution_certificate(self):
+    def test_forensic_readiness_no_longer_requires_n5_resolution_lines(self):
+        # 2026-11-13: the N1-N8 packet is optional, so neither the runner's
+        # pre-seat check nor the landing readiness check asks for the five N5
+        # resolution lines. The runner and cache checks stay.
         m = _import_codex_audit_runner()
-        phrase = m.no_go_discipline_gate.N5_SCAN_PHRASES[0]
-        evidence_manifest = {
-            "docs/SOURCE.md": {
-                "roles": ["source"],
-                "text": f"The source says {phrase} as a physical conclusion.",
-                "full_phrase_groups": [
-                    {
-                        "phrase": phrase,
-                        "occurrence_group_id": "1" * 16,
-                        "occurrence_count": 1,
-                        "occurrence_locator_sha256": "2" * 64,
-                        "evidence_locator": (
-                            f"The source says {phrase} as a physical conclusion."
-                        ),
-                    }
-                ],
-            },
-            "audit-packet://runner-stdout/target": {
-                "roles": ["runner_stdout"],
-                "text": "PASS without the required resolution certificate",
-            },
+        self.assertFalse(hasattr(m, "forensic_evidence_readiness_issue"))
+        import forensic_evidence_readiness as readiness
+
+        self.assertFalse(hasattr(readiness, "live_manifest_readiness_issue"))
+        row = {
+            "claim_id": "target",
+            "note_path": "docs/ai_methodology/RULES.md",
+            "runner_path": "scripts/runner_cache.py",
+            "claim_type": "no_go",
         }
-
-        issue = m.forensic_evidence_readiness_issue(evidence_manifest)
-        self.assertIsNotNone(issue)
-        for resolution_class in sorted(
-            m.no_go_discipline_gate.N5_RESOLUTION_CLASSES
+        gate = readiness.no_go_discipline_gate
+        with mock.patch.object(
+            readiness, "_runner_source_issue", return_value=None
+        ), mock.patch.object(
+            gate, "source_requires_no_go_discipline", return_value=True
+        ), mock.patch.object(
+            gate, "required_phrase_groups", return_value=[("docs/x.md", "p")]
         ):
-            self.assertIn(resolution_class, issue)
-
-        evidence_manifest["audit-packet://runner-stdout/target"]["text"] = "\n".join(
-            (
-                f"{resolution_class}: current-cycle deterministic check covers "
-                "this resolution and records an explicit outcome"
+            with mock.patch.object(
+                readiness.runner_cache,
+                "cache_excerpt_for_audit",
+                return_value="PASS without any resolution lines",
+            ):
+                self.assertIsNone(
+                    readiness.cached_row_readiness_issue(row, {"target": row})
+                )
+            with mock.patch.object(
+                readiness.runner_cache,
+                "cache_excerpt_for_audit",
+                return_value=None,
+            ):
+                self.assertEqual(
+                    readiness.cached_row_readiness_issue(row, {"target": row}),
+                    "forensic_runner_cache_not_fresh:scripts/runner_cache.py",
+                )
+            no_runner = {**row, "runner_path": None}
+            self.assertEqual(
+                readiness.cached_row_readiness_issue(
+                    no_runner, {"target": no_runner}
+                ),
+                "forensic_n5_runner_missing",
             )
-            for resolution_class in sorted(
-                m.no_go_discipline_gate.N5_RESOLUTION_CLASSES
-            )
-        )
-        self.assertIsNone(
-            m.forensic_evidence_readiness_issue(evidence_manifest)
-        )
-
-        evidence_manifest["docs/SOURCE.md"]["full_phrase_groups"] = []
-        evidence_manifest["docs/SOURCE.md"]["text"] = (
-            "The source states a constructive physical conclusion."
-        )
-        evidence_manifest["audit-packet://runner-stdout/target"]["text"] = ""
-        self.assertIsNone(
-            m.forensic_evidence_readiness_issue(evidence_manifest)
-        )
 
     def test_packet_completion_requires_prompt_bound_scientific_core(self):
         m = _import_codex_audit_runner()
@@ -14713,7 +14774,9 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             m.restore_audit_from_previous(bad_row, {cid: bad_row})
         )
 
-    def test_restore_refuses_packetless_clean_no_go_authority(self):
+    def test_restore_allows_packetless_clean_no_go_authority(self):
+        # 2026-11-13: the packet is optional, so a packetless clean no_go
+        # archive passes this guard; fingerprint guards still apply.
         m = self._import_and_patch()
         cid = "packetless_no_go"
         note_path = "docs/PACKETLESS_NO_GO.md"
@@ -14725,7 +14788,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         archived["chain_closes"] = True
         row = self._seed_with_archived(cid, archived)
         row["note_path"] = note_path
-        self.assertIsNone(
+        self.assertIsNotNone(
             m.restore_audit_from_previous(row, {cid: row})
         )
 
@@ -14751,7 +14814,8 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             ["bounded_with_named_walls"],
         )
 
-    def test_selects_only_packet_missing_rows_whose_trigger_no_longer_fires(self):
+    def test_false_positive_lane_selects_every_restorable_packet_missing_row(self):
+        # 2026-11-13: no trigger gates a missing packet any more.
         m = self._import_and_patch()
         restored_id = "positive_identity"
         live_id = "live_negative_boundary"
@@ -14771,7 +14835,10 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             live_id: self._seed_with_archived(live_id, dict(archived)),
         }
         selected = m.select_false_positive_no_go_candidates(rows)
-        self.assertEqual(selected, {restored_id: "audited_clean"})
+        self.assertEqual(
+            selected,
+            {restored_id: "audited_clean", live_id: "audited_clean"},
+        )
 
     def test_restore_refuses_packetless_clean_cross_confirmation_seat(self):
         m = self._import_and_patch()
@@ -14832,7 +14899,8 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
 
         self.assertIsNotNone(m.restore_audit_from_previous(row, {cid: row}))
 
-    def test_restore_refuses_packetless_clean_output_negative_authority(self):
+    def test_restore_allows_packetless_clean_output_negative_authority(self):
+        # 2026-11-13: the output trigger still fires, but requires no packet.
         m = self._import_and_patch()
         cid = "packetless_output_negative"
         note_path = "docs/POSITIVE_SOURCE.md"
@@ -14858,7 +14926,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
                 {**archived, "verdict": archived["audit_status"]}
             )
         )
-        self.assertIsNone(m.restore_audit_from_previous(row, {cid: row}))
+        self.assertIsNotNone(m.restore_audit_from_previous(row, {cid: row}))
 
     def test_restore_requires_packet_snapshot_currency(self):
         m = self._import_and_patch()
@@ -15126,7 +15194,10 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         self.assertEqual(crit, {})
         self.assertEqual(dep_weak, [])
 
-    def test_packet_missing_restored_only_when_trigger_no_longer_gates(self):
+    def test_packet_missing_restores_unless_another_guard_refuses(self):
+        # 2026-11-13: a missing packet no longer blocks a restore, on a
+        # negative-boundary source or a no_go row alike; the capability
+        # floor still refuses.
         m = self._import_and_patch()
         ok_path = "docs/PACKET_OK.md"
         self.fx.write_note(
@@ -15182,7 +15253,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             "packet_low_floor": low_floor_row,
         }
         crit, dep_weak, packet, recovered = m.select_restore_candidates(rows)
-        self.assertEqual(set(packet), {"packet_ok"})
+        self.assertEqual(set(packet), {"packet_ok", "packet_neg", "packet_nogo"})
         self.assertEqual(crit, {})
         self.assertEqual(dep_weak, [])
         self.assertEqual(recovered, [])
@@ -15338,24 +15409,25 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         )
 
     def test_archived_declaration_binds_restoration(self):
-        """An archived clean audit that declared negative assertion
-        classes without a packet is never restorable, in any tier."""
+        """Since 2026-11-13 the packet is optional: an archived clean audit
+        that declared negative assertion classes without a packet is
+        restorable when every other guard passes, in any tier."""
         m = self._import_and_patch()
         archived = self._archived_audit(
             invalidation_reason="no_go_discipline_packet_missing"
         )
         archived["negative_assertion_classes"] = ["no_go_result"]
         row = self._seed_with_archived("declared_no_packet", archived)
-        self.assertIsNone(
+        self.assertIsNotNone(
             m.restore_audit_from_previous(dict(row), {"declared_no_packet": row})
         )
-        # A declaration surviving only on the reset live row binds too.
+        # A declaration surviving only on the reset live row no longer binds.
         legacy = self._archived_audit(
             invalidation_reason="no_go_discipline_packet_missing"
         )
         live_row = self._seed_with_archived("live_declared", legacy)
         live_row["negative_assertion_classes"] = ["no_go_result"]
-        self.assertIsNone(
+        self.assertIsNotNone(
             m.restore_audit_from_previous(dict(live_row), {"live_declared": live_row})
         )
         # And a genuinely old archive with no declaration anywhere restores.

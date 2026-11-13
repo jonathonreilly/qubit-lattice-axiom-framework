@@ -1753,13 +1753,13 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
         and blob.get("verdict") != "audited_clean"
         and not forensic_tier
     ):
-        # In the development tier a non-clean verdict on a non-no-go source
-        # carries its negative judgment in the declaration/rationale; the
-        # heavyweight packet is optional.  A volunteered but schema-invalid
-        # optional packet must not consume two 20-minute completion attempts
-        # or quarantine an otherwise valid scientific verdict.  Prove that it
-        # is optional by removing only that field and rerunning the unchanged
-        # canonical validator; clean/no-go/forensic verdicts still fail closed.
+        # The packet is optional for every verdict (2026-11-13).  A
+        # volunteered but schema-invalid packet on a development-tier
+        # non-clean verdict must not consume two 20-minute completion attempts
+        # or quarantine an otherwise valid scientific verdict, so it is
+        # dropped and the unchanged canonical validator reruns.  A clean,
+        # no-go or forensic verdict with an invalid packet still fails closed:
+        # the auditor's own packet must agree with its verdict.
         without_optional_packet = dict(blob)
         without_optional_packet["no_go_discipline"] = None
         if audit_runner.validate_verdict(

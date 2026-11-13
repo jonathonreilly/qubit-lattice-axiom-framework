@@ -1,6 +1,6 @@
 ---
 name: no-go-discipline
-description: Use when an LLM agent is about to ship a no-go, stretch-attempt-negative, or bounded-with-named-walls claim. Forces structured stress-testing (N1-N8) — alternative route enumeration, wall-independence audit, hidden-wall scan, residual matching, rhetoric audit, partial-closure path scan, steelman, cross-cycle echo — before the negative claim can ship.
+description: Use when an LLM agent is about to ship a no-go, stretch-attempt-negative, or bounded-with-named-walls claim. Optional stress-test prompts (N1-N8) — alternative route enumeration, wall-independence audit, hidden-wall scan, residual matching, rhetoric audit, partial-closure path scan, steelman, cross-cycle echo — for judging the claim as a theorem about an explicit family. No gate requires them.
 ---
 
 # No-Go Discipline
@@ -18,8 +18,15 @@ Promotion Value Gate in `physics-loop` — V1-V5 prevents overclaiming positives
 N1-N8 prevents overclaiming negatives.
 
 Agents are good at finding one route that fails. They are bad at proving all
-routes fail. This skill makes that gap explicit and gates negative-claim output
-on a structured stress-test before the claim can ship.
+routes fail. This skill makes that gap explicit with a structured stress-test.
+
+**Status (owner, 2026-11-13).** The N1-N8 checklist is a checker's aid. No
+gate requires it: not landing (no committed answers, no N5 lines in runner
+output) and not audit. An obstruction is judged by the two obstruction
+questions in `docs/ai_methodology/procedures/check.md`, and in audit as
+`docs/ai_methodology/procedures/audit.md` step 5 says. Use these prompts when
+they help answer those questions; a missing or short packet is never a defect
+of the claim, and a passing one is never evidence that it is right.
 
 ## When to invoke
 
@@ -34,7 +41,7 @@ runner, or review verdict that asserts:
   identity does not lift");
 - an audit-conditional verdict rationale that names a residual wall.
 
-Skills that must invoke this gate before approving negative-claim output:
+Skills that use these prompts before approving negative-claim output:
 
 - `physics-loop` — before any cycle classified `no_go` / `stretch_negative` /
   `bounded_with_walls` can ship to a PR;
@@ -48,15 +55,9 @@ Skills that must invoke this gate before approving negative-claim output:
 
 ## The N1-N8 checklist
 
-Each item must be answered IN WRITING before the negative claim can ship, and
-the answers must LAND as a committed artifact the audit lane can bind: a
-`## No-Go Discipline Gate` section in the source note itself, or a committed
-`NO_GO_DISCIPLINE_CHECKLIST.md` that the note links (see Output below). The
-cycle's branch-local `CLAIM_STATUS_CERTIFICATE.md` is loop state, not a
-landing surface — review-loop's salvage pass strips claim-status certificates
-out of a salvage slice — so keep the working copy there if it helps, but the
-source note or its linked sidecar is the record. Copying the checklist into
-the PR body or a review verdict is a courtesy, never the record.
+Answer the items you use in writing, where the next reader will find them:
+a `## No-Go Discipline Gate` section in the source note, or the check record.
+Nothing requires the answers to be committed (see Output below).
 
 ### N1 — Alternative route enumeration
 
@@ -242,58 +243,30 @@ the no-go is premature.
 
 ## Output
 
-A `## No-Go Discipline Gate` section in the source note itself, or a committed
-`NO_GO_DISCIPLINE_CHECKLIST.md` that the note links, recording the answers to
-N1-N8 verbatim. Not the branch-local `CLAIM_STATUS_CERTIFICATE.md`, and not
-the PR body or the review verdict.
-
-**The packet must LAND with the PR — a PR body is not a landing surface.**
-The single largest audit-invalidation class in this repo's history is the
-no-go-discipline packet family (1,560 voided verdicts, 799 of them in one
-day for `no_go_discipline_packet_missing`): packets that existed at review
-time but did not land as evidence the audit could bind. Two artifacts are
-therefore required to land IN the PR, not merely appear in its body:
-
-1. **The N1-N8 checklist as a committed artifact** — a `## No-Go Discipline
-   Gate` section in the source note itself, or a committed sidecar
-   `NO_GO_DISCIPLINE_CHECKLIST.md` the note links. Copying it into the PR
-   body as well is fine, but the PR body copy is a courtesy, not the record.
-2. **The N5 execution certificate in the primary runner's cached stdout** —
-   one line per resolution class (`per_element:`, `per_site:`, `per_mode:`,
-   `per_block:`, `lattice_wide:`), each an honest, substantive (>= 40 char)
-   statement of what the runner actually resolves at that granularity,
-   using the form "checked and not executed — <reason>" where a class is
-   genuinely not exercised. `docs/audit/scripts/forensic_evidence_readiness.py`
-   is the validator; `docs/audit/scripts/check_changed_audit_evidence.py`
-   checks it at review time against the staged changes.
-
-A negative-claim PR whose packet artifacts are not landing with it fails
-this gate even when the checklist is complete and correct.
-
-Status: `PASS` if all 8 checks have answers and no failure conditions are
-hit. `FAIL` if any failure condition is hit.
+Where the prompts helped, record the answers beside the claim: a
+`## No-Go Discipline Gate` section in the source note, or the check record.
+Landing checks neither the answers nor N5 lines in runner output, and the audit
+gate does not require a packet (since 2026-11-13). `PASS` or `FAIL` here is the
+writer's own summary of these prompts; it never decides a check or an audit
+verdict.
 
 ## Stop conditions
 
-If the gate produces `FAIL`:
+If the prompts find a defect (an open admissible route inside the family, or a
+title or summary claiming more than the family):
 
 1. Do not ship the negative claim as currently framed.
-2. Demote to one of: `partial-attempt-with-named-untested-routes`,
-   `partial-narrowing`, `bounded-with-corrected-wall-count`, or
+2. Narrow it to the family its argument rules out, or demote it to one of:
+   `partial-attempt-with-named-untested-routes`, `partial-narrowing`,
+   `bounded-with-corrected-wall-count`, or
    `stretch-attempt-with-honest-residual`.
-3. Record the failing checklist items in `NO_GO_LEDGER.md`.
+3. Record the failing items in `NO_GO_LEDGER.md`.
 4. Either (a) attempt the missed routes in the same cycle if budget allows,
    or (b) ship the narrowed claim and queue the missed routes for the next
    cycle.
 
-If the gate produces `PASS`:
-
-- ship the negative claim with both Output artifacts LANDING in the same PR:
-  the N1-N8 checklist as a committed artifact, and the N5 execution
-  certificate in the primary runner's cached stdout. A PR-body-only copy
-  does not satisfy this;
-- the independent audit lane and other reviewers can then see exactly what
-  was tested and what alternative routes were closed.
+If they find none, the claim still goes to a check
+(`docs/ai_methodology/procedures/check.md`), which judges it as a theorem.
 
 ## Case studies
 
@@ -319,8 +292,8 @@ The cases illustrate:
 ## Relationship to other skills
 
 - `physics-loop` V1-V5 Promotion Value Gate prevents overclaiming POSITIVE
-  results. N1-N8 prevents overclaiming NEGATIVE results. They are
-  symmetric and independently mandatory.
+  results. N1-N8 helps prevent overclaiming NEGATIVE results. Both are
+  aids to judgment.
 - `physics-loop` `NO_GO_LEDGER.md` is where failed routes are recorded for
   future campaigns. N1-N8 output gets appended there when a cycle ships a
   negative claim.
@@ -328,10 +301,11 @@ The cases illustrate:
   ("a valid output may be partial structure, a sharper obstruction, a
   falsified premise, or a worked failed derivation with the exact
   load-bearing wall named") aligns with the demotion options here.
-- `review-loop` adds a `NoGoDisciplineReviewer` that invokes N1-N8 when
-  reviewing changes that ship negative claims.
-- `audit-loop` should invoke N1-N8 before issuing `audited_conditional`
-  verdicts that name walls.
+- `review-loop` adds a `NoGoDisciplineReviewer` that answers the obstruction
+  questions, with N1-N8 as an aid, when reviewing changes that ship negative
+  claims.
+- `audit-loop` judges obstructions as `procedures/audit.md` step 5 says; a
+  supplied N1-N8 packet is validated and must agree with the verdict.
 
 ## Non-Negotiables
 
@@ -343,12 +317,11 @@ The cases illustrate:
   audit is the legitimate path, approved primitives are not bounded walls, and
   proposed new primitives require explicit approval rather than
   silent use or automatic foreclosure.
-- Do not weaken the gate by lowering the failure thresholds. If a cycle
-  cannot pass N1-N8, the negative claim is not yet ready to ship; that is
-  the gate working correctly.
-- This gate checks scope and packet completeness. Narrowing an overclaim may
-  repair its science, but does not by itself complete the N1-N8 packet.
-  Report any remaining packet limitation separately and do not claim PASS.
-- This gate is also not a substitute for honest physics work. Passing N1-N8
+- If a cycle's own answers find an open admissible route inside the family,
+  the negative claim is not ready to ship as framed. Do not lower a failure
+  condition to make the answers pass.
+- A short or incomplete packet is not a defect of the claim, and completing
+  it is not evidence for the claim.
+- These prompts are not a substitute for honest physics work. Passing N1-N8
   on a real no-go just records the discipline; the no-go itself stands or
   falls on its science content.

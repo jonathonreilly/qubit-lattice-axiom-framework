@@ -438,10 +438,11 @@ the target's live row — neither is an unconditional ban on the shape:
 
 - **`retained_no_go` about a named target that is weaker.** Pipeline-authoritative
   promotion to that effective_status requires `claim_type = no_go` and
-  `audited_clean` (`compute_effective_status.clean_status`) and, for the clean
-  verdict to survive, a valid No-Go Discipline packet — enforced by
-  `no_go_discipline_gate` through `apply_audit` and `invalidate_stale_audits`,
-  not by `clean_status` itself. Where the named row is weaker the label is
+  `audited_clean` (`compute_effective_status.clean_status`) and, when the
+  auditor supplied a No-Go Discipline packet, that packet staying valid —
+  enforced by `no_go_discipline_gate` through `apply_audit` and
+  `invalidate_stale_audits`, not by `clean_status` itself. Since 2026-11-13
+  the packet is optional. Where the named row is weaker the label is
   wrong by construction, not merely stale. This rule is a ratchet: the
   population measured when it landed is grandfathered in
   `scripts/prose_retained_no_go_attribution_baseline.txt`, keyed
@@ -631,17 +632,18 @@ The lane runs two assurance tiers:
 - **Development tier (default).** Verdicts bind to claim content (note,
   runner, and premise hashes) and survive unrelated repository growth. Every
   audit still requires independent cross-family re-derivation at xhigh and
-  the two-pass cross-confirmation flow on critical rows. Wall-naming
-  positive/bounded rows apply the No-Go Discipline as auditor judgment, and
-  any supplied N1-N8 packet is validated structurally (no manifest-backed
-  containment, live-stdout, or full-universe disposition plumbing).
+  the two-pass cross-confirmation flow on critical rows. An obstruction is
+  judged as `docs/ai_methodology/procedures/audit.md` step 5 says. The N1-N8
+  packet is optional in both tiers (2026-11-13); a supplied one is validated
+  structurally here (no manifest-backed containment, live-stdout, or
+  full-universe disposition plumbing).
 - **Forensic tier.** Mandatory for `claim_type: no_go` rows and no-go-named
   source files (foreclosure is permanent), and for freeze/certification runs
   (`AUDIT_FORENSIC_MODE=1`),
-  which force the full heavyweight regime lane-wide against a pinned commit:
-  authenticated evidence transport, verbatim-contained route evidence, live
-  runner-stdout citation, and complete index dispositions with authenticated
-  omitted-tail summaries.
+  which force the forensic regime lane-wide against a pinned commit:
+  authenticated evidence transport and, for a supplied packet,
+  verbatim-contained route evidence, live runner-stdout citation, and
+  complete index dispositions with authenticated omitted-tail summaries.
 
 **Rolling certification** replaces scheduled freezes: the pipeline
 continuously reports, per flagship lane

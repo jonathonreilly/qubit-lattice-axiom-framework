@@ -159,8 +159,9 @@ citation-edge rule in section 8.
 ## 4. Negative claims: the N-gate
 
 The trigger set is the canonical one and is NOT limited to explicit no-go
-headlines. A PR MUST answer all of N1-N8 in writing when any cycle artifact,
-PR body, source note, runner, or review verdict it ships asserts:
+headlines. A PR answers the two obstruction questions of
+`docs/ai_methodology/procedures/check.md` when any cycle artifact, PR body,
+source note, runner, or review verdict it ships asserts:
 
 - a `no_go` result ("structurally closed", "no route exists", "no retained
   primitive supplies this");
@@ -175,8 +176,9 @@ Authority for the trigger set and the checklist:
 `docs/ai_methodology/skills/no-go-discipline/SKILL.md:23-46` (when to invoke)
 and `:48-260` (N1-N8 and the binding Output artifacts); the same trigger is
 wired at `docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md` "NO-GO DISCIPLINE
-GATE". The checked-in gate binds every N1-N8 statement to evidence in the
-restricted audit packet (`docs/audit/scripts/no_go_discipline_gate.py`).
+GATE". Since 2026-11-13 N1-N8 is an aid: no gate requires the answers, and
+a packet an auditor supplies is validated by
+`docs/audit/scripts/no_go_discipline_gate.py`. The prompts:
 
 - N1: the family ruled out, stated with explicit quantifiers (which objects,
   premises and resolution), and the attack routes inside it, each with a
@@ -226,20 +228,8 @@ restricted audit packet (`docs/audit/scripts/no_go_discipline_gate.py`).
   by what mechanism, and whether that mechanism could apply here. A similar wall
   retired by a mechanism you have not considered means the no-go is premature.
 
-Two artifacts must LAND with the PR; a PR body is not a landing surface, and the
-packet family that existed at review time but did not land is this repo's largest
-audit-invalidation class:
-
-1. the complete N1-N8 answers as a committed artifact — a `## No-Go Discipline
-   Gate` section in the source note itself, or a committed
-   `NO_GO_DISCIPLINE_CHECKLIST.md` that the note links;
-2. the N5 execution certificate in the primary runner's cached stdout — one line
-   each for `per_element:`, `per_site:`, `per_mode:`, `per_block:`,
-   `lattice_wide:`, each a substantive (>= 40 character) statement of what the
-   runner actually resolves at that granularity, using "checked and not
-   executed — <reason>" where a class is genuinely not exercised. The validator
-   is `docs/audit/scripts/forensic_evidence_readiness.py`;
-   `docs/audit/scripts/check_changed_audit_evidence.py` checks it at review time.
+No landing artifact is required for these answers: neither a committed
+checklist nor N5 lines in runner output.
 
 Withdrawing the negative claim to a bounded positive observation removes the
 N-gate obligation — but then NO residual sentence may still function as a no-go.
@@ -497,9 +487,8 @@ validation placement) and `docs/ai_methodology/skills/review-loop/PREFLIGHT.md`.
 - `python3 docs/audit/scripts/audit_lint.py --strict` exits 0 with no errors
   (pre-existing warnings and notices may remain).
 - `python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main --include-worktree`
-  names no missing runner, missing declared input, missing current compute
-  result, or incomplete N5 certificate for any affected non-meta, non-open,
-  non-decoration row. Include staged, unstaged, and untracked author/review
+  names no missing runner, missing declared input, or missing current compute
+  result for any affected non-meta, non-open, non-decoration row. Include staged, unstaged, and untracked author/review
   changes before committing; the CLI default sees committed changes only.
   This is preflight only: the independent audit reruns the
   runner live and inherits no author verdict.

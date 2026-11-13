@@ -172,23 +172,17 @@ limitation; an author's self-review is not independent confirmation.
   this reviewer whenever changed content includes a `no_go`, `stretch_attempt`,
   `bounded_with_named_walls`, or derived-no-go-boundary artifact, or when any
   other reviewer in this fanout outputs `NO-GO` / `BOUNDED` / `OVERCLAIM` on
-  a negative claim. The reviewer must invoke the `no-go-discipline` skill
-  and walk N1-N8 against the branch content (see
-  [`docs/ai_methodology/skills/no-go-discipline/SKILL.md`](../../no-go-discipline/SKILL.md)):
-  N1 alternative-route enumeration (explicit family, every route inside it
-  closed, no route count), N2
-  wall-independence audit, N3 hidden-wall scan, N4 residual matching,
-  N5 rhetoric audit (per-element / per-mode / per-block / lattice-wide
-  resolutions), N6 partial-closure path scan (convention-reframe vs new
-  axiom), N7 steelman, N8 cross-cycle echo. Output `PASS` (negative claim
-  honestly scoped) or `FAIL` with the failing checklist items named and the
-  narrowest demoted claim proposed (`partial-attempt-with-named-untested-routes`,
-  `partial-narrowing`, `bounded-with-corrected-wall-count`, or
-  `stretch-attempt-with-honest-residual`). The reviewer must not approve a
-  no-go that has not been stress-tested against the framework's full
-  authority surface — under-tested negative claims are at least as harmful
-  as overclaimed positive ones because they foreclose investigation paths
-  permanently.
+  a negative claim. The reviewer answers the obstruction questions in
+  [`docs/ai_methodology/procedures/check.md`](../../../procedures/check.md):
+  is the family ruled out stated with explicit quantifiers, and does every
+  title, summary and citing statement claim no more than that. An open
+  admissible route inside the family fails the claim; an escape outside it
+  refutes nothing. The N1-N8 prompts of the `no-go-discipline` skill
+  ([`SKILL.md`](../../no-go-discipline/SKILL.md)) are an aid, never a
+  requirement. Output `PASS` (negative claim honestly scoped) or `FAIL` with
+  the failing question or the open route named and the narrowest honest
+  claim proposed. Under-tested negative claims are at least as harmful as
+  overclaimed positive ones because they foreclose investigation paths.
 
 - `LabelingConventionReviewer`
   Detect labeling/naming/convention content masquerading as a bounded
@@ -297,9 +291,9 @@ Rules:
 - Do not approve new bare letter-number science names. Require explicit names
   from CONTROLLED_VOCABULARY, with shorthand only as a parenthetical alias.
 - Do not approve a `NO-GO` or `BOUNDED with named walls` recommendation
-  without running `no-go-discipline` N1-N8 against the branch content. An
-  unscrutinized negative claim forecloses investigation paths permanently and
-  is at least as harmful as an overclaimed positive.
+  without answering the obstruction questions of `procedures/check.md`
+  against the branch content. An unscrutinized negative claim forecloses
+  investigation paths and is at least as harmful as an overclaimed positive.
 - Do not approve proof-complete framing until the ProofObligationReviewer has
   reconstructed the obligation graph and ruled out target-equivalent missing
   lemmas, circular reductions, and uncovered edge cases.

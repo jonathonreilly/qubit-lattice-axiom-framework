@@ -2,12 +2,13 @@
 """Deterministic preflight for evidence needed by a forensic audit seat.
 
 This module never makes a scientific judgment.  It detects only mechanical
-conditions that make the authenticated N1-N8 contract impossible to satisfy,
-so they can be repaired before spending an independent model seat.
+conditions that make the forensic evidence impossible to supply (a missing
+runner or declared input, or a stale cache), so they can be repaired before
+spending an independent model seat.  Since 2026-11-13 it no longer requires
+the five N5 resolution lines in runner output: the N1-N8 packet is optional.
 """
 from __future__ import annotations
 
-import re
 import sys
 from pathlib import Path
 
@@ -17,44 +18,6 @@ import no_go_discipline_gate
 REPO_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 import runner_cache  # noqa: E402
-
-
-def live_manifest_readiness_issue(
-    evidence_manifest: dict[str, dict],
-) -> str | None:
-    """Return a definite N5 evidence gap in an invocation-bound manifest."""
-    required_statements = no_go_discipline_gate.required_phrase_groups(
-        evidence_manifest,
-        {"source"},
-        no_go_discipline_gate.N5_SCAN_PHRASES,
-    )
-    if not required_statements:
-        return None
-
-    runner_text = "\n".join(
-        str(entry.get("text") or "")
-        for entry in evidence_manifest.values()
-        if "runner_stdout" in set(entry.get("roles") or [])
-    )
-    missing: list[str] = []
-    for resolution_class in sorted(no_go_discipline_gate.N5_RESOLUTION_CLASSES):
-        marker = f"{resolution_class}:"
-        found = False
-        for line in runner_text.splitlines():
-            normalized = re.sub(r"\s+", " ", line.strip().casefold())
-            marker_index = normalized.find(marker)
-            if marker_index >= 0 and len(normalized[marker_index:]) >= 40:
-                found = True
-                break
-        if not found:
-            missing.append(resolution_class)
-    if not missing:
-        return None
-    return (
-        "forensic_n5_execution_certificate_incomplete: current-cycle "
-        "runner_stdout lacks substantive canonical resolution lines for "
-        f"{','.join(missing)}"
-    )
 
 
 def _runner_source_issue(path: str, repo_root: Path) -> str | None:
@@ -120,6 +83,9 @@ def cached_row_readiness_issue(
     if not required_statements:
         return None
 
+    # Negative-rhetoric rows still need a runner and a fresh cache; the codes
+    # keep their historical `forensic_n5_` names. The five resolution lines
+    # are no longer required (2026-11-13).
     runner_path = row.get("runner_path")
     if not isinstance(runner_path, str) or not runner_path:
         return "forensic_n5_runner_missing"
@@ -134,12 +100,4 @@ def cached_row_readiness_issue(
     )
     if cached_stdout is None:
         return f"forensic_runner_cache_not_fresh:{runner_path}"
-    no_go_discipline_gate.set_packet_evidence(
-        manifest,
-        path=no_go_discipline_gate.runner_stdout_evidence_path(
-            str(row.get("claim_id") or "")
-        ),
-        role="runner_stdout",
-        text=cached_stdout,
-    )
-    return live_manifest_readiness_issue(manifest)
+    return None

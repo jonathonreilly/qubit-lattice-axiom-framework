@@ -246,50 +246,51 @@ for the defined physical bridge kinds. Record the exact terminal obligation
 and strength comparison in `verdict_rationale`; no new response-schema field
 is required.
 
-#### 4a. No-Go Discipline gate
+#### 4a. Obstructions and the optional No-Go Discipline packet
 
-The orchestrator's source-shape check says this row requires the gate:
-`{{NO_GO_DISCIPLINE_REQUIRED}}`.
+The orchestrator's source-shape check says this row's source has the shape
+of an obstruction: `{{NO_GO_DISCIPLINE_REQUIRED}}`.
 
-Run the N1-N8 gate whenever that value is `true`, whenever you classify the
-row as `no_go`, or whenever your rationale would name walls, admissions,
-obstructions, "does not lift," "no route exists," "no retained primitive
-supplies this," or "requires a new axiom." A `false` value scopes only the
-orchestrated forensic evidence plumbing — it NEVER waives the gate when your
-own output names walls. For an `audited_clean` verdict (or any verdict on a
-`claim_type: no_go` row, or in a forensic run) you MUST include the
-structured `no_go_discipline` object (development tier: N1-N8 as structured
-judgments with quoted evidence), or the apply gate will reject your verdict
-outright. For a non-clean verdict on a non-no-go row in the development
-tier, the structured object is optional — state the same wall-naming
-judgment in your rationale prose; a supplied object is still validated in
-full. Non-clean verdicts re-enter the repair queue and foreclose nothing,
-which is why only claim-cementing clean verdicts carry the mandatory packet
-there. The restricted-input rule still applies: do not search the wider
-repository. For N8, judge only the source note, runner/helper sources,
-one-hop authorities, and premise registries supplied here. Missing
-cross-cycle evidence is a checklist failure, not permission to browse.
+Treat the row as an obstruction whenever that value is `true`, whenever you
+classify the row as `no_go`, or whenever your rationale would name walls,
+admissions, obstructions, "does not lift," "no route exists," "no retained
+primitive supplies this," or "requires a new axiom." A `false` value scopes
+only the orchestrated forensic evidence plumbing; it never exempts a verdict
+whose own output names walls.
 
-Packet evidence requirements are tier-scoped (owner-approved 2026-07-12),
-but auditor judgment is not. Every triggered row must answer N1-N8 at least
-in rationale prose, and every incoming audit must declare
-`negative_assertion_classes`; a non-empty declaration requires the packet on
-the same clean-verdict/no-go/forensic terms as the output trigger, while an
-empty declaration never bypasses a mechanical source or output trigger.
+Judge an obstruction as a theorem about an explicit family (owner,
+2026-11-13):
+
+- `claim_scope` states the family it rules out, with explicit quantifiers.
+- `verdict_rationale` says whether the title, summary and status lines claim
+  no more than that.
+- A clean verdict needs both, and no open admissible route inside the
+  family. An escape outside the family refutes nothing.
+
+The structured `no_go_discipline` (N1-N8) packet is optional for every
+verdict, in both tiers. Its eight checks are prompts for your own judgment: a
+passing packet never makes a verdict clean, and a missing one never makes it
+non-clean. A supplied packet is validated as before and must agree with the
+verdict; a `FAIL` packet forbids `audited_clean`. Every audit still declares
+`negative_assertion_classes`. The restricted-input rule still applies: do not
+search the wider repository. For N8, judge only the source note,
+runner/helper sources, one-hop authorities, and premise registries supplied
+here. Missing cross-cycle evidence is never permission to browse.
+
+A supplied packet's evidence requirements are tier-scoped (owner-approved
+2026-07-12):
 
 - **Development tier:** for everything except `claim_type: no_go` rows,
   source paths matching the no-go-name trigger, and
-  `AUDIT_FORENSIC_MODE=1` certification runs, supply N1-N8 as complete
-  structured judgment with quoted evidence paths and locators when the packet
-  is required above or you voluntarily include it. For a non-clean verdict
-  where the packet is optional and omitted, record the judgment in rationale
-  prose. Structural validation of any supplied packet does not authenticate
-  manifest containment, require live stdout, require exhaustive N6/N8 index
-  coverage, or require transport and snapshot plumbing.
-- **Forensic tier:** the manifest-containment, live-stdout, complete-index,
-  transport, and snapshot requirements below are mandatory. The no-go-name
-  trigger includes no-go, obstruction, firewall, negative-boundary,
-  no-uniform-sign, and stretch-attempt source paths.
+  `AUDIT_FORENSIC_MODE=1` certification runs, a supplied packet is validated
+  structurally, with quoted evidence paths and locators. Structural
+  validation does not authenticate manifest containment, require live
+  stdout, require exhaustive N6/N8 index coverage, or require transport and
+  snapshot plumbing.
+- **Forensic tier:** a supplied packet must meet the manifest-containment,
+  live-stdout, complete-index, transport, and snapshot requirements below.
+  The no-go-name trigger includes no-go, obstruction, firewall,
+  negative-boundary, no-uniform-sign, and stretch-attempt source paths.
 
 The complete current premise registries and their canonical source notes are
 included below. Use their actual text and boundaries; do not infer a primitive
@@ -368,17 +369,16 @@ exhaustive index coverage.
 {{NO_GO_CROSS_CYCLE_INDEX}}
 ```
 
-Record all eight checks in `no_go_discipline`. A gate `FAIL` is allowed with a
-conservative non-clean verdict, `chain_closes=false`, an explicitly narrowed
-`claim_scope`, a corrected wall set, and the next untested route. It can never
-support `audited_clean`. A gate `PASS` requires every N1 route closed, complete
-structured N2-N8 records, no unresolved items, a resolved steelman, a complete
-cross-cycle scan, and no failure items.
+If you supply `no_go_discipline`, record all eight checks. A gate `FAIL` is
+allowed with a conservative non-clean verdict, `chain_closes=false`, an
+explicitly narrowed `claim_scope`, a corrected wall set, and the next untested
+route. It can never support `audited_clean`. A gate `PASS` requires every N1
+route closed, complete structured N2-N8 records, no unresolved items, a
+resolved steelman, a complete cross-cycle scan, and no failure items.
 
-Judge the negative claim as a theorem about an explicit family. For `PASS`,
-`claim_scope` must state the family that is ruled out with explicit
-quantifiers: which objects, which premises, and which resolution (element,
-site, mode, block, or lattice). N1 lists the admissible routes inside the
+In a supplied packet, judge N1 against the family that `claim_scope` states
+(above): which objects, which premises, and which resolution (element, site,
+mode, block, or lattice). N1 lists the admissible routes inside the
 family the source claims to rule out, including the route of the N7 steelman.
 Each listed route is closed by a test you ran or by a prior authority, or it
 is recorded as open or untested. An open or untested route inside that family
@@ -483,7 +483,7 @@ Return a single JSON object with exactly these fields. No other prose.
   },
   "verdict": "<one of audited_clean, audited_renaming, audited_conditional, audited_decoration, audited_numerical_match, audited_failed>",
   "verdict_rationale": "<two to four sentences>",
-  "negative_assertion_classes": ["<REQUIRED, possibly empty. After reading the full note, list every no-go-discipline policy class the artifact ASSERTS: no_go_result, stretch_attempt_negative, bounded_with_named_walls, derived_no_go_boundary, conditional_wall_rationale. This is your semantic judgment and is independent of any mechanical trigger; honest coverage routing (this note does not derive X - the parent row carries it) is not an assertion and declares nothing. A non-empty declaration requires the full no_go_discipline packet for an audited_clean verdict, any verdict on a no_go row, and forensic runs; on a development-tier non-clean verdict the declaration stands with the rationale prose.>"],
+  "negative_assertion_classes": ["<REQUIRED, possibly empty. After reading the full note, list every no-go-discipline policy class the artifact ASSERTS: no_go_result, stretch_attempt_negative, bounded_with_named_walls, derived_no_go_boundary, conditional_wall_rationale. This is your semantic judgment and is independent of any mechanical trigger; honest coverage routing (this note does not derive X - the parent row carries it) is not an assertion and declares nothing. A non-empty declaration marks the verdict as one about an obstruction (section 4a); it does not require the no_go_discipline packet.>"],
   "decoration_parent_claim_id": "<claim_id of the upstream parent if verdict = audited_decoration, else null>",
   "open_dependency_paths": ["<note path of any cited authority that is itself support / open / conditional>"],
   "premises_used": ["<REQUIRED, possibly empty. Every premise unit, from the list after this block, whose content the audited argument relies on>"],
@@ -503,8 +503,8 @@ current judgments retain whole-premise binding. Valid units:
 
 {{PREMISE_UNITS}}
 
-Use `null` when the structured packet is not required and you do not choose to
-supply it. Otherwise replace it with:
+Use `null` unless you choose to supply the optional structured packet.
+Otherwise replace it with:
 
 The CLI response schema is closed: inside a supplied packet, conditional keys
 are always present. Use `null` for an inapplicable scalar/object field and an
@@ -842,8 +842,9 @@ steelman, incomplete N8 packet, or applicable unaddressed echo forces `FAIL`.
 
 - Do not propose alternative positive derivations. The audit checks whether
   the presented derivation closes from cited inputs. The only exception is the
-  mandatory N1/N7 stress test for a negative claim: enumerate attack routes
-  and steelman them, but do not promote an unpresented route into a theorem.
+  stress test of a negative claim (the admissible routes inside its family,
+  and N1/N7 when you supply the packet): enumerate attack routes and
+  steelman them, but do not promote an unpresented route into a theorem.
 - Do not recompute the underlying physics from scratch.
 - Do not consult external sources (PDG, lattice QCD literature, the
   arXiv) beyond what is quoted in the source note.

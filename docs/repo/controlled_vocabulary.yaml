@@ -168,17 +168,17 @@ term_families:
         definition: "None of the above fits; the note must state why."
 
   no_go_discipline_status:
-    description: "Outcome of the mandatory structured N1-N8 stress test for negative boundaries."
+    description: "Outcome of the optional structured N1-N8 stress test for negative boundaries, when an auditor supplies the packet."
     authority: docs/ai_methodology/skills/no-go-discipline/SKILL.md
     scope_tag: audit_physics_process
     values:
       PASS:
-        definition: "Every required N1-N8 record closes with no unresolved item; eligible to support a clean negative verdict."
+        definition: "Every N1-N8 record in the supplied packet closes with no unresolved item; consistent with a clean verdict, never sufficient for one."
       FAIL:
         definition: "At least one required stress test remains open, incomplete, or mismatched; forbids audited_clean and requires an explicit demotion."
 
   no_go_demotion:
-    description: "Required conservative disposition when no_go_discipline_status is FAIL."
+    description: "Required conservative disposition when a supplied packet's no_go_discipline_status is FAIL."
     authority: docs/ai_methodology/skills/no-go-discipline/SKILL.md
     scope_tag: audit_physics_process
     values:
@@ -192,12 +192,12 @@ term_families:
         definition: "Preserves a useful stretch attempt while stating the unresolved residual explicitly."
 
   no_go_discipline_invalidation:
-    description: "Audit invalidation reason used when negative authority predates the structured N1-N8 gate."
+    description: "Retired audit invalidation reason: not emitted since 2026-11-13, when the N1-N8 packet became optional. Archived audits still carry it."
     authority: docs/audit/scripts/invalidate_stale_audits.py
     scope_tag: audit_physics_process
     values:
       no_go_discipline_packet_missing:
-        definition: "A clean negative-boundary audit has no structured N1-N8 packet; archive it and return the row to fresh audit before it can remain authoritative."
+        definition: "Historical: a negative-boundary audit had no structured N1-N8 packet and was archived for fresh audit. Not emitted since 2026-11-13."
 
   proof_search_operational_vocabulary:
     description: "Process-only vocabulary for theorem and hard-reduction search. These labels classify search state and review disposition; they carry no physics premise or audit-status weight."
@@ -235,7 +235,7 @@ term_families:
           EQUIVALENT_STRENGTH_GAP: "A claimed advance merely relocates the target into an equivalent or stronger unresolved lemma."
 
   negative_assertion_classes:
-    description: "Mandatory auditor declaration on every incoming audit: the no-go-discipline policy classes the artifact asserts, judged semantically from the full note. Any non-empty declaration requires the N1-N8 packet; an empty declaration never bypasses the mechanical trigger."
+    description: "Mandatory auditor declaration on every incoming audit: the no-go-discipline policy classes the artifact asserts, judged semantically from the full note. A non-empty declaration marks the verdict as one about an obstruction; it does not require the N1-N8 packet."
     authority: docs/ai_methodology/skills/no-go-discipline/SKILL.md
     scope_tag: audit_physics_process
     values:

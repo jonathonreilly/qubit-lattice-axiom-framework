@@ -539,3 +539,345 @@ the plaquette mean, ARGUED by gauge averaging), which is the original problem. I
 controls the pinned measure in the strip 2/9 <= beta <= 2.6, 0 < a <= 24 beta without a supremum over
 environments, and no monotonicity in a or in beta that is not shared by U(1). The attempt stops here.
 
+
+## Resumed 2026-11-13 after the 03:06Z interrupt
+
+Clone now at commit 9f1e04272b03270994c98fb4b9716e071924bac4 (branch claude/ym4d-hard-route; `git pull --ff-only`
+said "Already up to date"). The header commit 2b6acd1732dd is the commit of the first run. Steps 1a-6 above are
+finished and are not redone. I re-read this file in full before writing this line.
+
+Remaining plan (one step per response, each appended before the next):
+
+- R1. Read row 850 (D/library/gap-handoff-check-astra.md) in full. Record its verdict on Lemma DC*, Lemma BOX,
+  Theorem O-SEED, Theorem HO, Identity PHI. Update the "PROVED given ..." marks of Steps 3b-6 where it bears.
+- R2. Read rows 865 and 868 (the complete-account port of (SD-cyl)). Record what bears on the route and on Step 7.
+- R3. Step 6c: one more line of attack on the strip of (HIGGS-FS) that takes no supremum over environments
+  (reflection positivity of the flat-pinned measure). One response. Record what it proves and where it stops.
+- R4. Step 7: map each step to the statements of the Sussman-Alpoge account it needs, with line ranges I read myself.
+- R5. Step 8: fact tests on the final argument (U(1), Q_8, 2T, worst-case caps). Summary. RESULT line.
+
+## Step R1. Row 850's check of row 846, and what it changes above
+
+READ D/library/gap-handoff-check-astra.md L1-238, in full (short name CK; a line-by-line check of row 846 by
+Codex gpt-6-astra xhigh; a check, not an audit). I also re-read HO L114-140 (Lemma DC*, Lemma BOX) against my uses.
+
+**Inputs of Steps 3b-6 that row 850 checked.**
+- Lemma DC* HOLDS (CK L25-31). The orientation is delta(f)^T G b; no column-sum hypothesis on C is needed.
+- Lemma BOX HOLDS (CK L126-128). Its proof uses only the range of the kernels, (TC) and the tower property.
+- Lemma TRUNC, Identity PHI and the cancellation of common vacuum terms HOLD (CK L130-146).
+- Theorem O-SEED and Theorem HO HOLD AFTER CORRECTION (CK L162-168, L208-214): the star zone needs the domain
+  6x + u_m < 1; all zones need beta >= 0 and 0 < alpha < 1.
+- Not rechecked by row 850: Theorem V and Corollary V1 of VL (their check is row 790, READ through HO L12).
+
+**My uses of DC*, verified again against the statement at HO L118-128 (PROVED given DC*, V1 and Theorem V).**
+- Corollary K9: D = links of C_2, mu_2 = the conditional law given V_D, b = 0, delta(f) = 0 on D. DC* gives
+  2 alpha Delta(f) e^(-m d)/(1 - alpha). The constant 8 alpha |C_1|/(1 - alpha) stands.
+- Theorem STEP: D empty; f = <e, U_k> has delta_k(f) <= 1; b_j = C_jc |u - u'|. DC* gives sum_j G_kj b_j, the
+  orientation that row 850 confirms. The weighted sum over k is a column sum of G C; C is symmetric. (5.1) stands.
+- Lemma HL2: D = D_1 (R = 1, strip width 2), b = 0, alpha = 1/2. The distance n/2 - 5/2 agrees with CK L39-41
+  at R = 1 for a support of one link. Lemma BOX is used for a measure with the extra one-link term a <1, U_l>,
+  which is not gauge invariant; its proof does not use gauge invariance (CK L128). The bound stands.
+So the marks "PROVED given Lemma DC* of HO" in Steps 3b-6 now read: PROVED given Lemma DC* and Lemma BOX (both
+checked line by line by Codex astra xhigh, row 850) and Theorem V with Corollary V1 of VL (check row 790).
+
+**Corrections that row 850 makes to statements I recorded in Step 1a and Step 2.**
+1. Step 1a recorded "(HO L252) the first-passage density is in no zone". Row 850 corrects this (CK L196-202):
+   the supplied representation and estimates do not establish membership in any corrected zone; no impossibility
+   of a resummation is proved. A sum that contains labels or characteristic functions can have a bounded global
+   log potential (chi + chi^c = 1). The brief's sentence "lies in no zone" inherits this correction.
+   This agrees with Lemma K2 above: after one soft step every input has a globally Lipschitz log density.
+2. (T-WC) in Step 2: the bound 0.775 is a ceiling on one family of majorants (CK L192-194). It is not a ceiling
+   on the true response or on every block method. The twist bound of row 839 is a separate statement.
+3. The star radius 0.0042 at beta = 0.35 FAILS; 0.0041 is safe. The radii at beta = 1/4 that Step 1a quotes
+   (0.058 tree gauge, 0.053 stars) are safe at m = 0 (CK L85-100). The worked example n = 226 with m = 1,
+   alpha = 1/2 FAILS its zone hypotheses (CK L51-53). I use neither.
+4. Theorem HO needs less than EXIT asks (CK L142-146, L224-225): a common extensive vacuum constant cancels
+   exactly whatever its size; local terms need pairwise torus consistency at each cutoff, not equality across
+   cutoffs. This bears on the paragraph "What Theorem LAND does not give" in Step 4: only the uncancelled
+   part of the vacuum term needs a uniform bound.
+5. The margin in (HIGGS-FS). READ through CK L170-172: Lemma Z' states log(1 + S(T_0; (rho T_0)^3)) <= (2/rho) Phi_rho(T_0).
+   With (6.2) the seed condition is one-sided and explicit:
+
+       8 rho^3 n^4 integral_0^infinity [ e_(rho n)(a) - e_n(a) ] da  <=  log(1 + s_0),   s_0 < 3/10 fixed (CK L218).     (HIGGS-FS')
+
+   Only an upper bound on Phi is needed. (Phi >= 0 holds for free when the transfer operator is positive: the
+   trace of T^(2n) is at most the square of the trace of T^n. ARGUED, standard; so the one-sided form does not make
+   the problem easier. It says the thermal sum is the whole defect.)
+
+## Step R2. Rows 865 and 868 (the complete-account port of (SD-cyl)), and what they change here
+
+READ D/library/gap-sdcyl-ca-astra.md L1-313 in full (short name SDC; row 865, a port by Codex gpt-6-astra xhigh)
+and D/library/gap-sdcyl-ca-check-opus.md L1-104 in full (short name SDK; row 868, its check by Claude Opus 5.5 high:
+all six statements HOLD, conditional on the account's own premises). Also READ D/library/gap-e17phys-opus.md L28
+(the definition of S_ev) and D/library/gap-phys-seed.md L268-272 (Lemma Z').
+Credit for the account: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text.
+
+**What the two rows give (READ through; I did not re-read the account lines in this step).**
+- The witness of CA-I Theorem 0 (iv), CA-I L2715-2826, on the cubic tori T_m: S_2(f, h) = zeta'^2 g_(K-s)^4 b_0 K_s^star(f, h)(1 + R),
+  |R| <= 1/2, with c_K |f| |h| <= K_s^star(f, h) <= C_K |f| |h| on the class T(d; theta), d <= 1/40, and
+  zeta'^2 g_(K-s)^4 >= (4/9) xbar_s^(-2), xbar_s = g^(-2) + B(s + 1) (SDC L20, L32-40; SDK L50). The constants do not
+  depend on the cutoff. The observable is O(f) = sum over bare plaquettes p of f(x(p)) [1 - x_p(U)] (SDK L42:
+  CA-I L208, L101-102). The account's theorem is conditional on its packages (SDK L100).
+- Proposition W-phys-CA (SDC L218-240; SDK L70-77): S_ev(n_A; B) >= rho_CA^(2A/(3d)), rho_CA = c_K/(3 C_K), for spatial
+  boxes with sides multiple of ell_star^CA and A = n_A a_K >= 2d. So the even gap is at most (2/(3d)) log(3 C_K/c_K)
+  in physical units. This is an upper bound on a gap. It proves no decay.
+- The dictionary between the outline's first-passage data (K, beta) and the complete account's data
+  (g_0 in (0, g_-(g)], K = K(g_0, g), CA-I L111, L682) is unchecked (SDK L87). Step 7 below must respect this.
+
+**Bearing 1. The witness does not obstruct the exit, and does not help it (PROVED given W-phys-CA).**
+Let a seed S(T; B) <= t < 1 hold at a box B and time T to which W-phys-CA applies, A = T a_K. The even sector is a
+sub-sum of the full thermal sum (READ through CK L176). So rho_CA^(2A/(3d)) <= t, that is
+
+    A >= (3d/2) log(1/t) / log(3 C_K/c_K).
+
+Since d <= 1/40 and c_K <= C_K, the right side is at most (3/80) log(1/t)/log 3: below 0.3 units for t = 1/5041.
+A landing after the first passage has coarse spacing at least one unit. So this necessary condition is not binding.
+
+**Bearing 2. No cutoff-uniform landing at the bare scale (PROVED given CA-I Theorem 0 (iv) as quoted, and K9).**
+Fix a noise a, alpha < 1 and m > 0. Suppose the kernel (N) (L = 1) applied to the bare first-passage measures on
+the tori T_m lands them with these constants for all K >= K_0. Take the tent pair (f, h_2) of SDC L173-203
+(r = d/4, supports at distance at least 5d/2, both in the class). Plaquettes p != q with disjoint links are closed
+paths as in K6, K9, and x_p = chi_(1/2)(U_p)/2. So |Cov(x_p, x_q)| <= lambda_(1/2)(a)^(-8) (8 alpha/(1 - alpha)) e^(-m d(p,q)).
+A ball of radius r holds at most 6 (d/a_K)^4 plaquette centres (a_K <= d/8), and d(p, q) >= 5d/(2 a_K) - 2. Hence
+
+    (2/9) b_0 c_K xbar_s^(-2) r^2  <=  S_2(f, h_2)  <=  r^2 36 (d/a_K)^8 lambda_(1/2)(a)^(-8) (8 alpha/(1 - alpha)) e^(2m) e^(-5 m d/(2 a_K)).
+
+The left side does not depend on K. The right side tends to 0 as a_K = L^(-K) -> 0. So the supposition fails for
+large K. Meaning: a soft step keeps the witness exactly (K6: the factor lambda^8), so the smeared bare theory is as
+non-trivial as the bare theory; a landing must sit at a block scale that grows like L^K in bare units. The
+account's steps supply that scale. This is a consistency statement, not progress on the band.
+
+**Bearing 3. Matched locators (for Step 7).** T_m = R^4/(2 L^m Z^4) (CA-I L108, L410-412); bare sites L^(-K)(Z + 1/2)^4
+(CA-I L418); first-passage data (CA-I L111, L682); the observable and the connected function (CA-I L208, L218, L731);
+rectangular trace subadditivity (CA-II L140995-141056); vacuum-density premises (CA-II L141276-141347); the complex
+chessboard estimate (CA-II L61205-61415). All READ through SDC and SDK here. Step 7 re-reads what it cites.
+The trace inequality of Step R1 item 5 (Phi >= 0) has its complete-account form at CA-II L140995-141056 (READ through SDC L97).
+
+## Step 6c. The vacuum constant: a correction to Step 4, and what every exact step must supply
+
+I re-read HO L44 (TC), L160-163 (vacuum cancellation) and L255-268 (EXIT) for this step.
+Clause (E2) asks that the datum (beta, W, E) is torus consistent: the constants E_X are the same on both tori for
+sets of diameter below n/3, and e_m is bounded uniformly.
+
+**Proposition VAC (the vacuum constant of an exact step; PROVED).** Let T run over T_n and T_(rho n). Let r'_T > 0 be
+a density on the coarse links with integral Z_T (for example the image of a density of mass Z_T under any kernel
+with integral of K(V | U) dV = 1). Suppose r'_T = exp(-E_T + beta' sum_p x_p - sum_X W_X) for a datum (beta', W, E).
+Put F_T = log integral exp(beta' sum_p x_p - sum_X W_X) dV and Phi = rho^4 log Z_n - log Z_(rho n). Then
+(i) E_T = F_T - log Z_T.
+(ii) rho^4 E_n - E_(rho n) = [rho^4 F_n - F_(rho n)] - Phi.
+(iii) For every configuration V_0: -E_T = log r'_T(V_0) - beta' sum_p x_p(V_0) + sum_X W_X(V_0).
+*Proof.* Integrate the representation over V for (i). Subtract for (ii). Evaluate at V_0 for (iii). QED
+
+**Corollary VAC2 (PROVED given Theorem O-SEED as corrected by row 850).** Let (beta', W) be torus consistent and
+in a zone. Then |rho^4 F_n - F_(rho n)| <= delta_loc(n), the local part of the bound of Theorem O-SEED (Identity
+PHI and Lemma TRUNC; exponentially small in n). So by (ii)
+
+    | Phi + (rho^4 E_n - E_(rho n)) |  <=  delta_loc(n).
+
+(a) If E satisfies (TC) with finite e_m, then |Phi| <= delta_loc(n) + 8 (rho n)^4 e_m e^(-mn/3). This is Theorem O-SEED.
+(b) Conversely, if Phi is not exponentially small along the family, no datum with (E1)-(E3) exists.
+(c) Given the potential part, the constants E_T are fixed by the single number log r'_T(V_0) (by (iii)).
+So clause (E2) for the vacuum constants is equivalent to the conclusion of Theorem O-SEED. It is new information
+only if log r'_T(V_0) is known by an independent local formula, with its absolute normalisation.
+
+**What this does to the soft kernels of Steps 3-4 (PROVED).** For (N) and (D_a), r'_T(V) = N(a)^(-|E'|) Xi_T(a V) (4.1).
+The cumulant expansion of log Xi_T(a V) - log Z_T, and every potential built from the one-link laws of rho'_T,
+represents the normalised density p'_T = r'_T/Z_T. For p'_T the constant is E = F (the identity integral of p' = 1),
+and Theorem O-SEED applied to p'_T says 0 = 0. For r'_T the constant is F_T - log Z_T, with log Z_T unknown.
+At V_0 = 1 the number in (c) is log A_T(a), the flat-pinned partition function of Step 6.
+So for a soft step:  EXIT  <=>  PIN-MIX in its potential form, and  rho^4 log A_n(a) - log A_(rho n)(a)  exponentially small.
+By Theorem HL's derivative formula the second statement differs from the target Phi by
+4 (rho n)^4 integral_0^a [e_n - e_(rho n)] da', which the potential form of PIN-MIX controls. So it is the target.
+
+**Correction to Step 4.** The paragraph "What Theorem LAND does not give" says that Theorem O-SEED should survive
+for the cumulant potential "with one more exponentially small term". I withdraw that sentence. The cumulant
+potential has the local structure, but its vacuum constant is the unknown itself. Theorem LAND (i)-(v) stands as
+stated. Its landed measure is a correct object for clustering, for reflection positivity and for any consumer
+of a normalised Gibbs measure. It gives no bound on the free-energy defect, so it does not give the seed.
+Step 3a already said "the constant of the output is -log Z_T itself"; this step draws the consequence.
+
+**Which steps do supply the constant (ARGUED from Theorem STEP and Lemma HL2; not written in full).**
+A step supplies log r'_T(V_0) when a path of measures joins the pinned integral to an explicit one and local
+means compare between tori along the whole path. Three paths occur in this file and in row 846.
+1. Strong pinning, the path in the fine coupling at fixed (a, V): d/ds log r'_T(V; s) = beta sum_p <x_p> under the
+   measure pinned by (a, V) at coupling s beta; r'_T(V; 0) = 1 for (N) and (D_a). For a > 24 beta e^m the pinned
+   kernels satisfy the single-link criterion for all s in [0, 1] and all V (the proof of Theorem STEP). So the
+   step is computed: local terms and constants are torus consistent up to exponentially small terms. This is the
+   mechanism of every Balaban-type step (there with a saddle point at fixed block field). The price is Step 5:
+   in worst-case norms the output is not softer than the input.
+2. Weak pinning, the path in a at V = 1: Theorem HL. It crosses the strip 0 < a <= 24 beta.
+3. No pinning, the path in the coupling of the last computed action S: Identity PHI of row 846 (CK L134-140).
+   For the Wilson action it reads (PROVED: d/d beta log Z_T = 6 |T| <x_p>_T and Z_T(0) = 1)
+
+       Phi^rho(n) = 6 (rho n)^4 integral_0^beta [ <x_p>_(T_n, b) - <x_p>_(T_(rho n), b) ] db.                       (6.3)
+
+**The crux in path form (statement; OPEN on the band).** (PATH) For the last computed action S (model case: the
+Wilson action with beta in the band): the local means of the measures exp(-s S), s in [0, 1], compare between T_n
+and T_(rho n) with an error whose integral over s, times (rho n)^4, is below (rho/2) log(1 + s_0). In the model
+case this is (6.3) at most (rho/2) log(1 + s_0). Row 850 confirms the proved range of the lane's criteria at W = 0:
+b < 2/9 (single link), b < 1/3 (line-field gauge), b < (sqrt(37) - 5)/3 = 0.3609 (stars) (CK L71). The interval
+from 0.361 to the band is OPEN. A soft step does not shorten this interval (Corollary VAC2).
+
+**Fact tests on (PATH) (ARGUED; recalled physics is GUIDE).** U(1): in the Coulomb phase the plaquette mean
+converges in the size like a power (massless photon), so (6.3) is not small. Q_8 and 2T: across the freezing
+coupling the two tori differ by order one on a window of width about 1/|T|, so (6.3) jumps by a constant (the
+number of flat sectors enters Phi). So (PATH) on [0, beta] says: no freezing and no Coulomb phase up to beta.
+It must use the continuous non-abelian group. This agrees with rows 838 and 843.
+
+**Two side facts (kept short).**
+- Lemma TS (the defect is a sum of thermal sums; PROVED given positivity of the bare transfer operator in each
+  direction, the lane's Lemma A, READ through D/library/gap-phys-seed.md L268-272). With Z(t; B) = lambda_0(B)^t (1 + S(t; B)):
+  0 <= rho log Z(n; B) - log Z(rho n; B) <= rho S(n; B). Telescope over the four directions:
+
+      0 <= Phi^rho(n) <= rho^4 S(n; n^3) + rho^3 S(n; rho n . n^2) + rho^2 S(n; (rho n)^2 . n) + rho S(n; (rho n)^3).
+
+  With Lemma Z' this is two-sided: the defect at beta is a spectral quantity at beta alone. But a bound on a
+  thermal sum needs a count of states as well as a gap, and the lane obtains that count from the defect (Lemma Z').
+  So Lemma TS does not remove the path.
+- The flat-pinned line is reflection positive, and that gives no rate (PROVED; ARGUED as to use). In unitary
+  gauge the transfer kernel between time slices is e^(-V/2) K_0 P_a e^(-V/2), K_0 the product of the one-link
+  convolutions by exp(beta x) and P_a = integral over g of [product over sites of exp(a x(g_x))] R(g), R the gauge
+  rotation. K_0 >= 0 and P_a >= 0 (positive character coefficients, Lemma K5), and they commute. So
+  rho^4 log A_n(a) - log A_(rho n)(a) >= 0 for every a >= 0. Chessboard bounds control mixed quantities by
+  homogeneous ones; here they bound correlations by the susceptibility. They do not bound the susceptibility.
+- Why single-link criteria cannot see the strip (PROVED arithmetic for the Gaussian caricature). Take the real
+  Gaussian with precision P = a + beta d*d on 1-forms. Its row sum is 18 beta/(a + 6 beta), below 1 only for
+  a > 12 beta. Yet P^(-1) = (a - beta Delta)^(-1) (1 + (beta/a) d d*) decays exponentially for every a > 0, at the
+  rate of the mass sqrt(a/beta). So between a = 0 and a of order 12 beta to 24 beta the failure of Steps 5-6 is a
+  failure of one-link bookkeeping for curl-type couplings, even with typical fields. A proof in the strip needs
+  blocks of side about sqrt(beta/a) or a different tool.
+
+**Clarification of the equivalence in Step 6c (PROVED given Theorem O-SEED's local part).** Define (POT): the
+normalised densities p'_T = r'_T/Z_T have data (beta', W) that are torus consistent and in a zone. This is what
+"PIN-MIX in its potential form" means above. Theorem LAND derives the Dobrushin condition for p'_T from PIN-MIX.
+It does not derive (POT); that needs the cumulant form with tree bounds and is OPEN to write.
+Given (POT): A_T(a) = Z_T p'_T(1), and log p'_T(1) = -F_T + beta' sum_p 1 - sum_X W_X(1). The two sums cancel in the
+defect up to the tails of W (TC), and the defect of F is at most delta_loc(n). So
+
+    rho^4 log A_n(a) - log A_(rho n)(a)  =  Phi^rho(n) + O( delta_loc(n) + tails ).
+
+Hence, for a soft step: EXIT for r'_T  <=>  (POT) and Phi^rho(n) exponentially small. The second clause is the
+conclusion that EXIT was meant to give. The route "soft step, then Theorem HO" is therefore circular for the seed.
+
+## Step 7. What each step needs from the Sussman-Alpoge account (lines read by me in this step)
+
+Sources at /Users/jonreilly/ym4d-lead/sa (revision 31a47c543775 as recorded by rows 848 and 865; hashes not
+recomputed here): CA-I = theorem_0_complete_account_raw_I.tex, CA-II = theorem_0_complete_account_raw_II.tex.
+The account is by Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of its text. The estimates it
+quotes from Balaban's papers are Balaban's. I cite the complete account only (rule of Step 1b). I did not read
+the outline in this step. Statements below are the account's; it marks several of them as conditional.
+
+**7.1 What I read.**
+
+| Locator (READ) | Content |
+|---|---|
+| CA-I L98-112 | tr 1 = 1; L odd; L_0 "is bound once, by there exists, and is never given a value"; T_m of side 2 L^m; K steps, bare spacing L^(-K); K(g_0, g) the first-passage number of steps |
+| CA-I L406-420 | T_m = R^4/(2 L^m Z^4); bare sites L^(-K)(Z + 1/2)^4; 2 L^(m+K) bare sites per side |
+| CA-I L678-686 | reference window g_-(g) <= g' <= g; 0 < g_0 <= g_-(g); K := K(g_0, g); m >= m_T(g_-(g)) |
+| CA-I L788-800 | block lattices T^(k) = L^(k-K)(Z + 1/2)^4; every site of T^(k) is a site of T^(k-1) (L odd) |
+| CA-I L2536-2553 | clause (0): g_k in (0, g), a subset of (0, gamma_H], for k <= K; g_K in [g_-(g), g); bounds on x_i - x_j |
+| CA-I L2555-2561 | clause (i) is Balaban's ultraviolet stability theorem as used; "No statement about the laws of the block variables is a clause of the present theorem"; their proofs are outstanding |
+| CA-I L2562-2574 | (i-a): rho_k is a sum over histories of large-field operations applied to characteristic functions, times exp of -A(g_k^(-2), U_k) plus localised terms; each term gauge invariant, analytic on a domain, bounded by const e^(-kappa d_j(X)) |
+| CA-I L2575-2581 | (i-b): chi_k e^(-g_k^(-2) A(U_k) - E_- N_k) dV_k <= rho_k dV_k and integral rho_k dV_k <= e^(E_+ N_k), E_+ <= C (1 + log g_k^(-2)) |
+| CA-I L2582 | (i-c): integral rho_k dV_k = integral rho_0 dU |
+| CA-I L2583-2595 | (i-d): exact insertion; V_(K-s) = M^(K-s) U with M the block-averaging map; "it asserts nothing about the values of the laws of the block variables" |
+| CA-I L2715-2800 | clause (iv): the witness (3.1:eq-main-3), the sandwich for K_s^star, the bound (2/9) b_0 c_K |f_1| |f_2| (g^(-2) + B(s+1))^(-2) <= S_2, the volume transfer with C_T(g) d^2 |
+| CA-I L3352-3392 | Remark "block-law statements": the block law nu^B_(K,s) = rho_(K-s) dV/integral rho_0; statement (a) is not a clause; bounds on the block laws are not part of Theorem 0 |
+| CA-II L140995-141036 | Lemma trace sub-additivity: 0 <= Z_(k n)(W) <= Z_n(W)^(k^4) for mirror-periodic W and even cell counts; its proof rests on the positivity of the Wilson transfer operator (Osterwalder-Seiler) |
+| CA-II L141276-141420 | Lemma torus-independence of the vacuum-energy density: under hypotheses (a)-(c), E_m = sum over j < K of three parts: exactly extensive counts, and local terms of Balaban's format "evaluated at the trivial configuration U = 1" with bounds e^(-kappa d(X)); non-wrapping terms agree between tori; conclusion |E_m/(2L^m)^4 - E_m'/(2L^m')^4| <= deltabar_vac, a constant of L and the parameters only |
+| CA-II L61205-61232 | Lemma chessboard estimate for complex cell observables, from reflection positivity in antipodal pairs of link planes |
+
+**7.2 The map.**
+
+| Step here | What it needs from the account | Supplied? |
+|---|---|---|
+| 3a: K1-K3, Proposition FREE, applied to rho_K | rho_K >= 0, integrable, mass Z_bare | Yes: (i-b), (i-c), CA-I L2575-2582. Coarse sites are fine sites (CA-I L788-800), so straight paths exist |
+| 3a: K1 (ii)-(iii), gauge and lattice covariance of rho_K | covariance of the block-averaging map M | Definition 1.5:def-block-average (CA-I L788 on); I read only its first lines. Not checked here |
+| 3b: K5-K7 on the bare measure, block L^(K+j) | nothing | - |
+| 3b: K8 on the bare measure | reflection positivity of the bare Wilson measure | Yes: used at CA-II L61205-61232 and L141034-141036 |
+| 3b: K8 on rho_K (Theorem LAND (v)) | reflection positivity of the block law | No. No block-law statement is a clause (CA-I L2555-2561, L3352-3360) |
+| 4: PIN-MIX, (POT) | decay of block-holonomy covariances under pinned block laws | No. Same lines. The account makes no statement of this kind at any scale |
+| 5, 6: Theorems STEP, HL, HL2, HL3 | none (model case: Wilson action) | For rho_K they would need global mixed Lipschitz bounds on log rho_K. (i-a) gives analytic local terms on domains and labels, not this |
+| 6c: Proposition VAC, item 1 (computed steps) | the vacuum constants of the K account steps as local torus-consistent terms | Yes, conditionally: CA-II L141276-141386, hypotheses (a)-(c). The constants are the format terms at U = 1, as in VAC (iii) |
+| 6c: (PATH) | the defect of the remaining level-K integral | No. (i-b) bounds its logarithm only by E_- N_K and E_+ N_K (CA-I L2575-2581) |
+| 6c: Lemma TS, Phi >= 0 | positivity of the transfer operator | Yes: CA-II L140995-141036 (even cell counts) |
+| R2: Bearing 2 | the witness with constants independent of K | Yes, as clause (iv), CA-I L2756-2790, conditional as the account states |
+
+**7.3 Consequences (ARGUED from the lines above, unless marked).**
+1. The account's K steps are computed steps in the sense of Step 6c: their vacuum energy is a sum of local
+   terms fixed at the trivial configuration. The lemma states only the uniform constant deltabar_vac. Its
+   hypothesis (c) puts the wrapping threshold at d_(j+1)(X) >= 2 L^min(m,m') L^(K-j-1)/(4M) - 2 (CA-II L141366-141370).
+   So the same proof gives a difference of densities that decays exponentially in L^min(m,m')/M. This is the
+   clause (E2) for the account's own vacuum terms, conditional on (a)-(c). I did not write this variant out.
+2. What the account does not supply is the defect of the remaining integral at level K. Its action has coupling
+   g_K in [g_-(g), g) with g <= gamma_H: weak coupling on a unit lattice of side 2 L^m >= 2 L^11 M. The whole
+   infrared problem sits there. (I did not read the definition of the normalisation in CA-II Notation
+   8.22:not-partition-sources-cells; the split "vacuum terms plus remaining integral" is READ through hypothesis (a).)
+3. The reference coupling g is at most gamma_H, and the book's constant L_0 is never given a value (CA-I L103-106).
+   So the number of weak steps (G1) from first passage to the band has no explicit bound in the account.
+   "Finitely many steps past first passage" needs explicit constants that the account does not state.
+4. The dictionary between the lane's first-passage data (K, beta) and the account's (g_0, K(g_0, g)) is unchecked
+   (SDK L87). Nothing in this file depends on it; the model statements are about the Wilson action.
+
+## Step 8. Fact tests on the final argument, answers to the brief, summary
+
+**8.1 Fact tests.**
+
+| Test | Proved statements of this file | Open statements (PIN-MIX, (POT), (PATH)) |
+|---|---|---|
+| U(1), Coulomb phase | K1-K9, FREE, LAND (as an implication), VAC, TS and the Higgs-line identity hold word for word. STEP, HL2, HL3 hold with the circle constants (Lemma V-inf holds on S^1). None of them asserts a gap in the band, so none is contradicted | Must fail. PIN-MIX implies exponential clustering of loop characters (K9, PROVED implication); a massless photon forbids it (recalled, GUIDE; row 786 proves a related non-summability, not this one). (PATH): power-law finite-size terms make (6.3) of order one (ARGUED) |
+| Q_8 and 2T | The kernel lemmas restrict to finite subgroups (Step 3c). Corollary V1 and Theorem V do not: they use the sphere S^3. So STEP, HL2, HL3 in this form use the continuous group, but only at strong coupling or strong pinning | Must fail above freezing. (PATH): (6.3) jumps by a constant across the freezing coupling (ARGUED). PIN-MIX: a Dobrushin landing makes twisted mass ratios tend to 1, a frozen phase suppresses them (ARGUED, GUIDE). A proof of (PATH) must use what the finite groups lack; this file does not find it |
+| Worst-case caps | STEP and HL2 take a supremum over pinning fields. They stop at beta < 0.0384 (landing) and at a > 24 beta (comparison), far below 2/3, 0.775 and 1.0109. Consistent | PIN-MIX takes a supremum over coarse pinning fields of strength a per block, not over fine boundary values. Rows 836 and 839 do not exclude it (ARGUED). (PATH) takes no supremum |
+| (AN1) | not used | not used |
+| The band and the real object | The model statements are for the Wilson action. Step 7 says what the account supplies for the first-passage density and what it does not | (PATH) is stated for the last computed action; in the model case for beta_W in 2.3 to 2.6 |
+
+**8.2 Answers to the brief's questions.**
+1. Which block transformation has a chance? Every exact map with a probability kernel keeps the masses. Soft
+   kernels (noise, noisy straight decimation) also give the size for free: one step lands any input, U(1)
+   included, at a per-link Lipschitz constant a of our choice (Proposition FREE). So the per-link number 0.05
+   at beta = 1/4 is not the crux. Noisy straight decimation keeps loops, truncated loop correlations, twisted
+   masses and reflection positivity (K6-K8). Bond moving is not exact. No kernel removes the two real loads:
+   locality of the output (PIN-MIX, (POT)) and its vacuum constant (Proposition VAC).
+2. What is monotone or controlled? I found no quantity that is monotone along exact steps and not group blind.
+   The exact invariants are group blind. The controlled quantity for locality is the weighted pinned block
+   susceptibility X_m(L, a). For the seed it is the path integral (6.3). U(1) cannot fake either: K9 turns a
+   uniform landing into exponential clustering of loops, and (6.3) sees power-law finite-size terms.
+3. The crux lemma, and where the attempt stops. For locality: PIN-MIX(L, a, alpha, m) (Step 4). PROVED by pinning
+   at every coupling when a > 24 beta e^m (Theorem STEP); the output then lands only for beta < 0.0384. For the
+   seed: the soft route is circular (Corollary VAC2 and its clarification), so the crux is (PATH) (Step 6c):
+   torus comparison of local means along a path of measures from a trivial point to the last computed action.
+   For the Wilson action it is proved for b < 0.3609 by the lane's criteria (row 850) and for a > 24 beta on
+   the Higgs line (Lemma HL2). It is OPEN from 0.361 to the band. I found no inequality for that interval
+   that avoids a supremum over environments and is not shared by U(1). The attempt stops there.
+4. Which statements of the account each step needs: Step 7, with the lines read.
+
+**8.3 Statements of this file by mark.** All proofs are author proofs by Claude Fable 5.2. None is checked.
+No numeric run was made.
+
+PROVED (given the named inputs: Theorem V and Corollary V1 of VL, check row 790; Lemma DC* and Lemma BOX of HO,
+checked line by line by Codex astra xhigh at row 850; the account's clause (iv) where stated):
+- Lemmas K1-K4, K4', Proposition FREE and its U(1) form (Steps 3a, 4).
+- Lemmas K5-K8, Corollary K9 (Step 3b). Theorem LAND (i)-(v) (Step 4).
+- Lemma V-inf, Theorem STEP, the arithmetic of the overlap beta < 0.0384 (Step 5). The Gaussian statement (i) of Step 5.
+- Theorem HL (the Higgs-line identity), Lemma HL2, Corollary HL3 (Step 6).
+- Proposition VAC, Corollary VAC2 and the clarification; identity (6.3); Lemma TS; positivity on the flat-pinned
+  line; the Gaussian caricature of the strip (Step 6c).
+- Bearing 1 (given W-phys-CA of rows 865, 868) and Bearing 2 (given clause (iv) of the account) (Step R2).
+
+ARGUED: the reading of the candidate table (Step 3c); the sharp-constant estimate "about 0.1" (Step 5); the
+computed-step statement for strong pinning with general V (Step 6c, item 1); the fact tests on the open
+statements (8.1); the consequences 7.3. GUIDE: recalled physics of the Coulomb phase, of frozen finite groups
+and of the Higgs crossover.
+
+WITHDRAWN: the sentence of Step 4 that Theorem O-SEED "should survive" for the cumulant potential (see Step 6c).
+CORRECTED from row 850: "the first-passage density lies in no zone" (Step R1, item 1); the scope of the 0.775 cap.
+
+OPEN:
+- PIN-MIX at order one, and its potential form (POT) with tree bounds for the cumulants of block holonomies.
+- (PATH) on the interval from 0.361 to the band; in the Higgs-line form, the strip 2/9 <= beta, 0 < a <= 24 beta.
+- A computed block step in the band whose output is softer than its input in a norm that the zone accepts.
+  Step 5 shows that worst-case norms do not decrease under strongly pinned noise steps.
+- For the account: the defect of the remaining level-K integral; explicit constants for the steps between
+  first passage and the band; any statement on block laws (Step 7).
+
+RESULT: PARTIAL, with one negative structural result. PROVED (author proofs, unchecked): an exact soft block step gives the zone's per-link size for free for any input and for U(1) (Proposition FREE), so the 0.05 target is not the crux; locality of the landed action is the pinned block mixing lemma PIN-MIX, proved by pinning at every coupling only for noise a > 6 beta + 18 beta e^m (Theorem STEP), which lands only beta < 0.0384; the vacuum constant of any exact step equals F_T - log Z_T (Proposition VAC), so "soft step then Theorem HO" is circular for the seed and Step 4's optimistic sentence is withdrawn; the Higgs-line identity and (6.3) reduce the seed to torus comparison of local means along a path, proved for b < 0.3609 and for a > 24 beta. OPEN (the crux, stated exactly as (PATH) and PIN-MIX): that comparison on the interval from 0.361 to the band beta_W 2.3-2.6, where no inequality was found that avoids a supremum over environments and fails for U(1); the complete account supplies exact masses and, conditionally, torus-consistent vacuum terms for its own steps (CA-II L141276-141386), but no block-law statement and no bound on the defect of the remaining level-K integral.

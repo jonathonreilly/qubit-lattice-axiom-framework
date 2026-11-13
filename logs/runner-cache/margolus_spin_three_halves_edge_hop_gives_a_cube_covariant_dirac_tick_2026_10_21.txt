@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/margolus_spin_three_halves_edge_hop_gives_a_cube_covariant_dirac_tick_2026_10_21.py
+runner_sha256: 446438a163f6efed5eb9363d626d35e0f35900dd685d1e7b0e83a0d34fdf2592
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.82
+status: ok
+----- stdout -----
+== supplied spin-3/2 edge hop and finite band diagnostics
+   face holonomy phase / pi: {1.5: np.float64(1.0)}
+[PASS] spin-3/2 reference-face holonomy is -1 (pi flux)
+[PASS] W = Wx+Wy+Wz with {Wa,Wb} = (2/3) delta_ab: W Hermitian and W^2 = 1  2.3e-15
+[PASS] W commutes with the 24 spin-3/2 corner actions
+[PASS] lattice tick (6^3 sites) commutes with all 24 spin-3/2 rotations about both block centres  2.1e-15
+[PASS] all 8 bands obey cos w = cos^2(mu/2) S(K) - sin^2(mu/2), S = (cos Kx+cos Ky+cos Kz)/3 (2000 K, three mu)  1.3e-15
+[PASS] all eight sampled absolute quasienergies agree
+[PASS] mu=0.0, |k|=0.1: |w| = sqrt(mu^2 + k^2/3) within 0.25%, direction spread < 0.5%  dev 1.2e-04, spread 2.7e-04
+[PASS] mu=0.0, |k|=0.4: |w| = sqrt(mu^2 + k^2/3) within 0.25%, direction spread < 0.5%  dev 1.9e-03, spread 4.4e-03
+[PASS] mu=0.1, |k|=0.1: |w| = sqrt(mu^2 + k^2/3) within 0.25%, direction spread < 0.5%  dev 1.3e-04, spread 6.9e-05
+[PASS] mu=0.1, |k|=0.4: |w| = sqrt(mu^2 + k^2/3) within 0.25%, direction spread < 0.5%  dev 1.9e-03, spread 3.7e-03
+[PASS] mu=0.1: global gap = mu, reached at K=0 (zone grid min)  grid min 0.1000
+[PASS] mu=0.1: quasienergy magnitude pi at K=pi(1,1,1)
+[PASS] finite mesh Berry-flux diagnostic near K=0 agrees with zero  -6.69e-16
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

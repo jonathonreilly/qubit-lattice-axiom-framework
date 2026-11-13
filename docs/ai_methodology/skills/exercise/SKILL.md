@@ -201,15 +201,18 @@ Inventory items (step 2):
 Statements made by the run:
   argued    proved here from named inputs; each input with its mark
             ("argued, given X" when an input X is open, recalled or a belief)
-  refuted   an explicit counterexample, written so that it can be checked
+  argued counterexample
+            an explicit counterexample, written so that it can be checked;
+            the statement it targets is not `refuted` until a check record
+            says so
   guide     a run or a number; it decides nothing
   reading   an interpretation
   open      not proved
 ```
 
-Nothing the exercise writes is `checked`. A statement becomes `checked` only
-through a check record by a model that did not write it (`RULES.md`
-section 3). Say who checked what in plain words: "proved by <model>, not yet
+Nothing the exercise writes is `checked` or `refuted`. A statement gets
+either standing only through a check record by a model that did not write it
+(`RULES.md` sections 1 and 3). Say who checked what in plain words: "proved by <model>, not yet
 checked", "checked line by line by <model> (same provider), first failing
 step none".
 

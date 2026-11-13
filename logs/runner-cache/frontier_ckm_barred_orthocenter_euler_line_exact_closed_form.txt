@@ -1,22 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_barred_orthocenter_euler_line_exact_closed_form.py
-runner_sha256: 18ae68f277e8cfd436dd0321857142a1a8520e51d78063c8e63b3418518b3bec
-timeout_sec: 120
+runner_sha256: 9768678512115d5ffc927e31e64fbdb460bd9abca6005bf5589d5ca285f0b37b
+input_fingerprint_sha256: 6d800a0fc14437071e7fdb5747e7f2ba4edd883b2de81d439bd2abf6e7a4c6a0
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
+  Conditional supplied-model identities only; no physical parameter selection is certified.
+  Inspect all failures below; source/ledger status checks are not mathematical proof.
 ========================================================================================
 Barred unitarity triangle orthocenter and Euler line EXACT closed-form audit
 See docs/CKM_BARRED_ORTHOCENTER_EULER_LINE_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
-Retained inputs on current main
+Supplied model inputs
 ----------------------------------------------------------------------------------------
   alpha_s(v)                   = 0.103303816122267
-  N_pair                       = 2  (retained)
-  N_color                      = 3  (retained)
+  N_pair                       = 2  (supplied)
+  N_color                      = 3  (supplied)
   N_quark = N_pair x N_color    = 6
 
   N1: rho_bar                  = 0.162362340994906
@@ -24,19 +27,19 @@ Retained inputs on current main
   N3: R_b_bar^2                = 0.158169178640076
   N7 slope = sqrt(5)/20         = 0.111803398874989
   [PASS (A)] alpha_s(v) > 0
-  [PASS (A)] N_pair = 2 (retained)
-  [PASS (A)] N_color = 3 (retained)
-  [PASS (A)] N_quark = 6 (retained)
-  [PASS (A)] N1: rho_bar = (4-a)/24 (retained)
-  [PASS (A)] N2: eta_bar = sqrt(5)(4-a)/24 (retained)
-  [PASS (A)] N3: R_b_bar^2 = (4-a)^2/96 (retained)
-  [PASS (A)] N7 slope = sqrt(5)/20 (retained)
-  [PASS (A)] retained on main: docs/ALPHA_S_DERIVED_NOTE.md
-  [PASS (A)] retained on main: docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md
-  [PASS (A)] retained on main: docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md
-  [PASS (A)] retained on main: docs/CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md
-  [PASS (A)] retained on main: docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md
-  [PASS (A)] retained on main: docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
+  [PASS (A)] N_pair = 2 (supplied)
+  [PASS (A)] N_color = 3 (supplied)
+  [PASS (A)] N_quark = 6 (supplied)
+  [PASS (A)] N1: rho_bar = (4-a)/24 (supplied)
+  [PASS (A)] N2: eta_bar = sqrt(5)(4-a)/24 (supplied)
+  [PASS (A)] N3: R_b_bar^2 = (4-a)^2/96 (supplied)
+  [PASS (A)] N7 slope = sqrt(5)/20 (supplied)
+  [PASS (A)] Source file exists: docs/ALPHA_S_DERIVED_NOTE.md
+  [PASS (A)] Source file exists: docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md
+  [PASS (A)] Source file exists: docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md
+  [PASS (A)] Source file exists: docs/CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md
+  [PASS (A)] Source file exists: docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md
+  [PASS (A)] Source file exists: docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
 
 ----------------------------------------------------------------------------------------
 (O1) NEW EXACT: Orthocenter H = (rho_bar, (20+alpha_s)/(24 sqrt(5)))
@@ -96,7 +99,7 @@ Retained inputs on current main
   [PASS (A)] (O5) Euler line ratio: HG = 2 GO (y-component)
 
 ----------------------------------------------------------------------------------------
-(O6) NEW EXACT: H - V_3 = -2 (O - M) where M = (1/2, 0) is hypotenuse midpoint
+(O6) NEW EXACT: H - V_3 = -2 (O - M) where M = (1/2, 0) is base midpoint (hypotenuse only at LO)
 ----------------------------------------------------------------------------------------
   H - V_3        = (0.000000e+00, 1.154972e-02)
   O - M           = (0.000000e+00, -5.774859e-03)
@@ -105,12 +108,12 @@ Retained inputs on current main
   [PASS (A)] (O6) H_y - V_3_y = -2(O_y - M_y) = -2 y_cc (apex lift = 2x circumcenter depression)
 
 ----------------------------------------------------------------------------------------
-(O7) NEW: (H_y - V_3_y)/alpha_s = sqrt(5)/20 = retained N7 slope
+(O7) NEW: (H_y - V_3_y)/alpha_s = sqrt(5)/20 = supplied N7 slope
 ----------------------------------------------------------------------------------------
   (H_y - V_3_y) / alpha_s             = 0.111803398874989
-  Retained N7 slope sqrt(5)/20        = 0.111803398874989
+  Supplied N7 slope sqrt(5)/20        = 0.111803398874989
   Structural 1/(N_pair^2 sqrt(N_quark - 1)) = 0.111803398874989
-  [PASS (A)] (O7) apex-orthocenter slope = retained N7 slope = sqrt(5)/20
+  [PASS (A)] (O7) apex-orthocenter slope = supplied N7 slope = sqrt(5)/20
   [PASS (A)] (O7) slope = 1/(N_pair^2 sqrt(N_quark - 1))
 
 ----------------------------------------------------------------------------------------
@@ -141,16 +144,16 @@ Retained inputs on current main
   [PASS (A)] (O9) atlas-LO O_0 = (1/N_pair, 0) = midpoint of hypotenuse
 
 ----------------------------------------------------------------------------------------
-EXACT-status verification: closed forms hold at multiple alpha_s
+Finite floating-point verification at multiple alpha_s
 ----------------------------------------------------------------------------------------
-  Verifying (O1)-(O6) hold EXACTLY at six alpha_s values:
+  Verifying (O1)-(O6) agree within tolerance at six supplied alpha_s values:
     alpha_s = 0.050000000: O1=True, O3=True, O4=True, O5=True, O6=True  (OK)
     alpha_s = 0.100000000: O1=True, O3=True, O4=True, O5=True, O6=True  (OK)
     alpha_s = 0.103303816: O1=True, O3=True, O4=True, O5=True, O6=True  (OK)
     alpha_s = 0.150000000: O1=True, O3=True, O4=True, O5=True, O6=True  (OK)
     alpha_s = 0.200000000: O1=True, O3=True, O4=True, O5=True, O6=True  (OK)
     alpha_s = 0.300000000: O1=True, O3=True, O4=True, O5=True, O6=True  (OK)
-  [PASS (A)] EXACT closed forms hold at ALL tested alpha_s (no leading-order drift)
+  [PASS (A)] Displayed model forms agree within tolerance at all tested alpha_s
 
 ----------------------------------------------------------------------------------------
 Summary of new content
@@ -172,7 +175,7 @@ Summary of new content
     V_3 = (0.162362, 0.363053)
     H - V_3 = (0, 0.011550)
 
-  All inputs retained on main; no SUPPORT-tier or open inputs used.
+  Supplied constants and file-existence checks do not establish physical or audit closure.
 
 ========================================================================================
 TOTAL: PASS=41, FAIL=0

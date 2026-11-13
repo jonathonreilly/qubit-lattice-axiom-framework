@@ -1,0 +1,3 @@
+# Preserve the original failed cache bytes, including their final blank line.
+frontier_ckm_barred_weitzenbock_brocard_polynomial_closed_form.txt whitespace=-blank-at-eof
+frontier_ckm_wolfenstein_eta_inverse_square_gap.txt whitespace=-blank-at-eof

@@ -1,0 +1,14 @@
+slug: u5-three-plus-two-fms-projector-carrier-20261109
+branch: physics-loop/u5-three-plus-two-fms-projector-carrier-20261109
+base_commit: bf92a1d763030836ed55631d5d7a7ef3b288f284
+milestone_id: 2
+mode: autonomous_science
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+primary_note: docs/U5_THREE_PLUS_TWO_FMS_PROJECTOR_CARRIER_BOUNDED_THEOREM_NOTE_2026-11-09.md
+primary_runner: scripts/frontier_u5_three_plus_two_fms_projector_carrier.py
+runner_cache: logs/runner-cache/frontier_u5_three_plus_two_fms_projector_carrier.txt
+active_route: noncommuting FMS projector calculus, determinant-square carrier, quartic su(5) orbit selection, 25x25 Higgs Gram spectrum, and K-copy coherent scaling
+next_action: derive effective quartic coupling sign lambda_2 > 0 and multi-copy coherent state preparation directly from the coupled five-mode Floquet tick

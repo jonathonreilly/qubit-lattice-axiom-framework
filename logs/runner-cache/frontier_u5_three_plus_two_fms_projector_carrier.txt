@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/frontier_u5_three_plus_two_fms_projector_carrier.py
+runner_sha256: e58ebbe378c57c9c2c8d204f6aa0b2c133921fc33e45557be12fd26944adc4cc
+input_fingerprint_sha256: 5317eb5770e404cc4193f9de7dfa9537c892b812b40df7ef46dd02be0195e548
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+Source SHA256: ffdba030f1e10965de6ecebb594f4bf29ca04a4e60d23bb1a82299b0ddea978b
+Exact rational and Fock-space controls for Theorems 1-8 of the U(5) 3+2 FMS projector and stabilizer carrier note.
+PASS: Theorem 1 input operators are self-adjoint and mutually noncommuting
+PASS: Theorem 1(1) resolution and P_+^2 - P_+ = P_-^2 - P_- = -P_+ P_- = (A^2 - r^2 I)/(4 r^2)
+PASS: Theorem 1(1) Pauli expansion A^2 - r^2 I = R_r x I_2 + sum_c C_c x sigma_c
+PASS: Theorem 1(2) exact operator identity |A^2 - r^2 I|_HS^2 = 2 R_r^2 + sum_{a,b} |[Phi^a, Phi^b]|^2
+PASS: Theorem 1(2) state-L^2 equality with zero radial-commutator cross term
+PASS: Exact rational SU(2) test elements gx, gy are unitary with determinant 1
+PASS: Theorem 1(3) four projected strings are SU(2)_X x SU(2)_Y invariant and sum to Psi_X^* U_{XY} Psi_Y
+PASS: Theorem 2(1) U(5) 3+2 resolution, quadratic defect (A-aI)(A-bI)/(a-b)^2, and trace identities
+PASS: Theorem 2(2) 5-mode CAR vacuum sector n=0 (dim=1): C=0 and C^2=6C
+PASS: Theorem 2(2) 5-mode CAR sector n=1 (dim=5): C^2=5C, P_CAR^2=P_CAR, Tr(P_CAR)=1/5 I
+PASS: Theorem 2(2) 5-mode CAR sector n=2 (dim=10): C^2=4C, P_CAR^2=P_CAR, Tr(P_CAR)=1/2 I
+PASS: Theorem 2(2) 5-mode CAR sector n=3 (dim=10): C^2=3C, P_CAR^2=P_CAR, Tr(P_CAR)=1 I
+PASS: Theorem 2(2) 5-mode CAR sector n=4 (dim=5): C^2=2C, P_CAR^2=P_CAR, Tr(P_CAR)=2 I
+PASS: Theorem 2(2) 5-mode CAR sector n=5 (dim=1): C^2=1C, P_CAR^2=P_CAR, Tr(P_CAR)=5 I
+PASS: Theorem 2(3) rank-separation witness A_mix=(A_(4),A_(2)) and D_{3+2}(A_(k))=(k-3)^2
+PASS: Theorem 3(1) orthogonal Q_6, Q_4 commutation with A and quartic defect identity
+PASS: Theorem 3(2) exact factorizations of J_A^2 + I_10 and A - (a Q_6 + b Q_4) J_A through Q_6^2 - Q_6
+PASS: Theorem 3(3) centralizer dimensions in so(10): dim so(10)=45, dim cent(Q_6)=21, dim cent(Q_6, J_A)=dim cent(A_0)=13
+PASS: Theorem 4(1) Z_6 kernel of pi: 6 distinct triples in SU(3)xSU(2)xU(1) all mapping to I_3 (+) I_2
+PASS: Theorem 4(2) K_{U(5)} = H{+-I_5} has two determinant components det=+-1 and excludes det=i
+PASS: Lambda^5(C^10) link register has dimension C(10,5) = 252
+PASS: Theorem 5(2) D_{xy} = -|5_x, 0_y><0_x, 5_y| is rank-1 on Lambda^5(C^10) with Tr(D_{xy}^* D_{xy}) = 1
+PASS: Theorem 5(1) U_ell^{i_1,j_1}...U_ell^{i_5,j_5} = eps(i) eps(j) D_{xy} across all 120 permutations and repeated indices
+PASS: Theorem 5(3) O_{xy}^{(10)} has 20 fermion letters (strictly fermion-even)
+PASS: Theorem 5(2)-(3) O_{xy}^{(10)} maps |0_mx, 0_rx, 5_ry, 0_my> to |5_mx, 5_rx, 0_ry, 5_my> with norm 1
+PASS: Theorem 5(3) [G_x^{ij}, O_{xy}^{(10)}] = 2 delta_{ij} O_{xy}^{(10)} for all 25 gl(5)_x generators
+PASS: Theorem 5(3) [G_y^{ij}, O_{xy}^{(10)}] = 0 for all 25 gl(5)_y generators
+PASS: Theorem 6(1) 3-variable cubic discriminant identity Delta(u,v,w) = (1/2) r^6 - 27 (uvw)^2 >= 0
+PASS: Theorem 6(2) exact fourth-moment ratios 7/30 < 1/4 < 1/2 < 13/20 across all four symmetry strata
+PASS: Theorem 6(2) strict inequality (7/30) s^2 < Tr(A^4) < (13/20) s^2 for off-orbit su(5)_sa matrices
+PASS: Theorem 6(3) exact square-completed quartic potential identity and strict global minimum on 3+2 orbit
+PASS: Theorem 7(1) 25x25 Higgs Gram matrix M^2 spectrum: dim ker=12 (Lie(H)), 12x(a-b)^2 on m_{3x2}, 1x(20 kappa^2) on T_0
+PASS: Theorem 7(2) exact polynomial unbroken-subalgebra projector Pi_{Lie(H)} on all 25 basis elements of u(5)_sa
+PASS: Theorem 7(3) universal noncommuting pinch-commutator identity (P_3 X P_3 + P_2 X P_2) - (X - (a-b)^{-2}[A,[A,X]]) = D_A X + X D_A
+PASS: Theorem 8(1) single-link two-sided transport defect D_+ + D_- = 2 - (p_0+p_5) + (|gamma|^2-1)^2 (p_0+p_5) >= 1
+PASS: Theorem 8(2) K=1 coherent SU(2) FMS defects: Casimir=1+2/1, defect(r=1)=2, defect(r_K)=1/6
+PASS: Theorem 8(2) K=2 coherent SU(2) FMS defects: Casimir=1+2/2, defect(r=1)=3/8, defect(r_K)=1/16
+PASS: Theorem 8(2) K=3 coherent SU(2) FMS defects: Casimir=1+2/3, defect(r=1)=4/27, defect(r_K)=1/30
+PASS: Theorem 8(2) K=4 coherent SU(2) FMS defects: Casimir=1+2/4, defect(r=1)=5/64, defect(r_K)=1/48
+PASS: Theorem 8(2) K=1 coherent determinant transport defect: ||(D_hat_K - I)|Theta_K>||^2 = 1/1, varpi_K((D_hat_K^* D_hat_K - I)^2) = 5
+PASS: Theorem 8(2) K=2 coherent determinant transport defect: ||(D_hat_K - I)|Theta_K>||^2 = 1/2, varpi_K((D_hat_K^* D_hat_K - I)^2) = 1
+PASS: Theorem 8(2) K=3 coherent determinant transport defect: ||(D_hat_K - I)|Theta_K>||^2 = 1/3, varpi_K((D_hat_K^* D_hat_K - I)^2) = 11/27
+PASS: Theorem 8(2) K=4 coherent determinant transport defect: ||(D_hat_K - I)|Theta_K>||^2 = 1/4, varpi_K((D_hat_K^* D_hat_K - I)^2) = 7/32
+TOTAL: PASS=43 FAIL=0
+
+----- stderr -----
+

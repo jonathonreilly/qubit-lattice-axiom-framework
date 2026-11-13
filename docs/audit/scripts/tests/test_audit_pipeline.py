@@ -25,7 +25,6 @@ import re
 import subprocess
 import sys
 import tempfile
-import unicodedata
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -8821,7 +8820,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             m.validate_no_go_discipline(audit),
         )
 
-    def test_pass_allows_shared_route_class_and_rejects_unsupported_class_and_open_routes(self):
+    def test_pass_allows_shared_route_class_and_rejects_open_routes(self):
         m = _import("no_go_discipline_gate")
         audit = {
             "claim_type": "no_go",
@@ -8830,37 +8829,18 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         }
 
         # Nothing counts classes, so two closed routes may share one.
-        manifest = self._manifest()
-        shared_mechanism = "factor the determinant identity"
-        shared_attempt = "solve the factored identity for every coefficient"
-        manifest["audit-packet://runner-stdout/test_no_go"]["text"] += (
-            "\n" + shared_mechanism + "\n" + shared_attempt
-        )
         packet = _no_go_packet(route_count=2)
-        packet["N1_alternative_routes"][1].update({
-            "route_class": "algebraic_rearrangement",
-            "mechanism": shared_mechanism,
-            "attempt": shared_attempt,
-        })
-        _set_no_go_scan_coverage(packet, manifest)
+        packet["N1_alternative_routes"][1]["route_class"] = "algebraic_rearrangement"
         self.assertEqual(
             {"algebraic_rearrangement"},
             {route["route_class"] for route in packet["N1_alternative_routes"]},
         )
         audit["no_go_discipline"] = packet
+        self.assertIsNone(m.validate_no_go_discipline(audit))
         self.assertIsNone(
-            m.validate_no_go_discipline(audit, evidence_manifest=manifest)
-        )
-
-        # A label that the route's own text does not support is still rejected.
-        packet = _no_go_packet()
-        packet["N1_alternative_routes"][1]["route_class"] = "algebraic_rearrangement"
-        audit["no_go_discipline"] = packet
-        self.assertIn(
-            "N1 route 2.route_class='algebraic_rearrangement' is not supported",
             m.validate_no_go_discipline(
                 audit, evidence_manifest=self._manifest()
-            ) or "",
+            )
         )
 
         packet = _no_go_packet()
@@ -8894,11 +8874,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         error = m.validate_no_go_discipline(
             audit, evidence_manifest=manifest
         ) or ""
-        self.assertTrue(
-            "numbered paraphrases" in error
-            or "not supported by its evidenced" in error,
-            error,
-        )
+        self.assertIn("numbered paraphrases", error)
 
         audit["no_go_discipline"] = _no_go_packet()
         audit["chain_closes"] = False
@@ -9670,407 +9646,30 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             m.validate_no_go_discipline(audit, evidence_manifest=None) or "",
         )
 
-    def test_n1_route_class_requires_evidenced_semantic_marker(self):
+    def test_n1_route_class_needs_no_keyword_but_must_be_listed(self):
         m = _import("no_go_discipline_gate")
-        manifest = self._manifest()
+        self.assertFalse(hasattr(m, "route_class_marker_matches"))
+        self.assertFalse(hasattr(m, "ROUTE_CLASS_MARKERS"))
+        audit = {
+            "claim_type": "no_go", "verdict": "audited_clean",
+            "chain_closes": True,
+        }
+        # "symbolic cancellation" carries no topology vocabulary. The label is
+        # free within the listed classes, so the packet still validates.
         packet = _no_go_packet()
         packet["N1_alternative_routes"][0]["route_class"] = (
             "topology_or_global_structure"
         )
-        audit = {
-            "claim_type": "no_go", "verdict": "audited_clean",
-            "chain_closes": True, "no_go_discipline": packet,
-        }
-        self.assertIn(
-            "not supported by its evidenced",
-            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
-        )
-
-    def test_n1_route_class_accepts_campaign_identifier_and_plural_markers(self):
-        m = _import("no_go_discipline_gate")
-        cases = (
-            (
-                "boundary_or_initial_condition",
-                "oriented_cubical_boundary",
-            ),
-            (
-                "dynamical_or_effective_action",
-                "RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md",
-            ),
-            (
-                "alternate_carrier_or_sector",
-                "one-form and dual three-form boundary carriers",
-            ),
-        )
-        for route_class, route_semantics in cases:
-            with self.subTest(route_class=route_class, route_semantics=route_semantics):
-                self.assertTrue(
-                    m.route_class_marker_matches(route_class, route_semantics)
-                )
-        self.assertFalse(
-            m.route_class_marker_matches(
-                "topology_or_global_structure",
-                "generic determinant identity",
-            )
-        )
-
-    def test_n1_algebraic_route_uses_marker_bearing_live_header(self):
-        m = _import("no_go_discipline_gate")
-        manifest = self._manifest()
-        stdout_path = "audit-packet://runner-stdout/test_no_go"
-        header = "Part A: generic determinant identity"
-        check_one = "generic realification determinant is squared modulus"
-        check_two = "realified functional is twice complex functional on A"
-        manifest[stdout_path]["text"] += "\n" + "\n".join(
-            (header, check_one, check_two)
-        )
-        packet = _no_go_packet()
-        route = packet["N1_alternative_routes"][0]
-        route.update({
-            "route_id": "det_identity",
-            "route_class": "algebraic_rearrangement",
-            "mechanism": header,
-            "attempt": check_one,
-            "outcome": check_two,
-            "evidence_path": stdout_path,
-            "evidence_locator": header,
-        })
-        packet["N7_steelman"]["route_id"] = "det_identity"
-        n7_argument = (
-            "The strongest counter-route uses Part A: generic determinant identity "
-            "and attempts generic realification determinant is squared modulus; "
-            "its outcome is realified functional is twice complex functional on A."
-        )
-        packet["N7_steelman"]["argument"] = n7_argument
-        manifest[stdout_path]["text"] += "\n" + n7_argument
-        _set_no_go_scan_coverage(packet, manifest)
-        audit = {
-            "claim_type": "no_go", "verdict": "audited_clean",
-            "chain_closes": True, "no_go_discipline": packet,
-        }
+        audit["no_go_discipline"] = packet
+        self.assertIsNone(m.validate_no_go_discipline(audit))
         self.assertIsNone(
-            m.validate_no_go_discipline(audit, evidence_manifest=manifest)
+            m.validate_no_go_discipline(audit, evidence_manifest=self._manifest())
         )
-        route.update({
-            "mechanism": check_one,
-            "attempt": check_one,
-            "outcome": check_two,
-            "evidence_locator": check_one,
-        })
+        packet["N1_alternative_routes"][0]["route_class"] = "free_text_label"
         self.assertIn(
-            "not supported by its evidenced",
-            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
+            "N1 route 1.route_class must be one of",
+            m.validate_no_go_discipline(audit) or "",
         )
-
-    def test_n1_symmetry_route_accepts_invariance_vocabulary(self):
-        m = _import("no_go_discipline_gate")
-        manifest = self._manifest()
-        route_text = (
-            "readout is translation invariant\n"
-            "readout is proper-cubic-rotation invariant\n"
-            "readout is cycle-position permutation invariant\n"
-        )
-        stdout_path = "audit-packet://runner-stdout/test_no_go"
-        manifest[stdout_path]["text"] += "\n" + route_text
-        packet = _no_go_packet()
-        route = packet["N1_alternative_routes"][1]
-        route.update({
-            "route_id": "lattice_symmetry",
-            "route_class": "symmetry_or_representation",
-            "mechanism": "readout is translation invariant",
-            "attempt": "readout is proper-cubic-rotation invariant",
-            "outcome": "readout is cycle-position permutation invariant",
-            "evidence_path": stdout_path,
-            "evidence_locator": "readout is translation invariant",
-        })
-        _set_no_go_scan_coverage(packet, manifest)
-        audit = {
-            "claim_type": "no_go", "verdict": "audited_clean",
-            "chain_closes": True, "no_go_discipline": packet,
-        }
-        self.assertIsNone(
-            m.validate_no_go_discipline(audit, evidence_manifest=manifest)
-        )
-
-    def test_n1_normalization_route_accepts_exact_w_unit_marker(self):
-        m = _import("no_go_discipline_gate")
-        exact_marker_cases = (
-            "W_unit",
-            "W_units",
-            "frontier_W_units",
-            "frontier_W_unit_probe",
-            "route_W_unit",
-            "W_unit_route",
-            "RECORD_W_UNIT_2026-07-30.md",
-        )
-        for marker_case in exact_marker_cases:
-            with self.subTest(exact_marker_case=marker_case):
-                self.assertTrue(
-                    m.route_class_marker_matches(
-                        "normalization_or_units", marker_case
-                    )
-                )
-        unicode_decomposed = "W_unit\u0308"
-        unicode_precomposed = unicodedata.normalize("NFC", unicode_decomposed)
-        non_markers = (
-            "preW_unit",
-            "W_unit_post",
-            "W_unitary",
-            "W__unit",
-            "W_unitless",
-            "W_unitization",
-            "frontier_unitary_operator",
-            "frontier_X_unitary_operator",
-            unicode_decomposed,
-            unicode_precomposed,
-            "unit\u0301",
-            "frontier_unit\u0301_probe",
-            "x\u0338unit",
-            "x\u034funits",
-            "un\u0131t",
-            "un\u0130t",
-            "W_un\u0131t",
-            "W_un\u0130ts",
-            "W_un\u0131t_post",
-        )
-        for non_marker in non_markers:
-            with self.subTest(non_marker=non_marker):
-                self.assertFalse(
-                    m.route_class_marker_matches(
-                        "normalization_or_units", non_marker
-                    )
-                )
-        independent_marker_cases = (
-            "frontier_scale_W_unitary",
-            "frontier_W_unitary_scale",
-            "frontier_normalization_preW_unit",
-            "frontier_preW_unit_dimensionful",
-            "frontier_units_W__unit",
-            "frontier_W_unit_post_units",
-        )
-        for marker_case in independent_marker_cases:
-            with self.subTest(marker_case=marker_case):
-                self.assertTrue(
-                    m.route_class_marker_matches(
-                        "normalization_or_units", marker_case
-                    )
-                )
-        manifest = self._manifest()
-        wall_line = (
-            "N2 wall W_unit: beta-one and beta-two singleton laws share h "
-            "but remain distinct"
-        )
-        stdout_path = "audit-packet://runner-stdout/test_no_go"
-        manifest[stdout_path]["text"] += "\n" + wall_line
-        packet = _no_go_packet(route_count=5)
-        route = packet["N1_alternative_routes"][4]
-        route.update({
-            "route_id": "unit_normalization",
-            "route_class": "normalization_or_units",
-            "mechanism": wall_line,
-            "attempt": wall_line,
-            "outcome": wall_line,
-            "evidence_path": stdout_path,
-            "evidence_locator": wall_line,
-        })
-        _set_no_go_scan_coverage(packet, manifest)
-        audit = {
-            "claim_type": "no_go", "verdict": "audited_clean",
-            "chain_closes": True, "no_go_discipline": packet,
-        }
-        self.assertIsNone(
-            m.validate_no_go_discipline(audit, evidence_manifest=manifest)
-        )
-        for marker_case in exact_marker_cases:
-            with self.subTest(full_validator_exact_marker_case=marker_case):
-                compound_marker_line = (
-                    f"N2 route {marker_case}: the literal token remains "
-                    "evidenced"
-                )
-                manifest[stdout_path]["text"] += "\n" + compound_marker_line
-                route.update({
-                    "mechanism": compound_marker_line,
-                    "attempt": compound_marker_line,
-                    "outcome": compound_marker_line,
-                    "evidence_locator": compound_marker_line,
-                })
-                _set_no_go_scan_coverage(packet, manifest)
-                self.assertIsNone(
-                    m.validate_no_go_discipline(
-                        audit, evidence_manifest=manifest
-                    )
-                )
-        near_marker_line = (
-            "N2 wall W_unitary: beta-one and beta-two singleton laws share h "
-            "but remain distinct"
-        )
-        manifest[stdout_path]["text"] += "\n" + near_marker_line
-        route.update({
-            "mechanism": near_marker_line,
-            "attempt": near_marker_line,
-            "outcome": near_marker_line,
-            "evidence_locator": near_marker_line,
-        })
-        _set_no_go_scan_coverage(packet, manifest)
-        self.assertIn(
-            "not supported by its evidenced",
-            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
-        )
-        for non_marker in non_markers:
-            with self.subTest(full_validator_non_marker=non_marker):
-                compound_non_marker_line = (
-                    f"N2 route {non_marker}: the lookalike remains evidenced"
-                )
-                manifest[stdout_path]["text"] += "\n" + compound_non_marker_line
-                route.update({
-                    "mechanism": compound_non_marker_line,
-                    "attempt": compound_non_marker_line,
-                    "outcome": compound_non_marker_line,
-                    "evidence_locator": compound_non_marker_line,
-                })
-                _set_no_go_scan_coverage(packet, manifest)
-                self.assertIn(
-                    "not supported by its evidenced",
-                    m.validate_no_go_discipline(
-                        audit, evidence_manifest=manifest
-                    ) or "",
-                )
-        for marker_case in independent_marker_cases:
-            with self.subTest(full_validator_marker_case=marker_case):
-                compound_marker_line = (
-                    f"N2 route {marker_case}: the independent marker remains "
-                    "evidenced"
-                )
-                manifest[stdout_path]["text"] += "\n" + compound_marker_line
-                route.update({
-                    "mechanism": compound_marker_line,
-                    "attempt": compound_marker_line,
-                    "outcome": compound_marker_line,
-                    "evidence_locator": compound_marker_line,
-                })
-                _set_no_go_scan_coverage(packet, manifest)
-                self.assertIsNone(
-                    m.validate_no_go_discipline(
-                        audit, evidence_manifest=manifest
-                    )
-                )
-
-    def test_n1_route_class_marker_must_exist_within_one_field(self):
-        m = _import("no_go_discipline_gate")
-        cases = (
-            (
-                "dynamical_or_effective_action",
-                "equivariant",
-                "family route",
-                "neutral result",
-                "equivariant family",
-            ),
-            (
-                "convention_or_relabeling",
-                "basis",
-                "label route",
-                "neutral result",
-                "basis label",
-            ),
-            (
-                "lattice_scale_or_limit",
-                "finite",
-                "size route",
-                "neutral result",
-                "finite size",
-            ),
-        )
-        stdout_path = "audit-packet://runner-stdout/test_no_go"
-        for route_class, mechanism, attempt, outcome, complete_marker in cases:
-            with self.subTest(route_class=route_class):
-                self.assertTrue(
-                    m.route_class_marker_matches(
-                        route_class, " ".join((mechanism, attempt, outcome))
-                    )
-                )
-                self.assertFalse(
-                    any(
-                        m.route_class_marker_matches(route_class, field_text)
-                        for field_text in (mechanism, attempt, outcome)
-                    )
-                )
-                manifest = self._manifest()
-                manifest[stdout_path]["text"] += "\n" + "\n".join(
-                    (mechanism, attempt, outcome, complete_marker)
-                )
-                packet = _no_go_packet(route_count=6)
-                route = packet["N1_alternative_routes"][5]
-                route.update({
-                    "route_class": route_class,
-                    "mechanism": mechanism,
-                    "attempt": attempt,
-                    "outcome": outcome,
-                })
-                _set_no_go_scan_coverage(packet, manifest)
-                audit = {
-                    "claim_type": "no_go",
-                    "verdict": "audited_clean",
-                    "chain_closes": True,
-                    "no_go_discipline": packet,
-                }
-                self.assertIn(
-                    "not supported by its evidenced",
-                    m.validate_no_go_discipline(
-                        audit, evidence_manifest=manifest
-                    ) or "",
-                )
-                route["mechanism"] = complete_marker
-                self.assertIsNone(
-                    m.validate_no_go_discipline(
-                        audit, evidence_manifest=manifest
-                    )
-                )
-
-    def test_n1_normalization_route_rejects_touching_near_marker_pairs(self):
-        m = _import("no_go_discipline_gate")
-        near_markers = ("preW_unit", "W_unit_post", "W_unitary", "W__unit")
-        stdout_path = "audit-packet://runner-stdout/test_no_go"
-        for left in near_markers:
-            for right in near_markers:
-                marker_case = left + right
-                with self.subTest(marker_case=marker_case):
-                    self.assertFalse(
-                        m.route_class_marker_matches(
-                            "normalization_or_units", marker_case
-                        )
-                    )
-                    manifest = self._manifest()
-                    packet = _no_go_packet(route_count=5)
-                    route = packet["N1_alternative_routes"][4]
-                    compound_marker_line = (
-                        f"N2 route {marker_case}: the touching near-markers "
-                        "remain evidenced"
-                    )
-                    manifest[stdout_path]["text"] += (
-                        "\n" + compound_marker_line
-                    )
-                    route.update({
-                        "route_id": "unit_normalization",
-                        "route_class": "normalization_or_units",
-                        "mechanism": compound_marker_line,
-                        "attempt": compound_marker_line,
-                        "outcome": compound_marker_line,
-                        "evidence_path": stdout_path,
-                        "evidence_locator": compound_marker_line,
-                    })
-                    _set_no_go_scan_coverage(packet, manifest)
-                    audit = {
-                        "claim_type": "no_go",
-                        "verdict": "audited_clean",
-                        "chain_closes": True,
-                        "no_go_discipline": packet,
-                    }
-                    self.assertIn(
-                        "not supported by its evidenced",
-                        m.validate_no_go_discipline(
-                            audit, evidence_manifest=manifest
-                        ) or "",
-                    )
 
     def test_occurrence_scans_and_resolution_classes_fail_closed(self):
         m = _import("no_go_discipline_gate")
@@ -10778,14 +10377,10 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             template_flat,
         )
         self.assertIn(
-            "symmetry_or_representation`: symmetry, invariant, representation",
+            "no keyword in the route's text has to match its class",
             template_flat,
         )
-        self.assertIn(
-            "normalization_or_units`: normalization, whole-token unit/units, "
-            "exact `W_unit`/`W_units`, scale",
-            template_flat,
-        )
+        self.assertNotIn("literal class marker", template_flat)
         self.assertIn(
             "Every complete `tested_resolutions[]` string",
             template_flat,
@@ -10872,10 +10467,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "Never infer an unlisted phrase from a shared id",
             template_flat,
         )
-        self.assertIn(
-            "use a nearby marker-bearing live section header",
-            template_flat,
-        )
+        self.assertNotIn("marker-bearing", template_flat)
 
     def test_prompt_uses_neutral_dispatch_task_without_raw_question(self):
         m = _import_codex_audit_runner()

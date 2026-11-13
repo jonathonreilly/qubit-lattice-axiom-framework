@@ -689,40 +689,11 @@ validator still requires substantive values whenever the condition applies.
 
 For every N1 route, `mechanism`, `attempt`, and `outcome` must each occur
 verbatim at the single cited `evidence_path`. `route_class` is a descriptive
-label: several routes may share a class, and nothing counts classes. The
-combined text must contain a literal marker accepted for its `route_class`:
-
-- `algebraic_rearrangement`: algebra, identity, rearrange, factor, cancel, solve;
-- `symmetry_or_representation`: symmetry, invariant, representation, commutator, character, irrep, group;
-- `alternate_carrier_or_sector`: carrier(s), sector(s), module(s), space(s), irrep(s);
-- `boundary_or_initial_condition`: boundary, initial, background, state, pointwise;
-- `normalization_or_units`: normalization, whole-token unit/units, exact `W_unit`/`W_units`, scale, dimensionful;
-- `dynamical_or_effective_action`: dynamic, effective, action, evolution, equivariant family;
-- `lattice_scale_or_limit`: lattice, continuum, limit, finite-size, asymptotic, approximate;
-- `numerical_or_finite_case`: numeric, finite, sample, scan, compute;
-- `convention_or_relabeling`: convention, relabel, rename, basis label;
-- `alternate_observable_or_readout`: observable, readout, nonlinear, spectrum, eigenvalue;
-- `topology_or_global_structure`: topology, global, bundle, homotopy, cohomology;
-- `dependency_or_registry_reclassification`: dependency, registry, reclassification, premise, authority.
-
-At least one of `mechanism`, `attempt`, or `outcome` itself must contain that
-literal class marker. If a live check label lacks the marker, use a nearby
-marker-bearing live section header as one of the three fields when that header
-genuinely names the same route. Do not duplicate `mechanism` into `attempt` or
-`outcome` unless the live stdout itself supplies the same text for those
-distinct semantic roles.
-
-The validator treats `_` and `-` inside verbatim identifiers as lexical
-separators for this marker check. For example, `oriented_cubical_boundary` and
-`POST_RECORD_DYNAMICS` carry the documented `boundary` and `dynamic` markers;
-the quoted field must still occur verbatim at its cited evidence path. Exact
-`W_unit`/`W_units` markers may likewise occur inside underscore-delimited
-identifiers. The reserved lookalikes `preW_unit`, `W_unit_post`, `W_unitary`,
-and `W__unit` do not supply that marker by themselves; nor do `unitary`,
-`unitless`, or `unitization` satisfy the whole-token unit/units marker. These
-markers use their literal ASCII spelling; Unicode letters and combining marks
-continue a token rather than manufacturing a boundary or a case-insensitive
-lookalike.
+label: pick the listed class that best names the kind of escape the route
+tries. Several routes may share a class, nothing counts classes, and no
+keyword in the route's text has to match its class. Do not duplicate
+`mechanism` into `attempt` or `outcome` unless the live stdout itself supplies
+the same text for those distinct semantic roles.
 
 At either gate status, list only the genuinely evidenced routes. No number of
 routes is required, and a short list is not an N1 failure. Do not fabricate a

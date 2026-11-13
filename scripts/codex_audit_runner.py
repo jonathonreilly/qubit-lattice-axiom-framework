@@ -3848,12 +3848,6 @@ def schema_failure_code(validation_error: str) -> str:
     ):
         return "N5_TESTED_RESOLUTION_VERBATIM_MISMATCH"
     if (
-        validation_error.startswith("N1 route ")
-        and ".route_class=" in validation_error
-        and "is not supported by its evidenced" in validation_error
-    ):
-        return "N1_ROUTE_CLASS_MARKER_MISMATCH"
-    if (
         validation_error.startswith("N1 ")
         and (
             "distinct attempts" in validation_error

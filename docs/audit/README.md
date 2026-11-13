@@ -13,6 +13,13 @@ claim strength. The audit lane now separates those concerns: the auditor sets
 `effective_status` through the citation graph. Nothing presents as retained
 to the outside world unless the scoped audit chain is clean.
 
+## Docs-top fix list
+
+The external read at pin `fa841753c1` is in
+[deep-read/fa841753c1/README.md](deep-read/fa841753c1/README.md).
+`FIXES.md` is the repair queue. It is not an audit verdict and it does not
+change claim status.
+
 The first repo-wide trace (CKM atlas) showed several failure modes that
 self-declared tiers do not catch:
 

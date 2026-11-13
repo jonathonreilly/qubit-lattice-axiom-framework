@@ -204,3 +204,59 @@ Verdict: row 895 FAILS as written. What survives, and what I use:
 
 Step 2 done. Next: Step 3, the one-page map.
 
+## Step 3. The one-page map (from Steps 1-2; every line points to a row read above)
+
+### 3.1 Consumers (what a finished statement must feed)
+
+- C-FP. (SEED-FP): S(ell/(2 a_K); (ell/a_K)^3) at most s_* below 1/5041 for every first-passage datum, one physical size. Gives (GAP) granted the account (row 837; steps (a), (b) checked, (c)-(f) ARGUED).
+- C-SH. One SH shape: S(a; b^3) at most t(r); at r at least 24 it splits into GLUE S_ev(a; b^3) at most 1/10 and (CORE) Q_0(a; b^3) at most 1/20 (rows 892, 893: SPLIT, O1 HOLD). Needs the CONFINED flux pattern.
+- C-ES. (ES) at a: S_ev(a; a^3) at most 1e-7 and delta at most 1e-7. Gives the gap on centre-blind (tr F^2) functions (Theorem R, EV-L; checked rows 744, 732). Its flux input is Theorem V: delta is small exactly when twelve of the sixteen crossed weights are small and four are light, for ANY set of four (READ row 892 L150-158, quoting gap-es1-opus.md L60-80).
+- Every consumer needs the bound for all first-passage data at one physical size (cutoff-uniform). At a fixed bare coupling the same statements give a lattice gap.
+
+### 3.2 Weakest open statements on the path
+
+- Flux half, confined form: (CORE), one number, m = 0, no rate (row 892; ordering against (E17) not established, check 893). Sufficient faces, all OPEN: (VF) (variational; a perimeter law for the open thin vortex sheet), (KURT)_eta with GLUE, kappa at least 2 or 1.66 (rows 892, 894), (E17) and its forms (parity, wrapping 't Hooft surface, HA, (C2), EXC, (DRESS)), (SEED-DEC-U), (SEED-DEC-H) with (CE).
+- Glue half: (GLUE-FP), S_ev at most 1/10 at one box. Sufficient pairs, all OPEN: (Z0) with (COUNT) (Lemma G5); (BETA)_C along a coupling path (TR; needs an all-level derivative bound, check 896 D5).
+- Whole seed: (PATH) (torus comparison of local means along a coupling path, row 861); (SEED-L) (defect of one block step below 0.131 L, row 837); EXIT with PIN-MIX (rows 846, 861).
+- Cutoff form of the flux consumer: (E17-phys-CA) (rows 865, 868; conditional on the account's kernel comparison).
+
+### 3.3 What is checked (by another provider unless said)
+
+- Ranges at fixed bare coupling: seed and volume-uniform gap below 0.3609 (row 836, check 841); below 1/3 by line-field gauge (row 835, check 840); area law below 2/3 (row 825, check 828; range stated by Durhuus-Frohlich 1980); SOS surface classes to 5/11 (check 830); (RTAIL-SOS) and (E17) on (0, 6/25] (check 847).
+- Weak coupling, reduced geometry: flip-even transfer gap on the twisted thin torus for even M up to M_1 (row 862, check 880).
+- The reduction chain: (FQ) to (F-h) to FUSE-suff to (ES) to Theorem R to (G_ev); Corollary S3'; Theorem SH (same model family); SPLIT, O1, F2, F3, K, R, W; Lemma SQ; the tube identity; (E17) = parity = wrapping 't Hooft surface; HA implies (E17); EXP; QS; TOP, TOP+; Lemma W; the conditional hand-off HO; Theorem HL; B1, T2.
+- Nothing at order one is proved. No statement in 3.2 is proved at any coupling above 0.3609 (seed) or 2/3 (area law).
+
+### 3.4 Walls, with the exact stopping reason
+
+| # | Attack (rows) | Where it stops, exactly |
+|---|---|---|
+| W1 | Single-site Dobrushin, tree and line gauges (834, 835) | Worst-case chord coefficients are (beta/4) times adjacency, Perron root 3 beta/2: cap 2/3. Tree gauges: Lemma AVG, cap 1/3. |
+| W2 | Vertex and star blocks (836) | Proved to 0.3609. Worst-case single-link responses fail at 0.775 (Prop CEIL; scope: that family of majorants, rows 861, 896). |
+| W3 | Background-uniform slab or layer bounds (834, 839) | PROVED false above 4 G_3 = 1.0109 at the flat background (Frohlich-Simon-Spencer). Past 0.7385 needs a nonlinear diamagnetic inequality (OPEN). |
+| W4 | Annealed block condition (845) | Literal (AN1) equals the essential worst case (check 852). (SP-ext) fails under repeated block updates. No supplier for surviving-path conditions. |
+| W5 | Signed surface expansions (833) | Encoding entropy: stops near 0.2497; degree-two discovery entropy 5, needs below 4.51. GUIDE roughening ceiling near 1.9 for absolute expansions. |
+| W6 | Information theory (839) | Every candidate restates the seed or is group-blind. No blanket no-go (check 849). |
+| W7 | Spin filter, (HS), EXC (843, 860, 872, 875, 888) | (HS) proved and the wrong target. EXC is live: it needs an order-L_i bound on the relative magnetic response; the available bound is 4 beta n, order a^3. (DRESS) OPEN. |
+| W8 | Parity, HA, (C2) (866, 871) | HA is an area law plus a complex disc, stronger than (E17). An environment-uniform conditional bound is false (Z_2 test above 2.191). (C2) restates (E17). |
+| W9 | Decoder (859, 887) | (SEED-DEC-H) needs z_0 below 1/1,120,616 and a chessboard estimate (CE) that is not supplied for the one-slice law. (SEED-DEC-U) asks p_0 about 1e-12. Stops at (S1) and (S2). |
+| W10 | Kurtosis, wall (876, 886, 892, 894) | (KURT) does not follow from transfer structure (kappa = 1 examples). Under GLUE, (WALL)_40 is exactly kappa at least 2: exclude a Z_2 topological order of the box (894, unchecked). GUIDE: one tube has kappa 1.53. |
+| W11 | Variational face (892) | The vacuum trial vector pays a thin vortex (Jensen: first cumulant only). Thin lines cannot be averaged into a thick vortex. No change of variables makes a thick vortex. |
+| W12 | Hand-off EXIT (846, 861) | Per-link size is free (FREE). Locality of the landed action is PIN-MIX, proved only below 0.0384. Soft step plus HO is circular for the seed (VAC). No monotone, non-group-blind quantity found. |
+| W13 | Direct skeleton (863) | (SHIFT), (INC), (TORUS): one statement in three forms. Hopf gap is extensive. |
+| W14 | Glue (895, 896) | Row fails as written. Elementary identities survive. Trial vectors give the wrong side for the short box. (BETA) needs an all-level estimate. No tool named. |
+| W15 | Twisted thin torus S1 (842, 862) | Window M at most M_1. Beyond: flux -1 defects at positive density; a lower bound on the Z_2 string tension. Off the order-one crux. |
+| W16 | Sheet doubling (878) | (TS-theta) holds for deconfined Z_2 (theta = 1); the selectivity sits in its seed. Off the critical path. |
+| W17 | Fresh-framing exercises (858, 859, 876, 878) | The fresh pass re-derived the earlier idea list almost one for one. Lead decision: no further fresh-framing exercise on this inventory until a new input lands. |
+
+### 3.5 The pattern
+
+- Every route that survives the fact tests ends at ONE order-one number of the true SU(2) measure at a box a few correlation lengths across, with no small parameter: (CORE) or its faces; kappa at least 2; GLUE; z_0; (DRESS).
+- The reductions around these numbers are in good shape (many checked). The numbers have no supplier. Reformulation has saturated (row 878).
+- Three things were NOT tried, by my reading of rows 830-897 (to be verified by grep in Step 4): (i) a consumer that does not need the confined pattern (C-ES accepts any pure pattern, but every flux lane aimed at confinement); (ii) the glue half as a thermodynamic statement with a proof direction of its own; (iii) tools from outside the transfer-operator and Dobrushin frame (positive Z_2 x SO(3) representation, Tomboulis-Yaffe and Mack-Petkova inequalities, multiscale Bakry-Emery, Chatterjee's strong-mass-gap mechanism).
+
+### Correction to 3.5 (after a grep of the lane library and a read of gap-brainstorm2-max.md L145-300)
+
+The last bullet of 3.5 is WRONG as written. The grep shows the lane read or used all the outside tools I named: Tomboulis (49 files), Mack-Petkova (29), Polchinski and Bauerschmidt-Bodineau (16, 24), Chatterjee (32), the SO(3) x Z_2 splitting (38), Migdal-Kadanoff (33). Row 876's file already holds, as ideas: the planted Z_2 gauge theory (idea 2), the twist-eaters (15), the Migdal-Kadanoff toy (16), the heat-kernel action (17), orbit-space curvature (18), a centre-disordering mixed action (31), pattern selection (32, dropped: "(ES) gives the gap for every pattern"), (ES) as a low-temperature equation of state (G4), two rivals and two inputs (G5), a consumer with a vacuum multiplet (G11), the 2D O(4) twin (G7), 2I as a finite twin (G13).
+Corrected bullet: what the FINISH rows 830-897 show is that every PROOF lane on the flux half aimed at the confined pattern ((E17), EXC, (KURT), (WALL), the decoder, (CORE)), and that the glue half had one proof lane (row 895, failed as written). The ideas G4, G5, G11 and 31 of row 876 (the gap needs only pattern purity and the glue half; the rivals of the two halves differ; a regularization can make the flux half a Z_2 expansion) were recorded and NOT given a proof lane. READ gap-brainstorm2-max.md L237, L242, L257-258, L264.
+

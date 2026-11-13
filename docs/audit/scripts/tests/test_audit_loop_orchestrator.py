@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import contextlib
 import hashlib
 import json
 import os
@@ -22,6 +23,22 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import orchestrate_audit_batch as batch
 import orchestrate_audit_loop as audit_loop
 import orchestrate_judicial_panel as panel
+
+
+@contextlib.contextmanager
+def derived_caches_present():
+    """Let batch.main() find its derived caches in a scratch directory.
+
+    When docs/audit/data/citation_graph.json is missing, as in a fresh
+    checkout, batch.main() runs the full run_pipeline.sh against the real
+    repository. That rewrites tracked generated files such as
+    docs/audit/AUDIT_QUEUE.md. A stub graph under a patched DATA skips it.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        data = Path(tmp)
+        (data / "citation_graph.json").write_text("{}\n", encoding="utf-8")
+        with mock.patch.object(batch, "DATA", data):
+            yield
 
 
 class GeneratedProvenanceRecoveryTest(unittest.TestCase):
@@ -720,7 +737,7 @@ class BatchExitSemanticsTest(unittest.TestCase):
 
         with tempfile.TemporaryDirectory() as tmp:
             workdir = Path(tmp) / "batch"
-            with mock.patch.dict(
+            with derived_caches_present(), mock.patch.dict(
                 os.environ,
                 {"AUDIT_BATCH_WORKDIR": str(workdir)},
             ), mock.patch.object(
@@ -935,7 +952,7 @@ class BatchExitSemanticsTest(unittest.TestCase):
             root = Path(tmp)
             workdir = root / "batch"
             quarantine = root / "campaign-row-exclusions.jsonl"
-            with mock.patch.dict(
+            with derived_caches_present(), mock.patch.dict(
                 os.environ,
                 {"AUDIT_BATCH_WORKDIR": str(workdir)},
             ), mock.patch.object(
@@ -1012,7 +1029,7 @@ class BatchExitSemanticsTest(unittest.TestCase):
             root = Path(tmp)
             workdir = root / "batch"
             quarantine = root / "campaign-row-exclusions.jsonl"
-            with mock.patch.dict(
+            with derived_caches_present(), mock.patch.dict(
                 os.environ,
                 {"AUDIT_BATCH_WORKDIR": str(workdir)},
             ), mock.patch.object(
@@ -2227,7 +2244,9 @@ class SchemaRecoveryTest(unittest.TestCase):
                 str(exclusion_file),
             ]
             lock = mock.Mock()
-            with mock.patch.object(sys, "argv", argv), mock.patch.dict(
+            with derived_caches_present(), mock.patch.object(
+                sys, "argv", argv
+            ), mock.patch.dict(
                 os.environ,
                 {"AUDIT_BATCH_WORKDIR": str(workdir)},
             ), mock.patch.object(

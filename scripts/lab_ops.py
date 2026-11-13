@@ -395,14 +395,19 @@ def digest_refusal(target: str, lane: str) -> str | None:
         return f"{digest} is reached through a symbolic link; commit the file itself"
     if not digest.is_file():
         return f"{digest} does not exist"
-    if not digest.read_bytes().strip():
+    data = digest.read_bytes()
+    if not data.strip():
         return f"{digest} is empty"
-    tracked = git("ls-files", "--error-unmatch", "--", digest.name, cwd=digest.parent)
-    if tracked.returncode:
-        return f"{digest} is not committed"
-    changed = git("status", "--porcelain", "--", digest.name, cwd=digest.parent)
-    if changed.returncode or changed.stdout.strip():
-        return f"{digest} has changes that are not committed"
+    # Compare the bytes on disk with the blob in HEAD. The index is not asked:
+    # its skip-worktree and assume-unchanged flags hide an edit from git status.
+    entry = git("ls-tree", "HEAD", "--", digest.name, cwd=digest.parent)
+    fields = entry.stdout.split(None, 3)
+    if (entry.returncode or len(fields) < 3 or fields[1] != "blob"
+            or fields[0] not in ("100644", "100755")):
+        return f"{digest} is not committed as a regular file"
+    algorithm = hashlib.sha256 if len(fields[2]) == 64 else hashlib.sha1
+    if algorithm(b"blob %d\0" % len(data) + data).hexdigest() != fields[2]:
+        return f"{digest} differs from its committed text"
     return None
 
 

@@ -1,0 +1,23 @@
+beta=0.7 t/4=0.04288 beta/16=0.04375 L(0)=0.04288 eval 8.7 ms
+(a) perturbed leaf field G1=g e1 (or g e2), others 0:
+   g=0.50: L=0.04244
+   g=1.00: L=0.04120
+   g=2.00: L=0.03715
+   g=3.00: L=0.03247
+   g=3.50: L=0.03026
+(b) other leaves in opposite pairs +-g u, G1 = 0:
+   g=0.50: L(pairs along e1,e2)=0.04290  L(pairs e2,e3 + e4)=0.04289
+   g=1.00: L(pairs along e1,e2)=0.04294  L(pairs e2,e3 + e4)=0.04291
+   g=2.00: L(pairs along e1,e2)=0.04306  L(pairs e2,e3 + e4)=0.04295
+   g=3.00: L(pairs along e1,e2)=0.04316  L(pairs e2,e3 + e4)=0.04295
+   g=3.50: L(pairs along e1,e2)=0.04318  L(pairs e2,e3 + e4)=0.04293
+(c) tau proxy (top eig of Cov) for S_5 laws, F=0:
+   g=0.50: tau(pairs e1,e2)=0.25010 tau(pair e1)=0.25005 tau(mixed)=0.24980
+   g=1.00: tau(pairs e1,e2)=0.25036 tau(pair e1)=0.25018 tau(mixed)=0.24924
+   g=2.00: tau(pairs e1,e2)=0.25106 tau(pair e1)=0.25053 tau(mixed)=0.24751
+   g=3.00: tau(pairs e1,e2)=0.25159 tau(pair e1)=0.25079 tau(mixed)=0.24567
+   g=3.50: tau(pairs e1,e2)=0.25174 tau(pair e1)=0.25086 tau(mixed)=0.24486
+(d) local search max L, n=6, F0=0: 0.04323
+    local search max L, n=6, F0 free: 0.04315
+    local search max tau, S_5, F0 free: 0.25206
+    search time 87 s

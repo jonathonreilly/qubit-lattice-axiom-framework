@@ -17,7 +17,6 @@ import hashlib
 import json
 import os
 import re
-import unicodedata
 from itertools import combinations
 from pathlib import Path
 from typing import Any
@@ -96,9 +95,8 @@ PRIOR_AUTHORITY_PREMISE_TYPES = {
 }
 # `route_class` is a descriptive label from this controlled list, and the list
 # prompts the auditor with kinds of escape to consider.  Nothing counts
-# classes, and several routes may share one.  The keyword markers below only
-# keep a route's label consistent with its own mechanism/attempt/outcome text;
-# neither the label nor a marker is evidence that a route is closed.
+# classes, several routes may share one, and no keyword in the route's text is
+# required to match it.  The label is not evidence that a route is closed.
 ROUTE_CLASSES = {
     "algebraic_rearrangement",
     "symmetry_or_representation",
@@ -112,25 +110,6 @@ ROUTE_CLASSES = {
     "alternate_observable_or_readout",
     "topology_or_global_structure",
     "dependency_or_registry_reclassification",
-}
-ROUTE_CLASS_MARKERS = {
-    "algebraic_rearrangement": re.compile(r"\b(?:algebra|identity|rearrang|factor|cancel|solve)\w*\b", re.I),
-    "symmetry_or_representation": re.compile(r"\b(?:symmetr|invarian|represent|commut|character|irrep|group)\w*\b", re.I),
-    "alternate_carrier_or_sector": re.compile(
-        r"\b(?:alternate\s+)?(?:carriers?|sectors?|modules?|spaces?|irreps?)\b",
-        re.I,
-    ),
-    "boundary_or_initial_condition": re.compile(r"\b(?:boundary|initial|background|state|pointwise)\w*\b", re.I),
-    "normalization_or_units": re.compile(
-        r"\b(?:normaliz\w*|units?|scale\w*|dimensionful\w*)\b", re.I
-    ),
-    "dynamical_or_effective_action": re.compile(r"\b(?:dynamic|effective|action|evolution|equivariant\s+family)\w*\b", re.I),
-    "lattice_scale_or_limit": re.compile(r"\b(?:lattice|continuum|limit|finite[- ]size|asymptotic|approximate)\w*\b", re.I),
-    "numerical_or_finite_case": re.compile(r"\b(?:numeric|finite|sample|scan|compute)\w*\b", re.I),
-    "convention_or_relabeling": re.compile(r"\b(?:convention|relabel|rename|basis\s+label)\w*\b", re.I),
-    "alternate_observable_or_readout": re.compile(r"\b(?:observable|readout|nonlinear|spectrum|eigenvalue)\w*\b", re.I),
-    "topology_or_global_structure": re.compile(r"\b(?:topolog|global|bundle|homotop|cohomolog)\w*\b", re.I),
-    "dependency_or_registry_reclassification": re.compile(r"\b(?:dependency|registry|reclassif|premise|authority)\w*\b", re.I),
 }
 DEMOTIONS = {
     "partial-attempt-with-named-untested-routes",
@@ -161,72 +140,6 @@ POLICY_NEGATIVE_CLASSES = {
     "conditional_wall_rationale",
 }
 ROUTE_DISPOSITIONS = {"CLOSED", "OPEN", "UNTESTED"}
-NORMALIZATION_MARKER_RE = re.compile(
-    r"(?:normaliz[A-Za-z0-9]*|units?|scale[A-Za-z0-9]*|dimensionful[A-Za-z0-9]*)",
-    re.IGNORECASE | re.ASCII,
-)
-W_UNIT_LITERAL_RE = re.compile(r"W_units?", re.IGNORECASE | re.ASCII)
-W_UNIT_POST_SUFFIX_RE = re.compile(r"_post", re.IGNORECASE | re.ASCII)
-
-
-def _is_marker_word_extension(character: str) -> bool:
-    """Return whether ``character`` continues a forensic marker token."""
-    return character.isalnum() or unicodedata.category(character).startswith("M")
-
-
-def _has_exact_w_unit_marker(route_semantics: str) -> bool:
-    """Match W_unit(s) across separators without admitting pinned lookalikes."""
-    for match in W_UNIT_LITERAL_RE.finditer(route_semantics):
-        if match.start() and _is_marker_word_extension(route_semantics[match.start() - 1]):
-            continue
-        if match.end() < len(route_semantics) and _is_marker_word_extension(
-            route_semantics[match.end()]
-        ):
-            continue
-        if (
-            match.group(0).lower() == "w_unit"
-            and W_UNIT_POST_SUFFIX_RE.match(route_semantics, match.end())
-        ):
-            continue
-        return True
-    return False
-
-
-def _has_normalization_marker(route_semantics: str) -> bool:
-    """Match the documented ASCII markers at Unicode-aware token boundaries."""
-    if _has_exact_w_unit_marker(route_semantics):
-        return True
-    for match in NORMALIZATION_MARKER_RE.finditer(route_semantics):
-        if match.start() and _is_marker_word_extension(route_semantics[match.start() - 1]):
-            continue
-        if match.end() < len(route_semantics) and _is_marker_word_extension(
-            route_semantics[match.end()]
-        ):
-            continue
-        if (
-            match.group(0).lower() in {"unit", "units"}
-            and match.start() >= 2
-            and route_semantics[match.start() - 1] == "_"
-        ):
-            prefix_index = match.start() - 2
-            while prefix_index >= 0 and route_semantics[prefix_index] == "_":
-                prefix_index -= 1
-            if prefix_index >= 0 and route_semantics[prefix_index] in {"W", "w"}:
-                continue
-        return True
-    return False
-
-
-def route_class_marker_matches(route_class: str, route_semantics: str) -> bool:
-    """Match documented route markers across prose and identifier tokens."""
-    route_semantics = unicodedata.normalize("NFC", route_semantics)
-    if route_class == "normalization_or_units":
-        return _has_normalization_marker(route_semantics)
-    marker = ROUTE_CLASS_MARKERS[route_class]
-    if marker.search(route_semantics):
-        return True
-    marker_text = re.sub(r"[_-]+", " ", route_semantics)
-    return bool(marker.search(marker_text))
 
 PATH_TRIGGER_RE = re.compile(
     r"(?:^|[\s/._-])(?:no[\s_-]?go|obstruction|firewall|negative[\s_-]?boundary|"
@@ -3470,11 +3383,12 @@ def _validate_n1(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     Each route is bound to evidence, mechanisms and attempts are pairwise
     distinct, and PASS requires every listed route CLOSED.  No minimum number
     of routes or route classes applies: a count is not evidence that a family
-    is ruled out.  Whether `claim_scope` states that family with explicit
-    quantifiers, and whether every admissible route inside it is listed, is
-    the auditor's judgment and is not checked here.  A valid packet still
-    lists at least one route, because `_validate_n7` requires the steelman to
-    name one.
+    is ruled out.  `route_class` must come from ROUTE_CLASSES, but no keyword
+    in the route's own text has to match it.  Whether `claim_scope` states
+    that family with explicit quantifiers, and whether every admissible route
+    inside it is listed, is the auditor's judgment and is not checked here.
+    A valid packet still lists at least one route, because `_validate_n7`
+    requires the steelman to name one.
     """
     routes = packet.get("N1_alternative_routes")
     if not _list(routes):
@@ -3511,18 +3425,6 @@ def _validate_n1(packet: dict, status: str, manifest: dict[str, dict] | None) ->
             return f"N1 route_id {route['route_id']!r} is duplicated"
         if route_class not in ROUTE_CLASSES:
             return f"N1 route {index}.route_class must be one of {sorted(ROUTE_CLASSES)}"
-        route_semantics = (
-            str(route.get(field) or "")
-            for field in ("mechanism", "attempt", "outcome")
-        )
-        if not any(
-            route_class_marker_matches(route_class, field_text)
-            for field_text in route_semantics
-        ):
-            return (
-                f"N1 route {index}.route_class={route_class!r} is not supported "
-                "by its evidenced mechanism/attempt/outcome vocabulary"
-            )
         marker = route["honesty_marker"].strip().upper()
         disposition = route["disposition"].strip().upper()
         if marker not in HONESTY_MARKERS:

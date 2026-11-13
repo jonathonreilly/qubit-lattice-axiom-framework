@@ -260,3 +260,132 @@ Step 2 done. Next: Step 3, the one-page map.
 The last bullet of 3.5 is WRONG as written. The grep shows the lane read or used all the outside tools I named: Tomboulis (49 files), Mack-Petkova (29), Polchinski and Bauerschmidt-Bodineau (16, 24), Chatterjee (32), the SO(3) x Z_2 splitting (38), Migdal-Kadanoff (33). Row 876's file already holds, as ideas: the planted Z_2 gauge theory (idea 2), the twist-eaters (15), the Migdal-Kadanoff toy (16), the heat-kernel action (17), orbit-space curvature (18), a centre-disordering mixed action (31), pattern selection (32, dropped: "(ES) gives the gap for every pattern"), (ES) as a low-temperature equation of state (G4), two rivals and two inputs (G5), a consumer with a vacuum multiplet (G11), the 2D O(4) twin (G7), 2I as a finite twin (G13).
 Corrected bullet: what the FINISH rows 830-897 show is that every PROOF lane on the flux half aimed at the confined pattern ((E17), EXC, (KURT), (WALL), the decoder, (CORE)), and that the glue half had one proof lane (row 895, failed as written). The ideas G4, G5, G11 and 31 of row 876 (the gap needs only pattern purity and the glue half; the rivals of the two halves differ; a regularization can make the flux half a Z_2 expansion) were recorded and NOT given a proof lane. READ gap-brainstorm2-max.md L237, L242, L257-258, L264.
 
+### 3.6 Inventory of ideas the lane already scored (READ gap-brainstorm-max.md L277-345, row 859; gap-brainstorm2-max.md L145-352, row 876). I do not repeat these as "new".
+
+Row 859 (52 ideas), by title: frustration bootstrap (non-abelian diamagnetic bound); covariant spectral edge; the canonical (Doob) chain; stochastic localization along plaquette tilts; chessboard for typical backgrounds; a defect-angle identity (class function w_phi, phi from 0 to 2 pi); the twist as two SO(3) boundary rotations; the twist free energy as a running coupling with a step-scaling inequality; gradient-flow transport; Polchinski transport of a thick vortex; Nielsen-Olesen mode; non-amenability (Bourgain-Gamburd); intertwiner between sectors; expand around the rough sheet; SO(3) x Z_2 variables with Griffiths for the centre part; soft fusion; end the flow on Wilson by projection; a theorem-grade Q_8 rung; Furstenberg for the tangent flow; Witten Laplacian on one-forms as one covariant particle; Hormander; the 2D O(4) sibling; trees; topological order in reverse; self-avoiding-surface tree; just count; orbit-space curvature; Nishimori line; an exact scale identity (trace anomaly, Michael sum rules); soft percolation (finite energy, Burton-Keane); continue in the twisted geometry; anisotropic action from beta_s = 0; a second handle (large N, Higgs, level truncation); 3D first; sum over twists or walls; continuum first in a small twisted box; Hamiltonian valley with Agmon estimates; a Simon-Lieb criterion on the conditional Z_2 system; conditional theorems that halve the problem (NOCRIT); no flow, a monotone step; SU(2) as the 3-sphere (O(4) vector model); hyperbolic lattice; twist and antitwist with tube conditioning; flux from glue by clustering (REFUTED by the tube identity); chi-square martingale in the tube radius; Hellmann-Feynman continuation; equidistribution of the Stiefel-Whitney class; the mean Hessian is diagonal; cut the sheet out; level truncation ladder; the seed as one more block step by a chessboard sandwich; Simon-Lieb on the Nishimori line.
+Row 876 (42 + 18 ideas): listed in the correction above, plus G1 (transverse reflection positivity fuses two tubes), G2 (Witten Laplacian with a convex-paramagnetic split), G6 (flux half as one order-one statement, a lower bound on the deconfinement temperature), G17/G18 (fusion by squaring; a window for the kurtosis).
+Row 878: sheet doubling (TS-theta); the marginal-dimension method (needs a positive geometric representation).
+
+Consequence for Step 4. A candidate counts as outside this inventory only if its crux lemma is not one of the above. I mark each candidate NEW, VARIANT (of a named idea) or KNOWN.
+
+Step 3 done. Next: Step 4, candidates, in batches of three or four per response.
+
+### Lead note received before Step 4 (2026-11-13)
+
+The lead reports row 900 (D/library/gap-mine858-opus.md), which mined the partial file of row 858. Three items: (1) route W, a vector-state Theorem S on free-wall boxes (no flux sector, no twist), crux (W-ENG); (2) the account's fixed-horizon universality (YM4_1400 L94031ff), crux (UNIV-FP); (3) the integrated sheet-coupling identity E6, crux (SURF). I read the file itself before using them (next sub-step).
+
+### 3.7 Rows 899-900 (READ at clone commit 6358162252bda961ab106b0d8dae4b3811e1daa8; FINISH.md lines 976-977; gap-mine858-opus.md L97-147)
+
+- 899 (assumptions exercise on five walls, Fable): queued, no RESULT at this commit.
+- 900 (mining row 858's partial, Opus 5.5 high, unchecked): 59 items; 40 covered later, 7 untouched, none reaching order one. The three the lead named, as READ:
+  - Route W (L125-131): a box with FREE walls in all four directions; Z_free(t, l, l, l) = <1, L^t 1>, the constant-vector matrix element, so no flux sector and no twist. Vector thermal sum S_W(N; B) = sum over k at least 1 of (|c_k|^2/|c_0|^2)(lambda_k/lambda_0)^N. Crux (W-ENG): S_W(N; (2N)^3) below s_W at one N implies a gap at least log(1/(C S_W))/N on the cyclic subspace of 1 for every larger free-wall box. Axis exchange survives. Then a second node: free-wall boxes to the account's state. "It removes the flux half from the form of the seed"; what remains is the glue half on free-wall boxes.
+  - (UNIV-FP) (L134-138): does the account's fixed-horizon universality (YM4_1400 L94031ff; it "does not compare different horizons") apply at the first-passage horizon with K-uniform constants, and bound the seed difference between two bare weights below s_*/2? If yes the lane may choose its bare weight, for example one with no Z_2 monopoles, where the centre is conditionally an unfrustrated Z_2 theory with Griffiths inequalities.
+  - (SURF) (L140-145): integral over the sheet coupling of the absolute sheet response at most C a^p eta_*^(a/2). Probably (E17) or stronger; its free end is group-blind.
+- Row 900's own reading: item 1 "moves the form of the crux, not its location"; items 2 and 3 do not move it.
+
+## Step 4. Candidates
+
+Format per candidate: label (NEW, VARIANT, KNOWN against 3.6-3.7); crux lemma; what it buys; why it might be easier; fact tests F1 (fails for U(1) Coulomb), F2 (uses what Q_8 and 2T lack where they would pass), F3 (no worst-case single-site or vertex-block bound, no background-uniform layer bound above 1.0109, not (AN1)), F4 (reaches order one or reduces to a statement a known tool reaches); two chances: P1 that the first lemma lands, P2 that the route supplies an order-one seed. All chances are my judgment (ARGUED). No candidate has a known tool for the order-one number; P2 is small everywhere and I say so.
+
+One reading that orders the list (ARGUED from READ lines). The target (GAP) is a gap on the centre-blind (tr F^2) sector (READ gap-finishline-opus.md L164). Frozen finite groups are gapped there. The flux half enters the lane's consumers only because periodic boxes carry flux sectors and twists. So the two halves have different rivals (row 876 G5): the flux half is bound by Z_2, Q_8, 2T; the glue half only by gapless models (U(1) Coulomb; the mixed-action endpoint K7). Twenty rows (860-894) attacked the flux half in the confined pattern. The glue half had one row.
+
+### 4.1 Batch 1: candidates that change the shape of the crux
+
+**C1. Route W: a seed engine on boxes with free walls. VARIANT of row 858/900 item 1 (no proof lane yet); my variant W' is NEW as stated.**
+- Setting. Free walls in the three space directions. Two readings of the same numbers: (W) free walls in time too, Z = <1, L^t 1> (row 900); (W') periodic time, Z = Tr L_B^t over the free-wall box B. In a free-wall space box every centre flip across a plane is a gauge transformation (the box has no closed winding), so there are no flux sectors and no twists (ARGUED; one line: multiply by -1 at all sites beyond the plane).
+- Crux lemma (W'-ENG). There are absolute s' and C with: S_fw(a; b^3) := Tr L_(b^3)^a/lambda_0^a - 1 at most s' at one shape (a, b), b at least 2a, implies that the transfer operator of every free-wall box of sides at least b has a gap at least log(1/(C s'))/a. (W-ENG, row 900: the same with the vector sum S_W and a gap on the cyclic subspace of 1 only.)
+- Buys. The whole seed becomes ONE glue number: the thermal sum of a free-wall box. No flux half, no twist (the account reads untwisted objects only, row 837 2.4 item 4), no Q_8/2T test (they are gapped and satisfy a free-wall seed). The rivals left are U(1) Coulomb and K7.
+- Why easier. It is an implication in the class (positive transfer operators, axis exchange), where the lane's tools work and most results are checked. It asks nothing at order one.
+- Tests. F1: the engine holds for every group; the seed fails for U(1) (photon thermal sum of a box is scale-free and of order one; row 900 gives about 9 for gap times side; ARGUED). F2: not needed, and that is the point. F3: no conditional bound. F4: reduces the crux to glue-only; no tool for the glue number.
+- Risks. (i) The trace version needs axis exchange between a periodic and a free direction: exchange turns Tr into a vector element <1, L'^n 1> on a cross-section with one periodic direction. The engine must run on this mixed family. (ii) The vector version W gives a gap only on the cyclic subspace of 1; that is wall-to-wall decay, not decay of local observables (ARGUED; see Step 6). (iii) Second node: the free-wall limit state must be the account's state.
+- Chance. P1 (an engine theorem in some free-wall form) 45 percent. P2 2 percent (it supplies no number).
+
+**C2. Regularization freedom: (UNIV-FP). KNOWN (row 900 item 2); a port, not a proof.**
+- Crux question. Does the account's fixed-horizon universality (READ via row 900: YM4_1400 L94031ff) hold at the first-passage horizon with constants uniform in K, and bound the seed difference between two bare weights below s_*/2?
+- Buys. The right to pose (SEED-FP) for a chosen bare weight. It is the precondition of C3 and C4.
+- Why easier. It is a reading of the account (credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text).
+- Tests. F1-F3: not applicable (inside the account). F4: does not move the crux by itself; the physics at the seed scale is the same for every weight in one universality class (ARGUED).
+- Chance. P1 (a yes or no with lines) 90 percent; that the answer is a usable yes, 25 percent. P2 0 by itself.
+
+**C3. A centre-disordering bare weight plus a consumer with a vacuum multiplet. KNOWN as ideas 31 and G11 of row 876 (top five, item 4, crux (MULTIPLET)); no proof lane.**
+- Crux lemma (MULTIPLET). For the mixed weight exp(beta_F chi_F + beta_A chi_A) with beta_F fixed below the Z_2 threshold: (a) fundamental loops obey an area law for every beta_A (Mack-Petkova 1979 and Frohlich 1979, recalled in row 876; to be rebuilt in the repo); (b) Theorems S and R hold for a transfer operator with a known quasi-degenerate multiplet of eight vacua (the SO(3) bundle classes of a slice).
+- Buys. The flux half by a convergent Z_2 expansion, uniform along the continuum limit. A known tool reaches it. The crux is then the glue half alone.
+- Why easier. Thin vortices are cheap by choice of the weight.
+- Tests. F1: U(1) has no centre quotient of this kind. F2: uses the Z_2 quotient, which Q_8 and 2T also have: they would pass (a) too, correctly (their fundamental loops are disordered by the same thin vortices). F3: none. F4: reaches the flux half only.
+- Risks. Needs C2 (or the account redone for a mixed weight). The limit beta_A to infinity at fixed small beta_F is the SO(3)-type theory; whether the account's trajectory covers it is not known to me (OPEN).
+- Chance. P1 30 percent (needs C2 = yes). P2 1 percent. Dominated by C1 if C1 lands, because C1 removes the flux half with no change of weight.
+
+**C4. A monopole-free bare weight and Griffiths inequalities for the centre. VARIANT of row 859 ideas 15, 38, 52 and row 900's example.**
+- Crux lemma (GKS-C). For a weight with no Z_2 monopoles, conditional on the SO(3) part the centre is a Z_2 gauge theory with couplings of one sign; then centre-odd observables obey Griffiths and Simon-Lieb type inequalities on average over the environment, and a finite-size criterion for the flux half follows.
+- Buys. A finite-size criterion for the flux half with averaged (not worst-case) input.
+- Why easier. Correlation inequalities exist for ferromagnetic Z_2 gauge theory (READ row 885: Forsstrom-Viklund 2025; Aizenman Part III).
+- Tests. F1: fails (no centre mechanism for U(1) Coulomb). F2: FAILS the test as a route to confinement: at order one the couplings K_p = beta |x_p| are about 1.4, far above the Z_2 threshold 0.44, so the centre is slaved and Griffiths bounds point toward order (ARGUED; row 876 idea 2 says the same: "mechanism only where the centre is not slaved"). F4: no.
+- Chance. P1 20 percent, P2 below 1 percent. Listed for completeness; I do not choose it.
+
+### 4.2 Batch 2: candidates for the order-one glue number
+
+After C1 the remaining number is (FW-SEED): S_fw(a; b^3) at most s' at one physical shape, for every first-passage datum. In words (ARGUED, as row 876 G4 for (ES)): the thermal pressure of the theory in a free-wall box at temperature 1/a is at most about s' T^4 (a/b)^3. For s' = 1/10 and b = 2a this is p/T^4 at most about 1e-2; the free gluon gas has 0.66 and the photon gas 0.22 (recalled Stefan-Boltzmann values, GUIDE). The box need not be large: the seed asks a pressure fifty times below the free value at one temperature. This is weaker in numbers than (ES) (1e-7) and than (SEED-FQ) (1e-16), if an engine with an order-one threshold exists (C1).
+
+**C5. Transport in the coupling: (BETA) in thermal form. KNOWN ((NOCRIT), (VIR-log) of 2026-11-11; Proposition TR of row 895, check 896).**
+- Crux lemma (THERM-DI). For the free-wall thermal sum X(beta, a) = log(1 + S_fw(a; b^3)) at fixed lattice shape ratio: d X/d beta at most -C a dX/da on [0.3609, beta_1], with one C. Equivalent (ARGUED): the thermal excess of the action is at most C times the thermal energy, level by level or in the mean.
+- Buys. A fixed-bare-coupling seed at beta_1 from the proved seed at 0.3609 (TR1, check 896 HOLDS AFTER CORRECTION).
+- Why easier. The thermal form needs the inequality only in the mean over the thermal state, not for every level (check 896 L390-392: "weaker than a bound on every branch").
+- Tests. F1: fails for U(1) at the transition (a level reaches zero). F2: not needed for glue. F3: none. F4: no; uniformity of C is the absence of a critical point on the Wilson axis, and the endpoint K7 lies near it (GUIDE). Not first-passage.
+- Chance. P1 10 percent (any explicit C on any interval past 0.3609), P2 1 percent.
+
+**C6. One covariant particle: the Witten Laplacian on one-forms with a Furstenberg-Kato bound. VARIANT of row 859 ideas 19, 20, 48 and row 876 G2, G12 (top five there, never attempted).**
+- Crux lemma (MN). Let R(U) = Ric + beta Hess S(U) on the tangent space of SU(2)^E. Its link-diagonal blocks are scalar and positive in the mean (READ row 859 idea 48: "the mean Hessian is diagonal"). Its off-diagonal blocks are adjoint transports times bounded scalars. Claim: the bottom of -L + R on exact one-forms is at least kappa above 0 whenever [sup norm of the centred off-diagonal part]^2 times [its correlation time under the Langevin flow] is below the mean diagonal part.
+- Buys. A volume-uniform Langevin gap, hence the glue half, with no flux input.
+- Why easier. It is the one mechanism in the inventory with a zeroth-order difference between SU(2) and U(1) (Ricci curvature 0 for U(1)) and with averaging in place of a supremum.
+- Tests. F1: fails for U(1) (no Ricci term, no adjoint charge; the form is the massless Gaussian one). F2: not needed. F3: passes only if the Kato-type bound is in the mean; a pointwise bound is the worst case and stops at the Langevin range (row 837: a factor 9.5 below the band). F4: GUIDE of row 876: "no margin at 2.3"; so even a proved (MN) may not reach the band.
+- Chance. P1 10 percent, P2 below 1 percent.
+
+**C7. Exact block steps to a proved zone, with a locality statement in the mean. KNOWN (EXIT, rows 846, 861).**
+- Crux lemma: PIN-MIX with the supremum over pinnings replaced by a mean. Stops where W4 stops (no supplier). GUIDE arithmetic (mine, recalled string tensions, decides nothing): two doublings multiply sigma a^2 by 16, from 0.136 at beta 2.3 to about 2.2, the value at strong coupling near beta 0.4. So the distance is two steps, not many. Chance. P1 5 percent, P2 1 percent.
+
+**C8. An exact scale identity for the thermal sum. VARIANT of row 859 idea 29.**
+- Crux lemma (SUM-RULE). The a-derivative of X(beta, a) at fixed physical box equals a fixed combination of plaquette expectations of the thermal state (lattice sum rules of Michael type, recalled, not read). With C5 this turns the transport inequality into a statement about the sign and size of one plaquette difference. Reduction only. Chance. P1 30 percent, P2 below 1 percent.
+
+### 4.3 Batch 3: flux-half candidates still alive, other geometries, and rejections
+
+**C9. (CORE) as a lower bound on the deconfinement temperature. KNOWN (row 876 G6 with Lemma RPF; row 892).** Crux: h(a/2) at most h(a/4)/sqrt 2 for the plateau function of two winding lines, given (HC). F1: U(1) fails at glue. F2: yes (frozen groups have ordered winding lines). F3: yes. F4: one order-one number, no tool. Not needed if C1 lands. P1 10, P2 1.
+
+**C10. EXC and (DRESS). KNOWN, live (checks 881, 890).** Crux: integral of Delta(s) ds/s at least c_0 with c_0 at least the consumer rate; sharpest open form: an order-L_i bound on the relative magnetic response. F1-F3 pass as a target. F4: no tool; thin margin (gamma about 0.010 at 2.3). Not needed if C1 lands. P1 5, P2 below 1.
+
+**C11. The decoder (SEED-DEC-H) with a chessboard estimate. KNOWN (row 887, check 891).** Crux: z_0 below 1/1,120,616 with a uniform margin, and (CE) for the one-slice law. F4: asks a number of size 1e-6 at a block of a few correlation lengths. Not needed if C1 lands. P1 5, P2 below 1.
+
+**C12. Twins with free walls: 3D SU(2), or the 2D SU(2) principal chiral model. KNOWN as test beds (row 859 ideas 22, 34; row 876 G7); NEW only in combination with C1.** Crux: (FW-SEED) in the twin. In 3D the U(1) test does not bind (compact U(1) confines there; Gopfert-Mack, recalled) and the ultraviolet side is super-renormalizable. Same order-one crux; a cheaper place to learn whether any glue mechanism works. Off the 4D target. P1 10, P2 0 for 4D.
+
+**C13. The twisted thin torus for all M, then growth in n. KNOWN (rows 842, 862; (MON')).** Crux: a dilute gas of flux -1 defects for M above M_1; then a one-way step in n. Off the order-one crux; the growth step is the crux again. P1 25 (all M), P2 below 1.
+
+**C14. A Migdal-Kadanoff sandwich in the style of Tomboulis. REJECTED.** READ FINISH (literature row quoted in my grep of Step 3): Tomboulis arXiv:0707.2179 with Ito and Seiler arXiv:0711.4930, "the claim rests on an unproved inequality". The sandwich bounds log Z with an extensive error and treats U(1) and SU(2) alike (row 876 idea 16: the toy "confines U(1) wrongly"). Fails F1.
+
+**C15. Flux from a strong mass gap (Chatterjee's mechanism). REJECTED as an attack.** Its hypothesis is decay uniform in boundary conditions (READ FINISH literature row: "the exact hypothesis (strong mass gap)"). That is a boundary-uniform statement on blocks larger than the correlation length, which row 836 names as OPEN; and C1 removes the need for the flux half.
+
+**C16. Free-wall comparison principle. NEW as a question; no proof idea yet.** Crux question: is the free-wall thermal sum of a box monotone under enlarging the box, or under raising a coupling (a Griffiths-type property)? If free walls were extremal, (FW-SEED) on one box would bound mixed boundary conditions too. Row 876 idea 29 records that GKS fails on non-orientable surfaces (Corollary NS0), so the general inequality is false; a restricted one is OPEN. P1 10, P2 0.
+
+### 4.4 Summary table
+
+| # | Candidate | Half | Label | F1 | F2 | F3 | F4 | P1 | P2 |
+|---|---|---|---|---|---|---|---|---|---|
+| C1 | free-wall engine (W'-ENG) | removes flux | VARIANT/NEW | seed fails | not needed | Y | reduces to glue | 45 | 2 |
+| C2 | (UNIV-FP) port | either | KNOWN | - | - | - | no | 90 (answer) | 0 |
+| C3 | centre-disordering weight + (MULTIPLET) | flux | KNOWN | Y | Y | Y | flux only | 30 | 1 |
+| C4 | monopole-free weight + Griffiths | flux | VARIANT | Y | N | Y | N | 20 | <1 |
+| C5 | thermal transport (THERM-DI) | glue | KNOWN | Y | - | Y | N | 10 | 1 |
+| C6 | Witten Laplacian, Furstenberg-Kato (MN) | glue | VARIANT | Y | - | mean only | N | 10 | <1 |
+| C7 | exact block steps, locality in the mean | both | KNOWN | Y | Y | mean only | N | 5 | 1 |
+| C8 | scale identity (SUM-RULE) | glue | VARIANT | - | - | Y | N | 30 | <1 |
+| C9 | (CORE) via RPF, (HC) | flux | KNOWN | Y | Y | Y | N | 10 | 1 |
+| C10 | EXC, (DRESS) | flux | KNOWN | Y | Y | Y | N | 5 | <1 |
+| C11 | decoder with (CE) | flux | KNOWN | Y | Y | Y | N | 5 | <1 |
+| C12 | twins with free walls | glue | KNOWN+C1 | n/a in 3D | - | Y | N | 10 | 0 |
+| C13 | twisted thin torus, all M | off crux | KNOWN | Y | Y | Y | N | 25 | <1 |
+| C14 | Migdal-Kadanoff sandwich | both | rejected | N | | | | | |
+| C15 | strong mass gap to area law | flux | rejected | | | N | | | |
+| C16 | free-wall comparison principle | glue | NEW question | ? | - | Y | N | 10 | 0 |
+
+Honest reading of the table. No candidate has P2 above 2 percent. The differences are in P1 and in what a landed first lemma changes. C1 is the only one whose first lemma changes the crux itself.
+
+Step 4 done. Next: Step 5, choose three.
+

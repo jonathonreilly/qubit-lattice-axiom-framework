@@ -58,6 +58,11 @@ On `schedule` and `workflow_dispatch` runs the workflow auto-commits the
 regenerated audit-data and publication-facing effective-status views back
 to `main` (as `audit-bot`, with `[skip ci]` to prevent feedback loops).
 
+The workflow commits generated files only. It never edits a science note:
+its dependency-edge step runs `repair_missing_dependency_edges.py` in report
+mode and prints the edges it would add. Adding an edge is a deliberate step
+of a repair lane, run with `--apply` and landed through a PR.
+
 The full pipeline adds:
 
 - `classify_runner_passes.py` — heuristic A/B/C/D classifier.

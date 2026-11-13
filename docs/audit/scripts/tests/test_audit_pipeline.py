@@ -12485,9 +12485,14 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
         argv = [
             "orchestrate_audit_batch.py", "--claims", "spin_row", "--rounds", "4",
         ]
+        # A missing citation graph makes main() run the real pipeline.
+        data = self.root / "data"
+        data.mkdir()
+        (data / "citation_graph.json").write_text("{}\n", encoding="utf-8")
         with mock.patch.dict(
             os.environ, {"AUDIT_BATCH_WORKDIR": str(workdir)}
         ), mock.patch.object(sys, "argv", argv), \
+                mock.patch.object(m, "DATA", data), \
                 mock.patch.object(m, "clean_main_error", return_value=None), \
                 mock.patch.object(m, "load_rows", return_value=rows), \
                 mock.patch.object(m, "source_requires_forensic", return_value=False), \
@@ -17650,11 +17655,15 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
 
         with tempfile.TemporaryDirectory() as tmp:
             workdir = Path(tmp) / "panel"
+            # A missing citation graph makes main() run the real pipeline.
+            (Path(tmp) / "citation_graph.json").write_text("{}\n", encoding="utf-8")
             with mock.patch.dict(
                 os.environ,
                 {"AUDIT_PANEL_WORKDIR": str(workdir)},
             ), mock.patch.object(
                 sys, "argv", ["orchestrate_judicial_panel.py"]
+            ), mock.patch.object(
+                m.batch, "DATA", Path(tmp)
             ), mock.patch.object(
                 m.batch, "clean_main_error", return_value=None
             ), mock.patch.object(

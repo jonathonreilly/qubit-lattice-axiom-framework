@@ -6,15 +6,21 @@ already failing when this runner was added. They still run and are reported,
 but do not fail the run; remove an entry once its file passes. Files in
 CI_ENVIRONMENT_LIMITED pass locally but cannot run on a CI checkout, so CI skips
 them.
+
+Tests write only to temporary directories. A file whose run changes the
+checkout (a tracked file, or an untracked file git does not ignore) fails,
+whatever its tests report. Ignored caches may still be built.
 """
 from __future__ import annotations
 
+import hashlib
 import os
 import subprocess
 import sys
 from pathlib import Path
 
 TESTS_DIR = Path(__file__).resolve().parent / "tests"
+REPO_ROOT = TESTS_DIR.parents[3]
 
 KNOWN_BROKEN = {
     "test_audit_pipeline.py": (
@@ -51,15 +57,64 @@ def run_file(path: Path) -> tuple[bool, str]:
     return proc.returncode == 0, proc.stdout + proc.stderr
 
 
+def tree_state() -> dict[str, str] | None:
+    """Map each modified or untracked path to its status code and content hash.
+
+    Ignored files are left out. Returns None when git cannot report the tree.
+    """
+    proc = subprocess.run(
+        ["git", "-C", str(REPO_ROOT), "status", "--porcelain=v1", "-z", "--untracked-files=all"],
+        capture_output=True,
+    )
+    if proc.returncode != 0:
+        return None
+    state: dict[str, str] = {}
+    entries = iter(os.fsdecode(proc.stdout).split("\0"))
+    for entry in entries:
+        if not entry:
+            continue
+        code, relative = entry[:2], entry[3:]
+        if code[0] in "RC":
+            next(entries, None)  # the source path of a staged rename or copy
+        path = REPO_ROOT / relative
+        try:
+            digest = hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else "absent"
+        except OSError:
+            digest = "unreadable"
+        state[relative] = f"{code} {digest}"
+    return state
+
+
+def changed_paths(before: dict[str, str], after: dict[str, str]) -> list[str]:
+    return sorted(p for p in before.keys() | after.keys() if before.get(p) != after.get(p))
+
+
 def main() -> int:
     unexpected: list[str] = []
     in_ci = bool(os.environ.get("GITHUB_ACTIONS"))
+    state = tree_state()
+    if state is None:
+        print("git status failed: cannot check that tests leave the checkout unchanged", flush=True)
     for path in sorted(TESTS_DIR.glob("test_*.py")):
         if in_ci and path.name in CI_ENVIRONMENT_LIMITED:
             print(f"{path.name}: SKIPPED in CI ({CI_ENVIRONMENT_LIMITED[path.name]})", flush=True)
             continue
         passed, output = run_file(path)
-        if passed:
+        touched: list[str] = []
+        if state is not None:
+            current = tree_state()
+            if current is None:
+                print("git status failed: the checkout check stops here", flush=True)
+            else:
+                touched = changed_paths(state, current)
+            state = current
+        if touched:
+            label = "FAIL, changed the checkout"
+            unexpected.append(path.name)
+            if not passed:
+                print(output)
+            print("\n".join(f"  changed: {p}" for p in touched))
+        elif passed:
             label = "PASS, remove from KNOWN_BROKEN" if path.name in KNOWN_BROKEN else "PASS"
         elif path.name in KNOWN_BROKEN:
             label = f"KNOWN BROKEN ({KNOWN_BROKEN[path.name]})"

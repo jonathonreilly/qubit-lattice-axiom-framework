@@ -47,6 +47,49 @@ class FloorTest(unittest.TestCase):
                     self.assertEqual(call(*base, *extra)[0], expected)
 
 
+class PriorDigestTest(unittest.TestCase):
+    def test_lane_without_committed_digest_is_refused(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp)
+            git("init", "-q", cwd=repo)
+            target = repo / "target"
+            (target / "prior").mkdir(parents=True)
+            (target / "GOAL.md").write_text("goal\n", encoding="utf-8")
+            git("add", "-A", cwd=repo)
+            git("commit", "-q", "-m", "goal", cwd=repo)
+            base = ("preflight", "--target", str(target), "--min-disk-gb", "0",
+                    "--min-mem-pct", "0")
+            digest = target / "prior" / "a1.md"
+
+            def refused(*extra: str) -> bool:
+                code, out = call(*base, *extra)
+                self.assertEqual(code == 1, "refuse  prior digest" in out, out)
+                return code == 1
+
+            self.assertFalse(refused())
+            self.assertTrue(refused("--lane", "a1"), "missing")
+            digest.write_text("", encoding="utf-8")
+            git("add", "-A", cwd=repo)
+            git("commit", "-q", "--allow-empty", "-m", "empty digest", cwd=repo)
+            self.assertTrue(refused("--lane", "a1"), "empty")
+            digest.write_text("main proves nothing on this target\n", encoding="utf-8")
+            self.assertTrue(refused("--lane", "a1"), "edited, not committed")
+            git("add", "-A", cwd=repo)
+            self.assertTrue(refused("--lane", "a1"), "staged, not committed")
+            git("commit", "-q", "-m", "digest", cwd=repo)
+            self.assertFalse(refused("--lane", "a1"))
+            self.assertTrue(refused("--lane", "a2"), "another lane's digest")
+            self.assertTrue(refused("--lane", "../prior/a1"), "path in the name")
+            (target / "prior" / ".gitignore").write_text("a3.md\n", encoding="utf-8")
+            (target / "prior" / "a3.md").write_text("ignored\n", encoding="utf-8")
+            self.assertTrue(refused("--lane", "a3"), "ignored, never committed")
+            digest.write_text("edited after the commit\n", encoding="utf-8")
+            self.assertTrue(refused("--lane", "a1"), "changed since the commit")
+            self.assertEqual(
+                call("preflight", "--lane", "a1", "--min-disk-gb", "0",
+                     "--min-mem-pct", "0")[0], 1, "a lane with no target")
+
+
 class NumericLockTest(unittest.TestCase):
     def test_second_holder_is_refused_until_release(self):
         with tempfile.TemporaryDirectory() as tmp:

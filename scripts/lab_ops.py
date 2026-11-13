@@ -63,6 +63,7 @@ REQUIRED_FIELDS = ("statement", "commit", "content", "verdict", "failure", "path
 RECORD_FIELDS = REQUIRED_FIELDS + ("answers", "steer")
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.*?)\s*$")
 FLOOR_RE = re.compile(r"^model_floor\s+([\w-]+):\s*(.+)$")
+LANE_RE = re.compile(r"[A-Za-z0-9][\w.-]*")
 # Entry files, rules, procedures and the step references they bind.
 RULE_PATHS = (
     "AGENTS.md",
@@ -266,6 +267,24 @@ def numeric_lock_paths() -> tuple[str, str]:
     return str(root / "numeric_lock.json"), str(root / "numeric_lock.guard")
 
 
+def digest_refusal(target: str, lane: str) -> str | None:
+    """Why the lane's prior-work digest does not allow a launch, or None."""
+    if not LANE_RE.fullmatch(lane):
+        return f"lane name {lane!r} is not a plain file name"
+    digest = Path(target) / "prior" / f"{lane}.md"
+    if not digest.is_file():
+        return f"{digest} does not exist"
+    if not digest.read_bytes().strip():
+        return f"{digest} is empty"
+    tracked = git("ls-files", "--error-unmatch", "--", digest.name, cwd=digest.parent)
+    if tracked.returncode:
+        return f"{digest} is not committed"
+    changed = git("status", "--porcelain", "--", digest.name, cwd=digest.parent)
+    if changed.returncode or changed.stdout.strip():
+        return f"{digest} has changes that are not committed"
+    return None
+
+
 def preflight(args: argparse.Namespace) -> int:
     refusals: list[str] = []
 
@@ -305,6 +324,15 @@ def preflight(args: argparse.Namespace) -> int:
             report("refuse", "model floor",
                    f"{args.model}@{args.effort} is not in {floors[args.role]} "
                    f"for {args.role}")
+
+    if args.lane is None:
+        report("note", "prior digest", "no lane named, none checked")
+    elif not args.target:
+        report("refuse", "prior digest", "--lane needs --target")
+    else:
+        why = digest_refusal(args.target, args.lane)
+        report("refuse" if why else "ok", "prior digest",
+               why or f"prior/{args.lane}.md is committed")
 
     nice_ok = run("nice", "-n", "10", "true").returncode == 0
     report("ok" if nice_ok else "refuse" if args.numeric else "note", "nice",
@@ -816,6 +844,7 @@ def build_parser() -> argparse.ArgumentParser:
     check.add_argument("--role", help="role in the target, such as worker or checker")
     check.add_argument("--model", help="model the job will run")
     check.add_argument("--effort", help="reasoning effort the job will run")
+    check.add_argument("--lane", help="lane to launch; needs <target>/prior/<lane>.md committed")
     check.add_argument("--numeric", action="store_true", help="the job does numerics")
     check.add_argument("--needs-push", action="store_true", help="the session must push")
     check.add_argument("--min-disk-gb", type=float, default=env_float("LAB_MIN_DISK_GB", 10))

@@ -373,3 +373,327 @@ For each idea: K = kernel of truth, N = what it would need, O = what it opens. A
 24. K: the light group of Theorem R is the ground space of a topological phase. N: frustration-freeness (absent). O: the right language for the "latent bit": even observables see a mixture over light sectors.
 25. K: tree recursions are exact. N: a gauge analogue. O: nothing clear.
 26. K: a factor 10 lies between the bare sheet weight and the tension at beta 2.4. N: a solvable class. O: a guide to signed against entropic methods.
+
+## Resumed 2026-11-13 after the 03:06Z interrupt
+
+- Clone: /Users/jonreilly/ym4d-lead/clone, branch claude/ym4d-hard-route, commit 9f1e04272b03270994c98fb4b9716e071924bac4 (git pull --ff-only: already up to date, 2026-11-13). The first run started at commit 6a2f410d92.
+- The first run finished Phase 1 (1a-1h), Phase 2 (ideas 1-52) and Phase 3.1 (kernel / needs / opens for ideas 1-26). I read all of it. I do not redo it.
+- Rows 860-875 have landed since. In Phase 4 I grep their RESULT lines in D/FINISH.md and score the ideas against them.
+
+Remaining plan (one step per response, each appended before the next):
+
+R1. PHASE 3.2. Kernel / needs / opens for ideas 27-39.
+R2. PHASE 3.2 (second part). Ideas 40-52.
+R3. PHASE 3.3. Second-generation ideas G1-G8, with parents.
+R4. PHASE 3.3 (second part). G9-G16 or more, with parents. Phase 3 closes.
+R5. PHASE 4.0. Read the RESULT lines of rows 860-875 (grep, bounded). Append a short map.
+R6. PHASE 4a. Score ideas 1-26 against the five fact tests.
+R7. PHASE 4a. Score ideas 27-52.
+R8. PHASE 4a. Score the second generation. Name the top five.
+R9-R13. PHASE 4b. Top five: crux lemma, cost, first concrete attempt. One idea per response.
+R14-R17. PHASE 4c. Top two: a real proof attempt of the crux lemma, one stage per response; say exactly where it stops.
+R18. PHASE 5. Novelty: repo grep (origin/main and the lane branch), lane library grep, literature recall. One verdict per top-five idea.
+R19. Final line beginning "RESULT:".
+
+### 3.2 Ideas 27-39
+
+27. K: a quotient by an isometric action has curvature at least that of the total space plus O'Neill's term; the total space is a product of round spheres. N: the Gibbs weight is not the volume; the Hessian of the action is the trouble (pointwise fails above 1/8, row 812), and the orbit space has singular strata. O: for ONE block with a frozen exterior the orbit space is compact with bounded diameter, so a diameter-type gap bound (Li-Yau form) exists at every beta with a constant like exp(-osc); it is useless alone, but it is a volume-free O(1) constant for a block of fixed size. Pairs with 48.
+28. K: exact. The joint law of (conditioning layer, conditioned layer) is the planted ensemble, so the Nishimori identities hold with no hypothesis: two conditional replicas have the same joint law as (replica, planted truth). N: the identities control overlaps, not decay in time. O: every chi-square quantity of the lane (the seed, the twist deficit, the tube martingale of 45) is a TWO-REPLICA expectation with a shared exterior. On the Nishimori line the overlap of two replicas equals in law the overlap with the truth. So "E[M_d^2]" in 45 is the mean of a one-replica observable: the likelihood ratio evaluated at the truth. Planted models have no glassy phase; the only alternative to decay is alignment with the planted field.
+29. K: sum rules are exact and delta is the integral of a finite-size plaquette shift (row 754). N: a monotone in the box size. O: on a torus with exchange symmetry the first-order anisotropy response vanishes; the second-order one is a variance. That is the log-convexity in lengths already used in Lemma W. Opens only the virial form of 46.
+30. K: finite energy holds at every beta. N: Burton-Keane gives uniqueness, not decay; no sheet analogue is known. O: finite energy gives an O(1) bound on the tube second moment of 44 only for a tube of fixed lattice size (cost exp(c beta d^2 L^2)): not uniform. Dropped unless 44 wants a crude base case.
+31. K: the thin twisted torus is weakly coupled with no zero modes, gap c/n, and it already confines in the two long directions (centre vortices as fractional instantons). The account's first passage does not confine; this weak-side zone does. N: continuation in n from small n to n about xi; no monotonicity in n is known. O: a hand-off in the geometry instead of in the coupling. The step-scaling map of idea 8 acts on n. The object is a family of 2D models with Z_2 x Z_2 symmetry, where the flux half is a 2D statement (walls of a 2D model have line tension).
+32. K: at beta_s = 0 the model is solved; in the Hamiltonian limit T = exp(-H), H = (g^2/2) sum of Casimirs + (2/g^2) sum (1 - x_p) on a product of 3-spheres. N: a volume-uniform gap for a Schrodinger operator with non-convex potential; fundamental-gap theorems need convexity. O: the ground-state transform makes idea 3 a diffusion with drift grad log Omega; its Bakry-Emery tensor is Ric - Hess log Omega^2. The lost item is isotropy (ledger row 62), which Theorem S uses.
+33. K: a second handle exists in each family. N: uniformity when the handle is removed. O: the fundamental Higgs field is the cleanest: it keeps gauge invariance, reflection positivity and the transfer operator, and at large hopping kappa the seed holds at EVERY beta by a convergent expansion (Osterwalder-Seiler region; Fradkin-Shenker analyticity). So m(beta, kappa) starts positive on the whole line kappa = large. The crux becomes continuation in kappa to 0 at fixed beta. With 46 this is a Gronwall problem in kappa with the hopping content of the lightest state as the rate.
+34. K: in 3D the U(1) test does not bind, so abelian mechanisms are legal. N: 3D SU(2) at all beta is also open. O: hierarchical and Migdal-Kadanoff lattices are group-blind (they confine 4D U(1) too), so they test nothing about the group (Wall G). 3D SU(2) is a legal training ground for ideas 43-45, where the twist sheet is a line times a line and the U(1) control (Gopfert-Mack) is a theorem with a mechanism.
+35. K: the sum over twists is centre-blind; a wall state gives a log-convex overlap. N: Theorem R already says the flux weights are near 0 or 1. O: the thin twisted direction as an infrared regulator is idea 31. The all-twist ensemble is the SO(3) theory of idea 47.
+36. K: in a small twisted box the continuum theory is weakly coupled and finite-dimensional in effect. N: growing the box through L about 1/Lambda is the same band in continuum words; Theorem S wants its seed at 13 xi. O: the step-scaling function sigma(u) of Luscher-Weisz-Wolff is the standard nonperturbative object for exactly this band. A rigorous one-sided step-scaling INEQUALITY is the form idea 8 should take.
+37. K: electric-flux energies are tunnelling splittings in small volume (van Baal). N: at 13 xi the valley picture is gone. O: wants a monotonicity of flux energies in the box side; none is known. Agmon estimates give upper bounds on splittings, the wrong direction for the flux half but the right direction for an O(1) upper bound on a THIN-tube twist cost (44).
+38. K: given the SO(3) background the centre part is a ferromagnetic Z_2 gauge theory, so GKS holds there. N: PROVED here by recall of a known comparison, not new: GKS in K_p gives |<W(C)>_SU(2), beta| <= <sigma(C)>_(Z_2, beta) (Frohlich 1979; Mack-Petkova), an area law only below the Z_2 threshold 0.44, weaker than Theorem A. At beta 2.4 the typical K_p = (beta/2)|tr U_p| is near 1.5, far above 0.44: the Z_2 lift is frozen and thin vortices are absent. O: confirms 15: the centre lift matters only where |tr U_p| is small, i.e. on thick-vortex cores. No finite-volume criterion comes out.
+39. K: a conditional theorem that halves the crux is real progress if the hypothesis is one clean statement. N: soft fusion (16) or a state count (ledger row 52). O: 43-44 are the candidate mechanism for the halving; write the target as "glue half + tube stiffness => flux half".
+
+## Continued 2026-11-13 by Claude Opus 5.5 max
+
+Clone commit: db223519cd93bc813425a85db90615e710f2865d (2026-11-13T01:17:37-05:00, "docs(ym4d): Fable lanes 858, 859, 861-863 relaunched from saved files").
+Author of this continuation: Claude Opus 5.5 at max effort (not Fable). Phase 1 and Phase 2 ideas 1-52 above are from the earlier run.
+
+Remaining plan:
+1. Re-read this file (Phase 1 map, ideas 1-52). Check Phase 2 against its targets (>= 40 ideas, >= 8 per source a/b/c/d); top up if short.
+2. Read RESULT lines of FINISH rows 860-875 in the lane; append a short digest of what they change.
+3. Phase 3: kernels for each idea (batches), combinations, >= 15 second-generation ideas with parents named.
+4. Phase 4: score all ideas against the five fact tests (table); pick top five; crux lemma, cost, first attempt for each.
+5. Phase 4b: real proof attempt on the top idea, staged; say where it stops.
+6. Phase 4c: real proof attempt on the second idea, staged; say where it stops.
+7. Phase 5: novelty check (repo grep on origin/main and lane branch, lane library grep, literature recall) for the top five.
+8. Final RESULT line.
+
+Status after re-reading the whole file (Opus 5.5):
+- Phase 2 meets its targets: 52 ideas; source (a) 1-18 (18), (b) 19-30 (12), (c) 31-42 (12), (d) 43-52 (10). No top-up needed.
+- Phase 3.1 (ideas 1-26) and Phase 3.2 (ideas 27-39) are already written by the resumed run. I do not redo them.
+- Revised remaining plan: S1 Phase 3.2 ideas 40-52. S2 rows 860-875 digest. S3-S4 second generation G1-G16+. S5-S6 scoring table. S7 top five with crux lemmas. S8-S11 attempts on top two. S12 novelty. S13 RESULT.
+
+### 3.2 (second part) Ideas 40-52 (Opus 5.5)
+
+40. K: Theorem S is already an induction on scales after the seed; the propagation lemma (row 802) gives the right form f(n+1) <= C_n f_n^4 + tail. N: a base case at order one; reflection positivity and convexity alone give no recursion (W18). O: nothing beyond 8 and 36. It merges into the step-scaling idea (G-series below).
+41. K: the Wilson action is a sum of 4-linear forms in unit quaternions; given three links a plaquette is linear in the fourth (this is why each link's conditional law is von Mises-Fisher). So the model is a p = 4 spin model with O(4) spins on the plaquette hypergraph with a quaternion-product tensor. N: N = 4 is not large; vector-model tools are Dobrushin-type (Wall A). O: the p-spin view makes the planted/Nishimori structure of 28 and 52 natural (gauge symmetry = the planted symmetry).
+42. K: hyperbolic lattices have geometric gaps. N: no transfer operator with translation invariance, no reflection positivity of the usual kind; the gap is geometric, not dynamical. O: nothing on the crux. Dropped.
+
+43. K (PROVED here, a short exact calculation): let T, T' be tubes around two parallel twist sheets Sigma, Sigma' (same plane type, displaced transversally), separated so that no plaquette touches both and the outer boundary of each lies outside the other. Let A_T = Z_T(xi; Sigma flipped)/Z_T(xi), a function of the configuration xi on the outer boundary of T. Two parallel sheets cancel by a change of variables (flip the links of the transverse direction between them; I checked the plaquette count: only the two sheets change sign). The law of the configuration eta outside T u T' is w(eta) Z_T(eta) Z_T'(eta)/Z, and A_T, A_T' are functions of eta. So E_0[A_T A_T'] = Z^(double)/Z = 1 and E_0[A_T] = r. Hence 1 - r^2 = Cov(A_T, A_T') exactly, as the first run said.
+    BUT (PROVED here, same calculation): E_0[A_T A_T'] = 1 for EVERY separation. The covariance does not decay with distance. Reason: take the transverse direction of the displacement as time. Flipping one sheet of time-space plaquettes at one time is the insertion of the global centre operator C_hat (multiply the transverse links on one slice by -1); C_hat commutes with the transfer operator and has eigenvalue (-1)^e on the electric-flux sector e. So A_T acts as a conserved Z_2 charge, and 1 - r^2 = 4 p (1 - p), p = weight of the odd electric-flux sector: the variance of a conserved charge. A_T is positive, gauge invariant and centre-even as a function, yet it is not flux-neutral as an operator.
+    N: nothing; this kills the clustering mechanism. O: the identity is a clean way to SEE that the flux half is a statement about a conserved charge's variance, not about decay of correlations.
+44. K: the glue half does bound covariances of flux-neutral observables. N: A_T is not flux-neutral (43). The covariance is exactly the flux-sector term the first run hoped to treat as a remainder. So "flux half from glue half plus an O(1) tube stiffness" FAILS as stated (PROVED by 43). Phase 3.1 entries that lean on 43-44 as the mechanism (7, 8, 11, 13, 16, 37, 39) lose that mechanism; their kernels stand. Also E_0[A_T^2] >= E_0[A_T A_T'] = 1 whenever a separated parallel tube fits, so the "O(1) second moment" is at least 1 for free and carries no information.
+45. K: M_d = E[sheet ratio | outside the radius-d tube] is a reverse martingale (it is r times the likelihood ratio d mu^tw/d mu^0 on the outside sigma-algebra). N: by 43-44, E[M_d^2] >= 1 for every d below half the torus; it drops to r^2 only when the tube covers everything. So the chi-square of the outside never becomes small at intermediate d. The "log L radius" heuristic is wrong. O: none. Dropped.
+46. K: Hellmann-Feynman is exact: d log m / d beta = (plaquette excess of the lightest state over the vacuum)/m, and by the asymptotic-freedom form m ~ exp(-3 pi^2 beta/11) the ratio C(beta) stays bounded (about 2.7) at weak coupling. N: an a priori bound |d log m/d beta| <= C on [beta_0, beta_1], proved by a continuity argument while m > 0. This is the statement that the lattice beta function has no zero on the Wilson axis: (NOCRIT) in differential form. It is selective (U(1) at 1.01 and Q_8 at 1.15 violate it at their transitions). O: a clean differential coat for (NOCRIT). The virial split (electric minus magnetic content of the excitation) must be of order m in each part: an "equipartition for the excitation" that no tool supplies.
+47. K: (V) is exactly equidistribution of w_2 in H^2(T^4; Z_2) under the induced SO(3) theory (all 64 twisted partition functions nearly equal). N: at weak coupling thin Z_2 monopoles are frozen (52 below), so the flip mechanism must be thick, and a thick w_2 needs a multiscale definition. O: the two-state process along a transverse line is a good language for a step-scaling argument in the twisted-box size (G-series).
+48. K: true in a fixed-frame sense: with right-invariant frames at distinct vertices, gauge averaging at one vertex kills the mean mixed block, so the mean Hessian quadratic form for constant-frame tangent fields is c beta <x_p> |xi|^2 > 0. N: the fluctuation of the Hessian has the same scale and its operator norm grows with the volume; the integrated Bakry-Emery bound is equivalent to the gap (W23). O: nothing beyond Wall A.
+49. K: exact: r = E_cut[e^(-beta H)]/E_cut[e^(beta H)], H = sum of x_p over the sheet, in the ensemble with the sheet plaquettes removed. The law of H under the cut ensemble is not symmetric, and the asymmetry is the twist class. N: a near-symmetry of the cut ensemble that sends H to -H, i.e. a transport (Walls E, F). O: none new.
+50. K: spin truncation keeps every low Haar moment exact, unlike Q_8 and 2T; with c_j >= 0 reflection positivity survives. N: the truncated weight is signed as a function (the measure is not positive), so no probabilistic tool applies; at large beta the J-truncated model acts like Wilson at beta_eff <= C J^2. O: a family where "confinement at every beta" might be provable (effective coupling capped), but the removal of the cap J -> infinity is the same crossover. Kept as a test model only.
+51. K: the time-doubling defect IS the thermal sum: with lambda_0 = 1, log(Z(n)^2/Z(2n)) = 2 log(1 + S(n)) - log(1 + S(2n)) >= 0 (trace class, Z(2n) <= Z(n)^2). Doubling the four axes in turn gives Phi_2 = 8 D_1 + 4 D_2 + 2 D_3 + D_4, each D_k a thermal-sum defect on a slice of shape (2 ell)^(k-1) ell^(4-k). N: a bound on those defects is the seed. O: a restatement (Wall O). The chessboard sandwich adds nothing.
+52. K (PROVED here; it is the tower property, written in Nishimori form): write U_l = eps_l s(R_l) with R = the SO(3) projection and s a fixed section. Let m_C(R) = E[eps_C | R] be the conditional mean of the Z_2 holonomy around a closed loop C. Then <W(C)> = E_R[w_C(R) m_C(R)] with |w_C| <= 1, so |<W(C)>| <= E_R|m_C| <= (E_R m_C^2)^(1/2). Given R, the centre variables form a Z_2 gauge glass with couplings J_p = (beta/2) tr U_p (signed: frustrated where SO(3) monopoles sit), and the disorder law is weighted by the glass partition function: this IS the Nishimori line. The identity E[<sigma_C>_J] = E[<sigma_C>_J^2] = E_R[m_C^2] holds (two conditionally independent fibre samples U, V give sigma_C = eps_C(U) eps_C(V)).
+    N: at beta about 2.4 the mean coupling is beta <x_p> about 1.5, far above the Z_2 threshold 0.44: the thin centre lift is frozen, m_C is near +-1, and the bound is empty. Thick vortices live in the SO(3) part. The same decomposition exists for U(1) (z -> z^2) and for Q_8 and 2T (centre Z_2): group-blind, and it binds only where thin vortices are disordered (strong coupling, mean J below about 0.44 plus a frustration bonus). O: (i) a possible strong-coupling area-law range from the Nishimori Z_2 glass (where mean J < about 0.44: beta up to about 1.3 by J ~ beta^2/4; GUIDE, not checked, and not on the crux); (ii) the Nishimori identity E<sigma> = E<sigma^2> is exact and might feed a two-replica argument at a BLOCKED scale, if a blocking existed under which the coarse centre fibre is an exact mixture variable. No such exact blocking is known (Wall F).
+
+Settling verdict on 40-52: two exact identities came out (43: the tube covariance is a conserved-charge variance, separation-independent; 52: Wilson loop bounded by the RMS conditional centre holonomy given SO(3), Nishimori form). The first is a NEGATIVE for the 43-44 mechanism. The second is group-blind and thin-vortex limited.
+
+## 3.R Rows 850-875 since the Phase 1 map (READ `D/FINISH.md` L927-952, RESULT text only; I re-checked no proof)
+
+- Rows 850, 852, 854, 856, 857 (astra xhigh checks): hand-off HO holds after correction, EXIT OPEN (850); literal (AN1) is a worst-case exterior bound (852); spin-5/2 filter holds after correction, "largest at 5/2" fails (854); Theorem BAD holds, S1 OPEN, Lemma PE missing (856); 4 G_3 obstruction holds given FSS, tau_* = 1/4 false, no area law past 2/3 (857). Literature 851, 853, 855: no supplier.
+- Row 860 (Fable, checked by 864): Theorem HS (high spin is rare through one transfer step) PROVED and checked, but the wrong target: **(LS) equals (E17) up to e^(-c#E)**, and **the odd sector P_- is exactly the event that the half-integer Z_2-cycle of a slice has odd homology (omega) class.** HS and Lemma OS hold verbatim for U(1), Q_8, 2T, 2O, 2I. GUIDE: spin-2 density 2e-5 at beta 2.3. Carrying statement (OPEN): the dense half-integer Z_2-cycle has trivial class except with probability C a^p eta_*^(a/2); its proof must fail for U(1), frozen 2T and Z_2, and work on a percolating set. Check 864: U(1) does NOT satisfy the filter bound on Sym^5 V, so the filter is SU(2)-specific and not ruled out as an input to (LS).
+- Rows 865/868: conditional complete-account port (SD-cyl-CA); (E17-phys-CA) implies (FQ) with a cutoff-independent constant. Checked. (E17-phys-CA) OPEN.
+- Rows 866/870: (E17) is exactly the slice-homology parity problem. HA (relative homological analyticity of the centre-odd marker) implies it; HA is stronger, fails for Z_2 at beta 5/2 and in a background-uniform SU(2) version. An environment-uniform conditional bound is FALSE (Z_2 Peierls test, beta > 2.191).
+- Rows 867/869: Lemma QS (deleting one plaquette's weight makes its four links conditionally independent): e_(1/2) <= 0.5806 at beta 2.3; P(spin >= 2) <= 0.016. **Prop TL: the parity of any edge set is a 't Hooft loop, E[(-1)^(N_h(R))] = Z(flip R)/Z**; the parity statement is the wrapping 't Hooft surface. Separation SEP(b) certified 0.0359. GUIDE e_F (fundamental-class edge fraction in one slice): 0.267 SU(2) at 2.3; 0.40-0.75 U(1) Coulomb; 0.93 frozen 2T; 0.96 frozen Q_8 (check 869: the N_t = 3 sampler rows are invalid; I treat all these e_F numbers as unverified GUIDE). Fact test T3 (short periods) NOT established.
+- Rows 871/874: interpolation mu_(k,lambda) (plaquette weight 1 + lambda eta t_p); deficit F(1) = integral of the response R(lambda); (C1) near lambda = 0 proved; (C2) restates (E17) or is stronger.
+- Rows 872/873: Prop EXP (exact): d log Tr(P L(s)^t)/d log s = t x (one-slice count of high-spin edges). **EXC** (integral of Delta(s) ds/s >= c_0, Delta = Cov(N_hi, 1_odd)/p) implies (E17). The negative verdict of 872 FAILS on check; EXC OPEN. Row 875 (astra max) is attacking EXC now; row 876 is a separate fresh Fable brainstorm. I do not coordinate with either.
+
+What this changes for scoring. (1) The flux half now has one exact form: the odd homology class of the half-integer slice cycle, equivalently the wrapping 't Hooft surface (TL), equivalently the electric-flux parity. Idea 43's charge-variance identity is the same object seen from the transfer side. (2) A tool must act on a DENSE, percolating cycle (no Peierls count) and must fail for U(1) Coulomb, frozen Q_8/2T and Z_2. (3) The filter route (EXC) is live and owned by row 875; I score my ideas against it, not on it. (4) Local one-slice numbers can separate SU(2) from the binding groups (SEP(b), GUIDE e_F), but a local number alone does not fix a global class.
+
+## 3.3 Second-generation ideas (Opus 5.5). Parents in brackets. ARGUED unless marked.
+
+G1 [43, 44, 13, TL of row 867]. **The flux half is a conserved-charge variance.** 1 - r^2 = Var(C_hat) = 4p(1-p) at every separation (PROVED in 3.2). So no clustering estimate of flux-neutral observables can bound it. A tool must make the electric-flux parity nearly deterministic in the thermal state. Kept as a filter on every other idea.
+
+G2 [6, 49, 871]. **Gukov-Witten defect family = characteristic function of the cut.** Sheet weights f_phi(U) = integral of exp((beta/2) tr(U g h_phi g^-1)) dg are positive class functions; f_phi = sum_j c_j' chi_j(U) chi_j(h_phi) (PROVED, standard Haar formula). In the transfer picture, Z(phi)/Z = E_nu[prod over cut edges e of chi_hat_(j_e)(phi)], chi_hat_j = chi_j/d_j, nu the one-slice law. phi = 2 pi gives E_nu[(-1)^(N_h)] = r (Prop TL); phi = pi kills every half-integer crossing, so Z_odd(pi) = 0 exactly. Small phi probes the Casimir content of the cut. A Casimir-weighted cousin of EXC (row 872); not a new mechanism.
+
+G3 [30, 23, 860, 867 GUIDE]. **Homological percolation of the half-integer support.** If the support of the slice cycle gamma is subcritical, gamma cannot wrap. In a 3D slice the 1-cycle threshold is bond percolation, 0.2488 (i.i.d.); GUIDE e_F = 0.267 for SU(2) at 2.3 is just above it. The 4D version (2-cycles, self-dual threshold 1/2) needs a positive 4D measure, and the spin foam is signed. Plain domination FAILS (by a hair, GUIDE). Opens G4.
+
+G4 [G3, 24, 28, 52; local decoders of topological codes]. **Confinement as successful local decoding of the electric loop gas.** The class of gamma is invariant under adding local boundaries. A deconfined finite-group vacuum is a loop condensate (toric-code ground state: all closed loops, every class with weight near 1/2); a confined vacuum is a dilute gas of short loops; U(1) Coulomb has light flux sectors (twist free energy about beta pi^2/2, so p near 1/2). So (E17) = "a local decoder succeeds on gamma". Crux: a local bad-block event of small chessboard norm such that a nontrivial class forces a wrapping cluster of bad blocks. LEADING CANDIDATE.
+
+G5 [15, 28, 38, 47, 52]. **Nishimori decoding of the centre class from SO(3) data.** Exact: r = E_R[r_Z2(J(R))], the Z_2 glass being on its Nishimori line. GUIDE estimate: at beta 2.4 the thin glass has mean coupling about 1.5 and effective error rate about 0.05, below the 4D random-plaquette Nishimori threshold (about 0.11, recalled), so the THIN centre class is decodable there. The twist is absorbed thickly, in w_2 of the SO(3) field (idea 47). Thin form FAILS at order one (ARGUED).
+
+G6 [TL, 13, 11, 7]. **Perimeter-law 't Hooft loops closed up into the wrapping surface.** Lower bounds on disk 't Hooft loops are transport problems (Wall F). Variant, not new.
+
+G7 [31, 35, 36, 8, 47; S1 of row 842]. **Adiabatic continuity in the geometry.** Start on the thin twisted torus (Z/n)^2 x (Z/M)^2 where SU(2) is weakly coupled, has no zero modes and already confines (fractional-instanton centre vortices, action pi^2 beta independent of n). Grow n. U(1) fails (four zero modes); Q_8 fails (its thin vortex costs about beta n^2, so its 2D string tension dies as n grows). Crux (CONT-n): no transition in n, e.g. n^2 sigma(n) non-decreasing.
+
+G8 [46, 29, 33]. **Hellmann-Feynman continuation = bounded lattice beta function.** d log m/d beta = (action excess of the lightest state)/m exactly; the mass sum rule (trace anomaly) says this ratio is 2g/beta(g) in the continuum. Crux (NOCRIT-HF): |d log m_L/d beta| <= C uniformly in L on [beta_0, beta_1]. Fails for U(1) and Q_8 at their transitions (good); no tool.
+
+G9 [3, 20, 27, 32, 48, 11; Feynman 1981, Singer]. **Bakry-Emery for the vacuum diffusion on the orbit space.** In the Hamiltonian limit the ground-state transform gives a diffusion with drift grad log Omega^2 whose gap is the mass gap. A lower bound Ric(orbit) + O'Neill - Hess log Omega^2 >= kappa would give the gap. U(1): flat orbit space, no O'Neill term (fails, good). Finite groups: not formulable. Crux: semi-log-concavity of the vacuum. Known heuristic (Feynman), known hard.
+
+G10 [35, 37, G1]. **Magnetic flux energy as a ground-state splitting.** With time along the sheet, -log r is about L_1 (E_0^tw - E_0). A variational upper bound needs a twisted trial state; thin trials cost order L_2 (a 't Hooft line); thick trials are Wall F. Variant.
+
+G11 [22]. **2D O(4) as the testbed** for G4 and G7: there the "flux half" is the mass gap itself (3.1, item 22). Kept as a check, not a route.
+
+G12 [52, 28]. **Averaged Griffiths inequalities on the Nishimori line** (Morita-Nishimori-Contucci, recalled) to compare the SU(2)-induced glass with a reference glass. The SU(2) disorder laws for different beta are not ordered. Likely FAILS.
+
+G13 [50, 46]. **Continuation in the spin-truncation level J.** Truncated weights are signed. Dropped.
+
+G14 [4, 10, 45]. **Stochastic localization along plaquette tilts** (Chen-Eldan). Needs integrated covariance bounds along the path; plaquette covariances are order one at order one. Weak.
+
+G15 [24; Bravyi-Hastings-Michalakis]. **Stability of the strong-coupling (frustration-free, gapped) electric Hamiltonian.** Gives a gap only for small magnetic perturbation: strong coupling. Not order one.
+
+G16 [G4, 5 chessboard, Theorem BAD of row 842]. **Chessboard as "local stochastic noise".** Reflection positivity gives P(all blocks in S bad) <= z^|S| for any local event, at every beta: exactly the noise model under which fault-tolerance thresholds are proved. So decoder-threshold arguments apply to the one-slice law with no independence. This is the probabilistic half of G4. (Chessboard bounds hold for signed local insertions too, which is what spin-label events are.)
+
+G17 [G4, G1, 44]. **Halving via the decoder.** In G4 the class needs two inputs: a local density of non-decodable blocks (SU(2)-selective; GUIDE e_F separates 0.267 from 0.93-0.96) and a decorrelation of the one-slice law (chessboard, no glue half needed). This is the "flux half from local data" that idea 44 wanted, with the conserved-charge obstruction of G1 avoided: the decoder looks at the cycle's geometry, not at correlations of flux-neutral observables.
+
+G18 [47, 19, 21]. **Equidistribution of w_2 by monopole crossings.** Thin monopoles freeze at large beta; the thick w_2 needs a multiscale definition. Restates (V) at order one.
+
+G19 [3, LC, 12, 21]. **Coupling of two copies of the canonical (Doob) chain using small commutators.** Discrepancies removed in many small SU(2)-only steps (Hormander-type). Needs grad log Omega. Weak at present.
+
+G20 [G7, G4, 31]. **Decoder on the thin twisted torus.** On (Z/n)^2 x (Z/M)^2 the slice is 2D-like in the long directions; loop-gas decoding there is a 2D problem where the needed percolation statements are planar (crossing estimates, RSW-type). Combines the weak-side zone of G7 with the mechanism of G4.
+
+G21 [G2, G4]. **Casimir-weighted bad events.** Use chi_hat_j(phi) at small phi as a soft indicator of crossing strands: E_nu[prod chi_hat] decays with the cut's Casimir content, a positive local quantity whose chessboard norm may be easier to bound than a hard decoder event.
+
+Phase 3 count: G1-G21 (21 second-generation ideas). "Dumb" ones that turned into something: 30 (soft percolation) and 23 (isoperimetry) led to G3-G4; 24 (topological order in reverse) led to G4's loop-condensate reading; 28 (Nishimori) gave the exact tower identity of 52 and G5. PHASE 3 complete.
+
+## 4. PHASE 4: converge (Opus 5.5)
+
+### 4a. Scores against the five fact tests
+
+T1 = fails for U(1) Coulomb. T2 = uses what Q_8/2T lack, or says why they do not bind. T3 = no worst-case single-site/vertex-block bound, no background-uniform layer bound above 1.0109. T4 = reaches order one, or reduces the crux to a statement a known tool reaches. T5 = Lean-formalizable. P pass, F fail, ? open. Score = number of P (? counts 1/2). Reasons only where they decide.
+
+First generation:
+| idea | T1 | T2 | T3 | T4 | T5 | score | deciding reason |
+|---|---|---|---|---|---|---|---|
+| 1 frustration bootstrap | P | P | P | F | P | 4 | needs the nonlinear O(4)-in-SO(4) diamagnetic inequality (row 834 OPEN) with a controlled loss per scale |
+| 2 spectral edge | ? | ? | F | F | P | 2 | one-slab conditioning ends near 0.9 even for Haar backgrounds |
+| 3 canonical chain | ? | ? | P | F | P | 3 | needs grad log Omega |
+| 4 plaquette-tilt localization | ? | F | P | F | P | 2.5 | covariance along the path is order one |
+| 5 chessboard for typical backgrounds | F | F | P | ? | P | 2.5 | group-blind tool; becomes G16 |
+| 6 class-function defect | ? | P | P | F | P | 3.5 | becomes G2 (EXC/HA variant) |
+| 7 two commuting rotations | ? | ? | P | F | P | 3 | field-independent maps cost an area (PROVED in 3.1) |
+| 8 twist as running coupling | P | P | P | F | P | 4 | Phi(x) < x unknown at order one |
+| 9 gradient-flow transport | ? | ? | P | F | ? | 2.5 | Wall F |
+| 10 Polchinski transport | ? | ? | P | F | ? | 2.5 | Wall F |
+| 11 Nielsen-Olesen mode | P | P | P | F | ? | 3.5 | no step from saddle to free energy |
+| 12 non-amenability | P | P | ? | F | ? | 3 | no place to use it |
+| 13 intertwiner | ? | ? | P | F | P | 3 | G1: the twist operator is a conserved charge |
+| 14 rough-sheet expansion | ? | F | P | F | P | 2.5 | signs at roughening |
+| 15 SO(3) x Z_2 | F | F | P | F | P | 2 | thin lift frozen at order one |
+| 16 soft fusion | ? | ? | P | F | P | 3 | (F-h) at order one = vortex area law |
+| 17 end the flow on Wilson | F | F | P | F | P | 2 | zone radii 0.03-0.14 |
+| 18 Q_8 Peierls rung | n/a | P | P | F | P | 3 | large beta only |
+| 19 Furstenberg | ? | ? | P | F | ? | 2.5 | quenched, not moment, exponents |
+| 20 Witten Laplacian | ? | ? | P | F | P | 3 | one covariant particle, no bound |
+| 21 Hormander/Solovay-Kitaev | P | P | ? | F | ? | 3 | no use found |
+| 22 2D O(4) sibling | - | - | - | - | - | test | testbed |
+| 23 trees/Dehn | F | F | P | F | P | 2 | not SU(2) |
+| 24 topological order in reverse | ? | ? | P | F | P | 3 | becomes G4 |
+| 25 Weitz tree | F | F | ? | F | P | 1.5 | no gauge analogue |
+| 26 just count | - | - | - | - | - | GUIDE | guide only |
+| 27 orbit-space curvature | P | P | ? | F | P | 3.5 | becomes G9 |
+| 28 Nishimori | F | F | P | F | P | 2 | group-blind |
+| 29 exact flux law | ? | ? | P | F | P | 3 | restates |
+| 30 soft percolation | ? | ? | P | F | P | 3 | becomes G3/G4 |
+| 31 continue in geometry | P | P | P | ? | P | 4.5 | becomes G7 |
+| 32 anisotropic action | ? | ? | P | F | P | 3 | loses isotropy (Theorem S needs it) |
+| 33 Higgs continuation | P | P | P | F | P | 4 | NOCRIT in kappa |
+| 34 other dimensions | F | F | P | F | P | 2 | 3D open too; hierarchical lattices group-blind |
+| 35 boundary conditions | ? | ? | P | F | P | 3 | neutral |
+| 36 femto-universe | P | P | P | ? | P | 4.5 | merges into G7 |
+| 37 Hamiltonian tunnelling | ? | ? | P | F | ? | 2.5 | wrong direction |
+| 38 Simon-Lieb given SO(3) | F | F | P | F | P | 2 | thin, 0.44 threshold |
+| 39 conditional halving | ? | ? | P | ? | P | 3.5 | becomes G17 |
+| 40 no-flow induction | ? | ? | P | F | P | 3 | base case |
+| 41 S^3 vector model | F | ? | F | F | P | 1.5 | Dobrushin-type |
+| 42 hyperbolic lattice | F | F | ? | F | ? | 1 | dropped |
+| 43 tube conditioning | - | - | - | F | P | NEG | conserved charge (PROVED) |
+| 44 flux from glue by clustering | - | - | - | F | P | NEG | FAILS (PROVED) |
+| 45 tube martingale | - | - | - | F | P | NEG | E[M_d^2] >= 1 |
+| 46 Hellmann-Feynman | P | P | P | F | P | 4 | becomes G8 |
+| 47 w_2 equidistribution | ? | ? | P | F | P | 3 | restates (V) |
+| 48 mean Hessian | ? | ? | P | F | P | 3 | W23 |
+| 49 cut sheet | ? | ? | P | F | P | 3 | restates |
+| 50 spin truncation | ? | P | P | F | ? | 3 | signed weights |
+| 51 one more block step | ? | ? | P | F | P | 3 | restates |
+| 52 Nishimori Simon-Lieb | F | F | P | F | P | 2 | thin, frozen at order one |
+
+Second generation:
+| idea | T1 | T2 | T3 | T4 | T5 | score | deciding reason |
+|---|---|---|---|---|---|---|---|
+| G1 charge variance | - | - | - | - | P | filter | a constraint on every route |
+| G2 Gukov-Witten cut function | ? | P | P | F | P | 3.5 | EXC/HA variant |
+| G3 homological percolation | P | P | P | F | P | 4 | fails by a hair (GUIDE 0.267 vs 0.2488) |
+| G4 decoder + chessboard | P | P | P | ? | P | 4.5 | reduces (E17) to one bulk chessboard number z_k at one block scale |
+| G5 Nishimori decoding (thin) | F | F | P | F | P | 2 | thin class decodable at 2.4 (GUIDE) |
+| G6 perimeter 't Hooft loops | ? | ? | P | F | P | 3 | Wall F |
+| G7 continuity in geometry | P | P | P | ? | P | 4.5 | weak end confining and controlled; CONT-n open |
+| G8 bounded beta function | P | P | P | F | P | 4 | NOCRIT-HF, no tool |
+| G9 vacuum Bakry-Emery | P | P | ? | F | P | 3.5 | semi-log-concavity of Omega |
+| G10 magnetic splitting | ? | ? | P | F | P | 3 | Wall F |
+| G11 2D O(4) testbed | - | - | - | - | - | test | |
+| G12 Nishimori GKS | F | F | P | F | P | 2 | disorder laws not ordered |
+| G13 truncation continuation | ? | P | P | F | ? | 3 | signed |
+| G14 stochastic localization | ? | F | P | F | P | 2.5 | |
+| G15 BHM stability | F | F | P | F | P | 2 | strong coupling |
+| G16 chessboard noise model | - | - | P | - | P | tool | part of G4 |
+| G17 halving via decoder | P | P | P | ? | P | 4.5 | = G4 seen as a halving |
+| G18 monopole crossings | ? | ? | P | F | P | 3 | restates (V) |
+| G19 Doob coupling with (LC) | P | P | ? | F | ? | 3 | needs grad log Omega |
+| G20 decoder on thin twisted torus | P | P | P | ? | P | 4.5 | planar/quasi-1D tools at fixed n; uniformity in n = CONT-n |
+| G21 Casimir soft bad events | ? | P | P | ? | P | 4 | soft version of G4's event |
+
+Top five (score, then novelty, then attemptability): **(1) G4/G16/G17 decoder + chessboard; (2) G7/G20 continuity in geometry with a decoder at fixed n; (3) G8 bounded lattice beta function; (4) idea 1 frustration bootstrap; (5) G9 vacuum Bakry-Emery.** G3 and G21 fold into (1); 36 and 31 into (2); 46 and 33 into (3).
+
+### 4b. The top five: crux lemma, cost, first concrete attempt
+
+Common notation. nu = the one-slice law of spin networks on the slice Lambda = (Z/L)^3 (Lemma OS of row 860: a positive measure, a Wilson expectation). gamma = the set of half-integer edges, a Z_2 1-cycle (SU(2) fusion keeps the parity at each vertex). omega(gamma) in H_1(T^3; Z_2). By row 860/864 and Prop TL (867/869), the odd-sector weight is P_nu(omega(gamma) != 0) up to the stated factors, and (E17) asks it below C a^p eta_*^(a/2).
+
+**(1) Decoder + chessboard (G4, G16, G17, G21).**
+- Crux lemma (DEC_k). There is a local bad-block event B_b (block side k, determined by gamma in the 3k-neighbourhood of b) with two properties. (TOP, deterministic) If omega(gamma) != 0, the bad blocks contain a *-connected cluster that wraps the torus. (CHESS, probabilistic) Its chessboard norm z_k = lim_N nu_N(B_b for all b)^(1/N) satisfies z_k <= (e c_3)^(-27), with c_3 the *-animal growth constant of Z^3 (c_3 <= 26 e) and the exponent 27 from the sublattice split. Then P_nu(omega != 0) <= (L/k)^3 sum over n >= L/k of (e c_3 z_k^(1/27))^n, exponentially small in L.
+- Cost. Reflection positivity of the BARE Wilson measure in the three spatial directions (standard), so no RP of Balaban's effective action is needed: blocks of physical size are k = k_phys/a lattice blocks of the bare measure. Lemma OS and Prop TL (READ rows 860, 867). The consumer (E17-phys) -> (FQ) (rows 844/848, 865/868). Nothing from the account beyond what (E17-phys) already uses.
+- First attempt. B_b = "the minimal-area relative filling of gamma in N(b) has a plaquette within distance k of b that is joined, inside the filling, to the boundary of N(b)". Prove (TOP) by patching minimal fillings. Then bound z_k (4c below).
+
+**(2) Continuity in the geometry (G7, G20, 31, 36).**
+- Crux lemma (MON). On T_(n,M) = (Z/n)^2 x (Z/M)^2 with background twist n_12 = 1, let F_v(n) = -log(Z(n_12, n_34)/Z(n_12, 0)), uniformly in M large. Then F_v(n) is non-increasing in n up to a summable error (F_v(2n) <= F_v(n) + eps_n), on the order-one window of bare beta, and F_v(n) -> 0 along n -> infinity at the rate the seed needs. At small n, F_v(n) is about pi^2 beta (the charge-1/2 fractional instanton, since Pf(n) = n_12 n_34 = 1; recalled semiclassics).
+- Cost. S1 (row 842: weak-coupling gap c/n on the twisted thin torus; Lemma PE missing, check 856); Theorem BAD and CH-D (checked); semiclassics (Tanizaki-Unsal; recalled, not rigorous); a hand-off at n = M (the twisted cube) to (SEED-FP), plus the glue half.
+- First attempt. Fixed-n confinement in the long plane at every beta (a 2D vortex argument with the trivial bound F_v(n) <= 2 beta n^2), then test whether reflection positivity in a short direction gives any inequality between F_v(n) and F_v(2n) (4d below).
+
+**(3) Bounded lattice beta function (G8, 46, 33).**
+- Crux lemma (NOCRIT-HF). There is C with |d log m_L(beta)/d beta| <= C for every L and every beta in [1/4, beta_1], m_L the even-sector gap of the transfer operator on the L^3 slice. With Theorem F (gap for beta < 1/3, checked) Gronwall gives m_L(beta) >= m_* e^(-C(beta - 1/4)) uniformly in L: the glue half on the Wilson axis. The flux half needs the same for the electric flux energy per unit length.
+- Cost. Hellmann-Feynman for the transfer operator (exact: T(beta) analytic, top eigenvalue of each sector simple by Perron-Frobenius). In the Hamiltonian limit beta d_beta E_n = V_n - K_n, so d log m/d beta = (Delta V - Delta K)/(beta m): the crux is an equipartition of the lightest excitation, |Delta V - Delta K| <= C beta m.
+- First attempt. Prove the bound at strong coupling by cluster expansion; locate the first beta where the a priori argument needs the answer (it will be where Delta V and Delta K are not separately controlled). Not attempted further here.
+
+**(4) Frustration bootstrap (idea 1).**
+- Crux lemma (DIA). For O(4) spins on a layer coupled through an SO(4) background A, the transported two-point function obeys |<s_x . P_xy(A) s_y>_A| <= G_eff(x, y; A) with an effective mass that grows with the disorder of A's Wilson loops at the scale |x - y|. With an area law at scale l as input, the output is an area law at scale 2l with a controlled constant.
+- Cost. Theorem A, A2 and the slab reduction (rows 825, 834, 857); (SE) OPEN; Prop TB2 says background-UNIFORM versions die at 4 G_3 = 1.0109, so DIA must use the background's disorder, not its worst case.
+- First attempt. The linear (Gaussian) model: the covariant adjacency norm of a background with decaying loops (Kesten-McKay gives 2 sqrt 5 against 6 for Haar backgrounds on degree 6). The nonlinear step is the lane's named open item.
+
+**(5) Vacuum Bakry-Emery on the orbit space (G9; Feynman 1981, Singer).**
+- Crux lemma (VBE). In the Hamiltonian limit, with Omega the ground state on the orbit space B = (S^3)^E / G, Ric_B - 2 Hess log Omega >= kappa uniformly in the volume (integrated Gamma_2 form suffices).
+- Cost. Lemma D1 (gap 3 on S^3 for every tilt), the SU(2)-only mixed-Hessian reserve 9/8 (row 814/824), O'Neill's formula (recalled). U(1) has a flat orbit space (fails, good); finite groups have no Riemannian structure.
+- First attempt. Compute the O'Neill term for the lattice vertex action and compare with the 9/8 reserve; the step that needs Hess log Omega is the stop.
+
+### 4c. Attempt on (1), the decoder route (Opus 5.5)
+
+**Stage A1: a single-scale decoder cannot work on a dense cycle (PROVED, elementary).** Take gamma_0 null-homologous and dense, and a straight wrapping line l. In every block, gamma_0 + l and gamma_0 + l + l' (l' a parallel copy far away, class zero) agree. So no event of one block can certify the class; the class must be read from DISAGREEMENTS between neighbouring local fillings. Relative fillings always exist in a cube (H_1(B^3, S^2; Z_2) = 0), so "fillable" is empty as a test; a metric test ("the filling stays near gamma") is empty when gamma is dense. Also: adding a strip S to a filling D changes the area by |S| - 2|S n D|, so where the minimal filling has density near 1/2 a strip costs nothing. This is the loop-condensate regime of frozen finite groups (and of the toric-code ground state), and it is exactly where decoding must fail. ARGUED reading: decodability of the slice cycle is a homological-percolation property of its minimal filling, not of the cycle's support.
+
+**Stage A2: the hierarchical decoder lemma (TOP_j) (ARGUED; a design statement with a sketch).** Blocks of level j have side k_0 3^j. Level-0 "clean" for a block b: all minimal relative fillings of gamma in the 3-fold neighbourhood N(b) agree on the core b, modulo boundaries of 3-chains of diameter at most k_0/4, and agree in the same sense with those of each neighbour on the shared cores (a reflection-covariant event; no tie-breaking rule). Level j+1 clean: at most one *-cluster of unclean level-j sub-blocks, and that cluster has diameter at most one level-j block. (TOP_j): if gamma is not null-homologous, the top-level block (the whole torus) is unclean. Sketch: in a level-(j+1) block with one small unclean cluster, the clean sub-blocks' local fillings patch (Mayer-Vietoris on a cover by boxes; the patching cocycle takes values in H_3 of small balls, which is zero) to a filling of gamma on the block minus a ball around the cluster; gamma inside the ball plus the boundary of the patched filling is a cycle in a ball, hence a boundary. So a nontrivial class forces, at every level, at least two separated unclean sub-blocks. The level-0 definition and the patching need full care; I have not written them out. This is the topological half of the crux and is OPEN in detail.
+
+**Stage B: the chessboard recursion (PROVED, given TOP_j and reflection positivity).** Reflection positivity of the bare Wilson measure in the three spatial directions (periodic torus, side a multiple of 2 k_0 3^J) gives the chessboard estimate for spin-label events: a label projector at one time is a signed insertion of the time-space plaquette weight d_j c_j chi_j(U_p)/e^(beta x_p) (Lemma OS), and the Frohlich-Israel-Lieb-Simon estimate holds for signed local insertions. For a reflection-covariant event E of one level-j block let z_j = lim_N P(E in every block)^(1/N). If "unclean at level j+1" implies "two separated unclean level-j sub-blocks" (TOP_j), then P(every level-(j+1) block unclean) <= (number of pair choices)^(N_(j+1)) z_j^(2 N_(j+1)) after the sublattice split, so
+  z_(j+1) <= C_3 z_j^2, with C_3 an explicit combinatorial constant (pairs among 27 sub-blocks, times the sublattice loss).
+Hence z_j <= (C_3 z_0)^(2^j)/C_3, and P(omega(gamma) != 0) <= z_J-type bound, doubly exponential in the number of levels, once C_3 z_0 < 1. The recursion is group-blind: it holds verbatim for U(1), Q_8, 2T, Z_2.
+
+**Stage C: the seed, and where the attempt stops.** Everything rests on (SEED-DEC): C_3 z_0 < 1 for one level-0 block size, where z_0 is the chessboard norm of "unclean at level 0".
+- Fact tests at the seed (GUIDE, unverified e_F of row 867): frozen Q_8 and 2T have a dense label field (e_F 0.96, 0.93), a loop condensate, so z_0 is near 1 and the seed fails, as it must. U(1) Coulomb (e_F 0.40-0.75) has light electric flux (twist free energy about beta pi^2/2), so long strands are cheap and the seed fails, as it must. SU(2) at 2.3 has e_F 0.267: the only one of the four that might pass.
+- The seed cannot sit at the bare scale: at weak bare coupling every kinetic coefficient c_j(beta) tends to 1, the labels are dense like a frozen group, and z_0 is near 1 (ARGUED). The recursion cannot lower z_j while C_3 z_j > 1. So z_j must fall below 1/C_3 by itself inside the order-one band, at blocks of physical size a few xi, uniformly in the cutoff. This is the same place as (SEED-FP) and Wall M (W36). The attempt STOPS here.
+- What is gained against (SEED-FP): the seed is a local, reflection-positive, SU(2)-selective number (a chessboard norm of a block event at a few xi, threshold 1/C_3), instead of a thermal sum below 1/5041 on a box of 13-20 xi; and only the bare measure's RP is used, at every cutoff. What is lost: a chessboard norm is a bulk free energy of a constrained periodic ensemble, not a probability, and nothing proved bounds such a norm at order one (Theorem BAD does it only at large beta for its own events; Lemma QS-type local decoupling gives worst-case bounds, Wall A). Also only the flux half is treated; the glue half still needs Theorem S's seed or its own route.
+- Why the seed is not circular (ARGUED): z_0 concerns long strands inside one block of a few xi in a periodic reflected array, not a wrapping class; but if one bounds z_0 by Fourier-transforming over twists (Prop TL), it becomes multi-twist deficits on sub-tori, i.e. (E17) at a smaller scale. A proof of the seed must therefore use local structure (the filling geometry), not the 't Hooft duality. OPEN.
+
+### 4d. Attempt on (2), continuity in the geometry (Opus 5.5)
+
+Setting: T_(n,M) = (Z/n)^2 x (Z/M)^2, background twist n_12 = 1 (flip the (1,2)-plaquettes at one (x_1, x_2), all (x_3, x_4)), probe twist n_34 (flip the (3,4)-plaquettes at one (x_3, x_4), all (x_1, x_2): n^2 plaquettes). r(n, M) = Z(n_12, n_34)/Z(n_12, 0).
+
+**Stage 1a (PROVED).** 0 <= -log r(n, M) <= 2 beta n^2 for every n, M, beta. Upper: r = E[exp(-2 beta sum over the n^2 probe plaquettes of x_p)] >= e^(-2 beta n^2), since x_p <= 1. Lower: take x_3 as time; the probe twist is a time-space twist, i.e. the insertion of the global centre operator C_hat_4 in the slice (Z/n)^2 x (Z/M) carrying the magnetic background n_12; C_hat_4 commutes with the positive transfer operator T_tw12 and has eigenvalues +-1, so Z(n_12, n_34) = tr(C_hat_4 T_tw12^M) <= tr(T_tw12^M). Also 1 - r = 2 P(e_4 odd): the probe deficit is the odd electric-flux weight along the long direction 4 (as in G1).
+
+**Stage 1b (correction to my own crux, PROVED by 1a's reading).** The crux (MON) as I wrote it in 4b is mis-stated. At fixed n, if the long plane confines with tension sigma(n) > 0, then -log r(n, M) -> 0 as M grows (area law in the (3,4)-plane), for every n. So "-log r uniformly in M large" is zero wherever the long plane confines and is not the right monotone. The right quantity is the dimensionless thin-torus tension Sigma(n) = n^2 sigma(n), and the hand-off is: at the cube n = M = ell, 1 - r is about e^(-Sigma) up to polynomial factors, so the seed's flux half on the twisted cube needs Sigma(ell) above about log 5041 + O(log ell).
+  Corrected crux (MON'): there are delta > 0 and Sigma_0 >= 10 such that Sigma(2n) >= min((1 + delta) Sigma(n), Sigma_0) for all n in the order-one window, uniformly in M >= n. Fact tests (ARGUED): Q_8 above 1.15 has Sigma(n) <= n^2 e^(-c beta n^2) (thin vortices only), decreasing: MON' fails, good. U(1) on the thin torus is 2D Coulomb in the long plane with Sigma(n) about a constant times g^2: MON' fails (no growth), good. SU(2): semiclassically Sigma(n) grows like (n Lambda)^(11/3) at small n (charge-1/2 fractional instantons, action pi^2 beta at the bare scale, running coupling at scale n): MON' is the expected behaviour.
+
+**Stage 2 (PROVED, a standard fact used as an obstruction).** Reflection positivity in a SMALL direction fails across the background twist column: a crossing plaquette with flipped weight e^(-beta x_p) has character coefficients (-1)^(2j) c_j, not all >= 0, so the crossing term is not of positive type. Reflection positivity in the long directions 3, 4 holds (no twisted plaquette crosses those planes). So no chessboard or Cauchy-Schwarz comparison between n and 2n in the small directions is available as stated. (Twist-eater boundary conditions move the twist into transition functions but do not make a small-direction reflection preserve the measure without a conjugation; I did not pursue this.)
+
+**Stage 3: where the attempt stops.** (MON') is a one-sided step-scaling inequality for a twisted-box coupling. At weak coupling it is asymptotic freedom of the running coupling per doubling; the Sussman-Alpoge account (credited, with Claude and Codex as authors of its text) controls the weak side only down to first passage, and S1 (row 842) still lacks Lemma PE even on the twisted thin torus. In the order-one band the inequality is the nonperturbative step-scaling function of a twisted scheme (computed numerically in the literature for twisted Polyakov-loop schemes; no rigorous one-sided bound known to me). So the attempt stops at the order-one band, the same place as route (1) and as (SEED-FP) (Wall M, W36). What is gained: the weak end of this path already confines and has no zero modes, so the order-one band is crossed at fixed aspect geometry from a confining start rather than from a deconfined-looking weak-coupling vacuum. What is not gained: any inequality that propagates through the band.
+
+**Common finding of 4c and 4d (ARGUED).** Both reformulations move the FORM of the seed (a chessboard norm of a local block event; a dimensionless twisted-torus tension) but not its LOCATION: in each, the step that carries the difficulty sits inside the order-one band, at physical scale a few xi, uniformly in the cutoff. Each also comes with a group-blind propagation step (the chessboard recursion z_(j+1) <= C_3 z_j^2; the step-scaling iteration) and a group-selective seed. That split (blind engine, selective seed) matches Theorem S and the lane's finish line.
+
+### 4c (continued). Stage C2 on route (1): the strand-counting bound on the seed fails at 2.3
+
+Two standard chessboard facts (PROVED here from the chessboard estimate, as in the Frohlich-Israel-Lieb-Simon setting): (i) z(A) >= P(A) for every block event A (put A in one block and 1 elsewhere); (ii) z is subadditive, z(union A_i) <= sum z(A_i), and for an intersection of edge events on a path pi, the block norm is at most z_1^|pi|, z_1 the chessboard norm of "one edge carries half-integer spin" (equal for the three directions by cubic symmetry).
+So if "unclean at level 0" is bounded by "a strand of half-integer edges of length >= k_0/2 inside the block", then z_0 <= k_0^3 sum over l >= k_0/2 of N_SAW(l) z_1^l, which is small only if mu z_1 < 1, mu = 4.684 the 3D self-avoiding-walk connective constant. By (i), z_1 >= P_nu(edge half-integer). The GUIDE value e_F = 0.267 at beta 2.3 (row 867, unverified) gives mu z_1 >= 1.25 > 1. So any support-based (strand-counting) bound on the seed FAILS at beta 2.3, independently of how z_1 is estimated; it would need P(edge half-integer) < 1/mu = 0.2135. Row 867's proved bound is 0.5806. This matches Stage A1: the seed must use the geometry of minimal fillings (where strips through a dense filling are cheap or costly), with cancellation, not path counting. OPEN.
+
+## 5. PHASE 5: novelty (Opus 5.5)
+
+Searches (bounded, filenames and short contexts; I opened only the lines cited): `git -C /Users/jonreilly/ym4d-lead/clone grep` on the lane folder D at HEAD = claude/ym4d-hard-route db223519cd; `git -C /Users/jonreilly/Projects/Physics grep` on origin/main = 993f5e4f6d (2026-11-12T22:45-05:00, not fetched). Literature by recall (marked); nothing downloaded.
+
+**(1) Decoder + chessboard. NEW as a route, built from known parts.**
+- Lane: "decoder" occurs only for the surface ENCODING codes of the RTAIL notes (READ `D/library/gap-rtail-astra.md` L154, `D/library/gap-rtailsos-opus.md` L113-133, `D/library/gap-rtail-check-opus.md` L16-30): counting codes, not error correction. "toric code" occurs only as a literature theme for Theorem R (READ `D/FINISH.md` L822, row 745: Lagrangian subgroups, condensation). Homological percolation occurs only via Duncan-Schweinhart's Potts lattice gauge theory (READ `D/library/prior/gap-crux-lit-cross.md` L71-73; `D/library/prior/gap-lit-grok.md` L77). Toom-contour Peierls bounds appear for dynamics (READ `D/library/prior/gap-lit-annealed.md` L48-54). "loop condensate", "minimal filling", "relative filling": no hit.
+- origin/main: 188 files mention both decoding/toric code and "confine"; by filename they are framework (qubit-stabilizer, TOE) notes; none opened. "Nishimori", "homological percolation": no hit.
+- Literature (recalled, not re-read): Dennis-Kitaev-Landahl-Preskill 2002 (decoding <-> random-plaquette model on the Nishimori line; percolation proof of a local-decoder threshold); Harrington 2004 and Gacs (hierarchical decoders, recursion of the form P_(j+1) <= C P_j^2); Kubica-Preskill 2019 (sweep rule for loop-like syndromes); Gottesman 2014 (local stochastic noise); Frohlich-Israel-Lieb-Simon 1978 and Biskup's notes (chessboard estimate, subadditivity of chessboard norms); Levin-Wen 2005 (string-net condensation: deconfined = loop condensate); Duncan-Schweinhart 2023 (plaquette random-cluster model, homological percolation, sharp deconfinement for Potts gauge theory).
+- Verdict: the reading "confined vacuum = decodable short electric-loop gas; deconfined finite-group vacuum = loop condensate" is folklore of topological order. Using a local-decoder threshold argument, with reflection-positivity chessboard bounds as the noise model, to certify that the half-integer slice cycle of the SU(2) one-slice law is null-homologous (the (E17) form of rows 860/866) is NEW as far as I can find. Not checked by anyone.
+
+**(2) Continuity in the twisted thin-torus geometry. VARIANT of the lane's Route T.**
+- Lane: (AC'-lat), row 678, `D/library/gap-ac-lat.md` (READ L23: the statement, a mass on the twisted thin torus uniform in n; L58: the hinge (SC), m(beta, 3n) >= m(beta, n) - eps). Row 678's RESULT (READ `D/FINISH.md` L755) has Lemma B: for even n >= 4 the twisted measure is not reflection positive in a fibre direction. My Stage 2 obstruction is that lemma. Row 842 (S1) and 856 are the same geometry.
+- Literature (recalled): Tanizaki-Unsal 2022 and Hayashi-Tanizaki 2024 (R^2 x T^2 with 't Hooft flux, centre-vortex semiclassics); Unsal-Yaffe 2008; van Baal; Gonzalez-Arroyo-Okawa twisted reduction; step-scaling functions in twisted Polyakov-loop schemes (de Divitiis-Frezzotti-Guagnelli-Petronzio, 1990s). Adiabatic continuity is a known conjecture.
+- Verdict: variant. What differs: (MON') asks for GROWTH of the dimensionless tension n^2 sigma(n) per doubling (a one-sided step-scaling inequality), where (SC) asks for near-uniformity of a mass.
+
+**(3) Bounded lattice beta function. VARIANT (a differential form of NOCRIT).**
+- Lane: no FINISH row on Hellmann-Feynman for the gap (bounded grep of FINISH.md: no hit). "sum rule"/"trace anomaly"/"Hellmann" occur in 36 other lane files (not opened). (NOCRIT) is a named open hypothesis of the mass-gap state (lead's notes; not re-read here).
+- Literature (recalled): Michael's lattice action sum rules; the trace-anomaly mass sum rule (Shifman-Vainshtein-Zakharov; Ji); Feynman-Hellmann methods in lattice spectroscopy.
+- Verdict: variant; the Gronwall continuation is folklore.
+
+**(4) Frustration bootstrap. VARIANT of row 834's open item.** The nonlinear diamagnetic inequality for O(4) spins in SO(4) backgrounds is named OPEN in row 834 (Phase 1 map; "diamagnetic" also in `D/library/gap-arealaw2-check-astra.md`). Literature (recalled): Simon and Kato (diamagnetic inequalities); Brydges-Frohlich-Seiler 1979 (lattice gauge-Higgs diamagnetic bounds); Durhuus-Frohlich 1980 (layer route). Only the scale-induction loop is new framing.
+
+**(5) Vacuum Bakry-Emery on the orbit space. KNOWN.** Feynman 1981 (2+1 Yang-Mills, configuration-space curvature heuristic); Singer 1981; Mondal, arXiv:2301.06996 and 2308.09304 (orbit-space Bakry-Emery route, heuristic), already read by the lane (READ `D/library/prior/gap-crux-lit-nonab.md` L21-39: verdict GUIDE weak; the O'Neill-type term vanishes for abelian algebras). Lane literature theme F4 (row 690, `D/FINISH.md` L767) and Route C (rows 814/824).
+
+## 6. Summary for the lead (Opus 5.5)
+
+- Finished: Phase 3.2 (ideas 40-52), Phase 3.3 (G1-G21), rows 850-875 digest, Phase 4 (scores of all 73 ideas, top five, crux lemmas, attempts on the top two), Phase 5.
+- PROVED here (short, unchecked): (a) the tube-conditioned twist covariance equals the variance of a conserved Z_2 charge (electric-flux parity) at EVERY separation, so ideas 43-45 restate the flux half and "flux half from glue half by clustering" fails; (b) |<W(C)>| <= (E_R m_C^2)^(1/2) with m_C the conditional centre holonomy given the SO(3) projection, and the Nishimori identity E<sigma_C> = E<sigma_C>^2 (tower property; group-blind, thin, frozen at order one); (c) 0 <= -log r(n, M) <= 2 beta n^2 on the twisted thin torus; (d) chessboard facts z(A) >= P(A), subadditivity, so any strand-counting bound on the decoder seed needs P(edge half-integer) < 0.2135, against the GUIDE value 0.267 at beta 2.3; (e) the chessboard recursion z_(j+1) <= C_3 z_j^2, given (TOP_j) and the bare measure's spatial reflection positivity.
+- How far the top two got: route (1) reduces the flux half to one local, SU(2)-selective, reflection-positive number (SEED-DEC) at blocks of a few xi, plus a topological decoder lemma (TOP_j) that I only sketched; it stops at the seed, inside the order-one band. Route (2) corrected its own crux to (MON') and stops at the same band; it reproduces the lane's Lemma B obstruction.
+- Not done: no numeric run; no check by a second model; (TOP_j) not written in full; (SEED-DEC), (MON'), (NOCRIT-HF), (DIA), (VBE) and (E17) OPEN.
+
+RESULT: Row 859 complete (Phases 1-2 by Claude Fable 5.2 max; Phases 3.2-5 by Claude Opus 5.5 max; unchecked). 52 first- and 21 second-generation ideas scored against the five fact tests. PROVED: the tube-conditioned twist covariance is the variance of a conserved Z_2 charge at every separation (so "flux half from glue half by clustering" fails), and any strand-counting bound on a local seed needs P(half-integer edge) < 1/4.684, against GUIDE 0.267 at beta 2.3. Top five: (1) NEW: confinement as successful local decoding of the half-integer slice cycle: hierarchical decoder (TOP_j, ARGUED) plus the chessboard recursion z_(j+1) <= C_3 z_j^2 (PROVED given TOP_j and bare reflection positivity), crux (SEED-DEC) C_3 z_0 < 1 at blocks of a few xi; (2) continuity in the twisted thin-torus geometry, crux (MON') growth of n^2 sigma(n) per doubling (variant of the lane's Route T, row 678); (3) bounded lattice beta function by Hellmann-Feynman (variant of NOCRIT); (4) frustration bootstrap via the nonlinear diamagnetic inequality (row 834's open item); (5) vacuum Bakry-Emery on the orbit space (known: Feynman 1981, Mondal 2023). Both attempts stop inside the order-one band at physical scale a few xi, where (SEED-FP) sits: they change the seed's form (a local SU(2)-selective chessboard norm; a dimensionless twisted tension), not its location. OPEN: (SEED-DEC), (TOP_j) in detail, (MON'), (E17).

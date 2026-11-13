@@ -1,0 +1,8 @@
+x=(5, 5, 5): outputs 7; max |V[out,in]| from distance>=4: 0.0e+00; from distance exactly 3: 0.151
+x=(5, 5, 6): outputs 7; max |V[out,in]| from distance>=4: 0.0e+00; from distance exactly 3: 0.151
+x=(5, 6, 5): outputs 7; max |V[out,in]| from distance>=4: 0.0e+00; from distance exactly 3: 0.151
+x=(5, 6, 6): outputs 7; max |V[out,in]| from distance>=4: 0.0e+00; from distance exactly 3: 0.151
+x=(6, 5, 5): outputs 7; max |V[out,in]| from distance>=4: 0.0e+00; from distance exactly 3: 0.151
+x=(6, 5, 6): outputs 7; max |V[out,in]| from distance>=4: 0.0e+00; from distance exactly 3: 0.151
+x=(6, 6, 5): outputs 7; max |V[out,in]| from distance>=4: 0.0e+00; from distance exactly 3: 0.151
+x=(6, 6, 6): outputs 7; max |V[out,in]| from distance>=4: 0.0e+00; from distance exactly 3: 0.151

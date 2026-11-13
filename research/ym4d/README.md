@@ -19,7 +19,9 @@ below are this project's own terms, defined here.
   implication from its named imports. Its Outstanding paragraphs name
   what it does not prove.
 - **Checked line by line by X.** One reading by the named model. It is
-  not an audit and grants no status.
+  not an audit and grants no status. It is also not the standing
+  `checked` of this repository's rules (`docs/ai_methodology/RULES.md`,
+  section 1): these texts have no check records under those rules.
 
 ## Source
 
@@ -27,6 +29,8 @@ Every file here is a byte-identical copy from the working branch
 `claude/ym4d-hard-route` (draft PR #10132) at commit
 `af80bc9a5f58cd5b2f62c218fcdb8e2105aed972`, directory
 `.claude/science/physics-loops/ym4d-hard-route-20261030/`.
+The two Update sections at the end of this file name the files that are
+copies of a later commit.
 
 The texts keep their relative links. Links to files in this snapshot work
 here. Links to working files that are not in this snapshot (drafts, other
@@ -99,3 +103,17 @@ branch.
 ## Update, 2026-11-08: GitHub-rendering copies
 
 The five posted notes (issues #10–#14) and their issue texts are now the versions linked from the issues since 2026-11-08: the math is rewritten so GitHub renders it, and out-l17 drops two internal header lines and the words "Draft, not yet sent." The notes are byte-identical to `library/posted/` on the working branch at `64be8397d`; the issue texts are the issue bodies as posted, each ending with its edit note. No formula or claim is changed. The original versions stay at the commits the issues first linked.
+
+## Update, 2026-11-13: CL1 correction, dead links, line endings
+
+**CL1.** `library/cl1.md` is now the working-branch copy at commit `586e8fc849722eea6d189e282d31235c9a4ff3cc`. Two sentences of Lemma 4 changed, at lines 208 and 273. They gave the factorial bound of SR1's H1 to every form in (12). They now give it to the limit forms of the moments only, and claim no such bound for the cumulant limits or the lattice forms. The part's change log of 2026-11-05 already called the wider wording an overstatement, but the two sentences had stayed. The landing review of this PR held the snapshot for that on 2026-11-11. GPT-6 astra (high effort) read the edited lemma line by line on 2026-11-13 and found no failing step. Its record is the new file [gates/cl1-l4-read.md](gates/cl1-l4-read.md), a copy from the same commit; it says where the read was not blind. No other text changed.
+
+**Dead links.** Four links in these texts point to files that are absent from the working branch, both at `af80bc9a5` and at its head on 2026-11-13:
+
+- `library/hm.md`, line 7: `../checks/hm-pass2/source-checks.md` and `../checks/hm-pass2/source-identities.json`
+- `library/descent.md`, line 5: `../checks/descent-pass2/source-checks.md`
+- `library/open-registry.md`, line 404: `p1-base.md`
+
+H-M (line 476) and Descent (line 290) say this themselves. No replacement file exists, so the texts are left as they are.
+
+**Line endings.** Seven files end with a blank line: `library/out-gw-issue.md`, `library/out-gw.md`, `library/out-l17-issue.md`, `library/out-mu-issue.md`, `library/out-pi-issue.md`, `library/out-um-issue.md` and `library/st1-r4.md`. They are left as they are, because every file here is a byte-identical copy.

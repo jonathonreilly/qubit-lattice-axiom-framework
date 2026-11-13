@@ -205,7 +205,7 @@ Each \(\sigma_n\) and \((\sigma_S)_n\) for \(n\ge1\), and \(S_n\) for \(n\ge2\),
  |\Sigma_{j,n}(\Phi)|,\ |\Sigma_n(\Phi)|\le A'_n p_{20n}(\Phi).
  \tag{12}
 \]
-Along the original subsequence their values converge, also for \(\Phi_{j_r}\to\Phi\) in Schwartz topology. I3 improves \(A'_n\) to \(C_E^n(n!)^{k+32}\), enlarging \(C_E\) for cumulants if necessary.
+Along the original subsequence their values converge, also for \(\Phi_{j_r}\to\Phi\) in Schwartz topology. For the limit forms of the moments \(\sigma_n\) and \((\sigma_S)_n\), I3 improves \(A'_n\) to \(C_E^n(n!)^{k+32}\). No factorial bound is claimed here for the cumulant limits \(S_n\) or for the lattice forms \(\Sigma_{j,n}\).
 
 *Origin:* s4-s6 §6; bridge-check §2, with its explicit box sizes and overlap repair. SA QF8–QF22 and CC17–CC18. Factorial growth remains the SR1 import.
 
@@ -270,7 +270,7 @@ For density, first cut off infinity; an extra Schwartz weight bounds the error i
 
 For positive-time tests, also multiply by \(\prod_i b(x_{i,4}/h)\), where \(b=0\) below 1 and \(b=1\) above 2. Taylor to a zero-time hyperplane gives the same error estimate. Choose all expanded Fourier boxes inside the resulting positive-time gap. Thus strictly positive-time separated tensors are dense in \(\mathcal E_{+,n}\).
 
-Finally approximate a fixed \(\Phi\) by one finite tensor sum. The common bound (12) controls both approximation errors; Lemma 2 gives convergence on that sum. This proves convergence on the whole flat space and, by the same bound, for Schwartz-convergent moving tests. I3's quantitative extension agrees by uniqueness, so its factorial bound applies. \(\square\)
+Finally approximate a fixed \(\Phi\) by one finite tensor sum. The common bound (12) controls both approximation errors; Lemma 2 gives convergence on that sum. This proves convergence on the whole flat space and, by the same bound, for Schwartz-convergent moving tests. For \(\sigma_n\) and \((\sigma_S)_n\), I3's quantitative extension agrees by uniqueness, so its factorial bound applies to these two limit forms. \(\square\)
 
 ### Lemma 5. The reflection Hilbert spaces and their translations
 
@@ -532,5 +532,11 @@ The two source notes have the line-by-line check recorded above. **This distille
 Applied the findings of `gates/cl1-gate.md` (Claude fresh session, first failing step none):
 1. Lines 208 and 273: "I3 improves A'_n to C_E^n (n!)^{k+32}" overstates SR1's H1, which covers the moment limits sigma, sigma_S, not the cumulant limits S_n or the lattice extensions Sigma_{j,n}. No clause of Theorem 9 uses that bound. SR1's Lemmas 7-9 need only the bound (28); the cumulants meet it by the third line of (4) and the lattice forms meet it at each j (SA (QF1), L24929-24946).
 2. Symbol clashes, read as follows: the growth constant C_E is C_{H1} (distinct from IN1's row-7 C_E); the one-point constant c of Lemma 3 is c_sigma (distinct from IN1's reserve product c = C_v c_r).
+
+## Change log (2026-11-13)
+
+Item 1 of the pass 3 change log is now applied in the text. Before this edit, line 208 (statement of Lemma 4) and line 273 (end of its proof) still gave the factorial bound \(C_E^n(n!)^{k+32}\) to all the forms of (12). The scope review of PR #10141 held the snapshot on 2026-11-11 for that reason. Both sentences now give the bound to the limit forms of the moments \(\sigma_n\) and \((\sigma_S)_n\) only. Lemma 4 states no such bound on the flat extensions of the cumulant limits \(S_n\) or of the lattice forms \(\Sigma_{j,n}\); their separated-tuple bounds (4) are unchanged. No other line of this part is changed.
+
+Edit: Claude (Fable 5.2), 2026-11-13. The read of the edited lemma by another model is recorded in [cl1-l4-read.md](../gates/cl1-l4-read.md).
 
 **Status: frozen**, as a conditional implication from SR1, LG1 and IN1(4). Reopens only on a `wrong` signal or when an import it reads changes.

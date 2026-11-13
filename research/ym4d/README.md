@@ -116,4 +116,4 @@ The five posted notes (issues #10–#14) and their issue texts are now the versi
 
 H-M (line 476) and Descent (line 290) say this themselves. No replacement file exists, so the texts are left as they are.
 
-**Line endings.** Seven files end with a blank line: `library/out-gw-issue.md`, `library/out-gw.md`, `library/out-l17-issue.md`, `library/out-mu-issue.md`, `library/out-pi-issue.md`, `library/out-um-issue.md` and `library/st1-r4.md`. They are left as they are, because every file here is a byte-identical copy.
+**Line endings.** Seven files end with a blank line: `library/out-gw-issue.md`, `library/out-gw.md`, `library/out-l17-issue.md`, `library/out-mu-issue.md`, `library/out-pi-issue.md`, `library/out-um-issue.md` and `library/st1-r4.md`. They are left as they are, because every file here is a byte-identical copy. The file `.gitattributes` in this folder tells git not to report these seven line endings as whitespace errors. Folders of exact source bytes already on `main` do the same.

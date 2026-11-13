@@ -1,0 +1,9 @@
+# The texts in this folder are byte-identical copies (see README.md, "Line endings").
+# Seven of them end with a blank line. Git must not report that as a whitespace error.
+library/out-gw-issue.md whitespace=-blank-at-eof
+library/out-gw.md whitespace=-blank-at-eof
+library/out-l17-issue.md whitespace=-blank-at-eof
+library/out-mu-issue.md whitespace=-blank-at-eof
+library/out-pi-issue.md whitespace=-blank-at-eof
+library/out-um-issue.md whitespace=-blank-at-eof
+library/st1-r4.md whitespace=-blank-at-eof

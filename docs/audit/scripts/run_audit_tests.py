@@ -9,7 +9,8 @@ them.
 
 Tests write only to temporary directories. A file whose run changes the
 checkout (a tracked file, or an untracked file git does not ignore) fails,
-whatever its tests report. Ignored caches may still be built.
+whatever its tests report. Ignored caches may still be built. When git cannot
+report the checkout state, the run fails rather than run unchecked.
 """
 from __future__ import annotations
 
@@ -94,20 +95,23 @@ def main() -> int:
     in_ci = bool(os.environ.get("GITHUB_ACTIONS"))
     state = tree_state()
     if state is None:
-        print("git status failed: cannot check that tests leave the checkout unchanged", flush=True)
+        print("FAIL: git status failed, so no test can be checked for changing the checkout", flush=True)
+        return 1
     for path in sorted(TESTS_DIR.glob("test_*.py")):
         if in_ci and path.name in CI_ENVIRONMENT_LIMITED:
             print(f"{path.name}: SKIPPED in CI ({CI_ENVIRONMENT_LIMITED[path.name]})", flush=True)
             continue
         passed, output = run_file(path)
-        touched: list[str] = []
-        if state is not None:
-            current = tree_state()
-            if current is None:
-                print("git status failed: the checkout check stops here", flush=True)
-            else:
-                touched = changed_paths(state, current)
-            state = current
+        current = tree_state()
+        if current is None:
+            unexpected.append(path.name)
+            if not passed:
+                print(output)
+            print(f"{path.name}: FAIL, git status failed after this file", flush=True)
+            print("stopping: later files could not be checked for changing the checkout", flush=True)
+            break
+        touched = changed_paths(state, current)
+        state = current
         if touched:
             label = "FAIL, changed the checkout"
             unexpected.append(path.name)

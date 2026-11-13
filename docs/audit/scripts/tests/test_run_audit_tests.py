@@ -24,6 +24,26 @@ class WriterTest(unittest.TestCase):
         (Path(__file__).resolve().parents[1] / "{name}").write_text("{text}")
 """
 
+CLEAN = """\
+import unittest
+
+
+class CleanTest(unittest.TestCase):
+    def test_nothing(self):
+        pass
+"""
+
+# Passes, but leaves the repository unreadable, so the next git status fails.
+BREAKS_GIT = """\
+import unittest
+from pathlib import Path
+
+
+class BreaksGitTest(unittest.TestCase):
+    def test_corrupts_head(self):
+        (Path(__file__).resolve().parents[1] / ".git" / "HEAD").write_text("garbage\\n")
+"""
+
 
 class TreeStateTest(unittest.TestCase):
     def setUp(self):
@@ -80,25 +100,51 @@ class TreeStateTest(unittest.TestCase):
         changed = self._change(lambda: (self.root / "tracked.txt").unlink())
         self.assertEqual(changed, ["tracked.txt"])
 
-    def test_main_fails_a_file_that_writes_the_checkout(self):
-        tests = self.root / "tests"
-        (tests / "test_clean.py").write_text(
-            "import unittest\n\n\nclass CleanTest(unittest.TestCase):\n"
-            "    def test_nothing(self):\n        pass\n"
-        )
-        (tests / "test_writer.py").write_text(WRITER.format(name="tracked.txt", text="dirty"))
-        self._git("add", "tests")
+    def _main(self) -> tuple[int, str]:
         out = io.StringIO()
-        with mock.patch.object(runner, "TESTS_DIR", tests), \
+        with mock.patch.object(runner, "TESTS_DIR", self.root / "tests"), \
                 mock.patch.object(runner, "KNOWN_BROKEN", {}), \
                 mock.patch.dict(runner.os.environ, {"GITHUB_ACTIONS": ""}), \
                 contextlib.redirect_stdout(out):
             rc = runner.main()
-        report = out.getvalue()
+        return rc, out.getvalue()
+
+    def test_main_fails_a_file_that_writes_the_checkout(self):
+        tests = self.root / "tests"
+        (tests / "test_clean.py").write_text(CLEAN)
+        (tests / "test_writer.py").write_text(WRITER.format(name="tracked.txt", text="dirty"))
+        self._git("add", "tests")
+        rc, report = self._main()
         self.assertEqual(rc, 1)
         self.assertIn("test_clean.py: PASS\n", report)
         self.assertIn("  changed: tracked.txt\n", report)
         self.assertIn("test_writer.py: FAIL, changed the checkout\n", report)
+        self.assertIn("unexpected failures: 1\n", report)
+
+    def test_main_fails_when_git_status_fails_before_any_file(self):
+        (self.root / "tests" / "test_clean.py").write_text(CLEAN)
+        not_a_repo = tempfile.TemporaryDirectory()
+        self.addCleanup(not_a_repo.cleanup)
+        outside = Path(not_a_repo.name).resolve()
+        # The ceiling stops git from finding a repository above the scratch dir.
+        with mock.patch.object(runner, "REPO_ROOT", outside), \
+                mock.patch.dict(runner.os.environ, {"GIT_CEILING_DIRECTORIES": str(outside.parent)}):
+            rc, report = self._main()
+        self.assertEqual(rc, 1)
+        self.assertIn("FAIL: git status failed", report)
+        self.assertNotIn("PASS", report)
+        self.assertNotIn("unexpected failures: 0", report)
+
+    def test_main_fails_when_git_status_fails_after_a_file(self):
+        tests = self.root / "tests"
+        (tests / "test_breaks_git.py").write_text(BREAKS_GIT)
+        (tests / "test_later.py").write_text(CLEAN)
+        self._git("add", "tests")
+        rc, report = self._main()
+        self.assertEqual(rc, 1)
+        self.assertIn("test_breaks_git.py: FAIL, git status failed after this file\n", report)
+        self.assertNotIn("test_later.py", report)
+        self.assertNotIn("PASS", report)
         self.assertIn("unexpected failures: 1\n", report)
 
 

@@ -90,9 +90,9 @@ T_F = 0.5                  # fundamental rep normalization
 X_F = 25.0                 # m/T at freeze-out
 V_REL = 2.0 * np.sqrt(1.0 / X_F)  # relative velocity at freeze-out
 
-# Observed DM ratio (used for COMPARISON, not as input to alpha_s)
-# alpha_s is determined from lattice structure alone (plaquette action)
-# R is then PREDICTED from alpha_s; comparison to R_OBS is a test
+# Supplied historical DM ratio: explicitly used as the inverse-fit target in
+# Approach 5. Other branches use supplied bare/matching prescriptions; this
+# script does not establish parameter-free physical matching.
 OMEGA_DM = 0.268
 OMEGA_B = 0.049
 R_OBS = OMEGA_DM / OMEGA_B  # 5.469
@@ -107,16 +107,12 @@ log("=" * 78)
 log()
 log("Support script only: not the canonical alpha_s(M_Z) authority on main.")
 log()
-log("CAVEAT (review P1): This script determines alpha_s from the lattice")
-log("plaquette action, which IS a first-principles calculation. However,")
-log("it then uses observed Omega_DM/Omega_B = 5.47 as a TARGET to frame")
-log("the result. The honest claim is: the lattice predicts alpha_s = 0.092")
-log("at the Planck scale from structure alone. The DM ratio R = 5.48 is")
-log("then a PREDICTION using this alpha_s, not a fit to observed R.")
-log("CORRIGENDUM 2026-09-30: the DM-ratio sentences of this caveat are superseded.")
-log("With the corrected 2*pi Sommerfeld kernel R(alpha_s = 0.092) is ~8.1, not 5.48")
-log("(Approach 5 below prints the corrected required coupling and R range).")
-log("See frontier_alpha_s_robustness.py for scheme-independence analysis.")
+log("Scope: supplied bare normalization and approximate matching prescriptions.")
+log("Approach 5 fits a coupling to the supplied historical Omega_DM/Omega_B target.")
+log("CORRIGENDUM 2026-09-30: corrected relative-speed kernel uses 2*pi, not pi.")
+log("The old R=5.48 at alpha_s=0.092 and parameter-free interpretation are withdrawn.")
+log("The calculations below report the resulting mismatch and supplied ranges.")
+log("No derived matching-error budget or physical parameter-free prediction follows.")
 log()
 
 # =============================================================================
@@ -823,7 +819,7 @@ values = [alpha_V_4d, alpha_plaq, alpha_V_1loop]
 alpha_central = np.mean(values)
 alpha_spread = np.std(values)
 
-log(f"  Central value (average of 2a, 3a, 3b): {alpha_central:.6f}")
+log(f"  Unweighted mean (2a, alpha_plaq, 3a): {alpha_central:.6f}")
 log(f"  Spread:                                {alpha_spread:.6f}")
 log()
 
@@ -836,11 +832,11 @@ log(f"    Difference:       {diff_pct:.1f}%")
 log()
 
 if diff_pct < 15:
-    log("  *** THE GAP IS WITHIN THE LATTICE MATCHING UNCERTAINTY ***")
-    log("  The dark matter ratio prediction is PARAMETER-FREE.")
+    log("  The gap is below the supplied 15-percent descriptive cut.")
+    log("  This cut is not a derived matching uncertainty or a parameter-free prediction.")
 else:
-    log("  The gap exceeds the estimated matching uncertainty.")
-    log("  Additional lattice corrections may be needed.")
+    log("  The gap exceeds the supplied 15-percent descriptive cut.")
+    log("  A justified matching calculation is still required; no correction is established here.")
 log()
 
 # =============================================================================
@@ -945,18 +941,18 @@ log()
 
 # Check if observation falls within predicted range
 if min(R_low, R_high) <= R_OBS <= max(R_low, R_high):
-    log("  *** R_obs FALLS WITHIN THE PREDICTED RANGE ***")
-    log("  The dark matter ratio is a PARAMETER-FREE PREDICTION.")
+    log("  The supplied R_obs falls within this prescription range.")
+    log("  Range inclusion alone does not establish a parameter-free prediction.")
 elif min(R_low, R_high) <= R_OBS * 1.1 and R_OBS * 0.9 <= max(R_low, R_high):
     log("  R_obs is within 10% of the predicted range.")
-    log("  The dark matter ratio is effectively parameter-free.")
+    log("  This descriptive proximity does not establish a parameter-free prediction.")
 else:
     log("  R_obs is outside the predicted range.")
     log("  Additional corrections needed.")
 log()
 
 # Detailed error budget
-log("  Error budget:")
+log("  Supplied error estimates (not a derived or propagated uncertainty budget):")
 log(f"    Bare coupling:     alpha_bare = {alpha_bare_unit:.6f} (exact)")
 log(f"    Tadpole correction: +{(alpha_plaq - alpha_bare_unit)/alpha_bare_unit*100:.1f}% "
     f"(from plaquette <P> = {P_4d_early:.4f})")
@@ -1066,7 +1062,7 @@ log()
 # =============================================================================
 
 log("=" * 78)
-log("11. DEFINITIVE RESULT")
+log("11. CONDITIONAL COMPARISON SUMMARY")
 log("=" * 78)
 log()
 
@@ -1105,22 +1101,22 @@ alpha_max = alpha_V_2loop
 
 if alpha_min <= alpha_s_required <= alpha_max:
     log("  *** alpha_s(DM) FALLS WITHIN [alpha_bare, alpha_V(2-loop)] ***")
-    log("  *** THE DARK MATTER RATIO IS A PARAMETER-FREE PREDICTION ***")
+    log("  Band inclusion is a conditional comparison, not a parameter-free prediction.")
     log()
     log("  The required coupling alpha_s = {:.4f} lies between the bare".format(alpha_s_required))
     log("  lattice coupling ({:.4f}) and the 2-loop V-scheme coupling ({:.4f}).".format(
         alpha_bare_unit, alpha_V_2loop))
-    log("  This corresponds to approximately a 1.2-loop matching correction,")
-    log("  entirely within the expected range of perturbative lattice artifacts.")
+    log("  This branch only checks inclusion in a supplied prescription interval;")
+    log("  it establishes neither a fractional loop order nor a lattice-artifact error bound.")
 elif alpha_min / 1.1 <= alpha_s_required <= alpha_max * 1.1:
     log("  alpha_s(DM) is within 10% of the lattice determination range.")
-    log("  The dark matter ratio is effectively parameter-free.")
+    log("  This descriptive proximity does not establish a parameter-free prediction.")
 else:
     log("  There is a gap between the lattice coupling and the DM requirement.")
 log()
 
 # Final R predictions with uncertainty band
-log("  PREDICTED DARK MATTER RATIO:")
+log("  CONDITIONAL DARK MATTER RATIO UNDER SUPPLIED PRESCRIPTIONS:")
 log("  -----------------------------------------------------------")
 alphas_scan = np.linspace(alpha_bare_unit, alpha_V_2loop, 50)
 R_scan = np.array([dm_ratio_from_alpha(a) for a in alphas_scan])
@@ -1132,8 +1128,8 @@ log("  -----------------------------------------------------------")
 log()
 
 log("  CONCLUSION (corrigendum 2026-09-30: computed, not hard-coded):")
-log("  The bare lattice coupling g = 1 (alpha = 0.080) combined with")
-log("  standard tadpole improvement gives alpha_V = 0.085-0.095.")
+log("  With supplied g=1 and the implemented matching prescriptions, the range is")
+log("  [{:.6f}, {:.6f}]; this is not a derived confidence interval.".format(alpha_min, alpha_max))
 log("  The dark matter ratio R = {:.2f} requires alpha_s = {:.3f}".format(R_OBS, alpha_s_required))
 if alpha_min <= alpha_s_required <= alpha_max:
     log("  (corrected 2*pi Sommerfeld kernel), which falls within the lattice band.")

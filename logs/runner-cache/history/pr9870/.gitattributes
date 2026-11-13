@@ -1,0 +1,2 @@
+# Preserve the original failed cache bytes, including its final blank line.
+frontier_ckm_multi_channel_alpha_s_extraction_consistency.txt whitespace=-blank-at-eof

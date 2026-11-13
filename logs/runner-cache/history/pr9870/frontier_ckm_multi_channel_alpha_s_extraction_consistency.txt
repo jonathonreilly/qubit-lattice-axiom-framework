@@ -1,0 +1,172 @@
+===== runner cache v1 =====
+runner: scripts/frontier_ckm_multi_channel_alpha_s_extraction_consistency.py
+runner_sha256: 2c8e62fa928fdc94c5e827aeaae25d21d3ef238086ee1a45a9b282a48b202ec0
+input_fingerprint_sha256: b1d7df507c67435359f8eb59170d946dc6b254d606387c9259f0143b12c500e6
+timeout_sec: 300
+exit_code: 1
+elapsed_sec: 0.76
+status: nonzero_exit
+----- stdout -----
+========================================================================================
+CKM multi-channel alpha_s extraction consistency audit
+See docs/CKM_MULTI_CHANNEL_ALPHA_S_EXTRACTION_CONSISTENCY_THEOREM_NOTE_2026-04-26.md
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Legacy documentary status pins (not proof or audit authority)
+----------------------------------------------------------------------------------------
+  Historical status strings checked below; conditional algebra uses supplied constants:
+
+    [CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md]
+      Status (extracted): ''
+      Tier classification: unknown
+  [FAIL] Legacy retained-label string matches: CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md
+
+    [CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md]
+      Status (extracted): ''
+      Tier classification: unknown
+  [FAIL] Legacy retained-label string matches: CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md
+
+    [CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md]
+      Status (extracted): ''
+      Tier classification: unknown
+  [FAIL] Legacy retained-label string matches: CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md
+
+    [WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md]
+      Status (extracted): ''
+      Tier classification: unknown
+  [FAIL] Legacy retained-label string matches: WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md
+
+
+----------------------------------------------------------------------------------------
+Checking source literals against supplied model constants
+----------------------------------------------------------------------------------------
+  N_pair extracted:                  n_pair  = 2
+  N_color extracted:                 n_color = 3
+  N_quark = N_pair * N_color:        FOUND
+  [PASS] MAGNITUDES contains literal N_pair = 2
+  [PASS] MAGNITUDES contains literal N_color = 3
+  [PASS] MAGNITUDES contains literal N_quark = N_pair * N_color (=6)
+
+----------------------------------------------------------------------------------------
+E1-E4: alpha_s extraction formulas from each CKM magnitude
+----------------------------------------------------------------------------------------
+  E1: alpha_s = N_pair * |V_us|^2
+      |V_us|^2 = alpha_s/2, N_pair * |V_us|^2 = alpha_s
+      Difference from alpha_s: 0
+  [PASS] E1: alpha_s = N_pair * |V_us|^2 inverts |V_us|^2 = alpha_s/N_pair
+
+  E2: alpha_s = sqrt(N_quark) * |V_cb|
+      |V_cb|^2 = alpha_s**2/6, sqrt(N_quark) * |V_cb| = alpha_s
+      Difference from alpha_s: 0
+  [PASS] E2: alpha_s = sqrt(N_quark) * |V_cb| inverts |V_cb|^2 = alpha_s^2/N_quark
+
+  E3: alpha_s = (N_pair * N_quark^2 * |V_ub|^2)^(1/3)
+      |V_ub|^2 = alpha_s**3/72, (72 |V_ub|^2)^(1/3) = alpha_s
+      Difference from alpha_s: 0
+  [PASS] E3: alpha_s = (N_pair N_quark^2 |V_ub|^2)^(1/3) inverts |V_ub|^2 = alpha_s^3/(N_pair N_quark^2)
+
+  E4: alpha_s extraction from |V_td|^2 = alpha_s^3 (80 + alpha_s^2)/1152
+      supplied NLO |V_td|^2 = alpha_s**3*(alpha_s**2 + 80)/1152
+      Difference from Wolfenstein construction: 0
+      Positive-root derivative: 5*alpha_s**2*(alpha_s**2 + 48)/1152
+  [PASS] E4: |V_td|^2 closed form matches supplied NLO Wolfenstein construction
+  [PASS] E4: positive-root map is monotone for alpha_s > 0
+
+----------------------------------------------------------------------------------------
+Historical supplied central-value transformations; no covariance test
+----------------------------------------------------------------------------------------
+  Channel                 model parameter (historical inputs)
+  E1: alpha_s_from_|V_us|    0.100621
+  E2: alpha_s_from_|V_cb|    0.100429
+  E3: alpha_s_from_|V_ub|    0.101661
+  E4: alpha_s_from_|V_td|    0.102197
+
+  Mean of four extractions:    0.101227
+  Spread (max - min):          0.001768
+  Relative spread:             1.75 %
+  Supplied canonical comparator: 0.103303816
+  Mean relative to comparator: -2.010500 %
+  This unweighted mean is not a covariance-weighted fit or uncertainty estimate.
+  [PASS] Descriptive range is below the supplied 5-percent cut (not a theory bound)
+  Maximum pairwise deviation:  1.75 %
+  [PASS] Maximum pairwise range is below the same descriptive cut (redundant range check)
+
+----------------------------------------------------------------------------------------
+Historical comparator only; no forecast or uncertainty budget
+----------------------------------------------------------------------------------------
+  The old 2-percent revision threshold and 1.75-percent spread were
+  supplied numbers, not a covariance analysis or experimental forecast.
+  Their comparison is preserved solely as historical arithmetic.
+  [PASS] Historical supplied comparator: 2.0 exceeds 1.75 (not a falsification test)
+
+----------------------------------------------------------------------------------------
+Finite descriptive ranking of 20 supplied count assignments
+----------------------------------------------------------------------------------------
+  Suppose the framework's structural integers were perturbed:
+    N_pair' = N_pair + delta_p,
+    N_color' = N_color + delta_c,
+    N_quark' = N_quark + delta_q.
+
+  Then E1, E2, E3, E4 would extract DIFFERENT alpha_s values:
+    alpha_s_from_Vus  =  N_pair' * |V_us|^2,
+    alpha_s_from_Vcb  =  sqrt(N_quark') * |V_cb|,
+    alpha_s_from_Vub  =  cuberoot(N_pair' * N_quark'^2 * |V_ub|^2).
+    alpha_s_from_Vtd  =  positive root of the candidate |V_td|^2 channel.
+
+  In this supplied 20-assignment scan, historical central values rank the
+  assignment whose four extractions agree at alpha_s ~ 0.10 to within 1.8 %.
+
+  The supplied values (N_pair, N_color, N_quark) = (2, 3, 6)
+  are the unique minimum-spread small-integer assignment in the scan.
+
+  Any other scanned assignment that disagrees with (2, 3, 6)
+  gives a much larger four-channel alpha_s spread.
+
+  Numerical test: verify (N_pair, N_color, N_quark) = (2, 3, 6) is the unique minimum-spread assignment
+  (testing N_pair in {1, 2, 3, 4}, N_color in {1, 2, 3, 4, 5}, N_quark = N_pair * N_color):
+
+  N_pair  N_color  N_quark  alpha_s_from_Vus  alpha_s_from_Vcb  alpha_s_from_Vub  alpha_s_from_Vtd  spread
+  1       1        1        0.0503            0.0410            0.0244            0.1493            188.42 %
+  1       2        2        0.0503            0.0580            0.0388            0.0666            52.03 %
+  1       3        3        0.0503            0.0710            0.0508            0.0693            34.30 %
+  1       4        4        0.0503            0.0820            0.0616            0.0734            47.43 %
+  1       5        5        0.0503            0.0917            0.0715            0.0773            56.91 %
+  2       1        2        0.1006            0.0580            0.0489            0.0840            71.01 %
+  2       2        4        0.1006            0.0820            0.0776            0.0925            26.13 %
+  2       3        6        0.1006            0.1004            0.1017            0.1022            1.75 %
+  2       4        8        0.1006            0.1160            0.1232            0.1107            20.01 %
+  2       5        10        0.1006            0.1297            0.1429            0.1181            34.43 %
+  3       1        3        0.1509            0.0710            0.0733            0.1000            80.87 %
+  3       2        6        0.1509            0.1004            0.1164            0.1170            41.68 %
+  3       3        9        0.1509            0.1230            0.1525            0.1311            21.16 %
+  3       4        12        0.1509            0.1420            0.1847            0.1428            27.53 %
+  3       5        15        0.1509            0.1588            0.2144            0.1529            37.48 %
+  4       1        4        0.2012            0.0820            0.0977            0.1165            95.87 %
+  4       2        8        0.2012            0.1160            0.1552            0.1394            55.75 %
+  4       3        12        0.2012            0.1420            0.2033            0.1572            34.84 %
+  4       4        16        0.2012            0.1640            0.2463            0.1717            42.03 %
+  4       5        20        0.2012            0.1834            0.2858            0.1841            47.96 %
+
+  Best (minimum spread) assignment: (N_pair, N_color, N_quark) = (2, 3, 6) with 1.75 % spread
+  Next-best alternative: (2, 4, 8) with 20.01 % spread
+  [PASS] Finite scan: (2, 3, 6) has minimum descriptive spread in this 20-row box
+  [PASS] Finite scan: second-ranked row exceeds 20-percent descriptive spread
+
+----------------------------------------------------------------------------------------
+Conditional result and open physical obligations
+----------------------------------------------------------------------------------------
+  E1-E4 are inversions of supplied magnitude formulas at counts (2,3,6).
+  Four single-channel transformations do not establish statistical independence.
+  The 20-row scan ranks a supplied central-value range statistic only.
+  No likelihood, covariance, theory-error bound, or empirical exclusion is computed.
+  Identifying this model parameter with MSbar alpha_s needs a scale and matching map.
+  Neither a 5-percent theory error nor a future 2-percent rejection rule is derived.
+  Source-label checks are documentary and do not establish retained authority.
+
+========================================================================================
+TOTAL: PASS=13, FAIL=4
+========================================================================================
+
+----- stderr -----
+

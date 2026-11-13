@@ -169,6 +169,10 @@ Two scripts still pass a model and effort of their own, which overrides the
 configured one: `science_fix_loop.py` and `classify_missing_derivations.py`.
 Change the value there until they read this table.
 
+Each machine runs Codex on its own account with its own weekly limit.
+`lab_ops.py preflight` reports the use of the account on the machine it runs
+on, and refuses a Codex lane when that account is spent (2026-11-13).
+
 ## Budgets
 
 | Budget | Value | Note |

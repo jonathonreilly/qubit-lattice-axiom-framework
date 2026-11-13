@@ -11,7 +11,8 @@
   models           report a model tier in SETTINGS.md that a newer model should hold
 
 Machine limits come from flags or LAB_MIN_DISK_GB, LAB_MIN_MEM_PCT,
-LAB_MAX_LOAD and LAB_LOCK_DIR. Exit 0 means go or done, 1 means refused, and
+LAB_MAX_LOAD and LAB_LOCK_DIR. preflight also reads the Codex account's weekly
+use from the newest session log under CODEX_HOME. Exit 0 means go or done, 1 means refused, and
 2 means the numeric lock is held. No scientific authority.
 """
 
@@ -28,6 +29,7 @@ import re
 import shutil
 import subprocess
 import sys
+import time
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import automation_lock  # noqa: E402
@@ -411,6 +413,51 @@ def digest_refusal(target: str, lane: str) -> str | None:
     return None
 
 
+CODEX_LOW_PCT = 90.0
+USAGE_FILES = 10
+USAGE_TAIL_BYTES = 2_000_000
+USAGE_RE = re.compile(r'"rate_limits":\s*\{[^{}]*"primary":\s*(\{[^{}]*\})')
+
+
+def codex_usage(now: float | None = None) -> tuple[float, float | None] | str:
+    """The weekly use of this machine's Codex account: (percent used, reset time).
+
+    Reads the newest usage record that a Codex session wrote under
+    `$CODEX_HOME/sessions`. Each machine has its own account, so run this where
+    the lane will run. Returns a short reason when there is no current record:
+    none found, or the newest one belongs to a window that has already reset.
+    """
+    home = Path(os.environ.get("CODEX_HOME") or Path.home() / ".codex")
+    stamped = []
+    for path in home.glob("sessions/*/*/*/rollout-*.jsonl"):
+        try:
+            stamped.append((path.stat().st_mtime, path))
+        except OSError:
+            continue
+    for _, path in sorted(stamped, reverse=True)[:USAGE_FILES]:
+        try:
+            with path.open("rb") as handle:
+                handle.seek(0, os.SEEK_END)
+                handle.seek(max(0, handle.tell() - USAGE_TAIL_BYTES))
+                tail = handle.read().decode("utf-8", errors="replace")
+        except OSError:
+            continue
+        found = USAGE_RE.findall(tail)
+        if not found:
+            continue
+        try:
+            primary = json.loads(found[-1])
+            used = float(primary["used_percent"])
+        except (ValueError, KeyError, TypeError):
+            continue
+        resets = primary.get("resets_at")
+        resets = float(resets) if isinstance(resets, (int, float)) else None
+        if resets is not None and resets <= (time.time() if now is None else now):
+            return "the newest record is from a window that has reset"
+        return used, resets
+    return "no usage record on this machine"
+
+
 def preflight(args: argparse.Namespace) -> int:
     refusals: list[str] = []
 
@@ -434,6 +481,24 @@ def preflight(args: argparse.Namespace) -> int:
     high_load = load > args.max_load
     report("refuse" if high_load and args.numeric else "note" if high_load else "ok",
            "load", f"{load:.1f}, limit {args.max_load:g}")
+
+    usage = codex_usage()
+    family = model_family(args.model or "")
+    codex_lane = bool(family) and family[0].startswith("gpt")
+    if isinstance(usage, str):
+        report("note", "codex usage", usage)
+    else:
+        used, resets = usage
+        when = "" if resets is None else (
+            f", resets {dt.datetime.fromtimestamp(resets, dt.timezone.utc):%Y-%m-%d %H:%M} UTC")
+        detail = f"{used:.0f}% of the weekly limit used{when}"
+        if used >= 100:
+            report("refuse" if codex_lane else "note", "codex usage",
+                   detail + "; a Codex lane would stop at its first call")
+        elif used >= CODEX_LOW_PCT:
+            report("note", "codex usage", detail + "; a long Codex lane may stop mid-run")
+        else:
+            report("ok", "codex usage", detail)
 
     if not args.target:
         report("note", "model floor", "no target named, no floor checked")

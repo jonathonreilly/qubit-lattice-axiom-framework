@@ -23,6 +23,7 @@ from collections import Counter
 import datetime as dt
 import hashlib
 import json
+import math
 import os
 from pathlib import Path
 import re
@@ -416,16 +417,63 @@ def digest_refusal(target: str, lane: str) -> str | None:
 CODEX_LOW_PCT = 90.0
 USAGE_FILES = 10
 USAGE_TAIL_BYTES = 2_000_000
-USAGE_RE = re.compile(r'"rate_limits":\s*\{[^{}]*"primary":\s*(\{[^{}]*\})')
+CODEX_LIMIT_ID = "codex"
+WEEK_MINUTES = 10080
+
+
+def rate_limit_records(value: object):
+    """Every `rate_limits` object nested anywhere in one parsed log line."""
+    if isinstance(value, dict):
+        for key, item in value.items():
+            if key == "rate_limits" and isinstance(item, dict):
+                yield item
+            else:
+                yield from rate_limit_records(item)
+    elif isinstance(value, list):
+        for item in value:
+            yield from rate_limit_records(item)
+
+
+def weekly_usage(limits: dict) -> tuple[float, float | None] | None:
+    """(percent used, reset time) of the weekly window of one Codex record.
+
+    The weekly window is the one of 10080 minutes, in `primary` or `secondary`.
+    The percentage must be a finite number of at least 0; above 100 it is read
+    as 100, a spent account. The reset time is absent, or a number that converts
+    to a date. Anything else returns None: the record is unusable.
+    """
+    weekly = [window for window in (limits.get("primary"), limits.get("secondary"))
+              if isinstance(window, dict) and window.get("window_minutes") == WEEK_MINUTES]
+    if len(weekly) != 1:
+        return None
+    used, resets = weekly[0].get("used_percent"), weekly[0].get("resets_at")
+    if isinstance(used, bool) or not isinstance(used, (int, float)):
+        return None
+    if isinstance(used, float) and not math.isfinite(used):
+        return None
+    if used < 0:
+        return None
+    if resets is not None:
+        if isinstance(resets, bool) or not isinstance(resets, (int, float)):
+            return None
+        try:
+            dt.datetime.fromtimestamp(resets, dt.timezone.utc)
+        except (OverflowError, OSError, ValueError):
+            return None
+        resets = float(resets)
+    return (100.0 if used >= 100 else float(used)), resets
 
 
 def codex_usage(now: float | None = None) -> tuple[float, float | None] | str:
     """The weekly use of this machine's Codex account: (percent used, reset time).
 
-    Reads the newest usage record that a Codex session wrote under
-    `$CODEX_HOME/sessions`. Each machine has its own account, so run this where
-    the lane will run. Returns a short reason when there is no current record:
-    none found, or the newest one belongs to a window that has already reset.
+    Reads the newest Codex usage record (`limit_id` "codex") that a session wrote
+    under `$CODEX_HOME/sessions`, and its 10080-minute window. Each machine has
+    its own account, so run this where the lane will run. A log with no Codex
+    record is skipped. Returns a short reason when there is no current figure:
+    no record found, the newest record has no usable weekly figure, or it belongs
+    to a window that has already reset. An older figure never stands in for a
+    newer record that cannot be read.
     """
     home = Path(os.environ.get("CODEX_HOME") or Path.home() / ".codex")
     stamped = []
@@ -442,19 +490,27 @@ def codex_usage(now: float | None = None) -> tuple[float, float | None] | str:
                 tail = handle.read().decode("utf-8", errors="replace")
         except OSError:
             continue
-        found = USAGE_RE.findall(tail)
-        if not found:
+        newest = None
+        for text in reversed(tail.splitlines()):
+            if '"rate_limits"' not in text:
+                continue
+            try:
+                parsed = json.loads(text)
+            except ValueError:
+                continue
+            codex = [limits for limits in rate_limit_records(parsed)
+                     if limits.get("limit_id") == CODEX_LIMIT_ID]
+            if codex:
+                newest = codex[-1]
+                break
+        if newest is None:
             continue
-        try:
-            primary = json.loads(found[-1])
-            used = float(primary["used_percent"])
-        except (ValueError, KeyError, TypeError):
-            continue
-        resets = primary.get("resets_at")
-        resets = float(resets) if isinstance(resets, (int, float)) else None
-        if resets is not None and resets <= (time.time() if now is None else now):
+        usage = weekly_usage(newest)
+        if usage is None:
+            return "the newest Codex usage record has no usable weekly figure"
+        if usage[1] is not None and usage[1] <= (time.time() if now is None else now):
             return "the newest record is from a window that has reset"
-        return used, resets
+        return usage
     return "no usage record on this machine"
 
 
@@ -489,8 +545,11 @@ def preflight(args: argparse.Namespace) -> int:
         report("note", "codex usage", usage)
     else:
         used, resets = usage
-        when = "" if resets is None else (
-            f", resets {dt.datetime.fromtimestamp(resets, dt.timezone.utc):%Y-%m-%d %H:%M} UTC")
+        try:
+            when = "" if resets is None else (
+                f", resets {dt.datetime.fromtimestamp(resets, dt.timezone.utc):%Y-%m-%d %H:%M} UTC")
+        except (OverflowError, OSError, ValueError):
+            when = ", reset time unreadable"
         detail = f"{used:.0f}% of the weekly limit used{when}"
         if used >= 100:
             report("refuse" if codex_lane else "note", "codex usage",

@@ -32,7 +32,7 @@ writer per file (`RULES.md` section 5). A solo target is one lead with one part.
 |---|---|---|
 | `GOAL.md` | Target lead | Contract, critical path, interfaces with producer and consumer, model floors, lease |
 | `parts/<part>.md` | Part lead | The file below. `parts/<part>--<route>.md` is one attempt beside it, held by its session |
-| `library/` | Each entry's author | Rebuilt published lemmas with credit; `lit-<topic>.md` search records |
+| `library/`, `prior/` | Each entry's author | Rebuilt published lemmas with credit; `lit-<topic>.md` search records; `prior/<lane>.md`, a lane's prior-work digest (`SETTINGS.md`) |
 | `checks/<statement>-<commit>.md` | Its checker | One check record |
 
 ```text

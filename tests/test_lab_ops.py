@@ -1,6 +1,8 @@
 """Checks for the guards in scripts/lab_ops.py that protect work and models."""
 import contextlib
+import datetime as dt
 import io
+import json
 import os
 from pathlib import Path
 import subprocess
@@ -45,6 +47,159 @@ class FloorTest(unittest.TestCase):
             for extra, expected in cases:
                 with self.subTest(extra=extra):
                     self.assertEqual(call(*base, *extra)[0], expected)
+
+
+class PriorDigestTest(unittest.TestCase):
+    def test_lane_without_committed_digest_is_refused(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp)
+            git("init", "-q", cwd=repo)
+            target = repo / "target"
+            (target / "prior").mkdir(parents=True)
+            (target / "GOAL.md").write_text("goal\n", encoding="utf-8")
+            git("add", "-A", cwd=repo)
+            git("commit", "-q", "-m", "goal", cwd=repo)
+            base = ("preflight", "--target", str(target), "--min-disk-gb", "0",
+                    "--min-mem-pct", "0")
+            digest = target / "prior" / "a1.md"
+
+            def refused(*extra: str) -> bool:
+                code, out = call(*base, *extra)
+                self.assertEqual(code == 1, "refuse  prior digest" in out, out)
+                return code == 1
+
+            self.assertFalse(refused())
+            self.assertTrue(refused("--lane", "a1"), "missing")
+            digest.write_text("", encoding="utf-8")
+            git("add", "-A", cwd=repo)
+            git("commit", "-q", "--allow-empty", "-m", "empty digest", cwd=repo)
+            self.assertTrue(refused("--lane", "a1"), "empty")
+            digest.write_text("main proves nothing on this target\n", encoding="utf-8")
+            self.assertTrue(refused("--lane", "a1"), "edited, not committed")
+            git("add", "-A", cwd=repo)
+            self.assertTrue(refused("--lane", "a1"), "staged, not committed")
+            git("commit", "-q", "-m", "digest", cwd=repo)
+            self.assertFalse(refused("--lane", "a1"))
+            committed = digest.read_bytes()
+            for flag in ("skip-worktree", "assume-unchanged"):
+                git("update-index", f"--{flag}", "target/prior/a1.md", cwd=repo)
+                digest.write_text(f"edited behind the {flag} flag\n", encoding="utf-8")
+                self.assertTrue(refused("--lane", "a1"), f"{flag} hides the edit from git")
+                digest.write_bytes(committed)
+                self.assertFalse(refused("--lane", "a1"), f"{flag}, text as committed")
+                git("update-index", f"--no-{flag}", "target/prior/a1.md", cwd=repo)
+            self.assertTrue(refused("--lane", "a2"), "another lane's digest")
+            self.assertTrue(refused("--lane", "../prior/a1"), "path in the name")
+            (target / "prior" / ".gitignore").write_text("a3.md\n", encoding="utf-8")
+            (target / "prior" / "a3.md").write_text("ignored\n", encoding="utf-8")
+            self.assertTrue(refused("--lane", "a3"), "ignored, never committed")
+            (target / "prior" / "payload.txt").write_text("not tracked\n", encoding="utf-8")
+            (target / "prior" / ".gitignore").write_text("a3.md\npayload.txt\n",
+                                                         encoding="utf-8")
+            os.symlink("payload.txt", target / "prior" / "a4.md")
+            git("add", "target/prior/a4.md", cwd=repo)
+            git("commit", "-q", "-m", "digest that is a link", cwd=repo)
+            self.assertTrue(refused("--lane", "a4"), "a link to an untracked payload")
+            (target / "prior" / "a4.md").unlink()
+            (target / "prior" / "a4.md").write_text("payload.txt", encoding="utf-8")
+            self.assertTrue(refused("--lane", "a4"), "a file with the committed link's bytes")
+            other = repo / "other"
+            other.mkdir()
+            os.symlink(target / "prior", other / "prior")
+            code, out = call("preflight", "--target", str(other), "--lane", "a1",
+                             "--min-disk-gb", "0", "--min-mem-pct", "0")
+            self.assertEqual(code, 1, "the prior folder is a link")
+            self.assertIn("refuse  prior digest", out)
+            digest.unlink()
+            (target / "prior" / "copy.txt").write_bytes(committed)
+            os.symlink("copy.txt", digest)
+            self.assertTrue(refused("--lane", "a1"), "a link whose payload equals the commit")
+            digest.unlink()
+            digest.write_bytes(committed)
+            self.assertFalse(refused("--lane", "a1"))
+            digest.write_text("edited after the commit\n", encoding="utf-8")
+            self.assertTrue(refused("--lane", "a1"), "changed since the commit")
+            self.assertEqual(
+                call("preflight", "--lane", "a1", "--min-disk-gb", "0",
+                     "--min-mem-pct", "0")[0], 1, "a lane with no target")
+
+
+class ModelTierTest(unittest.TestCase):
+    def table(self, *rows: tuple[str, str, int]) -> str:
+        today = dt.date.today()
+        lines = ["intro", "", "| Tier | Position | Now | Resolved |", "|---|---|---|---|"]
+        lines += [f"| {tier} | text | `{model}` | {today - dt.timedelta(days=age)} |"
+                  for tier, model, age in rows]
+        return "\n".join(lines + ["", "| Role | Tier | Model | Since |", "| x | y | `gpt-9-astra` | 2020-01-01 |"])
+
+    def run_models(self, tmp: str, text: str, listed: list[dict] | None, *extra: str):
+        settings = Path(tmp) / "SETTINGS.md"
+        settings.write_text(text, encoding="utf-8")
+        home = Path(tmp) / "codex"
+        home.mkdir(exist_ok=True)
+        cache = home / "models_cache.json"
+        if listed is None:
+            cache.unlink(missing_ok=True)
+        else:
+            cache.write_text(json.dumps({"fetched_at": "t", "models": listed}), encoding="utf-8")
+        old = os.environ.get("CODEX_HOME")
+        os.environ["CODEX_HOME"] = str(home)
+        try:
+            return call("models", "--settings", str(settings), *extra)
+        finally:
+            if old is None:
+                del os.environ["CODEX_HOME"]
+            else:
+                os.environ["CODEX_HOME"] = old
+
+    def test_family_and_version(self):
+        cases = {
+            "gpt-6.1-sol": ("gpt-sol", (6, 1)), "gpt-6-astra": ("gpt-astra", (6,)),
+            "claude-fable-5-2": ("claude-fable", (5, 2)), "claude-opus-5": ("claude-opus", (5,)),
+            "gpt-reserve": None, "codex-auto-review": None, "claude-fable-next": None,
+        }
+        for model, expected in cases.items():
+            with self.subTest(model=model):
+                self.assertEqual(lab_ops.model_family(model), expected)
+
+    def test_newer_version_and_old_date_are_reported(self):
+        listed = [
+            {"slug": "gpt-6-astra", "visibility": "list"},
+            {"slug": "gpt-6.1-astra", "visibility": "list"},
+            {"slug": "gpt-5.6-astra", "visibility": "list"},
+            {"slug": "gpt-6.1-sol", "visibility": "list"},
+            {"slug": "gpt-7-luna", "visibility": "hide"},
+        ]
+        rows = (("Top A", "claude-fable-5-2", 0), ("Top O", "gpt-6-astra", 0),
+                ("Work O", "gpt-6.1-sol", 30), ("Cheap O", "gpt-6-luna", 31))
+        with tempfile.TemporaryDirectory() as tmp:
+            code, out = self.run_models(tmp, self.table(*rows), listed)
+            self.assertEqual(code, 1, out)
+            self.assertIn("update  Top O: gpt-6.1-astra is newer than gpt-6-astra", out)
+            self.assertIn("ok      Top A: claude-fable-5-2", out)
+            self.assertIn("ok      Work O: gpt-6.1-sol", out)
+            self.assertIn("review  Cheap O: gpt-6-luna was resolved 31 days ago", out)
+            self.assertNotIn("gpt-9-astra", out)
+            self.assertIn("models: 2 tier(s) to update", out)
+
+            code, out = self.run_models(tmp, self.table(*rows[:1]), listed)
+            self.assertEqual(code, 0, out)
+            self.assertIn("models: current", out)
+            code, out = self.run_models(tmp, self.table(*rows[:1]), listed,
+                                        "--known", "claude-fable-5-1, claude-fable-5-3")
+            self.assertEqual(code, 1, out)
+            self.assertIn("update  Top A: claude-fable-5-3 is newer than claude-fable-5-2", out)
+
+            code, out = self.run_models(tmp, self.table(*rows[:2]), None)
+            self.assertEqual(code, 0, out)
+            self.assertIn("lists:  none on this machine", out)
+            code, out = self.run_models(tmp, self.table(*rows[:2]), None, "--max-age-days", "-1")
+            self.assertEqual(code, 1, out)
+            self.assertEqual(self.run_models(tmp, "no table here\n", listed)[0], 1)
+            bad = self.table(*rows[:1]).replace(str(dt.date.today()), "2026-13-40")
+            code, out = self.run_models(tmp, bad, listed)
+            self.assertEqual(code, 1, out)
+            self.assertIn("unreadable date", out)
 
 
 class NumericLockTest(unittest.TestCase):
@@ -709,6 +864,17 @@ class DoctorTest(unittest.TestCase):
             try:
                 os.chdir(work)
                 self.assertEqual(call("doctor")[0], 0)
+
+                settings = work / "docs" / "ai_methodology" / "SETTINGS.md"
+                settings.parent.mkdir(parents=True)
+                settings.write_text(
+                    "| Tier | Position | Now | Resolved |\n|---|---|---|---|\n"
+                    "| Top | x | `gpt-1-testfamily` | 2020-01-01 |\n", encoding="utf-8")
+                code, text = call("doctor")
+                self.assertEqual(code, 0, "a model finding does not change the exit code")
+                self.assertIn("models: Top: gpt-1-testfamily was resolved", text)
+                settings.unlink()
+                self.assertNotIn("models:", call("doctor")[1])
 
                 (seed / "notes.md").write_text("more science\n", encoding="utf-8")
                 git("commit", "-q", "-am", "science only", cwd=seed)

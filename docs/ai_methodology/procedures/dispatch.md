@@ -53,9 +53,9 @@ that code reads, list strings that must survive and strings that must go.
 1. **Freeze.** Write the brief to a file. If it cannot be written, the work
    is not ready to hand over. (Reference: units of work.)
 2. **Preflight.** `python3 scripts/lab_ops.py preflight --target <folder>
-   --role <role> --model <model> --effort <effort> [--numeric]`. A refusal
-   stops the launch; report any required check that cannot run. Launch what
-   the machine carries, jobs times one job's peak memory, not a quota.
+   --role <role> --model <model> --effort <effort> [--lane <lane>] [--numeric]`.
+   A refusal stops the launch; report any required check that cannot run. Launch
+   what the machine carries, jobs times one job's peak memory, not a quota.
 3. **Lock numerics.** One numeric job per machine: `lab_ops.py numeric-lock
    acquire`, `refresh` before expiry, `release` after the job has stopped.
    (Reference: launch checks.)

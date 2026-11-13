@@ -8,6 +8,7 @@
   status           leads, leases, requests and computed standing of a target
   check-hash       print the hash lines a check record needs
   doctor           refuse when this checkout's rules differ from origin/main
+  models           report a model tier in SETTINGS.md that a newer model should hold
 
 Machine limits come from flags or LAB_MIN_DISK_GB, LAB_MIN_MEM_PCT,
 LAB_MAX_LOAD and LAB_LOCK_DIR. Exit 0 means go or done, 1 means refused, and
@@ -20,6 +21,7 @@ import argparse
 from collections import Counter
 import datetime as dt
 import hashlib
+import json
 import os
 from pathlib import Path
 import re
@@ -63,6 +65,7 @@ REQUIRED_FIELDS = ("statement", "commit", "content", "verdict", "failure", "path
 RECORD_FIELDS = REQUIRED_FIELDS + ("answers", "steer")
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.*?)\s*$")
 FLOOR_RE = re.compile(r"^model_floor\s+([\w-]+):\s*(.+)$")
+LANE_RE = re.compile(r"[A-Za-z0-9][\w.-]*")
 # Entry files, rules, procedures and the step references they bind.
 RULE_PATHS = (
     "AGENTS.md",
@@ -219,6 +222,16 @@ def doctor(args: argparse.Namespace) -> int:
     behind = git("rev-list", "--count", "HEAD..origin/main").stdout.strip() or "?"
     print(f"checkout: {behind} commits behind origin/main"
           + (f" ({note})" if note else ""))
+    settings = Path(SETTINGS_PATH)
+    if settings.is_file():
+        findings, _, sources = model_findings(
+            settings.read_text(encoding="utf-8", errors="replace"), None, MODEL_MAX_AGE_DAYS)
+        for kind, line in findings:
+            if kind != "ok":
+                print(f"models: {line}")
+        if any(kind != "ok" for kind, _ in findings):
+            print(f"models: update {SETTINGS_PATH}, models by role; "
+                  "python3 scripts/lab_ops.py models shows every tier")
     if not changed:
         print("rules: match origin/main")
         return 0
@@ -229,6 +242,113 @@ def doctor(args: argparse.Namespace) -> int:
     print("rules: differ from origin/main; read the current ones with "
           "git show origin/main:<path>")
     return 1
+
+
+# --- model tiers -----------------------------------------------------------
+
+SETTINGS_PATH = "docs/ai_methodology/SETTINGS.md"
+MODEL_MAX_AGE_DAYS = 30
+TIER_ROW_RE = re.compile(
+    r"^\|\s*([^|`]+?)\s*\|[^|]*\|\s*`([\w.-]+)`\s*\|\s*(\d{4}-\d{2}-\d{2})\s*\|\s*$")
+
+
+def model_family(model: str) -> tuple[str, tuple[int, ...]] | None:
+    """Family and version of a model id: gpt-6.1-sol is ("gpt-sol", (6, 1))."""
+    parts = model.split("-")
+    if len(parts) < 3:
+        return None
+    if parts[0] == "gpt":
+        family, numbers = "-".join(parts[2:]), parts[1].split(".")
+    elif parts[0] == "claude":
+        family, numbers = parts[1], parts[2:]
+    else:
+        return None
+    if not family or not all(n.isdigit() for n in numbers):
+        return None
+    return f"{parts[0]}-{family}", tuple(int(n) for n in numbers)
+
+
+def read_model_tiers(text: str) -> list[tuple[str, str, str]]:
+    """Rows (tier, model, date resolved) of the tier table in SETTINGS.md."""
+    rows: list[tuple[str, str, str]] = []
+    inside = False
+    for line in text.splitlines():
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        if cells[0] == "Tier" and cells[-1] == "Resolved":
+            inside = True
+        elif inside and not line.startswith("|"):
+            break
+        elif inside and (found := TIER_ROW_RE.match(line)):
+            rows.append((found[1], found[2], found[3]))
+    return rows
+
+
+def known_models(extra: str | None) -> tuple[set[str], list[str]]:
+    """Model ids this machine lists, and where each list came from."""
+    found: set[str] = set()
+    sources: list[str] = []
+    cache = Path(os.environ.get("CODEX_HOME") or Path.home() / ".codex") / "models_cache.json"
+    try:
+        data = json.loads(cache.read_text(encoding="utf-8"))
+        listed = {entry["slug"] for entry in data["models"]
+                  if entry.get("visibility", "list") == "list"}
+    except (OSError, ValueError, KeyError, TypeError, AttributeError):
+        listed = set()
+    else:
+        sources.append(f"{cache}, fetched {data.get('fetched_at', 'at an unknown time')}")
+    found |= {slug for slug in listed if isinstance(slug, str)}
+    if extra:
+        found |= {name.strip() for name in extra.split(",") if name.strip()}
+        sources.append("--known")
+    return found, sources
+
+
+def model_findings(text: str, extra: str | None, max_age_days: float
+                   ) -> tuple[list[tuple[str, str]], int, list[str]]:
+    """One (kind, line) per tier, the number of tiers read, and the lists used."""
+    known, sources = known_models(extra)
+    families = {name: model_family(name) for name in known}
+    findings: list[tuple[str, str]] = []
+    rows = read_model_tiers(text)
+    for tier, model, resolved in rows:
+        mine = model_family(model)
+        newer = sorted((family[1], name) for name, family in families.items()
+                       if mine and family and family[0] == mine[0] and family[1] > mine[1])
+        try:
+            age = (dt.date.today() - dt.date.fromisoformat(resolved)).days
+        except ValueError:
+            age = None
+        if newer:
+            findings.append(("update", f"{tier}: {newer[-1][1]} is newer than {model}"))
+        elif age is None:
+            findings.append(("review", f"{tier}: {model} has an unreadable date {resolved}"))
+        elif age > max_age_days:
+            findings.append(("review", f"{tier}: {model} was resolved {age} days ago; "
+                             "confirm that it still holds the tier and set the date"))
+        else:
+            findings.append(("ok", f"{tier}: {model}, resolved {resolved}"))
+    return findings, len(rows), sources
+
+
+def models(args: argparse.Namespace) -> int:
+    path = Path(args.settings)
+    try:
+        text = path.read_text(encoding="utf-8", errors="replace")
+    except OSError as exc:
+        return refuse(f"cannot read {path}: {exc}")
+    findings, count, sources = model_findings(text, args.known, args.max_age_days)
+    if not count:
+        return refuse(f"{path} has no model tier table")
+    for kind, line in findings:
+        print(f"{kind:<7} {line}")
+    print("lists:  " + ("; ".join(sources) if sources else
+                         "none on this machine; pass --known with the ids this "
+                         "session's environment lists"))
+    stale = sum(kind != "ok" for kind, _ in findings)
+    print("models: current" if not stale else
+          f"models: {stale} tier(s) to update in {path}; a lead does this and "
+          "does not ask the owner")
+    return 1 if stale else 0
 
 
 # --- preflight -------------------------------------------------------------
@@ -264,6 +384,31 @@ def floor_allows(allowed: list[str], model: str | None, effort: str | None) -> b
 def numeric_lock_paths() -> tuple[str, str]:
     root = Path(os.environ.get("LAB_LOCK_DIR", "/tmp/physics-lab"))
     return str(root / "numeric_lock.json"), str(root / "numeric_lock.guard")
+
+
+def digest_refusal(target: str, lane: str) -> str | None:
+    """Why the lane's prior-work digest does not allow a launch, or None."""
+    if not LANE_RE.fullmatch(lane):
+        return f"lane name {lane!r} is not a plain file name"
+    digest = Path(target) / "prior" / f"{lane}.md"
+    if digest.is_symlink() or digest.parent.is_symlink():
+        return f"{digest} is reached through a symbolic link; commit the file itself"
+    if not digest.is_file():
+        return f"{digest} does not exist"
+    data = digest.read_bytes()
+    if not data.strip():
+        return f"{digest} is empty"
+    # Compare the bytes on disk with the blob in HEAD. The index is not asked:
+    # its skip-worktree and assume-unchanged flags hide an edit from git status.
+    entry = git("ls-tree", "HEAD", "--", digest.name, cwd=digest.parent)
+    fields = entry.stdout.split(None, 3)
+    if (entry.returncode or len(fields) < 3 or fields[1] != "blob"
+            or fields[0] not in ("100644", "100755")):
+        return f"{digest} is not committed as a regular file"
+    algorithm = hashlib.sha256 if len(fields[2]) == 64 else hashlib.sha1
+    if algorithm(b"blob %d\0" % len(data) + data).hexdigest() != fields[2]:
+        return f"{digest} differs from its committed text"
+    return None
 
 
 def preflight(args: argparse.Namespace) -> int:
@@ -305,6 +450,15 @@ def preflight(args: argparse.Namespace) -> int:
             report("refuse", "model floor",
                    f"{args.model}@{args.effort} is not in {floors[args.role]} "
                    f"for {args.role}")
+
+    if args.lane is None:
+        report("note", "prior digest", "no lane named, none checked")
+    elif not args.target:
+        report("refuse", "prior digest", "--lane needs --target")
+    else:
+        why = digest_refusal(args.target, args.lane)
+        report("refuse" if why else "ok", "prior digest",
+               why or f"prior/{args.lane}.md is committed")
 
     nice_ok = run("nice", "-n", "10", "true").returncode == 0
     report("ok" if nice_ok else "refuse" if args.numeric else "note", "nice",
@@ -816,6 +970,7 @@ def build_parser() -> argparse.ArgumentParser:
     check.add_argument("--role", help="role in the target, such as worker or checker")
     check.add_argument("--model", help="model the job will run")
     check.add_argument("--effort", help="reasoning effort the job will run")
+    check.add_argument("--lane", help="lane to launch; needs <target>/prior/<lane>.md committed")
     check.add_argument("--numeric", action="store_true", help="the job does numerics")
     check.add_argument("--needs-push", action="store_true", help="the session must push")
     check.add_argument("--min-disk-gb", type=float, default=env_float("LAB_MIN_DISK_GB", 10))
@@ -843,6 +998,14 @@ def build_parser() -> argparse.ArgumentParser:
                         help="something the statement reads; NAME is its statement "
                              "name, or - when it is not a statement")
     hashes.set_defaults(handler=check_hash)
+
+    tiers = commands.add_parser("models", help="report model tiers a newer model should hold")
+    tiers.add_argument("--settings", default=SETTINGS_PATH)
+    tiers.add_argument("--known", help="comma-separated model ids this session's "
+                       "environment lists, added to the lists on the machine")
+    tiers.add_argument("--max-age-days", type=float,
+                       default=env_float("LAB_MODEL_MAX_AGE_DAYS", MODEL_MAX_AGE_DAYS))
+    tiers.set_defaults(handler=models)
 
     fresh = commands.add_parser("doctor", help="check this checkout's rules are current")
     fresh.add_argument("--no-fetch", action="store_true",

@@ -202,6 +202,109 @@ class ModelTierTest(unittest.TestCase):
             self.assertIn("unreadable date", out)
 
 
+class CodexUsageTest(unittest.TestCase):
+    """preflight reads the Codex account's weekly use and refuses a spent account."""
+
+    BASE = ("preflight", "--min-disk-gb", "0", "--min-mem-pct", "0")
+    LATER = 4102444800  # 2100-01-01, a reset time that has not passed
+
+    def write(self, home: Path, name: str, records: list[tuple], age: float) -> None:
+        day = home / "sessions" / "2026" / "11" / "13"
+        day.mkdir(parents=True, exist_ok=True)
+        lines = ['{"type":"session_meta"}']
+        for used, resets in records:
+            lines.append(json.dumps({"payload": {"type": "token_count", "rate_limits": {
+                "limit_id": "codex", "limit_name": None,
+                "primary": {"used_percent": used, "window_minutes": 10080, "resets_at": resets},
+                "secondary": None}}}, separators=(",", ":")))
+        path = day / f"rollout-{name}.jsonl"
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        stamp = dt.datetime.now().timestamp() - age
+        os.utime(path, (stamp, stamp))
+
+    def line(self, home: Path, *extra: str) -> tuple[int, str]:
+        old = os.environ.get("CODEX_HOME")
+        os.environ["CODEX_HOME"] = str(home)
+        try:
+            code, out = call(*self.BASE, *extra)
+        finally:
+            if old is None:
+                del os.environ["CODEX_HOME"]
+            else:
+                os.environ["CODEX_HOME"] = old
+        found = [text for text in out.splitlines() if " codex usage: " in text]
+        self.assertEqual(len(found), 1, out)
+        return code, found[0]
+
+    def test_the_newest_record_of_the_newest_log_is_read(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            self.write(home, "old", [(5.0, self.LATER)], age=500)
+            self.write(home, "new", [(10.0, self.LATER), (42.0, self.LATER)], age=5)
+            code, line = self.line(home, "--model", "gpt-6-astra")
+            self.assertEqual(code, 0, line)
+            self.assertTrue(line.startswith("ok "), line)
+            self.assertIn("42% of the weekly limit used, resets 2100-01-01 00:00 UTC", line)
+
+    def test_a_log_without_a_usable_record_is_skipped(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            self.write(home, "older", [(31.0, self.LATER)], age=500)
+            self.write(home, "empty", [], age=50)
+            self.write(home, "broken", [("many", self.LATER)], age=5)
+            _, line = self.line(home)
+            self.assertIn("31% of the weekly limit used", line)
+
+    def test_a_spent_account_refuses_a_codex_lane_and_nothing_else(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            self.write(home, "a", [(100.0, self.LATER)], age=5)
+            code, line = self.line(home, "--model", "gpt-6-astra")
+            self.assertEqual(code, 1, line)
+            self.assertTrue(line.startswith("refuse "), line)
+            self.assertIn("would stop at its first call", line)
+            for other in (("--model", "claude-opus-5-5"), ()):
+                code, line = self.line(home, *other)
+                self.assertEqual(code, 0, (other, line))
+                self.assertTrue(line.startswith("note "), (other, line))
+
+    def test_a_nearly_spent_account_is_a_note(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            for used, kind in ((99.9, "note "), (90.0, "note "), (89.9, "ok ")):
+                self.write(home, "a", [(used, None)], age=5)
+                code, line = self.line(home, "--model", "gpt-6-astra")
+                self.assertEqual(code, 0, (used, line))
+                self.assertTrue(line.startswith(kind), (used, line))
+                self.assertEqual("may stop mid-run" in line, kind == "note ", (used, line))
+                self.assertNotIn("resets", line)
+
+    def test_a_record_from_a_window_that_has_reset_is_not_trusted(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            self.write(home, "a", [(100.0, 946684800)], age=5)  # reset time in 2000
+            code, line = self.line(home, "--model", "gpt-6-astra")
+            self.assertEqual(code, 0, line)
+            self.assertTrue(line.startswith("note "), line)
+            self.assertIn("has reset", line)
+            old = os.environ.get("CODEX_HOME")
+            os.environ["CODEX_HOME"] = str(home)
+            try:
+                self.assertIsInstance(lab_ops.codex_usage(now=946684800), str)
+                self.assertEqual(lab_ops.codex_usage(now=946684799), (100.0, 946684800.0))
+            finally:
+                if old is None:
+                    del os.environ["CODEX_HOME"]
+                else:
+                    os.environ["CODEX_HOME"] = old
+
+    def test_no_record_is_a_note(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            code, line = self.line(Path(tmp), "--model", "gpt-6-astra")
+            self.assertEqual(code, 0, line)
+            self.assertEqual(line.strip(), "note    codex usage: no usage record on this machine")
+
+
 class NumericLockTest(unittest.TestCase):
     def test_second_holder_is_refused_until_release(self):
         with tempfile.TemporaryDirectory() as tmp:

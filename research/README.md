@@ -8,7 +8,7 @@ standing. The rule is the row "Research sections" in
 
 | Section | What it is | Verification its README states |
 |---|---|---|
-| [ym4d/](ym4d/README.md) | Parts and posted notes on 4D lattice Yang–Mills, working on the Sussman–Alpöge account | not stated yet |
+| [ym4d/](ym4d/README.md) | Parts and posted notes on 4D lattice Yang–Mills, working on the Sussman–Alpöge account | verification inventory open; obligation listed there |
 | [mass-gap/su2-aligned-response/](mass-gap/su2-aligned-response/README.md) | Five notes of the SU(2) gauge-aligned response lane | none yet; listed there as an open obligation |
 
 Each part says who wrote it and who read it. Words such as "frozen" and

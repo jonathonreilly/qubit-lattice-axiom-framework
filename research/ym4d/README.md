@@ -23,6 +23,15 @@ below are this project's own terms, defined here.
   `checked` of this repository's rules (`docs/ai_methodology/RULES.md`,
   section 1): these texts have no check records under those rules.
 
+## Verification
+
+The verification inventory is an open obligation: for each part, identify its
+Lean certificate or compute check, or record "none yet" and list the missing
+verification here under the "Research sections" row of
+`docs/ai_methodology/SETTINGS.md`. The referee readings listed below do not
+complete that inventory. This records missing verification metadata, without
+asserting that no verification artifacts exist.
+
 ## Source
 
 Except for this README, `.gitattributes`, and the five `-issue.md` texts,

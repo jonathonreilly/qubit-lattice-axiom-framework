@@ -246,28 +246,16 @@ For publication-facing or quantitative work, also inspect
    branches whose marginal repo value was review-prep rather than new science.
    Do not repeat that failure mode.
 
-   **NO-GO DISCIPLINE GATE (mandatory pre-PR self-review for negative claims).**
-   The V1-V5 Promotion Value Gate above prevents overclaiming POSITIVE results.
-   The symmetric counterpart, the N1-N8 No-Go Discipline Gate, prevents
-   overclaiming NEGATIVE results. Run the `no-go-discipline` skill BEFORE
-   shipping any cycle artifact, PR body, source note, runner, or review verdict
-   that asserts a `no_go`, `stretch_attempt_negative`, `bounded_with_named_walls`,
-   or derived-no-go-boundary result. Answer N1-N8 IN WRITING, and LAND the
-   answers in the PR as a committed artifact the audit lane can bind: a
-   `## No-Go Discipline Gate` section in the source note itself, or a
-   committed `NO_GO_DISCIPLINE_CHECKLIST.md` that the note links. The PR body
-   is not a landing surface, and neither is the branch-local
-   `CLAIM_STATUS_CERTIFICATE.md` — keep the cycle's copy there as loop state
-   and copy it into the PR body as a courtesy, but review-loop's salvage pass
-   strips claim-status certificates, handoffs, and campaign state out of a
-   salvage slice, so only the source note or its linked sidecar survives as
-   the record. The second required landing artifact is the
-   N5 execution certificate in the primary runner's cached stdout, one
-   substantive line each for `per_element:`, `per_site:`, `per_mode:`,
-   `per_block:`, and `lattice_wide:`. A packet that existed at review time and
-   did not land is this repo's largest audit-invalidation class
-   (`docs/ai_methodology/skills/no-go-discipline/SKILL.md` Output section;
-   conformance spec section 4).
+   **NO-GO DISCIPLINE GATE (pre-PR self-review aid for negative claims).**
+   The V1-V5 Promotion Value Gate above helps prevent overclaiming POSITIVE
+   results. The symmetric counterpart, the N1-N8 No-Go Discipline prompts,
+   helps prevent overclaiming NEGATIVE results. Before shipping any cycle
+   artifact, PR body, source note, runner, or review verdict that asserts a
+   `no_go`, `stretch_attempt_negative`, `bounded_with_named_walls`, or
+   derived-no-go-boundary result, answer the two obstruction questions of
+   `docs/ai_methodology/procedures/check.md`, using the prompts below where
+   they help. No gate requires the answers to be committed, and no gate reads
+   N5 lines in runner output (owner, 2026-11-13).
 
    | # | Check | Failure condition |
    |---|---|---|
@@ -283,9 +271,9 @@ For publication-facing or quantitative work, also inspect
    If any failure condition is hit, demote to one of: `partial-attempt-with-named-untested-routes`,
    `partial-narrowing`, `bounded-with-corrected-wall-count`, or
    `stretch-attempt-with-honest-residual`. Record the failing checklist items
-   in `NO_GO_LEDGER.md`. Do not weaken the gate by lowering the failure
-   thresholds or fabricate coverage. Narrowing can repair the scientific scope
-   while the packet remains incomplete; report those facts separately.
+   in `NO_GO_LEDGER.md`. Do not lower a failure condition to make the answers
+   pass, and never fabricate coverage. A short or incomplete checklist is not a
+   defect of the claim.
 
    See [`docs/ai_methodology/skills/no-go-discipline/SKILL.md`](../../no-go-discipline/SKILL.md)
    for the full skill plus archetypal failure-mode case studies from the

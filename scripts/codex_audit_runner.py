@@ -67,7 +67,6 @@ import audit_invocation
 import audit_contract
 import compute_audit_dispatch_queue
 import compute_reaudit_candidates
-import forensic_evidence_readiness
 
 LEDGER_PATH = AUDIT_DIR / "data" / "audit_ledger.json"
 QUEUE_PATH = AUDIT_DIR / "data" / "audit_queue.json"
@@ -2408,22 +2407,6 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     return prompt
 
 
-def forensic_evidence_readiness_issue(
-    evidence_manifest: dict[str, dict],
-) -> str | None:
-    """Return a definite missing-evidence reason before launching an auditor.
-
-    N5 dispositions are mechanically impossible when the authenticated source
-    contains negative-rhetoric groups but live current-cycle runner stdout does
-    not carry one substantive certificate line for each canonical resolution.
-    Detect only that necessary condition here; all scientific judgments and
-    every remaining N1-N8 gate stay with the restricted auditor and validator.
-    """
-    return forensic_evidence_readiness.live_manifest_readiness_issue(
-        evidence_manifest
-    )
-
-
 def fit_prompt_to_transport_limit(
     prompt: str,
     evidence_manifest: dict[str, dict],
@@ -2436,9 +2419,10 @@ def fit_prompt_to_transport_limit(
 
     Validation and apply receive the exact rendered subset plus a digest/count
     commitment to the complete orchestrator index. In the forensic tier, the
-    inserted binding notice requires an incomplete N8 FAIL packet and forbids
-    ``audited_clean``. In the development tier it only forbids exhaustive N8
-    claims from the omitted records and does not force a verdict. If even an
+    inserted binding notice forbids ``audited_clean`` and, when the optional
+    packet is supplied, requires it to record an incomplete N8 FAIL. In the
+    development tier it only forbids exhaustive N8 claims from the omitted
+    records and does not force a verdict. If even an
     empty rendered candidate list cannot fit, fail closed instead of clipping
     source/runner evidence.
     """
@@ -2465,19 +2449,20 @@ def fit_prompt_to_transport_limit(
         bounded["candidates"] = candidates[:candidate_count]
         bounded_text = json.dumps(bounded, indent=2, sort_keys=True)
         forensic_notice = (
-            "Therefore set N8_cross_cycle_echo.packet_complete=false, keep "
-            "N8_cross_cycle_echo.unresolved nonempty, set the overall "
-            "no_go_discipline.status=FAIL, and do not return audited_clean. "
+            "Therefore do not return audited_clean. If you supply the optional "
+            "no_go_discipline packet, set N8_cross_cycle_echo.packet_complete="
+            "false, keep N8_cross_cycle_echo.unresolved nonempty, and set the "
+            "overall no_go_discipline.status=FAIL. "
             if forensic_bound
             else
             "This development-tier transport bound does not force a verdict "
             "when the final classification carries no negative assertion. If "
             "you classify claim_type=no_go or declare any nonempty "
-            "negative_assertion_classes, set "
+            "negative_assertion_classes, do not return audited_clean; if you "
+            "also supply the optional no_go_discipline packet, set "
             "N8_cross_cycle_echo.packet_complete=false, keep its unresolved "
-            "list nonempty, set no_go_discipline.status=FAIL, and do not return "
-            "audited_clean. Otherwise, scope any N8 judgment to the rendered "
-            "records. "
+            "list nonempty, and set no_go_discipline.status=FAIL. Otherwise, "
+            "scope any N8 judgment to the rendered records. "
         )
         notice = (
             "\n\n---\n"
@@ -3344,13 +3329,16 @@ def validate_verdict(
         n8 = packet.get("N8_cross_cycle_echo") if isinstance(packet, dict) else None
         if blob.get("verdict") == "audited_clean":
             return "transport-bounded N8 evidence forbids audited_clean"
-        if not isinstance(packet, dict) or packet.get("status") != "FAIL":
-            return "transport-bounded N8 evidence requires no_go_discipline.status=FAIL"
-        if not isinstance(n8, dict) or n8.get("packet_complete") is not False:
-            return "transport-bounded N8 evidence requires packet_complete=false"
-        unresolved = n8.get("unresolved") if isinstance(n8, dict) else None
-        if not isinstance(unresolved, list) or not unresolved:
-            return "transport-bounded N8 evidence requires a nonempty unresolved list"
+        # The packet is optional (2026-11-13). The bound still forbids clean;
+        # a supplied packet must record the cut-off N8 scan as incomplete.
+        if isinstance(packet, dict):
+            if packet.get("status") != "FAIL":
+                return "transport-bounded N8 evidence requires no_go_discipline.status=FAIL"
+            if not isinstance(n8, dict) or n8.get("packet_complete") is not False:
+                return "transport-bounded N8 evidence requires packet_complete=false"
+            unresolved = n8.get("unresolved") if isinstance(n8, dict) else None
+            if not isinstance(unresolved, list) or not unresolved:
+                return "transport-bounded N8 evidence requires a nonempty unresolved list"
     if (
         blob.get("verdict") == "audited_clean"
         and evidence_manifest is not None
@@ -4695,23 +4683,6 @@ def main() -> int:
                     f"{transport_bound['prompt_chars_after']} chars; "
                     f"{transport_disposition}"
                 )
-
-            readiness_issue = (
-                forensic_evidence_readiness_issue(exact_evidence_manifest)
-                if transport_forensic and not args.dry_run
-                else None
-            )
-            if readiness_issue is not None:
-                print(f"  COMPUTE_REQUIRED preflight: {readiness_issue}")
-                skipped += 1
-                with run_log.open("a", encoding="utf-8") as f:
-                    f.write(json.dumps({
-                        "claim_id": cid,
-                        "phase": "compute_required",
-                        "reason": readiness_issue,
-                        "source": "forensic_evidence_preflight",
-                    }) + "\n")
-                continue
 
             delivery_packet_fingerprint = audit_packet_source_fingerprint(
                 row,

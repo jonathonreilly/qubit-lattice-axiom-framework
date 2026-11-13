@@ -1113,7 +1113,7 @@ class ScienceFingerprintFixture(unittest.TestCase):
             "audit_status": "audited_clean",
             "claim_type": self.rows["target"]["claim_type"],
             "claim_scope": self.rows["target"]["claim_scope"],
-            "invalidation_reason": "no_go_discipline_packet_missing",
+            "invalidation_reason": "no_go_discipline_packet_invalid",
         }
         archived["audit_state_snapshot"] = {
             "science_fingerprint": baseline,
@@ -1131,6 +1131,26 @@ class ScienceFingerprintFixture(unittest.TestCase):
             self.assertEqual(
                 compute_audit_queue.audit_work_kind(target, rows),
                 ("legacy_packet_upgrade", None),
+            )
+            # A missing packet is no longer a packet-only defect (2026-11-13):
+            # the same exact-science archive goes to a fresh audit.
+            missing_packet_archive = {
+                **archived,
+                "invalidation_reason": "no_go_discipline_packet_missing",
+            }
+            missing_packet_target = {
+                **target,
+                "previous_audits": [missing_packet_archive],
+            }
+            self.assertEqual(
+                compute_audit_queue.audit_work_kind(
+                    missing_packet_target,
+                    {**rows, "target": missing_packet_target},
+                ),
+                (
+                    "fresh_scientific_audit",
+                    "no_go_discipline_packet_missing",
+                ),
             )
             target_without_proof = {
                 **target,

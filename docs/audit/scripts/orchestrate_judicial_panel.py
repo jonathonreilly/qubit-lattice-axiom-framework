@@ -411,7 +411,8 @@ hybrid_resolution_note. Use `neither` only when neither original position nor
 an applyable hybrid is sufficient; still vote a complete conservative tuple.
 Replace the null optional values with the exact sided seat values when present.
 For a hybrid or neither vote, supply the complete load-bearing step, decoration
-parent, repair note, and N1-N8 object whenever the chosen tuple requires them.
+parent and repair note whenever the chosen tuple requires them; the N1-N8
+object is optional.
 Declare negative_assertion_classes honestly for the tuple you ratify. A first-
 sided vote MUST explain the second auditor's error; a second-sided vote MUST
 explain the first auditor's error; a hybrid or neither vote MUST explain errors

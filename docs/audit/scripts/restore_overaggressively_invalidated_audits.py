@@ -9,11 +9,10 @@ safe to run on every pipeline pass.
 Restored categories:
 
   3. `no_go_discipline_packet_missing` invalidations whose archived audit
-     is restorable under the CURRENT no-go trigger. The restoration guard
-     re-runs the live source/output gate: retained clean/no-go authority that
-     still requires a packet, or any archived packet that does not round-trip
-     validation, stays invalidated for fresh audit. Development-tier non-clean
-     repair verdicts follow their live optional-packet contract.
+     is restorable now. Since 2026-11-13 the packet is optional, so a missing
+     packet never blocks a restore; an archived packet that is present must
+     still round-trip validation, and every other guard (lint compatibility,
+     science and judgment fingerprints, no other live invalidation) applies.
 
   4. `dep_weakened:dep_id:before->after` invalidations whose `dep_id`
      has already recovered on the live ledger — through a landed
@@ -662,31 +661,8 @@ def restore_audit_from_previous(
         "no_go_discipline": new_row.get("no_go_discipline"),
         "negative_assertion_classes": new_row.get("negative_assertion_classes"),
     }
-    gate_context = _forensic_gate() if restoring_clean else contextlib.nullcontext()
-    with gate_context:
-        output_required = no_go_discipline_gate.output_requires_no_go_discipline(
-            gate_blob
-        )
-    # Honor a non-empty declaration present on EITHER storage surface:
-    # the archived audit or the reset live row (legacy archives predate
-    # the field, but a surviving live declaration is still the auditor's
-    # semantic judgment). Absence of the key on genuinely old archives
-    # remains accepted.
-    declared_archived = archived.get("negative_assertion_classes")
-    declared_live = row.get("negative_assertion_classes")
-    declared_requires = any(
-        isinstance(d, list) and bool(d)
-        for d in (declared_archived, declared_live)
-    )
-    packet_binds = no_go_discipline_gate.packet_requirement_binds(
-        gate_blob, source_required=source_required
-    )
-    if (
-        (source_required or output_required or declared_requires)
-        and packet_binds
-        and new_row.get("no_go_discipline") is None
-    ):
-        return None
+    # The packet is optional (2026-11-13): a missing packet never blocks a
+    # restore; a present one must still round-trip validation below.
     cross = new_row.get("cross_confirmation") or {}
     cross_has_packet = isinstance(cross, dict) and any(
         isinstance(cross.get(audit_key), dict)
@@ -709,16 +685,8 @@ def restore_audit_from_previous(
             if not isinstance(summary, dict) or not summary:
                 continue
             verdict = summary.get("verdict") or summary.get("audit_status")
-            summary_requires_packet = (
-                source_required
-                or no_go_discipline_gate.output_requires_no_go_discipline(summary)
-                or bool(summary.get("negative_assertion_classes"))
-            )
             packet = summary.get("no_go_discipline")
             if packet is None:
-                # A required clean seat without a packet is not restorable.
-                if summary_requires_packet and verdict == "audited_clean":
-                    return None
                 continue
             # A PRESENT nested packet must round-trip validation even when
             # the seat would not independently require one, mirroring the
@@ -786,12 +754,10 @@ def select_restore_candidates(
         weaker than the archived audit's snapshot.
       - `packet_set`: dict mapping `cid` -> archived `audit_status` for
         rows whose most recent invalidation was
-        `no_go_discipline_packet_missing` and whose archived audit is
-        restorable under the CURRENT no-go trigger: the restoration
-        guard in `restore_audit_from_previous` re-runs the live
-        source/output gate, so a row that still asserts a gated negative
-        boundary without a packet stays invalidated for fresh audit.
-        Only the trigger-precision repair makes rows eligible here.
+        `no_go_discipline_packet_missing` and whose archived audit passes
+        every guard in `restore_audit_from_previous`. A missing packet no
+        longer blocks (2026-11-13); fingerprint, lint and present-packet
+        guards still do.
       - `recovered_dep_set`: list of `(cid, dep_id, archived_status)`
         tuples for rows whose most recent invalidation was a
         `dep_weakened:*` whose dep has ALREADY recovered on the live

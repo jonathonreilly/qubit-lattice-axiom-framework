@@ -38,9 +38,9 @@ Triggers (any of):
      This handles classifier upgrades — most relevantly the 2026-05-10
      alias-resolution fix which made `sp.simplify(...)` calls visible as
      class-A patterns. Only invalidates `audited_conditional` rows.
-  7. A clean negative-boundary audit has no structured No-Go Discipline
-     packet. Legacy packetless authority is archived and returned to fresh
-     audit under `no_go_discipline_packet_missing` rather than grandfathered.
+  7. Retired 2026-11-13: a missing No-Go Discipline packet. The packet is
+     optional, so `no_go_discipline_packet_missing` is no longer emitted;
+     archives that carry it are history.
   8. A live No-Go Discipline packet no longer validates against the current
      evidence/premise policy. Archive it and return the row to fresh audit
      instead of leaving strict lint blocked on stale authority.
@@ -552,14 +552,8 @@ def detect_invalidation(
             ):
                 return "cross_confirmation_auditor_provenance_incomplete"
             nested_packet = summary.get("no_go_discipline")
-            required = (
-                source_required
-                or no_go_discipline_gate.output_requires_no_go_discipline(summary)
-                or bool(summary.get("negative_assertion_classes"))
-            )
             if nested_packet is None:
-                if required and verdict == "audited_clean":
-                    return "no_go_discipline_cross_confirmation_packet_invalid"
+                # The packet is optional (2026-11-13).
                 continue
             evidence_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
                 nested_packet if isinstance(nested_packet, dict) else {}
@@ -607,26 +601,9 @@ def detect_invalidation(
     if audit_status == "audit_in_progress":
         return None
 
-    if (
-        audit_status not in {None, "unaudited"}
-        and bool(row.get("negative_assertion_classes"))
-        and packet is None
-        and no_go_discipline_gate.packet_requirement_binds(
-            {**row, "verdict": audit_status},
-            source_required=source_required,
-        )
-    ):
-        return "no_go_discipline_packet_missing"
-
+    # A missing packet is no longer a reset reason (2026-11-13): the packet is
+    # optional, and only a supplied one is validated above.
     if audit_status == "audited_clean":
-        output_required = no_go_discipline_gate.output_requires_no_go_discipline(
-            {**row, "verdict": audit_status}
-        )
-        declared = row.get("negative_assertion_classes")
-        declared_requires = isinstance(declared, list) and bool(declared)
-        required = source_required or output_required or declared_requires
-        if required and packet is None:
-            return "no_go_discipline_packet_missing"
         if packet is not None and not isinstance(packet, dict):
             return "no_go_discipline_packet_invalid"
 

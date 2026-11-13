@@ -104,8 +104,10 @@ def needs_audit(row: dict) -> tuple[bool, str]:
     return False, "not_pending"
 
 
+# A missing packet is no longer a packet-only defect (2026-11-13): the packet
+# is optional, so such an archive is either restored or audited afresh; it is
+# never routed to a packet upgrade.
 PACKET_ONLY_INVALIDATION_PREFIXES = (
-    "no_go_discipline_packet_missing",
     "no_go_discipline_packet_invalid",
     "no_go_discipline_cross_confirmation_packet_invalid",
     "cross_confirmation_first_audit_no_go_packet_invalid",

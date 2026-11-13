@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=b5fcd9f5243480a1670df2c411782a7a6efff6d9b5951c3f749372055942d336 -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=76c4568472717b4dd2aa6d0be869eefcfa31a1c6bde012b1478dea50ca1c14df -->
 # Controlled Vocabulary
 
 > **Front-door lookup:** Looking up a single term? Go to
@@ -410,9 +410,9 @@ After the class, the auditor names the cheapest next repair action.
 
 ### No-Go Discipline packet fields
 
-`no_go_discipline.status` records the mandatory structured N1-N8 stress-test outcome for negative boundaries. Exactly one of:
+`no_go_discipline.status` records the outcome of the optional structured N1-N8 stress test for negative boundaries, when an auditor supplies the packet. Exactly one of:
 
-- `PASS` — Every required N1-N8 record closes with no unresolved item; eligible to support a clean negative verdict.
+- `PASS` — Every N1-N8 record in the supplied packet closes with no unresolved item; consistent with a clean verdict, never sufficient for one.
 - `FAIL` — At least one required stress test remains open, incomplete, or mismatched; forbids audited_clean and requires an explicit demotion.
 
 When the status is `FAIL`, `no_go_discipline.demotion` is required and must be exactly one of:
@@ -422,11 +422,11 @@ When the status is `FAIL`, `no_go_discipline.demotion` is required and must be e
 - `bounded-with-corrected-wall-count` — Retains only the bounded wall set that survives the independence audit.
 - `stretch-attempt-with-honest-residual` — Preserves a useful stretch attempt while stating the unresolved residual explicitly.
 
-Packetless legacy negative authority is invalidated with the controlled reason:
+Packetless negative authority was once invalidated with this controlled reason, retired on 2026-11-13:
 
-- `no_go_discipline_packet_missing` — A clean negative-boundary audit has no structured N1-N8 packet; archive it and return the row to fresh audit before it can remain authoritative.
+- `no_go_discipline_packet_missing` — Historical: a negative-boundary audit had no structured N1-N8 packet and was archived for fresh audit. Not emitted since 2026-11-13.
 
-`negative_assertion_classes` is the mandatory auditor declaration on every incoming audit: the policy assertion classes the artifact makes, judged semantically from the full note (empty list when none). Any non-empty declaration requires the N1-N8 packet; an empty declaration never bypasses the mechanical trigger. Allowed classes:
+`negative_assertion_classes` is the mandatory auditor declaration on every incoming audit: the policy assertion classes the artifact makes, judged semantically from the full note (empty list when none). A non-empty declaration marks the verdict as one about an obstruction; it does not require the N1-N8 packet. Allowed classes:
 
 - `no_go_result` — Asserts a no_go outcome: structurally closed, no route exists, no retained primitive supplies the target.
 - `stretch_attempt_negative` — Asserts a stretch-attempt negative outcome: the attempted route does not close.

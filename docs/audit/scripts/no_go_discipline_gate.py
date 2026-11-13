@@ -2986,9 +2986,11 @@ def forensic_mode() -> bool:
     Two-tier assurance (2026-07-12, owner-approved): the development tier
     binds verdicts to claim content (hashes, structural packet validation,
     two independent passes) so working assurance survives repo growth; the
-    forensic tier (heavyweight N1-N8 with authenticated evidence surfaces)
-    is mandatory for no-go rows — where foreclosure is permanent — and for
-    freeze/certification runs over a whole lane at a pinned commit.
+    forensic tier (authenticated evidence surfaces) is mandatory for no-go
+    rows — where foreclosure is permanent — and for freeze/certification runs
+    over a whole lane at a pinned commit. Since 2026-11-13 the N1-N8 packet
+    is optional in both tiers; a supplied packet is validated in the tier's
+    terms.
     """
     return str(os.environ.get("AUDIT_FORENSIC_MODE") or "").strip().lower() in {
         "1", "true", "yes",
@@ -3026,10 +3028,9 @@ def source_requires_no_go_discipline(
     body = note_body or ""
     if source_is_no_go_artifact(note_path, body, claim_type_hint):
         return True
-    # Wall-naming positive/bounded rows carry the mandatory heavy packet only
-    # in the forensic tier; in the development tier the auditor still applies
-    # the no-go discipline as judgment (skill rule) and any supplied packet is
-    # validated structurally.
+    # Wall-naming positive/bounded rows take the forensic tier's evidence
+    # plumbing only in a forensic run. The packet is optional in every tier;
+    # a supplied one is validated.
     if forensic_mode():
         return _has_negative_boundary_assertion(body)
     return False
@@ -3044,25 +3045,6 @@ def output_requires_no_go_discipline(audit: dict[str, Any]) -> bool:
     return _has_negative_boundary_assertion(
         str(audit.get("notes_for_re_audit_if_any") or "")
     )
-
-
-def packet_requirement_binds(
-    audit: dict[str, Any], *, source_required: bool = False
-) -> bool:
-    """Whether a triggered structured-packet demand binds this verdict.
-
-    No-go artifacts (source-required rows, no_go claim-type judgments) and
-    forensic-tier runs carry the mandatory packet for every verdict. In the
-    development tier, the wall-naming output/declaration trigger binds only
-    claim-cementing `audited_clean` verdicts: non-clean verdicts are the
-    repair queue — they foreclose nothing and re-enter fresh audit — so the
-    wall-naming judgment stays in the verdict prose there, and a supplied
-    packet is still validated structurally.
-    """
-    if source_required or audit.get("claim_type") == "no_go" or forensic_mode():
-        return True
-    verdict = audit.get("verdict") or audit.get("audit_status")
-    return verdict == "audited_clean"
 
 
 def _text(value: Any) -> bool:
@@ -4401,6 +4383,16 @@ def validate_no_go_discipline(
     require_declaration: bool = False,
     structural_only: bool = False,
 ) -> str | None:
+    """Validate the declaration and any supplied N1-N8 packet.
+
+    The packet is an aid and never required (owner, 2026-11-13). An audited
+    obstruction is judged as a theorem about an explicit family: its
+    ``claim_scope`` states that family and its ``verdict_rationale`` says
+    whether the title, summary and status lines claim no more. That judgment
+    is the auditor's; no script checks it. A supplied packet is validated as
+    before and must agree with the verdict. ``source_required`` no longer
+    changes the result; it is accepted so existing callers keep working.
+    """
     declared = audit.get("negative_assertion_classes")
     if require_declaration:
         if not isinstance(declared, list) or not all(
@@ -4417,22 +4409,11 @@ def validate_no_go_discipline(
                 "negative_assertion_classes contains unknown classes "
                 f"{unknown}; allowed: {sorted(POLICY_NEGATIVE_CLASSES)}"
             )
-    declared_requires = bool(declared) if isinstance(declared, list) else False
-    required = (
-        source_required
-        or output_requires_no_go_discipline(audit)
-        or declared_requires
-    ) and packet_requirement_binds(audit, source_required=source_required)
     packet = audit.get("no_go_discipline")
-    if not required:
-        if packet is None:
-            return None
-        if not isinstance(packet, dict):
-            return "no_go_discipline must be an object or null"
-    elif not isinstance(packet, dict):
-        return "No-Go Discipline N1-N8 packet is required for this audit"
     if packet is None:
         return None
+    if not isinstance(packet, dict):
+        return "no_go_discipline must be an object or null"
     if structural_only:
         evidence_manifest = None
     elif evidence_manifest is None:

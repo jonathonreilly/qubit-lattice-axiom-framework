@@ -19,7 +19,7 @@ Surfaces summarized:
    automatically; ``incomplete_records`` counts records without the minimum
    rationale/path metadata needed to create an advisory candidate.
 3. ``evidence_repair`` — rows the audit queue marks ``evidence_repair_required``,
-   grouped by gate family (e.g. the forensic N5 execution certificate).
+   grouped by gate family (e.g. a stale runner cache).
 
 This script writes a generated data surface only.  It mints no verdict, edits
 no ledger row, and carries no audit authority.

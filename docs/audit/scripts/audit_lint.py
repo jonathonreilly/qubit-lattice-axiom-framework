@@ -1177,23 +1177,7 @@ def main() -> int:
             or row.get("claim_type") == "no_go"
             or no_go_discipline_gate.forensic_mode()
         )
-        required = source_required or no_go_discipline_gate.output_requires_no_go_discipline(
-            audit_like
-        ) or bool(audit_like.get("negative_assertion_classes"))
-        binds = no_go_discipline_gate.packet_requirement_binds(
-            {**audit_like, "verdict": verdict},
-            source_required=source_required,
-        )
-        if required and binds and packet is None:
-            message = (
-                f"{cid}: {label} lacks structured No-Go Discipline and "
-                "cannot be authoritative until fresh re-audit"
-            )
-            if label == "live audit" and verdict == "audited_clean":
-                errors.append(message)
-            else:
-                add_notice("legacy_no_go_packet_absent", message)
-            return
+        # The packet is optional (2026-11-13); only a supplied one is checked.
         if packet is None:
             return
 

@@ -279,7 +279,8 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
     "no_go_discipline": (
         r"N1-N8",
         r"NoGoDisciplineReviewer.*blocks PASS|FAIL.*NoGoDisciplineReviewer blocks PASS",
-        r"no_go_discipline_gate\.py",
+        r"obstruction questions",
+        r"missing or short packet is never a",
     ),
     "audit_compatibility_boundary": (
         r"## Audit-System Compatibility Gate",

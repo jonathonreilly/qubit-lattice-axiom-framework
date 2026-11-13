@@ -236,19 +236,9 @@ def cross_summary_no_go_error(
 ) -> str | None:
     """Validate a prior cross-confirmation seat before it can be ratified."""
     packet = summary.get("no_go_discipline")
-    required = (
-        source_required
-        or no_go_discipline_gate.output_requires_no_go_discipline(summary)
-        or bool(summary.get("negative_assertion_classes"))
-    ) and no_go_discipline_gate.packet_requirement_binds(
-        summary, source_required=source_required
-    )
     if packet is None:
-        return (
-            "No-Go Discipline N1-N8 packet is required for the prior seat"
-            if required
-            else None
-        )
+        # The packet is optional (2026-11-13); only a supplied one is checked.
+        return None
     snapshot_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
         packet if isinstance(packet, dict) else {}
     )

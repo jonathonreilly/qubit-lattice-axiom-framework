@@ -11,8 +11,7 @@ operator: it launches and supervises seats and never judges.
 - The owner asks for a named TOE candidate, or a standalone proof to be
   published, to be audited (`SETTINGS.md`, audit trigger).
 - Not for a mention of audit inside other work (`RULES.md` section 4), not
-  where a step needs a `check`, and not without a named result. `SETTINGS.md`
-  overrides the older skill's default entry, which describes a backlog drain.
+  where a step needs a `check`, and not without a named result.
 
 ## Takes
 
@@ -70,9 +69,11 @@ operator: it launches and supervises seats and never judges.
    - Only registered axioms and approved primitives are accepted premises
      (`docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`). Their use is
      still judged for correctness. History and decisions satisfy nothing.
-   - An obstruction, or any verdict that names walls, first passes the eight
-     no-go checks. One failed check forbids clean: record the narrower honest
-     scope, never the note's own wall list.
+   - An audited obstruction's `claim_scope` states the family it rules out,
+     with explicit quantifiers. Its `verdict_rationale` says whether the title,
+     summary and status lines claim no more than that. A clean verdict needs
+     both, and no open admissible route inside the family. The N1 to N8 packet
+     is optional; a supplied one is validated and must agree with the verdict.
    - Prose and physics are separate verdicts. When torn, take the more
      conservative non-clean verdict; it states the issue, why it blocks, the
      repair target and what may still be said. A seat never repairs, offers
@@ -143,7 +144,6 @@ The Next Claim", `agents/openai.yaml`, `references/distributed-drain.md`.
 | 4 | `S` "Unactivated audit-tooling proposal" | What may not seat |
 | 5 | `S` "Non-Negotiables"; `references/nature-grade-rubric.md` | Full rules |
 | 5 | `S` "Audit Questions" to "Conditional Repair Surfacing" | Verdicts |
-| 5 | `docs/ai_methodology/skills/no-go-discipline/SKILL.md` | Eight checks |
 | 6 | `S` "Clean-Context Guards"; `A/FRESH_LOOK_REQUIREMENTS.md` | Reads |
 | 7 | `S` "Apply The Audit"; "Commit And Push" | Panels, push races |
 | end | `S` "Blocked-Row Loop Guard" to "Quarantine And Skip Repair" | Blocked |

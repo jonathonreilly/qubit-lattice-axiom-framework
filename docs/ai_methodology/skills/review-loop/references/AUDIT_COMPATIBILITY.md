@@ -113,9 +113,8 @@ the combined gate checks the entire integrated delta once.
 This gate is mechanical preparation, not an audit. It must pass for every
 changed row not classified as `meta`, `open_gate`, or `decoration`, including
 every such row bound to a changed primary or helper runner. A missing runner,
-invalid/unreadable declared input, stale or failed SHA/input-bound compute
-result, or incomplete forensic N5 resolution certificate blocks review-loop
-PASS. Intentionally incomplete work must be typed as an explicit `open_gate`
+invalid/unreadable declared input, or stale or failed SHA/input-bound compute
+result blocks review-loop PASS. Intentionally incomplete work must be typed as an explicit `open_gate`
 and remains outside this seat-readiness gate until promoted; do not let the
 independent audit discover a deterministic compute omission after spending a
 seat. The cache/result used here is non-authoritative review evidence only.
@@ -248,13 +247,13 @@ purpose is to rewrite existing local-path links across many audited source
 notes, apply the audit-hash churn guard above before landing any broad cleanup.
 
 **Gates 9 to 11 belong to the full read.** They are the reviewer's own
-scientific work: the N1-N8 walk, the independent math check and the
-proof-obligation pass. In a scope read the list in the Review depth section of
+scientific work: the obstruction questions, the independent math check and
+the proof-obligation pass. In a scope read the list in the Review depth section of
 `SCIENCE_LENSES.md` takes their place, and that list covers how a negative
 result is worded. Every other gate in this file is the same at both depths,
 including the committed evidence that gates 6a and 13 require.
 
-9. **No-Go Discipline PASS gate (hard).** Before issuing review-loop PASS,
+9. **Obstruction PASS gate (hard).** Before issuing review-loop PASS,
    identify any artifact on the branch that ships a negative claim:
 
 ```bash
@@ -271,15 +270,18 @@ git diff origin/main...HEAD -- 'docs/*.md' \
   | grep -E 'structurally undecidable|no retained primitive|requires new axiom|cannot be derived from A_min|conditional on .* walls?'
 ```
 
-For every match, the NoGoDisciplineReviewer must output `PASS` (N1-N8 walk
-complete and no failure condition hit) before review-loop issues PASS. A
-`FAIL` from NoGoDisciplineReviewer blocks PASS regardless of how other
-reviewers voted. An unscrutinized no-go that ships through review cements
+For every match, the NoGoDisciplineReviewer answers the obstruction questions
+in `docs/ai_methodology/procedures/check.md` and outputs `PASS` only when both
+hold and no open admissible route lies inside the stated family. A `FAIL`
+from NoGoDisciplineReviewer blocks PASS regardless of how other reviewers
+voted. The N1-N8 prompts of the `no-go-discipline` skill are an aid: no
+answers are committed for them, and a missing or short packet is never a
+finding (`SETTINGS.md`, negative-claim packet). An unscrutinized no-go that ships through review cements
 the overclaim at audit time and can wrongly discourage later investigation. Retained no-go conclusions
 remain revisable when a proof defect, changed domain, or new mechanism is shown.
 
 If NoGoDisciplineReviewer outputs FAIL, apply the narrowest honest fix per
-Fix Policy step 2 (demote to a narrower honest claim that passes N1-N8) and
+Fix Policy step 2 (narrow the claim to the family its argument rules out) and
 re-review. Do not weaken the gate to PASS the branch.
 
 This gate is independent of the Pipeline-clean PASS gate above; both must
@@ -319,27 +321,9 @@ PR, not live in its body. The same changed-evidence invocation in gate 6a
 covers every changed note or runner whose row the audit lane will consume;
 do not run it again solely for this gate. Treat any reported
 `forensic_evidence_ready: false` on an affected row as a blocking finding.
-In particular, for negative-claim-shaped changes (notes
-whose rhetoric trips the N5 scan phrases in
-`docs/audit/scripts/no_go_discipline_gate.py`):
-
-- the primary runner's cached stdout must carry the five-line N5 execution
-  certificate (`per_element:`, `per_site:`, `per_mode:`, `per_block:`,
-  `lattice_wide:` — each honest and substantive, using "checked and not
-  executed — <reason>" where a class is genuinely not exercised); and
-- the N1-N8 checklist required by the no-go-discipline gate must be a
-  committed artifact (a `## No-Go Discipline Gate` section in the note or a
-  committed sidecar), not only PR-body text.
-
-Rationale: packets that existed at review time but did not land are the
-largest audit-invalidation class in repo history (1,560 voided verdicts;
-799 in one day for `no_go_discipline_packet_missing`). A PASS with
-un-landed evidence recreates that failure mode. Repairing the evidence
-(adding honest certificate lines, landing the checklist) is in scope for
-the review; fabricating resolution coverage is not — a runner that
-genuinely cannot certify a resolution class states so honestly, and if the
-claim's rhetoric then over-reaches the certificate, the claim is narrowed,
-not the certificate padded.
+This gate asks for no N1-N8 answers and no N5 runner-output lines (since
+2026-11-13). Repairing evidence is in scope for the review; fabricating it is
+not.
 
 The review loop must not run `docs/audit/scripts/apply_audit.py` and must not
 write `audit_status`, `audited_clean`, or other audit verdicts. If the branch

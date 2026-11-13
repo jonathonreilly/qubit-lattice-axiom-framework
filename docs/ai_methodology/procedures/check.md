@@ -106,13 +106,11 @@ need both non-implications shown. A cited result counts only if it attacks
 the same residual. An obstruction that a relabelling, a convention or a
 published route removes is not the physical one claimed.
 
-Interim rule. The N1 to N8 packet is a checker's aid: prompts, never a verdict.
-Until the tooling changes it stays required by `land` (answers committed with
-the note; five N5 runner-output lines, checked by script), by `audit` (the
-packet, with no route quota) and, in prose, by the older `no-go-discipline`
+The N1 to N8 packet is a checker's aid: prompts, never a verdict. No gate
+requires it: not `land` (no committed answers, no N5 runner-output lines), not
+`audit` (`procedures/audit.md`, step 5) and not the older `no-go-discipline`
 skill. A check neither writes nor grades it: never `wrong` for a missing or
 short packet, never `right` for a passing one, never an invented route family.
-Note its state in the record body; a packet failing the schema stays pending.
 
 ## At assembly
 

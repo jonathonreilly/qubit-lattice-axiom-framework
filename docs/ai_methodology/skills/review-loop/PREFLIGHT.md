@@ -124,7 +124,7 @@ caches, run
 `python3 docs/audit/scripts/check_changed_audit_evidence.py --base
 origin/main --include-worktree`. This includes staged, unstaged, and untracked
 author changes before committing. Fix every named missing runner/input/current
-compute result or incomplete N5 certificate before landing; report pending
+compute result before landing; report pending
 combined validation when requesting review after focused source checks. This is preflight only:
 the independent audit reruns the exact runner live and does not inherit a PR
 author's verdict.

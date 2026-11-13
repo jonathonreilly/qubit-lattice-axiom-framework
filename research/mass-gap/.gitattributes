@@ -1,0 +1,8 @@
+# Preserve whitespace in these verbatim historical payload files only.
+library/gap-seed-shape.md whitespace=-blank-at-eol
+library/gap-zf-box-x.md whitespace=-blank-at-eol
+library/gap-zf-box-s-check.md whitespace=-blank-at-eof
+library/prior/gap-crux-lit-nonab.md whitespace=-blank-at-eof
+library/prior/gap-lit.md whitespace=-blank-at-eof
+library/prior/gap-precedent-lit.md whitespace=-blank-at-eof
+library/prior/gap-seed-size.md whitespace=-blank-at-eof

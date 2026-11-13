@@ -1,0 +1,12 @@
+PASS hop on link (0,1) maps to an operator acting trivially on cluster 2
+PASS hop on link (1,2) maps to an operator acting trivially on cluster 0
+PASS hop on link (2,0) maps to an operator acting trivially on cluster 1
+PASS centre at site 0 maps to the cluster parity
+PASS centre at site 1 maps to the cluster parity
+PASS centre at site 2 maps to the cluster parity
+PASS control: single matter mode c_1 is not mapped to an operator trivial on cluster 0
+PASS control: single rishon at site 2 of link (1,2) is not trivial on cluster 0
+PASS C2 sample operator commutes with all three centres
+PASS C2 image commutes with each cluster parity
+ALL PASS
+python3 check_T3_C2_analog.py  0.68s user 0.04s system 92% cpu 0.777 total

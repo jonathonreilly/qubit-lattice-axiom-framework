@@ -1,0 +1,37 @@
+PASS inversion x->1-x has a sign lift commuting with R_e and R_o on the L=4 torus
+PASS its fibre is +-A1A2A3
+PASS eps=0.4: Theta=D_s K satisfies D_s conj(V) D_s = V (LW1 B10 given, rechecked)
+PASS eps=1.1: Theta=D_s K satisfies D_s conj(V) D_s = V (LW1 B10 given, rechecked)
+   eps=0.5: real solution dimensions {'R': np.int64(8), 'RI': np.int64(4), 'RIT': np.int64(3), 'RITS': np.int64(1), 'RIS': np.int64(2), 'RTS': np.int64(2), 'RST': np.int64(2), 'ITS': np.int64(18)}
+PASS eps=0.5: C4 (R,I,Theta,sigma) solution space is 1-dimensional
+PASS eps=0.5: C4 [check] dims 8,4,3,1,2,2
+PASS eps=0.5: a G_j satisfies all four conditions
+PASS eps=0.5: control: Gamma_j (unconjugated) violates them
+PASS eps=0.5: C4 witness 1 (not I): Hermitian=True, satisfies RTS (res 6.3e-16), violates I (res 4.00), no isotropic cone for u in (1e-3,1e-2,0.1,-0.05): [np.True_, np.True_, np.True_, np.True_]
+PASS eps=0.5: C4 witness 2 (not Theta): Hermitian=True, satisfies RIS (res 1.2e-15), violates T (res 8.00), no isotropic cone for u in (1e-3,1e-2,0.1,-0.05): [np.True_, np.True_, np.True_, np.True_]
+PASS eps=0.5: C4 witness 3 = Z^G (not sigma): Hermitian=True, satisfies RIT (res 7.6e-16), violates S (res 5.66), no isotropic cone for u in (1e-3,1e-2,0.1,-0.05): [np.True_, np.True_, np.True_, np.True_]
+   squared-speed spread along e_1 at u=0.01, without Theta: 0.0566 (text: 0.0566)
+PASS eps=0.5: C4 squared speeds along e_1 = 1 +- 2.828 u + O(u^2), without Theta
+   squared-speed spread along e_1 at u=0.01, without I: 0.0283 (text: 0.0283)
+PASS eps=0.5: C4 squared speeds along e_1 = 1 +- 1.414 u + O(u^2), without I
+PASS eps=0.5: T10 axial squared speed = 1+u^2 exactly; diagonal squared velocity = 1+(2u/3)Y+u^2(sum Z)^2/3; Y Hermitian traceless nonzero with eigenvalues [-3.464 -3.464 -0.     0.     0.     0.     3.464  3.464]
+PASS eps=0.5: T10 diagonal speeds differ from axial (spread 0.1386)
+PASS eps=0.5: T10 h_u covariant under 24 rotations and inversion, obeys antiunitary condition, fails sigma
+   eps=1.2: real solution dimensions {'R': np.int64(8), 'RI': np.int64(4), 'RIT': np.int64(3), 'RITS': np.int64(1), 'RIS': np.int64(2), 'RTS': np.int64(2), 'RST': np.int64(2), 'ITS': np.int64(18)}
+PASS eps=1.2: C4 (R,I,Theta,sigma) solution space is 1-dimensional
+PASS eps=1.2: C4 [check] dims 8,4,3,1,2,2
+PASS eps=1.2: a G_j satisfies all four conditions
+PASS eps=1.2: control: Gamma_j (unconjugated) violates them
+PASS eps=1.2: C4 witness 1 (not I): Hermitian=True, satisfies RTS (res 9.6e-16), violates I (res 4.00), no isotropic cone for u in (1e-3,1e-2,0.1,-0.05): [np.True_, np.True_, np.True_, np.True_]
+PASS eps=1.2: C4 witness 2 (not Theta): Hermitian=True, satisfies RIS (res 1.6e-15), violates T (res 8.00), no isotropic cone for u in (1e-3,1e-2,0.1,-0.05): [np.True_, np.True_, np.True_, np.True_]
+PASS eps=1.2: C4 witness 3 = Z^G (not sigma): Hermitian=True, satisfies RIT (res 1.3e-15), violates S (res 5.66), no isotropic cone for u in (1e-3,1e-2,0.1,-0.05): [np.True_, np.True_, np.True_, np.True_]
+   squared-speed spread along e_1 at u=0.01, without Theta: 0.0566 (text: 0.0566)
+PASS eps=1.2: C4 squared speeds along e_1 = 1 +- 2.828 u + O(u^2), without Theta
+   squared-speed spread along e_1 at u=0.01, without I: 0.0283 (text: 0.0283)
+PASS eps=1.2: C4 squared speeds along e_1 = 1 +- 1.414 u + O(u^2), without I
+PASS eps=1.2: T10 axial squared speed = 1+u^2 exactly; diagonal squared velocity = 1+(2u/3)Y+u^2(sum Z)^2/3; Y Hermitian traceless nonzero with eigenvalues [-3.464 -3.464 -0.     0.     0.     0.     3.464  3.464]
+PASS eps=1.2: T10 diagonal speeds differ from axial (spread 0.1386)
+PASS eps=1.2: T10 h_u covariant under 24 rotations and inversion, obeys antiunitary condition, fails sigma
+PASS T10 sum_j Z_j (T_{-2e_j}-T_{2e_j})/(2i) has fibre sum_j sin K_j Z_j (L=6, 27 momenta)
+ALL PASS
+python3 check_T10_C4.py  0.53s user 0.10s system 101% cpu 0.614 total

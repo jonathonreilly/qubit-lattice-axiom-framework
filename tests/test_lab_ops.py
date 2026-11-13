@@ -246,14 +246,29 @@ class CodexUsageTest(unittest.TestCase):
             self.assertTrue(line.startswith("ok "), line)
             self.assertIn("42% of the weekly limit used, resets 2100-01-01 00:00 UTC", line)
 
-    def test_a_log_without_a_usable_record_is_skipped(self):
+    def test_a_log_without_a_record_is_skipped(self):
         with tempfile.TemporaryDirectory() as tmp:
             home = Path(tmp)
             self.write(home, "older", [(31.0, self.LATER)], age=500)
-            self.write(home, "empty", [], age=50)
-            self.write(home, "broken", [("many", self.LATER)], age=5)
+            self.write(home, "empty", [], age=5)
             _, line = self.line(home)
             self.assertIn("31% of the weekly limit used", line)
+
+    def test_an_older_figure_never_stands_in_for_an_unreadable_newest_record(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            self.write(home, "older", [(31.0, self.LATER)], age=500)
+            self.write(home, "broken", [("many", self.LATER)], age=5)
+            code, line = self.line(home, "--model", "gpt-6-astra")
+            self.assertEqual(code, 0, line)
+            self.assertTrue(line.startswith("note "), line)
+            self.assertNotIn("31%", line)
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            self.write(home, "one", [(31.0, self.LATER), ("many", self.LATER)], age=5)
+            code, line = self.line(home, "--model", "gpt-6-astra")
+            self.assertTrue(line.startswith("note "), line)
+            self.assertNotIn("31%", line)
 
     def test_a_spent_account_refuses_a_codex_lane_and_nothing_else(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -297,6 +312,128 @@ class CodexUsageTest(unittest.TestCase):
                     del os.environ["CODEX_HOME"]
                 else:
                     os.environ["CODEX_HOME"] = old
+
+    def write_limits(self, home: Path, name: str, records: list, age: float = 5,
+                     raw: bool = False) -> None:
+        """Write rate_limits objects as given; raw ones are JSON text already."""
+        day = home / "sessions" / "2026" / "11" / "13"
+        day.mkdir(parents=True, exist_ok=True)
+        lines = ['{"type":"session_meta"}']
+        for limits in records:
+            body = limits if raw else json.dumps(limits, separators=(",", ":"))
+            lines.append('{"payload":{"type":"token_count","info":null,"rate_limits":'
+                         + body + '}}')
+        path = day / f"rollout-{name}.jsonl"
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        stamp = dt.datetime.now().timestamp() - age
+        os.utime(path, (stamp, stamp))
+
+    def limits(self, primary, secondary=None, limit_id="codex") -> dict:
+        def window(spec):
+            if spec is None:
+                return None
+            used, minutes = spec
+            return {"used_percent": used, "window_minutes": minutes, "resets_at": self.LATER}
+        return {"limit_id": limit_id, "limit_name": None, "primary": window(primary),
+                "secondary": window(secondary), "plan_type": "pro"}
+
+    def usage(self, home: Path):
+        old = os.environ.get("CODEX_HOME")
+        os.environ["CODEX_HOME"] = str(home)
+        try:
+            return lab_ops.codex_usage()
+        finally:
+            if old is None:
+                del os.environ["CODEX_HOME"]
+            else:
+                os.environ["CODEX_HOME"] = old
+
+    def test_the_weekly_window_is_found_in_either_slot(self):
+        for primary, secondary in (((5.0, 300), (100.0, 10080)), ((100.0, 10080), (5.0, 300))):
+            with tempfile.TemporaryDirectory() as tmp:
+                home = Path(tmp)
+                self.write_limits(home, "a", [self.limits(primary, secondary)])
+                self.assertEqual(self.usage(home), (100.0, float(self.LATER)))
+                code, line = self.line(home, "--model", "gpt-6-astra")
+                self.assertEqual(code, 1, line)
+                self.assertTrue(line.startswith("refuse "), line)
+
+    def test_only_the_codex_limit_is_read(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            self.write_limits(home, "a", [self.limits((100.0, 10080), limit_id="other")])
+            self.assertIsInstance(self.usage(home), str)
+            code, line = self.line(home, "--model", "gpt-6-astra")
+            self.assertEqual(code, 0, line)
+            self.assertTrue(line.startswith("note "), line)
+            self.assertNotIn("% of the weekly limit", line)
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            self.write_limits(home, "a", [self.limits((20.0, 10080)),
+                                          self.limits((100.0, 10080), limit_id="other")])
+            self.assertEqual(self.usage(home), (20.0, float(self.LATER)))
+
+    def test_a_record_without_a_weekly_window_is_unavailable(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            self.write_limits(home, "a", [self.limits((100.0, 300), (100.0, 1440))])
+            self.assertEqual(self.usage(home),
+                             "the newest Codex usage record has no usable weekly figure")
+
+    def test_a_percentage_that_is_not_a_finite_number_is_unavailable(self):
+        week = '"window_minutes":10080,"resets_at":%d' % self.LATER
+        for used in ('"NaN"', "NaN", "Infinity", "-Infinity", "1e400", "true", "false",
+                     "-1", '"53"', "null"):
+            with tempfile.TemporaryDirectory() as tmp:
+                home = Path(tmp)
+                text = '{"limit_id":"codex","primary":{"used_percent":%s,%s},"secondary":null}'
+                self.write_limits(home, "a", [text % (used, week)], raw=True)
+                self.assertIsInstance(self.usage(home), str, used)
+                code, line = self.line(home, "--model", "gpt-6-astra")
+                self.assertTrue(line.startswith("note "), (used, line))
+
+    def test_a_percentage_above_100_is_read_as_spent(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            self.write_limits(home, "a", [self.limits((250.0, 10080))])
+            self.assertEqual(self.usage(home), (100.0, float(self.LATER)))
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            text = ('{"limit_id":"codex","primary":{"used_percent":1%s,'
+                    '"window_minutes":10080,"resets_at":%d},"secondary":null}')
+            self.write_limits(home, "a", [text % ("0" * 400, self.LATER)], raw=True)
+            self.assertEqual(self.usage(home), (100.0, float(self.LATER)))
+
+    def test_an_unreadable_reset_time_is_unavailable(self):
+        for resets in ("1e300", "1" + "0" * 400, '"soon"', "true", "NaN"):
+            with tempfile.TemporaryDirectory() as tmp:
+                home = Path(tmp)
+                text = ('{"limit_id":"codex","primary":{"used_percent":50.0,'
+                        '"window_minutes":10080,"resets_at":%s},"secondary":null}')
+                self.write_limits(home, "a", [text % resets], raw=True)
+                self.assertEqual(self.usage(home),
+                                 "the newest Codex usage record has no usable weekly figure", resets)
+                code, line = self.line(home, "--model", "gpt-6-astra")
+                self.assertEqual(code, 0, line)
+                self.assertTrue(line.startswith("note "), (resets, line))
+
+    def test_preflight_survives_a_reset_time_it_cannot_print(self):
+        original = lab_ops.codex_usage
+        lab_ops.codex_usage = lambda now=None: (50.0, 1e300)
+        try:
+            with tempfile.TemporaryDirectory() as tmp:
+                code, line = self.line(Path(tmp), "--model", "gpt-6-astra")
+        finally:
+            lab_ops.codex_usage = original
+        self.assertEqual(code, 0, line)
+        self.assertIn("50% of the weekly limit used, reset time unreadable", line)
+
+    def test_lines_that_are_not_json_are_skipped(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            good = json.dumps(self.limits((33.0, 10080)), separators=(",", ":"))
+            self.write_limits(home, "a", [good, '{"limit_id":"codex", cut off'], raw=True)
+            self.assertEqual(self.usage(home), (33.0, float(self.LATER)))
 
     def test_no_record_is_a_note(self):
         with tempfile.TemporaryDirectory() as tmp:

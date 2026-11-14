@@ -1,4 +1,4 @@
-AUDIT_INPUT_PATHS = ('docs/THE_RUNG_LADDER_IS_A_DOMAIN_WALL_DIRECTION_WITH_EXACT_INFLOW_BUT_BOUNDED_SPEED_MAKES_ITS_COARSE_RUNGS_A_CHARGED_TOWER_BOUNDED_THEOREM_NOTE_2026-10-22.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ('docs/THE_RUNG_LADDER_IS_A_DOMAIN_WALL_DIRECTION_WITH_EXACT_INFLOW_BUT_BOUNDED_SPEED_MAKES_ITS_COARSE_RUNGS_A_CHARGED_TOWER_BOUNDED_THEOREM_NOTE_2026-10-22.md',)
 #!/usr/bin/env python3
 """Rung (zoom) direction and an in-block layer coordinate as the domain-wall
 direction for exact lattice chirality: free 1+1D tree-ladder toys, spectral
@@ -300,11 +300,11 @@ mres = 2.1e18 * 0.5 ** Rh
 check("D2", "CONDITIONAL ESTIMATE (inputs a = sqrt(8 pi) l_P, H0, PDG values, c1 from a stand-alone Wilson band)", dinv > 100 * 0.014,
       "zoom rate, gauge-covariant: %.1f rungs between m_e and M_Z, each a vector-like 3-family copy (sum Q^2 = 8) adding 4 pi c1 sum Q^2 to 1/alpha: extra running %.1f vs the 0.014 known from Delta alpha_had: in conflict with the measured running unless c1 < %.1e" % (nr, dinv, thr),
       "c1 %.4f; R_H = log2(c/H0 a) = %.1f" % (c, Rh))
-print("   D3 ESTIMATE fine rate: no tower (gap ~0.4 per rung at Planck), mirror energy 2^R x momentum: below 1 TeV only for |Q| < 1e-15 x 2^-R/a, ~0 states per horizon; residual mass mu(mu/kap)^R_H <= %.0e GeV at mu/kap = 1/2; price: rung j hops 2^j sites per tick (speed 2^j, the swindle of the octree-ladder note), against nearest-neighbour admissibility" % mres)
+print("   D3 ESTIMATE fine rate: no tower (gap ~0.4 per rung at Planck), mirror energy 2^R x momentum: below 1 TeV only for |Q| < 1e-15 x 2^-R/a, ~0 states per horizon; residual mass mu(mu/kap)^R_H <= %.0e GeV at mu/kap = 1/2; price: rung j hops 2^j sites per tick (speed 2^j, the swindle of the octree-ladder note): an unbounded hop range, which no current axiom bounds or allows" % mres)
 print("   D4 ESTIMATE any cut (Gauss projection, B4) or finite top at E_R >~ M_Z: a massless charged mirror; e^c' alone adds 35.5 MeV to Gamma_Z per family vs sigma 2.3 MeV (ladder-wall E3)")
 
 # ---------------------------------------------------------------- E
-print("== E. owner-widened: full-density layer coordinate inside a role block")
+print("== E. scope widened in the source session: full-density layer coordinate inside a role block")
 
 
 def strip(Ls, k, m=-1.0, kap=1.0, mu=0.0, q=1.0, chi=1):

@@ -16,13 +16,18 @@ runner: scripts/the_overlap_of_the_cube_walk_euclidean_kernel_gives_exact_ginspa
 Claim type: bounded_theorem (exact algebra plus labelled finite diagnostics; literature results cited as supplied).
 Primary runner: `scripts/the_overlap_of_the_cube_walk_euclidean_kernel_gives_exact_ginsparg_wilson_chirality_without_doublers_but_its_chiral_projector_is_not_a_walk_sector_2026_10_23.py`; cache `logs/runner-cache/the_overlap_of_the_cube_walk_euclidean_kernel_gives_exact_ginsparg_wilson_chirality_without_doublers_but_its_chiral_projector_is_not_a_walk_sector_2026_10_23.txt`. Axioms unchanged.
 
-Local labels (2026-11-14). "The owner's sense", "the owner's wording" and "owner intent" below report the source session's
-reading of a request; no owner decision is recorded in the repository, and none is assumed here.
+Comparison with the axioms (rematched 2026-11-14 against `docs/MINIMAL_AXIOMS_2026-06-29.md` on origin/main, second hold
+R7). The Admissibility axiom names one fixed neighborhood rule (not a nearest-neighbour rule) for the probability
+distribution at each site; it is not a dynamics axiom and does not choose a Hamiltonian, transfer operator or Dirac
+kernel. No axiom states an update or tick rule. The Lattice axiom gives Z^3 with nearest-neighbour adjacency and cubic
+covariance; that covariance does not select this kernel or isotropy between tick and space, which stay supplied.
+Earlier text here attributed a locality reading and an update-axiom reading to owner intent; no such decision is
+recorded in the repository, and those attributions are removed.
 
 ## Question
 
 Does the campaign's walk supply an overlap (Ginsparg-Wilson) Dirac operator with exact lattice chirality and
-no doublers, is it local in the owner's sense (influence passed site to site), and does it get past the
+no doublers, is it local in the sense of influence passed site to site, and does it get past the
 FREEZE obstructions (corner Q8 Schur no-go; light Floquet winding W3(light) = -2)?
 
 ## Repo check
@@ -76,7 +81,7 @@ identification (and isotropy between tick and space) is SUPPLIED; A2 shows the r
   dimensions. With the Pauli-Villars ratio, the boundary operator equals (1 + g5 tanh(Ls artanh H_T))/2,
   H_T = g5 D_W (2 + D_W)^(-1), to 6e-16. Its GW defect falls 1.2e-2, 7.8e-5, 3.0e-9 at Ls = 4, 8, 16: the
   overlap (Shamir kernel) is the Ls -> infinity limit.
-- Reading for the source session's wording (not an owner decision). Both realisations pass influence site to site: the polynomial form is n
+- Reading of "influence passed site to site". Both realisations pass influence site to site: the polynomial form is n
   neighbourhood steps with weight falling geometrically in n, and the domain-wall form is a strict
   neighbour rule in a fifth direction whose bulk modes are gapped. The 4D tail comes from integrating out that
   gapped bulk, as a Yukawa tail comes from a massive field. No instantaneous long-range coupling enters.
@@ -87,7 +92,8 @@ identification (and isotropy between tick and space) is SUPPLIED; A2 shows the r
 
 - D1, D6. U(1) backgrounds with uniform flux: 2D 10^2 with Q = 1, and 4D 4^4 with fluxes (1,1) in the (12)
   and (34) planes, Q = 1. GW holds in the background to 5e-15 and 2e-14. Each has one zero mode with g5 = -1
-  exactly, so |index| = |Q| (Hasenfratz-Laliena-Niedermayer 1998 index theorem, supplied and observed).
+  exactly, so |index| = |Q| in these two backgrounds (observed; the general index theorem of
+  Hasenfratz-Laliena-Niedermayer 1998 is cited, not checked, and not read here).
 - D2 (exact integers). Luscher's g5_hat = g5(1 - D) squares to 1, and P_hat_L = (1 - g5_hat)/2 has rank 100
   at Q = 0 but 101 at Q = 1 (Tr g5_hat = 2 x index). The chiral split depends on the gauge field and changes
   rank between topological sectors.
@@ -99,8 +105,8 @@ identification (and isotropy between tick and space) is SUPPLIED; A2 shows the r
   leaves a zero-sum remainder of 1e-3, which is the divergence term in Luscher's cohomology result (supplied).
 - D7 (exact fractions). The 16 of one family, taken as left-handed Weyl fields, has sum Y = 0 and sum Y^3 = 0
   (Luscher 1999's abelian condition for an exactly gauge-invariant chiral measure on the lattice), and its
-  SU(3)^2 Y and SU(2)^2 Y sums are also 0. So U(1)_Y is anomaly-free for the 16, and an abelian Luscher theory
-  exists for it. Non-abelian nonperturbative existence is NOT claimed; it is open in the literature.
+  SU(3)^2 Y and SU(2)^2 Y sums are also 0. So U(1)_Y is anomaly-free for the 16, and, conditional on Luscher 1999's
+  abelian construction (cited, not checked here), an abelian Luscher theory exists for it. Non-abelian nonperturbative existence is NOT claimed; it is open in the literature.
 - D8 (arithmetic flag). FREEZE's light content per node is L with q = 2 and R with q = 1. As left-handed Z3
   labels that is {2, 2}, with sum q = sum q^3 = 1 mod 3 per family. This matters only if the turn were gauged;
   it is a global lattice rotation, and its 't Hooft anomaly is allowed. It cancels for N_fam = 0 mod 3. The plain
@@ -113,21 +119,27 @@ identification (and isotropy between tick and space) is SUPPLIED; A2 shows the r
   exact GW chirality, one light Dirac field and no doublers (for 0 < m0 < 2), and exponential locality. It is
   realised site to site, either as n neighbourhood steps or as the Ls -> infinity limit of a strictly
   nearest-neighbour fifth direction. Nielsen-Ninomiya (1981) is evaded in the standard way (Luscher 1998): the
-  exact chiral symmetry is the GW-deformed one, not an on-site g5.
-- CHIRAL: only as a Euclidean (history) theory. One left-handed Weyl per field with no mirror is obtained by
-  restricting the field space to the range of P_hat (Luscher 1998/99), and this is consistent for anomaly-free
-  U(1) content; the 16's U(1)_Y passes. This MEETS the measured comparator (one left-handed Weyl per field, no
-  mirror at low energy) in the Euclidean sense for abelian gauge fields.
+  exact chiral symmetry is the GW-deformed one, not an on-site g5. The exponential locality is measured free and in
+  one Q = 1 background; for general gauge fields it is the cited Hernandez-Jansen-Luscher result, conditional on
+  its admissibility hypothesis.
+- CHIRAL: only as a Euclidean (history) theory, and conditional on cited, unverified inputs. One left-handed Weyl
+  per field with no mirror is obtained by restricting the field space to the range of P_hat (Luscher 1998/99), and
+  that restriction is consistent for anomaly-free U(1) content by Luscher's construction (cited); the 16's U(1)_Y
+  sums pass (exact arithmetic). Under those inputs this matches the comparator content (one left-handed Weyl per
+  field, no mirror at low energy) in the Euclidean sense for abelian gauge fields.
 - It does not evade the walk obstructions; it steps outside their hypotheses. W3 and the corner Q8 theorem
   apply to walk-invariant sectors of a 3+1 tick with on-site rotation action. P_hat is not such a sector: it is
   a projector on histories, built from D (which contains the tick direction), and its rank changes with gauge
   topology (D2). A walk-invariant sector has a fixed rank. No 3+1 tick and no positive Euclidean transfer matrix
   is known for the chiral overlap theory, and none is supplied here.
 - Effect on the chirality wall. The wall MOVES from "no local lattice chirality" to a precise price. The light
-  Weyl content is obtained if (i) the rule may be exponentially local (a neighbourhood-of-influence reading,
-  realised site to site; whether it is allowed is an owner decision, not made here) and (ii) the chiral selection may be a history-level, gauge-field-dependent
-  projection rather than a sector of the tick. Item (ii) bends the update reading of the axioms (the rule is no
-  longer only a tick), and that is an owner decision. The tick-level wall (W3, corner Q8) is unchanged.
+  Weyl content is obtained, under the cited inputs above, if (i) the matter kernel may be exponentially local
+  (realised site to site) and (ii) the chiral selection may be a history-level, gauge-field-dependent projection
+  rather than a sector of the tick. Against the current axioms (rematched 2026-11-14): no axiom fixes or bounds the
+  range of a matter kernel (Admissibility is a neighborhood rule for the site distribution, not a dynamics axiom),
+  and no axiom states an update or tick rule, so neither (i) nor (ii) departs from axiom text; both are supplied
+  model choices that the axioms neither select nor exclude. Adopting either as a primitive would be the owner's
+  decision; nothing here proposes or adopts one. The tick-level wall (W3, corner Q8) is unchanged.
 
 ## Anti-smuggling gate (candidate rule: "matter histories are weighted by the overlap of the cube walk's
 ## Euclidean kernel; chiral fields are the range of P_hat")
@@ -141,15 +153,21 @@ identification (and isotropy between tick and space) is SUPPLIED; A2 shows the r
    continuum one (D1/D5/D6). That fixes the pi0 -> 2 gamma coefficient (a measured process), but the runner does
    not compute that rate, so this is UNTESTED here. It also predicts that the chiral content must be anomaly-free
    (the 16 passes; this is a postdiction).
-4. Axioms bent: nearest-neighbour admissibility becomes neighbourhood influence with an exponential tail (reported
-   by the source session as owner intent on 2026-10-23; not recorded in the repository); and for the chiral part, the update axiom becomes a history-level rule. Not proposed as
-   an AX entry here; it is logged as a candidate for the owner.
+4. Comparison with the current axioms (rematched 2026-11-14, second hold R7): the earlier text said the rule bends
+   nearest-neighbour admissibility and an update axiom. Neither matches the current text: Admissibility already
+   names a neighborhood rule and governs the site distribution only, and there is no update axiom. The exponential
+   tail and the history-level chiral selection are supplied model choices; the axioms do not select them. Nothing is
+   proposed as an axiom or primitive.
 
 ## Supplied (cited, not derived)
 
 Neuberger 1998 (overlap operator); Luscher 1998 (exact lattice chiral symmetry from GW), Luscher 1999 (abelian
 chiral gauge theories with anomaly-free charges); Kaplan 1992 (domain-wall fermions); Nielsen-Ninomiya 1981;
 Hernandez-Jansen-Luscher 1999 (locality for smooth fields); Hasenfratz-Laliena-Niedermayer 1998 (index).
+Unverified inputs and open obligations (2026-11-14, second hold R9): Luscher's abelian construction (read by D7 and
+the CHIRAL verdict, conditional on it), Hernandez-Jansen-Luscher locality for gauge fields (read by the locality
+verdict beyond the measured backgrounds), the cohomology result (read only by the D5 reading of the remainder). The
+index theorem is not read; the indices are observed in two backgrounds.
 
 ## Not covered
 

@@ -148,11 +148,13 @@ termination" reading is open, pending far-wall SMG and the rechecks.
 ## Gate (for the candidate termination clause, not adopted)
 
 1. No measured number is chosen.
-2. No observed structure is named. It is a layer and update condition, but the termination placement is chosen.
+2. No observed structure is named. It is a condition on a supplied slab's layers, but the termination placement is chosen.
 3. Prediction not built for: the near wall is pi-free, so the S-even response of pi-sector-stability's probe would not
    cancel there, and, conditional on that note's observable bridges, vacuum polarization and N_nu = N_f would come
    back. The far wall holds 3 x 16 heavy states per family. UNTESTED on the full cell.
-4. It bends no axiom.
+4. Comparison with the current axioms (rematched 2026-11-14): the clause concerns a supplied tick and its termination.
+   The axioms state no tick, update or termination rule and Admissibility is not a dynamics axiom, so the clause is
+   neither derived from nor excluded by them; nothing here tests it against them.
 
 Result: NOT YET PASSED (untested). It is not adopted.
 
@@ -163,7 +165,7 @@ Supplied:
 - the class-A sector toy (QWZ strip plus a chiral shift layer as a stand-in for the FREEZE layer);
 - the RLBL model;
 - the Spin(6) reduction and its normalisation;
-- the anomaly-family-count index form;
+- the anomaly-family-count index form (a source not in this repository; C and the mod-3 statements are conditional on it);
 - the choice of termination.
 
 Forced:

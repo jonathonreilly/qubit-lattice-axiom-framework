@@ -101,12 +101,15 @@ centre, where the full binary tetrahedral group 2T acts. The irreps are:
 - light at K = 0: s(x)w (-1);
 - light X-triplet: s(x)w (x) {1, omega, omega-bar} = {s(x)w, s(x)w^2, s} (+1 each).
 
-A light-light mass needs the same irrep with opposite chirality. That gives:
-- Only s(x)w can pair, and that pairs the K = 0 light Weyl with an X combination, which kills the Weyl.
+The signs are the corner degrees of the polar-compressed map (C), not chiralities of FREEZE's spectrum (A3). For a
+walk with a walk-invariant light label carrying nodes with these signs, a light-light mass would need the same irrep
+with opposite sign. That gives:
+- Only s(x)w can pair, and that pairs the K = 0 light node with an X combination, which removes it.
 - s(x)w^2 and s have no light partner. Their only same-irrep, opposite-sign partners are mirror modes.
 
-Zooming therefore does not give light-light partner gapping either (at the corner fixed point; nodes moved off
-the fixed point are not covered).
+Under that hypothesis zooming does not give light-light partner gapping either (at the corner fixed point; nodes
+moved off the fixed point are not covered). For FREEZE, whose light label is not walk-invariant, this is a statement
+about irreps of label spaces only (narrowed 2026-11-14 with #10042, second hold R2).
 
 ## Answers
 
@@ -135,7 +138,8 @@ or (b) the cell-scale translation in a way that moves the partners off fixed poi
 2. Named structure: none. Pass.
 3. Prediction not built for: no T-covariant light-light term splits the X level (A1). In its tested instance (B2)
    the polar-compressed light map acquires a crossing surface. FAIL.
-4. Axiom bent: none (cell-local, one mode per site).
+4. Comparison with the current axioms (rematched 2026-11-14): cell-local, one mode per site on Z^3, so the Lattice
+   and Qubit axioms are not departed from; the walk and the layer are supplied, and no axiom states an update rule.
 
 Result: FAIL. Not adopted. The no-go itself is the deliverable.
 

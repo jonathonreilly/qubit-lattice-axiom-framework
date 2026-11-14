@@ -1,28 +1,32 @@
 ===== runner cache v1 =====
 runner: scripts/the_composite_two_cell_light_label_makes_the_corner_stabilizers_reducible_but_the_light_floquet_winding_forces_the_mirror_to_carry_the_opposite_chirality_2026_10_23.py
-runner_sha256: cc737c8936253a56ab15440ffcb0c0720189ae5f248163882e446a36c61dffe4
-input_fingerprint_sha256: 1975ca190393720d14be7877d3b160370f81737c1a7997e6a830e40786d70c85
+runner_sha256: 625d936604aad7c8e3bda722a519522846cc2f1b2a6025e4da30cd403fe396f1
+input_fingerprint_sha256: 3d624c68c0b100f98e700778efc2464ccac221d9380c44a68a17106d0007830d
 timeout_sec: 90
 exit_code: 0
-elapsed_sec: 1.38
+elapsed_sec: 1.36
 status: ok
 ----- stdout -----
 == A. doubled-cell stabilizers on the composite (folded) light label ==
 PASS A0 the doubled-cell walk (FREEZE on 4^3 blocks) is covariant under the 12 rotations about the block centre, and the composite light label (rank 16) is rotation invariant  [res 1e-14]
 PASS A1 at every doubled-zone corner the stabilizer acts REDUCIBLY on the light label (commutant dim > 1; single-cell value was 1)  [Gamma_D:|stab|=12,commutant(block,cell)=[24, 24]; X_D:|stab|=4,commutant(block,cell)=[64, 64]; M_D:|stab|=4,commutant(block,cell)=[64, 64]; R_D:|stab|=12,commutant(block,cell)=[24, 24]]
 PASS A2 zone centre, full 2T: the light-label space at Gamma + X-triplet (phase 0 of the compressed map) has commutant 6 = 4+1+1: the X-triplet is three DISTINCT 2-dim irreps (commutant 3) and exactly one of them shares Gamma's irrep (intertwiner dim 1); same at pi for R + M-triplet; both rotation centres  [(G+X, X, G->X, R+M, M, R->M): {'block': (6, 3, 1, 6, 3, 1), 'cell': (6, 3, 1, 6, 3, 1)}]
-  => a T-covariant light-light term at the zone centre is Schur-block-diagonal: it can pair Gamma's Weyl with
-     ONE X-combination (killing the protected Weyl) and only shifts the other two X irreps (no partner)
+  => representation level only: a T-covariant operator on the light-label space at the zone centre is Schur-block-diagonal;
+     it can couple Gamma's irrep with ONE X combination and does not couple the other two X irreps to Gamma's. The X
+     objects are nodes of the polar-compressed map, not of FREEZE's spectrum (B0), so no partner-gapping or spectral
+     obstruction for FREEZE follows (repair 2026-11-14, second hold R2)
 == B. Floquet winding W3 of the polar-compressed light and mirror-label maps (FREEZE) ==
 PASS B0 the light label is NOT walk-invariant on FREEZE (max light-to-mirror-label block norm over a 6^3 grid and X > 0.5, 2 sqrt2/3 at X); control: the Pi+ sector is walk-invariant (leak < 1e-12). B1 is therefore a polar-compressed-map degree  [max |P_L U_F P_R| 0.9428; max Pi+/Pi- leak 2e-15]
 PASS B1 polar part of the compressed light block is smooth on the whole torus (compression never singular) and its 3D degree W3 = (1/24pi^2) int tr(U^-1 dU)^3 is -2 = MINUS the net corner degree of that map at phase 0 and pi (+2, +2); mirror-label map +2, sum 0 (degrees of compressed maps; a sector winding only for a walk-invariant label, B0)  [W3 light -2.0000, mirror +2.0000; min singular value light 0.350, mirror 0.350]
   exact (section B of the note), for a WALK-INVARIANT splitting only: W3 is additive over sectors, a sector gapped at ANY
-  single quasienergy has a continuous log so W3 = 0, and -W3 = net chirality at 0 = net chirality at pi.
+  single quasienergy has a continuous log so W3 = 0, and -W3 = the sum of local degrees of the nodes at 0 and at pi
+  (net Weyl-node chirality when every node is nondegenerate).
   conditional: IF a walk-invariant light sector had the target content (Gamma Weyl at 0, R Weyl at pi, chirality -1 each),
   its W3 would be +1 and the complement would carry the opposite unit and be gapless at every quasienergy.
-verdict: the composite two-cell label makes every corner stabilizer reducible (Schur wall moved), but the light-light
-pairing it allows only consumes the protected Weyl (Schur, exact). FREEZE's light label is not walk-invariant (B0), so its
--2 is a compressed-map degree; transfer to the light spectrum or a mirror obstruction needs a walk-invariant label (not built).
+verdict: the composite two-cell label makes every corner stabilizer reducible (Schur wall moved); the 2T multiplicity
+pattern 6 = 4 + 1 + 1 is exact as representation theory. FREEZE's light label is not walk-invariant (B0), so neither the
+pattern nor the -2 compressed-map degree gives a light spectral statement, a partner-gapping failure or a mirror obstruction;
+that needs a walk-invariant label or a bridge (not built).
 TOTAL: PASS=5 FAIL=0
 
 ----- stderr -----

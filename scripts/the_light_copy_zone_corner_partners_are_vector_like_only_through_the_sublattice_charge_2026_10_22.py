@@ -1,4 +1,4 @@
-AUDIT_INPUT_PATHS = ('docs/THE_LIGHT_COPY_ZONE_CORNER_PARTNERS_ARE_VECTOR_LIKE_ONLY_THROUGH_THE_SUBLATTICE_CHARGE_BOUNDED_THEOREM_NOTE_2026-10-22.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ('docs/THE_LIGHT_COPY_ZONE_CORNER_PARTNERS_ARE_VECTOR_LIKE_ONLY_THROUGH_THE_SUBLATTICE_CHARGE_BOUNDED_THEOREM_NOTE_2026-10-22.md',)
 #!/usr/bin/env python3
 """Light zone-corner partners: census and three removal tests (seeded, self-contained).
 CL-1 cube tick with copy mass; its step-pi/2 conserved generator H' = (i/2)[R_o, R_e];

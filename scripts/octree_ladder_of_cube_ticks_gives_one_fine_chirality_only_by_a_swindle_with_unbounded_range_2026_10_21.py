@@ -8,7 +8,7 @@
  F  against measurement (estimates)   G  large-scale index of natural starts   H  exact charges, anomaly, generations
 """
 from __future__ import annotations
-AUDIT_INPUT_PATHS = ('docs/OCTREE_LADDER_OF_CUBE_TICKS_GIVES_ONE_FINE_CHIRALITY_ONLY_BY_A_SWINDLE_WITH_UNBOUNDED_RANGE_BOUNDED_THEOREM_NOTE_2026-10-21.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ('docs/OCTREE_LADDER_OF_CUBE_TICKS_GIVES_ONE_FINE_CHIRALITY_ONLY_BY_A_SWINDLE_WITH_UNBOUNDED_RANGE_BOUNDED_THEOREM_NOTE_2026-10-21.md',)
 
 AUDIT_TIMEOUT_SEC = 120
 import itertools, os, signal, sys, time

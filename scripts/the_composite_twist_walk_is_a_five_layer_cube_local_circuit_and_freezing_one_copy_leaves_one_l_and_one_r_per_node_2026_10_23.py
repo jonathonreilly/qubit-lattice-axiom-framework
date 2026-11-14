@@ -1,4 +1,4 @@
-AUDIT_INPUT_PATHS = ('docs/THE_COMPOSITE_TWIST_WALK_IS_A_FIVE_LAYER_CUBE_LOCAL_CIRCUIT_AND_FREEZING_ONE_COPY_LEAVES_ONE_L_AND_ONE_R_PER_NODE_BOUNDED_THEOREM_NOTE_2026-10-23.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ('docs/THE_COMPOSITE_TWIST_WALK_IS_A_FIVE_LAYER_CUBE_LOCAL_CIRCUIT_AND_FREEZING_ONE_COPY_LEAVES_ONE_L_AND_ONE_R_PER_NODE_BOUNDED_THEOREM_NOTE_2026-10-23.md',)
 #!/usr/bin/env python3
 """twist-local-single: composite TWIST (CTWIST) on one-qubit sites -- cube-local layers, the eta doubling,
 and the light content per node.
@@ -229,8 +229,8 @@ Tinv = nullsp([cm(v) for v in VT])
 tq = max(np.linalg.norm(Tinv[:, j].reshape(8, 8) @ s - s @ Tinv[:, j].reshape(8, 8)) for j in range(Tinv.shape[1]) for s in sig)
 td = max(np.linalg.norm(Pw @ Tinv[:, j].reshape(8, 8) @ Pb) for j in range(Tinv.shape[1]))
 check("B1 Schur/Kramers at the T-fixed nodes K = 0, R: every T-invariant on-cell operator commutes with sigma and "
-      "tau3 (dim 8 = M2 + M2 on the eta copies), so for ANY T-covariant cell walk every level at a node is a "
-      "2-fold spinor irrep; free terms move node quasienergies but can never gap a node Weyl", tq < 1e-9 and td < 1e-9
+      "tau3 (dim 8 = M2 + M2 on the eta copies), so for any T-covariant cell walk every level at a node is a "
+      "2-fold spinor irrep (a representation statement; it gives no velocity and no Weyl persistence, B1c)", tq < 1e-9 and td < 1e-9
       and Tinv.shape[1] == 8, f"dim {Tinv.shape[1]}, max [Q,sigma] {tq:.0e}")
 Cm = nullsp([cm(o) for o in sig + [tau1, tau2, tau3]])
 Ex = None
@@ -281,6 +281,33 @@ def weyl(U, K0):
 
 
 wz, wr = weyl(UF, np.zeros(3)), weyl(UF, np.pi * np.ones(3))
+
+
+def vel_det(U, K0):
+    """smallest |det| of the 3x3 velocity matrix of the two Pi+ label blocks at a node (nonzero: a nondegenerate Weyl)."""
+    out = []
+    for a in (1, -1):
+        Pq = Pp @ (np.eye(8) + a * tau3) / 2; vv, Bv = np.linalg.eigh(Pq); B = Bv[:, vv > 0.5]
+        Ad = []
+        for i in range(3):
+            d = np.zeros(3); d[i] = hh
+            Ad.append(B.conj().T @ (1j * (U(K0 + d) - U(K0 - d)) / (2 * hh) @ U(K0).conj().T) @ B)
+        M = np.array([[np.trace(Ad[i] @ B.conj().T @ sig[j] @ B).real / 2 for j in range(3)] for i in range(3)])
+        out.append(abs(np.linalg.det(M)))
+    return min(out)
+
+
+# B1c (repair 2026-11-14, second hold R5): node degeneracy is not a Weyl node. Witness: a constant scalar walk.
+Usc = lambda K: np.exp(0.3j) * np.eye(8)
+cS = max(np.linalg.norm(V[n] @ Usc(K) @ V[n].T - Usc(ROTS[n] @ K)) for n in TI for K in Kr)
+lS = np.ptp(np.angle(np.linalg.eigvals(Usc(np.zeros(3)))))
+vS = max(np.linalg.norm((Usc(np.eye(3)[i] * hh) - Usc(-np.eye(3)[i] * hh)) / (2 * hh)) for i in range(3))
+dF = min(vel_det(UF, np.zeros(3)), vel_det(UF, np.pi * np.ones(3)))
+check("B1c NEGATIVE RESULT for the earlier B1 reading (second hold R5): the constant scalar walk e^(0.3 i) 1 is T-covariant and its node "
+      "levels are degenerate, but its velocity is 0, so it has no Weyl dispersion; degeneracy alone gives no Weyl node and no "
+      "persistence under deformation. FREEZE's node Weyls (B5) are nondegenerate by direct computation of their velocity matrices",
+      cS < 1e-12 and lS < 1e-12 and vS < 1e-12 and dF > 1e-3,
+      f"scalar walk: T residual {cS:.0e}, node level spread {lS:.0e}, velocity {vS:.0e}; FREEZE min |det velocity| at the nodes {dF:.3f}")
 check("B5 light content under FREEZE: exactly one L Weyl (q = 2) and one R Weyl (q = 1) at each node, 2 L + 2 R in "
       "all (half of CTWIST's 4 + 4); by B1 Schur no T-invariant L-R mass (characters differ)",
       wz == wr == [("L", 2, [2]), ("R", 2, [1])], f"K=0 {wz}; R {wr}")
@@ -297,14 +324,14 @@ ks = np.linspace(0.05, np.pi, 300); j = int(np.argmin([F(k) for k in ks]))
 fs = minimize_scalar(F, bounds=(ks[max(j - 1, 0)], ks[min(j + 1, 299)]), method="bounded", options={"xatol": 1e-12})
 eR = np.angle(np.linalg.eigvals(Pp @ UM(np.pi * np.ones(3), np.pi) @ Pp + 0.5j * Pm))
 nR0 = int(sum(abs(x) < 1e-9 for x in eR))
-check("C1 a free label term exp(i phi (1 - tau3)/2) cannot gap the mirror: phi = pi/2 moves the R Weyl at K = 0 "
+check("C1 the label term exp(i phi (1 - tau3)/2) at the two phases computed: phi = pi/2 moves the R Weyl at K = 0 "
       "to pi/2 (still a 2-fold irrep) and opens a quasienergy-0 Fermi surface; phi = pi puts the R-labelled "
-      "states at the R node at quasienergy 0", fs.fun < 1e-6 and nR0 == 2,
+      "states at the R node at quasienergy 0 (other phi and other free terms are not computed)", fs.fun < 1e-6 and nR0 == 2,
       f"sigma_min(U-1) {fs.fun:.1e} at k = {fs.x:.3f} on a generic line; R-node states at 0 for phi=pi: {nR0}")
 lk = [np.linalg.norm(Pp @ (np.eye(8) + tau3) / 2 @ UF(np.array([1, .3, -.2]) * x) @ PRl) for x in (0.02, 0.01)]
 check("C2 the label (1 - tau3)/2 is exact at the nodes and leaks O(K^2) under FREEZE (ratio 4 for K -> K/2)",
       abs(lk[0] / lk[1] - 4) < 0.05, f"ratio {lk[0] / lk[1]:.3f}")
 print("verdict: CTWIST and FREEZE match five-layer cube-local products numerically (residual < 1e-10; exact witness open), found layers not T-symmetric;")
-print("FREEZE leaves one L(q=2)+one R(q=1) per node; separating the mirror needs an interacting (multi-family) term.")
+print("FREEZE leaves one L(q=2)+one R(q=1) per node; the free label term at the phases computed relocates the R content and does not separate the mirror.")
 print(f"TOTAL: PASS={NPASS} FAIL={NFAIL}")
 raise SystemExit(1 if NFAIL else 0)

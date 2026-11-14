@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_corner_stabilizer_forces_a_scalar_light_block_at_x_and_m_so_no_rotation_covariant_freeze_deformation_gaps_the_light_partners_light_light_2026_10_23.py
-runner_sha256: bd29c1d75e492dda4f35670d3f377eef508c69d842ea82cbd60eb69f7c0012f2
-input_fingerprint_sha256: 178a352cd97c88e61e7420c4e1c4bb7f9ceeb9196a6921d31d29519a9b96cf36
+runner_sha256: db5a28e5f964ce7b1ca7da9ddcba12b3678ab406c01a6f0a1f9b416af2df56c7
+input_fingerprint_sha256: 653eda767b671fe4ec93d20ead2a672dbd2e0c38eb7a4e6ec296126b4f31d174
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 == A. exact Schur at the D2-fixed corners ==

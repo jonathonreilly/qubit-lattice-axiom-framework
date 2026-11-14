@@ -1,4 +1,4 @@
-AUDIT_INPUT_PATHS = ('docs/A_DOMAIN_WALL_TICK_WITH_THE_LAYER_DIRECTION_AS_SPACE_PUTS_ONE_WEYL_CONE_ON_EACH_WALL_BUT_THE_CIRCUIT_FORCES_THE_MIRROR_ONTO_THE_FAR_WALL_BOUNDED_THEOREM_NOTE_2026-10-23.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ('docs/A_DOMAIN_WALL_TICK_WITH_THE_LAYER_DIRECTION_AS_SPACE_PUTS_ONE_WEYL_CONE_ON_EACH_WALL_BUT_THE_CIRCUIT_FORCES_THE_MIRROR_ONTO_THE_FAR_WALL_BOUNDED_THEOREM_NOTE_2026-10-23.md',)
 #!/usr/bin/env python3
 """chiral-tick-form: does a unitary tick (Hamiltonian / Floquet) form of one-handed matter with the mirror removed exist?
  A  domain wall with the extra (layer) direction as SPACE and the tick as time: a 3+1+1 slab Hamiltonian H (strictly
@@ -130,9 +130,30 @@ check("A2 [F] the 4D bulk is gapped: walk at quasienergy 0 and pi (8^4 grid + lo
 tab = trim_table(12, M0, TH, 0.05); tabH = trim_table(12, M0, TH, gH / 2, True)
 okA3 = list(tab) == [((0, 0, 0), 0.0)] and tab[((0, 0, 0), 0.0)]['L'][1] == -tab[((0, 0, 0), 0.0)]['R'][1] != 0 and list(tabH) == [((0, 0, 0), 0.0)] \
     and tabH[((0, 0, 0), 0.0)]['L'][1] == tab[((0, 0, 0), 0.0)]['L'][1]
-check("A3 [F] exactly one two-component Weyl node per wall, at k = 0 and quasienergy 0, opposite chirality on the two walls; none at the "
-      "other 7 corners, none at pi; the Hamiltonian slab agrees (Ls = 12)", okA3,
+check("A3 [F] threshold selection (|phase| < 0.05 for the walk, |E| < H gap/2 for H): one two-dimensional low-energy wall-localised "
+      "space per wall, at k = 0 near quasienergy 0, with opposite projected-velocity chirality on the two walls; none at the other 7 "
+      "corners, none at pi; the Hamiltonian slab agrees (Ls = 12). These are near-zero modes, not exact zeros (A3x)", okA3,
       f"walk {tab[((0,0,0),0.0)]}; H L,R chirality {tabH[((0,0,0),0.0)]['L'][1]},{tabH[((0,0,0),0.0)]['R'][1]} |det v| {tabH[((0,0,0),0.0)]['L'][2]:.3f}")
+# A3x (repair 2026-11-14, second hold R3): at k = 0 the slab Hamiltonian is (m - 1) G5 + layer bonds, which acts as 1 on the
+# spin factor. In the eigenbasis of sx (x) 1, which anticommutes with it, it is off-diagonal with the Ls x Ls block
+# B = (m - 1) 1 + (unit superdiagonal), so its levels are +-(singular values of B), each twice (spin). det B = (m - 1)^Ls.
+from fractions import Fraction
+def chain_B(Ls, m): return (m - 1) * np.eye(Ls) + np.diag(np.ones(Ls - 1), 1)
+LsX = 12
+eH = np.sort(np.abs(np.linalg.eigvalsh(ham(np.zeros(3), LsX, M0))))
+svB = np.sort(np.linalg.svd(chain_B(LsX, M0), compute_uv=False))
+detB = Fraction(-2, 5) ** LsX
+red = np.abs(eH - np.sort(np.repeat(svB, 4))).max()
+eU = np.sort(np.abs(np.angle(np.linalg.eigvals(walk(np.zeros(3), LsX, M0, TH)))))[0]
+sv1 = np.sort(np.linalg.svd(chain_B(LsX, 1.0), compute_uv=False))[0]
+e1 = np.sort(np.abs(np.linalg.eigvalsh(ham(np.zeros(3), LsX, 1.0))))[0]
+check("A3x [T] the A3 wall modes are not exact zeros: at k = 0, H = (m - 1) G5 + bonds reduces to two spin copies of a chiral chain "
+      "with triangular B (diagonal m - 1, unit superdiagonal); its levels are +-sv(B), and det B = (m - 1)^Ls = (-2/5)^12 != 0 at m = 0.6, "
+      "Ls = 12, so the smallest |E| is sigma_min(B) > 0; the walk's smallest |phase| at k = 0 is likewise nonzero. Control: at m = 1, B is "
+      "a nilpotent shift and H has an exact zero mode", red < 1e-12 and svB[0] > 1e-6 and abs(float(detB) - np.prod(np.diag(chain_B(LsX, M0)))) < 1e-18
+      and eU > 1e-7 and sv1 < 1e-14 and e1 < 1e-13,
+      f"|levels(H) - sv(B)| {red:.0e}; sigma_min(B) = min |E| = {float(svB[0])!r}; det B = {detB.numerator}/{detB.denominator}; "
+      f"walk min |phase| at k = 0: {eU:.2e}; m = 1: sigma_min(B) {sv1:.0e}, min |E| {e1:.0e}")
 bad = 0; ning = 0; Ls = 8
 for n in itertools.product(range(12), repeat=3):
     kk = 2 * np.pi * np.array(n) / 12; e = np.abs(np.angle(np.linalg.eigvals(walk(kk, Ls, M0, TH))))

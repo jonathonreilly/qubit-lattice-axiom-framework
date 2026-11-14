@@ -1,4 +1,4 @@
-AUDIT_INPUT_PATHS = ('docs/THE_BLOCK_LOCAL_QUARTIC_GAPS_THE_DIRAC_MIRROR_SYMMETRICALLY_AND_RELEASES_THE_LIGHT_PARTNERS_BOUNDED_THEOREM_NOTE_2026-10-22.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ('docs/THE_BLOCK_LOCAL_QUARTIC_GAPS_THE_DIRAC_MIRROR_SYMMETRICALLY_AND_RELEASES_THE_LIGHT_PARTNERS_BOUNDED_THEOREM_NOTE_2026-10-22.md',)
 #!/usr/bin/env python3
 """block-quartic-smg: the block-local (on-block) SU(4) quartic on a real Dirac sea, with and without a mixed light layer. Sign-free CT-INT.
 Block lattice L^3 (block units); each block holds the mirror family's 4 flavour modes (one per fine site of the role block).
@@ -294,7 +294,7 @@ e2 = max(abs(Q[0] @ Q[1] - Q[1] @ Q[0]).max(), abs(Q[0] @ Q[1].T - Q[1].T @ Q[0]
 Hb = (-(Q[0] + Q[0].T)).toarray()[:16, :16]; eb = np.linalg.eigvalsh(Hb)
 check('A4 THEOREM the block term is invariant under SU(4) gauge rotations of its own block (charge 4, det = 1), commutes with every other '
       "block's term and its conjugate, maps to its conjugate under the sublattice particle-hole map, and alone has a unique ground state "
-      '(-g, gap g)', e1 < 1e-12 and e2 < 1e-12 and ePH < 1e-12 and abs(eb[0] + 1) < 1e-12 and eb[1] > -1e-12,
+      '(-g, gap g) [SU(4) toy block, one mode per flavour; not the Spin(10) form]', e1 < 1e-12 and e2 < 1e-12 and ePH < 1e-12 and abs(eb[0] + 1) < 1e-12 and eb[1] > -1e-12,
       f"max|[T,Q]| {e1:.0e}; PH {ePH:.0e}; max|[Q_b,Q_b']| {e2:.0e}; block levels {np.round(eb[:3], 3)}")
 # A5: Dirac band and mixings
 S4, H4, _ = stag_band(4, 1.0, False); S6, H6, _ = stag_band(6, 1.0, True)

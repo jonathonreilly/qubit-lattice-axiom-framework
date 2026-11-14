@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_rung_ladder_is_a_domain_wall_direction_with_exact_inflow_but_bounded_speed_makes_its_coarse_rungs_a_charged_tower_2026_10_22.py
-runner_sha256: e7294409a6391124a9e24f28eea1c35029dd553b57b7fa7bbc91fb4ab4b06bfb
-input_fingerprint_sha256: 6eab458f520b8b97177a214e9e19dfc244c3909a138f1b3006f5f387ab3587ab
+runner_sha256: 1e0ad45e52474c77b62db796bc192c03b374cd2c65bdc2eae55add0656468cdc
+input_fingerprint_sha256: 0c01b7d643bf858cc93b15e3df98482588d01b5b0a8ac0fc144cb4c5977ac064
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.58
+elapsed_sec: 2.32
 status: ok
 ----- stdout -----
 == A. free rung ladder (1+1D tree; copy mass m = -1, exchange kap = 1)
@@ -23,14 +23,14 @@ status: ok
 == D. estimates against measurement (a = sqrt(8 pi) l_P, E_a/(2v) = 2.1e18 GeV)
 [PASS] D1 DIAGNOSTIC one Wilson-Dirac band (gap 2 m0, unit charge): static polarisation chi(q)/q^2 = Delta(1/e^2) per band, of the continuum size ln(Lambda^2/m^2)/(12 pi^2) | m0 0.2: 0.0347 (cont 0.0465), m0 0.354: 0.0219 (cont 0.0369), m0 0.6: 0.0136 (cont 0.0280)
 [PASS] D2 CONDITIONAL ESTIMATE (inputs a = sqrt(8 pi) l_P, H0, PDG values, c1 from a stand-alone Wilson band) zoom rate, gauge-covariant: 17.4 rungs between m_e and M_Z, each a vector-like 3-family copy (sum Q^2 = 8) adding 4 pi c1 sum Q^2 to 1/alpha: extra running 38.4 vs the 0.014 known from Delta alpha_had: in conflict with the measured running unless c1 < 2.4e-05 | c1 0.0219; R_H = log2(c/H0 a) = 200.1
-   D3 ESTIMATE fine rate: no tower (gap ~0.4 per rung at Planck), mirror energy 2^R x momentum: below 1 TeV only for |Q| < 1e-15 x 2^-R/a, ~0 states per horizon; residual mass mu(mu/kap)^R_H <= 1e-42 GeV at mu/kap = 1/2; price: rung j hops 2^j sites per tick (speed 2^j, the swindle of the octree-ladder note), against nearest-neighbour admissibility
+   D3 ESTIMATE fine rate: no tower (gap ~0.4 per rung at Planck), mirror energy 2^R x momentum: below 1 TeV only for |Q| < 1e-15 x 2^-R/a, ~0 states per horizon; residual mass mu(mu/kap)^R_H <= 1e-42 GeV at mu/kap = 1/2; price: rung j hops 2^j sites per tick (speed 2^j, the swindle of the octree-ladder note): an unbounded hop range, which no current axiom bounds or allows
    D4 ESTIMATE any cut (Gauss projection, B4) or finite top at E_R >~ M_Z: a massless charged mirror; e^c' alone adds 35.5 MeV to Gamma_Z per family vs sigma 2.3 MeV (ladder-wall E3)
-== E. owner-widened: full-density layer coordinate inside a role block
+== E. scope widened in the source session: full-density layer coordinate inside a role block
 [PASS] E1 DIAGNOSTIC layer register = domain-wall slab on Z^3 cells: one chiral pair at the two end layers, layer gap the same on every layer (no tower), residual mass (mu/kap)^Ls, but the far-end mirror carries the full charge (flow on the far layers) | layer gaps [1. 1. 1. 1. 1. 1.]; split ratio per 2 layers [0.04 0.04 0.04]; flow (near, far) (-1,+1)
    E2 THEOREM (B1 + B2 on the slab) any gauge-covariant reading of the far layers keeps their crossing under flux 2 pi: the mirror stays coupled to the holonomy, with charge q, so a vector-like gauge theory with exact chiral symmetry results; chiral gauge couplings need one more clause (far-layer symmetric gapping, or the far layers reading a smoothed field that keeps topology)
    E3 ESTIMATE cost: 16 Weyl x 4 components x Ls one-mode sites per family per matter cell (64 Ls); three families at Ls = 8 use 1536 sites of a 12^3 role block; cell-to-cell hops span the block (uniform slowdown b, no tower); residual mass (mu/kap)^Ls tunable to zero at the free tuned wall
    F THEOREM (counting) the tick cannot be the wall direction: a wall bounds a (d+1)-dim bulk whose boundary is the whole 3+1 world, tick included; the B4 transfer matrix is that world's own time step (euclidean-b4 B4: it projects onto the vacuum and cannot carry CL-2); the overlap operator sign(H_W) is the infinite-layer limit of a FIFTH-direction transfer matrix, i.e. of E's layer coordinate
-supplied: 1+1D tree, rates, m = -kap, mu, Wilson lines, cut, Ntop, Q grid, Wilson band m0 and grid, layer count, unit map, measured inputs | 2.5 s
+supplied: 1+1D tree, rates, m = -kap, mu, Wilson lines, cut, Ntop, Q grid, Wilson band m0 and grid, layer count, unit map, measured inputs | 2.2 s
 cited: PR #9908, hybrid-wall, ladder-wall, euclidean-b4, toy-qmc, Callan-Harvey, Kaplan, Shamir, Neuberger, Grabowska-Kaplan, PDG
 TOTAL: PASS=13 FAIL=0
 

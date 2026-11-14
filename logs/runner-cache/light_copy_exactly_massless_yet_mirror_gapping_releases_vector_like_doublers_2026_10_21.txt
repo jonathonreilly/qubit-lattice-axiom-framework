@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py
-runner_sha256: 486df941583257b47c4d53afbeacc44134c4dbedb1230811ceeea0d19c4b1e8e
-input_fingerprint_sha256: d56329027da7dc45bbff4a3f3eb706824e1eb440b312572a9f367fd49178fafb
+runner_sha256: ae02eec4264027de034e3f0e4cad75c5423a58f7445620c23e0ae0a1b86efa3d
+input_fingerprint_sha256: fe85ff245930ba283309835f76d5bfa64ace25d77f475d58b185b2d08c42520d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.32
+elapsed_sec: 2.39
 status: ok
 ----- stdout -----
 == A. free copy structure of H' (light = s3 -1, mirror = s3 +1)
@@ -22,7 +22,7 @@ status: ok
    [T] a mirror condensate reaches the light only through h(K) ~ K^2: its induced light mass term is ~ K^4/M, zero at K = 0 (B1).
        Measured masses need a vacuum field coupled to the light copy directly, not a mirror-sector vev.
 == D. anomalies of the light content (exact integers)
-[PASS] D1 [T] per family the light carries twisted-Z3_k x SU(2)_e^2 = 4(q_a+k) (16 = 1 mod 3 at k = 2), S the opposite: anomaly protection holds exactly for the N at which S cannot be gapped | k=2: N [1, 2, 4, 5, 7, 8]
+[PASS] D1 [T] per family the light carries twisted-Z3_k x SU(2)_e^2 = 4(q_a+k) (16 = 1 mod 3 at k = 2), S the opposite: anomaly sums are nonzero mod 3 exactly at these N, the N at which S cannot be gapped if anomaly matching holds (cited, unverified here; the protection is conditional on it) | k=2: N [1, 2, 4, 5, 7, 8]
 [PASS] D2 [T] at N = 0 mod 3 all listed light anomalies vanish (Z4xSU(2)^2, Z16 = 16, Witten, Z3^3, Z3-grav, Z3xSU(4)^2, Z3xSU(2)^2): anomaly matching gives no protection there
 == E. Golterman-Shamir: composites and strong-coupling doubling (Task 2)
 [PASS] E1 [E] composites: odd-N cell levels >= 33.58 g (c^dag|GS> 99.98% in the lowest, so composite fermions share it), even >= 19.07 g; band >= 11.7 g for t < 3.65 g; light + mirror boson >= 19.07 g - 0.026/g; twisted charge 0 vs 1 forbids mirror-only partners
@@ -39,7 +39,7 @@ status: ok
 [PASS] F3 [F] light p = pi doubler qp: free -1.006 (w 0.57), g = 4 -0.210 (w 0.90), g = 16 -0.1497 (w 0.9961 = Z): released as a left-mover, the light copy becomes R + L: not chiral
 [PASS] F4 [F] contrast, pair hop on both copies: light Gamma qp -> -22.35 (w 0.32): a term touching the light at p = 0 gaps it
 [PASS] F5 [T] zone-corner endpoint: freezing (a_2J - a_2J+1)/sqrt2 leaves H_eff = sin(K)/2, a new left-mover at K = pi (Nielsen-Ninomiya)
-elapsed_seconds 2.9
+elapsed_seconds 2.1
 theorems: A1-A4, B1-B2, C1, D1-D2, E2, E5, F1, F5; finite: C2, E3, F2-F4; estimates: E1, E4, [E]/[M] lines. Supplied: H', which copy
   is the mirror, the mirror terms (pair square, top form, pair hop), g, mu, the (4,2) content, twist k = 2. Cited: Nielsen-Ninomiya,
   anomaly matching, Golterman-Shamir 2505.20436, the smg-verify chain formulas.

@@ -3,14 +3,19 @@
 Two-component walks U(k) in SU(2) on Z^3. Chirality of a cone at k0 with U(k0) = s I (s = +1: quasi-energy 0,
 s = -1: quasi-energy pi) is sign det M for U(k0+q) = s (1 - i sum_ij M_ij q_j sigma_i + O(q^2)).
 Checks: exact cone sets of the split-step walk S_z S_y S_x; the winding W3 of split-step, coin-interleaved and
-diagonal-shift walks and of the eight-mode block candidate; a quasi-local walk with W3 = 1 and one unpaired cone
-at pi; equal net chirality at 0 and pi; the exponential tail that walk needs; CL-5 energy of pi-sector modes.
+diagonal-shift walks and of the eight-mode block candidate; a quasi-local walk with W3 = -1 and one cone at
+quasi-energy 0; equal net chirality at 0 and pi; the exponential tail that walk needs; CL-5 energy of pi-sector modes.
+Repair 2026-11-14 (second hold, R1): the degree counts LOCAL degrees. Weyl-cone counting needs every preimage of
++I and -I to be nondegenerate (det M != 0). Check 4b verifies that on the walks used; check 4c keeps the hold's
+counterexample (a flattened walk, homotopic to the m = -2 walk, whose only preimage of +I is degenerate, so its
+Weyl-cone sums are 0 at quasi-energy 0 and +1 at pi while both local-degree sums are +1); check 4d excludes the
+masses m = -3, -1, 1, 3, where n vanishes at a corner. The SK1(C[Z^3]) input is no longer read (R9).
 No matter content, no physical chirality and no adopted tick update is established.
 """
 from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 120
-AUDIT_INPUT_PATHS = ('docs/TICK_UPDATE_WINDING_FIXES_NET_CONE_CHIRALITY_AT_QUASI_ENERGY_ZERO_AND_PI_BOUNDED_THEOREM_NOTE_2026-10-21.md', 'docs/CANDIDATE_LAWS.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ('docs/TICK_UPDATE_WINDING_FIXES_NET_CONE_CHIRALITY_AT_QUASI_ENERGY_ZERO_AND_PI_BOUNDED_THEOREM_NOTE_2026-10-21.md',)
 
 import sys, os, signal, time, itertools
 os.environ['OPENBLAS_NUM_THREADS'] = '1'
@@ -107,6 +112,75 @@ def one(f, k):
     return f(K)
 
 
+# ---------- repair 2026-11-14 (R1): regularity of the preimages and local degrees ----------
+def comps(U):
+    """U = a0 - i a.sigma in SU(2): return (a0, [a1, a2, a3])."""
+    a0 = np.real(np.trace(U, axis1=-2, axis2=-1)) / 2
+    return a0, [np.real(1j * np.trace(U @ s, axis1=-2, axis2=-1)) / 2 for s in AL]
+
+
+def from_comps(a0, a):
+    U = a0[..., None, None] * I2
+    for i in range(3): U = U - 1j * a[i][..., None, None] * AL[i]
+    return U
+
+
+def flattened(K, m=-2.0, t=1.0):
+    """The hold's map F(a0, a) = (a0, (1 - t a0) a)/norm composed with the m = -2 walk. The norm never vanishes
+    (a0 = 0 forces |a| = 1), and t -> 0 is a homotopy to the walk itself, so W3 is unchanged."""
+    a0, a = comps(wilson_unit(K, m))
+    b = [(1 - t * a0) * x for x in a]
+    nrm = np.sqrt(a0 ** 2 + sum(x ** 2 for x in b))
+    return from_comps(a0 / nrm, [x / nrm for x in b])
+
+
+def det_M(Ufun1, k0, s, h=1e-5):
+    """det M at a preimage of s I, U(k0 + q) = s (1 - i sum M_ij q_j sigma_i + O(q^2))."""
+    M = np.zeros((3, 3))
+    for j in range(3):
+        e = np.zeros(3); e[j] = h
+        A = s * (Ufun1(k0 + e) - Ufun1(k0 - e)) / (2 * h)
+        for i in range(3): M[i, j] = np.real(1j * np.trace(AL[i] @ A) / 2)
+    return float(np.linalg.det(M))
+
+
+def local_degree(Ufun, k0, s, rad=0.05, nt=40, nph=80):
+    """Degree of q -> a(q)/|a(q)| on the sphere |q| = rad, a the vector part of s U(k0 + q) (signed solid angles)."""
+    th = np.linspace(0, np.pi, nt + 1); ph = np.linspace(0, 2 * np.pi, nph + 1)
+    T, P = np.meshgrid(th, ph, indexing='ij')
+    pts = np.stack([np.sin(T) * np.cos(P), np.sin(T) * np.sin(P), np.cos(T)], -1) * rad + k0
+    _, a = comps(s * Ufun([pts[..., i] for i in range(3)]))
+    v = np.stack(a, -1); v = v / np.linalg.norm(v, axis=-1, keepdims=True)
+    def omega(A, B, C):
+        num = np.einsum('...i,...i', A, np.cross(B, C))
+        den = 1 + np.einsum('...i,...i', A, B) + np.einsum('...i,...i', B, C) + np.einsum('...i,...i', C, A)
+        return 2 * np.arctan2(num, den)
+    A, B, C, D = v[:-1, :-1], v[1:, :-1], v[1:, 1:], v[:-1, 1:]
+    return float((omega(A, B, C).sum() + omega(A, C, D).sum()) / (4 * np.pi))
+
+
+DET_TOL = 1e-6   # |det M| below this: a degenerate preimage, not a Weyl cone
+
+
+def preimage_table(Ufun, pts):
+    """For each point with U = s I: (s, det M, local degree)."""
+    out = []
+    for k in pts:
+        k = np.array(k, float); U = one(Ufun, k)
+        for s in (1, -1):
+            if np.allclose(U, s * I2, atol=1e-12):
+                out.append((s, det_M(lambda q: one(Ufun, q), k, s), local_degree(Ufun, k, s)))
+    return out
+
+
+def weyl_sum(tab, s):
+    return sum(int(np.sign(d)) for (ss, d, _) in tab if ss == s and abs(d) >= DET_TOL)
+
+
+def degree_sum(tab, s):
+    return sum(round(g) for (ss, _, g) in tab if ss == s)
+
+
 def cone_table(Ufun, pts):
     """For candidate points, return {0: [chir...], pi: [chir...]} where U = +I or -I."""
     out = {0: [], 1: []}
@@ -162,12 +236,54 @@ def main():
         tb = cone_table(lambda K: wilson_unit(K, m), corners); w = W3(lambda K: wilson_unit(K, m), 40)
         c0, cp = sum(tb[0]), sum(tb[1]); rows.append(f'm={m}: 0 +{tb[0].count(1)}/-{tb[0].count(-1)}, pi +{tb[1].count(1)}/-{tb[1].count(-1)}, W3={w:+.6f}')
         ok &= (c0 == cp == -round(w)) and abs(w - round(w)) < 1e-4
-    check('quasi-local walk (n0 - i n.sigma)/|n|: net chirality at 0 = net chirality at pi = -W3 for every m (W3 sign: U = a0 - i a.sigma)', ok, '; '.join(rows[:2]))
+    check('quasi-local walk (n0 - i n.sigma)/|n|: net chirality at 0 = net chirality at pi = -W3 at m = 2, 0.5, 4.5, -2 (W3 sign: U = a0 - i a.sigma)', ok, '; '.join(rows[:2]))
     print('   ', '; '.join(rows[2:]))
     tb = cone_table(lambda K: wilson_unit(K, -2.0), corners); tb2 = cone_table(lambda K: wilson_unit(K, 2.0), corners)
     check('m=-2: exactly one cone at quasi-energy 0 (k=0, chirality +1); all 7 doublers at pi (4 of +, 3 of -), net +1',
           tb[0] == [1] and tb[1].count(1) == 4 and tb[1].count(-1) == 3 and tb2[1] == [1] and len(tb2[0]) == 7,
           'm=+2 is the mirror case (7 at 0, one at pi), U_{-m}(k) = -U_m(k - pi(1,1,1))')
+
+    # 4b. (repair R1) the degree theorem counts Weyl cones only at nondegenerate preimages: check that hypothesis
+    regs = []; reg_ok = True
+    for name, f, pts in (('split-step', split_step, half), ) + tuple(
+            (f'm={m}', (lambda mm: (lambda K: wilson_unit(K, mm)))(m), corners) for m in (2.0, 0.5, 4.5, -2.0)):
+        tb_ = preimage_table(f, pts)
+        dmin = min(abs(d) for (_, d, _) in tb_)
+        agree = all(round(g) == int(np.sign(d)) for (_, d, g) in tb_)
+        reg_ok &= dmin >= DET_TOL and agree and max(abs(g - round(g)) for (_, _, g) in tb_) < 1e-6
+        regs.append(f'{name}: {len(tb_)} preimages, min |det M| {dmin:.3f}')
+    check('4b regularity: every preimage of +I and -I of the walks used is nondegenerate (|det M| >= 1e-6), and its '
+          'chirality sign det M equals its local degree, so these Weyl-cone counts are degree counts', reg_ok, '; '.join(regs))
+
+    # 4c. (repair R1, negative result kept) the hold's counterexample: degree counts local degrees, not Weyl cones
+    w_fl = W3(flattened, 56)
+    tf = preimage_table(flattened, corners); tw2 = preimage_table(lambda K: wilson_unit(K, -2.0), corners)
+    north = [x for x in tf if x[0] == 1]
+    slopes = []
+    for h in (1e-2, 5e-3, 2.5e-3):
+        q = h * np.array([1.0, 0.3, -0.2])
+        slopes.append((np.sqrt(sum(x ** 2 for x in comps(one(lambda K: wilson_unit(K, -2.0), q))[1])) / np.linalg.norm(q),
+                       np.sqrt(sum(x ** 2 for x in comps(one(flattened, q))[1])) / np.linalg.norm(q)))
+    fall = [slopes[i][1] / slopes[i + 1][1] for i in range(2)]
+    ok_c = (abs(w_fl + 1) < 1e-6 and len(north) == 1 and abs(north[0][1]) < DET_TOL
+            and weyl_sum(tf, 1) == 0 and weyl_sum(tf, -1) == 1 and degree_sum(tf, 1) == degree_sum(tf, -1) == 1
+            and weyl_sum(tw2, 1) == weyl_sum(tw2, -1) == 1 and all(abs(x - 4) < 0.05 for x in fall)
+            and all(abs(sw - 1) < 1e-3 for sw, _ in slopes))
+    check('4c NEGATIVE RESULT (hold R1 witness): F(a0, a) = (a0, (1 - a0) a)/norm composed with the m = -2 walk has W3 = -1 '
+          '(homotopic to it), its only preimage of +I (k = 0) is degenerate (|U - I| = O(|q|^3)), so the Weyl-cone sums are 0 at '
+          'quasi-energy 0 and +1 at pi, while both local-degree sums stay +1 = -W3; the unflattened walk has Weyl sums +1, +1',
+          ok_c, f'W3 {w_fl:.6f}; north det M {north[0][1] if north else float("nan"):.1e}, local degree '
+          f'{north[0][2] if north else float("nan"):.3f}; Weyl sums (0, pi) flattened ({weyl_sum(tf, 1)}, {weyl_sum(tf, -1)}), '
+          f'walk ({weyl_sum(tw2, 1)}, {weyl_sum(tw2, -1)}); |a|/|q| walk {slopes[0][0]:.4f}, flattened '
+          + ', '.join(f'{x[1]:.4e}' for x in slopes) + ' (falls by ' + ', '.join(f'{x:.3f}' for x in fall) + ' as h halves)')
+
+    # 4d. (repair R1) the masses where n = (n0, sin k) vanishes at a corner are excluded from the walk family
+    cvals = sorted({sum(np.cos(np.pi * np.array(p))) for p in itertools.product(range(2), repeat=3)})
+    sing = {m: min(abs(m + c) for c in cvals) for m in (-3.0, -1.0, 1.0, 3.0, 2.0, 0.5, 4.5, -2.0)}
+    check('4d the walk (n0 - i n.sigma)/|n| is undefined exactly at m = -3, -1, 1, 3 (n0 = m + sum cos k = 0 at a corner, where '
+          'sin k = 0); the masses used avoid them', all(sing[m] == 0 for m in (-3.0, -1.0, 1.0, 3.0))
+          and all(sing[m] > 0.4 for m in (2.0, 0.5, 4.5, -2.0)),
+          'corner sums of cos k: ' + str([int(c) for c in cvals]) + '; min |n| at corners: ' + ', '.join(f'm={m:g}: {v:g}' for m, v in sing.items()))
 
     # 5. cubic covariance of the quasi-local walk under the 24 rotations
     worst = 0.0
@@ -210,8 +326,11 @@ def main():
     check('CL-5 energies of modes at |q|=0.05 from a pi-cone are within 0.06 of pi (outside the CL-6 domain)',
           all(abs(E - np.pi) < 0.06 for E in Es), 'energies ' + ', '.join(f'{E:.3f}' for E in Es))
 
-    print('theorem: SU(2) walk => net chirality at 0 = net at pi = -W3 (the degree); any product of coins and coin-conditioned shifts has deg 0.')
-    print('external input (not rederived here): SK1 of the Laurent ring C[Z^3] vanishes, so every finite-range walk has W3 = 0.')
+    print('theorem: for an SU(2) walk the sums of local degrees of the preimages of +I and of -I both equal -W3 (the degree);')
+    print('  when every preimage is nondegenerate (det M != 0, check 4b) these are the net Weyl-cone chiralities at 0 and pi;')
+    print('  without that hypothesis a preimage need not be a Weyl cone (check 4c). Products of coins and coin-conditioned shifts have deg 0.')
+    print('NOT CHECKED, and read by no statement here: the source cited the vanishing of SK1 of the Laurent ring C[Z^3] for')
+    print('  "every finite-range walk has W3 = 0"; no exact theorem statement or check record is carried, so that claim is not made.')
     print('supplied: the quasi-local walk, its parameter m and its exponential tail; no adopted tick update or matter content.')
     print('elapsed_seconds', round(time.monotonic() - _STARTED, 1))
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")

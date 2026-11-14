@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/octree_ladder_of_cube_ticks_gives_one_fine_chirality_only_by_a_swindle_with_unbounded_range_2026_10_21.py
-runner_sha256: 39efcc2ed2dcb3aeeddbbaebfd95b488e3ba50e927507773dab5cd1086216b23
-input_fingerprint_sha256: 1cf2c9999485c549a664ca241186aea369c2cb745cfafd1a959d510a208f7ee6
+runner_sha256: 431ef56581c2b20635fd38b978588a9446b37ea20aba7ffecf1819e3147c887a
+input_fingerprint_sha256: cd4cc8641ed45e71983f3cd1011203fed94f40639751f56ee04635241f9c223c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 19.64
+elapsed_sec: 19.09
 status: ok
 ----- stdout -----
 == A. CL-2 tick (st = 0.04): light algebra, fifth matrix, Wilson term, copies
@@ -37,7 +37,7 @@ status: ok
    H2 CONDITIONAL ESTIMATE (not counted; field values and QED comparison supplied) a link on N would drain rung-0 charge at 6e+34 m^-3 s^-1 in 1 MV/m parallel to 1 T, against vector-like QED; a link needs a wall orientation tied to an exact charge (none supplied)
 [PASS] H3 generations: the rung-0 count is the bulk invariant, 1 (2 without copy mass), never 3
 supplied: octree sites, split, fine rate, X = W(1-g5)/2 (dimerized), kap = 0.5, M = st > kap st, st; measured inputs; cited GNVW.
-elapsed_seconds 19.3
+elapsed_seconds 18.8
 TOTAL: PASS=17 FAIL=0
 
 ----- stderr -----

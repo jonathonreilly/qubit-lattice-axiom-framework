@@ -77,3 +77,4 @@ No rule is adopted. Within eps-preserving bilinear masses on these free bands, t
 - Free bands only: the CL-1 tick at one (eps, M) point and its step-pi/2 generator.
 - The composite test is on one SU(4) block, with no dispersion. The spin-blindness argument assumes that G_(m,Phi) is spin-scalar at w = 0, as it is on the block.
 - Not computed: the composite spectra of an extended symmetric mirror, any 3D interacting phase, Spin(10), twelve-turn covariance of X (the source notes' register states that no eps-preserving mass at R is turn-invariant), and links.
+- Unverified inputs (2026-11-14, second hold R9): the identification of the sublattice sign eps and the copy sign s with physical charges or currents, and of the free-band gaps with physical gapping, is supplied; every gapping conclusion here is a statement about these free bands and the one-block atom. Golterman-Shamir and Nielsen-Ninomiya are named as context; no step reads them.

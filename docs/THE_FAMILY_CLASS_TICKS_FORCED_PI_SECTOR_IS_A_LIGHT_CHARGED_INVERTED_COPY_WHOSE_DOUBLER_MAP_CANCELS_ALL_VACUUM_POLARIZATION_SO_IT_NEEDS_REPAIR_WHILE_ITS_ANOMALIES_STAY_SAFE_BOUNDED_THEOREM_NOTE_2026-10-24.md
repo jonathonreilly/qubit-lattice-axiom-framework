@@ -1,7 +1,7 @@
 ---
 claim_id: the_family_class_ticks_forced_pi_sector_is_a_light_charged_inverted_copy_whose_doubler_map_cancels_all_vacuum_polarization_so_it_needs_repair_while_its_anomalies_stay_safe_bounded_theorem_note_2026-10-24
 claim_type: bounded_theorem
-claim_scope: "Free bands of FREEZE (the family-class tick representative, W_F = (-2,1,1); a supplied model with zero premise weight) on CL-1's 2x2x2 cell (CL-1: the source label for the supplied cube tick), with CL-1's plain tick (eps 0.3) as control, and cell-charge potentials as gauge probes. Exact: (1) the doubler S (S U(K) S^-1 = -U(K+R)) maps each no-Fermi-surface half-filled vacuum to its complement, S rho(K) S^+ = 1 - rho(K+R); (2) hence, for every S-even one-body probe (any cell-charge potential, any strength, any number of ticks, any uniform vector potential), the induced cell charge of the supplied interval-filling vacuum equals the infinite-temperature value, zero: no response to those probes; (3) zero-quasi-energy, zero-momentum states made of a 0-sector pair and a pi-sector pair exist at every momentum scale (kinematics only: the free filled vacuum is stationary under the tick, so its transition amplitude into them is zero, and no decay or rate follows without a defined interaction); (4) F_pi = W in every turn sector, robust under turn-symmetric deformations, so no free term gaps pi; (5) the one-cube start is degenerate and every no-Fermi-surface filling has at least one inverted boundary; (6) with the pi copy (2 x 16 per family) every gauge anomaly stays zero and the turn-anomaly N_f set is unchanged. Conditional comparator estimates with supplied numbers, not exclusions: IF a gauged completion carried the S-even cancellation to the electron loop and coupled the pi copies to the Z as the 0 copies, the hydrogen 2S Uehling term would vanish and N_nu would be 0 or 6, against the measured values; neither bridge is defined here. Not covered: a gauged FREEZE (link gauging is not defined), the identification of the cell-charge response with an electromagnetic or electroweak observable, interacting gapping of the pi sector, other members of the family class, decay rates."
+claim_scope: "Free bands of FREEZE (the family-class tick representative, W_F = (-2,1,1); a supplied model with zero premise weight) on CL-1's 2x2x2 cell (CL-1: the source label for the supplied cube tick), with CL-1's plain tick (eps 0.3) as control, and cell-charge potentials as gauge probes. Exact: (1) the doubler S (S U(K) S^-1 = -U(K+R)) maps each no-Fermi-surface half-filled vacuum to its complement, S rho(K) S^+ = 1 - rho(K+R); (2) hence, for every S-even one-body probe (any cell-charge potential, any strength, any number of ticks, any uniform vector potential), the induced cell charge of the supplied interval-filling vacuum equals the infinite-temperature value, zero: no response to those probes; (3) zero-quasi-energy, zero-momentum states made of a 0-sector pair and a pi-sector pair exist at every momentum scale (kinematics only: the free filled vacuum is stationary under the tick, so its transition amplitude into them is zero, and no decay or rate follows without a defined interaction); (4) F_pi = W in every turn sector, robust under turn-symmetric deformations, so no free term gaps pi; (5) the one-cube start is degenerate and every no-Fermi-surface filling has at least one inverted boundary; (6) with the pi copy (2 x 16 per family) every gauge-anomaly sum stays zero (exact arithmetic), and, under the supplied anomaly-family-count index form of #10064 D1 (a source not in this repository, unverified here), the turn-anomaly N_f set is unchanged. Conditional comparator estimates with supplied numbers, not exclusions: IF a gauged completion carried the S-even cancellation to the electron loop and coupled the pi copies to the Z as the 0 copies, the hydrogen 2S Uehling term would vanish and N_nu would be 0 or 6, against the measured values; neither bridge is defined here. Not covered: a gauged FREEZE (link gauging is not defined), the identification of the cell-charge response with an electromagnetic or electroweak observable, interacting gapping of the pi sector, other members of the family class, decay rates."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -93,7 +93,9 @@ Repo first. A git grep of origin/main (docs, scripts) for "temporal doubler", "i
 - C4 [S]. What CL-2 does.
   - CL-2 defines no ground state. The actual configuration follows the odds, and a free Slater state of Floquet
     eigenvectors is stationary, so the transport stays.
-  - The filling is the one the start and the splits carry.
+  - The filling is the one the start and the splits carry. (Rematched 2026-11-14: neither the current axioms nor the
+    source notes' CL-2 select it; Record locks realised possibilities but supplies no filling, so the interval filling
+    stays a supplied input.)
   - CL-2 cannot choose a normal-normal vacuum, because none without a Fermi surface exists.
 - The convention-independent statements are these: F_0 = F_pi = W; the complement map S; vacuum response = the
   infinite-temperature value; and the count of at least one inverted boundary. The branch-cut choice only decides WHICH
@@ -104,9 +106,10 @@ Repo first. A git grep of origin/main (docs, scripts) for "temporal doubler", "i
 - D1 [T]. With the pi copy each family has 2 x 16 (counting the pi copy of the light near wall and of the far-wall
   mirror separately).
   - Y^3, Y-grav, SU2^2 Y, SU3^2 Y and SU3^3 are all 0. The doublet count is even, and the Weyl count is 0 mod 16.
-  - The turn coefficients double. 2 is a unit mod 3 and mod 9, so the allowed N_f set is unchanged (N_f = 0 mod 3
-    stays).
-  - Anomaly: SAFE.
+  - The turn coefficients double. 2 is a unit mod 3 and mod 9, so, under the supplied anomaly-family-count index form
+    (#10064 D1, conditional on it), the allowed N_f set is unchanged (N_f = 0 mod 3 stays).
+  - Anomaly sums: zero. That a zero sum makes the content consistent is the cited anomaly-cancellation reading, not
+    rederived here.
 - D2 [S]. The far-wall gapping must also gap the mirror's pi copy, which is light, charged and S-related. An S-even
   far-wall term would do so at the same coupling. Not computed.
 
@@ -142,7 +145,8 @@ Test for any repair, with this runner's A2 probe: the vacuum should respond to S
 ## Gate
 
 No rule is proposed. A repair rule would have to pass the anti-smuggling gate: choosing "gap the pi sector" by name
-would insert structure, so it must come from site, neighbour or update conditions.
+would insert structure, so it must come from the supplied model's site or neighbourhood structure. (Rematched
+2026-11-14: the current axioms state no update rule, so "update conditions" names nothing in them.)
 
 ## Smuggling review
 
@@ -169,5 +173,6 @@ Not shown:
 - interacting pi gapping;
 - other family-class ticks;
 - decay rates and any interaction that would produce them;
+- a check of the supplied anomaly-family-count index form (read by D1 and claim (6));
 - a gauged FREEZE and the observable identifications of section E;
 - the far-wall pi copy gapping.

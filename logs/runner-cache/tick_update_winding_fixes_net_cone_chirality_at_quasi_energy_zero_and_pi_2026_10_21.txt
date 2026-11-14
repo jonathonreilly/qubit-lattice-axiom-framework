@@ -1,29 +1,35 @@
 ===== runner cache v1 =====
 runner: scripts/tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.py
-runner_sha256: 4831d2a732a4fa60c5187fd6f2112623c0a3967b58813769b880618d102db122
-input_fingerprint_sha256: ca0c4cd53ad61ed0fca0f03964e5eb472951cf8a640ea5b1bfdd539c2980c192
+runner_sha256: 76e1ddfd9d923f67e4c20d54d4b961b0edb75a290cc08467e7c0760afe48dfcc
+input_fingerprint_sha256: d178c61ca6738a7466e9eef31d85f717279ba98708cf70ed7b1cd1c2b7c0b670
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.54
+elapsed_sec: 1.19
 status: ok
 ----- stdout -----
 [PASS] split-step S_z S_y S_x: 8 cones at quasi-energy 0 (4 of each chirality) and 8 at pi (4 of each)  0: +4/-4; pi: +4/-4; corners carry +1 at both 0 ([1, 1, 1, 1]) and pi ([1, 1, 1, 1]), the pi/2-points -1
 [PASS] no further cones: |tr U|/2 = 1 only at those 16 points (Cauchy-Schwarz bound, 60^3 grid confirms)  min 1-|cos w| off the 16 points: 5.48e-03
 [PASS] W3 = 0 for the split-step walk, a random-coin walk and a diagonal-shift walk (products of one-variable loops)  W3 = -3.7e-16, -2.2e-17, -1.8e-15
 [PASS] W3 = 0 for the eight-mode block candidate  W3 = -2.7e-17
-[PASS] quasi-local walk (n0 - i n.sigma)/|n|: net chirality at 0 = net chirality at pi = -W3 for every m (W3 sign: U = a0 - i a.sigma)  m=2.0: 0 +4/-3, pi +1/-0, W3=-1.000000; m=0.5: 0 +1/-3, pi +1/-3, W3=+2.000000
+[PASS] quasi-local walk (n0 - i n.sigma)/|n|: net chirality at 0 = net chirality at pi = -W3 at m = 2, 0.5, 4.5, -2 (W3 sign: U = a0 - i a.sigma)  m=2.0: 0 +4/-3, pi +1/-0, W3=-1.000000; m=0.5: 0 +1/-3, pi +1/-3, W3=+2.000000
     m=4.5: 0 +4/-4, pi +0/-0, W3=+0.000000; m=-2.0: 0 +1/-0, pi +4/-3, W3=-1.000000
 [PASS] m=-2: exactly one cone at quasi-energy 0 (k=0, chirality +1); all 7 doublers at pi (4 of +, 3 of -), net +1  m=+2 is the mirror case (7 at 0, one at pi), U_{-m}(k) = -U_m(k - pi(1,1,1))
+[PASS] 4b regularity: every preimage of +I and -I of the walks used is nondegenerate (|det M| >= 1e-6), and its chirality sign det M equals its local degree, so these Weyl-cone counts are degree counts  split-step: 16 preimages, min |det M| 1.000; m=2.0: 8 preimages, min |det M| 0.008; m=0.5: 8 preimages, min |det M| 0.023; m=4.5: 8 preimages, min |det M| 0.002; m=-2.0: 8 preimages, min |det M| 0.008
+[PASS] 4c NEGATIVE RESULT (hold R1 witness): F(a0, a) = (a0, (1 - a0) a)/norm composed with the m = -2 walk has W3 = -1 (homotopic to it), its only preimage of +I (k = 0) is degenerate (|U - I| = O(|q|^3)), so the Weyl-cone sums are 0 at quasi-energy 0 and +1 at pi, while both local-degree sums stay +1 = -W3; the unflattened walk has Weyl sums +1, +1  W3 -1.000000; north det M 1.3e-31, local degree 1.000; Weyl sums (0, pi) flattened (0, 1), walk (1, 1); |a|/|q| walk 1.0000, flattened 5.6502e-05, 1.4125e-05, 3.5313e-06 (falls by 4.000, 4.000 as h halves)
+[PASS] 4d the walk (n0 - i n.sigma)/|n| is undefined exactly at m = -3, -1, 1, 3 (n0 = m + sum cos k = 0 at a corner, where sin k = 0); the masses used avoid them  corner sums of cos k: [-3, -1, 1, 3]; min |n| at corners: m=-3: 0, m=-1: 0, m=1: 0, m=3: 0, m=2: 1, m=0.5: 0.5, m=4.5: 1.5, m=-2: 1
 [PASS] the quasi-local walk is exactly covariant under all 24 cube rotations (spin-1/2 lift)  max deviation 6.8e-16
 [PASS] m=-2 walk has weight beyond every range R, falling exponentially (not finite range)  tail weight beyond R: 1:1.4e-02, 2:1.2e-03, 4:2.0e-05, 8:1.9e-08, 12:3.4e-11; decay ~exp(-1.66 R)
 [PASS] W3(U_split^dag U_m=2) = -1 (additivity), so U_split^dag U_m=2 = -I at some k: no walk with W3 = 0 is within operator distance < 2 of it  W3 = -1.000000
 [PASS] CL-5 energies of modes at |q|=0.05 from a pi-cone are within 0.06 of pi (outside the CL-6 domain)  energies 3.088, 3.088, 3.087, 3.087
-theorem: SU(2) walk => net chirality at 0 = net at pi = -W3 (the degree); any product of coins and coin-conditioned shifts has deg 0.
-external input (not rederived here): SK1 of the Laurent ring C[Z^3] vanishes, so every finite-range walk has W3 = 0.
+theorem: for an SU(2) walk the sums of local degrees of the preimages of +I and of -I both equal -W3 (the degree);
+  when every preimage is nondegenerate (det M != 0, check 4b) these are the net Weyl-cone chiralities at 0 and pi;
+  without that hypothesis a preimage need not be a Weyl cone (check 4c). Products of coins and coin-conditioned shifts have deg 0.
+NOT CHECKED, and read by no statement here: the source cited the vanishing of SK1 of the Laurent ring C[Z^3] for
+  "every finite-range walk has W3 = 0"; no exact theorem statement or check record is carried, so that claim is not made.
 supplied: the quasi-local walk, its parameter m and its exponential tail; no adopted tick update or matter content.
-elapsed_seconds 0.5
+elapsed_seconds 1.1
 
-TOTAL: PASS=10 FAIL=0
+TOTAL: PASS=13 FAIL=0
 
 ----- stderr -----
 

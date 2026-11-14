@@ -8,7 +8,7 @@ B  Floquet: index of a product of two reflections; the step-pi/2 tick W_o W_e ha
 C  CL-5: total mode number N is exact; mixed anomalies N-Y^2, N-SU(2)^2 of one family; mirror reflection M = R_odd I.
 D  estimates against measurement.  Supplied models, finite diagnostics; no physical identification."""
 from __future__ import annotations
-AUDIT_INPUT_PATHS = ('docs/WALL_PUMP_AND_MIRROR_GAPPING_ROUTES_TO_CHIRALITY_UNDER_THE_CANDIDATE_LAWS_BOUNDED_THEOREM_NOTE_2026-10-21.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ('docs/WALL_PUMP_AND_MIRROR_GAPPING_ROUTES_TO_CHIRALITY_UNDER_THE_CANDIDATE_LAWS_BOUNDED_THEOREM_NOTE_2026-10-21.md',)
 
 AUDIT_TIMEOUT_SEC = 120
 
@@ -285,7 +285,7 @@ def anom(fs):
     return {'N-Y2': sum(m(f) * f[1] * f[2] ** 2 for f in fs), 'N-SU2^2': sum(Fr(f[4] * f[1], 2) for f in fs if f[3] == 2), 'N-SU3^2': sum(Fr(f[3] * f[1], 2) for f in fs if f[4] == 3),
             'N3': sum(m(f) * f[1] ** 3 for f in fs), 'N': sum(m(f) * f[1] for f in fs), 'N2Y': sum(m(f) * f[1] ** 2 * f[2] for f in fs), 'Y3': sum(m(f) * f[2] ** 3 for f in fs), 'Y': sum(m(f) * f[2] for f in fs)}
 af = anom(fam); am = anom([(n_, -q, -y, d2, d3) for n_, q, y, d2, d3 in fam]); vtx = sum(f[4] * f[1] for f in fam if f[3] == 2)
-check('C3 one family (with nu^c): N-Y^2 = -2, N-SU(2)^2 = +2, all else 0; mirror opposite. Exact N forbids gapping the mirror alone; the instanton vertex has dN = 4, so Z_k of N survives iff k | 4',
+check('C3 one family (with nu^c): N-Y^2 = -2, N-SU(2)^2 = +2, all else 0; mirror opposite (exact sums). With N exact, a gap of the mirror alone would have to match these nonzero anomalies; that interacting step is conditional on cited, unverified anomaly matching. The instanton vertex has dN = 4, so Z_k of N survives iff k | 4',
       af['N-Y2'] == -2 and af['N-SU2^2'] == 2 and all(af[k] == 0 for k in ('N-SU3^2', 'N3', 'N', 'N2Y', 'Y3', 'Y')) and all(am[k] == -af[k] for k in af) and vtx == 4
       and sum(f[3] * f[4] for f in fam) == 16, f'dN per vertex {vtx}; Weyl count 16 = 0 mod 16')
 okm = []
@@ -304,7 +304,8 @@ print(f'   wall leakage with |1-m0| = 0.4 and Lambda = M_P/3: m_res < 0.05 eV ne
 print('   copy wall (A7) needs step pi/2, where partner pairs at quasi-energy pi are resonant (register: eps < 0.04); the Xi wall (A6/A9) works at eps = 0.04 if tau < ~eps (A6b)')
 print(f'   D1 CONDITIONAL ESTIMATE (not counted; cutoff M_P/3, sphaleron thermalisation and the measured bounds supplied): tau_p {tau_p:.0e} yr vs 2.4e34; dN_eff {dNeff:.2f} vs 2.99 +- 0.17 for a thermalised massless mirror; L_s >= {int(np.ceil(Lsneed))}; {time.monotonic() - T0:.1f} s')
 print('theorems: A1 folding, A2 Haar locking, A3 swap depth, A5 algebra, A6 end content, B1 two-reflection index, C1 N exact, C2 bilinears, C3 anomaly sums, C4 M.')
-print('cited, not rederived: SK1(C[Z^3]) = 0 (W3 = 0 for non-circuit finite-range QCAs), anomaly matching for on-site symmetries, SMG gapped-phase existence.')
+print('NOT CHECKED, read by no conclusion here: SK1(C[Z^3]) = 0 (the source read it as W3 = 0 for non-circuit finite-range unitaries); the bulk Floquet statement covers circuits of block-local gates only.')
+print('cited, unverified, and named as conditions where read: anomaly matching for on-site symmetries (the interacting mirror-gapping step), SMG gapped-phase existence.')
 print('supplied: internal index carried in parallel, synthetic mass beta\', m0, r, tau, layer count, Xi, the dN=4 term and its symmetry.')
 print(f'TOTAL: PASS={PASS} FAIL={FAIL}')
 raise SystemExit(1 if FAIL else 0)

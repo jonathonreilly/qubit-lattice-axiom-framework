@@ -1,4 +1,4 @@
-AUDIT_INPUT_PATHS = ('docs/GRABOWSKA_KAPLAN_FAR_LAYERS_PASS_THE_NIELSEN_NINOMIYA_COUNT_BUT_INDUCE_A_GAUGE_INVARIANT_CUTOFF_SCALE_PHOTON_MASS_ABOVE_THE_SMOOTHING_SCALE_BOUNDED_THEOREM_NOTE_2026-10-22.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ('docs/GRABOWSKA_KAPLAN_FAR_LAYERS_PASS_THE_NIELSEN_NINOMIYA_COUNT_BUT_INDUCE_A_GAUGE_INVARIANT_CUTOFF_SCALE_PHOTON_MASS_ABOVE_THE_SMOOTHING_SCALE_BOUNDED_THEOREM_NOTE_2026-10-22.md',)
 #!/usr/bin/env python3
 """Hostile check of the leading chirality route ('layer s reads rung s',
 Grabowska-Kaplan far layers that read a smoothed field). Free domain-wall
@@ -319,7 +319,7 @@ def holo(U):
 tw = {}
 for name in ("twisted", "vortex"):
     V0 = [[[ex(0.03 * RNG.standard_normal(3)) for y in range(L)] for x in range(L)] for mu in range(2)]
-    if name == "twisted":   # twist eaters: P_x ~ i s1, P_y ~ i s2, commutator -1
+    if name == "twisted":   # noisy twist-eater-type insertions: P_x ~ i s1, P_y ~ i s2 (commutator near, not equal to, -1)
         for y in range(L):
             V0[0][L - 1][y] = 1j * S1 @ V0[0][L - 1][y]
         for x in range(L):
@@ -330,13 +330,19 @@ for name in ("twisted", "vortex"):
     Sv, _ = spread(V0, 4)
     hb, ha = holo(V0), holo(Sv)
     com = lambda h: np.real(np.trace(h[0] @ h[1] @ dg(h[0]) @ dg(h[1]))) / 2
+    cmb = hb[0] @ hb[1] @ dg(hb[0]) @ dg(hb[1]); cma = ha[0] @ ha[1] @ dg(ha[0]) @ dg(ha[1])
     tw[name] = (com(hb), com(ha), np.abs(hb[0] - ha[0]).max() + np.abs(hb[1] - ha[1]).max(),
                 max(ang(plq(V0, x, y)) for x in range(L) for y in range(L)),
-                max(ang(plq(Sv, x, y)) for x in range(L) for y in range(L)))
+                max(ang(plq(Sv, x, y)) for x in range(L) for y in range(L)),
+                np.abs(cma - cmb).max(), np.abs(cmb + I2).max())
 t, v = tw["twisted"], tw["vortex"]
-check("D2", "THEOREM", t[2] < 1e-12 and v[2] < 1e-12 and t[0] < -0.9 and v[0] > 0.9 and t[4] < 0.4 and v[4] < 0.4,
-      "topology in 2D SU(2): block loops and the torus holonomies along block-boundary lines are untouched, so the 't Hooft twist (commutator [P_x, P_y] = -1) is kept exactly while its thin plaquette is spread smooth; a thin vortex pair with commuting holonomies (twist +1) is spread likewise; the twist is never lost, unlike the abelian anchor reading's Q (gk-smoothed-layers A2)",
-      "(1/2 tr[Px,Py] before, after, |dP|, max angle before, after): twisted (%.3f, %.3f, %.0e, %.2f, %.2f); vortex (%.3f, %.3f, %.0e, %.2f, %.2f)" % (t + v))
+check("D2", "THEOREM", t[2] < 1e-12 and v[2] < 1e-12 and t[5] < 1e-12 and v[5] < 1e-12 and t[4] < 0.4 and v[4] < 0.4,
+      "holonomy preservation in 2D SU(2) (corrected 2026-11-14, second hold R4): block loops and the base-point torus holonomies P_x, P_y along block-boundary lines are untouched, so their group commutator is kept exactly while the thin plaquette is spread; the same for a thin vortex pair with commuting holonomies. This is not a 't Hooft twist certificate: no transition-function cocycle is built, and the test field's commutator is not -1 (D2n)",
+      "(1/2 tr[Px,Py] before, after, |dP|, max angle before, after, |d commutator|): twisted (%.3f, %.3f, %.0e, %.2f, %.2f, %.0e); vortex (%.3f, %.3f, %.0e, %.2f, %.2f, %.0e)"
+      % (t[:6] + v[:6]))
+check("D2n", "NEGATIVE", t[6] > 0.05 and abs(t[0] + 1) > 0.05,
+      "negative result kept (second hold R4): in the twisted test field the holonomy commutator P_x P_y P_x^-1 P_y^-1 is not -1, so the earlier sentence 'the 't Hooft twist (commutator -1) is kept exactly' is false on these data; what is kept exactly is the commutator of the base-point holonomies",
+      "1/2 tr = %.3f (not -1); max |P_x P_y P_x^-1 P_y^-1 + 1| = %.3f" % (t[0], t[6]))
 
 # ===================== E. does any rule fill the far layers? ===============
 print("== E. 'mirror starts empty': 1+1D Hamiltonian slab (Chern strip, u = -1, N = 32, Ls = 8)")

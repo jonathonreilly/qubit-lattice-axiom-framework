@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_forced_far_wall_term_has_a_unique_gapped_three_site_cell_state_but_a_strong_coupling_cell_only_moves_the_mirror_and_the_one_orbital_sixteen_site_has_only_two_spin10_singlets_2026_10_23.py
-runner_sha256: 95c05075bf9af44721d4b4eec6c5a10ec8423de8b2b24501808480b03092478c
-input_fingerprint_sha256: 1f185f1ae6b742394065e904d28f8e601e2c56e5843ac3e41ea4a885a367dcb1
+runner_sha256: 60e72dce80b0558f9517dbb52ae841908332c32807ec8dd92c8c00a26affedf3
+input_fingerprint_sha256: 47522d91f297f2ea16ed53b6b90eb12546a257436fe337f426111bb9794aabe9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.92
+elapsed_sec: 2.52
 status: ok
 ----- stdout -----
 == A. 3450: the forced terms l1 = (1,-2,1,2), l2 = (2,1,-2,1) on cells (units of g)
@@ -16,7 +16,7 @@ PASS: A5 [T]/[F] overlapping bond terms do not commute, and the open three-site 
 PASS: A6 [F] stability ingredients: naive hop norm ||h_b|| = 2 per bond, z = 3 bonds per cell, so Yarotsky's hypothesis reads t/g < kappa_0 Delta_0/(z ||h_b||) = kappa_0/44.8 (kappa_0 not computed); one cell with its two hops keeps a unique state with gap >= Delta_0/2 for t/g <= 0.1, first crossing t_c/g in (0.1, 0.5)  [z||h_b||/Delta_0 = 44.8, t_c/g = 0.237]
 PASS: A7 [F] relocation: free slab (Ls = 12) with the far layer gapped (m sz, m = 20): the far-wall branch keeps E = sin k and moves one layer in, so a gapped far-layer product does not gap the mirror (stability hypotheses fail for the slab)  [k = pi/8: |dE| 1.4e-15, w_far 0.0025, w_next 0.992]
 == B. 3451 contrast (fewest-change symmetric terms, Q51 kept)
-PASS: B1 [T] at the particle-hole point Q51 per site = 13/2 (LSM: no unique gapped symmetric state with one-site translation); 3450: Q_A, Q_B per site = 6, 2; sum q = q^T K q mod 2, so the lattice sees the anomaly mod 2 only
+PASS: B1 [T] at the particle-hole point Q51 per site = 13/2 (then, by the cited LSM theorem, unverified here: no unique gapped symmetric state with one-site translation); 3450: Q_A, Q_B per site = 6, 2; sum q = q^T K q mod 2, so the lattice sees the anomaly mod 2 only
 PASS: B2 [T]+[F] three-site cell: Q51 in Z + 1/2 on odd cells, particle-hole pairs +-Q51: ground state an exact doublet at Q51 = +-1/2  [E -1.25399, next sector -1.24342]
 PASS: B3 [F] (recorded result) two-site cell many-fold; four-site cell a Q51 = +-2 doublet with Q51 = 0 higher (even cells: no kinematic obstruction, the doublet is dynamical): no unique 3451 cell up to four sites  [K2 48-fold; K4 E(+-2) -2.0102, E(0) -1.9954]
 == C. bosonization: K = diag(1,1,-1,-1), charges (3,4,5,0), (2,1,2,-1)
@@ -32,7 +32,7 @@ PASS: D5 [T] unique Spin(10)-invariant site states lie in span{|0>,|F>}; particl
 PASS: D6 [T] 15 modes (no nu^c): prod (c_i + c_i^+) anticommutes with fermion parity, so every level of a particle-hole-symmetric site is >= 2-fold for ANY interaction
 PASS: D7 [T] 8 modes: Q + L (SU(3) x SU(2) x U(1)_Y x U(1)_B-L) and (4,2) (SU(4) x SU(2)) have singlets only at n = 0, 8: no unique state below degree 8, the same pattern as the Spin(10) 16
 PASS: D8 [F] SU(3) x SU(2) x U(1)_Y x U(1)_B-L on the one-orbital 16: singlets 1,6,8,6,1 at n = 0,4,8,12,16; its six singlet charge-4 terms with equal real couplings give a unique particle-hole-symmetric singlet ground state with a gap  [gap 0.442 g, ladder residual 3e-15]
-Supplied: charges, bond/pair forms, cells, naive hop, m sz stand-in, Luttinger family, one orbital, SM couplings. elapsed 2.4s, peak RSS 241 MB
+Supplied: charges, bond/pair forms, cells, naive hop, m sz stand-in, Luttinger family, one orbital, SM couplings. elapsed 2.1s, peak RSS 253 MB
 TOTAL: PASS=21 FAIL=0
 
 ----- stderr -----

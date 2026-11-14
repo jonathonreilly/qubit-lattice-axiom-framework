@@ -1,4 +1,4 @@
-AUDIT_INPUT_PATHS = ('docs/THE_ONE_FAMILY_U1_ANOMALY_FOUR_FIELD_COEFFICIENT_IN_ADMISSIBLE_BACKGROUNDS_AT_WILSON_MASS_ONE_DOES_NOT_VANISH_LIKE_P_SQUARED_BOUNDED_THEOREM_NOTE_2026-10-25.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ('docs/THE_ONE_FAMILY_U1_ANOMALY_FOUR_FIELD_COEFFICIENT_IN_ADMISSIBLE_BACKGROUNDS_AT_WILSON_MASS_ONE_DOES_NOT_VANISH_LIKE_P_SQUARED_BOUNDED_THEOREM_NOTE_2026-10-25.md',)
 #!/usr/bin/env python3
 """PRE-REGISTERED admissible-background test of the one-family 16's four-field coefficient in the U(1)_Y anomaly of
 the Wilson-kernel overlap at m0 = 1.0 (criteria fixed before any computation: criteria_pre_run.txt).

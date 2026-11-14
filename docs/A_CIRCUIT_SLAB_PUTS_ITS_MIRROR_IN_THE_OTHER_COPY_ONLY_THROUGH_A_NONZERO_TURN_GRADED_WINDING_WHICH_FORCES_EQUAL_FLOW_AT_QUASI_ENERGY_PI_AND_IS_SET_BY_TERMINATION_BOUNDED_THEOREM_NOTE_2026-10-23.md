@@ -1,7 +1,7 @@
 ---
 claim_id: a_circuit_slab_puts_its_mirror_in_the_other_copy_only_through_a_nonzero_turn_graded_winding_which_forces_equal_flow_at_quasi_energy_pi_and_is_set_by_termination_bounded_theorem_note_2026-10-23
 claim_type: bounded_theorem
-claim_scope: "Free-field Floquet (circuit) slabs on CL-1's 2x2x2 cell with the site-gauged (111) turn T3 as a symmetry on the turn axis K = kappa (1,1,1). (T1) Sum rule: in each turn sector the eigenphase flow through every quasi-energy equals the winding W_a of det U_a(kappa), so F_0 = F_pi = W in Z[Z3] (augmentation 0). Every circuit of cube-local gates that each commute with T3 (and every exp(-i t H) with H turn-symmetric) has W = 0, so q_mirror = q_light holds in each gap separately. (T2) FREEZE (twist-local-single) has W = (-2, 1, 1); hence FREEZE is not a product of T3-commuting cube-local gates at any depth. (T3) A light q 2 Weyl at 0 with the q 1 mirror only at pi is impossible; light q 2 and mirror q 1 at 0 force flow (-2, 1, 1) at pi, i.e. at least two more Weyls at pi per family. (F) A coupled-layer circuit slab (layers alternating FREEZE and its inverse, turn-commuting tau3-label gates q 1 on even bonds and q 2 on odd bonds, g = 0.5) has its bulk gapped at 0 and pi (0.50 on a 12^4 grid). For odd Ls the near wall holds the light q 2 (hand +1) at (K = 0, 0) and (R, pi), and the far wall holds the mirror q 1 (hand -1) at both. For even Ls the far wall holds q 2. With the anomaly-family-count index and Omega twist (a supplied index form from a source not in this repository; the count is conditional on it), the odd slab allows N_f = 3, 6, 9. Not covered: interactions, gauge fields, the Omega gapping itself, a rule fixing the termination."
+claim_scope: "Free-field Floquet (circuit) slabs on CL-1's 2x2x2 cell with the site-gauged (111) turn T3 as a symmetry on the turn axis K = kappa (1,1,1). (T1) Sum rule: in each turn sector the eigenphase flow through every quasi-energy equals the winding W_a of det U_a(kappa), so F_0 = F_pi = W in Z[Z3] (augmentation 0). Every circuit of cube-local gates that each commute with T3 (and every exp(-i t H) with H turn-symmetric) has W = 0, so q_mirror = q_light holds in each gap separately. (T2) FREEZE (twist-local-single) has W = (-2, 1, 1); hence FREEZE is not a product of T3-commuting cube-local gates at any depth. (T3) A light q 2 Weyl at 0 with the q 1 mirror only at pi is impossible; light q 2 and mirror q 1 at 0 force flow (-2, 1, 1) at pi, i.e. at least two more eigenphase crossings at pi per family (Weyl cones where those crossings are nondegenerate). (F) A coupled-layer circuit slab (layers alternating FREEZE and its inverse, turn-commuting tau3-label gates q 1 on even bonds and q 2 on odd bonds, g = 0.5) has its bulk gapped at 0 and pi (0.50 on a 12^4 grid). For odd Ls the near wall holds the light q 2 (hand +1) at (K = 0, 0) and (R, pi), and the far wall holds the mirror q 1 (hand -1) at both. For even Ls the far wall holds q 2. With the anomaly-family-count index and Omega twist (a supplied index form from a source not in this repository; the count is conditional on it), the odd slab allows N_f = 3, 6, 9. Not covered: interactions, gauge fields, the Omega gapping itself, a rule fixing the termination."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -93,7 +93,8 @@ Predicted: FAIL at P3 only. Every line matched its prediction.
   - (i) A light q 2 at 0 with the q 1 mirror only at pi is impossible: F_0 = (-1, 1, 0) differs from F_pi = (-1, 0, 1),
     whatever W is.
   - (ii) A light q 2 and a mirror q 1 both at 0 give F_0 = W = (-2, 1, 1). The pi gap must carry the same flow, and that is
-    no single-pair flow, so there are at least two more Weyls at pi per family. This is a forced pi doubling.
+    no single-pair flow, so there are at least two more eigenphase crossings at pi per family (Weyl cones where they are
+    nondegenerate; the flow identity itself does not need that). This is a forced pi doubling.
   - Modified sum rule: sum over 0-crossings of f(q, h) = sum over pi-crossings of f(q, h) = W.
   - q_mirror != q_light is allowed exactly when W != 0. That needs gates that are not individually turn-commuting, and the
     pi content then copies the 0 content's flow.
@@ -140,7 +141,8 @@ The bulk does not force either. P3 FAILS.
   - Even slab: every N_f.
   - The smallest nonzero count is 3, but nothing in the rules prefers 3 over 6. Minimality is still supplied.
 - D2 [T]. All light Weyls (both nodes, every stacked family) carry one turn charge, q 2.
-  - The turn-CP lemma (J = 0 for turn-invariant masses on a turn-charged triplet) therefore does not force J = 0.
+  - The turn-CP lemma (J = 0 for turn-invariant masses on a turn-charged triplet; a source-campaign result not in this
+    repository, unverified here) therefore does not force J = 0.
   - J != 0 is allowed, not supplied.
 - D3 [S]. A tension with freeze-mirror-smg. On FREEZE's bare label doublet, a T-invariant charge-4 mirror term first exists
   at N_f = 4 (C(N_f, 4) such terms). The Omega in D1 is anomaly-family-count's per-family pairing inside a 16. At N_f = 3 the
@@ -153,15 +155,17 @@ The bulk does not force either. P3 FAILS.
    - W != 0 is impossible for circuits of turn-commuting gates (B1). FREEZE has W = (-2, 1, 1), which proves that its
      layering cannot be turn-covariant.
    - The mirror cannot sit at pi alone. If it sits at 0 in the other copy, the pi gap must repeat the flow (at least two
-     more Weyls per family).
+     more crossings per family).
 2. FREEZE's structure realises the copy-flipped slab: alternate FREEZE and inverse layers, with label dimer gates. The bulk
    is gapped at 0 and pi. The near wall holds q 2 at 0 and pi, and the far wall holds q 1 at 0 and pi.
    - It is NOT forced: Ls parity and the bond pattern choose the far copy, and even Ls gives q_mirror = q_light.
-3. On the odd slab the bookkeeping gives N_f = 0 mod 3 (3, 6, 9). Minimality is still supplied, and the gapping at N_f = 3
-   needs the 16 pairing (D3).
+3. Conditional on the supplied anomaly-family-count index form and Omega twist (a source not in this repository, unverified
+   here), the bookkeeping on the odd slab gives N_f = 0 mod 3 (3, 6, 9). Minimality is still supplied, and the gapping at
+   N_f = 3 needs the 16 pairing (D3).
 4. Yes. One shared light charge, q 2, so J != 0 is allowed.
 
-Synthesis: FAIL at P3 only, as predicted. P1, P2, P4 and P5 pass.
+Synthesis: FAIL at P3 only, as predicted. P1, P2 and P5 pass; P4 passes only under the supplied index form (D1). The
+prediction chronology rests on criteria_pre_run.txt, which is not in this repository (unverified here).
 
 ## Gate (anti-smuggling)
 
@@ -190,8 +194,12 @@ Forced:
 - the impossibility of a pi-only mirror;
 - the forced pi doubling;
 - the termination dependence of the far copy;
-- the mod 3 on the odd slab;
+- the mod 3 on the odd slab, given the supplied index form (conditional, D1);
 - the shared light charge.
+
+Unverified inputs and open obligations (2026-11-14, second hold R9): the anomaly-family-count index form and Omega twist
+(read by D1, answer 3 and P4, all conditional on it); the turn-CP lemma (read by D2); the C(N_f, 4) count of
+freeze-mirror-smg (read by D3). Each is a historical reported result from a source not in this repository.
 
 Not shown:
 - interacting gapping of the far wall at N_f = 3;

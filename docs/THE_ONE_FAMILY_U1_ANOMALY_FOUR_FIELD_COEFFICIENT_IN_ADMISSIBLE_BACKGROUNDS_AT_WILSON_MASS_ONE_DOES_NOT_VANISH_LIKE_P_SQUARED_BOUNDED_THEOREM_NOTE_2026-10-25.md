@@ -1,7 +1,7 @@
 ---
 claim_id: the_one_family_u1_anomaly_four_field_coefficient_in_admissible_backgrounds_at_wilson_mass_one_does_not_vanish_like_p_squared_bounded_theorem_note_2026-10-25
 claim_type: bounded_theorem
-claim_scope: "Pre-registered rerun of the single-mode test of the one-family 16's four-field coefficient c4 in the U(1)_Y covariant anomaly density of the Wilson-kernel overlap (r = 1, m0 = 1.0), with every background inside the Hernandez-Jansen-Luscher admissibility bound ||1 - U_p|| < 1/30 (supplied): eps = 0.01, 0.02, 0.03 (max plaquette deviation 0.0300), axis-restricted factorised single-mode backgrounds, L x T x L x T with L = 12, 16, 24 and T = 24, 32, exact block sign(H). Exact: block = full 4D density, symmetry-reduced block sums = full sums, C-evenness, evr = eigh (all < 1e-12). Finite diagnostics, pre-set criteria: the joint fit R16/eps^2 = c4 + c6 eps^2 is clean (residual <= 1.1e-3 |c4|; eps exponent 3.97-4.01); the doublet's intercept is 0.989 gamma_L. NOT met: the headline (c4 vanishing like p^2 with T-agreement) and the copied P5, P5'. At L = 24, c4 = +1.13e-4, +6.7e-5, -3.60e-4 at |p_hat| = 0.26, 0.52, 0.77 (T = 32; T = 24 within 8%), so it changes sign and does not fall like p^2 there; the pooled intercept is +5.4e-4. The c4 values come from a recorded Mac-mini run embedded in the runner as data; the runner recomputes the criteria from those data and reruns the exactness checks live, but does not recompute c4. This is a finite-lattice measurement, not a proof that the coefficient is non-local. Not covered: the measure, non-abelian locality, the gauge-field integral, non-axis backgrounds, L > 24, momenta below |p_hat| = 0.26."
+claim_scope: "Rerun, reported by its source session as pre-registered (the criteria file is not in this repository, so that chronology is unverified here), of the single-mode test of the one-family 16's four-field coefficient c4 in the U(1)_Y covariant anomaly density of the Wilson-kernel overlap (r = 1, m0 = 1.0), with every background inside the Hernandez-Jansen-Luscher admissibility bound ||1 - U_p|| < 1/30 (supplied): eps = 0.01, 0.02, 0.03 (max plaquette deviation 0.0300), axis-restricted factorised single-mode backgrounds, L x T x L x T with L = 12, 16, 24 and T = 24, 32, exact block sign(H). Exact: block = full 4D density, symmetry-reduced block sums = full sums, C-evenness, evr = eigh (all < 1e-12). Finite diagnostics, pre-set criteria: the joint fit R16/eps^2 = c4 + c6 eps^2 is clean (residual <= 1.1e-3 |c4|; eps exponent 3.97-4.01); the doublet's intercept is 0.989 gamma_L. NOT met: the headline (c4 vanishing like p^2 with T-agreement) and the copied P5, P5'. At L = 24, c4 = +1.13e-4, +6.7e-5, -3.60e-4 at |p_hat| = 0.26, 0.52, 0.77 (T = 32; T = 24 within 8%), so it changes sign and does not fall like p^2 there; the pooled intercept is +5.4e-4. The c4 values come from a recorded Mac-mini run (243 jobs) embedded in the runner as data: historical reported observations that the runner does not reproduce. The runner recomputes the criteria from those data and reruns the exactness checks live, but does not recompute c4. This is a finite-lattice measurement, not a proof that the coefficient is non-local. Not covered: the measure, non-abelian locality, the gauge-field integral, non-axis backgrounds, L > 24, momenta below |p_hat| = 0.26."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -30,7 +30,7 @@ Axioms unchanged; no rule proposed; no CL edit.
 
 ## Pre-registration
 
-- criteria_pre_run.txt was written before any computation of this probe. The only things run first were timing benchmarks on random matrices.
+- The source session reports that criteria_pre_run.txt was written before any computation of this probe, and that the only things run first were timing benchmarks on random matrices. That file is not in this repository, so the chronology is a historical reported result, unverified here; the MET / NOT MET lines below are recomputed from the embedded data and the criteria as stated here.
 - It discloses that luscher-m0-1's eps = 0.3/0.15 numbers had been seen.
 - Admissibility bound, as supplied: Hernandez, Jansen, Luscher, Nucl. Phys. B552 (1999) 363 prove overlap locality when every plaquette has ||1 - U_p|| < eps_adm with eps_adm < 1/30. Luscher, Nucl. Phys. B549 (1999) 295 builds the abelian anomaly-current locality on this class.
 - For U(1), ||1 - U_p|| = 2|sin(F_p/2)| and max|Y| = 1, so the bound requires eps < 0.03334. The chosen values are eps = 0.01, 0.02, 0.03. G1 checks every job: the largest deviation is 0.03000 < 0.03333.
@@ -76,7 +76,7 @@ Reported, no criterion:
 
 ## Answer
 
-- Inside Luscher's admissibility bound, with three eps, clean eps^4 scaling and T-convergence (T = 24 vs 32 within 8%), the 16's four-field coefficient does NOT vanish like p^2 on the three smallest L = 24 momenta.
+- In the embedded data (reported, not reproduced here), inside Luscher's admissibility bound, with three eps, clean eps^4 scaling and T-convergence (T = 24 vs 32 within 8%), the 16's four-field coefficient does NOT vanish like p^2 on the three smallest L = 24 momenta.
   - It changes sign between |p_hat| = 0.52 and 0.77.
   - At |p_hat| = 0.26 it stays at +1.1e-4, about 0.9% of abs(gamma_L).
 - This removes luscher-m0-1's caveats (i) admissibility, (ii) T = 16 at L = 24 and (iii) the two-eps split. Its NOT MET finding stands.
@@ -102,3 +102,4 @@ Reported, no criterion:
 Uses: luscher-m0-1 (machinery, criteria P5/P5'/P5b, c4 split), luscher-L8 (Polyakov-loop fix).
 Narrows: luscher-m0-1's caveat that the eps = 0.3 backgrounds lie above the admissibility bound. The c4 plateau persists inside the bound.
 Caveats: U(1) only; finite lattices (L <= 24, T <= 32); axis-restricted backgrounds; not the non-abelian measure; not the gauge-field integral.
+Unverified inputs and open obligations (2026-11-14, second hold R9): the 243-job production data (embedded, not reproduced); the pre-registration file and its timing; the HJL/Luscher admissibility bound and locality theorems (used only to choose the backgrounds); results of luscher-m0-1 and luscher-L8 (historical reported results). No nonlocality theorem is claimed.

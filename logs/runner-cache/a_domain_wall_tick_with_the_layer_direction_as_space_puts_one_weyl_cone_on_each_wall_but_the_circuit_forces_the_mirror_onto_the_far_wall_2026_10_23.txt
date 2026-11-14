@@ -1,16 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/a_domain_wall_tick_with_the_layer_direction_as_space_puts_one_weyl_cone_on_each_wall_but_the_circuit_forces_the_mirror_onto_the_far_wall_2026_10_23.py
-runner_sha256: a3103c5964a3f10ceebc0e4dabebe0c58f1eeb0ea599119f66d6676ec5881c11
-input_fingerprint_sha256: 6577d79f87fde759950cddf80dcd4dc6bb4d4709a04268182706376f480b3f10
+runner_sha256: 8eb0879c3a5d3adcf0648c2d1bb417a7fa07c7f139423bd081da26d30bfbcaf1
+input_fingerprint_sha256: eabb75a51017374640c169eb773fcb8826366038487b45fb3ac3928fdf2cd522
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.74
+elapsed_sec: 4.26
 status: ok
 ----- stdout -----
 == A. domain wall, layer direction as space, tick as time (m = 0.6, theta = 0.2)
 PASS: A1 [T] the slab tick U is unitary and a product of range-1 gates: range 1 in each space direction (cube-local), range 2 in layers  [unitarity 2e-16; Fourier weight at |n| = 2: 1e-16; layer range 1]
 PASS: A2 [F] the 4D bulk is gapped: walk at quasienergy 0 and pi (8^4 grid + local minimisation), Hamiltonian at 0 (8^4 grid)  [walk gap0 0.067, gap_pi 1.662; H gap 0.600]
-PASS: A3 [F] exactly one two-component Weyl node per wall, at k = 0 and quasienergy 0, opposite chirality on the two walls; none at the other 7 corners, none at pi; the Hamiltonian slab agrees (Ls = 12)  [walk {'L': (2, -1, np.float64(0.0027618845524328894)), 'R': (2, 1, np.float64(0.002761884552432909))}; H L,R chirality -1,1 |det v| 1.000]
+PASS: A3 [F] threshold selection (|phase| < 0.05 for the walk, |E| < H gap/2 for H): one two-dimensional low-energy wall-localised space per wall, at k = 0 near quasienergy 0, with opposite projected-velocity chirality on the two walls; none at the other 7 corners, none at pi; the Hamiltonian slab agrees (Ls = 12). These are near-zero modes, not exact zeros (A3x)  [walk {'L': (2, -1, np.float64(0.0027618845524328894)), 'R': (2, 1, np.float64(0.002761884552432909))}; H L,R chirality -1,1 |det v| 1.000]
+PASS: A3x [T] the A3 wall modes are not exact zeros: at k = 0, H = (m - 1) G5 + bonds reduces to two spin copies of a chiral chain with triangular B (diagonal m - 1, unit superdiagonal); its levels are +-sv(B), and det B = (m - 1)^Ls = (-2/5)^12 != 0 at m = 0.6, Ls = 12, so the smallest |E| is sigma_min(B) > 0; the walk's smallest |phase| at k = 0 is likewise nonzero. Control: at m = 1, B is a nilpotent shift and H has an exact zero mode  [|levels(H) - sv(B)| 2e-15; sigma_min(B) = min |E| = 1.4092861479350551e-05; det B = 4096/244140625; walk min |phase| at k = 0: 2.73e-06; m = 1: sigma_min(B) 0e+00, min |E| 3e-54]
 PASS: A4 [F] no other boundary nodes anywhere in the zone: every 12^3 grid point with an in-gap state lies within 0.8 of k = 0; on the L = 6 torus (Ls = 8) the in-gap states are the 4 at k = 0  [in-gap points 1, far 0; L = 6 count 4]
 PASS: A5 [T]/[F] mirror overlap falls as |1 - m|^Ls (exact zero-mode recursion psi_s = (1-m)^s chi, i G5 G4 chi = -chi): the k = 0 splitting ratio per layer -> 0.4; at m = 1 the wall mode is compact and the overlap vanishes  [H 5.4e-02, 2.2e-02, 8.6e-03, 3.4e-03, 1.4e-03, 5.5e-04, 2.2e-04 (Ls 3..9); walk ratio 0.3989; m=1: 3e-17; xi = 1.09 layers]
 PASS: A6 [T] the slab Hamiltonian is covariant under the 12 tetrahedral rotations (C2 and C3 generators, spinor lift on Gamma_1..3); the wall carries NO state at X, M, R, so the corner-stabilizer premise (a walk-invariant light label at X and M) is void  [C2 0e+00, C3 9e-16; wall states at X/M/R: none]
@@ -30,8 +31,8 @@ PASS: C1 [F] (pre-set form 'theta = 0.3 gapped, no pi cones' FAILED on the first
 PASS: C2 [T] for every step the circuit slab has W3 = 0 (homotopy to 1), so W3 can become a resource only through an index-carrying, non-circuit element; with a circuit the far-wall mirror is forced  [slab W3 at theta 0.7: -3.2e-17]
 Supplied: Wilson-type slab (Gamma basis, m = 0.6 in the window 0 < m < 2, theta = 0.2 / 0.3 / 0.7, tau = 1, Ls), free fields, momentum space.
 Open: gauging the light wall alone, or gapping the far wall by symmetric interactions (not attempted here).
-elapsed 4.1s, peak RSS 84 MB
-TOTAL: PASS=14 FAIL=0
+elapsed 3.7s, peak RSS 85 MB
+TOTAL: PASS=15 FAIL=0
 
 ----- stderr -----
 

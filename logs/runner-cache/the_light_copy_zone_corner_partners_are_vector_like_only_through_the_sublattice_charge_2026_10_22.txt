@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_light_copy_zone_corner_partners_are_vector_like_only_through_the_sublattice_charge_2026_10_22.py
-runner_sha256: 3eaed31260840f996b4fc7ab02b609f91e8845e4f83b410a54fdc72cf06ef7f1
-input_fingerprint_sha256: fffa984497fb7a9673761863b268daa19088612362bb401477b6759320925fd0
+runner_sha256: 9f21972e9e83fbc6f63cbd22828744402876ded097f79e9d67bcbb776970b83c
+input_fingerprint_sha256: 8ec872c46165298ce5d6965f409546e7d325e0e2a8afb36ee271754f093844f9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.81
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
 == A. Census ==

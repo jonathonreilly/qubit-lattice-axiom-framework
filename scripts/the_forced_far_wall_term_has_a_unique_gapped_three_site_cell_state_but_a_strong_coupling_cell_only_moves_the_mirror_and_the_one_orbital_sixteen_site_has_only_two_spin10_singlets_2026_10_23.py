@@ -1,4 +1,4 @@
-AUDIT_INPUT_PATHS = ('docs/THE_FORCED_FAR_WALL_TERM_HAS_A_UNIQUE_GAPPED_THREE_SITE_CELL_STATE_BUT_A_STRONG_COUPLING_CELL_ONLY_MOVES_THE_MIRROR_AND_THE_ONE_ORBITAL_SIXTEEN_SITE_HAS_ONLY_TWO_SPIN10_SINGLETS_BOUNDED_THEOREM_NOTE_2026-10-23.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ('docs/THE_FORCED_FAR_WALL_TERM_HAS_A_UNIQUE_GAPPED_THREE_SITE_CELL_STATE_BUT_A_STRONG_COUPLING_CELL_ONLY_MOVES_THE_MIRROR_AND_THE_ONE_ORBITAL_SIXTEEN_SITE_HAS_ONLY_TWO_SPIN10_SINGLETS_BOUNDED_THEOREM_NOTE_2026-10-23.md',)
 #!/usr/bin/env python3
 """smg-strong-coupling: strong-coupling cells for the forced 3-4-5-0 far-wall term, bosonization of the same terms, and the
 one-site test for the 16 of Spin(10).
@@ -116,7 +116,7 @@ check("A7 [F] relocation: free slab (Ls = 12) with the far layer gapped (m sz, m
 # ------------------------------------------------------------------ B
 print("== B. 3451 contrast (fewest-change symmetric terms, Q51 kept)")
 fill = lambda q: sum(q) / 2
-check("B1 [T] at the particle-hole point Q51 per site = 13/2 (LSM: no unique gapped symmetric state with one-site translation); "
+check("B1 [T] at the particle-hole point Q51 per site = 13/2 (then, by the cited LSM theorem, unverified here: no unique gapped symmetric state with one-site translation); "
       "3450: Q_A, Q_B per site = 6, 2; sum q = q^T K q mod 2, so the lattice sees the anomaly mod 2 only",
       fill(Q51) == 6.5 and (fill(QA), fill(QB)) == (6, 2) and
       all((sum(q) - (q[0]**2 + q[1]**2 - q[2]**2 - q[3]**2)) % 2 == 0 for q in (QA, QB, Q51)))

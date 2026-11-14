@@ -1,4 +1,4 @@
-AUDIT_INPUT_PATHS = ('docs/THE_COMPOSITE_TWO_CELL_LIGHT_LABEL_MAKES_THE_CORNER_STABILIZERS_REDUCIBLE_BUT_THE_LIGHT_FLOQUET_WINDING_FORCES_THE_MIRROR_TO_CARRY_THE_OPPOSITE_CHIRALITY_BOUNDED_THEOREM_NOTE_2026-10-23.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ('docs/THE_COMPOSITE_TWO_CELL_LIGHT_LABEL_MAKES_THE_CORNER_STABILIZERS_REDUCIBLE_BUT_THE_LIGHT_FLOQUET_WINDING_FORCES_THE_MIRROR_TO_CARRY_THE_OPPOSITE_CHIRALITY_BOUNDED_THEOREM_NOTE_2026-10-23.md',)
 #!/usr/bin/env python3
 """two-cell-light-label: escape 1 of freeze-gapped-partners.  Define the light label on a DOUBLED cell (2x2x2 cells =
 4^3 sites) by folding FREEZE's composite light label, keep the 12 tetrahedral rotations about the block centre and
@@ -240,8 +240,10 @@ check("A2 zone centre, full 2T: the light-label space at Gamma + X-triplet (phas
       "three DISTINCT 2-dim irreps (commutant 3) and exactly one of them shares Gamma's irrep (intertwiner dim 1); "
       "same at pi for R + M-triplet; both rotation centres", okS,
       "(G+X, X, G->X, R+M, M, R->M): " + str(res))
-print("  => a T-covariant light-light term at the zone centre is Schur-block-diagonal: it can pair Gamma's Weyl with")
-print("     ONE X-combination (killing the protected Weyl) and only shifts the other two X irreps (no partner)")
+print("  => representation level only: a T-covariant operator on the light-label space at the zone centre is Schur-block-diagonal;")
+print("     it can couple Gamma's irrep with ONE X combination and does not couple the other two X irreps to Gamma's. The X")
+print("     objects are nodes of the polar-compressed map, not of FREEZE's spectrum (B0), so no partner-gapping or spectral")
+print("     obstruction for FREEZE follows (repair 2026-11-14, second hold R2)")
 
 print("== B. Floquet winding W3 of the polar-compressed light and mirror-label maps (FREEZE) ==")
 # B0 (hold finding 2): the light label is not walk-invariant on FREEZE, while Pi+ is. So B1's W3 is the degree of the polar part
@@ -288,11 +290,13 @@ check("B1 polar part of the compressed light block is smooth on the whole torus 
       sl > 1e-3 and sm > 1e-3 and abs(wl + 2) < 0.05 and abs(wl + wm) < 0.05,
       f"W3 light {wl:+.4f}, mirror {wm:+.4f}; min singular value light {sl:.3f}, mirror {sm:.3f}")
 print("  exact (section B of the note), for a WALK-INVARIANT splitting only: W3 is additive over sectors, a sector gapped at ANY")
-print("  single quasienergy has a continuous log so W3 = 0, and -W3 = net chirality at 0 = net chirality at pi.")
+print("  single quasienergy has a continuous log so W3 = 0, and -W3 = the sum of local degrees of the nodes at 0 and at pi")
+print("  (net Weyl-node chirality when every node is nondegenerate).")
 print("  conditional: IF a walk-invariant light sector had the target content (Gamma Weyl at 0, R Weyl at pi, chirality -1 each),")
 print("  its W3 would be +1 and the complement would carry the opposite unit and be gapless at every quasienergy.")
-print("verdict: the composite two-cell label makes every corner stabilizer reducible (Schur wall moved), but the light-light")
-print("pairing it allows only consumes the protected Weyl (Schur, exact). FREEZE's light label is not walk-invariant (B0), so its")
-print("-2 is a compressed-map degree; transfer to the light spectrum or a mirror obstruction needs a walk-invariant label (not built).")
+print("verdict: the composite two-cell label makes every corner stabilizer reducible (Schur wall moved); the 2T multiplicity")
+print("pattern 6 = 4 + 1 + 1 is exact as representation theory. FREEZE's light label is not walk-invariant (B0), so neither the")
+print("pattern nor the -2 compressed-map degree gives a light spectral statement, a partner-gapping failure or a mirror obstruction;")
+print("that needs a walk-invariant label or a bridge (not built).")
 print(f"TOTAL: PASS={NPASS} FAIL={NFAIL}")
 raise SystemExit(1 if NFAIL else 0)

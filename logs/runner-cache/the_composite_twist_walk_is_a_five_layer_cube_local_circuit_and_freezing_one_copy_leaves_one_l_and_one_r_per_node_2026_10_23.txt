@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_composite_twist_walk_is_a_five_layer_cube_local_circuit_and_freezing_one_copy_leaves_one_l_and_one_r_per_node_2026_10_23.py
-runner_sha256: 2b3c5810dcda8bc13707f749a71ffcf91609b7faa0c474cdc8d90477f9738015
-input_fingerprint_sha256: 905910889c7fc3dfcd1113ab548a7b55554eefa2feca36b20785ca63931364c6
+runner_sha256: 326b5b16924dd0393d73db7356309be5ce36824c3f9a16e231005fbbda77afaf
+input_fingerprint_sha256: 59d4b3c368c9dd7776ba07423677fc72e7bd237610cb2a9f2d7665e3e5662a98
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 11.80
+elapsed_sec: 11.43
 status: ok
 ----- stdout -----
 PASS A0 rebuild: CTWIST on CL-1's cell is unitary and T-covariant with CL-1's site gauges V  [unitarity 4.9e-15, T residual 5.9e-15]
@@ -14,18 +14,19 @@ PASS A2 NUMERICAL diagnostic: block-coordinate polar ascent finds five cube-loca
 PASS A2c control: the same polar ascent at depth 3, where the exact A1 no-go holds, stalls far from 0 (so the depth-5 residual is not produced by the method alone)  [depth-3 rms floor 1.212 (3 seeds, 300 sweeps)]
 PASS A3 finite diagnostic: with every layer commuting with the 12 site rotations (frames = V), no factorisation found at depth 5, 7, 9 (rms floor stays O(1)); the found layers are not T-invariant  [floors {5: np.float64(1.592), 7: np.float64(1.303), 9: np.float64(1.247)}; min layer T-noninvariance 4.04]
 == B. the eta doubling ==
-PASS B1 Schur/Kramers at the T-fixed nodes K = 0, R: every T-invariant on-cell operator commutes with sigma and tau3 (dim 8 = M2 + M2 on the eta copies), so for ANY T-covariant cell walk every level at a node is a 2-fold spinor irrep; free terms move node quasienergies but can never gap a node Weyl  [dim 8, max [Q,sigma] 9e-16]
+PASS B1 Schur/Kramers at the T-fixed nodes K = 0, R: every T-invariant on-cell operator commutes with sigma and tau3 (dim 8 = M2 + M2 on the eta copies), so for any T-covariant cell walk every level at a node is a 2-fold spinor irrep (a representation statement; it gives no velocity and no Weyl persistence, B1c)  [dim 8, max [Q,sigma] 9e-16]
 PASS B2 the eta copy algebra (commutant of sigma, tau) is M2 = <chi, eta_x>, and T acts on it TRIVIALLY: no rotation tells the two eta copies apart; only cell operators (chi) can  [commutant dim 4, T action on eta_x 9e-15]
 PASS B3 chirality agreement: the T-invariant cell relabelling Y = P_w + P_wbar eta_x gives U_A = Y U Y^+ (taste flips tau_1,2 eta_x) conserving the sector chi tau3 = +1 where CL-1's chirality agrees with the walk's; eta_x is a symmetry swapping the two sectors, so the choice of sector is not lopsided  [2e-15, 1e-14]
 PASS B4 rule FREEZE (the disagreeing sector does not hop; it ticks i tau3, quasienergies +-pi/2): unitary, T-covariant; quasienergy 0 only at K = 0 and pi only at R on a 12^3 grid; the frozen copy sits pi/2 from both  [unitarity 5e-15, T 7e-15, min |theta| off K=0 0.300, min |pi-theta| off R 0.300]
+PASS B1c NEGATIVE RESULT for the earlier B1 reading (second hold R5): the constant scalar walk e^(0.3 i) 1 is T-covariant and its node levels are degenerate, but its velocity is 0, so it has no Weyl dispersion; degeneracy alone gives no Weyl node and no persistence under deformation. FREEZE's node Weyls (B5) are nondegenerate by direct computation of their velocity matrices  [scalar walk: T residual 0e+00, node level spread 0e+00, velocity 0e+00; FREEZE min |det velocity| at the nodes 0.192]
 PASS B5 light content under FREEZE: exactly one L Weyl (q = 2) and one R Weyl (q = 1) at each node, 2 L + 2 R in all (half of CTWIST's 4 + 4); by B1 Schur no T-invariant L-R mass (characters differ)  [K=0 [('L', 2, [2]), ('R', 2, [1])]; R [('L', 2, [2]), ('R', 2, [1])]]
 PASS B6 NUMERICAL diagnostic: the FREEZE walk also matches a product of five cube-local layers to residual < 1e-10 (no exact gate witness)  [grid rms 6.2e-15, off-grid 6.6e-15]
 == C. the label mirror term (1 - tau3)/2 ==
-PASS C1 a free label term exp(i phi (1 - tau3)/2) cannot gap the mirror: phi = pi/2 moves the R Weyl at K = 0 to pi/2 (still a 2-fold irrep) and opens a quasienergy-0 Fermi surface; phi = pi puts the R-labelled states at the R node at quasienergy 0  [sigma_min(U-1) 6.8e-09 at k = 2.219 on a generic line; R-node states at 0 for phi=pi: 2]
+PASS C1 the label term exp(i phi (1 - tau3)/2) at the two phases computed: phi = pi/2 moves the R Weyl at K = 0 to pi/2 (still a 2-fold irrep) and opens a quasienergy-0 Fermi surface; phi = pi puts the R-labelled states at the R node at quasienergy 0 (other phi and other free terms are not computed)  [sigma_min(U-1) 6.8e-09 at k = 2.219 on a generic line; R-node states at 0 for phi=pi: 2]
 PASS C2 the label (1 - tau3)/2 is exact at the nodes and leaks O(K^2) under FREEZE (ratio 4 for K -> K/2)  [ratio 4.000]
 verdict: CTWIST and FREEZE match five-layer cube-local products numerically (residual < 1e-10; exact witness open), found layers not T-symmetric;
-FREEZE leaves one L(q=2)+one R(q=1) per node; separating the mirror needs an interacting (multi-family) term.
-TOTAL: PASS=13 FAIL=0
+FREEZE leaves one L(q=2)+one R(q=1) per node; the free label term at the phases computed relocates the R content and does not separate the mirror.
+TOTAL: PASS=14 FAIL=0
 
 ----- stderr -----
 

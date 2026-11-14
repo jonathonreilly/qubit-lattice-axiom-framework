@@ -12,7 +12,7 @@ one-block stand-in (the mirror top form, 8 modes), and a 1+1D two-copy chain wit
 Labels: [T] theorem / exact finite computation, [F] finite diagnostic, [E] estimate, [M] against measurement.
 Cited, not rederived: Nielsen-Ninomiya, 't Hooft matching, Golterman-Shamir arXiv:2505.20436 (generalised NN, Sec. IV)."""
 from __future__ import annotations
-AUDIT_INPUT_PATHS = ('docs/LIGHT_COPY_EXACTLY_MASSLESS_YET_MIRROR_GAPPING_RELEASES_VECTOR_LIKE_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ('docs/LIGHT_COPY_EXACTLY_MASSLESS_YET_MIRROR_GAPPING_RELEASES_VECTOR_LIKE_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md',)
 
 AUDIT_TIMEOUT_SEC = 120
 
@@ -180,7 +180,7 @@ print('== D. anomalies of the light content (exact integers)')
 qa = 2; prot = {k: [N for N in range(1, 10) if (4 * N * (qa + k)) % 3 != 0] for k in range(3)}
 Sobs = {k: [N for N in range(1, 10) if (-4 * N * (qa + k)) % 3 != 0] for k in range(3)}
 check('D1 [T] per family the light carries twisted-Z3_k x SU(2)_e^2 = 4(q_a+k) (16 = 1 mod 3 at k = 2), S the opposite: anomaly '
-      'protection holds exactly for the N at which S cannot be gapped', prot == Sobs and prot[2] == [1, 2, 4, 5, 7, 8] and prot[1] == [],
+      'sums are nonzero mod 3 exactly at these N, the N at which S cannot be gapped if anomaly matching holds (cited, unverified here; the protection is conditional on it)', prot == Sobs and prot[2] == [1, 2, 4, 5, 7, 8] and prot[1] == [],
       f'k=2: N {prot[2]}')
 fam = [(+1, 2, 1, 4), (-1, 1, 2, 4)]                  # (z charge in LH basis, SU(2)_e dim, SU(2)_o dim, SU(4) dim): (a,L) even, conj (a,R) odd
 z4su2 = sum(4 * 1 for f in fam if f[1] == 2) % 4; witten = sum(4 for f in fam if f[1] == 2) % 2

@@ -1,4 +1,4 @@
-AUDIT_INPUT_PATHS = ('docs/THE_ZOOMED_FILTERED_MIRROR_TERM_KEEPS_THE_CHIRAL_Z4_AND_THE_16_WEYL_TOY_IS_ANOMALY_FREE_WITH_AN_UNSETTLED_K_GAP_BOUNDED_THEOREM_NOTE_2026-10-22.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ('docs/THE_ZOOMED_FILTERED_MIRROR_TERM_KEEPS_THE_CHIRAL_Z4_AND_THE_16_WEYL_TOY_IS_ANOMALY_FREE_WITH_AN_UNSETTLED_K_GAP_BOUNDED_THEOREM_NOTE_2026-10-22.md',)
 #!/usr/bin/env python3
 """AX-7 chirality test with 16 Weyl at K: two tastes per flavour of a K/R Weyl band, taste-mixing cube-filtered SU(4) quartic
 on the mirror (SU(4) is a MODEL, not a rule), light paired at R only; plus the CL-1 tick checks (Z4 inside U(1)_eps, zoomed filter,
@@ -367,7 +367,7 @@ gK5 = sum(np.linalg.det(np.eye(3)[list(p)]) * alK[p[0]] @ alK[p[1]] @ alK[p[2]] 
 for e in (1, -1):
     Qo = U_[e]; ev = np.linalg.eigvals(-1j * Qo.conj().T @ gK5 @ Qo); chi[e] = np.sum(np.sign(ev.real)) / 2
 nu_m = chi[1] * 1 + chi[-1] * (-1)
-rep(abs(abs(nu_m) - 2) < 1e-9, "C4", "THEOREM", "Z16 count on the tick: per mode member the K mirror is one Weyl per eps sector, both of one Z4_eps charge, index 2 per member; the K mirror can gap symmetrically under this term only if the member count n has 2n = 0 mod 16, i.e. n = 0 mod 8 (16 passes, 15 fails)",
+rep(abs(abs(nu_m) - 2) < 1e-9, "C4", "THEOREM", "Z16 count on the tick: per mode member the K mirror is one Weyl per eps sector, both of one Z4_eps charge, index 2 per member; conditional on the cited Z16 classification (not checked here), the K mirror can gap symmetrically under this term only if the member count n has 2n = 0 mod 16, i.e. n = 0 mod 8 (16 passes, 15 fails)",
     f"chirality (s = -1) eps+ {chi[1]:+.0f}, eps- {chi[-1]:+.0f}; index per member {nu_m:+.0f}")
 print("== D. recorded production values (prod3.py, 82 s segments, seeded; recorded, not recomputed; no PASS depends on them)")
 for s_ in RECORDED: print("  recorded:", s_)

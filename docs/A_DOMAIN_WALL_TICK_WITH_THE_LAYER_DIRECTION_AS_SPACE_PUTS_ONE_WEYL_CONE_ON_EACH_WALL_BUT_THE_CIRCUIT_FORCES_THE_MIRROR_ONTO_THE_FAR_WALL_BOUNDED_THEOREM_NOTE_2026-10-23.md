@@ -1,7 +1,7 @@
 ---
 claim_id: a_domain_wall_tick_with_the_layer_direction_as_space_puts_one_weyl_cone_on_each_wall_but_the_circuit_forces_the_mirror_onto_the_far_wall_bounded_theorem_note_2026-10-23
 claim_type: bounded_theorem
-claim_scope: "Free-field test of three candidate tick (unitary, Hamiltonian/Floquet) forms of one-handed matter. (A) A 3+1+1 Wilson-type slab with Ls layers in an extra SPATIAL direction and the tick as time: the slab Hamiltonian H is strictly nearest-neighbour and tetrahedrally covariant; the layered circuit U = W_m W_1 W_2 W_3 W_odd W_even is unitary, range 1 in each space direction and range 2 in layers. Finite diagnostics at m = 0.6, theta = 0.2: 4D bulk gapped (0.067 at quasienergy 0, 1.66 at pi; H gap 0.60); exactly one two-component Weyl node per wall, at k = 0 and quasienergy 0, opposite chirality on the two walls, no other in-gap state on a 12^3 grid, and 4 in-gap states on the L = 6 torus; the mirror overlap falls as |1 - m|^Ls (exact zero-mode recursion; ratio 0.399 per layer, xi = 1.09 layers; exactly zero at m = 1); exp(-i H tau) is covariant and faster-than-exponentially local; no wall state at X, M, R. The tick U is unitary with nonreal eigenphases, so it is not a positive transfer matrix (a positive Hermitian unitary is the identity); no Euclidean reflection-positive transfer operator is built. Exact: a circuit of gates exp(-i theta h) is homotopic to 1, so the slab's W3 = 0 for every step, mass and Ls; one wall has (n0, npi) = (-1, 0), which no walk-invariant sector of a 3D walk can have (n0 = npi = -W3, control on a degree-one family). (B) The slab's layer-sign charge is compact, quantised and on-site in 3D but not conserved; its commutator lives on the middle bond and falls as |1 - m|^Ls between wall modes; the cited 1+1D Onsager template's one-handed combination has levels |sin(k/2)|. (C) At larger steps the circuit's bulk gap closes between theta = 0.2 and 0.3; quasienergy-pi wall cones (-1, -3) appear at theta = 0.7 only with a gapless bulk. Not covered: gauging the light wall, gapping the far wall, interactions, identification with the CL-1 cube walk."
+claim_scope: "Free-field test of three candidate tick (unitary, Hamiltonian/Floquet) forms of one-handed matter. (A) A 3+1+1 Wilson-type slab with Ls layers in an extra SPATIAL direction and the tick as time: the slab Hamiltonian H is strictly nearest-neighbour and tetrahedrally covariant; the layered circuit U = W_m W_1 W_2 W_3 W_odd W_even is unitary, range 1 in each space direction and range 2 in layers. Finite diagnostics at m = 0.6, theta = 0.2: 4D bulk gapped (0.067 at quasienergy 0, 1.66 at pi; H gap 0.60); selected by thresholds (|phase| < 0.05, |E| < H gap/2), one two-dimensional low-energy wall-localised space per wall at k = 0 near quasienergy 0, with opposite projected-velocity chirality on the two walls, no other in-gap state on a 12^3 grid, and 4 in-gap states on the L = 6 torus. These are near-zero modes, not exact Weyl zeros: at k = 0 the Hamiltonian is two spin copies of a chiral chain with triangular block B (diagonal m - 1, unit superdiagonal), det B = (m - 1)^Ls != 0, and the smallest |E| at Ls = 12 is sigma_min(B) = 1.41e-5 (exact zero only at m = 1, or for the semi-infinite slab). The wall-mode splitting and mirror overlap fall as |1 - m|^Ls (zero-mode recursion of the semi-infinite slab; ratio 0.399 per layer, xi = 1.09 layers; exactly zero at m = 1); exp(-i H tau) is covariant and faster-than-exponentially local; no wall state at X, M, R. The tick U is unitary with nonreal eigenphases, so it is not a positive transfer matrix (a positive Hermitian unitary is the identity); no Euclidean reflection-positive transfer operator is built. Exact: a circuit of gates exp(-i theta h) is homotopic to 1, so the slab's W3 = 0 for every step, mass and Ls; in the infinite-separation limit one wall carries (n0, npi) = (-1, 0), which no walk-invariant sector of a 3D walk can have (equal local-degree sums n0 = npi = -W3; Weyl counts when the nodes are nondegenerate; control on a degree-one family). (B) The slab's layer-sign charge is compact, quantised and on-site in 3D but not conserved; its commutator lives on the middle bond and falls as |1 - m|^Ls between wall modes; the cited 1+1D Onsager template's one-handed combination has levels |sin(k/2)|. (C) At larger steps the circuit's bulk gap closes between theta = 0.2 and 0.3; quasienergy-pi wall cones (-1, -3) appear at theta = 0.7 only with a gapless bulk. Not covered: gauging the light wall, gapping the far wall, interactions, identification with the CL-1 cube walk."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -12,7 +12,7 @@ upstream_dependencies:
 runner: scripts/a_domain_wall_tick_with_the_layer_direction_as_space_puts_one_weyl_cone_on_each_wall_but_the_circuit_forces_the_mirror_onto_the_far_wall_2026_10_23.py
 ---
 
-# A domain-wall tick with the layer direction as space puts one Weyl cone on each wall, but the circuit forces the mirror onto the far wall
+# A domain-wall tick with the layer direction as space puts one low-energy Weyl-type mode on each wall (an exact Weyl zero only for infinite wall separation or at m = 1), but the circuit forces the mirror onto the far wall
 
 Claim type: bounded_theorem (two exact statements, one exact recursion, labelled finite diagnostics; the domain-wall
 construction and the Floquet/Nielsen-Ninomiya literature are supplied and cited).
@@ -62,26 +62,36 @@ T_i^2 = 1 and h_b^3 = h_b, so every factor is an exact range-1 gate.
 ## A. Domain wall with the layer direction as space: YES for a unitary tick with one cone per wall; mirror on the far wall
 
 Exact:
-- A-T1 (zero-mode recursion). At k = 0, psi_s = (1-m)^s chi with i G5 G4 chi = -chi solves H psi = 0 on the s = 0 wall
-  exactly (A chi = 0 kills the missing bond); the far end leaves amplitude |1-m|^Ls, so the mirror overlap is
-  O(|1-m|^Ls). At m = 1 the wall mode is compact (one layer) and the overlap is exactly 0 (3e-17).
+- A-T1 (zero-mode recursion). At k = 0, psi_s = (1-m)^s chi with i G5 G4 chi = -chi solves H psi = 0 at every layer
+  except the far end (A chi = 0 kills the missing bond at s = 0). So it is an exact zero mode of the semi-infinite slab;
+  on the finite slab it fails at the far end by amplitude |1-m|^Ls, and the mirror overlap is O(|1-m|^Ls). At m = 1 the
+  wall mode is compact (one layer) and the overlap is exactly 0 (3e-17).
+- A-T1x (no exact finite zero, corrected 2026-11-14 from the second hold, R3). At k = 0, H = (m - 1) G5 + bonds acts
+  as 1 on spin. In the eigenbasis of sx (x) 1, which anticommutes with it, H is off-diagonal with the Ls x Ls block
+  B = (m - 1) 1 + (unit superdiagonal). Its levels are +- the singular values of B, each twice. B is triangular, so
+  det B = (m - 1)^Ls, nonzero for m != 1: the finite slab has no exact zero mode at k = 0. At m = 0.6 and Ls = 12,
+  det B = 4096/244140625 and the smallest |E| is sigma_min(B) = 1.4092861479350551e-5 (runner A3x, which also checks
+  the reduction to 2e-15 and the m = 1 control, where B is a nilpotent shift and H has an exact zero mode). The A3
+  statements below are therefore about near-zero, wall-localised modes, not exact Weyl zeros.
 - A-T2 (homotopy). Every factor is exp(-i th h) with h local hermitian; th -> 0 contracts U to 1 through local
   unitaries, so the slab, viewed as a 3D walk with 4 Ls components per cell, has W3 = 0 for all th, m, Ls.
-  With the sector relation n0 = npi = -W3 (K1), the slab total chirality is 0 at both quasienergies.
+  With the sector relation n0 = npi = -W3 (K1; local-degree sums, equal to Weyl counts when the nodes are
+  nondegenerate, #9863), the slab total is 0 at both quasienergies.
 - A-T3 (rotations). H is covariant under the tetrahedral rotations with the spinor lift on G1..G3 (C2, C3 checked to
   1e-15).
 Finite diagnostics (m = 0.6, th = 0.2, pre-set criteria in brackets):
 - A1 unitarity 2e-16, no Fourier weight at |n| = 2 (cube-local), layer range <= 2 [< 1e-12, <= 2].
 - A2 bulk gap 0.067 at 0 and 1.66 at pi (8^4 grid plus local minimisation); H gap 0.60 [> 0.05, > 0.5, > 0.3].
-- A3 Ls = 12: one 2-dim wall space per wall at k = 0, chirality L = -1, R = +1 (walk and H agree; H |det v| = 1);
-  none at the other 7 corners, none at pi [exactly this pattern].
+- A3 Ls = 12, threshold selection (|phase| < 0.05 for the walk, |E| < H gap/2 for H): one 2-dim low-energy wall space
+  per wall at k = 0, projected-velocity chirality L = -1, R = +1 (walk and H agree; H |det v| = 1); none at the other
+  7 corners, none at pi [exactly this pattern]. The modes sit at |E| = 1.41e-5, not 0 (A-T1x).
 - A4 in-gap states only within 0.8 of k = 0 on a 12^3 grid; 4 in-gap states on the L = 6 torus [0 stray, 4].
 - A5 k = 0 splitting 5.4e-2, 2.2e-2, ..., 2.2e-4 for Ls = 3..9, ratio 0.400 (H), 0.399 (walk) [|ratio - 0.4| < 4e-3].
 - A6 no wall state at X, M, R [none].
 - A7 exp(-i H tau), tau = 1: hop weight 0.6, 0.3, 9e-2, 9e-3, 5e-4, ..., 7e-11 at r = 0..8 [monotone, < 1e-6 at 8].
-Answer to "does W3 / the corner no-go apply?": not to one wall, yes to the slab. One wall has (n0, npi) = (-1, 0); a
-walk-invariant sector of a 3D walk needs n0 = npi, so the wall is not such a sector (its leak is the |1-m|^Ls
-overlap), and the corner premise (a walk-invariant light label at X and M) is void because the wall has no state
+Answer to "does W3 / the corner no-go apply?": not to one wall, yes to the slab. In the infinite-separation limit one
+wall has (n0, npi) = (-1, 0); a walk-invariant sector of a 3D walk needs n0 = npi, so the wall is not such a sector
+(on the finite slab the walls hybridise through the |1-m|^Ls overlap), and the corner premise (a walk-invariant light label at X and M) is void because the wall has no state
 at X or M. But the slab as a whole is a circuit with W3 = 0, so the opposite cone is forced, and it sits on the far
 wall. The light 3+1 Weyl lives on one wall; the mirror is exponentially separated, not removed.
 Standard open step (unchanged): gauge only the light wall (rung-dimension-chirality B: breaks gauge equivalence or
@@ -114,7 +124,8 @@ register as written by exact mode number with the mirror reflection). Not attemp
 - C2 [T] (= A-T2): any circuit of exponentiated local gates has slab W3 = 0, so the "obstruction as resource" reading
   needs an index-carrying, non-circuit element (for example a shift-like map along the layers). Whether such an
   element exists on an open or one-ended layer direction with a gapped bulk is OPEN. The control K1 shows what W3 != 0
-  would give: n0 = npi = -W3, i.e. cones of the SAME hand at 0 and pi (no mirror but an anomalous pi partner).
+  would give: n0 = npi = -W3 (nondegenerate cones), i.e. cones of the SAME hand at 0 and pi (no mirror but an
+  anomalous pi partner).
 
 ## Most promising: A, as a tick form compared with the existing overlap clause (conditional)
 
@@ -142,9 +153,13 @@ clause. The coarsest-layer wall carries the mirror, coupled to the light wall at
 (2) No observed structure is inserted: no gauge group or content. The 4-component layer mode is a supplied cell
 content (composite-before-atomic: it should be a cluster of qubit sites; not built here). (3) Prediction not built
 for (UNTESTED): every light species carries a vector mass of order |1-m|^Ls times the cutoff from the far wall,
-unless the far wall is gapped. (4) Axiom bent: if the layers are a new spatial axis, it bends the Z^3 axiom; if they
-are a role-block coordinate (rung-dimension-chirality E), no axiom is bent, but each light site then costs Ls
-cell contents. Gate result: passes (1) and (2); (3) is UNTESTED; (4) is named.
+unless the far wall is gapped. (4) Comparison with the current axioms (origin/main, rematched 2026-11-14): if the layers are a new spatial axis, the
+model has sites outside Z^3, which the Lattice axiom (sites are the points of Z^3) does not supply; if they are a
+role-block coordinate (rung-dimension-chirality E), each light site carries Ls four-component layer modes, which goes
+beyond the Qubit axiom's one M_2(C) possibility domain per site unless the modes are built from a cluster of qubit sites
+(not built here). The tick, its range and its gates are supplied: the Admissibility axiom names a neighborhood rule for
+the site distribution and is not a dynamics axiom, and no axiom states an update rule. Gate result: passes (1) and (2);
+(3) is UNTESTED; (4) is named.
 
 ## Smuggling review
 
@@ -152,6 +167,7 @@ Supplied: the Wilson-type slab (Gamma basis, window), m = 0.6, th = 0.2/0.3/0.7,
 Trotter order (it breaks the rotation covariance at O(th^2); exp(-i H tau) is the covariant choice), and the cited
 literature: Kaplan 1992; Creutz-Horvath 1994 (Hamiltonian domain wall); Zhang-Hu 2001 and Qi-Hughes-Zhang 2008 (4D
 quantum Hall with a Weyl boundary); Rudner-Lindner-Berg-Levin 2013 (anomalous Floquet); Nielsen-Ninomiya 1981;
-Chatterjee-Pace-Shao 2024; Gioia-Thorngren 2025 as cited by nononsite-chiral (not re-checked here). Forced: one cone per
-wall, the |1-m|^Ls overlap, slab W3 = 0, and the n0 = npi sector relation. Not shown: that the CL-1 cube walk is this
+Chatterjee-Pace-Shao 2024; Gioia-Thorngren 2025 as cited by nononsite-chiral (not re-checked here). Forced: one low-energy
+wall mode per wall (an exact cone only in the infinite-separation limit or at m = 1), the |1-m|^Ls overlap, slab
+W3 = 0, and the n0 = npi sector relation. Not shown: that the CL-1 cube walk is this
 slab's layer-zero restriction, anything interacting or gauged, or the far-wall fate.

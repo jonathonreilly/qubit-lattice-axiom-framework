@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_family_class_ticks_forced_pi_sector_is_a_light_charged_inverted_copy_whose_doubler_map_cancels_all_vacuum_polarization_so_it_needs_repair_while_its_anomalies_stay_safe_2026_10_24.py
-runner_sha256: dbcd92495143e6ec31410aacd67808e37b74cae8abec03ad17553a43e300e999
-input_fingerprint_sha256: d0282ae71ea4495857c57e96faf5123b9f7f6488fbb707d682509c1f338f102f
+runner_sha256: 458e1c7088383fc97fbd567f61f3c09fd2f37f8100d40f614b798926a3b7215f
+input_fingerprint_sha256: 63cad4d30c17f4e3f638ef293130a92b3e33ee6c7991c742a1701a07d471acfd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.75
+elapsed_sec: 1.66
 status: ok
 ----- stdout -----
 == A. the doubler S maps the vacuum to its complement: zero response
@@ -36,7 +36,7 @@ PASS: D1 [T] gauge anomalies stay zero with the pi copy (2 x 16 per family: Y^3,
    E3 [S] with an interaction and a light photon, B1's states would be open final states with phase space up to the cell
       scale. Under the free tick the vacuum is stationary (B1b): no rate follows without a defined interaction.
 VERDICT: exact: S-even one-body probes see zero vacuum response; F_pi = W forces the pi sector; anomalies stay zero with the pi copy.
-   No observable or rate conclusion: E1-E2 are conditional comparator estimates on bridges not defined here.  [1.5 s, 137 MB]
+   No observable or rate conclusion: E1-E2 are conditional comparator estimates on bridges not defined here.  [1.5 s, 128 MB]
 TOTAL: PASS=10 FAIL=0
 
 ----- stderr -----

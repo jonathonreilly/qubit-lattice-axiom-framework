@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/chirality_doublers_navigation_map_check_2026_11_14.py
 runner_sha256: b29f2ad5070e20c6ff2dabce6d713aa2b8d19fd1acfa6a4c04e8beda922ec1e5
-input_fingerprint_sha256: 8442f935df7fdfdc3f9ce9e191958c650d29111068ca472519290a5f04389ebd
+input_fingerprint_sha256: e4c834bce5550eafc40cc5321269a0f1c1070bdcdd5a3e47cefac82bcef566fc
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==============================================================================

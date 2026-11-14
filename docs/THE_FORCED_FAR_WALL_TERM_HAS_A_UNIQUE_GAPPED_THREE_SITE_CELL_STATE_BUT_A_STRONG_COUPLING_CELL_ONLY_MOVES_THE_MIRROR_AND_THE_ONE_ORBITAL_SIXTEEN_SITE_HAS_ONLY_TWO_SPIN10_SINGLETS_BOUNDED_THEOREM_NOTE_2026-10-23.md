@@ -1,7 +1,7 @@
 ---
 claim_id: the_forced_far_wall_term_has_a_unique_gapped_three_site_cell_state_but_a_strong_coupling_cell_only_moves_the_mirror_and_the_one_orbital_sixteen_site_has_only_two_spin10_singlets_bounded_theorem_note_2026-10-23
 claim_type: bounded_theorem
-claim_scope: "Three parts. (1) 3-4-5-0 far-wall term (the two forced 6-fermion terms l1 = (1,-2,1,2), l2 = (2,1,-2,1), one coupling g) placed on cells: on one site it vanishes (Pauli); on a two-site cell the ground state is 8-fold at -g/2; on the three-site complete-graph cell it is unique, neutral (Q_A = Q_B = 0 from half filling, zero variance), E0 = -g, first excitation -(sqrt3/2) g, so Delta_0 = (1 - sqrt3/2) g = 0.134 g; the four-site cell is unique with Delta_0 = 0.026 g. Bond terms on overlapping bonds do not commute (norm 0.25 g^2) and the uniform open three-site chain has E0 = -0.75 g > -g (frustrated, 2-fold), so a uniform rule is not a sum of commuting cells; a non-overlapping cell tiling is needed. With a naive hop of norm 2t per bond, Yarotsky's theorem (cited; its hypotheses as stated here: classical in the cell eigenbasis, unique product ground state, 1D Jordan-Wigner-local) would give a persistent gap for t/g < kappa_0 Delta_0/(z ||h_b||) = kappa_0 / 44.8 (a conditional perturbative statement; kappa_0, the theorem's constant, is not computed); one cell with its own hops keeps its unique state until t/g = 0.237. This is SMG of the doubled (vector-like) chain content. In the domain-wall slab, in a free-slab check with the far layer gapped by an m s_z stand-in, the far-wall branch keeps E = sin k and moves one layer in; the induced interacting corrections are argued perturbatively, not computed, so the interacting slab is not closed. 3-4-5-1 contrast: odd cells carry Q51 in Z + 1/2 at the particle-hole point, so the three-site cell ground state is an exact Q51 = +-1/2 doublet; the four-site cell is a Q51 = +-2 doublet (dynamical); a one-site-translation chain at half filling has Q51 filling 13/2 (LSM obstruction). The lattice sees the anomaly only mod 2 (sum q = q^T K q mod 2). (2) Bosonization: l1, l2 K-null, mutually null, neutral under (3,4,5,0) and (2,1,2,-1), primitive; free-point dimension 5 for both; in the equal-velocity Luttinger family V(x) both have dimension 5 sqrt((1-x)/(1+x)), relevant iff 21/29 < x < 1. (3) One site carrying the 16 (one orbital, 2^16 states): exactly two Spin(10) singlets, |0> and |F>; the Casimir is (3/4) N (16 - N); the 10 channel psi^T C Gamma^a psi vanishes identically and the 120 channel is N(N-1)/2; so no Spin(10)-invariant, particle-hole-symmetric site term of degree below 16 has a unique ground state. Under SU(3) x SU(2) x U(1)_Y x U(1)_B-L the one-orbital 16 has singlets 1, 6, 8, 6, 1 at N = 0, 4, 8, 12, 16, and its six singlet 4-fermion terms (equal real couplings) give a unique particle-hole-symmetric singlet ground state with gap 0.442 g. 15 modes (no nu^c): every level of a particle-hole-symmetric site is doubly degenerate (exact). 8 modes (Q + L, or (4,2)): singlets only at N = 0, 8. Not covered: gauge fields, the continuum limit, a cell lattice beyond one cell, the two-orbital Spin(10) cell (register value cited, not recomputed)."
+claim_scope: "Three parts. (1) 3-4-5-0 far-wall term (the two forced 6-fermion terms l1 = (1,-2,1,2), l2 = (2,1,-2,1), one coupling g) placed on cells: on one site it vanishes (Pauli); on a two-site cell the ground state is 8-fold at -g/2; on the three-site complete-graph cell it is unique, neutral (Q_A = Q_B = 0 from half filling, zero variance), E0 = -g, first excitation -(sqrt3/2) g, so Delta_0 = (1 - sqrt3/2) g = 0.134 g; the four-site cell is unique with Delta_0 = 0.026 g. Bond terms on overlapping bonds do not commute (norm 0.25 g^2) and the uniform open three-site chain has E0 = -0.75 g > -g (frustrated, 2-fold), so a uniform rule is not a sum of commuting cells; a non-overlapping cell tiling is needed. With a naive hop of norm 2t per bond, Yarotsky's theorem (cited; its hypotheses as stated here: classical in the cell eigenbasis, unique product ground state, 1D Jordan-Wigner-local) would give a persistent gap for t/g < kappa_0 Delta_0/(z ||h_b||) = kappa_0 / 44.8 (a conditional perturbative statement; kappa_0, the theorem's constant, is not computed); one cell with its own hops keeps its unique state until t/g = 0.237. Under that theorem this would be SMG of the doubled (vector-like) chain content. In the domain-wall slab, in a free-slab check with the far layer gapped by an m s_z stand-in, the far-wall branch keeps E = sin k and moves one layer in; the induced interacting corrections are argued perturbatively, not computed, so the interacting slab is not closed. 3-4-5-1 contrast: odd cells carry Q51 in Z + 1/2 at the particle-hole point, so the three-site cell ground state is an exact Q51 = +-1/2 doublet; the four-site cell is a Q51 = +-2 doublet (dynamical); a one-site-translation chain at half filling has Q51 filling 13/2 (an LSM obstruction, conditional on the cited LSM theorem). The lattice sees the anomaly only mod 2 (sum q = q^T K q mod 2). (2) Bosonization: l1, l2 K-null, mutually null, neutral under (3,4,5,0) and (2,1,2,-1), primitive (so Haldane's criterion, cited, applies); free-point dimension 5 for both; in the equal-velocity Luttinger family V(x) both have dimension 5 sqrt((1-x)/(1+x)), relevant iff 21/29 < x < 1. (3) One site carrying the 16 (one orbital, 2^16 states): exactly two Spin(10) singlets, |0> and |F>; the Casimir is (3/4) N (16 - N); the 10 channel psi^T C Gamma^a psi vanishes identically and the 120 channel is N(N-1)/2; so no Spin(10)-invariant, particle-hole-symmetric site term of degree below 16 has a unique ground state. Under SU(3) x SU(2) x U(1)_Y x U(1)_B-L the one-orbital 16 has singlets 1, 6, 8, 6, 1 at N = 0, 4, 8, 12, 16, and its six singlet 4-fermion terms (equal real couplings) give a unique particle-hole-symmetric singlet ground state with gap 0.442 g. 15 modes (no nu^c): every level of a particle-hole-symmetric site is doubly degenerate (exact). 8 modes (Q + L, or (4,2)): singlets only at N = 0, 8. Not covered: gauge fields, the continuum limit, a cell lattice beyond one cell, the two-orbital Spin(10) cell (register value cited, not recomputed)."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -27,9 +27,8 @@ not in this repository.
 ## Question
 
 far-wall-smg reported that the two forced 6-fermion terms gap the 3-4-5-0 mirror in a wall-mode chain at L = 12, but no
-size trend could be extracted. The source session asked for a cheaper route (reported there as an owner request; no
-owner decision is recorded in the repository): a strong-coupling derivation, a bosonization check, and the same site
-test for the 16 in 3+1D.
+size trend could be extracted. This note tries a cheaper route: a strong-coupling derivation, a bosonization check, and
+the same site test for the 16 in 3+1D.
 - (1) Is there a smallest cell on which the forced term has a unique symmetric gapped ground state, and does a
   stability theorem then give a size-independent gap?
 - (2) Do the forced vectors pass Haldane's criterion, and when are they relevant?
@@ -139,7 +138,7 @@ D8 16 under SU(3) x SU(2) x U(1)_Y x U(1)_B-L: singlet counts [1,6,8,6,1] at n =
 
 - B1 [T].
   - At the particle-hole point, Q51 per site is 13/2. A one-site-translation chain therefore has fractional Q51 filling,
-    and LSM (Oshikawa form) forbids a unique gapped symmetric ground state.
+    and LSM (Oshikawa form; cited, not checked here) then forbids a unique gapped symmetric ground state.
   - For 3450, Q_A and Q_B per site are 6 and 2 (integers): no obstruction.
   - Since q^2 = q mod 2, sum q = q^T K q mod 2. The lattice remnant of the anomaly is its parity only: 3451 has q^T K q = -1 (odd).
 - B2 [T]+[F]. On odd cells, Q51 lies in Z + 1/2, so particle-hole pairs Q51 with -Q51. The three-site cell ground state
@@ -153,7 +152,7 @@ D8 16 under SU(3) x SU(2) x U(1)_Y x U(1)_B-L: singlet counts [1,6,8,6,1] at n =
 
 K = diag(1,1,-1,-1) (flavours 3, 4 one way, 5, 0 the other), t = (3,4,5,0), and the second charge (2,1,2,-1).
 - C1 [T]. l1, l2 are K-null and mutually null, neutral under both charges, and primitive (the 2x2 minors have gcd 1).
-  Haldane's criterion (supplied) then says cos(l1.phi) + cos(l2.phi) can gap all four modes. Primitivity gives a
+  Haldane's criterion (supplied, not checked here) then says cos(l1.phi) + cos(l2.phi) can gap all four modes; that step is conditional on it. Primitivity gives a
   unique pinned minimum, so no discrete symmetry breaks.
 - C2 [T]. At the free point, Delta(l) = 1/2 |l|^2 = 5 for both (> 2): both are irrelevant.
 - C3 [T]. Write l = (a; b) with b = O a, where O = [[-3/5, -4/5], [4/5, -3/5]] is a rotation (possible because the
@@ -201,8 +200,8 @@ Lorentz spin index is dropped.
 
 Answer to (3): for the Spin(10) one-orbital 16, NO at fewest change. Only the degree-16 cat term gives a unique
 symmetric site state. The SM-group one-orbital 16 gives YES at degree 4. The 15 fails exactly (parity). The 8 fails
-below degree 8. A unique symmetric site state with a gap would, by the fermionic stability theorem, give a gapped
-symmetric product phase of a lattice of such sites in any dimension. But the site test sees only the 0+1D anomaly
+below degree 8. A unique symmetric site state with a gap would, by the cited fermionic stability theorem (conditional on
+its hypotheses, not checked here), give a gapped symmetric product phase of a lattice of such sites in any dimension. But the site test sees only the 0+1D anomaly
 (mode-count parity under C, and the degree thresholds), not Z16: 8 and 16 behave alike, and an on-site symmetry lattice
 carries no 4D 't Hooft anomaly. And in a domain-wall geometry, A7's relocation applies unchanged. So this is NOT "the
 Z16 statement made local". It is the vector-like (Butt-Catterall-Hasenfratz-type) strong-coupling statement, and a
@@ -260,6 +259,10 @@ Not shown:
 - gauging;
 - the continuum limit;
 - the two-orbital Spin(10) cell recomputation.
+
+Unverified inputs and open obligations (2026-11-14, second hold R9): Yarotsky 2006 and the fermionic stability theorem
+(read by A6, Answer 1 and the D reading, all conditional on their hypotheses); LSM (read by B1's obstruction); Haldane's
+criterion (read by C1's gapping step); the register's two-orbital Spin(10) value (cited, not recomputed).
 
 Literature (supplied, cited not computed): Wang-Wen 2013/2018, Tong 2021, Razamat-Tong 2020,
 Butt-Catterall-Hasenfratz 2024, You-He-Xu-Vishwanath 2018, Kennedy-Tasaki 1992, Yarotsky 2006,

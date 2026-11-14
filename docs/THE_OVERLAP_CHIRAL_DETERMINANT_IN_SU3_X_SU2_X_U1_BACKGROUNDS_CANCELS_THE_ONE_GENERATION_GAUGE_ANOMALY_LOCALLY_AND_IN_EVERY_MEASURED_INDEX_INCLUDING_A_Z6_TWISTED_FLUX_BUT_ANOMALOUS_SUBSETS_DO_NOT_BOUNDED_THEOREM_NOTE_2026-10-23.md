@@ -115,3 +115,4 @@ That candidate's SU(3) open item narrows; it does not close.
 Forced by the construction: GW / C / pseudo-reality identities; integer indices; the order-2 cancellation given
 the content. Supplied: group, content, Y values, Z6 twist, m0, backgrounds, lattice size, the eps^4 reading.
 Not measured: Tr Y (gravitational), the pi_4 global anomaly, rough fields, continuum and larger volumes.
+Unverified inputs and open obligations (2026-11-14, second hold R9): Luscher's P_hat construction is implemented and its identities are computed here; its locality, the gauge-invariant chiral measure and the cohomological classification of the anomaly are cited literature, not checked here, and no conclusion above reads them. Non-perturbative existence remains open.

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_one_family_u1_anomaly_four_field_coefficient_in_admissible_backgrounds_at_wilson_mass_one_does_not_vanish_like_p_squared_2026_10_25.py
-runner_sha256: 43f2b19ba92653542e25f9beaf12173a7100f7f4cb28a50b038e32f7f3a0fa1f
-input_fingerprint_sha256: b701d53352a6ccc304aca340d1b0d9e22b36247fba457619737eedae6793495e
+runner_sha256: d9e11801157514a739ad6c26267d703e6a71ff92156c8d52b362a53c8510fd1f
+input_fingerprint_sha256: 457cdb2c9ab152009ff031b860bd58a562bf26d66530b45e7b9843d7c8f0bdcd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 5.97
+elapsed_sec: 5.92
 status: ok
 ----- stdout -----
 PASS: G0a exact: 4^4 block (p2,p4) density = full dense 4D density; GW and sign(H)^2 = 1; symmetry-reduced evr block sum = full numpy block sum (6x6x6x6 (1,1), (1,2); 8x4x8x4); C-evenness q[-th] = q[th]; evr = numpy eigh; odd background = luscher-m0-1 antiderivative - eps/2  [4D 5e-15, GW 2e-15, reduced 3e-14, images 3e-13, C 8e-16, evr 2e-14, profile 2e-17; 3s]

@@ -161,6 +161,33 @@ def eval_loop(links, steps, tail=None):
     return W, out
 
 
+def strip_line(xi, wi, i):
+    """strip loop (1/2) tr(P^x P^w^dag) with the FIXED base point y_i = 0 on each line (in SU(2) its value
+    depends on the base point, so the own-site holonomy trick is not valid for it).  Returns the value per
+    line (L, L) and the Euclidean gradients on the links x_i, w_i (arrays (L, L, L, 4))."""
+    X = np.moveaxis(xi, i, 0)
+    Wl = np.moveaxis(wi, i, 0)
+    L = X.shape[0]
+    one = np.zeros(X.shape[1:])
+    one[..., 0] = 1.0
+
+    def prefsuf(Z):
+        A = [one]
+        for n in range(1, L):
+            A.append(qmul(A[-1], Z[n-1]))
+        B = [None]*L
+        B[L-1] = one
+        for n in range(L-2, -1, -1):
+            B[n] = qmul(Z[n+1], B[n+1])
+        return A, B, qmul(A[L-1], Z[L-1])
+    Ax, Bx, Qx = prefsuf(X)
+    Aw, Bw, Qw = prefsuf(Wl)
+    val = (Qx*Qw).sum(-1)
+    gx = np.stack([qc(qmul(qmul(Bx[n], qc(Qw)), Ax[n])) for n in range(L)])
+    gw = np.stack([qmul(qmul(qc(Aw[n]), Qx), qc(Bw[n])) for n in range(L)])
+    return val, np.moveaxis(gx, 0, i), np.moveaxis(gw, 0, i)
+
+
 class Meas:
     def __init__(self, L, group):
         self.L = L
@@ -245,9 +272,7 @@ class Meas:
                 Pw = Qw[..., 0]
                 gPx = qmul(qc(Qx), x[i])                       # grad of Re Q^x(y) wrt x_i(y)
                 gPw = qmul(qc(Qw), w[i])
-                st = (Qx*Qw).sum(-1)                           # Re(Q^x Q^w^dag) = <Q^x, Q^w>
-                g_st_x = qmul(qmul(Qw, qc(Qx)), x[i])
-                g_st_w = qmul(qmul(Qx, qc(Qw)), w[i])
+                st, g_st_x, g_st_w = strip_line(x[i], w[i], i)
                 # line sums: every line counted L times when summing over all y; divide by L
                 G = np.zeros((4, 2, 3, L, L, L, 4))
                 G[0, X_, i] = g_st_x
@@ -256,7 +281,7 @@ class Meas:
                 G[1, W_, i] = Px[..., None]*gPw
                 G[2, X_, i] = 2*Px[..., None]*gPx
                 G[3, W_, i] = 2*Pw[..., None]*gPw
-                vals += [st.sum()/L, (Px*Pw).sum()/L, (Px**2).sum()/L, (Pw**2).sum()/L]
+                vals += [st.sum(), (Px*Pw).sum()/L, (Px**2).sum()/L, (Pw**2).sum()/L]
                 grads += [G[0], G[1], G[2], G[3]]
                 mx, mw = Px.sum()/(L*L2), Pw.sum()/(L*L2)
                 gx = np.zeros((2, 3, L, L, L, 4))
@@ -270,6 +295,8 @@ class Meas:
             Ga = self.project(np.array(grads), links)
             Xa = Ga.reshape(len(vals), -1)
             R["S0e"] = (np.array(vals), Xa @ Xa.T)
+            if getattr(self, "debug", False):
+                self.dbg = {"S0e": (np.array(vals), Xa.copy())}
             # ---- S0o: 8 odd polynomials in (M^x_i, M^w_i), averaged over i (3 copies)
             m2s, gs, m1s = 0, 0, 0
             for i in range(3):
@@ -277,6 +304,8 @@ class Meas:
                 v = np.array([a, b, a**3, b**3, a*a*b, a*b*b, a**5, b**5])
                 g = np.array([ga, gb, 3*a*a*ga, 3*b*b*gb, 2*a*b*ga + a*a*gb, b*b*ga + 2*a*b*gb, 5*a**4*ga, 5*b**4*gb])
                 g = self.project(g, links).reshape(8, -1)
+                if getattr(self, "debug", False) and i == 0:
+                    self.dbg["S0o"] = (v.copy(), g.copy())
                 m2s = m2s + np.outer(v, v)/3
                 gs = gs + (g @ g.T)/3
             R["S0o"] = (None, m2s, gs)
@@ -293,6 +322,9 @@ class Meas:
                     grads.append(self.grad_k(pcs, kv))
                 vals = np.array(vals)
                 Gc = self.project(np.array(grads), links).reshape(len(keys), -1)
+                if getattr(self, "debug", False) and j == 1:
+                    self.dbg["S1e-re"] = (vals.real.copy(), Gc.real.copy())
+                    self.dbg["S1e-im"] = (vals.imag.copy(), Gc.imag.copy())
                 for part in (np.real, np.imag):
                     vv = part(vals)
                     XX = part(Gc)
@@ -315,6 +347,9 @@ class Meas:
                     G[0, X_, i] = ph[..., None]*gPx
                     G[1, W_, i] = ph[..., None]*gPw
                     G = self.project(G, links).reshape(2, -1)
+                    if getattr(self, "debug", False) and (i, j) == (2, 0):
+                        self.dbg["S1o-re"] = (vals.real.copy(), G.real.copy())
+                        self.dbg["S1o-im"] = (vals.imag.copy(), G.imag.copy())
                     for part in (np.real, np.imag):
                         vv = part(vals)
                         XX = part(G)
@@ -338,14 +373,17 @@ class Meas:
                 if part == "c":
                     for i in range(3):
                         Qx, Qw = win[(X_, i)], win[(W_, i)]
-                        st = (Qx*Qw).sum(-1)
+                        st, gsx, gsw = strip_line(x[i], w[i], i)
                         G = np.zeros((2, 3, L, L, L, 4))
-                        G[X_, i] = qmul(qmul(Qw, qc(Qx)), x[i])
-                        G[W_, i] = qmul(qmul(Qx, qc(Qw)), w[i])
-                        vals.append(st.sum()/L)
+                        G[X_, i] = gsx
+                        G[W_, i] = gsw
+                        vals.append(st.sum())
                         grads.append(G)
                 Ga = self.project(np.array(grads), links).reshape(len(vals), -1)
                 R[name] = (np.array(vals), Ga @ Ga.T) if part == "c" else (None, np.outer(vals, vals), Ga @ Ga.T)
+                if getattr(self, "debug", False):
+                    self.dbg = getattr(self, "dbg", {})
+                    self.dbg[name] = (np.array(vals), Ga.copy())
             for part, name in (("c", "U1c"), ("s", "U1s")):
                 m2s, gs = 0, 0
                 for j in range(3):
@@ -359,6 +397,9 @@ class Meas:
                         grads.append(self.grad_k(pcs, kv))
                     vals = np.array(vals)
                     Gc = self.project(np.array(grads), links).reshape(len(keys), -1)
+                    if getattr(self, "debug", False) and j == 2:
+                        self.dbg[name+"-re"] = (vals.real.copy(), Gc.real.copy())
+                        self.dbg[name+"-im"] = (vals.imag.copy(), Gc.imag.copy())
                     for pp in (np.real, np.imag):
                         vv = pp(vals)
                         XX = pp(Gc)
@@ -377,6 +418,8 @@ class Meas:
                 G[2, W_, i] = qmul(qc(Qw), w[i])
                 G[3, W_, i] = qmul(qmul(np.broadcast_to(e3, Qw.shape), qc(Qw)), w[i])
                 G = self.project(G, links).reshape(4, -1)
+                if getattr(self, "debug", False) and i == 1:
+                    self.dbg["U0w"] = (vals.copy(), G.copy())
                 m2s = m2s + np.outer(vals, vals)/3
                 gs = gs + (G @ G.T)/3
             R["U0w"] = (None, m2s, gs)
@@ -436,6 +479,76 @@ class Lattice:
         return x, w
 
 
+def slice_series(lat, meas):
+    """per slice t: SU(2): [sum of space-like plaquettes, M_0, M_1, M_2] (M_i = mean winding line);
+    U(1): [sum cos plaquettes, B(k_min) for (j, plane containing j) x 6 (complex), M_0, M_1, M_2 (complex)]."""
+    L = lat.L
+    out = []
+    for t in range(lat.Nt):
+        q = lat.quat(t)
+        x = [q[..., d+1, :] for d in range(3)]
+        row = [0.0]
+        Wp = {}
+        for (i, j) in PLANES:
+            W = qmul(qmul(x[i], sh(x[j], ev(i))), qmul(qc(sh(x[i], ev(j))), qc(x[j])))
+            Wp[(i, j)] = W
+            row[0] += W[..., 0].sum()
+        if lat.group == "u1":
+            for j in range(3):
+                for (a, b) in PLANES:
+                    if j in (a, b):
+                        row.append((Wp[(a, b)][..., 3]*meas.kph[j]).sum())
+        for i in range(3):
+            Q = x[i].copy()
+            for n in range(1, L):
+                Q = qmul(Q, sh(x[i], ev(i, n)))
+            row.append(Q[..., 0].sum()/L**3 + (1j*Q[..., 3].sum()/L**3 if lat.group == "u1" else 0))
+        out.append(row)
+    return np.array(out, complex if lat.group == "u1" else float)
+
+
+def gap_analysis(ser, Nt, group, edge=2, tmax=6, nblk=20):
+    """time correlators over the slab, both slices at distance >= edge from the ends; effective energies."""
+    n = ser.shape[0]
+    chans = {"plaq0": [0]}
+    if group == "su2":
+        chans["wind"] = [1, 2, 3]
+    else:
+        chans["Bkmin"] = list(range(1, 7))
+        chans["wind"] = [7, 8, 9]
+
+    def corr(sel):
+        out = {}
+        for nm, cols in chans.items():
+            Z = ser[sel][:, :, cols]
+            if nm == "plaq0":
+                Z = Z - Z.mean(0, keepdims=True)
+            cs = []
+            for tau in range(tmax+1):
+                ts = [t for t in range(edge, Nt-edge-tau)]
+                v = np.mean([np.real(Z[:, t, :]*np.conj(Z[:, t+tau, :])).mean() for t in ts])
+                cs.append(v)
+            out[nm] = np.array(cs)
+        return out
+    full = corr(np.ones(n, bool))
+    blocks = np.array_split(np.arange(n), nblk)
+    jk = []
+    for b in blocks:
+        sel = np.ones(n, bool)
+        sel[b] = False
+        jk.append(corr(sel))
+    res = {}
+    for nm in chans:
+        c = full[nm]
+        with np.errstate(all="ignore"):
+            e = np.log(c[:-1]/c[1:])
+            ej = np.array([np.log(j[nm][:-1]/j[nm][1:]) for j in jk])
+        nb = len(blocks)
+        err = np.sqrt((nb-1)/nb*np.nansum((ej-np.nanmean(ej, 0))**2, 0))
+        res[nm] = dict(C=c.tolist(), Eeff=e.tolist(), Eeff_err=err.tolist())
+    return res
+
+
 # ------------------------------------------------------------------ analysis
 def top_gev(C, G, rel=1e-9):
     e, V = np.linalg.eigh(0.5*(G+G.T))
@@ -488,7 +601,66 @@ def analyse(data, nblk=20):
     return res
 
 
+def selftest(L=4, seed=1, eps=1e-5):
+    """finite-difference check of the analytic tangent gradients of every k = 0 observable (S0e for SU(2);
+    U0c and U0s for U(1)) on random links, along a random tangent field."""
+    rng = np.random.default_rng(seed)
+    for group in ("su2", "u1"):
+        meas = Meas(L, group)
+        meas.debug = True
+        if group == "su2":
+            x = [rng.normal(size=(L, L, L, 4)) for _ in range(3)]
+            w = [rng.normal(size=(L, L, L, 4)) for _ in range(3)]
+            x = [a/np.linalg.norm(a, axis=-1, keepdims=True) for a in x]
+            w = [a/np.linalg.norm(a, axis=-1, keepdims=True) for a in w]
+        else:
+            def emb(th):
+                q = np.zeros(th.shape + (4,))
+                q[..., 0] = np.cos(th)
+                q[..., 3] = np.sin(th)
+                return q
+            x = [emb(rng.uniform(-np.pi, np.pi, (L, L, L))) for _ in range(3)]
+            w = [emb(rng.uniform(-np.pi, np.pi, (L, L, L))) for _ in range(3)]
+        links = [x, w]
+        z = []
+        for sl in range(2):
+            for d in range(3):
+                u = links[sl][d]
+                v = rng.normal(size=u.shape)
+                if group == "u1":
+                    v[..., 1:3] = 0.0
+                v = v-(v*u).sum(-1, keepdims=True)*u
+                z.append(v)
+        Z = np.stack(z).reshape(2, 3, L, L, L, 4)
+
+        def moved(e):
+            out = [[None]*3, [None]*3]
+            for sl in range(2):
+                for d in range(3):
+                    u, v = links[sl][d], Z[sl, d]
+                    nv = np.linalg.norm(v, axis=-1, keepdims=True)
+                    out[sl][d] = np.cos(e*nv)*u+np.sin(e*nv)*v/np.where(nv > 0, nv, 1)
+            return out
+        meas.measure(x, w)
+        dbg = dict(meas.dbg)
+        a1 = moved(eps)
+        meas.measure(a1[0], a1[1])
+        dp = dict(meas.dbg)
+        a2 = moved(-eps)
+        meas.measure(a2[0], a2[1])
+        dm = dict(meas.dbg)
+        for name, (v0, Xg) in dbg.items():
+            fd = (dp[name][0]-dm[name][0])/(2*eps)
+            an = Xg @ Z.reshape(-1)
+            err = np.abs(fd-an).max()/max(1e-12, np.abs(an).max())
+            print(f"selftest {group} {name}: n_obs {len(v0)}, max rel. error of directional derivative {err:.2e}",
+                  "PASS" if err < 1e-5 else "FAIL", flush=True)
+
+
 def main():
+    if "--selftest" in sys.argv:
+        selftest()
+        return
     ap = argparse.ArgumentParser()
     ap.add_argument("--lib", required=True)
     ap.add_argument("--group", choices=["su2", "u1"], default="su2")
@@ -514,6 +686,7 @@ def main():
     log(f"thermalised, {(time.time()-t1)/max(a.ntherm,1)*1e3:.1f} ms per sweep")
     pairs = [a.K + j for j in range(2*a.m+1)]
     data = None
+    series = []
     stats = []
     tm = 0.0
     tsw = 0.0
@@ -552,6 +725,7 @@ def main():
             data[k][1].append(v[1])
             data[k][2].append(v[2])
         stats.append(st)
+        series.append(slice_series(lat, meas))
         nm += 1
         if (r+1) % max(1, a.nmeas//10) == 0:
             log(f"meas {r+1}/{a.nmeas}: sweep {tsw/nm*1e3:.0f} ms/meas, measure {tm/nm*1e3:.0f} ms/meas")
@@ -560,13 +734,16 @@ def main():
             break
     D = {k: (None if v[0] is None else np.array(v[0]), np.array(v[1]), np.array(v[2])) for k, v in data.items()}
     res = analyse(D)
+    gaps = gap_analysis(np.array(series), Nt, a.group)
     stats = np.array(stats)
     ac = [np.corrcoef(D[k][1][:-1].reshape(nm-1, -1).sum(1), D[k][1][1:].reshape(nm-1, -1).sum(1))[0, 1] if nm > 3 else 0
           for k in D]
     out = dict(args=vars(a), nmeas=nm, Nt=Nt, stats_mean=stats.mean(0).tolist(), stats_err=(stats.std(0)/np.sqrt(nm)).tolist(),
-               lag1_trace_m2=dict(zip(D.keys(), [float(c) for c in ac])), sectors=res,
+               lag1_trace_m2=dict(zip(D.keys(), [float(c) for c in ac])), sectors=res, gaps=gaps,
                ms_per_sweep=tsw/nm/a.nsep*1e3, ms_per_meas=tm/nm*1e3, peak_rss_mb=rss()/1e6, wall_s=time.time()-T0)
-    print(json.dumps({k: v for k, v in out.items() if k != "sectors"}))
+    print(json.dumps({k: v for k, v in out.items() if k not in ("sectors", "gaps")}))
+    for nm, g in gaps.items():
+        print(f"  gap {nm:6s} Eeff(tau) " + " ".join(f"{e:.3f}+-{er:.3f}" for e, er in zip(g["Eeff"], g["Eeff_err"])))
     for name, r in res.items():
         print(f"  {name:4s} top {r['top']:.5f} +- {r['err']:.5f} (bias-corrected {r['top_bc']:.5f}); "
               f"max single {max(r['diag']):.5f}")

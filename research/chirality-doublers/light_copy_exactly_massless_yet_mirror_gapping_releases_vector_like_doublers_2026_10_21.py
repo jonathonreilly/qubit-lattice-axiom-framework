@@ -12,7 +12,7 @@ one-block stand-in (the mirror top form, 8 modes), and a 1+1D two-copy chain wit
 Labels: [T] theorem / exact finite computation, [F] finite diagnostic, [E] estimate, [M] against measurement.
 Cited, not rederived: Nielsen-Ninomiya, 't Hooft matching, Golterman-Shamir arXiv:2505.20436 (generalised NN, Sec. IV)."""
 from __future__ import annotations
-AUDIT_INPUT_PATHS = ('docs/LIGHT_COPY_EXACTLY_MASSLESS_YET_MIRROR_GAPPING_RELEASES_VECTOR_LIKE_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md',)
+AUDIT_INPUT_PATHS = ('research/chirality-doublers/LIGHT_COPY_EXACTLY_MASSLESS_YET_MIRROR_GAPPING_RELEASES_VECTOR_LIKE_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md',)
 
 AUDIT_TIMEOUT_SEC = 120
 

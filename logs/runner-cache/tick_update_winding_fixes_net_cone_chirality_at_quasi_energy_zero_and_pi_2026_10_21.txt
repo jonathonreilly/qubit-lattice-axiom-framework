@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
-runner: scripts/tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.py
-runner_sha256: 76e1ddfd9d923f67e4c20d54d4b961b0edb75a290cc08467e7c0760afe48dfcc
-input_fingerprint_sha256: d178c61ca6738a7466e9eef31d85f717279ba98708cf70ed7b1cd1c2b7c0b670
+runner: research/chirality-doublers/tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.py
+runner_sha256: 3e1e27d8112c1f1c704fd2a2b2f7a3b31b30e8798cd8bb627de3d2a9acec83a5
+input_fingerprint_sha256: 45d8d203928c362097ee59a9f2847da2beda18b307d5b5e9be12404355eaa234
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.19
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
 [PASS] split-step S_z S_y S_x: 8 cones at quasi-energy 0 (4 of each chirality) and 8 at pi (4 of each)  0: +4/-4; pi: +4/-4; corners carry +1 at both 0 ([1, 1, 1, 1]) and pi ([1, 1, 1, 1]), the pi/2-points -1
@@ -27,7 +27,7 @@ theorem: for an SU(2) walk the sums of local degrees of the preimages of +I and 
 NOT CHECKED, and read by no statement here: the source cited the vanishing of SK1 of the Laurent ring C[Z^3] for
   "every finite-range walk has W3 = 0"; no exact theorem statement or check record is carried, so that claim is not made.
 supplied: the quasi-local walk, its parameter m and its exponential tail; no adopted tick update or matter content.
-elapsed_seconds 1.1
+elapsed_seconds 0.7
 
 TOTAL: PASS=13 FAIL=0
 

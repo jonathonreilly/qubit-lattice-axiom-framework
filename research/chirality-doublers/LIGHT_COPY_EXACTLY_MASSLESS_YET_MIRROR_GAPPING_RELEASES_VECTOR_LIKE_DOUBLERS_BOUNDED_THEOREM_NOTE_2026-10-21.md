@@ -5,15 +5,16 @@ claim_scope: "For the supplied block Hamiltonian H' with a supplied copy-selecti
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
-runner: scripts/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py
+runner: research/chirality-doublers/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py
 ---
 
 # The light copy stays exactly massless, yet gapping the mirror releases vector-like doublers
 
 Claim type: bounded_theorem.
-Primary runner: `scripts/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py`.
+Primary runner: `research/chirality-doublers/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py`.
+Location (2026-11-14): moved from `docs/` to `research/chirality-doublers/` with its runner, following the second hold's finding R8 and the SETTINGS row "Research sections" (mathematics on a supplied model in which no framework axiom enters). The move changes no statement. The frontmatter labels, such as `bounded_theorem`, are the source's working labels and grant nothing here; see the [section README](README.md).
 
-The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. The chirality route that the source notes attribute to "the register" gaps one copy (the mirror) symmetrically and keeps the other (the light copy); here "the register" means those rules as the source notes state them, not the current register text, and statements that use them are conditional on them. This note asks whether the light copy stays massless and whether it stays chiral. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose neither H' nor the mirror term.
+The [candidate-law register](../../docs/CANDIDATE_LAWS.md) has zero premise weight. The chirality route that the source notes attribute to "the register" gaps one copy (the mirror) symmetrically and keeps the other (the light copy); here "the register" means those rules as the source notes state them, not the current register text, and statements that use them are conditional on them. This note asks whether the light copy stays massless and whether it stays chiral. The [minimal axioms](../../docs/MINIMAL_AXIOMS_2026-06-29.md) choose neither H' nor the mirror term.
 
 ## Statement
 

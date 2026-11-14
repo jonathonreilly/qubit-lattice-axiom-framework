@@ -10,6 +10,8 @@ claim_scope: "Historical navigation map, with no claim of its own, of the 21 sou
 
 **What this file is.** A map of the 21 notes, runners and caches carried in this PR, and a historical index of the 36 logged source PRs that are not carried. It draws no conclusion of its own. Each carried note is a separate claim surface; read it, not this map. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) are not changed, and nothing here is adopted.
 
+**Placement (2026-11-14).** Notes that do mathematics on a supplied model, with no framework axiom in a proof step, live in the research section [`research/chirality-doublers/`](../research/chirality-doublers/README.md), which states each part's verification and open obligations; there they have no ledger rows. The move follows the second hold's finding R8 and the SETTINGS row "Research sections". Notes that compare a model with the framework axioms stay under `docs/`. Each section below links the note where it now lives.
+
 **Standing.** Every carried statement is argued, not checked. A landing review held this PR on 2026-11-13 (findings 1-8) and again on 2026-11-14 (findings R1-R9); the repairs are listed per note below and in corrections 12 and 13. Each repaired statement waits for a fresh check.
 
 **Type change (2026-11-14).** This file was typed `bounded_theorem`. It then held a synthesis with conclusions of its own and verbatim copies of the carried notes, and no runner covered that content. The synthesis is removed, and the copies are replaced by links and the notes' current scopes, so that the map cannot drift from the notes. With no statement of its own left, the file is typed `meta`.
@@ -46,9 +48,9 @@ For each carried note: its current claim_scope, verbatim; the kind of statement;
 
 **Depends on.** No outside input is read. The source's citation of the vanishing of SK1 of the Laurent ring C[Z^3] is listed as unchecked and no conclusion uses it. Upstream: the minimal axioms and the candidate-law register (zero premise weight; neither fixes a tick). No other PR.
 
-**Carried note.** [TICK_UPDATE_WINDING_FIXES_NET_CONE_CHIRALITY_AT_QUASI_ENERGY_ZERO_AND_PI_BOUNDED_THEOREM_NOTE_2026-10-21.md](TICK_UPDATE_WINDING_FIXES_NET_CONE_CHIRALITY_AT_QUASI_ENERGY_ZERO_AND_PI_BOUNDED_THEOREM_NOTE_2026-10-21.md)
+**Carried note.** [TICK_UPDATE_WINDING_FIXES_NET_CONE_CHIRALITY_AT_QUASI_ENERGY_ZERO_AND_PI_BOUNDED_THEOREM_NOTE_2026-10-21.md](../research/chirality-doublers/TICK_UPDATE_WINDING_FIXES_NET_CONE_CHIRALITY_AT_QUASI_ENERGY_ZERO_AND_PI_BOUNDED_THEOREM_NOTE_2026-10-21.md)
 
-**Carried runner and cache.** [`tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.py`](../scripts/tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.py); cache [`tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.txt`](../logs/runner-cache/tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.txt); original source note at head `6fe5fbe995` of branch `claude/toe-chirality-20261021`: `docs/TICK_UPDATE_WINDING_FIXES_NET_CONE_CHIRALITY_AT_QUASI_ENERGY_ZERO_AND_PI_BOUNDED_THEOREM_NOTE_2026-10-21.md`.
+**Carried runner and cache.** [`tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.py`](../research/chirality-doublers/tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.py); cache [`tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.txt`](../logs/runner-cache/tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.txt); original source note at head `6fe5fbe995` of branch `claude/toe-chirality-20261021`: `docs/TICK_UPDATE_WINDING_FIXES_NET_CONE_CHIRALITY_AT_QUASI_ENERGY_ZERO_AND_PI_BOUNDED_THEOREM_NOTE_2026-10-21.md`.
 
 ### #9895: record and feedback histories of block ticks have zero flow index
 
@@ -62,9 +64,9 @@ For each carried note: its current claim_scope, verbatim; the kind of statement;
 
 **Depends on.** Cited, unverified, and read only where the note makes the statement conditional: GNVW integrality and Avron-Seiler-Simon (the averaging bound), Stinespring uniqueness (the register bypass). Uses the periodic-history winding result of #9863 (W3 = 0 for products of coins and shifts) and the same quasi-local control walk. The record, following and response laws are read as the note states them from the candidate-law register; they are not in the current register text (see the section "Corrected or replaced claims").
 
-**Carried note.** [RECORD_AND_FEEDBACK_HISTORIES_OF_BLOCK_TICKS_HAVE_ZERO_FLOW_INDEX_BOUNDED_THEOREM_NOTE_2026-10-21.md](RECORD_AND_FEEDBACK_HISTORIES_OF_BLOCK_TICKS_HAVE_ZERO_FLOW_INDEX_BOUNDED_THEOREM_NOTE_2026-10-21.md)
+**Carried note.** [RECORD_AND_FEEDBACK_HISTORIES_OF_BLOCK_TICKS_HAVE_ZERO_FLOW_INDEX_BOUNDED_THEOREM_NOTE_2026-10-21.md](../research/chirality-doublers/RECORD_AND_FEEDBACK_HISTORIES_OF_BLOCK_TICKS_HAVE_ZERO_FLOW_INDEX_BOUNDED_THEOREM_NOTE_2026-10-21.md)
 
-**Carried runner and cache.** [`record_and_feedback_histories_of_block_ticks_have_zero_flow_index_2026_10_21.py`](../scripts/record_and_feedback_histories_of_block_ticks_have_zero_flow_index_2026_10_21.py); cache [`record_and_feedback_histories_of_block_ticks_have_zero_flow_index_2026_10_21.txt`](../logs/runner-cache/record_and_feedback_histories_of_block_ticks_have_zero_flow_index_2026_10_21.txt); original source note at head `607d10366c` of branch `claude/toe-records-chirality-20261021`: `docs/RECORD_AND_FEEDBACK_HISTORIES_OF_BLOCK_TICKS_HAVE_ZERO_FLOW_INDEX_BOUNDED_THEOREM_NOTE_2026-10-21.md`.
+**Carried runner and cache.** [`record_and_feedback_histories_of_block_ticks_have_zero_flow_index_2026_10_21.py`](../research/chirality-doublers/record_and_feedback_histories_of_block_ticks_have_zero_flow_index_2026_10_21.py); cache [`record_and_feedback_histories_of_block_ticks_have_zero_flow_index_2026_10_21.txt`](../logs/runner-cache/record_and_feedback_histories_of_block_ticks_have_zero_flow_index_2026_10_21.txt); original source note at head `607d10366c` of branch `claude/toe-records-chirality-20261021`: `docs/RECORD_AND_FEEDBACK_HISTORIES_OF_BLOCK_TICKS_HAVE_ZERO_FLOW_INDEX_BOUNDED_THEOREM_NOTE_2026-10-21.md`.
 
 ### #9896: wall, pump and mirror-gapping routes under the candidate laws
 
@@ -78,9 +80,9 @@ For each carried note: its current claim_scope, verbatim; the kind of statement;
 
 **Depends on.** Uses the winding result of #9863 (zoom keeps W3). Same tick algebra as #9884 and #9905 (both logged); those notes are not named by this one. The register update is as the note states it.
 
-**Carried note.** [WALL_PUMP_AND_MIRROR_GAPPING_ROUTES_TO_CHIRALITY_UNDER_THE_CANDIDATE_LAWS_BOUNDED_THEOREM_NOTE_2026-10-21.md](WALL_PUMP_AND_MIRROR_GAPPING_ROUTES_TO_CHIRALITY_UNDER_THE_CANDIDATE_LAWS_BOUNDED_THEOREM_NOTE_2026-10-21.md)
+**Carried note.** [WALL_PUMP_AND_MIRROR_GAPPING_ROUTES_TO_CHIRALITY_UNDER_THE_CANDIDATE_LAWS_BOUNDED_THEOREM_NOTE_2026-10-21.md](../research/chirality-doublers/WALL_PUMP_AND_MIRROR_GAPPING_ROUTES_TO_CHIRALITY_UNDER_THE_CANDIDATE_LAWS_BOUNDED_THEOREM_NOTE_2026-10-21.md)
 
-**Carried runner and cache.** [`wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_2026_10_21.py`](../scripts/wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_2026_10_21.py); cache [`wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_2026_10_21.txt`](../logs/runner-cache/wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_2026_10_21.txt); original source note at head `4663f78785` of branch `claude/toe-chiral-wall-20261021`: `docs/WALL_PUMP_AND_MIRROR_GAPPING_ROUTES_TO_CHIRALITY_UNDER_THE_CANDIDATE_LAWS_BOUNDED_THEOREM_NOTE_2026-10-21.md`.
+**Carried runner and cache.** [`wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_2026_10_21.py`](../research/chirality-doublers/wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_2026_10_21.py); cache [`wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_2026_10_21.txt`](../logs/runner-cache/wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_2026_10_21.txt); original source note at head `4663f78785` of branch `claude/toe-chiral-wall-20261021`: `docs/WALL_PUMP_AND_MIRROR_GAPPING_ROUTES_TO_CHIRALITY_UNDER_THE_CANDIDATE_LAWS_BOUNDED_THEOREM_NOTE_2026-10-21.md`.
 
 ### #9908: octree ladder gives one fine chirality only by a swindle with unbounded range
 
@@ -110,9 +112,9 @@ For each carried note: its current claim_scope, verbatim; the kind of statement;
 
 **Depends on.** H' = (i/2)[W_o, W_e], as in #9905 (logged), per this note's runner; the quoted text does not define it by a formula. The cell chains are those of #9910 (logged). Cites Nielsen-Ninomiya, anomaly matching and Golterman-Shamir (arXiv:2505.20436).
 
-**Carried note.** [LIGHT_COPY_EXACTLY_MASSLESS_YET_MIRROR_GAPPING_RELEASES_VECTOR_LIKE_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md](LIGHT_COPY_EXACTLY_MASSLESS_YET_MIRROR_GAPPING_RELEASES_VECTOR_LIKE_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md)
+**Carried note.** [LIGHT_COPY_EXACTLY_MASSLESS_YET_MIRROR_GAPPING_RELEASES_VECTOR_LIKE_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md](../research/chirality-doublers/LIGHT_COPY_EXACTLY_MASSLESS_YET_MIRROR_GAPPING_RELEASES_VECTOR_LIKE_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md)
 
-**Carried runner and cache.** [`light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py`](../scripts/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py); cache [`light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.txt`](../logs/runner-cache/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.txt); original source note at head `314fa5e93d` of branch `claude/toe-light-protection-20261021`: `docs/LIGHT_COPY_EXACTLY_MASSLESS_YET_MIRROR_GAPPING_RELEASES_VECTOR_LIKE_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md`.
+**Carried runner and cache.** [`light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py`](../research/chirality-doublers/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py); cache [`light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.txt`](../logs/runner-cache/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.txt); original source note at head `314fa5e93d` of branch `claude/toe-light-protection-20261021`: `docs/LIGHT_COPY_EXACTLY_MASSLESS_YET_MIRROR_GAPPING_RELEASES_VECTOR_LIKE_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md`.
 
 ### #9971: rung ladder is a domain-wall direction with exact inflow but bounded speed gives a charged tower
 
@@ -466,17 +468,18 @@ These entries record how the source PRs corrected one another, as their notes re
 - R5 (#10041): node degeneracy gives no Weyl dispersion or persistence (a constant scalar walk is T-covariant with none); FREEZE's node Weyls are nondegenerate by computation.
 - R6 (#9992): the -g ground energy, the gap g and det(M)^4 positivity are scoped to the SU(4) toy; the Spin(10) singlet count is separate from its unmeasured phase.
 - R7 (all carried notes that compare with the axioms): comparisons rematched to `docs/MINIMAL_AXIOMS_2026-06-29.md` on origin/main (Admissibility is a neighborhood rule and not a dynamics axiom; there is no update axiom; the Lattice and Qubit comparisons stand); owner intent not recorded in the repository is removed. The approved scale-reference primitive fixes units only; lattice spacings in estimates are supplied values.
+- R8 (#9863, #9895, #9896, #9911): moved, with their runners, to [`research/chirality-doublers/`](../research/chirality-doublers/README.md), whose README lists each part's verification (its runner as the compute check) and open obligations. The move follows R8 and the SETTINGS row "Research sections"; it changes no statement and weakens no check. The caches stay at `logs/runner-cache/`.
 - R9 (all carried notes): each statement that reads an outside, unverified input names it as a condition, or the input is removed from the conclusions; each note lists them as open obligations. The SK1(C[Z^3]) input is no longer read (#9863, #9896). Recorded production data (#9992, #10004, #10085) are labelled as reported observations, not reproduced. The three links to absent notes (#9980, #9983, #9994) are replaced by provenance text.
 
 ## Carried files
 
 Each kept result's note, runner and cache are carried from its source PR and were repaired on 2026-11-14 as listed above.
 
-- #9863: [TICK_UPDATE_WINDING_FIXES_NET_CONE_CHIRALITY_AT_QUASI_ENERGY_ZERO_AND_PI_BOUNDED_THEOREM_NOTE_2026-10-21.md](TICK_UPDATE_WINDING_FIXES_NET_CONE_CHIRALITY_AT_QUASI_ENERGY_ZERO_AND_PI_BOUNDED_THEOREM_NOTE_2026-10-21.md)
-- #9895: [RECORD_AND_FEEDBACK_HISTORIES_OF_BLOCK_TICKS_HAVE_ZERO_FLOW_INDEX_BOUNDED_THEOREM_NOTE_2026-10-21.md](RECORD_AND_FEEDBACK_HISTORIES_OF_BLOCK_TICKS_HAVE_ZERO_FLOW_INDEX_BOUNDED_THEOREM_NOTE_2026-10-21.md)
-- #9896: [WALL_PUMP_AND_MIRROR_GAPPING_ROUTES_TO_CHIRALITY_UNDER_THE_CANDIDATE_LAWS_BOUNDED_THEOREM_NOTE_2026-10-21.md](WALL_PUMP_AND_MIRROR_GAPPING_ROUTES_TO_CHIRALITY_UNDER_THE_CANDIDATE_LAWS_BOUNDED_THEOREM_NOTE_2026-10-21.md)
+- #9863: [TICK_UPDATE_WINDING_FIXES_NET_CONE_CHIRALITY_AT_QUASI_ENERGY_ZERO_AND_PI_BOUNDED_THEOREM_NOTE_2026-10-21.md](../research/chirality-doublers/TICK_UPDATE_WINDING_FIXES_NET_CONE_CHIRALITY_AT_QUASI_ENERGY_ZERO_AND_PI_BOUNDED_THEOREM_NOTE_2026-10-21.md)
+- #9895: [RECORD_AND_FEEDBACK_HISTORIES_OF_BLOCK_TICKS_HAVE_ZERO_FLOW_INDEX_BOUNDED_THEOREM_NOTE_2026-10-21.md](../research/chirality-doublers/RECORD_AND_FEEDBACK_HISTORIES_OF_BLOCK_TICKS_HAVE_ZERO_FLOW_INDEX_BOUNDED_THEOREM_NOTE_2026-10-21.md)
+- #9896: [WALL_PUMP_AND_MIRROR_GAPPING_ROUTES_TO_CHIRALITY_UNDER_THE_CANDIDATE_LAWS_BOUNDED_THEOREM_NOTE_2026-10-21.md](../research/chirality-doublers/WALL_PUMP_AND_MIRROR_GAPPING_ROUTES_TO_CHIRALITY_UNDER_THE_CANDIDATE_LAWS_BOUNDED_THEOREM_NOTE_2026-10-21.md)
 - #9908: [OCTREE_LADDER_OF_CUBE_TICKS_GIVES_ONE_FINE_CHIRALITY_ONLY_BY_A_SWINDLE_WITH_UNBOUNDED_RANGE_BOUNDED_THEOREM_NOTE_2026-10-21.md](OCTREE_LADDER_OF_CUBE_TICKS_GIVES_ONE_FINE_CHIRALITY_ONLY_BY_A_SWINDLE_WITH_UNBOUNDED_RANGE_BOUNDED_THEOREM_NOTE_2026-10-21.md)
-- #9911: [LIGHT_COPY_EXACTLY_MASSLESS_YET_MIRROR_GAPPING_RELEASES_VECTOR_LIKE_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md](LIGHT_COPY_EXACTLY_MASSLESS_YET_MIRROR_GAPPING_RELEASES_VECTOR_LIKE_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md)
+- #9911: [LIGHT_COPY_EXACTLY_MASSLESS_YET_MIRROR_GAPPING_RELEASES_VECTOR_LIKE_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md](../research/chirality-doublers/LIGHT_COPY_EXACTLY_MASSLESS_YET_MIRROR_GAPPING_RELEASES_VECTOR_LIKE_DOUBLERS_BOUNDED_THEOREM_NOTE_2026-10-21.md)
 - #9971: [THE_RUNG_LADDER_IS_A_DOMAIN_WALL_DIRECTION_WITH_EXACT_INFLOW_BUT_BOUNDED_SPEED_MAKES_ITS_COARSE_RUNGS_A_CHARGED_TOWER_BOUNDED_THEOREM_NOTE_2026-10-22.md](THE_RUNG_LADDER_IS_A_DOMAIN_WALL_DIRECTION_WITH_EXACT_INFLOW_BUT_BOUNDED_SPEED_MAKES_ITS_COARSE_RUNGS_A_CHARGED_TOWER_BOUNDED_THEOREM_NOTE_2026-10-22.md)
 - #9985: [GRABOWSKA_KAPLAN_FAR_LAYERS_PASS_THE_NIELSEN_NINOMIYA_COUNT_BUT_INDUCE_A_GAUGE_INVARIANT_CUTOFF_SCALE_PHOTON_MASS_ABOVE_THE_SMOOTHING_SCALE_BOUNDED_THEOREM_NOTE_2026-10-22.md](GRABOWSKA_KAPLAN_FAR_LAYERS_PASS_THE_NIELSEN_NINOMIYA_COUNT_BUT_INDUCE_A_GAUGE_INVARIANT_CUTOFF_SCALE_PHOTON_MASS_ABOVE_THE_SMOOTHING_SCALE_BOUNDED_THEOREM_NOTE_2026-10-22.md)
 - #9992: [THE_BLOCK_LOCAL_QUARTIC_GAPS_THE_DIRAC_MIRROR_SYMMETRICALLY_AND_RELEASES_THE_LIGHT_PARTNERS_BOUNDED_THEOREM_NOTE_2026-10-22.md](THE_BLOCK_LOCAL_QUARTIC_GAPS_THE_DIRAC_MIRROR_SYMMETRICALLY_AND_RELEASES_THE_LIGHT_PARTNERS_BOUNDED_THEOREM_NOTE_2026-10-22.md)

@@ -5,15 +5,16 @@ claim_scope: "For the update of the candidate laws register as the source notes 
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
-runner: scripts/wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_2026_10_21.py
+runner: research/chirality-doublers/wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_2026_10_21.py
 ---
 
 # Wall, pump and mirror-gapping routes to chirality under the candidate laws
 
 Claim type: bounded_theorem.
-Primary runner: `scripts/wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_2026_10_21.py`.
+Primary runner: `research/chirality-doublers/wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_2026_10_21.py`.
+Location (2026-11-14): moved from `docs/` to `research/chirality-doublers/` with its runner, following the second hold's finding R8 and the SETTINGS row "Research sections" (mathematics on a supplied model in which no framework axiom enters). The move changes no statement. The frontmatter labels, such as `bounded_theorem`, are the source's working labels and grant nothing here; see the [section README](README.md).
 
-The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. Here "the register", its update, response law and step bound eps < 0.04 are those rules as the source notes state them, not the current register text, and every statement that uses them is conditional on them. This note tests three routes to net chirality against those rules: a domain wall along an internal or zoom coordinate, Floquet pumping between quasi-energy 0 and pi, and gapping the mirror through the response law. None works with the register as written. A wall along a supplied internal index does bind Weyl content at its ends, but only with rules the register does not contain. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose none of the models used.
+The [candidate-law register](../../docs/CANDIDATE_LAWS.md) has zero premise weight. Here "the register", its update, response law and step bound eps < 0.04 are those rules as the source notes state them, not the current register text, and every statement that uses them is conditional on them. This note tests three routes to net chirality against those rules: a domain wall along an internal or zoom coordinate, Floquet pumping between quasi-energy 0 and pi, and gapping the mirror through the response law. None works with the register as written. A wall along a supplied internal index does bind Weyl content at its ends, but only with rules the register does not contain. The [minimal axioms](../../docs/MINIMAL_AXIOMS_2026-06-29.md) choose none of the models used.
 
 ## Statement
 

@@ -5,15 +5,16 @@ claim_scope: "For supplied two-component SU(2) walks on Z^3, the sums of local d
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
-runner: scripts/tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.py
+runner: research/chirality-doublers/tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.py
 ---
 
 # The winding of a tick update fixes the net local degree at quasi-energy 0 and pi, and the net cone chirality when the cones are nondegenerate
 
 Claim type: bounded_theorem.
-Primary runner: `scripts/tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.py`.
+Primary runner: `research/chirality-doublers/tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.py`.
+Location (2026-11-14): moved from `docs/` to `research/chirality-doublers/` with its runner, following the second hold's finding R8 and the SETTINGS row "Research sections" (mathematics on a supplied model in which no framework axiom enters). The move changes no statement. The frontmatter labels, such as `bounded_theorem`, are the source's working labels and grant nothing here; see the [section README](README.md).
 
-The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight, and no law there fixes the tick update. This note asks how far a two-component tick on Z^3 can carry an unpaired Weyl cone. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose none of the walks used.
+The [candidate-law register](../../docs/CANDIDATE_LAWS.md) has zero premise weight, and no law there fixes the tick update. This note asks how far a two-component tick on Z^3 can carry an unpaired Weyl cone. The [minimal axioms](../../docs/MINIMAL_AXIOMS_2026-06-29.md) choose none of the walks used.
 
 ## The degree theorem
 

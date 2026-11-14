@@ -5,15 +5,16 @@ claim_scope: "For supplied finite-range block ticks and frames on Z and Z^3, eve
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
-runner: scripts/record_and_feedback_histories_of_block_ticks_have_zero_flow_index_2026_10_21.py
+runner: research/chirality-doublers/record_and_feedback_histories_of_block_ticks_have_zero_flow_index_2026_10_21.py
 ---
 
 # Record and feedback histories of block ticks have zero flow index
 
 Claim type: bounded_theorem.
-Primary runner: `scripts/record_and_feedback_histories_of_block_ticks_have_zero_flow_index_2026_10_21.py`.
+Primary runner: `research/chirality-doublers/record_and_feedback_histories_of_block_ticks_have_zero_flow_index_2026_10_21.py`.
+Location (2026-11-14): moved from `docs/` to `research/chirality-doublers/` with its runner, following the second hold's finding R8 and the SETTINGS row "Research sections" (mathematics on a supplied model in which no framework axiom enters). The move changes no statement. The frontmatter labels, such as `bounded_theorem`, are the source's working labels and grant nothing here; see the [section README](README.md).
 
-The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. Here "the register", "the update law" and its "record, following and response laws" are those rules as the source notes state them; the current register text does not contain them, and every statement that uses them is conditional on them. Those laws break the translation invariance, the fixed tick and the state-independent update that the free-circuit winding result assumes. This note asks whether that lets the layer carry net chirality. It does not. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose none of the models used.
+The [candidate-law register](../../docs/CANDIDATE_LAWS.md) has zero premise weight. Here "the register", "the update law" and its "record, following and response laws" are those rules as the source notes state them; the current register text does not contain them, and every statement that uses them is conditional on them. Those laws break the translation invariance, the fixed tick and the state-independent update that the free-circuit winding result assumes. This note asks whether that lets the layer carry net chirality. It does not. The [minimal axioms](../../docs/MINIMAL_AXIOMS_2026-06-29.md) choose none of the models used.
 
 ## Statement
 

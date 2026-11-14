@@ -15,7 +15,7 @@ No matter content, no physical chirality and no adopted tick update is establish
 from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 120
-AUDIT_INPUT_PATHS = ('docs/TICK_UPDATE_WINDING_FIXES_NET_CONE_CHIRALITY_AT_QUASI_ENERGY_ZERO_AND_PI_BOUNDED_THEOREM_NOTE_2026-10-21.md',)
+AUDIT_INPUT_PATHS = ('research/chirality-doublers/TICK_UPDATE_WINDING_FIXES_NET_CONE_CHIRALITY_AT_QUASI_ENERGY_ZERO_AND_PI_BOUNDED_THEOREM_NOTE_2026-10-21.md',)
 
 import sys, os, signal, time, itertools
 os.environ['OPENBLAS_NUM_THREADS'] = '1'

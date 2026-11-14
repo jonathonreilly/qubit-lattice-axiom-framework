@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
-runner: scripts/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py
-runner_sha256: ae02eec4264027de034e3f0e4cad75c5423a58f7445620c23e0ae0a1b86efa3d
-input_fingerprint_sha256: fe85ff245930ba283309835f76d5bfa64ace25d77f475d58b185b2d08c42520d
+runner: research/chirality-doublers/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py
+runner_sha256: d385ca3d26d731d64f9686baa92daf95ea25b088c7f034a0de36410fcdc67567
+input_fingerprint_sha256: 871509943ecf6466bdec1c8dc65e552406e58ddc565799a36afb05d8c5e22861
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 2.39

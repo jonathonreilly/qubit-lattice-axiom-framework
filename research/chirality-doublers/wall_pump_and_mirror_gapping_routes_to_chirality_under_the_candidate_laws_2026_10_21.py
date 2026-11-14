@@ -8,7 +8,7 @@ B  Floquet: index of a product of two reflections; the step-pi/2 tick W_o W_e ha
 C  CL-5: total mode number N is exact; mixed anomalies N-Y^2, N-SU(2)^2 of one family; mirror reflection M = R_odd I.
 D  estimates against measurement.  Supplied models, finite diagnostics; no physical identification."""
 from __future__ import annotations
-AUDIT_INPUT_PATHS = ('docs/WALL_PUMP_AND_MIRROR_GAPPING_ROUTES_TO_CHIRALITY_UNDER_THE_CANDIDATE_LAWS_BOUNDED_THEOREM_NOTE_2026-10-21.md',)
+AUDIT_INPUT_PATHS = ('research/chirality-doublers/WALL_PUMP_AND_MIRROR_GAPPING_ROUTES_TO_CHIRALITY_UNDER_THE_CANDIDATE_LAWS_BOUNDED_THEOREM_NOTE_2026-10-21.md',)
 
 AUDIT_TIMEOUT_SEC = 120
 

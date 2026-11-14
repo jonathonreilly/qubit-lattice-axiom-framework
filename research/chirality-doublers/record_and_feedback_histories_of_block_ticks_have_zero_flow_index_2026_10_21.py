@@ -9,7 +9,7 @@
 7 3D: CL-2 tick W3 with frames and histories; magnetic flow index = W3 x N_phi (control) and 0 for the tick;
 8 against measurement.  Supplied models, finite diagnostics; no physical identification."""
 from __future__ import annotations
-AUDIT_INPUT_PATHS = ('docs/RECORD_AND_FEEDBACK_HISTORIES_OF_BLOCK_TICKS_HAVE_ZERO_FLOW_INDEX_BOUNDED_THEOREM_NOTE_2026-10-21.md',)
+AUDIT_INPUT_PATHS = ('research/chirality-doublers/RECORD_AND_FEEDBACK_HISTORIES_OF_BLOCK_TICKS_HAVE_ZERO_FLOW_INDEX_BOUNDED_THEOREM_NOTE_2026-10-21.md',)
 
 AUDIT_TIMEOUT_SEC = 120
 

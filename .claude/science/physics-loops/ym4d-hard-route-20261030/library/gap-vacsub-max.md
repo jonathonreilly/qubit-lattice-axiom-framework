@@ -190,3 +190,100 @@ not by a power of b. The budget cannot be relaxed to C log b with C > 1 without 
   model in its class where its hypothesis holds and the seed fails.
 
 Stop of STEP 2a. Next: K7 and the frozen finite groups.
+
+## 3. STEP 2b: the K7 line and the frozen finite groups
+
+### 3.1 Lemma BLOW (the constant pays for every fall of a prefix sum). PROVED
+
+If (VAC-SUB)_K holds on [s_0, s_1] for a box, then for every m
+   integral of K over [s_0, s_1]  >=  log(H_m(s_0)/H_m(s_1)).
+In particular it is at least log(D_1(s_0)/D_1(s_1)).
+Proof. Remark (a) of 1.3. QED
+The proof uses only that That(s, s) is a positive compact family with a simple top eigenvalue. It holds for every
+group and weight of the class (TM-gen).
+
+### 3.2 A first-order point: the weights of Proposition V (theorem-backed) and K7 (numerics)
+
+(a) PROVED GIVEN [Lemma REG of `library/gap-crux-fp.md` L342 (a seed that is uniform on an open interval of couplings
+makes the free energy C^(1,1) there; it rests on Theorem S, Corollary S3', Lemma COV); Lemma KF; and a strong-coupling
+bound of the form of `gap-seed-sc.md` Theorem 1 (iii) for the weight in question, which I did not check for these
+weights]. Let a model of the class have a coupling beta_t where the free energy is not differentiable. Then for
+every even b >= 256 and every K with (VAC-SUB)_K on [beta_0, beta_1], beta_1 > beta_t:
+   integral of K over [beta_0, beta_1]  >  log(b/(4 ceil(log_2 b))).
+Proof. Suppose not. Put t_1 = 2 ceil(log_2 b). For every s in [beta_0, beta_1], Lemma KF gives
+S(b/2; b^3; s) <= S(t_1; b^3; beta_0), because (b/2) exp(-integral of K) >= t_1 and S falls in t. The strong-coupling
+bound gives g(t_1; b^3; beta_0) <= 0.0101 b^3 t_1 theta^(4 t_1) with theta <= 1/2, and theta^(4 t_1) <= b^(-8). So
+S(b/2; b^3; s) < 1/(2 x 5041) on the whole interval, which contains a neighbourhood of beta_t. Lemma REG with n = b/2
+makes the free energy differentiable at beta_t. Contradiction. QED
+Where it applies. The weights exp(beta ((1+x)/2)^p) for the p covered by the theorem of van Enter and Shlosman
+(Proposition V of `library/gap-crux-fp.md` L356; the theorem is cited there, not rebuilt). The mixed weight K7
+on a path across its first-order line, GIVEN that line (RECALLED numerics of Bhanot and Creutz; no theorem).
+(b) How the constant blows up. GUIDE (the two-level picture; nothing proved). Near a first-order point of the box
+the two lowest levels are the two phases: D_1(s) = ((l |B| (s - s_c))^2 + dl^2)^(1/2), with l the jump of the action
+density and dl of the order exp(-sigma |B|) the tunnel splitting. Then rho_1 = -D_1' is l |B| times a factor that
+rises from 0 to 1, and rho_1/D_1 = 1/(s_c - s) for s_c - s much larger than dl/(l |B|). Its maximum is l |B|/(2 dl),
+and its integral over the approach is log(l |B| eta/dl), of the order sigma |B|. In the words of (VAC-SUB): the level
+above the vacuum is the other phase; its magnetic and electric excess is the latent heat of the whole box, and its
+excitation energy is the tunnel splitting. At the K7 end point the mass vanishes and the constant grows like a
+power of b.
+(c) What a Wilson proof must therefore contain. Lemma HF, Lemma KF, Theorem ABS and Lemma BLOW hold verbatim for
+K7 and for the weights of Proposition V. Of the inputs the row lists, only the Laplacian identity changes with the
+weight: Delta x_p = -12 x_p makes the Wilson action an eigenfunction plus a constant; the K7 action has two
+eigenvalues (-12 and -32) and the weights of Proposition V have p of them. So a proof of (VAC-SUB) must use the
+one-eigenvalue property (or another property special to the exponent linear in x) in the step that produces the
+constant K. Section 4 tests whether it can.
+
+### 3.3 The frozen finite groups Q_8 and 2T
+
+Let G be a finite subgroup of SU(2) that contains -1 (Q_8 and 2T do), with the Wilson weight on G. H is finite
+dimensional. All of Section 1 holds with sums over G in place of Haar integrals and the kinetic eigenvalues of G.
+
+(a) Proposition FR (at a fixed box the lowest levels fall to the vacuum). PROVED.
+Let c_3(G) be the number of orbits of G, acting by simultaneous conjugation, on the commuting triples in G^3. For
+every box B: as beta tends to infinity, D_i(B; beta) tends to 0 for 1 <= i <= c_3(G) - 1, and S(t; B; beta) tends to
+c_3(G) - 1 for every t > 0. Always c_3(G) >= 8. For Q_8, c_3 = 92.
+Proof. The normalized link kernel exp(b (x(g) - 1))/sum over g' of exp(b (x(g') - 1)) tends to the unit mass at 1,
+because x(g) < 1 for g not 1. So Khat_b tends to the identity. M_b tends to the indicator of W = 0, the flat
+configurations of B. H is finite dimensional, so That(beta, beta) tends in norm to the projection onto the
+gauge-invariant functions supported on flat configurations. Its rank is the number of gauge classes of flat
+configurations on the 3-torus, which are the classes of commuting triples (the three holonomies). Eigenvalues
+converge. The eight triples in {1, -1}^3 are central, so they are eight different classes. For Q_8: by the orbit
+counting lemma c_3 is the number of commuting 4-tuples divided by 8. A commuting tuple lies in one of the three
+cyclic subgroups of order 4, which meet pairwise and all together in {1, -1}. So the number of commuting 4-tuples is
+3 x 256 - 3 x 16 + 16 = 736, and c_3 = 92. QED
+(b) Consequence. PROVED from (a) and Lemma BLOW. For G = Q_8 or 2T and each box, the integral of every K with
+(VAC-SUB)_K on [beta_0, beta] tends to infinity with beta. So for each b the budget (B) fails from some coupling
+beta_fr(b; G) on.
+(c) Uniformity in b. GUIDE and ARGUED, not proved here. The lane records the freezing couplings 1.15 (Q_8) and 2.15
+(2T) as GUIDE (`library/gap-q8test-opus.md` L78, L334, from Hartung et al.). In the frozen phase the flat classes
+are separated by a sheet of b^2 links, so the splittings are of the order exp(-c beta b^2), and beta_fr(b; G) is
+bounded in b. A proof needs a Peierls expansion of the twist ratios; I did not write one. One number that is exact:
+at beta = infinity the ratio of the twisted to the untwisted partition function on a 4-torus with one twisted plane
+is, for Q_8, the number of 4-tuples with one anticommuting pair and all other pairs commuting, over the number of
+commuting 4-tuples: 24 x 4/736 = 96/736, about 0.13 (an anticommuting pair is a pair of elements of order 4 in
+different cyclic subgroups, 6 x 4 = 24 pairs; the other two entries must be central). It is far below the 9/10 that
+the flux half (CORE) needs.
+(d) The difference from SU(2), stated so that it is not over-read. For SU(2) the levels of a FIXED box also fall as
+beta grows: in a small box the electric-flux levels are tunnel splittings between the two central holonomies
+(RECALLED, Luscher's small-volume expansion; GUIDE). (VAC-SUB) allows this, because it lets b depend on beta_1. For
+the finite groups no b works above the freezing coupling. So the test binds only through the uniformity in b,
+exactly as for U(1) in 2.2.
+(e) What a Wilson proof must contain. The loop equation and the Laplacian have no meaning on a finite group. So any
+proof that uses Lemma F or the eigenfunction identity is not refuted by Q_8 or 2T. This is the weakest of the three
+tests: it only forbids a proof from Lemma HF, Lemma KF, Theorem ABS and positivity alone.
+
+### 3.4 Summary of the fact tests
+
+| Model | (VAC-SUB)_K at one coupling | Budget (B) on an interval from strong coupling | Standing |
+|---|---|---|---|
+| Free photon (Gaussian) | holds, K = 0, equality (Proposition G) | no seed at any coupling to carry | PROVED |
+| Compact U(1), Wilson | K bounded in b away from the transition (GUIDE) | fails for every b once beta_1 is in the Coulomb phase | PROVED GIVEN the inputs of 2.2 (a) |
+| Weights of Proposition V | K is at least of order log b near beta_t | fails for every b across beta_t | PROVED GIVEN the inputs of 3.2 (a) |
+| K7 across its line | the same; two-level picture: sup K of order l abs(B)/(2 dl) | fails, GIVEN the line (numerics) | GIVEN RECALLED numerics |
+| Q_8, 2T | all levels of the flat classes fall to 0 at each box | fails for each b beyond beta_fr(b; G) (PROVED); beta_fr bounded in b (GUIDE) | PROVED in the stated part |
+
+One conclusion covers all rows. (VAC-SUB) fails in a model exactly on intervals that cross a point where the seed
+fails at every size. No inequality at one coupling separates the models. The constant K is the object, and its
+selectivity is the uniformity of its integral in the box.
+
+Stop of STEP 2. Next: STEP 3, the attack for SU(2) Wilson.

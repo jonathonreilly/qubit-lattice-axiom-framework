@@ -110,3 +110,24 @@ lag-64 value of the tie mode must grow from L = 4 to 6 by a factor >= 2.5 (volum
 10 percent. (C4) estimator null test: at phi = 0 (u_xy itself) Ebar = 0 exactly (Lemma CEN), so A_lo must be within 2
 standard errors of 0, and A_n must fall toward 0.
 
+## 2. Code and controls (step 2)
+
+**2.1 Code.** `library/guide/lane952/sg2lab.py` (numpy, one thread, nice; written for this row from row 950's text):
+quaternion links, Kennedy-Pendleton heat bath, checkerboard by direction and parity of x + y + z + t; frame chain on
+g_x with the palindromic sweep (parity 0, 1, 0) of 1.2; Lambda(k) by FFT; tie-mode amplitudes X_a; the proxy Y of 1.4
+on slices 1 and 2; Lemma LB with one regressor (product of the two half-sample means of Y X_3 over the mean of Y^2) and
+with two regressors (Y_1, Y_2); optional split-sample PCA of lim C_n over all 9 L^3 coordinates; a compact U(1) branch
+(von Mises heat bath) with the U(1) proxy Y = sum over xy plaquettes of slice 1 of e_p sin(theta_p) (gauge invariant).
+Logs (JSON): `library/guide/lane952/logs/`. Speed: 1.3 ms per sweep at L = 4, T = 6.
+
+**2.2 Control C1 (09:5xZ-10:2xZ session; under the numeric lock, 71 percent memory free).** u = 1, beta 2.3, L = 4,
+1500 sweeps after 200: per-component variance 0.1597 +- 0.0005 against 0.160 (rows 944, 950): **PASS**. (The k = 0 value of
+Lambda is 0.294; the max over k is 0.319 at a noisy k on a flat top, against row 950's 0.2984 from 20000 sweeps.)
+
+**2.3 Batch 1 plan (fixed before it runs).** All T = 6, cold start, measured every sweep, a frame chain every 20 sweeps
+with lags 0, 1, 2, 4, 8, 16, 32, 64.
+(i) C2 + C4: u_xy, beta 2.6, L = 4 (1000 + 8000 sweeps) and L = 8 (1500 + 6000).
+(ii) Twisted u_phi, phi = pi/2, beta 2.6, L = 4, 6, 8 (same lengths; L = 6: 1200 + 7000).
+(iii) C3: compact U(1), u_xy, beta 2.3, L = 4 and 6 (1000 + 6000; frame chain every 20).
+Reading rule for (ii): the criteria of 1.5 on A_lo (one regressor, split halves) and on the lagged X_3 moment.
+

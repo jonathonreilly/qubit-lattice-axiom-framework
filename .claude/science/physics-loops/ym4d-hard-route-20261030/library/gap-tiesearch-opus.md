@@ -201,3 +201,5 @@ errors of about 20 percent); all go to the sweep as planned in 4.3 and 4.5.
   L = 16 (seeds 32, 33), pooled by the rule of the z-twist replicas; the error of a pooled value is then the larger of the
   propagated block error and the chain-to-chain standard error of the mean.
 
+- L = 10 (3000 + 20000): u_xy 8.54 +- 0.73; z-twist pi/4 colour 3 8.55 +- 1.23 [7.11]; z-twist pi/2 colour 3 7.92 +- 1.72 [5.02].
+

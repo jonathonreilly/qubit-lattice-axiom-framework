@@ -8,6 +8,10 @@ Research-stage working state. Nothing here is a public claim. No statement below
 
 Status words: PROVED, CONDITIONAL (on named inputs), GUIDE (a run or heuristic; refutes or guides only), OPEN.
 
+Status of this file: FINISHED 2026-11-14T07:00Z (file created 06:25Z; per-step times were not recorded; Steps 0-6 and the Result are written; one self-check pass applied:
+the free-link check of Step 4, the wording of ceiling (iii), and the free-link remark of Theorem MID were corrected).
+The target is NOT proved. The plan below is the first plan; Step 0 holds the revised one, which was followed.
+
 ## Plan (at most eight steps; one step per response; each step is appended before the next starts)
 
 0. Read: FINISH/GOAL (done), `library/gap-direction-max.md` in full, `library/prior/gap-lit-hcvac.md`, `library/gap-etohc-opus.md`, check row 938, row 936 (CUT-TYP). Duplicate check against `library/open-core.md` and the FINISH rows. Write the exact target and what is already covered.
@@ -21,7 +25,7 @@ Status words: PROVED, CONDITIONAL (on named inputs), GUIDE (a run or heuristic; 
 
 ## Step log
 
-### Step 0: inputs read, duplicate check, the target with the checks' corrections (written 2026-11-14T06:50Z)
+### Step 0: inputs read, duplicate check, the target with the checks' corrections
 
 **Read in full (READ = read at the pinned commit, not re-proved):** FINISH.md (opening, How we work, Working
 efficiently, Rules, rows 931-943), GOAL.md, `library/gap-direction-max.md` (row 931), its check
@@ -175,8 +179,10 @@ Quantifiers follow check 938. "Fails" means: the statement with the constants th
   (ii) The mid-slice law eta is not log-concave for beta > 2: at y = 0, (A5) and (A7) give
   Hess(-log eta) = 4 beta (1 - beta/2) Id. For U(1) the same computation gives 4 beta (1 - beta) Id.
   (iii) A log-Sobolev constant above 2 beta for the slice given both time neighbours (the Otto-Reznikoff form in the
-  time direction, RECALLED) is impossible for beta >= 3/2: if the neighbours are antipodal on a link, the field on
-  it vanishes, and the linear test function gives a Poincare constant at most 3 there (variance 1/4, gradient 3/4).
+  time direction, RECALLED: the slice law is e^(<theta, w> - V(w)) dw with theta = beta (x + w'), and the criterion
+  asks its constant to exceed twice the coupling beta) is impossible for beta >= 3/2: if the neighbours are
+  antipodal on every link, theta = 0, the slice law e^(-V) dw is gauge invariant, and a linear function of one
+  link has variance 1/4 (as in (A5)) and gradient energy 3/4, so the Poincare constant is at most 3.
   All three caps lie below the window 2.3 to 2.6, and all three come from one link whose time neighbours do not
   pin it. They are group-blind: for U(1) the same three computations give the caps 0, 1 and 1/2.
 
@@ -205,8 +211,9 @@ alpha' = omega, Nelson's exponent. The attack is sharp where it applies.
 No term Hess V occurs here: the mid-slice variable lives in flat space, and the spatial action enters only
 through the conditional covariance. This is the gain over A.1.
 Death (PROVED): Step 2 (ii). At y = 0 the links are free and Cov = Id/4 by Elitzur's argument (A5), so
-chi_mid >= beta/2. The hypothesis fails for every beta >= 2, on every box, for SU(2). (For one free link,
-chi_mid = beta/2 exactly, and Theorem MID is a true statement about the rotor chain for beta < 2.)
+chi_mid >= beta/2. The hypothesis fails for every beta >= 2, on every box, for SU(2). (For one free link the
+law of w given y is von Mises-Fisher; if its covariance is largest at zero field, which I did not check, then
+chi_mid = beta/2 and Theorem MID is a statement about the free rotor chain exactly for beta < 2.)
 
 **A.3 What attack A leaves.** A curvature criterion in the time direction cannot reach beta 2.3: the cap is a
 single link that its time neighbours fail to pin, and it is the same for U(1). The useful output is the
@@ -283,7 +290,7 @@ The threshold is strict and exact: the conditional law must relax faster than th
 (sigma^2 is beta e^(-omega) for a free mode). This is where a mass enters: alpha_c/sigma^2 = e^(2 omega).
 The box does not occur in Theorem C; it enters only through Proposition HC.
 
-### Step 5: the averaged core of attack B, Gaussian domination, and three GUIDE runs
+### Step 5: the averaged core of attack B, Gaussian domination, and four GUIDE runs
 
 **5.1 Theorem C0 (averaged core; PROVED, three lines; no conditioning slice occurs).** Write I(g) := E_nu[|grad g|^2/g]
 (Fisher information). Assume, for smooth positive gauge-invariant g:
@@ -375,3 +382,112 @@ trajectory average of 5.2 is the sup form again. Only the fully averaged pair of
 blocks. I did not attempt this. It is the mixing problem of the 4D theory at beta 2.3, in one-step form.
 The toron handle of the row was not used: at beta 2.3 the seed box is 500 lattice units wide, far from the
 small-volume regime where the toron orbifold is a collective coordinate; I have no statement there.
+
+Run 4, the linearised inequality (GC) itself: theta_GC := sup over f of E_nu|grad P f|^2/E_nu|grad f|^2, as a
+generalised eigenvalue on the same grids (script `gc_guide.py`). Consistency criterion r_1^2 <= theta_GC: met in all
+13 cases.
+
+| model | r_1^2 | theta_GC | (GC) with theta < 1 |
+|---|---|---|---|
+| rotor (0.3, 0, 0), (1, 0, 0), (2.3, 0, 0), (8, 0, 0) | 0.0220, 0.1993, 0.5496, 0.8747 | the same to four digits | holds, sharp |
+| rotor (2.3, 1, 0.5) | 0.1382 | 0.1397 | holds, sharp |
+| rotor (4, 2, 1) | 0.1075 | 0.1077 | holds, sharp |
+| rotor (1, 0, 4), double well | 0.5362 | 9.535 | FALSE |
+| rotor (2.3, 0, 1.5), double well | 0.9086 | 1.055 | FALSE |
+| one plaquette, beta 1.0, 2.3, 2.6, 4.0, 8.0 | 8.69e-6, 8.02e-4, 1.12e-3, 1.53e-3, 1.12e-3 | 8.77e-6, 8.23e-4, 1.15e-3, 1.55e-3, 1.12e-3 | holds, sharp |
+
+Reading. Where the vacuum law has one well, the fully averaged inequality is sharp: theta_GC equals r_1^2 to a few
+percent (exactly for a free rotor, where P commutes with the Laplacian). Where the vacuum law has two wells that
+one kinetic step can jump, (GC) is false although the chain has a gap. So (FC) is a real restriction, and a
+double-well structure of nu in link space is what refutes it.
+
+### Step 6: the smallest unproved inequality, and the solvable-model test
+
+**Chain of this row (each arrow PROVED unless marked).**
+  (FC)_theta + (C1-av)_(alpha_c)  --Theorem C0-->  (LSI-vac) with alpha = alpha_c (1 - theta)
+  (LSI-vac)_alpha + (COV)_kbar  --(A4), then row 940 Lemma H, Lemma BGL, Theorem HC1 (READ, unchecked)-->
+       (HC-vac) with alpha' = (1/2) log(1 + alpha/(beta^2 kbar))
+  (HC-vac)_alpha'  --row 931 Proposition HC (HOLDS in check 938)-->  X(a; (24a)^3) <= x_* once
+       alpha' (a - 2) >= log(72 beta 24^3/x_*) + 3 log a, a even.
+Sup-form suppliers: (C1), (C2) give (C1-av), (FC) with theta = sigma^2/alpha_c (Theorem C).
+One free mode returns the exact values at every arrow: theta = e^(-2 omega), alpha_c = beta e^omega,
+alpha = 2 beta sinh(omega), kbar = e^(-omega)/beta, alpha' = omega.
+
+**The smallest unproved inequality.**
+  (FC)_theta on the seed box: for every smooth positive gauge-invariant g on the slice space,
+      E_nu[ |grad P g|^2 / P g ] <= theta E_nu[ |grad g|^2 / g ],   with theta < 1,
+  for SU(2) Wilson at beta 2.3 to 2.6, P the vacuum slice chain, nu its stationary law.
+Its first instance is the linearisation (GC)_theta: E_nu|grad P f|^2 <= theta E_nu|grad f|^2, an operator inequality
+P (grad^* grad) P <= theta grad^* grad on L^2(nu). In words: the Dirichlet energy of a slice observable contracts in
+one time step. It needs no conditioning slice and no supremum over backgrounds.
+Why this one. (a) It carries the U(1) failure alone: in FP, theta = e^(-2 omega_min) tends to 1 with the box, while
+the companions stay good (alpha_c >= beta, kbar <= 1/beta). (b) It is necessary-side sharp where it holds:
+(GC) forces r_1^2 <= theta, and GUIDE Run 4 finds theta_GC = r_1^2 in every one-well model. (c) It is local in time
+(one step), and its constant is a rate: the needed size follows from the seed condition above.
+The companions, also unproved here for SU(2), both group-blind in FP: (C1-av)_(alpha_c) (the entropy lost in one
+step is at most I(g)/(2 alpha_c)), and (COV)_kbar (sup form; kbar >= 1/4 by (A5)). I did not attempt them.
+A proof of (FC) has to be local in space (5.5). No tool known to me gives that at beta 2.3: the sup-form
+suppliers are capped below the window (Step 2, new ceilings; Step 5 Run 1), and Gaussian domination is group-blind.
+
+**Fact tests of (FC).** U(1): fails as stated (theta tends to 1; FP, PROVED by the mode computation). Frozen
+groups: no gradient, not defined; the route does not apply to them. SMALL-BOX (conditional on its premise):
+theta >= r_1^2 tends to 1 at fixed lattice size, so a proof must use the size. Ceilings: no supremum over a
+conditioning slice occurs in (FC), (C1-av); (COV) is sup form.
+
+**The solvable-model tests.**
+- Done here (GUIDE, Run 4): the one-plaquette SU(2) chain at beta 2.3 and 2.6. (GC) holds with theta_GC = 8.2e-4 and
+  1.15e-3, equal to r_1^2 within 3 percent. Not refuted on the smallest SU(2) unit.
+- Done here (GUIDE, Run 4): the double-well rotor. (GC) is false (theta_GC = 9.5 and 1.06) while r_1 < 1. This
+  shows what a refutation looks like: two wells of nu closer than one kinetic step (at beta 2.3 a link moves by
+  about beta^(-1/2) = 0.66 radian per step).
+- **The test that could refute (FC) for SU(2), not run:** measure R(f) := E_nu|grad P f|^2/E_nu|grad f|^2 at beta 2.3
+  for observables that probe a centre flip. By (A3), grad P f(x) = beta Cov_(pi_x)(w tangential, f): freeze one
+  slice x of a 4D Monte Carlo configuration, resample the rest, and measure the covariance of the next slice's
+  links with f. Candidates for f: the plaquette; a smeared plaquette; an odd smooth function of (1/2) tr U_p
+  (sensitive to thin Z_2 vortices); a spatial Wilson line around a small transverse cross-section (odd under the
+  cut flip of row 930). (FC) asserts R(f) <= theta < 1 for every f. One f with R(f) >= 1 refutes (FC) at that
+  coupling, and then the gradient form is the wrong Dirichlet form for this chain: (LSI-vac) could still hold,
+  but with a constant unrelated to the transfer gap. The exactly solvable version of this test is the one-cube
+  chain (12 links, 6 plaquettes, the smallest unit with a Z_2 monopole); it does not reduce to one variable and
+  I did not set it up.
+- Relation to row 936: for f odd under a cut flip, R(f) < 1 is a one-step form of the paramagnet statement
+  (TYP-1). A rigid, ordered cut would act as the double well of Run 4. I name the match and do not attack it.
+
+## Result
+
+| Statement | Label |
+|---|---|
+| (A1)-(A3): chain without gauge projection; one-step law as an exponential family; log Omega = -V/2 + Lambda(beta x) - log lambda_0 with Lambda convex, Hess Lambda = conditional covariance of the next slice | PROVED (hand) |
+| (A4): Renyi divergence along chords; (COV)_kbar implies row 940's (RD) with sigma^2 = beta^2 kbar | PROVED (hand); its use in Theorem HC1 is CONDITIONAL on row 940 (unchecked) |
+| (A5): Cov_m(w) = Id/4 (Elitzur), so kbar >= 1/4 | PROVED (hand) |
+| (A6): closed form of Ric + Hess for nu; (A7): mid-slice law eta, Hess(-log eta) = 4 beta (Id - 2 beta Cov), P = B^* B | PROVED (hand) |
+| Method ceilings in the time direction: pointwise Bakry-Emery for nu fails for beta > 1; eta is not log-concave for beta > 2; the slice-given-both-neighbours criterion fails for beta >= 3/2. All group-blind | PROVED (hand); the third is relative to the recalled Otto-Reznikoff form |
+| Theorem MID: chi_mid < 1 gives (HC-vac) with alpha' = log((2 - chi_mid)/chi_mid); exact in a Gaussian mode | CONDITIONAL (flat-space Lemma BGL, recalled); hypothesis REFUTED for beta >= 2 by (A5): dead in the window |
+| Proposition W: kappa_W = beta (kbar_h/gamma_c)^(1/2) < 1 gives abs(grad P f)^2 <= kappa_W^2 P(abs(grad f)^2), E_1 >= log(1/kappa_W), gamma >= gamma_c (1 - kappa_W^2) | PROVED implication (hand); exact in a Gaussian mode |
+| Theorem C: (C1)_(alpha_c), (C2)_sigma, sigma^2 < alpha_c give (LSI-vac) with alpha = alpha_c - sigma^2 | PROVED implication (hand; uses Lemma SGC of rows 931/940); exact in a Gaussian mode |
+| Corollary C': then (HC-vac) with alpha' = (1/2) log(alpha_c/sigma^2) | CONDITIONAL on row 940 Theorem HC1 (unchecked) |
+| Theorem C0: (C1-av), (FC)_theta give (LSI-vac) with alpha = alpha_c (1 - theta); variance analogue with (GC) | PROVED implication (hand) |
+| (W'), (C-av): trajectory-averaged forms with local constants | PROVED implications (hand) |
+| Gaussian domination: E exp(beta <h, U_0 - U_1>) <= exp(beta abs(h)^2/2); annealed (C2) with proxy beta | PROVED (hand); group-blind |
+| FT-U1: FP has alpha' = omega_min < 0.27/a, so it fails the seed condition by a factor above 59 at every a; in FP only (FC) fails | PROVED given the mode list of row 929 (READ) |
+| Frozen groups, SMALL-BOX | as corrected by check 938; SMALL-BOX is conditional on its premise |
+| GUIDE Runs 1-4 (rotor chain, one-plaquette SU(2) chain) | GUIDE; no inequality of this file violated; the sup form is empty under mild non-convexity; (GC) is sharp in one-well models and false in double wells |
+| Slice-averaged forms reduce to the sup form on a large box; a proof of (FC) must be local in space | ARGUED |
+| (FC)_theta, (C1-av), (COV) for SU(2) Wilson on the seed box at beta 2.3 to 2.6 | OPEN |
+| (LSI-vac), (HC-vac) on the seed box; the seed | OPEN |
+
+Limits. All proofs are by hand, by Claude Fable 5.2 (max), checked by no other model; the check is row 943.
+Row 940 (Lemma H, Lemma BGL, Theorem HC1) is unchecked and enters every statement about (HC-vac). Recalled and
+not rebuilt: the Bakry-Emery criterion, Herbst's argument, the Otto-Reznikoff two-scale form; none carries a step
+of a statement marked PROVED, except that ceiling (iii) is stated relative to the third. Lattice numbers
+(glueball masses, deconfinement at N_t = 4) are GUIDE. Four GUIDE jobs under the numeric lock; scripts and logs
+in `/tmp/gap-lsivac-941/`, not committed. Sussman-Alpoge account: it enters through the transfer frame only
+(credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text); `library/sa-index/`
+has no statement on log-Sobolev, hypercontractive or Fisher-information bounds (greps here and in rows 938-940),
+and its three uses of "Gaussian domination" are integration-by-parts steps of the RG, not this bound. Prior lane
+text credited: `gap-crux-fp.md:302` already notes that Gaussian domination uses the linearity of the Wilson
+weight in R^4 coordinates on time-like plaquettes. Method credit as in row 940: F.-Y. Wang (Harnack with power),
+Bobkov, Gentil and Ledoux. origin/main and the PR branches are not on this clone and were not searched.
+Nothing here is a seed at order one, a mass gap, or a public claim.
+
+RESULT: Row 941 (Claude Fable 5.2 max, author, checked by no one): (LSI-vac)/(HC-vac) for SU(2) on the seed box is NOT proved and stays OPEN. PROVED (hand, unchecked): the vacuum slice chain without gauge projection is an exponential family, so log Omega = -V/2 + Lambda(beta x) - const with Lambda convex and Hess Lambda the conditional covariance of the next slice (this replaces row 931's stop "log Omega is not local"); closed curvature formulas for the slice law and the mid-slice law, with three new group-blind method ceilings (pointwise Bakry-Emery dies at beta 1, mid-slice log-concavity at beta 2 by Elitzur's Cov = Id/4, the both-neighbours criterion at 3/2), so no curvature criterion in the time direction reaches 2.3; Proposition W and Theorem C (one-step conditional Poincare or log-Sobolev constants above the one-step score size give the vacuum gap, (LSI-vac) with alpha = alpha_c - sigma^2, and with row 940 (HC-vac) with alpha' = (1/2) log(alpha_c/sigma^2)), Theorem C0 (fully averaged: one-step entropy loss bound plus one-step Fisher-information contraction (FC)_theta give (LSI-vac) with alpha_c (1 - theta)), and Gaussian domination as the annealed score bound; every implication returns the exact free-field values (Nelson's exponent). FACT TESTS: U(1) fails by a factor above 59 at every size, and on this route the failure sits in (FC) alone; SMALL-BOX stays conditional. GUIDE (refute only): sup-form hypotheses are empty under mild non-convexity; (GC), the linearised (FC), equals r_1^2 on the one-plaquette SU(2) chain at beta 2.3 and 2.6 and is false for double-well rotors. SMALLEST UNPROVED INEQUALITY: (FC)_theta, E_nu[|grad P g|^2/P g] <= theta E_nu[|grad g|^2/g] with theta < 1 on the seed box (companions (C1-av) and (COV), group-blind, also unproved); a proof must be local in space. TEST THAT COULD REFUTE IT: a frozen-slice Monte Carlo (or the one-cube chain) measuring E|grad P f|^2/E|grad f|^2 at beta 2.3 for centre-flip-sensitive f; one f with ratio at least 1 kills (FC) and with it the gradient-form route.

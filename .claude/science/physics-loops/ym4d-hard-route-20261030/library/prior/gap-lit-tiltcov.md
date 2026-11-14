@@ -174,3 +174,133 @@ Then, since delta_l(<z, x>) = 2|z_l| on S^3, Var(<z, x>) <= sum_ij |z_i| |z_j| [
   typical y. Regions (I), (II) would give exponential decay of the covariance (hence a near-diagonal form) in their
   regimes only. Nothing at beta 2.3-2.6.
 
+### Step 3 (done 17:05Z): tilt-uniform covariance bounds from local-to-global ("trickle-down") methods (items (a), (c))
+
+**Source.** Jonathan Leake, Anqi Li, "Beyond the Bochner Method: Optimal Spectral Gaps for Block Dynamics of Spin
+Systems like the O(N) Model", arXiv:2611.05228v1 (2026-11-03; TeX source read: Section 1.1-1.3, Section 5 opening,
+Lemma 5.1, Remark 5.x). Preprint, not refereed; the paper has an "AI Declaration" section (not read). Its inputs:
+Guo-Zhang arXiv:2608.06172 and Chen-Liu arXiv:2609.19514 (the two-site-to-global theorem), Leake-Oveis Gharan
+arXiv:2510.06549; earlier O(N) results it cites: Dyson-Lieb-Simon (J. Stat. Phys. 1978, App. D, Brascamp-Lieb
+covariance bound when lambda_max(J) - lambda_min(J) < N), Bauerschmidt-Bodineau (JFA 2019, LSI for Langevin, same
+condition), Anari-Koehler-Vuong (STOC 2024 = arXiv:2407.16104, LSI for O(N) Langevin for R < (4^(1/3) - 1) N). These
+three were NOT read here; quoted through Leake-Li. All of them hold uniformly in the external fields.
+
+**Exact statements read.**
+- Theorem 1.1 (Guo-Zhang, Chen-Liu): spin system on V with law mu, Glauber Laplacian connected; A symmetric,
+  non-negative, zero diagonal, lambda_max(A) < 1. If for all u != v and ALL pinnings tau of V \ {u, v} the two-site
+  Glauber gap is >= (1 - a_uv)/2, then the Glauber gap of mu is >= (1 - lambda_max(A))/|V|. (Equivalently: the maximal
+  correlation of the two pinned spins is <= a_uv, the "spectral influence".)
+- Theorem 1.2: the same hypothesis gives gaps for block dynamics of marginals, (1 - lambda_max(H))/m; sharp for the
+  Gaussian with covariance (I - A)^(-1).
+- Lemma 5.1: for nu(du, dv) proportional to exp(a.u + b.v + kappa u.v) omega(du) omega(dv) on S^(N-1) x S^(N-1) (omega
+  uniform), the maximal correlation is <= min{1, |kappa|/N}, for ALL a, b in R^N.
+- Theorem 1.4: O(N) model mu_(J,h) proportional to exp((1/2) sum J_xy s_x.s_y + sum h_x.s_x), N >= 2, ARBITRARY external
+  fields h and couplings of either sign: Glauber gap >= (1 - ||J_abs||_op/N)/n. Remark 5.2: two-spin marginal
+  covariances |Cov(f(s_x), g(s_y))| <= min{theta, theta^dist/(1 - theta)} (Var f Var g)^(1/2), theta = ||J_abs||_op/N.
+
+**Transfer to SU(2) Wilson links in an arbitrary linear link field (ARGUED here, by me; not in any source; not
+checked by a second reader).**
+1. Identify SU(2) with S^3 in R^4 (U = a0 + i a.sigma), so (1/2) tr U = <U, 1> and Haar = omega. The Wilson weight
+   exp(beta_W sum_p (1/2) tr U_p) is multilinear: with all links but u, v pinned, u and v in a common plaquette p,
+   (1/2) tr U_p = <x_u, R x_v> for an R in O(4) fixed by the pinning (left/right multiplication by unit quaternions
+   and quaternion conjugation are isometries of R^4; Re(pq) = <p*, q>). Every other plaquette through u or v is
+   linear in x_u or x_v given the pinning; so are the tilts <phi_u, x_u>, <phi_v, x_v>. Two distinct links share at
+   most one plaquette. Substituting v' = R x_v (omega-invariant) puts the pinned pair in the form of Lemma 5.1 with
+   kappa = beta_W and some fields a, b. Links in no common plaquette are conditionally independent: a_uv = 0.
+2. So a_uv = beta_W/4 on pairs sharing a plaquette. In d = 4 a link lies in 6 plaquettes, each with 3 other links:
+   18 such neighbours, so lambda_max(A) <= 18 beta_W/4. Theorem 1.1 then gives, for EVERY phi and on every finite
+   box, a Glauber gap >= (1 - 9 beta_W/2)/n when beta_W < 2/9; that is, Var(F) <= (1 - 9 beta_W/2)^(-1) sum_l E Var_l(F).
+   For F = <z, x>, Var_l(<z_l, x_l> | rest) <= |z_l|^2 because |x_l| = 1, so
+     Var_(mu_phi)(<z, x>) <= |z|^2/(1 - 9 beta_W/2)   for every phi in R^N and every z (horizontal or not).
+3. The same count in temporal gauge on a box x half-spaces (spatial link: 4 spatial plaquettes = 12 neighbours, plus
+   2 time-like plaquettes, each a pair term with R = Id) gives lambda_max <= 14 beta/4; with b <= beta this covers
+   J_(b,phi) as a two-slice marginal of a tilted Gibbs measure, if m is taken as the slice marginal of the long
+   half-space (row 941/947 definition; the limit of the half-space length is uniform since the bound is). Then
+   (TILT-COV-sup) holds with kbar = (1/s^2 + 1/s'^2)/(1 - 7 beta/2) for beta < 2/7 (ARGUED; constants mine).
+4. The threshold 2/9 coincides with the transfer-gap window beta_W < 2/9 of Bhattacharjee-Bhattacharya recorded in
+   row 955 (not a check of either; same Dobrushin-type count).
+
+**Mapping.** This is the strongest tilt-uniform statement found: a full (TILT-COV-sup) (supremum over all phi,
+box-uniform) but only at strong coupling, beta below about 0.22-0.29, a factor of about 10 below 2.3-2.6. It is
+consistent with Lemma NEC (there E_1 is bounded below). Why the method stops: its input is a two-link bound
+UNIFORM IN ALL PINNINGS AND FIELDS; Lemma 5.1's |kappa|/N is sharp for the worst fields, and Theorem 1.2 still asks
+only for two-SITE inputs, so no finite-block check at beta 2.3 can be fed in. It gives no (LOC-COV) beyond that regime
+(where it would give exponential decay of covariances, Remark 5.2, hence a near-diagonal bound with no bad set).
+The Polchinski/Brascamp-Lieb route (Bauerschmidt-Bodineau 2019) needs a quadratic pair interaction; for J_(b,phi) the
+only quadratic coupling is the time-like layer b <x, w>, which is exactly what row 968 Section 3 already flows, and the
+non-quadratic part sits in m.
+
+### Step 3b (done 17:25Z): semi-log-concavity = (TILT-COV-sup); Dyson-Lieb-Simon and Anari-Koehler-Vuong
+
+**Terminology found.** Eldan-Koehler-Zeitouni (PTRF 2022, cited by AKV as [eldan2022log]; not read): a measure mu on
+R^n is beta-SEMI-LOG-CONCAVE if Cov(T_w mu) <= beta I for EVERY linear tilt w (AKV intro line 178, prelims line 241).
+So (TILT-COV-sup) at fixed (s, t) says exactly: J_(b_t, .) is kbar_(s,t)-semi-log-concave on horizontal vectors (after
+the change of variables q~). Searching under this name is the efficient route for later rows.
+
+**Source 1: Dyson-Lieb-Simon, J. Stat. Phys. 18 (1978), Theorem D.2, quoted in AKV `ON.tex` Theorem 5.1 (DLS not read
+in its own text).** f_N(h) = log of the integral of e^(<h, x>) over the uniform measure on S^(N-1): for h != 0 the Hessian
+has eigenvalues g_N'(|h|) (once) and g_N(|h|)/|h| (N-1 times), and ||Hess f_N|| <= max g_N' = 1/N. That is: every
+exponential tilt of the uniform measure on S^(N-1) has covariance <= (1/N) Id; for SU(2) = S^3, <= (1/4) Id, with equality
+at zero tilt. This is the ONE-LINK form of "zero field is the worst tilt", and it holds for every tilt.
+- Consequence for step 3 (ARGUED, mine): the conditional law of one Wilson link given all others is an exponential
+  tilt of Haar (the action is linear in each link), so Var_l(<z_l, x_l> | rest) <= |z_l|^2/4. The bound of step 3,
+  item 2, improves to Var_(mu_phi)(<z, x>) <= |z|^2/(4 (1 - 9 beta_W/2)) for every phi; at beta_W -> 0 this is the exact
+  zero-field value 1/4 of Lemma Z. Item 3 improves to kbar = (1/4)(1/s^2 + 1/s'^2)/(1 - 7 beta/2) for beta < 2/7.
+
+**Source 2: N. Anari, F. Koehler, T.-D. Vuong, "Trickle-down in localization schemes and applications",
+arXiv:2407.16104v1 (STOC 2024) (TeX read: intro Theorem 1.3, Section "semi-log-concave base measures" Theorems
+5.1-5.2, O(N) section opening).**
+- Theorem 1.3 (O(N)): nu on (S^(N-1))^n with density proportional to exp((1/2) sum J_ij <x_i, x_j> + sum <h_i, x_i>) w.r.t.
+  uniform, J >= 0 with constant diagonal alpha, eta = alpha/||J||: ||Cov_nu|| <= q_(eta,1/N)(||J||) = (1/N) Q_eta(||J||/N) for ALL
+  h, finite for ||J|| < N s(eta); LSI for Langevin with constant >= C_N exp(-integral of q). s(1/2) = 2(4^(1/3) - 1) about 1.1748.
+- Theorem (semi-log-concave base, `thm:semilogconcave`): mu = product of mu^(i) on R^N (N arbitrary; a factor may be a
+  whole slice), J >= 0 with J_ii = alpha, nu proportional to exp((1/2) sum J_ij <x_i, x_j>) mu. If for s in [0, alpha] the
+  reweighted G_(-s) mu^(i) (density proportional to e^(s|x|^2/2)) is rho(s)-semi-log-concave, then ||Cov_nu|| <= q_(eta,rho)(||J||),
+  where q(z) = 1/(eta z + 1/rho(eta z)) + integral over [0, z] of q(y)^2 dy; for constant rho, q = rho Q_eta(rho z), finite for
+  rho ||J|| < s(eta). Since the conclusion is for nu itself and every tilt of nu has the same form, it is a statement about
+  all tilts at once.
+
+**Mapping (ARGUED, mine; not in the source).** J_(b,phi) is of this form with TWO factors (the slices x, w in R^(4L)),
+base mu^(i) = m (tilted by phi/s, phi/s'), and J = b [[1, 1], [1, 1]] (x) Id: the diagonal term is constant on M because
+|x|^2 = L, so alpha = b is free, J >= 0, ||J|| = 2b, eta = 1/2, and G_(-s) m = m. Let rho_m := sup over all tilts of ||Cov|| of
+m (FULL operator norm, not only horizontal directions). Then for every b with 2 b rho_m < s(1/2), i.e.
+  b < b* := (4^(1/3) - 1)/rho_m, about 0.587/rho_m,
+  sup over phi ||Cov_(J_(b,phi))(x, w)|| <= rho_m Q_(1/2)(2 b rho_m) = rho_m (48 + 24 u + 12 u^2 + 2 u^3)/(48 - 24 u^2 - 8 u^3 - u^4), u = 2 b rho_m
+(AKV Example after Theorem 1.3). This REDUCES (TILT-COV-sup) for the whole layer flow 0 <= b <= b* to its value at b = 0,
+i.e. to the semi-log-concavity of ONE boundary slice m: the quantity chi of row 968 7.2 (full norm, all tilts).
+Why it does not reach the window: Lemma Z gives rho_m >= 1/4, so b* <= 4 (4^(1/3) - 1) about 2.35, and the flow of row 968
+needs b up to beta = 2.3-2.6; the GUIDE run of row 968 7.5 suggests rho_m >= 0.31 at beta 2.3 (one tilt family), so
+b* <= 1.9 there. The Riccati blow-up is generic (sharp for Gaussians): a worst-case bound over all base measures with
+the same rho cannot know that the two-slice vacuum at b = beta has covariance exactly k0 (Lemma Z). Also open: whether
+the full-norm rho_m (including gauge-orbit directions at phi) is finite and box-uniform; row 968 needs only horizontal
+vectors, AKV needs all.
+
+### Step 4 (done 17:40Z): item (b), conditional covariances on a slice with boundary tilt; mixing conditions
+
+Nothing new found by two bounded arXiv queries this session ("lattice gauge"/"Yang-Mills" with spatial mixing,
+Dobrushin, boundary condition, half-space, boundary field, external field; 2015-2026). The relevant classics are
+already recorded and are cited, not repeated:
+- Dobrushin-Shlosman (1985, 1987), Dobrushin-Warstat (1996), Stroock-Zegarlinski CMP 144 (1992), Yoshida (1997),
+  Martinelli-Olivieri CMP 161 (1994), Rebeschini-van Handel JSP 157 (2014): `gap-crux-lit-2.md` F1 with its hypothesis
+  table (abstract level, except Rebeschini-van Handel). Stroock-Zegarlinski: for a finite-range lattice system with
+  compact continuous spins, uniform LSI <=> Dobrushin-Shlosman mixing; the table records that a four-link plaquette
+  potential is not certified as covered and that uniform DS mixing at beta of order one is nowhere proved for Wilson.
+- Borgs-Seiler CMP 91 (1983) and Tomboulis-Yaffe (1985): `gap-lit-2.md` 6 (abstract level; finite temperature,
+  string-tension inequalities, critical-coupling bounds). Borgs' later high-temperature papers: `gap-lit-arealaw.md`,
+  `gap-lit-dp.md`. Neither concerns a slice in a boundary field.
+- Osterwalder-Seiler (1978) and Fradkin-Shenker (1979): step 2c (regions (I), (II), via Chatterjee-Yakir and Bonati
+  et al.; primary texts not accessible, as `gap-lit-arealaw.md` also records).
+
+**Mapping (my reading).**
+- (LOC-COV) is a statement about the conditional law of ONE boundary slice of a half-space, given a boundary field y/s,
+  at TYPICAL y, with a link-diagonal lower bound and a rare bad set. The mixing conditions above are UNIFORM IN THE
+  BOUNDARY CONDITION (worst case), which is stronger in the boundary quantifier and of a different kind (decay of
+  boundary influence, not a diagonal form). For a slice in a linear boundary field, a uniform-in-field version is
+  exactly (TILT-COV-sup) at t = 0, and step 3b shows it is what AKV's reduction needs.
+- Proved instances of any of these at the target coupling: none. Proved instances at all: strong coupling only
+  (step 2c region (I) and Dobrushin; step 3 beta_W < 2/9 or beta < 2/7, ARGUED transfer; SZZ beta_W < 1/12 per row 955),
+  and the large-tilt/large-beta region (II) for the bulk Higgs model.
+- Row 968 Lemma WC already shows that a uniform-in-conditioning local bound (CAP)_l is FALSE in the worst case. The same
+  worst-case/typical split will separate any DS-type uniform mixing statement from (LOC-COV): DS mixing at beta 2.3 is
+  not refuted by Lemma WC (it concerns influence, not local defects), but nothing in the literature read proves it.
+

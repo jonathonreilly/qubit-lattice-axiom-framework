@@ -259,6 +259,8 @@ symmetric slice would be exactly "(SC) false while the vacuum is massive".
   a sign tie. At u_xy the two staggered patterns are gauge inequivalent (ARGUED, 5.1). So in U(1) an ordered
   sign breaks (SG-step) itself, while in SU(2) the same order is pure frame. This is the one place where the
   group enters; it is ARGUED, and it is a prediction for a U(1) control run, not a result.
+  (Written before the runs. The control runs are in 5.6 and 7.6: the order is there, and it survives the gauge
+  projection.)
 - **SMALL-BOX (conditional on its premise, as in check 938).** On a fixed box, as beta grows, the tie at a
   flux -1 slice becomes exact (the first step of a classical extension from a maximum of V is of order one,
   5.1), so C_F is of order beta^2 times the number of links of the pattern, not of order beta (ARGUED). Then
@@ -537,3 +539,107 @@ correlation length far above 20 at beta 2.5 is not excluded by a run.
 dangerous slice found, with C_h at least about 12 and 45. At beta 2.5 and 2.6 they fail at that slice on every box
 from 4 to 20 (to 12 at beta 2.6), with lambda growing like the volume. The upper part of the window 2.3 to 2.6 is
 therefore closed to the route "(SC) gives (SG-step)" of row 944, unless the growth stops beyond L = 20.
+
+**7.6 GUIDE results of 7.5, batch 5 (run 09:44-09:51Z under the lock, 71 percent free).** Log
+`/tmp/gap-sc-950/logs/batch5.log`. 1000 to 1200 samples per SU(2) run, 600 per U(1) run. "Plateau" is the mean of
+lags 16, 32, 64. Standard error of a lagged covariance: about 3 percent of the lag-0 variance.
+
+SU(2), covariances of the tie-mode amplitudes (X_3 mean-subtracted; X_1, X_2, Y raw):
+
+| slice | beta | L | X_1, X_2 (angular) lag 0 | plateau | X_3 (radial) lag 0 | plateau | Y_3 lag 0 | plateau |
+|---|---|---|---|---|---|---|---|---|
+| tilt 0.3 | 2.6 | 4 | 0.52, 0.56 | 0.00, 0.01 | 0.105 | 0.024 | 0.238 | 0.133 |
+| tilt 0.3 | 2.6 | 8 | 0.52, 0.46 | 0.00, 0.01 | 0.104 | 0.023 | 0.252 | 0.183 |
+| tilt 0.1 | 2.6 | 8 | 1.72, 1.24 | 0.02, 0.02 | 0.236 | 0.030 | 0.265 | 0.173 |
+| tilt 0.3 | 2.3 | 8 | 0.50, 0.50 | 0.00, 0.01 | 0.139 | 0.034 | 0.286 | 0.171 |
+
+Validation (V), u_xy itself, beta 2.3, L = 6: the mean over colours of <X_a^(0) X_a^(n)> is 2.63, 2.45, 2.30, 2.10, 1.87, 1.55,
+1.12, 0.64 at lags 0, 1, 2, 4, 8, 16, 32, 64. **(V) is NOT met as written: 24 percent is left at lag 64, not under 10.**
+The decay is monotone with a time constant near 57 sweeps and is consistent with the exact limit 0 of Lemma CEN,
+but the local frame chain is slow at a symmetric slice (it must turn a whole correlated frame). So at central
+slices this chain needs lags of several hundred, or a global rotation move; I did not rerun it. Stationarity,
+the other check: the variance of each amplitude at lag 64 equals the lag-0 variance within noise in all five
+SU(2) runs (for instance 2.44, 2.51, 2.49 against 2.49, 2.54, 2.26). At the tilted slices the plateau is reached
+by lag 8, so (V)'s slowness does not affect them.
+Compact U(1), u_xy, beta 2.3: <X^(0) X^(n)> is 140.0 at lag 0 and 139.8 at lag 64 for L = 6 (flat at all lags); 19.1 and 19.7
+for L = 4. (This L = 4 run sat in a state with X^2 = 19, where batch 2 and the smoke run gave 41; its variance also
+drifts from 19.1 to 21.5 along the frame chain, so it was not in equilibrium. A metastable state at L = 4; the L = 6
+run is clean.)
+**Against the criteria of 7.5.**
+- U(1): the frame chain removes nothing (ratio 1.00 at L = 6), and the moment grows by 7.1 from L = 4 to 6 (3.4 with
+  batch 2's L = 4 value). Criterion met: **compact U(1) at beta 2.3 fails (SG2), hence (SG-step) itself, at u_xy
+  (GUIDE).** This confirms 7.2: for U(1) the order is in gauge-invariant data.
+- SU(2), tilted slices: the angular modes carry 0.5 to 1.7 in temporal gauge (about three times more at tilt 0.1
+  than at 0.3, the 1/tilt law of a cone point) and 0.00 to 0.02 after projection; the radial mode has 0.10 to 0.24
+  and 0.02 to 0.03. The projected values are the same at L = 4 and 8 and at beta 2.3 and 2.6. Criterion met on the
+  X modes: **(SG2) survives these slices on the tie modes; the frame order of 5.7-5.8 does not enter the
+  gauge-invariant score (GUIDE).** The control Y_3 has plateau 0.13 at L = 4 and 0.18 at L = 8 (ratio 1.4, in the
+  inconclusive band; small in size; L = 4 at beta 2.6 is a deconfined box).
+- Also seen: off the symmetric slice the horizontal (radial) mode is small already in temporal gauge (0.10 at
+  tilt 0.3 for both L). So the failure of (SC-hor) sits at the symmetric slice and in a small ball around it,
+  where F has a rounded cone point: the Hessian is of order beta^2 lambda only there, but the gradient of F turns by
+  an amount of order beta sqrt(lambda) across it, and that is what breaks the Taylor step of Lemma HSS (ARGUED).
+What this run does not show: (SG2) for all directions (only five amplitudes were followed), other slices,
+(SG-step) beyond second order, large boxes.
+
+## 8. Result (step 7)
+
+Reading order of this file: Sections 1, 2, 3, 4, then 5.1-5.4, 5.5-5.8, then 6 (6.1-6.3), 7, 8. The sections were
+appended in the order in which the work was done, so 3 and 4 sit between the two parts of 5, and 5.5-5.8 sit
+around 6 and 7.
+Plan against what was done: steps 1 to 7 ran. Step 5 became a refutation test in place of a proof. Five GUIDE
+batches ran under the numeric lock (08:43-09:51Z); smoke runs of a few seconds each (about 20 s in all) ran
+outside the lock while another lane held it, and no reported number comes from them. Started 08:18Z, ended about
+10:00Z; about $17 of the $25 budget.
+
+| Statement | Label |
+|---|---|
+| (2.1), Lemma UNROLL, (2.3): the one-step law is exp(beta<u,w> - V(w) + F(w)); the Omega factor is the integrated future of the local half-space Wilson measure; (SC) can be written with no Omega, as a first-layer covariance of that measure | PROVED (by hand, Claude Fable 5.2, not yet checked; rests on row 944's lemmas, READ, unchecked) |
+| 2.3: (SC) is a box-free bound on the covariance of the first-step electric field Im P_l under the half-space measure with Dirichlet datum u, uniform in u | PROVED |
+| Identity TV (2.4): Hess F = variance of the projected score + gauge-frame variance - a local term | PROVED |
+| Lemma HG and Theorem SC-hor: a Hessian bound on horizontal vectors only gives (SG-step) with sigma^2 = C_h + beta | PROVED |
+| Proposition AV: the vacuum average of the first-step electric covariance is at most 1 on every box (SU(2); false for U(1)). The content of (SC) is the supremum over slices | PROVED |
+| 3.1-3.4: (SC) is row 941's (C2) up to beta; (SG-step) is a reverse log-Sobolev inequality for P, at second order a reverse Poincare inequality; with (C1-av) it gives (FC) with theta = sigma^2/alpha_c; the photon shows (SC) implies no rate | PROVED (the duality behind 3.2 is Bobkov-Goetze, RECALLED) |
+| 3.5: in the Gaussian class (SC) holds with C_F = beta by stationarity alone; in the flat log-concave class too | PROVED (Gaussian); CONDITIONAL on Prekopa and Brascamp-Lieb (log-concave) |
+| 3.6: (LSI-vac), (FC) do not imply (SC) | ARGUED (hidden-field mechanism; not proved) |
+| Fact tests of Section 4: photon and free links pass; Example DW violates; frozen groups outside the domain; SMALL-BOX and FT-CEIL no conflict | PROVED / ARGUED as marked there |
+| Identity REC (Bellman recursion for Hess F along left-invariant fields); it is not a contraction | PROVED; the reading ARGUED |
+| Proposition FR: at a central slice the projected score is 0 and all of Hess F is gauge-frame fluctuation | PROVED |
+| 7.2: the two staggered patterns at u_xy are gauge equivalent for SU(2) and inequivalent for U(1); the U(1) score is odd under charge conjugation | PROVED |
+| Kill test: at the layered pi-flux slice u_xy the first-step electric susceptibility saturates at beta 2.3 (2.5) and 2.4 (about 8), grows like the volume at beta 2.5 (L = 4 to 20) and 2.6 (L = 4 to 12), is critical-like at 2.45, fully ordered at 6.0; all controls pass | GUIDE |
+| Compact U(1) at beta 2.3 (Coulomb phase): exact L^3 growth at u_xy, none at u = 1, none at beta 0.9; the growth survives the gauge projection | GUIDE |
+| SU(2) tilted slices: projected variances of the tie modes are 0.00 to 0.03, the same at L = 4 and 8 and at beta 2.3 and 2.6; the validation at the symmetric slice missed its threshold (slow frame chain) | GUIDE |
+| (SC), (SC-hor) for SU(2) at beta 2.5 to 2.6 | **REFUTED at GUIDE level** at u_xy on boxes up to 20; no proof either way; a correlation length far above 20 is not excluded |
+| Row 944's pointwise form (HS) at beta 2.5 to 2.6 | fails with the same growth, GUIDE + ARGUED (7.1: the frame variance at w = u is taken to be of order one) |
+| (SC), (SC-hor) for SU(2) at beta 2.3 to 2.4 | **OPEN**; survive the slices tried with C_h at least about 12 and 45 |
+| (SG-step) in gauge-invariant form, and its first instance (SG2), for SU(2) on the seed box at beta 2.3 to 2.6 | **OPEN**; this is the smallest unproved inequality (7.3); test 7.4, first run 7.6 |
+
+**Answers to the row.** Question first: (SC) is a genuine order-one statement. It follows from structure only
+in convex classes, where it holds with C_F = beta and no gap (3.5). For the compact chain it says that the Dirichlet
+boundary layer has no order for any boundary slice, and the runs say that this is false in the upper part of the
+window. (a) Sections 2.1-2.3. (b) Separate input: no implication from (FC) or (LSI-vac) (3.6, ARGUED), none to
+them (3.4, PROVED); with (C1-av) it would give (FC) only below sigma^2 < alpha_c (3.3). (c) Section 4, with one new
+fact: compact U(1) FAILS (SC), and (SG-step) itself, in its Coulomb phase (GUIDE), while the photon passes. Attack:
+no proof; first failing step of every tool in 5.4. Smallest unproved inequality: (SG2) of 7.3, then (SG-step) in
+gauge-invariant form. Test that could refute it: 7.4.
+
+**What a next lane should take (ranked).** (1) Drop (SC) as the supplier of (SG-step) for beta >= 2.5; if the seed
+may sit at beta 2.3 to 2.4, say so in the chain, because the same slice orders just above. (2) Run the frame-lag
+test of 7.4 over all horizontal directions (full spectrum, with a global rotation move at symmetric slices) on
+non-symmetric slices where gauge-invariant data could tie: anisotropic deformations of u_pi first. (3) Use the
+U(1) failure as the fact test of any proof of (SG-step): it must use that charge conjugation is a gauge
+transformation (7.2), or some other property that removes the staggered-flux tie.
+
+Limits. Proofs by hand by Claude Fable 5.2 (max), checked by no other model (check = row 951). Row 944 is used
+as READ and is itself unchecked (row 945 not on disk): Theorem SC-hor, Identity TV and Proposition FR rest on its
+Lemmas TG, EF, HSS, CEN, Identity HV and (4.1). Published results (Bobkov-Goetze; Prekopa-Leindler; Brascamp-Lieb;
+Bakry-Emery and Wang for the reading in 3.2; the lattice deconfinement couplings and the Heisenberg critical
+coupling in 5.1, 5.7) are RECALLED and credited, none is used as a step of a PROVED statement except the duality
+in 3.2, which is marked. GUIDE runs prove nothing: boxes up to 20, slab thickness 6 (one control at 10), one slice
+family, five amplitudes in batch 5. Scripts and logs are in `/tmp/gap-sc-950/` (not committed). origin/main and
+the PR branches were not searched (not on this clone). Credit: transfer frame and outline, Ethan Sussman and
+Levent Alpoge (with Claude and Codex as authors of their text); the tilt argument behind Lemma EF is their CA-II
+Corollary 8.3 (as row 944 records); rows 931, 940, 941, 944 for the chain, (SG-step), the exponential family and
+Theorem SC. Nothing here is a public claim.
+
+RESULT: Row 950 (Claude Fable 5.2 max, Mac mini; unchecked, check = row 951): (SC) is NOT proved, and at GUIDE level it is FALSE in the upper part of the window. PROVED (by hand): the exact one-step law and that the Omega factor is the integrated future of the local half-space measure, so (SC) is a box-free first-step electric susceptibility under a Dirichlet slice (2.1-2.3); Identity TV; Theorem SC-hor ((SC) is needed on horizontal vectors only); Proposition AV (the vacuum average is free, the content is the supremum over slices); (SG-step) is a reverse log-Sobolev inequality, (SC) is automatic with C_F = beta in Gaussian classes and is a separate input from (FC)/(LSI-vac) (one direction PROVED by the photon, the other ARGUED); Identity REC; Proposition FR (at a central slice all of Hess F is gauge-frame fluctuation). GUIDE (five batches under the lock, all controls but one pass): at the layered pi-flux slice the first-step electric susceptibility saturates at beta 2.3 (2.5) and 2.4 (about 8) but grows like the volume at beta 2.5 (L = 4 to 20) and 2.6 (L = 4 to 12), so (SC), (SC-hor) and (HS) have no box-free constant there; compact U(1) in its Coulomb phase fails (SC) and (SG-step) itself at the same slice, while for SU(2) the order is a gauge frame and the projected variances at tilted slices stay 0.00 to 0.03. OPEN: (SC) at beta 2.3 to 2.4 (C_h at least about 12 to 45), and for the whole window (SG-step) in gauge-invariant form, first instance (SG2): a box-free covariance of the first-step electric field averaged over the first-step temporal links; the frame-lag test of 7.4 could refute it.

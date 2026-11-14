@@ -275,3 +275,28 @@ mono_kappa = product over the 6 faces of tanh(kappa c_p) (sign -1 iff an odd num
 Reading (GUIDE). NOT REFUTED; the monopole indicator contracts more strongly than any plaquette function. The
 plaquette values on the cube, the 4^3 box and the single plaquette agree within 10 percent (8.5e-4, 8.6e-4,
 7.9e-4): no sign of a collective slow mode in the local sector at beta 2.3.
+
+**b2: K = 8 (4^3 x 17), beta 2.3, m = 4 (`out/b2_L4K8_b2.3.json`, 2.5 min).** Against b1 (K = 6):
+
+| f | R_hat K = 8 | err | R_hat K = 6 | difference / combined err |
+|---|---|---|---|---|
+| plaquette | 8.62e-4 | 4.1e-5 | 8.60e-4 | 0.05 |
+| tanh(3 c) | 5.99e-4 | 3.1e-5 | 5.81e-4 | 0.5 |
+| tanh(10 c) | 1.72e-4 | 1.6e-5 | 1.63e-4 | 0.5 |
+| c^3 | 3.98e-4 | 2.8e-5 | 4.13e-4 | 0.5 |
+| 2 x 2 smeared | 1.113e-3 | 4.7e-5 | 1.129e-3 | 0.3 |
+| zero-momentum plane | 3.48e-3 | 3.2e-4 | 3.57e-3 | 0.2 |
+| winding line | 0.01684 | 4.7e-4 | 0.01623 | 1.2 |
+| 2 x 2 patch of lines | 0.0468 | 1.6e-3 | 0.0446 | 1.3 |
+| cross-section of lines | 0.147 | 6.2e-3 | 0.1385 | 1.3 |
+
+K-stable within errors: the open-time boundary does not move R_hat at K = 6. (Outer lag-1 values near
+-0.3 to -0.5 here are the bias of the lag-1 estimator with only m = 4 rounds per chain, about -1/m; they are
+not evidence of anticorrelation.)
+
+**b3: n = 600 inner sweeps (4^3 x 13, beta 2.3, m = 4; `out/b3_L4K6n600_b2.3.json`, 3.6 min).** Against b1
+(n = 300): plaquette 8.49e-4 +- 2.1e-5 (b1 8.60e-4), tanh 3c 5.93e-4 (5.81e-4), tanh 10c 1.76e-4 (1.63e-4),
+c^3 3.98e-4 (4.13e-4), 2 x 2 smeared 1.160e-3 (1.129e-3), zero-momentum plane 3.17e-3 +- 1.6e-4 (3.57e-3 +- 2.2e-4),
+line 0.01652 (0.01623), patch 0.0453 (0.0446), cross-section 0.1411 +- 0.0042 (0.1385). All differences are
+within 1.5 combined errors: n-stable. The O(tau/n) bias (about 0.7 percent at n = 300, from C1) is below the
+statistical error.

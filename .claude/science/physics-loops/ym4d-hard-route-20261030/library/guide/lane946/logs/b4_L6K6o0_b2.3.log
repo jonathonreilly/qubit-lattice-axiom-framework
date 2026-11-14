@@ -1,0 +1,2 @@
+[    0.1s rss     97MB] su2 geom=box L=6 K=6 beta=2.3 B=8 m=6 nsep=10 n=300 nor=2 links=11016 colours=11 NF=900 rows=1154
+[   27.9s rss    160MB] thermalised; plaquette mean 0.5970030008264452

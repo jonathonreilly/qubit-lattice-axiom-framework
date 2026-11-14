@@ -47,6 +47,7 @@ def main(d):
         print(f"\n=== {g} beta {b}")
         print("L | nmeas | sector tops (raw +- err; bias-corr) | R_J^top (sector) | C4 extra-pair top of that sector | E_wind | floor 1/(2 beta E_wind) | E_plaq(0), E_plaq(1) | E c_p")
         tops = []
+        photonB = []
         for L in Ls:
             r = runs[(g, b, L)]
             S = r["sectors"]
@@ -63,6 +64,10 @@ def main(d):
                   f"{ew:.4f}+-{ewe:.4f} | {fl:.3f}+-{fle:.3f} | {gp['Eeff'][0]:.3f}+-{gp['Eeff_err'][0]:.3f}, "
                   f"{gp['Eeff'][1]:.3f}+-{gp['Eeff_err'][1]:.3f} | {r['stats_mean'][0]:.4f}")
             tops.append((L, best, S[best]["top"], S[best]["err"], S[best]["top_bc"]))
+            if g == "su2":
+                am, m2, m4 = r["stats_mean"][3:6]
+                print(f"     spatial Polyakov loop (mean over a slice, one direction): E|M| {am:.4f}, E M^2 {m2:.5f}, "
+                      f"Binder U = 1 - E M^4/(3 (E M^2)^2) = {1-m4/(3*m2*m2):.3f} (2/3 ordered, 0 Gaussian)")
             # C4 for every sector
             dev = []
             for k in S:
@@ -71,6 +76,17 @@ def main(d):
                     dev.append(f"{k} {dz:+.1f}")
             print(f"     C4 (central K' vs extra K), deviation in combined errors: {', '.join(dev)}")
             if g == "u1":
+                sp = list(range(0, 6)) + list(range(9, 21))          # space-like fields only (magnetic)
+                C = np.array(S["U1s"]["C"])[np.ix_(sp, sp)]
+                G = np.array(S["U1s"]["G"])[np.ix_(sp, sp)]
+                e, V = np.linalg.eigh(G)
+                B = V[:, e > 1e-9*e.max()]/np.sqrt(e[e > 1e-9*e.max()])
+                tb = float(np.linalg.eigvalsh(B.T @ C @ B)[-1])
+                tbe = tb*S["U1s"]["err"]/S["U1s"]["top"]
+                om0 = 2*math.asinh(math.sin(math.pi/L))
+                print(f"     U1s-B (space-like fields only, the transverse photon): {tb:.4f} +- {tbe:.4f} (error scaled from U1s); "
+                      f"free photon {1/(b*(math.exp(om0)-1)):.4f}; ratio {tb*(b*(math.exp(om0)-1)):.3f}")
+                photonB.append((L, tb, tbe))
                 gb = r["gaps"]["Bkmin"]
                 om = 2*math.asinh(math.sin(math.pi/L))
                 print(f"     photon: E_B(kmin) tau=0,1,2: " + ", ".join(f"{e:.3f}+-{s:.3f}" for e, s in zip(gb['Eeff'][:3], gb['Eeff_err'][:3]))
@@ -83,6 +99,13 @@ def main(d):
             first = [t for t in sel if t[0] == 6][0]
             last = sel[-1]
             print(f"  R(L_max) - R(6) = {last[2]-first[2]:+.4f} +- {math.hypot(last[3], first[3]):.4f}")
+        if len(photonB) >= 3:
+            k, ke, chi2, dof = fit([p[0] for p in photonB], [p[1] for p in photonB], [p[2] for p in photonB])
+            print(f"  U1s-B (transverse photon) over all L: kappa = {k:.3f} +- {ke:.3f} (chi2 {chi2:.1f}/{dof})")
+            pb = [p for p in photonB if p[0] >= 6]
+            if len(pb) >= 3:
+                k, ke, chi2, dof = fit([p[0] for p in pb], [p[1] for p in pb], [p[2] for p in pb])
+                print(f"  U1s-B over L >= 6: kappa = {k:.3f} +- {ke:.3f} (chi2 {chi2:.1f}/{dof})")
         for secname in runs[(g, b, Ls[0])]["sectors"]:
             pts = [(L, runs[(g, b, L)]["sectors"][secname]["top"], runs[(g, b, L)]["sectors"][secname]["err"]) for L in Ls if L >= 6]
             if len(pts) >= 3:

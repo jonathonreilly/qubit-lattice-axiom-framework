@@ -237,3 +237,41 @@ one-plaquette chain value R(cos theta) = 7.9e-4: one-step contraction of a plaqu
 fixed at the scale of one plaquette. R grows with the spatial extent of f (plaquette 8.6e-4, 2 x 2 square
 1.1e-3, plane sum 3.6e-3; line 0.016, patch 0.045, cross-section 0.14): smooth, extended f contract least,
 as in the Gaussian case where R = e^(-2 omega) per mode. The odd functions of c_p contract more than c_p.
+
+### Step 6: beta 2.6, the one-cube chain, and the systematic checks (GUIDE)
+
+**b5: 4^3 x 13, beta 2.6, same parameters as b1 (`out/b5_L4K6_b2.6.json`, 3.6 min).** Inner tau_int 0.50-0.59.
+
+| f | R_hat (beta 2.6) | err | R_hat (beta 2.3, b1) |
+|---|---|---|---|
+| O1 plaquette | 6.65e-4 | 1.7e-5 | 8.60e-4 |
+| O2a 2 x 2 smeared | 8.04e-4 | 2.3e-5 | 1.129e-3 |
+| O2b zero-momentum plane sum | 1.35e-3 | 1.6e-4 | 3.57e-3 |
+| O3 tanh(3 c_p) | 4.11e-4 | 1.6e-5 | 5.81e-4 |
+| O3 tanh(10 c_p) | 9.75e-5 | 9.4e-6 | 1.63e-4 |
+| O3 c_p^3 | 3.70e-4 | 1.8e-5 | 4.13e-4 |
+| O4a winding line | 0.02159 | 3.3e-4 | 0.01623 |
+| O4b 2 x 2 patch of lines | 0.0620 | 1.2e-3 | 0.0446 |
+| O4c whole cross-section of lines | 0.2028 | 4.2e-3 | 0.1385 |
+
+Reading (GUIDE). NOT REFUTED at beta 2.6 on 4^3; all R_hat + 3 err below 0.22. The local observables contract
+more at 2.6 than at 2.3; only the winding-line family (centre-odd, the SMALL-BOX probe) moves toward 1, as
+the side-4 box shrinks in physical units. At this size and coupling it is still far from 1.
+
+**b6: the one-cube chain (12 links, 6 plaquettes, open cube slice), beta 2.3, K = 6, B = 64, m = 4, n = 1000
+(`out/b6_cube_b2.3.json`, 1.3 min).** Row 941 named this chain, the smallest unit with a Z_2 monopole, and did not
+set it up. Observables as O1, O3 on each face (all 6 averaged) and the smooth Z_2 monopole indicator
+mono_kappa = product over the 6 faces of tanh(kappa c_p) (sign -1 iff an odd number of faces has c_p < 0).
+
+| f | R_hat | err |
+|---|---|---|
+| face plaquette c_p | 8.53e-4 | 1.3e-5 |
+| tanh(3 c_p) | 5.76e-4 | 2.6e-5 |
+| tanh(10 c_p) | 1.75e-4 | 1.9e-5 |
+| c_p^3 | 3.68e-4 | 1.2e-5 |
+| monopole indicator, kappa = 3 | 2.52e-4 | 1.9e-5 |
+| monopole indicator, kappa = 10 | 5.9e-5 | 7.4e-6 |
+
+Reading (GUIDE). NOT REFUTED; the monopole indicator contracts more strongly than any plaquette function. The
+plaquette values on the cube, the 4^3 box and the single plaquette agree within 10 percent (8.5e-4, 8.6e-4,
+7.9e-4): no sign of a collective slow mode in the local sector at beta 2.3.

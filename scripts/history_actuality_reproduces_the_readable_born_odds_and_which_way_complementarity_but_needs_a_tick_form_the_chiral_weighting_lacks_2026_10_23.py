@@ -108,11 +108,41 @@ ncost = np.zeros((NP, NP))
 for i in range(NP):
     for j in range(NP):
         ncost[i, j] = 2 * (i // L != j // L) + 2 * (i % L != j % L)
-mask = (pb1 > 1e-14)
 lpw, Jw = transport(pb1 + 1e-300, pb2 + 1e-300, Ub, ncost=ncost)
-moved = sum(Jw[i, j] for i in range(NP) for j in range(NP) if i % L != j % L)
-check("A5 CL-2 on the recorded toy: copy is a permutation, walk support never changes the pointer, so CL-2's "
-      "readable (pointer, mode) joint = D(a,a)", lpw.status == 0 and moved < 1e-14, f"pointer change mass {moved:.1e}")
+forbid = ~(np.abs(Ub) > 1e-12).T                     # forbid[i, j]: i -> j has a zero element of the tick
+born_joint = born_rb.reshape(L, NM)                  # [pointer x, mode b] at t2, = diag D(a,a) of A4
+def plan_props(Jm):
+    """Every property the A5 statement uses, for a plan Jm[source i, target j] on the recorded toy."""
+    fin = bool(np.isfinite(Jm).all())
+    agg = np.zeros((L, NM))                          # aggregate by source pointer (i % L) and final mode (j // L)
+    np.add.at(agg, (np.arange(NP)[:, None] % L, np.arange(NP)[None, :] // L), np.nan_to_num(Jm))
+    return dict(finite=fin, nonneg=fin and Jm.min() >= 0, norm=abs(Jm.sum() - 1),
+                rows=np.abs(Jm.sum(1) - pb1).max(), cols=np.abs(Jm.sum(0) - pb2).max(),
+                forbidden=float(np.abs(Jm[forbid]).sum()), cost=abs((Jm * ncost).sum() - lpw.fun),
+                ptr=float(sum(Jm[i, j] for i in range(NP) for j in range(NP) if i % L != j % L)),
+                joint=np.abs(agg - born_joint).max(), joint_D=np.abs(agg.ravel() - np.diag(Dp).real).max())
+def plan_valid(d): return (d["finite"] and d["nonneg"] and d["norm"] < 1e-12 and d["rows"] < 1e-12
+                           and d["cols"] < 1e-12 and d["forbidden"] < 1e-15 and d["cost"] < 1e-9)
+def plan_readable(d): return d["ptr"] < 1e-14 and d["joint"] < 1e-12 and d["joint_D"] < 1e-12
+pw = plan_props(Jw)
+check("A5 CL-2 plan on the recorded toy is a transport: finite, nonnegative, total mass 1, row sums = source odds pb1 "
+      "(after the copy), column sums = target odds pb2 (t2), zero mass on zero elements of the tick, cost = LP optimum",
+      lpw.status == 0 and plan_valid(pw),
+      f"LP status {lpw.status}, min {np.min(Jw):.1e}, |mass-1| {pw['norm']:.1e}, row err {pw['rows']:.1e}, col err "
+      f"{pw['cols']:.1e}, forbidden mass {pw['forbidden']:.1e}, cost {(Jw * ncost).sum():.4f} vs LP {lpw.fun:.4f}")
+check("A5b the copy is a permutation and the walk support never changes the pointer (moved mass 0); the plan aggregated "
+      "by (source pointer, final mode) equals the sequential Born joint born_rb = diag D(a,a) of A4, so CL-2's readable "
+      "(pointer, mode) joint = D(a,a)", plan_readable(pw),
+      f"pointer change mass {pw['ptr']:.1e}; |agg - born_rb| {pw['joint']:.1e}; |agg - diag D| {pw['joint_D']:.1e}")
+pz_, pp_ = plan_props(np.zeros_like(Jw)), plan_props(np.outer(pb1, pb2))
+check("A5c control: the A5/A5b assertions reject a zero plan (mass, marginals, cost and the Born joint fail) and the "
+      "independent product plan pb1 x pb2 (correct marginals; zero elements of the tick, pointer changes and the "
+      "Born joint fail)",
+      not plan_valid(pz_) and pz_["norm"] > 0.5 and pz_["rows"] > 1e-3 and pz_["joint"] > 1e-3
+      and not plan_valid(pp_) and pp_["rows"] < 1e-12 and pp_["cols"] < 1e-12 and pp_["forbidden"] > 1e-3
+      and pp_["ptr"] > 1e-3 and pp_["joint"] > 1e-3,
+      f"zero plan: |mass-1| {pz_['norm']:.2f}, joint err {pz_['joint']:.2f}; product plan: forbidden mass "
+      f"{pp_['forbidden']:.3f}, pointer change {pp_['ptr']:.3f}, joint err {pp_['joint']:.3f}")
 
 # ---------------- B. which-way pointer and complementarity ----------------
 Hd = np.array([[1, 1], [1, -1]]) / np.sqrt(2); I2 = np.eye(2)
@@ -164,8 +194,10 @@ Dco = np.zeros((2, 2), complex)
 for i, (a, o, b, c) in enumerate(lab):
     for j, (a2, o2, b2, c2) in enumerate(lab):
         Dco[a, a2] += D3[i, j]
-check("C1 coarse-graining a decohering set keeps it decohering, and the late set's path marginal = the t1 record odds",
-      offdiag(Dco) < 1e-15 and np.allclose(np.diag(Dco).real, [0.5, 0.5]), "records accumulate when kept")
+check("C1 coarse-graining the decohering B3 set onto the path keeps it decohering, and its diagonal = the t1 path odds "
+      "(coarse-graining and marginal identity only; refinements need not decohere, see C2, C3)",
+      offdiag(Dco) < 1e-15 and np.allclose(np.diag(Dco).real, [0.5, 0.5]),
+      f"offdiag {offdiag(Dco):.1e}, diag {np.round(np.diag(Dco).real, 6)}")
 Uer = np.kron(Hd, I2) @ ctrl(Ry(-np.pi)) @ ctrl(Ry(np.pi))         # copy, then coherent un-copy
 s1 = np.kron(Hd, I2) @ e00
 De = dfun([PA(o) @ Uer @ PA(a) @ s1 for a in (0, 1) for o in (0, 1)])
@@ -293,13 +325,31 @@ for Ls in (4, 6):
 check("D1 vector-like overlap (antiperiodic tick): det(1+V) real, >= 0 on every background; an L x R pair of one "
       "charge is real too (positive history measure)", vimag < 1e-10 and vneg == 0 and lr < 1e-10,
       f"max |Im/det| {vimag:.1e}, negatives {vneg}, max |arg L x R| {lr:.1e}")
-check("D2 chiral 3-4-5-0 weight at Q = 0 is complex: small nonzero phase growing with roughness (prediction 1e-7..0.1)",
+check("D2 chiral 3-4-5-0 weight at Q = 0 is complex: small nonzero phase at link noise 0.03 on 4x4 and 6x6 (prediction "
+      "1e-7..0.1; one noise level, so no dependence on roughness or size is tested)",
       qs == {0.0} and all(1e-7 < v < 0.1 for v in ph_max.values()), ", ".join(f"{l}x{l}: max|arg| {v:.1e}" for l, v in ph_max.items()))
 check("D3 WB-phase gauge variation: single charge-5 L det varies, anomaly-free product less (first prediction; a later 10x threshold fails on 6x6)",
       all(b < a for a, b in gv.values()), ", ".join(f"{l}x{l}: q5 {a:.1e}, 3450 {b:.1e}, ratio {a / b:.0f}" for l, (a, b) in gv.items()))
-mism = {q: chiral_det(flux_bg(6, 1), q, 6, "L" if q != 5 else "R")[1] for q in (3, 4, 5)}
-check("D4 Q=1 sector (6x6): negative-mode counts shift by the charge (3+4 L zero modes vs 5 R), weight 0 "
-      "without fermion insertions", all(abs(mism[q]) == q for q in (3, 4, 5)), f"shifts {mism}")
+def plaq(th):
+    return np.angle(np.exp(1j * (th[0] + np.roll(th[1], -1, 0) - np.roll(th[0], -1, 1) - th[1])))
+def q1_data(th):
+    shifts = {q: chiral_det(th, q, 6, "L" if q != 5 else "R")[1] for q in (3, 4, 5)}
+    gaps = {q: float(np.min(np.abs(np.linalg.eigvalsh(Hov(th, q, 6))))) for q in (3, 4, 5)}
+    return topQ(th, 6), shifts, gaps, float(np.abs(plaq(th)).max())
+q_s, mism, gap_s, pl_s = q1_data(flux_bg(6, 1))
+check("D4 on the supplied smooth Q = 1 flux background flux_bg(6, 1) (6x6, uniform plaquette 2 pi/36): negative-mode "
+      "counts shift by the charge (3+4 L zero modes vs 5 R), so that background's weight is 0 without fermion insertions",
+      q_s == 1.0 and all(abs(mism[q]) == q for q in (3, 4, 5)) and min(gap_s.values()) > 1e-3,
+      f"Q {q_s:.0f}, shifts {mism}, min |eig H| {min(gap_s.values()):.3f}, max |plaquette| {pl_s:.3f}")
+# negative result: the zero-mode statement does not hold for every Q = 1 history (seeded rough background, own generator)
+th_r = flux_bg(6, 1) + 0.4 * np.random.default_rng(10124).normal(size=(2, 6, 6))
+q_r, mism_r, gap_r, pl_r = q1_data(th_r)
+check("D4b counterexample (decisive control on D4): on the rough Q = 1 background flux_bg(6, 1) + 0.4 N(0, 1) "
+      "(default_rng(10124)) every negative-mode shift is 0 and the spectral gaps are not numerical zeros, so 'every "
+      "Q = 1 gauge history has unbalanced zero modes' is false; no admissibility domain or index theorem is checked",
+      q_r == 1.0 and all(mism_r[q] == 0 for q in (3, 4, 5)) and min(gap_r.values()) > 1e-3,
+      f"Q {q_r:.0f}, shifts {mism_r}, min |eig H| " + ", ".join(f"q{q} {v:.4g}" for q, v in gap_r.items())
+      + f", max |plaquette| {pl_r:.3f}")
 # class weights by a local flux record: sign of plaquette (0,0) angle; Q = 0 sample, Gaussian gauge weight
 Ls = 4; wcl = {+1: 0j, -1: 0j}; wv = {+1: 0., -1: 0.}
 for k in range(24):
@@ -309,7 +359,8 @@ for k in range(24):
     wcl[sg] += w; wv[sg] += abs(w) ** 2
 argc = max(abs(np.angle(v)) for v in wcl.values())
 check("D5 classes of Euclidean histories by a local flux record: chiral class weights complex (not probabilities); "
-      "only |W|^2 (mirror added = vector-like) is positive", argc > 1e-9 and min(wv.values()) > 0,
+      "the tested mirror/square prescription |W|^2 (mirror added = vector-like) gives positive class weights "
+      "(no claim about other positive reweightings)", argc > 1e-9 and min(wv.values()) > 0,
       f"max class |arg| {argc:.2e}")
 
 # ---------------- E. set selection ----------------
@@ -356,10 +407,14 @@ for n in range(Ns):
         m = rng.choice(NM, p=Ks[t][m] / Ks[t][m].sum()); cnt[n, m // 2] += 1
 born_site = sum(p.reshape(L, 2).sum(1) for p in pt[1:])
 z = (cnt.mean(0) - born_site) / (cnt.std(0) / np.sqrt(Ns))
-check("F1 source expectation: CL-2 record counts per site = sum of single-time Born odds = diagonal D of the "
-      "single-time sets (static tick-fraction exterior needs only this)", np.abs(z).max() < 4, f"max z {np.abs(z).max():.2f}")
+check("F1 CL-2 record counts per site = sum of single-time Born odds = diagonal D of the single-time sets "
+      "(the gravity-source reading that would use this rests on a campaign note not in this repository; not checked)",
+      np.abs(z).max() < 4, f"max z {np.abs(z).max():.2f}")
 print("Supplied: decoherence-functional rule (Gell-Mann-Hartle/Griffiths), coin angle, pointer couplings, m0=1, "
       "3-4-5-0 content, WB phase convention (Narayanan-Neuberger), Elby-Bub uniqueness. Toys only.")
+print("NOT CHECKED (historical reported inputs, not in this repository): overlap-from-walk (no tick form), "
+      "overlap-colour/nonabelian (source of the chiral weighting), tick-fraction-beta (gravity source), "
+      "info-accounting (read once).")
 print(f"elapsed {time.time() - T0:.1f}s, peak RSS {resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 2**20:.0f} MB")
 print(f"TOTAL: PASS={P} FAIL={F}")
 raise SystemExit(1 if F else 0)

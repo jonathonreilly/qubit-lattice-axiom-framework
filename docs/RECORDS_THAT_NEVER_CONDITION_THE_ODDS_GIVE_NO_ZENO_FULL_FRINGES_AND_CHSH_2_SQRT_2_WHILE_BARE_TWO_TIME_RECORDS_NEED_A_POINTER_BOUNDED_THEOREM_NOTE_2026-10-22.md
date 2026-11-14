@@ -8,9 +8,10 @@ upstream_dependencies:
 runner: scripts/records_that_never_condition_the_odds_give_no_zeno_full_fringes_and_chsh_2_sqrt_2_while_bare_two_time_records_need_a_pointer_2026_10_22.py
 ---
 
-# Records that never condition the odds give no Zeno effect, full fringes and CHSH 2 sqrt 2, while bare two-time records need a pointer
+# Records that never condition the odds give no Zeno effect, full fringes and CHSH 2 sqrt 2, and in the supplied model a pointer copy removes the distant-setting dependence of bare two-time records
 
 Claim type: bounded_theorem.
+Title note (2026-11-14): the file name keeps the earlier title, "... while bare two-time records need a pointer". That wording claims necessity, which this note does not show: items 8 and 9 give one dependence of bare two-time records in a supplied model and one construction, a pointer copy, that removes it. No other reading rule is ruled out.
 Primary runner: `scripts/records_that_never_condition_the_odds_give_no_zeno_full_fringes_and_chsh_2_sqrt_2_while_bare_two_time_records_need_a_pointer_2026_10_22.py`.
 
 The actuality law tested here is a supplied candidate with zero premise weight; it is not adopted. It is defined in this paragraph. It is not a clause of the [candidate-law register](CANDIDATE_LAWS.md) on `main`, whose CL-1 to CL-3 aliases are other clauses; CL-2 below is the three-law numbering of the source branch. The law keeps one actual configuration distributed as its odds; each half-tick the configuration moves by the transport that uses only nonzero elements of the half-tick, changes the fewest mode occupations on average and, of those, has greatest entropy (the transport of [the transport note](SUPPORT_CONFINED_RELAY_TRANSPORT_ON_THE_MARGOLUS_TICK_BOUNDED_THEOREM_NOTE_2026-10-21.md)), and each matter mode's occupation then gets a permanent record. Records never condition the odds. This note asks what that gives for constant recording, a two-path interferometer and a CHSH test, and which records may be read. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) fix none of the model inputs used here.

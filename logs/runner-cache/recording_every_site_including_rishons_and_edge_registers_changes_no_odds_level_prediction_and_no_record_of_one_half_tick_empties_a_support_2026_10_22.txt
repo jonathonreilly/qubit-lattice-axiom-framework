@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/recording_every_site_including_rishons_and_edge_registers_changes_no_odds_level_prediction_and_no_record_of_one_half_tick_empties_a_support_2026_10_22.py
-runner_sha256: 91e149586b993723c803a5e855a382e0f0b441b2fa8fea993a2357f970b9580c
-input_fingerprint_sha256: 0f5bcf5b0cf814fc60ac1335868d3d266d8da33f722c82d0ab5fe5e52c5ceb52
+runner_sha256: 19748f282f335c081366bde60da2f914427fedaefb1ae64409fbbce6844637e0
+input_fingerprint_sha256: 85fe26171be6feb2c51ce929271675eef4bb9b3e2821ec2861a8e50e429bb8a0
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 2.96
@@ -19,16 +19,18 @@ status: ok
 STRUCTURAL (not counted) A10 [T]: record-set independence holds by construction: the transport (walk) takes the odds, the half-ticks and the cost and no record set, so candidates (i), (ii) and (iii) record the same actual histories and differ only in the readable set; records per half-tick: (i) 4, (ii) 12, (iii) 12
 [PASS] A8 [T+D] non-abelian rishons: colour-component occupations are not gauge invariant, but in a gauge-invariant state their Born record law is the same in every gauge-rotated basis, so recording them is as safe as recording matter colour components (control: a non-singlet state)  max law change under random SU(2): singlet 2.2e-16, control 0.58
 == B. photons with every link site recorded
-[PASS] B1 [T+D+E] emitter decay with every link site recorded each half-tick: the Wigner-Weisskopf rate, independent of the half-tick; conditioning records would Zeno-freeze it  Gamma=2g^2/J 0.180; fitted 0.189 (dt 0.05), 0.189 (dt 0.02); conditioned 0.0045, 0.0018; hydrogen 2p estimate: conditioned at the Planck half-tick, lifetime ~1.60 ns x 2pi/(t_P c/a0) = 3e+16 s (measured 1.60 ns)
+[PASS] B1 [T+D] emitter decay with every link site recorded each half-tick: the Wigner-Weisskopf rate, independent of the half-tick; conditioning records would Zeno-freeze it  Gamma=2g^2/J 0.180; fitted 0.189 (dt 0.05), 0.189 (dt 0.02); conditioned 0.0045, 0.0018
+[PASS] B1b [T+D] short-time input of the Zeno contrast: the conditioned rate is dt Var(H) = g^2 dt, so two chains with the same decay rate 2g^2/J give conditioned rates in the ratio 2; a decay rate alone does not fix the Zeno suppression  Gamma 0.180 = 0.180; conditioned 0.00450 vs g^2 dt 0.00450; 0.00899 vs 0.00900; ratio 1.999
+      CONDITIONAL ESTIMATE (not a check; supplied short-time model): with records conditioning the odds every tau = t_P, the rate becomes tau Var(H)/hbar^2; with a supplied flat coupling spectrum cut off at w_c = c/a0, Var(H)/hbar^2 = Gamma w_c/(2 pi), so the hydrogen 2p lifetime 1.60 ns (supplied) would become ~3e+16 s; the number scales as 1/w_c and is not derived from the chain or the lifetime
 [PASS] B2 [T+D] single photon through a Mach-Zehnder of link sites, every site recorded each step: full fringes; conditioning records erase them (bare which-arm records, read only through pointers, as for matter)  P(D1) at phi=0, pi: 1.000, 0.000; V=1.000; conditioned V=0.005
-[PASS] B3 [T+D] anticorrelation: each actual configuration holds the one photon on one link site, so arm records never coincide (g2(0) = 0 by construction of the one-photon configuration space; the computed part is P(arm u) = 1/2; measured single-photon g2 well below 1); a definite or classically mixed link gives g2 >= 1 (definite-links)  P(arm u recorded) 0.496; arm coincidences 0/24000; g2(0) = 0
+[PASS] B3 [T+D] anticorrelation: each actual configuration holds the one photon on one link site, so arm records never coincide (g2(0) = 0 by construction of the one-photon configuration space; the computed part is P(arm u) = 1/2; measured single-photon g2 well below 1); comparator, not checked here: in a classical model where the detected intensity is a nonnegative random variable I, g2(0) = <I^2>/<I>^2 >= 1 by Cauchy-Schwarz  P(arm u recorded) 0.496; arm coincidences 0/24000; g2(0) = 0
 [PASS] B4 [T+D] repeated link-number records agree at every half-tick (the fewest-change transport keeps a stationary number), so link records count photons without demolition, while the field's coherence stays: phase decoherence, as in measured non-demolition counting, comes from a pointer coupled in the odds  repeat fraction 1.000; |<a>| before/after 0.805/0.805; with a dispersive probe 0.569
 == C. mediated entanglement with the mediator recorded each half-tick
 [PASS] C1 [T+D+E] a mediator register (edge for gravity, link for a Coulomb gate) recorded every half-tick in a CALIBRATED toy (coupling gm = sqrt(dphi/(16 pi)) set from the target phase, so toy C = |sin(dphi/2)| by construction; not an independent gravity prediction): it stays indefinite mid-run, returns, and the qubits end with the imposed-phase entanglement; conditioning pins it and loses it  inner phase 0.791 rad, dphi 0.314, target C 0.1563; gm 0.07903 calibrated; toy C 0.1563 (return 1.000000, mid-run P(n>0) 0.0475); conditioned C 0.0075
 [PASS] C1b [T+D] calibration control: the toy concurrence is |sin(8 pi gm^2)| for the gm put in; with gm' = 1.25 gm (not calibrated) it follows gm' and misses the BMV target, so the C1 agreement is imposed by the calibration  16 pi gm^2 - dphi = -5.6e-17; gm' 0.09878: toy C 0.2428 vs |sin(8 pi gm'^2)| 0.2428 vs target 0.1563
-supplied: link ring w=1, m=0.5, dt 0.35 (A); chain g=0.3, J=1; MZ layout; probe phase pi/2 (B); oscillator mediator, 200 half-ticks per period, d=14, coupling gm = sqrt(dphi/(16 pi)) CALIBRATED from the target phase (C); comparison inputs: BMV 1e-14 kg, 200 um, 250 um, 2.5 s; hydrogen 2p 1.60 ns, a0, t_P; seed 20261022
+supplied: link ring w=1, m=0.5, dt 0.35 (A); chain g=0.3, J=1 (and g=0.3 sqrt 2, J=2 in B1b); MZ layout; probe phase pi/2 (B); oscillator mediator, 200 half-ticks per period, d=14, coupling gm = sqrt(dphi/(16 pi)) CALIBRATED from the target phase (C); comparison inputs: BMV 1e-14 kg, 200 um, 250 um, 2.5 s; for the conditional estimate only: hydrogen 2p 1.60 ns, a0, t_P, flat coupling spectrum cut off at c/a0; seed 20261022
 runtime 2.7 s
-TOTAL: PASS=15 FAIL=0
+TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----
 

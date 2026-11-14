@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/records_that_never_condition_the_odds_give_no_zeno_full_fringes_and_chsh_2_sqrt_2_while_bare_two_time_records_need_a_pointer_2026_10_22.py
 runner_sha256: ff6d9a428d8d435344b6d3f7031b402a816ee9875baaf7783547754cf4daadbc
-input_fingerprint_sha256: 02a4d2406924548938b3ca52d1e18f33e81931fa5b220b0685a5be7aca50d261
+input_fingerprint_sha256: f978e2c57a57a1a3b60aa4843eec7fc2e4b3e28c58cf592b3dd8587c2eda13a9
 timeout_sec: 90
 exit_code: 0
-elapsed_sec: 0.94
+elapsed_sec: 1.01
 status: ok
 ----- stdout -----
 A. constant records: one fermion, two modes, hop th = pi/40 per half-tick, a record every half-tick

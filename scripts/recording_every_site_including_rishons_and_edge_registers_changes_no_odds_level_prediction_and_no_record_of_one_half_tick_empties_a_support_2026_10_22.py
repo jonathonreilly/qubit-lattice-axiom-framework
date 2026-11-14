@@ -27,7 +27,8 @@ Sections
 Contrast throughout: the alternative where records condition the odds.
 Supplied: toy Hamiltonians, sizes, couplings, dt, seeds, tolerance 1e-12; the
 BMV inputs (1e-14 kg, 200 um, 250 um, 2.5 s) and the target-calibrated gm (C);
-the 1.60 ns hydrogen 2p lifetime, a0 and t_P as comparison inputs (B1).
+the 1.60 ns hydrogen 2p lifetime, a0 and t_P, and a flat coupling spectrum cut
+off at c/a0, as inputs of a printed conditional estimate that is not a check (B1).
 """
 import sys
 import time
@@ -353,12 +354,30 @@ for dtw in (0.05, 0.02):
     else:
         r02, rz02 = rate, rz
 tP, wc = 5.391e-44, 2.998e8 / 5.29e-11
-check(abs(r05 / Gam - 1) < 0.1 and abs(r02 / r05 - 1) < 1e-2 and rz05 < Gam / 10 and rz02 < rz05, "B1 [T+D+E]",
+check(abs(r05 / Gam - 1) < 0.1 and abs(r02 / r05 - 1) < 1e-2 and rz05 < Gam / 10 and rz02 < rz05, "B1 [T+D]",
       "emitter decay with every link site recorded each half-tick: the Wigner-Weisskopf rate, independent of the "
       "half-tick; conditioning records would Zeno-freeze it",
-      f"Gamma=2g^2/J {Gam:.3f}; fitted {r05:.3f} (dt 0.05), {r02:.3f} (dt 0.02); conditioned {rz05:.4f}, {rz02:.4f}; "
-      f"hydrogen 2p estimate: conditioned at the Planck half-tick, lifetime ~1.60 ns x 2pi/(t_P c/a0) = "
-      f"{1.6e-9 * 2 * np.pi / (tP * wc):.0e} s (measured 1.60 ns)")
+      f"Gamma=2g^2/J {Gam:.3f}; fitted {r05:.3f} (dt 0.05), {r02:.3f} (dt 0.02); conditioned {rz05:.4f}, {rz02:.4f}")
+# the conditioned (Zeno) rate is set by the short-time energy variance, not by the decay rate: for an emitter that starts
+# on site 0, |U00(dt)|^2 = 1 - Var(H) dt^2 + O(dt^4) with Var(H) = g^2, so -ln|U00|^2/dt -> g^2 dt. Two chains with the
+# same Golden-rule rate 2g^2/J = 0.18, (g, J) = (0.3, 1) and (0.3 sqrt 2, 2), have conditioned rates in the ratio 2.
+zr = {}
+for g_, J_ in ((0.3, 1.0), (0.3 * np.sqrt(2), 2.0)):
+    H_ = np.zeros((NL + 1, NL + 1))
+    H_[0, 1] = H_[1, 0] = g_
+    for i in range(1, NL):
+        H_[i, i + 1] = H_[i + 1, i] = J_
+    zr[(g_, J_)] = (2 * g_ ** 2 / J_, -np.log(abs(expm(-1j * 0.05 * H_)[0, 0]) ** 2) / 0.05, g_ ** 2 * 0.05)
+(G1_, z1_, v1_), (G2_, z2_, v2_) = zr.values()
+check(abs(G1_ - G2_) < 1e-12 and abs(z1_ / v1_ - 1) < 0.02 and abs(z2_ / v2_ - 1) < 0.02 and abs(z2_ / z1_ - 2) < 0.05,
+      "B1b [T+D]",
+      "short-time input of the Zeno contrast: the conditioned rate is dt Var(H) = g^2 dt, so two chains with the same "
+      "decay rate 2g^2/J give conditioned rates in the ratio 2; a decay rate alone does not fix the Zeno suppression",
+      f"Gamma {G1_:.3f} = {G2_:.3f}; conditioned {z1_:.5f} vs g^2 dt {v1_:.5f}; {z2_:.5f} vs {v2_:.5f}; ratio {z2_ / z1_:.3f}")
+print(f"      CONDITIONAL ESTIMATE (not a check; supplied short-time model): with records conditioning the odds every "
+      f"tau = t_P, the rate becomes tau Var(H)/hbar^2; with a supplied flat coupling spectrum cut off at w_c = c/a0, "
+      f"Var(H)/hbar^2 = Gamma w_c/(2 pi), so the hydrogen 2p lifetime 1.60 ns (supplied) would become "
+      f"~{1.6e-9 * 2 * np.pi / (tP * wc):.0e} s; the number scales as 1/w_c and is not derived from the chain or the lifetime")
 # single photon in a Mach-Zehnder made of link sites; records of every link site each step
 La = 6
 nS = 2 + 2 * La + 2  # in, arm u (La), arm l (La), and outputs D1, D2 (plus a spare)
@@ -432,7 +451,8 @@ g2 = coin / max(1, cf.size)
 check(abs(armu - 0.5) < 0.04 and g2 == 0.0, "B3 [T+D]",
       "anticorrelation: each actual configuration holds the one photon on one link site, so arm records never "
       "coincide (g2(0) = 0 by construction of the one-photon configuration space; the computed part is P(arm u) = 1/2; "
-      "measured single-photon g2 well below 1); a definite or classically mixed link gives g2 >= 1 (definite-links)",
+      "measured single-photon g2 well below 1); comparator, not checked here: in a classical model where the detected "
+      "intensity is a nonnegative random variable I, g2(0) = <I^2>/<I>^2 >= 1 by Cauchy-Schwarz",
       f"P(arm u recorded) {armu:.3f}; arm coincidences {coin}/{cf.size}; g2(0) = {g2:.0f}")
 # repeated link-number records: non-demolition repeatability; decoherence only from a pointer in the odds
 nmax = 4
@@ -526,9 +546,11 @@ check(abs(16 * np.pi * gm ** 2 - dphi) < 1e-12 and abs(Cf2 - abs(np.sin(8 * np.p
       "calibrated) it follows gm' and misses the BMV target, so the C1 agreement is imposed by the calibration",
       f"16 pi gm^2 - dphi = {16 * np.pi * gm ** 2 - dphi:.1e}; gm' {gm2:.5f}: toy C {Cf2:.4f} vs |sin(8 pi gm'^2)| "
       f"{abs(np.sin(8 * np.pi * gm2 ** 2)):.4f} vs target {Ct:.4f}")
-print("supplied: link ring w=1, m=0.5, dt 0.35 (A); chain g=0.3, J=1; MZ layout; probe phase pi/2 (B); "
+print("supplied: link ring w=1, m=0.5, dt 0.35 (A); chain g=0.3, J=1 (and g=0.3 sqrt 2, J=2 in B1b); MZ layout; "
+      "probe phase pi/2 (B); "
       "oscillator mediator, 200 half-ticks per period, d=14, coupling gm = sqrt(dphi/(16 pi)) CALIBRATED from the "
-      "target phase (C); comparison inputs: BMV 1e-14 kg, 200 um, 250 um, 2.5 s; hydrogen 2p 1.60 ns, a0, t_P; "
+      "target phase (C); comparison inputs: BMV 1e-14 kg, 200 um, 250 um, 2.5 s; for the conditional estimate only: "
+      "hydrogen 2p 1.60 ns, a0, t_P, flat coupling spectrum cut off at c/a0; "
       "seed 20261022")
 print(f"runtime {time.time() - T0:.1f} s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")

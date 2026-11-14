@@ -483,8 +483,10 @@ def section_F():
             P = abs(psi.reshape(dims)) ** 2; Lc = lab[cfg]; side = np.arange(NP_) >= 6
             res[(muP, rule)] = (np.mean(side[Lc[:, 1]] != side[Lc[:, 2]]), P[:, side][:, :, ~side].sum() + P[:, ~side][:, :, side].sum(), side[Lc[:, 1]].mean(), P[:, side].sum(), pm)
     j0, o0, j4, o4 = res[(0.0, 'joint')], res[(0.0, 'own')], res[(0.4, 'joint')], res[(0.4, 'own')]
-    check('F3 two readers of one system: joint F5 gives Born reading odds and never-disagreeing readers; later system steps never move pointers',
-          j0[0] == 0 and abs(j0[2] - 0.3) < 0.015 and j0[4] == 0 and abs(j4[0] - j4[1]) < 0.015,
+    check('F3 two readers of one system: joint F5 gives Born reading odds; with ideal ballistic pointers (muP = 0) the readers never disagree '
+          'and later system steps never move pointers; with massive pointers (muP = 0.4) the readers do disagree, at the Born '
+          'disagreement (not "readers never disagree")',
+          j0[0] == 0 and abs(j0[2] - 0.3) < 0.015 and j0[4] == 0 and abs(j4[0] - j4[1]) < 0.015 and j4[1] > 0.1 and j4[0] > 0.1,
           f'ballistic pointers: P(read) {j0[2]:.4f} vs 0.3, disagreement {j0[0]:.4f}; massive pointers: disagreement {j4[0]:.4f} vs Born {j4[1]:.4f}')
     check('F4 control: pointers moved by their own marginal odds disagree (2p(1-p) = 0.42 when Born says 0)', abs(o0[0] - 0.42) < 0.02 and o4[0] > j4[1] + 0.1,
           f'{o0[0]:.4f}; massive {o4[0]:.4f} vs Born {o4[1]:.4f}')

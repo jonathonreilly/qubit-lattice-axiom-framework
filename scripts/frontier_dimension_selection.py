@@ -32,6 +32,8 @@ import sys
 
 import numpy as np
 
+AUDIT_TIMEOUT_SEC = 120
+
 try:
     from scipy import sparse
     from scipy.sparse.linalg import spsolve

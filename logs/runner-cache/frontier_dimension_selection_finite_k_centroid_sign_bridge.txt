@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
-runner_sha256: 9cd088d0549d36eb03dc528e5d22b48fe7cf20a03a606e927ea537132a006fa8
-input_fingerprint_sha256: 4590523867755094fab82a98908b7660de957834e79d28c2dd2e1e4599de4f44
-timeout_sec: 300
+runner_sha256: 405b2d7f453a88bd6e3f6c731a5ce8804196ed6de29bae587aaafa4ef0e51202
+input_fingerprint_sha256: 72e7f1b9301d60d1b83de03aafdd7462558efce9661ff55cded2502e0aaf7eb4
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.00
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -98,7 +98,7 @@ Part 5: claim-status firewalls
 [PASS] forbidden overclaim absent: full retained spatial d = 3 closure
 [PASS] forbidden overclaim absent: repo-wide axiom rewrite is authorized
 
-wrote /Users/jonreilly/Documents/Codex/grok-review-20261021/dimension-publication-worktree/outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json
+wrote /Users/jonreilly/Projects/physics-repair-20261114/wt-9865/outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json
 DIAGNOSTIC_SCOPE: current required checks only; historical-plan availability excluded from score; no dimension-selection closure
 SUMMARY: PASS=70 FAIL=0
 

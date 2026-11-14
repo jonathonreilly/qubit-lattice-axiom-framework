@@ -28,6 +28,7 @@ AUDIT_INPUT_PATHS = (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_TIMEOUT_SEC = 120
 DOCS = ROOT / "docs"
 OUTPUT = ROOT / "outputs" / "dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json"
 

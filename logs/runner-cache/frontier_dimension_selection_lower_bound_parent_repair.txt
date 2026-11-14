@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dimension_selection_lower_bound_parent_repair.py
 runner_sha256: aa55dabfb5095c4a1799f69a209b2c749de4ea30eed186df5c28230af058dbfb
-input_fingerprint_sha256: 8cf9b29cdbdf9e6fb08b2091b463a5b53bb82bff75ea876e64466bb76b2f47bf
-timeout_sec: 300
+input_fingerprint_sha256: f304fd44ff43e3097545deb7521bb74ddaea472e2878b6064053dad267195c13
+timeout_sec: 120
 exit_code: 1
-elapsed_sec: 0.46
+elapsed_sec: 0.25
 status: nonzero_exit
 ----- stdout -----
 # Dimension-selection parent lower-bound repair
@@ -36,8 +36,8 @@ status: nonzero_exit
 [PASS] forbidden overclaim absent: repo-wide framework-baseline rewrite is authorized
 
 # Dimension-selection companion source packet
-[PASS] original_dimension_runner: source=scripts/frontier_dimension_selection.py sha256=48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83 cache=logs/runner-cache/frontier_dimension_selection.txt cache_sha256=0cf09aa8f6b968c267536b91a061941a098d895bfc4c97e1538ff210b601ea7e snippets_ok=True
-[FAIL] finite_k_bridge: source=scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py sha256=9cd088d0549d36eb03dc528e5d22b48fe7cf20a03a606e927ea537132a006fa8 cache=logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt cache_sha256=4afb6393da94a7fed9418bc2adc44f832a3b0149a9fe5145e064973d13d5d350 snippets_ok=False
+[PASS] original_dimension_runner: source=scripts/frontier_dimension_selection.py sha256=674fa2c816b325bb9665c82e5fa571f98c34322ff6217265f4ee2d39233d6b29 cache=logs/runner-cache/frontier_dimension_selection.txt cache_sha256=5a6f1f3e0b85f4d076575e85bc90cca0d9c60a49445ae24ed6fd75c39d67809b snippets_ok=True
+[FAIL] finite_k_bridge: source=scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py sha256=405b2d7f453a88bd6e3f6c731a5ce8804196ed6de29bae587aaafa4ef0e51202 cache=logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt cache_sha256=25d513e628ecc4a75dd2cfe4ee46b047a2be8f636b7ef03cface6785a1e64bc9 snippets_ok=False
 [PASS] source_packet_manifest_source_exposed: source=scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py sha256=1cc8d647ef326aad60a78166d8edc712b82acfcffb9dd73ace29466042338282
 COMPANION_PACKET: FAIL
 [FAIL] companion packet sources/caches are exposed and fresh

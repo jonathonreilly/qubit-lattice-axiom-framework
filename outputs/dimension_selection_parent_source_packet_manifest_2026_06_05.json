@@ -129,7 +129,7 @@
     {
       "name": "source_full_length:original_runner",
       "pass": true,
-      "detail": "scripts/frontier_dimension_selection.py has 32564 bytes"
+      "detail": "scripts/frontier_dimension_selection.py has 32589 bytes"
     },
     {
       "name": "source_contains:original_runner:def measure_gravity_2d_with_d_potential",
@@ -159,7 +159,7 @@
     {
       "name": "source_full_length:finite_k_bridge_runner",
       "pass": true,
-      "detail": "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py has 16376 bytes"
+      "detail": "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py has 16400 bytes"
     },
     {
       "name": "source_contains:finite_k_bridge_runner:def finite_k_centroid_derivative",
@@ -224,7 +224,7 @@
     {
       "name": "cache_sha_fresh:original_cache",
       "pass": true,
-      "detail": "48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83 == 48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83"
+      "detail": "674fa2c816b325bb9665c82e5fa571f98c34322ff6217265f4ee2d39233d6b29 == 674fa2c816b325bb9665c82e5fa571f98c34322ff6217265f4ee2d39233d6b29"
     },
     {
       "name": "cache_exit_ok:original_cache",
@@ -269,7 +269,7 @@
     {
       "name": "cache_sha_fresh:finite_k_bridge_cache",
       "pass": true,
-      "detail": "9cd088d0549d36eb03dc528e5d22b48fe7cf20a03a606e927ea537132a006fa8 == 9cd088d0549d36eb03dc528e5d22b48fe7cf20a03a606e927ea537132a006fa8"
+      "detail": "405b2d7f453a88bd6e3f6c731a5ce8804196ed6de29bae587aaafa4ef0e51202 == 405b2d7f453a88bd6e3f6c731a5ce8804196ed6de29bae587aaafa4ef0e51202"
     },
     {
       "name": "cache_exit_ok:finite_k_bridge_cache",

@@ -7,7 +7,7 @@ no direct-detection signal, stable for 13.8 Gyr.
 Tags: [T] exact/theorem check, [D] finite diagnostic, [E] estimate against measurement (inputs supplied).
 Self-contained: numpy/scipy only. The six-edge slab code (section C) is inlined from the campaign's
 edge-modes runner (same Regge sync-slab construction)."""
-import itertools, math, time
+import itertools, math, sys, time
 import numpy as np
 from scipy.linalg import eig, expm
 
@@ -292,3 +292,4 @@ print("supplied: label terms+parity, alpha_eff, Y_grav, splittings, a = sqrt(8pi
 print("  heavy-isotope searches, BICEP/Keck, MACRO, Planck.")
 print(f"elapsed_seconds {time.time()-T0:.1f}")
 print(f"TOTAL: PASS={NP[0]} FAIL={NP[1]}")
+sys.exit(0 if NP[1] == 0 else 1)

@@ -9,7 +9,7 @@ Supplied: (b, mu, M) = (0.3, 0.4, 0.5) per tick, diagonal metric weights; mirror
 (cited, mirror-dark-matter); register s = 2, Delta = 0 for the tetrahedron register; b_e (>= ~40, register); unit map
 a = sqrt(8 pi) l_P, 1 rad/tick = 2.1e18 GeV; A_s, n_s, delta_c, g*, T_eq. Seeded (numpy default_rng(20261022)).
 """
-import itertools, os, signal, time
+import itertools, os, signal, sys, time
 AUDIT_TIMEOUT_SEC = 120
 os.environ['OPENBLAS_NUM_THREADS'] = '1'; os.environ['OMP_NUM_THREADS'] = '1'; os.environ['VECLIB_MAXIMUM_THREADS'] = '1'
 signal.signal(signal.SIGALRM, lambda *a: (_ for _ in ()).throw(TimeoutError('cap exceeded')))
@@ -76,7 +76,7 @@ res = []
 for nm, sgn in (('psi^dag psi\'', -1), ('psi psi\'', 1)):
     Bl = sp.Matrix.hstack(sp.eye(6), sgn*sp.eye(6)); rg, tg_ = group_info(sp.Matrix.vstack(Cmir, Bl), 12); rd, td = group_info(sp.Matrix.vstack(Cmir, Bl, Llock), 12)
     res.append((nm, rg, tg_, rd, td))
-check("A2 [T] species phases, light 16 + mirror 16 (mirror pair-square group U(1)_Y x U(1)_X, cited): with NO pairing the dark subgroup (trivial on light modes) is U(1)^2; with A1's light-mirror pairing (either form) it is trivial and the group is Y, X(total)",
+check("A2 [T] species phases, light 16 + mirror 16 (mirror pair-square group U(1)_Y x U(1)_X, cited): with NO pairing the dark subgroup (trivial on light modes) is U(1)^2; with A1's light-mirror pairing on all six species (either form) it is trivial and the group is Y, X(total)",
       all(x == 1 for x in inv_m) and r0 == 2 and not t0 and all(r[1] == 2 and not r[2] and r[3] == 0 and not r[4] for r in res),
       f"no pairing: dark rank {r0} torsion {t0}; " + '; '.join(f"{r[0]}: group rank {r[1]}, dark rank {r[3]} torsion {r[4]}" for r in res))
 Xl = [1, 1, -3, -3, 1, 5]
@@ -99,10 +99,27 @@ for K in itertools.product(ks, repeat=3):
     Uk, Wk, _ = bloch(b, mu, M, np.array(K)); p_ = np.sort(np.angle(np.linalg.eigvals(Uk@Wk))); pp = p_[p_ > 0]; lo.append(pp[0]); hi.append(pp[1])
 Wl = max(hi) - min(lo)
 bes = [40, 100, 1000]
-check("B3 [T+F] a block half-tick is b_e cube half-ticks and edges repeat every b_e cells, so quasienergy is kept only mod 2 pi/b_e per tick and momentum mod 2 pi/b_e; the light band (8^3) and M exceed 2 pi/b_e for b_e >= 40, so the folded light band covers the circle: no kinematic block on heavy -> light + edge quanta",
+check("B3 [T+F] DIAGNOSTIC (projected over all momenta): a block half-tick is b_e cube half-ticks and edges repeat every b_e cells, so quasienergy is kept only mod 2 pi/b_e per tick and momentum mod 2 pi/b_e; the light band (8^3) and M exceed 2 pi/b_e for b_e >= 40, so the light band projected over ALL momenta covers the quasienergy circle (necessary for an open channel, not sufficient)",
       all(Wl > 2*np.pi/be and M > 2*np.pi/be for be in bes), f"light band [{min(lo):.3f}, {max(hi):.3f}] width {Wl:.3f}; 2pi/b_e = " + ', '.join(f"{2*np.pi/be:.4f}" for be in bes))
+# B3b (added 2026-11-14): at FIXED emitted momentum q the light final momenta allowed by momentum conservation modulo the
+# block reciprocal lattice are k = -q + 2 pi n/b_e (n in Z^3, mod 2 pi): b_e^3 points, two light bands, so the resonant
+# edge-quantum energies E_h - E_l(k) mod 2 pi/b_e form a finite set and cannot contain every edge energy.
+_U0, We0, _ = bloch(b, mu, M, np.zeros(3)); Wo0 = expm(1j*(np.pi/2 - b + mu/2)*R((1, 1, 1)))
+stp = [np.array([1, 1, 1]) + cc for cc in CORN]; Dsp = np.zeros((8, 8, 3))
+for xa in stp:
+    for xb in stp:
+        Dsp[lab(xa), lab(xb)] = xa//2 - xb//2
+Eh = mu + M; rq = np.random.default_rng(20261114); qv = rq.uniform(-np.pi, np.pi, 3); gaps = {}
+for be in (4, 40):
+    nn_ = np.arange(be); kset = (-qv[None, :] + 2*np.pi*np.stack(np.meshgrid(nn_, nn_, nn_, indexing='ij'), -1).reshape(-1, 3)/be + np.pi) % (2*np.pi) - np.pi
+    Uk = Wo0[None]*np.exp(1j*np.einsum('nk,abk->nab', kset, Dsp)); ph_ = np.sort(np.angle(np.linalg.eigvals(Uk@We0[None])), axis=1)
+    El = np.array([r_[r_ > 0][:2] for r_ in ph_]).ravel(); per = 2*np.pi/be
+    om = np.sort((Eh - El) % per); g_ = np.diff(np.r_[om, om[0] + per]); gaps[be] = (len(om), g_.max(), g_.mean())
+check("B3b [T+F] at fixed edge-quantum momentum q (seeded) the allowed light final states are 2 b_e^3 (momentum, band) pairs, so the resonant edge energies mod 2 pi/b_e are a finite set with gaps: the earlier 'for any edge-quantum energy and momentum some light final state is resonant' is rejected; whether a channel with nonzero vertex is open is NOT computed",
+      all(n_ == 2*be**3 and gmax > 0 for be, (n_, gmax, _) in gaps.items()), '; '.join(f"b_e {be}: {n_} resonant energies, largest gap {gmax:.2e} (mean {gm:.1e}) of {2*np.pi/be:.3f}" for be, (n_, gmax, gm) in gaps.items()))
+print("   NOT CHECKED (B3): simultaneous momentum and quasienergy conservation with an edge-quantum dispersion and a nonzero vertex, i.e. the heavy-copy decay channel itself; no edge-quantum dispersion is supplied here, so whether the block period blocks the decay is open")
 tg = lambda m: hb/(g1**2*m**3/(32*np.pi*Mbar**2)); mg = (hb*32*np.pi*Mbar**2/(g1**2*8e18))**(1/3)
-check("B4 [E] graviton width g^2 M^3/(32 pi Mbar^2) at the O(1) vertex: at the law's M (one constant, all species) tau << 1 s; tau > 8e18 s needs M < ~0.1 GeV, excluded by a heavy electron copy",
+check("B4 [E] IF a heavy -> light + edge channel is open (B3b: not computed), the graviton width g^2 M^3/(32 pi Mbar^2) at the O(1) vertex: at the law's M (one constant, all species) tau << 1 s; tau > 8e18 s needs M < ~0.1 GeV, excluded by a heavy electron copy",
       tg(M*E1) < 1e-30 and mg < 1.0, f"M = {M*E1:.1e} GeV: tau = {tg(M*E1):.0e} s; tau(1 TeV) = {tg(1e3):.0e} s; tau > 8e18 s needs M < {mg*1e3:.0f} MeV")
 print("== C. (c) a minimum-size atom of geometry at the window floor; gravitational bound states")
 sr, Dl = 2, 0; nl = (4 + Dl)*sr + 1; fac = (2.0**(np.arange(nl)/sr - 3))**2
@@ -155,10 +172,11 @@ bneed = (Teq/Tf)*(Mi/Mrem[be])*0.84; s2_flat = 16/81*As; s2_tilt = s2_flat*np.ex
 lnb_flat, lnb_tilt = -dc**2/(2*s2_flat), -dc**2/(2*s2_tilt); Pneed = dc**2/(2*(-np.log(bneed)))*81/16
 check("D3 [E] holes of M_i ~ M_rem form at T_f; remnants as all dark matter need beta ~ (T_eq/T_f)(M_i/M_rem); measured A_s (n_s = 1, or the tilt carried down) gives ln beta <= -2.4e8; the needed power is ~1e6 A_s: abundance supplied",
       lnb_flat < -1e8 and Pneed/As > 1e5, f"b_e 40: T_f {Tf:.1e} GeV, ln(k_f/k*) {lnk:.0f}, beta needed {bneed:.1e}; ln beta (n_s=1) {lnb_flat:.2e}, (tilt) {lnb_tilt:.2e}; P_R needed {Pneed:.1e} = {Pneed/As:.0e} A_s")
-print("verdict: (a) no charge outside light charges (A1-A3); (b) no kinematic suppression (B3), tau ~4e-39 s at the law's M (B4); (c) no floor atom (C1-C3),")
+print("verdict: (a) no charge outside light charges (A1-A3); (b) OPEN: the projected light band covers the block circle (B3) but at fixed q the resonant set is finite (B3b), the channel is not computed; if open, tau ~4e-39 s at the law's M (B4); (c) no floor atom (C1-C3),")
 print("  none from splits (C4), bound states inherit constituents (C5); (d) remnant mass supplied by b_e, no number protects it (D2), beta ~exp(-2.4e8) (D3).")
 print("GATE: no rule proposed passes. A 'floor lock' rule (a fully floored cube is not lowered/raised) would bend Admissibility/Record,")
 print("  supply its mass through b_e and its abundance through supplied small-scale power: FAIL (items 1, 3). Dark matter stays open.")
-print("theorems: A2, A3, B3, C4, D2; finite: A1, B1, B2, C1-C3; estimates: B4, C5, D1, D3")
+print("theorems: A2, A3, C4, D2; finite: A1, B1, B2, B3 (diagnostic), B3b, C1-C3; estimates: B4 (conditional), C5, D1, D3")
 print(f"elapsed_seconds {time.time() - T0:.1f}")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+sys.exit(0 if NF == 0 else 1)

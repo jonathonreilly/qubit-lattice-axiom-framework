@@ -16,19 +16,19 @@ claim_scope: "Consolidation of 28 source notes on one question: Can the proposed
 
 Within the supplied models tested, no. Every result is conditional on the update, actuality and response laws as each note supplies them; none is a result about the register in `docs/CANDIDATE_LAWS.md`.
 
-**Cosmological constant.** The supplied half-filled sea sources zero, a Planck-scale value, or a mass-dominated value, never the measured density (#9880). A fixed 4-volume per record cancels every vacuum term proportional to 4-volume on the supplied frustum carrier but leaves Lambda to initial data, lost matter energy and split kicks (#9900). A first-slab rule gives a closed-top minimum 1e117 to 1e119 above the measured value and, with a transparent top, a free size; record-multiplier rules give the wrong sign or a drift (#10002). Records on change are frozen in the tested half-filled seas (#9876, #10018), and Sorkin-type histories fail early bounds (#10018).
+**Cosmological constant.** The supplied half-filled sea sources zero, a Planck-scale value, or a mass-dominated value, never the measured density (#9880). A fixed 4-volume per record cancels every vacuum term proportional to 4-volume on the supplied frustum carrier but leaves Lambda to initial data, lost matter energy and split kicks (#9900). A fixed 4-volume per record conserves that Lambda up to O(c^2) at a finite step, exactly only as the step goes to zero (#9900). A first-slab rule allows the interval [Lambda_min, Lambda_max] of a generalised Rayleigh quotient, with Lambda_min 1e117 to 1e119 above the measured value, and, with a transparent top, a free size; the tested record-multiplier rules give the wrong sign or a drift (#10002). Records on change are frozen in the tested half-filled seas (#9876, #10018), and Sorkin-type histories in the supplied S/V model fail early bounds (#10018; a supplied-model diagnostic, not a likelihood).
 
-**Inflation and perturbations.** Exponential plateaus give n_s = 1 - 2/N (power plateaus differ), and supplied curvature-squared inflation with the rules' reheating gives 0.9617, an estimated 4.1 sigma below ACT (#9918). A supplied 2D toy's cascade is self-similar, and under the stationary-shift read lapse the trigger gives no linear split-time fluctuation (#9961). The update's own Dirac sea gives a fast fold (#9979). An unsplit block cannot inflate; a nested-sea plateau needs order-carrying splits, gives n_s = 0.957 at a self-consistent N* with a fitted rung and supplied repulsion, and the passing seeds nothing (#10000). Born split times are white inherited offsets and supply no seed (#10007).
+**Inflation and perturbations.** Exponential plateaus give n_s = 1 - 2/N (power plateaus differ), and supplied curvature-squared inflation with the rules' reheating gives 0.9617, an estimated 4.1 sigma below ACT; one stiff phase under the integrated BBN bound reaches at most 0.9691, 1.6 sigma below ACT, and the stiff-phase wave enhancement ln E = 4 dN holds only for the first mode in (#9918). A supplied 2D toy's cascade is self-similar, which fixes its octave-averaged index at n_s = 1 but not the local index, and under the cited stationary-shift read lapse the trigger gives no linear split-time fluctuation (#9961). The update's own Dirac sea gives a fast fold (#9979). An unsplit block cannot inflate; a nested-sea plateau needs order-carrying splits, gives n_s = 0.957 at a self-consistent N* with a fitted rung and supplied repulsion, and the passing seeds nothing (#10000). Born split times are white inherited offsets and supply no seed; a record-density readout would give n_s - 1 = +5 under a supplied linear readout (#10007).
 
-**Dark matter.** A census stated, not computed, leaves only a supplied label parity and magnetic charge (not dark) as stabilisers of a massive relic (#9946); none of the four places searched in the update's existing structure protects a dark species (#10005, with the mirror group input from #9988). No abundance is set by the rules.
+**Dark matter.** A census stated, not computed, and not shown complete, leaves only a supplied label parity and magnetic charge (not dark) as stabilisers of a massive relic (#9946). The gapped mirror's number is shared with light matter when the tick mixes all six species; partial mixing would leave mirror-only groups (#9988). Of the four places searched in the update's existing structure, three protect no dark species and the fourth, a block-period block on heavy-copy decay, is open because the decay channel is not computed (#10005, with the mirror group input from #9988). No abundance is set by the rules.
 
-**Open.** Records for the copy-massed tick (a patch computation finds motion, #9923, logged); a rule that supplies dephasing or a horizon-correlated seed; a conserved number for a dark species; the size of Lambda.
+**Open.** Records for the copy-massed tick (a patch computation finds motion, #9923, logged); a rule that supplies dephasing or a horizon-correlated seed; a conserved number for a dark species; the heavy-copy decay channel under the block period (#10005); the local spectrum of the split-time cascade (#9961); the size of Lambda.
 
 ## Results carried with their runners
 
 # Kept results: vacuum, cosmology and dark matter
 
-Each section below carries the source note's own text at the recorded INDEX head. The claim scope is copied exactly from the note. The statement and supporting text are copied line for line from the note; omitted line ranges are listed in each section (derivation prose, run instructions, and in some sections a note's own pass/fail checklist for candidate rules, which is replaced by a plain description). Headings in copied text are demoted two levels. In the copied text, CL-1, CL-2 and CL-3 are the notes' shorthand for an update law, an actuality law and a response law; they are not the aliases defined in `docs/CANDIDATE_LAWS.md` (see CORRECTIONS). All statements are about supplied models, not about the physical vacuum or measured Lambda.
+Each section below carries the text of the note as it stands on this branch, repaired on 2026-11-14 after the landing hold on PR 10127 (item 12 lists the repairs; the recorded INDEX heads give provenance only). The claim scope is copied exactly from the note. The statement and supporting text are copied line for line from the note; omitted line ranges are listed in each section (derivation prose, run instructions, and in some sections a note's own pass/fail checklist for candidate rules, which is replaced by a plain description). Headings in copied text are demoted two levels. In the copied text, CL-1, CL-2 and CL-3 are the notes' shorthand for an update law, an actuality law and a response law; they are not the aliases defined in `docs/CANDIDATE_LAWS.md` (see CORRECTIONS). All statements are about supplied models, not about the physical vacuum or measured Lambda.
 
 Count: 13 of the theme's 28 PRs are kept, above a third (9). The ones beyond that are #9876 and #9988, which kept results rely on for a computation they do not rerun (the 3D antiunitary instance for #10018; the mirror group input for #10005); #9946, the only source of the label-parity survivor; #10007, which corrects #10000; and #9979, the stiffness theorem the fold chain imports. Their loss would remove an input that another kept result takes from the branch, not a routine negative.
 
@@ -151,19 +151,19 @@ Supplied: the block hop and mass parameter, the sea filling, the log branch, the
 
 - Branch `claude/toe-lambda-split-20261021`, head `880e28d1a8`; note `docs/FIXED_FOUR_VOLUME_PER_RECORD_CANCELS_VACUUM_ENERGY_AND_LEAVES_LAMBDA_AS_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-21.md`.
 - Runner: [`scripts/fixed_four_volume_per_record_cancels_vacuum_energy_and_leaves_lambda_as_history_2026_10_21.py`](../scripts/fixed_four_volume_per_record_cancels_vacuum_energy_and_leaves_lambda_as_history_2026_10_21.py); cache `logs/runner-cache/fixed_four_volume_per_record_cancels_vacuum_energy_and_leaves_lambda_as_history_2026_10_21.txt`.
-- Kind of statement: Finite numerical diagnostics (19 checks) of supplied models on a cubic-frustum Regge expansion carrier, with short derivations; comparisons with measurement are estimates; the negative statement is about the tested rules only.
+- Kind of statement: Finite numerical diagnostics (19 checks) of supplied models on a cubic-frustum Regge expansion carrier, with short derivations; conservation and the Friedmann limit are shown to O(c^2) at finite step, exact only as c -> 0; comparisons with measurement are estimates; the negative statement is about the tested rules only.
 - Dependencies: Supplied cubic-frustum carrier, split construction, corner-preserving split map and the fixed-4-volume-per-record rule. Later notes in this theme (9962, 9990, 10002) describe the fixed-4-volume-per-record clause as dropped from the laws; this result is therefore a statement about that clause on that carrier. PR 9902 (assigned to gravity-edge-registers) corrects the carrier: its cubic-frustum Friedmann law matches Friedmann only to first order in rho/rho* and has no bounce (see CORRECTIONS). Cited by 9962 and 10002.
 
 Claim scope (verbatim):
 
-> On a supplied cubic-frustum Regge expansion carrier, varying edge lengths at fixed 4-volume per record cancels every vacuum term proportional to 4-volume and conserves a constant Lambda set only by initial data, lost matter energy and a kick rho^2/rho* per synchronous 2^3 split; supplied per-new-cell phase and split-trigger self-tuning rules either track the critical density, freeze the start or need the size by hand; no rule fixing the size of Lambda is established.
+> On a supplied cubic-frustum Regge expansion carrier, varying edge lengths at fixed 4-volume per record cancels every vacuum term proportional to 4-volume (an exact variational identity) and conserves, up to O(c^2) at relative step c and exactly only as c -> 0, a constant Lambda set only by initial data, lost matter energy and a kick rho^2/rho* per synchronous 2^3 split; supplied per-new-cell phase and split-trigger self-tuning rules either track the critical density, freeze the start or need the size by hand; no rule fixing the size of Lambda is established.
 
 Statement and supporting text (copied from the note):
 
 #### Statement
 
 1. On the supplied cubic-frustum Regge carrier, the fixed-4-volume rule cancels every vacuum term -rho_v V from the edge equation exactly.
-2. Under that rule a constant Lambda is conserved with no secular drift, and the late expansion obeys Friedmann with it, so w = -1.
+2. Under that rule a constant Lambda is conserved up to O(c^2) at each finite relative step c, with no secular drift (|Lbar_n - Lambda_0| <= 4.2 c^2 rho_c(n) at the three tested steps); exact conservation holds only in the limit c -> 0. The late expansion obeys Friedmann with it to 3e-4 at the tested steps, so w = -1 at late times in that limit, not exactly at every finite step. Narrowed 2026-11-14 from "conserved ... so w = -1". The cancellation in item 1 is exact: at fixed V, delta(-rho_v V) = -rho_v delta V = 0 for constant rho_v.
 3. Its value is Lambda_0 plus the matter energy lost along the way plus rho^2/rho* for each synchronous 2^3 split of dust, with rho* = 3/(4 pi G a^2) the lattice's maximal density. Lambda_0 is set by the first slab, so the size is history, not a consequence of the rules.
 4. A phase per new cell gives a constant of unfixed size plus a zero-mean term that tracks the critical density. Self-tuning through the split trigger tracks, freezes the starting value, or needs the measured size put in by hand.
 
@@ -175,7 +175,7 @@ Fixed 4-volume. At fixed V_n the variation of rho_v V vanishes, so a vacuum term
 
 #### Checks
 
-The runner gives 19 PASS and 0 FAIL. These are finite diagnostics of supplied models.
+The runner gives 19 PASS and 0 FAIL and exits nonzero if any check fails. These are finite diagnostics of supplied models; the conservation and Friedmann checks bound finite-step errors and do not establish exact finite-step conservation.
 
 - Vacuum cancellation to 3e-16 relative, for rho_v from 1e4 to 1e7 Lambda_0.
 - No drift: |Lbar_n - Lambda_0| <= 4.2 c^2 rho_c(n) at every slab (3.92, 4.06, 4.13 at relative steps c = 0.02, 0.01, 0.005), though rho_c starts at 1e4 Lambda_0. Late (3H^2 - rho_r)/Lbar is 1.00008, 1.00001, 0.99999.
@@ -206,29 +206,29 @@ Supplied: the frustum carrier, its central tick, the matter phase -E T, kappa = 
 
 (Omitted from the note: lines 1-17 and lines 24-26, 28-34 and 63-63.)
 
-### #9918: Curvature-squared inflation misses the ACT tilt, and no rule lifts it
+### #9918: Curvature-squared inflation misses the ACT tilt, and none of the rule terms estimated here lifts it
 
 - Branch `claude/toe-act-tilt-20261021`, head `4a56f8a8cc`; note `docs/CURVATURE_SQUARED_INFLATION_MISSES_THE_ACT_TILT_AND_NO_RULE_LIFTS_IT_BOUNDED_THEOREM_NOTE_2026-10-21.md`.
 - Runner: [`scripts/curvature_squared_inflation_misses_the_act_tilt_and_no_rule_lifts_it_2026_10_21.py`](../scripts/curvature_squared_inflation_misses_the_act_tilt_and_no_rule_lifts_it_2026_10_21.py); cache `logs/runner-cache/curvature_squared_inflation_misses_the_act_tilt_and_no_rule_lifts_it_2026_10_21.txt`.
-- Kind of statement: Exact leading-order theorems (symbolic) for supplied single-field families and for the e-fold and gravitational-wave relation of a constant-w phase; numerical second-order Hubble-flow solves; sigma pulls against Planck, ACT and DR2 are estimates. No inflaton is derived.
+- Kind of statement: Exact leading-order theorems (symbolic) for supplied single-field families and for the e-fold shift and per-mode gravitational-wave enhancement of a constant-w phase (ln E = 4 dN only for the first mode in); an integrated BBN cap built from the enhanced spectrum under a sharp-transition transfer; numerical second-order Hubble-flow solves; sigma pulls against Planck, ACT and DR2 are estimates. No inflaton is derived.
 - Dependencies: Supplied curvature-squared and cubic coefficients, shape families, pivot, g*, colour running and top mass for reheating, transfer prefactors, BBN limit, heat-kernel bound, running-tilt constant. Earlier campaign results on the inflaton background, running tilt and split schedule are cited by the note without PR numbers and not rerun. Cited by 9979 and 10000.
 
 Claim scope (verbatim):
 
-> For supplied single-field slow-roll models with second-order Hubble-flow tilts, exponential plateaus give n_s = 1 - 2/N for every steepness and power plateaus 1 - c phi^-k give 1 - 2(k+1)/((k+2)N); supplied curvature-squared inflation with the rules' colour-anomaly reheating gives n_s = 0.9617, estimated at -0.8, -4.1 and -4.5 sigma against Planck, ACT and DR2, and none of the rules' own terms estimated here shifts n_s by more than about 1e-10; no inflaton is derived.
+> For supplied single-field slow-roll models with second-order Hubble-flow tilts, exponential plateaus give n_s = 1 - 2/N for every steepness and power plateaus 1 - c phi^-k give 1 - 2(k+1)/((k+2)N) at leading order; a constant-w era (-1/3 < w <= 1) after inflation shifts N* by (3w-1) ln(rho_end/rho_rh)/(12(1+w)) and enhances the gravitational waves of a mode k entering in it by (k/k_rh)^(2(3w-1)/(1+3w)), which equals e^(4 dN) only for the first mode in; supplied curvature-squared inflation with the rules' colour-anomaly reheating gives n_s = 0.9617, estimated at -0.8, -4.1 and -4.5 sigma against Planck, ACT and DR2; one stiff era (1/3 < w <= 1) under the integrated BBN bound and a sharp-transition transfer gives at most n_s = 0.9691 (-1.6 sigma ACT); none of the rules' own terms estimated here shifts n_s by more than about 1e-10; no inflaton is derived.
 
 Statement and supporting text (copied from the note):
 
 #### Statement
 
-1. A phase of constant w from rho_end to rho_rh adds dN = (3w - 1) ln(rho_end/rho_rh)/(12(1 + w)) e-folds and boosts the gravitational-wave background of the modes entering during it by E, with ln E = 4 dN for every w.
+1. A phase of constant w (-1/3 < w <= 1, so w = -1 is excluded and modes re-enter while the phase decelerates) from rho_end to rho_rh adds dN = (3w - 1) ln(rho_end/rho_rh)/(12(1 + w)) e-folds. A mode k entering during it has its gravitational-wave background changed by E(k) = (k/k_rh)^(2(3w - 1)/(1 + 3w)) relative to radiation, so E(k_rh) = 1 and ln E = 4 dN holds only for k_end, the first mode in (boost for w > 1/3, suppression for w < 1/3). Narrowed 2026-11-14: the earlier "ln E = 4 dN for every mode" is false off the endpoint (at k_rh, E = 1 while dN > 0 for a stiff phase).
 2. At leading order in 1/N, V = 1 - c e^(-kappa phi) gives n_s = 1 - 2/N for every kappa, and V = 1 - c phi^-k gives n_s = 1 - 2(k+1)/((k+2)N).
-3. With V = M^2 v(phi), eps, eta, n_s and r are M-free, so in pure curvature-squared inflation n_s depends on N* alone and no curvature-squared-type term can lift it.
+3. With V = M^2 v(phi), eps, eta, n_s and r are M-free (canonical scalar, Einstein frame, slow roll), so in pure curvature-squared inflation n_s depends on N* alone and no curvature-squared-type term can lift it at fixed N*. A change of M moves n_s only through the pivot matching of N*, which depends on M logarithmically, and M is fixed by A_s.
 4. Supplied curvature-squared inflation with the rules' colour-anomaly reheating gives N* = 50.3 and n_s = 0.9617. Against measurement this is estimated at -0.8 sigma (Planck), -4.1 sigma (ACT) and -4.5 sigma (DR2). None of the rules' own terms estimated here moves n_s by the +0.012 needed.
 
 #### Derivation
 
-The stiff-phase relation follows from matching e-folds at the pivot k = 0.05/Mpc with rho scaling as a^(-3(1+w)) during the phase; the gravitational-wave boost follows from the same scaling of the modes entering during it. For the plateau families the slow-roll integrals give N in terms of phi at leading order, and substituting into n_s - 1 = 2 eta - 6 eps gives the two closed forms. ACT therefore asks for a power-law plateau with k = 0.88 at N* = 50.3 or 1.63 at N* = 55.7, while Planck was met by k of about 43, effectively exponential.
+The stiff-phase relation follows from matching e-folds at the pivot k = 0.05/Mpc with rho scaling as a^(-3(1+w)) during the phase. For the waves, aH scales as a^(-(1+3w)/2), so a mode entering at a_ent has ln(k/k_rh) = ((1+3w)/2) ln(a_rh/a_ent); after entry Omega_GW grows as a^(3w-1) until a_rh, which gives ln E(k) = (3w-1) ln(a_rh/a_ent) and the E(k) of item 1. The BBN bound limits the integral of Omega_GW over ln k, so the runner builds that spectrum on k_rh..k_end and integrates it. For the plateau families the slow-roll integrals give N in terms of phi at leading order, and substituting into n_s - 1 = 2 eta - 6 eps gives the two closed forms. ACT therefore asks for a power-law plateau with k = 0.88 at N* = 50.3 or 1.63 at N* = 55.7, while Planck was met by k of about 43, effectively exponential.
 
 The runner's background solver and second-order Hubble-flow code reproduce 0.96489 at N* = 55. The N* that gives each measured n_s is 55.02, 74.84 and 78.55 for Planck, ACT and DR2 (leading order 57.0, 76.9, 80.6), with r = 0.0035, 0.0020 and 0.0018 there. Instant reheating gives N* = 55.7 and n_s = 0.9653; plain curvature-squared inflation reheats through its quadratic minimum (w = 0), so instant is its ceiling.
 
@@ -243,12 +243,12 @@ The rules' own forms:
 
 #### Checks
 
-The runner ends with `TOTAL: PASS=16 FAIL=0`. Among its lines:
+The runner ends with `TOTAL: PASS=16 FAIL=0` and exits nonzero if any check fails. Among its lines:
 
 - `[PASS] B1 N* that gives each n_s (2nd-order flow): Planck 55.02, ACT 74.84, DR2 78.55 (leading 2/(1-n_s): 57.0, 76.9, 80.6); r there 0.0035, 0.0020, 0.0018`.
 - `[PASS] B2 reheating histories (e-fold matching at k = 0.05/Mpc): colour-anomaly decay (w = 0, T_rh = 1.5e+08 GeV) N* = 50.3, n_s = 0.9617 [Pl-0.8 ACT-4.1 DR2-4.5]; instant N* = 55.7, n_s = 0.9653 [Pl+0.1 ACT-2.9 DR2-3.3]`.
-- `[PASS] B3 THEOREM (sympy): a phase of constant w from rho_end to rho_rh adds dN = (3w-1) ln(rho_end/rho_rh)/(12(1+w)) e-folds and boosts the GW background ... with ln E = 4 dN for every w`; kination to BBN gives N* = 69.6 and n_s = 0.9721.
-- `[PASS] B4 ESTIMATE: ... caps any stiff phase at dN <= 6.6: N* <= 62.4, n_s <= 0.9689 [Pl+1.0 ACT-1.7 DR2-2.1]; ACT needs dN = 19.1, a GW boost e^77`.
+- `[PASS] B3 THEOREM (sympy, endpoint): ... a mode k entering in it has E(k) = (k/k_rh)^(2(3w-1)/(1+3w)), so E(k_rh) = 1 and only the first mode in, k_end, has ln E = 4 dN`; kination to BBN gives N* = 69.6 and n_s = 0.9721. Its control rejects "ln E = 4 dN for every mode" (off by 55.3 at k_rh for kination to BBN).
+- `[PASS] B4 ESTIMATE (integrated spectrum): ... a single constant-w phase with 1/3 < w <= 1 has dN <= 7.00 (w = 1; 6.77 at w = 1/2), N* <= 62.7, n_s <= 0.9691 [Pl+1.0 ACT-1.6 DR2-2.0]; ACT needs dN = 19.1, an endpoint boost e^77`. It integrates Omega_GW = (plateau value) x E(k) x (tensor power at exit, at least H_end^2/H*^2 = 0.24 of the pivot value) over ln k from k_rh to k_end against the integrated BBN limit; a control shows a cap 0.5 higher breaks the bound. The earlier peak-only comparison gave dN <= 6.64 (n_s <= 0.9689); it differs from the integrated cap because the integral is (E_max - 1)/beta times the plateau and because the tensor power falls near the end of inflation.
 - `[PASS] C1 hinge plateau ...: needs w = -0.99415 (Planck), -0.99567 (ACT), -0.99587 (DR2), a fluid no rule supplies; P_t >= 4/pi^2 = 0.41`.
 - `[PASS] C2 N to the pole needed: 57.0 (Planck), 76.9 (ACT), 80.6 (DR2); on the ladder (N >= L* = 133.28) |gamma| = 4.68, 3.47, 3.31`.
 - `[PASS] C3 constant transfer per split ...: ACT with q = 4 needs N_e = 76.9, r = 0.104 (excluded); r < 0.036 needs N_e > 222 and q = 11.6`.
@@ -264,17 +264,17 @@ The runner ends with `TOTAL: PASS=16 FAIL=0`. Among its lines:
 
 #### Estimates against measurement
 
-All pulls are estimates. The Planck and ACT n_s values differ by 0.0091, about 1.8 sigma, a lower bound on their tension since P-ACT-LB includes Planck data; all three values are reported and no candidate was tuned to any one. Supplied curvature-squared inflation plus any post-inflation history allowed by the BBN bound on extra radiation stays at least 1.7 sigma below ACT, and 4.1 sigma below with the rules' own reheating. The legacy main-branch claim that n_s = 1 - 2/N_e at N_e = 60 matches Planck within 0.4 sigma is narrowed: it is -2.4 sigma against ACT. Meeting ACT needs a second supplied deformation (a power-law plateau with k of about 1 to 2, or a cubic curvature coefficient of about -1.2e-4 to -1.9e-4) or about 19 extra e-folds, which the BBN bound excludes. Because fits on the shape grid are common and each spends a supplied parameter, a fit is not evidence.
+All pulls are estimates. The Planck and ACT n_s values differ by 0.0091, about 1.8 sigma, a lower bound on their tension since P-ACT-LB includes Planck data; all three values are reported and no candidate was tuned to any one. Supplied curvature-squared inflation plus one constant-w phase (1/3 < w <= 1) between inflation and radiation, held to the integrated BBN bound on extra radiation with a sharp-transition transfer, stays at least 1.6 sigma below ACT, and 4.1 sigma below with the rules' own reheating. Histories with several phases, w > 1, or smoothed transfer at the phase boundaries are not computed. The legacy main-branch claim that n_s = 1 - 2/N_e at N_e = 60 matches Planck within 0.4 sigma is narrowed: it is -2.4 sigma against ACT. Meeting ACT needs a second supplied deformation (a power-law plateau with k of about 1 to 2, or a cubic curvature coefficient of about -1.2e-4 to -1.9e-4) or about 19 extra e-folds, which the integrated BBN bound excludes for one stiff phase (cap 7.0). Because fits on the shape grid are common and each spends a supplied parameter, a fit is not evidence.
 
 #### Boundary
 
-Supplied: the curvature-squared and cubic coefficients and the shape families; the pivot, g*, the colour running and top mass used for reheating; the gravitational-wave transfer prefactors, the BBN limit and a heat-kernel coefficient bound of 1e-2; the running-tilt constant C = 4.891 and the one-loop beta coefficients; and the measured n_s, r and A_s. Earlier campaign results on the inflaton background, the running tilt and the split schedule are cited, not rerun. No inflaton and no tilt are derived.
+Supplied: the curvature-squared and cubic coefficients and the shape families; the pivot, g*, the colour running and top mass used for reheating; the gravitational-wave transfer prefactors, sharp phase boundaries, the leading-order tensor power H^2 at exit, the BBN limit and a heat-kernel coefficient bound of 1e-2; the running-tilt constant C = 4.891 and the one-loop beta coefficients; and the measured n_s, r and A_s. Earlier campaign results on the inflaton background, the running tilt and the split schedule are cited, not rerun. No inflaton and no tilt are derived.
 
 [end of lines 18-67 of the note]
 
 (Omitted from the note: lines 68-68 and lines 1-17, i.e. front matter, derivation prose, run instructions and any candidate-rule checklist.)
 
-### #9946: Label copies carry linked families; only a supplied label parity or magnetic charge stabilises a massive relic
+### #9946: Label copies carry linked families, and of the conserved numbers listed here only a supplied label parity or magnetic charge would stabilise a massive relic
 
 - Branch `claude/toe-dm-revisit-20261021`, head `955073bc44`; note `docs/LABEL_COPIES_CARRY_LINKED_FAMILIES_AND_ONLY_A_SUPPLIED_LABEL_PARITY_OR_MAGNETIC_CHARGE_STABILISES_A_MASSIVE_RELIC_BOUNDED_THEOREM_NOTE_2026-10-22.md`.
 - Runner: [`scripts/label_copies_carry_linked_families_and_only_a_supplied_label_parity_or_magnetic_charge_stabilises_a_massive_relic_2026_10_22.py`](../scripts/label_copies_carry_linked_families_and_only_a_supplied_label_parity_or_magnetic_charge_stabilises_a_massive_relic_2026_10_22.py); cache `logs/runner-cache/label_copies_carry_linked_families_and_only_a_supplied_label_parity_or_magnetic_charge_stabilises_a_massive_relic_2026_10_22.txt`.
@@ -283,7 +283,7 @@ Supplied: the curvature-squared and cubic coefficients and the shape families; t
 
 Claim scope (verbatim):
 
-> For the update law's parallel-carriage circuit at zoom b, whose b^3 label copies of each block fermion are rotated by an exact U(b^3): gauge generators act as T x 1 and commute with all of U(b^3), so every label copy carries one whole linked family (checked at b = 2); on one chiral family the only link-free Weyl state is nu^c and the only gauge-invariant bilinear is the Majorana nu^c nu^c (hand-entered charge table), so a chiral label copy takes no label mass and heavy labels are vector-like; any quadratic label term keeps one exact U(1) per label-mass eigenspace (commutator 2e-15), which the links make a long-range force on matter; terms even in each label break label number but keep label parity (-1)^N_k, and one mixing bilinear breaks it (Fock toy, 2 labels x 3 modes), so label parity is a supplied choice. For the links: the spin-3/2 register's charge conjugation maps E to -E and U to U^dag (checked), the extra mode is stated C-odd with no selection rule against three-photon decay; the register raiser conserves each bond's rishon number (other link-spin sectors are superselected); on compact cubic links every cube's magnetic charge is an integer, the total is zero and 312 continuous-evolution events changed charges in +- pairs (monopole number locally conserved); on the six-edge block triangulation 48 registers per 8 block sites give two light roots at |K| = 0.05 and every other real root at least 1.49 per block tick, and the one-register hop conserves no edge number or parity. Estimates of label relics and monopoles against measurement use supplied inputs. Supplied model, finite diagnostic: label terms and label parity, effective couplings, the gravitational production yield, splittings, the cell unit, a cubic link lattice for the monopole count, the sync slab; many decay times and the conserved-number census are stated, not computed.
+> For the update law's parallel-carriage circuit at zoom b, whose b^3 label copies of each block fermion are rotated by an exact U(b^3): gauge generators act as T x 1 and commute with all of U(b^3), so every label copy carries one whole linked family (checked at b = 2); on one chiral family the only link-free Weyl state is nu^c and the only gauge-invariant bilinear is the Majorana nu^c nu^c (hand-entered charge table), so a chiral label copy takes no label mass and heavy labels are vector-like; any quadratic label term keeps one exact U(1) per label-mass eigenspace (commutator 2e-15), which the links make a long-range force on matter; terms even in each label break label number but keep label parity (-1)^N_k, and one mixing bilinear breaks it (Fock toy, 2 labels x 3 modes), so label parity is a supplied choice. For the links: the spin-3/2 register's charge conjugation maps E to -E and U to U^dag (checked), the extra mode is stated C-odd with no selection rule against three-photon decay; the register raiser conserves each bond's rishon number (other link-spin sectors are superselected); on compact cubic links every cube's magnetic charge is an integer, the total is zero and 312 continuous-evolution events changed charges in +- pairs (monopole number locally conserved); on the six-edge block triangulation 48 registers per 8 block sites give two light roots at |K| = 0.05 and every other real root at least 1.49 per block tick, and the one-register hop conserves no edge number or parity. Estimates of label relics and monopoles against measurement use supplied inputs. Supplied model, finite diagnostic: label terms and label parity, effective couplings, the gravitational production yield, splittings, the cell unit, a cubic link lattice for the monopole count, the sync slab; many decay times and the conserved-number census are stated, not computed, and the census is not shown to be complete.
 
 Statement and supporting text (copied from the note):
 
@@ -309,7 +309,7 @@ C. Edge registers on the six-edge block triangulation (sync slab, fixed lapse, z
 
 D. Conserved numbers as stabilisers (a census stated, not computed).
 
-10. Exact U(b^3) must be broken (LEP), and quadratic terms leave linked U(1)s. Label parity is not in the fine tick. The Z4 of B - L makes the light neutrino the lightest carrier, which is hot and below 1% of dark matter (sum m_nu below 0.07 eV). Rishon number is superselected. Only zero static charge occurs in the Gauss sectors. Magnetic charge is exact but not dark. Edge value, copy sign and turn charges are not conserved; crystal momentum and pattern are not particle charges. The dark constant has zero mean in every cube under the response law, so it has no carrier. Only label parity (supplied) and magnetic charge (not dark) stabilise a massive relic.
+10. Exact U(b^3) must be broken (LEP), and quadratic terms leave linked U(1)s. Label parity is not in the fine tick. The Z4 of B - L makes the light neutrino the lightest carrier, which is hot and below 1% of dark matter (sum m_nu below 0.07 eV). Rishon number is superselected. Only zero static charge occurs in the Gauss sectors. Magnetic charge is exact but not dark. Edge value, copy sign and turn charges are not conserved; crystal momentum and pattern are not particle charges. The dark constant has zero mean in every cube under the response law, so it has no carrier. Of the numbers in this list, only label parity (supplied) and magnetic charge (not dark) stabilise a massive relic. The list is a census stated from the laws as the note reads them, not computed, and not shown to be complete; a number missing from it is not excluded.
 
 #### Derivation
 
@@ -342,7 +342,7 @@ Estimates with supplied inputs (M_P = 1.221e19 GeV, reduced 2.435e18 GeV, the ce
 
 #### Boundary
 
-Not claimed: a derivation of label parity from the register (it is supplied); the dark-matter abundance; the extra link mode's lifetime, the mixing lifetime and the census of section D (stated, not computed); a closed band minimum of the edge registers near the zone edge (not excluded); monopole production; the hidden-sector commutant result (cited). The monopole count uses a cubic compact-link lattice, not the register's bcc link geometry.
+Not claimed: a derivation of label parity from the register (it is supplied); that the census of section D is complete; the dark-matter abundance; the extra link mode's lifetime, the mixing lifetime and the census of section D (stated, not computed); a closed band minimum of the edge registers near the zone edge (not excluded); monopole production; the hidden-sector commutant result (cited). The monopole count uses a cubic compact-link lattice, not the register's bcc link geometry.
 
 #### Supplied vs forced
 
@@ -352,22 +352,22 @@ Supplied: the label terms and label parity, alpha_eff, the production yield, the
 
 - [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md): Z^3 sites, one qubit per site, nearest-neighbour admissibility, records. They fix none of the supplied inputs above.
 - [Candidate-law register](CANDIDATE_LAWS.md): the update law's parallel-carriage circuit and label copies, the site-bond link registers and their raiser, the edge registers on block edges, the response law's zero-mean dark constant. Zero premise weight; results using it are conditional on it.
-- Companion computation: EDGE_REGISTER_SET_CENSUS_CUBE_EDGES_ALONE_GIVE_NO_HINGE_SUM_AND_SIX_EDGES_PER_SITE_GIVE_TWO_TENSOR_POLARISATIONS_ON_THE_EDGE_CONE_BOUNDED_THEOREM_NOTE_2026-10-22 (the slab construction is inlined from its runner).
+- Companion computation: EDGE_REGISTER_SET_CENSUS_CUBE_EDGES_ALONE_GIVE_NO_HINGE_SUM_AND_SIX_EDGES_PER_SITE_GIVE_TWO_TENSOR_POLARISATIONS_ON_THE_EDGE_CONE_BOUNDED_THEOREM_NOTE_2026-10-22 (the slab construction is inlined from its runner). Neither that note nor the hidden-sector computation was found on `main` or this branch; they are recorded only in the consolidation's map ([VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md](VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md)).
 
 [end of lines 18-83 of the note]
 
 (Omitted from the note: lines 84-92 and lines 1-17, i.e. front matter, derivation prose, run instructions and any candidate-rule checklist.)
 
-### #9961: Split-time cascade is self-similar, so its delta-N spectrum is flat and the trigger reads no linear scalar
+### #9961: The split-time cascade is self-similar in the toy, so its octave-averaged delta-N index is zero, and the trigger reads no linear scalar
 
 - Branch `claude/toe-spectral-tilt-20261021`, head `8cdd1d8ba1`; note `docs/THE_SPLIT_TIME_CASCADE_IS_SELF_SIMILAR_SO_ITS_DELTA_N_SPECTRUM_IS_FLAT_AND_THE_TRIGGER_READS_NO_LINEAR_SCALAR_BOUNDED_THEOREM_NOTE_2026-10-22.md`.
 - Runner: [`scripts/the_split_time_cascade_is_self_similar_so_its_delta_n_spectrum_is_flat_and_the_trigger_reads_no_linear_scalar_2026_10_22.py`](../scripts/the_split_time_cascade_is_self_similar_so_its_delta_n_spectrum_is_flat_and_the_trigger_reads_no_linear_scalar_2026_10_22.py); cache `logs/runner-cache/the_split_time_cascade_is_self_similar_so_its_delta_n_spectrum_is_flat_and_the_trigger_reads_no_linear_scalar_2026_10_22.txt`.
-- Kind of statement: Mixed. Exact register arithmetic (A); a conditional theorem on cascades with level-independent shape (B1); finite seeded diagnostics in a supplied 2D block-tree toy with supplied Poisson stepping of each register (B2 to B5, C2); exact toy arithmetic (D); estimates against measurement.
+- Kind of statement: Mixed. Exact register arithmetic (A); a conditional theorem on infinite cascades with level-independent shape, which fixes the octave-averaged index only (B1, with a counter-witness for the local index and the finite-cascade boundary terms); finite seeded diagnostics in a supplied 2D block-tree toy with supplied Poisson stepping of each register (B2 to B5, C2); exact toy arithmetic (D); estimates against measurement.
 - Dependencies: Uses the read-lapse note with a stationary shift (PR 9933, assigned to gravity-edge-registers), the cascade theorem and 3.81e-5 per-level spread from the register's cosmology work, the one-cell-start reset and the Born split-time spread (cited by name only). PR 10007 narrows part B: split-time offsets are inherited rather than redrawn under the laws' quantile transport, and the Poisson toy assumed redraws (see CORRECTIONS). Relied on by 9966, 9979, 10000 and 10007.
 
 Claim scope (verbatim):
 
-> For the update law's glued split (a block splits when the mean of its cube's edge registers reaches 4s, its children's edges along parent edges take the parent's value minus s, held edges block a child, and the trigger needs each unsplit +x, +y, +z face neighbour's shared edges full): (A) exact register arithmetic: a generation is s register steps, ln 2 of log-length, for every s; over the 18 edges of a five-tetrahedron block cube the trigger's mean log-length is tr h/6 at first order, so no traceless strain moves it, and on a tensor wave along z it is -(9 h+^2 + 2 hx^2)/72 at second order. (B) A cascade whose level-l split-time spread has a level-independent shape and variance sig^2 lam^l has Delta^2(2k) = lam Delta^2(k), so n_s - 1 = log2 lam. In a 2D block-tree toy that keeps the trigger rule, with Poisson stepping of each register supplied to give the trigger a timing spread, the mean wait per generation stays ln 2 e-folds, the coupled (max-plus) trigger raises the wait variance by 1.8 and correlates waits (neighbours +0.32, parent-child -0.14), and the deep levels are stationary (deepest per-level ratio 0.9994 against the 0.976 that n_s = 0.965 needs); the per-level spread (ln 2)^2/(m s) contains only register numbers, so s and the window set the amplitude, never the tilt. (C) With the stationary-shift reading of the read lapse (zeta = 0 at k != 0), the laws give no linear split-time fluctuation; the tensors reach it at second order, blue and at most about 2e-21 at r < 0.036. (D) If every rule component is a function of local edge length, the uniform-length slice is the uniform-density slice and split-time spread carries zeta = 0; it becomes zeta = H delta T only through a supplied exit that reads ticks. Not computed: the 3D trigger with all 18 registers, the quantum volume-mode width per block, the second-order constraint that sources the trace from tensors.
+> For the update law's glued split (a block splits when the mean of its cube's edge registers reaches 4s, its children's edges along parent edges take the parent's value minus s, held edges block a child, and the trigger needs each unsplit +x, +y, +z face neighbour's shared edges full): (A) exact register arithmetic: a generation is s register steps, ln 2 of log-length, for every s; over the 18 edges of a five-tetrahedron block cube the trigger's mean log-length is tr h/6 at first order, so no traceless strain moves it, and on a tensor wave along z it is -(9 h+^2 + 2 hx^2)/72 at second order. (B) An infinite-level cascade whose level-l split-time spread has a level-independent shape, variance sig^2 lam^l, no cross-level covariance (or covariances with the same scaling) and a convergent level sum has Delta^2(2k) = lam Delta^2(k), so its octave-averaged index is n_s - 1 = log2 lam; the identity allows Delta^2 = k^(log2 lam) f(log2 k) with any period-one f, so it does not fix the local index (witness f = 1 + 0.1 cos 2 pi x; the 1D blocky shape itself gives a local index between -2.5 and +2.8 at lam = 1), and a finite cascade has boundary terms. In a 2D block-tree toy that keeps the trigger rule, with Poisson stepping of each register supplied to give the trigger a timing spread, the mean wait per generation stays ln 2 e-folds, the coupled (max-plus) trigger raises the wait variance by 1.8 and correlates waits (neighbours +0.32, parent-child -0.14), and the deep levels are stationary (deepest per-level ratio 0.9994 against the 0.976 that n_s = 0.965 needs); the per-level spread (ln 2)^2/(m s) contains only register numbers, so s and the window set the amplitude, never the tilt. (C) Given the cited stationary-shift reading of the read lapse (zeta = 0 at k != 0, PR #9933, not checked here), the laws give no linear split-time fluctuation; the tensors reach it at second order, blue and at most about 2e-21 at r < 0.036. (D) If every rule component is a function of local edge length, the uniform-length slice is the uniform-density slice and split-time spread carries zeta = 0; it becomes zeta = H delta T only through a supplied exit that reads ticks. Not computed: the 3D trigger with all 18 registers, the quantum volume-mode width per block, the second-order constraint that sources the trace from tensors.
 
 Statement and supporting text (copied from the note):
 
@@ -381,15 +381,15 @@ A. Register arithmetic and what the trigger reads (exact).
 
 B. Split cascades.
 
-1. Theorem. If the split-time spread contributed at level l has a level-independent spatial shape (in units of the level's block) and variance sig^2 lam^l, then Delta^2(2k) = lam Delta^2(k), so n_s - 1 = log2 lam exactly. Self-similar levels give n_s = 1. This rederives the cascade item in the register's cosmology work.
+1. Theorem (narrowed 2026-11-14). Suppose the split-time spread is a sum over levels l in Z, the level-l contribution has a level-independent spatial shape w (in units of the level's block) and variance sig^2 lam^l, the levels are uncorrelated (or their covariances depend only on the level difference and scale the same way), and the level sum converges at k. Then Delta^2(2k) = lam Delta^2(k). This fixes the octave-averaged index exactly: [ln Delta^2(2k) - ln Delta^2(k)]/ln 2 = log2 lam, and self-similar levels give an octave-averaged n_s = 1. It does not fix the local index d ln Delta^2/d ln k: every Delta^2 = k^(log2 lam) f(log2 k) with f positive and of period one obeys the identity. Negative results, computed: the witness f(x) = 1 + 0.1 cos(2 pi x) obeys the identity at lam = 1 to 2e-16, but its local index swings between -0.911 and +0.911; and the runner's own 1D blocky shape w(u) = u sinc^2(u/2) gives, at lam = 1, a local index between -2.51 and +2.75 inside each octave (Delta^2 max/min 1.19), because the shape's zeros at even u line up across levels at k = 2^n. A finite cascade (levels 0 to G) is not exactly self-similar: Delta^2_G(2k) - lam Delta^2_G(k) = w(2k) - lam^(G+1) w(2^-G k), boundary terms up to 0.41 of Delta^2 near the box scale at G = 9. This rederives the cascade item in the register's cosmology work and narrows its "flat spectrum" to the octave average.
 2. Toy with the trigger rule (2D block tree, 512^2 finest blocks, block-mean registers), with Poisson stepping of each register supplied to give the trigger a timing spread. In the free trigger (mean reaches 4s, children start at the parent's value minus s), the mean wait is ln 2 e-folds, the wait variance is (ln 2)^2/(m s), and the per-level variance does not depend on the level.
 3. In the coupled trigger (+x and +y unsplit neighbours full, held edges block, 2:1 balance), the max-plus coupling raises the wait variance by 1.8. Neighbour waits correlate at +0.32. Parent and child waits anticorrelate at -0.14, because a delayed parent's registers keep rising and the excess passes to its children. The mean wait stays ln 2, since the geometry and not the split sets it. The deep levels are stationary: the effective per-level variance at levels 8 and 9 agrees to 0.9994, against the 0.976 that n_s = 0.965 needs. Held edges bind rarely (0.3% of the ready block-steps); the neighbour-full condition binds 90%.
-4. The split-time field is made of sharp blocks. At fixed |k| the power along the axes exceeds the power along the diagonals by about 1.5, a statistical anisotropy on top of n_s = 1.
+4. The split-time field is made of sharp blocks. At fixed |k| the power along the axes exceeds the power along the diagonals by about 1.5, a statistical anisotropy on top of the octave-averaged n_s = 1.
 5. The e-fold wait Gamma(m s) ln 2/(m s) contains only register numbers (s, and m, the registers the trigger averages). Neither H, eps0 nor the window size enters, so rule-constant s and m give lam = 1 for every expansion history. s = 64 gives the same result.
 
 C. The laws' own channel.
 
-1. At linear order the trigger reads only tr h/6 (A2). With the stationary-shift reading of the read lapse, the scalar sector has zeta = 0 at every k != 0. So the laws give no linear split-time fluctuation at k != 0.
+1. At linear order the trigger reads only tr h/6 (A2). Given the stationary-shift reading of the read lapse, cited from the read-lapse note (PR #9933, not found on `main` or this branch, not rerun or checked here), the scalar sector has zeta = 0 at every k != 0. So, conditional on that citation, the laws give no linear split-time fluctuation at k != 0. The runner prints this as a CONDITIONAL line, not a counted check.
 2. The quadratic readout of a flat Gaussian field is blue (n - 1 of about +0.3 on a 64^3 grid, from the infrared logarithm) and of size about 9 Delta_h^4.
 
 D. When the split-time record is a curvature perturbation.
@@ -401,7 +401,7 @@ D. When the split-time record is a curvature perturbation.
 
 #### Estimates against measurement
 
-- Index. Every split-time channel with rule-constant numbers gives n_s = 1: 8.4 sigma from Planck and further from ACT. The measured index needs lam = 2^(n_s - 1) = 0.976 per split. In the Poisson model that means the product m s of the registers read and the steps per octave must grow by 2.46% per split, which no rule supplies.
+- Index. Every split-time channel computed here with rule-constant numbers gives an octave-averaged n_s = 1: 8.4 sigma from Planck and further from ACT. The local index within an octave is not fixed by the cascade and is O(1) log-periodic for the 1D blocky shape (B1). The measured index needs lam = 2^(n_s - 1) = 0.976 per split. In the Poisson model that means the product m s of the registers read and the steps per octave must grow by 2.46% per split, which no rule supplies.
 - Amplitude. A_s needs a per-level spread of 3.8e-5 e-folds. In the Poisson model that is m s = ln 2/A_s = 3.3e8, against at most 18 x 113 = 2034 for the rules, so the supplied Poisson model overshoots the amplitude by about 1.6e5. The laws' own channel is zero at linear order. At second order it is at most about 2e-21 at r < 0.036, and blue. CL-3's only de Sitter phase is today's (P_t of about 5e-122), so in the rules it is zero in practice.
 - Isotropy. Sharp blocks give axis-aligned excess power of order 1.5 in the toy.
 
@@ -409,9 +409,9 @@ D. When the split-time record is a curvature perturbation.
 
 Supplied: Poisson stepping of each register, used only in B to give the trigger a timing spread (a stochastic model, not a law); one mean register per block, averaging m = 3 in the toy; the 2D block tree; "full" read as a neighbour mean >= 4s; interior child edges at the parent mean minus s; a scalar stand-in for one tensor polarisation in C2; the injection fraction in D1, any value.
 
-Forced, given those: the register arithmetic; the first-order trace readout and the second-order tensor form; Delta^2(2k) = lam Delta^2(k); a mean wait of ln 2 per generation; stationarity of the coupled cascade in the toy; zeta = 0 when rho = F(a).
+Forced, given those: the register arithmetic; the first-order trace readout and the second-order tensor form; Delta^2(2k) = lam Delta^2(k) for an infinite self-similar cascade, hence its octave-averaged index; a mean wait of ln 2 per generation; stationarity of the coupled cascade in the toy; zeta = 0 when rho = F(a).
 
-Not computed: the 3D trigger on all 18 registers with the three neighbour faces; the quantum volume-mode width per block; the second-order constraint that sources the trace from tensors, which could change the coefficient in A3 but not the order; any exit law.
+Not computed: the local (sub-octave) spectrum of the 2D toy and of a 3D trigger; the 3D trigger on all 18 registers with the three neighbour faces; the quantum volume-mode width per block; the second-order constraint that sources the trace from tensors, which could change the coefficient in A3 but not the order; any exit law.
 
 Not claimed: that a tilt is impossible. A tilt needs a rule number that changes from one generation to the next (lam = 0.976 to 0.982), or a clock, and that is a named supplied number, not a gap the cascade fills.
 
@@ -419,22 +419,22 @@ Not claimed: that a tilt is impossible. A tilt needs a rule number that changes 
 
 - [minimal_axioms](MINIMAL_AXIOMS_2026-06-29.md)
 - [candidate_laws](CANDIDATE_LAWS.md)
-- Used: the read-lapse note (zeta = 0 at k != 0 with a stationary shift, inhomog-volume #9933); the cascade theorem and the 3.81e-5 per-level spread (cosmology); the reset at fixed local e-fold number (one-cell-start C3); the Born spread of split time (split-creation B5).
+- Used: the read-lapse note (zeta = 0 at k != 0 with a stationary shift, inhomog-volume #9933); the cascade theorem and the 3.81e-5 per-level spread (cosmology); the reset at fixed local e-fold number (one-cell-start C3); the Born spread of split time (split-creation B5). None of these was found as a file on `main` or this branch; they are recorded only in the consolidation's map ([VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md](VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md)) and enter as cited inputs.
 
 [end of lines 54-74 of the note]
 
 (Omitted from the note: lines 43-53, 75-81 and lines 1-17, i.e. front matter, derivation prose, run instructions and any candidate-rule checklist.)
 
-### #9979: A fold is a slow scalar clock only when the unfolded sea is critical on a surface; the update's Dirac sea makes it fast
+### #9979: A fold is a slow scalar clock when the unfolded sea is critical on a surface, and the update's Dirac sea makes it fast
 
 - Branch `claude/toe-fold-inflaton-20261021`, head `3d98c3bd3d`; note `docs/A_FOLD_IS_A_SLOW_SCALAR_CLOCK_ONLY_WHEN_THE_UNFOLDED_SEA_IS_CRITICAL_ON_A_SURFACE_AND_THE_UPDATES_DIRAC_SEA_MAKES_IT_FAST_BOUNDED_THEOREM_NOTE_2026-10-22.md`.
 - Runner: [`scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py`](../scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py); cache `logs/runner-cache/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.txt`.
-- Kind of statement: Mixed. Exact small-ring diagonalisation (A); a stiffness theorem with lattice ratio checks (B); a 1D toy with supplied one-loop stiffness and slow-roll dictionary (C); a supplied continuum-cutoff model of the Dirac band (D); an energy bound (E); estimates against measurement. All slow-roll numbers depend on the supplied star rule, J a = sqrt 3, M_P a = 1 at the flat rung, N* = 55 and semiclassical expansion with Hubble friction.
+- Kind of statement: Mixed. Exact small-ring diagonalisation (A); a stiffness theorem with lattice ratio checks (B); a 1D toy with supplied one-loop stiffness and slow-roll dictionary, its quadratures checked against a 30-digit mpmath quadrature (C); a supplied continuum-cutoff model of the Dirac band (D); an energy bound (E); estimates against measurement. All slow-roll numbers depend on the supplied star rule, J a = sqrt 3, M_P a = 1 at the flat rung, N* = 55 and semiclassical expansion with Hubble friction.
 - Dependencies: Uses the neighbourhood-roles note (star rule, bound-pair folds), the split-time cascade note (PR 9961), the record-clock note (PR 9966), PR 9918, and inflaton-design B1/C1 and inflaton A1 (cited by name). PR 10000 recomputes the self-consistent N* for the nested-sea plateau and obtains about 47, so the N* = 55 index values here are conditional on that supplied N* (see CORRECTIONS). The pole theorem is imported by 9982 and 9986; 10000 uses its re-seeding and misfold statements.
 
 Claim scope (verbatim):
 
-> For a fold order parameter m that opens a gap in a half-filled sea, with the one-loop (adiabatic) stiffness Z(m) = sum |<n|dH|0>|^2 / (E_n - E_0)^3 and the semiclassical slow-roll dictionary: (A) exact on rings N = 8, 10, 12: the star rule sum P_3/2 is the Majumdar-Ghosh form, with two gapped zero-phase folds; uniform odds (equal amplitudes on every half-filled configuration) are its top, an exact eigenstate at energy 1 per site, which the update's hop moves off within about one tick; the sea's weight on the fold manifold is conserved under the fold rule's unitary and falls with N (0.786, 0.660, 0.541). (B) Theorem: Z = c_d m^(d-3), with d the codimension of the sea's gapless set (c_1 = 1/3, c_2 = 2/3, d = 3 logarithmic), so the unfolded point is at infinite field distance only for d = 1. Lattice ratio check: 1D dimer chain 4.04, 3D nested cubic sea 4.00, 3D Dirac sea 0.91 (4 means pole, 1 means log). (C) 1D toy with the pole (dimer path, exact infinite-chain Wick): V_star falls monotonically from 0.07559 to 0 and z = 1/(24 pi delta^2); slow roll gives n_s = 0.9631-0.9634 at N* = 55 for rungs 0, 2, 4, r = 7e-6 to 2.5e-8, exit at delta = 0.01-0.05; lam = 2^(-2/N) = 0.975; A_s fixes the fold rung near 20 for coupling 1; children born unfolded give q = 1/8 + 7x/8, never a clock. (D) The update's isotropic Dirac band (d = 3, continuum ball cutoff): eta at N* = 55 is -0.88 (flat rung) and -14 (rung 4); n_s = 0.965 needs zeta ~ 50 against zeta <= 1 from the unit map. (E) Plateau energy that leaves the coherent mode sits in misfolds: at most 0.36 walls per site at full conversion. Supplied: the star rule, the dimer path and one-loop stiffness, J a = sqrt 3, M_P a = 1 at the flat rung, the fold rung, coupling gamma = 1, N* = 55, the Dirac cutoff, m_f = 1, semiclassical FRW with Hubble friction, the split carrying the fold order.
+> For a fold order parameter m that opens a gap in a half-filled sea, with the one-loop (adiabatic) stiffness Z(m) = sum |<n|dH|0>|^2 / (E_n - E_0)^3 and the semiclassical slow-roll dictionary: (A) exact on rings N = 8, 10, 12: the star rule sum P_3/2 is the Majumdar-Ghosh form, with two gapped zero-phase folds; uniform odds (equal amplitudes on every half-filled configuration) are its top, an exact eigenstate at energy 1 per site, which the update's hop moves off within about one tick; the sea's weight on the fold manifold is conserved under the fold rule's unitary and falls with N (0.786, 0.660, 0.541). (B) Theorem: Z = c_d m^(d-3), with d the codimension of the sea's gapless set (c_1 = 1/3, c_2 = 2/3, d = 3 logarithmic), so the unfolded point is at infinite field distance only for d = 1. Lattice ratio check: 1D dimer chain 4.04, 3D nested cubic sea 4.00, 3D Dirac sea 0.91 (4 means pole, 1 means log). (C) 1D toy with the pole (dimer path, exact infinite-chain Wick, quadratures cross-checked against a 30-digit mpmath quadrature to 4e-9): V_star falls monotonically from 0.07559 to 0 and z = 1/(24 pi delta^2); slow roll gives n_s = 0.9631-0.9634 at N* = 55 for rungs 0, 2, 4, r = 7e-6 to 2.5e-8, exit at delta = 0.01-0.05; lam = 2^(-2/N) = 0.975; A_s fixes the fold rung near 20 for coupling 1; children born unfolded give q = 1/8 + 7x/8, never a clock. (D) The update's isotropic Dirac band (d = 3, continuum ball cutoff): eta at N* = 55 is -0.88 (flat rung) and -14 (rung 4); n_s = 0.965 needs zeta ~ 50 against zeta <= 1 from the unit map. (E) Plateau energy that leaves the coherent mode sits in misfolds: at most 0.36 walls per site at full conversion. Supplied: the star rule, the dimer path and one-loop stiffness, J a = sqrt 3, M_P a = 1 at the flat rung, the fold rung, coupling gamma = 1, N* = 55, the Dirac cutoff, m_f = 1, semiclassical FRW with Hubble friction, the split carrying the fold order. Not computed: slow roll for d = 2 (line nodes, finite field distance).
 
 Statement and supporting text (copied from the note):
 
@@ -456,7 +456,7 @@ B. What sets the fold's speed (theorem and lattice check).
    - d = 2: m^-1, with c_2 = 2/3;
    - d = 3 (Dirac points): log(1/m) only, with constant log 2 - 4/3.
 
-   The canonical distance to the unfolded point, int sqrt(Z) dm, diverges only for d = 1.
+   The canonical distance to the unfolded point, int sqrt(Z) dm, diverges only for d = 1. The slow-clock statements below are for d = 1 (C) and d = 3 (D); d = 2 is not computed, so "slow only when d = 1" is not claimed.
 2. Lattice check, using the ratio [Z(0.1) - Z(0.2)] / [Z(0.2) - Z(0.4)], which is 4 for a pole and 1 for a log:
    - 1D dimer chain: 4.04;
    - 3D half-filled nearest-neighbour cubic sea (a nested Fermi surface; the fold is the staggered gap): 4.00;
@@ -466,6 +466,7 @@ C. A 1D toy where the pole exists: the star rule on the dimer path (hops 1 +- de
 
 1. Exact infinite-chain values:
    - The Wick reduction gives V_star = 1/2 + (2/3)[(g_s - g_s^2) + (g_w - g_w^2)] + (4/3) g_s g_w from the strong- and weak-bond correlators. It is checked against a 10-site Slater state (1e-12) and a 400-site chain.
+   - Convergence (C1b, added 2026-11-14): the infinite-chain quadratures for V and z agree with an independent 30-digit mpmath quadrature at seven delta from 1e-9 to 1 - 1e-6 (relative 4.2e-9 for V, 2e-16 for z), and the 300-point grid raises no integration warning. The earlier cache's roundoff, subdivision, divergence and bad-integrand warnings came from a subtracted integrand, sin^2/f - sin, which loses about 3e-3 of V0 - V at delta = 1e-9; the runner now uses the equal cancellation-free form -delta^2 cos^2 sin/(f(sin + f)) (half angles), and the runner's control reproduces the old error. Every printed value of C1, C2 and D1 is unchanged by the fix.
    - V_star falls monotonically from V0 = 0.07559 to 0, with V0 - V ~ delta^2 ln^2(1/delta).
    - The stiffness is z = 1/(24 pi delta^2) (0.013263 at delta = 1e-9).
 2. Slow roll. Take chi = zeta int sqrt(z) d delta in Planck units, with zeta = (J a)^(-1/2) / (M_P a_r) and M_P a = 1 at the flat rung (unit map). The pole makes V(chi) an exponential plateau: the fold is critically slowed near the sea.
@@ -490,7 +491,7 @@ D. The update's sea.
 
 E. Reheating. The fold rule is >= 0 and vanishes only on folds. Every bit of plateau energy that leaves the coherent mode therefore sits in misfolds: domain walls, whose sites are free, so they are matter in the neighbourhood reading. Full conversion gives at most 2 V0 / gap_pair = 0.36 walls per site, a dense gas at the fold scale, which splits then dilute as matter.
 
-[end of lines 26-76 of the note]
+[end of lines 26-77 of the note]
 
 #### Estimates against measurement
 
@@ -529,15 +530,13 @@ Not computed:
 - the CL-3 vacuum standard's reading of the plateau (it gravitates only as a departure from the folded vacuum, and between splits it scales like the cell, l^-4, so a log-periodic ripple of period ln 2 is expected);
 - reheating dynamics beyond the energy bound.
 
-Not claimed: that a fold cannot be the clock. It can, but only if the sea it folds has a gapless surface. CL-1's sea has only Dirac points.
+Not claimed: that a fold cannot be the clock. It can when the sea it folds has a gapless surface (d = 1); for Dirac points (d = 3) at the supplied cutoff and unit map it is fast; line nodes (d = 2) are not computed. CL-1's sea has only Dirac points.
 
 #### Candidate law text (tested, not adopted)
 
 > CL-F (fold). "The first odds are the unfolded sea. Roles are read from the zero-phase states of a uniform star rule acting with coupling gamma on the blocks of rung r_f, and a split carries its parent's fold order to its children."
 
-
-[end of lines 100-142 of the note]
-
+[end of lines 101-143 of the note]
 
 Smuggling check:
 - The pole comes from the sea's gapless surface, which is not CL-1's band, so a working version needs a new rule that makes the pre-fold sea nested (for example, a pre-role tick with only axis hops, whose half-filled sea is the nested cubic sea of B2). That rule is untested here and is not law text.
@@ -556,22 +555,23 @@ Smuggling check:
   - act-tilt, PR #9918 (every exponential plateau gives 1 - 2/N);
   - inflaton A1 (H a < 1.93e-5);
   - the register's unit map (M_P L = 1) and its Dirac light band.
-- Narrowed: the owner's fold-as-inflaton idea, to a sea that is critical on a surface.
+  - The split-time cascade note and act-tilt (PR #9918) are on this branch ([cascade](THE_SPLIT_TIME_CASCADE_IS_SELF_SIMILAR_SO_ITS_DELTA_N_SPECTRUM_IS_FLAT_AND_THE_TRIGGER_READS_NO_LINEAR_SCALAR_BOUNDED_THEOREM_NOTE_2026-10-22.md), [act-tilt](CURVATURE_SQUARED_INFLATION_MISSES_THE_ACT_TILT_AND_NO_RULE_LIFTS_IT_BOUNDED_THEOREM_NOTE_2026-10-21.md)); the other names are recorded only in the consolidation's map.
+- Narrowed: the owner's fold-as-inflaton idea, to a sea that is critical on a surface (of the cases computed).
 
-[end of lines 144-162 of the note]
+[end of lines 145-164 of the note]
 
-(Omitted from the note: lines 77-99, 143-143, 163-169 and lines 1-25, i.e. front matter, derivation prose, run instructions and any candidate-rule checklist.)
+(Omitted from the note: lines 1-25, 78-100, 144-144, 165-171; front matter, derivation prose, run instructions and any candidate-rule checklist.)
 
-### #9988: The gapped mirror keeps only a number shared with light matter, and its lightest state is charged, so it gives no dark matter
+### #9988: With all six species mixed by the tick, the gapped mirror keeps only a number shared with light matter, and its lightest state is charged, so it gives no dark matter in the supplied model
 
 - Branch `claude/toe-mirror-dark-matter-20261021`, head `16032e5f1e`; note `docs/THE_GAPPED_MIRROR_KEEPS_ONLY_A_NUMBER_SHARED_WITH_LIGHT_MATTER_AND_ITS_LIGHTEST_STATE_IS_CHARGED_SO_IT_GIVES_NO_DARK_MATTER_BOUNDED_THEOREM_NOTE_2026-10-22.md`.
 - Runner: [`scripts/the_gapped_mirror_keeps_only_a_number_shared_with_light_matter_and_its_lightest_state_is_charged_so_it_gives_no_dark_matter_2026_10_22.py`](../scripts/the_gapped_mirror_keeps_only_a_number_shared_with_light_matter_and_its_lightest_state_is_charged_so_it_gives_no_dark_matter_2026_10_22.py); cache `logs/runner-cache/the_gapped_mirror_keeps_only_a_number_shared_with_light_matter_and_its_lightest_state_is_charged_so_it_gives_no_dark_matter_2026_10_22.txt`.
-- Kind of statement: Mixed. Exact representation-theory, lattice (Smith normal form) and anomaly results for the mirror 16 with the Spin(10) pair square (A, C); a finite diagnostic of the cube tick's commutant and a theorem in a sector with a 1D witness (B); an atomic-limit level ordering using so(12) chain values cited from PR 9910 (D); estimates against measurement. All are for the supplied mirror cell and SM gauging.
-- Dependencies: Depends on PR 9910 (one-cell pair-square spectrum; chirality-doublers), PR 9974 (mirror condensate; families-flavour) and PR 9985 (far-layer N_eff; chirality-doublers), on the named Spin(10) pair-square note, and on PR 9963 (copy-sign vertex, A5 rederived). PR 10005 takes this note's group U(1)_Y x U(1)_X, X = (1, 1, -3, -3, 1, 5), as an input to its own Smith-form computation, so its conclusion that no charge is absent from light states rests on it. Relied on also by 9991 and 9996 (logged). The note narrows PR 9985 to a massless mirror.
+- Kind of statement: Mixed. Exact representation-theory, lattice (Smith normal form, full and partial light-mirror mixing) and anomaly results for the mirror 16 with the Spin(10) pair square (A, C); a finite diagnostic of the cube tick's commutant and a theorem in a sector with a 1D witness (B); an atomic-limit level ordering using so(12) chain values cited from PR 9910 (D); estimates against measurement. All are for the supplied mirror cell and SM gauging.
+- Dependencies: Depends on PR 9910 (one-cell pair-square spectrum; chirality-doublers), PR 9974 (mirror condensate; families-flavour) and PR 9985 (far-layer N_eff; chirality-doublers), on the named Spin(10) pair-square note, and on PR 9963 (copy-sign vertex, A5 rederived). PR 10005 takes this note's group U(1)_Y x U(1)_X, X = (1, 1, -3, -3, 1, 5), as an input to its own Smith-form computation, so its conclusion that no charge is absent from light states rests on it, and on the tick pairing all six species. Relied on also by 9991 and 9996 (logged). The note narrows PR 9985 to a massless mirror.
 
 Claim scope (verbatim):
 
-> For one mirror 16 (two spin components per cell) with the Spin(10) pair square, species-diagonal hops and SM gauging: (A) the species phases that keep every pair-square monomial form exactly U(1)_Y x U(1)_X, with X = 5(B-L) - 4Y = (1,1,-3,-3,1,5) on (Q,u^c,d^c,L,e^c,nu^c) and no discrete remnant (Smith normal form); mode number changes only by 4, and its Z4 = i^N equals exp(i pi X/2), the Spin(10) centre inside U(1)_X; mirror B' and L' are broken, B'-L' is kept; X has no anomaly with SM gauge fields, itself or gravity; with any species-diagonal light-mirror bilinear only U(1)_Y x U(1)_X(total) survives, so the mirror's number is shared with light B-L. (B) The CL-1 cube tick's one-body commutant is 16-dimensional at K = 0 and the identity at three random K: no mirror, copy or turn number exists for moving states; an exact one-body mirror number would leave the light sector a lattice theory by itself, vector-like by Nielsen-Ninomiya (1D witness: 20 random bands, net chirality 0). (C) SM singlets: none in the 10, one in the 16 (nu'^c, X = 5), two in the 45, one in the 54 (X = 0); 16 x 16bar = 1 + 45 + 210 and 10 x 10 = 1 + 45 + 54, so in the Spin(10)-symmetric phase nu'^c has zero photon and Z couplings to all orders in the mirror dynamics, while the 10's neutral members have T3 = +-1/2. (D) From the cited one-cell chains: the 10 (spin 0, X = +-2) at 19.07 g lies below the 16 (33.58 g), so the lightest mirror state is SM-charged and nu'^c (Delta_f) is the lightest SM singlet. Estimates against measurement use supplied inputs. Supplied model, finite diagnostic.
+> For one mirror 16 (two spin components per cell) with the Spin(10) pair square, species-diagonal hops and SM gauging: (A) the species phases that keep every pair-square monomial form exactly U(1)_Y x U(1)_X, with X = 5(B-L) - 4Y = (1,1,-3,-3,1,5) on (Q,u^c,d^c,L,e^c,nu^c) and no discrete remnant (Smith normal form); mode number changes only by 4, and its Z4 = i^N equals exp(i pi X/2), the Spin(10) centre inside U(1)_X; mirror B' and L' are broken, B'-L' is kept; X has no anomaly with SM gauge fields, itself or gravity; with a species-diagonal light-mirror bilinear on all six species only U(1)_Y x U(1)_X(total) survives, so the mirror's number is shared with light B-L; with bilinears on a subset S of the species the group has dimension 8 - |S| (one nu^c bilinear leaves 7), and a mirror-only U(1) or a finite mirror-only group (Z2 to Z6) survives on 23 of the 62 proper subsets. (B) The CL-1 cube tick's one-body commutant is 16-dimensional at K = 0 and the identity at three random K: no mirror, copy or turn number exists for moving states, and the tick, which acts on the cell index alike for every species (supplied model), supplies the bilinear for all six species; an exact one-body mirror number would leave the light sector a lattice theory by itself, vector-like by Nielsen-Ninomiya (1D witness: 20 random bands, net chirality 0). (C) SM singlets: none in the 10, one in the 16 (nu'^c, X = 5), two in the 45, one in the 54 (X = 0); 16 x 16bar = 1 + 45 + 210 and 10 x 10 = 1 + 45 + 54, so in the Spin(10)-symmetric phase nu'^c has zero photon and Z couplings to all orders in the mirror dynamics, while the 10's neutral members have T3 = +-1/2. (D) From the cited one-cell chains: the 10 (spin 0, X = +-2) at 19.07 g lies below the 16 (33.58 g), so the lightest mirror state is SM-charged and nu'^c (Delta_f) is the lightest SM singlet. The so(12) chains are cited from PR #9910 and not rechecked beyond reproducing E0 and the gaps from the cited coefficients. Estimates against measurement use supplied inputs. Supplied model, finite diagnostic.
 
 Statement and supporting text (copied from the note):
 
@@ -587,11 +587,12 @@ A. Symmetries of the mirror 16 with the pair square, species-diagonal hops and S
 2. Exact. SM gauging and species-diagonal hops commute with the six species numbers, U(1)^6. Of these, the pair square keeps exactly U(1)_Y x U(1)_X, with X = 5(B-L) - 4Y taking the values (1, 1, -3, -3, 1, 5) on (Q, u^c, d^c, L, e^c, nu^c). The Smith normal form has no torsion, so no discrete remnant exists beyond these two U(1)s. This answers "which U(1)s survive": one exact mirror number survives, U(1)_X, which at fixed Y is the mirror's B-L.
 3. Exact. Mode number changes by 4 only, so Z4 = i^N survives. Every mode has X = 1 mod 4, so i^N = exp(i pi X/2): the Z4 is the Spin(10) centre and lies inside U(1)_X. It is not an independent protection. Mirror B' and L' are broken separately: L' fully, and 3B' only down to the Z3 that colour already contains. B'-L' is exact.
 4. Exact. On one 16, the anomalies SU(3)^2 X, SU(2)^2 X, Y^2 X, Y X^2, X^3 and gravity-X all vanish. The mirror's X therefore also survives electroweak instantons.
-5. Exact. Add the light family (a left 16) to the mirror (a right 16). Without mixing, the symmetry is U(1)^6 (light species) x U(1)_Y x U(1)_X(mirror), 8 dimensions. With any species-diagonal light-mirror bilinear, only U(1)_Y x U(1)_X(total) survives, 2 dimensions. The mirror's number is then the same symmetry as light B-L.
+5. Exact. Add the light family (a left 16) to the mirror (a right 16). Without mixing, the symmetry is U(1)^6 (light species) x U(1)_Y x U(1)_X(mirror), 8 dimensions. With a species-diagonal light-mirror bilinear on all six species, only U(1)_Y x U(1)_X(total) survives, 2 dimensions. The mirror's number is then the same symmetry as light B-L.
+6. Exact (all 63 subsets computed; added 2026-11-14). Partial mixing does not give that result. With bilinears on a subset S of the species the group has dimension 8 - |S|, since each bilinear ties one free light phase to the mirror's (Y_s, X_s) rotation. Negative result, explicit witness: a single nu^c light-mirror bilinear leaves dimension 7, and the five unmixed light phases stay free. The mirror's own X is broken by any one bilinear, because X_s is nonzero for every species. The mirror-only subgroup (trivial on every light mode) is U(1)^(2 - r) with r the rank of the mixed species' (Y_s, X_s): a mirror-only U(1) survives on any single species and on {Q, L}, whose charges are parallel (it is 6Y - X on the mirror). Sixteen other partial sets leave a finite mirror-only group (Z2, Z3, Z4 or Z6; for example Z6 for {e^c, nu^c}). Forty sets, the full set among them, leave none. So the statement "any species-diagonal bilinear leaves only U(1)_Y x U(1)_X(total)" is withdrawn; the result needs all six species mixed.
 
 B. The update shares the mirror's number with light matter.
 
-1. Finite diagnostic (rederives the copy-sign note's A5). Take the CL-1 cube tick at (b, mu, M) = (0.3, 0.4, 0.5). The one-body operators commuting with both half-ticks span 16 dimensions at K = 0: copy sign and turn labels are exact at rest. At three random K they span only the identity. No cell-local mirror, copy or turn number exists for moving states. The labels that pick out "the mirror" (the copy the three-fold turn rotates by e^(4 pi i/3), or the copy sign) are rest labels, so the tick is a light-mirror bilinear at nonzero momentum, and A5 applies.
+1. Finite diagnostic (rederives the copy-sign note's A5). Take the CL-1 cube tick at (b, mu, M) = (0.3, 0.4, 0.5). The one-body operators commuting with both half-ticks span 16 dimensions at K = 0: copy sign and turn labels are exact at rest. At three random K they span only the identity. No cell-local mirror, copy or turn number exists for moving states. The labels that pick out "the mirror" (the copy the three-fold turn rotates by e^(4 pi i/3), or the copy sign) are rest labels, so the tick is a light-mirror bilinear at nonzero momentum. In the supplied model the tick acts on the cell index alike for every species, so it supplies the bilinear for all six species and A5's full-mixing case applies; a tick that mixed only some species would fall under A6.
 2. Theorem (Nielsen-Ninomiya in a sector; 1D witness checked). Suppose an exact one-body mirror number existed. The light sector would then be a local lattice theory by itself, with exact charges, so it would be vector-like. The register also records that the mirror's zone-corner partners are gapped by the chiral generator only through light-mirror mixing. A separately conserved mirror number and a chiral light family therefore exclude each other in the present content.
 
 C. Quantum numbers of the gapped spectrum.
@@ -606,7 +607,7 @@ C. Quantum numbers of the gapped spectrum.
 
 D. Which mirror state is lightest (atomic limit; chains cited from #9910).
 
-1. The chains reproduce E0 = -2 sqrt(11088 + 48 sqrt 21081) g. The levels above it are:
+1. The chains reproduce E0 = -2 sqrt(11088 + 48 sqrt 21081) g. The chain coefficients are cited from PR #9910, whose note was not found on `main` or this branch, and are not rederived here; D1 checks only that they give the stated E0 and gaps. The levels above it are:
    - the 10 (spin 0, X = +-2) at Delta_b = 19.07 g;
    - 16 + 16bar (spin 1/2) at Delta_f = 33.58 g;
    - the 54 at 42.33 g.
@@ -626,16 +627,16 @@ Supplied inputs: the unit map (1 rad/tick = 2.1e18 GeV); the Kolb-Turner freeze-
 - nu'^c itself would be a good WIMP-like state: its Z and photon couplings vanish (C3), and its self-interaction is 4 pi/m^3, about 2e-17 cm^2/g at 56 TeV. But it is never the lightest stable mirror state.
 - N_eff. A gapped mirror has no massless state, so Delta N_eff = 0 below Delta, unlike the massless far layers (2.25, #9985). The empty-start condition becomes T_RH << Delta if the mirror is stable, and nothing if it decays.
 
-[end of lines 19-68 of the note]
+[end of lines 19-69 of the note]
 
 SMG does not change the copy-sign verdict. In isolation it does supply one exact, anomaly-free mirror number, U(1)_X, which contains the Z4 of the quartic. But:
-- (i) the tick shares X with light B-L, because the mirror label is a rest label (B1), so every mirror state decays at the cell rate;
+- (i) the tick shares X with light B-L, because the mirror label is a rest label (B1) and the tick mixes all six species alike (A5; partial mixing would leave mirror-only groups, A6), so every mirror state decays at the cell rate;
 - (ii) keeping a separate mirror number would make the light sector vector-like (B2) and undo the doubler gapping, so it conflicts with the chirality route that the SMG mirror exists for;
 - (iii) even with a supplied mirror number, the lightest stable mirror states are the SM-charged 10, not the neutral nu'^c.
 
 Chirality and dark matter do not unify through the SMG mirror in the present content. What SMG does give for free is a neutral composite with exactly zero gauge couplings in the Spin(10) limit (C3).
 
-[end of lines 72-77 of the note]
+[end of lines 73-78 of the note]
 
 #### Notes used or contradicted
 
@@ -647,11 +648,13 @@ Chirality and dark matter do not unify through the SMG mirror in the present con
 
 #### Boundary
 
-Exact: the representation theory, the lattice and Smith form of the species phases, the anomalies, and Wigner-Eckart.
+Exact: the representation theory, the lattice and Smith form of the species phases (full and partial mixing), the anomalies, and Wigner-Eckart.
 
 Finite: the tick commutant at (0.3, 0.4, 0.5) and three K, and the atomic-limit ordering.
 
-Cited: the so(12) chains and the copy vertex.
+Cited: the so(12) chains (PR #9910) and the copy vertex (the copy-sign note). Sources named only by their campaign names here (smg-verify, dark-matter-candidate, mirror-condensate-ew, gk-nogo-check, toy-qmc, qmc-face-gapped) are recorded only in the consolidation's map ([VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md](VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md)); no file of these names was found on `main` or this branch.
+
+Supplied: the tick acting on the cell index alike for every species (so it mixes all six).
 
 Not computed:
 - the lattice SMG phase and its band minima (the 10's further softening is cited from the toy QMC);
@@ -662,9 +665,9 @@ Not computed:
 
 Literature: Spin(10) branching rules and the GUT X charge are standard. The freeze-out formula and the unitarity scale are standard approximations.
 
-[end of lines 89-112 of the note]
+[end of lines 90-115 of the note]
 
-(Omitted from the note: lines 1-18 and lines 69-71, 78-88, 113-121.)
+(Omitted from the note: lines 1-18, 70-72, 79-89, 116-124.)
 
 ### #10000: An unsplit block cannot inflate; the fold plateau needs order-carrying splits and dephased split phases to seed perturbations
 
@@ -700,7 +703,7 @@ The candidate tested first is: "the universe begins as one block with the pre-ro
 - Read in the vacuum's own units (CL-3, with M_P l = 1), G ~ l^2 and H l is constant. So aH is constant, and there are zero horizon-exit e-folds however far the edges stretch. Uniform stretching is the register's "uniform dilation is a common whole shift": pure relabelling.
 - With G held fixed in proper units instead, rho ~ a^-4 (radiation), and aH falls by e^-60.
 
-**A3 [T]. General no-go.**
+**A3 [T]. General no-go (for the explicit family of fixed site sets below).**
 - Take a fixed set of sites whose per-site energy scales as l^p, with p <= 0 for bounded energy per tick (p = -1 under the tied lapse). Then w = -p/3 >= 0, and acceleration needs w < -1/3.
 - So e-folds need new sites: 60 e-folds are 86.6 split generations, and they must happen during the plateau.
 
@@ -832,21 +835,22 @@ Not computed:
 
 - Used: fold-inflaton (#9979; C5 re-seeding, E misfolds); nested-prefold-sea (#9982; C potential, D1 friction, E1 overlap); pi-flux-fold (#9986; face phases stay fixed, no Stokes issue); spectral-tilt (Poisson spread, n_s - 1 = log2 lam); record-clock-tilt (no record clock); act-tilt (#9918; every exponential plateau gives 1 - 2/N); inflaton A1.
 - Narrows: the owner's candidate that inflation happens in one unsplit block (refuted, A), and the nested-prefold claim that the passing must "write the clock" (IN-1 is the vacuum clause completed, B1).
+- Fold-inflaton, act-tilt and spectral-tilt are on this branch ([fold](A_FOLD_IS_A_SLOW_SCALAR_CLOCK_ONLY_WHEN_THE_UNFOLDED_SEA_IS_CRITICAL_ON_A_SURFACE_AND_THE_UPDATES_DIRAC_SEA_MAKES_IT_FAST_BOUNDED_THEOREM_NOTE_2026-10-22.md), [act-tilt](CURVATURE_SQUARED_INFLATION_MISSES_THE_ACT_TILT_AND_NO_RULE_LIFTS_IT_BOUNDED_THEOREM_NOTE_2026-10-21.md), [cascade](THE_SPLIT_TIME_CASCADE_IS_SELF_SIMILAR_SO_ITS_DELTA_N_SPECTRUM_IS_FLAT_AND_THE_TRIGGER_READS_NO_LINEAR_SCALAR_BOUNDED_THEOREM_NOTE_2026-10-22.md)); nested-prefold-sea, pi-flux-fold, record-clock-tilt and inflaton A1 are recorded only in the consolidation's map. D4's Poisson estimate is narrowed by the [Born split-time note](BORN_SPLIT_TIMES_ARE_WHITE_INHERITED_OFFSETS_AND_THE_PASSING_LEAVES_NO_REMAINDER_SO_NO_LAW_SEEDS_CURVATURE_BOUNDED_THEOREM_NOTE_2026-10-22.md) (0.0002 to 0.065 e-folds).
 
-[end of lines 151-185 of the note]
+[end of lines 151-186 of the note]
 
-(Omitted from the note: lines 118-118, 128-150, 186-192 and lines 1-14, i.e. front matter, derivation prose, run instructions and any candidate-rule checklist.)
+(Omitted from the note: lines 1-14, 118-118, 128-150, 187-193; front matter, derivation prose, run instructions and any candidate-rule checklist.)
 
-### #10002: First slab fixes Lambda only at the Planck scale; a record-count multiplier gives a wrong sign or a drifting Lambda
+### #10002: In the rebuilt one-cube window the first slab allows Lambda only at the Planck scale or above, and the tested record-count multipliers give a wrong sign or a drifting Lambda
 
 - Branch `claude/toe-lambda-rule-2-20261021`, head `26a6cb069a`; note `docs/FIRST_SLAB_FIXES_LAMBDA_ONLY_AT_THE_PLANCK_SCALE_AND_A_RECORD_COUNT_MULTIPLIER_GIVES_A_WRONG_SIGN_OR_A_DRIFTING_LAMBDA_BOUNDED_THEOREM_NOTE_2026-10-22.md`.
 - Runner: [`scripts/first_slab_fixes_lambda_only_at_the_planck_scale_and_a_record_count_multiplier_gives_a_wrong_sign_or_a_drifting_lambda_2026_10_22.py`](../scripts/first_slab_fixes_lambda_only_at_the_planck_scale_and_a_record_count_multiplier_gives_a_wrong_sign_or_a_drifting_lambda_2026_10_22.py); cache `logs/runner-cache/first_slab_fixes_lambda_only_at_the_planck_scale_and_a_record_count_multiplier_gives_a_wrong_sign_or_a_drifting_lambda_2026_10_22.txt`.
-- Kind of statement: Mixed. Exact symbolic and counting results; finite diagnostics of a supplied minisuperspace window and hop kinetic; estimates against measured Lambda and DESI central values (a sign comparison only).
+- Kind of statement: Mixed. Exact symbolic and counting results; finite diagnostics of a supplied minisuperspace window and hop kinetic (the allowed interval [Lambda_min, Lambda_max] of a generalised Rayleigh quotient); estimates against measured Lambda and DESI central values (a sign comparison only).
 - Dependencies: Rebuilds the construction of PR 9947 (fixed lapse, one-cube sign; logged) and builds on PRs 9962 (logged), 9900 and 9876. Cited by 10018. Supplied window, hop kinetic, v_r = sig/2, Q = 4, power q and LambdaCDM numbers.
 
 Claim scope (verbatim):
 
-> Two size rules for the response law's constant Lambda per proper 4-volume, tested against Lambda L^2 = 7.15e-121 (L = sqrt(8 pi) l_P) and w = -1. (a) First-slab charge. Conserved totals of the laws (fermion number, Gauss charges) dilute as a^-3 (w = 0), and the tick's conserved quasi-energy has w = n/3 under lapse a^n, so 1/3 under the fixed lapse (symbolic). Only a quantity copied per cell at splits and carried per proper 4-volume is Lambda-like: the per-4-volume phase over a split is exactly conserved (8 x 2 x 2^-4 = 1), and a per-cell energy copied at splits is w = -1 only on average, with a factor-8 sawtooth (cascade, 10 cycles). Fixing Lambda by the one-cube start's mean-zero dark constant, Lambda = <K>/<v> (rebuilt construction of PR #9947), is split-stable and predicts Lambda > 0, w0 = -1 and wa = 0. With a closed window top the allowed set is Lambda L^2 >= 1.3e-3 to 9.6e-2, so the measured value is excluded, by 1e117 to 1e119. With a transparent top Lambda_min falls as (top)^-6 (slope -6.00), so the size is free; it would need a top near 1e20 L. A matter-filled first cube needs a cancellation to 9e-120 (fitted). (b) Fixed 4-volume per record. Record counts are exact (Fano 0), so no Sorkin fluctuation arises. A sharp integer count makes Lambda L^2 defined only modulo 4 pi/sig (581 to 2902), a Planck-sized circle with the point on it free. A fixed total count of the history needs a finite 4-volume, which forces Lambda <= 0 (wrong sign). A to-date count N gives N^-1/2 = 0.011 to 0.14 times the measured value and N^-1 ~ 1e-122 times it, with w0 from -0.58 to +0.32 and wa from +0.51 to +1.63. (c) A first-slab integer (Q = 4) per 4-volume to date gives 4e-240 and tracks. No rule fixes the size; the gate result is FAILURE. Supplied model, finite diagnostic: LambdaCDM (Planck 2018), the eps0 range, the window and hop kinetic, v_r = sig/2, Q = 4, and DESI DR2 central values for a sign comparison.
+> Two size rules for the response law's constant Lambda per proper 4-volume, tested against Lambda L^2 = 7.15e-121 (L = sqrt(8 pi) l_P) and w = -1. (a) First-slab charge. Conserved totals of the laws (fermion number, Gauss charges) dilute as a^-3 (w = 0), and the tick's conserved quasi-energy has w = n/3 under lapse a^n, so 1/3 under the fixed lapse (symbolic). Of the three carrying modes tested (a conserved total, a per-cell energy copied at splits, a constant per proper 4-volume), only the last is Lambda-like: the per-4-volume phase over a split is exactly conserved (8 x 2 x 2^-4 = 1), and a per-cell energy copied at splits is w = -1 only on average, with a factor-8 sawtooth (cascade, 10 cycles). Fixing Lambda by the one-cube start's mean-zero dark constant, Lambda = <K>/<v> (rebuilt construction of PR #9947), is split-stable given the supplied rule that every newborn cube starts at flat on the same register, and then predicts Lambda > 0, w0 = -1 and wa = 0. With a closed window top the allowed set is the generalised Rayleigh interval [Lambda_min, Lambda_max] of (K, v), with Lambda_min L^2 = 1.3e-3 to 9.6e-2 and Lambda_max L^2 = 7.1e7 to 2.0e9, so the measured value is excluded, by 1e117 to 1e119. With a transparent top Lambda_min falls as (top)^-6 (slope -6.00), so the size is free; it would need a top near 1e20 L. A matter-filled first cube needs a cancellation to 9e-120 (fitted). (b) Fixed 4-volume per record. Under the supplied record rule (one record per site per half-tick) record counts are exact (Fano 0), so no Sorkin fluctuation arises. A sharp integer count makes Lambda L^2 defined only modulo 4 pi/sig (581 to 2902), a Planck-sized circle with the point on it free. A fixed total count of the history needs a finite 4-volume, which forces Lambda <= 0 (wrong sign). A to-date count N gives N^-1/2 = 0.011 to 0.14 times the measured value and N^-1 ~ 1e-122 times it, with w0 from -0.58 to +0.32 and wa from +0.51 to +1.63. (c) A first-slab integer (Q = 4) per 4-volume to date gives 4e-240 and tracks. None of the rules tested fixes the size; the gate result is FAILURE. Supplied model, finite diagnostic: LambdaCDM (Planck 2018), the eps0 range, the window and hop kinetic, v_r = sig/2, Q = 4, and DESI DR2 central values for a sign comparison.
 
 Statement and supporting text (copied from the note):
 
@@ -855,18 +859,18 @@ Statement and supporting text (copied from the note):
 A. Which conserved quantity is Lambda-like.
 
 1. The laws' conserved totals (fermion number, Gauss charges, and any total carried at a fixed energy per unit) dilute as a^-3, so w = 0. The tick's conserved quasi-energy under lapse a^n has w = n/3, so under the fixed lapse (n = 1) the dark constant is dark radiation (rederives PR #9947 item 1). The edge-pair totals n1 + n2 = 1 are labels, carrying no phase.
-2. A quantity behaves as a cosmological constant only if it is copied per cell at splits and carried per proper 4-volume. Over a split, 8 children x 2 child ticks x 2^-4 of the 4-volume gives exactly 1, so the per-4-volume phase is conserved. A per-cell energy copied at splits but fixed per cell is w = -1 only on average: over a 10-cycle cascade the fitted w is -0.990, with a factor-8 sawtooth in each cycle. The laws' one carrier of this kind is CL-3's constant itself, and in each cube it is tied to the edge zero-point by the mean-zero dark constant, <K> = Lambda <v>. Edge terms are not subtracted.
+2. Of the three carrying modes tested, only a quantity copied per cell at splits and carried per proper 4-volume behaves as a cosmological constant; other carrying rules are not tested. Over a split, 8 children x 2 child ticks x 2^-4 of the 4-volume gives exactly 1, so the per-4-volume phase is conserved. A per-cell energy copied at splits but fixed per cell is w = -1 only on average: over a 10-cycle cascade the fitted w is -0.990, with a factor-8 sawtooth in each cycle. The laws' one carrier of this kind is CL-3's constant itself, and in each cube it is tied to the edge zero-point by the mean-zero dark constant, <K> = Lambda <v>. Edge terms are not subtracted.
 
 B. The first-slab rule: Lambda is fixed by the one-cube start's mean-zero dark constant.
 
-3. On the rebuilt construction of PR #9947 (window l/L = 2^(n/s - 3), hop kinetic, Dirichlet walls), the closed-top minimum is Lambda_min L^2 = 8.35e-2, 9.14e-2 and 9.56e-2 at s = 23, 50 and 113 (Delta = 0), and 1.30e-3, 1.42e-3 and 1.49e-3 at Delta = 1. The mean form admits every Lambda >= Lambda_min. The measured value lies below the allowed set by a factor of 1.8e117 to 1.3e119, so the rule EXCLUDES the measured size. It does not merely miss it.
+3. On the rebuilt construction of PR #9947 (window l/L = 2^(n/s - 3), hop kinetic, Dirichlet walls), the closed-top minimum is Lambda_min L^2 = 8.35e-2, 9.14e-2 and 9.56e-2 at s = 23, 50 and 113 (Delta = 0), and 1.30e-3, 1.42e-3 and 1.49e-3 at Delta = 1. The mean form <K> = Lambda <v> admits exactly the Lambda in [Lambda_min, Lambda_max]: with y = v^(1/2) psi, <K>/<v> is the ordinary Rayleigh quotient of v^(-1/2) K v^(-1/2), so K - Lambda v is positive definite below the interval and negative definite above it (the runner checks both and that the extreme eigenvectors attain the ends). Lambda_max L^2 is 7.09e7, 3.72e8 and 2.04e9 at s = 23, 50 and 113, for either Delta. Corrected 2026-11-14 from "every Lambda >= Lambda_min", which is false above Lambda_max. The measured value lies below the allowed interval by a factor of 1.8e117 to 1.3e119, so the rule EXCLUDES the measured size. It does not merely miss it.
 4. With a transparent top, Lambda_min falls as (top length)^-6 (fitted slope -6.00 over tops of 2, 8 and 32 L). The start then fixes only the sign. The measured value would need a top of 1.1e20 L (8.5e-15 m), a length no law contains.
 5. With matter in the first cube, Lambda <v> = <K> - <E_m>. Reaching the measured value needs <E_m>/<K> = 1 - 8.6e-120, which is initial-data tuning (FITTED).
-6. The rule is split-stable. Every newborn cube is born at the flat length on the same register, so its constraint has the same Lambda_min, and nothing is kicked at splits. It predicts Lambda > 0, w0 = -1 and wa = 0.
+6. The rule is split-stable given a supplied premise: every newborn cube is born at the flat length on the same register, so its constraint has the same allowed interval, and nothing is kicked at splits. With that premise it predicts Lambda > 0, w0 = -1 and wa = 0. The runner prints this as a SUPPLIED line, not a counted check (it was a literal-True check before 2026-11-14).
 
 C. Fixed 4-volume per record: Lambda as the multiplier of the record count.
 
-7. Under CL-2 every site records once per half-tick, and splits go 1 -> 8, so the count is exact (Fano 0; one-cube start, 3 splits x 5 ticks: 46800 records, variance 0; seeded Poisson control Fano 0.999). A Sorkin-type dV4 ~ sqrt(N) has no source. Conjugacy with a sharp count leaves Lambda's value unconstrained; it does not give 1/sqrt(N).
+7. Under CL-2 every site records once per half-tick, and splits go 1 -> 8, so the count is a fixed function of the split history and is exact (Fano 0; one-cube start, 3 splits x 5 ticks: 46800 records, variance 0 by construction, printed as SUPPLIED). The counted check is the control: the Fano statistic detects a seeded Poisson count (Fano 0.999). A Sorkin-type dV4 ~ sqrt(N) has no source. Conjugacy with a sharp count leaves Lambda's value unconstrained; it does not give 1/sqrt(N).
 8. With V4 = N v_r exactly, and v_r = (sig/2) L^4, the Lambda phase is (Lambda L^2) v_r N with N an integer. So Lambda L^2 is defined only modulo 4 pi/sig, which is 581 to 2902 over the eps0 range: a Planck-sized circle. The measured value is 1.2e-123 of a turn, and nothing picks a point on the circle. PR #9947 found no such circle when the 4-volume per record varies with the edges. It exists only under the dropped fixed-4-volume clause.
 9. A fixed total record count for the whole history needs a finite total 4-volume. For Lambda > 0 the cascade's future 4-volume diverges, because splits never stop while H > 0 and the integral of e^(3Ht) dt diverges. A finite total therefore forces Lambda <= 0 and recollapse. The sign is wrong.
 10. A to-date count, taken as records in the past cone or as the Hubble volume times the age, is horizon-tied and not conserved, so it is no first-slab charge. Today N is 9.4e241 to 4.7e242 (past cone) or 3.0e243 to 1.5e244 (Hubble volume x age). The rule Lambda L^2 = N^-q gives:
@@ -894,10 +898,10 @@ Not claimed: that no first-slab or unimodular rule exists. These are not compute
 
 Supplied: LambdaCDM and the measured values; the eps0 range; the window [L/8, 2^(1+Delta) L] and the hop kinetic; v_r = sig/2; Q = 4; the power q; and DESI central values.
 
-Forced, given the laws:
+Forced, given the supplied models and the laws as this note states them (zero premise weight):
 - the a^-3 and n/3 laws;
 - per-4-volume conservation at splits;
-- Lambda_min > 0 and the (top)^-6 scaling;
+- Lambda_min > 0, the finite upper end Lambda_max, and the (top)^-6 scaling of Lambda_min;
 - exact counts;
 - the circle period;
 - Lambda <= 0 for a finite global total;
@@ -907,22 +911,22 @@ Forced, given the laws:
 
 - [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md): Z^3 sites, one qubit per site, nearest-neighbour admissibility, records.
 - [Candidate-law register](CANDIDATE_LAWS.md): CL-1's fixed lapse, window and split; CL-2's record per site per half-tick; CL-3's constant per proper 4-volume and mean-zero dark constant. Zero premise weight.
-- Builds on the open PRs #9947, #9962, #9900 and #9876.
+- Builds on the open PRs #9947, #9962, #9900 and #9876. #9900 and #9876 are carried on this branch ([fixed 4-volume](FIXED_FOUR_VOLUME_PER_RECORD_CANCELS_VACUUM_ENERGY_AND_LEAVES_LAMBDA_AS_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-21.md), [time reversal](TIME_REVERSAL_FREEZES_HALF_FILLED_SEA_RECORDS_AND_RECORD_COUNT_LAMBDA_NEEDS_POISSON_INPUT_BOUNDED_THEOREM_NOTE_2026-10-21.md)); #9947 and #9962 are recorded only in the consolidation's map.
 
 [end of lines 74-95 of the note]
 
 (Omitted from the note: lines 53-73, 96-104 and lines 1-19, i.e. front matter, derivation prose, run instructions and any candidate-rule checklist.)
 
-### #10005: No structure of the update protects a dark species
+### #10005: Four places searched in the update give no protected dark species: the mirror number is shared at every momentum, the block-period channel for copy decay is not settled, and the window floor holds no robust atom or abundant remnant
 
 - Branch `claude/toe-dm-from-structure-20261021`, head `e6d1d55aeb`; note `docs/NO_STRUCTURE_OF_THE_UPDATE_PROTECTS_A_DARK_SPECIES_BECAUSE_THE_MIRROR_NUMBER_IS_SHARED_AT_EVERY_MOMENTUM_THE_BLOCK_PERIOD_BLOCKS_NO_COPY_DECAY_AND_THE_WINDOW_FLOOR_HOLDS_NO_ATOM_OR_REMNANT_BOUNDED_THEOREM_NOTE_2026-10-22.md`.
 - Runner: [`scripts/no_structure_of_the_update_protects_a_dark_species_because_the_mirror_number_is_shared_at_every_momentum_the_block_period_blocks_no_copy_decay_and_the_window_floor_holds_no_atom_or_remnant_2026_10_22.py`](../scripts/no_structure_of_the_update_protects_a_dark_species_because_the_mirror_number_is_shared_at_every_momentum_the_block_period_blocks_no_copy_decay_and_the_window_floor_holds_no_atom_or_remnant_2026_10_22.py); cache `logs/runner-cache/no_structure_of_the_update_protects_a_dark_species_because_the_mirror_number_is_shared_at_every_momentum_the_block_period_blocks_no_copy_decay_and_the_window_floor_holds_no_atom_or_remnant_2026_10_22.txt`.
-- Kind of statement: Exact or finite diagnostics (commutant dimensions at chosen momenta, Smith normal form on an integer phase lattice, connectivity scans of one tetrahedron's register) and estimates against measurement; the mirror pair-square group is cited, not recomputed. Depends on supplied (b, mu, M), s, Delta, b_e, the stiffness scan and the unit map.
+- Kind of statement: Exact or finite diagnostics (commutant dimensions at chosen momenta, Smith normal form on an integer phase lattice, a projected-band diagnostic and a fixed-momentum count of resonant final states for the block period, connectivity scans of one tetrahedron's register) and estimates against measurement; the heavy-copy decay channel under the block period is not computed; the mirror pair-square group is cited, not recomputed. Depends on supplied (b, mu, M), s, Delta, b_e, the stiffness scan and the unit map.
 - Dependencies: Cites PR 9988 (mirror pair-square group U(1)_Y x U(1)_X, which in turn depends on PR 9910 in chirality-doublers and PR 9974 in families-flavour), PR 9963 (copy-sign vertex, recomputed here), PR 9991 and PR 9996; all four are in this theme and logged. Names PR 9847 as an open dark-matter PR (not assigned to any theme).
 
 Claim scope (verbatim):
 
-> Searches the structure CL-1 to CL-3 already have, with no added parity, for a protected dark species. (a) The cube tick's one-body commutant is 16 at K = 0 and at the zone corner pi(1,1,1), 8 on the diagonal 0.7(1,1,1), 4 at a random K, and 1 jointly over these and three random K: no number beyond species number is kept for moving states. On the integer species-phase lattice of a light 16 plus a mirror 16 (the mirror's pair-square group U(1)_Y x U(1)_X cited), the dark subgroup (trivial on every light mode) is U(1)^2 without a light-mirror pairing and trivial with the species-diagonal pairing in either form (Smith normal form, no torsion); every light mode has X = 1 mod 4, so U(1)_X and its Z4 are carried by light states. (b) The copy sign commutes with the tick at K = 0 only (7e-16 against 0.524); the traceless strain vertex is 0 at q = 0 and 0.297 at q = 0.87 M; a block half-tick is b_e cube half-ticks and edges repeat every b_e cells, so quasienergy and momentum are kept only mod 2 pi/b_e, and the light band (width 1.642 on 8^3 at (b, mu, M) = (0.3, 0.4, 0.5)) and M exceed 2 pi/b_e for b_e >= 40: no kinematic block on the heavy copy's decay. (c) On a regular tetrahedron's edge register (s = 2, Delta = 0, 8849 positive-volume states, one component) the all-floor state is connected to the flat state; under the register hop it leaves the floor (mean return 0.018); a quadratic departure bowl traps it in continuous time (0.45) but not in the per-tick form (at most 0.278 over six stiffnesses, below 0.1 at stiffness >= 2); splits start children at flat. (d) A floor remnant would weigh (b_e sqrt(8 pi)/16) M_Pl (12.5 M_Pl at b_e = 40), carries no number, and from the measured A_s has collapse fraction exp(-2.4e8) against the 1e-27 needed. The anti-smuggling gate result for the one rule considered (a floor lock) is FAIL. Supplied model, finite diagnostic: (b, mu, M), s, Delta, b_e, the stiffness scan, the mirror group, the unit map, the graviton-width coefficient, A_s, n_s, delta_c, g*, T_eq.
+> Searches the structure CL-1 to CL-3 already have, with no added parity, for a protected dark species. (a) The cube tick's one-body commutant is 16 at K = 0 and at the zone corner pi(1,1,1), 8 on the diagonal 0.7(1,1,1), 4 at a random K, and 1 jointly over these and three random K: no number beyond species number is kept for moving states. On the integer species-phase lattice of a light 16 plus a mirror 16 (the mirror's pair-square group U(1)_Y x U(1)_X cited), the dark subgroup (trivial on every light mode) is U(1)^2 without a light-mirror pairing and trivial with the species-diagonal pairing on all six species in either form (Smith normal form, no torsion; partial pairing is treated in the mirror note's A6); every light mode has X = 1 mod 4, so U(1)_X and its Z4 are carried by light states. (b) The copy sign commutes with the tick at K = 0 only (7e-16 against 0.524); the traceless strain vertex is 0 at q = 0 and 0.297 at q = 0.87 M; a block half-tick is b_e cube half-ticks and edges repeat every b_e cells, so quasienergy and momentum are kept only mod 2 pi/b_e, and the light band projected over all momenta (width 1.642 on 8^3 at (b, mu, M) = (0.3, 0.4, 0.5)) and M exceed 2 pi/b_e for b_e >= 40; at a fixed emitted momentum the allowed light final states are only 2 b_e^3, so their resonant edge energies are a finite set (gaps up to 2.9e-5 at b_e = 40); whether the heavy copy's decay channel is open (joint momentum and energy conservation with a nonzero vertex) is not computed and stays open. (c) On a regular tetrahedron's edge register (s = 2, Delta = 0, 8849 positive-volume states, one component) the all-floor state is connected to the flat state; under the register hop it leaves the floor (mean return 0.018); a quadratic departure bowl traps it in continuous time (0.45) but not in the per-tick form (at most 0.278 over six stiffnesses, below 0.1 at stiffness >= 2); splits start children at flat. (d) A floor remnant would weigh (b_e sqrt(8 pi)/16) M_Pl (12.5 M_Pl at b_e = 40), carries no number, and from the measured A_s has collapse fraction exp(-2.4e8) against the 1e-27 needed. The anti-smuggling gate result for the one rule considered (a floor lock) is FAIL. The search covers these four places only and rules out nothing beyond them. Supplied model, finite diagnostic: (b, mu, M), s, Delta, b_e, the stiffness scan, the mirror group, the unit map, the graviton-width coefficient, A_s, n_s, delta_c, g*, T_eq.
 
 Statement and supporting text (copied from the note):
 
@@ -951,9 +955,9 @@ A charge kept by moving states must commute at every K. So the corner pairing do
 
 **A2 [T].** Take the integer lattice of species phases for a light 16 plus a mirror 16. The mirror's own pair-square group, U(1)_Y x U(1)_X with no torsion, is cited from the mirror note.
 - Without a light-mirror pairing, the dark subgroup (the part acting trivially on every light mode) is U(1)^2: the mirror's own Y' and X'.
-- With the species-diagonal pairing, in the form psi^dag psi' or psi psi', the dark subgroup is trivial, and the whole group is U(1)^2 = Y and X(total). Smith normal form; no torsion.
+- With the species-diagonal pairing on all six species, in the form psi^dag psi' or psi psi', the dark subgroup is trivial, and the whole group is U(1)^2 = Y and X(total). Smith normal form; no torsion. Pairing on only some species leaves a mirror-only U(1) or a finite mirror-only group in 23 of the 62 proper subsets (mirror note A6).
 
-A1 says the tick supplies that pairing at nonzero K.
+A1 says the tick supplies that pairing at nonzero K; since the tick acts on the cell index alike for every species (supplied model), it pairs all six.
 
 **A3 [T].** Every light mode has X = 1 mod 4, and i^N = exp(i pi X/2). So U(1)_X and its Z4 are carried by light states; the lightest carrier is the neutrino, with X = -3. CL-1's species mode numbers are carried by each species' light copy at rest.
 
@@ -965,19 +969,20 @@ Therefore no charge of the update is absent from the light states, and (a) gives
 
 **B2 [F].** The traceless one-cube strain vertex, heavy copy at rest to light copy at recoil q, is 6e-10 at q = 0, 0.038 at 0.1 M and 0.297 at 0.87 M. This recomputes the copy-sign note's A6.
 
-**B3 [T+F].** This item is new: the block period gives no kinematic protection.
+**B3 [T+F].** This item is new: a diagnostic of the block period, not a channel calculation (narrowed 2026-11-14).
 - A block half-tick is b_e cube half-ticks (CL-3 text), and the edge lattice repeats every b_e cells. So the full update keeps quasienergy only mod 2 pi/b_e per cube tick, and crystal momentum only mod 2 pi/b_e per cell.
 - The light copy's positive band spans [0.400, 2.042] on the 8^3 grid, a width of 1.642. Both this width and M = 0.5 exceed 2 pi/b_e (0.157, 0.063 and 0.006 at b_e = 40, 100 and 1000).
-- The folded light band therefore covers the whole quasienergy circle. For any edge-quantum energy and momentum, some light final state is resonant through umklapp.
+- Projected over all momenta, the folded light band therefore covers the whole quasienergy circle. That is necessary for an open channel but not sufficient.
+- Negative result (B3b, computed): at a fixed emitted edge-quantum momentum q, momentum conservation modulo the block reciprocal lattice leaves only the b_e^3 light momenta k = -q + 2 pi n/b_e in the fine zone, two light bands each. Their resonant edge energies form a finite set of 2 b_e^3 values mod 2 pi/b_e, with largest gap 0.243 of 1.571 at b_e = 4 and 2.9e-5 of 0.157 at b_e = 40 (seeded q). So the earlier sentence "for any edge-quantum energy and momentum, some light final state is resonant through umklapp" is withdrawn.
 
-Both energy and recoil can be absorbed by the block structure. Exactness at rest suppresses no decay.
+Open: whether the heavy copy's decay is kinematically blocked needs joint momentum and quasienergy conservation with an edge-quantum dispersion and a nonzero vertex, integrated over the emitted momenta. That channel calculation is not done here, and no edge-quantum dispersion is supplied.
 
-**B4 [E].** With the graviton width g^2 M^3/(32 pi Mbar^2) at the O(1) vertex:
+**B4 [E].** Conditional on an open channel (B3 leaves that open), with the graviton width g^2 M^3/(32 pi Mbar^2) at the O(1) vertex:
 - at the law's M (one constant for every species, about 1.1e18 GeV) the heavy copy lives 4e-39 s;
 - tau = 4e6 s at 1 TeV;
 - tau > 8e18 s needs M < 82 MeV, which a heavy electron copy excludes.
 
-Result: (b) gives no dark species.
+Result: (b) is open. Exactness at rest alone suppresses no decay (B1, B2), but whether the block period blocks the decay is not settled (B3); if a channel is open, B4's lifetimes apply.
 
 ##### C. A geometry atom at the window floor
 
@@ -1012,19 +1017,17 @@ b_e is only bounded below (about 40 or more), so this mass is supplied, not fixe
 
 The power needed is P_R = 8.3e-3, about 4e6 A_s. The abundance is supplied, not fixed.
 
+[end of lines 22-108 of the note]
 
-[end of lines 22-107 of the note]
-
-
-None of (a) to (d) gives a dark species from structure the laws already have:
-- (a) every conserved charge is carried by light states;
-- (b) the block period gives no kinematic suppression;
+None of (a), (c) and (d) gives a dark species from structure the laws already have, and (b) is open:
+- (a) every conserved charge is carried by light states (with the tick pairing all six species);
+- (b) the projected light band covers the block quasienergy circle, but the decay channel itself is not computed, so a kinematic block is neither shown nor excluded;
 - (c) the floor holds no robust atom, and splits make none;
 - (d) a floor remnant has a supplied mass, no protecting number and a negligible abundance under the measured spectrum.
 
-This extends the copy-sign, mirror and fold-defect notes and agrees with the AX-5 conclusion: a stable dark species still needs a conserved number the laws do not contain. Dark matter stays open (owner decision 2).
+This extends the copy-sign, mirror and fold-defect notes and agrees with the AX-5 conclusion for (a), (c) and (d): there a stable dark species would need a conserved number these structures do not contain. The search covers these four places only; it rules out nothing beyond them. Dark matter stays open (owner decision 2).
 
-[end of lines 109-116 of the note]
+[end of lines 110-117 of the note]
 
 #### Smuggling review
 
@@ -1043,13 +1046,14 @@ Forced, given these:
 - the trivial dark subgroup under the pairing;
 - the light carriers of X and Z4;
 - rest-only copy exactness and the O(1) vertex at recoil;
-- quasienergy and momentum kept only mod 2 pi/b_e (from the block-tick clause);
+- quasienergy and momentum kept only mod 2 pi/b_e (from the block-tick clause), and the finite fixed-q resonant set;
 - connectivity of the floor to flat;
 - children at flat;
 - M_rem proportional to b_e;
 - no register number.
 
 Not derived:
+- the heavy-copy decay channel under the block period (joint momentum and energy conservation with an edge-quantum dispersion and a nonzero vertex);
 - the lattice (many-cell) decay rate of a stiff floor configuration;
 - the true CL-3 stiffness per register step;
 - Hawking emission on the register lattice itself;
@@ -1057,27 +1061,28 @@ Not derived:
 
 #### Notes used or contradicted
 
-- Copy-sign note (dark-matter-candidate): A5 and A6 are recomputed (A1, B1, B2). B3 adds the block-period umklapp.
-- Mirror note (PR #9988): its pair-square group is cited; its B1 is extended to the zone corner and joint K (A1); its "shared with light B-L" is made exact on the phase lattice (A2).
+- Copy-sign note (dark-matter-candidate): A5 and A6 are recomputed (A1, B1, B2). B3 adds a block-period folding diagnostic and its fixed-q limit.
+- Mirror note (PR #9988; [on this branch](THE_GAPPED_MIRROR_KEEPS_ONLY_A_NUMBER_SHARED_WITH_LIGHT_MATTER_AND_ITS_LIGHTEST_STATE_IS_CHARGED_SO_IT_GIVES_NO_DARK_MATTER_BOUNDED_THEOREM_NOTE_2026-10-22.md)): its pair-square group is cited; its B1 is extended to the zone corner and joint K (A1); its "shared with light B-L" is made exact on the phase lattice for six-species pairing (A2).
+- Sources named only by campaign name here (the copy-sign note, the fold-defect note, the AX-5 note, floor-horizon, window-fix and the register's dark-matter line) are recorded only in the consolidation's map ([VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md](VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md)); no file of these names was found on `main` or this branch, and their results are used as cited inputs.
 - Fold-defect note (PR #9991): its zero-Kibble-Zurek passing argument is paralleled for floored cells (C4).
 - AX-5 note: its gate failure stands. This note finds no structure-based replacement.
 - Floor-horizon and window-fix: the floor 1/8 and the window are used as written.
 - Register dark-matter line: the primordial-hole fraction exp(-2.4e8) is reproduced and applied to remnants (D3).
 
-[end of lines 128-164 of the note]
+[end of lines 129-167 of the note]
 
-(Omitted from the note: lines 108-108, 117-127, 165-173 and lines 1-21, i.e. front matter, derivation prose, run instructions and any candidate-rule checklist.)
+(Omitted from the note: lines 1-21, 109-109, 118-128, 168-176; front matter, derivation prose, run instructions and any candidate-rule checklist.)
 
-### #10007: Born split times are white inherited offsets and the passing leaves no remainder, so no law seeds curvature
+### #10007: Born split times are white inherited offsets and the passing leaves no remainder, so none of the three tested sources seeds curvature
 
 - Branch `claude/toe-seed-rule-20261021`, head `a2e45add26`; note `docs/BORN_SPLIT_TIMES_ARE_WHITE_INHERITED_OFFSETS_AND_THE_PASSING_LEAVES_NO_REMAINDER_SO_NO_LAW_SEEDS_CURVATURE_BOUNDED_THEOREM_NOTE_2026-10-22.md`.
 - Runner: [`scripts/born_split_times_are_white_inherited_offsets_and_the_passing_leaves_no_remainder_so_no_law_seeds_curvature_2026_10_22.py`](../scripts/born_split_times_are_white_inherited_offsets_and_the_passing_leaves_no_remainder_so_no_law_seeds_curvature_2026_10_22.py); cache `logs/runner-cache/born_split_times_are_white_inherited_offsets_and_the_passing_leaves_no_remainder_so_no_law_seeds_curvature_2026_10_22.txt`.
-- Kind of statement: Mixed. Exact statements (A1, B1 to B3, the odds statement in C1); finite diagnostics in supplied toys (1D raw-passing toy, 32^3 coupled-trigger lattice, 10^3 staggered sea); estimates against measurement. Depends on supplied register-odds readings, Gaussian offsets and the numbers N* = 46.8, H l_c = 2.3e-13 and the dephasing requirement from PR 10000.
+- Kind of statement: Mixed. Exact statements (A1, B1 to B3, the odds statement in C1); finite diagnostics in supplied toys (1D raw-passing toy, 32^3 coupled-trigger lattice and its low-k spectrum, 10^3 staggered sea); indices of seed fields read through a supplied linear readout with no transfer function; estimates against measurement. Depends on supplied register-odds readings, Gaussian offsets and the numbers N* = 46.8, H l_c = 2.3e-13 and the dephasing requirement from PR 10000.
 - Dependencies: Uses PR 10000, PR 9961 (cascade theorem, Poisson model, trigger edges), PR 9966 (records never condition the odds; quantile transport) and the register's split, passing and junction text, which the note cites as a document (CANDIDATE_LAWS_v3) not present on main. It narrows part B of PR 9961 and estimate D4 of PR 10000 (see CORRECTIONS). The proposed rules SE-1 and SE-2 are tests, not adopted laws; the note reports that neither produces A_s near 2.1e-9 with n_s between 0.965 and 0.974.
 
 Claim scope (verbatim):
 
-> For the update law's split and passing (eight children; edges along parent edges take the parent's value minus s, other registers start as in the children's vacuum; the nearest unitary carrying the update's vacuum onto the children's vacuum and each excitation onto the children's lowest excitation of the same charges, flux and momentum; the trigger on the cube's 18-edge mean at 4s with each unsplit +x, +y, +z face neighbour's shared-face edges full) and the actuality law (fewest-change transport, records never conditioning the odds): (A) the clause's remainder is zero for every mode, edge registers included, so A_s = 0 and P_t = 0 at linear order; the raw passing before the clause is no small squeezing: in a 1D free-fermion toy it leaves 0.62 excitations per parent site, fidelity e^(-1.27 per site), and a white density structure factor (1/16 at Q -> 0); a mode carried by its configuration gets |beta|^2 = 9/16. (B) The quantile transport keeps each register's Born quantile, and value-minus-s keeps it through the passing, so split-time offsets are inherited, never redrawn (1/4 of a child's trigger edges inherited: 6 on even, 3 on odd children); the block-mean offset is stationary at sigma_r/sqrt18 over 40 generations, the field is white (coarse variance ~8^-j), and as a curvature seed it gives Delta^2 ~ (k l)^3, about 1e-99 at the pivot. The coupled trigger DAMPS the spread (x0.43 on a 32^3 lattice with shared edges; always waiting for the face would amplify x2.4). Split phases spread by 0.35 e-folds would need Gaussian register odds of sd >= 4.9 s steps, more than half the (4+Delta)s window; the pair vacuum, the one-step floor and the own-hop window vacuum give 0.0002-0.065 e-folds, leaving the ln2 sawtooth (modulation 0.94-0.96). (C) Record picks seed nothing through odds; read through actual occupations they carry the vacuum's own density correlator, S(Q) -> Q^2 on a gapped staggered sea, so n_s - 1 = +4. (D) A mode-resolving passing threshold keeps the sawtooth (0.34-0.77) and its power depends on the chosen threshold; even with a supplied 0.35 dephasing and the inflation-rule's order carriage, A_s needs the FITTED rung, n_s = 0.957 (-5.6 sigma ACT+DESI) and r = 0. Supplied: Delta = 1, s = 23 and 135, the three register-odds readings, Gaussian offsets, the 1D raw-passing toy, a 10^3 staggered sea with mass 0.5, the inflation-rule's N* = 46.8 and H l_c = 2.3e-13, its mode model and dephasing requirement.
+> For the update law's split and passing (eight children; edges along parent edges take the parent's value minus s, other registers start as in the children's vacuum; the nearest unitary carrying the update's vacuum onto the children's vacuum and each excitation onto the children's lowest excitation of the same charges, flux and momentum; the trigger on the cube's 18-edge mean at 4s with each unsplit +x, +y, +z face neighbour's shared-face edges full) and the actuality law (fewest-change transport, records never conditioning the odds): (A) the clause's remainder is zero for every mode, edge registers included, so A_s = 0 and P_t = 0 at linear order; the raw passing before the clause is no small squeezing: in a 1D free-fermion toy it leaves 0.62 excitations per parent site, fidelity e^(-1.27 per site), and a white density structure factor (1/16 at Q -> 0); a mode carried by its configuration gets |beta|^2 = 9/16. (B) The quantile transport keeps each register's Born quantile, and value-minus-s keeps it through the passing, so split-time offsets are inherited, never redrawn (1/4 of a child's trigger edges inherited: 6 on even, 3 on odd children); the block-mean offset is stationary at sigma_r/sqrt18 over 40 generations, the field is white (coarse variance ~8^-j; low-k slope of k^3 P(k) 2.87), and as a curvature seed under a supplied linear readout it gives Delta^2 ~ (k l)^3, about 1e-99 at the pivot. The coupled trigger DAMPS the spread (x0.43 on a 32^3 lattice with shared edges; always waiting for the face would amplify x2.4). Split phases spread by 0.35 e-folds would need Gaussian register odds of sd >= 4.9 s steps, more than half the (4+Delta)s window; the pair vacuum, the one-step floor and the own-hop window vacuum give 0.0002-0.065 e-folds, leaving the ln2 sawtooth (modulation 0.94-0.96). (C) Record picks seed nothing through odds; read through actual occupations they carry the vacuum's own density correlator, S(Q) -> Q^2 on a gapped staggered sea, so Delta^2 = Q^3 S ~ Q^5 and n_s - 1 = +5 under a supplied readout in which the curvature seed is linear in the recorded density contrast with no transfer function (corrected 2026-11-14 from +4). (D) A mode-resolving passing threshold keeps the sawtooth (0.34-0.77) and its power depends on the chosen threshold; even with a supplied 0.35 dephasing and the inflation-rule's order carriage, A_s needs the FITTED rung, n_s = 0.957 (-5.6 sigma ACT+DESI) and r = 0. Supplied: Delta = 1, s = 23 and 135, the three register-odds readings, Gaussian offsets, the 1D raw-passing toy, a 10^3 staggered sea with mass 0.5, the linear readout from a seed field to a curvature index, the inflation-rule's N* = 46.8 and H l_c = 2.3e-13, its mode model and dephasing requirement. None of the three tested sources seeds A_s ~ 2e-9 with n_s 0.965-0.974; other sources are not tested.
 
 Statement and supporting text (copied from the note):
 
@@ -1105,7 +1110,7 @@ So the nearest-unitary step is load-bearing, not a small correction. The registe
 
 **A3 [T+E].** Candidate (a) therefore gives one of two things:
 - nothing, with the clause as written: A_s = 0 and P_t = 0 at linear order;
-- without the clause, white UV heating of O(1) quanta per site per split: Delta^2 ~ (k l)^3, n_s - 1 = +3, and (k l)^3 is about 1e-99 at the pivot (k l ~ H l_c e^-N*).
+- without the clause, white UV heating of O(1) quanta per site per split: Delta^2 ~ (k l)^3, n_s - 1 = +3 under a supplied linear readout, and (k l)^3 is about 1e-99 at the pivot (k l ~ H l_c e^-N*).
 
 It never gives a small, scale-invariant squeezing.
 
@@ -1140,13 +1145,13 @@ It never gives a small, scale-invariant squeezing.
 - The readings give sigma_split = 0.0002-0.065 e-folds.
 - With the inflation-rule's mode model, the ln2-periodic modulation is 0.94 (R2) and 0.96 (R1), with mean power 2.6 and 6.8 times Bunch-Davies. The sawtooth stays.
 
-**B7 [T+E]. The offsets can dephase, but they never seed.** As a curvature seed the white offset field gives Delta^2 ~ (k l)^3, n_s - 1 = +3, negligible at the pivot. The Poisson cascade's n_s = 1 assumed redraws that the quantile transport does not make.
+**B7 [T+D+E]. The offsets can dephase, but they never seed.** The coupled split-time field of B5 has Delta^2 = k^3 P(k) with low-k slope 2.87 over k = 1 to 8 on the 32^3 lattice, the white value 3 (an integrated control field gives -0.15 and fails the test). As a curvature seed under a supplied linear readout with no transfer function, it gives Delta^2 ~ (k l)^3, n_s - 1 = +3, negligible at the pivot. The Poisson cascade's n_s = 1 assumed redraws that the quantile transport does not make. (Before 2026-11-14 this line was a literal-True check; it is now computed.)
 
 #### C. Born picks of new sites' first records (candidate c)
 
 **C1 [T+D].**
 - Records never condition the odds, so a response that reads odds sees no record seed (exact).
-- If a source read the recorded occupations instead, the Born picks would carry the vacuum's own density correlator. On a gapped staggered sea (10^3, mass 0.5), S(Q) -> Q^2 (local power 1.75 at the two smallest Q). So Delta^2 ~ Q^5 and n_s - 1 = +4.
+- If a source read the recorded occupations instead, the Born picks would carry the vacuum's own density correlator. On a gapped staggered sea (10^3, mass 0.5), S(Q) -> Q^2 (local power 1.75 at the two smallest lattice Q). So Delta^2 = Q^3 S ~ Q^5 and, under the convention Delta^2 ~ k^(n_s - 1), n_s - 1 = +5. Corrected 2026-11-14: the earlier +4 was off by one. Calling this a curvature index needs a supplied readout hypothesis: the curvature seed is linear in the recorded density contrast at the readout scale, with no transfer function.
 - A gapless 1D sea gives S ~ Q.
 
 #### D. Seed rules against the gate
@@ -1168,7 +1173,7 @@ It never gives a small, scale-invariant squeezing.
 
 #### What the measurement now demands (not claimed derived)
 
-- A horizon-correlated seed. Every Born or record source the laws contain is local and kept (white). Only the modes themselves carry correlations at the horizon scale, and the vacuum clause removes their squeezing.
+- A horizon-correlated seed. Every Born or record source tested here is local and kept (white). Only the modes themselves carry correlations at the horizon scale, and the vacuum clause removes their squeezing.
 - A route that remains open (UNTESTED): smooth expansion inside a block. If the edge stretching between splits were not a pure dilation in cell units (the tied lapse makes it one), then a mode carried by its configuration would be pumped continuously, and no dephasing would be needed. That requires a rule under which the tick is not static in cell units between splits. This bends the dilation-gauge result of inflation-rule A2.
 - A_s still needs the plateau height in Planck units from a rule for the fold rung, and n_s >= 0.965 needs N* > 57 or a non-exponential plateau.
 
@@ -1182,6 +1187,7 @@ Supplied:
 - the three register-odds readings and Gaussian offsets;
 - the 1D raw-passing toy and its reduced-state reading of "start half filled as in the children's vacuum";
 - the 10^3 staggered sea with mass 0.5;
+- the linear readout from a seed field (white offsets, record density) to a curvature index, with no transfer function;
 - from the inflation-rule note: N* = 46.8, H l_c = 2.3e-13, the mode model (summed cell count) and the 0.35 dephasing requirement (approximate).
 
 Forced, given those:
@@ -1191,7 +1197,7 @@ Forced, given those:
 - stationarity and whiteness;
 - damping by the coupled trigger;
 - the impossibility of 0.35 dephasing on the window for Gaussian odds;
-- the record correlator ~Q^2.
+- the record correlator ~Q^2, hence index +5 under the readout.
 
 Not computed:
 - the edge register's odds under the CL-3 response during stretching (the true sigma_n);
@@ -1207,16 +1213,17 @@ Not computed:
   - inflation-rule (#10000): D1-D3, the mode model, N*, IN-1;
   - spectral-tilt: cascade theorem, Poisson model, trigger edges;
   - record-clock-tilt: records never condition the odds; quantile register transport;
-  - the register's split, passing and junction text (CANDIDATE_LAWS_v3).
+  - the register's split, passing and junction text (CANDIDATE_LAWS_v3, not in this repository);
+  - inflation-rule is [on this branch](AN_UNSPLIT_BLOCK_CANNOT_INFLATE_SO_THE_FOLD_PLATEAU_NEEDS_SPLITS_THAT_CARRY_ITS_ORDER_AND_DEPHASED_SPLIT_PHASES_TO_SEED_PERTURBATIONS_BOUNDED_THEOREM_NOTE_2026-10-22.md), and so is spectral-tilt ([split-time cascade](THE_SPLIT_TIME_CASCADE_IS_SELF_SIMILAR_SO_ITS_DELTA_N_SPECTRUM_IS_FLAT_AND_THE_TRIGGER_READS_NO_LINEAR_SCALAR_BOUNDED_THEOREM_NOTE_2026-10-22.md)); record-clock-tilt is recorded only in the consolidation's map.
 - Narrowed:
   - spectral-tilt B (its Poisson redraws are not the laws' transport; the laws make split-time offsets white);
   - inflation-rule D4 (the laws' dephasing is 0.0002-0.065, not 0.07-0.10, and the coupled trigger damps it).
 
-[end of lines 123-159 of the note]
+[end of lines 123-161 of the note]
 
-(Omitted from the note: lines 97-116, 122-122, 160-166 and lines 1-14, i.e. front matter, derivation prose, run instructions and any candidate-rule checklist.)
+(Omitted from the note: lines 1-14, 97-116, 122-122, 162-168; front matter, derivation prose, run instructions and any candidate-rule checklist.)
 
-### #10018: Records on change are frozen in the half-filled sea; everpresent histories fail the early bounds
+### #10018: Records on change are frozen in the half-filled sea, so the tested record rules give a record-count Lambda no Poisson source, and everpresent histories in the supplied S/V model fail the early bounds
 
 - Branch `claude/toe-everpresent-lambda-20261021`, head `73447fee15`; note `docs/RECORDS_ON_CHANGE_ARE_FROZEN_IN_THE_HALF_FILLED_SEA_SO_A_RECORD_COUNT_LAMBDA_HAS_NO_POISSON_SOURCE_AND_EVERPRESENT_HISTORIES_FAIL_THE_EARLY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-10-22.md`.
 - Runner: [`scripts/records_on_change_are_frozen_in_the_half_filled_sea_so_a_record_count_lambda_has_no_poisson_source_and_everpresent_histories_fail_the_early_bounds_2026_10_22.py`](../scripts/records_on_change_are_frozen_in_the_half_filled_sea_so_a_record_count_lambda_has_no_poisson_source_and_everpresent_histories_fail_the_early_bounds_2026_10_22.py); cache `logs/runner-cache/records_on_change_are_frozen_in_the_half_filled_sea_so_a_record_count_lambda_has_no_poisson_source_and_everpresent_histories_fail_the_early_bounds_2026_10_22.txt`.
@@ -1225,7 +1232,7 @@ Not computed:
 
 Claim scope (verbatim):
 
-> Tests record-count rules meant to give the Poisson counts an everpresent (Sorkin-type) Lambda needs. (a) Record on change, where a site records only when its actual occupation changes. If a site-diagonal antiunitary reverses both half-ticks, the half-filled sea has equal odds at both half-ticks. The fewest-change transport is then the identity, so record-on-change makes zero vacuum records (count 0, variance 0). Checked on a 1D pair-walk ring, N = 8, 10, 12, CL-1 gate form: TV <= 7.8e-16. In 1D the only breaking is the ring holonomy mod 2 pi; 2 pi is an exact gauge (frozen). At holonomy pi + 1 the rate per site falls with N (3.4e-2, 1.7e-2, 8.9e-3 at N = 6, 8, 10). Those counts are collective: the Fano factor grows in proportion to the window (0.80, 1.61, 4.02 for 2, 4, 10 sites), so there is no sqrt(N) law. A drifting mass angle gives local single hops: rate 0.142 per site per unit drift, Fano 2.00. (b) Prefactor. Lambda/L^2 is conjugate to V4, and a minimum-uncertainty packet gives Lambda_rms L^2 = L^4/(2 sigma_V) with sigma_V^2 = (F/r) v_c V4, where r is records per site per half-tick. With the past cone today (0.1229 H0^-4): imported Poisson per half-tick, or a fair Born coin per site per half-tick, overshoots by 6.7 to 14.9. Expansion-driven changes (through mass angles) give about 2e-40 of the measured value, and split-driven changes at most 5e-31. (c) History. Under S/V dynamics on the past light cone (ADGS model 1, amplitude A = (1/2) sqrt(2 r/(F sig))), rms Omega_L = A/(3 sqrt(V H^4)): 2.73 A in the radiation era, 1.81 A in the matter era, 0.95 A today, so Lambda tracks H^2. Histories from a = 1e-20 survive (H^2 > 0) only for A <~ 0.15. Today's Omega_L = 0.685 is then a >= 7 sigma fluctuation, and the best factorised joint probability with BBN and recombination bounds is about 8e-18. A late-window diagnostic (switched on at z = 3, conditioned on today) gives w0 = +0.17 [-0.97, +0.89] and wa = -0.86 [-3.03, +1.50]; 0 of 82 histories fall in a DESI DR2 box or a LambdaCDM box. Gate result: FAILURE. Supplied model, finite diagnostic: toy gate parameters, LambdaCDM (Planck 2018), the eps0 range, the S/V dynamics, approximate BBN and CMB bounds, and DESI central values.
+> Tests record-count rules meant to give the Poisson counts an everpresent (Sorkin-type) Lambda needs. (a) Record on change, where a site records only when its actual occupation changes. If a site-diagonal antiunitary reverses both half-ticks, the half-filled sea has equal odds at both half-ticks. The fewest-change transport is then the identity, so record-on-change makes zero vacuum records (count 0, variance 0). Checked on a 1D pair-walk ring, N = 8, 10, 12, CL-1 gate form: TV <= 7.8e-16. In 1D the only breaking is the ring holonomy mod 2 pi; 2 pi is an exact gauge (frozen). At holonomy pi + 1 the rate per site falls with N (3.4e-2, 1.7e-2, 8.9e-3 at N = 6, 8, 10). Those counts are collective: the Fano factor grows in proportion to the window (0.80, 1.61, 4.02 for 2, 4, 10 sites), so there is no sqrt(N) law. A drifting mass angle gives local single hops: rate 0.142 per site per unit drift, Fano 2.00. (b) Prefactor. Lambda/L^2 is conjugate to V4, and a minimum-uncertainty packet gives Lambda_rms L^2 = L^4/(2 sigma_V) with sigma_V^2 = (F/r) v_c V4, where r is records per site per half-tick. With the past cone today (0.1229 H0^-4): imported Poisson per half-tick, or a fair Born coin per site per half-tick, overshoots by 6.7 to 14.9. Expansion-driven changes (through mass angles) give about 2e-40 of the measured value, and split-driven changes at most 5e-31. (c) History. Under S/V dynamics on the past light cone (ADGS model 1, amplitude A = (1/2) sqrt(2 r/(F sig))), rms Omega_L = A/(3 sqrt(V H^4)): 2.73 A in the radiation era, 1.81 A in the matter era, 0.95 A today, so Lambda tracks H^2. In this supplied model, histories from a = 1e-20 survive (H^2 > 0) only for A <~ 0.15. Today's Omega_L = 0.685 is then a >= 7 sigma fluctuation, and the best factorised joint probability with BBN and recombination bounds is about 8e-18; this is a supplied-model diagnostic, not a likelihood, and the difference from published viable histories (A ~ 0.25 to 0.5) is not resolved. A late-window diagnostic (switched on at z = 3, conditioned on today) gives w0 = +0.17 [-0.97, +0.89] and wa = -0.86 [-3.03, +1.50]; 0 of 82 histories fall in a DESI DR2 box or a LambdaCDM box (a box test, not a likelihood). Gate result for the tested rules: FAILURE. No exclusion of everpresent Lambda beyond this model is claimed. Supplied model, finite diagnostic: toy gate parameters, LambdaCDM (Planck 2018), the eps0 range, the S/V dynamics, approximate BBN and CMB bounds, and DESI central values.
 
 Statement and supporting text (copied from the note):
 
@@ -1233,25 +1240,25 @@ Statement and supporting text (copied from the note):
 
 A. Records on change in the half-filled sea.
 
-1. Theorem (frozen vacuum). Suppose a site-diagonal antiunitary K reverses each half-tick, K U K = U^dag. Then K maps the Floquet sea at one half-tick onto the sea at the other, so the configuration odds are equal at both. The fewest-change transport between equal odds is the identity, and it is unique, since every other plan has positive expected change. Under record-on-change the vacuum therefore makes no records: the count is 0 and its variance is 0, at every window. In the 1D pair walk (CL-1 gate form: exp(-i(eps - mu/2)R) on even pairs, exp(+i(eps + mu/2)R) on odd pairs) |KUK - U^dag| = 2e-16 and TV(p_A, p_B) <= 7.8e-16 for N = 8, 10 and 12, both at (eps, mu) = (0.6, 0.3) and at (0.0375, 0.01). PR #9876 solved the same antiunitary for the 3D block tick (8^3 torus, max error 1.9e-14). The pi-flux face phases that the sea's energy selects are T-even (+pi and -pi are one holonomy), so the laws' vacuum has this symmetry.
+1. Theorem (frozen vacuum). Suppose a site-diagonal antiunitary K reverses each half-tick, K U K = U^dag. Then K maps the Floquet sea at one half-tick onto the sea at the other, so the configuration odds are equal at both. The fewest-change transport between equal odds is the identity, and it is unique, since every other plan has positive expected change. Under record-on-change the vacuum therefore makes no records: the count is 0 and its variance is 0, at every window. In the 1D pair walk (CL-1 gate form: exp(-i(eps - mu/2)R) on even pairs, exp(+i(eps + mu/2)R) on odd pairs) |KUK - U^dag| = 2e-16 and TV(p_A, p_B) <= 7.8e-16 for N = 8, 10 and 12, both at (eps, mu) = (0.6, 0.3) and at (0.0375, 0.01). PR #9876 solved the same antiunitary for the 3D block tick (8^3 torus, max error 1.9e-14). The pi-flux face phases that the sea's energy selects are T-even (+pi and -pi are one holonomy), so the vacuum of the ticks checked here, which carry no copy mass, has this symmetry; for the copy-massed tick it is not established (see the Boundary and the consolidation's item 3).
 2. Breaking the antiunitary does not give Poisson counts.
    - A gauge-real 1D chain is broken only by its ring holonomy mod 2 pi. Holonomy 2 pi is an exact gauge, and its TV is 5e-16.
    - At holonomy pi + 1 the sea moves. The eps -> 0 entropic plan reaches the LP fewest-change minimum (N = 8: 0.136365 changes per half-tick, both ways).
    - The rate per site falls with N: 3.4e-2, 1.7e-2 and 8.9e-3 at N = 6, 8 and 10. A filled band is invariant under a uniform vector potential, so the bulk stays frozen.
    - The counts that do occur are collective. The long-time Fano factor (tilted Perron root) is 0.80, 1.61 and 4.02 for windows of 2, 4 and 10 sites, so Var ~ w^2: one global mode moves, and a 4-volume count has no sqrt(N) law.
-3. The one structural Poisson-like source is a changing odds. If the mass angle drifts by d per half-tick, the plan makes independent single hops. The rate is c d per site with c = 0.142, the one-step Fano factor is 2.00 for the whole ring and for a single pair (two site changes per hop), and the fresh entropy H(Y|X) lies within the Fano-inequality bound h(P_move) + P_move ln(M - 1). Fresh randomness per half-tick is bounded by how much the odds change. A stationary vacuum supplies none.
+3. Of the sources tested, the one Poisson-like source is a changing odds. If the mass angle drifts by d per half-tick, the plan makes independent single hops. The rate is c d per site with c = 0.142, the one-step Fano factor is 2.00 for the whole ring and for a single pair (two site changes per hop), and the fresh entropy H(Y|X) lies within the Fano-inequality bound h(P_move) + P_move ln(M - 1). Fresh randomness per half-tick is bounded by how much the odds change. A stationary vacuum supplies none.
 
 B. Lambda magnitude, prefactor computed.
 
 4. The phase of Lambda is (Lambda/L^2) V4, so Lambda/L^2 and V4 are conjugate. A minimum-uncertainty packet has sigma_V sigma_(Lambda/L^2) = 1/2 (Gaussian check: 0.50000000), so Lambda_rms L^2 = L^4/(2 sigma_V). With r records per site per half-tick and Fano factor F, the count-volume has sigma_V^2 = (F/r) v_c V4, so Lambda_rms L^2 = (1/2) sqrt(r/(F sig/2)) / sqrt(V4/L^4). Fewer or noisier-per-record counts give a smaller Lambda.
 5. The past light cone today is V4 = 0.1229 H0^-4 = 1.01e240 L^4.
    - Imported Poisson per site per half-tick (r = F = 1), or a fair Born coin per site per half-tick (r = F = 1/2): Lambda_rms is 6.7 to 14.9 times the measured value over the eps0 range. This agrees with the register's 'overshoots 6-13x'.
-   - Record on change under the laws: zero from the vacuum (item 1). Expansion reads edges only through mass angles mN, so r_exp = c mu_top H sig L/2 <= 1.4e-81, giving 2e-40 of the measured value. Splits give at most one random change per site per split, r_split <= 9.2e-63, giving <= 5e-31 of it. Every structural source misses by 30 orders or more.
+   - Record on change under the laws as this note states them: zero from the vacuum (item 1). Expansion reads edges only through mass angles mN, so r_exp = c mu_top H sig L/2 <= 1.4e-81, giving 2e-40 of the measured value. Splits give at most one random change per site per split, r_split <= 9.2e-63, giving <= 5e-31 of it. Each of these sources misses by 30 orders or more.
    - Matching today's rms needs r/F of about 2 sig A^2, with A as in item 6: about 4e-3 to 2e-2 at A ~ 0.7. No rule supplies it. A Born coin at that rate is FITTED.
 
 C. History and (w0, wa).
 
-6. S/V dynamics (Ahmed-Dodelson-Greene-Sorkin model 1, supplied): Lambda L^2 = A B(u)/u, with B a standard Brownian motion in u = V4/L^4 over the past light cone and A = (1/2) sqrt(2 r/(F sig)) from item 4. ADGS's alpha is A/(8 pi). Theorem (tracking): rms Omega_L = A/(3 sqrt(V H^4)). Here V H^4 is 4 pi/840 in the radiation era and 0.0338 in the matter era (beta functions), and 0.1229 today, so rms/A is 2.73, 1.81 and 0.95. Lambda ~ H^2 at every epoch, and early fluctuations are about 2.9 times today's.
+6. S/V dynamics (Ahmed-Dodelson-Greene-Sorkin model 1, supplied): Lambda L^2 = A B(u)/u, with B a standard Brownian motion in u = V4/L^4 over the past light cone and A = (1/2) sqrt(2 r/(F sig)) from item 4. ADGS's alpha is A/(8 pi). Theorem (tracking): rms Omega_L = A/(3 sqrt(V H^4)). Here V H^4 is 4 pi/840 in the radiation era and 0.0338 in the matter era (beta functions; the runner checks both against a direct quadrature of the past-cone 4-volume, 2026-11-14), and 0.1229 today, so rms/A is 2.73, 1.81 and 0.95. Lambda ~ H^2 at every epoch, and early fluctuations are about 2.9 times today's.
 7. Self-consistent Friedmann histories from a = 1e-20, 12000 each, start analytic in the radiation era; a crunch is H^2 <= 0.
 
    | A | alive | P(BBN) | P(rec) | rms Omega_L0 | P(today) |
@@ -1264,7 +1271,6 @@ C. History and (w0, wa).
    Survival needs A <~ 0.15. Today's Omega_L = 0.685 is then at least a 7 sigma fluctuation. The best factorised joint probability (alive x BBN x recombination x today) is about 8e-18, with bounds |Omega_L(BBN)| < 0.065, |Omega_L(z = 1100)| < 0.03 and |Omega_L0 - 0.685| < 0.02. Per half-tick Poisson (A = 4.8 to 10.7) crunches at once. PR #9876 found the same kind of tracking (Omega_L std 2.54 at BBN at coefficient 1, against 2.73 here).
 8. Late-window diagnostic, a lower bound on the trouble (early bounds ignored): switch on at z = 3, A = 0.5, condition on today's Omega_L, and fit CPL to rho_L over z <= 2. The result is w0 = +0.17 [-0.97, +0.89] and wa = -0.86 [-3.03, +1.50] (16-84%). None of the 82 histories falls in a DESI DR2 box (|w0 + 0.75| < 0.12, |wa + 0.86| < 0.5) or a LambdaCDM box. Everpresent Lambda changes by O(1) per Hubble time, so |w + 1| ~ O(1). DESI's departure is about 0.25 in w0, and the hinge law keeps |dw| < 6e-4. The model matches neither.
 
-
 [end of lines 27-61 of the note]
 
 #### Boundary
@@ -1273,7 +1279,7 @@ Not claimed: that no record rule gives everpresent Lambda.
 - The CL-1 cube tick with copy mass was not rebuilt here. The record-arrow probe reports the laws keep sigma_d K, a site-permuting antiunitary, which does not by itself force equal odds. If the copy mass breaks the site-diagonal antiunitary, the 3D vacuum may move. That is the open test, with r and F to be computed as in items 2 and 3.
 - Not computed: 2D/3D plaquette-flux T-breaking, the S/V model's alternative 4-volumes (Hubble cylinder), ADGS model 2, and inhomogeneous Lambda (Barrow 2007 constrains it).
 - ADGS (2004) and later analyses (Zwane, Afshordi and Sorkin 2018; Das, Nasiri and Yazdi 2023) report viable histories near alpha ~ 0.01 to 0.02 (A ~ 0.25 to 0.5). Here A >= 0.2 does not survive from a = 1e-20. The difference (crunch handling, the 4-volume, the start time) is not resolved.
-- The DESI comparison is a box test on a CPL fit to rho_L, not a likelihood.
+- The DESI comparison is a box test on a CPL fit to rho_L, not a likelihood. The factorised probability of item 7 is likewise a supplied-model diagnostic: it excludes no everpresent Lambda outside the S/V model, start and crunch handling used here.
 
 #### Supplied vs forced
 
@@ -1288,7 +1294,7 @@ Supplied:
 - the DESI and LambdaCDM boxes;
 - the m_top value.
 
-Forced, given the laws:
+Forced, given the supplied models and the laws as this note states them (zero premise weight):
 - the frozen vacuum (equal odds, identity plan);
 - the 2 pi gauge;
 - collective (Var ~ w^2) counts under holonomy breaking;
@@ -1340,11 +1346,11 @@ Corrected form: the frozen-vacuum statement holds for the ticks that #9876 and #
 
 #9900 tests a response law that varies edge lengths with each record's 4-volume held fixed. Notes #9962, #9990 and #10002 refer to the fixed-4-volume-per-record clause as dropped from the laws, and #10002 states that the Planck-sized circle for Lambda exists only under that dropped clause. Corrected form: #9900's cancellation of every vacuum term proportional to 4-volume, and its conserved Lambda set by initial data, are statements about that clause on the supplied cubic-frustum carrier, not about the laws as later written.
 
-PR 9902 (assigned to gravity-edge-registers) corrects the carrier itself: the cubic-frustum expansion law matches Friedmann only to first order in rho/rho*, saturates at H l = sqrt 2, and has no bounce. #9900's statement that late expansion obeys Friedmann with a constant Lambda (w = -1) is therefore a late-time, first-order statement. #9900's kick rho^2/rho* per split and #9990's "does not jump" vacuum energy at a split look opposed but hold under different clauses; #9990 says "the dropped fixed-4-volume-per-record clause gave a kick at each split". The same carrier underlies the hinge-series results #9919 and #9990 (logged).
+PR 9902 (assigned to gravity-edge-registers) corrects the carrier itself: the cubic-frustum expansion law matches Friedmann only to first order in rho/rho*, saturates at H l = sqrt 2, and has no bounce. #9900's statement that late expansion obeys Friedmann with a constant Lambda (w = -1) is therefore a late-time, first-order statement; its conservation and Friedmann limit are also shown only to O(c^2) at finite relative step c, exactly only as c -> 0 (item 12). #9900's kick rho^2/rho* per split and #9990's "does not jump" vacuum energy at a split look opposed but hold under different clauses; #9990 says "the dropped fixed-4-volume-per-record clause gave a kick at each split". The same carrier underlies the hinge-series results #9919 and #9990 (logged).
 
 ## 5. #10007 narrows #9961 (part B) and #10000 (estimate D4)
 
-#9961 (B2 to B5) uses a supplied Poisson stepping of each register to give the trigger a timing spread, redrawn each step, and finds a level-independent per-level spread and n_s = 1. #10007 shows that under the laws' fewest-change (quantile) transport, with "value minus s" in the passing, a register keeps its Born quantile, so split-time offsets are inherited (about 1/4 of a child's trigger edges inherited: 6 on even children, 3 on odd), not redrawn. The block-mean offset is stationary at sigma_r/sqrt 18 over 40 generations, the field is white, and as a curvature seed it gives Delta^2 proportional to (k l)^3, about 1e-99 at the pivot. Corrected form: the n_s = 1 of the Poisson cascade holds for the Poisson toy of #9961; for the laws' transport the offsets are white inherited offsets and are not a scale-invariant seed. The register arithmetic, the cascade theorem Delta^2(2k) = lam Delta^2(k) and the statement that the trigger reads only tr h/6 at first order in #9961 are not changed.
+#9961 (B2 to B5) uses a supplied Poisson stepping of each register to give the trigger a timing spread, redrawn each step, and finds a level-independent per-level spread and n_s = 1. #10007 shows that under the laws' fewest-change (quantile) transport, with "value minus s" in the passing, a register keeps its Born quantile, so split-time offsets are inherited (about 1/4 of a child's trigger edges inherited: 6 on even children, 3 on odd), not redrawn. The block-mean offset is stationary at sigma_r/sqrt 18 over 40 generations, the field is white, and as a curvature seed it gives Delta^2 proportional to (k l)^3, about 1e-99 at the pivot. Corrected form: the n_s = 1 of the Poisson cascade holds for the Poisson toy of #9961; for the laws' transport the offsets are white inherited offsets and are not a scale-invariant seed. The register arithmetic, the cascade theorem Delta^2(2k) = lam Delta^2(k) (which fixes only the octave-averaged index, item 12) and the statement that the trigger reads only tr h/6 at first order in #9961 are not changed by #10007.
 
 #10000 (D4) estimates the dephasing the laws supply at 0.07 to 0.10 e-folds from the Poisson register model. #10007 replaces this: the three register-odds readings give 0.0002 to 0.065 e-folds, the coupled trigger damps the spread (by a factor 0.43 on a 32^3 lattice with shared edges), and the 0.35 e-folds that #10000 requires would need Gaussian register odds of standard deviation at least 4.94 s steps, more than half the 5 s window at Delta = 1. #10000's no-seed result (A_s = 0 from the vacuum under the register as written) and its synchronised-split heating (|beta|^2 = 9/16 per mode per split, ln 2-periodic modulation) are not changed. #10000's named candidate (first odds spreading each block's registers over one octave) was not run by name. #10007 B5 answers the question #10000 left open ("whether the coupled trigger keeps or erases an initial spread is not computed") for the inherited Gaussian offsets of its model: the coupled trigger damps the spread by 0.43. Its B6 requirement of sd >= 4.94 s steps applies to Gaussian odds; non-Gaussian odds were not computed.
 
@@ -1378,9 +1384,23 @@ Four different things are called a fold and must not be conflated. The two-tilin
 
 #9982 narrows #9979's pre-role tick suggestion (it works for the roll, not for the identification with mu or for the passing). #10000 narrows #9982's "the passing must write the clock" by proposing order carriage IN-1, a tested clause that is not adopted. #9987 (logged) narrows #9986's suggestion that a face clause derives the pi phases to a kinematic statement. #9988 narrows #9985 (chirality-doublers) to a massless mirror.
 
+## 12. Repairs of 2026-11-14 after the landing hold on PR 10127
+
+The landing review of 2026-11-13 held this PR with eight numbered findings. Each source note above, its runner and its cache were repaired on this branch; every repaired statement is `argued` until it is checked again. The narrowings, each with its explicit witness kept as a negative result:
+
+- #9918 (finding 1). "ln E = 4 dN for every mode entering a constant-w era" is withdrawn. A mode k entering the era has E(k) = (k/k_rh)^(2(3w-1)/(1+3w)), so E(k_rh) = 1 and ln E = 4 dN holds only for k_end, with -1/3 < w <= 1. The BBN cap on a stiff phase is now built by integrating that spectrum, with the tensor power at exit bounded below by H_end^2/H*^2 = 0.24 of the pivot value, against the integrated limit. It gives dN <= 7.00, N* <= 62.7 and n_s <= 0.9691 (1.6 sigma below ACT) for one phase with 1/3 < w <= 1. The earlier peak-only estimate gave 6.6 and 0.9689. Histories with several phases are not computed.
+- #9988 (finding 2). "With any species-diagonal light-mirror bilinear only U(1)_Y x U(1)_X(total) survives" is narrowed to bilinears on all six species. With bilinears on a subset S the group has dimension 8 - |S|, and a single nu^c bilinear leaves 7. A mirror-only U(1) survives on any single species and on {Q, L}, and sixteen other partial sets leave a finite mirror-only group (Z2 to Z6). The verdict now rests on the supplied premise that the tick acts alike on every species, so it mixes all six.
+- #10005 (finding 3). "For any edge-quantum energy and momentum some light final state is resonant" is withdrawn. At a fixed emitted momentum q, the allowed light final states are 2 b_e^3, so their resonant energies form a finite set with gaps (largest gap 2.9e-5 of 2 pi/b_e = 0.157 at b_e = 40). The projected-band coverage stays as a diagnostic. Whether the block period blocks the heavy copy's decay is open until a channel calculation, with an edge-quantum dispersion and a nonzero vertex, is done. B4's lifetimes are conditional on an open channel.
+- #10002 (finding 4). The allowed set of the first-slab rule is the generalised Rayleigh interval [Lambda_min, Lambda_max], not every Lambda >= Lambda_min. Lambda_max L^2 is 7.1e7 to 2.0e9. The exclusion of the measured value, below Lambda_min, is unchanged.
+- #10007 (finding 5). The record-density index is n_s - 1 = +5, not +4 (Delta^2 = k^3 S, S ~ k^2). Calling it a curvature index needs a supplied linear readout with no transfer function. The same readout is now stated for the white-offset index +3.
+- #9961 (finding 6). Delta^2(2k) = lam Delta^2(k) fixes only the octave-averaged index. The witness Delta^2 = 1 + 0.1 cos(2 pi log2 k) obeys it at lam = 1 while its local index swings by +-0.91. The runner's own 1D blocky cascade has a local index between -2.5 and +2.8 inside each octave. A finite cascade has boundary terms w(2k) - lam^(G+1) w(2^-G k). The theorem's infinite-level, convergence and covariance hypotheses are stated.
+- Finding 7 (N1 to N8 packets and N5 lines). Since 2026-11-13 the SETTINGS row "Negative-claim packet" on `main` says that "the N1 to N8 packet is a checker's aid that no gate requires, and an obstruction is judged as a theorem about an explicit family". No packet or N5 line was added, because no run produced one. Instead, each remaining negative statement now names its family, or is narrowed to a search over the tested cases. Titles were narrowed where the body was: #9918, #9946, #9961, #9979, #9988, #10002, #10005, #10007 and #10018. Phrases such as "forced, given the laws" now read "given the supplied models and the laws as the note states them". Cited inputs not found on `main` or this branch are marked as cited and not checked: the so(12) chains of #9910, the read-lapse result of #9933, the copy-sign vertex and the hidden-sector commutant. Campaign names that are not files are recorded only in this map.
+- Finding 8 (runners). All thirteen runners now exit nonzero when a check fails; nine of them did not before. Literal-True or self-confirming checks are now printed as uncounted SUPPLIED, GATE, CONDITIONAL, IDENTITY or CONFLICT LEDGER lines, or replaced by computed checks: #10002 split stability and gate; #10007 B7 (now the low-k slope 2.87 of the coupled field) and D3; #9961 C1, D1 and D2; #10018's conflict ledger and its tracking constants (now checked against a direct quadrature). PASS counts changed accordingly.
+- Numerical boundaries. The quadrature warnings in the #9979 cache came from a subtracted integrand that loses about 3e-3 of V0 - V at delta = 1e-9. The runner now uses the cancellation-free form, agrees with a 30-digit mpmath quadrature to 4e-9, raises no warning on its grid, and prints the same values. #9900's conservation and w = -1 are narrowed to O(c^2) at finite step, exact only as c -> 0. #10018's factorised probability and box test are supplied-model diagnostics, not likelihood exclusions of everpresent Lambda.
+
 ## Source notes carried with this consolidation
 
-Each kept result's own note, runner and cache are carried byte-for-byte from its source PR.
+Each kept result's own note, runner and cache were carried byte-for-byte from its source PR and were then repaired on this branch on 2026-11-14 (item 12); the caches are regenerated by `scripts/runner_cache.py` from the repaired runners.
 
 - #9876: [TIME_REVERSAL_FREEZES_HALF_FILLED_SEA_RECORDS_AND_RECORD_COUNT_LAMBDA_NEEDS_POISSON_INPUT_BOUNDED_THEOREM_NOTE_2026-10-21.md](TIME_REVERSAL_FREEZES_HALF_FILLED_SEA_RECORDS_AND_RECORD_COUNT_LAMBDA_NEEDS_POISSON_INPUT_BOUNDED_THEOREM_NOTE_2026-10-21.md)
 - #9880: [FLOQUET_SEA_VACUUM_SOURCE_IS_ZERO_PLANCKIAN_OR_MASS_DOMINATED_NOT_MEASURED_LAMBDA_BOUNDED_THEOREM_NOTE_2026-10-21.md](FLOQUET_SEA_VACUUM_SOURCE_IS_ZERO_PLANCKIAN_OR_MASS_DOMINATED_NOT_MEASURED_LAMBDA_BOUNDED_THEOREM_NOTE_2026-10-21.md)
@@ -1398,7 +1418,7 @@ Each kept result's own note, runner and cache are carried byte-for-byte from its
 
 ## Other results
 
-The scope text is copied verbatim from each source note. The full note, runner and cache stay on the listed branch at the listed commit.
+The scope text is copied verbatim from each source note. The full note, runner and cache stay on the listed branch at the listed commit. These rows are quoted historical claims, not statements carried or checked here; negative statements in them hold only as their sources state them, and the 2026-11-14 repair did not re-examine them.
 
 | PR | Result | Disposition | Scope as stated in the source | Branch and commit |
 |---|---|---|---|---|

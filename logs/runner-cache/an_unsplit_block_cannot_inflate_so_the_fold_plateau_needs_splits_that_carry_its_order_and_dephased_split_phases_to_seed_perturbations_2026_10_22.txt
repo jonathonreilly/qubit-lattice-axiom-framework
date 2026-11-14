@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/an_unsplit_block_cannot_inflate_so_the_fold_plateau_needs_splits_that_carry_its_order_and_dephased_split_phases_to_seed_perturbations_2026_10_22.py
-runner_sha256: 4a992527277acb249a6c49ebd0c376fc3f597ae796310df9c20051056fbfd0f5
-input_fingerprint_sha256: 0b8ffe7279f611630996c057ef75b46e8829f1eb193debb1d6b1ece562cfd425
+runner_sha256: 908a0b458138863b844d8d5c8ea7ccd2a05ee05cb89ba8c7b04d93f6963321c5
+input_fingerprint_sha256: a60555ea3f498b96a02717cbf05c7ef5926a0ba53ab3a76bd7dc285c98c1f8c3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.01
+elapsed_sec: 4.88
 status: ok
 ----- stdout -----
 == A. candidate: inflation inside one unsplit block
@@ -31,7 +31,7 @@ status: ok
 == F. split-trigger consistency under IN-1
 [PASS] F1 [T+E] the plateau rides the ordinary 4s trigger: one generation = s steps = ln2, H a = H/M_P per finest tick far below the edge-rate cap and inflaton A1 (H a < 1.93e-5); window and Delta unchanged | H a 2.3e-13; ticks per split ~3.0e+12; generations in N* 68
 supplied: g (0.5, 1), fold rung (FITTED to A_s), J a = sqrt3, M_P a = 1, Hartree, instant reheating, g_* = 106.75, mode speed 1, dephasing sigma (scanned)
-elapsed 4.8s
+elapsed 4.3s
 TOTAL: PASS=17 FAIL=0
 
 ----- stderr -----

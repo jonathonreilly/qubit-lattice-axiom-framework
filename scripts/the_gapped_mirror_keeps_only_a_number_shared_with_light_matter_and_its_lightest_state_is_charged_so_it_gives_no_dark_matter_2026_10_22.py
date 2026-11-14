@@ -11,7 +11,7 @@ Supplied: one mirror 16 x 2 spin per cell, the pair square alone (smg-verify), S
 on C^5, the CL-1 tick parameters (b, mu, M) = (0.3, 0.4, 0.5), the Jacobi-chain coefficients (cited from smg-verify),
 unit map and measured bounds. Seeded (numpy default_rng(20261022)).
 """
-import itertools, os, signal, time
+import itertools, os, signal, sys, time
 AUDIT_TIMEOUT_SEC = 120
 os.environ['OPENBLAS_NUM_THREADS'] = '1'; os.environ['OMP_NUM_THREADS'] = '1'; os.environ['VECLIB_MAXIMUM_THREADS'] = '1'
 signal.signal(signal.SIGALRM, lambda *a: (_ for _ in ()).throw(TimeoutError('cap exceeded')))
@@ -93,8 +93,28 @@ check("A5 [T] U(1)_X has no anomaly with SM gauge fields, itself or gravity on o
 # light (left 16) + mirror (right 16): mixing psi_L^dag chi_R per species conserves phi_light = phi_mirror
 monLM = np.hstack([np.zeros_like(monS), monS]); mixrows = np.hstack([np.eye(6, dtype=int), -np.eye(6, dtype=int)])
 c0, t0 = lattice_group(monLM); c1, t1 = lattice_group(np.vstack([monLM, mixrows]))
-check("A6 [T] light + mirror: without mixing U(1)^6_light x U(1)_Y x U(1)_X^mirror (8); with any species-diagonal light-mirror bilinear only U(1)_Y x U(1)_X^total (2): mirror number then shared with light B-L",
-      (c0, t0, c1, t1) == (8, [], 2, []), f"no mixing {c0} {t0}; mixing {c1} {t1}")
+check("A6 [T] light + mirror: without mixing U(1)^6_light x U(1)_Y x U(1)_X^mirror (8); with a species-diagonal light-mirror bilinear on ALL SIX species only U(1)_Y x U(1)_X^total (2): mirror number then shared with light B-L",
+      (c0, t0, c1, t1) == (8, [], 2, []), f"no mixing {c0} {t0}; all six mixed {c1} {t1}")
+# A6b (added 2026-11-14): bilinears on a subset S of the species.  The group has dimension 8 - |S| (each bilinear ties one
+# free light phase to the mirror's (Y_s, X_s) combination); the mirror-only subgroup (trivial on every light mode) has
+# dimension 2 - rank{(Y_s, X_s): s in S}.  A single nu^c bilinear is the hold's counterexample to 'any bilinear gives 2'.
+YX = np.array([[float(Ysp[i]), float(Xsp[i])] for i in range(6)]); lock = np.hstack([np.eye(6, dtype=int), np.zeros((6, 6), int)])
+subs = []
+for k_ in range(1, 7):
+    for S_ in itertools.combinations(range(6), k_):
+        cg_, tg_ = lattice_group(np.vstack([monLM, mixrows[list(S_)]])); cd_, td_ = lattice_group(np.vstack([monLM, mixrows[list(S_)], lock]))
+        subs.append((S_, cg_, tg_, cd_, td_, int(np.linalg.matrix_rank(YX[list(S_)]))))
+okA6b = (all(c == 8 - len(S_) and not t and d == 2 - r for S_, c, t, d, td, r in subs)
+         and [S_ for S_, c, *_ in subs if c == 2] == [tuple(range(6))])
+nu1 = [x for x in subs if x[0] == (5,)][0]; full = [x for x in subs if x[0] == tuple(range(6))][0]
+par = [tuple(SPEC[i] for i in x[0]) for x in subs if x[3] > 0 and len(x[0]) > 1]
+fin = [(tuple(SPEC[i] for i in x[0]), x[4]) for x in subs if x[3] == 0 and x[4]]
+triv = [x[0] for x in subs if x[3] == 0 and not x[4]]
+okA6b = okA6b and nu1[1] == 7 and nu1[3] == 1 and par == [('Q', 'L')] and full[3] == 0 and not full[4]
+check("A6b [T] bilinears on a subset S of the six species (all 63 subsets): the group has dimension 8 - |S|, so it is 2 only when all six mix; one nu^c bilinear leaves 7 (the five unmixed light phases stay free); the mirror-only subgroup (trivial on every light mode) has dimension 2 - rank{(Y_s, X_s)}, so the mirror's own X is broken by any one bilinear but a mirror-only U(1) survives on a single species or on {Q, L}; some other partial sets leave a finite mirror-only group; with all six mixed it is trivial",
+      okA6b, f"nu^c alone: group {nu1[1]}, mirror-only U(1)^{nu1[3]}; 2+ species with a mirror-only U(1): {par} (6Y - X); {len(fin)} sets leave a finite mirror-only group, orders {sorted(set(int(np.prod(t)) for _, t in fin))}; {len(triv)} sets leave none")
+print("   finite mirror-only remnants: " + "; ".join("+".join(S_) + " Z" + "xZ".join(str(v) for v in t) for S_, t in fin))
+print("   control A6b: the earlier wording 'any species-diagonal bilinear leaves only U(1)_Y x U(1)_X^total' is rejected by the nu^c witness (7 != 2)")
 print("== B. CL-1 cube tick: is any one-body mirror (copy, turn) label conserved for moving states?")
 CORN = np.array(list(itertools.product((0, 1), repeat=3)))
 def coh(nv):
@@ -225,3 +245,4 @@ print("  N_eff: no massless mirror state, so Delta N_eff = 0 below Delta (massle
 print("theorems: A1-A6, B2, C1-C3, D1; finite: B1, D2, D3; estimates: E. cited: chains (smg-verify), copy vertex g (dark-matter-candidate)")
 print(f"elapsed_seconds {time.time() - T0:.1f}")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+sys.exit(0 if NF == 0 else 1)

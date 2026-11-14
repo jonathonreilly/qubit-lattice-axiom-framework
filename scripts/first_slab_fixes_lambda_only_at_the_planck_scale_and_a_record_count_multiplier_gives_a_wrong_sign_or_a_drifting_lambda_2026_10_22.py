@@ -5,7 +5,7 @@ Self-contained; seeded; numpy/scipy/sympy only. Units: rung units, L = sqrt(8 pi
 Per cell and tick (CL-1 fixed lapse) proper time sig*l, sig = sin(eps0)/sqrt3; a half-tick is half of it.
 Supplied: LambdaCDM (Planck 2018), the eps0 range, the edge window and hop kinetic of the lambda-quantum
 construction (rebuilt here), DESI DR2 (w0, wa) central values for a sign comparison."""
-import time, numpy as np, sympy as sp
+import sys, time, numpy as np, sympy as sp
 from scipy.linalg import eigh
 AUDIT_TIMEOUT_SEC = 120
 T0 = time.time(); rng = np.random.default_rng(20261022)
@@ -40,7 +40,7 @@ r3 = np.ones_like(ph)                                         # constant per pro
 fit = lambda r: -1 - np.polyfit(lna, np.log(r), 1)[0] / 3
 rip = r2.max() / r2.min()
 split_phase = sp.Rational(8 * 2, 2 ** 4)                     # 8 children x 2 child ticks x (1/2)^4 of the 4-volume
-check("THEOREM: only a quantity copied per cell at splits and carried per proper 4-volume is Lambda-like: the per-4-volume phase over a split is conserved (8 children x 2 ticks x 2^-4 = 1); a per-cell energy copied at splits is w = -1 only on average, with a factor-8 sawtooth per cycle",
+check("THEOREM (the three carrying modes tested): of a conserved total, a per-cell energy copied at splits and a constant per proper 4-volume, only the last is Lambda-like: the per-4-volume phase over a split is conserved (8 children x 2 ticks x 2^-4 = 1); a per-cell energy copied at splits is w = -1 only on average, with a factor-8 sawtooth per cycle",
       split_phase == 1 and abs(fit(r1)) < 1e-9 and abs(fit(r2) + 1) < 0.02 and abs(fit(r3) + 1) < 1e-12,
       f"cascade {k_cyc} cycles: w_fit total {fit(r1):+.3f}, per-cell {fit(r2):+.3f} (ripple x{rip:.1f}), per-4-volume {fit(r3):+.3f}")
 print("  ledger: fermion number, Gauss charges, edge-pair totals (n1+n2 = 1 per pair, no phase) -> totals or labels;"
@@ -49,7 +49,8 @@ print("  ledger: fermion number, Gauss charges, edge-pair totals (n1+n2 = 1 per 
 
 # ---------- B. the first slab: one-cube start fixes Lambda through the mean-zero constraint ----------
 print("== B. first-slab rule: Lambda = <K>/<v> of the one-cube start (rebuilt lambda-quantum construction)")
-def register(s, Delta=0, top_open=False, nmax_top=None):
+def register_KV(s, Delta=0, top_open=False, nmax_top=None):
+    """hop kinetic K and 4-volume weight v (diagonal, positive) of the rebuilt one-cube window"""
     nmax = (4 + Delta) * s if nmax_top is None else nmax_top
     nn = np.arange(nmax + 1); x = 2.0 ** (nn / s - 3)
     xm = 2.0 ** ((nn[:-1] + 0.5) / s - 3)
@@ -60,11 +61,28 @@ def register(s, Delta=0, top_open=False, nmax_top=None):
     K[0, 0] += wb[0] / 2
     if not top_open: K[-1, -1] += wb[-1] / 2
     v = x ** 4
+    return K, v
+def register(s, Delta=0, top_open=False, nmax_top=None):
+    """all generalised eigenvalues of (K, v), ascending: <K>/<v> = Rayleigh quotient of v^-1/2 K v^-1/2 (y = v^1/2 psi)"""
+    K, v = register_KV(s, Delta, top_open, nmax_top)
     vi = 1 / np.sqrt(v); return eigh(vi[:, None] * K * vi[None, :], eigvals_only=True)
-lm = {(s, D): register(s, D)[0] for s in (23, 50, 113) for D in (0, 1)}
-check("FINITE DIAGNOSTIC (closed top): Lambda_min L^2 > 0 for every s and Delta, Planck-sized; the mean form admits every Lambda >= Lambda_min, so the measured value lies BELOW the allowed set",
-      all(v > 1e3 * LamL2 for v in lm.values()) and abs(lm[(23, 0)] - 0.0835) < 0.002,
-      "; ".join(f"s={s},D={D}: {lm[(s, D)]:.3e}" for (s, D) in lm) + f"; excess >= {min(lm.values()) / LamL2:.1e}")
+spec = {(s, D): register(s, D) for s in (23, 50, 113) for D in (0, 1)}
+lm = {k_: v_[0] for k_, v_ in spec.items()}; lM = {k_: v_[-1] for k_, v_ in spec.items()}
+check("FINITE DIAGNOSTIC (closed top): Lambda_min L^2 > 0 for every s and Delta, Planck-sized; the mean form <K> = Lambda <v> admits exactly Lambda in [Lambda_min, Lambda_max] (generalised Rayleigh quotient), so the measured value lies BELOW the allowed interval",
+      all(v > 1e3 * LamL2 for v in lm.values()) and abs(lm[(23, 0)] - 0.0835) < 0.002 and all(lM[k_] > lm[k_] for k_ in lm),
+      "; ".join(f"s={s},D={D}: [{lm[(s, D)]:.3e}, {lM[(s, D)]:.3e}]" for (s, D) in lm) + f"; excess of Lambda_min >= {min(lm.values()) / LamL2:.1e}")
+# Rayleigh range (added 2026-11-14): with y = v^1/2 psi, <K>/<v> is the ordinary Rayleigh quotient of v^-1/2 K v^-1/2, so its
+# range is [lambda_min, lambda_max]; K - Lambda v is positive definite below the range and negative definite above it.
+Kr, vr = register_KV(23, 0); vir = 1 / np.sqrt(vr); Ar = vir[:, None] * Kr * vir[None, :]; l0, l1 = lm[(23, 0)], lM[(23, 0)]
+rr = np.random.default_rng(20261114); _, Yr = np.linalg.eigh(Ar); qs = [(vir * Yr[:, j]) @ Kr @ (vir * Yr[:, j]) / ((vir * Yr[:, j]) @ (vr * vir * Yr[:, j])) for j in (0, -1)]
+for _ in range(4000):   # random states, plus the two extreme eigenvectors (which attain the endpoints)
+    ps = rr.standard_normal(len(vr)) * rr.uniform(0.05, 1, len(vr)) ** rr.integers(1, 6); qs.append(ps @ Kr @ ps / (ps @ (vr * ps)))
+def defin(Lv):
+    e_ = np.linalg.eigvalsh(Ar - Lv * np.eye(len(vr))); return e_[0], e_[-1]
+d_lo, d_hi, d_mid, d_meas = defin(0.5 * l0), defin(2 * l1), defin(0.5 * (l0 + l1)), defin(LamL2)
+check("THEOREM (generalised Rayleigh range, s = 23, Delta = 0): every sampled <K>/<v> lies in [Lambda_min, Lambda_max] and the extreme eigenvectors attain both ends; K - Lambda v is positive definite at Lambda = Lambda_min/2 and at the measured value (no admitted state) and negative definite at 2 Lambda_max (control: the earlier 'every Lambda >= Lambda_min is admitted' is rejected there), indefinite inside",
+      l0 * (1 - 1e-9) <= min(qs) and max(qs) <= l1 * (1 + 1e-9) and abs(qs[0] / l0 - 1) < 1e-9 and abs(qs[1] / l1 - 1) < 1e-9 and d_lo[0] > 0 and d_meas[0] > 0 and d_hi[1] < 0 and d_mid[0] < 0 < d_mid[1],
+      f"sampled range [{min(qs):.3e}, {max(qs):.3e}] within [{l0:.3e}, {l1:.3e}]; eig(A - Lambda) at Lambda_min/2 >= {d_lo[0]:.2e}, at measured >= {d_meas[0]:.2e}, at 2 Lambda_max <= {d_hi[1]:.2e}")
 tops = [1, 3, 5]
 lo = [register(23, 0, top_open=True, nmax_top=23 * (3 + t))[0] for t in tops]
 slope = np.polyfit(np.array(tops) * LN2, np.log(lo), 1)[0]
@@ -74,15 +92,17 @@ check("FINITE DIAGNOSTIC (transparent top): Lambda_min falls as (top length)^-6,
 cancel = LamL2 / lm[(23, 0)]
 check("ESTIMATE: a matter-filled first cube, Lambda <v> = <K> - <E_m>, reaches the measured value only by cancelling K and E_m to 1 part in ~1e119 (initial-data tuning, FITTED)",
       cancel < 1e-118, f"required <E_m>/<K> = 1 - {cancel:.1e}")
-check("THEOREM (split-stable): every newborn cube is born at the flat length on the same register, so its mean-zero constraint gives the same Lambda_min: the rule kicks nothing at splits and predicts w = -1, wa = 0 exactly",
-      True, "prediction: Lambda > 0 (correct sign), w0 = -1, wa = 0 (consistent with Planck; DESI DR2 hint (-0.75, -0.86) at 2.8-4.2 sigma)")
+print("  SUPPLIED (not counted; was a literal-True check before 2026-11-14): every newborn cube is born at the flat length on the same register, so its"
+      " constraint has the same allowed interval and nothing is kicked at splits; with that the rule predicts Lambda > 0, w0 = -1, wa = 0"
+      " (consistent with Planck; DESI DR2 hint (-0.75, -0.86) at 2.8-4.2 sigma)")
 
 # ---------- C. Lambda as the multiplier of a fixed 4-volume per record ----------
 print("== C. fixed 4-volume per record: Lambda = multiplier of the record count")
 kk, T = 3, 5
 cnt = sum(2 * T * 8 * 8 ** j for j in range(kk + 1)); pois = rng.poisson(cnt / 1000.0, size=20000)
-check("THEOREM (CL-2): records once per site per half-tick and 1 -> 8 splits make the record count exact (Fano 0); a Sorkin fluctuation dV4 ~ sqrt(N) needs a Poisson count the laws do not have (seeded Poisson control Fano ~1)",
-      abs(pois.var() / pois.mean() - 1) < 0.05, f"one-cube start, {kk} splits x {T} ticks: {cnt} records, variance 0; control Fano {pois.var() / pois.mean():.3f}")
+print(f"  SUPPLIED (not counted): CL-2 records once per site per half-tick and splits go 1 -> 8, so the record count is a fixed function of the split history: one-cube start, {kk} splits x {T} ticks gives {cnt} records with variance 0 by construction (Fano 0)")
+check("CONTROL (CL-2 count): the Fano statistic used here detects a Poisson count (seeded control Fano ~1); a Sorkin fluctuation dV4 ~ sqrt(N) needs such a count, which the supplied record rule does not have",
+      abs(pois.var() / pois.mean() - 1) < 0.05, f"control Fano {pois.var() / pois.mean():.3f}")
 per = 4 * np.pi / SIG
 check("THEOREM: with V4 = N v_r exactly (v_r = sig/2 L^4 per record), the Lambda phase is (Lambda L^2) v_r N, N an integer: Lambda L^2 is defined only mod 2pi/v_r, a Planck-sized circle; the conjugate count being sharp leaves the point on the circle free",
       per.min() > 100, f"period 4pi/sig = {per[1]:.0f} to {per[0]:.0f} (eps0 0.0375 .. 0.0075); measured value is {LamL2 / per.min():.1e} of a turn")
@@ -127,14 +147,15 @@ check("ESTIMATE: Lambda L^2 = Q / (V4/L^4) with Q a first-slab integer (fermion 
 
 # ---------- E. anti-smuggling gate ----------
 print("== E. gate (1 no measured number chosen, 2 no observed structure, 3 untargeted prediction, 4 axiom bent)")
-gate = [("B first-slab (closed top)", "1 yes 2 yes 3 Lambda>0, w=-1, wa=0 AND size >= 1.3e-3: size FALSIFIED by 1e117-1e119; 4 none beyond CL-1 window"),
+gate = [("B first-slab (closed top)", "1 yes 2 yes 3 Lambda>0, w=-1, wa=0 AND size in [Lambda_min, Lambda_max], Lambda_min >= 1.3e-3: size FALSIFIED by 1e117-1e119; 4 none beyond CL-1 window"),
         ("B first-slab (open top)", "1 yes 2 yes 3 sign + w only; size free: does not fix Lambda"),
         ("C global record total", "1 yes 2 yes 3 Lambda <= 0: FALSIFIED; 4 Record (records each half-tick, CL-2's departure)"),
         ("C to-date N^-1/2", "1 yes (C=1) 2 yes 3 size 1e-2..1e-1 and wa>0: FALSIFIED; also needs Poisson counts CL-2 forbids"),
         ("C mod-2pi circle", "1 yes 2 yes 3 Planck-sized period only: does not fix Lambda")]
 for g, r in gate: print(f"  {g}: {r}")
-check("GATE RESULT: no rule here fixes Lambda's size without a fitted number; the first-slab rule passes items 1, 2, 4 and predicts the sign and w = -1 correctly, but its size is Planckian or free",
-      True, "reported as a FAILURE of the size goal, not adopted")
+print("  GATE (judgement, not counted; was a literal-True check before 2026-11-14): no rule tested here fixes Lambda's size without a fitted number;"
+      " the first-slab rule passes items 1, 2, 4 and predicts the sign and w = -1, but its size is Planckian or free: a FAILURE of the size goal, not adopted")
 print("supplied: LambdaCDM numbers, eps0 range, window [L/8, 2^(1+Delta) L] and hop kinetic (lambda-quantum), v_r = sig/2, Q = 4, DESI central values")
 print(f"runtime {time.time() - T0:.1f} s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+sys.exit(0 if NF == 0 else 1)

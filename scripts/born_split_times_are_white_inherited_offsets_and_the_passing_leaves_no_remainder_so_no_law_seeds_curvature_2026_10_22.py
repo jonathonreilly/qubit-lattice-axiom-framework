@@ -11,6 +11,7 @@ actuality law's transport and records:
      (a mode-resolving passing threshold)
 Supplied numbers are named in the output. Measured numbers enter only the estimates.
 """
+import sys
 import time
 import itertools
 import numpy as np
@@ -84,7 +85,7 @@ kp = HLC * np.exp(-NSTAR)          # pivot wavenumber over the final block waven
 check(kp ** 3 < 1e-90, "A3 [T+E]",
       "so candidate (a) gives either nothing (clause as written: A_s = 0 and no primordial tensors, P_t = 0, at "
       "linear order) or white UV heating of O(1) quanta per site per split (no clause): Delta^2 ~ (k l)^3, "
-      "n_s - 1 = +3, and at the pivot (k l) ~ H l_c e^-N*", f"(k l)^3 at pivot {kp ** 3:.0e}")
+      "n_s - 1 = +3 under a supplied linear readout, and at the pivot (k l) ~ H l_c e^-N*", f"(k l)^3 at pivot {kp ** 3:.0e}")
 
 # ---------------------------------------------------------------- B
 print("== B. Born split times from the registers' own odds")
@@ -249,10 +250,20 @@ check(ok, "B6 [D+E]",
       "sigma_split " + ", ".join(f"{k_[0]}/{k_[1]} {v:.2g}" for k_, v in sig_split.items())
       + f"; need sd/s {need_sn:.2f} vs window/2 {(4 + DELTA) / 2:.1f}; modulation A1 (R): " +
       ", ".join(f"{k_[0]}/23 {m[2]:.2f} ({m[1]:.1f})" for k_, m in mods.items()))
-check(True, "B7 [T+E]",
-      "the Born offsets are a white field (all trigger registers distinct, offsets kept, B4-B5): as a curvature seed "
-      "Delta^2 ~ (k l)^3, n_s - 1 = +3, negligible at the pivot (A3); they can dephase, never seed; the Poisson "
-      "cascade's n_s = 1 assumed redraws the quantile transport does not make", f"(k l)^3 at pivot {kp ** 3:.0e}")
+# B7 (computed since 2026-11-14; a literal-True check before): the power spectrum of the coupled split-time field of B5.
+# Delta^2(k) = k^3 P(k); a white field has P flat at small k, so d ln Delta^2/d ln k -> 3.  Readout hypothesis (supplied):
+# the curvature seed is linear in the split-time field with no transfer function, so its index is that of Delta^2.
+def low_k_slope(F_):
+    fk = np.fft.fftn(F_ - F_.mean()); Pk = np.abs(fk) ** 2; kf = np.fft.fftfreq(L) * L
+    KK = np.sqrt(sum(g_ ** 2 for g_ in np.meshgrid(kf, kf, kf, indexing='ij'))); sh_ = np.arange(1, 9)
+    D2 = np.array([sh_k ** 3 * Pk[(KK >= sh_k - 0.5) & (KK < sh_k + 0.5)].mean() for sh_k in sh_])
+    return np.polyfit(np.log(sh_), np.log(D2), 1)[0]
+sl_T, sl_ctrl = low_k_slope(T), low_k_slope(np.cumsum(np.cumsum(np.cumsum(T - T.mean(), 0), 1), 2))
+check(abs(sl_T - 3) < 0.4 and abs(sl_ctrl - 3) > 1.0, "B7 [T+D+E]",
+      "the Born offsets are a white field (all trigger registers distinct, offsets kept, B4-B5): the coupled field's Delta^2 = k^3 P(k) has "
+      "low-k slope ~3, so under a supplied linear readout with no transfer function n_s - 1 = +3, negligible at the pivot (A3); they can dephase, "
+      "never seed; control: an integrated (red) field fails the white test; the Poisson cascade's n_s = 1 assumed redraws the quantile "
+      "transport does not make", f"slope of ln Delta^2 over k = 1..8 (32^3): coupled field {sl_T:.2f}, red control {sl_ctrl:.2f}; (k l)^3 at pivot {kp ** 3:.0e}")
 
 # ---------------------------------------------------------------- C
 print("== C. Born picks of new sites' first records")
@@ -270,11 +281,16 @@ for qq in (1, 2):
     f = np.exp(1j * 2 * np.pi * qq / Lc * X.ravel()); S3.append(float((tr3 - np.real(f.conj() @ A3m @ f)) / Lc ** 3))
 del H3, V3, G3, A3m
 p3 = np.log2(S3[1] / S3[0])
-check(1.5 < p3 < 2.2 and S3[0] < 0.02, "C1 [T+D]",
+# index convention Delta^2 ~ k^(n_s - 1) with Delta^2 = k^3 S(k): S ~ Q^2 gives n_s - 1 = 5 (corrected 2026-11-14 from +4)
+Qs, pS = sp.symbols('Q p', positive=True); idx_ = sp.simplify(Qs * sp.diff(sp.log(Qs ** 3 * Qs ** pS), Qs))
+check(1.5 < p3 < 2.2 and S3[0] < 0.02 and idx_.subs(pS, 2) == 5 and idx_.subs(pS, 2) != 4, "C1 [T+D]",
       "records never condition the odds (actuality law), so a response that reads odds sees no record seed; if a "
       "source read the recorded occupations, the Born picks carry the vacuum's own density correlator: on a gapped "
-      "staggered sea (10^3, mass 0.5) S(Q) -> Q^2, so Delta^2 ~ Q^5 and n_s - 1 = +4 (gapless 1D sea: S ~ Q)",
-      f"S(Q1) {S3[0]:.4f}, S(2Q1) {S3[1]:.4f}, local power {p3:.2f}; gap {w3[w3 > 0].min():.3f}")
+      "staggered sea (10^3, mass 0.5) S(Q) -> Q^2, so Delta^2 = Q^3 S ~ Q^5 and n_s - 1 = +5 under a supplied linear readout "
+      "with no transfer function (gapless 1D sea: S ~ Q)",
+      f"S(Q1) {S3[0]:.4f}, S(2Q1) {S3[1]:.4f}, local power {p3:.2f} (lattice index 3 + p = {3 + p3:.2f}); n_s - 1 = {idx_} -> {idx_.subs(pS, 2)} at p = 2; gap {w3[w3 > 0].min():.3f}")
+print("   control C1: the earlier n_s - 1 = +4 is rejected (3 + 2 = 5 under Delta^2 ~ k^(n_s - 1)); SUPPLIED: the readout from a density "
+      "structure factor to a curvature index (linear, no transfer function)")
 
 # ---------------------------------------------------------------- D
 print("== D. seed rules against the gate")
@@ -305,11 +321,11 @@ check((ns - NS_ACT) / SACT < -3, "D2 [E]",
       "Bunch-Davies x 1.2-1.3 (inflation-rule D3): A_s = R V/(24 pi^2 eps M_P^4) with the rung FITTED, the tilt is the "
       "plateau's 1 - 2/N* (a constant dephasing adds none), and edge registers pass vacuum to vacuum, so r = 0",
       f"n_s {ns:.4f} ({(ns - NS_PL) / SPL:+.1f} sig Planck, {(ns - NS_ACT) / SACT:+.1f} sig ACT+DESI); A_s not predicted")
-check(True, "D3 [gate]",
-      "SE-1 (Born dephasing, a reading of CL-2 and the split: no new text) chooses no number, names nothing, bends no "
-      "axiom, and predicts an O(1) ln2-periodic modulation, excluded: FAILS. SE-2 adds a chosen threshold and keeps "
-      "the sawtooth: FAILS. No candidate seeds A_s ~ 2e-9 with n_s 0.965-0.974",
-      f"SE-1 modulation {mods[('R2', 23)][2]:.2f} at sigma {mods[('R2', 23)][0]:.3f} (formula "
+print("   D3 GATE (judgement, not counted; a literal-True check before 2026-11-14): SE-1 (Born dephasing, a reading of CL-2 and the split: "
+      "no new text) chooses no number, names nothing, bends no axiom, and predicts an O(1) ln2-periodic modulation, excluded: FAILS. "
+      "SE-2 adds a chosen threshold and keeps the sawtooth: FAILS. None of the three tested candidates seeds A_s ~ 2e-9 with n_s 0.965-0.974"
+      + f" | SE-1 modulation {mods[('R2', 23)][2]:.2f} at sigma {mods[('R2', 23)][0]:.3f} (formula "
       f"{1.3 * np.exp(-2 * np.pi ** 2 * mods[('R2', 23)][0] ** 2 / L2 ** 2):.2f})")
 print(f"elapsed {time.time() - T0:.1f} s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+sys.exit(0 if NF == 0 else 1)

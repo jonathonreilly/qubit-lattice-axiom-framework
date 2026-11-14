@@ -1,14 +1,14 @@
 ---
 claim_id: records_on_change_are_frozen_in_the_half_filled_sea_so_a_record_count_lambda_has_no_poisson_source_and_everpresent_histories_fail_the_early_bounds_bounded_theorem_note_2026-10-22
 claim_type: bounded_theorem
-claim_scope: "Tests record-count rules meant to give the Poisson counts an everpresent (Sorkin-type) Lambda needs. (a) Record on change, where a site records only when its actual occupation changes. If a site-diagonal antiunitary reverses both half-ticks, the half-filled sea has equal odds at both half-ticks. The fewest-change transport is then the identity, so record-on-change makes zero vacuum records (count 0, variance 0). Checked on a 1D pair-walk ring, N = 8, 10, 12, CL-1 gate form: TV <= 7.8e-16. In 1D the only breaking is the ring holonomy mod 2 pi; 2 pi is an exact gauge (frozen). At holonomy pi + 1 the rate per site falls with N (3.4e-2, 1.7e-2, 8.9e-3 at N = 6, 8, 10). Those counts are collective: the Fano factor grows in proportion to the window (0.80, 1.61, 4.02 for 2, 4, 10 sites), so there is no sqrt(N) law. A drifting mass angle gives local single hops: rate 0.142 per site per unit drift, Fano 2.00. (b) Prefactor. Lambda/L^2 is conjugate to V4, and a minimum-uncertainty packet gives Lambda_rms L^2 = L^4/(2 sigma_V) with sigma_V^2 = (F/r) v_c V4, where r is records per site per half-tick. With the past cone today (0.1229 H0^-4): imported Poisson per half-tick, or a fair Born coin per site per half-tick, overshoots by 6.7 to 14.9. Expansion-driven changes (through mass angles) give about 2e-40 of the measured value, and split-driven changes at most 5e-31. (c) History. Under S/V dynamics on the past light cone (ADGS model 1, amplitude A = (1/2) sqrt(2 r/(F sig))), rms Omega_L = A/(3 sqrt(V H^4)): 2.73 A in the radiation era, 1.81 A in the matter era, 0.95 A today, so Lambda tracks H^2. Histories from a = 1e-20 survive (H^2 > 0) only for A <~ 0.15. Today's Omega_L = 0.685 is then a >= 7 sigma fluctuation, and the best factorised joint probability with BBN and recombination bounds is about 8e-18. A late-window diagnostic (switched on at z = 3, conditioned on today) gives w0 = +0.17 [-0.97, +0.89] and wa = -0.86 [-3.03, +1.50]; 0 of 82 histories fall in a DESI DR2 box or a LambdaCDM box. Gate result: FAILURE. Supplied model, finite diagnostic: toy gate parameters, LambdaCDM (Planck 2018), the eps0 range, the S/V dynamics, approximate BBN and CMB bounds, and DESI central values."
+claim_scope: "Tests record-count rules meant to give the Poisson counts an everpresent (Sorkin-type) Lambda needs. (a) Record on change, where a site records only when its actual occupation changes. If a site-diagonal antiunitary reverses both half-ticks, the half-filled sea has equal odds at both half-ticks. The fewest-change transport is then the identity, so record-on-change makes zero vacuum records (count 0, variance 0). Checked on a 1D pair-walk ring, N = 8, 10, 12, CL-1 gate form: TV <= 7.8e-16. In 1D the only breaking is the ring holonomy mod 2 pi; 2 pi is an exact gauge (frozen). At holonomy pi + 1 the rate per site falls with N (3.4e-2, 1.7e-2, 8.9e-3 at N = 6, 8, 10). Those counts are collective: the Fano factor grows in proportion to the window (0.80, 1.61, 4.02 for 2, 4, 10 sites), so there is no sqrt(N) law. A drifting mass angle gives local single hops: rate 0.142 per site per unit drift, Fano 2.00. (b) Prefactor. Lambda/L^2 is conjugate to V4, and a minimum-uncertainty packet gives Lambda_rms L^2 = L^4/(2 sigma_V) with sigma_V^2 = (F/r) v_c V4, where r is records per site per half-tick. With the past cone today (0.1229 H0^-4): imported Poisson per half-tick, or a fair Born coin per site per half-tick, overshoots by 6.7 to 14.9. Expansion-driven changes (through mass angles) give about 2e-40 of the measured value, and split-driven changes at most 5e-31. (c) History. Under S/V dynamics on the past light cone (ADGS model 1, amplitude A = (1/2) sqrt(2 r/(F sig))), rms Omega_L = A/(3 sqrt(V H^4)): 2.73 A in the radiation era, 1.81 A in the matter era, 0.95 A today, so Lambda tracks H^2. In this supplied model, histories from a = 1e-20 survive (H^2 > 0) only for A <~ 0.15. Today's Omega_L = 0.685 is then a >= 7 sigma fluctuation, and the best factorised joint probability with BBN and recombination bounds is about 8e-18; this is a supplied-model diagnostic, not a likelihood, and the difference from published viable histories (A ~ 0.25 to 0.5) is not resolved. A late-window diagnostic (switched on at z = 3, conditioned on today) gives w0 = +0.17 [-0.97, +0.89] and wa = -0.86 [-3.03, +1.50]; 0 of 82 histories fall in a DESI DR2 box or a LambdaCDM box (a box test, not a likelihood). Gate result for the tested rules: FAILURE. No exclusion of everpresent Lambda beyond this model is claimed. Supplied model, finite diagnostic: toy gate parameters, LambdaCDM (Planck 2018), the eps0 range, the S/V dynamics, approximate BBN and CMB bounds, and DESI central values."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
 runner: scripts/records_on_change_are_frozen_in_the_half_filled_sea_so_a_record_count_lambda_has_no_poisson_source_and_everpresent_histories_fail_the_early_bounds_2026_10_22.py
 ---
 
-# Records on change are frozen in the half-filled sea, so a record-count Lambda has no Poisson source, and everpresent histories fail the early bounds
+# Records on change are frozen in the half-filled sea, so the tested record rules give a record-count Lambda no Poisson source, and everpresent histories in the supplied S/V model fail the early bounds
 
 Claim type: bounded_theorem.
 Primary runner: `scripts/records_on_change_are_frozen_in_the_half_filled_sea_so_a_record_count_lambda_has_no_poisson_source_and_everpresent_histories_fail_the_early_bounds_2026_10_22.py`.
@@ -28,25 +28,25 @@ Units: rung units, L = sqrt(8 pi) l_P, 8 pi G hbar = L^2, c = 1. The 4-volume pe
 
 A. Records on change in the half-filled sea.
 
-1. Theorem (frozen vacuum). Suppose a site-diagonal antiunitary K reverses each half-tick, K U K = U^dag. Then K maps the Floquet sea at one half-tick onto the sea at the other, so the configuration odds are equal at both. The fewest-change transport between equal odds is the identity, and it is unique, since every other plan has positive expected change. Under record-on-change the vacuum therefore makes no records: the count is 0 and its variance is 0, at every window. In the 1D pair walk (CL-1 gate form: exp(-i(eps - mu/2)R) on even pairs, exp(+i(eps + mu/2)R) on odd pairs) |KUK - U^dag| = 2e-16 and TV(p_A, p_B) <= 7.8e-16 for N = 8, 10 and 12, both at (eps, mu) = (0.6, 0.3) and at (0.0375, 0.01). PR #9876 solved the same antiunitary for the 3D block tick (8^3 torus, max error 1.9e-14). The pi-flux face phases that the sea's energy selects are T-even (+pi and -pi are one holonomy), so the laws' vacuum has this symmetry.
+1. Theorem (frozen vacuum). Suppose a site-diagonal antiunitary K reverses each half-tick, K U K = U^dag. Then K maps the Floquet sea at one half-tick onto the sea at the other, so the configuration odds are equal at both. The fewest-change transport between equal odds is the identity, and it is unique, since every other plan has positive expected change. Under record-on-change the vacuum therefore makes no records: the count is 0 and its variance is 0, at every window. In the 1D pair walk (CL-1 gate form: exp(-i(eps - mu/2)R) on even pairs, exp(+i(eps + mu/2)R) on odd pairs) |KUK - U^dag| = 2e-16 and TV(p_A, p_B) <= 7.8e-16 for N = 8, 10 and 12, both at (eps, mu) = (0.6, 0.3) and at (0.0375, 0.01). PR #9876 solved the same antiunitary for the 3D block tick (8^3 torus, max error 1.9e-14). The pi-flux face phases that the sea's energy selects are T-even (+pi and -pi are one holonomy), so the vacuum of the ticks checked here, which carry no copy mass, has this symmetry; for the copy-massed tick it is not established (see the Boundary and the consolidation's item 3).
 2. Breaking the antiunitary does not give Poisson counts.
    - A gauge-real 1D chain is broken only by its ring holonomy mod 2 pi. Holonomy 2 pi is an exact gauge, and its TV is 5e-16.
    - At holonomy pi + 1 the sea moves. The eps -> 0 entropic plan reaches the LP fewest-change minimum (N = 8: 0.136365 changes per half-tick, both ways).
    - The rate per site falls with N: 3.4e-2, 1.7e-2 and 8.9e-3 at N = 6, 8 and 10. A filled band is invariant under a uniform vector potential, so the bulk stays frozen.
    - The counts that do occur are collective. The long-time Fano factor (tilted Perron root) is 0.80, 1.61 and 4.02 for windows of 2, 4 and 10 sites, so Var ~ w^2: one global mode moves, and a 4-volume count has no sqrt(N) law.
-3. The one structural Poisson-like source is a changing odds. If the mass angle drifts by d per half-tick, the plan makes independent single hops. The rate is c d per site with c = 0.142, the one-step Fano factor is 2.00 for the whole ring and for a single pair (two site changes per hop), and the fresh entropy H(Y|X) lies within the Fano-inequality bound h(P_move) + P_move ln(M - 1). Fresh randomness per half-tick is bounded by how much the odds change. A stationary vacuum supplies none.
+3. Of the sources tested, the one Poisson-like source is a changing odds. If the mass angle drifts by d per half-tick, the plan makes independent single hops. The rate is c d per site with c = 0.142, the one-step Fano factor is 2.00 for the whole ring and for a single pair (two site changes per hop), and the fresh entropy H(Y|X) lies within the Fano-inequality bound h(P_move) + P_move ln(M - 1). Fresh randomness per half-tick is bounded by how much the odds change. A stationary vacuum supplies none.
 
 B. Lambda magnitude, prefactor computed.
 
 4. The phase of Lambda is (Lambda/L^2) V4, so Lambda/L^2 and V4 are conjugate. A minimum-uncertainty packet has sigma_V sigma_(Lambda/L^2) = 1/2 (Gaussian check: 0.50000000), so Lambda_rms L^2 = L^4/(2 sigma_V). With r records per site per half-tick and Fano factor F, the count-volume has sigma_V^2 = (F/r) v_c V4, so Lambda_rms L^2 = (1/2) sqrt(r/(F sig/2)) / sqrt(V4/L^4). Fewer or noisier-per-record counts give a smaller Lambda.
 5. The past light cone today is V4 = 0.1229 H0^-4 = 1.01e240 L^4.
    - Imported Poisson per site per half-tick (r = F = 1), or a fair Born coin per site per half-tick (r = F = 1/2): Lambda_rms is 6.7 to 14.9 times the measured value over the eps0 range. This agrees with the register's 'overshoots 6-13x'.
-   - Record on change under the laws: zero from the vacuum (item 1). Expansion reads edges only through mass angles mN, so r_exp = c mu_top H sig L/2 <= 1.4e-81, giving 2e-40 of the measured value. Splits give at most one random change per site per split, r_split <= 9.2e-63, giving <= 5e-31 of it. Every structural source misses by 30 orders or more.
+   - Record on change under the laws as this note states them: zero from the vacuum (item 1). Expansion reads edges only through mass angles mN, so r_exp = c mu_top H sig L/2 <= 1.4e-81, giving 2e-40 of the measured value. Splits give at most one random change per site per split, r_split <= 9.2e-63, giving <= 5e-31 of it. Each of these sources misses by 30 orders or more.
    - Matching today's rms needs r/F of about 2 sig A^2, with A as in item 6: about 4e-3 to 2e-2 at A ~ 0.7. No rule supplies it. A Born coin at that rate is FITTED.
 
 C. History and (w0, wa).
 
-6. S/V dynamics (Ahmed-Dodelson-Greene-Sorkin model 1, supplied): Lambda L^2 = A B(u)/u, with B a standard Brownian motion in u = V4/L^4 over the past light cone and A = (1/2) sqrt(2 r/(F sig)) from item 4. ADGS's alpha is A/(8 pi). Theorem (tracking): rms Omega_L = A/(3 sqrt(V H^4)). Here V H^4 is 4 pi/840 in the radiation era and 0.0338 in the matter era (beta functions), and 0.1229 today, so rms/A is 2.73, 1.81 and 0.95. Lambda ~ H^2 at every epoch, and early fluctuations are about 2.9 times today's.
+6. S/V dynamics (Ahmed-Dodelson-Greene-Sorkin model 1, supplied): Lambda L^2 = A B(u)/u, with B a standard Brownian motion in u = V4/L^4 over the past light cone and A = (1/2) sqrt(2 r/(F sig)) from item 4. ADGS's alpha is A/(8 pi). Theorem (tracking): rms Omega_L = A/(3 sqrt(V H^4)). Here V H^4 is 4 pi/840 in the radiation era and 0.0338 in the matter era (beta functions; the runner checks both against a direct quadrature of the past-cone 4-volume, 2026-11-14), and 0.1229 today, so rms/A is 2.73, 1.81 and 0.95. Lambda ~ H^2 at every epoch, and early fluctuations are about 2.9 times today's.
 7. Self-consistent Friedmann histories from a = 1e-20, 12000 each, start analytic in the radiation era; a crunch is H^2 <= 0.
 
    | A | alive | P(BBN) | P(rec) | rms Omega_L0 | P(today) |
@@ -85,8 +85,8 @@ Items 1 to 3 build the many-body Floquet sea as a Slater determinant of the lowe
 
 ## Finite checks
 
-The runner gives 12 PASS and 0 FAIL in about 44 s, using 73 MB. Several PASS lines record failures against measurement.
-- Theorems: item 1 (with the TV check), the 2 pi gauge, the prefactor 1/2, and the V H^4 constants.
+The runner gives 11 PASS and 0 FAIL in about 35 s, using 73 MB, and exits nonzero if any check fails. Several PASS lines record failures against measurement. The conflict ledger is printed but not counted (before 2026-11-14 it re-asserted A1 and C as a twelfth check).
+- Theorems: item 1 (with the TV check), the 2 pi gauge, the prefactor 1/2, and the V H^4 constants (closed form against quadrature).
 - Diagnostics: the LP match, collective Fano, the N trend, the drift Fano, and the history ensembles.
 - Estimates: items 5, 7 and 8.
 
@@ -96,7 +96,7 @@ Not claimed: that no record rule gives everpresent Lambda.
 - The CL-1 cube tick with copy mass was not rebuilt here. The record-arrow probe reports the laws keep sigma_d K, a site-permuting antiunitary, which does not by itself force equal odds. If the copy mass breaks the site-diagonal antiunitary, the 3D vacuum may move. That is the open test, with r and F to be computed as in items 2 and 3.
 - Not computed: 2D/3D plaquette-flux T-breaking, the S/V model's alternative 4-volumes (Hubble cylinder), ADGS model 2, and inhomogeneous Lambda (Barrow 2007 constrains it).
 - ADGS (2004) and later analyses (Zwane, Afshordi and Sorkin 2018; Das, Nasiri and Yazdi 2023) report viable histories near alpha ~ 0.01 to 0.02 (A ~ 0.25 to 0.5). Here A >= 0.2 does not survive from a = 1e-20. The difference (crunch handling, the 4-volume, the start time) is not resolved.
-- The DESI comparison is a box test on a CPL fit to rho_L, not a likelihood.
+- The DESI comparison is a box test on a CPL fit to rho_L, not a likelihood. The factorised probability of item 7 is likewise a supplied-model diagnostic: it excludes no everpresent Lambda outside the S/V model, start and crunch handling used here.
 
 ## Supplied vs forced
 
@@ -111,7 +111,7 @@ Supplied:
 - the DESI and LambdaCDM boxes;
 - the m_top value.
 
-Forced, given the laws:
+Forced, given the supplied models and the laws as this note states them (zero premise weight):
 - the frozen vacuum (equal odds, identity plan);
 - the 2 pi gauge;
 - collective (Var ~ w^2) counts under holonomy breaking;
@@ -131,7 +131,7 @@ Forced, given the laws:
 
 - [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md): Z^3 sites, one qubit per site, nearest-neighbour admissibility, records.
 - [Candidate-law register](CANDIDATE_LAWS.md): CL-1's gate form and fixed lapse, CL-2's transport and records, CL-3's constant. Zero premise weight.
-- Builds on the open PRs #9876, #10002 and #9962, and on the neighbourhood-roles probe (R3 record on change).
+- Builds on the open PRs #9876, #10002 and #9962, and on the neighbourhood-roles probe (R3 record on change). #9876 and #10002 are carried on this branch ([time reversal](TIME_REVERSAL_FREEZES_HALF_FILLED_SEA_RECORDS_AND_RECORD_COUNT_LAMBDA_NEEDS_POISSON_INPUT_BOUNDED_THEOREM_NOTE_2026-10-21.md), [first slab](FIRST_SLAB_FIXES_LAMBDA_ONLY_AT_THE_PLANCK_SCALE_AND_A_RECORD_COUNT_MULTIPLIER_GIVES_A_WRONG_SIGN_OR_A_DRIFTING_LAMBDA_BOUNDED_THEOREM_NOTE_2026-10-22.md)); #9962, the neighbourhood-roles probe, the record-arrow probe and the info-min-law and minimal-toe-b leads are recorded only in the consolidation's map.
 
 ## How to run
 
@@ -139,4 +139,4 @@ Forced, given the laws:
 python3 scripts/records_on_change_are_frozen_in_the_half_filled_sea_so_a_record_count_lambda_has_no_poisson_source_and_everpresent_histories_fail_the_early_bounds_2026_10_22.py
 ```
 
-Needs numpy and scipy. It is self-contained, declares `AUDIT_TIMEOUT_SEC = 120`, runs in about 44 s with 73 MB resident, prints about 4.4 kB and ends with `TOTAL: PASS=12 FAIL=0`. It is seeded, and two runs (direct and via `scripts/runner_cache.execute_runner`) gave identical output.
+Needs numpy and scipy. It is self-contained, declares `AUDIT_TIMEOUT_SEC = 120`, runs in about 35 to 44 s with 73 MB resident, prints about 4.6 kB and ends with `TOTAL: PASS=11 FAIL=0`. It is seeded, and two runs (direct and via `scripts/runner_cache.execute_runner`) gave identical output.

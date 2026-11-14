@@ -96,10 +96,10 @@ for c in (0.02, 0.01, 0.005):
     runs[c] = (np.max(abs(Lb - L0) / mean2(rc)) / c ** 2, Lb[-1] / L0 - 1, (rc[-1] - C / (0.5 * (lu[-1] + lu[-2])) ** 4) / Lb[-1],
                np.abs(0.5 * (Lam[1:] - Lam[:-1])).max() / L0, lr, Tr)
 k2 = [runs[c][0] for c in runs]
-check('rule U conserves its constant with no secular drift: |Lbar_n - Lambda0| <= 4.2 c^2 rho_c(n) at every slab, though '
-      'rho_c starts at 1e4 Lambda0; zigzag ~ c^3', max(k2) < 4.5 and max(k2) / min(k2) < 1.1 and runs[0.005][3] < runs[0.02][3] / 30,
+check('rule U conserves its constant up to O(c^2) at each finite step, with no secular drift: |Lbar_n - Lambda0| <= 4.2 c^2 rho_c(n) at every slab at the three tested steps, though '
+      'rho_c starts at 1e4 Lambda0; zigzag ~ c^3; exact conservation only in the c -> 0 limit (not at a finite step)', max(k2) < 4.5 and max(k2) / min(k2) < 1.1 and runs[0.005][3] < runs[0.02][3] / 30,
       'max/c^2 ' + ', '.join(f'{k:.2f}' for k in k2) + '; end offset ' + ', '.join(f'{runs[c][1]:.0e}' for c in runs) + f' (c = .02, .01, .005); zigzag {runs[0.02][3]:.0e} -> {runs[0.005][3]:.0e}')
-check('late expansion obeys Friedmann with the conserved constant: (3H^2 - rho_r)/Lbar -> 1 (w = -1 exactly)',
+check('late expansion obeys Friedmann with the conserved constant: (3H^2 - rho_r)/Lbar -> 1 within 3e-4 at the tested steps (w = -1 in the c -> 0 limit, late times)',
       all(abs(runs[c][2] - 1) < 3e-4 for c in runs), ', '.join(f'{runs[c][2]:.5f}' for c in runs))
 lr, Tr = runs[0.01][4], runs[0.01][5]; fix = []
 for e in (1e-9, 1e-7):

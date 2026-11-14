@@ -1,7 +1,7 @@
 ---
 claim_id: no_structure_of_the_update_protects_a_dark_species_because_the_mirror_number_is_shared_at_every_momentum_the_block_period_blocks_no_copy_decay_and_the_window_floor_holds_no_atom_or_remnant_bounded_theorem_note_2026-10-22
 claim_type: bounded_theorem
-claim_scope: "Searches the structure CL-1 to CL-3 already have, with no added parity, for a protected dark species. (a) The cube tick's one-body commutant is 16 at K = 0 and at the zone corner pi(1,1,1), 8 on the diagonal 0.7(1,1,1), 4 at a random K, and 1 jointly over these and three random K: no number beyond species number is kept for moving states. On the integer species-phase lattice of a light 16 plus a mirror 16 (the mirror's pair-square group U(1)_Y x U(1)_X cited), the dark subgroup (trivial on every light mode) is U(1)^2 without a light-mirror pairing and trivial with the species-diagonal pairing in either form (Smith normal form, no torsion); every light mode has X = 1 mod 4, so U(1)_X and its Z4 are carried by light states. (b) The copy sign commutes with the tick at K = 0 only (7e-16 against 0.524); the traceless strain vertex is 0 at q = 0 and 0.297 at q = 0.87 M; a block half-tick is b_e cube half-ticks and edges repeat every b_e cells, so quasienergy and momentum are kept only mod 2 pi/b_e, and the light band (width 1.642 on 8^3 at (b, mu, M) = (0.3, 0.4, 0.5)) and M exceed 2 pi/b_e for b_e >= 40: no kinematic block on the heavy copy's decay. (c) On a regular tetrahedron's edge register (s = 2, Delta = 0, 8849 positive-volume states, one component) the all-floor state is connected to the flat state; under the register hop it leaves the floor (mean return 0.018); a quadratic departure bowl traps it in continuous time (0.45) but not in the per-tick form (at most 0.278 over six stiffnesses, below 0.1 at stiffness >= 2); splits start children at flat. (d) A floor remnant would weigh (b_e sqrt(8 pi)/16) M_Pl (12.5 M_Pl at b_e = 40), carries no number, and from the measured A_s has collapse fraction exp(-2.4e8) against the 1e-27 needed. The anti-smuggling gate result for the one rule considered (a floor lock) is FAIL. Supplied model, finite diagnostic: (b, mu, M), s, Delta, b_e, the stiffness scan, the mirror group, the unit map, the graviton-width coefficient, A_s, n_s, delta_c, g*, T_eq."
+claim_scope: "Searches the structure CL-1 to CL-3 already have, with no added parity, for a protected dark species. (a) The cube tick's one-body commutant is 16 at K = 0 and at the zone corner pi(1,1,1), 8 on the diagonal 0.7(1,1,1), 4 at a random K, and 1 jointly over these and three random K: no number beyond species number is kept for moving states. On the integer species-phase lattice of a light 16 plus a mirror 16 (the mirror's pair-square group U(1)_Y x U(1)_X cited), the dark subgroup (trivial on every light mode) is U(1)^2 without a light-mirror pairing and trivial with the species-diagonal pairing on all six species in either form (Smith normal form, no torsion; partial pairing is treated in the mirror note's A6); every light mode has X = 1 mod 4, so U(1)_X and its Z4 are carried by light states. (b) The copy sign commutes with the tick at K = 0 only (7e-16 against 0.524); the traceless strain vertex is 0 at q = 0 and 0.297 at q = 0.87 M; a block half-tick is b_e cube half-ticks and edges repeat every b_e cells, so quasienergy and momentum are kept only mod 2 pi/b_e, and the light band projected over all momenta (width 1.642 on 8^3 at (b, mu, M) = (0.3, 0.4, 0.5)) and M exceed 2 pi/b_e for b_e >= 40; at a fixed emitted momentum the allowed light final states are only 2 b_e^3, so their resonant edge energies are a finite set (gaps up to 2.9e-5 at b_e = 40); whether the heavy copy's decay channel is open (joint momentum and energy conservation with a nonzero vertex) is not computed and stays open. (c) On a regular tetrahedron's edge register (s = 2, Delta = 0, 8849 positive-volume states, one component) the all-floor state is connected to the flat state; under the register hop it leaves the floor (mean return 0.018); a quadratic departure bowl traps it in continuous time (0.45) but not in the per-tick form (at most 0.278 over six stiffnesses, below 0.1 at stiffness >= 2); splits start children at flat. (d) A floor remnant would weigh (b_e sqrt(8 pi)/16) M_Pl (12.5 M_Pl at b_e = 40), carries no number, and from the measured A_s has collapse fraction exp(-2.4e8) against the 1e-27 needed. The anti-smuggling gate result for the one rule considered (a floor lock) is FAIL. The search covers these four places only and rules out nothing beyond them. Supplied model, finite diagnostic: (b, mu, M), s, Delta, b_e, the stiffness scan, the mirror group, the unit map, the graviton-width coefficient, A_s, n_s, delta_c, g*, T_eq."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -12,7 +12,7 @@ upstream_dependencies:
 runner: scripts/no_structure_of_the_update_protects_a_dark_species_because_the_mirror_number_is_shared_at_every_momentum_the_block_period_blocks_no_copy_decay_and_the_window_floor_holds_no_atom_or_remnant_2026_10_22.py
 ---
 
-# No structure of the update protects a dark species: the mirror number is shared at every momentum, the block period blocks no copy decay, and the window floor holds no atom or remnant
+# Four places searched in the update give no protected dark species: the mirror number is shared at every momentum, the block-period channel for copy decay is not settled, and the window floor holds no robust atom or abundant remnant
 
 Claim type: bounded_theorem.
 Primary runner: `scripts/no_structure_of_the_update_protects_a_dark_species_because_the_mirror_number_is_shared_at_every_momentum_the_block_period_blocks_no_copy_decay_and_the_window_floor_holds_no_atom_or_remnant_2026_10_22.py`.
@@ -44,9 +44,9 @@ A charge kept by moving states must commute at every K. So the corner pairing do
 
 **A2 [T].** Take the integer lattice of species phases for a light 16 plus a mirror 16. The mirror's own pair-square group, U(1)_Y x U(1)_X with no torsion, is cited from the mirror note.
 - Without a light-mirror pairing, the dark subgroup (the part acting trivially on every light mode) is U(1)^2: the mirror's own Y' and X'.
-- With the species-diagonal pairing, in the form psi^dag psi' or psi psi', the dark subgroup is trivial, and the whole group is U(1)^2 = Y and X(total). Smith normal form; no torsion.
+- With the species-diagonal pairing on all six species, in the form psi^dag psi' or psi psi', the dark subgroup is trivial, and the whole group is U(1)^2 = Y and X(total). Smith normal form; no torsion. Pairing on only some species leaves a mirror-only U(1) or a finite mirror-only group in 23 of the 62 proper subsets (mirror note A6).
 
-A1 says the tick supplies that pairing at nonzero K.
+A1 says the tick supplies that pairing at nonzero K; since the tick acts on the cell index alike for every species (supplied model), it pairs all six.
 
 **A3 [T].** Every light mode has X = 1 mod 4, and i^N = exp(i pi X/2). So U(1)_X and its Z4 are carried by light states; the lightest carrier is the neutrino, with X = -3. CL-1's species mode numbers are carried by each species' light copy at rest.
 
@@ -58,19 +58,20 @@ Therefore no charge of the update is absent from the light states, and (a) gives
 
 **B2 [F].** The traceless one-cube strain vertex, heavy copy at rest to light copy at recoil q, is 6e-10 at q = 0, 0.038 at 0.1 M and 0.297 at 0.87 M. This recomputes the copy-sign note's A6.
 
-**B3 [T+F].** This item is new: the block period gives no kinematic protection.
+**B3 [T+F].** This item is new: a diagnostic of the block period, not a channel calculation (narrowed 2026-11-14).
 - A block half-tick is b_e cube half-ticks (CL-3 text), and the edge lattice repeats every b_e cells. So the full update keeps quasienergy only mod 2 pi/b_e per cube tick, and crystal momentum only mod 2 pi/b_e per cell.
 - The light copy's positive band spans [0.400, 2.042] on the 8^3 grid, a width of 1.642. Both this width and M = 0.5 exceed 2 pi/b_e (0.157, 0.063 and 0.006 at b_e = 40, 100 and 1000).
-- The folded light band therefore covers the whole quasienergy circle. For any edge-quantum energy and momentum, some light final state is resonant through umklapp.
+- Projected over all momenta, the folded light band therefore covers the whole quasienergy circle. That is necessary for an open channel but not sufficient.
+- Negative result (B3b, computed): at a fixed emitted edge-quantum momentum q, momentum conservation modulo the block reciprocal lattice leaves only the b_e^3 light momenta k = -q + 2 pi n/b_e in the fine zone, two light bands each. Their resonant edge energies form a finite set of 2 b_e^3 values mod 2 pi/b_e, with largest gap 0.243 of 1.571 at b_e = 4 and 2.9e-5 of 0.157 at b_e = 40 (seeded q). So the earlier sentence "for any edge-quantum energy and momentum, some light final state is resonant through umklapp" is withdrawn.
 
-Both energy and recoil can be absorbed by the block structure. Exactness at rest suppresses no decay.
+Open: whether the heavy copy's decay is kinematically blocked needs joint momentum and quasienergy conservation with an edge-quantum dispersion and a nonzero vertex, integrated over the emitted momenta. That channel calculation is not done here, and no edge-quantum dispersion is supplied.
 
-**B4 [E].** With the graviton width g^2 M^3/(32 pi Mbar^2) at the O(1) vertex:
+**B4 [E].** Conditional on an open channel (B3 leaves that open), with the graviton width g^2 M^3/(32 pi Mbar^2) at the O(1) vertex:
 - at the law's M (one constant for every species, about 1.1e18 GeV) the heavy copy lives 4e-39 s;
 - tau = 4e6 s at 1 TeV;
 - tau > 8e18 s needs M < 82 MeV, which a heavy electron copy excludes.
 
-Result: (b) gives no dark species.
+Result: (b) is open. Exactness at rest alone suppresses no decay (B1, B2), but whether the block period blocks the decay is not settled (B3); if a channel is open, B4's lifetimes apply.
 
 ### C. A geometry atom at the window floor
 
@@ -107,13 +108,13 @@ The power needed is P_R = 8.3e-3, about 4e6 A_s. The abundance is supplied, not 
 
 ## Verdict
 
-None of (a) to (d) gives a dark species from structure the laws already have:
-- (a) every conserved charge is carried by light states;
-- (b) the block period gives no kinematic suppression;
+None of (a), (c) and (d) gives a dark species from structure the laws already have, and (b) is open:
+- (a) every conserved charge is carried by light states (with the tick pairing all six species);
+- (b) the projected light band covers the block quasienergy circle, but the decay channel itself is not computed, so a kinematic block is neither shown nor excluded;
 - (c) the floor holds no robust atom, and splits make none;
 - (d) a floor remnant has a supplied mass, no protecting number and a negligible abundance under the measured spectrum.
 
-This extends the copy-sign, mirror and fold-defect notes and agrees with the AX-5 conclusion: a stable dark species still needs a conserved number the laws do not contain. Dark matter stays open (owner decision 2).
+This extends the copy-sign, mirror and fold-defect notes and agrees with the AX-5 conclusion for (a), (c) and (d): there a stable dark species would need a conserved number these structures do not contain. The search covers these four places only; it rules out nothing beyond them. Dark matter stays open (owner decision 2).
 
 ## Anti-smuggling gate
 
@@ -142,13 +143,14 @@ Forced, given these:
 - the trivial dark subgroup under the pairing;
 - the light carriers of X and Z4;
 - rest-only copy exactness and the O(1) vertex at recoil;
-- quasienergy and momentum kept only mod 2 pi/b_e (from the block-tick clause);
+- quasienergy and momentum kept only mod 2 pi/b_e (from the block-tick clause), and the finite fixed-q resonant set;
 - connectivity of the floor to flat;
 - children at flat;
 - M_rem proportional to b_e;
 - no register number.
 
 Not derived:
+- the heavy-copy decay channel under the block period (joint momentum and energy conservation with an edge-quantum dispersion and a nonzero vertex);
 - the lattice (many-cell) decay rate of a stiff floor configuration;
 - the true CL-3 stiffness per register step;
 - Hawking emission on the register lattice itself;
@@ -156,8 +158,9 @@ Not derived:
 
 ## Notes used or contradicted
 
-- Copy-sign note (dark-matter-candidate): A5 and A6 are recomputed (A1, B1, B2). B3 adds the block-period umklapp.
-- Mirror note (PR #9988): its pair-square group is cited; its B1 is extended to the zone corner and joint K (A1); its "shared with light B-L" is made exact on the phase lattice (A2).
+- Copy-sign note (dark-matter-candidate): A5 and A6 are recomputed (A1, B1, B2). B3 adds a block-period folding diagnostic and its fixed-q limit.
+- Mirror note (PR #9988; [on this branch](THE_GAPPED_MIRROR_KEEPS_ONLY_A_NUMBER_SHARED_WITH_LIGHT_MATTER_AND_ITS_LIGHTEST_STATE_IS_CHARGED_SO_IT_GIVES_NO_DARK_MATTER_BOUNDED_THEOREM_NOTE_2026-10-22.md)): its pair-square group is cited; its B1 is extended to the zone corner and joint K (A1); its "shared with light B-L" is made exact on the phase lattice for six-species pairing (A2).
+- Sources named only by campaign name here (the copy-sign note, the fold-defect note, the AX-5 note, floor-horizon, window-fix and the register's dark-matter line) are recorded only in the consolidation's map ([VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md](VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md)); no file of these names was found on `main` or this branch, and their results are used as cited inputs.
 - Fold-defect note (PR #9991): its zero-Kibble-Zurek passing argument is paralleled for floored cells (C4).
 - AX-5 note: its gate failure stands. This note finds no structure-based replacement.
 - Floor-horizon and window-fix: the floor 1/8 and the window are used as written.
@@ -169,4 +172,4 @@ Not derived:
 python3 scripts/no_structure_of_the_update_protects_a_dark_species_because_the_mirror_number_is_shared_at_every_momentum_the_block_period_blocks_no_copy_decay_and_the_window_floor_holds_no_atom_or_remnant_2026_10_22.py
 ```
 
-Needs numpy, scipy and sympy. The runner is self-contained, seeded and declares `AUDIT_TIMEOUT_SEC = 120`. Through `scripts/runner_cache.execute_runner` it ran in about 14 s with about 195 MB resident and printed about 5.3 kB. It ends with `TOTAL: PASS=15 FAIL=0`.
+Needs numpy, scipy and sympy. The runner is self-contained, seeded and declares `AUDIT_TIMEOUT_SEC = 120`. Through `scripts/runner_cache.execute_runner` it ran in about 14 s with about 195 MB resident and printed about 5.3 kB, ending with `TOTAL: PASS=15 FAIL=0` at the held head. Since 2026-11-14 it adds B3b, prints the channel calculation as NOT CHECKED, exits nonzero when a check fails and ends with `TOTAL: PASS=16 FAIL=0` (about 290 MB resident).

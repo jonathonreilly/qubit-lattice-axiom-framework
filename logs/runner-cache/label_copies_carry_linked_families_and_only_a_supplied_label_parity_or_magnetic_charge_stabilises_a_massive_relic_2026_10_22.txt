@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/label_copies_carry_linked_families_and_only_a_supplied_label_parity_or_magnetic_charge_stabilises_a_massive_relic_2026_10_22.py
-runner_sha256: 720e35e8131b1de45d510d850d064a5695f8b7a5c7aead41b97a73f83e6e24a2
-input_fingerprint_sha256: 3d82eb3e88221a0472e6238924ff8242e09e5454038ae51e68d6715f63d5351b
+runner_sha256: 5c45675b5b70be76398764baba8dd69b250e7c8268780065a389de4dc11c852f
+input_fingerprint_sha256: 8a618bc5202c9264c56895b432a5611775ee3b55aa952177ea2c441d4b2e57e0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.31
+elapsed_sec: 1.24
 status: ok
 ----- stdout -----
 == A. block labels at zoom b (exact U(b^3) of the parallel-carriage circuit; label terms supplied)

@@ -1,7 +1,7 @@
 ---
 claim_id: the_gapped_mirror_keeps_only_a_number_shared_with_light_matter_and_its_lightest_state_is_charged_so_it_gives_no_dark_matter_bounded_theorem_note_2026-10-22
 claim_type: bounded_theorem
-claim_scope: "For one mirror 16 (two spin components per cell) with the Spin(10) pair square, species-diagonal hops and SM gauging: (A) the species phases that keep every pair-square monomial form exactly U(1)_Y x U(1)_X, with X = 5(B-L) - 4Y = (1,1,-3,-3,1,5) on (Q,u^c,d^c,L,e^c,nu^c) and no discrete remnant (Smith normal form); mode number changes only by 4, and its Z4 = i^N equals exp(i pi X/2), the Spin(10) centre inside U(1)_X; mirror B' and L' are broken, B'-L' is kept; X has no anomaly with SM gauge fields, itself or gravity; with any species-diagonal light-mirror bilinear only U(1)_Y x U(1)_X(total) survives, so the mirror's number is shared with light B-L. (B) The CL-1 cube tick's one-body commutant is 16-dimensional at K = 0 and the identity at three random K: no mirror, copy or turn number exists for moving states; an exact one-body mirror number would leave the light sector a lattice theory by itself, vector-like by Nielsen-Ninomiya (1D witness: 20 random bands, net chirality 0). (C) SM singlets: none in the 10, one in the 16 (nu'^c, X = 5), two in the 45, one in the 54 (X = 0); 16 x 16bar = 1 + 45 + 210 and 10 x 10 = 1 + 45 + 54, so in the Spin(10)-symmetric phase nu'^c has zero photon and Z couplings to all orders in the mirror dynamics, while the 10's neutral members have T3 = +-1/2. (D) From the cited one-cell chains: the 10 (spin 0, X = +-2) at 19.07 g lies below the 16 (33.58 g), so the lightest mirror state is SM-charged and nu'^c (Delta_f) is the lightest SM singlet. Estimates against measurement use supplied inputs. Supplied model, finite diagnostic."
+claim_scope: "For one mirror 16 (two spin components per cell) with the Spin(10) pair square, species-diagonal hops and SM gauging: (A) the species phases that keep every pair-square monomial form exactly U(1)_Y x U(1)_X, with X = 5(B-L) - 4Y = (1,1,-3,-3,1,5) on (Q,u^c,d^c,L,e^c,nu^c) and no discrete remnant (Smith normal form); mode number changes only by 4, and its Z4 = i^N equals exp(i pi X/2), the Spin(10) centre inside U(1)_X; mirror B' and L' are broken, B'-L' is kept; X has no anomaly with SM gauge fields, itself or gravity; with a species-diagonal light-mirror bilinear on all six species only U(1)_Y x U(1)_X(total) survives, so the mirror's number is shared with light B-L; with bilinears on a subset S of the species the group has dimension 8 - |S| (one nu^c bilinear leaves 7), and a mirror-only U(1) or a finite mirror-only group (Z2 to Z6) survives on 23 of the 62 proper subsets. (B) The CL-1 cube tick's one-body commutant is 16-dimensional at K = 0 and the identity at three random K: no mirror, copy or turn number exists for moving states, and the tick, which acts on the cell index alike for every species (supplied model), supplies the bilinear for all six species; an exact one-body mirror number would leave the light sector a lattice theory by itself, vector-like by Nielsen-Ninomiya (1D witness: 20 random bands, net chirality 0). (C) SM singlets: none in the 10, one in the 16 (nu'^c, X = 5), two in the 45, one in the 54 (X = 0); 16 x 16bar = 1 + 45 + 210 and 10 x 10 = 1 + 45 + 54, so in the Spin(10)-symmetric phase nu'^c has zero photon and Z couplings to all orders in the mirror dynamics, while the 10's neutral members have T3 = +-1/2. (D) From the cited one-cell chains: the 10 (spin 0, X = +-2) at 19.07 g lies below the 16 (33.58 g), so the lightest mirror state is SM-charged and nu'^c (Delta_f) is the lightest SM singlet. The so(12) chains are cited from PR #9910 and not rechecked beyond reproducing E0 and the gaps from the cited coefficients. Estimates against measurement use supplied inputs. Supplied model, finite diagnostic."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -11,7 +11,7 @@ upstream_dependencies:
 runner: scripts/the_gapped_mirror_keeps_only_a_number_shared_with_light_matter_and_its_lightest_state_is_charged_so_it_gives_no_dark_matter_2026_10_22.py
 ---
 
-# The gapped mirror keeps only a number shared with light matter, and its lightest state is charged, so it gives no dark matter
+# With all six species mixed by the tick, the gapped mirror keeps only a number shared with light matter, and its lightest state is charged, so it gives no dark matter in the supplied model
 
 Claim type: bounded_theorem.
 Primary runner: `scripts/the_gapped_mirror_keeps_only_a_number_shared_with_light_matter_and_its_lightest_state_is_charged_so_it_gives_no_dark_matter_2026_10_22.py`.
@@ -28,11 +28,12 @@ A. Symmetries of the mirror 16 with the pair square, species-diagonal hops and S
 2. Exact. SM gauging and species-diagonal hops commute with the six species numbers, U(1)^6. Of these, the pair square keeps exactly U(1)_Y x U(1)_X, with X = 5(B-L) - 4Y taking the values (1, 1, -3, -3, 1, 5) on (Q, u^c, d^c, L, e^c, nu^c). The Smith normal form has no torsion, so no discrete remnant exists beyond these two U(1)s. This answers "which U(1)s survive": one exact mirror number survives, U(1)_X, which at fixed Y is the mirror's B-L.
 3. Exact. Mode number changes by 4 only, so Z4 = i^N survives. Every mode has X = 1 mod 4, so i^N = exp(i pi X/2): the Z4 is the Spin(10) centre and lies inside U(1)_X. It is not an independent protection. Mirror B' and L' are broken separately: L' fully, and 3B' only down to the Z3 that colour already contains. B'-L' is exact.
 4. Exact. On one 16, the anomalies SU(3)^2 X, SU(2)^2 X, Y^2 X, Y X^2, X^3 and gravity-X all vanish. The mirror's X therefore also survives electroweak instantons.
-5. Exact. Add the light family (a left 16) to the mirror (a right 16). Without mixing, the symmetry is U(1)^6 (light species) x U(1)_Y x U(1)_X(mirror), 8 dimensions. With any species-diagonal light-mirror bilinear, only U(1)_Y x U(1)_X(total) survives, 2 dimensions. The mirror's number is then the same symmetry as light B-L.
+5. Exact. Add the light family (a left 16) to the mirror (a right 16). Without mixing, the symmetry is U(1)^6 (light species) x U(1)_Y x U(1)_X(mirror), 8 dimensions. With a species-diagonal light-mirror bilinear on all six species, only U(1)_Y x U(1)_X(total) survives, 2 dimensions. The mirror's number is then the same symmetry as light B-L.
+6. Exact (all 63 subsets computed; added 2026-11-14). Partial mixing does not give that result. With bilinears on a subset S of the species the group has dimension 8 - |S|, since each bilinear ties one free light phase to the mirror's (Y_s, X_s) rotation. Negative result, explicit witness: a single nu^c light-mirror bilinear leaves dimension 7, and the five unmixed light phases stay free. The mirror's own X is broken by any one bilinear, because X_s is nonzero for every species. The mirror-only subgroup (trivial on every light mode) is U(1)^(2 - r) with r the rank of the mixed species' (Y_s, X_s): a mirror-only U(1) survives on any single species and on {Q, L}, whose charges are parallel (it is 6Y - X on the mirror). Sixteen other partial sets leave a finite mirror-only group (Z2, Z3, Z4 or Z6; for example Z6 for {e^c, nu^c}). Forty sets, the full set among them, leave none. So the statement "any species-diagonal bilinear leaves only U(1)_Y x U(1)_X(total)" is withdrawn; the result needs all six species mixed.
 
 B. The update shares the mirror's number with light matter.
 
-1. Finite diagnostic (rederives the copy-sign note's A5). Take the CL-1 cube tick at (b, mu, M) = (0.3, 0.4, 0.5). The one-body operators commuting with both half-ticks span 16 dimensions at K = 0: copy sign and turn labels are exact at rest. At three random K they span only the identity. No cell-local mirror, copy or turn number exists for moving states. The labels that pick out "the mirror" (the copy the three-fold turn rotates by e^(4 pi i/3), or the copy sign) are rest labels, so the tick is a light-mirror bilinear at nonzero momentum, and A5 applies.
+1. Finite diagnostic (rederives the copy-sign note's A5). Take the CL-1 cube tick at (b, mu, M) = (0.3, 0.4, 0.5). The one-body operators commuting with both half-ticks span 16 dimensions at K = 0: copy sign and turn labels are exact at rest. At three random K they span only the identity. No cell-local mirror, copy or turn number exists for moving states. The labels that pick out "the mirror" (the copy the three-fold turn rotates by e^(4 pi i/3), or the copy sign) are rest labels, so the tick is a light-mirror bilinear at nonzero momentum. In the supplied model the tick acts on the cell index alike for every species, so it supplies the bilinear for all six species and A5's full-mixing case applies; a tick that mixed only some species would fall under A6.
 2. Theorem (Nielsen-Ninomiya in a sector; 1D witness checked). Suppose an exact one-body mirror number existed. The light sector would then be a local lattice theory by itself, with exact charges, so it would be vector-like. The register also records that the mirror's zone-corner partners are gapped by the chiral generator only through light-mirror mixing. A separately conserved mirror number and a chiral light family therefore exclude each other in the present content.
 
 C. Quantum numbers of the gapped spectrum.
@@ -47,7 +48,7 @@ C. Quantum numbers of the gapped spectrum.
 
 D. Which mirror state is lightest (atomic limit; chains cited from #9910).
 
-1. The chains reproduce E0 = -2 sqrt(11088 + 48 sqrt 21081) g. The levels above it are:
+1. The chains reproduce E0 = -2 sqrt(11088 + 48 sqrt 21081) g. The chain coefficients are cited from PR #9910, whose note was not found on `main` or this branch, and are not rederived here; D1 checks only that they give the stated E0 and gaps. The levels above it are:
    - the 10 (spin 0, X = +-2) at Delta_b = 19.07 g;
    - 16 + 16bar (spin 1/2) at Delta_f = 33.58 g;
    - the 54 at 42.33 g.
@@ -70,7 +71,7 @@ Supplied inputs: the unit map (1 rad/tick = 2.1e18 GeV); the Kolb-Turner freeze-
 ## Verdict
 
 SMG does not change the copy-sign verdict. In isolation it does supply one exact, anomaly-free mirror number, U(1)_X, which contains the Z4 of the quartic. But:
-- (i) the tick shares X with light B-L, because the mirror label is a rest label (B1), so every mirror state decays at the cell rate;
+- (i) the tick shares X with light B-L, because the mirror label is a rest label (B1) and the tick mixes all six species alike (A5; partial mixing would leave mirror-only groups, A6), so every mirror state decays at the cell rate;
 - (ii) keeping a separate mirror number would make the light sector vector-like (B2) and undo the doubler gapping, so it conflicts with the chirality route that the SMG mirror exists for;
 - (iii) even with a supplied mirror number, the lightest stable mirror states are the SM-charged 10, not the neutral nu'^c.
 
@@ -96,11 +97,13 @@ Smuggling check.
 
 ## Boundary
 
-Exact: the representation theory, the lattice and Smith form of the species phases, the anomalies, and Wigner-Eckart.
+Exact: the representation theory, the lattice and Smith form of the species phases (full and partial mixing), the anomalies, and Wigner-Eckart.
 
 Finite: the tick commutant at (0.3, 0.4, 0.5) and three K, and the atomic-limit ordering.
 
-Cited: the so(12) chains and the copy vertex.
+Cited: the so(12) chains (PR #9910) and the copy vertex (the copy-sign note). Sources named only by their campaign names here (smg-verify, dark-matter-candidate, mirror-condensate-ew, gk-nogo-check, toy-qmc, qmc-face-gapped) are recorded only in the consolidation's map ([VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md](VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md)); no file of these names was found on `main` or this branch.
+
+Supplied: the tick acting on the cell index alike for every species (so it mixes all six).
 
 Not computed:
 - the lattice SMG phase and its band minima (the 10's further softening is cited from the toy QMC);
@@ -117,4 +120,4 @@ Literature: Spin(10) branching rules and the GUT X charge are standard. The free
 python3 scripts/the_gapped_mirror_keeps_only_a_number_shared_with_light_matter_and_its_lightest_state_is_charged_so_it_gives_no_dark_matter_2026_10_22.py
 ```
 
-Needs numpy, scipy and sympy. It is self-contained and declares `AUDIT_TIMEOUT_SEC = 120`. Through runner_cache.execute_runner from an origin/main worktree it ran in about 1.4 s (about 120 MB resident) and printed about 5.8 kB, ending with `TOTAL: PASS=14 FAIL=0`. Its random draws are seeded.
+Needs numpy, scipy and sympy. It is self-contained and declares `AUDIT_TIMEOUT_SEC = 120`. Through runner_cache.execute_runner from an origin/main worktree it ran in about 1.4 s (about 120 MB resident) and printed about 5.8 kB, ending with `TOTAL: PASS=14 FAIL=0` at the held head; the repaired runner ends with `TOTAL: PASS=15 FAIL=0`. Its random draws are seeded. Since 2026-11-14 it exits nonzero when a check fails and adds A6b (partial mixing over all 63 subsets).

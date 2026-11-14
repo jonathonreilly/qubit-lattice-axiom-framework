@@ -14,12 +14,18 @@ slow scalar clock, with V(phi) and the stiffness computed, not chosen.
   E  reheating into misfolds
 Supplied numbers are named in the output. Measured numbers enter only C/D/E.
 """
+import sys
 import time
 import itertools
+import warnings
 import numpy as np
 import sympy as sp
+import mpmath as mp
 from scipy.integrate import quad
 from scipy.interpolate import CubicSpline
+
+IW = []   # every warning raised by the run is recorded here and reported once (2026-11-14), not printed inline
+warnings.showwarning = lambda msg, cat, *a, **k: IW.append((cat.__name__, str(msg).split('.')[0][:60]))
 
 AUDIT_TIMEOUT_SEC = 120
 T0 = time.time()
@@ -182,7 +188,9 @@ def qint(fn, dl):      # integral over [0, pi] with geometric breakpoints at the
 
 def path(dl):          # exact infinite-chain correlators of the dimerised sea, t = 1 +- delta
     f = lambda q: np.sqrt(dl * dl + (1 - dl * dl) * np.sin(q / 2) ** 2)
-    dsum = -qint(lambda q: np.sin(q / 2) ** 2 / f(q) - np.sin(q / 2), dl) / np.pi
+    # sin^2/f - sin = -delta^2 cos^2 sin/(f (sin + f)) for these half-angles: the cancellation-free form (2026-11-14; the
+    # subtracted form lost ~3e-3 of W at delta = 1e-9 to roundoff, the source of the quadrature warnings in the earlier cache)
+    dsum = -qint(lambda q: -dl * dl * np.cos(q / 2) ** 2 * np.sin(q / 2) / (f(q) * (np.sin(q / 2) + f(q))), dl) / np.pi
     ddif = -dl * qint(lambda q: np.cos(q / 2) ** 2 / f(q), dl) / np.pi
     g_s = -1 / np.pi + dsum / 2 + ddif / 2
     g_w = -1 / np.pi + dsum / 2 - ddif / 2
@@ -229,6 +237,31 @@ check(abs(G[200, 201] - gs3) < 1e-9 and abs(G[201, 202] - gw3) < 1e-9 and ok_w a
       "z = 1/(24 pi delta^2); Wick reduction checked against a 10-site Slater state, correlators against a 400-site chain",
       f"V0 {V0:.5f}; V(0.1) {V0-path(0.1)[2]:.5f}; z delta^2 at 1e-9: {zv[0]*grid[0]**2:.6f} (1/24pi {1/(24*np.pi):.6f})")
 
+# C1b (added 2026-11-14): convergence of the dimer-path quadratures against an independent implementation (mpmath tanh-sinh,
+# 30 digits, same breakpoints) at seven delta, plus a control showing the comparison catches the old subtracted integrand.
+mp.mp.dps = 30
+def path_mp(dl):
+    d_ = mp.mpf(dl); f_ = lambda q: mp.sqrt(d_ * d_ + (1 - d_ * d_) * mp.sin(q / 2) ** 2)
+    pts = [mp.mpf(0)] + [d_ * mp.mpf(10) ** j for j in range(12) if d_ * mp.mpf(10) ** j < mp.pi] + [mp.pi]
+    ds_ = -mp.quad(lambda q: -d_ * d_ * mp.cos(q / 2) ** 2 * mp.sin(q / 2) / (f_(q) * (mp.sin(q / 2) + f_(q))), pts) / mp.pi
+    dd_ = -d_ * mp.quad(lambda q: mp.cos(q / 2) ** 2 / f_(q), pts) / mp.pi
+    W_ = -(mp.mpf(2) / 3) * ds_ + (mp.mpf(2) / 3) * dd_ ** 2
+    return float(W_), float(mp.quad(lambda q: mp.sin(q) ** 2 / (2 * f_(q)) ** 5, pts) / (2 * mp.pi))
+def W_subtracted(dl):      # the pre-2026-11-14 form, for the control only
+    f = lambda q: np.sqrt(dl * dl + (1 - dl * dl) * np.sin(q / 2) ** 2)
+    ds_ = -qint(lambda q: np.sin(q / 2) ** 2 / f(q) - np.sin(q / 2), dl) / np.pi; dd_ = -dl * qint(lambda q: np.cos(q / 2) ** 2 / f(q), dl) / np.pi
+    return -(2 / 3) * ds_ + (2 / 3) * dd_ ** 2
+nIW = len(IW)
+cmp_ = []
+for dl in (1e-9, 1e-6, 1e-3, 0.05, 0.3, 0.9, 1 - 1e-6):
+    a_, b_ = path(dl)[2:], path_mp(dl); cmp_.append((abs(a_[0] / b_[0] - 1), abs(a_[1] / b_[1] - 1)))
+nIW_cmp = len(IW) - nIW
+ctl = abs(W_subtracted(1e-9) / path_mp(1e-9)[0] - 1); nIW_ctl = len(IW) - nIW - nIW_cmp
+check(max(c[0] for c in cmp_) < 1e-7 and max(c[1] for c in cmp_) < 1e-12 and nIW == 0 and nIW_cmp == 0 and ctl > 1e-4,
+      "C1b [D]", "quadrature convergence: the dimer-path V and z used for C1-C2 agree with an independent 30-digit mpmath quadrature at "
+      "delta = 1e-9 .. 1 - 1e-6, with no integration warning over the 300-point grid; control: the earlier subtracted integrand is off "
+      "by > 1e-4 at delta = 1e-9 and raises the warnings the earlier cache showed",
+      f"max rel diff W {max(c[0] for c in cmp_):.1e}, z {max(c[1] for c in cmp_):.1e}; warnings on the grid {nIW}; control rel err {ctl:.1e} with {nIW_ctl} warnings")
 u = np.log(grid)
 sW, sz = CubicSpline(u, np.log(Wv)), CubicSpline(u, np.log(zv))
 
@@ -340,5 +373,7 @@ check(0 < nmis < 1,
 
 print("supplied: star rule; dimer path (one-loop mean field); J a = sqrt3; M_P a = 1 at the flat rung (unit map); fold "
       "rung; gamma = 1; N* = 55; Dirac ball cutoff; fold gap m_f = 1; semiclassical FRW with Hubble friction")
+print(f"warnings raised in this run: {len(IW)} (all from the C1b control's subtracted integrand: {nIW + nIW_cmp == 0 and len(IW) == nIW_ctl}); kinds: {sorted(set(c for c, _ in IW))}")
 print(f"elapsed {time.time()-T0:.1f}s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+sys.exit(0 if NF == 0 else 1)

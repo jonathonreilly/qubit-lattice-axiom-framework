@@ -1,14 +1,14 @@
 ---
 claim_id: label_copies_carry_linked_families_and_only_a_supplied_label_parity_or_magnetic_charge_stabilises_a_massive_relic_bounded_theorem_note_2026-10-22
 claim_type: bounded_theorem
-claim_scope: "For the update law's parallel-carriage circuit at zoom b, whose b^3 label copies of each block fermion are rotated by an exact U(b^3): gauge generators act as T x 1 and commute with all of U(b^3), so every label copy carries one whole linked family (checked at b = 2); on one chiral family the only link-free Weyl state is nu^c and the only gauge-invariant bilinear is the Majorana nu^c nu^c (hand-entered charge table), so a chiral label copy takes no label mass and heavy labels are vector-like; any quadratic label term keeps one exact U(1) per label-mass eigenspace (commutator 2e-15), which the links make a long-range force on matter; terms even in each label break label number but keep label parity (-1)^N_k, and one mixing bilinear breaks it (Fock toy, 2 labels x 3 modes), so label parity is a supplied choice. For the links: the spin-3/2 register's charge conjugation maps E to -E and U to U^dag (checked), the extra mode is stated C-odd with no selection rule against three-photon decay; the register raiser conserves each bond's rishon number (other link-spin sectors are superselected); on compact cubic links every cube's magnetic charge is an integer, the total is zero and 312 continuous-evolution events changed charges in +- pairs (monopole number locally conserved); on the six-edge block triangulation 48 registers per 8 block sites give two light roots at |K| = 0.05 and every other real root at least 1.49 per block tick, and the one-register hop conserves no edge number or parity. Estimates of label relics and monopoles against measurement use supplied inputs. Supplied model, finite diagnostic: label terms and label parity, effective couplings, the gravitational production yield, splittings, the cell unit, a cubic link lattice for the monopole count, the sync slab; many decay times and the conserved-number census are stated, not computed."
+claim_scope: "For the update law's parallel-carriage circuit at zoom b, whose b^3 label copies of each block fermion are rotated by an exact U(b^3): gauge generators act as T x 1 and commute with all of U(b^3), so every label copy carries one whole linked family (checked at b = 2); on one chiral family the only link-free Weyl state is nu^c and the only gauge-invariant bilinear is the Majorana nu^c nu^c (hand-entered charge table), so a chiral label copy takes no label mass and heavy labels are vector-like; any quadratic label term keeps one exact U(1) per label-mass eigenspace (commutator 2e-15), which the links make a long-range force on matter; terms even in each label break label number but keep label parity (-1)^N_k, and one mixing bilinear breaks it (Fock toy, 2 labels x 3 modes), so label parity is a supplied choice. For the links: the spin-3/2 register's charge conjugation maps E to -E and U to U^dag (checked), the extra mode is stated C-odd with no selection rule against three-photon decay; the register raiser conserves each bond's rishon number (other link-spin sectors are superselected); on compact cubic links every cube's magnetic charge is an integer, the total is zero and 312 continuous-evolution events changed charges in +- pairs (monopole number locally conserved); on the six-edge block triangulation 48 registers per 8 block sites give two light roots at |K| = 0.05 and every other real root at least 1.49 per block tick, and the one-register hop conserves no edge number or parity. Estimates of label relics and monopoles against measurement use supplied inputs. Supplied model, finite diagnostic: label terms and label parity, effective couplings, the gravitational production yield, splittings, the cell unit, a cubic link lattice for the monopole count, the sync slab; many decay times and the conserved-number census are stated, not computed, and the census is not shown to be complete."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
 runner: scripts/label_copies_carry_linked_families_and_only_a_supplied_label_parity_or_magnetic_charge_stabilises_a_massive_relic_2026_10_22.py
 ---
 
-# Label copies carry linked families, and only a supplied label parity or magnetic charge stabilises a massive relic
+# Label copies carry linked families, and of the conserved numbers listed here only a supplied label parity or magnetic charge would stabilise a massive relic
 
 Claim type: bounded_theorem.
 Primary runner: `scripts/label_copies_carry_linked_families_and_only_a_supplied_label_parity_or_magnetic_charge_stabilises_a_massive_relic_2026_10_22.py`.
@@ -37,7 +37,7 @@ C. Edge registers on the six-edge block triangulation (sync slab, fixed lapse, z
 
 D. Conserved numbers as stabilisers (a census stated, not computed).
 
-10. Exact U(b^3) must be broken (LEP), and quadratic terms leave linked U(1)s. Label parity is not in the fine tick. The Z4 of B - L makes the light neutrino the lightest carrier, which is hot and below 1% of dark matter (sum m_nu below 0.07 eV). Rishon number is superselected. Only zero static charge occurs in the Gauss sectors. Magnetic charge is exact but not dark. Edge value, copy sign and turn charges are not conserved; crystal momentum and pattern are not particle charges. The dark constant has zero mean in every cube under the response law, so it has no carrier. Only label parity (supplied) and magnetic charge (not dark) stabilise a massive relic.
+10. Exact U(b^3) must be broken (LEP), and quadratic terms leave linked U(1)s. Label parity is not in the fine tick. The Z4 of B - L makes the light neutrino the lightest carrier, which is hot and below 1% of dark matter (sum m_nu below 0.07 eV). Rishon number is superselected. Only zero static charge occurs in the Gauss sectors. Magnetic charge is exact but not dark. Edge value, copy sign and turn charges are not conserved; crystal momentum and pattern are not particle charges. The dark constant has zero mean in every cube under the response law, so it has no carrier. Of the numbers in this list, only label parity (supplied) and magnetic charge (not dark) stabilise a massive relic. The list is a census stated from the laws as the note reads them, not computed, and not shown to be complete; a number missing from it is not excluded.
 
 ## Derivation
 
@@ -70,7 +70,7 @@ Estimates with supplied inputs (M_P = 1.221e19 GeV, reduced 2.435e18 GeV, the ce
 
 ## Boundary
 
-Not claimed: a derivation of label parity from the register (it is supplied); the dark-matter abundance; the extra link mode's lifetime, the mixing lifetime and the census of section D (stated, not computed); a closed band minimum of the edge registers near the zone edge (not excluded); monopole production; the hidden-sector commutant result (cited). The monopole count uses a cubic compact-link lattice, not the register's bcc link geometry.
+Not claimed: a derivation of label parity from the register (it is supplied); that the census of section D is complete; the dark-matter abundance; the extra link mode's lifetime, the mixing lifetime and the census of section D (stated, not computed); a closed band minimum of the edge registers near the zone edge (not excluded); monopole production; the hidden-sector commutant result (cited). The monopole count uses a cubic compact-link lattice, not the register's bcc link geometry.
 
 ## Supplied vs forced
 
@@ -80,7 +80,7 @@ Supplied: the label terms and label parity, alpha_eff, the production yield, the
 
 - [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md): Z^3 sites, one qubit per site, nearest-neighbour admissibility, records. They fix none of the supplied inputs above.
 - [Candidate-law register](CANDIDATE_LAWS.md): the update law's parallel-carriage circuit and label copies, the site-bond link registers and their raiser, the edge registers on block edges, the response law's zero-mean dark constant. Zero premise weight; results using it are conditional on it.
-- Companion computation: EDGE_REGISTER_SET_CENSUS_CUBE_EDGES_ALONE_GIVE_NO_HINGE_SUM_AND_SIX_EDGES_PER_SITE_GIVE_TWO_TENSOR_POLARISATIONS_ON_THE_EDGE_CONE_BOUNDED_THEOREM_NOTE_2026-10-22 (the slab construction is inlined from its runner).
+- Companion computation: EDGE_REGISTER_SET_CENSUS_CUBE_EDGES_ALONE_GIVE_NO_HINGE_SUM_AND_SIX_EDGES_PER_SITE_GIVE_TWO_TENSOR_POLARISATIONS_ON_THE_EDGE_CONE_BOUNDED_THEOREM_NOTE_2026-10-22 (the slab construction is inlined from its runner). Neither that note nor the hidden-sector computation was found on `main` or this branch; they are recorded only in the consolidation's map ([VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md](VACUUM_COSMOLOGY_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md)).
 
 ## How to run
 
@@ -88,4 +88,4 @@ Supplied: the label terms and label parity, alpha_eff, the production yield, the
 python3 scripts/label_copies_carry_linked_families_and_only_a_supplied_label_parity_or_magnetic_charge_stabilises_a_massive_relic_2026_10_22.py
 ```
 
-Needs numpy and scipy. It is self-contained, declares `AUDIT_TIMEOUT_SEC = 120`, runs in about 1 s with about 70 MB resident, prints about 5.9 kB and ends with `TOTAL: PASS=14 FAIL=0`. Its random draws are seeded; two repeated runs gave identical output.
+Needs numpy and scipy. It is self-contained, declares `AUDIT_TIMEOUT_SEC = 120`, runs in about 1 s with about 70 MB resident, prints about 5.9 kB and ends with `TOTAL: PASS=14 FAIL=0`. Since 2026-11-14 it exits nonzero when a check fails. Its random draws are seeded; two repeated runs gave identical output.

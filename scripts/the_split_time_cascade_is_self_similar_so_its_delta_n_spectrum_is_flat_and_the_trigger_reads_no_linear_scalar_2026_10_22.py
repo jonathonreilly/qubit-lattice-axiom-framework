@@ -12,7 +12,7 @@ Sections
 Supplied: Poisson stepping of each register (a stochastic model, NOT a law) used only in B to give
 the trigger a timing spread; block-mean register model (one mean per block, m registers averaged).
 """
-import time, math
+import sys, time, math
 import numpy as np
 import sympy as sp
 
@@ -106,9 +106,35 @@ errs = []
 for lam_t in (1.0, 0.97596, 0.8):
     Dk = lambda k: sum(lam_t ** l * w1(k * 2.0 ** -l) for l in range(-60, 400))
     errs.append(max(abs(Dk(2 * k) / Dk(k) - lam_t) for k in kgrid))
-check("B1 [T] (rederives cosmology E) a cascade whose level-l delta-N has a level-independent shape and variance"
-      " sig^2 lam^l has Delta^2(2k) = lam Delta^2(k): n_s - 1 = log2(lam) exactly; self-similar levels give n_s = 1",
+check("B1 [T] (rederives cosmology E) an infinite-level cascade whose level-l delta-N has a level-independent shape, variance"
+      " sig^2 lam^l, no cross-level covariance and a convergent level sum has Delta^2(2k) = lam Delta^2(k): the OCTAVE-AVERAGED index"
+      " [ln Delta^2(2k) - ln Delta^2(k)]/ln 2 is log2(lam) exactly; self-similar levels give octave-averaged n_s = 1",
       max(errs) < 1e-9, f"max |ratio - lam| = {max(errs):.1e} for lam = 1, 0.97596, 0.8")
+# B1b, B1c (added 2026-11-14).  Delta^2(2k) = lam Delta^2(k) allows Delta^2 = k^alpha f(log2 k), alpha = log2 lam, f of period 1,
+# so it fixes the octave average of the local index d ln Delta^2/d ln k but not the local index.  Witness: f = 1 + 0.1 cos(2 pi x).
+xg = np.linspace(0.0, 1.0, 4001); kg = 2.0 ** xg
+fw = lambda xx: 1 + 0.1 * np.cos(2 * np.pi * xx)
+wit_id = np.abs(fw(xg + 1) / fw(xg) - 1).max(); wit_loc = np.gradient(np.log(fw(xg)), xg * LN2)
+D_cas = np.array([sum(w1(k * 2.0 ** -l) for l in range(-60, 400)) for k in kg]); loc_cas = np.gradient(np.log(D_cas), xg * LN2)
+avg_cas = (np.log(D_cas[-1]) - np.log(D_cas[0])) / LN2
+check("B1b [T] the doubling identity fixes only the octave average: the witness Delta^2 = 1 + 0.1 cos(2 pi log2 k) obeys Delta^2(2k) = Delta^2(k)"
+      " exactly but its local index swings by about +-0.9; the blocky 1D cascade of B1 at lam = 1 has octave-averaged index 0 but an O(1)"
+      " log-periodic local index (the block shape's zeros at even u line up across levels at k = 2^n). Control: the earlier 'exactly flat"
+      " local spectrum' is rejected by the witness and by the cascade itself",
+      wit_id < 1e-12 and np.ptp(wit_loc) > 1.0 and abs(avg_cas) < 1e-9 and np.ptp(loc_cas) > 1.0,
+      f"witness: identity error {wit_id:.1e}, local index [{wit_loc.min():+.3f}, {wit_loc.max():+.3f}]; cascade lam = 1: octave average {avg_cas:+.1e},"
+      f" local index [{loc_cas.min():+.2f}, {loc_cas.max():+.2f}], Delta^2 max/min over the octave {D_cas.max() / D_cas.min():.2f}")
+bd = []
+for lam_t in (1.0, 0.8):
+    for Gc in (9,):
+        DG = lambda k: sum(lam_t ** l * w1(k * 2.0 ** -l) for l in range(0, Gc + 1))
+        for k in (0.5, 1.0, 3.0):
+            lhs = DG(2 * k) - lam_t * DG(k); rhs = w1(2 * k) - lam_t ** (Gc + 1) * w1(k * 2.0 ** -Gc)
+            bd.append((abs(lhs - rhs), abs(rhs) / DG(2 * k)))
+check("B1c [T] a finite cascade (levels 0..G) is not exactly self-similar: Delta^2_G(2k) - lam Delta^2_G(k) = w(2k) - lam^(G+1) w(2^-G k),"
+      " boundary terms from the top and bottom levels that are O(1) near the box scale",
+      max(b_[0] for b_ in bd) < 1e-12 and max(b_[1] for b_ in bd) > 0.1,
+      f"identity error {max(b_[0] for b_ in bd):.1e}; boundary/Delta^2 up to {max(b_[1] for b_ in bd):.2f} at G = 9, k = 0.5..3")
 
 
 def lam_hat(ts, G, lo):
@@ -219,9 +245,9 @@ check("B5 [T+D] the e-fold wait Gamma(ms) ln2/(ms) holds only register numbers (
 
 # ---------------------------------------------------------------- C
 print("== C. the laws' own split-time channel")
-check("C1 [T, with inhomog-volume B2] at linear order the trigger reads tr h/6 (A2) and the read lapse with a"
-      " stationary shift has zeta = 0 at every k != 0: the laws give no linear split-time fluctuation", okA2,
-      "delta T(k != 0) = 0 at O(h)")
+print("   C1 CONDITIONAL (not counted; it re-used A2's result before 2026-11-14): at linear order the trigger reads tr h/6 (A2, checked"
+      " above); GIVEN the cited read-lapse result with a stationary shift (zeta = 0 at every k != 0, PR #9933, not rerun or checked"
+      " here) the laws give no linear split-time fluctuation: delta T(k != 0) = 0 at O(h)")
 # C2 square of a scale-invariant Gaussian field (scalar stand-in for one polarisation), 3D 64^3
 N = 64
 kk = np.fft.fftfreq(N) * N
@@ -256,24 +282,23 @@ lna_star = 5.5 * LN2
 rA = rho_at_lna(lna_star, 5)
 rB = rho_at_lna(lna_star, 5)  # B splits late in t, but at the same local length, so the same history in a
 rBt = rho_at_lna(lna_star - dT, 5)  # B on the uniform-t slice: its length lags by H dT
-check("D1 [T] every rule component is a function of local edge length (Lambda; sea carried vacuum to vacuum;"
-      " injection at the fixed-length trigger): rho = F(a) in every patch, so the uniform-length slice IS the"
-      " uniform-density slice and zeta = delta N(flat -> uniform rho) = 0 for any split-time spread",
-      abs(rA - rB) < 1e-15 and abs(rBt - rA) > 1e-4,
-      f"rho at equal a: {rA:.6f} vs {rB:.6f}; at equal t (lag {dT}): {rBt:.6f}")
+print("   D1 IDENTITY (not counted; equal by construction, a counted check before 2026-11-14): if every rule component is a function of local"
+      " edge length (Lambda; sea carried vacuum to vacuum; injection at the fixed-length trigger), rho = F(a) in every patch, so the"
+      " uniform-length slice IS the uniform-density slice and zeta = delta N(flat -> uniform rho) = 0 for any split-time spread"
+      f" | rho at equal a: {rA:.6f} vs {rB:.6f}; at equal t (lag {dT}): {rBt:.6f}")
 # clock toy: a quantity Q that counts ticks (proper time) differs at equal a by dT; an exit at Q* gives zeta = H dT
 Hval = 1.0
 zeta = Hval * dT
-check("D2 [T] only a tick-integrating quantity (e.g. the record count, which no law reads) distinguishes the"
-      " patches: an exit law reading it would give zeta = H delta T per level, i.e. the B-cascade spectrum",
-      abs(zeta - dT) < 1e-15, f"zeta = H dT = {zeta:.3f} (conditional on a supplied tick-read exit)")
+print("   D2 IDENTITY (not counted; a tautological check before 2026-11-14): a tick-integrating quantity (e.g. the record count, which no"
+      " law reads) separates the patches; an exit law reading it would give zeta = H delta T per level, i.e. the B-cascade spectrum"
+      f" | zeta = H dT = {zeta:.3f} (conditional on a supplied tick-read exit)")
 
 # ---------------------------------------------------------------- E
 print("== E. estimates against measurement")
 ns_pl, sg_pl, As = 0.9649, 0.0042, 2.1e-9
 lam_pl = 2 ** (ns_pl - 1)
 need_ms = LN2 ** 2 / (As * LN2)
-print(f"   split-time cascade with rule constants: n_s = 1 (B1-B5; coupled log2 lam = {nc:+.4f}) -> {(1-ns_pl)/sg_pl:.1f} sigma (Planck);"
+print(f"   split-time cascade with rule constants: octave-averaged n_s = 1 (B1-B5; coupled log2 lam = {nc:+.4f}) -> {(1-ns_pl)/sg_pl:.1f} sigma (Planck);"
       f" needs lambda = 2^(n_s-1) = {lam_pl:.5f}")
 print(f"   in the Poisson model lambda = (ms)_l/(ms)_(l+1): m s must grow {100*(1/lam_pl-1):.2f}%/split;"
       f" A_s needs m s = ln2/A_s = {need_ms:.2e} vs rule m s <= 18*113 = 2034")
@@ -281,10 +306,11 @@ Pt_max = 0.036 * As
 est2 = (9 / 72) ** 2 * float(np.mean(rr)) * (Pt_max / 2) ** 2 * 10
 print(f"   laws' own channel (C): Delta_zeta^2 ~ (9/72)^2 x 8.6 x (P_t/2)^2 x 10 (log): <= {est2:.1e} at r < 0.036;"
       f" CL-3's only de Sitter phase is today's (P_t ~ 5e-122); tilt blue")
-check("E1 [E] every split-time channel misses: n_s = 1 with rule constants; amplitude 0 at linear order and"
+check("E1 [E] each split-time channel computed here misses: octave-averaged n_s = 1 with rule constants; amplitude 0 at linear order (given the cited read lapse) and"
       " <= 1e-20 at second order (blue), against 0.9649(42) and 2.1e-9", est2 < 1e-19 and abs(nc) < 0.03)
 
 print("supplied: Poisson register stepping (B only), block-mean registers, 2D toy geometry, neighbour 'full' ="
       " mean >= 4s; scalar stand-in for tensors in C2; injection fraction in D1 (any value).")
 print(f"runtime {time.time()-T0:.1f} s")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+sys.exit(0 if FAIL == 0 else 1)

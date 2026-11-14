@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py
-runner_sha256: 09778ed280c68067d6ba9f478d9331824a2b997de6d1397fb2d950ccc3fc4a96
-input_fingerprint_sha256: 730e3807f91b99b79681f4b8a7fa5b541f3ac7ac317156da8547fb1a7b1f868d
+runner_sha256: c102fa617b12427a523130784da38e98455c14eeaabaf59a7ada62e23d882a2e
+input_fingerprint_sha256: 095df5c9d635afb8575eced25a3b86acbfe479310db3aa94a8f961d0006ae38d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 5.67
+elapsed_sec: 5.00
 status: ok
 ----- stdout -----
 == A. the funnel's ends
@@ -15,23 +15,8 @@ status: ok
 [PASS] B1 [T] adiabatic stiffness of a gap-opening fold order parameter m on a sea with gapless-set codimension d: Z(m) = int rho(e) e^2/(4(e^2+m^2)^(5/2)) de, rho ~ e^(d-1), so Z = c_d m^(d-3): d=1 (a surface of gapless modes) a pole m^-2, d=3 (Dirac points) only log(1/m); the unfolded point is at infinite field distance iff d = 1  c_1 = 1/3, c_2 = 2/3, d=3: log + -4/3 + log(2)
 [PASS] B2 [D] lattice check of the pole order, ratio [Z(0.1)-Z(0.2)]/[Z(0.2)-Z(0.4)] (4 for m^-2, 1 for log): 1D dimer chain and the 3D half-filled nearest-neighbour cubic sea (nested Fermi surface, fold = staggered gap) have the pole; a 3D lattice Dirac sea (point nodes, the update's light-band type) does not  1D 4.04, 3D nested 4.00, 3D Dirac 0.91
 == C. 1D star-rule toy (pole present): V and z computed on the dimer path
-/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/land-fold-inflaton/scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py:180: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
-  the requested tolerance from being achieved.  The error may be 
-  underestimated.
-  return sum(quad(fn, e[i], e[i + 1], limit=200, epsabs=0, epsrel=1e-12)[0] for i in range(len(e) - 1))
-/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/land-fold-inflaton/scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py:180: IntegrationWarning: The maximum number of subdivisions (200) has been achieved.
-  If increasing the limit yields no improvement it is advised to analyze 
-  the integrand in order to determine the difficulties.  If the position of a 
-  local difficulty can be determined (singularity, discontinuity) one will 
-  probably gain from splitting up the interval and calling the integrator 
-  on the subranges.  Perhaps a special-purpose integrator should be used.
-  return sum(quad(fn, e[i], e[i + 1], limit=200, epsabs=0, epsrel=1e-12)[0] for i in range(len(e) - 1))
-/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/land-fold-inflaton/scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py:180: IntegrationWarning: The integral is probably divergent, or slowly convergent.
-  return sum(quad(fn, e[i], e[i + 1], limit=200, epsabs=0, epsrel=1e-12)[0] for i in range(len(e) - 1))
-/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/land-fold-inflaton/scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py:180: IntegrationWarning: Extremely bad integrand behavior occurs at some points of the
-  integration interval.
-  return sum(quad(fn, e[i], e[i + 1], limit=200, epsabs=0, epsrel=1e-12)[0] for i in range(len(e) - 1))
 [PASS] C1 [T+D] on the dimer path (hop 1 +- delta; delta = 0 the sea, delta = 1 the fold) the star energy is a monotone funnel from V0 to 0, V0 - V ~ delta^2 ln^2(1/delta), and the one-loop stiffness has the pole z = 1/(24 pi delta^2); Wick reduction checked against a 10-site Slater state, correlators against a 400-site chain  V0 0.07559; V(0.1) 0.06049; z delta^2 at 1e-9: 0.013263 (1/24pi 0.013263)
+[PASS] C1b [D] quadrature convergence: the dimer-path V and z used for C1-C2 agree with an independent 30-digit mpmath quadrature at delta = 1e-9 .. 1 - 1e-6, with no integration warning over the 300-point grid; control: the earlier subtracted integrand is off by > 1e-4 at delta = 1e-9 and raises the warnings the earlier cache showed  max rel diff W 4.2e-09, z 2.2e-16; warnings on the grid 0; control rel err 2.8e-03 with 3 warnings
 [PASS] C2 [D] slow roll on the computed V_star and z (canonical chi = zeta int sqrt(z) d delta, zeta = (J a)^-1/2 /(M_P a_r), M_P a = 1 at the flat rung): the fold is critically slowed near the sea, V(chi) is an exponential plateau, n_s ~ 1 - 2/N independent of the coupling and the rung, r ~ 2 zeta^2 z0/N^2; the plateau ends (eps = 1) before the fold completes (graceful exit)  rung 0: n_s 0.9631 r 7.0e-06 delta* 5e-04 end 0.05; rung 2: n_s 0.9633 r 4.1e-07 delta* 1e-04 end 0.02; rung 4: n_s 0.9634 r 2.5e-08 delta* 2e-05 end 0.01
 [PASS] C3 [T] per-split factor of this clock: lam = 2^(n_s-1) = 2^(-2/N), not constant (running -2/N^2); Planck's range is met at N* = 55, ACT's 0.974 needs N* = 77 (same as every exponential plateau, act-tilt)  lam(55) 0.9751; running -6.6e-04; N for ACT 77
 [PASS] C4 [T+E] amplitude: A_s = gamma V0 N^2 2^(-2r)/(pi^2 z0) fixes the fold rung, ~20 rungs above the cell for fold coupling gamma = 1 (gamma supplied; rung = 19.8 + log2(gamma)/2); then H/M_P and r are tiny  2^-2r 1.20e-12, rung 19.8, H/M_P 2.5e-13, r 6e-18
@@ -42,8 +27,9 @@ status: ok
 == E. reheating: misfolds
 [PASS] E1 [T+E] the fold rule is >= 0 and vanishes only on folds, so all plateau energy that leaves the coherent mode sits in misfolds (domain walls: free sites, matter in the neighbourhood reading); full conversion of V0 gives a dense misfold gas (walls per site <= 2 V0/gap_pair), reheating at the fold scale, then diluted by splits as matter  V0 0.0756; pair gap (N=12) 0.426; walls/site <= 0.36
 supplied: star rule; dimer path (one-loop mean field); J a = sqrt3; M_P a = 1 at the flat rung (unit map); fold rung; gamma = 1; N* = 55; Dirac ball cutoff; fold gap m_f = 1; semiclassical FRW with Hubble friction
-elapsed 4.3s
-TOTAL: PASS=13 FAIL=0
+warnings raised in this run: 3 (all from the C1b control's subtracted integrand: True); kinds: ['IntegrationWarning']
+elapsed 3.6s
+TOTAL: PASS=14 FAIL=0
 
 ----- stderr -----
 

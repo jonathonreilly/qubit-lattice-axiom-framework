@@ -10,6 +10,7 @@ AUDIT_INPUT_PATHS = ('docs/AN_UNSPLIT_BLOCK_CANNOT_INFLATE_SO_THE_FOLD_PLATEAU_N
   E  exit, reheating, vacuum standard; F  split-trigger consistency
 Supplied numbers are named in the output. Measured numbers enter only the estimates.
 """
+import sys
 import time
 import itertools
 import numpy as np
@@ -290,3 +291,4 @@ print("supplied: g (0.5, 1), fold rung (FITTED to A_s), J a = sqrt3, M_P a = 1, 
       "g_* = 106.75, mode speed 1, dephasing sigma (scanned)")
 print(f"elapsed {time.time()-T0:.1f}s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+sys.exit(0 if NF == 0 else 1)

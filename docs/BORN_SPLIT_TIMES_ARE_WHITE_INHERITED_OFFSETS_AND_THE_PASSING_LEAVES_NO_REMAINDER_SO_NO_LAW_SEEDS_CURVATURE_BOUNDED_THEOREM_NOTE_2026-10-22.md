@@ -1,14 +1,14 @@
 ---
 claim_id: born_split_times_are_white_inherited_offsets_and_the_passing_leaves_no_remainder_so_no_law_seeds_curvature_bounded_theorem_note_2026-10-22
 claim_type: bounded_theorem
-claim_scope: "For the update law's split and passing (eight children; edges along parent edges take the parent's value minus s, other registers start as in the children's vacuum; the nearest unitary carrying the update's vacuum onto the children's vacuum and each excitation onto the children's lowest excitation of the same charges, flux and momentum; the trigger on the cube's 18-edge mean at 4s with each unsplit +x, +y, +z face neighbour's shared-face edges full) and the actuality law (fewest-change transport, records never conditioning the odds): (A) the clause's remainder is zero for every mode, edge registers included, so A_s = 0 and P_t = 0 at linear order; the raw passing before the clause is no small squeezing: in a 1D free-fermion toy it leaves 0.62 excitations per parent site, fidelity e^(-1.27 per site), and a white density structure factor (1/16 at Q -> 0); a mode carried by its configuration gets |beta|^2 = 9/16. (B) The quantile transport keeps each register's Born quantile, and value-minus-s keeps it through the passing, so split-time offsets are inherited, never redrawn (1/4 of a child's trigger edges inherited: 6 on even, 3 on odd children); the block-mean offset is stationary at sigma_r/sqrt18 over 40 generations, the field is white (coarse variance ~8^-j), and as a curvature seed it gives Delta^2 ~ (k l)^3, about 1e-99 at the pivot. The coupled trigger DAMPS the spread (x0.43 on a 32^3 lattice with shared edges; always waiting for the face would amplify x2.4). Split phases spread by 0.35 e-folds would need Gaussian register odds of sd >= 4.9 s steps, more than half the (4+Delta)s window; the pair vacuum, the one-step floor and the own-hop window vacuum give 0.0002-0.065 e-folds, leaving the ln2 sawtooth (modulation 0.94-0.96). (C) Record picks seed nothing through odds; read through actual occupations they carry the vacuum's own density correlator, S(Q) -> Q^2 on a gapped staggered sea, so n_s - 1 = +4. (D) A mode-resolving passing threshold keeps the sawtooth (0.34-0.77) and its power depends on the chosen threshold; even with a supplied 0.35 dephasing and the inflation-rule's order carriage, A_s needs the FITTED rung, n_s = 0.957 (-5.6 sigma ACT+DESI) and r = 0. Supplied: Delta = 1, s = 23 and 135, the three register-odds readings, Gaussian offsets, the 1D raw-passing toy, a 10^3 staggered sea with mass 0.5, the inflation-rule's N* = 46.8 and H l_c = 2.3e-13, its mode model and dephasing requirement."
+claim_scope: "For the update law's split and passing (eight children; edges along parent edges take the parent's value minus s, other registers start as in the children's vacuum; the nearest unitary carrying the update's vacuum onto the children's vacuum and each excitation onto the children's lowest excitation of the same charges, flux and momentum; the trigger on the cube's 18-edge mean at 4s with each unsplit +x, +y, +z face neighbour's shared-face edges full) and the actuality law (fewest-change transport, records never conditioning the odds): (A) the clause's remainder is zero for every mode, edge registers included, so A_s = 0 and P_t = 0 at linear order; the raw passing before the clause is no small squeezing: in a 1D free-fermion toy it leaves 0.62 excitations per parent site, fidelity e^(-1.27 per site), and a white density structure factor (1/16 at Q -> 0); a mode carried by its configuration gets |beta|^2 = 9/16. (B) The quantile transport keeps each register's Born quantile, and value-minus-s keeps it through the passing, so split-time offsets are inherited, never redrawn (1/4 of a child's trigger edges inherited: 6 on even, 3 on odd children); the block-mean offset is stationary at sigma_r/sqrt18 over 40 generations, the field is white (coarse variance ~8^-j; low-k slope of k^3 P(k) 2.87), and as a curvature seed under a supplied linear readout it gives Delta^2 ~ (k l)^3, about 1e-99 at the pivot. The coupled trigger DAMPS the spread (x0.43 on a 32^3 lattice with shared edges; always waiting for the face would amplify x2.4). Split phases spread by 0.35 e-folds would need Gaussian register odds of sd >= 4.9 s steps, more than half the (4+Delta)s window; the pair vacuum, the one-step floor and the own-hop window vacuum give 0.0002-0.065 e-folds, leaving the ln2 sawtooth (modulation 0.94-0.96). (C) Record picks seed nothing through odds; read through actual occupations they carry the vacuum's own density correlator, S(Q) -> Q^2 on a gapped staggered sea, so Delta^2 = Q^3 S ~ Q^5 and n_s - 1 = +5 under a supplied readout in which the curvature seed is linear in the recorded density contrast with no transfer function (corrected 2026-11-14 from +4). (D) A mode-resolving passing threshold keeps the sawtooth (0.34-0.77) and its power depends on the chosen threshold; even with a supplied 0.35 dephasing and the inflation-rule's order carriage, A_s needs the FITTED rung, n_s = 0.957 (-5.6 sigma ACT+DESI) and r = 0. Supplied: Delta = 1, s = 23 and 135, the three register-odds readings, Gaussian offsets, the 1D raw-passing toy, a 10^3 staggered sea with mass 0.5, the linear readout from a seed field to a curvature index, the inflation-rule's N* = 46.8 and H l_c = 2.3e-13, its mode model and dephasing requirement. None of the three tested sources seeds A_s ~ 2e-9 with n_s 0.965-0.974; other sources are not tested."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
 runner: scripts/born_split_times_are_white_inherited_offsets_and_the_passing_leaves_no_remainder_so_no_law_seeds_curvature_2026_10_22.py
 ---
 
-# Born split times are white inherited offsets and the passing leaves no remainder, so no law seeds curvature
+# Born split times are white inherited offsets and the passing leaves no remainder, so none of the three tested sources seeds curvature
 
 Claim type: bounded_theorem. The candidate-law register has zero premise weight, and the axioms are unchanged.
 
@@ -36,7 +36,7 @@ So the nearest-unitary step is load-bearing, not a small correction. The registe
 
 **A3 [T+E].** Candidate (a) therefore gives one of two things:
 - nothing, with the clause as written: A_s = 0 and P_t = 0 at linear order;
-- without the clause, white UV heating of O(1) quanta per site per split: Delta^2 ~ (k l)^3, n_s - 1 = +3, and (k l)^3 is about 1e-99 at the pivot (k l ~ H l_c e^-N*).
+- without the clause, white UV heating of O(1) quanta per site per split: Delta^2 ~ (k l)^3, n_s - 1 = +3 under a supplied linear readout, and (k l)^3 is about 1e-99 at the pivot (k l ~ H l_c e^-N*).
 
 It never gives a small, scale-invariant squeezing.
 
@@ -71,13 +71,13 @@ It never gives a small, scale-invariant squeezing.
 - The readings give sigma_split = 0.0002-0.065 e-folds.
 - With the inflation-rule's mode model, the ln2-periodic modulation is 0.94 (R2) and 0.96 (R1), with mean power 2.6 and 6.8 times Bunch-Davies. The sawtooth stays.
 
-**B7 [T+E]. The offsets can dephase, but they never seed.** As a curvature seed the white offset field gives Delta^2 ~ (k l)^3, n_s - 1 = +3, negligible at the pivot. The Poisson cascade's n_s = 1 assumed redraws that the quantile transport does not make.
+**B7 [T+D+E]. The offsets can dephase, but they never seed.** The coupled split-time field of B5 has Delta^2 = k^3 P(k) with low-k slope 2.87 over k = 1 to 8 on the 32^3 lattice, the white value 3 (an integrated control field gives -0.15 and fails the test). As a curvature seed under a supplied linear readout with no transfer function, it gives Delta^2 ~ (k l)^3, n_s - 1 = +3, negligible at the pivot. The Poisson cascade's n_s = 1 assumed redraws that the quantile transport does not make. (Before 2026-11-14 this line was a literal-True check; it is now computed.)
 
 ## C. Born picks of new sites' first records (candidate c)
 
 **C1 [T+D].**
 - Records never condition the odds, so a response that reads odds sees no record seed (exact).
-- If a source read the recorded occupations instead, the Born picks would carry the vacuum's own density correlator. On a gapped staggered sea (10^3, mass 0.5), S(Q) -> Q^2 (local power 1.75 at the two smallest Q). So Delta^2 ~ Q^5 and n_s - 1 = +4.
+- If a source read the recorded occupations instead, the Born picks would carry the vacuum's own density correlator. On a gapped staggered sea (10^3, mass 0.5), S(Q) -> Q^2 (local power 1.75 at the two smallest lattice Q). So Delta^2 = Q^3 S ~ Q^5 and, under the convention Delta^2 ~ k^(n_s - 1), n_s - 1 = +5. Corrected 2026-11-14: the earlier +4 was off by one. Calling this a curvature index needs a supplied readout hypothesis: the curvature seed is linear in the recorded density contrast at the readout scale, with no transfer function.
 - A gapless 1D sea gives S ~ Q.
 
 ## D. Seed rules against the gate
@@ -112,11 +112,11 @@ It never gives a small, scale-invariant squeezing.
 
   Result: FAILS.
 
-No candidate seeds A_s ~ 2e-9 with n_s 0.965-0.974. The goal is not met, and nothing is adopted.
+None of the three tested candidates seeds A_s ~ 2e-9 with n_s 0.965-0.974. The goal is not met, and nothing is adopted. The gate verdicts are judgements; the runner prints them without counting them (before 2026-11-14 they were a literal-True check).
 
 ## What the measurement now demands (not claimed derived)
 
-- A horizon-correlated seed. Every Born or record source the laws contain is local and kept (white). Only the modes themselves carry correlations at the horizon scale, and the vacuum clause removes their squeezing.
+- A horizon-correlated seed. Every Born or record source tested here is local and kept (white). Only the modes themselves carry correlations at the horizon scale, and the vacuum clause removes their squeezing.
 - A route that remains open (UNTESTED): smooth expansion inside a block. If the edge stretching between splits were not a pure dilation in cell units (the tied lapse makes it one), then a mode carried by its configuration would be pumped continuously, and no dephasing would be needed. That requires a rule under which the tick is not static in cell units between splits. This bends the dilation-gauge result of inflation-rule A2.
 - A_s still needs the plateau height in Planck units from a rule for the fold rung, and n_s >= 0.965 needs N* > 57 or a non-exponential plateau.
 
@@ -128,6 +128,7 @@ Supplied:
 - the three register-odds readings and Gaussian offsets;
 - the 1D raw-passing toy and its reduced-state reading of "start half filled as in the children's vacuum";
 - the 10^3 staggered sea with mass 0.5;
+- the linear readout from a seed field (white offsets, record density) to a curvature index, with no transfer function;
 - from the inflation-rule note: N* = 46.8, H l_c = 2.3e-13, the mode model (summed cell count) and the 0.35 dephasing requirement (approximate).
 
 Forced, given those:
@@ -137,7 +138,7 @@ Forced, given those:
 - stationarity and whiteness;
 - damping by the coupled trigger;
 - the impossibility of 0.35 dephasing on the window for Gaussian odds;
-- the record correlator ~Q^2.
+- the record correlator ~Q^2, hence index +5 under the readout.
 
 Not computed:
 - the edge register's odds under the CL-3 response during stretching (the true sigma_n);
@@ -153,7 +154,8 @@ Not computed:
   - inflation-rule (#10000): D1-D3, the mode model, N*, IN-1;
   - spectral-tilt: cascade theorem, Poisson model, trigger edges;
   - record-clock-tilt: records never condition the odds; quantile register transport;
-  - the register's split, passing and junction text (CANDIDATE_LAWS_v3).
+  - the register's split, passing and junction text (CANDIDATE_LAWS_v3, not in this repository);
+  - inflation-rule is [on this branch](AN_UNSPLIT_BLOCK_CANNOT_INFLATE_SO_THE_FOLD_PLATEAU_NEEDS_SPLITS_THAT_CARRY_ITS_ORDER_AND_DEPHASED_SPLIT_PHASES_TO_SEED_PERTURBATIONS_BOUNDED_THEOREM_NOTE_2026-10-22.md), and so is spectral-tilt ([split-time cascade](THE_SPLIT_TIME_CASCADE_IS_SELF_SIMILAR_SO_ITS_DELTA_N_SPECTRUM_IS_FLAT_AND_THE_TRIGGER_READS_NO_LINEAR_SCALAR_BOUNDED_THEOREM_NOTE_2026-10-22.md)); record-clock-tilt is recorded only in the consolidation's map.
 - Narrowed:
   - spectral-tilt B (its Poisson redraws are not the laws' transport; the laws make split-time offsets white);
   - inflation-rule D4 (the laws' dephasing is 0.0002-0.065, not 0.07-0.10, and the coupled trigger damps it).
@@ -162,4 +164,4 @@ Not computed:
 
 python3 scripts/born_split_times_are_white_inherited_offsets_and_the_passing_leaves_no_remainder_so_no_law_seeds_curvature_2026_10_22.py
 
-AUDIT_TIMEOUT_SEC = 120. It takes about 3 s, peaks at about 175 MB, prints 5693 characters and ends with TOTAL: PASS=14 FAIL=0. It was checked through scripts/runner_cache.execute_runner from a temporary origin/main worktree (status ok, exit 0).
+AUDIT_TIMEOUT_SEC = 120. It takes about 3 s, peaks at about 175 MB and ends with TOTAL: PASS=13 FAIL=0 (14 at the held head, which counted the literal-True B7 and D3); it exits nonzero if any check fails. It was checked through scripts/runner_cache.execute_runner from a temporary origin/main worktree (status ok, exit 0).

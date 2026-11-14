@@ -33,7 +33,7 @@ The candidate tested first is: "the universe begins as one block with the pre-ro
 - Read in the vacuum's own units (CL-3, with M_P l = 1), G ~ l^2 and H l is constant. So aH is constant, and there are zero horizon-exit e-folds however far the edges stretch. Uniform stretching is the register's "uniform dilation is a common whole shift": pure relabelling.
 - With G held fixed in proper units instead, rho ~ a^-4 (radiation), and aH falls by e^-60.
 
-**A3 [T]. General no-go.**
+**A3 [T]. General no-go (for the explicit family of fixed site sets below).**
 - Take a fixed set of sites whose per-site energy scales as l^p, with p <= 0 for bounded energy per tick (p = -1 under the tied lapse). Then w = -p/3 >= 0, and acceleration needs w < -1/3.
 - So e-folds need new sites: 60 e-folds are 86.6 split generations, and they must happen during the plateau.
 
@@ -183,9 +183,10 @@ Not computed:
 
 - Used: fold-inflaton (#9979; C5 re-seeding, E misfolds); nested-prefold-sea (#9982; C potential, D1 friction, E1 overlap); pi-flux-fold (#9986; face phases stay fixed, no Stokes issue); spectral-tilt (Poisson spread, n_s - 1 = log2 lam); record-clock-tilt (no record clock); act-tilt (#9918; every exponential plateau gives 1 - 2/N); inflaton A1.
 - Narrows: the owner's candidate that inflation happens in one unsplit block (refuted, A), and the nested-prefold claim that the passing must "write the clock" (IN-1 is the vacuum clause completed, B1).
+- Fold-inflaton, act-tilt and spectral-tilt are on this branch ([fold](A_FOLD_IS_A_SLOW_SCALAR_CLOCK_ONLY_WHEN_THE_UNFOLDED_SEA_IS_CRITICAL_ON_A_SURFACE_AND_THE_UPDATES_DIRAC_SEA_MAKES_IT_FAST_BOUNDED_THEOREM_NOTE_2026-10-22.md), [act-tilt](CURVATURE_SQUARED_INFLATION_MISSES_THE_ACT_TILT_AND_NO_RULE_LIFTS_IT_BOUNDED_THEOREM_NOTE_2026-10-21.md), [cascade](THE_SPLIT_TIME_CASCADE_IS_SELF_SIMILAR_SO_ITS_DELTA_N_SPECTRUM_IS_FLAT_AND_THE_TRIGGER_READS_NO_LINEAR_SCALAR_BOUNDED_THEOREM_NOTE_2026-10-22.md)); nested-prefold-sea, pi-flux-fold, record-clock-tilt and inflaton A1 are recorded only in the consolidation's map. D4's Poisson estimate is narrowed by the [Born split-time note](BORN_SPLIT_TIMES_ARE_WHITE_INHERITED_OFFSETS_AND_THE_PASSING_LEAVES_NO_REMAINDER_SO_NO_LAW_SEEDS_CURVATURE_BOUNDED_THEOREM_NOTE_2026-10-22.md) (0.0002 to 0.065 e-folds).
 
 ## How to run
 
 python3 scripts/an_unsplit_block_cannot_inflate_so_the_fold_plateau_needs_splits_that_carry_its_order_and_dephased_split_phases_to_seed_perturbations_2026_10_22.py
 
-AUDIT_TIMEOUT_SEC = 120. It takes about 6 s, peaks at about 137 MB, prints 5629 characters and ends with TOTAL: PASS=17 FAIL=0. It was checked through scripts/runner_cache.execute_runner from a temporary origin/main worktree (status ok, exit 0).
+AUDIT_TIMEOUT_SEC = 120. It takes about 6 s, peaks at about 137 MB, prints 5629 characters and ends with TOTAL: PASS=17 FAIL=0. Since 2026-11-14 it exits nonzero when a check fails. It was checked through scripts/runner_cache.execute_runner from a temporary origin/main worktree (status ok, exit 0).

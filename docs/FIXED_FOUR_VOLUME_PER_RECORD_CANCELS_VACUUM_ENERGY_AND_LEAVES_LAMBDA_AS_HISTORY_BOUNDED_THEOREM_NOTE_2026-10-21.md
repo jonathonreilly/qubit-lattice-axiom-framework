@@ -1,7 +1,7 @@
 ---
 claim_id: fixed_four_volume_per_record_cancels_vacuum_energy_and_leaves_lambda_as_history_bounded_theorem_note_2026-10-21
 claim_type: bounded_theorem
-claim_scope: "On a supplied cubic-frustum Regge expansion carrier, varying edge lengths at fixed 4-volume per record cancels every vacuum term proportional to 4-volume and conserves a constant Lambda set only by initial data, lost matter energy and a kick rho^2/rho* per synchronous 2^3 split; supplied per-new-cell phase and split-trigger self-tuning rules either track the critical density, freeze the start or need the size by hand; no rule fixing the size of Lambda is established."
+claim_scope: "On a supplied cubic-frustum Regge expansion carrier, varying edge lengths at fixed 4-volume per record cancels every vacuum term proportional to 4-volume (an exact variational identity) and conserves, up to O(c^2) at relative step c and exactly only as c -> 0, a constant Lambda set only by initial data, lost matter energy and a kick rho^2/rho* per synchronous 2^3 split; supplied per-new-cell phase and split-trigger self-tuning rules either track the critical density, freeze the start or need the size by hand; no rule fixing the size of Lambda is established."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -18,7 +18,7 @@ The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. Its res
 ## Statement
 
 1. On the supplied cubic-frustum Regge carrier, the fixed-4-volume rule cancels every vacuum term -rho_v V from the edge equation exactly.
-2. Under that rule a constant Lambda is conserved with no secular drift, and the late expansion obeys Friedmann with it, so w = -1.
+2. Under that rule a constant Lambda is conserved up to O(c^2) at each finite relative step c, with no secular drift (|Lbar_n - Lambda_0| <= 4.2 c^2 rho_c(n) at the three tested steps); exact conservation holds only in the limit c -> 0. The late expansion obeys Friedmann with it to 3e-4 at the tested steps, so w = -1 at late times in that limit, not exactly at every finite step. Narrowed 2026-11-14 from "conserved ... so w = -1". The cancellation in item 1 is exact: at fixed V, delta(-rho_v V) = -rho_v delta V = 0 for constant rho_v.
 3. Its value is Lambda_0 plus the matter energy lost along the way plus rho^2/rho* for each synchronous 2^3 split of dust, with rho* = 3/(4 pi G a^2) the lattice's maximal density. Lambda_0 is set by the first slab, so the size is history, not a consequence of the rules.
 4. A phase per new cell gives a constant of unfixed size plus a zero-mean term that tracks the critical density. Self-tuning through the split trigger tracks, freezes the starting value, or needs the measured size put in by hand.
 
@@ -34,7 +34,7 @@ Identity. rho_L/rho_P = 3/(8 S_dS) with S_dS = pi/(H_L l_P)^2, so a capacity rul
 
 ## Checks
 
-The runner gives 19 PASS and 0 FAIL. These are finite diagnostics of supplied models.
+The runner gives 19 PASS and 0 FAIL and exits nonzero if any check fails. These are finite diagnostics of supplied models; the conservation and Friedmann checks bound finite-step errors and do not establish exact finite-step conservation.
 
 - Vacuum cancellation to 3e-16 relative, for rho_v from 1e4 to 1e7 Lambda_0.
 - No drift: |Lbar_n - Lambda_0| <= 4.2 c^2 rho_c(n) at every slab (3.92, 4.06, 4.13 at relative steps c = 0.02, 0.01, 0.005), though rho_c starts at 1e4 Lambda_0. Late (3H^2 - rho_r)/Lbar is 1.00008, 1.00001, 0.99999.

@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/fixed_four_volume_per_record_cancels_vacuum_energy_and_leaves_lambda_as_history_2026_10_21.py
-runner_sha256: 9768a38b9492cc5d680eda6a3fb3b5cf05fb83bc39d7307338721eaf6341e2ce
-input_fingerprint_sha256: d6d6476020c653658e23cb5317742d49b7ae0414f38b65092ead578a6a531bc6
+runner_sha256: 646f4f220db74dafbb9b2ee468a90d373ac75d9835c235d68173cd3643aad296
+input_fingerprint_sha256: bcf539a8c781939f08e5815f0458cb8191b2e43a306c7d0c6a9704bead98c7d4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.79
+elapsed_sec: 1.31
 status: ok
 ----- stdout -----
 == A. candidate (a): rule U on the frustum Regge FRW carrier (radiation + Lambda0; kappa = 1)
 [PASS] THEOREM: under rule U every vacuum term -rho_v V cancels identically from the edge equation (fixed V_n: d(rho_v V)=0)  |Delta G|/(vacuum term) 3e-16 at rho_v = 1e4..1e7 Lambda0
-[PASS] rule U conserves its constant with no secular drift: |Lbar_n - Lambda0| <= 4.2 c^2 rho_c(n) at every slab, though rho_c starts at 1e4 Lambda0; zigzag ~ c^3  max/c^2 3.92, 4.06, 4.13; end offset 1e-03, 3e-04, 9e-05 (c = .02, .01, .005); zigzag 9e-06 -> 2e-07
-[PASS] late expansion obeys Friedmann with the conserved constant: (3H^2 - rho_r)/Lbar -> 1 (w = -1 exactly)  1.00008, 1.00001, 0.99999
+[PASS] rule U conserves its constant up to O(c^2) at each finite step, with no secular drift: |Lbar_n - Lambda0| <= 4.2 c^2 rho_c(n) at every slab at the three tested steps, though rho_c starts at 1e4 Lambda0; zigzag ~ c^3; exact conservation only in the c -> 0 limit (not at a finite step)  max/c^2 3.92, 4.06, 4.13; end offset 1e-03, 3e-04, 9e-05 (c = .02, .01, .005); zigzag 9e-06 -> 2e-07
+[PASS] late expansion obeys Friedmann with the conserved constant: (3H^2 - rho_r)/Lbar -> 1 within 3e-4 at the tested steps (w = -1 in the c -> 0 limit, late times)  1.00008, 1.00001, 0.99999
 [PASS] what fixes it: only the first slab's mismatch; a 1e-7 change of l_1 moves Lambda by 20%, so nothing in the rules sets it  dl1/l1 1e-09: first slab 1.0020, late 1.0024 Lambda0; dl1/l1 1e-07: first slab 1.2030, late 1.2034 Lambda0
 [PASS] matter non-conservation becomes Lambda: radiation losing 1% at one slab raises Lbar by the lost density, permanently (discrete Lambda = Lambda0 + int Q dt)  jump/lost 1.00078, 1.00017, 1.00004 (c = 0.02, 0.01, 0.005); later drift <= 0.14 c^2
 [PASS] rule U turns the split junction (residual O((Hl)^2), agents/cosmology) into a permanent kick: each synchronous 2^3 split (dust) adds rho^2/rho* to Lambda, rho* = 3/(4 pi G a^2); step-independent  kick/(rho^2/rho*) 0.9986, 0.9976, 0.9977, 0.9991, 0.9974
@@ -36,7 +36,7 @@ status: ok
   sea noise: tracks + local noise; capacity: restates
 supplied: frustum carrier, central tick, matter -E T, kappa = 1, rule U itself, split construction and threshold, the CL-2 tick
   at mu, b; empty vacuum and thermal plasma (D), split-phase independence, self-tuning families, unit map, LCDM, measured numbers.
-elapsed_seconds 1.1
+elapsed_seconds 1.0
 TOTAL: PASS=19 FAIL=0
 
 ----- stderr -----

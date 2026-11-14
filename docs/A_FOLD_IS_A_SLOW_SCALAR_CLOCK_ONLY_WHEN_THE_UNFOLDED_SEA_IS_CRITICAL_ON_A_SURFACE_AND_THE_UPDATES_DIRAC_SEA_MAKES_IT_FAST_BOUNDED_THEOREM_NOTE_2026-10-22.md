@@ -1,14 +1,14 @@
 ---
 claim_id: a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_bounded_theorem_note_2026-10-22
 claim_type: bounded_theorem
-claim_scope: "For a fold order parameter m that opens a gap in a half-filled sea, with the one-loop (adiabatic) stiffness Z(m) = sum |<n|dH|0>|^2 / (E_n - E_0)^3 and the semiclassical slow-roll dictionary: (A) exact on rings N = 8, 10, 12: the star rule sum P_3/2 is the Majumdar-Ghosh form, with two gapped zero-phase folds; uniform odds (equal amplitudes on every half-filled configuration) are its top, an exact eigenstate at energy 1 per site, which the update's hop moves off within about one tick; the sea's weight on the fold manifold is conserved under the fold rule's unitary and falls with N (0.786, 0.660, 0.541). (B) Theorem: Z = c_d m^(d-3), with d the codimension of the sea's gapless set (c_1 = 1/3, c_2 = 2/3, d = 3 logarithmic), so the unfolded point is at infinite field distance only for d = 1. Lattice ratio check: 1D dimer chain 4.04, 3D nested cubic sea 4.00, 3D Dirac sea 0.91 (4 means pole, 1 means log). (C) 1D toy with the pole (dimer path, exact infinite-chain Wick): V_star falls monotonically from 0.07559 to 0 and z = 1/(24 pi delta^2); slow roll gives n_s = 0.9631-0.9634 at N* = 55 for rungs 0, 2, 4, r = 7e-6 to 2.5e-8, exit at delta = 0.01-0.05; lam = 2^(-2/N) = 0.975; A_s fixes the fold rung near 20 for coupling 1; children born unfolded give q = 1/8 + 7x/8, never a clock. (D) The update's isotropic Dirac band (d = 3, continuum ball cutoff): eta at N* = 55 is -0.88 (flat rung) and -14 (rung 4); n_s = 0.965 needs zeta ~ 50 against zeta <= 1 from the unit map. (E) Plateau energy that leaves the coherent mode sits in misfolds: at most 0.36 walls per site at full conversion. Supplied: the star rule, the dimer path and one-loop stiffness, J a = sqrt 3, M_P a = 1 at the flat rung, the fold rung, coupling gamma = 1, N* = 55, the Dirac cutoff, m_f = 1, semiclassical FRW with Hubble friction, the split carrying the fold order."
+claim_scope: "For a fold order parameter m that opens a gap in a half-filled sea, with the one-loop (adiabatic) stiffness Z(m) = sum |<n|dH|0>|^2 / (E_n - E_0)^3 and the semiclassical slow-roll dictionary: (A) exact on rings N = 8, 10, 12: the star rule sum P_3/2 is the Majumdar-Ghosh form, with two gapped zero-phase folds; uniform odds (equal amplitudes on every half-filled configuration) are its top, an exact eigenstate at energy 1 per site, which the update's hop moves off within about one tick; the sea's weight on the fold manifold is conserved under the fold rule's unitary and falls with N (0.786, 0.660, 0.541). (B) Theorem: Z = c_d m^(d-3), with d the codimension of the sea's gapless set (c_1 = 1/3, c_2 = 2/3, d = 3 logarithmic), so the unfolded point is at infinite field distance only for d = 1. Lattice ratio check: 1D dimer chain 4.04, 3D nested cubic sea 4.00, 3D Dirac sea 0.91 (4 means pole, 1 means log). (C) 1D toy with the pole (dimer path, exact infinite-chain Wick, quadratures cross-checked against a 30-digit mpmath quadrature to 4e-9): V_star falls monotonically from 0.07559 to 0 and z = 1/(24 pi delta^2); slow roll gives n_s = 0.9631-0.9634 at N* = 55 for rungs 0, 2, 4, r = 7e-6 to 2.5e-8, exit at delta = 0.01-0.05; lam = 2^(-2/N) = 0.975; A_s fixes the fold rung near 20 for coupling 1; children born unfolded give q = 1/8 + 7x/8, never a clock. (D) The update's isotropic Dirac band (d = 3, continuum ball cutoff): eta at N* = 55 is -0.88 (flat rung) and -14 (rung 4); n_s = 0.965 needs zeta ~ 50 against zeta <= 1 from the unit map. (E) Plateau energy that leaves the coherent mode sits in misfolds: at most 0.36 walls per site at full conversion. Supplied: the star rule, the dimer path and one-loop stiffness, J a = sqrt 3, M_P a = 1 at the flat rung, the fold rung, coupling gamma = 1, N* = 55, the Dirac cutoff, m_f = 1, semiclassical FRW with Hubble friction, the split carrying the fold order. Not computed: slow roll for d = 2 (line nodes, finite field distance)."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
 runner: scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py
 ---
 
-# A fold is a slow scalar clock only when the unfolded sea is critical on a surface, and the update's Dirac sea makes it fast
+# A fold is a slow scalar clock when the unfolded sea is critical on a surface, and the update's Dirac sea makes it fast
 
 Claim type: bounded_theorem.
 Primary runner: `scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py`.
@@ -41,7 +41,7 @@ B. What sets the fold's speed (theorem and lattice check).
    - d = 2: m^-1, with c_2 = 2/3;
    - d = 3 (Dirac points): log(1/m) only, with constant log 2 - 4/3.
 
-   The canonical distance to the unfolded point, int sqrt(Z) dm, diverges only for d = 1.
+   The canonical distance to the unfolded point, int sqrt(Z) dm, diverges only for d = 1. The slow-clock statements below are for d = 1 (C) and d = 3 (D); d = 2 is not computed, so "slow only when d = 1" is not claimed.
 2. Lattice check, using the ratio [Z(0.1) - Z(0.2)] / [Z(0.2) - Z(0.4)], which is 4 for a pole and 1 for a log:
    - 1D dimer chain: 4.04;
    - 3D half-filled nearest-neighbour cubic sea (a nested Fermi surface; the fold is the staggered gap): 4.00;
@@ -51,6 +51,7 @@ C. A 1D toy where the pole exists: the star rule on the dimer path (hops 1 +- de
 
 1. Exact infinite-chain values:
    - The Wick reduction gives V_star = 1/2 + (2/3)[(g_s - g_s^2) + (g_w - g_w^2)] + (4/3) g_s g_w from the strong- and weak-bond correlators. It is checked against a 10-site Slater state (1e-12) and a 400-site chain.
+   - Convergence (C1b, added 2026-11-14): the infinite-chain quadratures for V and z agree with an independent 30-digit mpmath quadrature at seven delta from 1e-9 to 1 - 1e-6 (relative 4.2e-9 for V, 2e-16 for z), and the 300-point grid raises no integration warning. The earlier cache's roundoff, subdivision, divergence and bad-integrand warnings came from a subtracted integrand, sin^2/f - sin, which loses about 3e-3 of V0 - V at delta = 1e-9; the runner now uses the equal cancellation-free form -delta^2 cos^2 sin/(f(sin + f)) (half angles), and the runner's control reproduces the old error. Every printed value of C1, C2 and D1 is unchanged by the fix.
    - V_star falls monotonically from V0 = 0.07559 to 0, with V0 - V ~ delta^2 ln^2(1/delta).
    - The stiffness is z = 1/(24 pi delta^2) (0.013263 at delta = 1e-9).
 2. Slow roll. Take chi = zeta int sqrt(z) d delta in Planck units, with zeta = (J a)^(-1/2) / (M_P a_r) and M_P a = 1 at the flat rung (unit map). The pole makes V(chi) an exponential plateau: the fold is critically slowed near the sea.
@@ -89,11 +90,11 @@ D1: W = c2 m^2 and Z = z1 (ln(2 Lambda/m) - 4/3), which give N = zeta^2 V0 z1 L^
 
 ## Checks
 
-The runner prints 13 checks:
+The runner prints 14 checks (13 at the held head; C1b added 2026-11-14) and exits nonzero if any fails:
 - A1-A3: exact (ED);
 - B1: exact (sympy);
 - B2, C2, D1: finite diagnostics;
-- C1: exact quadrature with two cross-checks;
+- C1: exact quadrature with two cross-checks, and C1b its convergence check against mpmath;
 - C3-C5: exact arithmetic;
 - D2, E1: estimates.
 
@@ -134,13 +135,13 @@ Not computed:
 - the CL-3 vacuum standard's reading of the plateau (it gravitates only as a departure from the folded vacuum, and between splits it scales like the cell, l^-4, so a log-periodic ripple of period ln 2 is expected);
 - reheating dynamics beyond the energy bound.
 
-Not claimed: that a fold cannot be the clock. It can, but only if the sea it folds has a gapless surface. CL-1's sea has only Dirac points.
+Not claimed: that a fold cannot be the clock. It can when the sea it folds has a gapless surface (d = 1); for Dirac points (d = 3) at the supplied cutoff and unit map it is fast; line nodes (d = 2) are not computed. CL-1's sea has only Dirac points.
 
 ## Candidate law text (tested, not adopted)
 
 > CL-F (fold). "The first odds are the unfolded sea. Roles are read from the zero-phase states of a uniform star rule acting with coupling gamma on the blocks of rung r_f, and a split carries its parent's fold order to its children."
 
-Verdict: with CL-1's sea as the unfolded state, the fold is fast (D1, D2). With uniform odds as the first odds, the fold rule never starts it, and the hop removes it in about a tick (A2). It works only if the unfolded sea in the fold channel is critical on a surface (B1, C2), and then it is in the exponential-plateau class.
+Verdict: with CL-1's sea as the unfolded state, the fold is fast (D1, D2). With uniform odds as the first odds, the fold rule never starts it, and the hop removes it in about a tick (A2). Of the cases computed, it works when the unfolded sea in the fold channel is critical on a surface (B1, C2), and then it is in the exponential-plateau class; d = 2 is not computed.
 
 Smuggling check:
 - The pole comes from the sea's gapless surface, which is not CL-1's band, so a working version needs a new rule that makes the pre-fold sea nested (for example, a pre-role tick with only axis hops, whose half-filled sea is the nested cubic sea of B2). That rule is untested here and is not law text.
@@ -159,10 +160,11 @@ Smuggling check:
   - act-tilt, PR #9918 (every exponential plateau gives 1 - 2/N);
   - inflaton A1 (H a < 1.93e-5);
   - the register's unit map (M_P L = 1) and its Dirac light band.
-- Narrowed: the owner's fold-as-inflaton idea, to a sea that is critical on a surface.
+  - The split-time cascade note and act-tilt (PR #9918) are on this branch ([cascade](THE_SPLIT_TIME_CASCADE_IS_SELF_SIMILAR_SO_ITS_DELTA_N_SPECTRUM_IS_FLAT_AND_THE_TRIGGER_READS_NO_LINEAR_SCALAR_BOUNDED_THEOREM_NOTE_2026-10-22.md), [act-tilt](CURVATURE_SQUARED_INFLATION_MISSES_THE_ACT_TILT_AND_NO_RULE_LIFTS_IT_BOUNDED_THEOREM_NOTE_2026-10-21.md)); the other names are recorded only in the consolidation's map.
+- Narrowed: the owner's fold-as-inflaton idea, to a sea that is critical on a surface (of the cases computed).
 
 ## How to run
 
 python3 scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py
 
-AUDIT_TIMEOUT_SEC = 120; about 5 s, peak about 190 MB; ends with TOTAL: PASS=13 FAIL=0.
+AUDIT_TIMEOUT_SEC = 120; about 5 s, peak about 190 MB; ends with TOTAL: PASS=14 FAIL=0.

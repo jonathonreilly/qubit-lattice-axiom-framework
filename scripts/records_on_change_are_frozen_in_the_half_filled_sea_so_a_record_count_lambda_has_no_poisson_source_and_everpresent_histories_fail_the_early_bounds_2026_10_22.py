@@ -7,7 +7,7 @@ Per site and half-tick the proper 4-volume is v_c = (sig/2) L^4, sig = sin(eps0)
 Supplied: the 1D pair-walk toy (CL-1 gate form, eps = 0.6, mu = 0.3), the half-filled sea, LambdaCDM (Planck 2018),
 the eps0 range, the S/V stochastic dynamics (Ahmed-Dodelson-Greene-Sorkin model 1), BBN/CMB bounds (approximate),
 DESI DR2 (w0, wa) central values for a box comparison."""
-import time, itertools, numpy as np
+import sys, time, itertools, numpy as np
 from scipy.special import logsumexp, beta
 from scipy.integrate import quad
 from scipy.optimize import linprog
@@ -108,7 +108,7 @@ for d in (0.02, 0.005):
     out.append((m/10/d, var/m, v2/m2, Hcond, Pm))
 c_ramp = out[1][0]
 hb = lambda x: -x*np.log(x) - (1-x)*np.log(1-x)
-check("drift of the mass angle mu by d per half-tick: the only structural Poisson-like source: rate c*d per site (c computed), one-step Fano -> 2 (independent single hops), fresh entropy H(Y|X) within the Fano-inequality bound h(P_move) + P_move ln(M-1)",
+check("drift of the mass angle mu by d per half-tick: the only Poisson-like source among those tested: rate c*d per site (c computed), one-step Fano -> 2 (independent single hops), fresh entropy H(Y|X) within the Fano-inequality bound h(P_move) + P_move ln(M-1)",
       abs(out[0][0]/out[1][0] - 1) < 0.03 and abs(out[1][1] - 2) < 0.01 and all(o[3] <= hb(o[4]) + o[4]*np.log(31) + 1e-12 for o in out),
       f"c = {c_ramp:.3f}; F(ring) {out[1][1]:.3f}, F(pair) {out[1][2]:.3f}; H(Y|X) {out[1][3]:.2e} nats/half-tick at d = 0.005")
 
@@ -141,9 +141,13 @@ print(f"  amplitude map: Lambda L^2 = A B(u)/u, B standard Brownian in u = V4/L^
 # ---------------- C. stochastic history (ADGS model 1 with computed amplitude) ----------------
 print("== C. history: S/V everpresent Lambda on the past light cone, self-consistent Friedmann")
 rad, eds = 4*np.pi/840, (4*np.pi/3)*81*beta(9, 4)*16/81
-check("THEOREM (tracking): rms Omega_L = A/(3 sqrt(V H^4)) with V H^4 = 4 pi/840 (radiation), 0.0338 (matter, beta function), 0.123 today: Lambda ~ H^2 at every epoch, early rms 2.9x today's",
-      abs(rad - 0.014960) < 1e-6 and abs(eds - 0.033849) < 1e-5,
-      f"rms/A: radiation {1/(3*np.sqrt(rad)):.2f}, matter {1/(3*np.sqrt(eds)):.2f}, today {1/(3*np.sqrt(VH4)):.2f}")
+# independent path (2026-11-14; the check compared each closed form with its own decimal before): integrate the past-cone
+# 4-volume V(t) = (4 pi/3) int_0^t a(t')^3 chi(t', t)^3 dt' directly for a ~ t^(1/2) (H = 1/2t) and a ~ t^(2/3) (H = 2/3t) at t = 1
+V_rad = quad(lambda t: (4*np.pi/3)*t**1.5*(2*(1 - np.sqrt(t)))**3, 0, 1)[0]*(1/2)**4
+V_mat = quad(lambda t: (4*np.pi/3)*t**2*(3*(1 - t**(1/3)))**3, 0, 1)[0]*(2/3)**4
+check("THEOREM (tracking): rms Omega_L = A/(3 sqrt(V H^4)) with V H^4 = 4 pi/840 (radiation), 0.0338 (matter, beta function), 0.123 today: Lambda ~ H^2 at every epoch, early rms 2.9x today's; the closed forms agree with a direct quadrature of the past-cone 4-volume",
+      abs(rad - V_rad) < 1e-10 and abs(eds - V_mat) < 1e-10 and abs(V_rad - V_mat) > 1e-3,
+      f"rms/A: radiation {1/(3*np.sqrt(rad)):.2f}, matter {1/(3*np.sqrt(eds)):.2f}, today {1/(3*np.sqrt(VH4)):.2f}; quadrature V H^4 {V_rad:.6f}, {V_mat:.6f}")
 def hist(A, nh, seed, dx=0.02, x0=np.log(1e-20), x_on=None):
     rng = np.random.default_rng(seed); a0 = np.exp(x0); sr = np.sqrt(Orad)
     ch_ = np.full(nh, a0/sr); I = np.array([np.full(nh, sr**-(k+1)*a0**(k+5)/(k+5)) for k in range(4)])
@@ -187,6 +191,6 @@ check("late-window diagnostic (switched on at z = 3, A = 0.5, early bounds ignor
 
 # ---------------- D. conflicts ----------------
 print("== D. conflicts")
-check("conflict ledger: (i) CL-3 vacuum standard holds Lambda a constant per proper 4-volume with w = -1 and the hinge bound |dw| < 6e-4; everpresent Lambda gives |w + 1| ~ O(1); (ii) the register's 'a size law must not drift with the horizon' fails by construction (C, tracking); (iii) under record-on-change voids carry no records, so V4 = count gives empty space no 4-volume; (iv) record-reading (every site every half-tick) gives Fano 0 (lambda-rule-2)",
-      max(tvs) < 1e-12 and best < 1e-8, "no structural record rule tested here supplies volume-law Poisson counts in the frozen vacuum")
+print("  CONFLICT LEDGER (not counted; it re-asserted A1 and C before 2026-11-14): (i) CL-3 vacuum standard holds Lambda a constant per proper 4-volume with w = -1 and the hinge bound |dw| < 6e-4; everpresent Lambda gives |w + 1| ~ O(1); (ii) the register's 'a size law must not drift with the horizon' fails by construction (C, tracking); (iii) under record-on-change voids carry no records, so V4 = count gives empty space no 4-volume; (iv) record-reading (every site every half-tick) gives Fano 0 (lambda-rule-2) | no record rule tested here supplies volume-law Poisson counts in the frozen vacuum")
 print(f"TOTAL: PASS={NP} FAIL={NF}   ({time.time()-T0:.1f} s)")
+sys.exit(0 if NF == 0 else 1)

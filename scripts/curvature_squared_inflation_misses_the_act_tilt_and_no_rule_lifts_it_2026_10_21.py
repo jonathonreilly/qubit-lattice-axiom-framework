@@ -17,7 +17,7 @@ signal.signal(signal.SIGALRM, lambda *a: (_ for _ in ()).throw(TimeoutError('agg
 signal.setitimer(signal.ITIMER_REAL, AUDIT_TIMEOUT_SEC - 2)
 import numpy as np
 import sympy as sp
-from scipy.integrate import solve_ivp
+from scipy.integrate import solve_ivp, simpson
 from scipy.optimize import brentq
 import warnings
 warnings.filterwarnings('ignore')
@@ -88,17 +88,51 @@ check('B2 reheating histories (e-fold matching at k = 0.05/Mpc): colour-anomaly 
       'instant N* = %.1f, n_s = %.4f [%s]; plain R^2 reheats through its quadratic minimum (w = 0), so instant is its maximum'
       % (Tcol, Ncol, ST.flow(Ncol)[0], pulls(ST.flow(Ncol)[0]), Ninst, ST.flow(Ninst)[0], pulls(ST.flow(Ninst)[0])),
       48 < Ncol < 53 and 54 < Ninst < 58 and (DS['ACT'][0] - ST.flow(Ncol)[0]) / DS['ACT'][1] > 3.5)
-w, L = sp.symbols('w L', positive=True)
-dN = (3 * w - 1) * L / (12 * (1 + w)); lnE = 2 * (3 * w - 1) / (3 * w + 1) * (1 + 3 * w) / 2 * L / (3 * (1 + w))
-check('B3 THEOREM (sympy): a phase of constant w from rho_end to rho_rh adds dN = (3w-1) ln(rho_end/rho_rh)/(12(1+w)) e-folds and boosts '
-      'the GW background of the modes entering in it by E with ln E = 4 dN for every w; kination (w = 1) to BBN (4 MeV): N* = %.1f, n_s = %.4f [%s]: '
-      'even the stiffest phase to BBN does not reach ACT (needs %.1f)' % (Nkin, ST.flow(Nkin)[0], pulls(ST.flow(Nkin)[0]), Nreq['ACT']),
-      sp.simplify(lnE / dN) == 4 and Ninst + 10 < Nkin < Nreq['ACT'])
-r_i = ST.flow(Ninst)[1]; Om_rad = 4.15e-5 * 0.39 * r_i * As_m / 24; Om_max = 5.6e-6 * 0.3
-dNgw = math.log(Om_max / Om_rad) / 4; Ngw = Ninst + dNgw
-check('B4 ESTIMATE: Omega_GW h^2 = %.1e on the radiation plateau vs the BBN/N_eff limit %.1e (dN_eff < 0.3) caps any stiff phase at dN <= %.1f: '
-      'N* <= %.1f, n_s <= %.4f [%s]; ACT needs dN = %.1f, a GW boost e^%.0f' % (Om_rad, Om_max, dNgw, Ngw, ST.flow(Ngw)[0], pulls(ST.flow(Ngw)[0]),
-      Nreq['ACT'] - Ninst, 4 * (Nreq['ACT'] - Ninst)), ST.flow(Ngw)[0] < DS['ACT'][0] - DS['ACT'][1])
+# B3 (narrowed 2026-11-14): one era of constant w, -1/3 < w <= 1 (w = -1 is singular, and modes re-enter only while
+# the era decelerates), from rho_end down to rho_rh, then radiation.  rho ~ a^(-3(1+w)) and aH ~ a^(-(1+3w)/2), so a
+# mode entering at a_ent has ln(k/k_rh) = ((1+3w)/2) ln(a_rh/a_ent); after entry Omega_GW grows as a^(3w-1) until
+# a_rh, so ln E(k) = (3w-1) ln(a_rh/a_ent).  The runner derives E(k) from these two relations instead of assuming it.
+w, L, q_, xk = sp.symbols('w L q x', positive=True)          # L = ln(rho_end/rho_rh), q_ = ln(a_rh/a_ent), xk = ln(k/k_rh)
+dN = (3 * w - 1) * L / (12 * (1 + w))
+beta_w = sp.simplify(((3 * w - 1) * q_) / ((1 + 3 * w) / 2 * q_))   # ln E per unit ln(k/k_rh)
+lnE_k = beta_w * xk
+x_end = (1 + 3 * w) / 2 * L / (3 * (1 + w))                  # ln(k_end/k_rh): the mode entering as the era starts
+ok_b3 = (sp.simplify(beta_w - 2 * (3 * w - 1) / (1 + 3 * w)) == 0 and sp.simplify(lnE_k.subs(xk, x_end) - 4 * dN) == 0
+         and lnE_k.subs(xk, 0) == 0)
+# control: the earlier wording 'ln E = 4 dN for every mode entering in the era' is false off the endpoint
+L_kin = math.log(1.5 * 0.75 * (1 - math.exp(-s23 * ST.PEND)) ** 2 * ST.flow(Ninst)[2]['A'] ** 2 * MP ** 4 / rho_bbn)
+ctrl_b3 = [float((lnE_k.subs(xk, f * x_end) - 4 * dN).subs({w: 1, L: L_kin})) for f in (0.0, 0.5)]
+check('B3 THEOREM (sympy, endpoint): a phase of constant w (-1/3 < w <= 1) from rho_end to rho_rh adds dN = (3w-1) ln(rho_end/rho_rh)/(12(1+w)) '
+      'e-folds; a mode k entering in it has E(k) = (k/k_rh)^(2(3w-1)/(1+3w)), so E(k_rh) = 1 and only the first mode in, k_end, has ln E = 4 dN; '
+      'kination (w = 1) to BBN (4 MeV): N* = %.1f, n_s = %.4f [%s]: even the stiffest phase to BBN does not reach ACT (needs %.1f)'
+      % (Nkin, ST.flow(Nkin)[0], pulls(ST.flow(Nkin)[0]), Nreq['ACT']),
+      ok_b3 and Ninst + 10 < Nkin < Nreq['ACT'] and min(abs(c) for c in ctrl_b3) > 1)
+print('   control B3: "ln E = 4 dN for every mode" misses by %.1f at k_rh and %.1f at the mid mode (kination to BBN): rejected' % tuple(ctrl_b3))
+# B4 (rebuilt 2026-11-14): construct the enhanced spectrum and integrate it against the integrated BBN bound.
+r_i = ST.flow(Ninst)[1]; Om_rad = 4.15e-5 * 0.39 * r_i * As_m / 24; Om_max = 5.6e-6 * 0.3   # supplied transfer prefactor; bound on int Omega dlnk
+H2_end = ST.Vr(ST.PEND) / 2                                    # eps_H = 1 at the end: H^2 = V/(3 - eps_H)
+rho_min = H2_end / ST.flow(Ninst)[2]['H2']                     # H falls during inflation, so P_t(k)/P_t(k*) >= rho_min for k <= k_end
+def gw_int(dNv, wv, rho):
+    b = 2 * (3 * wv - 1) / (1 + 3 * wv); xs = np.linspace(0.0, 4 * dNv / b, 20001)
+    return Om_rad * rho * simpson(np.exp(b * xs), x=xs)       # int over ln k of Omega_plateau * rho * E(k), k_rh..k_end
+def gw_cap(wv, rho): return brentq(lambda d: gw_int(d, wv, rho) - Om_max, 1e-3, 40.0, xtol=1e-12)
+caps = {(wv, rh): gw_cap(wv, rh) for wv in (0.5, 2 / 3, 1.0) for rh in (1.0, rho_min)}
+closed = {(wv, rh): 0.25 * math.log(1 + 2 * (3 * wv - 1) / (1 + 3 * wv) * Om_max / (Om_rad * rh)) for wv, rh in caps}
+dN_peak = math.log(Om_max / Om_rad) / 4                        # the earlier peak-only estimate, kept for comparison
+dN_cap = caps[(1.0, rho_min)]; Ngw = Ninst + dN_cap
+ok_b4 = (max(abs(caps[k] - closed[k]) for k in caps) < 1e-6 and caps[(0.5, rho_min)] < caps[(2 / 3, rho_min)] < caps[(1.0, rho_min)]
+         and 0 < rho_min < 1 and ST.flow(Ngw)[0] < DS['ACT'][0] - DS['ACT'][1]
+         and gw_int(dN_cap + 0.5, 1.0, rho_min) > Om_max > gw_int(dN_cap - 0.5, 1.0, rho_min))   # control: a cap 0.5 higher breaks the bound
+check('B4 ESTIMATE (integrated spectrum): Omega_GW h^2 = %.1e on the radiation plateau (supplied transfer), times E(k) on k_rh..k_end and the tensor '
+      'power at exit (>= %.2f of the pivot value: H_end^2/H*^2), integrated over ln k against the BBN/N_eff limit %.1e (dN_eff < 0.3): a single '
+      'constant-w phase with 1/3 < w <= 1 has dN <= %.2f (w = 1; %.2f at w = 1/2), N* <= %.1f, n_s <= %.4f [%s]; ACT needs dN = %.1f, an endpoint '
+      'boost e^%.0f' % (Om_rad, rho_min, Om_max, dN_cap, caps[(0.5, rho_min)], Ngw, ST.flow(Ngw)[0], pulls(ST.flow(Ngw)[0]),
+                         Nreq['ACT'] - Ninst, 4 * (Nreq['ACT'] - Ninst)), ok_b4)
+print('   B4 detail: quadrature vs closed form (1/4) ln(1 + beta X/rho) max diff %.1e; the earlier peak-only cap dN <= %.3f (n_s <= %.4f) '
+      'is %.3f below the integrated w = 1 cap with flat P_t and %.3f below it with P_t >= H_end^2'
+      % (max(abs(caps[k] - closed[k]) for k in caps), dN_peak, ST.flow(Ninst + dN_peak)[0], caps[(1.0, 1.0)] - dN_peak, dN_cap - dN_peak))
+print('   SUPPLIED (B4): sharp era boundaries, the plateau prefactor 4.15e-5 x 0.39/24, leading-order P_t ~ H^2 at exit; NOT CHECKED: '
+      'histories with more than one era, w > 1, and transfer-function smoothing at the era boundaries')
 
 print('== C. the rules\' own forms')
 def Afr(x): return cmath.asin(x * x / (1 - x * x)) / cmath.sqrt(1 - 2 * x * x)

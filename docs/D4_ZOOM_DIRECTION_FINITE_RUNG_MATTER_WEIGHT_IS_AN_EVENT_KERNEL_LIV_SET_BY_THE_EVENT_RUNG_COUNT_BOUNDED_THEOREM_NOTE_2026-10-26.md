@@ -8,7 +8,7 @@ upstream_dependencies:
 runner: scripts/d4_zoom_direction_finite_rung_matter_weight_is_an_event_kernel_liv_set_by_the_event_rung_count_2026_10_26.py
 ---
 
-# The finite-rung matter weight is a kernel ON the events: physical LIV is set by the event weight's rung count, and no finer lattice is needed
+# The finite-rung matter weight is a kernel ON the events: where the blocking weight is nonzero (checked for the light pole at n = 1..3) the light-band LIV is set by the event weight's rung count, and no finer lattice is needed
 
 Runner: [`scripts/d4_zoom_direction_finite_rung_matter_weight_is_an_event_kernel_liv_set_by_the_event_rung_count_2026_10_26.py`](../scripts/d4_zoom_direction_finite_rung_matter_weight_is_an_event_kernel_liv_set_by_the_event_rung_count_2026_10_26.py). Seeded, AUDIT_TIMEOUT_SEC = 120; it exits nonzero on any failed check.
 Its cache [`logs/runner-cache/d4_zoom_direction_finite_rung_matter_weight_is_an_event_kernel_liv_set_by_the_event_rung_count_2026_10_26.txt`](../logs/runner-cache/d4_zoom_direction_finite_rung_matter_weight_is_an_event_kernel_liv_set_by_the_event_rung_count_2026_10_26.txt) holds the current output (the source run: 6 checks, 28 s, 81 MB peak).

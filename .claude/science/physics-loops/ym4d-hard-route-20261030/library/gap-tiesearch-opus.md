@@ -207,3 +207,11 @@ errors of about 20 percent); all go to the sweep as planned in 4.3 and 4.5.
   z-twist pi/2 colour 3 so far, L = 8, 10, 12, 14, 16 (one chain each): 9.63, 7.92, 9.41, 13.20, 17.04. Slow rise above L = 12 or
   noise; the replicas decide.
 
+- L = 14: z-twist pi/4 colour 3 6.29 +- 0.60 [8.33].
+- **(K3) z-twist pi/4, L = 16, hot start (seed 12): colour 3 14.39 +- 2.60 [10.91] against the cold chain's 7.05 +- 1.72: factor 2.0,
+  K3 FAILS.** The L = 16 point of this slice is not equilibrated on 3000 + 12000 sweeps (or the block errors understate the error,
+  as for u_xy at L = 12). So the interim "not refuted, barely" for z-twist pi/4 is withdrawn.
+- Added at 19:35Z, before it runs (`full24d.sh`, after F24c): z-twist pi/4, two more cold chains at L = 16 (seeds 32, 33)
+  and one at L = 8 (seed 32); pooled with the hot chain by the replica rule (error = max of propagated block error and chain spread).
+  Numeric lock refreshed (6 h).
+

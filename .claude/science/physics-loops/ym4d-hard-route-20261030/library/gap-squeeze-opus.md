@@ -125,12 +125,12 @@ later steps remove at most one layer per face (s_i(t + 1) >= s_i(t) - 2). "Per k
 is removed only at times divisible by k. E_t := E(Q_t).
 
 **Lemma COUNT (PROVED).** A schedule of one site per face per step reaches Q_cube or Q_pl only
-after n >= b/2 steps; with one layer per k steps, after n >= k b/2 - k + 1. On the slab b = 24a:
+after n >= b/2 steps; with one layer per k steps (removals at times k, 2k, ...), after n >= k b/2. On the slab b = 24a:
 n >= 12a, twelve times the seed's time extent a. A squeeze that must close inside the slab's
 period a (squeeze for a/2 steps, regrow for a/2 steps) keeps every side at least b - a = 23a.
 Proof. s_i(t) >= b - 1 - 2(t - 1) for t >= 1. Q_cube needs s_i(n) <= 2, so 2n >= b - 1, n >= b/2
-(b even; n integer). Q_pl needs s_3(n) <= 1, so 2n >= b. With one layer per k steps the side
-falls by at most 2 every k steps after the first cut. Inside a period a the squeeze lasts at most
+(b even; n integer). Q_pl needs s_3(n) <= 1, so 2n >= b. With removals only at times k, 2k, ...,
+the m-th removal is at time m k, and b/2 removals are needed. Inside a period a the squeeze lasts at most
 a/2 steps: s_i >= b - 1 - 2(a/2 - 1) >= b - a. QED
 So "squeeze over the seed's time extent" down to a unit is impossible at the seed's own time
 scale: the squeezed object is a different 4D complex, at least 24a - 1 steps long if it closes

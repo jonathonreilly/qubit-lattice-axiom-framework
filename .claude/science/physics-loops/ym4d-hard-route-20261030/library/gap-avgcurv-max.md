@@ -189,9 +189,9 @@ the tilted covariance must grow with the box, at least like 2 beta log(1/E_1).
 **4.2 FT-U1.** (a) FP, the Gaussian mode model of row 929 (PROVED). The criterion is exact in every mode (3.3, check
 (i)), so its output is the true rate of FP. On the box (a; (4a)^3) the lowest mode has omega_min = 2 asinh(sin(pi/(4a)))
 < 1.58/a, against K_a > 12.5/a: FP fails the seed rate for every a, by a factor above 8 (above 59 on the slab, row 947
-4.3). In the language of the flow: k = 1/c - (exact precision), and Var = k/(1 - k t) reaches 1/(precision) at t = c.
-The soft modes are the photon modes, as the row asks. With the toron level of full FP (check 938: 1/(2 beta b)),
-Lemma NEC gives k* >= 2 beta log(2 beta b).
+4.3). In the language of the flow: k = 1/c - (exact precision), and Var = k/(1 - k t) equals k/(c x precision) at t = c, large
+for a soft mode. The soft modes are the photon modes, as the row asks. In any model of the class with a level at
+1/(2 beta b) (the toron level of full FP, check 938), Lemma NEC gives k* >= 2 beta log(2 beta b).
 (b) Compact Wilson U(1) in its Coulomb phase (ARGUED from Lemma NEC; the absence of a gap there is RECALLED, not
 proved here). Section 3 holds for it word for word (M = (S^1)^L in R^(2L), zero-field value with 1/2 in place of 1/4).
 The zero-field value is box-independent, so the supremum over non-zero tilts must grow with the box. The Ricci
@@ -253,11 +253,14 @@ whole Bakry-Emery tensor. No Ricci term appears. The curvature of the group must
 Lam' = A (the mean resultant; A = I_2/I_1 for n = 4). The tangential curvature is Phi'(r)/r.
 (a) Sign. At the mid-slice Phi'(r)/r = 4 beta (1 - A(2 beta r)/r). Since A(kappa) = kappa/n - O(kappa^3), it is negative near r = 0
 exactly when 2 beta/n > 1: beta > 2 for SU(2) (n = 4), beta > 1 for U(1) (n = 2). This is ceiling (ii) of row 941. At
-beta 2.3 the negative region is r below about 0.4, of small nu_s-probability; the value at r = 0 is 4 beta (1 - beta/2) = -1.4,
-against about +3 at r = 1.
+beta 2.3 the negative region is r < 0.43, of nu_s-probability 0.02; the value at r = 0 is 4 beta (1 - beta/2) = -1.38, against
++2.8 at r = 1. At beta 2.6: r < 0.56, probability 0.05, values -3.1 and +2.8. (Numbers: GUIDE quadrature for one free
+link, `/tmp/gap-avgcurv-968/scripts/onelink.py`, 2 s under the numeric lock at 14:28Z, not committed; the sign
+statement is PROVED.)
 (b) Average. For p > 2 - n: E[ r^(p-1) Phi'(r) ] = (n + p - 2) E[ r^(p-2) ] (integrate by parts against r^(n-1) e^(-Phi) dr). So
   E[ Phi'(r)/r ] = (n - 2) E[ r^(-2) ]   for n >= 3:   the mean tangential curvature is Ric(S^(n-1)) x E|y|^(-2).
 For n = 2 the same integral is the boundary term: E[Phi'(r)/r] = 2 pi x (density of y at the origin), which is tiny.
+(GUIDE check of the identity at n = 4: both sides 2.770 at beta 2.3 and 2.731 at beta 2.6.)
 So for one link the Ricci curvature of the group is the average of the ambient tangential curvature over the
 radial coordinate of the bridge. It is 2 E|y|^(-2) for SU(2) and essentially 0 for U(1). The negative part of (a) is the
 inner side of the shell. The free rotor has a gap for both groups: for U(1) the gap does not come from this
@@ -272,7 +275,8 @@ Proof. A geodesic of the sphere of radius r has acceleration -(|v|^2/r^2) y. So 
 K_s(v, v) - sum_l <y_l, grad_l Phi> |v_l|^2/r_l^2, and the Ricci tensor of the fibre is 2|v_l|^2/r_l^2 on each factor. By 5.1,
 grad Phi = y/c - E[x | y]/s - E[w | y]/s'. The terms |v|^2/c cancel. QED
 Checks. One free link: Var(<v, x> | y) = (A/kappa)|v|^2 with kappa = r/s, and mu^x = A, so the bracket and the variance cancel
-and BE_ang = 2/r^2, the round sphere. As s -> 0 (r -> 1) the display is the bridge form of row 941 (A6).
+and BE_ang = 2/r^2, the round sphere. The display is the bridge analogue of row 941 (A6); I did not verify the
+limit s -> 0 term by term.
 Readings.
 - At the zero-field point y -> 0 (all links): mu^x_l = r_l/(4s) + o(r), Var(<v, x> | y) -> |v|^2/4 (Elitzur), so the mean
   term and the variance term cancel to leading order and BE_ang is 2/r_l^2 -> + infinity. The ceiling (ii) of row 941
@@ -311,3 +315,157 @@ link's shell: an artefact, removed by the fibre form, where the Ricci curvature 
 of Section 6. (K3) Collective directions at the box scale: this is the gap itself (5.4 (b)), and the Ricci
 curvature does not act there. So the Ricci curvature of SU(2) pays for (K1) only. I found no way to make it pay
 for (K2) or (K3).
+- 14:26 Sections 6 and 7 written (Attack 3; the smallest unproved inequality; the GUIDE test design, before any run).
+
+## 6. Attack 3: the negative part on a set of small measure
+
+**6.1 Proposition SCHR (scalar domination; PROVED given Bochner's identity, RECALLED).** Let k_s(y) be the lowest
+eigenvalue of K_s(y) on horizontal vectors. Then the gauge-invariant Poincare constant of nu_s obeys
+  gam_s >= sig_s := inf over invariant Lipschitz h of ( E|grad h|^2 + E[k_s h^2] ) / E[h^2].
+Proof. For invariant G put om = grad G and h = |om|. Pointwise |grad h| <= |Hess G| (Cauchy-Schwarz; Kato's inequality), and
+K_s(om, om) >= k_s h^2. So E(L G)^2 = E|Hess G|^2 + E K_s(om, om) >= sig_s E|grad G|^2, and 5.4 (b) applies. QED
+This is an averaged-curvature criterion in the exact sense: the curvature enters as a potential of a scalar
+Schrodinger form, and a negative well of small measure costs nothing if leaving it is cheap.
+
+**6.2 It dies by the volume (PROVED given one premise).** Premise (DENS): there are D > 0 and p > 0 such that each link
+is frustrated (5.3: K_s <= -D in a direction on that link) with nu_s-probability at least p, with enough
+independence that some link of the box is frustrated with probability tending to 1 as the box grows. Then
+k_s <= -D with probability tending to 1, and the trial function h = 1 gives sig_s <= E k_s < 0 on large boxes. So
+Proposition SCHR is empty on the seed box. The scalar h forgets the direction: one bad link anywhere lowers k_s
+for the whole lattice. (DENS) is not proved here; the hand numbers of 5.3 suggest p of the order of one per cent.
+
+**6.3 The direction-resolved form and its three needs (PROVED implication).** Suppose
+  (LOC-COV): K_s(y) >= diag_l( k_l(y) ) as forms on horizontal vectors, with k_l >= rho off a set Bad_l and k_l >= -D on it;
+  (CAP)_l: E[h^2 1_(Bad_l)] <= A E|grad h|^2 + del E[h^2] for all invariant Lipschitz h, with (rho + D) A <= 1.
+Then gam_s >= rho - (rho + D) del.
+Proof. With h_l = |grad_l G|: E|Hess G|^2 >= sum_l E|grad h_l|^2 and E K_s(om, om) >= sum_l E[k_l h_l^2] >= sum_l ( rho E h_l^2 - (rho + D) E[h_l^2 1_(Bad_l)] ).
+Insert (CAP)_l and sum. QED
+Where each need stands.
+- (CAP)_l from a Poincare constant lam of nu_s (the computation of Proposition RARE-P, row 936, 4.3): A = (1 + eta)/(eta lam),
+  del = (1 + eta) P(Bad_l). The condition (rho + D) A <= 1 asks lam >= (rho + D)(1 + eta)/eta > D. With the global constant lam = gam_s this is
+  circular with a loss: the premise gam_s > D is stronger than the conclusion gam_s >= rho - ... . So RARE-P does
+  not transfer: there, an even gap pays for an odd one; here the same gap would have to pay for itself.
+- (CAP)_l from local conditional laws, uniformly in the conditioning: FALSE in the worst case (Lemma WC, PROVED).
+  Given x_l = -w_l, the mid-slice variable y_l is Gaussian with mean 0 and covariance c Id_4, so
+  P(|y_l| < 0.4 | x, w) = P(chi^2_4 < 0.64 beta) = 0.17 at beta 2.3, against 0.016 unconditionally for one free link (GUIDE quadrature). A defect
+  is not rare under a bad conditioning. A scheme with typical conditionings needs a hierarchy of bad
+  environments. That is the large-field problem of the renormalisation group, here at intermediate coupling
+  with no small parameter. I did not attempt it.
+- (LOC-COV) is the deepest need. It asks that the conditional covariance of a slice of the half-space lattice
+  with a boundary field be bounded by a local diagonal form, at typical fields with rare exceptions. For the
+  collective directions this is a mass-gap statement for the tilted system ((K3) of 5.5). No method gives it.
+Stop of attack 3: (LOC-COV). The rarity of the frustrated links is not the obstruction; the locality of the
+conditional covariance is.
+
+## 7. The smallest unproved averaged-curvature inequality, and one GUIDE test
+
+**7.1 The inequality (OPEN).** For s in (0, 1/beta), with nu_t, F_t = P_(0,t) F, b_t, J_(b,phi) of Sections 2-3:
+  (ABS-flow)_s: there is a piecewise continuous kap_(s,t), 0 <= t <= c_s, such that for every smooth gauge-invariant F
+  with values in a compact subset of (0, infinity) and almost every t:
+     2 E_(nu_t)[ Var_(J_(b_t,phi))( <grad F_t^(1/2)(phi), q~> ) ] <= 2 kap_(s,t) E_(nu_t)|grad F_t^(1/2)|^2 + (1/4) E_(nu_t)[ F_t |Hess log F_t|^2 ].
+Proposition (PROVED given (ID-ent) of 2.1, READ from BBD's Lemma 3.10 and (3.44), and Theorem BR). (ABS-flow)_s gives
+(LSI-br)_s with 1/alpha_s <= integral over [0, c_s] of exp(2 integral over [0, t] of kap_(s,u) du) dt. Proof: by (ID-ent) and 3.1 (c),
+I' <= 2 kap I, so I(t) <= exp(2 integral of kap) I(0), and Ent_(nu_s)(F) = 2 integral of I. QED
+  (ABS-flow-seed)_a: (ABS-flow)_s on the box (a; (4a)^3), with (1/2) integral over (0, 1/beta) of alpha_s ds >= K_a.
+Strength, in decreasing order: (TILT-COV-sup) with a box-uniform kbar; (ABS-flow-seed)_a for one a; (LSI-br-seed)_a;
+(HC-vac)_(K_a); the seed. The first arrow is trivial (drop the Hessian term and take the supremum), the second is
+the Proposition, the rest is rows 947 and 931. The variance form, from (ID-var), with F_t in place of F_t^(1/2) and
+E|Hess F_t|^2 in place of the last term, gives gam_s and E_1 >= K_a only.
+What it is. An average over typical tilts phi (the law nu_t of 3.1 (d)), weighted by the test function, with the
+Hessian term kept, at every scale of the flow. By 5.4 it lies strictly between the pointwise criterion and the
+inequality itself. What it is not: it is not smaller than (LSI-br-seed) in any proved sense. It is another
+sufficient form, whose input is a link covariance of the two-slice system in a linear field.
+Why I cannot prove it. Its content at non-zero phi is (K2) and (K3) of 5.5, and Section 6 stops at (LOC-COV).
+The only tilt where the covariance is known is phi = 0 (Lemma Z).
+
+**7.2 One GUIDE test that could refute the supremum form (design and criteria written before any run).**
+Object. At t = 0 the law J_(0,phi) is a product, and for the uniform tilt phi_l = kap0 1 (the unit quaternion on every
+link) it is a pair of boundary slices of half-space lattices with the Higgs-type boundary term kap sum_l (1/2) tr w_l,
+kap = kap0/s. For a link direction i, a momentum k orthogonal to i and an imaginary unit e_a, the vector
+z = e^(i k x) e_a on the links of direction i is horizontal at phi (it is orthogonal to lattice gradients). Put
+  chi(kap; k) := E|sum over links l of direction i of e^(i k x_l) w_l^a|^2 / (number of those links)
+(connected; averaged over i, a and the directions of k). (TILT-COV-sup) at t = 0 gives kbar_(s,0) >= chi(|phi|/s; k)/s^2 for all
+kap, k. So if chi* := max over kap of chi(kap; k_min) grows with the box side, no box-uniform kbar exists.
+Control and expectation. At kap = 0: chi = 1/4 exactly for SU(2) and 1/2 for U(1), every box (Elitzur). For compact
+U(1) in the Coulomb phase I expect (ARGUED in the lane log, not proved) growth of chi* with the side, at the tilt
+where the boundary layer orders: there the photon is exposed with a surface stiffness of order beta |k|.
+Verdict rules. On boxes of side 4, 6, 8 at beta 2.3 (half-space of 6 slices, open far end, tilt on slice 0):
+REFUTES a box-uniform (TILT-COV-sup) for SU(2) on these boxes (GUIDE) if chi* at k_min rises by more than a factor
+1.25 per step of the side, outside three standard errors. NOT REFUTED otherwise, which proves nothing. The
+run is valid only if the kap = 0 control returns 1/4 within three standard errors.
+What it cannot show. It tests one family of tilts and one scale t = 0. The averaged form 7.1 would need the
+typical tilts of 3.1 (d) and nested sampling (the conditional covariance of (x, w) given the bridge point), and
+by 5.4 no finite set of test functions can confirm it.
+- 14:30 7.3 and Section 8 written (test of 7.2 NOT run, with the reason; status table; RESULT). One numeric job in the
+  whole row: the one-link quadrature (lock holder gap-avgcurv-968, 14:28:05Z, about 2 s, 72 percent memory free, released).
+
+**7.3 The test of 7.2 was NOT run. Reason (ARGUED, hand estimate).** A test is worth its run only if the control
+can fail. For compact U(1) in the Coulomb phase, at a tilt kap just above the ordering of the boundary layer, the
+transverse mode of momentum k on the boundary has a restoring coefficient of about kap rho + beta (|k| + k^2): rho is the
+order of the gauge-orbit field (small near the ordering), beta |k| is the surface stiffness of the massless bulk,
+beta k^2 the magnetic term of the layer. So chi is about 1/(beta (|k| + k^2)) there. It exceeds its own kap = 0 value 1/2 only
+when beta (|k_min| + k_min^2) < 2, that is for box sides above about 12 at beta 1.3, and it reaches twice that value near
+side 24. On sides 4, 6, 8 the U(1) control would stay at or below 1/2 and the run could not tell U(1) from SU(2).
+A valid run therefore needs U(1) boxes of side 12 to 24 and SU(2) boxes above the confinement length at the same
+sides (about 10^5 sites and several thousand sweeps per point): hours on this machine in plain numpy, or the
+compiled code of row 954. I did not start it inside this row's budget. The design, the control and the verdict
+rules of 7.2 stand as written, with sides 12, 16, 24 in place of 4, 6, 8. Scope: the estimate above is not a
+proof that U(1) fails in this family; Lemma NEC only proves that it fails in some family.
+The second test, for the averaged form (proposed, not run): sample (x, w) from J and the bridge point y; sample
+the two conditional slices given y (two half-space lattices with boundary field y/s, y/s'); estimate
+E[Var(<grad G(y), q~> | y)] / E|grad G|^2 against 1/c and E|Hess G|^2 / E|grad G|^2 for the slow modes G of rows 947 and 954 (time-like
+plaquette sum, winding lines). By 5.4 (c) this gives a lower bound on kap_(s,0), and by (ID-var) the initial slope of
+I_2. It can show that a claimed kap_(s,0) is too small. It cannot confirm (ABS-flow).
+
+## 8. Status, answers, and the result
+
+**8.1 Status table.** "PROVED" means proved by hand here, by Claude Fable 5.2, not yet checked by another model.
+
+| Statement | Where | Status |
+|---|---|---|
+| BBD Theorem 3.6 and Chen-Eldan Proposition 39, Lemma 40 average over the scale and take a supremum over the field or tilt; the identities (ID-ent), (ID-var) are the averaged statements behind BBD | 2.1-2.3 | READ (sources quoted; not rebuilt) |
+| Proposition FLOW: nu_s is Gaussian(c) x e^(-V_0) with V_0 concave; its renormalised potentials are the free energies of the two-slice law with middle coupling b_t = t/(s s') in linear fields; Hess V_t = -Cov_(J_(b_t,phi))(q~); law of the typical tilt | 3.1 | PROVED |
+| Lemma Z: at zero field the covariance is k0 Id with k0 <= 1/(4 c^2), every box, every group containing -1 that acts irreducibly | 3.2 | PROVED |
+| Theorem POL-BR: (TILT-COV-sup) gives (LSI-br)_s and (HC-vac) with explicit constants; exact in every Gaussian mode | 3.3 | CONDITIONAL on BBD Theorem 3.6 (cited, with the horizontal reading of its proof) and Theorem BR (row 947, check 949) |
+| The integrated form has no threshold; the zero-field point, which gives the three ceilings of row 941, costs a finite factor at every beta (alpha0 = 8 beta^2/(e^(2 beta) - 1) at the mid-slice) | 3.4, 4.7 | PROVED (arithmetic at one point; not a bound for SU(2)) |
+| Lemma NEC: k* >= 2 beta log(1/E_1(B)) in every model of the class | 4.1 | PROVED given 3.3 and Proposition HC |
+| Fact tests: FP exact and fails the rate through the photon modes; compact U(1), Q_8/2T, SMALL-BOX, K7: the hypothesis must grow with the box or with beta; FT-FK: the flow is kinetic-only and decides nothing, the model enters only through m | 4.2-4.7 | PROVED for FP and for the Lemma NEC consequences; ARGUED for compact U(1) (no gap RECALLED) and for the extension of Theorem BR to finite groups |
+| One free link: sign of the tangential curvature (negative near r = 0 iff beta > n/2 at the mid-slice); E[Phi'/r] = (n - 2) E r^(-2) | 5.2 | PROVED; numbers GUIDE |
+| Proposition ANG: fibre tensor with the Ricci term 2/r_l^2; the Elitzur point is an artefact for SU(2) and stays marginal for U(1); frustrated links stay negative | 5.3 | PROVED (formula, zero-field reading); ARGUED (frustrated-link numbers) |
+| Proposition AVG: an average over the measure without the Hessian term is the pointwise criterion; with it, the Poincare inequality itself | 5.4 | PROVED given Bochner's identity and the slice theorem (RECALLED) |
+| Proposition SCHR and its death by volume; the direction-resolved form; RARE-P does not transfer; Lemma WC | 6.1-6.3 | PROVED (6.2 given the premise (DENS), not proved) |
+| (TILT-COV-sup) with a box-uniform bound; (ABS-flow-seed)_a; (LOC-COV); (LSI-br-seed)_a; (LSI-J-seed)_a; the seed | 3.3, 6.3, 7.1 | OPEN |
+| GUIDE test of the supremum form (uniform Higgs-type tilt, transverse boundary susceptibility) | 7.2-7.3 | designed, NOT run (needs sides 12 to 24) |
+
+**8.2 Answers to the row.**
+- Input (1), integrated or averaged criteria. Both named criteria need a supremum over the field or tilt at each
+  scale; only the scale is averaged (Section 2). Applied to the bridge marginals they give Theorem POL-BR. Its
+  hypothesis is a bound on a link covariance of the two-slice system in every linear field, uniform in the box.
+  That is not proved, and by Lemma NEC it is false wherever the gap closes with the box.
+- Input (2), Ricci against the averaged negative part. In the bridge picture the Ricci curvature of S^3 is the
+  radial average of the ambient curvature of one link (5.2), and in the fibre form it is the term 2/r^2 (5.3). It
+  removes the zero-field ceiling of row 941, which U(1) keeps. It does not act on frustrated links or on the
+  collective directions.
+- Input (3), a rare set. The scalar form dies by the volume; the direction-resolved form needs a local bound on
+  the conditional covariance, (LOC-COV), which is a mass-gap statement for the tilted system. RARE-P does not
+  transfer (the same gap would pay for itself), and rarity uniform in the conditioning is false (Lemma WC).
+- The averaged route left open by check 958. It is real but it is not a reduction: at the Poincare level the
+  averaged inequality with the Hessian term is the inequality itself (5.4 (b)). The form with content is the
+  flow form (ABS-flow) of 7.1. No inequality smaller than (LSI-br-seed)_a came out of this row.
+- What changes. For the lead: (i) the three one-scale ceilings of row 941 are not ceilings of the route through
+  Theorem BR, so "curvature criteria die below the window" should read "one-scale curvature criteria"; (ii) the
+  open input of the lane can now be written as a second-moment statement, (TILT-COV-sup), in place of a
+  functional inequality for all test functions, at the price of a supremum over linear fields; (iii) an
+  averaged-curvature lane should not be queued again without a route to (LOC-COV).
+
+**8.3 For the checker, in this order.** (1) Proposition FLOW (b), (d): the completion of the square and b_c = beta.
+(2) The use of BBD Theorem 3.6 on a finite scale interval (their Remark 3.8) and the horizontal reading (a) of
+2.1; if the horizontal reading fails, Theorem POL-BR holds with the supremum over all z, and Lemma NEC is
+unchanged. (3) Lemma Z. (4) Proposition ANG: the fibre Hessian and the cancellation of |v|^2/c. (5) Proposition AVG
+(a): the use of the slice theorem at principal orbits. (6) 6.3: E|Hess G|^2 >= sum_l E|grad h_l|^2. The physics readings
+(4.8, 7.3) carry no proof weight.
+
+**Reading order.** Sections 3 and 4 (the criterion and its fact tests), then 5.4 and 7.1 (what "averaged" can
+mean), then 5.2-5.3 (Ricci), then 6.
+
+RESULT: Row 968 (Claude Fable 5.2 max, author, checked by no one): the averaged-curvature route does NOT close; (LSI-J-seed) and the seed stay OPEN, and no inequality smaller than (LSI-br-seed)_a was found. PROVED by hand: Proposition FLOW (the Polchinski flow of each bridge marginal nu_s is the switching-on of the one time-like coupling between two slices, and its curvature is minus a link covariance of the two-slice law in a linear field); Lemma Z (zero-field covariance, every box); Lemma NEC (the tilted covariance must grow at least like 2 beta log(1/E_1)); Proposition ANG (the Ricci curvature of S^3 is the term 2/r^2 of the fibre tensor and removes the Elitzur ceiling of row 941, which U(1) keeps); Proposition AVG (an average over the measure is the pointwise criterion without the Hessian term and the Poincare inequality itself with it); Proposition SCHR with its death by volume, and the failure of RARE-P and of uniform conditional rarity to transfer. CONDITIONAL on BBD Theorem 3.6 (cited) and Theorem BR: Theorem POL-BR, a box-uniform bound on that covariance over all linear tilts gives (HC-vac) and the seed for some a, with no threshold in beta. READ: Bauerschmidt-Bodineau-Dagallier and Chen-Eldan both need a supremum over the field or tilt; only the scale is averaged. FACT TESTS: the criterion is exact for the free photon and fails only its rate; for compact U(1), Q_8/2T, SMALL-BOX and K7 its hypothesis must fail (Lemma NEC); FT-FK holds (the flow is kinetic-only, the model enters only through m). SMALLEST UNPROVED AVERAGED-CURVATURE INEQUALITY: (ABS-flow-seed)_a of 7.1 (typical tilts, Hessian term kept, every test function), implied by the supremum form (TILT-COV-sup); its obstruction is (LOC-COV), a local bound on the conditional covariance of a tilted half-space slice, which is a mass-gap statement. GUIDE: one-link quadrature only (identity and numbers of 5.2); the refuting test of 7.2 (uniform Higgs-type tilt, transverse boundary susceptibility, U(1) control) is designed and NOT run, because the control needs box sides 12 to 24.

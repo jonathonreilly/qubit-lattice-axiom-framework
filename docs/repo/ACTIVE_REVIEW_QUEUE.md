@@ -27,6 +27,33 @@ them.
 
 Current science/open-lane follow-ups:
 
+- `2026-11-14-higgs-fitted-factor-consumer-scope-pr9862`
+  Scope: `HIGGS_MASS_12PCT_GAP_DECOMPOSITION_BOUNDED_NOTE_2026-05-10_higgsS7.md`
+  section 4 and T3, its paired runner section 4, and
+  `V_TASTE_ONE_LOOP_CW_BOUNDED_THEOREM_NOTE_2026-05-10.md` cross-reference to
+  the Higgs Wilson-form diagnostic.
+  Finding: the diagnostic discloses comparator-informed selection and an
+  uncomputed coefficient two; these consumers still attribute the factor to
+  natural QCD-loop multiplicity or the derived loop measure. Their unchanged
+  arithmetic does not establish those physical attributions.
+  Disposition: `science-needed`; derive the coefficient and its physical
+  identification or narrow the consumer prose to the supplied fit. The
+  diagnostic repair grants no standing to these consumers.
+
+- `2026-11-14-heat-kernel-time-consumer-scope-pr9862`
+  Scope: `BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md`, its
+  `frontier_hk_thermodynamic_stretch_source_packet.py` runner, and
+  `BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md` time identification.
+  Finding: matching leading short-time Gaussian coefficients gives a formal
+  parameter, not exact finite-time or physical action identification. The
+  thermodynamic packet consumes the stronger identification and pins the old
+  time runner's seven-check cache; changing only that count would hide the
+  scientific mismatch.
+  Disposition: `science-needed`; reconcile the time provider and these actual
+  consumers together. The proposed time-provider triple from PR 9862 remains
+  deferred at its original frozen head; no heat-kernel source repair is landed
+  by the Higgs-only salvage.
+
 - `2026-10-21-ckm-brocard-canonical-evidence-pr9859`
   Scope: [Vieta structural integers](../CKM_BROCARD_POLYNOMIAL_VIETA_STRUCTURAL_INTEGERS_THEOREM_NOTE_2026-04-25.md)
   and [Q square decomposition](../CKM_BROCARD_Q_POLYNOMIAL_PERFECT_SQUARE_DECOMPOSITION_THEOREM_NOTE_2026-04-25.md).

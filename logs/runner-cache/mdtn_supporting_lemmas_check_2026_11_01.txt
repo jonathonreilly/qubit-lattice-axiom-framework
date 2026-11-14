@@ -1,0 +1,202 @@
+=== A. Site invariant spaces (Lemma S1-S3: parity/triality, Catalan, Weyl-chamber walks)
+   SU(2): k | Lie-kernel dim (all-out legs, alternating legs) | Haar (Weyl integration) | Catalan / walks
+     k=0:   1   1 |   1.0000 |   1 /   1
+     k=1:   0   0 |   0.0000 |   0 /   0
+     k=2:   1   1 |   1.0000 |   1 /   1
+     k=3:   0   0 |   0.0000 |   0 /   0
+     k=4:   2   2 |   2.0000 |   2 /   2
+     k=5:   0   0 |  -0.0000 |   0 /   0
+     k=6:   5   5 |   5.0000 |   5 /   5
+     k=7:   0   0 |  -0.0000 |   0 /   0
+     k=8:  14  14 |  14.0000 |  14 /  14
+   [PASS] SU(2) dim Inv(2^k) = Catalan(k/2) (k even), 0 (k odd), k = 0..8; Lie kernel = Haar = walks
+   SU(3): (a,b) | Lie-kernel dim (a out-3 legs, b out-3bar legs) | Lie-kernel, mixed ends | Haar | walks | a=b mod 3
+     (0,0):   1 |   1 |   1.0000 |   1 | True
+     (0,1):   0 |   0 |  -0.0000 |   0 | False
+     (1,0):   0 |   0 |  -0.0000 |   0 | False
+     (0,2):   0 |   0 |  -0.0000 |   0 | False
+     (1,1):   1 |   1 |   1.0000 |   1 | True
+     (2,0):   0 |   0 |  -0.0000 |   0 | False
+     (0,3):   1 |   1 |   1.0000 |   1 | True
+     (1,2):   0 |   0 |  -0.0000 |   0 | False
+     (2,1):   0 |   0 |  -0.0000 |   0 | False
+     (3,0):   1 |   1 |   1.0000 |   1 | True
+     (0,4):   0 |   0 |  -0.0000 |   0 | False
+     (1,3):   0 |   0 |  -0.0000 |   0 | False
+     (2,2):   2 |   2 |   2.0000 |   2 | True
+     (3,1):   0 |   0 |  -0.0000 |   0 | False
+     (4,0):   0 |   0 |  -0.0000 |   0 | False
+     (0,5):   0 |   0 |  -0.0000 |   0 | False
+     (1,4):   3 |   3 |   3.0000 |   3 | True
+     (2,3):   0 |   0 |  -0.0000 |   0 | False
+     (3,2):   0 |   0 |  -0.0000 |   0 | False
+     (4,1):   3 |   3 |   3.0000 |   3 | True
+     (5,0):   0 |   0 |  -0.0000 |   0 | False
+     (0,6):   5 |   5 |   5.0000 |   5 | True
+     (1,5):   0 |   0 |  -0.0000 |   0 | False
+     (2,4):   0 |   0 |  -0.0000 |   0 | False
+     (3,3):   6 |   6 |   6.0000 |   6 | True
+     (4,2):   0 |   0 |  -0.0000 |   0 | False
+     (5,1):   0 |   0 |  -0.0000 |   0 | False
+     (6,0):   5 |   5 |   5.0000 |   5 | True
+   [PASS] SU(3) dim Inv(3^a (x) 3bar^b), a+b <= 6: Lie kernel = Haar = Weyl-chamber walk count
+   [PASS] SU(3) Inv(3^a (x) 3bar^b) != 0  <=>  a = b mod 3  (a+b <= 6)
+   [PASS] SU(2) odd k: the Cartan generator sum_i T^3_i has no zero eigenvalue (all |eig| >= 1/2)
+   [PASS] SU(3): hypercharge Y = diag(1/3,1/3,-2/3) summed over legs has a zero eigenvalue iff a = b mod 3 (a+b <= 6), else |eig| >= 1/3
+=== B. Finite-group average (definition D3, SU(2) only; Lemma G7): binary octahedral group 2O, |2O| = 48
+   [PASS] 2O: 48 distinct SU(2) matrices, closed under multiplication
+   [PASS] k=1: 2O average = orthogonal projector onto Lie kernel  -- max|P_2O - P_Lie| = 0.0e+00, rank 0
+   [PASS] k=2: 2O average = orthogonal projector onto Lie kernel  -- max|P_2O - P_Lie| = 1.1e-16, rank 1
+   [PASS] k=3: 2O average = orthogonal projector onto Lie kernel  -- max|P_2O - P_Lie| = 1.2e-17, rank 0
+   [PASS] k=4: 2O average = orthogonal projector onto Lie kernel  -- max|P_2O - P_Lie| = 2.8e-16, rank 2
+   [PASS] k=5: 2O average = orthogonal projector onto Lie kernel  -- max|P_2O - P_Lie| = 6.7e-18, rank 0
+   [PASS] k=6: 2O average = orthogonal projector onto Lie kernel  -- max|P_2O - P_Lie| = 2.0e-15, rank 5
+   [PASS] k=7: 2O average = orthogonal projector onto Lie kernel  -- max|P_2O - P_Lie| = 1.2e-17, rank 0
+   [PASS] k=8: 2O average has rank 15 > Catalan(4) = 14 (D3 fails beyond 7 legs, as predicted)
+=== C. One-link covariance of the truncated link operators (Lemma G6 hypothesis (Cov))
+   [PASS] SU2: [A^a_start, U^xy] = sum_z X^a_xz U^zy  (X^a = -i T^a)  -- residual 0.0e+00
+   [PASS] SU2: [A^a_end,   U^xy] = -sum_z U^xz X^a_zy  -- residual 0.0e+00
+   [PASS] SU2: [A^a_end-e, n_l] = 0 and [A^a_start, A^b_end] = 0 on one link  -- residual 0.0e+00
+   [PASS] SU3: [A^a_start, U^xy] = sum_z X^a_xz U^zy  (X^a = -i T^a)  -- residual 0.0e+00
+   [PASS] SU3: [A^a_end,   U^xy] = -sum_z U^xz X^a_zy  -- residual 0.0e+00
+   [PASS] SU3: [A^a_end-e, n_l] = 0 and [A^a_start, A^b_end] = 0 on one link  -- residual 0.0e+00
+=== D. Lemmas G2-G6 on a single plaquette (definition D2: P_s = projector onto ker of site Gauss Casimir)
+   [PASS] SU2 plaquette (dim 625): [G_s^a, G_t^b] = 0 for s != t  -- 0.0e+00
+   [PASS] SU2 plaquette: [G_s^a, N] = 0  -- 0.0e+00
+   [PASS] SU2 plaquette: [G_s^a, Tr U_P] = 0 (and hence for Tr U_P^dag)  -- 0.0e+00
+   [PASS] SU2 plaquette: P_s^2 = P_s, P_s^dag = P_s  -- 1.1e-16, 0.0e+00
+   [PASS] SU2 plaquette: [P_s, P_t] = 0, [P_s, N] = 0, [P_s, Tr U_P] = 0  -- 0.0e+00, 0.0e+00, 5.6e-17
+   [PASS] SU2 plaquette: prod_s P_s = projector onto common kernel of all Gauss generators  -- 5.6e-16; rank 2
+   [PASS] SU2 plaquette: P_s commutes with every operator on links outside star(s) (locality)
+   [PASS] SU2 plaquette: (1/48) sum_{g in 2O} W_s(g) = P_s (D3 = D2 on the full 625-dim space)  -- 1.1e-16
+   [PASS] SU2 plaquette: spec(N | H_phys) = {0, 4}  -- [0. 4.]
+   [PASS] SU3 plaquette (dim 130321): [G_s^a, G_t^b] = 0 for s != t  -- 0.0e+00
+   [PASS] SU3 plaquette: [G_s^a, N] = 0  -- 0.0e+00
+   [PASS] SU3 plaquette: [G_s^a, Tr U_P] = 0 (and hence for Tr U_P^dag)  -- 0.0e+00
+   [PASS] SU3 plaquette: orthonormalised kernel vectors satisfy |C_tot K| < 1e-8  -- 5.9e-16
+   [PASS] SU3 plaquette: dim ker(total Gauss Casimir) = 3 (8 lowest eigenvalues [-0.       -0.       -0.        2.666667  2.666667  2.666667  3.
+  3.      ])
+   [PASS] SU3 plaquette: spec(N | H_phys) = {0, 4, 4}  -- [-0.  4.  4.]
+   [PASS] SU3 on star(s) u star(t), s~t (3 links, dim 6859): P_s idempotent, self-adjoint; [P_s,P_t]=0  -- 5.0e-16, 5.1e-16; ranks 361, 361
+=== E. Lemmas C1, C2, C4, C5: configuration-block decomposition, support (cycle) lemma, exact counts, N-spectrum on H_phys
+   numeric = sum over configurations of prod_s (Lie-kernel dim at s);  comb = Z_p-cycle enumeration with
+   Catalan (SU2) / Weyl-chamber-walk (SU3) site weights.  'support' = nonzero blocks are exactly the Z_p cycles.
+   SU2 open 1x1 (|V|=4, |E|=4, plaquettes=1, girth=4, 4-cycles=1)  [brute force over all 16 configs, 0.0s]
+     dim(H_phys cap E_N), numeric: {0: 1, 4: 1}
+     dim(H_phys cap E_N), comb.  : {0: 1, 4: 1}   total 2
+   [PASS] numeric = combinatorial (every block)
+   [PASS] nonzero configuration blocks are exactly the Z_p 1-cycles
+   [PASS] H_phys cap E_0 = C|0>  and  min{N > 0 on H_phys} = girth  -- min N>0 = 4
+   [PASS] dim(H_phys cap E_4) = 1 x #4-cycles  -- 1 vs 1x1
+   [PASS] total dim H_phys = part-3 runner's gauge-invariant basis size 2
+   [PASS] SU2 on a bipartite graph: H_phys lives only in even N
+   SU2 open 2x1 (|V|=6, |E|=7, plaquettes=2, girth=4, 4-cycles=2)  [brute force over all 128 configs, 0.0s]
+     dim(H_phys cap E_N), numeric: {0: 1, 4: 2, 6: 1}
+     dim(H_phys cap E_N), comb.  : {0: 1, 4: 2, 6: 1}   total 4
+   [PASS] numeric = combinatorial (every block)
+   [PASS] nonzero configuration blocks are exactly the Z_p 1-cycles
+   [PASS] H_phys cap E_0 = C|0>  and  min{N > 0 on H_phys} = girth  -- min N>0 = 4
+   [PASS] dim(H_phys cap E_4) = 1 x #4-cycles  -- 2 vs 1x2
+   [PASS] total dim H_phys = part-3 runner's gauge-invariant basis size 4
+   [PASS] SU2 on a bipartite graph: H_phys lives only in even N
+   SU2 open 2x2 (|V|=9, |E|=12, plaquettes=4, girth=4, 4-cycles=4)  [brute force over all 4096 configs, 0.0s]
+     dim(H_phys cap E_N), numeric: {0: 1, 4: 4, 6: 4, 8: 9}
+     dim(H_phys cap E_N), comb.  : {0: 1, 4: 4, 6: 4, 8: 9}   total 18
+   [PASS] numeric = combinatorial (every block)
+   [PASS] nonzero configuration blocks are exactly the Z_p 1-cycles
+   [PASS] H_phys cap E_0 = C|0>  and  min{N > 0 on H_phys} = girth  -- min N>0 = 4
+   [PASS] dim(H_phys cap E_4) = 1 x #4-cycles  -- 4 vs 1x4
+   [PASS] total dim H_phys = part-3 runner's gauge-invariant basis size 18
+   [PASS] SU2 on a bipartite graph: H_phys lives only in even N
+   SU2 open 3x2 (|V|=12, |E|=17, plaquettes=6, girth=4, 4-cycles=6)  [brute force over all 131072 configs, 0.2s]
+     dim(H_phys cap E_N), numeric: {0: 1, 4: 6, 6: 7, 8: 24, 10: 25, 12: 19}
+     dim(H_phys cap E_N), comb.  : {0: 1, 4: 6, 6: 7, 8: 24, 10: 25, 12: 19}   total 82
+   [PASS] numeric = combinatorial (every block)
+   [PASS] nonzero configuration blocks are exactly the Z_p 1-cycles
+   [PASS] H_phys cap E_0 = C|0>  and  min{N > 0 on H_phys} = girth  -- min N>0 = 4
+   [PASS] dim(H_phys cap E_4) = 1 x #4-cycles  -- 6 vs 1x6
+   [PASS] total dim H_phys = part-3 runner's gauge-invariant basis size 82
+   [PASS] SU2 on a bipartite graph: H_phys lives only in even N
+   SU2 open 1x1x1 (|V|=8, |E|=12, plaquettes=6, girth=4, 4-cycles=6)  [brute force over all 4096 configs, 0.0s]
+     dim(H_phys cap E_N), numeric: {0: 1, 4: 6, 6: 16, 8: 9}
+     dim(H_phys cap E_N), comb.  : {0: 1, 4: 6, 6: 16, 8: 9}   total 32
+   [PASS] numeric = combinatorial (every block)
+   [PASS] nonzero configuration blocks are exactly the Z_p 1-cycles
+   [PASS] H_phys cap E_0 = C|0>  and  min{N > 0 on H_phys} = girth  -- min N>0 = 4
+   [PASS] dim(H_phys cap E_4) = 1 x #4-cycles  -- 6 vs 1x6
+   [PASS] total dim H_phys = part-3 runner's gauge-invariant basis size 32
+   [PASS] SU2 on a bipartite graph: H_phys lives only in even N
+   SU2 open 2x1x1 (|V|=12, |E|=20, plaquettes=11, girth=4, 4-cycles=11)  [brute force over all 1048576 configs, 2.2s]
+     dim(H_phys cap E_N), numeric: {0: 1, 4: 11, 6: 36, 8: 107, 10: 244, 12: 325, 14: 80, 16: 64}
+     dim(H_phys cap E_N), comb.  : {0: 1, 4: 11, 6: 36, 8: 107, 10: 244, 12: 325, 14: 80, 16: 64}   total 868
+   [PASS] numeric = combinatorial (every block)
+   [PASS] nonzero configuration blocks are exactly the Z_p 1-cycles
+   [PASS] H_phys cap E_0 = C|0>  and  min{N > 0 on H_phys} = girth  -- min N>0 = 4
+   [PASS] dim(H_phys cap E_4) = 1 x #4-cycles  -- 11 vs 1x11
+   [PASS] SU2 on a bipartite graph: H_phys lives only in even N
+   SU2 periodic 3x3 (|V|=9, |E|=18, plaquettes=9, girth=3, 4-cycles=9)  [brute force over all 262144 configs, 0.6s]
+     dim(H_phys cap E_N), numeric: {0: 1, 3: 6, 4: 9, 5: 36, 6: 84, 7: 90, 8: 225, 9: 500, 10: 450, 11: 360, 12: 672, 13: 576, 14: 288, 15: 384, 18: 512}
+     dim(H_phys cap E_N), comb.  : {0: 1, 3: 6, 4: 9, 5: 36, 6: 84, 7: 90, 8: 225, 9: 500, 10: 450, 11: 360, 12: 672, 13: 576, 14: 288, 15: 384, 18: 512}   total 4193
+   [PASS] numeric = combinatorial (every block)
+   [PASS] nonzero configuration blocks are exactly the Z_p 1-cycles
+   [PASS] H_phys cap E_0 = C|0>  and  min{N > 0 on H_phys} = girth  -- min N>0 = 3
+   SU3 open 1x1 (|V|=4, |E|=4, plaquettes=1, girth=4, 4-cycles=1)  [brute force over all 81 configs, 0.0s]
+     dim(H_phys cap E_N), numeric: {0: 1, 4: 2}
+     dim(H_phys cap E_N), comb.  : {0: 1, 4: 2}   total 3
+   [PASS] numeric = combinatorial (every block)
+   [PASS] nonzero configuration blocks are exactly the Z_p 1-cycles
+   [PASS] H_phys cap E_0 = C|0>  and  min{N > 0 on H_phys} = girth  -- min N>0 = 4
+   [PASS] dim(H_phys cap E_4) = 2 x #4-cycles  -- 2 vs 2x1
+   [PASS] total dim H_phys = part-3 runner's gauge-invariant basis size 3
+   SU3 open 2x1 (|V|=6, |E|=7, plaquettes=2, girth=4, 4-cycles=2)  [brute force over all 2187 configs, 0.0s]
+     dim(H_phys cap E_N), numeric: {0: 1, 4: 4, 6: 2, 7: 2}
+     dim(H_phys cap E_N), comb.  : {0: 1, 4: 4, 6: 2, 7: 2}   total 9
+   [PASS] numeric = combinatorial (every block)
+   [PASS] nonzero configuration blocks are exactly the Z_p 1-cycles
+   [PASS] H_phys cap E_0 = C|0>  and  min{N > 0 on H_phys} = girth  -- min N>0 = 4
+   [PASS] dim(H_phys cap E_4) = 2 x #4-cycles  -- 4 vs 2x2
+   [PASS] total dim H_phys = part-3 runner's gauge-invariant basis size 9
+   SU3 open 2x2 (|V|=9, |E|=12, plaquettes=4, girth=4, 4-cycles=4)  [brute force over all 531441 configs, 0.8s]
+     dim(H_phys cap E_N), numeric: {0: 1, 4: 8, 6: 8, 7: 8, 8: 26, 9: 16, 10: 28, 12: 4}
+     dim(H_phys cap E_N), comb.  : {0: 1, 4: 8, 6: 8, 7: 8, 8: 26, 9: 16, 10: 28, 12: 4}   total 99
+   [PASS] numeric = combinatorial (every block)
+   [PASS] nonzero configuration blocks are exactly the Z_p 1-cycles
+   [PASS] H_phys cap E_0 = C|0>  and  min{N > 0 on H_phys} = girth  -- min N>0 = 4
+   [PASS] dim(H_phys cap E_4) = 2 x #4-cycles  -- 8 vs 2x4
+   SU3 open 1x1x1 (|V|=8, |E|=12, plaquettes=6, girth=4, 4-cycles=6)  [brute force over all 531441 configs, 0.9s]
+     dim(H_phys cap E_N), numeric: {0: 1, 4: 12, 6: 32, 7: 24, 8: 72, 9: 64, 10: 36, 12: 2}
+     dim(H_phys cap E_N), comb.  : {0: 1, 4: 12, 6: 32, 7: 24, 8: 72, 9: 64, 10: 36, 12: 2}   total 243
+   [PASS] numeric = combinatorial (every block)
+   [PASS] nonzero configuration blocks are exactly the Z_p 1-cycles
+   [PASS] H_phys cap E_0 = C|0>  and  min{N > 0 on H_phys} = girth  -- min N>0 = 4
+   [PASS] dim(H_phys cap E_4) = 2 x #4-cycles  -- 12 vs 2x6
+   SU3 open 2x1x1 (|V|=12, |E|=20, plaquettes=11, girth=4, 4-cycles=11)  [Z_p cycles only, 0.8s]
+     dim(H_phys cap E_N), numeric: {0: 1, 4: 22, 6: 72, 7: 56, 8: 380, 9: 312, 10: 1408, 11: 1832, 12: 4444, 13: 6336, 14: 7772, 15: 9224, 16: 8354, 17: 4304, 18: 2116, 19: 512, 20: 96}
+     dim(H_phys cap E_N), comb.  : {0: 1, 4: 22, 6: 72, 7: 56, 8: 380, 9: 312, 10: 1408, 11: 1832, 12: 4444, 13: 6336, 14: 7772, 15: 9224, 16: 8354, 17: 4304, 18: 2116, 19: 512, 20: 96}   total 47241
+   [PASS] numeric = combinatorial (every block)
+   [PASS] H_phys cap E_0 = C|0>  and  min{N > 0 on H_phys} = girth  -- min N>0 = 4
+   [PASS] dim(H_phys cap E_4) = 2 x #4-cycles  -- 22 vs 2x11
+   SU3 periodic 3x3 (|V|=9, |E|=18, plaquettes=9, girth=3, 4-cycles=9)  [Z_p cycles only, 2.2s]
+     dim(H_phys cap E_N), numeric: {0: 1, 3: 12, 4: 18, 5: 72, 6: 288, 7: 540, 8: 1818, 9: 5548, 10: 11448, 11: 22572, 12: 47232, 13: 64800, 14: 85824, 15: 100608, 16: 76032, 17: 46080, 18: 75776}
+     dim(H_phys cap E_N), comb.  : {0: 1, 3: 12, 4: 18, 5: 72, 6: 288, 7: 540, 8: 1818, 9: 5548, 10: 11448, 11: 22572, 12: 47232, 13: 64800, 14: 85824, 15: 100608, 16: 76032, 17: 46080, 18: 75776}   total 538669
+   [PASS] numeric = combinatorial (every block)
+   [PASS] H_phys cap E_0 = C|0>  and  min{N > 0 on H_phys} = girth  -- min N>0 = 3
+=== F. Girth / simplicity of the Z^3 graphs (Lemma C3)
+   periodic 3x3x3: |V|=27 |E|=81 simple=True girth=3 plaquettes=81 4-cycles=81
+   [PASS] periodic L=3: girth 3 (so L >= 4 is needed)
+   periodic 4x4x4: |V|=64 |E|=192 simple=True girth=4 plaquettes=192 4-cycles=240
+   [PASS] simple, girth 4
+   [PASS] 4-cycles = plaquettes + 3L^2 straight winding loops (L = 4)  -- 240 vs 240
+   periodic 5x5x5: |V|=125 |E|=375 simple=True girth=4 plaquettes=375 4-cycles=375
+   [PASS] simple, girth 4
+   [PASS] 4-cycles = plaquettes  -- 375 vs 375
+   periodic 6x6x6: |V|=216 |E|=648 simple=True girth=4 plaquettes=648 4-cycles=648
+   [PASS] simple, girth 4
+   [PASS] 4-cycles = plaquettes  -- 648 vs 648
+   open 2x3x4: |V|=60 |E|=133 simple=True girth=4 plaquettes=98 4-cycles=98
+   [PASS] simple, girth 4
+   [PASS] 4-cycles = plaquettes  -- 98 vs 98
+   open 3x3x3: |V|=64 |E|=144 simple=True girth=4 plaquettes=108 4-cycles=108
+   [PASS] simple, girth 4
+   [PASS] 4-cycles = plaquettes  -- 108 vs 108
+=== Summary: 108/108 checks PASS  (total 65s)

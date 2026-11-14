@@ -1,0 +1,92 @@
+=== Check 1: single plaquette (gauge-invariant code)
+   SU2 lattice: links=4 plaquettes=1 flux configs=2 dim H_phys=2  (build 0.0s)
+   SU2: N-spectrum [np.float64(0.0), np.float64(4.0)], max|T - T^dag| = 1.11e-16
+     kappa=0.1: spectrum [-0.002498  4.002498]
+     kappa=0.5: spectrum [-0.061553  4.061553]
+   SU3 lattice: links=4 plaquettes=1 flux configs=3 dim H_phys=3  (build 0.8s)
+   SU3: N-spectrum [np.float64(0.0), np.float64(4.0)], max|T - T^dag| = 1.00e+00
+     kappa=0.1: spectrum [-0.001265  3.951265  4.05    ]
+     kappa=0.5: spectrum [-0.033042  3.783042  4.25    ]
+   SU2 closed form (2-level, unit amplitude): gap = sqrt(16 + 4 kappa^2): kappa=0.1 -> 4.004997  kappa=0.5 -> 4.123106
+   (part-1 full-space ED, KS units g^2=2: gap 3.16228)
+   SU2 gauge-invariant code at g^2=2: gap*(3g^2/8) = 3.16228
+=== Check 3: SU(3) single plaquette, full 19^4 = 130321-dim space vs gauge-invariant code
+   max |[Gauss Casimir, T]| = 2.220446049250313e-16
+   kappa=0.1: lowest 3 levels with Gauss penalty 50*Cas: [-0.001265  3.951265  4.05    ]
+   kappa=0.5: lowest 3 levels with Gauss penalty 50*Cas: [-0.033042  3.783042  4.25    ]
+=== Check 4: SU(2) 1x2 strip (shared link): full 5^7 = 78125-dim space vs gauge-invariant code
+   kappa=0.3: full-space+penalty lowest [-0.044586  4.      ] | gauge-invariant code [-0.044586  4.      ]
+   kappa=1.0: full-space+penalty lowest [-0.456698  4.      ] | gauge-invariant code [-0.456698  4.      ]
+
+=== Production: physical-sector gap Delta(kappa) in units of e1 = (g^2/2)C2, H/e1 = N - kappa*sum_P Re-part
+    (Z2-MDTN PT2 formula with unit amplitudes: 4 + kappa^2/2 - (kappa^2/4)*lambda_max(D+A))
+   SU2 lattice: links=4 plaquettes=1 flux configs=2 dim H_phys=2  (build 0.0s)
+   SU2 open 1x1: lambda_max(D+A)=0.0000
+     kappa |  Delta_ED   |  Delta_PT(num, 2nd order) | Z2 formula | (4-Delta_ED)/kappa^2
+      0.05 |    4.001250 |    4.001250              |   4.001250 |  -0.49992
+      0.10 |    4.004997 |    4.005000              |   4.005000 |  -0.49969
+      0.20 |    4.019950 |    4.020000              |   4.020000 |  -0.49876
+      0.40 |    4.079216 |    4.080000              |   4.080000 |  -0.49510
+      0.80 |    4.308132 |    4.320000              |   4.320000 |  -0.48146
+      1.60 |    5.122499 |    5.280000              |   5.280000 |  -0.43848
+     (0.0s)
+   SU2 lattice: links=7 plaquettes=2 flux configs=4 dim H_phys=4  (build 0.0s)
+   SU2 open 2x1: lambda_max(D+A)=2.0000
+     kappa |  Delta_ED   |  Delta_PT(num, 2nd order) | Z2 formula | (4-Delta_ED)/kappa^2
+      0.05 |    4.001250 |    4.001250              |   4.000000 |  -0.49987
+      0.10 |    4.004995 |    4.005000              |   4.000000 |  -0.49948
+      0.20 |    4.019917 |    4.020000              |   4.000000 |  -0.49793
+      0.40 |    4.078710 |    4.080000              |   4.000000 |  -0.49194
+      0.80 |    4.301151 |    4.320000              |   4.000000 |  -0.47055
+      1.60 |    5.051368 |    5.280000              |   4.000000 |  -0.41069
+     (0.0s)
+   SU2 lattice: links=12 plaquettes=4 flux configs=16 dim H_phys=18  (build 0.8s)
+   SU2 open 2x2: lambda_max(D+A)=4.0000
+     kappa |  Delta_ED   |  Delta_PT(num, 2nd order) | Z2 formula | (4-Delta_ED)/kappa^2
+      0.05 |    4.001249 |    4.001250              |   3.998750 |  -0.49978
+      0.10 |    4.004991 |    4.005000              |   3.995000 |  -0.49913
+      0.20 |    4.019862 |    4.020000              |   3.980000 |  -0.49656
+      0.40 |    4.077885 |    4.080000              |   3.920000 |  -0.48678
+      0.80 |    4.290622 |    4.320000              |   3.680000 |  -0.45410
+      1.60 |    4.961600 |    5.280000              |   2.720000 |  -0.37563
+     (0.8s)
+   SU2 lattice: links=17 plaquettes=6 flux configs=64 dim H_phys=82  (build 6.0s)
+   SU2 open 3x2: lambda_max(D+A)=5.0000
+     kappa |  Delta_ED   |  Delta_PT(num, 2nd order) | Z2 formula | (4-Delta_ED)/kappa^2
+      0.05 |    4.001249 |    4.001250              |   3.998125 |  -0.49974
+      0.10 |    4.004990 |    4.005000              |   3.992500 |  -0.49897
+      0.20 |    4.019837 |    4.020000              |   3.970000 |  -0.49592
+      0.40 |    4.077509 |    4.080000              |   3.880000 |  -0.48443
+      0.80 |    4.286146 |    4.320000              |   3.520000 |  -0.44710
+      1.60 |    4.927945 |    5.280000              |   2.080000 |  -0.36248
+     (6.0s)
+   SU2 lattice: links=12 plaquettes=6 flux configs=32 dim H_phys=32  (build 0.1s)
+   SU2 open 1x1x1: lambda_max(D+A)=8.0000
+     kappa |  Delta_ED   |  Delta_PT(num, 2nd order) | Z2 formula | (4-Delta_ED)/kappa^2
+      0.05 |    4.001874 |    4.001875              |   3.996250 |  -0.74960
+      0.10 |    4.007484 |    4.007500              |   3.985000 |  -0.74841
+      0.20 |    4.029749 |    4.030000              |   3.940000 |  -0.74373
+      0.40 |    4.116215 |    4.120000              |   3.760000 |  -0.72634
+      0.80 |    4.430050 |    4.480000              |   3.040000 |  -0.67195
+      1.60 |    5.010339 |    5.920000              |   0.160000 |  -0.39466
+     (0.1s)
+   SU3 lattice: links=4 plaquettes=1 flux configs=3 dim H_phys=3  (build 1.0s)
+   SU3 open 1x1: lambda_max(D+A)=0.0000
+     kappa |  Delta_ED   |  Delta_PT(num, 2nd order) | Z2 formula | (4-Delta_ED)/kappa^2
+      0.05 |    3.975629 |    3.975625              |   4.001250 |   9.74845
+      0.10 |    3.952531 |    3.952500              |   4.005000 |   4.74692
+      0.20 |    3.910243 |    3.910000              |   4.020000 |   2.24393
+      0.40 |    3.841875 |    3.840000              |   4.080000 |   0.98828
+      0.80 |    3.773592 |    3.760000              |   4.320000 |   0.35376
+      1.60 |    3.919184 |    3.840000              |   5.280000 |   0.03157
+     (1.0s)
+   SU3 lattice: links=7 plaquettes=2 flux configs=9 dim H_phys=9  (build 17.1s)
+   SU3 open 2x1: lambda_max(D+A)=2.0000
+     kappa |  Delta_ED   |  Delta_PT(num, 2nd order) | Z2 formula | (4-Delta_ED)/kappa^2
+      0.05 |    3.975629 |    3.975625              |   4.000000 |   9.74846
+      0.10 |    3.952530 |    3.952500              |   4.000000 |   4.74698
+      0.20 |    3.910233 |    3.910000              |   4.000000 |   2.24417
+      0.40 |    3.841707 |    3.840000              |   4.000000 |   0.98933
+      0.80 |    3.770726 |    3.760000              |   4.000000 |   0.35824
+      1.60 |    3.875729 |    3.840000              |   4.000000 |   0.04854
+     (17.1s)

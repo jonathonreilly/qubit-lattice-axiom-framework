@@ -7,6 +7,7 @@
 # momentum (pi, pi, 0), polarisation (1, -1, 0)); lam_w = E (O_w^a)^2/(2 L^3), lam_sum = E (O_x^a + O_w^a)^2/(2 L^3).
 import numpy as np, sys, time, json, resource
 L, T, beta, b, kx, kw, ntherm, nmeas, seed = int(sys.argv[1]), int(sys.argv[2]), float(sys.argv[3]), float(sys.argv[4]), float(sys.argv[5]), float(sys.argv[6]), int(sys.argv[7]), int(sys.argv[8]), int(sys.argv[9])
+phi_tw = float(sys.argv[10]) if len(sys.argv) > 10 else 0.0   # flat colour twist along z (row 952, 1.4): z-links of u = exp((phi/L) k)
 rng = np.random.default_rng(seed); Nt = 2*T; sx, sw = T-1, T
 def qmul(p, q):
     r = np.empty_like(p)
@@ -21,6 +22,9 @@ U = rng.normal(size=(Nt, L, L, L, 3, 4)); U /= np.linalg.norm(U, axis=-1, keepdi
 tt, xx, yy, zz = np.meshgrid(np.arange(Nt), np.arange(L), np.arange(L), np.arange(L), indexing='ij')
 par = (tt + xx + yy + zz) % 2
 usign = np.ones((L, L, L, 3)); usign[:, :, :, 1] = ((-1.0)**np.arange(L))[:, None, None]
+uvec = np.zeros((L, L, L, 3, 4)); uvec[..., 0] = usign
+if phi_tw != 0.0:
+    uvec[..., 2, 0] = np.cos(phi_tw/L); uvec[..., 2, 3] = np.sin(phi_tw/L)
 wsp = np.full(Nt, beta); wsp[0] = beta/2; wsp[-1] = beta/2          # spatial plaquette weight per slice
 ct = np.full(Nt-1, beta); ct[sx] = b                                 # time-like coupling of layer (tau, tau+1)
 stag = ((-1.0)**(np.arange(L)[:, None, None] + np.arange(L)[None, :, None]))*np.ones((L, L, L))
@@ -37,7 +41,7 @@ def field(mu):
     S = conj(A)*wsp[:, None, None, None, None]
     S[1:] += ct[:, None, None, None, None]*Um[:-1]
     S[:-1] += ct[:, None, None, None, None]*Um[1:]
-    S[sx, ..., 0] += kx*usign[..., mu]; S[sw, ..., 0] += kw*usign[..., mu]
+    S[sx] += kx*uvec[..., mu, :]; S[sw] += kw*uvec[..., mu, :]
     return S
 def sample_a0(k):
     n = k.size; a0 = np.empty(n); todo = np.arange(n)
@@ -83,7 +87,9 @@ def stat(v):
     blk = v.reshape(10, -1).mean(axis=1); return float(v.mean()), float(blk.std(ddof=1)/np.sqrt(10))
 m = (nmeas//10)*10
 lw = stat((Ow[:m]**2).mean(axis=1)/nrm); lx = stat((Ox[:m]**2).mean(axis=1)/nrm); ls = stat(((Ox[:m]+Ow[:m])**2).mean(axis=1)/nrm)
-res = dict(L=L, T=T, beta=beta, b=b, kx=kx, kw=kw, ntherm=ntherm, nmeas=nmeas, seed=seed, lam_w=lw, lam_x=lx, lam_sum=ls,
+lam_w_col = [float(t) for t in (Ow[:m]**2).mean(axis=0)/nrm]; lam_sum_col = [float(t) for t in ((Ox[:m]+Ow[:m])**2).mean(axis=0)/nrm]
+blk3 = (((Ox[:m]+Ow[:m])[:, 2]**2)/nrm).reshape(10, -1).mean(axis=1); err3 = float(blk3.std(ddof=1)/np.sqrt(10))
+res = dict(phi_tw=phi_tw, lam_w_col=lam_w_col, lam_sum_col=lam_sum_col, lam_sum_col3_err=err3, L=L, T=T, beta=beta, b=b, kx=kx, kw=kw, ntherm=ntherm, nmeas=nmeas, seed=seed, lam_w=lw, lam_x=lx, lam_sum=ls,
            mean_Ow=[float(t) for t in Ow.mean(axis=0)], plaq_bulk=float(np.mean(pl)), tau_xw=float(np.mean(ov)),
            link_comp_var_w=float(np.mean(lv)), sec=round(time.time()-t0, 1), ms_per_sweep=round(1000*(time.time()-t0)/(ntherm+nmeas), 2))
 print(json.dumps(res)); sys.stdout.flush()

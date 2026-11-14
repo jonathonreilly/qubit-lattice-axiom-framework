@@ -16,6 +16,9 @@ Labels used: PROVED (written argument, not yet checked), CONDITIONAL (on named i
   runs of rows 950 and 952, so it is refuted at GUIDE level at beta 2.5 to 2.6. Section 4: three attacks ranked; top
   attack A1. Sections 5 to 7: the proof attempt on A1 in three stages (Theorem QUOT and Proposition ROTOR;
   Proposition TIE; Lemma TRAJ and Identity MM).
+- 2026-11-14 16:13Z. Arithmetic guard of the three model formulas run (7b): all criteria pass.
+- 2026-11-14 16:36Z. GUIDE batch 7a done (16:16Z to 16:35Z): the order at u_xy persists at t = c/2 and t = c at beta 2.6,
+  volume law to L = 12. Section 8 written. Batch 7c (the discrete tie at t = c) started.
 
 ## Plan (eight steps, one per response)
 
@@ -464,6 +467,43 @@ Verdict rules.
 What it cannot show: boxes above 12, slabs thicker than 5, other tilts, the quotient form (this mode is the
 colour-frame zero mode that Proposition ROTOR removes; the discrete tie of row 952 is not run here).
 
+**7a results (GUIDE; batch 16:16Z to 16:35Z under the numeric lock, 71 percent memory free; logs
+`guide/lane970/results.jsonl`, `batch.log`; 2.3, 10.5, 32.4 ms per sweep at L = 4, 8, 12).** beta 2.6. Entries: lam_w and
+lam_sum with block errors. Bulk plaquette 0.666 to 0.670 in all ten runs (recalled 0.670).
+
+| (b, kap) | scale | lam_w, L = 4 | lam_w, L = 8 | lam_sum, L = 4 | lam_sum, L = 8 | lam_sum, L = 12 | lam_sum(8)/lam_sum(4) | (12)/(8) |
+|---|---|---|---|---|---|---|---|---|
+| (0, beta) | t = 0 | 4.14(7) | 22.98(41) | 8.3 (= lam_x + lam_w) | 45.8 (= lam_x + lam_w) | | 5.5 | |
+| (beta/2, beta) | t = c/2 | 7.32(4) | 52.28(21) | 28.81(15) | 208.7(8) | | 7.2 | |
+| (beta, beta) | t = c | 8.39(3) | 60.51(19) | 33.32(12) | 241.3(7) | 784.8(3.0) | 7.2 | 3.25 |
+| (beta, 2 beta) | t = c | 8.73(1) | 65.52(13) | 34.65(4) | 262.0(5) | 865.3(2.7) | 7.6 | 3.30 |
+
+At b = 0 the two factors are independent, so lam_sum = lam_x + lam_w exactly; the raw sample value at L = 8 was
+36.3(3.2), low by a slow cross term between two frames that do not see each other, and I use the sum.
+Verdicts by the rules written before the batch.
+- (V0) PASS: lam_w = 4.14(7) and 22.98(41) at (0, beta) against row 950's 4.19 and 22.62 (1.3 and 1.6 percent), with an
+  independent code and a slab of 5 free slices against 6.
+- (V1) The order PERSISTS at every point: the ratio is 7.2 to 7.6 at b = beta/2 and b = beta, against 5.5 at b = 0 and 8 for
+  full order. Coupling the two slices strengthens the order (lam_w per slice rises from 4.1 to 8.4 at L = 4), and
+  the two frames lock: lam_sum is 4 lam_w within 1 percent.
+- (V2) Growth confirmed at t = c: 3.25 and 3.30 from L = 8 to 12, against 3.375 for full order. lam_sum is about
+  0.45 L^3, so Var(<z, q~>)/|z|^2 = 4 beta^2 lam_sum is about 12 L^3 at the mid-slice (21,000 at L = 12), against the
+  zero-field value of at most 4 beta^2 = 27.
+So at beta 2.6 the plain supremum form fails at t = 0, c/2 and c with a volume law (GUIDE, sides 4 to 12): the
+integral of kbar over t grows like L^3, and the caveat of 3.5 is removed for this slice. As said in 5.3, this
+mode is the colour-frame zero mode that Theorem QUOT removes. The discrete tie is tested next (7c).
+
+**7c. The discrete tie at t = c (criteria written at 16:36Z, BEFORE the run).** Slice u_phi of row 952, 1.4: u_xy with
+every z-link equal to exp((phi/L) k), phi = pi/2. The same script with a tenth argument phi; outputs per colour.
+Runs: beta 2.6; control (b, kap) = (0, beta) at L = 4; then (beta, beta) at L = 4, 8, 12.
+- (W0) Validity: at (0, beta), L = 4, the colour-3 moment of the w slice within 20 percent of row 952's raw
+  temporal-gauge moment 11.4, and colours 1, 2 below 1.5 (row 952: 0.51, 0.87).
+- (W1) Discrete tie at t = c: the colour-3 value of lam_sum grows by a factor at least 4 from L = 4 to 8 and at
+  least 2 from 8 to 12, while colours 1, 2 do not grow (ratio at most 1.5). Then an Ising-type tie between the
+  states n = +e_3 and n = -e_3, which Proposition TW of row 952 shows to be gauge inequivalent, exists in the
+  two-slice law at t = c (GUIDE). If colours 1, 2 grow too, the order is still a frame: inconclusive.
+What it cannot show: the transfer of Proposition TIE (6.3), which needs the cut-off construction.
+
 ## 8. Status, answers, and the result
 
 **8.1 Status table.** "PROVED" means proved by hand here by Claude Fable 5.2, not yet checked by another model.
@@ -476,7 +516,7 @@ colour-frame zero mode that Proposition ROTOR removes; the discrete tie of row 9
 | Proposition OBJ, Lemma SLAB: all statements live on T_B; every time extent enters, with no rate | 3.1, 3.2 | PROVED (Jentzsch RECALLED) |
 | Proposition DEP: FP has (TILT-COV-sup) on every box and no uniform gap on larger boxes | 3.3 | PROVED given row 968, 3.3 (i), 4.2 |
 | Lemma SUB: kbar_(s,0) >= Var_(pi_(beta u))(<z, w>)/(s'^2 |z|^2) for every frozen slice u | 3.4 | PROVED |
-| A box-uniform (TILT-COV-sup) fails at beta 2.5 and 2.6 at t = 0 | 3.5 | GUIDE (runs of rows 950, 952; no new run) |
+| A box-uniform (TILT-COV-sup) fails at beta 2.5 and 2.6 at t = 0, and at beta 2.6 also at t = c/2 and t = c with a volume law | 3.5, 7a | GUIDE (t = 0: runs of rows 950, 952; t > 0: new run 7a, sides 4 to 12, control against row 950 within 2 percent) |
 | Question (2): not circular; the supremum form is strictly stronger than the gap of the same box | 3.6 | PROVED parts 3.1-3.4; the "strictly stronger" half is GUIDE |
 | Three attacks ranked: A1 tie test of the flow forms; A2 the trajectory form; A3 = the lane's open item EXIT (match, not attacked) | 4 | direction |
 | Lemma FH (forced Hessian of an invariant function) | 5.1 | PROVED |

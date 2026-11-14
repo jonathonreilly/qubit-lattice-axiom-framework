@@ -340,3 +340,65 @@ was seen BEFORE these criteria were written. It gave lambda = 41.2 at (pi, pi, 0
 1.13, the fully ordered value 2 L^3 sin^2 theta with sin theta = 0.57) against 0.72 for u = 1. So the L = 4 value was
 known; the L dependence and the controls were not. The smoke runs of both scripts (about 12 s in all) ran outside
 the lock; every reported number comes from the batches under the lock.
+
+## 5.5 GUIDE results of the kill test, batch 1 (run 08:43-08:55Z under the numeric lock, 71 percent memory free)
+
+Log `/tmp/gap-sc-950/logs/batch.log` (not committed). One thread, nice; arrays below 10 MB. Entries are lambda(L), the
+top eigenvalue of the one-colour first-step electric covariance; "blocks" are the four quarter-run values.
+
+| slice | beta | start | L = 4 | L = 6 | L = 8 | L = 10 | k of the max | per-component variance |
+|---|---|---|---|---|---|---|---|---|
+| u = 1 (code control) | 2.3 | cold | 0.2984 | | | | flat top | 0.1600 |
+| u_pi (code control) | 2.3 | cold | 0.4558 | | | | (pi, pi, pi) | 0.2251 |
+| u_xy (power control) | 6.0 | cold | 11.91 | 38.65 | | | (pi, pi, 0), (1, -1, 0) | 0.1404 |
+| **u_xy** | **2.3** | cold | **2.03** | **2.55** | **2.51** | **2.46** | (pi, pi, 0), (1, -1, 0) | 0.2028 |
+| u_xy | 2.3 | hot | | 2.52 | | | (pi, pi, 0), (1, -1, 0) | 0.2024 |
+| **u_xy** | **2.6** | cold | **4.19** | | **22.62** | | (pi, pi, 0), (1, -1, 0) | 0.1901 |
+
+Block spreads: u_xy at beta 2.3: 1.82-2.24 (L = 4), 2.16-3.08 (L = 6), 2.32-2.80 (L = 8), 2.15-2.87 (L = 10); at beta 2.6:
+4.04-4.35 (L = 4), 21.97-23.71 (L = 8); at beta 6.0 within 1 percent.
+Controls. (i) Code: 0.2984 and 0.4558 against row 944's 0.2991 and 0.4503 (0.3 and 1.2 percent): PASS, with an
+independent implementation. (ii) Power: at beta 6.0, lambda(6)/lambda(4) = 3.25 against 3.375 for full order, at the
+predicted momentum and polarization: PASS. The colour direction of the first step IS ordered at beta 6.0, as 5.1
+predicted. (iii) Hot against cold at L = 6: 1.2 percent: PASS.
+**Verdicts against the criteria of 5.2.**
+- beta 2.3: G = lambda(10)/lambda(4) = 1.21 <= 1.3, and lambda is flat from L = 6 to 10 (2.55, 2.51, 2.46). No growth:
+  (SC) and (SC-hor) survive u_xy at beta 2.3. But the level is 2.5, against 0.45 at u_pi and 0.30 at u = 1: the
+  predicted mode is strongly enhanced, with a finite correlation length. In the units of (SC):
+  beta^2 lambda - beta c = 13.2 - 1.2 = 12, so C_h is at least about 12 at beta 2.3 (GUIDE), and sigma^2 = C_h + beta about 14.
+- **beta 2.6: lambda(8)/lambda(4) = 5.4 (full order would give 8), far above the criterion value 4, at the predicted
+  mode. GUIDE: at beta 2.6 the first-step colour direction is ordered, or correlated over more than 8 lattice
+  units, at u_xy; (SC) and (SC-hor) FAIL there with any constant of order one.** At L = 8, beta^2 lambda = 153.
+- beta 6.0: full order. (SC) and (SC-hor) fail (GUIDE), C_h of order beta^2 (2/3) sin^2 theta L^3.
+Reading (GUIDE). The window 2.3 to 2.6 contains, or borders, an ordering transition of the Dirichlet boundary
+layer at the layered pi-flux slice. So (SC) is not only a genuine order-one statement: by this run it is FALSE in
+the upper part of the window, at a slice that is as symmetric as a slice can be. What the run cannot show: whether
+lambda at beta 2.6 saturates at some L above 8 (a long but finite correlation length), the half-space limit (T = 6
+only), any other slice, and (SG-step) itself, which is 0 at u_xy by Lemma CEN.
+Next (batch 3, criteria fixed here before it runs): u_xy at beta 2.6 with L = 6, 10, 12, a hot start at L = 8 and
+T = 10 at L = 8; beta 2.4 and 2.5 with L = 4, 8, 12. At each beta: lambda(12)/lambda(8) >= 2 means growth persists (full
+order: 3.375); <= 1.3 means saturation; otherwise inconclusive. Hot and cold, and T = 6 and T = 10, must agree
+within 15 percent at L = 8, else I say "not equilibrated" or "slab thickness matters".
+
+## 5.6 GUIDE results, compact U(1) control (batch 2; run 08:55-08:59Z under the numeric lock, 71 percent free)
+
+Log `/tmp/gap-sc-950/logs/batch2.log`. Entries are lambda(L) for the scalar field E_l = sin(theta_l(1) - u_l); m_st is the
+mean absolute staggered order parameter of the predicted mode.
+
+| slice | beta | start | L = 4 | L = 6 | L = 8 | k of the max | m_st |
+|---|---|---|---|---|---|---|---|
+| u = 1 | 2.3 (Coulomb phase) | cold | 0.413 | | 0.430 | k near 0 | 0.03, 0.01 |
+| u_xy | 2.3 | cold | 41.3 | 139.6 | 331.6 | (pi, pi, 0), (1, -1, 0) | 1.135, 1.137, 1.138 |
+| u_xy | 2.3 | hot | | 139.8 | | (pi, pi, 0), (1, -1, 0) | 1.137 |
+| u_xy | 0.9 (confined phase) | cold | 1.25 | | 1.11 | (pi, pi, 0), (1, -1, 0) | 0.16, 0.05 |
+
+Against the criteria of 6.3. G_U1 = lambda(8)/lambda(4) = 8.03 at u_xy, beta 2.3, the exact volume ratio: the sign of the
+staggered pattern is fully ordered (sin theta = 0.57), hot and cold starts agree. **GUIDE: compact U(1) in its Coulomb
+phase FAILS (SC-hor), hence (SC), at the layered pi-flux slice**, with C_h of order 2 beta^2 sin^2 theta L^3. Control u = 1:
+lambda = 0.41 to 0.43, flat, at the photon value 1/beta = 0.435 (PASS). In the confined phase (beta 0.9) there is no
+growth (1.25, 1.11), as predicted.
+Reading (GUIDE, with the ARGUED part marked). (a) The photon satisfies (SC) with C_F <= beta, but compact U(1)
+does not: the failure is a compact, large-field effect that the Gaussian model FP of row 929 cannot see. So (SC)
+is NOT group-blind in fact: it is an input that compact U(1) fails at weak coupling. (b) ARGUED (5.1): for U(1)
+the two patterns are gauge inequivalent, so this order should also break (SG-step) itself near u_xy; for SU(2)
+the same order is a gauge frame and does not. This run does not test (b).

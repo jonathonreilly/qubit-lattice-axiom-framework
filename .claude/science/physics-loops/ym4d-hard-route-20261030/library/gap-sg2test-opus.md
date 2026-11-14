@@ -120,7 +120,7 @@ with two regressors (Y_1, Y_2); optional split-sample PCA of lim C_n over all 9 
 (von Mises heat bath) with the U(1) proxy Y = sum over xy plaquettes of slice 1 of e_p sin(theta_p) (gauge invariant).
 Logs (JSON): `library/guide/lane952/logs/`. Speed: 1.3 ms per sweep at L = 4, T = 6.
 
-**2.2 Control C1 (09:5xZ-10:2xZ session; under the numeric lock, 71 percent memory free).** u = 1, beta 2.3, L = 4,
+**2.2 Control C1 (run about 10:14Z under the numeric lock, 71 percent memory free).** u = 1, beta 2.3, L = 4,
 1500 sweeps after 200: per-component variance 0.1597 +- 0.0005 against 0.160 (rows 944, 950): **PASS**. (The k = 0 value of
 Lambda is 0.294; the max over k is 0.319 at a noisy k on a flat top, against row 950's 0.2984 from 20000 sweeps.)
 
@@ -312,14 +312,17 @@ and the half weight of slice T gives S = (beta/2)(-2 u_y) + beta u_y = 0. The co
 loop never accepts. (Other slices are not affected: for u_xy and its twists the yz staples add to +2 u_y.) Fix for a rerun:
 sample Haar when kappa < 1e-3, or start hot. Not rerun.
 **Breach.** My lock expired at 11:25Z while the hung process was still running. Row 954 took the lock at 11:25:57Z, so my
-process ran without the lock for about 30 minutes, beside row 954's jobs (one thread; L = 4 arrays; its memory was not measured). The hung process used, by wall time (it spun in one loop on one core),
-about 76 CPU minutes and produced nothing. With it, this row used about 98 CPU minutes against the 60 asked: about 22 in
+process ran without the lock for about 30 minutes, beside row 954's jobs (one thread; L = 4 arrays; its memory was not measured). The hung process used
+about 76 CPU minutes (estimated from wall time: it spun in one loop on one core) and produced nothing. With it, this row used about 98 CPU minutes against the 60 asked: about 22 in
 useful batches (smoke 1, batch 1 4, batch 2 8, batch 3 9) and 76 lost. So I stopped computing. Not run: batch 3's
 remaining screens (u_pi at L = 8, family D, family C = vacuum slices) and batch 4 (the x-twist scan at beta 2.3 and 2.45, and
 L = 6, 12 at beta 2.6). The lock is now held by row 954.
 
 ## 5. Result (step 8)
 
+Reading order: Sections 0, 1, 2, then 3.0, 3.2, 3.3, 3.4 (results), 4.1-4.3 (meaning), 5; 2.3, 2.5, 3.1 and 4.4 are run plans
+written before their runs. The sections sit in the order of work, so 3.3 and 3.4 follow Section 4. PCA values are given as
+the two half-sample estimates; their spread is the error.
 Plan against what was done: steps 1, 2 and 7 ran in full. Step 4 (tilted copies of u_xy) became the main result: twists
 along z (phi = pi/2, pi/4) and along x. Step 3 (anisotropic deformations of u_pi) ran as a temporal-gauge screen of u_xyyz and
 u_pi; their twisted versions did not run. Step 6 (interpolation) hung (3.4), and step 5 (vacuum slices) did not run.

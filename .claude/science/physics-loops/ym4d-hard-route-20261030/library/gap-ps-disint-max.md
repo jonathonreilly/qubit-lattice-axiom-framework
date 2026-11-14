@@ -31,12 +31,13 @@ Levent Alpoge (with Claude and Codex as authors of their text). Each section nam
 
 Status log (updated in place):
 
-- 2026-11-14T12:06Z: file created; steps 1-8 not started.
-- 12:25Z: Sections 1 and 2 written (inputs read, duplicate check, Piazza-Shen skeleton). Next: Section 3 (STEP 1).
-- 12:50Z: Section 3 written (STEP 1). Next: Section 4 (fact tests).
-- 13:10Z: Section 4 written (STEP 2). Next: Section 5 (STEP 3 stage A) and the GUIDE criteria.
-- 13:30Z: GUIDE criteria written (Section 7a), before any run. Run launched after that.
-- 13:50Z: batch 1 running (lock holder gap-ps-957). Sections 5 and 6 written while it runs.
+- Clock correction (12:36Z). Earlier entries of this log and three section headers carried clock times that I
+  had estimated, not read; they were wrong by more than an hour. Measured times: file created 12:06Z; first launch
+  of the GUIDE batch 12:32:07Z (sanity only, stopped); relaunch (batch 1b) 12:34:19Z. Everything in Sections 1-6 and
+  7a was written between 12:06Z and 12:36Z, in the order of the file. The order "criteria, then run" is as stated.
+- 12:06Z file created. Then, in order: Sections 1-2; Section 3 (STEP 1); Section 4 (STEP 2); Section 7a (criteria);
+  first launch 12:32Z; amendment (A1); relaunch 12:34Z; Sections 5-6; Section 7 (7.1, 7.2).
+- 12:36Z: batch 1b running; batch 1c (dense counts, addition (A2)) queued behind it.
 
 ## 1. Target, objects, duplicate check (READ; no new claim)
 
@@ -293,7 +294,7 @@ diagonal entry of the Hessian ranges over an interval of length 2 k beta = 18 to
 The pointwise criterion needs this ratio below 1. Whether the curvature bound holds at TYPICAL configurations is
 a separate question, with no known answer in the lane; it is the GUIDE test of Section 7.
 
-## 7a. The GUIDE test: design and criteria (written 13:30Z, BEFORE any run)
+## 7a. The GUIDE test: design and criteria (written about 12:30Z, BEFORE any run; first launch 12:32:07Z)
 
 (Placed here in work order. Sections 5 and 6 follow below; Section 7b holds the results.)
 
@@ -439,3 +440,42 @@ identity for block side 1 (no integration), at typical configurations.
   gap first (B4).
 So the Wilson-loop growth (O1) is the first obstruction, and it is not the deepest one. Even with an explicit
 block weight, the absorber (O2) would fail in the window, and what has to be absorbed is not small (O3).
+
+**7a, amendment (A1), written about 12:33Z after the first launch and before any production number.** The first launch
+(12:32:07Z) ran the sanity checks only and stopped at its own rule: S1 passed (worst relative error 2.8e-6), S2 passed
+(top eigenvalue 2.0e-14 at the flat configuration), S3 gave 1.66e-7 against the stated 1e-7. No production run was
+made. Cause: S3 used a central difference along the product geodesic U_l exp(tau xi_l), which leaves the gauge orbit
+at second order, so the difference has a truncation error of order tau^2 that I had not allowed for. Amended S3:
+the central difference along gauge directions at tau = 2e-3, 1e-3, 5e-4 must fall by a factor 4 at each halving
+(between 3.6 and 4.4), which shows that the derivative at tau = 0 vanishes and the residue is truncation. All other
+rules are unchanged. Relaunched as batch 1b at 12:34:19Z.
+
+## 7. The smallest unproved inequality (written about 12:35Z, while batch 1b runs; 7b holds the test results)
+
+**7.1 What the Piazza-Shen input gives for the crux.** It gives no inequality smaller than (LSI-J-seed)_a. The
+reason is Proposition EQ: in every dimension the two-scale decomposition with bounded blocks is an equivalence
+between the inequality for the law and the inequality for its skeleton marginal. In 2D the skeleton marginal is
+explicit. In 4D it is not, and its inequality is the target again. In decreasing strength (each implies the next;
+the implications are PROVED here or in row 947):
+  (4D-LSI): a log-Sobolev inequality for the Wilson law on (24a)^3 x (Z/TZ), all large T, with alpha_4 >= 14 beta K_a
+     (a theorem of Piazza-Shen type in 4D; box-uniform alpha_4 is more than enough, by (T1));
+  equivalently up to constants in (m, beta): (MAC)_(m,a) of Theorem TS-J, for one block side m;
+  (LSI-J-seed)_a (Lemma MARG);  then (HC-vac)_(K_a) and the seed (row 947, Corollary BR-J; row 931, Proposition HC).
+First instance, at the Poincare level: the same chain with variances gives gam_J >= gam_4/7, and gam_4 is the
+spectral gap of the 4D Langevin dynamics on the slab. So the smallest unproved inequality stays
+  (LSI-J-seed)_a, or its Poincare instance gam_J >= 2 beta K_a on B = (24a)^3 (row 947's (PI-br-seed) chain).
+No smaller statement came out of this row.
+
+**7.2 The one new candidate that is not a supremum (OPEN; stated for the record, with its own fact tests).**
+  (DEF-ABS): for the Wilson law e^H on the slab over the seed box there is rho > 0 and a non-negative field D(U)
+  of symmetric forms with (Ric - Hess H)(v, v) >= rho |v|^2 - D(U)(v, v) on horizontal v, such that for every positive
+  gauge-invariant density f with g = log f:
+     E[ f D(grad g, grad g) ] <= (rho/2) E[ f |grad g|^2 ] + E[ f |Hess g|^2 ].
+Then the proof of Proposition HBE gives the inequality for invariant functions with constant rho/2 (PROVED
+implication: insert the two displays in Gamma_2). (DEF-ABS) is an averaged statement in the sense that D may be
+large on a sparse set; it is still a statement for every density f. Fact tests. U(1): Ric = 0 and the horizontal
+Hessian of H has the photon's soft directions, so rho > 0 fails at once (as it must). Frozen groups: undefined.
+SMALL-BOX: rho and D depend on beta through H. Ceilings: at Lemma SEP's flipped link D must be at least 8 beta - 2 + rho
+there, so D is not small in sup norm; the inequality can only hold through the Hessian term, that is through
+a Poincare-type bound for the one-form grad g near a defect. I did not prove it and I have no route to it. The
+GUIDE test says whether its first premise (a positive rho off a sparse set) is even plausible at block side 1.

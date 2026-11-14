@@ -304,3 +304,57 @@ already recorded and are cited, not repeated:
   worst-case/typical split will separate any DS-type uniform mixing statement from (LOC-COV): DS mixing at beta 2.3 is
   not refuted by Lemma WC (it concerns influence, not local defects), but nothing in the literature read proves it.
 
+### Step 5 (done 17:50Z): item (c) remainder, and the summary
+
+**Item (c), other post-BBD flow/localisation results checked (abstract level unless stated).**
+- Bauerschmidt-Bodineau-Dagallier, "A criterion on the free energy for log-Sobolev inequalities in mean-field particle
+  systems", arXiv:2503.24372 (abstract read): uniform LSI from a free-energy criterion; quadratic interactions, extended
+  to non-quadratic interactions with a "mode decomposition", explicitly different from the Polchinski scale
+  decomposition; mean-field and dense-graph models only. Not a lattice gauge or short-range compact result.
+- Abdelghani-Bauerschmidt-Bodineau-Dagallier, sinh-Gordon LSI arXiv:2609.28091 and hierarchical sinh-Gordon
+  arXiv:2609.17461 (titles/abstracts in the listing): non-compact scalar fields; they use the DSS inequality of step 2b.
+- Searches for Polchinski-flow or stochastic-localisation LSI for O(n), Heisenberg, rotator or gauge models after 2023
+  returned only AKV (step 3b), Leake-Li (step 3) and Piazza-Shen (row 955). No non-abelian lattice-gauge LSI by a flow or
+  localisation method in d >= 3 was found beyond what row 955 records.
+
+**Summary table (each source: what it proves; whether it gives the targets at SU(2), d = 4, beta 2.3-2.6).**
+
+| Source | Exact content (short) | Hypotheses | (TILT-COV-sup) | (LOC-COV) |
+|---|---|---|---|---|
+| Shen-Zhu-Zhu YMH 2401.13299, Lemma (unitary gauge), Thm 1.3-1.4 | Bakry-Emery LSI, volume-uniform, links in a uniform field kappa tr U | K_YM > 0 (strong coupling), small kappa; SO(N), SU(N) "readily" | weaker form: bounded tilts, small beta (argued extension to non-uniform tilts) | no |
+| Ding-Song-Sun; Abdelghani-Bauerschmidt-Bodineau-Dagallier 2609.08980 Thm 1.1 | <s_x; s_y>_g <= <s_x; s_y>_0 for ALL fields g | scalar spins, ferromagnetic pair interaction, GHS potentials | the exact SHAPE needed (sup = zero field) but not for SU(2); row 968 GUIDE run says the comparison is false for the SU(2) slice | no |
+| Osterwalder-Seiler / Fradkin-Shenker via Chatterjee-Yakir 2509.19176 | mass gap regions (I) beta small, any m; (II) beta, m large; (III) U(1), any m, beta large | Higgs in unitary gauge (uniform tilt), full lattice | (I): uniform in the uniform tilt, small beta only | no |
+| Bonati et al. 0911.1721 | first-order Higgs line ends at beta_c = 2.7266(16) | numerical, bulk 4D uniform tilt | GUIDE only: no bulk transition below 2.73 | no |
+| Dobrushin/Follmer (recalled) | covariance bound uniform in single-site fields | Dobrushin condition, beta of order 0.05 | weaker form, small beta | no |
+| Leake-Li 2611.05228 Thm 1.1, Lemma 5.1, Thm 1.4 (+ Guo-Zhang, Chen-Liu) | Glauber gap from two-site maximal correlations; O(N) pair max-correlation <= |kappa|/N for all fields | two-site bounds uniform in pinnings and fields | ARGUED transfer: full (TILT-COV-sup), all phi, kbar = (1/4)(1/s^2 + 1/s'^2)/(1 - 7 beta/2), for beta < 2/7 (temporal gauge) | no (decay only at strong coupling) |
+| Dyson-Lieb-Simon Thm D.2 (via AKV) | every tilt of uniform measure on S^(N-1) has Cov <= (1/N) Id | one spin | one link: zero tilt is worst (1/4) | no |
+| Anari-Koehler-Vuong 2407.16104, semi-log-concave theorem | Cov of quadratic-coupled product of rho-semi-log-concave factors <= rho Q_eta(rho ||J||) | J >= 0; finite for rho ||J|| < s(eta) | ARGUED: reduces (TILT-COV-sup) on 0 <= b < 0.587/rho_m to the b = 0 slice (semi-log-concavity of m); cannot reach b = beta since rho_m >= 1/4 | no |
+| DS/SZ/MO mixing (cited from `gap-crux-lit-2.md`) | uniform LSI <=> DS mixing | finite range, compact spins | needs uniform mixing at beta 2.3: unproved | different quantifier (worst case) |
+
+**What this row establishes (reading only; nothing here is proved for SU(2) at the target coupling).**
+1. No published result gives (TILT-COV-sup) or (LOC-COV) for SU(2), d = 4, beta 2.3-2.6, on any box, or for any
+   compact non-abelian lattice gauge model at intermediate coupling.
+2. Published tilt-uniform covariance bounds for compact spins exist at HIGH TEMPERATURE only (Dobrushin; OS region (I);
+   Bauerschmidt-Bodineau, AKV, Leake-Li for O(N)). With Leake-Li's two-site lemma they transfer (ARGUED here) to
+   Wilson SU(2) links in arbitrary linear fields for beta_W < 2/9 (beta < 2/7 for the temporal-gauge slice system),
+   about a factor 10 short of the window.
+3. "Zero field is the worst tilt" is a theorem for ferromagnetic scalar GHS spins (DSS) and for ONE S^3 link (DLS);
+   row 968's run and Lemma NEC indicate it is false for the SU(2) half-space slice, so the SU(2) target must be a
+   box-uniform kbar above k0, not a comparison with zero field.
+4. The precise name of (TILT-COV-sup) in the localisation literature is semi-log-concavity (Eldan-Koehler-Zeitouni).
+   AKV's theorem reduces the layer flow 0 <= b < 0.587/rho_m to one boundary slice; the reduction is lossy (generic
+   Riccati blow-up) and stops below b = beta.
+5. The Higgs literature locates the physical danger: the bulk 4D uniform-tilt model has a first-order line ending at
+   beta about 2.73 (numerical), above the window; no source treats a tilted 3D layer of a 4D confining bulk, or
+   frustrated (non-pure-gauge) tilts.
+
+Suggested inputs for rows 968/970 (proposals, not results): (i) search term "semi-log-concave" for later readers;
+(ii) the GUIDE quantity worth measuring is rho_m (full norm, all tilts of one boundary slice), since by AKV a value
+rho_m < 0.587/beta would carry (TILT-COV-sup) through the whole layer flow; row 968's own runs suggest rho_m is about
+0.31 or more at beta 2.3, which would need beta < 1.9, so the test is expected to fail, and that failure would itself be
+informative only about AKV's lossy reduction, not about (TILT-COV-sup).
+
+Files changed: this file only. Scratch (not committed): /tmp/tiltcov-src-971 (fetched sources), /tmp/tiltcov-scripts-971.
+No numeric job was run. Checked by no one.
+
+RESULT: Reading row 971 (Claude Opus 5.5 high, unchecked): no published result gives (TILT-COV-sup) or (LOC-COV) for SU(2), d = 4, beta 2.3-2.6; tilt-uniform covariance bounds exist only at strong coupling (Dobrushin, Osterwalder-Seiler region (I), Shen-Zhu-Zhu YMH, and Leake-Li 2611.05228 whose two-site lemma transfers (ARGUED here, unchecked) to Wilson links in arbitrary linear fields for beta_W < 2/9, a full (TILT-COV-sup) but a factor about 10 below the window); "zero field is the worst tilt" is a theorem only for ferromagnetic scalar GHS spins (Ding-Song-Sun, extended in 2609.08980) and for one S^3 link (Dyson-Lieb-Simon); (TILT-COV-sup) is semi-log-concavity in the Eldan-Koehler-Zeitouni sense, and Anari-Koehler-Vuong's theorem reduces it on the layer flow b < 0.587/rho_m to one boundary slice but cannot reach b = beta; (TILT-COV-sup) and (LOC-COV) stay OPEN.

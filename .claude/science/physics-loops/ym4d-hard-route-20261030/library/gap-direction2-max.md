@@ -10,12 +10,12 @@ Labels used: PROVED (written argument, not yet checked), CONDITIONAL (on named i
 ## Status log (newest last; times from `date -u`)
 
 - 2026-11-14 15:45Z. File created. Plan below. No result yet.
-- 2026-11-14 16:00Z. Section 1 (inputs) and Section 2 (question 1: NOT a port) written.
-- 2026-11-14 16:25Z. Section 3 (question 2) written, with Lemma SUB: the supremum form contains the frozen-slice
-  statement of rows 950 and 952, so it is already refuted at GUIDE level at beta 2.5 to 2.6. Working notes for the
-  next sections are at the end of Section 3 (3.6).
-- 2026-11-14 16:35Z. Section 4 (ranking of three attacks) written. Top attack: A1, the tie test of the flow forms.
-- 2026-11-14 16:45Z. Section 5 (stage 1 of A1: Theorem QUOT, Proposition ROTOR) written.
+- Between 15:45Z and 16:12Z (clock read at 16:12Z; earlier entries of this log carried estimated times that ran
+  ahead of the clock by up to 50 minutes, and I replaced them): Sections 1 to 7 written, in this order. Section 2:
+  question 1, NOT a port. Section 3: question 2, not circular; Lemma SUB links the supremum form to the frozen-slice
+  runs of rows 950 and 952, so it is refuted at GUIDE level at beta 2.5 to 2.6. Section 4: three attacks ranked; top
+  attack A1. Sections 5 to 7: the proof attempt on A1 in three stages (Theorem QUOT and Proposition ROTOR;
+  Proposition TIE; Lemma TRAJ and Identity MM).
 
 ## Plan (eight steps, one per response)
 
@@ -331,4 +331,112 @@ is a gauge transformation of the slice w, not of the tilt, and the tilt gives it
 its strength. In an ordered phase its variance at the lowest momentum grows like L^2. Q_phi sums over orbit
 directions of the tilt and gives a bounded gain for such a wave. (ii) A tie between gauge-inequivalent states
 (row 952) is discrete: no orbit direction joins the two states, and Q gives nothing. Section 6 treats it.
+
+## 6. Question (4), stage 2 of A1: what a tie between two states costs each flow form (Proposition TIE)
+
+**6.1 The two-phase model.** One coordinate phi in R; the component of q~ on it takes the values +a and -a with
+probability 1/2 each. The flow of row 968, Section 3, with C_t = t on [0, c): Z(phi) = cosh(a phi) and V_0 = -log cosh(a phi).
+
+**6.2 Proposition TIE (PROVED, hand).**
+(a) V_t(phi) = -log cosh(a phi) - a^2 t/2 and Hess V_t(phi) = -a^2 sech^2(a phi) for every t in [0, c). nu_t has density
+    proportional to cosh(a phi) e^(-phi^2/(2 (c - t))): the equal mixture of N(+a(c - t), c - t) and N(-a(c - t), c - t).
+(b) The test function G(phi) = tanh(a phi) is invariant under the flow: P_(0,t) G = G for every t.
+(c) Supremum form: kbar_t >= a^2 for every t. The criterion then returns 1/gamma = (e^(2 a^2 c) - 1)/(2 a^2).
+(d) Averaged form: every kap_t admissible in (ABS-flow) of row 968, 7.1, obeys kap_t >= a^2/4 for every t in [0, c).
+    So the averaged form gains a factor 4 in the exponent and no more.
+Proof. (a) A centred Gaussian of variance t maps cosh(a .) to e^(a^2 t/2) cosh(a .). The variance of the two-point
+law with weights e^(+-a phi) is a^2 sech^2(a phi). The density of nu_t is e^(-V_t) times the Gaussian of variance c - t.
+(b) P_(0,t) G (phi) = e^(V_t(phi)) times the Gaussian average of e^(-V_0) G = cosh . tanh = sinh(a .), which is
+e^(a^2 t/2) sinh(a phi). Divide by e^(a^2 t/2) cosh(a phi).
+(c) phi = 0 in (a); then 1/gamma = integral over [0, c] of e^(2 a^2 t) dt (row 968, 2.1).
+(d) Put F = 1 + eps G in (ABS-flow) and keep the order eps^2 (F_t = 1 + eps G by (b)): 2 E_(nu_t)[a^2 sech^2(a phi) G'^2]
+<= 2 kap_t E_(nu_t) G'^2 + E_(nu_t) G''^2. Here G' = a sech^2, G'' = -2 a^2 sech^2 tanh. With u = a phi, A = a^2 (c - t) and
+M_k := integral of sech^k(u) e^(-u^2/(2A)) du, the three terms are 2 a^3 M_5, 2 kap_t a M_3 and 4 a^3 (M_3 - M_5)
+(use the weight cosh and tanh^2 = 1 - sech^2). So kap_t >= a^2 (3 M_5/M_3 - 2). Last, M_5 >= (3/4) M_3 for every A:
+sech^2 and e^(-u^2/(2A)) are both decreasing in |u|, so they are positively correlated under the probability
+density proportional to sech^3 (Chebyshev's sum inequality), and the mean of sech^2 under that density is
+(integral of sech^5)/(integral of sech^3) = (3 pi/8)/(pi/2) = 3/4 (reduction I_n = ((n - 2)/(n - 1)) I_(n-2), I_1 = pi). QED
+
+**6.3 What the model says about the lattice (ARGUED; the transfer is not proved).**
+- A tie is a tilt phi_0 at which J_(b,phi_0) is an equal mixture of two states A and B, and a unit vector e,
+  horizontal at phi_0 and fixed by its stabiliser, on which <e, q~> is near +a under A and near -a under B. If A
+  and B are gauge inequivalent, a gauge-invariant function can tell them apart, and on the line phi_0 + rho e the
+  partition function is Z(phi_0) cosh(a rho) times a smooth factor. Then (a)-(d) apply on that line.
+- Size. a^2 is the variance of <e, q~> at the tie. For row 952's slice (u_xy with a flat colour holonomy, beta 2.6)
+  the first-step variance per unit |z|^2 is 0.06 L^3 to 0.10 L^3, so at the mid-slice a^2 is at least
+  4 beta^2 x 0.06 L^3 = 1.6 L^3 (GUIDE; Lemma SUB). By (d) the averaged form needs kap >= 0.4 L^3 wherever the tie
+  persists in t, against a zero-field value of 2 beta^2 = 13.5.
+- Truth against criterion. In the model the measure nu_0 is bimodal and its true constant is small too. On the
+  lattice the tie sits in a region of tilts of nu_t-measure e^(-const L^3) (a slice near u_xy is a large deviation),
+  and mass can pass around it. So the true constant of nu_s need not feel it. The flow forms do feel it:
+  they ask for one rate for all test functions, and a test function may sit on the tie (take 1 + eps chi G with a
+  cut-off chi around phi_0). This is the exact place where "uniform over test functions" costs more than the
+  truth.
+- Open in this transfer: the persistence of the tie along t (ARGUED in 3.5), the cut-off construction, and
+  the product structure near phi_0.
+
+**6.4 Verdict of stages 1 and 2 on the flow forms (GUIDE for SU(2); PROVED for the models).**
+
+| Form | Plain u_xy (colour frame, row 950) | u_xy with flat holonomy (discrete tie, row 952) |
+|---|---|---|
+| (TILT-COV-sup), row 968 | refuted at beta 2.5, 2.6 (Lemma SUB; growth like L^3) | refuted at 2.6 |
+| (TILT-COV-quot), Section 5 | zero mode removed (ROTOR); long waves remain (ARGUED, L^2) | refuted at 2.6 (no orbit gain) |
+| (ABS-flow), row 968, 7.1 | not decided | needs kap >= a^2/4 of order L^3 at 2.6 (TIE (d), ARGUED transfer) |
+
+At beta 2.3 none of the three is refuted by these slices (row 950: 2.5 saturated; row 952: "at 2.3 nothing
+grows"; at 2.45 row 952 is inconclusive). A box-uniform bound there would still carry a constant of at least
+53 at t = 0 (Section 3.5), about five times the zero-field value.
+Direction. A proof of the seed in the whole window cannot pass through any flow criterion whose rate is
+uniform over test functions. What stays is the inequality for the functions the seed actually reads
+(Section 7).
+
+## 7. Question (4), stage 3: what the seed actually reads (Lemma TRAJ, Identity MM), and the form that stays
+
+**7.1 Lemma TRAJ (PROVED by inspection of two proofs; an implication).** For u in M and k >= 0 let f_(u,k) := P^k p_1(u, .)
+be the density used in Proposition HC, and U_(u,k,s)(y) := E[f_(u,k)(w) | y_s = y] its bridge interpolation (the function
+u_s of Theorem BR, step (i)). Put
+  (LSI-traj)_s: Ent_(nu_s)(phi^2) <= (2/alpha_s) integral of |grad phi|^2 d nu_s  for phi = U_(u,k,s)^(q/2), u in M, k >= 0, 1 < q <= 2.
+If (LSI-traj)_s holds with (1/2) integral over (0, 1/beta) of alpha_s ds >= alpha, then X(2m + 2; B) <= 72 beta |B| e^(-2 alpha m).
+Proof. Proposition HC (`gap-direction-max.md` L305-312) applies (HC-vac) to h = p_1(u, .) only. Theorem BR
+(`gap-fc-max.md` L144-177) gets ||P^m h||_2 <= ||h||_(q') from m one-step bounds, applied to f = P^k h with exponents
+between p_k and p_(k+1), all in (1, 2] (its step (v)). Each one-step bound uses (LSI-br)_s once, in step (iii),
+for phi = u_s^(q(s)/2) with u_s the interpolation of f. QED
+Note for the checker of rows 931 and 947 (not my file). (HC-vac) is stated for gauge-invariant h, and
+p_1(u, .) is invariant only under a joint transformation of u and the argument. I read p_1 as the kernel of
+the chain on gauge-invariant functions (the average of the kernel over the gauge group in one argument). I did
+not re-derive Lemma HOT for that kernel; its upper bound can only improve under averaging.
+
+**7.2 Identity MM (PROVED given BBD (3.44) and Proposition FLOW, both as read in row 968; the gradient formula is
+proved here).** Let J' be a probability law on M x M with bounded density with respect to J, mu_s the law of the
+bridge point under J', and phi_t = (1 - t/c) q + (c - t)^(1/2) xi the tilt of row 968, 3.1 (d). Then
+  D(mu_s | nu_s) = (1/2) integral over [0, c] of E_(J')| E_(J')[q~ | phi_t] - E_J[q~ | phi_t] |^2 dt.
+Proof. Given (x, w), phi_t is Gaussian with mean (c - t) q~ and covariance (c - t) Id. So the density l'_t of phi_t under
+J' has grad log l'_t(phi) = E_(J')[q~ | phi_t = phi] - phi/(c - t), and the same holds for J. F := d mu_s/d nu_s = l'_0/l_0. The chain
+(x, w) -> phi_0 -> phi_t is Markov, so P_(0,t) F = E_J[F(phi_0) | phi_t] = l'_t/l_t =: F_t, and grad log F_t is the difference of
+the two conditional means. BBD (3.44): Ent_(nu_0)(F) = 2 integral of E_(nu_t)|grad F_t^(1/2)|^2 dt = (1/2) integral of
+E_(nu_t)[F_t |grad log F_t|^2] dt, and F_t nu_t = l'_t. QED
+(This is the mismatched-estimation identity for a Gaussian channel; the name is RECALLED, the proof is above.)
+Reading. For J' the two-slice law of the chain started at u, the entropy that the route must contract is an
+integrated mean-square difference between two estimators of q~: the one that knows the start u and the
+stationary one. The average is over the tilts that the started chain produces. No supremum over tilts and
+no test function occurs. This is the exact sense in which the seed reads typical tilts only.
+
+**7.3 The form that stays (OPEN).** (LSI-traj-seed)_a: (LSI-traj)_s on the box (a; (4a)^3) with
+(1/2) integral of alpha_s ds >= K_a. Strength: (LSI-br-seed)_a implies it (restriction of the class); it implies the
+seed (7.1). Its necessary consequence, by row 947 (BR-ent) restricted to the same functions:
+  (EC-traj): D(mu^(u,k+1) | nu) <= e^(-A) D(mu^(u,k) | nu), with both sides given by Identity MM.
+Why the ties of Section 6 do not refute it (ARGUED). The test function of Proposition TIE sits on the tie.
+The functions U_(u,k,s) are fixed by the dynamics. For a typical start u a tie region has an exponentially small
+share of both sides of (LSI-traj). I did not prove this: U can be as large as e^(36 beta |B|) on atypical sets, so
+"small share" needs a large-deviation estimate that I do not have.
+Why I cannot prove it. It is entropy production along one trajectory at order-one coupling. Identity MM turns
+it into a comparison of two posterior means at typical tilts; the difference of the two is the memory of the
+start, and its decay in k is the mass gap seen in an estimation problem. No estimate in the account, and no
+tool of rows 941 to 968, bounds it.
+
+**7.4 Where the proof attempt on A1 ends.** Stage 1 (PROVED): the gauge orbit gives a gain Q_phi; it removes the
+rigid colour frame. Stage 2 (PROVED for the model): a discrete tie costs the supremum form a^2 and the averaged
+form a^2/4. Stage 3 (PROVED implication): the seed reads the inequality on the trajectory functions only, and
+there the entropy is an average over typical tilts (Identity MM). What failed: no stage gives a bound for
+SU(2). What is left: (LSI-traj-seed)_a, or the route change of A3.
 

@@ -22,12 +22,18 @@ The transfer-matrix and vacuum-slice setting builds on Ethan Sussman and Levent 
 7. If it does not close: the smallest unproved inequality, and one test that could refute it.
 8. Final summary and the RESULT line.
 
+Plan as followed (recorded at the end): Steps 1-4 as planned. Step 5 became the bridge theorem (5.1-5.5), with the
+direct attack on (GC) and (FC) in 5.6 and the named property in 5.7. Step 6 holds the GUIDE runs. Step 7 holds the
+two-slice form, the smallest unproved inequality and the test. The Result is at the end.
+
 ## Status log
 
+- Status: FINISHED 2026-11-14T09:59Z. The target (FC) is NOT proved; see Result at the end.
 - 08:51Z file created. Nothing proved yet.
 - about 08:58Z Steps 1-3 written below. Branch decision: row 946 did NOT refute (FC); so (FC) is attacked.
 - about 09:00Z Step 4 written. 09:03Z Step 5 (Theorem BR) written. 09:06Z Step 6 criteria written; numeric lock held by row 950 (gap-sc-950) until 09:59Z at the latest; the run waits.
 - (Clock times in this log are from `date -u`; the session started 08:51Z.)
+- 09:34Z section 5.7 rewritten (Lemma INV; an earlier wording on the centre element was wrong and is removed). 09:43Z GUIDE Run 2 (rotor). 09:51Z-09:58Z rotor rerun with row 941's sign and GUIDE Run 3 (SU(2) boxes). 09:59Z Result updated. FINISHED 09:59Z.
 - 09:11Z sections 5.6-5.8 written. 09:13Z Step 7 written. 09:16Z provisional Result written. 09:17Z GUIDE run of Step 6 done (lock acquired 09:17:34Z, released 09:17:36Z); results in Step 6.
 
 ## Steps 1-3: inputs read, branch decision, duplicate check (READ; no new claim)
@@ -408,9 +414,18 @@ Verdicts by the criteria written before the run.
   (u -> u + pi maps (h1, h2) to (-h1, h2), not to (-h1, -h2)); with one of them zero they agree, which is why the
   other six cases match row 941 to four digits. Row 941 calls (2.3, 1, 0.5) a one-well case, which is the sign
   V = -(h1 cos u + h2 cos 2u). So the two FAIL rows are valid cases of a different potential (minima at u = 2 pi/3
-  and 4 pi/3), not row 941's. A rerun with the other sign is below if the lock allowed it.
+  and 4 pi/3), not row 941's. The rerun with the other sign is below.
 - K1': PASS in all eight cases. (BR-gap) is not violated in the embedded geometry (M a circle in R^2).
 - K3': in the two double wells of row 941 (its theta_GC 9.5 and 1.06), E_BR/E_1 = 0.78 and 0.87. Supported.
+Rerun with row 941's sign (09:51:27Z, same lock session as Run 3 below; `br_rotor2.py` = `br_rotor.py` with the case
+list replaced by (2.3, -1, -0.5) and (4, -2, -1); log `br_rotor2.log`):
+
+| (beta, h1, h2) | r_1^2 here | r_1^2 row 941 | exp(-integral gam_s) | E_1 | E_BR | E_BR/E_1 | min gam_s | gam at mid | K0 | K1' |
+|---|---|---|---|---|---|---|---|---|---|---|
+| (2.3, -1, -0.5) | 0.1382 | 0.1382 | 0.1516 | 0.9895 | 0.9432 | 0.953 | 3.632 | 4.315 | PASS | PASS |
+| (4, -2, -1) | 0.1075 | 0.1075 | 0.1098 | 1.1152 | 1.1044 | 0.990 | 8.170 | 8.170 | PASS | PASS |
+
+So K0 holds in all eight of row 941's cases once the sign is matched, and K1' holds in all ten models run.
 Reading (GUIDE). For free rotors the bridge bound is within 8 percent of the true rate at beta 0.3 to 2.3 and
 within 0.2 percent at beta 8. So Theorem BR loses little in the embedded geometry. It proves nothing about SU(2)
 on a box.
@@ -494,7 +509,7 @@ Closed form for rho < 1/2: Xi = 4 (1 - 4 rho^2)^(-1/2) artanh(((1 - 2 rho)/(1 + 
 The variance form: E_1 >= Xi(beta/gam_J)/2.
 Checks in one Gaussian mode (J has precision matrix [[beta + c, -beta], [-beta, beta + c]], so alpha_J = gam_J = c = beta (e^omega - 1)):
 omega = 3: rho = 0.0524, Xi/2 = 2.97 <= 3. omega = 0.5: Xi/2 >= (e^0.5 - 1)/2 = 0.324 <= 0.5. Small omega: Xi/2 -> (pi/4) omega.
-Consistent, and sharp for large omega. FP: alpha_J = beta (e^(omega_min) - 1), so alpha <= 0.79 omega_min (1 + o(1)) < 0.22/a: fails the rate.
+Consistent, and sharp for large omega. FP: alpha_J = beta (e^(omega_min) - 1), so the output of 7.2 is about 0.79 omega_min < 0.22/a (the true rate of FP is omega_min < 0.27/a): it fails the rate.
 What 7.2 changes in the chain. Rows 931-941 used (LSI-vac) and (SG-step) (sup form; row 944: not automatic; row 950: (SC)).
 7.2 uses one inequality for one fixed measure, with no supremum over a conditioning slice. (LSI-J) implies (LSI-vac)
 with the same constant (functions of one slice). It is lossy: unlike Theorem BR it inherits every barrier of nu.
@@ -516,7 +531,7 @@ form of it. I know no method that reaches it: the curvature criteria are capped 
 5.5), the strong-coupling range is beta below 1/4 (row 931), and nu_s, J have no known local specification
 (m contains Omega). Three group-blind attempts (5.6) stop at conditional-covariance bounds of the same kind.
 
-**7.4 One test that could refute (LSI-J-seed) (not run).** For gauge-invariant Phi on two consecutive slices put
+**7.4 One test that could refute (LSI-J-seed) (run here on small boxes only: Run 3 below; not run on the seed box).** For gauge-invariant Phi on two consecutive slices put
   R_J(Phi) := Var_J(Phi)/E_J[ |grad_x Phi|^2 + |grad_w Phi|^2 ].
 (LSI-J) gives the Poincare bound R_J(Phi) <= 1/alpha_J. So one Phi with R_J(Phi) > 1/(2 beta K_a) refutes (LSI-J-seed)_a on the
 measured box: thresholds at beta 2.3 are 0.31 (a = 40), 0.45 (a = 60), 0.72 (a = 100), 1.35 (a = 200). The run is a plain
@@ -526,7 +541,7 @@ winding lines and their cross-section sums, smeared loops, and the worst combina
 eigenvalue, as row 946's zmvar). Scope: side-4 and side-6 boxes are not the seed box; a violation there refutes
 (LSI-J) on that box only. All R_J well below the threshold proves nothing. For (LSI-br) the same test applies to
 functions of y of (B3), with thresholds from U(F) := (1/2) integral of ds/R_s(F) < K_a.
-Simplest instance (PROVED inequality; the numbers are not computed here). Phi := sum over links of t_l, t_l := <x_l, w_l>, the
+Simplest instance (PROVED inequality; measured on small boxes in Run 3 below). Phi := sum over links of t_l, t_l := <x_l, w_l>, the
 time-like plaquette in temporal gauge. Phi is gauge invariant, |grad_(x_l) Phi|^2 = |grad_(w_l) Phi|^2 = 1 - t_l^2, and
 Var_J(Phi) = L chi_t with chi_t := sum over l' of Cov_J(t_l, t_l'), the time-like plaquette susceptibility inside one time
 layer. So R_J(Phi) = chi_t/(2 (1 - E t^2)), and
@@ -543,10 +558,92 @@ chains, 250 measurements each, 4 sweeps apart; jackknife over chains. Script `/t
 not committed. Verdict rules: REFUTES (LSI-J-seed)_a on the run's box iff some R_J - 3 err > 1/(2 beta K_a) (at beta 2.3:
 0.31, 0.45, 0.72, 1.35 for a = 40, 60, 100, 200). Otherwise NOT REFUTED on that box, which proves nothing; then the
 run reports the cap alpha_J <= 1/max R_J for that box. Sanity only: E c_p near 0.60 at beta 2.3 (recalled value).
+Run 3 (GUIDE; lock holder gap-fc-947-rj, 09:51:27Z-09:58:11Z; 71 percent memory free; one thread, nice; peak RSS
+143 MB; logs `/tmp/gap-fc-947/logs/rj_L4_b2.3.log`, `rj_L4_b2.6.log`, `rj_L6_b2.3.log`, not committed). A first batch at 09:43Z
+ran only its smoke test (3^3, 4 measurements, exit 0): the three production commands failed on a shell
+word-splitting error in the runner and produced no number. The batch below is the corrected rerun, same script.
+
+| quantity | 4^3, beta 2.3 | 6^3, beta 2.3 | 4^3, beta 2.6 |
+|---|---|---|---|
+| R_J(f1), space-like sum on x | 0.0573 +- 0.0010 | 0.0627 +- 0.0017 | 0.0409 +- 0.0008 |
+| R_J(f2), space-like sum on w | 0.0574 +- 0.0015 | 0.0581 +- 0.0021 | 0.0407 +- 0.0008 |
+| R_J(f3), time-like sum | 0.1545 +- 0.0041 | 0.1519 +- 0.0033 | 0.1108 +- 0.0013 |
+| top of the 3-span | 0.1547 +- 0.0041 | 0.1525 +- 0.0034 | 0.1117 +- 0.0011 |
+| one space-like plaquette, Var(c_p)/(4 (1 - E c_p^2)) | 0.0419 | 0.0424 | 0.0335 |
+| one time-like plaquette, Var(t)/(2 (1 - E t^2)) | 0.0844 | 0.0848 | 0.0673 |
+| chi_t | 0.1677 +- 0.0044 | 0.1652 +- 0.0036 | 0.1075 +- 0.0012 |
+| E c_p, E t, E t^2 | 0.6058, 0.6049, 0.4575 | 0.6030, 0.6031, 0.4560 | 0.6711, 0.6706, 0.5149 |
+
+Errors: jackknife over 16 (6^3: 8) independent chains; lag-1 autocorrelation of the time-like sum 0.016, 0.028, 0.006.
+Sanity: E c_p = 0.603 to 0.606 at beta 2.3, against the recalled 0.60. Internal check: chi_t/(2 (1 - E t^2)) = 0.1545 at
+4^3, beta 2.3, equal to the directly measured R_J(f3).
+Verdict by the rules written before the run. The largest R_J + 3 err is 0.167, 0.163 and 0.115. Every threshold
+1/(2 beta K_a) for a >= 40 is at least 0.31 at beta 2.3 and 0.27 at beta 2.6. So (LSI-J-seed)_a is NOT REFUTED on these
+boxes, which proves nothing. Readings (GUIDE): (a) the worst function in the span is the time-like plaquette sum;
+(b) no growth from side 4 to side 6 at beta 2.3 (0.155, 0.152); (c) caps for these boxes: alpha_J <= 6.5 (beta 2.3) and
+9.0 (beta 2.6), so the output of Corollary BR-J is at most Xi(beta/alpha_J)/2 = 1.24 and 1.40 (closed form of 7.2);
+with K_22 = 1.26 and K_24 = 1.16 at beta 2.3: if the same cap held on the seed box, Corollary BR-J could not deliver K_a below a = 24;
+(d) the necessary condition chi_t <= (1 - E t^2)/(beta K_a) reads chi_t <= 0.33 at a = 40, beta 2.3, against 0.17 measured.
+Limits: the law is the open-time J_K with K = 6 on boxes of side 4 and 6, not J on the seed box; three test
+functions only; a Poincare ratio bounds alpha_J from above, never from below.
+
+Script (full text of `rj_guide.py`; it imports row 946's `fct.py` by path; run as
+`python3 rj_guide.py --fct <path to lane946/fct.py> --L 4 --beta 2.3 --B 16`, about 2 minutes):
+
+```python
+# GUIDE run 3 for library/gap-fc-max.md Step 7.4 (row 947): Poincare ratios R_J of the two-slice law for
+# zero-momentum plaquette sums, SU(2) Wilson, small boxes, open time (row 946's lattice and updates).
+# Refutes or guides only. Criteria are in the note (written before the run).
+import sys, importlib.util, resource, argparse, numpy as np
+from scipy.linalg import eigh
+ap = argparse.ArgumentParser(); ap.add_argument("--fct"); ap.add_argument("--L", type=int); ap.add_argument("--K", type=int, default=6)
+ap.add_argument("--beta", type=float); ap.add_argument("--B", type=int, default=16); ap.add_argument("--ntherm", type=int, default=300)
+ap.add_argument("--nsep", type=int, default=4); ap.add_argument("--nmeas", type=int, default=250); ap.add_argument("--seed", type=int, default=947)
+a = ap.parse_args()
+spec = importlib.util.spec_from_file_location("fct", a.fct); fct = importlib.util.module_from_spec(spec); spec.loader.exec_module(fct)
+sp = fct.spatial_box(a.L); lat = fct.Lat4(sp, a.K); rng = np.random.default_rng(a.seed)
+pidx = np.array([[j for (j, s) in P] for P in sp["plaqs"]]); psg = np.array([[s for (j, s) in P] for P in sp["plaqs"]])
+lneg = psg < 0; lmul = fct.cmult(lneg); B = a.B; nsl = lat.nsl; npl = len(pidx)
+def slice_obs(x):
+    c = fct.loop_prod(x, pidx, lmul)[..., 0]                    # (B, npl) space-like plaquettes
+    G = fct.loop_grads(x, pidx, lneg, lmul)                     # (B, npl, 4, 4) tangent gradients
+    g = np.zeros((B, nsl, 4))
+    for k in range(4):
+        np.add.at(g, (slice(None), pidx[:, k]), G[:, :, k])
+    return c, g
+U = np.zeros((B, lat.nl, 4)); U[..., 0] = 1.0
+for i in range(a.ntherm): fct.sweep_su2(U, lat.tab_all, a.beta, rng, 2)
+F = np.zeros((B, a.nmeas, 3)); D = np.zeros((B, a.nmeas, 3, 3)); loc = np.zeros((B, a.nmeas, 4))
+for r in range(a.nmeas):
+    for i in range(a.nsep): fct.sweep_su2(U, lat.tab_all, a.beta, rng, 2)
+    x, w, _ = fct.slices_su2(lat, U)
+    cx, gx = slice_obs(x); cw, gw = slice_obs(w)
+    t = (x*w).sum(-1)                                           # (B, nsl) time-like plaquettes
+    F[:, r, 0] = cx.sum(1); F[:, r, 1] = cw.sum(1); F[:, r, 2] = t.sum(1)
+    D[:, r, 0, 0] = (gx**2).sum((1, 2)); D[:, r, 1, 1] = (gw**2).sum((1, 2)); D[:, r, 2, 2] = 2*(1-t**2).sum(1)
+    D[:, r, 0, 2] = D[:, r, 2, 0] = (gx*w).sum((1, 2)); D[:, r, 1, 2] = D[:, r, 2, 1] = (gw*x).sum((1, 2))
+    loc[:, r] = np.stack([cx.mean(1), (cx**2).mean(1), t.mean(1), (t**2).mean(1)], 1)
+    if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1e9 > 2.0: sys.exit("RSS above 2 GB")
+def est(sel):
+    f = F[sel].reshape(-1, 3); C = np.cov(f.T); Dm = D[sel].reshape(-1, 3, 3).mean(0)
+    R = np.diag(C)/np.diag(Dm); top = eigh(C, Dm, eigvals_only=True)[-1]
+    m = loc[sel].reshape(-1, 4).mean(0)
+    Rc = (m[1]-m[0]**2)/(4*(1-m[1])); Rt = (m[3]-m[2]**2)/(2*(1-m[3]))
+    chi_t = C[2, 2]/nsl
+    return np.array([R[0], R[1], R[2], top, Rc, Rt, chi_t, m[0], m[2], m[3]])
+full = est(np.ones(B, bool)); jk = np.array([est(np.arange(B) != b) for b in range(B)])
+err = np.sqrt((B-1)/B*((jk-jk.mean(0))**2).sum(0))
+ac = np.mean([np.corrcoef(F[b, :-1, 2], F[b, 1:, 2])[0, 1] for b in range(B)])
+names = ["R_J(sum c_p(x))", "R_J(sum c_p(w))", "R_J(sum t_l)", "top of 3-span", "R(one c_p)", "R_J(one t_l)", "chi_t", "E c_p", "E t", "E t^2"]
+print(f"L={a.L} K={a.K} beta={a.beta} B={B} ntherm={a.ntherm} nsep={a.nsep} nmeas={a.nmeas} links/slice={nsl} lag-1 autocorr of sum t: {ac:.3f}")
+for n_, v, e in zip(names, full, err): print(f"  {n_:18s} {v:.5f} +- {e:.5f}")
+print("  peak RSS MB", resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1e6, flush=True)
+```
+
 Exactly solvable companion (not run): the one-plaquette chain. Compare E_1 (3.56 at beta 2.3, row 941 Run 3) with
 Xi(beta/gam_J)/2 and with (1/2) integral of gam_s ds; both must be below E_1, and the gap between them measures the loss.
 
-## Result (written 09:16Z; the GUIDE row was updated 09:19Z after the run of Step 6)
+## Result (written 09:16Z; updated 09:59Z after the three GUIDE runs)
 
 | Statement | Label |
 |---|---|
@@ -564,14 +661,16 @@ Xi(beta/gam_J)/2 and with (1/2) integral of gam_s ds; both must be below E_1, an
 | Bridge identity for G(s) = integral of abs(grad u_s)^2 d nu_s, and (COV-dir) implies (GC) | identity PROVED; (COV-dir) OPEN |
 | Lemma J and Corollary BR-J: (LSI-J)_(alpha_J) for the two-slice law gives (HC-vac)_alpha, alpha = Xi(beta/alpha_J)/2 >= min(alpha_J/(2 beta), 1) | PROVED given the Gaussian log-Sobolev inequality (RECALLED) |
 | chi_t <= 2 (1 - E t^2)/alpha_J under (LSI-J) | PROVED (one test function) |
-| Double wells that one step jumps: the bridge form keeps a rate where (GC) fails | ARGUED; GUIDE (Step 6): in five flat double wells with theta_GC >= 1, E_BR/E_1 is 0.79 to 0.85; (BR-gap) not violated in nine cases; exact in two Gaussians |
-| (FC)_theta, (GC)_theta with the seed rate, for SU(2) Wilson at beta 2.3 to 2.6 on the seed box | OPEN; not proved; shown not necessary |
+| Lemma INV: for SU(2) on a box of side at least 3 the gauge-invariant polynomials of degree at most two in the bridge field are c_0 + sum of c_l abs(y_l)^2; FP's failing functions have degree one and two | PROVED (hand) |
+| Small-box run of the test of 7.4 (SU(2), 4^3 and 6^3 at beta 2.3, 4^3 at beta 2.6, open time): max R_J = 0.155, 0.152, 0.112; chi_t = 0.168, 0.165, 0.107 | GUIDE; (LSI-J-seed)_a not refuted on these boxes; caps alpha_J <= 6.5 and 9.0 there |
+| Double wells that one step jumps: the bridge form keeps a rate where (GC) fails | ARGUED; GUIDE (Step 6): in five flat double wells with theta_GC >= 1, E_BR/E_1 is 0.79 to 0.85, and in row 941's two double-well rotors 0.78 and 0.87; (BR-gap) not violated in 19 models (9 flat, 10 rotor); exact in two Gaussians; within 8 percent for free rotors |
+| (FC)_theta, (GC)_theta with the seed rate, for SU(2) Wilson at beta 2.3 to 2.6 on the seed box | OPEN; not proved; not necessary for the seed (GUIDE: chains with a gap where (GC) fails) |
 | (LSI-br-seed)_a, (LSI-J-seed)_a, (PI-br-seed)_a for SU(2) Wilson at beta 2.3 to 2.6 | OPEN; no bound on alpha_s, alpha_J, gam_s for SU(2) is proved here |
 | (HC-vac) on the seed box; the seed | OPEN |
 
 Limits. Every proof is by hand, by Claude Fable 5.2 (max), checked by no other model; the check is row 949.
-All PROVED statements are group-blind implications or identities, except the Elitzur covariance of 5.5 and 5.7,
-which uses the centre element -1 on one link (it holds for compact U(1) too). No statement here bounds a
+All PROVED statements are group-blind implications or identities, except the Elitzur covariance of 5.5 and Lemma INV of 5.7,
+which use the gauge map -1 at one site (the degree-one part holds for compact U(1) too). No statement here bounds a
 log-Sobolev or Poincare constant for SU(2) in the window. Recalled and not rebuilt: the Gaussian log-Sobolev
 inequality (used in Lemma J only), lattice numbers (GUIDE). Row 936 was read for statements only. origin/main and the
 PR branches are not on this clone and were not searched. Credit: the slice chain, (A1)-(A7), Theorems C, C0 and
@@ -581,4 +680,4 @@ hypercontractivity), Nelson, Elitzur, Ahlswede and Gacs (entropy and hypercontra
 Bodineau (log-Sobolev inequalities through a Gaussian decomposition; recalled, not used in a proof step).
 Nothing here is a seed at order one, a mass gap, or a public claim.
 
-RESULT: Row 947 (Claude Fable 5.2 max, author, checked by no one): (FC)_theta with the seed rate for SU(2) Wilson at beta 2.3-2.6 is NOT proved and stays OPEN; row 946 did not refute it (GUIDE on open-time laws, boxes of side 4 and 6). PROVED (hand, unchecked): (FC)/(GC) are not necessary for the seed and entropy contraction is (EC-nec); Theorem BR: one step of the vacuum slice chain is an ambient Brownian bridge of duration 1/beta, and log-Sobolev constants alpha_s of its fractional-time marginals nu_s (gauge-invariant functions) give (HC-vac) directly with alpha = (1/2) integral_0^(1/beta) alpha_s ds, exact in every Gaussian mode, with no use of (LSI-vac), (FC), (C1-av), (COV), (SG-step) or (SC); Corollary BR-J: a log-Sobolev inequality for the two-slice vacuum law J with constant alpha_J gives (HC-vac) with alpha >= min(alpha_J/(2 beta), 1) (given the Gaussian log-Sobolev inequality); Lemma MS ((GC) holds for a power of P from the gap and two one-step constants); the rate statement (FC-seed) and the necessary size b E_1 > 24 C_beta + 72 log a (about 384 + 72 log a); FP fails every form only through the rate (factor above 59). SMALLEST UNPROVED INEQUALITY: (LSI-br-seed)_a, (1/2) integral alpha_s ds >= K_a = (C_beta + 3 log a)/(a - 2) on (24a)^3 for one even a, or its simpler sufficient form (LSI-J-seed)_a, alpha_J >= 2 beta K_a (a >= 30); nothing here bounds these constants for SU(2), which is an intermediate-coupling mass-gap statement. TEST (not run): a plain 4D Monte Carlo of R_J(Phi) = Var_J(Phi)/E_J|grad Phi|^2 for gauge-invariant two-slice observables; first instance chi_t <= (1 - E t^2)/(beta K_a) for the time-like plaquette susceptibility; one violation on the seed box refutes (LSI-J-seed)_a.
+RESULT: Row 947 (Claude Fable 5.2 max, author, checked by no one): (FC)_theta with the seed rate for SU(2) Wilson at beta 2.3-2.6 is NOT proved and stays OPEN; row 946 did not refute it (GUIDE on open-time laws, boxes of side 4 and 6). PROVED (hand, unchecked): (FC)/(GC) are not necessary for the seed, while entropy contraction is (EC-nec); Theorem BR: one step of the vacuum slice chain is an ambient Brownian bridge of duration 1/beta, and log-Sobolev constants alpha_s of its fractional-time marginals nu_s (gauge-invariant functions) give (HC-vac) directly with alpha = (1/2) integral_0^(1/beta) alpha_s ds, exact in every Gaussian mode, with no use of (LSI-vac), (FC), (C1-av), (COV), (SG-step) or (SC); Corollary BR-J: a log-Sobolev inequality for the two-slice vacuum law J with constant alpha_J gives (HC-vac) with alpha >= min(alpha_J/(2 beta), 1) (given the Gaussian log-Sobolev inequality, recalled); Lemma MS ((GC) holds for a power of P from the gap and two one-step constants); Lemma INV (gauge invariance removes FP's failing functions of degree one and two; it does not separate SU(2) from compact U(1), and nothing is proved in degree four); the rate statement (FC-seed) and the necessary size b E_1 > 24 C_beta + 72 log a (about 384 + 72 log a); FP fails every form only through the rate (factor above 59). GUIDE (refute only): (BR-gap) is not violated in 19 solvable chains, is exact in Gaussians, within 8 percent for free rotors, and keeps 0.78 to 0.87 of the true rate in seven double wells where (GC) is false; on SU(2) boxes 4^3 and 6^3 at beta 2.3 and 4^3 at 2.6 the two-slice Poincare ratios are at most 0.155 +- 0.004 (time-like plaquette sum), below every seed threshold (0.31 and more), so (LSI-J-seed) is not refuted there. SMALLEST UNPROVED INEQUALITY: (LSI-br-seed)_a, (1/2) integral alpha_s ds >= K_a = (C_beta + 3 log a)/(a - 2) on (24a)^3 for one even a, or its simpler sufficient form (LSI-J-seed)_a, alpha_J >= 2 beta K_a (a >= 30); nothing here bounds these constants for SU(2) from below, which is an intermediate-coupling mass-gap statement with no known method. TEST: R_J(Phi) = Var_J(Phi)/E_J|grad Phi|^2 for gauge-invariant two-slice observables, first instance chi_t <= (1 - E t^2)/(beta K_a); run here on small boxes only (not refuted); one violation on the seed box would refute (LSI-J-seed)_a.

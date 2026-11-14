@@ -19,6 +19,8 @@ Labels used: PROVED (written argument, not yet checked), CONDITIONAL (on named i
 - 2026-11-14 16:13Z. Arithmetic guard of the three model formulas run (7b): all criteria pass.
 - 2026-11-14 16:36Z. GUIDE batch 7a done (16:16Z to 16:35Z): the order at u_xy persists at t = c/2 and t = c at beta 2.6,
   volume law to L = 12. Section 8 written. Batch 7c (the discrete tie at t = c) started.
+- 2026-11-14 16:46Z. Batch 7c done (16:37Z to 16:44Z): colour-3 volume law at the twisted slice at t = c, but the
+  pre-set control and second clause were not met: formal verdict inconclusive, reading recorded. RESULT written.
 
 ## Plan (eight steps, one per response)
 
@@ -199,6 +201,8 @@ Limits. The runs used slabs of 6 slices and one family of slices. Only t = 0 is 
 the integral of kbar over t, and a spike at one t costs nothing. Persistence for t > 0 is ARGUED only: the
 coupling b <x, w> is invariant under the symmetry that makes the tie, so an ordered phase at b = 0 should persist
 for small b. Row 968 tested the uniform tilt only (its 7.2-7.5) and did not see this family.
+Added after the run of Section 7a: persistence was then tested. At beta 2.6 the order is present at t = c/2 and t = c,
+with a volume law to L = 12 (GUIDE). So for this slice the limit "only t = 0" no longer applies.
 
 **3.6 Verdict on question (2).** Not circular. (i) No larger spatial box enters (3.1). (ii) All time extents
 enter, with no rate (3.2). (iii) The supremum form is not equivalent to a gap. It implies the gap of the same
@@ -219,6 +223,8 @@ the true constant is not affected (mass flows around the tie). (N3) The seed rea
 the functions of Theorem BR's proof started from one-step kernels; their Fisher information sits at typical
 tilts. (N4) A tilt that freezes the x- and y-links leaves a layered O(4) model of z-links at coupling at
 least beta: its susceptibility bounds kbar from below at every beta, box-uniformly but hugely.
+Where the notes went: (N1) is Section 5, (N2) is Section 6, (N3) is Section 7. (N4) was not developed: the factor
+Omega couples the layers and I have no control of it, so (N4) stays an ARGUED remark with no number.
 
 ## 4. Question (3): three attacks, cheapest first, each with its fact tests and its refutation test
 
@@ -504,6 +510,41 @@ Runs: beta 2.6; control (b, kap) = (0, beta) at L = 4; then (beta, beta) at L = 
   two-slice law at t = c (GUIDE). If colours 1, 2 grow too, the order is still a frame: inconclusive.
 What it cannot show: the transfer of Proposition TIE (6.3), which needs the cut-off construction.
 
+**7c results (GUIDE; batch 16:37Z to 16:44Z under the numeric lock, 71 percent memory free; logs
+`guide/lane970/results2.jsonl`, `batch2.log`).** beta 2.6, twist phi = pi/2. Entries: moments per colour (1, 2, 3).
+
+| (b, kap) | L | lam_w per colour | lam_sum per colour | mean of O_w^3 over the run / its rms |
+|---|---|---|---|---|
+| (0, beta) | 4 | 1.59, 1.36, 7.42 | 2.66, 2.56, 16.6(3.8) | -10 / 31 |
+| (beta, beta) | 4 | 1.26, 1.08, 22.1 | 4.82, 3.96, 88.6(1.2) | -53 / 53 |
+| (beta, beta) | 8 | 4.62, 2.73, 172.0 | 18.2, 10.7, 686.9(5.3) | 419 / 420 |
+| (beta, beta) | 12 | 6.61, 8.98, 568.4 | 26.5, 35.5, 2270(25) | 1401 / 1402 |
+
+Verdicts by the rules written before the run.
+- (W0) NOT MET as written. The colour-3 moment at (0, beta), L = 4 is 7.42 against the reference 11.4, and colours 1, 2
+  are 1.59 and 1.36 against "below 1.5". My error in the design: the reference is a smoke value of row 952 (600
+  sweeps, "not used for any verdict", `gap-sg2test-opus.md` L139-141), which I took without reading its context. So
+  this control controls nothing. The code path differs from the 7a run, whose control passed, only in the tilt
+  vector on the z-links.
+- (W1) First clause MET: the colour-3 value of lam_sum grows by 7.75 from L = 4 to 8 and by 3.30 from 8 to 12 (full
+  order: 8 and 3.375). Second clause NOT MET as written: colours 1, 2 grow too (ratios 3.8, 2.7 and then 1.5, 3.3).
+  By the rule the verdict on the discrete tie is INCONCLUSIVE.
+Reading beyond the rules (GUIDE, no verdict). The second clause was badly designed: it cannot tell a frame from a
+pinned direction with soft transverse waves. Three facts point to a pinned direction n = +-e_3. (i) Colour 3
+carries 96 and 97 percent of the moment at L = 8 and 12 (an isotropic frame gives one third), and the ratio of colour
+3 to colours 1, 2 rises with the side (about 20, 48, 73). (ii) The colour-3 value is 2.85 and 2.89 times the
+per-colour value of the untwisted slice of 7a (686.9 against 241.3; 2270 against 784.8), the factor 3 of an order
+that sits on one colour. (iii) At b = beta the sign of the colour-3 pattern never changed during a run (mean equal
+to rms at all three sides). Row 952's Proposition TW (iii) makes the two signs exact mirror images, so the
+second moment inside one sign is the variance of the symmetric law. Colours 1, 2 grow about like L^2, as a
+transverse wave with a stiffness of order L phi^2 would (row 952, 1.4 (e)).
+If this reading is right, a^2 = Var(<z, q~>) is about 4 beta^2 x 1.3 L^3 = 35 L^3 per unit |z|^2 at t = c, at a vector z that
+is horizontal and fixed by the stabiliser (row 952, Proposition TW (ii), (iv)). The gain of Theorem QUOT at this
+tilt is at most ||G_phi^+|| tr G_z, of order L^2 |z|^2/kap^2 (the non-zero spectrum of the twisted lattice Laplacian
+G_phi is at least of order kap^2/L^2; I did not compute the constant), so it does not remove a volume law.
+A clean follow-up test (not run): the same runs at phi = pi/2 and phi = pi/4 on sides 8, 12, 16 with the criterion
+"the share of colour 3 rises with the side and exceeds 0.9", and a control taken from row 952's batch tables.
+
 ## 8. Status, answers, and the result
 
 **8.1 Status table.** "PROVED" means proved by hand here by Claude Fable 5.2, not yet checked by another model.
@@ -523,7 +564,7 @@ What it cannot show: the transfer of Proposition TIE (6.3), which needs the cut-
 | Theorem QUOT: Theorem POL-BR with the gain Q_phi from the gauge orbit | 5.2 | CONDITIONAL on BBD Theorem 3.6 (as read in row 968) and Theorem BR |
 | Proposition ROTOR: a rigid SO(3) frame never violates the quotient form; the plain supremum needs R^2/3 | 5.3 | PROVED (model); arithmetic guard passes (7b) |
 | Proposition TIE: in the two-phase model the supremum form needs a^2 and (ABS-flow) needs a^2/4, at every t | 6.2 | PROVED (model); arithmetic guard passes (7b) |
-| Transfer of TIE to the lattice: row 952's discrete tie refutes all three flow forms at beta 2.6 | 6.3, 6.4 | ARGUED from GUIDE |
+| Transfer of TIE to the lattice: row 952's discrete tie refutes all three flow forms at beta 2.6 | 6.3, 6.4, 7c | ARGUED from GUIDE. New run 7c at t = c: colour-3 volume law (7.75, 3.30 per step), 96 to 97 percent on e_3, frozen sign; by my pre-set rules the verdict is INCONCLUSIVE (control reference badly chosen, second clause not met) |
 | Lemma TRAJ: the seed reads the log-Sobolev inequality only on powers of the bridge interpolations of P^k p_1(u, .) | 7.1 | PROVED implication, by inspection of Proposition HC and Theorem BR |
 | Identity MM: the entropy of a trajectory law is the integrated mean-square difference of two posterior means, over typical tilts | 7.2 | PROVED given BBD (3.44) as read in row 968; guard passes (7b) |
 | (LSI-traj-seed)_a, (LSI-br-seed)_a, (LSI-J-seed)_a, the seed; (TILT-COV-sup) and (ABS-flow) at beta 2.3 to 2.4 | 7.3 | OPEN |
@@ -562,3 +603,7 @@ TIE (b), (d), including the Chebyshev step. (4) Identity MM: the Markov step and
 (5) Lemma TRAJ against the two proofs it cites. (6) Lemma SLAB. The transfer 6.3 and the readings carry no
 proof weight.
 
+**Reading order.** Section 3 (Lemma SUB and the verdict on circularity), then 6.4 (the table of flow forms), then
+7.1-7.3 (what stays), then 2 (the account), 5, 6, 7a-7c, 4.
+
+RESULT: Row 970 (Claude Fable 5.2 max, author, Mac mini worker 1; checked by no one). (1) NOT a port: Sussman and Alpoge prove the tilt-uniform local covariance bound only for their class S of windowed Gibbs measures (CA-II 8.3, lem-correlation-decay, L83869: convex small-field window, coercivity q_- from the block constraint, perturbation below q_-/4, one block step at g <= gamma_H) and assert no block law or decay at first passage; the seed-scale laws fail all three hypotheses (Lemma CLASS), so (TILT-COV-sup) or (LOC-COV) at the seed scale is a new input. (2) NOT circular: every statement lives on the one operator T_B, all time extents enter without a rate (Lemma SLAB), and FP has the supremum form on every box with no uniform gap on larger boxes (Proposition DEP); but the supremum form is strictly stronger than a gap: Lemma SUB (PROVED) shows it contains the frozen-slice statement of rows 950 and 952, so a box-uniform (TILT-COV-sup) is REFUTED at GUIDE level at beta 2.5 to 2.6 (t = 0 from those rows; new GUIDE run 7a: at beta 2.6 the order at the pi-flux tilt persists at t = c/2 and t = c with a volume law to L = 12, control against row 950 within 2 percent). (3) Ranking: A1 the tie test of the flow forms (no run needed), A2 the trajectory form, A3 = the lane's open item EXIT (match, not attacked). (4) Proof attempt on A1 in three stages: PROVED Lemma FH and, CONDITIONAL on BBD Theorem 3.6 and Theorem BR, Theorem QUOT (the quotient form with the gauge-orbit gain Q_phi); PROVED in models, with an arithmetic guard that passes, Proposition ROTOR (a rigid colour frame is removed by Q_phi) and Proposition TIE (a tie between two states costs the supremum form a^2 and the averaged form (ABS-flow) a^2/4 at every scale); PROVED implication Lemma TRAJ (the seed reads the log-Sobolev inequality only on powers of the bridge interpolations of P^k p_1(u, .)) and Identity MM (the entropy of a trajectory law is an integrated mean-square difference of two posterior means over typical tilts). GUIDE 7c (row 952's twisted slice at t = c): the colour-3 moment grows 7.75 and 3.30 per step with 96 to 97 percent of the order on e_3 and a frozen sign, but my pre-set control and second clause were not met, so its formal verdict is INCONCLUSIVE. DIRECTION: no flow criterion with one rate for all test functions ((TILT-COV-sup), its quotient form, (ABS-flow)) should be attacked for the whole window; at beta 2.6 they fail (GUIDE for the supremum form, ARGUED transfer of Proposition TIE for the other two). OPEN: (LSI-traj-seed)_a, which is not smaller than (LSI-br-seed)_a in any proved sense and has no known method; the seed; the flow forms at beta 2.3 to 2.4 (not refuted, constant at least 53 at t = 0); the transfer of Proposition TIE to the lattice; no bound for SU(2) was proved.

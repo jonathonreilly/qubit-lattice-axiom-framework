@@ -24,3 +24,81 @@ Credit: the (LSI-J) / (LSI-J-seed) framework is row 947 (`library/gap-fc-max.md`
 (updated in place after each step)
 
 - Step 0 (2026-11-14T10:07Z): file created; FINISH row 954 read; no earlier run of this item exists at 2a9e82c69.
+- Step 2 (2026-11-14T10:30Z): Sections 2 (criteria, before any run) and 3 (free photon exact) written. Next: Step 3, the code and the C1, C2, C5 calibrations.
+- Step 1 (2026-11-14T10:20Z): row 947 read in full; check 943's finite-cylinder caveat read (`library/gap-lsivac-check-astra.md` 158-162); row 946's code listed. Duplicate check (rule 0a): `grep -i "LSI-J|two-slice|R_J|poincare"` on `library/open-core.md`, `library/l17c.md`, `library/open-registry.md` gives only an unrelated radius r_J (OL-W0). FINISH rows naming R_J or (LSI-J): 947 (author), 954 (this row), 955 (literature), 956 (check of this row). No other row runs this test. Proceed.
+
+## Section 1. Definitions used here (READ from row 947 and row 941; no new claim)
+
+**Setting (row 941 (A1), row 947 5.1).** B = periodic spatial box of side L, with 3L^3 links. A slice x is a point of M = (S^3)^(3L^3) inside R^N, N = 12 L^3; SU(2) = unit quaternions, (1/2) tr(a b^dagger) = <a, b> (Euclidean inner product of R^4). V(x) = -beta sum over space-like plaquettes of (1/2) tr x_p. Transfer kernel T_0(x, w) = e^(-V(x)/2) e^(beta <x, w>) e^(-V(w)/2), top eigenfunction Omega, eigenvalue lambda_0.
+
+**Two-slice vacuum law (row 941 (A1)).** J(dx, dw) = Omega(x) T_0(x, w) Omega(w) dx dw / lambda_0. In the 4D lattice: x = the spatial links of time slice t; w = the spatial links of slice t+1 transported to slice t by the temporal links: w_i(y) := U_0(y, t) U_i(y, t+1) U_0(y+i, t)^dagger. Then the time-like plaquette at (y, i) is (1/2) tr(x_i(y) w_i(y)^dagger) = <x_i(y), w_i(y)> =: t_i(y). J is symmetric under (x, w) -> (w, x).
+
+**Gauge invariance.** Phi(x, w) is gauge invariant if Phi(g.x, g.w) = Phi(x, w) for every g: sites -> SU(2), acting on both slices at once (g.x_i(y) = g(y) x_i(y) g(y+i)^dagger). Closed loops in x, in w, or through both (using x and w^dagger as the two time-like sides) are gauge invariant.
+
+**Gradient.** Tangential gradient on M x M for the round unit sphere S^3 in R^4: for a link variable u, grad_u Phi = Pi_u (d Phi/d u), Pi_u z = z - <z, u> u. |grad Phi|^2 = sum over the 6 L^3 links of x and w of |grad_u Phi|^2.
+
+**Ratio (row 947 7.4).** R_J(Phi) := Var_J(Phi) / E_J[ |grad_x Phi|^2 + |grad_w Phi|^2 ]. R_J := sup over gauge-invariant Phi (bounded, C^1). (LSI-J)_(alpha_J) implies R_J <= 1/alpha_J (Poincare from log-Sobolev). Here R_J is estimated from below by the top generalized eigenvalue of (C, G) on a finite span: C_ab = Cov_J(Phi_a, Phi_b), G_ab = E_J <grad Phi_a, grad Phi_b>.
+
+**Seed threshold (row 947 7.3-7.4).** (LSI-J-seed)_a: on B = (24a)^3, one even a >= 30, alpha_J >= 2 beta K_a, K_a = (C_beta(x_*) + 3 log a)/(a - 2), with C_beta = 16.0 at beta 2.3 and 16.12 at beta 2.6 (row 947 4.2: 24 C_beta = 384.0 and 386.9). It implies R_J <= R*_a := 1/(2 beta K_a) on that box. Hand arithmetic (3 log a = 10.204, 11.067, 12.283, 13.816, 15.895 for a = 30, 40, 60, 100, 200):
+
+| a | 30 | 40 | 60 | 100 | 200 |
+|---|---|---|---|---|---|
+| K_a, beta 2.3 | 0.9359 | 0.7123 | 0.4876 | 0.3043 | 0.1611 |
+| R*_a, beta 2.3 | 0.232 | 0.305 | 0.446 | 0.714 | 1.350 |
+| K_a, beta 2.6 | 0.9401 | 0.7155 | 0.4897 | 0.3055 | 0.1617 |
+| R*_a, beta 2.6 | 0.205 | 0.269 | 0.393 | 0.630 | 1.189 |
+
+The seed box has side 24a >= 720. Every box measured here is smaller by a factor of at least 60.
+
+**Check 943's finite-cylinder caveat, and how it is handled here.** On a periodic time circle of N slices the slice-pair law is T_0(x, w) T_0^(N-1)(w, x)/Tr T_0^N, not J; the backward factor depends on (x, w), and states of every sector enter with weight e^(-E N). Here the time direction is OPEN (free boundary): slices 0, ..., N_t - 1, temporal links only between consecutive slices, every plaquette inside the slab. The measured pair (slice t, slice t+1) then has law
+  J_K(x, w) = (T_0^K b)(x) T_0(x, w) (T_0^(K') b)(w) / Z,   b := e^(-V/2),   K = t, K' = N_t - 2 - t.
+(Temporal gauge on the slab; the boundary vector b is the boundary half of the end-slice plaquette weight.) Two facts make J_K a controlled approximation of J:
+- (OB1, PROVED, one line) b is gauge invariant and invariant under the centre maps z_i (multiply every link in direction i that crosses one fixed plane by -1): each plaquette contains 0 or 2 such links. z_i commutes with T_0. So T_0^K b has no component in the sectors odd under any z_i (the 't Hooft electric-flux sectors). Flux states, which are the light states of a small box, cannot enter J_K at any K. On a periodic time circle they do enter, with weight e^(-E_flux N).
+- (OB2, standard spectral bound, stated, not used in any proof) T_0^K b = lambda_0^K <Omega, b> (Omega + O(e^(-E_even K))), with E_even the gap of T_0 in the flux-free, centre-even sector. So expectations under J_K differ from those under J by a relative O(e^(-E_even min(K, K'))).
+The ground-state limit is checked empirically (criterion C4 below): each R_J is measured at two values of K, and the run is accepted only if they agree within errors.
+
+## Section 2. Measurement, observable span, and criteria (written 2026-11-14T10:25Z, BEFORE any run)
+
+**Lattice and updates.** L^3 x N_t, spatial directions periodic, time open, N_t = 2K + 2 + 2m, with the 2m+1 central slice pairs measured (each at distance at least K from both ends). SU(2): Kennedy-Pendleton heat bath plus 2 overrelaxation sweeps per sweep; U(1): von Mises heat bath (Best-Fisher) plus 2 overrelaxation sweeps. Code in C (sweeps) and numpy (measurement), `library/guide/lane954/`.
+
+**Observable span (pre-stated).** Local gauge-invariant fields at each site y of the slice:
+1. c^x_(jk)(y), c^w_(jk)(y): space-like plaquettes of x and of w, planes 12, 13, 23 (6 fields);
+2. t_i(y) = <x_i(y), w_i(y)>: time-like plaquettes (3 fields);
+3. r^x_(jk), r^w_(jk): 1x2 space-like rectangles, both orientations summed within each plane (6 fields);
+4. q^x_(jk), q^w_(jk): 2x2 space-like loops ("smeared plaquettes") (6 fields);
+5. s_i(y) = (1/2) tr(x_i(y) x_i(y+i) w_i(y+i)^dagger w_i(y)^dagger): time-like 2x1 rectangles (3 fields).
+Winding observables, for each direction i and transverse position y_perp: P^x_i(y_perp), P^w_i(y_perp) (straight winding lines of x and w), the strip (1/2) tr(P^x_i P^w_i^dagger), the product P^x_i P^w_i, and P^x_i^2, P^w_i^2; with M^x_i := mean over y_perp of P^x_i, also (M^x_i)^3, (M^w_i)^3, (M^x_i)^2 M^w_i, M^x_i (M^w_i)^2, (M^x_i)^5, (M^w_i)^5 (odd polynomials that approach a sign function, to see a bimodal law of the winding lines).
+Momenta: each local field at k = 0 and at k = (2 pi/L) e_j (cos and sin parts); winding lines at transverse momentum 0 and (2 pi/L) e_j, j transverse to i.
+Sectors (exact symmetries of J: translations, cubic rotations, the centre maps z_i, the swap x <-> w): the generalized eigenproblem is solved in each sector, with C and G averaged over the copies that the symmetries map onto each other, and R_J^top := max over sectors. Sectors: S0e (k = 0, centre-even: 24 local fields + 6 x 3 winding-even sums), S0o_i (k = 0, odd under z_i: 8 odd observables), S1e (k = k_min, centre-even: 24 local fields; 6 copies), S1o (k = k_min, winding lines in the 2 directions transverse to k; odd). In odd sectors and at k != 0 the exact mean 0 is used.
+For U(1) the same fields with (1/2) tr replaced by cos of the loop angle, plus the sin parts (sin of plaquette angles: the magnetic field), since U(1) has no centre-even restriction on these.
+
+**Errors.** Jackknife over 20 blocks of consecutive measurements (blocks long against the measured autocorrelation). Report the raw top eigenvalue and the jackknife bias-corrected one.
+
+**Criteria (pre-stated).**
+- C1 (exact calibration, SU(2) at beta = 0, Haar links). By hand: a loop of n links of fundamental characters is an eigenfunction of the Laplacian on (S^3)^n with eigenvalue 3n (Casimir of spin 1/2 on the unit S^3 is 3). So R_J(t-sum) = 1/6, R_J(plaquette sum) = 1/12, R_J(2x1 rectangle) = 1/18, R_J(2x2 loop) = 1/24, R_J(winding sum) = 1/(3L), and the top of every span is 1/6. Pass: each within 3 err (or 2 percent). Fail: stop and fix the code. U(1) at beta = 0: t-sum 1/2, plaquette 1/4.
+- C2 (free photon, Gaussian check): compact U(1) at beta = 8, L = 6: the k_min magnetic mode must give R within 10 percent of the free-photon value 1/(beta (e^omega - 1)), omega = 2 asinh(sin(pi/L)) (Section 3), allowing the known one-loop shift beta_R = beta - 1/4 + O(1/beta) (about 3 percent at beta 8).
+- C3 (U(1) Coulomb-phase control, beta 1.5, L = 4, 6, 8, 10, 12 if cheap): R_J^top must grow with L: fitted exponent kappa > 0.5 at 3 sigma over the sizes run, and R at the largest L within a factor 1.5 of the free-photon value at beta 1.5 (expected about 1.2 times it, from beta_R near beta - 1/4). If C3 fails, the method cannot see a massless mode and every SU(2) verdict below is void.
+- C4 (ground-state limit): at each (group, beta, L) the top eigenvalue at K and at a larger K' (K' >= K + 4) must agree within 3 combined errors. If not, K is raised and the smaller K is discarded.
+- C5 (independent implementation check): at L = 4, beta 2.3, K = 6, R_J of the zero-momentum t-sum must agree with row 947's Run 3 (0.1545 +- 0.0041) within 3 combined errors, and E c_p with 0.6058.
+- S1 (growth over the measured range, SU(2), each beta): weighted fit of log R_J^top against log L over the sizes run with L >= 6; exponent kappa with error. GROWTH iff kappa > 0 at 3 sigma AND R_J^top(L_max) - R_J^top(6) > 3 combined errors. GROWTH at a coupling is reported plainly as "REFUTES a box-uniform (LSI-J) at that coupling over the measured range (GUIDE)", and the sector and observable carrying it are named. No GROWTH: "bounded over L = 4..L_max (GUIDE only; proves nothing)".
+- S2 (what growth would mean for the seed). The seed box has side >= 720. A growth that is carried by the winding (centre-odd) sector in a box smaller than the deconfinement length L_c(beta) = 1/(T_c a) is a small-box effect: the spatial Polyakov loops order there, and the flux sectors become light. Recalled lattice values (not checked here; used only to place L_c): T_c/sqrt(sigma) = 0.71 for SU(2), sqrt(sigma) a = 0.37 at beta 2.3 and 0.133 at beta 2.6, so L_c is about 3.8 at beta 2.3 and about 10.6 at beta 2.6. So at beta 2.3 every L >= 4 is above L_c, and S1 there is a test of the large-box regime. At beta 2.6 the sizes 4 to 10 are at or below L_c; growth there threatens (LSI-J-seed) only if it persists at L above L_c (14 if cheap). This classification is stated now, before the run, and is reported together with the per-sector numbers, so a reader can disagree with it.
+- S3 (seed threshold on the measured box, row 947's rule): REFUTES (LSI-J-seed)_a ON THE MEASURED BOX iff R_J^top - 3 err > R*_a. Since the measured box is not the seed box, this is reported as a box-local statement only.
+- S4: report kappa (with error) for each beta and for U(1).
+
+## Section 3. Free photon: R_J exactly (PROVED by hand; the numbers are small arithmetic)
+
+**Statement.** Non-compact U(1) lattice photon (Wilson form, link angles theta in R, weight exp(-(beta/2) sum_p theta_p^2), temporal gauge), periodic spatial box of side L. For a transverse mode of lattice momentum k (unit-normalised mode vector, amplitude a), with |khat|^2 = sum_i 4 sin^2(k_i/2) and omega_k = 2 asinh(|khat|/2):
+  (FP-J) the two-slice vacuum law of (a_x, a_w) is Gaussian with precision [[beta + c_k, -beta], [-beta, beta + c_k]], c_k = beta (e^(omega_k) - 1);
+  (FP-R) the largest Poincare ratio over functions of this mode is 1/c_k, attained by a_x + a_w (and by any magnetic-field observable proportional to it).
+**Proof.** One mode: V(a)/2 = (beta/4)|khat|^2 a^2, kinetic factor e^(-(beta/2)(a - a')^2). Try Omega = e^(-gamma a^2/2). The Gaussian integral of T_0(a, a') Omega(a') over a' returns e^(-gamma a^2/2) iff gamma = beta |khat|^2/2 + beta - beta^2/(beta + c) with c := gamma + beta |khat|^2/2. Put u = (beta + c)/beta; then u + 1/u = 2 + |khat|^2 = 2 cosh omega_k, so u = e^(omega_k). The law J ~ Omega(a) T_0(a, a') Omega(a') has the stated precision; its eigenvalues are c_k (vector (1, 1)) and 2 beta + c_k (vector (1, -1)). For a Gaussian law the Poincare constant is the inverse of the smallest precision eigenvalue, attained by the linear function along that eigenvector; a ratio is unchanged when the observable is scaled, so the magnetic field of the mode gives the same value. QED
+Modes decouple, so on the box the sup over all functions of transverse modes is 1/c at the smallest non-zero |khat|, k = (2 pi/L) e_j: |khat| = 2 sin(pi/L), omega_min = 2 asinh(sin(pi/L)). (The spatially constant modes are not transverse waves; in the non-compact theory they are free and have no Poincare constant at all; in compact U(1) they are compact rotors, see Section 5.)
+For large L, 1/c_min = (L/(2 pi beta))(1 + O(1/L)): exponent 1 in L.
+
+| L | 4 | 6 | 8 | 10 | 12 | 14 | 16 |
+|---|---|---|---|---|---|---|---|
+| omega_min | 1.3170 | 0.9624 | 0.7478 | 0.6086 | 0.5120 | 0.4415 | 0.3878 |
+| 1/c_min at beta 1.5 | 0.2440 | 0.4120 | 0.5993 | 0.7957 | 0.9970 | 1.2013 | 1.4075 |
+| 1/c_min at beta 8 | 0.0458 | 0.0773 | 0.1124 | 0.1492 | 0.1869 | 0.2252 | 0.2639 |
+
+(Evaluated with a two-line script; the values for L = 4, 6, 8, 10, 12 at beta 1.5 were also done by hand in this step and agree to 3 digits.)
+Use: criterion C2 (compact U(1) at beta 8 must approach these, up to beta_R = beta - 1/4) and C3 (compact U(1) at beta 1.5 must grow like this, at about 1.2 times these values).

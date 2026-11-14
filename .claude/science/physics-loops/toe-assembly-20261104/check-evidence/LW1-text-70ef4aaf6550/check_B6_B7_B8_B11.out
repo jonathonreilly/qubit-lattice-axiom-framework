@@ -1,0 +1,11 @@
+--- B6: random block-sparse unitaries, projectors of rank>1, random (also low-rank) states; LP feasibility of supported coupling
+feasible 300/300; instances with at least one forbidden block: 207
+control (non-Born output marginal): infeasible in 100 /100
+--- B7: uniqueness of min-cost then max-entropy coupling on a small instance (two random starts agree)
+allowed pairs: 20 of 64 (number conservation forbids the rest: True )
+min cost: 0.8959360081579941
+max difference between optimizers from 3 starts: 0.008573341423557923  entropies: [2.53051513, 2.42735784, 2.43208102]
+--- support factorization: two disjoint 'cubes' (2 modes each), blocks of the product gate
+support of product gate = product of supports: True
+--- B8: quasi-free states on 4 modes, omega(D_xy) vs formula; criterion
+max |omega(D)-formula|: 2.4424906541753444e-15  max |P(all occupied on F)-det G_F|: 2.1094237467877974e-15  Hadamard bound held in all cases; criterion equivalence held in all cases

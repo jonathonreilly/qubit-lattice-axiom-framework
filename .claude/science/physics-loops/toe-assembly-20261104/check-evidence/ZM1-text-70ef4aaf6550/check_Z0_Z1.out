@@ -1,0 +1,19 @@
+A1 use: ||Re^2-1||,||Ro^2-1|| 2.2863235218534685e-16 2.286323521853469e-16
+Z0(2) free instance: max sup-distance moved by one tick = 2 (claim: at most 2; control: it is not <=1)
+Z0(3): centre parity, even-translation, block permutation, transitivity on 8 blocks, L=1..5: True
+   control (rotation about a site): all translations even integer vectors? False
+Z0(5) L=1: 8L^3 sites=8, links with lower endpoint in block=24; algebra dim exponent check 2*ns*8L^3=16, 48L^3=48 (=2 x 24L^3)
+Z0(5) L=2: 8L^3 sites=64, links with lower endpoint in block=192; algebra dim exponent check 2*ns*8L^3=128, 48L^3=384 (=2 x 24L^3)
+Z1a(iii) exceptional 2eps+mu=pi: range of w(K)+w(K+Pi)-pi over 200 K: [0.00e+00,0.00e+00]
+Z1a(iii) control: range of w(K)+w(K+Pi)-pi over 200 K: [-5.97e-01,-4.66e-01]
+Z1a(iii) control mu=0: range of w(K)+w(K+Pi)-pi over 200 K: [-1.59e+00,-1.25e+00]
+Z1a(iii): for the six other half-period shifts the sum varies (spread >1e-2) at exceptional parameters: True
+Z1 step 3: L=2 n=1 generic: multiplicities [4], distinct eigenvalues 16 (2L^3=16, L^3=8)
+Z1 step 3: L=3 n=2 generic: multiplicities [4], distinct eigenvalues 54 (2L^3=54, L^3=27)
+Z1 step 3: L=2 n=2 EXCEPTIONAL (L,n even, 2eps+mu=pi): multiplicities [8], distinct eigenvalues 8 (2L^3=16, L^3=8)
+Z1 step 3: L=2 n=1 n odd: multiplicities [4], distinct eigenvalues 16 (2L^3=16, L^3=8)
+Z1 step 3: L=3 n=2 L odd: multiplicities [4], distinct eigenvalues 54 (2L^3=54, L^3=27)
+Z1 step 3: L=2 n=2 2eps+mu!=pi: multiplicities [4], distinct eigenvalues 16 (2L^3=16, L^3=8)
+Z1 step 1: block-fibre quasi-energies = {+-w(xi_m)} x4, max mismatch 4.218847493575595e-15
+Z1.1(2): L>=2 with L^3 | 40: [2]  ; Majorana L^3 | 80: [2]
+Z1.1(3): (L1 L2)^3 for L1,L2>=2 is >=64; 64|40? False 64|80? False ; any cube n^3>=64 dividing 40 or 80: []

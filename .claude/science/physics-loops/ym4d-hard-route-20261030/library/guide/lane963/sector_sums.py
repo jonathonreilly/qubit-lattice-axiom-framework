@@ -18,8 +18,11 @@ A run can refute or guide; it proves nothing.  Usage: sector_sums.py M x1,x2,...
 import itertools
 import resource
 import sys
+import warnings
 
 import numpy as np
+
+warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 L = 24.0
 K = 60
@@ -70,7 +73,7 @@ def run(m_grid, xs):
     quarter = np.array([[0, -1, 0], [1, 0, 0], [0, 0, 1]], dtype=np.int64)
     eye = np.eye(3, dtype=np.int64)
     m3 = m_grid ** 3
-    print("# L=%g K=%d M=%d; columns: x logZ S S0 S1 lr(quarter) maxImagRel" % (L, K, m_grid))
+    print("# L=%g K=%d M=%d; columns: x log(1+S) S log(1+S0) S0 log(1+S1) S1 lr(quarter) maxImagRel" % (L, K, m_grid))
     for x in xs:
         om = np.sqrt(x * x + p2)
         nmax = int(np.ceil(34.0 / x))
@@ -129,7 +132,8 @@ def run(m_grid, xs):
         s_full = np.expm1(logz_full)
         s0 = np.expm1(logz_p0)
         s1 = np.expm1(lz1)
-        print("%6.2f %12.5e %12.5e %12.5e %12.5e %10.5f %8.1e" % (x, logz_full, s_full, s0, s1, lr, imag_max))
+        print("%6.2f %12.5e %12.5e %12.5e %12.5e %12.5e %12.5e %10.5f %8.1e"
+              % (x, logz_full, s_full, logz_p0, s0, lz1, s1, lr, imag_max))
         sys.stdout.flush()
 
 

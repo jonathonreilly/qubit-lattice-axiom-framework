@@ -211,7 +211,7 @@ nontrivial sectors are automatically small. There is none:
   the inversion fixes each pair (and acts as +1 on the symmetric state), so for generic q the pairs fill the regular
   representation of O_h/{1, -1} (24 elements): every inversion-even irreducible rho gets d_rho^2/24 of the
   two-particle continuum, which starts at 2 sqrt(m^2 + (2 pi/b)^2); the inversion-odd sectors get none from pairs
-  of one species and start at three particles or at a particle with spin. (Corrected 14:50Z; the first text said
+  of one species and start at three particles or at a particle with spin. (Corrected about 14:40Z; the first text said
   d_rho^2/48 in every sector.) One particle of spin J != 0 at rest is heavier than 0++ (a spectral fact of the
   model, not a bound we have).
 - The twisted tori do have a large free-energy deficit (for the free photon, log Z(a; B; R)/lambda_0^a is about
@@ -222,7 +222,7 @@ nontrivial sectors are automatically small. There is none:
 
 **3.4 The zero-quantum-number sector carries the full order-one difficulty (ARGUED from 3.1-3.3 and Lemma R5).**
 (i) It contains the vacuum, the lightest excitation of the confining theory (0++ at rest, which is centre-even,
-p = 0, A_1+), so the gap of T_B on it is the mass gap itself. (ii) [CORRECTED 14:50Z; the first text kept only
+p = 0, A_1+), so the gap of T_B on it is the mass gap itself. (ii) [CORRECTED about 14:40Z; the first text kept only
 one- and two-particle states and gave thresholds 4.5 and 2.5, which are WRONG.] Dilute reading, one free scalar,
 b = 24 a, x = m a, one-particle count s(x) = b^3 x^2 K_2(x)/(2 pi^2 a^3) (exact relativistic one-particle sum;
 878 x^1.5 e^(-x) is its leading term). Zero total momentum costs a Gaussian volume (2 pi N sigma^2)^(3/2) per
@@ -418,7 +418,9 @@ Model: one free real scalar of mass m on the periodic cube of side L = 24 tau (c
 omega_k = sqrt(m^2 + (2 pi k/L)^2), k in Z^3, |k_i| <= 60), Euclidean time tau = 1, x = m tau. Exact Fock traces:
 Tr(V_R e^(i theta.P) e^(-H)) = 1/det(1 - R e^(i theta.P) e^(-h)) on the one-particle space (vacuum energy 0), so
 log Tr = sum_n (1/n) sum_(k: R^n k = k) e^(i theta.(k + Rk + ... + R^(n-1) k)) e^(-n omega_k). The p = 0 projection
-is the mean over a 64^3 grid of theta (aliasing only from total momentum in 64 Z^3, weight below e^(-16.8)); the
+is the mean over a 192^3 grid of theta (aliasing only from total momentum in 192 Z^3; with about s particles of
+per-component momentum spread sqrt(x) b/(2 pi a), the total spread at x >= 6.5 is at most about 53 units, so the
+aliased weight is below e^(-6.6) there; the p = 0 columns at x <= 6 may be aliased and are not used); the
 trivial sector of the space group is (1/48) sum over O_h of the R-twisted p = 0 traces (Lemma R4 (iii)), summed by
 conjugacy class (Lemma R2). Script `guide/lane963/sector_sums.py`. A run guides; it proves nothing.
 
@@ -496,3 +498,7 @@ diagonal families (site mirrors only); `am1-port.md` Section 3 lists the same no
 e_mu +- e_lambda") without this proof. The positive transfer steps that reflection positivity can give are
 therefore e_mu (axis) and e_mu +- e_nu (Lemma D1). A step of one height in a diagonal frame gets no positivity from
 reflection (it is a glide times a positive operator, ARGUED in D1). No light-cone step (along (1, 1, 1, 1)) is positive by reflection.
+
+### Provisional result (2026-11-14T14:43Z; replaced when the Step 7 run ends)
+
+RESULT (provisional; Step 7 GUIDE pending the numeric lock): rotated and diagonal geometry buy nothing for the seed over the static axis tori. PROVED: a box rotating in time is a twisted torus, Tr((V_R T)^a) = Tr(V_(R^a) T^a), and only the total twist counts (R2, R3); twisted traces are Fourier coefficients of the sector seeds, S = sum_rho S_rho (R4); Lemma SPLIT holds for any finite symmetry group with its Kazhdan constant (R5); frozen counts 92 (Q_8) and 244 (2T) reproduce p = 10/23 and 30/61, and the trivial sector keeps 10 and 7 frozen vectors; diagonal RP (CA-III, `am1-port.md`) checked by hand on the crossing plaquette; straight tori do not separate (4.3); lattice mirrors have normals e_mu, e_mu +- e_nu only (Lemma M); diagonal tori are sheared axis tori (D2); axis and diagonal infinite-volume gaps agree within a factor 2 per step (D4, given LG1). CONDITIONAL: fully diagonal engine (D3). ARGUED: sector seeds are easier numbers (free scalar, b = 24 a: m a near 7.2 against 12) but have no consumer. OPEN: (LSI-J-seed), (SEED-FP), shape independence, a projected engine.

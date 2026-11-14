@@ -24,6 +24,7 @@ Credit: the (LSI-J) / (LSI-J-seed) framework is row 947 (`library/gap-fc-max.md`
 (updated in place after each step)
 
 - Step 0 (2026-11-14T10:07Z): file created; FINISH row 954 read; no earlier run of this item exists at 2a9e82c69.
+- Step 3b (2026-11-14T10:31Z): strip-gradient bug found by reading and fixed before any run; finite-difference self-test, gap correlators and runner `run954.sh` added; criteria amendments (A1)-(A3) written before any run. Waiting for the numeric lock (row 952 holds it). Next: selftest, then calib (C1, C5, C2), then timing, then the main runs.
 - Step 3a (2026-11-14T10:30Z): code written (Section 4.1), Lemma GAP-R (4.2). Numeric lock held by row 952 (lane952-opus, since 10:14:52Z, expires 11:14:52Z at the latest); a background waiter takes it when free. No run yet.
 - Step 2 (2026-11-14T10:30Z): Sections 2 (criteria, before any run) and 3 (free photon exact) written. Next: Step 3, the code and the C1, C2, C5 calibrations.
 - Step 1 (2026-11-14T10:20Z): row 947 read in full; check 943's finite-cylinder caveat read (`library/gap-lsivac-check-astra.md` 158-162); row 946's code listed. Duplicate check (rule 0a): `grep -i "LSI-J|two-slice|R_J|poincare"` on `library/open-core.md`, `library/l17c.md`, `library/open-registry.md` gives only an unrelated radius r_J (OL-W0). FINISH rows naming R_J or (LSI-J): 947 (author), 954 (this row), 955 (literature), 956 (check of this row). No other row runs this test. Proceed.

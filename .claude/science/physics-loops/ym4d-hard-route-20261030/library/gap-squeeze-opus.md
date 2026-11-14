@@ -36,7 +36,7 @@ on a run; runs are GUIDE only.
 
 ## State of attack (checkpoint, updated in place)
 
-- Step 1: done (13:40Z). Step 2 next: exact definitions of the squeezed geometries.
+- Step 1: done (13:40Z). Step 2: done (14:05Z). Step 3 next: the inequalities, the decoupling cost, average or supremum.
 
 ## Step log
 
@@ -101,3 +101,113 @@ row 959's RESULT (in FINISH).
   volume-change and torus-change statements and found only the chessboard family (CA-II 6.2,
   8.7 `lem-chessboard-torus`, reflection positivity on rectangular tori). I re-ran the index
   search for squeeze-type words in Step 2 (result recorded there).
+
+### Step 2 (done): the squeezed geometry and the quantity, exactly
+
+**2.0 Conventions.** B = (Z/b)^3 periodic, b = r a (r = 24 for the slab of rows 931-954; r = 4 for
+row 960 4.5). Plaquette weight e^(beta s_p), s_p := (1/2) tr U_p - 1 <= 0 (the normalisation
+c(g) = e^(-beta) e^((beta/2) tr g) of `gap-transfer.md`). Slice space X_E = SU(2)^E for a link set
+E, Haar measure dU, H_E = L^2(X_E). M_Q := multiplication by e^(-V_Q/2), V_Q := -beta sum over
+p in Pl(Q) of s_p >= 0. A^0_Q(u, u') := integral over SU(2)^(sites of Q) of
+prod over l = (x, y) in E(Q) of c(h_x u'_l h_y^(-1) u_l^(-1)) dh (the gauge-averaged time-like
+kernel; row 960 2.2).
+
+**2.1 Sub-boxes (definition).** For sides 1 <= s_i <= b - 1 and a corner c, the open sub-box Q has
+sites x with x_i in {c_i, ..., c_i + s_i - 1} mod b. E(Q): links joining two sites of Q along a
+direction i with s_i >= 2, without the wrap link (so a line of s_i sites carries s_i - 1 links).
+Pl(Q): plaquettes with all four links in E(Q). A side s_i = b means the periodic direction (b
+links per line). Unit cube Q_cube: s = (2, 2, 2), 8 sites, 12 links, 6 plaquettes (the six
+faces of one lattice cube). One plaquette Q_pl: s = (2, 2, 1), 4 sites, 4 links, 1 plaquette.
+
+**2.2 Squeeze schedule (definition).** Boxes Q_0 = B, Q_1, ..., Q_n with Q_(t+1) inside Q_t.
+"One site per face per step": the first step cuts each periodic direction once (s_i(1) >= b - 1);
+later steps remove at most one layer per face (s_i(t + 1) >= s_i(t) - 2). "Per k steps": a layer
+is removed only at times divisible by k. E_t := E(Q_t).
+
+**Lemma COUNT (PROVED).** A schedule of one site per face per step reaches Q_cube or Q_pl only
+after n >= b/2 steps; with one layer per k steps, after n >= k b/2 - k + 1. On the slab b = 24a:
+n >= 12a, twelve times the seed's time extent a. A squeeze that must close inside the slab's
+period a (squeeze for a/2 steps, regrow for a/2 steps) keeps every side at least b - a = 23a.
+Proof. s_i(t) >= b - 1 - 2(t - 1) for t >= 1. Q_cube needs s_i(n) <= 2, so 2n >= b - 1, n >= b/2
+(b even; n integer). Q_pl needs s_3(n) <= 1, so 2n >= b. With one layer per k steps the side
+falls by at most 2 every k steps after the first cut. Inside a period a the squeeze lasts at most
+a/2 steps: s_i >= b - 1 - 2(a/2 - 1) >= b - a. QED
+So "squeeze over the seed's time extent" down to a unit is impossible at the seed's own time
+scale: the squeezed object is a different 4D complex, at least 24a - 1 steps long if it closes
+(squeeze, then regrow), against the slab's a.
+
+**2.3 The four boundary conditions (definitions; the facts marked PROVED are one-line).**
+Common to all: slice t carries the links E_t; time-like links between slices t and t + 1 sit at
+the sites of Q_(t+1); temporal gauge and the gauge projection at each slice as in
+`gap-transfer.md` 1.6.
+- **(F) free.** Plaquettes: Pl(Q_t) in slice t, and one time-like plaquette for each link of
+  E_(t+1) between slices t and t + 1. A link of E_t outside E_(t+1) (a dropped link) sits in slice
+  t only: it has no future. One step is the operator T^F_t: H_(E_(t+1)) -> H_(E_t) with kernel
+    K^F_t(u, u') = e^(-V_(Q_t)(u)/2) A^0_(Q_(t+1))(u|E_(t+1), u') e^(-V_(Q_(t+1))(u')/2).
+  PROVED: (i) the restriction u -> u|E_(t+1) pushes Haar on X_(E_t) to Haar on X_(E_(t+1)), so
+  f -> f(u|E_(t+1)) is a Markov isometry R_t^*, and its adjoint R_t integrates out the dropped
+  links (Haar); T^F_t = M_(Q_t) R_t^* C P M_(Q_(t+1)). (ii) K^F_t is continuous and strictly
+  positive (A^0 > 0, as in row 960 2.2). (iii) K^F_t is invariant under gauge transformations at
+  every site of Q_t (acting on u) and of Q_(t+1) (acting on u'), because E_(t+1) uses only sites
+  of Q_(t+1). This is the time reverse of row 960's insertion step, with restriction to an open
+  sub-box in place of decimation (row 960 (G3) noted that restriction leaves the periodic family).
+- **(D) Dirichlet.** The full complex of [0, n] x B, every link outside the pyramid
+  R := {(t, l): l in E_t} (and outside the time-like links of R) fixed to 1, every plaquette of
+  the full complex kept. A kept plaquette with some frozen links is a boundary field on its free
+  links (for example the time-like plaquette above a dropped link l of slice t pins u_(t,l)
+  towards 1 with weight e^(beta s)).
+- **(C) conditioned (quenched).** As (D), with the exterior frozen to a configuration tau instead
+  of 1. PROVED (DLR property of a local action): if tau is drawn from a Gibbs measure mu of the
+  full complex (the vacuum on Z x B, or the slab Z/a x B), the (C) law with exterior tau is the
+  conditional law mu( . | exterior = tau), because the conditional density of the pyramid links
+  given the rest contains only the plaquettes that touch the pyramid. This is "conditioning on
+  the dropped links".
+- **(V) vacuum-averaged (annealed).** On L^2(nu) of the periodic B, nu the vacuum slice law:
+  Pi_t := E_nu[ . | sigma(x_l : l in E_t)] (orthogonal projection), and the squeezed chain
+    A_n := Pi_n P Pi_(n-1) P ... Pi_1 P.
+  After each step of the vacuum chain the dropped links are averaged with the vacuum's
+  conditional law given the kept links of the same slice. Pi_t is a Markov operator (positive,
+  Pi_t 1 = 1) and an orthogonal projection; A_n 1 = 1.
+
+**2.4 Closure (definitions).**
+- *Trace (periodic time).* The time direction closes only if the box returns. Diamond: squeeze
+  for n steps, regrow for n steps, each regrow step the adjoint of a squeeze step. (F):
+  Y^F := T^F_0 T^F_1 ... T^F_(n-1): H_(E_n) -> H_B and Z_dia^F := Tr(Y^F (Y^F)^*) = ||Y^F||_HS^2.
+  (V): Z_dia^V := Tr(A_n^* A_n) = ||A_n||_HS^2. (D) and (C): the same with the frozen-exterior
+  kernels. The lens of row 960 2.3 (hold Q_n for k steps, hold B for a steps) is the general
+  closed form; the diamond is the lens with a = k = 0.
+- *Two-slice law.* (V): J^V_t := the law of (x_t|E_t, x_(t+1)|E_(t+1)) under the stationary vacuum
+  process of B, a marginal of J; at the narrow end J^V_n is the marginal of J on the unit box.
+  (F): J^F_unit := the two-slice law of the unit box's own stationary vacuum (its transfer
+  operator T_(Q_n) with free faces, held in time). No other closure keeps a two-slice law.
+
+**2.5 The squeezed quantity (definitions).**
+- Seed side, (F): the narrow-end thermal sum S(k; Q_n) := Tr T_(Q_n)^k/lambda_0(Q_n)^k - 1 of the
+  unit box held for k steps; row 960 (L3) is the inequality that reads it. (V):
+  S^V_dia(n) := Z_dia^V - 1 >= 0 (the constant function gives the 1).
+- LSI side: the log-Sobolev constants alpha(J^V_n) and alpha(J^F_unit) of the narrow-end two-slice
+  laws.
+- Computability. (F) and (D) endpoint quantities are integrals over at most 12 links (cube) or 4
+  links (plaquette) with explicit weights, hence Bessel series (Step 5). (C) and (V) endpoint
+  quantities depend on the vacuum of all of B, through tau or through the conditional laws of nu.
+  They are not computable by hand. This is the first trade-off: the boundary conditions that make
+  the end computable ((F), (D)) are the ones that are far from the vacuum, and the ones that are
+  faithful to the vacuum ((C), (V)) make the end as hard as the vacuum itself.
+
+**2.6 Centre blindness after the first cut (PROVED, from row 895 Lemma LOC).** For t >= 1 every
+Q_t is an open box, so it wraps no direction of the torus. By Lemma LOC of `gap-glue-max.md` 7.1
+(row 895, Claude Fable 5.2), every gauge-invariant function of the links of E_t is invariant under
+the centre flips C_1, C_2, C_3. So every squeezed quantity at times t >= 1 lives in the
+centre-even (zero-flux) sector H_0. The flux sectors of the seed (Q_0 of row 892, Lemma SPLIT;
+the 7 degenerate sectors of frozen groups, row 960 5.2) are invisible to the squeeze after its
+first step. Step 4 uses this.
+
+**2.7 Sussman-Alpoge account.** Index search (`library/sa-index/ca-full/index.tsv`) for squeeze,
+shrink, pyramid, block dynamics, Glauber, log-Sobolev, spectral gap, mixing, decoupling, Dirichlet
+or free boundary, one plaquette, Bessel: the hits are Balaban's decoupling expansion (cluster
+parameters, CA-I 4.5, 4.21; CA-II 5.6, 8.3; CA-III 9.5), "Release and squeeze at the constrained
+minimiser" (CA-II 8.11, a variational lemma of the large-field analysis), "No shrinking of the
+chart on a polydisc" (CA-I 4.22) and "The holonomy of one plaquette in a cube gauge" (CA-I 4.24).
+None is a mixing, gap or block-dynamics statement; their Theorem 0 asserts no gap (GOAL.md). There
+is nothing to port for this row; the transfer frame itself is theirs (outline (GL8), credited in
+row 941).

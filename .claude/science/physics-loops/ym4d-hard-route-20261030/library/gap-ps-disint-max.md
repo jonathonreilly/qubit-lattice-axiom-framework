@@ -34,6 +34,7 @@ Status log (updated in place):
 - 2026-11-14T12:06Z: file created; steps 1-8 not started.
 - 12:25Z: Sections 1 and 2 written (inputs read, duplicate check, Piazza-Shen skeleton). Next: Section 3 (STEP 1).
 - 12:50Z: Section 3 written (STEP 1). Next: Section 4 (fact tests).
+- 13:10Z: Section 4 written (STEP 2). Next: Section 5 (STEP 3 stage A) and the GUIDE criteria.
 
 ## 1. Target, objects, duplicate check (READ; no new claim)
 
@@ -233,3 +234,59 @@ skeleton carries plaquettes (Lemma SEP: beta >= 1 in 4D). What survives in every
 (PS-e) and (PS-f) (Proposition EQ), and it only moves the problem. J is not closer to the 2D setting than the 4D
 measure: it is a marginal of it (Lemma MARG), and each of its natural disintegrations is either the older route
 (b) or a 3D spin system where Piazza-Shen have a chain (c).
+
+## 4. STEP 2: fact tests, before any proof
+
+A 4D adaptation has three slots. (BLOCK): after the links inside blocks of side m are integrated, the skeleton
+law is "flat enough" (replaces (PS-a), (PS-b)). (MACRO): an inequality for the skeleton law (replaces (PS-d)).
+(GLUE): (PS-e), (PS-f), which hold in every dimension (Proposition EQ). Each test is a statement with its computation.
+
+**FT-U1.**
+- (i) In 2D, (PS-a), (PS-b), (PS-c), (PS-e), (PS-f) hold word for word for U(1): the Doeblin bound, the convolution on
+  the circle, the product structure, Holley-Stroock (Haar on the circle has a log-Sobolev inequality). Only (PS-d)
+  fails: Ric = 0, and -Hess H-bar >= 1/2 is impossible on a compact manifold (H-bar has a minimum). So Piazza-Shen
+  exclude U(1) at the absorber, not at the block step.
+- (ii) In 4D the target must fail for the photon. FP: alpha_J = c_min, about 2 pi beta/b, fails (T1) by the factor above
+  59 (T2). Compact U(1) at beta 1.5: R_J grows with the box, exponent 0.71 +- 0.04 (GUIDE, row 954 Section 5d).
+- (iii) Consequence (PROVED given the Coulomb phase of 4D U(1), RECALLED; exact for FP). (GLUE) is group-blind and
+  box-uniform. So for U(1) at large beta, (BLOCK) or (MACRO) is false for every block side m. An adaptation that
+  keeps (MACRO) = "curvature absorbs a small Hessian" passes this test formally, as in 2D. But flatness of the
+  skeleton law is false for the photon (its skeleton loops have power-law correlations). So a correct proof of
+  (BLOCK) in 4D cannot be group-blind: it must use the non-abelian group in the block step, where Piazza-Shen use
+  nothing but a Doeblin bound.
+
+**FT-FROZEN (Q_8, 2T).** These groups have no tangent space: (PS-d), the gradient form and (LSI-J) are undefined
+(row 947 4.4). The mechanism test is on (BLOCK): the Doeblin bound w >= e^(-2 beta)/z and the convolution identity
+hold for every compact group, finite ones included. In 2D this is right (no freezing in two dimensions). In 4D
+the frozen phases have E_1 -> 0 on a fixed box (row 931, Proposition HC (b); check 896 D6, ARGUED rate), and the
+window 2.3-2.6 lies in the frozen phase of Q_8 and at or above the freezing point of 2T (RECALLED lattice values,
+GUIDE). So a 4D (BLOCK) step must use connectedness, not only the Doeblin bound.
+
+**FT-SMALLBOX (conditional on the premise of row 941: E_1 -> 0 as beta grows on a fixed lattice box).** Then
+alpha_J -> 0 on a fixed box (row 954 Lemma GAP-R: R_J >= 1/(2 beta E_1) once E_1 <= 1). So every constant of an
+adaptation must degrade with beta. Piazza-Shen do: r -> 1, the block area grows like e^(2t), and C_(N,beta) >= c beta^(1/3)
+for SU(4) (their Section 7). Proposition EQ does: K = (1/2) e^(2 beta N_B). The box size enters through (T1): a
+box-uniform constant c(beta) gives (LSI-J-seed)_a only for a >= a_0(c). At beta 2.3 the seed inequality is false for
+small a (GUIDE): the local sector has R_J about 0.17 on boxes 8 to 12 (row 954 5c), so alpha_J <= 5.9, while
+2 beta K_a > 5.9 for a <= 22.
+
+**FT-CEIL (which slots are sup forms, and their caps).**
+- (MACRO) by pointwise curvature on a separating skeleton: capped at beta < 1 in 4D (Lemma SEP; the same number as
+  row 941 ceiling (i)).
+- A micro inequality uniform in the conditioning, for an UNBOUNDED micro set (the temporal links of a layer, or a
+  slice given a slice): capped by 4 G_3 = 1.0109 (Proposition SIGMA with row 839's TB2); GUIDE-refuted at 2.6 (row 952).
+- Single-link or vertex-block worst-case response criteria on the skeleton (Otto-Reznikoff, Dobrushin type): the
+  families capped at 1/3, 2/3 and 0.775 (rows 834-836, checks 840, 841, 857; not re-derived here).
+- Not capped: Holley-Stroock on bounded blocks (true at every beta, constant e^(-2 beta N_B)); Lemma FOREST (exact).
+So the open slot (MACRO) has to be a statement about ONE law (the skeleton law or J), not a supremum over
+conditionings. Every tool Piazza-Shen use for it is a supremum.
+
+**FT-CURV (what the curvature input of Piazza-Shen becomes; PROVED identity).** For one free plaquette,
+Laplacian of e^(beta t) on S^3 is e^(beta t) (beta^2 (1 - t^2) - 3 beta t), and its Haar integral is 0. So
+3 beta E_w[t] = beta^2 E_w[1 - t^2]: the mean-curvature term and the force variance cancel exactly. At beta 2.3 each
+is 3 x 2.3 x 0.60 = 4.2 (E_w t = I_2/I_1), twice the Ricci curvature. Piazza-Shen's macro Hessian is small only
+through this cancellation, which needs the conditional law of each plaquette given the skeleton to be the free
+law w up to r^(n-2). In 4D on a separating skeleton the k = 4 skeleton plaquettes at a link are not averaged: the
+diagonal entry of the Hessian ranges over an interval of length 2 k beta = 18 to 21 in the window, against Ric = 2.
+The pointwise criterion needs this ratio below 1. Whether the curvature bound holds at TYPICAL configurations is
+a separate question, with no known answer in the lane; it is the GUIDE test of Section 7.

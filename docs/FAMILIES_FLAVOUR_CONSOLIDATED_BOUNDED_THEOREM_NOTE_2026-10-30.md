@@ -6,6 +6,8 @@ claim_scope: "Historical navigation map for 40 source PRs on one question: can l
 
 # Families, flavour and mass generation: navigation map of the consolidated results
 
+**Primary runner:** `scripts/families_flavour_navigation_map_check_2026_11_14.py` (checks that each carried-result section below quotes its carried note's current claim_scope verbatim, that each carried note appears once, and that every repository link resolves; the carried notes' science is checked by their own runners).
+
 **Question.** Can lattice structure and its interactions select three families with viable masses, mixing and CP violation?
 
 **Status authority.** Independent audit lane only. This file is a navigation map, typed `meta`: it states no result and has no runner. Each carried note holds its own statement, numbers, checks and runner. "Kept" below means carried in this PR with its note, runner and cache; "logged" means listed in the table at the end only.

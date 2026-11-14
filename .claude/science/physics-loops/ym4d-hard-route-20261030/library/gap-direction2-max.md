@@ -440,3 +440,85 @@ form a^2/4. Stage 3 (PROVED implication): the seed reads the inequality on the t
 there the entropy is an average over typical tilts (Identity MM). What failed: no stage gives a bound for
 SU(2). What is left: (LSI-traj-seed)_a, or the route change of A3.
 
+## 7a. GUIDE test of the one caveat of Section 3.5: does the tie persist for t > 0? (criteria written at 16:16Z, BEFORE the batch)
+
+Why. Lemma SUB covers t = 0 only, and Theorem POL-BR reads the integral of kbar over t. Persistence was ARGUED.
+Object. The two-slice law J_(b,phi) itself at the mid-slice (s = s' = 1/(2 beta)), with phi = (kap/(2 beta)) u_xy, so that both
+slices carry the tilt kap u_xy, and with the middle time-like coupling b. b = 0 is t = 0; b = beta/2 is t = c/2; b = beta is
+t = c. Script `guide/lane970/twoslice_tilt.py` (plain numpy, temporal gauge, open time, 5 free slices on each side,
+half weight on the end slices, heat bath with the Creutz sampler, hot start). Observable: row 950's mode
+(momentum (pi, pi, 0), polarisation (1, -1, 0), one colour) on x, on w and on x + w:
+lam_w = E (O_w^a)^2/(2 L^3), lam_sum = E (O_x^a + O_w^a)^2/(2 L^3). Then Var(<z, q~>)/|z|^2 = 4 beta^2 lam_sum.
+Runs. beta 2.6; (b, kap) in {(0, beta), (beta/2, beta), (beta, beta), (beta, 2 beta)}; L = 4 and 8 (2000 + 12000 and 2000 + 10000 sweeps);
+L = 12 for the two points with b = beta (1500 + 6000 sweeps). Errors from 10 blocks.
+Smoke test (about 16:15Z, lock holder gap-direction2-970, L = 4, zero tilt, b = beta, 300 + 1000 sweeps): lam_w = 0.234(22),
+lam_x = 0.247(26) against the exact Elitzur value 1/4; lam_sum = 0.80(9) against (1 + tau)/2 = 0.84 with the measured
+tau = 0.677; 2.2 ms per sweep.
+Verdict rules.
+- (V0) Validity. At (b, kap) = (0, beta) the factor w is the one-step law pi_(beta u) of row 950. lam_w must agree with row
+  950's 4.19 (L = 4) and 22.62 (L = 8) within 20 percent (their slab has 6 free slices, mine 5). If not, the
+  run decides nothing.
+- (V1) Persistence at (b, kap): G := lam_sum(8)/lam_sum(4). G >= 4: the tie persists there (GUIDE). G <= 1.5: it does
+  not. Otherwise inconclusive. Full order gives 8.
+- (V2) At b = beta: lam_sum(12)/lam_sum(8) >= 2 confirms growth (full order 3.375); <= 1.3 means saturation.
+What it cannot show: boxes above 12, slabs thicker than 5, other tilts, the quotient form (this mode is the
+colour-frame zero mode that Proposition ROTOR removes; the discrete tie of row 952 is not run here).
+
+## 8. Status, answers, and the result
+
+**8.1 Status table.** "PROVED" means proved by hand here by Claude Fable 5.2, not yet checked by another model.
+
+| Statement | Where | Status |
+|---|---|---|
+| The account proves a tilt-uniform local covariance bound for its class S of windowed Gibbs measures (CA-II 8.3, `lem-correlation-decay`, L83869; class data L83837-83866), used at levels K - s <= j <= K on clean branches | 2.1 | READ (their text; credited to Sussman and Alpoge) |
+| Lemma CLASS: a member of S is uniformly log-concave on a convex window; the seed-scale laws J_(b,phi) fail the window (W), the box-uniform coercivity (Q) and the smallness (P) | 2.2 | PROVED given Brascamp-Lieb (RECALLED); (W), (P) rest on GUIDE numbers of rows 957, 968 and on row 968, 5.2 |
+| Question (1): (TILT-COV-sup) or (LOC-COV) at the seed scale is NOT a port | 2.4 | READ; a bounded search, CA-III not read |
+| Proposition OBJ, Lemma SLAB: all statements live on T_B; every time extent enters, with no rate | 3.1, 3.2 | PROVED (Jentzsch RECALLED) |
+| Proposition DEP: FP has (TILT-COV-sup) on every box and no uniform gap on larger boxes | 3.3 | PROVED given row 968, 3.3 (i), 4.2 |
+| Lemma SUB: kbar_(s,0) >= Var_(pi_(beta u))(<z, w>)/(s'^2 |z|^2) for every frozen slice u | 3.4 | PROVED |
+| A box-uniform (TILT-COV-sup) fails at beta 2.5 and 2.6 at t = 0 | 3.5 | GUIDE (runs of rows 950, 952; no new run) |
+| Question (2): not circular; the supremum form is strictly stronger than the gap of the same box | 3.6 | PROVED parts 3.1-3.4; the "strictly stronger" half is GUIDE |
+| Three attacks ranked: A1 tie test of the flow forms; A2 the trajectory form; A3 = the lane's open item EXIT (match, not attacked) | 4 | direction |
+| Lemma FH (forced Hessian of an invariant function) | 5.1 | PROVED |
+| Theorem QUOT: Theorem POL-BR with the gain Q_phi from the gauge orbit | 5.2 | CONDITIONAL on BBD Theorem 3.6 (as read in row 968) and Theorem BR |
+| Proposition ROTOR: a rigid SO(3) frame never violates the quotient form; the plain supremum needs R^2/3 | 5.3 | PROVED (model); arithmetic guard passes (7b) |
+| Proposition TIE: in the two-phase model the supremum form needs a^2 and (ABS-flow) needs a^2/4, at every t | 6.2 | PROVED (model); arithmetic guard passes (7b) |
+| Transfer of TIE to the lattice: row 952's discrete tie refutes all three flow forms at beta 2.6 | 6.3, 6.4 | ARGUED from GUIDE |
+| Lemma TRAJ: the seed reads the log-Sobolev inequality only on powers of the bridge interpolations of P^k p_1(u, .) | 7.1 | PROVED implication, by inspection of Proposition HC and Theorem BR |
+| Identity MM: the entropy of a trajectory law is the integrated mean-square difference of two posterior means, over typical tilts | 7.2 | PROVED given BBD (3.44) as read in row 968; guard passes (7b) |
+| (LSI-traj-seed)_a, (LSI-br-seed)_a, (LSI-J-seed)_a, the seed; (TILT-COV-sup) and (ABS-flow) at beta 2.3 to 2.4 | 7.3 | OPEN |
+
+**7b. Arithmetic guard of the three model formulas (GUIDE; criteria in the script header, written before the run).**
+`guide/lane970/check_models.py`, log `check_models.log`, run at 16:13Z under the numeric lock, 71 percent memory free,
+peak 163 MB. C1 (ROTOR, h = 0.3, 1, 3, 10), C2 (TIE (b) at five points, (d) for a = 1, 3 and three scales:
+kap_min/a^2 = 0.796, 0.879, 0.971 and 0.440, 0.546, 0.811, all above 1/4, direct expectation against the M_5/M_3
+formula to 1e-15), C3 (Identity MM in the two-point model, four parameter sets, relative error below 3e-7): ALL
+PASS. This guards the algebra only.
+
+**8.2 Answers to the row.**
+1. Port or new input: NEW input. The account has the statement for one block step at weak coupling (class S),
+   and it asserts nothing on block laws or decay at first passage. Quoted and credited in Section 2.
+2. Circular: NO. No larger box enters; all time extents enter without a rate. But the supremum form is not a
+   gap statement: it asks that no boundary layer orders at any linear tilt. The frozen-slice runs of rows 950
+   and 952 say that this is false at beta 2.5 to 2.6.
+3. Ranking: A1 (tie test of the flow forms, no run needed), A2 (the trajectory form), A3 (EXIT, existing item).
+4. Proof attempt on A1, three stages: the orbit gain (QUOT, ROTOR), the cost of a tie (TIE), what the seed
+   reads (TRAJ, MM). Outcome: a negative result on the flow forms and one surviving inequality. No bound for
+   SU(2) was proved.
+
+**8.3 For the lead: what changes.**
+- Do not queue proofs of a box-uniform (TILT-COV-sup), of its quotient form, or of (ABS-flow) for the whole
+  window. At beta 2.5 to 2.6 they are refuted at GUIDE level (t = 0: Lemma SUB with rows 950, 952; t > 0: Section 7a).
+- The open input of the Theorem BR route is now (LSI-traj-seed)_a: the same inequality, on the functions that
+  Proposition HC and Theorem BR actually use. It is not smaller in any proved sense. Its entropy side has an
+  exact form with typical tilts only (Identity MM).
+- Row 969 (check of row 968) should also read Lemma SUB: row 968's GUIDE run used the uniform tilt and missed
+  the frozen-slice family. Row 971 (literature) should search for bounds at typical tilts, not suprema.
+- One point for the checker of rows 931 and 947: the gauge-averaged kernel in Proposition HC (7.1, note).
+
+**8.4 For the checker of this file, in this order.** (1) Lemma SUB and the identification of row 950's observable
+with a linear statistic of pi_(beta u). (2) Lemma FH (b), (d) and the use made of it in Theorem QUOT. (3) Proposition
+TIE (b), (d), including the Chebyshev step. (4) Identity MM: the Markov step and the gradient formula.
+(5) Lemma TRAJ against the two proofs it cites. (6) Lemma SLAB. The transfer 6.3 and the readings carry no
+proof weight.
+

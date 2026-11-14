@@ -33,6 +33,7 @@ Labels used on every statement: PROVED, CONDITIONAL (on named inputs), GUIDE (nu
 - 2026-11-14T05:50Z: step 1 written (Section 1).
 - 2026-11-14T06:10Z: step 2 written (Section 2: Proposition M, the exact cut model).
 - 2026-11-14T06:35Z: steps 3 and 4 written (Section 3: placement and literature; Section 4: CAP, RARE-P, LOC).
+- 2026-11-14T07:00Z: steps 4 to 7 written (Section 5: ORBIT, Q, CUT-3D; Section 6: open statements, (LSI-weak), tests).
 
 ## 1. Inputs read, duplicate check, notation (step 1)
 
@@ -304,3 +305,150 @@ rate kappa_1. The proof of RARE-P gives (LOC-CAP) from two local inputs: a Poinc
 law of the links of N(k) given the rest, and a bound delta < 1/2 on the conditional weight of Bad_k, both
 uniform in the links outside N(k). The uniformity is the open part (it is a background-uniform statement on a
 block, the wall W1 of row 930 at block scale).
+
+## 5. STEP 2: the attack on the typical cut gap (steps 4 to 6)
+
+Target of this section: (TYP-1)_s, the single-cut form that Section 4 shows is enough:
+there are gamma_* > 0 and delta < 1/3 with w_e^(s)( gamma_k(env_k) < gamma_* ) <= delta.
+(Then at most 3 delta L_1 cuts are bad off a set of weight 1/3, so G >= gamma_* (1 - 3 delta) L_1 there, and
+RARE-P or LOC applies.) Three attacks. None closes. Each leaves a proved statement.
+
+### 5.1 Attack 1, the cut rotation: Proposition ORBIT (PROVED) and what it shows
+
+Let X be a unit imaginary quaternion and phi_s(xi)_x = xi_x e^(sX), so phi_pi = J_k. Let rho be the density of
+nu_k(. | env_k) with respect to Haar and Delta_X := sup over xi and s in [0, pi] of log( rho(phi_(-s) xi)/rho(xi) ).
+Then gamma_k >= 4 e^(-Delta_X)/(pi^2 N). The same holds for left rotations.
+
+Proof. For odd f, -2 f(xi) = integral over [0, pi] of (V f)(phi_s xi) ds with V the generator, |V|^2 = N. So
+4 f^2 <= pi N integral of |grad f|^2(phi_s xi) ds. Integrate against rho, substitute zeta = phi_s xi (an isometry
+that preserves Haar), and bound rho(phi_(-s) zeta) <= e^(Delta_X) rho(zeta). QED
+
+Reading (this is the Ward identity of the row, in integrated form: the defect is the change of log rho along the
+orbit).
+- U(1): the local factor is constant on the orbit for every environment, and Delta is the toron barrier. The
+  bound is the toron scale 1/N times the barrier weight, which is the true order of gamma_k = mu_0(tau)/(2N).
+- Flat SU(2) environment: the local factor has Delta = 0, so gamma_k >= 4/(pi^2 N) up to the oscillation of
+  Phi_env along the orbit. With Section 4.1 this places gamma_k(flat) at the rotor scale 1/N from both sides.
+- Typical SU(2) environment: by (M4) no rotation is a symmetry; the local factor changes along the orbit by
+  beta times a sum of N commutator terms, so Delta_X is of order beta N and the bound is empty.
+- **So the row's picture needs one correction.** Frustration does not gap the rotation mode in a way that helps.
+  It closes the rotation path, which is the only path the abelian model has, and it is the only cheap path in
+  an ordered patch. In a typical environment the flip xi -> -xi has to be made by local moves. An order-one
+  gamma_k is therefore a statement that the quenched cut is a paramagnet (short-range, no rigid state), not a
+  statement about a gapped collective mode.
+
+### 5.2 Attack 2, disorder-averaged second moments: Proposition Q (PROVED), a necessary condition
+
+Let xi, xi' be two samples of nu_k(. | env_k), independent given env_k, and q_k := N^(-1) sum_x <xi_x, xi'_x> the
+overlap. Let Q_k(env_k) := E[q_k^2 | env_k]. Then, for every environment:
+
+  (Q1) Q_k = N^(-2) sum over (x, y) of |G(x, y)|_HS^2, with G(x, y) = E_(nu_k)[xi_x (x) xi_y] (a 4 x 4 matrix).
+  (Q2) gamma_k <= min(3, 1/(N Q_k)).
+  (Q3) If w_e^(s)(G < c_0 L_1) <= delta then w_e^(s)( N Q_k <= 2/(c_0 (1 - delta)) ) >= c_0 (1 - delta)/6.
+
+Proof. (Q1): <xi_x, xi'_x><xi_y, xi'_y> = sum_(i,j) xi_x^i xi_y^j xi'_x^i xi'_y^j; take the conditional
+expectation. (Q2): f = <xi_x, Q> with Q a top eigenvector of E[xi_x (x) xi_x] has E f^2 >= 1/4 and
+|grad f|^2 = 1 - f^2, so gamma_k <= 3. For c in (R^4)^Lambda and f_c = sum_x <c_x, xi_x>: E f_c^2 = c.Gc and
+E|grad f_c|^2 <= |c|^2, so gamma_k <= 1/||G||. G is positive semidefinite with trace N, so
+N^2 Q_k = tr G^2 <= ||G|| N. (Q3): all cuts have the same law, so by (Q2)
+c_0 (1 - delta) L_1 <= E[G] <= L_1 E[min(3, 1/(N Q_k))]; a variable in [0, 3] with mean at least c exceeds c/2
+with probability at least c/6. QED
+
+Reading. (Q3) is a necessary condition for (CUT-TYP) in a form a 4D Monte Carlo can measure: fix the slices 0 and
+s, resample the cut, and measure the overlap. (TYP-1) at level gamma_* forces N Q_k <= 1/gamma_* on good
+environments. Fact test (ARGUED from check 933's factorisation): in Model G the mean cut angle sits in one of
+two wells and the differences have bounded variance v, so Q_k is about e^(-2v), of order one, in every
+environment; U(1) fails (Q3) as soon as N e^(-2v) > 2/c_0. This is the step where the abelian model fails in
+the paramagnet form of the claim.
+
+By (M5), E[Q_k] = E[q_k^2] with (xi, env) a sample of the gauge theory and xi' one resampling of the cut. So a
+proof of the necessary condition needs (OD), decay of the overlap correlation E[<xi_x, xi'_x><xi_y, xi'_y>] in
+|x - y|, for the theory doubled over one cut with two shared slices. (OD) is OPEN. And (OD) is only the linear
+part: a bound on ||G|| controls linear odd functions, not the odd Poincare constant.
+
+### 5.3 Attack 3, a finite-range form: Lemma CUT-3D (PROVED), and where the two-scale argument stops
+
+Let mu_4 be the law of all links of the a-periodic lattice with density proportional to
+sum over eps in {0,1}^(Z_a) of exp(beta sum_p sigma_p^eps (1/2) tr U_p), where sigma_p^eps = (-1)^(eps_tau) on
+the temporal plaquettes over cut k between times tau and tau+1, and 1 elsewhere. For 0 <= r < min(s, a - s) let
+B_r be the links over cut k at the times s-r..s+r, env_r all other links, pi_r(. | env_r) the conditional law of
+B_r, and gamma_k^(r)(env_r) the odd Poincare constant of the marginal of pi_r on the layer at time s (odd under
+the flip of that layer, gradient over that layer). Then:
+
+  (a) the marginal of mu_4 on the slices 0 and s is w_e^(s);
+  (b) pi_r is proportional to the product over the layers tau of B_r of the local factors of (M3), times the
+      product over tau = s-r-1..s+r of cosh( beta sum_x <xi^tau_x, T^tau_x xi^(tau+1)_x> ), T the time connection;
+  (c) for odd gauge-invariant F(u, v): E sum_(b in cut_k) |grad_b F|^2 >= E_(mu_4)[ F^2 gamma_k^(r)(env_r) ].
+
+Proof. (a) Flipping the cut at a time tau' outside {0, s} is a change of variables that maps eps to
+eps + e_(tau'-1) + e_(tau'). The classes are labelled by the two parities of eps on the slabs (0, s) and (s, a),
+each class has 2^(a-2) members with equal integrals, and (M1) identifies the sum. (b) Collect the plaquettes
+that contain a link of B_r and sum over eps_tau for the time bonds that touch B_r. (c) F depends on B_r only
+through the layer at time s, because r < s and r < a - s. Given env_r it is odd under the flip of that layer, and
+pi_r is invariant under that flip by (b). So it is centred; apply the definition of gamma_k^(r) and integrate
+using (a). QED
+
+Reading. pi_r is a quenched model of finite range on a slab of 2r + 1 layers (a mixture over the 2r + 2 signs of
+finite-range Gibbs laws). Phi_env is gone. The price: env_r fixes more. At r = 0 the lemma is Remark 2 of
+Section 2.2 and gamma^(0) is tunnelling-small (two cosh factors with fixed fields). For r >= 1 the fields act on
+the outer layers only. No comparison between gamma_k^(r) and gamma_k is proved.
+
+Two-scale argument (rotation mode against local modes). In the quadratic (spin-wave) approximation around one
+configuration the modes are those of the covariant Laplacian 4 - A_R of Lemma W, and the rotation mode is its
+bottom lambda_0(R): zero for a flat connection, positive when the holonomy is irreducible. So at Gaussian level
+frustration does lift the soft mode, to beta lambda_0(R). This is the true part of the row's picture, and the
+GUIDE run of Section 6.4 measures lambda_0 on sampled connections. The argument stops at the next step: an odd
+function separates xi from -xi, which no quadratic approximation around one configuration contains. The odd gap
+is a tunnelling or mixing rate, and to bound it one needs the paramagnet statement of 5.1. For a finite-range
+quenched model that is strong spatial mixing uniform in the boundary condition (Stroock and Zegarlinski; recalled,
+the repository's copy folder is empty per the memory note), which at beta 2.3 is excluded for single-site
+criteria by Lemma W and is open at block scale.
+
+### 5.4 The exact step where U(1) fails, in each attack
+
+| attack | statement an SU(2) proof would use | U(1) |
+|---|---|---|
+| 5.1 rotation | (M4): the holonomy group of a layer is non-abelian, so no rotation orbit through J_k keeps the local factor | holonomy abelian for every environment; the orbit exists; gamma_k = mu_0/(2N) |
+| 5.2 overlap | (Q3): N Q_k bounded on a fixed fraction of environments | Q_k of order one in every environment (two wells of the mean angle) |
+| 5.3 Gaussian | lambda_0(R) > 0 at order one for the typical connection | lambda_0 = 0 for every environment (a covariantly constant section exists) |
+
+## 6. STEP 3: the smallest unproved inequalities, the tests, and (LSI-weak) (step 7)
+
+### 6.1 The open statements, smallest first
+
+1. **(TYP-1)_s** (replaces (CUT-TYP)_s): gamma_* > 0 and delta < 1/3, uniform in the box, with
+   w_e^(s)( gamma_k(env_k) < gamma_* ) <= delta at beta 2.3 to 2.6. No rate in N.
+2. **(EVEN-PI)_s**: lambda_e >= lambda_e0 > 0 for gauge-invariant Theta-even functions under w_e^(s). With (TYP-1)
+   it gives lambda_s >= (1/3)/(1/(gamma_* (1 - 3 delta) L_1) + 2/lambda_e0) (RARE-P). Order one, not order L_1.
+3. **(LOC-CAP)_s** (Section 4.4): with (TYP-1) in its local form it gives lambda_s of order L_1.
+4. Necessary for 1, and the first thing to prove or refute: **(OD)**, E[q_k^2] <= C/N (Proposition Q).
+
+Dropped as a target: the rate e^(-cN) of (CUT-TYP) (Section 4.1, ARGUED doubtful; not needed by 4.3, 4.4).
+
+### 6.2 (LSI-weak), stated precisely, and the verdict
+
+(LSI-weak)_s: Ent_(w_e^(s))(F^2) <= (2/alpha) E|grad F|^2 for gauge-invariant F, with alpha >= C L_1/N.
+
+- It is not group-blind at the seed box (PROVED). A log-Sobolev inequality with constant alpha implies the
+  Poincare inequality with constant alpha on the same class (linearise F = 1 + t f), and odd functions are in the
+  class. So (LSI-weak) implies lambda_s >= C L_1/N by itself. In Model G at the seed box and s = a/2,
+  lambda_odd < 8.2e-9 (G4, HOLDS in check 933) against L_1/N = 0.05. So U(1) fails (LSI-weak) there for every
+  C > 1.7e-7. Row 930 called this input group-blind; that holds only at large tau, where mu_odd tends to 1.
+- It is not easier than (TYP-1) in kind: it contains an odd gap and an even gap at the scale L_1/N for the full
+  two-slice law. And by Section 4.1 the scale L_1/N is probably not enough for RARE.
+- Verdict: replace the pair ((CUT-TYP), (LSI-weak)) by ((TYP-1), (EVEN-PI)) for an order-one odd gap, and by
+  ((TYP-1) local, (LOC-CAP)) for order L_1. (EVEN-PI) is weaker than any log-Sobolev input.
+
+### 6.3 Tests that could refute (TYP-1)
+
+- **Overlap test (the decisive one; Monte Carlo, GUIDE).** On a small 4D lattice at beta 2.3: thermalise; fix the
+  slices 0 and s except cut k of slice s; update all other links; measure N q_k^2 between the cut and its
+  starting value (by (M5) this has the law of the two-replica overlap). (TYP-1) forces N E[q_k^2] <= 1/gamma_*
+  + delta N, bounded in N. A value of E[q_k^2] of order one that does not fall with the cross-section refutes
+  (TYP-1) and the whole CUT route. The flat model and U(1) give order one.
+- **Gaussian with a random connection (the harmonic part only).** lambda_0(R) = bottom of 4 - A_R for sampled
+  connections. If lambda_0 were far below one for typical curvature, the frustration picture would fail already
+  at Gaussian level. It cannot confirm (TYP-1).
+- **Small N by hand.** N = 1 is a single link: gamma = (1 - q)/q-type, order one at every beta. N = 2 x 2 or a
+  ring of 4 links with one holonomy (g_P, h_P): the model is solvable by characters, and the odd gap as a function
+  of the holonomy class shows the passage from the rotor (flat) to the frustrated case. Not done here.

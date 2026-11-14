@@ -1,0 +1,18 @@
+{
+ "args": {
+  "slice": "xy",
+  "vacfile": "logs/vac_b2.3_L8.npy",
+  "genvac": 1,
+  "beta": 2.3,
+  "L": 8,
+  "T": 16,
+  "start": "cold",
+  "therm": 300,
+  "meas": 40,
+  "every": 5,
+  "seed": 77,
+  "out": "logs/vac_b2.3_L8.json"
+ },
+ "vac_sxy": 0.39470372056352565,
+ "seconds": 3.740372896194458
+}

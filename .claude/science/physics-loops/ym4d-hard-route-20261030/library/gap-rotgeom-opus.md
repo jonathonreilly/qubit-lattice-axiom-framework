@@ -147,3 +147,87 @@ Check against Lemma SPLIT: G = Z_2^3, Sigma = {C_2, C_3, C_4}: L_chi = 2 #{s: ch
 SPLIT-type bound are the Kazhdan constants: kappa = 2 for the centre flips; for the translations Z_b^3 with
 Sigma = {tau_i^(+-1)}, kappa = 4 sin^2(pi/b), so (2/kappa) sum q_s = 3 q_tau/sin^2(pi/b), about 3 b^2 q_tau/pi^2; for the
 48 point-group elements of a cube, kappa is a pure number. Next: Step 3, which sectors carry the soft modes.
+
+### Step 3. Item (2): which sectors carry the soft modes; is any sector easier? (done 2026-11-14T15:15Z)
+
+Group used: G_full = (centre flips Z_2^3) x| Sym(b^3) on gauge-invariant states, Sym(b^3) = translations Z_b^3
+x| O_h (48 point-group elements: permutations of the three axes and the three inversions). "Trivial sector" = the
+trivial representation of G_full: centre-even, zero momentum, A_1 under O_h.
+
+**3.1 Frozen Q_8 and 2T (PROVED, by hand count).** At beta = infinity the gauge-invariant transfer operator of a
+finite group H projects on flat spatial connections, and all its nonzero eigenvalues are equal, with multiplicity
+N_flat = |Hom(Z^3, H)/H| (commuting triples up to simultaneous conjugation). G_full permutes the flat classes (a
+flip multiplies h_nu by -1; a permutation of axes permutes entries; the inversion of axis nu replaces h_nu by its
+inverse; translations act trivially). So the frozen ground space restricted to a sector is a permutation module, and
+its trivial part has one vector per G_full-orbit.
+- Q_8. Commuting triples: 8 central ones, and for each of x = i, j, k the 4^3 - 8 = 56 triples in <x> with a
+  noncentral entry; conjugation by j (or k) maps x to -x, so N_flat = 8 + 3 x 28 = 92. Flip-fixed classes for C_2:
+  type (noncentral, central, central), 4 per x, 12 in all, so Z^v/Z = 12/92 = 3/23 and q = 10/23: this reproduces
+  the lane's FT-FROZEN number p = 10/23 (row 962, 1.4), an independent check of the count. Flip orbits: 1 central
+  orbit, and for each x one orbit per nonempty set S of noncentral positions (the flips act transitively on the
+  signs): 1 + 3 x 7 = 22, so S_ev = 21 in the frozen limit. Point group on top: permutations act on S, inversions
+  keep S, so the orbits are labelled by |S| in {1, 2, 3}: **1 + 3 x 3 = 10 orbits; S_1 = 9 in the trivial sector**
+  (S = 91 in all sectors).
+- 2T (order 24). Maximal abelian subgroups: <i>, <j>, <k> (order 4, conjugate under 2T) and four conjugate cyclic
+  groups <u> of order 6 (u = (1 + i + j + k)/2), each its own normalizer, with u not conjugate to u^(-1) and not to
+  -u. N_flat = 8 + 168/6 + 832/4 = 8 + 28 + 208 = 244; flip-fixed classes for C_2: 4 (type (n, c, c) of the order-4
+  family), so Z^v/Z = 1/61 and q = 30/61, again the lane's number. Flip orbits: 1 + 7 + (3 x 2 + 3 x 4 + 8) = 34
+  (each noncentral entry of the order-6 family is [u] or [u^(-1)] up to sign). Point group (inversions exchange [u]
+  and [u^(-1)] at one position): **1 + 3 + 3 = 7 orbits; S_1 = 6 in the trivial sector** (S = 243).
+So the zero-quantum-number sector keeps an exact degeneracy of 10 (Q_8) or 7 (2T) frozen flat vectors. A seed stated
+in that sector fails for the frozen groups, as any form must (its consumer, a gap in that sector, is false there).
+
+**3.2 Compact U(1) (Coulomb phase): torons and photons (ARGUED; the counting is PROVED from the stated spectrum).**
+Spectrum used (the standard weak-coupling Hamiltonian picture, RECALLED, not derived here): the zero mode is the
+torus of flat holonomies theta in T^3; its conjugate is the electric flux e in Z^3 with energy g^2 |e|^2/(2b)
+(lattice units, uniform field e/b^2 on b^3 links); the rest are photons, momentum p in (2 pi/b) Z_b^3 \ {0}, two
+polarizations, energy omega(p) >= 2 sin(pi/b).
+- Torons. A flux state has zero momentum. Under the lane's flips it is odd in direction nu iff e_nu is odd, so the
+  odd e fill the flux half Q_0 and the even e != 0 sit in the even sector, in S_ev. Under O_h, e is a polar vector;
+  each orbit O_h e carries exactly one A_1 vector. So the trivial sector of G_full keeps one toron state per O_h-orbit
+  of (2Z)^3 \ {0}. Count at the seed shape b = 24 a: sum over e in (2Z)^3 of exp(-a g^2 |e|^2/(2b)) =
+  (sum_n exp(-g^2 n^2/12))^3, about (12 pi/g^2)^(3/2) = 231/g^3, so the trivial sector holds about 231/(48 g^3), that
+  is 4.8/g^3, toron states below energy of order 1/a (GUIDE arithmetic). The projection divides the toron count by
+  8 x 48 = 384 and leaves it of order one or more at g <= 1.
+- Photons. One-photon states have p != 0 and are centre-even. The trivial sector holds no one-photon state; it
+  holds the A_1, zero-total-momentum part of the multi-photon gas (the lightest: two photons at +- p_min, energy
+  about 4 pi/b, weight e^(-pi/6) = 0.59 per state at b = 24 a). Lemma R5 gives 1 + S_1 >= (1 + S)/|G_full| with
+  |G_full| = 8 x 48 x b^3. At the seed shape the free count of row 962 (1.5) is log(1 + S) about 9.1e3, and at
+  a = 30, b = 720: log |G_full| = log(384 x 3.7e8) = 25.7. So log(1 + S_1) >= 9.1e3 - 26: FT-U1 fails in the
+  trivial sector by the same extensive margin. Projection removes log |G|, never an extensive amount.
+
+**3.3 Momentum and lattice angular momentum give no free-energy margin (ARGUED, dilute-gas reading; GUIDE in Step 7).**
+A margin would be a lower bound on the lowest energy of a nontrivial sector well above the gap, so that the
+nontrivial sectors are automatically small. There is none:
+- Momentum p != 0: the lowest state is one particle of momentum p, energy sqrt(m^2 + p^2) = m + p^2/(2m) + ..., so
+  the margin over the gap is p^2/(2m), about (2 pi/b)^2/(2m); for the photon it is omega(p_min), about 2 pi/b, and
+  e^(-a 2 pi/b) = e^(-2 pi/24) = 0.77 at the seed shape. The p != 0 sectors together carry the one-particle count
+  b^3 (m/(2 pi a))^(3/2) e^(-m a), the volume factor of the seed.
+- Lattice angular momentum at p = 0: two particles with relative momentum +- q fill a permutation module of O_h on
+  the orbit of q, which for a generic q is the regular representation: every irreducible rho gets d_rho^2/48 of the
+  two-particle continuum, which starts at 2 sqrt(m^2 + (2 pi/b)^2) in every sector. One particle of spin J != 0 at
+  rest is heavier than 0++ (a spectral fact of the model, not a bound we have).
+- The twisted tori do have a large free-energy deficit (for the free photon, log Z(a; B; R)/lambda_0^a is about
+  (1/256) of the untwisted thermal free energy for a quarter turn R, plus a term of order b/a from the axis, because
+  away from the axis the mapping torus is locally the torus of time 4a). But that deficit is what spreads a LARGE
+  thermal sum evenly over the sectors (S_rho about d_rho^2 S/|G|); it makes no sector small. When S is small (the
+  seed regime) Lemma R4 (ii) gives Tr(V_R T^a)/lambda_0^a = 1 + O(S): nothing to exploit.
+
+**3.4 The zero-quantum-number sector carries the full order-one difficulty (ARGUED from 3.1-3.3 and Lemma R5).**
+(i) It contains the vacuum, the lightest excitation of the confining theory (0++ at rest, which is centre-even,
+p = 0, A_1+), so the gap of T_B on it is the mass gap itself. (ii) In the dilute reading its thermal sum is
+e^(-m a) (one particle at rest) plus the A_1, p = 0 part of the two-particle continuum, about
+(1/48) b^3 (m/(4 pi a))^(3/2) e^(-2 m a) / 2: still a volume factor, now against twice the exponent. GUIDE
+arithmetic, one scalar species, b = 24 a, x = m a: full seed 878 x^1.5 e^(-x) <= 0.3 needs x near 12; p = 0 sector
+e^(-x) + 155 x^1.5 e^(-2x) <= 0.3 needs x near 4.5 (row 962 A4 says about 6); trivial sector of G_full
+e^(-x) + 3.2 x^1.5 e^(-2x) <= 0.3 needs x near 2.5. So the NUMBER is much easier in the trivial sector: the
+one-particle volume count leaves, and the point group divides the two-particle count by 48. (iii) But no consumer
+reads it. The engine needs S (Lemma X uses the full trace in both channels), and by Lemma R5 the step from S_1 to S
+costs the deficits q_s, which are the weight of the nontrivial sectors: in the dilute gas almost all of S. And the
+target (GAP) is a gap for tr F^2 correlations at separated points, which needs the lowest energy at EVERY momentum
+and lattice angular momentum; a trivial-sector gap bounds only the zero-momentum A_1 correlator. On the lattice no
+statement E(p) >= E(0) is available before O(4).
+For the centre flips that split is useful because the electric flux states are heavy in the confined phase
+(Lemma SPLIT, Q_0); for the space group it puts almost all of the seed into the deficit half. (iv) Every sector form
+still fails FT-U1 (3.2), FT-FROZEN (3.1) and SMALL-BOX (the small-box 0++ level, of order g^(2/3)/b in Luscher's
+small-volume expansion, RECALLED, is in the trivial sector), as it must. Next: Step 4, diagonal reflection positivity.

@@ -491,3 +491,21 @@ space, and E[E^(0) x E^(n)] = E[ E[E^(0) | orbit] x E[E^(n) | orbit, g^(0)] ]). 
 box-free for every u. Slices to try first: non-central ones near a possible tie of invariant data, for instance
 anisotropic deformations of u_pi and tilted copies of u_xy. For compact U(1) the same measurement at u_xy should
 show a limit growing like L^3 (7.2).
+
+**7.5 A first run of the test of 7.4 (GUIDE; batch 5; criteria fixed here before the batch).** Scripts
+`/tmp/gap-sc-950/scripts/slab_proj.py` (SU(2)) and `slab_u1p.py` (U(1)). They follow only the tie-mode amplitudes
+X_a = sum over x and y links of eps_l E_l^a/sqrt(2 L^3) (a = colour; the mean over a of E[X_a^2] is lambda_* of 5.2) and a control
+Y_a (uniform mode on z links), at frame lags n = 0, 1, 2, 4, 8, 16, 32, 64. Slices: u_xy, and u_xy tilted by an angle
+delta per link along the pattern in colour 3 (non-central; stabilizer U(1); X_3 is then the radial, horizontal mode
+and X_1, X_2 are almost vertical).
+- Validation (V): at u_xy, beta 2.3, L = 6, the raw lagged moment (1/3) sum_a <X_a^(0) X_a^(n)> must start near 2.5 and fall
+  below 10 percent of that by lag 64 (Lemma CEN: the limit is exactly 0). If it does not, the frame chain is too
+  slow or wrong, and I say so.
+- SU(2), tilted slices at beta 2.6 (delta = 0.3 at L = 4 and 8; delta = 0.1 at L = 8) and beta 2.3 (delta = 0.3, L = 8): report
+  lag 0 (temporal gauge) and lag 64 (projected). (SG2) survives these modes if the projected variances at L = 8
+  are at most 1.3 times those at L = 4 and of order one; a ratio of 4 or more would refute (SG2) there.
+- U(1) at u_xy, beta 2.3, L = 4 and 6: compact U(1) fails (SG2), hence (SG-step), if <X^(0) X^(64)> is at least half of
+  <X^(0) X^(0)> and grows by a factor of 3 or more from L = 4 to 6.
+Order of events: 8-sample smoke runs (outside the lock, a few seconds) were seen before these lines were written:
+U(1) at L = 4 gave 41.5 at every lag; SU(2) at u_xy decayed from 6.1 to about 0 by lag 32 on one colour. So the
+direction of the U(1) result was known; the SU(2) tilted-slice values and all L dependence were not.

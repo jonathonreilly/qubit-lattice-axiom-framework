@@ -203,3 +203,7 @@ errors of about 20 percent); all go to the sweep as planned in 4.3 and 4.5.
 
 - L = 10 (3000 + 20000): u_xy 8.54 +- 0.73; z-twist pi/4 colour 3 8.55 +- 1.23 [7.11]; z-twist pi/2 colour 3 7.92 +- 1.72 [5.02].
 
+- L = 14 (3000 + 14000): u_xy 7.06 +- 0.85; z-twist pi/2 colour 3 13.20 +- 2.60 [7.21].
+  z-twist pi/2 colour 3 so far, L = 8, 10, 12, 14, 16 (one chain each): 9.63, 7.92, 9.41, 13.20, 17.04. Slow rise above L = 12 or
+  noise; the replicas decide.
+

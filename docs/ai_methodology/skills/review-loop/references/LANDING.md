@@ -452,3 +452,65 @@ Generated audit JSON/Markdown is a special case: do not hand-merge generated
 files from stale PR heads. Resolve source files first, prefer the current
 `origin/main` generated audit surface, then rerun the audit pipeline and strict
 lint to regenerate it.
+
+## Scripted single-PR run
+
+[`scripts/land_run.py`](../scripts/land_run.py) carries out `procedures/land.md`
+for one case: a unit of one PR, landed exactly as its author pushed it, or
+held. It calls the reviewer model once, for the independent read of step 4.
+It makes no fix, no narrowing, no salvage and no retarget. It closes no PR and
+never lands several PRs together. It files no `check` record and adds nothing
+to `docs/repo/ACTIVE_REVIEW_QUEUE.md`. A held unit's findings are in the PR
+comment only.
+
+```text
+python3 docs/ai_methodology/skills/review-loop/scripts/land_run.py PR --work DIR \
+  --reviewer-model M --reviewer-effort E [--repo OWNER/NAME] [--land] \
+  [--review-file FILE] [--min-mem-pct 30] [--max-rss-gb 3] \
+  [--review-timeout-sec N] [--gate-timeout-sec N]
+```
+
+- `DIR` is an existing clone. The run writes `DIR/evidence/`, its worktrees
+  under `DIR/wt/`, `DIR/tmp/` and `DIR/RESULT.txt`. It holds the machine's
+  numeric lock while the gate runs.
+- `M` and `E` come from the landing-review rows of `SETTINGS.md`.
+- Without `--land` the run is review only. It stops after the gate and writes
+  nothing to GitHub. With `--land` it pushes through `land_train.sh` and posts
+  one comment.
+- `--review-file` reuses a reviewer result. The run accepts it only when it
+  names the candidate's exact tree.
+
+The run reads the PR and the depth that `review_depth.py` prints. It builds
+the candidate on fresh `main`. Before any model call it runs the three diff
+checks on the candidate and compiles each changed Python file; a failure holds
+the PR with the output. The reviewer reads the candidate in a disposable
+worktree and answers in a fixed JSON schema. The reviewer's rules and reading list come
+from `land.md` at the base revision of `main`, never from the PR. The run
+checks the unit record with `review_receipt.py`, runs the combined gate under
+a memory cap and a timeout, restores the generated outputs and runs the three
+diff checks. A citation-graph delta warning is split by claim id: ids on no
+path of the PR are recorded, and ids on a changed path must belong to a file
+the reviewer classified. Its tools come from `main` at the run's base. Each
+phase writes one record under `DIR/evidence/` and a line in `run.log`.
+`report.md` sums up the run, with the reviewer's token counts.
+
+A new run needs a `DIR` with no `evidence/` folder and no worktree of an
+earlier run under `DIR/wt/`. Move the old evidence away and remove the old
+worktrees with `git worktree remove` first; the run refuses otherwise.
+
+`RESULT.txt` starts with `status: ok`, `status: not_merged` or
+`status: failed`. Its second line gives the PR and one of these results:
+
+| Result | Means | Next |
+|---|---|---|
+| `MERGED` | The PR landed and shows merged. The run posted the landing comment. | Nothing. |
+| `HELD` | The reviewer held the unit, a commit did not apply, a diff check or a compile check failed, the gate failed, or the PR changes the axiom file. With `--land` the run posted the hold comment. | The author answers with a new commit, and the run starts again. The owner decides an axiom change. |
+| `PASSED` | Review only: the review, the unit record and the gate passed. Nothing was pushed or posted. | Run again with `--land` to land it. |
+| `LEFT_OUT` | The PR is closed, a draft, not based on `main`, or from a fork. | Nothing until that changes. |
+| `NEEDS_AGENT` | The case needs a lander's judgement, and nothing was pushed or posted. Examples: merge commits, an empty commit, a review that names another tree or a lower depth, a PASS with a material finding, a rejected unit record, a delta warning it cannot attribute, a dirty candidate after the gate, `main` moving on a path the PR changes or the unit record reads, a dependent PR. | Land it with the agent loop, from `DIR/evidence/`. |
+| `NEEDS_AGENT` with `status: not_merged` | `main` holds the PR and GitHub does not show it merged. | Leave the PR as it is and report it to the owner. |
+| `NEEDS_AGENT` with `status: failed` | `land_train.sh` stopped, or `main` does not hold the reviewed content. | Read `landing.log` and act as the line table above says. |
+| `NOT_REACHED` | The run stopped before a decision: reviewer output that does not parse, a base `land.md` without its step table, a base without `docs/repo/DEFERRED_DECISIONS.md`, low memory, a held numeric lock, or a gate stopped for memory or time. | Fix the cause and run again. A gate that did not finish is reported as not run. |
+
+The agent loop keeps everything else: fixes and narrowing, salvage, units of
+several PRs, retargets, closes, and every case that returns `NEEDS_AGENT`.

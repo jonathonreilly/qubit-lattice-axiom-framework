@@ -282,3 +282,96 @@ one object, the law of the next slice given the present one:
 The threshold is strict and exact: the conditional law must relax faster than the temporal coupling feeds in
 (sigma^2 is beta e^(-omega) for a free mode). This is where a mass enters: alpha_c/sigma^2 = e^(2 omega).
 The box does not occur in Theorem C; it enters only through Proposition HC.
+
+### Step 5: the averaged core of attack B, Gaussian domination, and three GUIDE runs
+
+**5.1 Theorem C0 (averaged core; PROVED, three lines; no conditioning slice occurs).** Write I(g) := E_nu[|grad g|^2/g]
+(Fisher information). Assume, for smooth positive gauge-invariant g:
+  (C1-av)_(alpha_c): Ent_nu(g) - Ent_nu(P g) <= I(g)/(2 alpha_c)     (the entropy lost in one step),
+  (FC)_theta: I(P g) <= theta I(g), with theta < 1                      (Fisher information contracts in one step).
+Then (LSI-vac)_alpha holds with alpha = alpha_c (1 - theta).
+Proof. Ent_nu(g) = sum over k < n of [Ent_nu(P^k g) - Ent_nu(P^(k+1) g)] + Ent_nu(P^n g)
+<= sum_k theta^k I(g)/(2 alpha_c) + Ent_nu(P^n g), and the last term tends to 0. QED
+Relation to Theorem C: (C1) gives (C1-av) by averaging over x (chain rule, Step 4 (i)); (C1) and (C2) give (FC)
+with theta = sigma^2/alpha_c (Step 4 (iii)). Variance analogue (same proof): if Var_nu(f) - Var_nu(P f) <=
+E_nu|grad f|^2/gamma_c and (GC)_theta: E_nu|grad P f|^2 <= theta E_nu|grad f|^2, then nu has the Poincare constant
+gamma_c (1 - theta) and r_1^2 <= theta. (GC) is the linearisation of (FC) at g = 1.
+One Gaussian mode (by hand, exponential tilts): alpha_c = beta e^omega and theta = e^(-2 omega), both sharp, and
+alpha = 2 beta sinh(omega). So in FP the constants of (C1-av) and of (COV) stay bounded away from their bad values
+at every box size (alpha_c >= beta, kbar <= 1/beta), and theta = e^(-2 omega_min) tends to 1.
+**The U(1) failure of this route sits in one inequality, (FC).**
+
+**5.2 Trajectory-averaged forms with local constants (PROVED; between Theorem C and Theorem C0).** For a slice x let
+gamma_c(x), kbar_h(x), alpha_c(x), sigma^2(x) be the constants of the single law pi_x, and c(x) := beta^2 kbar_h(x)/gamma_c(x),
+c_F(x) := sigma^2(x)/alpha_c(x).
+(W') Every eigenvalue r of P on non-constant gauge-invariant functions has r^2 <= rho_c, the spectral radius of
+g -> c P g on C(M); rho_c = lim_n sup_x (E_x[c(U_0) ... c(U_(n-1))])^(1/n) <= sup c.
+(C-av) Ent_nu(g) <= E_nu[S |grad g|^2/g] with S := sum over k >= 0 of (P c_F)^k P (1/(2 alpha_c)) (operators: multiply,
+then P), when the series converges; so (LSI-vac) holds with 1/(2 alpha) = sup S.
+Proof. (W') For P f = r f put F := |grad f|^2. The proof of Proposition W gives r^2 F <= c P F pointwise; iterate with
+positivity, r^(2n) F <= (c P)^n F, and take sup norms. (C-av) Step 4 (iii) gives F_(k+1) <= c_F P F_k pointwise and
+Step 4 (ii) gives E_nu Ent_(pi_x)(g_k) <= E_nu[(1/(2 alpha_c)) P F_k]; P is self-adjoint in L^2(nu). QED
+
+**5.3 Gaussian domination (PROVED; the annealed form of (C2), group-blind).** For every h in R^N:
+  E_J exp( beta <h, U_0 - U_1> ) <= exp( beta |h|^2/2 ),   hence   beta E_nu[ Var_(pi_x)(<h, w>) ] <= |h|^2.
+Proof. For a finite positive measure m on R^N and the Gaussian G(y) = e^(-beta|y|^2/2): the double integral of
+G(x - w - h) m(dx) m(dw) is the integral of the Fourier transform of G times |m^|^2 e^(-i k.h), at most its value at
+h = 0. On M x M, G(x - w - h) = e^(-beta L) e^(beta<x, w>) e^(beta<x - w, h>) e^(-beta|h|^2/2). Second order in h, with
+E Var(. | U_0) <= E(<h, U_1> - <h, U_0>)^2. QED
+(The same holds for several times at once, by Hoelder's inequality for Schatten norms; not needed.)
+What it does not give: the direction h is fixed, and Proposition W needs the horizontal direction of grad P f at
+each x. FP satisfies the bound with equality in the soft limit (beta Var = e^(-omega)). So Gaussian domination
+bounds the numerator of c on average and cannot carry the SU(2) step.
+
+**5.4 GUIDE runs (refute only; criteria written in the script headers before each run).** Scripts and logs:
+`/tmp/gap-lsivac-941/scripts/{propw_guide,propw_av_guide,plaq_guide,plaq_r1_check}.py` and the `.log` files beside
+them; not committed. Each run under the numeric lock, one thread, nice, 69 percent memory free, well below 2 GB.
+Grid models only; they establish nothing about the continuum statements or about SU(2) on a box.
+
+Run 1 and 2, the one-rotor chain of rows 931 and 940 (circle, 256 points, V = h1 cos u + h2 cos 2u).
+Criteria: r_1 <= kappa_W and gamma >= gamma_c (1 - kappa_W^2) when kappa_W < 1; r_1^2 <= rho_c.
+
+| (beta, h1, h2) | r_1^2 | sup c = kappa_W^2 | rho_c | E_nu c | sup form | averaged form |
+|---|---|---|---|---|---|---|
+| (0.3, 0, 0) | 0.0220 | 0.0438 | 0.0438 | 0.0438 | PASS | PASS |
+| (1, 0, 0) | 0.1993 | 0.3830 | 0.3830 | 0.3830 | PASS | PASS |
+| (2.3, 0, 0) | 0.5496 | 0.9229 | 0.9229 | 0.9229 | PASS | PASS |
+| (2.3, 1, 0.5) | 0.1382 | 2.976 | 0.3244 | 0.2152 | EMPTY | PASS |
+| (1, 0, 4) double well | 0.5362 | 278.7 | 26.35 | 26.30 | EMPTY | EMPTY |
+| (4, 2, 1) | 0.1075 | 5.078 | 0.1618 | 0.1618 | EMPTY | PASS |
+| (8, 0, 0) | 0.8747 | 1.0065 | 1.0065 | 1.0065 | EMPTY | EMPTY |
+| (2.3, 0, 1.5) double well | 0.9086 | 16.71 | 2.669 | 2.620 | EMPTY | EMPTY |
+
+No inequality of Proposition W or (W') is violated. Readings. (a) The sup form is empty as soon as the potential
+is not convex-like, even with one well and a large true gap ((2.3, 1, 0.5): r_1 = 0.37, sup c = 3): one bad
+conditioning point decides it. (b) The trajectory average repairs the one-well cases and not the double wells:
+the criteria use gradient-form constants, which see a barrier that one kinetic step jumps (row 931 saw the same
+for Theorem V). (c) The free circle rotor at beta 8 has sup c = 1.0065: for U(1) the one-link criterion is
+marginal at large beta, as the flat limit e^(-omega) = 1 says.
+
+Run 3, the one-plaquette SU(2) chain (4 links; exactly reduced to class functions of the plaquette angle:
+C chi_n = ((2/beta) I_n(beta))^4 chi_n, V = -beta cos theta; 400 points, 60 characters; the same numbers on a
+300-point, 80-character grid to six digits). Criterion: r_1^2 <= rho_c on the reduced chain.
+
+| beta | r_1 | E_1 | r_1^2 | rho_c | sup c |
+|---|---|---|---|---|---|
+| 1.0 | 0.00295 | 5.83 | 8.69e-6 | 8.83e-6 | 1.23e-5 |
+| 2.3 | 0.02832 | 3.56 | 8.02e-4 | 8.44e-4 | 1.52e-3 |
+| 2.6 | 0.03341 | 3.40 | 1.12e-3 | 1.18e-3 | 2.39e-3 |
+| 4.0 | 0.03912 | 3.24 | 1.53e-3 | 1.61e-3 | 6.50e-3 |
+| 8.0 | 0.03341 | 3.40 | 1.12e-3 | 1.12e-3 | 1.24e-2 |
+
+PASS in all rows, and the averaged form is within 6 percent of the true r_1^2. (A first run used a wrong
+character coefficient, an extra division by n; its log is kept as `plaq_guide_wrongcoeff.log` and is not used.)
+Reading: on the smallest interacting SU(2) unit the one-step route is sharp and far inside its domain, at the
+target couplings. This model has one gauge-invariant variable. It cannot show a collective slow mode.
+
+**5.5 Where the box enters, and why the slice-averaged forms are not enough (ARGUED).** The constants of 5.2 belong
+to the law of a whole slice. A log-Sobolev or Poincare constant of an almost-product law is the worst local one.
+On the seed box (10^8 sites and more) a typical slice contains every local pattern whose probability per site is
+far above 10^(-8), so for typical x the constants c(x), c_F(x) are those of the worst such pattern, and the
+trajectory average of 5.2 is the sup form again. Only the fully averaged pair of 5.1 is free of this. A proof of
+(FC) must therefore be local in space: a statement for blocks, with the box size entering through the number of
+blocks. I did not attempt this. It is the mixing problem of the 4D theory at beta 2.3, in one-step form.
+The toron handle of the row was not used: at beta 2.3 the seed box is 500 lattice units wide, far from the
+small-volume regime where the toron orbifold is a collective coordinate; I have no statement there.

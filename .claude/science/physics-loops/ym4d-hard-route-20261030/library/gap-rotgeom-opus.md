@@ -330,13 +330,17 @@ diagonal channel is a positive channel for a sheared torus, which the axis frame
 
 **Proposition D3 (fully diagonal tori carry the whole engine; CONDITIONAL).** Put n_1 = e_1 + e_2, n_2 = e_1 - e_2,
 n_3 = e_3 + e_4, n_4 = e_3 - e_4 and Gamma_D(alpha) = (+)_i Z alpha_i n_i. Gamma_D is adapted to all four normals n_i
-(each n_i-perp contains the other three periods), and the lattice symmetries x_2 -> -x_2, x_4 -> -x_4 and
-(x_1, x_2) <-> (x_3, x_4) generate every permutation of the n_i. So the engine's three inputs (TM in each direction,
-exchange of two axes, simple top eigenvalue) hold in the frame (n_1, ..., n_4), CONDITIONAL on (i) the trace formula
-Z(Gamma_D) = Tr(T_(n_1)^(alpha_1)) with T_(n_1) positive and trace class on a slice space, and (ii) a simple top
-eigenvalue (Jentzsch, if the kernel is strictly positive after the gauge average). Given (i) and (ii), Lemmas K, X, E'
-and Theorem SH run verbatim with W(a, b) = Z(Gamma_D(a, b, b, b)) and give a gap on every larger fully diagonal torus
-from one diagonal seed. In a mixed frame (n_1, n_2, e_3, e_4) the exchange n_1 <-> e_3 is not a lattice symmetry
+(each n_i-perp contains the other three periods). The lattice symmetries x_2 -> -x_2, x_4 -> -x_4 and
+(x_1, x_2) <-> (x_3, x_4) act on the n_i as (12), (34) and (13)(24); they generate the dihedral group of order 8 that
+keeps the pairing {n_1, n_2}, {n_3, n_4}, NOT all of S_4 (the map n_2 <-> n_3 fixing n_1, n_4 sends e_1 to
+(e_1 + e_2 + e_3 + e_4)/2, not a lattice vector). So n_1 can be exchanged with every n_j, but the exchanges with n_3
+and n_4 also swap the other two directions. The engine's three inputs (TM in each direction, exchange of two axes,
+simple top eigenvalue) then hold in the frame (n_1, ..., n_4) for boxes whose two spectator sides are equal,
+CONDITIONAL on (i) the trace formula Z(Gamma_D) = Tr(T_(n_1)^(alpha_1)) with T_(n_1) positive and trace class on a
+slice space, and (ii) a simple top eigenvalue (Jentzsch, if the kernel is strictly positive after the gauge
+average). Given (i) and (ii), Lemmas K, X, E' run with W(a, b) = Z(Gamma_D(a, b, c, c)); whether every step of
+Theorem SH's recursion keeps the spectators equal, or can be reordered to, I did not check (OPEN, expected yes for
+the cube steps). If so, one diagonal seed gives a gap on every larger fully diagonal torus. In a mixed frame (n_1, n_2, e_3, e_4) the exchange n_1 <-> e_3 is not a lattice symmetry
 (|n_1|_1 = 2, |e_3|_1 = 1), so the engine there needs two seeds (Theorem 2O of row 962): strictly more input.
 
 **Proposition D4 (the infinite-volume gaps agree within a factor 2 per step; PROVED given LG1 and the two OS
@@ -368,3 +372,48 @@ not a saving.
 bridge is the bulk free energy, which is the same for every van Hove family; Lemma E' and Proposition B3 compare boxes
 within one frame only.
 Next: Step 6, the fact tests in one table, then Step 7 (GUIDE).
+
+### Step 6. Item (4): fact tests, all forms in one table (done 2026-11-14T16:40Z)
+
+Y = the form fails for the rival, as a sufficient form must; N = the rival passes; "-" = an identity or an engine
+(group-blind), not a seed form. K7 is the mixed-action endpoint of row 708 (no seed at any size); identities and
+engines are group-blind and do not separate it, as for the axis engine. Sources of each entry are the steps named.
+
+| Form | FT-U1 | FT-FROZEN (Q_8, 2T) | SMALL-BOX | K7 | consumer | label |
+|---|---|---|---|---|---|---|
+| Rotating box, any schedule: Tr(V_h T^a) (R2, R3) | - | - | - | - | none: a signed sum of sector seeds (R4), at most one positive channel (the rotation axis) | PROVED identity |
+| Sector seeds S_rho, any rho (R4) | Y: photons fill p != 0, pairs fill p = 0 (3.2) | Y in the trivial sector (3.1); the other 82 (Q_8) and 236 (2T) frozen vectors fill the rest | Y (3.4 iv) | not tested (see note) | engine needs S; (GAP) needs every momentum (3.4 iii) | PROVED decomposition; ARGUED readings |
+| Trivial sector of G_full, S_1 | Y: log(1 + S_1) >= log(1 + S) - 25.7; torons 4.8/g^3 (3.2) | Y: S_1 = 9 (Q_8), 6 (2T) (3.1) | Y | not tested | as above | PROVED counts; GUIDE arithmetic |
+| SPLIT for the space group (R5) | - | - | - | - | loses 3 b^2/pi^2 on translations; useful only for the centre (kappa = 2) | PROVED |
+| Diagonal seed, fully diagonal torus (D3) | Y: same photon pressure at the same physical temperature (5, (a)) | Y: Hom(Z^3, H)/H on the slice 3-torus, same counts | Y | Y (group-blind engine; K7 has no seed in any frame) | gap on diagonal tori only; needs shape independence (5, (b)) | CONDITIONAL |
+| Half-shift identity Z_diag = Z_even - Z_odd (D2) | - | - | - | - | links the diagonal channel to sheared axis sums | PROVED |
+| Gap equivalence m_1 <= m_n <= 2 m_1 (D4) | - | - | - | - | infinite volume only | PROVED given LG1 and OS |
+
+Note on K7 in row 2: K7 fails the full seed at every size; S_rho <= S does not make a sector seed fail for K7, so a
+sector seed MIGHT hold for K7 in some sector. I did not test it (K7's spectrum is not on disk in a usable form here).
+It does not matter for the verdict: no consumer reads a sector seed.
+
+Reading of the table: every seed form that this item produces still fails where it must (U(1), frozen groups,
+small boxes), so none is a wrong target; but the only forms that are easier as numbers (the sector seeds, 3.4 ii) have
+no consumer, and the forms with a consumer (the diagonal seed, D3) are the same number in another frame.
+Next: Step 7, GUIDE run in the free scalar field.
+
+### Step 7. GUIDE: sector thermal sums of a free massive scalar (criteria written before the run, 2026-11-14T16:55Z)
+
+Model: one free real scalar of mass m on the periodic cube of side L = 24 tau (continuum dispersion
+omega_k = sqrt(m^2 + (2 pi k/L)^2), k in Z^3, |k_i| <= 60), Euclidean time tau = 1, x = m tau. Exact Fock traces:
+Tr(V_R e^(i theta.P) e^(-H)) = 1/det(1 - R e^(i theta.P) e^(-h)) on the one-particle space (vacuum energy 0), so
+log Tr = sum_n (1/n) sum_(k: R^n k = k) e^(i theta.(k + Rk + ... + R^(n-1) k)) e^(-n omega_k). The p = 0 projection
+is the mean over a 64^3 grid of theta (aliasing only from total momentum in 64 Z^3, weight below e^(-16.8)); the
+trivial sector of the space group is (1/48) sum over O_h of the R-twisted p = 0 traces (Lemma R4 (iii)), summed by
+conjugacy class (Lemma R2). Script `guide/lane963/sector_sums.py`. A run guides; it proves nothing.
+
+Criteria, written first. While writing them I found that the arithmetic of 3.4 (ii) keeps only one- and
+two-particle states. With one-particle count s = 878 x^1.5 e^(-x), the p = 0 sum is about
+(e^(-x)/s) sum_N s^N/(N! N^1.5), and that is large once s >> 1. So I predict that 3.4 (ii) is WRONG for the
+projected sectors.
+- C1 (full seed): S <= 0.3 first at x_full in [11, 13]. Fail otherwise.
+- C2 (claim of 3.4 ii, p = 0): threshold x_0 in [3.5, 5]. Predicted to FAIL; the corrected estimate is x_0 near 7.3.
+- C3 (claim of 3.4 ii, trivial sector): threshold x_1 in [1.5, 3]. Predicted to FAIL; corrected estimate x_1 near 6.9.
+- C4 (3.3, quarter turn R about an axis): log Tr(V_R e^(-H)) <= 0.02 log Tr e^(-H) at x = 0.25 (the twisted torus
+  keeps under 2 percent of the thermal free energy). Fail otherwise.

@@ -173,3 +173,8 @@ interp slice does not join the full sweep (rule of 4.2: connected ratio 1.07 at 
 Screen conclusion: at beta 2.3 no slice grows from L = 8 to 12; at beta 2.4 only z-twist pi/4 passed (ratio 1.25, with
 errors of about 20 percent); all go to the sweep as planned in 4.3 and 4.5.
 
+## 5. Full sweep (step 5; GUIDE)
+
+**5.1 beta 2.4, raw log lines as they arrive** (value read: lambda_star for u_xy; colour 3 for the twists, lambda_star in brackets).
+- L = 8 (3000 + 24000): u_xy 7.54 +- 0.36; z-twist pi/2 9.63 +- 1.14 [5.27]; z-twist pi/4 6.13 +- 0.79 [6.28]. Means within 2.4 errors.
+

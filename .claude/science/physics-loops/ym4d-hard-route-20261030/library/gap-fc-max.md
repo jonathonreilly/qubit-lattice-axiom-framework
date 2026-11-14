@@ -217,6 +217,48 @@ u_(1/beta - eps)(y) = integral of f(w) g_eps(y - w) m(dw)/h_eps(y), and this ker
   Elitzur). So (LSI-br) cannot come from the Bakry-Emery criterion on R^N in the window. It needs an LSI for a
   non-convex measure.
 
+**5.6 Direct attack on (GC) and (FC): three stages, where each stops (written 09:11Z).**
+Stage 1, (GC) for a power of P (Lemma MS; PROVED implication, group-blind). Assume kbar_h < infinity (row 941 Step 4) and the
+averaged one-step Poincare bound (P1-av): E_nu Var_(pi_x)(f) <= E_nu|grad f|^2/gamma_c. Put kappa_W^2 := beta^2 kbar_h/gamma_c
+(no smallness is assumed). Then for every n >= 0 and gauge-invariant f:
+  E_nu|grad P^(n+1) f|^2 <= kappa_W^2 r_1^(2n) E_nu|grad f|^2.
+Proof. (A3) and Cauchy-Schwarz give |grad P h(x)|^2 <= beta^2 kbar_h Var_(pi_x)(h), and E_nu Var_(pi_x)(h) = ||h||^2 - ||P h||^2.
+With h = P^n f: E_nu|grad P^(n+1) f|^2 <= beta^2 kbar_h <f, P^(2n)(1 - P^2) f>. P >= 0 has spectrum in [0, r_1] off the
+constants, and p^(2n)(1 - p^2) <= r_1^(2n)(1 - p^2) there. So the right side is at most beta^2 kbar_h r_1^(2n) E_nu Var_(pi_x)(f);
+then (P1-av). QED
+Reading. The linearised statement (GC) holds for P^k with theta < 1 as soon as k - 1 > log(kappa_W)/E_1. So (GC) contains
+the gap E_1 and two one-step constants, and nothing else. Its failure for one step (double wells) is a defect of
+the one-step gradient form, not of the chain. Stop: the nonlinear analogue is circular. With row 931 Theorem E
+step (iii), I(P^(n+1) g) <= 2 sigma^2 Ent_nu(P^n g), and to return to I(g) one needs (LSI-vac) itself.
+Stage 2, (GC) along the bridge (identity PROVED; the estimate it needs is OPEN). For u_s of 5.2 (i) put
+G(s) := integral of |grad u_s|^2 d nu_s. Then d/ds ||u_s||^2_(L^2(nu_s)) = G(s), so ||f||^2 - ||P f||^2 = integral over (0, 1/beta) of G, and
+  G'(s) = integral of |Hess u_s|^2 d nu_s + (2/s') G(s) - (2/s'^2) E[ Var(<grad u_s(y_s), w> | y_s) ],
+because (d/ds + L_s)|grad u|^2 = |Hess u|^2 + 2 Hess(-log h_(s'))(grad u, grad u) and Hess(-log h_(s'))(y) = (Id - Cov(w | y_s = y)/s')/s'.
+(GC) asks G to grow from s = 0 to s = 1/beta by the factor 1/theta. So (GC) follows from an AVERAGED bound on the
+conditional variance of the next slice in the direction of grad u_s:
+  (COV-dir): E[ Var(<grad u_s(y_s), w> | y_s) ] <= k_s G(s), with integral of (2/s')(1 - k_s/s') ds >= log(1/theta).
+One Gaussian mode: Var(w | y_s) = s'/(1 + c s'), the integral is 2 omega, theta = e^(-2 omega): exact. Stop: (COV-dir) is
+group-blind and unproved; near s' = 0 it needs the tangential structure of M (there (A3) is the exact form).
+I did not find a way to bound the conditional variance for SU(2) in the window. Every sup form of it is capped by
+Elitzur's value 1/4 at zero field (row 941 (A5)).
+Stage 3, entropy instead of Fisher information: Theorem BR (5.2). It removes (FC), and it moves the SU(2) input to
+(LSI-br). Stop: (LSI-br) for SU(2) on the seed box. Not attempted beyond the fact tests of 5.5; reasons in Step 7.
+
+**5.7 The property that the Gaussian rival lacks, at the exact step (PROVED for the named step only).** In FP the
+functions that defeat the rate are the linear ones, phi(y) = <z, y> with z a smooth transverse wave:
+Var_(nu_s)(phi)/|z|^2 = 1/A_s(omega) is unbounded as omega -> 0. For SU(2), by 5.5 (Elitzur for the pair of slices),
+every linear function has Var_(nu_s)(phi)/|z|^2 = v_s <= 1/4 + 1/(4 beta), on every box; and no linear function is gauge
+invariant. The property is: the centre element -1 acts on one link alone. FP has no such symmetry. Compact
+Wilson U(1) has it too, so this step does not separate SU(2) from compact U(1); for gauge-invariant functions
+of degree two and more nothing is proved here, for either group. The lowest gauge-invariant polynomials of the
+bridge field are |y_l|^2 (one link) and the plaquette quartic Re(y_1 y_2 conj(y_3) conj(y_4)).
+
+**5.8 Relation to row 936.** Its Propositions Q and RARE-P (read: statements only, `gap-cuttyp-max.md` 268-283, 344-362,
+423-428) bound an odd-sector Poincare constant of a cut law by an even gap plus a rarity input. For f odd under
+a cut flip J, (GC) and (BR-gap) are one-step forms of (TYP-1). J acts on R^N by a sign change of coordinates that
+preserves M and m (V and Omega are J-invariant), so nu_s is J-invariant and (LSI-br), (PI-br) split into J-even and J-odd parts. I did not transfer
+RARE-P to nu_s; no implication between the two rows is proved here.
+
 ## Step 6: GUIDE run on the flat line chain (criteria written 09:06Z, before the run)
 
 Purpose. Guard Theorem BR against an error of normalisation, and test the double-well claim of 5.5. Refute or
@@ -234,3 +276,63 @@ Criteria:
   general claim by one case with theta_GC >= 1 and E_BR/E_1 < 0.05.
 Cases: two Gaussians (beta 1, kappa 1; beta 2.3, kappa 0.5); double wells V = h (x^2 - a^2)^2 with
 (beta, a, h) = (1, 0.5, 40), (1, 0.6, 60), (1, 1.0, 8), (1, 1.5, 4), (2.3, 0.33, 400), (2.3, 0.5, 100), (2.3, 0.8, 30).
+
+## Step 7: the two-slice form, the smallest unproved inequality, and one test (written 09:20Z-09:30Z)
+
+**7.1 Lemma J (PROVED given the Gaussian log-Sobolev inequality, Gross 1975, RECALLED, not rebuilt).** Let J be the
+two-slice vacuum law on M x M (row 941 (A1)). Assume
+  (LSI-J)_(alpha_J): Ent_J(Phi^2) <= (2/alpha_J) E_J[ |grad_x Phi|^2 + |grad_w Phi|^2 ]
+for smooth Phi on M x M, bounded above and below, invariant under the gauge group acting on both slices at once
+(tangential gradients). Then (LSI-br)_s holds with
+  1/alpha_s <= lam (1 - lam)/beta + (1 - 2 lam (1 - lam))/alpha_J,   lam = beta s.
+Proof. By (B3), given (x, w) the bridge point y is N(mu, sig^2 Id), mu = (1 - lam) x + lam w, sig^2 = lam (1 - lam)/beta.
+Chain rule: Ent_(nu_s)(phi^2) = E_J[Ent(phi^2 | x, w)] + Ent_J(Psi), Psi(x, w) := E[phi(y)^2 | x, w].
+First term: at most 2 sig^2 E_(nu_s)|grad phi|^2 (Gaussian log-Sobolev inequality). Second term: Psi is invariant
+(the group acts by orthogonal maps and phi is invariant), so (LSI-J) applies to Psi^(1/2). For a tangent vector z
+at x: z . grad_x Psi = (1 - lam) E[2 phi(y) grad phi(y) . z | x, w], so |grad_x Psi|^2 <= 4 (1 - lam)^2 Psi E[|grad phi|^2 | x, w]
+(Cauchy-Schwarz), that is |grad_x Psi^(1/2)|^2 <= (1 - lam)^2 E[|grad phi|^2 | x, w]. The same in w with lam^2. Add. QED
+The same proof with variances: 1/gam_s <= lam (1 - lam)/beta + (1 - 2 lam (1 - lam))/gam_J, gam_J the Poincare constant of J.
+
+**7.2 Corollary BR-J (PROVED implication, given 7.1 and Theorem BR).** Put rho := beta/alpha_J and
+Xi(rho) := integral over (0, 1) of d lam/(rho + (1 - 2 rho) lam (1 - lam)). Then (LSI-J)_(alpha_J) gives (HC-vac)_alpha with alpha = Xi(rho)/2.
+(Let eps -> 0 in Theorem BR; A = Xi(rho).) Since lam (1 - lam) <= 1/4: Xi >= 1/rho if rho >= 1/2, and Xi >= 4/(1 + 2 rho) if rho <= 1/2. So
+  alpha >= alpha_J/(2 beta)            if alpha_J <= 2 beta,
+  alpha >= 2 alpha_J/(alpha_J + 2 beta)   if alpha_J >= 2 beta   (then alpha >= 1).
+Closed form for rho < 1/2: Xi = 4 (1 - 4 rho^2)^(-1/2) artanh(((1 - 2 rho)/(1 + 2 rho))^(1/2)), so alpha = log(alpha_J/beta) + O(1) for large alpha_J.
+The variance form: E_1 >= Xi(beta/gam_J)/2.
+Checks in one Gaussian mode (J has precision matrix [[beta + c, -beta], [-beta, beta + c]], so alpha_J = gam_J = c = beta (e^omega - 1)):
+omega = 3: rho = 0.0524, Xi/2 = 2.97 <= 3. omega = 0.5: Xi/2 >= (e^0.5 - 1)/2 = 0.324 <= 0.5. Small omega: Xi/2 -> (pi/4) omega.
+Consistent, and sharp for large omega. FP: alpha_J = beta (e^(omega_min) - 1), so alpha <= 0.79 omega_min (1 + o(1)) < 0.22/a: fails the rate.
+What 7.2 changes in the chain. Rows 931-941 used (LSI-vac) and (SG-step) (sup form; row 944: not automatic; row 950: (SC)).
+7.2 uses one inequality for one fixed measure, with no supremum over a conditioning slice. (LSI-J) implies (LSI-vac)
+with the same constant (functions of one slice). It is lossy: unlike Theorem BR it inherits every barrier of nu.
+
+**7.3 The smallest unproved inequality (OPEN).** In decreasing strength; each implies the next; the last gives the seed.
+  (LSI-J-seed)_a: on B = (24a)^3, one even a >= 30: (LSI-J) with alpha_J >= 2 beta K_a, K_a = (C_beta(x_*) + 3 log a)/(a - 2).
+     (For a >= 30, K_a <= 1 at beta 2.3 to 2.6, and 7.2 gives alpha >= K_a.) At beta 2.3: alpha_J >= 3.3, 2.3, 1.4, 0.75 for a = 40, 60, 100, 200.
+  (LSI-br-seed)_a: on the same box, gauge-invariant log-Sobolev constants alpha_s of the bridge marginals nu_s with
+     (1/2) integral over (0, 1/beta) of alpha_s ds >= K_a.
+  (HC-vac)_(K_a) on the same box, hence the seed X(a; (24a)^3) <= x_* (Proposition HC).
+First instance (Poincare level): (PI-br-seed)_a, (1/2) integral of gam_s ds >= K_a. It gives E_1(B) >= K_a, which every route
+through (HC-vac) needs (4.2).
+Why this one and not (FC). (a) (FC), (GC) are not necessary and are false for jumpable double wells; entropy
+contraction is necessary (4.5) and Theorem BR delivers it. (b) One input replaces (FC), (C1-av), (COV) and (SG-step)/(SC).
+(c) It is exact in every Gaussian mode. (d) U(1)/FP fails it only through the rate, by the same factor above 59.
+What is NOT achieved. Nothing here bounds alpha_J, alpha_s or gam_s for SU(2) at beta 2.3 to 2.6. That is a lower bound on
+the mass gap at intermediate coupling on a box of side at least 720 (b E_1 >= 384 + 72 log a), and a log-Sobolev
+form of it. I know no method that reaches it: the curvature criteria are capped below the window (row 941 and
+5.5), the strong-coupling range is beta below 1/4 (row 931), and nu_s, J have no known local specification
+(m contains Omega). Three group-blind attempts (5.6) stop at conditional-covariance bounds of the same kind.
+
+**7.4 One test that could refute (LSI-J-seed) (not run).** For gauge-invariant Phi on two consecutive slices put
+  R_J(Phi) := Var_J(Phi)/E_J[ |grad_x Phi|^2 + |grad_w Phi|^2 ].
+(LSI-J) gives the Poincare bound R_J(Phi) <= 1/alpha_J. So one Phi with R_J(Phi) > 1/(2 beta K_a) refutes (LSI-J-seed)_a on the
+measured box: thresholds at beta 2.3 are 0.31 (a = 40), 0.45 (a = 60), 0.72 (a = 100), 1.35 (a = 200). The run is a plain
+4D Monte Carlo (no frozen slice): measure variances and link-gradient norms of slice observables, as row 946's
+`den()` does for the denominators. Candidates: zero-momentum sums of space-like and time-like plaquettes,
+winding lines and their cross-section sums, smeared loops, and the worst combination in their span (a generalised
+eigenvalue, as row 946's zmvar). Scope: side-4 and side-6 boxes are not the seed box; a violation there refutes
+(LSI-J) on that box only. All R_J well below the threshold proves nothing. For (LSI-br) the same test applies to
+functions of y of (B3), with thresholds from U(F) := (1/2) integral of ds/R_s(F) < K_a.
+Exactly solvable companion (not run): the one-plaquette chain. Compare E_1 (3.56 at beta 2.3, row 941 Run 3) with
+Xi(beta/gam_J)/2 and with (1/2) integral of gam_s ds; both must be below E_1, and the gap between them measures the loss.

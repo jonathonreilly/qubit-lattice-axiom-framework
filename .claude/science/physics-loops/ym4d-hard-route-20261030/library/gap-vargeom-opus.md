@@ -151,6 +151,24 @@ Proof. S(t; B) = sum over i >= 1 of r_i^t, the t-th power of the l^t norm of the
 
 **4.4 Answer for Step 4.** No varying geometry of Steps 2-3 is strictly better than Theorem SH, Lemma E' or Proposition B3, in the threshold or in the box size. The reasons, term by term: (D) leaves no room (DEN, OVL); (N) is the Hoelder slack of a rectangular torus, out of reach of varying complexes (3.4; corrected after Step 6, C1); (X) needs crossing symmetry, which varying complexes lack, or a seam cost below the deficit, which local gluing cannot give; (T) is sharp in the class and needs level counting, which no geometry supplies (NO-OP, (L4)). The only gain found is static: Lemma Q and Theorem SH' (threshold 1/550 at ratio 2).
 
+**4.5 Consumer note for the current crux: the best shape for the (HC-vac) route (static; PROVED arithmetic given Proposition HC, row 931, HOLDS in check 938, and the checked table of Theorem SH, row 707).** Proposition HC holds on any box: (HC-vac)_alpha on B gives X(2m + 2; B) <= 72 beta |B| e^(-2 alpha m). With a = 2m + 2 even and B = (r a)^3, the seed X(a; B) <= x_*(r) := log(1 + t(r)) follows once alpha (a - 2) >= C_beta(r) + 3 log a, C_beta(r) := log(72 beta r^3/x_*(r)). The slab of rows 931-954 is r = 24. Values at beta 2.3 (72 beta = 165.6), by hand:
+
+| r | t(r) | x_*(r) | C_beta(r) | K_30 = (C + 3 log 30)/28 |
+|---|---|---|---|---|
+| 24 (slab; row 931 uses x_* = log(22/17)) | 3/10 | 0.2578 | 16.00 | 0.936 |
+| 6 | 1/10 | 0.09531 | 12.84 | 0.823 |
+| 4 | 1/25 | 0.03922 | 12.51 | 0.811 |
+| 3 | 1/100 | 0.009950 | 13.02 | 0.829 |
+| 2 (SH', 4.3) | 1/550 | 0.001817 | 13.50 | 0.847 |
+| 2 (SH, two stages) | 1/1650 | 0.0006059 | 14.60 | 0.886 |
+
+(3 log 30 = 10.20.) At beta 2.6, C_beta(4) = log(187.2 x 64/0.03922) = 12.63. So the ratio-4 box (a; (4a)^3) needs a rate lower by 3.49/(a - 2) than the slab: K_30 falls from 0.936 to 0.811, K_40 from 0.712 to 0.621, K_60 from 0.488 to 0.427, and the box side falls from 24a to 4a (720 to 120 at a = 30). The threshold enters only through log(1/x_*), the volume through log r^3, and r = 4 balances them best among the proved lines. Consequences, each one line:
+- (LSI-J-seed) of row 947 can be posed on (4a)^3 with alpha_J >= 2 beta K'_a, K'_a := (C_beta(4) + 3 log a)/(a - 2): alpha_J >= 3.73 at beta 2.3, a = 30 (was 4.30). Corollary BR-J's branch K'_a <= 1 holds for even a >= 26 (12.51 + 3 log 26 = 22.28 <= 24).
+- The necessary condition of row 947 4.2 becomes E_1((4a)^3) >= K'_a, that is b E_1 >= 4 (12.5 + 3 log a) a/(a - 2) with b = 4a, about 50 + 12 log a, against about 384 + 72 log a on the slab. Same physics (E_1 is the glueball mass once flux states are heavy, as they are at side 120), a smaller box.
+- Composition to (SEED-FP): the line r = 4 of Theorem SH, step (2, 2, 3), K = 22.2, gives s_k = S(a_k; (4 a_k)^3) with 22.2 s_k <= (22.2 s)^(2^k), and (T) gives S(N; (2N)^3) <= s_k^2 with N = 2 a_k. So (SEED-FP) (S(N; (2N)^3) < 1/5041) holds once s_k < 1/71.
+- Fact tests unchanged: FP has omega_min < 2 pi/(4a) < 1.6/a against K'_a > 12.5/a (fails the rate by a factor above 7); frozen groups have E_1 -> 0; SMALL-BOX holds (a fixed lattice box at large beta).
+This is a choice of fixed box, not a varying geometry. It is for the lead to route (rows 947/954 and their successors); I changed no other file.
+
 ### Step 5 (done): fact tests
 
 **5.1 Theorem SH' (threshold 1/550 at ratio 2) does not fire for U(1)-type models. PROVED (hand).**
@@ -188,3 +206,48 @@ Runs under `python3 scripts/lab_ops.py numeric-lock`, one job at a time, BLAS th
 - **C4: box size of SH' against SH at ratio 2 (smallest a with S(a; (2a)^3) below the threshold).** m = 1: 1/550 at m a = 10.0, m b = 20.0; 1/1650 at 12.0, 24.0; 1/3500 at 13.0, 26.0. m = 0.5: 9.5, 19.0; 11.0, 22.0; 11.5, 23.0. m = 0.25: 9.25, 18.5; 10.5, 21.0; 11.5, 23.0. So SH' saves 1.25-2 correlation lengths in time and 2.5-4 in space at ratio 2, about 40-52 percent of the 4-volume a b^3 of the seed box in this model, in line with the estimate of 4.3.
 
 **What Step 6 changes.** The verdict of Step 4 stands, but one reason in 4.1 and 4.4 is corrected: the Hoelder slack (N) is not negligible in the free field. It is still a slack of an upper bound for a RECTANGULAR torus, so by 3.4 no varying complex can reduce it (varying complexes enter Hoelder only on the bounded side). The places a better tool would have to act are (N), (X) and (T); none is reachable by a varying geometry, and (T) needs level counting.
+
+### Step 7 (done, 13:20Z): verdict
+
+**Varying geometry buys nothing over the static tools, for the seed or for (LSI-J).** This is ARGUED from the PROVED lemmas above; it is not a theorem about every conceivable geometry. The reasons:
+1. **Upper bound on the large box (numerator).** The seed needs an upper bound on the trace of T_L over all levels. It comes only from Lemma A along a product direction of a rectangular torus. Varying complexes enter Hoelder only on the bounded side (3.4). A growth step admits no operator comparison at any constant (Lemma NO-OP). A lens covers at most as many levels as the small box carries (L4). The seed of a large box at a fixed time is extensive, and it diverges with the box in the class (5.4).
+2. **Lower bound on the top level (denominator).** Lemma K is exact up to t kappa(h), at most t/(h - t) of g (DEN; 1/23 on the seed slab). A trial state, lens or otherwise, helps only if its squared overlap with the large-box vacuum exceeds 0.983 there (OVL). Decimation lifts lose overlap by an area law (Step 6, C3: about e^(-0.004 c^2) per inserted plane in the free scalar).
+3. **Where the static method loses** (4.1 as corrected by Step 6): the deficit reading (X), which needs crossing symmetry that growth complexes lack (3.5); the multiplicity loss of (T), which is sharp in the class and needs level counting (4.2); the Hoelder slack (N), which is a slack of a rectangular torus (3.4). None is reachable by a varying geometry.
+4. **(LSI-J).** The one geometry change with content is from two slices to the local 4D parent (3.7, marginal lemma). It hands the problem to the Dobrushin-Shlosman type route of rows 691/693 and `gap-blockcrit-opus.md` (capped at beta >= 0.775 for vertex blocks there). No rate gain. The moving box (shear) only resolves momenta (3.6).
+
+**What changes because of this row (worth-doing test).** Moves: the seed box and rate of the current crux (LSI-J-seed) (rows 947, 954), and the ratio-2 threshold the finish line quotes (`gap-finishline-opus.md` lines 101, 189). If row 961 confirms: (a) do not queue lanes on varying geometry for the seed; (b) Theorem SH' gives 1/550 at ratio 2 (4.3); (c) the (HC-vac) route can sit on (a; (4a)^3) with K_30 = 0.811 instead of the slab's 0.936, box side 120 instead of 720 (4.5). These are static, and they are for the lead to route.
+
+**Final status.**
+
+| Statement | Mark |
+|---|---|
+| 2.1 insertion (decimation) map J: Markov isometry, gauge covariant, centre flips (J1-J5) | PROVED |
+| 2.2 mixed transfer operators; complexes G; (G1) not rectangular; (G2) moving box is a torus; (G3) block averaging not Markov | PROVED |
+| 2.3 lens identity; reflection positivity as Hilbert-Schmidt Cauchy-Schwarz | PROVED |
+| 3.1 Lemma DEN (denominator gain at most t/(h - t) of g) | PROVED |
+| 3.2 (L1)-(L5) lens identities and Ky Fan count | PROVED; "no small-box quantity bounds the coverage c" ARGUED |
+| 3.3 Lemma NO-OP (no operator comparison T_L^t <= C Y T_s^t' Y^*) | PROVED |
+| 3.3 a linear trace comparison loses exp((volume ratio - 1) g) | ARGUED (ideal gas) |
+| 3.4 Hoelder on varying complexes (bounded side only) | PROVED; "the only source of upper bounds" ARGUED |
+| 3.5 growth complexes have no crossing identity | ARGUED |
+| 3.6 moving box: S = sum over momenta of S_p | PROVED |
+| 3.7 (M) LSI passes to marginals; (LSI-J) from an LSI of the local 4D parent | PROVED; CONDITIONAL on that LSI; "(rho x rho)_* J_L is not J_s" ARGUED |
+| 4.1 exact slack identity of Lemma E2 | PROVED; my ideal-gas reading "(N) negligible" REFUTED by Step 6 C1 (GUIDE) and corrected |
+| 4.2 Lemma OVL (overlap above 0.983 needed on the seed slab) | PROVED |
+| 4.2 gluing weaker than crossing for (X) | ARGUED, with C3 (GUIDE) |
+| 4.2 (T) sharp in the class | PROVED |
+| 4.3 Lemma Q; Theorem SH' (real p, q); ratio-2 threshold 1/550, K = 541.1 | PROVED by hand, not checked |
+| 4.3 other step values; box-size estimate | GUIDE |
+| 4.5 (HC-vac) route: C_beta(r) table; ratio 4 best among the proved lines (C = 12.51 at beta 2.3 against 16.00 on the slab); composition to (SEED-FP) | PROVED arithmetic, given Proposition HC (check 938) and the table of Theorem SH (row 707) |
+| 5.1 SH' does not fire for the compact Gaussian model (S >= 6 e^(-pi)) or the free photon (12 e^(-pi)) at ratio 2 | PROVED (hand) |
+| 5.2 frozen groups; 5.3 SMALL-BOX | RECALLED; ARGUED |
+| 5.4 no small-box extrapolation uniform in the large box holds in the class | PROVED (compact Gaussian model) |
+| Step 6: C0, C2, C3 (OVL not refuted), C4 | GUIDE (free scalar; no gauge field) |
+| Varying geometry buys nothing over SH, E', B3 | ARGUED from the PROVED lemmas |
+| (LSI-J-seed); the seed at beta 2.3-2.6 | OPEN, not attacked |
+
+**For the checker (row 961), in this order.** (1) Lemma NO-OP: injectivity of T_L on invariant functions (positive Fourier coefficients of c), and the independence of the inserted-plane plaquette from rho. (2) Lemma Q and Theorem SH': that the proof of SH uses (T) only in the three forms listed, and the hand check of the line (2, 1, 3/2). (3) DEN and OVL, and their arithmetic on the seed slab (1/23, 0.983). (4) The 4.5 table and the composition to (SEED-FP). (5) The map rho of 2.1 (composite link, gauge covariance, Haar push-forward). (6) The slack formulas of `vg_static.py` (C1), whose failure corrected 4.1.
+
+**Not verified.** No model of another provider read this file. CA-II 8.7 was read in its statement only (lines 108696-108760), not its proof. The compact U(1) photon levels and the frozen-group sector count are RECALLED. The GUIDE runs use a free scalar (no gauge field, no flux sectors, no interaction); they check bookkeeping, not SU(2). Nothing was committed or pushed. Files written: this file, `library/guide/lane960/` (three scripts, three logs). Scratch: /tmp/lane960-sa (the fetched CA-II source; not in the repository).
+
+RESULT: Varying geometry buys nothing over Theorem SH, Lemma E' and Proposition B3 for the seed or (LSI-J) (ARGUED from PROVED lemmas: a growth step admits no operator comparison (NO-OP); lenses give only lower bounds on the top level; any denominator gain is at most t/(h - t) of g (DEN) and needs a trial state with squared overlap above 0.983 on the seed slab (OVL), while decimation lifts lose overlap by an area law (GUIDE); Hoelder puts varying complexes only on the bounded side; the static losses (deficit reading, multiplicity of (T), sharp in the class, and Hoelder slack) are out of reach of geometry); static side results, PROVED by hand and unchecked: Lemma Q and Theorem SH' raise the ratio-2 threshold from 1/1650 to 1/550, and for the (HC-vac) route the box (a; (4a)^3) needs K_30 = 0.811 instead of the slab's 0.936 (side 120 instead of 720); GUIDE refuted my own ideal-gas claim that the Hoelder slack is negligible (it is 2-26 percent of the deficit slack in the free scalar); OPEN: (LSI-J-seed) and the seed at beta 2.3-2.6, not attacked.

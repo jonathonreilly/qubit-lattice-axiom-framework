@@ -12,6 +12,8 @@ A run guides or refutes at GUIDE level; it proves nothing.
 - 2026-11-14 18:49Z: steps 1-3 written (criteria fixed before any run); script `guide/lane976/esc976.py` written, not yet run. Numeric lock held by gap-tiesearch-973 (row 973, its tielab.py runs are live; lease to 22:53Z); memory 69 percent free. Waiting for the lock; no run of this row has started.
 - 2026-11-14 20:49Z: a 2-hour background wait on the lock was stopped at its time limit; row 973 re-acquired the lock at 19:35Z (lease to 01:35Z, tielab.py runs live); memory 46 percent free (below the 50 percent rule). Still no run of this row; waiting again (at most 2 h).
 - 2026-11-14 22:45Z: second wait ended, lock still held by gap-tiesearch-973 (lease to 01:35Z, tielab.py live); memory 49 percent free. No run of this row yet; a third wait started.
+- 2026-11-14 23:30Z: lock free at 23:27Z; acquired as holder gap-escape-976 (status shows holder_id gap-escape-976). Memory 43-46 percent free (top users: an iOS Simulator runtime, not mine), below the 50 percent rule, so no run started; polling memory for at most 60 min.
+- 2026-11-14 23:31Z: memory 60-62 percent free at 23:30Z; lock refreshed (holder gap-escape-976, to 03:31Z). Smoke test (L 8, T 40, beta 2.3, 28 sweeps, 4.5 s; log `guide/lane976/logs/smoke_b2.3_L8.npz`): 0.16 s per sweep; s_1 = 0.47. Production batch `guide/lane976/run976.sh` started 23:31Z with the sizes of 3.5 unchanged (48 runs + vacuum and buffer controls; estimate about 3 h, wall clock limit of the background job 2 h, so it may need a restart for the tail).
 
 ## Plan (at most eight steps; one per response)
 
@@ -142,3 +144,13 @@ so the run can only confirm transience of the high-action slice; it cannot see a
 might sit in (for example a fixed colour direction n of the relaxed state, or a spatial centre-holonomy sector on a
 small torus at large beta). Those would need a different A; I do not add one to the verdicts (criteria are fixed), but
 I record O_k and D_k at all k so that a later row can read the colour-direction memory.
+
+## Step 4 (done). Script, smoke test, timing
+
+`guide/lane976/esc976.py` loads row 952's `sg2lab.py` unchanged by exec and adds `measure` (s_k for the three planes,
+O_k, D_k at every slice). `guide/lane976/run976.sh` is the production batch (sizes of 3.5 unchanged). `guide/lane976/ana976.py`
+applies Section 3 to `guide/lane976/logs/*.npz` and writes `logs/ana976.json`; it also prints smax = the largest xy action
+of slice k over all configurations (added after the criteria; reported, not used in a verdict). Timing: a full run (500
+sweeps) at L 8, T 40 takes about 15 s (0.03 s per sweep; the smoke test's 4.5 s for 28 sweeps was mostly start-up).
+First two runs (beta 2.3, L 8, cold, 80 configurations): s_1 = 0.463, s_2 = 0.402, s_k = 0.40 for k >= 2, largest s_1 seen
+0.496; f_k = f'_k = 0 at every k. Bulk 1 - <P> = 0.40 matches the recalled <P> = 0.60 at beta 2.3.

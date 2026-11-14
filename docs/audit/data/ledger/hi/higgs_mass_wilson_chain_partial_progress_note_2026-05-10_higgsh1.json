@@ -14,23 +14,17 @@
   "chain_closure_explanation": null,
   "claim_id": "higgs_mass_wilson_chain_partial_progress_note_2026-05-10_higgsh1",
   "claim_scope": null,
-  "claim_type": "bounded_theorem",
-  "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
     "complete_prediction_chain_2026_04_15",
-    "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
-    "koide_bae_probe_wilson_chain_mass_note_2026-05-09_probe19",
-    "higgs_mass_from_axiom_note",
-    "higgs_mass_hierarchy_correction_note",
-    "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-    "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02"
+    "higgs_mass_from_axiom_note"
   ],
   "direct_in_degree": 3,
   "effective_status": "unaudited",
@@ -43,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5e4b13c10d17664fa061a47cbf56b567c1008d2bdf2e9cc9353fb41d79c4a3b5",
+  "note_hash": "40cef137296900fd18bd241e1eda488f301c90fa1c0ed914293b468802c34246",
   "note_path": "docs/HIGGS_MASS_WILSON_CHAIN_PARTIAL_PROGRESS_NOTE_2026-05-10_higgsH1.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -58,7 +52,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/cl3_higgs_mass_wilson_chain_2026_05_10_higgsH1.py",
-  "title": "Higgs Mass \u2014 Wilson Chain Extension (Partial Progress)",
+  "title": "Higgs Wilson-form candidate: fitted diagnostic and finite search",
   "transitive_descendants": 3,
   "verdict_rationale": null
 }

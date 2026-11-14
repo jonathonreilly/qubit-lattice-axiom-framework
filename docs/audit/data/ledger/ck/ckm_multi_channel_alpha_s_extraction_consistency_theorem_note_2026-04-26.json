@@ -14,11 +14,11 @@
   "chain_closure_explanation": null,
   "claim_id": "ckm_multi_channel_alpha_s_extraction_consistency_theorem_note_2026-04-26",
   "claim_scope": null,
-  "claim_type": "positive_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -39,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "92f5d14f35d0538ca8ffbb0fa7aa22b6c792e88090a6e65b0808d0e52c67eb4b",
+  "note_hash": "661afcc4b548e346315161b9da78dad410ca0c45adc21aee567eb7e9739b2c69",
   "note_path": "docs/CKM_MULTI_CHANNEL_ALPHA_S_EXTRACTION_CONSISTENCY_THEOREM_NOTE_2026-04-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -80,7 +80,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_ckm_multi_channel_alpha_s_extraction_consistency.py",
-  "title": "CKM Multi-Channel \u03b1_s Extraction Consistency Theorem",
+  "title": "CKM Four-Channel Conditional Inversions and Central-Value Scan",
   "transitive_descendants": 10,
   "verdict_rationale": null
 }

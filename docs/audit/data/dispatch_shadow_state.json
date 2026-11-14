@@ -1,5 +1,5 @@
 {
- "as_of_date": "2026-10-30",
+ "as_of_date": "2026-11-14",
  "lane_ids": [
   "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc",
   "a3_r1_review_confirms_obstruction_note_2026-05-08_r1hr",
@@ -15,6 +15,7 @@
   "area_law_native_car_semantics_tightening_note_2026-04-25",
   "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
   "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+  "dm_neutrino_source_surface_perturbative_uniqueness_theorem_note_2026-04-17",
   "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
   "gate_b_context_independence_no_go_note_2026-06-17",
   "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17",

@@ -1,6 +1,6 @@
 {
- "edge_count": 16087,
- "node_count": 7451,
+ "edge_count": 16095,
+ "node_count": 7459,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1871,8 +1871,8 @@
    "out_degree": 2
   },
   "ai_methodology.skills.review-loop.references.science_lenses": {
-   "deps_hash": "a0a7701d5b27",
-   "out_degree": 3
+   "deps_hash": "48323c3b62a6",
+   "out_degree": 4
   },
   "ai_methodology.skills.review-loop.references.unit_receipt": {
    "deps_hash": "e3b0c44298fc",
@@ -5775,8 +5775,8 @@
    "out_degree": 15
   },
   "dm_neutrino_source_surface_perturbative_uniqueness_theorem_note_2026-04-17": {
-   "deps_hash": "006775a8f7e7",
-   "out_degree": 2
+   "deps_hash": "607d30b5b628",
+   "out_degree": 4
   },
   "dm_neutrino_source_surface_quartic_isotropy_and_u2_obstruction_note_2026-04-17": {
    "deps_hash": "0243d5eeb9a5",
@@ -9439,8 +9439,8 @@
    "out_degree": 5
   },
   "higgs_mass_wilson_chain_partial_progress_note_2026-05-10_higgsh1": {
-   "deps_hash": "5009b0d301c1",
-   "out_degree": 8
+   "deps_hash": "529143163903",
+   "out_degree": 2
   },
   "higgs_mass_wilson_loop_spectroscopy_bounded_note_2026-05-10_higgsh3": {
    "deps_hash": "3f48d6429b21",
@@ -15021,6 +15021,10 @@
   "majorana_per_direction_cubic_fermion_code_has_one_species_covariant_under_all_cubic_rotations_bounded_theorem_note_2026-10-17": {
    "deps_hash": "cc803153f655",
    "out_degree": 2
+  },
+  "margolus_spin_three_halves_edge_hop_gives_a_cube_covariant_dirac_tick_bounded_theorem_note_2026-10-21": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "marked_tree_single_seed_dynamic_program_and_finite_rational_certificates_bounded_theorem_note_2026-09-17": {
    "deps_hash": "b810717681ab",
@@ -21798,6 +21802,30 @@
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
+  "su2_finite_boundary_flux_associative_gluing_bounded_theorem_note_2026-11-07": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "su2_five_state_two_plaquette_gauge_sector_bounded_theorem_note_2026-11-07": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "su2_homogeneous_native_qubit_code_bounded_theorem_note_2026-11-08": {
+   "deps_hash": "0c83a0d1bbe0",
+   "out_degree": 2
+  },
+  "su2_homogeneous_native_qubit_code_scope_check_2026-11-08": {
+   "deps_hash": "40b52a4bb56e",
+   "out_degree": 1
+  },
+  "su2_neighborhood_propagation_record_readout_bounded_theorem_note_2026-11-08": {
+   "deps_hash": "6c9a7a4e0fbd",
+   "out_degree": 5
+  },
+  "su2_neighborhood_propagation_record_readout_scope_check_2026-11-08": {
+   "deps_hash": "c034580d5f64",
+   "out_degree": 2
+  },
   "su2_two_region_boundary_response_bounded_theorem_note_2026-11-08": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -22909,6 +22937,10 @@
   "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20": {
    "deps_hash": "0b48e244e1f7",
    "out_degree": 2
+  },
+  "u5_three_plus_two_fms_projector_carrier_bounded_theorem_note_2026-11-09": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12": {
    "deps_hash": "311d6b921eb1",

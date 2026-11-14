@@ -31,21 +31,21 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 5951 |
+| Ledger rows | 5959 |
 | Applied audit verdicts | 0 |
 | Retained-grade rows, including boxed decorations | 0 |
 | Retained positive theorems | 0 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 0 |
 | Boxed decorations under retained parents | 0 |
-| Rows typed `open_gate` | 334 |
+| Rows typed `open_gate` | 338 |
 | Rows with effective status `open_gate` | 0 |
-| Unaudited rows | 5574 |
+| Unaudited rows | 5582 |
 | Retained-pending-chain rows | 0 |
 | Audited conditional rows | 0 |
 | Audited renaming rows | 0 |
 | Audited numerical-match rows | 0 |
-| Citation cycles detected | 72 |
+| Citation cycles detected | 75 |
 
 Source: tracked shards under `docs/audit/data/ledger/` and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -55,13 +55,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 5574 |
-| Ready rows | 1933 |
-| Cycle-break targets | 81 |
+| Total pending rows | 5582 |
+| Ready rows | 1945 |
+| Cycle-break targets | 84 |
 | Critical pending | 682 |
 | High pending | 452 |
-| Medium pending | 1445 |
-| Leaf pending | 2995 |
+| Medium pending | 1448 |
+| Leaf pending | 3000 |
 
 Next ready rows by queue order:
 
@@ -85,18 +85,21 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 
 | Metric | Value |
 |---|---:|
-| Publication-lane size (shadow, admitted only) | 25 |
+| Publication-lane size (shadow, admitted only) | 26 |
 | Manifest state | ok |
 | Manifest pending additions | 0 |
 | Manifest pending removals | 0 |
-| Unmanifested candidates (need pending entries) | 15 |
-| Admitted ids absent from lane candidates | 565 |
+| Unmanifested candidates (need pending entries) | 17 |
+| Admitted ids absent from lane candidates | 564 |
 | Live conditional/failed rows that would park | 0 |
 | Live rows fail-open (legacy/unversioned snapshot) | 0 |
 | Lane rows already in actual ready top-10 | 0 |
-| Lane rows added since prior pass | 0 |
+| Lane rows added since prior pass | 1 |
 | Lane rows removed since prior pass | 0 |
 | Non-lane rows deferred by simulated interleave | 0 |
+
+Named lane membership churn since the prior pass:
+- added: `dm_neutrino_source_surface_perturbative_uniqueness_theorem_note_2026-04-17`
 
 Unmanifested candidates (visible gaming surface; need review-landed pending entries before admission):
 - `admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21`
@@ -114,6 +117,8 @@ Unmanifested candidates (visible gaming surface; need review-landed pending entr
 - `record_law_exact_domain_and_channel_bridge_6275_bounded_theorem_note_2026-09-09`
 - `route_a_fixed_type_atlas_correction_cycle822_bounded_theorem_note_2026-07-30`
 - `spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_bounded_theorem_note_2026-09-14`
+- `su2_homogeneous_native_qubit_code_bounded_theorem_note_2026-11-08`
+- `su2_neighborhood_propagation_record_readout_bounded_theorem_note_2026-11-08`
 
 Admitted ids currently absent from lane candidates:
 - `a3_route4_spin6_chain_bounded_obstruction_note_2026-05-08_r4`
@@ -253,7 +258,6 @@ Admitted ids currently absent from lane candidates:
 - `dm_neutrino_source_surface_microscopic_positive_probe_representation_theorem_note_2026-04-17`
 - `dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18`
 - `dm_neutrino_source_surface_parity_compatible_observable_selector_theorem_note_2026-04-17`
-- `dm_neutrino_source_surface_perturbative_uniqueness_theorem_note_2026-04-17`
 - `dm_neutrino_source_surface_scalar_baseline_active_quadratic_diagnostic_note_2026-04-17`
 - `dm_neutrino_source_surface_schur_scalar_baseline_theorem_note_2026-04-17`
 - `dm_neutrino_source_surface_shift_quotient_bundle_theorem_note_2026-04-16`
@@ -702,19 +706,19 @@ Source: deferred package (`archive/publication/ci3_z3/`).
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 7451 |
+| Citation-graph nodes | 7459 |
 | Critical nodes | 712 |
 | High nodes | 511 |
-| Medium nodes | 1637 |
-| Leaf nodes | 4591 |
+| Medium nodes | 1641 |
+| Leaf nodes | 4595 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2984 descendants; score 615.544
-- `three_generation_observable_theorem_note` - critical; 1294 descendants; score 55.339
+- `minimal_axioms` - critical; 2989 descendants; score 617.546
+- `three_generation_observable_theorem_note` - critical; 1296 descendants; score 55.341
 - `observable_principle_from_axiom_note` - critical; 986 descendants; score 53.947
-- `graph_first_su3_integration_note` - critical; 1640 descendants; score 51.680
-- `kinetic_isotropy_primitive` - critical; 940 descendants; score 49.378
-- `plaquette_self_consistency_note` - critical; 1371 descendants; score 47.922
-- `key_terminology` - critical; 1418 descendants; score 40.971
-- `minimal_axioms_2026-05-03` - critical; 1315 descendants; score 40.862
+- `graph_first_su3_integration_note` - critical; 1642 descendants; score 51.682
+- `kinetic_isotropy_primitive` - critical; 946 descendants; score 49.387
+- `plaquette_self_consistency_note` - critical; 1373 descendants; score 47.924
+- `key_terminology` - critical; 1420 descendants; score 40.973
+- `minimal_axioms_2026-05-03` - critical; 1317 descendants; score 40.864

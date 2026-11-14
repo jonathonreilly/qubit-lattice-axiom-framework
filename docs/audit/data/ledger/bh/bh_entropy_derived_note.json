@@ -38,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "2962af4104ae7b3bf14c2293efc646c4b157c24ebb4c8bebfaff2859bab35510",
+  "note_hash": "7b32889b06096b8c738389fc7df1dfaff6717b9970e9ea756d46b5ac0763fe42",
   "note_path": "docs/BH_ENTROPY_DERIVED_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

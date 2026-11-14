@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.345,
+  "load_bearing_score": 9.358,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -219,7 +219,7 @@
   },
   "runner_path": "scripts/frontier_color_su3_bridge_from_record_2026_06_05.py",
   "title": "Supplied symmetric-base SU(3) action and record-invariance limits",
-  "transitive_descendants": 229,
+  "transitive_descendants": 231,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

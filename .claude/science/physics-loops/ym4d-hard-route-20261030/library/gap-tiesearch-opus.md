@@ -94,3 +94,18 @@ No change to the sampler or the observables. Lock: holder `gap-tiesearch-973`, a
   equal). For u_xy and u_xyyz I therefore read the colour mean lambda_star = E|X|^2/3, which is rotation invariant and equals the
   per-colour variance exactly; the mean rule is applied only to colour 3 of the twisted slices (this reading was fixed after K1 was read, while the screen ran, before any screen result was read).
 
+- Code fix at 17:08Z (before any L = 12 or beta 2.3 screen point ran): the interpolation slice (s = 0.5) hung in thermalization.
+  Cause: the Kennedy-Pendleton sampler of row 952 never accepts when a staple is exactly 0 (it occurs at the cold start of
+  this slice). Fix in `tielab.py` kp_a0: for kappa < 0.5, the exact rejection sampler "a0 from the Haar marginal, accept with
+  probability exp(kappa (a0 - 1))". Check: means of a0 at kappa = 0, 0.2, 3.0 are 0.0010, 0.0492, 0.5678 against the exact
+  0, 0.0499, 0.5679 (400,000 draws, errors about 0.0008). Runs before the fix (K1, and the six L = 8 points at beta 2.4 below) used
+  the old sampler; both samplers are exact for kappa > 0, so they are kept. The batch resumed as `screen2.sh` (skips finished runs).
+- Screen, beta 2.4, L = 8 (1500 + 6000 sweeps; colour moments c1/c2/c3, mean/error per colour, lambda_star = colour mean):
+  u_xy 7.45/5.95/7.20, lambda_star 6.87 +- 0.98 (row 950: 8.00); z-twist pi/2 colour 3: 12.07 +- 2.50 (mean/err 0.3);
+  z-twist pi/4 colour 3: 7.08 +- 1.58; x-twist pi/2 colour 3: 8.82 +- 1.67 (mean/err -3.3: slow tunnelling between the two tied
+  states, so the raw moment is noisy, see below); u_xyyz and twisted u_xyyz: see the table of Section 4.
+  Reading rule for a colour-3 mean beyond 3 errors (stated at 17:08Z, after seeing the x-twist number): the exact symmetry S
+  makes the true mean 0, so the raw moment remains the estimator of the variance; a large sample mean means the run did not
+  tunnel often enough, and that point is flagged "under-sampled" rather than replaced by the connected value (which would
+  remove exactly the tie being looked for). This replaces the "connected value" clause of Section 2.
+

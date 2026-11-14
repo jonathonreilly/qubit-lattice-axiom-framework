@@ -179,3 +179,14 @@ errors of about 20 percent); all go to the sweep as planned in 4.3 and 4.5.
 - L = 8 (3000 + 24000): u_xy 7.54 +- 0.36; z-twist pi/2 9.63 +- 1.14 [5.27]; z-twist pi/4 6.13 +- 0.79 [6.28]. Means within 2.4 errors.
 
 - L = 16 (3000 + 12000): u_xy 7.41 +- 0.72 (so lambda(16)/lambda(8) = 0.98 for u_xy; RSS 0.14 GB, 560 s).
+- L = 16: z-twist pi/4 colour 3: 7.05 +- 1.72 [6.46] (ratio 16/8: 1.15); z-twist pi/2 colour 3: **17.04 +- 5.61** [9.10]
+  (ratio 16/8: 1.77; colour-1 mean 3.3 errors from 0, colour-3 error 33 percent: few tunnelling events between the tied states).
+- Interim per-step factors g = (lambda(16)/lambda(8))^(1/4), sigma_g = g (r_8 + r_16)/4 with r the relative errors:
+  u_xy 0.996 +- 0.036 (g + 2 sigma = 1.07: not refuted on this slice); z-twist pi/4 1.036 +- 0.096 (g + 2 sigma = 1.23 <= 1.25: not
+  refuted on this slice, barely); z-twist pi/2 1.153 +- 0.130 (between: INCONCLUSIVE on one chain).
+- Added at 18:36Z, before any of them ran, because z-twist pi/2 now decides the verdict at 2.4 (`full24b.sh`, chained after
+  the beta 2.3 batch): K3 for this slice (L = 16 hot, seed 31; the zt45 hot run of 4.3 stays as planned), two more cold chains at
+  L = 16 (seeds 32, 33), one more at L = 8 (seed 32). Pooling rule: the colour-3 value at a side is the plain mean of the
+  independent chains' values, error sqrt(sum err^2)/n; g is recomputed from the pooled values; K3 compares the hot chain with
+  the mean of the cold ones (within 15 percent, else "not equilibrated").
+

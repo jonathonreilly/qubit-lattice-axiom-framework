@@ -299,3 +299,9 @@ value decreases in the lag to the frame-averaged variance (row 952, 1.2, PROVED 
 bounds the frame-averaged one too; a growing lag-0 value would not by itself refute the quotient form.
 (v) A search that finds no growth proves no bound; "not refuted" is only that.
 
+- Progress 22:33Z: L = 8 chains done (7.40, 8.56, 7.39, 9.09); L = 16 seed 34: 4.96. L = 16 runs now take about 13 minutes (10 before); the load average is checked below the 6.3 table.
+- 22:36Z: memory free fell to 48 percent (load average 21-27 over the previous 15 minutes from processes outside this lane;
+  the numeric lock is held by this lane). The running job (L = 16 seed 35) was left to finish. The driver was replaced by
+  `full24f.sh`, which starts each remaining run (L = 16 seeds 36-39) only at >= 50 percent free and logs any wait. Same runs,
+  same stop rule.
+

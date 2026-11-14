@@ -178,4 +178,107 @@ Quantifiers follow check 938. "Fails" means: the statement with the constants th
   time direction, RECALLED) is impossible for beta >= 3/2: if the neighbours are antipodal on a link, the field on
   it vanishes, and the linear test function gives a Poincare constant at most 3 there (variance 1/4, gradient 3/4).
   All three caps lie below the window 2.3 to 2.6, and all three come from one link whose time neighbours do not
-  pin it. They are group-blind (U(1) has the same caps at 1/2, 1 and 1/2 times these values or lower).
+  pin it. They are group-blind: for U(1) the same three computations give the caps 0, 1 and 1/2.
+
+### Step 3: attack A, curvature of a slice law (Bakry-Emery). Result: dead below the window, for a named reason
+
+Aim. A positive lower bound on the tensor of (A6) for nu, or on the Hessian of (A7) for eta, would give a
+log-Sobolev inequality at once (Bakry and Emery, RECALLED). Both tensors are now in closed form, so the attack
+can be judged exactly.
+
+**A.1 The slice law nu.** By (A6) the tensor is 2 + Hess_M V + 2 beta [mean temporal plaquette - beta times the
+one-step variance]. The bracket is exactly zero for independent links and it is the only place where the 4D
+dynamics enters. The term Hess_M V is the obstruction: it is -4 beta on a link whose four spatial plaquettes are
+-1. Death: Step 2 (i), every beta > 1.
+
+**A.2 The mid-slice law eta (Theorem MID; CONDITIONAL on the flat-space form of row 940's Lemma BGL, which is
+Bobkov-Gentil-Ledoux's own setting, RECALLED; not rebuilt, because the hypothesis is refuted below).**
+Put chi_mid := 2 beta sup over y in R^N of the largest eigenvalue of Cov_(pi_(2 beta y))(w). If chi_mid < 1, then:
+(a) eta satisfies a log-Sobolev inequality with constant 4 beta (1 - chi_mid) (by (A7) and Bakry-Emery on R^N);
+(b) the half-step operator B obeys row 940's Harnack inequality with sigma'^2 = 2 beta chi_mid (by (A4) with
+    theta = 2 beta y);
+(c) so B is a contraction from L^p(nu) to L^Q(eta) with Q - 1 = (p - 1)(2 - chi_mid)/chi_mid, B^* has the same
+    gain by duality, and P = B^* B satisfies (HC-vac) with alpha' = log((2 - chi_mid)/chi_mid).
+Check by hand, one Gaussian mode. The law of w given y has precision beta (e^omega + 1), so chi_mid =
+2/(e^omega + 1), eta has precision 4 beta tanh(omega/2) = 4 beta (1 - chi_mid), and (2 - chi_mid)/chi_mid = e^omega:
+alpha' = omega, Nelson's exponent. The attack is sharp where it applies.
+No term Hess V occurs here: the mid-slice variable lives in flat space, and the spatial action enters only
+through the conditional covariance. This is the gain over A.1.
+Death (PROVED): Step 2 (ii). At y = 0 the links are free and Cov = Id/4 by Elitzur's argument (A5), so
+chi_mid >= beta/2. The hypothesis fails for every beta >= 2, on every box, for SU(2). (For one free link,
+chi_mid = beta/2 exactly, and Theorem MID is a true statement about the rotor chain for beta < 2.)
+
+**A.3 What attack A leaves.** A curvature criterion in the time direction cannot reach beta 2.3: the cap is a
+single link that its time neighbours fail to pin, and it is the same for U(1). The useful output is the
+closed form (A6), (A7): every curvature-type quantity of a slice law is a conditional covariance of the next
+slice in a linear external field. What must be shown about SU(2) is therefore a bound on such covariances.
+
+### Step 4: attack B, from the one-step conditional laws to the vacuum (Theorem C, Proposition W; PROVED implications)
+
+Idea. Do not ask for an inequality for nu. Ask for inequalities for the one-step laws pi_x, and let stationarity
+carry them to nu. No curvature is used, and Lambda enters only through pi_x.
+
+Definitions (sup form: each is a supremum over the conditioning slice x in M). A tangent vector at x is
+horizontal if it is orthogonal to the gauge orbit through x.
+  (C1)_(alpha_c): Ent_(pi_x)(h) <= E_(pi_x)[ |grad h|^2/h ]/(2 alpha_c) for every x and every smooth positive
+     gauge-invariant h.
+  (C2)_sigma: for every x and every unit horizontal z at x, beta (<z, w> - E_(pi_x)<z, w>) is sub-Gaussian under pi_x
+     with variance proxy sigma^2.
+  gamma_c: Var_(pi_x)(f) <= E_(pi_x)|grad f|^2/gamma_c for every x and smooth gauge-invariant f.
+  kbar_h: Var_(pi_x)(<z, w>) <= kbar_h for every x and every unit horizontal z at x.
+(C1) gives gamma_c >= alpha_c (linearise), and (C2) gives beta^2 kbar_h <= sigma^2.
+
+**Proposition W (variance level).** Put kappa_W := beta (kbar_h/gamma_c)^(1/2). Then for smooth gauge-invariant f:
+  |grad P f|^2 <= kappa_W^2 P(|grad f|^2)   pointwise.
+If kappa_W < 1: every eigenvalue r of P on non-constant gauge-invariant functions has |r| <= kappa_W, so
+E_1 >= log(1/kappa_W); and nu has the Poincare constant gamma >= gamma_c (1 - kappa_W^2).
+Proof. P f is gauge invariant, so grad P f(x) is horizontal. By (A3) and Cauchy-Schwarz, for unit horizontal z:
+z . grad P f(x) = beta Cov_(pi_x)(<z, w>, f) <= beta (kbar_h Var_(pi_x) f)^(1/2) <= kappa_W (E_(pi_x)|grad f|^2)^(1/2).
+If P f = r f with f not constant (f = P f/r is smooth), integrate against nu and use stationarity:
+r^2 E_nu|grad f|^2 <= kappa_W^2 E_nu|grad f|^2. For the Poincare constant: Var_nu(f) = sum over k < n of
+E_nu Var_(pi_x)(P^k f) + Var_nu(P^n f) (row 931 (5.2), iterated), each term is at most
+kappa_W^(2k) E_nu|grad f|^2/gamma_c, and Var_nu(P^n f) tends to 0 (the kernel is bounded below on M x M). QED
+
+**Theorem C (entropy level).** Assume (C1)_(alpha_c) and (C2)_sigma with sigma^2 < alpha_c. Then
+  (LSI-vac)_alpha holds with alpha = alpha_c - sigma^2.
+Proof. Let g_0 >= delta > 0 be smooth and gauge invariant, g_k := P^k g_0, F_k := |grad g_k|^2/g_k, I_k := E_nu F_k.
+(i) Chain rule with stationarity: Ent_nu(g) = E_nu[Ent_(pi_x)(g)] + Ent_nu(P g). So
+Ent_nu(g_0) = sum over k < n of E_nu[Ent_(pi_x)(g_k)] + Ent_nu(g_n).
+(ii) By (C1) and stationarity, E_nu[Ent_(pi_x)(g_k)] <= E_nu E_(pi_x)[F_k]/(2 alpha_c) = I_k/(2 alpha_c).
+(iii) Let z be the unit vector along grad g_(k+1)(x); it is horizontal. By (A3) and Lemma SGC (row 940; it is
+row 931's Theorem E step (ii), which HOLDS in check 938): |grad g_(k+1)(x)|^2 = beta^2 Cov_(pi_x)(<z, w>, g_k)^2
+<= 2 sigma^2 g_(k+1)(x) Ent_(pi_x)(g_k) <= (sigma^2/alpha_c) g_(k+1)(x) E_(pi_x)[F_k]. Divide by g_(k+1)(x) and
+integrate: I_(k+1) <= (sigma^2/alpha_c) I_k.
+(iv) g_n tends to E_nu g_0 uniformly (the kernel is bounded below), so Ent_nu(g_n) tends to 0. Sum the series:
+Ent_nu(g_0) <= I_0/(2 (alpha_c - sigma^2)). Let delta tend to 0. QED
+
+**Corollary C' (CONDITIONAL on row 940's Theorem HC1, READ, unchecked).** If (C2) holds for every unit tangent z
+(not only horizontal ones), then with (A4) or with row 940's Lemma RD, Theorem HC1 gives (HC-vac) with
+  alpha' = (1/2) log(1 + (alpha_c - sigma^2)/sigma^2) = (1/2) log(alpha_c/sigma^2).
+If (C1) holds for all smooth functions, Herbst's argument (RECALLED) gives sigma^2 <= beta^2/alpha_c, and then
+alpha' >= log(alpha_c/beta). (ARGUED, not written out: horizontal z suffice in HC1 for gauge-invariant functions,
+because the Hopf-Lax minimiser can be taken at the nearest point of its gauge orbit, and the geodesic to it is
+horizontal.)
+
+**Checks by hand.**
+- One Gaussian mode: pi_q is Gaussian with precision beta e^omega, so alpha_c = gamma_c = beta e^omega, kbar =
+  1/(beta e^omega), sigma^2 = beta e^(-omega). Proposition W: kappa_W = e^(-omega) = r_1 and gamma = 2 beta sinh(omega).
+  Theorem C: alpha = beta e^omega - beta e^(-omega) = 2 beta sinh(omega). Corollary C': alpha' = omega. All three are
+  the exact values. So Theorem C is the vacuum log-Sobolev inequality of the free field, with the exact constant,
+  derived from the one-step law alone.
+- One free SU(2) link (V = 0; nu is Haar; r_1 = A(beta) := I_2(beta)/I_1(beta)). pi_x is von Mises-Fisher and
+  kbar_h = A(beta)/beta. Proposition W asserts A^2 <= kappa_W^2 = beta A/gamma_c, that is gamma_c <= beta I_1/I_2 =
+  4 + beta I_3/I_2 (recurrence I_1 - I_3 = (4/beta) I_2). Independent bound: a coordinate y orthogonal to x has
+  -L y = (3 + beta <x, w>) y, so gamma_c <= 3 + beta I_3/I_2. Consistent at every beta, with margin exactly 1.
+  Corollary C' asserts alpha_c/sigma^2 <= e^(2 E_1) = (I_1/I_2)^2. With alpha_c <= gamma_c and sigma^2 >= beta A(beta)
+  the left side is at most (3 + beta I_3/I_2)/(beta I_2/I_1): 3.80/1.10 = 3.45 at beta 2.3 against 4.36; for large
+  beta the sides are 1 + 2/beta and 1 + 3/beta; for small beta, 12/beta^2 and 16/beta^2. No contradiction.
+  (Bessel values at 2.3 by the recurrence from I_0 = 2.8296, I_1 = 2.0978: I_2 = 1.0054, I_3 = 0.3493.)
+
+**What attack B achieves.** The pair (LSI-vac), (SG-step) of rows 931 and 940 is replaced by statements about
+one object, the law of the next slice given the present one:
+  (C1)_(alpha_c) and (C2)_sigma with sigma^2 < alpha_c   give   (LSI-vac), (HC-vac) with alpha' = (1/2) log(alpha_c/sigma^2),
+  kappa_W < 1   gives   E_1 >= log(1/kappa_W)   (gap only).
+The threshold is strict and exact: the conditional law must relax faster than the temporal coupling feeds in
+(sigma^2 is beta e^(-omega) for a free mode). This is where a mass enters: alpha_c/sigma^2 = e^(2 omega).
+The box does not occur in Theorem C; it enters only through Proposition HC.

@@ -52,3 +52,5 @@ The runner prints `TOTAL: PASS=19 FAIL=0`. Its PASS lines cover the conjugacy bo
 ## Supplied and boundary
 
 Supplied: the 1D pair walk and its masses, mu and b, the half-filled sea, the tie-breaks (shown not to matter), the unit map a = sqrt(8 pi) l_P with tau = 2a/(sqrt(3) c), the volume-count identification, the S/V dynamics, the LCDM background and the bounds used. A Poisson sprinkling would be imported from causal-set theory, not derived from the odds, and the uncertainty reading needs V in superposition while records are definite. No vacuum, volume rule, causal-set structure or value of Lambda is established.
+
+Scope of the frozen statement (added 2026-11-14, from the consolidation's cross-note records): the 3D block tick checked here has no copy mass, so the frozen-record statement covers the ticks checked only. A patch computation of the copy-massed tick (#9923, a logged source that is not in this repository; a historical report, unverified here) is recorded as finding that the sea's odds differ between the two half-ticks; this note neither confirms nor uses it, and claims nothing for that tick.

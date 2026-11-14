@@ -411,6 +411,15 @@ needs the count itself.
 - The property U(1) lacks that a proof must use is a bound on the count of even states,
   sum_i r_i^t, at some time: in FP the 26 softest momenta already break it. Every reduction of
   this session returns to that count. No argument found here supplies it for SU(2) at order one.
+- Conjecture (XM), GUIDE only: X_theta(k) <= X_0(k) = S(4k + 2) for every theta. Toy evidence
+  (script `x_check.py`, log `x_check.log`, same Z_N toy, (N, beta) = (4, 0.7), (4, 1.5), (4, 3.0),
+  (4, 6.0), (6, 2.0), (6, 5.0), (2, 1.0), (2, 4.0), k = 0, 1, 2, 41 values of theta): the maximum
+  over theta sits at theta = 0 in all 24 cases, although n(theta) falls to 0.065. The toy is
+  abelian and tiny, so this is no evidence for SU(2) on a large box. Not proved: Hoelder in theta
+  bounds the numerator Tr[(T^ ^k N_theta T^ ^k)^2] by (1 + S(4k + 2))^(1 - theta), but the
+  normalization n(theta)^2 <= 1 enters on the wrong side (the same loss as route 3 of 6.2). If
+  (XM) holds, (SEAM)_a follows from thermal sums alone:
+  S_ev(2a - 2 - 4k) (1 + S(4k + 2)) <= (psi_*/9)^2.
 - What would be a real advance (proposals, not results): (i) any bound on X(k) = sup_theta
   X_theta(k) in terms of X_0(k) = S(4k + 2); this is the only place where an intermediate theta
   enters, and it would make the sup form equivalent to thermal sums; (ii) work with (SEAM-L1) or
@@ -455,7 +464,7 @@ needs the count itself.
 | Proposition Q and (Q1)-(Q4): |Delta_theta| <= 8y/(1 - y), y^2 = S_ev(2a-2-4k)(1 + X_theta(k)) | PROVED (hand), not yet checked |
 | Lemma SP (spectral form of F) | PROVED (hand), not yet checked |
 | (SEAM)_a, (SEAM-L1)_a, (GLUE-FP)_a for SU(2) at beta 2.3-2.6 | OPEN |
-| A bound on X(k) = sup_theta X_theta(k) by X_0(k) | OPEN |
+| (XM): sup_theta X_theta(k) = X_0(k) = S(4k + 2) | OPEN; GUIDE toy evidence (24 of 24 abelian toy cases) |
 | (I1)-(I3) at order one | OPEN (and not needed in local form, by (Q1)) |
 
 Limits of this note. Proofs are by hand and checked by no other model. The numeric run is GUIDE
@@ -466,4 +475,4 @@ and the PR branches were not opened. Nothing here is a mass gap, and nothing gra
 
 Status of the plan: steps 1-8 done.
 
-RESULT: Row 929 (Claude Fable 5.2 max, author, checked by no other model): STEP A settled: in the free-photon U(1) model (Villain without monopoles) the even thermal sum is exact (Theorem A1) and log(1 + S_ev(a; (24a)^3)) > 31 for every a and beta (PROVED by hand; GUIDE value 3.1e3 to 4.2e3, continuum (pi^2/45) 24^3 = 3032), so U(1) FAILS the glue half and FAILS (SEAM)_a at every size through the necessary signed theta-average, by a factor 3.2e4 (GUIDE; above 325 PROVED); the a^-4 law is only the compact endpoint Delta_0 = (3/(2a)) x average (alone it exceeds psi_* for a < 4.8e4), the average is a^-3, and on the exact Gaussian seam path (Proposition G, closed form, PROVED) Delta is positive at every theta, with a^-2 layers of width 1/a at both ends and an a^-4 interior; U(1) passes at no size, so (SEAM) stands as a sufficient form and (SEAM-L1), the theta-integral of |Delta| at most psi_*, is recommended because sup/average grows like a. STEP B: (SEAM) for SU(2) at beta 2.3-2.6 is NOT proved and stays OPEN; PROVED instead (hand, group-blind, not yet checked; a toy GUIDE run did not refute it): Lemma J (the theta-family is one product vacuum chain with a theta-dependent initial law), Proposition Q, |Delta_theta| <= 8y/(1 - y) with y^2 = S_ev(2a - 2 - 4k)(1 + X_theta(k)), so (SEAM)_a is bracketed between the glue half at time a and a later-time thermal sum times the seam chi-square X(k), (I1)-(I3) are not needed in local form, and the seam form gives no handle easier than a thermal seed; the photon and frozen Q_8/2T break every form at the same factor, the count of soft or degenerate even states; OPEN: a seed at order one, a bound on sup_theta X_theta(k), and the fact test for compact Wilson U(1) (GUIDE only).
+RESULT: Row 929 (Claude Fable 5.2 max, author, checked by no other model): STEP A settled: in the free-photon U(1) model (Villain without monopoles) the even thermal sum is exact (Theorem A1) and log(1 + S_ev(a; (24a)^3)) > 31 for every a and beta (PROVED by hand; GUIDE value 3.1e3 to 4.2e3, continuum (pi^2/45) 24^3 = 3032), so U(1) FAILS the glue half and FAILS (SEAM)_a at every size through the necessary signed theta-average, by a factor 3.2e4 (GUIDE; above 325 PROVED); the a^-4 law is only the compact endpoint Delta_0 = (3/(2a)) x average (alone it exceeds psi_* for a < 4.8e4), the average is a^-3, and on the exact Gaussian seam path (Proposition G, closed form, PROVED) Delta is positive at every theta, with a^-2 layers of width 1/a at both ends and an a^-4 interior; U(1) passes at no size, so (SEAM) stands as a sufficient form and (SEAM-L1), the theta-integral of |Delta| at most psi_*, is recommended because sup/average grows like a. STEP B: (SEAM) for SU(2) at beta 2.3-2.6 is NOT proved and stays OPEN; PROVED instead (hand, group-blind, not yet checked; a toy GUIDE run did not refute it): Lemma J (the theta-family is one product vacuum chain with a theta-dependent initial law), Proposition Q, |Delta_theta| <= 8y/(1 - y) with y^2 = S_ev(2a - 2 - 4k)(1 + X_theta(k)), so (SEAM)_a is bracketed between the glue half at time a and a later-time thermal sum times the seam chi-square X(k), (I1)-(I3) are not needed in local form, and the seam form gives no handle easier than a thermal seed; the photon and frozen Q_8/2T break every form at the same factor, the count of soft or degenerate even states; OPEN: a seed at order one, the conjecture (XM) sup_theta X_theta(k) = S(4k + 2) (holds in 24 abelian toy cases, GUIDE), and the fact test for compact Wilson U(1) (GUIDE only).

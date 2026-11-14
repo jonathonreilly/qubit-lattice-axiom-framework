@@ -35,6 +35,8 @@ Status log (updated in place):
 - 12:25Z: Sections 1 and 2 written (inputs read, duplicate check, Piazza-Shen skeleton). Next: Section 3 (STEP 1).
 - 12:50Z: Section 3 written (STEP 1). Next: Section 4 (fact tests).
 - 13:10Z: Section 4 written (STEP 2). Next: Section 5 (STEP 3 stage A) and the GUIDE criteria.
+- 13:30Z: GUIDE criteria written (Section 7a), before any run. Run launched after that.
+- 13:50Z: batch 1 running (lock holder gap-ps-957). Sections 5 and 6 written while it runs.
 
 ## 1. Target, objects, duplicate check (READ; no new claim)
 
@@ -290,3 +292,150 @@ law w up to r^(n-2). In 4D on a separating skeleton the k = 4 skeleton plaquette
 diagonal entry of the Hessian ranges over an interval of length 2 k beta = 18 to 21 in the window, against Ric = 2.
 The pointwise criterion needs this ratio below 1. Whether the curvature bound holds at TYPICAL configurations is
 a separate question, with no known answer in the lane; it is the GUIDE test of Section 7.
+
+## 7a. The GUIDE test: design and criteria (written 13:30Z, BEFORE any run)
+
+(Placed here in work order. Sections 5 and 6 follow below; Section 7b holds the results.)
+
+**Question.** FT-CURV left one thing open: Piazza-Shen's absorber (Ric against the Hessian of the log-density) fails
+pointwise above beta = 1 (Lemma SEP). Does it hold at TYPICAL configurations of 4D SU(2) Wilson in the window? If
+it fails there too, no averaged form of the curvature step exists at the lattice scale (block side 1), and any
+curvature step needs a renormalised block action. If it holds, the exact shape of the defect set is the next object.
+
+**Quantity.** Periodic L^4, density e^H, H = beta sum_p t_p, unit-sphere metric, tangent frame u xi (xi imaginary
+quaternion). For a configuration U let Hs(U) be the matrix of Hess H (second derivative along product geodesics
+U_l exp(tau xi_l); for one plaquette: diagonal blocks -t_p Id_3, off-diagonal blocks from two insertions of xi).
+- lam_full(U) := largest eigenvalue of Hs on the whole tangent space. Margin 2 - lam_full.
+- lam_hor(U) := largest eigenvalue of Hs on the horizontal space (orthogonal complement of the gauge directions
+  xi_l = U_l^(-1) eta_s U_l - eta_(s')). Margin 2 - lam_hor. Only this one matters for gauge-invariant functions: the
+  Bakry-Emery argument run on invariant functions needs the tensor on horizontal vectors only (Section 5,
+  Proposition HBE).
+- n_hor(U) := number of horizontal eigenvalues above 2 (counted among the top 24); the participation ratio (in
+  links) of the top horizontal eigenvector; the largest diagonal entry -beta min_l sum_(p at l) t_p.
+
+**Runs.** Heat bath (Creutz sampler, checkerboard by direction and parity), hot start, 300 sweeps, then
+configurations 10 sweeps apart. L = 4: beta = 0.5, 1.0, 1.5, 2.0, 2.3, 2.6, 40 configurations each. L = 6: beta = 2.3
+and 2.6, 16 configurations each. One thread, nice, under the numeric lock, memory cap 2 GB.
+
+**Sanity checks, run first (a failure stops the batch).** S1: the matrix Hs against second differences of H along
+random tangent directions (relative error below 1e-4). S2: at the flat configuration the largest eigenvalue of Hs
+is 0 within 1e-8 beta (H is at its maximum). S3: the first derivative of H along random gauge directions is 0
+within 1e-7. S4 (not a stop rule): mean plaquette near 0.60 at beta 2.3 and 0.67 at 2.6 (row 947 Run 3: 0.603-0.606, 0.671).
+
+**Verdict rules (per L and beta).**
+- TYP-CURV HOLDS (GUIDE): 2 - lam_hor > 0 in at least 95 percent of the configurations.
+- TYP-CURV FAILS (GUIDE): 2 - lam_hor < 0 in at least 50 percent of the configurations.
+- Otherwise MIXED. In every case report the mean number of horizontal eigenvalues above 2 per site.
+- Volume rule: if n_hor per configuration grows from L = 4 to L = 6 by about the volume ratio 5.06, the violating
+  modes are local defects with a density; then HOLDS on a small lattice means only that the density is below
+  1/(number of sites), and the typical configuration of the seed box violates the bound somewhere.
+
+**What each outcome can and cannot show.** A run proves nothing. FAILS at 2.3 and 2.6 would say: curvature is not
+an absorber at the lattice scale even on average; the Piazza-Shen macro step has no averaged form without block
+renormalisation. HOLDS would say: the Wilson law in the window is curvature-convex on gauge-invariant directions
+except on a sparse defect set, and the smallest unproved inequality in this direction is an absorption of sparse
+curvature defects (stated in Section 7b if this happens). My expectation before the run: the diagonal entries are
+strongly negative (about -beta x 3.6), the positive part comes from the commutator terms and from negative
+plaquettes; I expect HOLDS at L = 4 for beta = 2.3 with a few violating local modes at L = 6. I do not know.
+
+## 5. STEP 3, stage A: the adaptation written as a proof, as far as it is true
+
+**5.1 Lemma BLK (block laws; PROVED given Holley-Stroock and the Haar inequality, both RECALLED).** Write
+Ent(F^2) <= 2 C E|grad F|^2. Haar on a product of copies of S^3 has C = 1/2 (Bakry-Emery, Ric = 2).
+- (a) Slab law on B x (Z/TZ). For a finite set D of links and any values outside D, the conditional law of the links
+  in D has C_D <= (1/2) exp(2 beta N_D), N_D = the number of plaquettes with a link in D.
+- (b) The same for J: for D a set of links of the two slices, the conditional law under J of the links in D given
+  all other links of the two slices has C_D <= (1/2) exp(2 beta N_D), with N_D counted in four dimensions.
+  Proof of (b). The density of J is H(x) e^(-V(x)) e^(beta <x, w>) e^(-V(w)) H(w). A change of the links in D changes the
+  explicit factors by at most 2 beta per two-slice plaquette that meets D. H(x) is an integral of
+  exp(beta sum_l <x_l, y_l>) against a positive measure in the earlier slice y (temporal gauge), so
+  H(x)/H(x') <= exp(2 beta |D|) when x and x' differ on D only: one earlier temporal plaquette per link. QED
+This is the sentence of the queue row, "block conditional laws have an LSI from positive curvature at the block
+scale". It is true at every beta, uniformly in the box and in the conditioning. It is also true for U(1) (Haar on
+the circle), so it carries no SU(2) content: it is the soft part.
+
+**5.2 Proposition HBE (horizontal curvature criterion; PROVED given the Bakry-Emery argument, RECALLED).** Let H be
+gauge invariant on M = (S^3)^n. If (Ric - Hess H)(v, v) >= rho |v|^2 at every point, for every v orthogonal to the gauge
+orbit, then Ent(F^2) <= (2/rho) E|grad F|^2 for every gauge-invariant F, under the law e^H.
+Proof. The gauge group acts by isometries that preserve H, so the diffusion semigroup P_t of e^H commutes with it.
+For invariant f > 0, g_t = log P_t f is invariant and its gradient is horizontal. The Fisher information
+I(t) = E[P_t f |grad g_t|^2] has I'(t) = -2 E[P_t f Gamma_2(g_t)], and
+Gamma_2(g) = |Hess g|^2 + (Ric - Hess H)(grad g, grad g) >= rho |grad g|^2. So I(t) <= e^(-2 rho t) I(0), and the entropy is the
+time integral of I/2... (the standard conclusion Ent(f) <= I(0)/(2 rho)). QED
+It does not rescue the pointwise criterion (PROVED). At U = 1 except one link e with U_e = -1: grad H = 0, so
+Hess H(g, .) = 0 for every gauge direction g (differentiate <grad H, X_xi> = 0). For v on e, Hess H(v, v) = 6 beta |v|^2 in
+4D, and the horizontal part v_h of v has |v_h|^2 = (1 - (V - 1)/(4V)) |v|^2 (the gauge directions there are lattice
+gradients, -1 being central). So Hess H(v_h, v_h) = 6 beta |v|^2, about 8 beta |v_h|^2: the horizontal criterion fails for
+beta >= 1/4.
+
+**5.3 Theorem TS-J (two-scale reduction for J; PROVED implication from Proposition EQ and Lemma MARG).** Let B be a
+box whose sides are multiples of m, and mu-bar_T the law of the links in the faces of the cubic blocks of side m in
+B x (Z/TZ). Assume for all large T: Ent(g^2) <= 2 C-bar E|grad g|^2 under mu-bar_T, for smooth g of the skeleton links. Then
+(LSI-J) holds on B with
+  2/alpha_J <= 14 max( 2 C-bar, K + 8 C-bar K kappa^2 n' ),   K = (1/2) e^(2 beta N_B), kappa = 6 beta, N_B <= 6 (m + 1)^4, n' <= 4 (m + 1)^4.
+The constants do not depend on B. With (T1): (LSI-J-seed)_a follows from
+  (MAC)_(m,a): on B = (24a)^3, 14 max( 2 C-bar, K + 8 C-bar K kappa^2 n' ) <= 1/(beta K_a).
+Since 1/(beta K_a) grows like a/log a, (MAC)_(m,a) allows C-bar to grow with the box almost linearly in its side.
+The hypothesis is one inequality for one law per slab; it is not a supremum over conditionings. But by
+Proposition EQ it is equivalent, up to the same constants, to the inequality for the full slab law. So Theorem
+TS-J is a true two-scale statement with curvature used at the block scale (Lemma BLK), and it reduces nothing.
+
+**5.4 Lemma HESS (the Hessian that the curvature step would have to absorb; PROVED identity).** For the skeleton
+law and a tangent vector v at s,
+  Hess H-bar(v, v) = beta sum_(p inside S) Hess t_p(v, v) + beta E_s[ sum_(p not inside S) Hess_s t_p(v, v) ] + Var_s(<grad_s H, v>).
+For one plaquette with holonomy W and v = (U_i xi_i), with Z_i the xi_i moved to the end of the word (PS (4.1)-(4.2),
+psi = t, Hess t = -t g on S^3, inverse links with a minus sign):
+  Hess t_p(v, v) = -t_p |Z_1 + Z_2 + Z_3 + Z_4|^2 + <grad t(W), W sum_(i < j) [Z_i, Z_j]>,
+and the second term is at most 2 (1 - t_p^2)^(1/2) sum_(i < j) |Z_i| |Z_j| in size. Three parts:
+- the curl part -t_p |sum Z_i|^2: non-positive where t_p >= 0, zero on gauge-like directions. Near smooth fields it
+  makes -H convex, in favour of the criterion;
+- the commutator part, of either sign and of size beta (1 - t_p^2)^(1/2) per plaquette. It is the lattice form of the
+  spin term 2 tr(F [a, a]) of the continuum fluctuation operator. It vanishes for U(1);
+- for the macro law, the variance term, which is non-negative and so against the criterion.
+In 2D after block integration the mean-curvature and variance terms cancel in the mean (FT-CURV), and nothing is
+left to absorb. In 4D the skeleton plaquettes are not averaged, and at a rough configuration the commutator
+part has no sign. The GUIDE test of Section 7a measures the largest eigenvalue of the first line of this
+identity for block side 1 (no integration), at typical configurations.
+
+## 6. STEP 3, stage B: the coarse law at the box size. Attempts on (MACRO) and where each stops
+
+- **B1, pointwise curvature (the step of Piazza-Shen).** Dead for beta >= 1 on the skeleton (Lemma SEP), and for
+  beta >= 1/4 in the horizontal form at one flipped link (5.2). Nothing at the box size can change a pointwise
+  statement.
+- **B2, curvature at typical configurations.** This is the only averaged form of (PS-d) that I can state. Two
+  stops. (i) Whether it is true at block side 1 in the window is the GUIDE test (7a, results in 7b). (ii) Even
+  if true on small lattices, on the seed box a typical configuration violates the bound somewhere (local
+  defects have a density; Lemma SEP's flipped link is one). No theorem turns "curvature bound outside a sparse
+  defect set" into a log-Sobolev inequality: in the proof of 5.2 the density P_t f is arbitrary and can sit on
+  the defects, where Gamma_2 >= rho Gamma fails. The statement needed is (DEF-ABS) of Section 7b. OPEN.
+- **B3, criteria with mixed derivatives (Zegarlinski, Otto-Reznikoff, Dobrushin-Shlosman) for the skeleton law.**
+  They need sup bounds, over the skeleton field, of covariances of forces inside a block: sup forms, of the
+  families capped at 0.775 and at 4 G_3 (FT-CEIL). Not attempted further.
+- **B4, the split of one inequality on one box (Rothaus' lemma, RECALLED; not a sup form).** If J has a Poincare
+  inequality with constant 1/gam_J and a defective inequality Ent(Phi^2) <= A E|grad Phi|^2 + B E Phi^2, then
+  2/alpha_J <= A + (B + 2)/gam_J. At the seed the defect may be as large as B + 2 = gam_J (1/(beta K_a) - A), of order
+  a/log a. The block-scale curvature (Lemma BLK) is an input of the defective kind only. The Poincare part is the
+  gap of J on the seed box. No block-scale input gives it: Lemma BLK holds for the photon too (FT-U1). And I
+  found no way to a defective inequality with defect below the volume: telescoping the entropy over blocks
+  needs gradients of conditional expectations given ever larger sets, which is the cross term of (PS-f) with
+  micro sets that are no longer bounded. Stop: circular.
+- **B5, where the box size enters.** Only through (T1). A 4D box-uniform theorem with a constant of order one is
+  false on small boxes: R_J = 0.57 on 4^3 at beta 2.3 and 1.54 on 4^3 at beta 2.6 (GUIDE, row 954), from light flux
+  states. So a block scheme needs blocks above the confinement length (side about 6 at beta 2.3 and above 12 at
+  beta 2.6, read from the flux energies of row 954). Lemma BLK then gives constants like exp(-2 beta x 6 x 13^4).
+  They are box-uniform, and (T1) accepts them with an astronomically large a. This costs nothing in logic and
+  shows that the scheme has no use for the box size beyond (T1).
+
+**The exact obstruction (answer to STEP 3).**
+- (O1) No exact decimation: one integrated link gives all 15 six-link loops (3.1). The block weight is the block
+  partition function as a function of the whole boundary field.
+- (O2) A separating skeleton carries its own plaquettes at weight beta. The curvature of SU(2), Ric = 2, is the
+  only absorber in the method, and it is used pointwise. It dies at beta = 1 (Lemma SEP), at 1/4 horizontally.
+- (O3) What Piazza-Shen get from the two-dimensional area law, flatness of the macro law, must in 4D fail for
+  U(1) and for the frozen groups. So it is an SU(2)-specific statement at least as strong as disorder at the
+  block scale in the window. No hand method gives it; the 2D proof gives it from a Doeblin bound alone.
+- (O4) The open slot (MACRO) must be one inequality for one law. With bounded blocks it is equivalent to the
+  target (Proposition EQ). Every known way to prove it is a supremum over conditionings (capped) or needs the
+  gap first (B4).
+So the Wilson-loop growth (O1) is the first obstruction, and it is not the deepest one. Even with an explicit
+block weight, the absorber (O2) would fail in the window, and what has to be absorbed is not small (O3).

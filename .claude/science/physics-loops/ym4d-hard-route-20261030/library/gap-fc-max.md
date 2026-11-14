@@ -248,14 +248,25 @@ Elitzur's value 1/4 at zero field (row 941 (A5)).
 Stage 3, entropy instead of Fisher information: Theorem BR (5.2). It removes (FC), and it moves the SU(2) input to
 (LSI-br). Stop: (LSI-br) for SU(2) on the seed box. Not attempted beyond the fact tests of 5.5; reasons in Step 7.
 
-**5.7 The property that the Gaussian rival lacks, at the exact step (PROVED for the named step only).** In FP the
-functions that defeat the rate are the linear ones, phi(y) = <z, y> with z a smooth transverse wave:
-Var_(nu_s)(phi)/|z|^2 = 1/A_s(omega) is unbounded as omega -> 0. For SU(2), by 5.5 (Elitzur for the pair of slices),
-every linear function has Var_(nu_s)(phi)/|z|^2 = v_s <= 1/4 + 1/(4 beta), on every box; and no linear function is gauge
-invariant. The property is: the centre element -1 acts on one link alone. FP has no such symmetry. Compact
-Wilson U(1) has it too, so this step does not separate SU(2) from compact U(1); for gauge-invariant functions
-of degree two and more nothing is proved here, for either group. The lowest gauge-invariant polynomials of the
-bridge field are |y_l|^2 (one link) and the plaquette quartic Re(y_1 y_2 conj(y_3) conj(y_4)).
+**5.7 The property that the Gaussian rival lacks, at the exact step (PROVED for degrees one and two only; rewritten 09:34Z).**
+In FP the functions that defeat the rate are polynomials of low degree in the bridge field. Degree one:
+phi(y) = <z, y> with z a smooth transverse wave has Var_(nu_s)(phi)/E|grad phi|^2 = 1/A_s(omega), unbounded as omega -> 0.
+Degree two: phi = <z, y>^2 - const has ratio 1/(2 A_s(omega)) (Gaussian moments: Var = 2 v^2, E|grad phi|^2 = 4 v, v = 1/A_s).
+For SU(2) on a box of side at least 3 (Lemma INV, PROVED): a polynomial of degree at most two on R^N is gauge
+invariant only if it is c_0 + sum over links of c_l |y_l|^2.
+Proof. The gauge map -1 at one site changes the sign of the six links at that site. A linear form <z, y> is
+then invariant only if z_l = 0 for every link. For a quadratic form y^T Q y: two distinct links do not have the
+same pair of end sites, so -1 at a site of one and not of the other gives Q_(l l') = 0; and Q_(l l) commutes with
+the maps q -> g q h^(-1), which are all of SO(4), so it is a multiple of Id_4. QED
+So gauge invariance removes every degree-one function and every degree-two function except the ultralocal
+radial sums. For those, by (B3), Var(sum c_l |y_l|^2) is a sum of time-like plaquette covariances plus a local term,
+and the ratio is bounded exactly when the susceptibility chi_t of 7.4 is (same test function family).
+What this does and does not give. It names the step: FP fails through functions of degree one and two that are
+not gauge invariant for SU(2). It holds for compact Wilson U(1) too in degree one (the centre argument), so it
+does not separate SU(2) from compact U(1). It proves nothing in degree four, where the first non-local
+invariants appear (the plaquette quartic Re(y_1 y_2 conj(y_3) conj(y_4)); in perturbation theory: two-gluon
+states). There a perturbative SU(2) box has soft functions (SMALL-BOX), so only an argument that uses the box
+size can exclude them. I have none.
 
 **5.8 Relation to row 936.** Its Propositions Q and RARE-P (read: statements only, `gap-cuttyp-max.md` 268-283, 344-362,
 423-428) bound an odd-sector Poincare constant of a cut law by an even gap plus a rarity input. For f odd under

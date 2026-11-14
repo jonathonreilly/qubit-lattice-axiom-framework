@@ -31,7 +31,11 @@ named hypothesis), GUIDE (a run or heuristic; refutes or guides only), OPEN.
 
 (Steps are appended below as they finish.)
 
-### Step 1. Repo search and sources (done 2026-11-14T14:25Z)
+- 2026-11-14T14:40Z: Steps 1-6 written; Step 7 criteria written; the numeric lock is held by row 968's GUIDE batch
+  (lease to 16:32Z), so the run waits for the lock. The "done" times of the step headings were removed: I had
+  written estimated clock times that were wrong.
+
+### Step 1. Repo search and sources (done)
 
 **Repo search (rule 0a).** `grep -i "rotat|diagonal refl|angular mom|point group|cubic irrep|mapping torus|twisted tor"`
 over `library/open-core.md`: no line. Over FINISH rows: only rows 962 and 963. So no open lemma of this item is owned
@@ -65,7 +69,7 @@ by another row. Prior work that this item must build on, not repeat:
 
 Next: Step 2, item (1), the twisted-trace identity and the sector decomposition.
 
-### Step 2. Item (1): rotating boxes are twisted tori; sector decomposition (done 2026-11-14T14:50Z)
+### Step 2. Item (1): rotating boxes are twisted tori; sector decomposition (done)
 
 **Setting R.** B a periodic box with sides b_2, b_3, b_4 >= 3, Omega_B = SU(2)^(E(B)) with Haar measure,
 H_B = L^2(Omega_B). Input (TM), the lane's items 5-6 (the m = 0 case of (TM-tw), `gap-flux-exercise.md` L115;
@@ -148,7 +152,7 @@ SPLIT-type bound are the Kazhdan constants: kappa = 2 for the centre flips; for 
 Sigma = {tau_i^(+-1)}, kappa = 4 sin^2(pi/b), so (2/kappa) sum q_s = 3 q_tau/sin^2(pi/b), about 3 b^2 q_tau/pi^2; for the
 48 point-group elements of a cube, kappa is a pure number. Next: Step 3, which sectors carry the soft modes.
 
-### Step 3. Item (2): which sectors carry the soft modes; is any sector easier? (done 2026-11-14T15:15Z)
+### Step 3. Item (2): which sectors carry the soft modes; is any sector easier? (done)
 
 Group used: G_full = (centre flips Z_2^3) x| Sym(b^3) on gauge-invariant states, Sym(b^3) = translations Z_b^3
 x| O_h (48 point-group elements: permutations of the three axes and the three inversions). "Trivial sector" = the
@@ -203,10 +207,13 @@ nontrivial sectors are automatically small. There is none:
   the margin over the gap is p^2/(2m), about (2 pi/b)^2/(2m); for the photon it is omega(p_min), about 2 pi/b, and
   e^(-a 2 pi/b) = e^(-2 pi/24) = 0.77 at the seed shape. The p != 0 sectors together carry the one-particle count
   b^3 (m/(2 pi a))^(3/2) e^(-m a), the volume factor of the seed.
-- Lattice angular momentum at p = 0: two particles with relative momentum +- q fill a permutation module of O_h on
-  the orbit of q, which for a generic q is the regular representation: every irreducible rho gets d_rho^2/48 of the
-  two-particle continuum, which starts at 2 sqrt(m^2 + (2 pi/b)^2) in every sector. One particle of spin J != 0 at
-  rest is heavier than 0++ (a spectral fact of the model, not a bound we have).
+- Lattice angular momentum at p = 0: two identical scalars at +- q are labelled by the unordered pair {q, -q};
+  the inversion fixes each pair (and acts as +1 on the symmetric state), so for generic q the pairs fill the regular
+  representation of O_h/{1, -1} (24 elements): every inversion-even irreducible rho gets d_rho^2/24 of the
+  two-particle continuum, which starts at 2 sqrt(m^2 + (2 pi/b)^2); the inversion-odd sectors get none from pairs
+  of one species and start at three particles or at a particle with spin. (Corrected 14:50Z; the first text said
+  d_rho^2/48 in every sector.) One particle of spin J != 0 at rest is heavier than 0++ (a spectral fact of the
+  model, not a bound we have).
 - The twisted tori do have a large free-energy deficit (for the free photon, log Z(a; B; R)/lambda_0^a is about
   (1/256) of the untwisted thermal free energy for a quarter turn R, plus a term of order b/a from the axis, because
   away from the axis the mapping torus is locally the torus of time 4a). But that deficit is what spreads a LARGE
@@ -215,13 +222,19 @@ nontrivial sectors are automatically small. There is none:
 
 **3.4 The zero-quantum-number sector carries the full order-one difficulty (ARGUED from 3.1-3.3 and Lemma R5).**
 (i) It contains the vacuum, the lightest excitation of the confining theory (0++ at rest, which is centre-even,
-p = 0, A_1+), so the gap of T_B on it is the mass gap itself. (ii) In the dilute reading its thermal sum is
-e^(-m a) (one particle at rest) plus the A_1, p = 0 part of the two-particle continuum, about
-(1/48) b^3 (m/(4 pi a))^(3/2) e^(-2 m a) / 2: still a volume factor, now against twice the exponent. GUIDE
-arithmetic, one scalar species, b = 24 a, x = m a: full seed 878 x^1.5 e^(-x) <= 0.3 needs x near 12; p = 0 sector
-e^(-x) + 155 x^1.5 e^(-2x) <= 0.3 needs x near 4.5 (row 962 A4 says about 6); trivial sector of G_full
-e^(-x) + 3.2 x^1.5 e^(-2x) <= 0.3 needs x near 2.5. So the NUMBER is much easier in the trivial sector: the
-one-particle volume count leaves, and the point group divides the two-particle count by 48. (iii) But no consumer
+p = 0, A_1+), so the gap of T_B on it is the mass gap itself. (ii) [CORRECTED 14:50Z; the first text kept only
+one- and two-particle states and gave thresholds 4.5 and 2.5, which are WRONG.] Dilute reading, one free scalar,
+b = 24 a, x = m a, one-particle count s(x) = b^3 x^2 K_2(x)/(2 pi^2 a^3) (exact relativistic one-particle sum;
+878 x^1.5 e^(-x) is its leading term). Zero total momentum costs a Gaussian volume (2 pi N sigma^2)^(3/2) per
+N-particle term, sigma^2 = x b^2/(2 pi a)^2, so S_0 = e^(-x) sum_N s^(N-1)/(N! N^1.5), which grows like
+e^(-x) e^s/s^2.5 once s >> 1: the multi-particle zero-momentum states dominate, not the pairs. Hand values (K_2 from
+K_0, K_1 tables and the asymptotic series): s(7) = 19.0, s(7.5) = 12.6, s(8) = 8.3, s(9) = 3.7, s(12) = 0.26;
+S_0(7) about 106, S_0(7.5) about 0.37, S_0(8) = 0.0094, S_0(9) = 3.2e-4. For the trivial sector of G_full the
+twisted traces with R != 1 are 1 + (sums over a plane, a line or the origin), so S_1 is about S_0/48 when S_0 >> 1.
+Thresholds for 0.3: full seed x near 12.0 (s = 0.26); p = 0 sector x near 7.55; trivial sector x near 7.2. So the
+sector seeds are easier by about 4.5 to 5 units of m a at this shape (they tolerate a gas of about a dozen
+particles, because a zero-momentum constraint costs only a power of s while the gas entropy grows like e^s); the
+point group adds only about 0.35. Step 7 checks these numbers. (iii) But no consumer
 reads it. The engine needs S (Lemma X uses the full trace in both channels), and by Lemma R5 the step from S_1 to S
 costs the deficits q_s, which are the weight of the nontrivial sectors: in the dilute gas almost all of S. And the
 target (GAP) is a gap for tr F^2 correlations at separated points, which needs the lowest energy at EVERY momentum
@@ -232,7 +245,7 @@ For the centre flips that split is useful because the electric flux states are h
 still fails FT-U1 (3.2), FT-FROZEN (3.1) and SMALL-BOX (the small-box 0++ level, of order g^(2/3)/b in Luscher's
 small-volume expansion, RECALLED, is in the trivial sector), as it must. Next: Step 4, diagonal reflection positivity.
 
-### Step 4. Item (3a): reflection positivity across diagonal hyperplanes (done 2026-11-14T15:45Z)
+### Step 4. Item (3a): reflection positivity across diagonal hyperplanes (done)
 
 **4.1 Known results, with sources (READ at 3900bfe8b and in CA-III at 31a47c543775).**
 - Wilson weight on Z^4, diagonal mirrors {x_mu +- x_nu = c}, c an integer: reflection positive. CA-III L108556-108560:
@@ -293,7 +306,7 @@ torus is a straight torus in the rotated frame (n, e_1 - e_2, e_3, e_4); by Lemm
 normal to e_1 or e_2, so the axis transfer operators in directions 1 and 2 do not exist on it. Next: Step 5, the
 diagonal transfer operator and its thermal sum.
 
-### Step 5. Item (3b): the diagonal transfer operator and its thermal sum, against the axis one (done 2026-11-14T16:20Z)
+### Step 5. Item (3b): the diagonal transfer operator and its thermal sum, against the axis one (done)
 
 Notation: n = e_1 + e_2, n' = e_1 - e_2, height h(x) = x_1 + x_2, mirrors theta_c (c integer). Only integer heights
 carry diagonal mirrors: theta_(c + 1/2) does not map Z^4 to itself, so there are no "link" diagonal mirrors.
@@ -307,8 +320,9 @@ Proof. <F, T_n F>_c = nu(theta_c(F) . theta_(c+1)(theta_c F)) = nu(G theta_(c+1)
 heights <= c, inside one closed half of theta_(c+1); RP at theta_(c+1) gives >= 0. Symmetry:
 nu(theta_c(tau_n F) G) = nu(tau_(-n)(theta_c F) G) = nu(theta_c(F) tau_n G), because theta_c tau_n = tau_(-n) theta_c and
 nu is tau_n-invariant. QED. (That T_n is well defined and a contraction is the standard OS step, RECALLED.) A step of
-ONE height is the positive part times a glide reflection of the layer (theta_(c+1) followed by tau_(-e_1)), so it is
-not positive; the positive diagonal operator is the step n, of Euclidean length sqrt 2.
+ONE height is the positive part times a glide reflection of the layer (theta_(c+1) followed by tau_(-e_1)) (ARGUED,
+layer bookkeeping not written), so reflection gives it no positivity; the positive diagonal operator is the step n,
+of Euclidean length sqrt 2.
 
 **Lemma D2 (every adapted diagonal torus is a sheared axis torus; PROVED).** Let
 Gamma = Z (L/2) n (+) Z M n' (+) N Z e_3 (+) N Z e_4, L even, and g = gcd(L/2, M), p = L M/g. Then the (1, 2)-part of
@@ -373,7 +387,7 @@ bridge is the bulk free energy, which is the same for every van Hove family; Lem
 within one frame only.
 Next: Step 6, the fact tests in one table, then Step 7 (GUIDE).
 
-### Step 6. Item (4): fact tests, all forms in one table (done 2026-11-14T16:40Z)
+### Step 6. Item (4): fact tests, all forms in one table (done)
 
 Y = the form fails for the rival, as a sufficient form must; N = the rival passes; "-" = an identity or an engine
 (group-blind), not a seed form. K7 is the mixed-action endpoint of row 708 (no seed at any size); identities and
@@ -398,7 +412,7 @@ small boxes), so none is a wrong target; but the only forms that are easier as n
 no consumer, and the forms with a consumer (the diagonal seed, D3) are the same number in another frame.
 Next: Step 7, GUIDE run in the free scalar field.
 
-### Step 7. GUIDE: sector thermal sums of a free massive scalar (criteria written before the run, 2026-11-14T16:55Z)
+### Step 7. GUIDE: sector thermal sums of a free massive scalar (criteria written before the run, 2026-11-14T14:36Z)
 
 Model: one free real scalar of mass m on the periodic cube of side L = 24 tau (continuum dispersion
 omega_k = sqrt(m^2 + (2 pi k/L)^2), k in Z^3, |k_i| <= 60), Euclidean time tau = 1, x = m tau. Exact Fock traces:
@@ -417,3 +431,68 @@ projected sectors.
 - C3 (claim of 3.4 ii, trivial sector): threshold x_1 in [1.5, 3]. Predicted to FAIL; corrected estimate x_1 near 6.9.
 - C4 (3.3, quarter turn R about an axis): log Tr(V_R e^(-H)) <= 0.02 log Tr e^(-H) at x = 0.25 (the twisted torus
   keeps under 2 percent of the thermal free energy). Fail otherwise.
+
+(Step 7 results are appended below the verdict when the run ends; the run is waiting for the numeric lock.)
+
+### Step 8. Verdict (written while the Step 7 run waits; the GUIDE can change only the numbers of 3.4 (ii))
+
+**Does rotated or diagonal geometry buy anything over the static axis tori? No, not for the seed.**
+
+The reason, in three parts. The seed number is fixed by the measure and the physical size (row 962, 8.1). Every
+rotated or diagonal object of this item is one of three kinds, and none of them changes that number or gives a
+consumer a weaker input:
+1. **A box that rotates in time is a twisted torus** (Lemmas R2, R3). Only the total twist h counts, up to
+   conjugacy. Its trace Tr(V_h T^a) is a signed sum of the sector seeds (Lemma R4), not the thermal sum of a
+   positive operator. The mapping torus of a rotation has at most one positive transfer channel (along the rotation
+   axis), so the engine (Lemmas K, X, E', Theorem SH, Theorem 2O) does not run on it.
+2. **Sector seeds are weaker, and as numbers easier, but no consumer reads them.** S = sum_rho S_rho (Lemma R4).
+   The trivial sector of centre x space group keeps the vacuum, the 0++ at rest, the zero-momentum multi-particle
+   continuum, one toron state per orbit (U(1)), and 10 (Q_8) or 7 (2T) frozen flat vectors (3.1, 3.2). So every
+   sector form still fails U(1), the frozen groups and SMALL-BOX, as it must. In the dilute free-scalar reading at
+   b = 24 a it needs m a near 7.2 in place of 12 (3.4 (ii), corrected; Step 7 checks it). But the engine needs the
+   full trace in both channels, Lemma R5 shows that the step from S_1 back to S costs exactly the weight of the
+   other sectors, and the target (GAP) needs the gap at every momentum and angular momentum. Momentum and lattice
+   angular momentum give no energy margin (3.3); projection removes the logarithm of the number of populated
+   sectors, never an extensive amount.
+3. **Diagonal mirrors give the same thermal sum in another frame.** Diagonal reflection positivity holds on Z^4 and
+   on adapted tori (CA-III L108556-108560, `am1-port.md` Section 3; smallest case checked by hand in 4.2) and fails
+   on every straight torus because the mirror does not separate (4.3, proved). The positive diagonal operator is the
+   step n = e_1 + e_2 (Lemma D1). Adapted diagonal tori are sheared axis tori (Lemma D2: on the doubled square,
+   Z_diag = Z_even - Z_odd). Fully diagonal tori carry a rotated copy of the engine (Proposition D3, conditional on
+   the trace formula), and in infinite volume the diagonal and axis gaps are equivalent within a factor 2 per step
+   (Proposition D4). The diagonal seed is the same thermal pressure at the same physical temperature; to reach the
+   account's limits along straight tori it needs a box-shape independence that CA-III L79975-79977 says is not
+   proved. That is a new obligation, not a saving.
+
+**What would change the verdict.** A consumer for a projected seed: a crossing identity for Tr(T^a P_1) whose
+twisted crossed channels are controlled without the full sum (row 962, 7.4, names the same obstacle for momentum), or
+a lattice statement that the lowest energy at momentum p and angular momentum rho is at least the trivial-sector
+gap. I know neither. Neither is attacked here: both are outside this test item, and row 962 (8.2, ranked item 3) already names the projected engine as a possible lane.
+
+**By-products that stand on their own (PROVED unless marked):**
+- Lemma R5: Lemma SPLIT for any finite symmetry group, with the Kazhdan constant of a generating set; Lemma SPLIT is
+  its case G = Z_2^3 with kappa = 2. For the translations kappa = 4 sin^2(pi/b), so the space-group split loses
+  about 3 b^2/pi^2.
+- Frozen counts: N_flat = 92 (Q_8) and 244 (2T), which reproduce the lane's p = 10/23 and 30/61; the trivial sector of
+  centre x space group keeps 10 and 7 frozen vectors.
+- Lemma D2 and the half-shift identity; Proposition D4 (given LG1 and the OS constructions); Lemma D1.
+- 4.3: the straight-torus non-separation, the reason CA-III gives, written as a proof.
+
+### Step 5b (addendum to item (3)). Which hyperplane reflections exist at all; note for row 967
+
+Row 967 (`gap-pca-opus.md` L224-229) leaves reflection positivity across diagonal hyperplanes to this row, and
+states that the reflection along v = (1, 1, 1, 1) is not a symmetry of Z^4.
+
+**Lemma M (the lattice mirrors of Z^d; PROVED).** A reflection theta(x) = x - 2 ((n.x - c)/|n|^2) n, n a primitive
+integer vector, maps Z^d onto itself iff n = +- e_mu with c in (1/2) Z, or n = +- e_mu +- e_nu (mu != nu) with c in Z.
+Proof. The linear part 1 - 2 n n^T/|n|^2 must be an integer matrix. Its diagonal entries give 2 n_i^2/|n|^2 in
+{0, 1, 2} for every i. If one n_i^2 equals |n|^2, then n = +- e_i. Otherwise every nonzero n_i^2 equals |n|^2/2, so
+exactly two entries are nonzero and equal in absolute value; primitivity gives n = +- e_i +- e_j. The off-diagonal
+entries are then integers. The translation part 2c n/|n|^2 must be integral: c in (1/2) Z for |n|^2 = 1, c in Z for
+|n|^2 = 2. Conversely these maps are signed permutations followed by integer translations. QED
+So the light-cone normal (1, 1, 1, 1) and every normal with three or four nonzero entries are excluded, which
+confirms row 967's statement. Every lattice mirror of Z^4 is a coordinate mirror (site or link) or one of the twelve
+diagonal families (site mirrors only); `am1-port.md` Section 3 lists the same normals ("Allowed normals are e_mu and
+e_mu +- e_lambda") without this proof. The positive transfer steps that reflection positivity can give are
+therefore e_mu (axis) and e_mu +- e_nu (Lemma D1). A step of one height in a diagonal frame gets no positivity from
+reflection (it is a glide times a positive operator, ARGUED in D1). No light-cone step (along (1, 1, 1, 1)) is positive by reflection.

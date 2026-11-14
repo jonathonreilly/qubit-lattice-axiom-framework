@@ -78,15 +78,19 @@ def run(m_grid, xs):
         lr = None
         logz_full = None
         imag_max = 0.0
-        for rmat, size in classes:
-            f = np.zeros((m_grid, m_grid, m_grid), dtype=np.complex128)
+        if x < 1.0:
+            # dense regime: only the theta = 0 traces are used (criterion C4); the p = 0 grid would alias
+            logz_full = sum(np.exp(-n * om).sum() / n for n in range(1, nmax + 1))
+            logz_p0 = float("nan")
+            logz_cls = [(float("nan"), 48)]
+        for rmat, size in (classes if x >= 1.0 else []):
+            acc = np.zeros(m3, dtype=np.float64)
             rn = eye.copy()
             sn = np.zeros((3, 3), dtype=np.int64)
             for n in range(1, nmax + 1):
                 sn = sn + rn          # S_n = 1 + R + ... + R^{n-1}
                 rn = rn @ rmat        # R^n
                 if np.array_equal(rn, eye):
-                    sel = slice(None)
                     ks = kv
                     w = np.exp(-n * om)
                 else:
@@ -97,9 +101,9 @@ def run(m_grid, xs):
                     w = np.exp(-n * om[mask])
                 q = (ks @ sn.T) % m_grid
                 flat = (q[:, 0] * m_grid + q[:, 1]) * m_grid + q[:, 2]
-                a = np.bincount(flat, weights=w, minlength=m3).reshape(m_grid, m_grid, m_grid)
-                f += (m3 / n) * np.fft.ifftn(a)
+                acc += np.bincount(flat, weights=w / n, minlength=m3)
                 rss_check()
+            f = m3 * np.fft.ifftn(acc.reshape(m_grid, m_grid, m_grid))
             lz0, im = log_mean_exp(f)
             imag_max = max(imag_max, im)
             logz_cls.append((lz0, size))
@@ -117,8 +121,11 @@ def run(m_grid, xs):
                 mask = np.all(kv @ rn.T == kv, axis=1)
                 lz_q += np.exp(-n * om[mask]).sum() / n
         lr = lz_q / logz_full
-        mx = max(v for v, _ in logz_cls)
-        lz1 = mx + np.log(sum(s * np.exp(v - mx) for v, s in logz_cls) / 48.0)
+        if x >= 1.0:
+            mx = max(v for v, _ in logz_cls)
+            lz1 = mx + np.log(sum(s * np.exp(v - mx) for v, s in logz_cls) / 48.0)
+        else:
+            lz1 = float("nan")
         s_full = np.expm1(logz_full)
         s0 = np.expm1(logz_p0)
         s1 = np.expm1(lz1)

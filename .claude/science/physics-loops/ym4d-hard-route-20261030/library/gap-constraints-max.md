@@ -97,7 +97,7 @@ do not repeat its arguments. Rows 14-19 are constraints that row 962 does not li
 | 12 | Fact tests | FORCED-M as necessary conditions; the list of rivals is a CHOICE | A relaxation can change the tests in one way only: by removing a rival from the class (free walls remove the periodic Q_8/2T test; a glue-only consumer keeps U(1) and K7) | none |
 | 13 | No computer-assisted proof | FORCED by the owner (GOAL.md) | Not binding today (ARGUED): the seed box holds more than 3 x 10^5 links at ratio 2 and 5 x 10^8 at ratio 24 at beta 2.3, far beyond any enclosure method | none |
 | 14 | The seed is a trace (a ratio of partition functions), not a matrix element or a correlation | FORCED-F (proof) | Only traces cross: W(a, b) = Tr T_b^a = Tr T'_a^b. Vector seeds exist on free walls and give a gap on a cyclic subspace only (row 898 6.2) | boundary-uniform mixing (FT-CEIL) or correlation inequalities (none for SU(2)) |
-| 15 | Integer multiplicities and a simple top eigenvalue | FORCED-F (proof) | Lemma E is Tr X^(2b) <= (Tr X^b)^2. A weighted trace (1/N) Tr loses a factor N per doubling (Lemma PROJ, Section 7.4) | none known |
+| 15 | Integer multiplicities and a simple top eigenvalue | FORCED-F (proof) | Lemma E is Tr X^(2b) <= (Tr X^b)^2. A projected trace is an average over N sheared operators in the crossed channel; the doubling then reads the other sectors at second order and the crossing identity gains an entropy term between -log N and 0 (Section 7.4) | none known |
 | 16 | The vacuum is subtracted exactly (lambda_0^a) | FORCED-M | The energies are extensive; a comparison operator must reproduce lambda_0 to relative accuracy 1/(a |B|) (row 934's (VAC-SUB) is this) | the Doob chain and (LSI-J) are the exact subtraction |
 | 17 | One physical size and one margin for all large cutoffs | FORCED-F | Row 837 2.4 item 1 | none |
 | 18 | Time shorter than the sides | FORCED-F (proof) | Lemma X gives (b - a) kappa(b) <= g(a, b) only for a < b | none; at a = b the lemma is empty |
@@ -136,8 +136,170 @@ Counts are files in the gap lane that mention the pattern; "as idea" means it wa
 | step scaling, small volume | 19 files | KNOWN (row 720; row 859); SMALL-BOX |
 | Higgs handle | 41 files | KNOWN |
 
+## 4. Ideas, group A: geometry, boundaries, time direction, anisotropy, several directions (Step 4)
+
+Format: Buys / Relaxes (allowed?) / Fact tests / First theorem / Worth-doing / Mark. "KNOWN" refers to Section 3.
+All chances are my judgement (ARGUED). No idea below supplies the order-one number of 1.5; I say so once here.
+
+**A1. An engine without axis exchange (Theorem 2O, Section 7).**
+- Buys: a seed-to-gap theorem for every model with positive transfer operators in two directions, with no symmetry
+  between them. It is the consumer that A2, A3, B8 lack (row 858 A2 names it as the cost of anisotropy).
+- Relaxes: row 2 of the audit, for the engine only. Allowed as mathematics; the account stays isotropic.
+- Fact tests: the engine is group-blind. Its hypothesis is a pair of seeds, one per orientation; U(1) fails both
+  (the photon in each channel), frozen groups fail both (degenerate flat vectors), SMALL-BOX binds both sides.
+- First theorem: Theorem 2O in two-direction form, PROVED in 7.1-7.3 (threshold 1/1400 on the larger log-sum).
+- Worth-doing: moves no item of the (SEED-FP) chain by itself. It moves the model arena: any anisotropic or
+  time-decimated seed now has a consumer. NEW as a theorem; REFRAMING for the seed.
+
+**A2. The solvable line beta_s = 0 as the start of a transport, at the target beta_t.** KNOWN as idea 32 of row 859.
+- Buys: at beta_s = 0 the model is solved for every beta_t (independent link chains in time; in the crossed channel a
+  3D Polyakov-loop spin model with link weight sum_j (c_j(beta_t)/c_0)^a chi_j chi_j). GUIDE arithmetic (mine): the
+  lowest gauge-invariant excitation is one plaquette, rate 4 log(I_1/I_2)(beta_t), about 2.9 per step at beta_t = 2.3,
+  against 1.22 at the isotropic point (row 706); the slab count 3 (24a)^3 e^(-2.94 a) is below 3/10 from a = 6.
+  So the seed holds at the START of the path, at the same beta_t, on a box smaller than the target box.
+- Relaxes: row 2 (needs A1 as engine) and row 8 (a path in beta_s, not in the common beta).
+- Fact tests: compact U(1) is solved and confined on the same line (rate 4 log(I_0/I_1)); it must lose the seed on the
+  path at its Coulomb transition, so a transport inequality along beta_s must fail there: the same automatic test as
+  row 708's path. Frozen groups fail at the start (beta_t = infinity: all character coefficients equal, rate 0).
+- First theorem: the exact solution on the line with its thermal sum (routine), and the evenness Z(beta_t, beta_s) =
+  Z(beta_t, -beta_s) (flip one space link on every time slice), so the first beta_s-derivative of every seed
+  quantity vanishes at the start (ARGUED here in one line; the same symmetry in the vacuum and on the torus).
+- Worth-doing: no. The transport step is the open (THERM-DI)/(VIR-log) inequality with the (VAC-SUB) stop (rows 905,
+  913, 934); the path is new, the missing inequality is not. And an anisotropic seed has no route to (SEED-FP).
+  REFRAMING (a new path for a known transport).
+
+**A3. The Hamiltonian (time-continuum) form.** KNOWN (idea 32, 37 of row 859). With A1 it has an engine. Tools:
+Schrodinger operator on a product of 3-spheres. No order-one method (row 957's GUIDE: the curvature absorber fails
+at typical fields). Not on the chain. REFRAMING. Not worth a lane.
+
+**A4. Sheared tori: the trace with a translation, Tr(T_B^a tau_v).** NEW to the lane (Section 3).
+- Buys: momentum-resolved thermal sums as partition functions of tori Z^4/Lambda, Lambda generated by (a, v) and the
+  box periods. Exact relabelling (Lemma SHIFT, 7.4): in two directions, with d = gcd(b, v), the torus (a, b; shift v)
+  is the torus (d, ab/d; shift v'). So a unit shift turns the pair (a, b) into one helix: time 1 on a box of side ab.
+- Relaxes: row 1 (the family of tori), inside the engine's class: each sheared torus has positive transfer operators.
+- Fact tests: identities, group-blind. SMALL-BOX: the shortest loops of the sheared torus are unchanged (lengths b
+  and about a), so a helix carries no large-box information.
+- First theorem: Lemma SHIFT and the projected doubling inequality of 7.4 (PROVED).
+- Worth-doing: weak. A zero-momentum seed would need m a of about 6 in place of 12 (the one-particle count goes, the
+  two-particle count stays; GUIDE arithmetic). But 7.4 shows the projected engine reads the other momentum sectors at
+  second order and needs the shear deficits, which only the full sum bounds. It changes a constant, not the crux.
+  REFRAMING.
+
+**A5. Orientation-reversing gluing (Klein bottle in a time-space plane).** KNOWN as idea 24 of row 876.
+- Buys: K(a, b) := Tr(T_b^a R), R the reflection of one space direction, equals a matrix element
+  <C| (T'_{2a})^(b/2) |C> of the crossed operator between two crosscap vectors that do not depend on b (ARGUED: cut
+  the Klein bottle along the two fixed lines of R). So K is log-convex in b and has VECTOR form in one channel:
+  only reflection-even states with zero momentum in that direction are counted.
+- Fact tests: FAILS as a selective form. R reverses U(1) flux, so the U(1) flux tower of that direction drops out of
+  the trace (row 876 idea 24), while the Z_2 flux of SU(2) stays: the gluing helps the rival. Photons stay.
+- Worth-doing: no. REFRAMING.
+
+**A6. Diagonal reflections and diagonal transfer operators.** NEW as an engine ingredient.
+- Buys: the reflection x_1 <-> x_2 is a reflection-positive symmetry of the Wilson weight (ARGUED: a plaquette cut by
+  the diagonal is (1/2) Re tr(A theta(A)^*) with A the product of its two links on one side, a sum of terms
+  F theta(F-bar); the other plaquettes lie on one closed side). So tori periodic along (1,1) and (1,-1) have a positive
+  transfer operator, and the torus of periods (b, b), (b, -b) is at once a diagonal box and the double of the square
+  b x b. This could fill the empty case a = b of Lemma X (audit row 18).
+- Fact tests: group-blind. Gain bounded by the ceiling 1 on thresholds (audit row 6).
+- Worth-doing: no; thresholds are not the obstacle. REFRAMING.
+
+**A7. Corner (wedge) transfer operators: two transfer directions at once.** NEW to the lane; dead.
+A quadrant operator needs free walls in two directions ((JOIN-TH) again), and its spectrum is the entanglement
+spectrum of a half-space, not the mass: in solvable 2D models its level spacing is of order 1/log(xi) (RECALLED, not
+read). No seed can be read from it. Not worth a lane.
+
+**A8. Free walls in some space directions only.** VARIANT of row 898 C1. Free walls in direction i make every twist
+in a plane containing i a gauge transformation (FW1's argument, check 902), so the sector group shrinks from Z_2^3 to
+Z_2^2 or Z_2. The engine cannot enlarge a free direction (row 910: doubling is not structural). Dead at (JOIN-TH).
+
+**A9. A positively curved slice (S^3 in place of the 3-torus).** NEW as geometry; dead for three forced reasons.
+No exchange of axes and no trace in the crossed channel (audit rows 14, 2); the small-radius gap 2/R is geometric
+and is the same for Maxwell theory, so it fails FT-U1 as a mechanism and SMALL-BOX as a seed; no account.
+
+**A10. A box whose shape varies in time.** Row 960 (running on worker 2). Named, not attacked (rule 0a).
+
+## 5. Ideas, group B: twists, sectors, group, beta with geometry, place in the RG, others (Step 5)
+
+**B1. Graded or projected seeds (momentum, cubic irreps, parity, centre).** The direct channel is fine (an invariant
+subspace); the crossed channel is an average over sheared or twisted operators (7.4). For the centre grading this is
+the lane's Theorem R and Proposition CL (the light group of four). For momentum it is A4. REFRAMING.
+
+**B2. The twist-summed (SO(3)-type) torus as the engine's model.** KNOWN (row 858 C3; row 876 ideas 35, G11).
+W_Sigma := (1/8) sum over the 64 twists of Z^tw is exchange-symmetric and is a trace of one positive operator, the
+direct sum over the 8 magnetic classes of the even parts (ARGUED from `gap-flux-exercise.md` 3.0-3.1). Its seed is
+FALSE in the confined phase: the 8 magnetic classes have top eigenvalues within exp(-area law) of each other, so its
+thermal sum is at least 7 - o(1). So the choice "periodic, not twist-summed" is forced by the phase: the periodic
+torus has heavy electric sectors, the summed torus has light magnetic ones. A summed engine needs the multiplet
+consumer (MULTIPLET), which nobody attacked. Fact tests: frozen Q_8, 2T would PASS a summed seed at large beta
+(magnetic classes heavy, even sector gapped), correctly: they are gapped on centre-blind functions. So the summed
+engine with a multiplet is the one consumer whose rival list is U(1) and K7 only, on periodic tori. REFRAMING of the
+flux half; the glue half stays.
+
+**B3. The place of the seed in the flow.** The number is level-free (1.2). Known placements: every cutoff (as
+stated); one cutoff with (UNIV-K); after exact steps with (EXIT). A small physical box at first passage is perturbative
+but fails the seed (SMALL-BOX; row 720 read van Baal's numbers). No new placement exists that is not one of these
+(ARGUED: any exact step keeps Z). REFRAMING.
+
+**B4. beta together with geometry.** (i) The cutoff step at fixed physical size is (UNIV-K) (rows 916, 924; OPEN).
+(ii) A fixed lattice with beta falling from infinity is a transport from the weak side; its start has the free value
+of 1.5 (9.1e3 against 0.26), so no smallness is transported, and a monotonicity of S in beta would point the wrong
+way. Dead. (iii) A2 is the one path whose start is solved at the target beta_t.
+
+**B5. Inhomogeneous couplings: a superlattice of strong-coupling walls.** Lemma WALL0 (PROVED, one line): if every
+plaquette meeting a wall layer has coupling 0, the links of the layer are Haar-distributed and Z factorizes into
+free-wall blocks. Turning the walls on is a block expansion that needs exterior-uniform control of a block larger
+than the correlation length: FT-CEIL (W2, row 836). The averaged door (check 852) has no supplier. KNOWN family; dead
+in its uniform form.
+
+**B6. Operator comparison along the time step (Golden-Thompson, Araki-Lieb-Thirring).** For a weight whose time
+kernel is a semigroup (heat kernel in time), refining the time step lowers the trace and the top eigenvalue together
+(log-majorization, RECALLED). The seed is their ratio. Dead by audit row 16 ((VAC-SUB)).
+
+**B7. Time decimation as the flow (T -> T^2).** KNOWN family. It keeps (TM) in every direction and the exchange of
+space axes, and loses the time-space exchange; Theorem 2O is its engine. The seed says: the kernel of T^a/lambda_0^a
+is within s of rank one in trace norm. REFRAMING.
+
+**B8. The crux read in the crossed channel.** By Lemma X the count of the glue half is b kappa(a): the excess of the
+ground energy of the slab operator of thickness a over a times the bulk rate. No count appears; one difference of
+two top eigenvalues does. KNOWN as (CAS), (SEED-Delta) (row 931 form 18). A log-Sobolev form for the crossed slab
+law is not a different statement: the trace of one channel is the vacuum of the other. REFRAMING.
+
+**B9. Other groups.** SO(3) is B2. SU(N), N >= 3, and other lattices are outside the account (audit rows 10, 19).
+
+## 6. Fact tests, all ideas in one table (Step 6)
+
+Y = the form fails for the rival, as it must; N = the rival passes (the form is not selective); - = not applicable
+(an identity or an engine, group-blind). SMALL = respects SMALL-BOX. CEIL = uses no statement a ceiling refutes.
+
+| Idea | U(1) | Q_8, 2T | K7 | SMALL | CEIL | Mark | Verdict |
+|---|---|---|---|---|---|---|---|
+| A1 Theorem 2O | - (seeds: Y) | - (seeds: Y) | - | Y | Y | NEW theorem, REFRAMING | proved here; a tool |
+| A2 beta_s = 0 path | Y on the path | Y at the start | not tested | Y | Y | REFRAMING (KNOWN path idea) | stops at (VAC-SUB) |
+| A3 Hamiltonian form | Y | Y | - | Y | Y | REFRAMING | no tool |
+| A4 sheared tori | - | - | - | Y | Y | NEW identities, REFRAMING | changes a constant |
+| A5 Klein gluing | N (flux tower drops) | Y | - | Y | Y | REFRAMING | not selective |
+| A6 diagonal reflections | - | - | - | Y | Y | REFRAMING | thresholds only |
+| A7 corner operators | - | - | - | - | - | NEW, dead | wrong spectrum |
+| A8 partial free walls | Y (seed) | removed in part | Y | Y | Y | VARIANT | (JOIN-TH) |
+| A9 S^3 slices | N (2/R is Maxwell's too) | - | - | N | Y | NEW, dead | no engine |
+| B1 projected seeds | - | - | - | Y | Y | REFRAMING | 7.4 |
+| B2 twist-summed engine | Y | N by design (correct) | Y | Y | Y | REFRAMING (KNOWN) | needs (MULTIPLET) |
+| B3 place in the flow | - | - | - | Y | Y | REFRAMING | none new |
+| B4 beta with geometry | - | - | - | N for (ii) | Y | REFRAMING | (UNIV-K) or dead |
+| B5 strong walls | Y | Y | Y | Y | N in uniform form | KNOWN family | ceilings |
+| B6 operator comparison | - | - | - | - | - | dead | (VAC-SUB) |
+| B7 time decimation | - | - | - | Y | Y | REFRAMING | none new |
+| B8 crossed reading | Y | Y | Y | Y | Y | REFRAMING (KNOWN) | none new |
+
+**Finding of Steps 4-6 (the answer to the row's main question).** No relaxation of the constraint system is a NEW
+INPUT for the seed. Each one is of one of three kinds: (i) an engine change, which trades the seed for another
+statement about the same measure at the same scale (A1, A4, A6, B1, B2); (ii) a change of measure with no node back to
+the account (A2, A3, A8, A9, B5); (iii) a reading of the same number (A5, B3, B4, B6, B7, B8). The reason is in the
+audit: the number of 1.5 is fixed by the measure and the scale, and the measure is forced by the account.
+
 ## Status log
 
 - 2026-11-14T12:52Z: file created with the plan. Nothing proved yet.
 - 2026-11-14T13:05Z: Step 1 done (Section 1). Next: Step 2, the constraint audit, with greps for each idea family (Step 3 merged into it).
-- 2026-11-14T13:20Z: Steps 2 and 3 done (Sections 2, 3). Next: Steps 4-6, the ideas with their fact tests.
+- 2026-11-14T13:08Z: Steps 2 and 3 done (Sections 2, 3). Next: Steps 4-6, the ideas with their fact tests.
+- 2026-11-14T13:11Z: Steps 4-6 done (Sections 4, 5, 6); audit row 15 corrected. Next: Step 7, Theorem 2O and Section 7.4.

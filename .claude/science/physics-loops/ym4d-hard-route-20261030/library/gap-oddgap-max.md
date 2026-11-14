@@ -35,7 +35,11 @@ carries no proof weight), OPEN.
 ## Log
 
 - 2026-11-14T04:17Z: file created; reading inputs (step 1).
-- 2026-11-14T05:05Z: step 1 written (Section 1). Next: Section 2, the exact Gaussian U(1) values.
+- 2026-11-14T04:38Z: step 1 written (Section 1).
+- 2026-11-14T04:41Z: step 2 written (Section 2, exact Gaussian U(1) values; one GUIDE quadrature run).
+- 2026-11-14T04:42Z: steps 3 and 4 written (Sections 3 and 4: frozen groups, verdict of Step A).
+- 2026-11-14T04:45Z: steps 5 to 8 written (Sections 5 to 7: Theorem R, Lemma CUT, RARE, result).
+- 2026-11-14T04:50Z: self-check pass; five wording corrections applied (listed in Section 7).
 
 ## 1. Inputs read, duplicate check, notation (step 1; READ = read at the pinned commit, not re-proved)
 
@@ -224,8 +228,8 @@ What mu_odd is (PROVED structure, ARGUED asymptotics). Fourier modes e^(i(n phi 
 iff n' is odd; n + n' is conserved. Sector n + n' = 0 (functions of psi, odd under psi -> psi + pi)
 is a double-well problem: the wells are psi = 0 and psi = pi, the barrier weight is y; its bottom
 is mu_0 = 16 C (1 + o(1)) = 2 sqrt(2 pi) tau^(-3/2) y (1 + o(1)) (C the conductance of one
-barrier). In the sectors n + n' = +-1 the form is 2|f'|^2 + (1/2)|f|^2, so the bottom is at least
-1/2. So mu_odd = mu_0 once mu_0 < 1/2, and R_t itself is the slow mode: step (a) is nearly an
+barrier). In the sector n + n' = M the form is 2|f'|^2 + (M^2/2)|f|^2 (coordinates c = (phi + phi')/2 and
+psi), so the bottom is at least 1/2 for every M != 0. So mu_odd = mu_0 once mu_0 < 1/2, and R_t itself is the slow mode: step (a) is nearly an
 equality. For large tau, mu_odd -> 1 (the mode cos(Phi_1(v))).
 
 ### 2.6 Values (hand bounds PROVED from G2-G4; decimals in the GUIDE column are a double-precision
@@ -259,7 +263,12 @@ all U_p = 1, and e^(-beta #plaq) Z^tw -> the number with U_p = -1 on the sheet a
 needs -1 in G). Fix a maximal tree: each such configuration is given by its values on the tree
 (|G|^(#sites - 1) choices in both cases) and by the holonomies of the four generators at the base
 point. Those commute, except that the (0,1) pair encloses one sheet plaquette, so its commutator
-is -1. QED
+is -1. Conversely every such quadruple arises from exactly one configuration with the given tree
+values (the presentation of pi_1 of the torus by four generators and six commutator relations,
+one of them twisted by the central element; all plaquette values are central, so the products
+over plaquettes of a plane are order-independent). QED
+(For the checker: this bijection is the one step of F1 that I state without writing out the
+comb-tree bookkeeping.)
 
 Counting. A commuting tuple that is not central lies in exactly one maximal abelian subgroup
 (two of them meet in the centre). An anticommuting pair (a, b) has Tr a = Tr b = 0, so both have
@@ -351,3 +360,248 @@ At the seed box lambda_0 <= 60 (if q >= 1/4) and so eps <= 0.024 at p_* = 2e-4.
    coordinate with a double well; the frozen groups have no dynamics between holonomy sectors.
    Both make the odd Poincare constant collapse. An SU(2) proof of the gap factor has to exclude
    both: no soft collective odd coordinate, and no frozen odd sector label.
+
+## 5. STEP B, part 1: the criterion without (FR) (steps 5 and 6)
+
+Step A says: attack the gap factor, and do not carry (FR) as a separate goal. This section proves
+that the odd gap, with one local covariance bound, gives the flux half with no (FR) input.
+
+### 5.1 Definitions
+
+For 1 <= s <= a - 1: w_e^(s) := E_s(u, v) E_(a-s)(u, v)/Z_e, Z_e = Tr(T^a P_e) (the even law of the
+slices at times 0 and s; it is Theta-invariant, and w_e^(a/2) = w_e). V_s := E_(w_e^(s))[R_s^2], so
+V_(a/2) = p/(1 - p) and V_s < 1. lambda_s := the odd Poincare constant of w_e^(s), defined as in (I3).
+mix_s(u, v) := the mixture of the thickness-s slab laws mu_(u,v), mu_(u,Jv) with weights
+(1 +- R_s)/2; F := (f_b), the vector of the first-layer forces of the 3|B| links of u.
+Gamma_s(u, v) := the largest eigenvalue of the covariance matrix of F under mix_s(u, v);
+Gamma_s^* := its supremum over (u, v); W_s(u, v) := the largest eigenvalue of the within-sector
+part ((1 + R_s)/2) Cov_(mu_(u,v))(F) + ((1 - R_s)/2) Cov_(mu_(u,Jv))(F).
+
+### 5.2 Theorem R (PROVED; an inequality for every group with (I1)-(I5), Model G included)
+
+For 2 <= s <= a - 1:
+
+  (R1) E_(w_e^(s))[ Var_(mix_s)(M_1) ] = V_(s-1) - V_s. In particular V_s <= V_(s-1).
+  (R2) V_s <= (2 beta^2/lambda_s) E_(w_e^(s))[ Gamma_s Var_(mix_s)(M_1) ]
+           <= theta_s (V_(s-1) - V_s),   theta_s := 2 beta^2 Gamma_s^*/lambda_s.
+  (R3) V_s <= (theta_s/(1 + theta_s)) V_(s-1), hence
+       **p/(1 - p) <= prod over s = 2..a/2 of theta_s/(1 + theta_s).**
+  (R4) Cov_(mix_s)(F) = (within-sector part) + (grad_u R_s)(grad_u R_s)^T/(beta^2 (1 - R_s^2)), so
+       Gamma_s(u, v) >= (1 - R_s^2) |grad_u log rho_s|^2/(4 beta^2), and
+       |grad_u R_s|^2 <= beta^2 W_s Var(M_1) (1 - R_s^2)/E_(mix_s)[1 - M_1^2].
+
+In Model G read beta f_b as the score of the first-layer Villain weight (the u_b-derivative of
+its logarithm); beta^2 Gamma_s is then the covariance norm of the score, and nothing else changes.
+
+Proof. (R1). Under mix_s(u, v) the slice w_1 has density A_1(u, w_1) E_(s-1)(w_1, v)/E_s(u, v)
+(add the two components; the integral of A_1(u, .) E_(s-1)(., v) is E_s(u, v)). M_1 =
+R_(s-1)(w_1, v) by (I5), and E_mix[M_1] = R_s(u, v). For any g(w_1, v):
+E_(w_e^(s)) E_mix[g] = Z_e^(-1) times the integral of E_(a-s)(u, v) A_1(u, w_1) E_(s-1)(w_1, v) g.
+Integrate u first: the integral of E_(a-s)(v, u) A_1(u, w_1) du is E_(a-s+1)(v, w_1) (P_e commutes
+with T). So E_(w_e^(s)) E_mix[g] = E_(w_e^(s-1))[g]. With g = R_(s-1)^2 this is V_(s-1); subtract
+E_(w_e^(s))[R_s^2] = V_s.
+(R2). R_s is odd and w_e^(s) is Theta-invariant, so Var(R_s) = V_s. R_s and w_e^(s) are symmetric
+under (u, v) -> (v, u), so E|grad R_s|^2 = 2 E|grad_u R_s|^2. By (I5) and the tower property
+(f_b is first-layer measurable), grad_b R_s = beta Cov_mix(f_b, sigma) = beta Cov_mix(f_b, M_1).
+For a unit vector z, Cov(z.F, M_1)^2 <= Var(z.F) Var(M_1) <= Gamma_s Var(M_1); the supremum over z
+is the sum over b of |Cov(f_b, M_1)|^2. So |grad_u R_s|^2 <= beta^2 Gamma_s Var_mix(M_1). Apply
+the definition of lambda_s, then (R1).
+(R3). Solve (R2) for V_s; iterate from s = a/2 down to s = 2; V_1 <= 1.
+(R4). The covariance of a two-component mixture with weights pi_+- = (1 +- R_s)/2 and means m_+-
+is the within part plus pi_+ pi_- (m_+ - m_-)(m_+ - m_-)^T. Check 927 Section 3 gives
+grad_u R_s = beta (1 - R_s^2)(m_+ - m_-)/2. Substitute; use grad log rho = -2 grad R/(1 - R^2).
+For the last bound insert the splitting of Gamma_s into the Cauchy-Schwarz step and solve for
+|grad_u R_s|^2, using 1 - R_s^2 - Var(M_1) = E_mix[1 - M_1^2]. QED
+
+### 5.3 Corollary R5 (CONDITIONAL on two named inputs)
+
+(ODD-GAP)_s: lambda_s >= lambda_0, and (FORCE-COV)_s: Gamma_s^* <= Gamma_0, for 2 <= s <= a/2. Then
+p <= (theta/(1 + theta))^(a/2 - 1) with theta = 2 beta^2 Gamma_0/lambda_0.
+Seed box (a/2 - 1 = 4, beta = 2.3, 2 beta^2 = 10.58): p <= 1e-4 if theta <= 1/9, that is
+lambda_0 >= 95.3 Gamma_0; p <= 2e-4 if theta <= 0.135, that is lambda_0 >= 78.4 Gamma_0. With the
+ceiling lambda_0 <= 60 of (I4) this asks Gamma_0 <= 0.63 or 0.76. No (FR) input, no smallness of R.
+
+What is new against row 922 Section 5.2: that row bounded Cov(f_b, sigma) by Var(sigma) =
+1 - R^2, which is not small. Here the tower property replaces sigma by M_1, and (R1) turns the
+mean of Var(M_1) into the difference V_(s-1) - V_s. So the flux weight contracts by
+theta/(1 + theta) per time step.
+
+Consistency check in Model G at large tau (ARGUED, leading order): there V_s/V_(s-1) -> e^(-2 E_1);
+the free step has beta^2 Gamma = beta in the toron direction, and R_s lies in the sector of
+functions of psi, where the odd constant is 2 kappa. So theta/(1 + theta) = 1/(1 + kappa/beta)
+against e^(-kappa/beta) (2 E_1 = kappa/beta): the bound holds and is sharp to first order.
+
+### 5.4 Fact tests of the two inputs
+
+- (ODD-GAP), U(1): FAILS at every size and coupling (Proposition G4(i)); at the seed box
+  theta_s >= 2 beta^2 Gamma_s^*/8.2e-9. Frozen groups: fails in the heat-bath form (F2).
+- (FORCE-COV) in its sup form, U(1): FAILS too, and is not volume-free (PROVED): at psi = pi/2
+  (the barrier top) R_s = 0 and X' >= 0.99 pi/(2 tau_s), tau_s = s kappa/(2 beta), so by (R4)
+  Gamma_s^* >= 0.98 pi^2 N/(4 s^2 L_1). At the seed box this is 48/s^2, and it grows with N. The
+  pair at the barrier top has w_e-probability of order y; the supremum sees it.
+- (FORCE-COV) in its sup form, SU(2): by (R4) it implies the pointwise response bound
+  |grad_u log rho_s|^2 <= 4 beta^2 Gamma_0/(1 - R_s^2) for every boundary pair. At central flat
+  walls the response vanishes (check 927 Section 8.4(3)), but nearby non-central pairs of a thin
+  slab are expected to behave like the toron (ARGUED: the flat-wall slab orders at thickness 1 to 4
+  at beta 2.3, row 899 GUIDE). So the sup form is expected to be false as a volume-free input. This
+  is the same wall as W1 (background-uniform bounds), met from another side.
+- Consequence. The usable form of (R2) is the averaged one: with
+  Gamma_s^eff := E[Gamma_s Var(M_1)]/E[Var(M_1)] (the mean of Gamma_s weighted by Var(M_1)),
+  (R3) holds with Gamma_s^eff in place of Gamma_s^* (PROVED: this is (R2)'s first line). In Model G
+  the weighted mean sits on the barrier top, where Gamma_s is large: the photon breaks this input
+  through the same double well. For SU(2), Gamma_s^eff <= Gamma_0 is OPEN; it is an L^2 statement
+  on the force covariance in pairs where the first layer carries sector information.
+- Ceilings. Nothing in Theorem R is a Dobrushin or a background-uniform bound. Its sup inputs are
+  background-uniform and fail (above); its averaged inputs are not touched by 2/3, 0.775 or
+  4 G_3 = 1.0109 (the last is GUIDE in its source; the hand threshold is beta > 4/3, check 927).
+
+## 6. STEP B, part 2: the attack on the odd gap for SU(2) (steps 6 and 7)
+
+Target: (ODD-GAP)_s with lambda_0 of order L_1 for SU(2) Wilson at beta 2.3 to 2.6, seed geometry.
+
+### 6.1 What (ODD-GAP) forces (PROVED): no long-range order of the winding lines
+
+For coefficients a_l on the N parallel winding lines of slice v, F = sum a_l chi_l(v) is odd, the
+lines are link-disjoint, and |grad_b chi_l|^2 = 1 - chi_l^2 (I4). So E|grad F|^2 =
+L_1 (1 - q) sum a_l^2 and Var(F) = sum a_l a_l' E[chi_l chi_l']. Hence the covariance operator of
+(chi_l) on l^2 of the transverse lattice has norm at most L_1 (1 - q)/lambda_s; with a_l = 1:
+
+  chi_P := N^(-1) sum over (l, l') of E_(w_e^(s))[chi_l chi_l'] <= L_1 (1 - q)/lambda_s.
+
+(ODD-GAP) with lambda_0 = c L_1 forces chi_P <= (1 - q)/c: a bounded susceptibility of the
+spatial winding lines of length L_1, uniformly in the cross-section.
+
+**The step where the photon breaks it (PROVED in Model G).** A line phase is theta_l = Phi_1 +
+(photon part), the photon parts are centred Gaussian with one finite variance v_L, and Phi_1(v) is
+uniform. So E[cos theta_l cos theta_l'] = (1/2) exp(-Var(difference of the photon parts)/2) >=
+(1/2) e^(-2 v_L) for every pair: long-range order, chi_P >= (N/2) e^(-2 v_L), unbounded in N. The
+winding lines of U(1) are locked to one collective phase. An SU(2) proof of (ODD-GAP) must contain
+a step that fails for a law with locked winding lines.
+
+So the gap factor at strength c L_1 is a confinement statement (disorder of the spatial winding
+lines of length L_1). It is not weaker than the flux half in kind; by Theorem R it is sufficient
+for it, given the covariance input.
+
+### 6.2 Lemma CUT (cut tensorization; PROVED)
+
+For k = 1..L_1 let cut_k be the N direction-1 links of slice v at x_1 = k, env_k all other links of
+the two slices, nu_k(. | env_k) the conditional law of cut_k under w_e^(s), J_k the flip of cut_k.
+Then nu_k is J_k-invariant, and every gauge-invariant odd F has F o J_k = -F. Let gamma_k(env_k)
+be the odd Poincare constant of nu_k(. | env_k) on (S^3)^N for the simultaneous flip. For odd F:
+
+  E|grad_v F|^2 >= E[ F^2 G ],   G(omega) := sum over k of gamma_k(env_k(omega)),
+
+so lambda_s >= ess inf G >= L_1 inf gamma_k.
+
+Proof. J_k v is J v followed by the gauge transformation -1 on the sites between the two cuts;
+E_s and E_(a-s) are gauge invariant and even, so the density is J_k-invariant, and so is each
+conditional law. F(., env_k) is odd, hence nu_k-centred: the integral of sum_(b in cut_k)
+|grad_b F|^2 d nu_k is at least gamma_k E_(nu_k)[F^2]. Integrate over env_k (gamma_k is
+env_k-measurable) and sum over the disjoint cuts. QED
+
+Fact tests of CUT.
+- beta = 0 (PROVED): nu_k is Haar on (S^3)^N; an odd function has a half-integer spin on some link
+  of the cut in every Peter-Weyl component, so gamma_k = 3 and lambda >= 3 L_1: ODD-0's bound.
+- Model G, at s = a/2 (PROVED): **for every environment** gamma_k(env_k) <= mu_0(tau)/(2N). The uniform shift
+  of the cut links by an angle s is a closed cochain: it moves Phi_1(v) by s and leaves the
+  coexact part of v unchanged. So, given any env_k, the mean cut angle is independent of the other
+  cut coordinates and has the double-well law of psi; a function f of it has
+  |grad_cut f|^2 = f'^2/N. So G <= kappa mu_0/2 everywhere, against the true lambda_odd =
+  kappa mu_0: CUT is sharp up to the factor 2 there.
+- **The exact step where the photon breaks the SU(2) argument.** In U(1) the rotation of a whole
+  cut is an exact symmetry of the spatial action for every environment (the continuous 1-form
+  symmetry), and J_k lies on that orbit. So no environment is good. In SU(2), the uniform rotation
+  xi_x -> xi_x e^(sX) of the cut changes the plaquette xi_x g xi_y^(-1) h into
+  xi_x e^(sX) g e^(-sX) xi_y^(-1) h (g the transverse link of the next layer). It is a symmetry
+  only if every such g commutes with e^(sX). For an environment whose transverse links have no
+  common axis, the only uniform cut rotations that preserve the spatial action are +-1 (PROVED:
+  an element commuting with two non-commuting elements of SU(2) is central). So the orbit that
+  carries the U(1) failure does not exist for a generic SU(2) environment: this is the property
+  U(1) lacks. (Not proved: that no other, non-uniform, continuous family through J_k preserves
+  the conditional law; the nonlocal kernel factor is not analysed.)
+- Why that property is not yet a proof. A discrete stabilizer does not bound gamma_k below: the
+  frozen groups have one and have gap 0 (F2). And the supremum over environments fails for SU(2)
+  as well (ARGUED): for the flat environment the cut is a two-dimensional O(4)-type ferromagnet at
+  coupling beta with a collective rotor mode, and at beta 2.3 its correlation length is comparable
+  to the 20 x 20 cross-section (recalled, GUIDE), so gamma_k(flat) is of order 1/N. So
+  inf gamma_k is not the input; the typical environment is.
+
+### 6.3 Proposition RARE (PROVED implication): typical environments and a weak group-blind input
+
+Suppose (i) G >= g_0 outside a set Bad with w_e^(s)(Bad) <= delta < 1/2, and (ii) w_e^(s) satisfies a
+log-Sobolev inequality Ent(F^2) <= (2/alpha) E|grad F|^2 on gauge-invariant functions. Then
+
+  lambda_s >= (1 - ln 2/ln(1/delta)) / (1/g_0 + 2/(alpha ln(1/delta))).
+
+Proof. For odd F, by CUT, E|grad F|^2 >= g_0 E[F^2 1_(Bad^c)]. Let nu = F^2 w_e^(s)/E[F^2]. The
+entropy inequality nu(Bad) ln(1/w_e^(s)(Bad)) <= H(nu | w_e^(s)) + ln 2 and H = Ent(F^2)/E[F^2]
+give E[F^2 1_Bad] <= ((2/alpha) E|grad F|^2 + ln 2 E[F^2])/ln(1/delta). Add the two bounds. QED
+
+Reading. If bad environments are rare at the rate delta = e^(-cN), the group-blind constant alpha
+is needed only at the size g_0/(cN), of order L_1/N: the toron scale of U(1), not an order-one
+gap. Fact tests: for U(1), (i) fails for every environment (Section 6.2); for the frozen groups
+the heat-bath analogue of gamma_k is 0. For SU(2) both inputs are OPEN:
+
+  **(CUT-TYP)_s.** There are g_0 of order L_1 and c > 0 with
+  w_e^(s)( sum_k gamma_k(env_k) < g_0 ) <= e^(-cN), for 2 <= s <= a/2, at beta 2.3 to 2.6.
+  **(LSI-weak)_s.** alpha >= C L_1/N for w_e^(s).
+
+### 6.4 Where the attack stops
+
+(CUT-TYP) asks for the odd Poincare constant of N = 400 SU(2) links on a two-dimensional array, in
+a quenched typical environment, at beta 2.3: a chiral-type model with a random SO(4) connection
+from the neighbouring transverse links, times the nonlocal even-kernel factor. Three ways tried:
+
+1. Single-site Dobrushin or Bakry-Emery for nu_k: each cut link has 4 spatial neighbours at
+   coupling beta; the criteria need beta well below 1 (the ceilings 2/3 and 0.775 are of this
+   type). Fails at 2.3. Group-blind, so it cannot be the step anyway.
+2. Paths from xi to -xi (canonical paths): the uniform rotation costs e^(c beta N/L_1)-type density
+   ratios (in SU(2) even the spatial plaquettes resist it, by the commutator of 6.2); a growing
+   flipped patch has a boundary vortex of length up to 2 L_2 with a perimeter cost. Both give
+   bounds exponentially small in L_2. A path bound is a lower bound only; it shows nothing about
+   the true gamma_k (for Haar it is also poor, while gamma_k = 3).
+3. Link-parity decomposition (the proof of ODD-0): for beta > 0 the conditional law is not
+   invariant under single-link flips, the classes are not orthogonal, and the even part of a
+   one-link density prop. to cosh(beta h.xi) is itself a double well. No order-one bound.
+
+Each fails at the same place: an order-one, typical-environment decay statement for a
+non-abelian two-dimensional array. I state it as the open lemma (CUT-TYP) and stop, after three
+distinct attempts (rule 11).
+
+## 7. Result (step 8)
+
+| # | Statement | Status |
+|---|---|---|
+| G1 | Model G factorizes; J moves only the toron Phi_1; R_s is a function of psi | PROVED |
+| G2 | Model G: 1/2 - p in [y/(1 + 4y^4), y(1 + 2y^8)], y = e^(-pi^2/(8 tau)); seed box p > 1/2 - 3e-10 | PROVED |
+| G3 | Model G: FR_u = kappa J(tau); J <= pi^2/(4 tau^2) always; J >= pi^2/(8 tau^2) for tau <= 1/16; seed box FR_u in [20.8, 41.8] | PROVED |
+| G4 | Model G: lambda_odd = kappa mu_odd(tau) <= L_1/N always; <= 10.3 kappa tau^(-3/2) y for tau <= 1/16; seed box < 8.2e-9 | PROVED |
+| G-num | Seed-box decimals (p, FR_u = 36.87, lambda_odd = 2.636e-9), step (a) tight to 0.5 percent, step (b) loses 1.4e10; mu_0 asymptotics | GUIDE / ARGUED |
+| F1 | Frozen groups at beta = infinity: r = N_tw/N_0; Q_8: p = 10/23; 2T: p = 30/61; the twist is absorbed at zero action | PROVED |
+| F2 | Frozen groups at beta = infinity: heat-bath form identically 0, so response factor 0 and gap factor 0 | PROVED |
+| F-fin | Frozen groups at large finite beta: p near the beta = infinity values; gap tunnelling-small | ARGUED |
+| A | Verdict: the gap factor carries the failure in all three rivals; the response factor fails only for U(1) below a box size (about 420 for cubes at these margins); (FR) alone is not a valid crux | PROVED from G2-G4, F1-F2 (thresholds by hand) |
+| R | Theorem R: V_s <= V_(s-1); V_s <= theta_s/(1 + theta_s) V_(s-1); p/(1 - p) <= prod theta_s/(1 + theta_s); the mixture splitting (R4) | PROVED |
+| R5 | Flux half at the seed box from (ODD-GAP) lambda_0 >= 95.3 Gamma_0 (or 78.4 Gamma_0) and (FORCE-COV), with no (FR) | CONDITIONAL on (ODD-GAP)_s, (FORCE-COV)_s, s = 2..a/2 |
+| R-sup | The sup form of (FORCE-COV) fails in Model G: Gamma_s^* >= 0.98 pi^2 N/(4 s^2 L_1) | PROVED |
+| R-sup2 | The sup form is not volume-free for SU(2) thin slabs | ARGUED |
+| 6.1 | (ODD-GAP) at c L_1 forces chi_P <= (1 - q)/c; Model G has chi_P >= (N/2) e^(-2 v_L) | PROVED |
+| CUT | lambda_s >= ess inf of sum_k gamma_k(env_k); sharp up to 2 in Model G; equals ODD-0 at beta = 0 | PROVED |
+| RARE | (CUT-TYP) and (LSI-weak) give lambda_s >= about g_0 | PROVED implication |
+| open | (CUT-TYP)_s; (LSI-weak)_s; Gamma_s^eff <= Gamma_0 (the averaged (FORCE-COV)); cutoff uniformity along first passage | OPEN |
+
+Not done: no Peierls estimate for the frozen groups at finite beta; no bound on monopoles (Model G
+omits them); no SU(2) numerics; the account's large-field machinery is not used here (this row is
+a fixed-cutoff statement at one coupling, as rows 899 and 922 say of (VAR-SLAB)).
+
+Self-check corrections applied after the first write (2026-11-14T04:50Z): the sector statement in
+2.5 now covers every M != 0; Theorem R says how to read the force in Model G; the Model G test of
+CUT is stated at s = a/2; the stabilizer claim of 6.2 is narrowed to uniform rotations and the
+spatial action; F1 flags its one unwritten bookkeeping step.
+
+For the checker (row 933), in order: Lemma G1 (the orthogonal splitting and the winding sum);
+G3's formula for X' and the bound |X'| <= pi/(2 tau); G4's product reduction and the bound on D;
+F1's counts; Theorem R (R1) (the identity that moves the law from index s to s - 1) and (R4);
+Lemma CUT's J_k-invariance; RARE's entropy step.
+
+RESULT: Row 930 (Claude Fable 5.2 max, checked by no one). STEP A, exact in the Gaussian U(1) model (Villain without monopoles): the pi twist moves one coordinate, the toron; p = 1/2 - 1.4e-10 at the seed box (PROVED p > 1/2 - 3e-10), FR_u = kappa J with pi^2/(8 tau^2) <= J <= pi^2/(4 tau^2) (seed box 20.8 to 41.8, GUIDE 36.9), lambda_odd = kappa mu_odd <= L_1/N at every size and coupling and < 8.2e-9 at the seed box (GUIDE 2.6e-9); frozen Q_8 and 2T at beta = infinity have p = 10/23 and 30/61 by counting flat and twist-eating connections, with heat-bath response 0 and gap 0. Verdict: both factors fail for U(1) at the seed box, the gap factor lambda_odd is the one that fails in all three rivals at every size, and (FR) alone is not a valid crux (frozen groups and U(1) boxes above about 420 pass it); the odd-gap form passes the fact test. STEP B: PROVED Theorem R, p/(1 - p) <= prod over s = 2..a/2 of theta_s/(1 + theta_s) with theta_s = 2 beta^2 Gamma_s/lambda_s, which removes (FR): the flux half follows from the odd gaps of the even two-slice laws and one force-covariance bound (CONDITIONAL; at the seed box lambda_0 >= 95.3 Gamma_0); PROVED that the odd gap at c L_1 forces bounded winding-line susceptibility, which the locked U(1) lines violate; PROVED Lemma CUT (lambda_odd >= ess inf of the sum over the L_1 cuts of conditional cut gaps) and the implication RARE. The photon breaks the argument at one step: the rotation of a whole cut is an exact symmetry for every U(1) environment, while for a generic SU(2) environment the only uniform cut rotations that preserve the spatial action are the centre. OPEN, not proved at order one: (CUT-TYP) (typical-environment odd gap of one cut, three attempts failed), (LSI-weak), the averaged force-covariance bound (its sup form is PROVED false in U(1) and not volume-free), and cutoff uniformity. No mass gap, no flux half at order one.

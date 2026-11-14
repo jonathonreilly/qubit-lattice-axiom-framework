@@ -138,3 +138,31 @@ cross-section" as O4a/O4b; O4 is the SMALL-BOX probe of Step 1, not the seed-box
 - INCONCLUSIVE otherwise.
 Machine rules: one job at a time under `python3 scripts/lab_ops.py numeric-lock`, OMP/BLAS threads 1, nice,
 self-stop above 2 GB RSS, start only at >= 50 percent memory free. Compute cap about 45 minutes in total.
+
+### Step 3: code (written 2026-11-14, before any run)
+
+`library/guide/lane946/fct.py` (one file, numpy/scipy, one thread). Pieces: quaternion SU(2); spatial graphs
+(periodic L^3 box, one plaquette, one cube) times open time {0..2K}; colouring of links into independent sets;
+Kennedy-Pendleton heat bath (rejection from Haar for alpha < 1) plus 2 overrelaxation passes per sweep;
+non-compact U(1) Gaussian heat bath on the same tables (calibration C1); transported slices (E3); tangent
+gradients of Wilson loops by prefix/suffix products; the accumulator for the two half-chain covariances; the
+estimator S = beta^2 sum_l C^F . C^B; jackknife over independent outer chains; Sokal-window tau_int; exact
+references `photon_exact` (spectral formula of Step 2.3) and `plaq_exact` (character basis, 40 characters,
+800 Gauss points). Self-tests in the file (`fct.py selftest`): quaternion algebra; staple sums against the
+total action change; colour classes are independent sets; U(1) conditional mean; loop gradients against
+finite differences and |grad_l Re W|^2 = 1 - Re W^2; the Gram sums of den() against explicit gradient sums;
+the sampler's E X_0 = I_2(alpha)/I_1(alpha).
+Added self-test: the transported slices satisfy <x_l, w_l> = Re(timelike plaquette at K) and <x_l, w'_l> =
+Re(timelike plaquette at K-1), and w, w', x are unchanged by a random gauge map that is 1 on slice K.
+
+**Numeric lock.** At 07:25Z the machine lock was held by row 944's GUIDE job (`gap-sgstep-944`, started
+07:17Z, lease to 09:17Z). No run of this row starts before it is released; a background poll acquires it.
+
+**Hand value for C1 (by hand, independent of `photon_exact`).** Plaquette flux f = (dA)_p, p in the (0,1)
+plane. Its incidence vector has |c^(k)|^2 = khat_0^2 + khat_1^2, khat_i^2 = 4 sin^2(k_i/2), and it is co-exact, so
+R = sum_k (khat_0^2 + khat_1^2) e^(-2 omega(khat^2)) / sum_k (khat_0^2 + khat_1^2), cosh omega(u) = 1 + u/2.
+On L = 4, khat_i^2 takes 0, 2, 2, 4. e^(-2 omega(u)) for u = 0, 2, ..., 12: 1, 0.0717968, 0.0294373, 0.016133,
+0.010205, 0.0070426, 0.0051548. With F(s) = E(s) + 2E(s+2) + E(s+4): F(2) = 0.1468044, F(4) = 0.0719083,
+F(6) = 0.0435856, F(8) = 0.029445. Numerator = 8 F(2) + 24 F(4) + 24 F(6) + 8 F(8) = 4.181848; denominator
+= 2 x 8 x 16 = 256 (Parseval: 256/64 = |c|^2 = 4). **R_exact(flux, L = 4) = 0.016335.**
+Single modes: k = pi/2: (2 - sqrt 3)^2 = 0.071797; k = pi: (3 - 2 sqrt 2)^2 = 0.029437.

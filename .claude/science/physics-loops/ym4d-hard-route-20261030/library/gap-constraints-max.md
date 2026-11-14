@@ -25,6 +25,119 @@ their text); the seed chain is this lane's (rows 700-961). Each section names wh
 7. First step of the best one or two ideas, attempted as a theorem; a GUIDE run only if it can refute (Section 7).
 8. Ranked list of at most five ideas, each with first step and fact test; RESULT line (Section 8).
 
+## 1. The system as it stands (READ at aa7b2e875; nothing here is new)
+
+Sources read for this section: FINISH rows 947, 954, 957, 960-962 (lines 1024, 1031, 1034, 1037-1039), RESULT parts of
+rows 706, 904, 913, 916, 924; `gap-crux-restate.md` L168-228 (Lemmas K, X, E, E', Theorem S, Corollary S3');
+`gap-seed-shape.md` L45-136 (Theorem SH, thresholds); `gap-finishline-opus.md` L96-171 ((SEED-FP), the chain, 2.3-2.6);
+`gap-status-1113.md` L23-57, L298-357; `gap-direction-max.md` L38-170, L400-458 (fact tests, 19 forms, F1-F4);
+`gap-next3-max.md` L258-390 (the inventory of about 110 scored ideas, candidates C1-C16).
+Row 960's output `gap-vargeom-opus.md` and check 959 are not on disk at this commit.
+
+**1.1 The engine (PROVED, checked rows 698, 699, 707; group-blind).** Abstract class: a positive function
+W(a, b) of two integer sides, with a positive trace-class operator T_b such that W(a, b) = Tr T_b^a, and
+W(a, b) = W(b, a). For Wilson SU(2): W = Z(a, b, c, d) on the periodic torus with c, d fixed; the symmetry is the
+lattice symmetry that exchanges two axes. With e(b) = log lambda_0(T_b), ell = inf log W/(ab), kappa(b) = e(b) - ell b,
+g(a, b) = log W - a e(b) = log(1 + S(a; b)):
+- Lemma K: kappa is non-negative, convex and non-increasing.
+- Lemma X (crossing): a kappa(b) + g(a, b) = b kappa(a) + g(b, a); hence (b - a) kappa(b) <= g(a, b) for a < b.
+- Lemma E': 1 + S(a; h) <= (1 + S(a; b))^(h/(b - a)) for h >= b > a.
+- Theorem S / SH: one seed S(a; B) below a threshold t(shape) gives a gap on every larger cube; t = 1/1650 at
+  ratio 2, 1/25 at 4, 1/10 at 6, 3/10 at ratio >= 24, tending to 1; the ceiling is 1 at every shape (two phases).
+The proof uses three things only: (TM) in each direction, the exchange of two axes, a simple top eigenvalue.
+
+**1.2 The finish line.** (SEED-FP): one physical size ell and one margin s_* < 1/5041 such that the thermal sum of the
+BARE Wilson transfer operator on the periodic cube of physical side ell, at physical time ell/2, is at most s_* for
+every first-passage datum (K, beta in W_K(g)), K >= K_0. Chain (a)-(f) of row 837, with links (c), (e) of row 916: it
+gives (GAP) on the tr F^2 sector of every volume-first limit of the account's periodic tori. The integral of the
+account's density rho_k is Z at every level k, so the seed is one number, the same at every level of the flow.
+
+**1.3 The crux.** By Lemma SPLIT (row 892, check 893) the SH seed on the slab (a; (24a)^3) holds if the glue half
+S_ev <= 1/10 and the flux half Q_0 <= 1/20. Row 931: the weakest form passing all fact tests is this split seed; the
+glue half is a count (entropy level), the flux half a variance. Row 947: the smallest unproved inequality is
+(LSI-J-seed)_a, a log-Sobolev constant alpha_J >= 2 beta K_a for the two-slice vacuum law on (24a)^3, a >= 30; row 954:
+it needs m_G >= K_a. Row 957: the Piazza-Shen adaptation does not close it. Model arena of all of this: the unit
+lattice at one bare beta_W in 2.3-2.6 (shared assumption SA1 of row 899); the real object is first passage.
+
+**1.4 Fact tests (necessary conditions on any form).** FT-U1: false for the free photon and compact U(1) Coulomb
+(glue: log(1 + S_ev) > 31 on the seed slab; flux: p -> 1/2). FT-FROZEN: false for frozen Q_8, 2T (S_ev >= 1/2;
+p = 10/23, 30/61). K7: the mixed-action endpoint with no seed at any size (row 708, Proposition V). SMALL-BOX: a fixed
+small box at large beta has no gap in units of its side, so a small-slice statement must carry a beta-dependent size.
+FT-CEIL: worst-case single-link 1/3, single-site Dobrushin 2/3, vertex blocks 0.775, background-uniform layer bounds
+false above 4 G_3 = 1.0109, environment-uniform parity bounds false, literal (AN1) is the worst case, clustering cannot
+give the flux half.
+
+**1.5 One reading used below (ARGUED from 1.1-1.2, arithmetic GUIDE).** In the dilute regime the SH seed on the slab
+is a bound on the thermal pressure: log(1 + S(a; b^3)) = b^3 p(1/a) a. At ratio 24 the free value (three photons)
+is 3 x 0.2193 x 24^3, about 9.1e3, and the seed asks 0.26: a pressure 35,000 times below Stefan-Boltzmann at a
+temperature near 0.4 T_c. With one scalar of mass m the count is 878 (m a)^(3/2), so m a is about 12 (row 706 has
+the same range). Every relaxation below is judged by whether it changes THIS number or only its representation.
+
+## 2. The constraint audit (Step 2)
+
+Verdicts: FORCED-A (by the Sussman-Alpoge account as written), FORCED-F (by the finish line (SEED-FP) or its proof
+chain), FORCED-M (by mathematics: a theorem or a checked ceiling), CHOICE. Many rows are forced at one place and free
+at another; the table says where. Row 858's partial file (`gap-crux-exercise-r858-max.md` 4.A-4.C, mined by row 900)
+already holds an assumption table for the action (A1-A4) and the twists (C1-C4); I cite it where it decides a row and
+do not repeat its arguments. Rows 14-19 are constraints that row 962 does not list and the system uses.
+
+| # | Constraint | Verdict | What forces it, or what the freedom is | Cost of changing it |
+|---|---|---|---|---|
+| 1 | Periodic tori of the account's family (four equal sides 2 L^m, untwisted) | FORCED-A at the end of the chain; FORCED-F (proof) in the two exchanged directions; CHOICE elsewhere | (GAP) is a statement on the limits of the account's periodic tori (row 837 (c); row 916 Lemma C). The engine needs a trace in both channels of an exchanged pair (1.1). Equal sides are not needed (Theorem SH, any box; S3', any integer side). Spectator directions need (TM) only | Another box family needs a new node: its limit state is the account's state (OPEN for free walls, row 907) |
+| 2 | Isotropic action (equal time and space couplings) | FORCED-A for the measure of the finish line; CHOICE for the engine | The crossing step uses the exchange of two axes (row 858 A2: "needed by the method"). Section 7 (Theorem 2O) removes the exchange at the price of one seed per orientation | An anisotropic account does not exist; an anisotropic seed has no route to (SEED-FP) |
+| 3 | One box shape for all times | FORCED-M for the trace form | Tr T_B^a needs one operator on one space. Maps between boxes are row 960's subject (running; not attacked here) | row 960 |
+| 4 | One time direction | CHOICE in the attack; not a constraint of the engine | The engine uses transfer operators in all four directions. The seed number has two readings: thermal count in one channel, Casimir deficit b kappa(a) in the crossed channel (Lemma X) | none; a reading |
+| 5 | State space L^2 of one spatial slice | FORCED-M for a Markov transfer operator of the Wilson measure; the representation is a CHOICE | Other spaces (two-slice law J, T^2 after a time decimation, the OS space of a block field) carry the same Z. The number does not change (1.2) | none; a reading |
+| 6 | Slab (a; (24a)^3), thresholds of Theorem SH | CHOICE inside the table of 1.5; FORCED-M at its edges | Edges: threshold below 1 at every shape (two phases, `gap-seed-shape.md` 4.1); q a < min b_i; SMALL-BOX. Between t(r) and 1 the engine is OPEN. Leverage is small: for the log-Sobolev form the cube r = 2 changes the needed exponent by 3 log 12 - log 495 = 1.25 only (my arithmetic: volume 8 a^3 against 13824 a^3, threshold 1/1650 against 3/10) | none |
+| 7 | Split into glue and flux halves | CHOICE (Lemma SPLIT is one sufficient split) | The flux half exists because of rows 1 and 10: a torus and a finite centre (SA4 of row 899). Row 931 F2: no weaker sufficient form is on the table | a consumer without flux sectors (free walls: stops at (JOIN-TH)) or with a vacuum multiplet (row 876 G11) |
+| 8 | One coupling, beta_W in 2.3-2.6 | The finish line is FORCED-F to cover every first-passage datum, K >= K_0. The band is a CHOICE of model arena (SA1) | The band is on the chain only through (ONE-K) + (UNIV-K) (rows 916, 924; OPEN) or (EXIT) (rows 846-877; OPEN) | (UNIV-K) or (EXIT) |
+| 9 | Wilson weight | FORCED-A; not forced by the engine or the target | Row 858 A1; row 904: the account's universality covers a fixed ball of analytic irrelevant profiles at one horizon, for normalized regular laws on one volume | re-run the account for another weight |
+| 10 | SU(2), centre Z_2, centre-flip sectors | FORCED-A and by GOAL.md (SU(2) first) | The sectors follow from rows 1 and 10 together | outside the target |
+| 11 | Periodic, not twisted, open or Dirichlet | as row 1 | Twisted tori: engine available ((TM-tw)), outside the account (row 837 2.4 item 4). Free space walls: no centre sector (FW1, check 902), doubling needs a new input at every scale (row 910) | as row 1 |
+| 12 | Fact tests | FORCED-M as necessary conditions; the list of rivals is a CHOICE | A relaxation can change the tests in one way only: by removing a rival from the class (free walls remove the periodic Q_8/2T test; a glue-only consumer keeps U(1) and K7) | none |
+| 13 | No computer-assisted proof | FORCED by the owner (GOAL.md) | Not binding today (ARGUED): the seed box holds more than 3 x 10^5 links at ratio 2 and 5 x 10^8 at ratio 24 at beta 2.3, far beyond any enclosure method | none |
+| 14 | The seed is a trace (a ratio of partition functions), not a matrix element or a correlation | FORCED-F (proof) | Only traces cross: W(a, b) = Tr T_b^a = Tr T'_a^b. Vector seeds exist on free walls and give a gap on a cyclic subspace only (row 898 6.2) | boundary-uniform mixing (FT-CEIL) or correlation inequalities (none for SU(2)) |
+| 15 | Integer multiplicities and a simple top eigenvalue | FORCED-F (proof) | Lemma E is Tr X^(2b) <= (Tr X^b)^2. A weighted trace (1/N) Tr loses a factor N per doubling (Lemma PROJ, Section 7.4) | none known |
+| 16 | The vacuum is subtracted exactly (lambda_0^a) | FORCED-M | The energies are extensive; a comparison operator must reproduce lambda_0 to relative accuracy 1/(a |B|) (row 934's (VAC-SUB) is this) | the Doob chain and (LSI-J) are the exact subtraction |
+| 17 | One physical size and one margin for all large cutoffs | FORCED-F | Row 837 2.4 item 1 | none |
+| 18 | Time shorter than the sides | FORCED-F (proof) | Lemma X gives (b - a) kappa(b) <= g(a, b) only for a < b | none; at a = b the lemma is empty |
+| 19 | Hypercubic lattice | FORCED-A | the account | outside the target |
+
+**Reading of the table.** Three constraints are forced by the account and cannot be changed without a new account: the
+measure (rows 2, 9, 10, 19 and the first-passage family of row 8) and the periodic limit state (row 1). Five are forced
+by the present proof of the engine and by nothing else: trace, exchange symmetry, integer multiplicity, a < b, simple
+top (rows 14, 15, 18, and row 2 for the engine). The rest are choices of representation that do not change the
+number of 1.5 (rows 4, 5, 6, 7). So a relaxation can help in two ways only: (i) a new engine, whose seed is a
+different statement about the same measure; (ii) a new node from another measure to the account's. The ideas below
+are sorted by this.
+
+## 3. Repo search (Step 3; greps at aa7b2e875 over `library/gap-*.md`, `library/prior/gap-*.md`, FINISH.md, `library/open-core.md`)
+
+`library/open-core.md` has 0 hits for every pattern below; no FINISH row owns any of them as a target, except row 960.
+Counts are files in the gap lane that mention the pattern; "as idea" means it was scored and not given a proof lane.
+
+| Idea family | Hits | Status in the lane |
+|---|---|---|
+| anisotropic couplings, beta_s = 0 line, Hamiltonian limit | 41 files | KNOWN as idea 32 of row 859 (`gap-brainstorm-max.md` L317: "With beta_s = 0 ... solved at every beta_t ... Continue in beta_s"); row 858 A2: the engine "is lost in its present form", cost "Theorem S for unequal axes", not written |
+| engine without axis exchange | 2 files | only the cost line of row 858 A2; no statement, no proof. Section 7 is new to the lane |
+| free walls, open boundaries | 64 files | KNOWN and attacked: rows 898, 903, 907, 910 ((W'-ENG), (JOIN-TH)); stopped |
+| Dirichlet walls, Schrodinger functional | 11 files | KNOWN (`gap-phys-seed.md` L25 search list; row 903 chose Neumann walls) |
+| twists, C-periodic gluing | 11 files | KNOWN (twist-eaters, row 876 idea 15; twisted thin torus rows 842, 862) |
+| Klein-bottle or orientation-reversing gluing | 16 files | KNOWN as idea 24 of row 876 (`gap-brainstorm2-max.md` L174), for the flux; no identity written |
+| shifted (skew, helical) tori, Tr(T^a tau_v) | 0 relevant (the 7 hits are "shear" maps of other notes) | NEW to the lane |
+| momentum or symmetry projection of the trace | 13 files | used for observables and channels (`gap-channel-astra.md` L698), not as an engine |
+| diagonal reflections | 5 files | only as "diagonal reflected correlators" of the limit step; no diagonal transfer operator |
+| corner transfer matrices, wedge operators | 0 files | NEW to the lane |
+| positively curved space (S^3 slices) | 0 as geometry (31 hits are SU(2) = S^3) | NEW as geometry; hyperbolic lattice is idea of row 859 |
+| inhomogeneous couplings, strong-coupling walls | 2 files | random inhomogeneous couplings as idea 4 of row 859; no superlattice |
+| time decimation, T -> T^2 | 32 files | KNOWN (decimation and soft block steps, rows 846-877) |
+| sum over twists, SO(3) form, vacuum multiplet | (row 858 C3, row 876 G11, 35) | KNOWN as ideas; (MULTIPLET) never attacked |
+| operator inequalities (Golden-Thompson, Araki-Lieb-Thirring) | 4 files | used once (row 913 Theorem ABS, Lowner-Heinz); stop at (VAC-SUB) |
+| step scaling, small volume | 19 files | KNOWN (row 720; row 859); SMALL-BOX |
+| Higgs handle | 41 files | KNOWN |
+
 ## Status log
 
 - 2026-11-14T12:52Z: file created with the plan. Nothing proved yet.
+- 2026-11-14T13:05Z: Step 1 done (Section 1). Next: Step 2, the constraint audit, with greps for each idea family (Step 3 merged into it).
+- 2026-11-14T13:20Z: Steps 2 and 3 done (Sections 2, 3). Next: Steps 4-6, the ideas with their fact tests.

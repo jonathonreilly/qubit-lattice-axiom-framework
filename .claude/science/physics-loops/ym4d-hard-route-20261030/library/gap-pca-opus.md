@@ -258,3 +258,126 @@ committed). READ = the passages named were read; RECALLED = not opened.
 ergodicity and spatial mixing of its stationary Gibbs measure are equivalent (attractive, finite-spin case). So even a
 genuine PCA representation would turn the crux into the same spatial-mixing statement, now for the slice law.
 
+## 4. Framing (b): which PCA ergodicity tools survive (Step 4)
+
+**Answer.** None gives a NEW INPUT. After Section 2, a PCA tool can act only on the PCA part (P_0 in axis time, P_* in
+light-cone time), never on the Wilson chain itself, which is M_Z P_* and not a PCA. The PCA part is the electric
+(kinetic) theory. It mixes for every compact group, compact U(1) included, so it cannot carry the U(1)/SU(2)
+separation. All the difficulty sits in the potential, which the tools do not see.
+
+### 4.1 The tools, one by one
+
+| Tool (PCA form) | Hypothesis | What it would give here | Supremum or averaged | Verdict |
+|---|---|---|---|---|
+| Dobrushin-Vasershtein: sup_k sum_j sup over parents differing at j of the TV distance of the child laws < 1 | uniform over all parent configurations | ergodicity of P_* (or P_0), at small beta only: for SU(2) the child law at beta 2.3 moves by O(1) when one parent site moves, so each term is near 1 and the sum is near D (the single-link GUIDE of row 820 gives row sums 3.4-3.6 at beta 2.3-2.5 for the related link chord influence) | supremum | capped; FT-CEIL (single-site 2/3) applies in its PCA form |
+| Maes-Shlosman 1991 (finite space-time volumes) | uniform over boundary conditions; finite spins | the same object, with a better constant | supremum | capped; finite-spin |
+| Synchronous coupling, coupling from the past (Doeblin form) | each child density >= epsilon x reference, uniformly in parents | for P_*: epsilon >= e^(-2 beta C(D,2)) = e^(-12 beta) at D = 4, about 1e-12 at beta 2.3; forgetting events are far below any oriented percolation threshold | supremum | dead at beta 2.3 |
+| Disagreement percolation (van den Berg-Maes), PCA form | per-site disagreement probability below the threshold of ORIENTED percolation | the one gain of the PCA frame: disagreements propagate only forward, so the oriented threshold replaces the unoriented one. But the per-site disagreement probability is a supremum over parent pairs and is near 1 at beta 2.3 (row 820) | supremum | capped; gain is a constant factor in the threshold only |
+| Wasserstein / coarse-Ricci contraction (Dobrushin with a metric) | contraction for all pairs of parent states | linearised P_* transports the magnetic part P_cyc a unchanged (Proposition 2.7: the new plaquette fluxes are P_cyc a_m plus electric noise), so the contraction constant along magnetic directions is 1 at weak coupling, for U(1) and SU(2) alike | supremum | fails at the linear level, group-blind |
+| Annealed criteria for random environments (Gielis-Maes 1995; Gielis-Maes-van de Velde 1999, READ in row 853) | environment i.i.d. and independent of the process | the "environment" here is the process's own past | averaged | not applicable (row 821) |
+| Spatial weak mixing <-> time ergodicity (Louis 2004, READ in Section 3) | finite ordered spins, attractive PCA | turns time mixing into spatial mixing of the stationary law | uniform | circular: it is the gap statement again |
+
+Where an averaged version exists, it needs independent disorder (Gielis-Maes) or is the gap statement itself (Louis).
+The lane's averaged forms ((LSI-J-seed), row 947) are not supplied by any PCA theorem known to me or to rows 821, 853.
+
+### 4.2 Why the PCA part cannot carry the separation (ARGUED from PROVED identities, plus hand arithmetic)
+
+- The PCA parts are explicit. Axis: P_0 = independent heat-bath walks on each link, spectral gap 1 - b_1/b_0 =
+  1 - I_2(beta)/I_1(beta) on spin-1/2 functions (convolution by f/b_0 has eigenvalue b_n/b_0 on spin n/2). This is
+  0.52 at beta 2.3 and 0.48 at 2.6 (hand arithmetic from four series terms: I_1(2.3) = 2.098, I_2(2.3) = 1.005). The
+  same kind of number holds for compact U(1) (1 - I_1/I_0). Light-cone: P_* is the electric-only theory
+  (Proposition 2.7). Neither has a phase transition in beta that distinguishes U(1) from SU(2).
+- FT-U1 kills every route that uses only the PCA part (ARGUED): compact U(1) at large beta has a mixing PCA part of the
+  same order and no seed. So an implication "mixing of P_* gives the seed" must be false, or must use the potential
+  in a U(1)-sensitive way, at a named step.
+- SMALL-BOX kills it too (ARGUED): P_*-based bounds are local, in lattice units, and do not see the box size; but a small
+  box at large beta has a gap small in units of its side.
+- Size of the potential (hand arithmetic, GUIDE weight). D = 3, beta 2.3: z(h) = sum_n (n+1) b_n^3 chi_n(h) gives
+  z(1) = 9.00 and z(-1) = 3.64, so log z varies by 0.91 per vertex; at beta 2.6 by 1.18. The axis potential varies by
+  2 beta = 4.6 per spatial plaquette. The light-cone potential is smoother, but it is extensive and of order one per
+  vertex, so no perturbation around the PCA reaches beta 2.3. At small beta it is O(beta^3) per vertex (the first
+  g-dependent term of z is (beta/2)^3 tr(h)/4), which reproduces the known strong-coupling range only.
+
+### 4.3 Toom, Gacs and the frozen groups
+
+- What they prove: positive-rate PCA can be non-ergodic (Toom's eroders are stable under small noise; Gacs builds a
+  one-dimensional example). In the PCA frame the frozen-group failure is a non-ergodicity of M_Z P_*, not of P_*: for
+  a finite group, P_* on a finite cylinder has a strictly positive kernel on a finite state space and mixes; the
+  potential pins the magnetic flux to flat connections at large beta, and the flat sectors are separated by vortex
+  sheets whose cost grows with their area.
+- A Toom-type space-time contour argument for that stability is the standard Peierls argument for finite-group gauge
+  theories at large beta. It explains WHY the seed fails for Q_8 and 2T (FT-FROZEN), as the lane already records; it
+  gives no input for SU(2), where flux is not quantised in the link variables and thin vortices can be thickened.
+  REFRAMING; a fact-test explanation, not a tool.
+
+### 4.4 Verdict on framing (b)
+
+REFRAMING. The supremum tools are capped as before (FT-CEIL), now in their PCA form; the averaged tools need
+independent disorder; time mixing of a PCA is spatial mixing of its law (Louis 2004), so nothing is gained even in
+principle. The one structural gain (oriented instead of unoriented percolation thresholds) is a constant factor in a
+threshold that a near-one disagreement probability does not meet. New, as a filter for later ideas (proposed for the
+fact-test list, ARGUED): **FT-FK** - an argument that acts only on the PCA (kinetic) part of a Feynman-Kac
+representation fails FT-U1 and SMALL-BOX; it must use the magnetic potential, at a named step, in a way U(1) fails.
+
+## 5. Framing (c): plaquette-level constraint systems (Step 5)
+
+**Answer.** REFRAMING throughout. Bianchi and Batrouni-Halpern are KNOWN dead in the magnetic metric (row A12); in
+light-cone time they become causal, and then they are exactly the PCA part of Section 2. Centre vortices are the
+flux half, KNOWN in the lane. Reversible energy-conserving rules preserve the Wilson measure at every beta at once, so
+they carry no beta-dependent inequality.
+
+### 5.1 Bianchi on cubes, Batrouni-Halpern, and the obstruction count
+
+- KNOWN (`gap-skeleton-max-b.md` A12, L215-220): in plaquette variables the Wilson measure is a product of plaquette
+  weights restricted to the Bianchi variety, with a Jacobian. A Poincare inequality in the plaquette (magnetic)
+  metric holds for U(1) with constant beta while the photon is massless, so that metric is the wrong one. One 3-cube's
+  partition function has zeros in the right half-plane (L581-584), so no Lee-Yang route.
+- NEW here, a reading of Section 2 (PROVED there): in light-cone time each cube's Bianchi identity ties its three top
+  faces (new, at the top vertex m) to its three bottom faces (old). So the Bianchi system is solved forward, vertex by
+  vertex: at m, D(D-1)/2 new plaquettes satisfy C(D,3) cube constraints of rank (D-1)(D-2)/2 (the cycle rank of K_D),
+  leaving D - 1 free plaquette degrees of freedom per vertex, which matches D links minus one gauge degree. This is
+  the causal Batrouni-Halpern system, and it is the PCA P_*.
+- The obstruction count (PROVED, from Proposition 2.7): the normaliser depends on the past through the cycle space of
+  K_D, of dimension C(D-1, 2). That is exactly the number of magnetic components of F relative to the time direction.
+  So the Wilson measure is a PCA history iff there is no magnetic component, iff D = 2. The plaquette CA fails for
+  the same reason the field has magnetic energy.
+- Non-abelian locality (ARGUED): for SU(2) each cube constraint involves parallel transport by link variables, so a
+  CA on plaquette variables alone is not local; it must carry the links (a local frame). The abelian plaquette CA is
+  local. Nothing here separates SU(2) from U(1).
+
+### 5.2 Centre vortices as Z_2 plaquette surfaces
+
+- KNOWN in the lane: the flux half Q_0 of the split seed is a twist-sector (vortex free energy) statement; the
+  order-one vortex free-energy area law ((14) of the brainstorm notes) is 't Hooft-Tomboulis-Yaffe confinement and is
+  not supplied by any known method; Tomboulis 2007 was diagnosed in rows 797/799 (Ito-Seiler's critique); see
+  `gap-brainstorm-max.md`, `gap-crux-exercise-r858-max.md`, `gap-flux-exercise.md`.
+- The PCA frame adds one reading (ARGUED): sigma_p = sign tr U_p is transported forward by P_*, and the Z_2 Bianchi
+  closure fails exactly at SO(3) monopoles (the product of sigma over a cube's faces is the cube's monopole charge).
+  The twist sectors are topological invariants of the torus configuration, conserved by any local rule; their
+  relative weights are set by the potential. No new input.
+
+### 5.3 Reversible energy-conserving rules (Creutz demons, overrelaxation, Q2R)
+
+**Lemma 5.1 (a deterministic reversible gauge CA, PROVED).** For a link l with staple quaternion S != 0 put
+V = S/|S| and R_l(U_l) = 2 <U_l, V> V - U_l (for S = 0, R_l = id). R_l is an isometry of S^3 (a reflection through the
+line R V), so it preserves Haar measure and <U_l, S>, hence the Wilson action given the other links. The links
+{(n, mu) : sum over nu != mu of n_nu even} share no plaquette (two links (n, mu), (n', mu) lie in one plaquette only
+if n' - n = +-e_nu, nu != mu, which changes that parity). So on a torus with even sides the 2D sublattice updates are
+parallel products of commuting reflections, and their composition Phi is an invertible, Haar-preserving map with
+S_W o Phi = S_W.
+Consequence (PROVED): Phi preserves g(S_W) dU for every g, hence the Wilson measure at every beta at once. For Z_2 the
+same construction flips a link iff its staple sum is 0: the exact gauge analogue of Q2R (Vichniac; Pomeau, recalled).
+- Why it is not an input (ARGUED): Phi carries no beta, so it cannot produce a beta-dependent bound. A deterministic
+  measure-preserving map has a unitary Koopman operator, with no spectral gap to transfer; its orbits stay on level
+  sets of S_W and of any further invariant. Creutz's demons (PRL 50 (1983) 1411, recalled) only extend the measure by
+  demon variables whose marginal is canonical. Overrelaxation (Adler 1981; Creutz 1987; Brown-Woch 1987, recalled)
+  speeds samplers; the Poincare or log-Sobolev constant of the measure for a fixed Dirichlet form does not change
+  when measure-preserving moves are added to a sampler. (LSI-J-seed) is a statement about the measure and its gradient
+  form, so these rules do not touch it.
+- Fact tests: group-blind (U(1), Z_2, SU(2) alike); FT-U1 fails as for every rule that does not use the potential.
+
+### 5.4 Verdict on framing (c)
+
+REFRAMING or KNOWN. The one exact new fact is the count in 5.1: the PCA obstruction is the magnetic field itself
+(cycle rank of K_D = C(D-1, 2) magnetic components). Lemma 5.1 is a correct but idle construction.
+

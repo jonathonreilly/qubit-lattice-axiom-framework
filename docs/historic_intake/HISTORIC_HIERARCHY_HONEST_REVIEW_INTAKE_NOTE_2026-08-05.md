@@ -1,5 +1,13 @@
 # Historic intake: Hierarchy Derivation: Honest Top-to-Bottom Review
 
+**Primary runner:** `scripts/historic_hierarchy_arithmetic_annotation_check_2026_11_14.py`
+(added 2026-11-14). It checks only the arithmetic of the 2026-10-21 annotation
+below, for the model as that annotation prints it, with 60-digit Decimal
+recomputation and controls that reject the quoted historical values. It does
+not check the historical claim compressed below the annotation, the archived
+original, the Sigma_1 mapping or any physical mechanism. The historic runner
+named under Provenance stays unbound.
+
 Date: 2026-08-05
 Authority: none
 Audit: unset

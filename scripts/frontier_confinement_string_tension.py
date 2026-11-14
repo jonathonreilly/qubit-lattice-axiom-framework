@@ -7,29 +7,37 @@ STATUS: bounded support note / qualitative confinement consistency check
 
 SUPPORT CLAIM (bounded):
   The graph-first SU(3) gauge-sector context with g_bare = 1 gives the
-  Wilson plaquette parameter beta = 6. On the standard SU(3) Yang-Mills
-  interpretation of that context, imported confinement, Sommer-scale,
-  EFT, and small-volume MC checks give bounded support for the expected
-  qualitative confinement/string-tension story.
+  Wilson plaquette parameter beta = 6. Confinement itself is imported
+  standard SU(3) Yang-Mills context; this runner does not show it. With
+  imported Sommer-scale and EFT inputs it computes conditional string-tension
+  estimates, and it runs a small finite Monte Carlo diagnostic.
 
-MECHANISM:
-  1. Graph-first SU(3) at g_bare = 1 → Wilson plaquette at β = 2N_c/g² = 6.
-  2. SU(3) Yang-Mills at T = 0 confines for all β > 0 (Wilson criterion,
-     confirmed by decades of lattice Monte Carlo).
+INPUTS (imported or supplied, not derived here):
+  1. Graph-first SU(3) at g_bare = 1 → Wilson plaquette at β = 2N_c/g² = 6
+     (computed from the supplied normalization).
+  2. Confinement of SU(3) Yang-Mills is imported literature context. It is
+     printed as IMPORTED CONTEXT and is not a counted check.
   3. A bounded source value α_s(M_Z) = 0.1181 is consumed as an EFT input.
   4. Two-loop QCD running from M_Z with flavor thresholds → Λ_QCD.
-  5. √σ is determined by Λ_QCD through non-perturbative QCD dynamics.
-  6. The lattice ratio √σ / Λ_MS̄ is imported standard SU(3) YM/lattice
-     context, not derived here.
+  5. The lattice ratio √σ / Λ_MS̄, the Sommer-scale data at β = 6 and the
+     0.96 screening factor are supplied, not derived here.
 
-QUANTITATIVE PREDICTION:
-  From α_s(M_Z) = 0.1181 → Λ_MS̄^(5) ≈ 210 MeV → √σ ≈ 440 MeV.
+CONDITIONAL ESTIMATE (not a framework prediction):
+  From α_s(M_Z) = 0.1181 → Λ_MS̄^(5) ≈ 210 MeV. With the supplied ratio
+  and Sommer-scale data the two estimates are about 518 MeV (Method 1) and
+  465 MeV (Method 2 with the supplied 0.96 factor); the comparator is 440 MeV.
   This is bounded: conditioned on the standard low-energy EFT bridge.
 
-DIRECT VERIFICATION:
-  Pure-gauge SU(3) Monte Carlo at β = 6.0 on a 4⁴ lattice confirms:
-  - <P> ≈ 0.59 (consistent with the framework's plaquette surface)
-  - Wilson loops show area-law falloff (qualitative confinement signal)
+FINITE DIAGNOSTIC (not an area-law or string-tension extraction):
+  Pure-gauge SU(3) Monte Carlo at β = 6.0 on a 4⁴ lattice reports <P> and
+  the three small loops W(1,1), W(1,2), W(2,2).
+  - Their decreasing order is consistent with an area law, but a perimeter
+    law W = exp(-c(R+T)) satisfies the same order (analytic control below).
+  - The Creutz ratio χ(2,2) is zero for a pure perimeter law, so χ(2,2) > 0
+    beyond its blocked-jackknife error rules out a pure perimeter law for
+    these loops. A short-distance term with no area term also gives
+    χ(2,2) > 0 (second control), so the small-loop χ(2,2) does not
+    establish an asymptotic string tension or confinement.
 
 PStack experiment: frontier-confinement-string-tension
 Self-contained: numpy only.
@@ -45,6 +53,7 @@ from canonical_plaquette_surface import CANONICAL_ALPHA_BARE, CANONICAL_ALPHA_S_
 np.set_printoptions(precision=10, linewidth=120, suppress=True)
 
 AUDIT_TIMEOUT_SEC = 600
+AUDIT_INPUT_PATHS = ("docs/CONFINEMENT_STRING_TENSION_NOTE.md",)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -64,6 +73,37 @@ def check(name, condition, detail="", kind="EXACT"):
         msg += f"  ({detail})"
     print(msg)
     return condition
+
+
+def imported(item, detail=""):
+    """Print imported context. It is not a check and is not counted."""
+    msg = f"  IMPORTED CONTEXT: {item}"
+    if detail:
+        msg += f"  ({detail})"
+    print(msg)
+
+
+def supplied(item, detail=""):
+    """Print a supplied input value. It is not a check and is not counted."""
+    msg = f"  SUPPLIED: {item}"
+    if detail:
+        msg += f"  ({detail})"
+    print(msg)
+
+
+def loop_ordering(w11, w12, w22):
+    """The two ordering tests the runner applies to small Wilson loops."""
+    return w12 < w11, w22 < w12
+
+
+def creutz_chi22(w11, w12, w21, w22):
+    """Creutz ratio chi(2,2) = -ln[W(2,2) W(1,1) / (W(1,2) W(2,1))].
+
+    Perimeter and corner factors cancel. For W = exp(-V(R)T - c(R+T)) it
+    equals V(2) - V(1); for a pure area law exp(-sigma R T - c(R+T)) it
+    equals sigma.
+    """
+    return -np.log((w22 * w11) / (w12 * w21))
 
 
 # =============================================================================
@@ -107,17 +147,14 @@ def test_structural_confinement():
           abs(BETA_LATTICE - 6.0) < 1e-12,
           f"β = {BETA_LATTICE:.1f}")
 
-    check("N_c = 3 (from graph-first SU(3))",
-          N_C == 3,
-          "graph-first commutant: gl(3) ⊕ gl(1), compact part su(3)")
+    supplied(f"N_c = {N_C} (from graph-first SU(3))",
+             "graph-first commutant: gl(3) ⊕ gl(1), compact part su(3); used in β above")
 
-    check("Standard SU(3) YM confinement context is imported, not derived here",
-          True,
-          "used as bounded Yang-Mills/lattice background")
+    imported("Standard SU(3) YM confinement is imported, not derived here",
+             "used as bounded Yang-Mills/lattice background")
 
-    check("β = 6.0 sits on the standard low-temperature pure-gauge support surface",
-          True,
-          "qualitative support only; not a continuum confinement proof")
+    imported("β = 6.0 is on the standard low-temperature pure-gauge surface",
+             "literature context; not a continuum confinement proof")
 
     # Plaquette consistency
     # At β = 6.0, standard lattice QCD: <P> ≈ 0.5934
@@ -183,9 +220,7 @@ def test_coupling_running():
     print("\n=== Part 2: QCD coupling running and Λ_QCD ===\n")
 
     # Bounded source input.
-    check("Bounded α_s(M_Z) source value = 0.1181 (consumed as EFT input)",
-          abs(ALPHA_S_MZ - 0.1181) < 1e-6,
-          f"α_s(M_Z) = {ALPHA_S_MZ}")
+    supplied(f"bounded α_s(M_Z) source value = {ALPHA_S_MZ} (consumed as EFT input)")
 
     # Compute Λ_MS̄^(5) from α_s(M_Z) = 0.1181 with N_f = 5
     lam5 = lambda_msbar(M_Z, ALPHA_S_MZ, 5)
@@ -239,7 +274,7 @@ def test_coupling_running():
 
 def test_string_tension(lam5, lam3):
     """Estimate sqrt(sigma) from imported low-energy QCD context."""
-    print("\n=== Part 3: String tension prediction ===\n")
+    print("\n=== Part 3: Conditional string-tension estimates (imported inputs) ===\n")
 
     # The ratio √σ / Λ_MS̄ is a universal QCD constant.
     # From lattice QCD determinations:
@@ -258,7 +293,7 @@ def test_string_tension(lam5, lam3):
     ratio_nf3 = 1.33  # √σ / Λ_MS̄^(3), from lattice/phenomenology
     sqrt_sigma_1 = ratio_nf3 * lam3
 
-    check("Method 1: √σ from Λ^(3) × (√σ/Λ)_lattice",
+    check("Method 1: √σ from Λ^(3) × supplied (√σ/Λ)_lattice = 1.33",
           abs(sqrt_sigma_1 - SQRT_SIGMA_EXP) / SQRT_SIGMA_EXP < 0.20,
           f"√σ = {ratio_nf3:.2f} × {lam3 * 1000:.0f} MeV = {sqrt_sigma_1 * 1000:.0f} MeV "
           f"(exp: {SQRT_SIGMA_EXP * 1000:.0f} MeV, "
@@ -283,7 +318,7 @@ def test_string_tension(lam5, lam3):
     hbarc = 0.197327  # GeV⋅fm
     sqrt_sigma_quenched_gev = sqrt_sigma_quenched * hbarc
 
-    check("Method 2: quenched √σ at β = 6.0 from Sommer scale",
+    check("Method 2: quenched √σ at β = 6.0 from supplied Sommer-scale data",
           abs(sqrt_sigma_quenched_gev - 0.484) < 0.03,
           f"√σ_quenched = {sqrt_sigma_quenched_gev * 1000:.0f} MeV "
           f"(quenched value at beta=6)",
@@ -293,7 +328,7 @@ def test_string_tension(lam5, lam3):
     screening_factor = 0.96  # rough factor for N_f = 2+1
     sqrt_sigma_physical = sqrt_sigma_quenched_gev * screening_factor
 
-    check("Method 2: physical √σ with quark screening correction",
+    check("Method 2: √σ after the supplied 0.96 screening factor (not derived; see B2)",
           abs(sqrt_sigma_physical - SQRT_SIGMA_EXP) / SQRT_SIGMA_EXP < 0.08,
           f"√σ_phys ≈ {sqrt_sigma_physical * 1000:.0f} MeV "
           f"(exp: {SQRT_SIGMA_EXP * 1000:.0f} MeV, "
@@ -532,34 +567,50 @@ def test_monte_carlo():
     print(f"  W(1,2) = {w12_mean:.6f}")
     print(f"  W(2,2) = {w22_mean:.6f}")
 
-    # Area law check: W should decrease with area
-    # W(1,1): area=1, W(1,2): area=2, W(2,2): area=4
-    check("W(1,2) < W(1,1) (larger area → smaller Wilson loop)",
-          w12_mean < w11_mean,
+    # Ordering of the three small loops. A perimeter law satisfies the same
+    # ordering (see the analytic controls), so these are consistency checks.
+    order_12_11, order_22_12 = loop_ordering(w11_mean, w12_mean, w22_mean)
+    check("W(1,2) < W(1,1): ordering consistent with an area law (a perimeter law also satisfies it)",
+          order_12_11,
           f"W(1,2)={w12_mean:.4f} < W(1,1)={w11_mean:.4f}",
           kind="BOUNDED")
 
-    check("W(2,2) < W(1,2) (area law: exponential area falloff)",
-          w22_mean < w12_mean,
+    check("W(2,2) < W(1,2): ordering consistent with an area law (a perimeter law also satisfies it)",
+          order_22_12,
           f"W(2,2)={w22_mean:.4f} < W(1,2)={w12_mean:.4f}",
           kind="BOUNDED")
 
-    # Creutz ratio: χ(2,2) = −ln(W(2,2)·W(1,1) / (W(2,1)·W(1,2)))
-    # This estimates σa² for large loops.
-    # On a 4⁴ lattice, χ includes short-distance perturbative contributions
-    # so it overestimates the physical string tension.
+    # Creutz ratio: χ(2,2) = −ln(W(2,2)·W(1,1) / (W(2,1)·W(1,2))).
+    # W(2,1) = W(1,2) in expectation by the hypercubic symmetry of the L⁴
+    # lattice; the runner measures one orientation in each of the six planes.
+    # On a 4⁴ lattice χ includes short-distance contributions, so it is not
+    # the asymptotic string tension.
     if w22_mean > 1e-10 and w11_mean > 1e-10 and w12_mean > 1e-10:
-        chi_22 = -np.log(abs(w22_mean * w11_mean) / abs(w12_mean ** 2))
-        check("Creutz ratio χ(2,2) > 0 (positive string tension)",
-              chi_22 > 0,
-              f"χ(2,2) = {chi_22:.4f} → σa² (includes short-distance effects)",
+        chi_22 = creutz_chi22(w11_mean, w12_mean, w12_mean, w22_mean)
+        # Blocked jackknife over 10 blocks of consecutive measurements.
+        n_blocks = 10
+        a11, a12, a22 = (np.array(v) for v in (wilson_1x1, wilson_1x2, wilson_2x2))
+        blocks = np.array_split(np.arange(len(a11)), n_blocks)
+        chi_jk = []
+        for blk in blocks:
+            keep = np.setdiff1d(np.arange(len(a11)), blk)
+            m11, m12, m22 = a11[keep].mean(), a12[keep].mean(), a22[keep].mean()
+            chi_jk.append(creutz_chi22(m11, m12, m12, m22))
+        chi_jk = np.array(chi_jk)
+        chi_err = float(np.sqrt((n_blocks - 1) / n_blocks
+                                * np.sum((chi_jk - chi_jk.mean()) ** 2)))
+        print(f"  χ(2,2) = {chi_22:.4f} ± {chi_err:.4f} (blocked jackknife, {n_blocks} blocks)")
+        check("Creutz ratio χ(2,2) > 3 errors: rules out a pure perimeter law for these loops",
+              chi_22 - 3.0 * chi_err > 0,
+              f"χ(2,2) = {chi_22:.4f} ± {chi_err:.4f}; short-distance terms also give "
+              f"χ > 0, so this is not an asymptotic string tension",
               kind="BOUNDED")
     else:
         check("Wilson loops have sufficient signal",
               False,
               "signal too noisy for Creutz ratio")
 
-    # The physical σa² = 0.0465 at β = 6.0 from large Wilson loops.
+    # The supplied σa² = 0.0465 at β = 6.0 comes from large Wilson loops.
     # On a 4⁴ lattice, the Creutz ratio at small loops overestimates this.
     # We report it but don't require it to match the asymptotic value.
 
@@ -567,51 +618,74 @@ def test_monte_carlo():
 
 
 # =============================================================================
-# Part 5: Combined result
+# Part 4b: Analytic controls for the Wilson-loop tests
+# =============================================================================
+
+def model_loops(log_w):
+    """W(1,1), W(1,2), W(2,1), W(2,2) for a model ln W(R, T)."""
+    return tuple(float(np.exp(log_w(r, t))) for r, t in ((1, 1), (1, 2), (2, 1), (2, 2)))
+
+
+def test_wilson_loop_controls():
+    """Show which Wilson-loop test discriminates, on exact model loops."""
+    print("\n=== Part 4b: Analytic controls for the Wilson-loop tests ===\n")
+    c, sigma, kappa = 0.5, 0.2, 0.15
+
+    # Perimeter law: no area term.
+    w11, w12, w21, w22 = model_loops(lambda r, t: -c * (r + t))
+    o1, o2 = loop_ordering(w11, w12, w22)
+    chi_p = creutz_chi22(w11, w12, w21, w22)
+    check("Control: a perimeter law W = exp(-c(R+T)) satisfies both ordering tests",
+          o1 and o2,
+          f"c = {c}: W(1,1)={w11:.4f} > W(1,2)={w12:.4f} > W(2,2)={w22:.4f}")
+    check("Control: the perimeter law has χ(2,2) = 0, so the χ(2,2) > 0 test rejects it",
+          abs(chi_p) < 1e-12 and not chi_p > 1e-12,
+          f"χ(2,2) = {chi_p:.2e}; the ordering does not discriminate, the Creutz ratio does")
+
+    # Pure area law plus perimeter: chi(2,2) = sigma.
+    w11, w12, w21, w22 = model_loops(lambda r, t: -sigma * r * t - c * (r + t))
+    chi_a = creutz_chi22(w11, w12, w21, w22)
+    check("Control: an area law W = exp(-σRT - c(R+T)) has χ(2,2) = σ",
+          abs(chi_a - sigma) < 1e-12,
+          f"σ = {sigma}, χ(2,2) = {chi_a:.12f}")
+
+    # Short-distance toy with no area term: chi(2,2) = kappa > 0.
+    w11, w12, w21, w22 = model_loops(lambda r, t: -c * (r + t) + kappa * (r / t + t / r))
+    o1, o2 = loop_ordering(w11, w12, w22)
+    chi_s = creutz_chi22(w11, w12, w21, w22)
+    check("Control: a short-distance toy W = exp(-c(R+T) + κ(R/T+T/R)), no area term, has χ(2,2) = κ > 0",
+          o1 and o2 and abs(chi_s - kappa) < 1e-12 and chi_s > 0,
+          f"κ = {kappa}, χ(2,2) = {chi_s:.12f}; a positive small-loop χ alone "
+          f"does not establish a string tension")
+
+
+# =============================================================================
+# Part 5: Imported context (printed, not counted)
 # =============================================================================
 
 def test_combined():
-    """Combine structural theorem with quantitative prediction."""
-    print("\n=== Part 5: Combined confinement result ===\n")
+    """Print the imported context the note relies on. Nothing here is counted."""
+    print("\n=== Part 5: Imported context (printed, not counted) ===\n")
 
-    check("Graph-first SU(3) at g_bare = 1 -> beta=6 support surface",
-          True,
-          "structural context + declared normalization")
+    imported("Graph-first SU(3) at g_bare = 1 gives β = 6 (computed in Part 1)",
+             "structural context + declared normalization")
+    imported("Standard SU(3) YM confinement is imported context",
+             "not a framework-native proof in this note")
+    imported("α_s(M_Z) = 0.1181 is consumed as a bounded transfer input",
+             "source boundary remains with alpha_s row")
+    imported("√σ near 440 MeV is the supplied phenomenological comparator",
+             "the Part 3 estimates are conditioned on the standard low-energy EFT bridge")
+    imported("The note claims bounded support, not retained confinement closure",
+             "beta=6 support + imported YM/lattice context")
 
-    check("Standard SU(3) YM confinement is bounded imported context",
-          True,
-          "not a framework-native proof in this note")
-
-    check("α_s(M_Z) = 0.1181 consumed as a bounded transfer input",
-          True,
-          "source boundary remains with alpha_s row")
-
-    check("√σ ≈ 440 MeV (determined by α_s through QCD dynamics)",
-          True,
-          "bounded: conditioned on standard low-energy EFT bridge",
-          kind="BOUNDED")
-
-    check("Framework supplies bounded confinement support, not retained closure",
-          True,
-          "beta=6 support + imported YM/lattice context")
-
-    # Predictions
-    print("\n  --- Experimental predictions ---")
-
-    check("Linear Regge trajectories with slope α' = 1/(2πσ) ≈ 0.9 GeV⁻²",
-          True,
-          f"α' = {1.0 / (2 * np.pi * SQRT_SIGMA_EXP ** 2):.2f} GeV⁻² "
-          f"(exp: ≈ 0.9 GeV⁻²)",
-          kind="BOUNDED")
-
-    check("Deconfining transition at T_c ≈ 270 MeV (from √σ and lattice ratio T_c/√σ)",
-          True,
-          "T_c/√σ ≈ 0.60 (lattice QCD) → T_c ≈ 264 MeV",
-          kind="BOUNDED")
-
-    check("Flux tube formation between static quarks",
-          True,
-          "Wilson area law ⇔ linear potential ⇔ chromoelectric flux tube")
+    print("\n  --- Textbook consequences of the imported context (not shown by this runner) ---")
+    imported("Regge slope α' = 1/(2πσ) at the 440 MeV comparator",
+             f"α' = {1.0 / (2 * np.pi * SQRT_SIGMA_EXP ** 2):.2f} GeV⁻²; "
+             f"phenomenological value ≈ 0.9 GeV⁻²")
+    imported("Quenched deconfinement scale from the supplied ratio T_c/√σ ≈ 0.60",
+             f"T_c ≈ {0.60 * SQRT_SIGMA_EXP * 1000:.0f} MeV at √σ = 440 MeV")
+    imported("Area law ⇔ linear potential ⇔ chromoelectric flux tube",
+             "textbook relation; this runner does not show an area law")
 
     return True
 
@@ -650,14 +724,16 @@ def main():
     print("=" * 72)
     print()
     print("SUPPORT: beta=6 graph-first SU(3) context plus imported")
-    print("         Yang-Mills/lattice/EFT inputs gives bounded confinement")
-    print("         and string-tension consistency.")
+    print("         Yang-Mills/lattice/EFT inputs give conditional string-tension")
+    print("         estimates; a finite 4⁴ Monte Carlo is a diagnostic only.")
+    print("IMPORTED CONTEXT and SUPPLIED lines are printed, not counted.")
     print()
 
     test_structural_confinement()
     lam5, lam4, lam3 = test_coupling_running()
     test_string_tension(lam5, lam3)
     test_monte_carlo()
+    test_wilson_loop_controls()
     test_combined()
     test_source_status_firewall()
 
@@ -670,9 +746,12 @@ def main():
         print("\n*** FAILURES DETECTED ***")
         sys.exit(1)
     else:
-        print("\nAll checks passed. The branch provides bounded support for")
-        print("SU(3) confinement/string-tension consistency; it does not")
-        print("claim retained framework-native confinement closure.")
+        print("\nAll counted checks passed: β = 6 arithmetic, conditional")
+        print("estimates on imported inputs, a finite 4⁴ Monte Carlo diagnostic")
+        print("and analytic Wilson-loop controls. The small-loop ordering and")
+        print("Creutz ratio do not establish an area law or a string tension;")
+        print("confinement stays imported context, and no retained")
+        print("framework-native confinement closure is claimed.")
         sys.exit(0)
 
 

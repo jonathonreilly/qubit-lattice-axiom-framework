@@ -1,17 +1,28 @@
 #!/usr/bin/env python3
 """
-Lane 1 B2 boundary: pure-gauge data cannot close dynamical screening.
+Lane 1 B2 diagnostic: the pure-gauge payload does not fix dynamical screening.
 
 Question:
-  Can the current beta=6.0 pure-gauge / quenched string-tension data and the
-  rough 0.96 screening factor close the N_f=2+1 dynamical screening budget
-  for sqrt(sigma)?
+  Does the current beta=6.0 pure-gauge / quenched string-tension payload fix
+  the rough 0.96 screening factor that the N_f=2+1 dynamical screening budget
+  for sqrt(sigma) uses?
 
-Answer on the current branch-local science surface:
-  No. The B2 factor is a sea-fermion determinant effect. Pure-gauge Wilson-loop
-  and Creutz-ratio data are compatible with a family of screening factors until
-  a dynamical determinant calculation, or an explicitly budgeted external
-  comparator, is supplied.
+Answer on the 2026-04-29 repo surface (a diagnostic, not a no-go theorem):
+  No. The payload numbers do not involve the factor, so they leave it open.
+  The factor must come from a supplied determinant input. Ways to supply it
+  include an N_f=2+1 determinant ensemble, a framework derivation of the
+  determinant correction, and an explicitly budgeted external comparator;
+  that list is not exhaustive.
+
+What the checks are:
+  - Part 1 and Part 4 text checks confirm phrases in the cited notes and in
+    the confinement runner source.
+  - Parts 2 to 4 compute on chosen examples: a supplied factor family, a toy
+    determinant bank and chosen sea masses. Two in-run controls show that a
+    degenerate factor family and a decoupled (very heavy) sea are rejected.
+  - Part 5 prints a dated checklist of missing inputs as uncounted
+    `SUPPLIED CHECKLIST:` lines. Those items are stipulated, not computed.
+None of this is an exhaustive physical obstruction.
 """
 
 from __future__ import annotations
@@ -58,6 +69,10 @@ def read(rel_path: str) -> str:
 SQRT_SIGMA_QUENCHED_MEV = 484.0
 ROUGH_SCREENING_FACTOR = 0.96
 PDG_COMPARATOR_MEV = 440.0
+SUPPLIED_FACTOR_FAMILY = (0.90, 0.94, ROUGH_SCREENING_FACTOR, 1.00)
+# Supplied scale-setting constants used by the confinement note's Method 2.
+R0_FM = 0.472
+HBARC_MEV_FM = 197.327
 
 
 def pure_gauge_payload() -> tuple[float, float, float, float]:
@@ -71,6 +86,20 @@ def pure_gauge_payload() -> tuple[float, float, float, float]:
 
 def screened_readout(screening_factor: float) -> float:
     return SQRT_SIGMA_QUENCHED_MEV * screening_factor
+
+
+def quenched_readout_from_payload(payload: tuple[float, float, float, float]) -> float:
+    """sqrt(sigma) in MeV from the payload alone; the factor is not an input."""
+    _beta, r0_over_a, sigma_a2, _plaquette = payload
+    return math.sqrt(sigma_a2) * r0_over_a / R0_FM * HBARC_MEV_FM
+
+
+def relative_spread(values: list[float]) -> float:
+    return (max(values) - min(values)) / (sum(values) / len(values))
+
+
+def supplied(item: str) -> None:
+    print(f"  SUPPLIED CHECKLIST: {item}")
 
 
 def determinant_factor(singular_values: np.ndarray, masses: tuple[float, ...]) -> float:
@@ -96,7 +125,7 @@ def reweighted_observable(
 
 def test_authority_text() -> None:
     print("\n" + "=" * 88)
-    print("PART 1: AUTHORITY TEXT NAMES B2 AS THE LOAD-BEARING GAP")
+    print("PART 1: CITED TEXT NAMES B2 AS THE LOAD-BEARING GAP (TEXT CHECKS)")
     print("=" * 88)
 
     lane = read("docs/lanes/open_science/01_HADRON_MASS_PROGRAM_OPEN_LANE_2026-04-26.md")
@@ -113,7 +142,7 @@ def test_authority_text() -> None:
         "(B2)" in audit and "dynamical screening" in audit and "dominant" in audit,
     )
     check(
-        "Audit note requires a proper N_f=2+1 lattice calculation",
+        "Audit note names a proper N_f=2+1 lattice calculation as one route",
         "proper `N_f = 2+1` lattice" in audit and "beta = 6.0" in audit,
     )
     check(
@@ -126,30 +155,33 @@ def test_authority_text() -> None:
     )
 
 
-def test_screening_factor_degeneracy() -> None:
+def test_screening_factor_degeneracy() -> list[float]:
     print("\n" + "=" * 88)
-    print("PART 2: SAME PURE-GAUGE PAYLOAD ADMITS MANY SCREENING FACTORS")
+    print("PART 2: ONE PURE-GAUGE PAYLOAD, A SUPPLIED FAMILY OF SCREENING FACTORS")
     print("=" * 88)
 
     payload = pure_gauge_payload()
-    factors = [0.90, 0.94, ROUGH_SCREENING_FACTOR, 1.00]
+    factors = list(SUPPLIED_FACTOR_FAMILY)
     readouts = [screened_readout(factor) for factor in factors]
+    quenched = quenched_readout_from_payload(payload)
 
     print(f"  pure-gauge payload = beta, r0/a, sigma_a2, plaquette = {payload}")
+    print(f"  quenched sqrt(sigma) from the payload = {quenched:.2f} MeV (no factor enters)")
     for factor, value in zip(factors, readouts):
         print(f"  f_screen={factor:.2f} -> sqrt(sigma)={value:.2f} MeV")
 
     check(
-        "Pure-gauge payload is unchanged across the factor family",
-        len({payload for _ in factors}) == 1,
+        "The payload alone gives the 484 MeV quenched readout; the factor is not an input",
+        abs(quenched - SQRT_SIGMA_QUENCHED_MEV) < 1.0,
+        f"computed {quenched:.2f} MeV from sqrt(sigma a^2) (r0/a) / r0",
     )
     check(
-        "Different factors produce materially different sqrt(sigma) readouts",
+        "Different factors in the supplied family give materially different readouts",
         max(readouts) - min(readouts) > 40.0,
         f"spread={max(readouts) - min(readouts):.2f} MeV",
     )
     check(
-        "The current rough factor is not selected by the pure-gauge payload",
+        "Distinct factors in the supplied family give distinct readouts from one payload",
         ROUGH_SCREENING_FACTOR in factors and len(set(readouts)) == len(factors),
     )
     check(
@@ -157,6 +189,13 @@ def test_screening_factor_degeneracy() -> None:
         abs(PDG_COMPARATOR_MEV / SQRT_SIGMA_QUENCHED_MEV - ROUGH_SCREENING_FACTOR) > 0.04,
         f"440/484={PDG_COMPARATOR_MEV / SQRT_SIGMA_QUENCHED_MEV:.4f}",
     )
+    degenerate = [screened_readout(ROUGH_SCREENING_FACTOR) for _ in factors]
+    check(
+        "Control: a degenerate family (every factor 0.96) is rejected by the spread test",
+        not (max(degenerate) - min(degenerate) > 40.0) and len(set(degenerate)) == 1,
+        "the spread test can fail; the witness is the supplied family, not the payload",
+    )
+    return readouts
 
 
 def test_determinant_reweighting_is_load_bearing() -> None:
@@ -179,29 +218,34 @@ def test_determinant_reweighting_is_load_bearing() -> None:
     light_sea = reweighted_observable(gauge_weights, local_sigma_a2, singular_value_bank, masses=(0.02, 0.03, 0.10))
     heavier_sea = reweighted_observable(gauge_weights, local_sigma_a2, singular_value_bank, masses=(0.50, 0.60, 0.70))
 
+    decoupled = reweighted_observable(gauge_weights, local_sigma_a2, singular_value_bank, masses=(100.0, 100.0, 100.0))
+
+    print("  (toy bank: chosen gauge weights, observables, singular values and sea masses)")
     print(f"  quenched <sigma a^2>       = {quenched:.8f}")
     print(f"  light-sea <sigma a^2>      = {light_sea:.8f}")
     print(f"  heavier-sea <sigma a^2>    = {heavier_sea:.8f}")
+    print(f"  decoupled-sea <sigma a^2>  = {decoupled:.8f}")
 
     check(
-        "Including determinant weights changes the measured observable",
+        "In the toy bank, determinant weights change the measured observable",
         abs(light_sea - quenched) > 1.0e-3,
         f"delta={light_sea - quenched:+.6f}",
     )
     check(
-        "Changing sea masses changes the determinant-weighted observable",
+        "In the toy bank, changing sea masses changes the determinant-weighted observable",
         abs(light_sea - heavier_sea) > 1.0e-4,
         f"delta={light_sea - heavier_sea:+.6f}",
     )
     check(
-        "Therefore N_f and sea-mass data are load-bearing for B2",
-        abs(light_sea - quenched) > 1.0e-3 and abs(light_sea - heavier_sea) > 1.0e-4,
+        "Control: a decoupled sea (masses 100) is rejected by the determinant-change test",
+        not (abs(decoupled - quenched) > 1.0e-3),
+        f"delta={decoupled - quenched:+.2e}; near-constant determinants leave the measure unchanged",
     )
 
 
-def test_volume_and_budget_boundary() -> None:
+def test_volume_and_budget_boundary(readouts: list[float]) -> None:
     print("\n" + "=" * 88)
-    print("PART 4: CURRENT FINITE RUNNER CANNOT BE THE B2 CLOSURE")
+    print("PART 4: THE CURRENT FINITE RUNNER IS NOT A DYNAMICAL EXTRACTION")
     print("=" * 88)
 
     confinement_note = read("docs/CONFINEMENT_STRING_TENSION_NOTE.md")
@@ -226,32 +270,29 @@ def test_volume_and_budget_boundary() -> None:
         math.isclose(ratio, 256.0),
         f"link-count ratio={ratio:.0f}x",
     )
+    spread = relative_spread(readouts)
     check(
-        "The B2 spread exceeds a one-percent budget until determinant data enter",
-        (1.00 - 0.90) > 0.01,
-        "screening-factor family spans ten percent",
+        "The supplied factor family spreads the readout by more than one percent",
+        spread > 0.01,
+        f"relative spread of the Part 2 readouts = {spread:.4f}",
     )
 
 
 def test_status_firewall() -> None:
     print("\n" + "=" * 88)
-    print("PART 5: CLAIM-STATUS FIREWALL")
+    print("PART 5: DATED CHECKLIST OF MISSING INPUTS (PRINTED, NOT COUNTED)")
     print("=" * 88)
+    print("  These items describe the 2026-04-29 repo surface. They are stipulated,")
+    print("  not computed by this runner, and they are not counted in the summary.")
 
-    pure_payload = pure_gauge_payload()
-    missing_inputs = {
-        "sea_fermion_determinant": True,
-        "n_f_2_plus_1_ensemble": True,
-        "sea_mass_specification": True,
-        "large_volume_creutz_ratio": True,
-    }
-    no_current_surface_closure = all(missing_inputs.values()) and pure_payload == pure_gauge_payload()
-
-    check("Sea-fermion determinant input is absent from the current B2 payload", missing_inputs["sea_fermion_determinant"])
-    check("No N_f=2+1 beta=6.0 ensemble is present in the current B2 payload", missing_inputs["n_f_2_plus_1_ensemble"])
-    check("Sea-mass specification remains load-bearing", missing_inputs["sea_mass_specification"])
-    check("Large-volume Creutz-ratio extraction remains load-bearing", missing_inputs["large_volume_creutz_ratio"])
-    check("B2 cannot close on the current data alone", no_current_surface_closure)
+    supplied("no sea-fermion determinant input is in the B2 payload")
+    supplied("no N_f=2+1 beta=6.0 ensemble is in the B2 payload")
+    supplied("no sea-mass specification is in the B2 payload")
+    supplied("no large-volume Creutz-ratio extraction is in the B2 payload")
+    supplied("consequence on that surface: the payload alone does not fix the factor")
+    print("  Routes that would supply a determinant input include a dynamical ensemble,")
+    print("  a framework derivation and an explicitly budgeted external comparator;")
+    print("  the list is not exhaustive.")
 
 
 def main() -> int:
@@ -259,36 +300,35 @@ def main() -> int:
     print("LANE 1 B2: DYNAMICAL SCREENING BOUNDARY")
     print("=" * 88)
     print()
-    print("Claim under test:")
-    print("  Current pure-gauge beta=6.0 data plus the rough 0.96 factor might")
-    print("  close the N_f=2+1 dynamical screening budget for sqrt(sigma).")
+    print("Question:")
+    print("  Does the current pure-gauge beta=6.0 payload fix the rough 0.96 factor")
+    print("  used for the N_f=2+1 dynamical screening budget of sqrt(sigma)?")
     print()
-    print("Boundary result:")
-    print("  The B2 factor is determinant-dependent. The current data remain")
-    print("  bounded-support only until a dynamical calculation or explicit")
-    print("  budgeted comparator is supplied.")
+    print("Diagnostic (not a no-go theorem):")
+    print("  The payload numbers do not involve the factor. On the 2026-04-29")
+    print("  surface the factor is a supplied input, and the checks below use")
+    print("  chosen examples.")
 
     test_authority_text()
-    test_screening_factor_degeneracy()
+    readouts = test_screening_factor_degeneracy()
     test_determinant_reweighting_is_load_bearing()
-    test_volume_and_budget_boundary()
+    test_volume_and_budget_boundary(readouts)
     test_status_firewall()
 
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 88)
-    print(f"per_element: checked — determinant reweighting changes individual configuration weights while the pure-gauge scalar input stays fixed; FAIL={FAIL_COUNT}.")
-    print(f"per_site: checked — the current L=4 pure-gauge carrier and missing sea-mass data were inspected explicitly; FAIL={FAIL_COUNT}.")
-    print(f"per_mode: checked — screening factors 0.90, 0.96, and 1.00 produce distinct sqrt(sigma) readouts; FAIL={FAIL_COUNT}.")
-    print(f"per_block: checked — paired determinant-weight blocks with the same pure-gauge payload yield different reweighted observables; FAIL={FAIL_COUNT}.")
-    print(f"lattice_wide: checked — the 16^4 target has 256 times the L=4 link count and the ten-percent screening spread exceeds the one-percent budget; PASS={PASS_COUNT}, FAIL={FAIL_COUNT}.")
+    print("Counted: text checks of the cited notes and runner, arithmetic on the")
+    print("supplied factor family and toy determinant bank, and two controls.")
+    print("Not counted: the Part 5 SUPPLIED CHECKLIST lines.")
 
     if FAIL_COUNT:
-        print("B2 boundary runner failed; do not use the note.")
+        print("B2 diagnostic runner failed; do not use the note.")
         return 1
 
-    print("Result: B2 remains open; current pure-gauge data cannot close it.")
-    print("A proper N_f=2+1 determinant ensemble or explicit budgeted comparator is required.")
+    print("Result: B2 remains open; the current pure-gauge payload does not fix the factor.")
+    print("A determinant input is needed: for example an N_f=2+1 ensemble, a framework")
+    print("derivation of the determinant correction, or an explicitly budgeted comparator.")
     return 0
 
 

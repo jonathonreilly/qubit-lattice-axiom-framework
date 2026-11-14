@@ -30,8 +30,43 @@ vocabulary correctly) and the YT UV-to-IR transport master obstruction
 theorem (which already names the non-perturbative `α_LM^{16}` factor
 as outside retention scope by design). See
 [HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)
-for the four open primitives P1-P4 and the branch-local route search
-record.
+for the hierarchy premises P1-P4 and the branch-local route search
+record. Since the 2026-11-14 correction below, P1 is read as the approved
+units reference and P2-P4 as the open premises (§11.6).
+
+## Premise classification correction (2026-11-14)
+
+Earlier text in §8.1 listed model ingredients under "Axioms", and the
+hierarchy passages counted the Planck units reference as an open primitive
+that bounds the `v` row. Both are corrected here. No axiom or primitive is
+added, and nothing here is an owner adoption.
+
+- **Axioms.** The framework axioms are the four named in
+  [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md): Lattice,
+  Qubit, Admissibility and Record. `N_c = 3`, `g_bare = 1` and the SU(3)
+  and staggered structure are not axiom content. They are upstream
+  structural premises or declared conventions; that memo lists
+  `g_bare = 1` convention handling among the open gates outside the axioms.
+- **Approved units reference.** `a^{-1} = M_Pl` is the approved
+  `scale_reference_primitive`
+  ([SCALE_REFERENCE_PRIMITIVE_NOTE.md](SCALE_REFERENCE_PRIMITIVE_NOTE.md)).
+  It is a units conversion with no dimensionless content. It is a named
+  premise and does not bound this row. The runner uses the value
+  `M_Pl = 1.2209 x 10^19 GeV`; the `v` readout scales with it at
+  elasticity `+1`.
+- **Still open, and separate.** The units reference does not assert that
+  the framework's natural unit equals the Planck length as a gravity
+  result; that self-consistency question remains a separate open gravity
+  derivation (the Planck lane's Wald-Noether matching is
+  `audited_conditional`). It also does not identify `a^{-1}` as the
+  physical cutoff at which the supplied Ward boundary, `lambda(M_Pl) = 0`
+  and the running of §5-§7 start; those rows already list their boundary
+  conditions as supplied. Neither open item is used to convert the `v`
+  formula to GeV.
+- **Hierarchy premises.** The dimensionless content of the hierarchy
+  formula, `v a = (7/8)^{1/4} alpha_LM^16`, rests on the open premises P2
+  to P4 (§11.6). P1 of the 2026-05-10 packet is the approved units
+  reference, as item B2 of the honest-status note already records.
 
 
 
@@ -142,16 +177,20 @@ here changes and no audit field is touched.
   are not asserted unchanged.
 
 Still standing: the inventory role of this note, the `BOUNDED` label on `v`, and
-the open primitives P1 to P4.
+the hierarchy premises P1 to P4 (read since 2026-11-14 as in §11.6: P1 the
+approved units reference, P2 to P4 open).
 
 ---
 
 ## 1. Framework Statement
 
-This inventory starts from the proposed Cl(3) on Z^3 framework and records
-conditional readouts. It also uses the admitted scales, normalizations,
-readout coefficients, matter realization, schemes and thresholds listed below;
-this inventory does not derive those inputs from that starting statement.
+This inventory starts from the four framework axioms (Lattice, Qubit,
+Admissibility, Record; [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md)),
+written in this package's older language as "Cl(3) on Z^3", and from the
+approved units reference `a^{-1} = M_Pl`. It records conditional readouts.
+It also uses the supplied normalizations, readout coefficients, matter
+realization, schemes and thresholds listed below; this inventory does not
+derive those inputs from the axioms.
 
 ---
 
@@ -198,11 +237,12 @@ alpha_LM^2 = alpha_bare alpha_s(v).
 The hierarchy formula carries the same-surface plaquette/coupling-chain
 match between `M_Pl × (7/8)^{1/4} × α_LM^{16}` and PDG `v_obs = 246.22 GeV`
 at relative deviation `+0.0255 %`. The residual is arithmetic at the declared pure-gauge reuse value (and
-changes under the plaquette alternatives above); the underlying formula carries four named
-load-bearing primitives (M_Pl import; Wick rotation Z³ → Z⁴ for the 4D
-taste count `2^4 = 16`; the algebraic substitution `u_0^{16} → α_LM^{16}`;
-EWSB observable identification) that have not been derived from the
-physical Cl(3) local algebra plus Z^3 spatial substrate.
+changes under the plaquette alternatives above). The conversion to GeV uses
+the approved units reference `a^{-1} = M_Pl` (P1; it does not bound the
+row). The dimensionless content carries three named open premises (P2,
+Wick rotation Z³ → Z⁴ for the 4D taste count `2^4 = 16`; P3, the algebraic
+substitution `u_0^{16} → α_LM^{16}`; P4, the EWSB observable
+identification) that have not been derived from the four framework axioms.
 Per-route hierarchy notes
 ([HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md](HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md),
 [HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md),
@@ -417,7 +457,9 @@ synthesis runner, not recomputed there.
 The cited calibration runner prints
 `129.6 + 1.5*(m_t-173.34)/0.76 - 0.5*(alpha_s-0.1184)/0.0007` GeV.
 Substitution of this note's 172.57 GeV and 0.1181 gives 128.2945 GeV,
-not 125.10 GeV. This arithmetic does not run the full RGE or establish which
+not 125.10 GeV. The synthesis runner recomputes this value exactly as
+`682527/5320` GeV and fails if its printed value differs or equals 125.10.
+This arithmetic does not run the full RGE or establish which
 historical input set produced 125.10. That value and its old 0.12% comparison
 are retained above as history, not as a reproduced full-three-loop result.
 The parametric stability-boundary fit is an imported calibration conditional
@@ -451,15 +493,25 @@ that the 12% gap is closed.
 
 Every ingredient in the prediction chain, with its status:
 
-### 8.1 Axioms
+### 8.1 Named premises and supplied model ingredients
+
+Named premises. They carry no standing and need none; how the chain uses
+them is still judged.
+
+| Premise | Source | What it supplies here |
+|---------|--------|-----------------------|
+| Lattice, Qubit, Admissibility, Record | [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md) | The four framework axioms. Lattice gives the sites `Z^3`, so d = 3. Qubit gives the one-site domain `M_2(C)`, with an equivalent `Cl(3,0)`-compatible presentation. |
+| `scale_reference_primitive` | [SCALE_REFERENCE_PRIMITIVE_NOTE.md](SCALE_REFERENCE_PRIMITIVE_NOTE.md) | The approved units reference `a^{-1} = M_Pl`, runner value 1.2209 x 10^19 GeV. A units conversion only; no dimensionless content. |
+
+Supplied model ingredients. These are not axioms; each is an upstream
+premise or a declared convention, not closed here.
 
 | Ingredient | Value | Source |
 |------------|-------|--------|
-| Cl(3) on Z^3 | axiom | Starting postulate |
-| N_c = 3 | 3 | Cl(3) spatial dimension |
-| d = 3 | 3 | Spatial dimensions from Cl(3) |
-| M_Pl | 1.221 x 10^19 GeV | Framework UV cutoff |
-| g_bare = 1 | 1.0 | Cl(3) canonical normalization |
+| "Cl(3) on Z^3" starting statement | -- | Older package name for the Lattice and Qubit setting; the SU(3) and staggered structure used below is downstream content |
+| N_c = 3 | 3 | Graph-first SU(3) upstream structural premise; not axiom content |
+| g_bare = 1 | 1.0 | Declared canonical normalization; `g_bare = 1` convention handling is an open gate outside the axioms |
+| `a^{-1}` as the physical UV cutoff | -- | Not supplied by the units reference. Reading `a^{-1}` as the scale where the supplied Ward boundary, `lambda(M_Pl) = 0` and the running start, and the gravity question that the natural unit equals the Planck length, stay open |
 
 ### 8.2 Declared pure-gauge reuse input
 
@@ -526,13 +578,16 @@ transfer calculations; this inventory supplies no zero-import closure.
 `v = M_Pl × (7/8)^{1/4} × α_LM^{16} = 246.28 GeV` is a **bounded
 numerical match** on the canonical surface (per
 [HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md);
-see §11.6 below). It rides on `M_Pl` from the Planck lane (admitted UV
-import; the framework anchors `M_Pl` via Wald-Noether matching, itself
-`audited_conditional`), on a Wick rotation `Z^3 → Z^4` for the 4D
-taste count `2^4 = 16` not derived from the Z^3 spatial substrate, on
-the algebraic substitution `u_0^{16} → α_LM^{16}` not derived as a
+see §11.6 below). Its conversion to GeV uses the approved units reference
+`a^{-1} = M_Pl` (`scale_reference_primitive`), which does not bound the
+row. Its dimensionless content rides on a Wick rotation `Z^3 → Z^4` for
+the 4D taste count `2^4 = 16` not derived from the Z^3 spatial substrate,
+on the algebraic substitution `u_0^{16} → α_LM^{16}` not derived as a
 determinant identity, and on the lattice → SM-Higgs-VEV observable
-identification. The +0.0255 % is a residual at the declared reuse value,
+identification. The separate gravity question, whether the framework's
+natural unit equals the Planck length (the Planck lane's Wald-Noether
+matching is `audited_conditional`), stays open; this readout does not
+use it. The +0.0255 % is a residual at the declared reuse value,
 not a certified physical agreement; this package does not
 supply a framework derivation of `v = Λ × α^N` for integer `N`.
 
@@ -548,16 +603,19 @@ With n_link = 2, this gives alpha_s(v) = 0.1033.
 `v = M_Pl × (7/8)^{1/4} × α_LM^{16} = 246.28 GeV` matches PDG
 `v_obs = 246.22 GeV` to `+0.0255 %` on the same-surface plaquette /
 coupling chain at the declared reuse value. It is not a physical VEV
-agreement and rides on four named load-bearing primitives that have not been
-derived from the physical Cl(3) local algebra plus Z^3 spatial substrate:
-(P1) `M_Pl` import via the Planck lane's
-Wald-Noether matching; (P2) Wick rotation `Z^3 → Z^4` to obtain the
+agreement. Its GeV conversion uses the approved units reference
+`a^{-1} = M_Pl` ((P1) of the 2026-05-10 packet, now the
+`scale_reference_primitive`; it does not bound the row). Its dimensionless
+content rides on three named open premises that have not been derived from
+the four framework axioms: (P2) Wick rotation `Z^3 → Z^4` to obtain the
 4D taste count `2^4 = 16` (textbook lattice fermion-doubling result;
 the framework's spatial substrate is `Z^3`); (P3) the algebraic
 substitution `u_0^{16} → α_LM^{16}` between the determinant power
 (per HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM) and the formula
 power; (P4) identification of the formula's dimension-1 output with the
-SM Higgs VEV. The framework's own
+SM Higgs VEV. The separate gravity question, whether the framework's
+natural unit equals the Planck length (Planck lane, Wald-Noether matching,
+`audited_conditional`), stays open and is not used by this readout. The framework's own
 [YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md](YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md)
 §3.2 already records the non-perturbative `α_LM^{16}` factor as
 "outside the current retention scope by design"; this honest-status
@@ -664,16 +722,23 @@ bound the omitted terms or matching errors. The old ~3% and <1% estimates
 are not certified error bounds; a complete higher-order implementation and
 systematic analysis are needed.
 
-### 11.6 Hierarchy formula primitives (P1-P4)
+### 11.6 Hierarchy formula premises (P1-P4)
 
 The hierarchy formula `v = M_Pl × (7/8)^{1/4} × α_LM^{16} = 246.28 GeV`
 matches PDG `v_obs = 246.22 GeV` to `+0.0255 %` on the same-surface
-plaquette / coupling chain, but rides on four named load-bearing
-primitives that have not been derived from the physical Cl(3) local
-algebra plus Z^3 spatial substrate:
+plaquette / coupling chain. Its GeV conversion uses the approved units
+reference, and its dimensionless content rides on three named open
+premises (P2-P4) that have not been derived from the four framework
+axioms:
 
-- **P1.** `M_Pl` import as the UV scale (Planck lane authority,
-  itself `audited_conditional`).
+- **P1 (approved, not open).** `M_Pl` as the units reference
+  `a^{-1} = M_Pl`: the approved `scale_reference_primitive`, a units
+  conversion with no dimensionless content, which does not bound this
+  row. The value `1.2209 x 10^19 GeV` enters at elasticity `+1`. What
+  stays open is separate and is not used by this readout: whether the
+  framework's natural unit equals the Planck length as a gravity result
+  (Planck lane, `audited_conditional`), and any reading of `a^{-1}` as a
+  physical cutoff beyond units.
 - **P2.** Wick rotation `Z³ → Z⁴` to obtain the 4D taste count
   `2^4 = 16`. The framework's spatial substrate is `Z^3`, where the
   taste count is `2^3 = 8`. The 4D extension is borrowed from
@@ -688,8 +753,9 @@ algebra plus Z^3 spatial substrate:
   the SM Higgs VEV (lattice → physical observable identification).
 
 This package does not supply a framework derivation of
-`v = Λ × α^N` for integer `N` from the baseline. Closure path: derive at
-least one of P1-P4 from primitives. Most defensible route is per-step
+`v = Λ × α^N` for integer `N` from the baseline. Closure needs P2-P4
+derived from the four axioms and approved primitives, or kept as named
+conditional premises. Most defensible route is per-step
 Wilsonian transport on the 16-step taste staircase (C3 in
 HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10), which the framework's
 YT_P2_TASTE_STAIRCASE_BETA_FUNCTIONS_NOTE records as non-perturbative at
@@ -722,10 +788,11 @@ are not independent predictions or a current uncertainty-certified scorecard:
 
 [^v-status]: Bounded numerical match on the same-surface
 plaquette/coupling chain at `+0.0255 %`. The hierarchy formula
-`v = M_Pl × (7/8)^{1/4} × α_LM^{16}` rides on four open primitives
-P1-P4 (M_Pl import; Wick rotation `Z^3 → Z^4` for 4D taste count;
-`u_0^{16} → α_LM^{16}` algebraic substitution; EWSB observable
-identification); see §11.6 above and
+`v = M_Pl × (7/8)^{1/4} × α_LM^{16}` converts to GeV with the approved
+units reference (P1) and rides on three open premises P2-P4 (Wick
+rotation `Z^3 → Z^4` for 4D taste count; `u_0^{16} → α_LM^{16}`
+algebraic substitution; EWSB observable identification); see §11.6
+above and
 [HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md).
 
 The table preserves historical reported values and comparators, including
@@ -734,5 +801,5 @@ different loop-order values establish independence, physical matching or an
 uncertainty bound. The Higgs calibration and vacuum-stability limits are
 stated in §7.3–7.4.
 
-Conditional support inventory with the listed admitted and supplied inputs;
-no independent closure is asserted.
+Conditional support inventory with the listed named premises and supplied
+inputs; no independent closure is asserted.

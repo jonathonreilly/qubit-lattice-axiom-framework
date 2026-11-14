@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_complete_prediction_chain.py
-runner_sha256: ad2f7d08ad41aed6b9dfffb811f66b8fc689076fecb06cd788346cfd64871db5
+runner_sha256: 4848e5ebb86b57d3bc8a70d9def560576ff6588243116c2197418b869178c8f2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -21,7 +21,9 @@ Framework inputs
   taste_weight    = 0.388889 (= 7/18)
 
 Conditional historical support inventory; most rows below are supplied literals
-INPUT_SCOPE: declared pure-gauge plaquette, M_Pl, Ward/threshold/readout conventions
+PREMISES: four framework axioms; approved units reference a^-1 = M_Pl (scale_reference_primitive, units only)
+INPUT_SCOPE: supplied pure-gauge plaquette and Ward/threshold/readout conventions
+OPEN, NOT USED FOR UNITS: gravity identification of the natural unit with the Planck length; a^-1 as a physical cutoff
 MATCHING_SCOPE: kappa_EW=0 and kappa_Y=0 are supplied specializations
 HIGGS_SCOPE: 125.10 is not derived here; displayed calibration inputs give the value below
   Supplied calibration formula at mt=172.57, alpha_s=0.1181: 128.2945 GeV
@@ -48,6 +50,14 @@ Primary support stack
   YT_QFP_INSENSITIVITY_SUPPORT_NOTE.md
   HIGGS_MASS_FROM_AXIOM_NOTE.md
 
+Arithmetic checks (counted)
+  [PASS] alpha_LM^2 = alpha_bare * alpha_s(v) on the canonical surface  (0.0082206565 vs 0.0082206565)
+  [PASS] v = M_Pl (7/8)^(1/4) alpha_LM^16 reproduces the inventory's 246.28 GeV  (v = 246.2828 GeV at M_Pl = 1.2209e+19 GeV)
+  [PASS] taste weight (7/8)(1/2)(8/9) = 7/18 exactly  (0.388888888888889)
+  [PASS] printed calibration value equals the exact 682527/5320 GeV  (exact 682527/5320 = 128.294548872; printed 128.294548872)
+  [PASS] the calibration value is not the 125.10 GeV historical literal  (difference +3.1945 GeV)
+
+SUMMARY: PASS=5 FAIL=0
 Status: support inventory; audit status is pipeline-derived
 
 ----- stderr -----

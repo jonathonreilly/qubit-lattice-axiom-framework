@@ -40,6 +40,7 @@ carries no proof weight), OPEN.
 - 2026-11-14T04:42Z: steps 3 and 4 written (Sections 3 and 4: frozen groups, verdict of Step A).
 - 2026-11-14T04:45Z: steps 5 to 8 written (Sections 5 to 7: Theorem R, Lemma CUT, RARE, result).
 - 2026-11-14T04:50Z: self-check pass; five wording corrections applied (listed in Section 7).
+- 2026-11-14T04:55Z: two kill tests of Theorem R added to Section 5.2 (Ising ring by hand; toron chain GUIDE). Item finished.
 
 ## 1. Inputs read, duplicate check, notation (step 1; READ = read at the pinned commit, not re-proved)
 
@@ -413,6 +414,18 @@ grad_u R_s = beta (1 - R_s^2)(m_+ - m_-)/2. Substitute; use grad log rho = -2 gr
 For the last bound insert the splitting of Gamma_s into the Cauchy-Schwarz step and solve for
 |grad_u R_s|^2, using 1 - R_s^2 - Var(M_1) = E_mix[1 - M_1^2]. QED
 
+**Two kill tests of Theorem R (it survived both).**
+- Ising ring, by hand (PROVED). T = [[e^K, e^(-K)], [e^(-K), e^K]], J the spin flip. Then
+  E_s = lambda_+^s/2, O_s = lambda_-^s u v/2, R_s = h^s u v with h = tanh K, and V_s = h^(2s). Under
+  mix_s the first spin w_1 equals u with probability e^K/(2 cosh K), so E_mix[M_1] = h^(s-1) v u h
+  = R_s, and Var_mix(M_1) = h^(2s-2)(1 - h^2) = V_(s-1) - V_s: (R1) holds, with equality pointwise.
+- Toron chain of Model G (GUIDE, `/tmp/oddgap-fable-scratch/thmR_guide.py`, E_1 = 1/2, a = 6,
+  s = 2..5, a 1500-point periodic grid, run under the numeric lock at 71 percent memory free):
+  E[Var_mix(M_1)] equals V_(s-1) - V_s to seven digits (0.3899007, 0.1663981, 0.0622839,
+  0.0219903); E_mix[M_1] = R_s to 1e-15; R_s' = Cov(score, M_1) to 3e-6 (finite-difference error);
+  Cov^2 <= Var(score) Var(M_1) at every grid point; V_s/V_(s-1) = 0.41, 0.37, 0.37, 0.41 against
+  e^(-2 E_1) = 0.37.
+
 ### 5.3 Corollary R5 (CONDITIONAL on two named inputs)
 
 (ODD-GAP)_s: lambda_s >= lambda_0, and (FORCE-COV)_s: Gamma_s^* <= Gamma_0, for 2 <= s <= a/2. Then
@@ -581,7 +594,7 @@ distinct attempts (rule 11).
 | F2 | Frozen groups at beta = infinity: heat-bath form identically 0, so response factor 0 and gap factor 0 | PROVED |
 | F-fin | Frozen groups at large finite beta: p near the beta = infinity values; gap tunnelling-small | ARGUED |
 | A | Verdict: the gap factor carries the failure in all three rivals; the response factor fails only for U(1) below a box size (about 420 for cubes at these margins); (FR) alone is not a valid crux | PROVED from G2-G4, F1-F2 (thresholds by hand) |
-| R | Theorem R: V_s <= V_(s-1); V_s <= theta_s/(1 + theta_s) V_(s-1); p/(1 - p) <= prod theta_s/(1 + theta_s); the mixture splitting (R4) | PROVED |
+| R | Theorem R: V_s <= V_(s-1); V_s <= theta_s/(1 + theta_s) V_(s-1); p/(1 - p) <= prod theta_s/(1 + theta_s); the mixture splitting (R4) | PROVED (kill tests: Ising ring by hand; toron chain GUIDE) |
 | R5 | Flux half at the seed box from (ODD-GAP) lambda_0 >= 95.3 Gamma_0 (or 78.4 Gamma_0) and (FORCE-COV), with no (FR) | CONDITIONAL on (ODD-GAP)_s, (FORCE-COV)_s, s = 2..a/2 |
 | R-sup | The sup form of (FORCE-COV) fails in Model G: Gamma_s^* >= 0.98 pi^2 N/(4 s^2 L_1) | PROVED |
 | R-sup2 | The sup form is not volume-free for SU(2) thin slabs | ARGUED |

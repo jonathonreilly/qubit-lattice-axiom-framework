@@ -20,15 +20,26 @@ Research-stage working state. Nothing here is a public claim. No statement below
 7. **If not closed.** The smallest unproved averaged-curvature inequality and one GUIDE test that could refute it.
 8. **Status table and RESULT line.**
 
+Where the steps are: step 1 = Section 1; step 2 = Section 2; step 4 (attack 1, the integrated criterion) = Section 3;
+step 3 (fact tests) = Section 4; step 5 = Section 5; step 6 = Section 6; step 7 = Section 7; step 8 = Section 8.
+
 Status log (UTC times read from `date -u`):
 
 - 13:57 file created; reading inputs.
 - 14:10 inputs read: FINISH rows 941, 947, 954, 957, 958, 960, 968; `gap-fc-max.md` L39-282, L487-586; `gap-lsivac-max.md` L84-222;
   `gap-ps-disint-max.md` L46-95, L163-180, L371-486; check 958 finding 5; `prior/gap-lit-bridge-lsi.md` in full;
   `prior/gap-fullread-2.md` Section 3 (BBD Theorem 3.6 digest). Duplicate check done (Section 1.3).
+- 14:15 Sections 2 and 3 written (sources; the flow of the bridge marginal; Theorem POL-BR; zero-field values).
+- 14:18 Section 4 written (fact tests of the criterion of Section 3).
+- 14:24 Section 5 written (Attack 2: where the Ricci curvature sits; what an average over the measure can mean).
+- 14:26 Sections 6 and 7 written (Attack 3; the smallest unproved inequality; the GUIDE test design, before any run).
+- 14:30 7.3 and Section 8 written (test of 7.2 NOT run, with the reason; status table; RESULT). Numeric jobs of the row, all under lock holder
+  gap-avgcurv-968, one at a time: the one-link quadrature (14:28:05Z, 2 s), the smoke test of 7.4 (about 14:31Z, 1 min), the batch of 7.4-7.5.
 - 14:32 7.4 added: criteria for a run of the test of 7.2 at sides 8 to 24; batch launched in the background under the
   numeric lock (holder gap-avgcurv-968). Sections 7.3, 8 and the RESULT line were written BEFORE this run and say
-  "NOT run"; they are corrected in 7.5 and 8 when the batch ends. If this line is the last one, the run did not finish.
+  "NOT run"; they are corrected in 7.5 and 8 when the batch ends.
+- 15:34 batch ended (lock 14:32:32Z to 15:31:57Z, 42 runs, no error output, 72 percent memory free at the start, one
+  thread, nice). 7.5 written; 7.3, the table of 8.1, 8.2 and the RESULT line corrected for the run.
 
 ## 1. Inputs, target, duplicate check (READ; no new claim)
 
@@ -63,7 +74,6 @@ negative tensor term. So "no averaged form exists" was not established by row 95
 **Credit.** Ethan Sussman and Levent Alpoge (with Claude and Codex as authors of their text): the transfer frame
 and temporal-gauge setting of the account. Rows 941, 947 (Claude Fable 5.2): exponential family, Theorem BR.
 Bauerschmidt, Bodineau, Dagallier; Chen, Eldan; Piazza, Shen: named where used below.
-- 14:15 Sections 2 and 3 written (sources; the flow of the bridge marginal; Theorem POL-BR; zero-field values).
 
 ## 2. Sources: what each criterion needs, and whether the need is an average or a supremum
 
@@ -174,7 +184,6 @@ Two readings.
 - The zero-field value is the same for SU(2), compact U(1) (with 1/2 in place of 1/4) and the frozen groups. So
   the zero field cannot be the worst tilt for the rivals (Section 4), and the whole content of (TILT-COV-sup)
   is in the non-zero tilts.
-- 14:18 Section 4 written (fact tests of the criterion of Section 3).
 
 ## 4. Fact tests of (TILT-COV-sup), before any proof attempt
 
@@ -243,7 +252,6 @@ point). So a box-uniform (TILT-COV-sup) says in particular: the Higgs-tilted lay
 kappa, in the confining bulk. For the full four-dimensional SU(2) Higgs model with frozen length a line of
 transitions ends near beta 2.7 (RECALLED from lattice studies, not verified; the window 2.3 to 2.6 lies below it).
 This family is the first place to test (Section 7).
-- 14:24 Section 5 written (Attack 2: where the Ricci curvature sits; what an average over the measure can mean).
 
 ## 5. Attack 2: the Ricci curvature of SU(2) against the negative part, in the bridge picture
 
@@ -318,7 +326,6 @@ link's shell: an artefact, removed by the fibre form, where the Ricci curvature 
 of Section 6. (K3) Collective directions at the box scale: this is the gap itself (5.4 (b)), and the Ricci
 curvature does not act there. So the Ricci curvature of SU(2) pays for (K1) only. I found no way to make it pay
 for (K2) or (K3).
-- 14:26 Sections 6 and 7 written (Attack 3; the smallest unproved inequality; the GUIDE test design, before any run).
 
 ## 6. Attack 3: the negative part on a set of small measure
 
@@ -399,10 +406,8 @@ run is valid only if the kap = 0 control returns 1/4 within three standard error
 What it cannot show. It tests one family of tilts and one scale t = 0. The averaged form 7.1 would need the
 typical tilts of 3.1 (d) and nested sampling (the conditional covariance of (x, w) given the bridge point), and
 by 5.4 no finite set of test functions can confirm it.
-- 14:30 7.3 and Section 8 written (test of 7.2 NOT run, with the reason; status table; RESULT). One numeric job in the
-  whole row: the one-link quadrature (lock holder gap-avgcurv-968, 14:28:05Z, about 2 s, 72 percent memory free, released).
 
-**7.3 The test of 7.2 was NOT run. Reason (ARGUED, hand estimate).** A test is worth its run only if the control
+**7.3 First decision, superseded by 7.4-7.5: not to run the test on sides 4, 6, 8. Reason (ARGUED, hand estimate).** A test is worth its run only if the control
 can fail. For compact U(1) in the Coulomb phase, at a tilt kap just above the ordering of the boundary layer, the
 transverse mode of momentum k on the boundary has a restoring coefficient of about kap rho + beta (|k| + k^2): rho is the
 order of the gauge-orbit field (small near the ordering), beta |k| is the surface stiffness of the massless bulk,
@@ -411,8 +416,8 @@ when beta (|k_min| + k_min^2) < 2, that is for box sides above about 12 at beta 
 side 24. On sides 4, 6, 8 the U(1) control would stay at or below 1/2 and the run could not tell U(1) from SU(2).
 A valid run therefore needs U(1) boxes of side 12 to 24 and SU(2) boxes above the confinement length at the same
 sides (about 10^5 sites and several thousand sweeps per point): hours on this machine in plain numpy, or the
-compiled code of row 954. I did not start it inside this row's budget. The design, the control and the verdict
-rules of 7.2 stand as written, with sides 12, 16, 24 in place of 4, 6, 8. Scope: the estimate above is not a
+compiled code of row 954. (This cost estimate was too high by a factor of about 3: see 7.4.) The design, the control
+and the verdict rules of 7.2 stand, with larger sides; the rules actually used are those of 7.4. Scope: the estimate above is not a
 proof that U(1) fails in this family; Lemma NEC only proves that it fails in some family.
 The second test, for the averaged form (proposed, not run): sample (x, w) from J and the bridge point y; sample
 the two conditional slices given y (two half-space lattices with boundary field y/s, y/s'); estimate
@@ -441,6 +446,58 @@ Verdict rules.
 Limits: one tilt family, the scale t = 0 only, 6 slices with an open far end in place of the vacuum factor, no
 autocorrelation analysis beyond the blocks.
 
+**7.5 Results of the run (GUIDE; logs `/tmp/gap-avgcurv-968/logs/tilt_results.jsonl`, `batch.log`, not committed).**
+Entries are chi1 = chi(kap; k_min) with the block error on the last digits; the last column is chi0 (k = 0) at the
+three sides. Peak resident memory was not recorded; the script stops itself above 2 GB and did not stop.
+
+| compact U(1), beta 1.3, kap | side 8 | side 16 | side 24 | chi0 at 8, 16, 24 | mean Re U (side 24) |
+|---|---|---|---|---|---|
+| 0 | 0.513(9) | 0.503(9) | 0.506(6) | 0.50, 0.52, 0.52 | 0.00 |
+| 0.3 | 0.529(10) | 0.527(11) | 0.547(12) | 0.51, 0.54, 0.54 | 0.16 |
+| 0.5 | 0.588(15) | 0.627(15) | 0.624(16) | 0.70, 0.66, 0.66 | 0.33 |
+| 0.7 | 0.324(3) | 0.506(19) | 0.929(34) | 1.01, 0.86, 0.83 | 0.63 |
+| 1.0 | 0.316(3) | 0.494(12) | 0.575(8) | 0.79, 0.76, 0.80 | 0.76 |
+| 1.5 | 0.295(4) | 0.402(4) | 0.454(7) | 0.54, 0.58, 0.55 | 0.83 |
+| 2.5 | 0.238(3) | 0.301(2) | 0.314(4) | 0.35, 0.35, 0.36 | 0.89 |
+
+| SU(2), beta 2.3, kap | side 8 | side 12 | side 16 | chi0 at 8, 12, 16 | mean Re U (side 16) |
+|---|---|---|---|---|---|
+| 0 | 0.2501(12) | 0.2491(15) | 0.2516(21) | 0.248, 0.254, 0.243 | 0.00 |
+| 0.6 | 0.2556(22) | 0.2579(14) | 0.2620(16) | 0.259, 0.257, 0.259 | 0.16 |
+| 1.0 | 0.2747(21) | 0.2759(14) | 0.2768(19) | 0.284, 0.275, 0.283 | 0.28 |
+| 1.4 | 0.2732(24) | 0.2997(22) | 0.3091(29) | 0.336, 0.326, 0.338 | 0.46 |
+| 1.9 | 0.2318(19) | 0.2698(25) | 0.2901(27) | 0.327, 0.323, 0.318 | 0.61 |
+| 2.6 | 0.1964(12) | 0.2281(16) | 0.2469(18) | 0.264, 0.271, 0.270 | 0.71 |
+| 4.0 | 0.1542(10) | 0.1713(12) | 0.1818(12) | 0.196, 0.196, 0.202 | 0.80 |
+
+Sanity: SU(2) middle plaquette 0.600 to 0.604 in all 21 runs (recalled 0.60 at beta 2.3); U(1) 0.776.
+Verdicts, by the rules of 7.4.
+- (V0) PASS. At kap = 0 all six chi1 values are within 1.5 standard errors of 1/4 and 1/2 (Elitzur), and the six
+  chi0 values within 2.
+- (V1) MET as written: chi* = 0.588(15), 0.627(15), 0.929(34) at sides 8, 16, 24; at side 24 it is 12 standard errors
+  above 1/2. Two cautions. The step from 8 to 16 is inside two standard errors. And the k = 0 value does not grow
+  (1.01, 0.86, 0.83 at kap 0.7), so the rise of chi1 looks like an approach to a finite chi0 of about 0.8 to 1.0, not like
+  a divergence. The grid has no point between kap 0.5 and 0.7, where the layer orders (mean Re U from 0.33 to 0.63),
+  so the maximum over kap is not resolved. The run does not show that this family diverges for U(1).
+- (V2) NOT REFUTED for SU(2) at beta 2.3 on sides 8, 12, 16: chi* = 0.2747(21), 0.2997(22), 0.3091(29), ratios 1.09 and 1.03
+  per step, below 1.25 and falling. This proves nothing about the seed box.
+Readings (GUIDE, no proof weight).
+- The photon shows as a dependence on k, not as a size: chi1/chi0 at the tilt of the maximum is 0.32, 0.59, 1.1 for
+  U(1) (kap 0.7; sides 8, 16, 24) against 0.81, 0.92, 0.91 for SU(2) (kap 1.4; sides 8, 12, 16). The SU(2) boundary
+  mode has reached its k = 0 value by side 12; the U(1) mode has not by side 16.
+- Zero field is not the worst tilt, even in this simplest family: for SU(2), chi0 = 0.338(6) at kap 1.4 on side 16,
+  1.35 times the Elitzur value; for U(1) about twice. So the arithmetic of 3.4 is an optimistic end, also
+  empirically. The excess is stable in the side for SU(2) (0.336, 0.326, 0.338).
+- The SU(2) layer orders through a smooth crossover (mean Re U and its variance show no growth with the side
+  beyond 8 percent), in line with the expectation of 4.8.
+What the run teaches about the test itself (arithmetic from Lemma NEC; the value of E_1 is an estimate). Lemma NEC
+forces s^2 k* >= (1/(2 beta)) log(1/E_1) at the mid-slice, a logarithm. At side 24 and beta 1.3, with the free-photon value
+E_1 of about 0.26, that is 0.52, below the zero-field value (at least 1 in these units). So the growth that kills a box-uniform (TILT-COV-sup) for U(1) can be slow, and no run at sides up to 24
+can show it unless some tilt family has a true divergence; this family did not show one. The criterion is
+exponentially lossy in kbar, so a logarithmic growth of the tilted covariance is enough to destroy it. This is
+the practical weakness of the supremum form: SU(2) needs boundedness at all tilts and all sizes, and a small-box
+test can refute it only by luck.
+
 ## 8. Status, answers, and the result
 
 **8.1 Status table.** "PROVED" means proved by hand here, by Claude Fable 5.2, not yet checked by another model.
@@ -459,7 +516,7 @@ autocorrelation analysis beyond the blocks.
 | Proposition AVG: an average over the measure without the Hessian term is the pointwise criterion; with it, the Poincare inequality itself | 5.4 | PROVED given Bochner's identity and the slice theorem (RECALLED) |
 | Proposition SCHR and its death by volume; the direction-resolved form; RARE-P does not transfer; Lemma WC | 6.1-6.3 | PROVED (6.2 given the premise (DENS), not proved) |
 | (TILT-COV-sup) with a box-uniform bound; (ABS-flow-seed)_a; (LOC-COV); (LSI-br-seed)_a; (LSI-J-seed)_a; the seed | 3.3, 6.3, 7.1 | OPEN |
-| GUIDE test of the supremum form (uniform Higgs-type tilt, transverse boundary susceptibility) | 7.2-7.3 | designed, NOT run (needs sides 12 to 24) |
+| GUIDE test of the supremum form (uniform Higgs-type tilt, transverse boundary susceptibility), sides 8 to 24 | 7.2-7.5 | GUIDE, RUN: controls pass; SU(2) at beta 2.3 NOT REFUTED on sides 8-16 (chi* 0.275, 0.300, 0.309); the U(1) control rises (0.59, 0.63, 0.93) but shows no divergence; zero field is not the worst tilt (factor 1.35 for SU(2)) |
 
 **8.2 Answers to the row.**
 - Input (1), integrated or averaged criteria. Both named criteria need a supremum over the field or tilt at each
@@ -480,7 +537,8 @@ autocorrelation analysis beyond the blocks.
   Theorem BR, so "curvature criteria die below the window" should read "one-scale curvature criteria"; (ii) the
   open input of the lane can now be written as a second-moment statement, (TILT-COV-sup), in place of a
   functional inequality for all test functions, at the price of a supremum over linear fields; (iii) an
-  averaged-curvature lane should not be queued again without a route to (LOC-COV).
+  averaged-curvature lane should not be queued again without a route to (LOC-COV); (iv) small-box runs cannot
+  decide the supremum form (7.5): its failure for a massless rival may be a logarithmic growth.
 
 **8.3 For the checker, in this order.** (1) Proposition FLOW (b), (d): the completion of the square and b_c = beta.
 (2) The use of BBD Theorem 3.6 on a finite scale interval (their Remark 3.8) and the horizontal reading (a) of
@@ -492,4 +550,4 @@ unchanged. (3) Lemma Z. (4) Proposition ANG: the fibre Hessian and the cancellat
 **Reading order.** Sections 3 and 4 (the criterion and its fact tests), then 5.4 and 7.1 (what "averaged" can
 mean), then 5.2-5.3 (Ricci), then 6.
 
-RESULT: Row 968 (Claude Fable 5.2 max, author, checked by no one): the averaged-curvature route does NOT close; (LSI-J-seed) and the seed stay OPEN, and no inequality smaller than (LSI-br-seed)_a was found. PROVED by hand: Proposition FLOW (the Polchinski flow of each bridge marginal nu_s is the switching-on of the one time-like coupling between two slices, and its curvature is minus a link covariance of the two-slice law in a linear field); Lemma Z (zero-field covariance, every box); Lemma NEC (the tilted covariance must grow at least like 2 beta log(1/E_1)); Proposition ANG (the Ricci curvature of S^3 is the term 2/r^2 of the fibre tensor and removes the Elitzur ceiling of row 941, which U(1) keeps); Proposition AVG (an average over the measure is the pointwise criterion without the Hessian term and the Poincare inequality itself with it); Proposition SCHR with its death by volume, and the failure of RARE-P and of uniform conditional rarity to transfer. CONDITIONAL on BBD Theorem 3.6 (cited) and Theorem BR: Theorem POL-BR, a box-uniform bound on that covariance over all linear tilts gives (HC-vac) and the seed for some a, with no threshold in beta. READ: Bauerschmidt-Bodineau-Dagallier and Chen-Eldan both need a supremum over the field or tilt; only the scale is averaged. FACT TESTS: the criterion is exact for the free photon and fails only its rate; for compact U(1), Q_8/2T, SMALL-BOX and K7 its hypothesis must fail (Lemma NEC); FT-FK holds (the flow is kinetic-only, the model enters only through m). SMALLEST UNPROVED AVERAGED-CURVATURE INEQUALITY: (ABS-flow-seed)_a of 7.1 (typical tilts, Hessian term kept, every test function), implied by the supremum form (TILT-COV-sup); its obstruction is (LOC-COV), a local bound on the conditional covariance of a tilted half-space slice, which is a mass-gap statement. GUIDE: one-link quadrature only (identity and numbers of 5.2); the refuting test of 7.2 (uniform Higgs-type tilt, transverse boundary susceptibility, U(1) control) is designed and NOT run, because the control needs box sides 12 to 24.
+RESULT: Row 968 (Claude Fable 5.2 max, author, checked by no one): the averaged-curvature route does NOT close; (LSI-J-seed) and the seed stay OPEN, and no inequality smaller than (LSI-br-seed)_a was found. PROVED by hand: Proposition FLOW (the Polchinski flow of each bridge marginal nu_s is the switching-on of the one time-like coupling between two slices, and its curvature is minus a link covariance of the two-slice law in a linear field); Lemma Z (zero-field covariance, every box); Lemma NEC (the tilted covariance must grow at least like 2 beta log(1/E_1)); Proposition ANG (the Ricci curvature of S^3 is the term 2/r^2 of the fibre tensor and removes the Elitzur ceiling of row 941, which U(1) keeps); Proposition AVG (an average over the measure is the pointwise criterion without the Hessian term and the Poincare inequality itself with it); Proposition SCHR with its death by volume, and the failure of RARE-P and of uniform conditional rarity to transfer. CONDITIONAL on BBD Theorem 3.6 (cited) and Theorem BR: Theorem POL-BR, a box-uniform bound on that covariance over all linear tilts gives (HC-vac) and the seed for some a, with no threshold in beta. READ: Bauerschmidt-Bodineau-Dagallier and Chen-Eldan both need a supremum over the field or tilt; only the scale is averaged. FACT TESTS: the criterion is exact for the free photon and fails only its rate; for compact U(1), Q_8/2T, SMALL-BOX and K7 its hypothesis must fail (Lemma NEC); FT-FK holds (the flow is kinetic-only, the model enters only through m). SMALLEST UNPROVED AVERAGED-CURVATURE INEQUALITY: (ABS-flow-seed)_a of 7.1 (typical tilts, Hessian term kept, every test function), implied by the supremum form (TILT-COV-sup); its obstruction is (LOC-COV), a local bound on the conditional covariance of a tilted half-space slice, which is a mass-gap statement. GUIDE (7.4-7.5, criteria written before the run): uniform Higgs-type tilt on the boundary slice, transverse boundary susceptibility, 42 runs; Elitzur controls pass; SU(2) at beta 2.3 on sides 8, 12, 16: 0.275, 0.300, 0.309, NOT REFUTED (proves nothing); compact U(1) at beta 1.3 on sides 8, 16, 24: 0.59, 0.63, 0.93, a rise toward a finite k = 0 value, no divergence shown; zero field is not the worst tilt (factor 1.35 for SU(2)); by Lemma NEC the growth that kills the supremum form may be logarithmic, so small-box runs cannot decide it.

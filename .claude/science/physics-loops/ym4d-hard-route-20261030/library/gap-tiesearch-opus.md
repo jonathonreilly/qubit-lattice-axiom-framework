@@ -223,3 +223,27 @@ errors of about 20 percent); all go to the sweep as planned in 4.3 and 4.5.
   Interim g (16 vs 8): u_xy 1.033 +- 0.030 (g + 2 sigma 1.09); z-twist pi/4 1.042 +- 0.047 (1.14); z-twist pi/2 0.997 +- 0.057 (1.11).
   All below 1.25 with 2 sigma, pending K3 (u_xy hot at L = 16) and L = 12.
 
+- L = 12 (3000 + 16000): u_xy 2.38 +- 0.11; z-twist pi/4 colour 3 2.90 +- 0.24 [2.55]; z-twist pi/2 colour 3 2.48 +- 0.23 [2.39].
+- **(K3) u_xy, L = 16, hot start (seed 22): 2.23 +- 0.15 against the cold chain's 2.88 +- 0.16: ratio 0.77, K3 FAILS the 15 percent
+  rule** (the chains differ by 3 combined block errors). So at beta 2.3 too the 8-block errors understate the error at L = 16
+  (or 3000 sweeps do not equilibrate). Both chains lie at or below the L = 8 value, so the failure is of precision, not of
+  direction.
+
+**5.3 beta 2.3 analysis (rules of Section 2; replica rule of 5.1 for u_xy at L = 16).**
+
+| slice | L = 8 | L = 10 | L = 12 | L = 14 | L = 16 | g = (16/8)^(1/4) | g + 2 sigma_g |
+|---|---|---|---|---|---|---|---|
+| u_xy (lambda_star) | 2.53 +- 0.15 | (row 950: 2.46) | 2.38 +- 0.11 | | pooled 2.56 +- 0.33 (cold 2.88, hot 2.23) | 1.003 +- 0.047 | 1.10 |
+| u_xy, worst chain only | 2.53 +- 0.15 | | | | 2.88 +- 0.16 | 1.033 +- 0.030 | 1.09 |
+| z-twist pi/4, colour 3 | 2.36 +- 0.21 | | 2.90 +- 0.24 | | 2.78 +- 0.25 | 1.042 +- 0.047 | 1.14 |
+| z-twist pi/2, colour 3 | 2.49 +- 0.25 | | 2.48 +- 0.23 | | 2.46 +- 0.32 | 0.997 +- 0.057 | 1.11 |
+| x-twist pi/2, u_xyyz, twisted u_xyyz, interp (screen, L = 8 and 12 only) | | | | | | (12/8)^(1/2) = 0.99, 0.94, 0.89, 1.05 | not run at 16 |
+
+Sides 10 and 14 were not run at 2.3 (plan 4.5); the steps are 8 -> 12 -> 16. No step decreases or increases beyond the
+spread of the chains. **Verdict at beta 2.3: NOT REFUTED** by the rule of Section 2 on the three slices taken to L = 16, also on
+the worst single chain; the four slices screened only on 8 and 12 show no growth either (per-step factors 0.89 to 1.05 over
+two steps). Size of what survives: lambda about 2.4 to 2.9 on every slice and side, so by Lemma SUB at the mid-slice
+kbar_(s,0) >= 4 beta^2 lambda, about 51 to 61 at beta 2.3 (zero-field value 2 beta^2 = 10.6), in line with row 970's 53.
+What this does NOT establish: any bound. It covers 7 slices, their named modes, t = 0 only, slab thickness 6, sides up to 16;
+K3 failed at 23 percent, so the L = 16 values carry about 15 percent errors, not the 6 percent of the blocks.
+

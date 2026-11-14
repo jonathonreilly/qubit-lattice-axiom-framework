@@ -726,7 +726,8 @@ def modes(m, nev, comp=None, mu=50.0):
         wB = wB * comp
     Wh, Wih = sp.diags(np.sqrt(wE)), sp.diags(1 / np.sqrt(wE))
     K = Wh @ C.T @ sp.diags(wB) @ C @ Wh + mu * (Wih @ G @ G.T @ Wih)
-    vals = spla.eigsh(K.tocsc(), k=nev, sigma=-1e-3, which="LM", return_eigenvectors=False)
+    vals = spla.eigsh(K.tocsc(), k=nev, sigma=-1e-3, which="LM", return_eigenvectors=False,
+                      v0=np.random.RandomState(729).rand(K.shape[0]))  # fixed ARPACK start: reproducible listings
     vals = np.sort(vals)
     return np.sqrt(np.clip(vals[vals > 1e-8], 0, None))
 

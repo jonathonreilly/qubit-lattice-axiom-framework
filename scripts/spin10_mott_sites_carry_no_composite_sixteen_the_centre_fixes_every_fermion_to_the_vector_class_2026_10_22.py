@@ -231,7 +231,7 @@ def lowest(H, k=4):
     if d <= 1200:
         w, v = np.linalg.eigh(H.toarray())
         return w[:k], v[:, :k]
-    w, v = sla.eigsh(H, k=k, which="SA", tol=1e-11)
+    w, v = sla.eigsh(H, k=k, which="SA", tol=1e-11, v0=np.random.RandomState(234).rand(H.shape[0]))  # fixed ARPACK start: reproducible listings
     o = np.argsort(w)
     return w[o], v[:, o]
 

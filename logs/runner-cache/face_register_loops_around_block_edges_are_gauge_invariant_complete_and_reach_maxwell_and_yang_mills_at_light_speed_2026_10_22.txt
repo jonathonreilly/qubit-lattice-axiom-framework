@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/face_register_loops_around_block_edges_are_gauge_invariant_complete_and_reach_maxwell_and_yang_mills_at_light_speed_2026_10_22.py
-runner_sha256: 0fb351d4e42a1dd1363ecb836f6c72c633fe02172a4c30dd4af76531c1e5063a
+runner_sha256: b3e852790e73001d79e7dd16e943afaf3f298d90bc02c8f1bca996b216156b1e
 input_fingerprint_sha256: 1adab9435ac48e53aad36addef887e72c567547040ff40786ccf661582977ae7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.85
+elapsed_sec: 1.71
 status: ok
 ----- stdout -----
 == A. gauge invariance per B_f-block (exact operator identities)
@@ -12,7 +12,7 @@ status: ok
 [PASS] [T] A1b every U(1) register (S = 1/2 .. 2) has V of definite charge (one rishon X -> Y) and V^dag V a projector, so around any closed cycle of blocks each block gains one and loses one rishon: the loop is gauge-invariant for every S (any number of faces, any sizes) | 4 sizes
 [PASS] [T] A2 SU(N) rishon link U^{ab} = c_{X,a} c_{Y,b}^dagger is covariant at each end, U -> Omega_X U Omega_Y^dagger (so every closed trace is invariant); its polar (domain-normalised) part is covariant too | max dev SU(2) 5.0e-16, SU(3) 1.4e-15, SU(2) polar 4.0e-16
 [PASS] [T] A3 many-body: Re tr of the rishon loop commutes with every colour Gauss generator of every block: SU(2) square loop (bulk block edge) and SU(3) hanging triangle; a wrongly contracted link fails | SU(2) 4-face loop dim 65536: max|[W,G]| 0.0e+00, control 0.25; SU(3) 3-face loop dim 262144: max|[W,G]| 0.0e+00, control 0.25
-   peak RSS after A 125 MB
+   peak RSS after A 126 MB
 == B. the loops are complete
 [PASS] [T] B1 curl.grad = 0 and dim ker(curl) = (blocks - 1) + 3: every face-register configuration that is not a gauge transform or a torus holonomy changes some loop (no extra mode, unlike the site-bond layout) | bulk 4^3 torus: blocks 64, faces 192, loops by size {4: 192}, ker 66 = 66; hanging slab: blocks 243, faces 756, loops by size {4: 774, 3: 72}, ker 245 = 245
 == C. classical continuum: Hodge-weighted face and loop energies -> (1/2) int (E^a E^a + B^a B^a)
@@ -31,7 +31,7 @@ status: ok
 == G. hanging faces: a split region (child blocks B/2) beside unsplit blocks B; weights h/A and l/S
 [PASS] [T] G1 patch tests across the hanging face: uniform E (every direction) and uniform B along the interface give exactly (1/2) V E^2 and (1/2) V B^2; a normal B costs an extra layer (the hanging loops' polygons tilt) | E dev 0e+00; B_x,B_y dev 0e+00; B_z excess = layer of 0.3333 child units = B/6.00 per interface (B the unsplit side)
 [PASS] [D] G2 cavity (4x4x8 child units, half split; 72, 576 blocks): the lowest 21 modes move toward c = 1 at the two sizes tested (no order proved); the B_z excess acts at first order; removing it does not help | max rel dev scale 1 -> 2: 0.297 -> 0.084 (ratio 3.52); excess effect 0.0415 -> 0.0266 (ratio 1.56); mean dev plain 0.160, 0.055; removed 0.173, 0.064; all-child torus 0.082, 0.021
-elapsed_seconds 1.6, peak RSS 146 MB
+elapsed_seconds 1.5, peak RSS 150 MB
 TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----

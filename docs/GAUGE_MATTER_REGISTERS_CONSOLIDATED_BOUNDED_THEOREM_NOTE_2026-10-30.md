@@ -6,6 +6,8 @@ claim_scope: "Historical navigation map, with no conclusions of its own, of 31 s
 
 # Gauge fields and matter registers: navigation map of the carried and logged notes
 
+**Primary runner:** `scripts/gauge_matter_registers_navigation_map_check_2026_11_14.py` (checks that each carried-note section below quotes its carried note's current claim_scope verbatim, that each carried note appears once, and that every repository link resolves; the carried notes' science is checked by their own runners).
+
 **Question.** Which gauge fields and charged matter multiplets, if any, are selected by the site and link registers?
 
 **What this file is (2026-11-14).** A navigation map. It states no result and draws no conclusion of its own. Each carried note holds its own statement, runner and cache, and the map quotes each carried scope verbatim. Every carried statement is `argued`: none has been checked here. The held version of this file (typed `bounded_theorem`) also carried a synthesis with conclusions and a list of corrections that the source notes did not carry. A landing review held it on 2026-11-13. The synthesis is removed, the corrections that concern carried notes are now in those notes, and the file is typed `meta`. The review findings and where each is answered are listed at the end.

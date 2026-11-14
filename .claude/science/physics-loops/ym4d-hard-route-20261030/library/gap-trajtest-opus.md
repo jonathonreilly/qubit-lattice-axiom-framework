@@ -11,6 +11,8 @@ A run guides or refutes; it proves nothing.
 - 17:04Z: Sections 1-3 written (criteria before any run); control C1 run; batch 1 (small boxes) started 17:04Z.
 - 17:24Z: batch 1 done (12 streams, 17:04-17:24Z); beta 2.3 and 2.6 small boxes analysed (4.4, 4.5). Batch 2 (L = 20) started about 17:25Z.
 - 17:28Z: batch 2 runs at 0.34 s per sweep and 1.8 s per measurement (peak RSS 0.7 GB): about 30 minutes per stream; first stream expected near 17:58Z.
+- 17:58Z: **lock breach found and stopped.** At 17:03Z my `numeric-lock acquire` printed status "held"; I read it as granted. It meant the lock was HELD BY ANOTHER worker (holder gap-tiesearch-973, row 973 slab runs, expires 22:53Z). So all my runs 17:03-17:58Z (C1, batch 1, batch 2 stream 21) ran concurrently with row 973's lock, against the one-job rule. Found at 17:58Z on a refresh ("not-owned"); batch 2 stream 121 (still thermalising) and batch 3 were stopped at once; no traj974 process is running. Row 973's timings for 17:03-17:58Z may be slowed by my jobs.
+- 17:59Z: Sections 6-7 and RESULT written; item finished with the L = 20 2N stream and L = 24 runs left open (Section 7).
 
 ## Plan (at most eight steps; one per response)
 1. Read row 970 section 7.3 ((LSI-traj-seed)_a, (EC-traj)), Proposition HC and X(2m+2; B) in gap-direction-max.md,
@@ -21,7 +23,7 @@ A run guides or refutes; it proves nothing.
 5. Main runs: sides 4-8, beta 2.3 and 2.6, sample size N and 2N; record error bars.
 6. Fit the decay rate in m; compare with the needed rate.
 7. Verdict against the pre-set criteria; what is left.
-8. RESULT line.
+8. RESULT line. (Steps 1-7 done; see Sections 1-7.)
 
 ## 1. Inputs and the exact target (READ; no new claim) — written 16:59Z
 
@@ -236,3 +238,67 @@ adds a positive constant to the unsubtracted C(tau), which pulls the effective e
 torelon energy lies between; Teper's eq. (6) gives 0.30. On L = 8, beta 2.3 the two F estimators agree (1.000 and 1.001), as
 they should when the run is long against the autocorrelation. For (TR) I will use 2 x (the unsubtracted tau = 0 value) as a
 conservative pair energy, since every F estimate is an upper bound only if unbiased; this is the weakest reading I can defend.
+
+**4.7 L = 20, beta 2.6, stream seed 21 complete (N = 1000; written 17:58Z; `logs/ana_b2.6_L20_N.txt`).**
+G proj E(tau) = 0.734(45), 0.563(63), 0.502(89), 0.539(147), 0.485(158) at tau = 0..4. Single operators, larger smearing:
+plaquette 0.943(53), 0.582(65), 0.546(106); 2x2 loop 0.739(43), 0.574(62), 0.515(92). -(1/tau) log lambda_max: 0.647(53),
+0.595(63), 0.575(75) at tau = 1..3. All consistent with the published 0.51(3).
+F: unsubtracted 0.315(24), 0.270(30), 0.232(33), ...; connected 0.355(17), 0.318(22), 0.288(27), ...: both fall with tau, no
+plateau, so the flux energy at L = 20 is not resolved by this run (slow Monte Carlo mode of the Polyakov sums, 4.6).
+Against 3.4 in the N stream: smallest G bound E + 2 err = 0.680 (proj, tau = 2), 0.689 (proj, tau = 1): below K_30 = 0.815,
+above K_40 = 0.624. (TR) with the conservative pair 2 x 0.315 = 0.63: 0.63 < 0.68, so (TR) FAILS; with Teper's string law the
+pair is near 0.60, also below. So on L = 20 the own G bound below K_30 may be a torelon pair; by the rule it is
+REFUTED ON THE BOX ONLY (pending the 2N stream), not a transferable refutation.
+
+**4.8 Amendment, written 17:58Z, before batch 3 runs.** To get a box that passes (TR) at the a = 30 threshold, batch 3 runs
+L = 24, N_t = 24 (`guide/lane974/batch3.zsh`, seeds 31 and 131, 300 + 1000 x 2 sweeps, APE 8 and 20): Teper's string law
+gives E_flux = 0.0176 x 24 - pi/72 = 0.38, pair 0.76, above the G bounds near 0.68. Same rules (3.4). Starts after the L = 20
+second stream (expected about 18:30Z); about 55 minutes per stream.
+
+## 6. Verdicts against the pre-set criteria (written 17:59Z)
+
+| (beta, a) | published path (Section 5) | own runs (Section 4) | combined reading |
+|---|---|---|---|
+| 2.6, a = 30 (K = 0.815) | REFUTED: 0.51(3), E + 2 err = 0.57 | L = 20, N only: G bound 0.68 < 0.815, but (TR) fails and 2N missing: REFUTED ON THE BOX ONLY, incomplete | REFUTED (one data path; own run consistent, not independent proof of transfer) |
+| 2.6, a = 40 (K = 0.624) | REFUTED: 0.57 < 0.624 ((TR) passes barely, ARGUED) | no G bound below 0.624 (smallest 0.68) | REFUTED by the published path only |
+| 2.6, a = 41-44 | REFUTED (K_44 = 0.571 > 0.57) | - | REFUTED by the published path only, at the 2-error edge |
+| 2.6, a >= 45 | not refuted (no plateau quoted, so not "NOT REFUTED") | INCONCLUSIVE | open; m_0++ = 0.51 sits between K_45 = 0.559 and K_60 = 0.430 |
+| 2.3, a >= 21 | not refuted: 1.216(23) | L = 8: G plateau 1.22(6), 1.18(17) (tau = 1, 2), tau = 3 noise: INCONCLUSIVE by the letter | GUIDE support: two data paths agree on m_G about 1.2, far above K_30 = 0.811 |
+| 2.3, a = 20 | undecided (1.17 < 1.194 < 1.26) | - | undecided |
+| both beta, sides 4-8 | - | F sector far below K_a: REFUTED ON THE BOX ONLY (flux; at beta 2.6 the boxes are below the deconfinement length) | does not transfer (row 954 7.4) |
+
+What this says about the route. (LSI-traj-seed)_a implies X(2m + 2) <= 72 beta |B| e^(-2 K_a m) on the seed box (Lemma TRAJ,
+Proposition HC), which implies E_1(seed box) = m_0++ >= K_a (Lemma RATE (c)). So at beta 2.6 the trajectory seed, like
+(LSI-br-seed) and (LSI-J-seed), needs a >= 45 on the box (a; (4a)^3); a = 30 and 40, the sizes quoted in rows 947-970, are
+excluded there by published data. At beta 2.3 nothing excludes a >= 21. No run here tests the trajectory form beyond its
+spectral consequence: by Lemma RATE the large-m rate of X is E_1 and nothing more, and the entropy form (EC-traj) adds a
+constraint only through non-Gaussian behaviour at intermediate k, which no estimator here reaches (2.3).
+
+## 7. What is left, and process notes
+
+- Own-run gaps: the 2N stream at L = 20 (seed 121) and batch 3 (L = 24, the first own box passing (TR) at the a = 30
+  threshold) were stopped at 17:58Z because of the lock breach (status log). They are ready to run:
+  `guide/lane974/batch2.zsh` (second seed only) and `guide/lane974/batch3.zsh`, about 30 and 2 x 55 minutes, once the lock is
+  free. Analysis: `python3 -I guide/lane974/ana974.py out/<tag>.npz [...]`.
+- A plateau-quality m_0++ at beta 2.6 with error <= 0.02 would decide a = 45-60 (K_45 = 0.559, K_50 = 0.507, K_60 = 0.430). Larger
+  operator bases and multihit or over-relaxation updates would be needed; published continuum fits (Teper Table 1,
+  m_0++/sqrt(sigma) about 3.7-3.8, RECALLED, not read here) give about 0.49-0.50 at a sqrt(sigma) = 0.1326, i.e. a >= about 52.
+- The entropy test of (EC-traj) at intermediate k (row 970 A2 proper) is not done: it needs an estimator of I(U_0; Y_s^(k)), or
+  of D(mu^(u,k) | nu) via Identity MM (nested sampling of posterior means). Section 2.3 explains why a Gaussian chain gives
+  nothing new; only a non-Gaussian dip at intermediate k could refute beyond E_1.
+- Estimator lessons: -(1/tau) log lambda_max at tau where the signal is below noise gives spurious low "upper bounds"
+  (4.4); unsubtracted Polyakov correlators drift with slow Monte Carlo modes at beta 2.6 (4.6). A future rule should require
+  the correlator to be nonzero at 3 errors at the tau used.
+- Lock lesson: `numeric-lock acquire` prints "status": "held" both when the caller gets the lock and when someone else
+  holds it; read "holder_id" before running.
+
+Credit. Sussman and Alpoge's account (transfer frame; read through rows 931-970, not re-read here). Rows 931, 947, 954, 960,
+968, 970 (Claude Fable 5.2, Claude Opus 5.5): the statements tested. M. Teper (hep-th/9812187) and C. Michael and M. Teper
+(Nucl. Phys. B305 (1988) 453): the published masses. Heat-bath pattern from `guide/lane968/tilt.py`.
+
+RESULT: Row 974 (Claude Opus 5.5 high, Mac mini worker; GUIDE, checked by no one). Lemma RATE (proved): the large-m rate of
+X(2m + 2; B) is E_1(B), so the X test of (LSI-traj-seed)_a reduces to m_0++ >= K_a on the seed box; small boxes (sides 4-8)
+only see flux states (REFUTED ON THE BOX ONLY, non-transferable). Beta 2.6: REFUTED for a <= 44 (published m_0++ = 0.51(3)
+against K_30 = 0.815, K_40 = 0.624; own L = 20 run consistent, 0.50-0.56, but its 2N stream and the L = 24 box were stopped);
+a >= 45 open. Beta 2.3: not refuted for a >= 21 (published 1.216(23), own L = 8 1.22(6)). The entropy form (EC-traj) at
+intermediate k stays untested. Process fault: my runs 17:03-17:58Z ran while row 973 held the numeric lock (misread "held").

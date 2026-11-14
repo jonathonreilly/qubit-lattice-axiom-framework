@@ -256,3 +256,8 @@ K3 failed at 23 percent, so the L = 16 values carry about 15 percent errors, not
   Colour 3 chains: L = 8: 9.63, 7.88; L = 16: 17.04 (seed 11), 9.79 (hot), 9.36, 8.12. K3 now: hot 9.79 against the cold mean 11.51:
   ratio 0.85, at the 15 percent edge (passes by 0.1 percent). The pooled analysis is in Section 6.
 
+- u_xy replicas: L = 8 seeds 32, 33: 8.11, 7.27; L = 16 seeds 32, 33: 10.73, 12.58 (cold seed 11: 7.41). Pooled (script
+  `lane973/analyze.py`, rule of 5.1): L = 8 7.64 +- 0.25, L = 16 10.24 +- 1.51 (chain spread dominates); g = 1.076 +- 0.048,
+  g + 2 sigma = 1.17. So u_xy at beta 2.4 rises by about 1.3 from L = 8 to 16 (row 950 read "saturation, about 8" from one chain
+  at L = 8 and 12); the rise is below the 1.25-per-step criterion.
+

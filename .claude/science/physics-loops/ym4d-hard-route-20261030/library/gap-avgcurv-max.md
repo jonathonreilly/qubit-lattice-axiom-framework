@@ -26,6 +26,9 @@ Status log (UTC times read from `date -u`):
 - 14:10 inputs read: FINISH rows 941, 947, 954, 957, 958, 960, 968; `gap-fc-max.md` L39-282, L487-586; `gap-lsivac-max.md` L84-222;
   `gap-ps-disint-max.md` L46-95, L163-180, L371-486; check 958 finding 5; `prior/gap-lit-bridge-lsi.md` in full;
   `prior/gap-fullread-2.md` Section 3 (BBD Theorem 3.6 digest). Duplicate check done (Section 1.3).
+- 14:32 7.4 added: criteria for a run of the test of 7.2 at sides 8 to 24; batch launched in the background under the
+  numeric lock (holder gap-avgcurv-968). Sections 7.3, 8 and the RESULT line were written BEFORE this run and say
+  "NOT run"; they are corrected in 7.5 and 8 when the batch ends. If this line is the last one, the run did not finish.
 
 ## 1. Inputs, target, duplicate check (READ; no new claim)
 
@@ -416,6 +419,27 @@ the two conditional slices given y (two half-space lattices with boundary field 
 E[Var(<grad G(y), q~> | y)] / E|grad G|^2 against 1/c and E|Hess G|^2 / E|grad G|^2 for the slow modes G of rows 947 and 954 (time-like
 plaquette sum, winding lines). By 5.4 (c) this gives a lower bound on kap_(s,0), and by (ID-var) the initial slope of
 I_2. It can show that a claimed kap_(s,0) is too small. It cannot confirm (ABS-flow).
+
+**7.4 Run of the first test at larger sides (criteria written at 14:32Z, BEFORE the run; added after 7.3 when a smoke
+test showed the plain-numpy code is fast enough: 28 ms per sweep for SU(2) at side 16, 13 ms for U(1)).**
+Script `/tmp/gap-avgcurv-968/scripts/tilt.py` (not committed): full lattice with time-like links, 6 slices, open
+time, hot start, heat bath (Creutz sampler for SU(2), von Mises for U(1)), checkerboard by direction and parity,
+tilt kap Re(U) on the spatial links of slice 0. Measured on slice 0: chi1 = chi(kap; k_min) of 7.2 (imaginary link
+components, k transverse to the link direction), chi0 (the same at k = 0), the mean real part, and the middle
+spatial plaquette. 400 thermalisation sweeps, 2000 measurements 2 sweeps apart, errors from 20 blocks.
+Runs: SU(2) at beta 2.3, sides 8, 12, 16, kap in (0, 0.6, 1.0, 1.4, 1.9, 2.6, 4.0); compact U(1) at beta 1.3 (Coulomb phase,
+RECALLED: the transition is near 1.01), sides 8, 16, 24, kap in (0, 0.3, 0.5, 0.7, 1.0, 1.5, 2.5).
+Smoke test (about 14:31Z, lock holder gap-avgcurv-968): kap = 0 on side 4, 300 measurements: SU(2) chi1 = 0.247 +- 0.004 (exact
+1/4), U(1) chi1 = 0.517 +- 0.029 (exact 1/2); SU(2) plaquette 0.609 after 100 sweeps (recalled 0.60).
+Verdict rules.
+- (V0) Validity: at kap = 0, chi1 within three standard errors of 1/4 (SU(2)) and 1/2 (U(1)) on every box.
+- (V1) The control is informative only if, for U(1), chi* := max over kap > 0 of chi1 exceeds 1/2 by three standard
+  errors at side 24 and rises from side 8 to 16 to 24. If (V1) fails, the family does not expose the photon at
+  these sides, my estimate of 7.3 is wrong or too optimistic, and the SU(2) numbers decide nothing.
+- (V2) REFUTES a box-uniform (TILT-COV-sup) for SU(2) at beta 2.3 on these boxes (GUIDE) if chi* rises by more than a
+  factor 1.25 per step 8 -> 12 -> 16, outside three standard errors. NOT REFUTED otherwise, which proves nothing.
+Limits: one tilt family, the scale t = 0 only, 6 slices with an open far end in place of the vacuum factor, no
+autocorrelation analysis beyond the blocks.
 
 ## 8. Status, answers, and the result
 

@@ -36,7 +36,7 @@ on a run; runs are GUIDE only.
 
 ## State of attack (checkpoint, updated in place)
 
-- Step 1: done (13:40Z). Step 2: done (14:05Z). Step 3 next: the inequalities, the decoupling cost, average or supremum.
+- Step 1: done (13:40Z). Step 2: done (14:05Z). Step 3 done (14:55Z: SHELL, LEAK, CONE with PR and HALF, QF with FIB and MC, table 3.7). Step 4 done (15:10Z). Step 5 next: hand computation of the one-plaquette and one-cube endpoint quantities at beta 2.3-2.6 (Bessel series; the one-plaquette transfer operator T = M D M).
 
 ## Step log
 
@@ -211,3 +211,255 @@ chart on a polydisc" (CA-I 4.22) and "The holonomy of one plaquette in a cube ga
 None is a mixing, gap or block-dynamics statement; their Theorem 0 asserts no gap (GOAL.md). There
 is nothing to port for this row; the transfer frame itself is theirs (outline (GL8), credited in
 row 941).
+
+### Step 3 (part A, done): the squeezed quantities sit on the bounded side; the exact shell identity
+
+**3.1 Lemma BND (a squeeze bounds less than the seed; PROVED).**
+(i) (V) diamond: 0 <= S^V_dia(n) <= S(2n; B).
+Proof. Pi_t and P are self-adjoint on L^2(nu), fix the constants and so leave L^2_0(nu) (mean zero)
+invariant. On L^2_0, A_n^* A_n = P Pi_1 P Pi_2 ... P Pi_n P Pi_(n-1) ... Pi_1 P (Pi_n^2 = Pi_n) is a
+product of 2n factors P and of contractions. Hoelder for Schatten norms (exponent 2n for each P,
+infinity for each Pi) gives Tr(A_n^* A_n on L^2_0) <= ||P|L^2_0||_(2n)^(2n) = Tr(P^(2n) on L^2_0)
+= S(2n; B). The left side is a trace of a positive operator. QED
+(P is unitarily equivalent to T_B/lambda_0 on gauge-invariant functions through f -> f/Omega, so
+Tr P^t = Tr T_B^t/lambda_0^t; row 941 (A1).)
+(ii) (F), (D) closures: row 960 (L3), Z_lens/(lambda_0(L)^a ||Y||^2 lambda_0(s)^k) <= 1 + S(k; Q_s),
+read with restriction in place of decimation (its proof uses only ||Y|| and positivity), and row
+960 3.4 (Hoelder puts varying complexes below rectangular ones). PROVED there.
+Meaning. A bound on the narrow end bounds a squeezed complex from above, and a squeezed complex is
+below the slab. Neither bounds the slab. Every use of the squeeze for the seed needs a REVERSE
+inequality; its error term is the decoupling cost. 3.2-3.5 find that term exactly.
+
+**3.2 Theorem SHELL (the exact squeeze identity under (V); PROVED).** Let Q_0 = B, Q_1, ..., Q_n be
+a schedule (2.2), Pi_t as in (V), Pi_c the projection on constants, Pi_0 = I. Put
+D_k := Pi_k - Pi_(k+1) (k < n), D_n := Pi_n - Pi_c, and S_j(t) := Tr(Pi_j^0 P^t Pi_j^0) with
+Pi_j^0 := Pi_j - Pi_c (the seed compressed to functions of the links of Q_j). Then for every t >= 1:
+  S(t; B) = sum over k = 0..n of s_k(t),   s_k(t) := Tr(D_k P^t D_k) >= 0,
+  S_j(t) = sum over k >= j of s_k(t),   so   S(t; B) = S_0(t) >= S_1(t) >= ... >= S_n(t) >= 0.
+Proof. E_(k+1) is inside E_k, so the sigma-algebras decrease and Pi_(k+1) = Pi_k Pi_(k+1) =
+Pi_(k+1) Pi_k. Hence each D_k is an orthogonal projection, D_k D_j = 0 for k != j, and
+sum over k of D_k = I - Pi_c. P^t is trace class (T_B is) and Tr(P^t) = 1 + S(t; B). So
+S(t; B) = Tr((I - Pi_c) P^t) = sum_k Tr(D_k P^t) = sum_k Tr(D_k P^t D_k) (cyclicity, D_k^2 = D_k),
+each term >= 0 since P^t >= 0. The same computation with Pi_j^0 = sum over k >= j of D_k gives S_j. QED
+Reading.
+- The decoupling cost of the squeeze step Q_j -> Q_(j+1) is EXACTLY s_j(t) = S_j(t) - S_(j+1)(t),
+  and the total cost from B to the unit is S(t; B) - S_n(t). Nothing is lost and nothing is gained:
+  the squeeze re-indexes the seed by shells.
+- Each s_k(t) is a vacuum thermal sum of the same kind as the seed (a trace of P^t compressed to the
+  functions that are new on shell k). The narrow end S_n(t) = sum over an orthonormal basis (g_j)
+  of L^2_0 of the unit box of <g_j, P^t g_j>_nu: vacuum autocorrelations of unit-box observables.
+  It is a vacuum quantity, not computable by hand.
+- In a massive gas each shell carries about its share of the volume, so the unit end carries about
+  |E_n|/|E_0| of S (12/(3 b^3) for the cube; ARGUED; Step 6 measures the shares in a Gaussian model).
+- **Corollary FLUX (PROVED, given 2.6).** Every centre-odd level of P lies in Ran D_0: by 2.6 every
+  function of E_1 is centre-even, so it is orthogonal to the odd sectors. Hence
+  s_0(t) >= sum over centre-odd levels i of r_i^t. The first step (the cut of the periodic box)
+  carries the whole flux half of the seed (Q_0 of row 892), and no later step sees it.
+
+**3.3 Lemma LEAK (the time squeeze under (V); PROVED identity).** With A_0 = I and A_j = Pi_j P A_(j-1):
+  P^n - A_n = sum over j = 1..n of P^(n-j) (I - Pi_j) P A_(j-1).
+Proof. P^j - A_j = P (P^(j-1) - A_(j-1)) + (I - Pi_j) P A_(j-1); induct. QED
+Hence, with the Hilbert-Schmidt norm on L^2_0,
+  (1 + S(2n; B))^(1/2) <= (1 + S^V_dia(n))^(1/2) + sum over j of l_j,
+  l_j := ||P^(n-j) (I - Pi_j) P A_(j-1)||_HS.
+The cost l_j of step j is the part of one step of the vacuum chain, applied to a function of
+Q_(j-1), that is not a function of Q_j. It contains the dependence on the dropped layer itself,
+not only the influence of the exterior on the interior. So under (V) a squeeze spread over time is
+no better than Theorem SHELL: the shell content is lost at the step that drops it and must be paid
+back in l_j (ARGUED; Step 6 measures S^V_dia(n) against S(2n; B) in the Gaussian model).
+
+### Step 3 (part B, done): the squeeze as a cone (Theorem CONE), as block dynamics (Lemma QF), average versus supremum
+
+**3.4 Theorem CONE (the seed as a sum of local influences; the squeeze as a backward cone).**
+(a) **Lemma PR (pressure identity; PROVED).** For every beta > 0,
+  X(a; B) = integral over [0, beta] of sum over p in Pl(Z/a x B) of ( E^a_(beta')[s_p] - E^inf_(beta')[s_p] ) d beta',
+with E^a the Wilson measure of the slab Z/a x B and E^inf[s_p] the stationary vacuum expectation of
+a plaquette of the same type (spatial or time-like, same orientation) on Z x B.
+Proof. Z(a, B) = Tr T_B^a (`gap-transfer.md` 1.7), so d/d beta log Z(a, B) = sum over p of E^a[s_p]
+(finite-dimensional compact integral). lambda_0(B; beta) is simple (Lemma 1.1 of `gap-seed-check.md`),
+so log lambda_0 = lim over T of f_T, f_T := (1/T) log Z(T, B) (because Z(T, B) = lambda_0^T (1 + S(T; B))
+and S(T; B) <= r_1^(T-1) S(1; B) -> 0). Each f_T is convex in beta (its second derivative is a
+variance), and lambda_0 is real-analytic in beta (simple isolated eigenvalue of an analytic
+trace-class family). Convex functions that converge pointwise to a differentiable limit have
+converging derivatives, so d/d beta log lambda_0 = lim over T of (1/T) sum over p in Pl(Z/T x B) of
+E^T[s_p] = lim over T of sum over p in one time layer of E^T[s_p] (time translation), and each
+E^T[s_p] converges (trace class, simple top level) to E^inf[s_p]. At beta = 0, c = 1, so T_B is the
+projection on constants, Z(a, B) = 1 = lambda_0 and X = 0. Integrate
+d/d beta X = sum over the a|B| 6 slab plaquettes of E^a[s_p] - a sum over one layer of E^inf[s_p]. QED
+(b) **Window identity (PROVED).** Let a be even, h = a/2, p a plaquette at time 0 (spatial, or
+time-like between slices 0 and 1). Let phi_p(y, z) be the conditional expectation of s_p in the time
+window [-h, h] given the boundary slices x_(-h) = y and x_h = z (the window's own specification:
+interior plaquettes and the time-like plaquettes that touch the two boundary slices). Then
+  E^a[s_p] - E^inf[s_p] = E_(nu_a)[ phi_p(y, y) ] - E_(J_a)[ phi_p(y, z) ],
+nu_a the slab law of one slice (the slices h and -h are the same slice of Z/a), J_a the vacuum law of
+(x_(-h), x_h). Proof: the Gibbs property in time; both measures have the window specification inside
+the window, and the boundary slices' own spatial plaquettes do not touch the interior. QED
+(c) **The worst-case squeeze bound (PROVED).** Both terms in (b) are averages of phi_p, so
+  X(a; B) <= 6 a b^3 beta max over beta' <= beta and the six plaquette types of osc(phi_p)(beta'),
+osc := sup - inf over all boundary pairs (y, z). A bound on osc(phi_p) is a squeeze: the influence of
+the boundary slices at time distance h on the unit p passes through the backward cone of p, which
+narrows one site per step from the boundary slice to p (disagreement-percolation or Dobrushin form;
+the per-step cost is a worst-case influence coefficient, capped by the ceilings of Step 1).
+Required size, by hand: 6 a b^3 beta = 6 x 30 x 720^3 x 2.3 = 1.545 x 10^11 at a = 30, b = 24a,
+beta 2.3, so osc <= x_*/(1.545 x 10^11) = 0.2578/(1.545 x 10^11) = 1.67 x 10^-12 (1.48 x 10^-12 at beta 2.6).
+On the ratio-4 box of row 960 4.5 (b = 120, x_* = log(26/25) = 0.03922): 6 x 30 x 120^3 x 2.3 = 7.15 x 10^8,
+osc <= 5.5 x 10^-11.
+(d) **Lemma HALF (any worst-case squeeze pays the square root; PROVED).** For a spatial plaquette p at
+time 0 and g_p := s_p - nu(s_p):
+  osc(phi_p) >= ||P^h g_p||_(L^2(nu)) = Cov_inf( s_p(x_0), s_p(x_a) )^(1/2) >= r_1^h |<phi_1, g_p>_nu|,
+with phi_1 the first excited eigenfunction of P.
+Proof. By the tower property and the Markov property of the vacuum chain, averaging phi_p(y, .) over
+z with the vacuum's conditional law of x_h given x_(-h) = y gives E^inf[s_p | x_(-h) = y] = (P^h s_p)(y).
+So inf phi_p <= P^h s_p(y) <= sup phi_p for every y, and osc(phi_p) >= osc(P^h g_p). P^h g_p is
+continuous with nu-mean 0, so it takes both signs and osc(P^h g_p) >= ||P^h g_p||_inf >= ||P^h g_p||_2.
+||P^h g_p||_2^2 = <g_p, P^(2h) g_p> = Cov_inf(s_p(x_0), s_p(x_a)) = sum over i >= 1 of r_i^a |<phi_i, g_p>|^2. QED
+(e) **The true term is first order; spectral form (PROVED).**
+  E^a[s_p] - E^inf[s_p] = (1 + S(a; B))^(-1) sum over i >= 1 of r_i^a ( <psi_i, s_p psi_i> - <psi_0, s_p psi_0> )
+(psi_i the orthonormal eigenfunctions of T_B; spatial p; insert s_p as a multiplication operator).
+Both this and Cov_inf(s_p(x_0), s_p(x_a)) are of order r^a; Lemma HALF says a worst-case squeeze
+needs the SQUARE ROOT of the second to be below the first's required size. Reading (ARGUED; GUIDE in
+Step 6): if the worst-case cone influence decayed at the vacuum rate m, the route would need
+e^(-m a) <= (1.67 x 10^-12)^2, about m a >= 54, where the seed itself needs about m a >= 27 plus
+logarithms: the time extent doubles, and the box b = 24a with it.
+(f) **The averaged form is the claim (PROVED).** Summing (b) over the 6 a b^3 plaquettes and
+integrating over beta' returns X(a; B) exactly (Lemma PR). An averaged bound on the influences of the
+size the seed needs is the seed itself (the slab analogue of row 895's Lemma MC).
+
+**3.5 The squeeze as block dynamics (gap and LSI).**
+(a) **Lemma QF (two-block quasi-factorization of the variance; PROVED).** Let E_1, E_2 be orthogonal
+projections (conditional expectations) on L^2(mu), E_cap the projection on Ran E_1 intersected with
+Ran E_2, eps := ||E_1 E_2 - E_cap||. For every f orthogonal to Ran E_cap:
+  ||f||^2 <= (1 - eps)^(-1) [ (||f||^2 - ||E_1 f||^2) + (||f||^2 - ||E_2 f||^2) ].
+For E_i = E_mu[ . | F_(A_i^c)] (resample the block A_i) and Ran E_cap = constants, this reads
+Var(f) <= (1 - eps)^(-1) sum over i of E Var(f | F_(A_i^c)).
+Proof. E_i commute with E_cap, so they reduce on (Ran E_cap)^perp, where ||E_1 E_2|| = eps. Put
+u = E_1 f, v = E_2 f, s = ||u||^2 + ||v||^2. Then s = <f, u + v> <= ||f|| ||u + v|| and
+<u, v> = <u, E_1 E_2 v>, so ||u + v||^2 <= s + 2 eps ||u|| ||v|| <= (1 + eps) s. Hence s <= (1 + eps) ||f||^2,
+which is the claim. QED
+(b) **Average versus supremum (PROVED, from row 895).** If A = A_1 union A_2 is a finite block with a
+non-empty exterior, E_1, E_2 and E_cap commute with multiplication by every bounded function of A^c,
+so by Proposition FIB of `gap-glue-max.md` 7.2 eps is the supremum over ALL exteriors tau of the
+fibre value eps(tau): the L^2(mu)-averaged condition IS the worst case. If A is the whole torus (the
+top level of a recursion), there is no exterior and eps is a global maximal correlation: for past and
+future time slabs at distance w it is r_1^w exactly (row 895 Lemma MC), and for spatial half-slabs at
+distance w it is (r_1^(1))^w, r_1^(1) the ratio of the top two levels of the transfer operator in a
+spatial direction of the slab (the same lemma along x_1; the slab is reflection positive in every
+direction, CA-II 8.7 of Sussman and Alpoge): the gap in the crossed channel. So every averaged squeeze
+condition is either the worst case (finite blocks) or the claim (the top level).
+(c) **Recursions in the literature (RECALLED, not rebuilt).** Martinelli and Olivieri (CMP 161, 1994):
+strong mixing on regular boxes gives a uniform gap and LSI for Glauber dynamics, by block dynamics and
+a recursion over box sizes. Lu and Yau (CMP 156, 1993): the martingale (squeeze-by-shells) method.
+Cesi (PTRF 120, 2001): quasi-factorization of the entropy, under an L^1 -> L^inf decoupling (a
+supremum by its form). Stroock and Zegarlinski (CMP 149, 1992; JFA 104, 1992): a log-Sobolev inequality
+uniform in the volume and the boundary condition is EQUIVALENT to Dobrushin-Shlosman complete
+analyticity, a worst-case mixing condition. So in this family the decoupling cost is the
+worst-case mixing coefficient, and it cannot be weakened (the equivalence). For the gauge theory the
+first levels (single links, vertex blocks) are exactly where the ceilings 1/3 and 0.775 sit; blocks
+larger than the correlation length are OPEN (row 836). For (LSI-J) one first passes to the local 4D
+parent (row 960 3.7, J has no local specification, row 947 7.3); the same equivalence then holds.
+
+**3.6 Comparison with Theorem SH, Lemma E' and Proposition B3.** SH, E' and B3 extrapolate UP from one
+fixed box with the time scaled with the box (a_k = j^k a); their input is a seed on (a; (ra)^3), r >= 2
+(threshold 1/550 at r = 2 by Theorem SH' of row 960, 3/10 at r >= 24). The squeeze goes DOWN to a unit.
+By COUNT it lasts at least 12a steps, so it cannot sit inside the seed's slab. By SHELL its exact cost
+under (V) is the seed minus the unit's share. By CONE its worst-case form needs osc <= 1.7 x 10^-12 on
+the slab and pays the square root (HALF). By QF and FIB its block form needs worst-case mixing or the
+gap itself. Row 960 5.4 (no small-box inequality uniform in the large box at fixed time holds in the
+class) is the same fact seen from the other side: SHELL shows the cost is a volume sum. No squeeze
+inequality found here is better than SH in threshold or in box size; SH's input box stays the
+smallest input of the static method.
+
+**3.7 Answer to task (2), in one table.**
+
+| Squeeze form | Best inequality found | Decoupling cost | Average or supremum | Against the crux |
+|---|---|---|---|---|
+| (V), one time (shells) | Theorem SHELL: S = sum of s_k, exact | s_j = S_j - S_(j+1); total S - S_n | average | the seed itself, re-indexed |
+| (V), over time | Lemma BND (i) and Lemma LEAK | l_j: one step's loss of the dropped layer | average | no better than SHELL (ARGUED) |
+| cone to one plaquette | Theorem CONE (c), Lemma PR | osc(phi_p) <= 1.7 x 10^-12 (slab) | supremum | needs the square root (HALF): time extent doubled; capped by the ceilings |
+| cone, averaged | Lemma PR, (f) | the influences summed | average | the seed itself |
+| block dynamics (gap, LSI) | Lemma QF; MO, LY, Cesi, SZ | eps of overlapping blocks | L^2 average = supremum (FIB); top level = r_1^w (MC) | worst-case mixing or the gap; SZ: equivalent to complete analyticity |
+| (F), (D) computable end | Lemma BND (ii) (row 960 L3) | none: wrong side | n/a | no reverse inequality |
+| (C) conditioned | DLR: exact | averaging over tau returns the vacuum | average = exact; pointwise = supremum | end not computable |
+
+### Step 4 (done): fact tests
+
+Rule for this step: a squeeze statement passes a model if it claims no gap where the model has none,
+and the test says WHERE the model's difficulty sits (endpoint or decoupling cost).
+
+**4.1 Free photon and compact U(1) (power-law decay must make the cost blow up).**
+- *Gaussian (non-compact) fields, Theorem CONE (c). PROVED: the worst-case cost is infinite.* In a
+  Gaussian field the conditional mean of the window given the boundary slices is linear in (y, z) and
+  the conditional covariance is constant, so for a plaquette observable that is quadratic in the
+  field, phi_p(y, z) = q(L y + L' z) + const with q a non-zero quadratic form and (L, L') not zero
+  (the time-like plaquettes couple adjacent slices). An unbounded quadratic form has osc = infinity.
+  So the worst-case squeeze gives nothing for the free photon at any a and any box. PASS.
+- *Compact U(1), Coulomb phase (beta above about 1.01). ARGUED from RECALLED power laws.* By Lemma
+  HALF, osc(phi_p) >= Cov_inf(s_p(x_0), s_p(x_a))^(1/2). With massless photons, s_p ~ -theta_p^2/2
+  and the connected autocorrelation decays like c a^(-8) (two-photon exchange; c of order
+  1/(pi^4 beta^2), RECALLED free-field value). Then the right side of CONE (c) is at least
+  6 a (r a)^3 beta c^(1/2) a^(-4) = 6 r^3 beta c^(1/2), INDEPENDENT of a: about 8 x 10^4 beta c^(1/2),
+  of order 10^3 to 10^4 at r = 24, against x_* = 0.26. The cost does not fall as the seed box grows,
+  as it must not. PASS.
+- *Theorem SHELL.* An identity; it claims nothing. In the compact Gaussian model of row 960 5.4,
+  S(a; L^3) -> infinity as L grows at fixed a, while the unit-end term S_n(a) is a sum of
+  autocorrelations of unit-box observables and stays bounded (ARGUED: those decay in time and do
+  not grow with L). So the shell cost S - S_n diverges with the box. PASS; the cost carries all of it.
+- *Block dynamics (Lemma QF).* For a massless field the L^2 angle eps between two overlapping blocks
+  at a fixed ratio of overlap to size is scale invariant, so it does not fall along the recursion,
+  and the product of the factors (1 - eps) over the log_2 b levels decays like a power of b (ARGUED),
+  as the photon gap 2 pi/b requires. PASS.
+
+**4.2 Frozen Q_8 and 2T (and Z_2 at large beta).** The flux sectors are degenerate with the vacuum,
+so S(a; B) >= 7 - o(1) (RECALLED count, row 960 5.2).
+- *SHELL with Corollary FLUX. PROVED given the count.* s_0(t) >= sum over the odd levels of r_i^t
+  >= 7 - o(1). All the flux half sits in the FIRST squeeze step, the cut of the periodic box. Every
+  later shell and the narrow end see only the centre-even sector (2.6), where the frozen model has
+  a large gap (local excitations cost of order beta). So the squeeze is cheap after the first step and
+  the first step costs at least 7. PASS, and it locates the difficulty: a squeeze cannot touch the
+  flux half; only the first, non-local step carries it.
+- *CONE.* Lemma PR integrates over beta' in [0, beta]; the path crosses the bulk transition of the
+  finite group (Z_2 near 0.44, Q_8 near 1.15, 2T near 2.15; the ladder of `gap-brainstorm-max.md`
+  Prop F6, ARGUED there from GUIDE values), where
+  the worst-case influence is of order one (coexisting phases). So the bound of CONE (c) is large
+  and gives nothing. In the frozen phase itself local plaquette autocorrelations are tiny and
+  centre-blind, so Lemma HALF gives no obstruction there; the log 8 of the seed is collected near
+  the transition, consistent with Lemma PR being exact. PASS.
+- *Block dynamics.* Local blocks are centre-blind (row 895 Lemma LOC); their recursion can give at
+  most the even gap. The top level is the whole torus, where eps = r_1^w with r_1 -> 1 (odd sectors
+  degenerate): the last step fails. PASS (row 895's flux-half point, in this form).
+
+**4.3 SMALL-BOX (a small box at large beta has no gap, so the cost must grow with beta).**
+- *The open unit endpoint HAS a gap at large beta. PROVED structure, ARGUED limit (Step 5 computes it
+  at beta 2.3-2.6).* On Q_pl the gauge-invariant functions are the class functions of the holonomy U
+  of the one plaquette, and the transfer operator is T = M D M with M = e^(beta s_p/2) and
+  D chi_j = (c_j/d_j)^4 chi_j (each of the 4 links convolves by c, which acts on the irreducible
+  representation j as the scalar c_j/d_j; c_j/d_j = e^(-beta) (2/beta) I_(2j+1)(beta)). At large beta,
+  c_j/c_0 -> e^(-2 j(j+1)/beta), so D ~ e^((2/beta) Laplacian of S^3) and V = beta (1 - cos theta)
+  ~ beta theta^2/2: a three-dimensional oscillator with mass beta/4 and frequency 2, independent of
+  beta. Class functions are its s-waves, so the gap tends to 2 omega = 4. The periodic small box of
+  SMALL-BOX fails through its flat directions (torons) and its 1/b gluon levels; an open box has
+  neither (on a simply connected open box a flat connection is a pure gauge).
+- So the squeeze endpoint is easy at EVERY beta, and the beta-dependence of the seed (asymptotic
+  freedom: correlation length growing like e^(c beta)) must sit entirely in the decoupling cost. It
+  does: in CONE the worst-case influence per step tends to one below the correlation length (Lemma
+  HALF with photon-like autocorrelations up to that scale); in SHELL the shell terms carry the gluon
+  levels; in QF eps stays of order one at every level below the correlation length (ARGUED, as in
+  4.1). PASS.
+
+**4.4 K7 (mixed weight exp(beta_F x + beta_A (4x^2 - 1)/3), first-order line).** Two phases coexist
+and every periodic thermal sum is at least 1 - o(1) (READ `gap-mid-max.md` L48).
+- *Endpoint.* Under (F) the open unit box is a finite system with a smooth weight: gap of order one,
+  no coexistence. Under (V) the unit end is a vacuum quantity: a unit-box plaquette has an overlap of
+  order one with the tunnelling state phi_1 (the two phases have different mean plaquettes), so
+  S_n(t) >= r_1^t ||Pi_n phi_1||^2 is of order one for t below the tunnelling time (ARGUED). So the
+  computable endpoint misses the coexistence, and the faithful endpoint already contains it.
+- *CONE.* osc(phi_p) is at least half the jump of the plaquette between the two phases, which does
+  not decay with h (boundary slices select the phase); Lemma HALF gives the same with r_1 near 1.
+  The bound is of order 6 a b^3 beta times that jump. PASS.
+- *QF.* Top level eps = r_1^w with r_1 near 1. PASS.
+
+**4.5 Summary of the fact tests.** Every squeeze statement of Step 3 passes every test, by claiming no
+gap. The tests say where the difficulty goes: photon and U(1) into a cost that does not fall with
+the box; the flux half of frozen groups into the first squeeze step; asymptotic freedom (SMALL-BOX)
+into the per-step cost, the open endpoint being gapped at every beta; K7 into the passage from the
+computable endpoint (F) to the faithful one (V). In no model does the endpoint carry the difficulty.

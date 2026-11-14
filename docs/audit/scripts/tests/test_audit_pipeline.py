@@ -10380,6 +10380,11 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             template_flat,
         )
         self.assertIn(
+            "Otherwise the verdict records the narrower scope that holds, "
+            "never the note's own wall list.",
+            template_flat,
+        )
+        self.assertIn(
             "packet is optional for every verdict, in both tiers",
             template_flat,
         )

@@ -69,11 +69,11 @@ operator: it launches and supervises seats and never judges.
    - Only registered axioms and approved primitives are accepted premises
      (`docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`). Their use is
      still judged for correctness. History and decisions satisfy nothing.
-   - An audited obstruction's `claim_scope` states the family it rules out,
-     with explicit quantifiers. Its `verdict_rationale` says whether the title,
-     summary and status lines claim no more than that. A clean verdict needs
-     both, and no open admissible route inside the family. The N1 to N8 packet
-     is optional; a supplied one is validated and must agree with the verdict.
+   - An obstruction's `claim_scope` states the family it rules out, with
+     explicit quantifiers; `verdict_rationale` says whether title, summary
+     and status lines claim no more. Clean needs both and no open admissible
+     route in it; else record the narrower scope, never the note's wall list.
+     The N1 to N8 packet is optional; a supplied one must match the verdict.
    - Prose and physics are separate verdicts. When torn, take the more
      conservative non-clean verdict; it states the issue, why it blocks, the
      repair target and what may still be said. A seat never repairs, offers

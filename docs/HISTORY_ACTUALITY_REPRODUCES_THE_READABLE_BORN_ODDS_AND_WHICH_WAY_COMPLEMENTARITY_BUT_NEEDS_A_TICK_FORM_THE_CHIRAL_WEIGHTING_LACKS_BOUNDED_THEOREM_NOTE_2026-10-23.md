@@ -10,7 +10,7 @@ upstream_dependencies:
 runner: scripts/history_actuality_reproduces_the_readable_born_odds_and_which_way_complementarity_but_needs_a_tick_form_the_chiral_weighting_lacks_2026_10_23.py
 ---
 
-# History actuality reproduces the readable Born odds and which-way complementarity, but needs a tick form the chiral weighting lacks
+# History actuality reproduces the readable Born odds and which-way complementarity, but needs a tick form that is not constructed here for the chiral weighting
 
 Claim type: bounded_theorem (exact identities on finite toys plus labelled finite diagnostics; the consistent-histories
 rule and lattice-chiral conventions are supplied and cited).

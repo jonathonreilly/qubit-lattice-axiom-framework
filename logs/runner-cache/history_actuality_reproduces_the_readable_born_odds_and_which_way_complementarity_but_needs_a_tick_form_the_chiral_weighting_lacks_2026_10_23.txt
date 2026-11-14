@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/history_actuality_reproduces_the_readable_born_odds_and_which_way_complementarity_but_needs_a_tick_form_the_chiral_weighting_lacks_2026_10_23.py
 runner_sha256: 6c3dde5bbaced96e75ad7e950ede51c359d3bd41294ad12aecbf8d91023afe2c
-input_fingerprint_sha256: eeaf61170b9648f36e21cb05341abefa03307cab96b1afcdd1bd18da0b09dc11
+input_fingerprint_sha256: 697ff905449400e0ae3aabef4c4dd45af578a1b054cda0cc0adeba11550fb629
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.98
+elapsed_sec: 4.02
 status: ok
 ----- stdout -----
 PASS: A1 single-time mode partition decoheres and D(a,a) = Born exactly (any state)  [offdiag 0.0e+00]

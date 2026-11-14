@@ -201,3 +201,78 @@ with the z-twist, beta 2.6, L = 4 and 8 (frame chains, e_3 PCA). Family C = vacu
 (mean subtracted). Family C has little power: with 400 chains and up to 1944 coordinates the split estimate of the top
 eigenvalue is biased low. A bounded value there establishes nothing.
 
+**3.2 Batch 2 (run 10:22-10:30Z under the lock, 71 percent free).** Log `logs/batch2.log`, JSON `logs/b2_*.json`. Same columns as
+3.0; A_lo is LB with Y_1 (the holonomy along the twist direction), split halves. Criteria of 1.5.
+
+| slice | beta | L | temporal-gauge X_1/X_2/X_3 | A_0 | A_16 | A_64 | A_64/A_16 | A_lo | PCA (halves) |
+|---|---|---|---|---|---|---|---|---|---|
+| u_phi (z), phi = pi/2 | 2.3 | 4 | 0.96/1.09/2.58 | 2.59 | 1.75 | 1.42 +- 0.19 | 0.81 | 0.24 +- 0.06 | 1.2, 1.4 |
+| u_phi (z), phi = pi/2 | 2.3 | 6 | 1.47/1.24/3.16 | 3.12 | 1.98 | 1.23 +- 0.18 | 0.62 | 0.08 +- 0.02 | 0.8, 0.9 |
+| u_phi (z), phi = pi/2 | 2.3 | 8 | 2.09/1.81/2.70 | 2.81 | 1.89 | 1.35 +- 0.32 | 0.71 | 0.01 +- 0.01 | 0.6, 0.7 |
+| u_phi (z), phi = pi/2 | 2.45 | 4 | 1.09/1.26/5.96 | 5.90 | 4.58 | 4.33 +- 0.49 | 0.95 | 1.68 +- 0.38 | 4.3, 4.1 |
+| u_phi (z), phi = pi/2 | 2.45 | 6 | 2.84/2.27/11.8 | 11.5 | 10.4 | 9.44 +- 0.91 | 0.91 | 2.04 +- 0.41 | 7.5, 10.6 |
+| u_phi (z), phi = pi/2 | 2.45 | 8 | 2.71/2.38/24.8 | 25.3 | 23.6 | 21.9 +- 2.2 | 0.93 | 2.55 +- 0.77 | 21.3, 19.8 |
+| **u_xy twisted along x, phi = pi/2** | **2.6** | 4 | 2.11/2.45/4.82 | 4.90 | 4.17 | 3.35 +- 0.36 | 0.80 | **1.62 +- 0.32** | 3.0, 3.4 |
+| **u_xy twisted along x, phi = pi/2** | **2.6** | 8 | 13.0/4.5/43.2 | 44.4 | 43.4 | 41.7 +- 2.7 | 0.96 | **20.9 +- 4.1** | 38.7, 41.5 |
+| u_phi (z), phi = pi/4 | 2.6 | 4 | 3.41/4.00/4.83 | 4.89 | 3.30 | 2.55 +- 0.22 | 0.77 | 0.53 +- 0.13 | 1.9, 2.7 |
+| u_phi (z), phi = pi/4 | 2.6 | 8 | 12.8/18.1/35.7 | 35.0 | 33.6 | 31.5 +- 5.8 | 0.94 | 3.4 +- 1.6 | 38.5, 21.9 |
+
+**Verdicts against 1.5 (GUIDE).**
+- **beta 2.6, u_xy twisted along x: (SG2) REFUTED on the boxes run.** A_lo rises from 1.62 +- 0.32 to 20.9 +- 4.1 between L = 4 and 8:
+  +19.3, 4.6 combined standard errors, ratio 12.9 >= 2.5. A_lo is the lower side (Lemma LB, no frame chain). The lagged value at
+  L = 8 has converged (A_64/A_16 = 0.96) and sits at 41.7, so the frame-averaged tie moment is between 21 and 42 at L = 8, against
+  1.6 to 3.4 at L = 4. The tie vector v (eps_l e_3 on x and y links) has zero covariant divergence at this slice (its x and y
+  links are central), so z_v is horizontal and Var(phi_(u,z_v)) = beta^2 Var(<v, Ebar>): **(SG-step) in gauge-invariant form
+  fails with it, with the same growth (GUIDE).**
+- beta 2.6, z-twist at phi = pi/4: lagged values grow 2.55 -> 31.5 (lag-converged at L = 8); A_lo 0.53 -> 3.4 is 1.8 standard
+  errors: inconclusive on A_lo. Smaller phi pins n to e_3 more weakly (the temporal-gauge order spreads over the three
+  colours, 12.8/18.1/35.7), as the cost rho L phi^2 of 1.4(e) predicts.
+- beta 2.45, z-twist at phi = pi/2: the lagged values grow 4.33 -> 9.44 -> 21.9 (ratio 5.1 from L = 4 to 8; lag-converged within
+  10 percent at all sizes), with the temporal-gauge order on e_3 (24.8 against 2.7 and 2.4 at L = 8). A_lo 1.68 -> 2.04 -> 2.55
+  stays within errors: **inconclusive by 1.5** (growth on the upper side only; the holonomy proxy is weak here).
+- beta 2.3, z-twist at phi = pi/2: no growth. A_64 is 1.42, 1.23, 1.35 (it was still falling at lag 64, so the limit is lower);
+  A_lo falls to 0; the PCA top falls 1.3 -> 0.9 -> 0.6. Saturation: (SG2) survives this slice at beta 2.3 (establishes
+  nothing). Row 950 found no colour order at u_xy at beta 2.3 (finite correlation length, level 2.5), and the twist
+  converts only existing order into gauge-invariant data.
+
+## 4. What the refutation means (by hand; written while batch 3 runs)
+
+**4.1 Proposition TW (PROVED).** Let u be u_xy with a flat colour twist along d in {x, z}: every d-link multiplied by
+exp((phi/L) k), phi not in pi Z. Then (i) u is flat on every plaquette except the xy ones, where it equals u_xy, and a gauge
+transformation moves the twist into one seam of d-links carrying exp(phi k): u is locally gauge equivalent to u_xy;
+(ii) the constant gauge transformations fixing u include exp(alpha k), so Ebar_l is parallel to e_3 for every l and every
+next slice (1.4(b)); (iii) S_d = (conjugation by i) composed with the reflection of the d-axis fixes u, preserves the tie
+vector eps (a reversed link reverses the sign of E, and eps on the reflected links matches), and maps X_3 to -X_3, so
+E[X_3] = 0 under pi_u; (iv) the tie vector v = eps e_3 / sqrt(2 L^3) has zero covariant divergence at u (its links are the
+central x and y links, and eps has zero lattice divergence), so z_v = (v_l u_l) is horizontal and
+Var_(pi_u)( phi_(u,z_v) ) = beta^2 Var_(pi_u)( <v, Ebar> ) >= beta^2 A_lo   (Lemma LB).
+Proof: (i), (ii), (iii) as in 1.4 with d in place of z (for d = x: the y-links (-1)^x are even under x -> -x; the x-links
+exp(delta k) are reversed to exp(-delta k) and conjugation by i restores exp(delta k)); (iv) is the definition of 6.1 of
+row 950 with u_l^* xi_l u_l = xi_l on central links. QED.
+
+**4.2 Reading (ARGUED; the runs are GUIDE).** Row 950 found that the colour direction n of the first-step pattern orders at
+u_xy for beta >= 2.5, and that for SU(2) this order is pure gauge frame at u_xy itself (Ebar = 0 there, Lemma CEN), because
+charge conjugation is inner. A flat holonomy along one axis costs nothing locally, but it gives the slab a gauge-invariant
+reference axis: the angle of n to the holonomy axis becomes gauge-invariant data (the winding loop of 1.4(d) reads it). A
+pattern with n off the axis must wind around it along d (cost of order rho L phi^2), so n -> +-e_3. The reflection S_d, which is
+a lattice symmetry and not a gauge transformation, ties the two states. So the frame order of row 950 turns into an order of
+gauge-invariant boundary data with an exact tie: the "tie between gauge-inequivalent next slices" that row 950 7.3 named as
+the only way to violate (SG2). It needs no fine tuning and no first-order transition: it holds on the whole ordered side.
+Row 950's conclusion "the SU(2) chain cannot fail (SG-step) this way" (7.2) is right for charge conjugation and does not
+cover lattice reflections combined with a colour rotation.
+
+**4.3 General form (ARGUED).** If at coupling beta some central slice u_c has an ordered Dirichlet boundary layer (the
+temporal-gauge first-step susceptibility grows like the volume), and u_c has a reflection symmetry along an axis d, then
+the flat twist of u_c along d violates (SG2) and (SG-step) at beta, with Var(<v, Ebar>) of the order of the frame-averaged
+ordered moment. So (SG2) at beta needs that no Dirichlet boundary layer orders at beta, over all slices: a statement of
+uniqueness of the boundary Gibbs state, uniform in the datum. Any proof of (SG-step) must use a property of that kind,
+and must fail for the twisted u_xy at beta 2.6 (fact test).
+
+**4.4 Batch 4 plan and criteria (fixed at 10:33Z, before batch 3 reported; chained after it; script `batch4.sh`, code
+`sg2lab_b3.py`).** The x-twist gave the best proxy (A_lo/A_64 about 0.5 at L = 4 and 8), so the coupling scan is repeated on it:
+u_xy twisted along x, phi = pi/2, at beta 2.3 and 2.45 with L = 4, 6, 8, and at beta 2.6 with L = 6 and 12 (L = 4, 8 are in
+batch 2). Primary A_lo: LB134 for the new runs; the one-regressor A_lo(Y_1) is also reported, because it is the quantity
+batch 2 has at L = 4, 8. Criteria: those of 1.5 (REFUTES if A_lo rises at each step by more than 2 combined standard errors
+and A_lo(8)/A_lo(4) >= 2.5; saturation if A_lo and A_64 change by at most 30 percent from L = 6 to 8). At beta 2.6 the
+added sizes test persistence: growth persists if A_lo(12)/A_lo(6) >= 2.5 beyond 2 standard errors.
+

@@ -60,3 +60,183 @@ negative tensor term. So "no averaged form exists" was not established by row 95
 **Credit.** Ethan Sussman and Levent Alpoge (with Claude and Codex as authors of their text): the transfer frame
 and temporal-gauge setting of the account. Rows 941, 947 (Claude Fable 5.2): exponential family, Theorem BR.
 Bauerschmidt, Bodineau, Dagallier; Chen, Eldan; Piazza, Shen: named where used below.
+- 14:15 Sections 2 and 3 written (sources; the flow of the bridge marginal; Theorem POL-BR; zero-field values).
+
+## 2. Sources: what each criterion needs, and whether the need is an average or a supremum
+
+Read from open copies fetched to `/tmp/gap-avgcurv-968/` (not committed): Bauerschmidt, Bodineau, Dagallier,
+arXiv:2307.07619 (BBD), Section 3.3 and the proof of Theorem 3.6 (printed pp. 19-21); Chen, Eldan, arXiv:2203.04163
+(CE), Claim 22, Proposition 39, Lemma 40.
+
+**2.1 BBD Theorem 3.6 (quoted in short).** nu_0 = e^(-V_0) x Gaussian(C_infinity), with a decomposition
+C_t = integral of C-dot. V_t = -log(Gaussian(C_t) * e^(-V_0)), nu_t = e^(-V_t) x Gaussian(C_infinity - C_t). Hypothesis (3.32):
+"for all phi in X, t > 0: C-dot_t Hess V_t(phi) C-dot_t - (1/2) C-ddot_t >= lambda-dot_t C-dot_t", with lambda-dot_t real, "allowed
+to be negative". Conclusion (3.33)-(3.34): Ent_(nu_0)(F) <= (2/gamma) E_(nu_0)(grad F^(1/2))^2, 1/gamma = integral of e^(-2 lambda_t) dt.
+- **Average or supremum.** An average over the scale t only. At each scale it is a SUPREMUM over the field phi.
+- **Where the supremum is used (their proof, (3.43)-(3.48)).** Ent_(nu_0)(F) = 2 integral of E_(nu_t)(grad F_t^(1/2))^2 dt, F_t = P_(0,t) F
+  ((3.44)). Lemma 3.10: (L_t - d/dt)(grad F_t^(1/2))^2 = 2 Hess V_t(grad F_t^(1/2), C-dot grad F_t^(1/2)) + (1/4) F_t |Hess log F_t|^2. The
+  hypothesis is applied pointwise at the vector grad F_t^(1/2)(phi), and the last term (non-negative) is dropped.
+- **Two consequences I use (READ from that proof; not rebuilt).** (a) If a compact group acts on X by orthogonal maps
+  that preserve V_0 and C_t, then for invariant F the hypothesis is needed only on vectors orthogonal to the orbit
+  of phi ("horizontal at phi"), because F_t is invariant. (b) Taking E_(nu_t) of Lemma 3.10 (C-dot = Id) gives an identity
+  with no supremum, for I(t) := E_(nu_t)(grad F_t^(1/2))^2:
+     I'(t) = -2 E_(nu_t)[ Hess V_t(grad F_t^(1/2), grad F_t^(1/2)) ] - (1/4) E_(nu_t)[ F_t |Hess log F_t|^2 ].      (ID-ent)
+  The variance form (same computation with F in place of F^(1/2)): Var_(nu_0)(F) = integral of I_2(t) dt, I_2 = E_(nu_t)|grad F_t|^2,
+     I_2'(t) = -2 E_(nu_t)[ Hess V_t(grad F_t, grad F_t) ] - E_(nu_t)|Hess F_t|^2.                               (ID-var)
+- **What it needs for J.** J lives on M x M and is not of the form (3.10). The bridge marginals nu_s on R^N are of
+  that form (Section 3), and Theorem BR reads only them. So the criterion applies to nu_s and J is bypassed.
+
+**2.2 Chen-Eldan (quoted in short).** A localization process nu_t (a measure-valued martingale started at nu).
+Proposition 39: "suppose that, almost surely for all t in [0, T], nu_t is alpha_t-entropically stable with respect to
+psi(x, y) = (1/2)|C_t(x - y)|^2. Then E[Ent_(nu_T)[f]] >= e^(-integral of alpha_t) Ent_nu[f]." Lemma 40: entropic stability with
+alpha = ||C A C|| holds if "for every v in R^n one has Cov(T_v nu) <= A", T_v the linear tilt. Variance (Claim 22 and its
+continuous form): d Var_(nu_t)(phi) = -|C_t v_t|^2 dt + martingale, v_t = integral of (x - b(nu_t)) phi d nu_t, so
+|C_t v_t|^2 <= ||C_t Cov(nu_t) C_t|| Var_(nu_t)(phi).
+- **Average or supremum.** Entropy: a SUPREMUM over every tilt of every measure on the path. Variance: an almost-sure
+  bound on ||Cov(nu_t)|| along the path. For the linear-tilt process nu_t = T_(h_t) nu with h_t = t X + B_t the path has
+  full support, so "almost surely" is again a supremum over all tilts h in R^N. The average is over t only.
+- **The typical-path form (RECALLED from Eldan's work on the KLS conjecture; not in CE in this form; not rebuilt).**
+  For a bounded test function and a stopping time at the first exit of ||Cov(nu_t)|| from a bound, the same
+  identity gives Var_nu(f) <= e^(alpha T) (E Var_(nu_T)(f) + osc(f)^2 P(exit before T)). This needs the covariance bound
+  only with high probability. Its output is a weak Poincare inequality (a defect osc(f)^2 x probability), not a gap.
+- **What it needs for J.** The linear-tilt localization of the one-step law pi_(beta x) is the exponential family of row
+  941: nu_t = pi_(theta_t), d theta_t = grad Lambda(theta_t) dt + dB_t. The covariance on the path is Hess Lambda(theta) = Cov_(pi_theta)(w).
+  The supremum form is (COV)_kbar of row 941 (A4), with kbar >= 1/4 (Elitzur).
+
+**2.3 Verdict on input (1) of the row.** Both published criteria average over the scale and take a supremum over
+the field or tilt. Neither is an average over the measure. The identities (ID-ent), (ID-var) are the averaged
+statements behind them; they hold for every F and keep a Hessian term. Section 5 shows what an average over the
+measure can and cannot mean.
+
+## 3. The Polchinski flow of the bridge marginal is the reduction of one time-like coupling
+
+Fix s in (0, 1/beta), s' = 1/beta - s, lam = beta s, and c := s s'/(s + s') = lam (1 - lam)/beta, so 1/c = 1/s + 1/s'.
+
+**3.1 Proposition FLOW (PROVED, hand).** Put q~ := x/s + w/s' for (x, w) in M x M, and for 0 <= b <= beta, phi in R^N:
+  J_(b,phi)(dx, dw) := e^(b <x, w> + <phi, q~>) m(dx) m(dw) / Z_b(phi).
+(a) nu_s(dy) = Gaussian(c Id)(dy) e^(-V_0(y))/const with V_0(y) = -Lambda(y/s) - Lambda(y/s'). V_0 is concave.
+(b) For 0 <= t <= c and C_t = t Id: V_t(phi) = -log Z_(b_t)(phi) - const_t, with b_t := t/(s s'). So b_t runs from 0 to beta.
+(c) grad V_t(phi) = -E_(J_(b_t,phi)) q~ and Hess V_t(phi) = -Cov_(J_(b_t,phi))(q~). Every V_t is concave.
+(d) nu_t is the law of (1 - t/c) q + (c - t)^(1/2) xi, with q = (1 - lam) x + lam w, (x, w) distributed by J, xi standard Gaussian,
+    independent. Given this variable equal to phi, the law of (x, w) is J_(b_t,phi).
+Proof. (a) On M, |x|^2 = L, so h_s(y) = (2 pi s)^(-N/2) e^(-L/(2s)) e^(-|y|^2/(2s)) e^(Lambda(y/s)); multiply the two factors (row 947 (B4)).
+Hess V_0 = -Cov_(pi_(y/s))/s^2 - Cov_(pi_(y/s'))/s'^2 <= 0. (b) e^(-V_0(zeta)) = integral of e^(<zeta, q~>) m(dx) m(dw). For zeta Gaussian
+with mean phi and covariance t Id: E e^(<zeta, q~>) = e^(<phi, q~> + (t/2)|q~|^2), and |q~|^2 = L/s^2 + L/s'^2 + 2 <x, w>/(s s') on M x M.
+(c) Differentiate log Z_b(phi) in phi. (d) nu_t has density proportional to e^(-V_t(phi)) e^(-|phi|^2/(2(c - t))). Insert (b) and
+complete the square: it is the mixture over (x, w), with weight e^((c/2)|q~|^2) m(dx) m(dw), of Gaussians with mean (c - t) q~ and
+covariance (c - t) Id. The weight is proportional to e^(beta <x, w>) (since c/(s s') = beta), that is to J, and c q~ = q. The
+posterior follows from the same display. QED
+Reading. J_(b,phi) is the law of two consecutive slices of the vacuum chain when the ONE layer of time-like
+plaquettes between them has coupling b in place of beta, and the two slices feel the linear fields phi/s and phi/s'.
+Each factor m keeps the full coupling beta in its own half-space. So the multiscale curvature of the bridge
+marginal is a link covariance of the two-slice system, along the flow that switches the middle layer on.
+The fields phi/s, phi/s' are not gauge invariant: a linear term in the links is a gauge-fixing or Higgs-type term.
+
+**3.2 Lemma Z (zero field; PROVED, Elitzur's argument of row 941 (A5) applied to the pair).** On a cubic periodic
+box of side at least 3, for every b: Cov_(J_(b,0))(q~) = k0_(s,b) Id_N with
+  k0_(s,b) = (1/4)(1/s^2 + 1/s'^2 + 2 tau_b/(s s')),   tau_b := E_(J_(b,0)) <x_l, w_l> in [0, 1],
+so k0_(s,b) <= 1/(4 c^2). At phi = 0 every vector is horizontal.
+Proof. J_(b,0) is invariant under gauge transformations acting on x and w at once. Two distinct links do not have
+the same end sites, so the central element -1 at one site kills E[x_l (x) x_l'], E[x_l (x) w_l'], E[w_l (x) w_l'] for l != l'.
+For l = l' the three matrices commute with q -> g q h^(-1) (independent g, h at the two ends), that is with SO(4), so
+each is a multiple of Id_4: 1/4, tau_b/4, 1/4. E q~ = 0. tau_b is the same for all links by the lattice symmetries
+of the cube. tau_b >= 0: L tau_b = (d/db) log Z_b(0) is non-decreasing in b and vanishes at b = 0. QED
+
+**3.3 Theorem POL-BR (CONDITIONAL on BBD Theorem 3.6 with reading (a) of 2.1, cited, not rebuilt; and on Theorem BR,
+row 947, checked by row 949).** For s in (0, 1/beta) and 0 <= t <= c_s let kbar_(s,t) be a piecewise continuous bound with
+  (TILT-COV-sup):  Var_(J_(b_t,phi))(<z, q~>) <= kbar_(s,t) |z|^2  for every phi in R^N and every z orthogonal to the gauge orbit of phi.
+Then nu_s has the gauge-invariant log-Sobolev inequality (LSI-br)_s with
+  1/alpha_s <= integral over [0, c_s] of exp(2 integral over [0, t] of kbar_(s,u) du) dt,
+and (HC-vac)_alpha holds with alpha = (1/2) integral over (0, 1/beta) of alpha_s ds.
+Proof. By 3.1, nu_s has the form (3.10) of BBD with C_t = t Id on [0, c] (their Remark 3.8 allows the
+reparametrisation of [0, c) to [0, infinity)); C-dot = Id, C-ddot = 0, and (3.32) on horizontal vectors holds with
+lambda-dot_t = -kbar_(s,t). The continuity condition (3.31) holds: nu_t tends to the unit mass at 0 and P_(0,t) F(0) to E_(nu_s) F
+(all functions here are smooth with bounded derivatives). The gauge group acts on R^N by orthogonal maps that
+preserve m, hence V_0. Then Theorem BR. QED
+Checks by hand. (i) One flat mode: on the line the factor e^(-x^2/(2s)) is not constant, so m is replaced by
+e^(-x^2/(2s)) m there. With m of precision kappa: Hess V_t = -k/(1 - k t), k = (1/s^2)/(kappa + 1/s) + (1/s'^2)/(kappa + 1/s'), and
+the integral is c/(1 - k c). So alpha_s = 1/c - k = kappa/(1 + kappa s) + kappa/(1 + kappa s'), the exact precision of nu_s (row 947, 5.4).
+The criterion is exact in every Gaussian mode, as Theorem BR is. (ii) Units: for N(0, 1/A), alpha = A.
+
+**3.4 What the zero field gives (PROVED arithmetic; it is NOT a bound for SU(2)).** If kbar_(s,t) could be taken
+equal to its zero-field value k0 <= 1/(4 c^2), then alpha_s >= alpha0_s := 1/(2 c^2 (e^(1/(2c)) - 1)). At the mid-slice
+(c = 1/(4 beta)): alpha0 = 8 beta^2/(e^(2 beta) - 1) = 0.43 at beta 2.3 and 0.30 at beta 2.6 (the Gaussian scale there is 4 beta).
+With lam = 0.1, 0.2, 0.3, 0.4, 0.5 at beta 2.3: alpha0_s = 0.001, 0.078, 0.25, 0.38, 0.43, so
+(1/2) integral of alpha0_s ds is about 0.04 (trapezoid by hand). K_a <= 0.04 on the box (a; (4a)^3) holds from a of about 830.
+Two readings.
+- The three one-scale ceilings of row 941 (beta 1, 2, 3/2) all come from the zero-field point. In the form
+  integrated over scale that point costs a finite factor at every beta. So the integrated form is not capped by
+  those ceilings. This is the precise sense in which an averaged form escapes them (PROVED for the zero-field
+  point only).
+- The zero-field value is the same for SU(2), compact U(1) (with 1/2 in place of 1/4) and the frozen groups. So
+  the zero field cannot be the worst tilt for the rivals (Section 4), and the whole content of (TILT-COV-sup)
+  is in the non-zero tilts.
+- 14:24 Section 4 written (fact tests of the criterion of Section 3).
+
+## 4. Fact tests of (TILT-COV-sup), before any proof attempt
+
+Section 3 is exact and blind to the group and to V. So its hypothesis must fail for every rival, and it must
+contain the box size. Each test below is a necessary condition. None is evidence for SU(2).
+
+**4.1 Lemma NEC (PROVED given Theorem POL-BR and Proposition HC of row 931).** Let k* be the supremum of kbar_(s,t) over
+s in [1/(4 beta), 3/(4 beta)] and t in [0, c_s]. Then E_1(B) >= e^(-k*/(2 beta)). So every model of the class obeys
+  k* >= 2 beta log(1/E_1(B)).
+Proof. On that range c_s lies in [3/(16 beta), 1/(4 beta)], so alpha_s >= (c_s e^(2 k* c_s))^(-1) >= 4 beta e^(-k*/(2 beta)). The range has length
+1/(2 beta), so alpha >= e^(-k*/(2 beta)), and Proposition HC gives E_1 >= alpha. QED
+Reading. A box-uniform bound on the tilted covariance gives a box-uniform gap. Where the gap closes with the box,
+the tilted covariance must grow with the box, at least like 2 beta log(1/E_1).
+
+**4.2 FT-U1.** (a) FP, the Gaussian mode model of row 929 (PROVED). The criterion is exact in every mode (3.3, check
+(i)), so its output is the true rate of FP. On the box (a; (4a)^3) the lowest mode has omega_min = 2 asinh(sin(pi/(4a)))
+< 1.58/a, against K_a > 12.5/a: FP fails the seed rate for every a, by a factor above 8 (above 59 on the slab, row 947
+4.3). In the language of the flow: k = 1/c - (exact precision), and Var = k/(1 - k t) reaches 1/(precision) at t = c.
+The soft modes are the photon modes, as the row asks. With the toron level of full FP (check 938: 1/(2 beta b)),
+Lemma NEC gives k* >= 2 beta log(2 beta b).
+(b) Compact Wilson U(1) in its Coulomb phase (ARGUED from Lemma NEC; the absence of a gap there is RECALLED, not
+proved here). Section 3 holds for it word for word (M = (S^1)^L in R^(2L), zero-field value with 1/2 in place of 1/4).
+The zero-field value is box-independent, so the supremum over non-zero tilts must grow with the box. The Ricci
+curvature does not appear in Section 3 at all: the flat ambient space carries the argument. So "Ric = 0" is not
+the place where U(1) fails. It fails in the tilted link covariance.
+Verdict: the criterion passes FT-U1 only in the sense that it proves nothing for U(1). No step of Sections 2-3
+separates SU(2) from U(1).
+
+**4.3 FT-FROZEN (Q_8, 2T).** The proof of Theorem BR uses m as a finite measure on a closed subset of the product of
+unit spheres, the kernel e^(beta <x, w>), and Gaussian convolutions in R^N. It does not use that M is a manifold
+(ARGUED: I re-read steps (i)-(v) of row 947 5.2 for this; not checked by another reader). So for a finite group
+the ambient inequality (LSI-br)_s is defined, Proposition FLOW and Lemma Z hold (the group contains -1 and
+g q h^(-1) acts irreducibly on R^4 for Q_8 and 2T), and the test is no longer void. On a fixed box E_1 tends to 0 as
+beta grows (row 941 FT-FROZEN, from check 938). By Lemma NEC, k*/(2 beta) tends to infinity there. The zero-field
+value stays below (4/9)(4 beta)^2 on the range of 4.1. So for the frozen groups the failure sits in non-zero
+tilts, as for U(1). Passes (nothing is claimed for them).
+
+**4.4 SMALL-BOX (conditional on the premise of row 941: for SU(2) on a fixed lattice box E_1 tends to 0 as beta
+grows).** Lemma NEC: k* >= 2 beta log(1/E_1) on that box. So no bound on kbar that is uniform in beta at fixed lattice
+size exists. A proof of (TILT-COV-sup) must use the box size against the confinement scale. The box enters only
+through m. Passes.
+
+**4.5 K7.** Section 3 needs the time-like weight e^(beta <x, w>). With an adjoint term in the time-like plaquettes the
+kernel is not a Gaussian of the ambient chord and Theorem BR does not apply. With the adjoint term in V only,
+Section 3 holds, and at a coupling with no seed at any size Lemma NEC makes k* grow with the box. Passes.
+
+**4.6 FT-FK (row 967).** The flow of Section 3 acts on the kinetic coupling of one layer only, and it is exact for
+every rival. By FT-FK such an argument cannot decide anything, and it does not: the magnetic term and the rest
+of the lattice enter only through m, in the hypothesis. The named step where SU(2) must differ from U(1) is a
+bound on Var_(J_(b,phi))(<z, q~>) at non-zero phi. Check in the kinetic-only model (V = 0, m a product of Haar measures;
+ARGUED): J_(b,phi) is a product over links, the covariance is one link's, and the theorem returns a positive
+box-independent rate. This is correct there (independent rotor chains have a gap), and it shows the criterion
+can only fail through correlations that m carries.
+
+**4.7 The ceilings 1/3, 2/3, 0.775, 4 G_3 (FT-CEIL).** Each caps a one-scale criterion with a threshold
+(`gap-status-1113.md` lines 68, 110, 112, 341). Theorem POL-BR has no threshold: any finite kbar gives a positive
+alpha, and the loss is the factor exp(2 integral of kbar). So no cited ceiling applies to it (PROVED: there is no
+smallness condition in 3.3). The price is the other one: it is a supremum over all linear tilts, and its
+failure mode is growth with the box (Lemma NEC), not a critical coupling.
+
+**4.8 Which tilts can be bad (ARGUED; physics reading, no proof weight).** A uniform tilt phi_l = kappa 1 on the
+two slices is a fundamental Higgs term of frozen length on a three-dimensional layer, in unitary gauge. The
+vector z = (1, ..., 1)/N^(1/2)-type (the real part on every link) is horizontal at such phi. If the layer has a phase
+transition in kappa, the variance of the mean link along z grows with the box (like the volume at a first-order
+point). So a box-uniform (TILT-COV-sup) says in particular: the Higgs-tilted layer has no transition, at any
+kappa, in the confining bulk. For the full four-dimensional SU(2) Higgs model with frozen length a line of
+transitions ends near beta 2.7 (RECALLED from lattice studies, not verified; the window 2.3 to 2.6 lies below it).
+This family is the first place to test (Section 7).

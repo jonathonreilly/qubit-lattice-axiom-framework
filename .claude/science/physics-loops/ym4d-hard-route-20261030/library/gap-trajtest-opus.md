@@ -8,6 +8,7 @@ A run guides or refutes; it proves nothing.
 
 ## Status log
 - 2026-11-14T16:53Z: file created with plan.
+- 17:04Z: Sections 1-3 written (criteria before any run); control C1 run; batch 1 (small boxes) started 17:04Z.
 
 ## Plan (at most eight steps; one per response)
 1. Read row 970 section 7.3 ((LSI-traj-seed)_a, (EC-traj)), Proposition HC and X(2m+2; B) in gap-direction-max.md,
@@ -96,3 +97,77 @@ only on boxes where the torelon PAIR (centre-even, energy about 2 E_flux) is hea
 (G) centre-even local sector (smeared plaquette and 2x2-loop sums, zero momentum, 0++);
 and compare (G) with K_a on boxes where 2 E_flux > E_G. The seed is refuted for every a with K_a > m_G (Lemma RATE (c) on
 the seed box). Since K_a falls with a, the outcome is a range a < a_min(beta), not a verdict on the route as a whole.
+
+## 3. Pre-set criteria (written 17:02Z, BEFORE any run)
+
+**3.1 Runs.** SU(2) Wilson, periodic L^3 x N_t, heat bath (Creutz sampler) plus over-relaxation, plain numpy, script
+`guide/lane974/traj974.py` (new; the heat-bath pattern of `guide/lane968/tilt.py` and the APE smearing of
+`guide/lane954/glueball954.py`). beta 2.3: L = 4, 6, 8 (N_t = 16). beta 2.6: L = 4, 6, 8 (flux record), then L = 16 (N_t = 24)
+for the local sector if memory and time allow. Sample sizes N and 2N (a second, independent stream with another seed);
+errors by jackknife over 20 blocks; both N-values reported.
+
+**3.2 Observables (Section 2.5).** Per time slice, zero spatial momentum, after n_ape steps of spatial APE smearing
+(alpha 0.5) at two levels:
+(F) Polyakov lines along x, y, z (half trace of the ordered product along the axis), summed over the transverse plane,
+    averaged over the three axes; centre-odd. Effective energy E^F(tau) = log[C(tau)/C(tau + 1)].
+(G) plaquette and 2x2-loop sums (spatial, all three planes), connected; a 4-operator basis (2 shapes x 2 smearing levels).
+    E^G_var(tau) := -(1/tau) log lambda_max(C(0)^(-1) C(tau)), and the single-operator E^G(tau) of the best operator.
+All of these are upper bounds on the lowest energy of the sector reached, at every tau, for the exact correlator
+(Section 2.2; PROVED). Lattice noise is the only caveat; hence the error rule below.
+
+**3.3 Thresholds.** K_a = (C_beta + 3 log a)/(a - 2): K_30 = 0.81, K_40 = 0.62, K_60 = 0.43, K_100 = 0.27 at both beta.
+
+**3.4 Verdicts, per (beta, a).**
+- REFUTED (the seed (LSI-traj-seed)_a fails at this beta, via Lemma RATE (c) on the seed box): some G-sector upper bound
+  satisfies E^G(tau) + 2 err < K_a, at tau >= 1, in the stream of size N AND in the combined 2N (stable under doubling), on a
+  box where the result transfers: (TR) the flux plateau value obeys 2 E^F > E^G + 2 err, so the state is not a torelon pair.
+- REFUTED ON THE BOX ONLY (no transfer): an upper bound below K_a - 2 err in sector F, or in G on a box failing (TR).
+- NOT REFUTED (GUIDE support only): on a transferable box, every G-sector value at tau = 1, 2, 3 minus 2 err stays above
+  K_a, and two consecutive tau agree within errors (a plateau) above K_a.
+- INCONCLUSIVE: otherwise (noise before a plateau, or no box passing (TR)).
+- A published glueball mass with its error is a separate data path; the same rules apply to it, recorded separately.
+
+**3.5 Controls (pre-set).** (C1) beta 0.5, L = 4, N_t = 4: plaquette <(1/2) tr U_p> = I_2(0.5)/I_1(0.5) = 0.1237 up to O(u^5);
+pass if within 5e-4. (C2) beta 2.3, L = 4: E^F near row 954's torelon energy 0.33 (variational, open time; `gap-lsij-scale-opus.md`
+7.4); pass if the plateau lies in [0.25, 0.45]. (C3) beta 2.3, L = 8: the G plateau within 0.3 of row 954's plaquette-channel
+m_G of about 1.3 (7.2). A failed control voids the runs it covers.
+
+**3.6 Limits.** Job stops above 3 GB RSS. One job at a time under the numeric lock, nice, BLAS threads 1.
+
+## 4. Runs (GUIDE)
+
+**4.1 Control C1 (17:03Z, `guide/lane974/logs/c1_b0.5_L4.log`).** beta 0.5, 4^4, 100 + 8000 x 2 sweeps:
+<(1/2) tr U_p> = 0.12412 +- 0.00014 (naive error, no autocorrelation correction) against I_2/I_1 = 0.12372: difference
+4.0e-4, inside the pre-set 5e-4. PASS (the difference is 3 naive errors; an O(u^5) cube term of coefficient about 14 would
+account for it; not checked). Speed: 8^3 x 32 runs about 30 ms per sweep including measurement.
+
+**4.2 Batch 1 (`guide/lane974/batch1.zsh`, log `logs/batch1.log`).** beta 2.3 (APE 3 and 8 steps) and 2.6 (6 and 16 steps);
+L = 4, 6, 8; N_t = 32; 300 thermalisation sweeps, 2000 measurements 2 sweeps apart; two streams per point, seeds 11 and
+111 (N = 2000 and 2N = 4000). Started 17:04Z.
+
+## 5. Published data path (separate from the runs; READ) — written 17:05Z
+
+Source: M. Teper, "Glueball masses and other physical properties of SU(N) gauge theories in D = 3+1: a review of lattice
+results for theorists", arXiv hep-th/9812187, Appendix A, Table 10 (open copy fetched to /tmp/row974lit; text line ~600).
+Its beta 2.2-2.6 rows come from C. Michael and M. Teper, Nucl. Phys. B305 (1988) 453 (Wilson action). Quoted:
+- beta 2.3, 10^4: a sqrt(sigma) = 0.3687(22), a m_0++ = 1.216(23) (effective mass from t = a to 2a).
+- beta 2.6, 20^4: a sqrt(sigma) = 0.1326(30), a m_0++ = 0.51(3) (effective mass from t = 2a to 3a).
+(Also 2.4: 0.959(20) on 14^4; 2.5: 0.660(22) to 0.723(23).) Teper states these are effective masses at the given t. An
+effective mass of a positive correlator is an upper bound on the lowest energy of the channel (Section 2.2), so the
+pre-set REFUTED rule applies to them directly; the NOT REFUTED rule needs a plateau, which the table does not show.
+
+Against the thresholds (Section 3.3; the 0++ is the lightest glueball, so E_1(seed box) = m_0++):
+- beta 2.6: m_0++ + 2 err = 0.57 < K_40 = 0.624 < K_30 = 0.815. **REFUTED for a = 30 and 40** (published data path).
+  K_a < 0.57 needs a >= 45 (K_44 = 0.571, K_45 = 0.559). K_60 = 0.430 < m_0++ - 2 err = 0.45: not refuted at a = 60.
+  (TR) at 20^4: E_flux = sigma L - pi/(3L) = 0.0176 x 20 - 0.052 = 0.30 (Teper's eq. (6) with his sigma), so the torelon
+  pair sits at about 0.60, above 0.57: passes, barely (ARGUED from the formula, not measured here).
+- beta 2.3: m_0++ = 1.216(23); m_0++ - 2 err = 1.17 > K_30 = 0.811. Not refuted for a >= 21 (K_21 = 1.139);
+  undecided at a = 20 (K_20 = 1.194). E_flux on the seed box is irrelevant (side >= 80).
+Reading. This is the necessary condition m_G >= K_a of row 954 (Lemma GAP-R there; Lemma RATE (c) here), now with a
+published number in place of row 954's recollection: at beta 2.6 the seed through (LSI-traj-seed)_a, (LSI-br-seed)_a or
+(LSI-J-seed)_a is impossible for a <= 44; at beta 2.3 it is not excluded for a >= 21.
+
+**4.3 Amendment to 3.1, written 17:05Z, before batch 2 runs.** The large beta 2.6 box is L = 20 (N_t = 24), not 16: with the
+published sigma (Section 5), the torelon pair at L = 16 sits near 2 x 0.22 = 0.44, below m_0++ = 0.51, so L = 16 would fail
+(TR); at L = 20 the pair is near 0.60. Script `guide/lane974/batch2.zsh`: 300 + 1000 x 2 sweeps, APE 8 and 20 steps, seeds
+21 and 121 (N = 1000, 2N = 2000). Same criteria (3.4). Also measured there: the F sector, to check (TR) directly.

@@ -179,3 +179,152 @@ Controls. (i) Code: u = 1 and u_pi at L = 4, beta 2.3 must reproduce row 944's 0
 Sampler checks done before the run: mean of the von Mises-Fisher draw against I_2/I_1 at k = 0.5, 2.3, 6, 15
 (agreement 4e-4); quaternion product associative to 2e-16; plaquettes of the slices as designed; smoke run at u = 1
 gives the per-component variance 0.1602 (row 944: 0.1600).
+
+## 3. Is (SC) implied by (FC) or (LSI-vac)? (step 3; question (b))
+
+**Answer.** No implication in either direction is available, and (SC) is a separate input. (SC) is a REGULARITY
+statement (a lower curvature bound for the vacuum chain); (LSI-vac) and (FC) are ERGODICITY statements. In convex
+classes (SC) is automatic with C_F = beta and no gap; in the compact non-convex chain it is a genuine order-one
+statement (no first-layer order for any Dirichlet datum). Details:
+
+**3.1 Dictionary with row 941 (PROVED).** Row 941's (C2)_sigma taken for all unit tangent z is sup_u sigma~(u)^2 <= sigma^2,
+and row 944's converse gives C_F - beta <= sup_u sigma~(u)^2 <= C_F + beta. Taken for horizontal z, as row 941 states it,
+(C2) is (SC-hor) in the same sense (Lemma HSS for the temporal-gauge kernel along horizontal geodesics, Lemma HG).
+Row 941's (COV)_kbar (a supremum over all ambient fields theta in R^(4N)) gives (SC) with C_F = beta^2 kbar + beta, by
+Identity HV; (COV) is stronger in form than (SC), which needs only theta in beta M and tangent directions.
+
+**3.2 (SG-step) is a reverse log-Sobolev inequality for P (PROVED, given the standard duality; Bobkov and Goetze
+1999, RECALLED; the forward half is row 940's Lemma SGC, HOLDS in check 938).** (SG-step)_sigma holds iff for all
+positive gauge-invariant g and all u,
+  |grad P g|^2 / P g  <=  2 sigma^2 [ P(g log g) - (P g) log (P g) ]      pointwise.                          (3.1)
+At second order (g = 1 + eps f): Var_(pi_u)(phi_(u,z)) <= sigma^2 for all u, z iff |grad P f|^2 <= sigma^2 [P(f^2) - (P f)^2].
+Proof of the second-order line. z . grad P f(u) = Cov_(pi_u)(phi_(u,z), f) (row 941 (A3) in projected form), so Cauchy-
+Schwarz gives the inequality; f = phi_(u,z) gives the converse. QED
+Reading. Reverse Poincare and reverse log-Sobolev inequalities are what a LOWER curvature bound gives for a
+diffusion semigroup (Bakry-Emery CD(-K, infinity); Wang's Harnack inequality, RECALLED). For the ground-state
+diffusion with invariant law Omega^2 dU, CD(-K, infinity) is Ric - 2 Hess log Omega >= -K, an UPPER bound on Hess log Omega:
+this is (SC-Omega). So the pair of the chain is the classical pair "log-Sobolev + curvature bounded below", in
+discrete time. Row 941's Attack A asked for positive curvature and died; (SC) asks only for a box-free negative
+bound. A lower curvature bound holds for Brownian motion on every compact manifold and implies no gap.
+
+**3.3 (SC) with (C1-av) gives (FC) (PROVED; averaged form of row 941's Theorem C).** Integrate (3.1) in nu and use
+stationarity: I(P g) <= 2 sigma^2 [Ent_nu(g) - Ent_nu(P g)]. With (C1-av)_(alpha_c) of row 941 (5.1):
+  (SG-step)_sigma + (C1-av)_(alpha_c)  =>  (FC)_theta with theta = sigma^2/alpha_c,
+and then Theorem C0 gives (LSI-vac) with alpha = alpha_c - sigma^2. So (SC) would also feed (FC), but only below the
+threshold C_h + beta < alpha_c, which nothing here supports at beta 2.3 (GUIDE values of row 944 give sigma~^2 about
+beta^2 0.45 = 2.4 at u_pi; alpha_c is unknown). One Gaussian mode: sigma^2/alpha_c = e^(-2 omega), exact.
+
+**3.4 (SC) does not imply (LSI-vac) or (FC) at a box-free rate (PROVED, given row 929's mode list, READ).** The
+photon has Hess F = beta e^(-omega) <= beta on every mode (row 944), while alpha = 2 beta sinh(omega_min) -> 0 and
+theta = e^(-2 omega_min) -> 1 with the box (row 941 FT-U1, 5.1).
+
+**3.5 Convex classes: (SC) follows from the structure, with C_F = beta.**
+(i) Gaussian class (PROVED). Flat chain with R(w) = exp(-<w, A w>/2), A > 0 (Lemma RS of row 944 in flat space):
+pi_u = N(beta A^(-1) u, A^(-1)), Hess F = beta^2 A^(-1), and nu = R kR is proportional to exp(-<w, (A - beta^2 A^(-1)) w>/2).
+A stationary law exists iff A > beta, and then Hess F < beta. For the photon Hess F = beta e^(-omega(K)), whatever the
+spectrum of K >= 0. So in the Gaussian class (SC) with C_F = beta is implied by stationarity alone.
+(ii) Log-concave class (CONDITIONAL on two cited theorems, RECALLED: Prekopa-Leindler, and the Brascamp-Lieb
+variance inequality, J. Funct. Anal. 22 (1976)). Flat chain T(q, q') = e^(-U(q)/2) e^(-(beta/2)|q - q'|^2) e^(-U(q')/2), U
+convex. T preserves log-concavity (Prekopa), so Omega is log-concave. Then m(dq') = e^(-(beta/2)|q'|^2 - U(q')/2) Omega(q') dq'
+has -Hess log (density) >= beta, every tilt e^(beta<q,q'>) m(dq') too, so Cov <= 1/beta (Brascamp-Lieb) and
+Hess F = beta^2 Cov <= beta. No gap is used.
+Reading. This answers the row's first question for the classes where it can be answered by structure: convexity
+is the structure that gives (SC). The compact Wilson slice law at beta > 1 has none (row 941 Step 2 (i)), and
+row 944's Example DW shows that without it the constant can be of order beta^2 N.
+
+**3.6 (LSI-vac), (FC) do not imply (SC) (ARGUED, not proved).** (a) Form: (LSI-vac) and (FC) are nu-averages over
+gauge-invariant functions; (SC) is a supremum over all slices, nu-null families included, and it bounds the gauge
+frame part of (2.4) as well. Proposition AV shows that the nu-average of the object of (SC) is bounded with no
+input at all. (b) Mechanism for a counterexample in the class of Lemma RS: R = e^(-beta<h_0, w>) R_0 with h_0 in M and
+R_0 a symmetric weight that orders at zero field. At u = h_0 the tilt cancels the hidden field and pi_u = R_0 orders,
+so C_F grows with N; nu = R kR sits in a field of strength at least beta per link and has one phase. That nu then
+has a box-free log-Sobolev constant is the known behaviour of spin systems in a strong field (Stroock-Zegarlinski
+type results, RECALLED); I did not prove it for an explicit R_0. So this direction is ARGUED.
+(c) For the Wilson chain itself the question is the kill test of Section 5: an ordered first layer at a
+symmetric slice would be exactly "(SC) false while the vacuum is massive".
+
+## 4. Fact tests of (SC) (step 4; question (c))
+
+- **Photon (PROVED).** Hess F = beta e^(-omega) on each mode: (SC) with C_F = beta e^(-omega_min) <= beta, box-free, for a
+  gapless model. So (SC) implies no gap and costs U(1)'s Gaussian part nothing. Same for every convex class (3.5).
+- **Free links, V = 0 (PROVED).** Omega = 1, F = const, Hess_M F = 0. Identity HV then reads beta^2 Var = beta A(beta) |z|^2,
+  the von Mises-Fisher tangential variance A(beta)/beta of row 941 (A6). (SC) holds with C_F = 0.
+- **Ordered phase (PROVED for the abstract chain, row 944 Example DW).** C_F >= 0.15 beta^2 N - beta at beta 2.3.
+  (SC) is violated exactly by a first-layer coexistence. The gauge-theory candidate is 5.1.
+- **Frozen Q_8, 2T.** M is finite; no Hessian, no tangent vector. (SC), (SC-hor) and Theorem SC-hor are not
+  defined. Domain exclusion, as in row 944 and check 942. Nothing here carries a rival's failure.
+- **Compact U(1) (PROVED where marked).** Sections 2.1-2.5 hold verbatim on S^1 (Lemma HG is general). Proposition
+  AV fails: E is gauge invariant for U(1), so the vacuum average of Cov_u(E) is the true electric two-point
+  function. At a real slice (all u_l = +-1) charge conjugation w -> w^* fixes u and maps E to -E, so E has mean 0 and
+  a sign tie. At u_xy the two staggered patterns are gauge inequivalent (ARGUED, 5.1). So in U(1) an ordered
+  sign breaks (SG-step) itself, while in SU(2) the same order is pure frame. This is the one place where the
+  group enters; it is ARGUED, and it is a prediction for a U(1) control run, not a result.
+- **SMALL-BOX (conditional on its premise, as in check 938).** On a fixed box, as beta grows, the tie at a
+  flux -1 slice becomes exact (the first step of a classical extension from a maximum of V is of order one,
+  5.1), so C_F is of order beta^2 times the number of links of the pattern, not of order beta (ARGUED). Then
+  alpha/sigma^2 falls like 1/beta or faster, as SMALL-BOX demands of every route. No conflict. It also shows
+  that (SC) cannot be proved uniformly in beta: a proof at beta 2.3 to 2.6 must use the size of the fluctuations.
+- **FT-CEIL.** (SC) is a sup form. The three time-direction ceilings of row 941 Step 2 cap POSITIVE curvature
+  criteria; (SC) is a negative lower bound and none of them applies. Check 870's refutation conditions on all
+  links (row 944 Section 5) and does not apply as stated. No cited ceiling refutes (SC). None supports it.
+- **Small beta (RECALLED, not rebuilt).** A uniform Dobrushin condition on the half-space measure gives 2.3's
+  Schur bound; it needs beta of order 1/13 (one link has 13 neighbours through plaquettes, each with influence at
+  most about beta). Far below the window.
+
+## 5 (continued). Attack, part 2: what a proof would have to do (step 5; by hand, while the run waits for the lock)
+
+**5.3 Bellman recursion for the Hessian (Identity REC; PROVED by hand, not yet checked).** For a field eta of
+imaginary quaternions let Z = Z_eta be the left-invariant vector field Z(w) = (w_l eta_l)_l on M (the generator of the
+right translations w_l -> w_l e^(s eta_l); these are not gauge transformations). Then for every u in M:
+  (Z F)(u) = E_(pi~_u)[ (Z(F - V))(w) ],
+  Hess_M F(u)(Z, Z) = E_(pi~_u)[ Hess_M(F - V)(w)(Z, Z) ] + Var_(pi~_u)( (Z(F - V))(w) ).                         (REC)
+Every tangent vector z at u is Z_eta(u) for one eta (eta_l = u_l^* z_l), so (REC) covers all directions.
+Proof. e^(F(u)) lambda_0 = integral of e^(beta<u,w>) e^((F - V)(w)) dw by (2.1). The kernel is invariant under simultaneous right
+translations, <u_l c, w_l c> = <u_l, w_l>, and dw is Haar. So e^(F(u e^(s eta))) lambda_0 = integral of e^(beta<u,w>) e^((F - V)(w e^(s eta))) dw.
+Differentiate the logarithm once and twice at s = 0. The curves s -> u e^(s eta) and s -> w e^(s eta) are geodesics of M
+(one-parameter subgroups of a bi-invariant metric), so the second derivatives are the Riemannian Hessians. QED
+Iterated over n steps of the temporal-gauge chain (the conditional variances add up to the variance of the
+martingale M_t = (Z F)(w_t) - sum_(s<=t) (Z V)(w_s)):
+  Hess_M F(u)(Z, Z) = E_u[ Hess_M F(w_n)(Z, Z) ] - sum_(t=1..n) E_u[ Hess_M V(w_t)(Z, Z) ] + Var_u( (Z F)(w_n) - sum_(t=1..n) (Z V)(w_t) ).
+Reading. (REC) is the second variation of the half-space free energy under a common right translation of all
+slices: the electric susceptibility of the first step equals the susceptibility of the time-summed magnetic
+force. In flat space it is the Riccati equation of the photon (check: one Gaussian mode, with F~ = F - (beta/2) q^2
+and U = beta (m^2/2) q^2: (F~ - U)'' = beta (1 - e^omega), Var = beta (1 - e^omega)^2 e^(-omega), sum beta (e^(-omega) - 1) = F~''. Exact.)
+What it does not give. Taking suprema, C_F <= C_F + 16 beta + sup Var: the first term returns C_F with coefficient
+one, so (REC) is not a contraction. In the convex classes the recursion closes because the variance term is
+controlled by Brascamp-Lieb with the precision beta + Hess(V - F) (3.5). Without convexity the variance term needs
+a Poincare constant of pi~_u for ALL functions (frames included) and a sign that is not there. So the recursion
+restates (SC); it does not prove it. First failing step of this attack: no bound on Var_(pi~_u)(Z(F - V)) uniform in u.
+
+**5.4 Where each known tool stops (summary; ARGUED unless marked).**
+- Convexity (Prekopa, Brascamp-Lieb): gives C_F = beta in flat convex classes (3.5); the compact chain is not
+  convex for beta > 1 (row 941 Step 2 (i), PROVED there).
+- Symmetry: gives the vacuum average (Proposition AV, PROVED) and phi = 0 at central slices (row 944 Lemma CEN), never a
+  supremum.
+- Reflection positivity, Gaussian domination: annealed and group-blind (row 941 5.3, PROVED there).
+- Dobrushin, cluster expansion: beta of order 1/13 (Section 4).
+- Bellman recursion: no contraction (5.3).
+So (SC) for SU(2) at beta 2.3 to 2.6 is a uniform strong-mixing statement for the Dirichlet boundary layer at
+intermediate coupling. I know no method that proves such a statement there. It stays OPEN (Section 6).
+
+## 6. The smallest unproved inequality, and the test that could refute it (step 6)
+
+**6.1 The inequality.** For SU(2) Wilson at beta in [2.3, 2.6] on the seed box (24a)^3:
+  (SC-hor)  for every slice u and every field xi of imaginary quaternions with zero covariant divergence at u,
+            sum over links l out of x of xi_l  -  sum over links l into x of u_l^* xi_l u_l  =  0  at every site x,
+            Var_u( sum_l <xi_l, E_l> ) <= c_E |xi|^2,   c_E box-free,
+where E_l = Im P_l is the first-step electric field of 2.3 and Var_u is taken in the half-space Wilson measure with
+Dirichlet datum u. (The divergence condition is horizontality of z = (xi_l u_l)_l: z is orthogonal to
+X_x u_l - u_l X_(x+l) for all X.) By Identity HV this is (SC-hor) of 2.5 with C_h <= beta^2 c_E + beta, and Theorem SC-hor then
+gives (SG-step) with sigma^2 <= beta^2 c_E + 2 beta. It is weaker than row 944's (SC) (all xi) and stronger than
+(SG-step). A sufficient form: |Cov_u(E_l^a, E_l'^b)| <= C e^(-m dist(l, l')) for all u (uniform decay on the boundary layer).
+Size: any box-free c_E serves the seed (it enters through alpha/sigma^2 and a may grow); GUIDE values at the
+slices tried are c_E about 0.3 to 0.45 (row 944 and Section 5.5 below).
+Fact tests of (SC-hor): photon c_E = e^(-omega)/beta <= 1/beta (the transverse field; PROVED); free links c_E = A(beta)/beta;
+Example DW has no gauge group (all vectors horizontal) and violates it; frozen groups not defined; SMALL-BOX no
+conflict (Section 4). It is group-blind in form; nothing in it is expected to fail for U(1) at weak coupling
+except at real slices with a sign tie (Section 4).
+
+**6.2 The test.** The kill test of 5.2 at the layered pi-flux slice u_xy: a first-step electric susceptibility that
+grows with L at the mode (pi, pi, 0), (1, -1, 0) refutes (SC-hor) and (SC) for SU(2) at that coupling (GUIDE), and
+leaves only (SG-step) itself. Result: Section 5.5.

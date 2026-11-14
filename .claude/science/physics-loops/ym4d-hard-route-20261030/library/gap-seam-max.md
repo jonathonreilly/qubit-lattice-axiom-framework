@@ -332,6 +332,18 @@ QED
 The weight kappa cancels exactly in <H, q - 1>; no pointwise bound on a density is used, and no
 supremum over environments. The constant 8 is one link's oscillation: there is no factor b^3.
 
+GUIDE check of Lemma J and Proposition Q (decides nothing; a run can only refute). Script
+`/tmp/gap-seam-max-929/scripts/q_check.py`, log `q_check.log`: two-dimensional Z_N gauge theory on a
+spatial circle of 2 links, exact enumeration, (N, beta) = (4, 0.7), (4, 1.5), (4, 3.0), (6, 2.0),
+(2, 1.0), a = 3, 4, 6, k = 0, 1, 2, 41 values of theta. Results: Nt_0 = T and Nt_1 = lambda_0
+|Omega><Omega| to 1e-12; X_0(k) = S(4k + 2) to 1e-9 (asserted); (INS) reproduced by a trapezoid sum
+to 3 digits; log(1 + S_ev) agrees with row 920's table (4.301033e-3, 1.848260e-1, 2.312535e-3);
+largest value of |Delta_theta| E[rho]/(8 y_theta) over the grid: 0.020 (Q needs at most 1); smallest
+value of E[rho] - (1 - y_theta): positive in every case. So Q was not refuted and is far from tight
+there. Side result for check 921 Section 13: at (N, beta, a) = (4, 3.0, 4) the grid maximum of
+Delta_theta is 5.270e-2 at theta = 0.70 against Delta_0 = 3.369e-2, ratio 1.56; row 920's 1.585 is
+therefore a maximum away from theta = 1/2, as check 921 guessed.
+
 Corollaries (PROVED).
 (Q1) (SEAM)_a holds if sup_theta y_theta <= psi_*(a, beta)/9. Neither (I2) nor a local (I3) is
      needed; (I1) is not needed either. What suffices is: the even thermal sum at the later time
@@ -453,3 +465,5 @@ only (two short jobs under the machine lock, 141 MB peak; scripts and logs in
 and the PR branches were not opened. Nothing here is a mass gap, and nothing grants status.
 
 Status of the plan: steps 1-8 done.
+
+RESULT: Row 929 (Claude Fable 5.2 max, author, checked by no other model): STEP A settled: in the free-photon U(1) model (Villain without monopoles) the even thermal sum is exact (Theorem A1) and log(1 + S_ev(a; (24a)^3)) > 31 for every a and beta (PROVED by hand; GUIDE value 3.1e3 to 4.2e3, continuum (pi^2/45) 24^3 = 3032), so U(1) FAILS the glue half and FAILS (SEAM)_a at every size through the necessary signed theta-average, by a factor 3.2e4 (GUIDE; above 325 PROVED); the a^-4 law is only the compact endpoint Delta_0 = (3/(2a)) x average (alone it exceeds psi_* for a < 4.8e4), the average is a^-3, and on the exact Gaussian seam path (Proposition G, closed form, PROVED) Delta is positive at every theta, with a^-2 layers of width 1/a at both ends and an a^-4 interior; U(1) passes at no size, so (SEAM) stands as a sufficient form and (SEAM-L1), the theta-integral of |Delta| at most psi_*, is recommended because sup/average grows like a. STEP B: (SEAM) for SU(2) at beta 2.3-2.6 is NOT proved and stays OPEN; PROVED instead (hand, group-blind, not yet checked; a toy GUIDE run did not refute it): Lemma J (the theta-family is one product vacuum chain with a theta-dependent initial law), Proposition Q, |Delta_theta| <= 8y/(1 - y) with y^2 = S_ev(2a - 2 - 4k)(1 + X_theta(k)), so (SEAM)_a is bracketed between the glue half at time a and a later-time thermal sum times the seam chi-square X(k), (I1)-(I3) are not needed in local form, and the seam form gives no handle easier than a thermal seed; the photon and frozen Q_8/2T break every form at the same factor, the count of soft or degenerate even states; OPEN: a seed at order one, a bound on sup_theta X_theta(k), and the fact test for compact Wilson U(1) (GUIDE only).

@@ -299,3 +299,57 @@ averaged form does not enter Lemma RD. (3) (LSI-vac) for Lipschitz gauge-invaria
 implied by the smooth form (Step 4). (4) Gauge invariance of p in its first argument: T is the
 gauge-projected transfer kernel. No other hypothesis. So no counterexample kernel exists in
 the class of row 931 (any kernel meeting (K) and both inputs is hypercontractive with alpha').
+
+### Step 6: GUIDE run on row 931's rotor chain (criteria written before the run)
+
+Decides nothing; it can only refute. Model (row 931 Step 7): one rotor, M = unit circle,
+T(u, w) = e^(V(u)/2) e^(beta cos(u - w)) e^(V(w)/2), V = h1 cos u + h2 cos 2u, N = 512 grid points,
+dU = du/(2 pi). Seven parameter sets (beta, h1, h2): (0.3,0,0), (1,0,0), (2.3,0,0), (2.3,1,0.5),
+(1,0,4) (double well), (4,2,1), (8,0,0).
+Computed per set: nu = Omega^2 dU; sigma^2 := max over grid points u and theta in a log grid of
+2 log E_(pi_u) e^(theta phi_u)/theta^2, phi_u the centred score -beta sin(u - w) recentred under pi_u;
+gamma (Poincare constant of nu, generalized eigenproblem); alpha_up := smallest value of
+2 E|f'|^2/Ent(f^2) found by L-BFGS from several starts (an upper bound on the true alpha);
+alpha_low := e^(-osc log Omega^2) (Holley-Stroock from the circle's log-Sobolev constant 1,
+RECALLED: Weissler 1980); E_1 = log(lambda_0/lambda_1).
+Tests and criteria (fixed now):
+- (RD): max over grid pairs and lambda in {1.01, 1.5, 2, 4, 8, 16, 32} of
+  Lambda/(lambda(lambda - 1) sigma^2 d^2/2). PASS if <= 1 + 1e-6; FAIL (refutes Lemma RD on the
+  grid model) if > 1 + 1e-3.
+- (HC1) and (HC-vac): for alpha in {alpha_low, alpha_up}, m in {1, 2, 3, 5}, p in {1 + e^(-2 alpha' m),
+  1.05, 1.5, 2}: max over g > 0 of log ||P^m g||_Q - log ||g||_p with Q - 1 = (p - 1)(1 + alpha/sigma^2)^m
+  (L-BFGS on g = e^v from tilts e^(kappa cos(u - c)), arcs and random starts). PASS if <= 1e-7.
+  A value > 1e-3 at alpha_low would refute Theorem HC1 on the grid model; at alpha_up only it is
+  inconclusive (alpha_up may exceed the true alpha).
+- Consistency: alpha'(alpha_up) <= E_1 (Proposition HC), reported.
+Script `/tmp/gap-etohc-940/scripts/hc_guide.py`, log `/tmp/gap-etohc-940/hc_guide.log`, run under
+the numeric lock with nice, one thread, RSS stop at 2 GB. Not committed.
+
+Run record (GUIDE). Lock acquired 06:09Z at 69 percent memory free, released after the run;
+N = 256 (smoke test at N = 96 first), one thread, nice; peak memory far below 2 GB; wall time
+under 5 minutes. Log `/tmp/gap-etohc-940/hc_guide.log`, positive control
+`/tmp/gap-etohc-940/positive_control.log`.
+
+| (beta, h1, h2) | E_1 | sigma^2 | alpha_up | alpha_low | RD max ratio | alpha'(alpha_up) | HC tests |
+|---|---|---|---|---|---|---|---|
+| (0.3, 0, 0) | 1.908 | 0.0445 | 1.000 | 1.000 | 0.9992 | 1.578 | 12/12 PASS |
+| (1, 0, 0) | 0.807 | 0.446 | 1.000 | 1.000 | 0.9992 | 0.588 | 16/16 PASS |
+| (2.3, 0, 0) | 0.299 | 1.705 | 1.000 | 1.000 | 0.9992 | 0.231 | 18/18 PASS |
+| (2.3, 1, 0.5) | 0.989 | 2.117 | 0.907 | 1.3e-4 | 0.9979 | 0.178 | 18/18 PASS |
+| (1, 0, 4) double well | 0.312 | 0.931 | 0.00165 | 1.6e-4 | 0.9959 | 0.00089 | 18/18 PASS |
+| (4, 2, 1) | 1.115 | 4.128 | 1.719 | ~0 | 0.9963 | 0.174 | 18/18 PASS |
+| (8, 0, 0) | 0.067 | 7.482 | 1.000 | 1.000 | 0.9992 | 0.0627 | 18/18 PASS |
+
+(alpha_up and alpha_low are equal, about 0.99995, for V = 0: nu is uniform.) Every HC test returned
+a largest log-ratio in [-1.5e-6, 0], the value 0 being the constants. alpha' <= E_1 in every case.
+Positive control (does the optimizer find a violation when one exists?): at (2.3, 0, 0) and
+(8, 0, 0), one step, exponent factor K in Q - 1 = K(p - 1). Below the linear limit e^(2 E_1) no
+violation (K = claim, midpoint, 0.98 e^(2 E_1)); above it, violations are found: K = 1.05 e^(2 E_1)
+gives +2.7e-4 and +1.3e-3 (beta 2.3), +7.5e-4 and +3.9e-3 (beta 8); K = 1.3 e^(2 E_1) gives +5.5e-3
+to +4.5e-2. So the search has power at the scale of the criteria.
+Reading. Lemma RD is nearly sharp on the rotor (ratio up to 0.9992); the claimed exponent is
+0.77 E_1 at beta 2.3 and 0.94 E_1 at beta 8 on the uniform rotor (it tends to E_1 in the Gaussian
+limit, beta large), and it is small in the double well, where alpha is small. No refutation.
+What the run cannot establish: the continuum statements (grid model only), the true alpha
+(alpha_up is an upper estimate, alpha_low a Holley-Stroock bound transplanted to the grid), or
+any statement for SU(2).

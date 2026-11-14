@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/definite_stationary_links_give_classical_coulomb_colour_flat_vacuum_one_body_matter_and_undecaying_levels_2026_10_22.py
+runner_sha256: 204ef3d3d91e3ce03b4c5e303cb308eef5338fb11906e099d3919cf8d96b65c2
+input_fingerprint_sha256: 4570f99cfdb6185659785db81eb2640cbe1effd39061c17eab06fc94759e6841
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.07
+status: ok
+----- stdout -----
+== A. supplied ansatz: spatial links pure gauge, A_0 in one Cartan, static quark pair
+[PASS] [T] A1 on the supplied ansatz (A_i pure gauge, A_0 in one Cartan) all commutators of A_0 values vanish: the Coulomb field is a stationary point (uniqueness NOT shown); control: a source rotated out of the Cartan | max |[A_0(x), A_0(y)]| Cartan 0e+00, rotated source 0.07
+[PASS] [T] A2 lattice Gauss law holds exactly for the Cartan Coulomb field of the ansatz | max residual 9.0e-17
+[PASS] [T] A3 on the ansatz the static pair energy is bounded by the self-energy at every separation and is Coulomb, -g^2|w|^2/(4 pi R) = -alpha_s/(3R) (quantum one-gluon: -4 alpha_s/(3R)); zero string tension for this configuration | V/g^2 = 0.0556..0.0820, bound 0.0827, Coulomb dev 1.9%, fitted sigma a^2/g^2 = -5.1e-05 (finite box)
+[PASS] [T] A4 every Wilson loop of a pure-gauge configuration (the ansatz's spatial links) has normalised trace exactly 1, so its Creutz ratio is exactly 0: no area law for this configuration | 5^2 slice, random gauge: max |tr W/3 - 1| 2e-15, chi22 -2e-16
+[PASS] [W] A5 NEGATIVE RESULT kept: product unitarity does not give |W| = 1; U = diag(1, w, w^2) in SU(3) has tr U/3 = 0, and on one link of the pure-gauge slice it gives plaquettes of normalised trace 0 | |det U - 1| 5e-16, |tr U|/3 1e-16, min |tr P/3| on the modified slice 1e-16
+== B. contrast: fluctuating SU(2) links, 3D Euclidean heat bath (quantum links)
+[PASS] [D] B1 fluctuating links (a path sum over link odds) give an area law, Creutz ratios > 0; the pure-gauge ansatz value is exactly 0 (A4) | SU(2) 3D 8^3 beta=3.0: W11=0.626 W22=0.169 chi22=0.410 chi33=0.277
+== C. sourceless stationary links: the flat one, and a non-flat witness
+[PASS] [T] C1 the flat (pure-gauge) configuration has every plaquette = 1 (F = 0): a sourceless stationary point; that the definite vacuum is this one is a supplied selection (C2) | max |P - 1| 2e-15
+[PASS] [W] C2 NEGATIVE RESULT kept: a sourceless stationary point need not be flat; a uniform Cartan flux on a periodic L x L slice has zero Wilson-action force, no source and F != 0 | L = 6: plaquette angle 0.1745 everywhere, max |force| 9e-16
+ESTIMATE (not counted): Witten-Veneziano needs chi_top^(1/4) ~ 180 MeV (lattice 179); the flat ansatz gives 0, leaving m_eta' <= sqrt(3) m_pi = 239 MeV (Weinberg) against 957.8 measured | chi^(1/4) needed 179 MeV (supplied PDG masses, f_pi)
+== D. alpha_s running: which loops definite links keep
+ESTIMATE (not counted): gluon loops need link fluctuations; matter loops alone give b0 = -2nf/3: alpha_s falls toward low energy, no asymptotic freedom, no Lambda_QCD | alpha_s(m_tau): quantum 1-loop 0.279, matter loops only 0.095, measured 0.314(14)
+   QED differs: its one-loop beta is matter loops only, so the sea gives alpha's running in c-number
+   fields; photon lines enter at two loops (relative ~3 alpha/4pi)
+== E. one-body updates: no correlation, no mediated entanglement
+[PASS] [T] E1 conditional lemma: if c-number links enter only through bilinear hop phases and potentials, each history's fermion update is one-body and a Slater determinant stays one (1-RDM idempotent); control: a link-mediated two-body term correlates | max non-idempotency: one-body 3.3e-16, with mediated n n term 0.09
+[PASS] [T] E2 for the supplied coupling Zs = Z x 1 + 1 x Z, a quantised link mode entangles two charges (mediator back in its vacuum); a c-number link fixed by the actual configuration gives a product of one-body phases in every history: no entanglement | concurrence quantum 0.771 (mediator purity 1.000), c-number 1.4e-17
+== F. fewest-change transport, antibunching, and decay estimates
+[PASS] [T] F1 equal odds before and after: the fewest-change plan is the identity (plan = diag(p), marginals p, zero changes), so a stationary level's actual configuration and its c-number source stay | min changes 0.0e+00, |plan - diag p| 0e+00, marginal err 0e+00
+[PASS] [T] F2 control: with unequal odds the same plan has changes at least the total-variation distance, so 'stay' is specific to stationary odds | min changes 0.2032 >= TV 0.0929
+ESTIMATE (not counted): quantised links (vacuum link odds, Wigner-Weisskopf) give the hydrogen 2p lifetime; a stationary pure level under c-number links does not decay | tau(2p) = 1.5962 ns, measured 1.60 ns (supplied atomic constants)
+ESTIMATE (not counted): a c-number field's radiation reaction acting through the dipole coherence (dP/dt = -Gamma P(1-P), supplied classical model): from P_e = 1 - 1e-6 the half time is ~14 lifetimes, not ln 2 | t_half 13.8/Gamma vs exponential 0.69/Gamma
+[PASS] [T] F3 any classical (definite or mixed) intensity gives g2(0) = <I^2>/<I>^2 >= 1 (Cauchy-Schwarz); control: a one-photon Fock state has g2(0) = 0, so the bound is specific to classical fields | min g2 over 200 mixtures 1.0251; one-photon state 0e+00
+== G. Lamb shift and a_e
+ESTIMATE (not counted): Lamb shift: the self-energy (internal photon propagator) is most of it; c-number links keep only the sea's vacuum polarisation | leading-order quantised 1069 MHz, c-number -27.1 MHz, measured 1057.845 MHz
+ESTIMATE (not counted): a_e: Schwinger's alpha/2pi needs an internal photon; c-number links leave a one-body Dirac electron, g = 2 plus lattice terms | alpha/2pi = 1.161410e-03, measured 1.159652e-03
+   kept as sea loops in c-number fields: alpha's 1-loop running, Uehling (-27 MHz), Euler-Heisenberg
+   light-by-light. Not carried by the flat ansatz: T = 0 Casimir zero-point force (estimate).
+   these estimates compare the SUPPLIED ansatz with measurement; they exclude no other definite-link
+   configuration and do not show that links must carry odds.
+checked: A1-A5, C1-C2, E1-E2, F1-F3 (A5, C2 are kept counterexamples); diagnostic: B1; estimates: not counted
+elapsed_seconds 0.7
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

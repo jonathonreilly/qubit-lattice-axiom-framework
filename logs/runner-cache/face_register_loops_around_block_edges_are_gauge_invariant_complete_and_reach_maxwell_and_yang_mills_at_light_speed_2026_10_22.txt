@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/face_register_loops_around_block_edges_are_gauge_invariant_complete_and_reach_maxwell_and_yang_mills_at_light_speed_2026_10_22.py
+runner_sha256: b3e852790e73001d79e7dd16e943afaf3f298d90bc02c8f1bca996b216156b1e
+input_fingerprint_sha256: 1adab9435ac48e53aad36addef887e72c567547040ff40786ccf661582977ae7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.71
+status: ok
+----- stdout -----
+== A. gauge invariance per B_f-block (exact operator identities)
+[PASS] [T] A1 U(1) many-body: the loop of domain-normalised raisers V (and of rishon bilinears U) around a bulk block edge (4 faces) and a hanging-face triangle (coarse block with two face pieces) conserves every block's rishon number; an open string does not | S=1/2 square, S=1 square and triangle: V and U loops invariant in 6/6, open strings invariant in 0/3
+[PASS] [T] A1b every U(1) register (S = 1/2 .. 2) has V of definite charge (one rishon X -> Y) and V^dag V a projector, so around any closed cycle of blocks each block gains one and loses one rishon: the loop is gauge-invariant for every S (any number of faces, any sizes) | 4 sizes
+[PASS] [T] A2 SU(N) rishon link U^{ab} = c_{X,a} c_{Y,b}^dagger is covariant at each end, U -> Omega_X U Omega_Y^dagger (so every closed trace is invariant); its polar (domain-normalised) part is covariant too | max dev SU(2) 5.0e-16, SU(3) 1.4e-15, SU(2) polar 4.0e-16
+[PASS] [T] A3 many-body: Re tr of the rishon loop commutes with every colour Gauss generator of every block: SU(2) square loop (bulk block edge) and SU(3) hanging triangle; a wrongly contracted link fails | SU(2) 4-face loop dim 65536: max|[W,G]| 0.0e+00, control 0.25; SU(3) 3-face loop dim 262144: max|[W,G]| 0.0e+00, control 0.25
+   peak RSS after A 126 MB
+== B. the loops are complete
+[PASS] [T] B1 curl.grad = 0 and dim ker(curl) = (blocks - 1) + 3: every face-register configuration that is not a gauge transform or a torus holonomy changes some loop (no extra mode, unlike the site-bond layout) | bulk 4^3 torus: blocks 64, faces 192, loops by size {4: 192}, ker 66 = 66; hanging slab: blocks 243, faces 756, loops by size {4: 774, 3: 72}, ker 245 = 245
+== C. classical continuum: Hodge-weighted face and loop energies -> (1/2) int (E^a E^a + B^a B^a)
+[PASS] [D] C1 magnetic part, tested fields only: sum of (1/(g^2 B_f T)) Re tr(1 - U_loop) approaches (1/2) int B^a B^a with the Yang-Mills F; error ratios near 4, 9/4 at B_f = 1, 2, 3 (three meshes prove no order) | U(1): rel err 6.1e-03, 2.9e-02, 8.0e-02; SU(2): rel err 2.1e-02, 8.2e-02, 1.8e-01; SU(3): rel err 2.0e-02, 8.0e-02, 1.7e-01
+[PASS] [D] C2 the test fields are genuinely non-abelian: the commutator changes the continuum magnetic energy by | SU(2) 26%, SU(3) 26% (C1 tests the Yang-Mills term)
+[PASS] [T] C3 electric part with the SUPPLIED sampled face value Phi = B_f^2 E(centre)/g: (g^2/(2 B_f T)) sum tr Phi^2 = (1/2) int E^a E^a exactly for the tested fields when no frequency sum or difference aliases (B_f = 2, 3); control: B_f = 12 aliases 2k to 0 | max rel dev 2.2e-16; aliased control B_f = 12: 2.51e-01
+[PASS] [D] C3b NEGATIVE RESULT kept: with flux-integral face values (sinc factors) the electric energy is NOT exact; the deviation grows like B_f^2 for the tested fields | U(1) rel dev B_f = 2, 3: 3.38e-02, 7.44e-02 (ratio 2.20); SU(3): 3.00e-02, 6.61e-02
+== D. harmonic photon: speed 1 in cell units for every B_f; null cone of the cell metric
+[PASS] [T] D1 flat cells, electric g^2/(2 B_f) per face and magnetic 1/(g^2 B_f) per loop: omega^2 = (4/B_f^2) sum sin^2(k_i B_f/2) for both polarisations, one zero (gauge) branch; speed exactly 1 cell per unit time as k -> 0 along axes, face and body diagonals, independent of g | B_f=1: |dev| 5e-15, |v-1| 4e-08; B_f=2: |dev| 2e-15, |v-1| 4e-08; B_f=3: |dev| 7e-16, |v-1| 4e-08; B_f=24: |dev| 5e-17, |v-1| 4e-08
+[PASS] [T] D2 weights (N/sqrt g) g_ij per block (diagonal per face and loop, off-diagonal via the block's mean face values and mean loop fluxes): both branches reach the null cone N^2 g^ij k_i k_j at O(k^2); both forms positive definite at every k (Schur product) | diagonal: rel err 3.1e-05 at kB=0.02, ratio 3.86, min eig 1.31e-01; sheared: rel err 5.0e-05 at kB=0.02, ratio 3.69, min eig 3.60e-01
+== E. small S: one isolated loop (4 faces, no matter) in the register vs the untruncated loop
+[PASS] [T/D] E1 weak coupling (g^2 = 0.03): the untruncated loop's gap is the harmonic plaquette value fixed by the same c_E c_B (2/B_f for U(1); 4/B_f, the first class-function level, for SU(2), SU(3)) | U1 0.9924, SU2 0.9953, SU3 0.9906
+[PASS] [D] E2 small S distorts the loop's levels; single-loop truncation at supplied g^2 = 4 pi alpha (1/137, 0.0338, 0.118): gap / untruncated gap by register size (supplied reading of S) | U1 0.5:5.58 1:4.00 1.5:2.88 2:2.17 3:1.44 6:1.01 10:1.00; SU2 0.5:2.54 1:1.83 1.5:1.36 2:1.12 3:1.00 6:1.00; SU3 1:1.07 2:1.00 3:1.00 6:1.00
+== F. vacuum standard: one subtraction
+[PASS] [T] F1 one subtraction (review-4 Total phase): vacuum phase 0 at every edge value, one photon exactly omega; the old extra subtraction of the plaquette's vacuum Born mean leaves -<H_B>_vac (half the zero-point, virial), edge-dependent: a spurious vacuum energy and edge force | 4^3 torus: single 0e+00; double -76.2 at lam=1, -58.6 at 1.3 (force 58.6); one photon single 1.414 = omega, double -74.8; S=1 loop: <H_B>_vac 0.592 != 0
+== G. hanging faces: a split region (child blocks B/2) beside unsplit blocks B; weights h/A and l/S
+[PASS] [T] G1 patch tests across the hanging face: uniform E (every direction) and uniform B along the interface give exactly (1/2) V E^2 and (1/2) V B^2; a normal B costs an extra layer (the hanging loops' polygons tilt) | E dev 0e+00; B_x,B_y dev 0e+00; B_z excess = layer of 0.3333 child units = B/6.00 per interface (B the unsplit side)
+[PASS] [D] G2 cavity (4x4x8 child units, half split; 72, 576 blocks): the lowest 21 modes move toward c = 1 at the two sizes tested (no order proved); the B_z excess acts at first order; removing it does not help | max rel dev scale 1 -> 2: 0.297 -> 0.084 (ratio 3.52); excess effect 0.0415 -> 0.0266 (ratio 1.56); mean dev plain 0.160, 0.055; removed 0.173, 0.064; all-child torus 0.082, 0.021
+elapsed_seconds 1.5, peak RSS 150 MB
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

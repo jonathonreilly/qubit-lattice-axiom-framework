@@ -402,3 +402,92 @@ does not: the failure is a compact, large-field effect that the Gaussian model F
 is NOT group-blind in fact: it is an input that compact U(1) fails at weak coupling. (b) ARGUED (5.1): for U(1)
 the two patterns are gauge inequivalent, so this order should also break (SG-step) itself near u_xy; for SU(2)
 the same order is a gauge frame and does not. This run does not test (b).
+
+## 5.7 GUIDE results, batch 3: where the layered pi-flux slice orders (run 08:59-09:17Z under the lock, 70 percent free)
+
+Log `/tmp/gap-sc-950/logs/batch3.log`. SU(2), slice u_xy, T = 6, cold start unless noted. All maxima sit at
+k = (pi, pi, 0) on the polarization (1, -1, 0), the predicted mode. (L = 4 and 8 at beta 2.3 and 2.6 are from batch 1.)
+
+| beta | L = 4 | L = 6 | L = 8 | L = 10 | L = 12 | lambda(12)/lambda(8) | verdict (criteria of 5.5) |
+|---|---|---|---|---|---|---|---|
+| 2.3 | 2.03 | 2.55 | 2.51 | 2.46 | | (flat from 6 to 10) | saturation, level 2.5 |
+| 2.4 | 2.74 | | 8.00 | | 7.57 | 0.95 | saturation, level about 8 (blocks 5.9 to 9.9) |
+| 2.5 | 3.56 | | 16.42 | | 42.73 | 2.60 | growth persists |
+| 2.6 | 4.19 | 11.34 | 22.62 | 41.59 | 64.87 | 2.87 | growth persists |
+
+Controls at beta 2.6, L = 8: hot start 22.39 against cold 22.62 (1 percent, PASS); T = 10 gives 23.31 against 22.62 at
+T = 6 (3 percent, PASS: the slab thickness does not matter at this precision).
+Shape of the growth. lambda/L^3 at beta 2.6 is 0.0655, 0.0525, 0.0442, 0.0416, 0.0375 for L = 4 to 12. It fits
+m2 + c/L with m2 = 0.024, c = 0.16 to within 3 percent at all five sizes: the form of a squared order parameter with
+a Goldstone finite-size correction. At beta 2.5 the three sizes give m2 = 0.010, c = 0.18. (At beta 6.0, lambda/L^3 = 0.19.)
+**Reading (GUIDE).** At the layered pi-flux slice the colour direction of the first-step electric field orders
+between beta 2.4 and 2.5. Below, the susceptibility saturates (2.5 at beta 2.3, about 8 at beta 2.4: C_h at least about
+12 and 45). From beta 2.5 up it grows with the box, on every box tried, in the way long-range order does.
+So the window 2.3 to 2.6 is cut by a boundary-ordering transition near beta 2.45, and above it (SC) and (SC-hor)
+have no box-free constant on the boxes tried.
+**Caveat that the run cannot remove (small boxes).** At beta 2.5 to 2.6 a periodic box of side 8 to 12 is near or
+below the deconfinement extent of the bulk theory (RECALLED lattice values: critical extent about 8 at beta 2.51 and
+12 at beta 2.64). So part of the growth may be a small-volume effect, and the order may stop at a finite length on
+the seed box, which is 500 lattice units and more. Batch 4 tests this at beta 2.5 and 2.45 on boxes up to 20.
+Batch 4 criteria (fixed here, before it runs). beta 2.5: the fit above predicts lambda(16) = 86 and lambda(20) = 150 for
+long-range order. Growth persists if lambda(20)/lambda(12) >= 2.5; saturation if <= 1.5; otherwise inconclusive.
+beta 2.45, L = 8, 12, 16: growth if lambda(16)/lambda(8) >= 4; saturation if lambda(16)/lambda(12) <= 1.3.
+
+## 7. What the kill test means, and what replaces (SC) (step 6, continued; by hand)
+
+**7.1 At a central slice all of Hess F is gauge-frame fluctuation (Proposition FR; PROVED).** If every u_l is +-1, then
+for every z in T_u M:
+  Hess_M F(u)(z, z) = E_(pi_u)[ Var_(mu_(u,w))(beta <z, g.w>) ] - beta sum_l E_(pi~_u)<u_l, w'_l> |z_l|^2,    and phi_(u,z) = 0.
+Proof. Identity TV (2.4) and row 944 Lemma CEN. QED
+So the kill test measures only the fluctuation of the first-step temporal links given both slices. What orders at
+u_xy is the gauge frame of the first step relative to the frozen slice. (SG-step) holds trivially AT u_xy.
+Pointwise form: with row 944 (4.1), at a central slice
+  Hess_u log p(u, w)(z, z) = [ Var_(mu_(u,w))(psi) - E_(pi_u) Var_(mu)(psi) ] - beta sum_l ( E_(mu_(u,w))<u_l, (g.w)_l> - E_(pi~_u)<u_l, w'_l> ) |z_l|^2,
+psi = beta <z, g.w>. At w = u the frame law mu_(u,u) is the 3D O(4) ferromagnet exp(beta sum <g_x, g_(x+l)>), the same for
+every central u, and for a divergence-free xi the statistic has no first-order spin-wave term, so its variance is
+of order one (ARGUED). Then Hess_u log p(u_xy, u_xy)(z, z) is about -beta^2 lambda: row 944's pointwise form (HS) fails with
+the same growth as (SC) (GUIDE + ARGUED).
+
+**7.2 The group enters here (PROVED where marked).** At u_xy the two staggered patterns w_+-, with first-step angles
++-theta eps_l, are exchanged by charge conjugation.
+- SU(2): w_- = c.w_+ for a constant c (a rotation by pi about an axis orthogonal to n). Charge conjugation is inner.
+  The tie is a gauge frame; every gauge-invariant function takes the same value on both (PROVED).
+- Compact U(1): the xy plaquette of w_+- has the phase pi +- 4 theta e_p, e_p = (-1)^(x+y), and Im U_p = -+ sin(4 theta) e_p is gauge
+  invariant. So the two patterns are gauge INEQUIVALENT unless sin 4 theta = 0 (PROVED). The score is odd under
+  charge conjugation, phi_(u,z)(w^*) = -phi_(u,z)(w) at a real slice (PROVED: p(u, w) = p(u, w^*), and z -> -z), and it
+  does not vanish on an ordered pattern (ARGUED: the abelian frame is pinned near a constant by the temporal
+  plaquettes, so the frame average keeps a fraction of beta sqrt(N') sin theta).
+  With the sign order of 5.6 this gives Var_(pi_u)(phi_(u,z)) of order beta^2 sin^2 theta L^3 at u_xy: **compact U(1) in its
+  Coulomb phase fails (SG-step) itself (GUIDE for the order, ARGUED for the frame factor), and the SU(2) chain
+  cannot fail it this way.** The property U(1) lacks at this step: charge conjugation is a gauge transformation.
+  In the confined phase of U(1) (beta 0.9) no order is seen.
+
+**7.3 Consequence for the chain.** Row 944 reduced (SG-step) to (SC). By 5.5-5.7 (GUIDE) that reduction cannot be
+used for beta >= 2.5: (SC), its horizontal form (SC-hor) of this note, and the pointwise form (HS) all grow with
+the box at u_xy. For beta 2.3 and 2.4 they survive the slices tried, with large constants (C_h at least about 12 and
+45), and a proof would have to be a statement about the absence of frame order, coupling by coupling. None of
+this touches (SG-step), which never sees a gauge frame. So the input of the hypercontractivity chain should be
+(SG-step) itself, in gauge-invariant form:
+  (SG-step), gauge-invariant form: for every slice u and every unit horizontal z = (xi_l u_l)_l,
+     phi_(u,z)(w) = beta sum_l <xi_l, Ebar_l(u, w)> - mean,   Ebar_l(u, w) := E_(mu_(u,w))[ Im P_l ],
+     is sub-Gaussian under pi_u with a box-free proxy sigma^2.
+Ebar is the first-step electric field averaged over the first-step temporal links, given BOTH slices. Its first
+instance is the variance bound
+  (SG2)  sup over u of || Cov_(pi_u)( Ebar ) ||_op <= sigma_2^2/beta^2   (box-free),
+which by 3.2 is the reverse Poincare inequality |grad P f|^2 <= sigma_2^2 [P(f^2) - (P f)^2]. (Row 941's Proposition W
+holds with beta^2 kbar_h replaced by sigma_2^2, by the same line: frames drop out of Cov_(pi~_u)(<z, w'>, f) when f is gauge
+invariant. PROVED.) What can violate (SG2) or (SG-step): a tie between gauge-INEQUIVALENT next slices. At a
+central slice phi = 0. So a violation needs a non-symmetric slice at a first-order transition of the gauge-invariant
+data of the boundary layer (ARGUED). Whether one exists at beta 2.3 to 2.6 is not known; the frame order found
+here shows that the boundary layer is close to ordering in this window, so it cannot be dismissed.
+
+**7.4 The test for (SG2) (design only; not run).** Lagged covariance under frame-only dynamics. In the slab, a
+time-independent gauge transformation g applied to all slices t >= 1 changes the weight only through
+exp(beta <u, g.w_1>). Heat bath on g_x (von Mises-Fisher on S^3 with parameter
+beta sum_i [ u_i(x) g_(x+i) w_i(x)^* + u_i(x-i)^* g_(x-i) w_i(x-i) ]), started at g = 1 for each sample. Put E^(n) := Im((g^(n).w_1) u^*).
+Then C_n := Cov(E^(0), E^(n)) starts at the temporal-gauge covariance C_0 = Cov_u(E) and tends to Cov_(pi_u)(Ebar) as n
+grows (PROVED: (1, w_1) is an exact draw of the frame given the orbit, the frame chain is ergodic on a compact
+space, and E[E^(0) x E^(n)] = E[ E[E^(0) | orbit] x E[E^(n) | orbit, g^(0)] ]). (SG2) says the top eigenvalue of the limit is
+box-free for every u. Slices to try first: non-central ones near a possible tie of invariant data, for instance
+anisotropic deformations of u_pi and tilted copies of u_xy. For compact U(1) the same measurement at u_xy should
+show a limit growing like L^3 (7.2).

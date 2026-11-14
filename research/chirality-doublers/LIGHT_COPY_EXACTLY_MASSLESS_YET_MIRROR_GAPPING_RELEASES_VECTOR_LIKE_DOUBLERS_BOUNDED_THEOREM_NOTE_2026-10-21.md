@@ -44,7 +44,7 @@ The runner ends with `TOTAL: PASS=20 FAIL=0`. Among its lines:
 - `[PASS] B2 [T] one block, mirror top form: at Gamma and R the 16 light states stay exactly degenerate, mirror gap exactly g (g = .5, 4, 32) | splitting 5e-14`.
 - `[PASS] C1 [T] cell chains: E0 = -2g sqrt(11088+48 sqrt21081), Delta = 19.0715 g, Delta_f = 33.5804 g`.
 - `[PASS] C2 [T/F] second order Sigma = h G_b h^+ ... O(K^5), zero at K = 0, never a mass`. The one-block diagonalisation gives 0.170579652 against a predicted 0.170579724 at g = 2.
-- `[PASS] D1 [T] ... anomaly protection holds exactly for the N at which S cannot be gapped | k=2: N [1, 2, 4, 5, 7, 8]`.
+- `[PASS] D1 [T] ... anomaly sums are nonzero mod 3 exactly at these N, the N at which S cannot be gapped if anomaly matching holds (cited, unverified here; the protection is conditional on it) | k=2: N [1, 2, 4, 5, 7, 8]`.
 - `[PASS] D2 [T] at N = 0 mod 3 all listed light anomalies vanish ... anomaly matching gives no protection there`.
 - `[PASS] E2 [T] endpoint (mirror frozen, P f P = 0): light H_eff = P_l H' P_l, 8 Weyl nodes per sublattice per family, 4L + 4R: vector-like in each SU(2)_e sector`.
 - `[PASS] E3 [F] one block at X ... light weight 0.9991 = Z = g^2/(g^2+8/9): doublers released | gap 0.9428, 0.8093, 0.0329, 0.0005` at g = 0, 2, 8, 32.

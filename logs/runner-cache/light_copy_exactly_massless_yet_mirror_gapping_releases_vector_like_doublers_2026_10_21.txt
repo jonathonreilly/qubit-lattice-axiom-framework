@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: research/chirality-doublers/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py
 runner_sha256: d385ca3d26d731d64f9686baa92daf95ea25b088c7f034a0de36410fcdc67567
-input_fingerprint_sha256: 871509943ecf6466bdec1c8dc65e552406e58ddc565799a36afb05d8c5e22861
+input_fingerprint_sha256: de77a7cde67a1fd6051f65039dee438e55d464c126499b6d9f0ec9381bf35963
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.39
+elapsed_sec: 2.65
 status: ok
 ----- stdout -----
 == A. free copy structure of H' (light = s3 -1, mirror = s3 +1)

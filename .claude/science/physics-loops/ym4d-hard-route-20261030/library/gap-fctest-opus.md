@@ -166,3 +166,48 @@ On L = 4, khat_i^2 takes 0, 2, 2, 4. e^(-2 omega(u)) for u = 0, 2, ..., 12: 1, 0
 F(6) = 0.0435856, F(8) = 0.029445. Numerator = 8 F(2) + 24 F(4) + 24 F(6) + 8 F(8) = 4.181848; denominator
 = 2 x 8 x 16 = 256 (Parseval: 256/64 = |c|^2 = 4). **R_exact(flux, L = 4) = 0.016335.**
 Single modes: k = pi/2: (2 - sqrt 3)^2 = 0.071797; k = pi: (3 - 2 sqrt 2)^2 = 0.029437.
+
+### Step 4: self-tests and calibrations (GUIDE runs, 2026-11-14, lock acquired 08:11Z)
+
+Numeric lock acquired 08:11:28Z as `lane946-fctest-opus` (row 944 released it). Memory 71 percent free.
+Logs: `library/guide/lane946/logs/`; outputs `out/*.json`, `out/*.npz`. All runs nice, one thread.
+
+**Self-tests (`logs/selftest.log`): all PASS.** Staple sums equal the total action change on box, one plaquette
+and one cube; colour classes are independent sets; U(1) conditional mean; transported slices give the
+timelike plaquettes and are invariant under gauge maps off slice K; loop gradients agree with finite
+differences to 1e-5; Gram sums of den() equal explicit gradient sums; sampler E X_0 = I_2/I_1 at alpha = 0.3, 2, 7.
+
+**Exact one-plaquette chain (`plaq_exact`, deterministic quadrature; reproduces row 941):**
+
+| beta | r_1 | r_1^2 | theta_GC | R(cos th) | R(tanh 3 cos th) | R(tanh 10 cos th) | R(cos^3 th) |
+|---|---|---|---|---|---|---|---|
+| 2.3 | 0.028317 | 8.018e-4 | 8.229e-4 | 7.877e-4 | 5.450e-4 | 1.754e-4 | 3.425e-4 |
+| 2.6 | 0.033408 | 1.116e-3 | 1.1457e-3 | 1.088e-3 | 7.470e-4 | 2.303e-4 | 4.888e-4 |
+
+Row 941: r_1 = 0.02832, 0.03341; theta_GC = 8.23e-4, 1.15e-3. Agreement better than 0.5 percent: PASS.
+Each R(f) is below theta_GC, as it must be.
+
+**C1, free photon, 4^3 x 13 (K = 6), B = 16 chains, m = 6 rounds, n = 300 inner sweeps (`c1_photon_L4`):**
+
+| f | R_hat | jackknife err | exact | R_hat/exact - 1 | verdict |
+|---|---|---|---|---|---|
+| one plaquette flux | 0.016253 | 4.9e-5 | 0.016335 (hand value of Step 3 and `photon_exact`) | -0.5% | PASS |
+| mode k = pi/2 | 0.070673 | 1.5e-3 | 0.071797 | -1.6% | PASS |
+| mode k = pi | 0.029112 | 5.8e-4 | 0.029437 | -1.1% | PASS |
+
+tau_int (inner) 0.44-0.48. The small downward offset matches the stated O(tau/n) bias, (1 - 2 tau/n)^2 = 0.993.
+
+**C2, one-plaquette SU(2) chain, beta 2.3, K = 4, B = 64, m = 4, n = 2000 (`c2_plaq_b2.3`):**
+
+| f | R_hat | err | exact | verdict |
+|---|---|---|---|---|
+| cos theta (plaquette) | 8.032e-4 | 1.7e-5 | 7.877e-4 | +2.0%, within 3 sigma: PASS |
+| tanh(3 cos theta) | 5.34e-4 | 5.2e-5 | 5.450e-4 | -1.9%: PASS |
+| tanh(10 cos theta) | 2.6e-4 | 7.3e-5 | 1.754e-4 | within 3 sigma (noisy): PASS |
+| cos^3 theta | 3.95e-4 | 3.2e-5 | 3.425e-4 | within 3 sigma: PASS |
+
+So the code path (heat bath, frozen slice, transport, tangent projection, two-half product, gradient forms,
+ratio, errors) returns the exact R to a few percent on an SU(2) chain with R of order 1e-3 and on a Gaussian
+chain with R of order 1e-2 to 1e-1. Both calibrations PASS; box numbers may be read.
+
+Timing probe (4^3 x 13, B = 16, n = 20): about 95 ms per inner sweep; peak RSS 566 MB.

@@ -1,0 +1,17 @@
+# Independent crossover bridge review: preimplementation criteria
+
+Date: 2026-10-29. Reviewer: fresh delegated Astra/max context, same model family as author; independent implementation and primary-text scrutiny, not blinded. The coordinator supplied the claimed rank and geometry problems and the reviewer read the source note before these criteria. No author diagnostic code has been read or executed at this point.
+
+Frozen source: `CROSSOVER_LITERATURE_BRIDGE_ASTRA.md`, SHA-256 `de024b1d6df4a959fb85b2743be2141e93446e735a8ebe6672ff8f28f233e33f`. Methodology: immutable current-main `ca2bc7ddf64790da96cd43d42017d000fbfe4808`. Root owns integration, shared files, git and audit status. Only the review report and `checks/review_crossover_import_*` are writable here.
+
+Falsifiers declared before independent implementation:
+
+1. The generic rank objection is withdrawn or narrowed if the printed hypothesis controls trace/HS mass, fixes core dimensions, supplies a size factor cancelling dimension, or defines the relevant norm as a scalar quotient with an independently bounded normalization ledger. Distinguish failure of a proof step from failure of the full source theorem or an actual optical matrix.
+2. Test Gaussian density normalization using direct rational determinant elimination and independent integration/series identities; test the stated lower and upper logdet bounds, including rectangular and trace-zero nonbipartite matrices. Reject missing rank, wrong Schur sign, omitted Gaussian normalization, omitted factor 1/2, and lost trace-zero hypothesis. Finite calculations are controls, not asymptotic proof.
+3. Test the local trace-loop bound with noncommuting fixed-size blocks using path enumeration and direct matrix powers. Do not infer marked, regulator, core-partition, or continuum estimates from this bound.
+4. The diameter objection is withdrawn for the actual consumer if the exact activity inventory proves bounded pivot incidence or already charges tree length/support size with enough reserve. Compare a four-dimensional grid to a straight path using independently computed distances and a spanning tree. Synthetic supports do not establish actual Wilson activity membership.
+5. Reconstruct normalized conditional Wilson densities, count plaquette incidence on admissible four-dimensional lattices, and enumerate exact compact finite-group conditionals on a small plaquette system. Check factorization precisely when no plaquette meets two pivots, and a shared-plaquette failure control. Verify the `12 beta` oscillation and `18` conflict-degree constants. State beta=0 and nondegenerate-lattice boundaries; no continuum conclusion from perimeter suppression.
+6. Read the consumed primary passages in Kirk v4 and Abdesselam–Rivasseau v1, including Gaussian interpolation positivity and the two-level identity. Withdraw any import claim stronger than a finite identity/organization if model-specific charge, covariance decay, derivative, or marked-source hypotheses remain unproved.
+7. Source identities, readable evidence, actual attempted failures, and independent/author code chronology are preserved. Any source movement holds affected conclusions until re-read. Review carries no audit verdict or whole-PR PASS; existence and physical continuum mass gap remain OPEN.
+
+The negative findings are scoped `partial-narrowing`; fewer than five independent negative route families are tested. No negative-route packet PASS or exhaustive no-go follows.

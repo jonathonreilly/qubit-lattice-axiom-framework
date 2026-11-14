@@ -1,0 +1,9 @@
+--- G3 beta=1/5 n=6 nperp=12: Hess path1 [-5.432123902217e+00, -5.432123902217e+00] ; path2 [-5.432123902217e+00, -5.432123902217e+00] ; overlap True
+    |w|^2 = 10.799148971196 ; RQ_2D path1 [-5.030140723779e-01, -5.030140723779e-01] ; 2S1/S0 = 2/17 ; RQ_4D upper ends: path1 -3.853670e-01, path2 -3.853670e-01 -> PASS
+    C3a (beta=0, same vector): Hess interval [6.807430301140e-01, 6.807430301140e-01] ; >= 0 : True
+    elapsed 18.2s
+--- G3 beta=1/20 n=6 nperp=24: Hess path1 [-1.477761192593e+00, -1.477761192593e+00] ; path2 [-1.477761192593e+00, -1.477761192593e+00] ; overlap True
+    |w|^2 = 15.082185194648 ; RQ_2D path1 [-9.798057599220e-02, -9.798057599220e-02] ; 2S1/S0 = 10/313 ; RQ_4D upper ends: path1 -6.603169e-02, path2 -6.603169e-02 -> PASS
+    C3a (beta=0, same vector): Hess interval [4.420506211800e-02, 4.420506211800e-02] ; >= 0 : True
+    elapsed 36.4s
+G3 overall: PASS

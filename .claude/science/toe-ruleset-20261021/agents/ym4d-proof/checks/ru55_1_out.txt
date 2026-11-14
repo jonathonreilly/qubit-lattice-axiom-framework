@@ -1,0 +1,52 @@
+ru55_1: (TC), W-cb#, a_cb#, eps^J_nat, joint factor  [exact Fractions; displays labelled]
+constants: A_d=9 n_P=1296 c_pr=1/1797760 C_flat=199
+G3 N=2: (a) True (b) True (c) True (d) True -> PASS
+C2 N=2: delta = 2t/(16N+3): (a) False -> FAILS (as designed)
+G3 N=3: (a) True (b) True (c) True (d) True -> PASS
+C2 N=3: delta = 2t/(16N+3): (a) False -> FAILS (as designed)
+
+N=2 kappa=1 b_1=2496: branch gates B1=True B2=True
+  G1: R^2 = 47775/128 (display R in [19.319476, 19.319477]); closed form (16N+3)^2 b_1/(4096N) equal: True -> (TC) FAILS
+  G2: U3 fix vs CL(c) INCOMPATIBLE: True; G2a (sqrt2-relaxed CL): True; G2b (relaxed, b_1 -> n_P): True
+  G4: e1=1/143590686720 e2=1/2555904 e3=1/14247785889792000; e3 < min(e1,e2): True; a_cb#/a_bad = 1/7925299200 (display 1.261782e-10)
+      old third entry / e3 = 47775/128 == R^2: True
+  C3: old/e3 == R (not R^2)? compare squares: (old/e3)^2 == R^2 -> False (must be False)
+  G5: a_D# = a_cb# (e3 < c_pr): True
+  G6: before: eps^J_loc/C_flat binds; after eta' = eta_q/R: eps^J_loc/C_flat binds -> eps^J_nat UNCHANGED; (eta'/2)^2/(eps^J_loc/C_flat)^2 = 976125049/158505984 (display 6.1583)
+  G7: R_J^2 = 754875625/8192 (display R_J in [303.558731, 303.558732])
+  C1: eps_loc := eps_1/4: R^2 = 1225/4096 -> (TC) HOLDS; eta* == eta_q: True -> as designed
+
+N=2 kappa=1/4 b_1=1596: branch gates B1=True B2=True
+  G1: R^2 = 488775/2048 (display R in [15.448613, 15.448614]); closed form (16N+3)^2 b_1/(4096N) equal: True -> (TC) FAILS
+  G2: U3 fix vs CL(c) INCOMPATIBLE: True; G2a (sqrt2-relaxed CL): True; G2b (relaxed, b_1 -> n_P): True
+  G4: e1=1/91815198720 e2=1/6537216 e3=1/9110363092992000; e3 < min(e1,e2): True; a_cb#/a_bad = 1/5067619200 (display 1.973313e-10)
+      old third entry / e3 = 488775/2048 == R^2: True
+  C3: old/e3 == R (not R^2)? compare squares: (old/e3)^2 == R^2 -> False (must be False)
+  G5: a_D# = a_cb# (e3 < c_pr): True
+  G6: before: eps^J_loc/C_flat binds; after eta' = eta_q/R: eps^J_loc/C_flat binds -> eps^J_nat UNCHANGED; (eta'/2)^2/(eps^J_loc/C_flat)^2 = 976125049/101352384 (display 9.6310)
+  G7: R_J^2 = 754875625/8192 (display R_J in [303.558731, 303.558732])
+  C1: eps_loc := eps_1/4: R^2 = 1225/4096 -> (TC) HOLDS; eta* == eta_q: True -> as designed
+
+N=3 kappa=1 b_1=2496: branch gates B1=True B2=True
+  G1: R^2 = 33813/64 (display R in [22.985389, 22.985390]); closed form (16N+3)^2 b_1/(4096N) equal: True -> (TC) FAILS
+  G2: U3 fix vs CL(c) INCOMPATIBLE: True; G2a (sqrt2-relaxed CL): True; G2b (relaxed, b_1 -> n_P): True
+  G4: e1=1/215386030080 e2=1/5750784 e3=1/45377744203284480; e3 < min(e1,e2): True; a_cb#/a_bad = 1/25241269248 (display 3.961766e-11)
+      old third entry / e3 = 33813/64 == R^2: True
+  C3: old/e3 == R (not R^2)? compare squares: (old/e3)^2 == R^2 -> False (must be False)
+  G5: a_D# = a_cb# (e3 < c_pr): True
+  G6: before: eps^J_loc/C_flat binds; after eta' = eta_q/R: eps^J_loc/C_flat binds -> eps^J_nat UNCHANGED; (eta'/2)^2/(eps^J_loc/C_flat)^2 = 24403126225/8413756416 (display 2.9004)
+  G7: R_J^2 = 534267075/4096 (display R_J in [361.159656, 361.159657])
+  C1: eps_loc := eps_1/4: R^2 = 289/1024 -> (TC) HOLDS; eta* == eta_q: True -> as designed
+
+N=3 kappa=1/4 b_1=1596: branch gates B1=True B2=True
+  G1: R^2 = 345933/1024 (display R in [18.380021, 18.380022]); closed form (16N+3)^2 b_1/(4096N) equal: True -> (TC) FAILS
+  G2: U3 fix vs CL(c) INCOMPATIBLE: True; G2a (sqrt2-relaxed CL): True; G2b (relaxed, b_1 -> n_P): True
+  G4: e1=1/137722798080 e2=1/14708736 e3=1/29015576822292480; e3 < min(e1,e2): True; a_cb#/a_bad = 1/16139850048 (display 6.195844e-11)
+      old third entry / e3 = 345933/1024 == R^2: True
+  C3: old/e3 == R (not R^2)? compare squares: (old/e3)^2 == R^2 -> False (must be False)
+  G5: a_D# = a_cb# (e3 < c_pr): True
+  G6: before: eps^J_loc/C_flat binds; after eta' = eta_q/R: eps^J_loc/C_flat binds -> eps^J_nat UNCHANGED; (eta'/2)^2/(eps^J_loc/C_flat)^2 = 24403126225/5379950016 (display 4.5359)
+  G7: R_J^2 = 534267075/4096 (display R_J in [361.159656, 361.159657])
+  C1: eps_loc := eps_1/4: R^2 = 289/1024 -> (TC) HOLDS; eta* == eta_q: True -> as designed
+
+GATES: all PASS; CONTROLS: all as designed

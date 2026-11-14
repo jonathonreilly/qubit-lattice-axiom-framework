@@ -1,0 +1,31 @@
+{
+  "label": "independent",
+  "command": [
+    "/usr/local/bin/python3",
+    "review_soft_fluctuation_independent_02.py"
+  ],
+  "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-covariance-review-replay-z0dlicxf/independent",
+  "exit_code": 0,
+  "wall_seconds": 5.894390917033888,
+  "excluded_top_level_fields": [
+    "created_utc"
+  ],
+  "exact_non_time_json_match": true,
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_independent_02.py",
+    "sha256": "5282f29061dcf71c307450b973498dde0ae7d2cb85e5363ad25f9e71f5612c3e"
+  },
+  "reference": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_independent_02.stdout.json",
+    "sha256": "08836dbdf9eae11dc48958bbfd1cefa0e9cb7309f640a2762df7dae6a025ec2d"
+  },
+  "stdout": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_covariance_review_independent_out.json",
+    "sha256": "012685b27444b254a127f85fdecde1b345c927b9b0186bd90c149987342915fb"
+  },
+  "stderr": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_covariance_review_independent_err.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

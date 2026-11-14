@@ -1,0 +1,20 @@
+c29 (criteria checks/c29_criteria.md written before checks/c29_su2_contraction.py), 2026-10-27, nice 10,
+OPENBLAS/OMP/MKL/vecLib threads 1, one job at a time.
+- Pre-run smoke test (disclosed, allowed by the criteria): 17:42:55 UTC, NC = 4 evaluator, one evaluation 1.53 s,
+  finite-difference gradient check -6.63489179e-03 vs -6.63489175e-03, peak RSS 0.98 GB. Changes no criterion.
+- A first smoke launch with python3 -I failed at "import numpy" (user-site numpy excluded by -I) before any
+  computation, as in c26/c28; all runs are without -I (the script reads no downloaded files).
+- Before any run two script edits were made (no run had happened): removal of a dead loop in DU, and a relative
+  1e-12 float tolerance in Part B's sign check Re phi(z) - phi(x) <= 0.
+- Part A: 17:43 UTC, 3.3 s, peak RSS 0.48 GB, load 2.7, 42% free. c29A.out. PASS.
+- Part B: 17:44:51 UTC, 4.6 s, 0.10 GB, load 2.3, 45% free. c29B.out. PASS.
+- Part C: ~17:45 UTC, 1645 s, peak RSS 1.09 GB, load 2.3-3.7, >= 42% free. c29C.out. VALID; C1 FAILED as
+  pre-registered (D(0.1) = 0.1101 > 0.1; slope 1.041 passes); C2-V, C2a, C2b PASS.
+- Part D: 18:12:51 UTC, 94 s, 0.39 GB, load 3.5, 44% free. c29D.out. PASS.
+No criterion was edited after any run.
+
+[R1314-fix, appended in session 15] REVIEW_S13_S14 removed all four Part-B float tolerances (the 1e-12 relative
+tolerance on Re φ(z) - φ(x) ≤ 0 and the three |Im| > 1e-15 masks; copy in the review's scratchpad rev1314/notol/) and
+re-ran Part B: it PASSES with identical numbers. So the tolerances were not load-bearing. They contradicted this check's
+criteria text ("a float tie at a sharp point counts as a FAIL"); from c30 on, any tolerance goes into a criteria
+addendum written before the run, not into the script alone.

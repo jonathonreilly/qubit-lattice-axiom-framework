@@ -1,0 +1,591 @@
+{
+  "GC_historical_and_current_binding": {
+    "affected_confirmation": {
+      "bytes": 3314,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_graded_complement_distance_confirmation.json",
+      "sha256": "892ddde0148be383dadd2ddbce9b6c1e54514ff8f03d6bef7165c00ac3235ba6"
+    },
+    "coordinator_correction": {
+      "bytes": 1617,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_distance_correction.json",
+      "sha256": "282e0e1bd399ace20932fcccc0bef91f290a1ee809b290d7749fef603ae7722b"
+    },
+    "current_source": {
+      "bytes": 31368,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341"
+    },
+    "historical_author_non_source_files": [
+      {
+        "bytes": 17472,
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_freeze.py",
+        "sha256": "80ab52887a13e376ad4c4014efc029dd2dfe163a8df9fa2b068dc2febab7ed6b"
+      },
+      {
+        "bytes": 16638,
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_freeze_attempt01.py",
+        "sha256": "4b4f2604cfe0e5ed0a6133667a3098803eebf14961c17d0a7f71c5d60fb07d4c"
+      },
+      {
+        "bytes": 783,
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_freeze_attempt01.stderr.txt",
+        "sha256": "8e75fcfe04032ec9a1712f1982fafe4ee2c2833820e346dbc1cc1c0aa59c55d6"
+      },
+      {
+        "bytes": 44013,
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_read_manifest.json",
+        "sha256": "ef884312c26834f6c4a43ee90f47b75b2fceaa8e32c6c02a20463a10b3bbb01d"
+      },
+      {
+        "bytes": 3212,
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_process.json",
+        "sha256": "655f9d430dc57c4b6337663c93114280e880301f9991904ca87fcd33da3a49f2"
+      },
+      {
+        "bytes": 2287,
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_verification.json",
+        "sha256": "224cfd3c2749396801945ef13d8751124edbb6d13aba4e7dcdc8c194629c7ab1"
+      },
+      {
+        "bytes": 14564,
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_receipt.json",
+        "sha256": "234be158e85297de2d7511d0bd5026655ef637c3d4c5165db6863e66d7054d54"
+      }
+    ],
+    "historical_author_receipt": {
+      "bytes": 14564,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_receipt.json",
+      "sha256": "234be158e85297de2d7511d0bd5026655ef637c3d4c5165db6863e66d7054d54"
+    },
+    "historical_author_source": {
+      "bytes": 31357,
+      "reconstruction": "In memory only: inverse exact coordinator phrase correction on verified current source. No Git or snapshot mutation.",
+      "sha256": "6201ec6ec1846e205dd1a3d7dd1df1a3bebb9c6bead14874aff40482d2bb0335"
+    },
+    "independent_review_owned_records_verified": 8,
+    "independent_review_receipt": {
+      "bytes": 4952,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_graded_complement_receipt.json",
+      "sha256": "11d78e66af69500a63d470abdba9c4738c2e5b6c5d67118b5669ed2407cffdf1"
+    }
+  },
+  "author_self_read": "Complete source assembled in bounded reads; final edited entropy/M/history passages reread. One context-truncated source read was discarded and reissued in smaller chunks.",
+  "author_source": {
+    "bytes": 32868,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+    "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4"
+  },
+  "created_utc": "2026-10-30T01:09:26.266380+00:00",
+  "exposure": "Same worker authored CS/GC and independently reviewed CC before those later author roles. Prior author/checker/review exposure is not independence for OC. A different fresh Astra/max context is now reviewing the frozen OC source.",
+  "external_primary_reads": [
+    {
+      "author": "T. Balaban",
+      "coverage": "New visible extracted65-174, printed356-358 and opening359; prior GC extracted0-167 reused. No full38-page read or visual-PDF claim.",
+      "matching": "Dangerous denominator, constrained stationarity and localized quadratic cap. Its hard/analytic constraints differ from the actual soft original cut; OC3-OC15 are rebuilt locally.",
+      "title": "Large field renormalization II: localization, exponentiation, and bounds for the R operation",
+      "url": "https://scispace.com/pdf/large-field-renormalization-ii-localization-exponentiation-h8b7ih93xo.pdf",
+      "version": "Communications in Mathematical Physics122(1989); primary article text hosted by a mirror."
+    },
+    {
+      "author": "J. Dimock",
+      "coverage": "Previous complete HTML1907-2105 including Lemma3.15 proof and preceding normalization reused; no new whole-paper read.",
+      "matching": "Scalar three-dimensional covariance/background weakening and bulk/boundary separation. Distance modulo holes is not OC full-reader cardinality. No group/cut theorem imported.",
+      "title": "The Renormalization Group According to Balaban - II. Large Fields",
+      "url": "https://arxiv.org/html/1212.5562v2#S3.SS13",
+      "version": "arXiv1212.5562v2 versioned HTML."
+    },
+    {
+      "author": "A. D. Scott and A. D. Sokal",
+      "coverage": "Official abstract metadata8-30; HTML136-166 and163-223 including Theorems1.1-1.2/avoidance1.8;1281-1316 and1311-1366 including Theorem4.1 statement and proof opening, not its complete proof. Theorem5.1 opening was navigation only.",
+      "matching": "Conditional avoidance is distinguished from independence. The specialized OC21-OC24 induction was formulated before this primary read and is proved locally; no independent-set polynomial is identified with the gauge-source partition function.",
+      "title": "The repulsive lattice gas, the independent-set polynomial, and the Lovasz local lemma",
+      "url": "https://arxiv.org/html/cond-mat/0309352v2#S4.SS1",
+      "version": "arXiv v2 submitted2004-09-16; HTML title displays revisedSeptember8,2004."
+    },
+    {
+      "author": "A. D. Scott and A. D. Sokal",
+      "coverage": "Header extracted0-72 and find/navigation snippets only; not treated as the arXiv-v2 proof or read in full. No PDF saved.",
+      "url": "https://people.maths.ox.ac.uk/~scott/Papers/lovasz.pdf",
+      "version": "Author-hosted103-page PDF, header revisedSeptember28,2004, distinct revision label."
+    }
+  ],
+  "historical_context_only": [
+    {
+      "historical_sha256": "83917902d0cd82e1d73dbda9f29f79c7b8c224d5345827a0dc7c890bc94bb03d",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "treatment": "GC50-line snapshot preserved in its receipt. Root later appended B41; current register is not a newly read mathematical input here."
+    },
+    {
+      "historical_sha256": "06ad2b5b52bfa66f7784a1fb97936337c59f5164318f89af9a2a065226671e5f",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "treatment": "GC original583-line version/read ranges remain historical at3bba918756. Current pass2 ranges and review are separately bound above."
+    }
+  ],
+  "immutable_CC_CS_packets": [
+    {
+      "coverage": "Identity verification of every bound artifact; not a new read or rerun of scientific evidence.",
+      "owned_records_verified": 21,
+      "receipt": {
+        "bytes": 7584,
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_receipt.json",
+        "sha256": "a9536686abb45d8f5fae790fd0c7685ce159a1a0f961cd8cdcd5145fb31d22d4"
+      }
+    },
+    {
+      "coverage": "Identity verification of every bound artifact; not a new read or rerun of scientific evidence.",
+      "owned_records_verified": 29,
+      "receipt": {
+        "bytes": 26249,
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_receipt.json",
+        "sha256": "75a01dfe36e64f83db7886528169cddac63bfd2e12258d40313b4504dc05e6bd"
+      }
+    },
+    {
+      "coverage": "Identity verification of every bound artifact; not a new read or rerun of scientific evidence.",
+      "owned_records_verified": 9,
+      "receipt": {
+        "bytes": 10863,
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_receipt.json",
+        "sha256": "c1b64e10e94c7dedd0e73195f46e8235f83bbda6665d9a739626ae44eef6fcac"
+      }
+    },
+    {
+      "coverage": "Identity verification of every bound artifact; not a new read or rerun of scientific evidence.",
+      "owned_records_verified": 5,
+      "receipt": {
+        "bytes": 3068,
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cut_sector_coercivity_receipt.json",
+        "sha256": "691ab7b12af897736d1b9a3312792e98c6959aecf7df98db24752d90e6944bf6"
+      }
+    }
+  ],
+  "inherited_read_manifest": {
+    "bytes": 44013,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_read_manifest.json",
+    "sha256": "ef884312c26834f6c4a43ee90f47b75b2fceaa8e32c6c02a20463a10b3bbb01d"
+  },
+  "not_consumed": [
+    "No unreviewed parallel probability-sensitive-return source.",
+    "No F17 theorem.",
+    "No new Lohmann/B41 theorem.",
+    "No general FR full-Gaussian analytic-reader claim.",
+    "No current shared status register used as a model premise."
+  ],
+  "older_read_manifest": {
+    "bytes": 24051,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_read_manifest.json",
+    "sha256": "6f7dbb5d91a76789df58ce44fecc651acd22af7040b780962c04bdd64d8e343f"
+  },
+  "read_limits": "Hashes certify identity, not complete reading. Exact source ranges and inherited coverage are preserved above; evidence-code packets verified by hash were not reread or rerun here.",
+  "reused_methodology_reads": [
+    {
+      "bytes": 11788,
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "bytes": 2180,
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 24561,
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23"
+    },
+    {
+      "bytes": 5188,
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+    },
+    {
+      "bytes": 12608,
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "read_coverage": "Read initial scope plus full relevant original-review, frozen-input, per-unit and combined integration rules, including reread90-155. No canonical integration receipt or combined gate claimed.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14"
+    },
+    {
+      "bytes": 12940,
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85"
+    },
+    {
+      "bytes": 7554,
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "bytes": 23216,
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+    },
+    {
+      "bytes": 21536,
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "read_coverage": "Schema reference inspected in initial batch with truncation; no complete-schema reading or canonical receipt validation claimed. This is a source-review evidence receipt; canonical enrollment remains coordinator-owned.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "42a24d3df296f01e4189eadd1ef8b92f316bd8d14229f14643641e39939d159e"
+    },
+    {
+      "bytes": 1118,
+      "path": "AGENTS.md",
+      "read_coverage": "Full applicable worktree instructions.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0"
+    },
+    {
+      "bytes": 11333,
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "read_coverage": "Full active axiom document; target is conditional model analysis, no primitive adoption.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "bytes": 6427,
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "read_coverage": "Full primitive-check methodology.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "bytes": 6416,
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "read_coverage": "Full premise-node registry; read-only.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "bytes": 11572,
+      "path": "docs/audit/data/premise_decision_history.json",
+      "read_coverage": "Full decision history; read-only.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113"
+    },
+    {
+      "bytes": 4975,
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "read_coverage": "Full applicable proof-search governance.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "bytes": 3694,
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "read_coverage": "Full workflow; no shared queue writes.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf"
+    },
+    {
+      "bytes": 22309,
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "read_coverage": "Lines1-85 current workflow/context; no queue-wide disposition.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "4df23ed611d808e3dd28d2a14b5407a16c9eb4d2c632017666b9a240a78199ce"
+    },
+    {
+      "bytes": 10595,
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "read_coverage": "Lines1-85 plus visible86-205 context with some batch output truncation; no deferred adoption consumed.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e"
+    },
+    {
+      "bytes": 39977,
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "read_coverage": "Relevant initial naming rules and reread88-115; initial batch had partial truncation.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca"
+    },
+    {
+      "bytes": 109438,
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "read_coverage": "Initial entries and bounded index context; no unrelated retained-lane theorem consumed.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "f2665b763f69e4baef4648d15b517b2701d975a8131f4665703c40c07283782c"
+    },
+    {
+      "bytes": 35690,
+      "path": "docs/audit/README.md",
+      "read_coverage": "Lines1-100: audit boundaries; no verdict assigned.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f"
+    },
+    {
+      "bytes": 20680,
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "read_coverage": "Full installed skill router; current-main methodology and PROCESS_LIGHT control task scope.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879"
+    },
+    {
+      "bytes": 9276,
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "read_coverage": "Full installed skill read for new author work; PROCESS_LIGHT and coordinator file boundary override generic branch/packaging tasks.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+    },
+    {
+      "bytes": 30709,
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "read_coverage": "Applicable full discovery/proof-search and empirical discriminator guidance, completed with300-434 after initial batch.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "bytes": 16755,
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "read_coverage": "Full336-line claim/premise status reference.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "bytes": 16454,
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "read_coverage": "Full, assembled from1-210 and211-309; coordinator owns publication/shared campaign records.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "bytes": 5109,
+      "path": "docs/repo/REPO_ORGANIZATION.md",
+      "read_coverage": "Full current organization/navigation guidance; history is not scientific authority.",
+      "reuse": "Same continuous worker session, unchanged bytes reverified. Coverage retained exactly; no new full-read assertion.",
+      "reuse_in_this_unit": "Same continuous worker; exact unchanged bytes verified. Original coverage retained; no new full-read assertion.",
+      "sha256": "8aac84c1de58048484fb95bd6ce00b2afa11e6d607c0978d807865398aee2b2c"
+    }
+  ],
+  "source_inputs": [
+    {
+      "bytes": 1497,
+      "inherited_read_coverage": "Complete; reread for current assignment and at freeze.",
+      "older_inherited_coverage": "Full, read again for this author assignment.",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "read_coverage_in_this_unit": "Complete governing process reused, exact bytes verified.",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "use": "Analytic author lane and fresh independent review requirement."
+    },
+    {
+      "bytes": 32365,
+      "inherited_read_coverage": "Complete617-line source authored and self-read in prior unit; frozen exact bytes verified.",
+      "older_inherited_coverage": "",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "read_coverage_in_this_unit": "Complete617-line author/source coverage inherited; current1-475 reread and lower-energy/cap/reference steps reconstructed.",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "use": "Actual quotient, localized coercivity, exact compact normalizer and Haar cap; no normalized tail imported."
+    },
+    {
+      "bytes": 12275,
+      "inherited_read_coverage": "Complete fresh independent review read.",
+      "older_inherited_coverage": "",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "read_coverage_in_this_unit": "Complete independent review read before this author sequence; unchanged.",
+      "sha256": "e5bcf577dab1144c6ce4ac06f1b4558cc44951a7fb3e305199bb91f91736b76a",
+      "use": "Scoped LAND and exterior/reference limitations."
+    },
+    {
+      "bytes": 28162,
+      "inherited_read_coverage": "Complete527-line source read during completed prior independent review; unchanged bytes verified.",
+      "older_inherited_coverage": "Complete527-line frozen source and own complete review during prior assignment. Rebuilt the cut-cap argument locally as CS17-CS20; other CC evidence is context, not tests of this unit.",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_COMPLEMENT_ASTRA.md",
+      "read_coverage_in_this_unit": "Complete527-line source read in this worker's completed earlier CC review; unchanged.",
+      "sha256": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b",
+      "use": "Original cut/kernel/history producer context; evidence not rerun."
+    },
+    {
+      "bytes": 18450,
+      "inherited_read_coverage": "Complete own prior review reused; packet verified unchanged.",
+      "older_inherited_coverage": "Complete own prior review, bounded LAND. Same author/reviewer identity disclosed; this is not independent review of the new CS source.",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_COMPLEMENT_ASTRA.md",
+      "read_coverage_in_this_unit": "Complete own earlier review reused.",
+      "sha256": "721d32877285a05ae35aaabc635fa98d3098b7473c3f364d686d5ed29bcbc071",
+      "use": "Same-worker exposure disclosed, bounded scope and failures preserved."
+    },
+    {
+      "bytes": 28993,
+      "inherited_read_coverage": "Current1-330 assembled without remaining gaps, exact185-330 reread; unchanged prior410-490 reused.",
+      "older_inherited_coverage": "Lines1-215 and410-490. Exact tree variables/reference/paired geometry and G-to-chart CB21-CB24, with supplied domain retained. No whole-source rereview.",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "read_coverage_in_this_unit": "Unchanged prior1-330 and410-490 coverage reused.",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "use": "Actual zero-source reference, local readers and CB13 background bound."
+    },
+    {
+      "bytes": 17323,
+      "inherited_read_coverage": "Complete unchanged prior review reused.",
+      "older_inherited_coverage": "Complete during CC review; unchanged. Only previously reviewed bounded background/chart scope is consumed.",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "read_coverage_in_this_unit": "Complete prior review reused.",
+      "sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+      "use": "Bounded background/chart scope only."
+    },
+    {
+      "bytes": 39217,
+      "inherited_read_coverage": "Current1-180,270-338, exact98-112,108-180,187-220,267-287 and targeted stencil searches; inherited1-316,337-375,508-635.",
+      "older_inherited_coverage": "Lines1-316,337-375,508-635 across current reads and prior unchanged reads. Includes SA13-SA15 critical branch/row bound/actual fixed sector and SA32-SA33 complementary consumer. Remaining implementation/evidence not rereviewed.",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "read_coverage_in_this_unit": "Current298-340 reread; previous1-316,337-375,508-635 and GC ranges retained.",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "use": "Actual zero-source affine whitening/cube, uniform scalar row norms and the two original complementary integrals."
+    },
+    {
+      "bytes": 13623,
+      "inherited_read_coverage": "Complete unchanged prior review reused.",
+      "older_inherited_coverage": "Complete review read, including its conditional/selected-sector limits. Its numerical claims were read as predecessor evidence and not rerun or adopted as new CS checks.",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "read_coverage_in_this_unit": "Complete prior review reused.",
+      "sha256": "f18775b209aba8711f8ad42ff82432f127171b4b241987b295e6f76124964f35",
+      "use": "Selected-sector limits, no full complement imported."
+    },
+    {
+      "bytes": 48847,
+      "inherited_read_coverage": "Complete mathematical source1-730 through H28 read in prior CC review; unchanged bytes reused.",
+      "older_inherited_coverage": "Complete mathematical source throughH28, lines1-730, during prior CC review; unchanged bytes reused. CS33 uses H24 only under its exact completion/source/u domain and full failure-reader exclusion.",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "read_coverage_in_this_unit": "Current430-550 reread; unchanged complete mathematical1-730 throughH28 inherited.",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "use": "H8 joint insertion and H24 actual positive gas; exact domain and complete failure-reader exclusion."
+    },
+    {
+      "bytes": 21817,
+      "inherited_read_coverage": "Complete unchanged prior review reused.",
+      "older_inherited_coverage": "Complete during prior CC review; unchanged. No broadened H24 domain or integrated return inferred.",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "read_coverage_in_this_unit": "Complete prior review reused.",
+      "sha256": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+      "use": "No broad history/complex normalization inferred."
+    },
+    {
+      "bytes": 23793,
+      "inherited_read_coverage": "Unchanged prior1-365 and390-431 coverage reused.",
+      "older_inherited_coverage": "Lines1-365 during prior CC review; current exact205-239 and390-431. Integrated sea/chessboard inputs do not provide fixed-V normalization; no Sea tail theorem imported.",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "read_coverage_in_this_unit": "Prior1-365 and390-431 coverage reused; no new full read.",
+      "sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+      "use": "Recognize pre-return sea and joint-replacement gap; not an input tail theorem."
+    },
+    {
+      "bytes": 35303,
+      "inherited_read_coverage": "Corrected source1-210 and412-550; FR9 polynomial-domain correction included. Full intermediate forest proof not reread.",
+      "older_inherited_coverage": "",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "read_coverage_in_this_unit": "Current25-110 reread; corrected source1-210 and412-550 inherited.",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "use": "Unchanged actual sector and fixed source domain; only corrected FR9 polynomial scope, not a general full-Gaussian forest claim."
+    },
+    {
+      "bytes": 14369,
+      "inherited_read_coverage": "Complete review read.",
+      "older_inherited_coverage": "",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FIXED_SOURCE_RADIUS_ASTRA.md",
+      "read_coverage_in_this_unit": "Complete prior review read.",
+      "sha256": "d2a188c6126a1321c8bed82ef96db2680dda70e631e928e3a0c37554908c8579",
+      "use": "Bounded review context and fixed-source limits."
+    },
+    {
+      "bytes": 6258,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_domain_correction.json",
+      "read_coverage_in_this_unit": "Complete metadata read in prior unit, exact identity verified.",
+      "sha256": "90442d8a513d1770021ea25f644eea1e55598ebc63c91fec3d6c46074215c87d",
+      "use": "Historical FR source correction remains separately bound."
+    },
+    {
+      "bytes": 3187,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_domain_confirmation.json",
+      "read_coverage_in_this_unit": "Complete affected confirmation reread during this package.",
+      "sha256": "518693688eeb6a4e1ee5023b076ebd5e05af4744a25eb6c766356a432515e317",
+      "use": "Affected confirmation only, not a new whole FR review."
+    },
+    {
+      "bytes": 41908,
+      "inherited_read_coverage": "1-112 and446-493; exact440-500 reread for IC20 inequalities.",
+      "older_inherited_coverage": "",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "read_coverage_in_this_unit": "Current448-475 exact inequalities reread; previous1-112 and440-500 reused.",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "use": "Compatibility of sigma*p^3 and sigma^2*p^12 cutoffs only; IC conclusion not imported."
+    },
+    {
+      "bytes": 31368,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "read_coverage_in_this_unit": "Complete original580-line source authored/self-read previously; current128-165 reread; sole metric correction reconstructed exactly.",
+      "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+      "use": "Definition C_ch, Omega/chart qualifications and existing graded interface; original G unchanged."
+    },
+    {
+      "bytes": 14535,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_GRADED_COMPLEMENT_ASTRA.md",
+      "read_coverage_in_this_unit": "Complete current247-line independent report read in bounded chunks.",
+      "sha256": "6647ee9e519e60e473e42d0b5e073a17fd405ca16aafb69eea61173d11bea0dc",
+      "use": "Current22e30738 scoped LAND; outside-chart/normalization limits."
+    },
+    {
+      "bytes": 1617,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_distance_correction.json",
+      "read_coverage_in_this_unit": "Complete metadata and exact before/after phrase read.",
+      "sha256": "282e0e1bd399ace20932fcccc0bef91f290a1ee809b290d7749fef603ae7722b",
+      "use": "Historical source6201ec6e separated from current22e30738."
+    },
+    {
+      "bytes": 3314,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_graded_complement_distance_confirmation.json",
+      "read_coverage_in_this_unit": "Complete affected confirmation read.",
+      "sha256": "892ddde0148be383dadd2ddbce9b6c1e54514ff8f03d6bef7165c00ac3235ba6",
+      "use": "Exact metric correction confirmation only."
+    },
+    {
+      "bytes": 59805,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "read_coverage_in_this_unit": "Current pass2 lines822-891 read completely, plus exact current identity from coordinator.",
+      "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+      "use": "R15-R17 require a specified product reference and sup-controlled interaction atoms; OC actual-law probabilities do not instantiate that criterion."
+    },
+    {
+      "bytes": 26032,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RD_R2.md",
+      "read_coverage_in_this_unit": "Complete413-line report read as1-390 and390-413.",
+      "sha256": "bc49326b86c00e3dd029e2c8388e8cf65fd615bc926d7d6ad727158dd4f780ce",
+      "use": "Finite explicit H12 identity B1 resolved; quantitative/analytic/effective reference interfaces B2/B3 still HOLD. OC does not deny the resolved finite identity."
+    }
+  ]
+}

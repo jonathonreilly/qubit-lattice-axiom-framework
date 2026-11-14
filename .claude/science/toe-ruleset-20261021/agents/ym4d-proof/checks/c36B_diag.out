@@ -1,0 +1,5 @@
+t=0.15: max |log V_P| = 0.781; final residual nan after 60 its; first [np.float64(2.5592743541173952), np.float64(0.20126810027776326), np.float64(0.1552810258975556), np.float64(2.05993986190723)]
+t=0.06: max |log V_P| = 0.147; final residual 3.9e-14 after 10 its; first [np.float64(0.43817454092194014), np.float64(0.0011927634638914891), np.float64(1.3677848808331391e-05), np.float64(2.0564193657489396e-07)]
+t=0.08: max |log V_P| = 0.296; final residual 3.4e-14 after 18 its; first [np.float64(0.7836844860932805), np.float64(0.007664286100604436), np.float64(0.00015808340031370726), np.float64(9.224695426276821e-06)]
+t=0.1: max |log V_P| = 0.512; final residual 8.0e-14 after 56 its; first [np.float64(1.527526365865594), np.float64(0.047452435869267465), np.float64(0.002849069112061171), np.float64(0.0003379323058564044)]
+t=0.12: max |log V_P| = 0.596; final residual 9.6e-08 after 60 its; first [np.float64(1.371364554975408), np.float64(0.06200737446020363), np.float64(0.0051519629502745365), np.float64(0.000883376606440202)]

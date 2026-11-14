@@ -1,0 +1,21 @@
+SU2Model NC=3: 157464 axial paths, 629856 contours, 0.8 s, RSS 0.08 GB
+C1 linear prediction: |r_lin|_2 = 2.162764e+01, E_lin = 2.771880e+02
+  t=0.025: CONVERGED it=162 |g|/|g0|=8.5e-10  D=2.7225e-02 D/t=1.0890  E/t^2=2.771088e+02 (E_lin 2.771880e+02)  62 s, RSS 0.33 GB
+  t=0.05: CONVERGED it=191 |g|/|g0|=7.1e-10  D=5.4564e-02 D/t=1.0913  E/t^2=2.768704e+02 (E_lin 2.771880e+02)  75 s, RSS 0.33 GB
+  t=0.1: CONVERGED it=198 |g|/|g0|=8.9e-10  D=1.1013e-01 D/t=1.1013  E/t^2=2.759044e+02 (E_lin 2.771880e+02)  78 s, RSS 0.33 GB
+  t=0.2: CONVERGED it=217 |g|/|g0|=7.1e-10  D=2.2892e-01 D/t=1.1446  E/t^2=2.718340e+02 (E_lin 2.771880e+02)  85 s, RSS 0.33 GB
+  t=0.3: CONVERGED it=300 |g|/|g0|=9.0e-10  D=3.6601e-01 D/t=1.2200  E/t^2=2.643150e+02 (E_lin 2.771880e+02)  118 s, RSS 0.33 GB
+C1: slope p = 1.041; D(0.1) = 0.1101 -> FAIL; C-V2 D(0.025) = 0.0272 -> PASS
+SU2Model NC=4: 497664 axial paths, 1990656 contours, 2.9 s, RSS 0.33 GB
+C2 background t=0.2: CONVERGED it=277 |g|/|g0|=9.3e-10 397 s, RSS 0.94 GB
+  perturbed +1s: CONVERGED it=307 |g|/|g0|=7.6e-10 420 s
+  perturbed -1s: CONVERGED it=296 |g|/|g0|=9.7e-10 405 s
+C2 profiles (d = 0, 1, 2): non-abelian part 1.452e-01 6.795e-02 9.186e-03; linear 7.045e-01 1.036e-01 2.055e-02
+C2 rates: m_NA = 1.380, m_lin = 1.767; max|Delta|/max|dr_lin| = 0.2062
+C-V1: PASS
+C-V2: PASS
+C1: FAIL
+C2-V: PASS
+C2a: PASS
+C2b: PASS
+c29 C: VALID; time 1644 s, peak RSS 1.01 GB

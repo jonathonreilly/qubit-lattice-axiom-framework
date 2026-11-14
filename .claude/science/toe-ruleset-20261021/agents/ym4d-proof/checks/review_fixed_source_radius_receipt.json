@@ -1,0 +1,172 @@
+{
+  "frozen_utc": "2026-10-29T23:34:52.267179+00:00",
+  "unit": "REVIEW_FIXED_SOURCE_RADIUS_ASTRA",
+  "verdict": "LAND",
+  "precise_scope": "Corrected finite-contour bounded-decoration theorem and actual selected finite-u Haar sector at fixed positive original relative-source radius, under its small sigma*p^3 and shrinking curvature hypotheses; no full-transform, continuum or mass-gap verdict.",
+  "reviewer": "/root/review_fixed_source_radius; fresh author-independent context, same-family; requested Astra/max, backend not independently observable; no nested workers",
+  "reviewed_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+    "bytes": 35303,
+    "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86"
+  },
+  "original_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_source_v1.md",
+    "bytes": 33082,
+    "sha256": "9c628d8499abe6e8d23113f008f6c78c182b9ca52fdb6f87a73394cc13c6e882"
+  },
+  "original_author_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_receipt.json",
+    "bytes": 4639,
+    "sha256": "0f8b9bff1888896192e693172107a6a5976cb5f828d45cdc377a63f2367b8468"
+  },
+  "original_author_read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_read_manifest.json",
+    "bytes": 8022,
+    "sha256": "02a9df12fc51fb9aa29fba2909b55f1646d1360752cd0ab95b44ebdba3c68985"
+  },
+  "author_correction_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_domain_correction.json",
+    "bytes": 6258,
+    "sha256": "90442d8a513d1770021ea25f644eea1e55598ebc63c91fec3d6c46074215c87d"
+  },
+  "author_correction_note": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_domain_correction.md",
+    "bytes": 4207,
+    "sha256": "65551b97ab4f8ffae2e945c02b471013a4d395744e42c297f7b4fc9d224575d4"
+  },
+  "original_commit_identity": "9c17b28bb27d5aae88063db081130ea7fe78d16b (coordinator supplied; no reviewer Git operation)",
+  "read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_read_manifest.json",
+    "bytes": 19878,
+    "sha256": "03fcda8e1b70e78d6ff4590a2dec774e64c6cb2fa4f03b98e8ca1397e4550390"
+  },
+  "finding": {
+    "id": "FR-DOMAIN-1",
+    "status": "resolved",
+    "original_counterexample": "Finite-domain bounded reader may fail to admit its full Gaussian integral; entire bounded-on-disc readers can also fail Gaussian integrability.",
+    "repair": "Polynomial-only FR9 and separately justified absolute U=0 quadratic summation, preserving the Gaussian tail reserve.",
+    "confirmation": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_domain_confirmation.json",
+      "bytes": 3187,
+      "sha256": "518693688eeb6a4e1ee5023b076ebd5e05af4744a25eb6c766356a432515e317"
+    }
+  },
+  "independence": {
+    "original_mathematics_frozen_before_author_numerical_artifacts": true,
+    "producer_aggregate_results_exposed": true,
+    "parent_same_issue_message_disclosed": true,
+    "author_programs_reproduced_after_exposure": true,
+    "correction_is_same_context_affected_confirmation": true
+  },
+  "reproductions": {
+    "predicates_passed": 54,
+    "predicates_total": 54,
+    "controls": 17,
+    "scientific_arrays_exactly_match_author": true,
+    "independent_numerical_evidence": false,
+    "new_correction_numerics": 0,
+    "reviewer_failures": [],
+    "minimum_native_free_percent": 53,
+    "maximum_reported_load": 2.18310546875,
+    "maximum_rss_bytes": 64749568,
+    "niceness": 10,
+    "all_five_numerical_thread_limits": 1
+  },
+  "integrity": {
+    "original_bindings_verified": 12,
+    "original_non_source_artifacts_unchanged": 11,
+    "producer_input_hashes_verified": 10,
+    "source_diff_hunks": 3,
+    "initial_independent_freeze_unchanged": true,
+    "post_exposure_note_unchanged": true
+  },
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FIXED_SOURCE_RADIUS_ASTRA.md",
+      "bytes": 14369,
+      "sha256": "d2a188c6126a1321c8bed82ef96db2680dda70e631e928e3a0c37554908c8579"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_domain_confirmation.json",
+      "bytes": 3187,
+      "sha256": "518693688eeb6a4e1ee5023b076ebd5e05af4744a25eb6c766356a432515e317"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_domain_diff.txt",
+      "bytes": 5644,
+      "sha256": "71ddfc97663a5ef4874b7a59453c3833fc372d6d3617c6c6964b75fb086d38e4"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_independent_freeze.json",
+      "bytes": 3212,
+      "sha256": "bf19f5445ce743705f5c17da2224b8cb132fb41de9deb3eb779793c0480db341"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_independent_freeze.md",
+      "bytes": 11244,
+      "sha256": "4721fe06bcf2e4a405334be9ece9750fd02eeb394c305e9fda691110eec196ef"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_post_exposure.md",
+      "bytes": 4408,
+      "sha256": "fe20f4f0029210f34ab3f35d2740616498e76e7f010fc99341fa206e6c6ba028"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_read_manifest.json",
+      "bytes": 19878,
+      "sha256": "03fcda8e1b70e78d6ff4590a2dec774e64c6cb2fa4f03b98e8ca1397e4550390"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_reproduction_01.json",
+      "bytes": 1613,
+      "sha256": "e36348d1c7a622371c7c576894168a757d1a325dc7eaedc05b26f15967d30402"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_reproduction_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_reproduction_01.stdout.json",
+      "bytes": 18405,
+      "sha256": "7cbbd38a2a17c2adda94a2eb39351e94148d6f2724f4d7f993634b76b45e45a4"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_reproduction_mixed_01.json",
+      "bytes": 1173,
+      "sha256": "09ccebcb44f42a65cc89960a16e70cabe96f563e183ef00963859a2e1b2e7834"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_reproduction_mixed_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_reproduction_mixed_01.stdout.json",
+      "bytes": 2120,
+      "sha256": "ac0d03abc30bb87fb580959b0e437c4d411dad5a0f16ce5e4e5113cbbcaf8fd6"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_reproduction_plan.md",
+      "bytes": 1340,
+      "sha256": "b7b7f49745ce86cea8b25604e41a57930d1c77ab9b9048a9413b7a46501d3982"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_source_v1.md",
+      "bytes": 33082,
+      "sha256": "9c628d8499abe6e8d23113f008f6c78c182b9ca52fdb6f87a73394cc13c6e882"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_source_v2.md",
+      "bytes": 35303,
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86"
+    }
+  ],
+  "authority_limits": [
+    "No edits outside assigned reviewer files",
+    "No Git, locks, shared status, audit or ledger mutation",
+    "No external PDFs in repository",
+    "No retained-grade or whole-PR authority",
+    "No completion claim for hard histories, excluded coarse fields, arbitrary holes, multilevel RG, continuum existence or physical mass gap"
+  ]
+}

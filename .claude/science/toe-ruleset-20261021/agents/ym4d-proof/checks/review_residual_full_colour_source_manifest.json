@@ -1,0 +1,717 @@
+{
+  "schema": "bounded-proof-unit-source-manifest-v1",
+  "created_utc": "2026-10-29T17:05:30.720788+00:00",
+  "reviewer": "/root/review_residual_full_colour",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "observed_origin_main": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "source_unit": {
+    "original": {
+      "commit": "47a916398fb58231d809695485812faf25c70ce9",
+      "author_head_at_freeze": "63e393bb56f1c51733aabedfca20b65786ee87f3",
+      "sha256": "e18ce796044a7f1a1f0a086043e5c072ed7e8b7da9af5097ff34e64526de7944",
+      "bytes": 36936,
+      "git_blob": "ea8a60e0227cd335c5b1253eca9767ab4d61afb2"
+    },
+    "repaired": {
+      "commit": "4f04b662f4d72d7ef269f6d9693ae9ff6424acf9",
+      "sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+      "bytes": 36980,
+      "git_blob": "d41484f687250b0e51249c3f9843134f1986e977"
+    },
+    "exact_change_verified": true,
+    "before_sentence": "Its harmonic lift has Gram (S|1_c-perp)^2.",
+    "after_sentence": "The gauge-fixing column Delta_f L_har on that parameter space has Gram (S|1_c-perp)^2."
+  },
+  "original_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_manifest.json",
+    "sha256": "b9d56d20ad5f123720259f37d66f9e7030f802e013083cda38f3fa7252401bb7",
+    "bytes": 2087,
+    "lines": 54
+  },
+  "frozen_files_verified": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+      "bytes": 36980,
+      "lines": 265,
+      "original_sha256": "e18ce796044a7f1a1f0a086043e5c072ed7e8b7da9af5097ff34e64526de7944",
+      "accepted_change": "FC3 Gram-column prose repair only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_inputs.json",
+      "sha256": "8b580dc580aa95f36212c62639e5f269235406da0ea0f2bbd2152a26dff1b0e0",
+      "bytes": 1376,
+      "lines": 21
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_01_criteria.md",
+      "sha256": "19060a0066c2e5d40cbcadd2dcc790f6f0bb9bcd3f108a2312ba92e6355fd9b0",
+      "bytes": 2237,
+      "lines": 10
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_01.py",
+      "sha256": "f641b8b84d30ee4df34145160a60abd31238c15fb1a252fecdff24bcf7ced29f",
+      "bytes": 5489,
+      "lines": 101
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_01_out.json",
+      "sha256": "767732c60410d75dc66efc25f6945841f851be8267f2ee9a57cea78d3477a359",
+      "bytes": 3860,
+      "lines": 177
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "lines": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_02_criteria.md",
+      "sha256": "d206c4cd5e6174e14e3ee00862e8e64b087a12162db46754b9a719447e44e76b",
+      "bytes": 2093,
+      "lines": 9
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_02.py",
+      "sha256": "9e656ac0e2a72ac98cc6b4c52940f662b95b3911df6310bc254c7daab98a4e52",
+      "bytes": 4249,
+      "lines": 79
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_02_out.json",
+      "sha256": "54907736019b5526f8d5490bca00ca08a214b24eaad3ab191718d5a84f32679a",
+      "bytes": 3059,
+      "lines": 139
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "lines": 0
+    }
+  ],
+  "input_snapshot_all_hashes_match": true,
+  "science_read_coverage": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+      "bytes": 36980,
+      "lines": 265,
+      "coverage": "complete text read; hash-only scan is not counted as reading",
+      "git_blob_at_repair_commit": "d41484f687250b0e51249c3f9843134f1986e977"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_DETERMINANT_ASTRA.md",
+      "sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8",
+      "bytes": 27582,
+      "lines": 334,
+      "coverage": "complete text read; hash-only scan is not counted as reading",
+      "git_blob_at_repair_commit": "db2a486dfedaea89c2123fa4f9097916c7a30bb8"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RESIDUAL_DETERMINANT_ASTRA.md",
+      "sha256": "3ec369126f85df9cc090cb92f136537c6cc422b7fb5ea107f91465a1f2e52038",
+      "bytes": 28296,
+      "lines": 159,
+      "coverage": "complete text read; hash-only scan is not counted as reading",
+      "git_blob_at_repair_commit": "a17b90ad92e7f134927ded53f2dcd7808164ff07"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_lattice_bridge_working.md",
+      "sha256": "bb67ad564747c4c9954ae93f88aa3f43a806c88b0aefedd5ef54a945e1512c6b",
+      "bytes": 23645,
+      "lines": 245,
+      "coverage": "complete text read; hash-only scan is not counted as reading",
+      "git_blob_at_repair_commit": "a5ffa5e07eb1da5d47a0da844abc4d2750ef9a97"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md",
+      "sha256": "57fb90b190ccc3280f841b5343aa24d4913aafe5d646e512d01c34799fa6c43b",
+      "bytes": 23374,
+      "lines": 190,
+      "coverage": "complete text read; hash-only scan is not counted as reading",
+      "git_blob_at_repair_commit": "7aace98469d7dbf67778934d0cd6ce1419a7fc6e"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_vertices_working.md",
+      "sha256": "aa16239e801d371c7242a342b339ed5dfeec8fa75f5dd8a3ac3a128a84989d56",
+      "bytes": 26224,
+      "lines": 257,
+      "coverage": "complete text read; hash-only scan is not counted as reading",
+      "git_blob_at_repair_commit": "db042ed32ec564872ffc5f052c718237c7a1177c"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RESIDUAL_VERTICES_ASTRA.md",
+      "sha256": "0b5bcc1bd076efa296bf66f83ea5d072b6b9dccab7b42dc2245c96b1cc81dc8c",
+      "bytes": 30578,
+      "lines": 221,
+      "coverage": "complete text read; hash-only scan is not counted as reading",
+      "git_blob_at_repair_commit": "fe0d622d3cb1ce212e5befe418ab8f4da536f584"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_UIR_ASTRA.md",
+      "sha256": "0cbb4f9a967022ab669cae087617f390b2bfb481034012aac85e7cfc9928bc40",
+      "bytes": 35284,
+      "lines": 272,
+      "coverage": "complete text read; hash-only scan is not counted as reading",
+      "git_blob_at_repair_commit": "c0dc4213af551f5cabe4270958ec3c866c5dacb6"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RECOVERY_UIR_ASTRA.md",
+      "sha256": "347b7ae680b2c305cc7bb5de8b4496d069bbea309a6df71f18109c54a22c4098",
+      "bytes": 26968,
+      "lines": 192,
+      "coverage": "complete text read; hash-only scan is not counted as reading",
+      "git_blob_at_repair_commit": "ee904fb5dd86e867c50551bda269dc13cd943c9a"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_UIR.md",
+      "sha256": "74860ce5d301819ec626940ff1d6cf1a6326cb9c2639c9329a7f1083e087b952",
+      "bytes": 33039,
+      "lines": 219,
+      "coverage": "complete text read; hash-only scan is not counted as reading",
+      "git_blob_at_repair_commit": "71e3bb328b2fcf5f0ed9102dca657ab216c68a19"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_inputs.json",
+      "sha256": "8b580dc580aa95f36212c62639e5f269235406da0ea0f2bbd2152a26dff1b0e0",
+      "bytes": 1376,
+      "lines": 21,
+      "coverage": "complete text read; hash-only scan is not counted as reading",
+      "git_blob_at_repair_commit": "ef0caa983e0be5170bba33223fb5c7d30b92ae16"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_manifest.json",
+      "sha256": "b9d56d20ad5f123720259f37d66f9e7030f802e013083cda38f3fa7252401bb7",
+      "bytes": 2087,
+      "lines": 54,
+      "coverage": "complete text read; hash-only scan is not counted as reading",
+      "git_blob_at_repair_commit": "b92dc6eeece9e02eca666ef76966e4bc563589a2"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_01_criteria.md",
+      "sha256": "19060a0066c2e5d40cbcadd2dcc790f6f0bb9bcd3f108a2312ba92e6355fd9b0",
+      "bytes": 2237,
+      "lines": 10,
+      "coverage": "complete implementation/criteria/output read; author diagnostics not rerun by this reviewer",
+      "git_blob_at_repair_commit": "1f0c2ba3cdb9cd849f4c2a02101079a2baa8f6f2"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_01.py",
+      "sha256": "f641b8b84d30ee4df34145160a60abd31238c15fb1a252fecdff24bcf7ced29f",
+      "bytes": 5489,
+      "lines": 101,
+      "coverage": "complete implementation/criteria/output read; author diagnostics not rerun by this reviewer",
+      "git_blob_at_repair_commit": "1d5cdc07da5a107e579507f6b1f5804427b26a54"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_01_out.json",
+      "sha256": "767732c60410d75dc66efc25f6945841f851be8267f2ee9a57cea78d3477a359",
+      "bytes": 3860,
+      "lines": 177,
+      "coverage": "complete implementation/criteria/output read; author diagnostics not rerun by this reviewer",
+      "git_blob_at_repair_commit": "6afad181871c8db9f8aef4b2c620e5fd070f15c7"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "lines": 0,
+      "coverage": "complete implementation/criteria/output read; author diagnostics not rerun by this reviewer",
+      "git_blob_at_repair_commit": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_02_criteria.md",
+      "sha256": "d206c4cd5e6174e14e3ee00862e8e64b087a12162db46754b9a719447e44e76b",
+      "bytes": 2093,
+      "lines": 9,
+      "coverage": "complete implementation/criteria/output read; author diagnostics not rerun by this reviewer",
+      "git_blob_at_repair_commit": "19e0626c313fbf59fc7e1f22a557b610606dad1e"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_02.py",
+      "sha256": "9e656ac0e2a72ac98cc6b4c52940f662b95b3911df6310bc254c7daab98a4e52",
+      "bytes": 4249,
+      "lines": 79,
+      "coverage": "complete implementation/criteria/output read; author diagnostics not rerun by this reviewer",
+      "git_blob_at_repair_commit": "3f069c304ce0a3d5f3593396624e4697616a079c"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_02_out.json",
+      "sha256": "54907736019b5526f8d5490bca00ca08a214b24eaad3ab191718d5a84f32679a",
+      "bytes": 3059,
+      "lines": 139,
+      "coverage": "complete implementation/criteria/output read; author diagnostics not rerun by this reviewer",
+      "git_blob_at_repair_commit": "d15af5ed5a0b44bcbde776185ba251d9d74d02f9"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "lines": 0,
+      "coverage": "complete implementation/criteria/output read; author diagnostics not rerun by this reviewer",
+      "git_blob_at_repair_commit": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW.md",
+      "sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "bytes": 539577,
+      "lines": 4851,
+      "coverage": "only listed line ranges/selected mathematical passages, not whole file",
+      "line_ranges": [
+        [
+          1,
+          178
+        ],
+        [
+          1160,
+          1188
+        ],
+        [
+          3587,
+          3639
+        ],
+        [
+          4040,
+          4182
+        ]
+      ],
+      "git_blob_at_repair_commit": "e9d9dd71e1bb69ab0319a83cf75b691cf32e2143"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW55.md",
+      "sha256": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25",
+      "bytes": 70208,
+      "lines": 616,
+      "coverage": "only listed line ranges/selected mathematical passages, not whole file",
+      "line_ranges": [
+        [
+          343,
+          393
+        ]
+      ],
+      "git_blob_at_repair_commit": "808c10f576b55f00a6c80435ca8b22445cb6b84b"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR55.md",
+      "sha256": "4c6d80473a80714e2a5aa1e241e8835648bbe3c65a7bca38a5758faf3c5accb4",
+      "bytes": 68640,
+      "lines": 625,
+      "coverage": "only listed line ranges/selected mathematical passages, not whole file",
+      "line_ranges": [
+        [
+          205,
+          430
+        ],
+        [
+          440,
+          625
+        ]
+      ],
+      "git_blob_at_repair_commit": "cb1163efb60e1c42531137501a1e233c6b97c09d"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR2_55.md",
+      "sha256": "bc10b5cc37c8f10cb339e234a3ca3aa252fd401cfb75476334c8c94aa8f5a6f3",
+      "bytes": 35453,
+      "lines": 320,
+      "coverage": "only listed line ranges/selected mathematical passages, not whole file",
+      "line_ranges": [
+        [
+          100,
+          154
+        ]
+      ],
+      "git_blob_at_repair_commit": "3f5934189db747cf771287f79877307ec77e52d1"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "50534f5ac1c1efe3aca10cedfbca32608f2fd47d9429f32566627b42aebed406",
+      "bytes": 772086,
+      "lines": 7202,
+      "coverage": "only listed line ranges/selected mathematical passages, not whole file",
+      "line_ranges": [
+        [
+          881,
+          1025
+        ],
+        [
+          3349,
+          3442
+        ]
+      ],
+      "git_blob_at_repair_commit": "aebbcd8993cfac580652eca178fe069a962a8df2"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT34_55.md",
+      "sha256": "f714a647910c4fd19570ecd192b98144b6c54d37c8c4f30c73bd20d426ef717d",
+      "bytes": 70280,
+      "lines": 670,
+      "coverage": "only listed line ranges/selected mathematical passages, not whole file",
+      "line_ranges": [
+        [
+          1,
+          181
+        ]
+      ],
+      "git_blob_at_repair_commit": "f46fc2a27ad771822dc7735b69cc2ccbcc816eab"
+    }
+  ],
+  "methodology_reads": [
+    {
+      "path": "AGENTS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "06a5d79cfd2e5e6886f0702e96bd40b3d581a5ae",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "bea573caf2b0ea43a2c6519c9a474d7a10d82965",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "ba6fc9a69f3e6dfca01f3257d611d1a057def305",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "e265934158bfa3126153c3dda8ec45d8d4686b46",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "4796f0492a9d04a8f779c29960240dff32ee0b60",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "cd4b0f2a9bf9b2bb20e2316993cc49f669430c0e",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "457507d252fb603e475805f674aaca9ff8ca849e",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "0f3d79e16a2fd0d558f9510d34442de011896bd1",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "043ba7e62e09ce5a67a51263f7dc261c9485030f",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "397895999be1615d88b2f91532c719d1eab43582",
+      "sha256": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd",
+      "bytes": 1615,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "1ec31f6e817cb259df1bdafa4a358b12e0ac15b8",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "bytes": 5188,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "90d142bceca9de62e2941519ddd17650cb6366e6",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "bytes": 12608,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "7f46ba9028f7b047cf7589521d89b7492e25273c",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "bytes": 12940,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "04ea075224460de0223a1a0b22a68423c6df1a3a",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "bytes": 7554,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "da1bc02c3d9d3ba6b667139762ffa8d66efc73b1",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "bytes": 23216,
+      "coverage": "complete applicable text read at pinned current-main revision; irrelevant landing operations not executed"
+    }
+  ],
+  "installed_skill_reads": [
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "coverage": "complete installed entrypoint read; current-main content governs this task"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "bytes": 20680,
+      "coverage": "complete installed entrypoint read; current-main content governs this task"
+    }
+  ],
+  "literature_local_only_inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_literature_dimock_axial.pdf",
+      "sha256": "4742e86f6c701b15a598e0ff661b7881d8e7e6d3c2a60c45c0a60bed8c7c16b4",
+      "bytes": 292405,
+      "arxiv_id": "1410.2798",
+      "version": "v3",
+      "version_date": "2015-02-11",
+      "source_url": "https://arxiv.org/abs/1410.2798v3",
+      "download_url": "https://arxiv.org/pdf/1410.2798",
+      "read_page_numbers_one_based": [
+        1,
+        13,
+        14,
+        19,
+        20
+      ],
+      "coverage_note": "Also selected definitions and Proposition 1 on pp.2-4; not the entire paper.",
+      "access": "PDF retrieved; selected text inspected with web PDF reader",
+      "local_only": true,
+      "commit_permitted": false,
+      "license_for_republication": "not verified; exclude complete PDF from commit"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_literature_dimock_multiscale.pdf",
+      "sha256": "1747a54afe35b9fa51ebf96d8257cbe7ea0f002d6fdd203daaff80950b60de8e",
+      "bytes": 600279,
+      "arxiv_id": "1712.10029",
+      "version": "v3",
+      "version_date": "2020-03-03",
+      "source_url": "https://arxiv.org/abs/1712.10029v3",
+      "download_url": "https://arxiv.org/pdf/1712.10029",
+      "read_page_numbers_one_based": [
+        1,
+        2,
+        26,
+        27,
+        29,
+        30,
+        38,
+        39,
+        40,
+        43,
+        44
+      ],
+      "coverage_note": "Theorem 1 and opening proof, exact averaging/Green definitions; not the entire paper.",
+      "access": "PDF retrieved; selected text inspected with web PDF reader",
+      "local_only": true,
+      "commit_permitted": false,
+      "license_for_republication": "not verified; exclude complete PDF from commit"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_literature_nielsen.pdf",
+      "sha256": "eff771d66b5847027107b662dfecf347588c5f3f61cd6c0f82775bf91c48e31d",
+      "bytes": 114576,
+      "arxiv_id": "hep-th/0107095",
+      "version": "v2",
+      "version_date": "2001-07-12",
+      "source_url": "https://arxiv.org/abs/hep-th/0107095v2",
+      "download_url": "https://arxiv.org/pdf/hep-th/0107095",
+      "read_page_numbers_one_based": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "coverage_note": "Generalized Nielsen equations and hypotheses; not the entire paper.",
+      "access": "PDF retrieved; selected text inspected with web PDF reader",
+      "local_only": true,
+      "commit_permitted": false,
+      "license_for_republication": "not verified; exclude complete PDF from commit"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_literature_luscher_weisz.pdf",
+      "sha256": "9abc4201c94d34b534b86f90092f2e64aacb2b8a5938549f51cd65b408289f4e",
+      "bytes": 211800,
+      "arxiv_id": "hep-lat/9504006",
+      "version": "v1",
+      "version_date": "1995-04-11",
+      "source_url": "https://arxiv.org/abs/hep-lat/9504006v1",
+      "download_url": "https://arxiv.org/pdf/hep-lat/9504006",
+      "read_page_numbers_one_based": [
+        1,
+        2,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "coverage_note": "Sections 6-8; source text extraction contains legacy font-control artifacts; mathematics inspected, not the entire paper.",
+      "access": "PDF retrieved; selected text inspected with web PDF reader",
+      "local_only": true,
+      "commit_permitted": false,
+      "license_for_republication": "not verified; exclude complete PDF from commit"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_literature_adams_lee.pdf",
+      "sha256": "db2ed3d832a763abea185bbf1d14c95faf48a7e9366393df80b5c2ab1980ae3f",
+      "bytes": 274675,
+      "arxiv_id": "0709.0781",
+      "version": "v3",
+      "version_date": "2007-12-05",
+      "source_url": "https://arxiv.org/abs/0709.0781v3",
+      "download_url": "https://arxiv.org/pdf/0709.0781",
+      "read_page_numbers_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        13
+      ],
+      "coverage_note": "Main statement, hypotheses and selected proof; not the entire paper.",
+      "access": "PDF retrieved; selected text inspected with web PDF reader",
+      "local_only": true,
+      "commit_permitted": false,
+      "license_for_republication": "not verified; exclude complete PDF from commit"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_literature_bgm.pdf",
+      "sha256": "d8fcf7ec954df18660b0ed456ac846f8b33f0f3eda9a02c9857d62139d3a63b5",
+      "bytes": 303862,
+      "arxiv_id": "math-ph/0303013",
+      "version": "v3",
+      "version_date": "2003-08-28",
+      "source_url": "https://arxiv.org/abs/math-ph/0303013v3",
+      "download_url": "https://arxiv.org/pdf/math-ph/0303013",
+      "read_page_numbers_one_based": [
+        1,
+        3,
+        4,
+        16,
+        17,
+        21
+      ],
+      "coverage_note": "Theorems 1.1 and 5.5 and relevant surrounding statements; not the entire paper.",
+      "access": "PDF retrieved; selected text inspected with web PDF reader",
+      "local_only": true,
+      "commit_permitted": false,
+      "license_for_republication": "not verified; exclude complete PDF from commit"
+    }
+  ],
+  "literature_metadata_only": [
+    {
+      "url": "https://doi.org/10.1007/BF01215223",
+      "scope": "publisher abstract/metadata only; detailed theorem text not retrieved"
+    },
+    {
+      "url": "https://doi.org/10.1007/BF01240355",
+      "scope": "bibliographic/metadata only; detailed theorem text not retrieved"
+    },
+    {
+      "url": "https://doi.org/10.1007/BF01229381",
+      "scope": "bibliographic/metadata only; detailed theorem text not retrieved"
+    }
+  ],
+  "coverage_limits": [
+    "Named predecessor reports were read in full, but their PASS/status labels were not treated as mathematical premises.",
+    "Earlier predecessor runner artifacts were not replayed or certified here. Necessary mathematics was independently reconstructed from named source ranges.",
+    "The broad FLOW/PROOF corpus is only partially read. Hashing whole files does not imply whole-file verification.",
+    "The proof unit is not a whole-PR source-preservation, integration, landing, publication or audit review."
+  ]
+}

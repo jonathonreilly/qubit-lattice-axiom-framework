@@ -1,0 +1,226 @@
+{
+  "schema": "ym4d_post_receipt_identity_v1",
+  "checked_at_utc": "2026-10-30T16:37:23.001204+00:00",
+  "receipt_created_at_utc": "2026-10-30T16:37:02.134317+00:00",
+  "genuinely_later_command": true,
+  "receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_retained_conditional_cc799d903f_receipt.json",
+    "sha256": "b546e6d1c4b82e6e8066e42f0e49552a4f476ac017456f364ada3926986dc062",
+    "mtime_ns": 1793378222136408671
+  },
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/retained-conditional-cc799d903f.md",
+      "sha256": "dc899cfbeeb050985b8d54b30a20466167921f9f5a7fdf62f85f6cc985b69afe",
+      "matches_receipt": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_retained_conditional_cc799d903f_source_findings.md",
+      "sha256": "b86c0e8c62548f537968ebaba7a065eda2a9971ddbc15f3ce425d631e28f079e",
+      "matches_receipt": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_retained_conditional_cc799d903f_read_manifest.json",
+      "sha256": "19fbab8508d4824dc7c20b3ded5d9ca3308ecb0cf3fd1dc538575b2f10097f4c",
+      "matches_receipt": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_retained_conditional_cc799d903f_provenance_comparison.json",
+      "sha256": "d63d8c641312d4215966f805d0be97e7d0c9058de287c1ea9a04a49e9b5e6d08",
+      "matches_receipt": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_retained_conditional_cc799d903f_vocab_lint.json",
+      "sha256": "f7e7e8c5a1ffe13a170e44db313a485ef7d18398d0e36c811925d9b1090b13f0",
+      "matches_receipt": true
+    }
+  ],
+  "immutable_git_object_checks": [
+    {
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+      "git_blob": "862ba1d3b1d513e08c5de471da39cb4c4b666900",
+      "sha256": "920865b2ee1f528c1a3134858023b725fd5c69849d84af372d094bf00c22ce12",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "git_blob": "3b2c04401601f174a5b8c88a5b4d956dda2b4d09",
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXSMALL.md",
+      "git_blob": "05daad68d8c18318136df82256029a866cee607c",
+      "sha256": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "git_blob": "a6b54a0e3c1533d696c4265d6fdc0771f6678d41",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "git_blob": "0e78d63c4be9aac82ad3b01cd380a1852c61fbd0",
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "git_blob": "f320d286323d711a760a4d6304630e698a84be29",
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MEAN_READER_RETURN_ASTRA.md",
+      "git_blob": "f8c1adb47910d2ea09c6c95b3128ee6d9fb84f64",
+      "sha256": "30858a4bb6f045ba558dcdb527c46878ee6bb60fef83b3aef4ba39d79a8d527a",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+      "git_blob": "3612220b935ca745e179f1a11a3f45d218d4ab50",
+      "sha256": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "git_blob": "abc12d270500f9da9692b26dd997f1e02699f1e1",
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "git_blob": "0466de0ff56aa0256b8af6a748c55f33040e01d4",
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "AGENTS.md",
+      "git_blob": "6cb3363d5802209dbe4af3da0f7f7fb4c05e96d3",
+      "sha256": "7def904fdd52d811e7aba87a0d3d859bfb017cccd59703125f4a53f2805aaab2",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "git_blob": "dc755fcdcaa24edc83b9af15dd2e7b69de780ee2",
+      "sha256": "f7e307ec8c99863d84f24edf26c688d2f1e34245763457665e051fcb859f70f8",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/ai_methodology/skills/workhorse/SKILL.md",
+      "git_blob": "8bb889c95a4efc94e38db8c38450c70090185162",
+      "sha256": "4de0316bbc2b69e7597f90d6d554a2bfeded33a9c9496bd49fa527ad0aab1a0a",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "git_blob": "ba6fc9a69f3e6dfca01f3257d611d1a057def305",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "git_blob": "e6f2e89e07ab7c6968f54e2bd8163f966fc23c5d",
+      "sha256": "2f94facbacfaa6844c5dc58541a660fd29e1c42940a85b9412c9dab15568233c",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "git_blob": "4796f0492a9d04a8f779c29960240dff32ee0b60",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/ai_methodology/skills/physics-loop/references/long-running-execution.md",
+      "git_blob": "5d34822e714eafe2c2c58199b0dc4a5da6519a9d",
+      "sha256": "d48c676ab368b5fce8666081f15a251366c303550661427880218ef93cb427a6",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "git_blob": "cd4b0f2a9bf9b2bb20e2316993cc49f669430c0e",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "git_blob": "457507d252fb603e475805f674aaca9ff8ca849e",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "git_blob": "d440f11d85de995373cec5f929a8ca42748cf7e5",
+      "sha256": "a46a632cd2a7e392caf9b9c059440ab48b7dc4b73255323a748b1104596b8c1d",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "git_blob": "4eaecca68fb08f2089053cd4425d6589176aa9a2",
+      "sha256": "a0bfdaeefdce4c6206ba1da549a43735e0784861915769faf1b8c389c6969da8",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "git_blob": "7f46ba9028f7b047cf7589521d89b7492e25273c",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "git_blob": "04ea075224460de0223a1a0b22a68423c6df1a3a",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "git_blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "git_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "matches_frozen_manifest": true
+    },
+    {
+      "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "matches_frozen_manifest": true
+    }
+  ],
+  "all_match": true,
+  "moving_refs_check": "Not required and not used. Identity is tied to immutable commits and blobs, plus final report/receipt bytes.",
+  "meaning": "Metadata identity only; neither mathematical certification nor historical-read authentication.",
+  "scope": "No source or frozen finding was edited during packaging."
+}

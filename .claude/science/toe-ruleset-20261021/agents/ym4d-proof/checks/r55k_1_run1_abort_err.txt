@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/r55k_1_const.py", line 474, in <module>
+    o8, oinf, o1000, o100, o12 = obj(8), obj(None), obj(1000), obj(100), obj(12)
+                                 ^^^^^^
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/r55k_1_const.py", line 470, in obj
+    c = cut_of(q, cN)
+        ^^^^^^^^^^^^^
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/r55k_1_const.py", line 456, in cut_of
+    def cut_of(q, cN=2): return 1 / (Fr("3.31e7") * CD(q, cN) ** 2) / (2 * SQRT(H))
+                                                    ~~~~~~~~~~^^~~
+TypeError: unsupported operand type(s) for ** or pow(): 'I' and 'int'

@@ -1,0 +1,27 @@
+[POST-HOC, TF1-P2]  the C_err prefactor lever.  Run after tf1_out.txt was read.  NOT pre-registered.
+====================================================================================================
+  transcribed: C_p=34*sqrt(2)=48.0832  C_e=3.8e3  K/C_D=78.3  K_top/C_D=81.3  L=3  N=2
+  C_p(K^2+K_top^2)/C_D^2            = 612608   (3.691% of total)
+  4C_e[...]/C_D^2                   = 1.59828E+7   (96.32% of total)
+  C_err/C_D^2 (reconstructed)       = 1.65954E+7
+  REVIEW_SQ_S4 S4-16 l.364 states   = 1.655e7      ratio = 1.00274
+
+  shortfall in eta_flat        = 5.09665E+9  (9.707 decades of energy)
+  eta_flat ~ 1/C_err^2, so C_err must fall by a factor X = sqrt(shortfall) = 71390.8 (4.854 decades)
+  target: C_err/C_D^2 must fall from 1.65954E+7 to 232.459
+
+  HOW MUCH of that is reachable, term by term (each an IDEALISED limit, not a proposal):
+   (a) C_e -> 0 entirely (the whole 4C_e bracket deleted):
+       C_err/C_D^2 -> 612608, i.e. only 1.433 decades of the 4.854 needed
+   (b) with C_e -> 0, the residue is C_p(K^2+K_top^2). Solving C_p(k^2+k_top^2) = target for k,
+       holding k_top/k = 81.3/78.3:
+       K/C_D must fall from 78.3 to 1.525, a factor 51.34
+   (c) SQ.md Remark (a) l.206/l.224 says C_e and K are 'crude by orders of magnitude' and that
+       'optimisation could gain several orders: unclaimed'; h6 measured the MSG constant at 3.5
+       against the proven 66, a factor 18.9.
+       So the required package is: delete the C_e bracket AND improve K's coefficient by ~51.3.
+
+  The C_T lever, for comparison (tf1_out.txt): C_T = 5.288e12 against its own floor 4.4e12,
+  i.e. 0.080 decades of room, against the 4.854 decades the clause needs in C_err-equivalent terms.
+  Since C_err ~ C_D^2 ~ C_T^2, those 0.080 decades of C_T buy 0.160 decades of C_err.
+====================================================================================================

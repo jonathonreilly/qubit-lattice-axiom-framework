@@ -1,0 +1,8 @@
+{
+  "result": "failed freshness assertion; no final receipt was written",
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+  "inventory_sha256": "0c683d808c3a56b998e707bcc5ffd45d9c3dbec151d1a45bcf670ed6a50110b1",
+  "final_sha256": "39bb48832544126212437a0df873f38dcb48ea8da1c63b698816f6418f0c9fb7",
+  "diagnosis": "Coordinator updated header review bookkeeping. Complete initial-to-final PROOF diff inspected; consumed target/setting and normalized soft-kernel definitions are byte-identical. Read-inventory whole-file hash captured intermediate revision while its numeric section ranges described the earlier read; final read addendum binds exact consumed section bytes and all revision-specific ranges. No complete-file scientific review inferred.",
+  "resolution": "Explicit scoped freshness equality verified, not a weakened scientific check."
+}

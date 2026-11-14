@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-29T14:46:31.672655+00:00",
+  "base_commit": "8b38c6f7b802479f763bc995d96ee45fdcc03795",
+  "reason": "Fresh source-continuation reviewer identified the current-main audit-compatibility requirement for navigable Markdown dependency links. The parallel vertex note receives the same narrow packaging repair.",
+  "entries": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md",
+      "before_sha256": "0cb55655ec73f31dd8df4b6353b0d3f6345191579c38945819da881860e311d6",
+      "after_sha256": "ac985bb9b41a0d9d52ead7c2932df73e59c713c28c5c45f0629003552eee1243",
+      "resolved_local_markdown_dependency_links": 10
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_vertices_working.md",
+      "before_sha256": "8a7c87c9b737ee88372eb985189bcd0e25440986868cc8d92062b84f6cb92cd1",
+      "after_sha256": "aa16239e801d371c7242a342b339ed5dfeec8fa75f5dd8a3ac3a128a84989d56",
+      "resolved_local_markdown_dependency_links": 6
+    }
+  ],
+  "operational_notes": [
+    "First combined patch did not match the frozen vertex introductory sentence and made no changes; retried against inspected text.",
+    "The first link validator also matched mathematical bracket/parenthesis notation; restricted the dependency-path scan to the introduced .md/.json destinations. No incorrect record or commit was made."
+  ],
+  "scope": "Dependency links only; no equation, estimate, assumption or claim disposition changed. Separate independent reviews remain active."
+}

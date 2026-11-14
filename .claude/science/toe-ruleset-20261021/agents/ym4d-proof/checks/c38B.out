@@ -1,0 +1,8 @@
+B: geometry built  (0 s, RSS 75 MB)
+B T=4: vertex grid built (fibre residual 1.8e-14)  (17 s, RSS 259 MB)
+B T=4: N3(T_W) = 3.000000; N3(T_E) = 3.380437 (per slot-1 direction [3.380437, 3.380437, 3.380437, 3.380437]); Wilson part 0.515240, soft part 3.142821; R_3 = 1.126812; max imag 6.3e-18  (25 s, RSS 263 MB)
+B T=4: absolute-leg bound N3^abs(T_E) = 73.2067 (slots 71.7309, 73.9447, 73.9447); N3^abs/N3(T_W) = 24.4022  (25 s, RSS 263 MB)
+B T=5: vertex grid built (fibre residual 1.1e-14)  (104 s, RSS 732 MB)
+B T=5: N3(T_W) = 3.000003; N3(T_E) = 4.186756 (per slot-1 direction [4.186756, 4.186756, 4.186756, 4.186756]); Wilson part 0.762302, soft part 3.903834; R_3 = 1.395584; max imag 1.8e-19  (126 s, RSS 732 MB)
+B T=5: absolute-leg bound N3^abs(T_E) = 90.8260 (slots 89.0593, 91.7094, 91.7094); N3^abs/N3(T_W) = 30.2753  (126 s, RSS 732 MB)
+B: FAIL R_3(4) = 1.126812, R_3(5) = 1.395584

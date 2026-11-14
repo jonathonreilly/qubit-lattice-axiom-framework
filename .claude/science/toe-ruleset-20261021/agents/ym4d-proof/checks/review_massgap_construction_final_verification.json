@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-29T15:26:50.272674+00:00",
+  "receipt_sha256": "8a9cd34b62ed8c650f5d0a10946cd29b74ed9ced68292665c0765cec47a500bb",
+  "report_sha256": "8ab911c6e8705c086b0fd4e12930a7a66f8ea0ad03be2bb1bff5a55a62f3c9c1",
+  "hash_bound_artifacts_checked": 48,
+  "python_sources_syntax_checked": 13,
+  "json_artifacts_parsed": 19,
+  "local_report_links_verified": [
+    "MASS_GAP_CONSTRUCTION_ASTRA.md",
+    "checks/review_massgap_construction_mutation_results.json",
+    "checks/review_massgap_construction_fix_confirmation.json",
+    "checks/review_massgap_construction_precriteria.json",
+    "checks/review_massgap_construction_independent.py",
+    "checks/review_massgap_construction_independent_final.json",
+    "checks/review_massgap_construction_reads.json",
+    "checks/review_massgap_construction_receipt.json",
+    "checks/review_massgap_construction_final_reads.json"
+  ],
+  "report_trailing_whitespace": false,
+  "independent_result": {
+    "passed": 50,
+    "failed": 0,
+    "stderr_bytes": 0
+  },
+  "no_scientific_reexecution": "This validates frozen artifacts and syntax. The scientific executions remain the independently preserved original runs and repair replays."
+}

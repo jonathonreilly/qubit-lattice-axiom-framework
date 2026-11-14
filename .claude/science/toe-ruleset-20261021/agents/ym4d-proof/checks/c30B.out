@@ -1,0 +1,4 @@
+B1: max relative error 4.40e-15 -> PASS
+B2: max relative error 3.14e-15 -> PASS
+B3: max relative error 5.18e-13 -> PASS
+c30 B: PASS; time 0.5 s, peak RSS 0.09 GB

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "role": "Author analytic checks and exact provenance, not independent review or audit.",
+  "requested_configuration": "Coordinator-authorized Astra/max; backend configuration not independently attested.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_CUT_WHITE_ASSEMBLY_ASTRA.md",
+    "sha256": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+    "lines": 443
+  },
+  "source_last_authored_at_utc": "2026-10-30T12:12:21.800391+00:00",
+  "freeze_order": "The 443-line mathematical source and exact hash were announced to root before creating this package. It has remained byte-identical since that announcement. No earlier draft hash was announced as a freeze.",
+  "bounded_result": "BW10 supplies the actual fixed-center complex cut/white log; BW15-21 supply canonical real ordered (6,4) ORIGINAL-J jets at beta/2, absolute tensors at 3beta/8 and a small weighted bound with leading O(sigma p_Omega^3). BW11 preserves distinct frozen and transported physical prefactors.",
+  "author_analytic_checks": [
+    "BW1-3/9-11: actual same transported chart and top form, correct fr/tr sign, complete critical actions/determinants/kernel vacua/Haar/modes; no identification of the two coordinate critical points.",
+    "BW5-8: one common R and fixed rho, exact positive constraints, eta=xi and explicit white-compatible narrowing; marked constants computed before final radii, both pre-existing energy ledgers retained without respend.",
+    "BW14-18: exact scalar normalization/source subtraction; CW actual-V coefficient agreement rather than pointwise recentering; WR real Taylor/density construction; reversed exponential order and separate original-J factor u^-1.",
+    "BW19-21: 4D and 6L^4 complete input counts, individual Cauchy suprema, order-ten support polynomial with beta/8 loss; h/eta tends to zero for h=O(sigma), r_*=O(u), while unscaled smallness is not inferred.",
+    "Integrated product consumer uses only actual already-integrated coefficients, two beta/16 losses and Q<=beta/64. It does not supply the native mu+2 rate, retained fine jets or the interacting RGA14 estimate."
+  ],
+  "package": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_cut_white_assembly_read_manifest.json",
+      "sha256": "ea2d90de5b6c6070139d868e8c145991ff53e8a5af6ebfbd52403974b26c030c",
+      "lines": 108
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_cut_white_assembly_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "lines": 9
+    }
+  ],
+  "preservation_check": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/quadratic_coarse_return_receipt.json",
+    "sha256": "0624ea553f2d33e62467047ba7eb5f739180f1cb58f97012cb35b70319ff78d3",
+    "lines": 76,
+    "use": "All 20 prior protected source hashes enumerated in this receipt were rechecked unchanged, together with this unit’s exact inputs. This is mechanical preservation, not a new proof read."
+  },
+  "mechanical_checks": {
+    "equation_labels": "BW1-BW21 defined once, in order",
+    "fences": "balanced",
+    "trailing_whitespace": "none",
+    "relative_source_links": "all resolve",
+    "vocab": "report-only, zero violations",
+    "json": "parseable",
+    "source_sha256": "unchanged since announced freeze"
+  },
+  "independent_review": "A DIFFERENT fresh hostile source-first review was requested from root on the exact frozen source; no verdict claimed.",
+  "provisional_dependency": "CW747 separate review pending at this source freeze.",
+  "remaining_interfaces": "Purely rare nonlinear matching; STEP55 white-ball/Ward and native rate; retained fine/rough-boundary jets; separate G-minus-Omega/G^c histories; inherited reference laws, all-history/effective iteration, full physical reconstruction, non-free continuum existence and positive physical continuum mass gap.",
+  "scientific_numerical_experiments": [],
+  "operations": "Only BARE_CUT_WHITE_ASSEMBLY_ASTRA.md and checks/bare_cut_white_assembly_* authored; root owns integration/publication.",
+  "packaged_at_utc": "2026-10-30T12:14:42.420831+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-29T14:57:41.561522+00:00",
+  "manifest_sha256": "5b1321d6e0fbc11e1445736fbdc61aaf5bf4ca47fee9cef2ce72783c8551dbdb",
+  "verified_artifacts": 9,
+  "verified_pinned_sources": 22,
+  "seconds": 0.5669678749982268,
+  "exit_code": 0,
+  "stdout_exact_match": true,
+  "stderr_bytes": 0,
+  "summary": {
+    "failed": 0,
+    "negative_controls": 11,
+    "passed": 45
+  },
+  "stdout_sha256": "b0e4205e21a0f8758ac1474b922348cd738be4e49be150d31af33eac2e60eb1e",
+  "scope": "Coordinator reproduction of finite author controls only. First script/output preserved but not needlessly rerun; physical volume/cutoff-uniform infrared estimate remains absent."
+}

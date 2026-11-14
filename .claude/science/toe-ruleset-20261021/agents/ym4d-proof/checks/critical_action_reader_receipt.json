@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "role": "author; fresh independent review pending",
+  "source_sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+  "source_lines": 238,
+  "mathematical_text_frozen_before_packaging": true,
+  "records": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_ACTION_READER_ASTRA.md",
+      "sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+      "bytes": 12324
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_action_reader_author_checks.md",
+      "sha256": "a8a56133f3ad162095e9f9bcb892336b48c1fb45899fd2f50f84d73736a8d4d0",
+      "bytes": 3026
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_action_reader_read_manifest.json",
+      "sha256": "46331dea4ffd8f9568a3c03ef675145bfd008d374545ebb2dca8b75c67c0837f",
+      "bytes": 15243
+    }
+  ],
+  "packet_files_including_receipt": 4,
+  "bounded_result": "[F_epsilon(b)-F_epsilon(0)]/sigma^2 has complete original-reader coefficients on FU joint domain with norm <=(2k_M+k_B+3d_H)t_b^2/(2sigma^2), beta=(16R)^(-4)",
+  "full_lift_retained": "Individual original fine Wilson sources plus exact 4T^4 log z_(kappa u); see CA11--CA13",
+  "protected_unique_files_verified": 75,
+  "numerical_experiments": [],
+  "git_operations": 0,
+  "independent_review_status": "pending"
+}

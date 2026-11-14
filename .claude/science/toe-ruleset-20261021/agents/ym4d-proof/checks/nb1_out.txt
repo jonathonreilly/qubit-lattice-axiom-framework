@@ -1,0 +1,26 @@
+=== nb1: lattice sums of |x|^-s over Z^4 ===
+reference constants: 2*pi^2*ln2 = 13.682177 ; pi^2/2 = 4.934802
+
+--- s = 4 ---
+  S_4( 3) =      26.607295   (N =      424)
+  S_4( 6) =      40.139777   (N =     6576)
+  S_4(12) =      53.684560   (N =   102352)
+  S_4(24) =      67.367683   (N =  1638240)
+  delta_4( 3-> 6) =    13.532482   (ratio to 2pi^2 ln2 =   0.9891)
+  delta_4( 6->12) =    13.544783   (ratio to 2pi^2 ln2 =   0.9900)
+  delta_4(12->24) =    13.683123   (ratio to 2pi^2 ln2 =   1.0001)
+  band_ok=True  nondecay_ok=True  ->  PASSES nb1-A criterion
+
+--- s = 5 ---
+  S_5( 3) =      18.046988   (N =      424)
+  S_5( 6) =      21.264647   (N =     6576)
+  S_5(12) =      22.886542   (N =   102352)
+  S_5(24) =      23.708940   (N =  1638240)
+  delta_5( 3-> 6) =     3.217659   (ratio to 2pi^2 ln2 =   0.2352)
+  delta_5( 6->12) =     1.621895   (ratio to 2pi^2 ln2 =   0.1185)
+  delta_5(12->24) =     0.822398   (ratio to 2pi^2 ln2 =   0.0601)
+  band_ok=False  nondecay_ok=False  ->  FAILS nb1-A criterion
+
+--- nb1-C geometry sanity ---
+  N(24)/24^4 = 4.937789   target pi^2/2 = 4.934802   rel.dev = 0.0006
+  nb1-C: PASS

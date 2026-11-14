@@ -1,0 +1,96 @@
+==============================================================================
+BLOCK A -- telescope identities and beta-products
+==============================================================================
+  sum_{i<=200} 1/p_i            = 1.000000000000000000   (target 1)
+  sum_{i<=200} i/p_i            = 1.000000000000000000   (target 1)
+  sum_{i<=200} (i+1)2^-(i+1)    = 2.000000000000000000   (target 2)
+  A1 verdict: PASS
+
+  A2  prod_{i<i*} beta_i^{m/p_i},  beta_i = p_i - 1 = 2^{i+1} - 1
+    m=2: i*=1 -> 1 ; i*=4 -> 3.95227 ; i*=60 -> 6.629375484 ; bound 2^4 = 16
+          limit/bound ratio = 0.414336
+    m=4: i*=1 -> 1 ; i*=4 -> 15.6204 ; i*=60 -> 43.94861931 ; bound 2^8 = 256
+          limit/bound ratio = 0.171674
+    m=8: i*=1 -> 1 ; i*=4 -> 243.998 ; i*=60 -> 1931.481139 ; bound 2^16 = 65536
+          limit/bound ratio = 0.029472
+  A2 verdict: PASS
+
+==============================================================================
+BLOCK B -- radius schedules, F = R^2 prod d_i^{-2/p_i}
+==============================================================================
+  B2  written i* on R in [64,127]: set = [0] ; on R in [32,63]: set = [-1]
+  B2 verdict: FAIL  (R_0 = 64 performs one step at most; S4-6 reproduced)
+
+  B1  written schedule (budget R/8, dmin 4): max F over R in [64, 2^18]
+        argmax R = 127, F = 16129.0000000000  (target: R=128, F=2048)
+        R=64      i*=0   F=4096.000000
+        R=128     i*=1   F=2048.000000
+        R=129     i*=1   F=2064.000000
+        R=256     i*=2   F=1448.154688
+        R=1024    i*=4   F=1116.679918
+        R=65536   i*=10  F=1025.387233
+  B1 verdict: FAIL
+
+  B3  optimised schedule (budget R/2 - 4, gaps prop to 2^-i, dmin 12)
+        max F = 175.802817 at R = 79 (i* = 1, p_{i*} = 4)
+        R=32      i*=1   p_{i*}=4        F=85.333333
+        R=48      i*=1   p_{i*}=4        F=115.200000
+        R=64      i*=1   p_{i*}=4        F=146.285714
+        R=128     i*=2   p_{i*}=8        F=91.589344
+        R=256     i*=3   p_{i*}=16       F=75.742313
+        R=1024    i*=5   p_{i*}=64       F=66.633639
+        R=65536   i*=11  p_{i*}=4096     F=64.039789
+  B3 verdict: FAIL
+
+        smallest R with >=1 optimised step: 32  (trivial branch then gives C_T >= 1024)
+        smallest R with >=3 optimised steps: 176
+
+  B4  is d_i proportional to 2^-i optimal for fixed i* and budget?
+        i*=2: proportional gives 2.5980762114, best of 2000 random gives 2.5980762114
+        i*=3: proportional gives 5.3253306813, best of 2000 random gives 5.3253306813
+        i*=4: proportional gives 8.4293411173, best of 2000 random gives 8.4293411173
+        i*=5: proportional gives 11.1097569615, best of 2000 random gives 11.1097569615
+  B4 verdict: PASS
+
+==============================================================================
+BLOCK C -- assembly (REPORTED; inputs are SUPPLIED constants, see CONST_T.md)
+==============================================================================
+  local multiplicities: |N_3| = 7^4*6 = 14406, |N_3|^{3/4} = 1314.9
+                        |N_1| = 3^4*6 = 486,  |N_1|^{3/4} = 103.5
+
+  row                                       F   m     C1  gammaV   nbr^3/4  a           C_T
+  as written, N_3 maxima              16129.0   8   10.0   230.0    1314.9  2     7.673e+24
+  as written, N_1 maxima for V_s      16129.0   8   10.0   230.0     103.5  2     4.755e+22
+  + optimised schedule                  175.8   8   10.0   230.0     103.5  2     5.182e+20
+  + beta^2 Caccioppoli (m=4)            175.8   4   10.0   230.0     103.5  2     2.024e+18
+  + sharp a = 1                         175.8   4   10.0   230.0     103.5  1     9.448e+11
+  all three, C1=3 gammaV=50             175.8   4    3.0    50.0     103.5  1     6.162e+10
+
+  threshold from REVIEW_SQ_S4 S4-16: C_T <~ 1e13
+    as written, N_3 maxima             C_T = 7.673e+24     OVER 1e13
+    as written, N_1 maxima for V_s     C_T = 4.755e+22     OVER 1e13
+    + optimised schedule               C_T = 5.182e+20     OVER 1e13
+    + beta^2 Caccioppoli (m=4)         C_T = 2.024e+18     OVER 1e13
+    + sharp a = 1                      C_T = 9.448e+11     UNDER 1e13
+    all three, C1=3 gammaV=50          C_T = 6.162e+10     UNDER 1e13
+
+  sensitivity (row 2 as the base point; each factor varied alone)
+    base C_T = 4.755e+22
+    F            175.803->5.18e+20   16129->4.75e+22   2048->6.04e+21   16384->4.83e+22
+    m            2->1.16e+19   4->1.86e+20   8->4.75e+22
+    C1           1->4.75e+20   3->4.28e+21   10->4.75e+22   100->4.75e+24
+    gammaV       10->8.99e+19   50->2.25e+21   230->4.75e+22   1000->8.99e+23
+    nbr^{3/4}    3.83366->6.52e+19   103.509->4.75e+22   1314.94->7.67e+24
+    a            1->2.22e+16   2->4.75e+22
+
+==============================================================================
+VERDICT SUMMARY (pre-registered A1 A2 B1 B2 B3 B4)
+==============================================================================
+  A1 : PASS
+  A2 : PASS
+  B1 : FAIL
+  B2 : FAIL
+  B3 : FAIL
+  B4 : PASS
+  OVERALL : FAIL
+  C1 block is REPORTED, no pre-registered verdict.

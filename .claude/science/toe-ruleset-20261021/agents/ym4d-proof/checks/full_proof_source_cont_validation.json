@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-29T14:33:22.191624+00:00",
+  "scope": "Original frozen source-return continuation before fresh-review repairs",
+  "staged_paths_before_this_record": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_cont_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_cont_replay_01_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_cont_replay_01_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_cont_replay_ball_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_cont_replay_ball_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_return_cont_attempt01.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_return_cont_attempt01.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_return_cont_ball.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_return_cont_ball.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_return_cont_ball_results.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_return_cont_exact.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_return_cont_receipt.json"
+  ],
+  "staged_whitespace_exit": 0,
+  "vocabulary_files": 5,
+  "vocabulary_violations": 0,
+  "vocabulary_report_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+  "receipt_sha256": "4f00d2c21808de330606dfc02434d9b9b7fc566019325cc54d47f282529c6960",
+  "replay": "full_proof_source_cont_replay.json",
+  "open_review_finding": "Provisional complex-B analyticity sentence requires explicit restriction for arbitrary hard histories. Original source preserved before narrow repair.",
+  "limits": "Selected global-chart level-zero sectors only; full return, all histories/coarse fields, higher-level induction, existence and physical mass gap open."
+}

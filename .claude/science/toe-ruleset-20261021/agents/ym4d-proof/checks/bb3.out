@@ -1,0 +1,17 @@
+bb3 model: n=48 mu2=2.0 R=4 M_c=8 T_W=20 boxes=144 cubes=36 setup 0.1s
+B3-1 max|L P - (I - R)| = 7.772e-16  -> PASS
+B3-2 rel max|P(I-R)^-1 - L^-1| = 4.770e-15, ||R||_inf = 0.0524  -> PASS
+B3-3 s=1 identity rel err = 1.295e-15 (Neumann its 8, converged True)  -> PASS
+B3-4 split (s_sp=1.500): class-A change (i) 0.000e+00, (ii) 0.000e+00; control class-B change 1.484e+00  -> PASS
+B3-5 enlarged fixed point vs global: rel err = 2.427e-15 (converged True)  -> PASS
+B3-6 energy identity: sum_Q E_Q(1) = -1.806905771205e-01, E(x)-E(0) = -1.806905771205e-01, rel 0.000e+00  -> PASS
+B3-7 energy split: class-A change (i) 0.000e+00, (ii) 0.000e+00; control class-B change 3.789e-02  -> PASS
+VERDICT: ALL PASS
+time after verdicts 1.7s
+INFO mu2=1.0 R=4: ||R||_inf = 1.4801e-01, R*||R||_inf = 5.9204e-01
+INFO mu2=1.0 R=6: ||R||_inf = 4.0969e-02, R*||R||_inf = 2.4582e-01
+INFO mu2=1.0 R=8: ||R||_inf = 1.2147e-02, R*||R||_inf = 9.7176e-02
+INFO mu2=2.0 R=4: ||R||_inf = 5.2353e-02, R*||R||_inf = 2.0941e-01
+INFO mu2=2.0 R=6: ||R||_inf = 9.7719e-03, R*||R||_inf = 5.8632e-02
+INFO mu2=2.0 R=8: ||R||_inf = 1.9966e-03, R*||R||_inf = 1.5972e-02
+total time 2.3s

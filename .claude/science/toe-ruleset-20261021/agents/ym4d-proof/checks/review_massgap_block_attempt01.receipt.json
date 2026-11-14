@@ -1,0 +1,7 @@
+{
+  "returncode": 1,
+  "runtime_seconds": 0.01460719108581543,
+  "script_sha256": "3f9a69585887b9741ee48d77497aa48fff5648b05ee4abe2780cf39c6dc70fdd",
+  "stdout_bytes": 0,
+  "stderr": "  File \"/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt01.py\", line 174\n    wb=G[mul[np.repeat(np.arange(8),8),inv[np.tile(np.arange(8),8)]]],0]\n                                                                       ^\nSyntaxError: unmatched ']'\n"
+}

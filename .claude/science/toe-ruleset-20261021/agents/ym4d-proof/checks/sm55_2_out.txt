@@ -1,0 +1,17 @@
+K2_value_26/9 PASS
+K6_value_70/27 PASS
+T1_closed_forms_vs_enumeration PASS
+K3_leading_4n^8 PASS
+T2_corrected_bound_valid_and_n_uniform PASS
+T3_varF_bound_not_uniform PASS
+T4_VarJ_2n^4_CovFJ_70/27 PASS
+T4_VarJ_enumeration PASS
+Y1_decay_alone_fails FIRED
+Y2_pointwise_c_fails FIRED
+Y3_no_conditional_decay_detected FIRED
+Y4_wrong_fourth_moment_detected FIRED
+Var(X^2) = 26/9 ; Cov(F,J_1) = 70/27 ; ||E[F|X]-EF||_2 = 13*sqrt(2)/9
+Var F (A=n^2, M=n^4) = 4*n**8 + 344*n**4/9 + 12482/81
+Var J_1 = 2*n**4 + 86/9
+Y3 conditional covariances (shared block, M=1, A=1): [-10/3, -4, 42]
+VERDICT: PASS

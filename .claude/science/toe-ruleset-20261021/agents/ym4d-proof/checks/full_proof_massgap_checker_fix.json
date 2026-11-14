@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-29T15:13:40.173739+00:00",
+  "original_commit": "cdc877b0452bed2218e1cfdec79ef8fc2b4c27f5",
+  "finding": "Two actual cycle-transfer implementation mutations survived the original45 predicates; disconnected formula controls were insufficient. Original mutation evidence remains in the independent reviewer packet.",
+  "repair": "New coordinate-space Haar kernel from Gauss-Jacobi weights, character recurrence, raw convolution integrals divided by dimension, four-edge transport and actual magnetic factors. Compare actual implementation ratio and consistently scaled top eigenvalue; no pinned reviewer numeric input.",
+  "criteria": "mass_gap_construction_criteria.md item10, relative tolerance2e-9 declared before repaired run",
+  "checker_before_sha256": "526d1aa38d28e4adcb4676a535a0304195a24528c3538b61091955ae691d820c",
+  "checker_after_sha256": "f1ae35944486ac5b141fb7627ebdb629608af7b5ad095e268b45af86dcfbddbf",
+  "criteria_after_sha256": "8a5810b66863ae70aa2ce0275698eb58065a4a9d3a39d240ad885ddb0523110b",
+  "results_after_sha256": "a4753f4a617146147bf41524d335cb29214a7763454186454cff830231846a5a",
+  "summary": {
+    "failed": 0,
+    "negative_controls": 11,
+    "passed": 47
+  },
+  "mutations": [
+    {
+      "name": "power",
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_fix_mutant_power.py",
+      "source_sha256": "af295cead42e7ddca2432eb489e357f022209e5342425c5676d1d66ba1b39583",
+      "before": "trans=(mat*(r**4))@mat.T",
+      "after": "trans=(mat*r)@mat.T",
+      "exit_code": 1,
+      "failed_predicates": [
+        "cycle_coordinate_kernel_ratio",
+        "cycle_coordinate_kernel_top"
+      ],
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_fix_mutant_power.json",
+      "stdout_sha256": "e6f1af826697deed8b4a9137adb7888c3ce51b973c3a555e3ffff262defbb99f",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_fix_mutant_power.stderr",
+      "stderr_bytes": 0
+    },
+    {
+      "name": "dimension",
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_fix_mutant_dimension.py",
+      "source_sha256": "52068ca61f0219ce402a4a1f32e3ec803efcaf2cb0562f9803f71d2584e142e4",
+      "before": "r=iv(np.arange(1,D+1),beta)/iv(1,beta)",
+      "after": "r=np.arange(1,D+1)*iv(np.arange(1,D+1),beta)/iv(1,beta)",
+      "exit_code": 1,
+      "failed_predicates": [
+        "cycle_coordinate_kernel_ratio",
+        "cycle_coordinate_kernel_top"
+      ],
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_fix_mutant_dimension.json",
+      "stdout_sha256": "9944b40b3807f0f3ccd5977b602b2330b5f81a7be855637f75ae923acc6c870f",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_fix_mutant_dimension.stderr",
+      "stderr_bytes": 0
+    }
+  ],
+  "source_math_changed": false,
+  "same_context_confirmation": {
+    "utc": "2026-10-29T15:15:28.317884+00:00",
+    "reviewer": "/root/review_mass_gap_construction",
+    "result": "Complete affected diff and scaling confirmed; both formerly surviving mutations independently replayed, exit1 at the intended coordinate comparisons, byte-identical stdout.",
+    "record": "review_massgap_construction_fix_confirmation.json"
+  },
+  "limits": "Finite implementation verification only; no volume/cutoff-uniform physical estimate or MG row closure."
+}

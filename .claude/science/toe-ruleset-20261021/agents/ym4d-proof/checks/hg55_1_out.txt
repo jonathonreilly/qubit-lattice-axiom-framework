@@ -1,0 +1,8 @@
+contours per mu: 1944  max word length: 11 (p_L = 11)
+A1 (avg B2 == 0 exactly, direction-constant, 24 cases): PASS
+A2 (some single contour has B2 != 0, 24 cases): PASS
+A3 (BA-4 l1 bound, 24 cases): PASS  max lhs/bound (exact) = 674438/80310285
+A4 (eps^2 coeff == 0 in all 24; eps^3 coeff != 0 somewhere): PASS  [eps2 zero: True  cubic nonzero somewhere: True ]
+A5 (control: no y-average -> eps^2 coeff != 0 somewhere): FIRES
+A6 (avg letter sum == 3*xbar_mu, 24 cases): PASS
+OVERALL hg55_1: PASS

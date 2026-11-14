@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-10-29T21:27:51.350015+00:00",
+  "scope": "Adopt independently reviewed LGF into only its TSE55 scalar/free consumer.",
+  "base_commit": "88130072aa683af83562ecc78a64dcc71fe75c4c",
+  "author": "coordinator",
+  "review_status": "Affected independent review pending. REVIEW_LGF covers the library, not these new consumer edits.",
+  "source_inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LGF.md",
+      "sha256": "40ea604c79f17027129628bc8b31f5fd6209da21dded864bf45a422dad24505e"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_LGF.md",
+      "sha256": "d6c9b4f4352bc2693ffdcabfbfa375dfc05dfa584bdd826a6a9afd1ae7ea455b"
+    }
+  ],
+  "read_scope": "Complete605-line LGF and331-line REVIEW_LGF; TSE55 LGF paragraph, FREE, named input, inventory and claimed-output references. No new whole-TSE55 review. Also TSE55 \u00a71.2 support/weight conventions.",
+  "edited_file": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/TSE55.md",
+    "before_sha256": "d02cc8b265c20da5fc59812a59d68e12d3c9a550d9f9df0890db1c61a38f7340",
+    "after_sha256": "a894d1b2439a7b83311175c9e6e30f6fb52cc015a74c6be7e839be8192a7869a"
+  },
+  "changes": [
+    "Explicit graph/counting/Fourier/difference conventions.",
+    "Correct separate torus error orders and grouped image/alias prescription.",
+    "Exact quadratic free curvature and squared-kernel input.",
+    "Current LGF import/status references point to reviewed local library.",
+    "Make the FREE consumer range r<=T/4 explicit by increasing R_0, without changing its limit order or other inputs."
+  ],
+  "unchanged_scope": [
+    "Legacy independent review CODEX_REVIEW_TSE remains immutable.",
+    "FREE test-function sums and all other hypotheses remain separate.",
+    "PL-1L, H_int, full existence and physical continuum gap remain open."
+  ],
+  "numerical_checks": "None: analytic consumer matching and documentation only.",
+  "draft_clarification": "Before freezing, explicitly include the base Phi term in S_T and state the continuum zero-mean convention."
+}

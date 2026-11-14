@@ -1,0 +1,15 @@
+PASS X1(k=2) Lambda_ax left inverse; level-1 values independent of x_0
+PASS X2(k=2) seam identity rep(b) = loop sum along the hierarchical paths (all axis-0 links, 2 chains)
+PASS X4(k=2) pure-gauge chain: representative vanishes on every level-0 link
+INFO k=2 seam link (4, 4)->(5, 4): rep_own = 0, rep^c = 0, rep^c / L^(k-3) = 0
+PASS X1(k=3) Lambda_ax left inverse; level-1 values independent of x_0
+PASS X2(k=3) seam identity rep(b) = loop sum along the hierarchical paths (all axis-0 links, 2 chains)
+PASS X4(k=3) pure-gauge chain: representative vanishes on every level-0 link
+INFO k=3 seam link (14, 14)->(15, 14): rep_own = -2/729, rep^c = -2/27, rep^c / L^(k-3) = -2/27
+PASS X1(k=4) Lambda_ax left inverse; level-1 values independent of x_0
+PASS X2(k=4) seam identity rep(b) = loop sum along the hierarchical paths (all axis-0 links, 2 chains)
+PASS X4(k=4) pure-gauge chain: representative vanishes on every level-0 link
+INFO k=4 seam link (44, 44)->(45, 44): rep_own = -20/6561, rep^c = -20/81, rep^c / L^(k-3) = -20/243
+PASS X3' |rep^c(k=4)| >= (L/2)|rep^c(k=3)| > 0 | rep^c(3) = -2/27, rep^c(4) = -20/81, ratio = 10/3
+CONTROL FIRES XC1 order-(0,1)-only loop sum differs from the permutation-averaged one
+SUMMARY: 11 items, all ok = True

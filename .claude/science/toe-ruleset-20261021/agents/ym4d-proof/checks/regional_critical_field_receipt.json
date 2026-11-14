@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "role": "author packet; no independent verdict",
+  "source_first_frozen": true,
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+    "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+    "bytes": 31328,
+    "line_count": 592
+  },
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "bytes": 31328
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/regional_critical_field_author_checks.md",
+      "sha256": "5998fbebb33f9a2f3c6fc01ab6fe2077023d01401f3490f0e3c086f09a85476e",
+      "bytes": 5192
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/regional_critical_field_read_manifest.json",
+      "sha256": "ba7f68a8fee3de55474e439a2261558ac9fd5c5ae90e03ec0d7204c17879caec",
+      "bytes": 19611
+    }
+  ],
+  "verification": {
+    "source_sha256_unchanged": true,
+    "input_identities": 15,
+    "methodology_identities": 12,
+    "protected_predecessor_identities": 85,
+    "local_links": 8,
+    "equation_definition_labels": 27,
+    "mismatches": [],
+    "scientific_evidence": false
+  },
+  "review_required": "Fresh independent review of the frozen mathematical source and this compact packet.",
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "unit": "bare_coupling_remainder",
+  "source_freeze": {
+    "path": "BARE_COUPLING_REMAINDER_ASTRA.md",
+    "lines": 583,
+    "sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61"
+  },
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "retained_methodology_read_records": [
+    "checks/frozen_transported_chart_read_manifest.json",
+    "checks/weighted_return_jets_read_manifest.json"
+  ],
+  "methodology_note": "Same authorized continuous author task; pinned repository methodology/references retained. Actual AGENTS, PROCESS_LIGHT and installed physics-loop SKILL reread. No numerical science run.",
+  "entrypoint": {
+    "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/AGENTS.md",
+    "lines": 26,
+    "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0"
+  },
+  "process": {
+    "path": "PROCESS_LIGHT.md",
+    "lines": 11,
+    "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+  },
+  "local_sources": [
+    {
+      "path": "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "lines": 556,
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "read_coverage": "Retained BM read 54-120 and 250-430; fresh 54-120, 320-376 and 401-510. Bounded read, no full-source claim.",
+      "role": "Actual finite-u phase, fixed original-data domain, canonical critical branch, full two-tail covariance and prefactor."
+    },
+    {
+      "path": "NONLINEAR_READER_RETURN_ASTRA.md",
+      "lines": 713,
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "read_coverage": "Complete same-task read retained; this unit reread 1-345, 345-375, 375-600 and 600-713 in bounded pieces.",
+      "role": "Centered-ball identity; fixed-ceiling coefficient/parity estimates, cutoff and regulator dependence, density forests, complete-reader logarithm."
+    },
+    {
+      "path": "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "lines": 711,
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "read_coverage": "Complete same-task read retained; this unit reread 1-345, 345-460, 461-579 and 580-711.",
+      "role": "Exact side/corner identity, shifted patterns and scalar factorials, all four reader marks, side-only amplitude rescaling and connected regrouping."
+    },
+    {
+      "path": "SHRINKING_CHART_RETURN_ASTRA.md",
+      "lines": 247,
+      "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "read_coverage": "1-188, with overlapping bounded rereads recovering truncations; no full-source claim.",
+      "role": "SH1-SH7 parameter order and exact cancellation of inverse-sigma side costs; old white-cut distinction."
+    },
+    {
+      "path": "WEIGHTED_RETURN_JETS_ASTRA.md",
+      "lines": 937,
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "read_coverage": "Entire preceding author source retained; fresh 1-225 and 675-808, including WR38-WR42a.",
+      "role": "Actual real moving-center compact-return jets, exact original-cut/transported-chart identity, derivative units and original reader counts."
+    },
+    {
+      "path": "BARE_CUT_WHITE_ASSEMBLY_ASTRA.md",
+      "lines": 443,
+      "sha256": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+      "read_coverage": "1-105 retained bounded read; fresh 1-88.",
+      "role": "BW1-BW2 literal original-cut and transported original-a chart, top-form normalization and empty-stencil factors; no white comparison estimate imported."
+    },
+    {
+      "path": "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "lines": 597,
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "read_coverage": "Entire earlier author-task read retained; fresh 61-108.",
+      "role": "Actual interior-plaquette cut and its automatic validity inside the original-a chart."
+    },
+    {
+      "path": "REGIONAL_CHART_RETURN_ASTRA.md",
+      "lines": 510,
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "read_coverage": "Entire earlier same-task read retained; bounded 356-510 reread this unit.",
+      "role": "Whole-region chart/prefactor identification and actual shrinking remainder; not used as a regional compact derivative theorem."
+    },
+    {
+      "path": "UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "lines": 723,
+      "sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+      "read_coverage": "Prior same-task bounded read retained; fresh 42-86.",
+      "role": "UL2 plane-wave normalization only; no loop coefficient or all-depth conclusion imported."
+    },
+    {
+      "path": "LOCOP.md",
+      "lines": 601,
+      "sha256": "0295d071a60d0ba3abfa23e4722634c7c2ea54921423cd0451aec7381e2c9253",
+      "read_coverage": "Prior same-task extraction read retained; fresh 138-174 and 294-312.",
+      "role": "Gauge/analytic-symbol diagnostic and original-coordinate marginal convention; required moment bound rebuilt in this unit."
+    },
+    {
+      "path": "SPURION.md",
+      "lines": 597,
+      "sha256": "8474bec9faca8b0d9a1318846088e26cf47a06f89748236c8d440bc0ab046667",
+      "read_coverage": "Prior same-task bounded read retained; fresh 314-341.",
+      "role": "Scope of the Ward/mass diagnostic and need for a complete invariant integral; proof rebuilt here."
+    },
+    {
+      "path": "INTERACTING_SELECTED_CORE_ASTRA.md",
+      "lines": 790,
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "read_coverage": "Retained BM read 1-342 and 586-732; fresh heading index and 476-544. The intervening nonlinear-core proof is not imported; no full-source claim.",
+      "role": "Exploratory selected-cube/ball normalization check only; its interacting theorem and prefactor matching are not imported."
+    },
+    {
+      "path": "WHITE_SECTOR_MATCHING_ASTRA.md",
+      "lines": 631,
+      "sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+      "read_coverage": "1-155 bounded read retained this unit.",
+      "role": "Exploratory distinction between supplied scalar cube and original link balls; no matching estimate imported."
+    },
+    {
+      "path": "COMPLEX_WHITE_SECTOR_ASTRA.md",
+      "lines": 747,
+      "sha256": "fb72d33bddb727e85548ad96f0e45585cf06254190aa182008e80aa3fbbc5a3c",
+      "read_coverage": "Heading/formula index only this unit; no new full-source read claim.",
+      "role": "Exploratory check of its leading sigma p^3 bound, not a premise for the remainder theorem."
+    },
+    {
+      "path": "BARE_COUPLING_MATCH_ASTRA.md",
+      "lines": 670,
+      "sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff",
+      "read_coverage": "Entire preceding author source retained; bounded 1-110 and 351-410 reread.",
+      "role": "Separate frozen producer UNDER REVIEW. Definitions cross-checked only; no new BM conclusion is a premise."
+    }
+  ],
+  "primary_literature": [
+    {
+      "url": "https://arxiv.org/html/1609.01747v1",
+      "read_scope": "Abstract/introduction and HTML 268-329, including (21)-(25), determinant, Stokes cylinder and both residual pieces.",
+      "mapping": "Feldman-Knorrer-Trubowitz bosonic model, incomplete full-error proof explicitly disclosed by the source. No theorem imported into SU(N) gauge theory."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1108.1335",
+      "read_scope": "Abstract/introduction, section 4.1 opening, section 4.6 Lemma 21, Appendix B Theorem 27 and beginning of its proof.",
+      "mapping": "Dimock scalar phi4_3 application and ultralocal cluster theorem; positive-decay/macro-polymer hypotheses differ. Actual density, reader and factorial estimates come from NR/SN."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1308.1547",
+      "read_scope": "Abstract, section 2.2 (2.9)-(2.11) with analytic domain/convergence hypotheses; bounded section 3.2 parity passage.",
+      "mapping": "Temme scalar Laplace/parity antecedent only; no uniform volume, reader, or hard-boundary theorem imported."
+    }
+  ],
+  "truncation_policy": "Truncated or lost tool output was not counted as an additional complete read. Relevant missing SN and NR portions were reissued in bounded calls; exploratory coverage remains explicitly partial."
+}

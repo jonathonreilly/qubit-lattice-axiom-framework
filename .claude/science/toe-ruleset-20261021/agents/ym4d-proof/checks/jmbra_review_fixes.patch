@@ -1,0 +1,78 @@
+--- JMBRA.md@cc583e9
++++ JMBRA.md@revised
+@@ -500,6 +500,34 @@
+ does not price rho_h. A TC estimate or an actual consistent effective
+ action construction is still required before inserting tau into (A23).
+ 
++**PROVEN — the complete actual quotient retains bulk source response.**
++At zero source and fixed real V, normalize the positive integrand defining
++R_h to nu_(h,V). Differentiating its finite integral gives
++
++    partial_(epsilon_p) log Q_h |_(epsilon=0)
++                         =-u_0 E_(nu_(h,V)) s_p,         (A23b)
++
++because Z_A has no original coefficient sources. For RD3's specified
++two-block history this derivative is strictly negative also at sufficiently
++distant original plaquettes p. To verify the positivity premise directly,
++put one interior g mark at coordinates (1,1,1,1) in each of its two
++adjacent blocks, and identity elsewhere. With cut one, only those blocks
++are bad; their size two exceeds the history's size-success threshold one,
++independently of U_1. Link perturbations smaller than 1/16 change every
++plaquette by less than 1/4 and preserve that complete failure list.
++On a distant plaquette perturb one unmarked link to
++diag(exp(i theta),exp(-i theta),1,...,1) for a sufficiently small nonzero
++theta. Then s_p=2(1-cos theta)/N>0, and an open subcap retains this strict
++inequality and the history. Positive kernels give positive mass to that
++subcap at every fixed real V, proving the strict sign in (A23b).
++
++Thus the COMPLETE log Q_h cannot have all its source supports confined to
++a fixed finite collar of the failed core with no bulk/source remainder:
++such a representation would have zero derivative at p. A matched boundary
++expansion may retain that remainder separately, exactly as it must retain
++the inherited-versus-bare comparison. This finite support test gives no
++uniform lower bound, spatial-decay obstruction or source-radius theorem.
++
+ ## 7. Common complex reference: the exact finite result and its limit
+ 
+ **PROVEN — a common finite germ for (A2).** Fix real Vbar and write
+@@ -576,6 +604,9 @@
+ handle its complement. The exterior action can also provide an extra
+ charge; no claim is made that it cannot. Enlarging the geometrical support
+ without allocating that action is not such a charge.
++The singleton belongs to the final n<n_0 return class when n_0>=2;
++if n_0=1 that class is empty. This final price cutoff is distinct from
++the local size-success threshold used in the completion predicate.
+ 
+ **PROVEN — exact return partition, OPEN — its estimates.** For each bad-set
+ sector, sort its connected components by n<n_0 or n>=n_0, and integrate
+@@ -610,9 +641,15 @@
+ u^d e^(-a_0 u)<= [d/(e(a_0-a_eff))]^d e^(-a_eff u),
+ by maximizing d log u-(a_0-a_eff)u. For d=0 use constant one. No spent
+ price is reused when choosing n_0. A small unreturned failure of size n
+-does not meet (A27)'s lower-size premise; an additional per-depth exponent
+-lambda_r would need n a_eff beta_-+lambda_r/log L>4+c_B with a strict
+-uniform margin if its extra weight is e^(-lambda_r r).
++does not meet (A27)'s lower-size premise. A sufficient geometric-depth
++condition for an extra weight exp(-lambda_r r) is
++n a_eff beta_-+lambda_r/log L>4+c_B with a strict uniform margin.
++Nongeometric summable corrections can also make the depth sum converge:
++put c=(4+c_B-n a_eff beta_-)log L and, for r>=1,
++lambda_r=c+2log(r+1)/r. The combined majorant is then proportional to
++(r+1)^(-2), whose sum converges, while the margin tends to zero.
++Its convergence follows, for example, by grouping r in dyadic intervals:
++the interval [2^k,2^(k+1)) contributes at most 2^(-k).
+ 
+ For a sublinear net price q_net(u)~c u^delta, delta<1, a fixed n_0 has
+ no such guarantee. A variable cutoff satisfying
+@@ -698,8 +735,9 @@
+ estimates count all such readers rather than invoking an active norm.
+ 
+ **N5.** (A19) is a one-kernel-family inference diagnostic; (A20) a finite
+-complex-measure diagnostic; (A26) an actual one-block legal-history witness;
+-(A24) a finite-lattice sufficient-domain estimate. None proves a
++complex-measure diagnostic; (A23b) a finite actual bulk-source support test;
++(A26) an actual one-block legal-history witness; (A24) a finite-lattice
++sufficient-domain estimate. None proves a
+ modewise, continuum, physical-spectrum or all-route obstruction. No
+ numerical result or unexecuted check is reported as passed.
+ 

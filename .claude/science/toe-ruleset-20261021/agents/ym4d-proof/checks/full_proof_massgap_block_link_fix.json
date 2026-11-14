@@ -1,0 +1,20 @@
+{
+  "recorded_utc": "2026-10-29T16:44:31.409525+00:00",
+  "original_commit": "47a916398fb58231d809695485812faf25c70ce9",
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+  "original_sha256": "f75e8cfc6f9e4310a9ba78ce7d8d53a6c729f4cac10599b430fb9234403c8d25",
+  "repaired_sha256": "0cdbfd18a97f6240b07f4a6047073fe6dc2abe2949af9ccb6f6bd191498bae3d",
+  "scope": "Reviewer-requested portable dependency link and distinguishing wording only; no mathematical statement or formula changes",
+  "old_text": "The installed\n[physics-loop skill](/Users/jonBridger/.codex/skills/physics-loop/SKILL.md)\nand its already-read same-revision references govern this continuation.",
+  "new_text": "The installed physics-loop skill and its already-read same-revision\nreferences govern this continuation; the portable\n[repository entry](../../../../../docs/ai_methodology/skills/physics-loop/SKILL.md)\nis linked for repository readers.",
+  "repository_entry": {
+    "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+    "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0"
+  },
+  "installed_skill": {
+    "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+    "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+  },
+  "original_author_freeze": "Original source, manifest and receipt remain valid at the pinned original commit; they are not rewritten",
+  "review_status": "Sent for narrow same-context confirmation; independent mathematical review remains in progress"
+}

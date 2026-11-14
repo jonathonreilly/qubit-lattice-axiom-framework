@@ -1,0 +1,11 @@
+x11b: complete axial (comb) gauge vs covariant (xi = 1); kappa := coefficient of g^4 N(N^2-1)
+  T=6: non-tree links 3889, CG residual (last) 9.9e-14
+T= 6: tree gauge kappa_PO=-0.000e+00 kappa_V=+0.012679318 | covariant kappa_PO=+0.008266598 kappa_V=+0.004532697 total=+0.012799294 | rel diff 9.37e-03
+  T=8: non-tree links 12289, CG residual (last) 1.1e-13
+T= 8: tree gauge kappa_PO=-0.000e+00 kappa_V=+0.012766985 | covariant kappa_PO=+0.008268610 kappa_V=+0.004550380 total=+0.012818990 | rel diff 4.06e-03
+  T=12: non-tree links 62209, CG residual (last) 1.7e-13
+T=12: tree gauge kappa_PO=-0.000e+00 kappa_V=+0.012810072 | covariant kappa_PO=+0.008268133 kappa_V=+0.004557408 total=+0.012825540 | rel diff 1.21e-03
+F1 (kappa_PO^tree = 0) PASS; F2 (tree total = covariant total within 5%) PASS
+D' e(1e-2)=7.722e-01 e(1e-3)=7.738e-02 e(1e-4)=7.740e-03 ratios 0.100, 0.100 PASS
+OVERALL: F1 PASS, F2 PASS, D' PASS
+wall 4.2 s; peak RSS 122 MB

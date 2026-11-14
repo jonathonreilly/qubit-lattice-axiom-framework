@@ -1,0 +1,5 @@
+B: Neumann gap 1.000000000000; lambda_min(P_res Lap | Lambda_res) = 1.0000000000 (dim 1264); min ||P_res d* d lambda||^2/||d lambda||^2 = 8.966574; max |h(d lambda)| = 6.30e-16
+B1 PASS
+B2 PASS
+B3 PASS
+Part B: PASS

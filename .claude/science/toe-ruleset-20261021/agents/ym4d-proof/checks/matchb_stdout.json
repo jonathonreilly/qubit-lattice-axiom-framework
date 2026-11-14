@@ -1,0 +1,36 @@
+{
+  "checks": [],
+  "criteria_sha256": "420b42278b5d36595c6a9f94f3a329f8d5acfa7bc17e1adfec4b292a53101473",
+  "error": "RuntimeError('free/available memory < 30%')",
+  "proof_sha256": "9f5fb403665e154c54427b2cfca25e2387357a2ea96b4706bb532a36352b7e54",
+  "resources": [
+    {
+      "available_fraction": 0.2461223602294922,
+      "available_pages": 258078,
+      "free_fraction": 0.5,
+      "load": [
+        2.01904296875,
+        1.94091796875,
+        2.04833984375
+      ],
+      "memory_method": "memory_pressure plus (free-speculative+inactive) pages / physical memory",
+      "memory_status": "MEASURED",
+      "nice": 20,
+      "page_size": 16384,
+      "peak_rss_bytes": 22167552,
+      "physical_bytes": 17179869184,
+      "threads": {
+        "BLIS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1"
+      }
+    }
+  ],
+  "runner_sha256": "71792fd4f2318154f9efab7e24486298fad278d11bc5faaa119038229f8d8da7",
+  "scope": "Finite rational diagnostics only; not actual gauge-history bounds or regeneration.",
+  "seconds": 0.009131667029578239,
+  "status": "NOT RUN"
+}

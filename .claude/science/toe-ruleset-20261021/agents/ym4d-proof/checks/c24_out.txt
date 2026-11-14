@@ -1,0 +1,10 @@
+d=2 T=4 n=3: 288 links, 16 blocks; lambda_min(O_D on H_0) = 1.00000, lambda_min(O_FP on H_0) = 0.34876, ratio 0.3488  (0 s, RSS 63 MB)
+d=2 T=4 n=5: 800 links, 16 blocks; lambda_min(O_D on H_0) = 1.00000, lambda_min(O_FP on H_0) = 0.28754, ratio 0.2875  (0 s, RSS 87 MB)
+d=2 T=4 n=7: 1568 links, 16 blocks; lambda_min(O_D on H_0) = 1.00000, lambda_min(O_FP on H_0) = 0.27134, ratio 0.2713  (0 s, RSS 145 MB)
+d=2 T=4 n=9: 2592 links, 16 blocks; lambda_min(O_D on H_0) = 1.00000, lambda_min(O_FP on H_0) = 0.26544, ratio 0.2654  (1 s, RSS 292 MB)
+d=3 T=3 n=3: 2187 links, 27 blocks; lambda_min(O_D on H_0) = 1.00000, lambda_min(O_FP on H_0) = 0.42615, ratio 0.4261  (1 s, RSS 292 MB)
+d=3 T=3 n=5: 10125 links, 27 blocks; lambda_min(O_D on H_0) = 1.00000, lambda_min(O_FP on H_0) = 0.36531, ratio 0.3653  (155 s, RSS 1685 MB)
+d=4 T=2 n=3: 5184 links, 16 blocks; lambda_min(O_D on H_0) = 1.00000, lambda_min(O_FP on H_0) = 0.35864, ratio 0.3586  (19 s, RSS 1685 MB)
+V1 lambda_min(O_D) >= 1/5 at every size: PASS
+Q1 lambda_min(O_FP) > 1e-8 at every size: PASS
+c24: VALID; time 177 s, peak RSS 1685 MB

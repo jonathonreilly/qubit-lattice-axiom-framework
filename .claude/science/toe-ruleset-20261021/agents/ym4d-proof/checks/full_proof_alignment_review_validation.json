@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-29T14:04:58.345539+00:00",
+  "scope": "Frozen independent alignment review and coordinator reproduction",
+  "source_checkpoint": "79e64443f23f4874e1b4646eae5bde8677195a12",
+  "comparison_base": "9761471ab46e659ce856e2b9c7c10fef2b06cf5c",
+  "whitespace_validation": {
+    "full_diff_exit": 2,
+    "full_diff_diagnostic": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RECOVERY_ALIGNMENT_ASTRA.md:173: new blank line at EOF.\n",
+    "other_paths_exit": 0,
+    "frozen_exclusion": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RECOVERY_ALIGNMENT_ASTRA.md",
+    "reason": "Preserve the independently frozen 173-line report and its receipt hashes byte-for-byte; its final blank line is a formatting-only exception."
+  },
+  "operational_failure": "The initial staging script halted on the frozen report EOF blank. The following shell line still committed and pushed because the command sequence did not use fail-fast handling. This record preserves that failure; all later commit drivers execute dependent subprocesses with check=True. No full whitespace PASS is claimed for this checkpoint.",
+  "vocabulary_lint_files": 6,
+  "vocabulary_lint_violations": 0,
+  "vocab_report_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+  "review_report_sha256": "bad865a1491447ddf97f4afccbfa3a6992b91b698288a583f34de7b9d5991e82",
+  "review_receipt_sha256": "ce6a7c3383d7c792036ba489e00b4671910d4df9bb0d60d5108c9c7eb8c75908",
+  "replay_record": "full_proof_alignment_review_replay.json",
+  "limits": "Conditional bounded unit only. NC(log), weighted/global interfaces, full existence and physical mass gap remain open."
+}

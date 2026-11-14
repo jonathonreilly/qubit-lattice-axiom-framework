@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "scope": "mechanical identities only; no scientific experiment or independent proof verdict",
+  "source_sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+  "source_line_count": 624,
+  "input_identities_matched": 10,
+  "protected_ps_pc_fu_files_matched": 33,
+  "prior_frozen_receipts_verified": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_receipt.json",
+      "sha256": "818e4790a5ba9f2e1d49e4ddcd3f232f811e7c6ad6c6301496e9b12ccdee495c",
+      "declared_records_checked": 4
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/positive_reader_covariance_receipt.json",
+      "sha256": "e832c7adc23448a45f714cd338216326da9e827fcb5210763b3ef6e8ff8340bf",
+      "declared_records_checked": 5
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_u_critical_field_receipt.json",
+      "sha256": "19615ba207be2205cc29aa804e057000f301a5bd246be76cf3270ef4f467ca52",
+      "declared_records_checked": 5
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_positive_reader_covariance_receipt.json",
+      "sha256": "785e69f2a3789b6e5cea83887b4d8a7dd68e412b6b42f5e4fffe947e5df9603e",
+      "declared_records_checked": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_receipt.json",
+      "sha256": "79c8dcca2c6e377c0b3639ab47c9b46e22be8f2bfd0f9915c96cff6654c5784b",
+      "declared_records_checked": 0
+    }
+  ],
+  "methodology_identities_matched": 12,
+  "local_source_links_resolved": [
+    "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+    "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+    "INTERACTING_SELECTED_CORE_ASTRA.md",
+    "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+    "REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md"
+  ],
+  "mathematical_source_unchanged_since_prepackaging_freeze": true,
+  "all_declared_checks_matched": true,
+  "numerical_experiments": [],
+  "mechanical_failures_and_repairs": [
+    {
+      "stage": "first read-only packet verifier execution",
+      "result": "failed before validation with FileNotFoundError",
+      "cause": "repository root used parents[5], resolving .claude/.claude in input paths",
+      "repair": "use parents[6]; mathematical source and protected files unchanged",
+      "classification": "mechanical packaging failure, not a numerical scientific experiment"
+    }
+  ]
+}

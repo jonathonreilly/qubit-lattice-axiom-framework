@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-29T21:53:41.117531+00:00",
+  "kind": "mechanical packaging failure, not a mathematical predicate",
+  "stage": "local Markdown-link check after draft receipt write",
+  "failed_output": "AssertionError: ['V']",
+  "cause": "Naive link regex treated the indented formula Z_F^epsilon[E;R_out](V) as a Markdown link",
+  "repair": "Exclude CommonMark indented code lines and inline code from link scanning; source and numerical evidence unchanged",
+  "draft_receipt_sha256": "319e44fbf87a409956ffe637b7432e69802516fa3b1e85213487601eef0ea590",
+  "not_a_frozen_handoff": "No author freeze was announced before this validation failure"
+}

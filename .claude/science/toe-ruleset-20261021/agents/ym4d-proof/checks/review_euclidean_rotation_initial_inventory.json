@@ -1,0 +1,93 @@
+{
+  "freeze_sha256": "bbab37ecfaffbed97ef5077f5aee3242b09c2cd95d3387f89ea6087455ae17c4",
+  "all_17_match": true,
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/EUCLIDEAN_ROTATION_IMPORT_ASTRA.md",
+      "matches": true,
+      "sha256": "71e3ea5e66bc694cee172ab1348594a9645b06df92b3e33b8633cd39c725208e"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt01.py",
+      "matches": true,
+      "sha256": "e6bc4936aab9b85cb7b1d33e24457d9a626c8dca8a8adc32e3c5ec8a81fe5de9"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt01.receipt.json",
+      "matches": true,
+      "sha256": "8b0b3f2423fb57f5ca33cd97b8fcfa199b36240839e37ca563781a2030854ed5"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt01.stderr.txt",
+      "matches": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt01.stdout.json",
+      "matches": true,
+      "sha256": "9dba726dcb6234397f95bb267dc88a0c84adf39daeb3b7dfc83caa87509479c2"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt02.py",
+      "matches": true,
+      "sha256": "f5a9d71954db53d8e68de86c8b5ee8ae39df0bd3af6557b798f9b4ad7d148cb9"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt02.receipt.json",
+      "matches": true,
+      "sha256": "af81b3a9948b8287c30ffc77684f48d9f4bd036dfbd0ccdb2ed928e26a7d5c4d"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt02.stderr.txt",
+      "matches": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt02.stdout.json",
+      "matches": true,
+      "sha256": "fb8396b5a079dd8bf23b50cb12005654f138103871144de3dcafff3735201dab"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt03.receipt.json",
+      "matches": true,
+      "sha256": "da7b039e988229216bb5ee84f7559dbd1ee574d5f6a3ffd6ad0f10323c15b9b0"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt03.stderr.txt",
+      "matches": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt03.stdout.json",
+      "matches": true,
+      "sha256": "80d04781f93107f134d2b8625e86cc9567431132240a5a5c344865a6d5bfa6ad"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_criteria.md",
+      "matches": true,
+      "sha256": "59f486df376c53d9c48e948a304fe5ad215a9390631092b9ad70377e750680b5"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_exact.py",
+      "matches": true,
+      "sha256": "7af6babaaaa29e89c0562896f30efa8da45e09a1e0c3a53ba1d9f2567b193cb0"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_sources.json",
+      "matches": true,
+      "sha256": "f3fc54c975b8609c60025b344b30155d8497733676efaa8c4ac4f8fda0ebbb1d"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_validation.json",
+      "matches": true,
+      "sha256": "88d6ff9e5af45912f66d1305d8bd27fedc8e672b593ad20c0eb6c20bbeb615f1"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_vocab.json",
+      "matches": true,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    }
+  ],
+  "original_source_copy": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_original_source.md",
+  "head": "cb0135f6600ac1f9397fb798228d7da40dcb403b"
+}

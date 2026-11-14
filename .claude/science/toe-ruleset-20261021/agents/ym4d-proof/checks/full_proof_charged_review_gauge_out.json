@@ -1,0 +1,94 @@
+{
+  "scope": "post-author-exposure gauge/counting supplement",
+  "checks": [
+    {
+      "name": "supplement_linear_stationary",
+      "error": 1.3697898898051102e-14,
+      "scale": 0.4014183408607923,
+      "threshold": 5.014183408607923e-09,
+      "pass_": true
+    },
+    {
+      "name": "rootfixed_gauge_null_D",
+      "error": 8.951195751777482e-15,
+      "scale": 61.823897553495975,
+      "threshold": 6.192389755349597e-07,
+      "pass_": true
+    },
+    {
+      "name": "source_annihilates_rootfixed_gauge",
+      "error": 6.800116025829084e-16,
+      "scale": 17.09189664181235,
+      "threshold": 1.7191896641812352e-07,
+      "pass_": true
+    },
+    {
+      "name": "Moore_Penrose_solution_orthogonal_to_gauge",
+      "error": 2.55351295663786e-15,
+      "scale": 205.9515815918875,
+      "threshold": 2.060515815918875e-06,
+      "pass_": true
+    },
+    {
+      "name": "full_hidden_inverse_on_null_mutation",
+      "witness": 61.823897553495975,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "literal_counting_adjoint",
+      "error": 0.0,
+      "scale": 0.2936800460053992,
+      "threshold": 3.9368004600539924e-09,
+      "pass_": true
+    },
+    {
+      "name": "density_rescaled_adjoint_mutation",
+      "witness": 0.29005436642508564,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "constant_harmonic_curl_zero",
+      "error": 4.8696799496728325e-15,
+      "scale": 57.34830701910868,
+      "threshold": 5.744830701910868e-07,
+      "pass_": true
+    },
+    {
+      "name": "constant_harmonic_Q_is_L",
+      "error": 1.9076946434564262e-14,
+      "scale": 19.116102339702895,
+      "threshold": 1.9216102339702896e-07,
+      "pass_": true
+    },
+    {
+      "name": "dropping_harmonic_hidden_soft_cost",
+      "witness": 17.097961718567362,
+      "floor": 1e-07,
+      "pass_": true
+    }
+  ],
+  "passed": 10,
+  "total": 10,
+  "linear_solver": [
+    {
+      "stop": 2,
+      "iterations": 8,
+      "normr": 0.40645038064409345,
+      "normar": 8.299857580988063e-15
+    },
+    {
+      "stop": 2,
+      "iterations": 8,
+      "normr": 0.4494322500448622,
+      "normar": 7.423802681166323e-15
+    },
+    {
+      "stop": 2,
+      "iterations": 8,
+      "normr": 0.44377155239672944,
+      "normar": 6.669114281474497e-15
+    }
+  ]
+}

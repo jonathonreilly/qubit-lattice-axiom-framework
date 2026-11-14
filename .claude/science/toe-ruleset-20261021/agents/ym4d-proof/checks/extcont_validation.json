@@ -1,0 +1,151 @@
+{
+  "time_utc": "2026-10-30T09:32:02Z",
+  "status": "PASS",
+  "preexisting_files_unchanged": 3902,
+  "changed": [],
+  "missing": [],
+  "forbidden_additions": [],
+  "markdown_links_and_tables": "PASS",
+  "checker_ast": "PASS",
+  "receipt_consistency": "PASS",
+  "finite_check_groups_passed": 5,
+  "independent_review": "LAND; fresh-context same-family; repaired conditional q=4 scope",
+  "actual_model_closure": "OPEN",
+  "criteria_mtime_precedes_checker": true,
+  "artifact_sha256": {
+    "EXTCONT.md": "b10015bbd6be5fac97fd636fdc79f665800fe9921651575b9d03b0167b534b6e",
+    "EXTCONT_LOG.md": "cdeba4f7d1baf43997fda150274f96890e49a5c867130c519c43c00cf503126a",
+    "checks/extcont_check.py": "28ee2368d79bd813cb3ddb96b1294c104e4cd6605531e95436f6edc7350d9975",
+    "checks/extcont_criteria.md": "dad72c028c2776a9daddda0515ddac6b29905a859743959f9e71ae72004989f2",
+    "checks/extcont_inventory_before.json": "88eeb7b8cc984a5b27dabd641af8b0698312b0dc312a7fd5b9307bdeff2482a5",
+    "checks/extcont_preservation.json": "5b077bbd75e048f51e61002343b6a920c82e91c475e2924d5f68f23e3f0cf2bd",
+    "checks/extcont_result.json": "a2c6d25aaba712ebaf44fffb29888d54d36c4b41adcf642dfa64cdc3c963b437",
+    "checks/extcont_review.md": "1e158f70d37d15e3ade78e636b75b0871e6a199ce87e80f52fc0c8cc039c9471",
+    "checks/extcont_sources.json": "b851d561f3c752b74a403ca355163dc2010977b42c4cb02cd6ad928f3ca61caa",
+    "checks/extcont_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "checks/extcont_stdout.json": "a2c6d25aaba712ebaf44fffb29888d54d36c4b41adcf642dfa64cdc3c963b437"
+  },
+  "resources": [
+    {
+      "load": [
+        1.73974609375,
+        2.0439453125,
+        2.02978515625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 24068096,
+      "nice": 20
+    },
+    {
+      "load": [
+        1.73974609375,
+        2.0439453125,
+        2.02978515625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 24395776,
+      "nice": 20
+    },
+    {
+      "load": [
+        1.73974609375,
+        2.0439453125,
+        2.02978515625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 26902528,
+      "nice": 20
+    },
+    {
+      "load": [
+        1.73974609375,
+        2.0439453125,
+        2.02978515625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 26918912,
+      "nice": 20
+    },
+    {
+      "load": [
+        1.73974609375,
+        2.0439453125,
+        2.02978515625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 27049984,
+      "nice": 20
+    },
+    {
+      "load": [
+        1.73974609375,
+        2.0439453125,
+        2.02978515625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 27082752,
+      "nice": 20
+    },
+    {
+      "load": [
+        1.73974609375,
+        2.0439453125,
+        2.02978515625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 27197440,
+      "nice": 20
+    },
+    {
+      "load": [
+        1.73974609375,
+        2.0439453125,
+        2.02978515625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 27246592,
+      "nice": 20
+    },
+    {
+      "load": [
+        1.73974609375,
+        2.0439453125,
+        2.02978515625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 27262976,
+      "nice": 20
+    },
+    {
+      "load": [
+        1.73974609375,
+        2.0439453125,
+        2.02978515625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 27344896,
+      "nice": 20
+    },
+    {
+      "load": [
+        1.73974609375,
+        2.0439453125,
+        2.02978515625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 27344896,
+      "nice": 20
+    },
+    {
+      "load": [
+        1.73974609375,
+        2.0439453125,
+        2.02978515625
+      ],
+      "free_percent": 50.0,
+      "rss_bytes": 33800192,
+      "nice": 20
+    }
+  ],
+  "commits_created": 0
+}

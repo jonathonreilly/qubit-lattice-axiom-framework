@@ -1,0 +1,67 @@
+{
+  "schema": "holomorphic_compact_return_read_manifest_v1",
+  "role": "Author provenance and actual read coverage, not an independent verdict or automated proof.",
+  "date": "2026-10-30",
+  "author": "/root/source_local_compact_return",
+  "methodology_pin": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+    "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+    "lines": 734,
+    "coverage": "Full source self-read in chunks1–245,246–490,491–750 at730 lines, then the final four-line clarification patch and final excerpts55–85,588–655 read. Final734-line source frozen before this packet."
+  },
+  "suppliers": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "lines": 787,
+      "coverage": "Complete 787-line source read in returned chunks1–265,266–535,536–810 before drafting HC. Reconstructed actual frozen numerator perturbation, regional/global critical atoms and covariance, exact Haar/current identity, current-bearing complete-reader logarithm and shrinking-domain hypotheses. Review was in flight at assignment and no verdict was used as a premise."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/QUADRATIC_COARSE_RETURN_ASTRA.md",
+      "sha256": "515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7",
+      "lines": 591,
+      "coverage": "Complete 591-line source read in returned chunks1–300,301–625 before drafting HC. Checked rough real-numerator spread deficit, unchanged positive normalizers, full critical Schur denominator, fixed-source debit and single QC22 energy ledger; checked use with localized CG selectors."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "lines": 753,
+      "coverage": "Complete 753-line author source and full final self-read in the continuous author lane. The actual contour, all-order density jets, rare translation root, canonical no-mark family and both charged rescalings were rechecked for the changed phase in HC."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "lines": 644,
+      "coverage": "Complete 644-line author source and full final self-read in the continuous author lane. Current native-interface rereads185–330 and515–644 cover exact selected-D bijection, annular intersections, actual group readers and the frozen-versus-hybrid warning."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "lines": 597,
+      "coverage": "Complete 597-line author source and full final self-read in the continuous author lane. Current reread65–190 covers original cut/G/Omega predicates, actual touching fibres, principal logs, shell selection and charge."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "coverage": "Complete 592-line source read earlier in this continuous author lane, with consumed force/covariance passages reread. HC uses the same ambient family as FT/QC, including all modes, masks, memberships and both covariance tails."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "lines": 510,
+      "coverage": "Complete 510-line source read earlier in this continuous author lane with consumed normalizer, chart and prefactor passages reread. Exact transported regional denominator and local analytic family retained."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "coverage": "All actual 11 lines reread at the start of HC. No numerical physics check was run."
+    }
+  ],
+  "new_external_primary_reads": [],
+  "literature_scope": "No external theorem imported in HC. Earlier bounded primary comparisons in the continuously authored MK/CG context are not claimed as new reads or as this theorem's supplier. Balaban and Dimock are credited as antecedents.",
+  "review_reports_used_as_mathematical_premises": false,
+  "science_numerical_runs": 0
+}

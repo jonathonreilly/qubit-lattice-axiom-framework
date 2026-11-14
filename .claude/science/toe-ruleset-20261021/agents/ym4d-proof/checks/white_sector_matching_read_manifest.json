@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "role": "Author bounded read provenance; not an independent review or audit.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WHITE_SECTOR_MATCHING_ASTRA.md",
+    "sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+    "lines": 631
+  },
+  "inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "lines": 722,
+      "direct_read_ranges_this_unit": [
+        [1, 722]
+      ],
+      "use": "Complete direct read: actual finite-u phase, b0/C0 definitions, complete row/column/marked families, force, source-zero subtraction, exact cube, original G/cut and the real-coarse restriction."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "lines": 627,
+      "direct_read_ranges_this_unit": [
+        [1, 627]
+      ],
+      "use": "Complete direct read, including the corrected polynomial-only FR9 and the full FR10-20 precision-forest proof. Original scalar contours, factorial recursion, mode/reader marks, determinant term versus rare T_p, and actual fixed-source remainder were reconstructed. Historical diagnostics were not used as proof."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "lines": 790,
+      "direct_read_ranges_this_unit": [
+        [1, 790]
+      ],
+      "use": "Complete direct read: same source-free scalar cube, separate white-ball Ward result, source-free complex chain scope, and IC30-31 tree-only intrinsic/Gram conversion. No tree-phase identity is applied to the Haar-inclusive critical Hessian."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+      "lines": 580,
+      "direct_read_ranges_this_unit": [
+        [1, 580]
+      ],
+      "use": "Complete direct read: actual Omega/T0 definitions, original-reader metric conversion, cutoff-power/domain comparisons and unchanged complement/history denominator obligations. No real probability bound is substituted for a complex ratio."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "direct_read_ranges_this_unit": [
+        [1, 592]
+      ],
+      "use": "Complete direct reread: exact full phase and empty-stencil outside factors; actual gap, scalar envelopes, one-R construction, critical contraction, full-colour covariance and determinant branch. No P_Lambda=P[Lambda] identification."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "lines": 510,
+      "direct_read_ranges_this_unit": [
+        [1, 510]
+      ],
+      "use": "Complete direct reread: RC6/8/13 recomputation and order, exact side/corner/full-prefactor formula, same-family reader logarithm, whole-region empty-stencil restoration and shrinking-domain RC17-18."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "lines": 597,
+      "direct_read_ranges_this_unit": [
+        [1, 130],
+        [505, 597]
+      ],
+      "earlier_same_session_read_ranges": [
+        [1, 597]
+      ],
+      "use": "Exact original interior-plaquette cut, G/Omega, SC3 chart normalization and SC35/consumer limitations refreshed. Complete 1-597 direct read was done in the immediately preceding QC unit; its frozen manifest is linked below."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "lines": 812,
+      "direct_read_ranges_this_unit": [
+        [470, 551],
+        [574, 591],
+        [674, 691]
+      ],
+      "use": "Bounded consumer read only: white su(N) balls, slice covariance, H1-H4, inherited effective input, corrected rates and S9 full main-action/determinant normalization. No full STEP55 review is claimed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "direct_read_ranges_this_unit": [
+        [1, 11]
+      ],
+      "use": "Owner process read in full: numerical-only preregistration, rebuild-not-cite, fresh hostile review, Bałaban/Dimock attribution and root-owned integration."
+    }
+  ],
+  "read_limits": "Named-file searches were navigation only. The initial truncated FR window was recovered by 95-118 and its forest proof later reread at 105-420. A failed combined GC401-580/RF1-245 output was not counted; both were subsequently delivered completely. No source read is inferred from a hash or review verdict.",
+  "same_session_provenance": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/quadratic_coarse_return_read_manifest.json",
+      "sha256": "e5a0a07e1c24607a288a0a0a6001e88a3494be96be783d120c0994f94d0d52a5",
+      "lines": 119,
+      "use": "Carries the earlier complete SC597 read; no receipt is a mathematical premise."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "lines": 246,
+      "use": "Carries already-read applicable AGENTS, physics-loop/review-loop and source-specific methodology at selected main 01589af3faf806b736c42dc2f3bd625e9edead9f. Instructions persist; no Git operation was performed in this unit."
+    }
+  ],
+  "primary_reading": [
+    {
+      "url": "https://arxiv.org/html/1501.07376v1",
+      "authors": "Michele Benzi and Valeria Simoncini",
+      "direct_visible_html_ranges": [
+        [0, 132],
+        [84, 189]
+      ],
+      "consumed_window": [52, 155],
+      "use": "Bounded Cauchy-Stieltjes inverse-square-root discussion, especially the representation near line 144. No complete-paper read or external complete-reader/gauge theorem is claimed. The scalar integral, actual resolvent families and marked bounds are rebuilt in WS4-12."
+    }
+  ],
+  "new_steps": "Conservative face-range/full-reader half-power verification; one common R and literal old-SA/RF critical-branch matching; exact determinant/Gram/Haar/empty-phase prefactor matching; original-block log ratio and fixed-source shrinking bound.",
+  "authority": "Bałaban and Dimock are constructive antecedents. The current FR polynomial-domain correction is consumed as mathematics, not as a review verdict. MK, FT, HC and the separate complex-white proposal are not premises.",
+  "scope": "Real coarse V, original source-free scalar cube and actual original-a chart, fixed complex ORIGINAL source radius. No joint complex-coarse extension, entirely rare ratio exponent, G/history decomposition, effective iteration, non-free continuum existence or physical mass gap.",
+  "execution": "No scientific numerics, extra workers, Git/front/PR/lock/audit operations, or predecessor edits."
+}

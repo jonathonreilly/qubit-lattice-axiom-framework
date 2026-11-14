@@ -1,0 +1,19 @@
+  C1 p=1: identity holds on 3 forms; control fired at this p: False
+  C1 p=2: identity holds on 3 forms; control fired at this p: True
+  C1 p=3: identity holds on 3 forms; control fired at this p: True
+  C1 p=4: identity holds on 3 forms; control fired at this p: True
+  C1 p=5: identity holds on 3 forms; control fired at this p: True
+C1 polarisation identity (15 forms): PASS
+C1-ctrl (missing p!) fires for every p>=2: PASS
+  pi in [3141592653589e-12, 3141592653590e-12] (x1e-12, outward)
+  omega_hm(1/2) in [409665529e-9, 409665530e-9] (x1e-9, outward)
+C2 omega_hm(1/2) in [0.4096,0.4098], width<1e-6: PASS
+C2-ctrl (claim omega_hm(1/2)>=1/2 rejected): PASS
+  [info] omega_hm(1/4) in [688083478e-9, 688083479e-9] (x1e-9, outward)
+  [info] omega_hm(1/10) in [873097930e-9, 873097931e-9] (x1e-9, outward)
+  C3 r=1/2: max Im/Re over samples at u=1, value 4/3 (=2r/(1-r^2): True)
+  C3 r=1/4: max Im/Re over samples at u=1, value 8/15 (=2r/(1-r^2): True)
+  C3 r=1/10: max Im/Re over samples at u=1, value 20/99 (=2r/(1-r^2): True)
+C3 argument identity, Re>0, max at theta=pi/2 (27 samples): PASS
+C3-ctrl (wrong 2r sin/(1+r^2) rejected): PASS
+VERDICT: PASS

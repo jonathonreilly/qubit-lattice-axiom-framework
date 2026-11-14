@@ -1,0 +1,11 @@
+# c31 run record (session 16, 2026-10-27)
+- Order: c31_criteria.md written first (after RTARGET §38), then c31_linear.py, then the runs. No criterion edited.
+- First attempt of Part F with `python3 -I` (as the criteria name it): numpy import failed (user site-packages not
+  visible under -I), no output. Both parts were then run WITHOUT -I, as c29/c30 were; the script reads no downloaded
+  files. PYTHONDONTWRITEBYTECODE=1, nice 10, OPENBLAS/OMP/MKL/vecLib threads 1, one job at a time, no `timeout`.
+- Part F: 16:28 local, load 4.20 (1-min) before the run, 34% free memory; 0.64 s wall, peak RSS 71 MB. PASS.
+- Part E: 16:28 local, load 3.87 before the run, 35% free memory; 7.9 s wall, peak RSS 457 MB. PASS.
+- Disclosed scope limits: Part F tests the factorisation identity only at grid points with every p_α ≠ 0 (the
+  points p_α = 0 need the derivative limit of the divided difference and are covered by continuity, not by the check);
+  it does not test the strip bound of the representative (a complex-strip statement). Part E2 is d = 4 at small tori
+  only (T = 3, k = 1; T = 2, k = 2); E1 covers T = 12-16 at the symbol level (validated against the chain by E2b).

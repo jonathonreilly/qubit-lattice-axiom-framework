@@ -1,0 +1,415 @@
+{
+  "kind": "finite author check; not an independent proof review",
+  "started_utc": "2026-10-29T20:36:19.621130+00:00",
+  "counts": {
+    "polynomial_identity_with_inactive_remainder": 2187,
+    "active_norm_contraction": 2187,
+    "bounded_hole_full_norm": 2184,
+    "rooted_entropy_bound": 576,
+    "two_closure_algorithms": 36873,
+    "new_polymer_class": 36873,
+    "containment_and_active_identity": 36873,
+    "ambient_tree_monotonicity": 36873,
+    "all_original_monomial_sources_retained": 36873,
+    "pointwise_decay_bound": 8972,
+    "no_hole_identity": 3,
+    "native_4d_closure": 6288,
+    "native_4d_geometry": 6288,
+    "native_4d_tree": 6288,
+    "mutation_setup_full_hole": 1,
+    "static_contrast_drop_inactive_remainder": 1,
+    "static_contrast_erase_inactive_source": 1,
+    "static_contrast_fill_intersected_only": 1,
+    "four_cycle_witness_support": 1,
+    "four_cycle_input_full_norm_exact": 1
+  },
+  "resources": [
+    {
+      "where": "before any enumeration",
+      "max_rss_bytes": 25067520,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.4600880829966627
+    },
+    {
+      "where": "path6: start",
+      "max_rss_bytes": 25067520,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.46181379101471975
+    },
+    {
+      "where": "path6: nested pair 250",
+      "max_rss_bytes": 25067520,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.4912035000161268
+    },
+    {
+      "where": "path6: nested pair 500",
+      "max_rss_bytes": 25067520,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.5233096249867231
+    },
+    {
+      "where": "path6: end",
+      "max_rss_bytes": 25067520,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.5586113749886863
+    },
+    {
+      "where": "cycle6: start",
+      "max_rss_bytes": 25067520,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.5600733750034124
+    },
+    {
+      "where": "cycle6: nested pair 250",
+      "max_rss_bytes": 25083904,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.5991398330079392
+    },
+    {
+      "where": "cycle6: nested pair 500",
+      "max_rss_bytes": 25083904,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.6467423749854788
+    },
+    {
+      "where": "cycle6: end",
+      "max_rss_bytes": 25083904,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.6984088749741204
+    },
+    {
+      "where": "box2x3: start",
+      "max_rss_bytes": 25083904,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.6998633749899454
+    },
+    {
+      "where": "box2x3: nested pair 250",
+      "max_rss_bytes": 25083904,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.7440377909806557
+    },
+    {
+      "where": "box2x3: nested pair 500",
+      "max_rss_bytes": 25083904,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.7970968330046162
+    },
+    {
+      "where": "box2x3: end",
+      "max_rss_bytes": 25083904,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.8621515830163844
+    },
+    {
+      "where": "native 4d end",
+      "max_rss_bytes": 25083904,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.8756306249997579
+    },
+    {
+      "where": "exact norm witnesses: start",
+      "max_rss_bytes": 25083904,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.8770534999785013
+    },
+    {
+      "where": "trial outcome: active_for_full",
+      "max_rss_bytes": 25083904,
+      "load_averages": [
+        2.27978515625,
+        2.30078125,
+        2.26220703125
+      ],
+      "memory_free_percent": 60,
+      "nice": 20,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.8784570830175653
+    }
+  ],
+  "wrong_output_contrasts": {
+    "drop_inactive_remainder": "distinguished static wrong output; no implementation mutant run in v2",
+    "erase_inactive_source": "distinguished static wrong output; no implementation mutant run in v2",
+    "fill_intersected_only": "distinguished static wrong output; no implementation mutant run in v2"
+  },
+  "norm_witnesses": {
+    "four_cycle": {
+      "input_supports": [
+        [
+          0
+        ]
+      ],
+      "output_supports": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "active_vertices": [
+        0
+      ],
+      "activity_suprema": [
+        1
+      ],
+      "mu": "log(2)",
+      "computed": {
+        "input_full": "2",
+        "output_full": "2",
+        "output_active": "2"
+      },
+      "expected": {
+        "input_full": "2",
+        "output_full": "16",
+        "output_active": "2"
+      },
+      "independent_derivation": "Input 2^1; full rooted sums (16,16,16,16) from 2^4; active 2^1."
+    }
+  },
+  "trial": "active_for_full",
+  "source_mutation": {
+    "before": "return norm(grouped, out_labels, allv, allv, 1)",
+    "after": "return norm(grouped, out_labels, lam, lam, 1)",
+    "changed_lines": 1,
+    "required_assertion": "four_cycle_full_output_norm_exact"
+  },
+  "script_sha256": "89a35d0d9dc4dd0707ad1813174c83a31081c4a17a3e5e71cc328c2401ba6626",
+  "criteria_sha256": "acb1ccbd406668737d32777ce57dc9294d88ba9ecb38979da27bb35187e8c6ca",
+  "compiled_source_sha256": "5ec74c31c916eb3cd74d3d98229e72e13bf2e0de0cafb15b9a8c253abb59e166",
+  "trial_started_utc": "2026-10-29T20:36:19.621174+00:00",
+  "graphs": [
+    {
+      "name": "path6",
+      "vertices": 6,
+      "nested_active_pairs": 729,
+      "connected_supports": 21
+    },
+    {
+      "name": "cycle6",
+      "vertices": 6,
+      "nested_active_pairs": 729,
+      "connected_supports": 31
+    },
+    {
+      "name": "box2x3",
+      "vertices": 6,
+      "nested_active_pairs": 729,
+      "connected_supports": 40
+    }
+  ],
+  "native_4d": {
+    "vertices": 16,
+    "degree": 4,
+    "active_sets": 137,
+    "support_instances": 6288
+  },
+  "result": "assertion failed",
+  "reason": "four_cycle_full_output_norm_exact",
+  "failure_type": "AssertionError",
+  "exit_classification": 1,
+  "outcome_resource_gate_passed": true,
+  "elapsed_seconds_from_suite_start": 0.8784624160034582
+}

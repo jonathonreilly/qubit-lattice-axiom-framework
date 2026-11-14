@@ -1,0 +1,55 @@
+f10_fp_vheat.py  start 2026-10-28 06:08:39 UTC
+Part A (Lemma FP-exact; charge-1 torus (9, 9), L = 3, axial-path slice of NA-FP)
+  [PASS] A0 (k = 1): max |h(D lam) - (M lam - lam(c))| = 4.4e-16
+  [PASS] A1 (k = 1): sigma_min(chi Gamma) = 2.753e-01
+  [PASS] A2 (k = 1): LHS = 5.744664966585, RHS = 5.744664966585, |diff| = 2.3e-13
+  [PASS] A3 (k = 1): |log|det chiG| - log det M_perp - log det P_res Delta' P_res| = 2.3e-13
+  [PASS] A4 (k = 1): lambda_min(Pi O Pi | ker h) = 4.622e-02
+  [PASS] A-ctl (k = 1) (must FAIL A2): |LHS_ctl - RHS| = 1.877e-01
+    A5 (reported): log det(hh*) = -27.073393 (f = 0: -27.073393); log|det chiG| = 149.894672 (f = 0: 150.082352)
+  [PASS] A0 (k = 3): max |h(D lam) - (M lam - lam(c))| = 4.4e-16
+  [PASS] A1 (k = 3): sigma_min(chi Gamma) = 2.752e-01
+  [PASS] A2 (k = 3): LHS = 4.952623109279, RHS = 4.952623109279, |diff| = 0.0e+00
+  [PASS] A3 (k = 3): |log|det chiG| - log det M_perp - log det P_res Delta' P_res| = 0.0e+00
+  [PASS] A4 (k = 3): lambda_min(Pi O Pi | ker h) = 5.330e-02
+  [PASS] A-ctl (k = 3) (must FAIL A2): |LHS_ctl - RHS| = 3.531e-01
+    A5 (reported): log det(hh*) = -27.073393 (f = 0: -27.073393); log|det chiG| = 149.729224 (f = 0: 150.082352)
+  (part_a: 0.0 s)
+Part V1 (structure (i), SU(2): f9's Wilson Hessian vs the formula, left chart, w = x1 - i x2)
+  [PASS] V1 torus (9, 9), one quantum: max |H diff| = 6.7e-16, max |D diff| = 3.3e-16 (max |H| = 1.99)
+    (reported) max |H_C D_C| (formula) = 6.0e-16
+  [PASS] V1-ctl (S_p := 0; must FAIL) torus (9, 9), one quantum: max |H diff| = 7.749e-02
+  [PASS] V1 open box 11^2, f = 0.07: max |H diff| = 8.9e-16, max |D diff| = 2.2e-16 (max |H| = 2.00)
+    (reported) max |H_C D_C| (formula) = 7.0e-02
+  [PASS] V1-ctl (S_p := 0; must FAIL) open box 11^2, f = 0.07: max |H diff| = 6.994e-02
+  (part_v1: 0.0 s)
+Part V2 (closed form, SU(2), direct heat trace of the formula operator, open box 101^2, q = 2)
+    t =    2: R_12 direct = 3.4741594, closed form = 3.4741594
+    t =    3: R_12 direct = 3.5463183, closed form = 3.5463183
+    t =    4: R_12 direct = 3.5785813, closed form = 3.5785813
+    t =    6: R_12 direct = 3.6091489, closed form = 3.6091489
+    t =    8: R_12 direct = 3.6239322, closed form = 3.6239322
+    t =   12: R_12 direct = 3.6384289, closed form = 3.6384289
+    t =   16: R_12 direct = 3.6455783, closed form = 3.6455784
+    t =   24: R_12 direct = 3.6526655, closed form = 3.6526661
+  [PASS] V2: max rel deviation = 1.9e-07 (normalisation |Y(0)/(2 j0^2) - 1| = 2.4e-15)
+Part V3 (closed form, gamma = 1/4: SU(3) root (1, 2) of i sqrt(3/2) diag(1, 0, -1), q = sqrt(3/2))
+    t =    2: R_12 direct = 3.5082788, closed form = 3.5082788
+    t =    3: R_12 direct = 3.5609251, closed form = 3.5609251
+    t =    4: R_12 direct = 3.5866768, closed form = 3.5866768
+    t =    6: R_12 direct = 3.6127005, closed form = 3.6127005
+    t =    8: R_12 direct = 3.6259179, closed form = 3.6259179
+    t =   12: R_12 direct = 3.6393064, closed form = 3.6393064
+    t =   16: R_12 direct = 3.6460707, closed form = 3.6460707
+    t =   24: R_12 direct = 3.6528842, closed form = 3.6528843
+  [PASS] V3: max rel deviation = 2.6e-08
+Part V4 (closed form vs checks/f9_out.txt printed values)
+  [PASS] V4: 8 rows; max |R_12 diff| = 1.1e-06, max |R_S diff| = 4.5e-07
+Part V5 (reported: closed-form asymptotics, SU(2))
+    t = 1e+02: R_12 = 3.66332704, R_12 + R_S = 3.49749371, R_V4D = 3.33166038, t(R_12 - 11/3) = -0.333963
+    t = 1e+03: R_12 = 3.66633327, R_12 + R_S = 3.49974994, R_V4D = 3.33316660, t(R_12 - 11/3) = -0.333396
+    t = 1e+04: R_12 = 3.66663333, R_12 + R_S = 3.49997500, R_V4D = 3.33331667, t(R_12 - 11/3) = -0.333340
+  (part_v2_v5: 3.8 s)
+SUMMARY: 19/19 verdict lines PASS (controls are counted as PASS when they fail as required)
+  A0 (k = 1): PASS; A1 (k = 1): PASS; A2 (k = 1): PASS; A3 (k = 1): PASS; A4 (k = 1): PASS; A-ctl (k = 1) (must FAIL A2): PASS; A0 (k = 3): PASS; A1 (k = 3): PASS; A2 (k = 3): PASS; A3 (k = 3): PASS; A4 (k = 3): PASS; A-ctl (k = 3) (must FAIL A2): PASS; V1 torus (9, 9), one quantum: PASS; V1-ctl (S_p := 0; must FAIL) torus (9, 9), one quantum: PASS; V1 open box 11^2, f = 0.07: PASS; V1-ctl (S_p := 0; must FAIL) open box 11^2, f = 0.07: PASS; V2: PASS; V3: PASS; V4: PASS
+end 2026-10-28 06:08:43 UTC  wall 3.8 s  peak RSS 163 MB

@@ -1,0 +1,2 @@
+vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)
+vocab_lint: wrote report to .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_prose_status.json

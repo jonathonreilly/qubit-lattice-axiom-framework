@@ -1,0 +1,23 @@
+Complex normalizer: 40 scaled-Bessel/direct-Haar comparisons.
+Maximum absolute relative-factor discrepancy 4.53409622793e-13; largest fraction of 6/t bound 0.0865655481609.
+These samples check the formula; the sector-integral estimate proves zero-freeness.
+Actual flat 244-coordinate H with declared diagonal test E: row norm 0.2.
+12-term log-determinant absolute error 1.70308211977e-13, last tail bound 9.60984615385e-09.
+12-term inverse row error 1.52434044981e-09, tail bound 3.00752592593e-07.
+This is a signed matrix-series check, not a numerical check of TB7 or a spatial support theorem.
+Actual single free link ((0,0,0,0), direction 1), zero-based directions, kappa=1:
+  coarse base (-1, 0, 0, 0), direction 0: 6/1944 paths have exponent 1; others zero; p=1/324.
+  coarse base (0, 0, 0, 0), direction 0: 6/1944 paths have exponent -1; others zero; p=1/324.
+  coarse base (0, -1, 0, 0), direction 1: 54/1944 paths have exponent 1; others zero; p=1/36.
+  coarse base (0, 0, 0, 0), direction 1: 18/1944 paths have exponent 1; others zero; p=1/108.
+  coarse base (0, 0, -1, 0), direction 2: 6/1944 paths have exponent 1; others zero; p=1/324.
+  coarse base (0, 0, 0, 0), direction 2: 6/1944 paths have exponent -1; others zero; p=1/324.
+  coarse base (0, 0, 0, -1), direction 3: 6/1944 paths have exponent 1; others zero; p=1/324.
+  coarse base (0, 0, 0, 0), direction 3: 6/1944 paths have exponent -1; others zero; p=1/324.
+Exact leading-action quadratic coefficient 6562/2187; quartic coefficient -918869623/3673320192 = -0.250146890271.
+  a=0.1: finite-action quartic quotient -0.250063390816, discrepancy 8.34994557912e-05.
+  a=0.05: finite-action quartic quotient -0.250126012598, discrepancy 2.08776734482e-05.
+  a=0.025: finite-action quartic quotient -0.25014167068, discrepancy 5.21959181138e-06.
+The homogeneous quartic is negative on an open cone; the uncut quartic Gaussian replacement diverges for every u>0.
+This tests a replacement of the leading action, not the actual compact integral or the all-history target.
+Peak RSS bytes: 94355456; ceiling 1000000000; BLAS threads 1.

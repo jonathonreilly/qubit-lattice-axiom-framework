@@ -1,0 +1,104 @@
+{
+  "role": "mechanical identity/link evidence only, no scientific PASS",
+  "checked_at_utc": "2026-10-30T01:11:19.575943+00:00",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROBABILITY_SENSITIVE_RETURN_ASTRA.md",
+    "sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+    "bytes": 29552,
+    "line_count": 544
+  },
+  "source_matches_frozen_target": true,
+  "author_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_receipt.json",
+    "sha256": "818e4790a5ba9f2e1d49e4ddcd3f232f811e7c6ad6c6301496e9b12ccdee495c",
+    "bytes": 2159,
+    "line_count": 47
+  },
+  "expected_author_receipt_sha256": "818e4790a5ba9f2e1d49e4ddcd3f232f811e7c6ad6c6301496e9b12ccdee495c",
+  "author_artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROBABILITY_SENSITIVE_RETURN_ASTRA.md",
+      "sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+      "bytes": 29552,
+      "line_count": 544,
+      "expected_sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_read_manifest.json",
+      "sha256": "7cfda3d8bd2dd1faf0962979de95d253432ae83d3f1cbfd277964e42d3f73c94",
+      "bytes": 12781,
+      "line_count": 333,
+      "expected_sha256": "7cfda3d8bd2dd1faf0962979de95d253432ae83d3f1cbfd277964e42d3f73c94",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_identity_check.json",
+      "sha256": "f07e55fafc7b4c4805e85375c802bc06087378cb1b10a2ae3646f4ccbb83b6ea",
+      "bytes": 3328,
+      "line_count": 111,
+      "expected_sha256": "f07e55fafc7b4c4805e85375c802bc06087378cb1b10a2ae3646f4ccbb83b6ea",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_author_checks.md",
+      "sha256": "8bec9657c3b9d7f56ce7d25441eedc08bf7c94f8a82ec99a9966236b2e1632fe",
+      "bytes": 3917,
+      "line_count": 63,
+      "expected_sha256": "8bec9657c3b9d7f56ce7d25441eedc08bf7c94f8a82ec99a9966236b2e1632fe",
+      "match": true
+    }
+  ],
+  "links": [
+    {
+      "target": "RD.md",
+      "exists": true,
+      "portable": true
+    },
+    {
+      "target": "REVIEW_RD_R2.md",
+      "exists": true,
+      "portable": true
+    },
+    {
+      "target": "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "exists": true,
+      "portable": true
+    },
+    {
+      "target": "GRADED_COMPLEMENT_ASTRA.md",
+      "exists": true,
+      "portable": true
+    },
+    {
+      "target": "FIXED_SOURCE_RADIUS_ASTRA.md",
+      "exists": true,
+      "portable": true
+    },
+    {
+      "target": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "exists": true,
+      "portable": true
+    },
+    {
+      "target": "checks/probability_sensitive_return_read_manifest.json",
+      "exists": true,
+      "portable": true
+    },
+    {
+      "target": "checks/probability_sensitive_return_receipt.json",
+      "exists": true,
+      "portable": true
+    },
+    {
+      "target": "PROCESS_LIGHT.md",
+      "exists": true,
+      "portable": true
+    }
+  ],
+  "all_source_links_present_and_portable": true,
+  "methodology_working_files_match_selected_main": true,
+  "numerical_experiments": 0,
+  "git_mutations": 0,
+  "audit_operations": 0
+}

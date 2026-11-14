@@ -1,0 +1,86 @@
+ru55_2: base graph /Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/dag55_2_graph.py
+
+== V0: nodes 189 edges 362; schema errors 0; string-audit misses 0
+   B-strict nontrivial SCCs (0): []
+   B-all nontrivial SCCs (2): [4] ['dbeta', 'eff_seq', 'kernel_seq', 'stage_consts']; [12] ['B_0', 'a', 'a_A', 'b_D', 'c_A', 'c_B', 'c_U', 'c_f', 'c_plus', 'n_H', 'n_sharp', 'theta']
+   live GROWTH seeds: ['C_fun', 'V_LF']; order validity re-check: PASS
+
+== V1: nodes 190 edges 366; schema errors 0; string-audit misses 0
+   B-strict nontrivial SCCs (0): []
+   B-all nontrivial SCCs (2): [4] ['dbeta', 'eff_seq', 'kernel_seq', 'stage_consts']; [12] ['B_0', 'a', 'a_A', 'b_D', 'c_A', 'c_B', 'c_U', 'c_f', 'c_plus', 'n_H', 'n_sharp', 'theta']
+   live GROWTH seeds: ['C_fun', 'V_LF']; order validity re-check: PASS
+
+== V2: nodes 190 edges 367; schema errors 0; string-audit misses 0
+   B-strict nontrivial SCCs (0): []
+   B-all nontrivial SCCs (2): [4] ['dbeta', 'eff_seq', 'kernel_seq', 'stage_consts']; [12] ['B_0', 'a', 'a_A', 'b_D', 'c_A', 'c_B', 'c_U', 'c_f', 'c_plus', 'n_H', 'n_sharp', 'theta']
+   live GROWTH seeds: ['C_fun', 'V_LF']; order validity re-check: PASS
+
+== V3: nodes 189 edges 363; schema errors 0; string-audit misses 0
+   B-strict nontrivial SCCs (1): [['a_A', 'theta']]
+   B-all nontrivial SCCs (2): [4] ['dbeta', 'eff_seq', 'kernel_seq', 'stage_consts']; [12] ['B_0', 'a', 'a_A', 'b_D', 'c_A', 'c_B', 'c_U', 'c_f', 'c_plus', 'n_H', 'n_sharp', 'theta']
+   live GROWTH seeds: ['C_fun', 'V_LF']; order validity re-check: PASS
+
+== V4: nodes 190 edges 366; schema errors 0; string-audit misses 0
+   B-strict nontrivial SCCs (0): []
+   B-all nontrivial SCCs (2): [4] ['dbeta', 'eff_seq', 'kernel_seq', 'stage_consts']; [11] ['B_0', 'a', 'a_A', 'b_D', 'c_A', 'c_B', 'c_U', 'c_f', 'c_plus', 'n_H', 'n_sharp']
+   live GROWTH seeds: ['C_fun', 'V_LF']; order validity re-check: PASS
+
+== V5: nodes 189 edges 365; schema errors 0; string-audit misses 0
+   B-strict nontrivial SCCs (0): []
+   B-all nontrivial SCCs (2): [4] ['dbeta', 'eff_seq', 'kernel_seq', 'stage_consts']; [12] ['B_0', 'a', 'a_A', 'b_D', 'c_A', 'c_B', 'c_U', 'c_f', 'c_plus', 'n_H', 'n_sharp', 'theta']
+   live GROWTH seeds: ['C_fun', 'V_LF']; order validity re-check: PASS
+
+== V6: nodes 191 edges 373; schema errors 0; string-audit misses 0
+   B-strict nontrivial SCCs (0): []
+   B-all nontrivial SCCs (2): [4] ['dbeta', 'eff_seq', 'kernel_seq', 'stage_consts']; [11] ['B_0', 'a', 'a_A', 'b_D', 'c_A', 'c_B', 'c_U', 'c_f', 'c_plus', 'n_H', 'n_sharp']
+   live GROWTH seeds: ['C_fun', 'V_LF']; order validity re-check: PASS
+
+schema + string audit on all variants: PASS
+V0 reproduces dag55_2 (B-strict 0; B-all sizes [4, 12]; live seeds [C_fun, V_LF]): YES
+
+U3 NO-CYCLE: PASS (V1 B-strict []; B-all family equal to V0: True)
+U3 NO-GROWTH: PASS (eta_star GROWTH-tainted: False; weak-tainted: True vs eps_loc weak-tainted in V0: True)
+   eta_star weak witness: eps_N5_unif -> eps_loc -> eta_star
+U3 ORDER: PASS (pos eta_q 114, eps_loc 113, eta_star 116, a_cb 124, a_D 125, a 139, g0 162)
+U3 SCOPE: |desc(eta_star) in V1| = 37; |desc(eta_quiet) in V2| = 42; strict subset: True; in V2 but not V1: ['a_ret', 'beta_p', 'g1_FLOW', 'gamma', 'gamma0']
+   desc(eta_star): ['B_0', 'C4', 'C_A', 'C_H', 'C_ell', 'C_ellp', 'C_fc', 'K0_T1', 'Kcompat', 'NA_empty', 'RLF3dis', 'R_g', 'SF_last', 'V_LF', 'W', 'a', 'a_A', 'a_D', 'a_cb', 'a_prime', 'b_D', 'b_n', 'c_A', 'c_B', 'c_U', 'c_f', 'c_plus', 'c_sf', 'eps_sharp', 'g0', 'g2_CRC', 'g_3', 'g_c', 'lambda_star', 'n_H', 'n_sharp', 'theta']
+
+U1 LITERAL 2-CYCLE (C-A): FIRES: [['a_A', 'theta']]
+U1 RESOLVED: PASS (V4 B-strict [])
+   V4 B-all family vs V0: removed [('B_0', 'a', 'a_A', 'b_D', 'c_A', 'c_B', 'c_U', 'c_f', 'c_plus', 'n_H', 'n_sharp', 'theta')]; added [('B_0', 'a', 'a_A', 'b_D', 'c_A', 'c_B', 'c_U', 'c_f', 'c_plus', 'n_H', 'n_sharp')]
+   V4 order: a_A0 112 < theta 134 < a_A 143 < a 144: True
+
+FI-1 NO-CYCLE: PASS (V5 B-strict []; B-all equal V0: True; pos R 36, gamma 117, g1_FLOW 119, g0 161)
+
+== checker's own controls C1-C7 on V6 (output of dag55_2_dag.controls, verbatim) ==
+
+====================================================================================================
+CONTROLS
+====================================================================================================
+C1 B-all: SCC containing g0 and eps1: yes; cycle through the injected edge: eps1 -> ... -> g0 -> eps1 (4 edges)
+    eps1 -> IkE  [def]  HIST.md: "α_E ≥ c·ε_1 (a g-INDEPENDENT radius: the whole ε_1-domain)"
+    IkE -> C_A  [req]  RLARGE.md: "(SDP)^A ⇐ (I_{k-1}^E)''(d'') + (CLS-min) + (W1-ret'^J)_{k-1}(c) + (SC)_{k-1} [A/PLD, s-P] + I-tay^J [R/HIST, s]"
+    C_A -> g0  [le]  HW.md: "holds once a_A/g_K² ≥ a/g_K² exceeds log(2Δ_ρ²C_A) + a_AR + c_+c_att"
+    g0 -> eps1  [le]  INJECTED
+C1 B-strict: SCC containing g0 and eps1: yes; cycle through the injected edge: eps1 -> ... -> g0 -> eps1 (4 edges)
+    eps1 -> IkE  [def]  HIST.md: "α_E ≥ c·ε_1 (a g-INDEPENDENT radius: the whole ε_1-domain)"
+    IkE -> C_A  [req]  RLARGE.md: "(SDP)^A ⇐ (I_{k-1}^E)''(d'') + (CLS-min) + (W1-ret'^J)_{k-1}(c) + (SC)_{k-1} [A/PLD, s-P] + I-tay^J [R/HIST, s]"
+    C_A -> g0  [le]  HW.md: "holds once a_A/g_K² ≥ a/g_K² exceeds log(2Δ_ρ²C_A) + a_AR + c_+c_att"
+    g0 -> eps1  [le]  INJECTED
+C1 (pre-condition: strict path eps1 -> g0 exists in the real graph: yes) -> FIRES (as designed)
+C2: seed kappa_pm (tier 0) tagged K (INJECTED); sink g0 TAINTED via kappa_pm -> A0_SQ -> C_D -> REGmin -> CLSmin -> C_A -> g0 -> FIRES (as designed)
+C3: schema on a graph with a dangling edge -> FAIL (as designed): ['edge#373 eps1->ZZZ_nonexistent: dst not a node']
+C4: null control: SCCs []; order ['a', 'b', 'c', 'd', 'e', 'f'] (expected ['a', 'b', 'c', 'd', 'e', 'f']) -> PASS (as designed)
+C5: positive control: nontrivial SCCs [['a', 'b', 'c']] (expected [['a', 'b', 'c']]) -> FIRES (as designed)
+C6: absorb control: x tainted True, y tainted False -> PASS (as designed)
+C7: string audit with edge#0's string replaced -> FAIL on exactly that record (as designed): [('edge#0 beta0p->beta_m', 'FLOW.md', 'ZZZ-NOT-IN-ANY-FILE-dag55', 'MISS')]
+
+CONTROLS: {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True} -> checker ABLE TO DECIDE
+
+V6: PASS (B-strict []; live seeds ['C_fun', 'V_LF']; controls able: True)
+   V6 B-all family: [11] ['B_0', 'a', 'a_A', 'b_D', 'c_A', 'c_B', 'c_U', 'c_f', 'c_plus', 'n_H', 'n_sharp']; [4] ['dbeta', 'eff_seq', 'kernel_seq', 'stage_consts']
+
+C-B (injected a_cb -> eta_q back-edge in V1): B-strict SCC through the new node: FIRES [['a_cb', 'eps_loc', 'eta_q', 'eta_star']]
+C-C (K tag injected on eta_star): sink g0 tainted: FIRES via eta_star -> a_cb -> a_D -> a -> g0
+
+FINAL: ALL PRE-REGISTERED VERDICTS PASS, ALL CONTROLS FIRE

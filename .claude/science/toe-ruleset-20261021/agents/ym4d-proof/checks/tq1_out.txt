@@ -1,0 +1,51 @@
+tq1: TENTQ session 25.  criteria: checks/tq1_criteria.md (written first).
+
+=== M1 (d=2,k=2,T=3): n=9, side=27, 9 level-2 boxes, |supp D| = 729 ===
+A4  sum_X chi5_X == 1 everywhere: True;  <chi5_X> == n^d = 81: True
+A1  sum_X Q_X = 0   (exactly 0: True);  max|Q_X| = 89.4721, #(Q_X != 0) = 9
+A2  Q_X == sum_l <d(ev chi5_X), S_l> for all 9 X: True
+A3  l=0: ||d(ev chi5_X)||_1 = 36  vs  2d(n/L^l)^(d-1) = 36   OK
+A3  l=1: ||d(ev chi5_X)||_1 = 12  vs  2d(n/L^l)^(d-1) = 12   OK
+A3  l=2: ||d(ev chi5_X)||_1 = 4  vs  2d(n/L^l)^(d-1) = 4   OK
+A5  sum_X Q_X Phi(X) = -37657979127828361493869/14620047941407708800
+    sum_l <d(ev Psi), S_l>  = -37657979127828361493869/14620047941407708800   equal: True
+
+=== M2 (d=4,k=2,T=3): n=9, side=27, 81 level-2 boxes, |supp D| = 29 ===
+A4  sum_X chi5_X == 1 everywhere: True;  <chi5_X> == n^d = 6561: True
+A1  sum_X Q_X = 0   (exactly 0: True);  max|Q_X| = 13.5283, #(Q_X != 0) = 63
+A2  Q_X == sum_l <d(ev chi5_X), S_l> for all 81 X: True
+A3  l=0: ||d(ev chi5_X)||_1 = 5832  vs  2d(n/L^l)^(d-1) = 5832   OK
+A3  l=1: ||d(ev chi5_X)||_1 = 216  vs  2d(n/L^l)^(d-1) = 216   OK
+A3  l=2: ||d(ev chi5_X)||_1 = 8  vs  2d(n/L^l)^(d-1) = 8   OK
+A5  sum_X Q_X Phi(X) = -1287800888282237451950718251/3269325323326763573832960
+    sum_l <d(ev Psi), S_l>  = -1287800888282237451950718251/3269325323326763573832960   equal: True
+
+=== M3 (d=4, k=2): tent-gauge identity ===
+A6  Phi_2(x0+dmu)(X) - Phi_2(x0)(X) = -17600766949/4728643920
+    A^(0->2)mu(X) - mu(c_X)          = -17600766949/4728643920
+    equal: True;   Phi_2(dmu)(X) alone = -17600766949/4728643920 (linearity: True)
+
+=== A7: rebuild of REVIEW_BFT_A_S8 S8-7's exact tent values (d=4, k=2) ===
+A7  phi1 : got -1/432  want -1/432   OK
+A7  phi2 : got -17/104976  want -17/104976   OK
+A7  ratio: got 17/243  want 17/243   OK
+A7  psi  : got -65/26244  want -65/26244   OK
+
+=== A8 (informational): Phi_2(u) across neighbouring level-2 boxes ===
+A8  Phi_2(u)(0) = -65/26244;  max over the 8 one-step neighbours = 0
+A8  max|Phi_2(u)| = 65/26244;  max one-coarse-step difference = 65/26244;  ratio grad/max = 1
+
+=== VERDICTS ===
+  A1/M1 (d=2,k=2,T=3)   : PASS
+  A1/M2 (d=4,k=2,T=3)   : PASS
+  A2/M1 (d=2,k=2,T=3)   : PASS
+  A2/M2 (d=4,k=2,T=3)   : PASS
+  A3/M1 (d=2,k=2,T=3)   : PASS
+  A3/M2 (d=4,k=2,T=3)   : PASS
+  A4/M1 (d=2,k=2,T=3)   : PASS
+  A4/M2 (d=4,k=2,T=3)   : PASS
+  A5/M1 (d=2,k=2,T=3)   : PASS
+  A5/M2 (d=4,k=2,T=3)   : PASS
+  A6                    : PASS
+  A7                    : PASS
+  OVERALL: ALL PASS

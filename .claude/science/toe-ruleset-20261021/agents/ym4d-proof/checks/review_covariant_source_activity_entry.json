@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-10-29T21:08:29.779224+00:00",
+  "scope": "Independent SA1-SA34 review, same-family Codex; no implementation role. Prior CB and B1 reviews immutable.",
+  "target_expected_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+  "author_scientific_code_read": false,
+  "author_scientific_outputs_read": false,
+  "source_reported_results_exposed": true,
+  "criteria_sha256": "f47e6dd533ffffa8bdbc5e140e4dc2735835300a461332d2a96f57a35628d763",
+  "read_entries": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217,
+      "read_scope": "complete lines1-722, frozen source; author diagnostic code/outputs not read"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "read_scope": "complete in preceding independent CB review; same frozen bytes verified"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md",
+      "sha256": "ac985bb9b41a0d9d52ead7c2932df73e59c713c28c5c45f0629003552eee1243",
+      "bytes": 48141,
+      "read_scope": "complete lines1-863; initially truncated middle recovered"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_CLUSTER_ASTRA.md",
+      "sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf",
+      "bytes": 34340,
+      "read_scope": [
+        [
+          80,
+          416
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RECOVERY_CLUSTER_ASTRA.md",
+      "sha256": "f3b3c8baed4e53cf4f3213342b97e51587576b59be4fb8d61fc3cbb3565dc2a0",
+      "bytes": 25661,
+      "read_scope": "complete lines1-180; initially truncated middle recovered"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "bytes": 48847,
+      "read_scope": [
+        [
+          414,
+          650
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "read_scope": "complete, applied to this new lane"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "sha256": "1587cd5d8afe9aaed4523c8434f68a80db9dea0cdc056ef9a3948494361eb940",
+      "bytes": 46268,
+      "read_scope": [
+        [
+          588,
+          607
+        ]
+      ]
+    }
+  ],
+  "continuation_status_note": "Its pending label is historical; coordinator identified completed REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md via HANDOFF. Used insertion/flux steps nevertheless rebuilt independently; that review has not yet been read.",
+  "collar_question": "Audit exact local read sets around the inner index of residual K_ik, rather than combining outer range2 with an unspecified radius3 read centre."
+}

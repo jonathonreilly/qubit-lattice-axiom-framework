@@ -1,0 +1,10 @@
+{
+  "recorded_utc": "2026-10-30T05:19:24.910058+00:00",
+  "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RENEW.md",
+  "sha256": "d7829aa7030e1f52b6c9b9851110a7cc8fba9d615d3eb7c19063977a36dd0366",
+  "bytes": 33620,
+  "lines": 606,
+  "source_manifest": "checks/renew_sources.json",
+  "all_21_sources_unchanged": true,
+  "review_state": "submitted"
+}

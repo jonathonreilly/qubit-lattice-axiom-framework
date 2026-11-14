@@ -1,0 +1,203 @@
+{
+  "utc": "2026-10-30T08:32:52.726461+00:00",
+  "source_revision": "cd67e1c9e6bbed8b92fee069de66ef0b25486316",
+  "note_sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+  "review_sha256": "7b4488f600b2b73e7a93290280af87a229f1278623c7a2414e297d1792c3047b",
+  "review_verdict": "LAND for scoped conditional contract only",
+  "review_independence": "same-family fresh context; no model/effort override",
+  "actual_model_induction": "OPEN",
+  "numerical_diagnostics": "NOT RUN: nice refused; zero checks executed",
+  "prompt_files_changed": [],
+  "commits_created": false,
+  "existing_sources_modified": false,
+  "artifacts": [
+    {
+      "path": "REALRGA.md",
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "bytes": 45366
+    },
+    {
+      "path": "REALRGA_LOG.md",
+      "sha256": "ae7548fc226f187414cb21123df35da7737780717e29bb4b9feb68afa525122d",
+      "bytes": 11784
+    },
+    {
+      "path": "checks/realrga_author_fixes_v2.diff",
+      "sha256": "2524a708f282990e1a11b8b7fb3abc852effd6305b39f7eb47ee994b2e72bee9",
+      "bytes": 4890
+    },
+    {
+      "path": "checks/realrga_author_fixes_v3.diff",
+      "sha256": "a2a64ae500a6738db5553d9bbd0237b9414e5e0de62dd5ef609fca0a8875f370",
+      "bytes": 7842
+    },
+    {
+      "path": "checks/realrga_check.py",
+      "sha256": "71c8bb774c21f2095a2b194ffe638210cb54d7db45041ad44083adb52cc67d6b",
+      "bytes": 6472
+    },
+    {
+      "path": "checks/realrga_criteria.md",
+      "sha256": "7f24db01d74e26275e63fb13f9f0f7251302a4ed9020569504acf7c672f00e60",
+      "bytes": 1838
+    },
+    {
+      "path": "checks/realrga_numeric.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/realrga_result.json",
+      "sha256": "b6e7255097e701c7f944517356405052b34912533452e75036a18edd0af68360",
+      "bytes": 778
+    },
+    {
+      "path": "checks/realrga_review.md",
+      "sha256": "7b4488f600b2b73e7a93290280af87a229f1278623c7a2414e297d1792c3047b",
+      "bytes": 14726
+    },
+    {
+      "path": "checks/realrga_review_source_v1.md",
+      "sha256": "007cf62c59bb76ec7079ed6e68d8e6a4ee1d02b92d3b0f5e45b673329fd059b2",
+      "bytes": 43908
+    },
+    {
+      "path": "checks/realrga_sources.json",
+      "sha256": "f6cd2458d2879e52882d0b2b32910091b9f389ce0d5f0e796254108eb9377114",
+      "bytes": 7180
+    },
+    {
+      "path": "checks/realrga_stderr.txt",
+      "sha256": "1ae2ce53f6c4a3265acd385e7e4a21d827a2b5594337d0d9ae68b92a856b30dc",
+      "bytes": 43
+    },
+    {
+      "path": "checks/realrga_stdout.json",
+      "sha256": "b6e7255097e701c7f944517356405052b34912533452e75036a18edd0af68360",
+      "bytes": 778
+    },
+    {
+      "path": "checks/realrga_validate.py",
+      "sha256": "10b11ffec65fb4ae1ac55015b43ada9a7085b705733a96ad5a7a1433e92560fb",
+      "bytes": 3770
+    },
+    {
+      "path": "checks/realrga_validation.json",
+      "sha256": "1948420c6f3c9ca18061fbf959c891f8e38f61e0d08045434f73b5a0b10ac60c",
+      "bytes": 2603
+    },
+    {
+      "path": "checks/realrga_validation_initial.json",
+      "sha256": "9f24032bd90af5cc33c9c0e243830b766f1e6ba380efc1dfe3630e7adc3aa100",
+      "bytes": 745
+    }
+  ],
+  "validation": {
+    "kind": "Document/source bookkeeping only; does not execute mathematical diagnostics.",
+    "utc": "2026-10-30T08:32:54.298746+00:00",
+    "source_revision": "cd67e1c9e6bbed8b92fee069de66ef0b25486316",
+    "note_sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+    "source_drift": [],
+    "all_local_links_exist": true,
+    "local_links": [
+      {
+        "source": "REALRGA.md",
+        "target": "REALRGA_LOG.md",
+        "exists": true
+      },
+      {
+        "source": "REALRGA.md",
+        "target": "checks/realrga_criteria.md",
+        "exists": true
+      },
+      {
+        "source": "REALRGA.md",
+        "target": "checks/realrga_check.py",
+        "exists": true
+      },
+      {
+        "source": "REALRGA.md",
+        "target": "checks/realrga_result.json",
+        "exists": true
+      },
+      {
+        "source": "REALRGA.md",
+        "target": "REALRGA_LOG.md",
+        "exists": true
+      },
+      {
+        "source": "REALRGA_LOG.md",
+        "target": "checks/realrga_author_fixes_v3.diff",
+        "exists": true
+      },
+      {
+        "source": "REALRGA_LOG.md",
+        "target": "checks/realrga_sources.json",
+        "exists": true
+      },
+      {
+        "source": "REALRGA_LOG.md",
+        "target": "checks/realrga_criteria.md",
+        "exists": true
+      },
+      {
+        "source": "REALRGA_LOG.md",
+        "target": "checks/realrga_check.py",
+        "exists": true
+      },
+      {
+        "source": "REALRGA_LOG.md",
+        "target": "checks/realrga_result.json",
+        "exists": true
+      },
+      {
+        "source": "REALRGA_LOG.md",
+        "target": "checks/realrga_stdout.json",
+        "exists": true
+      },
+      {
+        "source": "REALRGA_LOG.md",
+        "target": "checks/realrga_stderr.txt",
+        "exists": true
+      },
+      {
+        "source": "REALRGA_LOG.md",
+        "target": "checks/realrga_validation.json",
+        "exists": true
+      },
+      {
+        "source": "REALRGA_LOG.md",
+        "target": "checks/realrga_validation_initial.json",
+        "exists": true
+      },
+      {
+        "source": "REALRGA_LOG.md",
+        "target": "checks/realrga_validate.py",
+        "exists": true
+      },
+      {
+        "source": "REALRGA_LOG.md",
+        "target": "checks/realrga_review.md",
+        "exists": true
+      },
+      {
+        "source": "REALRGA_LOG.md",
+        "target": "checks/realrga_receipt.json",
+        "exists": true
+      }
+    ],
+    "all_tables_three_columns": true,
+    "table_cell_counts": [
+      3
+    ],
+    "tracked_changes": [],
+    "staged_changes": [],
+    "unexpected_untracked": [],
+    "numerical_status": "NOT RUN",
+    "mathematical_checks_executed": 0,
+    "criteria_match_execution": true,
+    "checker_match_execution": true,
+    "stdout_matches_result": true
+  },
+  "adjacent_review_brief_sha256": "7baa5a49d0c712db42c03749c469cd809d56039cc292e7eeeb73d6b0770578b2"
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "kind": "focused worker source-review receipt; not canonical branch landing record or audit verdict",
+  "created_utc": "2026-10-29T21:58:43.876650+00:00",
+  "reviewer": "Codex fresh restricted context; same-family; no authorship of consumer amendment",
+  "requested_configuration": "Astra/max per coordinator assignment",
+  "scope": "Only coordinator LGF adoption into TSE55, including support-to-torus range sentence; no whole-TSE55 proof clearance",
+  "verdict": "LAND",
+  "iterations": 1,
+  "material_findings": [],
+  "source_fixes": [],
+  "base_commit": "88130072aa683af83562ecc78a64dcc71fe75c4c",
+  "entry_head": "51fca25c21dd5233294555ddc21ca0801627f6a0",
+  "head_at_confirmation": "51fca25c21dd5233294555ddc21ca0801627f6a0",
+  "methodology_ref": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "planning_ref": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0",
+  "original_tse55_sha256": "d02cc8b265c20da5fc59812a59d68e12d3c9a550d9f9df0890db1c61a38f7340",
+  "frozen_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/TSE55.md",
+      "sha256": "a894d1b2439a7b83311175c9e6e30f6fb52cc015a74c6be7e839be8192a7869a",
+      "bytes": 80443,
+      "coverage": {
+        "mode": "complete affected diff plus necessary contexts; not whole-document proof review",
+        "lines": [
+          [
+            1,
+            260
+          ],
+          [
+            417,
+            478
+          ],
+          [
+            518,
+            578
+          ],
+          [
+            620,
+            723
+          ]
+        ],
+        "additional_search": "all-file LGF/import/status references"
+      }
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LGF.md",
+      "sha256": "40ea604c79f17027129628bc8b31f5fd6209da21dded864bf45a422dad24505e",
+      "bytes": 32339,
+      "coverage": {
+        "mode": "complete",
+        "lines": [
+          [
+            1,
+            605
+          ]
+        ]
+      }
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_LGF.md",
+      "sha256": "d6c9b4f4352bc2693ffdcabfbfa375dfc05dfa584bdd826a6a9afd1ae7ea455b",
+      "bytes": 21413,
+      "coverage": {
+        "mode": "complete",
+        "lines": [
+          [
+            1,
+            331
+          ]
+        ]
+      }
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_TSE.md",
+      "sha256": "b70b1236e525fe5e3c83cd99b9f7142801a0a215f7e4a34879cdca50917d3edf",
+      "bytes": 37525,
+      "coverage": {
+        "mode": "relevant historical findings",
+        "lines": [
+          [
+            125,
+            182
+          ]
+        ]
+      }
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "bytes": 48089,
+      "coverage": {
+        "mode": "object and normalization context",
+        "lines": [
+          [
+            1,
+            96
+          ]
+        ]
+      }
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "coverage": {
+        "mode": "complete"
+      }
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_lgf_consumer_adoption.json",
+      "sha256": "595daa2d7d5f3067b6ef80388d943a20e98f9b8c469239d251e623914c67db13",
+      "bytes": 2122,
+      "coverage": {
+        "mode": "complete"
+      }
+    }
+  ],
+  "owned_artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_LGF_CONSUMER_ASTRA.md",
+      "sha256": "cde4c645be9234b0dc43bb7c024209bd456ab2c187bb9661a6a15d1d6f629625",
+      "bytes": 10588
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lgf_consumer_source.diff",
+      "sha256": "408ecfe2dec18c29c27230556ae0379bd44f719bc9736856b14d6f1a029104f5",
+      "bytes": 11297
+    }
+  ],
+  "checks": {
+    "frozen_source_identities_match": true,
+    "adoption_receipt_matches_actual_before_after_inputs": true,
+    "original_tse_plus_frozen_diff_reconstructs_exact_reviewed_bytes": true,
+    "producer_and_historical_reviews_unchanged_since_base": true,
+    "source_diff_check_committed_unstaged_staged": true,
+    "report_relative_links_resolve_except_self_receipt_created_now": true,
+    "report_has_no_trailing_whitespace_and_ends_in_land_verdict": true,
+    "scientific_checks": "Manual analytic derivations in report; no numerical experiment or scientific runner",
+    "combined_branch_pipeline": "not run; outside focused worker scope"
+  },
+  "remaining_boundaries": [
+    "FREE test-function replacement/Riemann sums and other hypotheses retain separate scope",
+    "Other CODEX_REVIEW_TSE findings unchanged",
+    "PL-1L, H_int, nonlinear flow, continuum existence and physical continuum mass gap not discharged",
+    "No audit or retained grade; coordinator integration gates separate"
+  ],
+  "writes": "Only report and checks/review_lgf_consumer_*; no source, audit, ledger, axiom, lock, Git commit or push changes",
+  "review_reopen_condition": "Changes to frozen relevant source, premises or consumer interactions require affected confirmation"
+}

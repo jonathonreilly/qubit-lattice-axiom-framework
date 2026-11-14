@@ -1,0 +1,12 @@
+A1 True
+A1-F (True, 25)
+A2 True
+A2-F (True, [Fraction(3, 1), Fraction(10, 3), Fraction(4, 1), Fraction(13, 2), Fraction(13, 1)])
+A3a True
+A3b True
+A3c (True, ['7/512', '5/384', '168003/8000000', '5/392', '3267/80000'])
+A3d (True, '-7/8')
+A3e True
+A3-F (True, ['0', '0', '0', '0', '0'])
+A4 (True, '3/128')
+VERDICT PASS

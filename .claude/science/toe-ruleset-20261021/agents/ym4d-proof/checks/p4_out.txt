@@ -1,0 +1,17 @@
+A1 kernel tail <= (1-l)^-1.5 e^(-l b s): True (max exact/bound 0.65046); A1n prefactor-free bound fails somewhere: True
+A2 phi identity err 1.6e-15; real-combination err 1.0e-15: True
+A3 plaquette telescoping violations: 0
+B1 polar Lipschitz (factor 2) violations: 0; B1n factor-1 violations: 2847 (explicit pair fails: True)
+B2 contour-average dilution bound violations: 0
+C toy: P(bad | centre eps1-delta/8) = 0.5159 (C1 >= 0.05: True); proven toy lower bound 9.75e-55 (C2: True); C1n centre eps1/2: 0.0e+00 (True)
+D1 C(400) by eta: 0.004115: 1.0, 0.002058: 1.0, 1.0: 1.748e+954, 0.01235: 7.055e+190 -> True
+D2a monotone True; D2b max excess 256 <= 3073361: True; D2c pair/single ratios [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]: True; D2d H-geo(iii): True
+   |sh_m(Q)| m=1..10: [81, 256, 256, 256, 256, 256, 256, 256, 256, 256]
+E1 c_pr=5.56248e-7 kappa_min=1.1867e-5: False
+E2 lam_min=0.00317 sig_fl^2=5047.3 a_fl/e1^2=4.465e-13 a_J/e1^2=0.0002441 a_KN/e1^2=0.000146 a_ret/a_bad=8.027e-7
+E2 lam_min=0.00423 sig_fl^2=3782.5 a_fl/e1^2=5.958e-13 a_J/e1^2=0.0002441 a_KN/e1^2=0.000146 a_ret/a_bad=1.071e-6
+E2 PASS: True
+E3 a_ret(eps1=6.7e-40)=2.004e-91; ceilings g^2: ['1.03e-94', '1.0e-94', '7.71e-95', '7.56e-95']: True
+E4 Delta_sh = 3073361: True
+E5 a_A/a_bad = 0.25 (6theta entry binding: True)
+SUMMARY: FAIL: E1

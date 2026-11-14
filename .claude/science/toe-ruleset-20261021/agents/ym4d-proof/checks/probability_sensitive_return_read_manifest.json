@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "author_configuration_requested": "Astra/max; backend not independently attested",
+  "role": "author, not independent reviewer",
+  "initial_head": "3bba91875672becadc0ab120204905d9f1f405a8",
+  "observed_head_at_freeze": "ddc0515e563507c74050d9c55201abb6981d4d69",
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "revision": "3bba91875672becadc0ab120204905d9f1f405a8",
+      "sha256": "06ad2b5b52bfa66f7784a1fb97936337c59f5164318f89af9a2a065226671e5f",
+      "line_count": 583,
+      "read_ranges": [
+        [
+          1,
+          583
+        ]
+      ],
+      "coverage": "full original consumer read; immutable older revision"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "revision": "ddc0515e563507c74050d9c55201abb6981d4d69",
+      "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+      "line_count": 1037,
+      "read_ranges": [
+        [
+          1,
+          35
+        ],
+        [
+          760,
+          915
+        ]
+      ],
+      "coverage": "bounded pass-2 R15-R17 read; no certification of all 1037 lines"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RD.md",
+      "revision": "working bytes at freeze",
+      "sha256": "59154a352ac9f1b2e201606ab6e2d4c4e5b5624f446fed1f28ce08ab2787101e",
+      "line_count": 270,
+      "read_ranges": [
+        [
+          1,
+          250
+        ]
+      ],
+      "coverage": "bounded review/context read; no imported theorem authority"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RD_R2.md",
+      "revision": "working bytes at freeze",
+      "sha256": "bc49326b86c00e3dd029e2c8388e8cf65fd615bc926d7d6ad727158dd4f780ce",
+      "line_count": 413,
+      "read_ranges": [
+        [
+          21,
+          95
+        ]
+      ],
+      "coverage": "bounded scope/provenance read"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "revision": "working bytes at freeze",
+      "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+      "line_count": 580,
+      "read_ranges": [
+        [
+          1,
+          580
+        ]
+      ],
+      "coverage": "complete direct read of current clarified source"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_GRADED_COMPLEMENT_ASTRA.md",
+      "revision": "working bytes at freeze",
+      "sha256": "6647ee9e519e60e473e42d0b5e073a17fd405ca16aafb69eea61173d11bea0dc",
+      "line_count": 247,
+      "read_ranges": [
+        [
+          1,
+          247
+        ]
+      ],
+      "coverage": "complete scoped review read"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "revision": "working bytes at freeze",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "line_count": 722,
+      "read_ranges": [
+        [
+          27,
+          319
+        ],
+        [
+          572,
+          634
+        ]
+      ],
+      "coverage": "bounded actual model, atom, phase and complement interfaces"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "revision": "working bytes at freeze",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "line_count": 568,
+      "read_ranges": [
+        [
+          35,
+          342
+        ]
+      ],
+      "coverage": "bounded actual lift, tree, gap, local analytic and critical-map proof"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "revision": "working bytes at freeze",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "line_count": 627,
+      "read_ranges": [
+        [
+          1,
+          235
+        ],
+        [
+          490,
+          565
+        ]
+      ],
+      "coverage": "bounded fixed-source statement, corrected FR9, conditional interface and complement restrictions; full forest proof not reread"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "revision": "working bytes at freeze",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "line_count": 790,
+      "read_ranges": [
+        [
+          1,
+          440
+        ]
+      ],
+      "coverage": "bounded actual phase, complex tube, atoms and all-order local coefficient construction; later remainder theorem proof not consumed"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_CLUSTER_ASTRA.md",
+      "revision": "working bytes at freeze",
+      "sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf",
+      "line_count": 582,
+      "read_ranges": [
+        [
+          255,
+          288
+        ],
+        [
+          330,
+          360
+        ]
+      ],
+      "coverage": "bounded product-gas and exact-identity consumer read"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "revision": "working bytes at freeze",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "line_count": 812,
+      "read_ranges": [
+        [
+          376,
+          416
+        ],
+        [
+          470,
+          542
+        ]
+      ],
+      "coverage": "bounded historical consumers; their later RD correction controls"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "revision": "working bytes at freeze",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "line_count": 11,
+      "read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "coverage": "complete owner procedure"
+    }
+  ],
+  "methodology": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "line_count": 193,
+      "coverage": "read selected immutable procedure; earlier combined-output gaps repaired by bounded reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "line_count": 35,
+      "coverage": "read selected immutable procedure; earlier combined-output gaps repaired by bounded reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "line_count": 93,
+      "coverage": "read selected immutable procedure; earlier combined-output gaps repaired by bounded reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "line_count": 434,
+      "coverage": "read selected immutable procedure; earlier combined-output gaps repaired by bounded reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "line_count": 336,
+      "coverage": "read selected immutable procedure; earlier combined-output gaps repaired by bounded reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "line_count": 309,
+      "coverage": "read selected immutable procedure; earlier combined-output gaps repaired by bounded reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "line_count": 126,
+      "coverage": "read selected immutable procedure; earlier combined-output gaps repaired by bounded reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "line_count": 370,
+      "coverage": "read selected immutable procedure; earlier combined-output gaps repaired by bounded reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "line_count": 354,
+      "coverage": "read selected immutable procedure; earlier combined-output gaps repaired by bounded reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "line_count": 130,
+      "coverage": "read selected immutable procedure; earlier combined-output gaps repaired by bounded reads"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "line_count": 52,
+      "coverage": "read selected immutable procedure; earlier combined-output gaps repaired by bounded reads"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "line_count": 233,
+      "coverage": "read selected immutable procedure; earlier combined-output gaps repaired by bounded reads"
+    }
+  ],
+  "primary_source": [
+    {
+      "url": "https://arxiv.org/html/1411.1107v1",
+      "version": "v1",
+      "coverage": "Bounded web-rendered excerpts: Theorem 1 and conditions (10)-(13), Remarks 2/3/4/10; covariance-derivative identity and weak derivative discussion; interaction weakening equations (17)-(18); integration-by-parts paragraphs around rendered lines 836-875. Not a full paper read.",
+      "line_windows_requested": [
+        160,
+        169,
+        208,
+        347
+      ],
+      "find_targets": [
+        "Theorem 1.",
+        "Remark 10.",
+        "integration by parts"
+      ],
+      "binary_sha256": null,
+      "role": "construction template / attribution only; no imported theorem"
+    }
+  ],
+  "searches": [
+    {
+      "command": "git grep -n -i -E probability.sensitive|quadratic.regulator|hard.cut.*forest|forest.*hard.cut <observed-main> -- <lane>/*.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "result": "no matches on the specified landed lane path; not a repo-wide or literature absence claim"
+    },
+    {
+      "scope": "Current RD/SA/FR/GC/IC sources; rg probability-sensitive, quadratic regulator, surface trace, weak derivative",
+      "result": "GC explicit consumer-gap hits; exact candidate regulator not located in these bounded sources"
+    }
+  ],
+  "incidental_reads": [
+    {
+      "path": "RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "coverage": "Initial combined output requested lines1-265 but was truncated; not a complete read and no theorem consumed."
+    },
+    {
+      "scope": "First broad filename/keyword inventory and some combined tool outputs",
+      "coverage": "Truncated; treated only as routing clues. All proof-bearing ranges used here were subsequently read in bounded output."
+    }
+  ],
+  "not_read_or_consumed": [
+    "OUTSIDE_CHART_RETURN_ASTRA.md (active mutable work)",
+    "LITERATURE_BRIDGES.md B41 contents (coordinator message only)",
+    "RD pass-2 effective-history construction outside the stated read ranges",
+    "Predecessor numerical checker implementations and outputs"
+  ],
+  "numerical_experiments": [],
+  "limits": "Only the written positive regulator and exact identities are author proposals. No full-source review, independent LAND, audit, continuum or physical-gap claim."
+}

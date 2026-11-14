@@ -1,0 +1,513 @@
+{
+  "schema": "scoped-source-review-read-manifest-v1",
+  "created_utc": "2026-10-29T20:28:32.657318+00:00",
+  "methodology_revision_at_start": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "late_process_decision": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+    "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+    "bytes": 1497,
+    "coverage": "complete",
+    "owner_reported_commit": "43ac056899",
+    "application": "explicit grandfather clause for this already-running lane"
+  },
+  "requested_reviewer": "gpt-6-astra/max/fork-none",
+  "backend_identity_independently_verified": false,
+  "exposure": "Source-exposed fresh context; coordinator brief and numerical summaries known before criteria. No author/predecessor checker implementation seen until independent runs completed.",
+  "local_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BOTTOM_SECOND_CURVATURE_ASTRA.md",
+      "sha256": "b735eb1d551c9ba80925c0d22830b17ce823735bf7d9ac5d2e19ddabb2ff3ade",
+      "bytes": 28850,
+      "coverage": "complete",
+      "lines": 536,
+      "purpose": "source proof or explicit scope/process contract"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_STATIONARY_JET_ASTRA.md",
+      "sha256": "85b91738993f09f7e40a49f4c957c164a684bf499185629a82775229f6437254",
+      "bytes": 26289,
+      "coverage": "complete",
+      "lines": 486,
+      "purpose": "source proof or explicit scope/process contract"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CHARGED_STATIONARY_JET_ASTRA.md",
+      "sha256": "f7e02d766c8885dceeeac8d2264784cdc65b85a771ae556efa5935d45236836d",
+      "bytes": 20208,
+      "coverage": "complete",
+      "lines": 334,
+      "purpose": "source proof or explicit scope/process contract"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe",
+      "bytes": 26860,
+      "coverage": "complete",
+      "lines": 266,
+      "purpose": "source proof or explicit scope/process contract"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_confirmation.md",
+      "sha256": "fbc18b292c385876eabd205cb1781667933b88fa7dc8e7abff914e0836da338b",
+      "bytes": 3557,
+      "coverage": "complete",
+      "lines": 13,
+      "purpose": "source proof or explicit scope/process contract"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "coverage": "complete",
+      "lines": 11,
+      "purpose": "source proof or explicit scope/process contract"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "bytes": 48089,
+      "coverage": "selected actual proof/consumer sections only",
+      "read_slices": [
+        {
+          "first_line": 52,
+          "last_line": 174,
+          "sha256": "3741ee90a464c56dde7b35d5620827860d13092e5169497b91af5aa864bc33a0",
+          "bytes": 11201
+        },
+        {
+          "first_line": 175,
+          "last_line": 290,
+          "sha256": "dafa0a973183c522ffaf4c53b83236fb54756c478ac87919ddbf148223007360",
+          "bytes": 10618
+        },
+        {
+          "first_line": 475,
+          "last_line": 538,
+          "sha256": "64d927153f3e4d8d32f23c31444fc97c021eec463287be1f79b6e04051e17a61",
+          "bytes": 5023
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF_session16_snapshot.md",
+      "sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+      "bytes": 488224,
+      "coverage": "selected actual proof/consumer sections only",
+      "read_slices": [
+        {
+          "first_line": 2380,
+          "last_line": 2505,
+          "sha256": "b5ca95d466c7cd96ce85d1035b38753714004672c0bce0249ce710ae41f48b92",
+          "bytes": 11650
+        },
+        {
+          "first_line": 2649,
+          "last_line": 2798,
+          "sha256": "d59d68f7ce5e75d67c6bdf4c2a805b635671c8fd4a68aeef998aaf106875088d",
+          "bytes": 16090
+        },
+        {
+          "first_line": 3230,
+          "last_line": 3239,
+          "sha256": "e018ffddcf8b9e858bece96d794349d0208167088b7ad15ef2f2fa2c940ecee8",
+          "bytes": 1206
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/TUNIF.md",
+      "sha256": "40b7dd3c41babc8ecd89789ebd2854206444310eaf47cb2820bc8f118ca0af7b",
+      "bytes": 55943,
+      "coverage": "selected actual proof/consumer sections only",
+      "read_slices": [
+        {
+          "first_line": 160,
+          "last_line": 320,
+          "sha256": "5fc7cc3e0bc48b9ae64838d5fc20d5cf3d033016934e88d553500e6d46cf3ac8",
+          "bytes": 13626
+        },
+        {
+          "first_line": 321,
+          "last_line": 440,
+          "sha256": "3a3df5b37f18210fc4caeb26acdc5eb5152e5fdb285419d5e9070c40c7174a78",
+          "bytes": 10277
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_TUNIF2.md",
+      "sha256": "ade6e777ffe52b04464b0ff8a5fcd3a7eeebb800e0602ef64a47e4150fd703b8",
+      "bytes": 25897,
+      "coverage": "selected actual proof/consumer sections only",
+      "read_slices": [
+        {
+          "first_line": 1,
+          "last_line": 255,
+          "sha256": "8105a2f1acf7f3f1d1b352a58cc56e234f1a64f113ce7f284dfae0a24e92432b",
+          "bytes": 19421
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW55_TUNIF.md",
+      "sha256": "29ca9187347301ba46f0b17fce4d2554b6c09382070095efa239be48e24cf891",
+      "bytes": 62347,
+      "coverage": "selected actual proof/consumer sections only",
+      "read_slices": [
+        {
+          "first_line": 190,
+          "last_line": 276,
+          "sha256": "3729aeabb07b483ddf84825c63df6799f828c3429636fd1765f89bcc6e537d19",
+          "bytes": 9312
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NQ_DEF.md",
+      "sha256": "3e87bfc8478d8d6dcf648cc01ee47b564a174622ee479ef1868e1d56c639a07c",
+      "bytes": 52899,
+      "coverage": "selected actual proof/consumer sections only",
+      "read_slices": [
+        {
+          "first_line": 1,
+          "last_line": 140,
+          "sha256": "94f7655f496a6df5816328e70b901f1712b07fb91ccd2ecc3665ee85e77e0741",
+          "bytes": 10801
+        },
+        {
+          "first_line": 203,
+          "last_line": 288,
+          "sha256": "5cabb67cc35c16d3b6fb5e69dbe3e32b2123ac6ffdf29666be8e03f01e6ee24e",
+          "bytes": 7024
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_S13_S14.md",
+      "sha256": "875bf6b27bd37e832e7766cc95b96f0d2233eeb960fd16e82aa19d5dee794d62",
+      "bytes": 33308,
+      "coverage": "selected actual proof/consumer sections only",
+      "read_slices": [
+        {
+          "first_line": 75,
+          "last_line": 122,
+          "sha256": "8d4274f017e32141bd90ef8d40c3344029e46b0f6b22fd7ea4ef516f7c2f2ef9",
+          "bytes": 3937
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_S15_CONVERGENCE.md",
+      "sha256": "329f0980a3570c8e068b6454490ec62aa80fb850e05d89843d1955ba75a4fb24",
+      "bytes": 27703,
+      "coverage": "selected actual proof/consumer sections only",
+      "read_slices": [
+        {
+          "first_line": 1,
+          "last_line": 65,
+          "sha256": "de3464fd4153a32efc6e650df77759348475de84899bc9abd435bc9c6a0287c5",
+          "bytes": 4782
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NORMS.md",
+      "sha256": "3b2c9f90cde226286c24a7169ba217eea10a203bc468e5613d8854a748aa2bd7",
+      "bytes": 81173,
+      "coverage": "selected actual proof/consumer sections only",
+      "read_slices": [
+        {
+          "first_line": 480,
+          "last_line": 577,
+          "sha256": "da21618f1934662b5aa32c7772eb8e6de6a59b1691ea120db8bbe7b5176ae302",
+          "bytes": 8278
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW55.md",
+      "sha256": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25",
+      "bytes": 70208,
+      "coverage": "selected actual proof/consumer sections only",
+      "read_slices": [
+        {
+          "first_line": 250,
+          "last_line": 355,
+          "sha256": "532850ae89df86579ddb095b7289a4957ed287f3f5e8f67c4d526c3e112db3ea",
+          "bytes": 12553
+        },
+        {
+          "first_line": 562,
+          "last_line": 576,
+          "sha256": "60fadb0780aad1d6a822fe45b8e30bf201586e9894cec13a0b421642c21ac500",
+          "bytes": 1287
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR55.md",
+      "sha256": "4c6d80473a80714e2a5aa1e241e8835648bbe3c65a7bca38a5758faf3c5accb4",
+      "bytes": 68640,
+      "coverage": "selected actual proof/consumer sections only",
+      "read_slices": [
+        {
+          "first_line": 298,
+          "last_line": 340,
+          "sha256": "dc98d865ad44ab018e1be8fb58fc1107b23321e9b9aca33578cfb7cb6cf76085",
+          "bytes": 5623
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_receipt.json",
+      "sha256": "88d659a2a512fcc57b95dc077836ceb555dbeea177be36cde0abf4f6d0f977b4",
+      "bytes": 5687,
+      "coverage": "complete metadata; no authority transferred to uninspected referenced proofs"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_source_manifest.json",
+      "sha256": "8d68afd95ce5cb2315977a06f8590555b739bc80bdee2afa18eda38388a9ee67",
+      "bytes": 30041,
+      "coverage": "complete metadata; no authority transferred to uninspected referenced proofs"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_attempts.json",
+      "sha256": "dfe430cbbfb5a8b3dea7688128aa7bf1ff2828ee9f2c43e1a907e680a6fc06c5",
+      "bytes": 3973,
+      "coverage": "complete metadata; no authority transferred to uninspected referenced proofs"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_receipt.json",
+      "sha256": "ad4226851b1b1d7b29e87f19c42c18a021fd8dd7afbfb5a85eeff5007120962d",
+      "bytes": 22335,
+      "coverage": "parsed binding fields and artifact list; complete upstream report separately read"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01.py",
+      "sha256": "3e996c7ae4b9e92ca756e827d16160ad54ae323c373264bf980dc60442fc0808",
+      "bytes": 6192,
+      "coverage": "complete, only after all independent scientific runs finished"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01_out.json",
+      "sha256": "34c0a218592ac1b9764b76aff43b2d09935e9bb48832ec735b10bdca05dd08a2",
+      "bytes": 25459,
+      "coverage": "complete machine parse and exact reproduction comparison; not independent evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "coverage": "complete; empty"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02.py",
+      "sha256": "5f0d3dbad4ce83cf22e1522607e211cc9574596b1f41911f7934b7fd896ff7c5",
+      "bytes": 10831,
+      "coverage": "complete, only after all independent scientific runs finished"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02_out.json",
+      "sha256": "425cae6c2906bc001a914fe50e3dc88685e723dc1c7d1266a49cddd5ad2331c4",
+      "bytes": 10743,
+      "coverage": "complete machine parse and exact reproduction comparison; not independent evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "coverage": "complete; empty"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_criteria.md",
+      "sha256": "a70fa63222663487566be4450b5fd25815c12d09553babce118664be130029b7",
+      "bytes": 3046,
+      "coverage": "complete after independent runs"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "coverage": "complete local repository instructions"
+    }
+  ],
+  "installed_skills": [
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "coverage": "complete; reconciled against pinned authority"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "bytes": 20680,
+      "coverage": "complete; reconciled against pinned authority"
+    }
+  ],
+  "pinned_methodology_reads": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "bytes": 5188,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "bytes": 12608,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "bytes": 12940,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "bytes": 7554,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "bytes": 23216,
+      "coverage": "complete pinned git-show read; truncated initial batches were followed by complete smaller reads"
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": "Luciano Abadias and Marta De Leon-Contreras",
+      "url": "https://link.springer.com/article/10.1007/s00028-022-00851-1",
+      "coverage": "Lemma 2.6, its proof, adjacent Remark 2.5 and warning; web text lines 394-440",
+      "role": "Comparison only. Unweighted integer-lattice l1 differences; BC10-14 rebuild the weighted complex-cell argument. No global Gaussian pointwise estimate imported.",
+      "retrieval": "successful primary HTML"
+    },
+    {
+      "authors": "J. S. Dowker",
+      "url": "https://arxiv.org/pdf/1207.2096v2",
+      "coverage": "Section 2 defining generator/Bessel kernel; phase setup and equations (13)-(15), PDF pages 2-3 and 5-6 (1-based)",
+      "role": "Real-phase image/Fourier normalization comparison. Complex character and d4 product proved in the source, not imported.",
+      "retrieval": "successful primary PDF text"
+    },
+    {
+      "authors": "Emmanuel Michta and Gordon Slade",
+      "url": "https://alea.impa.br/articles/v19/19-38.pdf",
+      "coverage": "Definitions (1.1)-(1.3), Lemma 2.1 and its proof (2.3)-(2.5), PDF pages 1-2 and 9-10 (1-based)",
+      "role": "Scalar infinite-lattice normalization and heat/Bessel comparison only; no Appendix B or asymptotic result used. Surrounding search snippets are not whole-paper read coverage.",
+      "retrieval": "successful primary PDF text"
+    }
+  ],
+  "coverage_limits": [
+    "No full-PR review or audit assignment.",
+    "Selected supporting reads are not complete-file certification.",
+    "Author freeze code and raw read-slices verified by hash only, not reviewed as implementations.",
+    "No fresh theorem imported from historical Dimock/Balaban/BGM or Dybalski-Stottmeister-Tanimoto screening.",
+    "Root owns shared integration, combined pipeline and publication."
+  ]
+}

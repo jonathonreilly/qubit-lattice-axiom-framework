@@ -1,0 +1,394 @@
+{
+  "created_utc": "2026-10-29T18:21:16.653654+00:00",
+  "merge_base": "f078e7af6b9437941bcd43534e681d5a54feb249",
+  "local_candidate_commit": "4a8afc90247d771b95c9661737dc08509456ab28",
+  "incoming_head": "93a9d1a141849dfac1d8f1a585a17e43211ef271",
+  "incoming_commits": [
+    "188fcc7dbe8d8f331456792f75624d9699b8637e",
+    "93a9d1a141849dfac1d8f1a585a17e43211ef271"
+  ],
+  "initial_push_result": "non-fast-forward rejection; fetched and merged without rewriting either history",
+  "incoming_files_preserved": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "sha256": "8d4a71ece287213e5614eb9a002944aad9bdf48d728026d805a4fa24a6bb77a7",
+      "bytes": 41157,
+      "verification": "exact local status plus byte-identical remote append"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md",
+      "sha256": "d85027730ac0c7d4c6102ede801be3f4f8cd3b89a34910675280cde15a5f11b7",
+      "bytes": 46818,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP_LOG.md",
+      "sha256": "8431dc348de69c17d1e3525e904e65048f3a8134ee40b5d4a94fcb4d10854c2c",
+      "bytes": 9584,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_HRP.md",
+      "sha256": "b02e4fad071318c6558699469eae78397986f325fde7c26848cfd45acea42fd6",
+      "bytes": 23660,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SPHERE55.md",
+      "sha256": "658bdd59998263c824b6f3c2cc239df6b16cad8704eae0b0e44ff97413366cba",
+      "bytes": 82451,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_hrp/AUTHOR_BRIEF_HRP.md",
+      "sha256": "465aaa4e5c14f38daf739c188bfa1b2ee97c9adf9b70e97312c774ab0e55ca3c",
+      "bytes": 7857,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_hrp/REVIEW_BRIEF_HRP.md",
+      "sha256": "eda747765ae684528fc7728db1ce73051ca5e9813cb621dfc8c483d63a4ea8b5",
+      "bytes": 2283,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Q8_4x2_link.json",
+      "sha256": "4e341cae52e764f4d5c87296d2e927e5417e54abd43fb83ea9e2f706f1a3bdbb",
+      "bytes": 15312,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Q8_4x2_site.json",
+      "sha256": "af3851a3136613a3c96cbca58631ca2c9e09aa60cef252d6a6c5217b872698cc",
+      "bytes": 156291,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Q8_4x2x2_sheets_link.json",
+      "sha256": "ab590a0ddc4f11abb143cca083b66c678e3102c4208a396c86d9a8c5e465fc41",
+      "bytes": 15658,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Q8_4x2x2_sheets_site.json",
+      "sha256": "16784f5622fed2c586ae2177ac0bf37c904e6e1dd5df6345f0490aef313c9942",
+      "bytes": 156636,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Q8_zero_link.json",
+      "sha256": "df6873edf510669b9a05fce036f44166e41ab2fb6bd174f291b3fe59dfffc676",
+      "bytes": 11848,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Q8_zero_site.json",
+      "sha256": "289fadc1f69ef71f458c26c2128b48d815547352d73162c58296ace2e6eb7841",
+      "bytes": 153442,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Z2_4x2_link.json",
+      "sha256": "6fe83771d9b50b12a2277d4a5bee0c706797c8f53e433729a5e29afffc3029ae",
+      "bytes": 920,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Z2_4x2_site.json",
+      "sha256": "731c8aad3e113c8654661a378ce336f7008e79870fcaec0b658d952efa9fa49c",
+      "bytes": 1605,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Z2_4x2x2_sheets_link.json",
+      "sha256": "460665a79e3b60df9800150813c8785668a2340292459b75f84a69d2a95af9a0",
+      "bytes": 1260,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Z2_4x2x2_sheets_site.json",
+      "sha256": "de5c3c0a82db375650919cb79cd1f2eff978ff03e1ffc73ee1109a3baf879d8d",
+      "bytes": 1945,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Z2_zero_link.json",
+      "sha256": "5584a8262cd28180bfe310ef3f19266c1bf614c475a9f3e96b02a34c14cb2892",
+      "bytes": 602,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Z2_zero_site.json",
+      "sha256": "fdd572e42f73ae2f69777dee82432b2a457f44e826dbafd111e8e63cf4229cf9",
+      "bytes": 1324,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Z3_4x2_link.json",
+      "sha256": "a12df7ce40ffb9d5464b181ac19c17b42fb7d1b5393ce35f6e567923b1b1b3cd",
+      "bytes": 2629,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Z3_4x2_site.json",
+      "sha256": "520526eb534f4536e6c2ab3c1c244856e1220813616d0d323f06241e8fed398a",
+      "bytes": 9559,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Z3_4x2x2_sheets_link.json",
+      "sha256": "468aa86e136e8732587549bb4e8fdd95c0f81288285bd3cea724c4f0d4204d71",
+      "bytes": 2974,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Z3_4x2x2_sheets_site.json",
+      "sha256": "1134f413e41e55b843f971dd90b926dead123222fa8c88cdf30a4fcbfb320615",
+      "bytes": 9904,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Z3_zero_link.json",
+      "sha256": "073346a5ba79c8559ba0824954bc9d497b71e0ea8dcccd6da87c2366852e6f73",
+      "bytes": 1666,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_Z3_zero_site.json",
+      "sha256": "e42ecfadceaa6b0d6ad9850e48c3c000102118bd021faeaa3c7675622dfc28b2",
+      "bytes": 8719,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_err.txt",
+      "sha256": "575ba07862b014c8b4d0d6c78d31d89a73996f4dbe29f10f196d5c4bd5de1213",
+      "bytes": 763,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_out.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt",
+      "sha256": "b0fa795905e3eac61f284c45023b1445dc261a902ab2e327b96e3710f7c60edd",
+      "bytes": 1103,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_run.sh",
+      "sha256": "2dffd4949e2185a4b2fe5d192dd0f178b2d044a3849cfa469287db7b92215582",
+      "bytes": 1691,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_script.py",
+      "sha256": "31af46940c861b09cc7aac42efd00261790296b652bbeacd1ede6c6362c137d1",
+      "bytes": 24582,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_time.txt",
+      "sha256": "4e60e8c2b1f204314d8d27a7b65347f872bc3ad744ed7004f5a128cf5166b936",
+      "bytes": 179,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_err.txt",
+      "sha256": "575ba07862b014c8b4d0d6c78d31d89a73996f4dbe29f10f196d5c4bd5de1213",
+      "bytes": 763,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_out.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt",
+      "sha256": "b0fa795905e3eac61f284c45023b1445dc261a902ab2e327b96e3710f7c60edd",
+      "bytes": 1103,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_time.txt",
+      "sha256": "4e60e8c2b1f204314d8d27a7b65347f872bc3ad744ed7004f5a128cf5166b936",
+      "bytes": 179,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_author_validation.json",
+      "sha256": "fdb6cc56bce41375cf6e91fc75acd9b1e74b3ece43d81e1c10c7f854fbea3ea7",
+      "bytes": 5263,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_control_asymmetric_cell.json",
+      "sha256": "138a185dd3a6e631fffe08851182771c358f0c21c7ab38532affe8e8a4bd867f",
+      "bytes": 486,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_control_asymmetric_cell_hermitian_part.json",
+      "sha256": "0013b5fb140d6bfad8b1ce8c95f5ff9b233bac385e898dc2a30ed8f290c28895",
+      "bytes": 503,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_control_asymmetric_coupling.json",
+      "sha256": "2428b1f23f85a900dbe3917abddb6519ef655108b05cd1db2bb34096a87a52fe",
+      "bytes": 773,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_control_asymmetric_coupling_hermitian_part.json",
+      "sha256": "4e052d691fedc695fb1cbd6c702c357b73656022c66f918bfce5f2e1e0103178",
+      "bytes": 746,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_control_negative_beta.json",
+      "sha256": "aad3ed01e3ba463ed179a4a6e1a5cdc30250cea9941e8a86a14c42efbeb36d96",
+      "bytes": 877,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_criteria.md",
+      "sha256": "3e00f5ec5bbc32522636004aa72628c45884fe3762573c047e1105593ea82173",
+      "bytes": 2734,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_direct_Z2_4x2_link.json",
+      "sha256": "e6557da3018c83a10b18ed0688f4b5a033bcd4d845e5322e7aead68ca27831af",
+      "bytes": 848,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_direct_Z2_4x2_site.json",
+      "sha256": "85ce4f63b0c126aa553476d972f3924086e461a8c088ae934930ad64ced7ff5b",
+      "bytes": 1534,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_exact.py",
+      "sha256": "e951fb782c09534aac8a7c178b5963b731274fff83de6c34a5b7afe52415e2b6",
+      "bytes": 25529,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_full_Z2_4x2x2_link.json",
+      "sha256": "1594a15287ef5ec442a3f58c30183b60ad99544c17968b4da0623524efaab302",
+      "bytes": 106669,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_full_Z2_4x2x2_site.json",
+      "sha256": "12fb8aa56252d17e325a7ef679a2f1d78fc9eb331619d1fe7296e914d77998f9",
+      "bytes": 89955,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_lead_rerun.md",
+      "sha256": "8d6e63e75f3e868496bb4b56ce7d1d11614e7d9334477972e45f0ccf79b2c89a",
+      "bytes": 2724,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_lead_rerun_hashes.txt",
+      "sha256": "e7c6eeb6c6a38bce225d12cd9c2db53030bdd5baa91468841ad2dd5a9588e720",
+      "bytes": 259,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_out.txt",
+      "sha256": "4c82efa3b5f12b9dd8444934f0065baa9e89946bab3c048119105969d1afb211",
+      "bytes": 4282,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt",
+      "sha256": "18145b6e7a4442d58f477e579c0b45ce5bc160d09d07faecc0dd955b3b0d07ee",
+      "bytes": 1132,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_prism_Q8.json",
+      "sha256": "69e4c87a3e1e0328930baeb30459d3c92018abd8011dc0583988933d7f66a612",
+      "bytes": 4365,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_prism_Z2.json",
+      "sha256": "97ca6db0f87842afae7d52f458863cb98b3d42652fa4c7e82b228d99670bcf2d",
+      "bytes": 3542,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_prism_Z3.json",
+      "sha256": "32cee1ae299a210de0d4a04c9817e6845fb63ba46c0e13019b98aea463d2d4f5",
+      "bytes": 3855,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_run.sh",
+      "sha256": "893d362daf45eeb30c78a6cb1b658a4572d696b62f05ebad9813c7c72a86ba98",
+      "bytes": 1691,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_sources_initial.json",
+      "sha256": "00e40a7a68dc92d80f4b6957daeca21210453aa0c6562c4485968280f3b3785f",
+      "bytes": 2558,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_sphere_geometry.json",
+      "sha256": "b7f6d3884b599a5b122599d87d05c63ab7ea888b8ed814a315de2815ccf2e8e6",
+      "bytes": 1453,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_summary.json",
+      "sha256": "14baa4545e8fb34a2dd45e829f5a5e6771e50d0e30c68d54bd6449c0afa65c82",
+      "bytes": 4430,
+      "verification": "byte-identical remote file"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_time.txt",
+      "sha256": "c91eb264c858194ae4e996e09fc232fb1ec430c591cb47eb09020fe9f5afde0e",
+      "bytes": 59,
+      "verification": "byte-identical remote file"
+    }
+  ],
+  "conflicts": [],
+  "frozen_candidate_artifacts_unchanged": 46,
+  "staged_whitespace": {
+    "exit_code": 2,
+    "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:4: trailing whitespace.\n+Stats: \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:5: trailing whitespace.\n+Pages free: 4922 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:6: trailing whitespace.\n+Pages purgeable: 2 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:7: trailing whitespace.\n+Pages purged: 271276383 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:10: trailing whitespace.\n+Swapins: 166726193 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:11: trailing whitespace.\n+Swapouts: 173486570 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:14: trailing whitespace.\n+Pages active: 90026 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:15: trailing whitespace.\n+Pages inactive: 88357 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:16: trailing whitespace.\n+Pages speculative: 740 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:17: trailing whitespace.\n+Pages throttled: 0 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:18: trailing whitespace.\n+Pages wired down: 102607 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:21: trailing whitespace.\n+Pages used by compressor: 198511 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:22: trailing whitespace.\n+Pages decompressed: 2379084333 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:23: trailing whitespace.\n+Pages compressed: 2566912626 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:26: trailing whitespace.\n+Pageins: 336716279 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:27: trailing whitespace.\n+Pageouts: 2297987 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:32: trailing whitespace.\n+Stats: \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:33: trailing whitespace.\n+Pages free: 4641 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:34: trailing whitespace.\n+Pages purgeable: 18 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:35: trailing whitespace.\n+Pages purged: 271276551 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:38: trailing whitespace.\n+Swapins: 166726193 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:39: trailing whitespace.\n+Swapouts: 173486570 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:42: trailing whitespace.\n+Pages active: 86669 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:43: trailing whitespace.\n+Pages inactive: 84992 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:44: trailing whitespace.\n+Pages speculative: 925 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:45: trailing whitespace.\n+Pages throttled: 0 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:46: trailing whitespace.\n+Pages wired down: 106918 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:49: trailing whitespace.\n+Pages used by compressor: 200891 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:50: trailing whitespace.\n+Pages decompressed: 2379084779 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:51: trailing whitespace.\n+Pages compressed: 2566919374 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:54: trailing whitespace.\n+Pageins: 336716707 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt:55: trailing whitespace.\n+Pageouts: 2297987 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:4: trailing whitespace.\n+Stats: \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:5: trailing whitespace.\n+Pages free: 4922 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:6: trailing whitespace.\n+Pages purgeable: 2 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:7: trailing whitespace.\n+Pages purged: 271276383 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:10: trailing whitespace.\n+Swapins: 166726193 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:11: trailing whitespace.\n+Swapouts: 173486570 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:14: trailing whitespace.\n+Pages active: 90026 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:15: trailing whitespace.\n+Pages inactive: 88357 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:16: trailing whitespace.\n+Pages speculative: 740 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:17: trailing whitespace.\n+Pages throttled: 0 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:18: trailing whitespace.\n+Pages wired down: 102607 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:21: trailing whitespace.\n+Pages used by compressor: 198511 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:22: trailing whitespace.\n+Pages decompressed: 2379084333 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:23: trailing whitespace.\n+Pages compressed: 2566912626 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:26: trailing whitespace.\n+Pageins: 336716279 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:27: trailing whitespace.\n+Pageouts: 2297987 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:32: trailing whitespace.\n+Stats: \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:33: trailing whitespace.\n+Pages free: 4641 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:34: trailing whitespace.\n+Pages purgeable: 18 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:35: trailing whitespace.\n+Pages purged: 271276551 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:38: trailing whitespace.\n+Swapins: 166726193 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:39: trailing whitespace.\n+Swapouts: 173486570 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:42: trailing whitespace.\n+Pages active: 86669 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:43: trailing whitespace.\n+Pages inactive: 84992 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:44: trailing whitespace.\n+Pages speculative: 925 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:45: trailing whitespace.\n+Pages throttled: 0 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:46: trailing whitespace.\n+Pages wired down: 106918 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:49: trailing whitespace.\n+Pages used by compressor: 200891 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:50: trailing whitespace.\n+Pages decompressed: 2379084779 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:51: trailing whitespace.\n+Pages compressed: 2566919374 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:54: trailing whitespace.\n+Pageins: 336716707 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt:55: trailing whitespace.\n+Pageouts: 2297987 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:4: trailing whitespace.\n+Stats: \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:5: trailing whitespace.\n+Pages free: 5114 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:6: trailing whitespace.\n+Pages purgeable: 3535 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:7: trailing whitespace.\n+Pages purged: 273179702 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:10: trailing whitespace.\n+Swapins: 166813093 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:11: trailing whitespace.\n+Swapouts: 173638030 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:14: trailing whitespace.\n+Pages active: 110693 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:15: trailing whitespace.\n+Pages inactive: 108712 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:16: trailing whitespace.\n+Pages speculative: 1083 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:17: trailing whitespace.\n+Pages throttled: 0 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:18: trailing whitespace.\n+Pages wired down: 125418 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:21: trailing whitespace.\n+Pages used by compressor: 133969 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:22: trailing whitespace.\n+Pages decompressed: 2389158285 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:23: trailing whitespace.\n+Pages compressed: 2577463801 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:26: trailing whitespace.\n+Pageins: 337972553 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:27: trailing whitespace.\n+Pageouts: 2307349 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:32: trailing whitespace.\n+Stats: \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:33: trailing whitespace.\n+Pages free: 4576 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:34: trailing whitespace.\n+Pages purgeable: 3551 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:35: trailing whitespace.\n+Pages purged: 273179702 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:38: trailing whitespace.\n+Swapins: 166813093 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:39: trailing whitespace.\n+Swapouts: 173638030 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:42: trailing whitespace.\n+Pages active: 110891 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:43: trailing whitespace.\n+Pages inactive: 108961 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:44: trailing whitespace.\n+Pages speculative: 1180 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:45: trailing whitespace.\n+Pages throttled: 0 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:46: trailing whitespace.\n+Pages wired down: 125418 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:49: trailing whitespace.\n+Pages used by compressor: 133879 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:50: trailing whitespace.\n+Pages decompressed: 2389158622 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:51: trailing whitespace.\n+Pages compressed: 2577463801 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:54: trailing whitespace.\n+Pageins: 337972636 \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt:55: trailing whitespace.\n+Pageouts: 2307349 \n",
+    "stderr": ""
+  },
+  "review_status": "REVIEW_HRP preserves HOLD. Claude subsequently supplied the frozen run certificates; independent inspection and exact section9 wording remain to be completed. No new banking/audit verdict by this merge.",
+  "coordinator_read": "Complete REVIEW_HRP and lead rerun report, complete SPHERE55 and HANDOFF appends; HRP source only partially read at integration. No independent full-proof certification.",
+  "scope": "Preserve concurrent requested progress; continuum existence and physical mass gap remain OPEN.",
+  "raw_log_whitespace_disposition": {
+    "affected_files": [
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt1_preflight.txt",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_attempt2_sandbox_preflight.txt",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_preflight.txt"
+    ],
+    "action": "Preserve remote raw memory_pressure output byte for byte; no cleanup of evidence.",
+    "source_and_markdown_whitespace_exit": 0,
+    "note": "The initial blanket assertion was too broad for raw recorded command output; its exact failure remains in staged_whitespace above."
+  },
+  "mechanical_validation": "All incoming JSON and Python parse; shell syntax passes; no scientific runners executed at merge."
+}

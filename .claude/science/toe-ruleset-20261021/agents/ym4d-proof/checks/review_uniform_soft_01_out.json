@@ -1,0 +1,264 @@
+{
+  "schema": "review-uniform-soft-independent01-v1",
+  "checks": [
+    {
+      "name": "all_actual_L3_swept_surface_boundaries",
+      "passed": true,
+      "contours": 7776,
+      "failures": 0,
+      "largest_l1": 9
+    },
+    {
+      "name": "all_actual_L3_centered_spread_boundaries",
+      "passed": true,
+      "spreads": 7776,
+      "failures": 0,
+      "largest_l1": 14.185185185185185
+    },
+    {
+      "name": "deleted_plaquette_mutation_rejected",
+      "passed": true
+    },
+    {
+      "name": "missing_mean_spread_mutation_rejected",
+      "passed": true,
+      "endpoint_coefficients": [
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "actual_root_covariance",
+      "passed": true,
+      "error": 1.6653345369377348e-16
+    },
+    {
+      "name": "actual_root_straight_funnel",
+      "passed": true,
+      "error": 1.734723475976807e-17
+    },
+    {
+      "name": "curl_gradient_zero",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "normalized_stationarity",
+      "passed": true,
+      "error": 6.959701073170656e-16
+    },
+    {
+      "name": "root_zero_gauge_constraint",
+      "passed": true,
+      "error": 8.231898081233677e-16
+    },
+    {
+      "name": "gradient_data_annihilated",
+      "passed": true,
+      "error": 9.883479487474064e-16
+    },
+    {
+      "name": "projected_root_straight_noise",
+      "passed": true,
+      "error": 2.1538662251394396e-16
+    },
+    {
+      "name": "unprojected_noise_mutation_rejected",
+      "passed": true,
+      "difference": 0.1703015937162184
+    },
+    {
+      "name": "direct_KKT_matches_soft_Schur",
+      "passed": true,
+      "error": 6.812586915097096e-16
+    },
+    {
+      "name": "hard_soft_factorization_on_CoCl",
+      "passed": true,
+      "error": 4.446963577047809e-16
+    },
+    {
+      "name": "hard_soft_order_on_CoCl",
+      "passed": true,
+      "minimum": 1.4666614053288924
+    },
+    {
+      "name": "unprojected_inverse_mutation_rejected",
+      "passed": true,
+      "identity_failure": 0.6011397354942465
+    },
+    {
+      "name": "counting_sums_r_3",
+      "passed": true,
+      "row": [
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "column_min": 0.037037037037037035,
+      "column_max": 0.037037037037037035
+    },
+    {
+      "name": "wrong_adjoint_scale_r_3_rejected",
+      "passed": true,
+      "difference": 0.2962962962962963
+    },
+    {
+      "name": "counting_sums_r_9",
+      "passed": true,
+      "row": [
+        9.0,
+        9.0,
+        9.0,
+        9.0
+      ],
+      "column_min": 0.0013717421124828531,
+      "column_max": 0.0013717421124828533
+    },
+    {
+      "name": "wrong_adjoint_scale_r_9_rejected",
+      "passed": true,
+      "difference": 0.10973936899862825
+    },
+    {
+      "name": "harmonic_zero_energy_lift",
+      "passed": true,
+      "error": 2.220446049250313e-15
+    },
+    {
+      "name": "harmonic_residual_identity_mutation_rejected",
+      "passed": true
+    },
+    {
+      "name": "d3_length_rescaling_mutation_rejected",
+      "passed": true,
+      "difference": 0.666666666666666
+    },
+    {
+      "name": "periodic_all_80_nonzero_fibres_stationary",
+      "passed": true,
+      "max_error": 1.8528069340226222e-15
+    },
+    {
+      "name": "real_periodic_kernels",
+      "passed": true,
+      "max_imaginary": 1.5019397980872221e-16
+    },
+    {
+      "name": "actual_kernel_density_loss_mutation_rejected",
+      "passed": true,
+      "row": 1.1317796419087014,
+      "column": 113.85900495326383,
+      "density": 81
+    },
+    {
+      "name": "actual_spread_is_nonzero",
+      "passed": true,
+      "row": 0.5894468987839319
+    },
+    {
+      "name": "nested_gauge_kernel_actual_chain",
+      "passed": true,
+      "error": 2.968015972188051e-15
+    },
+    {
+      "name": "depth_two_actual_stationarity",
+      "passed": true,
+      "solver_info": 0,
+      "iterations": 231,
+      "relative_error": 3.207504366157705e-13
+    },
+    {
+      "name": "depth_two_residual_transport_variable_kappa",
+      "passed": true,
+      "error": 1.5777169633342937e-14
+    },
+    {
+      "name": "depth_two_wrong_kappa_mutation_rejected",
+      "passed": true,
+      "error": 0.006857353882409083
+    },
+    {
+      "name": "depth_two_wrong_residual_sign_mutation_rejected",
+      "passed": true,
+      "error": 0.02742941552961718
+    },
+    {
+      "name": "depth_two_curvature_scale_identity",
+      "passed": true,
+      "error": 1.422944096910367e-14
+    },
+    {
+      "name": "missing_curvature_scale_mutation_rejected",
+      "passed": true,
+      "error": 1.3648120617403985
+    }
+  ],
+  "passed": 34,
+  "total": 34,
+  "details": {
+    "periodic_norms": {
+      "F0": {
+        "row_max": 1.1317796419087014,
+        "column_max": 113.85900495326383,
+        "columns": [
+          113.859004953263,
+          113.85900495326317,
+          113.85900495326379,
+          113.85900495326383
+        ],
+        "column_to_row": 100.6017432521097,
+        "imaginary_max": 1.5019397980872221e-16
+      },
+      "r0": {
+        "row_max": 3.7474415385530957,
+        "column_max": 3.7474415385530824,
+        "columns": [
+          3.7474415385530824,
+          3.74744153855308,
+          3.7474415385530797,
+          3.7474415385530793
+        ],
+        "column_to_row": 0.9999999999999964,
+        "imaginary_max": 5.651169000538737e-17
+      },
+      "spread_selected": {
+        "row_max": 0.5894468987839319,
+        "column_max": 0.5904475356646908,
+        "columns": [
+          0.5904475356646908,
+          0.5862509346461859,
+          0.5856803726259271,
+          0.5890265259550955
+        ],
+        "column_to_row": 1.0016975861317166,
+        "imaginary_max": 1.806166207355741e-17
+      }
+    },
+    "periodic_scope": {
+      "T": 3,
+      "L": 3,
+      "depth": 1,
+      "m": 0.003,
+      "solver": "explicit root-zero-gauge KKT",
+      "source_orientations": 4,
+      "fine_plaquette_offsets_and_orientations": 486,
+      "selected_spreads": 4
+    },
+    "depth_two": {
+      "fine_side": 9,
+      "middle_side": 3,
+      "kappa": [
+        0.7,
+        1.4
+      ],
+      "degrees_of_freedom": 26568,
+      "gauge_parameters": 6560
+    }
+  },
+  "exception": null,
+  "elapsed_seconds": 13.760505199432373,
+  "finite_scope_only": true,
+  "author_helpers_imported": false
+}

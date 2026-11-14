@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-29T14:34:19.737368+00:00",
+  "original_commit": "fae864bbf31b276363ef96be120afa6d69e79683",
+  "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md",
+  "before_sha256": "9542b717307e743b4e8daf25a8549c44562666563375cf66f6147eda3cb85e3f",
+  "after_sha256": "0cb55655ec73f31dd8df4b6353b0d3f6345191579c38945819da881860e311d6",
+  "review_finding": "Fixed white coordinates and analytic b,C do not make an arbitrary hard retained history analytic in complex coarse B.",
+  "repair": "Retain entire epsilon dependence at fixed real B for bounded epsilon-independent histories; restrict complex-B continuation to empty history or a separately justified holomorphic fixed-W pullback with uniform integrable domination.",
+  "scope": "Only the C8 continuation paragraph changes. Fixed real-domain identity and empty-history contour proof remain at their existing scope. Same-context independent confirmation pending."
+}

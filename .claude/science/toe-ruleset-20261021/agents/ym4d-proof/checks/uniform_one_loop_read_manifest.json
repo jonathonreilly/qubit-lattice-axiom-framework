@@ -1,0 +1,220 @@
+{
+  "author": "/root/charged_stationary_jet; user-selected Astra/max context",
+  "coordinator_concurrent_update": "Coordinator announced merge6b28a7cc77f6d28c3683d18e7001029b2bad2481 during work. No new LGF/LIB1/REC_LIB/SOFTHARD result is consumed; the named CJ/BC/linear/FP sources were unchanged and their pinned hashes checked.",
+  "created_utc": "2026-10-29T21:01:02.896688+00:00",
+  "dispatch_head_from_coordinator": "fcdd32c83bc5aed08ef4f3aa5da512e668d8b216",
+  "external_reads": [
+    {
+      "identity": "Kim, Adams, Lee; arXiv0710.1930v1,10Oct2007",
+      "read_coverage": "Main body pp1-6, sections1-5 (web lines0-475); references only partially seen. In particular setup, scale-derivative proof, quantitative-rate dependency and massless/no-doublers qualifications read. No lattice power-counting theorem imported.",
+      "reuse": "Comparison attribution; needed finite-part steps rebuilt in UL14-UL25.",
+      "url": "https://arxiv.org/pdf/0710.1930"
+    },
+    {
+      "identity": "Luescher and Weisz; hep-lat9504006,11Apr1995",
+      "read_coverage": "Abstract/introduction; continuum definitions2.1-2.6; lattice section5.1-5.2 equations5.1-5.14; section6 displayed BRS/shift identities6.1-6.25. The all-order sections4/7/8 were not read in full for this unit and are not consumed.",
+      "reuse": "Background gauge framework attribution only. Actual Ward identities, chart conversion, zero-momentum cancellation and Gaussian coefficients rebuilt locally.",
+      "url": "https://arxiv.org/pdf/hep-lat/9504006"
+    }
+  ],
+  "inputs": [
+    {
+      "bytes": 1497,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "read_coverage": "Full 11-line owner process; read at coordinator-specified revision 43ac056899. Numerical-only preregistration, direct edits, fresh LAND/HOLD review; supersedes old lane process where different.",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+    },
+    {
+      "bytes": 48089,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "read_coverage": "Current-task full lines49-164: own-unit definitions, S4 paired roots, quadratic chain and E-low. Additional named strip/periodic proofs previously read in full relevant ranges for the frozen US/CJ/BC packets; reused unchanged at their stated scope.",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad"
+    },
+    {
+      "bytes": 26860,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "read_coverage": "Current-task lines1-88 and110-173; previously consumed full proof US1-US17. Actual normalized-tree scope and validated unprimed strip; not the finite-u density Hessian.",
+      "sha256": "203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe"
+    },
+    {
+      "bytes": 17036,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "read_coverage": "Previously read full for frozen CJ/BC author packets; unchanged scoped review reused with both scope records.",
+      "sha256": "78d40a5480aafe94c30ee5c0b827d30b84ec629dfccaa91b44c98cfe08ecf3d9"
+    },
+    {
+      "bytes": 8764,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_review.md",
+      "read_coverage": "Previously read full; normalized-tree correction scope record reused unchanged.",
+      "sha256": "1fec8e9c3c34c00a08dc775e94edfab25031c0bbe3d719f7d42c5587ce05ff11"
+    },
+    {
+      "bytes": 3557,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_confirmation.md",
+      "read_coverage": "Previously read full; normalized-tree scope confirmation reused unchanged.",
+      "sha256": "fbc18b292c385876eabd205cb1781667933b88fa7dc8e7abff914e0836da338b"
+    },
+    {
+      "bytes": 26289,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_STATIONARY_JET_ASTRA.md",
+      "read_coverage": "Previously authored and read in full; current-task lines1-90 reread for exact CJ1-CJ2/linear-contract/HS dictionary. Full-colour CJ11-CJ17 and CJ18 implication reused with fresh upstream review.",
+      "sha256": "85b91738993f09f7e40a49f4c957c164a684bf499185629a82775229f6437254"
+    },
+    {
+      "bytes": 20208,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CHARGED_STATIONARY_JET_ASTRA.md",
+      "read_coverage": "Read in full in previous BC task after the review freeze; unchanged source-scoped confirmation of CJ11-CJ17 and CJ18-to-quartic implication, not a review of this new unit.",
+      "sha256": "f7e02d766c8885dceeeac8d2264784cdc65b85a771ae556efa5935d45236836d"
+    },
+    {
+      "bytes": 28850,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BOTTOM_SECOND_CURVATURE_ASTRA.md",
+      "read_coverage": "Previously authored and read in full; current-task lines1-96 and270-485 reread for exact source, analytic continuation, row/column counting and completed-quartic BC26.",
+      "sha256": "b735eb1d551c9ba80925c0d22830b17ce823735bf7d9ac5d2e19ddabb2ff3ade"
+    },
+    {
+      "bytes": 22149,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BOTTOM_SECOND_CURVATURE_ASTRA.md",
+      "read_coverage": "Current-task full read, with exact review hash supplied by coordinator. Confirms BC3/CJ18 and BC26 under the named normalized-tree/linear/current contracts.",
+      "sha256": "d4597d612af42aa994475767fe4f33828b8eb2fa4e2762d696fb529e6c5c134b"
+    },
+    {
+      "bytes": 36980,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "read_coverage": "Current-task sections0-2.2 start, then bounded52-174 and175-224; previous full read in US/CJ packets. FC3-FC17 fully consumed here, including actual neutral finite term, both Grams, root mean, regulator and every-depth consumer.",
+      "sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7"
+    },
+    {
+      "bytes": 29488,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "read_coverage": "Current-task complete assembled read:1-115 plus remainder visible in earlier full read. Fixed-n volume-first full-colour residual identity and exact consumer scope.",
+      "sha256": "0b504129260e0269ae8dffa79f2113a6bb94675edc37c084fe8f9be6464e67bc"
+    },
+    {
+      "bytes": 33039,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_UIR.md",
+      "read_coverage": "Current-task full assembled read: R1-R7, bounded104-151 for R8/R9, and150-end. Correct bubble1/2, corrected FP and TEL proof, old extra-Dirichlet-factor correction, no finite-T inference.",
+      "sha256": "74860ce5d301819ec626940ff1d6cf1a6326cb9c2639c9329a7f1083e087b952"
+    },
+    {
+      "bytes": 68640,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR55.md",
+      "read_coverage": "Current-task248-338 (TEL, FP and class J),421-459 (coefficient derivation and old control limits); earlier exact neutral erratum/consumer already consumed in FC packet. Printed FP bubble1/4 is expressly rejected, not imported.",
+      "sha256": "4c6d80473a80714e2a5aa1e241e8835648bbe3c65a7bca38a5758faf3c5accb4"
+    },
+    {
+      "bytes": 35284,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_UIR_ASTRA.md",
+      "read_coverage": "Current-task132-246: normalized phi/HS dictionary, fixed-depth stationary germ, exact jet periodization, finite-part transfer and every-increment logic.",
+      "sha256": "0cbb4f9a967022ab669cae087617f390b2bfb481034012aac85e7cfc9928bc40"
+    },
+    {
+      "bytes": 26968,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RECOVERY_UIR_ASTRA.md",
+      "read_coverage": "Current-task77-141, findings4-9: source/action/consumer conditions and every-increment quantifier.",
+      "sha256": "347b7ae680b2c305cc7bb5de8b4496d069bbea309a6df71f18109c54a22c4098"
+    },
+    {
+      "bytes": 539577,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW.md",
+      "read_coverage": "Current-task20-45,113-158,252-285,313-339: normalization, corrected phi dictionary, original u and beta, actual F-tree/F-bg and F-tel, obsolete F-split correction read and not imported.",
+      "sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f"
+    },
+    {
+      "bytes": 70208,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW55.md",
+      "read_coverage": "Current-task209-251 (Ward/jet marginal identities),352-456 (gauge-minimized Gaussian factors, relative-gauge term, ghost and original B consumer); prior cubic source read in CJ packet.",
+      "sha256": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25"
+    },
+    {
+      "bytes": 67652,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HINT2_55.md",
+      "read_coverage": "Current-task368-393, exact R2.3 L4 B-BR with every0<=j<=n quantifier and remaining nonlinear/physical obligations.",
+      "sha256": "e617800fa0426a6099b5b6966cf383d118eeed33f363b5c9ff866108a6537dbf"
+    },
+    {
+      "bytes": 22787,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "read_coverage": "Current-task targeted rowsB10/B11 and relevant Balaban/Dimock comparison rows via bounded name search; previously read relevant bridges in frozen packets. No new concurrent LGF/LIB1/REC_LIB/SOFTHARD theorem consumed.",
+      "sha256": "0026b07d09f94f69e5ab0faa5c393f84d2e892440c105286eedaa863894fe2cf"
+    },
+    {
+      "bytes": 9845,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "read_coverage": "Current-task relevant B03/B07/B08/B10/B11 rows via bounded name search; literature remains comparison/attribution, not an added assumption.",
+      "sha256": "7e81ca1e05375708d503871304971430d97ce38f7719680335d50314034da6d4"
+    },
+    {
+      "bytes": 13823,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_source_manifest.json",
+      "read_coverage": "Frozen provider provenance reused from the previous unit; parsed source/review inventory and checked exact announced hash here. It binds the prior complete named-linear proof reads; metadata is not treated as a substitute proof.",
+      "sha256": "c8ad3708cb24b231e64538c79da61420ebc35a8c6042bc86f7f2a5955296467d"
+    },
+    {
+      "bytes": 30041,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_source_manifest.json",
+      "read_coverage": "Frozen provider provenance reused from the previous unit; parsed source/review inventory and checked exact announced hash here. It binds the prior complete named-linear proof reads; metadata is not treated as a substitute proof.",
+      "sha256": "8d68afd95ce5cb2315977a06f8590555b739bc80bdee2afa18eda38388a9ee67"
+    },
+    {
+      "bytes": 22335,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_receipt.json",
+      "read_coverage": "Frozen provider provenance reused from the previous unit; parsed source/review inventory and checked exact announced hash here. It binds the prior complete named-linear proof reads; metadata is not treated as a substitute proof.",
+      "sha256": "ad4226851b1b1d7b29e87f19c42c18a021fd8dd7afbfb5a85eeff5007120962d"
+    },
+    {
+      "bytes": 20925,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bottom_curvature_receipt.json",
+      "read_coverage": "Frozen provider provenance reused from the previous unit; parsed source/review inventory and checked exact announced hash here. It binds the prior complete named-linear proof reads; metadata is not treated as a substitute proof.",
+      "sha256": "0214f4097bb5413d997de8da03aee955ca0bc196541a261ba1b45a46f63c2fa5"
+    }
+  ],
+  "methodology": {
+    "installed_skill_rereads": "physics-loop and review-loop entry points were reread as routers only; earlier consistent methodology reads and later PROCESS_LIGHT owner instruction govern. Root owns review/publication/audit; no Git mutation or shared-file edit by this author.",
+    "new_lane_process_revision": "43ac056899",
+    "prior_fetched_authority": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+    "stale_local_main_9ce38a06": "not used as authority"
+  },
+  "new_check": {
+    "command": "env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 nice -n 10 python3 L/checks/uniform_one_loop_01.py > L/checks/uniform_one_loop_01_output.txt 2>&1",
+    "criteria": "checks/uniform_one_loop_criteria.md",
+    "failed_runs": [],
+    "ordered_file_times": {
+      "checks/uniform_one_loop_01.py": {
+        "ctime_ns": 1793307305698180039,
+        "mtime_ns": 1793307305698180039
+      },
+      "checks/uniform_one_loop_01_output.txt": {
+        "ctime_ns": 1793307324237830654,
+        "mtime_ns": 1793307324237830654
+      },
+      "checks/uniform_one_loop_criteria.md": {
+        "ctime_ns": 1793307176996904658,
+        "mtime_ns": 1793307176996904658
+      }
+    },
+    "program": "checks/uniform_one_loop_01.py",
+    "result": "24/24;16 ordinary predicates and8 detected intentional mutations",
+    "run": "first and only run, unmodified criteria/program",
+    "runtime": {
+      "nice_increment": 10,
+      "numpy": "2.4.1",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+      "sympy": "1.14.0",
+      "thread_caps": 1
+    },
+    "scope": "actual d4 SU2 loop-family flat charged blocks and periodic3^4 neutral Wilson block; finite Gaussian normalization evidence only"
+  },
+  "nonclaims": [
+    "finite-T uniform coupling",
+    "convergence of a_n or b_n",
+    "uniform nonlinear analytic radius",
+    "finite-u normalized-density remainder",
+    "nonlinear RG/source return",
+    "continuum/nonfree hierarchy",
+    "positive physical continuum Hamiltonian gap"
+  ],
+  "review_state": "new author unit awaiting fresh independent hostile review; prior reviewed inputs reused at exact scopes; no audit status claimed",
+  "workspace": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972"
+}

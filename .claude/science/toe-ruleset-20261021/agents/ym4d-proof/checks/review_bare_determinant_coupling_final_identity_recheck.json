@@ -1,0 +1,1133 @@
+{
+  "record_type": "final_post_receipt_identity_recheck",
+  "created_utc": "2026-10-30T15:16:22.260348+00:00",
+  "receipt_created_utc": "2026-10-30T15:15:26.568919+00:00",
+  "after_receipt": true,
+  "comparison_count": 81,
+  "comparison_definition": "One comparison per unique filesystem content identity, selected Git blob at a named revision, or checked Git ref. Repeated roles for the same filesystem path are deduplicated.",
+  "all_match": true,
+  "comparisons": [
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "roles": [
+        "review_target",
+        "frozen_target"
+      ],
+      "expected_sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230",
+      "actual_sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230",
+      "expected_lines": 581,
+      "actual_lines": 581,
+      "expected_bytes": 29763,
+      "actual_bytes": 29763,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_MATCH_ASTRA.md",
+      "roles": [
+        "scientific_supplier"
+      ],
+      "expected_sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff",
+      "actual_sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff",
+      "expected_lines": 670,
+      "actual_lines": 670,
+      "expected_bytes": 35619,
+      "actual_bytes": 35619,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "roles": [
+        "scientific_supplier"
+      ],
+      "expected_sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "actual_sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "expected_lines": 568,
+      "actual_lines": 568,
+      "expected_bytes": 28993,
+      "actual_bytes": 28993,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md",
+      "roles": [
+        "scientific_supplier"
+      ],
+      "expected_sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "actual_sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "expected_lines": 590,
+      "actual_lines": 590,
+      "expected_bytes": 30169,
+      "actual_bytes": 30169,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "roles": [
+        "scientific_supplier"
+      ],
+      "expected_sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "actual_sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "expected_lines": 790,
+      "actual_lines": 790,
+      "expected_bytes": 41908,
+      "actual_bytes": 41908,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "roles": [
+        "documentary_adjacent_supplier"
+      ],
+      "expected_sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61",
+      "actual_sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61",
+      "expected_lines": 583,
+      "actual_lines": 583,
+      "expected_bytes": 30430,
+      "actual_bytes": 30430,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "/Users/jonBridger/AGENTS.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "actual_sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "expected_lines": 31,
+      "actual_lines": 31,
+      "expected_bytes": 5441,
+      "actual_bytes": 5441,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "AGENTS.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "actual_sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "expected_lines": 26,
+      "actual_lines": 26,
+      "expected_bytes": 1118,
+      "actual_bytes": 1118,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "actual_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "expected_lines": 11,
+      "actual_lines": 11,
+      "expected_bytes": 1497,
+      "actual_bytes": 1497,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "actual_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "expected_lines": 140,
+      "actual_lines": 140,
+      "expected_bytes": 9276,
+      "actual_bytes": 9276,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "actual_sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "expected_lines": 313,
+      "actual_lines": 313,
+      "expected_bytes": 20680,
+      "actual_bytes": 20680,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "actual_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "expected_lines": 193,
+      "actual_lines": 193,
+      "expected_bytes": 11788,
+      "actual_bytes": 11788,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "role": "selected_pinned_procedure",
+      "expected_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "actual_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "expected_lines": 193,
+      "actual_lines": 193,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "role": "consumed_governance_at_observed_main",
+      "expected_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "actual_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "expected_lines": 193,
+      "actual_lines": 193,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "actual_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "expected_lines": 35,
+      "actual_lines": 35,
+      "expected_bytes": 2180,
+      "actual_bytes": 2180,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "role": "selected_pinned_procedure",
+      "expected_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "actual_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "expected_lines": 35,
+      "actual_lines": 35,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "role": "consumed_governance_at_observed_main",
+      "expected_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "actual_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "expected_lines": 35,
+      "actual_lines": 35,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "actual_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "expected_lines": 93,
+      "actual_lines": 93,
+      "expected_bytes": 5767,
+      "actual_bytes": 5767,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "role": "selected_pinned_procedure",
+      "expected_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "actual_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "expected_lines": 93,
+      "actual_lines": 93,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "role": "consumed_governance_at_observed_main",
+      "expected_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "actual_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "expected_lines": 93,
+      "actual_lines": 93,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "actual_sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "expected_lines": 370,
+      "actual_lines": 370,
+      "expected_bytes": 24561,
+      "actual_bytes": 24561,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "role": "selected_pinned_procedure",
+      "expected_sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "actual_sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "expected_lines": 370,
+      "actual_lines": 370,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "role": "consumed_governance_at_observed_main",
+      "expected_sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "actual_sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "expected_lines": 370,
+      "actual_lines": 370,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "actual_sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "expected_lines": 96,
+      "actual_lines": 96,
+      "expected_bytes": 5188,
+      "actual_bytes": 5188,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "role": "selected_pinned_procedure",
+      "expected_sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "actual_sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "expected_lines": 96,
+      "actual_lines": 96,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "role": "consumed_governance_at_observed_main",
+      "expected_sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "actual_sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "expected_lines": 96,
+      "actual_lines": 96,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "actual_sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "expected_lines": 183,
+      "actual_lines": 183,
+      "expected_bytes": 12608,
+      "actual_bytes": 12608,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "role": "selected_pinned_procedure",
+      "expected_sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "actual_sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "expected_lines": 183,
+      "actual_lines": 183,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "role": "consumed_governance_at_observed_main",
+      "expected_sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "actual_sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "expected_lines": 183,
+      "actual_lines": 183,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "actual_sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "expected_lines": 248,
+      "actual_lines": 248,
+      "expected_bytes": 12940,
+      "actual_bytes": 12940,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "role": "selected_pinned_procedure",
+      "expected_sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "actual_sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "expected_lines": 248,
+      "actual_lines": 248,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "role": "consumed_governance_at_observed_main",
+      "expected_sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "actual_sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "expected_lines": 248,
+      "actual_lines": 248,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "actual_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "expected_lines": 140,
+      "actual_lines": 140,
+      "expected_bytes": 7554,
+      "actual_bytes": 7554,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "role": "selected_pinned_procedure",
+      "expected_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "actual_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "expected_lines": 140,
+      "actual_lines": 140,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "role": "consumed_governance_at_observed_main",
+      "expected_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "actual_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "expected_lines": 140,
+      "actual_lines": 140,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "actual_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "expected_lines": 394,
+      "actual_lines": 394,
+      "expected_bytes": 23216,
+      "actual_bytes": 23216,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "role": "selected_pinned_procedure",
+      "expected_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "actual_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "expected_lines": 394,
+      "actual_lines": 394,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "role": "consumed_governance_at_observed_main",
+      "expected_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "actual_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "expected_lines": 394,
+      "actual_lines": 394,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "actual_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "expected_lines": 126,
+      "actual_lines": 126,
+      "expected_bytes": 4975,
+      "actual_bytes": 4975,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "role": "selected_pinned_procedure",
+      "expected_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "actual_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "expected_lines": 126,
+      "actual_lines": 126,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "role": "consumed_governance_at_observed_main",
+      "expected_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "actual_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "expected_lines": 126,
+      "actual_lines": 126,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "actual_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "expected_lines": 233,
+      "actual_lines": 233,
+      "expected_bytes": 11333,
+      "actual_bytes": 11333,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "role": "selected_pinned_procedure",
+      "expected_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "actual_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "expected_lines": 233,
+      "actual_lines": 233,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "role": "consumed_governance_at_observed_main",
+      "expected_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "actual_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "expected_lines": 233,
+      "actual_lines": 233,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "actual_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "expected_lines": 130,
+      "actual_lines": 130,
+      "expected_bytes": 6427,
+      "actual_bytes": 6427,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "role": "selected_pinned_procedure",
+      "expected_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "actual_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "expected_lines": 130,
+      "actual_lines": 130,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "role": "consumed_governance_at_observed_main",
+      "expected_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "actual_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "expected_lines": 130,
+      "actual_lines": 130,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "roles": [
+        "process_only"
+      ],
+      "expected_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "actual_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "expected_lines": 52,
+      "actual_lines": 52,
+      "expected_bytes": 6416,
+      "actual_bytes": 6416,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "role": "selected_pinned_procedure",
+      "expected_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "actual_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "expected_lines": 52,
+      "actual_lines": 52,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "role": "consumed_governance_at_observed_main",
+      "expected_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "actual_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "expected_lines": 52,
+      "actual_lines": 52,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "scripts/vocab_lint.py",
+      "roles": [
+        "mechanical_tool"
+      ],
+      "expected_sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "actual_sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "expected_lines": 392,
+      "actual_lines": 392,
+      "expected_bytes": 14183,
+      "actual_bytes": 14183,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "docs/repo/controlled_vocabulary.yaml",
+      "roles": [
+        "mechanical_tool_input"
+      ],
+      "expected_sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+      "actual_sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+      "expected_lines": 939,
+      "actual_lines": 939,
+      "expected_bytes": 53269,
+      "actual_bytes": 53269,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "/tmp/review_bare_determinant_coupling_primary/hep-lat9504006.pdf",
+      "roles": [
+        "local_primary_cache_identity; partial paper reads only"
+      ],
+      "expected_sha256": "9abc4201c94d34b534b86f90092f2e64aacb2b8a5938549f51cd65b408289f4e",
+      "actual_sha256": "9abc4201c94d34b534b86f90092f2e64aacb2b8a5938549f51cd65b408289f4e",
+      "expected_lines": null,
+      "actual_lines": null,
+      "expected_bytes": 211800,
+      "actual_bytes": 211800,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "/tmp/review_bare_determinant_coupling_primary/hep-lat9505011.pdf",
+      "roles": [
+        "local_primary_cache_identity; partial paper reads only"
+      ],
+      "expected_sha256": "c622299795225c3b360fe9c6c395d8aa4705ee4f3a9d8cdbb51ca6b0844b81ff",
+      "actual_sha256": "c622299795225c3b360fe9c6c395d8aa4705ee4f3a9d8cdbb51ca6b0844b81ff",
+      "expected_lines": null,
+      "actual_lines": null,
+      "expected_bytes": 395988,
+      "actual_bytes": 395988,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": "/tmp/review_bare_determinant_coupling_primary/hep-lat9506030v1.pdf",
+      "roles": [
+        "local_primary_cache_identity; partial paper reads only"
+      ],
+      "expected_sha256": "e3ae911b69f206fa230af3bb73070912e679dbb4386ad84874eef4cc71b1fb35",
+      "actual_sha256": "e3ae911b69f206fa230af3bb73070912e679dbb4386ad84874eef4cc71b1fb35",
+      "expected_lines": null,
+      "actual_lines": null,
+      "expected_bytes": 313178,
+      "actual_bytes": 313178,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_determinant_coupling_read_manifest.json",
+      "roles": [
+        "separate_author_packet_assessment_input",
+        "receipt_bound_artifact"
+      ],
+      "expected_sha256": "c3ce8fb1dc821a469a26266c8ddafe77405adb37231f5bf5d9bdff65c539f0f0",
+      "actual_sha256": "c3ce8fb1dc821a469a26266c8ddafe77405adb37231f5bf5d9bdff65c539f0f0",
+      "expected_lines": 108,
+      "actual_lines": 108,
+      "expected_bytes": 6280,
+      "actual_bytes": 6280,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_determinant_coupling_receipt.json",
+      "roles": [
+        "separate_author_packet_assessment_input",
+        "receipt_bound_artifact"
+      ],
+      "expected_sha256": "bd55ab89087bd4f752e2b9ce35e2478a8429e9874c7cbad5eede97b3bdf7f317",
+      "actual_sha256": "bd55ab89087bd4f752e2b9ce35e2478a8429e9874c7cbad5eede97b3bdf7f317",
+      "expected_lines": 37,
+      "actual_lines": 37,
+      "expected_bytes": 2776,
+      "actual_bytes": 2776,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/frozen_transported_chart_read_manifest.json",
+      "roles": [
+        "separate_author_packet_assessment_input"
+      ],
+      "expected_sha256": "b0bc47ee7ffa1257554f53e0a87dc4892df2849a4414eaff14f5d5b559fc3b49",
+      "actual_sha256": "b0bc47ee7ffa1257554f53e0a87dc4892df2849a4414eaff14f5d5b559fc3b49",
+      "expected_lines": 152,
+      "actual_lines": 152,
+      "expected_bytes": 5768,
+      "actual_bytes": 5768,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/weighted_return_jets_read_manifest.json",
+      "roles": [
+        "separate_author_packet_assessment_input"
+      ],
+      "expected_sha256": "8f6fc077450e62ac5c53c14a626f22e0f7b172cc97ab2e0d9b28042279e1ed0b",
+      "actual_sha256": "8f6fc077450e62ac5c53c14a626f22e0f7b172cc97ab2e0d9b28042279e1ed0b",
+      "expected_lines": 113,
+      "actual_lines": 113,
+      "expected_bytes": 5684,
+      "actual_bytes": 5684,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_coupling_match_read_manifest.json",
+      "roles": [
+        "separate_author_packet_assessment_input"
+      ],
+      "expected_sha256": "476e98947f28e4142a099f79d80d68bc6b0a7014318e1680a6ec75c7c73c40fc",
+      "actual_sha256": "476e98947f28e4142a099f79d80d68bc6b0a7014318e1680a6ec75c7c73c40fc",
+      "expected_lines": 121,
+      "actual_lines": 121,
+      "expected_bytes": 7013,
+      "actual_bytes": 7013,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_coupling_remainder_read_manifest.json",
+      "roles": [
+        "separate_author_packet_assessment_input"
+      ],
+      "expected_sha256": "467094ed6b6edc259e1a9a406fdcca2fe46bf2590d39ffe2353283a8591bea86",
+      "actual_sha256": "467094ed6b6edc259e1a9a406fdcca2fe46bf2590d39ffe2353283a8591bea86",
+      "expected_lines": 150,
+      "actual_lines": 150,
+      "expected_bytes": 8408,
+      "actual_bytes": 8408,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "roles": [
+        "separate_author_packet_assessment_input"
+      ],
+      "expected_sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "actual_sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "expected_lines": 538,
+      "actual_lines": 538,
+      "expected_bytes": 48089,
+      "actual_bytes": 48089,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF_session16_snapshot.md",
+      "roles": [
+        "separate_author_packet_assessment_input"
+      ],
+      "expected_sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+      "actual_sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+      "expected_lines": 4946,
+      "actual_lines": 4946,
+      "expected_bytes": 488224,
+      "actual_bytes": 488224,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "role": "hash_only_governance_inventory; not content-reviewed",
+      "expected_sha256": "42a24d3df296f01e4189eadd1ef8b92f316bd8d14229f14643641e39939d159e",
+      "actual_sha256": "42a24d3df296f01e4189eadd1ef8b92f316bd8d14229f14643641e39939d159e",
+      "expected_lines": 366,
+      "actual_lines": 366,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "role": "hash_only_governance_inventory; not content-reviewed",
+      "expected_sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "actual_sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "expected_lines": 72,
+      "actual_lines": 72,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "role": "hash_only_governance_inventory; not content-reviewed",
+      "expected_sha256": "4df23ed611d808e3dd28d2a14b5407a16c9eb4d2c632017666b9a240a78199ce",
+      "actual_sha256": "4df23ed611d808e3dd28d2a14b5407a16c9eb4d2c632017666b9a240a78199ce",
+      "expected_lines": 381,
+      "actual_lines": 381,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "role": "hash_only_governance_inventory; not content-reviewed",
+      "expected_sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "actual_sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "expected_lines": 202,
+      "actual_lines": 202,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "role": "hash_only_governance_inventory; not content-reviewed",
+      "expected_sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "actual_sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "expected_lines": 773,
+      "actual_lines": 773,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "role": "hash_only_governance_inventory; not content-reviewed",
+      "expected_sha256": "f2665b763f69e4baef4648d15b517b2701d975a8131f4665703c40c07283782c",
+      "actual_sha256": "f2665b763f69e4baef4648d15b517b2701d975a8131f4665703c40c07283782c",
+      "expected_lines": 224,
+      "actual_lines": 224,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/audit/README.md",
+      "role": "hash_only_governance_inventory; not content-reviewed",
+      "expected_sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "actual_sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "expected_lines": 643,
+      "actual_lines": 643,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/audit/data/premise_decision_history.json",
+      "role": "hash_only_governance_inventory; not content-reviewed",
+      "expected_sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "actual_sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "expected_lines": 142,
+      "actual_lines": 142,
+      "match": true
+    },
+    {
+      "kind": "git_blob_content_identity",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "role": "hash_only_governance_inventory; not content-reviewed",
+      "expected_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "actual_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "expected_lines": 336,
+      "actual_lines": 336,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "roles": [
+        "receipt_bound_artifact"
+      ],
+      "expected_sha256": "1538d3e9575b8b261bcf9b3394bfe4c56d9107c799364495e70315619f559f6e",
+      "actual_sha256": "1538d3e9575b8b261bcf9b3394bfe4c56d9107c799364495e70315619f559f6e",
+      "expected_lines": 212,
+      "actual_lines": 212,
+      "expected_bytes": 12799,
+      "actual_bytes": 12799,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_source_findings.json",
+      "roles": [
+        "receipt_bound_artifact"
+      ],
+      "expected_sha256": "625757fe127619565c282109d2c9cff4021b8245429871793e4afbfd227392b2",
+      "actual_sha256": "625757fe127619565c282109d2c9cff4021b8245429871793e4afbfd227392b2",
+      "expected_lines": 87,
+      "actual_lines": 87,
+      "expected_bytes": 5790,
+      "actual_bytes": 5790,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_source_read_manifest.json",
+      "roles": [
+        "receipt_bound_artifact"
+      ],
+      "expected_sha256": "7500f75a3470c94741478906019f0dc240e0510058d3253bbd10691837580bb3",
+      "actual_sha256": "7500f75a3470c94741478906019f0dc240e0510058d3253bbd10691837580bb3",
+      "expected_lines": 508,
+      "actual_lines": 508,
+      "expected_bytes": 16626,
+      "actual_bytes": 16626,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_author_packet_assessment.json",
+      "roles": [
+        "receipt_bound_artifact"
+      ],
+      "expected_sha256": "f5c0f36ed25aef32d02a6f11dc7d609ea18a5bc1c03ca7f8496c64db1c91549c",
+      "actual_sha256": "f5c0f36ed25aef32d02a6f11dc7d609ea18a5bc1c03ca7f8496c64db1c91549c",
+      "expected_lines": 295,
+      "actual_lines": 295,
+      "expected_bytes": 13173,
+      "actual_bytes": 13173,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_additional_process_manifest.json",
+      "roles": [
+        "receipt_bound_artifact"
+      ],
+      "expected_sha256": "340849405458c105c62b77e40fe9bb0908564af94e159c1706d5022a94617055",
+      "actual_sha256": "340849405458c105c62b77e40fe9bb0908564af94e159c1706d5022a94617055",
+      "expected_lines": 88,
+      "actual_lines": 88,
+      "expected_bytes": 3922,
+      "actual_bytes": 3922,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_vocab_lint.json",
+      "roles": [
+        "receipt_bound_artifact"
+      ],
+      "expected_sha256": "e69e07e7096662b46a0795f11cea7f32a2e62089ed104832a55b5abead4db1ea",
+      "actual_sha256": "e69e07e7096662b46a0795f11cea7f32a2e62089ed104832a55b5abead4db1ea",
+      "expected_lines": 144,
+      "actual_lines": 144,
+      "expected_bytes": 6270,
+      "actual_bytes": 6270,
+      "match": true
+    },
+    {
+      "kind": "filesystem_identity",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_receipt.json",
+      "roles": [
+        "review_receipt_created_before_this_recheck"
+      ],
+      "expected_sha256": "b04f379f7e5b146035f90bf4385357d93f62fbaa1e7c19f533aaea91c61734db",
+      "actual_sha256": "b04f379f7e5b146035f90bf4385357d93f62fbaa1e7c19f533aaea91c61734db",
+      "expected_lines": 102,
+      "actual_lines": 102,
+      "expected_bytes": 4863,
+      "actual_bytes": 4863,
+      "match": true
+    },
+    {
+      "kind": "git_ref_identity",
+      "ref": "HEAD",
+      "expected_revision": "7e4473dd789505441da42011c7b0b1f1930ed1ea",
+      "actual_revision": "7e4473dd789505441da42011c7b0b1f1930ed1ea",
+      "match": true
+    },
+    {
+      "kind": "git_ref_identity",
+      "ref": "origin/main",
+      "expected_revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "actual_revision": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+      "match": true
+    }
+  ],
+  "markdown_local_links": [
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "BARE_COUPLING_MATCH_ASTRA.md",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "FINITE_COUPLING_KERNEL_ASTRA.md",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "INTERACTING_SELECTED_CORE_ASTRA.md",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "BARE_COUPLING_REMAINDER_ASTRA.md",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "checks/bare_determinant_coupling_read_manifest.json",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "checks/bare_determinant_coupling_receipt.json",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "checks/review_bare_determinant_coupling_source_findings.json",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "checks/review_bare_determinant_coupling_source_read_manifest.json",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "checks/review_bare_determinant_coupling_author_packet_assessment.json",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "PROCESS_LIGHT.md",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "checks/review_bare_determinant_coupling_additional_process_manifest.json",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "checks/review_bare_determinant_coupling_vocab_lint.json",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "checks/review_bare_determinant_coupling_receipt.json",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "target": "checks/review_bare_determinant_coupling_final_identity_recheck.json",
+      "exists_or_current_output": true,
+      "repository_portable": true
+    }
+  ],
+  "all_local_links_resolve_and_are_portable": true,
+  "verdict_unchanged": "LAND for the bounded analytic formula only",
+  "full_target_status": "Four-dimensional non-free continuum existence and a positive physical continuum mass gap remain open.",
+  "scientific_status_authority": false,
+  "source_freezes_rewritten": false,
+  "no_scientific_numerical_run": true
+}

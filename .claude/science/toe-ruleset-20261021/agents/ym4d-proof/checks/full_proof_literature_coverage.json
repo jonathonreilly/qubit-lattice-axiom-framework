@@ -1,0 +1,108 @@
+{
+  "created_on": "2026-10-29",
+  "purpose": "Primary-literature import map for every current key block; not exhaustive and not a new full-proof review.",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "methodology": "docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+  "coordinator_reads": [
+    {
+      "source": "Osterwalder–Schrader II",
+      "url": "https://projecteuclid.org/journals/communications-in-mathematical-physics/volume-42/issue-3/Axioms-for-Euclidean-Greens-functions-II-with-an-Appendix-by/cmp/1103899050.pdf",
+      "scope": "Primary indexed text of printed page287, reconstruction statement and E0-prime/E0-double-prime discussion. Direct full PDF returned a service notice; Springer access showed subscription preview. No full original proof read or paper hash claimed.",
+      "status": "statement lookup only; formula domain independently cross-checked in KQR"
+    },
+    {
+      "source": "Kravchuk–Qiao–Rychkov",
+      "url": "https://arxiv.org/html/2104.02090v2#S9.SS2.SSS2",
+      "scope": "Version2 §9.2.1–9.2.2, especially 9.16–9.19 and full-Schwartz distinction.",
+      "status": "primary HTML passages read; no entire CFT proof review"
+    },
+    {
+      "source": "Adamo–Moriwaki–Tanimoto",
+      "url": "https://arxiv.org/html/2407.18222v2#S2.SS5",
+      "scope": "Version2 §2.5 formulas21,23 and final E0-prime/E0-double-prime discussion, selected passages.",
+      "status": "primary HTML passages; d2 construction not imported"
+    },
+    {
+      "source": "Hollands",
+      "url": "https://arxiv.org/pdf/0705.3340v4",
+      "scope": "Version4 abstract, Theorem3 statement and preceding formal RG argument at PDF p77; Theorem1 statement also located.",
+      "status": "selected primary PDF text; no entire144-page proof review"
+    },
+    {
+      "source": "Mund",
+      "url": "https://arxiv.org/pdf/1012.1454v4",
+      "scope": "Version4 introduction and §1 Assumptions1–2, Theorem1 at PDF pp3–5.",
+      "status": "primary PDF hypotheses and statement read, not complete proof"
+    },
+    {
+      "source": "Schmidt",
+      "url": "https://arxiv.org/abs/math-ph/9811002",
+      "scope": "Abstract only.",
+      "status": "lead only"
+    }
+  ],
+  "coordinator_local_reads": [
+    {
+      "path": "CODEX_REVIEW_OSLEAF.md",
+      "scope": "Targeted prior-review passages, including F8/F9; broad earlier rg output was truncated and is not claimed as whole-file reading."
+    }
+  ],
+  "reviewer_ledgers": [
+    {
+      "path": "checks/review_source_history_literature.md",
+      "sha256": "a7c9581d797d3c36978c9677782c6c0d67c9b0e9251252f9f634404acccc3ece"
+    },
+    {
+      "path": "checks/review_massgap_block_literature.md",
+      "hash_location": "checks/review_massgap_block_manifest.json"
+    },
+    {
+      "path": "checks/review_residual_full_colour_literature.md",
+      "hash_location": "checks/review_residual_full_colour_receipt.json"
+    }
+  ],
+  "coordinator_queries": [
+    "Axioms for Euclidean Green's functions II PDF1975 Osterwalder Schrader download",
+    "An Algebraic Jost-Schroer Theorem arxiv",
+    "Distributions in CFT Osterwalder linear growth",
+    "Axioms for Euclidean Green's Functions II 287 linear growth"
+  ],
+  "registry_ids": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11",
+    "B12",
+    "B13",
+    "B14",
+    "B15",
+    "B16",
+    "B17",
+    "B18",
+    "B19",
+    "B20",
+    "B21",
+    "B22",
+    "B23",
+    "B24",
+    "B25",
+    "B26",
+    "B27",
+    "B28",
+    "B29"
+  ],
+  "limits": [
+    "Primary sources screened at abstract/metadata level are not theorem imports.",
+    "Complete external PDF/text research inputs are excluded from publication artifacts.",
+    "The independent reviewer ledgers supply their exact separate read scopes, versions, hashes and access failures.",
+    "The coordinator read all three frozen review reports and all three literature ledgers, recovering truncated output with scoped rereads.",
+    "The map changes no audit authority or full-proof status."
+  ]
+}

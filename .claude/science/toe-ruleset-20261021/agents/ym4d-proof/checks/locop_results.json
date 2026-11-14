@@ -1,0 +1,273 @@
+{
+  "started_utc": "2026-10-30T10:00:23Z",
+  "scope": "finite algebra and synthetic arithmetic only",
+  "criteria_sha256": "11af948015c8993a931699c39901d8410f272a1f18b3cfa9ba107e6af4d24c78",
+  "script_sha256": "fd859ed206ce35076f43c0e5adb1e666d74ffec053d2c0397f63606a2c694993",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "covariance",
+      "status": "PASS",
+      "detail": {
+        "maximum_error": 3.3422138886441676e-16,
+        "coarse_only_change": 0.12241743810962724,
+        "note": "Normalizer covariance is proved by Haar substitution, not quadrature."
+      }
+    },
+    {
+      "name": "localization",
+      "status": "PASS",
+      "detail": {
+        "signed_permutations": 384,
+        "loop_tests": 18,
+        "tensor_recovery": "exact",
+        "anisotropic_scalar_control": "survives"
+      }
+    },
+    {
+      "name": "taylor",
+      "status": "PASS",
+      "detail": {
+        "monomials_times_scales": 72,
+        "benchmark_bounds": {
+          "3": "20/9",
+          "5": "28/25",
+          "7": "36/49"
+        },
+        "scope": "monomial regression; not a proof for arbitrary functions"
+      }
+    },
+    {
+      "name": "flow",
+      "status": "PASS",
+      "detail": {
+        "pairs": 820,
+        "minimum_u": "2099/5",
+        "returned_sign": "exact",
+        "actual_AF_trajectory_tested": false
+      }
+    },
+    {
+      "name": "jacobian",
+      "status": "PASS",
+      "detail": {
+        "log_Haar_coefficient": -0.33333334450435875,
+        "soft_relative_coefficient": 0.9999999166510065,
+        "interpretation": "coordinate/relative terms, not symmetry breaking"
+      }
+    }
+  ],
+  "resources": [
+    {
+      "label": "start",
+      "load": [
+        1.93896484375,
+        1.82421875,
+        1.849609375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22446080,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "before covariance",
+      "load": [
+        1.93896484375,
+        1.82421875,
+        1.849609375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22446080,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after covariance",
+      "load": [
+        1.93896484375,
+        1.82421875,
+        1.849609375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22462464,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "before localization",
+      "load": [
+        1.93896484375,
+        1.82421875,
+        1.849609375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22462464,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after localization",
+      "load": [
+        1.93896484375,
+        1.82421875,
+        1.849609375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22462464,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "before taylor",
+      "load": [
+        1.93896484375,
+        1.82421875,
+        1.849609375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22478848,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after taylor",
+      "load": [
+        1.93896484375,
+        1.82421875,
+        1.849609375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22478848,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "before flow",
+      "load": [
+        1.93896484375,
+        1.82421875,
+        1.849609375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22478848,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after flow",
+      "load": [
+        1.93896484375,
+        1.82421875,
+        1.849609375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22495232,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "before jacobian",
+      "load": [
+        1.93896484375,
+        1.82421875,
+        1.849609375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22659072,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after jacobian",
+      "load": [
+        1.93896484375,
+        1.82421875,
+        1.849609375
+      ],
+      "free_percent": 49.0,
+      "rss_bytes": 22724608,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.035396415973082185,
+  "peak_rss_bytes": 22724608
+}

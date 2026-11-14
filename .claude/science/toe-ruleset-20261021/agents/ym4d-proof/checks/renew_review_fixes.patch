@@ -1,0 +1,61 @@
+--- submitted/RENEW.md
++++ corrected/RENEW.md
+@@ -58,7 +58,7 @@
+ 
+ The consumer is LFPRICE §6 on RD4's D_*: the required fixed original-source
+ polydisc and specified coarse charts, uniform in volume, depth and an
+-explicit stable history/chart class. Its full norm is
++explicit stable history/chart class. For mu>=0, its full norm is
+ 
+     ||F||_mu=sup_x sum_(X contains x) e^(mu |X|) sup_(D_*)|F_X|. (R3)
+ 
+@@ -364,19 +364,36 @@
+ 
+ For reader integration, multiply *all* factors reading a variable before
+ integrating it; the new factor reads the union of their remaining readers.
+-Induction proves this rule exactly. In a directed kernel graph, for a
+-selected set of factors, close its integrated readers under all ancestors.
+-Remove the complement in reverse time order: each remaining unused output
+-has only its normalized creator and integrates to one. Two selected
+-components with disjoint complete closures factor under the resulting
+-product kernels. A cross edge would put an ancestor in both closures.
+-Fixed terminal V kernels are factors, not integrated creators. Shared
+-outside variables join groups before their later integration.
+-
+-These identities perform the JMBRA elimination needed before a renewal
+-split. They do not say that nu_A is a product law or that T_B J_h factors
+-over Y. A complete closure may be large, and the inherited-versus-bare
+-density difference can retain bulk original-source readers.
++Induction proves this general Fubini rule exactly. For the sharper
++ancestral-deletion claim, suppose a finite time-ordered acyclic graph of
++integrated vertices C has the law
++
++    dP_y(x_C)=product_(v in C) p_v(dx_v | x_par(v),y),
++
++where roots carry probability Haar, each creator is normalized in its
++output, and y denotes fixed outside variables. Every noncreator Wilson
++factor, cut, history/absence predicate, chart factor and fixed-terminal
++kernel remains an integrand factor. Either retain all these factors in
++the selected collection, or first expand their complete product termwise,
++with each unselected factor equal to 1 in that term. No interacting
++density is silently absorbed into P_y.
++
++For such a selected term, close its integrated readers under all ancestors.
++Full supports also include original parameters and all fixed/outside-parent
++readers, with the required connected hulls. Remove the complement in
++reverse time order: each remaining unused output has only its normalized
++creator and integrates to one. Two selected components with disjoint
++complete closures factor under the resulting product kernels. A cross
++edge would put an ancestor in both closures. Fixed terminal V kernels
++are factors, not integrated creators. Shared outside variables join
++groups together with their law before their later integration.
++
++The replacement identity and general Fubini rule are exact before any
++renewal split. The sharper ancestral deletion requires the displayed
++representation and complete-factor hypotheses; it does not say that
++nu_A is a product law or that T_B J_h factors over Y. A complete closure
++may be large, and the inherited-versus-bare density difference can retain
++bulk original-source readers.
+ 
+ ### R-WINDOW — PROVEN conditional renewal lemma
+ 

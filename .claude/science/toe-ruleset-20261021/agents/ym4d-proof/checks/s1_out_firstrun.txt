@@ -1,0 +1,25 @@
+A: n = 1296, lambda_min(K) = 3.9877, ||E|| = 0.300
+A: linked components of Y: [[0], [78]]
+A t=0.0: N_0(|R(s)|) = 0.0025; max off-Omega (non-Y cols) = 0.00e+00; max off-Omega(Y+) (Y cols) = 0.00e+00; max reach beyond Omega_box = 6.25e-04
+A t=1.0: N_0(|R(s)|) = 0.0018; max off-Omega (non-Y cols) = 0.00e+00; max off-Omega(Y+) (Y cols) = 0.00e+00; max reach beyond Omega_box = 4.54e-04
+A t=10.0: N_0(|R(s)|) = 0.0003; max off-Omega (non-Y cols) = 0.00e+00; max off-Omega(Y+) (Y cols) = 0.00e+00; max reach beyond Omega_box = 9.38e-05
+A0: PASS  N_0(|R(s;t)|) < 1 at t = 0, 1, 10
+A1: PASS  max rel 0.00e+00 (<= 1e-12)
+A2: PASS  max rel 0.00e+00 (<= 1e-12)
+A3: FAIL  max rel reach 6.25e-04 (>= 1e-8)
+A4: FAIL  quadrature vs eigen K^(-1/2): rel max-entry err 8.82e-15 (<= 1e-6)
+A5: FAIL  C(s) outside predicted D(x): rel 0.00e+00 (<= 1e-10)
+A6: FAIL  long-range entry z=3, w=15 (block dist 2 from Omega(Y+)), lambda_min = 3.988, N_0 = 0.002: column in box(0,0) reaches outside Omega(Y+) with rel 9.14e-06 (>= 1e-10)
+B1: FAIL  det f(ad A) vs product formula (and exp L): max rel 3.36e-15 (<= 1e-9)
+B2: FAIL  max |L|/((N/9)|A|_HS^2) = 0.7638 (<= 1)
+B3: FAIL  max |L - (N/12)trA^2|/((N/270)|A|_HS^4) = 0.3864 (<= 1)
+B4: FAIL  max |Log(sinh w/w)|/((2/9)|w|^2) on 14400 points = 0.8235 (<= 1)
+B5: FAIL  Haar SU(2) eigen-angle CDF vs (2/pi)sin^2: KS = 0.0014 (<= 0.01)
+C1: FAIL  max P(chi2_n > p^2)/(2^(n/2) e^(-p^2/4)) = 0.1639 (<= 1)
+D1: PASS  translated Gray code: Hamiltonian path of 15 unit edges from every vertex
+D2: PASS  every *-neighbour of [0,1]^4 contains a vertex of it (80 offsets)
+E1: PASS  273(3k0+3+16log2) = 127774
+E2: PASS  rate threshold 227.473, contraction threshold 302.332
+E3: PASS  M >= 2.646e+15, collar 1.53e+13, M^4 = 4.932e+61
+E4: FAIL  max 2arcsin(x/2)/x on (0,1/2] = 1.010721 (<= 1.0107)
+OVERALL: PASS

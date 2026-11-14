@@ -1,0 +1,15 @@
+G-A1 direct 4D E(M), M=2..7: {2: 109, 3: 136, 4: 163, 5: 190, 6: 217, 7: 244}
+G-A2 product E(M) sample: {2: 109, 5: 190, 10: 325, 20: 595, 29: 838, 30: 865, 45: 1270, 60: 1675}
+G-A direct==product on M=2..7: True ; E(M)==27M+55 for all computed M: True
+G-A3 d_r = pi^r(eta) - pi^r(zeta), r=0..30: [8, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+G-A3 sentence 'the two projections stay at distance 1 for ever': REFUTED (r in [2,M] with |d_r| != 1: first few [3, 4, 5, 6, 7], count 28)
+G-B1 test family direct vs product, D=2..7: {2: (431, 431), 3: (606, 606), 4: (781, 781), 5: (956, 956), 6: (1131, 1131), 7: (1306, 1306)}
+G-B2 test family excess sample: {2: 431, 5: 956, 10: 1831, 20: 3581, 40: 7081, 60: 10581}
+G-B2 per-level increments D=10..59: min 175 max 175
+G-B2 excess at D=20000: 3500081   vs 1+Delta_sh = 3073362
+G-B3 control (q = all-ones) excess: {2: 81, 5: 81, 10: 81, 20: 81, 40: 81, 60: 81} ; at D=20000: 81
+G-C1 pi(N1(col Gamma)) == N1(Gamma): violations 0 / 200
+G-C2 pi^r(N1 X) subset Sigma^r(X), r=1..8: violations 0
+G-C3 max open-ring count / sum_{r>=1}|Sigma^r X| = 129/3736 = 0.0345 ; max closed-ring count / ||X||_sh = 759/3786 = 0.2005
+G-C4 |Sigma^r(N1 X)| <= 16|Sigma^r X|: violations 0
+VERDICTS: {'G-A': 'PASS', 'G-A3': 'REFUTED', 'G-B': 'REFUTED (depth-free claim false)', 'G-B3 control': 'bound holds', 'G-B1 product reduction': 'agrees', 'G-C1': 'PASS', 'G-C2': 'PASS', 'G-C4': 'PASS'}

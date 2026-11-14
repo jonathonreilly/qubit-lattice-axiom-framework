@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-30T02:08:32.108952+00:00",
+  "files": {
+    "PROCESS_LIGHT.md": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+    "HANDOFF.md": "7061504a18be15edf0366582202b898c6126e38af662e057758c61642193431e",
+    "briefs_q/CUMUL/AUTHOR.md": "bdb5f65f911dfc180dc1e3e5299473e47c866c8e62c8138e38d424172190920b",
+    "WITNESS.md": "f545b2b544234e9e2a133fb0957bee18cf2c290912897d5a5028ccadc484ecb8",
+    "ASSEMBLY55.md": "c15524d7a1c3c04ce9c32567f6f61ec5113ebe24be9eba8de87f97e3109d326d",
+    "PANEL_P1.md": "feba5a1f2c0fc2c6ebc3373a5edfc3aec2ff0bb242550f4112b00e4d5a74a645",
+    "REC_LIB.md": "47dd75c7ca3c4f9f1af43139292d1fcfa6774b10f8e6ea2babc05ad67a48e29a",
+    "REC_CONT.md": "ac7ac0854fb320f183779f67be136063dfb750ee3f13b869acad10a7ac12a278",
+    "TSE55.md": "a894d1b2439a7b83311175c9e6e30f6fb52cc015a74c6be7e839be8192a7869a",
+    "HINT55.md": "b4c611b16cd5faa1c1bb59636b85ff39d451d657fb24edc9695f8f2d48105722"
+  },
+  "missing_requested_source": "../ym4d-existence/E/EXISTENCE.md",
+  "bibliography_verified": "https://arxiv.org/pdf/math-ph/0209035, p.2, authors Duetsch and Rehren; attribution only"
+}

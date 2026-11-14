@@ -1,0 +1,79 @@
+{
+  "scope": "finite author diagnostics; all-volume theorem requires the written local proof",
+  "mode": "gaussian",
+  "python": "3.12.8",
+  "numpy": "2.4.1",
+  "scipy": "1.17.0",
+  "elapsed_seconds": 0.00903287495020777,
+  "passed": 8,
+  "total": 8,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "normalized_square_root_gaussian",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Gaussian_determinant_direct_integral",
+      "pass": true,
+      "detail": {
+        "integral": 4.022397213857444,
+        "prediction": 4.022397213857444
+      }
+    },
+    {
+      "name": "omitted_determinant_control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source_Gaussian_normalization",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "colour_trace_factor_control",
+      "pass": true,
+      "detail": {
+        "one_colour": 0.9365016460326261,
+        "SU2": 0.821345033003705
+      }
+    },
+    {
+      "name": "positive_declared_weighted_resolvent_rate",
+      "pass": true,
+      "detail": {
+        "a": 4.536184234400969e-09,
+        "b": 5424.666666666667,
+        "m": 2.0905359320388445e-13
+      }
+    },
+    {
+      "name": "periodic_images_unfold",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omitted_periodic_images_control",
+      "pass": true,
+      "detail": {
+        "actual": 2.9728677272689263,
+        "omitted": 1.4965853037914094
+      }
+    }
+  ],
+  "details": {
+    "gaussian": {
+      "two_dimensional_integral": 4.022397213857444,
+      "source_ratio": 0.9365016460326261,
+      "a": 4.536184234400969e-09,
+      "b": 5424.666666666667,
+      "weighted_rate": 2.0905359320388445e-13
+    }
+  },
+  "external_scientific_inputs_read": [],
+  "integrity_reads": [],
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false
+}

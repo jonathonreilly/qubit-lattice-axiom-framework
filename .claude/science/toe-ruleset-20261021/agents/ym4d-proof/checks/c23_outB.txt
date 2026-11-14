@@ -1,0 +1,12 @@
+geometry: 629856 contours, 39366 plaquettes, 3.4 s
+fast factorisation: 157464 axial paths, 0.7 s
+B0: CONVERGED it=161 |g|/|g0|=9.5e-08 E=3.56405808e+00 R_top=2.68296e-01 mean resid=1.26199e-01 C=0.49263 Phi=0.34046 S=0.13572 (58 s)
+B1: CONVERGED it=151 |g|/|g0|=7.1e-08 E=3.56405808e+00 R_top=2.68296e-01 mean resid=1.26199e-01 C=0.49263 Phi=2.94135 S=0.13572 (57 s)
+B2: CONVERGED it=172 |g|/|g0|=8.3e-08 E=4.08368609e+00 R_top=2.89461e-01 mean resid=1.39260e-01 C=0.80507 Phi=1.10041 S=0.13721 (66 s)
+B3: CONVERGED it=164 |g|/|g0|=9.4e-08 E=2.66217048e-11 R_top=6.67285e-07 mean resid=4.26073e-07 C=0.00000 Phi=0.90000 S=0.00000 (70 s)
+Q5 numbers: R_top(B2)/R_top(B0) = 1.0789; 2 C(B2)/C(B0) = 3.2684; 0.5 Phi(B2)/Phi(B0) = 1.6161
+V3: PASS
+Q4: PASS
+Q5: PASS
+Q6: PASS
+c23 B: VALID; time 256 s, peak RSS 473 MB

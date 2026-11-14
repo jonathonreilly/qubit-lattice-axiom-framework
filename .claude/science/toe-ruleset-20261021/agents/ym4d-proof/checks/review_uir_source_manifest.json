@@ -1,0 +1,507 @@
+{
+  "schema": "focused independent source review coverage v1",
+  "source_revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+  "methodology_revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+  "fresh_context": true,
+  "same_model_family": true,
+  "dispatch_configuration": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "max",
+    "verification": "reported by dispatch; visible system identity generic GPT-6"
+  },
+  "whole_pr_review": false,
+  "whole_source_chain_proved": false,
+  "records": [
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_UIR_ASTRA.md",
+      "git_blob": "c0dc4213af551f5cabe4270958ec3c866c5dacb6",
+      "sha256": "0cbb4f9a967022ab669cae087617f390b2bfb481034012aac85e7cfc9928bc40",
+      "bytes": 35284,
+      "lines": 272,
+      "read_coverage": "complete",
+      "role": "target"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR2_55.md",
+      "git_blob": "3f5934189db747cf771287f79877307ec77e52d1",
+      "sha256": "bc10b5cc37c8f10cb339e234a3ca3aa252fd401cfb75476334c8c94aa8f5a6f3",
+      "bytes": 35453,
+      "lines": 320,
+      "read_coverage": [
+        [
+          103,
+          294
+        ]
+      ],
+      "role": "necessary context; no whole-file or whole-source-chain certification"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR55.md",
+      "git_blob": "cb1163efb60e1c42531137501a1e233c6b97c09d",
+      "sha256": "4c6d80473a80714e2a5aa1e241e8835648bbe3c65a7bca38a5758faf3c5accb4",
+      "bytes": 68640,
+      "lines": 625,
+      "read_coverage": [
+        [
+          114,
+          405
+        ],
+        [
+          421,
+          433
+        ],
+        [
+          532,
+          559
+        ]
+      ],
+      "role": "necessary context; no whole-file or whole-source-chain certification"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_A.md",
+      "git_blob": "f6ed941ee8fa2fc85843efc7ef23cbaf73b05df9",
+      "sha256": "8074d6c5efe3648bfb28e3463a6076cf6df74c9c358a8613390044148ac6fbe0",
+      "bytes": 351969,
+      "lines": 3744,
+      "read_coverage": [
+        [
+          18,
+          47
+        ]
+      ],
+      "role": "necessary context; no whole-file or whole-source-chain certification"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT34_55.md",
+      "git_blob": "f46fc2a27ad771822dc7735b69cc2ccbcc816eab",
+      "sha256": "f714a647910c4fd19570ecd192b98144b6c54d37c8c4f30c73bd20d426ef717d",
+      "bytes": 70280,
+      "lines": 670,
+      "read_coverage": [
+        [
+          1,
+          180
+        ]
+      ],
+      "role": "necessary context; no whole-file or whole-source-chain certification"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW.md",
+      "git_blob": "e9d9dd71e1bb69ab0319a83cf75b691cf32e2143",
+      "sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "bytes": 539577,
+      "lines": 4851,
+      "read_coverage": [
+        [
+          20,
+          42
+        ],
+        [
+          113,
+          164
+        ]
+      ],
+      "role": "necessary context; no whole-file or whole-source-chain certification"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW55.md",
+      "git_blob": "808c10f576b55f00a6c80435ca8b22445cb6b84b",
+      "sha256": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25",
+      "bytes": 70208,
+      "lines": 616,
+      "read_coverage": [
+        [
+          340,
+          397
+        ]
+      ],
+      "role": "necessary context; no whole-file or whole-source-chain certification"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "git_blob": "fecdb92b7f4a5c5c102231393ad6e74255a3b052",
+      "sha256": "c02d86c5363f2ae76b585240b1d96d4f70653bf02505bc641884984f57122e3a",
+      "bytes": 765055,
+      "lines": 7095,
+      "read_coverage": [
+        [
+          884,
+          950
+        ],
+        [
+          3328,
+          3383
+        ],
+        [
+          5588,
+          5614
+        ],
+        [
+          6769,
+          6800
+        ]
+      ],
+      "role": "necessary context; no whole-file or whole-source-chain certification"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HINT2_55.md",
+      "git_blob": "1094c5ca07617b2c9264a760925223712967fec1",
+      "sha256": "e617800fa0426a6099b5b6966cf383d118eeed33f363b5c9ff866108a6537dbf",
+      "bytes": 67652,
+      "lines": 596,
+      "read_coverage": [
+        [
+          370,
+          390
+        ]
+      ],
+      "role": "necessary context; no whole-file or whole-source-chain certification"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_ASSEMBLY.md",
+      "git_blob": "0225f1b357404a6f10d921287c48a42662967328",
+      "sha256": "189d7d5fda338860ad446b65047979bb4b36129a83697ad4412a9b41dd1cdd59",
+      "bytes": 43744,
+      "lines": 237,
+      "read_coverage": [
+        [
+          41,
+          79
+        ]
+      ],
+      "role": "necessary context; no whole-file or whole-source-chain certification"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_UIR.md",
+      "git_blob": "71e3bb328b2fcf5f0ed9102dca657ab216c68a19",
+      "sha256": "74860ce5d301819ec626940ff1d6cf1a6326cb9c2639c9329a7f1083e087b952",
+      "bytes": 33039,
+      "lines": 219,
+      "read_coverage": [
+        [
+          23,
+          103
+        ],
+        [
+          156,
+          181
+        ]
+      ],
+      "role": "necessary context; no whole-file or whole-source-chain certification"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_B2.md",
+      "git_blob": "8118dc4dfdd0e9cf53be2fe15d4f1c564f85858d",
+      "sha256": "d7baa377f386e6a6800e6056b87fdaf89b3811dd3845b958050a2176420108ed",
+      "bytes": 32427,
+      "lines": 237,
+      "read_coverage": [
+        [
+          84,
+          115
+        ],
+        [
+          153,
+          160
+        ]
+      ],
+      "role": "necessary context; no whole-file or whole-source-chain certification"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_LANEA.md",
+      "git_blob": "a5367b59b0772b69f012c768f05954b34ee5de7a",
+      "sha256": "7b2c99e5787741af7a9e51312dea156891cea93b4738037246a8b342382f742b",
+      "bytes": 52673,
+      "lines": 430,
+      "read_coverage": [
+        [
+          96,
+          140
+        ]
+      ],
+      "role": "necessary context; no whole-file or whole-source-chain certification"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_FLOW55.md",
+      "git_blob": "2be4d282160e4d97f1c9e14631e68962f294b4d9",
+      "sha256": "82737cd86ccd3c329e7f7306ad8c6d6c96e344bb949061fa403bd04e0d21a32d",
+      "bytes": 38416,
+      "lines": 339,
+      "read_coverage": [
+        [
+          41,
+          108
+        ],
+        [
+          268,
+          277
+        ]
+      ],
+      "role": "necessary context; no whole-file or whole-source-chain certification"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/recovery_uir_01.py",
+      "git_blob": "82a06930b2b7b517843da37dd6dcd553ba034f49",
+      "sha256": "ae6539a9c160cf693b9f77283e9168b76ea205aef94cefa4ab2c323a08f119c3",
+      "bytes": 3724,
+      "lines": 79,
+      "read_coverage": "complete",
+      "role": "target"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/recovery_uir_01_criteria.md",
+      "git_blob": "b813ddf6cf3696346804205a0b2bd8dc019e0fec",
+      "sha256": "a6a9c59121d33eb197de8c38108279660efbcb924d14f89b61b552cdc5137306",
+      "bytes": 1865,
+      "lines": 13,
+      "read_coverage": "complete",
+      "role": "target"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/recovery_uir_01_out.txt",
+      "git_blob": "1b70a951010581b0fd98c75b57ca52b2b84c2b0d",
+      "sha256": "b460fee76555f9b1f73d927d05fe6b16cfc413ac1b54e5c542c7347081190e4b",
+      "bytes": 1965,
+      "lines": 27,
+      "read_coverage": "complete",
+      "role": "target"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/recovery_uir_01_err.txt",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "lines": 0,
+      "read_coverage": "complete",
+      "role": "target"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/recovery_uir_02.py",
+      "git_blob": "11447236dfe11d7513c78c5426c3119bc5ae1ddc",
+      "sha256": "b14a9406e00520826d40dfa4b6ed6d34a0a3a7307af053afad4568a444568a29",
+      "bytes": 2977,
+      "lines": 63,
+      "read_coverage": "complete",
+      "role": "target"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/recovery_uir_02_criteria.md",
+      "git_blob": "c8c7b7bbb8fafff12c5f11bf012dcf674cf7365b",
+      "sha256": "1b2220fac847a70bc20e3274751bd78dcba49d09bc1ce38f275c5ecaeb555f0a",
+      "bytes": 1195,
+      "lines": 9,
+      "read_coverage": "complete",
+      "role": "target"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/recovery_uir_02_out.txt",
+      "git_blob": "daaa70516729c0a57281dddab4e23afcfe1ce82d",
+      "sha256": "e4a955c54e6143491c536a8080e43250e2173b3bcc1e26c5c6c7f9cad8b80778",
+      "bytes": 875,
+      "lines": 19,
+      "read_coverage": "complete",
+      "role": "target"
+    },
+    {
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/recovery_uir_02_err.txt",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "lines": 0,
+      "read_coverage": "complete",
+      "role": "target"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "AGENTS.md",
+      "git_blob": "06a5d79cfd2e5e6886f0702e96bd40b3d581a5ae",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "lines": 26,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "git_blob": "bea573caf2b0ea43a2c6519c9a474d7a10d82965",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "lines": 193,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "git_blob": "ba6fc9a69f3e6dfca01f3257d611d1a057def305",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "lines": 35,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "git_blob": "4796f0492a9d04a8f779c29960240dff32ee0b60",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "lines": 370,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "git_blob": "1ec31f6e817cb259df1bdafa4a358b12e0ac15b8",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "bytes": 5188,
+      "lines": 96,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "git_blob": "90d142bceca9de62e2941519ddd17650cb6366e6",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "bytes": 12608,
+      "lines": 183,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "git_blob": "7f46ba9028f7b047cf7589521d89b7492e25273c",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "bytes": 12940,
+      "lines": 248,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "git_blob": "da1bc02c3d9d3ba6b667139762ffa8d66efc73b1",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "bytes": 23216,
+      "lines": 394,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "git_blob": "04ea075224460de0223a1a0b22a68423c6df1a3a",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "bytes": 7554,
+      "lines": 140,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "git_blob": "cd4b0f2a9bf9b2bb20e2316993cc49f669430c0e",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "lines": 126,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "git_blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "lines": 130,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "git_blob": "b1b498432c82d68c4e59fb5601df5dbfc73ea72e",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "lines": 354,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "git_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "lines": 52,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "lines": 233,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "git_blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581,
+      "lines": 57,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "git_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770,
+      "lines": 99,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    },
+    {
+      "revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "git_blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313,
+      "lines": 110,
+      "read_coverage": "complete",
+      "role": "methodology or registered-premise authority; no science supplied by procedure"
+    }
+  ]
+}

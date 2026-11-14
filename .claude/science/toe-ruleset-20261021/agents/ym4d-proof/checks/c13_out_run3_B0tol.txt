@@ -1,0 +1,14 @@
+INFO (R) 3x^2*4N*b0 [dense iff < 4]: N=2: t=1 1.222, t=3tau/4 0.659; N=3: t=1 2.750, t=3tau/4 1.482; N=4: t=1 4.889, t=3tau/4 2.635; N=5: t=1 7.639, t=3tau/4 4.117; N=6: t=1 nan, t=3tau/4 5.929; N=7: t=1 nan, t=3tau/4 6.000; N=10: t=1 nan, t=3tau/4 6.097
+PASS R E7.0-in-AF-window falsification at t = 3 tau_N/4 holds exactly for N in {2,3,4} among those tested | dense for N = [2, 3, 4]; SU(2) lambda_c/lambda_AF = 6.07
+INFO A_L = 6, c = 1.0107, C_1 = L^2 + 4 c A_L = 33.26 (d = 3, L = 3)
+INFO domain factor A_L C_1 eta = 0.195 (must be <= 0.5)
+INFO (A) trial 0: eta = 9.76e-04, max||Z1-1||/eta = 1.87 (<= A_L = 6), level-1 ratio 0.46, level-2 ratio 0.19; t=1s
+INFO domain factor A_L C_1 eta = 0.127 (must be <= 0.5)
+INFO (A) trial 1: eta = 6.37e-04, max||Z1-1||/eta = 1.41 (<= A_L = 6), level-1 ratio 0.33, level-2 ratio 0.16; t=2s
+PASS A1 ribbon: max ||Z - 1|| <= A_L eta at the first step | 1.87 <= 6
+PASS A2 one-step sup lemma: ||1 - V'_p|| <= C_1 eta | max ratio 0.46 <= 33.26
+PASS A3 two-step sup induction: ||1 - V''_p|| <= C_1^2 eta | max ratio 0.19 <= 1106
+FAIL B0 fine field: every (1,2) plaquette has flux eta, other planes flat | eta = 4.8481e-03
+PASS B1 sharpness: level-k coarse flux = L^{2k} eta exactly (k = 1, 2), so the sup ratio is sin(L^{2k} eta/2)/sin(eta/2) | k=1: flux in [0.043633, 0.043633] vs 0.043633; k=2: flux in [0.392699, 0.392699] vs 0.392699; ratios 9.00, 80.48
+runtime 2 s
+TOTAL: PASS=5 FAIL=1

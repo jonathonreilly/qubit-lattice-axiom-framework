@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-10-29T19:59:42.034395+00:00",
+  "scope": "Coordinator primary-source follow-up, not independent theorem review or a new imported estimate.",
+  "Michta_Slade": {
+    "arxiv": "https://arxiv.org/abs/2101.04717v4",
+    "version_date": "2022-06-08",
+    "published_pdf": "https://alea.impa.br/articles/v19/19-38.pdf",
+    "read": "Abstract, published pp957-958 definitions and normalization, pp965-966 Lemma2.1 and its proof (2.3)-(2.5) in extracted text. Lemma2.2 and AppendixB locations screened, not fully read.",
+    "limits": "No full asymptotic theorem certification; no complex finite-cell or nonlinear gauge comparison proved. Equation(2.1) extracted-text layout was not used as authoritative formula.",
+    "worker_forwarded": "/root/charged_stationary_jet"
+  },
+  "BGM": {
+    "arxiv": "https://arxiv.org/abs/math-ph/0303013v3",
+    "read": "Versioned abstract and bibliographic scope checked against existing B09; no additional theorem imported."
+  },
+  "OS_II_access": {
+    "primary_endpoint": "https://projecteuclid.org/journals/communications-in-mathematical-physics/volume-42/issue-3/Axioms-for-Euclidean-Greens-functions-II-with-an-Appendix-by/cmp/1103899050.pdf",
+    "result": "Search index exposes title/abstract/contents, but opening yielded iframe then service/security notice. Springer PDF endpoint redirects to subscription preview. Neither supplied the full proof.",
+    "publisher_page": "https://link.springer.com/article/10.1007/BF01608978",
+    "R_CONT": "OPEN",
+    "claim": "Access limitations are not a mathematical obstruction or no-go."
+  },
+  "unconsumed_discovery": "A third-party OpenAI research catalogue appeared in search but timed out on opening; no mathematical or benchmark claim is based on it.",
+  "register_entries": 36,
+  "full_existence": "OPEN",
+  "physical_continuum_mass_gap": "OPEN",
+  "Faria_da_Veiga_OCarroll": {
+    "checked_utc": "2026-10-29T20:44:35.886691+00:00",
+    "arxiv": "https://arxiv.org/html/2509.03513v2",
+    "metadata": "https://arxiv.org/abs/2509.03513",
+    "latest_listed_version_date": "2026-01-24",
+    "read": "v1 introduction and complete section IV; v2 abstract, introductory scope/setup and complete section IV. Appendix material appeared in search context, but no complete appendix or detailed spectral proof was reviewed.",
+    "scope": "The newer version explicitly disclaims a physical-gap proof from the Haar quadratic term. Its conclusion leaves continuum persistence and larger-beta results as further work. No theorem imported."
+  }
+}

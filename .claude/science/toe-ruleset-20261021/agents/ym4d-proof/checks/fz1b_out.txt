@@ -1,0 +1,24 @@
+POST-HOC fz1b: min over the two exact representations.  Exponents of L.
+the single pre-registered FAIL of fz1-B was theta=1/4, alpha=1/8, k=2 ((Pl)=L^19/8 < (R)=L^20/8, a gap of L^(1/8)).
+
+theta=1/4   alpha=1/8     min-ratio exponent: k=40 -> 10        k=200 -> 50        growing: True
+theta=1/4   alpha=1/4     min-ratio exponent: k=40 -> 10        k=200 -> 50        growing: True
+theta=1/4   alpha=1/4     min-ratio exponent: k=40 -> 10        k=200 -> 50        growing: True
+theta=1/3   alpha=1/8     min-ratio exponent: k=40 -> 40/3      k=200 -> 200/3     growing: True
+theta=1/3   alpha=1/4     min-ratio exponent: k=40 -> 40/3      k=200 -> 200/3     growing: True
+theta=1/3   alpha=1/3     min-ratio exponent: k=40 -> 40/3      k=200 -> 200/3     growing: True
+theta=1/2   alpha=1/8     min-ratio exponent: k=40 -> 20        k=200 -> 100       growing: True
+theta=1/2   alpha=1/4     min-ratio exponent: k=40 -> 20        k=200 -> 100       growing: True
+theta=1/2   alpha=1/2     min-ratio exponent: k=40 -> 20        k=200 -> 100       growing: True
+theta=3/4   alpha=1/8     min-ratio exponent: k=40 -> 30        k=200 -> 150       growing: True
+theta=3/4   alpha=1/4     min-ratio exponent: k=40 -> 30        k=200 -> 150       growing: True
+theta=3/4   alpha=3/4     min-ratio exponent: k=40 -> 30        k=200 -> 150       growing: True
+theta=9/10  alpha=1/8     min-ratio exponent: k=40 -> 36        k=200 -> 180       growing: True
+theta=9/10  alpha=1/4     min-ratio exponent: k=40 -> 36        k=200 -> 180       growing: True
+theta=9/10  alpha=9/10    min-ratio exponent: k=40 -> 36        k=200 -> 180       growing: True
+
+rows with min-ratio <= 1 (i.e. forward map bounded): NONE
+
+POST-HOC CONCLUSION: the minimum over BOTH exact representations has exponent
+  min(theta*k, (theta+alpha)*(k-1)) - 0,  which -> infinity for every theta>0, alpha>0.
+So fz1-B's single k=2 failure does NOT rescue (FWD-0); fz1-A's verdict is undamaged.

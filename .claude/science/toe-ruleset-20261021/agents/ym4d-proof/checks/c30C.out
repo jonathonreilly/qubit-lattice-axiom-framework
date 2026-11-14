@@ -1,0 +1,11 @@
+C d=2 T=5 k=2 kap=(1.0, 1.0): ne 9.1e-13  C1 6.85e-12  C2 4.73e-12  C3 2.33e-11  C4 max ratio 0.332  (0 s, RSS 0.06 GB)
+C d=2 T=5 k=3 kap=(0.5, 2.0, 1.0): ne 7.7e-12  C1 1.59e-10  C2 9.72e-11  C3 7.88e-11  C4 max ratio 0.333  (1 s, RSS 0.07 GB)
+C d=2 T=3 k=3 kap=(1.0, 1.0, 1.0): ne 5.0e-12  C1 7.56e-11  C2 3.54e-11  C3 4.12e-11  C4 max ratio 0.333  (0 s, RSS 0.07 GB)
+C d=4 T=3 k=1 kap=(1.0,): ne 5.2e-13  C1 1.15e-12  C2 7.79e-13  C3 3.65e-11  C4 max ratio 0.000  (0 s, RSS 0.08 GB)
+C d=4 T=2 k=2 kap=(1.0, 1.0): ne 5.2e-12  C1 3.05e-10  C2 2.93e-11  C3 4.30e-09  C4 max ratio 0.304  (6 s, RSS 0.48 GB)
+V1: PASS
+C1: PASS
+C2: PASS
+C3: PASS
+C4: PASS
+c30 C: PASS; time 7 s, peak RSS 0.48 GB

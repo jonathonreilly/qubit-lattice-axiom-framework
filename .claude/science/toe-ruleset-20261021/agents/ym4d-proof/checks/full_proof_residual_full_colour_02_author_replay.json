@@ -1,0 +1,27 @@
+{
+  "started_utc": "2026-10-29T16:34:42.081759+00:00",
+  "finished_utc": "2026-10-29T16:34:42.903653+00:00",
+  "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_02.py",
+  "script_sha256": "9e656ac0e2a72ac98cc6b4c52940f662b95b3911df6310bc254c7daab98a4e52",
+  "execution": "Byte-identical script copied into an isolated temporary directory to preserve author result files",
+  "command_argv": [
+    "/usr/local/bin/python3",
+    "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym4d-frozen-author-replay-n7anxqhv/residual_full_colour_02.py"
+  ],
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "exit_code": 0,
+  "console_stdout": "{\n  \"scope\": \"exact finite periodic Green, projector-defect and Gram controls; no uniform-depth or nonlinear finite-volume verdict\",\n  \"passed\": 25,\n  \"total\": 25,\n  \"radial_green\": {\n    \"g0\": \"104/729\",\n    \"g1\": \"14/729\",\n    \"g2\": \"1/1458\",\n    \"g3\": \"-4/729\",\n    \"g4\": \"-25/2916\"\n  },\n  \"checks\": [\n    {\n      \"name\": \"periodic Green exact rank-one inverse\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"periodic inverse defect retained\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"mean-zero domain\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"ordinary inverse assertion rejected\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"external cosine norm and mean\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"independent Fourier eigenvalue\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"exceptional trace word r=1\",\n      \"passed\": true,\n      \"detail\": \"{'trace': '1/6', 'per_site': '1/486'}\"\n    },\n    {\n      \"name\": \"zero-defect replacement rejected r=1\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"exceptional trace word r=2\",\n      \"passed\": true,\n      \"detail\": \"{'trace': '1/18', 'per_site': '1/1458'}\"\n    },\n    {\n      \"name\": \"zero-defect replacement rejected r=2\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"exceptional trace word r=3\",\n      \"passed\": true,\n      \"detail\": \"{'trace': '1/54', 'per_site': '1/4374'}\"\n    },\n    {\n      \"name\": \"zero-defect replacement rejected r=3\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"fixed momentum volume limit r=1\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"fixed momentum volume limit r=2\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"fixed momentum volume limit r=3\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"merging limit differs\",\n      \"passed\": true,\n      \"detail\": \"1/(32*pi**4)\"\n    },\n    {\n      \"name\": \"pinned rows exactly zero\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"pinned deleted-domain inverse\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"pinned constant term matters\",\n      \"passed\": true,\n      \"detail\": \"{'mean_zero': '104/729', 'pinned': '208/729'}\"\n    },\n    {\n      \"name\": \"missing pinned constant rejected\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"finite rank difference not negligible\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"fixed-domain complete coefficient\",\n      \"passed\": true,\n      \"detail\": \"4/9\"\n    },\n    {\n      \"name\": \"outer half weight\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"wrong bubble factor rejected\",\n      \"passed\": true,\n      \"detail\": null\n    },\n    {\n      \"name\": \"moving-kernel Gram correction\",\n      \"passed\": true,\n      \"detail\": null\n    }\n  ]\n}\n",
+  "stderr_bytes": 0,
+  "output_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_residual_full_colour_02_author_replay_out.json",
+  "output_sha256": "54907736019b5526f8d5490bca00ca08a214b24eaad3ab191718d5a84f32679a",
+  "expected_output": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_full_colour_02_out.json",
+  "expected_sha256": "54907736019b5526f8d5490bca00ca08a214b24eaad3ab191718d5a84f32679a",
+  "identical_except_elapsed_seconds": true,
+  "ignored_comparison_fields": [
+    "elapsed_seconds"
+  ],
+  "counts": {
+    "passed": 25,
+    "total": 25
+  }
+}

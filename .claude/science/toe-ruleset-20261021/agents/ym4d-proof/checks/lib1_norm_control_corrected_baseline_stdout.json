@@ -1,0 +1,396 @@
+{
+  "kind": "finite author check; not an independent proof review",
+  "started_utc": "2026-10-29T20:19:26.183008+00:00",
+  "counts": {
+    "polynomial_identity_with_inactive_remainder": 2187,
+    "active_norm_contraction": 2187,
+    "bounded_hole_full_norm": 2184,
+    "rooted_entropy_bound": 576,
+    "two_closure_algorithms": 36873,
+    "new_polymer_class": 36873,
+    "containment_and_active_identity": 36873,
+    "ambient_tree_monotonicity": 36873,
+    "all_original_monomial_sources_retained": 36873,
+    "pointwise_decay_bound": 8972,
+    "no_hole_identity": 3,
+    "native_4d_closure": 6288,
+    "native_4d_geometry": 6288,
+    "native_4d_tree": 6288,
+    "mutation_setup_full_hole": 1,
+    "exact_cycle_input_full_norm": 1,
+    "exact_cycle_output_full_norm": 1,
+    "exact_cycle_output_active_norm": 1,
+    "exact_overlap_supports": 1,
+    "exact_inactive_root_output_full_norm": 1,
+    "exact_overlap_output_active_norm": 1,
+    "exact_overlap_active_roots_full_weight": 1,
+    "mutation_rejected_drop_inactive_remainder": 1,
+    "mutation_rejected_erase_inactive_source": 1,
+    "mutation_rejected_fill_intersected_only": 1,
+    "mutation_rejected_identify_active_and_full_norms": 1
+  },
+  "resources": [
+    {
+      "where": "before any enumeration",
+      "max_rss_bytes": 20611072,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.002055084041785449
+    },
+    {
+      "where": "path6: start",
+      "max_rss_bytes": 20643840,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.003550124994944781
+    },
+    {
+      "where": "path6: nested pair 250",
+      "max_rss_bytes": 20676608,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.036983833997510374
+    },
+    {
+      "where": "path6: nested pair 500",
+      "max_rss_bytes": 20807680,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.073508083994966
+    },
+    {
+      "where": "path6: end",
+      "max_rss_bytes": 20840448,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.11181750003015622
+    },
+    {
+      "where": "cycle6: start",
+      "max_rss_bytes": 20856832,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.11319916701177135
+    },
+    {
+      "where": "cycle6: nested pair 250",
+      "max_rss_bytes": 20889600,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.156484792008996
+    },
+    {
+      "where": "cycle6: nested pair 500",
+      "max_rss_bytes": 21004288,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.2083816670347005
+    },
+    {
+      "where": "cycle6: end",
+      "max_rss_bytes": 21020672,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.26565458404365927
+    },
+    {
+      "where": "box2x3: start",
+      "max_rss_bytes": 21037056,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.2670327920350246
+    },
+    {
+      "where": "box2x3: nested pair 250",
+      "max_rss_bytes": 21069824,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.3155932920053601
+    },
+    {
+      "where": "box2x3: nested pair 500",
+      "max_rss_bytes": 21069824,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.3724082090193406
+    },
+    {
+      "where": "box2x3: end",
+      "max_rss_bytes": 21086208,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.4424831250216812
+    },
+    {
+      "where": "native 4d end",
+      "max_rss_bytes": 21086208,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.4566363340127282
+    },
+    {
+      "where": "completion",
+      "max_rss_bytes": 21086208,
+      "load_averages": [
+        2.10986328125,
+        2.0830078125,
+        2.07470703125
+      ],
+      "memory_free_percent": 54,
+      "nice": 10,
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "elapsed_seconds": 0.45802741701481864
+    }
+  ],
+  "mutations": {
+    "drop_inactive_remainder": "rejected by exact witness",
+    "erase_inactive_source": "rejected by exact witness",
+    "fill_intersected_only": "rejected by exact witness",
+    "identify_active_and_full_norms": "rejected by exact witness"
+  },
+  "graphs": [
+    {
+      "name": "path6",
+      "vertices": 6,
+      "nested_active_pairs": 729,
+      "connected_supports": 21
+    },
+    {
+      "name": "cycle6",
+      "vertices": 6,
+      "nested_active_pairs": 729,
+      "connected_supports": 31
+    },
+    {
+      "name": "box2x3",
+      "vertices": 6,
+      "nested_active_pairs": 729,
+      "connected_supports": 40
+    }
+  ],
+  "native_4d": {
+    "vertices": 16,
+    "degree": 4,
+    "active_sets": 137,
+    "support_instances": 6288
+  },
+  "inactive_root_witness": {
+    "graph": "path3",
+    "retained_vertices": [
+      0,
+      2
+    ],
+    "output_supports": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "coefficients": [
+      1,
+      1
+    ],
+    "computed_full_norm": 8,
+    "computed_active_norm": 2,
+    "computed_active_roots_full_weight": 4,
+    "independent_expected_full_norm": 8
+  },
+  "norm_witness": {
+    "graph": "four-cycle",
+    "input_support": [
+      0
+    ],
+    "inactive_component": [
+      1,
+      2,
+      3
+    ],
+    "input_full_norm": 2,
+    "output_full_norm": 16,
+    "output_active_norm": 2,
+    "mu": "log(2)",
+    "activity_supremum": 1
+  },
+  "result": "completed; all enumerated predicates satisfied",
+  "elapsed_seconds": 0.45803487504599616,
+  "script_sha256": "0bcd86c97aa91b6897241f6998693de15c6131e54785c77a32ee6beb097300b8",
+  "criteria_sha256": "2401a70f2e9b87af8a876eb4a5274b7467bf5769f7f1d30bddbcd4b1356d1f68"
+}

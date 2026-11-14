@@ -1,0 +1,285 @@
+{
+  "reviewer_control": "Independent constructions before inspecting author runner",
+  "runtime": {
+    "python": "3.12.8",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0"
+  },
+  "elapsed_seconds": 0.5867730420432054,
+  "passed": 49,
+  "failed": 1,
+  "checks": [
+    {
+      "name": "temporal_slab_orientation",
+      "passed": true,
+      "max_error": 3.122502256758253e-16,
+      "links": 81
+    },
+    {
+      "name": "actual_slab_half_spatial_action",
+      "passed": true,
+      "error": -1.4210854715202004e-14
+    },
+    {
+      "name": "negative_omit_spatial_factor",
+      "passed": true,
+      "error": -56.4154826882324
+    },
+    {
+      "name": "independent_two_slice_gauge_covariance",
+      "passed": true
+    },
+    {
+      "name": "negative_wrong_temporal_vertex",
+      "passed": true
+    },
+    {
+      "name": "wilson_square_transfer_beta_0.1",
+      "passed": true,
+      "top": 0.9105091772011247,
+      "ratio": 3.8948780940053194e-07,
+      "minorization": 0.44932896411722156,
+      "min_truncated_eigenvalue": -2.2199495374120337e-16
+    },
+    {
+      "name": "wilson_square_doob_beta_0.1",
+      "passed": true,
+      "stationary_error": 1.0408340855860843e-17,
+      "min_density": 0.9999984027761263
+    },
+    {
+      "name": "wilson_square_transfer_beta_0.7",
+      "passed": true,
+      "top": 0.672527669048673,
+      "ratio": 0.0008151597298852638,
+      "minorization": 0.003697863716482932,
+      "min_truncated_eigenvalue": -1.6944991634496755e-16
+    },
+    {
+      "name": "wilson_square_doob_beta_0.7",
+      "passed": true,
+      "stationary_error": 1.0408340855860843e-17,
+      "min_density": 0.9959502131035721
+    },
+    {
+      "name": "negative_character_dimension_divisor",
+      "passed": true
+    },
+    {
+      "name": "negative_one_temporal_link_for_square",
+      "passed": true
+    },
+    {
+      "name": "negative_constant_vacuum",
+      "passed": true,
+      "maximum_row_error": 0.3561532185738696
+    },
+    {
+      "name": "wilson_square_transfer_beta_2.0",
+      "passed": true,
+      "top": 1.4153555181297737,
+      "ratio": 0.021911890941054984,
+      "minorization": 1.1253517471925912e-07,
+      "min_truncated_eigenvalue": -3.351571343021703e-16
+    },
+    {
+      "name": "wilson_square_doob_beta_2.0",
+      "passed": true,
+      "stationary_error": 1.3877787807814457e-17,
+      "min_density": 0.81132505751383
+    },
+    {
+      "name": "wilson_square_transfer_beta_5.0",
+      "passed": true,
+      "top": 965.0481774178974,
+      "ratio": 0.0369612702604893,
+      "minorization": 4.248354255291589e-18,
+      "min_truncated_eigenvalue": -1.8511831375026116e-13
+    },
+    {
+      "name": "wilson_square_doob_beta_5.0",
+      "passed": true,
+      "stationary_error": 3.469446951953614e-17,
+      "min_density": 0.09859005312126798
+    },
+    {
+      "name": "haar_endpoint_rank_one",
+      "passed": true
+    },
+    {
+      "name": "negative_beta_positivity_excluded",
+      "passed": true,
+      "fundamental_character_coefficient": -0.3645123041693813
+    },
+    {
+      "name": "hopf_mean_[0.0, 0.0, 0.0, 0.0]_0.0",
+      "passed": true,
+      "max_error": 1.550985089058531e-16
+    },
+    {
+      "name": "hopf_mean_[0.0, 0.0, 0.0, 0.0]_0.35",
+      "passed": true,
+      "max_error": 1.550985089058531e-16
+    },
+    {
+      "name": "hopf_mean_[0.0, 0.0, 0.0, 0.0]_2.6",
+      "passed": true,
+      "max_error": 1.550985089058531e-16
+    },
+    {
+      "name": "hopf_mean_[0.0, 0.0, 0.0, 0.0]_(0.4+0.3j)",
+      "passed": true,
+      "max_error": 3.903127820948135e-17
+    },
+    {
+      "name": "hopf_mean_[0.2, -0.3, 0.4, 0.1]_0.0",
+      "passed": true,
+      "max_error": 1.550985089058531e-16
+    },
+    {
+      "name": "hopf_mean_[0.2, -0.3, 0.4, 0.1]_0.35",
+      "passed": true,
+      "max_error": 5.134781488891349e-16
+    },
+    {
+      "name": "hopf_mean_[0.2, -0.3, 0.4, 0.1]_2.6",
+      "passed": true,
+      "max_error": 1.6653345369377348e-15
+    },
+    {
+      "name": "negative_nonunit_mean_inverse",
+      "passed": true
+    },
+    {
+      "name": "hopf_mean_[0.2, -0.3, 0.4, 0.1]_(0.4+0.3j)",
+      "passed": true,
+      "max_error": 1.2023523462386844e-16
+    },
+    {
+      "name": "complex_negative_orientation",
+      "passed": true
+    },
+    {
+      "name": "negative_conjugate_lambda",
+      "passed": true
+    },
+    {
+      "name": "hopf_mean_[0.0, 0.0, 0.0, 1.0]_0.0",
+      "passed": true,
+      "max_error": 1.550985089058531e-16
+    },
+    {
+      "name": "hopf_mean_[0.0, 0.0, 0.0, 1.0]_0.35",
+      "passed": true,
+      "max_error": 2.1094237467877974e-15
+    },
+    {
+      "name": "hopf_mean_[0.0, 0.0, 0.0, 1.0]_2.6",
+      "passed": true,
+      "max_error": 9.658940314238862e-15
+    },
+    {
+      "name": "hopf_mean_[0.0, 0.0, 0.0, 1.0]_(0.4+0.3j)",
+      "passed": true,
+      "max_error": 1.0187553493360871e-14
+    },
+    {
+      "name": "complex_negative_orientation",
+      "passed": true
+    },
+    {
+      "name": "negative_conjugate_lambda",
+      "passed": true
+    },
+    {
+      "name": "repeated_link_haar_second_moment",
+      "passed": false
+    },
+    {
+      "name": "negative_normalizer_omission",
+      "passed": true
+    },
+    {
+      "name": "sphere_integral_normalized_series",
+      "passed": true,
+      "coefficients": [
+        "1/4",
+        "-1/96",
+        "1/1536"
+      ]
+    },
+    {
+      "name": "actual_s4_path_mean_domain",
+      "passed": true,
+      "radii": [
+        0.7662053521433689,
+        0.7707110489824351,
+        0.7339447315232402,
+        0.743003280949184,
+        0.7027130164596459,
+        0.715359250763412,
+        0.7497309510504876,
+        0.7679064592096307
+      ],
+      "fine_links_read": 1944,
+      "contours_per_edge": 1944
+    },
+    {
+      "name": "actual_s4_haar_tensor_coefficient_0",
+      "passed": true,
+      "coefficient": 0.0012547593681975118
+    },
+    {
+      "name": "negative_inverse_in_loop_0",
+      "passed": true
+    },
+    {
+      "name": "actual_s4_haar_tensor_coefficient_4",
+      "passed": true,
+      "coefficient": 0.0011230966892760293
+    },
+    {
+      "name": "negative_inverse_in_loop_4",
+      "passed": true
+    },
+    {
+      "name": "degree_eight_tensor_scale",
+      "passed": true,
+      "coefficient_product": 1.4092160922607078e-06,
+      "scope": "Pointwise conditional tensor identity; no sampling claim about the Wilson covariance."
+    },
+    {
+      "name": "actual_s4_noncentral_face_lift_0",
+      "passed": true,
+      "max_error": 2.398081733190338e-14
+    },
+    {
+      "name": "actual_s4_noncentral_face_lift_1",
+      "passed": true,
+      "max_error": 3.941291737419306e-14
+    },
+    {
+      "name": "haar_coarse_source_log_retains_actual_wilson_covariance",
+      "passed": true,
+      "covariance": 0.06962747454672046,
+      "mixed_source_finite_difference": 0.06962746804117792
+    },
+    {
+      "name": "negative_drop_source_only_log",
+      "passed": true,
+      "incorrect_value": 0.0
+    },
+    {
+      "name": "total_covariance_normalized_joint",
+      "passed": true,
+      "coarse_term": 0.008972436446869694,
+      "conditional_term": 0.060655038099850914,
+      "total": 0.06962747454672062,
+      "scope": "Finite normalized scalar conditional control; not an S4 RG theorem."
+    },
+    {
+      "name": "negative_discard_conditional_covariance",
+      "passed": true
+    }
+  ]
+}

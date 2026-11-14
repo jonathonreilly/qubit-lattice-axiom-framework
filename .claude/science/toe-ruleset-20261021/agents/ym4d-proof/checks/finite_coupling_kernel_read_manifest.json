@@ -1,0 +1,178 @@
+{
+  "created_utc": "2026-10-29T22:36:56.114900+00:00",
+  "workspace": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "bytes": 1497,
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "read_coverage": "Complete current file read; owner process43ac056899 governs new lane."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "bytes": 94345,
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "read_coverage": "Complete313-391 actual doubled kernel, INV/PR/NZ and old SU2 formula; the latter is rejected in favor of CODEX_REVIEW_STEP R6. S5-S7 fully reread in665-681; no remaining STEP claims consumed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_STEP.md",
+      "bytes": 46090,
+      "sha256": "32bab8cbc920447280b3da93a1754bf792509a115bbf8cfffc7101350fe64a0d",
+      "read_coverage": "Complete108-137 R6, including independent complex normalizer and dual-quaternion correction; R7 opening visible. No integrated denominator inference."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "bytes": 28993,
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "read_coverage": "Complete1-90,153-342: CB1 exact law and original sources; brick lift; CB7-CB15 finite-u Hessian, uniform analytic contraction, actual source branch and its constants. CB14 is the sole external mathematical provider for FK23; standalone FK2 is rebuilt here."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "bytes": 17323,
+      "sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+      "read_coverage": "Complete1-70 and98-124; source-bound scope and actual CB9-CB15 assessment, plus bounded source/VERDICT navigation search. Not a new complete rereview."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFT_FLUCTUATION_COVARIANCE_ASTRA.md",
+      "bytes": 29910,
+      "sha256": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403",
+      "read_coverage": "Complete90-220: F1-F9, counting quotient, Haar measure identity, actual finite-u mean/spread calculation. F6-F7 are rebuilt in FK24, not accepted from a status label."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_STATIONARY_JET_ASTRA.md",
+      "bytes": 26289,
+      "sha256": "85b91738993f09f7e40a49f4c957c164a684bf499185629a82775229f6437254",
+      "read_coverage": "Complete20-78 current-task read: actual normalized tree/action, S4prime divisor and source scope. No CJ estimate imported into scalar theorem."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "bytes": 38024,
+      "sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+      "read_coverage": "Complete190-260 current task: UL9-UL12 dictionary, full normalizer/Gram/ghost conventions and explicit finite-u nonclaim. Earlier authored/reviewed unit reused only at this scope. Frozen correction untouched."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "bytes": 21924,
+      "sha256": "ca80f189e924ac7d15462258d4a1e95734cfa55e45d382e7791dabdf0de2cc27",
+      "read_coverage": "Complete1-85 current task: scoped LAND targetb7baa6a7 and Gaussian/every-increment scope; no finite-u claim imported."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NODEA55.md",
+      "bytes": 81610,
+      "sha256": "085a78bcae79fe5eb7599fbfa6e95a4d2f165442ed6d03656863da913e142ee7",
+      "read_coverage": "Complete130-160: fixed-volume LT statement and proof(a), start of proof(b); comparison only, no pricing theorem used."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_A.md",
+      "bytes": 352591,
+      "sha256": "553d56f46ea457aa1b6a97c2a53f435739d3fadb6c9af0cf89676f41a7266902",
+      "read_coverage": "Complete1-80: source/tree problem, coordinates and original targets; large file not fully read. Current-task broad heading search truncated and used for navigation only."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_B.md",
+      "bytes": 662171,
+      "sha256": "b6ddf451a4dfe2028a9f23fe7fe696ce11f1c17e497709ac3761da3e7a1172c6",
+      "read_coverage": "Complete4580-4667: selected background/current scope and explicitly retained obligations. No theorem imported and no whole-file claim."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HINT2_55.md",
+      "bytes": 67652,
+      "sha256": "e617800fa0426a6099b5b6966cf383d118eeed33f363b5c9ff866108a6537dbf",
+      "read_coverage": "Complete368-393: exact R2.3 B-BR/nonlinear interfaces and start R2.4. Historical status words are not used as current authority."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 10531,
+      "sha256": "288aee552bf7c83b32d6b0cc1569a99053355544704021e52ddea522ca8ce50b",
+      "read_coverage": "Selected B03-B13,B26,B37-B38 rows via bounded name search; external papers remain comparisons."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "bytes": 24710,
+      "sha256": "ae281c9e310a4b4b21f6a5347813ead4d279967e03ef4b1fee82f64a4a26fcb1",
+      "read_coverage": "Selected intro and B03-B13,B26,B37-B38 rows via bounded name search; no additional theorem inferred."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_read_manifest.json",
+      "bytes": 14500,
+      "sha256": "c98c5530c75f1d6a000587d7915754e9c08ed45659b22bce0c29cbebcdea2194",
+      "read_coverage": "Prior consistent methodology and selected read closure reused; fresh cat output truncated, so no fresh complete manifest read is claimed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_runner.py",
+      "bytes": 2905,
+      "sha256": "489d96acb40e06abcb599eb4148bfa29ad58ee09fb03218bf82d8e4a8d081b0b",
+      "read_coverage": "Complete current file read solely to reuse already diagnosed Darwin RSS-watchdog launcher; CC frozen unchanged."
+    }
+  ],
+  "protected_frozen_sources": {
+    "COVARIANT_COMPLEMENT_ASTRA.md": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b",
+    "UNIFORM_ONE_LOOP_COUPLING_ASTRA.md": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce"
+  },
+  "methodology": {
+    "new_lane_process_revision": "43ac056899",
+    "prior_consistent_fetched_authority": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+    "stale_local_main": "not used",
+    "entry_refresh": "Installed physics-loop and review-loop SKILL.md each read completely this task as routers. Prior complete consistent references reused from the earlier frozen packets; no newly changed premise authority, framework primitive or audit verdict introduced.",
+    "ownership": "Only FINITE_COUPLING_KERNEL_ASTRA.md and checks/finite_coupling_kernel_* written. Coordinator owns Git, locks, shared status, review dispatch and audit."
+  },
+  "primary_literature": [
+    {
+      "title": "Pemantle and Wilson, Asymptotic expansions of oscillatory integrals with complex phase",
+      "url": "https://arxiv.org/abs/0903.3585",
+      "version": "0903.3585v1,20March2009",
+      "read": "Abstract/introduction and theorem2.3; standard Gaussian/moment discussion; complete displayed localTheorem4.1/Morse proof and Stokes/branch passage throughLemma4.3, webPDF0-857 across initial/focused opens. Not whole19-page paper. Rebuilt finite estimates and Gaussian normalization locally; no numeric prefactor imported.",
+      "failed_fetch": "Author Penn PDF URL returned403; arXiv PDF succeeded."
+    },
+    {
+      "title": "Dimock, The Renormalization Group According to Balaban I Small Fields",
+      "url": "https://arxiv.org/abs/1108.1335",
+      "version": "PDF displaysarXiv1108.1335v2,21Dec2012; internaltitledate28Oct2018",
+      "read": "PDF0-621: introduction/model/d3 scalar scope and block transformation through initial Gaussian minimization. Only architecture attributed; no d4SU(N) theorem imported."
+    },
+    {
+      "title": "Balaban, RG approach to lattice gauge field theories I",
+      "url": "https://doi.org/10.1007/BF01215223",
+      "read": "Primary Rutgers bibliographic record from websearch/title/year1987/CMP109249-301, plus existing B26 scope row. Paper body not read in this task and no detailed theorem cited as an input."
+    }
+  ],
+  "failures_and_amendments": [
+    {
+      "type": "resource_only",
+      "artifact": "checks/finite_coupling_kernel_run01_gate.json",
+      "detail": "49% free memory below unchanged50% threshold; no checker child launched."
+    },
+    {
+      "type": "preexecution_mathematical_criterion_correction",
+      "artifact": "checks/finite_coupling_kernel_preexecution_amendment.json",
+      "detail": "Corrected sign of t^-2 coefficient in1-c2 before any numerical execution; same tolerance; original criterion text and old/new code/criterion hashes preserved."
+    },
+    {
+      "type": "tooling_no_mutation",
+      "detail": "A no-op apply_patch lookup after equation-number cleanup failed to match an expected line; no source change from that patch. The earlier sequential number cleanup succeeded. Later actual patch used observed text."
+    }
+  ],
+  "review_state": "Author work pending fresh independent review. No whole-PR, audit, nonlinear-flow, existence or mass-gap verdict.",
+  "nonclaims": [
+    "interacting connected fluctuation remainder",
+    "integrated complex source denominator nonvanishing",
+    "hard complement return",
+    "multilevel nonlinear coupling map",
+    "uniform all-depth nonlinear inverse",
+    "continuum existence",
+    "physical continuum mass gap"
+  ],
+  "skill_entry_reads": [
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "coverage": "Complete entry point this task; same prior consistent source references reused, not mixed with a fresh installed reference read."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "coverage": "Complete entry point this task; same prior consistent source references reused, not mixed with a fresh installed reference read."
+    }
+  ],
+  "author_self_check": "Complete final draft argument read:1-284,285-460,460-end; subsequent narrow edits read in patch context. This is author inspection, not independent review."
+}

@@ -1,0 +1,198 @@
+[
+  {
+    "name": "replay",
+    "passed": 35,
+    "total": 35,
+    "exit_code": 0,
+    "peak_rss_KiB": 158608,
+    "wall_seconds": 0.498010583978612,
+    "failed_checks": [],
+    "scientific_rows_equal": true,
+    "scientific_details_equal": true
+  },
+  {
+    "name": "dual_sign",
+    "passed": 31,
+    "total": 35,
+    "exit_code": 1,
+    "peak_rss_KiB": 132640,
+    "wall_seconds": 0.3827829590300098,
+    "failed_checks": [
+      {
+        "name": "SU2 full Haar and translated cycle t=3.0",
+        "value": 0.00015173082487473114,
+        "passed": false,
+        "kind": "ordinary"
+      },
+      {
+        "name": "SU2 full Haar and translated cycle t=12.0",
+        "value": 0.0009346947950971775,
+        "passed": false,
+        "kind": "ordinary"
+      },
+      {
+        "name": "SU2 full Haar and translated cycle t=40.0",
+        "value": 0.003417984039106177,
+        "passed": false,
+        "kind": "ordinary"
+      },
+      {
+        "name": "wrong dual-quaternion sign",
+        "value": 0.0,
+        "passed": false,
+        "kind": "mutation"
+      }
+    ]
+  },
+  {
+    "name": "unconstrained_saddle",
+    "passed": 30,
+    "total": 35,
+    "exit_code": 1,
+    "peak_rss_KiB": 156368,
+    "wall_seconds": 0.369771541969385,
+    "failed_checks": [
+      {
+        "name": "SU2 saddle determinant",
+        "value": 0.017984678322411234,
+        "passed": false,
+        "kind": "ordinary"
+      },
+      {
+        "name": "SU2 full Haar and translated cycle t=3.0",
+        "value": 6.946556823817797e-05,
+        "passed": false,
+        "kind": "ordinary"
+      },
+      {
+        "name": "SU2 full Haar and translated cycle t=12.0",
+        "value": 0.0004278392798366308,
+        "passed": false,
+        "kind": "ordinary"
+      },
+      {
+        "name": "SU2 full Haar and translated cycle t=40.0",
+        "value": 0.0015633435191179698,
+        "passed": false,
+        "kind": "ordinary"
+      },
+      {
+        "name": "SU3 noncommuting SL saddle",
+        "value": 8.993392120366893e-06,
+        "passed": false,
+        "kind": "ordinary"
+      }
+    ]
+  },
+  {
+    "name": "missing_haar",
+    "passed": 32,
+    "total": 35,
+    "exit_code": 1,
+    "peak_rss_KiB": 147776,
+    "wall_seconds": 0.37741154205286875,
+    "failed_checks": [
+      {
+        "name": "SU3 eight-colour remainder t=40.0",
+        "value": [
+          283.61818923449954,
+          0.0
+        ],
+        "passed": false,
+        "kind": "ordinary"
+      },
+      {
+        "name": "SU3 eight-colour remainder t=80.0",
+        "value": [
+          733.0735324380332,
+          0.0
+        ],
+        "passed": false,
+        "kind": "ordinary"
+      },
+      {
+        "name": "SU3 eight-colour remainder t=160.0",
+        "value": [
+          1798.3488815434448,
+          0.0
+        ],
+        "passed": false,
+        "kind": "ordinary"
+      }
+    ]
+  },
+  {
+    "name": "double_hessian",
+    "passed": 34,
+    "total": 35,
+    "exit_code": 1,
+    "peak_rss_KiB": 151312,
+    "wall_seconds": 0.37093854101840407,
+    "failed_checks": [
+      {
+        "name": "SU3 full eight-colour Hessian",
+        "value": 0.9428090473199008,
+        "passed": false,
+        "kind": "ordinary"
+      }
+    ]
+  },
+  {
+    "name": "wrong_divisor",
+    "passed": 34,
+    "total": 35,
+    "exit_code": 1,
+    "peak_rss_KiB": 125936,
+    "wall_seconds": 0.37099866702919826,
+    "failed_checks": [
+      {
+        "name": "actual complex S4 in fixed matrix domain",
+        "value": 8824.692628852139,
+        "passed": false,
+        "kind": "ordinary"
+      }
+    ]
+  },
+  {
+    "name": "inverse_of_mean",
+    "passed": 34,
+    "total": 35,
+    "exit_code": 1,
+    "peak_rss_KiB": 133040,
+    "wall_seconds": 0.3603320420370437,
+    "failed_checks": [
+      {
+        "name": "inverse mean and conjugate are both wrong",
+        "value": [
+          0.0,
+          0.013556166978312604
+        ],
+        "passed": false,
+        "kind": "ordinary"
+      }
+    ]
+  },
+  {
+    "name": "double_cubic",
+    "passed": 34,
+    "total": 35,
+    "exit_code": 1,
+    "peak_rss_KiB": 150272,
+    "wall_seconds": 0.3983985829981975,
+    "failed_checks": [
+      {
+        "name": "SU3 genuine odd cubic and parity",
+        "value": [
+          [
+            -1.4515494772048473e-05,
+            0.0
+          ],
+          7.257747386024237e-06,
+          4.0488174878755556e-19
+        ],
+        "passed": false,
+        "kind": "ordinary"
+      }
+    ]
+  }
+]

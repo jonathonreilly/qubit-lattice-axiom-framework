@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "role": "author freeze; independent scientific review requested and pending",
+  "source_revision_context": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+  "source_sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+  "source_line_count": 543,
+  "records": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "bytes": 27584
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/positive_reader_covariance_read_manifest.json",
+      "sha256": "2c396c99b81ceb65f4a1b05e7dacaba5cc62d15ccc80e900d9d8e21052bd9af4",
+      "bytes": 15133
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/positive_reader_covariance_author_checks.md",
+      "sha256": "672f98b460907ea7e5f43820af2c38ff67efbe08a2306de0f0a879a644013bf3",
+      "bytes": 4549
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/positive_reader_covariance_identity_check.json",
+      "sha256": "0a146ad24726ae547dd6af19ad31c4c836fff70a37b83f04284227a73e9a67f4",
+      "bytes": 5466
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/positive_reader_covariance_freeze.py",
+      "sha256": "3e2918e07e0a809365c0fcb046fe087282ab88900907723c6dcd9b051d1b4051",
+      "bytes": 4551
+    }
+  ],
+  "proved_proposal": [
+    "Actual finite-u full-colour lift Hessian and uniform complex principal-inverse bounds",
+    "Geometry-only smooth cutoff cover with a bounded whole-torus small-volume case",
+    "Exact commutator residual, separate absolute row/column and marked incidence bounds",
+    "Positive complete-reader local covariance core plus symmetrized residual atoms of M_beta<=c0/16",
+    "Uniform accretivity under nonnegative core weakening and modulus-one residual weakening",
+    "Complete-reader monomials, exact normalized Gaussian endpoint factorization, and finite-order coefficient chain-rule bounds"
+  ],
+  "output_rate": "beta=(16R)^(-4) in original coarse-block units; not an arbitrary preassigned rate; use beta/2 if reserving derivative weight",
+  "open_interfaces": [
+    "RD convergence support-margin compatibility",
+    "New weaker Gaussian precision constant in the combined chart regulator",
+    "All integrated derivative trees, hard surfaces/corners and histories",
+    "Same-component reference and saddle/vacuum normalization cancellation",
+    "Original-cut complex nonvanishing and full return expansion",
+    "Inherited/effective history identification and multiscale control",
+    "Full 4D continuum existence and positive physical continuum mass gap"
+  ],
+  "numerical_experiments": 0,
+  "git_mutations_by_this_author": 0,
+  "audit_or_lock_operations": 0,
+  "independent_review_status": "requested from coordinator; not self-assigned LAND"
+}

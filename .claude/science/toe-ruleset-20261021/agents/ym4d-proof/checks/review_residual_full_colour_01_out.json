@@ -1,0 +1,202 @@
+{
+  "scope": "Exact finite actual lattice/contour controls; no general convergence or uniform-depth certificate",
+  "checks": [
+    {
+      "name": "actual_periodic_inverse_I_minus_P0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "periodic_G_has_both_constant_kernels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "false_inverse_identity_I_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_pure_gauge_fixed_complement_Gram",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_pure_gauge_rotating_kernel_correction_nonzero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wrong_half_bubble_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dropped_seagull_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_two_leg_projector_anchor_routes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unmatched_two_leg_claim_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_6_to_4_Wilson_curl_trace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cartan_inverse_Gram_completeness_SU3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "neutral_Wilson_normalization_SU3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "background_independent_neutral_mutation_SU3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cartan_inverse_Gram_completeness_SU5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "neutral_Wilson_normalization_SU5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "background_independent_neutral_mutation_SU5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_S4_prime_contour_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_contour_SU3_traceless",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_SU3_normalized_quadratic",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_SU3_normalized_quartic",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_neutral_quartic_monomial_groups_nonzero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quartic_group_0_omission_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quartic_group_1_omission_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quartic_group_2_omission_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SU3_constrained_maximizer_trace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SU3_constrained_maximizer_stationarity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SU3_trace_phase_correction_is_nontrivial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SU3_trace_phase_does_not_change_quartic",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_SU3_internal_colours_two_Cartan_cubic_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_cubic_exchange_source_all_SU3_colours",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 30,
+  "total": 30,
+  "details": {
+    "periodic_pure_gauge": {
+      "tadpole": "7/3",
+      "bubble": "-17/6",
+      "fixed_complement_logdet_epsilon2": "-1/2",
+      "density": "-1/162",
+      "true_pseudodeterminant_epsilon2": "0",
+      "explanation": "Exact adjugate formula gives det_complement Delta(eps)=det_prime Delta times |mean exp(i eps V)|^2. The displayed discrepancy is not discarded at finite T."
+    },
+    "neutral_Wilson_SU3": "-1295/2592",
+    "neutral_Wilson_SU5": "-1295/1296",
+    "actual_S4_prime_SU3": {
+      "means": [
+        "3/17",
+        "1/17",
+        "-4/17"
+      ],
+      "mu2": [
+        "140/17",
+        "480/289",
+        "4376/289"
+      ],
+      "mu3": [
+        "15399/4913",
+        "764/4913",
+        "-40729/4913"
+      ],
+      "quartic_parts": [
+        "-1447594/9771957",
+        "-3813708/14115049",
+        "-268324/127035441"
+      ],
+      "normalized_quartic": "-53410418/127035441",
+      "constrained_center_cubic_shift": [
+        "-70763/88434",
+        "-13429/44217",
+        "97621/88434"
+      ]
+    }
+  },
+  "versions": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "numpy": "2.4.1",
+    "sympy": "1.14.0"
+  }
+}

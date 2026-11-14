@@ -1,0 +1,152 @@
+{
+  "schema": "independent_complex_white_packet_consistency_v1",
+  "checked_utc": "2026-10-30T12:05:15.554653+00:00",
+  "stage": "packet consistency after immutable independent source-only freeze",
+  "source_findings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_complex_white_sector_source_findings.md",
+    "sha256": "e92224b8a7a2bd7f222aed1c09d779a4b876aa3d0c474a30cdcfcbe99172a70f"
+  },
+  "source_reads": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_complex_white_sector_source_reads.json",
+    "sha256": "451c36e0930b74b52f19ca200ea22aff08b0d26a2edca0834929a519d0e401df"
+  },
+  "author_packets": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/complex_white_sector_read_manifest.json",
+      "sha256": "fb366c85c2af332bc667d57d21f52a799baf8aa4c4c744403df9c0dd62af4107",
+      "line_count": 97,
+      "read_kind": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/complex_white_sector_receipt.json",
+      "sha256": "b69bf5bf1067f36af352a6a8bccac0877d7a47e7727ae281022a4c6c7d2dbf2c",
+      "line_count": 44,
+      "read_kind": "full"
+    }
+  ],
+  "source_and_supplier_identity_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPLEX_WHITE_SECTOR_ASTRA.md",
+      "sha256": "fb72d33bddb727e85548ad96f0e45585cf06254190aa182008e80aa3fbbc5a3c",
+      "line_count": 747,
+      "author_identity_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "line_count": 722,
+      "author_identity_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "line_count": 627,
+      "author_identity_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "line_count": 790,
+      "author_identity_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md",
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "line_count": 590,
+      "author_identity_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WHITE_SECTOR_MATCHING_ASTRA.md",
+      "sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+      "line_count": 631,
+      "author_identity_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "line_count": 592,
+      "author_identity_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "line_count": 510,
+      "author_identity_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "line_count": 787,
+      "author_identity_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "line_count": 734,
+      "author_identity_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/QUADRATIC_COARSE_RETURN_ASTRA.md",
+      "sha256": "515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7",
+      "line_count": 591,
+      "author_identity_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "line_count": 11,
+      "author_identity_matches": true
+    }
+  ],
+  "source_receipt_matches": true,
+  "manifest_receipt_hash_matches": true,
+  "all_prepacket_source_hashes_unchanged": true,
+  "equation_labels_exactly_once_1_through_37": true,
+  "local_source_links": [
+    {
+      "target": "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "FIXED_SOURCE_RADIUS_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "INTERACTING_SELECTED_CORE_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "FINITE_COUPLING_KERNEL_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "REGIONAL_CHART_RETURN_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "WHITE_SECTOR_MATCHING_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "exists": true
+    }
+  ],
+  "missing_local_source_links": [],
+  "accidental_patch_markers": false,
+  "consistency_disposition": "CONSISTENT: packet claim, domain, exact ratio, retained scalar normalization, non-rare nonlinear remainder and remaining obligations match the reviewed source.",
+  "limits": [
+    "The author historical read narrative and configuration are not independently attested.",
+    "Packet correctness is provenance/scope bookkeeping, not a mathematical premise or independent proof.",
+    "QC was hash-checked only as an author-listed comparison, and is not consumed as a theorem.",
+    "No literature theorem is imported; exact proof mechanisms were checked in the local sources."
+  ]
+}

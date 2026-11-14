@@ -1,0 +1,137 @@
+{
+  "schema": "scoped-independent-review-final-v1",
+  "created_utc": "2026-10-30T09:43:37.449438+00:00",
+  "unit": "mixed_cap_chart",
+  "verdict": "LAND",
+  "recommendation": "PASS WITH BOUNDED CLAIMS",
+  "authority_boundary": "Frozen-source bounded review only; no audit ratification, continuum theorem, PR integration or merge approval.",
+  "requested_configuration": "Astra/max; fresh restricted context; same-family Codex; not independent backend attestation",
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXED_CAP_CHART_ASTRA.md",
+    "sha256": "1e885e4fbce03b00f4414b15caaa71e7140d9bc8494d0c75d1519bdbcde8ff2e",
+    "bytes": 37311,
+    "line_count": 707
+  },
+  "historical_source_first_evidence": {
+    "stage": "immutable_pre_author_packet",
+    "created_utc": "2026-10-30T09:40:12.108920+00:00",
+    "findings": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_mixed_cap_chart_source_first_findings.md",
+      "sha256": "2cea5c6df1e59c256a274ec0c425d07a8b62d06e749a55b4bb822809a8197ecf",
+      "bytes": 16191,
+      "line_count": 271
+    },
+    "reads": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_mixed_cap_chart_source_first_reads.json",
+      "sha256": "a9ce8e623c1a900aebe4793aa4832830ee2c11e887ad68db7ba87a7e42ac8528",
+      "bytes": 6542,
+      "line_count": 183
+    },
+    "author_packet_read_before_historical_freeze": false,
+    "historical_findings_preserved_unchanged": true,
+    "mathematical_disposition": "No blocking finding; scoped LAND supported before author-packet exposure."
+  },
+  "final_evidence": {
+    "report": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MIXED_CAP_CHART_ASTRA.md",
+      "sha256": "746710cbed71d563fe815325a2cde89807ac90b0af62bf81aba6584cf3a8971d",
+      "bytes": 9820,
+      "line_count": 161
+    },
+    "mechanical_checks": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_mixed_cap_chart_mechanical_checks.json",
+      "sha256": "81fa87e3c363e8a5bc4ce1bb681c03e21f0d74f41c16d448deeea196382ea0e5",
+      "bytes": 7322,
+      "line_count": 241
+    },
+    "author_packet_reads": [
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mixed_cap_chart_read_manifest.json",
+        "sha256": "a36942039135a33acdf6e5fe457293eb8007ae6b7c087b7bbe9f0b33f116724c",
+        "bytes": 5690,
+        "line_count": 164,
+        "read_range": [
+          1,
+          164
+        ]
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mixed_cap_chart_receipt.json",
+        "sha256": "abce3deb0303404f64e1fc4e9f46a7152d473a2121386069e649cb0d431f36cf",
+        "bytes": 2100,
+        "line_count": 38,
+        "read_range": [
+          1,
+          38
+        ]
+      }
+    ],
+    "packet_read_after_source_first_freeze": true,
+    "packet_confirmed_frozen_target_and_predecessors": true,
+    "new_or_changed_mathematical_findings_after_packet": [],
+    "all_scientific_inputs_unchanged_at_final_confirmation": true
+  },
+  "review_scope": {
+    "fully_integrated_fine_fields": true,
+    "mask": "arbitrary deterministic owned-block cap/chart mask",
+    "coarse_data": "fixed real Vbar in stated curvature domain",
+    "sources": "same original complex Wilson labels on a fixed positive product disc",
+    "covariance_and_prefactor": "one actual common global family; all d=kT^4 modes",
+    "accepted_equations": "MC29\u2013MC33 under the explicit preceding margins",
+    "not_accepted_as_proved": [
+      "arbitrary pinned conditional cap nonvanishing",
+      "complex coarse transport of fixed physical caps",
+      "normalized compact insertion expectation or simultaneous compact gluing",
+      "effective or multiscale iteration",
+      "full continuum Yang\u2013Mills existence",
+      "non-freeness",
+      "positive physical continuum mass gap"
+    ]
+  },
+  "blocking_findings": [],
+  "required_source_repairs": [],
+  "passes": {
+    "independent_source_pass": 1,
+    "post_freeze_author_packet_confirmation": 1,
+    "same_reviewer_session": true
+  },
+  "checks": [
+    "manual independent logarithm-branch and spectral-Hessian derivation",
+    "manual Stokes/face/corner/scaling check",
+    "manual full-block marginal and scalar-degree accounting",
+    "manual normalized density/heat-forest/factorial and marked-root check",
+    "manual canonical coefficient equality and changed-owner anchoring check",
+    "manual noncircular global/regional parameter and shrinking-power check",
+    "exact hashes, line counts, equation labels, fences and local-link existence"
+  ],
+  "operations": {
+    "source_edits": 0,
+    "predecessor_edits": 0,
+    "scientific_runs": 0,
+    "extra_workers": 0,
+    "git_mutations": 0,
+    "pr_mutations": 0,
+    "shared_front_edits": 0,
+    "audit_or_ledger_writes": 0,
+    "commits": 0,
+    "full_pipeline_runs": 0,
+    "integration_retries": 0
+  },
+  "disclosures": {
+    "prior_independent_review_files_read": [],
+    "root_receipts_read": [],
+    "embedded_source_status_not_used_as_premise": true,
+    "no_backend_attestation": true,
+    "author_provenance_not_proof": true,
+    "reviewer_wall_time": "not separately instrumented; no fabricated duration",
+    "literature_theorems_used_as_external_premises": []
+  },
+  "written_files": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MIXED_CAP_CHART_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_mixed_cap_chart_source_first_findings.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_mixed_cap_chart_source_first_reads.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_mixed_cap_chart_mechanical_checks.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_mixed_cap_chart_receipt.json"
+  ]
+}

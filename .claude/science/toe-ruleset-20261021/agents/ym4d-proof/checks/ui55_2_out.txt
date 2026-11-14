@@ -1,0 +1,20 @@
+  moment (2, 0, 0, 0): formula 1/4, direct 1/4
+  moment (4, 0, 0, 0): formula 1/8, direct 1/8
+  moment (2, 2, 0, 0): formula 1/24, direct 1/24
+P1 (S^3 moments: formula = direct integration): PASS 
+  scalar: O0 = k1**2 + k2**2 + k3**2 + k4**2*1 ; V+ = [[-k1*q]] ; V- = [[-k1*q]] ; O2 = [[q**2/2]]
+  vector s=2: O0 = k1**2 + k2**2 + k3**2 + k4**2*1 ; V+ = [[-k1*q, p*q, 0, 0], [-p*q, -k1*q, 0, 0], [0, 0, -k1*q, 0], [0, 0, 0, -k1*q]] ; V- = [[-k1*q, -p*q, 0, 0], [p*q, -k1*q, 0, 0], [0, 0, -k1*q, 0], [0, 0, 0, -k1*q]] ; O2 = [[q**2/2, 0, 0, 0], [0, q**2/2, 0, 0], [0, 0, q**2/2, 0], [0, 0, 0, q**2/2]]
+P2 (scalar: O0 = k^2, V+ = V- = -q k1, O2 = q^2/2): PASS 
+    t^3 coeff c3 = 0 ; t^4 coeff h = -n1**2*q**2*(2*n2 - 1)*(2*n2 + 1)
+    t^3 coeff c3 = 0 ; t^4 coeff h = -2*q**2*(8*n1**2*n2**2 - 2*n1**2 + 1)
+  <c3_S> = 0, <h_S> = q**2/12;  <c3_V> = 0, <h_V> = -5*q**2/3
+L0 (<c3> = 0, scalar and vector): PASS 
+L1 (<h_S> = 1/12, i.e. C_S = q^2/(96 pi^2) = q^2 c_g): FAIL 
+L2 (<h_V>/<h_S> = -20): PASS [ratio = -20]
+L3 (per root: transverse -21 q^2 c_g, full -22 q^2 c_g, ratio 21/22): FAIL 
+L4 (sum_{i<j}(h_i-h_j)^2 = N sum h^2 - (sum h)^2, hence N^2 under sum h = 0, sum h^2 = N): PASS 
+L5 (u-units: transverse -84 N^2 c_g = -(21/22) beta0 = -7N^2/(8 pi^2); ghost -(1/22) beta0; sum -beta0; beta0 = 11N^2/(12 pi^2)): PASS 
+Lc1 control (spin coupling 1) must FIRE: PASS [ratio = -2]
+Lc2 control (product-of-marginals moment) must FIRE: PASS [<h_S> = 0]
+Lc3 control (FN-1 slip 2N b0) must FIRE: PASS 
+OVERALL: FAIL (9/11 items true; controls count as true when they fire)

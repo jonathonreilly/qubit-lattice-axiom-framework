@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-29T14:23:19.666634+00:00",
+  "scope": "Actual residual vertex author proposal; independent review pending",
+  "staged_paths_before_this_record": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_residual_vertices_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_residual_vertices_replay_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_residual_vertices_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_04.criteria.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_04.err",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_04.out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_04.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_vertices_manifest.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_vertices_working.md"
+  ],
+  "staged_whitespace_exit": 0,
+  "vocabulary_files": 6,
+  "vocabulary_violations": 0,
+  "vocabulary_report_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+  "manifest_sha256": "a9f95e4380250f8674db0c6637bf6a3e58a00a19b968538bfabedf1bf9d35be0",
+  "replay": "full_proof_residual_vertices_replay.json",
+  "limits": "Paired-root antiperiodic, volume-first, fixed-depth proposal. Neutral/full-periodic comparison, full UIR, existence and physical mass gap not established."
+}

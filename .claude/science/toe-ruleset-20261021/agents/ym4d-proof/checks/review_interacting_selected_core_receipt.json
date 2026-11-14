@@ -1,0 +1,494 @@
+{
+  "frozen_utc": "2026-10-30T00:13:58.078336+00:00",
+  "reviewer": "/root/review_interacting_selected_core",
+  "requested_configuration": "gpt-6-astra / max; no independent runtime identity attestation.",
+  "independence": "Same-family fresh-context Codex review; no target authorship. Initial mathematical findings frozen before author packaging and predecessor review reports. Producer aggregate conclusions were already exposed. FK24-specific follow-up read and bibliographic withdrawal are explicitly disclosed.",
+  "verdict": "LAND",
+  "verdict_scope": "IC1-IC32 one-step source-free selected-sector theorem only, in the supplied Wilson / normalized paired-S4-prime model. No whole-PR, main-landing, audit, retained-grade, continuum-existence or physical-gap certification.",
+  "source": {
+    "path": "INTERACTING_SELECTED_CORE_ASTRA.md",
+    "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+    "bytes": 41908,
+    "lines": 790
+  },
+  "author_packet": [
+    {
+      "path": "checks/interacting_selected_core_receipt.json",
+      "sha256": "e6920761977e1b65b824cce98cbccc02592f524bb0ac32cbefd2b3e94d374fb0",
+      "bytes": 3249,
+      "lines": 53
+    },
+    {
+      "path": "checks/interacting_selected_core_read_manifest.json",
+      "sha256": "393cc71c79cd0fa90788462b1735dbcd0be3944d37e2b9309ef80745ed7b1e1e",
+      "bytes": 20296,
+      "lines": 304
+    },
+    {
+      "path": "checks/interacting_selected_core_metadata_validation.json",
+      "sha256": "96e153ffe54642d34ded2e6084ef7e5149bf5fb94877782edb1289905dbcf0b8",
+      "bytes": 1838,
+      "lines": 70
+    }
+  ],
+  "review_artifacts": [
+    {
+      "path": "REVIEW_INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "a0bd0a6f68b0f8c64868bacf5371809233e0e864fc7cd37acfcfab14d0691d16",
+      "bytes": 13660,
+      "lines": 209
+    },
+    {
+      "path": "checks/review_interacting_selected_core_initial_findings.md",
+      "sha256": "ccb8c778c8a7cac72ea11259288184360252db71deb2225ea022bef886a3aeed",
+      "bytes": 14922,
+      "lines": 245
+    },
+    {
+      "path": "checks/review_interacting_selected_core_read_manifest.json",
+      "sha256": "02b68e3fb3e7c397ee7b969ed8e6f275d7e134b257108e53425e980e0cd602ba",
+      "bytes": 19548,
+      "lines": 422
+    }
+  ],
+  "receipt_self_hash": "Excluded to avoid a self-reference cycle; computed independently after writing and returned to coordinator.",
+  "checkout": {
+    "entry_head": "295b508bea2c65bf548172f3190e32f7f7eaf6cf",
+    "frozen_head": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+    "frozen_head_tree": "abbfa22b4ce8029e81c6b5473bc6c4696aff63a9",
+    "observed_origin_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "coordinator_changes": "See read manifest for observed fast-forward and publication delta. No reviewed scientific input changed; shared fronts/HRP not certified by this unit."
+  },
+  "author_input_pin_checks": [
+    {
+      "path": "PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "lines": 11,
+      "expected_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "briefs_finite_coupling/AUTHOR_BRIEF_INTERACTING_CORE.md",
+      "sha256": "e575a3e633b25177009c9821bb4078d6e44b425529487ed70107b5fcfd639b82",
+      "bytes": 5336,
+      "lines": 96,
+      "expected_sha256": "e575a3e633b25177009c9821bb4078d6e44b425529487ed70107b5fcfd639b82",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "lines": 568,
+      "expected_sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+      "bytes": 17323,
+      "lines": 282,
+      "expected_sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217,
+      "lines": 722,
+      "expected_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "REVIEW_COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "f18775b209aba8711f8ad42ff82432f127171b4b241987b295e6f76124964f35",
+      "bytes": 13623,
+      "lines": 63,
+      "expected_sha256": "f18775b209aba8711f8ad42ff82432f127171b4b241987b295e6f76124964f35",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "FINITE_COUPLING_KERNEL_ASTRA.md",
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "bytes": 30169,
+      "lines": 590,
+      "expected_sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "REVIEW_FINITE_COUPLING_KERNEL_ASTRA.md",
+      "sha256": "87d532f6505f7f80edb85c2a397d5fd6a33f27d99c19de5919cf397ffbfebc96",
+      "bytes": 15397,
+      "lines": 248,
+      "expected_sha256": "87d532f6505f7f80edb85c2a397d5fd6a33f27d99c19de5919cf397ffbfebc96",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "checks/finite_coupling_kernel_read_manifest.json",
+      "sha256": "627122351b7005245f5c88248acb6b06decd1b2721c88eff8ab2935c01c25dce",
+      "bytes": 11179,
+      "lines": 178,
+      "expected_sha256": "627122351b7005245f5c88248acb6b06decd1b2721c88eff8ab2935c01c25dce",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "checks/finite_coupling_kernel_receipt.json",
+      "sha256": "1c8fe7055cbda74b167d73346a58e0c118362ccfd4c74988fdb7c55ab8725e0a",
+      "bytes": 5555,
+      "lines": 111,
+      "expected_sha256": "1c8fe7055cbda74b167d73346a58e0c118362ccfd4c74988fdb7c55ab8725e0a",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "checks/review_finite_coupling_kernel_receipt.json",
+      "sha256": "ba66a9199e8ac56e2d042c1346d613cb781f46da9d50ee31c0fd4d44952cefed",
+      "bytes": 29604,
+      "lines": 599,
+      "expected_sha256": "ba66a9199e8ac56e2d042c1346d613cb781f46da9d50ee31c0fd4d44952cefed",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "RECOVERY_CLUSTER_ASTRA.md",
+      "sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf",
+      "bytes": 34340,
+      "lines": 582,
+      "expected_sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "SOFT_FLUCTUATION_COVARIANCE_ASTRA.md",
+      "sha256": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403",
+      "bytes": 29910,
+      "lines": 535,
+      "expected_sha256": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+      "bytes": 38024,
+      "lines": 723,
+      "expected_sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "REVIEW_UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "sha256": "ca80f189e924ac7d15462258d4a1e95734cfa55e45d382e7791dabdf0de2cc27",
+      "bytes": 21924,
+      "lines": 378,
+      "expected_sha256": "ca80f189e924ac7d15462258d4a1e95734cfa55e45d382e7791dabdf0de2cc27",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "SOURCE_LOCAL_RETURN_ASTRA.md",
+      "sha256": "2eee991e4e4546aa3ed10ad0ffe40d840c5347a002d623aac47b2fc515fd7769",
+      "bytes": 46461,
+      "lines": 855,
+      "expected_sha256": "2eee991e4e4546aa3ed10ad0ffe40d840c5347a002d623aac47b2fc515fd7769",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md",
+      "sha256": "ac985bb9b41a0d9d52ead7c2932df73e59c713c28c5c45f0629003552eee1243",
+      "bytes": 48141,
+      "lines": 863,
+      "expected_sha256": "ac985bb9b41a0d9d52ead7c2932df73e59c713c28c5c45f0629003552eee1243",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "83917902d0cd82e1d73dbda9f29f79c7b8c224d5345827a0dc7c890bc94bb03d",
+      "bytes": 10795,
+      "lines": 50,
+      "expected_sha256": "83917902d0cd82e1d73dbda9f29f79c7b8c224d5345827a0dc7c890bc94bb03d",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "LITERATURE_BRIDGES.md",
+      "sha256": "5c2420890b048b51a6cdb37623076f5e82a43a7552c99a37b6742fe01844981b",
+      "bytes": 25999,
+      "lines": 68,
+      "expected_sha256": "5c2420890b048b51a6cdb37623076f5e82a43a7552c99a37b6742fe01844981b",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "BFT_B.md",
+      "sha256": "b6ddf451a4dfe2028a9f23fe7fe696ce11f1c17e497709ac3761da3e7a1172c6",
+      "bytes": 662171,
+      "lines": 4782,
+      "expected_sha256": "b6ddf451a4dfe2028a9f23fe7fe696ce11f1c17e497709ac3761da3e7a1172c6",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    },
+    {
+      "path": "FIXED_SOURCE_RADIUS_ASTRA.md",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "bytes": 35303,
+      "lines": 627,
+      "expected_sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "matches": true,
+      "read_claim": "See reviewer read manifest; hashing alone is not scientific reading."
+    }
+  ],
+  "protected_source_pin_checks": [
+    {
+      "path": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "lines": 568,
+      "expected_sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "matches": true
+    },
+    {
+      "path": "REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+      "bytes": 17323,
+      "lines": 282,
+      "expected_sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+      "matches": true
+    },
+    {
+      "path": "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217,
+      "lines": 722,
+      "expected_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "matches": true
+    },
+    {
+      "path": "FINITE_COUPLING_KERNEL_ASTRA.md",
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "bytes": 30169,
+      "lines": 590,
+      "expected_sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "matches": true
+    },
+    {
+      "path": "REVIEW_FINITE_COUPLING_KERNEL_ASTRA.md",
+      "sha256": "87d532f6505f7f80edb85c2a397d5fd6a33f27d99c19de5919cf397ffbfebc96",
+      "bytes": 15397,
+      "lines": 248,
+      "expected_sha256": "87d532f6505f7f80edb85c2a397d5fd6a33f27d99c19de5919cf397ffbfebc96",
+      "matches": true
+    },
+    {
+      "path": "checks/finite_coupling_kernel_read_manifest.json",
+      "sha256": "627122351b7005245f5c88248acb6b06decd1b2721c88eff8ab2935c01c25dce",
+      "bytes": 11179,
+      "lines": 178,
+      "expected_sha256": "627122351b7005245f5c88248acb6b06decd1b2721c88eff8ab2935c01c25dce",
+      "matches": true
+    },
+    {
+      "path": "checks/finite_coupling_kernel_receipt.json",
+      "sha256": "1c8fe7055cbda74b167d73346a58e0c118362ccfd4c74988fdb7c55ab8725e0a",
+      "bytes": 5555,
+      "lines": 111,
+      "expected_sha256": "1c8fe7055cbda74b167d73346a58e0c118362ccfd4c74988fdb7c55ab8725e0a",
+      "matches": true
+    },
+    {
+      "path": "checks/review_finite_coupling_kernel_receipt.json",
+      "sha256": "ba66a9199e8ac56e2d042c1346d613cb781f46da9d50ee31c0fd4d44952cefed",
+      "bytes": 29604,
+      "lines": 599,
+      "expected_sha256": "ba66a9199e8ac56e2d042c1346d613cb781f46da9d50ee31c0fd4d44952cefed",
+      "matches": true
+    },
+    {
+      "path": "SOFT_FLUCTUATION_COVARIANCE_ASTRA.md",
+      "sha256": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403",
+      "bytes": 29910,
+      "lines": 535,
+      "expected_sha256": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403",
+      "matches": true
+    },
+    {
+      "path": "UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+      "bytes": 38024,
+      "lines": 723,
+      "expected_sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+      "matches": true
+    },
+    {
+      "path": "REVIEW_UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "sha256": "ca80f189e924ac7d15462258d4a1e95734cfa55e45d382e7791dabdf0de2cc27",
+      "bytes": 21924,
+      "lines": 378,
+      "expected_sha256": "ca80f189e924ac7d15462258d4a1e95734cfa55e45d382e7791dabdf0de2cc27",
+      "matches": true
+    },
+    {
+      "path": "COVARIANT_COMPLEMENT_ASTRA.md",
+      "sha256": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b",
+      "bytes": 28162,
+      "lines": 527,
+      "expected_sha256": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b",
+      "matches": true
+    }
+  ],
+  "mechanical_checks": {
+    "classification": "Reviewer text/hash verification only; author metadata output not rerun or restamped.",
+    "author_input_pins_matched": 21,
+    "protected_source_pins_matched": 12,
+    "reviewed_source_hash_match": true,
+    "initial_findings_hash_unchanged": true,
+    "vocabulary_lint": "python3 scripts/vocab_lint.py --report-only on report and initial findings: 0 files with violations; final report-only repeat after one draft wording correction: 0 files with violations. No --fix operation.",
+    "local_links": [
+      {
+        "source": "INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "REVIEW_COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "FINITE_COUPLING_KERNEL_ASTRA.md",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "REVIEW_FINITE_COUPLING_KERNEL_ASTRA.md",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "RECOVERY_CLUSTER_ASTRA.md",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "checks/interacting_selected_core_read_manifest.json",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "checks/interacting_selected_core_receipt.json",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "REVIEW_INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "INTERACTING_SELECTED_CORE_ASTRA.md",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "REVIEW_INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "checks/interacting_selected_core_receipt.json",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "REVIEW_INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "checks/review_interacting_selected_core_initial_findings.md",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "REVIEW_INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "checks/review_interacting_selected_core_read_manifest.json",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "REVIEW_INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "PROCESS_LIGHT.md",
+        "exists_before_receipt_write": true,
+        "is_receipt_being_created": false
+      },
+      {
+        "source": "REVIEW_INTERACTING_SELECTED_CORE_ASTRA.md",
+        "target": "checks/review_interacting_selected_core_receipt.json",
+        "exists_before_receipt_write": false,
+        "is_receipt_being_created": true
+      }
+    ],
+    "trailing_whitespace_lines": 0,
+    "json_parse": "Author metadata and reviewer read manifest parsed successfully.",
+    "scientific_numerical_runs": 0,
+    "author_numerical_replays": 0,
+    "author_metadata_reruns": 0,
+    "full_pipeline_runs": 0,
+    "git_mutations_by_reviewer": 0,
+    "source_edits_by_reviewer": 0,
+    "audit_or_ledger_writes": 0,
+    "resource_lock_mutations": 0,
+    "third_party_pdfs_saved": 0
+  },
+  "finding_counts": {
+    "unresolved_blocking": 0,
+    "unresolved_nonblocking": 0,
+    "required_repairs": 0,
+    "withdrawn_preliminary_bibliographic_nit": 1,
+    "reviewer_read_range_wording_clarifications": 1
+  },
+  "historical_failures_preserved": "Original author inline-IC3 equation-label parser AssertionError remains in author manifest and is copied accurately into reviewer manifest; narrow line-ending parser correction changed no scientific formula. Initial reviewer bibliographic concern remains in immutable initial findings and is explicitly withdrawn against both official exact-v1 arXiv metadata pages. No old success is restamped.",
+  "scientific_input_disposition": {
+    "CB1_CB15": "Consumed real geometry/gap/local charts/critical branch independently reconstructed; CB16-CB24 also inspected for exact integral and sector interface.",
+    "SA5_SA17": "Consumed local parametrix, both marks and analytic composition reconstructed; no unrestricted complex original-V domain inherited from SA.",
+    "FK2_FK16_FK24": "Consumed fixed-neighborhood scalar remainder and exact action/units, all read; FK24 late-read coverage disclosed. No numerical author checker sensitivity promoted.",
+    "CXR_sections1_4": "Two-stage product-measure connected graph/tree proof rebuilt for cube and ball laws.",
+    "UL9_UL12": "Only one-step normalizer/FLOW/gauge dictionary consumed; corrected fixed-free-complement limitation retained."
+  },
+  "open_obligations": [
+    "Original full hard-cut complement G minus selected sector and G^c with normalized estimates.",
+    "Nonzero source and hard history/completion integration.",
+    "Closure of an admissible inherited RG input class.",
+    "Spatial symmetry of the chosen axial selection and volume-first P-to-zero marginal extraction.",
+    "Nonlinear multilevel/every-increment finite-u coupling map.",
+    "Four-dimensional continuum existence and nonfree reconstruction.",
+    "Positive physical continuum mass gap."
+  ],
+  "freeze_policy": "Owned report, initial findings, read manifest and this receipt frozen at completion. Any later affected source change requires a separately bound same-session confirmation; no hidden consumer promotion."
+}

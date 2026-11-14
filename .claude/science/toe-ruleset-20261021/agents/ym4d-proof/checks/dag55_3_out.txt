@@ -1,0 +1,17 @@
+N=2 κ=1: n_P=1296 A_d=9 b_1=2496 η_q/ε_1=1/4608 gates B1=PASS B2=PASS
+   R ∈ [247289304257179711933393196354859/12800000000000000000000000000000, 19783144340574376954671455708389/1024000000000000000000000000000]  (display 19.3195)  -> (TC) FAILS; η would have to be ≤ η_q/R, i.e. ×0.0517612 of η_q
+   C1 (RLARGE's hand ε_loc = (16N+3)ε_1/(128N)): R = 1 -> = 1 exactly (as designed)
+   C2 (ε_loc := ε_1/4): R = 35/64 -> HOLDS (as designed)
+N=2 κ=1/4: n_P=1296 A_d=9 b_1=1596 η_q/ε_1=1/4608 gates B1=PASS B2=PASS
+   R ∈ [395484512971114963734579481093287/25600000000000000000000000000000, 197742256485557481867289740546647/12800000000000000000000000000000]  (display 15.4486)  -> (TC) FAILS; η would have to be ≤ η_q/R, i.e. ×0.0647307 of η_q
+   C1 (RLARGE's hand ε_loc = (16N+3)ε_1/(128N)): R = 1 -> = 1 exactly (as designed)
+   C2 (ε_loc := ε_1/4): R = 35/64 -> HOLDS (as designed)
+N=3 κ=1: n_P=1296 A_d=9 b_1=2496 η_q/ε_1=1/6912 gates B1=PASS B2=PASS
+   R ∈ [1471064920389307631592642277127947/64000000000000000000000000000000, 367766230097326907898160569281991/16000000000000000000000000000000]  (display 22.9854)  -> (TC) FAILS; η would have to be ≤ η_q/R, i.e. ×0.0435059 of η_q
+   C1 (RLARGE's hand ε_loc = (16N+3)ε_1/(128N)): R = 1 -> = 1 exactly (as designed)
+   C2 (ε_loc := ε_1/4): R = 17/32 -> HOLDS (as designed)
+N=3 κ=1/4: n_P=1296 A_d=9 b_1=1596 η_q/ε_1=1/6912 gates B1=PASS B2=PASS
+   R ∈ [1176321384656421180714126690359419/64000000000000000000000000000000, 294080346164105295178531672589859/16000000000000000000000000000000]  (display 18.38)  -> (TC) FAILS; η would have to be ≤ η_q/R, i.e. ×0.0544069 of η_q
+   C1 (RLARGE's hand ε_loc = (16N+3)ε_1/(128N)): R = 1 -> = 1 exactly (as designed)
+   C2 (ε_loc := ε_1/4): R = 17/32 -> HOLDS (as designed)
+CONTROLS and gates: all as designed

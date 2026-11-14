@@ -1,0 +1,104 @@
+{
+  "source_revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+  "all_author_manifest_hashes_verified": true,
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_DETERMINANT_ASTRA.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "bytes": 27582,
+      "lines": 334,
+      "sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_UIR_ASTRA.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "bytes": 35284,
+      "lines": 272,
+      "sha256": "0cbb4f9a967022ab669cae087617f390b2bfb481034012aac85e7cfc9928bc40"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RECOVERY_UIR_ASTRA.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "bytes": 26968,
+      "lines": 192,
+      "sha256": "347b7ae680b2c305cc7bb5de8b4496d069bbea309a6df71f18109c54a22c4098"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR55.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "bytes": 68640,
+      "lines": 625,
+      "sha256": "4c6d80473a80714e2a5aa1e241e8835648bbe3c65a7bca38a5758faf3c5accb4"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR2_55.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "bytes": 35453,
+      "lines": 320,
+      "sha256": "bc10b5cc37c8f10cb339e234a3ca3aa252fd401cfb75476334c8c94aa8f5a6f3"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW55.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "bytes": 70208,
+      "lines": 616,
+      "sha256": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "bytes": 539577,
+      "lines": 4851,
+      "sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "bytes": 766420,
+      "lines": 7116,
+      "sha256": "dbcd5314ddddcd26fe39f6e6684437bc76488410c8c314660c04c134b6d08608"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT34_55.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "bytes": 70280,
+      "lines": 670,
+      "sha256": "f714a647910c4fd19570ecd192b98144b6c54d37c8c4f30c73bd20d426ef717d"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT4B55.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "bytes": 63119,
+      "lines": 610,
+      "sha256": "f1d3b7573a8d43234f20d8b5f975f8886c5172572ffb739b77172fddca8ade34"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT4W55.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "bytes": 91996,
+      "lines": 878,
+      "sha256": "5fa3e7e5af0ea61341836298e10c980dde7f3685d4370b2b2469110f25866b3a"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_A.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "bytes": 351969,
+      "lines": 3744,
+      "sha256": "8074d6c5efe3648bfb28e3463a6076cf6df74c9c358a8613390044148ac6fbe0"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_B.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "bytes": 662171,
+      "lines": 4782,
+      "sha256": "b6ddf451a4dfe2028a9f23fe7fe696ce11f1c17e497709ac3761da3e7a1172c6"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_UIR.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "bytes": 33039,
+      "lines": 219,
+      "sha256": "74860ce5d301819ec626940ff1d6cf1a6326cb9c2639c9329a7f1083e087b952"
+    }
+  ]
+}

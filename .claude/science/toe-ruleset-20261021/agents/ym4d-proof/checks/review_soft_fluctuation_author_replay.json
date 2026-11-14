@@ -1,0 +1,38 @@
+[
+  {
+    "command": [
+      "python3",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_check.py",
+      "--mode",
+      "all"
+    ],
+    "start_utc": "2026-10-29T19:10:37.385017+00:00",
+    "elapsed_seconds": 17.860635292017832,
+    "exit_code": 0,
+    "passed": 90,
+    "total": 90,
+    "source_sha256": "1ff38b76aca0b46097d589432d058ede2abd2f8d06dfae15469702889867cc27",
+    "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_author_all_01.stdout.json",
+    "stdout_sha256": "d1a5c6e9761ddd3009f5974154fb2a442d5b2fd9c91d574c698b710c79569cca",
+    "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_author_all_01.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "author reproduction AFTER independent evidence freeze; not independent implementation"
+  },
+  {
+    "command": [
+      "python3",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_tree_group.py"
+    ],
+    "start_utc": "2026-10-29T19:10:55.245961+00:00",
+    "elapsed_seconds": 0.6929499999969266,
+    "exit_code": 0,
+    "passed": 9,
+    "total": 9,
+    "source_sha256": "4815deb9b3bb71483dfeec5fb55d67312dbb11e0823862ef8b0973e30593c19a",
+    "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_author_group_01.stdout.json",
+    "stdout_sha256": "2dad9f8febe61bf88d8e37c5bc450fa6a5c6b236de3ca37077ca6daa01653643",
+    "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_author_group_01.stderr.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kind": "author reproduction AFTER independent evidence freeze; not independent implementation"
+  }
+]

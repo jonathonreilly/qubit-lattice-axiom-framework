@@ -1,0 +1,191 @@
+{
+  "checks": [
+    {
+      "name": "Z2_4x2_link",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Z2_4x2_link.json"
+    },
+    {
+      "name": "Z2_4x2x2_sheets_link",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Z2_4x2x2_sheets_link.json"
+    },
+    {
+      "name": "Z2_zero_link",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Z2_zero_link.json"
+    },
+    {
+      "name": "direct_Z2_4x2_link",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_direct_Z2_4x2_link.json"
+    },
+    {
+      "name": "Z2_4x2_site",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Z2_4x2_site.json"
+    },
+    {
+      "name": "Z2_4x2x2_sheets_site",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Z2_4x2x2_sheets_site.json"
+    },
+    {
+      "name": "Z2_zero_site",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Z2_zero_site.json"
+    },
+    {
+      "name": "direct_Z2_4x2_site",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_direct_Z2_4x2_site.json"
+    },
+    {
+      "name": "Z3_4x2_link",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Z3_4x2_link.json"
+    },
+    {
+      "name": "Z3_4x2x2_sheets_link",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Z3_4x2x2_sheets_link.json"
+    },
+    {
+      "name": "Z3_zero_link",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Z3_zero_link.json"
+    },
+    {
+      "name": "Z3_4x2_site",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Z3_4x2_site.json"
+    },
+    {
+      "name": "Z3_4x2x2_sheets_site",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Z3_4x2x2_sheets_site.json"
+    },
+    {
+      "name": "Z3_zero_site",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Z3_zero_site.json"
+    },
+    {
+      "name": "Q8_4x2_link",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Q8_4x2_link.json"
+    },
+    {
+      "name": "Q8_4x2x2_sheets_link",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Q8_4x2x2_sheets_link.json"
+    },
+    {
+      "name": "Q8_zero_link",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Q8_zero_link.json"
+    },
+    {
+      "name": "Q8_4x2_site",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Q8_4x2_site.json"
+    },
+    {
+      "name": "Q8_4x2x2_sheets_site",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Q8_4x2x2_sheets_site.json"
+    },
+    {
+      "name": "Q8_zero_site",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_Q8_zero_site.json"
+    },
+    {
+      "name": "full_Z2_4x2x2_link",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_full_Z2_4x2x2_link.json"
+    },
+    {
+      "name": "full_Z2_4x2x2_site",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_full_Z2_4x2x2_site.json"
+    },
+    {
+      "name": "prism_Z2",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_prism_Z2.json"
+    },
+    {
+      "name": "prism_Z3",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_prism_Z3.json"
+    },
+    {
+      "name": "prism_Q8",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_prism_Q8.json"
+    },
+    {
+      "name": "control_negative_beta",
+      "psd": false,
+      "hermitian": true,
+      "file": "hrp_control_negative_beta.json"
+    },
+    {
+      "name": "control_asymmetric_coupling",
+      "psd": false,
+      "hermitian": false,
+      "file": "hrp_control_asymmetric_coupling.json"
+    },
+    {
+      "name": "control_asymmetric_coupling_hermitian_part",
+      "psd": true,
+      "hermitian": true,
+      "file": "hrp_control_asymmetric_coupling_hermitian_part.json"
+    },
+    {
+      "name": "control_asymmetric_cell",
+      "psd": false,
+      "hermitian": false,
+      "file": "hrp_control_asymmetric_cell.json"
+    },
+    {
+      "name": "control_asymmetric_cell_hermitian_part",
+      "psd": false,
+      "hermitian": true,
+      "file": "hrp_control_asymmetric_cell_hermitian_part.json"
+    }
+  ],
+  "negative_control_criterion_failures": [
+    "asymmetric_coupling: raw Gram non-Hermitian; requested negative eigenvalue not certified",
+    "asymmetric_cell: raw eigenvalues 1,0,0,0; Hermitian part has -3/10"
+  ],
+  "elapsed_seconds": 1.3683314999798313,
+  "peak_rss_bytes": 25903104,
+  "theorem_status": "finite diagnostics only; independent review pending"
+}

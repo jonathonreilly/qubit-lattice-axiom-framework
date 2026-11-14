@@ -1,0 +1,104 @@
+{
+  "utc": "2026-10-29T15:06:34.595078+00:00",
+  "review_receipt_sha256": "e79eda07e76fb95a25c93d3869556cecbed735179051c62c97cbf7e140c219c0",
+  "verified_artifact_and_source_bindings": 63,
+  "verified_governance_bindings": 16,
+  "verified_source_versions": 3,
+  "verified_prior_ranges": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "8d22bbd29841a0f49e2d303ccc0365ea01dc05e60e2a1bef09e3d1380bc30585",
+      "reviewed_first_line": 1467,
+      "current_first_line": 1474,
+      "current_exact_bytes": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "d2e36a705ab2fca6c8659ee8e63cfaea1278f2334a2e6175b2128ebd14a4e72a",
+      "reviewed_first_line": 2847,
+      "current_first_line": 2854,
+      "current_exact_bytes": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "f6d9ae025304ccc9e2946db53c02784de9057776eab17892bbce376a727fa118",
+      "reviewed_first_line": 3047,
+      "current_first_line": 3054,
+      "current_exact_bytes": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "952f534a7b0a472abd875bbd836057381837ea6d0636151b6c601e52a44e35fd",
+      "reviewed_first_line": 3327,
+      "current_first_line": 3334,
+      "current_exact_bytes": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "512097808f5d6a9d1877e1d0ea4ede875d5c9cece47275926175a56b613dead2",
+      "reviewed_first_line": 5507,
+      "current_first_line": 5514,
+      "current_exact_bytes": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_SRC2.md",
+      "sha256": "7c83a0769af7945f59865a64784589538e62bc625f61e2b6ae7b30b52f362774",
+      "reviewed_first_line": 22,
+      "current_first_line": 22,
+      "current_exact_bytes": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_SRC2.md",
+      "sha256": "a199ce469438c4c51f7c804a579c71dc332e0e3afe78a1002054ed4e0dbddd87",
+      "reviewed_first_line": 108,
+      "current_first_line": 108,
+      "current_exact_bytes": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_B2.md",
+      "sha256": "ce33d8fef555a0ffa4444c3669d95a865835f4045a1289074eb63fe3c098bbc1",
+      "reviewed_first_line": 116,
+      "current_first_line": 116,
+      "current_exact_bytes": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRC2_55.md",
+      "sha256": "30f44cfad0e2b2c58fee8e5054a6421c6d8e81d5ce4549f9030168bbb1747e1e",
+      "reviewed_first_line": 389,
+      "current_first_line": 389,
+      "current_exact_bytes": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRC2_55.md",
+      "sha256": "10b0c38d2333f167eb14bc1eb5fd96b4bcbff34578416bb03d75b08da4e26422",
+      "reviewed_first_line": 650,
+      "current_first_line": 650,
+      "current_exact_bytes": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRC2_55.md",
+      "sha256": "d41fffb0d24b48a36170435c9ac45df194fc161e612828add28a83744ac6539d",
+      "reviewed_first_line": 687,
+      "current_first_line": 687,
+      "current_exact_bytes": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/B2_55.md",
+      "sha256": "20c43358b310ed3ccb4bf5dcea97547e5cecf6d8b0c69512bc0819a708213276",
+      "reviewed_first_line": 335,
+      "current_first_line": 335,
+      "current_exact_bytes": true
+    }
+  ],
+  "verified_saved_copy_mutants": 8,
+  "mutant_execution_reused": true,
+  "seconds": 4.525033832993358,
+  "exit_code": 0,
+  "checks": 33,
+  "controls": 20,
+  "same_excluding_only_utc_and_elapsed_seconds": true,
+  "stderr_bytes": 0,
+  "stdout_sha256": "15b4bf8094ec7533cdc7c414fca9abb558717ccbe6e25d9c99641d66a513108f",
+  "retained_failed_attempt": "Initial reviewer symbolic run interrupted, no completed-result claim; original source/empty stdout/traceback retained. Separate report-generation and link-parser failures also retained.",
+  "scope": "Coordinator reproduction and immutable evidence verification for the bounded selected-sector source theorem; no full-return, OS, existence or physical-gap closure."
+}

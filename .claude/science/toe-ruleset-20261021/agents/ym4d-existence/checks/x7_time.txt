@@ -1,0 +1,7 @@
+start 01:22:43 load: 6.45 3.65 3.41
+end 01:34:18 load: 3.49 3.53 3.43
+      694.82 real       684.26 user         3.23 sys
+           258719744  maximum resident set size
+lock: acquired 01:22:02 UTC (mkdir), released 01:34:37 UTC (rmdir, once, no trap); held for the smoke run (scratchpad copy,
+~9 s, reduced sizes, output not kept) and this run only. nice 10; OMP/OPENBLAS/MKL/VECLIB threads 1; python3 without -I;
+no timeout. Load at start 6.45 (< 8), memory free 40% before the lock.

@@ -1,0 +1,10 @@
+Final MGX artifact verification. This is bookkeeping, not a scientific or numerical test.
+All 16 pinned input files retain their recorded SHA256 identities.
+MGX.md SHA256 c4a4f5f95f3b499e1c4f7a9a69a24bd2e94b1fb19ee53ceca48e9cc78393c8bb
+checks/mgx_review.md SHA256 b3e90a3787dc48cf6060734f48314cca5ffbc7dd60e4e148d9ef424c907ad784
+Current author, log, criteria, coverage and review local links resolve; code spans/blocks excluded.
+HEAD unchanged; no tracked-source modifications or commits.
+All added paths are MGX.md, MGX_LOG.md or checks/mgx_*; initial prompt inputs unchanged.
+No numerical experiment was run; nice rejection is preserved in mgx_resource_preflight.txt.
+Same-family independent analytic review completed with no binding finding remaining; actual continuum result remains open.
+Mechanical verification complete; no unresolved artifact issue.

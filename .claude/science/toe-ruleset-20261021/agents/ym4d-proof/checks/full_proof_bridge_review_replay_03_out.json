@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "Cholesky_pair_factor_two": true,
+    "complex_Cholesky_matches_preserved_run": true,
+    "complex_positive": true,
+    "isolated_slogdet_matches_Cholesky": true,
+    "real_Cholesky_matches_preserved_run": true,
+    "real_pair_positive": true
+  },
+  "complex_logdet": 159.17057390480983,
+  "diagnosis": "The saved determinant values are independently confirmed on positive definite matrices by Cholesky. Original NumPy warnings remain in the first-run stderr; the backend warning cause is not claimed resolved.",
+  "isolated_slogdet_warnings": [
+    "divide by zero encountered in slogdet",
+    "overflow encountered in slogdet",
+    "invalid value encountered in slogdet",
+    "divide by zero encountered in slogdet",
+    "overflow encountered in slogdet",
+    "invalid value encountered in slogdet"
+  ],
+  "passed": 6,
+  "real_pair_logdet": 318.34114780961966,
+  "total": 6,
+  "utc": "2026-10-29T14:35:49.556567+00:00"
+}

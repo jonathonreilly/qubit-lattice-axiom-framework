@@ -1,0 +1,3 @@
+nl1b-A: nonzero remainders dividing (g - E_a g) by (z_a-1): 0 / 800  ->  PASS
+nl1b-B: failures of T_a(nu_a g)=g and T_a(nu_b g)=nu_b T_a g: 0 / 3200  ->  PASS
+nl1b-C: nonzero remainders dividing g itself (control): 800 / 800  ->  PASS

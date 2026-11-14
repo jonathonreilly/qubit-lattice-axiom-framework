@@ -1,0 +1,7 @@
+m(1/20) in [0.350261386, 0.350261386]   (display only)
+m(1/10) in [0.876928808, 0.876928808]   (display only)
+draft formula 2*C_alg*max(400 m(1/20), 200 m(1/10)) >= 2806.172   (display only)
+re-derived    C_alg*max(400 m(1/20), 200 m(1/10))   <= 1403.086   (display only)
+K1(undefined at R=9/50)=True K2(brackets tight)=True K3(exp/log consistent)=True A(draft>1500)=True B(fixed<1500)=True
+OVERALL: PASS
+python3 -I ns55_3_kg.py  0.05s user 0.00s system 97% cpu 0.051 total

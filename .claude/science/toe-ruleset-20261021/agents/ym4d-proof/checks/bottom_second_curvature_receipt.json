@@ -1,0 +1,117 @@
+{
+  "unit": "bottom_second_curvature",
+  "frozen_utc": "2026-10-29T20:05:17.400725+00:00",
+  "claim": "Author proof of source-specific CJ18 and conditional full-colour quartic bound under the named normalized-tree/linear/current contracts; fresh independent review pending.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BOTTOM_SECOND_CURVATURE_ASTRA.md",
+    "sha256": "b735eb1d551c9ba80925c0d22830b17ce823735bf7d9ac5d2e19ddabb2ff3ade",
+    "bytes": 28850
+  },
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "owned_artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BOTTOM_SECOND_CURVATURE_ASTRA.md",
+      "sha256": "b735eb1d551c9ba80925c0d22830b17ce823735bf7d9ac5d2e19ddabb2ff3ade",
+      "bytes": 28850
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01.py",
+      "sha256": "3e996c7ae4b9e92ca756e827d16160ad54ae323c373264bf980dc60442fc0808",
+      "bytes": 6192
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01_out.json",
+      "sha256": "34c0a218592ac1b9764b76aff43b2d09935e9bb48832ec735b10bdca05dd08a2",
+      "bytes": 25459
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02.py",
+      "sha256": "5f0d3dbad4ce83cf22e1522607e211cc9574596b1f41911f7934b7fd896ff7c5",
+      "bytes": 10831
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02_out.json",
+      "sha256": "425cae6c2906bc001a914fe50e3dc88685e723dc1c7d1266a49cddd5ad2331c4",
+      "bytes": 10743
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_attempts.json",
+      "sha256": "dfe430cbbfb5a8b3dea7688128aa7bf1ff2828ee9f2c43e1a907e680a6fc06c5",
+      "bytes": 3973
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_criteria.md",
+      "sha256": "a70fa63222663487566be4450b5fd25815c12d09553babce118664be130029b7",
+      "bytes": 3046
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_freeze.py",
+      "sha256": "5a8c2f5d95e284ed24b263ece73db03355857db797861406abf226573ec7283a",
+      "bytes": 11161
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_read_slices.json",
+      "sha256": "0fec53e7f504c5811d584c3376677ebb95814a29c58fca91124673e9bf93b8e8",
+      "bytes": 87710
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_source_manifest.json",
+      "sha256": "8d68afd95ce5cb2315977a06f8590555b739bc80bdee2afa18eda38388a9ee67",
+      "bytes": 30041
+    }
+  ],
+  "upstream_author_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_receipt.json",
+    "sha256": "83ba5129c3b6ca9c6e0d6a4577938531658ddf8fa2a8f21d728831d3edb66b6a",
+    "bytes": 4209
+  },
+  "upstream_review_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_receipt.json",
+    "sha256": "ad4226851b1b1d7b29e87f19c42c18a021fd8dd7afbfb5a85eeff5007120962d",
+    "bytes": 22335
+  },
+  "mechanical_checks": {
+    "all_python_parsed": true,
+    "new_predicates_passed": 137,
+    "new_predicates_total": 137,
+    "both_exit_codes": 0,
+    "both_stderr_empty": true,
+    "all_old_author_artifacts_unchanged": 14,
+    "upstream_review_receipt_artifacts_match": 22,
+    "local_link_targets": [
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_STATIONARY_JET_ASTRA.md",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CHARGED_STATIONARY_JET_ASTRA.md",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_criteria.md",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01.py",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02.py",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_source_manifest.json",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_receipt.json"
+    ]
+  },
+  "theorem_boundary": [
+    "CJ18 actual Euler/Bianchi/harmonic source only",
+    "BC9 high-alias derivative Green bound, not generic inverse",
+    "BC17-20 source-specific analytic division with nonuniform fixed-depth germ",
+    "full weighted row ell^-2 and anchored-column ell^2 density",
+    "conditional full-colour D4 bound via completed stationary quartic"
+  ],
+  "open_outside_scope": [
+    "independent review of this new argument",
+    "finite-u all-depth analogue",
+    "full finite-part increment/convergence",
+    "nonlinear complex neighborhood and RG",
+    "continuum Yang-Mills existence",
+    "physical positive continuum Hamiltonian mass gap"
+  ],
+  "operations": "No git/staging/PR/shared-status/audit changes. Coordinator owns integration and review."
+}

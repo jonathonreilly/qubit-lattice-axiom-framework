@@ -1,0 +1,42 @@
+{
+  "oracle_counts": {
+    "connected_graphs": 44,
+    "full_norm_comparisons": 646,
+    "saturated_inputs": 5220,
+    "cycle_permutation_coefficient_cases": 72,
+    "path_permutations": 6
+  },
+  "source_cases": [
+    {
+      "case": "baseline",
+      "actual_exit": 0,
+      "actual_reason": null,
+      "expected_outcome_observed": true
+    },
+    {
+      "case": "original_active",
+      "actual_exit": 0,
+      "actual_reason": null,
+      "expected_outcome_observed": true
+    },
+    {
+      "case": "both_active",
+      "actual_exit": 1,
+      "actual_reason": "AssertionError('exact_cycle_output_full_norm')",
+      "expected_outcome_observed": true
+    },
+    {
+      "case": "roots_active",
+      "actual_exit": 1,
+      "actual_reason": "AssertionError('exact_inactive_root_output_full_norm')",
+      "expected_outcome_observed": true
+    },
+    {
+      "case": "weight_active",
+      "actual_exit": 1,
+      "actual_reason": "AssertionError('exact_cycle_output_full_norm')",
+      "expected_outcome_observed": true
+    }
+  ],
+  "all_expected_outcomes": true
+}

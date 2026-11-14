@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-30T01:09:26.266380+00:00",
+  "failures_preserved": [
+    "Analytic routes: arbitrary conditional minimizer; fixed-width/max-boundary reset; whole-volume reference; uncollared lower bound; packing loss; dyadic alternative; probability-to-activity inference; changing G/Omega. See routes note.",
+    "Discovery query initially guessed wrong arXiv number; official cond-mat/0309352v2 was then located/read. No wrong paper theorem consumed.",
+    "Truncated discovery/source retrievals were not counted as full proof reads; required source ranges recovered in bounded reads.",
+    "No new scientific pass/fail count. Existing CC23/24, original shell failureu40 ratio2.463807379..., separately post-hoc narrower3/3, mutation controls and resource-only RLIMIT_RSS/parser failures remain unchanged in their packets.",
+    "CS/GC earlier mechanical freeze failures and the historical GC context-register drift remain intact. No historical failure is restamped as passing this unit."
+  ],
+  "limits": [
+    "OC15 normalized actual original-law probabilities and OC19 component expectations are not analytic activities.",
+    "Real reference comparisons retain volume and the explicitly narrower shrinking coarse-curvature window.",
+    "Complete-history/failure/source-sea integration, complex nonvanishing, consumer-locality, coarse law outside the window and later effective levels remain open.",
+    "RD pass2 finite H12 identity resolution is recognized; its product-reference hard-cut criterion still needs an exact quantitative match.",
+    "Full4D existence and physical continuum mass gap remain OPEN."
+  ],
+  "mutations": "Only owned new source/evidence files; no shared fronts, Git/PR, locks, audits, ledgers, axioms or predecessor edits.",
+  "owned_scope": [
+    "OUTSIDE_CHART_RETURN_ASTRA.md",
+    "checks/outside_chart_return_*"
+  ],
+  "preregistration": "No numerical criteria needed. The routes record preserves unsuccessful analytic routes and distinctions; thresholds in OC are analytic theorem hypotheses.",
+  "repository_context": "Root reported current HEADddc0515e563507c74050d9c55201abb6981d4d69 and main01589af3faf806b736c42dc2f3bd625e9edead9f. No Git command was run by this unit.",
+  "requested_configuration": "Astra/max; serving backend/effort not independently attested.",
+  "resource_policy": "Numerical resource gates not triggered by proof/text/hash work. No worker launch or scientific computation. Coordinator lock read only; last supplied expiry2026-10-30T02:18:02.414292+00:00.",
+  "role": "Author proposal, pending different-context fresh review; no author LAND verdict.",
+  "science_method": "Pure analytic construction; no scientific numerical experiment, no new simulation or physics checker."
+}

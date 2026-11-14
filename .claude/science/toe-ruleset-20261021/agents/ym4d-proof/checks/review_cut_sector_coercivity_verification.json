@@ -1,0 +1,91 @@
+{
+  "all_read_entry_hashes_rechecked_unchanged": true,
+  "audit_or_lock_mutations": 0,
+  "author_checker_executed": false,
+  "author_packet": {
+    "all_hashes_rechecked_unchanged": true,
+    "bound_artifacts_plus_receipt": 10,
+    "predecessor_artifacts": 50,
+    "predecessor_receipts": 2,
+    "receipt": {
+      "bytes": 10863,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_receipt.json",
+      "sha256": "c1b64e10e94c7dedd0e73195f46e8235f83bbda6665d9a739626ae44eef6fcac"
+    },
+    "source_input_pins": 17
+  },
+  "classification": "identity, coverage-boundary and file-integrity evidence only; no script certifies mathematics",
+  "combined_integration_gate": "not performed; coordinator-owned, not implied by scoped LAND",
+  "commits": 0,
+  "created_utc": "2026-10-29T23:19:17.892935+00:00",
+  "format": "independent-source-review-mechanical-verification-v1",
+  "frozen_reasoning": {
+    "bytes": 15196,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cut_sector_coercivity_reasoning.md",
+    "sha256": "3782be34577149a8d0f32d937e864dacbb1405455976a2e3c80d28de36638611"
+  },
+  "full_pipeline_runs": 0,
+  "git_mutations": 0,
+  "independent_manual_review": {
+    "binding_findings": 0,
+    "evidence": "frozen independent reasoning and report, not this mechanical checker",
+    "fixes": 0,
+    "passes": 1,
+    "result": "LAND for the stated support unit; full proof OPEN",
+    "scope": "CS1-CS29 as stated; CS30-CS33 only on explicit upstream domains",
+    "skipped_findings": 0
+  },
+  "nested_workers": 0,
+  "numerical_experiments": 0,
+  "prior_failure_preservation": "author parser failure and partial outputs, prior CC result and post-hoc/failure distinctions are unmodified",
+  "read_entries": 41,
+  "read_manifest": {
+    "bytes": 33291,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cut_sector_coercivity_read_manifest.json",
+    "sha256": "844e1b25b3cbc7e648feb76aa59e69104cb2c6b708e3d782616ac9409b60f398"
+  },
+  "report": {
+    "bytes": 12275,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md",
+    "sha256": "e5bcf577dab1144c6ce4ac06f1b4558cc44951a7fb3e305199bb91f91736b76a"
+  },
+  "source": {
+    "bytes": 32365,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+    "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e"
+  },
+  "structural_checks": {
+    "local_links": [
+      {
+        "exists": true,
+        "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md",
+        "target": "CUT_SECTOR_COERCIVITY_ASTRA.md"
+      },
+      {
+        "exists": true,
+        "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md",
+        "target": "checks/review_cut_sector_coercivity_reasoning.md"
+      },
+      {
+        "exists": true,
+        "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md",
+        "target": "checks/review_cut_sector_coercivity_read_manifest.json"
+      },
+      {
+        "exists": true,
+        "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md",
+        "target": "PROCESS_LIGHT.md"
+      },
+      {
+        "exists": true,
+        "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md",
+        "target": "checks/review_cut_sector_coercivity_identity_check.json"
+      }
+    ],
+    "producer_labels": "CS1-CS33 contiguous",
+    "producer_lines": 617,
+    "review_and_reasoning_final_newline": true,
+    "review_and_reasoning_trailing_whitespace": false,
+    "review_final_line": "VERDICT: LAND"
+  }
+}

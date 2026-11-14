@@ -1,0 +1,19 @@
+n = 2 (S = 9, M = 18): C_inf = 0.1250; T0 max|d*F - rho| = 1.1e-15, crossing flux 6.7e-16; ||F||_1 (corner, face, c+e1, random) = 21.313, 14.965, 7.255, 18.315 (bound 2M = 36); max_w ||F||_1/n = 10.6567; T1 random ratio max 0.1498; T3 ratio max 0.0039; C1 sup/(2n+1)^4 = 0.1248
+n = 3 (S = 13, M = 26): C_inf = 0.1250; T0 max|d*F - rho| = 1.2e-15, crossing flux 7.6e-16; ||F||_1 (corner, face, c+e1, random) = 31.873, 22.287, 8.299, 28.902 (bound 2M = 52); max_w ||F||_1/n = 10.6242; T1 random ratio max 0.1444; T3 ratio max 0.0040; C1 sup/(2n+1)^4 = 0.1249
+n = 4 (S = 17, M = 34): C_inf = 0.1250; T0 max|d*F - rho| = 1.1e-15, crossing flux 8.0e-16; ||F||_1 (corner, face, c+e1, random) = 42.399, 29.505, 9.048, 36.159 (bound 2M = 68); max_w ||F||_1/n = 10.5998; T1 random ratio max 0.1418; T3 ratio max 0.0039; C1 sup/(2n+1)^4 = 0.1250
+n = 5 (S = 21, M = 42): C_inf = 0.1250; T0 max|d*F - rho| = 9.6e-16, crossing flux 7.9e-16; ||F||_1 (corner, face, c+e1, random) = 52.910, 36.683, 9.633, 42.261 (bound 2M = 84); max_w ||F||_1/n = 10.5821; T1 random ratio max 0.1396; T3 ratio max 0.0039; C1 sup/(2n+1)^4 = 0.1250
+n = 6 (S = 25, M = 50): C_inf = 0.1250; T0 max|d*F - rho| = 9.2e-16, crossing flux 7.5e-16; ||F||_1 (corner, face, c+e1, random) = 63.412, 43.845, 10.114, 48.297 (bound 2M = 100); max_w ||F||_1/n = 10.5687; T1 random ratio max 0.1383; T3 ratio max 0.0039; C1 sup/(2n+1)^4 = 0.1250
+T0 identity (a) and zero crossing flux: PASS
+T1 l1 bound and GE-F1 (q(6)/q(4) = 0.9971 <= 1.25): PASS
+T2 C_inf <= 2: PASS
+T3 l-infinity bound (e): PASS
+T4 adjointness (n = 2, CG 88 its): rel. diff 1.7e-14; dual bound: lambda(x)(corner) = 21.3134, ||F||_1 = 21.3134 (rel. 0.0e+00), 2M = 36: PASS
+T5 n = 27, s = 1: sum|d ev chi| = 157464.00, (n/s)^3 = 19683, ratio 8.0000 (bound 240)
+T5 n = 27, s = 3: sum|d ev chi| = 5832.00, (n/s)^3 = 729, ratio 8.0000 (bound 240)
+T5 n = 27, s = 9: sum|d ev chi| = 216.00, (n/s)^3 = 27, ratio 8.0000 (bound 240)
+T5 Q_X bound (f): PASS
+T6 composite (coarse side 5, n = 3, 81 boxes, CG its 128-129): (i) d*Gamma^T D vs -D + I^T D 1.5e-15; (ii) adjointness 5.6e-16; (iii) ||Gamma^T D||_1 = 95.12 <= 4M||j||_1 = 8569.8; (iv) sup = 0.4433 <= 21215.1; split: sup|P| = 0.0738, sup|B| = 0.4419, max|Q_X| = 0.5781, ||D||_inf = 2.3760, sup|A_c| = 0.1250 (<= 32): PASS
+C1 control (psi = 1 on N_X): sup/(2n+1)^4 = 0.1248, 0.1249, 0.1250, 0.1250, 0.1250: PASS (grows like n^d, as predicted)
+C2 control (adjacent dipole at c, GE-F3): ||F||_1 = 7.2550, 8.2986, 9.0477, 9.6327, 10.1141; increments per log 2: 2.5864, 2.6192: PASS (log growth, as predicted)
+VERDICT: ALL PASS (T0-T6, C1, C2)
+[t = 5.5 s]

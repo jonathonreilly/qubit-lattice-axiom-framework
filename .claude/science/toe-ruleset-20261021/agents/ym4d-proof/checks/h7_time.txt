@@ -1,0 +1,7 @@
+lock taken 02:50:02 UTC
+load1 2.39 free 45%
+exit 0
+lock released 02:50:04 UTC
+        2.35 real         2.29 user         0.04 sys
+           155238400  maximum resident set size
+nice 10; OMP/OPENBLAS/MKL/vecLib threads 1; PYTHONDONTWRITEBYTECODE=1; python3 (no -I); no timeout; single run, no smoke run

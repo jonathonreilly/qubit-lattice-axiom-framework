@@ -1,0 +1,37 @@
+d l  ztail            rem phi tu2i dmu eqn closed | noB1-rem | conc-rem conc-eqn
+3 2  ['1']              0   0    0   0   0      0 |       16 |        0        0
+3 2  ['1']              0   0    0   0   0      0 |       16 |        0        0
+3 2  ['5/4']            0   0    0   0   0      0 |       16 |        0        0
+3 2  ['5/4']            0   0    0   0   0      0 |       16 |        0        0
+3 2  ['3/7']            0   0    0   0   0      0 |       16 |        0        0
+3 2  ['5/4']            0   0    0   0   0      0 |       16 |        0        0
+3 3  ['3/7']            0   0    0   0   0      0 |       54 |        0        0
+3 3  ['3/7']            0   0    0   0   0      0 |       54 |        0        0
+3 3  ['1']              0   0    0   0   0      0 |       54 |        0        0
+3 3  ['3/7']            0   0    0   0   0      0 |       54 |        0        0
+3 3  ['1']              0   0    0   0   0      0 |       54 |        0        0
+3 3  ['7/5']            0   0    0   0   0      0 |       54 |        0        0
+4 2  ['7/5', '5/4']     0   0    0   0   0      0 |       48 |        0        0
+4 2  ['1', '1']         0   0    0   0   0      0 |       48 |        0        0
+4 2  ['7/5', '7/5']     0   0    0   0   0      0 |       48 |        0        0
+4 2  ['7/5', '5/4']     0   0    0   0   0      0 |       48 |        0        0
+4 2  ['7/5', '1']       0   0    0   0   0      0 |       48 |        0        0
+4 2  ['1', '3/7']       0   0    0   0   0      0 |       48 |        0        0
+4 3  ['1', '1']         0   0    0   0   0      0 |      243 |        0        0
+4 3  ['3/7', '3/7']     0   0    0   0   0      0 |      243 |        0        0
+4 3  ['3/7', '1']       0   0    0   0   0      0 |      243 |        0        0
+4 3  ['5/4', '1']       0   0    0   0   0      0 |      243 |        0        0
+4 3  ['1', '3/7']       0   0    0   0   0      0 |      243 |        0        0
+4 3  ['3/7', '3/7']     0   0    0   0   0      0 |      243 |        0        0
+TOTALS (spread): {'rem': 0, 'phi': 0, 'tu2i': 0, 'dmu': 0, 'eqn': 0, 'closed': 0}
+C2 d=2 l=2: Phi values ['2']
+C2 d=2 l=3: Phi values ['3']
+C3 d=3 l=2 perturbed: {'rem': 10, 'phi': 4, 'tu2i': 4, 'dmu': 6, 'eqn': 5, 'closed': 2}
+C3 d=4 l=2 perturbed: {'rem': 14, 'phi': 4, 'tu2i': 8, 'dmu': 10, 'eqn': 9, 'closed': 4}
+r55u_2-R (all divisions exact): PASS
+r55u_2-B (Phi == 0, TU-2(i), D mu = Omega): PASS
+r55u_2-A (D∧b == F): PASS
+r55u_2-C1 (b_1 omitted -> nonzero remainder somewhere): FIRED as designed
+r55u_2-C2 (d = 2 -> Phi != 0): FIRED as designed
+r55u_2-C3 (non-closed -> detected): FIRED as designed
+r55u_2-C4 (concentrated b_1, reporting): remainders 0, equation discrepancies 0

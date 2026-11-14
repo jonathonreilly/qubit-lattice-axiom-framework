@@ -1,0 +1,197 @@
+{
+  "frozen_utc": "2026-10-30T20:30:20.321747+00:00",
+  "supplied_commit": "1016ec5d6a8886dd8f7bcecb7645d746664384c1",
+  "procedure_pin": "6243acc936982e945732793bf641442c03abbfea",
+  "workflow": "PROCESS_LIGHT",
+  "source_sha256": "0a3057554efc6469a96338fb31a8a0f60f3d1302ef33b00eb05284b96c2ea2e0",
+  "verified_unchanged_prefix_1_1335_sha256": "38b36dc3e7add8c941c44153c315cafcc32e94613bb76c8e57bd1e9c102b04d8",
+  "verdict": "pass",
+  "scope": "GH64\u2013GH70 actual chart-conditioned two-step terminal-I law at zero original sources, under the stated common producer/cut and coupling-ratio hypotheses",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "max",
+  "backend_attestation": null,
+  "preflight": "go; 31 GB disk, 55% free memory, load 4.0; nice works, origin reachable; ulimit unavailable",
+  "reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GLOBAL_RETURN_HISTORY_ASTRA.md",
+      "sha256": "0a3057554efc6469a96338fb31a8a0f60f3d1302ef33b00eb05284b96c2ea2e0",
+      "new_actual_windows": [
+        [
+          1337,
+          1537
+        ]
+      ],
+      "unchanged_prior_windows_reused": [
+        [
+          1040,
+          1161
+        ],
+        [
+          1163,
+          1335
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SQUARED_ALIGNMENT_PRICE_ASTRA.md",
+      "sha256": "cd2df445d61018ade1f4050612b0616800f4c87c83cea9de27d3ab7b8ac00905",
+      "new_actual_windows": [
+        [
+          43,
+          79
+        ],
+        [
+          90,
+          143
+        ],
+        [
+          169,
+          187
+        ],
+        [
+          242,
+          313
+        ]
+      ],
+      "unchanged_prior_windows_reused": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFT_FLUCTUATION_COVARIANCE_ASTRA.md",
+      "sha256": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403",
+      "new_actual_windows": [
+        [
+          80,
+          274
+        ]
+      ],
+      "unchanged_prior_windows_reused": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_ACTION_READER_ASTRA.md",
+      "sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+      "new_actual_windows": [
+        [
+          41,
+          84
+        ],
+        [
+          117,
+          221
+        ]
+      ],
+      "unchanged_prior_windows_reused": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "new_actual_windows": [
+        [
+          64,
+          143
+        ],
+        [
+          208,
+          222
+        ],
+        [
+          242,
+          282
+        ],
+        [
+          288,
+          360
+        ]
+      ],
+      "unchanged_prior_windows_reused": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "new_actual_windows": [
+        [
+          54,
+          116
+        ],
+        [
+          238,
+          376
+        ]
+      ],
+      "unchanged_prior_windows_reused": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "new_actual_windows": [
+        [
+          217,
+          260
+        ]
+      ],
+      "unchanged_prior_windows_reused": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "new_actual_windows": [],
+      "unchanged_prior_windows_reused": [
+        [
+          146,
+          234
+        ],
+        [
+          249,
+          266
+        ],
+        [
+          668,
+          795
+        ]
+      ]
+    }
+  ],
+  "reuse_scope": "Prior bounded quotient and GH56\u2013GH63 full marginal/absolute-jet result; unchanged WR definitions/reader estimates. No recursive upstream certification. Hashing is not a whole-file read.",
+  "primary_literature": {
+    "version": "Kolesnikov\u2013Milman arXiv:1310.2526v7, 23 Nov 2017",
+    "url": "https://arxiv.org/pdf/1310.2526v7",
+    "theorem": "Theorem 1.2(1), generalized dimension infinity",
+    "pdf_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_literature_cache/kolesnikov_milman_v7.pdf",
+    "pdf_sha256": "f86893b5051a150a6827fd0523aa3733c5970a3cccc44b17a794f58cc4601727",
+    "actual_pdf_pages_one_based_read": [
+      1,
+      5,
+      18
+    ],
+    "bounded_text_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_literature_cache/kolesnikov_milman_v7_bounded.txt",
+    "bounded_text_sha256": "628c0213d1c5fa672e310ae648c0afbb6a4f1dfefda44a26206c450a2989556a",
+    "cached_excerpt_pages_one_based_read": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      18,
+      19
+    ],
+    "coverage": "Actual PDF text extraction confirms version, theorem and case-1 proof. Setup/conventions read from the cached excerpts. No whole-paper reading claimed."
+  },
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/second-chart-convexity-1016ec5d6a.md",
+    "sha256": "0b4027063290e0c3af8c3e7de71fee12c6e858bdd989ec88bffd064691ec49ba"
+  },
+  "author_routing_records_read": false,
+  "scientific_jobs": [],
+  "source_or_git_mutations": false,
+  "lint": {
+    "method": "direct lint_one_file; apply_fix=False",
+    "tool_pin": "6243acc936982e945732793bf641442c03abbfea",
+    "report": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/second-chart-convexity-1016ec5d6a.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    }
+  }
+}

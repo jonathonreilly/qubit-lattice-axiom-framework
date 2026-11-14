@@ -1,0 +1,64 @@
+{
+  "timestamp_utc": "2026-10-30T02:22:32.519908+00:00",
+  "kind": "deterministic document/source bookkeeping; no scientific computation",
+  "source_changes": [],
+  "links": [
+    {
+      "file": "WLOOP.md",
+      "target": "WLOOP_LOG.md",
+      "kind": "local",
+      "exists": true
+    },
+    {
+      "file": "WLOOP.md",
+      "target": "checks/wloop_sources.json",
+      "kind": "local",
+      "exists": true
+    },
+    {
+      "file": "WLOOP.md",
+      "target": "https://doi.org/10.1103/PhysRevD.24.879",
+      "kind": "external",
+      "checked": "primary source browsed in author session"
+    },
+    {
+      "file": "WLOOP.md",
+      "target": "https://arxiv.org/abs/1006.4518",
+      "kind": "external",
+      "checked": "primary source browsed in author session"
+    },
+    {
+      "file": "WLOOP.md",
+      "target": "https://arxiv.org/abs/1101.0963",
+      "kind": "external",
+      "checked": "primary source browsed in author session"
+    },
+    {
+      "file": "WLOOP.md",
+      "target": "https://arxiv.org/abs/1110.3522",
+      "kind": "external",
+      "checked": "primary source browsed in author session"
+    },
+    {
+      "file": "WLOOP.md",
+      "target": "https://arxiv.org/html/hep-th/9802035v1",
+      "kind": "external",
+      "checked": "primary source browsed in author session"
+    },
+    {
+      "file": "WLOOP.md",
+      "target": "https://arxiv.org/abs/hep-th/9605128",
+      "kind": "external",
+      "checked": "primary source browsed in author session"
+    },
+    {
+      "file": "WLOOP.md",
+      "target": "https://arxiv.org/abs/1304.0705",
+      "kind": "external",
+      "checked": "primary source browsed in author session"
+    }
+  ],
+  "tracked_diff_paths": [],
+  "draft_sha256": "3fa6a797bab81e930d4d3f081b112da7ecb38a7073a248474731cd61314efa57",
+  "numerical_experiments": "not run: nice denied"
+}

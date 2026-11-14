@@ -1,0 +1,163 @@
+{
+  "schema": "independent-post-receipt-recheck-v1",
+  "reviewer": "/root/review_weighted_return_jets",
+  "stage": "metadata-only final identity binding after receipt creation",
+  "completed_at_utc": "2026-10-30T12:24:43.796651+00:00",
+  "receipt_completed_at_utc": "2026-10-30T11:57:24.767651+00:00",
+  "strictly_after_receipt_creation": true,
+  "result": "PASS: all final reviewer artifacts, source identities and bound author packets are unchanged",
+  "workspace": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "reviewer_artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "817c5ec9516d8c97aee7d41ee08e5a71b827bdacb1c1ee8a34a471111fb6dc9b",
+      "line_count": 45,
+      "matches_previously_reported_identity": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_weighted_return_jets_receipt.json",
+      "sha256": "0214593f16cd5b04af0a546d275fda560b4986298e39dec73f90f5ce17fd16e3",
+      "line_count": 104,
+      "matches_previously_reported_identity": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_weighted_return_jets_source_only_findings.md",
+      "sha256": "801f442703284fecb960d39c49be52e6446f1d86613c3c0b67038af0b8279639",
+      "line_count": 52,
+      "matches_previously_reported_identity": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_weighted_return_jets_source_read_manifest.json",
+      "sha256": "2ad4eb421038cdf696639f3cf020b5b90da0ffb4b8330517016fcbc48da80e07",
+      "line_count": 382,
+      "matches_previously_reported_identity": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_weighted_return_jets_packet_check.json",
+      "sha256": "2d0b5a528dadc2226867933ec4a740e268a6cf1561c803bad61c9deceee7d986",
+      "line_count": 146,
+      "matches_previously_reported_identity": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_weighted_return_jets_final_source_recheck.json",
+      "sha256": "53cf80aa3fec77d045fd55b8399fde98dcd24e971a6725b63311dd36d16f1705",
+      "line_count": 132,
+      "matches_previously_reported_identity": true
+    }
+  ],
+  "source_identities": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "line_count": 937,
+      "matches_immutable_source_read_manifest": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "line_count": 649,
+      "matches_immutable_source_read_manifest": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGB.md",
+      "sha256": "80d4f1216e39c9d5cd661c7eced48f3ac480c0d1443e556208a1b2684890d640",
+      "line_count": 750,
+      "matches_immutable_source_read_manifest": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXSMALL.md",
+      "sha256": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+      "line_count": 692,
+      "matches_immutable_source_read_manifest": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/EXTCONT.md",
+      "sha256": "b10015bbd6be5fac97fd636fdc79f665800fe9921651575b9d03b0167b534b6e",
+      "line_count": 654,
+      "matches_immutable_source_read_manifest": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "line_count": 597,
+      "matches_immutable_source_read_manifest": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "line_count": 592,
+      "matches_immutable_source_read_manifest": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "line_count": 713,
+      "matches_immutable_source_read_manifest": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "line_count": 510,
+      "matches_immutable_source_read_manifest": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "line_count": 644,
+      "matches_immutable_source_read_manifest": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "line_count": 753,
+      "matches_immutable_source_read_manifest": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "line_count": 787,
+      "matches_immutable_source_read_manifest": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "line_count": 734,
+      "matches_immutable_source_read_manifest": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "line_count": 11,
+      "matches_immutable_source_read_manifest": true
+    }
+  ],
+  "bound_author_packets": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/weighted_return_jets_read_manifest.json",
+      "sha256": "8f6fc077450e62ac5c53c14a626f22e0f7b172cc97ab2e0d9b28042279e1ed0b",
+      "line_count": 113,
+      "matches_receipt": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/weighted_return_jets_receipt.json",
+      "sha256": "1528907500ba62c1705c2c8745baeb7ae84b1aa6a7c063763de27498c094753c",
+      "line_count": 41,
+      "matches_receipt": true
+    }
+  ],
+  "prior_artifacts_modified": false,
+  "new_mathematical_review_performed": false,
+  "existing_source_verdict": "LAND at the stated bounded bare-step scope only",
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false,
+  "execution": {
+    "numerical_science_runs": 0,
+    "author_runners": 0,
+    "extra_workers": 0,
+    "source_edits": [],
+    "git_pr_front_operations": 0,
+    "writes": [
+      "checks/review_weighted_return_jets_post_receipt_recheck.json"
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "receipt_version": 1,
+  "frozen_at_utc": "2026-10-29T18:15:15.874673+00:00",
+  "reviewer": "/root/review_source_sea; Astra/max requested configuration; same-family fresh context",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "scope": "SOURCE_SEA_CONSTRUCTION_ASTRA.md bounded one-level integrated-reference theorem and evidence, including affected additive control repair",
+  "source_unit_supported": true,
+  "source_findings": [],
+  "evidence_findings": [
+    {
+      "id": "SEA-CONTROL-01",
+      "original_status": "advertised probability/reference negative control was not implemented",
+      "final_status": "resolved by additive source_sea_check_v2.py and source_sea_run_03.json",
+      "affected_confirmation": "checks/review_source_sea_repair_check_01.json",
+      "originals_preserved": true
+    }
+  ],
+  "frozen_inputs": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_manifest.json": "50af7f02d0dea358ad7e7e68badb6b3919b3e6834b0e13b085af806a824141b7",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_check.py": "5b7ceb26a0129b77711529c033b6f6b2bfde590142b1dc5d873658dfc27c2731",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_criteria.md": "380eeff8b7f303640d7cf6a0ce87f98ec0c14af558e8f19d402e73ece6c91870",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_fetch_record.json": "80424281fa274e2a41af39c083f41218881dc07ac6683417f1d7cd3dc01eabde",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_literature.md": "e083b404dd68c428a65a9b7b95df9e0b50138cb6b3642dddb7ae07f60f98e466",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_read_coverage.json": "131c0e879a08d14425ae01d55f9cb9afde7fbb8f2aef4b93f9e6f0e51c8fe0de",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_results.md": "d07db16cdf78ced0cf456bc974da17234c3bf7577600c18e0820a8c12bd3f957",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_01.json": "c10a6274b394ff868abc44b2f5a79f51f6ccfba01ec75adbfbc7fa2fff4c5e86",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_02.json": "52d3b95cdb0749d476e33a36ec79c25d4dfc424e58f23503c211bca6b7c9837b",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_check_v2.py": "e726f9f6fb717039f61780fca4a57ccbe2cdcbfa2740a4404244d315f47506f7",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_03.json": "47f5c4783a2d939913410777f3b41a07d262ad2b9ac5ba2413f823e115f921b2",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_03.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_control_fix_receipt.json": "1b51ddab8f80e5a61865e7148ee333b5881049c551451c84779b07ade43f0149"
+  },
+  "frozen_review_artifacts": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_SEA_CONSTRUCTION_ASTRA.md": "8e667fe6462b3e5a24bd22d3028e35e01f064060f926455a3ed83a9dbf62808c",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_author_replay_01.json": "52d3b95cdb0749d476e33a36ec79c25d4dfc424e58f23503c211bca6b7c9837b",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_author_replay_01.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_criteria.md": "c7b9f0b6fa0ad158e88d837f75702f93f64e80d58c29f33367aa43f90db8d8ab",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_entry_identity.json": "cf619a4414f063d74cc148bef6447930cc0c6759799c86f4aba9d751d1e99565",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_geometry.py": "0ffc45711e80337446db0825ff98bd6db754a3cecb4b33a1f25a674ef987195d",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_geometry_01.json": "443aebc331c5ad7ce251ecbacbee35b017a2665a78d32fb50c55a331c0bd5c78",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_geometry_01.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_independent_freeze.json": "8784461873e97e252d54e61fb7c55943d6169e83db4a901ea5d08b7355439f53",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_mechanical_01.json": "07d62094a995f0a0a95855f17aa561b0b1cc4de917bc0265eca81253d3b187e6",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_read_coverage.json": "4f84d8e6c59ffbc71ec729723ec84d8532873a054644bc690d652e5bd3ee269c",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_refinement.py": "a402029f38081ddfc2c9d4fc03112cf81f123716771561d73c5ba892991eb0a6",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_refinement_01.json": "1bcb708797d6a5c7cb484cac5bb116f26d093ce0a12b4423d7359e73247d3ab2",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_refinement_01.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_repair_check.py": "0096260ddec245a72b9c85fac5adbd5b29991f7bc323141276632ef51b75df2c",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_repair_check_01.json": "6ef10977a51f78fd132690ba79b687dcdfeedea82ad308da9c6bf13430e164fa",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_repair_check_01.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_su2.py": "08ba1bdfccd0ec4ecc562d487dd4cb201ff55b1bd0cc5bc43fcad1c53f76b278",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_su2_01.json": "368b63b25d9f232bd9d5576cdd507ae4c2270b7525970bdeca9f54334da28311",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_su2_01.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "independent_checks": {
+    "predeclared_criteria": "checks/review_source_sea_criteria.md",
+    "first_outputs_before_author_code_read": true,
+    "author_code_imports": false,
+    "aggregate_invariant_groups": 9,
+    "control_predicates": 20,
+    "control_count_is_not_mutant_program_count": true,
+    "all_pass": true,
+    "independent_programs": [
+      "checks/review_source_sea_geometry.py",
+      "checks/review_source_sea_refinement.py",
+      "checks/review_source_sea_su2.py"
+    ],
+    "finite_diagnostics_are_not_continuum_proofs": true
+  },
+  "author_reproduction": {
+    "output": "checks/review_source_sea_author_replay_01.json",
+    "identical_to_original_run02_as_parsed_json": true,
+    "independent_validation": false
+  },
+  "failure_preservation": [
+    "Original placeholder control, original runner, run01, run02 and original manifest remain byte-identical.",
+    "First read-coverage metadata generation had a wrong temporary PDF basename; failure and correction recorded in review_source_sea_read_coverage.json. No mathematical output was changed or overwritten."
+  ],
+  "open_obligations": [
+    "localized actual conditional sea covariance and source remainders",
+    "summable connected original-source coefficients and normalized complex sea nonvanishing",
+    "multilevel normalized action/history/counterterm induction and N1/N2",
+    "OS continuum existence",
+    "physical continuum spectral gap"
+  ],
+  "authority_boundary": {
+    "whole_pr_pass": false,
+    "audit_verdict": false,
+    "audit_status_mutated": false,
+    "author_sources_mutated_by_reviewer": false,
+    "git_or_pr_mutated_by_reviewer": false,
+    "combined_candidate_gate_performed": false,
+    "full_existence_established": false,
+    "physical_continuum_mass_gap_established": false
+  },
+  "scope_reuse": "Unrelated shared status/header edits do not restamp science; consumed PROOF ranges are pinned to f078e7af6b9437941bcd43534e681d5a54feb249 in read coverage. Changed mathematical inputs or interactions require affected review.",
+  "final_link_check": "All existing report local links validated; this final receipt now exists at the remaining report link."
+}

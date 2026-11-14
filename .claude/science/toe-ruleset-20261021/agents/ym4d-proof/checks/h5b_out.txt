@@ -1,0 +1,4 @@
+|alpha| slope (y=0.02..0.16): median 3.000, range 2.999..3.004; max |alpha|/y^3 at y<=0.04: 0.010
+d slope (y=0.04..0.16): median 5.993 (n=47), range 3.96..6.28
+d slope (y=0.08..0.32): median 6.000 (n=50), range 5.84..6.17
+time 0.1 s; peak RSS 57 MB

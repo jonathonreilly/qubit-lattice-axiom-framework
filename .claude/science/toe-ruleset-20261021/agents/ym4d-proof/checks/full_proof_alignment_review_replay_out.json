@@ -1,0 +1,141 @@
+{
+  "scope": "exact finite evidence only; analytic/uniform conclusions use report proofs",
+  "direct_spline_images": [
+    {
+      "L": 3,
+      "coarse_count": 1,
+      "fine_count": 3,
+      "all_exact_identities": true,
+      "merged_harmonic_at_1": "1"
+    },
+    {
+      "L": 3,
+      "coarse_count": 2,
+      "fine_count": 6,
+      "all_exact_identities": true,
+      "merged_harmonic_at_1": "2/9"
+    },
+    {
+      "L": 3,
+      "coarse_count": 3,
+      "fine_count": 9,
+      "all_exact_identities": true,
+      "merged_harmonic_at_1": "-8/9"
+    },
+    {
+      "L": 3,
+      "coarse_count": 5,
+      "fine_count": 15,
+      "all_exact_identities": true,
+      "merged_harmonic_at_1": "40/99"
+    },
+    {
+      "L": 3,
+      "coarse_count": 9,
+      "fine_count": 27,
+      "all_exact_identities": true,
+      "merged_harmonic_at_1": "8/153"
+    },
+    {
+      "L": 5,
+      "coarse_count": 1,
+      "fine_count": 5,
+      "all_exact_identities": true,
+      "merged_harmonic_at_1": "1"
+    },
+    {
+      "L": 5,
+      "coarse_count": 2,
+      "fine_count": 10,
+      "all_exact_identities": true,
+      "merged_harmonic_at_1": "12/25"
+    },
+    {
+      "L": 5,
+      "coarse_count": 3,
+      "fine_count": 15,
+      "all_exact_identities": true,
+      "merged_harmonic_at_1": "-24/25"
+    },
+    {
+      "L": 5,
+      "coarse_count": 5,
+      "fine_count": 25,
+      "all_exact_identities": true,
+      "merged_harmonic_at_1": "24/55"
+    },
+    {
+      "L": 5,
+      "coarse_count": 9,
+      "fine_count": 45,
+      "all_exact_identities": true,
+      "merged_harmonic_at_1": "24/425"
+    }
+  ],
+  "segment_contour_moments": [
+    {
+      "d": 2,
+      "L": 3,
+      "orders_times_output_directions": 4,
+      "all_moments_exact": true,
+      "uncentered_control_detected": true
+    },
+    {
+      "d": 2,
+      "L": 5,
+      "orders_times_output_directions": 4,
+      "all_moments_exact": true,
+      "uncentered_control_detected": true
+    },
+    {
+      "d": 2,
+      "L": 7,
+      "orders_times_output_directions": 4,
+      "all_moments_exact": true,
+      "uncentered_control_detected": true
+    },
+    {
+      "d": 4,
+      "L": 3,
+      "orders_times_output_directions": 96,
+      "all_moments_exact": true,
+      "uncentered_control_detected": true
+    },
+    {
+      "d": 4,
+      "L": 5,
+      "orders_times_output_directions": 96,
+      "all_moments_exact": true,
+      "uncentered_control_detected": true
+    },
+    {
+      "d": 4,
+      "L": 7,
+      "orders_times_output_directions": 96,
+      "all_moments_exact": true,
+      "uncentered_control_detected": true
+    }
+  ],
+  "AC1_periodic": {
+    "wrapping_oriented_steps": 71,
+    "top_root_zero_identity": [
+      "-217/6",
+      "63/2",
+      "-10"
+    ],
+    "independent_coarse_background_identity": [
+      "-475/6",
+      "59/2",
+      "18"
+    ],
+    "wrong_coarse_sign_detected": true
+  },
+  "scales": {
+    "independent_exponent_identities": 4620,
+    "finite_geometric_sums_checked_through_k": 20,
+    "boundary_alpha_plus_theta_one": true,
+    "theta_equal_alpha_control_sum_at_k20": 19,
+    "lower_residual_chart_L_exponent": 3,
+    "Phi_G_h_exponent": 1
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "role": "Author metadata receipt only; not independent review, proof validation or audit.",
+  "source_frozen_before_packaging": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+    "lines": 490,
+    "sha256": "9f99a9ed53057911015041018c0f6b3112d53976e5e64bae1a2b8c6ac5fa211b"
+  },
+  "read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_read_manifest.json",
+    "lines": 122,
+    "sha256": "dbd0e2c841994adee7525a858a264ccc7f848d1fde90d14879370af7317a4c37"
+  },
+  "metadata_checks": {
+    "source_matches_announced_freeze": true,
+    "definitions_exactly_SG1_through_SG25_once": true,
+    "utf8_decoding_succeeded": true,
+    "trailing_whitespace_lines": [],
+    "all_input_hashes_match_manifest": true,
+    "all_10_consumed_governing_hashes_match_pinned_manifest": true
+  },
+  "protected_predecessors": {
+    "prior_receipt": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/quadratic_coarse_return_receipt.json",
+      "lines": 76,
+      "sha256": "0624ea553f2d33e62467047ba7eb5f739180f1cb58f97012cb35b70319ff78d3"
+    },
+    "prior_protected_count": 20,
+    "mismatches": [],
+    "additional_frozen_identities_unchanged": {
+      "REAL_GAUSSIAN_JET_FOREST_ASTRA.md": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627",
+      "checks/real_gaussian_jet_forest_read_manifest.json": "4d95d2f75f6e66f4987325281a8d69c88fc4c6e43f14ae6a8918a13f01e6192e",
+      "checks/real_gaussian_jet_forest_receipt.json": "a83ca29700a623c7c31d9fb15e684c89addb30a0959ca5664029ea029f4a2fa5",
+      "REGIONAL_CRITICAL_FIELD_ASTRA.md": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "COMPLEX_WHITE_SECTOR_ASTRA.md": "fb72d33bddb727e85548ad96f0e45585cf06254190aa182008e80aa3fbbc5a3c",
+      "WHITE_SECTOR_MATCHING_ASTRA.md": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+      "FINITE_U_CRITICAL_FIELD_ASTRA.md": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "NONLINEAR_READER_RETURN_ASTRA.md": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "WEIGHTED_RETURN_JETS_ASTRA.md": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3"
+    }
+  },
+  "author_derivation_checks": [
+    "The residual sign is negative and K_Lambda Q=I-R_tail on the actual principal region; inactive forces are not removed from the physical RF phase.",
+    "Each whole patch entry is an analytic atom; original-cell weight exp(beta|D_q|)<exp(2) precedes both endpoint sums and the finite marked-column count.",
+    "Tail words keep unions of patch readers; symmetrization is bilinear transpose, and positivity is proved only for the entire core.",
+    "The RF critical atom family is explicitly different; the old lift tail is not added twice in the exact covariance identity.",
+    "R precedes tau/rho and coarse/boundary radii; the exponential lift bound and actual RF D_H condition give the stated beta/12 support price.",
+    "Original (6,4) units, label counts, physical fixed-exterior composition, small-tail masks and the absence of independent large-core weakening are retained."
+  ],
+  "independent_review_status": "Different fresh review requested from coordinator on the exact frozen source; no verdict claimed.",
+  "remaining_scope": "Mean localization, inherited interaction bounds, rough histories, effective iteration, continuum existence and physical mass gap remain open.",
+  "operations": "Only this new source and its two matching metadata files were written; all checks were metadata, with no scientific numerical experiment."
+}

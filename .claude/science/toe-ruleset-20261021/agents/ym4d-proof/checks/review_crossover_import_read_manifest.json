@@ -1,0 +1,390 @@
+{
+  "schema": "scoped-independent-review-source-coverage-v1",
+  "created_utc": "2026-10-29T18:42:51.985863+00:00",
+  "reviewer": "/root/review_crossover_bridge",
+  "configuration": "Owner-requested Astra/max, same-family fresh reviewer context; no claim of blinded or cross-family review.",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "methodology_freshness": "Coordinator-supplied immutable current-main snapshot, fresh at 17:11 UTC; reviewer did not independently refresh remote main.",
+  "governance_reads": [
+    {
+      "path": "AGENTS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "bytes": 5188,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "bytes": 12608,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "bytes": 12940,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "bytes": 7554,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "bytes": 23216,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd",
+      "bytes": 1615,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "bytes": 3694,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "bytes": 10595,
+      "read_scope": "Complete text, including supplements to initially truncated reads.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "4df23ed611d808e3dd28d2a14b5407a16c9eb4d2c632017666b9a240a78199ce",
+      "bytes": 22309,
+      "read_scope": "Lines 1–85; selected routing context only.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "bytes": 39977,
+      "read_scope": "Lines 1–120; selected vocabulary context only.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f2665b763f69e4baef4648d15b517b2701d975a8131f4665703c40c07283782c",
+      "bytes": 109438,
+      "read_scope": "Lines 1–20; index routing only, no theorem/status adoption.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/audit/README.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "bytes": 35690,
+      "read_scope": "Lines 1–100; authority boundary only.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "read_scope": "Partial displayed text in a truncated read; not complete campaign workflow coverage. Reviewer did not execute a discovery campaign.",
+      "role": "Methodology or registered-premise context; no imported Yang–Mills dynamics."
+    }
+  ],
+  "primary_source_reads": [
+    {
+      "name": "Kirk, fixed compact-simple-group Yang–Mills manuscript, version 4",
+      "url": "https://zenodo.org/records/21765806",
+      "version": "Zenodo v4 dated 2026-08-02; PDF header dated 2026-08-03; 118 PDF pages.",
+      "files": [
+        {
+          "path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_kirk_v4.pdf",
+          "sha256": "b91c6c2b9ba7cd4d5476aa6a2e823569507682c24cf103933ff9f97c73260bed",
+          "bytes": 1372548
+        },
+        {
+          "path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_kirk_v4.txt",
+          "sha256": "62e6276fcc0d9cbc361e57134a3073e5bfe8bdc12b2300c1de008fa9d60b7032",
+          "bytes": 407397
+        }
+      ],
+      "text_line_ranges_read": [
+        [
+          56,
+          134
+        ],
+        [
+          1120,
+          1727
+        ],
+        [
+          2140,
+          2270
+        ],
+        [
+          2550,
+          2592
+        ],
+        [
+          3900,
+          4215
+        ],
+        [
+          4320,
+          4445
+        ],
+        [
+          4640,
+          4745
+        ],
+        [
+          5080,
+          5185
+        ],
+        [
+          7460,
+          7695
+        ]
+      ],
+      "passages": [
+        "Fixed-group conventions and normalization",
+        "Lemmas 3.22–3.27, Theorems 3.28/3.31",
+        "Corollary 4.2 and related Gaussian estimates",
+        "Section 4.6 tree weights",
+        "Sections 6.6–6.13 and row (44)",
+        "Lemma 6.22/(59)",
+        "Lemma 6.30",
+        "Corollary 6.40, Lemma 6.41, Theorem 6.43",
+        "Appendix A.18–A.20 including (233)"
+      ],
+      "role": "Candidate import screen at named printed inferences; no theorem imported as established Yang–Mills closure.",
+      "limits": "Not the whole paper. Search matches and truncated broad output do not imply full manuscript reading. Actual optical trace/source hypotheses and complete support-weight dependency proofs remain unverified."
+    },
+    {
+      "name": "Abdesselam–Rivasseau, Trees, forests and jungles: a botanical garden for cluster expansions",
+      "url": "https://arxiv.org/abs/hep-th/9409094v1",
+      "version": "arXiv v1, 1994-09-16; 36 PDF pages.",
+      "files": [
+        {
+          "path": "/tmp/ym-crossover-import-research-20261029/abdesselam_rivasseau_9409094v1.pdf",
+          "sha256": "6498535d584bd935cd3d57f565d9c662c4fccbba31f623850431d2de3b4d8bee",
+          "bytes": 303807
+        },
+        {
+          "path": "/tmp/ym-crossover-import-research-20261029/abdesselam_rivasseau_9409094v1.txt",
+          "sha256": "8249f0a4b74a5487de9474f5a7c59fecb6558f3af51de247a4f559ecac592edc",
+          "bytes": 68460
+        }
+      ],
+      "text_line_ranges_read": [
+        [
+          1,
+          1655
+        ],
+        [
+          2335,
+          2510
+        ]
+      ],
+      "passages": [
+        "Forest identity and proof",
+        "Taylor formulation III.1",
+        "Jungle induction IV.1 and Taylor form IV.3",
+        "Covariance positivity IV.5",
+        "Section V.E, printed pp.31–33, and the start of V.F"
+      ],
+      "role": "Literature theorem/organization with stated application hypotheses, not an imported Yang–Mills amplitude estimate.",
+      "limits": "Other applications and remaining sections were not fully read. Finite polynomial and positivity diagnostics are controls, not a model-specific convergence proof."
+    }
+  ],
+  "source_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "sha256": "c0f118a5228fffd8c2841d0a254328d722c4083629427ffd176a8fc4747b835a",
+      "bytes": 24828,
+      "read_scope": "Original complete note, then every affected correction paragraph; no adjacent source unit is certified."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b",
+      "bytes": 7507,
+      "read_scope": "Complete target: both full continuum existence and physical mass gap remain open."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_exact.py",
+      "sha256": "4959125ca8cf6002e6108f121df6cfddfdccc78ce98c227ef879363640aca25d",
+      "bytes": 12190,
+      "read_scope": "Complete, after independent implementation and its two retained runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_exact_v2.py",
+      "sha256": "15139682cffba6fa1df2cd2beca6268b91b686a956d3546654b8bc786e929eb4",
+      "bytes": 14468,
+      "read_scope": "Original complete runner plus complete additive correction diff, after independent scaled-mark run."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_manifest.json",
+      "sha256": "c5c41b4f81d3dd2219b18772422e815204d5b04cb1bf733173f1a289ac48fbbd",
+      "bytes": 22356,
+      "read_scope": "Structured metadata, source/version map and relevant fields; author read assertions are not inherited as reviewer coverage."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_freeze.json",
+      "sha256": "63ff7f8680d5f36c1e3d5f1021eb839cd4599854a6bc814a440b87356271689f",
+      "bytes": 6839,
+      "read_scope": "Complete frozen bindings; verified at entry and preservation rechecked at final packaging."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_control_fix_receipt.json",
+      "sha256": "fe6a71d9a5198f8b902c29c57508ef6c55788a8e51b868c4f50d4e362e39c62c",
+      "bytes": 3769,
+      "read_scope": "Complete repair bindings and original-preservation fields; pending-review wording is historical and not edited by reviewer."
+    }
+  ],
+  "additional_web_metadata_read": {
+    "url": "https://github.com/ethanwsussman/Yang--Mills-LLM-experiment",
+    "scope": "README tentative research status and manuscript listing only; no proof imported or repository commit pinned."
+  },
+  "not_claimed": [
+    "Whole Kirk manuscript review",
+    "Actual Karcher optical-matrix counterexample",
+    "Actual many-pivot Wilson reference activity",
+    "Full support-weight dependency closure",
+    "Complete discovery/delivery workflow execution",
+    "Combined validation or current-main preservation gate",
+    "Canonical unit receipt or audit authority"
+  ],
+  "read_scope_semantics": "Human/model read assertions plus byte bindings; hashes do not prove reading or mathematical validity."
+}

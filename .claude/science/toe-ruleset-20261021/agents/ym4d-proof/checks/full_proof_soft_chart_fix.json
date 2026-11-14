@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-10-29T19:14:35.750180+00:00",
+  "finding": "Matrix-principal logarithm may have nonzero trace for SU(N) at the broader original chart radius.",
+  "reviewer": "/root/review_soft_covariance",
+  "repair_author": "/root",
+  "source_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFT_FLUCTUATION_COVARIANCE_ASTRA.md",
+  "before": {
+    "revision": "86400dbc2ad09b0cf9c6bd9453a8e788a20f46cd",
+    "sha256": "7b579f43ff7c04dd922f652c76cb3a1b9a4add3d64d0bf29d6abf0e04f038296"
+  },
+  "after_sha256": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403",
+  "before_text": "Choose a fixed HS exponential-chart radius r smaller than the injectivity\nradius. Let `Omega_r` be the event that all non-tree links of the unique\npinned tree representative have principal logarithms of norm <r. This event\nis invariant under root-pinned gauges and under global conjugation. This is a **global small-link chart**. In particular it is not defined\nby small curvature alone and does not cover all flat holonomies.",
+  "after_text": "Choose a fixed radius `0<r<min{injectivity radius, pi/sqrt(N)}` in the HS\nnorm. Let `Omega_r` be the event that every non-tree link of the unique\npinned tree representative belongs to `exp{A in su(N): ||A||_HS<r}`.\nEquivalently, its matrix principal logarithm is traceless and has HS norm\nless than r. The radius keeps every logarithm eigenvalue inside the principal\nbranch; also `|tr Log W|<=sqrt(N)||Log W||_HS<pi`, so `det W=1` forces\n`tr Log W=0`. Thus this event is exactly the image of the specified\ntraceless coordinate ball. It is invariant under root-pinned gauges and\nunder global conjugation. This is a **global small-link chart**. In particular\nit is not defined by small curvature alone and does not cover all flat\nholonomies.",
+  "change": "Narrow radius and explicitly identify the traceless exponential-ball event with its coordinate cutoff.",
+  "displayed_precision_and_integral_formulas_changed": false,
+  "diagnostic_code_changed": false,
+  "affected_review": "pending",
+  "both_full_targets": "OPEN"
+}

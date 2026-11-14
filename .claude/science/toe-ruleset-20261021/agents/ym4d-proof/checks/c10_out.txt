@@ -1,0 +1,13 @@
+PASS A chessboard, exact 2D U(1): mu(R all bad) <= qbar^|R| (90 cases, tori 4x4, 6x4) | max ratio 1.0000
+INFO (A): in 2D U(1) the plaquettes are exchangeable, so mu(R bad) depends only on |R|; the test is the inequality, not geometry.
+PASS B SU(2) Haar ball h_2(delta) >= (8/(3 pi^3)) delta^3 | ratios 2.47, 2.47, 2.45, 2.42, 2.27
+PASS C second-order lemma f(U*) - f(U* e^X) <= N (d-1) ||X||^2 (SU(2), 300 random W, X) | max ratio 0.736
+PASS D conditional lower bound P_W(||U-R|| >= t) >= h_2(delta) e^{-beta (d-1) x^2} (SU(2), random W, R; MC 4e5) | max lb/p 1.24e-04; untestable (MC effective count < 200): 0; b1t0.25:p=1.0e+00,lb=1.2e-04 b1t1:p=6.7e-01,lb=1.8e-07 b4t0.5:p=9.9e-01,lb=1.0e-12 b10t0.25:p=1.0e+00,lb=1.7e-17 b10t1:p=1.0e+00,lb=3.2e-41
+PASS E ribbon count: max_(s,y) ||Z - 1|| <= A_L max_slab ||1 - U_p||, A_L = 9 | 0.673 <= 9 x 0.507 = 4.559
+INFO (F) SU(2): t=1: 3 x^2 * 4 N b0 = 1.22 (dense); t=tau_N/2: 3 x^2 * 4 N b0 = 0.28 (dense) vs 4
+INFO (F) SU(3): t=1: 3 x^2 * 4 N b0 = 2.75 (dense); t=tau_N/2: 3 x^2 * 4 N b0 = 0.64 (dense) vs 4
+INFO (F) SU(4): t=1: 3 x^2 * 4 N b0 = 4.89 (undecided); t=tau_N/2: 3 x^2 * 4 N b0 = 1.14 (dense) vs 4
+INFO (F) SU(6): t=1: 3 x^2 * 4 N b0 = 11.00 (undecided); t=tau_N/2: 3 x^2 * 4 N b0 = 2.56 (dense) vs 4
+INFO (F) SU(10): t=1: 3 x^2 * 4 N b0 = 30.56 (undecided); t=tau_N/2: 3 x^2 * 4 N b0 = 2.68 (dense) vs 4
+runtime 24 s
+TOTAL: PASS=5 FAIL=0

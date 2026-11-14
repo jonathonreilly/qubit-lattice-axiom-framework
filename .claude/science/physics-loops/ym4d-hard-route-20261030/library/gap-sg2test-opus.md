@@ -139,8 +139,9 @@ PCA of the e_3 components of lim C_n, which by 1.4(b) is all of Cov(Ebar) at a t
 Smoke runs (under the lock, L = 4, beta 2.6, 600 sweeps, 20 frame chains; not used for any verdict) at phi = pi/2:
 twisted u_xy put the tie mode on e_3 (temporal-gauge raw moments 0.51, 0.87, 11.4 for colours 1, 2, 3) and the lagged
 X_3 moment stayed at 10.7 at lag 64, while X_1 fell from 0.66 to 0.23; Lemma LB gave 4.2. So at L = 4 the frame average
-keeps the e_3 order, as 1.4(e) predicts. Twisted u_xyyz and twisted u_pi gave tie-mode moments of 0.3-0.4 (no order seen
-on the xyz mode at L = 4).
+keeps the e_3 order, as 1.4(e) predicts. Twisted u_xyyz and twisted u_pi gave tie-mode moments of 0.3-0.4 at L = 4.
+[Correction, 11:57Z: those two smoke commands did not pass `--mode xyz`, so they measured the xy tie mode, which is not
+the pattern of u_xyyz. They say nothing about order on the xyz mode; see 3.3 for the proper screen.]
 
 **2.5 Batch 2 plan (fixed at 10:19Z, before batch 1 reported; chained to start when batch 1 ends).** Twisted u_xy (phi = pi/2)
 at beta 2.3 and 2.45, L = 4, 6, 8 (lengths as batch 1, `--pca3`). Twist along x (`xtwist`, proxy with the x-holonomy) at
@@ -276,3 +277,96 @@ batch 2 has at L = 4, 8. Criteria: those of 1.5 (REFUTES if A_lo rises at each s
 and A_lo(8)/A_lo(4) >= 2.5; saturation if A_lo and A_64 change by at most 30 percent from L = 6 to 8). At beta 2.6 the
 added sizes test persistence: growth persists if A_lo(12)/A_lo(6) >= 2.5 beyond 2 standard errors.
 
+**3.3 Batch 3 (run 10:30-10:39Z under the lock, 71 percent free; then a hang, see 3.4).** Log `logs/batch3.log`, JSON
+`logs/b3_*.json`. Code `sg2lab_b3.py`. A_lo = LB134 (primary, fixed in 3.1); A_lo(Y_1) given for comparison with 3.0.
+
+| slice | beta | L | temporal-gauge X_1/X_2/X_3 | A_16 | A_64 | A_lo = LB134 | A_lo(Y_1) | PCA (halves) | A_lo/L^3 | A_64/L^3 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| u_phi (z), pi/2 | 2.6 | 4 | 1.65/1.40/7.74 | 6.55 | 6.49 +- 0.75 | 3.54 +- 0.73 | 2.63 | 6.8, 6.0 | 0.055 | 0.101 |
+| u_phi (z), pi/2 | 2.6 | 6 | 2.79/1.92/23.1 | 22.4 | 21.9 +- 1.2 | 13.6 +- 1.4 | 8.32 | 20.2, 22.7 | 0.063 | 0.101 |
+| u_phi (z), pi/2 | 2.6 | 8 | 2.79/5.30/51.5 | 51.1 | 49.1; A_512 = 50.1 +- 6.1 | 32.8 +- 7.8 | 15.1 | 39.3, 55.8 | 0.064 | 0.096 |
+| u_phi (z), pi/2 | 2.6 | 10 | 5.47/4.72/84.7 | 86.6 | 86.4 +- 7.7 | 55.1 +- 11.2 | 17.1 | 90.8, 75.7 | 0.055 | 0.086 |
+| u_phi (z), pi/2 | 2.6 | 12 | 8.71/9.12/182.3 | 177.1 | 175.5 +- 5.4 | 115.7 +- 7.1 | 28.6 | 174.1, 160.7 | 0.067 | 0.102 |
+
+Lags at L = 8: 52.8, 51.5, 51.1, 49.9, 49.1, 50.4, 49.7, 50.1 at n = 0, 8, 16, 32, 64, 128, 256, 512 (flat from lag 8 to 512).
+**Verdict against 3.1: (SG2) REFUTED at beta 2.6 on the z-twisted u_xy (GUIDE).** A_lo(8) - A_lo(4) = 29.3 (3.8 combined standard
+errors), ratio 9.3; A_lo(12) - A_lo(6) = 102.2 (14 standard errors), ratio 8.5; A_512/A_16 = 0.98 at L = 8. The lower bound grows
+like the volume: A_lo/L^3 stays at 0.055-0.067 from L = 4 to 12, and the upper side at 0.086-0.102. So
+Var_(pi_u)(<v, Ebar>) lies between about 0.06 L^3 and 0.10 L^3 at beta 2.6 on these boxes, and by 4.1(iv)
+Var(phi_(u,z_v)) = beta^2 Var(<v, Ebar>) is between 0.4 L^3 and 0.7 L^3: at L = 12, between 780 and 1190.
+The better proxy (averaged links) raised A_lo/A_64 from 0.32-0.46 (Y_1) to 0.55-0.66, which removed the doubt of 3.0.
+The temporal-gauge lambda_* of the twisted slice (3.60, 9.28, 19.9, 31.6, 66.7) tracks row 950's u_xy values (4.19, 11.3, 22.6,
+41.6, 64.9) within 25 percent, as 4.1(i) (local equivalence to u_xy) predicts.
+**Family A screen (temporal gauge; criteria of 1.5 on the max over k of Lambda).** u_xyyz (flux -1 on xy and yz; pattern
+(pi, pi, pi), (1, -1, 1)): beta 2.3, lambda_max = 1.32 (L = 4) and 1.43 (L = 8), at (pi, pi, pi): saturation, no order. beta 2.6:
+3.53 and 13.3 (ratio 3.8, between L^2 and L^3; the order is spread over the three colours, 17.2/10.7/7.9, as at a central
+slice): growth, so this anisotropic deformation of u_pi also orders at beta 2.6, and by 4.3 its twist would violate (SG2) too
+(ARGUED; its twisted runs were not made). u_pi itself at beta 2.6, L = 4: lambda_max = 0.58 (frustrated, no order seen; L = 8
+not run).
+
+**3.4 What failed in batch 3, and a rule breach (reported plainly).** The next job, family D (interpolation u_xy -> u_pi at
+s = 0.5 with the z-twist, L = 4), hung from 10:39Z until the task limit stopped it at about 11:55Z. Cause, found by hand:
+at the cold start every y-link of the last slice t = T has an exactly vanishing staple. Its two xy staples give -2 u_y
+(flux -1), its two yz staples cancel (the yz plaquettes of that slice are exp(+-(pi/2) k), so up + down = (-1)^x (k - k) = 0),
+and the half weight of slice T gives S = (beta/2)(-2 u_y) + beta u_y = 0. The code then sets kappa = 1e-12, and the Kennedy-Pendleton
+loop never accepts. (Other slices are not affected: for u_xy and its twists the yz staples add to +2 u_y.) Fix for a rerun:
+sample Haar when kappa < 1e-3, or start hot. Not rerun.
+**Breach.** My lock expired at 11:25Z while the hung process was still running. Row 954 took the lock at 11:25:57Z, so my
+process ran without the lock for about 30 minutes, beside row 954's jobs (one thread; L = 4 arrays; its memory was not measured). The hung process used, by wall time (it spun in one loop on one core),
+about 76 CPU minutes and produced nothing. With it, this row used about 98 CPU minutes against the 60 asked: about 22 in
+useful batches (smoke 1, batch 1 4, batch 2 8, batch 3 9) and 76 lost. So I stopped computing. Not run: batch 3's
+remaining screens (u_pi at L = 8, family D, family C = vacuum slices) and batch 4 (the x-twist scan at beta 2.3 and 2.45, and
+L = 6, 12 at beta 2.6). The lock is now held by row 954.
+
+## 5. Result (step 8)
+
+Plan against what was done: steps 1, 2 and 7 ran in full. Step 4 (tilted copies of u_xy) became the main result: twists
+along z (phi = pi/2, pi/4) and along x. Step 3 (anisotropic deformations of u_pi) ran as a temporal-gauge screen of u_xyyz and
+u_pi; their twisted versions did not run. Step 6 (interpolation) hung (3.4), and step 5 (vacuum slices) did not run.
+Started 09:59Z; runs 10:13-10:39Z under the lock, plus the hung process to about 11:55Z (3.4); result written 11:58Z.
+
+| Statement | Label |
+|---|---|
+| Lemma LB (1.3): any gauge-invariant proxy Y gives lambda_max(Cov Ebar) >= Var(<v, Ebar>) >= c^T G^(-1) c; lagged values of a palindromic frame chain decrease to their limit | PROVED (by hand, Claude Opus 5.5, not yet checked) |
+| Proposition TW (1.4, 4.1): u_xy with a flat colour twist along x or z is locally gauge equivalent to u_xy; Ebar is parallel to e_3; the reflection S_d fixes the slice and gives E[X_3] = 0; the tie vector is horizontal, so Var(phi_(u,z_v)) = beta^2 Var(<v, Ebar>); the patterns n = +-e_3 are gauge-inequivalent (winding loop) | PROVED |
+| Mechanism (4.2-4.3): a flat holonomy turns the colour order of a central slice's boundary layer into gauge-invariant data with an exact tie under a lattice reflection; (SG2) at beta needs that no Dirichlet boundary layer orders at beta | ARGUED |
+| **(SG2), and (SG-step) in gauge-invariant form, for SU(2) Wilson at beta 2.6** | **REFUTED at GUIDE level** at u_xy twisted along z (phi = pi/2; L = 4 to 12; the lower bound A_lo grows like 0.06 L^3, 3.8 and 14 standard errors on the pre-set differences) and along x (L = 4, 8; 4.6 standard errors). Var(phi_(u,z_v)) is between 0.4 L^3 and 0.7 L^3. No proof either way; boxes up to 12 only |
+| (SG2) at beta 2.45 (z-twist, phi = pi/2) | inconclusive by the pre-set criterion: the lagged (upper-side) values grow 4.3 -> 9.4 -> 21.9 (L = 4 to 8, lag-converged), the lower bound with the weak proxy Y_1 does not separate from noise |
+| (SG2) at beta 2.3 (z-twist, phi = pi/2) | survives (bounded: lagged values 1.2-1.4, lower bound to 0); GUIDE only, establishes nothing |
+| Family A screen: u_xyyz orders at beta 2.6 (lambda_max 3.5 -> 13.3 from L = 4 to 8), not at 2.3 (1.3, 1.4); u_pi at 2.6, L = 4: 0.58 | GUIDE |
+| Controls C1-C3 pass; C4 passes on the lower bound, while the lagged values at the central slice fall only slowly at L = 8 (row 950's validation (V) issue) | GUIDE |
+| Family C (vacuum slices), family D (interpolation), twisted u_xyyz and u_pi | NOT RUN (3.4) |
+| (SG2) and (SG-step) at beta 2.3-2.4 | **OPEN** |
+
+**Answers to the row.** (SG2) is the top eigenvalue of lim_n Cov(E^(0), E^(n)) over all slices. The search found a violation:
+**at beta 2.6, (SG2) is refuted at GUIDE level, at a non-central slice with an exact tie between gauge-inequivalent next
+slices.** The slice is the layered pi-flux slice u_xy with a flat colour holonomy along one axis (one of the "tilted
+copies of u_xy" the row asked for, with the tilt on the links that do not carry the pattern). The frame-averaged
+tie-mode variance grows like the volume on boxes 4 to 12, by a lower bound that needs no frame chain (Lemma LB) and by
+lag-converged frame-lag values (flat from lag 8 to lag 512 at L = 8). Because the tie vector is horizontal at that slice,
+(SG-step) in gauge-invariant form fails with it. The mechanism is not charge conjugation (inner for SU(2), row 950 7.2)
+but a lattice reflection composed with a colour rotation (4.2). At beta 2.45 the upper side grows (inconclusive by the
+criteria); at beta 2.3 nothing grows on the slices tried. Controls: compact U(1) at u_xy grows like L^3 after projection
+(lag 64 = lag 0, ratio 3.38 from L = 4 to 6); the temporal-gauge C_0 reproduces row 950's volume growth at beta 2.6 (4.28 and
+21.6 against 4.19 and 22.6).
+
+**What a next lane should take (ranked).** (1) The chain's input (SG-step) is false in gauge-invariant form at beta 2.6 and,
+by row 950's ordering coupling 2.45-2.5 for u_xy and 4.3, very likely for beta >= 2.5. The window for the hypercontractivity
+route shrinks to beta 2.3-2.4 at best, and by 4.3 a proof there must show that no Dirichlet boundary layer orders, uniformly
+in the slice (boundary uniqueness). (2) Cheap reruns that would sharpen this, about 10 CPU minutes: the x-twist scan at
+beta 2.45 and 2.3 (`batch4.sh`, unchanged); twisted u_xyyz at beta 2.6; family D after the Haar fix of 3.4. (3) The question
+on which the window turns: does any central slice order at beta 2.3-2.4? u_xy (row 950) and u_xyyz (here) do not, at the
+sizes tried. Boxes of the seed size are out of reach of a run.
+
+**Limits.** All runs are GUIDE: boxes 4 to 12 (z-twist) and 4, 8 (x-twist), slab thickness 6, cold starts, block errors from
+8 contiguous blocks (Ising states may persist through a whole run; raw moments are used, which the symmetry S makes exact).
+The small-box caveat of row 950 applies: at beta 2.6 the bulk deconfinement extent is about 10-12 lattice units (RECALLED),
+so the order seen here might stop on much larger boxes. Row 950's growth at beta 2.5 to L = 20 argues against that (GUIDE).
+The refutation stands or falls with the colour order of u_xy's boundary layer, by 4.1(i). The proofs (Lemma LB,
+Proposition TW) are by hand by Claude Opus 5.5 and checked by no other model; row 953 is the check. Row 950 is used as READ
+(unchecked; row 951 not on disk). The code was written for this row from row 950's text. Row 950's scripts in another
+session's scratch folder were not read. Credit: the slab model, (SG2), the frame-lag test and the tie mode are row 950's
+(Claude Fable 5.2), resting on row 944; the transfer frame and outline are Ethan Sussman and Levent Alpoge's (with Claude and
+Codex as authors of their text). Kennedy-Pendleton heat bath (RECALLED). Nothing here is a public claim.
+
+RESULT: Row 952 (Claude Opus 5.5 max, Mac mini; unchecked, check = row 953): (SG2), and with it (SG-step) in gauge-invariant form, is REFUTED at GUIDE level for SU(2) Wilson at beta 2.6. The slice is the layered pi-flux slice u_xy with a flat colour holonomy along z or x. The frame-averaged first-step tie-mode variance grows like the volume: lower bound (Lemma LB, no frame chain) 3.5 -> 115.7 for L = 4 -> 12, about 0.06 L^3; lag-converged upper side about 0.10 L^3; pre-set criteria met at 3.8, 14 and 4.6 standard errors. PROVED by hand: Lemma LB, and Proposition TW (local equivalence to u_xy, Ebar parallel to e_3, an exact tie between the gauge-inequivalent states n = +-e_3 under a lattice reflection composed with a colour rotation, and the tie vector is horizontal). ARGUED: (SG2) at beta needs that no Dirichlet boundary layer orders at beta. At beta 2.45 the upper side grows (inconclusive); at beta 2.3 nothing grows (GUIDE only). Controls pass (U(1) grows like L^3 after projection; C_0 reproduces row 950). Not run: vacuum slices, interpolation (a cold-start hang, diagnosed in 3.4, cost 76 CPU minutes and ran 30 minutes past my lock). OPEN: (SG2)/(SG-step) at beta 2.3-2.4; persistence beyond L = 12.

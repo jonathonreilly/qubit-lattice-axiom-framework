@@ -1,0 +1,8 @@
+r = 5.00: interior min of g = +0.0211 at x = 0.050; g'(0) = +0.500
+r = 5.20: interior min of g = +0.0124 at x = 0.305; g'(0) = +0.400
+r = 5.25: interior min of g = -0.0008 at x = 0.325; g'(0) = +0.375
+r = 5.30: interior min of g = -0.0150 at x = 0.341; g'(0) = +0.350
+r = 5.40: interior min of g = -0.0459 at x = 0.368; g'(0) = +0.300
+r = 5.60: interior min of g = -0.1159 at x = 0.410; g'(0) = +0.200
+r = 6.00: interior min of g = -0.2801 at x = 0.470; g'(0) = +0.000
+omega = 1.3: 2 sinh^2(omega/2) = 0.971, omega^2/2 = 0.845, sinh(omega) = 1.698

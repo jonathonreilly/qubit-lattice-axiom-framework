@@ -2,6 +2,8 @@
 
 **Type:** meta
 **Status:** scope record; no scientific grade.
+**Primary runner:** `scripts/gb1_cf_native_placement_scope_check_2026_11_14.py`
+**Cached output:** `logs/runner-cache/gb1_cf_native_placement_scope_check_2026_11_14.txt`
 
 This is the N1–N8 scope record for the accompanying
 [positive code theorem](SU2_HOMOGENEOUS_NATIVE_QUBIT_CODE_BOUNDED_THEOREM_NOTE_2026-11-08.md).
@@ -101,3 +103,18 @@ fixed-origin covariance issue at the code/operator level, while leaving the
 physical-law question intact. The finite edge-parity results and earlier
 two-plaquette/gluing work are retained as evidence, without promotion to a
 framework verdict.
+
+## Checks
+
+The primary runner recomputes this note's finite statements by a path apart
+from the theorem's runner. It checks the four-qubit code (isometry, `FJ = JK`,
+`Q|0000> = 0`); the cycle rank `E - V + 1` of the open and periodic three-cubes
+by GF(2) elimination of the incidence matrix (28 and 55) against the 27
+site qubits; the singlet bound itself, by brute-force Gauss invariants on three
+small graphs compared with the character count and with `2^(E-V+1)`; and the
+per-cell counts (125 residues, 12 active, 113 spectators). Three controls must
+fail and do: a code with `J3 = (1100 + 0011)/sqrt2` breaks `FJ = JK`; the
+exponent `E - V + 2` exceeds the exact theta-graph count; and a 27-vertex tree
+gives no capacity counterexample. The general lower bound remains the
+theorem's proof; the runner checks its instances, in double precision for the
+linear algebra.

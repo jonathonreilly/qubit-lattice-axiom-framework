@@ -25,6 +25,15 @@ their text); the seed chain is this lane's (rows 700-961). Each section names wh
 7. First step of the best one or two ideas, attempted as a theorem; a GUIDE run only if it can refute (Section 7).
 8. Ranked list of at most five ideas, each with first step and fact test; RESULT line (Section 8).
 
+## Status log
+
+- 2026-11-14T12:52Z: file created with the plan. Nothing proved yet.
+- 2026-11-14T13:05Z: Step 1 done (Section 1). Next: Step 2, the constraint audit, with greps for each idea family (Step 3 merged into it).
+- 2026-11-14T13:08Z: Steps 2 and 3 done (Sections 2, 3). Next: Steps 4-6, the ideas with their fact tests.
+- 2026-11-14T13:11Z: Steps 4-6 done (Sections 4, 5, 6); audit row 15 corrected. Next: Step 7, Theorem 2O and Section 7.4.
+- 2026-11-14T13:15Z: Step 7 done (Section 7: Theorem 2O proved by hand, Lemma SHIFT, projected doubling, GUIDE kill test with no violation). A2 and B2 texts corrected. Next: Step 8, ranked list and RESULT.
+- 2026-11-14T13:16Z: Step 8 done (Section 8, RESULT). Item finished. The RESULT line is the last line of the file.
+
 ## 1. The system as it stands (READ at aa7b2e875; nothing here is new)
 
 Sources read for this section: FINISH rows 947, 954, 957, 960-962 (lines 1024, 1031, 1034, 1037-1039), RESULT parts of
@@ -162,8 +171,9 @@ All chances are my judgement (ARGUED). No idea below supplies the order-one numb
   path at its Coulomb transition, so a transport inequality along beta_s must fail there: the same automatic test as
   row 708's path. Frozen groups fail at the start (beta_t = infinity: all character coefficients equal, rate 0).
 - First theorem: the exact solution on the line with its thermal sum (routine), and the evenness Z(beta_t, beta_s) =
-  Z(beta_t, -beta_s) (flip one space link on every time slice), so the first beta_s-derivative of every seed
-  quantity vanishes at the start (ARGUED here in one line; the same symmetry in the vacuum and on the torus).
+  Z(beta_t, -beta_s) for even space sides (flip, on every time slice, the space links (x, i) with sum over j < i of
+  x_j odd; every space plaquette then changes sign and no time plaquette does), so the first beta_s-derivative of
+  every seed quantity vanishes at the start (PROVED by this change of variables; it acts alike in the vacuum and on the torus).
 - Worth-doing: no. The transport step is the open (THERM-DI)/(VIR-log) inequality with the (VAC-SUB) stop (rows 905,
   913, 934); the path is new, the missing inequality is not. And an anisotropic seed has no route to (SEED-FP).
   REFRAMING (a new path for a known transport).
@@ -231,9 +241,10 @@ FALSE in the confined phase: the 8 magnetic classes have top eigenvalues within 
 thermal sum is at least 7 - o(1). So the choice "periodic, not twist-summed" is forced by the phase: the periodic
 torus has heavy electric sectors, the summed torus has light magnetic ones. A summed engine needs the multiplet
 consumer (MULTIPLET), which nobody attacked. Fact tests: frozen Q_8, 2T would PASS a summed seed at large beta
-(magnetic classes heavy, even sector gapped), correctly: they are gapped on centre-blind functions. So the summed
-engine with a multiplet is the one consumer whose rival list is U(1) and K7 only, on periodic tori. REFRAMING of the
-flux half; the glue half stays.
+(magnetic classes heavy, even sector gapped), correctly: they are gapped on centre-blind functions. This is the
+reading of row 876 (G4, G5, G11) and of Theorem R: the gap needs pattern purity (each flux weight near 0 or 1) and
+the glue half. Purity is still a flux statement; U(1) fails it. Nothing new. REFRAMING of the flux half; the glue
+half stays.
 
 **B3. The place of the seed in the flow.** The number is level-free (1.2). Known placements: every cutoff (as
 stated); one cutoff with (UNIV-K); after exact steps with (EXIT). A small physical box at first passage is perturbative
@@ -297,9 +308,229 @@ statement about the same measure at the same scale (A1, A4, A6, B1, B2); (ii) a 
 the account (A2, A3, A8, A9, B5); (iii) a reading of the same number (A5, B3, B4, B6, B7, B8). The reason is in the
 audit: the number of 1.5 is fixed by the measure and the scale, and the measure is forced by the account.
 
-## Status log
+## 7. First step of A1 as a theorem: the engine without axis exchange (Step 7)
 
-- 2026-11-14T12:52Z: file created with the plan. Nothing proved yet.
-- 2026-11-14T13:05Z: Step 1 done (Section 1). Next: Step 2, the constraint audit, with greps for each idea family (Step 3 merged into it).
-- 2026-11-14T13:08Z: Steps 2 and 3 done (Sections 2, 3). Next: Steps 4-6, the ideas with their fact tests.
-- 2026-11-14T13:11Z: Steps 4-6 done (Sections 4, 5, 6); audit row 15 corrected. Next: Step 7, Theorem 2O and Section 7.4.
+Status: PROVED here by hand; not checked by another model. A GUIDE run (7.5) tried to refute the lemmas and did not.
+The proof follows the lane's Lemmas K, X, E (`gap-crux-restate.md` 3.4, rows 697-699) step by step; the one new
+step is Lemma D, which replaces "kappa(a) >= kappa(b) for a < b" (the only use of the symmetry) by a second seed.
+
+### 7.1 Setting (2O)
+
+W(a, b) > 0 for integers a, b >= 3. For each b >= 3 a positive trace-class operator T_b, and for each a >= 3 a
+positive trace-class operator T'_a, with
+
+W(a, b) = Tr T_b^a = Tr (T'_a)^b for all a, b >= 3.
+
+No symmetry W(a, b) = W(b, a) is assumed. Put e(b) = log lambda_0(T_b), e'(a) = log lambda_0(T'_a),
+ell = inf over a, b of log W(a, b)/(ab) (assumed finite), kappa(b) = e(b) - ell b, kappa'(a) = e'(a) - ell a, and
+
+g(a, b) = log W(a, b) - a e(b) = log(1 + S(a; b)) >= 0 (direct: time a, box b),
+g'(b, a) = log W(a, b) - b e'(a) = log(1 + S'(b; a)) >= 0 (crossed: time b, box a).
+
+Here S(a; b) = sum over the eigenvalues other than one copy of the top one of (lambda_i/lambda_0)^a, for T_b, and S'
+is the same for T'_a. Use: W = Z of a torus in two directions whose couplings differ (others fixed), or any
+partition function with positive transfer operators in two directions.
+
+### 7.2 Lemmas
+
+**Lemma K2 (PROVED).** kappa and kappa' are non-negative, convex and non-increasing on the integers >= 3.
+
+Proof (for kappa; kappa' is the same with the two families exchanged). (a) For a positive trace-class T,
+(Tr T^a)^(1/a) decreases to lambda_0 (Lemma A (a)); so e(b) = lim over a of (1/a) log W(a, b) = inf over a.
+(b) W(a, jb) = Tr (T'_a)^(jb) <= (Tr (T'_a)^b)^j = W(a, b)^j by Lemma A (a) for T'_a; divide by a and let a grow:
+e(jb) <= j e(b). By (a), ell = inf over b of e(b)/b, so kappa >= 0. (c) For fixed a, b -> log W(a, b) =
+log sum_i mu_i^b (mu_i the eigenvalues of T'_a) is convex; e is a pointwise limit of convex functions, and kappa
+differs from e by a linear term. (d) If kappa(b_0 + 1) - kappa(b_0) = c > 0, convexity gives kappa(b) >= c (b - b_0)
+for b >= b_0, so e(b)/b >= ell + c/2 for b >= 2 b_0; choose b_1 with e(b_1)/b_1 < ell + c/2; by (b) the same holds at
+every multiple j b_1: contradiction. QED
+
+**Lemma X2 (crossing; PROVED).** For all a, b >= 3: a kappa(b) + g(a, b) = b kappa'(a) + g'(b, a).
+Proof. Both sides equal log W(a, b) - ell a b. QED
+
+**Lemma E2o (one side doubled; PROVED).** g(a, 2b) <= 2 g(a, b) + 2a kappa(b), and
+g'(b, 2a) <= 2 g'(b, a) + 2b kappa'(a). Also (T): S(2a; b) <= S(a; b)^2, S'(2b; a) <= S'(b; a)^2, and g, g' are
+non-increasing in their time argument.
+Proof. W(a, 2b) = Tr (T'_a)^(2b) <= (Tr (T'_a)^b)^2 = W(a, b)^2, so a e(2b) + g(a, 2b) <= 2a e(b) + 2 g(a, b), and
+2 e(b) - e(2b) = 2 kappa(b) - kappa(2b) <= 2 kappa(b). The crossed line is the same with T_b. (T) is
+sum r_i^(2a) <= (sum r_i^a)^2 for r_i in [0, 1]. QED
+
+**Lemma D (the deficit from two seeds; PROVED; new).** For integers alpha >= 3 and b'' > b >= 3:
+
+kappa(b) <= [ b g(alpha, b'') + b'' g'(b, alpha) ] / ( alpha (b'' - b) ).
+
+Proof. Lemma X2 at (alpha, b), dropping g(alpha, b) >= 0: alpha kappa(b) <= b kappa'(alpha) + g'(b, alpha).
+Lemma X2 at (alpha, b''), dropping g'(b'', alpha) >= 0: b'' kappa'(alpha) <= alpha kappa(b'') + g(alpha, b'').
+Insert the second in the first and use kappa(b'') <= kappa(b) (Lemma K2):
+alpha kappa(b) <= (b/b'') alpha kappa(b) + (b/b'') g(alpha, b'') + g'(b, alpha). Collect kappa(b). QED
+
+**Lemma D' (PROVED).** For a, b >= 3 and alpha > 2a: (alpha - 2a) kappa(b) <= 2 g(a, b) + 2 g'(b, alpha).
+Mirror: for A, B >= 3 and beta > 2B: (beta - 2B) kappa'(A) <= 2 g'(B, A) + 2 g(A, beta).
+Proof. Lemma D with b'' = 2b: alpha kappa(b) <= g(alpha, 2b) + 2 g'(b, alpha). Since alpha >= a,
+g(alpha, 2b) <= g(a, 2b) <= 2 g(a, b) + 2a kappa(b) (Lemma E2o). Collect kappa(b). The mirror is the same proof with
+the two families exchanged. QED
+
+In the symmetric case (g' = g, kappa' = kappa) Lemma X of the lane gives (b - a) kappa(b) <= g(a, b) from one seed.
+Lemma D' asks two: the direct sum at time a and the crossed sum at time b on the box alpha. No relation between
+a and b is assumed; the relation "time shorter than the side" (audit row 18) is replaced by the second seed.
+
+### 7.3 Theorem 2O (two directions)
+
+**Theorem 2O (PROVED).** In the setting (2O) let a, b >= 3 and
+
+u := max( g(a, b), g'(b, 4a) ) <= 1/1400.
+
+Put a_k = 2^k a, b_k = 2^k b, u_k := max( g(a_k, b_k), g'(b_k, 4 a_k) ), K = 1365. Then for all k >= 0:
+(i) u_(k+1) <= K u_k^2, hence K u_k <= (K u)^(2^k);
+(ii) S(a_k; b_k) <= 1.001 (K u)^(2^k)/K and S'(b_k; 4 a_k) <= 1.001 (K u)^(2^k)/K;
+(iii) if the top eigenvalues are simple, the gap of T_(b_k) is at least log(1/(K u))/a and the gap of T'_(4 a_k) is
+at least log(1/(K u))/b (gap = log(lambda_0/lambda_1)).
+
+Proof. Write x = g(a, b), y = g'(b, 4a).
+(1) Lemma D' with alpha = 4a: 2a kappa(b) <= 2x + 2y, so a kappa(b) <= x + y.
+(2) Lemma E2o: g(a, 2b) <= 2x + 2a kappa(b) <= 4x + 2y. Again, with kappa(2b) <= kappa(b):
+g(a, 4b) <= 2 g(a, 2b) + 2a kappa(2b) <= 10x + 6y.
+(3) Mirror D' with A = 4a, B = b, beta = 4b: 2b kappa'(4a) <= 2 g'(b, 4a) + 2 g(4a, 4b) <= 2y + 2 g(a, 4b), so
+b kappa'(4a) <= 10x + 7y.
+(4) New direct seed: S(2a; 2b) <= S(a; 2b)^2 <= (e^(4x + 2y) - 1)^2 <= (e^(6u) - 1)^2.
+(5) New crossed seed, time 2b, box 8a = 4 (2a): g'(b, 8a) <= 2y + 2b kappa'(4a) <= 20x + 16y <= 36u, and
+S'(2b; 8a) <= S'(b; 8a)^2 <= (e^(36u) - 1)^2.
+(6) For u <= 1/1400: e^(36u) - 1 <= 36u e^(36u), and e^(72u) <= e^(0.05143) < 1.0528, so both new sums are at most
+1296 x 1.0528 u^2 < 1365 u^2; g <= S gives u_1 <= K u^2 <= (1365/1400) u. The pair (2a, 2b) satisfies the
+hypothesis again, so (i) follows by induction. (ii): for k >= 1 by (4)-(6) at stage k - 1; for k = 0,
+S = e^g - 1 <= 1.001 u. (iii): lambda_1/lambda_0 to the power a_k is at most S(a_k; b_k), so the gap is at least
+(1/a_k)(2^k log(1/(K u)) + log K - log 1.001) >= log(1/(K u))/a; the same for T'. QED
+
+Remarks. (a) The constants are not optimised (the lane's symmetric Corollary S2 has threshold 1/20 in two directions).
+(b) The hypothesis is on ONE pair of sizes; the conclusion covers the dyadic multiples; other sizes need Lemma E'
+in this setting (not written). (c) The four-direction form for the anisotropic Wilson weight (time coupling beta_t,
+space coupling beta_s): the pairs (time, space_i) are in setting (2O) with the other sides as spectators, the pairs
+(space_i, space_j) are symmetric. A recursion that enlarges the three space sides and the time, as Proposition B3 and
+Theorem SH do, needs seeds for the time operator and for one space operator; I did not write its bookkeeping.
+OPEN (expected routine; ARGUED).
+
+### 7.4 Sheared tori and projected traces (the first step of A4 and B1)
+
+**Lemma SHIFT (PROVED; a relabelling of a lattice).** Let Lambda be the sublattice of Z^2 generated by (a, v) and
+(0, b), 0 < v < b, and d = gcd(v, b), with integers m, n such that m b + n v = d. Then Lambda is generated by
+(ab/d, 0) and (na, d). So, with tau and tau' the unit translations of the two slices,
+
+Tr( T_b^a tau^v ) = Z(Z^2/Lambda) = Tr( (T'_(ab/d))^d tau'^(na) ).
+
+Proof. Lambda = {(ia, iv + jb)}. The second coordinates fill dZ. Those equal to 0 have i in (b/d)Z, first coordinate
+in (ab/d)Z. The element i = n, j = m is (na, d). QED
+For v = 1: a time a on the box b with a unit shift is a time 1 on the box ab with the shift na: one helix. The
+shortest closed loops keep their lengths (b, and about a), so no large-box information is gained (SMALL-BOX).
+
+**Projected doubling (PROVED given (TM) for sheared slices, which is the same reflection argument and is not
+rewritten here).** Let direction 3 be a spectator of period N, P_0 the projection on zero momentum in it,
+W_v(a, b) = Tr(T_b^a tau_3^v) = Tr X_v^b with X_v the direction-2 operator of the slice sheared by v, and write
+W_v = lambda_0^a (1 + sum over p of e^(ipv) S_p), S_p >= 0 the thermal sum of momentum p (the vacuum has p = 0).
+Then W_P := Tr(T_b^a P_0) = (1/N) sum_v W_v = lambda_0^a (1 + S_0), and
+
+1 + S_0(a; 2b) <= [ (1 + S_0(a; b))^2 + sum over p != 0 of S_p(a; b)^2 ] exp(a (2 e(b) - e(2b))).
+
+Proof. Tr X_v^(2b) <= (Tr X_v^b)^2 for each v; average over v and use Parseval on Z_N. QED
+**The crossing identity of the projected trace (PROVED).** With Delta_v := log lambda_0(X_0) - log lambda_0(X_v) >= 0
+(because |Tr T^a tau^v| <= Tr T^a for every b):
+
+a e(b) + log(1 + S_0(a; b)) = b e'(a) + log[ (1/N) sum_v e^(-b Delta_v) (1 + S'_v(b)) ],
+
+and the last term lies between -log N and log(1 + max_v S'_v(b)).
+Reading (ARGUED). The doubling reads the other momenta only at second order: that is the possible gain (m a near 6
+in place of 12 in the dilute picture). But the deficit step needs the last term near 0, that is b Delta_v << 1 for
+every shear, and W_v/W_0 = (1 + sum_p e^(ipv) S_p)/(1 + S) is near 1 for all v only if the FULL sum S is small. So
+a projected seed does not replace the full one in the deficit step. The count is intrinsic to the crossing.
+
+### 7.5 GUIDE run (a run can refute or guide; it proves nothing)
+
+Model: 2D Ising on the a x b torus with unequal couplings J_1, J_2 (no axis exchange), sizes 3 to 11 in both
+directions (dense transfer matrices up to 2048 x 2048), ell from Onsager's double integral on a 3000 x 3000 midpoint
+grid. Criteria written first: FAIL if kappa or kappa' is negative or increases, if the crossing identity is off by
+1e-8, or if Lemma D, D', its mirror or Lemma E2o is violated by 1e-9 at any admissible sizes. Script and log:
+`/tmp/gap-constraints-962/test2o.py`, `test2o.log` (scratch, not committed). One job under the numeric lock, memory
+free 73 percent, peak RSS 354 MB, a few seconds each.
+
+| (J_1, J_2) | crossing error | max lhs/rhs: Lemma D | D' | mirror D' | E2o direct | E2o crossed | result |
+|---|---|---|---|---|---|---|---|
+| (0.30, 0.60) | 1.6e-14 | 0.717 | 0.203 | 0.127 | 0.489 | 0.862 | no violation |
+| (0.20, 1.00) | 2.8e-14 | 0.704 | 0.217 | 0.033 | 0.381 | 0.972 | no violation |
+| (0.80, 0.10) | 2.0e-14 | 0.380 | 0.024 | 0.226 | 0.999 | 0.114 | no violation |
+| (0.10, 0.25) | 2.0e-14 | 0.727 | 0.221 | 0.075 | 0.675 | 0.999 | no violation |
+| (0.44, 0.44) | 2.6e-14 | 0.678 | 0.171 | 0.171 | 0.666 | 0.666 | no violation |
+| (0.60, 0.35) | 2.9e-14 | 0.529 | 0.119 | 0.189 | 0.799 | 0.524 | no violation |
+
+What the run can establish: no algebra slip of the kind a small anisotropic model would expose; kappa and kappa'
+are different functions when J_1 != J_2 (for (0.20, 1.00): kappa(11) = 3.7e-2, kappa'(11) = 4.3e-4), so the
+symmetric step kappa(a) >= kappa(b) is really unavailable. What it cannot: the theorem; the recursion step (5)
+(its crossed box 8a is beyond dense sizes).
+
+## 8. Ranked list and result (Step 8)
+
+### 8.1 What the audit and the brainstorm say, in plain words
+
+- The seed is one number, fixed by the measure and the scale (1.5). The measure is forced by the account (audit rows
+  1, 2, 8, 9, 10, 19). So no change of geometry, boundary, direction, sector or place in the flow makes the number
+  smaller or easier. This is the answer to "can we relax the constraint system": not for the seed.
+- The slack is on the engine side only (audit rows 14, 15, 18 and row 2 for the engine). One piece of it is used
+  here: the axis exchange is not needed (Theorem 2O).
+- A relaxation that changes the measure (anisotropy, free walls, another weight, another slice) needs a NEW NODE
+  back to the account's state. No such node exists for any of them; (UNIV-K) and (EXIT) are the two known nodes of
+  this kind and both are open (rows 924, 846-877).
+- So a NEW INPUT can enter at two places only: an order-one inequality for the fixed number ((LSI-J-seed) and its
+  equivalents, row 947), or a comparison node between two measures. Nothing in Sections 4-5 is either.
+
+### 8.2 Ranked list (at most five; here three, because the others fail the worth-doing test outright)
+
+None of the three moves an item of the (SEED-FP) chain. By rule 0 of FINISH ("Is it worth doing?") the lead may
+rightly launch none. They are ranked by what a lane would leave behind. Chances are my judgement (ARGUED).
+
+1. **Theorem 2O: one cross-provider check, then its four-direction form.** REFRAMING for the seed; NEW theorem.
+   First step: check Section 7.1-7.3 line by line (Lemma D is the new step); then write the recursion for the
+   anisotropic Wilson weight with seeds for the time operator and one space operator (7.3 remark (c)).
+   Fact test: the engine is group-blind; both seeds must fail for U(1) (photon in each channel) and for frozen groups.
+   Moves: audit row 2 for the engine; the cost line of row 858 A2. Chance the check passes: 85 percent. Chance it
+   supplies a seed: 0.
+2. **A proved gap at the target time coupling, on the anisotropic strip (A2 with 1).** REFRAMING (KNOWN path idea 32
+   of row 859, new consumer). First step: the exact thermal sum on the line beta_s = 0 (independent link chains;
+   one-plaquette rate 4 log(I_1/I_2)(beta_t)), the two seeds of Theorem 2O there, and their stability for
+   beta_s beta_t below an explicit constant (a strong-coupling expansion in space only). Result if it lands: a
+   volume-uniform gap for SU(2) at beta_t in 2.3-2.6 and small beta_s, and a second proved start for the transport
+   family of rows 708, 913, at the target beta_t. Fact test: compact U(1) passes on the strip too (it is confined
+   there), so the strip is not selective and must not be; the transport from it must fail at the U(1) transition.
+   Moves: nothing on the chain (no anisotropic account); the transport's stop (VAC-SUB) is unchanged. Chance the
+   strip theorem lands: 60 percent. Chance of a seed at beta_s = beta_t: below 1 percent.
+3. **Decide the projected engine (A4, B1).** REFRAMING. First step: either bound the shear deficits Delta_v of 7.4 by
+   second-order sums (then a zero-momentum seed with m a near 6 has an engine), or exhibit a model in the class with
+   a small projected sum and no gap (then the count is forced, audit row 15). Fact test: identities; SMALL-BOX holds
+   by Lemma SHIFT. Moves: the size of the seed box by a factor near 2, not its nature. Chance of a decision: 50
+   percent.
+
+Not worth a lane, with the reason (Sections 4-5): A3 (no tool), A5 (the gluing helps U(1)), A6 (thresholds are not
+the obstacle), A7 (wrong spectrum), A8 ((JOIN-TH)), A9 (no engine, fails FT-U1 and SMALL-BOX), B2 (KNOWN; purity is
+still a flux statement), B3 and B7 and B8 (readings), B4 ((UNIV-K) or dead), B5 (ceilings), B6 ((VAC-SUB)). A10 is
+row 960.
+
+### 8.3 Result table
+
+| Statement | Label |
+|---|---|
+| Audit of 19 constraints (Section 2): which are forced by the account, by the proof of the engine, by mathematics, and which are choices | ARGUED from READ lines; each row cites its source |
+| The seed number is the same at every level of the flow and in both channels; relaxations of representation do not change it | PROVED in the cited rows (row 837 2.2; Lemma X) |
+| Lemmas K2, X2, E2o, D, D' and Theorem 2O (engine without axis exchange, two directions, threshold 1/1400, K = 1365) | PROVED (hand); not checked by another model; GUIDE kill test found no violation |
+| Four-direction form of Theorem 2O for the anisotropic Wilson weight | OPEN (expected routine) |
+| Lemma SHIFT (sheared torus relabelling); projected doubling inequality; projected crossing identity with its entropy term | PROVED (hand; the doubling given (TM) for sheared slices) |
+| A projected seed does not replace the full sum in the deficit step | ARGUED |
+| Evenness in beta_s for even space sides; Lemma WALL0 | PROVED (one change of variables each) |
+| Seed on the line beta_s = 0 at beta_t = 2.3 from a = 6 | GUIDE arithmetic |
+| Diagonal reflection positivity of the Wilson weight; the Klein-bottle crosscap identity | ARGUED (not written out) |
+| Twist-summed torus: seed false in the confined phase (at least 7 - o(1)) | ARGUED; KNOWN reading (row 876 G11) |
+| No relaxation of the constraint system is a NEW INPUT for the seed | finding of Sections 4-6 (a reading of the table, not a theorem) |
+| (LSI-J-seed), (SEED-FP), (UNIV-K), (EXIT), (JOIN-TH), (VAC-SUB) | OPEN, unchanged; owned by their rows, not attacked here |
+
+Limits. One author, no check by another model. The 4D gauge-theory statements about anisotropic weights ((TM) in
+each direction for unequal couplings, the solved line) are ARGUED from the lane's (TM) and not re-proved. Row 960's
+file and check 959 were not on disk. The Sussman-Alpoge outline was not re-read in this row; it enters through the
+lane's ports (rows 837, 904, 916, 924), credited to Ethan Sussman and Levent Alpoge, with Claude and Codex as authors
+of their text. No cross-branch search was run. Nothing here is a seed, a mass gap or a public claim.
+
+RESULT: Row 962 (Claude Fable 5.2 max, author, checked by no one). Audit of 19 constraints: the measure (isotropic Wilson SU(2) on the hypercubic lattice, every first-passage datum) and the periodic limit state are forced by the Sussman-Alpoge account; trace form, axis exchange, integer multiplicities, time shorter than the sides and a simple top are forced only by the present proof of the engine; slab shape, split, time direction, state space and place in the flow are choices of representation that do not change the seed number. Brainstorm of 19 ideas with fact tests: none is a NEW INPUT for the seed; each is an engine change, a change of measure with no node back to the account, or a reading of the same number; most are KNOWN to the lane (rows 858, 859, 876, 898). PROVED (hand, unchecked): Theorem 2O, a seed-to-gap engine with NO axis exchange (two seeds, one per orientation, max log-sum at most 1/1400, rate log(1/(1365 u))/a), with Lemmas K2, X2, E2o, D, D'; Lemma SHIFT for sheared tori; the projected doubling inequality and crossing identity (other momenta enter at second order, but the deficit step still needs the full sum, ARGUED). GUIDE: a kill test of the lemmas on the anisotropic 2D Ising model at six coupling pairs found no violation. Ranked, none moving the (SEED-FP) chain: 1. check Theorem 2O and write its four-direction form; 2. a proved gap strip at the target beta_t for small beta_s from the solved line beta_s = 0 (fact test: U(1) passes there too, correctly); 3. decide the projected engine. OPEN and unchanged: (LSI-J-seed), (SEED-FP), (UNIV-K), (EXIT), (JOIN-TH), (VAC-SUB); the four-direction form of Theorem 2O.

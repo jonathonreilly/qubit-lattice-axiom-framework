@@ -38,6 +38,9 @@ Status log (updated in place):
 - 12:06Z file created. Then, in order: Sections 1-2; Section 3 (STEP 1); Section 4 (STEP 2); Section 7a (criteria);
   first launch 12:32Z; amendment (A1); relaunch 12:34Z; Sections 5-6; Section 7 (7.1, 7.2).
 - 12:36Z: batch 1b running; batch 1c (dense counts, addition (A2)) queued behind it.
+- 12:41Z: batch 1b done (12:34:19Z-12:39:51Z); Section 7b written with its results; batch 1c running.
+- 12:45Z: batch 1c done (12:39:51Z-12:41:13Z); dense counts added to 7b; self-check corrections (four numbers or
+  wordings in Sections 1, 3, 4); Section 8 (verdicts) and the RESULT line written. Item finished.
 
 ## 1. Target, objects, duplicate check (READ; no new claim)
 
@@ -72,7 +75,7 @@ Corollary BR-J (row 947; HOLDS in check 949 per the queue row): (LSI-J-seed)_a g
   b alpha_J(b)/log b -> infinity gives (LSI-J-seed)_a for some a. In particular a box-uniform (LSI-J), with any
   positive constant, gives it. This is why a volume-uniform theorem of Piazza-Shen type is the right kind of input.
 - (T2) The free photon has alpha_J = c_min = beta (e^(omega_min) - 1), about 2 pi beta/b (row 954 Section 3). It fails
-  (T1) by the factor (24/pi)(C_beta + 3 log a), above 59 for every a (row 947 4.3).
+  (T1) by the factor (24/pi)(C_beta + 3 log a) b/(b - 48), above 200 for a >= 30 (row 947 4.3 has 59 for the rate form).
 
 **Duplicate check (rule 0a).** `grep -n -i -E "LSI-J|Piazza|disintegrat|two-scale|Otto|Reznikoff|log-sobolev|LSI"`:
 no hit in `library/open-core.md` and `library/l17c.md`; one unrelated hit in `library/open-registry.md` (line 276,
@@ -227,8 +230,8 @@ it above beta = 1.
   check 849). So the ceiling 4 G_3 is the failure of (PS-b) and (PS-e) for this disintegration. The time direction
   supplies one layer; the three space directions remain. J is not closer to 2D.
 - (d) The soft sense. In the variables (x, q), q_l = x_l^(-1) w_l, J is m(dx) prod_l w(q_l) dq_l times (dm/dw)(x q), with w
-  the single-plaquette weight of Piazza-Shen. Without the last factor the q_l are independent and the inequality
-  is immediate (one link, Holley-Stroock). In 1+1 dimensions V = 0 and Omega = 1, so the last factor is constant: there
+  the single-plaquette weight of Piazza-Shen. Without the last factor the q_l are independent of each other and of x, and their part of
+  the inequality is immediate (one link, Holley-Stroock). In 1+1 dimensions V = 0 and Omega = 1, so the last factor is constant: there
   J is a product law. In 3+1 dimensions the factor e^(-V(xq)) H(xq) couples all q_l, and it is the vacuum factor.
 
 **Answer to STEP 1.** The first step that fails is (3.1) of Piazza-Shen (3.1 above), at the first integrated
@@ -270,8 +273,8 @@ alpha_J -> 0 on a fixed box (row 954 Lemma GAP-R: R_J >= 1/(2 beta E_1) once E_1
 adaptation must degrade with beta. Piazza-Shen do: r -> 1, the block area grows like e^(2t), and C_(N,beta) >= c beta^(1/3)
 for SU(4) (their Section 7). Proposition EQ does: K = (1/2) e^(2 beta N_B). The box size enters through (T1): a
 box-uniform constant c(beta) gives (LSI-J-seed)_a only for a >= a_0(c). At beta 2.3 the seed inequality is false for
-small a (GUIDE): the local sector has R_J about 0.17 on boxes 8 to 12 (row 954 5c), so alpha_J <= 5.9, while
-2 beta K_a > 5.9 for a <= 22.
+small a (GUIDE): the local sector has R_J about 0.17 on boxes 8 to 12 (row 954 5c), so alpha_J <= 5.9 there, while
+  2 beta K_a > 5.9 for a <= 20 (K_20 = 1.39, K_22 = 1.26). This reads the cap of boxes 8 to 12 on to larger boxes.
 
 **FT-CEIL (which slots are sup forms, and their caps).**
 - (MACRO) by pointwise curvature on a separating skeleton: capped at beta < 1 in 4D (Lemma SEP; the same number as
@@ -287,7 +290,7 @@ conditionings. Every tool Piazza-Shen use for it is a supremum.
 **FT-CURV (what the curvature input of Piazza-Shen becomes; PROVED identity).** For one free plaquette,
 Laplacian of e^(beta t) on S^3 is e^(beta t) (beta^2 (1 - t^2) - 3 beta t), and its Haar integral is 0. So
 3 beta E_w[t] = beta^2 E_w[1 - t^2]: the mean-curvature term and the force variance cancel exactly. At beta 2.3 each
-is 3 x 2.3 x 0.60 = 4.2 (E_w t = I_2/I_1), twice the Ricci curvature. Piazza-Shen's macro Hessian is small only
+is 3 x 2.3 x 0.48 = 3.3 (E_w t = I_2/I_1 = 0.48 for one free plaquette), 1.7 times the Ricci curvature. Piazza-Shen's macro Hessian is small only
 through this cancellation, which needs the conditional law of each plaquette given the skeleton to be the free
 law w up to r^(n-2). In 4D on a separating skeleton the k = 4 skeleton plaquettes at a link are not averaged: the
 diagonal entry of the Hessian ranges over an interval of length 2 k beta = 18 to 21 in the window, against Ric = 2.
@@ -361,8 +364,8 @@ orbit, then Ent(F^2) <= (2/rho) E|grad F|^2 for every gauge-invariant F, under t
 Proof. The gauge group acts by isometries that preserve H, so the diffusion semigroup P_t of e^H commutes with it.
 For invariant f > 0, g_t = log P_t f is invariant and its gradient is horizontal. The Fisher information
 I(t) = E[P_t f |grad g_t|^2] has I'(t) = -2 E[P_t f Gamma_2(g_t)], and
-Gamma_2(g) = |Hess g|^2 + (Ric - Hess H)(grad g, grad g) >= rho |grad g|^2. So I(t) <= e^(-2 rho t) I(0), and the entropy is the
-time integral of I/2... (the standard conclusion Ent(f) <= I(0)/(2 rho)). QED
+Gamma_2(g) = |Hess g|^2 + (Ric - Hess H)(grad g, grad g) >= rho |grad g|^2. So I(t) <= e^(-2 rho t) I(0). The entropy of f is the
+integral of I(t) over t >= 0, so Ent(f) <= I(0)/(2 rho), which is the stated inequality for F = f^(1/2). QED
 It does not rescue the pointwise criterion (PROVED). At U = 1 except one link e with U_e = -1: grad H = 0, so
 Hess H(g, .) = 0 for every gauge direction g (differentiate <grad H, X_xi> = 0). For v on e, Hess H(v, v) = 6 beta |v|^2 in
 4D, and the horizontal part v_h of v has |v_h|^2 = (1 - (V - 1)/(4V)) |v|^2 (the gauge directions there are lattice
@@ -479,3 +482,460 @@ SMALL-BOX: rho and D depend on beta through H. Ceilings: at Lemma SEP's flipped 
 there, so D is not small in sup norm; the inequality can only hold through the Hessian term, that is through
 a Poincare-type bound for the one-form grad g near a defect. I did not prove it and I have no route to it. The
 GUIDE test says whether its first premise (a positive rho off a sparse set) is even plausible at block side 1.
+
+## 7b. The GUIDE test: results (batch 1b, 12:34:19Z-12:39:51Z; lock holder gap-ps-957; 73 percent memory free; one thread, nice)
+
+Script `/tmp/gap-ps-957/scripts/curv_guide.py` (full text at the end of this file), logs
+`/tmp/gap-ps-957/logs/curv_L{4,6}_b*.log`, not committed. Sanity (amended S3): S1 worst relative error 2.8e-6; S2 top
+eigenvalue 2.0e-14 at the flat configuration; S3 step-halving ratios 4.000 to 4.000: PASS. S4: mean plaquette on 6^4
+is 0.6023 at beta 2.3 and 0.6706 at 2.6 (expected 0.603, 0.671); on 4^4 it is 0.6107 and 0.6713 (a small-torus effect
+at 2.3). Peak memory 476 MB.
+
+lam_full, lam_hor = largest eigenvalue of Hess H on the whole tangent space and on the horizontal space. The
+curvature criterion needs lam_hor < Ric = 2.
+
+| L | beta | plaquette | lam_full mean (min, max) | lam_hor mean +- sd (min, max) | share of configurations with lam_hor > 2 | 24th horizontal eigenvalue (mean) | links in the top horizontal mode (participation) |
+|---|---|---|---|---|---|---|---|
+| 4 | 0.5 | 0.1239 | 3.86 (3.70, 4.14) | 3.79 +- 0.10 (3.60, 4.08) | 40 of 40 | 3.41 | 24 |
+| 4 | 1.0 | 0.2475 | 6.96 (6.61, 7.31) | 6.79 +- 0.16 (6.46, 7.17) | 40 of 40 | 5.99 | 24 |
+| 4 | 1.5 | 0.3666 | 9.43 (8.92, 10.64) | 9.16 +- 0.42 (8.58, 10.49) | 40 of 40 | 7.71 | 20 |
+| 4 | 2.0 | 0.5061 | 10.89 (10.00, 12.39) | 10.26 +- 0.58 (9.32, 12.07) | 40 of 40 | 7.87 | 23 |
+| 4 | 2.3 | 0.6107 | 10.79 (9.63, 12.06) | 8.98 +- 0.80 (7.29, 10.68) | 40 of 40 | 5.83 | 22 |
+| 4 | 2.6 | 0.6713 | 10.87 (9.46, 13.28) | 7.94 +- 1.08 (6.31, 10.54) | 40 of 40 | 4.51 | 39 |
+| 6 | 2.3 | 0.6023 | 11.94 (11.10, 13.37) | 10.79 +- 0.89 (9.86, 12.74) | 16 of 16 | 8.30 | 10 |
+| 6 | 2.6 | 0.6706 | 11.79 (10.40, 13.47) | 8.96 +- 0.84 (7.31, 10.38) | 16 of 16 | 6.35 | 17 |
+
+The count n_hor (eigenvalues above 2 among the top 24) saturated at 24 in every configuration, so it measures
+nothing. Addition (A2), made after seeing this and before its own numbers: batch 1c diagonalises the full
+matrices on 4^4 and counts all eigenvalues above 2. The verdict rules are unchanged and do not depend on it.
+
+**Verdict by the rules written before the run. TYP-CURV FAILS (GUIDE) at every coupling tested, 0.5 to 2.6, on both
+lattice sizes, in every configuration.** The smallest margin seen is 2 - 3.60 = -1.6 (beta 0.5). In the window the
+largest horizontal eigenvalue of Hess H is 9 to 11 at beta 2.3 and 8 to 9 at 2.6, against Ric = 2: the criterion
+fails by a factor 4 to 5 at typical configurations, not only at Lemma SEP's rare ones.
+Readings (GUIDE).
+- (a) My expectation was wrong. I expected the negative diagonal (the pinning of each link by its staples) to
+  dominate. It does not: the off-diagonal part of the Hessian at a rough field is of size about 4 beta.
+- (b) lam_hor/beta falls with beta (7.6, 6.8, 6.1, 5.1, 3.9, 3.1 on 4^4). At small beta the configuration is nearly
+  Haar-random and lam_hor is about 7.6 beta, so the typical criterion can hold only below beta about 2/7.6 = 0.26.
+  This is the pointwise horizontal threshold 1/4 of Proposition HBE's counterexample again: for this action
+  "typical" and "worst case" give the same range. The run at beta 0.25 in batch 1c tests this.
+- (c) The top modes sit on 10 to 40 links and the 24th eigenvalue is still far above 2, also on 6^4, where
+  lam_hor is larger than on 4^4 (10.8 against 9.0 at beta 2.3). So the violating modes are local and many.
+- (d) Consequence for the method. The Hessian that Piazza-Shen's absorber meets is small only AFTER block
+  integration (FT-CURV). At block side 1 nothing is integrated, and the curvature of SU(2) is too small by a
+  factor 4 to 5 on average. So no averaged form of the curvature step exists without a block integration that
+  makes the macro action nearly flat, which is (O3). And (DEF-ABS) of 7.2 has no support at block side 1: its
+  defect field D would have to be at least lam_hor - 2, about 7 to 9, on a positive share of the modes, not on a
+  sparse set.
+Limits. Block side 1 only: the macro Hessian of a block-integrated law was not measured (it needs conditional
+expectations inside blocks, a Monte Carlo inside a Monte Carlo). Lattices 4^4 and 6^4 only. A largest eigenvalue
+above 2 refutes a sufficient criterion, never the inequality: (LSI-J-seed) is untouched by this run.
+
+**7b, addition (A2): dense counts on 4^4 (batch 1c, 12:39:51Z-12:41:13Z; lock holder gap-ps-957c; 73 percent memory
+free; peak memory 547 MB; 3 configurations per coupling, 20 sweeps apart; script `curv_dense.py` below; logs
+`/tmp/gap-ps-957/logs/dense_L4_b*.log`).** All eigenvalues of Hess H on the horizontal space (dimension 2304 = 9 per
+site; the 768 gauge directions are projected out and appear as exact zeros, counted 768 in every case).
+
+| beta | largest horizontal eigenvalue (3 configurations, mean) | horizontal eigenvalues above 2 (mean) | share of the 2304 | per site | horizontal eigenvalues above 0 (mean) |
+|---|---|---|---|---|---|
+| 0.25 | 1.955 (1.946, 1.956, 1.963) | 0 | 0 | 0 | 1058 |
+| 0.5 | 3.77 | 333 | 14.4 percent | 1.30 | 966 |
+| 1.0 | 6.68 | 468 | 20.3 percent | 1.83 | 779 |
+| 1.5 | 9.18 | 409 | 17.8 percent | 1.60 | 607 |
+| 2.0 | 9.80 | 255 | 11.1 percent | 0.99 | 387 |
+| 2.3 | 8.47 | 120 | 5.2 percent | 0.47 | 210 |
+| 2.6 | 8.47 | 83 | 3.6 percent | 0.33 | 154 |
+
+Readings (GUIDE). (e) At beta 0.25 the criterion holds in the three configurations, with margin 0.04 to 0.05:
+the typical threshold on 4^4 is beta about 0.25, as reading (b) predicted from lam_hor about 7.8 beta, and it is the
+pointwise horizontal threshold 1/4 of 5.2. (f) In the window the violating modes are not sparse: one mode above
+Ric = 2 for every two sites at beta 2.3 and for every three sites at 2.6. (g) Most directions are on the good
+side: at beta 2.3 about 91 percent of the horizontal modes have a negative eigenvalue (H concave along them), and
+this share grows with beta. So the picture at block side 1 is: a field that is curvature-convex in nine
+directions out of ten, with a dense set of local unstable directions of strength 2 to 10. I did not identify
+these modes with a field-theory object; by Lemma HESS they come from the commutator part and from negative
+plaquettes.
+
+## 8. Verdicts (written 12:45Z)
+
+Reading order: Sections 1 to 4, then 5, 6, 7 (7.1, 7.2), then 7a, 7b. Sections 7a and 7b sit where they were
+written.
+
+| Statement | Label |
+|---|---|
+| 3.1: one integrated link gives 1 + (beta^2/8)[k + 2 sum t(a_i a_j^(-1))] + O(beta^3); identity (3.1) of Piazza-Shen fails at the first integrated link for d >= 3 (15 six-link loops in 4D) | PROVED (hand) |
+| Lemma SEP: the curvature step for a skeleton marginal fails when beta (k - k') >= 2; cubic skeleton in 4D: beta >= 1 inside a face, beta >= 1/3 where two faces meet | PROVED (hand); cubic blocks only |
+| Lemma FOREST: the marginal of a loop-free set of links is product Haar; the scheme is then circular | PROVED (Elitzur's argument); circularity is a reading |
+| Proposition EQ: with bounded blocks, C-bar <= C(mu) <= max(2 C-bar, K + 8 C-bar K kappa^2 n') in every dimension | PROVED given Holley-Stroock and the Haar inequality (RECALLED) and the proof of PS Sections 5-6 (ported; read in full, not rebuilt line by line) |
+| Lemma MARG: a slab inequality with alpha_4 gives (LSI-J) with alpha_J >= alpha_4/7 | PROVED (hand) given the transfer-matrix limit (RECALLED) |
+| Proposition SIGMA: the temporal links given the two slices are an S^3 spin model on the 3D box; at flat slices the 3D O(4) model at beta; this is the ceiling 4 G_3; in 1+1 dimensions it is the chain of Piazza-Shen | identity PROVED; the order above 4 G_3 RECALLED (Frohlich-Simon-Spencer; row 839) |
+| Lemma BLK: block conditional laws of the slab law and of J have C_D <= (1/2) e^(2 beta N_D), uniformly | PROVED given Holley-Stroock and the Haar inequality (RECALLED) |
+| Proposition HBE: a horizontal curvature bound gives the inequality for invariant functions; the bound fails pointwise for beta >= 1/4 | PROVED given the Bakry-Emery argument (RECALLED); the counterexample PROVED (hand) |
+| Theorem TS-J: (MAC)_(m,a) gives (LSI-J-seed)_a | PROVED implication; by Proposition EQ it is equivalent to the target up to constants and reduces nothing |
+| Lemma HESS: curl part, commutator part, variance part of the macro Hessian | PROVED identity (PS (4.1)-(4.2) with psi = t) |
+| FT-CURV: 3 beta E_w t = beta^2 E_w(1 - t^2) for a free plaquette | PROVED (hand) |
+| FT-U1 (iii), FT-FROZEN, FT-SMALLBOX, FT-CEIL | CONDITIONAL on the recalled facts named in Section 4 |
+| (DEF-ABS) gives the inequality for invariant functions with constant rho/2 | PROVED implication; (DEF-ABS) OPEN, and without support at block side 1 (7b) |
+| Curvature at typical configurations: lam_hor(Hess H) is 9 to 11 at beta 2.3 and 8 to 9 at beta 2.6 (4^4, 6^4), above Ric = 2 in every configuration for beta >= 0.5; below 2 only near beta 0.25; one violating mode per 2 to 3 sites in the window | GUIDE |
+| A theorem of Piazza-Shen type in 4D ((4D-LSI), or (MAC)); (LSI-J-seed); (HC-vac); the seed | OPEN. Not proved. No smaller inequality was found |
+
+**Answers to the three steps of the row.**
+- STEP 1. The first failing step is identity (3.1) of Piazza-Shen, at the first integrated link (a link lies in
+  2(d - 1) plaquettes). The second, independent failure is that a separating skeleton carries plaquettes (Lemma
+  SEP). J is not closer to the 2D setting: it is a marginal of the 4D law (Lemma MARG); over one slice it is the
+  older route; over the temporal links it is a 3D spin system where Piazza-Shen have a chain (Proposition SIGMA).
+- STEP 2. The soft parts ((PS-e), (PS-f), Lemma BLK) pass no test: they hold for U(1) too. The block step must fail
+  for U(1) and for the frozen groups, so it must use the non-abelian connected group, where Piazza-Shen use a
+  Doeblin bound. The curvature absorber is capped at beta = 1 (1/4 horizontally) pointwise, and it fails at
+  typical configurations by a factor 4 to 5 in the window (GUIDE). The open slot must be one inequality for one
+  law; every tool of the method is a supremum.
+- STEP 3. The adaptation is written as far as it is true: Theorem TS-J, with curvature at the block scale in
+  Lemma BLK. It does not close. Exact obstruction: (O1)-(O4) of Section 6. Smallest unproved inequality:
+  (LSI-J-seed)_a itself, equivalently (MAC)_(m,a); first instance gam_J >= 2 beta K_a (Section 7.1). One GUIDE test:
+  Sections 7a, 7b.
+
+**What this row did not do.** It did not prove or refute (LSI-J-seed). It did not measure the Hessian of a
+block-integrated law. It did not rebuild Holley-Stroock, the Bakry-Emery criterion, Rothaus' lemma, the
+transfer-matrix limit or the Frohlich-Simon-Spencer bound; each is marked RECALLED where used. Nothing here was
+checked by another model.
+
+**Credit.** Piazza and Shen (arXiv:2610.35286) for the theorem and every step labelled (PS-a) to (PS-g), and for
+Lemmas 4.1 and 6.1, which Lemma HESS and Proposition EQ port. Otto-Reznikoff, Grunewald-Otto-Villani-Westdickenberg
+and Bauerschmidt-Bodineau for the two-scale criterion, as cited by them. Ethan Sussman and Levent Alpoge (with
+Claude and Codex as authors of their text) for the transfer and slice setting on which the two-slice law rests.
+Rows 931, 941, 947 (the target and its chain), 839 (TB2), 954 (R_J values, Lemma GAP-R) of this lane.
+
+**Files.** This note. Scratch, not committed: `/tmp/gap-ps-957/` (the PDF and its text, scripts, logs).
+
+### Scripts (GUIDE only)
+
+`curv_guide.py` (run as `python3 -I curv_guide.py --sanity`, then `--L 4 --beta 2.3 --ncfg 40 --seed 11`, or
+`--L 6 --beta 2.3 --ncfg 16 --seed 12`; about 0.25 s per configuration on 4^4 and 6 to 8 s on 6^4):
+
+```python
+#!/usr/bin/env python3
+# GUIDE test for library/gap-ps-disint-max.md Section 7a (row 957): largest eigenvalues of Hess H, H = beta sum_p t_p,
+# on the full and on the horizontal tangent space, at heat-bath configurations of periodic 4D SU(2) Wilson.
+# Refutes or guides only. Criteria are in the note (written before the run).
+import sys, time, argparse, resource
+import numpy as np
+import scipy.sparse as sp
+import scipy.sparse.linalg as spl
+import scipy.linalg as sl
+
+E = np.eye(4)
+
+def qmul(a, b):
+    a0, a1, a2, a3 = a[..., 0], a[..., 1], a[..., 2], a[..., 3]
+    b0, b1, b2, b3 = b[..., 0], b[..., 1], b[..., 2], b[..., 3]
+    return np.stack([a0*b0 - a1*b1 - a2*b2 - a3*b3,
+                     a0*b1 + a1*b0 + a2*b3 - a3*b2,
+                     a0*b2 - a1*b3 + a2*b0 + a3*b1,
+                     a0*b3 + a1*b2 - a2*b1 + a3*b0], axis=-1)
+
+CJ = np.array([1.0, -1.0, -1.0, -1.0])
+def qconj(a):
+    return a * CJ
+
+def staples(U, mu):
+    S = np.zeros_like(U[mu])
+    for nu in range(4):
+        if nu == mu:
+            continue
+        Unu_xpmu = np.roll(U[nu], -1, axis=mu)
+        Umu_xpnu = np.roll(U[mu], -1, axis=nu)
+        S += qmul(qmul(Unu_xpmu, qconj(Umu_xpnu)), qconj(U[nu]))
+        Unu_xm = np.roll(U[nu], 1, axis=nu)
+        Umu_xm = np.roll(U[mu], 1, axis=nu)
+        Unu_xpmu_m = np.roll(Unu_xm, -1, axis=mu)
+        S += qmul(qmul(qconj(Unu_xpmu_m), qconj(Umu_xm)), Unu_xm)
+    return S
+
+def sweep(U, beta, rng, pmask):
+    for mu in range(4):
+        for par in (0, 1):
+            S = staples(U, mu)
+            m = pmask[par]
+            Sm = S[m]
+            k = np.sqrt((Sm**2).sum(-1))
+            a = beta * k
+            n = a.shape[0]
+            x0 = np.empty(n)
+            todo = np.ones(n, dtype=bool)
+            for it in range(2000):
+                idx = np.nonzero(todo)[0]
+                if idx.size == 0:
+                    break
+                ai = np.maximum(a[idx], 1e-9)
+                r = rng.random(idx.size)
+                xi = 1.0 + np.log(r + (1.0 - r) * np.exp(-2.0 * ai)) / ai
+                xi = np.where(a[idx] < 1e-6, 2.0 * r - 1.0, xi)
+                xi = np.clip(xi, -1.0, 1.0)
+                acc = rng.random(idx.size) < np.sqrt(1.0 - xi * xi)
+                x0[idx[acc]] = xi[acc]
+                todo[idx[acc]] = False
+            if todo.any():
+                raise RuntimeError("sampler did not finish")
+            v = rng.normal(size=(n, 3))
+            v /= np.linalg.norm(v, axis=1)[:, None]
+            s = np.sqrt(1.0 - x0 * x0)
+            X = np.concatenate([x0[:, None], s[:, None] * v], axis=1)
+            Vq = np.where(k[:, None] > 1e-12, Sm / np.maximum(k, 1e-300)[:, None], E[0])
+            U[mu][m] = qmul(X, qconj(Vq))
+
+def plaq_fields(U):
+    out = []
+    for mu in range(4):
+        for nu in range(mu + 1, 4):
+            U2 = np.roll(U[nu], -1, axis=mu)
+            U3 = np.roll(U[mu], -1, axis=nu)
+            W = qmul(qmul(qmul(U[mu], U2), qconj(U3)), qconj(U[nu]))
+            out.append(W[..., 0])
+    return out
+
+def action(U, beta):
+    return beta * sum(t.sum() for t in plaq_fields(U))
+
+def hessian(U, beta):
+    L = U.shape[1]
+    V = L**4
+    site = np.arange(V).reshape(L, L, L, L)
+    rows, cols, vals = [], [], []
+    diag = np.zeros(12 * V)
+    one = np.zeros((V, 4)); one[:, 0] = 1.0
+    sg = [1.0, 1.0, -1.0, -1.0]
+    for mu in range(4):
+        for nu in range(mu + 1, 4):
+            U1 = U[mu].reshape(V, 4)
+            U2 = np.roll(U[nu], -1, axis=mu).reshape(V, 4)
+            U3 = np.roll(U[mu], -1, axis=nu).reshape(V, 4)
+            U4 = U[nu].reshape(V, 4)
+            links = [mu * V + site.reshape(V),
+                     nu * V + np.roll(site, -1, axis=mu).reshape(V),
+                     mu * V + np.roll(site, -1, axis=nu).reshape(V),
+                     nu * V + site.reshape(V)]
+            U3c = qconj(U3); U4c = qconj(U4)
+            P2 = qmul(U1, U2)
+            Ps = [U1, P2, P2, qmul(P2, U3c)]
+            S3 = qmul(U3c, U4c)
+            Ss = [qmul(U2, S3), S3, S3, U4c]
+            t = qmul(Ps[3], U4c)[:, 0]
+            Mid = {(0, 1): U2, (0, 2): U2, (0, 3): qmul(U2, U3c), (1, 2): one, (1, 3): U3c, (2, 3): U3c}
+            for i in range(4):
+                for a in range(3):
+                    np.add.at(diag, 3 * links[i] + a, -beta * t)
+            for (i, j), M in Mid.items():
+                for a in range(3):
+                    A = qmul(qmul(Ps[i], E[a + 1]), M)
+                    for b in range(3):
+                        val = beta * sg[i] * sg[j] * qmul(A, qmul(E[b + 1], Ss[j]))[:, 0]
+                        rows.append(3 * links[i] + a); cols.append(3 * links[j] + b); vals.append(val)
+                        rows.append(3 * links[j] + b); cols.append(3 * links[i] + a); vals.append(val)
+    n = 12 * V
+    H = sp.coo_matrix((np.concatenate(vals), (np.concatenate(rows), np.concatenate(cols))), shape=(n, n)).tocsr()
+    return H + sp.diags(diag), diag
+
+def gauge_matrix(U):
+    L = U.shape[1]
+    V = L**4
+    site = np.arange(V).reshape(L, L, L, L)
+    rows, cols, vals = [], [], []
+    for mu in range(4):
+        Ul = U[mu].reshape(V, 4)
+        Ulc = qconj(Ul)
+        l = mu * V + site.reshape(V)
+        s0 = site.reshape(V)
+        s1 = np.roll(site, -1, axis=mu).reshape(V)
+        for a in range(3):
+            R = qmul(qmul(Ulc, E[a + 1]), Ul)
+            for b in range(3):
+                rows.append(3 * l + b); cols.append(3 * s0 + a); vals.append(R[:, b + 1])
+            rows.append(3 * l + a); cols.append(3 * s1 + a); vals.append(-np.ones(V))
+    return sp.coo_matrix((np.concatenate(vals), (np.concatenate(rows), np.concatenate(cols))), shape=(12 * V, 3 * V)).tocsr()
+
+def move(U, xi, tau):
+    # U_l exp(tau xi_l); xi shape (4, L,L,L,L, 3)
+    nrm = np.sqrt((xi**2).sum(-1))
+    ang = tau * nrm
+    unit = xi / np.maximum(nrm, 1e-300)[..., None]
+    ex = np.concatenate([np.cos(ang)[..., None], np.sin(ang)[..., None] * unit], axis=-1)
+    return qmul(U, ex)
+
+def xi_from_vec(v, L):
+    return v.reshape(4, L, L, L, L, 3)
+
+def hot(L, rng):
+    U = rng.normal(size=(4, L, L, L, L, 4))
+    U /= np.sqrt((U**2).sum(-1))[..., None]
+    return U
+
+def sanity(rng):
+    L = 2; beta = 2.3
+    ok = True
+    U = hot(L, rng)
+    pm = parity(L)
+    for _ in range(20):
+        sweep(U, beta, rng, pm)
+    Hs, _ = hessian(U, beta)
+    n = Hs.shape[0]
+    worst = 0.0
+    for _ in range(6):
+        v = rng.normal(size=n)
+        xi = xi_from_vec(v, L)
+        tau = 1e-3
+        fd = (action(move(U, xi, tau), beta) - 2 * action(U, beta) + action(move(U, xi, -tau), beta)) / tau**2
+        ex = v @ (Hs @ v)
+        worst = max(worst, abs(fd - ex) / max(1.0, abs(ex)))
+    print("S1 hessian vs second difference, worst relative error: %.2e" % worst)
+    ok &= worst < 1e-4
+    Uf = np.zeros((4, L, L, L, L, 4)); Uf[..., 0] = 1.0
+    Hf, _ = hessian(Uf, beta)
+    top = np.linalg.eigvalsh(Hf.toarray())[-1]
+    print("S2 flat configuration, top eigenvalue of Hess H: %.2e" % top)
+    ok &= abs(top) < 1e-8 * beta
+    G = gauge_matrix(U)
+    worst = 0.0; ratios = []
+    for _ in range(6):
+        c = rng.normal(size=G.shape[1])
+        xi = xi_from_vec(G @ c, L)
+        d = []
+        for tau in (2e-3, 1e-3, 5e-4):
+            d.append((action(move(U, xi, tau), beta) - action(move(U, xi, -tau), beta)) / (2 * tau) / np.linalg.norm(c))
+        worst = max(worst, abs(d[2]))
+        ratios.append((d[0] / d[1], d[1] / d[2]))
+    rr = np.array(ratios)
+    print("S3 (amended A1) first derivative of H along gauge directions at tau=5e-4, worst: %.2e; step-halving ratios min %.3f max %.3f (4 = pure truncation)" % (worst, rr.min(), rr.max()))
+    ok &= (worst < 1e-4) and (rr.min() > 3.6) and (rr.max() < 4.4)
+    # horizontal check: Hess restricted to gauge directions at the hot configuration equals -<grad H, accel>; not tested
+    return ok
+
+def parity(L):
+    g = np.indices((L, L, L, L)).sum(0) % 2
+    return [g == 0, g == 1]
+
+def analyse(U, beta, K):
+    L = U.shape[1]
+    Hs, diag = hessian(U, beta)
+    n = Hs.shape[0]
+    wf = spl.eigsh(Hs, k=K, which='LA', return_eigenvectors=False, tol=1e-7, maxiter=20000)
+    wf = np.sort(wf)[::-1]
+    G = gauge_matrix(U)
+    GtG = (G.T @ G).toarray()
+    GtG[np.diag_indices_from(GtG)] += 1e-10
+    cho = sl.cho_factor(GtG)
+    def Ph(v):
+        return v - G @ sl.cho_solve(cho, G.T @ v)
+    c = 12.0 * beta
+    def mv(v):
+        v = np.asarray(v).ravel()
+        w = Ph(v)
+        return Ph(Hs @ w) + c * w
+    op = spl.LinearOperator((n, n), matvec=mv, dtype=float)
+    wh, vh = spl.eigsh(op, k=K, which='LA', tol=1e-7, maxiter=20000)
+    order = np.argsort(wh)[::-1]
+    wh = wh[order] - c
+    v0 = Ph(vh[:, order[0]])
+    wl = (v0.reshape(-1, 3)**2).sum(1)
+    wl /= wl.sum()
+    pr = 1.0 / (wl**2).sum()
+    return wf, wh, pr, diag.max()
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--L', type=int, default=4)
+    ap.add_argument('--beta', type=float, default=2.3)
+    ap.add_argument('--ncfg', type=int, default=40)
+    ap.add_argument('--therm', type=int, default=300)
+    ap.add_argument('--sep', type=int, default=10)
+    ap.add_argument('--K', type=int, default=24)
+    ap.add_argument('--seed', type=int, default=1)
+    ap.add_argument('--sanity', action='store_true')
+    a = ap.parse_args()
+    rng = np.random.default_rng(a.seed)
+    if a.sanity:
+        ok = sanity(rng)
+        print("SANITY", "PASS" if ok else "FAIL")
+        sys.exit(0 if ok else 3)
+    L, beta = a.L, a.beta
+    V = L**4
+    U = hot(L, rng)
+    pm = parity(L)
+    t0 = time.time()
+    for _ in range(a.therm):
+        sweep(U, beta, rng, pm)
+    print("# L=%d beta=%.2f therm=%d (%.1f s) ncfg=%d sep=%d K=%d seed=%d" % (L, beta, a.therm, time.time() - t0, a.ncfg, a.sep, a.K, a.seed), flush=True)
+    print("# cfg plaq lam_full[0..2] n_full(>2) lam_hor[0..2] n_hor(>2) n_hor(>1) n_hor(>0) PR_links maxdiag secs")
+    rec = []
+    for cfg in range(a.ncfg):
+        for _ in range(a.sep):
+            sweep(U, beta, rng, pm)
+        t1 = time.time()
+        pl = np.mean([t.mean() for t in plaq_fields(U)])
+        wf, wh, pr, md = analyse(U, beta, a.K)
+        rec.append((pl, wf[0], (wf > 2).sum(), wh[0], (wh > 2).sum(), (wh > 1).sum(), (wh > 0).sum(), pr, md, wh[-1]))
+        print("%3d %.4f  %.3f %.3f %.3f  %2d   %.3f %.3f %.3f  %2d %2d %2d  %7.1f  %.3f  %.1f" % (
+            cfg, pl, wf[0], wf[1], wf[2], (wf > 2).sum(), wh[0], wh[1], wh[2], (wh > 2).sum(), (wh > 1).sum(), (wh > 0).sum(), pr, md, time.time() - t1), flush=True)
+        if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss > 2 * 1024**3:
+            print("RSS above 2 GB, stop"); sys.exit(4)
+    r = np.array(rec, dtype=float)
+    nc = r.shape[0]
+    print("SUMMARY L=%d beta=%.2f ncfg=%d plaq=%.4f" % (L, beta, nc, r[:, 0].mean()))
+    print("  lam_full: mean %.3f sd %.3f min %.3f max %.3f; mean n_full(>2) %.2f" % (r[:, 1].mean(), r[:, 1].std(), r[:, 1].min(), r[:, 1].max(), r[:, 2].mean()))
+    print("  lam_hor : mean %.3f sd %.3f min %.3f max %.3f; frac(lam_hor>2) %.3f; mean n_hor(>2) %.2f (per site %.5f); mean n_hor(>1) %.2f; mean n_hor(>0) %.2f; K-th hor eig mean %.3f" % (
+        r[:, 3].mean(), r[:, 3].std(), r[:, 3].min(), r[:, 3].max(), (r[:, 3] > 2).mean(), r[:, 4].mean(), r[:, 4].mean() / V, r[:, 5].mean(), r[:, 6].mean(), r[:, 9].mean()))
+    print("  PR(top hor vector, links): mean %.1f of %d links; max diagonal entry mean %.3f max %.3f" % (r[:, 7].mean(), 4 * V, r[:, 8].mean(), r[:, 8].max()))
+    print("  peak RSS MB %.0f" % (resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024**2))
+    print("DONE")
+
+if __name__ == '__main__':
+    main()
+```
+
+`curv_dense.py` (run as `python3 -I curv_dense.py <path to curv_guide.py> <beta> 3 21`; about 3.5 s per configuration):
+
+```python
+#!/usr/bin/env python3
+# GUIDE, row 957, addition (A2): full count of eigenvalues of Hess H above thresholds, by dense diagonalisation, L = 4.
+# Loads the functions of curv_guide.py by exec (python3 -I has no script folder on sys.path).
+import sys, time, resource
+import numpy as np
+import scipy.linalg as sl
+path, beta, ncfg, seed = sys.argv[1], float(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ns = {'__name__': 'curv_guide_lib'}
+exec(compile(open(path).read(), path, 'exec'), ns)
+L = 4; V = L**4
+rng = np.random.default_rng(seed)
+U = ns['hot'](L, rng); pm = ns['parity'](L)
+for _ in range(300):
+    ns['sweep'](U, beta, rng, pm)
+print("# dense count L=4 beta=%.2f; horizontal dimension %d, full dimension %d" % (beta, 9 * V, 12 * V))
+print("# cfg plaq | full: top, n(>2), n(>1), n(>0) | horizontal: top, n(>2), n(>1), n(>0), n(<0), zeros | secs")
+acc = []
+for cfg in range(ncfg):
+    for _ in range(20):
+        ns['sweep'](U, beta, rng, pm)
+    t1 = time.time()
+    pl = np.mean([t.mean() for t in ns['plaq_fields'](U)])
+    Hs, _ = ns['hessian'](U, beta)
+    A = Hs.toarray()
+    wf = np.linalg.eigvalsh(A)
+    G = ns['gauge_matrix'](U).toarray()
+    GtG = G.T @ G
+    P = np.eye(12 * V) - G @ sl.solve(GtG, G.T, assume_a='pos')
+    Ah = P @ A @ P
+    Ah = 0.5 * (Ah + Ah.T)
+    wh = np.linalg.eigvalsh(Ah)
+    z = int((np.abs(wh) <= 1e-6).sum())
+    row = (pl, wf[-1], int((wf > 2).sum()), int((wf > 1).sum()), int((wf > 0).sum()),
+           wh[-1], int((wh > 2).sum()), int((wh > 1).sum()), int((wh > 1e-6).sum()), int((wh < -1e-6).sum()), z)
+    acc.append(row)
+    print("%2d %.4f | %.3f %4d %4d %4d | %.3f %4d %4d %4d %4d %4d | %.1f" % ((cfg,) + row + (time.time() - t1,)), flush=True)
+a = np.array(acc, dtype=float)
+print("SUMMARY-DENSE L=4 beta=%.2f ncfg=%d: horizontal top %.3f; n_hor(>2) mean %.1f = %.4f of %d horizontal modes = %.4f per site; n_hor(>0) mean %.1f; full n(>2) mean %.1f; min horizontal eigenvalue not recorded; peak RSS MB %.0f" % (
+    beta, ncfg, a[:, 5].mean(), a[:, 6].mean(), a[:, 6].mean() / (9 * V), 9 * V, a[:, 6].mean() / V, a[:, 8].mean(), a[:, 2].mean(),
+    resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024**2))
+print("DONE")
+```
+
+RESULT: Row 957 (Claude Fable 5.2 max, author, checked by no one): the Piazza-Shen adaptation does NOT close; (LSI-J-seed) stays OPEN and no smaller inequality was found. PROVED (hand, unchecked): identity (3.1) of Piazza-Shen fails at the first integrated link for d >= 3 (15 six-link loops in 4D); Lemma SEP (a separating skeleton carries plaquettes, so their curvature step is dead for beta >= 1 in 4D, and for beta >= 1/4 in the horizontal form); Lemma FOREST; Proposition EQ (with bounded blocks the two-scale step is an equivalence in every dimension, so it only moves the problem to the skeleton law); Lemma MARG ((LSI-J) follows from a 4D slab inequality with factor 7; J is a marginal, not closer to 2D); Proposition SIGMA (the temporal-link disintegration of J is a 3D O(4)-type spin model, which is the 4 G_3 ceiling, where Piazza-Shen have a chain); Lemma BLK and Theorem TS-J (the adaptation as far as it is true; it reduces nothing). GUIDE: the curvature absorber fails at typical configurations too (largest horizontal eigenvalue of Hess H 9 to 11 at beta 2.3 and 8 to 9 at 2.6 against Ric = 2, on 4^4 and 6^4; it holds only near beta 0.25). OPEN: a 4D theorem of Piazza-Shen type, i.e. the macro inequality as one statement for one law ((MAC), equivalent to the target); (DEF-ABS); (LSI-J-seed); the seed.

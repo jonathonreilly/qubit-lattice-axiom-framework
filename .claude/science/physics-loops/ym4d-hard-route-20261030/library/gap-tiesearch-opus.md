@@ -219,3 +219,7 @@ errors of about 20 percent); all go to the sweep as planned in 4.3 and 4.5.
 - L = 8 (3000 + 24000): u_xy 2.53 +- 0.15 (row 950: 2.51); z-twist pi/4 colour 3 2.36 +- 0.21 [2.20]; z-twist pi/2 colour 3 2.49 +- 0.25
   [1.89]. Block errors 6 to 10 percent; the two chains of u_xy at L = 8 (screen 2.66 +- 0.20, this 2.53) agree.
 
+- L = 16 (3000 + 12000): u_xy 2.88 +- 0.16; z-twist pi/4 colour 3 2.78 +- 0.25 [2.58]; z-twist pi/2 colour 3 2.46 +- 0.32 [2.44].
+  Interim g (16 vs 8): u_xy 1.033 +- 0.030 (g + 2 sigma 1.09); z-twist pi/4 1.042 +- 0.047 (1.14); z-twist pi/2 0.997 +- 0.057 (1.11).
+  All below 1.25 with 2 sigma, pending K3 (u_xy hot at L = 16) and L = 12.
+

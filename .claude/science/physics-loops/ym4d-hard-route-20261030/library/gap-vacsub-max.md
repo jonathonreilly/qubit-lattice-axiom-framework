@@ -28,7 +28,7 @@ Labels used below: PROVED, CONDITIONAL (on named inputs), GUIDE (a run or a heur
 ## Log
 
 - 2026-11-14T04:50Z: file created. No earlier run of this item exists at the pinned commit.
-- 2026-11-14T05:20Z: sources read in full: `library/gap-target-max.md` (row 913), `library/gap-target-check-astra.md`
+- 2026-11-14T05:00Z: sources read in full: `library/gap-target-max.md` (row 913), `library/gap-target-check-astra.md`
   (check 914). Read in part, where 913 cites them: `library/gap-mid-max.md` L98-197 (row 708: Lemma 4.1, Lemma 4.2,
   Theorem TR, Remarks CH and LEV, Corollary TR1, (DEF_K), (VIR-log)); `library/gap-vir-sc.md` L67-80 (row 710, Theorem U).
 - Duplicate check (rule 0a). `grep -i -E "VAC-SUB|vacuum.subtract|SUPER-D|DEF_K|VIR-log|LEV_K|KF-LEV" library/open-core.md`:
@@ -148,8 +148,9 @@ Proof. (M_s U_s g)(q) = exp(-(s/2)<q, Om q>) s^(d/4) g(s^(1/2) q) = (U_s M_1 g)(
 gives (Ghat_s U_s g)(q) = s^(d/4) (Ghat_1 g)(s^(1/2) q) = (U_s Ghat_1 g)(q). Powers and products follow. QED
 
 This is the transfer operator of the lattice action (s/2) sum over tau of (|q_(tau+1) - q_tau|^2 + <q_tau, Om q_tau>):
-the rescaling q -> s^(-1/2) q removes s. The free photon on B is the case q in R^E, <q, Om q> = |curl q|^2, on
-gauge-invariant functions (U_s commutes with the gauge shifts up to rescaling them). The identity w_i = n_i is the
+the rescaling q -> s^(-1/2) q removes s. The free photon on B is the case <q, Om q> = |curl q|^2 on the quotient
+of R^E by the gauge shifts (U_s maps gauge-invariant functions to gauge-invariant functions). The constant modes have
+Om = 0 and give continuous spectrum; the statement covers them, because it is a unitary equivalence. The identity w_i = n_i is the
 virial theorem of the oscillator, level by level. So for the free photon (VAC-SUB)_K holds with K = 0, for every
 box, with Rem_m = 0.
 
@@ -348,7 +349,10 @@ each level. Subtracting gives a relation between vacuum-subtracted quantities of
 w_i - w_0 = (1/6)(<d>_i - <d>_0); for (V), the same with the squared force. Row 913, 6.5, found this for (F4). It is
 general: a commutator identity cannot produce the sign.
 
-### 4.3 Proposition NOGO (the inputs of the row are shared with compact U(1)). PROVED GIVEN the inputs of 2.2 (a)
+### 4.3 Proposition NOGO (the inputs of the row are shared with compact U(1))
+
+Standing: that each input holds for U(1) is PROVED (item by item below). The conclusion is a transfer argument,
+GIVEN the inputs of 2.2 (a).
 
 Each of the following holds for compact U(1) with the Wilson weight exp(s cos), with the constant shown:
 - Lemma HF (the same proof; eps_n = log(I_0/I_n), n the absolute charge).
@@ -402,9 +406,10 @@ Where it stands among the forms. (VS-1) is the case m = 1 of (VAC-SUB)_K with K 
 913's remark 3c.3 (iii) made into a statement. It is not implied by (VAC-SUB) with (B), which lets K grow like log b,
 and it does not imply the thermal seed, which also needs a count of the levels. It is the smallest statement I can
 write that still contains the whole difficulty: one level, one box, one inequality, a constant uniform in the box.
-Fact tests: it fails for compact U(1) (in the Coulomb phase D_1 is of order 1/b, against the lower bound of
-Proposition ODE), for the weights of Proposition V (Lemma BLOW with 3.2), and for Q_8 and 2T if beta_fr is bounded
-in b (3.3 (c), GUIDE).
+Fact tests: it must fail for compact U(1) in the Coulomb phase, where the cubes have no uniform gap (GUIDE for the
+size 1/b of D_1; the theorem behind it is the one recalled in 2.2 (a)); it fails for the weights of Proposition V if
+their cubes lose the uniform gap at beta_t (the two-phase picture of 3.2 (b), GUIDE); and for Q_8 and 2T if beta_fr is
+bounded in b (3.3 (c), GUIDE). For each fixed cube it fails for Q_8 and 2T as beta grows (Proposition FR, PROVED).
 
 ### 5.2 Proposition N (the O(N) model at N = infinity on a ring: the lemma holds, with a one-signed remainder)
 
@@ -469,6 +474,32 @@ at fixed box, and the box enters with a sign.
 
 Stop of STEP 3b. The lemma is not proved for SU(2). The solvable test did not refute it.
 
+### 5.4 A second approach: convexity of the Ky Fan sums in the magnetic coupling (Lemma CONC). PROVED; wrong side
+
+Row 708 (Way 3) says that sums of the k largest log-eigenvalues are not convex in general. For this family they are.
+**Lemma CONC.** Fix b_t. For every k >= 1 the Ky Fan sum EE_k(b_t, u) = Ehat_0 + ... + Ehat_(k-1) of That(b_t, u) is a
+concave, non-decreasing function of the magnetic coupling u >= 0. The same holds in the exponent th of the kinetic
+operator Khat^th, at fixed u.
+Proof. The product of the k largest eigenvalues of a positive compact operator is the norm of its k-th antisymmetric
+power. That power of M_u^(1/2) Khat M_u^(1/2) is exp(-u W_k/2) Q_k exp(-u W_k/2), with W_k the sum of W over the k
+factors and Q_k the antisymmetric power of Khat, a positive operator. Its norm is the norm of
+Q_k^(1/2) exp(-u W_k) Q_k^(1/2), the supremum over unit vectors phi of the integral of exp(-u v) against the spectral
+measure of W_k in the vector Q_k^(1/2) phi. Each such integral is log-convex in u (Holder). A supremum of log-convex
+functions is log-convex. So -EE_k is convex. It is non-decreasing because each ordered level is (check 914, step 5).
+For the exponent th use the isospectral form exp(-th EE/2) M exp(-th EE/2) and the same argument. QED
+Corollary (with Lemma HF and Theorem ABS; almost every s). On the isotropic line
+   -K_el(s) EE_k(s)  <=  dEE_k/ds  <=  (EE_k(s) - EE_k^el(s))/s,
+where EE_k^el is the Ky Fan sum of the kinetic operator alone. The right inequality is
+s (w_0 + ... + w_(k-1)) <= EE_k - EE_k^el, from concavity between u = 0 and u = s, and n_i >= 0. So the absolute Ky Fan
+sums neither fall faster than the electric rate nor rise faster than 1/s.
+Where it fails for (VAC-SUB). H_(k-1) = EE_k - k EE_1 is a difference of concave functions. Concavity bounds the
+magnetic EXCESS of the excited levels from above, with the vacuum's concavity defect counted k times:
+   (w_1 - w_0) + ... + (w_(k-1) - w_0)  <=  (H_(k-1) - EE_k^el)/s + k (Ehat_0 - s w_0)/s.
+(VAC-SUB) needs a bound from below, and the term k (Ehat_0 - s w_0) is of the order of the volume. The lemma is
+group-blind, so by 4.3 it could not have been the missing input. In second-order perturbation theory the same
+fact reads: the curvature of H_(k-1) in u is the vacuum's (positive, of the order of the volume) minus that of the
+lowest k levels; the difference has no sign.
+
 ## 6. The smallest unproved inequality, and the tests that can refute an attempt on it
 
 **Smallest unproved inequality: (VS-1) of 5.1.** In full: for the Wilson SU(2) transfer operator That(s, s) on the
@@ -496,3 +527,98 @@ The thermal seed needs in addition the prefix form (VAC-SUB) or a count of level
 - The one test that could refute (VS-1) for SU(2) itself is not a solvable model: a measurement of rho_1/D_1 on
   small cubes through the crossover (the GUIDE row that row 913, 5.6, proposes). A value that grows with b at fixed
   coupling in the band would refute the box-uniform form and leave only the budget form (B).
+
+## 7. Summary
+
+### 7.1 Statements and their standing (author's marks; none is checked by another model)
+
+| # | Statement | Where | Standing |
+|---|---|---|---|
+| 1 | Lemma HF: dEhat_i/ds = w_i - n_i on the isotropic line; rho_i = -D_i' | 1.2 | PROVED (magnetic half is check 914, Section 4) |
+| 2 | (VAC-SUB), prefix form with the budget (B); its place: (DEF_K) => (LEV_K) => (VAC-SUB)_K => transport; (VIR-log) weaker | 1.3 | statement; the implications PROVED (they are row 913 6.2 and check 914 Section 5) |
+| 3 | (VAC-SUB) at beta_1 gives the seed at beta_1 | 1.3 | PROVED GIVEN Theorem SH (row 705), `gap-seed-sc.md` Theorem 1 (iii), Lemma KF |
+| 4 | Proposition G: the Gaussian family is unitarily the same at every coupling; rho_i = 0 | 2.1 | PROVED |
+| 5 | Compact U(1) fails the budget for every box once beta_1 is in the Coulomb phase | 2.2 (a) | PROVED GIVEN the lane's Theorem S chain, the U(1) strong-coupling seed, and the RECALLED theorem (Guth; Frohlich and Spencer) |
+| 6 | In the Coulomb phase K_b is bounded in b; the failure sits at the transition | 2.2 (b) | GUIDE |
+| 7 | Lemma BLOW | 3.1 | PROVED |
+| 8 | A model with a kink of the free energy at beta_t fails the budget log(b/(4 ceil(log_2 b))) across beta_t | 3.2 (a) | PROVED GIVEN Lemma REG, Lemma KF, a strong-coupling bound for the weight (not checked for those weights) |
+| 9 | It applies to the weights of Proposition V (theorem of van Enter and Shlosman) and to K7 (numerics) | 3.2 (a) | GIVEN the cited theorem; GIVEN RECALLED numerics |
+| 10 | Two-level picture of the blow-up, sup K of order l abs(B)/(2 dl) | 3.2 (b) | GUIDE |
+| 11 | Proposition FR: for a finite G containing -1, at each box the lowest c_3(G) - 1 >= 7 levels fall to 0 as beta grows; c_3(Q_8) = 92 | 3.3 (a) | PROVED |
+| 12 | The budget fails for Q_8, 2T at each box beyond beta_fr(b; G) | 3.3 (b) | PROVED |
+| 13 | beta_fr bounded in b; twist ratio 96/736 at beta = infinity | 3.3 (c) | GUIDE and ARGUED; the count is by hand |
+| 14 | Lemma SLICE: g = (1/2)[Delta, Wt] = d - 6 Wt; identity (A); Lemma F on a slice is (A) | 4.1 | PROVED |
+| 15 | Lemma VIR: the virial identity (V); it closes for the Gaussian family and is then the transport statement | 4.2 | PROVED |
+| 16 | Proposition NOGO: every input named by the row holds for compact U(1) | 4.3 | PROVED item by item; conclusion GIVEN 2.2 (a) |
+| 17 | (VS-1) and Proposition ODE (uniform gap of all periodic cubes from (VS-1)) | 5.1 | (VS-1) OPEN; Proposition ODE PROVED GIVEN the uniform strong-coupling gap (row 836, check 841) |
+| 18 | Proposition N: O(N) at N = infinity on a ring; inverse rate = sum of squares; K_b <= 29 for all rings | 5.2 | PROVED for the RECALLED gap equation |
+| 19 | The run: sup K_b = 2 pi on the ring; 3.3 b on the b x b torus | 5.2 | GUIDE |
+| 20 | Lemma CONC and its corollary (two-sided bound on dEE_k/ds) | 5.4 | PROVED GIVEN Theorem ABS for the left side |
+| 21 | (VAC-SUB) for SU(2) Wilson at any coupling of order one | all | OPEN |
+
+### 7.2 Answers to the three steps of the row
+
+- STEP 1. (VAC-SUB) is stated in 1.3: the prefix sums of the response excess rho_i = (n_i - n_0) - (w_i - w_0) are at
+  most K times the prefix sums of the excitation energies, almost everywhere on [beta_0, beta_1], with the integral
+  of K at most log(b/(2 ceil(log_2 b))). It is (KF-LEV) for all pairs of couplings, and (SUPER-D) for all pairs.
+  With check 914: it is weaker than (DEF_K) and stronger than (VIR-log); the vacuum is the global one.
+- STEP 2. The free photon passes with K = 0 (Proposition G). So the first alternative of the row ("fails for the free
+  photon") is false. The second alternative ("then it is the wrong form") does not follow: compact U(1) fails
+  through the budget across its transition (2.2), K7 and the weights of Proposition V fail across their first-order
+  points (3.2), the frozen groups fail at each box (3.3). The form is right as an implication. Its selectivity is the
+  box-uniformity of the integral of K across a window, never an inequality at one coupling.
+- STEP 3. Not closed. With the inputs the row names no proof exists, because compact U(1) has all of them (4.3).
+  The loop equation on a slice is kinematic (4.1); its dynamical form is a virial identity that closes only for
+  Gaussian weights (4.2); convexity gives the wrong side (5.4). The exact step where a property that U(1) and K7
+  lack would have to enter is the step that turns a relation which is linear in the state into an inequality after
+  the vacuum is subtracted. No listed input does that.
+
+### 7.3 What was not done
+
+- No proof of (VAC-SUB), (VS-1), or any bound on rho_1 at a coupling of order one.
+- No Peierls expansion for the frozen groups (uniformity in b of 3.3 is GUIDE).
+- The strong-coupling bound of 3.2 (a) was not checked for the weights of Proposition V.
+- Reflection positivity was used only through the lane's lemmas (Lemma REG, Theorem S). I found no way to make it
+  act on a vacuum-subtracted quantity.
+- Sources not re-read: rows 705, 704, 836, 841, 843, 854 (cited as given), Proposition V's proof, the papers of
+  Guth and of Frohlich and Spencer.
+- Time: about 45 minutes of work, 2026-11-14 04:50Z to 05:35Z. One numeric job, under the lock, memory 68 percent
+  free.
+
+### 7.4 Advice (ARGUED)
+
+The transport route stands where row 913 left it, with three things settled. (i) Its lemma has an exact statement
+and correct fact tests; "it must fail for the photon" is retired. (ii) The row's toolbox cannot prove it; a
+further Fable hour on the same inputs would repeat 4.1 to 4.3. (iii) The solvable model says where a proof would
+live: in a constraint equation for the coupling (the loop equations) with a positivity that is not linear in the
+state, and with the box entering by a sign. That is the bootstrap family (BOOT_eps) of row 708, which the owner's
+rule admits only with hand-size certificates. Any new attempt should first be run on the O(N) model at
+N = infinity in two and three dimensions (Test DIM): it must give a box-uniform constant in two and fail in three.
+
+## Appendix: the GUIDE script of 5.2 (run with `python3 -I`, numpy 2.x, a few seconds; under the numeric lock)
+
+```python
+import numpy as np
+def parts(b, mu, dim=2):
+    k = 2*np.pi*np.arange(b)/b
+    s2 = 4*np.sin(k/2)**2
+    M2 = mu**2 + s2 if dim == 2 else (mu**2 + s2[:, None] + s2[None, :]).ravel()
+    w = 1.0/b if dim == 2 else 1.0/b**2
+    Phi = w*np.sum(1/np.sqrt(M2*(M2+4)))            # gap equation: beta = Phi
+    dPhi = w*np.sum((M2+2)/(M2*(M2+4))**1.5)        # = -dPhi/d(mu^2) > 0
+    return Phi, dPhi
+def K(b, mu, dim=2):                                # K_b = -(d log D_1/d beta)
+    Phi, dPhi = parts(b, mu, dim)
+    om = np.arccosh(1+mu**2/2)
+    return 1/(om*mu*np.sqrt(mu**2+4)*dPhi), Phi
+mus = np.logspace(-6, np.log10(2.0), 600)
+for b in [4, 16, 64, 256, 1024, 4096, 16384, 65536]:
+    print(2, b, max(K(b, m)[0] for m in mus))       # 5.13 5.78 6.19 6.27 6.282 6.2830 6.2832 6.2832
+for b in [4, 8, 16, 32, 64, 128]:
+    print(3, b, max(K(b, m, 3)[0] for m in mus[::3]))   # 12.4 25.4 51.7 104.8 211.3 423.9
+```
+Finite-difference check of dPhi at b = 64, mu = 0.05: formula 38.72416, difference quotient 38.72319.
+At beta = 1 on the ring the run gave mu b = 0.61, 0.84, 1.33, 2.93, 10.8 and K_b = 1.22, 1.67, 2.59, 4.92, 6.28
+for b = 4, 16, 64, 256, 1024.
+
+RESULT: (VAC-SUB) is stated exactly (prefix sums of the response excess rho_i = electric-number excess minus magnetic-action excess, against the global vacuum, at most K times the prefix sums of the excitation energies, with the integral of K at most log(b/(2 ceil(log_2 b)))); PROVED: Lemma HF, Proposition G (the free photon passes with K = 0, so the photon is not the test), Lemma BLOW, Proposition FR (Q_8, 2T: the lowest 7 or more levels of each box fall to 0), Lemma SLICE (the loop equation on a time slice is kinematic), Lemma VIR (virial identity; closes only for Gaussian weights), Lemma CONC (Ky Fan sums concave in the magnetic coupling), Proposition ODE, Proposition N (the lemma holds for O(N) at N = infinity on every ring with K at most 29, true supremum 2 pi by a GUIDE run, and fails in three dimensions like 3.3 b); PROVED GIVEN named inputs: compact U(1), the weights of Proposition V and K7 fail the budget across their transitions, and no proof exists from the inputs the row names because compact U(1) has all of them; OPEN: (VAC-SUB) itself and its smallest form (VS-1), rho_1 <= c (1 + log^+(1/D_1)) D_1 with c uniform in the cube, for SU(2) Wilson at any coupling of order one. Nothing on the crux is proved.

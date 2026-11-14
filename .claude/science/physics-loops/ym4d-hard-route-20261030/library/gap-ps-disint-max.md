@@ -33,6 +33,7 @@ Status log (updated in place):
 
 - 2026-11-14T12:06Z: file created; steps 1-8 not started.
 - 12:25Z: Sections 1 and 2 written (inputs read, duplicate check, Piazza-Shen skeleton). Next: Section 3 (STEP 1).
+- 12:50Z: Section 3 written (STEP 1). Next: Section 4 (fact tests).
 
 ## 1. Target, objects, duplicate check (READ; no new claim)
 
@@ -124,3 +125,111 @@ produce nonlocal, larger Wilson loops, which would be much more difficult to ana
 as soon as ONE of its n plaquettes takes the flat part (1 - r) of the Doeblin split, because in two dimensions a
 loop bounds one surface. The rate r^(n-1) is an area law at every beta. (PS-d) then needs only that the area decay
 beats the perimeter. (PS-e) and (PS-f) are soft.
+
+## 3. STEP 1: which step of Piazza-Shen fails in 3D/4D, and whether J is closer to 2D
+
+Setting for 3.1-3.5: Wilson SU(2) on a finite periodic lattice of dimension d, density proportional to
+exp(beta sum_p t_p), t_p = (1/2) tr U_p, against product Haar. Unit-sphere metric on each link (the metric of
+(LSI-J)): Ric = 2 g, and Haar on S^3 has a log-Sobolev inequality with constant at least 2 (Bakry-Emery, RECALLED).
+"Macro" = kept links S, "micro" = integrated links I, as in Piazza-Shen.
+
+**3.1 First failing step: (PS-b), identity (3.1) (PROVED, hand).** The convolution identity integrates a link that
+lies in exactly two plaquettes. In Z^d a link lies in k = 2(d - 1) plaquettes. With a_1, ..., a_k the staples at the link,
+  integral of prod_(i <= k) e^(beta t(a_i u)) du = 1 + (beta^2/8) [ k + 2 sum_(i < j) t(a_i a_j^(-1)) ] + O(beta^3).
+(First-order terms vanish; integral of t(a u) t(b u) du = t(a b^(-1))/4 by character orthogonality.) The integral is
+invariant under a_i -> a_i g, so it is a function of the k - 1 relative variables a_i a_1^(-1), and already at order
+beta^2 it contains every one of the k(k - 1)/2 six-link loops a_i a_j^(-1). For d = 2 this is one loop, the 2 x 1
+rectangle, and the function is w^(*2). For d = 4 it is 15 loops (3 planar, 12 bent) after ONE integration. So (3.1)
+fails at the first integrated link, whatever the order. After a whole block is integrated, the weight is the
+block partition function Z_B(s) as a function of the boundary field: all loops of the boundary. This is the
+"larger Wilson loops" sentence of Piazza-Shen, made exact at the first step.
+
+**3.2 What is lost with (3.1) (identity RECALLED; the reading is mine).** For SU(2), w^(*n) = sum_j (2j + 1) c_j^n chi_j
+with c_j = I_(2j+1)(beta)/I_1(beta) < 1. So the block weight of Piazza-Shen is the two-dimensional area law, true at
+every beta, and their Lemma 2.1 is a group-blind proof of a cruder rate. Their proof is exact Migdal decimation in
+two dimensions followed by Bakry-Emery at the trivial fixed point. In d >= 3 no exact decimation exists (3.1), and
+the corresponding flatness statement cannot be group-blind: (PS-a) and (PS-b) hold word for word for U(1), and 4D
+compact U(1) at large beta has no area law (Guth; Frohlich-Spencer; RECALLED). So in 4D the block step itself needs
+an SU(2)-specific input. In Piazza-Shen the group enters only later, in (PS-d), as an absorber.
+
+**3.3 Second failing step: (PS-c) and (PS-d). Lemma SEP (PROVED, hand).** Let mu-bar = e^(H-bar) ds be the marginal on
+a set S of links. Let e in S lie in k plaquettes all of whose links are in S, and in k' = 2(d - 1) - k others. Then
+there are s and a unit tangent vector v at s_e with
+  (Ric - Hess H-bar)(v, v) <= 2 - beta (k - k').
+So the Bakry-Emery step (PS-d) fails for mu-bar as soon as beta (k - k') >= 2.
+Proof. H-bar(s) = log integral of e^(H(s, x)) dx. Along a geodesic s(tau) that moves s_e only,
+(d/d tau)^2 H-bar = E_s[(d/d tau)^2 H] + Var_s((d/d tau) H) >= E_s[(d/d tau)^2 H]. Each t_p with p containing e is <s_e, a_p> with
+a unit staple a_p, and (d/d tau)^2 <s_e(tau), a_p> = -t_p on the unit sphere. So (d/d tau)^2 H = -beta sum_(p at e) t_p. Take
+s = 1 on S except s_e = -1. The k plaquettes inside S equal -1, the others are at most 1. QED
+Consequences. In PS (d = 2) the kept edges are lines and k = 0. For d >= 3, conditional independence of bounded
+blocks needs kept links that separate; for cubic blocks S contains the (d - 1)-dimensional faces, which carry
+their own plaquettes at full weight beta:
+- d = 4, e inside a 3D face: k = 4, k' = 2. (PS-d) fails for beta >= 1. This is the configuration and the number of
+  row 941's ceiling (i).
+- d = 4, e in the intersection of two faces: k = 6. Fails for beta >= 1/3. d = 3, e on a block edge: k = 4, k' = 0,
+  fails for beta >= 1/2.
+I proved this for cubic blocks only, not for every separating S.
+
+**3.4 Lemma FOREST (PROVED; Elitzur's argument).** If S contains no closed loop, the marginal of S is exactly
+product Haar, at every beta, in every dimension, on every box. (Proof. Gauge maps act transitively on G^S when S is
+a forest, the Wilson measure is gauge invariant, and the image of Haar on the gauge group is product Haar.) So
+for a forest the macro step holds exactly, with the curvature constant of SU(2), and with no Hessian to absorb.
+Then the micro law is the law of all other links given S. By gauge covariance all these conditional laws are
+isometric images of the one at S = 1. For a spanning tree this is the completely gauge-fixed measure, whose
+log-Sobolev inequality is the original problem. So a forest makes the scheme circular.
+
+**Dichotomy (reading of 3.3 and 3.4).** A separating skeleton makes the micro step soft and the macro law the whole
+problem. A forest skeleton makes the macro law exact and the micro law the whole problem. The skeleton of
+Piazza-Shen is both at once: it separates, and its gauge-invariant content is one holonomy per block with no
+plaquette of its own. No skeleton in d >= 3 is both.
+
+**3.5 Proposition EQ (PROVED given Holley-Stroock and the Haar inequality, both RECALLED; the proof is PS Sections 5-6,
+which do not use d = 2).** Cubic blocks of side m in dimension d, S = all links in the faces. Write the inequality as
+Ent(F^2) <= 2 C E|grad F|^2, with best constants C(mu) for the full law and C-bar for the marginal mu-bar of S. Then
+  C-bar <= C(mu) <= max( 2 C-bar, K + 8 C-bar K kappa^2 n' ),
+with K = (1/2) e^(2 beta N_B) (N_B = number of plaquettes that meet one block), kappa = 2 (d - 1) beta (a bound for
+|grad_e H|), n' = the largest number of kept links e whose adjacent blocks contain a given micro link.
+Proof. Left: a function of s alone. Right: chain rule (6.1); micro term by Holley-Stroock and tensorisation over
+blocks (the blocks are conditionally independent because every plaquette that contains a micro link lies in the
+closure of one cube); gradient of s -> nu_s(F^2)^(1/2) by Lemma 6.1 of PS with R(e) = the union of the blocks whose
+closure contains e (their covariance step uses only the block Poincare inequality and sup |grad_e H_R|). QED
+Reading. With bounded blocks the full inequality and the skeleton inequality are EQUIVALENT up to a factor that
+depends on (m, beta, d) only. Nothing is gained and nothing is lost: the decomposition moves the problem to the
+skeleton law. In 2D the skeleton law is explicit and nearly flat. In 4D it is the 3D skeleton field with the
+bare weight on its own plaquettes and the factors Z_B, and by Lemma SEP no pointwise curvature bound holds for
+it above beta = 1.
+
+**3.6 Is the two-slice law J closer to the 2D setting? No, in three exact senses; yes in one soft sense.**
+- (a) J has no local specification (H is not local), so no block of J is conditionally independent of another.
+  A block argument has to be run on the 4D slab measure, of which J is a marginal. Lemma MARG (PROVED, hand, given
+  the transfer-matrix limit, RECALLED): if the Wilson measure on B x (Z/TZ) satisfies
+  Ent(F^2) <= (2/alpha_4) E|grad F|^2 for all smooth F and all large T, then (LSI-J) holds with alpha_J >= alpha_4/7.
+  Proof. For gauge-invariant Phi put F(x, u, w) = Phi(x, u.w), (u.w)_l = u_s w_l u_(s')^(-1), with u the temporal links
+  between the two slices. |grad_x F| and |grad_w F| equal those of Phi at (x, u.w). A rotation of u_s moves u.w along the
+  gauge direction at s, whose three generators are orthogonal with squared norm 6. So
+  |grad_(u_s) F|^2 <= 6 sum_(l at s) |grad_(w_l) Phi|^2, and the sum over s is at most 12 |grad_w Phi|^2. By invariance the same
+  holds with x. So |grad F|^2 <= 7 (|grad_x Phi|^2 + |grad_w Phi|^2). The law of (x, u.w) tends to J on invariant functions as
+  T grows. QED
+  So (LSI-J) is weaker than a 4D theorem of Piazza-Shen type, by a factor 7. It is not nearer to their proof.
+- (b) Disintegration over one slice given the other is the older route of this lane: macro law nu, micro law
+  pi_x. (PS-d) for nu is dead above beta = 1 (row 941 ceiling (i)). (PS-e) for pi_x uniformly in x is (SG-step) in sup
+  form (rows 944, 950; GUIDE-refuted at beta 2.6 at flat twisted slices, row 952).
+- (c) Disintegration over the temporal links (Proposition SIGMA, PROVED identity; the order statement is RECALLED).
+  Before gauge fixing the layer law is m(dx) m(dw) prod_s du_s exp(beta sum_(l = (s, s')) <x_l, u_s w_l u_(s')^(-1)>). Given
+  (x, w), the temporal links are an S^3-valued nearest-neighbour spin model on the (d - 1)-dimensional box, with
+  the O(4) couplings q -> x_l q w_l^(-1). For d - 1 = 1 it is a chain, its integral is a convolution along the chain,
+  and this is exactly (PS-b). For d - 1 = 3 and x = w flat it is the 3D O(4) model at inverse temperature beta,
+  which has long-range order for beta > 4 G_3 = 1.0109 (Frohlich-Simon-Spencer; this lane's Proposition TB2, row 839,
+  check 849). So the ceiling 4 G_3 is the failure of (PS-b) and (PS-e) for this disintegration. The time direction
+  supplies one layer; the three space directions remain. J is not closer to 2D.
+- (d) The soft sense. In the variables (x, q), q_l = x_l^(-1) w_l, J is m(dx) prod_l w(q_l) dq_l times (dm/dw)(x q), with w
+  the single-plaquette weight of Piazza-Shen. Without the last factor the q_l are independent and the inequality
+  is immediate (one link, Holley-Stroock). In 1+1 dimensions V = 0 and Omega = 1, so the last factor is constant: there
+  J is a product law. In 3+1 dimensions the factor e^(-V(xq)) H(xq) couples all q_l, and it is the vacuum factor.
+
+**Answer to STEP 1.** The first step that fails is (3.1) of Piazza-Shen (3.1 above), at the first integrated
+link, because a link lies in 2(d - 1) > 2 plaquettes. Independently, (PS-c)/(PS-d) fail because a separating
+skeleton carries plaquettes (Lemma SEP: beta >= 1 in 4D). What survives in every dimension is the soft part,
+(PS-e) and (PS-f) (Proposition EQ), and it only moves the problem. J is not closer to the 2D setting than the 4D
+measure: it is a marginal of it (Lemma MARG), and each of its natural disintegrations is either the older route
+(b) or a 3D spin system where Piazza-Shen have a chain (c).

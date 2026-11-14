@@ -171,7 +171,7 @@ Two readings.
 - The zero-field value is the same for SU(2), compact U(1) (with 1/2 in place of 1/4) and the frozen groups. So
   the zero field cannot be the worst tilt for the rivals (Section 4), and the whole content of (TILT-COV-sup)
   is in the non-zero tilts.
-- 14:24 Section 4 written (fact tests of the criterion of Section 3).
+- 14:18 Section 4 written (fact tests of the criterion of Section 3).
 
 ## 4. Fact tests of (TILT-COV-sup), before any proof attempt
 
@@ -240,3 +240,74 @@ point). So a box-uniform (TILT-COV-sup) says in particular: the Higgs-tilted lay
 kappa, in the confining bulk. For the full four-dimensional SU(2) Higgs model with frozen length a line of
 transitions ends near beta 2.7 (RECALLED from lattice studies, not verified; the window 2.3 to 2.6 lies below it).
 This family is the first place to test (Section 7).
+- 14:24 Section 5 written (Attack 2: where the Ricci curvature sits; what an average over the measure can mean).
+
+## 5. Attack 2: the Ricci curvature of SU(2) against the negative part, in the bridge picture
+
+**5.1 The curvature of nu_s (PROVED; 3.1 (a), (c) at t = 0).** Put Phi := -log(d nu_s/dy). For y, z in R^N:
+  K_s(y)(z, z) := Hess Phi(y)(z, z) = |z|^2/c - Var(<z, x> | y)/s^2 - Var(<z, w> | y)/s'^2,
+where given y the slices x, w are independent with laws pi_(y/s), pi_(y/s'). The ambient space is flat, so K_s is the
+whole Bakry-Emery tensor. No Ricci term appears. The curvature of the group must be found inside the covariances.
+
+**5.2 One free link (m = Haar on S^(n-1); PROVED, hand).** Then Phi is radial, Phi(r) = r^2/(2c) - Lam(r/s) - Lam(r/s'),
+Lam' = A (the mean resultant; A = I_2/I_1 for n = 4). The tangential curvature is Phi'(r)/r.
+(a) Sign. At the mid-slice Phi'(r)/r = 4 beta (1 - A(2 beta r)/r). Since A(kappa) = kappa/n - O(kappa^3), it is negative near r = 0
+exactly when 2 beta/n > 1: beta > 2 for SU(2) (n = 4), beta > 1 for U(1) (n = 2). This is ceiling (ii) of row 941. At
+beta 2.3 the negative region is r below about 0.4, of small nu_s-probability; the value at r = 0 is 4 beta (1 - beta/2) = -1.4,
+against about +3 at r = 1.
+(b) Average. For p > 2 - n: E[ r^(p-1) Phi'(r) ] = (n + p - 2) E[ r^(p-2) ] (integrate by parts against r^(n-1) e^(-Phi) dr). So
+  E[ Phi'(r)/r ] = (n - 2) E[ r^(-2) ]   for n >= 3:   the mean tangential curvature is Ric(S^(n-1)) x E|y|^(-2).
+For n = 2 the same integral is the boundary term: E[Phi'(r)/r] = 2 pi x (density of y at the origin), which is tiny.
+So for one link the Ricci curvature of the group is the average of the ambient tangential curvature over the
+radial coordinate of the bridge. It is 2 E|y|^(-2) for SU(2) and essentially 0 for U(1). The negative part of (a) is the
+inner side of the shell. The free rotor has a gap for both groups: for U(1) the gap does not come from this
+average but from the Hessian term of 5.4 (b).
+
+**5.3 Proposition ANG (fibre form; PROVED, hand).** Write y_l = r_l u_l, r_l = |y_l|. On the fibre of fixed radii, a product
+of spheres of radii r_l, the conditional law of the angles has the Bakry-Emery tensor, for v tangent (v_l orthogonal
+to y_l):
+  BE_ang(y)(v, v) = sum_l [ 2/r_l^2 + (mu^x_l/s + mu^w_l/s')/r_l ] |v_l|^2 - Var(<v, x> | y)/s^2 - Var(<v, w> | y)/s'^2,
+with mu^x_l := <u_l, E[x_l | y]>, mu^w_l := <u_l, E[w_l | y]> in [-1, 1]. For U(1) the term 2/r_l^2 is absent.
+Proof. A geodesic of the sphere of radius r has acceleration -(|v|^2/r^2) y. So the fibre Hessian of Phi is
+K_s(v, v) - sum_l <y_l, grad_l Phi> |v_l|^2/r_l^2, and the Ricci tensor of the fibre is 2|v_l|^2/r_l^2 on each factor. By 5.1,
+grad Phi = y/c - E[x | y]/s - E[w | y]/s'. The terms |v|^2/c cancel. QED
+Checks. One free link: Var(<v, x> | y) = (A/kappa)|v|^2 with kappa = r/s, and mu^x = A, so the bracket and the variance cancel
+and BE_ang = 2/r^2, the round sphere. As s -> 0 (r -> 1) the display is the bridge form of row 941 (A6).
+Readings.
+- At the zero-field point y -> 0 (all links): mu^x_l = r_l/(4s) + o(r), Var(<v, x> | y) -> |v|^2/4 (Elitzur), so the mean
+  term and the variance term cancel to leading order and BE_ang is 2/r_l^2 -> + infinity. The ceiling (ii) of row 941
+  (mid-slice log-concavity dies at beta 2) is an artefact of Cartesian coordinates at a point where the fibre
+  shrinks. In the fibre form the Ricci curvature of S^3, rescaled to 2/r^2, removes it. For U(1) the same
+  computation leaves 0. This is the exact place where Ric = 0 shows for U(1), and it is a one-link effect.
+- It does not make the fibre tensor positive (ARGUED, numbers by hand at beta 2.3, mid-slice). Take u_l opposite
+  to the direction its staples prefer, at a typical radius: then mu^x_l, mu^w_l are near -0.7, the mean term is
+  about -7, the variance term about -6, the Ricci term +2.5. So BE_ang < 0 at a frustrated link. This is the
+  flipped link of Lemma SEP (row 957) and of ceiling (i) (row 941) again. It has small probability per link under
+  nu_s and a positive density in the volume.
+- The directions of 5.2 and of this proposition are local. The seed needs the collective directions at the box
+  scale, where the Ricci term 2/r^2 is of order one and has nothing to say.
+
+**5.4 Proposition AVG: what an average over the measure can mean (PROVED given Bochner's identity on R^N and the
+slice theorem for compact group actions, both RECALLED).** Let mu = e^(-Phi) dy be nu_s, K = Hess Phi, L = Laplacian - grad Phi . grad.
+For 0 <= th <= 1 consider, for all smooth gauge-invariant G with bounded derivatives:
+  (AVG)_(th, rho):  E[ K(grad G, grad G) ] + th E|Hess G|^2 >= rho E|grad G|^2.
+(a) (AVG)_(0, rho) holds if and only if K >= rho on horizontal vectors at every point of a principal orbit.
+(b) (AVG)_(1, rho) holds if and only if the gauge-invariant Poincare constant gam_s of nu_s is at least rho.
+(c) The linearisation at t = 0 of the flow criterion of Section 7 is (AVG)_(1/2, 1/c - kap_(s,0)).
+Proof. (a) "If" is clear. "Only if": at a principal orbit every horizontal z is the gradient at y_0 of an invariant
+smooth function (slice theorem). Multiply by an invariant cut-off supported in a small tube around the orbit;
+both sides are continuous and the ratio tends to K(y_0)(z, z)/|z|^2. (b) E(L G)^2 = E|Hess G|^2 + E[K(grad G, grad G)] (Bochner), and
+E(L G)^2 >= rho E[G (-L) G] for all G is the statement that -L has no spectrum in (0, rho) on invariant functions (spectral
+theorem). (c) Section 7. QED
+Reading. This is the answer to check 958's finding 5. With no Hessian term, an average over the measure for all
+test functions is the pointwise criterion, which is dead (5.3, and rows 941, 957). With the full Hessian term it
+is the Poincare inequality itself, so it is not a reduction. A statement strictly between the two needs th in
+(0, 1), or a restricted class of test functions (smoothed by a flow), or both. The flow criterion of Section 3
+is of this kind: th = 1/2 at each scale, with the renormalised measures nu_t and potentials V_t.
+
+**5.5 Where attack 2 stops.** The negative part of the curvature is of three kinds. (K1) The inner side of each
+link's shell: an artefact, removed by the fibre form, where the Ricci curvature of SU(2) is exactly the absorber
+(5.2, 5.3). (K2) Frustrated links: rare under nu_s, with a positive density; absorbing them is the defect inequality
+of Section 6. (K3) Collective directions at the box scale: this is the gap itself (5.4 (b)), and the Ricci
+curvature does not act there. So the Ricci curvature of SU(2) pays for (K1) only. I found no way to make it pay
+for (K2) or (K3).

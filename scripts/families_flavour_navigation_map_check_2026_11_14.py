@@ -4,9 +4,11 @@
 docs/FAMILIES_FLAVOUR_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md is a
 navigation map with no science of its own. What it does state is checkable:
 that each "Carried results" section quotes its carried note's current
-claim_scope verbatim, that the map covers each carried note once, and that
-every repository link in the map resolves. This runner checks those
-statements. A control alters one quotation and must be rejected.
+claim_scope verbatim, that each section heading carries the carried note's
+current title (added 2026-11-14 after the second hold, F9), that the map
+covers each carried note once, and that every repository link in the map
+resolves. This runner checks those statements. Two controls alter one
+quotation and one heading and must be rejected.
 """
 from __future__ import annotations
 
@@ -80,6 +82,11 @@ def carried_note(body: str) -> str | None:
     return m.group(1) if m else None
 
 
+def note_title(text: str) -> str | None:
+    titles = [l[2:].strip() for l in text.splitlines() if l.startswith("# ")]
+    return titles[0] if titles else None
+
+
 def compare(map_text: str):
     results = []
     for head, body in sections(map_text):
@@ -88,6 +95,17 @@ def compare(map_text: str):
         note = ROOT / "docs" / rel if rel else None
         scope = frontmatter_scope(note.read_text(encoding="utf-8")) if note and note.is_file() else None
         results.append((head, rel, quote is not None and scope is not None and quote == scope))
+    return results
+
+
+def compare_titles(map_text: str):
+    results = []
+    for head, body in sections(map_text):
+        rel = carried_note(body)
+        note = ROOT / "docs" / rel if rel else None
+        title = note_title(note.read_text(encoding="utf-8")) if note and note.is_file() else None
+        shown = head.split(": ", 1)[1].strip() if ": " in head else None
+        results.append((head, rel, title is not None and shown == title))
     return results
 
 
@@ -106,6 +124,10 @@ def main() -> int:
     check("each section quotes its carried note's current claim_scope verbatim", not bad,
           f"{len(results) - len(bad)} of {len(results)} match" + (f"; mismatched: {bad[:3]}" if bad else ""))
 
+    tbad = [h[:8] for h, _, ok in compare_titles(text) if not ok]
+    check("each section heading carries its carried note's current title", not tbad,
+          f"{13 - len(tbad)} of 13 match" + (f"; mismatched: {tbad[:3]}" if tbad else ""))
+
     links = re.findall(r"\]\(([^)#\s]+)(?:#[^)]*)?\)", text)
     local = [l for l in links if not re.match(r"[a-zA-Z][a-zA-Z0-9+.-]*:", l)]
     missing = sorted({l for l in local if not (ROOT / "docs" / l).resolve().exists()})
@@ -119,8 +141,14 @@ def main() -> int:
     mutant_ok = all(ok for _, _, ok in compare(altered))
     check("control rejects mutant: a quotation with its last word dropped still matches", not mutant_ok)
 
+    head0 = next(sections(text))[0]
+    hwords = head0.split()
+    hmut = text.replace("### " + head0, "### " + " ".join(hwords[:-1]), 1) if len(hwords) > 3 else text
+    hmut_ok = all(ok for _, _, ok in compare_titles(hmut))
+    check("control rejects mutant: a heading with its last word dropped still matches", not hmut_ok)
+
     print(f"\nSUMMARY: PASS={PASS} FAIL={FAIL}")
-    print("Scope: the map's quotations, coverage and links. The carried notes' science is checked by their own runners.")
+    print("Scope: the map's quotations, headings, coverage and links. The carried notes' science is checked by their own runners.")
     return 0 if FAIL == 0 else 1
 
 

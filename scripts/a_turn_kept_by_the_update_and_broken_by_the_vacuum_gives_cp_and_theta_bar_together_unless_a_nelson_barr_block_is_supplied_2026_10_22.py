@@ -2,7 +2,10 @@ AUDIT_INPUT_PATHS = ('docs/A_TURN_KEPT_BY_THE_UPDATE_AND_BROKEN_BY_THE_VACUUM_GI
 """Spontaneous turn/CP breaking with an exact three-fold turn and exact T in the update.
 Supplied model, finite diagnostic.  Families carry turn charges q=(0,1,2) (eigenvalues 1,w,w^2).
 Mass term psibar_L M psi_R; entry (i,j) needs a vacuum field of charge q_Li-q_Rj mod 3.
-All couplings REAL (T/CP of the update).  CP is broken only by vacuum phases."""
+All couplings REAL (T/CP of the update).  CP is broken only by vacuum phases.
+Scope (2026-11-14, PR 10129 second hold, F8): section A samples generic one-field models and one reflection; section B is
+one supplied Nelson-Barr block. Together they show one separation of J from theta_bar, not that it is the only one: other
+structural restrictions on the couplings were not exhausted. Three families (N = 3) are supplied, not derived."""
 import numpy as np
 AUDIT_TIMEOUT_SEC = 60
 rng = np.random.default_rng(20261022)
@@ -57,7 +60,7 @@ for k in range(200):
     Js.append(abs(J2(masses(*cu2, .7*np.exp(1j*aa)), masses(*cd2, .7*np.exp(1j*aa)))))
     Ts.append(abs(tb(masses(*cu2, .7*np.exp(1j*aa)), masses(*cd2, .7*np.exp(1j*aa)))))
 Js, Ts = np.array(Js), np.array(Ts)
-chk("A5 generic vacuum phase: J != 0 AND theta_bar_tree = O(1) (strong CP fails)", np.median(Js) > 1e-3 and np.median(Ts) > 0.1,
+chk("A5 sampled generic one-field models: J != 0 AND theta_bar_tree = O(1) (strong CP fails in these samples)", np.median(Js) > 1e-3 and np.median(Ts) > 0.1,
     "median|J|=%.2e median|arg det|=%.2f, min|arg det|=%.1e (need <1e-10)" % (np.median(Js), np.median(Ts), Ts.min()))
 # one-field renormalizable potential: its phase-dependent part is V(a) = 2 k v^3 cos3a (k phi^3 + cc, argued) -> aligned
 # minima -> J=0, for nonzero k. 2026-11-14 repair (hold): at k = 0 the phase is flat and no alignment is selected.
@@ -86,7 +89,8 @@ x0 = brentq(g, xs[i0], xs[i0+1]); c = [cd[0], cd[1], cd[2].copy()]; c[2][2, 0] =
 th = tb(Mu, masses(*c, phi0)); Jt = J2(Mu, masses(*c, phi0))
 chk("A8 one TUNED real relation gives theta_tree in {0,pi} with J != 0 (FITTED, not structural)",
     min(abs(th), abs(abs(th)-np.pi)) < 1e-10 and abs(Jt) > 1e-4, "J=%.2e" % Jt)
-print("== B: Nelson-Barr-type: light block from real-aligned chi (charge w), heavy D, Z2-odd phi1,phi2 (charge w)")
+print("== B: one supplied Nelson-Barr-type block (a demonstrated separation, not the only possible one): light block from "
+      "real-aligned chi (charge w), heavy D, Z2-odd phi1,phi2 (charge w)")
 # spontaneous phases from the Z3 x Z2 x T potential (real coefficients)
 def Vpot(x, c):
     a1, a2 = x

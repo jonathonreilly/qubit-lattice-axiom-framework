@@ -142,7 +142,9 @@ in magnitude only if it is fixed by the vacuum energy. Untested.
 
 ## Repo context
 
-- Builds on zoom-three-links (single-cube commutant M2+M2) and family-count-5mode (N = 0 mod 3 via the turn charge).
+- Builds on zoom-three-links (single-cube commutant M2+M2) and family-count-5mode (the light copy's nonzero turn charge; its
+  untwisted anomaly polynomial vanishes only for N = 0 mod 3, which is arithmetic in a supplied model and not a derived
+  family count, since a combined turn-twist removes it: [#10022](THE_LIGHT_COPY_CARRIES_A_NONZERO_TURN_CHARGE_SO_A_SYMMETRICALLY_GAPPED_MIRROR_NEEDS_FAMILY_COUNT_ZERO_MOD_THREE_BOUNDED_THEOREM_NOTE_2026-10-22.md), narrowed 2026-11-14). Three families are supplied here.
 - Narrows families-from-tastes A11 (dim 8 is undersampled; the true value is 1). The carried #10016 states the corrected value.
 - Consistent with the families-from-tastes E+E taste content and one light family.
 - Consistent with family-register (F3 = 3 from a supplied register: the C2 lemma applies to it too. A turn-invariant

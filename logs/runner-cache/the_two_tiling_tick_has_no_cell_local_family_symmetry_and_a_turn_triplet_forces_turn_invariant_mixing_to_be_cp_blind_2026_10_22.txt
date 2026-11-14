@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_two_tiling_tick_has_no_cell_local_family_symmetry_and_a_turn_triplet_forces_turn_invariant_mixing_to_be_cp_blind_2026_10_22.py
 runner_sha256: 4ce51e0361a33ae4e562938e02d64c7077e00a46c583d03fd66d48c0e149af90
-input_fingerprint_sha256: d24b40b3179317381f621ece3bb2f450e26b6242032abffcbc818806b2a6099f
+input_fingerprint_sha256: 4b0692c4da529daf0ebbbf997cd3a5f468e8e874cf6ae2fa9822503ed3fd885c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.92
+elapsed_sec: 1.88
 status: ok
 ----- stdout -----
 == A. CL-1 two-tiling update, Bloch over 2Z^3 (8 modes per cell)

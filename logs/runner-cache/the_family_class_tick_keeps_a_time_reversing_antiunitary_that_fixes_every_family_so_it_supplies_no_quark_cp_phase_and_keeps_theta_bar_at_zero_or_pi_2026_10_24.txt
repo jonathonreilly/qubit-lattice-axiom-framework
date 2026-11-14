@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/the_family_class_tick_keeps_a_time_reversing_antiunitary_that_fixes_every_family_so_it_supplies_no_quark_cp_phase_and_keeps_theta_bar_at_zero_or_pi_2026_10_24.py
-runner_sha256: 047aacbb0f1dbaa38fafc04f1d3383f16e9deb10e47c2725f52a838093fa295a
-input_fingerprint_sha256: 6d234e69c7dad54e9a193b83e4ca4437f6afa041d2cd4b9b02d49e7f10e450b7
+runner_sha256: cce61b09acde16ef26e8a1393351073a0d8e8ff77e2f795d441c98a22b178a5e
+input_fingerprint_sha256: 3ea6e7a03ec6302f0704d5b938a5576c9ae88833bd2c9dad1ace4fed34590c89
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.26
@@ -21,7 +21,8 @@ PASS C2 tick's L-R pieces vanish on the turn axis and at the node (1 + w + w^2 =
 PASS D1 turn-CP lemma: triplet (0,1,2) gives J = 0; all q = 2 lifts it: triplet max|J| 0e+00; q = 2 median |J| 2.54e-02 (lifted; turn now a scalar on families)
   family-blind tick masses (prop. to 1): det[Hu,Hd] = 0e+00; masses degenerate, mixing unphysical (U(3) family symmetry)
 PASS D2 generalized CP (any X, X X* = 1) on Q forces det[Hu,Hd] = 0 and J = 0: condition err 1e-14, max |det C|/||C||^3 2e-15, max|J| 6e-16 over 300
-PASS D3 kept antiunitary with X = 1 (copies) or diagonal: real masses, theta_tree in {0, pi}: max distance to {0,pi} 0e+00
+PASS D3 real-mass check (an added mass-level condition, not implied by the left action of D2): real supplied Mu, Md give a real determinant product, theta_tree in {0, pi}: max distance to {0,pi} 0e+00 over 300
+PASS D3c counterexample: Mu = e^(0.2i) diag(1,2,3), Md = diag(4,5,6) satisfy the left-doublet condition with X = 1 (det[Hu,Hd] = 0, J = 0) yet arg det(Mu Md) = 0.6: the left action gives no determinant-phase constraint: condition err 0e+00, |det[Hu,Hd]| 0e+00, arg det 0.600
 == E. worst-case leak: tick's T-odd L-R piece read as a family-universal mass entry
   a = l_P: K a(m_t) = 1.4e-17, |m|/m ~ 4.7e-35: J_leak ~ 2e-36, theta_leak ~ 7e-35
   a = 10 l_P: K a(m_t) = 1.4e-16, |m|/m ~ 4.7e-33: J_leak ~ 2e-34, theta_leak ~ 7e-33
@@ -29,8 +30,10 @@ PASS E1 leak is linear in the T-odd entry (median slope ratio dev < 0.05) and ne
 == F. supplied phases (break every kept antiunitary): J and theta tied
 PASS F1 generic supplied phases: J != 0 and theta_bar O(1); none passes 1e-10: median|J| 2.5e-02 (J > 1e-6 in 1.00); median theta 0.79 rad; |theta|<1e-10: 0.000
 VERDICT: tick does not supply CP. J != 0 is ALLOWED only with supplied mass-sector phases that break the kept
-T x C2' (not just T); then theta_bar is O(1) unless a Nelson-Barr-type reading is also supplied.
-TOTAL: PASS=10 FAIL=0
+T x C2' (not just T); with the sampled generic phases theta_bar is then O(1). A supplied Nelson-Barr block is one
+demonstrated separation (#10047); other structural restrictions were not exhausted. theta_bar in {0, pi} needs the
+added real-mass condition (D3); the left action alone does not fix arg det (D3c).
+TOTAL: PASS=11 FAIL=0
 
 ----- stderr -----
 

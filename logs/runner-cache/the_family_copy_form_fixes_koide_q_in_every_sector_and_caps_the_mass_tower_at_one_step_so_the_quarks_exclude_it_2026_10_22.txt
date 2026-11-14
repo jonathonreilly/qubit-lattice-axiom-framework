@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_family_copy_form_fixes_koide_q_in_every_sector_and_caps_the_mass_tower_at_one_step_so_the_quarks_exclude_it_2026_10_22.py
 runner_sha256: b1dd21373e66caeaebb3adea5a48bab6561c466f1f92af9e8c461a0102c17006
-input_fingerprint_sha256: 1404d5633d49d3a942a9f1d25c904ffc5c350c3ef9f5d39f41dd4b375b1ea0f5
+input_fingerprint_sha256: 1dd9a0c2906513064b750ad823d01a21d997a6a71f4b3e8fc2b01a5b2c9f901a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.42
+elapsed_sec: 1.17
 status: ok
 ----- stdout -----
 == A. the suggested routes against CL-1
@@ -22,9 +22,9 @@ status: ok
 [PASS] [T] a link-dressed family hop, weight kappa <= 1 (domain-normalised raisers have norm <= 1), gives Q = (1 + kappa^2)/3 <= 2/3: dressing can only lower Q
 == C. the copy form against measurement [M: PDG 2024; NuFIT 6.0; DESI DR2+CMB sum m_nu < 0.064 eV]
 [PASS] [E] charged leptons: Q = 2/3 is the measured value; it predicts m_tau from m_e, m_mu within 1 sigma | Q_meas 0.6666645; m_tau pred 1776.969 vs 1776.93 +- 0.09 MeV
-/Users/jonreilly/Projects/physics-repair-20261114/wt-10129/scripts/the_family_copy_form_fixes_koide_q_in_every_sector_and_caps_the_mass_tower_at_one_step_so_the_quarks_exclude_it_2026_10_22.py:135: RuntimeWarning: divide by zero encountered in log
+/Users/jonreilly/Projects/physics-repair-20261114/wt-10129b/scripts/the_family_copy_form_fixes_koide_q_in_every_sector_and_caps_the_mass_tower_at_one_step_so_the_quarks_exclude_it_2026_10_22.py:135: RuntimeWarning: divide by zero encountered in log
   fr = [(abs(np.log(me_of(np.pi * pn / qd) / (me / mt))), pn, qd) for qd in range(1, 49) for pn in range(0, 2 * qd)]
-/Users/jonreilly/Projects/physics-repair-20261114/wt-10129/scripts/the_family_copy_form_fixes_koide_q_in_every_sector_and_caps_the_mass_tower_at_one_step_so_the_quarks_exclude_it_2026_10_22.py:139: RuntimeWarning: divide by zero encountered in log
+/Users/jonreilly/Projects/physics-repair-20261114/wt-10129b/scripts/the_family_copy_form_fixes_koide_q_in_every_sector_and_caps_the_mass_tower_at_one_step_so_the_quarks_exclude_it_2026_10_22.py:139: RuntimeWarning: divide by zero encountered in log
   lee = np.mean([np.min(np.abs(np.log(mof / me_of(t)))) <= bf[0] for t in tg])
 [PASS] [E] the lepton phase (Brannen delta, 2/9 within 2e-5) is no lattice phase: the best pi p/q with q <= 48 misses m_e/m_tau by more than 1%, and a random target is matched that well by some fraction in most cases (look-elsewhere) | delta 0.222239; best pi*66/47: m_e off 3.1%; 1424 fractions; random targets matched as well: 0.95
 [PASS] [E] hierarchy is tuned, not produced: a phase uniform on (0, pi/3) gives m1/m3 <= m_e/m_tau in a few % of cases | fraction 0.077
@@ -32,7 +32,7 @@ status: ok
 [PASS] [E] neutrinos (if the copy form is universal): no all-positive solution; the signed readout gives one normal-ordering solution inside the cosmology bound and one inverted solution outside it | NO: m1 0.364 meV, sum 0.0592 eV; IO: m3 2.92 meV, sum 0.102 eV
    count: the copy form uses 3 scales + 3 phases (the phases are not in CL-1..CL-3) for 9 charged masses; it predicts the 3
    Q values (leptons pass, up and down fail by > 5 sigma) and gives no mixing; the SM uses 9 + 4.
-runtime 0.7 s
+runtime 0.6 s
 TOTAL: PASS=15 FAIL=0
 
 ----- stderr -----

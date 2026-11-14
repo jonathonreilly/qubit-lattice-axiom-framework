@@ -1,7 +1,15 @@
 #!/usr/bin/env python3
-"""Independent re-derivation of the [[8,3,3]] code symmetry group (perm x uniform frame),
-its isomorphism type, the full LC x perm automorphism group (different method: GL(5,2) acting on
-the stabiliser space S, permuting the 8 subspaces K_j = {s in S : s|_j = I}), and the logical action."""
+"""Independent re-derivation of the phase-forgetting binary symmetry group of Gottesman's [[8,3,3]] stabiliser
+(qubit permutations x uniform binary symplectic frames), its isomorphism type, and the binary local-frame x permutation
+automorphism group by a different method (GL(5,2) acting on the binary stabiliser space S, permuting the 8 subspaces
+K_j = {s in S : s|_j = I}).
+
+Scope (2026-11-14, PR 10129 second hold, finding F6). Paulis are represented as binary (x, z) pairs modulo phases, and a
+local frame as a binary symplectic map on one qubit, so every group computed here is an image in that phase-forgetting
+binary representation. Pauli and sign lifts are not counted: the last line counts the projective Paulis that commute
+with all five generators; conjugation by any of them fixes every stabiliser element and leaves every binary (x, z) pair
+unchanged, so none of them appears in the order 168. No order of the full physical local-Clifford x permutation group is
+computed or proposed here."""
 AUDIT_TIMEOUT_SEC = 300
 import itertools, collections, sys, time
 t0 = time.time()
@@ -146,7 +154,7 @@ print("(Galois exponent i, frame) pairs:", dict(lock))
 # Compare with PSL(2,7) on 8 points: orders {1:1,2:21,3:56,4:42,7:48}
 print("GL(3,2)=PSL(2,7) order stats would be {1:1,2:21,3:56,4:42,7:48}; observed has order-6 elements and only 7 involutions -> not PSL(2,7)")
 print("AGL(1,8) x Z3 would have elements of order 21 and centre Z3; observed max order", max(oc), "centre", len(center))
-# ---- full LC x perm automorphism group via GL(S) permuting K_j (independent method)
+# ---- binary local-frame x perm automorphism group via GL(S) permuting K_j (independent method; phases forgotten)
 Sl = sorted(S)
 basis = GENS
 def coords(s):
@@ -225,7 +233,7 @@ for Ki, (a, b, c) in GL32:
                 if img not in Kidx: ok = False; break
                 pi[j] = Kidx[img]
             if ok: autos.append((tuple(pi), cols))
-print("full LC x perm automorphism group order (GL(S) method):", len(autos))
+print("binary local-frame x perm automorphism group order (GL(S) method):", len(autos))
 # induced local frame per qubit: c_j : S/K_j -> S/K_pi(j) read through restriction to qubit j
 def restr(s, j): return ((s[0] >> j) & 1, (s[1] >> j) & 1)
 uniform = 0; frames_seen = collections.Counter()
@@ -243,4 +251,8 @@ for pi, cols in autos:
     frames_seen[len(set(fr_j))] += 1
 print("automorphisms with a uniform frame:", uniform, "of", len(autos), " (#distinct per-qubit frames histogram:", dict(frames_seen), ")")
 print("perm images of full group == P:", {pi for pi, _ in autos} == P)
+# Pauli lifts (2026-11-14): Paulis P with symp(P, g) = 0 for every generator g conjugate each stabiliser element to itself
+# (sign (-1)^symp = +1) and act as the identity on (x, z); they are invisible to the binary frame map used above.
+NS = [(x, z) for x in range(1 << n) for z in range(1 << n) if all(symp((x, z), g) == 0 for g in GENS)]
+print("projective Paulis commuting with the five generators (not counted in the orders above):", len(NS))
 print("time %.1fs" % (time.time() - t0))

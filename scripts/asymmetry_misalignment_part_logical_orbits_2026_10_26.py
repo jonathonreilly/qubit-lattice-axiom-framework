@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Structure of the logical orbits (7, 28, 28) of the 168-group on N(S)/S: is the 7-orbit a Lagrangian
 (logical stabiliser state => G fixes a logical stabiliser basis) or a maximal anticommuting set (Cl(0,7),
-octonion left multiplications)?  Also: does the logical image preserve any 3-qubit tensor decomposition?"""
+octonion left multiplications)?  Also: does the logical image preserve any decomposition of the binary logical Pauli
+space into three mutually orthogonal symplectic planes (three logical Pauli qubits)? The group is the phase-forgetting binary
+group of the code-group part (Pauli and sign lifts not counted); other tensor factorisations are not searched (2026-11-14)."""
 AUDIT_TIMEOUT_SEC = 300
 import itertools, collections
 n = 8
@@ -52,7 +54,7 @@ o7 = next(o for o in orb if len(o) == 7)
 if all(symp(a, b) == 0 for a, b in itertools.combinations(o7, 2)) and len(span(o7)) // 32 >= 1:
     L = {canon(p) for p in span(o7)}
     print("7-orbit spans a subspace of N/S of size", len(L), "-> isotropic (Lagrangian if 8):", len(L) == 8)
-# 3-qubit tensor decompositions of N/S: unordered triples of mutually orthogonal hyperbolic planes
+# decompositions of N/S into three logical Pauli qubits: unordered triples of mutually orthogonal hyperbolic planes
 nz = [r for r in reps if r != zero]
 planes = set()
 for a, b in itertools.combinations(nz, 2):
@@ -66,7 +68,7 @@ for P1, P2 in itertools.combinations(planes, 2):
     for P3 in planes:
         if P3 in (P1, P2) or not (orth(P1, P3) and orth(P2, P3)): continue
         decs.add(frozenset({P1, P2, P3}))
-print("hyperbolic planes:", len(planes), " 3-qubit decompositions of the logical space:", len(decs))
+print("hyperbolic planes:", len(planes), " decompositions of the binary logical Pauli space into three symplectic planes:", len(decs))
 def gimg(P, g): return frozenset(canon(act(a, g[0], FR[g[1]])) for a in P)
 stab_sizes = collections.Counter()
 for D in decs:

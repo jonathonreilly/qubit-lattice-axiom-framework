@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/a_turn_kept_by_the_update_and_broken_by_the_vacuum_gives_cp_and_theta_bar_together_unless_a_nelson_barr_block_is_supplied_2026_10_22.py
-runner_sha256: 4940875741b549e87aeccf212f2318999b03f90f58b1b04b11c7db5ab55b454a
-input_fingerprint_sha256: 3c8dc550028fab23429bd22b74f2d6a59293b2d08ad5cdc01ca932b739117081
+runner_sha256: a70d0198cd10c0b39eecb2d79559d64127339af83da2f25e7d2db3db9b0c70b6
+input_fingerprint_sha256: 935ae8ca5ab4317a1d39c8c67442cf188af0d525d957c7e176933d23f2bd11e0
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 2.21
+elapsed_sec: 1.19
 status: ok
 ----- stdout -----
 == A: one turn-charged order parameter phi=v e^{ia}, linear couplings, Q,u,d all (0,1,2)
@@ -12,12 +12,12 @@ PASS A1 exact turn covariance: T^+ M(w phi) T = M(phi) | 3.1e-16
 PASS A2 aligned vacua (phi^3 real): J=0 and arg det in {0,pi} | maxJ=3.5e-17
 PASS A3 J periodic 2pi/3 and CP-odd | J(0.4)=4.828e-02
 PASS A4 Im det M = (r1-r2) v^3 sin(3a) exactly (det depends on phi only via |phi|^2, phi^3) | r1-r2=0.1843
-PASS A5 generic vacuum phase: J != 0 AND theta_bar_tree = O(1) (strong CP fails) | median|J|=1.22e-02 median|arg det|=1.51, min|arg det|=1.2e-03 (need <1e-10)
+PASS A5 sampled generic one-field models: J != 0 AND theta_bar_tree = O(1) (strong CP fails in these samples) | median|J|=1.22e-02 median|arg det|=1.51, min|arg det|=1.2e-03 (need <1e-10)
 PASS A6 one-field Z3+T potential, phase part 2 k v^3 cos 3a with k != 0 (k = +1, -1): minimum aligned -> J=0 | k=+1: a*=3.1416 J=1.6e-17, k=-1: a*=0.0000 J=0.0e+00
 EDGE (not counted): at k = 0 the phase potential is flat (range of 2 k cos 3a over a: 0.0e+00), so the renormalisable one-field potential selects no alignment there
 PASS A7 reflection-protected texture: arg det in {0,pi} but J = 0 (lemma) | J=-6.9e-17
 PASS A8 one TUNED real relation gives theta_tree in {0,pi} with J != 0 (FITTED, not structural) | J=-2.53e-02
-== B: Nelson-Barr-type: light block from real-aligned chi (charge w), heavy D, Z2-odd phi1,phi2 (charge w)
+== B: one supplied Nelson-Barr-type block (a demonstrated separation, not the only possible one): light block from real-aligned chi (charge w), heavy D, Z2-odd phi1,phi2 (charge w)
 PASS B1 exact turn covariance of the 4x4 down matrix
 PASS B2 Z2 forbids Q D_R: det M4 = det(m_d) M_D is REAL for every vacuum
 PASS B3 at the potential's minimum (a1,a2)=(5.007,3.291): J != 0 with arg det in {0,pi} | J=-1.18e-03 theta=-3.1e+00

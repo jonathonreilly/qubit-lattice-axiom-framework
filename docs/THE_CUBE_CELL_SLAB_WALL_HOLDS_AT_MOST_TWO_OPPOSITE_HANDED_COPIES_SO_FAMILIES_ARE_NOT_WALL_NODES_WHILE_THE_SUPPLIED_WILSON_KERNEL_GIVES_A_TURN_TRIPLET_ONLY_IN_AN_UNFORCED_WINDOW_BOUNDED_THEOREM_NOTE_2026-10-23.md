@@ -31,8 +31,9 @@ framework-native family triplet.
 Repo first. Builds on chiral-tick-form (the slab, its m = 0.6 point, and A-T2: a local slab has W3 = 0, so the far wall
 carries the mirror), overlap-from-walk (4D overlap doubler counts 1, 5, 11, 15 for m0 = 1, 3, 5, 7; Wilson-kernel
 identification supplied), two-tiling-family-space (cell fibre = spin x 2 tastes without the copy mass, x 1 with it;
-turn-CP lemma), families-from-tastes (cell tastes E + E, never 1 + 3), family-count-5mode and families-mod-3 (N = 0 mod 3
-from the light copy's nonzero turn charge, conditional on mirror gapping). No main note on domain-wall family counts
+turn-CP lemma), families-from-tastes (cell tastes E + E, never 1 + 3), family-count-5mode and families-mod-3 (an untwisted
+turn-anomaly polynomial that vanishes only for N = 0 mod 3; arithmetic in a supplied model, not a derived family count,
+since a combined turn-twist removes it; [#10022](THE_LIGHT_COPY_CARRIES_A_NONZERO_TURN_CHARGE_SO_A_SYMMETRICALLY_GAPPED_MIRROR_NEEDS_FAMILY_COUNT_ZERO_MOD_THREE_BOUNDED_THEOREM_NOTE_2026-10-22.md), narrowed 2026-11-14). No main note on domain-wall family counts
 was found (git grep on origin/main).
 
 ## W. Supplied tick-form slab (the source's adopted slab; Wilson-type kernel, 4 components per site)
@@ -92,8 +93,8 @@ forced, for the low window.
 Where families must come from, if not wall nodes: (a) extra layers do not add copies (Ls changes only the |r|^Ls overlap);
 (b) no wall-bound states at other momenta on the cell slab at the tested points (C3); (c) so it is the cell content: either a 4-mode-per-site
 composite that realises the Wilson kernel (the X-window triplet then becomes a family candidate, but needs a rule for its
-window and a composite construction; composite-before-atomic), stacked copies (families-mod-3 / family-count-5mode,
-N = 0 mod 3 conditional), or a two-rung parent-cube space (two-tiling-family-space B: a turn triplet in one parent cube,
+window and a composite construction; composite-before-atomic), stacked copies with a supplied count (families-mod-3 /
+family-count-5mode give only a conditional arithmetic condition, not a count), or a two-rung parent-cube space (two-tiling-family-space B: a turn triplet in one parent cube,
 broken by the second tiling). Whichever is used, a turn triplet with turn-invariant masses gives J = 0 (lemma), so CP needs
 a turn-breaking vacuum (spontaneous-turn-cp).
 

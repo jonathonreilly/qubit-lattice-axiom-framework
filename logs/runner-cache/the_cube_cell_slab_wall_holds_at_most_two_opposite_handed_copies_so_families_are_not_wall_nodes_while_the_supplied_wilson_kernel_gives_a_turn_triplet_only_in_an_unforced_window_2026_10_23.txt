@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_cube_cell_slab_wall_holds_at_most_two_opposite_handed_copies_so_families_are_not_wall_nodes_while_the_supplied_wilson_kernel_gives_a_turn_triplet_only_in_an_unforced_window_2026_10_23.py
 runner_sha256: bedf1b2375283287b49c1faf45fdc68ff8492a089780695a3567e934810f6652
-input_fingerprint_sha256: 27f5a53c11f191fb84b30e1ae93a8b7fcfd8dae5579c3e7b9365de75ffe12168
+input_fingerprint_sha256: b89494ce924e22ffefaf6ac7329324c4f16a65d2f0f4206cac365e4717056220
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 23.56
+elapsed_sec: 22.35
 status: ok
 ----- stdout -----
 == W. supplied tick-form slab (the source's adopted slab; Wilson-type kernel, 4 components per site); layer mass m scanned over its windows
@@ -25,7 +25,7 @@ PASS: C4b [F] in the two-copy window (Mc, 2) the near wall carries one copy of E
 PASS: C5 [T] the turn (site-phase lift; keeps both tilings, s and eps) on the two wall copies at (m,Mc) = (1.5,1): each copy is a spin-1/2 pair (phases differ by 2 pi/3) times a copy phase, and the s = -1 copy's phase is the s = +1 copy's times w^dq, dq != 0 (pre-set: dq != 0): the wall carries turn charges {q, q + dq} at most, never a triplet  [lift defect 0e+00; s+ phases -0.000, +0.667 pi, s- -0.667, -0.000 pi; dq = 2]
    C6 [T] cited (chiral-tick-form A-T2): for every m a local slab has zero net wall chirality, so in every window the far wall carries the mirror of the near-wall content; a 3-node near wall (W, m in (2,4)) has a 3-node far mirror
 Supplied: both slab kernels, Ls, m, Mc (copy mass in slab units), free fields; nothing in CL-1 fixes the layer-mass window.
-elapsed 23.3s, peak RSS 59 MB
+elapsed 22.1s, peak RSS 61 MB
 TOTAL: PASS=13 FAIL=0
 
 ----- stderr -----

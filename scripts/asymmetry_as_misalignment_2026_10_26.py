@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Asymmetry as misalignment: an octonion/F_8 route fails, the [[8,3,3]] cell code's group is AGammaL(1,8),
+"""Asymmetry as misalignment: the tested octonion/F_8 constructions fail, the [[8,3,3]] cell code's phase-forgetting binary
+symmetry group (qubit permutations x binary symplectic local frames, Pauli and sign lifts not counted) is AGammaL(1,8),
 and sector-wise residual antiunitaries fix theta_bar_tree in {0, pi} (sign branch not selected) with J != 0 on the supplied
 slab's X-node families.
 
@@ -8,7 +9,10 @@ ignored and the script directory not prepended; -s, which also hides user site-p
 installed there on the machine that regenerated the cache; the source version used -I); this file checks the result
 each part prints against the criteria fixed before the runs (sections O, G, M of the note). Labels: [T] exact,
 [F] finite diagnostic, [N] negative (failed search over the stated family only). Every line reports a RESULT:
-'PASS' means the stated result reproduced, including results that are failures of a hypothesis."""
+'PASS' means the stated result reproduced, including results that are failures of a hypothesis.
+Since 2026-11-14 (PR 10129 second hold, finding F7) every check that reads a part's output also requires that part's
+exit code to be 0: a part that crashes or exits nonzero fails every check built on it, while a part's own documented
+scientific FAIL rows (printed with exit 0) remain valid output."""
 AUDIT_TIMEOUT_SEC = 2700
 AUDIT_INPUT_PATHS = (
     "scripts/asymmetry_misalignment_part_freeze_tick_rebuild_2026_10_26.py",
@@ -55,22 +59,27 @@ print("== G: the [[8,3,3]] cell code's symmetry group")
 rc, o = run('code_group')
 check("G1 [T]", rc == 0 and "uniform-frame symmetries by frame: {'id': 56, 'ZYX': 56, 'XYZ': 56}  total 168" in o
       and "element orders: {1: 1, 2: 7, 3: 56, 6: 56, 7: 48}" in o,
-      "perm x uniform-frame symmetries of Gottesman's code: 168 = 56 per frame (id, XYZ, ZYX); element orders 1:1 2:7 3:56 6:56 7:48")
-check("G2 [T]", "centre order: 1" in o and "derived series orders: 168 56 8" in o and "regular on the 8 qubits: OK" in o
+      "phase-forgetting binary symmetry group of Gottesman's code (qubit permutations x uniform binary symplectic frames; Pauli and "
+      "sign lifts not counted): 168 = 56 per frame (id, XYZ, ZYX); element orders 1:1 2:7 3:56 6:56 7:48")
+check("G2 [T]", rc == 0 and "centre order: 1" in o and "derived series orders: 168 56 8" in o and "regular on the 8 qubits: OK" in o
       and "P == AGammaL(1,8) in its natural action (explicit F_8 labelling): True" in o,
-      "the group is AGammaL(1,8) = 2^3 x| (7 x| 3) in its natural action (explicit F_8 labelling); centre 1; derived series "
+      "this binary group is AGammaL(1,8) = 2^3 x| (7 x| 3) in its natural action (explicit F_8 labelling); centre 1; derived series "
       "168 > 56 > 8; not PSL(2,7) (7 involutions, order-6 elements) and not AGL(1,8) x Z3 (no order 21)")
-check("G3 [T]", "(Galois exponent i, frame) pairs: {(0, 'id'): 56, (1, 'ZYX'): 56, (2, 'XYZ'): 56}" in o,
+check("G3 [T]", rc == 0 and "(Galois exponent i, frame) pairs: {(0, 'id'): 56, (1, 'ZYX'): 56, (2, 'XYZ'): 56}" in o,
       "frame lock: the uniform frame power equals the Galois (Frobenius) exponent of the element")
-check("G4 [T]", "full LC x perm automorphism group order (GL(S) method): 168" in o and "automorphisms with a uniform frame: 168 of 168" in o
-      and "perm images of full group == P: True" in o,
-      "independent method (GL(S) permuting the 8 subspaces K_j): the full local-Clifford x permutation group is the same 168, all uniform-frame")
+check("G4 [T]", rc == 0 and "binary local-frame x perm automorphism group order (GL(S) method): 168" in o
+      and "automorphisms with a uniform frame: 168 of 168" in o and "perm images of full group == P: True" in o
+      and "projective Paulis commuting with the five generators (not counted in the orders above): 2048" in o,
+      "independent method (GL(S) on the binary stabiliser space, permuting the 8 subspaces K_j): the binary symplectic local-frame x "
+      "permutation automorphism group of the phase-forgetting stabiliser is the same 168, all uniform-frame; Pauli and sign lifts are "
+      "not counted (2048 projective Paulis commute with the five generators and are invisible to the binary frame map), so 168 is "
+      "not the order of the full physical local-Clifford x permutation group")
 rc, o = run('code_controls')
 check("G5 [T]", rc == 0 and "max |O_h cap code group| over all 8! labellings: 24" in o,
       "largest overlap with the cube group O_h over all 8! vertex labellings is 24 (T_h type); never a 4-fold turn")
-check("G6 [T]", "|Aut(X-projection)| = 1344" in o,
+check("G6 [T]", rc == 0 and "|Aut(X-projection)| = 1344" in o,
       "the X, Z and X+Z support projections of the stabiliser group are each the [8,4,4] extended Hamming code RM(1,3) (Aut = AGL(3,2), 1344)")
-check("G7 [F] control", "contains all 48 cube symmetries (standard labelling): True" in o
+check("G7 [F] control", rc == 0 and "contains all 48 cube symmetries (standard labelling): True" in o
       and "cube C3 about (111), no frame: logical X_k -> [[2], [0], [1]]" in o
       and "random [[8,3]] codes with an order-7 perm x uniform-frame symmetry: 0/100" in o,
       "numerology control: the [[8,3,2]] cube colour code also has F_8/AGL(3,2) structure and a frame-free logical 3-cycle, "
@@ -78,14 +87,15 @@ check("G7 [F] control", "contains all 48 cube symmetries (standard labelling): T
 rc, o = run('logical_orbits')
 check("G8 [T]", rc == 0 and "orbit size 7: min weights {4: 7}; pairwise symplectic products {0: 21}; closed under product (+0): True" in o
       and "stabiliser orders in G of the decompositions (order -> how many decompositions): {1: 504, 2: 420, 3: 168, 6: 28}" in o,
-      "the group acts on the 63 logical classes with orbits 7, 28, 28; the 7-orbit is a commuting Lagrangian; no splitting of the "
-      "logical space into 3 qubits is invariant (largest stabiliser order 6)")
+      "the binary group acts on the 63 logical Pauli classes with orbits 7, 28, 28; the 7-orbit is a commuting Lagrangian; no "
+      "decomposition of the binary logical Pauli space into three orthogonal symplectic planes (three logical Pauli qubits) is "
+      "invariant in the enumerated class of 1120 decompositions (largest stabiliser order 6); other tensor factorisations not searched")
 
 print("== O: the octonion / J3(O) route")
 rc, o = run('octonion_seven_sets')
 check("O1 [N]", rc == 0 and "maximal anticommuting 7-sets of logical classes: 288" in o and "G-invariant 7-sets: 0" in o,
-      "T1: no group-invariant anticommuting 7-set of logical Paulis (0 of 288): the code carries no octonion (Clifford-7) structure; "
-      "the F21-invariant one (1) is forced by 288 = 1 mod 7 and does not discriminate")
+      "T1: no anticommuting 7-set of logical Paulis is invariant under the binary group (0 of 288); this rules out only such a set of "
+      "logical Paulis, not octonion structure in general; the F21-invariant one (1) is forced by 288 = 1 mod 7 and does not discriminate")
 rc, o = run('octonion_table')
 rc2, o2 = run('octonion_jordan')
 check("O2 [T]", rc2 == 0 and "signed-permutation automorphisms of O: 1344 ; pure permutation automorphisms: 21" in o2
@@ -93,10 +103,10 @@ check("O2 [T]", rc2 == 0 and "signed-permutation automorphisms of O: 1344 ; pure
       "the cyclic octonion table's signed automorphisms number 1344; its pure-permutation ones are i -> ai+b, a in {1,2,4} (F21): "
       "the normaliser of the 7-cycle, true of any cyclic labelling, so the F21 match to the code is generic")
 jd = [num(rf"Jordan identity defect on H_{k}\(H\) \(true quaternion subalgebra\): ([0-9.e+-]+)", o2) for k in (3, 4, 5)]
-check("O3 [T]", rc == 0 and all(x is not None and x < 1e-10 for x in jd),
+check("O3 [T]", rc == 0 and rc2 == 0 and all(x is not None and x < 1e-10 for x in jd),
       "control for the Jordan-von Neumann-Wigner bound: H_n(H) satisfies the Jordan identity for n = 3, 4, 5 (the n <= 3 cap is octonionic, "
       "and caps a matrix size; it does not select a family number)", f"defects {jd}")
-check("O4 [S]", "preimage of F21: order 168" in o2 and "orbit sizes on the 7 imaginary lines under the preimage of F21: [7]" in o2,
+check("O4 [S]", rc2 == 0 and "preimage of F21: order 168" in o2 and "orbit sizes on the 7 imaginary lines under the preimage of F21: [7]" in o2,
       "the preimage of F21 in Aut(O) has AGammaL(1,8)'s order statistics (Schur-Zassenhaus) but fixes the real unit, while the code "
       "group is transitive on the 8 qubits: the match is abstract only")
 ga = num(r"generated associative algebra dim (\d+)", o2, int); ca = num(r"complex associator ([0-9.e+-]+)", o2)
@@ -134,7 +144,7 @@ rc, o = run('slab_family_characters')
 check("M1 [F]", rc == 0 and "A1 PASS" in o and "A2 PASS" in o,
       "A1/A2: at m = 3 the supplied Wilson-type slab (Ls = 8) has near-wall zero modes exactly at the three X points (2 states each, one hand); "
       "an antiunitary C K with k -> -k commutes with the slab Bloch Hamiltonian")
-check("M2 [F]", "A3 FAIL" in o and "TEST A: FAIL" in o,
+check("M2 [F]", rc == 0 and "A3 FAIL" in o and "TEST A: FAIL" in o,
       "A3 as pre-registered FAILS: the C2 rotations' family actions carry +-i (overall operator phase unfixed). Disclosed post-hoc fix "
       "(spin-statistics g^n = (-1)^F) makes every C2 real; translations act as diag(-1,1,1) and permutations, real and non-scalar")
 rc, o = run('misalignment_cp')
@@ -162,16 +172,16 @@ st = {t: ('PASS' if re.search(rf"^PASS: {t} ", o, re.M) else 'FAIL' if re.search
       for t in ('D1', 'D2', 'D2r', 'D3', 'D4', 'D5', 'D6', 'D7')}
 th2 = num(r"D2 decisive cross-talk, generic potentials: min_Delta median \|theta_bar_ind\| = ([0-9.e+-]+)", o)
 th2r = num(r"D2r restricted shallow potential \(supplied\): min_Delta median \|theta_bar_ind\| = ([0-9.e+-]+)", o)
-check("X1 [F]", "TOTAL: PASS=2 FAIL=6" in o and st == {'D1': 'FAIL', 'D2': 'FAIL', 'D2r': 'FAIL', 'D3': 'FAIL', 'D4': 'PASS',
+check("X1 [F]", rc == 0 and "TOTAL: PASS=2 FAIL=6" in o and st == {'D1': 'FAIL', 'D2': 'FAIL', 'D2r': 'FAIL', 'D3': 'FAIL', 'D4': 'PASS',
                                                       'D5': 'PASS', 'D6': 'FAIL', 'D7': 'FAIL'},
       "the pre-registered cross-talk runner reproduces its outcome: PASS = D4 (generic vertex theta = O(1)), D5 (Ls convergence); "
       "FAIL = D1 (on-site vertex: scalar Yukawa ~ 1, J undefined), D2, D2r, and D3/D6/D7 on precision only (1e-10..1e-11 vs a 1e-12 threshold)",
       str(st))
-check("X2 [F]", th2 is not None and th2 > 0.1,
+check("X2 [F]", rc == 0 and th2 is not None and th2 > 0.1,
       "DECISIVE (D2): with each order entering the other species' densities at kappa = 1, the induced theta_bar is O(1) and flat in the "
       "sector separation (Delta = 1..18, Ls = 40): separating the sectors protects nothing; theta_ind is linear in kappa, so the mechanism "
       "needs kappa < ~1e-10 (the Nelson-Barr quality problem in lattice form)", f"min_Delta median |theta_ind| = {th2}")
-check("X3 [F]", th2r is not None and 1e-10 < th2r < 1e-8,
+check("X3 [F]", rc == 0 and th2r is not None and 1e-10 < th2r < 1e-8,
       "D2r (supplied restriction: the shallow order's density also respects the deep sector's residual antiunitary) removes the flat leak; "
       "the remainder decays with depth and reaches a few 1e-10 at Delta = 18 (4e-10 in the source's run; platform-dependent), "
       "just above the 1e-10 threshold", f"{th2r}")
@@ -187,7 +197,7 @@ rc, o = run('charged_orders')
 st = {t_: ('PASS' if re.search(rf"^PASS: {t_} ", o, re.M) else 'FAIL' if re.search(rf"^FAIL: {t_} ", o, re.M) else None)
       for t_ in ('E0', 'E1', 'E2', 'E3', 'E3h', 'E4', 'E5', 'E6', 'E7')}
 c2 = num(r"E7 quality bound: c2_min = ([0-9.e+-]+)", o); e3h = num(r"E3h lattice-scale order eps = 0\.2: min_Delta median theta_bar_ind = ([0-9.e+-]+)", o)
-check("R1 [F]", "TOTAL: PASS=8 FAIL=1" in o and st == dict(E0='PASS', E1='PASS', E2='PASS', E3='PASS', E3h='FAIL', E4='PASS', E5='PASS',
+check("R1 [F]", rc == 0 and "TOTAL: PASS=8 FAIL=1" in o and st == dict(E0='PASS', E1='PASS', E2='PASS', E3='PASS', E3h='FAIL', E4='PASS', E5='PASS',
                                                          E6='PASS', E7='PASS'),
       "charged orders (U(1)_H, bond Yukawa vertices allowed), with the thresholds as run: every density coupling linear in an order "
       "is forbidden exactly (E0); a real tree determinant, theta_bar_tree in {0, pi} with the branch not selected, median |J|/Jmax "
@@ -195,7 +205,7 @@ check("R1 [F]", "TOTAL: PASS=8 FAIL=1" in o and st == dict(E0='PASS', E1='PASS',
       "Ls-converged (E6)", str(st))
 for line in re.findall(r"CRITERIA [^\n]*", o):
     print("  " + line)
-check("R2 [F]", c2 is not None and 1 < c2 < 1e3 and e3h is not None and e3h > 1e-2,
+check("R2 [F]", rc == 0 and c2 is not None and 1 < c2 < 1e3 and e3h is not None and e3h > 1e-2,
       "but the charge-allowed bilinears (bond currents Im phi*(r) phi(r+e), |phi_d|^2 patterns, phi_u phi_d) leak at second order, "
       "theta = c2*eps^2: quality bound eps = v/Lambda < ~1e-6; a lattice-scale order (eps = 0.2) gives theta = O(0.1) (E3h FAIL)",
       f"c2_min {c2}, theta(eps=0.2) {e3h}")

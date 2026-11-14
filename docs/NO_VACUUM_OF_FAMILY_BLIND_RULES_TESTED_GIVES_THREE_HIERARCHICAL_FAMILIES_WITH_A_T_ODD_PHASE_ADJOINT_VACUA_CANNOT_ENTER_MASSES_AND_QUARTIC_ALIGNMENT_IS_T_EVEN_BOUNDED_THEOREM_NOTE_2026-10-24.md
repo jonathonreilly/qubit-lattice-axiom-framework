@@ -1,7 +1,7 @@
 ---
 claim_id: no_vacuum_of_family_blind_rules_tested_gives_three_hierarchical_families_with_a_t_odd_phase_adjoint_vacua_cannot_enter_masses_and_quartic_alignment_is_t_even_bounded_theorem_note_2026-10-24
 claim_type: bounded_theorem
-claim_scope: "Family-blind rules with family U(3) (gap-vertex-family-tensor Lemma). Exact: (A0) SU(3) has no singlet in adj x 6 or adj x adj x 6, so no vacuum built from family-adjoint (triality-0) order parameters can enter a 16.16 mass term; (A1) Spin(10) 16 x 16 has no singlet and 16 x 16bar one, so the only gauge-singlet Lorentz-scalar family bilinear is light x mirror; (A2) Wick: on-site density-density energy of a Slater state is ((trG)^2 - trG^2)/2, so repulsive family-blind density terms are attractive in the family-adjoint exchange channel; (C) for any convex U(3)-invariant cost the det channel of the forced far-wall term (C = 1) condenses with equal singular values (locked SU(3) kept); (D) tr U = 0 forces the Z3 character spectrum, which has equal singular values, keeps T x P23 and gives commuting mass functions (J = 0, V = 1). Finite: (B) supplied half-filled naive lattice Dirac band, on-site exchange g: first-order family-density (Stoner) transition at g_c = 2.40 (bandwidth 1.73) straight to the U(1)^3 vertex (1,0,-1), alpha/g_c = 3e-3; (E) two Hermitian adjoints with seeded U(3)-invariant potentials to quartic order: P-linear potentials always align; with tr(ABAB) misalignment occurs (0.16 wide box, 0.50 with dominant tr(ABAB) > 0) but every minimum found (79 sets) has det[A,B] = 0 (J = 0). Not covered: fluctuation-induced (Coleman-Weinberg) signs, sextic and higher potentials, triality-carrying (3, 6) composite vacua, the far-wall SMG dynamics, 3+1D interacting numerics."
+claim_scope: "Family-blind rules with family U(3) (gap-vertex-family-tensor Lemma). Exact: (A0) SU(3) has no singlet in adj x 6 or adj x adj x 6, so no vacuum built from family-adjoint (triality-0) order parameters can enter a 16.16 mass term; (A1) Spin(10) 16 x 16 has no singlet and 16 x 16bar one, so the only gauge-singlet Lorentz-scalar family bilinear is light x mirror; (A2) Wick: on-site density-density energy of a Slater state is ((trG)^2 - trG^2)/2, so repulsive family-blind density terms are attractive in the family-adjoint exchange channel; (C) for g > 0, a symmetric convex cost K(sigma) of the singular values of the det channel's M (forced far-wall term, C = 1) and a domain closed under replacing sigma by its arithmetic mean, an equal-singular-value configuration has no higher energy, and at a positive-product global minimum AM-GM excludes unequal singular values (118 of 150 seeded costs condensed, all with equal sigma); this does not determine the unitary factor in M = sigma U, and under M -> g M g^+ a generic U is not kept by SU(3) (witness M = diag(1, w, w^2): the same singular values and global minimum as 1, stabiliser a torus); (D) tr U = 0 forces the Z3 character spectrum, which has equal singular values, keeps T x P23 and gives commuting mass functions (J = 0, V = 1). Finite: (B) supplied half-filled naive lattice Dirac band, on-site exchange g: first-order family-density (Stoner) transition at g_c = 2.40 (bandwidth 1.73) straight to the U(1)^3 vertex (1,0,-1), alpha/g_c = 3e-3; (E) two Hermitian adjoints with seeded U(3)-invariant potentials to quartic order: P-linear potentials admit an aligned minimizer at fixed spectra, while degenerate or flat minima need not align (flat control: the Fourier W, J = 1/(6 sqrt3)); the 18 tested P-linear sets converged to aligned minima; with tr(ABAB) misalignment occurs (0.16 wide box, 0.50 with dominant tr(ABAB) > 0) but every minimum found (79 sets) has det[A,B] = 0 (J = 0). No T-odd minimum was found in the stated quartic searches; exclusion over all quartic couplings is open, and sextic terms are an untested extension. Not covered: fluctuation-induced (Coleman-Weinberg) signs, sextic and higher potentials, triality-carrying (3, 6) composite vacua, the far-wall SMG dynamics, 3+1D interacting numerics."
 upstream_dependencies:
   - the_minimal_turn_neutral_far_wall_term_for_three_families_has_a_free_family_matrix_whose_only_rule_blind_choice_keeps_u3_so_no_family_label_bounded_theorem_note_2026-10-24
   - the_family_class_tick_gives_no_family_label_from_the_copy_mass_slab_depth_zoom_rung_or_record_cadence_and_its_copy_mass_keeps_the_family_fixing_antiunitary_bounded_theorem_note_2026-10-24
@@ -11,10 +11,10 @@ upstream_dependencies:
 runner: scripts/no_vacuum_of_family_blind_rules_tested_gives_three_hierarchical_families_with_a_t_odd_phase_2026_10_24.py
 ---
 
-# No vacuum of the family-blind rules tested gives three hierarchical families with a T-odd phase: adjoint vacua cannot enter masses, and quartic alignment is T-even
+# No vacuum of the family-blind rules tested gives three hierarchical families with a T-odd phase: adjoint vacua cannot enter masses, and the quartic searches found T-even minima
 
 Claim type: bounded_theorem. Labels: [T] exact, [F] finite diagnostic, [S] reading or estimate.
-Primary runner: `scripts/no_vacuum_of_family_blind_rules_tested_gives_three_hierarchical_families_with_a_t_odd_phase_2026_10_24.py` (TOTAL: PASS=12 FAIL=0, 8 s, 175 MB peak, 2.1 k characters, seeded, AUDIT_TIMEOUT_SEC = 120; since 2026-11-14 it exits nonzero on any failed check).
+Primary runner: `scripts/no_vacuum_of_family_blind_rules_tested_gives_three_hierarchical_families_with_a_t_odd_phase_2026_10_24.py` (TOTAL: PASS=14 FAIL=0, 8 s, 175 MB peak, 3.0 k characters, seeded, AUDIT_TIMEOUT_SEC = 120; since 2026-11-14 it exits nonzero on any failed check).
 The source tested it under a unique filename (scratchpad spontaneous_family_breaking_test_run.py, deleted). Axioms and CL text
 unchanged. No rule adopted. Criteria: criteria_pre_run.txt, written before code.
 Deviations from the pre-run criteria (recorded as results, not hidden):
@@ -26,6 +26,11 @@ Deviations from the pre-run criteria (recorded as results, not hidden):
   both spectra are 1+1+1 in 15% (wide box) and 54% (dominant tr(ABAB)) of minima. The ratios are O(1) (no hierarchy
   measure was computed; [S]).
 - B: no intermediate U(2)xU(1) window appeared; the transition is first order straight to U(1)^3.
+
+**Repair 2026-11-14 (PR 10129 second hold, findings F2, F3 and F8).**
+- F2 (section C). The source said the det channel "condenses with equal singular values (locked SU(3) kept)" for any convex cost. The Jensen and AM-GM argument concerns singular values only; it does not fix U in M = sigma U, and the stated action is M -> g M g^+. Counterexample, kept as check C2: M = diag(1, w, w^2) has unit singular values and det 1, as 1 does, and both reach the global minimum -1 of K = sum sigma^4 with g = 4; a det-1 rotation exchanging two eigendirections moves M, and M's SU(3) stabiliser is a torus. The statement is narrowed to the singular values, with its domain conditions stated; "locked diagonal SU(3)", "most family-symmetric condensate" and the "no family label" reading drawn from this channel alone are withdrawn.
+- F3 (section E). "P-linear potentials always align" is narrowed: a linear function on the doubly stochastic polytope attains its minimum at a permutation, so an aligned minimizer exists at fixed spectra, but flat or degenerate minima need not align. Control, kept as check E1f: with every orientation-dependent coefficient zero, the nonaligned Fourier W (J = 1/(6 sqrt3)) is as low as the aligned W. "A T-odd vacuum needs at least sextic terms" is withdrawn: no T-odd minimum was found in the stated quartic searches, exclusion over all quartic couplings is open, and sextic terms are an untested extension. The title's quartic clause is narrowed to the searches.
+- F8. The links to spontaneous-turn-cp now say that its sampled generic one-field model ties CP and theta, and that a supplied Nelson-Barr block is one demonstrated separation; other structural restrictions were not exhausted.
 
 Repo first: git grep of origin/main docs for "vacuum alignment", "flavon", "familon", "family ferromagnet" finds
 nothing relevant; open PRs: #10047 (spontaneous-turn-cp), #10068 (cp-source-new-tick). Built on gap-vertex-family-tensor
@@ -46,8 +51,9 @@ under every family-fixing antiunitary (J != 0), with no fitted input?
   from family-adjoint (triality-0) order parameters, Hermitian or unitary, cannot feed a 16.16 mass term at any order.
   By gap-vertex D2 the turn on q = 2 families is this centre, so a mass-feeding family vacuum must carry triality,
   i.e. break the family centre = turn (or be combined with a triality-carrying register, and registers carry no family
-  charge: register line "Registers carry no family charge"). This links 5b to spontaneous-turn-cp (#10047): a
-  turn-breaking vacuum gives CP and theta together unless a Nelson-Barr block is supplied.
+  charge: register line "Registers carry no family charge"). This links 5b to spontaneous-turn-cp (#10047): in its
+  sampled generic one-field model a turn-breaking vacuum gives CP and theta together, and a supplied Nelson-Barr block
+  is one demonstrated separation; other structural restrictions were not exhausted.
 - A1. Spin(10): 16 x 16 has 0 singlets, 16 x 16bar has 1 (computed on the 16 built from the Spin(10) Clifford algebra).
   Two same-hand Weyls make a Lorentz scalar only in 16 x 16 (gauge-charged: 10 + 120 + 126), and psi^dagger psi is a
   Lorentz vector. So a gauge-singlet Lorentz-scalar family bilinear exists only as light (near wall) x mirror (far
@@ -73,12 +79,20 @@ L = 24^3, on-site exchange g, family-total charge fixed (sum delta = 0).
 ## C. (a') The forced far-wall term's own channel [T]
 The norm-8 term with the rule-blind C = 1 (gap-vertex) is (sum_i psi3^+_i psi0_i) x eps(psi4^+)^3 eps(psi5)^3, and the
 epsilon pair equals 6 det M with M_ij = psi4^+_i psi5_j (adjoint action M -> g M g^+).
-- Lemma: for any convex, U(3)-invariant cost K(sigma) of M's singular values (true in the Gaussian/HF class, where
-  the energy is linear in the one-body density matrix and the constraint is linear), F = K - g prod(sigma) is minimised
-  at equal singular values: Jensen gives K(mean) <= K(sigma), AM-GM gives prod(mean) >= prod(sigma).
-- Finite check: 118/150 random convex costs condense, 0 asymmetric. The vacuum is M = sigma U: a locked diagonal SU(3)
-  (colour-flavour-locking type) survives. The mirror-gapping interaction does not label families; it prefers the most
-  family-symmetric condensate.
+- Lemma (narrowed 2026-11-14): take g > 0, a symmetric convex cost K(sigma) of M's singular values (true in the
+  Gaussian/HF class, where the energy is linear in the one-body density matrix and the constraint is linear), and a
+  domain closed under replacing sigma by its arithmetic mean. Jensen gives K(mean) <= K(sigma) and AM-GM gives
+  prod(mean) >= prod(sigma), so an equal-singular-value configuration has no higher F = K - g prod(sigma), and at a
+  positive-product global minimum AM-GM excludes unequal singular values. This does not show that every cost has a
+  minimum, and it does not determine the unitary factor.
+- Finite check: 118/150 random convex costs condense, 0 asymmetric (C1).
+- The vacuum is M = sigma U with U not fixed by this cost. Under the stated action M -> g M g^+ a generic U is not
+  kept by SU(3), and its eigenphases and orientation stay undetermined. Witness (C2): M = diag(1, w, w^2) has unit
+  singular values and det 1, exactly as 1, and both reach the global minimum -1 of K = sum sigma^4 with g = 4 (at fixed
+  product p, K >= 3 p^(4/3), minimised at p = 1); a det-1 rotation exchanging the first two eigendirections moves M
+  (defect sqrt6), and M's SU(3) stabiliser is a torus. The source's "a locked diagonal SU(3) (colour-flavour-locking
+  type) survives", "it prefers the most family-symmetric condensate" and the "does not label families" reading drawn
+  from this channel alone are withdrawn. Section D treats the eigenphases.
 
 ## D. (b) Z3 family-character vacuum [T]
 - With M = sigma U, the det channel fixes only det U; the eigen-phases are flat at this order. tr U = 0 holds exactly
@@ -93,27 +107,33 @@ epsilon pair equals 6 det M with M_ij = psi4^+_i psi5_j (adjoint action M -> g M
 ## E. (c) T-odd vacuum texture from two misaligned order parameters [T]/[F]
 Two Hermitian adjoints A, B (stand-ins for up- and down-type family order parameters; Georgi-style sequential
 breaking), all U(3)-invariant terms to quartic order, seeded couplings (FITTED class by construction).
-- E1 [T]/[F]. Every term except tr(ABAB) and (trAB)^2 is linear in P = |W|^2 (W the relative rotation), so at fixed
-  spectra the minimum is a vertex of the Birkhoff polytope (a permutation): aligned, [A,B] = 0, no mixing, J = 0
-  (18/18 sets, max commutator 1e-5).
+- E1 [T]/[F]. Every term except tr(ABAB) and (trAB)^2 is linear in P = |W|^2 (W the relative rotation). A linear
+  function on the Birkhoff polytope attains its minimum at a vertex (a permutation), so at fixed spectra an aligned
+  minimizer exists: [A,B] = 0, no mixing, J = 0. Not every minimum need align: if the orientation-dependent
+  coefficients vanish the potential is flat in W, and nonaligned W, including the Fourier matrix with
+  J = 1/(6 sqrt3), are minima at fixed nondegenerate spectra (control E1f, narrowed 2026-11-14). The 18 tested sets
+  converged to aligned minima (18/18, max commutator 1e-5).
 - E2 [F]. With tr(ABAB) and (trAB)^2: misaligned minima occur in 16% of a wide box and 50% when tr(ABAB) is dominant
   and positive (tr(ABAB) - tr(A^2B^2) = tr([A,B]^2)/2 <= 0, so k4 > 0 rewards a commutator). But EVERY minimum found
   (79 bounded sets, plus 180 + 30 in exploratory scans not in the runner) has det[A,B] = 0: the misalignment is real
-  (orthogonal up to rephasing), J = 0. Spontaneous T x C2' breaking was never preferred at quartic order. [S] Reading:
+  (orthogonal up to rephasing), J = 0. In these searches spontaneous T x C2' breaking was never found at quartic order. [S] Reading:
   with A diagonal, V depends on B only through B_ii and |B_ij|^2, while the triple-product phase is fixed by the
   spectrum; the minima seem to sit on the boundary where that phase is 0 or pi. Not proved.
 - E3 [T]. If masses were Hermitian functions of adjoints, arg det would be 0 or pi (theta_tree = 0 or pi), a
   parity-type (Babu-Mohapatra) protection. But A0 forbids adjoints from entering 16.16 masses, so this protection is not
   available on the supplied content; a triality-carrying (6-valued) vacuum has independent phases, and theta_bar
   returns with J (cp-source-new-tick section 5, #10047).
-- Verdict (c): a T-odd vacuum needs at least sextic terms with chosen signs/sizes (not tested); couplings are not fixed
-  by any rule: gate item 1 would fail. theta_bar: protected only in the forbidden adjoint case.
+- Verdict (c): no T-odd minimum was found in the stated quartic searches. Exclusion over all quartic couplings is
+  open; sextic terms are an untested extension (the source's "a T-odd vacuum needs at least sextic terms" is withdrawn,
+  2026-11-14). Couplings are not fixed by any rule: gate item 1 would fail. theta_bar: protected only in the forbidden
+  adjoint case.
 
 ## General obstruction (answer to the brief's last item)
 - A single U(3) adjoint with polynomial potential breaks to U(2)xU(1) generically (for SU(3) the quartic is degenerate
   and the cubic picks diag(1,1,-2), Li 1974, cited as supplied); U(1)^3 needs a tuned or higher-order potential.
   Here the rule-fixed channels give: the Gauss-law exchange channel, no breaking at alpha (B1); the forced far-wall
-  det channel, a locked SU(3) (C); neither gives U(2)xU(1) or U(1)^3 at the couplings the rules fix.
+  det channel, equal singular values with the unitary factor undetermined (C; its eigenphases depend on a sign that is
+  not fixed, D). Neither gives a hierarchy at the couplings the rules fix.
 - U(1)^3 vacua that do occur (B2 at strong supplied coupling, D, E's 1+1+1 minima) give O(1) eigenvalue ratios, never
   a hierarchy: polynomial or mean-field potentials with O(1) coefficients have O(1)-separated stationary points.
 - A continuous spontaneous U(3) breaking also leaves familons (Goldstones); at cell-scale f they are harmless, at low f
@@ -123,14 +143,16 @@ breaking), all U(3)-invariant terms to quartic order, seeded couplings (FITTED c
 NO, on every candidate tested.
 - (a) A family-adjoint bilinear: the only gauge-singlet scalar one is light x mirror (vector-like, excluded); the
   density (Stoner) one has a finite threshold far above alpha, goes first order straight to U(1)^3 (1,0,-1) at strong
-  supplied coupling, is Lorentz-violating, T-even and equally spaced. The forced far-wall det channel locks a diagonal
-  SU(3) (exact, convex class).
+  supplied coupling, is Lorentz-violating, T-even and equally spaced. The forced far-wall det channel gives equal
+  singular values (convex symmetric class) and leaves the unitary factor undetermined, so it does not by itself keep a
+  diagonal SU(3) (C2).
 - (b) The Z3 character vacuum is the unique tr U = 0 orbit and is the minimum iff a fluctuation sign is positive; it
   gives no hierarchy and keeps T x P23 (J = 0, V = 1).
-- (c) Misaligned two-adjoint vacua exist for chosen couplings but are T-even at quartic order in every case found.
+- (c) Misaligned two-adjoint vacua exist for chosen couplings but are T-even at quartic order in every case found;
+  exclusion over all quartic couplings is open.
 - Above all (A0): adjoint (triality-0) vacua cannot enter 16.16 masses at all. A family vacuum that feeds masses must
   carry family triality, i.e. break the centre = turn on q = 2 families, which puts 5b on the spontaneous-turn-cp route
-  (CP and theta tied unless a Nelson-Barr block is supplied).
+  (its sampled generic one-field model ties CP and theta; a supplied Nelson-Barr block is one demonstrated separation).
 R1: only in form (B2 strong coupling, D). R2: FAIL everywhere. R3: FAIL everywhere.
 
 ## Route (not a wall)
@@ -147,6 +169,8 @@ No rule is proposed, so the gate is not applied. A rule that picked the |tr U|^2
 - Supplied: the naive lattice Dirac band and on-site exchange g (B); the convex cost class (C); unitary-U and two
   Hermitian adjoints as order-parameter stand-ins (D, E); all potential couplings (seeded, FITTED class); alpha as
   the Gauss-law scale; the Spin(10) spinor construction; Li 1974 and Babu-Mohapatra as literature.
-- Forced: A0, A1, A2, the C lemma, D1-D3, E1 (Birkhoff), E3.
+- Forced: A0, A1, A2, the C lemma (singular values only; C2 shows the unitary factor is not fixed), D1-D3, E1
+  (Birkhoff: an aligned minimizer exists at fixed spectra), E3.
 - Not shown: Coleman-Weinberg signs, sextic potentials, triality-carrying vacua, interacting 3+1D dynamics, the far
-  wall SMG itself, a proof of the E2 T-even pattern.
+  wall SMG itself, a proof of the E2 T-even pattern, an exclusion of T-odd minima over all quartic couplings, and the
+  unitary factor of the det-channel vacuum.

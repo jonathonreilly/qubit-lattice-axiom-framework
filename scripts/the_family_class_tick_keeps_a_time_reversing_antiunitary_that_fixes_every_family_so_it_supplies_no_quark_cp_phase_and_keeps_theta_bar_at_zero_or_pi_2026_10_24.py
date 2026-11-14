@@ -182,8 +182,20 @@ for _ in range(300):
     tmax = max(tmax, min(abs(th), abs(abs(th) - np.pi)))
 check("D2 generalized CP (any X, X X* = 1) on Q forces det[Hu,Hd] = 0 and J = 0", gmax < 1e-12 and dmax < 1e-13 and jmax < 1e-13,
       f"condition err {gmax:.0e}, max |det C|/||C||^3 {dmax:.0e}, max|J| {jmax:.0e} over 300")
-check("D3 kept antiunitary with X = 1 (copies) or diagonal: real masses, theta_tree in {0, pi}", tmax < 1e-12,
-      f"max distance to {{0,pi}} {tmax:.0e}")
+check("D3 real-mass check (an added mass-level condition, not implied by the left action of D2): real supplied Mu, Md "
+      "give a real determinant product, theta_tree in {0, pi}", tmax < 1e-12, f"max distance to {{0,pi}} {tmax:.0e} over 300")
+# 2026-11-14 (PR 10129 second hold, F4): the left-doublet condition X H* X^+ = H constrains H = M M^+ only, not arg det M.
+Mu_c = np.exp(0.2j) * np.diag([1.0, 2.0, 3.0])
+Md_c = np.diag([4.0, 5.0, 6.0]).astype(complex)
+Hu_c, Hd_c = Mu_c @ Mu_c.conj().T, Md_c @ Md_c.conj().T
+X1 = np.eye(3)
+lcond = max(np.abs(X1 @ Hu_c.conj() @ X1.conj().T - Hu_c).max(), np.abs(X1 @ Hd_c.conj() @ X1.conj().T - Hd_c).max())
+dCc = abs(np.linalg.det(Hu_c @ Hd_c - Hd_c @ Hu_c))
+th_c = theta_tree(Mu_c, Md_c)
+check("D3c counterexample: Mu = e^(0.2i) diag(1,2,3), Md = diag(4,5,6) satisfy the left-doublet condition with X = 1 "
+      "(det[Hu,Hd] = 0, J = 0) yet arg det(Mu Md) = 0.6: the left action gives no determinant-phase constraint",
+      lcond < 1e-14 and dCc < 1e-12 and abs(jarlskog(Mu_c, Md_c)) < 1e-14 and abs(th_c - 0.6) < 1e-12,
+      f"condition err {lcond:.0e}, |det[Hu,Hd]| {dCc:.0e}, arg det {th_c:.3f}")
 
 print("== E. worst-case leak: tick's T-odd L-R piece read as a family-universal mass entry")
 # eps = |m(K)|/m at K a = E a; J, theta linear in eps -> slope, then value at physical scale
@@ -221,6 +233,8 @@ check("F1 generic supplied phases: J != 0 and theta_bar O(1); none passes 1e-10"
       f"median|J| {np.median(Jall):.1e} (J > 1e-6 in {corr:.2f}); median theta {np.median(TH):.2f} rad; |theta|<1e-10: {frac:.3f}")
 
 print("VERDICT: tick does not supply CP. J != 0 is ALLOWED only with supplied mass-sector phases that break the kept")
-print("T x C2' (not just T); then theta_bar is O(1) unless a Nelson-Barr-type reading is also supplied.")
+print("T x C2' (not just T); with the sampled generic phases theta_bar is then O(1). A supplied Nelson-Barr block is one")
+print("demonstrated separation (#10047); other structural restrictions were not exhausted. theta_bar in {0, pi} needs the")
+print("added real-mass condition (D3); the left action alone does not fix arg det (D3c).")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 raise SystemExit(1 if FAIL else 0)

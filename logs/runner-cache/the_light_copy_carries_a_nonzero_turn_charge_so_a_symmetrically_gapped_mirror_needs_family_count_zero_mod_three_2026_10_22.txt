@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_light_copy_carries_a_nonzero_turn_charge_so_a_symmetrically_gapped_mirror_needs_family_count_zero_mod_three_2026_10_22.py
-runner_sha256: 445f1d8e506165a0388c49f653ce8aca2ec05db0824f0b031b662e17cbce5322
-input_fingerprint_sha256: 45e3f4fe68e281f1d690ccf9645edaed8a8e013e7b30610a7da65acfb33199e4
+runner_sha256: 0f38a46a722f238b9f86e4cc740fc768be8b8d2daff6a37101902f512be6753b
+input_fingerprint_sha256: 6c7fe5fcdddc79f6ad0602366e2eb35b56aa59c4796f7450967012fced60ab84
 timeout_sec: 90
 exit_code: 0
-elapsed_sec: 2.82
+elapsed_sec: 2.46
 status: ok
 ----- stdout -----
 == A. CL-1 cell: one mode per site per internal component, face phase -1, cube tick ==
@@ -20,31 +20,32 @@ PASS B5 q(turn^-1) = -q(turn) and q is independent of the step eps (a topologica
 PASS B6 q is blind to the copy-mass sign; the copy-sign projector (1 -+ s) picks which E taste stays light (q -> -q), and neither gives q = 0
 PASS B7 without the copy mass the two light tastes per chirality are E with q = {1, 2} (one of each spin pair): sum 0  [taste phases per L state -> q [1, 1, 2, 2]]
 == C. Spin(10) on the 16: zero modes, centre, fermion-number steps ==
-PASS C1 Dynkin index ratio T(16)/T(10) = 2, so a unit Spin(10) instanton has 2T(16) = 4 zero modes per 16  [T16 = 4.0, T10 = 2.0]
+PASS C1 Dynkin index ratio T(16)/T(10) = 2; with the supplied unit-instanton normalisation (argued, not checked) a unit Spin(10) instanton has 2T(16) = 4 zero modes per 16  [T16 = 4.0, T10 = 2.0]
 PASS C2 explicit: an SU(2)_A instanton in Spin(4) x Spin(6) sees 4 doublets in the 16; zero-mode weights sum to zero on every centraliser Cartan (Spin(10)-twists leave the vertex phase 1)
 PASS C3 the centre element exp(i pi sum H) acts on the 16 as one phase of order 4 (Z4, square = (-1)^F)
 PASS C4 a Spin(10)-invariant term changes fermion number by Delta n = 0 mod 4 (needs centre charge 1)
-PASS C5 the mirror 16bar alone has U(1)_F x Spin(10)^2 = 4 per family != 0: symmetric gapping must break U(1)_F
-== D. N family-blind copies, mirror gapped keeping Spin(10) and one turn ==
-PASS D1 light vertex phase w^(4Nq), q != 0: the turn survives mirror gapping only for N = 0 mod 3; smallest N = 3  [q = 2, allowed N <= 12: [3, 6, 9, 12]]
-PASS D2 the mixed turn-gravity (16Nq) and cubic (16Nq^3) conditions give the same set (cited normalisations)
-PASS D3 contrast: with both E tastes light (no copy mass) the light charges sum to 1 + 2 = 0: every N allowed
-PASS D4 a Z3 inside the residual fermion-number group Z_m (m | 4N, mirror anomaly-free) exists only if 3 | N: no fermion-number twist rescues N != 0 mod 3
-PASS D5 a family twist h is allowed on the mirror only if det(h)^4 = 1, which leaves the light phase w^(4Nq) != 1 for N = 1, 2, 4, 5
+PASS C5 the mirror 16bar alone has U(1)_F x Spin(10)^2 coefficient 2T(16)/T(10) = 4 per family != 0 (that symmetric gapping must then break U(1)_F is the cited matching argument, not checked here)
+== D. anomaly arithmetic for N family-blind copies (matching, normalisation and gapping inputs supplied, not checked) ==
+PASS D1 untwisted anomaly polynomial: with q != 0 the light vertex phase w^(4Nq) is 1 only for N = 0 mod 3 (N <= 12, smallest 3); an arithmetic condition, not a derived family count  [q = 2, allowed N <= 12: [3, 6, 9, 12]]
+PASS D2 with the supplied (cited, not checked) turn-gravity 16Nq and cubic 16Nq^3 normalisations the same set results
+PASS D3 contrast: with both E tastes light (no copy mass) the light charges sum to 1 + 2 = 0: the polynomial vanishes for every N
+PASS D4 separate-anomaly-free premise: a Z3 inside a residual fermion-number group Z_m that is anomaly-free on the mirror by itself (m | 4N) exists only if 3 | N, so such a twist leaves D1 unchanged (a combined twist is not covered: D9)
+PASS D5 separate-anomaly-free premise: a family twist h that is anomaly-free on the mirror by itself (det(h)^4 = 1) leaves the light phase w^(4Nq) != 1 for N = 1, 2, 4, 5 (a combined twist is not covered: D9)
 PASS D6 the copy-mass tick's exact internal commutant (three generic k) is dim 1 per mode: a twist acts alike on L and R  [dim 1]
-PASS D7 loophole: family-dependent copy-sign projectors (q_f in {1,2}) allow every N >= 2; N = 1 is obstructed under every choice
+PASS D7 family-dependent copy-sign projectors (q_f in {1,2}) make the untwisted polynomial vanish for every N >= 2; for N = 1 no copy-sign choice does
 PASS D8 candidate SU(3)_family on the light 16s: cubic anomaly 16 x tr(l8^3) != 0, so a family SU(N >= 3) cannot be gauged and gives no count
+PASS D9 combined turn-twist control: for q = 1 and 2 the twist k = -q mod 3 makes the combined polynomial 4N(q + k) vanish for every N <= 12, including N = 1, where neither 4Nq nor 4Nk vanishes on its own: the D4/D5 premise (each twist anomaly-free by itself) is needed for D1's conclusion, and a combined twist is not excluded  [N = 1: q = 1 -> k = [2], q = 2 -> k = [1]; this q = 2 -> k = [1]]
 == E. doubling counts with the 16 ==
 PASS E1 per family the massless tick has 2 light 16 + 2 light 16bar (E + E), the copy mass 1 + 1; never 3 (counts are powers of 2 times 1)
 PASS E2 the hw = 1 corner triplet (the 3 of 8 = 1+3+3+1) carries turn charges {0,1,2}: sum 0, so the anomaly is silent there (the triplet route gets no count from (b))
 PASS E3 Nielsen-Ninomiya on the cell: tr chi = 0 for any N copies (n_16 = n_16bar before mirror removal)
 == F. cone-rule corollary 'charges sum to zero' over many cones ==
 PASS F1 for N family-blind copies every cone-rule sum is tr(chi) x tr(Q) = 0 for EVERY N: linear sums select nothing
-PASS F2 the only N-sensitive datum is the multiplicative vertex phase after the mirror is removed (= D1)
-== G. estimate against measurement (not a check of the rule) ==
+PASS F2 the untwisted multiplicative polynomial (D1) is N-sensitive while the linear sums (F1) are not
+== G. comparison with measurement (an estimate, not counted, not a prediction) ==
   LEP N_nu = 2.984 +- 0.0082: N = 3 at 2.0 sigma, N = 6 at 368 sigma; N = 1 (copy mass, one family) at 242 sigma
-ESTIMATE (not counted; computed from the supplied LEP N_nu only): G1 among the allowed set {3, 6, 9, ...} only N = 3 is near the Z width (2.0 sigma; N = 6 at 368 sigma)
-TOTAL: PASS=28 FAIL=0
+ESTIMATE (not counted; computed from the supplied LEP N_nu only): G1 for the arithmetic set {3, 6, 9, ...} of D1 only N = 3 is near the Z width (2.0 sigma; N = 6 at 368 sigma); not a prediction: D1's condition is supplied and a combined twist removes it (D9)
+TOTAL: PASS=29 FAIL=0
 
 ----- stderr -----
 

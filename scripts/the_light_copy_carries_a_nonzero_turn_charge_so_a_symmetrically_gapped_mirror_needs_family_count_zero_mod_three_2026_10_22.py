@@ -8,12 +8,20 @@ Self-contained (numpy + scipy). Seeded. Exact finite checks:
   A. CL-1 cell tick, the 24 cube-centred rotations (site gauge), and which survive the copy mass.
   B. The C3 taste charge q of the light copy left by the copy mass (gauge-invariant: det of the turn on
      the light chirality block = lambda^2), on both chiralities, both copy-mass signs, two steps.
-  C. Spin(10) data from weights: 4 instanton zero modes per 16 (2T(16) = 4), centre Z4, Delta n = 0 mod 4.
-  D. Anomaly algebra for N family-blind copies with the mirror gapped keeping Spin(10) and one turn:
-     vertex phase w^(4Nq); every twist (fermion number Z_m, Spin(10), family U(N)) fails to rescue N != 0 mod 3.
+  C. Spin(10) data from weights: T(16)/T(10) = 2 (so 2T(16) = 4 zero modes per 16 with the supplied unit-instanton
+     normalisation), centre Z4, Delta n = 0 mod 4.
+  D. Anomaly arithmetic for N family-blind copies. The untwisted vertex phase w^(4Nq) is 1 only for N = 0 mod 3; twists
+     required to be anomaly-free on the mirror by themselves (fermion number Z_m, Spin(10), family U(N)) leave that
+     unchanged; a combined turn-twist with q + k = 0 mod 3 makes the polynomial vanish for every N, including N = 1 (D9).
   E. Doubling counts (candidate a) and the hw-corner triplet (anomaly-silent).
   F. Cone-rule sums (candidate c) are linear in N, so they select nothing.
-  G. Z-width estimate (not a check of the rule).
+  G. Z-width comparison (an estimate, not counted, not a prediction).
+
+Scope (2026-11-14, PR 10129 second hold, finding F1). Five modes per site, the tick and Spin(10) are a supplied
+mathematical model, not approved changes to the current framework. The runner checks finite algebra and modular
+arithmetic in that model. 't Hooft matching, crystalline equivalence and the instanton, gravitational and cubic
+normalisations are supplied or argued inputs, not checked here; no physical family-count theorem or mirror-gapping
+result is established.
 """
 import itertools as it
 import numpy as np
@@ -231,7 +239,8 @@ print("== C. Spin(10) on the 16: zero modes, centre, fermion-number steps ==")
 WTS = [np.array(w) / 2 for w in it.product([1, -1], repeat=5) if sum(1 for x in w if x < 0) % 2 == 0]
 WV = [s * np.eye(5)[i] for i in range(5) for s in (1, -1)]
 T16 = sum(w[0] ** 2 for w in WTS); T10 = sum(w[0] ** 2 for w in WV)
-check("C1 Dynkin index ratio T(16)/T(10) = 2, so a unit Spin(10) instanton has 2T(16) = 4 zero modes per 16",
+check("C1 Dynkin index ratio T(16)/T(10) = 2; with the supplied unit-instanton normalisation (argued, not checked) a unit "
+      "Spin(10) instanton has 2T(16) = 4 zero modes per 16",
       len(WTS) == 16 and abs(T16 / T10 - 2) < 1e-12, f"T16 = {T16}, T10 = {T10}")
 zm = [w for w in WTS if w[0] == 0.5 and w[1] == 0.5]
 check("C2 explicit: an SU(2)_A instanton in Spin(4) x Spin(6) sees 4 doublets in the 16; zero-mode weights sum to "
@@ -242,11 +251,12 @@ check("C3 the centre element exp(i pi sum H) acts on the 16 as one phase of orde
       np.allclose(cz, cz[0]) and abs(cz[0] ** 2 + 1) < 1e-12)
 dn_ok = all((abs(cz[0] ** dn - 1) < 1e-9) == (dn % 4 == 0) for dn in range(1, 25))
 check("C4 a Spin(10)-invariant term changes fermion number by Delta n = 0 mod 4 (needs centre charge 1)", dn_ok)
-check("C5 the mirror 16bar alone has U(1)_F x Spin(10)^2 = 4 per family != 0: symmetric gapping must break U(1)_F",
+check("C5 the mirror 16bar alone has U(1)_F x Spin(10)^2 coefficient 2T(16)/T(10) = 4 per family != 0 (that symmetric "
+      "gapping must then break U(1)_F is the cited matching argument, not checked here)",
       2 * T16 / T10 == 4)
 
 # ------------------------------------------------------------------ D. anomaly algebra
-print("== D. N family-blind copies, mirror gapped keeping Spin(10) and one turn ==")
+print("== D. anomaly arithmetic for N family-blind copies (matching, normalisation and gapping inputs supplied, not checked) ==")
 q0 = qs[((0.7, 1), 0.3, nC, 1)]
 NS = range(1, 13)
 
@@ -256,21 +266,23 @@ def vertex_ok(N, q, nzm=4):
 
 
 allowed = [N for N in NS if vertex_ok(N, q0)]
-check("D1 light vertex phase w^(4Nq), q != 0: the turn survives mirror gapping only for N = 0 mod 3; smallest N = 3",
+check("D1 untwisted anomaly polynomial: with q != 0 the light vertex phase w^(4Nq) is 1 only for N = 0 mod 3 (N <= 12, "
+      "smallest 3); an arithmetic condition, not a derived family count",
       allowed == [3, 6, 9, 12], f"q = {q0}, allowed N <= 12: {allowed}")
 grav = [N for N in NS if (16 * N * q0) % 3 == 0]
 cub = [N for N in NS if (16 * N * q0 ** 3) % 3 == 0]
-check("D2 the mixed turn-gravity (16Nq) and cubic (16Nq^3) conditions give the same set (cited normalisations)",
+check("D2 with the supplied (cited, not checked) turn-gravity 16Nq and cubic 16Nq^3 normalisations the same set results",
       grav == allowed and cub == allowed)
-check("D3 contrast: with both E tastes light (no copy mass) the light charges sum to 1 + 2 = 0: every N allowed",
+check("D3 contrast: with both E tastes light (no copy mass) the light charges sum to 1 + 2 = 0: the polynomial vanishes for every N",
       all(abs(W3 ** (4 * N * (1 + 2)) - 1) < 1e-9 for N in NS))
 # twist by a residual fermion-number Z_m: must be mirror anomaly-free (4N = 0 mod m and 16N = 0 mod m)
 resc = {}
 for N in NS:
     ms = [m for m in range(2, 200) if (4 * N) % m == 0 and (16 * N) % m == 0]
     resc[N] = any(m % 3 == 0 for m in ms)
-check("D4 a Z3 inside the residual fermion-number group Z_m (m | 4N, mirror anomaly-free) exists only if 3 | N: "
-      "no fermion-number twist rescues N != 0 mod 3", all(resc[N] == (N % 3 == 0) for N in NS))
+check("D4 separate-anomaly-free premise: a Z3 inside a residual fermion-number group Z_m that is anomaly-free on the mirror "
+      "by itself (m | 4N) exists only if 3 | N, so such a twist leaves D1 unchanged (a combined twist is not covered: D9)",
+      all(resc[N] == (N % 3 == 0) for N in NS))
 # family twists h in U(N) act alike on light L and mirror (exact commutant of the copy-mass tick is U(1) per mode)
 ok_h = True
 for N in (1, 2, 4, 5):
@@ -279,19 +291,28 @@ for N in (1, 2, 4, 5):
         dh = np.exp(2j * np.pi * ph.sum() / 12)
         if abs(dh ** (-4) - 1) < 1e-9:
             ok_h &= abs(W3 ** (4 * N * q0) * dh ** 4 - 1) > 1e-6
-check("D5 a family twist h is allowed on the mirror only if det(h)^4 = 1, which leaves the light phase w^(4Nq) != 1 "
-      "for N = 1, 2, 4, 5", ok_h and abs(W3 ** (4 * 1 * q0) - 1) > 1e-6)
+check("D5 separate-anomaly-free premise: a family twist h that is anomaly-free on the mirror by itself (det(h)^4 = 1) "
+      "leaves the light phase w^(4Nq) != 1 for N = 1, 2, 4, 5 (a combined twist is not covered: D9)",
+      ok_h and abs(W3 ** (4 * 1 * q0) - 1) > 1e-6)
 Uqs = [U(rng.uniform(-1.5, 1.5, 3), M=0.7) for _ in range(3)]
 cdim2 = null_space(np.vstack([np.kron(u, np.eye(8)) - np.kron(np.eye(8), u.T) for u in Uqs]), rcond=1e-9).shape[1]
 check("D6 the copy-mass tick's exact internal commutant (three generic k) is dim 1 per mode: a twist acts alike on L and R",
       cdim2 == 1, f"dim {cdim2}")
 fam_dep = [N for N in NS if any(sum(c) % 3 == 0 for c in it.product((1, 2), repeat=N))]
-check("D7 loophole: family-dependent copy-sign projectors (q_f in {1,2}) allow every N >= 2; N = 1 is obstructed under every choice",
-      fam_dep == list(range(2, 13)))
+check("D7 family-dependent copy-sign projectors (q_f in {1,2}) make the untwisted polynomial vanish for every N >= 2; "
+      "for N = 1 no copy-sign choice does", fam_dep == list(range(2, 13)))
 
 l8 = np.diag([1, 1, -2]) / np.sqrt(3)
 check("D8 candidate SU(3)_family on the light 16s: cubic anomaly 16 x tr(l8^3) != 0, so a family SU(N >= 3) cannot "
       "be gauged and gives no count", abs(16 * np.trace(l8 @ l8 @ l8)) > 1)
+# D9 (2026-11-14, PR 10129 second hold, F1): separately anomaly-free twist tests do not exclude a combined turn-twist
+comb = {(q, N): [k for k in (0, 1, 2) if (4 * N * (q + k)) % 3 == 0] for q in (1, 2) for N in NS}
+sep = all((4 * q) % 3 != 0 and all((4 * k) % 3 != 0 for k in comb[(q, 1)]) for q in (1, 2))
+check("D9 combined turn-twist control: for q = 1 and 2 the twist k = -q mod 3 makes the combined polynomial 4N(q + k) "
+      "vanish for every N <= 12, including N = 1, where neither 4Nq nor 4Nk vanishes on its own: the D4/D5 premise "
+      "(each twist anomaly-free by itself) is needed for D1's conclusion, and a combined twist is not excluded",
+      sep and all(comb[(q, N)] == ([0, 1, 2] if N % 3 == 0 else [(-q) % 3]) for q in (1, 2) for N in NS),
+      f"N = 1: q = 1 -> k = {comb[(1, 1)]}, q = 2 -> k = {comb[(2, 1)]}; this q = {q0} -> k = {comb[(q0, 1)]}")
 
 # ------------------------------------------------------------------ E. doubling counts (candidate a)
 print("== E. doubling counts with the 16 ==")
@@ -317,16 +338,17 @@ for N in range(1, 7):
         okF &= abs(np.trace(np.kron(chi, Q))) < 1e-6
 check("F1 for N family-blind copies every cone-rule sum is tr(chi) x tr(Q) = 0 for EVERY N: linear sums select nothing",
       okF)
-check("F2 the only N-sensitive datum is the multiplicative vertex phase after the mirror is removed (= D1)",
+check("F2 the untwisted multiplicative polynomial (D1) is N-sensitive while the linear sums (F1) are not",
       len(allowed) < len(NS))
 
 # ------------------------------------------------------------------ G. estimate
-print("== G. estimate against measurement (not a check of the rule) ==")
+print("== G. comparison with measurement (an estimate, not counted, not a prediction) ==")
 Nnu, dN = 2.9840, 0.0082
 sig = {N: abs(N - Nnu) / dN for N in (3, 6)}
 print(f"  LEP N_nu = {Nnu} +- {dN}: N = 3 at {sig[3]:.1f} sigma, N = 6 at {sig[6]:.0f} sigma; N = 1 (copy mass, one "
       f"family) at {abs(1 - Nnu) / dN:.0f} sigma")
-print("ESTIMATE (not counted; computed from the supplied LEP N_nu only): G1 among the allowed set {3, 6, 9, ...} only "
-      f"N = 3 is near the Z width ({sig[3]:.1f} sigma; N = 6 at {sig[6]:.0f} sigma)")
+print("ESTIMATE (not counted; computed from the supplied LEP N_nu only): G1 for the arithmetic set {3, 6, 9, ...} of D1 "
+      f"only N = 3 is near the Z width ({sig[3]:.1f} sigma; N = 6 at {sig[6]:.0f} sigma); not a prediction: D1's condition "
+      "is supplied and a combined twist removes it (D9)")
 print(f"TOTAL: PASS={NPASS} FAIL={NFAIL}")
 raise SystemExit(1 if NFAIL else 0)

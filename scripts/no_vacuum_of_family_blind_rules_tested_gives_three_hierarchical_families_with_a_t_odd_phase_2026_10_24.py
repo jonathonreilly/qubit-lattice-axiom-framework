@@ -7,6 +7,9 @@ Sections: A0 triality of mass terms, A1 Spin(10) bilinear singlets, A2 Wick/exch
 B family Stoner on a supplied half-filled lattice Dirac band, C det channel of the forced
 far-wall term, D Z3 character vacuum, E two-adjoint vacuum alignment (J, spectra, theta).
 Self-contained (numpy/scipy). Seeded. Prints < 6000 chars.
+2026-11-14 (PR 10129 second hold): C2 shows that the det channel fixes singular values only (finding F2), and E1f that
+P-linear potentials have an aligned minimizer but need not have only aligned minima (finding F3). Both new checks draw
+no random numbers, so every seeded value printed by the other checks is unchanged.
 """
 import numpy as np
 from scipy.optimize import minimize
@@ -189,8 +192,30 @@ for t in range(150):
         nz += 1
         if np.ptp(s) > 1e-4 * np.max(s):
             asym += 1
-check("C1 det channel: minimum of convex symmetric cost - g*prod(sigma) has equal sigma",
-      asym == 0 and nz > 20, f"{nz}/150 condensed, {asym} asymmetric; M = sigma*U keeps a locked SU(3)")
+check("C1 det channel: every condensed minimum found of a convex symmetric cost - g*prod(sigma) has equal sigma",
+      asym == 0 and nz > 20, f"{nz}/150 condensed, {asym} asymmetric; this fixes the singular values only, not U in M = sigma*U")
+# C2 (2026-11-14, F2): equal singular values do not fix the unitary factor, so they do not keep a diagonal SU(3)
+w3 = np.exp(2j * np.pi / 3)
+Mw = np.diag([1, w3, w3 ** 2])
+gx = np.array([[0, 1, 0], [-1, 0, 0], [0, 0, 1]], complex)  # det 1: exchanges the first two eigendirections
+Fq = lambda s: np.sum(s ** 4) - 4 * np.prod(s)  # K = sum sigma^4 (symmetric, convex), g = 4
+glob = min(minimize(Fq, s0, method="L-BFGS-B", bounds=[(0, None)] * 3).fun
+           for s0 in ([0.5, 1.0, 1.5], [2.0, 0.3, 1.0], [1.2, 1.1, 0.9]))
+svw = np.linalg.svd(Mw, compute_uv=False)
+cdef = np.linalg.norm(gx @ Mw @ gx.conj().T - Mw)
+
+
+def su3_stab_dim(Mx):  # dim of {X in su(3): [X, Mx] = 0} for normal Mx = complex dim of its commutant minus 1
+    return 9 - np.linalg.matrix_rank(np.kron(np.eye(3), Mx) - np.kron(Mx.T, np.eye(3)), 1e-10) - 1
+
+
+check("C2 counterexample: M = diag(1,w,w^2) has unit singular values and det 1 like 1, both reach the global minimum -1 "
+      "of sum sigma^4 - 4 prod sigma, yet a det-1 rotation exchanging two eigendirections moves M and M's SU(3) "
+      "stabiliser is a torus: the cost does not determine U",
+      np.allclose(svw, 1) and abs(np.linalg.det(Mw) - 1) < 1e-12 and abs(glob + 1) < 1e-6
+      and abs(Fq(svw) - glob) < 1e-6 and abs(Fq(np.ones(3)) - glob) < 1e-6 and abs(cdef - np.sqrt(6)) < 1e-12
+      and su3_stab_dim(Mw) == 2 and su3_stab_dim(np.eye(3)) == 8,
+      f"global min {glob:.6f}; |g M g^+ - M| = {cdef:.4f} (sqrt6); stabiliser dim {su3_stab_dim(Mw)} vs 8 for 1")
 
 # ---------------- D: Z3 character vacuum ----------------
 w = np.exp(2j * np.pi / 3)
@@ -245,7 +270,10 @@ def build(p):
 
 
 def V(p, cp):
-    A, B = build(p)
+    return Vmat(*build(p), cp)
+
+
+def Vmat(A, B, cp):
     A2, B2, AB = A @ A, B @ B, A @ B
     tr = lambda M: np.trace(M).real
     return (cp[0] * tr(A2) + cp[1] * tr(B2) + cp[2] * tr(A2 @ A) + cp[3] * tr(B2 @ B)
@@ -291,14 +319,30 @@ def scan(nsets, mode):
 
 
 r1 = scan(18, "plin")
-check("E1 P-linear potentials (no tr(ABAB), (trAB)^2): minimum aligned, [A,B] = 0",
+check("E1 P-linear potentials (no tr(ABAB), (trAB)^2): the tested sets converged to aligned minima, [A,B] = 0 "
+      "(Birkhoff: an aligned minimizer exists at fixed spectra; not every minimum need align, E1f)",
       len(r1) > 10 and np.max(r1[:, 0]) < 1e-3, f"{len(r1)} bounded sets, max |[A,B]|/|A||B| {np.max(r1[:, 0]):.1e}")
+# E1f (2026-11-14, F3): with every orientation-dependent coefficient zero the potential is flat in W
+Fw = np.array([[w3 ** (j * k) for k in range(3)] for j in range(3)]) / np.sqrt(3)
+Af, bsp = np.diag([1.0, 0.2, -1.2]).astype(complex), np.array([0.9, -0.3, -0.6])
+Bal, Bfo = np.diag(bsp).astype(complex), Fw @ np.diag(bsp) @ Fw.conj().T
+cflat = np.zeros(15); cflat[:8] = [-1, -1, 0.3, -0.2, 0.5, 0.7, 0.4, 0.6]; cflat[9] = 0.2  # cp[8], cp[10:15] = 0
+cpert = cflat.copy(); cpert[10] = 0.3  # control: switch on the P-linear tr(A^2 B^2)
+dflat = abs(Vmat(Af, Bfo, cflat) - Vmat(Af, Bal, cflat)); dpert = abs(Vmat(Af, Bfo, cpert) - Vmat(Af, Bal, cpert))
+Jf = np.imag(Fw[0, 0] * Fw[1, 1] * np.conj(Fw[0, 1]) * np.conj(Fw[1, 0]))
+cmf = np.linalg.norm(Af @ Bfo - Bfo @ Af) / (np.linalg.norm(Af) * np.linalg.norm(Bfo))
+check("E1f flat-orientation control: with every orientation-dependent coefficient zero the potential is flat in W at "
+      "fixed nondegenerate spectra, so the nonaligned Fourier W ([A,B] != 0, J = 1/(6 sqrt3)) is as low as the aligned one; "
+      "switching on tr(A^2 B^2) removes the flatness",
+      dflat < 1e-12 and dpert > 1e-3 and abs(Jf - 1 / (6 * np.sqrt(3))) < 1e-12 and cmf > 0.1,
+      f"|V(Fourier) - V(1)| flat {dflat:.0e}, control {dpert:.2f}; J {Jf:.4f}; |[A,B]|/|A||B| {cmf:.2f}")
 r2 = scan(60, "wide")
 r3 = scan(24, "k4")
 for nm_, rr in (("wide", r2), ("k4-dominant", r3)):
     print(f"  E2 {nm_}: {len(rr)} bounded; misaligned {np.mean(rr[:, 0] > 1e-3):.2f}; "
           f"T-odd {np.mean(rr[:, 1] > 1e-6):.2f} (max {np.max(rr[:, 1]):.1e}); 1+1+1 both {np.mean((rr[:, 2] == 3) & (rr[:, 3] == 3)):.2f}")
-check("E2 full quartic: misaligned vacua need chosen couplings (dominant tr(ABAB) > 0), and every minimum found is T-even",
+check("E2 full quartic: misaligned vacua need chosen couplings (dominant tr(ABAB) > 0), and every minimum found in these "
+      "searches is T-even (exclusion over all quartic couplings not shown)",
       len(r2) > 30 and len(r3) > 12 and np.mean(r3[:, 0] > 1e-3) > np.mean(r2[:, 0] > 1e-3)
       and np.max(r2[:, 1]) < 1e-6 and np.max(r3[:, 1]) < 1e-6,
       "J = 0 at every quartic minimum found (pre-run prediction of T-odd minima FAILED)")

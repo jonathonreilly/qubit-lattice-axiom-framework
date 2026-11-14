@@ -52,9 +52,9 @@ B. The family copy form (exact).
 
 (i) Three distinct masses: only with a phase that breaks inversion and time reversal in the family sector. CL-1 to CL-3 contain none in the bulk (items 3 and 6). (ii) Ordered hierarchy: one step at most (item 8), tuned at the 8% level for lepton size. (iii) Mixing: zero with the update's translations (item 7). (iv) Koide: exact by form for leptons, but in every sector, which the quarks exclude.
 
-## What measured reality asks for instead
+## What the quark failure leaves open
 
-Two things, read off the failures. First, quark sectors are hop-dominated: their family-changing weight exceeds the diagonal weight (kappa^2 about 1.2 to 1.7), and no link dressing raises a weight. Second, the up and down towers need two hierarchy steps, so the family mass term must contain at least two distinct hop distances. That is the same three-distance requirement `family-charge-search` derived for spurion charges, here met from the mass-form side. A sector-dependent law with at least two hop ranges and a bulk inversion-and-time-reversal-odd family term would meet both. No structure in CL-1 to CL-3 supplies one yet.
+The tested copy-form law fails the supplied quark comparisons: within the form, the quark Q values need kappa^2 = 3Q - 1 > 1, which the dressing sign forbids (item 9), and the measured towers break the one-step cap (item 8). Additional mass structure is needed within this approach; multiple hop ranges are one untested possibility, not a necessary or sufficient mechanism established here. (Narrowed 2026-11-14, PR 10129 second hold, finding F5. The source concluded that "the family mass term must contain at least two distinct hop distances", tied that to the three-distance requirement of `family-charge-search`, and said a sector-dependent law with at least two hop ranges and a bulk inversion-and-time-reversal-odd family term "would meet both". The failure of this one form shows none of these.)
 
 ## Boundary
 

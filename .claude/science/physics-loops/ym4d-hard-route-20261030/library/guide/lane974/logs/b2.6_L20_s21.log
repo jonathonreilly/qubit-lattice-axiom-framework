@@ -1,0 +1,4 @@
+traj974 L=20 Nt=24 beta=2.6 ntherm=300 nmeas=1000 nsep=2 seed=21 ape=8,20 tag=b2.6_L20_s21
+[    0.3s] therm 0 plaq 0.44562
+[   34.2s] therm 100 plaq 0.66949
+[   67.7s] therm 200 plaq 0.66911

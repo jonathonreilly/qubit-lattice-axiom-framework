@@ -9,6 +9,7 @@ A run guides or refutes; it proves nothing.
 ## Status log
 - 2026-11-14T16:53Z: file created with plan.
 - 17:04Z: Sections 1-3 written (criteria before any run); control C1 run; batch 1 (small boxes) started 17:04Z.
+- 17:24Z: batch 1 done (12 streams, 17:04-17:24Z); beta 2.3 and 2.6 small boxes analysed (4.4, 4.5). Batch 2 (L = 20) started about 17:25Z.
 
 ## Plan (at most eight steps; one per response)
 1. Read row 970 section 7.3 ((LSI-traj-seed)_a, (EC-traj)), Proposition HC and X(2m+2; B) in gap-direction-max.md,
@@ -205,3 +206,21 @@ Verdicts by the rules of 3.4 (beta 2.3).
   only a <= 21 at beta 2.3, which the published 1.216(23) also leaves open.
 - NOT REFUTED needs tau = 1, 2, 3 all above K_a by 2 err: on L = 8 tau = 3 is noise, so by the letter the own runs are
   INCONCLUSIVE at beta 2.3; tau = 1, 2 (1.222(58), 1.176(172)) sit above K_30 = 0.811 by 7 and 2.1 errors.
+
+**4.5 Results, beta 2.6, L = 4, 6, 8 (written 17:25Z; `guide/lane974/logs/ana_b2.6_small.txt`).**
+
+| L | sector | N: tau 0, 1, 2, 3 | 2N: tau 0, 1, 2, 3 |
+|---|---|---|---|
+| 4 | F | 0.123(4) 0.115(6) 0.111(9) 0.105(11) | 0.123(3) 0.116(6) 0.112(8) 0.108(11) |
+| 4 | G proj | 1.640(87) 0.936(49) 0.775(118) 0.71(20) | 1.647(44) 1.041(53) 0.755(91) 0.52(16) |
+| 6 | F | 0.121(3) 0.115(5) 0.111(7) 0.105(9) | 0.116(3) 0.107(6) 0.101(8) 0.095(10) |
+| 6 | G proj | 1.279(33) 1.076(58) 1.126(168) 1.07(36) | 1.280(23) 1.132(49) 1.023(114) 1.15(34) |
+| 8 | F | 0.126(6) 0.121(7) 0.120(9) 0.119(11) | 0.127(4) 0.123(6) 0.124(8) 0.126(10) |
+| 8 | G proj | 0.971(37) 0.873(38) 0.799(89) 0.74(17) | 0.935(37) 0.875(33) 0.827(65) 0.88(19) |
+
+Reading. All three boxes are below the deconfinement length at beta 2.6 (side 8 = 1.06/sqrt(sigma) with a sqrt(sigma) = 0.1326):
+the spatial Polyakov lines are large on every configuration (mean |slice sum| 7 to 19) and the flux sector sits at
+0.10-0.13 on every side, not on the string law. Verdicts by 3.4: F sector REFUTED ON THE BOX ONLY for every a up to
+about 200 (E^F + 2 err <= 0.14 < K_200 = 0.144); G sector fails (TR) on all three (2 E^F about 0.25 < E^G), so nothing in G
+transfers, and in any case no G bound reaches below K_30 (smallest E + 2 err: L = 8, 0.96 at tau = 2 in 2N; L = 4, 0.84 at
+tau = 3 in 2N but 1.10 in N). So the small boxes at beta 2.6 are pure finite-size flux physics, as row 954 7.4 predicted.

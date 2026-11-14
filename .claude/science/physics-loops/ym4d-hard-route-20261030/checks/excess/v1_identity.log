@@ -1,0 +1,24 @@
+T0
+ L 3 mass-1 0.0 pou err 1.734723475976807e-18
+ L 3 mass-1 -1.1102230246251565e-16 pou err 1.734723475976807e-18
+ overlap 0.2222222222222222 formula 0.2222222222222222
+ L 5 mass-1 0.0 pou err 2.168404344971009e-19
+ L 5 mass-1 0.0 pou err 2.168404344971009e-19
+ overlap 0.24 formula 0.24
+T1 abelian
+ E0-E1 396.6885309885113 var 396.68853098851184 rel -1.432948381924715e-15
+T2 remainder order and identity, white and smooth
+ white amp 0.04: rmax 3.8021e-02 rmax/amp^2 2.3763e+01 max r/n 9.4743e-03; E0-E1 7.46139e+02 var 7.46049e+02 cross -9.013e-02 id-err -9.09e-13
+   V: f 0.0925 E 7.3575e-01 P 3.3915e+00 T 2.9639e+00 T/P 0.874 B2/(f^2 E) 0.307 (T-2P)/(fE) -56.117; excess-based c: (E0-E1)/(I) 117.4016
+ white amp 0.02: rmax 9.5196e-03 rmax/amp^2 2.3799e+01 max r/n 9.2576e-03; E0-E1 1.86745e+02 var 1.86738e+02 cross -6.977e-03 id-err -2.84e-14
+   V: f 0.0456 E 1.7983e-01 P 8.3024e-01 T 7.2130e-01 T/P 0.869 B2/(f^2 E) 0.312 (T-2P)/(fE) -114.553; excess-based c: (E0-E1)/(I) 120.3611
+ white amp 0.01: rmax 2.4374e-03 rmax/amp^2 2.4374e+01 max r/n 9.3450e-03; E0-E1 4.66983e+01 var 4.66977e+01 cross -5.841e-04 id-err -3.55e-14
+   V: f 0.0227 E 4.4734e-02 P 2.0670e-01 T 1.7901e-01 T/P 0.866 B2/(f^2 E) 0.313 (T-2P)/(fE) -230.585; excess-based c: (E0-E1)/(I) 121.0699
+ smooth amp 0.4: rmax 2.9420e+00 rmax/amp^2 1.8388e+01 max r/n 2.3425e-01; E0-E1 8.96705e+02 var 9.61593e+02 cross 6.489e+01 id-err 5.68e-13
+   V: f 1.5558 E 2.2286e+02 P 1.0414e+03 T 8.1149e+02 T/P 0.779 B2/(f^2 E) 0.460 (T-2P)/(fE) -3.667; excess-based c: (E0-E1)/(I) 0.4839
+ smooth amp 0.2: rmax 1.7630e-01 rmax/amp^2 4.4075e+00 max r/n 1.1678e-01; E0-E1 2.05483e+02 var 2.10213e+02 cross 4.731e+00 id-err 1.99e-13
+   V: f 0.8031 E 5.2816e+01 P 2.5560e+02 T 1.9055e+02 T/P 0.746 B2/(f^2 E) 0.374 (T-2P)/(fE) -7.559; excess-based c: (E0-E1)/(I) 0.4606
+ smooth amp 0.1: rmax 4.2904e-02 rmax/amp^2 4.2904e+00 max r/n 1.1644e-01; E0-E1 5.01537e+01 var 5.04811e+01 cross 3.274e-01 id-err 7.11e-15
+   V: f 0.3992 E 1.3017e+01 P 6.3374e+01 T 4.6640e+01 T/P 0.736 B2/(f^2 E) 0.381 (T-2P)/(fE) -15.414; excess-based c: (E0-E1)/(I) 0.4559
+T4 sharpness
+ T/P 2.0

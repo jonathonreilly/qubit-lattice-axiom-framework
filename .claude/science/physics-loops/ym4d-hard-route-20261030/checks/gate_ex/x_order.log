@@ -1,0 +1,4 @@
+### start 21:39Z mem_free=50: python3 x_order.py
+a=0.2 f=0.07896 e mean=1.361035e-03 spread=2.111e-06 spread/e=0.0016 spread/(f E)=0.00143 spread/(f^2 E)=0.0181
+a=0.08 f=0.01277 e mean=5.591599e-06 spread=2.135e-10 spread/e=0.0000 spread/(f E)=0.00003 spread/(f^2 E)=0.0027
+### end 21:40Z exit=0

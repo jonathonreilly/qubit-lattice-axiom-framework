@@ -1,0 +1,14 @@
+{'kind': 'smooth', 'N': 9, 'target': 0.02, 'a': np.float64(0.02), 'T': 0.0015208014511989328, 'T_over_a': np.float64(0.07604007255994664), 'ratios': [1.0, 0.1621], 'k4': np.float64(0.02439245183940779), 'k4_sum_ok': True}
+{'kind': 'smooth', 'N': 9, 'target': 0.01, 'a': np.float64(0.01), 'T': 0.0007604201004477242, 'T_over_a': np.float64(0.07604201004477242), 'ratios': [1.0, 0.1621], 'k4': np.float64(0.024391403023840567), 'k4_sum_ok': True}
+{'kind': 'smooth', 'N': 27, 'target': 0.02, 'a': np.float64(0.02), 'T': 0.001658255462958716, 'T_over_a': np.float64(0.0829127731479358), 'ratios': [1.0, 0.76, 0.1393], 'k4': np.float64(0.05120897629271042), 'k4_sum_ok': True}
+{'kind': 'smooth', 'N': 27, 'target': 0.01, 'a': np.float64(0.01), 'T': 0.0008290969789780133, 'T_over_a': np.float64(0.08290969789780134), 'ratios': [1.0, 0.76, 0.1393], 'k4': np.float64(0.05120403971462936), 'k4_sum_ok': True}
+{'kind': 'tube', 'N': 9, 'target': 0.02, 'a': np.float64(0.02), 'T': 0.006382131513036992, 'T_over_a': np.float64(0.31910657565184963), 'ratios': [1.0, 0.385], 'k4': np.float64(0.06155372591071753), 'k4_sum_ok': True}
+{'kind': 'tube', 'N': 9, 'target': 0.01, 'a': np.float64(0.01), 'T': 0.0031910703184866635, 'T_over_a': np.float64(0.31910703184866634), 'ratios': [1.0, 0.385], 'k4': np.float64(0.06155383191875229), 'k4_sum_ok': True}
+{'kind': 'tube', 'N': 27, 'target': 0.02, 'a': np.float64(0.02), 'T': 0.006475101126386976, 'T_over_a': np.float64(0.3237550563193488), 'ratios': [1.0, 0.3811, 0.0111], 'k4': np.float64(0.22072564936353736), 'k4_sum_ok': True}
+{'kind': 'tube', 'N': 27, 'target': 0.01, 'a': np.float64(0.009999999999999998), 'T': 0.0032375548086813035, 'T_over_a': np.float64(0.3237554808681304), 'ratios': [1.0, 0.3811, 0.0111], 'k4': np.float64(0.22072580649883675), 'k4_sum_ok': True}
+{'kind': 'noise', 'N': 9, 'target': 0.02, 'a': np.float64(0.02), 'T': 0.0009259316807487461, 'T_over_a': np.float64(0.046296584037437305), 'ratios': [1.0, 0.0311], 'k4': np.float64(0.015561941104509064), 'k4_sum_ok': True}
+{'kind': 'noise', 'N': 9, 'target': 0.01, 'a': np.float64(0.01), 'T': 0.0004629756465832219, 'T_over_a': np.float64(0.04629756465832219), 'ratios': [1.0, 0.0311], 'k4': np.float64(0.015561999883783744), 'k4_sum_ok': True}
+{'kind': 'noise', 'N': 27, 'target': 0.02, 'a': np.float64(0.02), 'T': 0.00020224032058911368, 'T_over_a': np.float64(0.010112016029455684), 'ratios': [1.0, 0.0313, 0.0011], 'k4': np.float64(0.015293738358394772), 'k4_sum_ok': True}
+{'kind': 'noise', 'N': 27, 'target': 0.01, 'a': np.float64(0.01), 'T': 0.00010111999995660906, 'T_over_a': np.float64(0.010111999995660906), 'ratios': [1.0, 0.0313, 0.0011], 'k4': np.float64(0.015293774445099688), 'k4_sum_ok': True}
+FAILS: none
+VERDICT: PASS (K5 not coded in this run)

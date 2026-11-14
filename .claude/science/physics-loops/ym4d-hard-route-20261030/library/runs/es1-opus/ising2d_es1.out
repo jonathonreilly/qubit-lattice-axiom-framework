@@ -1,0 +1,34 @@
+K a eps Delta lowV upV Delta/eps Delta/sqrt(eps) maxheavy_p2/eps relerrC1 PASS light
+0.2000 3 1.779e-04 5.633e-02 5.559e-02 5.845e-02 3.17e+02 4.224 5.355 1.5e-15 True [(0, 0), (0, 1)]
+0.2000 4 2.108e-05 1.834e-02 1.826e-02 1.856e-02 8.70e+02 3.995 4.568 5.7e-16 True [(0, 0), (0, 1)]
+0.3000 3 1.423e-03 2.058e-01 1.991e-01 2.422e-01 1.45e+02 5.456 11.929 0.0e+00 True [(0, 0), (0, 1)]
+0.3000 4 5.366e-04 1.221e-01 1.199e-01 1.338e-01 2.28e+02 5.272 10.801 7.5e-16 True [(0, 0), (0, 1)]
+0.3800 3 3.117e-03 3.752e-01 3.585e-01 5.675e-01 1.20e+02 6.721 26.921 2.6e-15 True [(0, 0), (0, 1)]
+0.3800 4 2.076e-03 3.211e-01 3.111e-01 4.475e-01 1.55e+02 7.047 29.284 4.6e-16 True [(0, 0), (0, 1)]
+0.4407 3 3.669e-03 4.334e-01 4.130e-01 9.267e-01 1.18e+02 7.155 53.242 1.7e-16 True [(0, 0), (1, 0)]
+0.4407 4 2.794e-03 4.147e-01 4.005e-01 8.865e-01 1.48e+02 7.845 72.013 2.0e-15 True [(0, 0), (1, 0)]
+0.5000 3 3.216e-03 3.855e-01 3.681e-01 5.990e-01 1.20e+02 6.798 28.730 1.6e-15 True [(0, 0), (1, 0)]
+0.5000 4 2.197e-03 3.365e-01 3.258e-01 4.833e-01 1.53e+02 7.178 31.839 1.7e-15 True [(0, 0), (1, 0)]
+0.6000 3 1.649e-03 2.286e-01 2.207e-01 2.756e-01 1.39e+02 5.629 13.222 2.5e-15 True [(0, 0), (1, 0)]
+0.6000 4 6.869e-04 1.436e-01 1.407e-01 1.604e-01 2.09e+02 5.479 12.182 4.5e-15 True [(0, 0), (1, 0)]
+0.8000 3 2.028e-04 6.075e-02 5.990e-02 6.323e-02 3.00e+02 4.266 5.521 5.9e-16 True [(0, 0), (1, 0)]
+0.8000 4 2.561e-05 2.041e-02 2.031e-02 2.068e-02 7.97e+02 4.034 4.707 2.6e-15 True [(0, 0), (1, 0)]
+FAILS: 0
+        1.16 real         1.13 user         0.01 sys
+            15597568  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1625  page reclaims
+                  41  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+                 263  involuntary context switches
+         17804281112  instructions retired
+          4598911665  cycles elapsed
+             7569792  peak memory footprint

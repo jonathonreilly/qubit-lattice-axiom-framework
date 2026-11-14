@@ -1,0 +1,6 @@
+budget 19/48 left 5/48 | with source 11/24 left 1/24
+wall True
+rate slopes: r_l - kappa -3/4 ; sharpened - kappa 1/4
+sinh(1) <= 1.175201218534552  /4 = 0.293800304633638
+maxrss (bytes on darwin) 15597568
+PASS [True, True, True, True]

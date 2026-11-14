@@ -1,0 +1,25 @@
+[    0.0s rss    34MB] group=u1 L=12 K=10 m=0 Nt=22 beta=1.5 ntherm=3 nsep=2 nmeas=6 nor=2
+[    0.1s rss    34MB] thermalised, 39.6 ms per sweep
+[    0.5s rss   157MB] meas 1/6: sweep 88 ms/meas, measure 273 ms/meas
+[    0.9s rss   180MB] meas 2/6: sweep 89 ms/meas, measure 269 ms/meas
+[    1.3s rss   180MB] meas 3/6: sweep 89 ms/meas, measure 268 ms/meas
+[    1.7s rss   180MB] meas 4/6: sweep 89 ms/meas, measure 268 ms/meas
+[    2.1s rss   180MB] meas 5/6: sweep 89 ms/meas, measure 268 ms/meas
+[    2.5s rss   180MB] meas 6/6: sweep 89 ms/meas, measure 268 ms/meas
+/Users/jonBridger/ym4d-worker2/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane954/rj954.py:547: RuntimeWarning: Mean of empty slice
+  err = np.sqrt((nb-1)/nb*np.nansum((ej-np.nanmean(ej, 0))**2, 0))
+{"args": {"lib": "/tmp/lane954/build/liblgt954.dylib", "group": "u1", "L": 12, "K": 10, "m": 0, "beta": 1.5, "ntherm": 3, "nsep": 2, "nmeas": 6, "nor": 2, "seed": 954, "out": null, "tmax": 1000000000.0, "extra_t": 6}, "nmeas": 6, "Nt": 22, "stats_mean": [0.8147085194808157, 0.8111368123891051, 0.7222128048693867, 0.0, 0.0, 0.0], "stats_err": [0.0022481222856082415, 0.003162941059391189, 0.0031702165748444516, 0.0, 0.0, 0.0], "lag1_trace_m2": {"U0c": 0.13976007113488192, "U0s": -0.6273787740168769, "U1c": 0.12328152816930822, "U1s": 0.2055000883322148, "U0w": -0.4905258526856857}, "ms_per_sweep": 44.436911741892494, "ms_per_meas": 267.90539423624676, "peak_rss_mb": 181.026816, "wall_s": 2.553046941757202}
+  gap plaq0  Eeff(tau) nan+-0.000 nan+-0.000 nan+-0.000 0.198+-2.011 -0.407+-1.066 nan+-0.000
+  gap Bkmin  Eeff(tau) 0.725+-0.015 0.557+-0.086 0.487+-0.204 0.278+-0.176 0.242+-0.351 0.576+-0.309
+  gap wind   Eeff(tau) 0.065+-0.006 0.041+-0.007 0.030+-0.010 0.020+-0.012 0.019+-0.006 0.025+-0.013
+  U0c  top 0.43877 +- 0.12225 (bias-corrected 0.10662); max single 0.18670
+  U0s  top 0.81212 +- 0.27329 (bias-corrected 0.29940); max single 0.55700
+  U1c  top 0.25154 +- 0.03087 (bias-corrected 0.17298); max single 0.14421
+  U1s  top 0.91244 +- 0.12042 (bias-corrected 0.65227); max single 0.54351
+  U0w  top 3.47581 +- 0.50524 (bias-corrected 3.42624); max single 1.93254
+  extra pair t=6: U0c  top 0.61433 +- 0.19947 (bias-corrected 0.10761)
+  extra pair t=6: U0s  top 0.69258 +- 0.19867 (bias-corrected 0.21428)
+  extra pair t=6: U1c  top 0.35041 +- 0.08162 (bias-corrected 0.28172)
+  extra pair t=6: U1s  top 0.80676 +- 0.10163 (bias-corrected 0.67453)
+  extra pair t=6: U0w  top 3.97324 +- 0.18813 (bias-corrected 3.94403)
+[    2.6s rss   181MB] done

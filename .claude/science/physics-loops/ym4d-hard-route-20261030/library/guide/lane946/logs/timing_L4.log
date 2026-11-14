@@ -1,0 +1,18 @@
+[    0.0s rss     68MB] su2 geom=box L=4 K=6 beta=2.3 B=16 m=1 nsep=2 n=20 nor=2 links=3264 colours=9 NF=816 rows=1062
+[    0.4s rss    100MB] thermalised; plaquette mean 0.6069977819303045
+[    2.3s rss    566MB] round 1/1: c=-0.0001543 t3=-0.000109 t10=2.267e-05 c3=-1.42e-05 line=0.01575 sq2=-0.0006633 zm=-0.001294 patch=0.04328 xsec=0.1266
+/Users/jonBridger/ym4d-worker2/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane946/fct.py:616: RuntimeWarning: Mean of empty slice
+  y1 = ((y[:, 1:] - y.mean(1, keepdims=True)) * (y[:, :-1] - y.mean(1, keepdims=True))).mean()
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+[    2.3s rss    566MB] RESULT timing_L4
+[    2.3s rss    566MB]   c       R=-0.00015426 +- 0.00084  (num -0.0003232, den 2.095, outer lag1 None)
+[    2.3s rss    566MB]   t3      R=-0.00010898 +- 0.00076  (num -0.0003655, den 3.354, outer lag1 None)
+[    2.3s rss    566MB]   t10     R=2.2674e-05 +- 0.00022  (num 0.0002598, den 11.46, outer lag1 None)
+[    2.3s rss    566MB]   c3      R=-1.4198e-05 +- 0.00052  (num -4.382e-05, den 3.086, outer lag1 None)
+[    2.3s rss    566MB]   line    R=0.015752 +- 0.0035  (num 0.04694, den 2.98, outer lag1 None)
+[    2.3s rss    566MB]   sq2     R=-0.0006633 +- 0.0015  (num -0.0003563, den 0.5371, outer lag1 None)
+[    2.3s rss    566MB]   zm      R=-0.0012943 +- 0.009  (num -0.1824, den 140.9, outer lag1 None)
+[    2.3s rss    566MB]   patch   R=0.04328 +- 0.0078  (num 0.03225, den 0.745, outer lag1 None)
+[    2.3s rss    566MB]   xsec    R=0.12663 +- 0.023  (num 0.02359, den 0.1863, outer lag1 None)
+[    2.3s rss    566MB]   tau_inner {'c_p0': 0.37132606321543166, 't10_p0': 0.3157962182757769, 'line0': 0.4757583750652645, 'a_l0_x_c_p0': 0.5736948825979388}

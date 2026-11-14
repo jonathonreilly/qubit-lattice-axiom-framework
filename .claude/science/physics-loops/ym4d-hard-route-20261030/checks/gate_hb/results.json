@@ -1,0 +1,82 @@
+{
+ "T1": {
+  "max_excess": 2.220446049250313e-16,
+  "max_ratio": 1.0000000000000002,
+  "pass": true
+ },
+ "T1c": {
+  "violations": 36,
+  "pass": true
+ },
+ "T2": {
+  "max_error": 4.263256414560601e-14,
+  "pass": true
+ },
+ "T3": {
+  "tested": 32,
+  "max_excess": 0.0,
+  "samples": [
+   {
+    "case": "L5 single tier",
+    "X_min_within_20pct": 35610213144.260475
+   },
+   {
+    "case": "L5 two tier, kappa_s small",
+    "X_min_within_20pct": 324068542227735.44
+   },
+   {
+    "case": "L25 two tier",
+    "X_min_within_20pct": 2.949165724904861e+18
+   }
+  ],
+  "pass": false
+ },
+ "T3c": {
+  "log_direct_sum": 920947.6148627909,
+  "pass": true
+ },
+ "T4": {
+  "radius_failures": 0,
+  "acount_failures": 0,
+  "pass": true
+ },
+ "T4c": {
+  "geometric_failures": 1924,
+  "fixed_l0_fails": true,
+  "pass": true
+ },
+ "T5": {
+  "max_excess": 0.0,
+  "max_ratio": 0.1923547804033235,
+  "pass": true
+ },
+ "T6": {
+  "cases": [
+   {
+    "x": 100.0,
+    "s": 1557,
+    "m_gt_lambda": true,
+    "m_plus_s_le_M": true,
+    "increment_gap": 0.4998366526560858,
+    "ell_over_U_B_Phi": 0.061257922985154846
+   },
+   {
+    "x": 150.0,
+    "s": 188736,
+    "m_gt_lambda": true,
+    "m_plus_s_le_M": true,
+    "increment_gap": 0.4999978616833687,
+    "ell_over_U_B_Phi": 3.300524612889405
+   },
+   {
+    "x": 200.0,
+    "s": 24258259,
+    "m_gt_lambda": true,
+    "m_plus_s_le_M": true,
+    "increment_gap": 0.5,
+    "ell_over_U_B_Phi": 303.2282375
+   }
+  ],
+  "pass": true
+ }
+}

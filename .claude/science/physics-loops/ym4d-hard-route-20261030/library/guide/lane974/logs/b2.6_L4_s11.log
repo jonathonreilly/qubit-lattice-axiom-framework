@@ -1,0 +1,46 @@
+traj974 L=4 Nt=32 beta=2.6 ntherm=300 nmeas=2000 nsep=2 seed=11 ape=6,16 tag=b2.6_L4_s11
+[    0.0s] therm 0 plaq 0.43986
+[    0.5s] therm 100 plaq 0.67249
+[    1.0s] therm 200 plaq 0.66756
+[    1.4s rss 38MB] meas 0 plaq 0.66416
+[    2.5s rss 40MB] meas 50 plaq 0.66714
+[    3.6s rss 42MB] meas 100 plaq 0.66138
+[    4.7s rss 42MB] meas 150 plaq 0.66867
+[    5.8s rss 42MB] meas 200 plaq 0.66959
+[    6.9s rss 43MB] meas 250 plaq 0.66462
+[    8.0s rss 44MB] meas 300 plaq 0.66354
+[    9.1s rss 44MB] meas 350 plaq 0.67250
+[   10.2s rss 45MB] meas 400 plaq 0.67379
+[   11.3s rss 46MB] meas 450 plaq 0.66858
+[   12.4s rss 46MB] meas 500 plaq 0.67064
+[   13.4s rss 48MB] meas 550 plaq 0.67479
+[   14.5s rss 50MB] meas 600 plaq 0.67178
+[   15.6s rss 51MB] meas 650 plaq 0.66422
+[   16.7s rss 53MB] meas 700 plaq 0.67094
+[   17.8s rss 53MB] meas 750 plaq 0.66917
+[   18.9s rss 53MB] meas 800 plaq 0.66996
+[   20.0s rss 55MB] meas 850 plaq 0.67073
+[   21.1s rss 55MB] meas 900 plaq 0.66170
+[   22.3s rss 57MB] meas 950 plaq 0.67307
+[   23.4s rss 58MB] meas 1000 plaq 0.67207
+[   24.5s rss 61MB] meas 1050 plaq 0.66535
+[   25.6s rss 63MB] meas 1100 plaq 0.67377
+[   26.7s rss 63MB] meas 1150 plaq 0.66894
+[   27.8s rss 65MB] meas 1200 plaq 0.66764
+[   28.9s rss 65MB] meas 1250 plaq 0.67150
+[   30.0s rss 65MB] meas 1300 plaq 0.67514
+[   31.1s rss 67MB] meas 1350 plaq 0.66985
+[   32.2s rss 67MB] meas 1400 plaq 0.67247
+[   33.3s rss 67MB] meas 1450 plaq 0.67215
+[   34.4s rss 69MB] meas 1500 plaq 0.66475
+[   35.5s rss 70MB] meas 1550 plaq 0.67267
+[   36.6s rss 73MB] meas 1600 plaq 0.66669
+[   37.8s rss 73MB] meas 1650 plaq 0.67207
+[   38.9s rss 73MB] meas 1700 plaq 0.66768
+[   40.0s rss 75MB] meas 1750 plaq 0.66969
+[   41.1s rss 75MB] meas 1800 plaq 0.67131
+[   42.2s rss 77MB] meas 1850 plaq 0.67293
+[   43.3s rss 77MB] meas 1900 plaq 0.67158
+[   44.4s rss 80MB] meas 1950 plaq 0.67362
+[   45.5s rss 80MB] meas 1999 plaq 0.66667
+done 45.5s plaq mean 0.67080 +- 0.00008

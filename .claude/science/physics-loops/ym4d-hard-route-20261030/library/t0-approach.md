@@ -1,0 +1,298 @@
+lead: anthropic/claude-fable-5-2/high mac-mini-worker
+lease_until: 2026-11-10T08:30Z
+
+# t0-approach: proof approach for T0 against the current YM4_1400 frontier
+
+Queue row 608. Pinned at commit 03cf39bee. Approach and skeleton work; no status. All four parts are written (finished 2026-11-09). Not checked by another model.
+
+Provenance: one session of Claude Fable 5.2 (high), worker on the Mac mini. No other model checked this file. No numeric job was run; all work is by reading.
+
+Credit: the text under study is Sussman and Alpoge's YM4_1400 and its overview (their texts name Claude and Codex as authors). The method they follow and extend is Balaban's (CMP 95-122). This file proves nothing new, except a two-line counting identity in Part 2, R7 (c), which no other model checked.
+
+Sources, with how each was read:
+
+- Y = `YM4_1400.tex`, 136,637 lines, fetched from the row's URL at their commit 2bc0658f into my scratch folder. "Y 4152" means line 4152. I read by `grep -n` and `sed -n` ranges only.
+- OV = their overview `YM4/YM4_assembly_overview.pdf` at their commit 3ac0bf4f2973 (24 pages; the file at 2bc0658f is a one-page diagram). Read in full.
+- Balaban: the PDFs and OCR text in `~/ym4d-papers`. Page numbers are journal pages.
+- `library/prior/sa-boxes.md` does not exist at commit 03cf39bee. The line map below is mine.
+- NOT READ: anything in Y outside the ranges cited below. The rule "printed page p is near line 98p" is rough; I located passages by label.
+
+## Part 1. The frontier: what their text leaves open
+
+### 1.0 The top-level reduction (new against CA-I)
+
+Their Theorem 0 (Y 156-164) is conditional: "Assume the uniform renormalization and short-distance estimates stated below." It now asserts the OS axioms, a Wightman theory, positive energy and a unique vacuum in every canonical component. The precise statements are `thm:continuum-main` (Y 1748), `thm:phase-main` (Y 1884) and `thm:reconstruction-main` (Y 122703, statement NOT READ).
+
+The catalogue says which inputs carry the scalar route:
+
+- Catalogue head, Y 1927-1934: "the scalar route requires only its ordinary D1 and ultraviolet premises, together with the consequences derived from them." The joint induction A-C and the flow section must construct the data for D1.
+- H3 (Y 3021-3023): "Actual D1, F2--F3 and the existence of the admissible data supplying these hypotheses remain the model requirements."
+- H4 (Y 3047-3051): "Actual verification of D1 and of the interacting short-distance law is not supplied here."
+- G1 (Y 2794-2804, finite-lattice symmetries and reflection positivity at all mirrors), G3 (Y 2861-2910, plateau law), G4 (Y 2912-2943, all-state moments from D1), H1 (Y 2949-2969, diagonal-flat extension from D2), H2 (Y 2976-2991) and H3 are stated as proved or derived there. I did not read their proofs (NOT READ: Y 96000-122700 except the ranges cited below).
+- G2 (Y 2806-2859), full O(4): "This proves G2 conditionally for this state class, using either supplier of (TU18)." TU18 is `t^8 Gamma_phi(t) -> 0` (Y 112885). Supplier 1 is the upper bound TU10 (Y 112711-112716): `0 <= S_2(f,h) <= u(d) |f|_inf |h|_inf` with `u(d) -> 0`, on the shape class with `theta_* = 1/12000`. Supplier 2 is `sec:angular-mirror-budget` (Y 112897 ff.), which uses D1 at every first-passage stop with stability-plus-floor constants bounded by `C(1 + log x)` (Y 113012-113022).
+- The far-shell flux (Ward) route for rotations is now separate and is not needed: "The angular proof does not establish those separate comparison estimates" (Y 2858-2859). So the CA-I wall "flux hypothesis derived nowhere" is replaced by TU18.
+- Clustering and the unique vacuum per component are `thm:phase-main` (3)(iii)-(iv) (inside Y 1884-1910), from G3 and G4.
+- F4 (Y 2758-2766): the result is a scalar `tr(F^2)` theory. "A nonzero scalar Wightman field alone does not provide this identification." T0 as GOAL.md states it is this scalar sector, so F4 is outside T0.
+
+Consequence for T0. Three inputs remain, in their own words:
+
+1. **D1** (Y 2358-2428), the ordinary localized source bound and stability, uniform in cutoff, torus and first-passage stop. It needs the joint induction (A1-A4, B1-B4, C1-C4, which is H_step) and the flow E1.
+2. **TU10 or the mirror budget**, for O(4). The mirror budget is D1 again, at all stops. So O(4) costs no new analytic input beyond D1 with the logarithmic constant.
+3. **F2-F3** (Y 2585-2640, 2685-2699), only for "non-trivial": F2 with `|r| <= 1/2` gives a nonzero two-point limit "by a closed lower bound" (Y 2698-2699).
+
+E2, E3 and E4 (tuning, matched cutoffs, calibration; Y 2504-2543) are not on the scalar route (Y 1932-1934: "Weighted and matched-run comparisons and typed Ward estimates remain requirements for the stronger statements that invoke them").
+
+### 1.1 The open inputs, one row each
+
+Each row gives their line, their statement (short quote or exact paraphrase), and the root it belongs to (roots are in 1.2).
+
+| # | Input | Line | Their statement of what is open | Root |
+|---|---|---|---|---|
+| 1 | H_step | Y 4152-4180 | "Retain the background and substitution admission in A1--A4 ... and the actual matrix/core, potential and window estimates"; retain `hi:pair-sup-envelope`, `hi:reference-gaussian-integral`, `hi:event-energy`; in the sourced case `hi:source-excess-budget`. "Any primitive estimate not yet verified for all actual histories remains a technical hypothesis." "A homogeneous regular-sector construction alone does not verify the all-history premises in H_step." | all of R1-R6 |
+| 2 | A1, critical orbit | Y 1966-1989 | Existence and uniqueness of the regular critical orbit for every allowed nested family and every regular coarse datum. Proved: first step, homogeneous comb. Open: "the actual restrictions and substitutions must remain in their prescribed pair cores"; the pivot chart does "not imply existence, uniformity or all-substitution room for the many-level critical orbit." | R1, R2 |
+| 3 | NB box | Y 44166-44174; Y 34889-34892; Y 3318-3321; OV p. 19 | The homogeneous curvature atlas (Y 44112-44145) "does not construct a mixed-scale proper trial, an independent-current history core, or a positive conditional measure." The nonstationary-trial theorem (Y 34919-34948) needs a real fine trial with small curvature, current and defect; "It does not supply a fine trial for every proposed curvature-only mixed datum." | R1 |
+| 4 | A2, coercivity | Y 2059-2063, 2069-2070 | "Signed profiles, counterterm-modified precisions and interacting Hessians require their own comparisons on the joint history cores." "Verifying that every actual background and history substitution lies in this class remains necessary." | R2, R4 |
+| 5 | A3, inverse and response | Y 2114-2116, 2138-2141 | "Each application must still verify that its actual history data, complete determining reads and substitution lie in the stated domains with the required radius margins." | R2 |
+| 6 | A4, restriction | Y 2146-2172 | The restriction identity holds "under this admission and regular critical uniqueness"; other changes of averaging scheme "still need the stated physical and complex-domain intertwining estimates." | R1, R2 |
+| 7 | B1, B4 tails | Y 2176-2200, 2264-2300 | "Their verification for the actual complex interacting matrices and all allowed cores remains necessary"; "Actual nonlinear background/core inclusions and history formation remain to be verified." | R2, R3 |
+| 8 | `hi:read-coverage` | Y 77493-77524 | Every later read lies in `U_i(X~)` and in `K^#(omega_X, xi_X)`, "for every admissible later history and every configuration on its carried support. It is a pointwise statement." The geometric part is proved. "Admission of the resulting background to the analytic core, and the actual matrix bounds ... are the remaining analytic part of coverage." | R2 |
+| 9 | `hi:pair-sup-envelope` | Y 73357-73371 | `sup_p |e^{Phi_omega(xi;p)}| <= e^{Phi°_omega(xi) + C_V N_0(omega)}` if `sup_z |V_X(xi;z)| <= C_V N_0(omega)`. "All representatives in the supremum must obey the same bound ... Proving the complete localized bound on V_X is an analytic formation task." | R3 |
+| 10 | `hi:reference-gaussian-integral` | Y 74940-74966 | With a triangular chart `A_j = F_j(b_j; b_{j+1},...,U)`, inverse Jacobian `<= J_0^{d_j}`, and unspent forms `>= beta sum |A_j|^2`: the reference integral is `<= e^{C_5 V°}`. "The actual stored-coordinate identity or its explicitly bounded chart Jacobian is required; the mere use of the symbol A_j does not provide it." | R4 |
+| 11 | `hi:event-energy` | Y 76720-76752 | Five conditions on every carried support and every argument of the supremum: exact exponent identity; `|V_X| <= C_V N_0`; real admissible reads; normalizer, kept-form coercivity and reference domination; disjoint ownership `A + sum theta_j G_j + beta_1 sum |A_j|^2 >= sum_e Gamma_e`. "For a drop-out the inequality must hold for every compatible real evaluation in its fibre." Y 76940-76960: the exponent arithmetic "does not establish the witness certificates or their ownership." | R3, R4, R5 |
+| 12 | `hi:one-zone-test` | Y 77392-77404 | `|Psi_omega(z)| <= C |z| p_n n^#(omega)` for `|z| < r_n`, "and all its fields remain in the same admitted domains." "The coefficient C must be uniform in the histories, stored fields, levels, zones and allowed reads. A bound for one chosen background or a source function before it is formed is not (hi:one-zone-test)." | R6, R2 |
+| 13 | B box | OV p. 19; Y 77493-77524 | "the actual retained-operation domains, common integrable majorants in stored coordinates, and history admission"; "A fixed-chart logarithm bound alone is insufficient." | R2, R3, R4 |
+| 14 | LF box | OV p. 19 | "domains, stored-coordinate majorants and witness matching"; "The conditional component inequalities alone do not complete the stated R-operation theorem." | R2, R4, R5 |
+| 15 | RS box | Y 83632, 83640-83655, 83670; Y 84048-84072; Y 84108-84115; Y 84202-84204; OV p. 19 | "Old-family amplitude estimates have to hold on this actual map and its declared joint complex domains." "Their general polynomial age factors do not automatically give the exact exponent 3/2 in (RF17). One must either verify that sharper estimate or allocate a smaller positive exponential rate." The rim count `sum_j #_j(Z_j^+) <= C sum_n #_n(Gamma_n)` "is an actual window/history count and is not proved by a local Cauchy estimate." The extraction order `E, b_j, x_j, R` "is an input to the full interacting construction." | R2, R7 |
+| 16 | RC box, coefficient | Y 83250-83321; Y 83284-83292; OV p. 19 | B3: `|sum_{l<=k} b_l^0 - k c_0| <= c_2`, `c_0 = 11 N^2 log L/(12 pi^2)`. Proved on the homogeneous physical background (Y 83351-83500: coefficient preservation, `mlc:main`, `mrc`). Open: "The complex-current localization requirements in (RF9) remain separate"; the gap, continuation and walk expansion of `A_Y` "are part of this Gaussian-localization input." | R8 |
+| 17 | RC box, vacuum | Y 86270-86313 | "The determinant estimates and first-step sign in (RF61) remain actual Gaussian targets." RF62: `|E + (3/2)(N^2-1)(L^4-1) sum_j (log x_j) N_{j+1}| <= C N_0`, "not proved merely by naming a field-independent constant." | R8 |
+| 18 | E1, flow | Y 2492-2500; Y 2742-2755 | `b_i <= B_#` and `lambda(j-i) - C <= x_i - x_j <= B_#(j-i)`; "What remains for the interacting flow is to identify and estimate the literal formed coefficients and their admitted overlap domains." | R7, R8 |
+| 19 | D1 | Y 2358-2428 | Holomorphic point counterterms, localized source energies with `e^{-kappa m(X)}`, upper stability and partition-function floor, uniform in cutoff and torus. Open: "identify the literal stored-coordinate operation and its fixed reference measure, admit every later read to the same core, prove the complete quadratic domination and localized energy envelope, and construct owned witnesses for the failed tests." | R2-R6 |
+| 20 | CP box = F2, F3 | Y 2585-2640; Y 2685-2699; Y 100377-100385; Y 102732-102825; Y 105536-105549 | F2: `S^T_2 = C_G zeta^2 g^4 K(f,h)(1 + r)`, `|r| <= 1/2`, in every periodic Gibbs state. Open: "the literal identity in (CL2), with the actual exterior sigma-field, domain, numerator and normalizer"; the force bound CL5; the common-reference mean comparison CL19; marked bad moments. `prop:short-distance-7-1` is a "proof-outline conclusion conditional on that remaining package." | R9 |
+
+RT box (the R-operation and T-operation theorem, OV "Complete, assuming inputs") is not a separate row: its inputs are rows 9-14.
+
+### 1.2 Merged roots
+
+Nine roots carry all twenty rows.
+
+- **R1, TRIAL.** For every proper mixed-scale regular coarse datum there is a fine regular trial (small curvature, small current, small defect) to which the nonstationary-trial theorem applies. Rows 2, 3, 6.
+- **R2, ADMISSION.** Every actual read, substitution and background that the history sum produces lies in the analytic cores (regular-pair domains) with the stated radius margins. Rows 1, 2, 4-8, 12-15, 19. This is the largest root. It is our I-ENTRY-MATCH item (FINISH rows 605-606).
+- **R3, POTENTIAL.** The localized bound `|V_X| <= C_V N_0(omega)` for every representative in the supremum. Rows 7, 9, 11, 13.
+- **R4, REFERENCE.** The stored-coordinate reference measure: the triangular chart with bounded Jacobian, and coercivity of the kept forms on the actual joint core. Rows 4, 10, 11, 13, 14.
+- **R5, WITNESS.** Owned, disjoint witness energies for every failed test, valid on the whole fibre of a drop-out. Rows 11, 14.
+- **R6, SOURCE.** The one-zone source bound, uniform in history, level, zone and read. Rows 12, 19.
+- **R7, AGE.** The one-step comparison with the summable age factor of RF17, and the window count for the rims. Rows 15, 18.
+- **R8, COEFFICIENT.** The Gaussian coefficient on actual constrained backgrounds with complex current (RF9, RF10), and the vacuum determinants (RF61, RF62). Rows 16-18.
+- **R9, CONDITIONAL LAW.** F2-F3: the identity CL2 and its force, boundary, mean and bad-moment errors. Row 20.
+
+Shared structure. R2 is a precondition of R3-R7: each of those estimates is stated "on the actual core". R3, R4 and R5 are the three conjuncts of `hi:event-energy`. R6 is R3 with a source. So the order inside H_step is R1 -> R2 -> {R3, R4, R5} -> R6, with R7 and R8 feeding the flow E1, and R9 standing apart.
+
+## Part 2. One approach per root
+
+How I read Balaban for this part. I read the OCR text in `~/ym4d-papers` by page, and I checked the formulas of CMP 122a pp. 181-182 and CMP 119 pp. 257, 263 against the rendered PDF pages. All other pages were read in OCR only. CMP 116 is not in the folder: every statement about it is NOT READ.
+
+Labels in (b): PROVES = Balaban derives the condition by an estimate. IMPOSES = he puts a characteristic function in the integrand and sends the failures to the large-field side. ASSUMES = a hypothesis of his theorem. NONE = his papers have no such step.
+
+The pattern that decides most of the roots. Balaban never proves that an actual field is regular. He tests the localized background with characteristic functions (CMP 119 (2.17) p. 257; CMP 122a (1.22)-(1.24) pp. 181-182). He then proves two things by estimates: (1) the new tests imply that the old tests are equal to 1 (CMP 122a (1.29) p. 183, proof pp. 183-187); (2) a failed test gives a plaquette of the bare variable at the same scale that is not small, so the Wilson action pays (CMP 122a p. 193, after (1.75)). The frontier of Y asks for (1) and (2) on its own geometry. It does not need a proof that all fields are regular, and that statement is false.
+
+### R1, TRIAL
+
+- (a) CMP 102, Theorem 1, p. 279, with hypothesis (7), p. 278. The datum V is on the mixed-scale set `B_k = union of Lambda_j`. If all plaquettes of V are within `eps_1 < a_1` of 1 (a plaquette that crosses a layer boundary uses the averaged bond), there is a minimal orbit, it is the only critical orbit in the regular space (6), and the minimizer has the bounds (9)-(10) on cubes of size `2 M L^j eta`. The proof is by induction on k; the trial at step k is the lift of p. 279, section A (`V_0 = V_{b'}` on the bonds of a block, 1 on the other bonds). CMP 122a, Proposition 1, p. 194, (1.78), is the same result for the box `Lambda` inside a cube of size 100 M. CMP 99a, Theorems 2, 4, 8 (pp. 83, 88, 101) give the one gauge with bounds for a regular pair.
+- (b) PROVES existence, uniqueness and regularity, given (7). The hypothesis (7) is IMPOSED: it is what the characteristic functions test. Balaban writes (p. 278) that a non-empty regular space already gives (7) with `eps_1 = O(eps_0)`, so (7) "has a meaning only for" `eps_1 < eps_0`.
+- (c) Chain. T1: Y's `bgc:proper-background` (Y 35634-35650) states the result for every real mixed datum with ordinary and mixed test holonomies within `eps <= a_1` of 1, "for the geometry fixed above". T2: show that every nested family that an admissible history produces is a geometry of that class. T3: uniqueness on overlaps gives one orbit. The step where it could die is T2. A history can put two regions of different birth levels near each other; if the layer between them is thinner than the separation that T1 needs, T1 has no hypothesis there. The constants must also not lose a factor per level (Balaban, CMP 99a p. 83: the perturbative construction "will not give us good constants"; Y resets with `B >= max(12, 2 C_R)`, Y 35654).
+- (d) PORT: `bgc:proper-background` (I read the statement and the order of constants, Y 35634-35672; the rest of the proof is NOT READ; `prior/hstep.md` A1.1 calls it proved). Ours: `a1-balaban.md` (queue row 81), `b102.md` (rebuild of CMP 102 Theorem 1, Proposition 9, (190)), `prior/geoh.md` and row 498 (GEOH live geometry, check row 513). The NB sentence "does not construct a mixed-scale proper trial" (Y 44171) is about the homogeneous curvature atlas only. So R1 is smaller than the NB box suggests: real existence is a PORT plus the geometry match T2; the complex room is R2.
+- (e) First test. "Every nested family of an admissible history satisfies the separation hypotheses fixed before `bgc:proper-background`." Proof: from the window and collar rules. Counterexample idea: two drop-outs born at levels n and n+1 whose collars share a face.
+
+### R2, ADMISSION
+
+- (a) CMP 109 p. 265: "We will define the characteristic function chi_k in such a way that the domain of integration in (2.1) is restricted to configurations V for which U_k(V) in U_k(eps_0)"; the function is (2.9), p. 266. CMP 119 (2.16)-(2.17), p. 257: the test is on the localized background `U_{k,box}(V_k)` of each cube of size `L M_2 R_k`. CMP 122a (1.22)-(1.24), (1.27), (1.28), (1.55), (1.75), pp. 181-193: tests during the T-operation. Complex room: the space `U^c_j(X, alpha_0, alpha_1)` has the substitution clause (iv) in its definition (CMP 109 (1.15)-(1.16), p. 262), and p. 263 proves that the same conditions with smaller constants imply (iv), by Proposition 9 of CMP 102.
+- (b) IMPOSES the real admission. Failed components are "exclude[d] ... from the region Z" and treated "in the same way as the remaining large field regions" (CMP 122a p. 181). PROVES the nesting (1.29) with thresholds tightened by `beta (1 - 2^{-(j-h+1)})`, and PROVES the complex margin by a ratio of constants: the extension is analytic for constants "much bigger" than the inductive ones (CMP 109 p. 270); new terms live on "slightly larger spaces" (CMP 119 p. 262). CMP 122a p. 191 states the substitution closure for the spaces `U^{(n)c}_k` and says the proof "is almost identical" to an earlier one, "and we will not repeat it".
+- (c) Chain. AD1: write each admission clause of A1-A4, B1, B4 and `hi:read-coverage` as an event on the real localized background of the read. AD2: by Lemma A of `g0-cover.md`, that event is the same, up to the factors 4 and `32 q_B`, as small plaquettes on the box of the read. AD3 (nesting): if all tests of the later stage pass, every earlier read is admitted, with a summable loss of threshold. AD4 (margin): at an admitted real point, every complex substitution that a consumer makes (source, counterterm, shift) stays in the core, by a radius ratio. AD5: the failed events go to R5. The step where it could die is AD3. If the box of some read has a plaquette that no test and no minimizer controls (class F of `g0-cover.md`), then admission is false for the field that is `-I_2` on that plaquette. The repair is a new test, and a new test is a new failure branch that R5 must pay for. So R2 and R5 are one joint statement.
+- (d) Ours: `g0-cover.md` (Lemma A proved in the draft, not checked; G0-COVER open), `iem-supply.md` (IEM-LOCAL-SUPPLY open: ten geometric fits), `pi-admit.md` (checked, stops at C0-SUP), `c0-sup.md`. PORT: the joined-gauge transfer Y 62955-63043 (per `prior/iem-map.md`; NOT READ by me) and the geometric part of `hi:read-coverage` (Y 77493-77524).
+- (e) First test. G0-COVER as written in `g0-cover.md`: classify every plaquette of every read box as tested, minimizer or free. If the free class is empty, R2 is AD3 and AD4, which are estimates. If it is not empty, admission as stated is false, and the statement must become a tested one.
+
+### R3, POTENTIAL
+
+- (a) The inductive bounds. CMP 109 (1.18), p. 263: `|E^(j)(X, g, U, J)| <= E_0 exp(-kappa d_j(X))` "for all configurations" of the complex space. CMP 119 (2.42), p. 261, the same for boundary terms, with the fluctuation fields; (2.44), p. 263, for R-terms with `g_j^{kappa_0}`. CMP 122a (1.70), p. 192, for the new terms `C_k^(n)` on `U^{(n)c}_k`, with rate `(1 + 3 beta) kappa`. On the common domain of overlapping stages at most `N_0` terms add up, and `N_0 = O(log g_k^{-2})`; he pays with the factor `delta'_j` (pp. 191-192).
+- (b) PROVES, as part of the induction (CMP 109 Theorem 3, p. 264; CMP 119 Theorem 1, p. 262), under the coupling hypothesis. The supremum over the complex space is his norm, so "every representative" is built in. The localization and cluster proofs are in CMP 116: NOT READ.
+- (c) Chain. P1: the exact exponent identity writes `V_X` as a finite sum of localized terms that meet X. P2: each term has its inductive bound on its own space. P3: every representative p in the supremum of `hi:pair-sup-envelope` (Y 73357) lies in those spaces. P4: the number of terms per unit of `N_0(omega)` is bounded, with the overlap count paid as Balaban pays it. P5: the source and the counterterm normalization are inside the sum (Y 76728). The step where it could die is P3. The supremum runs over fibres of drop-outs; a representative outside the space of a term leaves P2 without a hypothesis. This is R2 again, on the fibre.
+- (d) Ours: `lfi-he.md` (H-E, stopped at SJ), `qr-prove.md` (stop at QR-JOINT: the complete list of residual fixed slots, then domination), `sj.md`. PORT: the conditional induction Y 76970-77042 (per `prior/hstep.md` E2; NOT READ by me).
+- (e) First test. For one history with one drop-out and one waiting stage: "the set of representatives in the supremum is contained in the product of the spaces on which P2 holds." A proof makes R3 a corollary of R2 plus counting. A representative outside is the counterexample; then the supremum must be cut down to the tested set.
+
+### R4, REFERENCE
+
+- (a) CMP 122a p. 176: the R operation replaces a large-field expression "in such a way, that integrals of the densities are unchanged" ((0.4)); "We will prove that the densities are positive ... hence the denominators are positive." The domain of integration is `Lambda` of (1.73), p. 192, a rectangular box inside a cube of size 100 M. Proposition 1, p. 194, gives the critical point `V_Lambda`; (1.80), p. 195, its regularity. CMP 122b (1.2)-(1.9), pp. 356-358: in the denominator the linear term is at most 1 ((1.6)), the quadratic form is positive definite by (1.7) and the axial-gauge inequality (1.8) on `Lambda`, and the integral is at least `exp(-O(M^4))`.
+- (b) PROVES, by estimate. The estimate is easy because the box is bounded, and the bounded box is IMPOSED: only components that meet his conditions (i), (ii) are renormalized; the others keep enough small factors (p. 176; p. 192).
+- (c) Chain. F1: write each stored coordinate as `A_j = F_j(b_j; b_{j+1}, ..., U)` (Y 74940-74966). F2: bound the inverse Jacobian of each diagonal block by `J_0^{d_j}`. F3: coercivity `>= beta sum |A_j|^2` of the kept forms on the joint core, from the axial-gauge inequality on each bounded carrier. F4: integrate; the cost is `e^{C_5 V°}`. The step where it could die is F3. In Y the reference runs over a whole history with a waiting window, not over one box of size 100 M. A coercivity constant that is uniform per coordinate needs the gap of the constrained Hessian after the counterterm change and with signed profiles, which A2 leaves open on the joint cores (Y 2059-2063).
+- (d) Ours: `ref-chart.md` (the joint critical reference chart = CMP 122a Proposition 1; Theorem H repaired at row 143, gate at row 140), row 510 (`a41-avg`, stop at SC-HESS). PORT: kept coercivity Y 74915-74940 and 63244-63566, explicit strip and cutoff coordinates Y 74981-75045 (per `prior/hstep.md` E3-E4; NOT READ by me).
+- (e) First test. Take two levels, one strip coordinate and one cutoff coordinate. Write `F_j` and its Jacobian by hand. Statement: "the map is triangular and each diagonal block is invertible with norm at most `J_0`, uniformly on the core." If a block loses rank at the edge of the core (a gauge direction outside the axial tree), the chart needs a gauge slice first.
+
+### R5, WITNESS
+
+- (a) CMP 122a (1.22)-(1.24), pp. 181-182: the test on a plaquette of the layer `Omega_h \ Omega_{h+1}` has the threshold of that layer, `(1 - beta/2) eps_h (L^{k-h} eta)^2`, not the threshold of the finest lattice. CMP 119 (2.14), p. 257: when the boundary of a localization region lies in the layer `Omega_j \ Omega_{j+1}`, the determining set near the boundary is the one-scale set `B_j` of that layer. The payment is CMP 122a p. 193: by an axial-gauge extension, small plaquettes of `V_k` near `Lambda` give the test (1.75); so a failed test gives `|V_k(dp') - 1| > (O(1) B_3 M^2)^{-1} eps_k` for some plaquette, and "This condition is enough to get the exponential small factor, estimating in the usual way the Wilson action." CMP 119 (2.49), p. 264: the positive term "yields the small factors for large field characteristic functions".
+- (b) PROVES the payment, by a contrapositive. It works because the test and the witness are at the same scale: the background fails at `eps_k eta^2` per fine plaquette only if a plaquette of the bare variable at level k fails at `eps_k / (C M^2)`.
+- (c) The fresh-payment form of the rim branch looks FALSE as stated, and Y says so. Y 72318-72432: the final-stage literal test asks `3(1 - beta_s/2) eps_m L^{-2m}` on bare plaquettes near the outer boundary of the localized background, where an inner bond of the level-zero layer is a determining bond that carries the lift of `V_m`. A plaquette tangent to a flat outer face has exactly the level-m plaquette of `V_m` and "does not give the factor L^{-2m}". Their abelian example `A_1(x) = a x_2 T` with `a = 8 eps_m L^{-2m}` fails the test, and the Wilson exponent is only `C theta_m eps_m^2 L^{-4m}`: "the Wilson energy alone cannot pay for this failure." The fresh gauge and Gaussian payments are `O(|a|^2)` too. So no witness `c theta_m eps_m^2` exists for that failure. Proposed chain. W-a (RIM-SCALE): restate the stage test so that a plaquette whose four bonds are lifted determining bonds is tested at the level-m threshold, as in Balaban's (1.24) and (2.14). W-b: every consumer of the stage test still has its hypotheses. W-c: the contrapositive lemma of CMP 122a p. 193 on Y's box then gives `Gamma_e = c_w theta_m eps_m^2`. W-d: disjoint ownership, with at most a bounded number of overlapping ages. The step where it could die is W-b. If a consumer needs the bare threshold on the rim (for example the analytic core of the read there), then the choice is between Balaban's rim geometry and the second option of Y 72432: "an accounting that carries this branch without a fresh gain."
+- (d) Ours, all on this wall: `hc-mark.md` (H-C-MARK open), `hcm-false.md` (RIM-LB), `hcm-r2.md` (RIM-C), `hcm-tb.md` (TB-BC), `lfi-ho.md` and `restate5.md` line 226 (HC-WEIGHT hub, row 597), `hstep-tree5.md` section 4 (D-HOLONOMY "evidence suggests false as stated"), D4-CARRIED (owned by DOM). PORT: `w125-match.md` (W1, W2, W5 match Y).
+- (e) First test, RIM-SCALE. "No consumer of the final-stage test uses the bound `3(1 - beta_s/2) eps_m L^{-2m}` on a plaquette whose four bonds are lifted determining bonds of the level-m rim." If true, W-a to W-d is Balaban's argument and the wall is a restatement. If one consumer does, name it; then the fresh-payment form is dead and only the carried form is left.
+
+### R6, SOURCE
+
+- (a) NONE. CMP 122b p. 356: observables "deserve detailed analysis and further publication". His stability bounds (0.1), p. 355, have no source.
+- (b) Neither. SA's source bound is their own.
+- (c) Chain. S1: the source enters as a complex local term of size `|z| p_n` per zone. S2: for `|z| < r_n` all fields stay in the admitted domains (this is AD4 of R2). S3: if the R3 bound holds on the whole disc with the source inside the supremum, then `Psi_omega(0) = 0` and the Schwarz lemma give `|Psi_omega(z)| <= (C_V / r_n) |z| n^#(omega)`, which is `hi:one-zone-test` (Y 77392-77404) once `r_n >= c / p_n`. S4: uniformity in history, level, zone and read comes from the uniformity of R2 and R3. S5: at the first-passage stops the sum of the stability and floor constants is at most `C (1 + log x)` (Y 112897-113050: "Uniformity at a single reference coupling would give no bound on this sum"). The step where it could die is S5. The vacuum normalization has `log x_j` per unit volume per level (RF62, Y 86270-86313), and the radius `r_n` must not shrink with the number of levels. If the stops are not uniform with the logarithmic constant, the mirror budget fails and O(4) needs TU10 from another source.
+- (d) Ours: `prior/j2-claude.md` (J2, rooted ordinary source package; exists, NOT READ in this session), `sr1.md` (4)-(6), `ro1.md` H-U, `tu10.md` (TU10 from ordinary source bounds, conditional on a UV lower law). Y 77106-77179 (per `prior/hstep.md`; NOT READ by me).
+- (e) First test. Write S3 in full: three lines if R3 is stated with the source in the supremum. If R3 cannot hold on a disc of radius `c / p_n` (the source moves a read out of its core), the smallest radius that works is the real content of R6.
+
+### R7, AGE
+
+- (a) CMP 119, Theorem 2, p. 263. (2.43): the difference between the sum of the localized terms `E^(j)` on the actual background and on the trivial background, minus `beta_j(g_{j-1}) A(phi, U_k)`, is at most `E_1 sum_{n=j}^{k} (L^{j-n})^beta |Gamma_n cap Omega|`, with `beta < 1`. (2.45): the vacuum part is at most `E_1 (1 - L^{-beta})^{-1} sum |Gamma_n|`. (2.47)-(2.48), p. 264: boundary sums with the factor `2^{-(j-1-n)}`. I read the statement; the proof (his section 3) is NOT READ.
+- (b) PROVES, with a geometric age factor `L^{-beta (n-j)}` for some `beta < 1`. There is no exact exponent 3/2 in his statement. Each rim is charged to the boundary `Gamma_n` of its own level.
+- (c) Chain. G1: one-step comparison on the actual map (Y 83632-83660: "A remainder has no such counterterm"). G2: take their second option, "allocate a smaller positive exponential rate and prove the resulting comparison" (Y 83655); check that every consumer of RF17 uses only summability. G3: the rim count `sum_j #_j(Z_j^+) <= C sum_n #_n(Gamma_n)` (Y 84108-84115), which "includes the stored collars of healed components". The step where it could die is G3. Definitions read: `#_n(D)` is the number of level-n sites in D (Y 83998-84001); `Gamma_n = Omega_n \ Omega_{n+1}`, `Omega_0 = T_l`, `Omega_{k+1} = empty` (Y 83989-83991); `Z_j^+` is the complement of the level-j action member, enlarged by one layer (Y 78873, 84038-84040). For the nested part the count is an identity (my check, two lines, not checked by another model): `Omega_j^c` is the disjoint union of the `Gamma_n`, `n < j`, so `#_j(Omega_j^c) = sum_{n<j} L^{-4(j-n)} #_n(Gamma_n)` and `sum_j #_j(Omega_j^c) <= (L^4 - 1)^{-1} sum_n #_n(Gamma_n)`; the one-layer enlargement costs a factor `3^4`. What is left is the part of `Z_j^+` that is not in `Omega_j^c`: the collars of healed components. Healed clusters are erased from the label (Y 62197: "Erasing clusters of healed components from a history yields a history with the same label"), and "Older layers may have been redone; their counts are not a single present-day volume" (Y 78882-78884). If a healed collar stays in `Z_i^+` at later levels i while the `Gamma_n` of the label do not contain it, the count is false: take healed components of density c at a level `j << k` on a label with no large field; the left side is at least `c N_j = c L^{4(k-j)} N_k`, the right side is `C N_k`. I did not find the rule that says how long a healed collar is stored (NOT READ). Balaban's remedy is that overlapping stages last at most `N_0` steps (CMP 122a p. 192).
+- (d) Ours: `b119.md` (cited CMP 119 inputs), `arr.md` section 7 and row 603 (arrest; duplicate-work stop). The coupling flow consumes this in `tp1.md` (import FLOW, line 54).
+- (e) First tests. (i) List every use of RF17 and write beside each one whether it needs the exponent 3/2 or only a summable factor. (ii) Find the storage rule for a healed collar, then decide: "for every admitted label, `Z_j^+` is contained in a fixed enlargement of `Omega_j^c` of the same label." True: G3 is the identity above. False: the count needs the healed collars on the right side, or it is false as stated.
+
+### R8, COEFFICIENT
+
+- (a) CMP 109, p. 264, (1.20)-(1.22): the beta functions are the coefficients of the vacuum polarization at zero momentum on the whole lattice; "We will investigate other properties in a separate paper." Section 5, pp. 297-298: `beta_j` is defined as the coefficient in (5.43). Theorem 2, p. 259 (for d = 4, SU(2), a bare coupling exists with `g_k in ]0, gamma]`): "A proof of this theorem, based on perturbative calculations, will be given in a separate paper." CMP 122b p. 355: that proof "has not been published yet, so we have Theorem 1 with the assumption."
+- (b) ASSUMES. The papers at hand give no value of the one-loop coefficient and no proof that the coupling stays in the interval. SA's computation is the only source: `c_0 = 11 N^2 log L / (12 pi^2)` on the homogeneous physical background (Y 83250-83321; Y 83351-83500).
+- (c) Chain. C1: PORT the coefficient on the homogeneous background. C2: the number `b_l^0` is a field-independent constant, defined on the trivial background as Balaban defines `beta_j`; the actual background enters only the remainder, which goes to R3 and R7. C3: the complex-current localization of RF9 (gap, continuation and walk expansion of `A_Y`, Y 83284-83292) on the joint cores. C4: the determinants and the first-step sign in RF61, and RF62 (Y 86270-86313). The step where it could die is C3: a Gaussian localization with a constraint and a complex current, uniform over the joint cores. It needs A2 and A3 there, so it is R2 and R4 again.
+- (d) Ours: `ol.md` (one-loop coefficient = CA-I Lemma 4.2; OL-transfer, lines 2744-2768 and 2817-2845, bypasses tree leaf K6), `prefactor.md` (section 2: the formula without constraint curvature is false; section 6: localization is the remaining obstruction), `prefactor-loc.md`, `regional-gauss.md`.
+- (e) First test. "In RF10 the coefficient `b_l^0` does not depend on the history or on the background." If yes, R8 is C1 (PORT) plus a remainder bound, and it adds no wall beyond R2-R4. If `b_l^0` depends on the actual background, B3 needs a sum over histories and is a new wall. Hand check on the side: the sign of the first step in RF61.
+
+### R9, CONDITIONAL LAW
+
+- (a) NONE. Balaban's papers have no correlation function and no lower bound (CMP 122b p. 356). CMP 116: NOT READ.
+- (b) Neither. F2-F3 are SA's own statements (Y 2585-2640, 2685-2699).
+- (c) Chain. L1: the literal identity CL2 with the actual exterior sigma-field, domain, numerator and normalizer (Y 100377-100385). L2: the force bound CL5. L3: the mean comparison CL19 with a common reference. L4: marked bad moments of order `o(g^4)`. L5: the Gaussian main term `C_G zeta^2 g^4 K(f,h)` and `|r| <= 1/2`. L6: F3 from the flow E1 and B3. The step where it could die is L1 with L4, in "every periodic Gibbs state": the estimates must not use the state, because uniqueness of the Gibbs state is not known. `prop:short-distance-7-1` is a "proof-outline conclusion conditional on that remaining package" (Y 105536-105549).
+- (d) Ours: `tp1.md` (conditional TP1; imports FLOW, FREE, PRES, REG, AMP, AG, STATE, LIMIT at lines 54-165; Lemma 5.1, an exact derivative identity, line 289; Lemma 5.2, Gaussian main term, line 305; Lemma 6.1, common-normalizer comparison, line 478; Lemma 7.2, lines 550-566), `ag1.md`, `tu10.md`, tree leaves J4 and J5.
+- (e) First test. "TP1's import PRES is the statement CL2." If yes, Lemma 5.1 is the PORT of L1 and R9 is L2-L4 on the cores of R2. If CL2 needs the exterior sigma-field of an arbitrary Gibbs state, the gap is the transfer to every state (import STATE, Lemma 6.1). For T0, R9 is needed only for "non-trivial"; the OS axioms do not use it.
+
+### What Part 2 shows
+
+1. Seven of the nine roots are restatements of the pair "test, then pay": R1 (given the test, the orbit exists), R2 (what the test covers), R3 and R4 (bounds on the tested set), R5 (the payment), R6 (R3 with a source), R7 (the same over ages).
+2. R8 and R9 are not in Balaban at all. R8 is his assumption; R9 is SA's.
+3. One input looks false as stated: the fresh-payment form of the rim branch (R5). SA's text itself gives the counterexample. One more may be false: the rim count (R7, G3). Its nested part is an identity; the healed-collar part depends on a storage rule that I did not find. R2 is false wherever a read box has a free plaquette.
+
+## Part 3. The skeleton
+
+### 3.1 Nodes
+
+Each node is one statement. "PORT" means their text states it as proved or derived (line in 1.0) and our part must rebuild and check it once; I did not read those proofs.
+
+| Node | Statement (short) | Source | Kind |
+|---|---|---|---|
+| N1 | TRIAL: regular critical orbit for every proper mixed datum of a history | R1; A1, NB | PORT plus geometry match |
+| N2 | ADMISSION: tested real reads lie in the cores, with complex margin | R2; A1-A4, B1, B4, `hi:read-coverage` | open, joint with N5 |
+| N3 | POTENTIAL: `V_X` bounded by `C_V N_0(omega)` on every representative | R3; `hi:pair-sup-envelope` | open |
+| N4 | REFERENCE: stored chart, Jacobian, coercivity, `e^{C_5 V°}` | R4; `hi:reference-gaussian-integral` | open |
+| N5 | WITNESS: owned payment for every failed test | R5; `hi:event-energy` item 5 | open; one form false |
+| N6 | H_step: history mass, entropy, rarity, class invariance (C1-C4) | Y 4152-4180; Y 2307-2356 | from N1-N5 |
+| N7 | AGE: one-step comparison and rim count | R7; RS box | open |
+| N8 | COEFFICIENT: `b_l^0`, RF9, RF61, RF62 | R8; RC box | PORT on homogeneous background; open on cores |
+| N9 | FLOW E1: `b_i <= B_#`, drift bounds, first-passage stops | Y 2492-2500 | from N7, N8 |
+| N10 | SOURCE: `hi:one-zone-test`, uniform | R6 | from N2, N3 |
+| N11 | FLOOR: lower bound of the partition function on the admitted positive label | Y 2428-2431 | open; "an upper history-mass estimate does not prove that floor" |
+| N12 | D1, uniform in cutoff and torus | Y 2358-2428 | from N6, N9, N10, N11 |
+| N13 | D1 at every first-passage stop, constants `<= C(1 + log x)` | Y 113012-113022 | from N12 with the logarithmic constant |
+| N14 | G1: lattice symmetries, reflection positivity at all mirrors | Y 2794-2804 | PORT (ours: LG1) |
+| N15 | D2, D4, G4: all-state graded bounds, one-point transfer, moments | Y 2432-2456, 2478-2490, 2912-2943 | PORT from N12 and N14 (ours: SR1) |
+| N16 | H1, H2: extension and factorial growth | Y 2949-2991 | PORT from N15 |
+| N17 | G2: full O(4), through TU18 by the mirror budget | Y 2806-2859, 112897 ff. | from N13, N9, N14 and the exact dilation RF53 (Y 86015-86050); ours: RO1, TU10 |
+| N18 | G3 and `thm:phase-main`: clustering, one vacuum per component | Y 2861-2910, 1884-1910 | PORT from N15 (ours: CL1, PH1) |
+| N19 | H3, `thm:reconstruction-main`: Wightman theory per component | Y 3021-3023, 122703 | PORT from N14-N18 (ours: WR1) |
+| N20 | CONDITIONAL LAW: F2, F3; nonzero two-point limit | R9 | open; only for "non-trivial" |
+
+### 3.2 Edges
+
+```
+N1 -> N2 <-> N5            (admission and payment are one joint statement)
+N2 -> N3, N4, N10
+N3 + N4 + N5 -> N6
+N7 + N8 -> N9
+N6 + N9 + N10 + N11 -> N12 -> N13
+N12 + N14 -> N15 -> N16, N18
+N13 + N9 + N14 + RF53 -> N17
+N14 + N15 + N16 + N17 + N18 -> N19  = OS axioms, O(4), Wightman theory
+N20 + N9 -> "non-trivial"
+T0 = N19 and N20
+```
+
+Three remarks.
+
+1. The open work is N2-N5, N7, N8 (on cores), N11, N13 and N20. All the rest is PORT or arithmetic.
+2. O(4) does not need a new analytic input. It needs N13: the same D1, at all stops, with a constant that grows at most like `log x`. This is the one place where a bound that is uniform "at a single reference coupling" is not enough.
+3. N11 is easy to forget. Balaban proves his lower bound together with the upper bound (CMP 122b, (0.1), p. 355, and the positive denominators of pp. 356-358). In Y it is a separate requirement of D1.
+
+### 3.3 The leaves of `t0-tree.md` section 5
+
+Still needed, with the node that now holds each one:
+
+- K1 (CM), K2 (CR): N2. They return as clauses of the tested admission.
+- K3 (CA, completion-collar membership): N2 with N5. It is the rim question.
+- K4 (CW, analytic window): N2 and N7 (window rule).
+- K5 (CH, CMP 122b links on the polydisc): N2, step AD4 (complex margin).
+- K7 (CV, reality of the prescribed scalar sum): N3 (`hi:event-energy`, item 3: real admissible reads).
+- K8 and K8-CORR (CMP 109 (1.17); tree leaf BP05): N2 step AD4 and N3. Still needed.
+- Tree R1 (small-field family step; CMP 109 Theorem 3, CMP 116): N3 step P2. CMP 116 is NOT READ.
+- Tree R2 (operator application, admission): N2. Tree R3 (activity, support, extraction): N3. Tree R4 (relative machine, live geometry): N1, step T2. Tree R9 (witness analytic inputs): N5. Tree R10 (extraction and use-site matching): the extraction order of the RS box, N7.
+- Tree R5, R6 (localized boundary pieces, arrest and inherited domains): N5 and N7.
+- Tree R7 (stability, counts, exactness, vacuum energy): N4, N7, N8 (RF61, RF62), N11.
+- BP13, BP14, BP16 (CMP 122a (1.64)-(1.69), p. 192, (1.70)): N2 and N3. BP21 (normalized island operations): N4. BP22 (CMP 102 (189), (190)): N1.
+- J1 (construction and constants): N6, item C4 (one order of choice). J2 (rooted ordinary source package): this is N12. J4 (component lower witness, NT1): N20. J6: kept.
+
+Replaced or moved off the path:
+
+- K6 (CO): stays bypassed by OL-transfer (`ol.md`); R8 step C2 is the same idea.
+- Tree R8 (correlation induction): replaced by the deduction D2/G4 from D1 and G1 (N15), if the PORT holds as their catalogue states it. To confirm when N15 is rebuilt.
+- Tree R11 (tuning and uniqueness branch): off the scalar route (Y 1932-1934). Tree R12 (coupling covariance branch): off the path.
+- The far-sphere flux leaves of the O(4) clause (GOAL.md, method section): replaced by TU18 (Y 2858-2859). J3 (all-state TU10) can now be supplied by N13 through the mirror budget, without a UV lower law.
+- J5 (NT2): not in Y's Theorem 0 route. It stays in the draft definition of GOAL.md; with F2-F3 the lower bound is "closed" (Y 2698-2699) and NT2 is a separate decision for the lead.
+
+## Part 4. Order of attack
+
+### 4.1 Ranking, hardest first
+
+Rank by "if this is false, how much of the proof dies, and is there another way".
+
+1. **N2 with N5, the tested admission and its payment.** Everything in N3-N12 is stated on the admitted set. One form of N5 is false by SA's own example, and N2 is false wherever a read has a free plaquette. Without a repair there is no H_step.
+2. **N3 with N4, joint domination over a history.** This is where Y differs most from Balaban: his reference box has size 100 M and lives `N_0` steps; theirs is a whole history with waiting windows and drop-outs. If the coercivity constant or the supremum is not uniform, the history sum does not converge.
+3. **N13, D1 at the stops with the logarithmic constant.** Full O(4) is a T0 clause that Balaban's papers do not touch. It now rests on this one growth rate. The only other supplier is TU10.
+4. N7 step G3, the rim count: cheap to test, and false in one reading (Part 2, R7).
+5. N20: needed only for "non-trivial", but it is an estimate in every Gibbs state.
+6. N11, N8 step C3, N1 step T2: expected to follow the method of N2-N4 once those stand.
+
+### 4.2 Item text for the top three
+
+**Item A, RIM-SCALE (node N2 with N5). New, as far as a bounded search shows.** I searched `hc-mark.md`, `hcm-false.md`, `hcm-tb.md`, `rimtb-tree.md`, `leaf-rguard.md` and FINISH for a route that changes the threshold of the rim test and found none; the earlier rounds keep the literal test and look for a payer (rows 488, 502, 522: RIM-LB, RIM-C) or change the background (rows 524, 547, 551, 568: TB-BC, TB-FLAT, CBR). Their results are inputs; do not repeat them. Y calls this rim "artificial" and says it "occurs only in the final guard" (Y 64229-64232; row 552).
+
+- Setting. Level m, component X, final stage of the retained operation, as in Y 72318-72340. Let `P_rim` be the set of bare plaquettes of `X cap Omega_m` whose four bonds are determining bonds of the level-zero layer of the localized background and carry the face lift of `V_m`.
+- Statement A1 (consumer audit). For every statement of Y whose hypothesis is the final-stage test, the proof uses on each `p in P_rim` no more than `|U(dp) - 1| <= C eps_m`. List the consumers with their lines.
+- Statement A2 (payment). Replace the threshold on `P_rim` by `c_0 eps_m` and keep all other clauses. Then there are constants `C, c > 0`, which depend only on L, M and N, such that for every m, every admissible history, every component X and every real evaluation in the fibre of a drop-out: if the modified test fails, some level-m plaquette p' of `V_m` within a fixed number of level-m cells of the rim has `|V_m(dp') - 1| >= eps_m / (C M^2)`, and the event has an owned witness `Gamma_e >= c theta_m eps_m^2`.
+- Statement A3 (nesting). The modified test at stage m implies all earlier guards, with the threshold ladder of Y 64233 ff.
+- Domain and quantifiers. Real fields for A2; the complex cores for A1 and A3. All m with `g_m <= gamma`. Constants in one order of choice; none may depend on m, K or the torus.
+- Sources. Y 72318-72440, 64215-64260, 76720-76756; Balaban CMP 122a pp. 181-182 ((1.22)-(1.24)), p. 193 (the contrapositive after (1.75)), CMP 119 p. 257 ((2.14)); ours `hc-mark.md` (14), `hcm-false.md`, `w125-match.md`.
+- Stop conditions. (i) A consumer needs the bare threshold on `P_rim`: write its line and stop; the fresh-payment form is dead, and the lane goes to TB-BC or to the carried form `hc-mark.md` (14). (ii) A plaquette with one to three lifted bonds fails the test while all level-m plaquettes of `V_m` are small: write the field and stop. (iii) A2 needs a regularity bound for the localized background that is itself the tested statement (a circle): stop and name it.
+
+**Item B, G0-COVER (node N2). Existing: FINISH row 606, lane `g0-cover`, statement in `g0-cover.md` lines 70-83. Do not open a second lane.** What this file adds to that row:
+
+- Statement. As in `g0-cover.md`: for each read box, classify each plaquette as T (tested), M (minimizer with tested data) or F (free), for the real factor of that source.
+- Domain and quantifiers. Every admissible history, every later read named in `hi:read-coverage` (Y 77493-77524), every plaquette of its box; real fields.
+- Added sources, read firsthand. Balaban's tests cover every plaquette of every layer of the localized region with that layer's threshold (CMP 122a (1.22)-(1.24), pp. 181-182; CMP 119 (2.17), p. 257), and the next tests are proved to imply the old ones (CMP 122a (1.29), pp. 183-187). So in his scheme class F is empty by construction. The lane should look in Y for the port of `chi_k^(n)`; if there is none, outcome three of `g0-cover.md` applies.
+- Stop conditions. Those of `g0-cover.md`. In addition: each new test that a repair adds must be handed to Item A's payment, or the repair only moves the wall.
+
+**Item C, STOP-LOG (node N13). New: no FINISH row names the mirror budget or the constants at the stops (grep of FINISH.md and `open-core.md`).** It is an approach item first; it should not start before the form of D1 in N12 is fixed.
+
+- Statement. Let `g_b` be the couplings at the first-passage stops, `g_b^{-2} = x_{K-b} - B_#`, with `x_{K-b} <= g^{-2} + B_#(b+1)` and `b <= log_L(c/d)` (Y 113034-113048). For the ordinary source systems of `prop:source-domains-4-1` at each stop, with the bounds ST5-ST6: (C1) the radius, the localized energy bound, the entropy gap and the geometric constants do not depend on the stop; (C2) the sum of the upper stability constant and the floor constant at a stop with inverse coupling x is at most `C (1 + log x)`; (C3) the self-calibrated prefix does not depend on its last level or on the reference coupling.
+- Domain and quantifiers. All K, all records `K - b`, arbitrarily large compatible tori ("At each stop the ordinary source systems are needed on arbitrarily large compatible tori"), every periodic Gibbs state that is a limit of first-passage data. C does not depend on K, b or the torus.
+- First task (decisive). Trace the constants of D1 through N6, N10 and N11 and write each as a function of x. The known source of a logarithm is the vacuum normalization: `log x_j` per stored cell per level (Y 4239; RF62, Y 86270-86313). Statement to prove or refute: "after the common normalization of D1, the per-level terms `log x_j` cancel between the upper bound and the floor, up to `C (1 + log x)` in total." A term `sum_j log x_j` over K levels that does not cancel is the counterexample; then the mirror budget fails as stated.
+- Sources. Y 112897-113050, 2358-2431, 86015-86050 (RF53), 2492-2500; ours `ro1.md` (H-U), `tu10.md`, `sr1.md`.
+- Stop conditions. (i) A constant of D1 grows like a power of x: stop; O(4) then needs TU10 from another supplier (`tu10.md`, conditional on a UV lower law). (ii) C3 fails because the prefix depends on K: stop and state the dependence. (iii) The item needs the proof of D1 itself: stop; it is N12.
+
+For node 2 (N3 with N4) the items exist: QR-JOINT (row 598, `qr-prove.md` section 2), H-E (row 497, `lfi-he.md`), SJ (row 518), SC-HESS (row 510). The first tests of Part 2, R3 (e) and R4 (e), are sharper forms of those rows and belong to them. I rank this node second, but I write no new item for it, because a new item would repeat row 598.
+
+### 4.3 Summary
+
+- The frontier of YM4_1400 is nine roots (Part 1). For the OS axioms with O(4), the roots R1-R8 are needed through D1; R9 is needed only for "non-trivial".
+- Balaban imposes every admission condition by a test and proves only nesting, existence under the test, bounds on the tested set, and same-scale payment (Part 2). So the right form of each open input is a tested statement with a payment, not a statement about all fields.
+- One input is false as stated (the fresh-payment rim branch, by SA's example). Two more are false in one reading (free plaquettes in a read box; healed collars in the rim count). Each has a decisive first test.
+- Nothing here is proved, except the two-line identity for the nested part of the rim count (R7), which no other model checked.

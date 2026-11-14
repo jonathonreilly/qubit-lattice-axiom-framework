@@ -1,0 +1,24 @@
+one L 4 M 1 C_0 = 0.10645 rows 140 bonds 512
+one L 8 M 1 C_0 = 0.10624 rows 508 bonds 2048
+one L 16 M 1 C_0 = 0.10711 rows 2012 bonds 8192
+one L 4 M 2 C_0 = 0.10535 rows 140 bonds 2048
+one L 4 M 4 C_0 = 0.1055 rows 140 bonds 8192
+one L 8 M 2 C_0 = 0.10665 rows 508 bonds 8192
+one L 32 M 1 C_0 = 0.10783 rows 8092 bonds 32768
+one L 4 M 8 C_0 = 0.10561 rows 140 bonds 32768
+one L 8 M 4 C_0 = 0.10691 rows 508 bonds 32768
+one L 16 M 2 C_0 = 0.10755 rows 2012 bonds 32768
+two L 4 M 1 C_0 = 0.10642 rows 254 bonds 512
+two L 8 M 1 C_0 = 0.10339 rows 998 bonds 2048
+two L 16 M 1 C_0 = 0.10296 rows 4022 bonds 8192
+two L 4 M 2 C_0 = 0.10307 rows 254 bonds 2048
+two L 4 M 4 C_0 = 0.10251 rows 254 bonds 8192
+two L 8 M 2 C_0 = 0.10285 rows 998 bonds 8192
+two L 32 M 1 C_0 = 0.10304 rows 16214 bonds 32768
+two L 4 M 8 C_0 = 0.10242 rows 254 bonds 32768
+two L 8 M 4 C_0 = 0.10281 rows 998 bonds 32768
+two L 16 M 2 C_0 = 0.10297 rows 4022 bonds 32768
+one ratios 1.0081560088095836 1.001490428601697
+two ratios 0.9959118442391388 0.9945764004896192
+T3 PASS
+T3rc=0

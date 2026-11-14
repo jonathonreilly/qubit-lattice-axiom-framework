@@ -1,0 +1,915 @@
+# Prior-work search for the mass-gap crux
+
+Codex research reading record; checkout `c1898bae579dc6612cb10e1fa48ade4785b114be`; candidate search source is `origin/main` `3b6e5c0baf4295645a07cbfc99813501c8c08c63`. This is research text, not an audit and grants no status. Only the requested lane file is written.
+
+## Repo search
+
+The lead’s `library/prior/gap-crux-repo-hits.md` says the 699-path candidate set was found by filename search plus targeted `git grep` across docs/scripts/archive_unlanded; the lead had read none of those files. I fetched `origin/main` and confirmed it is exactly the indexed commit `3b6e5c0baf4295645a07cbfc99813501c8c08c63`. I read the current task’s target sources and the earlier `library/prior/gap-prior.md`; that digest covers other branches and adjacent results, but not these six crux questions or this main-branch candidate set. The 699 unique paths below are sorted into families before source inspection. Their names are retrieval leads, not evidence. The closest hits from the name families are the native SU(3) half-slice coefficient-gap chain (still missing physical-transfer/tail identification), the SU(2) two-region response note (soft-kernel boundary observable only), and the finite two-site block-spin note (not gauge links). Beta-six plaquette notes are adjacent series work; Wilson–staggered notes are a separate high-mass RG/fiber model. The closest twist/flux hits are conditional supplied Hamiltonians and an external meron mismatch note, not AC'-lat. I also searched pinned main for `thin torus|twisted torus|twist(ed) boundary/bundle/torus|center/centre flux|AC.?lat`; the complete output is `/tmp/gap-crux-term-search-3b6e5c0baf.txt`. Candidate source findings begin after this inventory.
+
+## Step 1 — complete candidate-family inventory (saved before Step 2)
+
+Parsed the lead’s Lists A–C: 738 list rows, 699 distinct paths. Repeated paths across lists are deduplicated. Family assignment is by filename tokens; this is a locator classification, not a relevance verdict.
+
+| Family | Unique paths |
+|---|---:|
+| Native gauge-transfer gap notes | 70 |
+| Beta-6 plaquette expansion and closure | 33 |
+| Plaquette and gauge-vacuum transfer / combinatorics | 321 |
+| Wilson–staggered constrained-fiber / KP / RG | 14 |
+| Admissibility uniqueness, Dobrushin and block criteria | 24 |
+| SU(2) and two-region response | 40 |
+| Gauge center, twist, flux, Wilson loops and area law | 54 |
+| Other Yang–Mills, mass-gap and transfer notes | 22 |
+| Scripts / computational artifacts | 32 |
+| Historic intake and work history | 15 |
+| Unlanded archive material | 1 |
+| Adjacent/false-positive candidate notes | 73 |
+| **Total** | **699** |
+
+### Native gauge-transfer gap notes (70)
+
+- `docs/NATIVE_GAUGE_TRANSFER_A2_REFLECTION_UNIFORM_HALF_LINE_GAP_THEOREM_NOTE_2026-09-02.md`
+- `docs/NATIVE_GAUGE_TRANSFER_BETA_IDENTIFICATION_PHYSICAL_PLAQUETTE_RELATIONSHIP_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_BLOCK_HELLMANN_MONOTONICITY_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_C00_LOWER_BOUND_RUNG_TWELVE_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_CENTRAL_CHARACTER_GAUSSIAN_SPECTRAL_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_FOUR_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_TWO_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_DETERMINANT_MODE_TAIL_RUNG_THIRTEEN_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_DIAGONAL_DOMINATION_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_DIMENSION_DIVIDED_WILSON_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/NATIVE_GAUGE_TRANSFER_FULL_TOP_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/NATIVE_GAUGE_TRANSFER_HDET_GAUSSIAN_CORE_SUPPORT_NOTE_2026-06-18.md`
+- `docs/NATIVE_GAUGE_TRANSFER_KILLED_HEAT_SECOND_ORDER_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_OPERATOR_NORM_REMAINDER_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_OUTSIDE_WEIGHT_TAIL_RUNG_FOURTEEN_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_CLOSED_FORM_RUNG_SIXTEEN_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_DISCRIMINANT_CONJUGATION_RUNG_SEVENTEEN_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_EIGENVALUE_RATIO_EPS_CANCELLATION_RUNG_TWENTY_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_SPECTRAL_DOMINATION_RUNG_ELEVEN_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_SUBLEADING_SIGN_RUNG_NINETEEN_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_VIRIAL_LEADING_EQUALITY_RUNG_EIGHTEEN_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_REDUCED_LIE_TYPE_A2_DIAGONAL_SIMILARITY_SECTOR_CANCELLATION_BOUNDED_THEOREM_NOTE_2026-09-03.md`
+- `docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOCAL_CLT_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_W85_FINITE_WITNESS_OPEN_GATE_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_TAIL_DOMINATION_RUNG_ELEVEN_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_GAUGE_TRANSFER_WILSON_DISCRETE_HEAT_INSERTION_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/NATIVE_GAUGE_TRANSFER_WILSON_PERRON_CORRECTION_NEGATIVE_SIGN_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/NATIVE_GAUGE_TRANSFER_WILSON_SECOND_ORDER_MULTIPLIER_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/NATIVE_GAUGE_TRANSFER_WILSON_TO_SADDLE_UNIFORM_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md`
+- `docs/work_history/repo/review_feedback/pr8010-native-wall/staging/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.py`
+- `scripts/native_gauge_transfer_a2_reflection_uniform_half_line_gap_2026_09_02.py`
+- `scripts/native_gauge_transfer_beta_identification_physical_plaquette_relationship_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_c00_lower_bound_rung_twelve_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_central_character_gaussian_spectral_second_order_2026_09_07.py`
+- `scripts/native_gauge_transfer_certified_gap_rung_four_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_certified_gap_rung_two_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_determinant_mode_tail_rung_thirteen_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_diagonal_domination_rung_nine_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.py`
+- `scripts/native_gauge_transfer_dimension_divided_wilson_second_order_2026_09_07.py`
+- `scripts/native_gauge_transfer_full_top_second_order_2026_09_07.py`
+- `scripts/native_gauge_transfer_hdet_gaussian_core_support_2026_06_18.py`
+- `scripts/native_gauge_transfer_killed_heat_second_order_kernel_2026_09_07.py`
+- `scripts/native_gauge_transfer_killed_heat_second_order_native_recurrence_check_2026_09_07.py`
+- `scripts/native_gauge_transfer_large_beta_gap_rung_six_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_reduced_a2_closed_form_rung_sixteen_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_reduced_a2_discriminant_conjugation_rung_seventeen_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_reduced_a2_eigenvalue_ratio_eps_cancellation_rung_twenty_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_reduced_a2_spectral_domination_rung_eleven_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_reduced_a2_subleading_sign_rung_nineteen_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_reduced_a2_virial_leading_equality_rung_eighteen_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_reduced_lie_type_a2_diagonal_similarity_sector_cancellation_check_2026_09_03.py`
+- `scripts/native_gauge_transfer_spatial_wilson_cube_slab_f3_check_2026_09_07.py`
+- `scripts/native_gauge_transfer_strong_coupling_gap_narrow_2026_06_12.py`
+- `scripts/native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_w85_finite_witness_open_gate_2026_06_12.py`
+- `scripts/native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_weyl_determinant_tail_domination_rung_eleven_bounded_2026_06_12.py`
+- `scripts/native_gauge_transfer_wilson_discrete_heat_insertion_2026_09_07.py`
+- `scripts/native_gauge_transfer_wilson_perron_correction_negative_sign_check_2026_09_07.py`
+- `scripts/native_gauge_transfer_wilson_second_order_multiplier_2026_09_07.py`
+- `scripts/native_gauge_transfer_wilson_second_order_multiplier_quadrature_check_2026_09_07.py`
+- `scripts/native_gauge_transfer_wilson_second_order_recurrence_check_2026_09_07.py`
+- `scripts/native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_2026_06_12.py`
+
+### Beta-6 plaquette expansion and closure (33)
+
+- `archive_unlanded/historic_intake_originals/branch01/104_BETA6_PLAQUETTE_CAMPAIGN_SYNTHESIS_CAPSTONE_FRONTIER_NOTE_2026-05-30.md`
+- `archive_unlanded/historic_intake_originals/branch02/573_GAUGE_VACUUM_PLAQUETTE_BETA6_IDENTITY_RIM_FINITE_MOMENT_PACKET_REDUCTION_NOTE_2026-04-18.md`
+- `docs/BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md`
+- `docs/BETA6_PLAQUETTE_CERTIFIED_CONVERGENT_BACKBONE_BOUNDED_NOTE_2026-06-04.md`
+- `docs/BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`
+- `docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md`
+- `docs/BETA6_PLAQUETTE_CUBE_SECTOR_CLOSED_FORM_GENERATING_FUNCTION_NOTE_2026-05-31.md`
+- `docs/BETA6_PLAQUETTE_CUMULANT_MOMENT_POSITIVITY_NO_GO_NOTE_2026-05-30.md`
+- `docs/BETA6_PLAQUETTE_D10_COEFFICIENT_AND_RADIUS_EVIDENCE_BOUNDED_NOTE_2026-06-04.md`
+- `docs/BETA6_PLAQUETTE_D11_COEFFICIENT_AND_CONTINUATION_SPREAD_BOUNDED_NOTE_2026-06-04.md`
+- `docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`
+- `docs/BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md`
+- `docs/BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md`
+- `docs/BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md`
+- `docs/BETA6_PLAQUETTE_TENSOR_NETWORK_FINITE_IRREP_SUPPORT_AND_RECOUPLING_WALL_NOTE_2026-06-04.md`
+- `docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md`
+- `docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17_NOTE_2026-05-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md`
+- `docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md`
+- `docs/PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md`
+- `docs/PLAQUETTE_BETA9_ENVIRONMENT_CLUSTER_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/SU2_U0_SINGLE_PLAQUETTE_BETA16_NATIVE_INTERVAL_BOUNDED_SUPPORT_NOTE_2026-06-18.md`
+- `docs/historic_intake/HISTORIC_BETA6_PLAQUETTE_CAMPAIGN_SYNTHESIS_CAPSTONE_FRONTIER_NOTE_2026_05_30_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_GAUGE_VACUUM_PLAQUETTE_BETA6_IDENTITY_RIM_FINITE_MOMENT_PACKET_REDUCTION_NOTE_2026_04_18_INTAKE_NOTE_2026-08-05.md`
+- `scripts/frontier_beta6_plaquette_tensor_network_2026_06_04.py`
+- `scripts/frontier_gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17_hostile_audit_findings.py`
+- `scripts/frontier_gauge_vacuum_plaquette_beta6_seam_domain_guard_2026_06_12.py`
+- `scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py`
+- `scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py`
+- `scripts/plaquette_beta9_environment_cluster_identification_narrow_theorem_2026_06_12.py`
+- `scripts/su2_u0_single_plaquette_beta16_native_interval_2026_06_18.py`
+
+### Plaquette and gauge-vacuum transfer / combinatorics (321)
+
+- `archive_unlanded/codex__gauge-perron-variational-proof-2026-04-25/docs/GAUGE_VACUUM_PLAQUETTE_PERRON_VARIATIONAL_ENVELOPE_THEOREM_NOTE_2026-04-25.md`
+- `archive_unlanded/codex__land-gauge-perron-variational-2026-04-25/docs/GAUGE_VACUUM_PLAQUETTE_PERRON_VARIATIONAL_ENVELOPE_THEOREM_NOTE_2026-04-25.md`
+- `archive_unlanded/codex__land-gauge-perron-variational-2026-04-25/scripts/frontier_gauge_vacuum_plaquette_perron_variational_envelope.py`
+- `archive_unlanded/gauge-vacuum-plaquette-missing-runners-2026-04-30/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_RANK_ONE_FACTORIZED_CLASS_BOUNDARY_NOTE_2026-04-19.md`
+- `archive_unlanded/gauge-vacuum-plaquette-missing-runners-2026-04-30/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TAIL_UNDERDETERMINATION_THEOREM_NOTE_2026-04-19.md`
+- `archive_unlanded/historic_intake_originals/branch02/564_GAUGE_PLAQUETTE_SOURCE_NO_GO_NOTE.md`
+- `archive_unlanded/historic_intake_originals/branch02/576_GAUGE_VACUUM_PLAQUETTE_FINITE_SAMPLE_PACKET_NONCLOSURE_NOTE_2026-04-17.md`
+- `archive_unlanded/historic_intake_originals/branch02/578_GAUGE_VACUUM_PLAQUETTE_FIRST_PROPAGATED_RETAINED_TRIPLE_MINIMALITY_CURRENT_BANK_NOGO_NOTE_2026-04-17.md`
+- `archive_unlanded/historic_intake_originals/branch02/588_GAUGE_VACUUM_PLAQUETTE_PARENT_COMPRESSION_THEOREM_NOTE_2026-04-17.md`
+- `archive_unlanded/historic_intake_originals/branch02/590_GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_GEOMETRY_DEPENDENCE_NO_GO_NOTE_2026-07-10.md`
+- `archive_unlanded/historic_intake_originals/branch02/596_GAUGE_VACUUM_PLAQUETTE_TEMPORAL_GAUGE_MIXED_KERNEL_FACTORIZATION_BRIDGE_THEOREM_NOTE_2026-05-10.md`
+- `archive_unlanded/historic_intake_originals/branch05/1505_PLAQUETTE_ANALYTIC_DERIVATION_NOTE.md`
+- `archive_unlanded/historic_intake_originals/branch05/1509_PLAQUETTE_FIRST_NONLOCAL_CONNECTED_CORRECTION_NOTE.md`
+- `archive_unlanded/historic_intake_originals/branch05/1511_PLAQUETTE_OPEN_SURFACE_HIERARCHY_NOTE.md`
+- `archive_unlanded/historic_intake_originals/recovery/3610_GAUGE_VACUUM_PLAQUETTE_BRIDGE_THEOREM_NOTE.md`
+- `docs/ADMISSIBILITY_RULE_BOND_STRAINS_AND_PLAQUETTE_CURLS_A_FIELD_ENERGY_PER_LOCAL_TICK_THAT_DOES_NOT_SEE_THE_COINS_AXES_IS_THE_CURVATURE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md`
+- `docs/ADMISSIBILITY_RULE_THE_WALKS_LINKS_BUILT_FROM_THE_FRAME_CARRY_THE_LENGTHS_CURVATURE_ONLY_AT_PLAQUETTE_REACH_BOUNDED_THEOREM_NOTE_2026-09-23.md`
+- `docs/BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md`
+- `docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`
+- `docs/DECLARED_PLAQUETTE_COMPARISON_VALUE_DISTINCT_FROM_ONE_PLAQUETTE_HAAR_MEAN_BOUNDED_THEOREM_NOTE_2026-08-13.md`
+- `docs/DYNAMICS_CLAUSE_THE_COVARIANT_PLAQUETTE_CLAUSE_ANNIHILATES_UNIFORM_ICE_EXACTLY_AT_THE_ROKHSAR_KIVELSON_POINT_AND_UNRECORDED_PLAQUETTES_CAN_POLARIZE_THE_ICE_BOUNDED_THEOREM_NOTE_2026-09-24.md`
+- `docs/FINITE_CLOCK_LOCAL_GROUND_PROBABILITIES_AND_CHARGE_PROJECTED_PLAQUETTE_HARMONICS_BOUNDED_THEOREM_NOTE_2026-09-14.md`
+- `docs/GAUGE_MULTIPLAQUETTE_CHARACTER_GLUING_EMERGENT_INTEGER_SECTOR_RECORD_CONTEXT_AND_ACTION_PAIRING_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md`
+- `docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_ADJACENT_WORD_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_ADJACENT_WORD_SCORECARD_FRESHNESS_COMPANION_NOTE_2026-06-16.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_BRIDGE_SUPPORT_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_EVALUATION_THEOREM_NOTE_2026-04-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_FUNCTIONAL_UNIQUENESS_NOTE_2026-04-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSION_SCOPE_RHO_COMPLETE_INTERFACE_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_CONJUGATION_SYMMETRIC_RETAINED_SAMPLING_REDUCTION_NOTE_2026-04-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_DERIVED_WORD_CHAIN_END_TO_END_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_EXACT_CORE_NARROW_THEOREM_NOTE_2026-05-29.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FINITE_TENSOR_WORD_PACKET_BOUNDED_NOTE_2026-05-10.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_FULL_PACKET_NO_GO_THEOREM_NOTE_2026-04-20.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_CLOSURE_ENDPOINT_NOTE_2026-04-20.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_CLOSURE_ENDPOINT_NOTE_2026-04-20_NOTE_2026-05-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_LEAST_DISTORTION_SELECTOR_THEOREM_NOTE_2026-04-20.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_ORIENTATION_THEOREM_NOTE_2026-04-20.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_REDUCED_PACKET_COMPLEX_GIVENS_SELECTOR_THEOREM_NOTE_2026-04-20.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PACKET_THEOREM_NOTE_2026-04-19.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_RANK_ONE_FACTORIZED_CLASS_BOUNDARY_NOTE_2026-04-19.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TAIL_UNDERDETERMINATION_THEOREM_NOTE_2026-04-19.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_ZERO_EXTENSION_FACTORIZED_CLASS_THEOREM_NOTE_2026-04-19.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_CURRENT_STACK_CONSTRAINT_BOUNDARY_NOTE_2026-04-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_EXACT_RADICAL_RECONSTRUCTION_MAP_NOTE_2026-04-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_MINIMAL_POSITIVE_COMPLETION_NOTE_2026-04-19.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_RECONSTRUCTION_NOTE_2026-04-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_ENVIRONMENT_EVALUATOR_ROUTE_NOTE_2026-04-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_PARTIAL_EVALUATION_NOTE_2026-04-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_RETAINED_POSITIVE_CONE_OBSTRUCTION_NOTE_2026-04-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FOUR_STRIP_PARITY_TEST_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_FULL_TWO_SLICE_STATIC_RHO_IDENTIFICATION_NARROW_NO_GO_NOTE_2026-08-22.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_HF_IDENTIFICATION_DIAGNOSTIC_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_HIERARCHY_OBSTRUCTION_LEMMAS_BOUNDED_NOTE_2026-05-10.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_INTERNAL_LINK_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_PERRON_REDUCTION_THEOREM_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_READOUT_FORM_TRACE_VS_PERRON_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_BOUNDED_COEFFICIENT_NARROW_NOTE_2026-05-10.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_STRIPPING_UNIQUENESS_NARROW_NOTE_2026-05-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_RETAINED_CLASS_SAMPLING_INVERSION_NOTE_2026-04-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_RIM_DEPTH_LADDER_DEEP_RIM_LIMIT_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_RING_FIVE_SLAB_TREND_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_RING_TRANSVERSE_RHO_LADDER_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_SLAB_WINDOW_COUPLING_DERIVED_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_ONE_WORD_PACKET_NARROW_THEOREM_NOTE_2026-05-10.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_SPECTRAL_MEASURE_THEOREM_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_STRIP_WORD_DEEP_LADDER_PRODUCT_AXIS_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_SU3_CG_LIBRARY_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_SU3_FULL_SLICE_PRODUCT_FUBINI_FACTORIZATION_NOTE_2026-06-06.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_SYMMETRIZED_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_MULTIWORD_PERRON_LADDER_BOUNDED_NOTE_2026-06-11.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_PERRON_DERIVED_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-11.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_THREE_STRIP_ENVIRONMENT_RHO_LADDER_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_TRIVIAL_SLICE_EIGEN_IDENTITY_LEMMA_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_TWO_STRIP_ENVIRONMENT_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_U1_DENSITY_SIGN_ALTERNATION_NARROW_NOTE_2026-05-17.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_WIDTH_REDUCTION_MAP_DERIVED_COUPLED_LIFT_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_WIDTH_TWO_LADDER_STRUCTURAL_LIFT_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_WINDOWED_BOND_DEEP_LIMIT_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_WINDOW_CLEBSCH_INSERTION_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_WINDOW_INTERTWINER_BASIS_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_WINDOW_TOP_DOWN_INTEGRAL_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_HILBERT_METRIC_BRACKET_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_POWER_BLOCK_BIRKHOFF_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RESCALED_TAIL_SUPPORT_NOTE_2026-06-18.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RUNG_FOUR_DEEP_RIM_BOUNDED_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/GAUGE_VACUUM_PLAQUETTE_WORD_LIMIT_BOX_MODE_SWEEP_BOUNDED_NOTE_2026-06-12.md`
+- `docs/NATIVE_COLUMN_PLAQUETTE_SELECTION_NOTE_2026-10-18.md`
+- `docs/NATIVE_HOLONOMY_PLAQUETTE_CENTER_FLUX_NO_GO_NOTE_2026-05-23.md`
+- `docs/PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md`
+- `docs/PER_PLAQUETTE_LICENSE_ONE_TICK_REACHABILITY_DERIVATION_NARROW_THEOREM_NOTE_2026-07-12.md`
+- `docs/PLAQUETTE_4D_MC_FSS_NUMERICAL_THEOREM_NOTE_2026-05-05.md`
+- `docs/PLAQUETTE_4D_MC_SUPPORT_NOTE_2026-05-04.md`
+- `docs/PLAQUETTE_ALPHA_S_CHAIN_AUDIT_MAP_SYNTHESIS_META_NOTE_2026-05-10.md`
+- `docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md`
+- `docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_SPECIFIC_POSITIVITY_NOTE_2026-05-03.md`
+- `docs/PLAQUETTE_C6_DERIVATION_FRAMEWORK_SU3_NARROW_THEOREM_NOTE_2026-05-27.md`
+- `docs/PLAQUETTE_CORNER_ALTERNATING_SUM_NOT_COVARIANT_BOUNDED_THEOREM_NOTE_2026-10-10.md`
+- `docs/PLAQUETTE_CORNER_CIRCULATION_NOT_FORCED_BOUNDED_THEOREM_NOTE_2026-10-10.md`
+- `docs/PLAQUETTE_CORNER_SYMBOL_PAIR_COVARIANCE_ONLY_ZERO_BOUNDED_THEOREM_NOTE_2026-10-10.md`
+- `docs/PLAQUETTE_CORNER_WEIGHT_COVARIANCE_ONLY_ZERO_BOUNDED_THEOREM_NOTE_2026-10-10.md`
+- `docs/PLAQUETTE_ENVIRONMENT_CONTRACTION_COST_VERIFICATION_BOUNDED_NOTE_2026-06-12.md`
+- `docs/PLAQUETTE_ENVIRONMENT_QUOTIENT_EQUIVARIANCE_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/PLAQUETTE_HIERARCHY_POLYNOMIAL_BOUNDEDNESS_NARROW_THEOREM_NOTE_2026-05-10.md`
+- `docs/PLAQUETTE_MARKED_SLICE_BULK_AVERAGE_TRANSLATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/PLAQUETTE_MC_CERTIFICATION_PROTOCOL_NOTE_2026-06-11.md`
+- `docs/PLAQUETTE_OBSERVABLE_UNIQUENESS_BOUNDED_NOTE_2026-05-25.md`
+- `docs/PLAQUETTE_PER_STEP_PER_PLAQUETTE_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+- `docs/PLAQUETTE_SOURCE_SECTOR_PULLBACK_IDENTITY_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md`
+- `docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_BOUNDED_SYNTHESIS_NOTE_2026-05-06.md`
+- `docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md`
+- `docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`
+- `docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`
+- `docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md`
+- `docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md`
+- `docs/PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md`
+- `docs/RING_MODEL_ON_16_CUBED_A_PAIR_PLAQUETTE_GUIDE_LEAVES_THE_LATE_CURVATURE_RISE_AND_SHIFTS_THE_ENERGY_BY_TEN_STANDARD_ERRORS_BOUNDED_THEOREM_NOTE_2026-10-01.md`
+- `docs/RING_MODEL_PROJECTOR_MONTE_CARLO_AT_THE_PURE_RING_POINT_ENERGIES_BELOW_VARIATIONAL_AND_NO_GROWTH_OF_PLAQUETTE_ORDER_BOUNDED_THEOREM_NOTE_2026-09-24.md`
+- `docs/SAME_LAW_PLAQUETTE_NOETHER_RECORD_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-09-08.md`
+- `docs/SPIN_HALF_CARTESIAN_PLAQUETTE_SOURCE_NOTE_2026-09-07.md`
+- `docs/STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_IS_ADMISSIBLE_NOT_CLEAN_CLOSEABLE_BOUNDED_NOTE_2026-06-07.md`
+- `docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md`
+- `docs/THETA_MULTI_PLAQUETTE_CROSS_PLANE_ABSENCE_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md`
+- `docs/THE_FERMIONS_CHARGE_COUPLING_SCREENS_THE_SPIN_HALF_LINK_FIELD_AND_SUPPLIES_NO_TRANSVERSE_ELECTRIC_STIFFNESS_AND_THE_PI_FLUX_SEA_SELECTS_THE_SIGN_OF_THE_PLAQUETTE_COUPLING_BOUNDED_NOTE_2026-09-04.md`
+- `docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md`
+- `docs/U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md`
+- `docs/U1_QUANTUM_LINK_MATTER_MAGNETIC_PLAQUETTE_FINITE_STEP_JOIN_BOUNDED_THEOREM_NOTE_2026-09-03.md`
+- `docs/UNIFORM_ICE_BY_FORMATION_THE_SQUARE_LOOP_OBSTRUCTION_THE_PLAQUETTE_COORDINATOR_AND_PLANS_BOUNDED_THEOREM_NOTE_2026-09-22.md`
+- `docs/historic_intake/HISTORIC_GAUGE_PLAQUETTE_SOURCE_NEGATIVE_NOTE_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_GAUGE_VACUUM_PLAQUETTE_BRIDGE_THEOREM_NOTE_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_GAUGE_VACUUM_PLAQUETTE_FINITE_SAMPLE_PACKET_NONCLOSURE_NOTE_2026_04_17_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_GAUGE_VACUUM_PLAQUETTE_FIRST_PROPAGATED_RETAINED_TRIPLE_MINIMALITY_CURRENT_BANK_NEGATIVE_NOTE_2026_04_17_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_GAUGE_VACUUM_PLAQUETTE_PARENT_COMPRESSION_THEOREM_NOTE_2026_04_17_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_GEOMETRY_DEPENDENCE_NEGATIVE_NOTE_2026_07_10_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_GAUGE_VACUUM_PLAQUETTE_TEMPORAL_GAUGE_MIXED_KERNEL_FACTORIZATION_BRIDGE_THEOREM_NOTE_2026_05_10_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_PLAQUETTE_ANALYTIC_DERIVATION_NOTE_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_PLAQUETTE_FIRST_NONLOCAL_CONNECTED_CORRECTION_NOTE_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_PLAQUETTE_OPEN_SURFACE_HIERARCHY_NOTE_INTAKE_NOTE_2026-08-05.md`
+- `docs/work_history/repo/review_feedback/CYCLE703_HKP_PLAQUETTE_QUOTIENT_NOTE_2026-07-25.md`
+- `docs/work_history/repo/review_feedback/CYCLE703_LOCAL_CELLULAR_PLAQUETTE_DECODER_NOTE_2026-07-25.md`
+- `docs/work_history/review_loop/pr8150/8148/8148_ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz`
+- `scripts/admissibility_reflected_plaquette_curvature_record_ricci_source_intertwiner_boundary_2026_08_11.py`
+- `scripts/admissibility_rule_bond_strains_and_plaquette_curls_a_field_energy_per_local_tick_that_does_not_see_the_coins_axes_2026_09_21.py`
+- `scripts/admissibility_rule_the_walks_links_carry_the_lengths_curvature_only_at_plaquette_reach_2026_09_23.py`
+- `scripts/admissibility_same_law_plaquette_noether_record_statistics_discriminator_2026_09_01.py`
+- `scripts/audit_companion_gauge_vacuum_plaquette_adjacent_word_scorecard_freshness_2026_06_16.py`
+- `scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py`
+- `scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py`
+- `scripts/audit_companion_strong_cp_multiplaquette_ftf_admissible_not_clean_closeable_exact.py`
+- `scripts/canonical_plaquette_surface.py`
+- `scripts/declared_plaquette_comparison_value_distinct_from_one_plaquette_haar_mean_2026_08_13.py`
+- `scripts/dynamics_clause_the_covariant_plaquette_clause_and_the_rokhsar_kivelson_point_2026_09_24.py`
+- `scripts/frontier_canonical_plaquette_alpha_lm_value_certificate_2026_06_16.py`
+- `scripts/frontier_cycle703_hkp_plaquette_quotient_2026_07_25.py`
+- `scripts/frontier_cycle703_local_cellular_plaquette_decoder_2026_07_25.py`
+- `scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py`
+- `scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py`
+- `scripts/frontier_gauge_sd_loop_equation_beta_coupled_plaquette_bracket.py`
+- `scripts/frontier_gauge_vacuum_plaquette_bridge_support.py`
+- `scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py`
+- `scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py`
+- `scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py`
+- `scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_2026_04_19.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_2026_04_19.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_2026_04_20.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_closure_endpoint_2026_04_20.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_closure_endpoint_note_2026-04-20_hostile_audit_findings.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_2026_04_20.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_2026_04_20.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_orientation_theorem_2026_04_20.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_2026_04_19.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_2026_04_19.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_2026_04_19.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py`
+- `scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py`
+- `scripts/frontier_gauge_vacuum_plaquette_framework_point_underdetermination.py`
+- `scripts/frontier_gauge_vacuum_plaquette_full_slice_rim_lift_integral_identification_2026_04_17.py`
+- `scripts/frontier_gauge_vacuum_plaquette_full_two_slice_compression_actual_l3_2026_08_22.py`
+- `scripts/frontier_gauge_vacuum_plaquette_hierarchy_obstruction_lemmas.py`
+- `scripts/frontier_gauge_vacuum_plaquette_infinite_hierarchy_obstruction.py`
+- `scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py`
+- `scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py`
+- `scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py`
+- `scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py`
+- `scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py`
+- `scripts/frontier_gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow.py`
+- `scripts/frontier_gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow.py`
+- `scripts/frontier_gauge_vacuum_plaquette_residual_environment_identification.py`
+- `scripts/frontier_gauge_vacuum_plaquette_residual_environment_spectrum_actual_l3.py`
+- `scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py`
+- `scripts/frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py`
+- `scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py`
+- `scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py`
+- `scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py`
+- `scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow.py`
+- `scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py`
+- `scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow.py`
+- `scripts/frontier_gauge_vacuum_plaquette_spatial_environment_transfer.py`
+- `scripts/frontier_gauge_vacuum_plaquette_spectral_measure_theorem.py`
+- `scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py`
+- `scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py`
+- `scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py`
+- `scripts/frontier_gauge_vacuum_plaquette_u1_density_sign_alternation_narrow.py`
+- `scripts/frontier_hierarchy_taste_in_plaquette_measure_spot_check.py`
+- `scripts/frontier_holonomy_native_plaquette_discriminator.py`
+- `scripts/frontier_per_plaquette_from_adjacency_license_2026_06_09.py`
+- `scripts/frontier_plaquette_alpha_s_chain_audit_map_synthesis.py`
+- `scripts/frontier_plaquette_bootstrap_framework_integration.py`
+- `scripts/frontier_plaquette_bootstrap_framework_specific_positivity.py`
+- `scripts/frontier_plaquette_c6_derivation_framework_su3_narrow.py`
+- `scripts/frontier_plaquette_grade4_production_mc_2026_06_11.py`
+- `scripts/frontier_plaquette_hierarchy_polynomial_boundedness_narrow.py`
+- `scripts/frontier_plaquette_mc_certification_protocol_smoke_2026_06_11.py`
+- `scripts/frontier_plaquette_self_consistency.py`
+- `scripts/frontier_plaquette_self_consistency_finite_mc_repair.py`
+- `scripts/frontier_su3_4d_plaquette_fss_data_2026_05_05.py`
+- `scripts/frontier_su3_4d_plaquette_fss_verify_2026_05_05.py`
+- `scripts/frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09.py`
+- `scripts/frontier_theta_multi_plaquette_cross_plane_narrowing_2026_06_11.py`
+- `scripts/frontier_u0_plaquette_quartic_derivation.py`
+- `scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py`
+- `scripts/gauge_vacuum_plaquette_adjacent_word_contraction_derived_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_compression_scope_rho_complete_interface_narrow_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_derived_word_chain_end_to_end_composition_bounded_theorem_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_doublet_dense_root_count_certificate_2026_05_03.py`
+- `scripts/gauge_vacuum_plaquette_four_strip_parity_test_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_hf_identification_diagnostic_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_internal_link_contraction_derived_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_readout_form_trace_vs_perron_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_rim_boundary_eta_env_constructed_readout_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_rim_depth_ladder_deep_rim_limit_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_ring_five_slab_trend_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_ring_transverse_rho_ladder_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_scalar_underdetermination_formal.py`
+- `scripts/gauge_vacuum_plaquette_slab_window_coupling_derived_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_strip_word_deep_ladder_product_axis_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py`
+- `scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py`
+- `scripts/gauge_vacuum_plaquette_three_sample_positive_cone_scope_guard_2026_06_08.py`
+- `scripts/gauge_vacuum_plaquette_three_strip_environment_rho_ladder_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_trivial_slice_eigen_identity_lemma_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_two_strip_environment_rho_composed_readout_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_width_reduction_map_derived_coupled_lift_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_width_two_ladder_structural_lift_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_window_clebsch_insertion_displacement_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_window_intertwiner_basis_displacement_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_word_count_hilbert_metric_bracket_narrow_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_word_count_rescaled_tail_support_2026_06_18.py`
+- `scripts/gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py`
+- `scripts/gauge_vacuum_plaquette_word_limit_box_mode_sweep_bounded_2026_06_12.py`
+- `scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py`
+- `scripts/native_column_plaquette_selection.py`
+- `scripts/per_plaquette_license_covariant_subdomain_classification_2026_07_12.py`
+- `scripts/per_plaquette_license_one_tick_reachability_derivation_2026_07_12.py`
+- `scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py`
+- `scripts/plaquette_corner_alternating_sum_not_covariant_2026_10_10.py`
+- `scripts/plaquette_corner_circulation_not_forced_2026_10_10.py`
+- `scripts/plaquette_corner_symbol_pair_covariance_only_zero_2026_10_10.py`
+- `scripts/plaquette_corner_weight_covariance_only_zero_2026_10_10.py`
+- `scripts/plaquette_environment_contraction_cost_verification_bounded_2026_06_12.py`
+- `scripts/plaquette_environment_quotient_equivariance_narrow_theorem_2026_06_12.py`
+- `scripts/plaquette_marked_slice_bulk_average_translation_bridge_2026_06_12.py`
+- `scripts/plaquette_observable_uniqueness_runner.py`
+- `scripts/plaquette_per_step_per_plaquette_normalization_bridge_2026_06_12.py`
+- `scripts/plaquette_source_sector_pullback_identity_narrow_theorem_2026_06_12.py`
+- `scripts/plaquette_value_derivation_check_2026_06_10.py`
+- `scripts/probe_hk_plaquette_closed_form.py`
+- `scripts/ring_model_16_cubed_curvature_with_a_pair_plaquette_guide_beside_the_old_guide_2026_10_01.py`
+- `scripts/spin_half_cartesian_plaquette_source_2026_09_07.py`
+- `scripts/spin_half_cartesian_plaquette_source_independent_check_2026_09_07.py`
+- `scripts/u1_quantum_link_matter_magnetic_plaquette_finite_step_join_2026_09_03.py`
+- `scripts/uniform_ice_by_formation_square_loop_obstruction_plaquette_coordinator_and_plans_2026_09_22.py`
+
+### Wilson–staggered constrained-fiber / KP / RG (14)
+
+- `archive_unlanded/historic_intake_originals/branch04/1129_MASSIVE_WILSON_STAGGERED_DOBRUSHIN_SPATIAL_UNIQUENESS_WEDGE_BOUNDED_THEOREM_NOTE_2026-07-12.md`
+- `docs/WILSON_STAGGERED_COMPLETED_JOINT_TWO_MARK_COVARIANCE_NONLINEAR_SOURCE_OUTPUT_TUBE_BOUNDED_THEOREM_NOTE_2026-07-13.md`
+- `docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md`
+- `docs/WILSON_STAGGERED_CONSTRAINED_FIBER_TWO_LAYER_KP_COMPLEX_SOURCE_POLYMER_BOUNDED_THEOREM_NOTE_2026-07-12.md`
+- `docs/WILSON_STAGGERED_DECLARED_RG_CHART_RAW_LIFT_GEOMETRIC_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md`
+- `docs/WILSON_STAGGERED_ENHANCED_MOMENT_GENERATED_BASE_DECORATED_FACTOR_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md`
+- `docs/WILSON_STAGGERED_EXTERNAL_SHORTEST_SCHUR_CENTER_HAAR_TAIL_PROJECTED_QUADRATIC_WEYL_CONDITIONAL_REFERENCE_BOUNDED_THEOREM_NOTE_2026-07-12.md`
+- `docs/WILSON_STAGGERED_RAW_CONSTRAINED_ACTION_HESSIAN_DECAY_BOUNDED_THEOREM_NOTE_2026-07-12.md`
+- `docs/WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md`
+- `docs/historic_intake/HISTORIC_MASSIVE_WILSON_STAGGERED_DOBRUSHIN_SPATIAL_UNIQUENESS_WEDGE_BOUNDED_THEOREM_NOTE_2026_07_12_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_MASSIVE_WILSON_STAGGERED_SPATIAL_DLR_ACCUMULATION_OS_TRANSFER_BOUNDED_THEOREM_NOTE_2026_07_12_INTAKE_NOTE_2026-08-05.md`
+- `scripts/wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12.py`
+- `scripts/wilson_staggered_constrained_fiber_two_layer_kp_source_polymer_2026_07_12.py`
+- `scripts/wilson_staggered_retained_grassmann_two_layer_kp_polymer_norm_2026_07_12.py`
+
+### Admissibility uniqueness, Dobrushin and block criteria (24)
+
+- `archive_unlanded/historic_intake_originals/branch01/251_COMPACT_DOBRUSHIN_SUBWEDGE_SEPARATED_POINT_ULTRALOCAL_CONTINUUM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md`
+- `docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md`
+- `docs/ADMISSIBILITY_RULE_LIGHT_CONE_FORMATION_KEEPS_MEMORY_IN_3PLUS1_ITS_STATIONARY_LAW_IS_ONE_LAYER_OF_A_REFLECTION_POSITIVE_BILAYER_ORDERED_ABOVE_BETA_0P5905_BOUNDED_THEOREM_NOTE_2026-09-23.md`
+- `docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md`
+- `docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_WEAK_COUPLING_COMPARISON_AND_CORRELATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md`
+- `docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md`
+- `docs/ADMISSIBILITY_RULE_THE_RECORD_GAS_DOES_MAKE_THE_CHESSBOARD_WHEN_A_RECORDED_BOND_COSTS_A_FACTOR_BELOW_NINE_OVER_62500_AND_THE_TWO_FRAMED_STATES_DIFFER_AT_EVERY_SITE_BOUNDED_THEOREM_NOTE_2026-09-24.md`
+- `docs/ADMISSIBILITY_RULE_TWO_SITE_BLOCK_CRITERION_EXACT_AND_SILENT_FOR_EVERY_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/historic_intake/HISTORIC_COMPACT_DOBRUSHIN_SUBWEDGE_SEPARATED_POINT_ULTRALOCAL_CONTINUUM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026_07_12_INTAKE_NOTE_2026-08-05.md`
+- `docs/work_history/review_loop/pr8146/8146/8146_ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz`
+- `docs/work_history/review_loop/pr8146/8146/8146_admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py.gz`
+- `docs/work_history/review_loop/pr8146/8146/8146_admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.txt.gz`
+- `docs/work_history/review_loop/pr8151/8151_ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz`
+- `docs/work_history/review_loop/pr8151/8151_admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py.gz`
+- `docs/work_history/review_loop/pr8151/8151_admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.txt.gz`
+- `docs/work_history/review_loop/pr8154/8156/8156_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz`
+- `docs/work_history/review_loop/pr8154/8156/8156_admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py.gz`
+- `docs/work_history/review_loop/pr8154/8156/8156_admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.txt.gz`
+- `scripts/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.py`
+- `scripts/admissibility_rule_light_cone_formation_keeps_memory_in_3plus1_stationary_law_one_layer_of_a_reflection_positive_bilayer_2026_09_23.py`
+- `scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py`
+- `scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py`
+- `scripts/admissibility_rule_two_site_block_criterion_exact_silent_for_every_coupling_2026_09_07.py`
+- `scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py`
+
+### SU(2) and two-region response (40)
+
+- `docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_SU2_ANCHOR_NOTE_2026-04-28.md`
+- `docs/DYNAMICS_CLAUSE_NON_ABELIAN_GAUGE_LINKS_NEED_SEVERAL_QUBITS_ONE_QUBIT_CARRIES_NO_SU_N_LINK_SU2_NEEDS_TWO_SU3_THREE_BOUNDED_THEOREM_NOTE_2026-09-24.md`
+- `docs/GBARE_ROOT_SU2_SCALE_TRANSPORT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md`
+- `docs/HIERARCHY_MERON_SUBSTRATE_BRIDGE_SU2_SU3_MISMATCH_NARROW_NO_GO_NOTE_2026-05-16.md`
+- `docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md`
+- `docs/INTERNAL_EXTERNAL_SU2_MERGER_RECORD_INVARIANCE_COMPANION_NOTE_2026-06-04.md`
+- `docs/LH_DOUBLET_SU2_SQUARED_HYPERCHARGE_ANOMALY_CANCELLATION_NOTE_2026-05-01.md`
+- `docs/PER_SITE_SU2_BRIDGE_BOUNDED_OBSTRUCTION_NOTE_2026-05-07_w2bridge.md`
+- `docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`
+- `docs/SO4_UNIQUE_SU2_SU2_SPLIT_NARROW_THEOREM_NOTE_2026-05-26.md`
+- `docs/SU2_DOUBLE_USE_REDUCES_TO_ONE_INDEX_PAIRING_ADMISSION_BOUNDED_NOTE_2026-06-08.md`
+- `docs/SU2_EQUIVARIANT_ONE_QUBIT_QCA_TRANSLATION_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-21.md`
+- `docs/SU2_TWO_REGION_BOUNDARY_RESPONSE_BOUNDED_THEOREM_NOTE_2026-11-08.md`
+- `docs/SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md`
+- `docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`
+- `docs/SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md`
+- `docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md`
+- `docs/SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md`
+- `docs/U0_SU2_BIVECTOR_IRREP_ANALYTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md`
+- `scripts/audit_companion_internal_external_su2_merger_record_invariance_2026_06_04.py`
+- `scripts/audit_companion_native_gauge_closure_cl3_su2_exact.py`
+- `scripts/audit_companion_so4_unique_su2_su2_split_exact_2026_05_26.py`
+- `scripts/audit_companion_su2_weak_alpha_lattice_anchor_2026_05_28.py`
+- `scripts/audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10.py`
+- `scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py`
+- `scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py`
+- `scripts/cl3_per_site_su2_bridge_check_2026_05_07_w2bridge.py`
+- `scripts/frontier_hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow.py`
+- `scripts/frontier_koide_su2_gauge_exchange_mixing.py`
+- `scripts/frontier_lh_doublet_su2_squared_hypercharge_anomaly.py`
+- `scripts/frontier_native_su2_tightness.py`
+- `scripts/frontier_su2_double_use_reduces_to_pairing_admission_2026_06_08.py`
+- `scripts/frontier_su2_two_region_boundary_response.py`
+- `scripts/frontier_su2_weak_beta_coefficient_structural_closed_form.py`
+- `scripts/frontier_su2_witten_z2_anomaly.py`
+- `scripts/gbare_root_su2_scale_transport_bridge_2026_06_17.py`
+- `scripts/internal_external_su2_merger_runner.py`
+- `scripts/per_site_su2_spin_half_check.py`
+- `scripts/su2_equivariant_one_qubit_qca_translation_rigidity_2026_10_21.py`
+- `scripts/su2_equivariant_one_qubit_qca_translation_rigidity_2026_10_21_helpers.py`
+
+### Gauge center, twist, flux, Wilson loops and area law (54)
+
+- `archive_unlanded/historic_intake_originals/branch03/860_KOIDE_HOLDS_IFF_RECORDED_FREE_POLE_MASS_CONFINEMENT_NARROW_THEOREM_NOTE_2026-06-06.md`
+- `archive_unlanded/historic_intake_originals/branch04/1253_PAIR_CORRELATION_ADJACENCY_CONFINEMENT_ADDITIVE_READOUT_CONNECTED_ZERO_STAR_COMPARATOR_BOUNDED_NOTE_2026-07-13.md`
+- `docs/AREA_LAW_ALGEBRAIC_SPECTRUM_ENTROPY_NO_GO_NOTE_2026-04-25.md`
+- `docs/AREA_LAW_COEFFICIENT_GAP_NOTE.md`
+- `docs/AREA_LAW_MAJORANA_CAR_FOCK_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-09.md`
+- `docs/AREA_LAW_MULTIPOCKET_SELECTOR_NO_GO_NOTE_2026-04-25.md`
+- `docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md`
+- `docs/AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md`
+- `docs/AREA_LAW_PRIMITIVE_EDGE_ENTROPY_SELECTOR_NO_GO_NOTE_2026-04-25.md`
+- `docs/AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md`
+- `docs/AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md`
+- `docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_ABOVE_J_EQUALS_TWO_THE_FLIPPING_LINE_NODE_IS_A_CUBIC_POINT_THAT_EMITS_A_PLANE_PAIR_BOUNDED_THEOREM_NOTE_2026-10-01.md`
+- `docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_CERTIFIED_TOUCHING_CENSUS_AT_BOUNDARY_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-10-01.md`
+- `docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_LINE_NODES_OUTSIDE_THE_COUPLING_TRIANGLE_BOUNDED_THEOREM_NOTE_2026-10-01.md`
+- `docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_J_TWO_ZONE_CENTRE_HAS_DEGREE_ZERO_WITH_EXPLICIT_REMAINDER_BOUNDS_AND_A_PAIR_IS_BORN_THERE_ABOVE_KAPPA_ONE_HALF_BOUNDED_THEOREM_NOTE_2026-10-01.md`
+- `docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_LINE_NODE_FLIP_COUPLING_IS_AN_EXACT_RESULTANT_ROOT_AND_THE_J_TWO_ZONE_CENTRE_HAS_DEGREE_ZERO_BOUNDED_THEOREM_NOTE_2026-10-01.md`
+- `docs/CONFINEMENT_STRING_TENSION_NOTE.md`
+- `docs/CUBIC_REPULSIVE_FLUX_FIXED_HALF_AND_CANONICAL_TWISTS_BOUNDED_THEOREM_NOTE_2026-09-04.md`
+- `docs/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md`
+- `docs/FINITE_CLOCK_PHASE_DIAGNOSTICS_LOCAL_WRAPS_AND_QUANTIZED_FLUX_BOUNDED_THEOREM_NOTE_2026-09-14.md`
+- `docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/GAUGE_WILSON_CUBE_SLAB_CHARACTER_MIXING_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/GAUGE_WILSON_CUBE_SLAB_EXACT_COVARIANCE_CENTRAL_GAUSSIAN_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/GAUGE_WILSON_CUBE_SLAB_FIRST_SPECTRAL_CORRECTIONS_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/GAUGE_WILSON_CUBE_SLAB_WEAK_COUPLING_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md`
+- `docs/HADRON_LANE1_CONFINEMENT_TO_MASS_FIREWALL_NOTE_2026-04-27.md`
+- `docs/HADRON_LANE1_CONFINEMENT_TO_MASS_FIREWALL_RECORD_INVARIANCE_COMPANION_NOTE_2026-06-04.md`
+- `docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md`
+- `docs/PRINCIPAL_FLUX_POSITIVE_GAUSSIAN_TRANSFER_AND_EXTENSIVE_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md`
+- `docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md`
+- `docs/THE_TWO_TT_GRAVITON_POLARISATIONS_ARE_READ_BY_THE_AXIS_BOND_PAIR_RECORD_STATISTICS_OF_THE_PI_FLUX_SEA_OFF_THE_COORDINATE_PLANES_THE_SHEAR_SECTOR_NEEDS_ONE_PERIOD_2_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-04.md`
+- `docs/THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`
+- `docs/historic_intake/HISTORIC_KOIDE_HOLDS_IFF_RECORDED_FREE_POLE_MASS_CONFINEMENT_NARROW_THEOREM_NOTE_2026_06_06_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_PAIR_CORRELATION_ADJACENCY_CONFINEMENT_ADDITIVE_READOUT_CONNECTED_ZERO_STAR_COMPARATOR_BOUNDED_NOTE_2026_07_13_INTAKE_NOTE_2026-08-05.md`
+- `scripts/audit_companion_hadron_lane1_confinement_to_mass_firewall_record_invariance_2026_06_04.py`
+- `scripts/exponential_scalar_future_confinement_check.py`
+- `scripts/frontier_area_law_algebraic_spectrum_entropy_no_go.py`
+- `scripts/frontier_area_law_coefficient_gap_source_packet.py`
+- `scripts/frontier_area_law_majorana_to_car_fock_equivalence_narrow.py`
+- `scripts/frontier_area_law_multipocket_selector_no_go.py`
+- `scripts/frontier_area_law_native_car_semantics_tightening.py`
+- `scripts/frontier_area_law_primitive_car_edge_identification.py`
+- `scripts/frontier_area_law_primitive_edge_entropy_selector_no_go.py`
+- `scripts/frontier_area_law_primitive_parity_gate_carrier.py`
+- `scripts/frontier_area_law_quarter_broader_no_go.py`
+- `scripts/frontier_confinement_string_tension.py`
+- `scripts/frontier_entanglement_area_law.py`
+- `scripts/frontier_hadron_lane1_confinement_to_mass_firewall.py`
+- `scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py`
+- `scripts/frontier_thooft_center_vortex_scope_repair.py`
+
+### Other Yang–Mills, mass-gap and transfer notes (22)
+
+- `docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`
+- `docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md`
+- `docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md`
+- `docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md`
+- `docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`
+- `docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md`
+- `docs/FINITE_CLOCK_TRANSFER_DISORDER_AND_SPECTRAL_GAP_PERIMETER_BOUNDED_THEOREM_NOTE_2026-09-14.md`
+- `docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md`
+- `docs/GRAVITON_MASS_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md`
+- `docs/INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md`
+- `docs/OPTIMIZED_CLOCK_LOOP_DRESSING_FIDELITY_AND_DEFECT_PATH_GAPS_BOUNDED_THEOREM_NOTE_2026-09-14.md`
+- `docs/PERIODIC_PXP_AND_STAGGERED_LINK_RING_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-10-07.md`
+- `docs/PMNS_TRANSFER_OPERATOR_DOMINANT_MODE_NOTE.md`
+- `docs/RP_MIXED_OBSERVABLE_SINGLE_TRANSFER_MATRIX_NARROW_THEOREM_NOTE_2026-05-29.md`
+- `docs/RP_TWO_STEP_TRANSFER_MATRIX_SINGULAR_MODE_C2_TIGHTENING_NOTE_2026-06-02.md`
+- `docs/S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md`
+- `docs/S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE_2026-05-17.md`
+- `docs/SPATIAL_SLAB_TRANSFER_OPERATOR_POSITIVITY_AND_DELTA_X_REAL_NOTE_2026-05-19.md`
+- `docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`
+- `docs/TWO_CHIRALITY_SPLIT_STEP_MASS_GAPS_EVERY_CONE_BOUNDED_THEOREM_NOTE_2026-10-21.md`
+- `docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md`
+- `docs/YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md`
+
+### Scripts / computational artifacts (32)
+
+- `scripts/a_record_native_staggered_mass_gap_2m_exponential_kernel_check_2026_09_03.py`
+- `scripts/audit_companion_axiom_first_reflection_positivity_parent_source_packet_2026_06_07.py`
+- `scripts/audit_companion_cluster_decomposition_temporal_narrow_2026_06_05.py`
+- `scripts/audit_companion_reflection_positivity_gauge_half_cauchy_schwarz_exact_2026_05_10.py`
+- `scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py`
+- `scripts/audit_companion_yang_mills_coupling_marginality_forces_d_four_exact_2026_05_26.py`
+- `scripts/axiom_first_cluster_decomposition_check.py`
+- `scripts/axiom_first_reflection_positivity_check.py`
+- `scripts/axiom_first_reflection_positivity_det_runner.py`
+- `scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py`
+- `scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py`
+- `scripts/cluster_decomposition_mass_gap_bridge_check.py`
+- `scripts/cluster_decomposition_spatial_slab_bridge_check.py`
+- `scripts/finite_clock_transfer_disorder_and_spectral_gap_perimeter_2026_09_14.py`
+- `scripts/frontier_axiom_first_reflection_positivity_theorem_note_2026-04-29_hostile_audit_findings.py`
+- `scripts/frontier_cluster_decomposition_parent_eq8_repair_narrow_verifier.py`
+- `scripts/frontier_cosmological_constant_spectral_gap.py`
+- `scripts/frontier_cosmological_constant_spectral_gap_identity.py`
+- `scripts/frontier_graviton_mass_spectral_gap_identity.py`
+- `scripts/frontier_hierarchy_delta0_s1_exact_one_link_strong_coupling_probe_2026_06_11.py`
+- `scripts/frontier_observable_generator_additivity_from_cluster_decomposition.py`
+- `scripts/frontier_pmns_transfer_operator_dominant_mode.py`
+- `scripts/frontier_rp_two_step_transfer_matrix_singular_mode_c2_tightening_2026_06_02.py`
+- `scripts/frontier_s3_time_transfer_matrix_bridge.py`
+- `scripts/frontier_s3_time_transfer_matrix_bridge_downstream_fix.py`
+- `scripts/frontier_unitary_transfer_matrix.py`
+- `scripts/gravity_sign_from_reflection_positivity_unitarity_dewitt_lambda_2026_06_08.py`
+- `scripts/reflection_positivity_wilson_temporal_gauge_n7_independent_2026_07_18.py`
+- `scripts/scale_ladder_gravity_d4_cone_fermion_cone_reflection_positivity_curvature_squared_2026_10_18.py`
+- `scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py`
+- `scripts/two_chirality_split_step_mass_gaps_every_cone_2026_10_21.py`
+- `scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py`
+
+### Historic intake and work history (15)
+
+- `docs/historic_intake/HISTORIC_DM_CLEAN_DERIVATION_NOTE_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_FLAVOR_REALITY_REFLECTION_20PHYSICIST_SPOTCHECK_NOTE_2026_05_29_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_OCTOPUS_ERA_CLAIM_REGISTRY_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_WILSON_TWO_BAND_MASS_ENERGY_EQUIVALENCE_IDENTITY_NOTE_2026_07_08_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/HISTORIC_YANG_MILLS_MASS_GAP_FIXED_PLANCK_LATTICE_BOUNDED_NOTE_2026_06_09_INTAKE_NOTE_2026-08-05.md`
+- `docs/historic_intake/INTAKE_MANIFEST_2026-08-05.json`
+- `docs/work_history/physics/revised-scalar-future-confinement-20261013/README.txt`
+- `docs/work_history/physics/revised-scalar-future-confinement-20261013/evidence_v1.tar.gz`
+- `docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/root-independent/pr8020-evidence-root-independent-DERIVATION.md`
+- `docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-ROOT_INDEPENDENT_DERIVATION.md`
+- `docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/pr8022-evidence-compact-electric-gap-DERIVATION.md`
+- `docs/work_history/repo/review_feedback/pr8165-evidence/kept/pr8165-BLOCK01_SAMPLED_MAGNETIC_EVENT_BOUND-fa7db7f42105ca0c.md`
+- `docs/work_history/repo/review_feedback/pr8167-evidence/kept/pr8167-EXACT_COMPACT_COVER_AND_SOURCE_IDENTITIES-3443f691b71f300d.md`
+- `docs/work_history/review_loop/pr8146/8146/8146_supervisor_control_block12_strong_coupling.out.txt.gz`
+- `docs/work_history/review_loop/pr8146/8146/8146_supervisor_control_block12_strong_coupling.py.gz`
+
+### Unlanded archive material (1)
+
+- `archive_unlanded/historic_intake_originals/branch07/2137_YANG_MILLS_MASS_GAP_FIXED_PLANCK_LATTICE_BOUNDED_NOTE_2026-06-09.md`
+
+### Adjacent/false-positive candidate notes (73)
+
+- `docs/ADMISSIBILITY_DIRAC_KAHLER_DISCRIMINATOR_VERDICT_BOUNDED_THEOREM_NOTE_2026-08-20.md`
+- `docs/ALPHA_S_DERIVED_NOTE.md`
+- `docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md`
+- `docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_TEMPORAL_NARROW_THEOREM_NOTE_2026-06-05.md`
+- `docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`
+- `docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
+- `docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29_NOTE_2026-05-17.md`
+- `docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
+- `docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
+- `docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`
+- `docs/A_NON_ABELIAN_GAUSS_LAW_HAS_NO_RECORD_PATTERN_SOLUTIONS_BOUNDED_THEOREM_NOTE_2026-09-03.md`
+- `docs/BOUGEROL_LACROIX_STAGGERED_BLOCKING_GOUEZEL_KARLSSON_DETERMINISTIC_COCYCLE_NARROW_NO_GO_NOTE_2026-05-16.md`
+- `docs/BOUGEROL_LACROIX_STAGGERED_BLOCKING_LYAPUNOV_BRIDGE_NO_GO_NOTE_2026-05-10.md`
+- `docs/BOUGEROL_LACROIX_STAGGERED_BLOCKING_SUBMULT_TAUTOLOGICAL_BOUND_BOUNDED_THEOREM_NOTE_2026-05-10.md`
+- `docs/BUS_RESOURCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-10-16.md`
+- `docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md`
+- `docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`
+- `docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md`
+- `docs/CLUSTER_DECOMPOSITION_LR_POISSON_TAIL_REPAIR_NARROW_THEOREM_NOTE_2026-06-06.md`
+- `docs/CLUSTER_DECOMPOSITION_PARENT_EQ8_REPAIR_NARROW_NOTE_2026-06-02.md`
+- `docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md`
+- `docs/COMPACT_ROTOR_COVER_SOURCE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md`
+- `docs/COMPACT_ROTOR_GROUND_CORRELATION_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-16.md`
+- `docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md`
+- `docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md`
+- `docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md`
+- `docs/EXPONENTIAL_SCALAR_PHYSICAL_PAST_BOUNDED_THEOREM_NOTE_2026-10-14.md`
+- `docs/FINITE_CLOCK_CONDITIONAL_GAUSSIAN_MIXTURE_WARD_RESIDUAL_AND_HAAR_QUADRATURE_BOUNDED_THEOREM_NOTE_2026-09-14.md`
+- `docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md`
+- `docs/FINITE_CLOCK_IMAGE_NOISE_CURRENT_SECTOR_AND_POSITIVE_TIME_OS_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-14.md`
+- `docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md`
+- `docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md`
+- `docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md`
+- `docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`
+- `docs/GRAVITY_CLEAN_DERIVATION_NOTE.md`
+- `docs/GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md`
+- `docs/GRAVITY_SIGN_FROM_REFLECTION_POSITIVITY_UNITARITY_REDUCES_TO_EMERGENT_DIFFEOMORPHISM_NARROW_THEOREM_NOTE_2026-06-08.md`
+- `docs/G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md`
+- `docs/HADRON_LANE1_CHIRAL_CONDENSATE_BANKS_CASHER_SCOPING_SUPPORT_NOTE_2026-04-27.md`
+- `docs/HIERARCHY_DELTA0_S1_EXACT_ONE_LINK_STRONG_COUPLING_PROBE_NOTE_2026-06-11.md`
+- `docs/HIGGS_X_S4B_COMBINED_HIGGS_EWSB_G2_NOTE_2026-05-08_probeX_S4b_combined.md`
+- `docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md`
+- `docs/LITERAL_L4_NEAREST_NEIGHBOR_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-14.md`
+- `docs/LOCAL_QUBIT_PORT_REALIZATION_WITH_POLYNOMIAL_MIXING_BOUNDED_THEOREM_NOTE_2026-10-11.md`
+- `docs/MASS_SPECTRUM_DERIVED_NOTE.md`
+- `docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md`
+- `docs/NATIVE_WEAK_ELECTRIC_DEFECT_DENSITY_NOTE_2026-09-08.md`
+- `docs/OBSERVABLE_GENERATOR_ADDITIVITY_FROM_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-05-10.md`
+- `docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_LOCALITY_OF_SOURCE_DERIVATIVES_NARROW_NOTE_2026-05-21.md`
+- `docs/ONE_QUBIT_TICK_UPDATE_COVARIANCE_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-21.md`
+- `docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md`
+- `docs/PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE_AND_OBSERVABLE_MASSLESSNESS_BOUNDED_THEOREM_NOTE_2026-09-14.md`
+- `docs/PHOTON_VACUUM_SUBTRACTION_AND_COSINE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-10-09.md`
+- `docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md`
+- `docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`
+- `docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md`
+- `docs/SCALE_LADDER_GRAVITY_D4CONE_EXACT_WARD_SITE_SCALAR_BOUNDED_THEOREM_NOTE_2026-10-18.md`
+- `docs/SCALE_LADDER_GRAVITY_D4_CONE_FERMION_CONE_REFLECTION_POSITIVITY_CURVATURE_SQUARED_BOUNDED_THEOREM_NOTE_2026-10-18.md`
+- `docs/SHORT_TIME_ROTOR_BRIDGE_AND_ENDPOINT_HESSIAN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md`
+- `docs/SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md`
+- `docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+- `docs/SU3_BULK_CRITICALITY_PREMISE_RIGOROUS_FLOOR_NOTE_2026-06-09.md`
+- `docs/THE_RECORD_READABLE_GAUGE_INVARIANT_ALGEBRA_IS_COLOUR_BLIND_BOUNDED_THEOREM_NOTE_2026-09-03.md`
+- `docs/THE_TASTE_SINGLET_SECOND_MASS_IS_A_BODY_DIAGONAL_IMAGINARY_HOP_AND_ITS_VORTEX_STRINGS_CARRY_2N_CO_MOVING_MODES_BOUNDED_THEOREM_NOTE_2026-09-03.md`
+- `docs/UV_YUKAWA_STRONG_COUPLING_DOMAIN_EXCLUSION_RADIUS_CERTIFICATE_BOUNDED_NOTE_2026-06-06.md`
+- `docs/WILSON_M_H_PER_CHANNEL_CLOSURE_BOUNDED_NOTE_2026-05-09.md`
+- `docs/ai_methodology/raw/claude_settings_and_state.md`
+- `docs/ai_methodology/raw/prompts_session_049708ba_jonreilly.md`
+- `docs/ai_methodology/raw/prompts_session_04c820e1.md`
+- `docs/ai_methodology/raw/prompts_session_4ffea772_jonreilly.md`
+- `docs/ai_methodology/raw/prompts_session_71937db3_jonreilly.md`
+- `docs/ai_methodology/raw/prompts_session_855ddec4.md`
+- `docs/repo/science_census_unledgered_index_2026-08-05.json`
+
+## Step 2 — source review
+
+The inventory above was saved before candidate inspection. The source findings below record the 73 main-branch Markdown files opened and keep each source claim separate from its effective/audit status. The candidate list is a lead list; files not opened are named by their Step 1 inventory entries and are not treated as negative evidence.
+
+### Step 2A — target statement read before candidate files
+
+The exact two cruxes in the lane files are:
+
+- **Route Z / free walls.** `library/gap-skeleton-final.md` 94–120, 257–289 defines the free-wall zero route; lines 257–276 report the checked correction to transport statement ZB; lines 261–276 state the ZF_B crux. `library/gap-zf-box-x.md` 83–113 proves Theorem A only on `|Re β|≤1/10`, `|Im β|≤10⁻⁷` (and a related region T); lines 128–172 define the open continuation hypothesis and its chain implication; lines 186–218 state the author’s open inputs. Theorem A assumes SU(2), Haar links, a finite plaquette family with each link in at most six plaquettes and any link pair in at most one plaquette, including free-wall boxes with temporal size `k≥3`. The exact next statement is `HS-sup` (`gap-zf-box-x.md` 203–218): on a real interval `[1/10, β₂]`, `β₂>1/10`, uniformly over lattice and links, the solution of the action Poisson equation has a bounded link gradient. Its integrated consequence bounds the derivative of local expectations without a correlation-length factor. The note says its one-link proof reaches only the Dobrushin threshold, about 0.102 (`gap-zf-box-x.md` 162–172, 203–218).
+- **Route T / twist.** `library/gap-skeleton-final.md` 71–120 and 121–136; `library/gap-skeleton-max.md` 541–548. `AC'-lat` is the claim that for twisted SU(2) on `Λ(n,M)=(Z/n)^2×(Z/M)^2`, the infimum over all fibre widths `n≥2` of the exponential decay rate for bounded gauge-invariant observables stays positive for all sufficiently large β; the same is proposed under small RG perturbations W. The text flags the possible intermediate-size centre-symmetry breaking and has no proof (`gap-skeleton-final.md` 84–93; `gap-skeleton-max.md` 542–545).
+- **No transfer by vocabulary.** `library/gap-zf-box-x.md` 163–172 explicitly says a block heat-bath extension would need uniform boundary influences; its crude count sees boundary sets hitting a block in one link with one-link factor above one and calls for multi-link estimates. This is an identified difficulty and proposed estimate, not a proof that 4-link plaquette blocks or 6-link time-like-star blocks fail.
+
+The outline index was searched before using the source. `library/sa-index/README.md` identifies itself as a one-reader, status-bearing index, not a check. `chunk-01.md` 334–338 indexes the local source partition as entire with only a local zero-free polydisc at zero; 1310–1326 indexes a conditional polymer criterion giving a nonzero partition function on its stated majorant domain; 466–469 explicitly says fixed-spacing DLR existence gives no infinite-volume uniqueness or uniform continuum bound. `chunk-04.md` 4695–4729 indexes a normalized local zero-free-disc lemma and the `cosh(Vz)` counterexample to obtaining a volume-independent radius from only an exponential-in-volume bound. These are auxiliary analytic facts, not the required fixed-real-coupling SU(2) box theorem. Index references were checked against `/tmp/sa_ym4.tex` at 326–338, 1310–1326, 466–469, and 4693–4729. Credit Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text.
+
+The CA-I index supplied with this lane is for items 4.12–4.19 (`library/sa-index/ca-4.12-4.19/README.md`). Its declared coverage is CA-I 42670–56650 and its stated status is one-reader indexing. It identifies analyticity, stages, and imported assumptions for the Wilson RG account; this is not a lattice-gauge Dobrushin/block theorem, a uniform zero-free strip in real β, a volume-free boundary response, or an `AC'-lat` result. The README records that CA-I 4.14 treats stage-space inclusion as an application condition outside the operator theorem and that 4.18 assumes Balaban’s stage theorem. I use it only to avoid conflating RG analyticity with the crux statements. No computer-assisted step or runner was run for this report.
+
+
+## Step 2B — beta-six plaquette family (source claims, not revalidated)
+
+These 15 docs are SU(3) Wilson single-plaquette strong-coupling-series notes. Their common variable is a finite-support plaquette/cube surface expansion, not a lattice-gauge Gibbs-system gap theorem. They do not state boundary conditions or a volume-uniform correlation/gap bound. Coupling range is either coefficients at finite order about beta=0 or a conjectured/diagnostic continuation to beta=6. Each status below is the source’s own boundary statement. Since the coefficient/support claims are runner-dependent and the task excludes computer-assisted steps, none is adopted as a proof here.
+
+| File | System; exact source statement and lines | Coupling; method | Source status; verdict |
+|---|---|---|---|
+| `docs/BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md` | SU(3) full Wilson plaquette expectation minus one-plaquette expectation. “does not claim `P(6)`, does not close beta=6” (lines 18–21). | Series Delta(beta), finite coefficients and analytic-class/Lee–Yang discussion; beta=6 target only. | “bounded theorem”; source says frontier-discovery increment, not closure (lines 12–16). **NO** for crux; finite-volume analytic classification is not a uniform zero-free region. |
+| `docs/BETA6_PLAQUETTE_CERTIFIED_CONVERGENT_BACKBONE_BOUNDED_NOTE_2026-06-04.md` | SU(3) one-plaquette connected-series decomposition. “does not close `<P>(6)`” (lines 12–24). | beta=0 coefficients/finite truncation, proposed enclosure. | Source says certified/convergent backbone and open remainder (lines 12–24); runner-dependent, not rechecked. **NO**. |
+| `docs/BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md` | SU(3) single-plaquette expectation at beta=6. “No closure claim is made” (lines 3–7). | beta=6 target; research-map review of candidate routes. | Source labels itself closure/frontier map, not closure (lines 3–7, 21–50). **NO**. |
+| `docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md` | SU(3) one-plaquette connected strong-coupling series Delta. Exact claimed d5,d6 (lines 62–65). | beta=0, through finite order 6. Haar/cluster coefficient decomposition; source links runner. | “bounded theorem” source proposal; no beta-six closure (lines 1–8, 62–65). **NO**; finite-order coefficients do not transfer to mass-gap crux. |
+| `docs/BETA6_PLAQUETTE_CUBE_SECTOR_CLOSED_FORM_GENERATING_FUNCTION_NOTE_2026-05-31.md` | SU(3) one-plaquette connected Delta; “all-orders cube-shell sector” only (lines 1–15). | Formal beta-series; closed generating function for one support family. | Review-loop source proposal; explicitly not full Delta or closure (lines 1–15). **NO**. |
+| `docs/BETA6_PLAQUETTE_CUMULANT_MOMENT_POSITIVITY_NO_GO_NOTE_2026-05-30.md` | SU(3) Delta coefficient window. “tests only the positive-measure / real-axis continuation family” and “does not decide any non-Stieltjes continuation family” (lines 18–21). | Finite beta=0 moments d5–d7; moment-positivity obstruction. | “exact no-go proposal for one resummation subfamily” (lines 4–6). **GUIDE** only against that continuation subfamily; no gauge-system mixing theorem. |
+| `docs/BETA6_PLAQUETTE_D10_COEFFICIENT_AND_RADIUS_EVIDENCE_BOUNDED_NOTE_2026-06-04.md` | SU(3) connected plaquette series Delta. “radius-of-convergence evidence … testing whether Delta converges at beta=6”; “NOT a closure” (lines 12–16). | beta=0 through order 10; exact-coefficient claim plus radius diagnostic. | “review-loop source proposal” (lines 5–7); runner named at line 8. **NO**. |
+| `docs/BETA6_PLAQUETTE_D11_COEFFICIENT_AND_CONTINUATION_SPREAD_BOUNDED_NOTE_2026-06-04.md` | Same SU(3) Delta; seven-coefficient Padé spread, “NOT a closure … NOT a proof of a physical-value bound” (lines 12–16). | beta=0 through order 11; finite continuation diagnostic aimed at 6. | “review-loop source proposal” (lines 5–7). **NO**; finite-order Padé spread is neither volume-uniform analyticity nor a gap. |
+| `docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md` | SU(3) connected Delta; finite order-7 support multiplicity (lines 19–36). | beta=0, finite coefficient. | Source status “review-loop source proposal” (lines 5–7); arithmetic claims cite runner/cache (lines 8–15). **NO**. |
+| `docs/BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md` | SU(3) connected Delta; exact order-8 coefficient and “single-complex-pair falsification” (lines 11–31). | beta=0 finite order 8; finite moment/Padé diagnostic. | “review-loop source proposal” and “no status verdict” (lines 4–6). **NO**. |
+| `docs/BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md` | SU(3) connected Delta; first new distinct-support class opens at order 9 (lines 13–34). | beta=0 through finite order 9; support/coefficient calculation. | Audit lane is status authority (lines 5–8); source gives no verdict. **NO**. |
+| `docs/BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md` | SU(3) cube/two-cube support sectors. It “does not prove the full order-beta^9 48-support classification and does not close beta=6” (lines 5–11). | Finite orders, plus finite-truncation root diagnostics near 6 (lines 23–33). | “open_gate”; audit lane only status authority (lines 4–11). **GUIDE**: records an explicit non-closure and identifies missing full support classification; no mass-gap inference. |
+| `docs/BETA6_PLAQUETTE_TENSOR_NETWORK_FINITE_IRREP_SUPPORT_AND_RECOUPLING_WALL_NOTE_2026-06-04.md` | SU(3) character/tensor-network plaquette route; exact 2D plaquette comparator. “three-dimensional and four-dimensional contraction is not the naive delta-link irrep contraction” (lines 13–32). | beta=6 finite-irrep sample and two-dimensional exact check. | “source theorem candidate”; “introduces no … beta=6 plaquette closure” (lines 5–8). **GUIDE**: 3D/4D recoupling/intertwiner is a named barrier, no mass-gap statement. |
+| `docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md` | SU(3) single-plaquette connected series, leading non-cube weight-10 sector (lines 12–23). | Finite orders 9–10; candidate closed-form validation. | “review-loop source proposal”; finite-order claim only (lines 5–7, 27–34). **NO**. |
+| `docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md` | SU(3) Wilson connected plaquette series; source says conditional tree-sector radius and finite cubical-incidence obstruction, “does NOT close beta=6” (lines 4–10). | Formal beta-series; tree-sector product estimate and compact 2x2x1 counterexample. | “review-loop source proposal” (lines 9–12); three growth inputs remain open (lines 26–31). **GUIDE** for beta-six resummation only; irrelevant to uniqueness/gap. |
+
+## Step 2C — native gauge-transfer notes
+
+All entries in this section concern the repository’s native discrete SU(3) dominant-weight / half-slice coefficient operator, whose link between coefficients and the full spatial Wilson transfer is explicitly not established. “beta” below is the coefficient-kernel parameter; the source does not identify it with a volume-uniform physical Wilson gap. Status text is quoted from the source. Runner results are not accepted as proof inputs.
+
+| File | Exact claim/scope quote (source lines); method and range | Source status; verdict |
+|---|---|---|
+| `docs/NATIVE_GAUGE_TRANSFER_A2_REFLECTION_UNIFORM_HALF_LINE_GAP_THEOREM_NOTE_2026-09-02.md` | SU(3) half-slice coefficient packet: “for every beta>=0” a uniform half-line eigen-ratio gap; source lines 18–53, proof lines 585–648. Reflection / common-space operator limit plus compact-beta argument. | Lines 58–76 say recurrence conditional/unaudited; lines 681–687 say no audit obligation retired. **GUIDE**: strongest native operator result, but no physical Wilson environment, dimension/volume parameter, or YM identification. |
+| `docs/NATIVE_GAUGE_TRANSFER_BETA_IDENTIFICATION_PHYSICAL_PLAQUETTE_RELATIONSHIP_BOUNDED_NOTE_2026-06-12.md` | SU(3) one-plaquette coefficient packet vs full Wilson environment; lines 126–153 distinguish finite-shell coefficient from `<P>`, and 155–178 give beta=6 finite-shell row. | Source is bounded note; its stated limit is finite shell. **NO** for gap; **GUIDE** for beta identification boundary. |
+| `docs/NATIVE_GAUGE_TRANSFER_BLOCK_HELLMANN_MONOTONICITY_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md` | SU(3) half-slice discrete packet: “does not prove eventual monotonicity” or the half-line gap (lines 6–13); finite-block product-rule/Hellmann split only. | Independent audit lane only (15–17). **GUIDE**: identifies missing diagonal domination. |
+| `docs/NATIVE_GAUGE_TRANSFER_C00_LOWER_BOUND_RUNG_TWELVE_BOUNDED_NOTE_2026-06-12.md` | SU(3) Wilson one-link singlet coefficient: `c_(0,0)(beta)=E_Haar[exp((beta/3) Re Tr U)]` (lines 24–30); one of three H_det pieces. | “Pieces (2) and (3) remain open; H_det … and half-line gap … NOT closed” (line 9). **GUIDE** to normalization subproblem only. |
+| `docs/NATIVE_GAUGE_TRANSFER_CENTRAL_CHARACTER_GAUSSIAN_SPECTRAL_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md` | Conditional central-character one-link calculation; no multi-link transfer identification (frontmatter lines 1–9). | “proposed_retained”; “conditional-support; independent audit is unset” (13–15). **NO** for YM gap; one-link asymptotic support only. |
+| `docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_FOUR_BOUNDED_NOTE_2026-06-12.md` | SU(3) finite half-slice packet B14; claimed certificate frontier beta=22, first integer 23 not certified, lines 160–189; finite packet only. | Source explicitly says beta6 row “native discrete surface only, no physical-environment result” (lines 211, 220). **NO**; runner certificates are excluded. |
+| `docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_TWO_BOUNDED_NOTE_2026-06-12.md` | SU(3) finite packet; finite-grid claimed reach beta=117/25=4.68 and next 4.69 fails (lines 126–154). | Lines 207–215 say no full half-slice certificate; scripts do exact arithmetic. **NO**; not a physical threshold. |
+| `docs/NATIVE_GAUGE_TRANSFER_DETERMINANT_MODE_TAIL_RUNG_THIRTEEN_BOUNDED_NOTE_2026-06-12.md` | SU(3) coefficient determinant `c_(p,q)` via Weyl Bessel determinant and mode sum (lines 23–33); fixed-window tail is inadequate. | Finite-window measurements motivate correct window (lines 19–21); H_det remains open by adjacent notes. **GUIDE** only to determinant-tail obstruction. |
+| `docs/NATIVE_GAUGE_TRANSFER_DIAGONAL_DOMINATION_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md` | Finite-block derivative target `Delta_J+Delta_D<=0` (lines 22–33); this is a necessary step for monotonicity. | “open_gate”; status authority audit lane only (4–7). **GUIDE**: no eventual monotonicity proof. |
+| `docs/NATIVE_GAUGE_TRANSFER_DIMENSION_DIVIDED_WILSON_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md` | Conditional one-link SU(3) expansion “for EVERY real beta>=2048” and all highest weights (lines 31–33 onward). | “proposed_retained”; conditional-support, audit unset (11–15). **NO** for gap; one-link asymptotic only. |
+| `docs/NATIVE_GAUGE_TRANSFER_FULL_TOP_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md` | Conditional normalized native top-eigenvalue correction, with no excited-branch/physical-gap claim (frontmatter lines 1–4). | “proposed_retained”; conditional-support and audit unset (12–15). **NO** for gap. |
+| `docs/NATIVE_GAUGE_TRANSFER_HDET_GAUSSIAN_CORE_SUPPORT_NOTE_2026-06-18.md` | Determinant Gaussian core for H_det; “does not derive K_W(A), does not prove H_det in full, and does not prove H_spec” (lines 7–11). | Independent audit lane only (5–6); numerical rows are finite certificates, not a fitted saddle constant (19–22). **GUIDE**: identifies residual/tail gap. |
+| `docs/NATIVE_GAUGE_TRANSFER_KILLED_HEAT_SECOND_ORDER_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-07.md` | Conditional native killed-heat remainder `18/beta²`, beta>=2048, t∈[1/2,1]; no bare-heat norm expansion (frontmatter 1–8). | “proposed_retained”; conditional-support, audit unset (10–13). **NO** for physical gap. |
+| `docs/NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md` | SU(3) dominant-weight packet; numerical large-beta extrapolation, source lines 7–13; fitted ratio limit lines 83–112 is not a theorem by itself. | Explicitly no physical beta=6 claim (7–13). **NO**; no volume parameter. |
+| `docs/NATIVE_GAUGE_TRANSFER_OPERATOR_NORM_REMAINDER_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md` | SU(3) half-slice: saddle-profile expansion and scaled semigroup contraction, but “does not derive” Wilson Bessel remainder/tail and “does not prove the half-line gap theorem” (lines 6–16). | Audit lane only (18–20). **GUIDE**: missing analytic tail is the obstruction. |
+| `docs/NATIVE_GAUGE_TRANSFER_OUTSIDE_WEIGHT_TAIL_RUNG_FOURTEEN_BOUNDED_NOTE_2026-06-12.md` | SU(3) coefficient half-line: outside-window eigenvector L2 mass, not trace mass (lines 22–30); no beta-uniform analytic outside-weight theorem and no gap closure (line 9). | “bounded support / finite-grid witness” only (5–9). **GUIDE** to unresolved tail. |
+| `docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_CLOSED_FORM_RUNG_SIXTEEN_BOUNDED_NOTE_2026-06-12.md` | Reduced A2 operator; “partial attempt with a named obstruction at the reduced spectral eigenfunction step” (lines 5–10). | `open_gate`, source-side obstruction, not audit verdict (5–10). **GUIDE**: route remains open. |
+| `docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_DISCRIMINANT_CONJUGATION_RUNG_SEVENTEEN_BOUNDED_NOTE_2026-06-12.md` | Reduced A2 spectral step; “partial attempt with a named missing link” (lines 5–10). | `open_gate`; audit lane only (5–10). **GUIDE**. |
+| `docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_EIGENVALUE_RATIO_EPS_CANCELLATION_RUNG_TWENTY_BOUNDED_NOTE_2026-06-12.md` | Eigenvalue-ratio epsilon cancellation derived, but “partial-with-named-missing-link for the fully a-priori sign” (lines 5–9). | Audit lane only; finite rows cross-checks only (9–15). **GUIDE** to the unsolved sign. |
+| `docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_SPECTRAL_DOMINATION_RUNG_ELEVEN_BOUNDED_NOTE_2026-06-12.md` | Tested finite range has `c_D<=c_J`, but the margin tends to zero and uniform strict domination is “NOT established” (lines 5–11). | `open_gate`, audit lane only (4–7). **GUIDE**: blocks monotonicity route absent subleading sign. |
+| `docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_SUBLEADING_SIGN_RUNG_NINETEEN_BOUNDED_NOTE_2026-06-12.md` | Reduced-A2 asymptotic subleading sign; source lines 7–15 fence finite witnesses from proof. | Audit lane only; no new constant/value (9–15). **GUIDE**: sign remains an open dependency. |
+| `docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_VIRIAL_LEADING_EQUALITY_RUNG_EIGHTEEN_BOUNDED_NOTE_2026-06-12.md` | “leading equality derived; subleading sign obstruction-at-exact-step” (lines 5–9). | Audit lane only; W90 values are fences, not proof inputs (9–15). **GUIDE**. |
+| `docs/NATIVE_GAUGE_TRANSFER_REDUCED_LIE_TYPE_A2_DIAGONAL_SIMILARITY_SECTOR_CANCELLATION_BOUNDED_THEOREM_NOTE_2026-09-03.md` | Exact reduced A2 polynomial/similarity-sector identity; explicitly excludes heat terms, continuum transfer, uniform gaps and physical mass gaps (frontmatter line 4). | `proposed_retained`, audit unset (15–18). **NO** for crux; useful isolated algebra only. |
+| `docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md` | SU(3) discrete coefficient transfer: `0<=beta<=1`, lambda1/lambda0<=2beta/3, gap>=1−(2/3)beta (lines 81–95). | Small-beta only; no physical beta=6 claim (7–13). **NO** for crux; distinct coupling end. |
+| `docs/NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOCAL_CLT_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md` | Scalar integer-order Bessel expansion/remainder, k>=0,t>=1; “does not assemble” determinant/mode/operator tail or gap (lines 7–14). | Audit lane only (16); runner witnesses bound (24–26). **GUIDE**: scalar ingredient, insufficient for full operator. |
+| `docs/NATIVE_GAUGE_TRANSFER_W85_FINITE_WITNESS_OPEN_GATE_NOTE_2026-06-12.md` | Finite witness against the analytic half-line gap route; it is an open gate, not a completed uniform theorem (source lines 1–16). | `open_gate`; audit lane only. **GUIDE** as negative route evidence; no physical transfer theorem. |
+| `docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md` | Weyl determinant assembly for native SU(3) coefficient operator; conditional on analytic normalization and tails (source lines 1–18). | Bounded support; H_det/H_spec dependencies remain. **GUIDE**, not a full gap. |
+| `docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_TAIL_DOMINATION_RUNG_ELEVEN_BOUNDED_NOTE_2026-06-12.md` | H_det decomposition and missing uniform `c_(0,0)` lower normalization (source lines 18–21, as quoted by W91). | Audit lane only; no complete tail. **GUIDE**. |
+| `docs/NATIVE_GAUGE_TRANSFER_WILSON_DISCRETE_HEAT_INSERTION_BOUNDED_THEOREM_NOTE_2026-09-07.md` | Conditional discrete-heat insertion into the native one-link coefficient operator (frontmatter claim scope); no multi-link transfer identification. | `proposed_retained`, conditional-support; audit unset. **NO** for physical mass gap. |
+| `docs/NATIVE_GAUGE_TRANSFER_WILSON_PERRON_CORRECTION_NEGATIVE_SIGN_BOUNDED_THEOREM_NOTE_2026-09-07.md` | Conditional sign/correction for native Wilson Perron branch only; not an excited-branch gap statement (frontmatter claim scope). | `proposed_retained`, conditional-support; audit unset. **NO**. |
+| `docs/NATIVE_GAUGE_TRANSFER_WILSON_SECOND_ORDER_MULTIPLIER_BOUNDED_THEOREM_NOTE_2026-09-07.md` | Conditional second-order multiplier on native one-link Wilson coefficient operator (frontmatter claim scope). | `proposed_retained`, conditional-support; audit unset. **NO**. |
+| `docs/NATIVE_GAUGE_TRANSFER_WILSON_TO_SADDLE_UNIFORM_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md` | SU(3) coefficient packet saddle approximation; it does not identify the full Wilson environment (source lines 7–15). | Audit lane only; claims are bounded support. **GUIDE** for the saddle/tail obstacle, not gap evidence. |
+
+Two additional closest transfer sources were inspected:
+
+| File | Exact claim; system and method | Source status; verdict |
+|---|---|---|
+| `docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md` | “exact finite-volume pure-gauge `SU(N)` Wilson transfer construction for `N >= 2`, `beta >= 0`,” finite open/periodic spatial carrier, periodic derived time, and SU(3) six-neighbor recurrence (lines 5–9); character-transfer construction. | Independent audit lane only (10–11). **USE** only for that finite-volume transfer/character algebra, not a gap. |
+| `docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md` | “one-link weight `w(U) = exp((beta/N_c) Re Tr U)` is a positive-definite class function on SU(3) for every `beta >= 0`” (lines 20–24); character coefficients / convolution-kernel positivity. | Independent audit lane only (5–8); explicitly not full interacting reflection positivity or a transfer spectral theorem (11–18). **USE** only for one-link kernel positivity. |
+
+## Step 2D — uniqueness, block, response, and source-polymer candidates
+
+| File | Model/system; exact claim with hypotheses; method/range | Source status; verdict |
+|---|---|---|
+| `docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md` | Six-Bloch-axis projector/orbit-weight spin rule on Z³, not gauge variables. Theorem I: if `6c1(p,q,r)<1`, exactly one infinite-volume static law and boundary differences decay exponentially (lines 486–516); one-site Dobrushin contraction. | `proposed_retained`, audit unset; exact only on declared triples/grid (lines 16–17, 92). **GUIDE** for method; no SU(2) Wilson claim above one-link threshold. |
+| `docs/ADMISSIBILITY_RULE_TWO_SITE_BLOCK_CRITERION_EXACT_AND_SILENT_FOR_EVERY_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-07.md` | Six-axis projector spin system on Z³, positive product weights, pair block and ten boundary slots. Theorem M finite-window inequality (lines 255–276), and says neither necessity nor infinite-lattice implication; no block decay follows (292–298). | `proposed_retained`, audit unset (15–16); sensitivity values are marked executed (300+), so not independently relied on. **GUIDE** for negative result on this exact block schedule only. It says nothing about Lemma 2.3's four-plaquette-link or six-link-star blocks. |
+| `docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_WEAK_COUPLING_COMPARISON_AND_CORRELATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md` | Supplied uniform-sphere nearest-neighbor static model on Z³: uniqueness and correlation bounds when `alpha=2sqrt(3)beta<1` (lines 1–20); one-site contraction/comparison. | “bounded-support; conditional supplied model; unaudited” (14–16). **NO** for SU(2) Wilson; it does not extend beyond its Dobrushin region. |
+| `docs/ADMISSIBILITY_RULE_LIGHT_CONE_FORMATION_KEEPS_MEMORY_IN_3PLUS1_ITS_STATIONARY_LAW_IS_ONE_LAYER_OF_A_REFLECTION_POSITIVE_BILAYER_ORDERED_ABOVE_BETA_0P5905_BOUNDED_THEOREM_NOTE_2026-09-23.md` | Supplied sphere-content bilayer dynamics on even cubic tori L>=4; statement includes stationary law, reflection bound and order at a source-defined threshold (lines 20–35). | Source says supplied dynamics/re-recording clause is not adopted (lines 20–22); conditional mathematics. **NO** for Wilson YM or AC'-lat. |
+| `docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md` | Supplied uniform-sphere nearest-neighbor model, dimensions 1–3, even tori L>=2; finite-volume magnetization inequalities (lines 1–20). | “bounded-support; conditional supplied model; unaudited” (13–16). **NO** for YM gap/twist. |
+| `docs/SU2_TWO_REGION_BOUNDARY_RESPONSE_BOUNDED_THEOREM_NOTE_2026-11-08.md` | Finite 4D torus SU(2) Wilson measure with path-averaged normalized soft kernel; odd coarse L>=3, N multiple L, N/L>=3; real beta,lambda>=0 (lines 61–95). For zero fine sources, `q=18beta+8(s_L−1)(lambda+lambda²/4)` (397–438); Dobrushin covariance and coarse-boundary response constants volume-independent when `q+8s_L lambda²<1` (440–518). | Source calls this bounded-support and says not a continuum mass gap (lines 7–11; YAML 14–28). **GUIDE**: response estimate is for a soft-kernel coarse exterior, with explicit contraction margin; it is not raw Wilson single-link derivative or `HS-sup`. |
+| `docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md` | Constrained hidden SU(3) gauge fibers for a factor-two Wilson–staggered block, high fermion mass m; `alpha_fiber<=2alpha`, uniqueness for `alpha(beta,m)<1/2` uniformly in coarse V (lines 32–57), with examples beta<0.01698 at m=8 and beta<0.02385 at m=10 (49–52). Dobrushin. | “unaudited candidate” (3–7); no volume-uniform coarse action/trajectory yet (55–57). **GUIDE** only for hard-fiber mixing in a distinct massive model; beta is far below the one-link threshold and not the pure-gauge target. |
+| `docs/WILSON_STAGGERED_CONSTRAINED_FIBER_TWO_LAYER_KP_COMPLEX_SOURCE_POLYMER_BOUNDED_THEOREM_NOTE_2026-07-12.md` | Same constrained massive SU(3) fiber; if `q<1` and `K<c`, finite-regulator/boundary/V-uniform complex-source zero-free domain and connected-polymer decay (35–54). KP polymer criterion. | “unaudited candidate” (3–7). **GUIDE** for conditional zero-freeness, not a volume-uniform zero-free region in beta for pure Wilson action. |
+| `docs/WILSON_STAGGERED_RAW_CONSTRAINED_ACTION_HESSIAN_DECAY_BOUNDED_THEOREM_NOTE_2026-07-12.md` | Finite-regulator constrained hidden gauge action at fixed coarse V; `D R[F]=<F>`, `D²R[F,G]=-Cov(F,G)` and Hessian decay `exp(-lambda L)/(4(1-q_lambda))` (25–61), in deep Dobrushin wedge. | “unaudited candidate” (3–7), constants uniform in regulator and V (60–62). **GUIDE** for response method inside the high-mass wedge; not weak-coupling `HS-sup`. |
+| `docs/WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md` | Reflection-compatible periodic SU(3) regulators, each extent>=4, massive Wilson–staggered retained gauge/Grassmann action; if q<1 and K_joint<c (50–62), KP all-degree norm. | “unaudited candidate” (3–7). **GUIDE** only for a separate high-mass small-coupling polymer expansion. |
+| `docs/WILSON_STAGGERED_DECLARED_RG_CHART_RAW_LIFT_GEOMETRIC_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md` | Declared factor-two RG chart and geometrically suppressed raw directions (lines 11–24); no physical chart selected. | “unaudited candidate” (3–7). **NO** for mass-gap plan; chart is declared. |
+| `docs/WILSON_STAGGERED_ENHANCED_MOMENT_GENERATED_BASE_DECORATED_FACTOR_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md` | Positive constrained massive gauge fiber; generated-base decorated factor membership before next preintegration (11–24). | “unaudited candidate” (3–7); explicitly not an autonomous RG step (17–23). **NO** for current crux. |
+| `docs/WILSON_STAGGERED_EXTERNAL_SHORTEST_SCHUR_CENTER_HAAR_TAIL_PROJECTED_QUADRATIC_WEYL_CONDITIONAL_REFERENCE_BOUNDED_THEOREM_NOTE_2026-07-12.md` | Fixed external gauge background; shortest-Schur center/tail split and conditional Gaussian-reference ratio (11–24). | “unaudited candidate” (3–7); conditional Weyl budget only (15–19). **NO** for YM gap. |
+| `docs/WILSON_STAGGERED_COMPLETED_JOINT_TWO_MARK_COVARIANCE_NONLINEAR_SOURCE_OUTPUT_TUBE_BOUNDED_THEOREM_NOTE_2026-07-13.md` | Finite-regulator SU(3), beta=0, m=10^64; two-mark covariance bound not proved because the constant-one two-root cluster injection is open (11–18). | `open_gate`; two-root proof obligation (4–7). **GUIDE**: explicit missing cluster combinatorics; no physical beta result. |
+
+## Step 2E — torus/twist/flux neighboring material
+
+The extra filename/term search on pinned main queried `thin torus`, `twisted torus`, `twist(ed) boundary/bundle/torus`, `center/centre flux`, and `AC'-lat`. Search hits included external meron/twisted-torus context and native flux notes, not a direct proof of AC'-lat. I opened the following close hits:
+
+| File | Exact claim and scope (lines); model/method | Source status; verdict |
+|---|---|---|
+| `docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md` | Supplied compact SU(3) cubic-link Hamiltonian; gap >=2/a when `av<(4/3)min(c1,1/(2c2))`, uniformly in volume and each local PW cutoff (lines 10, 26); imported stability theorem. | Conditional-support, audit required (15–21). **USE** for this supplied Hamiltonian’s conditional volume-uniform gap only; `a` is temporal scaling, not YM beta; not Wilson Gibbs/twist. |
+| `docs/GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md` | Supplied compact SU(3) Hamiltonian; small-av planar-loop bound uniformly periodic-volume (9, 25); imported marked-cluster/pinned-cluster theorem. | Conditional-support, audit required (12–22). **USE** only for supplied-Hamiltonian loop suppression; no YM beta/AC'-lat. |
+| `docs/GAUGE_WILSON_CUBE_SLAB_WEAK_COUPLING_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-07.md` | Bare-Haar two-slice SU(3) slab; fixed finite character windows converge to a dimension vector as beta grows, while full-space vacuum norm diverges; “no gap or physical coupling selection” (9, 12–14). | Conditional-support (16–26). **GUIDE**: warns finite-window limit cannot be promoted to full-space gap. |
+| `docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md` | Supplied anisotropic finite SU(3) cube; strong compact interacting-Hamiltonian limit with graph-domain O(1/n), not all-L2 rate or physical-time selection (7, 12–23). | Conditional-support; audit required (10–20). **NO** for twisted torus/thermodynamic gap. |
+| `docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md` | Supplied uniform U=0 native model on cubic L=4M; local-flux defect stiffness/annealed joint-defect bounds; claim excludes “uniform winding gap” (lines 1–4, 14–22, 502). | Conditional-support/frontier discovery (17–25); numerical premise is source-declared. **GUIDE**: expressly does not give uniform winding gap or thin-torus constant. |
+| `docs/PRINCIPAL_FLUX_POSITIVE_GAUSSIAN_TRANSFER_AND_EXTENSIVE_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md` | Supplied three-state monopole-penalty Hamiltonian; positive finite-step transfer, extensive error, and a finite-step negative-form strip for the principal-Wilson temporal kernel (4, 13–26). | `proposed_retained` (11–14); no thermodynamic phase or native-law selection (4). **NO** for SU(2) Wilson twist. |
+| `docs/THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md` | Published 4D SU(N) confinement-mechanism context (abelian projection/center vortices), expressly “not a standalone proof” (6–16). | `open_gate`, external context only (4–5, 20–26). **NO**. |
+| `docs/HIERARCHY_MERON_SUBSTRATE_BRIDGE_SU2_SU3_MISMATCH_NARROW_NO_GO_NOTE_2026-05-16.md` | External meron construction uses 4D Z4 SU(2) Wilson lattice with twisted BC and fractional charge; native target is distinct Z3/SU(3) setup (lines 116–129, 273–307). | Source states five substrate-level obstructions (113–147). **GUIDE**: do not import the meron/twisted-T4 result as AC'-lat. |
+| `docs/NATIVE_HOLONOMY_PLAQUETTE_CENTER_FLUX_NO_GO_NOTE_2026-05-23.md` | Native staggered one-qubit hopping does not force continuous SU(3) plaquette connection; scalar `−I` is not an SU(3) center flux (lines 17–27, 113–125). | Audit lane only (5–7); no-go is limited to bare-hopping route (121–125). **GUIDE**: rejects that identification, says nothing about gauge-theory twisted torus. |
+| `docs/NATIVE_ENERGY_FEATURES_NOTE_2026-10-18.md` | One-qubit compass model on Z3/even tori; exact symmetry responses, while “not a proof of absence of thermal or ground-state coupling” (lines 1–19). | “conditional-support … unaudited” (3). **NO** for pure-gauge gap or twist. |
+
+## Answers to the six questions
+
+**Q1 — uniqueness, decay, or gap above one-link Dobrushin threshold.** Among the opened candidate sources I found no theorem for the SU(2) Wilson action on the stated free-wall box or twisted torus that proves uniqueness, correlation decay, or a mass gap above the one-link Dobrushin threshold. The closest uniqueness theorem is the six-axis spin rule under `6c1<1` (one-site note, lines 486–516); the supplied sphere model is also only `2sqrt(3)beta<1` (sphere note, lines 1–20). Neither is gauge Wilson. The Wilson–staggered fiber theorem is a distinct high-mass model and requires `alpha(beta,m)<1/2` (lines 32–57), with examples beta<0.01698 at m=8 and beta<0.02385 at m=10. The volume-uniform SU(3) Hamiltonian gap is conditional on a supplied operator and small `av` (electric-dominated note, lines 10,26), not a bound for the Wilson Gibbs system’s beta. No block/finite-size criterion source read transfers to the four-link plaquette or six-link star block. This is a bounded report of inspected sources, not a proof that no such result exists anywhere in the repository.
+
+**Q2 — silent two-site criterion and Lemma 2.3 block form.** Theorem M gives only the finite-window sum-disagreement inequality and sufficient condition `min_x(kappa_x-beta_x)>0` (two-site note, lines 255–276). Theorem M says it gives no per-site decay or Z3 result; at the silent triples its own interior coefficient is at least one (292–298). That is a failure of this exact spin-system block schedule and its Hamming-cost estimate. It does not establish an obstruction for a block resampling of the four links of a plaquette or six links of a time-like star; the lane note’s lines 162–172 only records a possible block route with unresolved boundary-influence bounds. No such block proof/counterexample was found in the opened main sources.
+
+**Q3 — volume-uniform response not using correlation length.** The SU(2) two-region note does provide a finite-volume response estimate with constants independent of volume for fixed L,beta,lambda satisfying its explicit Dobrushin/contraction conditions (lines 397–518). It uses its computed/derived influence majorant q, so the bound carries an explicit mixing margin; it does not use a separately assumed correlation length. Its observable is a coarse exterior-boundary response in the soft-kernel posterior, not the raw single-link derivative or lane `HS-sup`. The massive Wilson–staggered constrained-fiber Hessian result also has volume-uniform constants but only inside its deep Dobrushin wedge (raw-Hessian note lines 33–62).
+
+**Q4 — zeros/complex coupling/volume-uniform analyticity.** The lane’s Theorem A already claims zero-freeness for all free-wall boxes in its narrow strip `|Re beta|<=1/10, |Im beta|<=1e-7` (gap-zf-box-x lines 83–113). The SA outline has an entire finite-system complex source Z and a local zero-free neighborhood only at positive Z(0) (outline lines 326–338); its KP criterion gives non-vanishing only when its majorant holds (1310–1326). Main candidate evidence is conditional polymer analyticity in a massive constrained Wilson–staggered fiber (two-layer KP note lines 35–54), and finite-volume SU(3) plaquette Lee–Yang/continuation diagnostics, not a volume-uniform beta-zero-free strip for the target Wilson measure (Beta6 analytic-class note lines 18–21; 42–56). I found no main-candidate result that supplies the target’s uniform complex-beta region beyond Theorem A’s base strip.
+
+**Q5 — largest beta in native transfer gap notes.** The A2 note claims a half-line coefficient-operator gap for every beta>=0, SU(3), with no volume parameter (lines 18–53, 585–648). It is therefore not a “largest beta” result for a physical lattice gauge system. The finite B14 certificate frontier is beta=22 (rung-four lines 160–189); the earlier finite packet reaches 4.68 (rung-two lines 126–154). The SU(3) strong-coupling result is only 0<=beta<=1 (lines 81–95). None is uniform in physical volume because none has that volume parameter. The beta=6 finite-shell coefficient row is not a physical mass-gap result (beta-identification note lines 126–178).
+
+**Q6 — torus twist, center flux, thin torus, AC'-lat.** No opened source proves the lane’s SU(2) twisted thin-torus lower bound (AC'-lat). The external twisted-T4 meron note explicitly has a 4D SU(2)/Z4 setting distinct from the lane target and says the substrate/gauge-group/coupling identifications are missing (hierarchy note lines 116–129, 273–307). The native flux stiffness note explicitly says it does not give a uniform winding gap or explicit every-thin-torus constant (lines 4, 502). The supplied SU(3) Hamiltonian volume-gap/area-law notes are conditional in small temporal scaling and contain no twist statement (electric gap lines 10,26; loop bound lines 9,25). These are non-transferable context, not evidence for or against AC'-lat itself.
+
+## Closest five full reads for the lead
+
+1. `docs/NATIVE_GAUGE_TRANSFER_A2_REFLECTION_UNIFORM_HALF_LINE_GAP_THEOREM_NOTE_2026-09-02.md` — strongest all-beta native coefficient-operator claim; inspect the explicit gap between its half-slice operator and full Wilson environment.
+2. `docs/SU2_TWO_REGION_BOUNDARY_RESPONSE_BOUNDED_THEOREM_NOTE_2026-11-08.md` — closest response-bound structure; compare its coarse soft-kernel observable and q-condition with `HS-sup`.
+3. `docs/ADMISSIBILITY_RULE_TWO_SITE_BLOCK_CRITERION_EXACT_AND_SILENT_FOR_EVERY_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-07.md` — exact finite-window obstruction and the missing per-site decay step; its model is not gauge theory.
+4. `docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md` — only opened source with a volume-uniform gauge Hamiltonian gap, but it is a supplied SU(3) operator with a small temporal-scaling condition.
+5. `docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md` — explicit volume-uniform constrained-fiber uniqueness/decay, but in a high-mass Wilson–staggered system at very small beta.
+
+## Portables and route exclusions
+
+Exact statements potentially reusable without changing meaning: (i) finite-volume pure-gauge SU(N) Wilson transfer construction and SU(3) six-neighbor character recurrence for open/periodic finite spatial carriers with periodic derived time (`GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`, lines 5–9); (ii) nonnegative SU(3) one-link Wilson-kernel character coefficients for beta>=0 (`WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md`, lines 20–24); (iii) finite-window block-scan inequality, only for its stated six-axis spin model (`ADMISSIBILITY_RULE_TWO_SITE...`, lines 255–276); (iv) conditional SU(2) soft-kernel coarse-boundary response, only when its q/Q conditions hold (`SU2_TWO_REGION...`, lines 397–518); and (v) conditional supplied-Hamiltonian volume gap for small `av` (`GAUGE_WILSON_ELECTRIC_DOMINATED...`, lines 10,26). None proves a listed crux statement for SU(2) Wilson action.
+
+Negative route evidence: The two-site note has no per-site decay and is silent at its named triples (lines 292–298); the native transfer route still lacks uniform Wilson Bessel determinant/weight tails and spectral domination (W85 lines 11–18; W89 lines 9–14; W90/Rung 11 note lines 9–14); the beta-six resummation notes explicitly leave the plaquette closure and non-Stieltjes continuation open; finite-window Wilson slab convergence does not imply a full-space gap (slab note lines 9–14); and the native flux stiffness note does not give a winding gap (lines 4,502). The exact repository text therefore directs work toward full boundary-influence control for gauge-link blocks, a proof-side uniform Wilson determinant tail, or a genuine twisted-torus comparison—none of which is supplied by these candidates.
+
+## Files not opened
+
+I opened 72 main-branch candidate Markdown notes: 15 beta-six sources, 32 native gauge-transfer sources, 14 uniqueness/block/response sources, 9 twist/flux-adjacent sources, and 2 transfer-character/kernel sources. I also opened one additional term-search hit, `docs/NATIVE_ENERGY_FEATURES_NOTE_2026-10-18.md`, outside the lead’s candidate list. The explicit rows above name each opened source. All other paths in Step 1 were not opened: this includes all candidate scripts, caches, compressed work-history artifacts, historic-intake copies, archive-only originals, and the remaining plaquette/gauge-vacuum combinatorics, unrelated SU(2), flux, and adjacent false-positive notes. The Step 1 appendix gives their paths; no conclusion about their contents is claimed. The only further search was the pinned-main `git grep` query reported above; its output is a set of textual hits, not evidence that unreturned routes do not exist.

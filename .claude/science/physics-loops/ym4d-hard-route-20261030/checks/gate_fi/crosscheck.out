@@ -1,0 +1,21 @@
+noise .02      rule  new 0.018641646811 old 0.018641646811 diff 3.1e-17 bases [(0, 0, 0, 1), (0, 0, 1, 0), (0, 2, 2, 1), (1, 2, 0, 0)] t 0.037 1.1
+noise .02      fixed new 0.018707499307 old 0.018707499307 diff 0.0e+00 bases [(1, 1, 1, 1), (1, 1, 1, 1), (1, 1, 1, 1), (1, 1, 1, 1)] t 0.015 1.0
+noise .3       rule  new 0.350682499104 old 0.350682499104 diff 5.6e-17 bases [(0, 1, 1, 1), (1, 1, 0, 1), (2, 0, 1, 0), (2, 0, 2, 0)] t 0.015 1.1
+noise .3       fixed new 0.332836721559 old 0.332836721559 diff 0.0e+00 bases [(1, 1, 1, 1), (1, 1, 1, 1), (1, 1, 1, 1), (1, 1, 1, 1)] t 0.015 1.0
+patch          rule  new 0.079609140087 old 0.079609140087 diff 1.2e-16 bases [(0, 2, 0, 0), (1, 1, 1, 1), (2, 0, 2, 2), (2, 2, 1, 2)] t 0.015 1.1
+patch          fixed new 0.114923461110 old 0.114923461110 diff 5.6e-17 bases [(1, 1, 1, 1), (1, 1, 1, 1), (1, 1, 1, 1), (1, 1, 1, 1)] t 0.016 1.0
+haar-ish 1.0   rule  new 1.487681116881 old 1.487681116881 diff 0.0e+00 bases [(0, 2, 0, 0), (1, 1, 1, 1), (1, 1, 1, 2), (2, 2, 0, 2)] t 0.016 1.1
+haar-ish 1.0   fixed new 0.727074606659 old 0.727074606659 diff 1.8e-15 bases [(1, 1, 1, 1), (1, 1, 1, 1), (1, 1, 1, 1), (1, 1, 1, 1)] t 0.015 1.0
+/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_fi/fi_map.py:182: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:837.)
+  return W, min(float(r) for r in rmin)
+PASS-X
+gauge L=5 fixed 0.08452742989029642 0.08452742989029638 PASS
+gauge L=5 rule 0.14871339856688673 0.14871339856688687 (2, 0, 2, 4) (2, 0, 2, 4) PASS
+grad time L=5 0.12100577354431152
+autograd -0.03338093713738948 fd -0.0333809373680204 PASS-G
+sheet L=3 w1 2.0000 ratio_a 1.0000 ratio_c 1.0000 nrough 9 t 0.015
+sheet L=5 w1 2.0000 ratio_a 1.0000 ratio_c 1.0000 nrough 25 t 0.018
+sheet L=7 w1 2.0000 ratio_a 1.0000 ratio_c 1.0000 nrough 49 t 0.030
+sheet L=9 w1 2.0000 ratio_a 1.0000 ratio_c 1.0000 nrough 81 t 0.052
+sheet L=11 w1 2.0000 ratio_a 1.0000 ratio_c 1.0000 nrough 121 t 0.108

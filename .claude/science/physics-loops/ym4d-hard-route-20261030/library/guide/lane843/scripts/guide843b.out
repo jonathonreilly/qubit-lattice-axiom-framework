@@ -1,0 +1,5 @@
+Q8 m(l), l=0..6: [1.0, 0.0, 2.0, 1.0, 3.0, 2.0, 4.0]  n(j), j=3/2..11/2: [2.0, 3.0, 4.0, 5.0, 6.0]
+2T m(l), l=0..6: [1.0, 0.0, -0.0, 1.0, 1.0, -0.0, 2.0]  n(j), j=3/2..11/2: [0.0, 1.0, 2.0, 1.0, 2.0]
+max over beta in (0,60] of (lhs-rhs); all must be <=0 (first) or <0: {'r52<=M': -0.0, 'M<r2T': -0.0025, 'r2T<=rQ8': -0.0, 'M<I1/I0': -0.005, 'r32<r2T': -0.0025, 'r32<I1/I0': -0.005}
+h6 invariance error under (1+i+j+k)/2, row convention: 6.131407058289218e-16
+h6 invariance error under (1+i+j+k)/2, col convention: 4.002966042486721e-16

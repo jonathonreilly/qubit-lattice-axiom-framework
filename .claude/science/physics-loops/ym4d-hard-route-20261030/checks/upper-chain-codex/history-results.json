@@ -1,0 +1,38 @@
+{
+  "scope": "finite author diagnostics; not a proof of the Wilson estimates",
+  "history_expansion_exact": true,
+  "pointwise_domination_exact": true,
+  "individual_term_jensen_checks_exact": 42,
+  "top_generated_values": [
+    "-1063/504",
+    "-27227/8316"
+  ],
+  "top_positive_envelope": [
+    "1063/504",
+    "8905/2079"
+  ],
+  "copy_fourth_moment_ratios": [
+    "65536",
+    "65536",
+    "65536"
+  ],
+  "copy_norm_ratio": 16,
+  "radius_diagnostics": [
+    {
+      "depth": 0,
+      "log_R": 13.815510557964274,
+      "lambda_over_5": 20.0,
+      "R_exceeds_unfloored_M": false
+    },
+    {
+      "depth": 1000,
+      "log_R": 460.1026131863838,
+      "lambda_over_5": 22.0,
+      "R_exceeds_unfloored_M": true
+    }
+  ],
+  "address_space_cap": "unavailable: current limit exceeds maximum limit",
+  "rss_limit_bytes": 2147483648,
+  "rss_limit_enforcement": "periodic signal and per-trajectory self-check",
+  "peak_rss_bytes": 16351232
+}

@@ -1,0 +1,24 @@
+[    0.0s rss    33MB] group=su2 L=8 K=10 m=0 Nt=22 beta=2.3 ntherm=300 nsep=2 nmeas=1200 nor=2
+[    1.4s rss    33MB] thermalised, 4.7 ms per sweep
+[   11.5s rss   145MB] meas 120/1200: sweep 9 ms/meas, measure 59 ms/meas
+[   21.5s rss   154MB] meas 240/1200: sweep 9 ms/meas, measure 59 ms/meas
+[   31.6s rss   162MB] meas 360/1200: sweep 9 ms/meas, measure 60 ms/meas
+[   41.6s rss   171MB] meas 480/1200: sweep 9 ms/meas, measure 60 ms/meas
+[   51.8s rss   179MB] meas 600/1200: sweep 9 ms/meas, measure 60 ms/meas
+[   61.9s rss   198MB] meas 720/1200: sweep 9 ms/meas, measure 60 ms/meas
+[   72.1s rss   207MB] meas 840/1200: sweep 9 ms/meas, measure 60 ms/meas
+[   82.1s rss   215MB] meas 960/1200: sweep 9 ms/meas, measure 60 ms/meas
+[   92.2s rss   224MB] meas 1080/1200: sweep 9 ms/meas, measure 60 ms/meas
+[  102.3s rss   232MB] meas 1200/1200: sweep 9 ms/meas, measure 60 ms/meas
+{"args": {"lib": "/tmp/lane954/build/liblgt954.dylib", "group": "su2", "L": 8, "K": 10, "m": 0, "beta": 2.3, "ntherm": 300, "nsep": 2, "nmeas": 1200, "nor": 2, "seed": 23008, "out": "/Users/jonBridger/ym4d-worker2/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane954/out/su2_b2.3_L8.json", "tmax": 1000000000.0, "extra_t": 6}, "nmeas": 1200, "Nt": 22, "stats_mean": [0.6021444489018631, 0.6018773264037578, 0.4551729444372507, 0.05625054055712765, 0.004904209212978105, 6.92723182374267e-05], "stats_err": [0.000416258041448819, 0.0004485443895614196, 0.00040254301426724716, 0.00072022706180818, 0.00011690794033426295, 3.5813308042214172e-06], "lag1_trace_m2": {"S0e": 0.2144664191379011, "S0o": 0.05519124413493209, "S1e": 0.017341912024886566, "S1o": -0.027424182674442306}, "ms_per_sweep": 4.685484369595845, "ms_per_meas": 59.86090540885925, "peak_rss_mb": 306.020352, "wall_s": 102.47606420516968}
+  gap plaq0  Eeff(tau) 2.082+-0.048 1.162+-0.180 nan+-1.546 -1.195+-2.818 1.524+-2.312 nan+-0.821
+  gap wind   Eeff(tau) 2.158+-0.038 1.250+-0.141 1.121+-0.364 0.382+-0.646 0.130+-0.682 0.118+-1.127
+  S0e  top 0.16964 +- 0.00615 (bias-corrected 0.16832); max single 0.11617
+  S0o  top 0.05739 +- 0.00163 (bias-corrected 0.05724); max single 0.05234
+  S1e  top 0.14612 +- 0.00253 (bias-corrected 0.14586); max single 0.10207
+  S1o  top 0.05187 +- 0.00059 (bias-corrected 0.05185); max single 0.04846
+  extra pair t=6: S0e  top 0.15948 +- 0.00541 (bias-corrected 0.15807)
+  extra pair t=6: S0o  top 0.05875 +- 0.00153 (bias-corrected 0.05854)
+  extra pair t=6: S1e  top 0.14249 +- 0.00166 (bias-corrected 0.14221)
+  extra pair t=6: S1o  top 0.05191 +- 0.00054 (bias-corrected 0.05189)
+[  102.5s rss   306MB] done

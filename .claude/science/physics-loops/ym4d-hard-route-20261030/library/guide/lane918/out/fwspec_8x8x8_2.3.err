@@ -1,0 +1,20 @@
+/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/lane918/scripts/spec.py:79: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  err = np.sqrt((nb-1)*np.nanvar(eb, axis=0))
+       86.09 real        85.87 user         0.16 sys
+            73515008  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7711  page reclaims
+                 146  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 432  voluntary context switches
+                 375  involuntary context switches
+       1424443472558  instructions retired
+        324146717498  cycles elapsed
+            57786848  peak memory footprint

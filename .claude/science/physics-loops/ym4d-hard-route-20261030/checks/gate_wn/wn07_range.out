@@ -1,0 +1,13 @@
+-24 Flux -5.21395e-03; Stk_comp -5.21395e-03
+Stk_W 1.87933e-03
+rho=0: Stk_N -4.13409e-03; fraction of the way from -24 Flux to Stk_W 0.1522
+rho=1: Stk_N -2.39252e-03; fraction of the way from -24 Flux to Stk_W 0.3978
+rho=2: Stk_N 8.39896e-04; fraction of the way from -24 Flux to Stk_W 0.8535
+rho=3: Stk_N -4.48471e-05; fraction of the way from -24 Flux to Stk_W 0.7287
+rho=4: Stk_N -6.16752e-04; fraction of the way from -24 Flux to Stk_W 0.6481
+rho=6: Stk_N -1.27978e-04; fraction of the way from -24 Flux to Stk_W 0.7170
+rho=8: Stk_N 1.34328e-03; fraction of the way from -24 Flux to Stk_W 0.9244
+rho=12: Stk_N 1.87995e-03; fraction of the way from -24 Flux to Stk_W 1.0001
+rho=16: Stk_N 1.87933e-03; fraction of the way from -24 Flux to Stk_W 1.0000
+rho=inf: Stk_N 1.87933e-03; fraction of the way from -24 Flux to Stk_W 1.0000
+exit 0

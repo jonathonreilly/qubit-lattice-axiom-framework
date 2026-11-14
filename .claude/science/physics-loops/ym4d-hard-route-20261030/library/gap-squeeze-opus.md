@@ -36,7 +36,7 @@ on a run; runs are GUIDE only.
 
 ## State of attack (checkpoint, updated in place)
 
-- Steps 1-6 done (Step 6 results written by 14:03Z). Step 7 next: verdict, status table, RESULT.
+- FINISHED: Steps 1-7 done; Step 7 (verdict, status table, RESULT) written by 14:05Z. Check is row 966.
 - Time note. The clock times first written here for Steps 1-4 (13:40Z, 14:05Z, 14:30Z, 14:55Z, 15:10Z)
   were estimates that ran ahead of the clock; they are removed. The file was created at 13:23Z and
   Steps 1-4 were on disk before 13:49:14Z, when the lock record for Step 5's first run starts.
@@ -97,8 +97,12 @@ row 959's RESULT (in FINISH).
   exteriors; its L^2(mu) norm and gap are the supremum and infimum over ALL exteriors), and
   **Lemma MC** (the maximal correlation of past and future slabs at distance w in the vacuum
   chain is exactly r_1^w). Their reading: an averaged block condition is the worst case (finite
-  blocks) or the claim itself (slabs). These two facts decide most of task (2) of this row; Step
-  3 uses them and says exactly where.
+  blocks) or the claim itself (slabs). Check 896 (`gap-glue-check-astra.md` 9-10, Codex astra
+  xhigh): Lemma MC HOLDS; FIB HOLDS AFTER CORRECTION (the global value is the ESSENTIAL supremum or
+  infimum over fibres; "all exteriors" needs continuous versions, which exist for finite heat-bath
+  combinations of the Wilson measure); the exhaustive dichotomy FAILS (an averaged scalar estimate,
+  a weighted estimate with a bad-set term, or a bound only for exterior-independent tests is a
+  different hypothesis). Step 3 uses FIB and MC only in their checked scope.
 - Sussman-Alpoge account (CA-I/II/III at 31a47c543775; Ethan Sussman and Levent Alpoge, with
   Claude and Codex as authors of their text): row 960 searched its index for transfer-operator,
   volume-change and torus-change statements and found only the chessboard family (CA-II 6.2,
@@ -199,7 +203,8 @@ the sites of Q_(t+1); temporal gauge and the gauge projection at each slice as i
 
 **2.6 Centre blindness after the first cut (PROVED, from row 895 Lemma LOC).** For t >= 1 every
 Q_t is an open box, so it wraps no direction of the torus. By Lemma LOC of `gap-glue-max.md` 7.1
-(row 895, Claude Fable 5.2), every gauge-invariant function of the links of E_t is invariant under
+(row 895, Claude Fable 5.2; check 896 section 8: HOLDS for the stated support condition, which is the
+only direction used here), every gauge-invariant function of the links of E_t is invariant under
 the centre flips C_1, C_2, C_3. So every squeezed quantity at times t >= 1 lives in the
 centre-even (zero-flux) sector H_0. The flux sectors of the seed (Q_0 of row 892, Lemma SPLIT;
 the 7 degenerate sectors of frozen groups, row 960 5.2) are invisible to the squeeze after its
@@ -343,18 +348,23 @@ Proof. E_i commute with E_cap, so they reduce on (Ran E_cap)^perp, where ||E_1 E
 u = E_1 f, v = E_2 f, s = ||u||^2 + ||v||^2. Then s = <f, u + v> <= ||f|| ||u + v|| and
 <u, v> = <u, E_1 E_2 v>, so ||u + v||^2 <= s + 2 eps ||u|| ||v|| <= (1 + eps) s. Hence s <= (1 + eps) ||f||^2,
 which is the claim. QED
-(b) **Average versus supremum (PROVED, from row 895).** If A = A_1 union A_2 is a finite block with a
+(b) **Average versus supremum (PROVED, from row 895 as corrected by check 896).** If A = A_1 union A_2 is a finite block with a
 non-empty exterior, E_1, E_2 and E_cap commute with multiplication by every bounded function of A^c,
-so by Proposition FIB of `gap-glue-max.md` 7.2 eps is the supremum over ALL exteriors tau of the
-fibre value eps(tau): the L^2(mu)-averaged condition IS the worst case. If A is the whole torus (the
+so by Proposition FIB of `gap-glue-max.md` 7.2 (as corrected in check 896 section 9) eps is the
+essential supremum over exteriors tau of the fibre value eps(tau); E_1 E_2 - E_cap is a finite heat-bath
+combination, so continuous versions exist and this is the supremum over all exteriors: the L^2(mu)
+operator-norm condition of Lemma QF IS the worst case. If A is the whole torus (the
 top level of a recursion), there is no exterior and eps is a global maximal correlation: for past and
 future time slabs at distance w it is r_1^w exactly (row 895 Lemma MC). For spatial half-slabs the same
 lemma applies along x_1 once that direction is unrolled to Z: it gives (r_1^(1))^w, r_1^(1) the ratio of
 the top two levels of the transfer operator in direction 1 of the slab's cross-section (the slab is
 reflection positive in every direction, CA-II 8.7 of Sussman and Alpoge); on the periodic box the two
 arcs also meet the other way round, so it is that value up to the wrap. Either way: the gap in the
-crossed channel. So every averaged squeeze
-condition is either the worst case (finite blocks) or the claim (the top level).
+crossed channel. So the operator-norm condition of Lemma QF is either the worst case (finite blocks) or
+the claim (the top level). Scope (check 896 section 9): this covers the L^2 operator-norm form only. An
+averaged scalar estimate, a weighted estimate with a bad-set term, or a bound for exterior-independent
+tests is a different hypothesis that FIB does not make worst-case; this note does not exclude such a
+method (none is known for a gauge theory; status file line 163, row 853).
 (c) **Recursions in the literature (RECALLED, not rebuilt).** Martinelli and Olivieri (CMP 161, 1994):
 strong mixing on regular boxes gives a uniform gap and LSI for Glauber dynamics, by block dynamics and
 a recursion over box sizes. Lu and Yau (CMP 156, 1993): the martingale (squeeze-by-shells) method.
@@ -386,7 +396,7 @@ smallest input of the static method.
 | (V), over time | Lemma BND (i) and Lemma LEAK | l_j: one step's loss of the dropped layer | average | no better than SHELL (ARGUED) |
 | cone to one plaquette | Theorem CONE (c), Lemma PR | osc(phi_p) <= 1.7 x 10^-12 (slab) | supremum | needs the square root (HALF): time extent doubled; capped by the ceilings |
 | cone, averaged | Lemma PR, (f) | the influences summed | average | the seed itself |
-| block dynamics (gap, LSI) | Lemma QF; MO, LY, Cesi, SZ | eps of overlapping blocks | L^2 average = supremum (FIB); top level = r_1^w (MC) | worst-case mixing or the gap; SZ: equivalent to complete analyticity |
+| block dynamics (gap, LSI) | Lemma QF; MO, LY, Cesi, SZ | eps of overlapping blocks | L^2 operator norm = essential supremum (FIB, check 896); top level = r_1^w (MC); other averaged forms not covered | worst-case mixing or the gap; SZ: equivalent to complete analyticity |
 | (F), (D) computable end | Lemma BND (ii) (row 960 L3) | none: wrong side | n/a | no reverse inequality |
 | (C) conditioned | DLR: exact | averaging over tau returns the vacuum | average = exact; pointwise = supremum | end not computable |
 
@@ -516,8 +526,10 @@ Values (j <= 1 terms; the rest is below 2.2 x 10^-5 in N and 10^-6 in R):
 - beta 2.3: N = 1 + 0.052766 x 1.49941 + 0.000768 x 1.54905 = 1.080308; R = 1 + 4 x 0.012121 + 9 x 0.0000213 = 1.048677;
   S(1; Q_pl) <= 0.03017. GUIDE value 0.02872.
 - beta 2.6: N = 1 + 0.073309 x 1.598422 + 0.001583 x 1.672432 = 1.119827; R = 1 + 4 x 0.019849 + 9 x 0.0000630 = 1.079963;
-  S(1; Q_pl) <= 0.03691. GUIDE value 0.03409.
-So E_1(Q_pl) >= -log 0.0302 = 3.50 at beta 2.3 and >= 3.30 at beta 2.6 (GUIDE: 3.56, 3.47 at 2.45, 3.40).
+  with the positive tail of N (j = 3/2: 0.060018^4 x 1.674 = 2.17 x 10^-5; the rest below 10^-7) added and the tail of R
+  dropped, S(1; Q_pl) <= (1.119827 + 0.000022)/1.079963 - 1 = 0.03694. GUIDE value 0.03409.
+(At beta 2.3 the same tail is 7 x 10^-6 and the bound stays 0.03017.)
+So E_1(Q_pl) >= -log 0.03017 = 3.50 at beta 2.3 and >= -log 0.03694 = 3.29 at beta 2.6 (GUIDE: 3.56, 3.47 at 2.45, 3.40).
 Large beta (GUIDE): 3.24 (4), 3.40 (8), 3.47 (16), 3.50 (32), towards 2 arccosh 3 = 3.526 (4.3, corrected).
 
 **5.4 One cube, free faces (static; PROVED formula, hand values).** The six faces form a closed surface with
@@ -541,14 +553,15 @@ with A the sum of its six staples. At zero staple sum (an allowed exterior: stap
 unit S^3, whose Poincare and log-Sobolev
 constants are both 3 (first eigenvalue of S^3; Mueller-Weissler for the log-Sobolev constant of S^n, RECALLED).
 A tensorization or quasi-factorization bound has the form (minimum endpoint constant) x (factors <= 1), so with
-one-link blocks it certifies at most 3. (LSI-J-seed) needs 2 beta K_a: 4.30 at beta 2.3, a = 30 (slab), and 3.73 on
+one-link blocks it certifies at most 3. (This cap needs only that a log-Sobolev constant is at most the spectral gap,
+by linearising at f = 1 + eps g, and that the gap of the unit S^3 is 3; the sharp Mueller-Weissler value is not used.) (LSI-J-seed) needs 2 beta K_a: 4.30 at beta 2.3, a = 30 (slab), and 3.73 on
 the ratio-4 box of row 960 4.5. So one-link block dynamics cannot reach (LSI-J-seed) at a = 30 even at zero
 decoupling cost. It needs a >= 45 on the slab (K_45 = 27.42/43 = 0.638, 2 beta K = 2.93) or a >= 40 on the ratio-4
 box (K'_40 = 23.58/38 = 0.621, 2.85). Larger blocks remove this cap, but their worst-case constants are not
 computable by hand.
 
-**5.6 What the endpoint values mean.** The computable end is small and easy: S(k; Q_pl) <= 0.0369^k at beta 2.6,
-below the 1.67 x 10^-12 of Theorem CONE (c) once k >= 9 (0.0369^9 = 1.3 x 10^-13), and the open unit box has a gap
+**5.6 What the endpoint values mean.** The computable end is small and easy: S(k; Q_pl) <= 0.03694^k at beta 2.6,
+below the 1.67 x 10^-12 of Theorem CONE (c) once k >= 9 (0.03694^9 = 1.3 x 10^-13), and the open unit box has a gap
 above 3.3 at every beta of the window and as beta grows. The owner's hope for the narrow end holds. But the end
 enters only on the bounded side (Lemma BND (ii)): every reverse inequality of Step 3 has a cost that must itself be
 below the seed's required size (1.7 x 10^-12 per plaquette on the slab, or the whole shell sum S - S_n). So the
@@ -625,3 +638,94 @@ the first step, then removes one layer per face per step down to side 2 (the uni
 **What Step 6 changes.** Nothing in the verdict of Steps 3-5; it adds the scope note to 3.4 (e) (written before
 the run, at 13:58Z) and measures the sizes: the decoupling term is 98-100 percent of the seed in the free scalar,
 the time squeeze keeps 1-3 percent, and the square-root loss of HALF is exact in the one-plaquette box.
+
+### Step 7 (done): verdict
+
+**Squeezing does not reduce the crux to something weaker. It moves the crux into the decoupling term:
+unchanged in every averaged form, and made harder in every form whose endpoint is computable.** This is
+ARGUED from the PROVED lemmas above, for the squeeze forms defined in Step 2; it is not a theorem about every
+conceivable method. The reasons:
+1. **The squeezed objects sit on the bounded side (Lemma BND).** A closed squeeze is below the slab, and a bound on
+   the narrow end bounds the squeezed complex, never the slab. Any use for the seed needs a reverse inequality,
+   and its error term is the decoupling cost.
+2. **The seed is a volume sum, and the cost is that sum (Theorem SHELL, exact).** Under the vacuum-faithful boundary
+   condition (V) the cost of each squeeze step is exactly the thermal weight of the shell it drops; the total cost
+   is S - S_n. In the free scalar it is 98-100 percent of S (G1); spreading the squeeze over time keeps only 1-3
+   percent of S(2n) (G2). The flux half sits entirely in the first step, the cut of the periodic box (Corollary
+   FLUX), which no later step can see.
+3. **Computable ends need suprema; faithful ends are not computable.** The free and Dirichlet ends are explicit
+   Bessel series (Step 5), but passing from them to the vacuum costs a boundary influence uniform over boundary
+   data. That is a worst-case (supremum) statement: capped by the ceilings (single links 1/3, vertex blocks 0.775,
+   and the area-law and layer-twist bounds 2/3 and 4 G_3 = 1.0109 for the methods those rows cover), infinite
+   for Gaussian fields, and it pays a square root (Lemma HALF): about twice the time extent, and the box with it.
+   The conditioned and vacuum-averaged ends are exact but are vacuum quantities.
+4. **Averaged costs are the claim.** The exact averaged forms are the seed itself, re-indexed: Theorem SHELL
+   (by shells), Lemma PR with (f) (by plaquettes and couplings), Lemma MC (time slabs: r_1^w). The ceilings do not
+   apply to them, because they are equalities with the crux. The L^2 operator-norm block condition of Lemma QF is
+   the worst case by FIB (check 896's scope); other averaged block conditions are not excluded here, and none is
+   known for a gauge theory.
+5. **The endpoint is easy, so it cannot be where the difficulty sits.** Proposition EP1: S(1; Q_pl) <= 0.0302
+   (beta 2.3) and 0.0370 (2.6), E_1(Q_pl) >= 3.50 and 3.29, by hand; the open unit box stays gapped as beta grows
+   (towards 2 arccosh 3 = 3.53, GUIDE). So all the beta dependence of the seed (SMALL-BOX, asymptotic freedom)
+   is in the cost. With one-link blocks, block dynamics certifies at most 3 (the gap of S^3 bounds the log-Sobolev
+   constant), below the 4.30 that (LSI-J-seed) needs at a = 30, beta 2.3, even at zero decoupling cost.
+6. **The squeeze does not fit in the seed's slab (Lemma COUNT).** Reaching a unit from side 24a takes at least
+   12a steps; inside the period a the box keeps side at least 23a.
+
+**What changes because of this row (worth-doing test).** Moves: the seed crux of rows 947, 954 and 960 (the
+owner's squeeze idea). If row 966 confirms: (a) do not queue lanes on squeezed or shrinking geometries for the
+seed or for (LSI-J-seed); (b) Lemma PR is an exact single-observable form of the seed, X(a; B) = integral over
+beta' of the summed thermal shift of the plaquette, so a sufficient target for any later route is "for every
+beta' <= beta the plaquette's thermal shift, summed over the six types, is at most x_*/(a b^3 beta)", which is
+equivalent in strength to the seed but names one local observable; (c) Corollary FLUX puts the whole flux half
+in the first, non-local step, in agreement with row 895; (d) Proposition EP1 settles that small OPEN boxes are
+never the obstruction (gapped at every beta), so tests of small-box ideas should use periodic boxes. These are
+for the lead to route; I changed no other file.
+
+**Final status.**
+
+| Statement | Mark |
+|---|---|
+| 2.2 Lemma COUNT (at least b/2 steps to a unit; side at least b - a inside the slab) | PROVED |
+| 2.3 (F) step: restriction is a Markov isometry, kernel positive and gauge invariant; (C) is the conditional law (DLR) | PROVED |
+| 2.6 centre blindness after the first cut | PROVED, from row 895 Lemma LOC (HOLDS in check 896 for this direction) |
+| 3.1 Lemma BND (i) (V) diamond <= S(2n; B); (ii) from row 960 (L3) | PROVED; (ii) PROVED in row 960, check 961 pending |
+| 3.2 Theorem SHELL; Corollary FLUX | PROVED (FLUX given 2.6) |
+| 3.2 the unit end carries about its volume share | ARGUED; GUIDE G1 (1.2-3.3 times at ratio 2) |
+| 3.3 Lemma LEAK identity | PROVED; "no better than SHELL" ARGUED; GUIDE G2 |
+| 3.4 Lemma PR (pressure identity); window identity; worst-case bound (c) and its sizes | PROVED |
+| 3.4 Lemma HALF; spectral form (e) | PROVED |
+| 3.4 "time extent doubled" for SU(2) | ARGUED (needs the plaquette-glueball overlap, RECALLED); GUIDE G3 exact in Q_pl; scope note: no loss in the rate for phi^2 in a free field (G4') |
+| 3.4 (f) the averaged cone is the seed | PROVED (identity) |
+| 3.5 Lemma QF | PROVED |
+| 3.5 (b) the QF condition is the worst case (finite blocks) or r_1^w (top level) | PROVED given FIB (as corrected in check 896) and MC (HOLDS in check 896) |
+| 3.5 (c) Martinelli-Olivieri, Lu-Yau, Cesi, Stroock-Zegarlinski | RECALLED, not rebuilt |
+| 4.1 worst-case cost infinite for Gaussian fields | PROVED |
+| 4.1 compact U(1) power law; block-dynamics product decays like a power of b | ARGUED (RECALLED power laws); GUIDE G4 |
+| 4.2 frozen groups: the first cut carries at least 7 - o(1) | PROVED given the RECALLED sector count (row 960 5.2) |
+| 4.3 open unit box gapped at every beta | PROVED at beta 2.3-2.6 (EP1); large-beta limit 2 arccosh 3 ARGUED, GUIDE |
+| 4.4 K7 | ARGUED |
+| 5.1-5.2 Bessel values; one-plaquette moments | PROVED (series by hand) |
+| 5.3 Proposition EP1 (S(1; Q_pl) <= 0.03017, 0.03694; E_1(Q_pl) >= 3.50, 3.29) | PROVED by hand |
+| 5.4 cube surface Z = sum d_j^2 (c_j/d_j)^6 and its values | PROVED; the cube transfer operator's S(1): leading term only (0.177, 0.213), NOT a bound |
+| 5.5 one-link block dynamics certifies at most 3 < 4.30 | PROVED (a log-Sobolev constant is at most the gap; the gap of the unit S^3 is 3) |
+| Step 6 G0-G4 | GUIDE (free scalar; one-plaquette box) |
+| Squeezing moves the crux into the decoupling term, unchanged (averaged) or harder (supremum) | ARGUED from the PROVED lemmas |
+| (LSI-J-seed); the seed at beta 2.3-2.6 | OPEN, not attacked |
+
+**For the checker (row 966), in this order.** (1) Lemma PR: the convexity step for d/d beta log lambda_0, the base
+point beta = 0, and the count of 6 a b^3 plaquettes; then the window identity. (2) Lemma HALF: the tower and
+Markov steps and osc >= ||.||_2 for a mean-zero function. (3) Theorem SHELL and Corollary FLUX. (4) Proposition
+EP1: Tr T = c_0^5 N, the Rayleigh quotient c_0^5 R, and the hand arithmetic of 5.3. (5) Lemma QF's proof and its
+use of FIB within check 896's scope. (6) Lemma COUNT. (7) The cube-surface formula (5.4). (8) The GUIDE scripts'
+Gaussian identities (G1, G2) and the HALF fit (G3).
+
+**Not verified.** No model of another provider read this file. Row 895's FIB, MC and LOC are used as checked in
+check 896; I did not re-derive them. The literature of 3.5 (c), the Mueller-Weissler constant, the compact U(1)
+power laws, the frozen-group sector count and the plaquette-glueball overlap are RECALLED. The cube transfer
+operator was not computed beyond its leading term. The GUIDE runs use a free scalar (no gauge field, no flux,
+no interaction) and the one-plaquette box; they check bookkeeping and the HALF exponent, not SU(2) on the seed
+box. Nothing was committed or pushed. Files written: this file; `library/guide/lane965/` (`endpoint.py`,
+`squeeze_guide.py`, `recheck_shells.py`, and their logs in `logs/`).
+
+RESULT: Squeezing does not weaken the crux; it moves it into the decoupling term, unchanged when the cost is averaged along the vacuum and harder when the endpoint is computable (ARGUED from PROVED lemmas): the squeezed objects sit on the bounded side (Lemma BND); under vacuum averaging the cost of each step is exactly the dropped shell's thermal weight, so the total cost is the seed minus the unit's share (Theorem SHELL; 98-100 percent of S in the free scalar, GUIDE), and the whole flux half sits in the first cut (Corollary FLUX); the seed equals the coupling integral of local plaquette thermal shifts (Lemma PR, PROVED), so the cone form needs a worst-case influence below 1.7 x 10^-12 per plaquette on the slab and pays a square root (Lemma HALF, exact in the one-plaquette box: rate E_1/2 against E_1), while its averaged form is the seed itself; the block form's L^2 cost is the worst case (FIB as corrected by check 896) or r_1^w (MC), with the ceilings applying; the squeeze needs at least 12a steps (Lemma COUNT). The endpoint is easy: PROVED by hand S(1; one plaquette) <= 0.0302 (beta 2.3) and 0.0370 (2.6), gap at least 3.50 and 3.29, the open unit box stays gapped as beta grows, and the cube surface sum is explicit. OPEN: (LSI-J-seed) and the seed at beta 2.3-2.6, not attacked; the cube's full thermal sum by hand; averaged block conditions other than the L^2 operator norm are not excluded.

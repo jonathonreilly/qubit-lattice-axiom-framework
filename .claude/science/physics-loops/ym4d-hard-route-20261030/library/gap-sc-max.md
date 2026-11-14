@@ -328,3 +328,15 @@ except at real slices with a sign tie (Section 4).
 **6.2 The test.** The kill test of 5.2 at the layered pi-flux slice u_xy: a first-step electric susceptibility that
 grows with L at the mode (pi, pi, 0), (1, -1, 0) refutes (SC-hor) and (SC) for SU(2) at that coupling (GUIDE), and
 leaves only (SG-step) itself. Result: Section 5.5.
+
+**6.3 Compact U(1) control of the same test (GUIDE; queued after the SU(2) batch).** Script
+`/tmp/gap-sc-950/scripts/slab_u1.py` (angles, von Mises heat bath, same slab, E_l = sin(theta_l(1) - u_l), Lambda(k) with no
+colour sum). Prediction of Section 4: at u_xy the sign of the staggered pattern orders in the Coulomb phase, so
+lambda grows like L^3; at u = 1 it does not; in the confined phase (beta 0.9) it does not.
+Criteria: G_U1 := lambda(8)/lambda(4) at u_xy, beta 2.3. G_U1 >= 4: compact U(1) FAILS (SC-hor) at beta 2.3 (GUIDE).
+G_U1 <= 1.3: no order. Control u = 1: lambda(8)/lambda(4) <= 1.3 and lambda below 1.
+Honest note on order of events: a 250-sweep smoke run of this script (L = 4, outside the lock, under one second)
+was seen BEFORE these criteria were written. It gave lambda = 41.2 at (pi, pi, 0) for u_xy (staggered order parameter
+1.13, the fully ordered value 2 L^3 sin^2 theta with sin theta = 0.57) against 0.72 for u = 1. So the L = 4 value was
+known; the L dependence and the controls were not. The smoke runs of both scripts (about 12 s in all) ran outside
+the lock; every reported number comes from the batches under the lock.

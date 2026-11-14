@@ -353,3 +353,102 @@ limit, beta large), and it is small in the double well, where alpha is small. No
 What the run cannot establish: the continuum statements (grid model only), the true alpha
 (alpha_up is an upper estimate, alpha_low a Holley-Stroock bound transplanted to the grid), or
 any statement for SU(2).
+
+### Step 7: credit, a weaker input form, and remarks
+
+**Literature (READ where marked; citations confirmed through Crossref or arXiv).**
+- Bobkov, Gentil, Ledoux, "Hypercontractivity of Hamilton-Jacobi equations", J. Math. Pures
+  Appl. 80 (2001) 669-696, DOI 10.1016/S0021-7824(01)01208-9. Lemma BGL is their theorem at
+  exponent 1 (RECALLED); rebuilt in Step 4 with the regularity on a compact manifold written out.
+- F.-Y. Wang, "Logarithmic Sobolev inequalities on noncompact Riemannian manifolds", Probab.
+  Theory Related Fields 109 (1997) 417-424, DOI 10.1007/s004400050137: the dimension-free Harnack
+  inequality (RECALLED). F.-Y. Wang, "Hypercontractivity for stochastic Hamiltonian systems",
+  arXiv:1409.1995 (READ: abstract and Theorem 2.1 with its statement): "Since the log-Sobolev
+  inequality is invalid for the associated Dirichlet form, we introduce a general result on the
+  hypercontractivity using the Harnack inequality with power." His Theorem 2.1: a power-2
+  Harnack inequality, a contracting coupling and Gaussian integrability give hypercontractivity
+  for large time, with no explicit rate. **The strategy of this row (Harnack with power in place
+  of a log-Sobolev inequality for the chain's own Dirichlet form) is Wang's; credit him.** What
+  is new here, as far as this reading goes: Lemma RD (the Harnack inequality from a
+  sub-Gaussian one-step score, with the sharp constant, by a Herbst-type argument along the
+  characteristics lambda t = const), and the one-step combination with Lemma BGL, which gives an
+  explicit, sharp exponent for every p. Proposition HC needs that explicit exponent; Wang's
+  qualitative "for large t" would not give the seed's box-size condition.
+- Nelson, "The free Markoff field", J. Funct. Anal. 12 (1973) 211-227, and Gross, "Logarithmic
+  Sobolev inequalities", Amer. J. Math. 97 (1975) 1061-1083 (RECALLED): the Gaussian sharpness
+  of Step 2 and the Gaussian log-Sobolev constant. Holley-Stroock (1987) and Weissler (1980)
+  (RECALLED) enter the GUIDE run only.
+- Ahlswede-Gacs (1976) and Anantharam-Gohari-Kamath-Nair (2013) (RECALLED, not used): a
+  strong data-processing constant alone gives hypercontractivity only at the p -> 1 end. Step
+  2(f) is consistent with this: Theorem E is that end of Theorem HC1.
+- Sussman-Alpoge account (CA-I, CA-II, CA-III and the outline YM4_sketch_500.tex at 31a47c543775,
+  fetched to `/tmp/gap-etohc-940/sa/`): no occurrence of hypercontract, log-Sobolev, Harnack or
+  Hopf-Lax. The account does not treat this lemma. Credit: the transfer frame (outline (GL8),
+  line 2331: L = P C^(1/2) e^(-V) C^(1/2) P, Z_s(0) = Tr L^s) is theirs (Ethan Sussman and Levent
+  Alpoge, with Claude and Codex as authors of their text), as row 931 records.
+
+**Which kernel (a remark needed for (K); PROVED).** The outline's L = A*A and row 931's
+T = A A* with A = e^(-V/2) C^(1/2) (projected) have the same non-zero spectrum, so the same X(t; B).
+Only T has an evidently positive kernel: T(u, w) = e^(-V(u)/2) C(u, w) e^(-V(w)/2) with C the
+gauge-averaged product of the positive per-link weights; the kernel of C^(1/2) need not be
+positive. Hypothesis (K) is used for T, as row 931 builds the chain.
+
+**Corollary HC2 (metric freedom; PROVED: it is Theorem HC1 on (M, g~)).** Let g~ be any smooth
+gauge-invariant Riemannian metric on M such that, for every x and every tangent vector v at x,
+  log E_(pi_x) exp( d_x log p(x, .)[v] ) <= |v|_(g~)^2 / 2,                       (SG~)
+and let nu satisfy the log-Sobolev inequality in g~: Ent_nu(f^2) <= (2/kappa) E_nu |grad f|_(g~)^2. Then
+||P g||_Q <= ||g||_p with Q - 1 = (p - 1)(1 + kappa), and (HC-vac) holds with alpha' = (1/2) log(1 + kappa).
+Proof. The proofs of Lemmas SGC, RD, H, BGL and Theorem HC1 use the metric only through
+geodesics, the distance, gradients in (LSI-vac) and the pairing d_x log p[gamma'], and they hold
+on any compact connected Riemannian manifold. (SG~) is (SG-step) with sigma = 1 in g~. QED
+With g~ = sigma^2 g this is Theorem HC1 (kappa = alpha/sigma^2). With g~ = s(x)^2 g, s a smooth gauge-invariant
+envelope of the local proxy sigma(x) of (SG-step), the supremum of sigma(x) no longer enters: large
+local proxies cost only through the weighted inequality Ent_nu(f^2) <= (2/kappa) E_nu[|grad f|^2/s^2].
+Why this may matter (ARGUED, not tested). FT-CEIL lists "environment-uniform conditional parity
+bounds are false (Z_2 Peierls, beta > 2.191, check 870)". If some slice u makes pi_u bimodal under
+a centre flip of a region of R links, the score along the unit direction that tilts that region
+differs between the modes by order beta sqrt(R), so sigma(u)^2 is of order beta^2 R there, and the
+supremum form of (SG-step) could grow with the box. Corollary HC2 asks only for a pointwise
+envelope plus one inequality for nu, with no supremum over slices. Whether that inequality is
+box-uniform for SU(2) is part of row 941's question, not this row's.
+
+**Repo search, completed.** The local clone has only `origin/claude/ym4d-hard-route`; origin/main
+and the open PR branches are not fetched on this machine, so they were not searched. The
+whole-checkout `git grep` did not finish in 10 minutes and was stopped; the target folder and
+the account were searched (Repo search section above).
+
+### Step 8: result
+
+Plan against what was done. Plan steps 1, 2, 6, 7 ran as planned. Steps 3-5 became the proof
+(Lemma RD, Lemmas H and BGL, Theorem HC1): the lemma is true, so no counterexample kernel exists
+in row 931's class. The answer to "the smallest extra hypothesis" is regularity only, (K), which
+the Wilson slice chain meets.
+
+## Result
+
+| Statement | Label |
+|---|---|
+| Lemma SGC (sub-Gaussian covariance bound; row 931 Theorem E step (ii)) | PROVED (hand) |
+| Lemma RD: (SG-step)_sigma at every point gives E_(pi_y)[(dpi_x/dpi_y)^lambda] <= exp(lambda(lambda-1) sigma^2 d(x,y)^2/2) | PROVED (hand, by Claude, not yet checked); equality in the Gaussian mode |
+| Lemma H: (P g(x))^p <= P(g^p)(y) exp(p sigma^2 d(x,y)^2/(2(p-1))) | PROVED from Lemma RD (Hoelder) |
+| Lemma BGL: (LSI-vac)_alpha gives ||e^(Q_s F)||_(1 + alpha s) <= E_nu e^F (Hopf-Lax regularity (R1)-(R6) written out) | PROVED (hand), rebuild of Bobkov-Gentil-Ledoux 2001; textbook facts named (Rademacher, Laplace-Beltrami spectral theorem) |
+| Theorem HC1: ||P g||_Q <= ||g||_p, Q - 1 = (p - 1)(1 + alpha/sigma^2), every p > 1 | CONDITIONAL on (LSI-vac)_alpha, (SG-step)_sigma; (K) holds for the slice chain |
+| **(E-to-HC)**: (HC-vac)_alpha' with alpha' = (1/2) log(1 + alpha/sigma^2) = (1/2) log(1/rho) | **CONDITIONAL on (LSI-vac), (SG-step): the implication is PROVED (hand, unchecked)** |
+| Corollary HC2: any smooth gauge-invariant metric g~ with (SG~) and an LSI kappa in g~ gives alpha' = (1/2) log(1 + kappa) | PROVED (Theorem HC1 on (M, g~)) |
+| Gaussian mode: the claim returns Nelson's exponent q - 1 = e^(2 omega m) exactly; sharp; product of modes gives alpha' = omega_min = E_1 | PROVED (hand) |
+| Row 931's Theorem E is the p -> 1 end of Theorem HC1, same constant rho | PROVED |
+| Seed consequence via row 931's Proposition HC: X(2m + 2; B) <= 72 beta |B| (1 + alpha/sigma^2)^(-m); Form W once (1/2) log(1 + alpha/sigma^2)(a - 2) >= 16.0 + 3 log a | CONDITIONAL on (LSI-vac), (SG-step) on the one box and on Proposition HC (row 931, unchecked; check row 938) |
+| Kernel choice: row 931's T = A A* has a positive kernel; the outline's L = A*A has the same spectrum | PROVED |
+| Supremum form of (SG-step) may grow with the box through bimodal conditional laws (check 870's mechanism); HC2 avoids the supremum | ARGUED, not tested |
+| GUIDE, rotor chain, 7 parameter sets: (RD) ratios 0.996-0.9992, all HC and 2 -> q tests pass, positive control finds violations past e^(2 E_1) | GUIDE (refutes nothing; proves nothing) |
+| (LSI-vac), (SG-step) (or (SG~) with the weighted LSI) for SU(2) Wilson on the seed box at beta 2.3-2.6 | OPEN (row 941's target) |
+
+Limits. Proofs are by hand, by Claude Opus 5.5 (max), checked by no other model; the check is
+row 942. Rows 931's Proposition HC, Theorem V and Theorem E are read, not re-checked here.
+Wang's and Bobkov-Gentil-Ledoux's results are credited and rebuilt, not cited as steps; Nelson's
+"only if" in Step 2(c) is shown by the stated Gaussian test, Gross's Gaussian LSI is RECALLED.
+One GUIDE job under the lock; scripts and logs in `/tmp/gap-etohc-940/`, not committed.
+origin/main and the open PR branches were not searched (not present on this clone). Nothing
+here is a proof of the seed, of a mass gap, or a public claim.
+
+RESULT: Row 940 (Claude Opus 5.5 max, Mac mini worker 2; unchecked, check = row 942): (E-to-HC) PROVED as an implication by hand: for the vacuum slice chain, (LSI-vac)_alpha and (SG-step)_sigma give one-step hypercontractivity ||P g||_Q <= ||g||_p with Q - 1 = (p - 1)(1 + alpha/sigma^2) for every p > 1, hence (HC-vac) with alpha' = (1/2) log(1 + alpha/sigma^2) = (1/2) log(1/rho) (rho = row 931's Theorem E factor), free of box, dimension and group, and sharp: one Gaussian mode returns Nelson's exponent q - 1 = e^(2 omega m) exactly; route: new Lemma RD (sub-Gaussian one-step score gives a Gaussian Renyi/Harnack bound, by a Herbst argument along characteristics) plus the Bobkov-Gentil-Ledoux Hopf-Lax hypercontractivity (rebuilt), the Harnack-for-hypercontractivity strategy credited to F.-Y. Wang; Corollary HC2 replaces the supremum in (SG-step) by any dominating metric and one weighted log-Sobolev inequality for nu; GUIDE on the rotor chain refutes nothing. OPEN: (LSI-vac) and (SG-step) (or the HC2 pair) for SU(2) on the seed box (row 941), and row 931's Proposition HC and Theorem E await check 938.

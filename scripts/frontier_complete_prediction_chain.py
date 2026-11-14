@@ -28,6 +28,8 @@ from canonical_plaquette_surface import (
     CANONICAL_U0,
 )
 
+AUDIT_TIMEOUT_SEC = 120
+
 PI = math.pi
 M_PL = 1.2209e19
 PLAQ = CANONICAL_PLAQUETTE

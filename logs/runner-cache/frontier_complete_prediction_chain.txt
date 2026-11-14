@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_complete_prediction_chain.py
-runner_sha256: f4442c2ed3a58aa93ea00e12cb4aa60bff2d7f3218cddaec231aed9047311536
-timeout_sec: 300
+runner_sha256: ad2f7d08ad41aed6b9dfffb811f66b8fc689076fecb06cd788346cfd64871db5
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================

@@ -1,16 +1,17 @@
 # Hadron Lane 1 B2 Dynamical Screening Boundary
 
-**Type:** bounded_theorem
-**Review scope:** affected diagnostic consumer only. Supplied toy arithmetic, source-phrase checks, and stipulated gate bits do not independently establish a physical no-go or current audit authority.
+**Type:** open_gate
+**Review scope:** open bridge and source diagnostic. The runner's toy arithmetic, source-phrase checks and stipulated gate bits illustrate supplied examples and a checklist. They do not establish a physical no-go or current audit authority.
 
 **Date:** 2026-04-29
-**Status:** no-go / bounded-support boundary for the current B2 route; no
-`sqrt(sigma)` status upgrade and no hadron-mass claim.
+**Status:** open bridge. The current repo surface does not close the B2
+dynamical screening factor; no `sqrt(sigma)` status upgrade and no
+hadron-mass claim.
 **Loop:** `.claude/science/physics-loops/impact-campaign-20260429/`
 **Runner:** `scripts/frontier_hadron_lane1_b2_dynamical_screening_boundary.py`
 
 ```yaml
-actual_current_surface_status: no-go
+actual_current_surface_status: open-bridge
 conditional_surface_status: bounded-support
 hypothetical_axiom_status: null
 admitted_observation_status: null
@@ -34,15 +35,18 @@ The current bounded derivation uses the quenched Method-2 payload and a rough
 screening factor near `0.96`. This block asks whether the existing repo data
 can close that factor without a new dynamical calculation.
 
-## 2. Boundary Theorem
+## 2. Boundary Statement (diagnostic, not a theorem)
 
-**Theorem.** On the current repo surface, the pure-gauge beta=6.0 payload does
-not determine the `(B2)` dynamical screening factor.
+**Statement.** The repo surface as of 2026-04-29 contains no sea-fermion
+determinant data, so its pure-gauge beta=6.0 payload does not fix the `(B2)`
+dynamical screening factor. The rough factor `0.96` is an input, not a
+result of that payload.
 
-Equivalently, B2 cannot be closed by reusing the existing pure-gauge
-plaquette, Sommer-scale, Wilson-loop, or Creutz-ratio data alone.
+This records which inputs are missing. It is not a theorem that no
+framework derivation of the factor can exist: section 6 lists such a
+derivation as one way to supply the missing input.
 
-## 3. Proof
+## 3. Argument
 
 The current Method-2 string-tension payload has the form:
 
@@ -71,10 +75,11 @@ confinement note already marks that as qualitative: quantitative extraction
 requires large Wilson loops and volumes at least of order `16^4`. The existing
 runner also does not include the sea-fermion determinant.
 
-Therefore a family of factors, for example `0.90`, `0.94`, `0.96`, and `1.00`,
-leaves the same pure-gauge payload unchanged while producing different
-`sqrt(sigma)` readouts. Pure-gauge data alone cannot select one member of that
-family.
+The runner's family of factors, `0.90`, `0.94`, `0.96` and `1.00`, is a
+supplied example: the payload numbers above do not involve the factor, so
+they do not pick one member of the family, while the `sqrt(sigma)` readouts
+differ. The example shows what the payload lacks. It does not exhaust the
+ways the factor could be fixed.
 
 ## 4. Runner Witness
 
@@ -87,6 +92,12 @@ The runner checks:
 - the current `L=4` pure-gauge runner is not a large-volume dynamical
   extraction;
 - the status firewall blocks a stronger branch-local status.
+
+The screening factors, the toy determinant bank and the sea masses are chosen
+numbers. The four missing-input items in the status firewall (Part 5 of the
+runner) are stipulated booleans: a checklist of what the surface lacks, not
+computed facts. The text checks confirm phrases in the cited notes. None of
+these checks is an exhaustive physical obstruction.
 
 Checks:
 
@@ -101,21 +112,24 @@ Expected runner result:
 SUMMARY: PASS=21 FAIL=0
 ```
 
-## 5. What This Closes
+## 5. What This Records
 
-This closes a narrow false route:
+This records that one narrow implication is unsupported on the current
+surface:
 
 ```text
 current pure-gauge beta=6.0 data + rough factor 0.96
   => closed B2 dynamical screening budget
 ```
 
-That implication fails. The current artifacts support only the bounded
-`sqrt(sigma)` readout and the exact identification of what is missing.
+The factor `0.96` is supplied, not derived from the pure-gauge data. The
+current artifacts support only the bounded `sqrt(sigma)` readout and a list
+of what is missing.
 
 ## 6. What Remains Open
 
-B2 can reopen only through one of these paths:
+Paths that would supply the missing input include the following; the list is
+not exhaustive:
 
 - a genuine `N_f=2+1` beta=6.0 determinant ensemble with controlled sea masses
   and large-volume Creutz ratios;
@@ -128,6 +142,6 @@ The note makes no pion, proton, neutron, spectroscopy, or form-factor claim.
 
 ## 7. Next Route
 
-This is the second consecutive local no-go/boundary block in the campaign.
+This was the second consecutive local boundary block in the campaign.
 Per the long-running policy, the next science selection should force a stretch
 attempt from minimal premises before more audit-only cycles.

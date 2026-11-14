@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/no_vacuum_of_family_blind_rules_tested_gives_three_hierarchical_families_with_a_t_odd_phase_2026_10_24.py
+runner_sha256: 9100b9a5569faa2e36ec42ebcf71f47304d6073a7f37b095d8011b19157e6b23
+input_fingerprint_sha256: 1a849ec9fd9d257efa39592708eb6fa9b84a75be9d5f32e84952844139b2d638
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.23
+status: ok
+----- stdout -----
+PASS A0 triality: SU(3) singlets in adj x adj x 6 and adj x 6 (mass term from adjoint vacua): dims 0,0; 6x6 0, 6bar x 6 1
+PASS A1 Spin(10): singlets in 16x16 and 16x16bar: 0, 1 (scalar gauge-singlet family bilinear only light x mirror)
+PASS A2 Wick: <sum_{i<j} n_i n_j> = ((trG)^2 - trG^2)/2 on a site of a Slater state: max err 4.4e-16; exchange -trG^2/2 favours family polarisation (adjoint attractive)
+  B pattern sequence (label, g onset, deltas): [('U3', 0.0, (-0.0, 0.0, 0.0)), ('U1^3', 2.4, (-1.0, 0.0, 1.0))]
+PASS B1 finite Stoner threshold on the Dirac sea, far above a Gauss-law (alpha) coupling: g_c = 2.40 (bandwidth 1.73); alpha/g_c = 3.0e-03
+PASS B2 strong-coupling family-density vacuum is U(1)^3 at the vertex (1,0,-1): final ('U1^3', 2.4, (-1.0, 0.0, 1.0)); equally spaced (no hierarchy), real density (T-even), Lorentz-vector order
+PASS C1 det channel: every condensed minimum found of a convex symmetric cost - g*prod(sigma) has equal sigma: 118/150 condensed, 0 asymmetric; this fixes the singular values only, not U in M = sigma*U
+PASS C2 counterexample: M = diag(1,w,w^2) has unit singular values and det 1 like 1, both reach the global minimum -1 of sum sigma^4 - 4 prod sigma, yet a det-1 rotation exchanging two eigendirections moves M and M's SU(3) stabiliser is a torus: the cost does not determine U: global min -1.000000; |g M g^+ - M| = 2.4495 (sqrt6); stabiliser dim 2 vs 8 for 1
+PASS D1 tr U = 0 forces the equally spaced (Z3 character) spectrum: max gap error 3.8e-06: unique orbit, U(3) -> U(1)^3 if |trU|^2 coeff > 0 (sign unfixed)
+PASS D2 Z3 vacuum: T x P23 kept, equal singular values, commuting mass functions: no hierarchy (R3 FAIL), V = 1 and J = 0 (R2 FAIL)
+PASS D3 generalized-CP lemma with X = P23 (family-permuting antiunitary): max |det[Hu,Hd]|/norm^6 1.7e-17
+PASS E1 P-linear potentials (no tr(ABAB), (trAB)^2): the tested sets converged to aligned minima, [A,B] = 0 (Birkhoff: an aligned minimizer exists at fixed spectra; not every minimum need align, E1f): 18 bounded sets, max |[A,B]|/|A||B| 1.0e-05
+PASS E1f flat-orientation control: with every orientation-dependent coefficient zero the potential is flat in W at fixed nondegenerate spectra, so the nonaligned Fourier W ([A,B] != 0, J = 1/(6 sqrt3)) is as low as the aligned one; switching on tr(A^2 B^2) removes the flatness: |V(Fourier) - V(1)| flat 9e-16, control 0.09; J 0.0962; |[A,B]|/|A||B| 1.00
+  E2 wide: 55 bounded; misaligned 0.16; T-odd 0.00 (max 2.3e-09); 1+1+1 both 0.15
+  E2 k4-dominant: 24 bounded; misaligned 0.50; T-odd 0.00 (max 6.5e-08); 1+1+1 both 0.54
+PASS E2 full quartic: misaligned vacua need chosen couplings (dominant tr(ABAB) > 0), and every minimum found in these searches is T-even (exclusion over all quartic couplings not shown): J = 0 at every quartic minimum found (pre-run prediction of T-odd minima FAILED)
+PASS E3 Hermitian mass functions of adjoints: arg det in {0, pi}: max |Im det|/|det| 1.2e-13 (but A0: adjoints cannot enter a 16.16 mass term)
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

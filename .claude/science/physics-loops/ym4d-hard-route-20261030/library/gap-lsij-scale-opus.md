@@ -150,3 +150,22 @@ All 70 single-observable ratios (plaquettes 1/12, time-like plaquettes 1/6, 1x2 
 **Timing.** SU(2): 0.43 ms per sweep at L = 4 (N_t = 16), 16 ms at L = 12 (N_t = 22); measurement of two pairs plus the slab time series about 0.2 s per configuration at L = 12. U(1) about twice that. Peak memory below 0.2 GB.
 
 **Main batch, started 11:29Z** (one background job, sequential): SU(2) beta 2.3, L = 4, 6, 8, 10, 12 (central pair at K' = 10, extra pair at K = 6 for C4, 1200 configurations, 2 sweeps apart); U(1) beta 1.5, L = 4, 6, 8, 10, 12 (K' = 10, K = 6, 800 configurations); SU(2) beta 2.6, L = 4, 6, 8, 10, 12, 14 (K' = 12, K = 8, 1200 configurations); SU(2) beta 2.6, L = 16 (800 configurations). Thermalisation 300 sweeps from a cold start.
+
+### 5b. Interim (11:32Z), SU(2) beta 2.3, L = 4 and 6 (central pair K' = 10; 1200 configurations each)
+
+| L | S0e | S0o (winding, odd) | S1e | S1o | R_J^top | C4: same sector at K = 6 | E_wind plateau (tau 1-3) | floor 1/(2 beta E_wind) |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 0.1595 +- 0.0055 | 0.5665 +- 0.0172 | 0.1197 +- 0.0022 | 0.1016 +- 0.0011 | 0.567 (S0o) | 0.574 +- 0.020 | 0.333 +- 0.008 | 0.654 +- 0.015 |
+| 6 | 0.1504 +- 0.0049 | 0.1353 +- 0.0027 | 0.1342 +- 0.0022 | 0.0813 +- 0.0011 | 0.150 (S0e) | 0.173 +- 0.011 | 0.652 +- 0.021 | 0.333 +- 0.010 |
+
+C4 (central pair at K' = 10 against the pair at K = 6), all sectors: deviations +0.6, -0.3, +0.1, -1.6 (L = 4) and -1.9, +1.1, +0.3, +1.0 (L = 6) combined errors: PASS (all within 3).
+Reading (GUIDE). On the 4^3 box the largest ratio is in the winding (flux) sector, carried by the light torelon (E about 0.33, close to the recalled string-tension estimate 0.39). From L = 4 to L = 6 the torelon energy doubles and the winding ratio falls by a factor 4. At L = 6 the variational top (0.15) lies well below the floor (0.33): raw winding lines overlap poorly with the lightest flux state, so for flux states the floor of Lemma GAP-R is the stronger lower bound. Both are lower bounds on the true R_J; neither can show boundedness.
+
+## Section 6. What carries R_J on a finite box (ARGUED, with the PROVED floor of 4.2)
+
+**6.1 Three channels.** On a periodic box of side L the slow gauge-invariant modes of the two-slice law come in three kinds, and Lemma GAP-R ties each to an energy of the transfer matrix:
+- (F) Flux states ('t Hooft electric flux; the torelon, a flux tube wound once around the box). Centre-odd: winding lines. Energy E_flux(L): in a box larger than the deconfinement length, about sigma L - pi/(3L), growing with L; in a box below it, a tunnelling splitting between the ordered values of the spatial Polyakov loops, small. Floor 1/(2 beta E_flux).
+- (P) Flux pairs: two torelons with opposite winding, centre-even, energy about 2 E_flux. In the span through P^2, P^x P^w and the strip. They are the lightest centre-even states while 2 E_flux < m_G.
+- (G) Local glueball states, energy m_G at zero momentum (heavier at k != 0). In the span through the plaquette-type fields. Floor 1/(2 beta m_G).
+On the seed box (side >= 720) E_flux is about sigma times 720 (about 98 at beta 2.3, about 13 at beta 2.6, by the recalled string tensions), so (F) and (P) are irrelevant there and only (G) and other local modes remain. On the measured boxes (F) and (P) can dominate. So a measured R_J that falls with L because (F) gets heavy says nothing for the seed box; the seed-relevant numbers are the local sectors at the largest L, and the glueball floor.
+**6.2 Consequence for (LSI-J-seed) (PROVED given 4.2; same content as row 947 4.2).** On the seed box, R_J >= 1/(2 beta m_G) whenever m_G <= 1 (with m_G the lowest energy there). (LSI-J-seed)_a needs R_J <= 1/(2 beta K_a). So it needs m_G >= K_a. With recalled lattice values of the 0++ mass (m_G about 3.7 sqrt(sigma): about 1.37 at beta 2.3, about 0.49 at beta 2.6; recalled, not checked here; this run's plaquette correlators give a rough check in Section 7) this would rule out a <= 40 at beta 2.6 (K_40 = 0.716) and be marginal at a = 60 (K_60 = 0.490); at beta 2.3 it rules out nothing for a >= 30 (K_30 = 0.936 < 1.37). This last step rests on recalled masses: GUIDE, not PROVED.

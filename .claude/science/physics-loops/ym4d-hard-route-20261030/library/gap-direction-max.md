@@ -87,3 +87,78 @@ Forms added after the 912 consolidation, with the check verdict that binds each:
 - Reading rows 915, 928: no published supplier for either form (bounded searches).
 
 Step 1 is complete. Step 2 (overlap check) next.
+
+### Step 2 (2026-11-14T06:20Z): overlap check (rule 0a) for what this file attacks
+
+Named open lemmas already owned by a row; I do NOT attack them: (CUT-TYP), (LSI-weak), averaged
+(FORCE-COV) (row 930); (SEAM), (SEAM-L1), (XM) (row 929); (VAC-SUB), (VIR-log), (DEF_K) (rows 708,
+913, 934, running); (JOIN-TH) (rows 907-911); EXC, (DRESS) (rows 872-890); (KURT), (WALL)_40 (rows
+886-897); (S1), (SEED-DEC) (row 887); EXIT (rows 846-877); (UNIV-K) (rows 916-925); THERM-DI
+(rows 905, 923); (Z0)+(COUNT) (row 895).
+
+What this file states and attacks instead (Steps 4-6): a time-rate form of the full thermal free
+energy at ONE coupling, (RATE)/(ANOM), and a gap/entropy comparison for the vacuum slice chain.
+Greps at the pinned commit: `library/open-core.md` has 0 hits for "equation of state",
+"interaction measure", "log-Sobolev|LSI|hypercontract", "Nash", "FE-CONTRACT", "Massieu". FINISH
+has no row whose target is a rate in the time extent at fixed coupling. Nearest prior lane text,
+credited and not repeated:
+- `library/gap-phys-seed.md:195, 224` (Q4): the dimensionless thermal pressure pi(a) = a^4 p(1/a)
+  with a step form pi(2a) <= sigma(pi(a)); it notes that the non-strict form is the sign of the
+  interaction measure and that U(1) passes the non-strict form.
+- `library/gap-mid-max.md` (row 708): transport along the COUPLING, (VIR_K): the beta-derivative of
+  G = log(1 + S) against K t times its t-derivative; lines 184, 344 say that the continuum trace
+  anomaly "has no lattice form". Row 913 ranks that transport first; row 934 holds its stop.
+- `library/gap-brainstorm2-max.md:259` (G4): "(ES) is a low-temperature equation of state".
+- `library/gap-thermpin-check-astra.md:170-178`: X'' is the thermal variance of E.
+- Row 930's (LSI-weak) is a weak constant (C L_1/N) for the two-slice even law, used group-blind.
+Verdict: no row owns the time-rate form or the vacuum-chain comparison below. I proceed, and I
+keep off every lemma in the first list.
+
+### Step 3 (2026-11-14T06:25Z): the candidate forms against the fact tests
+
+Columns: U1 = "false for U(1) Coulomb (Gaussian model)"; FRZ = "false for frozen Q_8, 2T";
+CEIL = "none of its hypotheses is a statement the checked ceilings refute". A crux form must
+have YES in all three. "Stronger" means: implies the target half, no converse known.
+
+| # | Form (half) | U1 | FRZ | CEIL | Verdict |
+|---|---|---|---|---|---|
+| 1 | (GLUE-FP): S_ev(a; (24a)^3) <= 1/10 (glue; the consumer's own statement) | YES: log(1+S_ev) > 31 (929 A2) | YES: S_ev >= 1/2 (896 D6) | YES | passes; weakest for glue by definition |
+| 2 | (CORE): Q_0 <= 1/20 on (a, b, b, b), b >= 24a (flux; the consumer's own statement) | YES: p -> 1/2 (930 G2) | YES: p = 10/23, 30/61 (930 F1) | YES | passes; weakest for flux by definition |
+| 3 | signed theta-average of Delta <= psi_* (glue) | as 1 | as 1 | YES | passes; EQUIVALENT to 1 by (INS) |
+| 4 | (SEAM-L1), (SEAM) sup form (glue) | YES at every size (929) | YES | YES | pass; stronger than 1 (sup/average grows like a in U(1)) |
+| 5 | endpoint Delta_0 <= psi_* alone (glue) | NO for a > 4.8e4 (929 item 3) | - | - | FAILS U1; also not sufficient |
+| 6 | (Z0) + (COUNT) (glue, Lemma G5) | YES, at (Z0) (gap times a is scale-free and small); (COUNT) alone is passed by U(1) (ARGUED: a scale-free hot box has bounded free energy) | YES at (Z0) | YES | passes as a pair; (COUNT) alone is not selective; stronger than 1 |
+| 7 | Proposition Q hypothesis S_ev(2n)(1 + X(k)) <= (psi_*/9)^2 (glue) | YES | YES | YES | passes; far stronger than 1 |
+| 8 | (I1)-(I3) in local sup form (glue) | - | - | NO at 2.3 (worst-case local criteria) | not needed (929 Q1), capped |
+| 9 | (FR) alone (flux) | NO for boxes above about 420 (930) | NO: response 0 (930 F2) | YES | FAILS U1 and FRZ: not a crux |
+| 10 | p <= FR/(2 lambda_odd) (flux) | YES through lambda_odd | YES through the gap | YES | passes; stronger than 2; empty in U(1) at step (b) |
+| 11 | Theorem R inputs: (ODD-GAP)_s + (FORCE-COV)_s, sup form (flux) | YES | YES | NO: sup form false in U(1), not volume-free | FAILS CEIL in sup form |
+| 12 | Theorem R inputs with AVERAGED force covariance (flux) | YES | YES | YES | passes; stronger than 2 |
+| 13 | (CUT-TYP) + (LSI-weak) (flux, supplies (ODD-GAP)) | YES: no good environment | YES: gap 0 | YES (typical, not sup) | passes; stronger than 12 |
+| 14 | (KURT)_eta or (WALL)_40 with GLUE (flux) | only through GLUE: U(1) has kappa = 3/2 exactly in 2D and >= 3/2 by symmetry (checks 889, 897) | only through GLUE: Q_8 has kappa = 4 in 2D (check 897) | YES | the flux-side factor is NOT selective; all selectivity sits in GLUE at 160^(-16) |
+| 15 | (E17), HA, (C2), EXC, (DRESS), (S1) (flux) | YES | YES | HA: NO in background-uniform form (check 870); others YES | pass (HA only off the uniform form); all ask a rate or area law, stronger than 2 |
+| 16 | (VIR-log) / (VAC-SUB) transport along beta (both halves) | YES across the transition (708) | YES | YES | passes; a path statement, stronger than the seed at beta_1; owned by rows 913, 934 |
+| 17 | free-wall engine: (JOIN-TH) + seed on a cold box (both) | only through its seed | (JOIN-TH) is satisfied by frozen groups (910, ARGUED) | YES | the doubling factor is not selective; its seed is forms 1-2 again |
+| 18 | (SEED-Delta), (SEED-L), (CAS) (both; torus against pressure) | YES | YES | YES | pass; equivalent family to the seed (rows 697-708, 837) |
+| 19 | (ANOM), Step 4 below (both; one identity) | YES | YES | YES | passes; EQUIVALENT to the SH seed |
+
+Findings of the table (the answer to the row's question, part 1).
+
+- F1. A form passes all three tests only if it carries a spectral factor of the slice transfer
+  operator on the seed box: the even count (forms 1, 3, 4, 6, 7), the odd gap (10, 12, 13), or the
+  full trace (16, 18, 19). Every factor of response type fails a test or is not selective:
+  (FR) (9), the endpoint Delta_0 (5), sup force covariance (11), (COUNT) alone (6), the kurtosis
+  factor (14), the doubling factor (17).
+- F2. **The weakest form that passes all fact tests is the split seed itself**: (GLUE-FP) and
+  (CORE) on one box (forms 1, 2; Lemma SPLIT, rows 892, 893). No form on the table is strictly
+  weaker than these and still sufficient; every other passing form is equivalent (3, 18, 19) or
+  stronger. So the two U(1) tests do not single out a weaker target. They sort the forms.
+- F3. No form fails ALL tests for a structural reason that would close the route: the plain
+  statement "no form passes" is FALSE. But the passing forms carry no handle that the seed lacks.
+- F4. The halves differ in the STRENGTH of what they need (new reading, used in Step 4): the flux
+  half is the variance of ONE bounded odd function (p/(1 - p) = Var(R_t), |R_t| < 1), so a
+  Poincare-type (variance) contraction suffices and no count enters (930 Theorem R, V_1 <= 1).
+  The glue half is a trace: S_ev(a) is the mean over the starting slice of a chi-square distance
+  that is exp(extensive) after one step (Step 5, (5.3)). A per-step variance contraction then
+  needs a time of the order of the volume. So the glue half needs a contraction at the level of
+  entropy (a count), not of variance. This is the asymmetry behind "two U(1) carriers".

@@ -252,3 +252,7 @@ K3 failed at 23 percent, so the L = 16 values carry about 15 percent errors, not
   K3: hot 9.79 against the mean of the cold chains so far (17.04 + 9.36)/2 = 13.2: ratio 0.74, outside 15 percent; against seed 32
   alone, 5 percent. The seed-11 value is the high one.
 
+- z-twist pi/2: cold seed 33, L = 16: 8.12 +- 1.86 [6.13]; cold seed 32, L = 8: 7.88 +- 1.08 [4.79].
+  Colour 3 chains: L = 8: 9.63, 7.88; L = 16: 17.04 (seed 11), 9.79 (hot), 9.36, 8.12. K3 now: hot 9.79 against the cold mean 11.51:
+  ratio 0.85, at the 15 percent edge (passes by 0.1 percent). The pooled analysis is in Section 6.
+

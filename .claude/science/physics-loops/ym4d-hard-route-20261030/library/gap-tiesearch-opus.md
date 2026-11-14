@@ -215,3 +215,7 @@ errors of about 20 percent); all go to the sweep as planned in 4.3 and 4.5.
   and one at L = 8 (seed 32); pooled with the hot chain by the replica rule (error = max of propagated block error and chain spread).
   Numeric lock refreshed (6 h).
 
+**5.2 beta 2.3, raw log lines.**
+- L = 8 (3000 + 24000): u_xy 2.53 +- 0.15 (row 950: 2.51); z-twist pi/4 colour 3 2.36 +- 0.21 [2.20]; z-twist pi/2 colour 3 2.49 +- 0.25
+  [1.89]. Block errors 6 to 10 percent; the two chains of u_xy at L = 8 (screen 2.66 +- 0.20, this 2.53) agree.
+

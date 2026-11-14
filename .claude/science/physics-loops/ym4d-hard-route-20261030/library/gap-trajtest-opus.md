@@ -10,6 +10,7 @@ A run guides or refutes; it proves nothing.
 - 2026-11-14T16:53Z: file created with plan.
 - 17:04Z: Sections 1-3 written (criteria before any run); control C1 run; batch 1 (small boxes) started 17:04Z.
 - 17:24Z: batch 1 done (12 streams, 17:04-17:24Z); beta 2.3 and 2.6 small boxes analysed (4.4, 4.5). Batch 2 (L = 20) started about 17:25Z.
+- 17:28Z: batch 2 runs at 0.34 s per sweep and 1.8 s per measurement (peak RSS 0.7 GB): about 30 minutes per stream; first stream expected near 17:58Z.
 
 ## Plan (at most eight steps; one per response)
 1. Read row 970 section 7.3 ((LSI-traj-seed)_a, (EC-traj)), Proposition HC and X(2m+2; B) in gap-direction-max.md,

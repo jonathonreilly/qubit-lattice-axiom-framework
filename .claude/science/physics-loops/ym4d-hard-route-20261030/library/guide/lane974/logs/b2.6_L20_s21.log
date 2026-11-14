@@ -2,3 +2,7 @@ traj974 L=20 Nt=24 beta=2.6 ntherm=300 nmeas=1000 nsep=2 seed=21 ape=8,20 tag=b2
 [    0.3s] therm 0 plaq 0.44562
 [   34.2s] therm 100 plaq 0.66949
 [   67.7s] therm 200 plaq 0.66911
+[  103.1s rss 367MB] meas 0 plaq 0.67009
+[  193.1s rss 704MB] meas 50 plaq 0.66967
+[  283.3s rss 710MB] meas 100 plaq 0.67036
+[  370.8s rss 713MB] meas 150 plaq 0.67011

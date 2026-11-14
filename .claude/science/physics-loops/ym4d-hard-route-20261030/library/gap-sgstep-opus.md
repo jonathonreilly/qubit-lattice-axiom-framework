@@ -302,6 +302,18 @@ sigma^2 <= 1 + 9 beta. (SC-Omega) asks only for SOME box-free C_Omega, so it is 
   (Lemma CEN). A failure of (SG-step) needs a coexistence in GAUGE-INVARIANT data of the next slice at a slice u
   whose stabilizer does not average it out.
 
+**Identity EXP (the exact content of (SG-step); PROVED).** For u in M, a unit z in T_u M, real t, the geodesic
+u(s) = exp_u(s z), and h(s, w) := Hess_u log p(u(s), w)(u'(s), u'(s)):
+  E_(pi_u) e^(t phi_(u,z)) = E_(pi_(u(t))) exp( -I_t ),   I_t(w) := integral from 0 to t of (t - s) h(s, w) ds.
+Proof. Taylor along the geodesic: t phi_(u,z)(w) = log p(u(t), w) - log p(u, w) - I_t(w). Exponentiate, multiply by
+p(u, w), integrate in nu(dw). QED (For t < 0, I_t is the integral over [t, 0] of (s - t) h(s, w), again a positive
+weight.) So (SG-step)_sigma holds iff E_(pi_(u(t))) e^(-I_t) <= e^(sigma^2 t^2/2) for all u, unit z, t. Lemma HSS is the
+pointwise case h >= -H. By (4.1), -h(s, w) = Hess_M F(u(s))(u', u') + beta sum_l E_mu <u_l(s), (g.w)_l> |u'_l|^2
+- Var_mu(beta <u'(s), g.w>) with mu = mu_(u(s),w): the Hessian of F is compensated, in exponential mean under the endpoint
+law, by the variance of the gauge fluctuation of the score given w. At a central slice the compensation is exact
+(Lemma CEN). So the weakest exact form of the open input is an exponential-moment bound on
+Hess_M F - Var_mu along geodesics; (SC) is the case where Var_mu is simply dropped.
+
 **Where this leaves the target.** (SG-step) at a box-free sigma is reduced to (SC) (sufficient), and in temporal
 gauge (SC) is exact. Neither (SC) nor (SG-step) is proved for SU(2) at beta 2.3-2.6. The exact open inequality
 handed on is
@@ -364,3 +376,42 @@ Criteria (fixed now). G := lambda(10)/lambda(4) at u_pi, beta 2.3, T 6, cold sta
 Controls: u = 1 must give G <= 1.3 (else the method is suspect); hot and cold starts must agree within 15 percent
 (else "not equilibrated"); T = 4, 6, 8 at L = 6 must agree within 15 percent (else the truncation of Omega matters).
 Script `/tmp/gap-sgstep-944/scripts/slab_E.py`, log `/tmp/gap-sgstep-944/slab_E.log`; numeric lock, nice, one thread.
+
+## 7. Literature and credit (step 7)
+
+**Sussman-Alpoge account (READ at 31a47c543775; outline and CA-II fetched to `/tmp/gap-sgstep-944/sa/`).** Search of
+`library/sa-index/` (all chunks and `ca-full/index.tsv`) for sub-Gaussian, Hoeffding, Brascamp, log-concave,
+semiconcave, ground state, temporal gauge; row 940 searched hypercontract, log-Sobolev, Harnack, Hopf-Lax (none).
+Hits, all in the small-field Gaussian setting of their RG, none on a transfer chain:
+- SA GCB20-GCB21 (`gcb:linear-moment-domination`, `gcb:linear-subgaussian`, L27495-27529, proved in detail): for
+  their cutoff Gaussian law, even log-concave conditional weights and the sign symmetry Z -> -Z give
+  nu[e^(tL)] <= e^(t^2 v(L)^2/2) for every linear statistic L, v(L)^2 = l^T Gamma l (Gaussian domination).
+- CA-II Corollary 8.3:cor-subgaussian-tails (L81804-81850, PROVED; with Proposition 8.3:prop-lipschitz-stability,
+  L81162-81190): for a Hamiltonian H = (1/2)<y, A y> + <h, y> - P(y) on a bounded product of convex sets, coercive
+  with constant lambda, a linear observable F = <l, .> has nu_H(e^(s(F - nu_H F))) <= e^(s^2 |l|^2/(2 lambda)). Their proof
+  tilts the linear term (h -> h - s l stays in the class) and bounds the drift of the mean along the tilt by the
+  Lipschitz stability of the Gibbs mean.
+Credit: Lemma EF (iii) and (2.1) are this tilt argument (Ethan Sussman and Levent Alpoge, with Claude and Codex as
+authors of their text), moved to the slice chain, where the boundary slice enters exactly as a linear term
+beta <u, w'>. What does not transfer is their hypothesis: coercivity (convexity) or even log-concavity. The compact
+slice law at beta 2.3-2.6 has neither (Bakry-Emery for nu needs Hess log Omega <= 1, Section 4). Theorem SC replaces it
+by the one-sided Hessian bound (SC), which is a susceptibility bound, not a convexity bound. The transfer frame
+(outline (GL8), L2331) is theirs, as rows 931 and 940 record. The account has no slice-conditioned score bound and
+no bound on the Hessian of the log ground state.
+
+**Published results (RECALLED unless marked; credited, not used as unproved steps).**
+- Hoeffding, "Probability inequalities for sums of bounded random variables", J. Amer. Statist. Assoc. 58 (1963)
+  13-30: Hoeffding's lemma, rebuilt in Lemma HO (two lines). Azuma (1967) for the martingale remark of Section 3
+  (not used).
+- Herbst's argument (Davies-Simon 1984; Ledoux, "The concentration of measure phenomenon", AMS 2001): Lemma HSS is a
+  one-step variant (a lower Hessian bound on log p(., w) in place of a log-Sobolev inequality); proved in full above.
+- Brascamp and Lieb, J. Funct. Anal. 22 (1976) 366-389: log-concavity of ground states for convex potentials and
+  the variance inequality. Not used: the slice law is not log-concave. (SC) is the semiconcavity analogue of
+  their log-concavity, with a box-free constant in place of 0.
+- Dobrushin's uniqueness condition and concentration under it (Kulske, Comm. Math. Phys. 239 (2003) 29-51): the
+  small-beta route of Section 3. Not rebuilt, not on the chain.
+- Mack and Petkova (centre/SO(3) split), through check 870 S5 (READ): used only in the FT-CEIL test.
+- The identity E[score score^T] = -E[Hess log p] (Fisher information) is classical; Identity HV and (4.1) are its
+  exponential-family and gauge-averaged forms, proved above.
+Repo credit: the chain, (SG-step) and Theorem V/E are row 931 (Claude Fable 5.2); (E-to-HC), Lemma RD and Corollary
+HC2 are row 940 (Claude Opus 5.5), checked by check 942 (Codex gpt-6-astra).

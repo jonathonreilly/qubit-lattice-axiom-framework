@@ -443,26 +443,66 @@ so by (2.2) lambda_max(Hess F(u_pi)) = beta^2 lambda - beta c, c := E<u_l, w'_l>
 about non-central slices (Section 6.2), the supremum over all slices, boxes of side 24a, or (SG-step) itself (zero at
 these slices by Lemma CEN).
 
-### 6.2 GUIDE results, Haar-random slice (running; split-sample estimator)
+### 6.2 GUIDE results, Haar-random slice (final; run 08:04-08:11Z, lock released 08:11Z)
 
-## 8. Result (PROVISIONAL until Section 6.1 is final)
+A Haar-random slice has no symmetry, so the full covariance of the 9 L^3 numbers E_l^a (mean subtracted) is
+estimated. Split sample: the top eigenvector v_A of the first half's covariance, then lambda_split := v_A^T Cov_B v_A
+on the second half (unbiased along a direction chosen from independent data, hence a LOWER estimate of the top
+eigenvalue); lambda_A := the first half's top eigenvalue (inflated by sampling noise). Log `/tmp/gap-sgstep-944/slab_rand.log`.
+The criterion was fixed after this batch was launched but before its results were read: a box-growing direction would
+show as a growing lambda_split (a spike above the noise edge aligns v_A with it).
+
+| slice | L | d = 9 L^3 | lambda_A | lambda_split | per-component variance |
+|---|---|---|---|---|---|
+| u_pi (calibration) | 4 | 576 | 0.690 | 0.331 | 0.225 |
+| random (seed 11) | 4 | 576 | 0.685 | 0.380 | 0.208 |
+| random (seed 11) | 6 | 1944 | 1.217 | 0.328 | 0.206 |
+| random (seed 11) | 8 | 4608 | 1.921 | 0.326 | 0.206 |
+| random (seed 12) | 6 | 1944 | 1.124 | 0.324 | 0.207 |
+
+Calibration: at u_pi the exact top eigenvalue is 0.450 (Section 6.1); lambda_A = 0.690 is 0.450 times the
+Marchenko-Pastur factor (1 + (d/n)^(1/2))^2 = 1.54 for d/n = 576/10000, and lambda_split = 0.331 is below 0.450 (degenerate
+top eigenspace, noisy direction). For the random slice lambda_A grows with L at the noise rate (d/n = 0.06, 0.19, 0.46,
+plus autocorrelation), while lambda_split stays flat (0.38, 0.33, 0.33). Reading (GUIDE): no box-growing direction of the
+first-step electric covariance at a generic slice up to 8^3 at beta 2.3; the top eigenvalue is of order 0.3-0.5, like
+the central slices. Limits: one random slice (two seeds at L = 6), small boxes, a lower estimate; nothing about the
+supremum over slices.
+
+## 8. Result (step 8; final)
+
+Plan against what was done: steps 1-8 ran as planned. Step 4 became a reduction (Theorem SC, Lemma HSS, Identity EXP)
+plus a symmetry lemma (CEN), not a proof for SU(2). Step 6 ran two GUIDE batches under the lock. Started 06:47Z,
+ended 08:15Z; about $10.5 of a $25 budget; 17 responses.
 
 | Statement | Label |
 |---|---|
-| Lemma TG: projected score = conditional expectation of the linear statistic beta <z, w'> of the temporal-gauge next slice; sigma <= sigma~ | PROVED (hand, Claude, unchecked) |
-| Lemma EF: temporal-gauge one-step laws form an exponential family; its log-partition function on M is log Omega + V/2 + log lambda_0 | PROVED |
-| Identity HV: beta^2 Var(<z, w'>) = Hess_M(log Omega + V/2)(z, z) + beta sum_l E<u_l, w'_l> |z_l|^2 | PROVED |
-| Lemma HO (compactness + one-link bound): sigma(u, z)^2 <= beta^2 ||z||_1^2, = beta^2 N for spread z | PROVED |
-| Key question: a box-free sigma does NOT follow from compactness and the one-link bound; Example DW (reversible chain of the same form, Lemma RS) has sigma^2 >= 0.15 beta^2 N at beta 2.3 | PROVED |
-| Proposition CONS: constant renormalization of z leaves alpha/sigma^2 unchanged; the l1 route moves the factor N into the dual-norm LSI (product case); averaged (SG-step) does not enter Lemma RD | PROVED (product case and readings); Wilson extensive-variance step ARGUED |
+| Lemma TG: the projected score is the conditional expectation of the linear statistic beta <z, w'> of the temporal-gauge next slice; sigma <= sigma~ | PROVED (by hand, Claude, not yet checked) |
+| Lemma EF: the temporal-gauge one-step laws form an exponential family; on M its log-partition function is log Omega + V/2 + log lambda_0 | PROVED |
+| Identity HV (2.2): beta^2 Var(<z, w'>) = Hess_M(log Omega + V/2)(z, z) + beta sum_l E<u_l, w'_l> |z_l|^2 | PROVED |
+| Lemma HO (compactness + one-link bound): sigma(u, z)^2 <= beta^2 ||z||_1^2, which is beta^2 N for a spread unit z | PROVED |
+| **Key question: a box-free sigma does NOT follow from compactness and the one-link bound.** Example DW (a reversible slice chain of the same form, Lemma RS) has sigma^2 >= 0.15 beta^2 N at beta 2.3: Lemma HO is sharp up to a constant | PROVED |
+| Proposition CONS: a constant renormalization of z leaves alpha/sigma^2 unchanged; the l1 route moves N into a dual-norm LSI (product case); the averaged form does not enter Lemma RD | PROVED (product case; readings); extensive action variance for Wilson ARGUED |
 | Lemma HSS: Hess_u log p(u, w) >= -H for all u, w gives (SG-step) with sigma^2 = H | PROVED |
 | Theorem SC: (SC) Hess_M(log Omega + V/2) <= C_F gives (SG-step) with sigma^2 = C_F + beta; (SC-Omega) Hess log Omega <= C_Omega gives sigma^2 = C_Omega + 9 beta | PROVED (implication) |
-| In temporal gauge (SC) is exact: C_F - beta <= sup_u sigma~(u)^2 <= C_F + beta; (SC) = box-free first-step electric susceptibility, uniform in the boundary slice | PROVED |
-| Identity EXP: E_(pi_u) e^(t phi) = E_(pi_(u(t))) e^(-I_t) (exact content of (SG-step)) | PROVED |
-| Lemma CEN: at every central slice (all links +-1) the projected score vanishes identically | PROVED (SU(2)-specific; fails for U(1)) |
-| Bakry-Emery for nu (row 941 Attack A) implies (SC-Omega) with C_Omega = 1, hence (SG-step) with sigma^2 <= 1 + 9 beta | PROVED (implication) |
-| Fact tests: photon sigma^2 = beta e^(-omega) exact (Lemma HSS sharp in flat space), (SG-step) implies no gap; U(1) structure verbatim; frozen groups outside the domain; SMALL-BOX and FT-CEIL no conflict | PROVED / ARGUED as marked in Section 5 |
-| (SC), (HS) or (SG-step) at a box-free sigma for SU(2) Wilson at beta 2.3-2.6 | OPEN |
-| GUIDE: no growth of the first-step susceptibility at the pi-flux slice from L = 4 to 6 | GUIDE (provisional) |
+| In temporal gauge (SC) is exact: C_F - beta <= sup_u sigma~(u)^2 <= C_F + beta. (SC) = a box-free first-step electric susceptibility, uniform in the boundary slice | PROVED |
+| Identity EXP: E_(pi_u) e^(t phi) = E_(pi_(u(t))) e^(-I_t), the exact content of (SG-step) | PROVED |
+| Lemma CEN: at every central slice (all links +-1) the projected score is identically 0 | PROVED (uses SU(2); not true for U(1)) |
+| Bakry-Emery for nu (row 941, Attack A) implies (SC-Omega) with C_Omega = 1, hence (SG-step) with sigma^2 <= 1 + 9 beta | PROVED (implication) |
+| Fact tests: photon sigma^2 = beta e^(-omega), Lemma HSS exact in flat space; (SG-step) implies no gap; U(1) structure verbatim; frozen groups outside the domain; SMALL-BOX and FT-CEIL no conflict | PROVED / ARGUED as marked in Section 5 |
+| Credit: the tilt argument of Lemma EF is CA-II Corollary 8.3:cor-subgaussian-tails (there under coercivity); SA GCB20-21 is the Gaussian-domination form | READ |
+| GUIDE: no box growth of the first-step electric susceptibility at the pi-flux and identity slices (L = 4-12, beta 2.3 and 2.6, all controls pass) nor at a Haar-random slice (L = 4-8, split sample) | GUIDE |
+| (SC), the projected forms (HS) and EXP, and (SG-step) itself at a box-free sigma for SU(2) Wilson on the seed box at beta 2.3-2.6 | **OPEN** |
 
-RESULT (provisional): see the final line below once Section 6.1 is complete.
+**What a next lane should take (ranked).** (1) (SC) on the one seed box: a box-free bound on the first-step electric
+susceptibility of the half-space Wilson measure, uniform in the boundary slice. It is a uniform decay-of-correlations
+(strong mixing) statement; Dobrushin reaches only small beta. (2) The kill test for (SC): non-central slices with a
+trivial stabilizer near a tie of two classical half-space extensions that differ on many links (the only mechanism
+found that makes the susceptibility grow); the GUIDE found no growth at the slices tried. (3) If (SC) fails at
+symmetric slices, use the projected forms (Lemma HSS, Identity EXP), where the gauge-fluctuation variance compensates.
+
+Limits. Proofs by hand, by Claude Opus 5.5 (max), checked by no other model (check = row 945). Rows 931, 940 and
+checks 938, 942 are READ, not re-checked. Published results are credited as RECALLED; only Hoeffding's lemma is used,
+and it is rebuilt. GUIDE scripts and logs are in `/tmp/gap-sgstep-944/` (not committed); they prove nothing.
+origin/main and the PR branches were not searched (not on this clone). Nothing here is a public claim.
+
+RESULT: Row 944 (Claude Opus 5.5 max, Mac mini; unchecked, check = row 945): (SG-step) for SU(2) Wilson on the seed box at beta 2.3-2.6 is NOT proved and stays OPEN. Key question answered: a box-free sigma does not follow from compactness and the one-link bound. Lemma HO gives only sigma^2 <= beta^2 ||z||_1^2 = beta^2 N for a spread z, and Example DW, a reversible slice chain of the same exponential-family form, attains sigma^2 >= 0.15 beta^2 N. Renormalizing z, the l1 norm or the averaged form do not repair this. PROVED: the projected score is a conditional expectation of the temporal-gauge first-step electric field (Lemma TG); its variance is the Hessian of log Omega + V/2 up to beta (Lemma EF, Identity HV); (SC) Hess(log Omega + V/2) <= C_F gives (SG-step) with sigma^2 = C_F + beta (Theorem SC, via Lemma HSS), and (SC) is exact in temporal gauge; Identity EXP; the score vanishes at central slices (Lemma CEN); Bakry-Emery for nu (row 941) implies (SG-step) with sigma^2 <= 1 + 9 beta. Fact tests pass: the photon gives sigma^2 = beta e^(-omega) exactly, and (SG-step) implies no gap. GUIDE: no box growth of the first-step electric susceptibility at the pi-flux, identity or Haar-random slices. OPEN: (SC), a box-free first-step electric susceptibility uniform in the boundary slice, or its projected forms (HS)/EXP, for SU(2) at beta 2.3-2.6.

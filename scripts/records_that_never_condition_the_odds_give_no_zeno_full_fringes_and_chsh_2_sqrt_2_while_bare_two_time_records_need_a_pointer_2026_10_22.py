@@ -111,6 +111,20 @@ def joint(P0, Ks, times):
     return out
 
 
+def flip_law(P0, Ks, fmax=3):
+    """exact law of the number of configuration changes along a track (last bin: fmax or more)"""
+    n = P0.size; W = np.zeros((n, fmax + 1)); W[:, 0] = P0
+    for K in Ks:
+        Wn = np.zeros_like(W)
+        for s in range(n):
+            for t in range(n):
+                if K[t, s] == 0: continue
+                if t == s: Wn[t] += K[t, s] * W[s]
+                else: Wn[t, 1:] += K[t, s] * W[s, :-1]; Wn[t, -1] += K[t, s] * W[s, -1]
+        W = Wn
+    return W.sum(0)
+
+
 def sample(P0, Ks, N):
     n = P0.size; c = rng.choice(n, N, p=P0 / P0.sum()); tr = [c]
     for K in Ks:
@@ -133,8 +147,17 @@ def section_A():
     check('A1 THEOREM: records never condition the odds, so the record law is Born at every half-tick: full transfer, no Zeno freezing',
           abs(rec - born).max() < 1e-12 and abs(emp - born).max() < 0.015,
           f'P(R) at t=20: records {rec[-1]:.6f}, sampled {emp[-1]:.3f}, Born {born[-1]:.3f}; if records conditioned the odds {zeno[-1]:.3f}')
-    check('A2 the fewest-change transport moves each actual track once (monotone transfer); the odds keep the superposition',
-          flips.max() == 1, f'flips per track: mean {flips.mean():.3f}, max {flips.max()}; |psi| = ({abs(psi[0]):.2e}, {abs(psi[1]):.3f})')
+    fl = flip_law(P[0], Ks)
+    check('A2 complete monotone transfer (P(R) rises from 0 to 1): the fewest-change transport moves each actual track exactly once '
+          '(exact flip-count law and sampled tracks); the odds keep the superposition',
+          flips.min() == 1 and flips.max() == 1 and fl[1] > 1 - 1e-12 and fl[2:].sum() < 1e-15,
+          f'exact P(0, 1, >=2 flips) = ({fl[0]:.1e}, {fl[1]:.6f}, {fl[2:].sum():.1e}); sampled flips per track: min {flips.min()}, '
+          f'mean {flips.mean():.3f}, max {flips.max()}; |psi| = ({abs(psi[0]):.2e}, {abs(psi[1]):.3f})')
+    _, Ph, Kh = run(psi0, [U] * (T // 2)); flh = flip_law(Ph[0], Kh)
+    check('A2b control: a monotone transfer that stops at P(R) = 1/2 (10 half-ticks) moves each track AT MOST once, but half the '
+          'tracks never move, so "exactly once" holds only with the endpoints 0 and 1',
+          abs(Ph[-1][1] - 0.5) < 1e-12 and abs(flh[0] - 0.5) < 1e-12 and abs(flh[1] - 0.5) < 1e-12 and flh[2:].sum() < 1e-15,
+          f'P(R) at the end {Ph[-1][1]:.6f}; exact P(0, 1, >=2 flips) = ({flh[0]:.6f}, {flh[1]:.6f}, {flh[2:].sum():.1e})')
 
 
 # ================================================================ B. interferometer
@@ -293,7 +316,7 @@ def section_D(S, ang):
     for k in range(6):
         a2 = {'A': tuple(rng.uniform(-np.pi / 2, np.pi / 2, 2)), 'B': tuple(rng.uniform(-np.pi / 2, np.pi / 2, 2))}
         devs.append(twotime(S, a2)[0])
-    check('D2 generic: random settings give the same dependence (not a tuned case)', min(devs) > 1e-3, f'TV {np.round(devs, 3).tolist()}')
+    check('D2 not a tuned case: each of six random setting draws gives a nonzero dependence (finite sample; size varies)', min(devs) > 1e-3, f'TV {np.round(devs, 3).tolist()}')
     a3 = {'A': ang['A'], 'B': ang['B']}
     S0 = bell_space(); COST = S0.cost
     d_seq, _ = twotime(S0, a3, split=False)
@@ -314,3 +337,4 @@ if __name__ == '__main__':
     print('supplied: registers (one fermion per mode set), splitter and rotation angles, the controlled phase standing for a '
           'link-mediated gate, coin-controlled rotations, pointer couplings, the half-tick schedule. forced: the transport.')
     print(f'TOTAL: PASS={NP[0]} FAIL={NP[1]}')
+    sys.exit(1 if NP[1] else 0)

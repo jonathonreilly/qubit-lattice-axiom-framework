@@ -222,14 +222,26 @@ def section_B():
                 M2 = np.zeros((8, 8)); M2[t, s] = x; dl2.append(abs(M2 - mat(J, 8)).max())
         res[mu] = (dims, dlp, dme, cont, dl2)
     d0, d3 = res[0.0][0], res[0.3][0]
-    check('B1 the max-stay plan is never unique: optimal-face dimension 10 at mu = 0 (no stays allowed), >= 1 at mu = 0.3',
-          min(d0) == 10 and max(d0) == 10 and min(d3) >= 1, f'mu=0: {min(d0)}..{max(d0)}; mu=0.3: {min(d3)}..{max(d3)} (60 states each)')
+    check('B1 for the 60 sampled random states at each mu, least cost alone does not give one plan: optimal-face dimension 10 at mu = 0 (no stays allowed), >= 1 at mu = 0.3 (finite sample, not every state; see B1b)',
+          min(d0) == 10 and max(d0) == 10 and min(d3) >= 1, f'mu=0: {min(d0)}..{max(d0)}; mu=0.3: {min(d3)}..{max(d3)} (60 sampled states each)')
+    # counterexample to "least cost never gives one plan": a basis state e_i has p_s = delta_si, so every row s != i of a
+    # feasible plan is zero and the target margins force J(i, t) = q_t = |U(t, i)|^2: one feasible plan, face dimension 0
+    bdim, berr, bsupp = [], 0.0, True
+    for mu in (0.0, 0.3):
+        U = Wmu(mu); s, t = edges(U); c = (s != t).astype(float)
+        for i in range(8):
+            p = np.eye(8)[i]; q = abs(U[:, i]) ** 2; bdim.append(face_dim(p, q, s, t, c)[0])
+            J = f5(p, q, s, t, c)[0]; berr = max(berr, abs(mat(J, 8) - np.outer(q, p)).max())
+            bsupp &= bool(np.all(abs(U[J[1], J[0]]) > TOL))
+    check('B1b counterexample (decisive control on B1): every basis state e_i has optimal-face dimension 0 and the unique plan J(i, t) = |U(t, i)|^2, '
+          'so "least cost never gives one plan" is false', max(bdim) == 0 and berr < 1e-12 and bsupp,
+          f'face dimensions over 8 basis states x mu = 0, 0.3: {min(bdim)}..{max(bdim)}; max |J - q e_i^T| {berr:.1e}; uses only nonzero elements {bsupp}')
     lpd = res[0.0][1] + res[0.3][1]
     check('B2 an LP vertex privileges labels: relabelling the configurations changes the plan', np.mean(np.array(lpd) > 1e-6) > 0.5,
           f'changed in {np.mean(np.array(lpd) > 1e-6):.2f} of cases, max {max(lpd):.3f}')
-    check('B3 max-entropy tie-break: one plan (strictly concave), relabelling-equivariant, continuous',
+    check('B3 max-entropy tie-break: one plan (strictly concave), relabelling-equivariant; finite-difference ratio under 1e-6 perturbations of the sampled states (a finite diagnostic, not a Lipschitz bound)',
           max(res[0.0][2] + res[0.3][2]) < 1e-12 and max(res[0.0][3] + res[0.3][3]) < 10,
-          f'relabel error {max(res[0.0][2] + res[0.3][2]):.1e}; max |dJ|/|dpsi| {max(res[0.0][3] + res[0.3][3]):.2f}')
+          f'relabel error {max(res[0.0][2] + res[0.3][2]):.1e}; max |dJ|/|dpsi| over 120 sampled states {max(res[0.0][3] + res[0.3][3]):.2f}')
     l2 = res[0.0][4] + res[0.3][4]
     check('B4 the least-squares tie-break is also unique and equivariant but gives a different plan', np.median(l2) > 1e-3, f'median |J_L2 - J_maxent| {np.median(l2):.3f}')
     # separability: two independent relays (product state, product half-tick)
@@ -483,3 +495,4 @@ if __name__ == '__main__':
         sec(); print(f'      [{time.time() - T0:.0f} s]')
     print('supplied: configuration space; cost (modes moved); max-entropy tie-break; the half-tick as the step; gates, coins, pulse; states.')
     print(f'\nTOTAL: PASS={PASS} FAIL={FAIL}')
+    sys.exit(1 if FAIL else 0)

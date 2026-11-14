@@ -18,12 +18,18 @@ Sections
   B  photons: emitter decay with every link site recorded (no Zeno), single
      photon interference and anticorrelation from link records, repeated
      link-number records (non-demolition) with a pointer for decoherence
-  C  mediated entanglement: an edge-register (or link) mediator recorded every
-     half-tick keeps the gravity-mediated phase (0.79 rad, concurrence 0.156);
-     the conditioning alternative makes the mediator definite and loses it
+  C  mediated entanglement in a calibrated toy: the oscillator coupling gm is
+     set from the target phase, gm = sqrt(dphi/(16 pi)), so the toy reproduces
+     |sin(dphi/2)| by construction (an imposed-phase check, not an independent
+     gravity prediction); recording the mediator every half-tick keeps that
+     entanglement, the conditioning alternative makes the mediator definite and
+     loses it
 Contrast throughout: the alternative where records condition the odds.
-Supplied: toy Hamiltonians, sizes, couplings, dt, seeds, tolerance 1e-12.
+Supplied: toy Hamiltonians, sizes, couplings, dt, seeds, tolerance 1e-12; the
+BMV inputs (1e-14 kg, 200 um, 250 um, 2.5 s) and the target-calibrated gm (C);
+the 1.60 ns hydrogen 2p lifetime, a0 and t_P as comparison inputs (B1).
 """
+import sys
 import time
 import numpy as np
 from scipy.linalg import expm
@@ -271,13 +277,12 @@ check(blocked == 0, "A7 [T+D]",
       f"blocked formations {blocked}/{T * len(range(0, K, 40)) * NQ}")
 # scoreboard of the candidate record rules on the same actual histories
 recs = {"i": M, "ii": list(range(NQ)), "iii": list(range(NQ))}  # (iii) = (ii): its clause never blocks (A7)
-law = {k: np.array([(B[cfg[:, t]][:, M]).mean(0) for t in range(T + 1)]) for k in recs}
-tie = all(np.array_equal(law["i"], law[k]) for k in recs)
-check(tie, "A10 [T+D]",
-      "candidates (i) exclusion, (ii) every site, (iii) every site unless a support would empty: on the same actual "
-      "histories the matter records are bit-identical and only the readable set differs; Born, Gauss (in the actual "
-      "configuration) and every odds-level prediction tie, because no record conditions the odds",
-      f"records per half-tick: (i) {len(recs['i'])}, (ii) {len(recs['ii'])}, (iii) {len(recs['iii'])}; matter record laws identical {tie}")
+# T3 is structural: walk() takes only the odds, the half-ticks and the cost, never a record set, so the three rules see
+# the same histories by construction. A comparison of those histories with themselves cannot fail, so it is not counted.
+print("STRUCTURAL (not counted) A10 [T]: record-set independence holds by construction: the transport (walk) takes "
+      "the odds, the half-ticks and the cost and no record set, so candidates (i), (ii) and (iii) record the same actual "
+      f"histories and differ only in the readable set; records per half-tick: (i) {len(recs['i'])}, (ii) {len(recs['ii'])}, "
+      f"(iii) {len(recs['iii'])}")
 # non-abelian gauge safety: colour-component records in a gauge-invariant state
 nm4 = 4
 
@@ -426,8 +431,8 @@ coin = sum(int(np.isin(c, iu)) * int(np.isin(c, il)) for c in cf.ravel())
 g2 = coin / max(1, cf.size)
 check(abs(armu - 0.5) < 0.04 and g2 == 0.0, "B3 [T+D]",
       "anticorrelation: each actual configuration holds the one photon on one link site, so arm records never "
-      "coincide (g2(0) = 0, measured single-photon g2 well below 1); a definite or classically mixed link gives "
-      "g2 >= 1 (definite-links)",
+      "coincide (g2(0) = 0 by construction of the one-photon configuration space; the computed part is P(arm u) = 1/2; "
+      "measured single-photon g2 well below 1); a definite or classically mixed link gives g2 >= 1 (definite-links)",
       f"P(arm u recorded) {armu:.3f}; arm coincidences {coin}/{cf.size}; g2(0) = {g2:.0f}")
 # repeated link-number records: non-demolition repeatability; decoherence only from a pointer in the odds
 nmax = 4
@@ -502,11 +507,29 @@ for kk in range(200):
 Cc = float(np.mean(Ccs))
 check(abs(pin - 0.79) < 0.01 and abs(Ct - 0.156) < 0.001 and abs(Cf - Ct) < 2e-3 and pmid > 1e-3 and Cc < Ct / 5,
       "C1 [T+D+E]",
-      "a mediator register (edge for gravity, link for a Coulomb gate) recorded every half-tick: it stays indefinite "
-      "mid-run, returns, and the masses end with the predicted entanglement; conditioning pins it and loses it",
-      f"inner phase {pin:.3f} rad, dphi {dphi:.3f}, target C {Ct:.4f}; toy C {Cf:.4f} (return {back:.6f}, mid-run "
-      f"P(n>0) {pmid:.4f}); conditioned C {Cc:.4f}")
+      "a mediator register (edge for gravity, link for a Coulomb gate) recorded every half-tick in a CALIBRATED toy "
+      "(coupling gm = sqrt(dphi/(16 pi)) set from the target phase, so toy C = |sin(dphi/2)| by construction; not an "
+      "independent gravity prediction): it stays indefinite mid-run, returns, and the qubits end with the imposed-phase "
+      "entanglement; conditioning pins it and loses it",
+      f"inner phase {pin:.3f} rad, dphi {dphi:.3f}, target C {Ct:.4f}; gm {gm:.5f} calibrated; toy C {Cf:.4f} (return "
+      f"{back:.6f}, mid-run P(n>0) {pmid:.4f}); conditioned C {Cc:.4f}")
+# calibration disclosure: completing the square in H = a^+a + gm (zA + zB)(a + a^+) gives the branch phase
+# 2 pi gm^2 (zA + zB)^2 per period and concurrence |sin(8 pi gm^2)|; the toy follows whatever gm is put in
+gm2 = 1.25 * gm
+Hm2 = w0 * np.kron(np.kron(I2, I2), am.T @ am) + gm2 * np.kron(np.kron(Z, I2) + np.kron(I2, Z), am + am.T)
+v2 = expm(-1j * 2 * np.pi / w0 * Hm2) @ v0
+back2 = np.sum(abs(v2.reshape(4, dm)[:, 0]) ** 2)
+Cf2 = conc(v2.reshape(4, dm)[:, 0] / np.sqrt(back2))
+check(abs(16 * np.pi * gm ** 2 - dphi) < 1e-12 and abs(Cf2 - abs(np.sin(8 * np.pi * gm2 ** 2))) < 2e-3
+      and abs(Cf2 - Ct) > 0.05, "C1b [T+D]",
+      "calibration control: the toy concurrence is |sin(8 pi gm^2)| for the gm put in; with gm' = 1.25 gm (not "
+      "calibrated) it follows gm' and misses the BMV target, so the C1 agreement is imposed by the calibration",
+      f"16 pi gm^2 - dphi = {16 * np.pi * gm ** 2 - dphi:.1e}; gm' {gm2:.5f}: toy C {Cf2:.4f} vs |sin(8 pi gm'^2)| "
+      f"{abs(np.sin(8 * np.pi * gm2 ** 2)):.4f} vs target {Ct:.4f}")
 print("supplied: link ring w=1, m=0.5, dt 0.35 (A); chain g=0.3, J=1; MZ layout; probe phase pi/2 (B); "
-      "oscillator mediator, 200 half-ticks per period, d=14 (C); seed 20261022")
+      "oscillator mediator, 200 half-ticks per period, d=14, coupling gm = sqrt(dphi/(16 pi)) CALIBRATED from the "
+      "target phase (C); comparison inputs: BMV 1e-14 kg, 200 um, 250 um, 2.5 s; hydrogen 2p 1.60 ns, a0, t_P; "
+      "seed 20261022")
 print(f"runtime {time.time() - T0:.1f} s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+sys.exit(1 if NF else 0)

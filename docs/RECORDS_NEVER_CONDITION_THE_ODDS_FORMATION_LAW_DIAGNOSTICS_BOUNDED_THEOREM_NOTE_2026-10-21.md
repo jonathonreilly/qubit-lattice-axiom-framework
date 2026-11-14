@@ -1,7 +1,7 @@
 ---
 claim_id: records_never_condition_the_odds_formation_law_diagnostics_bounded_theorem_note_2026-10-21
 claim_type: bounded_theorem
-claim_scope: "Finite diagnostics on supplied lossless 1D walks and few-qubit couplings of the candidate formation law that records never condition the odds, with relays following the joint odds by minimal switching: Born statistics, kept drift, agreeing pointer readings, no signalling of outcome marginals, CHSH above 2, kept interference and undisturbed free crossing, against four conditioning alternatives, plus one failure of the turn deposit under a remote basis choice; no physical identification, measurement theory or adoption of the law is established."
+claim_scope: "Finite diagnostics on supplied lossless 1D walks and few-qubit couplings of the candidate formation law that records never condition the odds, with relays following the joint odds by minimal switching (for the drifting single-walker packet, also by redraws from each block's conditional direction odds at rate min(1, 2|E|), which keep the Born marginal and are disclosed and controlled in the note): Born statistics, kept drift, agreeing pointer readings, no signalling of outcome marginals, CHSH above 2, kept interference and undisturbed free crossing, against four conditioning alternatives, plus one failure of the turn deposit under a remote basis choice; the law is a supplied candidate with zero premise weight; no physical identification, measurement theory or adoption of the law is established."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -13,9 +13,13 @@ runner: scripts/records_never_condition_the_odds_formation_law_diagnostics_2026_
 Claim type: bounded_theorem.
 Primary runner: `scripts/records_never_condition_the_odds_formation_law_diagnostics_2026_10_21.py`.
 
-The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight, and no law there says when a new fact forms from the odds. This note tests the candidate that records never condition the odds: the odds evolve losslessly and relays follow them by minimal switching on the joint configuration. Four conditioning alternatives serve as controls. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose none of the models used.
+The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight, and no law there says when a new fact forms from the odds. This note tests the candidate, with zero premise weight and not adopted, that records never condition the odds: the odds evolve losslessly and relays follow them by minimal switching on the joint configuration. Four conditioning alternatives serve as controls.
+
+The rules used are defined here and in the runner; none is a clause of that register. Minimal switching (CL-6 in the source branch's numbering, `switch` in the runner): a relay whose direction's odds fall at its block switches, with probability equal to the fractional fall, to a direction whose odds rise there, chosen in proportion to the rises. The relay energy (CL-5 there, `energy`): the odds-weighted phase advance at a block over one tick. The turn deposit (CL-7 there): -1 in the record source per 1D turn. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose none of the models used.
 
 ## One walker
+
+Update rule tested in this section. The runner's single-walker calls use `relay_walk(..., fresh=True)`. After minimal switching and the shift, each relay is redrawn, with probability r = min(1, 2|E_x|) at its block x, from that block's conditional direction odds, and the exact flow image gets the same mixture. If the relays are distributed as the odds, a redraw from the conditional odds leaves them so distributed, so these redraws keep the Born marginal; they are a second supplied update, not minimal switching. For the one-site start (A1, A2) the odds sit on alternating sublattices, E_x = 0 at every block and no redraw fires (G1), so those results are minimal switching alone. For the drifting packet (A3, A4) redraws fire at an odds-weighted mean rate of 0.450 per relay-tick. There the exact flow image keeps the odds with and without the redraws (G2); redraws from a uniform direction law break it (G3, max error 0.019); and with the redraws disabled the relays still carry the drift (G4: 352.07 against 351.52 sites, a new sample).
 
 The flow image of the odds equals the odds after 100 ticks to 4.3e-16, and sampled relays match the Born histogram with chi2/dof 1.412 over 76 bins. The Born spread is 54.1 sites, ballistic, against about 10 for a classical walk. The unconditioned odds keep the drift (shift over v T = 0.9845 at v = 0.8926), and relays carry it (351.79 against 351.52 sites). Conditioning on the record every tick keeps a drift ratio of only 0.111, and conditioning at a rate twice the energy (0.447 per tick) keeps 0.466 by T = 400.
 
@@ -29,4 +33,4 @@ B's position and direction odds are independent of A's basis at every tick, to 5
 
 ## Scope
 
-Supplied: the walks, coins, couplings, protocols and the four conditioning alternatives. No physical identification, measurement theory or adoption of the law is established, and the turn-deposit failure is recorded, not repaired.
+Supplied: the walks, coins, couplings, protocols, the conditional redraws of the single-walker section and the four conditioning alternatives. The runner ends with `TOTAL: PASS=25 FAIL=0` and exits nonzero on any failed check. No physical identification, measurement theory or adoption of the law is established, and the turn-deposit failure is recorded, not repaired.

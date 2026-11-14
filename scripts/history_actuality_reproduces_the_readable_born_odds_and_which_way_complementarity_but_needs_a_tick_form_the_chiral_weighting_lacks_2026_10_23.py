@@ -58,7 +58,7 @@ hist = [(a, b) for a in range(NM) for b in range(NM)]
 D2 = dfun([Pm(b) @ U @ Pm(a) @ psi1 for a, b in hist])
 dg = np.diag(D2).real.reshape(NM, NM)
 add_err = np.abs(dg.sum(0) - p2).max()
-check("A2 unrecorded two-time mode partition does NOT decohere; D(a,a) not additive (prediction)",
+check("A2 the unrecorded fine two-time mode partition of this walk and sampled state does NOT decohere; D(a,a) not additive (prediction)",
       offdiag(D2) > 1e-2 and add_err > 1e-2, f"max offdiag {offdiag(D2):.3f}, marginal error {add_err:.3f}")
 
 def transport(pa, pb, Ustep, eps=0.01, ncost=None):
@@ -172,8 +172,8 @@ De = dfun([PA(o) @ Uer @ PA(a) @ s1 for a in (0, 1) for o in (0, 1)])
 Dt1 = dfun([PB(b) @ ctrl(Ry(np.pi)) @ PA(a) @ s1 for a in (0, 1) for b in (0, 1)])
 Dsa = dfun([PA(o) @ np.kron(Hd, I2) @ ctrl(Ry(-np.pi)) @ PB(b) @ ctrl(Ry(np.pi)) @ PA(a) @ s1
             for a in (0, 1) for b in (0, 1) for o in (0, 1)])
-check("C2 erasure: {path t1, pointer t1'} decoheres if the history ends at t1', but after a coherent un-copy no set "
-      "holding path t1 or pointer t1' decoheres (|D| = 1/4): record status is fixed by the whole history",
+check("C2 erasure: {path t1, pointer t1'} decoheres if the history ends at t1'; after a coherent un-copy the specified "
+      "refinements with a final port projection, {path t1, port t2} and {path t1, pointer t1' (Z), port t2}, do not decohere (|D| = 1/4)",
       offdiag(Dt1) < 1e-15 and abs(abs(De[0, 2]) - 0.25) < 1e-12 and abs(offdiag(Dsa) - 0.25) < 1e-12,
       f"|D_LR| after erase {abs(De[0, 2]):.3f}; with pointer cut {offdiag(Dsa):.3f}")
 def PBb(b, basis):
@@ -184,9 +184,27 @@ for basis in ("Z", "X"):
                for b in (0, 1) for o in (0, 1)])
     res[basis] = offdiag(Dm)
 po = abs((Uer @ s1)[0]) ** 2 + abs((Uer @ s1)[1]) ** 2
-check("C3 eraser: pointer cut in Z or X at t1' both fail (prediction 1/4 each); the maximal decohering set is "
-      "{port} with the fringe restored (P(port 0) = 1); no selector needed", abs(res["Z"] - 0.25) < 1e-12
+check("C3 eraser: the refinement {pointer t1', port t2} with the pointer cut in Z or X at t1' fails (prediction 1/4 each); "
+      "the port-only set shows the fringe restored (P(port 0) = 1)", abs(res["Z"] - 0.25) < 1e-12
       and abs(res["X"] - 0.25) < 1e-12 and abs(po - 1) < 1e-12, f"Z {res['Z']:.3f}, X {res['X']:.3f}, P(o=0) {po:.3f}")
+# common-unitary invariance: D(a,b) = Tr(V C_a rho C_b^+ V^+) = Tr(C_a rho C_b^+) for one unitary V appended to every
+# class operator, so a coarser set extended by unitary evolution alone keeps its whole decoherence matrix
+Dpath = dfun([PA(a) @ s1 for a in (0, 1)]); DpathE = dfun([Uer @ PA(a) @ s1 for a in (0, 1)])
+Vtail = np.kron(Hd, I2) @ ctrl(Ry(-np.pi))                            # the un-copy and final splitter, no projection
+DppE = dfun([Vtail @ PB(b) @ ctrl(Ry(np.pi)) @ PA(a) @ s1 for a in (0, 1) for b in (0, 1)])
+DppT = dfun([PB(b) @ ctrl(Ry(np.pi)) @ PA(a) @ s1 for a in (0, 1) for b in (0, 1)])
+check("C2b counterexample (decisive control on C2/C3): after the coherent un-copy the coarser path-only single-time partition "
+      "still decoheres, with the same full decoherence matrix as at t1, and {path t1, pointer t1'} extended by the un-copy "
+      "without a further projection keeps its matrix; only the port refinement (C2) fails, so the record is not lost in every set",
+      abs(DpathE - Dpath).max() < 1e-15 and offdiag(DpathE) < 1e-15 and abs(DppE - DppT).max() < 1e-15
+      and offdiag(DppE) < 1e-15 and abs(abs(De[0, 2]) - 0.25) < 1e-12,
+      f"path-only: |D_after - D_t1| {abs(DpathE - Dpath).max():.1e}, offdiag {offdiag(DpathE):.1e}; path/pointer extended: "
+      f"|dD| {abs(DppE - DppT).max():.1e}; port refinement offdiag {abs(De[0, 2]):.2f}")
+Xa = np.kron(np.array([[0, 1], [1, 0]]), I2)
+Dcls = dfun([PA(0) @ s1, Xa @ PA(1) @ s1])                             # class-dependent operator: not a common unitary
+check("C2c control: a class-dependent operator (identity on class 0, X on the path qubit for class 1) is not a common "
+      "unitary and breaks the identity of C2b (|D(0,1)| = 1/2)", abs(abs(Dcls[0, 1]) - 0.5) < 1e-12,
+      f"|D(0,1)| {abs(Dcls[0, 1]):.3f}")
 # two-boundary decoherence functional D = Tr(rho_f C_a rho_i C_b^+)
 CX = ctrl(np.array([[0, 1], [1, 0]]))
 def two_state(rho_i, rho_f, early, late):
@@ -344,3 +362,4 @@ print("Supplied: decoherence-functional rule (Gell-Mann-Hartle/Griffiths), coin 
       "3-4-5-0 content, WB phase convention (Narayanan-Neuberger), Elby-Bub uniqueness. Toys only.")
 print(f"elapsed {time.time() - T0:.1f}s, peak RSS {resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 2**20:.0f} MB")
 print(f"TOTAL: PASS={P} FAIL={F}")
+raise SystemExit(1 if F else 0)

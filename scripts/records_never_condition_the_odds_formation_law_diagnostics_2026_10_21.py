@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 """Supplied lossless walks with relays: candidate formation law 'records never condition the odds'.
 Relays follow the odds by the CL-6 minimal switching flow on the joint configuration of all relays;
-the odds are never conditioned on a record. Checks, in supplied 1D walks and few-qubit couplings:
+the odds are never conditioned on a record. In the single-walker section A (A1 to A4) each tick ALSO redraws
+each relay's direction, with probability r = min(1, 2|E_x|) at its block x (E_x the CL-5 relay energy, the
+odds-weighted phase advance at that block), from the block's conditional direction odds (relay_walk fresh=True);
+section G shows the redraws never fire for the A1/A2 walker, that the exact flow image keeps the odds with and without
+them for the A3/A4 packet, that a uniform redraw breaks it, and reruns A4 with them disabled.
+CL-5, CL-6 and CL-7 are the source branch's numbering (relay energy, minimal switching, turn deposit), not clauses of
+docs/CANDIDATE_LAWS.md. Checks, in supplied 1D walks and few-qubit couplings:
 exact equivariance and sampled Born statistics; ballistic drift kept (versus conditioning every tick and
 conditioning at a rate twice the energy); definite agreeing outcomes for an ideal pointer coupling
 (versus marginal-only switching); no signalling of outcome marginals and CHSH above 2 for a singlet;
@@ -87,7 +93,8 @@ def energy(psi_old, psi_new):
 
 
 def relay_walk(psi, th, T, M, fresh=True):
-    """odds evolve unconditioned; M relays follow by CL-6 switching (+ fresh draws w.p. 2 eps)."""
+    """odds evolve unconditioned; M relays follow by CL-6 switching; with fresh=True each relay is then redrawn,
+    w.p. r = min(1, 2|E_x|) at its block x, from the block's conditional direction odds (Q gets the same mixture)."""
     N = psi.shape[0]; P = abs(psi) ** 2
     idx = rng.choice(2 * N, M, p=(P / P.sum()).ravel()); x, d = idx // 2, idx % 2
     Q = P.copy(); xs = [x.mean()]
@@ -110,7 +117,7 @@ def section_born_and_drift():
     psi = np.zeros((N, 2), complex); psi[120] = [1 / np.sqrt(2), 1j / np.sqrt(2)]
     psi, x, d, Q, _ = relay_walk(psi, np.pi / 4, T, M)
     P = abs(psi) ** 2
-    check('A1 exact equivariance: flow image of the odds is the odds after 100 ticks', abs(Q - P).max() < 1e-12, f'max|Q-P|={abs(Q-P).max():.1e}')
+    check('A1 exact equivariance (minimal switching plus conditional redraws at rate min(1, 2|E|), see G): flow image of the odds is the odds after 100 ticks', abs(Q - P).max() < 1e-12, f'max|Q-P|={abs(Q-P).max():.1e}')
     px = P.sum(1); h = np.bincount(x, minlength=N); e = M * px; keep = e >= 5
     chi = ((h[keep] - e[keep]) ** 2 / e[keep]).sum() / (keep.sum() - 1)
     sq = np.sqrt((px * (np.arange(N) - 120) ** 2).sum())
@@ -328,6 +335,41 @@ def section_meeting():
     check('F2 (ii) meeting-conditioning disturbs non-interacting walkers', tv_ii > 0.05, f'met fraction {met.mean():.2f}, TV={tv_ii:.3f}')
 
 
+def flow_only(psi, th, T, redraw):
+    """exact flow image Q of the odds for the section-A walker (no sampling): minimal switching, then optional
+    redraws at rate r = min(1, 2|E_x|) from the block's conditional direction odds ('cond') or from a uniform direction
+    law ('uniform', a perturbed rule); returns max|Q - P| at the end and the odds-weighted mean redraw rate."""
+    P = abs(psi) ** 2; Q = P.copy(); rates = []
+    for _ in range(T):
+        P = abs(psi) ** 2; pc = coin(psi, th); Pc = abs(pc) ** 2; Q = shift(flow_occupation(Q, P, Pc)); new = shift(pc)
+        Pn = abs(new) ** 2; r = np.clip(2 * abs(energy(psi, new)), 0, 1); rates.append((Pn.sum(1) * r).sum())
+        if redraw:
+            law = Pn / np.maximum(Pn.sum(1, keepdims=True), 1e-300) if redraw == 'cond' else np.full_like(Pn, 0.5)
+            Q = (1 - r[:, None]) * Q + r[:, None] * Q.sum(1, keepdims=True) * law
+        psi = new
+    return abs(Q - abs(psi) ** 2).max(), float(np.mean(rates))
+
+
+def section_redraws():
+    print('G. the redraw rule used in section A (relay_walk fresh=True)')
+    N, T = 241, 100
+    psi = np.zeros((N, 2), complex); psi[120] = [1 / np.sqrt(2), 1j / np.sqrt(2)]
+    e1, rate1 = flow_only(psi.copy(), np.pi / 4, T, 'cond')
+    check('G1 A1/A2 walker (one site start, theta = pi/4): the odds sit on alternating sublattices, so E_x = 0 at every block and no redraw ever fires; A1/A2 test minimal switching alone',
+          rate1 == 0.0 and e1 < 1e-12, f'odds-weighted mean redraw rate {rate1:.1e} per relay-tick; max|Q-P| {e1:.1e}')
+    N, T, M, th, k0 = 800, 400, 5000, 0.1, 0.2
+    psi0 = band_packet(N, th, k0, 150, 15.0); xx = np.arange(N)
+    e_none, rate = flow_only(psi0.copy(), th, T, None); e_cond, _ = flow_only(psi0.copy(), th, T, 'cond'); e_unif, _ = flow_only(psi0.copy(), th, T, 'uniform')
+    check('G2 A3/A4 packet (theta = 0.1, k0 = 0.2): redraws fire, and the exact flow image is the odds with them and without them (minimal switching alone)',
+          rate > 1e-3 and e_none < 1e-12 and e_cond < 1e-12, f'odds-weighted mean redraw rate {rate:.3f} per relay-tick; max|Q-P| no redraws {e_none:.1e}, conditional redraws {e_cond:.1e}')
+    check('G3 control: redraws from a uniform direction law instead of the conditional odds break it (the redraw keeps Born only because it draws from the conditional odds)',
+          e_unif > 1e-3, f'max|Q-P| uniform redraws {e_unif:.3f}')
+    psi, x, d, _, xs = relay_walk(psi0.copy(), th, T, M, fresh=False)
+    disp_exact = ((abs(psi) ** 2).sum(1) * xx).sum() - ((abs(psi0) ** 2).sum(1) * xx).sum(); se = x.std() / np.sqrt(M)
+    check('G4 A4 rerun with the redraws disabled: relays moved by minimal switching alone carry the same drift', abs(xs[-1] - xs[0] - disp_exact) < 4 * se + 0.5,
+          f'relay {xs[-1] - xs[0]:.2f} vs odds {disp_exact:.2f} sites (new sample)')
+
+
 if __name__ == '__main__':
     section_born_and_drift()
     section_pointers()
@@ -335,4 +377,6 @@ if __name__ == '__main__':
     section_turn_signal()
     section_interference()
     section_meeting()
+    section_redraws()
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
+    sys.exit(1 if FAIL else 0)

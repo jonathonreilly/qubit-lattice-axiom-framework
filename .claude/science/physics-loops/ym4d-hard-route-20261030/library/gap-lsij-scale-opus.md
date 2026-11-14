@@ -24,6 +24,7 @@ Credit: the (LSI-J) / (LSI-J-seed) framework is row 947 (`library/gap-fc-max.md`
 (updated in place after each step)
 
 - Step 0 (2026-11-14T10:07Z): file created; FINISH row 954 read; no earlier run of this item exists at 2a9e82c69.
+- Step 4b (2026-11-14T11:58Z): beta 2.3 (5c) and U(1) (5d) done and written; beta 2.6 L = 4, 6, 8 done (winding sector 1.54, 0.64, 0.25; flux energy about 0.13-0.15 at all three; local sectors about 0.11); L = 10, 12, 14, 16 running. Planned after the batch, inside the 60-minute compute budget: `glueball954.py` (smeared-loop 0++ correlator, no gradients) at beta 2.6 L = 16 and beta 2.3 L = 10 for the glueball floor of Lemma GAP-R, because the plaquette-size local fields overlap poorly with the beta 2.6 glueball.
 - Step 4a (2026-11-14T11:30Z): lock taken 11:25:57Z; self-test PASS; C1, C2, C5 PASS (Section 5a); main batch running in background since 11:29Z (about 40 min). Next: read the batch, write 5b-5d, analysis.
 - Step 3b (2026-11-14T10:31Z): strip-gradient bug found by reading and fixed before any run; finite-difference self-test, gap correlators and runner `run954.sh` added; criteria amendments (A1)-(A3) written before any run. Waiting for the numeric lock (row 952 holds it). Next: selftest, then calib (C1, C5, C2), then timing, then the main runs.
 - Step 3a (2026-11-14T10:30Z): code written (Section 4.1), Lemma GAP-R (4.2). Numeric lock held by row 952 (lane952-opus, since 10:14:52Z, expires 11:14:52Z at the latest); a background waiter takes it when free. No run yet.

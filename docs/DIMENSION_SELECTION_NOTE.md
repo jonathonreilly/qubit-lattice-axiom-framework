@@ -1,15 +1,80 @@
-# Dimension Selection Lower-Bound Finite-k Repair
+# Dimension Selection: Withdrawn Lower-Bound Packet and Sign Correction
 
 **Date:** original dimension-selection note; 2026-05-27 lower-bound scope
-repair.
-**Claim type:** bounded_theorem
-**Primary runner:** `scripts/frontier_dimension_selection_lower_bound_parent_repair.py`
-**Cached runner output:** `logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt`
-**Source packet verifier:** `scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py`
-**Source packet verifier cache:** `logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt`
-**Source packet verifier output:** `outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json`
+repair; 2026-10-21 sign correction; 2026-11-14 lower-bound claim withdrawn.
+**Claim type:** open_gate
+**Primary runner:** `scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py`
+**Cached runner output:** `logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt`
 
-## 2026-05-27 Scope Repair
+Historical packet diagnostics. They are kept with their failures and are not
+evidence for any current statement of this note:
+
+- parent repair diagnostic `scripts/frontier_dimension_selection_lower_bound_parent_repair.py`,
+  cache `logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt`;
+- source-packet verifier `scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py`,
+  cache `logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt`,
+  output `outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json`.
+
+## Current statement (2026-11-14)
+
+**Open.** Whether the dimension-selection runner surface excludes `d <= 2` is
+open. The bounded claim this row used to make, that `d <= 2` fails and
+`d >= 3` passes the runner's attractive-gravity criteria, is withdrawn.
+
+**Negative result, kept.** A counterexample to the earlier sign-based
+exclusion, at the baseline geometry (`k = 6.0`, `L_x = 40`, `L_y = 60`, source
+at `y_mid`, mass offset `+7`): the supplied `d = 1, 2` potentials
+`phi = -M r` and `phi = -M log(r)` have outward radial force for `M, r > 0`,
+so their away response is not a failure of attraction. Under the
+force-consistent continuation `phi = +M r`, `phi = +M log(r)`, with
+`phi = -M / r^(d-2)` kept for `d >= 3`, the `M = 0` centroid derivative is
+toward in all five tested dimensions. The finite-k bridge note
+[`DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md`](DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md)
+states it, and its runner, the primary runner above, checks it, with an
+attractive-sign control. It is a finite-geometry counterexample, not a
+dimension selector.
+
+**The historical diagnostics fail, and the failures stay.** The parent repair
+diagnostic and the source-packet verifier pin the bridge's output from before
+the correction (`SUMMARY: PASS=56 FAIL=0`, JSON pass count 56) and earlier
+wording of this note. The corrected bridge emits 70 checks, so both
+diagnostics exit 1. Their caches are regenerated from real runs and kept as
+they come out; their pins are not changed. They record that the June packet's
+contract no longer holds. They say nothing about the derivative algebra.
+
+**Open obligations:** a lower-bound statement for this runner surface under a
+force-consistent potential family, if one holds; the `beta` and `I_3` entries
+recomputed under that family; a framework-internal derivation of the all-d
+potential family.
+
+## Correction boundary (2026-10-21)
+
+The lower-bound interpretation in the historical packet below is superseded.
+The finite-k bridge's supplied potentials `phi=-Mr` and `phi=-M log(r)` have
+outward radial force for positive M and r; their away-centroid response does
+not exclude attractive gravity in dimensions 1 and 2. The force-consistent
+continuation `phi=+Mr`, `phi=+M log(r)` reverses the infinitesimal derivatives,
+which are toward for all five tested dimensions. This is a finite-geometry
+counterexample to the old sign-based exclusion, not a dimension selector.
+The historical beta and I_3 table is preserved; those values have not been
+recomputed under the corrected attractive continuation and cannot restore the
+withdrawn exclusion by themselves.
+
+The absent `docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md` was an existence
+anchor in the bridge runner, not a content input or proof premise here. Its
+historical missing-artifact failure remains unverified documentary evidence.
+The current bridge separates that availability report from its required
+checks; no missing artifact is counted as PASS.
+
+Everything below this boundary records the earlier packet and its claimed
+checks, not a current lower-bound proof or current audit-status certification.
+In particular, old expected cache counts and source-packet freshness claims
+are historical expectations. The unchanged parent/manifest diagnostics still
+require those old cache signatures and may fail after the corrected bridge;
+such failures must be retained, not interpreted as failed derivative algebra
+or silently repinned to manufacture packet closure.
+
+## Historical 2026-05-27 Scope Repair (superseded lower-bound interpretation)
 
 The prior note mixed two statements:
 
@@ -57,7 +122,7 @@ table and printed `alpha` values, that the bridge cache reports
 SHA. This does not set an audit verdict; its generated JSON is a disposable
 runner output.
 
-The primary parent runner now also imports the original dimension runner, the
+The parent runner (then this row's primary) now also imports the original dimension runner, the
 finite-k bridge runner, and the source-packet manifest runner directly, then
 prints a companion packet check. This makes the audit helper-graph resolver
 include the packet sources rather than relying on the older dynamic-import path,
@@ -65,17 +130,18 @@ and it pins the original and bridge caches to their current runner SHAs while
 exposing the source-packet manifest source for the independent manifest cache
 check.
 
-## Answer
+## Historical Answer (withdrawn 2026-11-14)
 
-No. The current bounded result is narrower:
+No. The June packet's bounded result was narrower:
 
 ```text
 d <= 2  -> fails the runner's attractive-gravity / beta~1 lower-bound criteria
 d >= 3  -> passes those runner criteria for d = 3, 4, 5
 ```
 
-Thus this row supports a finite-runner lower bound, not a unique-dimension
-theorem.
+Thus the row supported a finite-runner lower bound, not a unique-dimension
+theorem. That lower-bound reading is withdrawn; see the current statement at
+the top of this note.
 
 ## Runner Surface
 
@@ -92,9 +158,9 @@ For each dimension `d = 1,2,3,4,5`, the original runner:
 The finite-k bridge supplies the direct runner-specific sign certificate for
 the detector-centroid response at the baseline geometry.
 
-## Bounded Result
+## Historical Bounded Result (withdrawn 2026-11-14)
 
-The runner output reports:
+The runner output reports, under the supplied potential family listed above:
 
 | d | attractive? | beta approx | alpha approx | `I_3` | lower-bound read |
 |---|---|---:|---:|---|---|
@@ -112,7 +178,9 @@ d <= 2: negative/away response
 d >= 3: positive/toward response
 ```
 
-This is the bounded claim of this row.
+This was the bounded claim of this row. It is withdrawn: for `d = 1, 2` the
+supplied potentials repel, and the force-consistent continuation is toward in
+all five tested dimensions.
 
 ## Non-Claims
 
@@ -132,18 +200,21 @@ This row does not claim:
 The separate upper-bound wrapper
 `DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md` combines
 this lower-bound route with named external upper-bound mathematics. That
-wrapper is not load-bearing for the bounded claim here. Any future attempt to
+wrapper is not load-bearing for anything here. Any future attempt to
 derive `d <= 3` inside the framework must be reviewed separately.
 
-## What This Closes
+## What the June Packet Claimed to Close
 
 - finite-runner lower-bound support for excluding `d <= 2` in the stated
-  propagator-plus-Poisson runner surface;
-- direct use of the finite-k centroid-sign bridge;
-- removal of the unique-`d = 3` overclaim from this parent row.
+  propagator-plus-Poisson runner surface (withdrawn 2026-11-14);
+- direct use of the finite-k centroid-sign bridge (the bridge now records the
+  counterexample above);
+- removal of the unique-`d = 3` overclaim from this parent row (still removed).
 
 ## What Remains Open
 
+- a lower-bound statement for this runner surface under a force-consistent
+  potential family, if one holds, with `beta` and `I_3` recomputed under it;
 - framework-internal derivation of the all-d potential family;
 - uniform control over all runner geometries, `k`, source widths, and positive
   masses;
@@ -152,16 +223,18 @@ derive `d <= 3` inside the framework must be reviewed separately.
 
 ## Verification
 
-Run:
+The primary runner checks the counterexample and exits 0 with `FAIL=0`:
+
+```bash
+python3 scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
+```
+
+The two historical packet diagnostics exit 1 against the corrected bridge, as
+the current statement says. Their earlier expected summaries were
+`SUMMARY: PASS=27 FAIL=0` and
+`SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=... FAIL=0`:
 
 ```bash
 python3 scripts/frontier_dimension_selection_lower_bound_parent_repair.py
 python3 scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
-```
-
-Expected summary:
-
-```text
-SUMMARY: PASS=27 FAIL=0
-SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=... FAIL=0
 ```

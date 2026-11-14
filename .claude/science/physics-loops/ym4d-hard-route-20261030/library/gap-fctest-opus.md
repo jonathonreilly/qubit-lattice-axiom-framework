@@ -398,7 +398,7 @@ autocorrelations consistent with zero. Stable under K 6 -> 8 and n 300 -> 600 (S
 | C1 hand value R(flux, 4^3) = 0.016335 | by hand (Step 3); used only to calibrate |
 | R(f) per f, per box and coupling, and the zmvar suprema in the table | GUIDE |
 | (FC), (GC) not refuted at beta 2.3 and 2.6 on 4^3 (and 6^3, one cube at 2.3) for the listed f | GUIDE |
-| Local contraction is set at the scale of one plaquette (box value within 10-20 percent of the one-plaquette chain); odd functions of c_p and the monopole indicator contract more than c_p (no thin-vortex double well) | GUIDE (reading of the table) |
+| Local contraction is set at the scale of one plaquette (box value within 30 percent of the one-plaquette chain: 4^3 +9, 6^3 +28, cube +8 percent); odd functions of c_p and the monopole indicator contract more than c_p (no thin-vortex double well) | GUIDE (reading of the table) |
 | The largest R comes from smooth, extended, centre-odd winding lines; they fall about 5x from side 4 to 6 and rise with beta at fixed side 4 (0.14, 0.20, 0.31 at 2.3, 2.6, 3.5): SMALL-BOX physics, not seed-box physics | GUIDE |
 | (FC)_theta, (GC)_theta on the seed box (24a)^3 at beta 2.3-2.6 | OPEN (row 947) |
 
@@ -411,11 +411,11 @@ not taken to infinity. At beta 3.5 the heat bath may under-sample centre tunnell
 **For row 947 (GUIDE only, not evidence for a proof step).** (i) Row 946 did not refute (FC), so row 947's
 brief says attack (FC)_theta as a proof. (ii) In these runs theta well below 1 is available for every local f
 (R about 1e-3) and for zero-momentum plaquette functions (below 0.01). (iii) The values that approach 1 are
-box-scale, centre-odd winding lines: they are bounded below by the small-box flux energy, and they shrink as
-the box grows in the confined phase. On the seed box a theta near e^(-2 E_1) (E_1 the lowest gauge-invariant
+box-scale, centre-odd winding lines: their R is set by the small-box flux energy, and it shrinks as the box
+grows in the confined phase. On the seed box a theta near e^(-2 E_1) (E_1 the lowest gauge-invariant
 energy; about 1.3 at beta 2.3 by recalled lattice values, GUIDE) is what one-well behaviour would give.
 (iv) The local value is fixed at one plaquette: the exact one-plaquette value R(cos th) = 7.9e-4 is within
-10-20 percent of the box value. A proof that works link by link or plaquette by plaquette is not
+30 percent of the box values (4^3: 8.6e-4; 6^3: 1.0e-3). A proof that works link by link or plaquette by plaquette is not
 contradicted by these runs.
 
 **For row 948 (check).** Rerun cheaply: `python3 fct.py selftest` (1 s); `python3 fct.py exact-plaq --beta 2.3`
@@ -433,4 +433,4 @@ the Kennedy-Pendleton SU(2) heat bath, SU(2) overrelaxation, the Madras-Sokal wi
 jackknife. No literature value enters a verdict; recalled lattice numbers (glueball mass) appear only in
 GUIDE readings. origin/main and the PR branches are not on this clone and were not searched.
 
-RESULT: Row 946 (Claude Opus 5.5 max, GUIDE, checked by no one): (FC) is NOT REFUTED for SU(2) Wilson at beta 2.3 (boxes 4^3 and 6^3, and the one-cube chain) or at beta 2.6 (box 4^3); every R(f) = E_nu|grad P f|^2/E_nu|grad f|^2 is far below 1 (local plaquette, smeared and odd functions of c_p, and the Z_2 monopole indicator about 1e-4 to 4e-3; winding lines up to 0.14 at 2.3 and 0.20 at 2.6 on side 4, falling about 5x on side 6; worst f in a 15-dim zero-momentum span 0.145 +- 0.005 and 0.222 +- 0.011), with both calibrations passed (free photon exact to 0.5-1.6 percent; one-plaquette chain exact to 2 percent; row 941's theta_GC reproduced to 0.5 percent); PROVED only the linearisation (FC) => (GC) and the estimator identities; (FC) and (GC) on the seed box stay OPEN for row 947.
+RESULT: Row 946 (Claude Opus 5.5 max, GUIDE, checked by no one): (FC) is NOT REFUTED for SU(2) Wilson at beta 2.3 (boxes 4^3 and 6^3, and the one-cube chain) or at beta 2.6 (box 4^3); every R(f) = E_nu|grad P f|^2/E_nu|grad f|^2 is far below 1 (local plaquette, smeared and odd functions of c_p, and the Z_2 monopole indicator 6e-5 to 4e-3; winding lines up to 0.14 at 2.3 and 0.20 at 2.6 on side 4, falling about 5x on side 6; worst f in a 15-dim zero-momentum span 0.145 +- 0.005 and 0.222 +- 0.011), with both calibrations passed (free photon exact to 0.5-1.6 percent; one-plaquette chain exact to 2-2.5 percent for the plaquette and within 3 errors for every f; row 941's theta_GC reproduced to 0.5 percent); PROVED only the linearisation (FC) => (GC) and the estimator identities; (FC) and (GC) on the seed box stay OPEN for row 947.

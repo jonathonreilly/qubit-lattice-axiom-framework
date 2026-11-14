@@ -21,12 +21,15 @@ for p in sys.argv[1:]:
             yx, eyx = r["Y1X3"]; y2 = r["Y1_raw2"][0]
             elb = 2 * abs(yx) * eyx / y2 if y2 else float("nan")
             line.append("LB=%s+-%s (full %s, Y1Y2 %s)" % (f(r["LB_split_Y1"]), f(elb), f(r["LB_full_Y1"]), f(r["LB_Y1Y2"])))
+        for k in ("LB3", "LB34", "LB134"):
+            if k in r:
+                line.append("%s=%s+-%s(in %s)" % (k, f(r[k][0]), f(r[k][1]), f(r[k][2])))
         for c in (3, 1):
             k = "lag_X%d" % c
             if k in r:
                 d = r[k]
-                line.append("lagX%d[0,8,16,32,64]=" % c + "/".join(f(d[n][0]) for n in ("0", "8", "16", "32", "64") if n in d)
-                            + " (e64 %s)" % f(d["64"][1]))
+                line.append("lagX%d[0,8,16,32,64]=" % c + "/".join(f(d[n][0]) for n in ("0", "8", "16", "32", "64", "128", "256", "512") if n in d)
+                            + " (e%s %s)" % (max(d, key=int), f(d[max(d, key=int)][1])))
         if "pca_split_top" in r:
             line.append("pca split=%s ins=%s C0=%s" % ("/".join(f(v) for v in r["pca_split_top"]),
                                                      "/".join(f(v) for v in r["pca_insample_top"]), f(r["pca_C0_top_insample"])))

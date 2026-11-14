@@ -146,3 +146,58 @@ on the xyz mode at L = 4).
 at beta 2.3 and 2.45, L = 4, 6, 8 (lengths as batch 1, `--pca3`). Twist along x (`xtwist`, proxy with the x-holonomy) at
 beta 2.6, L = 4 and 8. Twist angle phi = pi/4 at beta 2.6, L = 4 and 8. Criteria: those of 1.5, per coupling and per slice.
 
+## 3. Results
+
+**3.0 Batch 1 (run 10:18-10:22Z under the numeric lock, 70 percent memory free).** Log `library/guide/lane952/logs/batch1.log`,
+JSON `logs/b1_*.json`, table by `summarize.py`. Errors are one standard error from 8 contiguous blocks.
+A_lo = Lemma LB (proxy Y_1, split halves); A_n = lagged raw moment E[X_3^(0) X_3^(n)] of the e_3 tie mode (frame chain every
+20 sweeps: 400, 350, 300 chains at L = 4, 6, 8); PCA = split-sample top eigenvalue of the lag-64 raw moment matrix of all
+e_3 components (3 L^3 coordinates; two halves).
+
+| slice | beta | L | temporal-gauge raw moments X_1/X_2/X_3 | A_0 | A_8 | A_16 | A_64 | A_lo | PCA (halves) |
+|---|---|---|---|---|---|---|---|---|---|
+| u_xy (C2, C4) | 2.6 | 4 | 3.42/4.73/4.68 (lambda_* 4.28 +- 0.14) | 4.77 | 3.36 | 2.62 | 0.59 +- 0.24 | 0.00 +- 0.00 | |
+| u_xy (C2, C4) | 2.6 | 8 | 50.9/3.8/10.2 (lambda_* 21.6 +- 0.7) | 9.99 | 9.45 | 9.39 | 7.26 +- 1.37 | 0.02 +- 0.02 | |
+| **u_phi, phi = pi/2** | **2.6** | 4 | 1.35/1.46/7.91 | 7.81 | 7.10 | 6.82 | **6.37 +- 0.58** | **2.96 +- 0.58** | 6.9, 5.7 |
+| **u_phi** | **2.6** | 6 | 1.90/2.40/27.2 | 27.4 | 26.1 | 25.5 | **24.9 +- 1.1** | **10.65 +- 0.79** | 24.4, 24.7 |
+| **u_phi** | **2.6** | 8 | 5.48/7.03/50.0 | 50.3 | 49.5 | 49.4 | **49.2 +- 5.1** | **15.5 +- 3.6** | 52.5, 43.4 |
+
+Compact U(1), u_xy, beta 2.3 (C3): lagged moment 41.40 (lag 0) and 41.30 +- 0.15 (lag 64) at L = 4; 139.82 and 139.69 +- 0.30 at
+L = 6; A_lo (U(1) plaquette proxy) 38.1 and 136.2.
+**Controls.** C1 PASS (2.2). C2 PASS: lambda_* = 4.28 +- 0.14 and 21.6 +- 0.7 against row 950's 4.19 and 22.6 (2 and 4 percent): the
+temporal-gauge covariance C_0 grows like the volume at u_xy, beta 2.6, as in row 950. C3 PASS: the U(1) lag-64 value grows by
+3.38 from L = 4 to 6 (volume ratio 3.375) and equals the lag-0 value within 0.3 percent; the frame chain removes nothing, as
+row 950 7.6 found. (This L = 4 run sat in the ordered state, 41.3; row 950's frame run had a metastable 19.1.) C4: A_lo = 0
+within errors at u_xy (PASS); the lagged moments fall toward 0 (to 12 percent of lag 0 at L = 4 by lag 64), but at L = 8
+the global SU(2) frame rotation is slow (78 percent of colour 1 left at lag 64), as row 950's validation (V) found. This
+slowness is the free rotation of the frame at a central slice. At u_phi it does not touch X_3: by 1.4(b) the frame law is
+invariant under exp(alpha k), which fixes e_3.
+**Twisted slice, beta 2.6.** Lag convergence holds at all three sizes (A_64/A_16 = 0.93, 0.97, 0.99). The frame-averaged tie
+moment grows like the volume: A_64 = 6.4, 24.9, 49.2 at L = 4, 6, 8; volume scaling from L = 4 predicts 21.5 and 51. The
+temporal-gauge order sits almost wholly on e_3 (27.2 against 1.9 and 2.4 at L = 6), as 1.4(e) predicts. The PCA top
+eigenvalue agrees with the tie mode. Against 1.5: the lag criteria are met; A_lo grows 2.96 -> 10.65 -> 15.5 (ratio 5.2 >= 2.5),
+but the step from L = 6 to 8 is 1.3 standard errors, below the 2 required. **So by the criteria written before the run,
+beta 2.6 is not yet a refutation: inconclusive on A_lo, volume growth on the lagged values (upper side).** Cause: the proxy
+Y_1 reads n . e_3 through the winding holonomy H, whose angle wanders by a random walk along z, so its correlation with X_3
+falls (A_lo/A_64 = 0.46, 0.43, 0.32 at L = 4, 6, 8). Remedy in batch 3: a proxy built on z-links averaged over slices 1-3
+(the frame acts on all slices t >= 1 in the same way, so the average transforms like one link and the proxy stays gauge
+invariant), larger L, and a long-lag check.
+
+**3.1 Batch 3 plan and criteria (fixed at 10:26Z, before batch 2 or 3 reported; script `batch3.sh`, code `sg2lab_b3.py`).**
+New proxies (all gauge invariant, functions of slices 1..T only): Y_3 = sum_x e_p <Im P_1(x), axis of H~(x)> / sqrt(L^3), with
+H~ the z-holonomy of the z-links averaged over slices 1-3 and normalised, P_1 the xy plaquette of slice 1; Y_4 the same with
+the normalised sum of the plaquettes of slices 1 and 2. Primary lower bound, chosen now: **A_lo := LB134**, Lemma LB with
+regressors (Y_1, Y_3, Y_4), coefficients fitted on one half of the samples and applied to the other (`lb_multi`).
+(a) Twisted u_xy, phi = pi/2, beta 2.6, L = 4, 6, 8, 10, 12; lags to 512 at L = 8.
+Criterion for (a), written now because batch 1 showed that the per-step rule of 1.5 cannot be met by five sizes whose steps
+are 20-40 percent: **REFUTES (SG2) at beta 2.6** if A_lo(8) - A_lo(4) and A_lo(12) - A_lo(6) both exceed 2 combined standard
+errors and both ratios are >= 2.5, and the lagged values plateau (A_512 within 10 percent of A_16 at L = 8). Saturation if
+A_lo(12)/A_lo(6) <= 1.3. Otherwise inconclusive. The verdict of batch 1 under 1.5 stays as written ("inconclusive").
+(b) Screening (criteria of 1.5): family A = u_xyyz (flux -1 on xy and yz; tie mode (pi, pi, pi), polarization (1, -1, 1)) at
+beta 2.3 and 2.6, and u_pi at beta 2.6, temporal gauge only, L = 4 and 8: does the boundary layer order (volume growth of the
+max over k of Lambda)? Family D = the interpolation u_z = exp(s pi [x + y odd] k) from u_xy (s = 0) to u_pi (s = 1) at s = 0.5,
+with the z-twist, beta 2.6, L = 4 and 8 (frame chains, e_3 PCA). Family C = vacuum slices (middle slice of a free slab of
+12 slices, 600 sweeps) at beta 2.3 and 2.6, L = 4 and 6, frame chains to lag 32, split-sample PCA over all 9 L^3 coordinates
+(mean subtracted). Family C has little power: with 400 chains and up to 1944 coordinates the split estimate of the top
+eigenvalue is biased low. A bounded value there establishes nothing.
+

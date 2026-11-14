@@ -78,6 +78,17 @@ citation-edge rule in section 8.
   fallback for that runner will not reproduce under independent audit. The
   explicit-declaration requirement itself is the owner directive of
   2026-08-09; the resolver is unchanged.
+- A PR whose base is older than `main`'s copy of
+  `docs/audit/data/runner_timeout_declarations.json` declares
+  `AUDIT_TIMEOUT_SEC = N` in the runner source and leaves that sidecar alone:
+  an edit to the sidecar would conflict with `main` at integration. The
+  receipt checker reads the source declaration first
+  (`docs/ai_methodology/skills/review-loop/scripts/review_receipt.py`
+  `declared_review_timeout_for`, through `scripts/runner_cache.py`
+  `declared_timeout_for`), and the audit runners read it through
+  `runner_timeout_for`. The source edit changes the runner's hash, so its
+  cache goes stale, and every note that the runner or helper serves joins the
+  unit's affected inventory.
 - NO hand-added metadata in runner-emitted files (caches, receipts). The cache
   format is fixed and machine-written — header keys, `----- stdout -----` and
   `----- stderr -----` sections, no timestamps anywhere
@@ -403,6 +414,17 @@ Stating the honest boundary requires no new science.
   consumer, or says explicitly that the consumer is not yet known — the relation
   is a `trace_class` value, not a free-form attachment.
 - `packet_helper_runner:` where section 7 applies.
+- Primary runner. Every note in a unit record's `notes` list needs a primary
+  runner that the citation-graph API extracts from the note itself, bound in
+  the record, whatever its `claim_type`, `meta` included; otherwise the
+  receipt fails with `primary runner mismatch/unbound`
+  (`docs/ai_methodology/skills/review-loop/scripts/review_receipt.py`
+  `check`). A changed note without a primary runner passes only as a
+  version-2 supporting proof of a note that has one, as a reviewed
+  `non_science_notes` entry for historical or non-scientific material, or as
+  a schema-3 summary correction, each under the conditions in
+  `docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md`.
+  Otherwise it fails as an uncovered changed note.
 - Imports section: every underivable input named in plain language, with its
   provenance stated or stated to be unavailable, and with role, provenance, and
   open-bridge status kept in separate fields. For example: "comparator

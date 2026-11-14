@@ -311,8 +311,11 @@ review-only flags contradict the drain's land-end-to-end contract).
    every landed commit belongs to a carried PR. Every commit and tree is a
    full object name.
 
-   Then run the loop from the root of the integration worktree, where
-   `SKILL_DIR` is this skill's directory at the revision you follow:
+   Set `user.name` and `user.email` in the landing clone before the loop
+   runs: a landed commit carries this clone's committer identity, and
+   `land_train.sh` stops with `FAILED:` when no email is set. Then run the
+   loop from the root of the integration worktree, where `SKILL_DIR` is this
+   skill's directory at the revision you follow:
 
    ```bash
    bash "$SKILL_DIR/scripts/land_train.sh" "$TRAIN_FILE"

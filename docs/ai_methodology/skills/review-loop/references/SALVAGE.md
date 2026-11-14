@@ -70,8 +70,9 @@ lowering the review bar.
    holds its original head (`refs/review-loop/recovery/pr-<N>/<frozen-head-sha>`).
    That ref is the handle on the unlanded remainder; never delete it. A
    merged PR cannot land a second time: decide every slice before the first
-   landing where you can, because a later slice needs a new PR that its author
-   or lead opens from that ref.
+   landing where you can, because a later slice needs a new PR from that ref.
+   The author session opens it, or the lead when that session has ended. The
+   lander does not.
 
 Salvageable examples:
 

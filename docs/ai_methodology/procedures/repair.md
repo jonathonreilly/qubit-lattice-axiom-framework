@@ -1,9 +1,9 @@
 # repair
 
-Fix a defect that a check or an audit named, at its source, and hand the
-statement back to be checked again. A repair changes source and never a
-record. Whatever the repairer believes, the repaired statement is `argued`
-(`RULES.md` section 1) until `check` or `audit` runs again.
+Fix a defect that a check, an audit or a landing hold named, at its source,
+and hand the statement back to be checked again. A repair changes source and
+never a record. Whatever the repairer believes, the repaired statement is
+`argued` (`RULES.md` section 1) until `check` or `audit` runs again.
 
 ## Use when
 
@@ -14,15 +14,21 @@ record. Whatever the repairer believes, the repaired statement is `argued`
 - A check or audit could not run: malformed output, timeout, failed
   transaction, missing registration. That is an incident, not a finding.
   Repair the tool, never the statement.
+- A landing review held a PR (`land.md`, Ends). The hold comment is the
+  authority for that repair. Answer each finding with a new commit on the
+  PR's branch, and say in the commit or the PR which finding each commit
+  answers. Where the hold asks for something that a later `SETTINGS.md` row
+  made optional, cite that row instead of supplying it.
 - Not to settle a disagreement between checkers (`RULES.md` section 3), and
-  not for a statement that nobody has checked.
+  not for a statement that nobody has checked or held.
 
 ## Takes
 
 - The exact defect, quoted from its record with the record's identity: for
   landed work the record on current `origin/main`, for unlanded work the
-  check record on the target branch that still counts. A stale local copy, a
-  generated prompt or a summary authorizes nothing.
+  check record on the target branch that still counts, for a held PR the
+  hold comment on that PR. A stale local copy, a generated prompt or a
+  summary authorizes nothing.
 - The statements that read the defective one. Know the list before the
   first edit: each returns to `argued`.
 - The scope asked for: source only, which is the default, or a drain that
@@ -39,9 +45,9 @@ record. Whatever the repairer believes, the repaired statement is `argued`
    unfinished inventory. (`science_fix_loop.py --dry-run`; reference:
    inventory, route table.)
 3. **Validate the authority.** A source edit needs a record that matches
-   its source field by field: `origin/main`, or the target branch head. An
-   invalidated, archived or rejected record is advice only. Malformed checker
-   output is never an instruction.
+   its source field by field: `origin/main`, the target branch head, or the
+   PR head that a hold names. An invalidated, archived or rejected record is
+   advice only. Malformed checker output is never an instruction.
    (`science_fix_loop.py --handoff-file`, `--from-archived`.)
 4. **Reproduce first.** Show the defect on that source. If `main` already
    settles it, make no edit and report "settled on main" with the

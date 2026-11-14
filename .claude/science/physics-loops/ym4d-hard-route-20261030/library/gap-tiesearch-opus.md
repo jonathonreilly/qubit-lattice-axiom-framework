@@ -190,3 +190,14 @@ errors of about 20 percent); all go to the sweep as planned in 4.3 and 4.5.
   independent chains' values, error sqrt(sum err^2)/n; g is recomputed from the pooled values; K3 compares the hot chain with
   the mean of the cold ones (within 15 percent, else "not equilibrated").
 
+- L = 12 (3000 + 16000): u_xy **12.69 +- 1.40** (connected 10.48); z-twist pi/4 colour 3 10.12 +- 3.39 [8.56]; z-twist pi/2 colour 3
+  9.41 +- 2.45 [7.09]. Warning: u_xy at L = 12 is 12.69 +- 1.40 in this chain against 6.07 +- 1.01 in the screen chain (seed 1)
+  and 7.57 in row 950, and above both L = 8 (7.54) and L = 16 (7.41). Two chains of the same point differ by 4 combined block
+  errors, so at beta 2.4 the 8-block errors understate the true error: the colour-frame mode has an autocorrelation time
+  comparable to the run. Every beta-2.4 number here must be read with this in mind; the verdict at 2.4 uses chain-to-chain
+  spread where replicas exist (Section 6).
+
+- Added at 18:52Z, before it runs (`full24c.sh`, chained after F24b): u_xy at beta 2.4, two more chains at L = 8 and two at
+  L = 16 (seeds 32, 33), pooled by the rule of the z-twist replicas; the error of a pooled value is then the larger of the
+  propagated block error and the chain-to-chain standard error of the mean.
+

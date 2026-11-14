@@ -24,6 +24,7 @@ Credit: the (LSI-J) / (LSI-J-seed) framework is row 947 (`library/gap-fc-max.md`
 (updated in place after each step)
 
 - Step 0 (2026-11-14T10:07Z): file created; FINISH row 954 read; no earlier run of this item exists at 2a9e82c69.
+- Step 4a (2026-11-14T11:30Z): lock taken 11:25:57Z; self-test PASS; C1, C2, C5 PASS (Section 5a); main batch running in background since 11:29Z (about 40 min). Next: read the batch, write 5b-5d, analysis.
 - Step 3b (2026-11-14T10:31Z): strip-gradient bug found by reading and fixed before any run; finite-difference self-test, gap correlators and runner `run954.sh` added; criteria amendments (A1)-(A3) written before any run. Waiting for the numeric lock (row 952 holds it). Next: selftest, then calib (C1, C5, C2), then timing, then the main runs.
 - Step 3a (2026-11-14T10:30Z): code written (Section 4.1), Lemma GAP-R (4.2). Numeric lock held by row 952 (lane952-opus, since 10:14:52Z, expires 11:14:52Z at the latest); a background waiter takes it when free. No run yet.
 - Step 2 (2026-11-14T10:30Z): Sections 2 (criteria, before any run) and 3 (free photon exact) written. Next: Step 3, the code and the C1, C2, C5 calibrations.
@@ -119,3 +120,33 @@ Proof. Row 947 7.2, variance form: E_1 >= Xi(rho)/2, rho = beta/gam_J, gam_J = 1
 Use. E_1 is the lowest excitation energy of the lattice transfer matrix over all gauge-invariant states, including the 't Hooft electric-flux states (winding lines carry them). It can be read from Euclidean time correlators on the same slab. This gives a floor for the true R_J along a data path independent of the variational span. If the span's top is far below the floor, the span misses the slowest mode. It also shows where large R_J must come from in small boxes: from light flux states (torelons, or the tunnelling doublets of a box below the deconfinement length).
 Consistency. On the seed box the flux states are heavy (energy about sigma times the side), so E_1 is the lightest glueball mass m_G; the floor is 1/(2 beta m_G); (LSI-J-seed)_a needs R_J <= 1/(2 beta K_a); together they need m_G >= K_a, which is row 947's necessary condition 4.2 again. Nothing new for the seed; a check of the measurement.
 For the free photon: E_1 = omega_min and the floor is 1/(2 beta omega_min), against the exact 1/(beta (e^(omega_min) - 1)); the floor is lower by a factor of about 2 for small omega (Section 3), as it must be.
+
+## Section 5. Runs (GUIDE). 5a: self-test and calibrations (lock holder gap-lsij-954 from 11:25:57Z; 70 percent memory free; one thread, nice 10)
+
+Logs: `/tmp/lane954/logs/*.log` (copied to `library/guide/lane954/logs/` at the end); JSON summaries with the full sector matrices C and G (main runs only): `library/guide/lane954/out/`. The row-952 lock was released before 11:25:57Z; no run of this row overlapped another numeric job.
+
+**Self-test (11:26Z): PASS.** Finite-difference directional derivatives (eps = 1e-5, random links, random tangent field, L = 4) against the analytic tangent gradients of every observable: SU(2) S0e (36 observables), S0o (8), one S1e copy (24, real and imaginary parts), one S1o copy; U(1) U0c (27), U0s (24), U1c and U1s copies (24 each), U0w (4). Largest relative error 1.6e-9.
+
+**C1, exact calibration at beta = 0 (Haar links), L = 4, K = 2, 300 configurations x 3 pairs: PASS.**
+
+| sector | top (raw) | bias-corrected | exact |
+|---|---|---|---|
+| SU(2) S0e | 0.1771 +- 0.0069 | 0.1674 | 1/6 = 0.1667 |
+| SU(2) S1e | 0.1713 +- 0.0032 | 0.1696 | 1/6 |
+| SU(2) S0o | 0.0861 +- 0.0023 | 0.0847 | 1/(3L) = 0.0833 |
+| SU(2) S1o | 0.0853 +- 0.0011 | 0.0850 | 1/(3L) |
+| U(1) U0c | 0.5378 +- 0.0216 | 0.5112 | 1/2 |
+| U(1) U0s | 0.5387 +- 0.0157 | 0.5169 | 1/2 |
+| U(1) U1s | 0.5123 +- 0.0089 | 0.4954 | 1/2 |
+| U(1) U0w | single lines 0.239-0.256 +- 0.006 | | 1/L = 0.25 |
+
+All 70 single-observable ratios (plaquettes 1/12, time-like plaquettes 1/6, 1x2 rectangles 1/18, 2x2 loops 1/24, time-like rectangles 1/12, strip and P^x P^w 1/(6L), P^2 1/(8L); U(1): 1/4, 1/2, 1/6, 1/8, 1/4, 1/(2L)) lie within 2.0 errors of the exact values. The raw top eigenvalue is biased upward by noise (here by 0.5 to 2.4 errors); the jackknife bias correction removes it. Both are reported below.
+
+**C5, independent implementation against row 947 Run 3 (SU(2), L = 4, beta 2.3, K = 6, 400 configurations x 3 pairs): PASS.** E c_p = 0.6044 +- 0.0013 (row 947: 0.6058), E t = 0.6054 +- 0.0014 (0.6049), E t^2 = 0.4581 +- 0.0012 (0.4575). Top of the zero-momentum centre-even sector S0e = 0.167 +- 0.010 against row 947's top of its 3-span 0.1547 +- 0.0041 (1.2 combined errors; my span contains theirs).
+**But the centre-odd winding sector is much larger on this box:** S0o top = 0.515 +- 0.020 (single M_x: 0.302). The winding-line time correlator gives E_eff(tau) = 0.473, 0.388, 0.350, 0.434, 0.381 (+-0.016 to 0.10) for tau = 0..4: the lightest flux state (torelon) of the 4^3 box has energy about 0.37 +- 0.03, and Lemma GAP-R puts the floor 1/(2 beta E_1) at about 0.57 or more. Row 947's span had no winding observable, so its 0.155 missed this. (Measured on J_K with K = 6; the main run below repeats it at K = 10.)
+
+**C2, Gaussian check (compact U(1), beta 8, L = 6, K = 6, 300 configurations x 3 pairs): PASS.** Photon sector U1s top = 0.0811 +- 0.0016 (bias-corrected 0.0777) against the free value 1/(beta (e^omega - 1)) = 0.0773 (+4.9 percent, inside 10 percent) and 0.0797 with beta_R = beta - 1/4 (0.9 errors). The magnetic-field correlator at k_min gives E_eff = 0.960 +- 0.014, 1.022 +- 0.038 against omega_min = 0.9624. The constant (holonomy) mode is a free rotor as computed by hand in amendment (A1): winding E_eff = 0.0095 to 0.011 against 1/(2 beta L) = 0.0104; its variational ratio U0w = 10.4 +- 0.5 raw, 6.1 bias-corrected (lag-1 autocorrelation 0.82: the local algorithm moves the holonomy slowly, so this error is too small), against the floor 1/(2 beta E) of about 6. So compact U(1) has R_J of order L from its zero mode alone.
+
+**Timing.** SU(2): 0.43 ms per sweep at L = 4 (N_t = 16), 16 ms at L = 12 (N_t = 22); measurement of two pairs plus the slab time series about 0.2 s per configuration at L = 12. U(1) about twice that. Peak memory below 0.2 GB.
+
+**Main batch, started 11:29Z** (one background job, sequential): SU(2) beta 2.3, L = 4, 6, 8, 10, 12 (central pair at K' = 10, extra pair at K = 6 for C4, 1200 configurations, 2 sweeps apart); U(1) beta 1.5, L = 4, 6, 8, 10, 12 (K' = 10, K = 6, 800 configurations); SU(2) beta 2.6, L = 4, 6, 8, 10, 12, 14 (K' = 12, K = 8, 1200 configurations); SU(2) beta 2.6, L = 16 (800 configurations). Thermalisation 300 sweeps from a cold start.

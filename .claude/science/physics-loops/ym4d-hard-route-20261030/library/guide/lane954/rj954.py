@@ -597,7 +597,7 @@ def analyse(data, nblk=20):
         derr = np.sqrt((nb-1)/nb*((jk_diag-jk_diag.mean(0))**2).sum(0))
         bc = nb*top-(nb-1)*jk_top.mean()
         res[name] = dict(top=float(top), err=float(err), top_bc=float(bc), diag=diag.tolist(), diag_err=derr.tolist(),
-                         vec=(vec/np.abs(vec).max()).tolist())
+                         vec=(vec/np.abs(vec).max()).tolist(), C=C.tolist(), G=G.tolist())
     return res
 
 
@@ -657,6 +657,43 @@ def selftest(L=4, seed=1, eps=1e-5):
                   "PASS" if err < 1e-5 else "FAIL", flush=True)
 
 
+def meas_pairs(lat, meas, pairs):
+    acc = None
+    st = 0
+    for t in pairs:
+        x, w = lat.pair(t)
+        R, ls = meas.measure(x, w)
+        st = st + ls/len(pairs)
+        if acc is None:
+            acc = {}
+            for k, v in R.items():
+                if v[0] is not None:
+                    acc[k] = [v[0]/len(pairs), np.outer(v[0], v[0])/len(pairs), v[1]/len(pairs)]
+                else:
+                    acc[k] = [None, v[1]/len(pairs), v[2]/len(pairs)]
+        else:
+            for k, v in R.items():
+                if v[0] is not None:
+                    acc[k][0] = acc[k][0] + v[0]/len(pairs)
+                    acc[k][1] = acc[k][1] + np.outer(v[0], v[0])/len(pairs)
+                    acc[k][2] = acc[k][2] + v[1]/len(pairs)
+                else:
+                    acc[k][1] = acc[k][1] + v[1]/len(pairs)
+                    acc[k][2] = acc[k][2] + v[2]/len(pairs)
+    return acc, st
+
+
+def push(data, acc):
+    if data is None:
+        data = {k: [[] if v[0] is not None else None, [], []] for k, v in acc.items()}
+    for k, v in acc.items():
+        if v[0] is not None:
+            data[k][0].append(v[0])
+        data[k][1].append(v[1])
+        data[k][2].append(v[2])
+    return data
+
+
 def main():
     if "--selftest" in sys.argv:
         selftest()
@@ -675,6 +712,7 @@ def main():
     ap.add_argument("--seed", type=int, default=954)
     ap.add_argument("--out", default=None)
     ap.add_argument("--tmax", type=float, default=1e9, help="stop measuring after this many seconds")
+    ap.add_argument("--extra_t", type=int, default=-1, help="also measure the pair (t, t+1) separately (C4 test)")
     a = ap.parse_args()
     lib = ctypes.CDLL(a.lib)
     Nt = 2*a.K + 2 + 2*a.m
@@ -686,6 +724,7 @@ def main():
     log(f"thermalised, {(time.time()-t1)/max(a.ntherm,1)*1e3:.1f} ms per sweep")
     pairs = [a.K + j for j in range(2*a.m+1)]
     data = None
+    data2 = None
     series = []
     stats = []
     tm = 0.0
@@ -696,34 +735,12 @@ def main():
         lat.sweep(a.nsep, a.nor)
         tsw += time.time()-t1
         t1 = time.time()
-        acc = None
-        st = 0
-        for t in pairs:
-            x, w = lat.pair(t)
-            R, ls = meas.measure(x, w)
-            st = st + ls/len(pairs)
-            if acc is None:
-                acc = {k: [None if v[0] is None else v[0]/len(pairs)] + [vv/len(pairs) for vv in v[1:]] for k, v in R.items()}
-                for k, v in R.items():
-                    if v[0] is not None:          # (vals, gram): store m1, m2, g
-                        acc[k] = [v[0]/len(pairs), np.outer(v[0], v[0])/len(pairs), v[1]/len(pairs)]
-            else:
-                for k, v in R.items():
-                    if v[0] is not None:
-                        acc[k][0] = acc[k][0] + v[0]/len(pairs)
-                        acc[k][1] = acc[k][1] + np.outer(v[0], v[0])/len(pairs)
-                        acc[k][2] = acc[k][2] + v[1]/len(pairs)
-                    else:
-                        acc[k][1] = acc[k][1] + v[1]/len(pairs)
-                        acc[k][2] = acc[k][2] + v[2]/len(pairs)
+        acc, st = meas_pairs(lat, meas, pairs)
+        data = push(data, acc)
+        if a.extra_t >= 0:
+            acc2, _ = meas_pairs(lat, meas, [a.extra_t])
+            data2 = push(data2, acc2)
         tm += time.time()-t1
-        if data is None:
-            data = {k: [[] if v[0] is not None else None, [], []] for k, v in acc.items()}
-        for k, v in acc.items():
-            if v[0] is not None:
-                data[k][0].append(v[0])
-            data[k][1].append(v[1])
-            data[k][2].append(v[2])
         stats.append(st)
         series.append(slice_series(lat, meas))
         nm += 1
@@ -734,19 +751,26 @@ def main():
             break
     D = {k: (None if v[0] is None else np.array(v[0]), np.array(v[1]), np.array(v[2])) for k, v in data.items()}
     res = analyse(D)
+    res2 = None
+    if data2 is not None:
+        D2 = {k: (None if v[0] is None else np.array(v[0]), np.array(v[1]), np.array(v[2])) for k, v in data2.items()}
+        res2 = analyse(D2)
     gaps = gap_analysis(np.array(series), Nt, a.group)
     stats = np.array(stats)
     ac = [np.corrcoef(D[k][1][:-1].reshape(nm-1, -1).sum(1), D[k][1][1:].reshape(nm-1, -1).sum(1))[0, 1] if nm > 3 else 0
           for k in D]
     out = dict(args=vars(a), nmeas=nm, Nt=Nt, stats_mean=stats.mean(0).tolist(), stats_err=(stats.std(0)/np.sqrt(nm)).tolist(),
-               lag1_trace_m2=dict(zip(D.keys(), [float(c) for c in ac])), sectors=res, gaps=gaps,
+               lag1_trace_m2=dict(zip(D.keys(), [float(c) for c in ac])), sectors=res, sectors_extra=res2, gaps=gaps,
                ms_per_sweep=tsw/nm/a.nsep*1e3, ms_per_meas=tm/nm*1e3, peak_rss_mb=rss()/1e6, wall_s=time.time()-T0)
-    print(json.dumps({k: v for k, v in out.items() if k not in ("sectors", "gaps")}))
+    print(json.dumps({k: v for k, v in out.items() if k not in ("sectors", "gaps", "sectors_extra")}))
     for nm, g in gaps.items():
         print(f"  gap {nm:6s} Eeff(tau) " + " ".join(f"{e:.3f}+-{er:.3f}" for e, er in zip(g["Eeff"], g["Eeff_err"])))
     for name, r in res.items():
         print(f"  {name:4s} top {r['top']:.5f} +- {r['err']:.5f} (bias-corrected {r['top_bc']:.5f}); "
               f"max single {max(r['diag']):.5f}")
+    if res2 is not None:
+        for name, r in res2.items():
+            print(f"  extra pair t={a.extra_t}: {name:4s} top {r['top']:.5f} +- {r['err']:.5f} (bias-corrected {r['top_bc']:.5f})")
     if a.out:
         with open(a.out, "w") as f:
             json.dump(out, f)

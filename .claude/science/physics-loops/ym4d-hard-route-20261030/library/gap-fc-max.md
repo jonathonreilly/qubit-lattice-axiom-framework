@@ -192,7 +192,7 @@ u_(1/beta - eps)(y) = integral of f(w) g_eps(y - w) m(dw)/h_eps(y), and this ker
   the precision of eta in row 941 (A7).
 - Normalisation. The generator in (i) is (1/2) Laplacian + drift, and the rate in (iii) is alpha_s for LSI in the
   form Ent(phi^2) <= (2/alpha) integral |grad phi|^2, for which N(0, 1/A) has alpha = A. The Gaussian check fixes both.
-- Free rotor chain on the circle, large beta (asymptotic check). nu is uniform on S^1 in R^2. nu_s is radial,
+- Free rotor chain on the circle, large beta (asymptotic check; the GUIDE Run 2 of Step 6 agrees: ratio 0.998 at beta 8). nu is uniform on S^1 in R^2. nu_s is radial,
   within O(beta^(-1/2)) of the unit circle, and its Poincare constant on the first angular mode is 1 + O(1/beta).
   (BR-gap) gives E_1 >= (1/(2 beta))(1 + o(1)); the truth is -log(I_1(beta)/I_0(beta)) = 1/(2 beta) + O(beta^(-2)). Sharp to
   leading order.
@@ -260,7 +260,8 @@ same pair of end sites, so -1 at a site of one and not of the other gives Q_(l l
 the maps q -> g q h^(-1), which are all of SO(4), so it is a multiple of Id_4. QED
 So gauge invariance removes every degree-one function and every degree-two function except the ultralocal
 radial sums. For those, by (B3), Var(sum c_l |y_l|^2) is a sum of time-like plaquette covariances plus a local term,
-and the ratio is bounded exactly when the susceptibility chi_t of 7.4 is (same test function family).
+and the ratio is bounded exactly when the time-like plaquette susceptibilities are (chi_t of 7.4 and its
+versions at non-zero momentum).
 What this does and does not give. It names the step: FP fails through functions of degree one and two that are
 not gauge invariant for SU(2). It holds for compact Wilson U(1) too in degree one (the centre argument), so it
 does not separate SU(2) from compact U(1). It proves nothing in degree four, where the first non-local
@@ -386,6 +387,87 @@ Criteria: K0, r_1^2 equals row 941's table (Run 1, 2) within 1 percent. K1', r_1
 code. K3', in row 941's two double-well rotors ((1, 0, 4) and (2.3, 0, 1.5), where its theta_GC is 9.5 and 1.06) the
 claim of 5.5 is supported iff E_BR/E_1 >= 0.25.
 Cases (beta, h1, h2): (0.3, 0, 0), (1, 0, 0), (2.3, 0, 0), (8, 0, 0), (2.3, 1, 0.5), (4, 2, 1), (1, 0, 4), (2.3, 0, 1.5).
+
+**Run 2 (GUIDE; 09:43:03Z-09:43:25Z under the numeric lock, holder gap-fc-947, after row 950 released it; 70 percent
+memory free; one thread, nice; peak RSS 259 MB; log `/tmp/gap-fc-947/logs/br_rotor.log`, not committed).**
+
+| (beta, h1, h2) | r_1^2 here | r_1^2 row 941 | exp(-integral gam_s) | E_1 | E_BR | E_BR/E_1 | min gam_s | gam at mid | K0 | K1' |
+|---|---|---|---|---|---|---|---|---|---|---|
+| (0.3, 0, 0) | 0.0220 | 0.0220 | 0.0276 | 1.9083 | 1.7950 | 0.941 | 0.893 | 0.893 | PASS | PASS |
+| (1, 0, 0) | 0.1993 | 0.1993 | 0.2256 | 0.8066 | 0.7444 | 0.923 | 1.068 | 1.589 | PASS | PASS |
+| (2.3, 0, 0) | 0.5496 | 0.5496 | 0.5623 | 0.2992 | 0.2878 | 0.962 | 1.029 | 1.498 | PASS | PASS |
+| (8, 0, 0) | 0.8747 | 0.8747 | 0.8749 | 0.0670 | 0.0668 | 0.998 | 1.007 | 1.107 | PASS | PASS |
+| (2.3, 1, 0.5), sign as coded here | 0.5230 | 0.1382 | 0.5353 | 0.3241 | 0.3125 | 0.964 | 1.142 | 1.609 | FAIL | PASS |
+| (4, 2, 1), sign as coded here | 0.7400 | 0.1075 | 0.7427 | 0.1506 | 0.1487 | 0.988 | 1.016 | 1.300 | FAIL | PASS |
+| (1, 0, 4), double well | 0.5362 | 0.5362 | 0.6165 | 0.3116 | 0.2419 | 0.776 | 0.0026 | 0.747 | PASS | PASS |
+| (2.3, 0, 1.5), double well | 0.9086 | 0.9086 | 0.9203 | 0.0479 | 0.0415 | 0.867 | 0.039 | 0.340 | PASS | PASS |
+
+Verdicts by the criteria written before the run.
+- K0: PASS in six cases, FAIL in two. Cause (found after the run, by hand): a sign convention. This script uses the
+  weight e^(-V) with V = +h1 cos u + h2 cos 2u. With both h1 and h2 non-zero the two signs are different models
+  (u -> u + pi maps (h1, h2) to (-h1, h2), not to (-h1, -h2)); with one of them zero they agree, which is why the
+  other six cases match row 941 to four digits. Row 941 calls (2.3, 1, 0.5) a one-well case, which is the sign
+  V = -(h1 cos u + h2 cos 2u). So the two FAIL rows are valid cases of a different potential (minima at u = 2 pi/3
+  and 4 pi/3), not row 941's. A rerun with the other sign is below if the lock allowed it.
+- K1': PASS in all eight cases. (BR-gap) is not violated in the embedded geometry (M a circle in R^2).
+- K3': in the two double wells of row 941 (its theta_GC 9.5 and 1.06), E_BR/E_1 = 0.78 and 0.87. Supported.
+Reading (GUIDE). For free rotors the bridge bound is within 8 percent of the true rate at beta 0.3 to 2.3 and
+within 0.2 percent at beta 8. So Theorem BR loses little in the embedded geometry. It proves nothing about SU(2)
+on a box.
+
+Script (full text of `br_rotor.py`; about 20 seconds):
+
+```python
+# GUIDE run 2 for library/gap-fc-max.md Step 6 (row 947): rotor chain on the circle in R^2. Refutes or guides only.
+# Criteria K0, K1', K3' are in the note (written before the run).
+import resource, numpy as np, scipy.sparse as sp
+from scipy.sparse.linalg import eigsh
+def run(beta, h1, h2, nu_=256, nr=160, nphi=64, ns=24):
+    u = (np.arange(nu_)+0.5)*2*np.pi/nu_; du = 2*np.pi/nu_
+    V = h1*np.cos(u)+h2*np.cos(2*u); b = np.exp(-0.5*V)
+    T = b[:, None]*np.exp(beta*np.cos(u[:, None]-u[None, :]))*b[None, :]*du
+    lam, vec = np.linalg.eigh(T); r1 = lam[-2]/lam[-1]; psi = b*np.abs(vec[:, -1])
+    S = 1.0/beta; rmax = 1+6*np.sqrt(S/4); dr = rmax/nr; dphi = 2*np.pi/nphi
+    r = (np.arange(nr)+0.5)*dr; phi = (np.arange(nphi)+0.5)*dphi
+    wx, wy = np.cos(u), np.sin(u)
+    def h(s, rr, pp):                      # h_s on a polar mesh (rr, pp arrays of the same shape)
+        yx, yy = rr*np.cos(pp), rr*np.sin(pp)
+        d2 = (yx[..., None]-wx)**2+(yy[..., None]-wy)**2
+        return (np.exp(-0.5*d2/s)/(2*np.pi*s)) @ (psi*du)
+    R, PH = np.meshgrid(r, phi, indexing="ij")
+    Re, PHe = np.meshgrid(r[:-1]+dr/2, phi, indexing="ij")          # radial edges
+    Ra, PHa = np.meshgrid(r, phi+dphi/2, indexing="ij")             # angular edges
+    idx = np.arange(nr*nphi).reshape(nr, nphi)
+    integ = 0.0; gmin = 1e99; gmid = None
+    for j in range(ns):
+        s = (j+0.5)*S/ns
+        dens = lambda rr, pp: h(s, rr, pp)*h(S-s, rr, pp)
+        d = dens(R, PH); cut = 1e-12*d.max(); keep = d > cut
+        M = (d*R*dr*dphi)
+        we = dens(Re, PHe)*Re*dphi/dr; wa = dens(Ra, PHa)*dr/(Ra*dphi)
+        i1 = idx[:-1, :].ravel(); i2 = idx[1:, :].ravel(); ce = we.ravel()
+        ok = keep[:-1, :].ravel() & keep[1:, :].ravel(); i1, i2, ce = i1[ok], i2[ok], ce[ok]
+        a1 = idx.ravel(); a2 = np.roll(idx, -1, axis=1).ravel(); ca = wa.ravel()
+        ok = keep.ravel() & np.roll(keep, -1, axis=1).ravel(); a1, a2, ca = a1[ok], a2[ok], ca[ok]
+        I = np.concatenate([i1, a1]); Jx = np.concatenate([i2, a2]); C = np.concatenate([ce, ca])
+        n = nr*nphi
+        K = sp.coo_matrix((np.concatenate([C, C, -C, -C]), (np.concatenate([I, Jx, I, Jx]), np.concatenate([I, Jx, Jx, I]))), shape=(n, n)).tocsr()
+        kk = np.flatnonzero(keep.ravel()); K = K[kk][:, kk]; Mk = sp.diags(M.ravel()[kk])
+        scale = Mk.diagonal().sum()
+        ev = eigsh(K/scale, k=3, M=Mk/scale, sigma=-1e-3, which="LM", return_eigenvectors=False)
+        g = np.sort(ev)[1]
+        integ += g*S/ns; gmin = min(gmin, g)
+        if j == ns//2: gmid = g
+    return r1, integ, gmin, gmid
+ref = {(0.3,0,0):0.0220, (1,0,0):0.1993, (2.3,0,0):0.5496, (8,0,0):0.8747, (2.3,1,0.5):0.1382, (4,2,1):0.1075, (1,0,4):0.5362, (2.3,0,1.5):0.9086}
+print("case | r1^2 | row941 r1^2 | exp(-int gam) | E_1 | E_BR | E_BR/E_1 | min gam_s | gam_mid | K0 | K1'")
+for (beta, h1, h2), rr in ref.items():
+    r1, integ, gmin, gmid = run(beta, h1, h2)
+    E1 = -np.log(r1); EBR = 0.5*integ
+    k0 = "PASS" if abs(r1**2/rr-1) < 0.01 else "FAIL"; k1 = "PASS" if 2*E1 >= integ*(1-0.03) else "FAIL"
+    print(f"({beta},{h1},{h2}) | {r1**2:.4f} | {rr:.4f} | {np.exp(-integ):.4f} | {E1:.4f} | {EBR:.4f} | {EBR/E1:.3f} | {gmin:.4f} | {gmid:.4f} | {k0} | {k1}", flush=True)
+print("peak RSS MB", resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1e6)
+```
 
 ## Step 7: the two-slice form, the smallest unproved inequality, and one test (written 09:13Z)
 

@@ -212,11 +212,13 @@ class Harness(unittest.TestCase):
         self.gh_state = self.root / "gh-state.json"
         self.control = self.root / "gate.json"
         self.response = self.root / "response.json"
+        # Git reads no configuration of this machine. The identity is in a
+        # configuration file, as land_run.py requires of a real work clone.
+        write(self.root / "gitconfig", "[user]\n\tname = Test\n\temail = test@example.invalid\n")
         env = {
             "PATH": f"{self.bin}{os.pathsep}{os.environ['PATH']}",
-            "GIT_AUTHOR_NAME": "Test", "GIT_AUTHOR_EMAIL": "test@example.invalid",
-            "GIT_COMMITTER_NAME": "Test", "GIT_COMMITTER_EMAIL": "test@example.invalid",
-            "GIT_CONFIG_NOSYSTEM": "1", "GIT_CONFIG_GLOBAL": os.devnull,
+            "GIT_CONFIG_NOSYSTEM": "1", "GIT_CONFIG_SYSTEM": os.devnull,
+            "GIT_CONFIG_GLOBAL": str(self.root / "gitconfig"),
             "FAKE_GH_STATE": str(self.gh_state), "FAKE_CODEX_CALLS": str(self.codex_calls),
             "FAKE_CODEX_PROMPT": str(self.root / "prompt.md"),
             "FAKE_CODEX_RESPONSE": str(self.response),
@@ -426,6 +428,26 @@ class LandingTest(Harness):
         self.assertFalse((self.work / "evidence").exists())
         self.assertEqual(self.gh_calls(), [])
         self.assertEqual((self.work / "wt/candidate/leftover.txt").read_text(), "earlier run\n")
+
+    def test_a_work_clone_without_a_git_email_is_refused(self):
+        # A name alone is not enough: the address is what the host name fills in.
+        sh("git", "-C", str(self.work), "config", "user.name", "Local")
+        printed = io.StringIO()
+        with mock.patch.dict(os.environ, {"GIT_CONFIG_GLOBAL": os.devnull}), \
+                contextlib.redirect_stdout(printed):
+            code, lines = self.run_land()
+        self.assert_result(lines, "failed", "NOT_REACHED")
+        self.assertEqual(code, 1)
+        self.assertIn("git user.email is not set in the work clone", printed.getvalue())
+        self.assertIn("host name, in a public repository", printed.getvalue())
+        self.assertFalse((self.work / "evidence").exists())
+        self.assertEqual(self.gh_calls(), [])
+        self.assert_nothing_landed()
+        # An email in the clone's own configuration is enough.
+        sh("git", "-C", str(self.work), "config", "user.email", "local@example.invalid")
+        with mock.patch.dict(os.environ, {"GIT_CONFIG_GLOBAL": os.devnull}):
+            code, lines = self.run_land(land=False)
+        self.assert_result(lines, "ok", "PASSED")
 
     def test_hold_without_land_posts_nothing(self):
         self.set_review(review("HOLD", findings=[FINDING]))

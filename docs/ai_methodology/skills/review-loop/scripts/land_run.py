@@ -839,6 +839,11 @@ class LandRun:
     def prepare(self) -> None:
         if not (self.work / ".git").exists():
             raise Failed(f"{self.work} is not a clone of the repository")
+        if not git(self.work, "config", "--get", "user.email", check=False).stdout.strip():
+            raise Failed("git user.email is not set in the work clone: a landed commit would "
+                         "carry a committer address made from the host name, in a public "
+                         "repository. Set git config user.name and user.email in "
+                         f"{self.work} before the run")
         if self.evidence.exists():
             raise Failed(f"{self.evidence} exists; move it away before a new run")
         if self.trees.is_dir() and any(self.trees.iterdir()):

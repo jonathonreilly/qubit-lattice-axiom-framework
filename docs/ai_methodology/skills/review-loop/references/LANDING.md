@@ -470,9 +470,11 @@ python3 docs/ai_methodology/skills/review-loop/scripts/land_run.py PR --work DIR
   [--review-timeout-sec N] [--gate-timeout-sec N]
 ```
 
-- `DIR` is an existing clone. The run writes `DIR/evidence/`, its worktrees
-  under `DIR/wt/`, `DIR/tmp/` and `DIR/RESULT.txt`. It holds the machine's
-  numeric lock while the gate runs.
+- `DIR` is an existing clone with `user.name` and `user.email` set. The run
+  refuses a clone without an email: a landed commit would carry a committer
+  address made from the host name. The run writes `DIR/evidence/`, its
+  worktrees under `DIR/wt/`, `DIR/tmp/` and `DIR/RESULT.txt`. It holds the
+  machine's numeric lock while the gate runs.
 - `M` and `E` come from the landing-review rows of `SETTINGS.md`.
 - Without `--land` the run is review only. It stops after the gate and writes
   nothing to GitHub. With `--land` it pushes through `land_train.sh` and posts

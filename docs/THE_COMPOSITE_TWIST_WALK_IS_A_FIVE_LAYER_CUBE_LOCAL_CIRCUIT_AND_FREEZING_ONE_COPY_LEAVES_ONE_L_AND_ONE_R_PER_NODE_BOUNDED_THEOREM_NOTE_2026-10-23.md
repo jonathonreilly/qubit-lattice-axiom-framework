@@ -1,7 +1,7 @@
 ---
 claim_id: the_composite_twist_walk_is_a_five_layer_cube_local_circuit_and_freezing_one_copy_leaves_one_l_and_one_r_per_node_bounded_theorem_note_2026-10-23
 claim_type: bounded_theorem
-claim_scope: "Free bands of composite TWIST (CTWIST) on CL-1's 2^3 cell (one mode per site, 8 cell states, the 12 tetrahedral rotations T with CL-1's site gauges). (A) CTWIST is not an even.odd.even product of cube-local layers (exact), but it is exactly a five-layer cube-local circuit even.odd.even.odd.even on CL-1's two tilings; no circuit whose layers each commute with the site rotations was found to depth 9 (finite search). (B) At the T-fixed nodes every level of any T-covariant cell walk is a 2-fold spinor irrep, and the two eta copies carry identical irreps (T acts trivially on the eta algebra), so no free T-keeping term removes the doubling. Rule FREEZE (the sector where CL-1's chirality disagrees with the walk's does not hop) is unitary, T-covariant, a five-layer cube-local circuit, and leaves exactly one L (q = 2) and one R (q = 1) per node. (C) A free label term exp(i phi (1 - tau3)/2) relocates the R Weyl but never gaps it. Not covered: interactions, the multi-family mirror term, measurement."
+claim_scope: "Free bands of composite TWIST (CTWIST) on CL-1's 2^3 cell (one mode per site, 8 cell states, the 12 tetrahedral rotations T with CL-1's site gauges). (A) CTWIST is not an even.odd.even product of cube-local layers (exact). Numerically it factorises into five cube-local layers even.odd.even.odd.even on CL-1's two tilings: block-coordinate polar ascent finds unitary gates whose product matches CTWIST to residual below 1e-10 on the 5^3 momentum grid and at four off-grid momenta; this is a numerical diagnostic, and an exact gate witness is open. No circuit whose layers each commute with the site rotations was found to depth 9 (finite search). (B) At the T-fixed nodes every level of any T-covariant cell walk is a 2-fold spinor irrep, and the two eta copies carry identical irreps (T acts trivially on the eta algebra), so no free T-keeping term removes the doubling. Rule FREEZE (the sector where CL-1's chirality disagrees with the walk's does not hop) is unitary, T-covariant, numerically factorises into five cube-local layers (same caveat), and leaves exactly one L (q = 2) and one R (q = 1) per node. (C) A free label term exp(i phi (1 - tau3)/2) relocates the R Weyl but never gaps it. Not covered: an exact five-layer gate witness, interactions, the multi-family mirror term, measurement."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -10,11 +10,17 @@ upstream_dependencies:
 runner: scripts/the_composite_twist_walk_is_a_five_layer_cube_local_circuit_and_freezing_one_copy_leaves_one_l_and_one_r_per_node_2026_10_23.py
 ---
 
-# The composite TWIST walk is a five-layer cube-local circuit; freezing one copy leaves one L and one R per node
+# The composite TWIST walk factorises numerically into five cube-local layers; freezing one copy leaves one L and one R per node
 
-Claim type: bounded_theorem (exact free-band statements, plus one finite search labelled as such).
-Runner: runner.py, TOTAL: PASS=12 FAIL=0, 10.6 s, 90 MB peak, stdout 3.5 k characters; run through
-scripts/runner_cache.execute_runner under a unique filename (status ok, exit 0). Axioms unchanged.
+Claim type: bounded_theorem (exact free-band statements, one numerical factorisation and one finite search, each labelled).
+Primary runner: `scripts/the_composite_twist_walk_is_a_five_layer_cube_local_circuit_and_freezing_one_copy_leaves_one_l_and_one_r_per_node_2026_10_23.py`; cache `logs/runner-cache/the_composite_twist_walk_is_a_five_layer_cube_local_circuit_and_freezing_one_copy_leaves_one_l_and_one_r_per_node_2026_10_23.txt`. Axioms unchanged.
+
+Local labels (2026-11-14). "CL-1" is this note's source label for the supplied cube tick (a Margolus-type walk on 2^3
+cubes, one fermion mode per site, two tilings) and its chirality chi; it is not CL-1 of the current
+[candidate-law register](CANDIDATE_LAWS.md), which is a historical alias with zero premise weight. "R10" and "R11" are
+source-local requirement labels: R10, the light copy carries a nonzero turn charge so that a family count follows;
+R11, light and mirror sit at different exact momenta. composite-twist (#10028) is recorded only in the consolidation's
+source map; CTWIST is rebuilt inline by the runner. Statements here are conditional on these supplied models.
 
 ## Question
 
@@ -30,19 +36,24 @@ term (1 - tau3)/2 do?
   CL-1's own odd.even shape) needs the ranges of the z_i coefficients to cut the cell into 8 one-dimensional
   vertex spaces. CTWIST's three range projectors have rank 4 and commute, but their joint spaces have dims
   (2,2,2,2,0,0,0,0): two states on each vertex of one tetrahedron. So depth 3 is impossible.
-- A2 (exact, depth 5). CTWIST = C1 . O(C2) . C3 . O(C4) . C5 with C1, C3, C5 even-cube gates and O(C) = D C D^+
-  odd-cube gates. The product has degree <= 2 per direction, so the 5^3 momentum grid identifies it; the
-  residual is 1e-14 on the grid and off it. The gates are found by block-coordinate (polar) ascent, so they are
-  numerical, not closed form; the identity is exact to float precision. Conjugating by C5 gives two CL-1-shaped
-  ticks (odd.even.odd.even) with different gates.
+- A2 (numerical diagnostic, depth 5; narrowed 2026-11-14). Block-coordinate (polar) ascent finds unitary gates with
+  CTWIST ~ C1 . O(C2) . C3 . O(C4) . C5, where C1, C3, C5 are even-cube gates and O(C) = D C D^+ odd-cube gates, to a
+  residual below 1e-10 (printed about 1e-14) on the 5^3 grid and at four off-grid momenta. Each such product is a
+  Laurent polynomial of degree <= 2 per direction, so if equality held exactly on the 5^3 grid it would hold
+  everywhere. A small residual does not prove that exactly satisfying unitary gates exist, so this is not an exact
+  circuit theorem: an analytic or certified exact gate witness is an open obligation. Control (A2c): the same ascent
+  at depth 3, where A1 proves no factorisation exists, stalls far from 0. If an exact witness exists, conjugating by
+  C5 gives two CL-1-shaped ticks (odd.even.odd.even) with different gates. A later source's winding theorem
+  (#10064) excludes turn-covariant layerings; it does not supply this gate witness.
 - A3 (finite diagnostic). With every layer commuting with the 12 site rotations (frames V; diagonal gauges are
   absorbed into the gates), no factorisation was found at depth 5, 7 or 9 (rms floors 1.59, 1.30, 1.25). The
   depth-5 gates found are not T-invariant. T-covariance holds for the full walk, not gate by gate. This is a
   search, not a proof.
 
-Answer (ii): the walk splits into cube-local layers, so CTWIST does NOT bend nearest-neighbour admissibility.
-Its status is the same as CL-1's tick, with five layers instead of two. Open: whether some covariant layering
-exists (A3 found none).
+Answer (ii): numerically, the walk matches a product of five cube-local layers. If an exact five-layer witness
+exists, CTWIST does not bend nearest-neighbour admissibility and its status is the same as CL-1's tick, with five
+layers instead of two; that exact witness is open. Open as well: whether some covariant layering exists (A3 found
+none).
 
 ## B. The eta doubling (item i)
 
@@ -62,7 +73,7 @@ exists (A3 found none).
   - B4. U_F is unitary and T-covariant. On a 12^3 grid, quasienergy 0 occurs only at K = 0 and pi only at R
     (gap >= 0.30 elsewhere). The frozen states are flat at +-pi/2, the point equidistant from both node
     quasienergies.
-  - B6. U_F is also exactly a five-layer cube-local circuit (residual 6e-15).
+  - B6. U_F also matches a product of five cube-local layers numerically (residual about 6e-15; same caveat as A2).
 
 ## Answers
 
@@ -86,10 +97,11 @@ Gate (rule FREEZE):
 2. Named structure: none. It uses chi (CL-1's own chirality) and tau3 (cell geometry). Pass.
 3. Prediction not built for: 4 cell-local, non-propagating modes per cell at quasienergy +-pi/2 (inert dark
    states in the vacuum); light content 2 L + 2 R with a pinned pi-node. Not compared with measurement. UNTESTED.
-4. Axiom bent: none. One mode per site; a five-layer cube-local circuit (A2, B6). As with CTWIST, it replaces
-   CL-1's O-covariant tick with a T-covariant walk.
+4. Axiom bent: none if the five-layer factorisation is exact (A2, B6 are numerical; the exact witness is open).
+   One mode per site. As with CTWIST, it replaces CL-1's O-covariant tick with a T-covariant walk.
 
-Result: FREEZE passes items 1, 2 and 4 and is UNTESTED on item 3. It is a bounded candidate, not adopted.
+Result: FREEZE passes items 1 and 2, passes item 4 conditionally on an exact five-layer witness, and is UNTESTED on
+item 3. It is a candidate with zero premise weight, not adopted.
 Honest weakness: FREEZE removes the doubling by declaring half the cell inert. It uses a structural selector,
 but its motive is the count. B1-B2 show this is the minimal kind of rule possible at the free level, because no
 T-keeping free term can do it.
@@ -103,12 +115,12 @@ T-keeping free term can do it.
   - the layer ansatz (even/odd cube gates).
 - Forced:
   - the depth-3 no-go and the tetrahedral (2,2,2,2,0,0,0,0) range structure;
-  - the depth-5 factorisation;
+  - (numerical, not forced) the depth-5 factorisation;
   - Schur/Kramers at the nodes;
   - the trivial T action on the eta algebra;
   - the content 1 L (q = 2) + 1 R (q = 1) per node;
   - the failure of every free label mirror term.
 - Not used: any measured number or named gauge group.
 
-Next probe: an exact covariant-layer obstruction or construction for A3. Then the multi-family charge-4 mirror
+Next probe: an analytic or certified exact gate witness for A2 and B6, and an exact covariant-layer obstruction or construction for A3. Then the multi-family charge-4 mirror
 interaction on Pi+ with FREEZE.

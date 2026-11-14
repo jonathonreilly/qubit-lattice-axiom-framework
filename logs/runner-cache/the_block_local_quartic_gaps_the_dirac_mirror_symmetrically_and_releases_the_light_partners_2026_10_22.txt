@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_block_local_quartic_gaps_the_dirac_mirror_symmetrically_and_releases_the_light_partners_2026_10_22.py
-runner_sha256: c6d1e5bb934e76014204f274f805793edd712062182f75cba49f267483917779
-input_fingerprint_sha256: 408f7d9dca5b767b09996617c1cbed07198ce7dc6e16bcfa57fb06084a374586
+runner_sha256: ba7ded97a0ced8032556d474f7b10c98e46bdc3fb2f5e0bc3a1b3a0e2b9f76d7
+input_fingerprint_sha256: 6555341478fa2a39dd0eb397672fb76b59334723f9bb2d32ec76aa8b3d8a3b57
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 45.50
+elapsed_sec: 51.14
 status: ok
 ----- stdout -----
 == A. theorems: sign, block term, Dirac band, light release
@@ -19,10 +19,10 @@ status: ok
 == C. live seeded runs: block quartic on the Dirac sea (g = 1 unless stated; beta in units of 1/g)  [5 s]
    m_g1_L4    S_pair/N 0.0076 xi/L 0.087 | Dirac gap: midpoint 0.016(0.003) cosh 0.106(0.013)  [6 s]
    m_g8_L4    S_pair/N 0.0093 xi/L 0.051 | Dirac gap: midpoint 0.625(0.058) cosh 0.849(0.050)  [17 s]
-   m_g8_L4b4  S_pair/N 0.0069 xi/L 0.030 | Dirac gap: midpoint 0.355(0.008) cosh 0.684(0.013)  [23 s]
-   m_g8_L6b4  S_pair/N 0.0021 xi/L 0.021 | Dirac gap: midpoint 0.348(0.021) cosh 0.669(0.028)  [34 s]
-   gs_weak    S_pair/N 0.0057 xi/L 0.061 | Dirac gap: midpoint 0.109(0.000) cosh 0.251(0.000) | LIGHT cosh gap 0.249(0.000)  [35 s]
-   gs_g8      S_pair/N 0.0083 xi/L 0.061 | Dirac gap: midpoint 0.426(0.018) cosh 0.646(0.021) | LIGHT cosh gap 0.144(0.003)  [45 s]
+   m_g8_L4b4  S_pair/N 0.0069 xi/L 0.030 | Dirac gap: midpoint 0.355(0.008) cosh 0.684(0.013)  [24 s]
+   m_g8_L6b4  S_pair/N 0.0021 xi/L 0.021 | Dirac gap: midpoint 0.348(0.021) cosh 0.669(0.028)  [40 s]
+   gs_weak    S_pair/N 0.0057 xi/L 0.061 | Dirac gap: midpoint 0.109(0.000) cosh 0.251(0.000) | LIGHT cosh gap 0.249(0.000)  [41 s]
+   gs_g8      S_pair/N 0.0083 xi/L 0.061 | Dirac gap: midpoint 0.426(0.018) cosh 0.646(0.021) | LIGHT cosh gap 0.144(0.003)  [51 s]
 [PASS] C1 FINITE DIAGNOSTIC weak coupling g/t = 1 (L = 4, beta = 8): the Dirac mirror stays massless (midpoint gap at the Dirac point < 0.05) and unpaired | gap 0.016; pair xi/L 0.087
 [PASS] C2 FINITE DIAGNOSTIC strong coupling g/t = 8 (L = 4, beta = 8): the Dirac mirror is gapped (midpoint lower end >= 0.4) with no pair order (xi/L < 0.1) | gap 0.625(0.058); xi/L 0.051
 [PASS] C3 FINITE DIAGNOSTIC g/t = 8 at beta = 4: S_pair/N falls about as the volume from L = 4 to 6 (ratio > 2.5; 3.375 = no order) and the Dirac gap is L-independent (cosh estimates within 0.1) | S/N ratio 3.30; cosh gap 0.684 vs 0.669
@@ -36,7 +36,7 @@ status: ok
    recorded production value (not recomputed): light release (t = 0.125, w = 0.25, beta = 8, L = 4): light cosh gap at g/t 1, 2, 4, 8, 16 = 0.249, 0.248, 0.239, 0.135, 0.054 (L = 6 at 8: 0.141); mirror 0.251, 0.256, 0.281, 0.69, 1.84 (L = 6: 0.66)
 supplied: SU(4) toy, one mode per flavour per block, real pi-flux band, BCs, w eps mixing, sizes, betas, seeds
 cited: qmc-face-gapped (#9983), toy-qmc (#9965), register CL-1 far-end and SMG items, smg-literature (Ayyar-Chandrasekharan)
-elapsed 44.7 s
+elapsed 50.7 s
 TOTAL: PASS=11 FAIL=0
 
 ----- stderr -----

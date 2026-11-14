@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py
-runner_sha256: 361a5fa8c24b3f7a262c152240533a6452d008abf5f861ec6ae7db91c8ce2f35
-input_fingerprint_sha256: 63a6f589680bc5fa32936618f409d7e32dfe9abb3b703f4d4b6ce32b2e33a7e3
+runner_sha256: 486df941583257b47c4d53afbeacc44134c4dbedb1230811ceeea0d19c4b1e8e
+input_fingerprint_sha256: d56329027da7dc45bbff4a3f3eb706824e1eb440b312572a9f367fd49178fafb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.65
+elapsed_sec: 3.32
 status: ok
 ----- stdout -----
 == A. free copy structure of H' (light = s3 -1, mirror = s3 +1)
@@ -39,7 +39,7 @@ status: ok
 [PASS] F3 [F] light p = pi doubler qp: free -1.006 (w 0.57), g = 4 -0.210 (w 0.90), g = 16 -0.1497 (w 0.9961 = Z): released as a left-mover, the light copy becomes R + L: not chiral
 [PASS] F4 [F] contrast, pair hop on both copies: light Gamma qp -> -22.35 (w 0.32): a term touching the light at p = 0 gaps it
 [PASS] F5 [T] zone-corner endpoint: freezing (a_2J - a_2J+1)/sqrt2 leaves H_eff = sin(K)/2, a new left-mover at K = pi (Nielsen-Ninomiya)
-elapsed_seconds 2.4
+elapsed_seconds 2.9
 theorems: A1-A4, B1-B2, C1, D1-D2, E2, E5, F1, F5; finite: C2, E3, F2-F4; estimates: E1, E4, [E]/[M] lines. Supplied: H', which copy
   is the mirror, the mirror terms (pair square, top form, pair hop), g, mu, the (4,2) content, twist k = 2. Cited: Nielsen-Ninomiya,
   anomaly matching, Golterman-Shamir 2505.20436, the smg-verify chain formulas.

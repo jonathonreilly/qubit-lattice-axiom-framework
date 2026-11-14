@@ -14,7 +14,7 @@ runner: scripts/the_light_copy_zone_corner_partners_are_vector_like_only_through
 Claim type: bounded_theorem.
 Primary runner: `scripts/the_light_copy_zone_corner_partners_are_vector_like_only_through_the_sublattice_charge_2026_10_22.py`.
 
-The [block-quartic note](THE_BLOCK_LOCAL_QUARTIC_GAPS_THE_DIRAC_MIRROR_SYMMETRICALLY_AND_RELEASES_THE_LIGHT_PARTNERS_BOUNDED_THEOREM_NOTE_2026-10-22.md) showed that a block-local quartic gaps a Dirac mirror symmetrically. The cost is that the symmetric gap releases every light mode that was gapped only by pairing with the mirror. The [candidate-law register](CANDIDATE_LAWS.md) therefore asks for a rule that removes the light copy's zone-corner partners without the mirror. This note counts those partners exactly and tests three removals:
+The [block-quartic note](THE_BLOCK_LOCAL_QUARTIC_GAPS_THE_DIRAC_MIRROR_SYMMETRICALLY_AND_RELEASES_THE_LIGHT_PARTNERS_BOUNDED_THEOREM_NOTE_2026-10-22.md) showed that a block-local quartic gaps a Dirac mirror symmetrically. The cost is that the symmetric gap releases every light mode that was gapped only by pairing with the mirror. The source notes' rule list (called "the register" there; not the current [candidate-law register](CANDIDATE_LAWS.md), whose entries are historical aliases with zero premise weight) therefore asks for a rule that removes the light copy's zone-corner partners without the mirror. "CL-1" below is the source label for the supplied cube tick. This note counts those partners exactly and tests three removals:
 - the copy mass;
 - a light-only corner mass;
 - pairing with the mirror's three-fermion composites.
@@ -52,7 +52,7 @@ The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) are unchanged.
 
 ## Checks
 
-A1-A6 (census), B1-B4 (corner mass), C1-C4 (composites). TOTAL: PASS=14 FAIL=0.
+A1-A6 (census), B1-B4 (corner mass), C1-C3 (composites). TOTAL: PASS=13 FAIL=0. The C4 selection-rule reading was a literal-True check; since 2026-11-14 the runner prints it as `NOT CHECKED` and does not count it.
 
 ## Clause count and law text
 
@@ -70,10 +70,10 @@ Verdict:
 - (b) A light-only corner removal exists exactly, but it necessarily breaks the light chirality.
 - (c) Composite pairing is spin-blind on a Weyl. It moves the partner to a Fermi pocket and does not gap it.
 
-No rule is adopted. The requirement now has an exact form. The light corner partner R_R(eps+) can be gapped only by an L Weyl of the same eps sector at R. On these bands, the only such Weyl is the mirror's R_L(eps+). So the mirror term must gap the mirror symmetrically at K = 0 while it stays Dirac-paired with the light copy at R. That needs a mirror interaction whose symmetric zero vanishes at R, an intermediate, momentum-selective phase: the register's open SMG route, and not a cell-local term.
+No rule is adopted. Within eps-preserving bilinear masses on these free bands, the light corner partner R_R(eps+) can be gapped only by an L Weyl of the same eps sector at R, and on these bands the only such Weyl is the mirror's R_L(eps+) (B1, exact). The composite test covers one SU(4) block (C1-C3), and the selection-rule reading C4 is not checked. Within that scope, a route would have the mirror term gap the mirror symmetrically at K = 0 while it stays Dirac-paired with the light copy at R, that is, a mirror interaction whose symmetric zero vanishes at R: an intermediate, momentum-selective phase (the source notes' open SMG route), not a cell-local bilinear term.
 
 ## Boundary
 
 - Free bands only: the CL-1 tick at one (eps, M) point and its step-pi/2 generator.
 - The composite test is on one SU(4) block, with no dispersion. The spin-blindness argument assumes that G_(m,Phi) is spin-scalar at w = 0, as it is on the block.
-- Not computed: the composite spectra of an extended symmetric mirror, any 3D interacting phase, Spin(10), twelve-turn covariance of X (the register states that no eps-preserving mass at R is turn-invariant), and links.
+- Not computed: the composite spectra of an extended symmetric mirror, any 3D interacting phase, Spin(10), twelve-turn covariance of X (the source notes' register states that no eps-preserving mass at R is turn-invariant), and links.

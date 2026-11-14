@@ -1,7 +1,7 @@
 ---
 claim_id: the_family_class_winding_forces_bulk_pi_states_but_a_slab_can_put_all_its_pi_flow_on_the_far_wall_while_no_tick_alternating_term_separates_pi_pi_from_zero_zero_bounded_theorem_note_2026-10-24
 claim_type: bounded_theorem
-claim_scope: "Free-field Floquet ticks with the (111) turn T3 as a symmetry on the turn axis; FREEZE (W_F = (-2, 1, 1)) rebuilt inline. (A1) In each turn sector the net eigenphase flow through every quasi-energy equals the det winding W_a, so W_a != 0 puts a BULK Bloch eigenstate at every quasi-energy (pi included) on the axis loop; checked for FREEZE and turn-symmetric deformations. (A2) Every interval filling has flow W at both cuts; intersection lemma: a band filling with no occupied-empty touching on the axis forces W = 0. (A3) An anomalous Floquet (RLBL) tick has gapped bulk at 0 and pi and zero det winding on every loop, walls F_0 = F_pi = +-1. (A4) On a slab, per wall F_0 - F_pi = C (band invariant of the bulk bands between 0 and pi); total pi flow = W_slab is forced but its wall is not: a sector-resolved class-A toy with a static-type domain-wall bulk (C = f(2,+), W = 0) and a W-carrying far termination layer has near wall (f(2,+), 0) and far wall (f(1,-), W_F). (B1) U0 O U0^-1 = (-1)^(n_pi) O, so any periodic drive resolves only the parity of the number of pi legs; tick-alternating terms cancel exactly on 0-0 and pi-pi terms. (B2) Separating pi-pi from 0-0 needs an S-odd term, which gives the light sector the reflected interaction; reduced two-flavour Spin(6) site: unique ground state for one sign, 2-fold for the reflected sign. (C) N_f = 0 mod 3 unchanged under the supplied anomaly-family-count index form. Not covered: the repaired slab built on FREEZE's 8-mode cell, the far-wall SMG of mirror + pi pair, interacting wall dynamics, gauge fields, the low-energy recheck of a W = 0 bulk."
+claim_scope: "Free-field Floquet ticks with the (111) turn T3 as a symmetry on the turn axis; FREEZE (W_F = (-2, 1, 1)) rebuilt inline. (A1) In each turn sector the net eigenphase flow through every quasi-energy equals the det winding W_a, so W_a != 0 puts a BULK Bloch eigenstate at every quasi-energy (pi included) on the axis loop; checked for FREEZE and turn-symmetric deformations. (A2) Every interval filling has flow W at both cuts; intersection lemma: a band filling with no occupied-empty touching on the axis forces W = 0. (A3) An anomalous Floquet (RLBL) tick has gapped bulk at 0 and pi and zero det winding on every loop, walls F_0 = F_pi = +-1. (A4) On a slab, per wall F_0 - F_pi = C (band invariant of the bulk bands between 0 and pi); total pi flow = W_slab is forced but its wall is not: a sector-resolved class-A toy with a static-type domain-wall bulk (C = f(2,+), W = 0) and a W-carrying far termination layer has near wall (f(2,+), 0) and far wall (f(1,-), W_F). (B1) U0 O U0^-1 = (-1)^(n_pi) O, so any periodic drive resolves only the parity of the number of pi legs; tick-alternating terms cancel exactly on 0-0 and pi-pi terms. (B2) Separating pi-pi from 0-0 needs an S-odd term, which gives the light sector the reflected interaction; reduced two-flavour Spin(6) site: unique ground state for one sign, 2-fold for the reflected sign. (C) N_f = 0 mod 3 unchanged under the supplied anomaly-family-count index form (a source not in this repository). The family-class tick is a supplied candidate with zero premise weight; no adoption or suspension is recorded in the repository, and no physical exclusion is inherited from pi-sector-stability, whose comparator estimates are conditional. Not covered: the repaired slab built on FREEZE's 8-mode cell, the far-wall SMG of mirror + pi pair, interacting wall dynamics, gauge fields, the low-energy recheck of a W = 0 bulk."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -16,9 +16,21 @@ runner: scripts/the_family_class_winding_forces_bulk_pi_states_but_a_slab_can_pu
 # The family-class winding forces bulk pi states, but a slab can put all its pi flow on the far wall, while no tick-alternating term separates pi-pi from 0-0
 
 Claim type: bounded_theorem. Labels: [T] exact, [F] finite diagnostic, [S] reading.
-Runner: runner.py, TOTAL: PASS=7 FAIL=0, 2.7 s, 81 MB peak, about 4.0 k characters, seeded, AUDIT_TIMEOUT_SEC = 120.
-It was tested under a unique filename (scratch/pi_repair_test_run.py). Axioms unchanged. No rule adopted. No CL edit.
-Criteria were written before any code ran (criteria_pre_run.txt). Every criterion came out as predicted.
+Primary runner: `scripts/the_family_class_winding_forces_bulk_pi_states_but_a_slab_can_put_all_its_pi_flow_on_the_far_wall_while_no_tick_alternating_term_separates_pi_pi_from_zero_zero_2026_10_24.py`; cache `logs/runner-cache/the_family_class_winding_forces_bulk_pi_states_but_a_slab_can_put_all_its_pi_flow_on_the_far_wall_while_no_tick_alternating_term_separates_pi_pi_from_zero_zero_2026_10_24.txt`.
+Axioms unchanged. No rule adopted. No CL edit.
+Criteria were written before any code ran (criteria_pre_run.txt, a source-session file not in this repository).
+Every criterion came out as predicted.
+
+Local labels (2026-11-14). "CL-1" is the source label for the supplied cube tick. The source campaign called the
+family-class tick clause "adopted" and later "suspended". No owner adoption or suspension of it is recorded in the
+repository: it is a supplied candidate with zero premise weight, and "suspended" below is kept only as a historical
+label. Short source names: pi-sector-stability is
+[#10072](THE_FAMILY_CLASS_TICKS_FORCED_PI_SECTOR_IS_A_LIGHT_CHARGED_INVERTED_COPY_WHOSE_DOUBLER_MAP_CANCELS_ALL_VACUUM_POLARIZATION_SO_IT_NEEDS_REPAIR_WHILE_ITS_ANOMALIES_STAY_SAFE_BOUNDED_THEOREM_NOTE_2026-10-24.md),
+floquet-pi-slab is [#10064](A_CIRCUIT_SLAB_PUTS_ITS_MIRROR_IN_THE_OTHER_COPY_ONLY_THROUGH_A_NONZERO_TURN_GRADED_WINDING_WHICH_FORCES_EQUAL_FLOW_AT_QUASI_ENERGY_PI_AND_IS_SET_BY_TERMINATION_BOUNDED_THEOREM_NOTE_2026-10-23.md);
+tick-winding-origin, spin10-two-flavour, smg-strong-coupling (as named in the frontmatter) and anomaly-family-count are
+campaign files not in this repository (historical reported results, unverified here). "Repair" below means removing
+the forced pi states that pi-sector-stability found; that note's observable conclusions are conditional estimates, so
+whether a repair is physically needed is not settled here.
 
 The first run had three code-level failures, and each was fixed without changing any claim:
 - A4: the wall-flow counter missed crossings on the k-loop seam, because the crossing fell exactly on a grid point. The
@@ -26,7 +38,7 @@ The first run had three code-level failures, and each was fixed without changing
 - A4: tau = 0.8 let the trivial-mass strip's bulk band cross pi. The fix was tau = 0.5, which gives a bandwidth below pi.
 - B1: the sign convention for the alternating drive was wrong (H_eff = -O_odd for the order (+, -)).
 
-Question (repair of the SUSPENDED family-class tick):
+Question (repair of the family-class tick; "suspended" in the source campaign):
 - (A) Is a light pi node forced by W != 0 in the bulk, or only on slab walls?
 - (B) If bulk pi copies are forced, can they be gapped symmetrically, for example by a tick-alternating interaction?
 - (C) Verdict.
@@ -80,7 +92,7 @@ note builds on and narrows:
     - Near wall: (F_0, F_pi) = ((-1, 1, 0), (0, 0, 0)), i.e. the light q 2 at 0 only, with NO near-wall pi copy.
     - Far wall: F_0 = (-1, 0, 1) = f(1,-), the mirror q 1 in the other copy, and F_pi = W_F = (-2, 1, 1).
     - The slab's det winding is (-2, 1, 1).
-  - [S] On the full cell this would be a static-type domain-wall bulk (W = 0, gap at pi, as in CL-1's tick) with one FREEZE
+  - [S] On the full cell this would be a static-type domain-wall bulk (W = 0, gap at pi, as in the supplied CL-1 tick) with one FREEZE
     layer at the far termination. At 0 the far wall then has: the static mirror q 2 (-), plus FREEZE's q 2 (+) and q 1 (-).
     The q 2 pair has zero net flow and is removable, leaving the mirror q 1. At pi it has FREEZE's (q 2, +) and (q 1, -).
     Not built on the 8-mode cell.
@@ -112,8 +124,8 @@ There are two readings.
 Bulk-world reading (the light Weyls are FREEZE's bulk nodes): NOT REPAIRABLE by free terms (A1, A2) or by
 tick-alternating interactions (B1). The S-odd route is not shown (B2).
 
-Slab-world reading (the world is the near wall; this is the adopted clause's own setting): REPAIRABLE for the light wall at
-the level of flows (A4). The rule costs are:
+Slab-world reading (the world is the near wall; the setting the source campaign's clause used): REPAIRABLE for the
+light wall at the level of flows (A4). The rule costs are:
 1. The family-class winding moves off the bulk tick into the far termination layer. The bulk tick becomes W = 0 (a
    static-type domain-wall circuit, gapped at pi). The clause would read: "the slab's far termination layer has all three
    turn-graded winding components nonzero; the bulk tick has W = 0".
@@ -129,15 +141,17 @@ per family instead of 2, and both are units mod 3. The near wall has no pi state
 pi-sector-stability has no near-wall instance. The vacuum polarization test (A2 probe of pi-sector-stability) on the
 near wall is not run.
 
-So the family-class mod-3 count is not lost. The suspension is narrowed: "family-class bulk tick" is excluded, and
-"family-class far termination" is open, pending far-wall SMG and the rechecks.
+So the family-class mod-3 count is not lost under the supplied index form. Within free terms and tick-alternating
+interactions, the "family-class bulk tick" reading cannot remove the pi states (A1, A2, B1), and the "family-class far
+termination" reading is open, pending far-wall SMG and the rechecks.
 
 ## Gate (for the candidate termination clause, not adopted)
 
 1. No measured number is chosen.
 2. No observed structure is named. It is a layer and update condition, but the termination placement is chosen.
-3. Prediction not built for: the near wall is pi-free, so vacuum polarization and N_nu = N_f come back. The far wall holds
-   3 x 16 heavy states per family. UNTESTED on the full cell.
+3. Prediction not built for: the near wall is pi-free, so the S-even response of pi-sector-stability's probe would not
+   cancel there, and, conditional on that note's observable bridges, vacuum polarization and N_nu = N_f would come
+   back. The far wall holds 3 x 16 heavy states per family. UNTESTED on the full cell.
 4. It bends no axiom.
 
 Result: NOT YET PASSED (untested). It is not adopted.

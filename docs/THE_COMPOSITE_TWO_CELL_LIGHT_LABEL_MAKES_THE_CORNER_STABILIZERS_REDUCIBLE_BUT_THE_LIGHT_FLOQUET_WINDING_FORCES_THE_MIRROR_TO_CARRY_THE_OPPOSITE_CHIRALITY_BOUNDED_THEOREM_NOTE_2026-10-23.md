@@ -1,7 +1,7 @@
 ---
 claim_id: the_composite_two_cell_light_label_makes_the_corner_stabilizers_reducible_but_the_light_floquet_winding_forces_the_mirror_to_carry_the_opposite_chirality_bounded_theorem_note_2026-10-23
 claim_type: bounded_theorem
-claim_scope: "Free-band, symmetry-level test of escape 1 of the corner-stabilizer no-go. The light label is defined on a doubled cell (2x2x2 CL-1 cells = a 4^3 block) by folding FREEZE's composite light label. The rule keeps the 12 tetrahedral rotations about the block centre (and, as a control, about a cell centre) and the doubled translations. Exact (Schur, finite group): every doubled-zone corner stabilizer acts reducibly on the light space. At the zone centre, the Gamma light Weyl's 2T irrep appears exactly once more, in one X combination, and the other two X irreps are distinct with no light partner; the same holds at pi for R and M. Exact (topology, any cell size, any walk-invariant splitting): the Floquet 3D winding W3 is additive over sectors, vanishes on any sector gapped at one quasienergy, and equals minus the net node chirality at 0 and at pi. Finite diagnostic: W3(light) = -2 and W3(mirror) = +2 on FREEZE. Not covered: interacting gapping (the Floquet anomaly is cited, not proven), and labels that are not walk-invariant sectors."
+claim_scope: "Free-band, symmetry-level test of escape 1 of the corner-stabilizer no-go. The light label is defined on a doubled cell (2x2x2 CL-1 cells = a 4^3 block) by folding FREEZE's composite light label. The rule keeps the 12 tetrahedral rotations about the block centre (and, as a control, about a cell centre) and the doubled translations. Exact (Schur, finite group): every doubled-zone corner stabilizer acts reducibly on the light space. At the zone centre, the Gamma light Weyl's 2T irrep appears exactly once more, in one X combination, and the other two X irreps are distinct with no light partner; the same holds at pi for R and M. Exact (topology, any cell size, any walk-invariant splitting): the Floquet 3D winding W3 is additive over sectors, vanishes on any sector gapped at one quasienergy, and equals minus the net node chirality at 0 and at pi. FREEZE's light label is not walk-invariant (light-to-mirror-label block norm 2 sqrt2/3 at X; the Pi+ sector is invariant), so these sector statements do not apply to it. Finite diagnostic: the polar part of FREEZE's compressed light block, a map T^3 -> U(2), has degree W3 = -2 and the mirror-label map +2. Not covered: a walk-invariant light label carrying that winding, any transfer from the compressed-map degree to light or mirror spectra or to a mirror obstruction, interacting gapping (the Floquet anomaly is cited, not proven)."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -10,17 +10,24 @@ upstream_dependencies:
 runner: scripts/the_composite_two_cell_light_label_makes_the_corner_stabilizers_reducible_but_the_light_floquet_winding_forces_the_mirror_to_carry_the_opposite_chirality_2026_10_23.py
 ---
 
-# The composite two-cell light label makes the corner stabilizers reducible, but the light Floquet winding forces the mirror to carry the opposite chirality
+# The composite two-cell light label makes the corner stabilizers reducible; a walk-invariant light Floquet winding would force the mirror to carry the opposite chirality, and FREEZE's compressed light map has degree -2
 
 Claim type: bounded_theorem (two exact statements plus one finite diagnostic).
-Runner: runner.py, TOTAL: PASS=4 FAIL=0, 1.2 s, 106 MB peak, 2.4 k characters of stdout. It was run through
-scripts/runner_cache.execute_runner under a unique filename: status ok, exit 0. Axioms unchanged.
+Primary runner: `scripts/the_composite_two_cell_light_label_makes_the_corner_stabilizers_reducible_but_the_light_floquet_winding_forces_the_mirror_to_carry_the_opposite_chirality_2026_10_23.py`; cache `logs/runner-cache/the_composite_two_cell_light_label_makes_the_corner_stabilizers_reducible_but_the_light_floquet_winding_forces_the_mirror_to_carry_the_opposite_chirality_2026_10_23.txt`. Axioms unchanged.
+
+Local labels (2026-11-14). "CL-1" is the source label for the supplied cube tick and its site gauges; it is not CL-1 of
+the current [candidate-law register](CANDIDATE_LAWS.md) (a historical alias with zero premise weight).
+freeze-gapped-partners is [#10030](THE_CORNER_STABILIZER_FORCES_A_SCALAR_LIGHT_BLOCK_AT_X_AND_M_SO_NO_ROTATION_COVARIANT_FREEZE_DEFORMATION_GAPS_THE_LIGHT_PARTNERS_LIGHT_LIGHT_BOUNDED_THEOREM_NOTE_2026-10-23.md).
+
+Correction (2026-11-14, from the PR 10131 hold). FREEZE's light label is not an invariant subspace of the walk
+(runner B0; at X the CTWIST mixing h1 - i h2 = -2 sqrt2/3 couples it to the mirror label). The B-i to B-iii
+statements below hold for walk-invariant splittings and are kept. The measured W3 = -2 is the degree of the polar
+part of a compressed block, not a sector winding, so consequences (a)-(c) and the verdict are narrowed.
 
 ## Question
 
-freeze-gapped-partners proved a single-cell obstruction. D2 lifts to Q8, which acts irreducibly on the light
-spinor doublet, so the light block at X and M is scalar and the light partners cannot be gapped among light
-modes. Escape 1 asks whether a composite two-cell light label avoids this, and if so, whether a covariant
+freeze-gapped-partners proved a single-cell Schur statement. D2 lifts to Q8, which acts irreducibly on the light
+spinor doublet, so the compressed light block at X and M is scalar and no T-covariant light-light term splits it. Escape 1 asks whether a composite two-cell light label avoids this, and if so, whether a covariant
 cube-local light-light term can gap the extra partners while keeping only the K = 0 (and R) light Weyls.
 
 ## Construction
@@ -50,15 +57,18 @@ cube-local light-light term can gap the extra partners while keeping only the K 
   - General reason: Q8's only spinorial irrep is the 2-dimensional one. Any light space of dimension 2m is m copies
     of it, and the light block at a D2 point is 1_2 (x) (m x m). For m >= 2, levels can split pairwise. The
     single-cell obstruction was m = 1.
-- A2. The zone centre is where all of FREEZE's light nodes fold. The quasienergy-0 light space is Gamma plus the
-  X-triplet, 8 dimensions. Its 2T commutant has dimension 6 = 4 + 1 + 1:
+- A2. The zone centre is where Gamma and the X-triplet fold (the points where FREEZE's polar-compressed light map has
+  phase 0; R and the M-triplet, where it has phase pi, fold to R_D). The light-label space at Gamma plus the X-triplet
+  has 8 dimensions. Its 2T commutant has dimension 6 = 4 + 1 + 1 (a representation statement, independent of the
+  spectral reading):
   - the X-triplet is three distinct 2-dimensional irreps (commutant 3);
   - exactly one of them is isomorphic to Gamma's irrep (intertwiner dimension 1).
   The same holds at pi for R plus the M-triplet.
   - Consequence (Schur): a T-covariant light-light term at the zone centre is block-diagonal by irrep. It can pair
     Gamma's Weyl (chirality -1) only with one X combination, which destroys the protected Weyl. The other two X
     irreps (+1 each) have no light partner at all. They can only be shifted, which by the earlier note's A2
-    trichotomy leaves a node, a light Fermi surface, or a zero.
+    trichotomy leaves a phase-0/pi point, a crossing surface or a singular compression of the polar-compressed
+    map (a light node or Fermi surface only for a walk-invariant label).
   - This is the multiplicity form of the old wall. Reducibility is necessary but not sufficient.
 
 ## B. What actually blocks: the light Floquet winding
@@ -74,18 +84,21 @@ These are exact statements, derived here, valid for any cell size and any walk-i
 - B-iii (node formula). Put the branch cut at 0, or at pi. The obstruction to a global log then localizes on the
   nodes at that quasienergy, which gives W3 = -n_0 = -n_pi in the runner's chirality convention.
   - The general node formula is derived as a localization argument; the runner checks it numerically.
-  - Numerically: W3(light) = -2.0000 and W3(mirror) = +2.0000 on a 28^3 grid. The light block is never singular
-    (smallest singular value 0.35). This matches the corner bookkeeping n_0 = n_pi = +2 (light) and -2 (mirror).
-  - The total is 0, as a cube-local circuit requires.
-- Consequences:
-  - (a) Any light-light term (one that keeps the label invariant) conserves W3(light) = -2. The light sector
-    therefore always keeps net chirality +2 at 0 and +2 at pi.
+  - Numerically, for FREEZE's polar-compressed maps (not walk-invariant sectors, runner B0): degree -2.0000 for the
+    light-label map and +2.0000 for the mirror-label map on a 28^3 grid. The compression is never singular
+    (smallest singular value 0.35). This matches the corner degree bookkeeping of those maps, +2 (light) and -2
+    (mirror) at phase 0 and at pi.
+  - The measured sum is 0. Additivity (B-i) does not apply to compressed blocks, so this sum is a measurement.
+- Consequences, for a walk with a walk-invariant light label (none is constructed here):
+  - (a) Any light-light term that keeps the label invariant conserves W3(light).
   - (b) The target light content is the Gamma Weyl at 0 and the R Weyl at pi, each -1, and nothing else. It has
     W3(light) = +1.
     - Light with only the Gamma Weyl (R absent) is impossible, because n_0 = n_pi is required.
-  - (c) So any relabelling (on any doubled or larger cell) that reaches the target must move 3 units of winding.
-    The complement then has W3 = -1. By B-ii it is gapless at every quasienergy and cannot be gapped by
-    complement-only terms at the free level.
+  - (c) If such a walk had total W3 = 0, its complement would have W3 = -1, and by B-ii it would be gapless at every
+    quasienergy and could not be gapped by complement-only terms at the free level.
+  - For FREEZE itself: the compressed-map degree -2 is invariant under deformations that keep the compression
+    invertible (homotopy), but it does not by itself fix the light spectrum, the mirror's chirality or a mirror
+    obstruction. That transfer needs a hypothesis-preserving bridge, not supplied here.
   - (d) Interacting level: a U(1) Floquet sector with nonzero W3 carries a quantized Floquet chiral-magnetic
     response. This is LITERATURE (Higashikawa-Nakagawa-Ueda 2019), cited and not used in a proof. It suggests
     that mirror-only SMG is anomalous. Not proven here.
@@ -94,21 +107,21 @@ These are exact statements, derived here, valid for any cell size and any walk-i
 
 1. Is the doubled-zone corner stabilizer action reducible? YES at every corner (commutants 24, 64, 64, 24 against
    1 before). Exact.
-2. Is there a covariant cube-local light-light term that gaps the partners and keeps only Gamma and R? NO, at the
-   free level.
-   - With the folded composite label, Schur leaves two X irreps (and two M irreps) without a light partner. The
-     only pairing channel consumes the Gamma (respectively R) Weyl.
-   - With any label, light-light terms conserve W3(light) = -2, which is incompatible with the target's +1.
-3. Bookkeeping: light net chirality is +2 at 0 and +2 at pi (W3 = -2). Mirror is the opposite. The target needs
-   W3(light) = +1.
-   - Escape 1 cannot evade Nielsen-Ninomiya through a stand-alone light Floquet winding with a gappable mirror.
-   - It can do so only if the mirror carries the opposite winding (W3 = -1), and that mirror is then gapless at
-     every quasienergy.
+2. Is there a covariant cube-local light-light term that gaps the partners and keeps only Gamma and R? Not with the
+   folded composite label at the free level (Schur, exact): Schur leaves two X irreps (and two M irreps) without a
+   light partner, and the only pairing channel consumes the Gamma (respectively R) Weyl.
+   - For a walk-invariant light label, light-light terms conserve W3(light), and a target W3 of +1 then fixes the
+     complement's winding. FREEZE's label is not walk-invariant, so its -2 does not enter this argument.
+3. Bookkeeping: FREEZE's polar-compressed light map has degree -2 (+2 at phase 0 and at pi); the mirror-label map is
+   the opposite. For a walk-invariant light sector the target needs W3(light) = +1, and its complement would then
+   carry W3 = -1 and be gapless at every quasienergy.
 4. Gate: below.
 
-Verdict: NO-GO for escape 1 as a partner-gapping route (exact, bounded to free, walk-invariant sectors under T
-and translation at any zoom).
-- The Schur wall does move, but the real obstruction is the conserved light winding, and no zoom changes it.
+Verdict (narrowed 2026-11-14): with the folded composite label, escape 1 fails as a partner-gapping route by Schur
+multiplicity (exact, free level). The winding argument is exact for walk-invariant sectors under T and translation
+at any zoom; FREEZE's light label is not one, so its compressed-map degree does not by itself establish a light or
+mirror spectral obstruction.
+- The Schur wall moves to a multiplicity wall.
 - Walls move. What escapes this note:
   - (i) accept a nonzero-W3 mirror, and test whether a Floquet-anomalous mirror (gapless at all quasienergies)
     is physically acceptable, for example as a hidden sector;
@@ -120,9 +133,9 @@ and translation at any zoom).
 
 1. Numbers: none. Pass.
 2. Named structure: none. It uses only cells, rotations, and labels already in FREEZE. Pass.
-3. Prediction not built for: it predicts that the light sector keeps net chirality +2 at 0 and at pi (W3 = -2)
-   whatever the light-light layer is. That contradicts the target content. The rule cannot deliver what it was
-   proposed for. FAIL.
+3. Prediction not built for: by Schur multiplicity the folded label leaves two X (and two M) irreps without a light
+   partner whatever the light-light layer is, and the only pairing channel consumes the protected Weyl. The rule
+   cannot deliver what it was proposed for. FAIL.
 4. Axiom bent: none (cube-local, one mode per site; only the cell-scale translation is broken internally).
 
 Result: FAIL. Not adopted.
@@ -138,7 +151,7 @@ Result: FAIL. Not adopted.
 - Forced:
   - the reducibility numbers;
   - the 2T multiplicity pattern (6, 3, 1);
-  - W3 additivity, the vanishing of W3 on a gapped sector, and W3 = -n_0 = -n_pi;
-  - W3(light) = -2.
+  - W3 additivity, the vanishing of W3 on a gapped sector, and W3 = -n_0 = -n_pi (walk-invariant sectors);
+  - the compressed-map degree -2 (a finite diagnostic of a map, not a sector winding).
 - Literature (cited, not used in a proof): the Floquet chiral magnetic effect.
 - Not used: any measured number.

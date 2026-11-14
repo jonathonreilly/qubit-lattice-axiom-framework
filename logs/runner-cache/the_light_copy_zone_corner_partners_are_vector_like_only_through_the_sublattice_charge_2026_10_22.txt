@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_light_copy_zone_corner_partners_are_vector_like_only_through_the_sublattice_charge_2026_10_22.py
-runner_sha256: 380bb64b56513e942df2d78f3bb337c49d7ff8d16758886628b6d8ed79cb3b69
-input_fingerprint_sha256: 61e75d1fe752d831eceb51ee12a3a3ad1966bda192e5a3ca1dd91d245b35cb83
+runner_sha256: 3eaed31260840f996b4fc7ab02b609f91e8845e4f83b410a54fdc72cf06ef7f1
+input_fingerprint_sha256: fffa984497fb7a9673761863b268daa19088612362bb401477b6759320925fd0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.06
+elapsed_sec: 0.81
 status: ok
 ----- stdout -----
 == A. Census ==
@@ -26,8 +26,8 @@ status: ok
 [PASS] C1 symmetric atom: gap 1.000 g; at w=0 G_m = 1e-09 (the SMG zero), G_Phi = 1e-09, |G_(m,Phi)| = 1.0000/g: m and Phi = eps m^+m^+m^+/6 (same Z4 charge) interpolate the same gapped level
 [PASS] C2 one block, light l_a coupled by w l^+m + lam l^+Phi (exact ED, 256 states, w = lam = 0.05): light level w only 1.2e-04, lam only 9.2e-06 (released, higher order); both 0.00498 g vs 2 w lam/g = 0.00500: re-gapped only through the anomalous G_(m,Phi)
 [PASS] C3 in the band that same composite self-energy is spin-blind (G_(m,Phi) is a number at w = 0), so on a corner Weyl it is a node shift mu = 2 w lam/g, not a mass: sigma.k + mu has a zero at |k| = mu (min |E| = 0e+00), a Fermi pocket. A Weyl gaps only with an opposite-chirality partner of its own eps sector (the mirror's R_L, B1) or a Majorana pair (no Spin(10) singlet in 16 x 16)
-[PASS] C4 selection rules: Spin(10), Z4 (Phi charge 3 = -1 mod 4), eps and spin act alike on G_L and on its corner partner; only momentum separates them, so any composite coupling strong enough to gap the partner gaps G_L too unless its form factor vanishes at G
-TOTAL: PASS=14 FAIL=0
+NOT CHECKED (not counted): C4 selection-rule reading: Spin(10), Z4 (Phi charge 3 = -1 mod 4), eps and spin act alike on G_L and on its corner partner; only momentum separates them, so any composite coupling strong enough to gap the partner gaps G_L too unless its form factor vanishes at G
+TOTAL: PASS=13 FAIL=0
 
 ----- stderr -----
 

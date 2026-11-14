@@ -129,7 +129,7 @@ check("A1", "THEOREM", sum(wl) == 0 and sum(wm) == 0 and wl[0] == -wm[0] and max
 note("A2", "THEOREM", "which assumption fails: none of GS 2505.20436's (finite-range fermion-only H, unbroken G, free massless continuum, zero-free interpolating set); the gauge-off slab meets them and is vector-like (A1). GK evades only the corollary 'vector-like spectrum => vector-like gauge theory', which needs both ends to couple through the local current; the mirror reads a range-r functional A_* with f(0) = 1, so it is chiral only for 1/r << k << 1/a")
 
 # ===================== B. the induced gauge-invariant mass term ============
-print("== B. far layers that read A_* != A: Gamma gains c (A - A_*)^2, gauge invariant, unprotected")
+print("== B. far layers that read A_* != A: Gamma gains (c/2) (A - A_*)^2 (c = d^2 Gamma / dA^2, the curvature), gauge invariant, unprotected")
 P8 = layer_pi(4, 8, 16)
 cuts8 = [w @ P8 @ w for w in [(np.arange(8) < j).astype(float) for j in range(1, 8)]]
 ramps = [np.clip((4 + nr / 2 - np.arange(8) - 0.5) / nr, 0, 1) for nr in (1, 2, 4)]
@@ -141,7 +141,7 @@ c8b = (np.arange(8) < 4).astype(float) @ P8b @ (np.arange(8) < 4).astype(float)
 ward = max(np.abs(P8.sum(1)).max(), np.abs(P16.sum(1)).max())
 cDW = cuts8[3]
 check("B1", "DIAGNOSTIC", ward < 1e-3 and abs(cDW) > 0.01 and abs(c16 - c8b) < 1e-3 and np.ptp(cuts8[1:-1]) < 1e-3 and np.ptp(rv) < 2e-3 * 1 + 0.002,
-      "4D Shamir slab (DW - PV), constant layer fields: Ward rows -> 0; near layers read A, far A_* = 0 (window k >> 1/r): a mass term c A^2 per q^2, the same for every cut position, ramp width and Ls: an end term, not a bulk F_s mu^2",
+      "4D Shamir slab (DW - PV), constant layer fields: Ward rows -> 0; near layers read A, far A_* = 0 (window k >> 1/r): curvature c = d^2 Gamma/dA^2 per q^2 (Gamma gains (c/2) A^2), the same for every cut position, ramp width and Ls: an end term, not a bulk F_s mu^2",
       "Ward max %.0e (N=16); c at cut j=1..7: %s; ramps n=1,2,4: %s; Ls=16 %.4f vs Ls=8 %.4f (N=12)"
       % (ward, np.round(cuts8, 4), np.round(rv, 4), c16, c8b))
 G4, g54 = gammas(4)
@@ -160,7 +160,7 @@ q2[:, 0] -= 1e-4
 dP = (sign_hw(q2, G4, g54) - sign_hw(q1, G4, g54)) / 4e-4     # d(P_-) with P_- = (1 - eps)/2
 gq = 0.5 * np.real(np.einsum('bij,bji->b', dP, dP))
 check("B2", "THEOREM", abs(cOV - 2 * gq.mean()) < 1e-4 and gq.mean() > 0.01,
-      "overlap form (Ls -> inf): |det| = |<v(A)|v(A_*)>|^2 per momentum, so for A_* = 0 the mass coefficient is c = 2 <g_00>, the zone mean of the quantum metric of H_W's filled bands: positive, zero only if the filled projector is momentum independent (trivial bands, no light chiral mode): the topology that makes the light end chiral forces the mass",
+      "overlap form (Ls -> inf): |det| = |<v(A)|v(A_*)>|^2 per momentum, so for A_* = 0 the curvature is c = 2 <g_00> (Gamma = <g_00> A^2 = (c/2) A^2), g the quantum metric of H_W's filled bands: positive, zero only if the filled projector does not depend on p_0 (then D does not depend on p_0 and has no cone D = i p-slash/M at p = 0): the light chiral cone forces the mass",
       "c_overlap %.5f, 2<g> %.5f, min g %.0e" % (cOV, 2 * gq.mean(), gq.min()))
 del e0, dP, pts
 al_em = 1 / 137.036
@@ -169,7 +169,7 @@ sq = 16.0   # sum Q^2 over three families of Weyl fields
 mDW, mOV = np.sqrt(e2 * sq * abs(cDW)), np.sqrt(e2 * sq * cOV)
 inv_a = 2.44e18   # GeV, hbar c / a with a = sqrt(8 pi) l_P
 check("B3", "ESTIMATE", mOV * inv_a > 1e16,
-      "window photon: Pi(k) = e^2 c sum Q^2 (1 - f(kr))^2 / a^2, a Planck-scale mass (tachyonic for Shamir) for all k > 1/r, so no electromagnetism below r (and r >> 1/m_e is needed); no local A^2 counterterm is gauge invariant; only a tuned -c(A - A_*)^2, to ~1e-90",
+      "CONDITIONAL ESTIMATE (inputs: a = sqrt(8 pi) l_P, alpha = 1/137, sum Q^2 = 16, constant layer fields; finite-k 4D response not computed): Gamma = (1/2) m^2 A^2 with m^2 a^2 = e^2 c sum Q^2; window photon: Pi(k) = e^2 c sum Q^2 (1 - f(kr))^2 / a^2, a Planck-scale mass (tachyonic for Shamir) for all k > 1/r, so no electromagnetism below r (and r >> 1/m_e is needed); no local A^2 counterterm is gauge invariant; only a tuned -(c/2)(A - A_*)^2, to ~1e-90",
       "sum Q^2 = %.0f, alpha = 1/137: m_gamma a = %.2f (Shamir, m^2 < 0), %.2f (overlap) -> |m| = %.1e, %.1e GeV" % (sq, mDW, mOV, mDW * inv_a, mOV * inv_a))
 c2 = None
 p2 = bz(2, 512)
@@ -196,8 +196,20 @@ for b in bs:
 env = np.array(leak) * np.array(bs) * k
 fl_t = [(1 - 4 * 0.125 * np.sin(k / 2) ** 2) ** n for n in (400, 1600, 6400, 25600)]
 check("C1", "THEOREM", np.all(env[2:] < 2.01) and leak[-1] < 0.05 and fl_t[-1] < 1e-3,
-      "mirror's residual field-strength coupling at fixed k: block (box) reading |sin(kb/2)/(b sin(k/2))| <= 2/(kb), a power 1/r in amplitude (1/r^2 in the action); flow (1 - eps khat^2)^n, gaussian in r = sqrt(n); the induced mass c(1 - f)^2 grows to its full value instead: gauge non-invariance does not appear at any r, but the mass does not fall with r",
+      "mirror's residual field-strength coupling at fixed k: block (box) reading |sin(kb/2)/(b sin(k/2))| (measured leak), O(1/b) at fixed k (bound C1b), 1/r^2 in the action; flow (1 - eps khat^2)^n, gaussian in r = sqrt(n); the induced term (c/2)(1 - f)^2 grows to its full value instead: gauge non-invariance does not appear at any r, but the mass does not fall with r",
       "k = 2pi*37/4096, b=%s: leak %s, kb*leak %s; flow n=400..25600: %s" % (bs, np.round(leak, 3), np.round(env, 2), ["%.0e" % v for v in fl_t]))
+# C1b exact bound on the zone: |sin(kb/2)/(b sin(k/2))| <= 1/(b |sin(k/2)|) <= pi/(b |k|) for 0 < |k| <= pi (Jordan: sin x >= 2x/pi on [0, pi/2]);
+# the small-k envelope 2/(kb) is NOT a bound in the zone. Witness (hold finding 6): b = 8, k = 7 pi/8.
+filt = lambda kk, bb: np.abs(np.sin(kk * bb / 2) / (bb * np.sin(kk / 2)))
+kz = np.linspace(1e-4, np.pi, 20001); ratio_ex, ratio_pi = 0.0, 0.0
+for bb in range(2, 65):
+    ratio_ex = max(ratio_ex, np.max(filt(kz, bb) * bb * np.abs(np.sin(kz / 2))))
+    ratio_pi = max(ratio_pi, np.max(filt(kz, bb) * bb * kz / np.pi))
+fw, ew = filt(7 * np.pi / 8, 8), 2 / (7 * np.pi / 8 * 8)
+check("C1b", "THEOREM", ratio_ex <= 1 + 1e-12 and ratio_pi <= 1 + 1e-12 and fw > ew,
+      "box filter on the zone: |sin(kb/2)/(b sin(k/2))| <= 1/(b|sin(k/2)|) <= pi/(b|k|) for 0 < |k| <= pi (b = 2..64, 20001 momenta); "
+      "control: the small-k envelope 2/(kb) fails inside the zone (b = 8, k = 7 pi/8), so it is not a bound",
+      "max filter x b|sin(k/2)| %.6f, max filter x b|k|/pi %.6f; witness b = 8, k = 7pi/8: filter %.5f > 2/(kb) = %.5f" % (ratio_ex, ratio_pi, fw, ew))
 
 # ===================== D. non-abelian block-flux spreading =================
 print("== D. SU(2) on 8 x 8: rung-b spreading with anchor (comb-tree) transports")
@@ -365,9 +377,10 @@ check("E1", "THEOREM", abs(a[0] - a[1]) < 1e-10 and a[1] > 0.1 and b_[1] < 1e-2 
       "inversion (x, s) -> (-x, Ls-1-s) with sigma_z is a symmetry of the slab exchanging the ends; a fold (period-2 order on every site) that ends suddenly respects it, so it fills light and mirror edge modes equally; only a rule that singles out the near layers fills the light end alone",
       "edge quanta (near, far): layer-blind (%.4f, %.4f); layer 0 only (%.4f, %.1e)" % (a + b_))
 neff = 48 * (10.75 / 106.75) ** (4 / 3)
-note("E2", "ESTIMATE", "the CL rules that make excitations are layer-blind (the fold, its misfolds on every layer of the role block, the split's flips), so reheating gives the mirror the SM temperature: Delta N_eff = %.2f vs Planck 2.99 +- 0.17 (%.0f sigma); allowed needs rho_mirror/rho_SM <~ 0.1, a lopsided reheating no rule supplies" % (neff, (neff + 3.044 - 2.99) / 0.17))
+note("E2", "ESTIMATE (not counted; premise from source-local rules not in this repository)", "the CL rules (as the source notes state them) that make excitations are layer-blind (the fold, its misfolds on every layer of the role block, the split's flips), so reheating gives the mirror the SM temperature: Delta N_eff = %.2f vs Planck 2.99 +- 0.17 (%.0f sigma); allowed needs rho_mirror/rho_SM <~ 0.1, a lopsided reheating no rule supplies" % (neff, (neff + 3.044 - 2.99) / 0.17))
 note("E3", "ESTIMATE", "after reheating: gravity Gamma/H ~ (T/M_P)^3 <= 1e-30; sphalerons give only the r-cell net winding (rho ratio ~1e-45 at 130 GeV, r = R_Earth); smoothed fields with E^2 > B^2 or E.B != 0 pair-make the massless mirror, so r must exceed every coherent field (r ~ c/H0 is safe)")
-print("verdict: 2D toy survives; 3+1D route FAILS as stated (B: Planck-scale photon mass above 1/r) unless a tuned (A - A_*)^2 clause is added; it also needs lopsided reheating (E); D passes")
+print("verdict: 2D toy survives; in the 4D slab models at constant layer fields the route induces a gauge-invariant (c/2)(A - A_*)^2 term, a cutoff-scale photon mass (conditional estimate B3) unless a tuned clause cancels it; E2 reheating is an estimate on source-local rules; D passes")
 print("supplied: Shamir and overlap kernels, M = 1, Ls, grids, PV, profiles, SU(2) fields, Chern strip, measured inputs | %.1f s" % (time.time() - T0))
 print("cited: gk-smoothed-layers, rung-dimension-chirality, fold-inflaton; Golterman-Shamir 2505.20436; Grabowska-Kaplan 1511.03649; Ago-Kikukawa 1911.10925")
 print("TOTAL: PASS=%d FAIL=%d" % tuple(NP))
+raise SystemExit(1 if NP[1] else 0)

@@ -395,3 +395,4 @@ print('supplied: SU(4) toy, one mode per flavour per block, real pi-flux band, B
 print('cited: qmc-face-gapped (#9983), toy-qmc (#9965), register CL-1 far-end and SMG items, smg-literature (Ayyar-Chandrasekharan)')
 print(f'elapsed {time.time() - T00:.1f} s')
 print(f'TOTAL: PASS={NP[0]} FAIL={NP[1]}')
+raise SystemExit(1 if NP[1] else 0)

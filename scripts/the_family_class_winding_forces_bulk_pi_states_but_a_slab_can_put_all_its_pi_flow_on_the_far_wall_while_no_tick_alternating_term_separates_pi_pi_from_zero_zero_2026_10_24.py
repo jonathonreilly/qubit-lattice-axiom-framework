@@ -266,3 +266,4 @@ check("C1 [T]", allowed(1) == [3, 6, 9] and allowed(2) == [3, 6, 9],
 mem = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / (1 << 20)
 print(f"   time {time.time() - T0:.1f} s, peak {mem:.0f} MB")
 print(f"TOTAL: PASS={NP[0]} FAIL={NP[1]}")
+raise SystemExit(1 if NP[1] else 0)

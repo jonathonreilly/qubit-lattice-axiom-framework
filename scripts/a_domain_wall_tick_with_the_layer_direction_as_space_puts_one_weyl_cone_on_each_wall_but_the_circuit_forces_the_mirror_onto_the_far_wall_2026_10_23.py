@@ -167,6 +167,21 @@ ws = W3(lambda q: walk(q, 4, M0, TH), lambda q, j: walk(q, 4, M0, TH, j), 8)
 check("A8 [T] where the W3 obstruction binds: the whole slab is a 3D walk built only from gates exp(-i theta h), so it is homotopic to 1 and W3 = 0 exactly (n0 = npi = 0 summed over both walls); one wall "
       "has (n0, npi) = (-1, 0), which no walk-invariant sector of any 3D walk can have (sector relation n0 = npi = -W3, control K): the "
       "light wall is not a walk sector, and the mirror is the far wall", abs(ws) < 1e-6, f"slab W3 (Ls = 4, 8^3) = {ws:.1e}")
+# A9 (hold finding 5): the tick U is unitary, not a positive transfer matrix. A positive Hermitian unitary has every eigenvalue
+# positive with modulus 1, so it is the identity; U has nonreal eigenphases. Control: exp(-tau H) passes the same positivity test.
+def positive_transfer(Tm, tol=1e-10):
+    herm = np.abs(Tm - Tm.conj().T).max(); scale = max(1.0, np.abs(Tm).max())
+    return herm < tol * scale and np.linalg.eigvalsh((Tm + Tm.conj().T) / 2).min() > 0, herm
+rngP = np.random.default_rng(20261114); pos_U, pos_T, maxph, herm_U, uni_T = [], [], 0.0, 0.0, 0.0
+for kq in [rngP.uniform(-np.pi, np.pi, 3) for _ in range(4)]:
+    Uq = walk(kq, 6, M0, TH); Tq = expm(-1.0 * ham(kq, 6, M0))
+    pu, hu = positive_transfer(Uq); pt, _ = positive_transfer(Tq)
+    pos_U.append(pu); pos_T.append(pt); herm_U = max(herm_U, hu)
+    maxph = max(maxph, np.abs(np.angle(np.linalg.eigvals(Uq))).max()); uni_T = max(uni_T, np.abs(Tq @ Tq.conj().T - np.eye(len(Tq))).max())
+check("A9 [T] the tick U is unitary with nonreal eigenphases, so it is not a positive (Hermitian) transfer matrix; control: exp(-tau H), "
+      "tau = 1, passes the positivity test and is not unitary. No Euclidean reflection-positive transfer operator is built here",
+      not any(pos_U) and all(pos_T) and maxph > 0.01 and uni_T > 0.1,
+      f"U positive at 4 momenta: {pos_U}; max |U - U^+| {herm_U:.2f}; max |eigenphase| {maxph:.3f}; exp(-H) positive: {pos_T}, non-unitarity {uni_T:.2f}")
 
 print("== K. control: W3 integrator and the sector relation on U = (d0 + i d.sigma)/|d|, d0 = m - sum cos k, d = sin k")
 def Ud(q, m):
@@ -226,3 +241,4 @@ print("Supplied: Wilson-type slab (Gamma basis, m = 0.6 in the window 0 < m < 2,
 print("Open: gauging the light wall alone, or gapping the far wall by symmetric interactions (not attempted here).")
 print(f"elapsed {time.time()-T0:.1f}s, peak RSS {resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1e6:.0f} MB")
 print(f"TOTAL: PASS={P} FAIL={F}")
+raise SystemExit(1 if F else 0)

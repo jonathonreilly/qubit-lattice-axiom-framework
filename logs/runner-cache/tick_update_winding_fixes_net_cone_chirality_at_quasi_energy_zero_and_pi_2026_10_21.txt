@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/tick_update_winding_fixes_net_cone_chirality_at_quasi_energy_zero_and_pi_2026_10_21.py
 runner_sha256: 4831d2a732a4fa60c5187fd6f2112623c0a3967b58813769b880618d102db122
-input_fingerprint_sha256: 3af516ea4a88f9459eb3dce7da5ad91bd6b108d8dc9acf86a59654275111a53d
+input_fingerprint_sha256: ca0c4cd53ad61ed0fca0f03964e5eb472951cf8a640ea5b1bfdd539c2980c192
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.69
+elapsed_sec: 0.54
 status: ok
 ----- stdout -----
 [PASS] split-step S_z S_y S_x: 8 cones at quasi-energy 0 (4 of each chirality) and 8 at pi (4 of each)  0: +4/-4; pi: +4/-4; corners carry +1 at both 0 ([1, 1, 1, 1]) and pi ([1, 1, 1, 1]), the pi/2-points -1
@@ -21,7 +21,7 @@ status: ok
 theorem: SU(2) walk => net chirality at 0 = net at pi = -W3 (the degree); any product of coins and coin-conditioned shifts has deg 0.
 external input (not rederived here): SK1 of the Laurent ring C[Z^3] vanishes, so every finite-range walk has W3 = 0.
 supplied: the quasi-local walk, its parameter m and its exponential tail; no adopted tick update or matter content.
-elapsed_seconds 0.6
+elapsed_seconds 0.5
 
 TOTAL: PASS=10 FAIL=0
 

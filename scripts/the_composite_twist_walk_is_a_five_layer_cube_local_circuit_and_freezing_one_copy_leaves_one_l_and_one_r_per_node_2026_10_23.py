@@ -7,8 +7,8 @@ Self-contained (numpy + scipy), seeded. Rebuilds CL-1's 2^3 cell (one fermion mo
 Bloch over 2Z^3, 8 cell states), the 12 tetrahedral rotations T with CL-1's site gauges V, the cell spin sigma,
 the cell taste doublet tau, CL-1's chirality chi, and CTWIST U(K) = f + i(h1 tau1 + h2 tau2 + tau3 g.sigma).
   A. Layers: exact no-go for any even.odd.even product of cube-local layers (this includes CL-1's own
-     two-layer shape); exact factorisation into five cube-local layers (even.odd.even.odd.even) on the two
-     tilings; finite search for a factorisation whose layers each commute with the site rotations.
+     two-layer shape); NUMERICAL factorisation into five cube-local layers (even.odd.even.odd.even) on the two
+     tilings (block-coordinate polar ascent, residual below 1e-10; not an exact gate witness); finite search for a factorisation whose layers each commute with the site rotations.
   B. The eta doubling: Schur/Kramers structure at the T-fixed nodes; the chirality-agreement sector
      (1 + chi tau3)/2; rule FREEZE (the disagreeing sector does not hop); its content and its layers.
   C. The label mirror term (1 - tau3)/2: what a free term does to the remaining R Weyl.
@@ -208,9 +208,14 @@ def factor(U, label):
 
 
 r5, off5, nz5, ninv5, UtC = factor(Uc, "CTWIST")
-check("A2 CTWIST factorises EXACTLY into five cube-local layers even.odd.even.odd.even on CL-1's two tilings "
-      "(degree <= 2 per direction, so the 5^3 grid identifies the product; off-grid check too)",
+check("A2 NUMERICAL diagnostic: block-coordinate polar ascent finds five cube-local unitary gates even.odd.even.odd.even on the two "
+      "tilings whose product matches CTWIST to residual < 1e-10 on the 5^3 grid and at 4 off-grid momenta. A small residual does not "
+      "prove that exactly satisfying gates exist; an exact gate witness is open",
       r5 < 1e-10 and off5 < 1e-10, f"grid rms {r5:.1e}, off-grid {off5:.1e}, nonzero gate entries {nz5}")
+# A2c control: the same ascent at depth 3 (even.odd.even), where A1 proves no factorisation exists, must stall
+fl3 = min(search(UtC, (0, 1, 0), 300, 200 + s_, False)[0] for s_ in range(3))
+check("A2c control: the same polar ascent at depth 3, where the exact A1 no-go holds, stalls far from 0 (so the depth-5 residual is "
+      "not produced by the method alone)", fl3 > 0.1, f"depth-3 rms floor {fl3:.3f} (3 seeds, 300 sweeps)")
 fl = {}
 for pat in [(0, 1, 0, 1, 0), (0, 1, 0, 1, 0, 1, 0), (0, 1, 0, 1, 0, 1, 0, 1, 0)]:
     fl[len(pat)] = min(search(UtC, pat, 250, 100 + s, True)[0] for s in range(5))
@@ -280,7 +285,7 @@ check("B5 light content under FREEZE: exactly one L Weyl (q = 2) and one R Weyl 
       "all (half of CTWIST's 4 + 4); by B1 Schur no T-invariant L-R mass (characters differ)",
       wz == wr == [("L", 2, [2]), ("R", 2, [1])], f"K=0 {wz}; R {wr}")
 r5F, off5F, nzF, _, _ = factor(UF, "FREEZE")
-check("B6 the FREEZE walk also factorises exactly into five cube-local layers (no nearest-neighbour bend)",
+check("B6 NUMERICAL diagnostic: the FREEZE walk also matches a product of five cube-local layers to residual < 1e-10 (no exact gate witness)",
       r5F < 1e-10 and off5F < 1e-10, f"grid rms {r5F:.1e}, off-grid {off5F:.1e}")
 
 print("== C. the label mirror term (1 - tau3)/2 ==")
@@ -299,6 +304,7 @@ check("C1 a free label term exp(i phi (1 - tau3)/2) cannot gap the mirror: phi =
 lk = [np.linalg.norm(Pp @ (np.eye(8) + tau3) / 2 @ UF(np.array([1, .3, -.2]) * x) @ PRl) for x in (0.02, 0.01)]
 check("C2 the label (1 - tau3)/2 is exact at the nodes and leaks O(K^2) under FREEZE (ratio 4 for K -> K/2)",
       abs(lk[0] / lk[1] - 4) < 0.05, f"ratio {lk[0] / lk[1]:.3f}")
-print("verdict: CTWIST and FREEZE are five-layer cube-local circuits (no bend), layers not individually T-symmetric;")
+print("verdict: CTWIST and FREEZE match five-layer cube-local products numerically (residual < 1e-10; exact witness open), found layers not T-symmetric;")
 print("FREEZE leaves one L(q=2)+one R(q=1) per node; separating the mirror needs an interacting (multi-family) term.")
 print(f"TOTAL: PASS={NPASS} FAIL={NFAIL}")
+raise SystemExit(1 if NFAIL else 0)

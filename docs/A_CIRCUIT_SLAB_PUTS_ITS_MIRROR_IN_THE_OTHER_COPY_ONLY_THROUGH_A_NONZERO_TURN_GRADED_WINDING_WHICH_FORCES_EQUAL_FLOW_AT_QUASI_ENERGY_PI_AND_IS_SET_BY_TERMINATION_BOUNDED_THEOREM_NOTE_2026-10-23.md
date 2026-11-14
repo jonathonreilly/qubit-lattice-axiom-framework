@@ -1,7 +1,7 @@
 ---
 claim_id: a_circuit_slab_puts_its_mirror_in_the_other_copy_only_through_a_nonzero_turn_graded_winding_which_forces_equal_flow_at_quasi_energy_pi_and_is_set_by_termination_bounded_theorem_note_2026-10-23
 claim_type: bounded_theorem
-claim_scope: "Free-field Floquet (circuit) slabs on CL-1's 2x2x2 cell with the site-gauged (111) turn T3 as a symmetry on the turn axis K = kappa (1,1,1). (T1) Sum rule: in each turn sector the eigenphase flow through every quasi-energy equals the winding W_a of det U_a(kappa), so F_0 = F_pi = W in Z[Z3] (augmentation 0). Every circuit of cube-local gates that each commute with T3 (and every exp(-i t H) with H turn-symmetric) has W = 0, so q_mirror = q_light holds in each gap separately. (T2) FREEZE (twist-local-single) has W = (-2, 1, 1); hence FREEZE is not a product of T3-commuting cube-local gates at any depth. (T3) A light q 2 Weyl at 0 with the q 1 mirror only at pi is impossible; light q 2 and mirror q 1 at 0 force flow (-2, 1, 1) at pi, i.e. at least two more Weyls at pi per family. (F) A coupled-layer circuit slab (layers alternating FREEZE and its inverse, turn-commuting tau3-label gates q 1 on even bonds and q 2 on odd bonds, g = 0.5) has its bulk gapped at 0 and pi (0.50 on a 12^4 grid). For odd Ls the near wall holds the light q 2 (hand +1) at (K = 0, 0) and (R, pi), and the far wall holds the mirror q 1 (hand -1) at both. For even Ls the far wall holds q 2. With the anomaly-family-count index and Omega twist, the odd slab allows N_f = 3, 6, 9. Not covered: interactions, gauge fields, the Omega gapping itself, a rule fixing the termination."
+claim_scope: "Free-field Floquet (circuit) slabs on CL-1's 2x2x2 cell with the site-gauged (111) turn T3 as a symmetry on the turn axis K = kappa (1,1,1). (T1) Sum rule: in each turn sector the eigenphase flow through every quasi-energy equals the winding W_a of det U_a(kappa), so F_0 = F_pi = W in Z[Z3] (augmentation 0). Every circuit of cube-local gates that each commute with T3 (and every exp(-i t H) with H turn-symmetric) has W = 0, so q_mirror = q_light holds in each gap separately. (T2) FREEZE (twist-local-single) has W = (-2, 1, 1); hence FREEZE is not a product of T3-commuting cube-local gates at any depth. (T3) A light q 2 Weyl at 0 with the q 1 mirror only at pi is impossible; light q 2 and mirror q 1 at 0 force flow (-2, 1, 1) at pi, i.e. at least two more Weyls at pi per family. (F) A coupled-layer circuit slab (layers alternating FREEZE and its inverse, turn-commuting tau3-label gates q 1 on even bonds and q 2 on odd bonds, g = 0.5) has its bulk gapped at 0 and pi (0.50 on a 12^4 grid). For odd Ls the near wall holds the light q 2 (hand +1) at (K = 0, 0) and (R, pi), and the far wall holds the mirror q 1 (hand -1) at both. For even Ls the far wall holds q 2. With the anomaly-family-count index and Omega twist (a supplied index form from a source not in this repository; the count is conditional on it), the odd slab allows N_f = 3, 6, 9. Not covered: interactions, gauge fields, the Omega gapping itself, a rule fixing the termination."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -16,8 +16,16 @@ runner: scripts/a_circuit_slab_puts_its_mirror_in_the_other_copy_only_through_a_
 # A circuit slab puts its mirror in the other copy only through a nonzero turn-graded winding, which forces equal flow at quasi-energy pi and is set by termination
 
 Claim type: bounded_theorem. Exact statements are labelled [T], finite diagnostics [F] and readings [S].
-Runner: runner.py, TOTAL: PASS=12 FAIL=0, 7.7 s, 62 MB peak, 4.8 k characters of stdout, seeded, AUDIT_TIMEOUT_SEC = 120.
-It was tested under a unique filename (scratch/floquet_pi_slab_test_run.py). Axioms unchanged. No rule adopted.
+Primary runner: `scripts/a_circuit_slab_puts_its_mirror_in_the_other_copy_only_through_a_nonzero_turn_graded_winding_which_forces_equal_flow_at_quasi_energy_pi_and_is_set_by_termination_2026_10_23.py`; cache `logs/runner-cache/a_circuit_slab_puts_its_mirror_in_the_other_copy_only_through_a_nonzero_turn_graded_winding_which_forces_equal_flow_at_quasi_energy_pi_and_is_set_by_termination_2026_10_23.txt`. Axioms unchanged. No rule adopted.
+
+Local labels (2026-11-14). "CL-1" is the source label for the supplied cube tick (2x2x2 cell, site-gauged turn); it is
+not CL-1 of the current [candidate-law register](CANDIDATE_LAWS.md) (a historical alias with zero premise weight).
+Short source names: twist-local-single is [#10041](THE_COMPOSITE_TWIST_WALK_IS_A_FIVE_LAYER_CUBE_LOCAL_CIRCUIT_AND_FREEZING_ONE_COPY_LEAVES_ONE_L_AND_ONE_R_PER_NODE_BOUNDED_THEOREM_NOTE_2026-10-23.md)
+and chiral-tick-form is [#10056](A_DOMAIN_WALL_TICK_WITH_THE_LAYER_DIRECTION_AS_SPACE_PUTS_ONE_WEYL_CONE_ON_EACH_WALL_BUT_THE_CIRCUIT_FORCES_THE_MIRROR_ONTO_THE_FAR_WALL_BOUNDED_THEOREM_NOTE_2026-10-23.md);
+copy-flip-slab (#10063), anomaly-family-count and freeze-mirror-smg (#10031) are recorded only in the consolidation's
+source map. Results taken from them (the static-slab D3, the index form and Omega twist, the C(N_f, 4) count) are
+historical reported results, unverified here; D1 and D3 are conditional on them. criteria_pre_run.txt is a
+source-session file not in this repository. P3 is now computed by the runner from the C3-C5 slabs.
 
 ## Question
 
@@ -79,7 +87,8 @@ Predicted: FAIL at P3 only. Every line matched its prediction.
   - In such circuits each gap balances on its own, and q_mirror = q_light holds at 0 and at pi separately.
 - B2 [T]. Corollary. W_F != 0, so FREEZE is not a product of cube-local gates that each commute with the (111) turn, at any
   depth. This upgrades twist-local-single A3 (a finite search at depths 5, 7 and 9 over all 12 rotations) to an exact
-  statement, under a weaker covariance (one turn).
+  statement, under a weaker covariance (one turn). It says nothing about twist-local-single's non-covariant five-layer
+  factorisation, which is numerical there (no exact gate witness).
 - B3 [T]. The single-pair flow is f(q, h) = h (e_(q+2) - e_(q+1)), as in copy-flip-slab D2.
   - (i) A light q 2 at 0 with the q 1 mirror only at pi is impossible: F_0 = (-1, 1, 0) differs from F_pi = (-1, 0, 1),
     whatever W is.
@@ -125,7 +134,7 @@ The bulk does not force either. P3 FAILS.
 
 - D1 [T]. The anomaly-family-count index is applied with the Omega twist k = -q_mirror, using the far-wall
   Z3-Spin(10)^2, Z3-gravity and Z3^3 coefficients.
-  - Odd slab (lights {2 at 0, 2 at pi}, mirrors {1, 1}): allowed N_f = {3, 6, 9}.
+  - Conditional on the supplied index form: odd slab (lights {2 at 0, 2 at pi}, mirrors {1, 1}): allowed N_f = {3, 6, 9}.
   - The pi doubling keeps the mod 3, because the node count 2 is prime to 3.
   - The reflected slab (light 1, mirror 2) gives the same set.
   - Even slab: every N_f.

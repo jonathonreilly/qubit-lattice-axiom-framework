@@ -13,7 +13,7 @@ runner: scripts/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_l
 Claim type: bounded_theorem.
 Primary runner: `scripts/light_copy_exactly_massless_yet_mirror_gapping_releases_vector_like_doublers_2026_10_21.py`.
 
-The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. Its chirality route gaps one copy (the mirror) symmetrically and keeps the other (the light copy). This note asks whether the light copy stays massless and whether it stays chiral. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose neither H' nor the mirror term.
+The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. The chirality route that the source notes attribute to "the register" gaps one copy (the mirror) symmetrically and keeps the other (the light copy); here "the register" means those rules as the source notes state them, not the current register text, and statements that use them are conditional on them. This note asks whether the light copy stays massless and whether it stays chiral. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose neither H' nor the mirror term.
 
 ## Statement
 
@@ -52,7 +52,7 @@ The runner ends with `TOTAL: PASS=20 FAIL=0`. Among its lines:
 
 Estimate lines: `[PASS] E1 [E]` (no light composites: odd cell levels >= 33.58 g, even >= 19.07 g, mirror-only composites carry twisted charge 0 against the light's 1) and `[PASS] E4 [E]` (condensation wins over hybridisation for g > 0.066, below the second-order bound g > 0.102 for the gapped mirror phase, so wherever the mirror is gapped the doublers are released).
 
-Against measurement, as an estimate: at least 4 left- and 4 right-handed weak-doublet tastes per family gives N_nu >= 12 at N = 3, against 2.984 +- 0.008, plus full-strength right-handed charged currents. The induced change of the light velocity at 1 TeV is below 6e-64.
+Against measurement, as a conditional estimate (inputs supplied: SU(2)_e read as the weak group, a = 3 Planck lengths, the measured N_nu): at least 4 left- and 4 right-handed weak-doublet tastes per family would give N_nu >= 12 at N = 3, against 2.984 +- 0.008, plus full-strength right-handed charged currents. The induced change of the light velocity at 1 TeV is below 6e-64.
 
 ## Repair candidate, not adopted
 
@@ -60,4 +60,4 @@ A light-copy term mu(1 - S(K)^2) linking K and K + R, staggered over blocks and 
 
 ## Boundary
 
-Supplied: H', which copy is the mirror, the mirror terms (the pair square and the stand-ins used here, the one-block top form and the 1+1D pair hop, all copy-selective with a unique symmetric ground state and no bilinear condensate), g and mu, the 1+1D Wilson-type mixing (chosen to mimic the block corners, not derived), the (4,2) content, SU(2)_e as the weak group, the twist k = 2 and a = 3 Planck lengths. Cited: Nielsen-Ninomiya, anomaly matching and Golterman-Shamir, whose assumptions were not checked for this candidate beyond the endpoint. Notes that assume two light tastes per family after mirror gapping are narrowed: without the repair term there are eight. The register's claims of exact chirality and V - A are not supported here. No chiral light spectrum is established.
+Supplied: H', which copy is the mirror, the mirror terms (the pair square and the stand-ins used here, the one-block top form and the 1+1D pair hop, all copy-selective with a unique symmetric ground state and no bilinear condensate), g and mu, the 1+1D Wilson-type mixing (chosen to mimic the block corners, not derived), the (4,2) content, SU(2)_e as the weak group, the twist k = 2 and a = 3 Planck lengths. Cited: Nielsen-Ninomiya, anomaly matching and Golterman-Shamir, whose assumptions were not checked for this candidate beyond the endpoint. Notes that assume two light tastes per family after mirror gapping are narrowed: without the repair term there are eight. The source notes' register claims of exact chirality and V - A are not supported here. No chiral light spectrum is established.

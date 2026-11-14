@@ -279,3 +279,4 @@ rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / (1 << 20)
 print(f"Supplied: charges, bond/pair forms, cells, naive hop, m sz stand-in, Luttinger family, one orbital, SM couplings. "
       f"elapsed {time.time()-T0:.1f}s, peak RSS {rss:.0f} MB")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+raise SystemExit(1 if NF else 0)

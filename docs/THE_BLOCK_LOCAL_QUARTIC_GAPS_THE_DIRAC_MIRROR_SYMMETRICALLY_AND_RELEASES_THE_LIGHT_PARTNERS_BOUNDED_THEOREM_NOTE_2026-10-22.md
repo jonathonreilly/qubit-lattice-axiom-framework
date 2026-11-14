@@ -1,7 +1,7 @@
 ---
 claim_id: the_block_local_quartic_gaps_the_dirac_mirror_symmetrically_and_releases_the_light_partners_bounded_theorem_note_2026-10-22
 claim_type: bounded_theorem
-claim_scope: "For the block-local mirror term (on each matter role block, the unique singlet charge-4 term of the block's mirror modes; SU(4) toy with one mode per flavour per block, and its Spin(10) form with two orbitals per flavour) on a real pi-flux Dirac band of the block lattice: (exact) the term is unique (SU(4): 1 with one orbital, 5 with two; Spin(10) on the Weyl 16: 0 with one orbital, exactly 1 with two), is invariant under per-block SU(4) gauge rotations, commutes across blocks, maps to its conjugate under the sublattice particle-hole map, and alone has a unique ground state with gap g; with any real band, including a real light layer mixed to the mirror, the interaction expansion is sign-free (weights det(M)^4, M real). Finite diagnostics (sign-free CT-INT, L = 4, 6 block units, beta = 4, 8 in units 1/g): the Dirac mirror is massless for g/t <= 2, crosses over near g/t ~ 4, and is symmetric and gapped for g/t >= 8 (Dirac-point gap about 0.85-0.95 g, L-independent); no bilinear channel orders at any coupling (site and bond, charge 0 and 2, all Q). With a light layer whose modes are paired to the mirror by w eps_x, the light gap falls from w (g/t <= 4) to 0.54 w (g/t = 8) and 0.22 w (g/t = 16): the symmetric mirror gap releases every light mode the mirror was pairing (exact at the Dirac point once the mirror propagator has a zero). The toy is not Spin(10), the band is not the CL-1 cube tick, no Binder ratio, L <= 6."
+claim_scope: "For the block-local mirror term (on each matter role block, the unique singlet charge-4 term of the block's mirror modes; SU(4) toy with one mode per flavour per block, and its Spin(10) form with two orbitals per flavour) on a real pi-flux Dirac band of the block lattice: (exact) the term is unique (SU(4): 1 with one orbital, 5 with two; Spin(10) on the Weyl 16: 0 with one orbital, exactly 1 with two), is invariant under per-block SU(4) gauge rotations, commutes across blocks, maps to its conjugate under the sublattice particle-hole map, and alone has a unique ground state with gap g; with any real band, including a real light layer mixed to the mirror, the interaction expansion is sign-free (weights det(M)^4, M real). Finite diagnostics (sign-free CT-INT, L = 4, 6 block units, beta = 4, 8 in units 1/g): the Dirac mirror is massless for g/t <= 2, crosses over near g/t ~ 4, and is symmetric and gapped for g/t >= 8 at the sizes run (Dirac-point gap about 0.85-0.95 g, equal within errors at L = 4 and 6; an infinite-volume phase is not established); no bilinear channel orders at any coupling (site and bond, charge 0 and 2, all Q). With a light layer whose modes are paired to the mirror by w eps_x, the light gap falls from w (g/t <= 4) to 0.54 w (g/t = 8) and 0.22 w (g/t = 16): the symmetric mirror gap releases every light mode the mirror was pairing (exact at the Dirac point once the mirror propagator has a zero). The toy is not Spin(10), the band is not the CL-1 cube tick, no Binder ratio, L <= 6."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -10,12 +10,14 @@ upstream_dependencies:
 runner: scripts/the_block_local_quartic_gaps_the_dirac_mirror_symmetrically_and_releases_the_light_partners_2026_10_22.py
 ---
 
-# The block-local quartic gaps the Dirac mirror symmetrically and releases the light partners
+# The block-local quartic gaps the Dirac mirror symmetrically in a sign-free SU(4) toy at L <= 6 and releases the light partners
 
 Claim type: bounded_theorem.
 Primary runner: `scripts/the_block_local_quartic_gaps_the_dirac_mirror_symmetrically_and_releases_the_light_partners_2026_10_22.py`.
 
-The [candidate-law register](CANDIDATE_LAWS.md) leaves one chirality wall: a mirror term that gaps the mirror family symmetrically. The [face-gapped QMC note](THE_FILTERED_QUARTIC_TOY_WITH_A_FACE_GAPPED_BAND_IS_SYMMETRIC_AND_GAPPED_AT_MODERATE_COUPLING_AND_PAIRS_AT_STRONG_COUPLING_BOUNDED_THEOREM_NOTE_2026-10-22.md) found two things in sign-free 3D QMC. The overlapping cube-filtered quartic pair-orders at strong coupling. The on-site SU(4) quartic is symmetric and gapped. That run had no Dirac point: its free band had only a quadratic touching. This note asks three questions. Does the non-overlapping, block-local version of the quartic fit the framework? Does it gap a mirror whose free band has a genuine Dirac point? And, the Golterman-Shamir question, does the light family keep its partners gapped while the mirror gaps? The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) are unchanged.
+Local labels (2026-11-14). "CL-1" is the source label for the supplied cube tick (one fermion mode per site), and "the register" means the rules as the source notes state them (its mirror clause, far-end theorem and single-cell Spin(10) result). They are not clauses of the current [candidate-law register](CANDIDATE_LAWS.md), whose CL-1, CL-2 and CL-3 are historical aliases with zero premise weight; statements that use them are conditional on them. The face-gapped QMC note (#9983) and the qmc-face-gapped, toy-qmc and smg-literature sources are not in this repository and are recorded only in the consolidation's source map; the link below resolves only on its source branch, and results quoted from them are historical reported results.
+
+As the source notes state the register, it leaves one chirality wall: a mirror term that gaps the mirror family symmetrically. The [face-gapped QMC note](THE_FILTERED_QUARTIC_TOY_WITH_A_FACE_GAPPED_BAND_IS_SYMMETRIC_AND_GAPPED_AT_MODERATE_COUPLING_AND_PAIRS_AT_STRONG_COUPLING_BOUNDED_THEOREM_NOTE_2026-10-22.md) found two things in sign-free 3D QMC. The overlapping cube-filtered quartic pair-orders at strong coupling. The on-site SU(4) quartic is symmetric and gapped. That run had no Dirac point: its free band had only a quadratic touching. This note asks three questions. Does the non-overlapping, block-local version of the quartic fit the framework? Does it gap a mirror whose free band has a genuine Dirac point? And, the Golterman-Shamir question, does the light family keep its partners gapped while the mirror gaps? The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) are unchanged.
 
 ## Statement
 
@@ -31,7 +33,7 @@ The [candidate-law register](CANDIDATE_LAWS.md) leaves one chirality wall: a mir
 4. (Mirror alone, finite diagnostics, g = 1.)
    - g/t = 0.5, 1, 2: massless. The Dirac-point midpoint gap is <= 0.02 and is 0.00-0.01 at L = 6.
    - g/t = 4: crossover. The Dirac gap shrinks with L at beta = 8 (cosh band [0.34,0.39] -> [0.27,0.30]), and pair xi/L falls 0.158 -> 0.101.
-   - g/t = 8, 16: symmetric and gapped. The Dirac gap is L-independent, [0.87,0.91]; [0.85,0.90] and [0.92,0.99]; [0.87,0.98], approaching the exact g/t = infinity value g.
+   - g/t = 8, 16: symmetric and gapped at the sizes run. The Dirac gap is equal within errors at L = 4 and 6, [0.87,0.91]; [0.85,0.90] and [0.92,0.99]; [0.87,0.98], approaching the exact g/t = infinity value g. Two sizes do not establish L-independence.
    - Across all couplings, S/N for each of the 7 bilinear channels falls from L = 4 to 6 by 2.6-3.7, against a volume ratio of 3.375. The channels are site pair (6, charge 2), site adjoint, site singlet density/staggered mass, bond pair (symmetric and antisymmetric), bond adjoint and bond singlet (VBS), each at its peak Q. No order is seen in any channel.
 5. (Light release.) A light layer with the same band, paired to the mirror by w eps_x (t = 0.125, w = 0.25, beta = 8, L = 4). The light gap at the Dirac point is 0.249, 0.248, 0.239, 0.135, 0.054 at g/t = 1, 2, 4, 8, 16, against a free value of exactly w = 0.25. At L = 6 and g/t = 8 it is 0.141. Over the same range the mirror gap grows 0.25 -> 1.84. Exact form: at the Dirac point G_l = [i w - w_mix^2 G_m^0(i w)]^-1. Once the symmetric mirror's propagator has a zero (Sigma_m ~ Delta^2 / i w), the light has a pole at w = 0. Every light mode the mirror was gapping is released.
 
@@ -87,18 +89,18 @@ Light release (t = 0.125, w = 0.25, beta = 8, L = 4; cosh gaps):
 
 ## Clause count and law text
 
-Proposed replacement for the mirror clause of CL-1's chiral update (law text):
+Candidate replacement (zero premise weight, not adopted) for the mirror clause of the source notes' CL-1 chiral update (law text):
 
 > "Mirror term. On each matter role block the mirror copy's modes carry the one Spin(10)-singlet charge-4 term they admit, the pair square of the block's two orbitals per flavour, with the same coupling on every block; terms of different blocks share no mode."
 
-Effect on the register: one clause replaces one clause, and the cube filter (the supplied form factor prod cos^2(k_i/2)) is removed. That is a simplification. The term is forced by uniqueness once the block and the mirror copy are named.
+Effect on the source notes' rule list: one clause replaces one clause, and the cube filter (the supplied form factor prod cos^2(k_i/2)) is removed. That is a simplification. The term is forced by uniqueness once the block and the mirror copy are named.
 
 Smuggling check:
 - Supplied: the coupling g (a constant in proper units), the mirror bit, and the role block (already in CL-1).
 - Forced: the form of the term (A3), its gauge and lattice covariance (A4), and the Z4.
 - The toy evidence is SU(4), not Spin(10). Sign-freedom needs four identical flavours, and the Spin(10) pair square is not of that type, so the Spin(10) phase is unmeasured beyond the register's single-cell result (unique ground state, gap 19.1 g).
 
-Verdict on the register: do NOT adopt this as the chirality fix. The block-local term is exactly the atomic pair square that the register's far-end theorem already excludes, and the QMC now confirms that exclusion in 3D. Gapping the mirror symmetrically is achieved, with no pair order, unlike the cube filter. But it releases every light partner that was gapped through light-mirror mixing, as Golterman and Shamir warn. Adopting it would trade the filter's pair-order failure for the far-end failure. The term is the better mirror-gapping term (unique, no filter, symmetric, gapped). If a separate rule removes the light copy's zone-corner partners WITHOUT routing through the mirror, this term is the natural mirror clause, and it should then replace the cube-filtered pair square.
+Reading (no adoption decision is made here): the term is not proposed as the chirality fix. The block-local term is exactly the atomic pair square that the source notes' far-end theorem excludes, and the finite QMC here (L <= 6) is consistent with that exclusion in 3D. Gapping the mirror symmetrically is achieved, with no pair order, unlike the cube filter. But it releases every light partner that was gapped through light-mirror mixing, as Golterman and Shamir warn. Using it would trade the filter's pair-order failure for the far-end failure. The term is the better mirror-gapping term (unique, no filter, symmetric, gapped). If a separate rule removes the light copy's zone-corner partners WITHOUT routing through the mirror, this term is the natural mirror clause, and it should then replace the cube-filtered pair square.
 
 ## Boundary
 

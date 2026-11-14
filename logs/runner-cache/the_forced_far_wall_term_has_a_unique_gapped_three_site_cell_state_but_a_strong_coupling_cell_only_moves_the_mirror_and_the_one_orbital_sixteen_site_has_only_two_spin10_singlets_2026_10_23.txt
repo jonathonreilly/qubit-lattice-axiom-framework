@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_forced_far_wall_term_has_a_unique_gapped_three_site_cell_state_but_a_strong_coupling_cell_only_moves_the_mirror_and_the_one_orbital_sixteen_site_has_only_two_spin10_singlets_2026_10_23.py
-runner_sha256: 167f2ac734d09d5ee8f373fca217472c78b985a2c8aee0c4404f7340a4ad4a15
-input_fingerprint_sha256: 28b2eba696dae886954d51fdf31993b15b7565e8f4d1c93cc45330dd3d9d6913
+runner_sha256: 95c05075bf9af44721d4b4eec6c5a10ec8423de8b2b24501808480b03092478c
+input_fingerprint_sha256: 1f185f1ae6b742394065e904d28f8e601e2c56e5843ac3e41ea4a885a367dcb1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.22
+elapsed_sec: 2.92
 status: ok
 ----- stdout -----
 == A. 3450: the forced terms l1 = (1,-2,1,2), l2 = (2,1,-2,1) on cells (units of g)
@@ -32,7 +32,7 @@ PASS: D5 [T] unique Spin(10)-invariant site states lie in span{|0>,|F>}; particl
 PASS: D6 [T] 15 modes (no nu^c): prod (c_i + c_i^+) anticommutes with fermion parity, so every level of a particle-hole-symmetric site is >= 2-fold for ANY interaction
 PASS: D7 [T] 8 modes: Q + L (SU(3) x SU(2) x U(1)_Y x U(1)_B-L) and (4,2) (SU(4) x SU(2)) have singlets only at n = 0, 8: no unique state below degree 8, the same pattern as the Spin(10) 16
 PASS: D8 [F] SU(3) x SU(2) x U(1)_Y x U(1)_B-L on the one-orbital 16: singlets 1,6,8,6,1 at n = 0,4,8,12,16; its six singlet charge-4 terms with equal real couplings give a unique particle-hole-symmetric singlet ground state with a gap  [gap 0.442 g, ladder residual 3e-15]
-Supplied: charges, bond/pair forms, cells, naive hop, m sz stand-in, Luttinger family, one orbital, SM couplings. elapsed 2.3s, peak RSS 238 MB
+Supplied: charges, bond/pair forms, cells, naive hop, m sz stand-in, Luttinger family, one orbital, SM couplings. elapsed 2.4s, peak RSS 241 MB
 TOTAL: PASS=21 FAIL=0
 
 ----- stderr -----

@@ -297,8 +297,8 @@ dinv = nr * 4 * np.pi * c * SQ
 thr = 3 * 0.014 / (nr * 4 * np.pi * SQ)
 Rh = np.log2(1.37e26 / (np.sqrt(8 * np.pi) * 1.616e-35))
 mres = 2.1e18 * 0.5 ** Rh
-check("D2", "ESTIMATE", dinv > 100 * 0.014,
-      "zoom rate, gauge-covariant: %.1f rungs between m_e and M_Z, each a vector-like 3-family copy (sum Q^2 = 8) adding 4 pi c1 sum Q^2 to 1/alpha: extra running %.1f vs the 0.014 known from Delta alpha_had: excluded unless c1 < %.1e" % (nr, dinv, thr),
+check("D2", "CONDITIONAL ESTIMATE (inputs a = sqrt(8 pi) l_P, H0, PDG values, c1 from a stand-alone Wilson band)", dinv > 100 * 0.014,
+      "zoom rate, gauge-covariant: %.1f rungs between m_e and M_Z, each a vector-like 3-family copy (sum Q^2 = 8) adding 4 pi c1 sum Q^2 to 1/alpha: extra running %.1f vs the 0.014 known from Delta alpha_had: in conflict with the measured running unless c1 < %.1e" % (nr, dinv, thr),
       "c1 %.4f; R_H = log2(c/H0 a) = %.1f" % (c, Rh))
 print("   D3 ESTIMATE fine rate: no tower (gap ~0.4 per rung at Planck), mirror energy 2^R x momentum: below 1 TeV only for |Q| < 1e-15 x 2^-R/a, ~0 states per horizon; residual mass mu(mu/kap)^R_H <= %.0e GeV at mu/kap = 1/2; price: rung j hops 2^j sites per tick (speed 2^j, the swindle of the octree-ladder note), against nearest-neighbour admissibility" % mres)
 print("   D4 ESTIMATE any cut (Gauss projection, B4) or finite top at E_R >~ M_Z: a massless charged mirror; e^c' alone adds 35.5 MeV to Gamma_Z per family vs sigma 2.3 MeV (ladder-wall E3)")
@@ -345,3 +345,4 @@ print("   F THEOREM (counting) the tick cannot be the wall direction: a wall bou
 print("supplied: 1+1D tree, rates, m = -kap, mu, Wilson lines, cut, Ntop, Q grid, Wilson band m0 and grid, layer count, unit map, measured inputs | %.1f s" % (time.time() - T0))
 print("cited: PR #9908, hybrid-wall, ladder-wall, euclidean-b4, toy-qmc, Callan-Harvey, Kaplan, Shamir, Neuberger, Grabowska-Kaplan, PDG")
 print("TOTAL: PASS=%d FAIL=%d" % tuple(NP))
+raise SystemExit(1 if NP[1] else 0)

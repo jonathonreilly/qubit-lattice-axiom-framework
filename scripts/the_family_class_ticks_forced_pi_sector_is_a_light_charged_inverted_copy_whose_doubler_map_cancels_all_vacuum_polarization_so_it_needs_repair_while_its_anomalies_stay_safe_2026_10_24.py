@@ -4,10 +4,12 @@ AUDIT_INPUT_PATHS = ('docs/THE_FAMILY_CLASS_TICKS_FORCED_PI_SECTOR_IS_A_LIGHT_CH
  A  doubler S sends the no-Fermi-surface half-filled vacuum to its complement; so every S-even one-body response
     (cell charge under any potential kick, any strength, any tick count) equals the infinite-temperature value: zero
     vacuum polarization. Real space, 4^3 cells. Controls: CL-1's plain tick (gap at pi) screens; S-broken FREEZE responds.
- B  decay channel: zero-quasi-energy, zero-momentum (0-pair + pi-pair) states at every momentum scale; CL-1 needs 6 pairs.
+ B  kinematics: zero-quasi-energy, zero-momentum (0-pair + pi-pair) states at every momentum scale; CL-1 needs 6 pairs.
+    The free vacuum is stationary under the tick (B1b), so these states are kinematics, not a decay: no rate is computed.
  C  filling: F_pi = W per turn sector (no free pi gap, robust to turn-symmetric deformations); the one-cube start is
     degenerate (no ordering picks the filling); alternation on the axis loop (>= 1 inverted boundary).
- D  anomalies with the pi copy (2 x 16 per family) and the turn count; E measurement estimates (supplied numbers).
+ D  anomalies with the pi copy (2 x 16 per family) and the turn count; E conditional comparator estimates (supplied numbers,
+    not counted): the cell-charge probe is not an electromagnetic or electroweak observable of a defined gauged theory.
 Labels: [T] exact, [F] finite diagnostic, [E] estimate with supplied numbers, [S] reading. Criteria: criteria_pre_run.txt.
 FREEZE is rebuilt inline exactly as mirror-in-time / floquet-pi-slab (same seed, same draw order)."""
 AUDIT_TIMEOUT_SEC = 120
@@ -158,7 +160,7 @@ print("   A4 [S] the cancellation is sector by sector: S maps the 0-sector respo
 print("      fill(0,pi); the inverted pi copy anti-screens exactly as much as the normal 0 copy screens (Lindhard n -> 1-n).")
 
 # ================================================================ B. decay channel
-print("== B. vacuum -> (0-sector pair) + (pi-sector pair) at every scale")
+print("== B. zero-quasi-energy (0-sector pair) + (pi-sector pair) states at every scale: kinematics")
 def th(K): return np.arccos(np.clip(np.mean(np.cos(K)), -1, 1))
 kk = [rng2.normal(size=3) * 0.05 for _ in range(4)]
 disp = 0.0
@@ -177,8 +179,16 @@ for s in (1e-1, 1e-2, 1e-3):
                 m = (a + b) / 2; a, b = (m, b) if f(m) > 0 else (a, m)
             k3 = a * u; k4 = k1 - k2 + k3; sols.append((s, abs(f(a)), max(map(np.linalg.norm, (k1, k2, k3, k4))) / s)); break
 okB = len(sols) == 3 and all(r[1] < 1e-12 for r in sols) and all(r[2] < 12 for r in sols)
-check("B1 [T]/[F]", disp < 1e-8 and okB, "pi-sector dispersion is the 0-sector's (pi - theta(R+k) = theta(k)); exact zero-quasi-energy, zero-momentum 4-excitation states (0 pair at +E, pi pair at -E) exist at momentum scales 1e-1, 1e-2, 1e-3: the decay channel is open in the IR",
+check("B1 [T]/[F]", disp < 1e-8 and okB, "pi-sector dispersion is the 0-sector's (pi - theta(R+k) = theta(k)); exact zero-quasi-energy, zero-momentum 4-excitation states (0 pair at +E, pi pair at -E) exist at momentum scales 1e-1, 1e-2, 1e-3 (kinematics only)",
       f"dispersion residual {disp:.0e}; " + "; ".join(f"scale {r[0]:.0e}: |E_tot| {r[1]:.0e}, max|k|/scale {r[2]:.1f}" for r in sols))
+# B1b (hold finding 3): availability of zero-quasi-energy states is kinematics, not decay. The filled vacuum's one-body projector
+# commutes with the free tick, so its Slater state is a tick eigenstate and its transition amplitude to the B1 states is zero.
+stat = np.linalg.norm(UFr @ rhoF @ UFr.conj().T - rhoF)
+rhoX = real([Gb @ fill_F(K)[0] @ Gb.conj().T for K in Kg]); statX = np.linalg.norm(UFr @ rhoX @ UFr.conj().T - rhoX)
+check("B1b [T]/[F]", stat < 1e-9 and statX > 1e-3, "the free filled vacuum is stationary: U rho U^+ = rho (real space, 512 modes), so under the free tick "
+      "the vacuum has zero amplitude into the B1 states; a decay rate needs an interaction that is not defined here. Control: a "
+      "filling rotated by the S-odd layer is not stationary",
+      f"|U rho U^+ - rho| {stat:.0e}; rotated filling {statX:.2e}")
 grid = [np.array(m) * 2 * np.pi / 12 for m in it.product(range(12), repeat=3)]
 wmax = max(np.max(np.abs(np.angle(np.linalg.eigvals(U1c(K))))) for K in grid)
 nmin = int(np.ceil(2 * np.pi / (2 * wmax)))
@@ -250,16 +260,20 @@ print("   D2 [S] the far-wall gapping must gap the pi copy of the mirror too (it
 print("      term does it at the same coupling (S maps the interacting tick to (-1)^N times itself); not computed.")
 
 # ================================================================ E. measurement
-print("== E. against measurement (supplied numbers)")
+print("== E. conditional comparator estimates (supplied numbers; NOT counted). Missing bridges: a gauged FREEZE (link gauging is")
+print("   not defined), the identification of the cell-charge response with the photon vacuum polarization, and of the pi copies")
+print("   with Z decay channels. These lines say what the comparators would give IF those bridges held; they exclude nothing here.")
 al, me = 1 / 137.035999, 510998.95                        # eV
 uehl = 4 * al * al ** 4 * me / (15 * np.pi * 8) / 4.135667696e-15 / 1e6     # MHz, hydrogen 2S, n = 2
-check("E1 [E]", uehl > 1e3 * 0.01, "with S intact the electron loop's vacuum polarization cancels exactly against its inverted pi copy: the hydrogen 2S Uehling shift would vanish; it is ~27 MHz and theory matches the measured Lamb shift to ~0.01 MHz -> EXCLUDED",
-      f"Uehling 2S = -{uehl:.2f} MHz; agreement scale ~0.01 MHz (supplied); ratio {uehl / 0.01:.0f}")
+print(f"   E1 CONDITIONAL ESTIMATE (not counted): IF the S-even cancellation carried over to the electron loop of a gauged completion, "
+      f"the hydrogen 2S Uehling term (-{uehl:.2f} MHz) would vanish, against a theory-measurement agreement scale ~0.01 MHz (supplied); ratio {uehl / 0.01:.0f}")
 Nnu, sNnu = 2.984, 0.008
-check("E2 [E]", abs(0 - Nnu) / sNnu > 100 and abs(6 - Nnu) / sNnu > 100, "Z invisible width: inverted pi neutrinos cancel the light ones in the Z self-energy (N_nu -> 0); normal-filled copies would double it (N_nu -> 6); measured 2.984 +- 0.008 excludes both",
-      f"{abs(Nnu) / sNnu:.0f} sigma and {abs(6 - Nnu) / sNnu:.0f} sigma")
-print("   E3 [S] a light charged inverted sector with the light photon also opens exothermic pair production in every process (B1),")
-print("      with phase space up to the cell scale: the free sector is excluded long before any rate is computed.")
+print(f"   E2 CONDITIONAL ESTIMATE (not counted): IF the pi neutrino copies coupled to the Z as the 0 copies do, inverted copies would give "
+      f"N_nu -> 0 and normal-filled copies N_nu -> 6, against a measured 2.984 +- 0.008 (supplied): {abs(Nnu) / sNnu:.0f} and {abs(6 - Nnu) / sNnu:.0f} sigma")
+print("   E3 [S] with an interaction and a light photon, B1's states would be open final states with phase space up to the cell")
+print("      scale. Under the free tick the vacuum is stationary (B1b): no rate follows without a defined interaction.")
 pk = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / (1024 * 1024 if os.uname().sysname == 'Darwin' else 1024)
-print(f"VERDICT: NEEDS REPAIR. Anomaly SAFE; free pi sector EXCLUDED (light, charged, inverted, forced by F_pi = W).  [{time.time() - T0:.1f} s, {pk:.0f} MB]")
+print(f"VERDICT: exact: S-even one-body probes see zero vacuum response; F_pi = W forces the pi sector; anomalies stay zero with the pi copy.")
+print(f"   No observable or rate conclusion: E1-E2 are conditional comparator estimates on bridges not defined here.  [{time.time() - T0:.1f} s, {pk:.0f} MB]")
 print(f"TOTAL: PASS={NP[0]} FAIL={NP[1]}")
+raise SystemExit(1 if NP[1] else 0)

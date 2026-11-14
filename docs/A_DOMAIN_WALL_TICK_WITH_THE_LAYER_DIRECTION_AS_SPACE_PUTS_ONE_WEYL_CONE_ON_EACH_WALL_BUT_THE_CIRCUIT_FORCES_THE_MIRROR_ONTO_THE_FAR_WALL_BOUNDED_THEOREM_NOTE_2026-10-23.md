@@ -1,7 +1,7 @@
 ---
 claim_id: a_domain_wall_tick_with_the_layer_direction_as_space_puts_one_weyl_cone_on_each_wall_but_the_circuit_forces_the_mirror_onto_the_far_wall_bounded_theorem_note_2026-10-23
 claim_type: bounded_theorem
-claim_scope: "Free-field test of three candidate tick (unitary, Hamiltonian/Floquet) forms of one-handed matter. (A) A 3+1+1 Wilson-type slab with Ls layers in an extra SPATIAL direction and the tick as time: the slab Hamiltonian H is strictly nearest-neighbour and tetrahedrally covariant; the layered circuit U = W_m W_1 W_2 W_3 W_odd W_even is unitary, range 1 in each space direction and range 2 in layers. Finite diagnostics at m = 0.6, theta = 0.2: 4D bulk gapped (0.067 at quasienergy 0, 1.66 at pi; H gap 0.60); exactly one two-component Weyl node per wall, at k = 0 and quasienergy 0, opposite chirality on the two walls, no other in-gap state on a 12^3 grid, and 4 in-gap states on the L = 6 torus; the mirror overlap falls as |1 - m|^Ls (exact zero-mode recursion; ratio 0.399 per layer, xi = 1.09 layers; exactly zero at m = 1); exp(-i H tau) is covariant and faster-than-exponentially local; no wall state at X, M, R. Exact: a circuit of gates exp(-i theta h) is homotopic to 1, so the slab's W3 = 0 for every step, mass and Ls; one wall has (n0, npi) = (-1, 0), which no walk-invariant sector of a 3D walk can have (n0 = npi = -W3, control on a degree-one family). (B) The slab's layer-sign charge is compact, quantised and on-site in 3D but not conserved; its commutator lives on the middle bond and falls as |1 - m|^Ls between wall modes; the cited 1+1D Onsager template's one-handed combination has levels |sin(k/2)|. (C) At larger steps the circuit's bulk gap closes between theta = 0.2 and 0.3; quasienergy-pi wall cones (-1, -3) appear at theta = 0.7 only with a gapless bulk. Not covered: gauging the light wall, gapping the far wall, interactions, identification with the CL-1 cube walk."
+claim_scope: "Free-field test of three candidate tick (unitary, Hamiltonian/Floquet) forms of one-handed matter. (A) A 3+1+1 Wilson-type slab with Ls layers in an extra SPATIAL direction and the tick as time: the slab Hamiltonian H is strictly nearest-neighbour and tetrahedrally covariant; the layered circuit U = W_m W_1 W_2 W_3 W_odd W_even is unitary, range 1 in each space direction and range 2 in layers. Finite diagnostics at m = 0.6, theta = 0.2: 4D bulk gapped (0.067 at quasienergy 0, 1.66 at pi; H gap 0.60); exactly one two-component Weyl node per wall, at k = 0 and quasienergy 0, opposite chirality on the two walls, no other in-gap state on a 12^3 grid, and 4 in-gap states on the L = 6 torus; the mirror overlap falls as |1 - m|^Ls (exact zero-mode recursion; ratio 0.399 per layer, xi = 1.09 layers; exactly zero at m = 1); exp(-i H tau) is covariant and faster-than-exponentially local; no wall state at X, M, R. The tick U is unitary with nonreal eigenphases, so it is not a positive transfer matrix (a positive Hermitian unitary is the identity); no Euclidean reflection-positive transfer operator is built. Exact: a circuit of gates exp(-i theta h) is homotopic to 1, so the slab's W3 = 0 for every step, mass and Ls; one wall has (n0, npi) = (-1, 0), which no walk-invariant sector of a 3D walk can have (n0 = npi = -W3, control on a degree-one family). (B) The slab's layer-sign charge is compact, quantised and on-site in 3D but not conserved; its commutator lives on the middle bond and falls as |1 - m|^Ls between wall modes; the cited 1+1D Onsager template's one-handed combination has levels |sin(k/2)|. (C) At larger steps the circuit's bulk gap closes between theta = 0.2 and 0.3; quasienergy-pi wall cones (-1, -3) appear at theta = 0.7 only with a gapless bulk. Not covered: gauging the light wall, gapping the far wall, interactions, identification with the CL-1 cube walk."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -16,15 +16,29 @@ runner: scripts/a_domain_wall_tick_with_the_layer_direction_as_space_puts_one_we
 
 Claim type: bounded_theorem (two exact statements, one exact recursion, labelled finite diagnostics; the domain-wall
 construction and the Floquet/Nielsen-Ninomiya literature are supplied and cited).
-Runner: runner.py, TOTAL: PASS=13 FAIL=0, 4.3 s, 76 MB peak, 4.9 k characters of stdout; run under a unique filename.
+Primary runner: `scripts/a_domain_wall_tick_with_the_layer_direction_as_space_puts_one_weyl_cone_on_each_wall_but_the_circuit_forces_the_mirror_onto_the_far_wall_2026_10_23.py`; cache `logs/runner-cache/a_domain_wall_tick_with_the_layer_direction_as_space_puts_one_weyl_cone_on_each_wall_but_the_circuit_forces_the_mirror_onto_the_far_wall_2026_10_23.txt`.
 Axioms unchanged. No rule adopted.
+
+Local labels (2026-11-14). In this note "CL-1" names the source campaign's candidate history-level matter weighting
+(the overlap D = 1 + V with Luscher's P_hat), "CL-2" the record rule as the source notes state it, and "the register"
+those rules as the source notes state them. They are not clauses of the current [candidate-law register](CANDIDATE_LAWS.md),
+whose CL-1, CL-2 and CL-3 are historical aliases with zero premise weight. Statements that use them are conditional on
+the supplied rules. Short source names: rung-dimension-chirality is [#9971](THE_RUNG_LADDER_IS_A_DOMAIN_WALL_DIRECTION_WITH_EXACT_INFLOW_BUT_BOUNDED_SPEED_MAKES_ITS_COARSE_RUNGS_A_CHARGED_TOWER_BOUNDED_THEOREM_NOTE_2026-10-22.md),
+gk-nogo-check is [#9985](GRABOWSKA_KAPLAN_FAR_LAYERS_PASS_THE_NIELSEN_NINOMIYA_COUNT_BUT_INDUCE_A_GAUGE_INVARIANT_CUTOFF_SCALE_PHOTON_MASS_ABOVE_THE_SMOOTHING_SCALE_BOUNDED_THEOREM_NOTE_2026-10-22.md),
+overlap-from-walk is [#10049](THE_OVERLAP_OF_THE_CUBE_WALK_EUCLIDEAN_KERNEL_GIVES_EXACT_GINSPARG_WILSON_CHIRALITY_WITHOUT_DOUBLERS_BUT_ITS_CHIRAL_PROJECTOR_IS_NOT_A_WALK_SECTOR_BOUNDED_THEOREM_NOTE_2026-10-23.md),
+freeze-gapped-partners is [#10030](THE_CORNER_STABILIZER_FORCES_A_SCALAR_LIGHT_BLOCK_AT_X_AND_M_SO_NO_ROTATION_COVARIANT_FREEZE_DEFORMATION_GAPS_THE_LIGHT_PARTNERS_LIGHT_LIGHT_BOUNDED_THEOREM_NOTE_2026-10-23.md)
+and two-cell-light-label is [#10042](THE_COMPOSITE_TWO_CELL_LIGHT_LABEL_MAKES_THE_CORNER_STABILIZERS_REDUCIBLE_BUT_THE_LIGHT_FLOQUET_WINDING_FORCES_THE_MIRROR_TO_CARRY_THE_OPPOSITE_CHIRALITY_BOUNDED_THEOREM_NOTE_2026-10-23.md);
+chiral-wall, nononsite-chiral and history-actuality are recorded only in the consolidation's source map (historical
+reported results, unverified here). The W3 = -2 of two-cell-light-label is a degree of a polar-compressed map, not a
+sector winding (see that note).
 
 ## Question
 
 CL-1's history-level matter weighting (the overlap D = 1 + V with Luscher's P_hat) gives the right chiral content, but
 its weight is complex, so it is an amplitude, not odds (history-actuality). CL-2 and records need a TICK form: a unitary
-in the tick direction. Tick-level 3D walks are blocked by the corner-Q8 no-go (freeze-gapped-partners) and by the
-conserved Floquet winding W3 = -2 of the light sector (two-cell-light-label). Which of (A) a domain wall with the extra
+in the tick direction. For tick-level 3D walks, freeze-gapped-partners gives the exact corner-Q8 Schur statement, and
+two-cell-light-label gives W3 = -2 for the polar-compressed light map of FREEZE; both bind a light sector only when the
+light label is walk-invariant, which FREEZE's is not (see those notes). Which of (A) a domain wall with the extra
 direction as space, (B) an exponentially local non-on-site chiral charge, (C) an anomalous Floquet bulk gives a unitary
 tick of one-handed matter with the mirror removed?
 
@@ -102,14 +116,20 @@ register as written by exact mode number with the mirror reflection). Not attemp
   element exists on an open or one-ended layer direction with a gapped bulk is OPEN. The control K1 shows what W3 != 0
   would give: n0 = npi = -W3, i.e. cones of the SAME hand at 0 and pi (no mirror but an anomalous pi partner).
 
-## Most promising: A, as the tick form of the existing overlap clause
+## Most promising: A, as a tick form compared with the existing overlap clause (conditional)
 
-The overlap is the Ls -> infinity limit of the domain wall (overlap-from-walk: Shamir 5D -> (1 + g5 tanh(Ls artanh H_T))/2).
-A puts the same wall content on a Hamiltonian/Floquet tick: a positive transfer matrix in the tick direction is just
-U itself, with records and CL-2 transport definable per tick. It inherits, unchanged, the open step of every
-domain-wall route: the far-wall mirror.
+The overlap is the Ls -> infinity limit of the Euclidean Shamir domain wall (overlap-from-walk: Shamir 5D ->
+(1 + g5 tanh(Ls artanh H_T))/2). A puts the same wall content on a Hamiltonian/Floquet tick U, on which records and
+per-tick transport can be defined as the source notes define them. U is unitary, not a positive transfer matrix: a
+positive Hermitian unitary has every eigenvalue positive and of modulus 1, so it is the identity, while U has
+nonreal eigenphases (runner A9; control: exp(-tau H) passes the same positivity test). Relabelling U does not give
+Euclidean reflection positivity, and no positive Euclidean transfer operator for this slab is built here. So the
+comparison between the real-time tick and the Euclidean overlap clause is a conditional analogy at the level of wall
+content and the Ls -> infinity limit, not an identification. (Corrected 2026-11-14: the earlier text said "a positive
+transfer matrix in the tick direction is just U itself".) A inherits, unchanged, the open step of every domain-wall
+route: the far-wall mirror.
 
-Proposed CL wording (UNTESTED, not adopted; for the coordinator):
+Candidate wording (UNTESTED, zero premise weight, not adopted):
 "Tick form of matter weighting (candidate). Each matter site carries a column of Ls layer modes (a role-block
 coordinate, not a new spatial axis). The tick is the layered circuit of range-1 gates exp(-i eps h) with copy mass in
 the window 0 < m < 2. Light matter is the finest-layer wall sector; its history weight at Ls -> infinity is the overlap

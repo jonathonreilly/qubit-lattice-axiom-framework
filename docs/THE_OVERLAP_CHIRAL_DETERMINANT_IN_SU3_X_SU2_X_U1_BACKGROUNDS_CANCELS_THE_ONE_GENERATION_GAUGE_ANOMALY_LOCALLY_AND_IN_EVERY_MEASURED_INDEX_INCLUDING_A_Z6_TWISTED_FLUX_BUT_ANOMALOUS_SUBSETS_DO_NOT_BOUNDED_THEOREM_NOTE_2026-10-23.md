@@ -1,7 +1,7 @@
 ---
 claim_id: the_overlap_chiral_determinant_in_su3_x_su2_x_u1_backgrounds_cancels_the_one_generation_gauge_anomaly_locally_and_in_every_measured_index_including_a_z6_twisted_flux_but_anomalous_subsets_do_not_bounded_theorem_note_2026-10-23
 claim_type: bounded_theorem
-claim_scope: "The overlap D = 1 + V of the cube walk's Euclidean Wilson kernel (m0 = 1.6) with Luscher's P_hat_- = (1 + sign H)/2, in supplied SU(3) x SU(2) x U(1)_Y link backgrounds on the 3^4 torus (largest dense dimension 1944, the Q multiplet), for one generation of supplied left-handed content Q(3,2,1/6), u^c(3b,1,-2/3), d^c(3b,1,1/3), L(1,2,-1/2), e^c(1,1,1), nu^c(1,1,0). Exact to rounding: GW, g5-hermiticity and the P_hat split for an antitriplet; lattice charge conjugation (antitriplet SU(3) density = -triplet's, U(1) density equal) and hence exact site-by-site vanishing of the family's SU(3)^3 and SU(3)^2 Y densities in pure SU(3) backgrounds and of SU(2)^2 Y in pure SU(2) backgrounds. Integers: in a simply-connected Cartan SU(3) flux and in one Z6-twisted fractional flux, each with a random non-abelian SU(3) x SU(2) x U(1) perturbation, every measured index equals -sum f^2 and sum Y index = 0 for the family. Finite diagnostic: in generic backgrounds the family's covariant anomaly density falls as eps^4 (3.98, 4.07, 4.05 in U(1)_Y, SU(3), SU(2) directions), lone Q as eps^2; three contrast sets fail exactly in the directions their charge sums predict (15/15). Not covered: a non-perturbative existence proof (open), the gravitational Tr Y (no curved background), larger lattices, other Z6 bundles, the pi_4 / Witten anomaly, derivation of the content."
+claim_scope: "The overlap D = 1 + V of the cube walk's Euclidean Wilson kernel (m0 = 1.6) with Luscher's P_hat_- = (1 + sign H)/2, in supplied SU(3) x SU(2) x U(1)_Y link backgrounds on the 3^4 torus (largest dense dimension 1944, the Q multiplet), for one generation of supplied left-handed content Q(3,2,1/6), u^c(3b,1,-2/3), d^c(3b,1,1/3), L(1,2,-1/2), e^c(1,1,1), nu^c(1,1,0). Exact to rounding: GW, g5-hermiticity and the P_hat split for an antitriplet; lattice charge conjugation (antitriplet SU(3) density = -triplet's, U(1) density equal) and hence exact site-by-site vanishing of the family's SU(3)^3 and SU(3)^2 Y densities in pure SU(3) backgrounds and of SU(2)^2 Y in pure SU(2) backgrounds. Integers: in a simply-connected Cartan SU(3) flux and in one Z6-twisted fractional flux, each with a random non-abelian SU(3) x SU(2) x U(1) perturbation, every measured index equals -sum f^2 and sum Y index = 0 for the family. Finite diagnostic: in generic backgrounds the family's covariant anomaly density does not vanish; it is a nonzero O(eps^4) remainder (fitted exponents 3.98, 4.07, 4.05 in U(1)_Y, SU(3), SU(2) directions, three eps values on 3^4), lone Q as eps^2; so local cancellation is exact only in the pure SU(3) and pure SU(2) backgrounds above (in pure U(1)_Y backgrounds the family density also falls as eps^4), and in generic backgrounds the cancellation holds at order eps^2 only, on this lattice; three contrast sets fail exactly in the directions their charge sums predict (15/15). Not covered: a non-perturbative existence proof (open), the gravitational Tr Y (no curved background), larger lattices, other Z6 bundles, the pi_4 / Witten anomaly, derivation of the content."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -10,12 +10,18 @@ upstream_dependencies:
 runner: scripts/the_overlap_chiral_determinant_in_su3_x_su2_x_u1_backgrounds_cancels_the_one_generation_gauge_anomaly_locally_and_in_every_measured_index_including_a_z6_twisted_flux_but_anomalous_subsets_do_not_2026_10_23.py
 ---
 
-# The overlap chiral determinant in SU(3) x SU(2) x U(1) backgrounds cancels the one-generation gauge anomaly locally and in every measured index, including a Z6-twisted flux, but anomalous subsets do not
+# The overlap chiral determinant in SU(3) x SU(2) x U(1) backgrounds on 3^4: the one-generation anomaly density cancels exactly in pure SU(3) and pure SU(2) backgrounds and at order eps^2 (with a nonzero eps^4 remainder) in generic ones, every measured index cancels, including a Z6-twisted flux, and anomalous subsets do not
 
-Claim type: bounded_theorem (exact lattice identities plus labelled finite diagnostics). Runner: runner.py,
-TOTAL: PASS=10 FAIL=0, 39-46 s, peak RSS 313 MB, 3.6 k characters of stdout; tested under a unique filename
-(exit 0), not yet through scripts/runner_cache. Axioms unchanged. No candidate law or axiom-level rule is
+Claim type: bounded_theorem (exact lattice identities plus labelled finite diagnostics).
+Primary runner: `scripts/the_overlap_chiral_determinant_in_su3_x_su2_x_u1_backgrounds_cancels_the_one_generation_gauge_anomaly_locally_and_in_every_measured_index_including_a_z6_twisted_flux_but_anomalous_subsets_do_not_2026_10_23.py`; cache `logs/runner-cache/the_overlap_chiral_determinant_in_su3_x_su2_x_u1_backgrounds_cancels_the_one_generation_gauge_anomaly_locally_and_in_every_measured_index_including_a_z6_twisted_flux_but_anomalous_subsets_do_not_2026_10_23.txt`. Axioms unchanged. No candidate law or axiom-level rule is
 proposed or edited.
+
+Local labels (2026-11-14). "CL-1" below is the source campaign's label for its candidate history-level matter
+weighting (the overlap with Luscher's P_hat); it is not CL-1 of the current [candidate-law register](CANDIDATE_LAWS.md)
+(a historical alias with zero premise weight), and no adoption of it is recorded in the repository. PR #10049 is
+[the overlap note](THE_OVERLAP_OF_THE_CUBE_WALK_EUCLIDEAN_KERNEL_GIVES_EXACT_GINSPARG_WILSON_CHIRALITY_WITHOUT_DOUBLERS_BUT_ITS_CHIRAL_PROJECTOR_IS_NOT_A_WALK_SECTOR_BOUNDED_THEOREM_NOTE_2026-10-23.md);
+PR #10051 is recorded only in the consolidation's source map. Title corrected 2026-11-14: the earlier title said the
+anomaly cancels "locally", while the generic-background density is a nonzero eps^4 remainder.
 
 ## Question
 
@@ -40,7 +46,7 @@ fail for subsets that should fail?
 - The Z6 global form in A2: one twisted flux, SU(3) centre direction (1/3,1/3,-2/3), SU(2) (1/2,-1/2), U(1)
   1/6 per unit 6Y, in both the (12) and (34) planes.
 
-## Results (out.txt)
+## Results (runner cache)
 
 Exact charge coefficients (Tr Y^3, Tr_3 Y, Tr_2 Y, SU(3)^3 count, Tr Y): family 0,0,0,0,0; lone Q
 1/36,1/3,1/2,2,1; no u^c 8/9,2/3,0,1,2; quarks only -3/4,0,1/2,0,0; family + X -1/9,-1/3,0,1,-1.
@@ -82,10 +88,14 @@ D. GW, g5-hermiticity, P_hat projector and D P_hat_- = P_+ D for u^c in a generi
 
 ## Verdict
 
-Within these finite 3^4 backgrounds, the P_hat chiral determinant shows the full one-generation SM anomaly
+Within these finite 3^4 backgrounds, the P_hat chiral determinant shows the one-generation SM anomaly
 structure: integrated U(1)_Y anomaly cancels exactly (integers) in a simply-connected and in a Z6-twisted
-topological background; the local covariant anomaly cancels at the continuum (eps^2) order in all three gauge
-directions, with an eps^4 remainder; and three subsets fail in exactly the predicted directions. This is a
+topological background; the local covariant anomaly cancels exactly site by site in pure SU(3) and pure SU(2)
+backgrounds, and in generic backgrounds it cancels at the continuum (eps^2) order in all three gauge directions,
+with a nonzero eps^4 remainder (so it is not a local cancellation there); and three subsets fail in exactly the
+predicted directions. The eps^4 exponents come from three eps values on one small torus, a kind of torus that
+PR #10083 (recorded only in the consolidation's source map) found Polyakov-loop sensitive; they are not checked
+against that artefact. This is a
 finite numerical diagnostic, not a non-perturbative existence proof (open in the literature; Luscher's
 non-abelian construction is all-orders perturbative).
 
@@ -96,8 +106,9 @@ sections use the simply-connected group.
 
 ## Anti-smuggling gate
 
-No rule proposed; this tests CL-1. The group, content, hypercharges and the Z6 form are supplied test inputs
-(would fail criterion 2 if they were rule content). Gate: N/A. CL-1's SU(3) open item narrows; it does not close.
+No rule proposed; this tests the source campaign's CL-1 candidate (zero premise weight). The group, content,
+hypercharges and the Z6 form are supplied test inputs (would fail criterion 2 if they were rule content). Gate: N/A.
+That candidate's SU(3) open item narrows; it does not close.
 
 ## Smuggling review
 

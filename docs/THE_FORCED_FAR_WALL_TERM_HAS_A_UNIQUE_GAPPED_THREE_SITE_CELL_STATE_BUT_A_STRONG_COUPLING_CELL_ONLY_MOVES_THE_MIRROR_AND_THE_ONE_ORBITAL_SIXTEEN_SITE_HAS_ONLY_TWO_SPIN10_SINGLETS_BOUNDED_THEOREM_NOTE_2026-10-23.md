@@ -1,7 +1,7 @@
 ---
 claim_id: the_forced_far_wall_term_has_a_unique_gapped_three_site_cell_state_but_a_strong_coupling_cell_only_moves_the_mirror_and_the_one_orbital_sixteen_site_has_only_two_spin10_singlets_bounded_theorem_note_2026-10-23
 claim_type: bounded_theorem
-claim_scope: "Three parts. (1) 3-4-5-0 far-wall term (the two forced 6-fermion terms l1 = (1,-2,1,2), l2 = (2,1,-2,1), one coupling g) placed on cells: on one site it vanishes (Pauli); on a two-site cell the ground state is 8-fold at -g/2; on the three-site complete-graph cell it is unique, neutral (Q_A = Q_B = 0 from half filling, zero variance), E0 = -g, first excitation -(sqrt3/2) g, so Delta_0 = (1 - sqrt3/2) g = 0.134 g; the four-site cell is unique with Delta_0 = 0.026 g. Bond terms on overlapping bonds do not commute (norm 0.25 g^2) and the uniform open three-site chain has E0 = -0.75 g > -g (frustrated, 2-fold), so a uniform rule is not a sum of commuting cells; a non-overlapping cell tiling is needed. With a naive hop of norm 2t per bond, Yarotsky's theorem (classical in the cell eigenbasis, unique product ground state, 1D Jordan-Wigner-local) gives a persistent gap for t/g < kappa_0 Delta_0/(z ||h_b||) = kappa_0 / 44.8 (kappa_0 the theorem's constant, not computed); one cell with its own hops keeps its unique state until t/g = 0.237. This is SMG of the doubled (vector-like) chain content. In the domain-wall slab the gapped far-layer product does not gap the mirror: the far-wall branch keeps E = sin k and moves one layer in (free slab with the far layer gapped). 3-4-5-1 contrast: odd cells carry Q51 in Z + 1/2 at the particle-hole point, so the three-site cell ground state is an exact Q51 = +-1/2 doublet; the four-site cell is a Q51 = +-2 doublet (dynamical); a one-site-translation chain at half filling has Q51 filling 13/2 (LSM obstruction). The lattice sees the anomaly only mod 2 (sum q = q^T K q mod 2). (2) Bosonization: l1, l2 K-null, mutually null, neutral under (3,4,5,0) and (2,1,2,-1), primitive; free-point dimension 5 for both; in the equal-velocity Luttinger family V(x) both have dimension 5 sqrt((1-x)/(1+x)), relevant iff 21/29 < x < 1. (3) One site carrying the 16 (one orbital, 2^16 states): exactly two Spin(10) singlets, |0> and |F>; the Casimir is (3/4) N (16 - N); the 10 channel psi^T C Gamma^a psi vanishes identically and the 120 channel is N(N-1)/2; so no Spin(10)-invariant, particle-hole-symmetric site term of degree below 16 has a unique ground state. Under SU(3) x SU(2) x U(1)_Y x U(1)_B-L the one-orbital 16 has singlets 1, 6, 8, 6, 1 at N = 0, 4, 8, 12, 16, and its six singlet 4-fermion terms (equal real couplings) give a unique particle-hole-symmetric singlet ground state with gap 0.442 g. 15 modes (no nu^c): every level of a particle-hole-symmetric site is doubly degenerate (exact). 8 modes (Q + L, or (4,2)): singlets only at N = 0, 8. Not covered: gauge fields, the continuum limit, a cell lattice beyond one cell, the two-orbital Spin(10) cell (register value cited, not recomputed)."
+claim_scope: "Three parts. (1) 3-4-5-0 far-wall term (the two forced 6-fermion terms l1 = (1,-2,1,2), l2 = (2,1,-2,1), one coupling g) placed on cells: on one site it vanishes (Pauli); on a two-site cell the ground state is 8-fold at -g/2; on the three-site complete-graph cell it is unique, neutral (Q_A = Q_B = 0 from half filling, zero variance), E0 = -g, first excitation -(sqrt3/2) g, so Delta_0 = (1 - sqrt3/2) g = 0.134 g; the four-site cell is unique with Delta_0 = 0.026 g. Bond terms on overlapping bonds do not commute (norm 0.25 g^2) and the uniform open three-site chain has E0 = -0.75 g > -g (frustrated, 2-fold), so a uniform rule is not a sum of commuting cells; a non-overlapping cell tiling is needed. With a naive hop of norm 2t per bond, Yarotsky's theorem (cited; its hypotheses as stated here: classical in the cell eigenbasis, unique product ground state, 1D Jordan-Wigner-local) would give a persistent gap for t/g < kappa_0 Delta_0/(z ||h_b||) = kappa_0 / 44.8 (a conditional perturbative statement; kappa_0, the theorem's constant, is not computed); one cell with its own hops keeps its unique state until t/g = 0.237. This is SMG of the doubled (vector-like) chain content. In the domain-wall slab, in a free-slab check with the far layer gapped by an m s_z stand-in, the far-wall branch keeps E = sin k and moves one layer in; the induced interacting corrections are argued perturbatively, not computed, so the interacting slab is not closed. 3-4-5-1 contrast: odd cells carry Q51 in Z + 1/2 at the particle-hole point, so the three-site cell ground state is an exact Q51 = +-1/2 doublet; the four-site cell is a Q51 = +-2 doublet (dynamical); a one-site-translation chain at half filling has Q51 filling 13/2 (LSM obstruction). The lattice sees the anomaly only mod 2 (sum q = q^T K q mod 2). (2) Bosonization: l1, l2 K-null, mutually null, neutral under (3,4,5,0) and (2,1,2,-1), primitive; free-point dimension 5 for both; in the equal-velocity Luttinger family V(x) both have dimension 5 sqrt((1-x)/(1+x)), relevant iff 21/29 < x < 1. (3) One site carrying the 16 (one orbital, 2^16 states): exactly two Spin(10) singlets, |0> and |F>; the Casimir is (3/4) N (16 - N); the 10 channel psi^T C Gamma^a psi vanishes identically and the 120 channel is N(N-1)/2; so no Spin(10)-invariant, particle-hole-symmetric site term of degree below 16 has a unique ground state. Under SU(3) x SU(2) x U(1)_Y x U(1)_B-L the one-orbital 16 has singlets 1, 6, 8, 6, 1 at N = 0, 4, 8, 12, 16, and its six singlet 4-fermion terms (equal real couplings) give a unique particle-hole-symmetric singlet ground state with gap 0.442 g. 15 modes (no nu^c): every level of a particle-hole-symmetric site is doubly degenerate (exact). 8 modes (Q + L, or (4,2)): singlets only at N = 0, 8. Not covered: gauge fields, the continuum limit, a cell lattice beyond one cell, the two-orbital Spin(10) cell (register value cited, not recomputed)."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -9,18 +9,27 @@ upstream_dependencies:
 runner: scripts/the_forced_far_wall_term_has_a_unique_gapped_three_site_cell_state_but_a_strong_coupling_cell_only_moves_the_mirror_and_the_one_orbital_sixteen_site_has_only_two_spin10_singlets_2026_10_23.py
 ---
 
-# The forced far-wall term has a unique gapped three-site cell state, but a strong-coupling cell only moves the mirror, and the one-orbital 16 site has only two Spin(10) singlets
+# The forced far-wall term has a unique gapped three-site cell state, but in a free-slab check a gapped far layer moves the mirror one layer in, and the one-orbital 16 site has only two Spin(10) singlets
 
 Claim type: bounded_theorem (exact statements; finite diagnostics labelled [F]; the stability theorems and the
-Haldane criterion are supplied, not rederived). Runner: runner.py, TOTAL: PASS=21 FAIL=0, 2.5 s, 241 MB peak, 4.7 k characters of stdout, seeded, AUDIT_TIMEOUT_SEC = 120;
-run under a unique filename (scratch/smg_strong_coupling_test_run.py).
+Haldane criterion are supplied, not rederived). Primary runner: `scripts/the_forced_far_wall_term_has_a_unique_gapped_three_site_cell_state_but_a_strong_coupling_cell_only_moves_the_mirror_and_the_one_orbital_sixteen_site_has_only_two_spin10_singlets_2026_10_23.py`; cache `logs/runner-cache/the_forced_far_wall_term_has_a_unique_gapped_three_site_cell_state_but_a_strong_coupling_cell_only_moves_the_mirror_and_the_one_orbital_sixteen_site_has_only_two_spin10_singlets_2026_10_23.txt`.
 Axioms unchanged. No rule adopted.
+
+Local labels (2026-11-14). "The register" and "the register's candidate unification law" mean rules as the source notes
+state them; they are not clauses of the current [candidate-law register](CANDIDATE_LAWS.md) (historical aliases with zero
+premise weight). Short source names: block-quartic-smg is [#9992](THE_BLOCK_LOCAL_QUARTIC_GAPS_THE_DIRAC_MIRROR_SYMMETRICALLY_AND_RELEASES_THE_LIGHT_PARTNERS_BOUNDED_THEOREM_NOTE_2026-10-22.md),
+gk-nogo-check is [#9985](GRABOWSKA_KAPLAN_FAR_LAYERS_PASS_THE_NIELSEN_NINOMIYA_COUNT_BUT_INDUCE_A_GAUGE_INVARIANT_CUTOFF_SCALE_PHOTON_MASS_ABOVE_THE_SMOOTHING_SCALE_BOUNDED_THEOREM_NOTE_2026-10-22.md),
+ax7 is [#10004](THE_ZOOMED_FILTERED_MIRROR_TERM_KEEPS_THE_CHIRAL_Z4_AND_THE_16_WEYL_TOY_IS_ANOMALY_FREE_WITH_AN_UNSETTLED_K_GAP_BOUNDED_THEOREM_NOTE_2026-10-22.md);
+far-wall-smg (#10058), smg-literature and momentum-selective-mirror (#9994) are recorded only in the consolidation's
+source map (historical reported results, unverified here). The scratch scripts named below are source-session files
+not in this repository.
 
 ## Question
 
-far-wall-smg found that the two forced 6-fermion terms gap the 3-4-5-0 mirror in a wall-mode chain at L = 12, but no
-size trend could be extracted. The owner asked for a cheaper route: a strong-coupling derivation, a bosonization check, and the
-same site test for the 16 in 3+1D.
+far-wall-smg reported that the two forced 6-fermion terms gap the 3-4-5-0 mirror in a wall-mode chain at L = 12, but no
+size trend could be extracted. The source session asked for a cheaper route (reported there as an owner request; no
+owner decision is recorded in the repository): a strong-coupling derivation, a bosonization check, and the same site
+test for the 16 in 3+1D.
 - (1) Is there a smallest cell on which the forced term has a unique symmetric gapped ground state, and does a
   stability theorem then give a size-independent gap?
 - (2) Do the forced vectors pass Haldane's criterion, and when are they relevant?
@@ -102,7 +111,7 @@ D8 16 under SU(3) x SU(2) x U(1)_Y x U(1)_B-L: singlet counts [1,6,8,6,1] at n =
   where ||h_b|| = 2.
   - In each cell's eigenbasis, g sum h_c is classical with a unique product ground state and local gap Delta_0.
   - The hops are nearest-neighbour and bounded, and in 1D every hop is local after Jordan-Wigner.
-  - So the hypotheses of Yarotsky 2006 hold: the ground state stays unique with gap >= Delta_0 - O(t) for
+  - So, as stated here and not checked line by line against the paper, the hypotheses of Yarotsky 2006 hold: the cited theorem then keeps the ground state unique with gap >= Delta_0 - O(t) for
     t z ||h_b|| / Delta_0 < kappa_0, where z = 3 bonds touch each cell and kappa_0 is the theorem's constant (not
     computed). That is, t/g < kappa_0 / 44.8.
   - Kennedy-Tasaki 1992 is the cluster-expansion precedent; for fermions in d > 1 the analogue is De Roeck-Salmhofer
@@ -117,9 +126,10 @@ D8 16 under SU(3) x SU(2) x U(1)_Y x U(1)_B-L: singlet counts [1,6,8,6,1] at n =
     the far layer is 0.0025 and on the next layer 0.99.
   - Induced corrections are a bilinear self-energy O(T^2/g), which cannot gap a one-handed branch, and multi-fermion
     terms of order T^6/g^5 with free-point dimension 5 (part 2), which are irrelevant.
-  So the g -> infinity limit of a far-layer term does NOT gap the mirror. The stability theorem's hypotheses fail for the
-  coupled slab, because its unperturbed part (the free slab with the moved edge) is gapless.
-  This is a route no-go for "strong coupling on the far layer" in this form. Escapes:
+  So, in this free check with perturbative corrections, the g -> infinity limit of a far-layer term does not gap the
+  mirror; it moves it one layer in. The stability theorem's hypotheses fail for the coupled slab, because its
+  unperturbed part (the free slab with the moved edge) is gapless. The interacting slab itself is not computed, so this
+  is a route obstruction for "strong coupling on the far layer" in this form, not an interacting-slab closure. Escapes:
   - an intermediate-coupling phase (Zeng et al.'s regime), which no product-state theorem reaches;
   - a term acting on enough layers that the mirror modes themselves are cell-local, which turns it into the vector-like
     case, where the light copy must be protected by something the term does not see (momentum- or taste-selective
@@ -202,9 +212,9 @@ necessary site condition for a strong-coupling route.
 
 1. Strong coupling (3450): the smallest unique, symmetric, gapped cell is the three-site complete-graph cell,
    Delta_0 = (1 - sqrt3/2) g. The uniform rule is frustrated and non-commuting, so a cell tiling is required. Yarotsky
-   gives a persistent gap for t/g < kappa_0/44.8 (ingredients: Delta_0 = 0.134 g, ||h_b|| = 2, z = 3), but for the
-   vector-like content only. In the slab the mirror relocates (A7), so the far-wall strong-coupling route is a route
-   no-go in this form. 3451: odd cells are exact doublets (LSM, mod 2), and the four-site cell is a dynamical doublet.
+   would give a persistent gap for t/g < kappa_0/44.8 (ingredients: Delta_0 = 0.134 g, ||h_b|| = 2, z = 3; conditional on the
+   cited theorem and its hypotheses), but for the vector-like content only. In the free-slab check the mirror relocates
+   (A7), so the far-wall strong-coupling route fails in this form at the free-plus-perturbative level. 3451: odd cells are exact doublets (LSM, mod 2), and the four-site cell is a dynamical doublet.
 2. Bosonization: Haldane's criterion is met (null, mutually null, neutral, primitive). Delta = 5 at the free point.
    Both become relevant in the equal-velocity Luttinger family for x > 21/29.
 3. The 16 site: Spin(10) one orbital: two singlets only. The 10 channel is identically zero and the 120 channel is

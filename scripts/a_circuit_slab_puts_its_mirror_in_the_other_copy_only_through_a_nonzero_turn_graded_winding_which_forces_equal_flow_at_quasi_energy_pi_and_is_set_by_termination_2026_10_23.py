@@ -241,8 +241,11 @@ check("D2 [T]", set(odd[0]) == {2}, "all light Weyls (both nodes, every stacked 
       "lemma (J = 0 only for turn-invariant masses on a turn-CHARGED triplet) does not force J = 0; J != 0 allowed, not supplied")
 print("   D3 [S] freeze-mirror-smg: on FREEZE's bare label doublet the T-invariant charge-4 mirror term first exists at N_f = 4 "
       "(C(N_f,4)); the Omega used here is anomaly-family-count's per-family 16 pairing. At N_f = 3 the mirror gap needs the 16.")
-P1, P2, P3, P4, P5 = okC3 and min(G0, Gp) > 0.3, WF == F0 == Fp and Wc == [0, 0, 0], False, aO == [3, 6, 9], set(odd[0]) == {2}
-print(f"   synthesis (criteria_pre_run): P1 slab exists {P1}, P2 sum rule {P2}, P3 forced {P3}, P4 mod 3 {P4}, P5 one light charge, "
-      f"pi light = FREEZE's own pinned node {P5} -> FAIL at P3 only: Ls parity and the bond pattern choose the far copy")
+far_q = {L: res[L]['w0'][-1][1] for L in (7, 13, 6, 12)}            # turn charge of the far-wall state at K = 0
+P3 = len(set(far_q.values())) == 1 and wb == res[7]['w0']            # forced = the far copy is the same for every termination and bond pattern tried
+P1, P2, P4, P5 = okC3 and min(G0, Gp) > 0.3, WF == F0 == Fp and Wc == [0, 0, 0], aO == [3, 6, 9], set(odd[0]) == {2}
+print(f"   synthesis (criteria_pre_run): P1 slab exists {P1}, P2 sum rule {P2}, P3 forced {P3} (far-wall q by Ls {far_q}; second bond pattern moves the pair: {wb != res[7]['w0']}), "
+      f"P4 mod 3 {P4}, P5 one light charge, pi light = FREEZE's own pinned node {P5} -> " + ("FAIL at P3 only: Ls parity and the bond pattern choose the far copy" if (P1 and P2 and P4 and P5 and not P3) else "pattern differs from the pre-run prediction"))
 print(f"elapsed {time.time() - T0:.1f}s, peak RSS {resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 2 ** 20:.0f} MB")
 print(f"TOTAL: PASS={NP[0]} FAIL={NP[1]}")
+raise SystemExit(1 if NP[1] else 0)

@@ -23,7 +23,7 @@ A product of coins and coin-conditioned shifts is a product of one-variable loop
 
 ## A walk with one cone at quasi-energy 0
 
-The quasi-local walk U = (n0 - i n.sigma)/|n| has net chirality -W3 at both 0 and pi for every mass parameter m, for example W3 = -1, +2, 0 and -1 at m = 2, 0.5, 4.5 and -2. At m = -2 it has exactly one cone at quasi-energy 0, at k = 0 with chirality +1, and all seven doublers at pi (four of +, three of -). It is covariant under all 24 cube rotations to 6.8e-16. Its weight beyond range R falls as exp(-1.66 R) (1.4e-2 at R = 1, 3.4e-11 at R = 12), so it is not finite range. By additivity, U_split^dag U_{m=2} has W3 = -1 and equals -I somewhere, so no W3 = 0 walk lies within operator distance 2 of it. Modes 0.05 from a pi cone have relay energy within 0.06 of pi, outside the domain of the switching law.
+The quasi-local walk U = (n0 - i n.sigma)/|n| has net chirality -W3 at both 0 and pi for every mass parameter m, for example W3 = -1, +2, 0 and -1 at m = 2, 0.5, 4.5 and -2. At m = -2 it has exactly one cone at quasi-energy 0, at k = 0 with chirality +1, and all seven doublers at pi (four of +, three of -). It is covariant under all 24 cube rotations to 6.8e-16. Its weight beyond range R falls as exp(-1.66 R) (1.4e-2 at R = 1, 3.4e-11 at R = 12), so it is not finite range. By additivity, U_split^dag U_{m=2} has W3 = -1 and equals -I somewhere, so no W3 = 0 walk lies within operator distance 2 of it. Modes 0.05 from a pi cone have relay energy within 0.06 of pi, outside the domain of the switching law (the runner's "CL-5" and "CL-6": source labels for a relay-energy rule and a switching rule as the source notes state them, not clauses of the current register).
 
 ## Scope
 

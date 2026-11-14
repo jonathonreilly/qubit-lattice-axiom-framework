@@ -295,10 +295,9 @@ check('F1 rung-1 admixture of the Weyl state = (q^2/6kap)^2 (q = 2ka), isotropic
       f'adm/q^4 {min(adm):.4f}-{max(adm):.4f} (1/9); shift/q^2 {min(dev):.4f}-{max(dev):.4f} ({-1/(72*v**2):.4f})')
 Ea, me = 1.22089e19 / np.sqrt(8 * np.pi), 0.51099895e-3; ka = 1.4e6 / Ea
 EQG2 = np.sqrt(2) * Ea; Eth = 2 * np.sqrt(me * Ea)
-check('F2 ESTIMATE 1.4 PeV: admixture %.0e, dv/v = -%.1e (no vacuum Cherenkov); E_QG,2 = %.1e GeV vs GRB 221009A > 7.3e11, '
-      'PeV-photon decay > ~1e16; a bare-band photon decays to e+e- above %.0f PeV (untested)' % ((2 * ka) ** 4 / (36 * KAP ** 2), ka ** 2 / 2, EQG2, Eth / 1e6),
-      EQG2 > 1e2 * 1.2e16 and (2 * ka) ** 4 / (36 * KAP ** 2) < 1e-40 and Eth > 1.4e6)
-check('F3 ESTIMATE the slab mirror moves at 2^R v with density 8^-R: a thermal mirror adds dN_eff < 0.02 for R >= 2; none if unbounded', 1.04 * 8.0 ** -2 < 0.02)
+print('   F2 CONDITIONAL ESTIMATE (not counted; inputs a = sqrt(8 pi) l_P and the measured bounds, supplied) 1.4 PeV: admixture %.0e, dv/v = -%.1e (no vacuum Cherenkov); E_QG,2 = %.1e GeV vs GRB 221009A > 7.3e11, '
+      'PeV-photon decay > ~1e16; a bare-band photon decays to e+e- above %.0f PeV (untested)' % ((2 * ka) ** 4 / (36 * KAP ** 2), ka ** 2 / 2, EQG2, Eth / 1e6))
+print('   F3 CONDITIONAL ESTIMATE (not counted; thermal mirror and N_eff inputs supplied) the slab mirror moves at 2^R v with density 8^-R: a thermal mirror adds dN_eff = %.3f for R = 2; none if unbounded' % (1.04 * 8.0 ** -2))
 
 # ============================================================ G
 print('== G. large-scale index of natural starts (T3 premise: strict cone, broken here)')
@@ -328,8 +327,8 @@ rate = 0.1973 * 59.2 / (4 * np.pi ** 2) * 1.977e35
 check('H1 the commutant of the ladder blocks is the identity: N is the one exact charge, and the rung-0 lattice carries one '
       'light Weyl field of one handedness, so N has sum q^3 = 1 (anomalous)',
       cdim == 1 and f1[0] == 1, f'commutant dim {cdim}')
-check('H2 ESTIMATE a link on N would drain rung-0 charge at %.0e m^-3 s^-1 in 1 MV/m parallel to 1 T: excluded by vector-like QED; '
-      'a link needs a wall orientation tied to an exact charge (none supplied)' % rate, rate > 1e30)
+print('   H2 CONDITIONAL ESTIMATE (not counted; field values and QED comparison supplied) a link on N would drain rung-0 charge at %.0e m^-3 s^-1 in 1 MV/m parallel to 1 T, against vector-like QED; '
+      'a link needs a wall orientation tied to an exact charge (none supplied)' % rate)
 check('H3 generations: the rung-0 count is the bulk invariant, 1 (2 without copy mass), never 3',
       f1[0] == 1 and f10[0] == 2)
 print('supplied: octree sites, split, fine rate, X = W(1-g5)/2 (dimerized), kap = 0.5, M = st > kap st, st; measured inputs; cited GNVW.')

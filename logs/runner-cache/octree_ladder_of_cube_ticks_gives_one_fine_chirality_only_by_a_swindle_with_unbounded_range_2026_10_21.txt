@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/octree_ladder_of_cube_ticks_gives_one_fine_chirality_only_by_a_swindle_with_unbounded_range_2026_10_21.py
-runner_sha256: f58acd25eb562382257dfce0839e0cea224d604655d3f600277dc69aeb5f8ea9
-input_fingerprint_sha256: e505c83373c209a83eebbd74c711dfae94e894f84b7c548203ffc810bb63c983
+runner_sha256: 39efcc2ed2dcb3aeeddbbaebfd95b488e3ba50e927507773dab5cd1086216b23
+input_fingerprint_sha256: 1cf2c9999485c549a664ca241186aea369c2cb745cfafd1a959d510a208f7ee6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 19.96
+elapsed_sec: 19.64
 status: ok
 ----- stdout -----
 == A. CL-2 tick (st = 0.04): light algebra, fifth matrix, Wilson term, copies
@@ -27,18 +27,18 @@ status: ok
 [PASS] E3 DIAGNOSTIC real space (st = 0.3, R = 3, 32^3 sites): support grows 4 sites per tick against the rung-0 cone's 2; probability lands beyond that cone, much less from a smooth source | one cell 8e-08, 3e-08, 5e-08; bump 0e+00, 1e-10, 4e-13
 == F. against measurement (estimates; a = sqrt(8 pi) l_P, E_a = 2.435e18 GeV)
 [PASS] F1 rung-1 admixture of the Weyl state = (q^2/6kap)^2 (q = 2ka), isotropic; its band is slower than the bare band by q^2/(72 v^2): dv/v = -(ka)^2/2 | adm/q^4 0.1106-0.1108 (1/9); shift/q^2 -0.0416--0.0415 (-0.0417)
-[PASS] F2 ESTIMATE 1.4 PeV: admixture 2e-49, dv/v = -1.7e-25 (no vacuum Cherenkov); E_QG,2 = 3.4e+18 GeV vs GRB 221009A > 7.3e11, PeV-photon decay > ~1e16; a bare-band photon decays to e+e- above 71 PeV (untested)
-[PASS] F3 ESTIMATE the slab mirror moves at 2^R v with density 8^-R: a thermal mirror adds dN_eff < 0.02 for R >= 2; none if unbounded
+   F2 CONDITIONAL ESTIMATE (not counted; inputs a = sqrt(8 pi) l_P and the measured bounds, supplied) 1.4 PeV: admixture 2e-49, dv/v = -1.7e-25 (no vacuum Cherenkov); E_QG,2 = 3.4e+18 GeV vs GRB 221009A > 7.3e11, PeV-photon decay > ~1e16; a bare-band photon decays to e+e- above 71 PeV (untested)
+   F3 CONDITIONAL ESTIMATE (not counted; thermal mirror and N_eff inputs supplied) the slab mirror moves at 2^R v with density 8^-R: a thermal mirror adds dN_eff = 0.016 for R = 2; none if unbounded
 == G. large-scale index of natural starts (T3 premise: strict cone, broken here)
 [PASS] G1 ladder sea, 40^3 sites: rung-0 density has a white floor (rung-0 number trades with rung 1): index -> 0; all-rung density (N exact): index 2; a white start stays white (rho ~ 1 invariant): 0 | rung 0: 1.15, floor 2.4e-03; all: 1.92; 0.965 is 230/246 sigma from 0/2
    counting: a rung-j cell is shared by 8^j sites, so tree-carried correlations give at most |p|^3 (|p|^1 in 1D)
 == H. charges and content
 [PASS] H1 the commutant of the ladder blocks is the identity: N is the one exact charge, and the rung-0 lattice carries one light Weyl field of one handedness, so N has sum q^3 = 1 (anomalous) | commutant dim 1
-[PASS] H2 ESTIMATE a link on N would drain rung-0 charge at 6e+34 m^-3 s^-1 in 1 MV/m parallel to 1 T: excluded by vector-like QED; a link needs a wall orientation tied to an exact charge (none supplied)
+   H2 CONDITIONAL ESTIMATE (not counted; field values and QED comparison supplied) a link on N would drain rung-0 charge at 6e+34 m^-3 s^-1 in 1 MV/m parallel to 1 T, against vector-like QED; a link needs a wall orientation tied to an exact charge (none supplied)
 [PASS] H3 generations: the rung-0 count is the bulk invariant, 1 (2 without copy mass), never 3
 supplied: octree sites, split, fine rate, X = W(1-g5)/2 (dimerized), kap = 0.5, M = st > kap st, st; measured inputs; cited GNVW.
-elapsed_seconds 19.4
-TOTAL: PASS=20 FAIL=0
+elapsed_seconds 19.3
+TOTAL: PASS=17 FAIL=0
 
 ----- stderr -----
 

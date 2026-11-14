@@ -13,7 +13,7 @@ runner: scripts/octree_ladder_of_cube_ticks_gives_one_fine_chirality_only_by_a_s
 Claim type: bounded_theorem.
 Primary runner: `scripts/octree_ladder_of_cube_ticks_gives_one_fine_chirality_only_by_a_swindle_with_unbounded_range_2026_10_21.py`.
 
-The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight and says a finite-range update gives no net chirality at any rung. This note builds a ladder in which the coarse cells of the nested tilings are themselves sites, and asks whether it gives one chirality on the fine lattice, a spectral tilt, or gauge and generation content. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) contain no coarse sites; adding them changes the Lattice and Qubit axioms and breaks nearest-neighbour admissibility in physical distance.
+The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. "The register" and "the register's cube tick" below mean the rules and the supplied cube tick as the source notes state them, not the current register text; the source notes report that a finite-range update gives no net chirality at any rung. This note builds a ladder in which the coarse cells of the nested tilings are themselves sites, and asks whether it gives one chirality on the fine lattice, a spectral tilt, or gauge and generation content. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) contain no coarse sites; adding them changes the Lattice and Qubit axioms and breaks nearest-neighbour admissibility in physical distance.
 
 ## Statement
 
@@ -37,7 +37,7 @@ No tilt. A white start stays white, since an ensemble proportional to the identi
 
 ## Checks
 
-The runner gives `TOTAL: PASS=20 FAIL=0` in 20.1 s.
+The runner gives `TOTAL: PASS=17 FAIL=0` (about 20 s); the three estimate lines F2, F3 and H2 are printed as conditional estimates and not counted (2026-11-14).
 
 - A1: the light algebra, G4 anticommuting with a_i and W, X^2 = 0, X X^+ = P+, X^+ X = P- (errors 2e-9, 2e-9, 3e-10).
 - A2: K^2 Wilson coefficient 0.1665, spread 8e-8. A3: the copy projector commutes with W, a_i, g5; the copy mass is -M P1 W.
@@ -52,9 +52,9 @@ The runner gives `TOTAL: PASS=20 FAIL=0` in 20.1 s.
 - F1: rung-1 admixture over q^4 is 0.1106 to 0.1108 (1/9) and the velocity shift over q^2 is -0.0416 (-0.0417), so dv/v = -(ka)^2/2.
 - G1: on 40^3 sites the rung-0 density has a white floor of 2.4e-3 (index tends to 0), the all-rung density has index 1.92 (tends to 2).
 - H1: commutant dimension 1. H3: generation count 1, never 3.
-- F2, F3, H2: the estimates below.
+- F2, F3, H2 (not counted): the estimates below.
 
-Estimates (not checks). With a = sqrt(8 pi) Planck lengths, at 1.4 PeV the admixture is 2e-49 and dv/v = -1.7e-25 (subluminal, no vacuum Cherenkov), a quadratic scale of 3.4e18 GeV against the GRB 221009A bound above 7.3e11 GeV. If the photon kept the bare band, photons would decay to e+e- above about 71 PeV, an untested prediction. The beyond-cone signal is likewise an untested prediction for Planck-localized sources. A thermal slab mirror adds dN_eff < 0.02 for R >= 2. A link on N would drain fine-lattice charge at about 6e34 per m^3 per s in 1 MV/m parallel to 1 T, excluded by vector-like QED. The measured n_s = 0.965 is 230 and 246 sigma from the indices 0 and 2.
+Conditional estimates (not checks; inputs a = sqrt(8 pi) Planck lengths and the measured bounds, supplied). With a = sqrt(8 pi) Planck lengths, at 1.4 PeV the admixture is 2e-49 and dv/v = -1.7e-25 (subluminal, no vacuum Cherenkov), a quadratic scale of 3.4e18 GeV against the GRB 221009A bound above 7.3e11 GeV. If the photon kept the bare band, photons would decay to e+e- above about 71 PeV, an untested prediction. The beyond-cone signal is likewise an untested prediction for Planck-localized sources. A thermal slab mirror adds dN_eff < 0.02 for R >= 2. A link on N would drain fine-lattice charge at about 6e34 per m^3 per s in 1 MV/m parallel to 1 T, in conflict with vector-like QED. The measured n_s = 0.965 is 230 and 246 sigma from the indices 0 and 2.
 
 ## Boundary
 

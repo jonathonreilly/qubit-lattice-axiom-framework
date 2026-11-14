@@ -47,13 +47,15 @@ class Lat:
         s.GKKl = np.empty((Mg + 1, 8, 8)); s.GRR = np.empty((Mg + 1, 16, 16))
         iK = idx[(0, 0, 0)]; iR = idx[(L // 2,) * 3]
         ph = np.exp(-1j * ks @ S.T)                                                               # [k, d]
+        imagV = 0.0
         for m in range(Mg + 1):
             W = np.exp(-dl[m] * e - lz); G = np.einsum('kan,kn,kbn->kab', U, W, U.conj())        # <m_k(tau) m_k^+>
             Gm = G[:, :8, :8]; RGR = np.einsum('ab,kbc,dc->kad', R, Gm, R) * ff[:, None, None]
-            V[m] = np.einsum('kad,kx->axd', RGR, ph).real / N
+            Vc = np.einsum('kad,kx->axd', RGR, ph) / N                                           # complex table, kept until validated
+            imagV = max(imagV, np.abs(Vc.imag).max()); V[m] = Vc.real
             s.GKK[m] = Gm[iK].real; s.GKKl[m] = G[iK, 8:, 8:].real; s.GRR[m] = G[iR].real
             s.FK[m] = (8 / np.sqrt(8 * N)) * (R @ Gm[iK]).real
-        s.imagV = 0.0
+        s.imagV = imagV                                                                           # max |Im| over every stored time slice
         s.V = np.ascontiguousarray(V.reshape(Mg + 1, NR, N * NR)); s.M = NR * N
         s.phiR = abs(np.prod(1 + np.exp(1j * ks[iR]))); s.e = e
         ov = np.zeros((N, N))                                                                     # cube overlap / 8 (anticommutator of filtered fields)
@@ -253,13 +255,21 @@ nuJ = nu_of(J8); nuN = nu_of(1j * np.eye(8))
 rep(com.shape[1] == 8 and num == [0] and 8 in nud and int(round(nuJ)) == 0 and abs(nuN) == 16, "A3", "THEOREM",
     "exhaustive search inside the band commutant (dim 8): every unitary symmetry of the taste-mixing H_int with U^2 = (-1)^F has Z16 index 0 mod 16 on the K mirror. The two J sectors are time-reversal partners (same chirality, J-charges +-1), so Z4_J is vector-like (index 0); the chiral one is Z4_N (mode number), index 16 = 0 with two tastes (8 with one: the obstruction of the one-taste toy is Z4_N, not Z4_J). With taste-diagonal rows an index-8 symmetry survives (mode phase on one taste only): the taste mixing removes it",
     f"mixing: |G| = {len(Gmix)}, {len(z4m)} Z4-type, indices mod 16 {num}; taste-diagonal rows: |G| = {len(Gdiag)}, indices {nud}; nu(Z4_J) = {nuJ:.0f}, nu(Z4_N) = {nuN:+.0f}")
-Vi = 0.0
-for m in (0, 37, 200):
+def row_table(m, rows):
+    """complex filtered-row propagator table at time slice m (kept complex; its imaginary part is the test)"""
     W = np.exp(-lat.h * m * lat.e - np.logaddexp(0.0, -beta * lat.e)); Ue = np.linalg.eigh(Hk)[1]
     G = np.einsum('kan,kn,kbn->kab', Ue, W, Ue.conj())[:, :8, :8]; ff = np.abs(np.prod(1 + np.exp(1j * ks), 1)) ** 2 / 8
-    RGR = np.einsum('ab,kbc,dc->kad', Rw, G, Rw) * ff[:, None, None]; Vi = max(Vi, np.abs(np.einsum('kad,kx->axd', RGR, np.exp(-1j * ks @ lat.S.T)) / N).imag.max())
-rep(Vi < 1e-12, "A4", "THEOREM", "sign: the filtered-row propagator tables are real (rows real, band real), the 4 flavours see the same real matrix M, so every CT-INT weight is g^2n det(M)^4 >= 0",
-    f"max |Im| of the row tables {Vi:.0e}")
+    RGR = np.einsum('ab,kbc,dc->kad', rows, G, rows.conj()) * ff[:, None, None]
+    return np.einsum('kad,kx->axd', RGR, np.exp(-1j * ks @ lat.S.T)) / N
+Vi = max(np.abs(row_table(m, Rw).imag).max() for m in (0, 37, 200))
+# control: rows with a complex phase on half of them give a complex table, and the corrected diagnostic must see it;
+# the old expression np.abs(T).imag.max() is identically 0 for any complex T (finding 7 of the PR 10131 hold)
+Rc = Rw.astype(complex); Rc[::2] = Rc[::2] * np.exp(0.4j)
+Tc = row_table(37, Rc); ctl_new, ctl_old = np.abs(Tc.imag).max(), np.abs(Tc).imag.max()
+rep(Vi < 1e-12 and lat.imagV < 1e-12 and ctl_new > 1e-3 and ctl_old == 0.0, "A4", "THEOREM",
+    "sign: the filtered-row propagator tables are real (rows real, band real), the 4 flavours see the same real matrix M, so every CT-INT weight is g^2n det(M)^4 >= 0. "
+    "Diagnostic max |Im T| on the complex table (corrected; the earlier |T|.imag form is identically 0); control: complex-phased rows give a complex table that the diagnostic flags",
+    f"max |Im| of the row tables: slices 0, 37, 200 {Vi:.0e}, all {lat.V.shape[0]} stored slices {lat.imagV:.0e}; control |Im| {ctl_new:.2e} (old form {ctl_old:.0e})")
 # zero-mode atom baseline: the K-projected interaction is -g (64/N) sum_rows (Q + Q^+) on the 32 K mirror modes = 4 identical 8-mode blocks
 def fock(n):
     I2, Z, a = np.eye(2), np.diag([1., -1.]), np.array([[0, 1], [0, 0.]]); out = []
@@ -363,3 +373,4 @@ print("== D. recorded production values (prod3.py, 82 s segments, seeded; record
 for s_ in RECORDED: print("  recorded:", s_)
 print("supplied: SU(4) model (not a rule), K/R Weyl band, taste-mixing rows, w = t/2, sizes, betas, seeds; cited: momentum-selective-mirror, light-partner-gap, block-quartic-smg")
 print(f"elapsed {time.time() - T0:.1f} s"); print(f"TOTAL: PASS={NP[0]} FAIL={NP[1]}")
+raise SystemExit(1 if NP[1] else 0)

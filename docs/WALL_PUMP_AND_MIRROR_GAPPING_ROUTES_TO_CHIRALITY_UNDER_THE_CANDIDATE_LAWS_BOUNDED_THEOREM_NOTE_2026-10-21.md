@@ -1,7 +1,7 @@
 ---
 claim_id: wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_bounded_theorem_note_2026-10-21
 claim_type: bounded_theorem
-claim_scope: "For the update of the candidate laws register and supplied wall models, the zoom ladder keeps W3 and is locked to momentum, the step pi/2 tick has index 0 at quasi-energy 0 and pi in every site-phase background, and exact mode number with the mirror reflection forbids gapping the mirror alone, so none of the three routes gives net chirality under the register as written; a supplied internal-index wall binds Weyl content at its ends; no chiral family, gapped mirror phase or adopted rule is established."
+claim_scope: "For the update of the candidate laws register as the source notes state it (not the current register text) and supplied wall models, the zoom ladder keeps W3 and is locked to momentum, the step pi/2 tick has index 0 at quasi-energy 0 and pi in every site-phase background, and exact mode number with the mirror reflection forbids gapping the mirror alone, so none of the three routes gives net chirality under the register as written; a supplied internal-index wall binds Weyl content at its ends; no chiral family, gapped mirror phase or adopted rule is established."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -13,7 +13,7 @@ runner: scripts/wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candi
 Claim type: bounded_theorem.
 Primary runner: `scripts/wall_pump_and_mirror_gapping_routes_to_chirality_under_the_candidate_laws_2026_10_21.py`.
 
-The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. This note tests three routes to net chirality against it: a domain wall along an internal or zoom coordinate, Floquet pumping between quasi-energy 0 and pi, and gapping the mirror through the response law. None works with the register as written. A wall along a supplied internal index does bind Weyl content at its ends, but only with rules the register does not contain. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose none of the models used.
+The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. Here "the register", its update, response law and step bound eps < 0.04 are those rules as the source notes state them, not the current register text, and every statement that uses them is conditional on them. This note tests three routes to net chirality against those rules: a domain wall along an internal or zoom coordinate, Floquet pumping between quasi-energy 0 and pi, and gapping the mirror through the response law. None works with the register as written. A wall along a supplied internal index does bind Weyl content at its ends, but only with rules the register does not contain. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose none of the models used.
 
 ## Statement
 
@@ -40,7 +40,7 @@ Floquet pumping in the 3D bulk is forbidden by the finite-circuit result. An eff
 
 ## Checks
 
-The runner gives 18 PASS and 0 FAIL. These are finite diagnostics of supplied models.
+The runner gives 17 PASS and 0 FAIL; the estimate line D1 is printed as a conditional estimate and not counted (2026-11-14). These are finite diagnostics of supplied models.
 
 - Zoom: a quasi-local W3 = -1 walk folded to 16 bands gives -0.999992 then -0.999995, and the register's tick gives 3.1e-20. The Haar formula holds to 2e-15, with mean levels 11.148, 10.148, 9.148, 8.149, 7.149 at successive octaves. Swap depths are 3, 7, 15.
 - 1D wall at step 0.30: layer 0 holds one right-mover crossing w = 0 only at k = 0 and the last layer one left-mover, with leakage ratio 0.4000 per layer.
@@ -50,9 +50,9 @@ The runner gives 18 PASS and 0 FAIL. These are finite diagnostics of supplied mo
 - Two-reflection traces are exact integers. On a 4^3 torus at step pi/2 the free tick has dimensions (8, 8) at 0 and pi with W_o-traces 0, and random links give (0, 0). The 2D overlap gives index 0, -1, -2 in flux 0, 1, 2 with a far element 4.0e-3.
 - N is exact; a four-mode term has [N, O] = -4 O. The 4 symmetric masses all anticommute with s3. The mirror reflection is exact to 4e-15.
 
-## Against measurement (estimates)
+## Against measurement (conditional estimates; cutoff M_P/3, sphaleron thermalisation and measured bounds supplied)
 
-A Planck-suppressed term changing N by 4 gives a proton lifetime near 8e42 yr, against the bound of 2.4e34 yr. A massless mirror coupled through sphalerons would thermalise and add Delta N_eff of about 1.04, against N_eff = 2.99 +- 0.17, so it is excluded and the mirror must be gapped. A leakage mass below 0.05 eV at |1 - m0| = 0.4 and cutoff M_P/3 needs at least 73 layers; at m0 = r the chain dimerises and the end modes are exact for any length of at least 2. The copy wall needs step pi/2, which the register's bound eps < 0.04 excludes.
+A Planck-suppressed term changing N by 4 gives a proton lifetime near 8e42 yr, against the bound of 2.4e34 yr. A massless mirror coupled through sphalerons would thermalise and add Delta N_eff of about 1.04, against N_eff = 2.99 +- 0.17, so under these inputs a decoupled massless mirror is disfavoured and the mirror would need a gap. A leakage mass below 0.05 eV at |1 - m0| = 0.4 and cutoff M_P/3 needs at least 73 layers; at m0 = r the chain dimerises and the end modes are exact for any length of at least 2. The copy wall needs step pi/2, which the register's bound eps < 0.04 excludes.
 
 ## Boundary
 

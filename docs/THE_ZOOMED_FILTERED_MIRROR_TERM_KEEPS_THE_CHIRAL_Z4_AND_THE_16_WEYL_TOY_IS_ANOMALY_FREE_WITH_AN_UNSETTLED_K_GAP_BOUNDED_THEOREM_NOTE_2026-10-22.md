@@ -1,7 +1,7 @@
 ---
 claim_id: the_zoomed_filtered_mirror_term_keeps_the_chiral_z4_and_the_16_weyl_toy_is_anomaly_free_with_an_unsettled_k_gap_bounded_theorem_note_2026-10-22
 claim_type: bounded_theorem
-claim_scope: "Two parts. (I) CL-1 tick (step-pi/2 generator H'), exact: the fine cube-filtered mirror term keeps no Z4 inside U(1)_eps (only fermion parity); the same filter applied one rung up (over the 8 cells of a cell cube, on eps-pure mirror cell orbitals) keeps Z4_eps, vanishes at the cell corner R, and is orthogonal to the light copy at K; a corner pairing w (1 - B)/2 Y keeps eps, leaves the 8 K zero modes and gaps R with no new zero on a 12^3 grid; the K mirror carries Z16 index 2 per mode member under Z4_eps. (II) SU(4) MODEL (not a rule) with 16 Weyl at K: two tastes per flavour of a K/R Weyl band, taste-mixing spin-twisted cube-filtered rows on the mirror, light paired at R only. Exact: sign-free (det(M)^4, M real); light K and the whole R sector are decoupled by construction; an exhaustive search of the band commutant finds every Z4-type symmetry of H_int at Z16 index 0 mod 16 (taste-diagonal rows keep an index-8 symmetry). Correction to momentum-selective-mirror: the one-taste obstruction is Z4 of mode number, not Z4_J (the two J sectors are time-reversal partners of equal chirality). Finite diagnostics (sign-free CT-INT, beta = 4, L = 4, 6, g/t = 2, 4, 8, short L = 6 runs): g/t = 8 shows no order (S_pair/N falls 8-11x against volume 3.4) and a K-mirror gap 0.93-1.05 g at L = 6, 40x the zero-mode-atom baseline but half its L = 4 value (2.2(5)); g/t = 2 shows pair correlations that do not fall with volume; g/t = 4 is seed-dependent. Survival of the K gap as L -> infinity is not established: inconclusive."
+claim_scope: "Two parts. (I) CL-1 tick (step-pi/2 generator H'), exact: the fine cube-filtered mirror term keeps no Z4 inside U(1)_eps (only fermion parity); the same filter applied one rung up (over the 8 cells of a cell cube, on eps-pure mirror cell orbitals) keeps Z4_eps, vanishes at the cell corner R, and is orthogonal to the light copy at K; a corner pairing w (1 - B)/2 Y keeps eps, leaves the 8 K zero modes and gaps R with no new zero on a 12^3 grid; the K mirror carries Z16 index 2 per mode member under Z4_eps. (II) SU(4) MODEL (not a rule) with 16 Weyl at K: two tastes per flavour of a K/R Weyl band, taste-mixing spin-twisted cube-filtered rows on the mirror, light paired at R only. Exact: sign-free (det(M)^4, M real; the real-table diagnostic max |Im T| is computed on the complex table over all stored time slices, with a complex-row control); light K and the whole R sector are decoupled by construction; an exhaustive search of the band commutant finds every Z4-type symmetry of H_int at Z16 index 0 mod 16 (taste-diagonal rows keep an index-8 symmetry). Correction to momentum-selective-mirror: the one-taste obstruction is Z4 of mode number, not Z4_J (the two J sectors are time-reversal partners of equal chirality). Finite diagnostics (sign-free CT-INT, beta = 4, L = 4, 6, g/t = 2, 4, 8, short L = 6 runs): g/t = 8 shows no order (S_pair/N falls 8-11x against volume 3.4) and a K-mirror gap 0.93-1.05 g at L = 6, 40x the zero-mode-atom baseline but half its L = 4 value (2.2(5)); g/t = 2 shows pair correlations that do not fall with volume; g/t = 4 is seed-dependent. Survival of the K gap as L -> infinity is not established: inconclusive."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -11,12 +11,22 @@ upstream_dependencies:
 runner: scripts/the_zoomed_filtered_mirror_term_keeps_the_chiral_z4_and_the_16_weyl_toy_is_anomaly_free_with_an_unsettled_k_gap_2026_10_22.py
 ---
 
-# The zoomed filtered mirror term keeps the chiral Z4, and the 16-Weyl toy is anomaly-free with an unsettled K gap
+# The zoomed filtered mirror term keeps the chiral Z4, and the 16-Weyl toy has Z16 index 0 under every unitary Z4 symmetry found in the band commutant, with an unsettled K gap
 
 Claim type: bounded_theorem.
 Primary runner: `scripts/the_zoomed_filtered_mirror_term_keeps_the_chiral_z4_and_the_16_weyl_toy_is_anomaly_free_with_an_unsettled_k_gap_2026_10_22.py`.
 
 The [light-partner note](THE_LIGHT_COPY_ZONE_CORNER_PARTNERS_ARE_VECTOR_LIKE_ONLY_THROUGH_THE_SUBLATTICE_CHARGE_BOUNDED_THEOREM_NOTE_2026-10-22.md) requires a mirror term that gaps the mirror symmetrically at K = 0 while the mirror stays Dirac-paired with the light copy at the corner R, and that keeps a Z4 inside U(1)_eps. The [momentum-selective note](THE_CUBE_FILTERED_MIRROR_TERM_IS_MOMENTUM_SELECTIVE_BUT_THE_SU4_TOY_K_MIRROR_IS_ANOMALOUS_BOUNDED_THEOREM_NOTE_2026-10-22.md) found its one-taste toy blocked by a Z16 index of 8. This note (I) checks the symmetry on the CL-1 tick and (II) runs the 16-Weyl toy. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) are unchanged.
+
+Local labels (2026-11-14). "CL-1" is the source label for the supplied cube tick, "the register" the rules as the source
+notes state them (including the 16 per cell and Spin(10) content), and "AX-2", "AX-7" are source-local labels for
+candidate rule texts. None is a clause of the current [candidate-law register](CANDIDATE_LAWS.md) (whose CL-1, CL-2 and
+CL-3 are historical aliases with zero premise weight) or an axiom of the [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md).
+The momentum-selective note (#9994) is not in this repository and is recorded only in the consolidation's source map;
+its link above resolves only on its source branch, and its results quoted here are historical reported results.
+block-quartic-smg is [#9992](THE_BLOCK_LOCAL_QUARTIC_GAPS_THE_DIRAC_MIRROR_SYMMETRICALLY_AND_RELEASES_THE_LIGHT_PARTNERS_BOUNDED_THEOREM_NOTE_2026-10-22.md).
+"Anomaly-free" below means Z16 index 0 under the unitary Z4-type symmetries found in the band commutant; antiunitary
+indices, lattice-symmetry combinations and mixed anomalies are not computed (Boundary).
 
 ## I. The CL-1 tick (exact)
 
@@ -46,7 +56,7 @@ Setting: H' = (i/2)[R_o, R_e] on 8-site cells, cell momentum K, sublattice sign 
    - The two J sectors are time-reversal partners. They have the same chirality and J-charges +-1, so Z4_J is vector-like (index 0). The chiral symmetry is Z4 of mode number: index 16 = 0 with two tastes, and 8 with one.
 
    Correction: the momentum-selective note's index-8 obstruction is real, but it belongs to Z4_N, not Z4_J. Its item 5 labels it wrong, and the conclusion stands.
-7. (A4) Sign: the row tables are real (max |Im| = 0) and the 4 flavours see the same real M, so the weights are g^2n det(M)^4 >= 0.
+7. (A4) Sign: the row tables are real and the 4 flavours see the same real M, so the weights are g^2n det(M)^4 >= 0. The reality diagnostic is max |Im T| on the complex table T, over every stored time slice and three recomputed ones. Corrected 2026-11-14: the earlier runner took np.abs(T).imag.max(), which is identically 0 for any complex T, so it tested nothing; the corrected form is checked against a control in which complex-phased rows give a complex table that the diagnostic flags. The algebraic reason (real rows on a real band) is unchanged.
 8. (A5, exact ED) Zero-mode atom baseline. Projected to K, the quartic is -g(64/L^3) sum (Q + Q^+) on 4 identical 8-mode blocks. At beta = 4 its K midpoint gap is 0.465 g (L = 4) and 0.025 g (L = 6), with level gaps 1.000 and 0.296 g.
 9. (Finite diagnostics; recorded production, prod3.py, 82 s segments, g = 1, w = t/2, beta = 4)
 
@@ -77,14 +87,14 @@ The trend is the reverse of the one-taste toy: symmetric at strong coupling, cor
 
 - Light K massless: exact (by construction in the model; on the tick, orthogonality at K plus Z4_eps).
 - R paired: exact (decoupling; the tick's corner pairing realises it in the free band).
-- Z16 index 0: yes (model, exhaustive within the band commutant; tick: 0 for n = 0 mod 8).
+- Z16 index 0: yes, for every unitary Z4-type symmetry found in the band commutant (model; antiunitary and mixed anomalies not computed); tick: 0 for n = 0 mod 8.
 - Sign-free: yes.
 - Z4 inside U(1)_eps: lost by the fine cube filter (C1). Kept by the zoomed filter (C2).
 - Mirror K gap survives L -> 6 with no order: at g/t = 8 there is no order and a gap of about 1 g at L = 6, but the gap halves from L = 4 to 6. At g/t = 2 the pair correlations persist.
 
-Overall: **INCONCLUSIVE.** The anomaly no longer forbids the momentum-selective symmetric phase, and the strong-coupling data are compatible with it, but no L-independent gap is shown.
+Overall: **INCONCLUSIVE.** The Z16 count under the symmetries searched no longer forbids the momentum-selective symmetric phase, and the strong-coupling data are compatible with it, but no L-independent gap is shown.
 
-## Rule text (tested candidate, NOT adopted; for AX-7)
+## Rule text (tested candidate with zero premise weight, NOT adopted; source label AX-7)
 
 > "AX-7 (Mirror term, zoomed). The mirror term acts one rung above the site: on each cube of eight cells, for each sublattice sign, it is the charge-4 term of that sign's mirror cell modes, averaged over the eight cells, that is invariant under every mode rotation the update keeps, with one coupling everywhere. The light-mirror pairing at the cell corner is the cell-local sublattice-even light-mirror term weighted by (1 - B)/2, B the symmetrised product of the two tilings' reflections."
 

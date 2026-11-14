@@ -1,28 +1,29 @@
 ===== runner cache v1 =====
 runner: scripts/the_corner_stabilizer_forces_a_scalar_light_block_at_x_and_m_so_no_rotation_covariant_freeze_deformation_gaps_the_light_partners_light_light_2026_10_23.py
-runner_sha256: 461591c2eb2717e8450ddd4191ce9137ec125639deedfd0b68808b2e21dcbb57
-input_fingerprint_sha256: 4a6136fab12fa72160c65f8e4fcb263eef99943ab7bdda520647cfd3f804154c
+runner_sha256: bd29c1d75e492dda4f35670d3f377eef508c69d842ea82cbd60eb69f7c0012f2
+input_fingerprint_sha256: 178a352cd97c88e61e7420c4e1c4bb7f9ceeb9196a6921d31d29519a9b96cf36
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 1.08
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
 == A. exact Schur at the D2-fixed corners ==
 PASS A1 X=(pi,0,0) and M=(pi,pi,0) are fixed (mod 2pi) by the 4 diagonal rotations D2 of T; the light label is V-invariant and D2 acts on it with a 1-dim commutant (Q8 spinor, irreducible)  [label res 7e-16, commutant dim 1]
-PASS A2 FREEZE: light-labelled block is scalar at X and M (1/3 and -1/3): polar part = +1 at X, -1 at M, so X sits at quasienergy 0 and M at pi  [C(X)=0.3333+0.0000j, C(M)=-0.3333+0.0000j]
+PASS A2 FREEZE: the compressed light-labelled block C = B^+ U B is scalar at X and M (1/3 and -1/3); its polar part is +1 at X and -1 at M (a property of the polar-compressed map, not a quasienergy of the walk: see A3)  [C(X)=0.3333+0.0000j, C(M)=-0.3333+0.0000j]
+PASS A3 the light label is NOT walk-invariant: at X the light-to-mirror-label block of U_F has norm |h1 - i h2| = 2 sqrt2/3 and the full walk has eigenphases +-acos(1/3) (Pi+) and +-pi/2 (frozen), none at 0, so X is not a quasienergy-0 node of FREEZE; control: at K = 0 the label is invariant (leak 0) and the walk has its quasienergy-0 node  [h1 - i h2 at X -0.9428+0e+00i; |P_L U_F(X) P_R| 0.9428; |eigenphases| at X [1.231, 1.231, 1.231, 1.231, 1.5708, 1.5708, 1.5708, 1.5708] (acos(1/3) = 1.2310); leak at K = 0 1e-15]
 == B. deformations ==
 PASS B1 (diagnostic of A) 3 random T-covariant deformations U_F exp(i H_cov) (H_cov = rotation-twirled random range-sqrt3 Bloch Hamiltonian on all 8 cell modes, light-mirror and Pi+/Pi- mixing included): covariant, and the light-labelled block at X, M, M' is still exactly scalar  [cov res 4e-15, non-scalar part 2e-15; light phase at X [-1.379, -0.61, 1.32]]
   light-light scalar layer exp(i a phi(K) tau3 Pi+), phi = 3 - sum cos cos: phi(0)=phi(R)=0, phi(X)=phi(M)=4; T-invariant (res 2e-15)
-PASS B2 a=0.1: light Weyls at 0 and R untouched; the X light level is still 2-fold, moved to quasienergy 4a, and the lower light band crosses quasienergy 0 on the line 0->X (a Fermi surface)  [U-U_F at nodes 0e+00; X phases [0.4, 0.4]; 0-crossing at s = [0.919] of 0->X]
-PASS B2 a=0.25: light Weyls at 0 and R untouched; the X light level is still 2-fold, moved to quasienergy 4a, and the lower light band crosses quasienergy 0 on the line 0->X (a Fermi surface)  [U-U_F at nodes 0e+00; X phases [1.0, 1.0]; 0-crossing at s = [0.691] of 0->X]
-== C. chirality bookkeeping of the light-labelled projection (polar part) ==
+PASS B2 a=0.1: the walk at 0 and R is untouched; the polar-compressed light map at X stays scalar, its phase moves to 4a, and its lower eigenphase crosses 0 on the line 0->X (a crossing of the compressed map; a Fermi surface only if the label were invariant)  [U-U_F at nodes 0e+00; X phases [0.4, 0.4]; 0-crossing at s = [0.919] of 0->X]
+PASS B2 a=0.25: the walk at 0 and R is untouched; the polar-compressed light map at X stays scalar, its phase moves to 4a, and its lower eigenphase crosses 0 on the line 0->X (a crossing of the compressed map; a Fermi surface only if the label were invariant)  [U-U_F at nodes 0e+00; X phases [1.0, 1.0]; 0-crossing at s = [0.691] of 0->X]
+== C. degree bookkeeping of the polar-compressed light and mirror-label maps (not walk nodes: A3) ==
   light: (#pi entries, quasienergy: sign) 00:-1 10:+1 10:+1 2pi:+1 10:+1 2pi:+1 2pi:+1 3pi:-1
   mirror: (#pi entries, quasienergy: sign) 00:+1 10:-1 10:-1 2pi:-1 10:-1 2pi:-1 2pi:-1 3pi:+1
-PASS C1 light-labelled projection: Gamma and R carry one sign, the 3 X (quasienergy 0) and 3 M (pi) the opposite; net light chirality +-2 at quasienergy 0 and the same at pi; mirror net is opposite  [net (0, pi): light (2, 2), mirror (-2, -2)]
-verdict: no T-covariant deformation gives the light-labelled sector nodes only at 0 and R: Q8 forces a
-scalar light block at X and M, so a light partner stays there as a node at 0/pi, a Fermi surface, or
-a zero. Light-light partner masses do not exist; partner release under mirror gapping is generic.
-TOTAL: PASS=6 FAIL=0
+PASS C1 polar-compressed light map: Gamma and R carry one sign, the 3 X (phase 0 of the map) and 3 M (phase pi) the opposite; net +-2 at phase 0 and the same at pi; the mirror-label map is opposite (map degrees, not walk node chiralities)  [net (0, pi): light (2, 2), mirror (-2, -2)]
+verdict: exact Schur: Q8 forces a scalar light-labelled block at X and M for every T-covariant walk, so no T-covariant
+light-light term splits the X level. The node / crossing / zero trichotomy holds for the polar-compressed map; it
+is a statement about the walk's light spectrum only for a walk-invariant light label, which FREEZE does not have (A3).
+TOTAL: PASS=7 FAIL=0
 
 ----- stderr -----
 

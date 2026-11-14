@@ -221,3 +221,4 @@ check("H1 post-hoc (labelled, not pre-set): at fixed momentum c4 is L-converged 
 print("Finite-lattice U(1) diagnostic, axis-restricted admissible backgrounds; Luscher / HJL theorems supplied; not the non-abelian measure.")
 print(f"elapsed {time.time()-T0:.1f}s")
 print(f"TOTAL: PASS={P} FAIL={F}")
+raise SystemExit(1 if F else 0)

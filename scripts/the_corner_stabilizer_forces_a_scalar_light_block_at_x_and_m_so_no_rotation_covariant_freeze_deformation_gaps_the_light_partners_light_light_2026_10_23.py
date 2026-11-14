@@ -8,6 +8,8 @@ CTWIST and FREEZE exactly as in twist-local-single / freeze-mirror-smg, then:
      so ANY T-covariant walk has a scalar light-labelled block at X and M;
   B. random T-covariant deformations (finite diagnostic of A) and the designed light-light scalar term;
   C. node chirality bookkeeping of the light-labelled projection (polar part) of FREEZE.
+The light label is NOT walk-invariant on FREEZE (A3), so the polar part of the compressed block is a map T^3 -> U(2),
+not the light walk's spectrum; its nodes, crossings and degrees are statements about that map (hold finding 2).
 """
 import itertools as it
 import numpy as np
@@ -164,11 +166,24 @@ check("A1 X=(pi,0,0) and M=(pi,pi,0) are fixed (mod 2pi) by the 4 diagonal rotat
       "is V-invariant and D2 acts on it with a 1-dim commutant (Q8 spinor, irreducible)",
       fixd and lT < 1e-9 and cdim == 1, f"label res {lT:.0e}, commutant dim {cdim}")
 cX, cM = comp(UF, XP), comp(UF, MP)
-check("A2 FREEZE: light-labelled block is scalar at X and M (1/3 and -1/3): polar part = +1 at X, -1 at M, "
-      "so X sits at quasienergy 0 and M at pi",
+check("A2 FREEZE: the compressed light-labelled block C = B^+ U B is scalar at X and M (1/3 and -1/3); its polar part is +1 at X "
+      "and -1 at M (a property of the polar-compressed map, not a quasienergy of the walk: see A3)",
       np.allclose(cX, cX[0, 0] * np.eye(2)) and np.allclose(cM, cM[0, 0] * np.eye(2))
       and abs(cX[0, 0] - 1 / 3) < 1e-9 and abs(cM[0, 0] + 1 / 3) < 1e-9,
       f"C(X)={cX[0,0]:.4f}, C(M)={cM[0,0]:.4f}")
+# A3 (hold finding 2): the light label is not an invariant subspace of FREEZE. At X = (pi,0,0) the CTWIST formula gives f = 1/3,
+# g = 0 and taste mixing h1 - i h2 = (sqrt2/3)(-1 + w + wbar) = -2 sqrt2/3, so the active Pi+ block has eigenvalues 1/3 +- i sqrt(8/9):
+# eigenphases +-acos(1/3), none at 0. The compression is I/3 (polar part I) only because the mixing is discarded.
+hX = (np.sqrt(2) / 3) * (np.cos(np.pi) + np.conj(w) * 1 + w * 1)
+eX = np.angle(np.linalg.eigvals(UF(XP))); leakX = np.linalg.norm(BL.conj().T @ UF(XP) @ BR, 2)
+k0 = np.zeros(3); leak0 = np.linalg.norm(BL.conj().T @ UF(k0) @ BR, 2); e0 = np.angle(np.linalg.eigvals(UF(k0)))
+okA3 = (abs(hX + 2 * np.sqrt(2) / 3) < 1e-12 and abs(leakX - 2 * np.sqrt(2) / 3) < 1e-9 and np.abs(eX).min() > 1.0
+        and np.isclose(np.sort(np.abs(eX))[0], np.arccos(1 / 3), atol=1e-9) and leak0 < 1e-12 and int(np.sum(np.abs(e0) < 1e-9)) >= 2)
+check("A3 the light label is NOT walk-invariant: at X the light-to-mirror-label block of U_F has norm |h1 - i h2| = 2 sqrt2/3 and the "
+      "full walk has eigenphases +-acos(1/3) (Pi+) and +-pi/2 (frozen), none at 0, so X is not a quasienergy-0 node of FREEZE; "
+      "control: at K = 0 the label is invariant (leak 0) and the walk has its quasienergy-0 node",
+      okA3, f"h1 - i h2 at X {hX.real:+.4f}{hX.imag:+.0e}i; |P_L U_F(X) P_R| {leakX:.4f}; |eigenphases| at X {np.round(np.sort(np.abs(eX)), 4).tolist()} "
+      f"(acos(1/3) = {np.arccos(1/3):.4f}); leak at K = 0 {leak0:.0e}")
 
 print("== B. deformations ==")
 NV = [np.zeros(3)] + [s * np.eye(3)[i] for i in range(3) for s in (1, -1)] + \
@@ -214,13 +229,13 @@ for a in (0.1, 0.25):
     th = np.array(th); lo = th[:, 0]
     cross = ss[np.where(np.diff(np.sign(lo)) != 0)[0]]
     thX = np.angle(np.linalg.eigvals(polar(comp(Ua, XP))[0]))
-    check(f"B2 a={a}: light Weyls at 0 and R untouched; the X light level is still 2-fold, moved to "
-          f"quasienergy 4a, and the lower light band crosses quasienergy 0 on the line 0->X (a Fermi surface)",
+    check(f"B2 a={a}: the walk at 0 and R is untouched; the polar-compressed light map at X stays scalar, its phase moves to "
+          f"4a, and its lower eigenphase crosses 0 on the line 0->X (a crossing of the compressed map; a Fermi surface only if the label were invariant)",
           same < 1e-12 and np.allclose(thX, 4 * a) and len(cross) >= 1,
           f"U-U_F at nodes {same:.0e}; X phases {np.round(thX,3).tolist()}; 0-crossing at s = "
           f"{np.round(cross,3).tolist()} of 0->X")
 
-print("== C. chirality bookkeeping of the light-labelled projection (polar part) ==")
+print("== C. degree bookkeeping of the polar-compressed light and mirror-label maps (not walk nodes: A3) ==")
 
 
 def charge(Uf, K0, B, sB):
@@ -241,11 +256,12 @@ for lab, B, sB in (("light", BL, sL), ("mirror", BR, sR)):
         q = charge(UF, P, B, sB); e = np.real(np.trace(comp(UF, P, B))) > 0
         n0 += int(q * e); npi += int(q * (not e)); rows.append(f"{int(P.sum()/np.pi)}{'0' if e else 'pi'}:{q:+d}")
     res[lab] = (n0, npi); print(f"  {lab}: (#pi entries, quasienergy: sign) " + " ".join(rows))
-check("C1 light-labelled projection: Gamma and R carry one sign, the 3 X (quasienergy 0) and 3 M (pi) the "
-      "opposite; net light chirality +-2 at quasienergy 0 and the same at pi; mirror net is opposite",
+check("C1 polar-compressed light map: Gamma and R carry one sign, the 3 X (phase 0 of the map) and 3 M (phase pi) the "
+      "opposite; net +-2 at phase 0 and the same at pi; the mirror-label map is opposite (map degrees, not walk node chiralities)",
       abs(res['light'][0]) == 2 and res['light'][0] == res['light'][1] and res['mirror'][0] == -res['light'][0],
       f"net (0, pi): light {res['light']}, mirror {res['mirror']}")
-print("verdict: no T-covariant deformation gives the light-labelled sector nodes only at 0 and R: Q8 forces a")
-print("scalar light block at X and M, so a light partner stays there as a node at 0/pi, a Fermi surface, or")
-print("a zero. Light-light partner masses do not exist; partner release under mirror gapping is generic.")
+print("verdict: exact Schur: Q8 forces a scalar light-labelled block at X and M for every T-covariant walk, so no T-covariant")
+print("light-light term splits the X level. The node / crossing / zero trichotomy holds for the polar-compressed map; it")
+print("is a statement about the walk's light spectrum only for a walk-invariant light label, which FREEZE does not have (A3).")
 print(f"TOTAL: PASS={NPASS} FAIL={NFAIL}")
+raise SystemExit(1 if NFAIL else 0)

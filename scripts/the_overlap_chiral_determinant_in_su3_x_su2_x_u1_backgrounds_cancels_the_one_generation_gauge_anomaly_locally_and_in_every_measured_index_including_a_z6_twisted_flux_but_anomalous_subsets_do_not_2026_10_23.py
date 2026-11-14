@@ -235,3 +235,4 @@ print("Supplied: SU(3)xSU(2)xU(1)_Y, the 16's content and hypercharges, m0=1.6, 
       "background shapes. Finite diagnostic on 3^4; not a non-perturbative proof; gravitational Tr Y not measured.")
 print(f"elapsed {time.time()-T0:.1f}s, peak RSS {resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/2**20:.0f} MB")
 print(f"TOTAL: PASS={P} FAIL={F}")
+raise SystemExit(1 if F else 0)

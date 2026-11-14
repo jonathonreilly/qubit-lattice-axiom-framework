@@ -32,13 +32,41 @@ def sgnh(H):
     w, v = np.linalg.eigh(H); return (v * np.sign(w)) @ v.conj().T, np.abs(w).min()
 
 # ---------- A. algebra + free zone ----------
-# A1 lemma: for D = 1 + V, GW <=> V g5 V = g5; with g5-hermiticity this is V unitary. Random check.
-M = rng.normal(size=(4, 4)) + 1j * rng.normal(size=(4, 4)); Hr = G5 @ (M + G5 @ M.conj().T @ G5)
-e, _ = sgnh(Hr); V = G5 @ e; D = I4 + V
-r1 = np.abs(G5 @ D + D @ G5 - D @ G5 @ D).max(); r2 = np.abs(V @ V.conj().T - I4).max()
-r3 = np.abs(G5 @ V @ G5 - V.conj().T).max()
-check("A1 any g5-hermitian kernel: V=g5 sign(g5 X) unitary, g5 V g5 = V^+, D=1+V obeys GW exactly",
-      max(r1, r2, r3) < 1e-13, f"GW {r1:.1e}, unit {r2:.1e}")
+# A1 lemma: for D = 1 + V, GW <=> V g5 V = g5; with g5-hermiticity this is V unitary. It needs H = g5 X invertible:
+# then sign(H) is an involution and V = X (X^+X)^(-1/2). Finite instances: 20 random g5-hermitian kernels (4x4).
+def gw_parts(X, zero_sign=0.0):
+    H = G5 @ X; w, v = np.linalg.eigh(H); sg = np.where(np.abs(w) < 1e-12, zero_sign, np.sign(w))
+    V = G5 @ ((v * sg) @ v.conj().T); D = I4 + V
+    return (np.abs(G5 @ D + D @ G5 - D @ G5 @ D).max(), np.abs(V @ V.conj().T - I4).max(),
+            np.abs(G5 @ V @ G5 - V.conj().T).max(), np.abs(w).min(), V)
+res_A1 = []; rngA = np.random.default_rng(20261114)     # the first kernel is the original draw from rng; the rest use rngA so later draws keep their values
+for i_ in range(20):
+    r_ = rng if i_ == 0 else rngA
+    M = r_.normal(size=(4, 4)) + 1j * r_.normal(size=(4, 4)); X = M + G5 @ M.conj().T @ G5
+    r1, r2, r3, gap, V = gw_parts(X)
+    Xh = X.conj().T @ X; wx, vx = np.linalg.eigh(Xh); Vpol = X @ (vx * wx ** -0.5) @ vx.conj().T
+    res_A1.append((max(r1, r2, r3), gap, np.abs(V - Vpol).max()))
+check("A1 g5-hermitian kernel X with H = g5 X invertible (20 random 4x4 instances): V = g5 sign(H) = X (X^+X)^(-1/2) is unitary, "
+      "g5 V g5 = V^+, D = 1 + V obeys GW",
+      max(r[0] for r in res_A1) < 1e-12 and min(r[1] for r in res_A1) > 1e-6 and max(r[2] for r in res_A1) < 1e-10,
+      f"max GW/unitarity/g5-herm residual {max(r[0] for r in res_A1):.1e}; min |eig H| {min(r[1] for r in res_A1):.2e}; "
+      f"|V - X(X^+X)^-1/2| {max(r[2] for r in res_A1):.1e}")
+# A1c exact counterexample to the unrestricted statement ('for any g5-hermitian kernel'): X = 0 gives H = 0, sign(0) = 0,
+# V = 0, D = 1: g5 D + D g5 = 2 g5 but D g5 D = g5, and V is not unitary; X (X^+X)^(-1/2) is undefined.
+r1z, r2z, _, _, Vz = gw_parts(np.zeros((4, 4), complex))
+check("A1c control (counterexample kept): at X = 0 the numpy convention sign(0) = 0 gives V = 0, D = 1, GW residual |2 g5 - g5| = 1 "
+      "and unitarity defect 1, so invertibility of H is needed", abs(r1z - 1) < 1e-12 and abs(r2z - 1) < 1e-12 and np.abs(Vz).max() == 0,
+      f"GW residual {r1z:.3f}, unitarity defect {r2z:.3f}")
+# A1e zero-eigenspace extension: with sign := +1 on ker H, V stays a g5-hermitian unitary and D = 1 + V obeys GW, but V is then not
+# X (X^+X)^(-1/2) (undefined); instance: a kernel with a 1-dim ker H.
+A0 = rngA.normal(size=(4, 4)) + 1j * rngA.normal(size=(4, 4)); w0, v0 = np.linalg.eigh(A0 + A0.conj().T)
+w0[0] = 0.0; Hs = (v0 * w0) @ v0.conj().T; Xs = G5 @ Hs
+r1n, r2n, _, gapn, _ = gw_parts(Xs)
+r1e, r2e, r3e, _, _ = gw_parts(Xs, zero_sign=1.0); r1zx, r2zx, _, _, _ = gw_parts(np.zeros((4, 4), complex), zero_sign=1.0)
+check("A1e zero-eigenspace extension: for a kernel with dim ker H = 1, sign(0) = 0 breaks GW and unitarity; sign := +1 on ker H "
+      "restores both (also at X = 0, where V = g5); the identity V = X (X^+X)^(-1/2) is not available there",
+      gapn < 1e-12 and r1n > 0.1 and r2n > 0.1 and max(r1e, r2e, r3e, r1zx, r2zx) < 1e-12,
+      f"sign(0)=0: GW {r1n:.2f}, unit {r2n:.2f}; sign(0):=+1: GW {r1e:.0e}, unit {r2e:.0e}; X = 0 extended: {max(r1zx, r2zx):.0e}")
 # A0 the 3+1 walk unitary itself is not a V: g5 commutes with the hop and anticommutes with the copy mass
 beta = G4[3]; alph = [beta @ G4[i] * 1j for i in range(3)]  # hermitian alpha_i = i g4 g_i
 r0s = []; rh = []
@@ -167,8 +195,9 @@ def overlap(Ls_, fluxes, e=1, m0=1.0):
     for mu in range(d):
         T = Ts[mu]; X += np.kron(T - T.conj().T, G[mu]) / 2 + np.kron(2 * np.eye(N) - T - T.conj().T, np.eye(ns)) / 2
     X -= m0 * np.eye(N * ns)
-    G5b = np.kron(np.eye(N), g5); e_, gapH = sgnh(G5b @ X)
+    G5b = np.kron(np.eye(N), g5); e_, gapH = sgnh(G5b @ X); GAPS.append(gapH)
     return np.eye(N * ns) + G5b @ e_, G5b, gapH
+GAPS = []
 def index_info(D, G5b):
     wv, vv = np.linalg.eig(D); z = vv[:, np.abs(wv) < 1e-8]
     if z.shape[1]:
@@ -229,5 +258,9 @@ qs = [2, (-1) % 3]
 check("D8 FREEZE turn charges as left-handed Z3 labels {2,2}: sum q = 1, sum q^3 = 1 mod 3 per family "
       "(would be anomalous only if the turn were gauged; cancels for N_fam = 0 mod 3)",
       sum(qs) % 3 == 1 and sum(q ** 3 for q in qs) % 3 == 1 and (3 * sum(qs)) % 3 == 0, f"{sum(qs)%3}, {sum(q**3 for q in qs)%3}")
+check("D9 every Wilson kernel used in D (2D and 4D, all charges, fluxes and m0) has invertible H = g5 X, so A1 applies "
+      "without the zero-eigenspace extension; the free 12^4 grid has a = min spec X^+X > 0",
+      min(GAPS) > 1e-6 and a > 1e-6, f"{len(GAPS)} kernels, min |eig H| {min(GAPS):.3f}; free grid a {a:.3f}")
 print(f"elapsed {time.time()-T0:.1f}s")
 print(f"TOTAL: PASS={P} FAIL={F}")
+raise SystemExit(1 if F else 0)

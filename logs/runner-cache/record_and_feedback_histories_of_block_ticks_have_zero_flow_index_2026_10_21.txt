@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/record_and_feedback_histories_of_block_ticks_have_zero_flow_index_2026_10_21.py
-runner_sha256: 2b9c2a7a653999f2b41bab3f33dff2c486bc41e373113c9e75882ea000b39729
-input_fingerprint_sha256: 5458fdca7fe2ece4efc000bf1d8d82842fe727d1d46d761c2a349a97830f7935
+runner_sha256: 5c77dc3baa52cb763d566d861f25e5f7797afee0d39059524a94d932ca127053
+input_fingerprint_sha256: 9aa50d07904bd55d5b8fc7263d232d26dfc27232e79ec289cdf73226169a566b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 11.12
+elapsed_sec: 10.19
 status: ok
 ----- stdout -----
 == 1. free 1D Margolus tick
@@ -35,9 +35,9 @@ status: ok
 [PASS] CL-2 tick in a random frame field: winding 0, crossings of w=0 present and balanced (both chiralities)  winding +6.3e-17; (up,down) (2, 2)
 == 8. against measurement (estimates; inputs listed)
 [PASS] neutrino coherence over 180 km (visibility >= 0.9, a = 5 l_P): kappa per half-tick is tiny; at most 1 - V of neutrinos are ever conditioned  half-ticks 4.5e+39; kappa < 2.4e-41; the coherent fraction evolves by the index-0 tick (section 4)
-[PASS] index 0 in every charge sector puts a light mirror partner beside each nu_L: N_nu = 6 against LEP 2.9840 +- 0.0082  368 sigma
-runtime 10.2 s
-TOTAL: PASS=21 FAIL=0
+   CONDITIONAL ESTIMATE (not counted; LEP value supplied, and N_nu identification assumes the mirror partners couple to the Z as nu_L does): index 0 in every charge sector puts a light mirror partner beside each nu_L: N_nu = 6 against LEP 2.9840 +- 0.0082, 368 sigma
+runtime 9.7 s
+TOTAL: PASS=20 FAIL=0
 
 ----- stderr -----
 

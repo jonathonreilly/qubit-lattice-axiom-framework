@@ -1,7 +1,7 @@
 ---
 claim_id: the_one_family_u1_anomaly_four_field_coefficient_in_admissible_backgrounds_at_wilson_mass_one_does_not_vanish_like_p_squared_bounded_theorem_note_2026-10-25
 claim_type: bounded_theorem
-claim_scope: "Pre-registered rerun of the single-mode test of the one-family 16's four-field coefficient c4 in the U(1)_Y covariant anomaly density of the Wilson-kernel overlap (r = 1, m0 = 1.0), with every background inside the Hernandez-Jansen-Luscher admissibility bound ||1 - U_p|| < 1/30 (supplied): eps = 0.01, 0.02, 0.03 (max plaquette deviation 0.0300), axis-restricted factorised single-mode backgrounds, L x T x L x T with L = 12, 16, 24 and T = 24, 32, exact block sign(H). Exact: block = full 4D density, symmetry-reduced block sums = full sums, C-evenness, evr = eigh (all < 1e-12). Finite diagnostics, pre-set criteria: the joint fit R16/eps^2 = c4 + c6 eps^2 is clean (residual <= 1.1e-3 |c4|; eps exponent 3.97-4.01); the doublet's intercept is 0.989 gamma_L. NOT met: the headline (c4 vanishing like p^2 with T-agreement) and the copied P5, P5'. At L = 24, c4 = +1.13e-4, +6.7e-5, -3.60e-4 at |p_hat| = 0.26, 0.52, 0.77 (T = 32; T = 24 within 8%), so it changes sign and does not fall like p^2; the pooled intercept is +5.4e-4. Not covered: the measure, non-abelian locality, the gauge-field integral, non-axis backgrounds, L > 24, momenta below |p_hat| = 0.26."
+claim_scope: "Pre-registered rerun of the single-mode test of the one-family 16's four-field coefficient c4 in the U(1)_Y covariant anomaly density of the Wilson-kernel overlap (r = 1, m0 = 1.0), with every background inside the Hernandez-Jansen-Luscher admissibility bound ||1 - U_p|| < 1/30 (supplied): eps = 0.01, 0.02, 0.03 (max plaquette deviation 0.0300), axis-restricted factorised single-mode backgrounds, L x T x L x T with L = 12, 16, 24 and T = 24, 32, exact block sign(H). Exact: block = full 4D density, symmetry-reduced block sums = full sums, C-evenness, evr = eigh (all < 1e-12). Finite diagnostics, pre-set criteria: the joint fit R16/eps^2 = c4 + c6 eps^2 is clean (residual <= 1.1e-3 |c4|; eps exponent 3.97-4.01); the doublet's intercept is 0.989 gamma_L. NOT met: the headline (c4 vanishing like p^2 with T-agreement) and the copied P5, P5'. At L = 24, c4 = +1.13e-4, +6.7e-5, -3.60e-4 at |p_hat| = 0.26, 0.52, 0.77 (T = 32; T = 24 within 8%), so it changes sign and does not fall like p^2 there; the pooled intercept is +5.4e-4. The c4 values come from a recorded Mac-mini run embedded in the runner as data; the runner recomputes the criteria from those data and reruns the exactness checks live, but does not recompute c4. This is a finite-lattice measurement, not a proof that the coefficient is non-local. Not covered: the measure, non-abelian locality, the gauge-field integral, non-axis backgrounds, L > 24, momenta below |p_hat| = 0.26."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -10,12 +10,18 @@ upstream_dependencies:
 runner: scripts/the_one_family_u1_anomaly_four_field_coefficient_in_admissible_backgrounds_at_wilson_mass_one_does_not_vanish_like_p_squared_2026_10_25.py
 ---
 
-# The one-family U(1) anomaly's four-field coefficient in admissible backgrounds at Wilson mass 1 does not vanish like p^2
+# The one-family U(1) anomaly's four-field coefficient in admissible backgrounds at Wilson mass 1 does not vanish like p^2 at L <= 24 and |p_hat| >= 0.26
 
 Claim type: bounded_theorem. Labels: [T] exact, [F] finite diagnostic, [S] reading.
 
+Primary runner: `scripts/the_one_family_u1_anomaly_four_field_coefficient_in_admissible_backgrounds_at_wilson_mass_one_does_not_vanish_like_p_squared_2026_10_25.py`; cache `logs/runner-cache/the_one_family_u1_anomaly_four_field_coefficient_in_admissible_backgrounds_at_wilson_mass_one_does_not_vanish_like_p_squared_2026_10_25.txt`.
+
+Local labels (2026-11-14). luscher-m0-1 (#10084) and luscher-L8 (#10083) are recorded only in the consolidation's source
+map; results quoted from them are historical reported results, unverified here. "Route A" is a source-campaign label.
+criteria_pre_run.txt is a source-session file not in this repository.
+
 Runner facts:
-- runner.py gives TOTAL: PASS=11 FAIL=0 in 6 s on the laptop, with 3.6 k characters of stdout.
+- The runner gives TOTAL: PASS=11 FAIL=0 in about 6 s.
 - It is seeded, declares AUDIT_TIMEOUT_SEC = 120 and reads no data files: the Mac-mini results (243 jobs) are an embedded JSON literal.
 - It was tested under a unique filename in the agent folder (exit 0).
 - Each pre-set criterion prints MET or NOT MET. A PASS line certifies only that the recorded verdict reproduces from the data, so a PASS line can carry NOT MET.

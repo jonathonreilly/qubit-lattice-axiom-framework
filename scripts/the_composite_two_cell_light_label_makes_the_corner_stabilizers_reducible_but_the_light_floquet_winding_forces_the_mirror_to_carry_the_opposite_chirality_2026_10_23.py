@@ -218,7 +218,7 @@ for nm, Q in QD.items():
     rows.append(f"{nm}:|stab|={len(st)},commutant(block,cell)={dims}"); okA &= min(dims) > 1
 check("A1 at every doubled-zone corner the stabilizer acts REDUCIBLY on the light label (commutant dim > 1; "
       "single-cell value was 1)", okA, "; ".join(rows))
-# zone centre: light at quasienergy 0 = Gamma (n=000) + X (one pi); light at pi = M (two pi) + R
+# zone centre: light-label space at Gamma (n=000) + X (one pi), where the polar-compressed light map has phase 0; at phase pi: M (two pi) + R
 st = stab(np.zeros(3))
 Mfull = {cen: [LD.conj().T @ O_rot(n, np.zeros(3), np.zeros(3), cen) @ LD for n in st] for cen in ("block", "cell")}
 grp = {"G": [0], "X": [a for a, s in enumerate(NS) if sum(s) == 1], "M": [a for a, s in enumerate(NS) if sum(s) == 2], "R": [7]}
@@ -236,14 +236,22 @@ for cen in ("block", "cell"):
                 comm_dim(sub(Ms, grp["R"] + grp["M"]), 8), comm_dim(sub(Ms, grp["M"]), 6),
                 inter_dim(sub(Ms, grp["R"]), sub(Ms, grp["M"])))
 okS = all(r == (6, 3, 1, 6, 3, 1) for r in res.values())
-check("A2 zone centre, full 2T: light at quasienergy 0 (Gamma + X-triplet) has commutant 6 = 4+1+1: the X-triplet is "
+check("A2 zone centre, full 2T: the light-label space at Gamma + X-triplet (phase 0 of the compressed map) has commutant 6 = 4+1+1: the X-triplet is "
       "three DISTINCT 2-dim irreps (commutant 3) and exactly one of them shares Gamma's irrep (intertwiner dim 1); "
       "same at pi for R + M-triplet; both rotation centres", okS,
       "(G+X, X, G->X, R+M, M, R->M): " + str(res))
 print("  => a T-covariant light-light term at the zone centre is Schur-block-diagonal: it can pair Gamma's Weyl with")
 print("     ONE X-combination (killing the protected Weyl) and only shifts the other two X irreps (no partner)")
 
-print("== B. Floquet winding W3 of the light and mirror sectors (FREEZE, polar part) ==")
+print("== B. Floquet winding W3 of the polar-compressed light and mirror-label maps (FREEZE) ==")
+# B0 (hold finding 2): the light label is not walk-invariant on FREEZE, while Pi+ is. So B1's W3 is the degree of the polar part
+# of a compressed block, a map T^3 -> U(2), not the winding of a walk-invariant sector; B-i..B-iii of the note do not apply to it.
+gB = np.linspace(-np.pi, np.pi, 6, endpoint=False)
+leakL = max([np.linalg.norm(BL.conj().T @ UF(np.array(K)) @ BR, 2) for K in it.product(gB, repeat=3)] + [np.linalg.norm(BL.conj().T @ UF(XP) @ BR, 2)])
+leakP = max(np.linalg.norm(Pm @ UF(np.array(K)) @ Pp, 2) + np.linalg.norm(Pp @ UF(np.array(K)) @ Pm, 2) for K in it.product(gB, repeat=3))
+check("B0 the light label is NOT walk-invariant on FREEZE (max light-to-mirror-label block norm over a 6^3 grid and X > 0.5, "
+      "2 sqrt2/3 at X); control: the Pi+ sector is walk-invariant (leak < 1e-12). B1 is therefore a polar-compressed-map degree",
+      leakL > 0.5 and leakP < 1e-12, f"max |P_L U_F P_R| {leakL:.4f}; max Pi+/Pi- leak {leakP:.0e}")
 Lr, Rr = BL.conj().T @ Y, Y.conj().T @ BL
 LrM, RrM = BR.conj().T @ Y, Y.conj().T @ BR
 
@@ -274,15 +282,17 @@ def W3(L_, R_, N=28):
 
 
 wl, sl = W3(Lr, Rr); wm, sm = W3(LrM, RrM)
-check("B1 light-sector polar unitary is smooth on the whole torus (light block never singular) and its 3D winding "
-      "W3 = (1/24pi^2) int tr(U^-1 dU)^3 is -2 = MINUS the net corner chirality at 0 and at pi (+2, +2) (W3 = -n_0 = -n_pi in this sign convention); mirror W3 = +2, total 0",
+check("B1 polar part of the compressed light block is smooth on the whole torus (compression never singular) and its 3D degree "
+      "W3 = (1/24pi^2) int tr(U^-1 dU)^3 is -2 = MINUS the net corner degree of that map at phase 0 and pi (+2, +2); mirror-label map +2, sum 0 "
+      "(degrees of compressed maps; a sector winding only for a walk-invariant label, B0)",
       sl > 1e-3 and sm > 1e-3 and abs(wl + 2) < 0.05 and abs(wl + wm) < 0.05,
       f"W3 light {wl:+.4f}, mirror {wm:+.4f}; min singular value light {sl:.3f}, mirror {sm:.3f}")
-print("  exact (section C of the note): W3 is additive over walk-invariant sectors, a sector gapped at ANY single")
-print("  quasienergy has a continuous log so W3 = 0, and -W3 = net chirality at 0 = net chirality at pi.")
-print("  target light content (Gamma Weyl at 0, R Weyl at pi, nothing else, chirality -1 each) => W3_light = +1 => the complement")
-print("  carries the opposite unit and is gapless at EVERY quasienergy: the mirror carries the opposite chirality.")
-print("verdict: the composite two-cell label makes every corner stabilizer reducible (Schur wall moved), but the")
-print("light-light pairing it allows only consumes the protected Weyl; the light winding (-2) is conserved by any")
-print("light-light term, and the target winding (+1) would leave an ungappable (W3 = -1) mirror.")
+print("  exact (section B of the note), for a WALK-INVARIANT splitting only: W3 is additive over sectors, a sector gapped at ANY")
+print("  single quasienergy has a continuous log so W3 = 0, and -W3 = net chirality at 0 = net chirality at pi.")
+print("  conditional: IF a walk-invariant light sector had the target content (Gamma Weyl at 0, R Weyl at pi, chirality -1 each),")
+print("  its W3 would be +1 and the complement would carry the opposite unit and be gapless at every quasienergy.")
+print("verdict: the composite two-cell label makes every corner stabilizer reducible (Schur wall moved), but the light-light")
+print("pairing it allows only consumes the protected Weyl (Schur, exact). FREEZE's light label is not walk-invariant (B0), so its")
+print("-2 is a compressed-map degree; transfer to the light spectrum or a mirror obstruction needs a walk-invariant label (not built).")
 print(f"TOTAL: PASS={NPASS} FAIL={NFAIL}")
+raise SystemExit(1 if NFAIL else 0)

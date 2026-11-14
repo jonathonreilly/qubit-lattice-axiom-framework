@@ -371,7 +371,7 @@ Nh = 2*Lkam/a_lat; kap_max = -np.log(Vmin)/Nh
 check('neutrino coherence over 180 km (visibility >= 0.9, a = 5 l_P): kappa per half-tick is tiny; at most 1 - V of neutrinos are ever conditioned',
       kap_max < 1e-30, f'half-ticks {Nh:.1e}; kappa < {kap_max:.1e}; the coherent fraction evolves by the index-0 tick (section 4)')
 Nnu, sNnu = 2.9840, 0.0082                                       # LEP invisible Z width
-check('index 0 in every charge sector puts a light mirror partner beside each nu_L: N_nu = 6 against LEP 2.9840 +- 0.0082',
-      (6 - Nnu)/sNnu > 100, f'{(6 - Nnu)/sNnu:.0f} sigma')
+print(f'   CONDITIONAL ESTIMATE (not counted; LEP value supplied, and N_nu identification assumes the mirror partners couple to the Z as nu_L does): index 0 in every charge sector puts a light mirror partner beside each nu_L: N_nu = 6 against LEP 2.9840 +- 0.0082, {(6 - Nnu)/sNnu:.0f} sigma')
 print(f'runtime {time.monotonic()-T0:.1f} s')
 print(f'TOTAL: PASS={PASS} FAIL={FAIL}')
+raise SystemExit(1 if FAIL else 0)

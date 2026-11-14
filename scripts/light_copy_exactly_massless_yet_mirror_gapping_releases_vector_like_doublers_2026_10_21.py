@@ -304,3 +304,4 @@ print('theorems: A1-A4, B1-B2, C1, D1-D2, E2, E5, F1, F5; finite: C2, E3, F2-F4;
 print('  is the mirror, the mirror terms (pair square, top form, pair hop), g, mu, the (4,2) content, twist k = 2. Cited: Nielsen-Ninomiya,')
 print('  anomaly matching, Golterman-Shamir 2505.20436, the smg-verify chain formulas.')
 print(f'\nTOTAL: PASS={PASS} FAIL={FAIL}')
+raise SystemExit(1 if FAIL else 0)

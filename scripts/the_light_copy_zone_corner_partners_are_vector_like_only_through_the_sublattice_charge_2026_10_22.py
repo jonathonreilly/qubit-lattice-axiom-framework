@@ -180,6 +180,7 @@ mu_ = 2 * wv * wv / g; ks = np.linspace(0, 2 * mu_, 401)
 mw = min(np.min(np.abs(np.linalg.eigvalsh(k * sig[2] + mu_ * np.eye(2)))) for k in ks)
 check("C3", mw < 1e-12, f"in the band that same composite self-energy is spin-blind (G_(m,Phi) is a number at w = 0), so on a corner Weyl it is a node shift mu = 2 w lam/g, "
       f"not a mass: sigma.k + mu has a zero at |k| = mu (min |E| = {mw:.0e}), a Fermi pocket. A Weyl gaps only with an opposite-chirality partner of its own eps sector (the mirror's R_L, B1) or a Majorana pair (no Spin(10) singlet in 16 x 16)")
-check("C4", True, "selection rules: Spin(10), Z4 (Phi charge 3 = -1 mod 4), eps and spin act alike on G_L and on its corner partner; only momentum separates them, "
+print("NOT CHECKED (not counted): C4 selection-rule reading: Spin(10), Z4 (Phi charge 3 = -1 mod 4), eps and spin act alike on G_L and on its corner partner; only momentum separates them, "
       "so any composite coupling strong enough to gap the partner gaps G_L too unless its form factor vanishes at G")
 print(f"TOTAL: PASS={NP[0]} FAIL={NP[1]}")
+raise SystemExit(1 if NP[1] else 0)

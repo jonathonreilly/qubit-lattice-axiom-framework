@@ -1,7 +1,7 @@
 ---
 claim_id: the_overlap_of_the_cube_walk_euclidean_kernel_gives_exact_ginsparg_wilson_chirality_without_doublers_but_its_chiral_projector_is_not_a_walk_sector_bounded_theorem_note_2026-10-23
 claim_type: bounded_theorem
-claim_scope: "Free and fixed-U(1)-background lattice Dirac operators built from the Euclidean (space x tick) form of the Wilson-type copy-mass cube walk, X = D_W - m0 on Z^4. Exact: for any g5-hermitian kernel, V = g5 sign(g5 X) is unitary and D = 1 + V obeys the Ginsparg-Wilson relation g5 D + D g5 = D g5 D; conversely GW plus g5-hermiticity forces V unitary. The 3+1 tick unitary U(K) itself is not such a V (g5 commutes with its hop). Finite diagnostics: on the 12^4 zone D vanishes only at k = 0 for 0 < m0 < 2 (one Dirac field; 15 doubler corners at |D| = 2; also with tick weight 0.5, m0 = 0.6); the count is 1, 5, 11, 15 for m0 = 1, 3, 5, 7; position-space decay rate 0.72 per taxicab step (free), 0.91 in a Q = 1 2D background; the Chebyshev form X P_n(X^+X) has strict range 2n+1 and error falling at rate >= ln rho = 0.29 per step; the Shamir domain-wall 5D operator (strictly nearest-neighbour) gives (1 + g5 tanh(Ls artanh H_T))/2 to 1e-15 with GW defect falling from 1e-2 (Ls = 4) to 3e-9 (Ls = 16). In U(1) backgrounds (2D 10^2, 4D 4^4) GW holds to 1e-14, zero modes are exactly chiral, |index| = |Q|; Luscher's P_hat = (1 - g5_hat)/2 has rank 100 at Q = 0 and 101 at Q = 1; the 2D 3-4-5-0 indices are -e and the anomaly sums to zero. Exact arithmetic: the 16 has sum Y = sum Y^3 = SU(3)^2 Y = SU(2)^2 Y = 0. Not covered: a chiral walk (tick) realisation, reflection positivity of the chiral theory, non-abelian chiral existence (open in the literature), the composite-cell turn charges inside the overlap, interacting dynamics."
+claim_scope: "Free and fixed-U(1)-background lattice Dirac operators built from the Euclidean (space x tick) form of the Wilson-type copy-mass cube walk, X = D_W - m0 on Z^4. Exact: for a g5-hermitian kernel X with H = g5 X invertible, V = g5 sign(H) = X (X^+X)^(-1/2) is unitary and D = 1 + V obeys the Ginsparg-Wilson relation g5 D + D g5 = D g5 D; conversely GW plus g5-hermiticity forces V unitary. Invertibility is needed: at X = 0 (sign(0) = 0) V = 0 and D = 1 give 2 g5 against g5, and V is not unitary; with sign := +1 on ker H the GW relation and unitarity hold again, but V is then not X (X^+X)^(-1/2). The locality estimates use the spectral range [a, b] of X^+X with a > 0 on the tested grids and backgrounds; a uniform gap over gauge fields is the supplied admissibility condition, not shown here. The 3+1 tick unitary U(K) itself is not such a V (g5 commutes with its hop). Finite diagnostics: on the 12^4 zone D vanishes only at k = 0 for 0 < m0 < 2 (one Dirac field; 15 doubler corners at |D| = 2; also with tick weight 0.5, m0 = 0.6); the count is 1, 5, 11, 15 for m0 = 1, 3, 5, 7; position-space decay rate 0.72 per taxicab step (free), 0.91 in a Q = 1 2D background; the Chebyshev form X P_n(X^+X) has strict range 2n+1 and error falling at rate >= ln rho = 0.29 per step; the Shamir domain-wall 5D operator (strictly nearest-neighbour) gives (1 + g5 tanh(Ls artanh H_T))/2 to 1e-15 with GW defect falling from 1e-2 (Ls = 4) to 3e-9 (Ls = 16). In U(1) backgrounds (2D 10^2, 4D 4^4) GW holds to 1e-14, zero modes are exactly chiral, |index| = |Q|; Luscher's P_hat = (1 - g5_hat)/2 has rank 100 at Q = 0 and 101 at Q = 1; the 2D 3-4-5-0 indices are -e and the anomaly sums to zero. Exact arithmetic: the 16 has sum Y = sum Y^3 = SU(3)^2 Y = SU(2)^2 Y = 0. Not covered: a chiral walk (tick) realisation, reflection positivity of the chiral theory, non-abelian chiral existence (open in the literature), the composite-cell turn charges inside the overlap, interacting dynamics."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -14,8 +14,10 @@ runner: scripts/the_overlap_of_the_cube_walk_euclidean_kernel_gives_exact_ginspa
 # The overlap of the cube walk's Euclidean kernel gives exact Ginsparg-Wilson chirality without doublers, but its chiral projector is not a walk sector
 
 Claim type: bounded_theorem (exact algebra plus labelled finite diagnostics; literature results cited as supplied).
-Runner: runner.py, TOTAL: PASS=19 FAIL=0, 2.2 s, 225 MB peak, 3.0 k characters of stdout; run through
-scripts/runner_cache.execute_runner under a unique filename (status ok, exit 0). Axioms unchanged.
+Primary runner: `scripts/the_overlap_of_the_cube_walk_euclidean_kernel_gives_exact_ginsparg_wilson_chirality_without_doublers_but_its_chiral_projector_is_not_a_walk_sector_2026_10_23.py`; cache `logs/runner-cache/the_overlap_of_the_cube_walk_euclidean_kernel_gives_exact_ginsparg_wilson_chirality_without_doublers_but_its_chiral_projector_is_not_a_walk_sector_2026_10_23.txt`. Axioms unchanged.
+
+Local labels (2026-11-14). "The owner's sense", "the owner's wording" and "owner intent" below report the source session's
+reading of a request; no owner decision is recorded in the repository, and none is assumed here.
 
 ## Question
 
@@ -42,9 +44,19 @@ identification (and isotropy between tick and space) is SUPPLIED; A2 shows the r
 
 ## A. Construction and zone count
 
-- A1 (exact). For any g5-hermitian kernel X, V = g5 sign(g5 X) = X (X^+X)^(-1/2) is unitary with
-  g5 V g5 = V^+, and D = 1 + V obeys GW exactly. Conversely GW for D = 1 + V means V g5 V = g5, which together
-  with g5-hermiticity says V is unitary. So "an overlap operator" is the same thing as "a g5-hermitian unitary".
+- A1 (exact, corrected 2026-11-14). For a g5-hermitian kernel X with H = g5 X invertible, sign(H) is a Hermitian
+  involution, so V = g5 sign(H) = X (X^+X)^(-1/2) is unitary with g5 V g5 = V^+, and D = 1 + V obeys GW exactly.
+  Conversely GW for D = 1 + V means V g5 V = g5, which together with g5-hermiticity says V is unitary. So, for
+  invertible H, "an overlap operator" is the same thing as "a g5-hermitian unitary". The runner checks 20 random
+  4x4 instances (A1).
+- A1c (negative result, kept). The statement fails without invertibility. Witness: X = 0. Then H = 0, the numpy
+  convention sign(0) = 0 gives V = 0 and D = 1, so g5 D + D g5 = 2 g5 while D g5 D = g5; V is not unitary, and
+  X (X^+X)^(-1/2) is undefined (runner A1c: GW residual 1, unitarity defect 1).
+- A1e (zero-eigenspace extension). If sign is set to +1 on ker H, sign(H) is again an involution, so V is a
+  g5-hermitian unitary and D obeys GW (at X = 0 this gives V = g5). The identity V = X (X^+X)^(-1/2) is then not
+  available. The runner checks a kernel with dim ker H = 1 both ways (A1e). Every Wilson kernel used below has
+  invertible H on its grid or background (runner D9 prints the smallest |eig H| and the free-grid a), so the
+  extension is not used.
 - A0 (exact). The 3+1 Wilson-Dirac tick U = exp(-i eps H) is not such a V: g5 commutes with the hop
   alpha.sin K, so g5 H g5 != -H (residual 0.99 at eps = pi/4). V must come from the Euclidean history kernel.
 - A2-A5 (finite diagnostics, 12^4 zone). For 0 < m0 < 2, D vanishes only at k = 0; the 15 doubler corners
@@ -55,7 +67,7 @@ identification (and isotropy between tick and space) is SUPPLIED; A2 shows the r
 ## B, C. Locality and the site-to-site reading
 
 - B1. The free kernel decays as exp(-0.72 d) in taxicab distance d (12^4 and 10^4 agree to 0.01).
-- C1 (exact structure, numerical rate). X^+X has taxicab range 2. A degree-n Chebyshev polynomial
+- C1 (exact structure, numerical rate; uses a = min spec X^+X > 0 on the 12^4 grid). X^+X has taxicab range 2. A degree-n Chebyshev polynomial
   V_n = X P_n(X^+X) is therefore a sum of products of at most n neighbourhood steps, range 2n+1, and its error
   falls as rho^(-n), rho = (sqrt b + sqrt a)/(sqrt b - sqrt a) from the spectral range [a,b] of X^+X (measured
   rate 0.32 >= ln rho = 0.29). Hence |D(x)| <= C rho^(-d/2) (C2: bound 0.14 <= measured 0.72). This is the
@@ -64,7 +76,7 @@ identification (and isotropy between tick and space) is SUPPLIED; A2 shows the r
   dimensions. With the Pauli-Villars ratio, the boundary operator equals (1 + g5 tanh(Ls artanh H_T))/2,
   H_T = g5 D_W (2 + D_W)^(-1), to 6e-16. Its GW defect falls 1.2e-2, 7.8e-5, 3.0e-9 at Ls = 4, 8, 16: the
   overlap (Shamir kernel) is the Ls -> infinity limit.
-- Reading for the owner's wording. Both realisations pass influence site to site: the polynomial form is n
+- Reading for the source session's wording (not an owner decision). Both realisations pass influence site to site: the polynomial form is n
   neighbourhood steps with weight falling geometrically in n, and the domain-wall form is a strict
   neighbour rule in a fifth direction whose bulk modes are gapped. The 4D tail comes from integrating out that
   gapped bulk, as a Yukawa tail comes from a massive field. No instantaneous long-range coupling enters.
@@ -109,11 +121,11 @@ identification (and isotropy between tick and space) is SUPPLIED; A2 shows the r
 - It does not evade the walk obstructions; it steps outside their hypotheses. W3 and the corner Q8 theorem
   apply to walk-invariant sectors of a 3+1 tick with on-site rotation action. P_hat is not such a sector: it is
   a projector on histories, built from D (which contains the tick direction), and its rank changes with gauge
-  topology (D2). A walk-invariant sector has a fixed rank. No 3+1 tick (positive transfer matrix) is known for
-  the chiral overlap theory, and none is supplied here.
+  topology (D2). A walk-invariant sector has a fixed rank. No 3+1 tick and no positive Euclidean transfer matrix
+  is known for the chiral overlap theory, and none is supplied here.
 - Effect on the chirality wall. The wall MOVES from "no local lattice chirality" to a precise price. The light
-  Weyl content is obtained if (i) the rule may be exponentially local (the owner's neighbourhood-of-influence
-  reading, realised site to site) and (ii) the chiral selection may be a history-level, gauge-field-dependent
+  Weyl content is obtained if (i) the rule may be exponentially local (a neighbourhood-of-influence reading,
+  realised site to site; whether it is allowed is an owner decision, not made here) and (ii) the chiral selection may be a history-level, gauge-field-dependent
   projection rather than a sector of the tick. Item (ii) bends the update reading of the axioms (the rule is no
   longer only a tick), and that is an owner decision. The tick-level wall (W3, corner Q8) is unchanged.
 
@@ -129,8 +141,8 @@ identification (and isotropy between tick and space) is SUPPLIED; A2 shows the r
    continuum one (D1/D5/D6). That fixes the pi0 -> 2 gamma coefficient (a measured process), but the runner does
    not compute that rate, so this is UNTESTED here. It also predicts that the chiral content must be anomaly-free
    (the 16 passes; this is a postdiction).
-4. Axioms bent: nearest-neighbour admissibility becomes neighbourhood influence with an exponential tail (owner
-   intent 2026-10-23); and for the chiral part, the update axiom becomes a history-level rule. Not proposed as
+4. Axioms bent: nearest-neighbour admissibility becomes neighbourhood influence with an exponential tail (reported
+   by the source session as owner intent on 2026-10-23; not recorded in the repository); and for the chiral part, the update axiom becomes a history-level rule. Not proposed as
    an AX entry here; it is logged as a candidate for the owner.
 
 ## Supplied (cited, not derived)

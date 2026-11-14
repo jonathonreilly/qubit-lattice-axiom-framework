@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_one_family_u1_anomaly_four_field_coefficient_in_admissible_backgrounds_at_wilson_mass_one_does_not_vanish_like_p_squared_2026_10_25.py
-runner_sha256: 379f769521e8eff65abce6da51a260fb8ce4437ada511e86f96e8f1906f3c4cb
-input_fingerprint_sha256: f824cf315d6ce2eeb157427709654b6b61cba666aa2afa3998576783e879120f
+runner_sha256: 43f2b19ba92653542e25f9beaf12173a7100f7f4cb28a50b038e32f7f3a0fa1f
+input_fingerprint_sha256: b701d53352a6ccc304aca340d1b0d9e22b36247fba457619737eedae6793495e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.13
+elapsed_sec: 5.97
 status: ok
 ----- stdout -----
 PASS: G0a exact: 4^4 block (p2,p4) density = full dense 4D density; GW and sign(H)^2 = 1; symmetry-reduced evr block sum = full numpy block sum (6x6x6x6 (1,1), (1,2); 8x4x8x4); C-evenness q[-th] = q[th]; evr = numpy eigh; odd background = luscher-m0-1 antiderivative - eps/2  [4D 5e-15, GW 2e-15, reduced 3e-14, images 3e-13, C 8e-16, evr 2e-14, profile 2e-17; 3s]
@@ -25,7 +25,7 @@ reported: c4 admissible vs luscher-m0-1 eps = 0.3/0.15 split: (24,1) +1.13e-04 v
 PASS: K3 consistency: unit-charge 9-amplitude fit r = r2 + r4 a^2 + r6 a^4 gives sum m Y^5 r4 = c4 (L = 24, T = 32) within 2%  [max rel dev 1.6e-03; r2 4.8781e-02, 4.3702e-02, 3.6701e-02; fit res 2e-11, 2e-10, 2e-11]
 PASS: H1 post-hoc (labelled, not pre-set): at fixed momentum c4 is L-converged at s = 0.146 (L16 vs L24 within 1%) but not at s = 0.067 (L12 vs L24 differ by > 10%): the small-momentum c4 carries an L-dependence  [s 0.146: L16 -3.6018e-04, L24 -3.6012e-04; s 0.067: L12 +5.525e-05, L24 +6.622e-05 (T = 24)]
 Finite-lattice U(1) diagnostic, axis-restricted admissible backgrounds; Luscher / HJL theorems supplied; not the non-abelian measure.
-elapsed 5.6s
+elapsed 5.7s
 TOTAL: PASS=11 FAIL=0
 
 ----- stderr -----

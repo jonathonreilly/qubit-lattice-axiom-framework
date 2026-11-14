@@ -36,9 +36,7 @@ on a run; runs are GUIDE only.
 
 ## State of attack (checkpoint, updated in place)
 
-- Steps 1-5 done (Step 5 at 14:00Z). Step 6 next: GUIDE in the free massive scalar (shell shares s_k/S;
-  (V) diamond against S(2n); cone cost ||P^(a/2) g_p|| against the true per-plaquette term; massless case).
-  Step 7: verdict and RESULT.
+- Steps 1-6 done (Step 6 results written by 14:03Z). Step 7 next: verdict, status table, RESULT.
 - Time note. The clock times first written here for Steps 1-4 (13:40Z, 14:05Z, 14:30Z, 14:55Z, 15:10Z)
   were estimates that ran ahead of the clock; they are removed. The file was created at 13:23Z and
   Steps 1-4 were on disk before 13:49:14Z, when the lock record for Step 5's first run starts.
@@ -321,8 +319,12 @@ continuous with nu-mean 0, so it takes both signs and osc(P^h g_p) >= ||P^h g_p|
 (e) **The true term is first order; spectral form (PROVED).**
   E^a[s_p] - E^inf[s_p] = (1 + S(a; B))^(-1) sum over i >= 1 of r_i^a ( <psi_i, s_p psi_i> - <psi_0, s_p psi_0> )
 (psi_i the orthonormal eigenfunctions of T_B; spatial p; insert s_p as a multiplication operator).
-Both this and Cov_inf(s_p(x_0), s_p(x_a)) are of order r^a; Lemma HALF says a worst-case squeeze
-needs the SQUARE ROOT of the second to be below the first's required size. Reading (ARGUED; GUIDE in
+Both this and Cov_inf(s_p(x_0), s_p(x_a)) are of order r^a when g_p has a non-zero overlap with the lowest
+levels; Lemma HALF says a worst-case squeeze then needs the SQUARE ROOT of the second to be below the first's
+required size. (Scope, added in Step 6: the loss needs <phi_i, g_p> != 0 on the lowest band. For SU(2) the
+plaquette creates the lightest 0++ glueball, which is how lattice glueball masses are measured, RECALLED; so the
+loss applies. In a free scalar with g = phi_x^2 the lowest band coupled to g is the two-particle threshold 2m,
+and the square root then decays at the same rate m as the true term: no loss in the rate there.) Reading (ARGUED; GUIDE in
 Step 6): if the worst-case cone influence decayed at the vacuum rate m, the route would need
 e^(-m a) <= (1.67 x 10^-12)^2, about m a >= 54, where the seed itself needs about m a >= 27 plus
 logarithms: the time extent doubles, and the box b = 24a with it.
@@ -346,10 +348,12 @@ non-empty exterior, E_1, E_2 and E_cap commute with multiplication by every boun
 so by Proposition FIB of `gap-glue-max.md` 7.2 eps is the supremum over ALL exteriors tau of the
 fibre value eps(tau): the L^2(mu)-averaged condition IS the worst case. If A is the whole torus (the
 top level of a recursion), there is no exterior and eps is a global maximal correlation: for past and
-future time slabs at distance w it is r_1^w exactly (row 895 Lemma MC), and for spatial half-slabs at
-distance w it is (r_1^(1))^w, r_1^(1) the ratio of the top two levels of the transfer operator in a
-spatial direction of the slab (the same lemma along x_1; the slab is reflection positive in every
-direction, CA-II 8.7 of Sussman and Alpoge): the gap in the crossed channel. So every averaged squeeze
+future time slabs at distance w it is r_1^w exactly (row 895 Lemma MC). For spatial half-slabs the same
+lemma applies along x_1 once that direction is unrolled to Z: it gives (r_1^(1))^w, r_1^(1) the ratio of
+the top two levels of the transfer operator in direction 1 of the slab's cross-section (the slab is
+reflection positive in every direction, CA-II 8.7 of Sussman and Alpoge); on the periodic box the two
+arcs also meet the other way round, so it is that value up to the wrap. Either way: the gap in the
+crossed channel. So every averaged squeeze
 condition is either the worst case (finite blocks) or the claim (the top level).
 (c) **Recursions in the literature (RECALLED, not rebuilt).** Martinelli and Olivieri (CMP 161, 1994):
 strong mixing on regular boxes gives a uniform gap and LSI for Glauber dynamics, by block dynamics and
@@ -531,8 +535,10 @@ Cube transfer operator, leading term only (NOT a bound): the six one-face spin n
 excitations, each about the size of the one plaquette's S(1). The full cube thermal sum needs every spin network on
 the 12-link cube graph; it is OPEN by hand and not needed (5.6).
 
-**5.5 The LSI-side endpoint.** For block dynamics with one-link blocks, the endpoint is the conditional law of
-one link. At zero staple field (an allowed exterior) it is Haar on the unit S^3, whose Poincare and log-Sobolev
+**5.5 The LSI-side endpoint.** For block dynamics with one-link blocks on the local 4D parent of J (row 960 3.7;
+J itself has no local specification), the endpoint is the conditional law of one link, exp((beta/2) tr(u A^dagger))
+with A the sum of its six staples. At zero staple sum (an allowed exterior: staples can cancel) it is Haar on the
+unit S^3, whose Poincare and log-Sobolev
 constants are both 3 (first eigenvalue of S^3; Mueller-Weissler for the log-Sobolev constant of S^n, RECALLED).
 A tensorization or quasi-factorization bound has the form (minimum endpoint constant) x (factors <= 1), so with
 one-link blocks it certifies at most 3. (LSI-J-seed) needs 2 beta K_a: 4.30 at beta 2.3, a = 30 (slab), and 3.73 on
@@ -547,3 +553,75 @@ above 3.3 at every beta of the window and as beta grows. The owner's hope for th
 enters only on the bounded side (Lemma BND (ii)): every reverse inequality of Step 3 has a cost that must itself be
 below the seed's required size (1.7 x 10^-12 per plaquette on the slab, or the whole shell sum S - S_n). So the
 endpoint's smallness buys nothing; the whole crux sits in the decoupling term.
+
+### Step 6 (GUIDE; criteria written at 13:58Z, before any run)
+
+**Models, stated as models.** (M1) The lattice free scalar of mass m on B = (Z/b)^3 (row 960 Step 6): per mode
+2 cosh eps_k = 2 + m^2 + sum_i 4 sin^2(k_i/2); vacuum covariance C = (2 sinh eps)^-1; one-step mean map
+A = e^(-eps); time-t cross covariance C A^t. It is Gaussian: P = Gamma(A) on the first chaos with the C inner
+product, Pi_j = Gamma(pi_j) (pi_j the C-orthogonal projection onto the span of phi_x, x in Q_j; RECALLED standard
+fact for Gaussian Hilbert spaces), and Tr Gamma(X) = det(1 - X)^-1. Hence, exactly in the model,
+  S(t; B) = det(1 - A^t)^-1 - 1,   S_j(t) = det(C_QQ)/det(C_QQ - (C A^t)_QQ) - 1  (Q = Q_j),
+  S^V_dia(n) = det(1 - a_n^* a_n)^-1 - 1,   a_n = pi_n A pi_(n-1) A ... pi_1 A.
+It has no gauge field, no flux sectors, no interaction. (M2) The one-plaquette box Q_pl of SU(2) (5.3): T = M D M on
+class functions, exact up to the truncation j <= 12; there s_p couples the vacuum to the first excited level.
+
+**Runs and pre-stated criteria.**
+- G0 (code test): for Q_0 = B the shell formula returns S(t; B); s_k >= 0; sum of s_k = S; S^V_dia(n) <= S(2n; B)
+  (Lemma BND (i)). Any failure = code error; stop and fix.
+- G1 (SHELL shares, M1, b = 8, 12, 16, m a in {2, 4, 6}, t = a, schedule one site per face per step to the unit
+  cube): report S, S_n/S against |Q_n|/|B| = 8/b^3, the first-shell share s_0/S, and sum over k < n of s_k / S.
+  The reading of 3.2 ("the unit end carries about its volume share; the cost is a volume sum") FAILS if
+  S_n/S > 10 x 8/b^3 in some instance with m a >= 4, or if sum over k < n of s_k < 0.5 S.
+- G2 ((V) diamond, M1, b = 8, 12): S^V_dia(n) for n = b/2 - 1 (to side 2... the unit cube) against S(2n; B) and against
+  S_n(2n). The reading of 3.3 FAILS if S^V_dia(n) >= 0.5 S(2n; B) in some instance.
+- G3 (Lemma HALF, M2, beta 2.3 and 2.6, even a = 2..12): X(a; Q_pl) and L(a) := ||P^(a/2) g_p||_(L^2(nu)), g_p the
+  centred spatial plaquette. Fit decay rates. The reading of 3.4 (e) FAILS if the fitted rate of L(a) exceeds
+  0.75 E_1 (it predicts E_1/2 for L and E_1 for X).
+- G4 (massless limit, M1 with the zero mode removed, fixed ratio r = b/a = 4, b = 8, 12, 16): the scalar analogue of
+  the cone's L^2 lower bound, V(a) := a b^3 sqrt(2) (C A^a)_xx (one-sided influence of the far time boundary on
+  phi_x^2, times the number of sites of the slab). Prediction (4.1): V does not fall as a grows at fixed ratio.
+  FAILS if V(a) falls by more than a factor 2 from b = 8 to b = 16.
+Runs under `python3 scripts/lab_ops.py numeric-lock`, one job, BLAS threads 1, nice 10, self-stop above 2 GB RSS.
+Scripts and logs: `library/guide/lane965/`.
+
+**Results (GUIDE; lock holder lane965-opus, run 14:00:00Z-14:00:08Z, 71 percent memory free, one thread, nice 10,
+peak RSS 1.13 GB; log `library/guide/lane965/logs/squeeze_guide.log`, script `squeeze_guide.py`; recheck
+`recheck_shells.py`, log `logs/recheck_shells.log`).** The GUIDE schedule cuts the periodic box to side b - 2 at
+the first step, then removes one layer per face per step down to side 2 (the unit cube of 8 sites; n = b/2 - 1).
+- **G0: PASS.** Shell formula on the full box against the mode formula: relative mismatch at most 2 x 10^-11
+  (4 x 10^-9 absolute at S = 8680). Every s_k >= 0. S^V_dia(n) <= S(2n; B) in all four G2 instances. numpy's
+  slogdet printed floating-point warnings; `recheck_shells.py` recomputed two instances (b = 12, r = 2 and b = 16,
+  r = 4, m a = 4) by eigenvalue log-determinants with warnings turned into errors: no warning, and the values agree
+  with the main run to the digits shown (S_1 = 0.12234 and 3.7837; S_n = 1.6054 x 10^-3 and 6.1315 x 10^-3). The
+  warnings are spurious (as in row 960's log).
+- **G1 (SHELL shares): the reading of 3.2 is NOT refuted.** In all 18 instances the decoupling term carries
+  97.8-100 percent of the seed: sum over k < n of s_k / S = 0.978-0.996 at ratio 2 and 0.995-1.000 at ratio 4. The
+  unit end carries S_n/S = 0.0040-0.0215 at ratio 2, which is 1.2-3.3 times its volume share 8/b^3 (criterion
+  bound 10 times), and 2 x 10^-5 to 5 x 10^-3 at ratio 4 (below its volume share: at short time the light modes
+  dominate, and they are spread over the box). The first cut alone carries s_0/S = 0.19-0.56 at ratio 2 (close to
+  or below the outer shell's volume share 1 - (1 - 2/b)^3 = 0.58, 0.42, 0.33 for b = 8, 12, 16) and 0.40-0.99 at
+  ratio 4. Example, b = 16, r = 2, a = 8, m = 0.5: S = 0.1505, S_n/S = 0.0049, s_0/S = 0.2175, the rest 0.9951.
+- **G2 ((V) diamond): the reading of 3.3 is NOT refuted.** S^V_dia(n)/S(2n; B) = 0.030, 0.024 (b = 8; m = 0.5, 1)
+  and 0.0084, 0.0073 (b = 12). The time squeeze keeps 1-3 percent of the seed at time 2n, and in all four
+  instances it is BELOW the unit share S_n(2n) (3.3 x 10^-3 against 4.6 x 10^-3; 3.6 x 10^-4 against 4.0 x 10^-4;
+  1.3 x 10^-4 against 2.2 x 10^-4; 2.8 x 10^-6 against 3.3 x 10^-6). Spreading the squeeze over time loses at least
+  as much as squeezing at once.
+- **G3 (Lemma HALF on the one-plaquette box): the reading of 3.4 (e) is NOT refuted; it is exact here.** Fitted
+  rates for a = 6..12: X(a; Q_pl) decays at 3.5643 = E_1 and L(a) = ||P^(a/2) g_p|| at 1.7822 = E_1/2 (beta 2.3);
+  3.3990 and 1.6995 at beta 2.6. L/X grows from 12.9 (a = 2) to 7.1 x 10^8 (a = 12) at beta 2.3. The overlap of the
+  plaquette with the first excited level is large: <psi_1, x psi_0> = -0.365 (2.3), -0.336 (2.6). So a worst-case
+  squeeze bound, which is at least L, needs the time extent doubled to reach the same size as the true term.
+- **G4 (massless scalar, zero mode removed, ratio 4): the prediction of 4.1 is NOT refuted.** The cone's L^2 lower
+  bound times the slab volume, V = a b^3 sqrt(2) (C A^a)_xx, GROWS with the box at fixed ratio: 9.1, 17.7, 28.5,
+  59.5, 103.6 for b = 8, 12, 16, 24, 32. The true X stays of order one to ten (13.5 down to 6.6): no seed, and a
+  cost that does not fall.
+- **G4' (scope note of 3.4 (e)).** Massive scalar m = 0.5, ratio 4, observable phi_x^2: V/X = 0.65, 1.31, 2.27,
+  4.70, 7.30, 9.93 for a = 2, 3, 4, 6, 8, 10, roughly linear in a and not exponential. As the scope note says, in a
+  free field the even observable couples first to the two-particle threshold, so there is no square-root loss in
+  the rate, only a polynomial factor. The loss of G3 needs an observable that creates the lightest state, as the
+  plaquette does in SU(2).
+
+**What Step 6 changes.** Nothing in the verdict of Steps 3-5; it adds the scope note to 3.4 (e) (written before
+the run, at 13:58Z) and measures the sizes: the decoupling term is 98-100 percent of the seed in the free scalar,
+the time squeeze keeps 1-3 percent, and the square-root loss of HALF is exact in the one-plaquette box.

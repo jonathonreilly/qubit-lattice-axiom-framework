@@ -287,3 +287,212 @@ fails at every size. No inequality at one coupling separates the models. The con
 selectivity is the uniformity of its integral in the box.
 
 Stop of STEP 2. Next: STEP 3, the attack for SU(2) Wilson.
+
+## 4. STEP 3a: the attack with the inputs the row names
+
+Inputs: Lemma F, Lemma HF, the Laplacian identity of the Wilson weight, reflection positivity, Theorem ABS.
+Outcome first. The attack does not close, and I can say why in one sentence: every one of these inputs holds
+verbatim for compact U(1) with the Wilson action, so by 2.2 (a) no chain of them proves (VAC-SUB) (Proposition
+NOGO, 4.3). Two exact statements come out on the way (Lemma SLICE, Lemma VIR). Both are identities that are linear
+in the state. Neither has a sign after the vacuum is subtracted.
+
+Notation. Delta is the Laplacian of the product of unit round metrics on SU(2)^E, grad its gradient.
+Wt = W - 3|B| = - sum of x_p. Row 913 (F1): Delta Wt = -12 Wt. For a smooth f put d f = <grad W, grad f>.
+
+### 4.1 Lemma SLICE (on one time slice Lemma F has no dynamical content). PROVED
+
+(i) The operator g := d - 6 Wt equals (1/2)[Delta, Wt]. It is real and antisymmetric on L^2(Haar). It generates
+the flow of the vector field grad W (the spatial Wilson flow, run backwards), implemented unitarily.
+(ii) For every real smooth psi with norm 1: <psi, g psi> = 0. In other words
+   <psi, W psi> = 3|B| + (1/6) <psi, d psi>.                                                    (A)
+(iii) Let omega_i be the functional of level i on the cylinder, omega_i(F) = lim Tr(P_i T^n F T^n)/lam_i^(2n), P_i
+the projection on psi_i. It satisfies the hypothesis of Lemma F (F3) at the links of the slice 0. Lemma F, summed
+over the plaquettes of the slice 0, is exactly (A) for psi = psi_i.
+Proof. (i) [Delta, Wt] f = (Delta Wt) f + 2 <grad Wt, grad f> = -12 Wt f + 2 d f. A commutator of two symmetric real
+operators is antisymmetric. (ii) <psi, g psi> = -<g psi, psi> = -<psi, g psi> for real psi. Then use
+W = Wt + 3|B|. (iii) Lemma F summed over the slice: 12 (3|B| - w_i) = s omega_i(<grad_0 W, grad_0 A>), where grad_0 is
+the gradient in the links of the slice and A is the action of the cylinder. A = W + A_+ + A_- + (terms without those
+links), A_+ and A_- the time-like plaquettes above and below. The W part gives s <psi_i, |grad W|^2 psi_i>. For A_+:
+the kernel of the kinetic operator is the integral over the time-like links of exp(-s A_+), so
+s omega_i(<grad_0 W, grad_0 A_+>) = -(1/lam_i) <M^(1/2) psi_i, d K M^(1/2) psi_i> = -<psi_i, M^(1/2) d M^(-1/2) psi_i>
+by the eigenvalue equation, and M^(1/2) d M^(-1/2) = d + (s/2)|grad W|^2. The part A_- gives the same. The sum is
+s <|grad W|^2>_i - 2 <psi_i, d psi_i> - s <|grad W|^2>_i = -2 <psi_i, d psi_i>. So Lemma F reads
+12 (3|B| - w_i) = -2 <psi_i, d psi_i>, which is (A). QED
+
+Reading. (A) holds for every wave function, eigenvector or not. So the plaquette loop equation, restricted to a
+slice, says only that the generator of the Wilson flow is antisymmetric. It cannot bound w_i - w_0. Its dynamical
+content is in the next lemma.
+
+### 4.2 Lemma VIR (the virial identity of the Wilson flow). PROVED
+
+For every eigenvector psi_i of That(s, s), and every real antisymmetric first-order operator X with smooth
+coefficients: <psi_i, [X, That] psi_i> = 0. For X = g:
+   s lam_i <psi_i, |grad W|^2 psi_i> = <M^(1/2) psi_i, [g, Khat] M^(1/2) psi_i>.                       (V)
+Proof. psi_i = lam_i^(-1) That psi_i is smooth, and That is symmetric, so the mean of the commutator is 0.
+[g, M^(1/2)] = (d exp(-sW/2)) = -(s/2)|grad W|^2 M^(1/2), a multiplication operator. Expand
+[g, M^(1/2) Khat M^(1/2)] in three terms; the two outer ones give -(s/2) lam_i <|grad W|^2>_i each. QED
+
+Three facts about (V).
+(a) The Gaussian case closes. For That_s of Proposition G and X = D = <q, grad> + d/2, the dilation:
+[D, M_s] = 2 s dM_s/ds and [D, Ghat_s] = 2 s dGhat_s/ds (the two factors are covariant under U_s = exp((1/2) log(s) D);
+check: [D, M_s] = (<q, grad> M_s) = -s <q, Om q> M_s). So [D, That_s] = 2 s dThat_s/ds, and (V) becomes dlam_i/ds = 0. The virial identity IS the transport statement, with
+K = 0. The reason is that D does not depend on the potential.
+(b) The Wilson case does not close. g depends on W. [g, Khat] is a commutator of a function of the link Laplacians
+with (1/2)[Delta, Wt]. To first order in the generator it is the operator [Delta, [Delta, Wt]], which contains the
+Hessian of Wt. On a link l the diagonal block of that Hessian is (sum over p through l of x_p) times the metric: a
+multiple of the metric, as for a dilation, but with a coefficient that is a field. The blocks between two links of a
+plaquette are not multiples of anything. So (V) relates the squared force of a level to a new quantity, a kinetic
+energy weighted by the Hessian of W. The next commutator brings the third derivative. The relations do not close.
+(c) Every relation of this family is linear in the functional <psi_i, . psi_i>. It holds for the vacuum and for
+each level. Subtracting gives a relation between vacuum-subtracted quantities of no known sign: for (A),
+w_i - w_0 = (1/6)(<d>_i - <d>_0); for (V), the same with the squared force. Row 913, 6.5, found this for (F4). It is
+general: a commutator identity cannot produce the sign.
+
+### 4.3 Proposition NOGO (the inputs of the row are shared with compact U(1)). PROVED GIVEN the inputs of 2.2 (a)
+
+Each of the following holds for compact U(1) with the Wilson weight exp(s cos), with the constant shown:
+- Lemma HF (the same proof; eps_n = log(I_0/I_n), n the absolute charge).
+- Lemma KF, Lemma BLOW, Theorem ABS (group-blind; check 914 asks for the kinetic positivity and monotone ratios, which
+  U(1) has).
+- Lemma F with 4 in place of 12 (row 913, 6.1 (iii); check 914, Section 1), and the eigenfunction identity
+  Delta Wt = -4 Wt.
+- Lemma SLICE with g = d - 2 Wt, and Lemma VIR (the proofs use only the eigenfunction identity).
+- Reflection positivity, the convexity of the free energy, the positivity of the transfer operator.
+So a proof of (VAC-SUB) from these inputs alone would prove (VAC-SUB) for compact U(1) at large beta, which is false
+by 2.2 (a). In the same way, by 3.2 (a), a proof must use a property that the weights of Proposition V lack; of the
+inputs above only the one-eigenvalue identity qualifies, and U(1) has it.
+Consequence for the row's demand ("a property that U(1) and K7 lack, named at the exact step"): with the inputs the
+row names, the attack never reaches a step where SU(2) and U(1) differ. The first quantity in which the group
+appears is the value of x_(p v q) - x_p x_q in Lemma F: for SU(2) it is the scalar product of the two vector parts
+of the plaquette matrices, for U(1) it is sin(theta_p) sin(theta_q). Both obey the same bounds, and every identity
+above treats them alike. A proof needs an input that is not on the list.
+
+### 4.4 What the missing input has to be (ARGUED)
+
+By 2.3 and 3.4 it is a property that (i) compact U(1) loses only where its monopoles condense, (ii) the weights of
+Proposition V and K7 lose at their first-order points, (iii) holds for SU(2) Wilson at every coupling, and (iv) is
+uniform in the box. Any such property implies that Wilson SU(2) has no phase transition at any finite coupling. No
+identity of the commutator kind can be that property (4.2 (c)). Two kinds remain in the lane: a positivity that is
+not linear in the state (the bootstrap certificate (BOOT_eps) of row 708), and a monotone quantity along a lattice
+dilation (row 708, 4.5: one block step with relative errors of order one). I found no third kind in this step.
+
+Stop of STEP 3a. Outcome: not closed; two identities PROVED; the no-go PROVED GIVEN 2.2 (a). Next: STEP 3b, the
+single-level form and a solvable model in which the lemma is true, to see what its mechanism looks like.
+
+## 5. STEP 3b: the single-level form, and a solvable model in which the lemma is true
+
+### 5.1 The single-level form (VS-1) and Proposition ODE
+
+**(VS-1).** There are beta_0, b_0 and, for each beta_1 > beta_0, a constant c such that for every cube B = b^3 with
+b >= b_0 and almost every s in [beta_0, beta_1]:
+   rho_1(B; s) <= c (1 + log^+(1/D_1(B; s))) D_1(B; s),
+where rho_1 = (n_1 - n_0) - (w_1 - w_0) = -D_1' belongs to the lowest excited level of the box (Lemma HF), and
+log^+ = max(log, 0). The constant c does not depend on the box.
+
+**Proposition ODE.** PROVED GIVEN a strong-coupling gap that is uniform in the cube: D_1(b^3; beta_0) >= m_0 > 0 for
+all b >= b_0 (row 836 with check 841 gives it for beta_0 below 0.3609; not re-read here). Under (VS-1), for every
+b >= b_0 and s in [beta_0, beta_1]:
+   D_1(b^3; s) >= exp(-(1 + log^+(1/m_0)) exp(c (s - beta_0))).
+So every periodic cube has a gap at every coupling of the interval, with one lower bound for all cubes.
+Proof. y(s) = log^+(1/D_1(s)) is locally Lipschitz. Where y > 0, y' = rho_1/D_1 <= c (1 + y) almost everywhere.
+On the set y = 0 the derivative of a Lipschitz function is 0 almost everywhere. So (1 + y)' <= c (1 + y) almost
+everywhere, and 1 + y(s) <= (1 + y(beta_0)) exp(c (s - beta_0)). QED
+
+Where it stands among the forms. (VS-1) is the case m = 1 of (VAC-SUB)_K with K = c (1 + log^+(1/D_1)). It is row
+913's remark 3c.3 (iii) made into a statement. It is not implied by (VAC-SUB) with (B), which lets K grow like log b,
+and it does not imply the thermal seed, which also needs a count of the levels. It is the smallest statement I can
+write that still contains the whole difficulty: one level, one box, one inequality, a constant uniform in the box.
+Fact tests: it fails for compact U(1) (in the Coulomb phase D_1 is of order 1/b, against the lower bound of
+Proposition ODE), for the weights of Proposition V (Lemma BLOW with 3.2), and for Q_8 and 2T if beta_fr is bounded
+in b (3.3 (c), GUIDE).
+
+### 5.2 Proposition N (the O(N) model at N = infinity on a ring: the lemma holds, with a one-signed remainder)
+
+Model. RECALLED (the standard saddle point; not rebuilt): the O(N) lattice model with action
+(beta N/2) sum over bonds of |sigma_x - sigma_y|^2 on the cylinder Z_b x Z, at N = infinity. The transfer operator in
+the infinite direction has free particles of mass parameter mu: a particle of momentum k in (2 pi/b) Z_b has energy
+om_k, cosh om_k = 1 + M_k^2/2, M_k^2 = mu^2 + 4 sin^2(k/2). mu = mu_b(beta) solves the gap equation
+   beta = Phi_b(mu^2) := G_b(0),   G_b = the Green function of (-Laplacian + mu^2) on the cylinder.
+The lowest excited level is one particle at rest, D_1 = om_0. The model is asymptotically free: on the infinite
+line mu is positive at every beta and falls like exp(-2 pi beta).
+
+Statement. PROVED (by hand, for the recalled gap equation). With G the Green function on Z^2 and (G * G) its
+convolution square:
+(i) Phi_b(mu^2) = (1/b) sum over k of 1/(M_k (M_k^2 + 4)^(1/2)) = sum over n in Z of G(nb, 0).
+(ii) The inverse rate of the gap is a sum of positive terms:
+   1/K_b := -(d log D_1/d beta)^(-1) = om_0 mu (mu^2 + 4)^(1/2) sum over n in Z of (G * G)(nb, 0)
+          = om_0 mu (mu^2 + 4)^(1/2) sum over x in Z_b x Z of G_b(x)^2.
+   The term n = 0 is the value on the infinite line at the same mu. The terms n not 0, the windings around the ring,
+   are positive. So K_b(beta) <= kappa(mu_b(beta)), kappa the rate of the infinite line: the one-signed remainder.
+(iii) For mu <= 2: K_b <= 16 pi/1.76 < 29, for every b. For mu >= 2 (small beta) K_b is bounded by a function of
+   beta alone, of the order 1/(beta log(1/beta)).
+(iv) Every other level is a sum of om_k, and -(d log om_k/d beta) <= K_b. So (DEF_K), hence (VAC-SUB)_K and (VS-1),
+   hold with a constant independent of the ring.
+Proof. (i) The integral over the momentum p of the infinite direction of 1/(a - 2 cos p)/(2 pi) is (a^2 - 4)^(-1/2);
+with a = M^2 + 2 this is 1/(M (M^2+4)^(1/2)). The second form is the method of images. (ii) d om_0/d mu^2 =
+1/(2 sinh om_0) = 1/(mu (mu^2+4)^(1/2)), and d beta/d mu^2 = Phi_b' = -sum over n of (G * G)(nb, 0) by the resolvent
+identity dG/d mu^2 = -G * G. G > 0, so every term is positive. The sum over n of (G * G)(nb, 0) is (G_b * G_b)(0) on
+the cylinder, the sum of G_b(x)^2. (iii) (G * G)(0) is the integral over the Brillouin zone of
+(mu^2 + phat^2)^(-2) d^2p/(4 pi^2), at least the integral over |p| <= mu of (2 mu^2)^(-2), which is 1/(16 pi mu^2).
+om_0 = 2 arcsinh(mu/2) >= 0.88 mu for mu <= 2 (concavity), and (mu^2+4)^(1/2) >= 2. So
+1/K_b >= 0.88 mu x mu x 2/(16 pi mu^2). For mu >= 2 all M_k^2 lie in [mu^2, mu^2 + 4], and the same formula gives a
+bound in mu alone. (iv) (1/om_k) d om_k/d mu^2 = 1/(om_k M_k (M_k^2+4)^(1/2)) falls with M_k. QED
+
+GUIDE (a run; script in the appendix; it checks the formulas and gives the true size; it proves nothing).
+- Ring, sup over mu <= 2 of K_b: 5.13 (b = 4), 5.78 (16), 6.19 (64), 6.27 (256), 6.282 (1024), 6.2832 (16384 and
+  65536). The supremum is 2 pi = 6.2832, the asymptotic-freedom rate, reached in large volume.
+- Ring at beta = 1: K_b = 1.22, 1.67, 2.59, 4.92, 6.28 for b = 4, 16, 64, 256, 1024. It rises monotonically from the
+  small-volume value to the bulk value. There is no spike at the crossover b mu of order 1.
+- The same model on a b x b torus (three dimensions, which has a critical point at beta_c = 0.2527):
+  sup of K_b = 12.4, 25.4, 51.7, 104.8, 211.3, 423.9 for b = 4, 8, 16, 32, 64, 128. It grows like 3.3 b, at
+  b mu about 2.5. (VS-1) and the budget (B) both fail, as they must.
+
+### 5.3 What the solvable model shows (ARGUED; a guide for the next attempt, not a step of a proof)
+
+(a) The lemma is true there, and its proof is not an identity for the response of a level. It is an identity for
+the COUPLING: the constraint equation beta = Phi_b(mu^2) writes the coupling as a monotone function of the mass
+parameter, and the rate is the derivative of the inverse function. The vacuum subtraction never appears, because
+mu is defined by the vacuum and the levels are functions of mu.
+(b) The one-signed quantity is the inverse rate, a sum of squares of the two-point function over the cylinder. An
+upper bound on K is a LOWER bound on correlations at distances up to the correlation length. Positivity of the
+winding terms is the remainder with a sign: the finite box only helps.
+(c) The dimension decides. mu^2 times the sum of G(x)^2 stays bounded below exactly when the sum diverges like
+mu^(-2), which is the marginal dimension (two for this model). In three dimensions it tends to 0 with mu, the rate
+blows up, and that is the critical point. So the property a proof must use is the infrared divergence that goes
+with asymptotic freedom, not a property of the group alone.
+(d) The gauge analogue of the constraint equation exists and is Lemma F: in every Gibbs state and every level
+functional, s = 12 omega(x_p)/omega(Phi_p). At N = infinity the O(N) constraint closes because expectations
+factorize. For SU(2) Lemma F does not close (4.2 (b)). So the solvable mechanism points at the loop equations with
+a positivity input (the bootstrap family of row 708), which is where the lane already stood. I add only this: the
+quantity to bound from below is the derivative of the right side of the constraint with respect to the mass scale,
+at fixed box, and the box enters with a sign.
+
+Stop of STEP 3b. The lemma is not proved for SU(2). The solvable test did not refute it.
+
+## 6. The smallest unproved inequality, and the tests that can refute an attempt on it
+
+**Smallest unproved inequality: (VS-1) of 5.1.** In full: for the Wilson SU(2) transfer operator That(s, s) on the
+periodic cube b^3, with psi_0, psi_1 the two lowest eigenvectors on the whole gauge-invariant space, chi_0, chi_1
+their partners for Khat^(1/2) M Khat^(1/2), W the spatial action and N(s) = sum over links of
+(d/ds) log(I_(n_l)(s)/I_1(s)):
+   (<chi_1, N chi_1> - <chi_0, N chi_0>) - (<psi_1, W psi_1> - <psi_0, W psi_0>)
+        <=  c (1 + log^+(1/D_1)) D_1,     D_1 = log(lam_0/lam_1),
+for almost every s in [beta_0, beta_1], with c independent of b. By Proposition ODE it gives a gap on all periodic
+cubes at every coupling up to beta_1. OPEN. Nothing in this note bounds its left side at a coupling of order one.
+The thermal seed needs in addition the prefix form (VAC-SUB) or a count of levels.
+
+**Tests in solvable models.**
+- Test DIM (run here, by hand, 5.2). The O(N) model at N = infinity. Any argument for (VS-1) or (VAC-SUB) can be
+  written for this model, where every quantity is explicit. It must give a box-uniform constant on the ring (two
+  dimensions) and must fail on the b x b torus (three dimensions), where sup K_b grows like 3.3 b. An argument
+  that does not see the dimension is refuted by the torus. Outcome for the statement itself: (VS-1) holds on the
+  ring with c = 29 (hand) and true supremum 2 pi (GUIDE); it is not refuted.
+- Test GAUSS (run here, 2.1). The Gaussian family has K = 0. So it cannot refute (VS-1); it refutes only the idea
+  that the lemma is a statement against the photon. An argument whose constant K does not vanish on the Gaussian
+  family is not sharp but is not wrong.
+- Test 2D-YM (by inspection; row 710, Proposition EL). Without spatial plaquettes W = 0, the levels are
+  b eps_n(s), and rho_1/D_1 = nu_2/eps_2, the electric rate, for every ring. (VS-1) holds. This test cannot refute
+  it either; it fixes the constant from below: c is at least the electric rate.
+- The one test that could refute (VS-1) for SU(2) itself is not a solvable model: a measurement of rho_1/D_1 on
+  small cubes through the crossover (the GUIDE row that row 913, 5.6, proposes). A value that grows with b at fixed
+  coupling in the band would refute the box-uniform form and leave only the budget form (B).

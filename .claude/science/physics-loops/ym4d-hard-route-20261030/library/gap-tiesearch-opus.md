@@ -152,8 +152,8 @@ values are not pooled in).
 | z-twist pi/4, colour 3 | 2.55 +- 0.17 [2.30] | 2.82 +- 0.38 [2.44] | 1.11 | no growth |
 | x-twist pi/2, colour 3 | 2.59 +- 0.33 [2.33] | 2.55 +- 0.34 [2.26] | 0.98 | no growth |
 | u_xyyz (xyz) | 1.26 +- 0.08 | 1.10 +- 0.04 | 0.87 | no growth |
-| twisted u_xyyz pi/2, colour 3 (xyz) | 1.32 +- 0.10 [1.14] | (running at the time of writing) | | |
-| interp s = 0.5 (xy) | 0.68 +- 0.07 [0.50] | (pending) | | |
+| twisted u_xyyz pi/2, colour 3 (xyz) | 1.32 +- 0.10 [1.14] | 1.04 +- 0.08 [1.11] | 0.79 | no growth |
+| interp s = 0.5 (xy) | 0.68 +- 0.07 [0.50] | 0.75 +- 0.05 [0.53] | 1.10 | no growth; connected top eigenvalue 0.54 -> 0.53 |
 
 Interp at beta 2.3, L = 8, with the connected structure factor: raw top eigenvalue 4.18 at (pi, pi, 0), of which the mean part
 is 3.96; the connected top eigenvalue is 0.54. So the flag of 4.2 is a non-zero mean field (a deterministic staggered
@@ -165,4 +165,11 @@ the screen at 2.3. To give the verdict on sides 8 to 16 as Section 2 asks, the t
 (u_xy, z-twist pi/4, z-twist pi/2) run at L = 8, 16, 12 (24000, 12000, 16000 measured sweeps, seed 21), and K3 is u_xy at L = 16
 from a hot start. u_xyyz and its twist (values about half, falling) and x-twist (flat) are not continued; the verdict at 2.3
 covers the slices of the screen at sides 8, 12 and these three at 16.
+
+**4.6 Interp slice resolved (connected structure factor).** Connected top eigenvalue over all k and polarisations:
+beta 2.4: 0.60 (L = 8), 0.64 (L = 12); beta 2.3: 0.54, 0.53. The raw values 5.08 -> 16.83 (2.4) and 4.18 -> 13.53 (2.3) are
+mean parts 4.87 -> 16.62 and 3.96 -> 13.32, which scale as L^3: a non-random staggered mean of slice 1, not a variance. The
+interp slice does not join the full sweep (rule of 4.2: connected ratio 1.07 at 2.4, below 1.2).
+Screen conclusion: at beta 2.3 no slice grows from L = 8 to 12; at beta 2.4 only z-twist pi/4 passed (ratio 1.25, with
+errors of about 20 percent); all go to the sweep as planned in 4.3 and 4.5.
 

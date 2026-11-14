@@ -36,7 +36,12 @@ on a run; runs are GUIDE only.
 
 ## State of attack (checkpoint, updated in place)
 
-- Step 1: done (13:40Z). Step 2: done (14:05Z). Step 3 done (14:55Z: SHELL, LEAK, CONE with PR and HALF, QF with FIB and MC, table 3.7). Step 4 done (15:10Z). Step 5 next: hand computation of the one-plaquette and one-cube endpoint quantities at beta 2.3-2.6 (Bessel series; the one-plaquette transfer operator T = M D M).
+- Steps 1-5 done (Step 5 at 14:00Z). Step 6 next: GUIDE in the free massive scalar (shell shares s_k/S;
+  (V) diamond against S(2n); cone cost ||P^(a/2) g_p|| against the true per-plaquette term; massless case).
+  Step 7: verdict and RESULT.
+- Time note. The clock times first written here for Steps 1-4 (13:40Z, 14:05Z, 14:30Z, 14:55Z, 15:10Z)
+  were estimates that ran ahead of the clock; they are removed. The file was created at 13:23Z and
+  Steps 1-4 were on disk before 13:49:14Z, when the lock record for Step 5's first run starts.
 
 ## Step log
 
@@ -435,8 +440,11 @@ so S(a; B) >= 7 - o(1) (RECALLED count, row 960 5.2).
   D chi_j = (c_j/d_j)^4 chi_j (each of the 4 links convolves by c, which acts on the irreducible
   representation j as the scalar c_j/d_j; c_j/d_j = e^(-beta) (2/beta) I_(2j+1)(beta)). At large beta,
   c_j/c_0 -> e^(-2 j(j+1)/beta), so D ~ e^((2/beta) Laplacian of S^3) and V = beta (1 - cos theta)
-  ~ beta theta^2/2: a three-dimensional oscillator with mass beta/4 and frequency 2, independent of
-  beta. Class functions are its s-waves, so the gap tends to 2 omega = 4. The periodic small box of
+  ~ beta theta^2/2: a three-dimensional lattice oscillator with mass beta/4, omega^2 = 4 and time step 1,
+  independent of beta. Its exact one-step transfer matrix has cosh(omega~) = 1 + omega^2/2 = 3, and class
+  functions are its s-waves, so the gap tends to 2 omega~ = 2 arccosh 3 = 3.526. (Corrected in Step 5:
+  the first text said 2 omega = 4, the small-time-step value; Step 5's GUIDE gives 3.40 at beta 8,
+  3.47 at 16, 3.50 at 32.) The periodic small box of
   SMALL-BOX fails through its flat directions (torons) and its 1/b gluon levels; an open box has
   neither (on a simply connected open box a flat connection is a pure gauge).
 - So the squeeze endpoint is easy at EVERY beta, and the beta-dependence of the seed (asymptotic
@@ -463,3 +471,79 @@ gap. The tests say where the difficulty goes: photon and U(1) into a cost that d
 the box; the flux half of frozen groups into the first squeeze step; asymptotic freedom (SMALL-BOX)
 into the per-step cost, the open endpoint being gapped at every beta; K7 into the passage from the
 computable endpoint (F) to the faithful one (V). In no model does the endpoint carry the difficulty.
+
+### Step 5 (done): the endpoint values, by hand, at beta 2.3-2.6
+
+Arithmetic check and GUIDE diagonalisation: `library/guide/lane965/endpoint.py`, log
+`logs/endpoint.log` (lock holder lane965-opus, 13:55:12Z-13:55:40Z, 73 percent memory free, one thread,
+nice 10, RSS guard 2 GB). Two code errors were found and fixed before the numbers below (a trace
+formula that summed l only to j, and a cube coefficient that used c_j/d_j for c_j); one run was stopped
+at 2.5 GB RSS (a 12000-point Gauss-Legendre rule) and replaced by a midpoint rule. The hand values
+below agree with the final log to the digits shown.
+
+**5.1 Bessel series (hand).** I_nu(x) = sum over k of (x/2)^(2k+nu)/(k! (k+nu)!).
+beta = 2.3 (x/2 = 1.15): I_1 = 1.15 + 0.760437 + 0.167613 + 0.018472 + 0.001221 + 0.000054 + ... = 2.09780;
+I_2 = 0.66125 + 0.291501 + 0.048189 + 0.004249 + 0.000234 + 0.000009 = 1.00543;
+I_3 = 0.253479 + 0.083807 + 0.011083 + 0.000814 + 0.000039 = 0.34922; I_4 = 0.09442, I_5 = 0.02083.
+beta = 2.6 (x/2 = 1.3): I_1 = 1.3 + 1.0985 + 0.30941 + 0.04357 + 0.003681 + 0.000207 = 2.75538;
+I_2 = 0.845 + 0.476017 + 0.100559 + 0.011330 + 0.000798 + 0.000039 = 1.43374;
+I_3 = 0.366167 + 0.154705 + 0.026145 + 0.002455 + 0.000148 + ... = 0.54963; I_4 = 0.16537, I_5 = 0.04079.
+Ratios A_j := I_(2j+1)/I_1: A_(1/2) = 0.47928, A_1 = 0.16647, A_(3/2) = 0.04501, A_2 = 0.00993 (beta 2.3);
+0.52034, 0.19947, 0.06002, 0.01480 (beta 2.6). Tail: I_nu(x) <= ((x/2)^nu/nu!) e^(x^2/4), so A_(5/2) <= 0.0132
+at beta 2.6 and every term with j >= 5/2 below is under 10^-7.
+
+**5.2 One plaquette, static, free faces (PROVED formulas).** Z_pl = c_0 = e^(-beta)(2/beta) I_1(beta):
+0.18289 (2.3), 0.15743 (2.6). Mean <x> = <(1/2) tr U> = I_2/I_1 = 0.47928, 0.52034.
+Var(x) = 1 - 3A/beta - A^2 with A = I_2/I_1 (from I_nu' = I_(nu-1) - (nu/x) I_nu): 0.14515, 0.12885.
+
+**5.3 Proposition EP1 (the one-plaquette box, (F) endpoint of the seed side; PROVED, by hand).**
+On Q_pl, T = M D M (4.3). Then
+  S(1; Q_pl) <= N/R - 1,   N := 1 + sum over j >= 1/2 of A_j^4 sum over integers l = 0..2j of (2l+1) A_l,
+                           R := sum over j of (2j+1)^2 A_j^6,
+and S(k; Q_pl) <= S(1; Q_pl)^k for k >= 1, r_1 <= S(1; Q_pl).
+Proof. D is diagonal on the orthonormal characters, so Tr T = Tr(D M^2) = sum over j of (c_j/d_j)^4 <chi_j, M^2 chi_j>.
+M^2 = e^(beta s) = e^(-beta) e^((beta/2) tr U) = sum over l of c_l chi_l with c_l = e^(-beta)(2/beta)(2l+1) I_(2l+1)(beta) = (2l+1) c_0 A_l,
+and chi_j chi_j = sum over integers l = 0..2j of chi_l (Clebsch-Gordan), so <chi_j, M^2 chi_j> = sum over those l of c_l.
+Hence Tr T = c_0^5 N. For the top level take psi = M 1: <psi, T psi> = <M^2 1, D M^2 1> = sum over j of (c_j/d_j)^4 c_j^2
+and ||psi||^2 = c_0, so lambda_0 >= c_0^5 sum over j of A_j^4 (2j+1)^2 A_j^2 = c_0^5 R. (R is also the partition function of the
+closed cube surface divided by c_0^6, 5.4: one step of M 1 is the cube.) So 1 + S(1) = Tr T/lambda_0 <= N/R. The bound
+S(k) <= S(1)^k is "the l^k norm is at most the l^1 norm" (row 960 Lemma Q). QED
+Values (j <= 1 terms; the rest is below 2.2 x 10^-5 in N and 10^-6 in R):
+- beta 2.3: N = 1 + 0.052766 x 1.49941 + 0.000768 x 1.54905 = 1.080308; R = 1 + 4 x 0.012121 + 9 x 0.0000213 = 1.048677;
+  S(1; Q_pl) <= 0.03017. GUIDE value 0.02872.
+- beta 2.6: N = 1 + 0.073309 x 1.598422 + 0.001583 x 1.672432 = 1.119827; R = 1 + 4 x 0.019849 + 9 x 0.0000630 = 1.079963;
+  S(1; Q_pl) <= 0.03691. GUIDE value 0.03409.
+So E_1(Q_pl) >= -log 0.0302 = 3.50 at beta 2.3 and >= 3.30 at beta 2.6 (GUIDE: 3.56, 3.47 at 2.45, 3.40).
+Large beta (GUIDE): 3.24 (4), 3.40 (8), 3.47 (16), 3.50 (32), towards 2 arccosh 3 = 3.526 (4.3, corrected).
+
+**5.4 One cube, free faces (static; PROVED formula, hand values).** The six faces form a closed surface with
+Euler characteristic 2 and every link in two faces, so the character expansion gives
+  Z_cube = sum over j of d_j^2 (c_j/d_j)^6,   d_j = 2j + 1.
+(Checked on two small surfaces: the sphere of two discs glued along one loop gives sum of c_j^2; the torus of one
+face gives sum of c_j/d_j; both by Schur orthogonality.) Values: Z_cube/c_0^6 = 1.04868 (2.3), 1.07996 (2.6).
+Mean plaquette <x>_cube = 1 + (1/6) d/dbeta log Z_cube = sum_j w_j (2j/beta + I_(2j+2)/I_(2j+1))/sum_j w_j,
+w_j = d_j^2 A_j^6: 0.49340 (2.3), 0.53884 (2.6) (the closed surface raises it above the free plaquette's 0.479, 0.520).
+E[chi_1(U_f)] on the cube: one face carries c(U) chi_1(U) = sum_j c'_j chi_j, c'_j = c_(j+1) + c_j [j >= 1/2] + c_(j-1) [j >= 1];
+at beta 2.3: c'_0 = 0.091338, c'_(1/2) = 0.208234, c'_1 = 0.283306 (with c_0 = 0.18289), and
+E[chi_1] = (0.49942 + 0.057587 + 0.000594)/1.048675 = 0.53172 (0.64606 at 2.6).
+Cube transfer operator, leading term only (NOT a bound): the six one-face spin networks give
+6 A_(1/2)^4 Var(chi_(1/2)(U_f)) = 6 x 0.052766 x (1 + 0.53172 - 0.98680^2) = 0.177 at beta 2.3 (0.213 at 2.6): six face
+excitations, each about the size of the one plaquette's S(1). The full cube thermal sum needs every spin network on
+the 12-link cube graph; it is OPEN by hand and not needed (5.6).
+
+**5.5 The LSI-side endpoint.** For block dynamics with one-link blocks, the endpoint is the conditional law of
+one link. At zero staple field (an allowed exterior) it is Haar on the unit S^3, whose Poincare and log-Sobolev
+constants are both 3 (first eigenvalue of S^3; Mueller-Weissler for the log-Sobolev constant of S^n, RECALLED).
+A tensorization or quasi-factorization bound has the form (minimum endpoint constant) x (factors <= 1), so with
+one-link blocks it certifies at most 3. (LSI-J-seed) needs 2 beta K_a: 4.30 at beta 2.3, a = 30 (slab), and 3.73 on
+the ratio-4 box of row 960 4.5. So one-link block dynamics cannot reach (LSI-J-seed) at a = 30 even at zero
+decoupling cost. It needs a >= 45 on the slab (K_45 = 27.42/43 = 0.638, 2 beta K = 2.93) or a >= 40 on the ratio-4
+box (K'_40 = 23.58/38 = 0.621, 2.85). Larger blocks remove this cap, but their worst-case constants are not
+computable by hand.
+
+**5.6 What the endpoint values mean.** The computable end is small and easy: S(k; Q_pl) <= 0.0369^k at beta 2.6,
+below the 1.67 x 10^-12 of Theorem CONE (c) once k >= 9 (0.0369^9 = 1.3 x 10^-13), and the open unit box has a gap
+above 3.3 at every beta of the window and as beta grows. The owner's hope for the narrow end holds. But the end
+enters only on the bounded side (Lemma BND (ii)): every reverse inequality of Step 3 has a cost that must itself be
+below the seed's required size (1.7 x 10^-12 per plaquette on the slab, or the whole shell sum S - S_n). So the
+endpoint's smallness buys nothing; the whole crux sits in the decoupling term.

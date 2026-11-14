@@ -381,3 +381,117 @@ same construction flips a link iff its staple sum is 0: the exact gauge analogue
 REFRAMING or KNOWN. The one exact new fact is the count in 5.1: the PCA obstruction is the magnetic field itself
 (cycle rank of K_D = C(D-1, 2) magnetic components). Lemma 5.1 is a correct but idle construction.
 
+## 6. GUIDE run: bookkeeping check of the exact identities (Step 6; a run can refute, it proves nothing)
+
+Script `/tmp/pca967/scripts/guide6.py` (scratch, not in the repository), run under `lab_ops.py numeric-lock`, nice,
+BLAS threads 1, self-stop above 2 GB. Criteria written before the run:
+- A1. Z_2 gauge theory, D = 3, torus (Z/2)^3 (24 links, 24 plaquettes). Brute-force Z(beta) over 2^24
+  configurations must equal Tr(K_01 K_10) built from the light-cone kernels of Lemma 2.3 (every plaquette assigned to
+  its top vertex), to relative error below 1e-10 at beta 0.3 and 0.7. FAIL = a bookkeeping error in Lemma 2.3 or
+  Identity 2.6.
+- A2. Lemma 2.3(a) structure check on that torus: each plaquette has exactly two links into its top vertex and two
+  links in the previous slice.
+- A3. Row sums of K_01 (the normaliser Z(Y) of Identity 2.6) must take only values z+^j z-^(4-j) with the Z_2 hexagon
+  normalisers z+ = 2(e^(3 beta) + 3 e^(-beta)), z- = 2(3 e^beta + e^(-3 beta)), and must not be constant (Proposition
+  2.5 (ii) in its Z_2 form). On a side-2 torus the parents of different vertices overlap, so only the value set is
+  tested, not the count of each value.
+- A4. The Perron vector of K_01 K_10 must be non-constant, and its logarithm on slice 1 must not be a sum of site
+  functions (residual of the best fit by site functions clearly above rounding). This is the GUIDE form of "the
+  vacuum chain is not a PCA".
+- B1. Proposition 2.7: min over theta of ||a + delta theta||^2 = ||P_cyc a||^2 to 1e-10 for random a (D = 3, 4); the
+  cycle space has dimension C(D-1, 2) and equals ker i_v.
+- B2. D = 3: ||P_cut F||^2 = |B|^2 - (B . 1)^2/3 with B = (F_12, -F_02, F_01); the soft-mode formula
+  |sum (1 - e^(-i k_l))|^2/(3 sum |1 - e^(-i k_l)|^2) equals the least eigenvalue computed numerically; it is close to
+  |k|^2/12 for small k with sum k_l = 0.
+- B3. The Ising disorder-line identity of 2.4 holds to rounding.
+
+Status: job started in the background at 13:49Z (date -u); another lane held the lock (row 965, "seconds"), so it retried
+after 60 s. Lock acquired 13:50:45Z with 73 percent memory free; job ended 13:50:49Z; peak RSS 0.84 GB.
+Process slip, recorded: the release in the script's exit trap ran from /tmp and failed ("can't open file
+scripts/lab_ops.py"); I released the lock by hand from the repository root at 13:51:00Z, 11 s after the job ended.
+
+**Results (GUIDE; all criteria met; nothing here is a step of a proof).**
+
+| Check | Result |
+|---|---|
+| A1 brute force vs light-cone trace | beta 0.3: Z = 5.1282529536e7 both ways, relative difference 6.0e-14; beta 0.7: Z = 2.4908746390e10 both ways, 4.3e-15. PASS |
+| A2 Lemma 2.3(a) structure | every plaquette: two links into its top vertex, two in the previous slice. PASS |
+| A3 normaliser values | row sums of K_01 take 3 values, all of the form z+^j z-^(4-j); max/min 1.219 (beta 0.3) and 6.023 (beta 0.7), so not constant. PASS |
+| A4 not a PCA (GUIDE form) | Perron vector max/min 1.224 (beta 0.3) and 11.58 (beta 0.7); log phi minus its best fit by site functions has max residual 0.10 of a range 0.20 (beta 0.3) and 1.38 of 2.45 (beta 0.7). PASS |
+| B1 Proposition 2.7 | min over theta of norm squared minus norm of P_cyc a squared: at most 3.6e-15 (D = 3, 4); cycle space dimension 1 and 3 = C(D-1, 2); equals ker i_v. PASS |
+| B2 D = 3 forms | P_cut identity to 1.8e-15; soft-mode formula equals the numerical least eigenvalue to 1.1e-15 at 200 random k; at k = s(1, -1, 0), s = 0.2, 0.1, 0.05: ratio 6.644e-3, 1.665e-3, 4.166e-4 against s^2/6 = 6.667e-3, 1.667e-3, 4.167e-4 (that is, abs(k)^2/12). PASS |
+| B3 Ising disorder-line identity | exact to rounding. PASS |
+
+What the run can and cannot establish: it found no bookkeeping error in Lemma 2.3, Identity 2.6 or Proposition 2.7 on
+the smallest torus, and it shows the Z_2 analogue of Proposition 2.5 (ii) on that torus. It says nothing about D = 4,
+SU(2), or any box size; those statements rest on the hand proofs of Section 2 only.
+
+## 7. Ranked list: what, if anything, deserves a proof lane (Step 7)
+
+Plain answer to the owner's question. A "cellular automaton with plaquettes" exists exactly: in light-cone time the
+Bianchi identities are solved forward, vertex by vertex, and this is a genuine PCA (P_*). But it is only the electric
+part of Yang-Mills. The Wilson measure is that PCA weighted by the magnetic energy (Identity 2.6, Proposition 2.7),
+and in four dimensions no time direction and no vertex grouping removes the weight (Propositions 2.2, 2.5). The mass
+gap lives in the weight. So the CA view moves the hard part; it does not remove it.
+
+No item below moves an item of the (SEED-FP) chain. By rule 0 ("Is it worth doing?") the lead may rightly launch none.
+
+1. **FT-FK as a fact test (no lane; one line in the lane's fact-test list).** Statement: an argument that acts only on
+   the kinetic (PCA) part of a Feynman-Kac representation of the transfer operator (P_0 in axis time, P_* in
+   light-cone time; Doeblin, coupling, coupling from the past, disagreement percolation, Dobrushin-Vasershtein,
+   Wasserstein contraction of the free part) fails FT-U1 and SMALL-BOX; it must use the magnetic potential, at a named
+   step, in a way that compact U(1) fails. Moves: saves later brainstorm lanes (rule 0, waste avoided). Cost: none.
+2. **Optional: one cross-provider check of Lemma 2.4, Propositions 2.2, 2.5, 2.7 and Lemma 5.1** (about 2 pages), only
+   if the lead wants to record "the Wilson measure is not a PCA history in D >= 3" as a checked negative result, for
+   instance in an answer to the owner. REFRAMING for the seed. First step: redo Lemma 2.4's transitivity argument and
+   the chi_1-coefficient positivity in Proposition 2.5. Fact test: the statements are group-blind by design. Moves:
+   nothing on the chain. Chance the check passes: about 85 percent (ARGUED; the arguments are short).
+3. **Not worth a lane, with the reason.** (a) A small-beta gap from the light-cone potential of size O(beta^3): known
+   range only (strong coupling). (b) Block-site PCA (Section 2.6): ARGUED false at small beta; even if true, the
+   magnetic content would move into the block eigenfunction. (c) The PCA representative as a model: it lacks the
+   magnetic term (Proposition 2.7), so it has no node to the account. (d) Toom/Gacs for the frozen groups: the
+   standard Peierls argument for finite groups; explains FT-FROZEN, gives nothing for SU(2). (e) Reversible gauge CA
+   (Lemma 5.1): measure-preserving at every beta, no inequality. (f) Centre vortices: the flux half, KNOWN (rows
+   797/799 and the vortex free-energy notes).
+
+## 8. Result (Step 8)
+
+Steps done: 1-8 of the plan, in order; each was appended before the next. Wall clock 13:20Z-13:55Z.
+
+| Statement | Label |
+|---|---|
+| Lemma 2.1 (a first-order chain with a product forward kernel is a PCA iff its Perron vector is a product of site functions) | PROVED |
+| Proposition 2.2: the axis-time vacuum slice chain of row 941 is not a PCA (D >= 3, beta > 0); its kernel is (independent link walks) x e^(-V) | PROVED |
+| Lemma 2.3: light-cone structure (unique top vertex, forward kernel a product over new vertex sites, normaliser = principal chiral model on K_D, triangle holonomy = equator hexagon) | PROVED; GUIDE bookkeeping check passed (Section 6) |
+| Lemma 2.4: gauge invariance forces a product Perron vector on vertex sites to be constant | PROVED |
+| Proposition 2.5: the light-cone vacuum chain is a PCA iff D = 2 (or beta = 0); for D >= 3 the chi_1-coefficient of the one-edge normaliser is >= b_1 beta^2/8 > 0 | PROVED (group-blind) |
+| Identity 2.6: K = M_Z P_* (genuine PCA times a potential), Z = Tr((M_Z P_*)^a) on tori (Z/a) x (Z/b)^(D-1), a \| b, a >= 3, including the seed slab | PROVED |
+| Proposition 2.7: the PCA counterterm is exactly the magnetic energy relative to the light-cone time (Gaussian case); cycle space of K_D = ker i_v, dimension C(D-1, 2); D = 3 representative action (beta/2) sum abs(B_perp)^2 with a soft mode of relative stiffness abs(k)^2/12 | PROVED (Gaussian); SU(2) weak-coupling form ARGUED |
+| Two-sided conditionals in light-cone time are a product | FALSE (corrected in 2.3) |
+| Block sites, other diagonal times, single-link staggered orders | ARGUED (no PCA); OPEN for blocks |
+| No hyperplane reflection reverses light-cone time in D = 4; the light-cone transfer operator gets no positivity from reflection positivity | PROVED for the first part; ARGUED for the second (row 963 owns diagonal reflection positivity) |
+| PCA tools (Dobrushin-Vasershtein, Maes-Shlosman, coupling and CFTP, oriented disagreement percolation, Wasserstein contraction, annealed criteria) give no input at beta 2.3-2.6 | ARGUED from the PROVED identities, READ sources and the lane's GUIDE (row 820) |
+| FT-FK (proposed fact test): an argument acting only on the kinetic part of a Feynman-Kac representation fails FT-U1 and SMALL-BOX | ARGUED |
+| Toom/Gacs: explain FT-FROZEN through the finite-group Peierls argument; no SU(2) input | ARGUED; KNOWN physics |
+| Lemma 5.1: a deterministic reversible gauge CA (parallel overrelaxation; Q2R for Z_2) preserves the Wilson measure at every beta | PROVED; not an input |
+| Light-cone normaliser at beta 2.3 / 2.6 (D = 3): log z varies by 0.91 / 1.18 per vertex; axis potential by 2 beta per plaquette | hand arithmetic (four series terms), GUIDE weight |
+| (LSI-J-seed), (SEED-FP), (UNIV-K), (VAC-SUB) | OPEN, unchanged; not attacked (owned by their rows) |
+
+**Limits.** One author; no check by another model. D = 4 and SU(2) statements rest on the hand proofs only; the
+GUIDE run covers only Z_2 on (Z/2)^3 and linear algebra. GKLM 1989, Lebowitz-Maes-Speer 1990, Georges-Le Doussal 1989,
+Domany-Kinzel 1984, Maes-Shlosman 1991, Toom, Gacs, Batrouni-Halpern, Creutz, Adler, Brown-Woch, Vichniac and Pomeau
+were not opened here (paywall, stub or 404, or not needed); what is attributed to them is as quoted by Maes 2016 or
+recalled, and no step of Section 2 uses them. Row 963's diagonal reflection positivity question was not attacked. No
+cross-branch search was run (this clone holds only `claude/ym4d-hard-route`). Nothing here is a seed, a mass gap or a
+public claim.
+
+**Credits.** Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, for the account that
+fixes the measure (isotropic Wilson SU(2), periodic tori) and for the transfer frame used through rows 931 and 941.
+Rows 820, 821, 853 (Dobrushin and disagreement percolation numbers and readings), row A12 of `gap-skeleton-max-b.md`
+(plaquette variables), rows 797/799 (Tomboulis), 941 (slice chain), 947 (Theorem BR, (LSI-J-seed)), 962 (constraint
+audit). Literature: Goldstein, Kuik, Lebowitz and Maes; Lebowitz, Maes and Speer; Georges and Le Doussal; Domany and
+Kinzel; Rujan; C. Maes (arXiv:1605.02876, read); P.-Y. Louis (arXiv:1604.07707, read); Arrighi, Di Molfetta and Eon
+(arXiv:2004.03656, read); Maes and Shlosman; Dobrushin and Vasershtein; Toom; Gacs; van den Berg and Maes; Gielis,
+Maes and van de Velde; Batrouni and Halpern; Creutz; Adler; Brown and Woch; Vichniac; Pomeau.
+
+RESULT: Row 967 (Claude Opus 5.5 max, author, unchecked). Framing (a) REFUTED for D >= 3, PROVED by hand: the Wilson measure is not the space-time history of a site-factorised PCA along the axis time (Proposition 2.2) or along the light-cone (Domany-Kinzel) time with vertex sites (Proposition 2.5); the obstruction is one normaliser, the principal chiral model on K_D, a non-constant class function of the equator hexagons of the 3-cubes below each vertex; it is a PCA only for D = 2 (independent plaquettes). PROVED instead: in both directions the Wilson transfer operator is exactly (electric PCA) x (magnetic potential) (Identity 2.6), and the counterterm that would make it a PCA is exactly the magnetic energy relative to the time direction (Proposition 2.7: cycle space of K_D = ker i_v, dimension C(D-1, 2)); the PCA representative ("gauge disorder variety") drops the magnetic term (D = 3 Gaussian: (beta/2) sum |B_perp|^2, Lifshitz-type soft mode |k|^2/12), so it has no node to the account. Framing (b) REFRAMING: every PCA ergodicity tool acts only on the electric PCA part, which mixes for compact U(1) too; the supremum tools are capped (Doeblin constant e^(-12 beta), about 1e-12 at beta 2.3; oriented disagreement percolation gains only a threshold constant), the averaged ones need independent disorder, and PCA time mixing is spatial mixing (Louis 2004); Toom/Gacs explain FT-FROZEN only. Framing (c) REFRAMING or KNOWN: Bianchi/Batrouni-Halpern solved forward in light-cone time is the PCA part; centre vortices are the flux half; a reversible gauge CA (Lemma 5.1, parallel overrelaxation, Q2R for Z_2) preserves the Wilson measure at every beta and gives no inequality. GUIDE: brute-force check on Z_2 (Z/2)^3 and of the Proposition 2.7 algebra, all passed. Ranked: 1. adopt FT-FK as a fact test (no lane); 2. optional cross-provider check of Section 2; nothing else deserves a lane. NO NEW INPUT for the crux; (LSI-J-seed), (SEED-FP), block-site PCA (ARGUED false at small beta) stay OPEN.

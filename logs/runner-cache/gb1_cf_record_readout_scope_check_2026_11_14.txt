@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/gb1_cf_record_readout_scope_check_2026_11_14.py
+runner_sha256: 7cfa7e17feeb9b832d8ec69376b569243405b1e448994f7ee760227a6ddc63a1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+==============================================================================
+Scope check: neighborhood record relay and electric record readout
+==============================================================================
+[PASS] five code columns are orthonormal in C^16
+
+A. Electric instrument on the active code (scope N1 lines 3-4, N5 per element and per site)
+[PASS] 19 pair gates and 7 onsite gates -- 19 + 7
+[PASS] every pair gate acts on adjacent sites
+[PASS] the three TOFFOLI_120 lines equal Toffoli(controls 1,2; target 0)
+[PASS] circuit maps |0>_out J|mu> to |b>_out J|mu>, b = 0 for mu = 0 and 1 otherwise
+[PASS] with an entangled external qubit the output is |0>J|0>r0 + |1> sum_mu J|mu> r_mu
+[PASS] control rejects mutant: dropping the last CX of the decoder W
+[PASS] control rejects mutant: replacing CV-dagger by CV inside the Toffoli
+
+B. Endpoint gauge action (scope N5, per block)
+[PASS] endpoint actions act as 1 + SO(4) on the link
+[PASS] P0 and P1 commute with 20 random endpoint actions
+[PASS] control rejects mutant: the projector onto |1> alone commutes with the same actions -- largest commutator entry 0.915
+
+C. Record-first counterexamples (scope N1 lines 5-6)
+[PASS] psi_phi has the same computational populations for six phases
+[PASS] Pr(E^2 = 0) = (1 + cos phi)/2, from Q0 and from the circuit's output
+[PASS] J0 and J1 give opposite certain electric values -- 1.000000000000000, 0.000000000000000
+[PASS] after computational-basis recording, J0 and J1 have the same density matrix
+[PASS] the circuit applied to that recorded ensemble gives output odds 1/2 : 1/2
+[PASS] control rejects mutant: without recording, J0 and J1 already share their density matrix
+[PASS] dephased J3 has code overlap Tr(Q rho) = 1/2 -- 0.500000000000000
+[PASS] the symmetric partner (1100 + 0011)/sqrt2 is orthogonal to the code
+[PASS] control rejects mutant: live J3 also has code overlap 1/2
+
+D. Conditional record relay (scope N1 line 1, N5 lattice-wide)
+[PASS] test path is self-avoiding and adjacent
+[PASS] some step has two recorded neighbors (the path approaches itself)
+[PASS] every formed site has law delta_P, so P is copied along all 13 steps
+[PASS] the same holds after a cubic rotation and a translation of the experiment
+[PASS] control rejects mutant: with a second initial record Q beside the path the relay still copies only P
+
+SUMMARY: PASS=25 FAIL=0
+Scope: double-precision checks of finite statements; the exact proofs are in the theorem note. The controlled-reversal experiment and the two-work-qubit decoder are checked only by scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py.
+
+----- stderr -----
+

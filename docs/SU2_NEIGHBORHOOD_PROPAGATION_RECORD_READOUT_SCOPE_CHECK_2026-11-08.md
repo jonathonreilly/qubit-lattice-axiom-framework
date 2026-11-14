@@ -4,6 +4,9 @@ claim_type: meta
 
 # Scope check for the neighborhood propagation and record-readout examples
 
+**Primary runner:** `scripts/gb1_cf_record_readout_scope_check_2026_11_14.py`
+**Cached output:** `logs/runner-cache/gb1_cf_record_readout_scope_check_2026_11_14.txt`
+
 This records the scope of positive constructions and two explicit
 instrument-specific counterexamples. It is not a general no-go packet or an
 audit verdict. No five-route negative-packet PASS is claimed.
@@ -84,3 +87,20 @@ conditioning and live causal prestates as distinct routes. The 2026-09-24
 isolated-formation note rejects the inference of independent outcomes merely
 from separated dynamics. These scoped comparisons were inspected; no
 retirement of a larger wall is inferred from their titles or status.
+
+## Checks
+
+The primary runner rebuilds this note's finite statements with dense state
+vectors, apart from the theorem's exact-rational runner. It checks the
+19-pair, 7-onsite electric instrument on all five code columns and with an
+entangled external qubit; the commutation of `P0` and `P1` with endpoint
+gauge actions; the two record-first counterexamples (equal recorded ensembles
+for `J0` and `J1` against opposite certain electric values, and code overlap
+`1/2` for dephased `J3`); and the record relay on a 13-step path that
+approaches itself, before and after a rotation and translation. Six controls
+must fail and do: two circuit mutations, a non-invariant projector, the
+claim that live `J0` and `J1` already share a density matrix, live `J3` with
+overlap `1/2`, and a relay with a second initial record beside the path. The
+controlled-reversal experiment and the two-work-qubit decoder are checked
+only by the theorem's runner,
+`scripts/gb1_cf_neighborhood_record_readout_exact_2026_11_08.py`.

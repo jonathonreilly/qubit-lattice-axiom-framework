@@ -61,8 +61,8 @@ Codex as authors of their text). The chain P, (A1)-(A3), (FC), (GC), Theorem C0 
 - Row 941 GUIDE numbers to reproduce: one-plaquette SU(2) chain, theta_GC = 8.23e-4 (beta 2.3) and 1.15e-3
   (beta 2.6), r_1^2 = 8.02e-4 and 1.12e-3. One Gaussian mode: R = e^(-2 omega).
 - Row 930 cut flip J: the centre flip (w -> -w) of the direction-1 links of one cut x_1 = const of a slice.
-  J commutes with T_0 (each spatial plaquette meets a cut in 0 or 2 links). A gauge-invariant function is odd
-  under J iff it crosses the cut an odd number of times: the spatial Wilson line winding once in direction 1.
+  J commutes with T_0 (each spatial plaquette meets a cut in 0 or 2 links). A Wilson loop is odd under J iff
+  it crosses the cut an odd number of times, e.g. the spatial Wilson line winding once in direction 1.
 
 **Scope of a verdict (fixed before any run).** The target box of rows 941 and 947 is the seed box (24a)^3 with
 a about 20 or more at beta 2.3, side about 500 lattice units. This row runs boxes of side 4 and 6. So:
@@ -72,3 +72,69 @@ a about 20 or more at beta 2.3, side about 500 lattice units. This row runs boxe
 - an f that winds around the box (centre-odd under J) probes SMALL-BOX physics (torelon / flux states, whose
   energy grows with the box in the confined phase). A winding-line R near or above 1 on side 4 says nothing
   about the seed box. It is reported as a SMALL-BOX probe, apart from the verdict.
+
+### Step 2: estimator and pass/fail criteria (written 2026-11-14 before any run)
+
+**2.1 Lattice and exact identities used by the estimator (PROVED, by hand, short).** Spatial graph G (periodic
+L^3 box; or one plaquette, 4 links; or one cube, 12 links, open) times open time {0, ..., 2K}. Wilson action,
+weight beta on every plaquette (spatial and timelike), temporal links dynamical, no gauge fixing. Middle slice
+t_0 = K; its spatial links are x.
+- (E1) Weight = e^(-V(x_0)/2) T(x_0, x_1) ... T(x_(2K-1), x_(2K)) e^(-V(x_(2K))/2), T = T_0 Pi_G. So the middle
+  slice has law nu_K prop. to (T^K b)(x)^2 dx, b = e^(-V/2), and nu_K -> nu as K -> infinity. Only states with
+  <psi_n, b> != 0 enter the error: zero momentum, centre-even, cubic-invariant. Error O(e^(-E' K)), E' the lowest
+  such energy. (Periodic time would let every state in, including the low centre-odd flux states of a small box.)
+- (E2) Given x, the forward half (t > K) and the backward half (t < K) are independent (the action is a sum of
+  terms inside one half plus x).
+- (E3) Transported slices. For a spatial link l = (a -> b): w_l := U_0(a, K) U_l(K+1) U_0(b, K)^(-1) (forward) and
+  w'_l := U_0(a, K-1)^(-1) U_l(K-1) U_0(b, K-1) (backward). Then <x_l, w_l> is the timelike plaquette term at l.
+  Change variables w'' -> w (Haar invariance; the rest of the half is a gauge-invariant function of the time-K+1
+  slice): w is independent of the temporal links U_0(., K) and has law
+  pi_x^(K)(dw) prop. to T_0(x, w) (T^(K-1) b)(w) dw. Same for w'. pi_x^(K) -> pi_x as K -> infinity.
+- (E4) pi_x^(K)(dw) = e^(beta <x, w>) m_K(dw)/const with m_K free of x, so (A3) holds for P_K f(x) := E_(pi_x^(K)) f
+  exactly: grad_l P_K f(x) = beta Cov_(pi_x^(K))(Proj_l w_l, f(w)). For gauge-invariant f, f(w) = f(slice K+1).
+So the run estimates R_K(f) := E_(nu_K)|grad P_K f|^2 / E_(nu_K)|grad f|^2 without bias except the O(tau/n) term
+below, and R_K -> R as K grows. K is varied to see the limit.
+
+**2.2 Estimator.** Outer: B independent heat-bath chains (1 heat-bath pass, Kennedy-Pendleton, plus 2
+overrelaxation passes per sweep), thermalised; every n_sep sweeps the middle slice x is taken. Inner, per x:
+freeze x, run n sweeps of all other links from the outer configuration (already a sample of the conditional law,
+so no burn-in is needed); record a_l = Proj_l w_l, a'_l = Proj_l w'_l and the base observables F_j(w), F_j(w').
+Per x: C^F_(l,j) = sample covariance of (a_l, F_j(w)) over the n sweeps, C^B from the backward half, and
+  S_j(x) := beta^2 sum_l C^F_(l,j) . C^B_(l,j)        (dot product in R^4, sum over all spatial links).
+By (E2), E[S_j(x) | x] = beta^2 sum_l E[C^F] . E[C^B] = (1 - O(tau/n))^2 |grad P_K F_j(x)|^2: no positive noise bias
+(the naive |C^F|^2 would carry a bias of order L Var(a) Var(F) tau/n). The O(tau/n) bias is downward.
+Linear combinations f = sum g_j F_j use C g (linearity of the covariance).
+Denominator: |grad f|^2 on the middle slice x of the outer configurations (law nu_K exactly), by closed forms:
+|grad Re(W)|^2 = n_W (1 - Re(W)^2) for a Wilson loop W with n_W distinct links; for sums, the Gram matrix of the
+per-link tangent gradients. Translation and cubic averages of numerator and denominator are taken over the box.
+R_hat = (mean numerator)/(mean denominator); error by jackknife over the B independent outer chains.
+Integrated autocorrelation times are reported for the inner series of each base observable and for S along the
+outer chains.
+
+**2.3 Calibrations (must PASS before any SU(2) box number is read).**
+- C1 free photon (non-compact U(1), action (beta/2) sum_p (dA)_p^2, same geometry 4^3 x (2K+1), same code path
+  with a_l = w_l, flat). Exact: for f = sum_s cos(k s_1) (dA)_(12)(s) (one transverse mode, A_2 at momentum k e_1),
+  R = e^(-2 omega), cosh omega = 1 + 2 sin^2(k/2); for f = (dA)_p one plaquette, R = |e^(-h) c|^2/|c|^2 with c the
+  plaquette's incidence vector and cosh h = 1 + (d^T d)/2 on the co-exact space (exact linear algebra).
+- C2 one-plaquette SU(2) chain, beta 2.3 (and 2.6): exact R(f) by the reduced chain on class functions
+  (C chi_n = ((2/beta) I_n(beta))^4 chi_n, V = -beta cos theta, |grad F|^2 = 4 F'(theta)^2), for f = cos theta and
+  f = tanh(3 cos theta). The reduced code must also return row 941's r_1^2 = 8.02e-4 and theta_GC = 8.23e-4 at
+  beta 2.3 within 1 percent.
+- PASS for each calibrated f: |R_hat/R_exact - 1| <= max(3 sigma/R_exact, 0.05).
+
+**2.4 Observables on the SU(2) box (base F_j on slice K+1 or K-1).** O1 plaquette c_p = (1/2) tr w_p. O2 smeared
+plaquette: (a) the mean of the 4 coplanar plaquettes of a 2 x 2 square, (b) the zero-momentum sum over all
+plaquettes. O3 odd functions of c_p: tanh(3 c_p), tanh(10 c_p), c_p^3. O4 winding Wilson line in direction mu
+(odd under the cut flip J of row 930): (a) one line, (b) the mean of the 4 lines over a 2 x 2 transverse patch,
+(c) the mean over the whole cross-section. I read "a spatial Wilson line around a small transverse
+cross-section" as O4a/O4b; O4 is the SMALL-BOX probe of Step 1, not the seed-box verdict.
+
+**2.5 Verdict rules.**
+- REFUTES (FC) on box B at beta: some f with R_hat - 3 sigma >= 1, both calibrations passed, and R_hat stable
+  within errors when K -> K + 2 and n -> 2n.
+- GUIDE evidence against (FC) on the seed box: the above for a local f (O1-O3, O2a), with R_hat on 6^3 not below
+  the 4^3 value beyond errors.
+- NOT REFUTED (GUIDE only; proves nothing): every R_hat + 3 sigma < 1; "well below 1" means R_hat + 3 sigma < 0.5.
+- INCONCLUSIVE otherwise.
+Machine rules: one job at a time under `python3 scripts/lab_ops.py numeric-lock`, OMP/BLAS threads 1, nice,
+self-stop above 2 GB RSS, start only at >= 50 percent memory free. Compute cap about 45 minutes in total.

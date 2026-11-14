@@ -85,7 +85,7 @@ beta 2.3: 7.3, 4.2 and 2.2 for a = 30, 40, 60.
 
 **4.2 Necessary side (PROVED, one line each).** (HC-vac)_alpha gives E_1(B) >= alpha (Proposition HC). So every route
 to the seed through (HC-vac) needs E_1(B) >= K_a on B = (24a)^3. With the box side b = 24a:
-  b E_1(B) >= 24 a K_a > 384 + 72 log a.
+  b E_1(B) >= 24 a K_a > 24 C_beta(x_*) + 72 log a   (24 C_beta is 384.0 at beta 2.3, C_beta being just below 16, and about 386.9 at 2.6).
 So the seed, on this route, is one inequality for the dimensionless gap b E_1 at ONE box side b.
 
 **4.3 FT-U1 against THAT statement (PROVED given the mode list of FP, read by check 943 at `gap-seam-max.md:88-116`).**
@@ -93,15 +93,16 @@ In the photon sector of FP every constant is attained at the lowest mode: alpha_
 kbar = 1/(beta e^(omega_min)), theta = e^(-2 omega_min). So beta^2 kbar/alpha_c = e^(-2 omega_min) and (FC-seed)_a reads
 omega_min >= K_a. But omega_min = 2 asinh(sin(pi/(24a))) < pi/(12a) < 0.27/a, and K_a > 16/a. So FP fails (FC-seed)_a for
 every a, by a factor above 59 (check 943's arithmetic). In the form of 4.2: FP has b omega_min < 2 pi at every box
-side, against 384 + 72 log a. FP satisfies (FC)_theta with theta = e^(-2 omega_min) < 1 on every finite box, as the lead
+side, against about 384 + 72 log a. FP satisfies (FC)_theta with theta = e^(-2 omega_min) < 1 on every finite box, as the lead
 note (a) says; it fails only the rate. Scope: FP is the Gaussian mode model of row 929, not compact Wilson U(1).
 
 **4.4 SMALL-BOX and frozen groups.** Unchanged from row 941 with check 938's quantifiers. (FC-seed)_a contains a,
 so a proof must use the box size. Frozen groups have no gradient form; (FC) is not defined for them.
 
 **4.5 What (FC) is not (PROVED by row 941's own run plus one line).** (FC) and (GC) are sufficient conditions
-only. Row 941 Run 4 has chains with a gap, hence hypercontractive on their finite state space, where (GC) is
-false (double-well rotors, theta_GC = 9.5 and 1.06; GUIDE). So a failure of (FC) does not touch the seed. The
+only. Row 941 Run 4 has chains with a gap where (GC) is
+false (double-well rotors on a finite grid, theta_GC = 9.5 and 1.06; GUIDE; a finite irreducible chain with a gap has
+hypercontractive powers). So a failure of (FC) does not touch the seed. The
 entropy form that IS necessary: for a self-adjoint Markov operator K on L^2(nu) with ||K f||_b <= ||f||_a, 1 < a < b,
   Ent_nu(K g) <= (a/b) Ent_nu(g)   for every density g.
 Proof. Put u = K g, psi = log u, r = 1/a. Jensen: e^(r K psi) <= K e^(r psi). So E e^((b/a) K psi) <= E (K u^(1/a))^b
@@ -204,7 +205,7 @@ u_(1/beta - eps)(y) = integral of f(w) g_eps(y - w) m(dw)/h_eps(y), and this ker
 - Double wells that one kinetic step jumps (ARGUED; this is where (GC) and (FC) are false, row 941 Run 4). By (B3),
   nu_s for s in the middle third of (0, 1/beta) is the two-slice average smoothed by a Gaussian of variance at
   least 2/(9 beta). Two wells of nu closer than that width merge in nu_s, so gam_s is of order one there, and
-  (BR-gap) gives a gap of order one over 3 beta times that constant. Near s = 0 the constant can be small; the
+  (BR-gap) gives E_1 >= gam/(6 beta), with gam a lower bound for gam_s on the middle third. Near s = 0 the constant can be small; the
   theorem only needs alpha_s >= 0 there. So the bridge form does not have the defect of (GC). A GUIDE run of
   this claim is Step 6.
 - A ceiling if gauge invariance is dropped (PROVED). For a linear phi(y) = <z, y>: Var_(nu_s)(phi) = v_s |z|^2 with
@@ -233,7 +234,8 @@ the gap E_1 and two one-step constants, and nothing else. Its failure for one st
 the one-step gradient form, not of the chain. Stop: the nonlinear analogue is circular. With row 931 Theorem E
 step (iii), I(P^(n+1) g) <= 2 sigma^2 Ent_nu(P^n g), and to return to I(g) one needs (LSI-vac) itself.
 Stage 2, (GC) along the bridge (identity PROVED; the estimate it needs is OPEN). For u_s of 5.2 (i) put
-G(s) := integral of |grad u_s|^2 d nu_s. Then d/ds ||u_s||^2_(L^2(nu_s)) = G(s), so ||f||^2 - ||P f||^2 = integral over (0, 1/beta) of G, and
+G(s) := integral of |grad u_s|^2 d nu_s. Then d/ds ||u_s||^2_(L^2(nu_s)) = G(s) on (0, 1/beta), so ||f||^2 - ||P f||^2 >= integral over (0, 1/beta) of G (Jensen at the two
+ends as in 5.2 (iv); equality needs continuity at the ends, not written out), and
   G'(s) = integral of |Hess u_s|^2 d nu_s + (2/s') G(s) - (2/s'^2) E[ Var(<grad u_s(y_s), w> | y_s) ],
 because (d/ds + L_s)|grad u|^2 = |Hess u|^2 + 2 Hess(-log h_(s'))(grad u, grad u) and Hess(-log h_(s'))(y) = (Id - Cov(w | y_s = y)/s')/s'.
 (GC) asks G to grow from s = 0 to s = 1/beta by the factor 1/theta. So (GC) follows from an AVERAGED bound on the
@@ -364,7 +366,7 @@ for name, beta, V in cases:
 print("peak RSS MB", resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1e6)
 ```
 
-**Second GUIDE run, embedded geometry (criteria written 09:20Z, before the run).** The flat model has M = R^N, so it
+**Second GUIDE run, embedded geometry (criteria written 09:19Z, before the run).** The flat model has M = R^N, so it
 does not exercise (B1)-(B3) (M inside R^N, the ends of the bridge). Model: row 941's rotor chain, the circle in R^2,
 V(u) = h1 cos u + h2 cos 2u, kernel e^(beta cos(u - u')). nu_s is a density on R^2; gam_s is computed on a polar grid
 (160 x 64 cells, finite volumes), 24 midpoint nodes in s. Script `/tmp/gap-fc-947/scripts/br_rotor.py`, not committed.
@@ -416,7 +418,7 @@ Why this one and not (FC). (a) (FC), (GC) are not necessary and are false for ju
 contraction is necessary (4.5) and Theorem BR delivers it. (b) One input replaces (FC), (C1-av), (COV) and (SG-step)/(SC).
 (c) It is exact in every Gaussian mode. (d) U(1)/FP fails it only through the rate, by the same factor above 59.
 What is NOT achieved. Nothing here bounds alpha_J, alpha_s or gam_s for SU(2) at beta 2.3 to 2.6. That is a lower bound on
-the mass gap at intermediate coupling on a box of side at least 720 (b E_1 >= 384 + 72 log a), and a log-Sobolev
+the mass gap at intermediate coupling on a box of side at least 720 (b E_1 > 24 C_beta + 72 log a, about 384 + 72 log a), and a log-Sobolev
 form of it. I know no method that reaches it: the curvature criteria are capped below the window (row 941 and
 5.5), the strong-coupling range is beta below 1/4 (row 931), and nu_s, J have no known local specification
 (m contains Omega). Three group-blind attempts (5.6) stop at conditional-covariance bounds of the same kind.
@@ -438,6 +440,16 @@ layer. So R_J(Phi) = chi_t/(2 (1 - E t^2)), and
   (LSI-J)_(alpha_J)  implies  chi_t <= 2 (1 - E t^2)/alpha_J;   (LSI-J-seed)_a  implies  chi_t <= (1 - E t^2)/(beta K_a) <= 1/(beta K_a).
 A measured chi_t above (1 - E t^2)/(beta K_a) on the seed box refutes (LSI-J-seed)_a. Both sides are standard lattice
 observables. It also caps the OUTPUT of Corollary BR-J (not the true rate): alpha_J <= 2 (1 - E t^2)/chi_t, so the output is at most Xi(beta chi_t/(2 (1 - E t^2)))/2.
+Small-box run of this test (GUIDE; criteria written 09:21Z, before the run). Lattice and updates of row 946
+(`library/guide/lane946/fct.py`: open time 13 slices, K = 6, heat bath plus 2 overrelaxation passes, transported
+slices); the two middle slices play (x, w), so the law is the open-time J_K, not J. Functions: f1 = sum of
+space-like plaquettes of x, f2 = the same for w, f3 = sum of the time-like plaquettes t_l between them (all at zero
+momentum), and the worst combination in their span (top generalised eigenvalue of covariance against the gradient
+Gram matrix; exact tangent gradients). Runs: 4^3 at beta 2.3 and 2.6, 6^3 at beta 2.3; 16 (8 on 6^3) independent
+chains, 250 measurements each, 4 sweeps apart; jackknife over chains. Script `/tmp/gap-fc-947/scripts/rj_guide.py`,
+not committed. Verdict rules: REFUTES (LSI-J-seed)_a on the run's box iff some R_J - 3 err > 1/(2 beta K_a) (at beta 2.3:
+0.31, 0.45, 0.72, 1.35 for a = 40, 60, 100, 200). Otherwise NOT REFUTED on that box, which proves nothing; then the
+run reports the cap alpha_J <= 1/max R_J for that box. Sanity only: E c_p near 0.60 at beta 2.3 (recalled value).
 Exactly solvable companion (not run): the one-plaquette chain. Compare E_1 (3.56 at beta 2.3, row 941 Run 3) with
 Xi(beta/gam_J)/2 and with (1/2) integral of gam_s ds; both must be below E_1, and the gap between them measures the loss.
 
@@ -447,7 +459,7 @@ Xi(beta/gam_J)/2 and with (1/2) integral of gam_s ds; both must be below E_1, an
 |---|---|
 | Branch: row 946 did not refute (FC); its laws are the open-time pair (nu_K, pi_x^(K)), K = 6, 8, boxes of side 4 and 6 | READ; GUIDE on a nearby measure |
 | (FC-seed)_a: the rate form alpha_c (1 - theta) >= beta^2 kbar (e^(2 K_a) - 1) on (24a)^3 | restatement (substitution; same line as check 943) |
-| Every route through (HC-vac) needs E_1(B) >= K_a, that is b E_1 > 384 + 72 log a at box side b = 24a | PROVED (from Proposition HC) |
+| Every route through (HC-vac) needs E_1(B) >= K_a, that is b E_1 > 24 C_beta + 72 log a (about 384 + 72 log a) at box side b = 24a | PROVED (from Proposition HC) |
 | FP fails (FC-seed)_a for every a by a factor above 59, and satisfies (FC)_theta with theta < 1 on each finite box | PROVED given FP's mode list (READ) |
 | (EC-nec): (HC-vac)_alpha implies Ent_nu(P^(2m) g) <= e^(-2 alpha m) Ent_nu(g); (FC), (GC) are not necessary | PROVED (hand); the non-necessity rests on row 941's GUIDE Run 4 |
 | Theorem BR: log-Sobolev constants alpha_s of the bridge marginals nu_s (gauge-invariant functions) give (HC-vac)_alpha with alpha = (1/2) integral of alpha_s ds | PROVED implication (hand); exact in a Gaussian mode (Nelson's exponent) |
@@ -476,4 +488,4 @@ hypercontractivity), Nelson, Elitzur, Ahlswede and Gacs (entropy and hypercontra
 Bodineau (log-Sobolev inequalities through a Gaussian decomposition; recalled, not used in a proof step).
 Nothing here is a seed at order one, a mass gap, or a public claim.
 
-RESULT: Row 947 (Claude Fable 5.2 max, author, checked by no one): (FC)_theta with the seed rate for SU(2) Wilson at beta 2.3-2.6 is NOT proved and stays OPEN; row 946 did not refute it (GUIDE on open-time laws, boxes of side 4 and 6). PROVED (hand, unchecked): (FC)/(GC) are not necessary for the seed and entropy contraction is (EC-nec); Theorem BR: one step of the vacuum slice chain is an ambient Brownian bridge of duration 1/beta, and log-Sobolev constants alpha_s of its fractional-time marginals nu_s (gauge-invariant functions) give (HC-vac) directly with alpha = (1/2) integral_0^(1/beta) alpha_s ds, exact in every Gaussian mode, with no use of (LSI-vac), (FC), (C1-av), (COV), (SG-step) or (SC); Corollary BR-J: a log-Sobolev inequality for the two-slice vacuum law J with constant alpha_J gives (HC-vac) with alpha >= min(alpha_J/(2 beta), 1) (given the Gaussian log-Sobolev inequality); Lemma MS ((GC) holds for a power of P from the gap and two one-step constants); the rate statement (FC-seed) and the necessary size b E_1 > 384 + 72 log a; FP fails every form only through the rate (factor above 59). SMALLEST UNPROVED INEQUALITY: (LSI-br-seed)_a, (1/2) integral alpha_s ds >= K_a = (C_beta + 3 log a)/(a - 2) on (24a)^3 for one even a, or its simpler sufficient form (LSI-J-seed)_a, alpha_J >= 2 beta K_a (a >= 30); nothing here bounds these constants for SU(2), which is an intermediate-coupling mass-gap statement. TEST (not run): a plain 4D Monte Carlo of R_J(Phi) = Var_J(Phi)/E_J|grad Phi|^2 for gauge-invariant two-slice observables; first instance chi_t <= (1 - E t^2)/(beta K_a) for the time-like plaquette susceptibility; one violation on the seed box refutes (LSI-J-seed)_a.
+RESULT: Row 947 (Claude Fable 5.2 max, author, checked by no one): (FC)_theta with the seed rate for SU(2) Wilson at beta 2.3-2.6 is NOT proved and stays OPEN; row 946 did not refute it (GUIDE on open-time laws, boxes of side 4 and 6). PROVED (hand, unchecked): (FC)/(GC) are not necessary for the seed and entropy contraction is (EC-nec); Theorem BR: one step of the vacuum slice chain is an ambient Brownian bridge of duration 1/beta, and log-Sobolev constants alpha_s of its fractional-time marginals nu_s (gauge-invariant functions) give (HC-vac) directly with alpha = (1/2) integral_0^(1/beta) alpha_s ds, exact in every Gaussian mode, with no use of (LSI-vac), (FC), (C1-av), (COV), (SG-step) or (SC); Corollary BR-J: a log-Sobolev inequality for the two-slice vacuum law J with constant alpha_J gives (HC-vac) with alpha >= min(alpha_J/(2 beta), 1) (given the Gaussian log-Sobolev inequality); Lemma MS ((GC) holds for a power of P from the gap and two one-step constants); the rate statement (FC-seed) and the necessary size b E_1 > 24 C_beta + 72 log a (about 384 + 72 log a); FP fails every form only through the rate (factor above 59). SMALLEST UNPROVED INEQUALITY: (LSI-br-seed)_a, (1/2) integral alpha_s ds >= K_a = (C_beta + 3 log a)/(a - 2) on (24a)^3 for one even a, or its simpler sufficient form (LSI-J-seed)_a, alpha_J >= 2 beta K_a (a >= 30); nothing here bounds these constants for SU(2), which is an intermediate-coupling mass-gap statement. TEST (not run): a plain 4D Monte Carlo of R_J(Phi) = Var_J(Phi)/E_J|grad Phi|^2 for gauge-invariant two-slice observables; first instance chi_t <= (1 - E t^2)/(beta K_a) for the time-like plaquette susceptibility; one violation on the seed box refutes (LSI-J-seed)_a.

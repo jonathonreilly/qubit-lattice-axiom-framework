@@ -69,4 +69,21 @@ count of soft or degenerate states (the even count sum_i r_i^t for glue; the odd
 constant lambda_odd for flux); response-type factors ((FR), the seam Delta at the endpoint)
 are NOT selective: frozen groups and large U(1) boxes pass them.
 
-(Step 1b next: rows 913-928, the forms added after the 912 consolidation.)
+### Step 1b (2026-11-14T05:25Z): FINISH rows 913-928 read (RESULT parts; READ)
+
+Forms added after the 912 consolidation, with the check verdict that binds each:
+
+- Transport of the full thermal trace along the Wilson coupling (row 913; check 914): Lemma F,
+  Lemma KF, Identity 6.4 HOLD; Theorem ABS HOLDS AFTER CORRECTION; it stops at the vacuum
+  subtraction (VAC-SUB) (row 934, running on worker 1; NOT mine to attack).
+- (ONE-K)/(UNIV-K) (rows 916, 917, 924, 925): links (c), (e) of the chain are checked; (UNIV-K)
+  OPEN. Cutoff uniformity is a separate open input and is not the subject of row 931.
+- Margins (rows 918, 919): after check 919 only "hot boxes have NO ROOM" survives as GUIDE; the
+  cold seed size, (CORE) room and transport are UNMEASURED. So no size a is known for the seed.
+- (SEAM) and (INS) (rows 920, 921, 929): the glue half's insertion identity is checked; the
+  seam form is bracketed by thermal sums (row 929, unchecked).
+- (FR), lambda_odd, Theorem R, Lemma CUT, (CUT-TYP) (rows 922, 927, 930): row 930 unchecked.
+- THERM-DI-pin (rows 923, 926): OPEN; low-h statements assume confinement.
+- Reading rows 915, 928: no published supplier for either form (bounded searches).
+
+Step 1 is complete. Step 2 (overlap check) next.

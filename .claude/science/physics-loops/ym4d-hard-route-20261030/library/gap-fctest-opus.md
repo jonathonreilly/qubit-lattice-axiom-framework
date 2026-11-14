@@ -300,3 +300,28 @@ c^3 3.98e-4 (4.13e-4), 2 x 2 smeared 1.160e-3 (1.129e-3), zero-momentum plane 3.
 line 0.01652 (0.01623), patch 0.0453 (0.0446), cross-section 0.1411 +- 0.0042 (0.1385). All differences are
 within 1.5 combined errors: n-stable. The O(tau/n) bias (about 0.7 percent at n = 300, from C1) is below the
 statistical error.
+
+**b4: box 6^3 x 13 (K = 6), beta 2.3, plaquettes of the (0,1) plane and lines of direction 0 only (by cubic
+symmetry the other planes and directions have the same expectations), B = 8, m = 6, n = 300
+(`out/b4_L6K6o0_b2.3.json`, 4.8 min, peak RSS 1.14 GB).**
+
+| f | R_hat 6^3 | err | R_hat 4^3 (b1) | 6^3 / 4^3 |
+|---|---|---|---|---|
+| plaquette | 1.007e-3 | 6.4e-5 | 8.60e-4 | 1.17 (2.2 err) |
+| tanh(3 c) | 6.84e-4 | 4.7e-5 | 5.81e-4 | 1.18 |
+| tanh(10 c) | 1.98e-4 | 1.6e-5 | 1.63e-4 | 1.21 |
+| c^3 | 4.98e-4 | 4.3e-5 | 4.13e-4 | 1.21 |
+| 2 x 2 smeared | 1.200e-3 | 7.2e-5 | 1.129e-3 | 1.06 |
+| zero-momentum plane | 3.1e-3 | 1.2e-3 | 3.57e-3 | 0.9 (noisy) |
+| winding line (length 6 vs 4) | 3.31e-3 | 1.6e-4 | 0.01623 | 0.20 |
+| 2 x 2 patch of lines | 7.8e-3 | 3.9e-4 | 0.0446 | 0.17 |
+| cross-section of lines | 0.0266 | 2.1e-3 | 0.1385 | 0.19 |
+
+Reading (GUIDE). NOT REFUTED on 6^3. The local family moves up by about 15-20 percent (one correlated 2-sigma
+shift, the four plaquette functions share configurations), and stays near 1e-3. The winding-line family
+falls by a factor about 5 from side 4 to side 6: its R is a small-box quantity that shrinks as the box grows
+in the confined phase, as Step 1 expected. Neither family shows growth toward 1 with the box.
+
+**C2 at beta 2.6 (one-plaquette chain, K = 4, B = 64, m = 4, n = 2000; `out/c2_plaq_b2.6.json`).** R_hat(cos theta)
+= 1.115e-3 +- 2.5e-5 (exact 1.088e-3, +2.5 percent, 1.1 err); tanh 3: 8.2e-4 +- 9.5e-5 (exact 7.47e-4); tanh 10:
+2.2e-4 +- 7.9e-5 (2.30e-4); cos^3: 4.8e-4 +- 4.1e-5 (4.89e-4). PASS. Compute used at 08:33:41Z: 21.8 minutes.

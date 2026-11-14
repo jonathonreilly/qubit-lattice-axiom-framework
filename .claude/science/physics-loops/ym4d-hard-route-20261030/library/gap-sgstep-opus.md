@@ -415,3 +415,31 @@ no bound on the Hessian of the log ground state.
   exponential-family and gauge-averaged forms, proved above.
 Repo credit: the chain, (SG-step) and Theorem V/E are row 931 (Claude Fable 5.2); (E-to-HC), Lemma RD and Corollary
 HC2 are row 940 (Claude Opus 5.5), checked by check 942 (Codex gpt-6-astra).
+
+### 6.1 GUIDE results (PROVISIONAL, batch running; updated when it ends)
+
+Done so far (beta 2.3, T 6, cold, 2000 + 20000 sweeps): u_pi, L = 4: lambda = 0.4503 at k = (pi, pi, pi), v_1 = 0.2253;
+L = 6: lambda = 0.4503 at k = (pi, pi, pi), v_1 = 0.2253. Control u = 1, L = 4: lambda = 0.2991, v_1 = 0.1598.
+No growth from L = 4 to 6 at u_pi. Larger L, hot starts, T and beta checks pending.
+
+## 8. Result (PROVISIONAL until Section 6.1 is final)
+
+| Statement | Label |
+|---|---|
+| Lemma TG: projected score = conditional expectation of the linear statistic beta <z, w'> of the temporal-gauge next slice; sigma <= sigma~ | PROVED (hand, Claude, unchecked) |
+| Lemma EF: temporal-gauge one-step laws form an exponential family; its log-partition function on M is log Omega + V/2 + log lambda_0 | PROVED |
+| Identity HV: beta^2 Var(<z, w'>) = Hess_M(log Omega + V/2)(z, z) + beta sum_l E<u_l, w'_l> |z_l|^2 | PROVED |
+| Lemma HO (compactness + one-link bound): sigma(u, z)^2 <= beta^2 ||z||_1^2, = beta^2 N for spread z | PROVED |
+| Key question: a box-free sigma does NOT follow from compactness and the one-link bound; Example DW (reversible chain of the same form, Lemma RS) has sigma^2 >= 0.15 beta^2 N at beta 2.3 | PROVED |
+| Proposition CONS: constant renormalization of z leaves alpha/sigma^2 unchanged; the l1 route moves the factor N into the dual-norm LSI (product case); averaged (SG-step) does not enter Lemma RD | PROVED (product case and readings); Wilson extensive-variance step ARGUED |
+| Lemma HSS: Hess_u log p(u, w) >= -H for all u, w gives (SG-step) with sigma^2 = H | PROVED |
+| Theorem SC: (SC) Hess_M(log Omega + V/2) <= C_F gives (SG-step) with sigma^2 = C_F + beta; (SC-Omega) Hess log Omega <= C_Omega gives sigma^2 = C_Omega + 9 beta | PROVED (implication) |
+| In temporal gauge (SC) is exact: C_F - beta <= sup_u sigma~(u)^2 <= C_F + beta; (SC) = box-free first-step electric susceptibility, uniform in the boundary slice | PROVED |
+| Identity EXP: E_(pi_u) e^(t phi) = E_(pi_(u(t))) e^(-I_t) (exact content of (SG-step)) | PROVED |
+| Lemma CEN: at every central slice (all links +-1) the projected score vanishes identically | PROVED (SU(2)-specific; fails for U(1)) |
+| Bakry-Emery for nu (row 941 Attack A) implies (SC-Omega) with C_Omega = 1, hence (SG-step) with sigma^2 <= 1 + 9 beta | PROVED (implication) |
+| Fact tests: photon sigma^2 = beta e^(-omega) exact (Lemma HSS sharp in flat space), (SG-step) implies no gap; U(1) structure verbatim; frozen groups outside the domain; SMALL-BOX and FT-CEIL no conflict | PROVED / ARGUED as marked in Section 5 |
+| (SC), (HS) or (SG-step) at a box-free sigma for SU(2) Wilson at beta 2.3-2.6 | OPEN |
+| GUIDE: no growth of the first-step susceptibility at the pi-flux slice from L = 4 to 6 | GUIDE (provisional) |
+
+RESULT (provisional): see the final line below once Section 6.1 is complete.

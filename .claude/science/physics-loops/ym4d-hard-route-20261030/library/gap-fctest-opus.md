@@ -3,9 +3,10 @@ lease_until: 2026-11-14T19:05Z
 
 # gap-fctest-opus (FINISH row 946): GUIDE refutation test of (FC) for the vacuum slice chain
 
-Status: in progress. Started 2026-11-14T07:05Z on Mac mini worker 2, at commit 77fc50935
-(branch claude/ym4d-hard-route). Everything here is GUIDE unless marked otherwise: a run can
-refute (FC) at a coupling, it cannot prove it. No statement of the chain rests on this file.
+Status: FINISHED 2026-11-14T08:50Z. Started 07:05Z on Mac mini worker 2, at commit 77fc50935 (branch
+claude/ym4d-hard-route). Author: Claude Opus 5.5 (max); checked by no other model yet (check row 948).
+Everything here is GUIDE unless marked otherwise: a run can refute (FC) at a coupling, it cannot prove it.
+No statement of the chain rests on this file. Verdict: (FC) NOT REFUTED at beta 2.3 or 2.6; see Result.
 
 ## Plan (at most eight steps; one per response)
 
@@ -342,3 +343,94 @@ theta_zm = 0.1447 +- 0.0047 (Bm of full rank 15). Centre-even sector (the 12 pla
 Reading (GUIDE). The worst combination in the family is a cross-section line sum, R about 0.145; mixing the
 plaquette functions at zero momentum doubles the best single plaquette value but stays below 0.01. NOT
 REFUTED.
+
+**SMALL-BOX probe: 4^3 x 13 at beta 3.5, B = 16, m = 4, n = 300 (`out/sb_L4K6_b3.5.json`, 2.1 min).** Plaquette
+4.65e-4 +- 3.2e-5, tanh 3c 2.1e-4, tanh 10c 3.8e-5, c^3 3.4e-4, 2 x 2 smeared 5.2e-4, zero-momentum plane 7.4e-4;
+winding line 0.0307 +- 0.0017, patch 0.0917 +- 0.0056, cross-section 0.307 +- 0.021.
+Reading (GUIDE). At fixed side 4 the centre-odd winding-line family rises with beta (cross-section 0.138,
+0.203, 0.307 at beta 2.3, 2.6, 3.5) while every local f falls. This matches row 941's SMALL-BOX picture
+(theta_GC >= r_1^2 -> 1 as beta grows at fixed lattice size); at beta 3.5 it is still far from 1, so no
+small-box refutation of (GC) is seen either. (At large beta the heat bath may under-sample tunnelling between
+centre sectors of the spatial lines; this probe is one run and is labelled GUIDE only.)
+
+**zmvar, 4^3 x 13, beta 2.6, B = 16, m = 6, n = 300 (`out/zmvar_L4_b2.6.json`, 2.9 min).** theta_zm = 0.2217
++- 0.011 (rank 15); centre-even sector 0.0029 +- 0.0003; lines only 0.2217 (the line sums, 0.20-0.22 each,
+agree with b5's O4c). NOT REFUTED.
+
+Compute: 08:11:52Z-08:42:45Z, 30.9 minutes under the lock (cap 45), then the lock was released. Peak RSS
+1.14 GB (the 6^3 run); all others below 0.76 GB. Table of every run: `lane946/logs/summary.md`
+(from `summarize.py`).
+
+## Result
+
+**Verdict (GUIDE; proves nothing).** No observable refutes (FC). For SU(2) Wilson at beta 2.3 (boxes 4^3
+and 6^3, and the one-cube chain) and at beta 2.6 (box 4^3), every R(f) is far below 1 with small errors.
+By rule 2.5 the verdict at both couplings is NOT REFUTED, with every value "well below 1" (R + 3 err < 0.5).
+So row 947's condition "if row 946 REFUTED (FC) at beta 2.3" is not met.
+
+| f (row 946 list) | beta 2.3, 4^3 (b1) | beta 2.3, 6^3 (b4) | beta 2.6, 4^3 (b5) | one cube, 2.3 (b6) |
+|---|---|---|---|---|
+| O1 plaquette | 8.60e-4 +- 1.7e-5 | 1.007e-3 +- 6.4e-5 | 6.65e-4 +- 1.7e-5 | 8.53e-4 +- 1.3e-5 |
+| O2a smeared plaquette (2 x 2) | 1.129e-3 +- 3.3e-5 | 1.200e-3 +- 7.2e-5 | 8.04e-4 +- 2.3e-5 | - |
+| O2b zero-momentum plane sum | 3.57e-3 +- 2.2e-4 | 3.1e-3 +- 1.2e-3 | 1.35e-3 +- 1.6e-4 | - |
+| O3 tanh(3 c_p) | 5.81e-4 +- 1.7e-5 | 6.84e-4 +- 4.7e-5 | 4.11e-4 +- 1.6e-5 | 5.76e-4 +- 2.6e-5 |
+| O3 tanh(10 c_p) | 1.63e-4 +- 8.8e-6 | 1.98e-4 +- 1.6e-5 | 9.75e-5 +- 9.4e-6 | 1.75e-4 +- 1.9e-5 |
+| O3 c_p^3 | 4.13e-4 +- 1.2e-5 | 4.98e-4 +- 4.3e-5 | 3.70e-4 +- 1.8e-5 | 3.68e-4 +- 1.2e-5 |
+| Z_2 monopole indicator (kappa 3; 10) | - | - | - | 2.5e-4 +- 1.9e-5; 5.9e-5 +- 7.4e-6 |
+| O4a winding line (odd under J) | 0.01623 +- 1.8e-4 | 3.31e-3 +- 1.6e-4 | 0.02159 +- 3.3e-4 | - |
+| O4b line, 2 x 2 transverse patch | 0.0446 +- 6.4e-4 | 7.8e-3 +- 3.9e-4 | 0.0620 +- 1.2e-3 | - |
+| O4c line, whole cross-section | 0.1385 +- 2.3e-3 | 0.0266 +- 2.1e-3 | 0.2028 +- 4.2e-3 | - |
+| worst f in the 15-dim zero-momentum span (zmvar) | 0.1447 +- 0.0047 | - | 0.2217 +- 0.011 | - |
+| same, centre-even sector only | 0.0071 +- 0.0005 | - | 0.0029 +- 0.0003 | - |
+
+Errors: jackknife over 16 (b4: 8; cube: 64) independent outer chains. Inner integrated autocorrelation times
+0.48-0.59 sweeps for every series and run (heat bath plus 2 overrelaxation passes); outer lag-1
+autocorrelations consistent with zero. Stable under K 6 -> 8 and n 300 -> 600 (Step 6). Calibrations C1
+(free photon, exact) and C2 (one-plaquette SU(2) chain, exact, and row 941's theta_GC) PASS (Step 4).
+
+**Labels.**
+
+| Statement | Label |
+|---|---|
+| (FC)_theta implies (GC)_theta (linearise at g = 1 + eps f), so one f with R(f) >= 1 refutes (FC) | PROVED (by hand, Step 1) |
+| Estimator identities (E1)-(E4): open-time slice law nu_K -> nu (only zero-momentum centre-even states enter; T compact with positive kernel on a finite box); halves independent given x; transported slices have law pi_x^(K); (A3) holds exactly for P_K | PROVED (by hand, Step 2.1); not statements of the chain |
+| Exact one-plaquette chain: r_1, theta_GC as row 941; R(cos th) = 7.88e-4 (2.3), 1.09e-3 (2.6) | GUIDE (deterministic quadrature; agrees with row 941 to 0.5 percent) |
+| C1 hand value R(flux, 4^3) = 0.016335 | by hand (Step 3); used only to calibrate |
+| R(f) per f, per box and coupling, and the zmvar suprema in the table | GUIDE |
+| (FC), (GC) not refuted at beta 2.3 and 2.6 on 4^3 (and 6^3, one cube at 2.3) for the listed f | GUIDE |
+| Local contraction is set at the scale of one plaquette (box value within 10-20 percent of the one-plaquette chain); odd functions of c_p and the monopole indicator contract more than c_p (no thin-vortex double well) | GUIDE (reading of the table) |
+| The largest R comes from smooth, extended, centre-odd winding lines; they fall about 5x from side 4 to 6 and rise with beta at fixed side 4 (0.14, 0.20, 0.31 at 2.3, 2.6, 3.5): SMALL-BOX physics, not seed-box physics | GUIDE |
+| (FC)_theta, (GC)_theta on the seed box (24a)^3 at beta 2.3-2.6 | OPEN (row 947) |
+
+**What it does not show.** Nothing here proves (FC) or (GC). (GC) is a supremum over all f; this row tests
+single f of four families and the worst f of one 15-dimensional span. An f outside these families, for
+example a non-local f tuned to rare slices, could still give R >= 1. The seed box has side about 500; the
+runs have side 4 and 6. beta 2.6 was run on 4^3 only. The open time extent K = 6 is checked against K = 8,
+not taken to infinity. At beta 3.5 the heat bath may under-sample centre tunnelling of the spatial lines.
+
+**For row 947 (GUIDE only, not evidence for a proof step).** (i) Row 946 did not refute (FC), so row 947's
+brief says attack (FC)_theta as a proof. (ii) In these runs theta well below 1 is available for every local f
+(R about 1e-3) and for zero-momentum plaquette functions (below 0.01). (iii) The values that approach 1 are
+box-scale, centre-odd winding lines: they are bounded below by the small-box flux energy, and they shrink as
+the box grows in the confined phase. On the seed box a theta near e^(-2 E_1) (E_1 the lowest gauge-invariant
+energy; about 1.3 at beta 2.3 by recalled lattice values, GUIDE) is what one-well behaviour would give.
+(iv) The local value is fixed at one plaquette: the exact one-plaquette value R(cos th) = 7.9e-4 is within
+10-20 percent of the box value. A proof that works link by link or plaquette by plaquette is not
+contradicted by these runs.
+
+**For row 948 (check).** Rerun cheaply: `python3 fct.py selftest` (1 s); `python3 fct.py exact-plaq --beta 2.3`
+(1 s); `python3 fct.py photon --L 4 --K 6 --B 16 --m 6 --nsep 20 --n 300 --ntherm 300 --tag t` (6 s);
+`python3 fct.py su2 --geom plaq --K 4 --beta 2.3 --B 64 --m 4 --nsep 20 --n 2000 --tag t` (40 s); one box round
+`python3 fct.py su2 --geom box --L 4 --K 6 --beta 2.3 --B 16 --m 1 --n 300 --tag t` (about 30 s). Run each under
+the numeric lock. The definitions to check against row 941 are (A3) and Step 2.1 (E3) here: forward
+transport w_l = U_0(a, K) U_l(K+1) U_0(b, K)^(-1), tangent projection at x_l, factor beta^2.
+
+**Credits and sources.** Definitions (A1)-(A3), (FC), (GC), Theorem C0 and the test design: row 941 (Claude
+Fable 5.2, `library/gap-lsivac-max.md`). Transfer frame: Ethan Sussman and Levent Alpoge, with Claude and Codex
+as authors of their text (outline (GL8), as located by checks 927, 933, 938); their account has no Monte Carlo
+or log-Sobolev text (grep, Step 1). Cut flip: row 930. Standard methods, recalled and carrying no proof step:
+the Kennedy-Pendleton SU(2) heat bath, SU(2) overrelaxation, the Madras-Sokal window for tau_int, the
+jackknife. No literature value enters a verdict; recalled lattice numbers (glueball mass) appear only in
+GUIDE readings. origin/main and the PR branches are not on this clone and were not searched.
+
+RESULT: Row 946 (Claude Opus 5.5 max, GUIDE, checked by no one): (FC) is NOT REFUTED for SU(2) Wilson at beta 2.3 (boxes 4^3 and 6^3, and the one-cube chain) or at beta 2.6 (box 4^3); every R(f) = E_nu|grad P f|^2/E_nu|grad f|^2 is far below 1 (local plaquette, smeared and odd functions of c_p, and the Z_2 monopole indicator about 1e-4 to 4e-3; winding lines up to 0.14 at 2.3 and 0.20 at 2.6 on side 4, falling about 5x on side 6; worst f in a 15-dim zero-momentum span 0.145 +- 0.005 and 0.222 +- 0.011), with both calibrations passed (free photon exact to 0.5-1.6 percent; one-plaquette chain exact to 2 percent; row 941's theta_GC reproduced to 0.5 percent); PROVED only the linearisation (FC) => (GC) and the estimator identities; (FC) and (GC) on the seed box stay OPEN for row 947.

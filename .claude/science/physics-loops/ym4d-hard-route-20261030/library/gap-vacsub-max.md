@@ -28,6 +28,8 @@ Labels used below: PROVED, CONDITIONAL (on named inputs), GUIDE (a run or a heur
 ## Log
 
 - 2026-11-14T04:50Z: file created. No earlier run of this item exists at the pinned commit.
+- Steps done in this order: plan steps 1 to 8, all in one session. Sections 1 to 7 below are complete; the RESULT
+  line is the last line of the file.
 - 2026-11-14T05:00Z: sources read in full: `library/gap-target-max.md` (row 913), `library/gap-target-check-astra.md`
   (check 914). Read in part, where 913 cites them: `library/gap-mid-max.md` L98-197 (row 708: Lemma 4.1, Lemma 4.2,
   Theorem TR, Remarks CH and LEV, Corollary TR1, (DEF_K), (VIR-log)); `library/gap-vir-sc.md` L67-80 (row 710, Theorem U).
@@ -126,7 +128,7 @@ number cannot be eliminated exactly, and (VAC-SUB) keeps both terms.
 Correction to a GUIDE number of row 913, 3a.3 (i). The two-loop formula for SU(2) with beta = 4/g^2 is
 a Lambda = (6 pi^2 beta/11)^(51/121) exp(-3 pi^2 beta/11) (RECALLED). So asymptotic freedom predicts the rate
 3 pi^2/11 = 2.69 minus 0.42/beta, not 5.38. The published rates near beta 2.3 to 2.6 quoted in row 708 are about 3.3.
-The number enters no proof. It halves the box size exp(integral of K) that row 913 quotes.
+The number enters no proof. It halves the exponent of the box size exp(integral of K) that row 913 quotes.
 
 Stop of STEP 1. Statement fixed. Next: the fact tests.
 
@@ -150,8 +152,8 @@ gives (Ghat_s U_s g)(q) = s^(d/4) (Ghat_1 g)(s^(1/2) q) = (U_s Ghat_1 g)(q). Pow
 This is the transfer operator of the lattice action (s/2) sum over tau of (|q_(tau+1) - q_tau|^2 + <q_tau, Om q_tau>):
 the rescaling q -> s^(-1/2) q removes s. The free photon on B is the case <q, Om q> = |curl q|^2 on the quotient
 of R^E by the gauge shifts (U_s maps gauge-invariant functions to gauge-invariant functions). The constant modes have
-Om = 0 and give continuous spectrum; the statement covers them, because it is a unitary equivalence. The identity w_i = n_i is the
-virial theorem of the oscillator, level by level. So for the free photon (VAC-SUB)_K holds with K = 0, for every
+Om = 0 and give continuous spectrum; the statement covers them, because it is a unitary equivalence. The identity
+w_i = n_i is the virial theorem of the oscillator, level by level. So for the free photon (VAC-SUB)_K holds with K = 0, for every
 box, with Rem_m = 0.
 
 Why it passes. The Gaussian weight is covariant under a dilation of the field. The coupling is then not a parameter
@@ -500,6 +502,42 @@ group-blind, so by 4.3 it could not have been the missing input. In second-order
 fact reads: the curvature of H_(k-1) in u is the vacuum's (positive, of the order of the volume) minus that of the
 lowest k levels; the difference has no sign.
 
+### 5.5 The relation behind the lemma in a scaling theory: the remainder is the pressure (ARGUED; no step of a proof)
+
+Row 913 (6.5, 8.4) asks for "an exact relation ... with a remainder of one sign". In a theory with one length
+xi(s) it exists, and the remainder has a name.
+(a) Scaling form. Suppose G(t; b^3; s) = Gamma(t/xi(s), b/xi(s)) and put kappa = xi'/xi. Then
+   dG/ds = -kappa (t dG/dt + b dG/db).
+G = log Tr exp(-t (H - E_0)) is the pressure times volume over temperature. It is non-negative, and for a box much
+larger than xi it is proportional to the volume, so b dG/db = 3 G. Then
+   dG/ds + kappa t dG/dt = -3 kappa G <= 0.
+This is (VIR_K) of row 708 with K = kappa and the remainder 3 kappa G: the thermal form of (VAC-SUB), with a sign.
+By 1.4 (i) the left term is the plaquette shift, 6 t |B| (abar_inf - abar_t). So the relation is the
+interaction-measure identity of lattice thermodynamics: (energy density - 3 pressure) = (6/kappa) x (plaquette
+shift), and (VIR_K) says "the interaction measure is at most the energy density", which holds because the pressure
+is non-negative. In Proposition N the same sign appears as the positivity of the winding terms.
+(b) What is exact and what is not. The lattice gives dG/ds = 6 t |B| (abar_inf - abar_t) exactly, and G >= 0 exactly.
+It does not give the scaling form: that the coupling moves ONLY the unit of length is the statement that the
+spectrum of the box at (s, b) is the spectrum at (s', b') up to a factor, which is one block step with relative
+errors of order one (row 708, 4.5). So the missing object of row 913 is not a new identity. It is this one, and
+what is missing is the inequality dG/ds <= -K t dG/dt in place of the scaling form.
+(c) The level form, by scale. For a zero-momentum level the response excess is spread over the box:
+rho_1 = 3 |B| (dl_link - dl_plaq), with dl the shift of the local electric number and of the plaquette action
+between the level and the vacuum. (VS-1) asks dl_link - dl_plaq <= c D_1/(3 |B|) up to the logarithm. Two
+statements together would give it: (LOC) the level differs from the vacuum by a wave packet of size C/D_1 in local
+expectations; (AMP) inside the packet the shift of the local action is of the order D_1^4, the size of a
+dimension-four operator, not of order one. (LOC) alone gives |rho_1| <= C D_1^(-3), which is row 708's Way 2: the
+bound ends at a finite coupling. (AMP) is an ultraviolet statement: the short-distance part of the action density
+is the same in the vacuum and in a low level. That is the same kind of statement as (UNIV-K) of rows 913 and 924
+(the ultraviolet increments of the free energy are the same on two tori), there for two tori, here for two states.
+Row 924 leaves (UNIV-K) OPEN on (VAC-ID), (MAPCONV), (CLASS), (DENS-K). I did not work in the account's variables;
+this paragraph is a pointer, not a reduction.
+(d) The account. Sussman and Alpoge's dilation identity (SA 6863-6869; `library/sa-index/chunk-06.md` L64-66,
+"proved in detail") is a change of units of one bare lattice. It relates no two couplings. A grep of
+`library/sa-index/*.md` for "Hellmann", "action sum rule", "monoton... in beta", "derivative in beta" returns
+nothing. So the account supplies the spectrum of the kinetic operator and the transfer trace (GL3-GL4, GL8, used
+in Section 1) and no statement on how the transfer spectrum moves with the coupling.
+
 ## 6. The smallest unproved inequality, and the tests that can refute an attempt on it
 
 **Smallest unproved inequality: (VS-1) of 5.1.** In full: for the Wilson SU(2) transfer operator That(s, s) on the
@@ -528,6 +566,21 @@ The thermal seed needs in addition the prefix form (VAC-SUB) or a count of level
   small cubes through the crossover (the GUIDE row that row 913, 5.6, proposes). A value that grows with b at fixed
   coupling in the band would refute the box-uniform form and leave only the budget form (B).
 
+**Calibration: what kind of statement (VS-1) is (ARGUED, with RECALLED theorems; no step of a proof).**
+The same inequality can be written for the O(N) model on the ring Z_b x Z at finite N, with D_1 the gap of the
+transfer operator in the infinite direction. Proposition ODE applies as it stands (the strong-coupling gap is
+uniform in the ring). Three cases:
+- N = infinity: (VS-1) holds (Proposition N).
+- N = 2, the plane rotator: (VS-1) fails. RECALLED: Frohlich and Spencer (1981) prove power-law decay at large
+  beta. A gap uniform in the ring would give exponential decay along the infinite direction for the limit state.
+  This is the analogue of the U(1) test, and it fails in the same way: only on the window around the transition.
+- N = 3: (VS-1) for all beta is the statement that the two-dimensional O(3) model has no transition, which is a
+  classical open problem.
+So (VS-1) for Wilson SU(2) in four dimensions is the gauge form of that open problem, not a technical lemma next to
+it. The row asked for the smallest unproved inequality; this is it, and its size should be read from this list.
+The transport route does not make the problem smaller. It makes it one inequality with a clean statement and
+clean tests.
+
 ## 7. Summary
 
 ### 7.1 Statements and their standing (author's marks; none is checked by another model)
@@ -554,7 +607,9 @@ The thermal seed needs in addition the prefix form (VAC-SUB) or a count of level
 | 18 | Proposition N: O(N) at N = infinity on a ring; inverse rate = sum of squares; K_b <= 29 for all rings | 5.2 | PROVED for the RECALLED gap equation |
 | 19 | The run: sup K_b = 2 pi on the ring; 3.3 b on the b x b torus | 5.2 | GUIDE |
 | 20 | Lemma CONC and its corollary (two-sided bound on dEE_k/ds) | 5.4 | PROVED GIVEN Theorem ABS for the left side |
-| 21 | (VAC-SUB) for SU(2) Wilson at any coupling of order one | all | OPEN |
+| 20b | In a scaling theory dG/ds + kappa t dG/dt = -3 kappa G: the remainder of one sign is the pressure; (LOC) and (AMP); link to (UNIV-K) | 5.5 | ARGUED |
+| 21 | Calibration: (VS-1) holds at N = infinity, fails for N = 2, is the classical open problem for N = 3 on the ring | 6 | ARGUED, with RECALLED theorems |
+| 22 | (VAC-SUB) for SU(2) Wilson at any coupling of order one | all | OPEN |
 
 ### 7.2 Answers to the three steps of the row
 
@@ -580,10 +635,12 @@ The thermal seed needs in addition the prefix form (VAC-SUB) or a count of level
 - The strong-coupling bound of 3.2 (a) was not checked for the weights of Proposition V.
 - Reflection positivity was used only through the lane's lemmas (Lemma REG, Theorem S). I found no way to make it
   act on a vacuum-subtracted quantity.
+- The account's variables: I did not look for a two-state form of (UNIV-K) there (5.5 (c) is a pointer only).
 - Sources not re-read: rows 705, 704, 836, 841, 843, 854 (cited as given), Proposition V's proof, the papers of
   Guth and of Frohlich and Spencer.
-- Time: about 45 minutes of work, 2026-11-14 04:50Z to 05:35Z. One numeric job, under the lock, memory 68 percent
-  free.
+- Time: 2026-11-14 04:50Z to 05:30Z, below the 60 to 90 minutes the row allows for STEP 3. I stopped because the
+  approaches of Sections 4 and 5 (named inputs, single level with a solvable model, convexity, scaling) each ended at a named step and 4.3 shows that the row's inputs cannot go
+  further; more time on the same inputs would repeat them. One numeric job, under the lock, memory 68 percent free.
 
 ### 7.4 Advice (ARGUED)
 

@@ -28,6 +28,31 @@ def git(*args: str, cwd: Path) -> None:
     )
 
 
+# Git reads no configuration of this machine in these tests. The global file
+# below carries a test identity; a test that needs none points it elsewhere.
+_GIT_ENV = {}
+_GIT_HOME = tempfile.TemporaryDirectory()
+
+
+def setUpModule():
+    config = Path(_GIT_HOME.name) / "gitconfig"
+    config.write_text("[user]\n\tname = t\n\temail = t@example.org\n", encoding="utf-8")
+    for name, value in (("GIT_CONFIG_GLOBAL", str(config)),
+                        ("GIT_CONFIG_SYSTEM", os.devnull),
+                        ("GIT_CONFIG_NOSYSTEM", "1")):
+        _GIT_ENV[name] = os.environ.get(name)
+        os.environ[name] = value
+
+
+def tearDownModule():
+    for name, value in _GIT_ENV.items():
+        if value is None:
+            os.environ.pop(name, None)
+        else:
+            os.environ[name] = value
+    _GIT_HOME.cleanup()
+
+
 class FloorTest(unittest.TestCase):
     def test_model_outside_floor_is_refused(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -1188,6 +1213,105 @@ class DoctorTest(unittest.TestCase):
                 os.chdir(cwd)
         self.assertEqual(code, 1)
         self.assertIn("refuse: cannot compare rules", text)
+
+
+class IdentityTest(unittest.TestCase):
+    def test_preflight_refuses_a_checkout_without_an_email(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp).resolve()
+            empty = root / "empty.gitconfig"
+            empty.write_text("", encoding="utf-8")
+            named = root / "named.gitconfig"
+            named.write_text("[user]\n\temail = g@example.org\n", encoding="utf-8")
+            repo = root / "repo"
+            repo.mkdir()
+            git("init", "-q", cwd=repo)
+            base = ("preflight", "--min-disk-gb", "0", "--min-mem-pct", "0")
+            cwd = Path.cwd()
+            saved = os.environ["GIT_CONFIG_GLOBAL"]
+            try:
+                os.chdir(repo)
+                os.environ["GIT_CONFIG_GLOBAL"] = str(empty)
+                code, out = call(*base)
+                self.assertEqual(code, 1, out)
+                self.assertIn("refuse  identity:", out)
+                self.assertIn("host name, in a public repository", out)
+                self.assertIn(lab_ops.IDENTITY_FIX, out)
+                self.assertIn("git config user.email", lab_ops.IDENTITY_FIX)
+                self.assertIn("preflight: refuse (identity)", out)
+
+                subprocess.run(["git", "config", "user.email", "l@example.org"],
+                               cwd=repo, check=True)
+                code, out = call(*base)
+                self.assertEqual(code, 0, out)
+                self.assertIn("ok      identity:", out)
+                self.assertNotIn("refuse", out)
+
+                subprocess.run(["git", "config", "--unset", "user.email"],
+                               cwd=repo, check=True)
+                self.assertEqual(call(*base)[0], 1, "unset again")
+                os.environ["GIT_CONFIG_GLOBAL"] = str(named)
+                code, out = call(*base)
+                self.assertEqual(code, 0, "an email in the global file counts")
+                self.assertIn("ok      identity:", out)
+            finally:
+                os.environ["GIT_CONFIG_GLOBAL"] = saved
+                os.chdir(cwd)
+
+
+class ShallowTest(unittest.TestCase):
+    def test_shallow_repository_warns_and_keeps_the_exit_status(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp).resolve()
+            remote = root / "remote.git"
+            subprocess.run(["git", "init", "-q", "--bare", "-b", "main", str(remote)],
+                           check=True)
+            seed = root / "seed"
+            subprocess.run(["git", "clone", "-q", str(remote), str(seed)],
+                           check=True, capture_output=True)
+            for text in ("one\n", "two\n"):
+                (seed / "AGENTS.md").write_text(text, encoding="utf-8")
+                git("add", ".", cwd=seed)
+                git("commit", "-q", "-m", text.strip(), cwd=seed)
+            git("push", "-q", "origin", "HEAD:main", cwd=seed)
+            clones = {}
+            for kind, extra in (("full", ()), ("shallow", ("--depth", "1"))):
+                clones[kind] = root / kind
+                subprocess.run(["git", "clone", "-q", *extra, f"file://{remote}",
+                                str(clones[kind])], check=True, capture_output=True)
+
+            def run_in(kind: str, *argv: str) -> tuple[int, str]:
+                cwd = Path.cwd()
+                try:
+                    os.chdir(clones[kind])
+                    return call(*argv)
+                finally:
+                    os.chdir(cwd)
+
+            for argv in (("doctor",), ("doctor", "--no-fetch")):
+                with self.subTest(argv=argv):
+                    full, shallow = run_in("full", *argv), run_in("shallow", *argv)
+                    self.assertEqual((full[0], shallow[0]), (0, 0))
+                    self.assertNotIn("shallow", full[1])
+                    self.assertIn(lab_ops.SHALLOW_WARNING, shallow[1])
+                    self.assertEqual(shallow[1].count("\n"), full[1].count("\n") + 1)
+
+            (seed / "AGENTS.md").write_text("three\n", encoding="utf-8")
+            git("commit", "-q", "-am", "rules", cwd=seed)
+            git("push", "-q", "origin", "HEAD:main", cwd=seed)
+            full, shallow = run_in("full", "doctor"), run_in("shallow", "doctor")
+            self.assertEqual((full[0], shallow[0]), (1, 1), "rules differ in both")
+            self.assertNotIn("shallow", full[1])
+            self.assertIn(lab_ops.SHALLOW_WARNING, shallow[1])
+
+            for kind in ("full", "shallow"):
+                with self.subTest(kind=kind):
+                    tree = root / f"tree-{kind}"
+                    code, out = run_in(kind, "worktree-add", "work", "--dir", str(tree))
+                    self.assertEqual(code, 0, out)
+                    self.assertEqual(out.splitlines()[0], str(tree))
+                    self.assertEqual(lab_ops.SHALLOW_WARNING in out, kind == "shallow")
+                    self.assertTrue((tree / "AGENTS.md").exists())
 
 
 if __name__ == "__main__":

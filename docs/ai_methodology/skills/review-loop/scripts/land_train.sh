@@ -158,6 +158,12 @@ land_train() {
      echo "FAILED: the last PR tip is not the last reviewed commit" >&2
      exit 1
    fi
+   # A landed commit carries the committer identity of this clone. Without an
+   # email git makes one from the host name, and the loop would push it.
+   if [ -z "$(git config --get user.email)" ] && [ -z "${GIT_COMMITTER_EMAIL:-}" ]; then
+     echo "FAILED: git user.email is not set: a landed commit would carry a committer address made from the host name, in a public repository. Set git config user.name and user.email in this clone." >&2
+     exit 1
+   fi
    verify_pr_head() {
      local pr="$1" expected="$2" live_ref actual
      case "$pr" in

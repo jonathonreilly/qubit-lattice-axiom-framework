@@ -3,7 +3,7 @@
 
   worktree-add     sparse worktree on its own local branch
   worktree-remove  remove a worktree once its work is pushed
-  preflight        check machine, model floor and sandbox before a launch
+  preflight        check machine, git identity, floor and sandbox before a launch
   numeric-lock     hold the one numeric job allowed on this machine
   status           leads, leases, requests and computed standing of a target
   check-hash       print the hash lines a check record needs
@@ -102,6 +102,28 @@ def env_float(name: str, default: float) -> float:
     return float(os.environ.get(name, default))
 
 
+SHALLOW_WARNING = ("warning: this repository is shallow, so git merge-base with an "
+                   "older branch can fail here; use a full-history clone for that work")
+
+
+def shallow_warning(cwd: Path | str | None = None) -> str | None:
+    """The one-line warning for a shallow repository, or None."""
+    found = git("rev-parse", "--is-shallow-repository", cwd=cwd)
+    return SHALLOW_WARNING if found.stdout.strip() == "true" else None
+
+
+IDENTITY_FIX = ("set git config user.name and git config user.email in this "
+                "checkout before the first commit")
+
+
+def identity_refusal(cwd: Path | str | None = None) -> str | None:
+    """Why commits from this checkout would carry no configured email, or None."""
+    if git("config", "--get", "user.email", cwd=cwd).stdout.strip():
+        return None
+    return ("git user.email is not set, so a commit would carry an address made "
+            "from the host name, in a public repository; " + IDENTITY_FIX)
+
+
 # --- worktrees -------------------------------------------------------------
 
 
@@ -141,6 +163,9 @@ def worktree_add(args: argparse.Namespace) -> int:
             "share with: git pull --rebase origin "
             f"{args.target} && git push origin HEAD:{args.target}"
         )
+    warning = shallow_warning(path)
+    if warning:
+        print(warning)
     return 0
 
 
@@ -225,6 +250,9 @@ def doctor(args: argparse.Namespace) -> int:
     behind = git("rev-list", "--count", "HEAD..origin/main").stdout.strip() or "?"
     print(f"checkout: {behind} commits behind origin/main"
           + (f" ({note})" if note else ""))
+    warning = shallow_warning()
+    if warning:
+        print(warning)
     settings = Path(SETTINGS_PATH)
     if settings.is_file():
         findings, _, sources = model_findings(
@@ -591,6 +619,8 @@ def preflight(args: argparse.Namespace) -> int:
     report("ok" if cap_ok else "note", "memory cap",
            "ulimit works here" if cap_ok else
            "ulimit unavailable; a job must watch its own memory")
+    why = identity_refusal()
+    report("refuse" if why else "ok", "identity", why or "git user.email is set")
     online = git("ls-remote", "--exit-code", "origin", "HEAD", timeout=30).returncode == 0
     report("ok" if online else "note", "network", "origin reachable" if online else
            "origin not reachable from here")

@@ -34,6 +34,7 @@ Labels used on every statement: PROVED, CONDITIONAL (on named inputs), GUIDE (nu
 - 2026-11-14T06:10Z: step 2 written (Section 2: Proposition M, the exact cut model).
 - 2026-11-14T06:35Z: steps 3 and 4 written (Section 3: placement and literature; Section 4: CAP, RARE-P, LOC).
 - 2026-11-14T07:00Z: steps 4 to 7 written (Section 5: ORBIT, Q, CUT-3D; Section 6: open statements, (LSI-weak), tests).
+- 2026-11-14T07:40Z: three GUIDE runs of the overlap test (Section 6.4); self-check pass (two wording repairs, listed in Section 7); Section 7 written. Item finished.
 
 ## 1. Inputs read, duplicate check, notation (step 1)
 
@@ -130,14 +131,17 @@ xi_y^(-1) g_xy^(-1)) = <xi_x, g_xy xi_y h_xy^(-1)> for the four neighbours y, an
 The sum over (eps, eps') of exp(beta sum_x [(-1)^eps <xi_x, H^-_x> + (-1)^eps' <xi_x, H^+_x>]) is 4 cosh cosh.
 (M3) is the definition of the O(4) model. (M4): the weight of a bond is <a_x xi_x b_x^(-1), g a_y xi_y b_y^(-1)
 h^(-1)>; it equals <xi_x, g xi_y h^(-1)> for all xi iff a_x^(-1) g a_y = +-g and b_x^(-1) h b_y = +-h with equal
-signs; a sign that is not constant is a Z_2 gauge transformation and is absorbed. (M5) is the definition of a
+signs. The signs form a Z_2 connection. If its holonomy round a plaquette or a winding cycle were -1, the
+holonomy of g there would be conjugate to its negative, so it would have trace zero. Off that null set of
+environments the signs are a Z_2 gauge transformation and are absorbed into a. (M4) is claimed off that null set. (M5) is the definition of a
 conditional law. (M6) lists the plaquettes that contain a direction-1 link over cut k. QED
 
 ### 2.2 Remarks (what the row's description leaves out)
 
 1. **The cut is not a two-dimensional model.** Each cut link has four spatial plaquettes and two temporal ones.
    Phi_env carries the two temporal ones. It is a mixed Laplace transform of the law of the staple field H under
-   mu_bulk, so log of each cosh-free component is convex in xi; it is not small and not local.
+   mu_bulk: each of its four sign components is a Laplace transform, so the logarithm of each component is
+   convex in xi on (R^4)^N. Phi_env is not small and not local.
 2. **Conditioning on the 4D environment instead is fatal (PROVED observation).** Given all links other than the
    cut, the law of the cut is the local factor times (1/4) sum of exp(beta sum_x <xi_x, +-H^-_x +-H^+_x>): a
    symmetric mixture of models in external fields of size up to 2 beta per site. The components with fields H and
@@ -452,3 +456,95 @@ Dropped as a target: the rate e^(-cN) of (CUT-TYP) (Section 4.1, ARGUED doubtful
 - **Small N by hand.** N = 1 is a single link: gamma = (1 - q)/q-type, order one at every beta. N = 2 x 2 or a
   ring of 4 links with one holonomy (g_P, h_P): the model is solvable by characters, and the odd gap as a function
   of the holonomy class shows the passage from the rotor (flat) to the frustrated case. Not done here.
+
+### 6.4 GUIDE: the overlap test, run (no proof weight)
+
+Script `/tmp/cuttyp-fable-scratch/overlap_guide.py` (4D SU(2) Wilson heat bath in numpy, Creutz sampling,
+checkerboard order, periodic, the untwisted component only, cold start, 200 thermalisation sweeps, 30 sweeps
+between environments). Logs in the same folder: `overlap_b23.log`, `overlap_b23_conf.log`, `overlap_b23_long.log`.
+Three jobs, one at a time under the numeric lock (holder cuttyp-fable-936), 69 percent memory free, BLAS threads 1,
+`python3 -I`, `nice`; 2 to 9 minutes each. Check of the code: the plaquette is 0.602 to 0.608 in every run
+(known value near 0.602 at beta 2.3). Method: the cut starts at its sampled value xi*, the slices 0 and s are held
+fixed except the cut, all other links are updated, q = N^(-1) sum_x <xi*_x, xi_x> is recorded each sweep.
+
+| geometry (a, L_1, s) | N | window (sweeps) | environments | E[q^2] | N E[q^2] | mean q in the window |
+|---|---|---|---|---|---|---|
+| 6, 4, 3 | 16 | 200-400 | 16 | 0.171 +- 0.014 | 2.7 | 0.29 |
+| 6, 4, 3 | 36 | 200-400 | 16 | 0.070 +- 0.011 | 2.5 | 0.08 |
+| 6, 4, 3 | 64 | 200-400 | 16 | 0.108 +- 0.013 | 6.9 | 0.28 |
+| 6, 4, 3 | 144 | 200-400 | 12 | 0.089 +- 0.012 | 12.8 | 0.28 |
+| 8, 8, 4 | 36 | 200-400 | 16 | 0.114 +- 0.016 | 4.1 | 0.21 |
+| 8, 8, 4 | 64 | 200-400 | 14 | 0.088 +- 0.013 | 5.6 | 0.20 |
+| 8, 8, 4 | 144 | 200-400 | 7 | 0.035 +- 0.006 | 5.1 | 0.09 |
+| 8, 8, 4 | 64 | 1200-1600 | 7 | 0.072 +- 0.015 | 4.6 | 0.11 |
+| 8, 8, 4 | 144 | 1200-1600 | 3 | 0.049 +- 0.024 | 7.1 | 0.15 |
+
+Control (first job): with all links fixed except the cut (r = 0 of Lemma CUT-3D), q stays at 0.64 to 0.67 and
+N E[q^2] grows like N (7, 15, 28, 63). This is Remark 2 of Section 2.2 seen in the run.
+
+Reading (GUIDE).
+1. The test discriminates. At L_1 = 4 the overlap does not decay and N E[q^2] grows with N. beta 2.3 is the
+   deconfinement coupling of a direction of length 4 (recalled: beta_c = 2.30 at N_t = 4), so the winding lines of
+   direction 1 are ordered there, and (TYP-1) fails there as it must.
+2. At L_1 = 8 (confined) N E[q^2] is 4 to 7 for N = 36, 64, 144, with no growth resolved. The necessary
+   condition (Q3) is not refuted in this range. It is not confirmed either: the errors are 20 to 50 percent, and
+   three to sixteen environments per point.
+3. The overlap relaxes slowly: it falls from 0.65 to about 0.2 in 300 sweeps, the window means are still nonzero
+   after 1200 sweeps, and the spread over environments of the window mean is 0.13 to 0.20. So the equilibrium
+   value of E[q^2] may be below the table, and some environments hold the cut for more than 1000 sweeps.
+4. Size of the constant. For an environment with N Q_k near 5, (Q2) gives gamma_k <= 0.2. If that is the typical
+   value, CUT can deliver at most G of about 0.2 L_1, that is about 4 at the seed box, against the 3 L_1 = 60 of
+   beta = 0. Theorem R at the seed asks lambda_0 >= 78.4 Gamma_0, so Gamma_0 <= 0.05 would be needed. The CUT route
+   then gives decay of p in the time extent a, and probably not the seed-box number. The distribution of Q_k over
+   environments was not resolved, so this is a warning, not a bound on E[G].
+5. Not run: the twisted components, the seed geometry (a = 10, L_1 = 20, N = 400), beta 2.6, the Gaussian test.
+
+## 7. Result (step 8)
+
+| # | Statement | Status |
+|---|---|---|
+| M | The cut law: 2D O(4) at beta_sigma = beta with the SO(4) connection (g, h), times Phi_env = integral of cosh cosh over the bulk; symmetry group = centralisers of the layer holonomies (off a null set); planted structure; 3D array | PROVED (identities) |
+| 2.3 | Flat correlation length 21 (beta 2.3), 51 (2.6); u = 0.479; mu u = 1.26, mu u^2 = 0.61; plaquette 0.60 | GUIDE / recalled inputs |
+| W | Width of the covariant adjacency operator >= 4 for every connection; so the spectral and single-site criteria need beta < 1 | PROVED (the cited criterion: abstract read) |
+| 3.2 | (CUT-TYP) is independent of the flat 2D O(4) / chiral gap; the typical environment is in no regime with a known convergent expansion | verdict; items 1, 2 by definition, items 3 to 5 ARGUED |
+| 4.1 | The rate e^(-cN) is doubtful (flat tubes cost e^(-C L_1)); then (LSI-weak) at scale L_1/N does not suffice | ARGUED |
+| CAP | (CAP) with (kappa, delta') gives lambda_s >= (1 - delta')/(1/g_0 + 1/kappa); RARE is a case | PROVED |
+| RARE-P | w(G < g_0) <= delta < 1/2 and the even Poincare constant lambda_e give lambda_s >= (1 - 2 delta)/(1/g_0 + 2/lambda_e) | PROVED implication |
+| LOC | (TYP-1) local and (LOC-CAP) give lambda_s >= L_1 (1 - delta_1)/(1/gamma_* + n_0/kappa_1) | PROVED implication |
+| ORBIT | gamma_k >= 4 e^(-Delta_X)/(pi^2 N) along a rotation orbit through J_k; flat SU(2) cut at the rotor scale | PROVED (flat case: up to the oscillation of Phi_env) |
+| Q | Q_k = N^(-2) tr G^2; gamma_k <= min(3, 1/(N Q_k)); (CUT-TYP) forces N Q_k <= 2/(c_0 (1 - delta)) on a set of weight c_0 (1 - delta)/6 | PROVED |
+| CUT-3D | Finite-range form of CUT on a slab of 2r + 1 layers; r = 0 is fatal | PROVED |
+| 6.2 | (LSI-weak) implies lambda_s >= alpha; U(1) fails it at the seed box for C > 1.7e-7; it is not group-blind there | PROVED (from G4 as checked in row 933) |
+| 6.4 | Overlap test: N E[q^2] = 4 to 7 at L_1 = 8 for N = 36 to 144, slow relaxation; growth with N at L_1 = 4 | GUIDE |
+| open | (TYP-1)_s; (OD); (EVEN-PI)_s; (LOC-CAP)_s; the averaged force-covariance bound of row 930 | OPEN |
+| | (CUT-TYP)_s as stated in row 930 | OPEN, and its rate ARGUED doubtful |
+
+**Answers to the row.**
+- STEP 1. The model is a planted non-abelian gauge glass at beta_sigma = beta = 2.3 to 2.6 with a non-local factor
+  from the two temporal plaquettes of each cut link. It is independent of the 2D chiral gap. The flat model is the
+  worst environment, at the rotor scale 1/N. No convergent expansion is known in this regime.
+- STEP 2. Three attacks, no closure. The exact U(1) steps are in the table of Section 5.4: abelian holonomy
+  (rotation orbit), overlap of order one (two wells), zero mode of the covariant Laplacian. Correction to the
+  row's picture: frustration closes the rotation path; an order-one cut gap is a paramagnet statement.
+- STEP 3. Smallest unproved inequality: (TYP-1), with (OD) as its necessary first part. Test that could refute
+  it: the overlap test, run here as GUIDE and not refuting at L_1 = 8. (LSI-weak) is not easier and not
+  group-blind; (EVEN-PI) replaces it for an order-one odd gap, (LOC-CAP) for order L_1.
+
+**Three attempts on (TYP-1) and why each stopped (rule 11).** (1) Rotation orbit: exact for U(1) and for flat
+environments, empty for typical ones (Delta of order beta N). (2) Second moments: the planted identity reduces the
+linear part to (OD), a decay statement for the doubled theory, and a bound on linear functions is not a Poincare
+constant. (3) Finite range and two scales: CUT-3D removes Phi_env, but the quenched mixing it needs is uniform
+in the boundary condition at beta above 1, which Lemma W excludes for single-site criteria.
+
+Not done: no proof of (OD); no bound on Phi_env beyond its form; the small-N character computation; the twisted
+sectors in the run; no reading of the Sussman-Alpoge account beyond the transfer frame (their text has no
+fixed-cutoff quenched statement that I could use; not searched line by line in this row).
+
+Self-check repairs applied (2026-11-14T07:40Z): (M4) is now claimed off the null set where a holonomy has trace
+zero; Remark 1 of 2.2 states the log-convexity per sign component.
+
+For the checker (row 937), in order: (M1)-(M2) (the four-term form and the cosh cosh factor); Lemma W; CAP and
+RARE-P (the split of h^2); LOC (the sum over k); ORBIT (the change of variable along the orbit); (Q2)-(Q3);
+CUT-3D (a) (the class count 2^(a-2)) and (c); the claim of 6.2 against row 930's "group-blind".
+
+RESULT: Row 936 (Claude Fable 5.2 max, checked by no one). (CUT-TYP) is NOT proved and stays OPEN. PROVED: the exact cut law (Proposition M: 2D O(4) at beta_sigma = beta with the SO(4) connection of the two transverse layers, times a non-local cosh-cosh factor from the temporal plaquettes, planted in its environment); Lemma W (no connection brings beta >= 1 inside a single-site or spectral criterion); Lemma CAP and Proposition RARE-P (a fixed fraction of good environments plus the even Poincare constant give lambda_s >= (1 - 2 delta)/(1/g_0 + 2/lambda_e), with no e^(-cN) rate and no log-Sobolev input); Corollary LOC (order L_1 from a local capacity inequality); Proposition ORBIT (gamma_k >= 4 e^(-Delta)/(pi^2 N) along the cut rotation, exact scale for U(1) and flat environments); Proposition Q (gamma_k <= min(3, 1/(N Q_k)) with Q_k the replica overlap second moment, a necessary condition for (CUT-TYP)); Lemma CUT-3D (finite-range form); and that (LSI-weak) implies lambda_s >= alpha, so it is not group-blind at the seed box. Verdicts: (CUT-TYP) is independent of the flat 2D O(4) / chiral gap and lies in no regime with a known convergent expansion; its rate e^(-cN) is ARGUED doubtful (flat tubes); frustration closes the rotation path, so the claim is a paramagnet statement. GUIDE (4D heat bath, small lattices, beta 2.3): N E[q^2] is 4 to 7 at L_1 = 8 for N = 36 to 144 with slow relaxation, and grows with N at L_1 = 4; so (Q3) is not refuted, and typical cut gaps are probably at most about 0.2. OPEN: (TYP-1) (single-cut typical gap), its necessary part (OD) (overlap decay), (EVEN-PI), (LOC-CAP), and the averaged force-covariance bound of row 930. No flux half, no mass gap.

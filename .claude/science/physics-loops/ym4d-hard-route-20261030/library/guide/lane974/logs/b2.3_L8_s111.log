@@ -1,0 +1,19 @@
+traj974 L=8 Nt=32 beta=2.3 ntherm=300 nmeas=2000 nsep=2 seed=111 ape=3,8 tag=b2.3_L8_s111
+[    0.0s] therm 0 plaq 0.41925
+[    2.2s] therm 100 plaq 0.60226
+[    4.5s] therm 200 plaq 0.59990
+[    6.7s rss 58MB] meas 0 plaq 0.60277
+[   10.5s rss 82MB] meas 50 plaq 0.60244
+[   14.3s rss 82MB] meas 100 plaq 0.60212
+[   18.0s rss 83MB] meas 150 plaq 0.60027
+[   21.8s rss 83MB] meas 200 plaq 0.60383
+[   25.6s rss 84MB] meas 250 plaq 0.60170
+[   29.4s rss 84MB] meas 300 plaq 0.60494
+[   33.2s rss 85MB] meas 350 plaq 0.60262
+[   37.0s rss 85MB] meas 400 plaq 0.60471
+[   40.7s rss 87MB] meas 450 plaq 0.60151
+[   44.5s rss 87MB] meas 500 plaq 0.60155
+[   48.3s rss 88MB] meas 550 plaq 0.60270
+[   52.0s rss 88MB] meas 600 plaq 0.59990
+[   55.8s rss 88MB] meas 650 plaq 0.60563
+[   59.6s rss 88MB] meas 700 plaq 0.60167

@@ -65,3 +65,117 @@ owner, nearest prior text `gap-skeleton-max.md` B11 (hypercontractivity named as
 5. Attack C: where the box size enters (two-scale or block form), if A and B leave room.
 6. The smallest unproved inequality and one solvable-model test.
 7. Result table and RESULT line.
+
+### Step 1: the objects in ambient form (PROVED, by hand; identities, no estimate)
+
+Credit. Transfer frame: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text (outline
+(GL8), as located by checks 927, 933, 938). The chain P, Proposition HC, Theorems V and E: row 931. (E-to-HC),
+Lemma SGC, Theorem HC1: row 940. What is new in this step: the chain is written without gauge projection, and the
+one-step law is read as an exponential family. Every formula below follows from that.
+
+**Notation.** B a periodic box of side at least 3, L = 3|B| links, M = (S^3)^L inside R^N, N = 4L. A link variable
+is a unit quaternion; <a, b> is the R^4 inner product, so (1/2) tr(a b^(-1)) = <a, b>. <x, w> = sum over links.
+V(x) = -beta sum over spatial plaquettes of (1/2) tr x_p. dx is the product Haar measure on M.
+
+**(A1) The chain without gauge projection.** T_0(x, w) := e^(-V(x)/2) e^(beta <x, w>) e^(-V(w)/2) (temporal links
+set to 1). T = T_0 Pi_G = Pi_G T_0 with Pi_G the gauge average. T_0 has a strictly positive kernel and commutes
+with gauge transformations, so its top eigenfunction is unique, hence gauge invariant, hence it is Omega, with the
+same lambda_0. On gauge-invariant functions T_0 = T and P_0 := Omega^(-1) (T_0/lambda_0) Omega = P. The kernel
+e^(beta <x, w>) is positive definite (power series), so T_0 >= 0.
+Put rho(dx) := e^(-V(x)) dx, phi_0 := e^(V/2) Omega, m := phi_0 rho. Then nu = phi_0^2 rho, and the one-step law is
+  pi_x(dw) = e^(beta <x, w>) m(dw) / (lambda_0 phi_0(x)).
+The two-slice law is J(dx, dw) = e^(beta <x, w>) m(dx) m(dw)/lambda_0, symmetric, with both marginals nu.
+
+**(A2) The convex function Lambda.** For theta in R^N put Lambda(theta) := log of the integral of e^(<theta, w>) m(dw),
+and pi_theta(dw) := e^(<theta, w> - Lambda(theta)) m(dw). Lambda is real-analytic and convex on R^N,
+grad Lambda(theta) = E_(pi_theta) w, Hess Lambda(theta) = Cov_(pi_theta)(w). The eigenvalue equation reads
+  lambda_0 phi_0(x) = e^(Lambda(beta x)),   so   log Omega(x) = -V(x)/2 + Lambda(beta x) - log lambda_0   on M,
+and pi_x = pi_(beta x). Lambda is invariant under gauge transformations (they act on R^N by orthogonal maps and
+preserve m).
+Reading. Row 931's first stop was "log Omega is not known to be local". The exact statement is: log Omega is a
+local term plus the restriction to M of a convex function of the ambient coordinates, whose Hessian is beta^2
+times the covariance of the next slice given the present one. The non-locality of log Omega is a conditional
+covariance of the local 4D measure.
+
+**(A3) Gradient of P (row 931 (5.1) in this form).** For bounded f and a tangent vector z at x:
+z . grad (P_0 f)(x) = beta Cov_(pi_x)(<z, w>, f). (The score of the family is beta w, and the mean term is free of w.)
+
+**(A4) Renyi divergence along chords.** For theta_0, theta_1 in R^N and lambda > 1, with theta_s := theta_0 + s(theta_1 - theta_0):
+  log E_(pi_(theta_0))[ (d pi_(theta_1)/d pi_(theta_0))^lambda ] = Lambda(theta_lambda) - lambda Lambda(theta_1) - (1 - lambda) Lambda(theta_0)
+  = integral over [0, lambda] of k(s) Var_(pi_(theta_s))(<theta_1 - theta_0, w>) ds,
+with k(s) = (lambda - 1) s on [0, 1], k(s) = lambda - s on [1, lambda]; k >= 0 and its integral is lambda(lambda - 1)/2.
+Proof. The first equality is the definition of Lambda. The second is Taylor's formula with integral remainder for
+s -> Lambda(theta_s) at 0, used at s = lambda and s = 1. QED
+Consequence. Put kbar := sup over theta in R^N of the largest eigenvalue of Cov_(pi_theta)(w). Since the chord
+|x - y| is at most the geodesic distance d(x, y) on M, row 940's bound (RD) holds for P_0 with sigma^2 = beta^2 kbar:
+  (COV)_kbar  implies  E_(pi_y)[(d pi_x/d pi_y)^lambda] <= exp(lambda(lambda - 1) beta^2 kbar d(x, y)^2/2).
+So in row 940's Theorem HC1, (SG-step) may be replaced by the covariance bound (COV). (Row 940's proof of
+Lemma RD is not needed for this family; its Lemma H, Lemma BGL and Theorem HC1 are used as READ, unchecked.)
+One Gaussian mode: kbar = 1/(beta e^omega), sigma^2 = beta e^(-omega), as in rows 931 and 940.
+
+**(A5) Elitzur at zero field.** Cov_m(w) = (1/4) Id_N exactly (m normalised).
+Proof. m is gauge invariant. For one link, a gauge transformation at one endpoint makes the law of w_l invariant
+under right multiplication, so it is Haar: mean 0 and second moment (1/4) Id_4. Two distinct links of a box of
+side at least 3 do not have the same endpoints; the central transformation -1 at a site that is an endpoint of
+one and not of the other changes the sign of E[w_l (x) w_l']. QED
+So kbar >= 1/4 for every group size and coupling, and sigma^2 >= beta^2/4 in (A4).
+
+**(A6) Curvature of the slice law.** nu = e^(-Phi) dx with Phi = V - 2 Lambda(beta .) + const. For x in M and a
+tangent vector v = (v_l):
+  (Ric + Hess Phi)(v, v) = 2|v|^2 + Hess_M V(v, v)
+       + 2 beta [ sum_l E_(pi_x)<w_l, x_l> |v_l|^2 - beta Var_(pi_x)(<v, w>) ],
+  Hess_M V(v, v) = beta sum_l ( sum over spatial p containing l of (1/2) tr x_p ) |v_l|^2 + (terms mixing two links).
+Proof. For F smooth on R^N, Hess_M(F|M)(v, v) = D^2F(v, v) - sum_l <grad_l F, x_l> |v_l|^2 (a geodesic of the unit
+sphere has acceleration -|v_l|^2 x_l). Apply it to F = 2 Lambda(beta .) with (A2), and to V, which is linear in
+each link variable, so that D^2 V has no diagonal block and <grad_l V, x_l> is the sum of the plaquette terms at
+l. Ric = 2 on the unit S^3. QED
+Check by hand: one link, V = 0. Then pi_x is von Mises-Fisher with parameter beta x, E<w, x> = A(beta) :=
+I_2(beta)/I_1(beta) and the tangential variance is A(beta)/beta, so the bracket vanishes and the tensor is 2 = Ric:
+nu is Haar. In one flat Gaussian mode the same formula reads Phi'' = V'' + 2 beta (1 - e^(-omega)) = 2 beta sinh(omega),
+with V'' = beta (2 cosh(omega) - 2): the vacuum precision of rows 931 and 940.
+
+**(A7) The mid-slice law.** e^(-beta|x - w|^2/2) is, up to a constant, the integral over y in R^N of
+e^(-beta|x - y|^2) e^(-beta|y - w|^2). So (x, y, w) with density m(dx) e^(-beta|x - y|^2) e^(-beta|y - w|^2) m(dw) dy
+(normalised) has (x, w) distributed by J; x and w are independent given y, each with law pi_(2 beta y); and y has
+a law eta on R^N with
+  Hess( -log (d eta/dy) )(y) = 4 beta ( Id - 2 beta Cov_(pi_(2 beta y))(w) ).
+With (B g)(y) := E[g(w) | y], B maps L^2(nu) to L^2(eta) and P_0 = B^* B.
+Proof. The density of eta is the square of psi(y) = integral of e^(-beta|y - w|^2) m(dw), and
+Hess log psi = -2 beta + 4 beta^2 Cov(w | y); on M, |w| is constant, so the law of w given y is pi_(2 beta y).
+B^* B g(x) = E[E[g(w) | y] | x] = E[g(w) | x] by the conditional independence. QED
+
+### Step 2: fact tests, before any proof (each is a necessary condition; none is evidence for the target)
+
+Quantifiers follow check 938. "Fails" means: the statement with the constants the seed needs is false in the rival.
+
+- **FT-U1 (U(1), the Gaussian model FP of row 929; PROVED given that model's mode list, READ).** nu is Gaussian,
+  mode by mode, with precision 2 beta sinh(omega_k). So the best constant in (LSI-vac) is alpha = 2 beta sinh(omega_min),
+  the best sigma^2 is beta e^(-omega_min), and row 940's alpha' is omega_min exactly (row 940 Step 2(e)). On the box
+  (24a)^3 the lowest mode has 2 sinh(omega/2) = 2 sin(pi/(24a)), so omega_min < 2 pi/(24a) < 0.27/a and
+  alpha' (a - 2) < 0.27 for every a, against 16 + 3 log a. FP fails by a factor above 59 at every size. In the
+  compact model the toron level gives E_1 <= 1/(2 beta b) (check 938), so alpha' (a - 2) <= 1/(48 beta) < 0.01.
+  In the form of Step 4 below: the ratio alpha_c/sigma^2 = e^(2 omega_min) tends to 1. The carrier is the soft mode.
+- **FT-FROZEN (Q_8, 2T).** No gradient form exists, so (LSI-vac) is not defined. (HC-vac) is defined and gives
+  E_1 >= alpha'. On each fixed box E_1 tends to 0 as beta grows (degenerate flat vectors; check 938, fixed box,
+  beta large enough). So no beta-uniform alpha' exists on a fixed box. This is not a statement at one finite beta
+  for all boxes (check 938).
+- **SMALL-BOX (conditional, as check 938 corrected it).** Premise, not proved here: for SU(2) Wilson on a fixed
+  lattice box, E_1 tends to 0 as beta grows. Given the premise, alpha' <= E_1 forbids every proof whose rate does
+  not depend on beta at fixed lattice size. So each input below must degrade as beta grows at fixed size. For
+  Theorem C of Step 4 this reads: alpha_c/sigma^2 tends to 1. GUIDE (recalled lattice values, no proof weight): at
+  beta 2.3 the box (a; (24a)^3) is deconfined for a <= 4, so a proof at beta 2.3 must fail for a <= 4, and the
+  true seed size is near a = 20.
+- **FT-CEIL.** The ceilings 1/3, 2/3, 0.775, 4 G_3 are caps on named sup-type criteria (check 938 Section 4).
+  A hypothesis of this file that is a supremum over a conditioning slice is of that kind and is marked "sup form"
+  where it occurs: (COV) in (A4), and (C1), (C2) in Step 4. No cited ceiling refutes them. None of them is proved.
+- **New method ceilings in the time direction (PROVED here; they cap methods, they refute no target).**
+  (i) Pointwise Bakry-Emery for nu fails for every beta > 1 on every box. Take x = 1 on all links except one
+  link l_0 with x = -1, and v supported on l_0. The four spatial plaquettes at l_0 equal -1, so by (A6)
+  (Ric + Hess Phi)(v, v) <= (2 - 4 beta + 2 beta)|v|^2 = (2 - 2 beta)|v|^2.
+  (ii) The mid-slice law eta is not log-concave for beta > 2: at y = 0, (A5) and (A7) give
+  Hess(-log eta) = 4 beta (1 - beta/2) Id. For U(1) the same computation gives 4 beta (1 - beta) Id.
+  (iii) A log-Sobolev constant above 2 beta for the slice given both time neighbours (the Otto-Reznikoff form in the
+  time direction, RECALLED) is impossible for beta >= 3/2: if the neighbours are antipodal on a link, the field on
+  it vanishes, and the linear test function gives a Poincare constant at most 3 there (variance 1/4, gradient 3/4).
+  All three caps lie below the window 2.3 to 2.6, and all three come from one link whose time neighbours do not
+  pin it. They are group-blind (U(1) has the same caps at 1/2, 1 and 1/2 times these values or lower).

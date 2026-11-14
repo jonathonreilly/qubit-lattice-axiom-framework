@@ -73,7 +73,7 @@ t = 0 and the weight e^(F(w_n)) on the last slice. Every factor except the last 
   half space. The Omega factor adds nothing else. log Omega is as non-local as the half-space measure is correlated:
   by row 941 (A2), the mixed second derivatives of F at w are beta^2 times the covariances of the next slice given w.
 - Omega can be removed from (SC) altogether. Let P_u^(n,free) be (2.2) with F(w_n) replaced by -V(w_n)/2 (row 944's
-  slab). Its w_1-marginal has density proportional to e^(beta<u,w_1> - V(w_1)/2) (T_0^(n-1) e^(-V/2))(w_1), and
+  slab). Its w_1-marginal has density proportional to e^(beta<u,w_1> - V(w_1)/2) (T_0^(n-1) 1)(w_1), and
   T_0^(n-1) h/lambda_0^(n-1) tends to <Omega, h> Omega uniformly as n grows (positive kernel on a finite box). So
     Hess_M F(u)(z, z) + beta sum_l E<u_l, w_l> |z_l|^2 = beta^2 lim_n Var_(P_u^(n,free))(<z, w_1>).                 (2.3)
   (SC) is a statement about the local half-space Wilson measure only.
@@ -318,8 +318,11 @@ Dirichlet datum u. (The divergence condition is horizontality of z = (xi_l u_l)_
 X_x u_l - u_l X_(x+l) for all X.) By Identity HV this is (SC-hor) of 2.5 with C_h <= beta^2 c_E + beta, and Theorem SC-hor then
 gives (SG-step) with sigma^2 <= beta^2 c_E + 2 beta. It is weaker than row 944's (SC) (all xi) and stronger than
 (SG-step). A sufficient form: |Cov_u(E_l^a, E_l'^b)| <= C e^(-m dist(l, l')) for all u (uniform decay on the boundary layer).
-Size: any box-free c_E serves the seed (it enters through alpha/sigma^2 and a may grow); GUIDE values at the
-slices tried are c_E about 0.3 to 0.45 (row 944 and Section 5.5 below).
+Size: any box-free c_E serves the seed (it enters through alpha/sigma^2 and a may grow). GUIDE values at beta 2.3:
+c_E = 0.30 at u = 1, 0.45 at u_pi (row 944, reproduced in 5.5), 2.5 at u_xy; about 8 at u_xy at beta 2.4.
+**After the runs (5.5-5.8): at beta 2.5 and 2.6 no box-free c_E exists at u_xy on boxes up to 20 (GUIDE). So (SC-hor)
+is a candidate only in the lower part of the window; the inequality that remains for the whole window is
+(SG-step) in the gauge-invariant form of 7.3, with first instance (SG2).**
 Fact tests of (SC-hor): photon c_E = e^(-omega)/beta <= 1/beta (the transverse field; PROVED); free links c_E = A(beta)/beta;
 Example DW has no gauge group (all vectors horizontal) and violates it; frozen groups not defined; SMALL-BOX no
 conflict (Section 4). It is group-blind in form; nothing in it is expected to fail for U(1) at weak coupling
@@ -327,7 +330,7 @@ except at real slices with a sign tie (Section 4).
 
 **6.2 The test.** The kill test of 5.2 at the layered pi-flux slice u_xy: a first-step electric susceptibility that
 grows with L at the mode (pi, pi, 0), (1, -1, 0) refutes (SC-hor) and (SC) for SU(2) at that coupling (GUIDE), and
-leaves only (SG-step) itself. Result: Section 5.5.
+leaves only (SG-step) itself. Results: Sections 5.5 to 5.8 (growth found at beta 2.5 and 2.6, none at 2.3 and 2.4).
 
 **6.3 Compact U(1) control of the same test (GUIDE; queued after the SU(2) batch).** Script
 `/tmp/gap-sc-950/scripts/slab_u1.py` (angles, von Mises heat bath, same slab, E_l = sin(theta_l(1) - u_l), Lambda(k) with no
@@ -509,3 +512,28 @@ and X_1, X_2 are almost vertical).
 Order of events: 8-sample smoke runs (outside the lock, a few seconds) were seen before these lines were written:
 U(1) at L = 4 gave 41.5 at every lag; SU(2) at u_xy decayed from 6.1 to about 0 by lag 32 on one colour. So the
 direction of the U(1) result was known; the SU(2) tilted-slice values and all L dependence were not.
+
+## 5.8 GUIDE results, batch 4: boxes up to 20 (run 09:18-09:43Z under the lock, 71 percent free)
+
+Log `/tmp/gap-sc-950/logs/batch4.log`. SU(2), u_xy, T = 6, cold start. Maxima at (pi, pi, 0), (1, -1, 0) in every run.
+(This section and 5.5-5.7 belong to Section 5; they were appended in the order of the runs.)
+
+| beta | L = 4 | L = 8 | L = 12 | L = 16 | L = 20 | lambda/L^3 | against the criteria of 5.7 |
+|---|---|---|---|---|---|---|---|
+| 2.5 | 3.56 | 16.42 | 42.73 | 81.79 | 144.0 | 0.056, 0.032, 0.025, 0.020, 0.018 | lambda(20)/lambda(12) = 3.37 >= 2.5: growth persists |
+| 2.45 | | 11.86 | 24.89 | 39.96 | | 0.023, 0.014, 0.0098 | lambda(16)/lambda(8) = 3.37, lambda(16)/lambda(12) = 1.61: inconclusive |
+
+Blocks: beta 2.5, L = 16: 76.9 to 87.0; L = 20: 99.7, 158.6, 156.3, 161.5 (the first quarter is still ordering after 1500
+thermalization sweeps; the last three quarters give 159). beta 2.45, L = 16: 29.2, 30.8, 47.2, 52.6 (slow, critical-like).
+The fit of 5.7 to L = 4, 8, 12 at beta 2.5 predicted 86 and 150; found 81.8 and 144 (159 without the first quarter).
+**Reading (GUIDE).** At beta 2.5 the growth continues to L = 20, two and a half times the recalled deconfinement
+extent, and it follows the long-range-order form m2 + c/L with m2 about 0.010. So the small-volume caveat of 5.7
+does not explain it on the boxes that can be run here. At beta 2.45 the susceptibility grows like L^1.6 to L^1.8,
+between saturation and volume growth: this is what a critical point of a three-dimensional O(3)-type order
+looks like (lambda proportional to L^(2 - eta)). So the ordering coupling of this slice is beta_c(u_xy) = 2.45 to 2.5.
+What stays unshown: boxes of the seed size (hundreds of lattice units), other slices, and any proof. A
+correlation length far above 20 at beta 2.5 is not excluded by a run.
+**Verdict on (SC) from 5.5-5.8 (GUIDE).** For SU(2) Wilson: at beta 2.3 and 2.4 (SC) and (SC-hor) survive the most
+dangerous slice found, with C_h at least about 12 and 45. At beta 2.5 and 2.6 they fail at that slice on every box
+from 4 to 20 (to 12 at beta 2.6), with lambda growing like the volume. The upper part of the window 2.3 to 2.6 is
+therefore closed to the route "(SC) gives (SG-step)" of row 944, unless the growth stops beyond L = 20.

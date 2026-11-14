@@ -416,11 +416,34 @@ no bound on the Hessian of the log ground state.
 Repo credit: the chain, (SG-step) and Theorem V/E are row 931 (Claude Fable 5.2); (E-to-HC), Lemma RD and Corollary
 HC2 are row 940 (Claude Opus 5.5), checked by check 942 (Codex gpt-6-astra).
 
-### 6.1 GUIDE results (PROVISIONAL, batch running; updated when it ends)
+### 6.1 GUIDE results, central slices (final; run 07:17-08:04Z under the numeric lock at 69 percent memory free)
 
-Done so far (beta 2.3, T 6, cold, 2000 + 20000 sweeps): u_pi, L = 4: lambda = 0.4503 at k = (pi, pi, pi), v_1 = 0.2253;
-L = 6: lambda = 0.4503 at k = (pi, pi, pi), v_1 = 0.2253. Control u = 1, L = 4: lambda = 0.2991, v_1 = 0.1598.
-No growth from L = 4 to 6 at u_pi. Larger L, hot starts, T and beta checks pending.
+Log `/tmp/gap-sgstep-944/slab_E.log` (not committed). Each run: 2000 thermalization + 20000 measured sweeps,
+one thread, nice; wall time 38-406 s per run; peak memory small (arrays below 10 MB). The vMF sampler was checked first
+against the exact mean I_2(kappa)/I_1(kappa) at kappa = 0.5, 2.3, 6, 15 (agreement to 1e-3 with 2e5 draws).
+
+| slice | beta | T | start | L = 4 | L = 6 | L = 8 | L = 10 | L = 12 | k of the max | v_1 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| u_pi | 2.3 | 6 | cold | 0.4503 | 0.4503 | 0.4497 | 0.4453 | 0.4457 | (pi, pi, pi) | 0.2253 |
+| u = 1 | 2.3 | 6 | cold | 0.2991 | 0.2992 | 0.3025 | 0.3011 | 0.3014 | varies (flat spectrum top) | 0.1600 |
+| u_pi | 2.3 | 6 | hot | - | 0.4544 | - | 0.4489 | - | (pi, pi, pi) | 0.2253 |
+| u_pi | 2.6 | 6 | cold | 0.6069 | - | 0.5320 | - | 0.5496 | (pi, pi, pi) | 0.2233 |
+| u_pi, L = 6 | 2.3 | 4 / 6 / 8 | cold | 0.4474 / 0.4503 / 0.4393 | | | | | (pi, pi, pi) | 0.2253 |
+
+(Entries are lambda(L), the top eigenvalue of the one-colour first-step electric covariance.)
+Against the criteria fixed before the run: G = lambda(10)/lambda(4) = 0.989 at u_pi (beta 2.3); 0.91 for L = 12 against 4
+at beta 2.6. **Verdict: no growth seen at u_pi** ((SC) survives this slice; this establishes nothing). Controls: u = 1
+gives G = 1.007 (passes); hot and cold agree within 1 percent (L = 6, 10); T = 4, 6, 8 agree within 2.5 percent (the
+truncation of Omega does not matter at this precision). The maximum sits at the staggered momentum (pi, pi, pi), at
+twice the per-link variance: a short-range antiferro-like pattern, not an order.
+Reading (GUIDE). At the most frustrated central slice the first-step electric field has a box-free susceptibility,
+so by (2.2) lambda_max(Hess F(u_pi)) = beta^2 lambda - beta c, c := E<u_l, w'_l> (the same for all links by symmetry; here
+|c| <= (1 - 3 v_1)^(1/2) = 0.57), lies between about 1.1 and 3.7 at beta 2.3. The colour-ordering mechanism that would kill
+(SC) at central slices does not occur on boxes up to 12^3 at beta 2.3 and 2.6. What the run cannot show: anything
+about non-central slices (Section 6.2), the supremum over all slices, boxes of side 24a, or (SG-step) itself (zero at
+these slices by Lemma CEN).
+
+### 6.2 GUIDE results, Haar-random slice (running; split-sample estimator)
 
 ## 8. Result (PROVISIONAL until Section 6.1 is final)
 

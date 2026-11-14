@@ -7,8 +7,9 @@ Driver family (second order, B = d_t beta):
 mu, nu: label-frame strain rates (a = 0 is the strain/Gamma family of min-strain C1-C2, causal-trigger B4-B6);
 a: the gradient of the normal observers' expansion rate tr K.  The WAVE shift is nu = -mu/2, a = mu, i.e.
    d_t^2 beta_i = mu [ Lap beta_i - 2 d_j (K_ij - delta_ij K) ]      (the source is the normal-frame rate)
-Self-contained."""
-import time, numpy as np, sympy as sp
+Self-contained.  2026-11-14: A6 corrected (mu = 1/3 is a repeated-root case with a Jordan block); lines starting SUPPLIED
+are printed, not counted; the runner exits nonzero if any counted check fails."""
+import sys, time, numpy as np, sympy as sp
 AUDIT_TIMEOUT_SEC = 90
 T0 = time.time(); NP = NF = 0
 def check(name, ok, detail=''):
@@ -56,14 +57,41 @@ pw = sp.factor((Msc(mu, -mu/2, mu, 0) - I*w*sp.eye(6)).det())
 tw = (w**2 - k**2)*(3*w**2 - k**2)*(w**2 - mu*k**2)/3; okf = sp.simplify(pw - tw) == 0 or sp.simplify(pw + tw) == 0
 check('A5 [T] wave shift spectrum: scalar (w^2-k^2)(3w^2-k^2)(w^2-mu k^2)/3, vector w^2(w^2-mu k^2): speeds 1, 1/sqrt3 (the tied '
       'lapse) and sqrt(mu); causal iff mu <= 1; no zero root in the scalar sector at k != 0 (no slice-bend memory)', okf, f'{pw}')
+# A6 (corrected 2026-11-14, hold finding 6): the scalar roots are w^2 = k^2, k^2/3, mu k^2, so they are all simple at k != 0 iff
+# mu > 0 and mu not in {1/3, 1}; simple roots make the matrix diagonalisable. mu = 1/3 (shift speed = tied-lapse speed) and mu = 1
+# are repeated-root cases; each is tested for a Jordan block, on the full system and on the constraint surface hp = Kp = 0.
+def jordan_info(muv, kv):
+    Mx = Msc(muv, -muv/2, muv, 0).subs(k, kv); out = []
+    for ev, m in Mx.eigenvals().items():
+        out.append((sp.nsimplify(ev), m, 6 - (Mx - ev*sp.eye(6)).rank()))
+    return Mx, out
+def restricted_jordan(Mx):
+    inv = all(Mx[r, c] == 0 for r in (0, 2) for c in (1, 3, 4, 5))       # hp = Kp = 0 is invariant
+    Mr = Mx.extract([1, 3, 4, 5], [1, 3, 4, 5])
+    return inv, [(sp.nsimplify(ev), m, 4 - (Mr - ev*sp.eye(4)).rank()) for ev, m in Mr.eigenvals().items()]
+musym = sp.Symbol('mu', positive=True)
+roots2 = [k**2, k**2/3, musym*k**2]
+simple_iff = sp.factor(sp.prod([roots2[i] - roots2[j] for i in range(3) for j in range(i + 1, 3)]) / k**6)
+gen = {mv: all(gm == m for _, m, gm in jordan_info(mv, kv)[1]) for mv in (sp.Rational(1, 2), sp.Rational(3, 4)) for kv in (1, 2)}
+deg13 = {kv: jordan_info(sp.Rational(1, 3), kv)[1] for kv in (1, 2)}
+jb13 = all(any(m == 2 and gm == 1 for _, m, gm in deg13[kv]) for kv in (1, 2))
+inv13, res13 = restricted_jordan(jordan_info(sp.Rational(1, 3), 1)[0]); jb13c = any(m == 2 and gm == 1 for _, m, gm in res13)
 M1 = Msc(1, -sp.Rational(1,2), 1, 0).subs(k, 1); r1 = (M1 - I*sp.eye(6)).rank()
-Mh = Msc(sp.Rational(3,4), -sp.Rational(3,8), sp.Rational(3,4), 0).subs(k, 1)
-diag = all((Mh - ev*sp.eye(6)).rank() == 6 - m for ev, m in Mh.eigenvals().items())
+inv1, res1 = restricted_jordan(M1); diag1c = all(m == gm for _, m, gm in res1)
 Vz = Mve(sp.Rational(3,4), 0).subs(k, 1); zr = 4 - Vz.rank()
-check('A6 [T] mu < 1: every root simple in the scalar sector (strongly hyperbolic); mu = 1 puts the shift on the speed of the '
-      '(hp, Kp) pair, which is the constraint subsystem (Kp = -M_z/ik, hp = Hamiltonian), giving a Jordan block that only '
-      'constraint violation excites; the vector zero root has 2 eigenvectors (frozen relabelling, stationary rotation), no Jordan',
-      diag and r1 == 5 and zr == 2, f'mu = 3/4 diagonalisable {diag}; mu = 1 rank(M - i) = {r1} at multiplicity 2; vector kernel dim {zr}')
+check('A6 [T] (corrected) scalar roots w^2 = k^2, k^2/3, mu k^2 are all simple at k != 0 iff mu not in {1/3, 1}, so the scalar sector '
+      'is diagonalisable there (checked at mu = 1/2, 3/4, k = 1, 2); mu = 1 puts the shift on the (hp, Kp) constraint pair, a Jordan '
+      'block absent on the constraint surface hp = Kp = 0; the vector zero root has 2 eigenvectors, no Jordan block',
+      sp.simplify(simple_iff - sp.factor((1 - sp.Rational(1, 3)) * (sp.Rational(1, 3) - musym) * (1 - musym))) == 0 and all(gen.values())
+      and r1 == 5 and inv1 and diag1c and zr == 2,
+      f'product of root differences / k^6 = {simple_iff}; diagonalisable at mu 1/2, 3/4: {all(gen.values())}; mu = 1: rank(M - i) = {r1}, '
+      f'diagonalisable on hp = Kp = 0: {diag1c}; vector kernel dim {zr}')
+check('A6b [T] negative result (held "every scalar root simple for mu < 1" rejected): at mu = 1/3 the roots +-k/sqrt3 are double, '
+      'with geometric multiplicity 1 (a Jordan block) at k = 1 and 2, and the block persists on the constraint surface hp = Kp = 0, '
+      'so the scalar gauge sector is only weakly hyperbolic at mu = 1/3',
+      jb13 and inv13 and jb13c,
+      'mu = 1/3, k = 1: ' + ', '.join(f'{e} (alg {m}, geo {g})' for e, m, g in deg13[1]) + '; on hp = Kp = 0: '
+      + ', '.join(f'{e} (alg {m}, geo {g})' for e, m, g in res13))
 t = sp.symbols('t'); Kh = sp.diag(*[sp.Function(f'k{i}')(t) for i in range(3)])   # homogeneous, possibly anisotropic K(t)
 srcB = [sp.simplify(-2*sum(sp.diff(Kh[i,j] - (Kh.trace() if i == j else 0), X[j]) for j in range(3))) for i in range(3)]
 check('A7 [T] cosmology: FRW (K = -H delta) and Bianchi I (uniform anisotropic K) give d_j(K_ij - delta K) = 0 and Lap beta = 0 '
@@ -194,10 +222,8 @@ U_ns, v_ns = 0.2, 0.3; tilt = 4*U_ns*v_ns
 check('C2 [E] neutron stars: static star tilt exactly 0 (A4, B5; also for the magnetar anisotropic stress of causal-trigger C3); '
       'formation leaves only outgoing gauge waves, peak tilt ~ 4 (GM/rc^2)(v/c) for infall speed v (retarded potential of J), '
       'below c (linear, indicative)', tilt < 1, f'U {U_ns}, v {v_ns}c: tilt {tilt:.2f} c; old drivers: null in hours-days')
-eta_need = 0.0
-check('C3 [E] one law serves neutron stars, spinning black holes and cosmology: no damping (eta = 0), and mu only sets the '
-      'gauge-wave speed sqrt(mu) c, irrelevant to every stationary state; causal-trigger C4\'s window (eta > 1.7e4/s vs < 0.09/s) '
-      'is gone because no stationary state needs eta', eta_need == 0.0, 'eta window: none needed')
+print('SUPPLIED: C3 the law takes eta = 0 (a choice, motivated by B4), and mu enters the stationary states tested here only through '
+      'the gauge-wave speed sqrt(mu) c; not a computed check, not counted')
 Om, d, vc = 0.3, 1.0, 1e-3; ratio = (10/4000.0)**2
 bc = 6*Om*ratio*d*vc
 check('C4 [E] cosmology: background beta = 0 exactly (A7); a perturbation\'s stationary shift is ~ 6 Omega_m (aH/ck)^2 delta v/c, '
@@ -212,3 +238,4 @@ print('  Sgr A* spin (indicative), cosmological delta, v. not built: register-le
 print('  completion, strong-field (horizon) dynamics, 3D radiation of the gauge waves (only 1D plane-symmetric in B6).')
 print(f'elapsed {time.time()-T0:.1f} s')
 print(f'TOTAL: PASS={NP} FAIL={NF}')
+sys.exit(0 if NF == 0 else 1)

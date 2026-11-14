@@ -2,9 +2,11 @@ AUDIT_INPUT_PATHS = ('docs/A_SITE_TICK_COUNT_AND_A_SITE_DENSITY_ANSWER_THE_HINGE
 #!/usr/bin/env python3
 """Tick-skip gamma: static response of a count geometry with site lapse N and
 site-density factor Omega under the hinge-sum (Regge) response.
-Self-contained; seeded; numpy + sympy only."""
+Self-contained; seeded; numpy + sympy only.
+2026-11-14 (PR 10128 hold finding 10): A4, A5 and E are now computed (they were literal True); the tied-tick light line is an
+uncounted IDENTITY line; the runner exits nonzero if any counted check fails."""
 AUDIT_TIMEOUT_SEC = 120
-import itertools, time
+import sys, itertools, time
 import numpy as np
 import sympy as sp
 import scipy.sparse as sps
@@ -48,12 +50,27 @@ elP = sp.simplify(EL[0].lhs); elS = sp.simplify(EL[1].lhs)
 check("A2 lapse equation  dS/dPhi  = -4 lap psi (Hamiltonian constraint)", sp.simplify(elP + 4*lap) == 0)
 check("A3 density equation dS/dpsi = -4 lap(Phi + psi): no static source -> psi = -Phi",
       sp.simplify(elS + 4*lapP + 4*lap) == 0)
-# with S = (1/16piG) int dens2 - int rho(1+Phi): -4 lap psi/(16 pi G) = rho -> lap psi = -4 pi G rho
-check("A4 point source: psi = +GM/r, Phi = -GM/r  => gamma = 1 (attractive)", True,
-      "lap(1/r) = -4 pi delta")
-# tied tick Phi = psi: one field, action 6|grad psi|^2/(16piG) - rho psi
-check("A5 tied tick (N = Omega): 12 lap psi/(16piG) = -rho -> Phi = +GM/(3r), repulsive, gamma = -1",
-      True, "conformal-mode sign")
+# A4 (computed 2026-11-14): S = (1/16 pi G) int dens2 - int rho (1 + Phi). The lapse equation is (cP/16 pi G) lap psi = rho with cP
+# read from A2; Gauss's law on a ball of mass M gives psi; the density equation (cS/16 pi G) lap(Phi + psi) = 0 has no source, so its
+# regular decaying radial solution A/r + B needs zero flux (A = 0) and B = 0. Control: a record phase that also counts sites,
+# -rho (Phi + psi), sources the density equation and changes gamma.
+rr_, Gs, Ms = sp.symbols('r G M', positive=True); fpsi = sp.Function('f')
+cP = sp.simplify(elP / lap); cS = sp.simplify(elS / (lapP + lap))
+def radial(coef, mass):   # (coef/(16 pi G)) * flux(grad u) = mass, u -> 0 at infinity
+    u = sp.dsolve(sp.Eq(coef / (16 * sp.pi * Gs) * 4 * sp.pi * rr_**2 * fpsi(rr_).diff(rr_), mass), fpsi(rr_)).rhs
+    return sp.simplify(u - sp.limit(u, rr_, sp.oo))
+psi_s = radial(cP, Ms); sum_s = radial(cS, 0); Phi_s = sp.simplify(sum_s - psi_s); gam_s = sp.simplify(psi_s / (-Phi_s))
+sum_c = radial(cS, Ms); Phi_c = sp.simplify(sum_c - psi_s)          # control coupling -rho (Phi + psi)
+check("A4 point source (computed): psi = +GM/r, Phi = -GM/r, gamma = 1, attractive; control: a site-counting record coupling changes it",
+      sp.simplify(psi_s - Gs * Ms / rr_) == 0 and sp.simplify(Phi_s + Gs * Ms / rr_) == 0 and gam_s == 1 and Phi_c != Phi_s,
+      f"c_P = {cP}, c_S = {cS}; psi = {psi_s}, Phi = {Phi_s}, gamma = {gam_s}; with -rho(Phi + psi): Phi = {Phi_c}")
+# A5 (computed 2026-11-14): tied tick Phi = psi, one field; its Euler-Lagrange coefficient and the point-source solution
+dens2T = dens2.subs(Phi, psi).doit()
+elT = sp.simplify(euler_equations(dens2T, [psi], X)[0].lhs); cT = sp.simplify(elT / lap)
+psi_T = radial(cT, Ms); gam_T = sp.simplify(psi_T / (-psi_T))
+check("A5 tied tick (N = Omega), computed: Euler-Lagrange coefficient -12, so Phi = psi = +GM/(3r) > 0: repulsive at one third strength, gamma = -1",
+      cT == -12 and sp.simplify(psi_T - Gs * Ms / (3 * rr_)) == 0 and gam_T == -1,
+      f"E_psi = {cT} lap psi; Phi = psi = {psi_T}; psi/(-Phi) = {gam_T}")
 
 # ---------- B. discrete static Regge on a Kuhn-triangulated cube grid ----------
 n = 14; c0 = n//2
@@ -193,13 +210,21 @@ for b in (2, 3):
     dnew = sum((-field(ph, i, c0+b+1, c0) + field(ph, i, c0+b-1, c0))/2 for i in xs)
     check(f"D b={b}: Shapiro delay / Newtonian part = 1+gamma = 2", abs(delay/newt - 2) < 1e-3, f"{delay/newt:.5f}")
     check(f"D b={b}: deflection / Newtonian part = 2", abs(defl/dnew - 2) < 1e-3, f"{defl/dnew:.5f}")
-# tied tick light: Omega/N = 1 exactly -> no delay
-check("D tied tick: Omega/N = 1, zero delay and deflection", True, "gamma = -1 exact")
+# tied tick light: Omega/N = 1 by definition of the tied tick (Phi = psi) -> no delay; an identity, not a check
+delay_t = sum((1 + field(pt, i, c0 + 2, c0)) / (1 + field(pt, i, c0 + 2, c0)) - 1 for i in range(2, n - 2))
+print(f"IDENTITY (not counted): tied tick, Omega/N = 1 by definition, so the one-bond-per-taken-tick delay is {delay_t:.0e}; zero bending")
 
 # ---------- E. coupling bookkeeping (no fit) ----------
 eta = 0.0393   # SUPPLIED: entropy per cut bond from agents/random-connectivity B6 (Wilson-Dirac sea)
 GJ = 1/(4*eta); GR = 1/(8*np.pi)
 print(f"INFO G in a^2: hinge coefficient one -> 1/(8pi) = {GR:.4f}; count-Jacobson 1/(4 eta) = {GJ:.3f}; ratio {GJ/GR:.1f}")
-check("E gamma independent of the hinge coefficient (G drops out of psi/Phi)", True, "both terms scale 1/G")
+# E (computed 2026-11-14): rescale the hinge coefficient (both blocks) and re-solve: gamma is unchanged, Phi scales as 1/c
+gE = []
+for cfac in (0.5, 3.0):
+    solE = np.linalg.solve(cfac * Mblk, np.concatenate([src, np.zeros(NF)])); phE, psE = solE[:NF], solE[NF:]
+    gE.append((cfac, np.abs(psE[sh] / (-phE[sh]) - 1).max(), np.abs(phE[sh] * cfac / ph[sh] - 1).max()))
+check("E gamma independent of the hinge coefficient: rescaling it by c leaves psi/(-Phi) = 1 and scales Phi by 1/c",
+      all(a < 1e-8 and b < 1e-8 for _, a, b in gE), "; ".join(f"c = {c_}: |gamma - 1| {a:.0e}, |c Phi/Phi_1 - 1| {b:.0e}" for c_, a, b in gE))
 print(f"elapsed {time.time()-T0:.1f}s")
 print(f"TOTAL: PASS={P} FAIL={F}")
+sys.exit(0 if F == 0 else 1)

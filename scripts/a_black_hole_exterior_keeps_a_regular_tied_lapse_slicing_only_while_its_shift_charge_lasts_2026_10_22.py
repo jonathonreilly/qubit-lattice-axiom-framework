@@ -1,7 +1,7 @@
 AUDIT_INPUT_PATHS = ('docs/A_BLACK_HOLE_EXTERIOR_KEEPS_A_REGULAR_TIED_LAPSE_SLICING_ONLY_WHILE_ITS_SHIFT_CHARGE_LASTS_BOUNDED_THEOREM_NOTE_2026-10-22.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
 # post-crunch: the long-time black-hole exterior under the tied lapse + wave shift (G = c = M = 1)
 # Self-contained. Edges in far-edge units; labels r (site labels), areal radius R; f = 1 - 2/R.
-import math, time, signal
+import math, sys, time, signal   # 2026-11-14: exits nonzero if any check fails
 import numpy as np, sympy as sp
 from scipy.optimize import fsolve
 from scipy.integrate import solve_ivp
@@ -200,3 +200,4 @@ print('supplied: continuum ADM as CL-3 limit, spherical symmetry, the on-shell (
 print('  flat-label Laplacian, Q at trapping from wave-shift-collapse; excision boundary conditions; KO dissipation.')
 print('elapsed %.1f s' % (time.time() - T0))
 print('TOTAL: PASS=%d FAIL=%d' % tuple(NP))
+sys.exit(0 if NP[1] == 0 else 1)

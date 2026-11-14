@@ -8,9 +8,11 @@ plus even-sum face diagonals, five tetrahedra per cube, alternating; 13 edges pe
 Freudenthal (Kuhn) carrier as a contrast.  Transfer roots z = e^{-E} of the singular matrix polynomial
 are found with a random rank-completing perturbation (true roots are perturbation-independent).
 Continuum part: sympy expansion of sqrt(-g) R (SUPPLIED Regge limit) for the coefficients.
-Self-contained; seeded; numpy + scipy + sympy only."""
+Self-contained; seeded; numpy + scipy + sympy only.
+2026-11-14 (PR 10128 hold finding 8): the lattice census is a sampled numerical diagnostic (finite momenta, two random rank
+completions, finite tolerances), not a proof of the full spectrum; labels say so. Exits nonzero if any check fails."""
 AUDIT_TIMEOUT_SEC = 120
-import itertools, time
+import sys, itertools, time
 import numpy as np
 import sympy as sp
 from scipy.linalg import eig
@@ -220,7 +222,7 @@ F6 = Free(five_tets(), 2, 1.0); FK = Free(kuhn_tets(), 1, 1.0)
 cnt = {kd: int((F6.kinds == kd).sum())//8 for kd in 'stm'}
 kr = [rng.uniform(-np.pi, np.pi, 4) for _ in range(2)]
 nul6 = [srel(F6.Q(k)) for k in kr]; gres = max(np.linalg.norm(F6.Q(k) @ F6.G(k))/np.linalg.norm(F6.Q(k)) for k in kr)
-check("B1 campaign carrier, every edge responding: 13 edges/site; generic null space = vertex displacements only (no zero-action branch)",
+check("B1 campaign carrier, every edge responding: 13 edges/site; at two random momenta the null space is vertex displacements only (no zero-action branch there)",
       cnt == {'s': 6, 't': 1, 'm': 6} and nul6 == [32, 32] and gres < 1e-9, f"per site {cnt}; nullity {nul6} = 4 x 8 sites; |QG|/|Q| {gres:.0e}")
 # Kuhn contrast: the extra zero-action direction and its cell-averaged metric
 nulK = srel(FK.Q(kr[0]))
@@ -246,7 +248,7 @@ def kuhn_v0(kk):
         for s_, (i, j) in enumerate(SYM): Gg[s_, mm] = 1j*(k[i]*(mm == j) + k[j]*(mm == i))
     return np.linalg.norm(gav - Gg @ np.linalg.lstsq(Gg, gav, rcond=None)[0]), np.linalg.norm(v0[FK.kinds != 's'])
 kv = [kuhn_v0(q) for q in (0.05, 0.025)]
-check("B2 contrast, Freudenthal (Kuhn) carrier: nullity 5 = 4 displacements + 1 zero-action non-metric branch at every k",
+check("B2 contrast, Freudenthal (Kuhn) carrier: nullity 5 = 4 displacements + 1 zero-action non-metric branch at the sampled k",
       nulK == 5 and min(q[0] for q in kv) > 0.3,
       f"its cell-averaged metric keeps a non-gauge part {kv[0][0]:.2f}, {kv[1][0]:.2f} at |k| = .05, .025 (no decay); weight on tick/mixed edges {kv[0][1]:.2f}")
 mI = np.where(F6.kinds != 's')[0]; hI = np.where(F6.kinds == 's')[0]
@@ -258,7 +260,7 @@ kt_ = 2*np.pi*np.arange(4)/4; Gs = [F6.G(np.r_[ks0, q])[:, tcols] for q in kt_]
 GA = sum(g*np.exp(-0j*q) for g, q in zip(Gs, kt_))/4; GB = sum(g*np.exp(-1j*q) for g, q in zip(Gs, kt_))/4
 Qmm = C0[1][np.ix_(mI, mI)]; w, U = np.linalg.eigh(Qmm); Nmm = U[:, np.abs(w) < 1e-8*np.abs(w).max()]
 TG = np.c_[GA[mI], GB[mI]]; inspan = np.linalg.norm(TG - Nmm @ (Nmm.conj().T @ TG))/np.linalg.norm(TG)
-check("B3 tick fractions and pair offsets are constraints (derived): their block has no tick-to-tick coupling; its null space = time relabelling",
+check("B3 tick fractions and pair offsets are constraints: their block has no tick-to-tick coupling (slab combinatorics); at the sampled k its null space = time relabelling",
       mm_t < 1e-12 and np.abs(C0[2][np.ix_(hI, mI)]).max() < 1e-12 and Nmm.shape[1] == 16 and np.linalg.matrix_rank(TG, 1e-6) == 16 and inspan < 1e-6,
       f"|Q_mm z^+-1| {mm_t:.0e}; null(Q_mm) dim {Nmm.shape[1]} = 2 x 8 sites, spanned by the time-displacement parts to {inspan:.0e}; Fourier leak {leak:.0e}")
 # root census at |k| = 0.02: every finite root is the tensor branch at one of the 8 folded momenta
@@ -269,7 +271,7 @@ for dd in ((0, 0, 1), (1, 1, 1), (0.3, 0.5, 0.8)):
     Er = np.sort(E.real); ok = len(E) == 32 and np.abs(E.imag).max() < 1e-6 and np.abs(Er - pred).max() < 1e-6
     light = Er[np.abs(Er) < 0.1]
     cens.append((ok, len(E), len(light), np.abs(np.abs(light)/0.02 - 1).max(), np.abs(Er - pred).max()))
-check("B4 transfer census, all edges responding: 32 finite roots/cell = 2 polarisations x (+-E) x 8 folded momenta, nothing else",
+check("B4 sampled transfer census (|k| = 0.02, three directions; numerical roots common to two random rank completions): 32 finite roots/cell = 2 polarisations x (+-E) x 8 folded momenta, no other root found",
       all(c[0] for c in cens), "; ".join(f"{c[1]} roots, light {c[2]} at |E/k-1| <= {c[3]:.1e}, max dev from tensor branch {c[4]:.0e}" for c in cens))
 print("  INFO fixed lapse + zero shift on the same carrier (edge-modes E3): 4 light roots plus 48-50 zero-frequency roots; responding N and offsets remove them")
 # polarisations at the light root
@@ -298,7 +300,7 @@ for Fc, tau in ((F6, 1.0), (F7, 0.7)):
             ks = kx*np.array(dd)/np.linalg.norm(dd); C, _ = fourier(Fc.Q, ks); E, _ = true_roots(C, 32)
             Er = E.real[(np.abs(E.imag) < 1e-6) & (E.real > 0)]; pr = disp(ks, tau)
             near = np.sort(np.abs(Er - pr))[:2]; dev = max(dev, near.max()); ndeg += int(near.max() < 1e-6)
-check("B6 tensor branch (both polarisations, degenerate) is exactly sinh(E/2) = tau [sum_i sin^2(k_i/2)]^(1/2) out to |k| = 1.5",
+check("B6 at 18 sampled (k, direction, tau) cases out to |k| = 1.5 the tensor branch (both polarisations) matches sinh(E/2) = tau [sum_i sin^2(k_i/2)]^(1/2) to 1e-6 (other branches not censused there)",
       dev < 1e-6 and ndeg == 18, f"18 (k, direction, tau) cases, max |E - formula| {dev:.0e}; tau = tick edge / spatial edge (E = tau|k| at small k: the edge cone)")
 # single normalisation: effective action on smooth metrics (non-metric modes respond) vs Gamma-Gamma form
 def L2gg(p):
@@ -345,7 +347,8 @@ check("C2 GW170817 (-3e-15 < dc < 7e-16): lattice term at 100 Hz <= 1e-76 for bl
 ht, hs = 0.9983, 0.0016
 check("C3 Hulse-Taylor: Pbdot(rule)/Pbdot(GR) = G_T/G_N = 1 vs 0.9983 +- 0.0016", abs(1 - ht)/hs < 2,
       f"{abs(1-ht)/hs:.2f} sigma; a separate tensor coupling (e.g. 0.81, unsubtracted sea) is off by {abs(0.81-ht)/hs:.0f} sigma")
-check("C4 no scalar, vector or breathing mode at any k (B4/B5/A2): no dipole or breathing radiation",
+check("C4 no scalar, vector or breathing root found at the sampled momenta (B4 at |k| = 0.02, B5 light-root nullity at |k| = 0.05, 0.025) and none in the supplied continuum sector (A2); every-k absence is not shown",
       all(c[0] for c in cens) and all(p[0] == 34 for p in pol))
 print(f"elapsed {time.time()-T0:.1f}s")
 print(f"TOTAL: PASS={P} FAIL={F}")
+sys.exit(0 if F == 0 else 1)

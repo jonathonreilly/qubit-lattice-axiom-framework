@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/edge_register_set_census_cube_edges_alone_give_no_hinge_sum_and_six_edges_per_site_give_two_tensor_polarisations_on_the_edge_cone_2026_10_22.py
-runner_sha256: ba94ebff54b4cddc17d25118e50a96f32b3e4cf3218e18b9824619f203802e85
-input_fingerprint_sha256: cb0bcc0e00b11ca80cd116b666498b4b6780fa237c097e32b4ba36a6190db233
+runner_sha256: f745a0dd796c49e84686e350c92b7db02bdf3b73d8e8afc4f94817d687314f4e
+input_fingerprint_sha256: 1b3313f3b751d19b10338181281911e5b115f6d2f218d5ca5d7443a125124a89
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.03
+elapsed_sec: 2.01
 status: ok
 ----- stdout -----
 == A. CL-1 edge registers as written (edges of the tilings' cubes)
@@ -14,7 +14,7 @@ status: ok
 [PASS] B1 reproduces main (3D Kuhn) | k=0: 6 metric zeros + 1 massive breathing [-24.]; 3 vertex-displacement zeros at random k, |Q G| 1.4e-11
 == C. 4D Freudenthal (15 classes; main's 3+1 tick note), every edge a register
 [PASS] C1 reproduces main at k=0 | 11 zeros (10 metric + 1) and massive [-48. -16. -16. -16.] = main's -48, -16 x3
-[PASS] C2 gauge + one zero-action branch at every k | random k: 5 exact zeros = 4 displacements (|QG|/|Q| 9e-12) + 1 non-metric flat branch (distance from metric+gauge span 0.86; weight on spatial edges 0.30, rest on tick/mixed edges)
+[PASS] C2 gauge + one zero-action branch at one random k (not shown at every k) | random k: 5 exact zeros = 4 displacements (|QG|/|Q| 9e-12) + 1 non-metric flat branch (distance from metric+gauge span 0.86; weight on spatial edges 0.30, rest on tick/mixed edges)
 [PASS] C3 small-k census | 5 zero, 6 ~k^2 (ratio over k-halving 4.000: 2 TT + 4 lapse/shift/trace channels), 4 gapped >= 16.0 (cell scale)
 == D. CL-1 register sets inside the hinge sum (4D, fixed lapse, zero shift)
 [PASS] D1 axis registers only, other lengths frozen: no massless mode | k=0 eigenvalues [-14.  -2.  -2.]: all three are non-metric strains gapped at the cell scale
@@ -26,8 +26,8 @@ status: ok
 [PASS] D6 tick edge 0.7 a: graviton on the edges' null cone, E = tau |k| | E/(tau |k|) [0.99995  0.99995  0.999975 0.999975]; gauge |QG|/|Q| 6e-12; zero roots 8
 == E. sync slab built directly from a spatial triangulation (independent code path)
 [PASS] E1 slab code reproduces D4 on the Kuhn slice | light E/|k| [0.999767 0.999767 0.999867 0.999867], zero roots 8
-[PASS] E2 six edges per site (3 axis + the face diagonals joining even-sum sites; 5 tets per cube, alternating) | 8-site cell: 48 registers = 6/site = metric count, so no non-metric strain exists; k=0 zeros 27 = 6 uniform metric + 21 staggered displacements
-[PASS] E3 six-edge slab: exactly the two polarisations are light, on the edge cone | per direction (light roots, max|E/k-1|, w=0 roots, unresolved near-zero roots and their max |E|, lightest massive |E|): (4, 6e-05, 48, 0, 0.000, 1.49); (4, 3e-05, 50, 0, 0.000, 1.20); (4, 4e-05, 48, 2, 0.002, 0.69)
+[PASS] E2 six edges per site (3 axis + the face diagonals joining even-sum sites; 5 tets per cube, alternating) | 8-site cell: 48 registers = 6/site = metric count (a dimension count only: no injectivity or surjectivity of the length map onto metrics is shown, so absence of non-metric strain is not established); k=0 zeros 27 (read as 6 uniform metric + 21 staggered displacements, split not computed)
+[PASS] E3 six-edge slab at |k| = 0.02, three directions: exactly 4 light roots (the two polarisations), on the edge cone (sampled) | per direction (light roots, max|E/k-1|, w=0 roots, unresolved near-zero roots and their max |E|, lightest massive |E|): (4, 6e-05, 48, 0, 0.000, 1.49); (4, 3e-05, 50, 0, 0.000, 1.20); (4, 4e-05, 48, 2, 0.002, 0.69)
 elapsed_seconds 1.7
 TOTAL: PASS=15 FAIL=0
 

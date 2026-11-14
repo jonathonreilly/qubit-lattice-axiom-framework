@@ -6,7 +6,9 @@ Supplied models; exact identities, finite diagnostics and estimates; no physical
     radiation leaves the edge equation (scale-free map)
  B  dust collapse: GR stage, the null crush (Hl -> sqrt2, s_k+1/s_k -> r_b^2), the generated dark constant
  C  the two options: (a) freeze clause, (b) bounce / continuation through a = 0; odds, quasi-energy, records
- D  estimates against measurement (neutron-star collapse, black-hole exteriors, Hawking, white-hole re-emergence)
+ D  estimates against measurement (neutron-star collapse, black-hole exteriors, white-hole re-emergence): dimensional comparisons
+    with supplied units, printed as uncounted ESTIMATE lines since 2026-11-14 (PR 10128 hold finding 9); no exterior dynamics or
+    Hawking emission is computed
 """
 from __future__ import annotations
 AUDIT_INPUT_PATHS = ('docs/ISOTROPIC_COLLAPSE_ON_THE_CUBIC_FRUSTUM_CARRIER_HAS_A_STATIONARY_POINT_AT_EVERY_TICK_AND_NO_BOUNCE_BOUNDED_THEOREM_NOTE_2026-10-22.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
@@ -77,7 +79,8 @@ for _ in range(6):
         r, lkp, _ = resid(lkm, lk, ua, sa, e, sg, Mx, sgn); lim.append(float(r * e / (sgn * 3 * R2 * PI * lkp)))
 check('A1 THEOREM: dS/dl_k = 12 l_k dAtanh + 4 phi_k (1.5 sig p_k s_k + 3 u_k l_k+1/s_k) + 4 phi_k-1 (1.5 sig p_k-1 s_k-1 - 3 u_k-1 '
       'l_k-1/s_k-1) - M sig (Schlaefli; s = sqrt(1-2u^2)); it runs from -inf (u_k -> -1/sqrt2) to +inf (u_k -> +1/sqrt2) as '
-      '-/+ 3 sqrt2 pi l_k+1/s_k, all else bounded: CL-3 has a stationary point at every tick, for any edges and content',
+      '-/+ 3 sqrt2 pi l_k+1/s_k, all else bounded: given an admissible prior slab (positive edges, |u_k-1| < 1/sqrt2) and finite dust '
+      'content, CL-3 has a stationary point at that tick (IVT); the root lies in the window, so the next prior slab is admissible again',
       dev < 1e-9 and max(abs(v - 1) for v in lim) < 1e-12, f'vs complex-step action {dev:.0e}; limit ratios {min(lim):.12f}..{max(lim):.12f}')
 cnt = []; sgrid = [mp.mpf(10) ** (-x) for x in np.linspace(40, 1e-4, 70)]
 for _ in range(60):
@@ -136,36 +139,37 @@ check('B4 DIAGNOSTIC: radiation collapse (scale-free orbit) also ends in the nul
 
 print('== C. the two options')
 v = res[0.04]
-check('C1 THEOREM (A1 + A3): CL-1\'s crushed-cube clause never acts in homogeneous isotropic collapse: CL-3 always has its '
-      'stationary point. The carrier freezes itself in proper terms instead: proper tick sig l, rest phase m sig l and the '
-      'remaining proper time l/sqrt2 all fall by r_b per tick, while the odds keep their unitary half-ticks',
+check('C1 THEOREM (A1 + A3, by induction from an admissible first slab): CL-1\'s crushed-cube clause never acts in homogeneous '
+      'isotropic collapse on this carrier: CL-3 has its stationary point at every tick. The carrier freezes in proper terms instead: '
+      'proper tick sig l, rest phase m sig l and the remaining proper time l/sqrt2 all fall by about r_b per tick (the odds\' unitary half-ticks are a supplied premise)',
       v['info'][0] == 'smin' and 0 < v['rb'] < 1, f"after Hl = 1.3, each tick multiplies them by r_b = {v['rb']:.6f} (sin eps0 0.04)")
-check('C2 THEOREM: no bounce: A(u) = 0 only at u = 0, so a turning slab needs total energy M + D/lbar = 0, i.e. a negative dark '
-      'constant; the one made is positive (B3); the time-mirrored slice is not stationary (residual / momentum term = O(1))',
-      all(v['D'] > 0 and abs(v['mirror']) > 0.1 for v in r), 'mirror residual/(12 l atanh|u|) at Hl = 1: ' + ', '.join(f"{v['mirror']:+.3f}" for v in r))
+ugrid = np.linspace(-0.7, 0.7, 2801); Ag = np.array([float(Af(mp.sqrt(1 - 2 * mp.mpf(x) ** 2))) for x in ugrid])
+zero_only_at_0 = bool(np.all(np.abs(Ag[np.abs(ugrid) > 1e-3]) > 0) and abs(float(Af(mp.mpf(1)))) < 1e-30)
+check('C2 THEOREM + DIAGNOSTIC: A(u) vanishes only at u = 0 (A > 0 elsewhere in the window), so with dust M > 0 a turning slab needs '
+      'M + D/lbar = 0, i.e. a negative dark constant D (exact); in the three dust runs D is positive (B3) and the time-mirrored slice '
+      'is not stationary, so these runs do not bounce (a finite diagnostic, not a theorem about every initial state)',
+      zero_only_at_0 and all(v['D'] > 0 and abs(v['mirror']) > 0.1 for v in r), 'A(u) > 0 on the sampled window except u = 0; mirror residual/(12 l atanh|u|) at Hl = 1: ' + ', '.join(f"{v['mirror']:+.3f}" for v in r))
 sgs = np.sin(np.linspace(1e-4, np.pi / 2, 200)) / np.sqrt(3)
 check('C3 THEOREM (A3, A4, CL-1 text): reaching a = 0 in one tick needs |u| = 1/sig >= sqrt3 > 1/sqrt2 for every step, so '
-      'continuation through a = 0 is unavailable (a = 0 is at tick +inf). In site labels the massless half-tick on equal '
-      'edges is the same unitary every tick (R = W, step eps0): the scale-free circuit simply continues for ever, quasi-energy '
-      'kept exactly, mass angles m sig l -> 0, records written every half-tick', np.all(1 / sgs >= np.sqrt(3) - 1e-12),
-      f'min 1/sig = {np.min(1 / sgs):.4f}; records inside grow ~ n (unbounded) within proper time l/sqrt2; they never condition the odds')
+      'continuation through a = 0 is unavailable (a = 0 is at tick +inf); that the massless half-tick on equal edges is then the same '
+      'unitary every tick, with records written every half-tick, is a reading of the supplied tick, not computed here', np.all(1 / sgs >= np.sqrt(3) - 1e-12),
+      f'min 1/sig over sin(eps0) in (0, 1] = {np.min(1 / sgs):.4f}')
 
 print('== D. ESTIMATES (cube 2 sqrt(8 pi) l_P; measured numbers)')
 G, c, hb, lP, tP, Ms = 6.674e-11, 2.998e8, 1.0546e-34, 1.616255e-35, 5.391247e-44, 1.989e30
 l0 = 2 * np.sqrt(8 * np.pi) * lP; rho0 = 5e17; H0 = np.sqrt(8 * np.pi * G * rho0 / 3); x = H0 * l0 / c
 at = (x / 1.0) ** 2; rho_t = rho0 / at ** 3; rhoP = 5.155e96; s4 = np.sin(0.04) / np.sqrt(3)
-check('D1 neutron-star-density collapse: the null crush starts when a/a0 = (H0 l0/c)^2, at a density far above Planck, '
-      'after ~2/(sig H0 l0) ticks; the proper time left is ~l/c', 1e-80 < at < 1e-74,
+print('ESTIMATE (not counted): D1 neutron-star-density collapse with the supplied unit map: the null crush starts when a/a0 = (H0 l0/c)^2, '
+      'at a density far above Planck, after ~2/(sig H0 l0) ticks; the proper time left is ~l/c | '
       f'H0 l0/c {x:.1e}; a/a0 {at:.1e}; rho {rho_t:.0e} kg/m^3 = {rho_t / rhoP:.0e} rho_P; ticks {2 / (s4 * x):.1e}; time left {at * l0 / c:.0e} s')
 M10 = 10 * Ms; rs = 2 * G * M10 / c ** 2; tH = 5120 * np.pi * G ** 2 * M10 ** 3 / (hb * c ** 4)
-check('D2 black-hole exteriors: nothing in the interior is undefined, and the exterior is its own domain of dependence, so a '
-      '10 M_sun exterior persists; Hawking flux from the exterior circuit, lattice corrections ~ (l/r_s)^2; evaporation '
-      'takes a finite number of ticks, during which the interior cells shrink by r_b per tick', (l0 / rs) ** 2 < 1e-70,
+print('ESTIMATE (not counted): D2 dimensional comparison only, with supplied units: (l/r_s)^2 and the GR evaporation time of a 10 M_sun '
+      'hole in ticks; no exterior dynamics, persistence or Hawking emission is computed on this homogeneous carrier | '
       f'(l/r_s)^2 {(l0 / rs) ** 2:.0e}; t_evap {tH / 3.156e7:.1e} yr = {tH * c / (s4 * l0):.0e} ticks')
 tWH = rs / c * np.log(rs / l0); obs = {'Cyg X-1 (since 1964)': 60 * 3.156e7, 'Sgr A* (S2 orbits, 30 yr)': 30 * 3.156e7}
-check('D3 a time-symmetric bounce (not a CL-3 solution, C2) would re-emerge as a white hole after ~ (r_s/c) ln(r_s/l): for '
-      'Cyg X-1 excluded by its persistence by > 1e10 and Sgr A* by > 1e5; a Planck-delayed (M^2) route needs a non-stationary '
-      'exterior region, which CL-3 forbids', obs['Cyg X-1 (since 1964)'] / (tWH * 1.48) > 1e10 and obs['Sgr A* (S2 orbits, 30 yr)'] / (tWH * 4.3e5) > 1e5,
+print('ESTIMATE (not counted): D3 dimensional comparison: a time-symmetric bounce would re-emerge after ~ (r_s/c) ln(r_s/l) on a '
+      'supplied re-emergence model; compared with the observed persistence of Cyg X-1 and Sgr A*; no bounce or exterior history is '
+      'computed, and no delayed-bounce route is excluded here | '
       f'10 M_sun: {tWH:.1e} s; Cyg X-1 (14.8 M_sun) {tWH * 1.48:.1e} s vs {obs["Cyg X-1 (since 1964)"]:.1e} s; Sgr A* {tWH * 4.3e5:.0e} s vs {obs["Sgr A* (S2 orbits, 30 yr)"]:.0e} s')
 print('supplied: cubic isotropic frustum carrier, mid-slab tick read, dust -M T and radiation -C T/lbar phases, zero initial')
 print('  dark constant, kappa = 1, unit map, measured numbers; not built: anisotropic (Kasner) crush, inhomogeneous junction.')

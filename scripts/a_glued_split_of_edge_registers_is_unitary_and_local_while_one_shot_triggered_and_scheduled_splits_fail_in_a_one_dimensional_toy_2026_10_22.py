@@ -6,11 +6,12 @@ Supplied 1D toy: a chain cell = one edge register (+ two matter modes); its spli
  B  the top wall: packet through the glued junction vs the box; CL-2 transport across it; fixed schedule (c)
  C  actual-configuration trigger (b): Born weight of the split event and a remote setting
  D  estimates against measurement
+2026-11-14: D3 is printed as an uncounted STRUCTURAL line; the runner exits nonzero if any counted check fails.
 """
 from __future__ import annotations
 AUDIT_INPUT_PATHS = ('docs/A_GLUED_SPLIT_OF_EDGE_REGISTERS_IS_UNITARY_AND_LOCAL_WHILE_ONE_SHOT_TRIGGERED_AND_SCHEDULED_SPLITS_FAIL_IN_A_ONE_DIMENSIONAL_TOY_BOUNDED_THEOREM_NOTE_2026-10-22.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
 AUDIT_TIMEOUT_SEC = 120
-import os, signal, time
+import os, signal, sys, time
 os.environ['OPENBLAS_NUM_THREADS'] = '1'; os.environ['OMP_NUM_THREADS'] = '1'
 signal.signal(signal.SIGALRM, lambda *a: (_ for _ in ()).throw(TimeoutError('aggregate cap exceeded')))
 signal.setitimer(signal.ITIMER_REAL, AUDIT_TIMEOUT_SEC - 2)
@@ -147,9 +148,9 @@ for r, i in enumerate(keep): W[r, i] = 1
 off = len(keep) + dC
 for m in range(2):
     for k in range(6): W[off + k, pidx(S2, m)] = Vm[k, m]
-check("A6 THEOREM (index): for any unitary on the sum over refinement patterns from a finite start, the trace weight "
-      "split across a generation cut equals the weight merged back; only a non-onto isometry (a history label) splits "
-      "without merging", abs(upf - dnf) < 1e-12 and opn(W.T @ W - np.eye(dP)) < 1e-13,
+check("A6 THEOREM (index, finite-dimensional): for a unitary on the finite sum over refinement patterns, the trace weight "
+      "split across a generation cut equals the weight merged back (this is a trace statement, not one about state-weighted fluxes); "
+      "a non-onto isometry (a history label) can split without merging (witness W)", abs(upf - dnf) < 1e-12 and opn(W.T @ W - np.eye(dP)) < 1e-13,
       f"glued: up {upf:.6f} = down {dnf:.6f}; history isometry: up {np.linalg.norm(W[off:]) ** 2:.0f}, down 0")
 
 print("== B. the top wall (edge ladder only; hop J_n proportional to length, parent n = 0..P-1, children m = 0..)")
@@ -274,10 +275,10 @@ check("D2 (c) fixed schedule vs the measured expansion history: the window needs
       "at all times; a schedule matching the e-folds since BBN gives ~0 splits in 1-180 s, where a grows by 13x",
       need_early > 3 and splits_early < 1e-10,
       f"{lnBBN / np.log(2):.0f} splits since BBN; schedule gives {splits_early:.0e} in 1-180 s vs {need_early:.1f} needed")
-check("D3 (a) glued split fires once per doubling of each cube's own edge, so the split cascade has period ln 2 in "
-      "ln a in every era, keeping the tensor ripple's period ln 2; (c) gives period H K t_tick, ln 2 only in tuned de Sitter",
-      True, "structural")
+print("STRUCTURAL (not computed; not counted): D3 (a) the glued split fires once per doubling of each cube's own edge, so the split "
+      "cascade has period ln 2 in ln a in every era; (c) gives period H K t_tick, ln 2 only in a tuned de Sitter phase")
 print("supplied: 1D chain cell, spin-S edge hop and length-proportional ladder hops (no CL-3 edge dynamics), "
       "collective children, cross-sector unit cost, entropic transport tau = 0.1, packet shapes, measured numbers.")
 print(f"elapsed {time.monotonic() - T00:.1f} s")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+sys.exit(0 if FAIL == 0 else 1)

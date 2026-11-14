@@ -4,7 +4,10 @@ AUDIT_INPUT_PATHS = ('docs/STATIC_REDSHIFT_ON_FIXED_STEP_EDGES_NEEDS_A_WIDER_EDG
 
 (a) wider window [w L, 2L] with split children still at L; (b) per-half-tick skip at the
 floor; (c) split-history (zoom) escape.  Self-contained: numpy + scipy only.
+2026-11-14 (PR 10128 hold findings 10, 13): A3, C3 and D5 are printed as uncounted ALGEBRA or STATED lines; D4 is a conditional
+estimate (a 1D proxy coefficient inserted into a 3D dimensional estimate), not an exclusion. Exits nonzero if any counted check fails.
 """
+import sys
 import time
 import numpy as np
 from scipy.integrate import solve_ivp
@@ -78,8 +81,8 @@ check("A2 THEOREM (zoom escape (c) fails as posed): a split maps 2L to L in PROP
       "edges in [L, 2L]; history changes cell counts, never the edge ratio, and the bound alpha_c >= L/l_far >= 1/2 is history-free",
       hist.min() >= 1 and hist.max() < 2, f"2000 random histories: edges in [{hist.min():.3f}, {hist.max():.3f}]; the zoom form that works is "
       "an octave (exponent) on the register = (a)")
-check("A3 THEOREM: with window [wL, 2L] a static core never meets the floor iff alpha_c >= w L/l_far; for every far phase "
-      "l_far in [L, 2L] iff alpha_c >= w (worst phase l_far = L)", True, "a split-made far cell starts at L")
+print("ALGEBRA (not counted): A3 with window [wL, 2L] and l_c = alpha_c l_far (A1, global ticks) a static core never meets the floor iff "
+      "alpha_c >= w L/l_far; for every far phase l_far in [L, 2L] iff alpha_c >= w (worst phase l_far = L, a split-made far cell)")
 
 print("== B. central redshift of stable static stars (TOV; alpha_c = alpha_s/h_c exactly, h = enthalpy per baryon)")
 eG, acG = poly(2.5)
@@ -113,10 +116,11 @@ for name, eps, acf in [("G=2", *poly(2.0)), ("G=2.5", *poly(2.5)), ("G=3", *poly
     res[name] = (rows, i, best)
 mono = all(np.all(np.diff(res[n][0][: res[n][1] + 1, 3]) < 0) for n in res)
 txt = "; ".join(f"{n}: 2M/R {2*b[1]/b[2]:.3f}, alpha_c {b[3]:.3f}" for n, (r_, i, b) in res.items())
-check("B3 DIAGNOSTIC: alpha_c falls monotonically along each stable branch, so its minimum is the maximum-mass star", mono, txt)
+check("B3 DIAGNOSTIC: alpha_c falls monotonically along each sampled stable branch (70 central pressures), so on that sample its minimum is the maximum-mass star", mono, txt)
 amin_causal = res["causal"][2][3]
-check("B4 DIAGNOSTIC (causal limit, c_s = 1, the most compact causal EOS): its maximum-mass star has alpha_c just below 1/4, "
-      "so [L/4, 2L] covers every stable star with alpha_c >= 1/4 (Gamma 3 polytrope max 0.27), and [L/8, 2L] every stable causal star at every far phase",
+check("B4 DIAGNOSTIC (causal-limit EOS eps = p + 1, c_s = 1; 'most compact causal EOS' is a cited literature result, not checked here): its "
+      "maximum-mass star has alpha_c just below 1/4, so on the sampled branches [L/4, 2L] covers the Gamma 3 polytrope (max 0.27) and "
+      "[L/8, 2L] every sampled stable star of the causal-limit EOS at every far phase",
       0.125 < amin_causal < 0.25, f"alpha_c^min(causal) = {amin_causal:.3f}; 2M/R = {2*res['causal'][2][1]/res['causal'][2][2]:.3f}")
 
 # J0740+6620: M = 2.08 Msun, R = 12.39 (Riley 2021) .. 13.7 km (Miller 2021); GM/c^2 = 1.4766 km per Msun
@@ -160,9 +164,8 @@ rms = np.sqrt((ns ** 2).mean(1))
 check("C2 THEOREM: in [wL, 2L] the rms edge reaches 2L only when every register is full, so the split trigger, the split and "
       "children at L are unchanged; the children's vacuum value sits inside the window (n_L = (1-w)/(2-w) of the range)",
       np.all((rms >= 2 - 1e-12) == np.all(ns == 2, axis=1)), f"w = 1/4: n_L at {(1-w)/(2-w):.3f} of the register")
-check("C3 THEOREM: lapse ratios on a slice are bounded by 2/w (8 for w = 1/4), and the static core is stationary: the tick is the "
-      "same unitary in every cube (fixed step), redshift is carried by edge VALUES, so no time-dependent drive appears", True,
-      "the floor bounce (qcrush A3) moves to wL; collapse still needs the shift law (floor-horizon D2-D4)")
+print("STATED (not counted): C3 lapse ratios on a slice are bounded by 2/w (8 for w = 1/4), and the static core is stationary: the tick is "
+      "the same unitary in every cube (fixed step) and redshift is carried by edge values, so no time-dependent drive appears; not computed")
 
 print("== D. option (b): skip half-ticks at the floor (1D free-fermion split-step test)")
 
@@ -247,12 +250,14 @@ for e0 in (0.0075, 0.0375):
     E = e0 * 1.0546e-34 / tau
     flux = 0.5 * p1 * E / (Lr ** 2 * tau)
     Lum = flux * 4 * np.pi * (5e3) ** 2
-    check(f"D4 ESTIMATE (eps0 {e0}, J0740 core, f_c ~ 1/2): transient alone, (1 - f_c) p1 hbar eps0/tau per L^2 per tick, is "
-          f"{Lum:.0e} W against <~1e27 W seen from neutron stars", Lum > 1e60, f"p1 {p1:.1e}, E/quantum {E:.1e} J, flux {flux:.0e} W/m^2")
-check("D5 THEOREM: a skipped half-tick must carry zero proper time and make no record: if it recorded, records per proper time "
-      "would rise by 1/f in the core (a local, measurable difference: equivalence principle); unitary as a register-controlled "
-      "identity, Lorentz-safe on average, but excluded by heating (D2-D4)", True)
+    check(f"D4 CONDITIONAL ESTIMATE (eps0 {e0}, J0740 core, f_c ~ 1/2): IF the 1D proxy's p1 = c eps0^2 per skip boundary held per L^2 per "
+          f"tick in 3D (supplied, not derived), the transient (1 - f_c) p1 hbar eps0/tau would be {Lum:.0e} W against <~1e27 W seen from "
+          f"neutron stars; no 3D yield or lower bound is computed", Lum > 1e60, f"p1 {p1:.1e}, E/quantum {E:.1e} J, flux {flux:.0e} W/m^2")
+print("STATED (not counted): D5 a skipped half-tick that made a record would raise records per proper time by 1/f in the core (a local "
+      "difference); so in this reading it carries zero proper time and makes no record. The skip option is NOT excluded here: the 1D proxy "
+      "heats (D2, D3), and the 3D size (D4) is a conditional estimate only")
 print("supplied: CL-1 lapse + window, global ticks, continuum GR TOV, relativistic polytropes K=1 / causal-limit EOS, J0740 M,R")
 print("  (Riley 2021, Miller 2021), qcrush A2 speed bound, 1D two-tiling free walk as a proxy of the 3D tick, rung L = sqrt(8pi) l_P.")
 print(f"elapsed {time.monotonic() - T00:.1f} s")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+sys.exit(0 if FAIL == 0 else 1)

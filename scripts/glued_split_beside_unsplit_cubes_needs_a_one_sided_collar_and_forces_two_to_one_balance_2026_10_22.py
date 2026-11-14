@@ -7,11 +7,14 @@ Child units throughout: coarse sites at even integer coordinates, children at al
  D  register toy: the glued split with collar on a ring of three blocks (unitarity, constraints, contrasts)
  E  matter: mixed odd cubes tick on the passing's channel modes (one-particle toy)
  F  estimates
+2026-11-14 (PR 10128 hold, collar salvage row): B1 is computed (it was a literal True); the B2-B5 LPs are floating-point HiGHS
+solves, not rational certificates, and their solver failures are counted; B6 reports the parents it skips. Exits nonzero if any
+check fails.
 """
 from __future__ import annotations
 AUDIT_INPUT_PATHS = ('docs/GLUED_SPLIT_BESIDE_UNSPLIT_CUBES_NEEDS_A_ONE_SIDED_COLLAR_AND_FORCES_TWO_TO_ONE_BALANCE_BOUNDED_THEOREM_NOTE_2026-10-22.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
 AUDIT_TIMEOUT_SEC = 120
-import os, signal, time, itertools as it, collections
+import os, signal, sys, time, itertools as it, collections
 os.environ['OPENBLAS_NUM_THREADS'] = '1'; os.environ['OMP_NUM_THREADS'] = '1'
 signal.signal(signal.SIGALRM, lambda *a: (_ for _ in ()).throw(TimeoutError('aggregate cap exceeded')))
 signal.setitimer(signal.ITIMER_REAL, AUDIT_TIMEOUT_SEC - 2)
@@ -152,7 +155,7 @@ SA = res['A'][0]
 print("== B. windows force the interface (child units: axis [1,2], diagonal [sqrt2, 2sqrt2])")
 def forcing(blocks, lo=-2, hi=4, cap_bisected=True):
     blocks = set(blocks); creg = set(e for n in blocks for s in kids(n) for e in fwd(s))
-    pinned_c = set(); pinned_k = set(); free_k = 0; npart = 0
+    pinned_c = set(); pinned_k = set(); free_k = 0; npart = 0; nfail = 0
     for c in it.product(range(lo, hi), repeat=3):
         for T0 in cell_tets(c):
             E = [srt(a, b) for a, b in it.combinations(T0, 2)]; bis = [blk(owner(e)) in blocks for e in E]
@@ -175,11 +178,11 @@ def forcing(blocks, lo=-2, hi=4, cap_bisected=True):
                 rows.append((e, co)); Aub += [-co, co]; bub += [-q(e) * 1.0, q(e) * 4.0]
             Aub = np.array(Aub); bub = np.array(bub)
             for i, e in enumerate(E):
-                r0 = linprog(np.eye(6)[i], A_ub=Aub, b_ub=bub, bounds=bounds, method='highs')
+                r0 = linprog(np.eye(6)[i], A_ub=Aub, b_ub=bub, bounds=bounds, method='highs'); nfail += r0.status != 0
                 if r0.status == 0 and abs(r0.fun - q(e) * 4.0) < 1e-9: pinned_c.add(e)
             for e, co in rows:
                 r0 = linprog(co, A_ub=Aub, b_ub=bub, bounds=bounds, method='highs')
-                r1 = linprog(-co, A_ub=Aub, b_ub=bub, bounds=bounds, method='highs')
+                r1 = linprog(-co, A_ub=Aub, b_ub=bub, bounds=bounds, method='highs'); nfail += (r0.status != 0) + (r1.status != 0)
                 if r0.status == 0 and abs(r0.fun - q(e)) < 1e-9 and abs(-r1.fun - q(e)) < 1e-9: pinned_k.add(e)
                 else: free_k += 1
     own = set(e for n in blocks for s in [add(n, d) for d in P3] for e in fwd(s))
@@ -187,17 +190,30 @@ def forcing(blocks, lo=-2, hi=4, cap_bisected=True):
     kb = collections.Counter(blk(owner(e)) for e in pinned_k)
     nkb = 8 * len(blocks)
     return dict(own=len(own), own_pinned=len(own & pinned_c), collar=len(collar), collar_owners=collections.Counter(blk(owner(e)) for e in collar),
-                pinned_k=len(pinned_k), free_k=free_k, creg=len(creg), kb_free=nkb - len(kb), npart=npart)
-check("B1 THEOREM: a parent edge passes as two children inside their windows only when full, so all 48 edges a split bisects must be full, not just the 18 of its tiling cube", True,
-      "l1+l2 = l, l1,l2 >= L, l <= 2L => l1 = l2 = L, l = 2L")
+                pinned_k=len(pinned_k), free_k=free_k, creg=len(creg), kb_free=nkb - len(kb), npart=npart, nfail=nfail)
+# B1 (computed 2026-11-14): l1 + l2 = l, l1, l2 >= L, l <= 2L. Extremes of l1 and l over that set (L = 1) are l1 = 1 and l = 2 only;
+# control: with the parent cap at 2.2 L the set is not a point (l1 ranges over [1, 1.2]).
+def b1_range(cap):
+    Ab = [[0, 0, 1]]; bb = [cap]; Ae = [[1, 1, -1]]; be = [0.0]; bd = [(1, None), (1, None), (0, None)]
+    out = []
+    for cvec in ([1, 0, 0], [-1, 0, 0], [0, 0, 1], [0, 0, -1]):
+        rr = linprog(cvec, A_ub=Ab, b_ub=bb, A_eq=Ae, b_eq=be, bounds=bd, method='highs'); out.append((rr.status, rr.fun))
+    return out
+b1 = b1_range(2.0); b1c = b1_range(2.2)
+okB1 = all(st == 0 for st, _ in b1 + b1c) and abs(b1[0][1] - 1) < 1e-12 and abs(-b1[1][1] - 1) < 1e-12 and abs(b1[2][1] - 2) < 1e-12 and abs(-b1[3][1] - 2) < 1e-12
+okB1c = abs(-b1c[1][1] - 1.2) < 1e-9
+check("B1 THEOREM (computed): a parent edge passes as two children inside their windows only when full: l1 + l2 = l, l1, l2 >= L, l <= 2L "
+      "leaves only l1 = l2 = L, l = 2L; so all 48 edges a split bisects must be full, not just the 18 of its tiling cube; control: a "
+      "parent cap of 2.2 L leaves l1 free in [1, 1.2]", okB1 and okB1c,
+      f"l1 in [{b1[0][1]:.3f}, {-b1[1][1]:.3f}], l in [{b1[2][1]:.3f}, {-b1[3][1]:.3f}] (L = 1); control l1 max {-b1c[1][1]:.3f}")
 fA = forcing([(0, 0, 0)]); fAB = forcing([(0, 0, 0), (2, 0, 0)]); fS = forcing([tuple(x2(m)) for m in P3])
 plus = {(2, 0, 0), (0, 2, 0), (0, 0, 2)}
-check("B2 THEOREM (exact LP): beside an isolated split cube every child register in a partly refined parent tetrahedron is held at its floor, and the parent edges it reads are held full: 42 owned + a collar of the 12 in-plane registers of each unsplit +x/+y/+z face neighbour",
-      fA['own_pinned'] == 42 and fA['collar'] == 36 and set(fA['collar_owners']) == plus and fA['free_k'] == 0,
-      f"held: owned {fA['own_pinned']}/48, collar {fA['collar']} from {sorted(fA['collar_owners'])}, child {fA['pinned_k']}/{fA['creg']} (free in partial 0); trigger reads 84")
-check("B3 THEOREM: the collar moves with the pattern (a split + neighbour drops its share); a 2^3 super-block has a 144-edge collar, so no finite block of blocks closes", fAB['collar'] == 60 and (2, 0, 0) not in fAB['collar_owners'] and fS['collar'] == 144
-      and len(fS['collar_owners']) == 12, f"A,+x: {fAB['collar']} from {len(fAB['collar_owners'])} blocks; 2^3: {fS['collar']} from {len(fS['collar_owners'])}")
-check("B4 THEOREM: 2:1 balance is forced: every child cube of an isolated split cube owns a held register and can never split",
+check("B2 NUMERICAL LP (scipy HiGHS, floating point, tolerance 1e-9; not a rational certificate): beside an isolated split cube every child register in a partly refined parent tetrahedron is held at its floor, and the parent edges it reads are held full: 42 owned + a collar of the 12 in-plane registers of each unsplit +x/+y/+z face neighbour",
+      fA['own_pinned'] == 42 and fA['collar'] == 36 and set(fA['collar_owners']) == plus and fA['free_k'] == 0 and fA['nfail'] == 0,
+      f"held: owned {fA['own_pinned']}/48, collar {fA['collar']} from {sorted(fA['collar_owners'])}, child {fA['pinned_k']}/{fA['creg']} (free in partial 0); trigger reads 84; LP solver failures {fA['nfail']}")
+check("B3 NUMERICAL LP: the collar moves with the pattern (a split + neighbour drops its share); a 2^3 super-block has a 144-edge collar (two patterns tested)", fAB['collar'] == 60 and (2, 0, 0) not in fAB['collar_owners'] and fS['collar'] == 144
+      and len(fS['collar_owners']) == 12 and fAB['nfail'] == 0 and fS['nfail'] == 0, f"A,+x: {fAB['collar']} from {len(fAB['collar_owners'])} blocks; 2^3: {fS['collar']} from {len(fS['collar_owners'])}")
+check("B4 NUMERICAL LP: 2:1 balance is forced beside an isolated split: every child cube of an isolated split cube owns a held register and can never split",
       fA['kb_free'] == 0 and fS['kb_free'] == 8, f"free child cubes: isolated {fA['kb_free']}/8, 2^3 {fS['kb_free']}/64")
 fAu = forcing([(0, 0, 0)], cap_bisected=False)
 check("B5 DIAGNOSTIC: if a neighbour may read a bisected edge beyond its own window the collar stands but the hanging-face holds loosen", fAu['collar'] == 36 and fAu['pinned_k'] < fA['pinned_k'],
@@ -209,19 +225,19 @@ pin = set()
 for e in [e for s in P3 for e in fwd(s)]: pin.add(e)
 pin |= set(e for n in plus for s in [add(n, d) for d in P3] for e in fwd(s) if all(e[0][k] == n[k] and e[1][k] == n[k] for k in range(3) if n[k]))
 cedge = set(srt(a, b) for c in it.product(range(-1, 3), repeat=3) for T in cell_tets(c) for a, b in it.combinations(T, 2))
-ntr = 0; nbadsub = 0; vtot = 0; worst = 1.0
+ntr = 0; nbadsub = 0; vtot = 0; worst = 1.0; nskip = 0; npar = 0
 for trial in range(6):
     Lv = {e: (2.0 if e in pin else 2.0 * (1 - 0.3 * rng.random())) * np.sqrt(d2(*e)) for e in cedge}
     for (T, t) in SA:
         T0 = [tuple(v // 2 for v in p) for p in T]
         D = np.array([[Lv[srt(a, b)] ** 2 if a != b else 0.0 for b in T0] for a in T0])
-        VT = cm_vol2(D)
-        if VT <= 0: continue
+        VT = cm_vol2(D); npar += 1
+        if VT <= 0: nskip += 1; continue
         lam = [bary(T, p) for p in t]
         Ds = np.array([[-0.5 * (li - lj) @ D @ (li - lj) for lj in lam] for li in lam])
         v = cm_vol2(Ds); ntr += 1; nbadsub += v <= 0; worst = min(worst, np.sqrt(max(v, 0) / VT))
-check("B6 THEOREM + check: with the held values and free edges anywhere in a 30% band below full, every closure tetrahedron read from its flat parent has positive volume", nbadsub == 0 and ntr > 1000,
-      f"{ntr} tetrahedra, nonpositive {nbadsub}; min sub/parent volume {worst:.3f}")
+check("B6 SAMPLED CHECK: in six random configurations with the held values and free edges in a 30% band below full, every closure tetrahedron read from a positive-volume parent has positive volume (parents with nonpositive volume are skipped and counted)", nbadsub == 0 and ntr > 1000,
+      f"{ntr} tetrahedra, nonpositive {nbadsub}; min sub/parent volume {worst:.3f}; parents skipped as nonpositive {nskip} of {npar}")
 
 # ======================================================================================= C
 print("== C. links: Gauss's law on the sum over patterns (torus of 2x2x2 blocks)")
@@ -292,7 +308,7 @@ for mask in range(256):
                 if any(v in b[1:] for b in kb): tot[f2(v)] += r
                 else: ok_all &= abs(r) < 1e-9   # vertices with only coarse bonds keep their old law
             ok_all &= all(abs(t) < 1e-9 for t in tot.values()); ncheck += 1
-check("C1 THEOREM + check: a child link ends at its odd centre if that cube is complete, else at the nearest parent odd centre (never a tie); unsplit links keep their laws and Gauss's law is solvable for any parent field and child occupations",
+check("C1 THEOREM + SAMPLED CHECK: a child link ends at its odd centre if that cube is complete, else at the nearest parent odd centre (no tie on all 256 patterns); unsplit links keep their laws, and Gauss's law is solvable on the sampled patterns x random configurations (not shown for every pattern)",
       ok_all and maxties == 0 and npat == 256 and ncheck > 10, f"256 patterns (2^3-block torus); ties {maxties}; {ncheck} solved")
 
 # ======================================================================================= D
@@ -430,3 +446,4 @@ print("supplied: forward ownership (from the passing's child placement), closure
       "sum-in-window reading (B5), channel-mode mixed ticks + deferred child odd tick (E), toy hop and 2S=2, measured numbers.")
 print(f"elapsed {time.monotonic() - T00:.1f} s")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+sys.exit(0 if FAIL == 0 else 1)

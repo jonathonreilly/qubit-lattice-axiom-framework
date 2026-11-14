@@ -1,6 +1,7 @@
 AUDIT_INPUT_PATHS = ('docs/A_NORMAL_FRAME_WAVE_SHIFT_FED_BY_THE_PER_TICK_VOLUME_RATE_GIVES_BLACK_HOLE_EXTERIORS_AN_ATTRACTING_HORIZON_REGULAR_SLICING_BOUNDED_THEOREM_NOTE_2026-10-22.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
 # shift-charge-law: a normal-frame wave shift sourced by the per-tick volume-rate gradient gives a black-hole exterior an
 # attracting, horizon-regular stationary slicing (G = c = M = 1). Self-contained. Edges in far-edge units; labels r, areal radius R.
+# 2026-11-14: lines starting NOT CHECKED or ESTIMATE are printed, not counted; the runner exits nonzero if any counted check fails.
 import signal
 AUDIT_TIMEOUT_SEC = 120
 signal.alarm(115)
@@ -154,18 +155,55 @@ check('A2 THEOREM: speeds are real for every kappa >= 0 (discriminant (mu-q)^2 +
       'ratio and lapse; subluminal iff (1-mu)(1-q) >= mu q kappa, so in weak fields (q = 1/3) kappa <= 2(1-mu)/mu; at equality the fast '
       'mode is exactly c and, wherever l_r >= l_t, no gauge mode is faster than light', okA2 and okA2b and sp.simplify(kmax - 2 * (1 - mu_) / mu_) == 0
       and sorted(rts) == sorted([sp.Rational(1), sp.sqrt(3) / 6]), 'mu = 3/4: kappa_max = 2/3, speeds %s' % sorted(rts))
-# vanishing: static (K = 0), homogeneous (grad(NK) = 0), stationary axisymmetric azimuthal shift (div beta = 0, advection 0)
-rr, th, ph = sp.symbols('r theta phi', positive=True); gfun = [sp.Function(n)(rr, th) for n in ('g1', 'g2', 'g3')]; bp = sp.Function('w')(rr, th)
-sqg = sp.sqrt(gfun[0] * gfun[1] * gfun[2]); divb = sp.diff(sqg * bp, ph) / sqg; adv = bp * sp.diff(bp, ph)
-check('A3 THEOREM: the source -kappa d_i(N K) and the advection vanish for static slices (K = 0), homogeneous ones (N K uniform) and '
-      'stationary axisymmetric azimuthal shifts (K = D_i beta^i / N = 0): beta = 0 around static stars, FRW and Bianchi I, and the '
-      'rotating-body equation is the register one up to the local light-speed factor', divb == 0 and adv == 0, 'D_i beta^i = 0, beta.d beta = 0')
-check('A4 THEOREM: the law is time-reversal invariant (beta, K, d_t odd; (d_t - beta d)^2, d(NK)/beta even): no time-even source is '
-      'needed; a white-hole (Q < 0) trumpet is the time reverse of the attractor and repels', True, 'parity count')
-check('A5 THEOREM: in labels every characteristic moves at -beta +- v c_l (c_l = N/l_r); inside the surface beta = v_max c_l (at or '
-      'outside the horizon, since v_max <= 1 for kappa <= kappa_max where l_r >= l_t) all point inward, so a core bounce cannot reach '
-      'the exterior; in the register\'s label frame the shift moves sqrt(mu) labels/tick at every beta and does (post-crunch A3)', True,
-      'normal frame vs label frame')
+# A3 (2026-11-14, hold finding 3). The held test computed only beta_phi d_phi beta_phi, which drops the vector-basis terms.
+# Source: static (K = 0) and homogeneous (N K uniform) slices give d_i(N K) = 0, so beta = 0 solves the law there.
+# Advection: in the flat-label Cartesian vector law, rigid rotation beta = Omega(-y, x, 0) is stationary, axisymmetric and
+# divergence-free (so K = 0 on a stationary flat slice), yet (beta.grad)beta = -Omega^2 (x, y, 0) and (beta.grad)^2 beta = -Omega^2 beta.
+# Both are O(Omega^2): the stationary rotating equation equals the register one (up to c_l^2) at first order in Omega only.
+X3 = sp.symbols('x y z', real=True); Om_ = sp.Symbol('Omega', real=True); tt_ = sp.Symbol('t', real=True)
+bet = sp.Matrix([-Om_ * X3[1], Om_ * X3[0], 0])
+advec = lambda vec: sp.Matrix([sum(bet[j] * sp.diff(vec[i], X3[j]) for j in range(3)) for i in range(3)])
+adv1 = sp.simplify(advec(bet)); adv2 = sp.simplify(advec(adv1)); divb = sum(sp.diff(bet[i], X3[i]) for i in range(3))
+NKh = sp.Function('NK')(tt_)                                        # homogeneous N K(t)
+src_static = [sp.diff(0 * X3[0], q) for q in X3]; src_hom = [sp.diff(NKh, q) for q in X3]
+first_order = [sp.diff(c_, Om_).subs(Om_, 0) for c_ in list(adv1) + list(adv2)]
+rr, th, ph = sp.symbols('r theta phi', positive=True); bp = sp.Function('w')(rr, th); held = bp * sp.diff(bp, ph)   # the held componentwise test
+okA3 = (divb == 0 and all(x_ == 0 for x_ in src_static + src_hom)
+        and sp.simplify(adv1 - sp.Matrix([-Om_**2 * X3[0], -Om_**2 * X3[1], 0])) == sp.zeros(3, 1)
+        and sp.simplify(adv2 + Om_**2 * bet) == sp.zeros(3, 1) and all(sp.simplify(x_) == 0 for x_ in first_order))
+check('A3 THEOREM (narrowed 2026-11-14): the source -kappa d_i(N K) vanishes on static slices (K = 0) and homogeneous ones (N K uniform), '
+      'so beta = 0 is exact around static stars, on FRW and on Bianchi I; for a stationary divergence-free rotation the source vanishes '
+      'but the advection does not: (beta.grad)beta = -Omega^2 (x, y, 0) and (beta.grad)^2 beta = -Omega^2 beta, both O(Omega^2), so the '
+      'rotating-body equation is the register one up to c_l^2 at first order in Omega only',
+      okA3, 'div beta = %s; (beta.grad)beta = %s; (beta.grad)^2 beta = -Omega^2 beta' % (divb, list(adv1)))
+check('A3c control (held exact statement rejected): the held componentwise test beta_phi d_phi beta_phi returns 0, but the Cartesian vector '
+      'advection of rigid rotation is nonzero, so "the advection vanishes for stationary axisymmetric azimuthal shifts" fails at O(Omega^2)',
+      held == 0 and sp.simplify(adv1.subs(Om_, 1)) != sp.zeros(3, 1), 'held test %s; Cartesian %s' % (held, list(adv1)))
+# A4: time reversal t -> -t, beta -> -beta, K -> -K, N even, checked on explicit test fields (1D reduction of each term)
+tq, xq, mq, kq, aq = sp.symbols('t x mu kappa a', real=True)
+def law(b_, K_, N_, extra=0):
+    D = lambda f_: sp.diff(f_, tq) - b_ * sp.diff(f_, xq)
+    cl2 = N_**2 / (1 + xq**2)
+    return D(D(b_)) - mq * cl2 * (sp.diff(b_, xq, 2) - 2 * aq * sp.diff(K_, xq) - kq * sp.diff(N_ * K_, xq)) + extra * N_
+bt = sp.sin(tq + 2 * xq) + tq**2 * xq + sp.Rational(1, 3) * tq * xq**3; Kt = sp.cos(tq * xq) + tq + xq**2 * tq**3; Nt = 1 + xq**2 / 5 + tq**2 / 7 + tq * xq / 9
+Tm = lambda f_, sgn: sgn * f_.subs(tq, -tq)
+lhs = law(Tm(bt, -1), Tm(Kt, -1), Tm(Nt, 1)); rhs = -law(bt, Kt, Nt).subs(tq, -tq)
+okA4 = sp.simplify(sp.expand(lhs - rhs)) == 0
+lhs_c = law(Tm(bt, -1), Tm(Kt, -1), Tm(Nt, 1), extra=1); rhs_c = -law(bt, Kt, Nt, extra=1).subs(tq, -tq)
+okA4c = sp.simplify(sp.expand(lhs_c - rhs_c)) != 0
+check('A4 THEOREM: the law is time-reversal invariant (beta, K, d_t odd, N even): on explicit test fields the T-image of the residual is '
+      'minus the residual; control: an added time-even source + N breaks the invariance. A white-hole (Q < 0) slicing is then the time '
+      'reverse of a forward one', okA4 and okA4c, 'residual identity exact; control broken %s' % okA4c)
+# A5: linearised principal part with advection: (d_t - beta0 d_x)^2 u = c^2 v^2 d_x^2 u gives omega/k = -beta0 +- c v
+om5 = sp.Symbol('omega', real=True); k5, b5, c5, v5 = sp.symbols('k beta0 c v', positive=True)
+speeds5 = sorted({sp.simplify(d_ / k5) for d_ in sp.solve((om5 + b5 * k5)**2 - (c5 * v5 * k5)**2, om5)}, key=str)
+vfast = max(rts); inward = all(sp.simplify(sp_.subs({c5: 1, v5: vfast, b5: sp.Rational(11, 10)})) < 0 for sp_ in speeds5)
+outward = any(sp.simplify(sp_.subs({c5: 1, v5: vfast, b5: sp.Rational(9, 10)})) > 0 for sp_ in speeds5)
+check('A5 THEOREM (principal part, linearised about a background): every characteristic moves at -beta +- v c_l in labels; with v_max = 1 '
+      '(kappa = kappa_max, q = 1/3) all point inward iff beta > v_max c_l; the label-frame law moves sqrt(mu) labels/tick at every beta',
+      set(speeds5) == {-b5 + c5 * v5, -b5 - c5 * v5} and inward and outward, 'omega/k = %s; inward at beta = 1.1 c_l, not at 0.9 c_l' % speeds5)
+print('NOT CHECKED: that the surface beta = v_max c_l lies at or outside the horizon needs beta/c_l to rise monotonically inward; B2 '
+      'checks only that on the attractor the shift-wave sonic surface sits outside R = 2M')
 print('== B. finite diagnostics: spherical vacuum ADM, tied lapse, normal-frame wave shift, mu = 3/4, kappa = 2/3, excised inside 2M')
 src = tick_src(KAP, MU)
 runs = {}
@@ -180,7 +218,7 @@ for Q0, (rows, _) in runs.items():
 fin = np.array([runs[q][0][-1] for q in (4.0, 8.0, 6.0)])
 spr = lambda j: (fin[:, j].max() - fin[:, j].min()) / fin[:, j].mean()
 check('B1 DIAGNOSTIC: three different starting slicings (label-family Q0 = 4, 8, and 6 with a 20% shift bump) end on one stationary '
-      'horizon-regular exterior: an attractor, not a family', max(spr(1), spr(2), spr(3)) < 0.05 and all(abs(fin[i, 1] - runs[q][0][0][1]) > 0.1 for i, q in enumerate((4.0, 8.0))),
+      'horizon-regular exterior (a common end state from these three starts; no other perturbation is tested)', max(spr(1), spr(2), spr(3)) < 0.05 and all(abs(fin[i, 1] - runs[q][0][0][1]) > 0.1 for i, q in enumerate((4.0, 8.0))),
       'spread l_r max %.3f, l_t min %.3f, N(2M) %.3f' % (spr(1), spr(2), spr(3)))
 rw = runs[4.0][0]; lrm = max(rw[-1][1], rw[-1][4]); ltm = rw[-1][2]; Rgs = rw[-1][8]
 check('B2 DIAGNOSTIC: on the attractor every exterior edge is inside the window at every far phase with Delta = 1 '
@@ -188,8 +226,8 @@ check('B2 DIAGNOSTIC: on the attractor every exterior edge is inside the window 
       lrm <= 2.0 and ltm >= 0.125 and Rgs > 2.0, 'l_r max %.2f (log2 %.2f), l_t min %.3f, R_gs %.2f M' % (lrm, math.log2(lrm), ltm, Rgs))
 drift = max(abs(rw[-1][j] / rw[-2][j] - 1) for j in (1, 2, 3))
 check('B3 DIAGNOSTIC: stationary: exterior edges and lapse drift < 3% between t = 80 and 120 M (400 M scratch run: l_r max 1.78-1.86)', drift < 0.03, 'drift %.4f' % drift)
-# B4: core signal: a small change of the core's shift (any core history, a Q reversal included, enters the gauge this way;
-# a finite flip of the core crashes the excised interior in both laws) and the exterior response, normal frame vs label frame
+# B4: core signal: one small linear change of the core's shift (one seed, one location, one run; a finite flip of the core,
+# such as a Q reversal, crashes the excised interior in both laws and is not tested) and the exterior response, normal frame vs label frame
 rg, Y = runs[8.0][1]; RR = rg * np.sqrt(Y[1]); Rin8 = RR[3]
 seed = 1e-6 * np.exp(-((RR - 1.0) / 0.25)**2)
 def resp(law, T, lo, hi):
@@ -202,7 +240,7 @@ def resp(law, T, lo, hi):
     R2 = rg * np.sqrt(out[0][1][1]); m = (R2 > lo) & (R2 < hi)
     return min(out[0][0], out[1][0]), np.abs(out[1][1][4][m] - out[0][1][4][m]).max() / 1e-6
 tn = resp('normal', 15.0, 2.0, 8.0); tn1 = resp('normal', 1.4, 2.0, 3.0); tl = resp('label', 1.4, 2.0, 3.0)
-check('B4 DIAGNOSTIC: core signal (shift seed at R = 1.0 M, inside the horizon; grid to %.2f M): under the normal-frame law the '
+check('B4 DIAGNOSTIC: one linear core seed (shift seed 1e-6 at R = 1.0 M, inside the horizon; grid to %.2f M): under the normal-frame law the '
       'exterior response stays at the numerical-leak level for 15 M; under the label-frame law it is order one at 2-3 M within 1.4 M '
       '(that law then fails on this data)' % Rin8, tn[0] >= 14.9 and tn[1] < 1e-3 and tl[0] >= 1.3 and tl[1] > 0.05 and tl[1] > 100 * tn1[1],
       'response/seed: normal %.1e (2-8 M, t %.1f), %.1e (2-3 M, 1.4 M); label %.1e (2-3 M, t %.2f)' % (tn[1], tn[0], tn1[1], tl[1], tl[0]))
@@ -226,11 +264,14 @@ r10 = [x for x in runs[4.0][0] if abs(x[0] - 80.0) < 1e-3] or [runs[4.0][0][-1]]
 dres = max(abs(rh[-1][j] / r10[0][j] - 1) for j in (1, 2, 3))
 check('B7 DIAGNOSTIC: resolution h = 0.05 vs 0.1 at 80 M agree', dres < 0.03, 'max rel diff %.4f' % dres)
 print('== C. estimates')
-check('C1 ESTIMATE: Earth/Kerr frame-dragging: the stationary rotating equation differs from the register one only by the light-speed '
-      'factor N^2 gamma^jj, a relative O(GM/Rc^2) = 7e-10 at the Earth; the ~4e-15 edge ring is unchanged (extreme Kerr not recomputed)', True, '7e-10')
-check('C2 ESTIMATE: the exterior keeps its slicing through any core history (B4), so a core bounce stays behind the horizon until the '
-      '(L/r_s)^2 per light-crossing leak of the register estimate: no prompt re-emergence', True, 'Cyg X-1 bound not challenged')
+GMRc2 = 6.674e-11 * 5.972e24 / (6.371e6 * 2.998e8**2)
+print('ESTIMATE: Earth frame dragging, at first order in the rotation rate (A3): the stationary rotating equation differs from the register '
+      'one by the light-speed factor N^2 gamma^jj, a relative O(GM/Rc^2) = %.1e at the Earth; the ~4e-15 edge ring is unchanged; extreme '
+      'Kerr not recomputed; the O(Omega^2) advection of A3 is not estimated' % GMRc2)
+print('NOT CHECKED: that the exterior keeps its slicing through any core history; B4 tests one linear seed in one run, and a finite core '
+      'Q flip crashes the excised interior in both laws, so prompt re-emergence after a bounce is neither excluded nor shown here')
 print('supplied: continuum ADM limit, spherical symmetry, mu = 3/4, kappa (here at its causal maximum), on-shell matter reading of the')
 print('  momentum-constraint part, flat-label Laplacian times N^2/A, excision, KO dissipation, Dirichlet outer boundary at r = 70.')
 print('elapsed %.1f s' % (time.time() - T0))
 print('TOTAL: PASS=%d FAIL=%d' % tuple(NP))
+sys.exit(0 if NP[1] == 0 else 1)

@@ -9,9 +9,9 @@ T4 Born transport: supply-demand existence on many-body Margolus half-ticks; max
    equivariance and independence of unentangled relays.
 T5 cell factorisation: corner-set products, rotation commutant, Hilbert-space factorisations, spin content.
 T6 cubic-frustum Lorentzian Regge FRW: explicit Minkowski dihedrals, Schlaefli, exact constraint vs (1 - rho/rho*).
-Finite diagnostics of supplied models; no physical identification.
+Finite diagnostics of supplied models; no physical identification. Exits nonzero if any check fails (2026-11-14).
 """
-import itertools, time
+import sys, itertools, time
 import numpy as np
 from scipy.linalg import expm
 from scipy.optimize import linprog, brentq
@@ -467,3 +467,4 @@ check('dust l ~ t^(2/3), radiation l ~ t^(1/2) at late times (rho << rho*); earl
       abs(ex[0] - 2 / 3) < 1e-3 and abs(ex[1] - 0.5) < 1e-3 and abs(ex[2] - 1) < 1e-3, ' '.join(f'{e:.4f}' for e in ex))
 print(f'elapsed_seconds {time.time() - T0:.1f}')
 print(f'TOTAL: PASS={NP} FAIL={NF}')
+sys.exit(0 if NF == 0 else 1)

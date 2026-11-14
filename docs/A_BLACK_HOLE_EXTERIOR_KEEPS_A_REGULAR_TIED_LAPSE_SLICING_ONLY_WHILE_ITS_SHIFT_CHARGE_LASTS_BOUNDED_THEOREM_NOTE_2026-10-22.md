@@ -1,10 +1,10 @@
 ---
 claim_id: a_black_hole_exterior_keeps_a_regular_tied_lapse_slicing_only_while_its_shift_charge_lasts_bounded_theorem_note_2026-10-22
 claim_type: bounded_theorem
-claim_scope: "In the continuum ADM limit of the response law, in spherical symmetry, for a Schwarzschild exterior under the update law's tied lapse (N^2 = 3/(1/A + 2/B) read from the edges) and the wave shift in its on-shell form with mu = 3/4: (A) exact: a stationary slicing has N^2 gamma_RR = 1 and reduces to dr/dR = sqrt(gamma(3 gamma - 2 s^2)) with 3 f gamma^2 - (3 + 2 s^2 f - beta^2) gamma + 2 s^2 = 0 (s = r/R, f = 1 - 2M/R), edges l_r = (3 gamma - 2 s^2)^(-1/2) and l_t = 1/s, and vacuum shift beta^r = Q/r^2 + a r; the root that is flat far away is the static type at the horizon (N and l_r to 0), so a slicing regular through the horizon must pass a double-root point outside it and is tuned, one per Q; at such a horizon the radial light speed in labels equals beta^r, so a label-frame shift wave crosses the horizon outward; the stationary charge is Q = -(16 pi/3) int r^3 S^r/A dr, the matter's radial momentum moment, is odd under time reversal, and slicings with Q < 0 cross only the past horizon. (B) Finite diagnostics: the regular family exists for 0 < Q <~ 10 M^2 with its critical point at R = 3.2-4.0 M, tangential edges >= 0.32 outside the horizon, and a radial edge peak of 61 (Q = 0.25) to 1.1 (Q = 10); every far phase stays inside the window [2^(-3-m), 2^(1+Delta-m)] outside the horizon only for 5.5 <~ Q <~ 10 (Delta = 1) or 3.2 <~ Q <~ 10 (Delta = 2). In a nonlinear vacuum evolution excised inside the horizon, the Q = 4 member is stationary while the core holds Q; with the shift wave advected in the normal frame the charge drains into the hole (4.0 to 1.2 in 32 M); with the source read literally on the flat lattice it runs through zero in 6 M. So under the shift law as written, a time-symmetric core bounce reverses Q and the exterior is left on the static slicing, whose edges reach the window floor outside the horizon: a visible bounce, in tension with black-hole observations. The cure tested, cells inside a trapped surface keep their shift, is a candidate clause, not derived and not adopted; it holds Q at its trapping value 3.6-5.0 M^2 and needs Delta >= 2. Supplied: the continuum ADM limit, spherical symmetry, mu = 3/4, the on-shell source, the flat-label Laplacian, excision boundary conditions and dissipation, and Q at trapping from the sibling collapse runs."
+claim_scope: "In the continuum ADM limit of the response law, in spherical symmetry, for a Schwarzschild exterior under the update law's tied lapse (N^2 = 3/(1/A + 2/B) read from the edges) and the wave shift of #9952 in its on-shell form with mu = 3/4 (both supplied conditional definitions, zero premise weight): (A) exact: a stationary slicing has N^2 gamma_RR = 1 and reduces to dr/dR = sqrt(gamma(3 gamma - 2 s^2)) with 3 f gamma^2 - (3 + 2 s^2 f - beta^2) gamma + 2 s^2 = 0 (s = r/R, f = 1 - 2M/R), edges l_r = (3 gamma - 2 s^2)^(-1/2) and l_t = 1/s, and vacuum shift beta^r = Q/r^2 + a r; the root that is flat far away is the static type at the horizon (N and l_r to 0), so a slicing regular through the horizon must pass a double-root point outside it and is tuned, one per Q; at such a horizon the radial light speed in labels equals beta^r, so a label-frame shift wave crosses the horizon outward; the stationary charge is Q = -(16 pi/3) int r^3 S^r/A dr, the matter's radial momentum moment, is odd under time reversal, and slicings with Q < 0 cross only the past horizon. (B) Finite diagnostics: the regular family exists for 0 < Q <~ 10 M^2 with its critical point at R = 3.2-4.0 M, tangential edges >= 0.32 outside the horizon, and a radial edge peak of 61 (Q = 0.25) to 1.1 (Q = 10); every far phase stays inside the window [2^(-3-m), 2^(1+Delta-m)] outside the horizon only for 5.5 <~ Q <~ 10 (Delta = 1) or 3.2 <~ Q <~ 10 (Delta = 2). In a nonlinear vacuum evolution excised inside the horizon, the Q = 4 member is stationary while the core holds Q; with the shift wave advected in the normal frame the charge drains into the hole (4.0 to 1.2 in 32 M); with the source read literally on the flat lattice it runs through zero in 6 M. So under the shift law as written, a time-symmetric core bounce would reverse Q and leave the exterior on the static slicing, whose edges reach the window floor outside the horizon: a visible bounce, in tension with black-hole observations (argued from A3-A5 and C2-C3; the matter collapse through the crunch is not run). The cure tested, cells inside a trapped surface keep their shift, is a candidate clause, not derived and not adopted; it holds Q at its trapping value 3.6-5.0 M^2 and needs Delta >= 2. Supplied: the continuum ADM limit, spherical symmetry, mu = 3/4, the on-shell source, the flat-label Laplacian, excision boundary conditions and dissipation, and Q at trapping from the sibling collapse runs."
 upstream_dependencies:
   - minimal_axioms
-  - candidate_laws
+  - wave_law_shift_sourced_by_the_momentum_constraint_keeps_no_slice_bend_memory_and_stays_causal_bounded_theorem_note_2026-10-22
 runner: scripts/a_black_hole_exterior_keeps_a_regular_tied_lapse_slicing_only_while_its_shift_charge_lasts_2026_10_22.py
 ---
 
@@ -13,7 +13,9 @@ runner: scripts/a_black_hole_exterior_keeps_a_regular_tied_lapse_slicing_only_wh
 Claim type: bounded_theorem.
 Primary runner: `scripts/a_black_hole_exterior_keeps_a_regular_tied_lapse_slicing_only_while_its_shift_charge_lasts_2026_10_22.py`.
 
-The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. Its strong-field item found that, with the wave shift, the window floor stays inside the horizon through horizon formation, and left open what happens after the core crunches. If the exterior relaxes to the static zero-shift slicing, the tied lapse N = sqrt(1 - 2M/R) puts an edge at the floor at R of about 2.01 to 2.03 M, outside the horizon. This note finds all stationary exterior slicings, asks which one the evolution keeps, and tests cures. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) fix none of the inputs used here. Units are G = c = M = 1, edges are in far-edge units, r is the site label and R the areal radius.
+Model status (2026-11-14). The update law's tied lapse and the response law's shift sentence (CL-1 and CL-3 in the three-law numbering of the originating register) are used here as supplied conditional model definitions with zero premise weight; the wave shift is the one of [WAVE_LAW_SHIFT_SOURCED_BY_THE_MOMENTUM_CONSTRAINT_KEEPS_NO_SLICE_BEND_MEMORY_AND_STAYS_CAUSAL_BOUNDED_THEOREM_NOTE_2026-10-22.md](WAVE_LAW_SHIFT_SOURCED_BY_THE_MOMENTUM_CONSTRAINT_KEEPS_NO_SLICE_BEND_MEMORY_AND_STAYS_CAUSAL_BOUNDED_THEOREM_NOTE_2026-10-22.md) (#9952, carried in this PR). The originating register text is not in this repository, and these clauses are not the entries of the same number in [docs/CANDIDATE_LAWS.md](CANDIDATE_LAWS.md). No clause is adopted.
+
+The originating register's strong-field item (logged #9957, not in this repository; a historical reported result, unverified here) found that, with the wave shift, the window floor stays inside the horizon through horizon formation, and left open what happens after the core crunches. If the exterior relaxes to the static zero-shift slicing, the tied lapse N = sqrt(1 - 2M/R) puts an edge at the floor at R of about 2.01 to 2.03 M, outside the horizon. This note finds all stationary exterior slicings, asks which one the evolution keeps, and tests cures. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) fix none of the inputs used here. Units are G = c = M = 1, edges are in far-edge units, r is the site label and R the areal radius.
 
 ## Statement
 
@@ -36,7 +38,7 @@ C. Evolution (finite diagnostics; vacuum ADM with the tied lapse, labels excised
 2. With the shift wave advected in the normal frame at the local radial light speed, (d_t - beta d_r)^2 beta = mu (N^2/A) Lap beta, nothing enters through the excision boundary, but the charge falls into the hole. Q at 6M drops from 4.0 to 1.2 in 32 M, and the radial edge passes 4 outside the horizon. The slicing heads to the static one.
 3. With the source read literally on the flat lattice, Lap beta_i - 2 d_j(K_ij - delta_ij K) rather than its on-shell value, the source has a vacuum part near the hole: 2V is about 65 at R = 2.5 M, against a covariant momentum constraint of 1e-6. It drives Q through zero within 6 M. The on-shell equality in the register holds only at linear order.
 
-So under the shift law as written, the core sets Q (A4), its bounce reverses Q (A5), and the reversal reaches the exterior (A3). The advected and literal readings also lose Q (C2, C3). In each case the exterior is left on the static slicing, whose edges reach the window walls outside the horizon: a visible bounce.
+So under the shift law as written, the core sets Q (A4), a time-symmetric bounce would reverse Q (A5; the bounce itself is argued, not run), and the reversal reaches the exterior (A3). The advected and literal readings also lose Q in the runs (C2, C3). In each case the exterior is left on the static slicing, whose edges reach the window walls outside the horizon: a visible bounce. This is a statement about this shift law in these runs, not about every shift law (see Not claimed).
 
 ## Derivation
 
@@ -44,7 +46,7 @@ A1 substitutes the stationary metric into N^2 = 3/(1/A + 2/B) and into beta^r = 
 
 ## Checks
 
-The runner prints 14 checks: A1-A5 exact (sympy; A4 is checked numerically on a smooth profile to 1e-4); B1-B2 and C1-C3 finite diagnostics; D1-D4 estimates.
+The runner prints 14 checks: A1-A5 exact (sympy; A4 is checked numerically on a smooth profile to 1e-4); B1-B2 and C1-C3 finite diagnostics; D1-D4 estimates. It exits nonzero if any check fails.
 
 ## Estimates against measurement
 
@@ -66,12 +68,13 @@ Not claimed: that no shift law keeps the exterior regular. A law that keeps Q in
 
 ## Dependencies
 
-- [minimal_axioms](MINIMAL_AXIOMS_2026-06-29.md)
-- [candidate_laws](CANDIDATE_LAWS.md)
-- Used: the wave-shift collapse runs (Q of 3.6 to 5.0 M^2 at trapping, the static-floor radius, PG not a stationary state); the static zero-shift end state (floor-horizon B2); no trumpet labels without a shift and gauge shocks of the tied lapse (strong-field-tick C5, A4); the time-symmetric turn at the floor (qcrush B3).
+- [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md): they fix none of the supplied inputs.
+- Supplied model (originating three-law register, not in this repository; stated here as conditional definitions with zero premise weight). [docs/CANDIDATE_LAWS.md](CANDIDATE_LAWS.md) does not contain these clauses.
+- [WAVE_LAW_SHIFT_SOURCED_BY_THE_MOMENTUM_CONSTRAINT_KEEPS_NO_SLICE_BEND_MEMORY_AND_STAYS_CAUSAL_BOUNDED_THEOREM_NOTE_2026-10-22.md](WAVE_LAW_SHIFT_SOURCED_BY_THE_MOMENTUM_CONSTRAINT_KEEPS_NO_SLICE_BEND_MEMORY_AND_STAYS_CAUSAL_BOUNDED_THEOREM_NOTE_2026-10-22.md) (#9952, carried in this PR): the wave shift used here.
+- Used as supplied inputs from sources not in this repository (historical reported results, unverified here): the wave-shift collapse runs (logged #9957: Q of 3.6 to 5.0 M^2 at trapping, the static-floor radius, PG not a stationary state); the static zero-shift end state (floor-horizon B2), no trumpet labels without a shift and gauge shocks of the tied lapse (strong-field-tick C5, A4), and the time-symmetric turn at the floor (qcrush B3), which name source notes outside this theme's source list.
 
 ## How to run
 
 python3 scripts/a_black_hole_exterior_keeps_a_regular_tied_lapse_slicing_only_while_its_shift_charge_lasts_2026_10_22.py
 
-AUDIT_TIMEOUT_SEC = 120; about 30-40 s, peak about 130 MB; ends with TOTAL: PASS=14 FAIL=0.
+AUDIT_TIMEOUT_SEC = 120; about 30-40 s, peak about 130 MB; ends with TOTAL: PASS=14 FAIL=0 and exits nonzero if any check fails.

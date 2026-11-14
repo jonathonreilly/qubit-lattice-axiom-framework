@@ -1,19 +1,20 @@
 ---
 claim_id: edge_register_set_census_cube_edges_alone_give_no_hinge_sum_and_six_edges_per_site_give_two_tensor_polarisations_on_the_edge_cone_bounded_theorem_note_2026-10-22
 claim_type: bounded_theorem
-claim_scope: "For the linearised Euclidean Regge hinge sum around flat cells, with the update law's fixed lapse and zero shift (tick edges fixed, mixed edges slaved to the mean of their spatial ends): (cube edges) the edges of the update law's two cube tilings are exactly the 3 axis edges per site, each in one cube, with no triangle among them; at every momentum with all components nonzero their lengths are a flat vertex displacement, so with the other lengths slaved by stationarity they carry no stiffness, with the other lengths frozen they are three non-metric strains gapped at the cell scale, and with the diagonals frozen inside the slab their light branches are direction-dependent and off the edge cone; (Kuhn slice) with the 7 spatial Kuhn edges per site as registers there are 2 light branches on the edge cone at order k^2 with lattice corrections of order (ka)^2, plus 4 zero-frequency branches and one breathing strain; (six edges per site) with 3 axis edges plus the face diagonals joining even-sum sites (five tetrahedra per cube, alternating), 6 registers per site match the metric count, and exactly 4 light roots (the two tensor polarisations) lie on the edge cone within 6e-5 along the axis, body-diagonal and one generic direction at |k| = 0.02. The full 4D Freudenthal and 3D Kuhn controls reproduce the existing second-variation values. Supplied model, finite diagnostic: linear order, Euclidean continuation, a supplied slaving map, finite momenta; no register dynamics, no interaction, no continuum limit."
+claim_scope: "For the linearised Euclidean Regge hinge sum around flat cells, with the update law's fixed lapse and zero shift (tick edges fixed, mixed edges slaved to the mean of their spatial ends): (cube edges) the edges of the update law's two cube tilings are exactly the 3 axis edges per site, each in one cube, with no triangle among them; at every momentum with all components nonzero their lengths are a flat vertex displacement, so with the other lengths slaved by stationarity they carry no stiffness, with the other lengths frozen they are three non-metric strains gapped at the cell scale, and with the diagonals frozen inside the slab their light branches are direction-dependent and off the edge cone; (Kuhn slice) with the 7 spatial Kuhn edges per site as registers there are 2 light branches on the edge cone at order k^2 with lattice corrections of order (ka)^2, plus 4 zero-frequency branches and one breathing strain; (six edges per site) with 3 axis edges plus the face diagonals joining even-sum sites (five tetrahedra per cube, alternating), 6 registers per site match the metric count (a dimension count only; that no non-metric strain remains is not shown), and exactly 4 light roots (the two tensor polarisations) lie on the edge cone within 6e-5 along the axis, body-diagonal and one generic direction at |k| = 0.02 (sampled; other momenta not censused). The full 4D Freudenthal and 3D Kuhn controls reproduce the existing second-variation values. Supplied model, finite diagnostic: linear order, Euclidean continuation, a supplied slaving map, finite momenta; no register dynamics, no interaction, no continuum limit."
 upstream_dependencies:
   - minimal_axioms
-  - candidate_laws
 runner: scripts/edge_register_set_census_cube_edges_alone_give_no_hinge_sum_and_six_edges_per_site_give_two_tensor_polarisations_on_the_edge_cone_2026_10_22.py
 ---
 
-# Edge-register set census: cube edges alone give no hinge sum, and six edges per site give two tensor polarisations on the edge cone
+# Edge-register set census: cube edges alone give no hinge sum, and six edges per site give two tensor polarisations on the edge cone at the sampled momenta
 
 Claim type: bounded_theorem.
 Primary runner: `scripts/edge_register_set_census_cube_edges_alone_give_no_hinge_sum_and_six_edges_per_site_give_two_tensor_polarisations_on_the_edge_cone_2026_10_22.py`.
 
-The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. Its update law (CL-1 in the three-law numbering) tiles the sites of Z^3 in two ways by 2x2x2 cubes and reads each cube's tick from its edges, with a lapse fixed by the edges (not varied) and no shift; its response law (CL-3) is a stationary phase that includes the Regge hinge sum. This note asks which set of edges, taken as registers, carries the hinge sum's spin-2 content: the tilings' cube edges alone, the 7 Kuhn edges per site, or the six-edge set (axis edges plus the even-sum face diagonals) on which the register's update law now places its edge registers. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) fix none of the choices compared here.
+Model status (2026-11-14). The update and response laws (CL-1 and CL-3 in the three-law numbering of the originating register) are used here as supplied conditional model definitions with zero premise weight. The originating register text is not in this repository, and these clauses are not the entries of the same number in [docs/CANDIDATE_LAWS.md](CANDIDATE_LAWS.md). No clause is adopted.
+
+The update law tiles the sites of Z^3 in two ways by 2x2x2 cubes and reads each cube's tick from its edges, with a lapse fixed by the edges (not varied) and no shift; the response law is a stationary phase that includes the Regge hinge sum. This note asks which set of edges, taken as registers, carries the hinge sum's spin-2 content: the tilings' cube edges alone, the 7 Kuhn edges per site, or the six-edge set (axis edges plus the even-sum face diagonals) on which the register's update law now places its edge registers. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) fix none of the choices compared here.
 
 ## Statement
 
@@ -27,8 +28,8 @@ A. Cube edges alone.
 
 B. Controls on the full complexes (every edge a register).
 
-4. The 3D Kuhn complex (7 edge classes) has 6 metric zero modes and one massive breathing mode at k = 0, with eigenvalue -24 in the raw S_R orientation, and 3 vertex-displacement zeros at generic k. The 4D Freudenthal complex (15 edge classes, 24 path simplices per 4-cell) has 11 zeros at k = 0 and massive eigenvalues -48, -16, -16, -16. These reproduce the values in the existing notes `CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09` and `CUBIC_COXETER_REGGE_3PLUS1_TICK_EXTENSION_SECOND_VARIATION_NARROW_THEOREM_NOTE_2026-06-09`.
-5. On the 4D complex at generic k there are 5 exact zeros: 4 displacements and one flat branch that is not in the span of metric and gauge directions. At small k, 6 eigenvalues scale as k^2 and 4 are gapped at the cell scale.
+4. The 3D Kuhn complex (7 edge classes) has 6 metric zero modes and one massive breathing mode at k = 0, with eigenvalue -24 in the raw S_R orientation, and 3 vertex-displacement zeros at generic k. The 4D Freudenthal complex (15 edge classes, 24 path simplices per 4-cell) has 11 zeros at k = 0 and massive eigenvalues -48, -16, -16, -16. These reproduce the values in the existing notes [CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09](CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09.md) and [CUBIC_COXETER_REGGE_3PLUS1_TICK_EXTENSION_SECOND_VARIATION_NARROW_THEOREM_NOTE_2026-06-09](CUBIC_COXETER_REGGE_3PLUS1_TICK_EXTENSION_SECOND_VARIATION_NARROW_THEOREM_NOTE_2026-06-09.md).
+5. On the 4D complex at one random k there are 5 exact zeros: 4 displacements and one flat branch that is not in the span of metric and gauge directions (the held "at every k" is narrowed to that sampled momentum). At small k, 6 eigenvalues scale as k^2 and 4 are gapped at the cell scale.
 
 C. Spatial Kuhn edges as registers, fixed lapse, zero shift.
 
@@ -37,7 +38,7 @@ C. Spatial Kuhn edges as registers, fixed lapse, zero shift.
 
 D. Six edges per site.
 
-8. Taking the 3 axis edges plus the face diagonals joining even-sum sites (five tetrahedra per cube, alternating between neighbouring cubes) gives 48 registers per 8-site cell, 6 per site, equal to the number of metric components. An independent slab code built from the spatial triangulation finds exactly 4 light roots, the two tensor polarisations, on the edge cone along each tested direction.
+8. Taking the 3 axis edges plus the face diagonals joining even-sum sites (five tetrahedra per cube, alternating between neighbouring cubes) gives 48 registers per 8-site cell, 6 per site, equal to the number of metric components. This is a dimension count: it does not show that the map from metric components to these lengths is injective and onto, so absence of non-metric strain is not established. An independent slab code built from the spatial triangulation finds exactly 4 light roots, the two tensor polarisations, on the edge cone along each tested direction at |k| = 0.02.
 
 ## Derivation
 
@@ -47,17 +48,17 @@ Item 2. In Fourier space the axis length along direction i changes by (e^{i k_i}
 
 Item 3. Slaving the other lengths by stationarity is the Schur complement of Q on the axis block. Since every axis field completes to a vertex displacement (item 2), and displacements carry zero action, the Schur complement vanishes. Freezing the other lengths instead keeps the axis block of Q, which has no zero mode at k = 0.
 
-Items 4 to 8. Q(k) is assembled from the Schlaefli gradients of each simplex (finite-difference Hessians, Richardson-extrapolated) and the analytic Hessian of each hinge area. The sync slab replaces the tick edge by a fixed length tau and each mixed edge by the mean of its two spatial ends times the length ratio; the roots are those of det Q(k_s, z) = 0 with z = e^{-E}, from the Fourier coefficients of Q in k_t. Light roots are those with 0.5 < |E|/|k| < 2 and small imaginary part. The six-edge set has the metric count per site, so by counting no non-metric strain remains; this count is stated, not separately computed.
+Items 4 to 8. Q(k) is assembled from the Schlaefli gradients of each simplex (finite-difference Hessians, Richardson-extrapolated) and the analytic Hessian of each hinge area. The sync slab replaces the tick edge by a fixed length tau and each mixed edge by the mean of its two spatial ends times the length ratio; the roots are those of det Q(k_s, z) = 0 with z = e^{-E}, from the Fourier coefficients of Q in k_t. Light roots are those with 0.5 < |E|/|k| < 2 and small imaginary part. The six-edge set has the metric count per site; a count alone does not exclude non-metric strain (that would need the length map to be a bijection onto metrics), so no such conclusion is drawn.
 
 ## Checks
 
-The runner ends with `TOTAL: PASS=15 FAIL=0` in about 2 s.
+The runner ends with `TOTAL: PASS=15 FAIL=0` in about 2 s and exits nonzero if any check fails.
 
 Exact checks and identities (checked numerically):
 - Cube edges on a 4^3 torus: 192 cube edges = 3 per site, each in exactly one cube; 64 sites in each tiling. That no diagonal is a cube edge and that the set has no triangle are stated, not separately tested.
 - Rank of the axis-length map: minimum 3 over 200 random momenta; one cube keeps 6 floppy shears.
 - 3D Kuhn control: 6 zeros and breathing eigenvalue -24 at k = 0; |Q G| = 1.4e-11 on vertex displacements at a random k.
-- 4D Freudenthal control: 11 zeros and massive eigenvalues -48, -16, -16, -16 at k = 0. At a random k: 5 exact zeros, displacement residual |QG|/|Q| = 9e-12, and the remaining flat branch at distance 0.86 from the metric-plus-gauge span with weight 0.30 on spatial edges.
+- 4D Freudenthal control: 11 zeros and massive eigenvalues -48, -16, -16, -16 at k = 0. At one random k: 5 exact zeros, displacement residual |QG|/|Q| = 9e-12, and the remaining flat branch at distance 0.86 from the metric-plus-gauge span with weight 0.30 on spatial edges.
 - Small-k census on the 4D complex: 5 zero, 6 scaling as k^2 (ratio over k-halving 4.000), 4 gapped at 16.0 or more. The split of the 6 into 2 tensor and 4 lapse, shift and trace channels is a reading, not computed.
 - Axis registers with other lengths slaved: |Q_eff|/|Q_axis| = 3e-11 at four random momenta.
 
@@ -72,12 +73,13 @@ Finite diagnostics (supplied model, finite diagnostic, no physical identificatio
 
 ## Boundary
 
-Supplied: the Freudenthal and Kuhn carriers and the five-tetrahedron triangulation compared; the Euclidean continuation and the low-k transfer form; the sync-slab reading of the fixed lapse and zero shift, including the slaving of mixed edges to the mean of their spatial ends; the tick lengths 1 and 0.7 a; the finite-difference steps, the Fourier truncation and the sampled momenta. Forced, given those: that the cube edges are the axis edges with no triangle; their rigidity and the vanishing of their slaved stiffness; the control spectra; two light branches on the edge cone at order k^2 for the Kuhn and six-edge register sets; the metric count of the six-edge set. Not claimed: that the six-edge set is the only register set with this census (the register's update law now places edge registers on exactly this set; this note supplies the census behind that choice, not uniqueness); a full census of the six-edge set at every momentum (three directions at one |k| are tested, and two near-zero roots along the generic direction are unresolved); any statement beyond linear order; any interacting or truncated register dynamics; the sign or normalisation of the Lorentzian action; any continuum limit.
+Supplied: the Freudenthal and Kuhn carriers and the five-tetrahedron triangulation compared; the Euclidean continuation and the low-k transfer form; the sync-slab reading of the fixed lapse and zero shift, including the slaving of mixed edges to the mean of their spatial ends; the tick lengths 1 and 0.7 a; the finite-difference steps, the Fourier truncation and the sampled momenta. Forced, given those: that the cube edges are the axis edges with no triangle; their rigidity and the vanishing of their slaved stiffness; the control spectra; two light branches on the edge cone at order k^2 for the Kuhn and six-edge register sets at the sampled momenta; the metric count of the six-edge set (a count, not a bijection). Not claimed: that the six-edge set is the only register set with this census (the register's update law now places edge registers on exactly this set; this note supplies the census behind that choice, not uniqueness); a full census of the six-edge set at every momentum (three directions at one |k| are tested, and two near-zero roots along the generic direction are unresolved); any statement beyond linear order; any interacting or truncated register dynamics; the sign or normalisation of the Lorentzian action; any continuum limit.
 
 ## Dependencies
 
 - [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md): Z^3 sites, one qubit per site, nearest-neighbour admissibility, records. They fix none of the supplied inputs above.
-- [Candidate-law register](CANDIDATE_LAWS.md): the two cube tilings, the edge registers and the fixed lapse and zero shift of the update law, and the hinge sum in the response law. Zero premise weight; results using it are conditional on it.
+- Supplied model (originating three-law register, not in this repository; stated here as conditional definitions with zero premise weight): the two cube tilings, the edge registers and the fixed lapse and zero shift of the update law, and the hinge sum in the response law. [docs/CANDIDATE_LAWS.md](CANDIDATE_LAWS.md) does not contain these clauses.
+- Main notes [CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09](CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09.md) and [CUBIC_COXETER_REGGE_3PLUS1_TICK_EXTENSION_SECOND_VARIATION_NARROW_THEOREM_NOTE_2026-06-09](CUBIC_COXETER_REGGE_3PLUS1_TICK_EXTENSION_SECOND_VARIATION_NARROW_THEOREM_NOTE_2026-06-09.md): their second-variation values are reproduced as controls, not used as premises.
 
 ## How to run
 
@@ -85,4 +87,4 @@ Supplied: the Freudenthal and Kuhn carriers and the five-tetrahedron triangulati
 python3 scripts/edge_register_set_census_cube_edges_alone_give_no_hinge_sum_and_six_edges_per_site_give_two_tensor_polarisations_on_the_edge_cone_2026_10_22.py
 ```
 
-Needs numpy and scipy. It is self-contained, declares `AUDIT_TIMEOUT_SEC = 120`, runs in about 2 s with about 70 MB resident, prints about 4.0 kB and ends with `TOTAL: PASS=15 FAIL=0`. Its random momenta are seeded; two repeated runs gave identical output apart from the elapsed-time line.
+Needs numpy and scipy. It is self-contained, declares `AUDIT_TIMEOUT_SEC = 120`, runs in about 2 s with about 70 MB resident, prints about 4.2 kB and ends with `TOTAL: PASS=15 FAIL=0`; it exits nonzero if any check fails. Its random momenta are seeded; two repeated runs gave identical output apart from the elapsed-time line.

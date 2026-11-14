@@ -7,8 +7,10 @@ B. finite edge registers: the displacement shift as an operator; what is and is 
 C. OS collapse: comoving-label representatives (edge-only generator) vs Painleve-Gullstrand-type ones (full generator).
 D. the minimal-strain shift: the gauge condition dual to the displacement generator.
 Units G = c = 1.  Self-contained (numpy, sympy).
+2026-11-14: C2's window statement corrected (hold finding 7); lines starting STATED are printed, not counted; the runner exits
+nonzero if any counted check fails.
 """
-import math, time, itertools
+import sys, math, time, itertools
 import numpy as np, sympy as sp
 
 AUDIT_TIMEOUT_SEC = 120
@@ -146,11 +148,11 @@ check('B3 THEOREM: moving a cube\'s 8 corners outward (a pure displacement, no c
 
 # ---------------------------------------------------------------- C. OS collapse
 print('== C. Oppenheimer-Snyder from rest at R0 (E^2 = 1 - r_s/R0)')
-check('C1 THEOREM (edge-only generator, matter on labels): the dust surface keeps its label sphere (rho_b sites across) and its '
-      'areal radius R_b is a spacetime scalar, so its mean tangential edge is l0 R_b/R0 on every slicing for unwrinkled '
-      'representatives; it meets L/8 before R_b = r_s iff R0 > 8 (l0/L) r_s, i.e. for every window phase once R0 > 16 r_s',
-      True, '; '.join('R0/r_s %g: l0/%g, floor first at %.0f%% of phases'
-                      % (x, x, 100 * min(1.0, max(0.0, math.log2(x / 8)))) for x in (10.0, 16.0, 100.0, 1e5)))
+print('STATED (not computed; not counted): C1 edge-only generator, matter on labels: the dust surface keeps its label sphere and its '
+      'areal radius R_b is a spacetime scalar, so for unwrinkled representatives its mean tangential edge is l0 R_b/R0 on every slicing; '
+      'it meets L/8 before R_b = r_s iff R0 > 8 (l0/L) r_s, so for every far phase l0 in [L, 2L] once R0 > 16 r_s | '
+      + '; '.join('R0/r_s %g: floor first at %.0f%% of far phases (log-uniform in [L, 2L], from that formula)'
+                  % (x, 100 * min(1.0, max(0.0, math.log2(x / 8)))) for x in (10.0, 16.0, 100.0, 1e5)))
 # C2: generalised Painleve-Gullstrand (Martel-Poisson, p = E) is Schwarzschild; interior closed FRW in areal labels
 r, M, E = sp.symbols('r M E', positive=True)
 V = sp.sqrt(E**2 - 1 + 2 * M / r); gTT = -1 + V**2 / E**2; gTr = V / E**2; grr = 1 / E**2
@@ -167,9 +169,22 @@ for x in (1.5, 3.0, 10.0, 100.0, 1e5):
 okin = all(abs(gmax - ge) < 1e-12 for _, _, gmax, ge in rows)
 check('C2 THEOREM (full generator: matter may move through the labels): the T = const slices of ds^2 = -dT^2 + E^-2 (dr + V dT)^2, '
       'V^2 = 2M/r - 2M/R0, are Schwarzschild, glued to the dust proper-time slices of the closed FRW interior; on a static '
-      'areal grid gamma_RR = 1/E^2 outside and 1/(1 - R^2 sin^2 chi0/R_b^2) in [1, 1/E^2] inside, so every edge stays in '
-      '[l0, l0/E] at every tick: inside [L/8, 2L] whenever 1/E <= 16 (R0 > 1.004 r_s)',
+      'areal grid gamma_RR = 1/E^2 outside and 1/(1 - R^2 sin^2 chi0/R_b^2) in [1, 1/E^2] inside, so every edge stays in [l0, l0/E] at every tick',
       ok_tt and ok_tr and ok_rr and okin, '; '.join('R0/r_s %g: 1/E %.3f' % (x, 1 / Ev) for x, Ev, _, _ in rows))
+# C2w (corrected 2026-11-14, hold finding 7): [l0, l0/E] lies in [L/8, 2L] iff L/8 <= l0 <= 2 L E. Some l0 fits iff 1/E <= 16
+# (R0 >= r_s/(1 - 1/256)); for the far phases l0 in [L, 2L] used in C1 (log-uniform) the fitting phases are [L, 2 L E], a fraction
+# max(0, 1 + log2 E); at l0 = 2L no bound collapse (E < 1) fits. Control: the held "inside [L/8, 2L] whenever 1/E <= 16" is rejected.
+lg = np.exp(np.linspace(0.0, math.log(2.0), 200001))            # far phases l0/L in [1, 2], log-uniform
+wrow = []
+for x, Ev, _, _ in rows:
+    fit = (lg >= 1 / 8) & (lg / Ev <= 2)
+    wrow.append((x, Ev, fit.mean(), max(0.0, 1 + math.log2(Ev)), 1 / Ev <= 16, (2.0 / Ev) <= 2.0))
+okw = all(abs(fn - ft) < 1e-4 for _, _, fn, ft, _, _ in wrow) and all(ex for *_, ex, _ in wrow) and not any(top for *_, top in wrow)
+held_rejected = any(ex and fn < 1 for _, _, fn, _, ex, _ in wrow)
+check('C2w THEOREM (window containment, corrected): [l0, l0/E] is inside [L/8, 2L] iff L/8 <= l0 <= 2 L E; a fitting l0 exists iff '
+      '1/E <= 16 (R0 >= 1.0039 r_s), but for far phases l0 in [L, 2L] only l0 <= 2 L E fit, a log-uniform fraction 1 + log2 E; at '
+      'l0 = 2L no bound collapse fits. Control: the held "whenever 1/E <= 16" is rejected', okw and held_rejected,
+      '; '.join('R0/r_s %g: far phases fitting %.3f (formula %.3f), l0 = 2L fits %s' % (x, fn, ft, top) for x, _, fn, ft, _, top in wrow))
 # C3: the block-rotation limit sin 2 theta_i = b_i <= 1.  b_i = beta^R n_i sin(eps0)/(sqrt3 rms_j sqrt(1+(E^2-1) n_j^2))
 def b_max(Rr, x, s):
     Ev2 = 1 - 1 / x; Vv = math.sqrt(max(1 / Rr - 1 / x, 0))           # r_s = 1
@@ -186,7 +201,7 @@ for e0 in (0.0075, 0.0375):
         sat.append((e0, x, hi))
 okr = all(Rs < 1e-3 for _, _, Rs in sat)
 check('C3 THEOREM: the PG-type grid is static until the shift needs more than one cube per tick (sin 2 theta = 1), at '
-      'R_sat ~ (2/3) sin^2(eps0) M / (1 + ...) deep inside the horizon; the floor is no obstruction outside horizons',
+      'R_sat ~ (2/3) sin^2(eps0) M / (1 + ...) deep inside the horizon (sampled eps0 and R0)',
       okr, '; '.join('eps0 %.4f R0/r_s %g: R_sat/r_s %.1e' % t for t in sat))
 # C4: CL-1 lapse vs the PG unit lapse on that grid (rms_j sqrt(gamma^jj) = sqrt((2 + 1/g)/3) for gamma_RR = g)
 mis = [(x, math.sqrt(3 / (2 + (1 - 1 / x))) - 1) for x in (1.5, 3.0, 10.0, 100.0)]
@@ -214,15 +229,15 @@ for _ in range(5):
     resid = hv - Bm @ beta
     okd &= np.allclose(beta, xi, atol=1e-10) and np.allclose(Bm.T @ resid, 0, atol=1e-10)
     res.append(np.linalg.norm(resid) / np.linalg.norm(hv))
-check('D1 THEOREM: the minimal-strain shift (least sum of squared edge rates) removes exactly the displacement part of the edge '
-      'motion and leaves the rate orthogonal to every displacement (J^T dn = 0 on the lattice): it fixes beta uniquely '
-      '(up to Killing motions) and is zero-strain on the marginally bound PG grid (C2 with E = 1, gamma static)',
+check('D1 THEOREM: at five random generic k the minimal-strain shift (least sum of squared edge rates) removes exactly the '
+      'displacement part of the edge motion and leaves the rate orthogonal to every displacement; it fixes beta uniquely at those k '
+      '(uniqueness up to Killing motions and zero strain on the marginally bound PG grid are stated, not computed)',
       okd, 'beta = xi to 1e-10; residual rate fraction (TT + trace, invariant) %s' % ', '.join('%.2f' % q for q in res))
-check('D2 THEOREM: with the full generator imposed and the shift fixed by minimal strain, the shift is still the multiplier of '
-      'the momentum constraint (A2), so the constraint holds and no ghost pair returns (the gauge is fixed, not broken); the '
-      'condition is elliptic: beta is nonlocal within a slice but, being gauge, carries no signal',
-      True, 'cf. momentum-constraint D1: the ghost pair needs a breaking that touches the shift in the action, not a gauge condition')
+print('STATED (not computed; not counted): D2 with the full generator imposed and the shift fixed by minimal strain, the shift is still '
+      'the multiplier of the momentum constraint (A2), so the constraint holds and the gauge is fixed, not broken; the condition is '
+      'elliptic, so beta is nonlocal within a slice but, being gauge, carries no signal')
 print('supplied: linearised GR (A, D), the CL-3 generator text (B), Martel-Poisson PG coordinates and the OS interior (C), '
       'eps0 0.0075-0.0375, unwrinkled representatives (C1).\nnot built: CL-1 tick under the full generator; block-pair current as matter translation; register-level collapse.')
 print('elapsed %.1f s' % (time.time() - T0))
 print('TOTAL: PASS=%d FAIL=%d' % tuple(NP))
+sys.exit(0 if NP[1] == 0 else 1)

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/glued_split_beside_unsplit_cubes_needs_a_one_sided_collar_and_forces_two_to_one_balance_2026_10_22.py
-runner_sha256: d651541132201c300b8cc0539aed9c2abbd50e68c259163fe342d2262d38e0ec
-input_fingerprint_sha256: 6f34dd3c1825650dfcdbd11788af8982f2bd83ee983e70867d9644ff6ed2538f
+runner_sha256: 39e5726fab2ced46cd9d140c380f87cd6879abc79c7aa589c71c7b387892999a
+input_fingerprint_sha256: cef09752da5ca5b18d65e5723a61f47fb2cde436cfa1fa4888cf0253a13cac91
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 10.69
+elapsed_sec: 10.29
 status: ok
 ----- stdout -----
 == A. ownership, tilings, nesting, closure
@@ -13,14 +13,14 @@ status: ok
 [PASS] A3 THEOREM: the children's triangulation is nested in the parent's but is no bisection of it (each first bisection of a parent corner tetrahedron draws a non-lattice edge) | 320 nested, 0 not; bad first bisections 6/6
 [PASS] A4 THEOREM (finite check): every pattern tested closes to a simplicial complex: children's tetrahedra where all 6 parent edges are bisected, else a cone from the cell centre over a canonical subdivision of each face | 9 patterns, unmatched faces 0, orphans 0; A: 916 tets, 60 bookkeeping points
 == B. windows force the interface (child units: axis [1,2], diagonal [sqrt2, 2sqrt2])
-[PASS] B1 THEOREM: a parent edge passes as two children inside their windows only when full, so all 48 edges a split bisects must be full, not just the 18 of its tiling cube | l1+l2 = l, l1,l2 >= L, l <= 2L => l1 = l2 = L, l = 2L
-[PASS] B2 THEOREM (exact LP): beside an isolated split cube every child register in a partly refined parent tetrahedron is held at its floor, and the parent edges it reads are held full: 42 owned + a collar of the 12 in-plane registers of each unsplit +x/+y/+z face neighbour | held: owned 42/48, collar 36 from [(0, 0, 2), (0, 2, 0), (2, 0, 0)], child 309/384 (free in partial 0); trigger reads 84
-[PASS] B3 THEOREM: the collar moves with the pattern (a split + neighbour drops its share); a 2^3 super-block has a 144-edge collar, so no finite block of blocks closes | A,+x: 60 from 5 blocks; 2^3: 144 from 12
-[PASS] B4 THEOREM: 2:1 balance is forced: every child cube of an isolated split cube owns a held register and can never split | free child cubes: isolated 0/8, 2^3 8/64
+[PASS] B1 THEOREM (computed): a parent edge passes as two children inside their windows only when full: l1 + l2 = l, l1, l2 >= L, l <= 2L leaves only l1 = l2 = L, l = 2L; so all 48 edges a split bisects must be full, not just the 18 of its tiling cube; control: a parent cap of 2.2 L leaves l1 free in [1, 1.2] | l1 in [1.000, 1.000], l in [2.000, 2.000] (L = 1); control l1 max 1.200
+[PASS] B2 NUMERICAL LP (scipy HiGHS, floating point, tolerance 1e-9; not a rational certificate): beside an isolated split cube every child register in a partly refined parent tetrahedron is held at its floor, and the parent edges it reads are held full: 42 owned + a collar of the 12 in-plane registers of each unsplit +x/+y/+z face neighbour | held: owned 42/48, collar 36 from [(0, 0, 2), (0, 2, 0), (2, 0, 0)], child 309/384 (free in partial 0); trigger reads 84; LP solver failures 0
+[PASS] B3 NUMERICAL LP: the collar moves with the pattern (a split + neighbour drops its share); a 2^3 super-block has a 144-edge collar (two patterns tested) | A,+x: 60 from 5 blocks; 2^3: 144 from 12
+[PASS] B4 NUMERICAL LP: 2:1 balance is forced beside an isolated split: every child cube of an isolated split cube owns a held register and can never split | free child cubes: isolated 0/8, 2^3 8/64
 [PASS] B5 DIAGNOSTIC: if a neighbour may read a bisected edge beyond its own window the collar stands but the hanging-face holds loosen | collar 36; held children 63 vs 309
-[PASS] B6 THEOREM + check: with the held values and free edges anywhere in a 30% band below full, every closure tetrahedron read from its flat parent has positive volume | 5491 tetrahedra, nonpositive 0; min sub/parent volume 0.062
+[PASS] B6 SAMPLED CHECK: in six random configurations with the held values and free edges in a 30% band below full, every closure tetrahedron read from a positive-volume parent has positive volume (parents with nonpositive volume are skipped and counted) | 5491 tetrahedra, nonpositive 0; min sub/parent volume 0.062; parents skipped as nonpositive 5 of 5496
 == C. links: Gauss's law on the sum over patterns (torus of 2x2x2 blocks)
-[PASS] C1 THEOREM + check: a child link ends at its odd centre if that cube is complete, else at the nearest parent odd centre (never a tie); unsplit links keep their laws and Gauss's law is solvable for any parent field and child occupations | 256 patterns (2^3-block torus); ties 0; 18 solved
+[PASS] C1 THEOREM + SAMPLED CHECK: a child link ends at its odd centre if that cube is complete, else at the nearest parent odd centre (no tie on all 256 patterns); unsplit links keep their laws, and Gauss's law is solvable on the sampled patterns x random configurations (not shown for every pattern) | 256 patterns (2^3-block torus); ties 0; 18 solved
 == D. register toy: glued split with collar, ring of 3 blocks (bulk u_k, minus-face f_k; 2S = 2)
 [PASS] D1 THEOREM: kinematic space = tensor product over blocks of (coarse + split); local commuting projectors (glued trigger with collar, held collar, held children) cut it into an orthogonal sum over the 8 patterns; the glued generator is hermitian and keeps it | dim 5832, allowed 1505, patterns 8; leak 0e+00; split fraction to 0.10
 [PASS] D2 DIAGNOSTIC: with the trigger on owned edges only the split fires with the collar below full (children below floor, no state), and the odds go there | weight outside the projector up to 0.892
@@ -33,7 +33,7 @@ status: ok
 [PASS] F1 collar wait: neighbours' edges differ by ~1e-5 x 2 pi L / lambda (metric perturbations at the shortest probed scale), a negligible fraction of a doubling | lambda = 1e-19 m: wait 7e-20 of a doubling
 [PASS] F2 bound regions: next to a cube that never fills one layer stalls full; forced 2:1 balance grades the void one level per layer, a shell a few rung lengths thick | 2.8 levels, shell ~ 9e-34 m
 supplied: forward ownership (from the passing's child placement), closure template + bookkeeping centres (flat), sum-in-window reading (B5), channel-mode mixed ticks + deferred child odd tick (E), toy hop and 2S=2, measured numbers.
-elapsed 10.0 s
+elapsed 9.9 s
 TOTAL: PASS=19 FAIL=0
 
 ----- stderr -----

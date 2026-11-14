@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/wave_law_shift_sourced_by_the_momentum_constraint_keeps_no_slice_bend_memory_and_stays_causal_2026_10_22.py
-runner_sha256: 5214c00d8a30316a72613a951a483ef8de98108c6d5e7eafa1c02760ceaf1997
-input_fingerprint_sha256: 8e22e61a8f08ca0d0b39ce7fdfd783c94d05f4a5fa2a44384233acbc768751f6
+runner_sha256: 66c2ed31e3d25eab1c674c89453dec907431d1bf2609d03d7365d4003d39c39c
+input_fingerprint_sha256: 27880d6c215bfa4287fa9ad7bc3338f970e9c80ed59e8236114af8ade865997e
 timeout_sec: 90
 exit_code: 0
-elapsed_sec: 4.10
+elapsed_sec: 3.64
 status: ok
 ----- stdout -----
 == A. theorems (symbolic, every k)
@@ -13,7 +13,8 @@ status: ok
 [PASS] A3 [T] the static star's formation feeds the bend: from isotropic edges to the tied-lapse static star (h_zz 10U, tr h 6U) the label sourc... | int source dt = 12*I*k*(mu + nu) U
 [PASS] A4 [T] identity (any k direction): mu[d_j hdot_ij - d_i tr(hdot)/2 + d_i tr K] = mu[Lap beta_i - 2(d_j K_ij - d_i K)]: the wave shift is ... | residual 0 in all 3 components
 [PASS] A5 [T] wave shift spectrum: scalar (w^2-k^2)(3w^2-k^2)(w^2-mu k^2)/3, vector w^2(w^2-mu k^2): speeds 1, 1/sqrt3 (the tied lapse) and sqrt... | (k - omega)*(k + omega)*(k**2 - 3*omega**2)*(k**2*mu - omega**2)/3
-[PASS] A6 [T] mu < 1: every root simple in the scalar sector (strongly hyperbolic); mu = 1 puts the shift on the speed of the (hp, Kp) pair, whi... | mu = 3/4 diagonalisable True; mu = 1 rank(M - i) = 5 at multiplicity 2; vector kernel dim 2
+[PASS] A6 [T] (corrected) scalar roots w^2 = k^2, k^2/3, mu k^2 are all simple at k != 0 iff mu not in {1/3, 1}, so the scalar sector is diagona... | product of root differences / k^6 = 2*(mu - 1)*(3*mu - 1)/9; diagonalisable at mu 1/2, 3/4: True; mu = 1: rank(M - i) = 5, diagonalisable on hp = Kp = 0: True; vector kernel dim 2
+[PASS] A6b [T] negative result (held "every scalar root simple for mu < 1" rejected): at mu = 1/3 the roots +-k/sqrt3 are double, with geometric... | mu = 1/3, k = 1: -I (alg 1, geo 1), I (alg 1, geo 1), -sqrt(3)*I/3 (alg 2, geo 1), sqrt(3)*I/3 (alg 2, geo 1); on hp = Kp = 0: -sqrt(3)*I/3 (alg 2, geo 1), sqrt(3)*I/3 (alg 2, geo 1)
 [PASS] A7 [T] cosmology: FRW (K = -H delta) and Bianchi I (uniform anisotropic K) give d_j(K_ij - delta K) = 0 and Lap beta = 0 for beta = 0, so... | source 0 identically (no derivative of a homogeneous field)
 == B. finite diagnostics (k = 1, RK4 dt 0.05; matter formed from vacuum by a stress pulse, so every constraint holds)
    zero             speed<= 1.000 growth 1e-16 | star: beta 0.00->0.00 | spin sudden h 589.00, slow h 690.000 | constr 3e-16
@@ -32,13 +33,13 @@ status: ok
    rotating edge ring bound 2 K r/c (sudden spin-up, K ~ 3 w_LT): Earth 4.3e-15, Sun 1.2e-11, Sgr A* (a 0.5) 0.25, a = 1 0.50
 [PASS] C1 [E] rotating bodies: the frozen/ringing edge strain is at most 2 K r/c (= w r/c of the lead), 4e-15 for Earth and at most 0.5 for an e... | Earth 4e-15, Kerr a=1 0.50 < 2.77
 [PASS] C2 [E] neutron stars: static star tilt exactly 0 (A4, B5; also for the magnetar anisotropic stress of causal-trigger C3); formation leave... | U 0.2, v 0.3c: tilt 0.24 c; old drivers: null in hours-days
-[PASS] C3 [E] one law serves neutron stars, spinning black holes and cosmology: no damping (eta = 0), and mu only sets the gauge-wave speed sqrt... | eta window: none needed
+SUPPLIED: C3 the law takes eta = 0 (a choice, motivated by B4), and mu enters the stationary states tested here only through the gauge-wave speed sqrt(mu) c; not a computed check, not counted
 [PASS] C4 [E] cosmology: background beta = 0 exactly (A7); a perturbation's stationary shift is ~ 6 Omega_m (aH/ck)^2 delta v/c, about 1e-8 c at... | beta/c ~ 1e-08
 [PASS] C5 [E] the frame-read split trigger becomes causal: outside the light cone the response to a kilogram moved a metre is 0, not 7e-28 (min-... | instantaneous minimal-strain response G m/(c^2 r) = 7.4e-28 -> 0 beyond c t
 supplied: linear ADM on flat space with the tied lapse, dust/stress test sources, the driver family; measured J, R,
   Sgr A* spin (indicative), cosmological delta, v. not built: register-level shift (CL-1 block rotations), nonlinear
   completion, strong-field (horizon) dynamics, 3D radiation of the gauge waves (only 1D plane-symmetric in B6).
-elapsed 3.6 s
+elapsed 3.3 s
 TOTAL: PASS=18 FAIL=0
 
 ----- stderr -----

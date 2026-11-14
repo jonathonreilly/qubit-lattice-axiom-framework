@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/a_black_hole_exterior_keeps_a_regular_tied_lapse_slicing_only_while_its_shift_charge_lasts_2026_10_22.py
-runner_sha256: 9a455f7bca0dda30289b3c78741286c6bf6e077bd6b71d5fd76b763410527532
-input_fingerprint_sha256: dbc3323d7d592a98835ab91a920b719c9cdc72fdad3334425cfc11f0bfc49b84
+runner_sha256: ed8efddce8730c4940d07972e68288c75bf46ff3a4007592742776e3ed030666
+input_fingerprint_sha256: b0a2265afde34e956f339265f3ef79bec3cab4f18ddd870ebf59c3cae0f18046
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 34.18
+elapsed_sec: 26.63
 status: ok
 ----- stdout -----
 == A. stationary tied-lapse slicings of Schwarzschild, label shift beta^r (exact)
@@ -51,7 +51,7 @@ status: ok
 [PASS] D4 ESTIMATE: under the current law the A5 flip reaches R = 6M in ~(label distance)/sqrt(mu): ms for stellar holes, not Hawking times | floor label 3.94 -> 6M label 8.35: ~5.1 M
 supplied: continuum ADM as CL-3 limit, spherical symmetry, the on-shell (matter) form of the shift source unless stated, mu = 3/4,
   flat-label Laplacian, Q at trapping from wave-shift-collapse; excision boundary conditions; KO dissipation.
-elapsed 31.8 s
+elapsed 25.9 s
 TOTAL: PASS=14 FAIL=0
 
 ----- stderr -----

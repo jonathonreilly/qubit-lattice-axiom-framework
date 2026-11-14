@@ -8,9 +8,12 @@ Linearised ADM on flat slices, every lattice k through the consistent lattice de
     minimal-strain gauge d_j(d_t gamma_ij) = 0; (B) causality of gauge-invariant observables vs the
     elliptic shift; (C) local hyperbolic drivers; (D) the variational vs Euler-Lagrange form on open
     and periodic lattices; (E) gauge = no signal, finite toy; (F) estimates.
+2026-11-14 (PR 10128 hold findings 4, 5): the Fourier identity of B3 selects no boundary prescription and a spatial-lattice
+wave Green function has no sharp cone (B7); uniqueness holds only away from omega = 0 and the tensor poles (B1u) and,
+for the elliptic shift, only up to constants and with a zero-mode condition (D2, D2c). Exits nonzero on any failed check.
 """
 AUDIT_TIMEOUT_SEC = 120
-import time, itertools
+import sys, time, itertools
 import numpy as np
 import sympy as sp
 t0 = time.time()
@@ -21,25 +24,29 @@ SHORT = {  # printed labels; the full statement of each check is the first argum
  'A2': '[T] control: shift held at 0, its equation dropped -> ghost-normal double root omega^2 = K/3',
  'A3': '[T] omega = 0: static kernel = slice tilt (static beta_L) + static transverse relabelling (initial-data gauge)',
  'A4': '[T] robustness: 4 independent lattice multipliers (hop, curvature, lapse, gauge): still no scalar mode',
- 'B1': '[T] conserved sources: unique solution; it obeys the dropped Hamiltonian constraint and all of GR',
- 'B2': '[T] control: de Donder hbar = c T/(omega^2 - K), one c: covariant, retarded',
- 'B3': '[T] Riemann(minimal strain) = Riemann(de Donder) for all sources, all K: observables retarded',
+ 'B1': '[T] conserved sources at omega != 0, omega^2 != K: one solution; it obeys the dropped Hamiltonian constraint and all of GR',
+ 'B1u': '[T] negative result: at the tensor pole omega^2 = K and at omega = 0 the homogeneous system has a kernel (no uniqueness there)',
+ 'B2': '[T] control: de Donder hbar = c T/(omega^2 - K), one c: covariant; the rational form selects no boundary prescription',
+ 'B3': '[T] Riemann(minimal strain) = Riemann(de Donder) as rational functions (omega != 0, omega^2 != K): same observables under any common prescription',
  'B4': '[T] minimal strain = elliptic (K delta + k k) beta = i k tr(kappa) - J; inverse non-polynomial (instantaneous Kelvin kernel)',
  'B5': '[D] 32^3 lattice: one tick after a current appears, beta is nonzero 8 cubes away (~1/r); light moved <= 0.022 cube',
+ 'B7': '[T] spatial lattice, continuous time: the wave Green function has no sharp cone (u_n(t) = J_2n(2t), leading t^2n/(2n)! at distance n)',
  'B6': '[T] minimal-strain edges transverse, scalar part = Bardeen Psi = rho/(4K): frame-read edges respond instantaneously',
  'C1': '[T] Gamma-driver + read lapse: longitudinal omega^2 = K(1+4mu)/3, transverse mu K; mu = 3/4 -> 2/sqrt3 c; causal iff mu <= 1/2',
  'C2': '[T] strain driver: longitudinal omega^2 = K(1+6mu)/3, transverse mu K; causal iff mu <= 1/3',
  'C3': '[T] eta > 0: all gauge roots damped; eta -> inf slow root -> lapse speed 1/sqrt3',
  'C4': '[T] driver modes pure gauge (Riemann = 0)',
  'D1': '[T] uniform expansion: EL form gives beta = 0; least-squares on an open block gives beta = -Hx (edges frozen); torus: agree',
- 'D2': '[T] EL operator positive off k = 0; kernel = affine shifts; cap |beta| <= 1 cube/tick -> unique (Liouville)',
+ 'D2': '[T] EL operator K delta + kt kt^T has eigenvalues K, K, 2K: positive at every k != 0 (exact); torus solve unique at zero mean',
+ 'D2c': '[T] negative result: the kernel is not only affine (beta = (0,0,x^2-y^2)); constants are bounded kernel elements, so the cap gives no uniqueness',
  'E1': '[T] toy: constraint-generated far-controlled shift leaks 0; O(k^2)-mismatched transport leaks ~ b x momentum spread',
  'F1': '[E] cap binds only at r < (sin^2 eps0/3) r_s (inside horizons); not in cosmology (EL form)',
  'F2': '[E] instantaneous frame-read edge change from a lab rearrangement ~ G m/(c^2 r)',
 }
 def check(name, ok, detail=''):
     NP[0 if ok else 1] += 1
-    print(f"[{'PASS' if ok else 'FAIL'}] {name[:2]} {SHORT.get(name[:2], name)} | {detail}")
+    key = name.split()[0]
+    print(f"[{'PASS' if ok else 'FAIL'}] {key} {SHORT.get(key, name)} | {detail}")
 
 I = sp.I
 w, kap, mu, eta = sp.symbols('omega kappa mu eta', positive=True)
@@ -180,7 +187,16 @@ check('B1 [T] for every conserved source the CL system (9 equations incl. the mo
       'solution in the minimal-strain + fixed-step slicing (the E equation carries dN/dE x the Hamiltonian constraint, so '
       'it holds at every k != 0)', xC is not None and len(solC) == 1 and hc == 0 and allG == sp.zeros(10, 1),
       f'solutions {len(solC)}; Hamiltonian residual {hc}')
-# de Donder solution: manifestly retarded hbar = c T / (omega^2 - K)
+# B1u (2026-11-14, hold finding 5): uniqueness is for generic (omega, kappa). The source parameterisation divides by omega (static
+# sources are outside it); at the tensor pole omega^2 = K homogeneous TT waves can be added; at omega = 0 the static gauge kernel (A3)
+# remains. Rank of the 12 x 9 homogeneous system (9 equations + minimal strain h13 = h23 = h33 = 0).
+Asys = sp.Matrix.vstack(MC9, sp.Matrix([[1 if j == c else 0 for j in range(9)] for c in (2, 4, 5)]))
+rk = {lab: Asys.subs(pt).rank() for lab, pt in (('generic', {w: sp.Rational(7, 5), kap: sp.Rational(3, 4)}),
+                                                 ('pole', {w: sp.Rational(3, 4), kap: sp.Rational(3, 4)}),
+                                                 ('static', {w: 0, kap: sp.Rational(3, 4)}))}
+check('B1u [T] negative result: uniqueness fails at the tensor pole and at omega = 0', rk['generic'] == 9 and rk['pole'] < 9 and rk['static'] < 9,
+      f"rank of the homogeneous 12x9 system: generic {rk['generic']}, omega^2 = K {rk['pole']}, omega = 0 {rk['static']}; sources here are parameterised by J = kt.S/omega (omega != 0)")
+# de Donder solution: hbar = c T / (omega^2 - K); the rational form fixes no retarded/advanced/homogeneous choice
 ys = sp.symbols('y0:10'); yv = sp.Matrix(ys)
 hd = metric4(yv, PHIG); eta4 = sp.diag(-1, 1, 1, 1); tr4 = sum(eta4[m, m] * hd[m, m] for m in range(4))
 hb = hd - eta4 * tr4 / 2; kup = [w, 0, 0, kap]
@@ -195,12 +211,12 @@ hbD = (metric4(yD, PHIG) - eta4 * sum(eta4[m, m] * metric4(yD, PHIG)[m, m] for m
 Tlow = eta4 * Tmn * eta4
 ratio = [sp.simplify(hbD[a, b] * (w ** 2 - kap ** 2) / Tlow[a, b]) for a in range(4) for b in range(a, 4) if Tlow[a, b] != 0]
 check('B2 [T] control: de Donder gauge gives hbar_mu nu = c T_mu nu/(omega^2 - K) with one constant c for all components, '
-      'a covariant, manifestly retarded response', len(set(ratio)) == 1, f'c = {ratio[0]}')
+      'a covariant response; as a rational function it selects no retarded, advanced or homogeneous solution', len(set(ratio)) == 1, f'c = {ratio[0]}')
 RC = riemann(metric4(xC, PHIC), kz); RD = riemann(metric4(yD, PHIG), kz)
 dR = [sp.simplify(RC[key] - RD[key]) for key in RC]
-check('B3 [T] the linearised Riemann tensor of the minimal-strain solution equals the de Donder one for every source and every '
-      'K: tidal fields, frame dragging and waves are retarded (support in the edge light cone); by rotation covariance of the '
-      'construction this holds for every lattice k direction. Gauge-invariant observables do not see the elliptic shift',
+check('B3 [T] the linearised Riemann tensor of the minimal-strain solution equals the de Donder one as rational functions of '
+      '(omega, K) for every conserved source (omega != 0, omega^2 != K); so under any common boundary prescription the gauge-invariant '
+      'observables agree and do not see the elliptic shift; by rotation covariance of the construction in kt this holds for every k direction',
       all(d == 0 for d in dR), f'{len(dR)} Riemann components, max residual 0: {all(d == 0 for d in dR)}')
 # B4 the shift itself: elliptic symbol P = K delta + kt kt^T, inverse non-polynomial -> instantaneous Kelvin kernel
 k1, k2, k3 = sp.symbols('k1:4', real=True); kk = sp.Matrix([k1, k2, k3]); Kk = k1 ** 2 + k2 ** 2 + k3 ** 2
@@ -220,8 +236,8 @@ jx = np.zeros((Nl, Nl, Nl)); jx[0, 0, 0] = 1.0; jk = np.fft.fftn(jx)
 bx = np.real(np.fft.ifftn(jk / Kn - kt[0] * (kt[0] * jk) / (2 * Kn ** 2))); bx -= bx.mean()
 far = [abs(bx[r, 0, 0]) for r in (2, 4, 8)]; lc = np.sin(0.0375) / np.sqrt(3)
 check('B5 [D] one tick after a unit current appears at the origin, the minimal-strain shift is already nonzero 8 cubes away '
-      '(~1/r), while the edge light cone has advanced sin(eps0)/sqrt3 <= 0.022 cube: the shift (and every edge value read '
-      'in its frame) jumps outside the cone; Riemann does not (B3)', far[2] > 1e-3 and far[0] / far[2] > 2,
+      '(~1/r), while a discrete tick cone would have advanced sin(eps0)/sqrt3 <= 0.022 cube: the shift (and every edge value read '
+      'in its frame) jumps outside it; Riemann is the wave response, whose lattice tail beyond the cone is t^2n/(2n)!-small (B7), not 1/r', far[2] > 1e-3 and far[0] / far[2] > 2,
       f'|beta_x| at r = 2, 4, 8: {far[0]:.4f}, {far[1]:.4f}, {far[2]:.4f}; light per tick {lc:.4f} cube')
 # B6 the frame-read edges: zeta (edge trace) in minimal strain carries the Bardeen potential, instantaneous
 zC = sp.simplify((xC[0] + xC[3]) / 4)
@@ -230,6 +246,32 @@ check('B6 [T] the minimal-strain edges are transverse (kt_j h_ij = 0) and their 
       'and in local stresses Psi = kt_i kt_j S_ij/(4 omega^2 K), non-polynomial off the axis. So the floor and the split trigger, '
       'read in this frame, respond at once to distant rearrangements (quadrupole order, monopole and dipole being conserved)',
       sp.simplify(zC - rho / (4 * kap ** 2)) == 0 and xC[2] == 0 and xC[4] == 0 and xC[5] == 0, f'Psi = {sp.factor(zC)}, rho = {sp.factor(rho)}')
+
+# B7 (2026-11-14, hold finding 4): with continuous time and K = sum 4 sin^2(k_i/2), even the retarded lattice wave Green function has no
+# exactly sharp cone. 1D: u_tt = Lap u, u(0) = delta, u_t(0) = 0 gives u_n(t) = J_2n(2t) exactly, nonzero at every n, leading t^2n/(2n)!.
+# 3D: the coefficient of t^2n/(2n)! at site (n, 0, 0) is (Lap^n delta)(n, 0, 0) = 1 (integer arithmetic). For contrast (a textbook
+# reference, not computed here) the continuum d'Alembert solution is zero for |x| > t.
+from scipy.special import jv
+from scipy.linalg import expm
+Nch = 121; c0 = Nch // 2; L1 = -2 * np.eye(Nch) + np.eye(Nch, k=1) + np.eye(Nch, k=-1)
+tg = 0.5; Gb = expm(tg * np.block([[np.zeros((Nch, Nch)), np.eye(Nch)], [L1, np.zeros((Nch, Nch))]]))
+u0 = np.zeros(2 * Nch); u0[c0] = 1.0; ut = Gb @ u0; ux = ut[:Nch]; ui = (Gb @ np.r_[np.zeros(Nch), u0[:Nch]])[:Nch]
+ns = np.arange(0, 13); jdev = np.max(np.abs(ux[c0 + ns] - jv(2 * ns, 2 * tg)))          # matrix exponential vs the closed form
+from math import factorial
+lead = [ux[c0 + n] / (tg ** (2 * n) / factorial(2 * n)) for n in (3, 4, 5)]
+leadi = [ui[c0 + n] / (tg ** (2 * n + 1) / factorial(2 * n + 1)) for n in (3, 4, 5)]
+outside = [float(jv(2 * n, 2 * tg)) for n in (2, 4, 6)]             # |n| > t = 0.5: outside the unit-speed cone (closed form)
+def lap3(f):
+    return sum(np.roll(f, s_, axis=a_) for a_ in range(3) for s_ in (1, -1)) - 6 * f
+co3 = []
+for n_ in (1, 2, 3, 4):
+    f3 = np.zeros((11, 11, 11), dtype=np.int64); f3[0, 0, 0] = 1
+    for _ in range(n_): f3 = lap3(f3)
+    co3.append(int(f3[n_, 0, 0]))
+check('B7 [T] no sharp lattice cone', jdev < 1e-12 and min(outside) > 0 and all(abs(r_ - 1) < 0.05 for r_ in lead + leadi) and co3 == [1, 1, 1, 1],
+      f'1D, t = 0.5: u_n(t) = J_2n(2t) to {jdev:.0e} absolute (n <= 12); J_2n(1) outside the cone at n = 2, 4, 6: ' + ', '.join(f'{x_:.1e}' for x_ in outside)
+      + f'; u_n / (t^2n/(2n)!) at n = 3, 4, 5: ' + ', '.join(f'{x_:.3f}' for x_ in lead) + '; impulse u_n/(t^(2n+1)/(2n+1)!): '
+      + ', '.join(f'{x_:.3f}' for x_ in leadi) + f'; 3D (Lap^n delta)(n,0,0) = {co3}; reference (not computed): the continuum d\'Alembert solution vanishes for |x| > t')
 
 print('== C. local hyperbolic alternatives (driver equations; sectors along z, every K)')
 def driver(kind, muv, etav):
@@ -322,10 +364,40 @@ check('D1 [T] uniform expansion has no component along any interior site displac
       'displacement gradient): read variationally on Z^3 the clause would freeze every edge in an expanding universe and stop '
       'the split cascade. On the torus the two readings agree (beta = 0)', res[False][0] < 1e-9 and res[True][0] > 0.99 and res[False][1] < 1e-12,
       f'open: residual {res[False][0]:.1e}, interior J^T rate {res[False][1]:.0e}, beta spread {res[False][2]:.4f}; periodic: residual {res[True][0]:.3f}')
-check('D2 [T] the EL operator (K delta + k k^T) is positive at every k != 0; its kernel on Z^3 is the affine shifts (uniform '
-      'translation, rotation, dilation, shear); boundedness (CL-1: at most one cube per tick) leaves only uniform translations '
-      '(discrete Liouville): the cap is what makes the elliptic shift unique on the infinite lattice',
-      float(np.linalg.eigvalsh(np.einsum('ij,...->...ij', np.eye(3), Kn) + np.einsum('i...,j...->...ij', kt, kt)).min()) > 0.03, 'min eigenvalue K_min = 4 sin^2(pi/32) = 0.038 on the 32^3 grid')
+# D2 (narrowed 2026-11-14, hold finding 5): positivity is exact (eigenvalues K, K, 2K); on the periodic N^3 torus with the zero mode
+# removed (mean beta = 0, as the B5 solve does) the solution is unique. D2c: on Z^3 the kernel is not only affine, and constants
+# are bounded kernel elements, so the one-cube-per-tick cap does not make the shift unique.
+k1s, k2s, k3s, Ks = sp.symbols('kt1 kt2 kt3 K', real=True); kvs = sp.Matrix([k1s, k2s, k3s])
+Pk = (k1s**2 + k2s**2 + k3s**2) * sp.eye(3) + kvs * kvs.T
+evP = sorted([sp.simplify(e_) for e_ in Pk.eigenvals(multiple=True)], key=str)
+Kexpr = k1s**2 + k2s**2 + k3s**2
+okEv = sorted([sp.simplify(e_ - Kexpr) for e_ in evP], key=str) in (sorted([0, 0, Kexpr], key=str),)
+mineig = float(np.linalg.eigvalsh(np.einsum('ij,...->...ij', np.eye(3), Kn) + np.einsum('i...,j...->...ij', kt, kt)).min())
+check('D2 [T] positivity off k = 0', okEv and mineig > 0.03,
+      f'eigenvalues {evP}; min eigenvalue on the 32^3 grid {mineig:.3f} = 4 sin^2(pi/32); torus solve uses the zero-mean condition')
+X1, X2, X3s = sp.symbols('x1 x2 x3', real=True); Xs = (X1, X2, X3s)
+q1, q2, q3 = sp.symbols('q1 q2 q3', real=True); qv = (q1, q2, q3); tq = [2 * sp.sin(q_ / 2) for q_ in qv]
+Psym = [[(sum(t_**2 for t_ in tq) if i == j else 0) + tq[i] * tq[j] for j in range(3)] for i in range(3)]
+def apply_symbol(Pm, beta, order=3):
+    # P(-i d) on a polynomial field: Taylor-expand the symbol to `order` in q; terms beyond the field's degree vanish
+    out = []
+    for i in range(3):
+        acc = 0
+        for j in range(3):
+            ser = sp.expand(sp.series(sp.series(sp.series(Pm[i][j], q1, 0, order + 1).removeO(), q2, 0, order + 1).removeO(), q3, 0, order + 1).removeO())
+            for term in sp.Add.make_args(ser):
+                pw = [sp.degree(term, q_) for q_ in qv]; cf = term / (q1**pw[0] * q2**pw[1] * q3**pw[2])
+                d = beta[j]
+                for a_, n_ in zip(Xs, pw): d = sp.diff(d, a_, n_)
+                acc += cf * (-sp.I)**sum(pw) * d
+        out.append(sp.simplify(acc))
+    return out
+bq = [0, 0, X1**2 - X2**2]; bc = [sp.Rational(1, 2), 0, 0]; bd = [0, 0, X1**2]          # bd: control, not in the kernel
+r_q, r_c, r_d = apply_symbol(Psym, bq), apply_symbol(Psym, bc), apply_symbol(Psym, bd)
+nonaff = any(sp.diff(b_, a_, 2) != 0 for b_ in bq for a_ in Xs)
+check('D2c [T] negative result (counterexample kept)', all(x_ == 0 for x_ in r_q) and nonaff and all(x_ == 0 for x_ in r_c) and any(x_ != 0 for x_ in r_d),
+      f'P beta for beta = (0, 0, x^2 - y^2): {r_q} (non-affine, unbounded); for a constant beta = (1/2, 0, 0) with |beta| <= 1: {r_c}; '
+      f'control beta = (0, 0, x^2): {r_d}; bounded solutions are unique only up to constants, so a zero-mode condition is needed')
 
 print('== E. gauge = no signal (finite toy, ring of 256 cells)')
 Lr = 256; p = 2 * np.pi * np.fft.fftfreq(Lr)
@@ -358,3 +430,4 @@ print('  the 1D dispersion toy (E); drivers of Gamma and strain type with mu, et
 print('  nonlinear minimal strain, the lattice momentum-constraint algebra off flat cells.')
 print(f'elapsed {time.time() - t0:.1f} s')
 print(f'TOTAL: PASS={NP[0]} FAIL={NP[1]}')
+sys.exit(0 if NP[1] == 0 else 1)

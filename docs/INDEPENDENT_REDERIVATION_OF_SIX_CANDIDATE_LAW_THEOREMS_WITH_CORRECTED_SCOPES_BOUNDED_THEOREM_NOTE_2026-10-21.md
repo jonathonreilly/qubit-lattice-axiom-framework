@@ -4,7 +4,6 @@ claim_type: bounded_theorem
 claim_scope: "Independent rederivation of six candidate-law theorems with corrected scopes: spin-3/2 forcing and Born transport hold as stated under explicit premises; the universal step, the copy count and the cell factorisation hold only in narrower forms; the cubic-frustum Regge expansion law matches Friedmann only to first order in rho/rho* and has no bounce; the corrected statements are checked as finite diagnostics of the supplied models; no new law, adopted wording or physical identification is established."
 upstream_dependencies:
   - minimal_axioms
-  - candidate_laws
 runner: scripts/independent_rederivation_of_six_candidate_law_theorems_with_corrected_scopes_2026_10_21.py
 ---
 
@@ -13,7 +12,7 @@ runner: scripts/independent_rederivation_of_six_candidate_law_theorems_with_corr
 Claim type: bounded_theorem.
 Primary runner: `scripts/independent_rederivation_of_six_candidate_law_theorems_with_corrected_scopes_2026_10_21.py`.
 
-The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. Its update, following and expansion statements cite six theorems. This note rederives each from scratch, with its own code and without importing the earlier runners, and states the scope in which each holds. Where a statement is wrong, the runner checks the corrected one. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose none of the supplied premises listed below.
+Model status (2026-11-14). The six theorems belong to the originating three-law register (update, actuality and response laws, CL-1 to CL-3 in its numbering), whose text is not in this repository. Its clauses are used here as supplied conditional model definitions with zero premise weight; they are not the entries of the same number in [docs/CANDIDATE_LAWS.md](CANDIDATE_LAWS.md). No clause or wording is adopted. That register's update, following and expansion statements cite six theorems. This note rederives each from scratch, with its own code and without importing the earlier runners, and states the scope in which each holds. Where a statement is wrong, the runner checks the corrected one. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose none of the supplied premises listed below.
 
 | # | Theorem | Verdict |
 |---|---|---|
@@ -52,7 +51,7 @@ The explicit Minkowski frustum has trapezoid deficit 4 asin(u^2/(1 - u^2)), area
 
 ## Checks
 
-The runner gives 33 PASS and 0 FAIL. These are finite diagnostics of supplied models.
+The runner gives 33 PASS and 0 FAIL and exits nonzero if any check fails. These are finite diagnostics of supplied models.
 
 - The double cover 2O is built with 8 irreducible characters. Induction is a homomorphism to 5e-14 for every j. Face phases over pi are 0, +0.33, +0.67, +1.00, -0.67, -0.33, 0 for j = 0 to 3. W^2 = 1 holds for 128 of 4096 sign patterns, one gauge class, and is checked on 3000 complex assignments.
 - Step identity to 6e-15. On a 6^3 torus all 216 quasi-energies obey the band law to 4e-15 and are covariant about even and odd centres to 5e-15. The cube-frame reading deviates by 0.57 with asymmetry 0.78, and by 9e-15 in the inversion-symmetric gauge. Speed to 2e-13 on three directions. Massive speed deviations -2.68e-4, -8.33e-4, -2.76e-4 match the formula. Yee match to 5e-15, and C x 1.01 is off by 0.17.

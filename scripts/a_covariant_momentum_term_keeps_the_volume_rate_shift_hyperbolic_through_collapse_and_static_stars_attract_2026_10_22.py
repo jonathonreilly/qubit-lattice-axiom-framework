@@ -3,8 +3,10 @@ AUDIT_INPUT_PATHS = ('docs/A_COVARIANT_MOMENTUM_TERM_KEEPS_THE_VOLUME_RATE_SHIFT
 # with the per-tick volume-rate source (mu = 3/4, kappa = 2(1-mu)/mu = 2/3), G = c = 1. Self-contained.
 # Edges in far-edge units; labels r, areal radius R. Finds: the on-shell reading of the momentum term is weakly
 # hyperbolic at kappa_max on isotropic cubes; the covariant reading D_j removes it; with it the post-crunch exterior
-# approaches the vacuum attractor inside the Delta = 1 window; static stars are attractors.
-import signal
+# approaches the vacuum attractor inside the Delta = 1 window (one run, supplied core device); two TOV stars shed one
+# pure-gauge shift bump. The shift law is the candidate of #9976, not adopted. 2026-11-14: lines starting NOT CHECKED or
+# PROPOSAL/ESTIMATE are printed, not counted; the runner exits nonzero if any counted check fails.
+import signal, sys
 AUDIT_TIMEOUT_SEC = 120
 signal.alarm(118)
 import math, time, warnings
@@ -71,9 +73,9 @@ check('A2 THEOREM: reading the momentum term covariantly, -2 D_j(K^j_i - delta^j
       'its eigenvector conditioning stays at the generic (variable-scaling) level while the on-shell reading\'s diverges at kappa_max',
       jo[True] == 0 and max(cmx[True]) < 1e4 and cmx[False][-1] > 1e6 and cmx[False][-1] > 1e3 * cmx[True][-1],
       'max cond (kappa .5,.6,.65,2/3): on-shell %s, covariant %s' % (' '.join('%.0e' % x for x in cmx[False]), ' '.join('%.0e' % x for x in cmx[True])))
-check('A3 THEOREM: a shift perturbation of a static star with unchanged edges, K and matter is pure gauge: slice shift f and label '
-      'shift xi obey N f_t = dN_tied(xi) - xi N\', xi_t = b + N^2 f\'/A, dK_ij = -D_iD_j(N f) + f D_iD_j N, dS_r = -(rho+P) N f\'', True,
-      'identity dM_r = 8 pi dS_r checked in B7')
+print('NOT CHECKED: A3 a shift perturbation of a static star with unchanged edges, K and matter is pure gauge: slice shift f and label '
+      'shift xi obey N f_t = dN_tied(xi) - xi N\', xi_t = b + N^2 f\'/A, dK_ij = -D_iD_j(N f) + f D_iD_j N, dS_r = -(rho+P) N f\' '
+      '(derived by hand, used by the B6/B7 code; only the momentum identity dM_r = 8 pi dS_r is checked, on evolved data, in B7)')
 
 # ======================================================================= B. finite diagnostics
 print('== B. finite diagnostics')
@@ -178,13 +180,13 @@ def collapse(R0=6.0, h=0.05, rmax=70.0, tmax=10.0, mom='blend', kap=KAP, RB=2.0,
         if not np.all(np.isfinite(Y)) or Y[0].min() <= 0 or Y[1].min() <= 0: rows.append(dict(t=st['t'], crash=True)); break
     else: rows.append(diag(Y))
     st['Y'] = Y; return rows, st
-# B2: adopted law (on-shell, kappa_max everywhere) through the pre-horizon collapse: resolution test
+# B2: candidate law (on-shell, kappa_max everywhere) through the pre-horizon collapse: resolution test
 b2 = {}
 for lab, kw in (('on-shell', dict(mom='matter', rc=0.0)), ('covariant+core', dict())):
     for h in (0.05, 0.025):
         rw, _ = collapse(h=h, rmax=30.0, tmax=8.0, every=8.0, **kw); b2[lab, h] = rw[-1].get('Q6', np.nan)
 d_on = abs(b2['on-shell', 0.025] - b2['on-shell', 0.05]) / abs(b2['on-shell', 0.05]); d_on = np.inf if not np.isfinite(d_on) else d_on; d_cv = abs(b2['covariant+core', 0.025] - b2['covariant+core', 0.05]) / abs(b2['covariant+core', 0.05])
-check('B2 DIAGNOSTIC: dust ball from rest at R0 = 6 M (3 r_s), adopted law read on shell: the shift at 6M after 8 M (before any '
+check('B2 DIAGNOSTIC: dust ball from rest at R0 = 6 M (3 r_s), candidate law read on shell: the shift at 6M after 8 M (before any '
       'horizon) does not converge: the finer grid crashes first (grid-scale growth at the isotropic core); covariant reading (with the '
       'core device of the boundary) converges', d_on > 0.3 and d_cv < 0.01, 'Q(6M) h .05/.025 (nan = crashed): on-shell %.2f/%.2f, covariant %.3f/%.3f' % (b2['on-shell', 0.05], b2['on-shell', 0.025], b2['covariant+core', 0.05], b2['covariant+core', 0.025]))
 # B3: covariant reading, through horizon formation, core crunch (excised) and the late exterior
@@ -259,7 +261,7 @@ check('B4 DIAGNOSTIC: the vacuum attractor is the same under the covariant and o
 vl = vacuum('lit', 20.0)
 check('B5 DIAGNOSTIC: the literal flat-lattice divergence, Lap beta_i - 2 d_j(K_ij - delta_ij K) with flat d_j, still runs away under the '
       'normal-frame law (post-crunch C3 persists): the vacuum attractor data fail within ~11 M', vl.get('crash', False) and vl['t'] < 15, 'failed at t %.1f M' % vl['t'])
-# B6: static stars (TOV polytrope P = 100 rho0^2): pure-gauge shift perturbation under the tied lapse and the adopted law
+# B6: two static stars (TOV polytrope P = 100 rho0^2): one pure-gauge shift perturbation under the tied lapse and the candidate law
 def tov_star(rhoc, Kp=100.0, Gam=2.0, rmax=160.0, h=0.1):
     eos = lambda P: (max(P, 0) / Kp)**(1 / Gam) + P / (Gam - 1)
     def fT(R_, y):
@@ -315,7 +317,7 @@ for lab, rhoc in (('NS1', 1.28e-3), ('NS2', 3.2e-3)):
     st6[lab] = (S, pk, late, rw)
     print('   %s: M %.3f, R* %.2f, 2M/R* %.3f, N_c %.3f, label r/R at 208: %.4f | gauge amplitude peak %.1e, t >= 190: %.1e, by t: %s' % (lab, S['M'], S['Rst'], 2 * S['M'] / S['Rst'], S['N0'][S['ng']], S['s_inf'], pk, late, ' '.join('%.0f:%.0e' % (x[0], x[1]) for x in rw[::3])))
 S2 = st6['NS2'][0]; rK = gauge_run(S2, 30.0, form='K', every=2.0); tK = rK[-1][0] if not np.isfinite(rK[-1][1]) else np.inf
-check('B6 DIAGNOSTIC: static stars are attractors of the adopted law: a pure-gauge shift perturbation radiates away (M = 1.40, N_c 0.67: '
+check('B6 DIAGNOSTIC: for two TOV stars one pure-gauge shift bump radiates away under the candidate law (M = 1.40, N_c 0.67: '
       'amplitude falls > 100-fold from its peak by 190-210 M_sun; M = 1.64, N_c 0.46 < kappa: > 5-fold and still falling), no growth; '
       'the tied-lapse static labels exist with a regular centre (r = e^(-nu_c) R) and flatten to r/R -> 1',
       st6['NS1'][2] < 0.01 * st6['NS1'][1] and st6['NS2'][2] < 0.2 * st6['NS2'][1] and abs(S2['s_inf'] - 1) < 0.03, 'late/peak %.1e (NS1), %.2f (NS2)' % (st6['NS1'][2] / st6['NS1'][1], st6['NS2'][2] / st6['NS2'][1]))
@@ -325,12 +327,13 @@ check('B7 DIAGNOSTIC: in the compact star (N_c = %.2f < kappa) the same source p
       'holds on the evolved gauge data (h = 0.05)' % (S2['N0'][S2['ng']], tK), tK < 15 and cmax < 0.01, 'K-form fails at t %.1f; identity residual %.1e' % (tK, cmax))
 print('== C. estimates')
 Msun_ms = 4.925e-3
-check('C1 ESTIMATE: the 1.4 M_sun star sheds a shift perturbation in ~%.1f ms, the 1.64 M_sun one in a few ms; J0740-class cores '
-      '(N_c ~ 0.4-0.5) need the per-tick form; no gauge-invariant observable changes' % (60 * Msun_ms), True, '1 M_sun = 4.9 us')
-check('C2 ESTIMATE: candidate fix (revision of the adopted sentence): read the momentum term with the cube\'s own connection, '
-      '-2 D_j(K^j_i - delta^j_i K): block-local like the Laplacian, equal to the matter momentum on every constraint-obeying state, '
-      'and it removes both the kappa_max Jordan block (A1-A2, B1) and the flat-lattice runaway (B5)', True, 'no new register or constant')
+print('ESTIMATE (not counted): C1 the 1.4 M_sun star sheds the B6 shift bump in ~%.1f ms, the 1.64 M_sun one in a few ms (1 M_sun = 4.9 us); '
+      'J0740-class cores (N_c ~ 0.4-0.5) need the per-tick form (B7); no gauge-invariant observable changes' % (60 * Msun_ms))
+print('PROPOSAL (not counted): C2 candidate revision of the #9976 candidate sentence: read the momentum term with the cube\'s own connection, '
+      '-2 D_j(K^j_i - delta^j_i K); block-local like the Laplacian; equal to the matter momentum on constraint-obeying states (stated); '
+      'removes the kappa_max Jordan block on radial plane waves (A1-A2) and the B1 noise growth, and the flat-lattice runaway in B5')
 print('supplied: continuum ADM limit, spherical symmetry (B1 planar), mu = 3/4, kappa = 2/3, dust ball R0 = 6 M (tanh edge 6%), the core')
 print('  device (on-shell, kappa 0.3 at labels r < 2, inside the horizon after excision), excision, KO 0.8, grids, TOV polytrope K = 100, Gamma = 2.')
 print('elapsed %.1f s' % (time.time() - T0))
 print('TOTAL: PASS=%d FAIL=%d' % tuple(NP))
+sys.exit(0 if NP[1] == 0 else 1)

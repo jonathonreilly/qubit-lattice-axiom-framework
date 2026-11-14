@@ -10,9 +10,11 @@ only (axis edges); (ii) the spatial Kuhn edges with CL-1's fixed lapse and zero
 shift (tick edges fixed, mixed edges slaved). Lorentzian roots from the low-k
 form A(k_s) - w^2 C (k_t -> i w). Supplied: carrier, Euclidean continuation,
 slaving map. numpy only.
+2026-11-14 (PR 10128 hold finding 8): C2 is a one-momentum check and E2 a dimension count; their labels say so. Exits nonzero
+if any check fails.
 """
 AUDIT_TIMEOUT_SEC = 120
-import itertools, time
+import sys, itertools, time
 import numpy as np
 from scipy.linalg import eig, null_space
 
@@ -249,7 +251,7 @@ uu, ss, _ = np.linalg.svd((np.eye(NC) - Pg) @ Nsp); fvec = uu[:, 0]
 Mr = Mmap(kr)
 mres = np.linalg.norm(np.c_[Mr, Gr] @ np.linalg.lstsq(np.c_[Mr, Gr], fvec, rcond=None)[0] - fvec)
 fsp = np.linalg.norm(fvec[SPAT])
-check("C2 gauge + one zero-action branch at every k", gres < 1e-8 and nzr == 5,
+check("C2 gauge + one zero-action branch at one random k (not shown at every k)", gres < 1e-8 and nzr == 5,
       f"random k: {nzr} exact zeros = 4 displacements (|QG|/|Q| {gres:.0e}) + 1 non-metric flat branch (distance from metric+gauge span {mres:.2f}; weight on spatial edges {fsp:.2f}, rest on tick/mixed edges)")
 small = []
 for eps in (0.02, 0.01):
@@ -456,14 +458,15 @@ S5 = Slab(five_tets(), 2, 1.0)
 e5 = ev(S5.Q(np.zeros(4))); nz5 = int(np.sum(np.abs(e5) < 1e-8*np.abs(e5).max()))
 check("E2 six edges per site (3 axis + the face diagonals joining even-sum sites; 5 tets per cube, alternating)",
       S5.n == 48 and nz5 == 27,
-      f"8-site cell: {S5.n} registers = 6/site = metric count, so no non-metric strain exists; k=0 zeros {nz5} = 6 uniform metric + 21 staggered displacements")
+      f"8-site cell: {S5.n} registers = 6/site = metric count (a dimension count only: no injectivity or surjectivity of the length map onto metrics is shown, so absence of non-metric strain is not established); k=0 zeros {nz5} (read as 6 uniform metric + 21 staggered displacements, split not computed)")
 out5 = []
 for d in ((0, 0, 1), (1, 1, 1), (0.3, 0.5, 0.8)):
     E, leak, ninf = tspec(S5.Q, 0.02*np.array(d)/np.linalg.norm(d)); l5, z5, o5 = classify(E, 0.02)
     soft = o5[np.abs(o5) < 0.5]
     out5.append((len(l5), np.max(np.abs(l5 - 1)) if len(l5) else 9, z5, len(soft), np.max(np.abs(soft)) if len(soft) else 0, np.min(np.abs(o5[np.abs(o5) >= 0.5]))))
-check("E3 six-edge slab: exactly the two polarisations are light, on the edge cone",
+check("E3 six-edge slab at |k| = 0.02, three directions: exactly 4 light roots (the two polarisations), on the edge cone (sampled)",
       all(o[0] == 4 and o[1] < 1e-3 for o in out5),
       "per direction (light roots, max|E/k-1|, w=0 roots, unresolved near-zero roots and their max |E|, lightest massive |E|): " + "; ".join(f"({o[0]}, {o[1]:.0e}, {o[2]}, {o[3]}, {o[4]:.3f}, {o[5]:.2f})" for o in out5))
 print(f"elapsed_seconds {time.time()-T0:.1f}")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+sys.exit(0 if NF == 0 else 1)

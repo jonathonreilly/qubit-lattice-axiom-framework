@@ -1,21 +1,24 @@
 ---
 claim_id: the_tick_fraction_and_pair_offsets_answering_the_hinge_sum_are_constraints_and_leave_exactly_two_tensor_waves_on_the_edge_cone_with_the_quadrupole_coefficient_bounded_theorem_note_2026-10-23
 claim_type: bounded_theorem
-claim_scope: "Linear order about flat count geometry, time-dependent, under the adopted tick-fraction rule: the site tick fraction N (tick edge, one per site), the tick offset of each neighbour pair (mixed edge, one per spatial edge) and every spatial edge answer the CL-3 hinge sum. Lattice (Euclidean linearised Regge on prisms over the campaign's spatial triangulation, axis edges plus even-sum face diagonals, 13 edges per site): the tick-fraction and offset block has no tick-to-tick coupling and its null space is exactly time relabelling, so N and offsets are constraints (derived from the combinatorics, not assumed); the generic null space is vertex displacements only; the transfer spectrum at |k| = 0.02 has exactly 32 finite roots per 8-site cell, the tensor branch at the 8 folded momenta, two polarisations each, and nothing else (no scalar, vector, breathing, zero-frequency or gapped mode); at the light root the two physical vectors are transverse-traceless; both polarisations follow sinh(E/2) = tau [sum_i sin^2(k_i/2)]^(1/2) to 1e-9 out to |k| = 1.5 for tau = 1 and 0.7 (tau = tick edge / spatial edge), so the cone is the edges' null cone with no birefringence; with the non-metric modes responding, the effective action on smooth metrics is 8.0000 x the Gamma-Gamma form of sqrt(g) R in all ten components (residual 7.5e-6, falling as k^2). Continuum (supplied Regge limit, sympy): n and beta carry no second time derivative; the scalar/vector sector has no wave; TT L2 = (1/2)(hdot^2 - h'^2) and static L2 = -2|grad Phi|^2 from the same sqrt(-g) R, so G_T = G_N; quadrupole P = (G/5)<dddQ dddQ>, 32/5 for a circular binary. Contrast: on the Freudenthal (Kuhn) carrier the same rule leaves one zero-action non-metric branch at every k whose cell-averaged metric has an O(1) non-gauge part. Not derived: the Lorentzian continuation, the flat tick/edge ratio (the hinge sum leaves it free; c_gw = c_light needs CL-1's light-crossing tick clause), the register-level dressed graviton cone, the source conservation identity, nonlinear order."
+claim_scope: "Linear order about flat count geometry, time-dependent, under the tick-fraction rule (a supplied candidate rule with zero premise weight, not adopted): the site tick fraction N (tick edge, one per site), the tick offset of each neighbour pair (mixed edge, one per spatial edge) and every spatial edge answer the CL-3 hinge sum. Lattice (Euclidean linearised Regge on prisms over the campaign's spatial triangulation, axis edges plus even-sum face diagonals, 13 edges per site): the tick-fraction and offset block has no tick-to-tick coupling and its null space is exactly time relabelling, so N and offsets are constraints (derived from the combinatorics, not assumed); at two random momenta the null space is vertex displacements only; the numerically found transfer spectrum at |k| = 0.02 (three directions; roots common to two random rank completions, finite tolerances) has 32 finite roots per 8-site cell, the tensor branch at the 8 folded momenta, two polarisations each, and no other root was found there (no scalar, vector, breathing, zero-frequency or gapped root); at the light root (|k| = 0.05, 0.025) the two physical vectors are transverse-traceless; in 18 sampled cases out to |k| = 1.5 (tau = 1 and 0.7, tau = tick edge / spatial edge) both polarisations follow sinh(E/2) = tau [sum_i sin^2(k_i/2)]^(1/2) to 1e-9, so at those cases the tensor cone is the edges' null cone with no birefringence; the sampled census is a numerical diagnostic, not a proof of the full spectrum at every k; with the non-metric modes responding, the effective action on smooth metrics is 8.0000 x the Gamma-Gamma form of sqrt(g) R in all ten components (residual 7.5e-6, falling as k^2). Continuum (supplied Regge limit, sympy): n and beta carry no second time derivative; the scalar/vector sector has no wave; TT L2 = (1/2)(hdot^2 - h'^2) and static L2 = -2|grad Phi|^2 from the same sqrt(-g) R, so G_T = G_N; quadrupole P = (G/5)<dddQ dddQ>, 32/5 for a circular binary. Contrast: on the Freudenthal (Kuhn) carrier the same rule leaves one zero-action non-metric branch at the sampled momenta, whose cell-averaged metric has an O(1) non-gauge part. Not derived: the Lorentzian continuation, the flat tick/edge ratio (the hinge sum leaves it free; c_gw = c_light needs CL-1's light-crossing tick clause), the register-level dressed graviton cone, the source conservation identity, nonlinear order."
 upstream_dependencies:
   - minimal_axioms
-  - candidate_laws
+  - edge_register_set_census_cube_edges_alone_give_no_hinge_sum_and_six_edges_per_site_give_two_tensor_polarisations_on_the_edge_cone_bounded_theorem_note_2026-10-22
+  - a_site_tick_count_and_a_site_density_answer_the_hinge_sum_through_one_operator_so_light_bends_twice_the_newtonian_amount_bounded_theorem_note_2026-10-23
 runner: scripts/the_tick_fraction_and_pair_offsets_answering_the_hinge_sum_are_constraints_and_leave_exactly_two_tensor_waves_on_the_edge_cone_with_the_quadrupole_coefficient_2026_10_23.py
 ---
 
-# The tick fraction and pair offsets answering the hinge sum are constraints and leave exactly two tensor waves on the edge cone, with the quadrupole coefficient
+# The tick fraction and pair offsets answering the hinge sum are constraints and, at the sampled momenta, leave only two tensor waves on the edge cone, with the quadrupole coefficient
 
 Claim type: bounded_theorem.
 Primary runner: `scripts/the_tick_fraction_and_pair_offsets_answering_the_hinge_sum_are_constraints_and_leave_exactly_two_tensor_waves_on_the_edge_cone_with_the_quadrupole_coefficient_2026_10_23.py` (19 PASS, 0 FAIL, about 8 s, about 110 MB peak).
 
+Model status (2026-11-14). The update law (CL-1) and the response law's hinge sum (CL-3) of the originating three-law register are used here as supplied conditional model definitions with zero premise weight. The originating register text ("CANDIDATE_LAWS_v3") is not in this repository, and these clauses are not the entries of the same number in [docs/CANDIDATE_LAWS.md](CANDIDATE_LAWS.md). The tick-fraction rule quoted below is a candidate rule from that register; it is tested here, not adopted.
+
 ## Question
 
-The tick-fraction rule (adopted in CL-1 as working: "a site's tick fraction, and the tick offset between each pair of neighbouring sites, are response variables: like the edges, they take the values that make the CL-3 hinge sum stationary") gives gamma = beta = 1, alpha1 = 0 and Lense-Thirring in static and stationary states. Its register entry lists waves as open. In a time-dependent state the edges change from tick to tick, and the deficits at hinges that contain a tick direction matter. Does the same rule give gravitational waves as measured?
+The tick-fraction rule (proposed in the originating register as a working rule: "a site's tick fraction, and the tick offset between each pair of neighbouring sites, are response variables: like the edges, they take the values that make the CL-3 hinge sum stationary") gives gamma = beta = 1, alpha1 = 0 and Lense-Thirring in static and stationary states. Its register entry lists waves as open. In a time-dependent state the edges change from tick to tick, and the deficits at hinges that contain a tick direction matter. Does the same rule give gravitational waves as measured?
 - (i) exactly two tensor polarisations, with no scalar, vector or breathing mode;
 - (ii) the matter/light limiting speed (GW170817);
 - (iii) the quadrupole energy-loss coefficient (Hulse-Taylor)?
@@ -57,16 +60,17 @@ The linearised Einstein equation is not imported. The lattice results come from 
    - Tick and mixed edges lie in one slab, so their block of the hinge-sum Hessian has no z^{+-1} term (6e-16). They couple only to the spatial edges of the two slices they join.
    - Their equations are therefore algebraic: constraints, not propagating variables.
    - The block's null space has dimension 16 = 2 per site and is spanned, to 4e-8, by the time-relabelling (u_t) parts. The per-site tick fraction is a relabelling where it has no action, as the per-site offset was in tick-fraction-frame-dragging.
-3. **Census: two polarisations, nothing else** (B4). At |k| = 0.02 along the axis, the body diagonal and (0.3, 0.5, 0.8):
-   - every finite root is accounted for: 32 per cell = 2 polarisations x (+-E) x 8 folded momenta k + pi(0/1, 0/1, 0/1), matching the tensor branch to <= 5e-8;
+3. **Sampled census: two polarisations, no other root found** (B4; a numerical diagnostic). At |k| = 0.02 along the axis, the body diagonal and (0.3, 0.5, 0.8):
+   - every finite root found is accounted for: 32 per cell = 2 polarisations x (+-E) x 8 folded momenta k + pi(0/1, 0/1, 0/1), matching the tensor branch to <= 5e-8;
    - 4 roots are light, with |E/k - 1| <= 3.6e-5;
-   - there is no scalar, vector, breathing, zero-frequency or gapped mode.
+   - no scalar, vector, breathing, zero-frequency or gapped root is found at these momenta.
+   - The roots of the singular matrix polynomial are those common to two random rank-completing perturbations, matched to finite tolerances. This is not a symbolic rank or dispersion proof, and other momenta are not censused (large k only for the tensor branch, item 5).
    - For comparison, with the lapse fixed and the shift zero on the same carrier (edge-modes E3) there are 48-50 zero-frequency roots besides the 4 light ones. Responding N and offsets remove them.
 4. **The two physical vectors are transverse-traceless tensor waves** (B5).
    - At the light root the nullity is 34 = 32 + 2.
    - Fitted to a metric plus displacement, the trace and longitudinal parts of the electric curvature R_0i0j are <= 2e-4.
    - The non-metric admixture falls as k (0.021, then 0.011).
-5. **Exact lattice dispersion, no birefringence** (B6). Both polarisations follow sinh(E/2) = tau [sum_i sin^2(k_i/2)]^(1/2) to 1e-9, in 18 cases with |k| = 0.3, 1, 1.5, three directions, and tau = 1 and 0.7. At small k, E = tau |k|: the edges' null cone.
+5. **Tensor dispersion at the sampled cases, no birefringence there** (B6). Both polarisations follow sinh(E/2) = tau [sum_i sin^2(k_i/2)]^(1/2) to 1e-9, in 18 cases with |k| = 0.3, 1, 1.5, three directions, and tau = 1 and 0.7. At small k, E = tau |k|: the edges' null cone. That the formula holds at every k is not shown, and other branches are not censused at these k.
 6. **One coefficient for all ten components** (B7).
    - With the non-metric modes integrated out (they respond), the lattice effective action on smooth metrics equals c times the Gamma-Gamma form of sqrt(g) R, with c = 8.0000 = the cell's 4-volume.
    - The relative residual is 3.0e-5 and then 7.5e-6 as |k| halves (falling as k^2).
@@ -76,7 +80,7 @@ The linearised Einstein equation is not imported. The lattice results come from 
 
 ### Contrast (B2)
 
-On the Freudenthal (Kuhn) carrier the same rule leaves one zero-action non-metric branch at every k: nullity 5 = 4 + 1, with 95% of its weight on tick and mixed edges. Its cell-averaged metric keeps an O(1) non-gauge part (0.56 at |k| = 0.05 and 0.025). A source reading that average would couple to an undetermined direction. The campaign carrier has no such branch. That is a new reason for the six-edge register set once N and offsets respond.
+On the Freudenthal (Kuhn) carrier the same rule leaves one zero-action non-metric branch at the sampled momenta: nullity 5 = 4 + 1, with 95% of its weight on tick and mixed edges. Its cell-averaged metric keeps an O(1) non-gauge part (0.56 at |k| = 0.05 and 0.025). A source reading that average would couple to an undetermined direction. The campaign carrier has no such branch. That is a new reason for the six-edge register set once N and offsets respond.
 
 ### The speed tie (ii)
 
@@ -98,24 +102,24 @@ On the Freudenthal (Kuhn) carrier the same rule leaves one zero-action non-metri
 
 ## Verdict
 
-- (i) YES on the campaign carrier: exactly two TT polarisations at every k, and nothing else propagates. N and offsets act as constraints, and that follows from the rule's combinatorics.
+- (i) On the campaign carrier, at the sampled momenta: two TT polarisations and no other root found (|k| = 0.02, three directions); every-k absence of other modes is open (a symbolic rank or dispersion proof is not supplied). In the supplied continuum sector (A1-A3) the scalar and vector sectors have no wave. N and offsets act as constraints, which follows from the rule's slab combinatorics (no tick-to-tick coupling); that their null space is exactly time relabelling is checked at one k.
 - (ii) YES at k -> 0, given CL-1's light-crossing tick clause. This is the same single ratio, not a separate number, but the hinge sum does not derive it. The lattice dispersion is O((ka)^2/24) and passes GW170817 by about 62 orders.
 - (iii) YES: 32/5 with G_T = G_N from one hinge coefficient. The lattice confirms that single coefficient across all ten metric components.
 
 ## Gate
 
-- No new rule is proposed. The adopted tick-fraction rule is tested.
+- No new rule is proposed. The supplied tick-fraction rule (a candidate, not adopted) is tested.
   - (1) No measured number is chosen.
   - (2) No structure is inserted.
   - (3) Predictions it was not built for:
-    - two polarisations only;
+    - two polarisations only, at the sampled momenta;
     - no birefringence;
     - the exact lattice dispersion sinh(E/2) = tau s(k), with no superluminality at CL-1's tau;
     - the quadrupole coefficient;
     - removal of the fixed-lapse zero-frequency branches;
     - the Kuhn carrier's zero-action defect.
-  - (4) It bends CL-1, as adopted.
-- PASSES on waves. The speed tie rests on CL-1's existing tick clause.
+  - (4) It bends CL-1, as the candidate rule proposes.
+- Within the sampled census and the supplied continuum limit, the wave tests pass. The speed tie rests on CL-1's supplied tick clause.
 
 ## Smuggling review
 
@@ -132,7 +136,7 @@ Supplied, not forced:
 
 Forced, given those:
 - the constraint status of N and offsets;
-- the mode census;
+- the sampled mode census (a numerical diagnostic);
 - the TT polarisations;
 - the dispersion formula;
 - the single coefficient;
@@ -147,16 +151,16 @@ No linearised Einstein equation is input. The continuum equations are Euler-Lagr
 - Register-level dynamics is not touched: dressed weights, zero-point spread and walls.
 - Eccentric orbit averaging (Peters-Mathews) is not derived; only the ratio to GR is tested.
 - The walk's band speed is quoted, not re-derived.
-- One |k| is used for the full census (0.02, three directions); large k is checked only for the tensor branch.
+- One |k| is used for the full census (0.02, three directions); large k is checked only for the tensor branch. No statement about other modes at every k is made.
 - The near-degenerate polarisation split is resolved only to about 1e-6 at the light root.
 
 ## Uses / narrows
 
 - Uses:
-  - agents/edge-modes: the carrier, the fixed-lapse census (narrowed here: responding N and offsets remove its zero-frequency roots), and the Kuhn controls;
-  - agents/tick-skip-gamma and agents/tick-fraction-beta: gamma = 1 and the static coefficient;
-  - agents/tick-fraction-frame-dragging: per-pair offsets, the per-site relabelling being pure gauge, and the record coupling;
-  - CANDIDATE_LAWS_v3: the CL-1 tick-fraction clause and band, and CL-3's hinge sum and dressed-cone clause.
-- Consistent with the register's mode count (two tensor polarisations on the edge cone under the fixed lapse). Under the tick-fraction rule the count holds with N and offsets responding, and the extra branches vanish.
-- Narrows the register's "Open: waves" in the tick-fraction clause to: two TT polarisations, c_gw = edge cone, quadrupole 32/5, given the supplied continuation and CL-1's tick clause.
-- The Kuhn-carrier zero-action branch is consistent with the existing main note SCALE_LADDER_GRAVITY_..._COMMON_CONE (the "zero-action null direction"), and with edge-modes C2.
+  - edge-modes, [EDGE_REGISTER_SET_CENSUS_CUBE_EDGES_ALONE_GIVE_NO_HINGE_SUM_AND_SIX_EDGES_PER_SITE_GIVE_TWO_TENSOR_POLARISATIONS_ON_THE_EDGE_CONE_BOUNDED_THEOREM_NOTE_2026-10-22.md](EDGE_REGISTER_SET_CENSUS_CUBE_EDGES_ALONE_GIVE_NO_HINGE_SUM_AND_SIX_EDGES_PER_SITE_GIVE_TWO_TENSOR_POLARISATIONS_ON_THE_EDGE_CONE_BOUNDED_THEOREM_NOTE_2026-10-22.md) (#9932, carried in this PR): the carrier, the fixed-lapse census (narrowed here: responding N and offsets remove its zero-frequency roots at the sampled momenta), and the Kuhn controls;
+  - tick-skip-gamma, [A_SITE_TICK_COUNT_AND_A_SITE_DENSITY_ANSWER_THE_HINGE_SUM_THROUGH_ONE_OPERATOR_SO_LIGHT_BENDS_TWICE_THE_NEWTONIAN_AMOUNT_BOUNDED_THEOREM_NOTE_2026-10-23.md](A_SITE_TICK_COUNT_AND_A_SITE_DENSITY_ANSWER_THE_HINGE_SUM_THROUGH_ONE_OPERATOR_SO_LIGHT_BENDS_TWICE_THE_NEWTONIAN_AMOUNT_BOUNDED_THEOREM_NOTE_2026-10-23.md) (#10040, carried in this PR): gamma = 1 and the static coefficient;
+  - tick-fraction-beta (#10048) and tick-fraction-frame-dragging (#10050): logged sources, not in this repository and recorded only in the consolidation map; the static coefficient, per-pair offsets, the per-site relabelling being pure gauge, and the record coupling are taken from them as historical reported results, unverified here, and the runner re-derives what it uses (A4, A5);
+  - CANDIDATE_LAWS_v3 (the originating register, not in this repository): the CL-1 tick-fraction clause and band, and CL-3's hinge sum and dressed-cone clause, used as supplied definitions.
+- Consistent, at the sampled momenta, with the originating register's mode count (two tensor polarisations on the edge cone under the fixed lapse).
+- The originating register listed waves as open under the tick-fraction clause; this note supplies, at the sampled momenta and given the supplied continuation and CL-1's tick clause, two TT polarisations, c_gw = edge cone and quadrupole 32/5.
+- The Kuhn-carrier zero-action branch: the source says it is consistent with a main note it names only as SCALE_LADDER_GRAVITY_..._COMMON_CONE (two main notes match that pattern; the phrase was not found in either, so the remark is a historical reported statement, unverified here) and with edge-modes C2 (#9932's C2 check, carried).

@@ -4,8 +4,9 @@ AUDIT_INPUT_PATHS = ('docs/EDGES_READING_THE_ACTUAL_CONFIGURATION_RADIATE_ON_EVE
 (A) smooth source: CL-3's matter phase read from conditional odds;
 (B) quantised edges: edges are registers carrying odds like the links.
 Self-contained (numpy/scipy). Tags: [T] exact/theorem-level, [D] finite diagnostic, [E] estimate vs measurement.
+Lines starting NOT CHECKED or ESTIMATE are printed, not counted. Exits nonzero if any counted check fails (2026-11-14).
 """
-import time, itertools
+import sys, time, itertools
 import numpy as np
 import scipy.sparse as sp
 import scipy.sparse.linalg as spl
@@ -91,21 +92,47 @@ check("T", dev < 0.05,
       "E(s)/cont: " + ", ".join(f"s={s:.0f} {e:.2e}/{p:.2e}" for s, e, p in out))
 del X, Y, Z
 # A4 smoothly translated profile on a discrete-time lattice field: aliasing (Cherenkov via umklapp) only
+# 2026-11-14: the held claim "no m = 0 root for every v < c" is false (hold finding 2: v = 0.8, c = 0.9). The exact condition is
+# v < v_min = w(pi)/pi = 2 asin(c)/pi, the minimum phase speed: w(k) = 2 asin(c sin(k/2)) is strictly concave on (0, pi] for
+# 0 < c < 1, so w(k)/k falls strictly from c to v_min; an m = 0 root (w = +-k v, k != 0) exists iff v_min <= v < c.
 c_l, v = 0.9, 0.5
 kg = np.linspace(-np.pi, np.pi, 200001)[1:]
 wk = 2 * np.arcsin(c_l * np.abs(np.sin(kg / 2)))
-roots = []
-for m in range(-3, 4):
-    for n in range(-3, 4):
-        for sg in (1, -1):
-            f = sg * wk - (kg + 2 * np.pi * m) * v - 2 * np.pi * n
-            idx = np.where(np.sign(f[:-1]) * np.sign(f[1:]) < 0)[0]
-            for i in idx:
-                kk = kg[i]; kap = kk + 2 * np.pi * m
-                dfd = abs((f[i + 1] - f[i]) / (kg[i + 1] - kg[i]))
-                roots.append((m, kap, dfd, wk[i]))
+def find_roots(vel):
+    out = []
+    for m in range(-3, 4):
+        for n in range(-3, 4):
+            for sg in (1, -1):
+                f = sg * wk - (kg + 2 * np.pi * m) * vel - 2 * np.pi * n
+                idx = np.where(np.sign(f[:-1]) * np.sign(f[1:]) < 0)[0]
+                for i in idx:
+                    kk = kg[i]; kap = kk + 2 * np.pi * m
+                    dfd = abs((f[i + 1] - f[i]) / (kg[i + 1] - kg[i]))
+                    out.append((m, kap, dfd, wk[i]))
+    return out
+roots = find_roots(v)
 m0 = [r for r in roots if r[0] == 0]
 kapmin = min(abs(r[1]) for r in roots)
+vmin = 2 * np.arcsin(c_l) / np.pi
+# concavity: w''(k) = -(c/2) sin(k/2) (1 - c^2) / (1 - c^2 sin^2(k/2))^(3/2) < 0 on (0, pi]; compare with a numerical second difference
+kp = np.linspace(0.05, np.pi - 0.05, 400); hh = 1e-4
+wfun = lambda q: 2 * np.arcsin(c_l * np.sin(q / 2))
+w2num = (wfun(kp + hh) - 2 * wfun(kp) + wfun(kp - hh)) / hh ** 2
+w2th = -(c_l / 2) * np.sin(kp / 2) * (1 - c_l ** 2) / (1 - c_l ** 2 * np.sin(kp / 2) ** 2) ** 1.5
+phase = wfun(kp) / kp
+check("T", np.abs(w2num - w2th).max() < 1e-5 and w2th.max() < 0 and np.all(np.diff(phase) < 0) and abs(phase[-1] - vmin) < 0.02,
+      "A4a minimum phase speed: w(k) = 2 asin(c sin(k/2)) is strictly concave on (0, pi] for 0 < c < 1, so w(k)/k falls strictly "
+      "from c to v_min = 2 asin(c)/pi; an m = 0 resonance exists iff v_min <= v < c",
+      f"c = 0.9: v_min = {vmin:.4f}; max |w'' numeric - formula| {np.abs(w2num - w2th).max():.0e}")
+# negative result kept: the held all-v statement, with the hold's witness v = 0.8, and a sweep of v
+r08 = [r for r in find_roots(0.8) if r[0] == 0]
+kw = [abs(r[1]) for r in r08]
+sweep = [(vv, len([r for r in find_roots(vv) if r[0] == 0]) > 0) for vv in (0.3, 0.5, 0.65, 0.70, 0.72, 0.75, 0.8, 0.85, 0.89)]
+check("T", len(r08) > 0 and all(has == (vv >= vmin) for vv, has in sweep),
+      "A4b control (held statement rejected): 'no m = 0 root for every v < c' fails; at c = 0.9, v = 0.8 there is an ordinary "
+      "(non-aliased) resonance, and over a sweep of v an m = 0 root appears exactly when v >= v_min",
+      f"v = 0.8: m = 0 roots at |k| = {', '.join(f'{x:.3f}' for x in sorted(set(np.round(kw, 3))))}; sweep (v, root): "
+      + ", ".join(f"{vv}:{int(h)}" for vv, h in sweep))
 
 
 def Wrad(s):
@@ -115,10 +142,10 @@ def Wrad(s):
 ss = np.array([1.0, 1.5, 2.0, 2.5])
 lw = np.log([Wrad(s) for s in ss])
 slope = np.polyfit(ss ** 2, lw, 1)[0]
-check("D", len(m0) == 0 and abs(-slope - kapmin ** 2) / kapmin ** 2 < 0.05,
-      "A4 a profile translated smoothly at v < c radiates only through lattice aliasing: no m=0 "
-      "resonance, power ~ exp(-kappa*^2 s^2), EXPONENTIAL in (s/a)^2",
-      f"c=0.9, v=0.5: m=0 roots {len(m0)}, kappa* {kapmin:.3f} (> pi), fitted slope {-slope:.2f} vs "
+check("D", v < vmin and len(m0) == 0 and kapmin >= np.pi and abs(-slope - kapmin ** 2) / kapmin ** 2 < 0.05,
+      "A4 at the tested speed v = 0.5 < v_min a smoothly translated profile radiates only through lattice aliasing: no m = 0 "
+      "resonance, every root has |kappa| >= pi, and with the supplied Gaussian form factor the power ~ exp(-kappa*^2 s^2)",
+      f"c=0.9, v=0.5 (v_min {vmin:.3f}): m=0 roots {len(m0)}, kappa* {kapmin:.3f} (>= pi), fitted slope {-slope:.2f} vs "
       f"kappa*^2 {kapmin**2:.2f}; W(2.5)/W(1) {np.exp(lw[-1]-lw[0]):.0e}")
 # A5 sizes for a thermal nucleon
 s_fm = 1e-15
@@ -252,9 +279,8 @@ _, Fr2, _ = toy(100., 100., w0, 2, False, nmat=9, nq=61)
 _, Fs2, _ = toy(100., 100., w0, 2, True, nmat=9, nq=61)
 R2 = Fs2[0] / Fr2[0]
 check("D", abs(R2 / (R50 / 2) - 1) < 0.25,
-      "B3b the collective (expansion) mode: N matter modes on a scale mode of mass N M leave the same total "
-      "residual, so the residual vacuum density falls as 1/N_cells; for a Hubble volume ~1e-183 Planck "
-      "against the measured ~1e-123: the vacuum standard survives quantisation for the expansion",
+      "B3b the collective (expansion) mode in the toy: N = 2 matter modes on a scale mode of mass N M leave about the same "
+      "total residual as one mode on mass M, i.e. a ratio falling as 1/N here (extrapolation to a Hubble volume not computed)",
       f"N=2, M_glob=100: R {R2:.2e} vs R(N=1,M=50)/2 {R50/2:.2e}")
 # one quantum departure sources hbar w (null dust as C4)
 ev, Fs, vec = toy(50., 50., w0, 1, True, nstates=6)
@@ -279,12 +305,13 @@ phi = lambda dd: G_ * 1e-14 ** 2 * 2.5 / (hb * dd)
 d0, dx = 2e-4, 2.5e-4
 dphi = phi(d0) + phi(d0 + 2 * dx) - 2 * phi(d0 + dx)
 Cq = abs(np.sin(dphi / 2))
-check("T", wrong == 0 and Cq > 0.1,
-      "B4 quantum edges: the joint update never reads the actual configuration, so CL-2 has one target "
-      "(Born exact, no signalling, no hop ever reaches the edges); the actual pointer, edge and test-mass "
-      "values agree (Page-Geilker passes); two masses entangle through the edges",
-      f"P(deflection disagrees with pointer) {wrong:.0e}; BMV (1e-14 kg, d 200 um, dx 250 um, 2.5 s) "
-      f"phase {phi(d0):.2f} rad, concurrence {Cq:.3f} (A, definite: 0)")
+# 2026-11-14 (hold finding 10): this state is correlated by construction; it tests no update, no Page-Geilker-generating dynamics
+# and no mediator-side entanglement, so B4 is no longer counted.
+print("NOT CHECKED: B4 item 9 (with edge registers the joint update never reads the actual configuration, so Born transport, "
+      "no signalling and zero hop radiation follow) is a structural reading of the supplied rules, argued, not computed; "
+      f"the constructed pointer/edge/test-mass state is correlated by construction (P(disagree) = {wrong:.0e} by construction)")
+print(f"ESTIMATE: Newtonian-phase formula with a supplied BMV-type geometry (1e-14 kg, d 200 um, dx 250 um, 2.5 s): phase "
+      f"{phi(d0):.2f} rad, concurrence |sin(dphi/2)| = {Cq:.3f}; no edge-register mediator is simulated")
 # B5 graviton vacuum: cube-averaged edge fluctuation ~ 1/L
 Nb = 48
 k = 2 * np.pi * np.fft.fftfreq(Nb)
@@ -311,6 +338,7 @@ check("E", max(corr.values()) < 1e-80,
       "timing and the Friedmann law; crush/split-epoch results (Planck curvature) are not controlled",
       ", ".join(f"{k} {v:.0e}" for k, v in corr.items()))
 print(f"   graviton at the cell: hbar/tau = {hb/tau:.0e} J vs E_hop {4*np.pi*G_*(mN/3)**2/(6*aL):.0e} J")
-print("theorems: A1-A3, A6, B1-B2, B4; diagnostics: A4, B3, B5; estimates: A5, A7, B6")
+print("exact on the supplied models: A1-A3, A4a, A4b, A6, B1-B2; diagnostics: A4, B3, B5; estimates: A5, A7, B6; not checked: B4 (item 9)")
 print(f"elapsed_seconds {time.time()-t0:.1f}")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+sys.exit(0 if NF == 0 else 1)

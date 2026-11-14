@@ -7,7 +7,9 @@ area, computes Jacobson's G = 1/(4 eta) and the induced (Sakharov) static
 couplings from the same sea, and lists what the repair costs the update law.
 
 Self-contained (numpy, scipy). Seeded. Supplied model, finite diagnostic.
+Exits nonzero if any counted check fails (2026-11-14).
 """
+import sys
 import time
 import itertools
 import numpy as np
@@ -201,10 +203,10 @@ check("A1", "T", np.abs(Run @ Run - (Nl * np.linalg.norm(w)) ** 2 * I8).max() < 
       f"one cube, l = (0.7, 1.3, 2.1): |R_un^2 - sin^2 eps0| = {np.abs(Run@Run - np.sin(EPS0)**2*I8).max():.0e}, |U_CL1 - U_un| = {np.abs(U_cl1-U_un).max():.0e}")
 
 vr = [(e, vmax(e) / (2 / np.sqrt(3) * np.sin(e))) for e in (0.0375, 0.3, 0.6, 1.0, 1.3)]
-check("A2", "T", all(abs(r - 1) < 2e-3 for _, r in vr),
-      "tick's max group velocity = (2/sqrt3) sin(eps) sites/tick at every step (Bloch): with the step read as sin(eps_c) = N_c|w_c| "
-      "the cone is exact cube by cube for ANY lapse (variant R2, needs N|w| <= 1); step eps0 on the unnormalised hop (variant R1) "
-      "scales light speed by sin(eps0|w|)/sin(eps0)",
+check("A2", "D", all(abs(r - 1) < 2e-3 for _, r in vr),
+      "at the five sampled steps the tick's max group velocity is (2/sqrt3) sin(eps) sites/tick (Bloch, finite k-grid; not shown at "
+      "every step): with the step read as sin(eps_c) = N_c|w_c| the sampled cone matches cube by cube (variant R2, needs N|w| <= 1); "
+      "step eps0 on the unnormalised hop (variant R1) scales light speed by sin(eps0|w|)/sin(eps0)",
       "v/((2/sqrt3) sin eps): " + ", ".join(f"{e}: {r:.5f}" for e, r in vr)
       + f"; R1 at edge l = 1/8: light speed x {np.sin(EPS0*8)/np.sin(EPS0):.2f}, at l = 4: x {np.sin(EPS0/4)/np.sin(EPS0):.3f}")
 
@@ -235,9 +237,17 @@ P_sp = floquet_cubes(sinb(Nc, lam * lc))
 dW = abs(slab_S(P_weyl) - slab_S(P_base))
 dSp = abs(slab_S(P_sp) - slab_S(P_base))
 check("A4", "T", dW < 1e-9 and dSp > 1e-3,
-      "4D Weyl theorem: a cube reads only ratios of its own N and l_i, so (N, l) -> Omega (N, l) cube-wise leaves tick, vacuum and every "
-      "entropy unchanged while proper areas scale by Omega^2; spatial-only rescaling at fixed N (the repair) moves S",
+      "4D Weyl invariance: in this supplied tick a cube reads only ratios of its own N and l_i, so (N, l) -> Omega (N, l) cube-wise leaves "
+      "tick, vacuum and every entropy unchanged while proper areas scale by Omega^2; spatial-only rescaling at fixed N (the repair) moves S",
       f"8^3 Floquet, random cube N, l: Weyl factors in [1/8, 4]: |dS| = {dW:.1e}; spatial factors in [1/2, 2] at fixed N: |dS| = {dSp:.3f}")
+# A4b (2026-11-14): along that conformal orbit S is fixed while the proper cut area moves, so no single nonzero
+# proper-area coefficient eta_prop = S/A works on the orbit (the narrow consequence the hold keeps).
+A_base = float(np.sum(lc[CUT] ** 2)); A_weyl = float(np.sum((Om * lc)[CUT] ** 2))
+etap_b, etap_w = slab_S(P_base) / A_base, slab_S(P_weyl) / A_weyl
+check("A4b", "T", dW < 1e-9 and abs(A_weyl / A_base - 1) > 0.1 and abs(etap_w / etap_b - 1) > 0.1,
+      "on one conformal orbit of the massless supplied tick (unchanged N/l ratios, same vacuum choice) S is unchanged while the proper "
+      "cut area changes, so no single nonzero proper-area coefficient fits the orbit",
+      f"proper cut area ratio A_weyl/A_base = {A_weyl/A_base:.3f}; S/A ratio {etap_w/etap_b:.3f}; |dS| {dW:.1e}")
 
 # =============================================================== B. area-law tests
 print("== B. does S track proper area under the repair?")
@@ -275,6 +285,16 @@ check("B3", "D", abs(slope) < 0.5 and np.std(ys) > 1e-3,
       "random cube-wise edge factors (ln lambda ~ N(0, 0.35^2)) at fixed N, static 8^3: S moves, but ln S does not follow ln(proper "
       "cut area): the vacuum sees gradients of ln(N/l), not area",
       f"10 draws: regression slope dlnS/dlnA = {slope:+.3f} (area law 1); spread of ln S {np.std(ys):.3f}, of ln A {np.std(xs):.3f}")
+# B5 (2026-11-14): negative result kept from the held wording "S = eta x (number of cut bonds)". On one fixed graph with one fixed
+# set of cut bonds, S still moves (spatial-only rescaling A4, normal stretch B2, random edge factors B3), so S is not a function
+# of the cut-bond count alone. Control: the held count law predicts zero change in each case and is rejected.
+ncut = len(CUT)
+rel_changes = [dSp / slab_S(P_base), abs(dln) * ep, float(np.std(ys))]
+check("B5", "T", ncut > 0 and min(rel_changes) > 1e-3,
+      "negative result (witnesses): with the graph and the cut bonds fixed, S changes under spatial-only rescaling at fixed N, under "
+      "normal stretch at fixed transverse area and under random cube-wise edge factors; S is not a constant times the cut-bond count",
+      f"{ncut} cut bonds on the 8^3 slab; relative change of S: {rel_changes[0]:.3f} (A4 spatial), {rel_changes[1]:.4f} (B2 normal, "
+      f"eps = {ep}, planar chains), {rel_changes[2]:.3f} (B3 spread of ln S); the count law predicts 0 in each (rejected)")
 
 Pm = gs(H0 + np.diag(0.7 * (-1.0) ** G8.sum(1)))
 ks8 = 2 * np.pi * (np.arange(8) + 0.5) / 8
@@ -300,8 +320,9 @@ check("B4", "D", abs(slab_S(Pm) - Sch) < 1e-9 and all(v < 0 for v in sl.values()
 print("== C. G = 1/(4 eta) and the induced static couplings of the same sea")
 reqB, reqA = np.pi / 2, 2 * np.pi
 check("C1", "E", abs(e0 - 0.196645) < 2e-5,
-      "Jacobson with the lattice cutoff: S = eta x (cut bonds), so in proper units eta_prop = eta/a^2 and G_J = a^2/(4 eta): constant in "
-      "lattice units, varying as a^2 in proper units (x1024 across the edge window [1/8, 4]); unit map 8 pi G = L^2 with L = 2a (B) or a (A)",
+      "conditional estimate: for the unstrained planar (100) cut, S per cut bond is eta_100; IF proper area per cut bond is identified with "
+      "a supplied universal a^2, then eta_prop = eta_100/a^2 and G_J = a^2/(4 eta_100) (constant in lattice units, x1024 in proper units "
+      "across the edge window [1/8, 4]); unit map 8 pi G = L^2 with L = 2a (B) or a (A), supplied",
       f"G_J = {1/(4*e0):.3f} a^2; G_J/G = {reqB/e0:.2f} (B), {reqA/e0:.1f} (A); per cell (2a)^2: eta = {4*e0:.3f}")
 
 Lx, nk = 32, 8
@@ -419,12 +440,13 @@ check("C4", "E", all(v > 0 for v in GN.values()),
       "1/(4 pi G_N) = B^2/(2A) - 2C, weak: G_N far above the hinge-sum G",
       "m: G_N/a^2, G_N/G (B), (A): " + "; ".join(f"{m}: {v:.2f}, {v*2*np.pi:.0f}, {v*8*np.pi:.0f}" for m, v in GN.items()))
 
-print("verdict: the repair (hop N/l with no lapse clause; step read from sin eps_c = N_c|w_c|) FAILS its target: S is exactly blind to the "
-      "4D Weyl factor (A4), moves with ln(N/l) gradients only (B1-B3), and masses push it the wrong way (B4); S is eta x (cut bonds), "
-      "not eta x proper area. Cost (A1-A3): the lapse becomes a free datum per cube; the cone and the EP survive.")
-print("Sakharov: the massless sea induces no Newtonian limit (C2); masses induce a weak attractive one (C4). Jacobson's G_J = "
-      f"{1/(4*e0):.2f} a^2 fixes nothing unless proper area per cut bond is one universal unit. Gate: no number chosen, no structure "
-      "inserted, G not inserted; bends CL-1's lapse clause (no axiom); its built prediction (area law) FAILS.")
-print("theorems: A1, A2, A4, B1, C2; diagnostics: A3, B2, B3, B4, C3; estimates: C1, C4")
+print("summary (supplied model): along a conformal orbit S is fixed while proper area scales (A4, A4b), so no single proper-area "
+      "coefficient fits the orbit; S also moves at fixed cut-bond count (B5), so it is not a cut-bond count either; in the tested "
+      "strains it does not follow ln(proper cut area) (B1-B3), and masses move it the wrong way (B4). Cost (A1-A3): the lapse becomes "
+      "a free datum per cube; the sampled cone and the rest phase survive.")
+print("Sakharov: the massless supplied sea induces no Newtonian limit (C2); masses induce a weak attractive one (C4). Jacobson's G_J = "
+      f"{1/(4*e0):.2f} a^2 is a conditional estimate that needs a supplied universal proper area per cut bond. No axiom or clause is adopted.")
+print("exact on the supplied model: A1, A4, A4b, B1 (static part), B5 (witnesses), C2; finite diagnostics: A2, A3, B2, B3, B4, C3; estimates: C1, C4")
 print(f"elapsed {time.time()-T0:.1f} s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+sys.exit(0 if NF == 0 else 1)

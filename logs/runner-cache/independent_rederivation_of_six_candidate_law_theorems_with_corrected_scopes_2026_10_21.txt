@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/independent_rederivation_of_six_candidate_law_theorems_with_corrected_scopes_2026_10_21.py
-runner_sha256: be4f2346dee3f6bb7d1fb9d2764c28d9960b0e6acd56cae3668e74707cf11b43
-input_fingerprint_sha256: 939311b4e809514f2aff80c023fca8f621cce47272b650844f5364cef104355f
+runner_sha256: d23b49cab972483f08c60f27c142b87b7ab0a42e2679134a1b5a591c078bda31
+input_fingerprint_sha256: fc9b03bca2faf3743b5105581ff0e16ef73cb4980e3cd5961b9ba1a6ea49ce97
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.21
+elapsed_sec: 2.35
 status: ok
 ----- stdout -----
 [PASS] 2O built: lifts rotate sigma by R, closed under products, 8 orthonormal irreducible characters
@@ -48,7 +48,7 @@ status: ok
 [PASS] lapse equation E = kappa dS/dT = 6 kappa (l+l') A(u), A = asin(u^2/(1-u^2))/sqrt(1-2u^2); small u gives H^2 = (8 pi G/3) rho
 [PASS] exact law H^2 = (8 pi G/3) rho [1 - x + (13/12)x^2 ...], x = rho/rho*: monotone, Hl -> sqrt2, no zero at rho*; (1 - x) is first order only  x^2 coeff 1.081; exact/(1-x): 0.01:0.990/0.99 0.5:0.673/0.50 1:0.510/0.00 2:0.345/-1.00
 [PASS] dust l ~ t^(2/3), radiation l ~ t^(1/2) at late times (rho << rho*); early times coast, l ~ t, at the sqrt2 bound  0.6667 0.5000 1.0000
-elapsed_seconds 2.0
+elapsed_seconds 1.9
 TOTAL: PASS=33 FAIL=0
 
 ----- stderr -----

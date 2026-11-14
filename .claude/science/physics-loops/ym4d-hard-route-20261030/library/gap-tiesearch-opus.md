@@ -143,3 +143,26 @@ K3: z-twist pi/4 at L = 16 from a hot start (seed 12). Before the sweep: the int
 structure factor (4.2). The rules of Section 2 decide; g uses lambda(16)/lambda(8) of these long runs only (the screen
 values are not pooled in).
 
+**4.4 beta 2.3 screen** (runs 17:29Z to about 17:56Z; same lengths; the connected values exist from the runs started after 17:30Z).
+
+| slice (mode) | lambda, L = 8 | lambda, L = 12 | ratio 12/8 | screen rule (> 1.2) |
+|---|---|---|---|---|
+| u_xy (xy) | 2.66 +- 0.20 | 2.71 +- 0.17 | 1.02 | no growth (row 950: 2.51 at L = 8, 2.46 at L = 10) |
+| z-twist pi/2, colour 3 | 3.25 +- 0.21 [2.25] | 2.33 +- 0.34 [1.93] | 0.72 | no growth |
+| z-twist pi/4, colour 3 | 2.55 +- 0.17 [2.30] | 2.82 +- 0.38 [2.44] | 1.11 | no growth |
+| x-twist pi/2, colour 3 | 2.59 +- 0.33 [2.33] | 2.55 +- 0.34 [2.26] | 0.98 | no growth |
+| u_xyyz (xyz) | 1.26 +- 0.08 | 1.10 +- 0.04 | 0.87 | no growth |
+| twisted u_xyyz pi/2, colour 3 (xyz) | 1.32 +- 0.10 [1.14] | (running at the time of writing) | | |
+| interp s = 0.5 (xy) | 0.68 +- 0.07 [0.50] | (pending) | | |
+
+Interp at beta 2.3, L = 8, with the connected structure factor: raw top eigenvalue 4.18 at (pi, pi, 0), of which the mean part
+is 3.96; the connected top eigenvalue is 0.54. So the flag of 4.2 is a non-zero mean field (a deterministic staggered
+response of slice 1 to this slice), not a fluctuation, and it does not enter Lemma SUB. (beta 2.4 re-run with the connected
+value: in the full batch.) On every other slice the mean part is at most 0.18, as the symmetries require.
+
+**4.5 Plan at beta 2.3 (fixed 17:51Z, before it runs; `lane973/full23.sh`, chained after the beta 2.4 batch).** No slice passed
+the screen at 2.3. To give the verdict on sides 8 to 16 as Section 2 asks, the three xy-mode slices with the largest values
+(u_xy, z-twist pi/4, z-twist pi/2) run at L = 8, 16, 12 (24000, 12000, 16000 measured sweeps, seed 21), and K3 is u_xy at L = 16
+from a hot start. u_xyyz and its twist (values about half, falling) and x-twist (flat) are not continued; the verdict at 2.3
+covers the slices of the screen at sides 8, 12 and these three at 16.
+

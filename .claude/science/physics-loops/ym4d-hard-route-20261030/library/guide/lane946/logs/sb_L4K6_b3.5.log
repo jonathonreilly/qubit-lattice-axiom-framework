@@ -1,0 +1,4 @@
+[    0.0s rss     68MB] su2 geom=box L=4 K=6 beta=3.5 B=16 m=4 nsep=10 n=300 nor=2 links=3264 colours=9 NF=816 rows=1062
+[   24.4s rss    108MB] thermalised; plaquette mean 0.7662443752844001
+[   48.8s rss    620MB] round 1/4: c=0.0004861 t3=0.0003034 t10=5.152e-05 c3=0.0003069 line=0.0333 sq2=0.0005404 zm=0.0009977 patch=0.1008 xsec=0.3415
+[   73.8s rss    660MB] round 2/4: c=0.0004688 t3=0.0002586 t10=4.077e-05 c3=0.0003113 line=0.03295 sq2=0.0005398 zm=0.0006176 patch=0.09906 xsec=0.334

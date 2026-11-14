@@ -325,3 +325,20 @@ in the confined phase, as Step 1 expected. Neither family shows growth toward 1 
 **C2 at beta 2.6 (one-plaquette chain, K = 4, B = 64, m = 4, n = 2000; `out/c2_plaq_b2.6.json`).** R_hat(cos theta)
 = 1.115e-3 +- 2.5e-5 (exact 1.088e-3, +2.5 percent, 1.1 err); tanh 3: 8.2e-4 +- 9.5e-5 (exact 7.47e-4); tanh 10:
 2.2e-4 +- 7.9e-5 (2.30e-4); cos^3: 4.8e-4 +- 4.1e-5 (4.89e-4). PASS. Compute used at 08:33:41Z: 21.8 minutes.
+
+### Step 7: worst f in a span (variational probe) and one SMALL-BOX probe (GUIDE)
+
+**Probe (written before the run, `lane946/zmvar.py`).** theta_zm := sup over f in the span of 15 zero-momentum
+observables (sum over one plane of h(c_p), h in {c, tanh 3c, tanh 10c, c^3}, three planes; sum over one
+direction's cross-section of winding lines, three directions) of R(f) = top generalised eigenvalue of
+(A, Bm), A_ij = E_nu <grad P F_i, grad P F_j> estimated without noise bias by the symmetrised product of the
+two independent half-chain covariances, Bm_ij = E_nu <grad F_i, grad F_j> on x. A lower bound on theta_GC of
+the box restricted to this family; jackknife over chains. Criterion as in 2.5 (theta_zm - 3 err >= 1 refutes).
+
+**zmvar, 4^3 x 13, beta 2.3, B = 16, m = 8, n = 300 (`out/zmvar_L4_b2.3.json`, 3.8 min).**
+theta_zm = 0.1447 +- 0.0047 (Bm of full rank 15). Centre-even sector (the 12 plaquette functions):
+0.0071 +- 0.0005. Lines only: 0.1447. Diagonal R per row: c 0.0028-0.0033, tanh 3c 0.0019-0.0026, tanh 10c
+0.0005-0.0008, c^3 0.0013-0.0017, line sums 0.128-0.144 (each consistent with b1's O2b and O4c).
+Reading (GUIDE). The worst combination in the family is a cross-section line sum, R about 0.145; mixing the
+plaquette functions at zero momentum doubles the best single plaquette value but stays below 0.01. NOT
+REFUTED.

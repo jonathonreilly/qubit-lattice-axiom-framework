@@ -218,3 +218,15 @@ Energies from the slab time correlators (E_eff over tau = 1-3, weighted; plaquet
 - C3 size: at L = 12 the measured photon ratio is 0.670 of the free value, inside the pre-stated factor 1.5 (bound 0.667): **PASS, barely.** My pre-run expectation (about 1.2 times free, from beta_R = beta - 1/4) was wrong in direction. The energies agree with the free dispersion to 2 percent at L >= 6 (0.936, 0.758, 0.609, 0.512 against 0.962, 0.748, 0.609, 0.512), so the deficit is in the observable, not in the photon. Reading (ARGUED): the gradient of sin(theta_p) carries a k-independent incoherent part (about 4 Var(cos theta_p) per plaquette), while the coherent part falls like |khat|^2; at L = 12 they are comparable, which lowers the ratio of a local magnetic observable below 1/c as k_min -> 0. A smoothed photon field would do better; not tried.
 - C4: all 25 sector comparisons (K' = 10 against K = 6) within 2.0 combined errors: PASS.
 - A lesson for the SU(2) verdicts (GUIDE): in U(1) the variational top over ALL sectors is the holonomy sector U0w, and it FALLS with L (kappa = -0.69 +- 0.07), while the true R_J grows. The floor from the holonomy gap (Lemma GAP-R) grows like L (3.1 to 8.8; E_wind follows the rotor value 1/(2 beta_R L) with beta_R about 1.2), and so does the photon sector. Raw winding lines lose their overlap with the rotor states (factor p^2, amendment (A1)). So a flat or falling R_J^top does not by itself show boundedness: each sector and each floor has to be read. The SU(2) verdicts below are read that way.
+
+### 5e (interim, 12:05Z). SU(2) beta 2.6, L = 4..12 (1200 configurations each, central pair K' = 12, extra pair K = 8)
+
+| L | S0e | S0o (winding) | S1e | S1o | R_J^top | E_flux (tau 1-5) | floor 1/(2 beta E_flux) | Binder U of M |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 0.1221 +- 0.0057 | **1.5419 +- 0.0565** | 0.0933 +- 0.0015 | 0.0885 +- 0.0012 | 1.542 (S0o) | 0.13 | about 1.49 | 0.42 |
+| 6 | 0.1147 +- 0.0045 | **0.6396 +- 0.0244** | 0.1057 +- 0.0019 | 0.0832 +- 0.0014 | 0.640 (S0o) | 0.135 | about 1.42 | 0.31 |
+| 8 | 0.1072 +- 0.0032 | **0.2464 +- 0.0076** | 0.1076 +- 0.0019 | 0.0654 +- 0.0009 | 0.246 (S0o) | 0.15 | about 1.30 | 0.18 |
+| 10 | **0.1118 +- 0.0047** | 0.1084 +- 0.0042 | 0.1080 +- 0.0026 | 0.0474 +- 0.0006 | 0.112 (S0e) | 0.15 | about 1.28 | 0.105 |
+| 12 | **0.1179 +- 0.0054** | 0.0555 +- 0.0016 | 0.1130 +- 0.0020 | 0.0359 +- 0.0006 | 0.118 (S0e) | 0.15 | about 1.3 | 0.035 |
+
+The flux energy stays near 0.13-0.15 from L = 4 to 12 (box at or below the deconfinement length; Nambu-Goto with the recalled sigma = 0.0176 gives 0.11 at L = 10 and 0.16 at L = 12), so the floor of Lemma GAP-R stays near 1.3-1.5, while the variational winding sector falls by a factor 28 (raw winding lines lose their overlap with the flux state as the Polyakov loops disorder: Binder U 0.42 -> 0.105). The local sectors are flat at 0.107-0.122. C4 (K' = 12 against K = 8), computed: all 20 sector comparisons at L = 4..12 within 2.3 combined errors (largest: S1e at L = 6, +2.3): PASS. (An earlier draft of this line said 1.7 before the deviations were computed; corrected at 12:05Z.)

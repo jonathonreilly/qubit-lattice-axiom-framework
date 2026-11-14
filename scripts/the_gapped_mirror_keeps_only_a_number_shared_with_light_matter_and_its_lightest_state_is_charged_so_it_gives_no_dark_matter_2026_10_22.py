@@ -149,6 +149,14 @@ for _ in range(20):
     sgn = np.sign(Ek); idx = np.where(sgn[:-1]*sgn[1:] < 0)[0]; nets.append(int(np.sign(Ek[idx + 1] - Ek[idx]).sum()))
 check("B2 [T] Nielsen-Ninomiya per sector (1D witness): in 20 random periodic bands right- minus left-movers at E = 0 is 0; so an exact one-body mirror number makes the light sector a lattice theory by itself, vector-like",
       all(x == 0 for x in nets), f"net chiralities {sorted(set(nets))}")
+# B3 (added 2026-11-14): a shared (non-separate) label is not a decay theorem. Witness: H = [[1,1],[1,1]] does not commute
+# with the bare-label projector diag(1,0), yet its eigenstate (1,-1)/sqrt2, half on each label, is stationary for all t.
+Hw = np.array([[1., 1.], [1., 1.]]); Pw = np.diag([1., 0.]); ww, vw = np.linalg.eigh(Hw); psi_w = vw[:, 0]
+surv = [abs(np.vdot(psi_w, expm(-1j*Hw*t_) @ psi_w)) for t_ in np.linspace(0, 50, 101)]
+lbl_w = [float(np.real(np.vdot(expm(-1j*Hw*t_) @ psi_w, Pw @ expm(-1j*Hw*t_) @ psi_w))) for t_ in (0., 7.3, 50.)]
+check("B3 [T] the absence of a separately conserved label does not imply decay (the B1 commutant constrains symmetries, it integrates no channel): H = [[1,1],[1,1]] does not commute with the label projector diag(1,0), yet its eigenstate (1,-1)/sqrt2 is stationary; so the mirror lifetimes in E are conditional on an open channel, a nonzero matrix element and the supplied width",
+      np.linalg.norm(Hw@Pw - Pw@Hw) > 1 and abs(ww[0]) < 1e-12 and min(surv) > 1 - 1e-12 and max(abs(x - 0.5) for x in lbl_w) < 1e-12,
+      f"||[H, P]|| {np.linalg.norm(Hw@Pw - Pw@Hw):.3f}; min survival over t in [0, 50] {min(surv):.12f}; label weight {', '.join(f'{x:.3f}' for x in lbl_w)}")
 print("== C. quantum numbers of the cell spectrum (Spin(10) irreps -> SM)")
 # SM generators in the spinor: E_ij = a_i^dag a_j (U(5) in so(10))
 Eij = lambda i, j: A_[i].T@A_[j]
@@ -216,8 +224,12 @@ Db, Df = gap['10'], gap['16']; r_ = Db/Df
 check("D2 [F] ordering (atomic limit): the lightest mirror excitation is the SM-charged 10 (Delta_b = 0.568 Delta_f, X = +-2, no SM singlet); the lightest SM singlet is nu'^c at Delta_f, below the two-cell 10 x 10 singlets (2 Delta_b, X = 0) and the 54 singlet (X = 0)",
       Db < Df < 2*Db < gap['54'], f"Delta_b/Delta_f {r_:.4f}; 2 Delta_b/Delta_f {2*r_:.4f}; 54/Delta_f {gap['54']/Df:.4f}")
 c16 = np.real(np.trace(sum(S@S for S in SigE)))/16; c10 = np.real(np.trace(sum(L@L for L in Sv)))/10
-check("D3 [F] with X exact every (X, fermion parity, SM charge) sector's lightest state is stable: nu'^c (fermion-odd, X = 5) cannot reach another 16 member (Delta X = 4 costs >= 2 Delta_b > 0) and the 10 (X = +-2) is the absolute lightest; a Casimir term lam C_Spin(10) raises the 16 faster than the 10, so it never lifts the 10 above the 16",
-      2*Db > 0 and Db < Df and c16 > c10, f"C(16)/C(10) = {c16/c10:.4f}")
+# a Casimir term lam C_Spin(10) shifts each gap by lam C(R); the 10 stays below the 16 for every lam >= 0 (linear in lam, true at
+# lam = 0, and the 16's slope is larger); a negative lam below lam_inv = -(Df - Db)/(C16 - C10) reverses the order (control)
+lam_inv = -(Df - Db)/(c16 - c10); lam_grid = np.concatenate([[0.], np.geomspace(1e-3, 1e3, 61)])
+keep = all(Db + l_*c10 < Df + l_*c16 for l_ in lam_grid); flip = Db + 1.01*lam_inv*c10 > Df + 1.01*lam_inv*c16
+check("D3 [F] with X exact every (X, fermion parity, SM charge) sector's lightest state is stable: nu'^c (fermion-odd, X = 5) cannot reach another 16 member (Delta X = 4 costs >= 2 Delta_b > 0) and the 10 (X = +-2) is the absolute lightest; a Casimir term lam C_Spin(10) with lam >= 0 raises the 16 faster than the 10, so it never lifts the 10 above the 16; control: a negative lam below lam_inv reverses the order (no stable-spectrum claim is made for it)",
+      2*Db > 0 and Db < Df and c16 > c10 and keep and flip and lam_inv < 0, f"C(16)/C(10) = {c16/c10:.4f}; order kept on lam in [0, 1e3]; reversed for lam < lam_inv = {lam_inv:.3f} g per Casimir unit")
 print("== E. estimates against measurement (supplied: unit map, freeze-out formula, sigma v ~ 4 pi kappa/m^2, bounds approximate)")
 lP, hb = 1.616255e-35, 6.582119569e-25; a = np.sqrt(8*np.pi)*lP; tau = 2*a/(np.sqrt(3)*2.99792458e8); E1 = hb/tau; Mb = 2.435e18; MP = 1.22e19
 def omega(m, kap, gst=106.75, g=4):
@@ -234,15 +246,16 @@ print(f"  thermal freeze-out (strong annihilation, unitarity-saturating kappa = 
 print(f"  law-fixed gap: smg-verify window g tau in (eps/(3.65 sqrt3), 0.0117) puts Delta_f near the cell (1 rad/tick = {E1:.1e} GeV): if ever thermal,")
 print(f"    Omega h^2 >~ 0.12 (m/{m1/1e3:.0f} TeV)^2 = {0.12*(1e18/m1)**2:.0e} at 1e18 GeV (unitarity-limited; overclosure); a stable relic there needs T_RH << Delta and a supplied abundance Y m = 4.4e-10 GeV")
 g1 = 0.30/np.sqrt(2); tg = lambda m: hb/(g1**2*m**3/(32*np.pi*Mb**2))
-print(f"  with the tick's light-mirror mixing (B1; vertex O(1) at recoil, dark-matter-candidate A6 g >= 0.30, quasi-particle weight 1/2):")
-print(f"    nu'^c -> nu^c + graviton: tau ~ {tg(1.5e3):.0e} s at 1.5 TeV, {tg(m1):.0e} s at {m1/1e3:.0f} TeV, {tg(1e18):.0e} s at 1e18 GeV; DM needs > 1e26 s")
-print(f"    (> 8e18 s invisible) -> m < {((hb*32*np.pi*Mb**2/(g1**2*8e18))**(1/3))*1e3:.0f} MeV, against the mirror's >= 1.5 TeV (mirror-condensate-ew): excluded at every gap")
+print(f"  CONDITIONAL estimate (not an exclusion; B3): IF the channel nu'^c -> nu^c + graviton is open, with the supplied vertex (copy-sign note, g >= 0.30 at recoil,")
+print(f"    times the weight 1/sqrt2) and the supplied width g^2 m^3/(32 pi M_P^2); the on-shell final state, the lattice matrix element and the graviton normalisation are not computed:")
+print(f"    tau ~ {tg(1.5e3):.0e} s at 1.5 TeV, {tg(m1):.0e} s at {m1/1e3:.0f} TeV, {tg(1e18):.0e} s at 1e18 GeV; DM needs > 1e26 s")
+print(f"    (> 8e18 s invisible) would need m < {((hb*32*np.pi*Mb**2/(g1**2*8e18))**(1/3))*1e3:.0f} MeV under these inputs, against the mirror's >= 1.5 TeV (mirror-condensate-ew); the lattice channel stays open")
 sZ = (1.1664e-5**2*0.939**2/(8*np.pi))*(0.59)**2*0.3894e-27
 print(f"  if a mirror number were supplied: the stable 10's neutral complex doublet member couples to Z (C3): sigma_n ~ {sZ:.0e} cm^2 vs ~1e-46 (m/TeV) cm^2 (LZ-type,")
 print(f"    approximate): excluded below m ~ {sZ/1e-46:.0e} TeV; charged members (Q = +-1, colour triplets) are stable CHAMPs/heavy hadrons")
 print(f"  nu'^c itself: Z/photon couplings zero (C3), induced at O(alpha/4pi) by Spin(10)-breaking gauge loops; self-interaction 4 pi/m^3 = {4*np.pi/m1**3*2.18e-4:.0e} cm^2/g at {m1/1e3:.0f} TeV (bound ~1)")
 print("  N_eff: no massless mirror state, so Delta N_eff = 0 below Delta (massless far layers: 2.25); empty start -> T_RH << Delta if stable")
-print("theorems: A1-A6, B2, C1-C3, D1; finite: B1, D2, D3; estimates: E. cited: chains (smg-verify), copy vertex g (dark-matter-candidate)")
+print("theorems: A1-A6, B2, B3, C1-C3, D1; finite: B1, D2, D3; estimates: E (lifetimes conditional on an open channel). cited: chains (smg-verify), copy vertex g (dark-matter-candidate)")
 print(f"elapsed_seconds {time.time() - T0:.1f}")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
 sys.exit(0 if NF == 0 else 1)

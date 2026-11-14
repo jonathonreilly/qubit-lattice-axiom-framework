@@ -34,7 +34,7 @@ B. Split cascades.
 C. The laws' own channel.
 
 1. At linear order the trigger reads only tr h/6 (A2). Given the stationary-shift reading of the read lapse, cited from the read-lapse note (PR #9933, not found on `main` or this branch, not rerun or checked here), the scalar sector has zeta = 0 at every k != 0. So, conditional on that citation, the laws give no linear split-time fluctuation at k != 0. The runner prints this as a CONDITIONAL line, not a counted check.
-2. The quadratic readout of a flat Gaussian field is blue (n - 1 of about +0.3 on a 64^3 grid, from the infrared logarithm) and of size about 9 Delta_h^4.
+2. The quadratic readout of a flat Gaussian field is blue, from the infrared logarithm. On the runner's 64^3 grid (three seeds) n - 1 = +0.72 and Delta^2(h^2)/Delta_h^4 = 6.74. This is a finite example of a blue readout, not a precise exponent (corrected 2026-11-14: the earlier text said +0.3 and about 9, which did not match the cache).
 
 D. When the split-time record is a curvature perturbation.
 
@@ -54,7 +54,7 @@ The runner prints 12 counted checks and exits nonzero if any fails: A1-A3 exact 
 ## Estimates against measurement
 
 - Index. Every split-time channel computed here with rule-constant numbers gives an octave-averaged n_s = 1: 8.4 sigma from Planck and further from ACT. The local index within an octave is not fixed by the cascade and is O(1) log-periodic for the 1D blocky shape (B1). The measured index needs lam = 2^(n_s - 1) = 0.976 per split. In the Poisson model that means the product m s of the registers read and the steps per octave must grow by 2.46% per split, which no rule supplies.
-- Amplitude. A_s needs a per-level spread of 3.8e-5 e-folds. In the Poisson model that is m s = ln 2/A_s = 3.3e8, against at most 18 x 113 = 2034 for the rules, so the supplied Poisson model overshoots the amplitude by about 1.6e5. The laws' own channel is zero at linear order. At second order it is at most about 2e-21 at r < 0.036, and blue. CL-3's only de Sitter phase is today's (P_t of about 5e-122), so in the rules it is zero in practice.
+- Amplitude. A_s needs a per-level spread of 3.8e-5 e-folds. In the Poisson model that is m s = ln 2/A_s = 3.3e8, against at most 18 x 113 = 2034 for the rules, so the supplied Poisson model overshoots the amplitude by about 1.6e5. The laws' own channel is zero at linear order. At second order it is at most about 1.5e-21 at r < 0.036, and blue (an estimate: it uses the finite C2 size 6.74 and a supplied log factor of 10). CL-3's only de Sitter phase is today's (P_t of about 5e-122), so in the rules it is zero in practice.
 - Isotropy. Sharp blocks give axis-aligned excess power of order 1.5 in the toy.
 
 ## Boundary
@@ -64,6 +64,8 @@ Supplied: Poisson stepping of each register, used only in B to give the trigger 
 Forced, given those: the register arithmetic; the first-order trace readout and the second-order tensor form; Delta^2(2k) = lam Delta^2(k) for an infinite self-similar cascade, hence its octave-averaged index; a mean wait of ln 2 per generation; stationarity of the coupled cascade in the toy; zeta = 0 when rho = F(a).
 
 Not computed: the local (sub-octave) spectrum of the 2D toy and of a 3D trigger; the 3D trigger on all 18 registers with the three neighbour faces; the quantum volume-mode width per block; the second-order constraint that sources the trace from tensors, which could change the coefficient in A3 but not the order; any exit law.
+
+Navigation (2026-11-14): the [Born split-time note](BORN_SPLIT_TIMES_ARE_WHITE_INHERITED_OFFSETS_AND_THE_PASSING_LEAVES_NO_REMAINDER_SO_NO_LAW_SEEDS_CURVATURE_BOUNDED_THEOREM_NOTE_2026-10-22.md) on this branch treats split-time offsets under the fewest-change (quantile) transport as inherited, not redrawn. B2-B5 redraw supplied Poisson steps, so their n_s = 1 and their factor 1.8 rise in wait variance hold for this toy only; the Born note's factor 0.43 fall in split-time spread uses a different model and quantity, and neither note reconciles the two. A1-A3 and B1 are not affected.
 
 Not claimed: that a tilt is impossible. A tilt needs a rule number that changes from one generation to the next (lam = 0.976 to 0.982), or a clock, and that is a named supplied number, not a gap the cascade fills.
 

@@ -176,7 +176,24 @@ check("A2 [T]", neutral == ["nu^c"] and pairs == [("nu^c", "nu^c")],
 Hc = rherm(4); M = rherm(nl); H1 = np.kron(Hc, np.eye(nl)) + np.kron(np.eye(4), M)
 w, V = np.linalg.eigh(M); comm = max(nrm(H1 @ np.kron(np.eye(4), np.outer(V[:, j], V[:, j].conj())) - np.kron(np.eye(4), np.outer(V[:, j], V[:, j].conj())) @ H1) for j in range(nl))
 check("A3 [T]", comm < 1e-12,
-      f"any quadratic label term keeps one exact U(1) per label-mass eigenspace ({nl} here, commutator {comm:.0e}); CL-1 links them, so the light label's number is a massless link on matter (MICROSCOPE < ~1e-25): excluded alone")
+      f"number-conserving Hermitian label mixing of the tensor form H = H_c x 1 + 1 x M (no pairing) keeps one exact U(1) per label-mass eigenspace ({nl} here, commutator {comm:.0e}); IF the links couple to these numbers (the gauging assumption, supplied as the note reads CL-1), the light label's number is a massless link on matter (MICROSCOPE < ~1e-25, stated, not computed)")
+# A3b (added 2026-11-14): pairing control. A3 holds only for number-conserving label terms. (i) Four-state Fock witness: N = diag(0,1,1,2),
+# H = |00><11| + |11><00| (an even pairing term): [H, N] has entries +-2, ||[H, N]||_F^2 = 8, while [H, (-1)^N] = 0. (ii) The same in
+# second quantisation on 4 label modes: H = sum M_ij c_i^dag c_j keeps every label-mass eigenmode number; adding a pairing
+# Delta (c_0 c_1 + h.c.) breaks them and the total label number, but keeps label parity. Own generator: the shared stream is untouched.
+Nw = np.diag([0., 1, 1, 2]); Hw = np.zeros((4, 4)); Hw[0, 3] = Hw[3, 0] = 1.0; Pw = np.diag([1., -1, -1, 1])
+Cw = Hw @ Nw - Nw @ Hw
+okw = sorted(set(np.round(Cw.ravel(), 12).tolist())) == [-2.0, 0.0, 2.0] and abs((Cw**2).sum() - 8) < 1e-12 and nrm(Hw @ Pw - Pw @ Hw) < 1e-12
+rg3 = np.random.default_rng(20261114); c4 = jw(4)
+a4 = rg3.normal(size=(4, 4)) + 1j*rg3.normal(size=(4, 4)); M4 = (a4 + a4.conj().T)/2; w4, V4 = np.linalg.eigh(M4)
+Hn = sum(M4[i, j]*(c4[i].T @ c4[j]) for i in range(4) for j in range(4))
+dmode = [sum(np.conj(V4[i, j])*c4[i] for i in range(4)) for j in range(4)]; nprime = [d_.conj().T @ d_ for d_ in dmode]
+Ntot = sum(num(x) for x in c4); P4 = np.diag([(-1)**bin(s).count("1") for s in range(16)]).astype(float)
+Hpair = Hn + 0.3*(c4[0] @ c4[1] + (c4[0] @ c4[1]).conj().T)
+cn0 = max(nrm(Hn @ q - q @ Hn) for q in nprime); cn1 = max(nrm(Hpair @ q - q @ Hpair) for q in nprime)
+okf = cn0 < 1e-12 and cn1 > 0.1 and nrm(Hpair @ Ntot - Ntot @ Hpair) > 0.1 and nrm(Hpair @ P4 - P4 @ Hpair) < 1e-12
+check("A3b [T]", okw and okf,
+      f"pairing control: an even pairing term breaks label number and keeps only label parity, so A3's U(1)s need number-conserving label terms (A4's pairing terms are a separate construction): four-state witness [H, N] entries {sorted(set(np.round(Cw.ravel(), 6).tolist()))}, ||[H, N]||_F^2 = {(Cw**2).sum():.0f}, ||[H, (-1)^N]|| = {nrm(Hw @ Pw - Pw @ Hw):.0e}; 4-mode Fock: hops keep every eigenmode number ({cn0:.0e}), adding pairing 0.3 breaks them ({cn1:.2f}) and N_total ({nrm(Hpair @ Ntot - Ntot @ Hpair):.2f}), parity kept ({nrm(Hpair @ P4 - P4 @ Hpair):.0e})")
 c = jw(6); L0, L1 = c[:3], c[3:]
 P1 = np.diag([(-1)**sum((s >> (5 - j)) & 1 for j in range(3, 6)) for s in range(64)]).astype(float)
 N1 = sum(num(x) for x in L1)
@@ -273,7 +290,7 @@ print("   a kinematically closed band minimum near the zone edge is not excluded
 print(f"   only at T ~ m/20 > T_max = {Tmax:.0e} GeV or by splits, which carry vacuum to vacuum: no rule-set abundance")
 
 print("== D. conserved numbers of the new laws, as stabilisers")
-cen = [("exact U(b^3) (zoom-b circuit only)", "must break (LEP); quadratic terms leave linked U(1)s"),
+cen = [("exact U(b^3) (zoom-b circuit only)", "must break (LEP); number-conserving tensor-form label mixing leaves linked U(1)s (A3); pairing terms leave only label parity (A3b, A4)"),
        ("label parity (-1)^N_k", "not in the fine tick; if supplied: N' stable (A4-A8)"),
        ("Z4 of B - L", "lightest carrier = light neutrino: hot, < 1% of DM (sum m_nu < 0.07 eV)"),
        ("rishon number per bond", "superselection; fixes S, no excitation (B2)"),
@@ -287,7 +304,7 @@ print("   so only label parity (supplied) and magnetic charge (not dark) stabili
 print("== E. verdict against measurement")
 print("   extra link mode, rishon sectors, edge strains, copy, zoom-3 copies: unstable or absent; monopoles not dark")
 print(f"   conditional survivor: N' with a SUPPLIED label parity, m ~ {mthr[1.4e-3]:.0e}-{lo_:.0e} GeV, non-thermal; Omega not rule-set")
-print("theorems: A1-A4, B1-B3, C2; diagnostic: C1; estimates: A5-A8, B4, C decay times.")
+print("theorems: A1-A4 (A3 for number-conserving tensor-form label terms; A3b the pairing control), B1-B3, C2; diagnostic: C1; estimates: A5-A8, B4, C decay times.")
 print("supplied: label terms+parity, alpha_eff, Y_grav, splittings, a = sqrt(8pi) l_P, [cubic] monopole, slab; cited: MICROSCOPE,")
 print("  heavy-isotope searches, BICEP/Keck, MACRO, Planck.")
 print(f"elapsed_seconds {time.time()-T0:.1f}")

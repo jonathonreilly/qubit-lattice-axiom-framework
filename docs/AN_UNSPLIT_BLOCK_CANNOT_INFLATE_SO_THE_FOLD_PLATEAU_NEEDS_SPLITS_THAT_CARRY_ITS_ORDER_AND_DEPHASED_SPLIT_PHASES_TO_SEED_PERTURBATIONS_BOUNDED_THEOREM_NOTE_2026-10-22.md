@@ -52,6 +52,7 @@ Verdict: the unsplit-block rule cannot inflate. Bending the window or Delta does
 
 **B3 [T]. The plateau is friction-blind.**
 - With friction factor c, N = N_std/c and P = (dN/dchi)^2 H^2/4pi^2 = V0 N^2/(12 pi^2 mu^2) (sympy). This does not depend on c.
+- The normalization is checked separately (2026-11-14): the runner asserts that P(N) equals the closed form V0 N^2/(12 pi^2 mu^2) and a second route, P = H^4/(4 pi^2 chi_dot^2) with the friction-c attractor velocity chi_dot = c V'/(3H) and H^2 = V0/3. Before this, B3 checked only that P does not depend on c, so a factor-two error in the normalization passed; such a change now fails B3.
 - So n_s(N), r(N) and A_s(N) are the same for impulsive and continuous friction, at leading slow-roll order.
 
 ## C. Numbers from the computed potential
@@ -189,4 +190,4 @@ Not computed:
 
 python3 scripts/an_unsplit_block_cannot_inflate_so_the_fold_plateau_needs_splits_that_carry_its_order_and_dephased_split_phases_to_seed_perturbations_2026_10_22.py
 
-AUDIT_TIMEOUT_SEC = 120. It takes about 6 s, peaks at about 137 MB, prints 5629 characters and ends with TOTAL: PASS=17 FAIL=0. Since 2026-11-14 it exits nonzero when a check fails. It was checked through scripts/runner_cache.execute_runner from a temporary origin/main worktree (status ok, exit 0).
+AUDIT_TIMEOUT_SEC = 120. It takes about 6 s, peaks at about 137 MB, prints 5629 characters and ends with TOTAL: PASS=17 FAIL=0. Since 2026-11-14 it exits nonzero when a check fails, and B3 asserts the normalization of P(N) as well as its independence of c. It was checked through scripts/runner_cache.execute_runner from a temporary origin/main worktree (status ok, exit 0).

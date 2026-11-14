@@ -304,7 +304,7 @@ print(f"   in the Poisson model lambda = (ms)_l/(ms)_(l+1): m s must grow {100*(
       f" A_s needs m s = ln2/A_s = {need_ms:.2e} vs rule m s <= 18*113 = 2034")
 Pt_max = 0.036 * As
 est2 = (9 / 72) ** 2 * float(np.mean(rr)) * (Pt_max / 2) ** 2 * 10
-print(f"   laws' own channel (C): Delta_zeta^2 ~ (9/72)^2 x 8.6 x (P_t/2)^2 x 10 (log): <= {est2:.1e} at r < 0.036;"
+print(f"   laws' own channel (C): Delta_zeta^2 ~ (9/72)^2 x {float(np.mean(rr)):.2f} (C2) x (P_t/2)^2 x 10 (supplied log factor): <= {est2:.1e} at r < 0.036;"
       f" CL-3's only de Sitter phase is today's (P_t ~ 5e-122); tilt blue")
 check("E1 [E] each split-time channel computed here misses: octave-averaged n_s = 1 with rule constants; amplitude 0 at linear order (given the cited read lapse) and"
       " <= 1e-20 at second order (blue), against 0.9649(42) and 2.1e-9", est2 < 1e-19 and abs(nc) < 0.03)

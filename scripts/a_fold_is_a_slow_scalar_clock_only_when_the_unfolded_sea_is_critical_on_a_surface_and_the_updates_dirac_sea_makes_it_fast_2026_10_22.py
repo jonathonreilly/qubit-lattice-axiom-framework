@@ -6,8 +6,9 @@ Asks whether the grid folding (unfolded odds -> star-rule pair fold) gives a
 slow scalar clock, with V(phi) and the stiffness computed, not chosen.
   A  funnel ends: star rule = Majumdar-Ghosh form; uniform odds sit at the top
      as an exact eigenstate; the sea sits on a downhill funnel; fold weight
-  B  speed: stiffness Z of a fold order parameter of a gapless sea,
-     Z ~ m^(d-3) (d = codimension of the gapless set); 1D, 3D nested, 3D Dirac
+  B  speed: stiffness Z of a fold order parameter of a gapless two-band sea: Z = (A/4) I(alpha) m^(alpha-3)
+     asymptotically for rho(e) ~ A e^(alpha-1); alpha = d (codimension) only for linear transverse dispersion
+     (normalization and nonlinear-dispersion controls added 2026-11-14); lattice ratios 1D, 3D nested, 3D Dirac
   C  1D toy with the pole: exact V_star(delta), z(delta) on the dimer path;
      slow roll, n_s, r, exit, A_s; split re-seeding arithmetic
   D  3D Dirac sea (the update's light band): fast roll at every allowed rung
@@ -132,16 +133,107 @@ check(all(0 < seaE[N] < 0.2 for N in seaE) and wfold[8] > wfold[10] > wfold[12],
       "e_sea N=8,10,12: " + ", ".join(f"{seaE[N]:.4f}" for N in seaE) + "; fold weight " + ", ".join(f"{wfold[N]:.4f}" for N in wfold))
 
 print("== B. what sets the fold's speed: the stiffness of a fold order parameter")
+# B1 (narrowed 2026-11-14). Hypotheses: a two-band (or Clifford) sea whose gap term anticommutes with the kinetic term, so
+# E = sqrt(e^2 + m^2) and Z(m) = int rho(e) e^2/(4 (e^2+m^2)^(5/2)) de; and a density of kinetic energies
+# rho(e) = A e^(alpha-1) (1 + o(1)) as e -> 0 with 0 < alpha < 3, bounded by a multiple of e^(alpha-1) up to the cutoff.
+# Substituting e = m x and dominated convergence give Z(m) = (A/4) I(alpha) m^(alpha-3) (1 + o(1)) as m -> 0, with the
+# NORMALIZED integral I(alpha) = int_0^oo x^(alpha+1)/(1+x^2)^(5/2) dx = Gamma((alpha+2)/2) Gamma((3-alpha)/2)/(2 Gamma(5/2)).
+# alpha equals the codimension d only for smooth nonzero LINEAR transverse dispersion; e ~ |k_perp|^z gives alpha = d/z.
 x, d = sp.symbols("x d", positive=True)
+al_, A_, m_, e_ = sp.symbols("alpha A m e", positive=True)
 I1 = sp.integrate(x ** 2 / (1 + x ** 2) ** sp.Rational(5, 2), (x, 0, sp.oo))
 I2 = sp.integrate(x ** 3 / (1 + x ** 2) ** sp.Rational(5, 2), (x, 0, sp.oo))
 Lam = sp.symbols("Lambda", positive=True)
 I3 = sp.limit(sp.integrate(x ** 4 / (1 + x ** 2) ** sp.Rational(5, 2), (x, 0, Lam)) - sp.log(Lam), Lam, sp.oo)
-check(I1 == sp.Rational(1, 3) and I2 == sp.Rational(2, 3) and I3.is_finite,
-      "B1 [T]", "adiabatic stiffness of a gap-opening fold order parameter m on a sea with gapless-set codimension d: "
-      "Z(m) = int rho(e) e^2/(4(e^2+m^2)^(5/2)) de, rho ~ e^(d-1), so Z = c_d m^(d-3): d=1 (a surface of gapless modes) a "
-      "pole m^-2, d=3 (Dirac points) only log(1/m); the unfolded point is at infinite field distance iff d = 1",
-      f"c_1 = {I1}, c_2 = {I2}, d=3: log + {sp.nsimplify(I3)}")
+Igen = sp.gamma((al_ + 2) / 2) * sp.gamma((3 - al_) / 2) / (2 * sp.gamma(sp.Rational(5, 2)))
+Ihalf = quad(lambda t: t ** 1.5 / (1 + t * t) ** 2.5, 0, np.inf)[0]
+# exact prefactor for a pure power density rho = A e^(d-1) (no cutoff): the coefficient carries A/4
+Zpow = {dd: sp.simplify(sp.integrate(A_ * e_ ** (dd - 1) * e_ ** 2 / (4 * (e_ ** 2 + m_ ** 2) ** sp.Rational(5, 2)), (e_, 0, sp.oo)))
+        for dd in (1, 2)}
+okB1 = (I1 == sp.Rational(1, 3) and I2 == sp.Rational(2, 3) and I3.is_finite
+        and sp.simplify(Igen.subs(al_, 1) - I1) == 0 and sp.simplify(Igen.subs(al_, 2) - I2) == 0
+        and abs(float(Igen.subs(al_, sp.Rational(1, 2))) - Ihalf) < 1e-10
+        and sp.simplify(Zpow[1] - A_ / (12 * m_ ** 2)) == 0 and sp.simplify(Zpow[2] - A_ / (6 * m_)) == 0)
+# control: the held reading 'c_1 = 1/3, c_2 = 2/3' as absolute coefficients holds only at the single value A = 4
+held_A = [sp.solve(sp.Eq(Zpow[1], m_ ** -2 / 3), A_), sp.solve(sp.Eq(Zpow[2], 2 / (3 * m_)), A_)]
+okB1 = okB1 and held_A == [[4], [4]]
+check(okB1, "B1 [T]", "stiffness of a gap-opening fold order parameter m on a two-band (Clifford) sea, Z(m) = int rho(e) e^2/(4(e^2+m^2)^(5/2)) de: "
+      "if rho(e) = A e^(alpha-1)(1 + o(1)) as e -> 0 (0 < alpha < 3), then Z = (A/4) I(alpha) m^(alpha-3)(1 + o(1)) as m -> 0, with the "
+      "normalized integral I(alpha) = Gamma((alpha+2)/2) Gamma((3-alpha)/2)/(2 Gamma(5/2)); alpha = d (codimension of the gapless set) "
+      "only for smooth nonzero linear transverse dispersion, so then d=1 gives a pole (A/12) m^-2, d=2 gives (A/6) m^-1, d=3 only "
+      "(A/4) ln(1/m); a pure power rho = A e^(d-1) gives these exactly; control: the held absolute c_1 = 1/3, c_2 = 2/3 need A = 4",
+      f"normalized I_1 = {I1}, I_2 = {I2}, I(1/2) = {float(Igen.subs(al_, sp.Rational(1, 2))):.6f} (quad {Ihalf:.6f}), d=3: log + {sp.nsimplify(I3)}; "
+      f"Z(d=1) = {Zpow[1]}, Z(d=2) = {Zpow[2]}; held coefficients need A = {held_A[0][0]}, {held_A[1][0]}")
+
+
+def zk_radial(m, D, disp, cut=np.inf):
+    """B1 stiffness computed in k-space for an isotropic two-band model: int d^Dk/(2pi)^D e(k)^2/(4 E^5), E^2 = e^2 + m^2."""
+    meas = {1: lambda k: 2 / (2 * np.pi), 2: lambda k: 2 * np.pi * k / (2 * np.pi) ** 2}[D]   # both signs of k in 1D
+    f = lambda k: meas(k) * disp(k) ** 2 / (4 * (disp(k) ** 2 + m * m) ** 2.5)
+    edges = sorted({0.0, cut, *[p for p in (m, np.sqrt(m), 10 * m, 10 * np.sqrt(m)) if p < cut]})
+    return sum(quad(f, a_, b_, limit=400, epsabs=0, epsrel=1e-11)[0] for a_, b_ in zip(edges[:-1], edges[1:]))
+
+
+def sz_matrix_element(Hk):
+    """|<+|sigma_z|->|^2 / (e^2/E^2) for a 2x2 Hermitian H(k) = dx sx + dy sy + m sz (1 when the derivation's per-k step holds)."""
+    w_, v_ = np.linalg.eigh(Hk); me = abs(v_[:, 1].conj() @ np.diag([1, -1]) @ v_[:, 0]) ** 2
+    E_ = w_[1]; e2 = E_ ** 2 - np.real(Hk[0, 0]) ** 2
+    return me / (e2 / E_ ** 2)
+
+
+sx_, sy_, sz_ = np.array([[0, 1], [1, 0]]), np.array([[0, -1j], [1j, 0]]), np.diag([1.0, -1.0])
+vD, mB = 0.7, (1e-2, 1e-3)
+# B1b (added 2026-11-14): normalization on explicit linear models, computed in k-space (a different route from the e-integral)
+A1D, A2D = 2 / (2 * np.pi * vD), 2 * np.pi / ((2 * np.pi) ** 2 * vD ** 2)          # DOS prefactors from the k-measure
+Z1D = [zk_radial(mm, 1, lambda k: vD * k) for mm in mB]
+Z2D = [zk_radial(mm, 2, lambda k: vD * k) for mm in mB]
+rel1 = max(abs(z_ * mm ** 2 / (A1D / 12) - 1) for z_, mm in zip(Z1D, mB))
+rel2 = max(abs(z_ * mm / (A2D / 6) - 1) for z_, mm in zip(Z2D, mB))
+cutdev = [abs(zk_radial(mm, 1, lambda k: vD * k, cut=1.0) * mm ** 2 / (A1D / 12) - 1) for mm in (0.3, 0.03, 0.003)]
+me_lin = max(abs(sz_matrix_element(vD * (kx_ * sx_ + ky_ * sy_) + 0.1 * sz_) - 1) for kx_, ky_ in ((0.3, 0.1), (-1.2, 0.7), (0.05, -2.0)))
+
+
+def zsum_1d(m, v):
+    """the plain sum of the claim scope, sum_k |<+|dH/dm|->|^2/(E_+ - E_-)^3, from diagonalising H(k) = v k sigma_x + m sigma_z"""
+    def f(k):
+        w_, V_ = np.linalg.eigh(v * k * sx_ + m * sz_)
+        return abs(V_[:, 1].conj() @ sz_ @ V_[:, 0]) ** 2 / (w_[1] - w_[0]) ** 3
+    edges = [0.0, m / v, 10 * m / v, 100 * m / v, np.inf]
+    return 2 * sum(quad(f, a_, b_, limit=400, epsabs=0, epsrel=1e-10)[0] for a_, b_ in zip(edges[:-1], edges[1:])) / (2 * np.pi)
+
+
+relsum = abs(zsum_1d(mB[0], vD) / (Z1D[0] / 2) - 1)
+check(rel1 < 1e-8 and rel2 < 1e-8 and cutdev[0] > cutdev[1] > cutdev[2] and cutdev[0] > 1e-3 and me_lin < 1e-10 and relsum < 1e-7
+      and abs(Z1D[0] * mB[0] ** 2 - 1 / 3) > 0.1,
+      "B1b [T+D]", "normalization on explicit linear Dirac models H = v k.sigma + m sigma_z (v = 0.7), computed in k-space: Z m^(3-d) equals "
+      "(A/4) I_d with A the k-mode density-of-states prefactor (1D: A = 1/(pi v), 2D: A = 1/(2 pi v^2)); with a momentum cutoff "
+      "the law is asymptotic (relative deviation falls as m -> 0); the per-k matrix element |<+|sigma_z|->|^2 = e^2/E^2 is checked; the "
+      "scope's plain sum sum |<+|dH|->|^2/(E_+ - E_-)^3, from diagonalisation, is half the B1 integral with rho = the k-mode density "
+      "(B1's e^2/(4 E^5) per mode is the Inglis cranking form, twice the plain sum); control: the held absolute c_1 = 1/3 misses the 1D value",
+      f"rel. error 1D {rel1:.1e}, 2D {rel2:.1e}; cutoff 1: deviation {', '.join(f'{c_:.1e}' for c_ in cutdev)} at m = 0.3, 0.03, 0.003; "
+      f"matrix element {me_lin:.0e}; plain sum / (B1 integral / 2) - 1 = {relsum:.1e}; 1D Z m^2 = {Z1D[0]*mB[0]**2:.5f} = A/12 vs held 1/3")
+# B1c (added 2026-11-14): nonlinear transverse dispersion in the same two-band family; the codimension-only exponent d - 3 fails
+quadx = lambda k: k * k                                          # 1D quadratic crossing H = k^2 sigma_x + m sigma_z (d = 1, z = 2)
+Zq = [zk_radial(mm, 1, quadx) for mm in mB]
+pq = np.log(Zq[0] / Zq[1]) / np.log(mB[0] / mB[1])
+Aq = 1 / (2 * np.pi)                                             # rho(e) = 2 (dk/de)/(2 pi) = e^(-1/2)/(2 pi): alpha = 1/2
+relq = abs(Zq[0] * mB[0] ** 2.5 / (Aq / 4 * float(Igen.subs(al_, sp.Rational(1, 2)))) - 1)
+qbt = lambda kx_, ky_: (kx_ ** 2 - ky_ ** 2) * sx_ + 2 * kx_ * ky_ * sy_   # 2D quadratic band touching (d = 2, z = 2)
+iso = max(abs(np.linalg.eigvalsh(qbt(np.cos(t_), np.sin(t_)))[1] - 1) for t_ in np.linspace(0, np.pi, 17))
+Zb = [zk_radial(mm, 2, quadx) for mm in mB + (1e-4,)]
+pb = np.log(Zb[0] / Zb[1]) / np.log(mB[0] / mB[1])
+Ab = 1 / (4 * np.pi)                                             # rho(e) = (d/de)(pi e/(2 pi)^2) = 1/(4 pi): alpha = 1
+relb = abs(Zb[0] * mB[0] ** 2 / (Ab / 12) - 1)
+dist_b = [np.sqrt(z_) * mm for z_, mm in zip(Zb, mB + (1e-4,))]  # sqrt(Z) m constant: canonical distance ~ ln(1/m), divergent
+me_nl = max(abs(sz_matrix_element(H_ + 0.1 * sz_) - 1) for H_ in (qbt(0.4, -0.9), qbt(1.1, 0.2), 0.7 ** 2 * sx_))
+okB1c = (abs(pq + 2.5) < 1e-6 and relq < 1e-8 and abs(pb + 2) < 1e-6 and relb < 1e-8 and iso < 1e-12 and me_nl < 1e-10
+         and max(dist_b) / min(dist_b) - 1 < 1e-8 and abs(pq - (1 - 3)) > 0.4 and abs(pb - (2 - 3)) > 0.9)
+check(okB1c, "B1c [T+D]", "nonlinear transverse dispersion (two-band, gap term sigma_z): a codimension-1 quadratic crossing H = k^2 sigma_x + m sigma_z "
+      "has rho ~ e^(-1/2) and Z ~ m^(-5/2), and the 2D quadratic band touching H = (kx^2-ky^2) sigma_x + 2 kx ky sigma_y + m sigma_z "
+      "(d = 2, z = 2) has Z ~ m^-2 and an infinite canonical distance; both follow the B1 law with alpha = d/z and its prefactor; "
+      "control: the codimension-only exponent d - 3 (-2 and -1) is rejected in both, so d = 1 is not necessary for a pole outside linear dispersion",
+      f"exponents {pq:+.6f} (alpha 1/2), {pb:+.6f} (alpha 1); prefactor rel. error {relq:.1e}, {relb:.1e}; QBT isotropy {iso:.0e}; "
+      f"sqrt(Z) m at m = 1e-2, 1e-3, 1e-4: {', '.join(f'{x_:.6f}' for x_ in dist_b)}; matrix element {me_nl:.0e}")
 
 
 def z_ratio(fun):
@@ -349,7 +441,8 @@ szd = CubicSpline(ud, np.concatenate([lza, np.log(zdv)]))
 zeta_need = np.sqrt(4 / ((1 - NS_PL) ** 2 * 55) * c2 / (V0d * z1))
 etas = [slowroll(sWd, szd, V0d, ud[0], ud[-1], 2.0 ** -r) for r in (0, 4)]
 check(all(abs(e[4]) > 0.3 for e in etas) and zeta_need > 10 and max(cont) < 1e-3,
-      "D1 [T+D]", "with the stiffness only logarithmic, the plateau curvature is eta ~ -sqrt(c2/(V0 zeta^2 z1 N)) "
+      "D1 [T+D]", "linear point node (d = 3, B1 with A = 1/pi^2 in this model's normalization, so z1 = A/4 = 1/(4 pi^2)): "
+      "with the stiffness only logarithmic, the plateau curvature is eta ~ -sqrt(c2/(V0 zeta^2 z1 N)) "
       "(log asymptotics): at N* = 55 the fold is fast at the flat rung and worse at coarser rungs (zeta = 2^-r); "
       "n_s = 0.965 would need zeta ~ 50, a cell far below the Planck length, against M_P a = 1 (unit map)",
       "; ".join(f"rung {r}: eta {e[4]:.2f} n_s {e[0]:.2f} at ln m* {e[2]:.0f}" for r, e in zip((0, 4), etas)) + f"; zeta needed {zeta_need:.0f}")

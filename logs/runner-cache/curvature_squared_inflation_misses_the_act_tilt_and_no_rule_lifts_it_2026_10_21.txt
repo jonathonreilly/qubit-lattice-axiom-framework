@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/curvature_squared_inflation_misses_the_act_tilt_and_no_rule_lifts_it_2026_10_21.py
-runner_sha256: 1121981c6ef7970395bbb704cdc46a7a27ca57c5ba4f974f1fc13c393f5886ea
-input_fingerprint_sha256: e3f788269687448ea9d0145bf856f38de5248db7b553c4e077f23f296ca2e753
+runner_sha256: 0938b0b69d423a63d5490aa76c96818245f86a0ee074c76a30c5e18465bda6d3
+input_fingerprint_sha256: 5510edfc425155fe7a2d490125e3e693026c9af0d6177a638714f3db76f1808c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.36
+elapsed_sec: 4.47
 status: ok
 ----- stdout -----
 == A. data
@@ -38,7 +38,7 @@ status: ok
    hilltop p=2,4,6            0.9657 / 0.9711  [ACT -2.8 / -1.0]
    natural (copy-mass class)  0.8900 / 0.8904  [ACT -28.0 / -27.9]
    R^2 + lam R^3              0.9759 / 0.9814  [ACT +0.6 / +2.5]
-[PASS] D2 at r < 0.036 the exponential plateaus (E/T alpha-attractors, any alpha) and natural inflation stay > 2 sigma below ACT at N* <= 55.7, hilltops reach -1 sigma only near r ~ 0.03 at instant reheating; power plateaus k = 1, 2 and R^2 + lam R^3 reach it. lam for Planck/ACT/DR2: N* 50.3: -5.0e-05 -1.8e-04 -1.9e-04; N* 55.7: 6.1e-06 -1.2e-04 -1.3e-04 (negative: a softened R^2 tail)
+[PASS] D2 at r < 0.036, on the scanned grids (12 alpha from 0.3 to 1000 for the E and T models, f = 3 to 100 for natural inflation; a finite scan, not a bound for every alpha), the exponential plateaus (E/T alpha-attractors) and natural inflation stay > 2 sigma below ACT at N* <= 55.7, hilltops reach -1 sigma only near r ~ 0.03 at instant reheating; power plateaus k = 1, 2 and R^2 + lam R^3 reach it. lam for Planck/ACT/DR2: N* 50.3: -5.0e-05 -1.8e-04 -1.9e-04; N* 55.7: 6.1e-06 -1.2e-04 -1.3e-04 (negative: a softened R^2 tail)
 == E. can the rules supply the shift
 [PASS] E1 THEOREM: V = M^2 v(phi) makes eps, eta, n_s and r M-free, so in pure R^2 n_s depends on N* alone; a lattice R^2 piece (Kuhn O(k^4) remainder, O(0.1)) changes c = 5.7e+08 by ~2e-10 and n_s by nothing: no R^2-type term can lift the tilt
 [PASS] E2 ESTIMATE hinge Friedmann law H^2 = rho/3 (1 - rho/rho* + ...): rho/rho* = (Hl)^2/2 <= 7.2e-11 at l = 2a, so |dn_s| <~ 2 rho/rho* = 1e-10 vs the needed +0.012

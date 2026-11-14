@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/an_unsplit_block_cannot_inflate_so_the_fold_plateau_needs_splits_that_carry_its_order_and_dephased_split_phases_to_seed_perturbations_2026_10_22.py
-runner_sha256: 908a0b458138863b844d8d5c8ea7ccd2a05ee05cb89ba8c7b04d93f6963321c5
-input_fingerprint_sha256: a60555ea3f498b96a02717cbf05c7ef5926a0ba53ab3a76bd7dc285c98c1f8c3
+runner_sha256: 3f9cf95bca01a435de0d392519db3f32053841338f0f95c33651078e6de30088
+input_fingerprint_sha256: 3d70b47e4948dee771fddcbc96e53950032c3d00b90d69145f46f43e061c4420
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.88
+elapsed_sec: 4.93
 status: ok
 ----- stdout -----
 == A. candidate: inflation inside one unsplit block
@@ -14,7 +14,7 @@ status: ok
 == B. the split must carry the fold order (IN-1)
 [PASS] B1 [T] site-zone passing gives a parent staggered order zero overlap with the child's (nested-prefold E1): children unfolded, x = 1, q = 1/8 + 7x/8 = 1: de Sitter with no exit; after reheating every split would re-seed V0, so NO folded vacuum survives a split without order carriage | overlap 0; q(1) 1.0
 [PASS] B2 [T+D] IN-1 carries each order's total momentum: in cell units the tick is static between splits and the split divides the order velocity by 8, so friction is impulsive with mean drift c = 3ln2(f/(1-f)+1/2) = 27ln2/14 x (-V'/3H) | c exact 1.3368, stepped 1.3380
-[PASS] B3 [T] plateau attractor is friction-blind: with N = N_std/c, P(N) = V0 N^2/(12 pi^2 mu^2) at leading order, so n_s(N), r(N) and A_s(N) do not depend on c (impulsive or continuous friction alike) | P(N) = N**2*V0/(12*pi**2*mu**2)
+[PASS] B3 [T] plateau attractor is friction-blind: with N = N_std/c, P(N) = V0 N^2/(12 pi^2 mu^2) at leading order, so n_s(N), r(N) and A_s(N) do not depend on c (impulsive or continuous friction alike); the normalization equals the closed form and a second route, H^4/(4 pi^2 chi_dot^2) with chi_dot = c V'/(3H); control: a factor-two change is rejected | P(N) = N**2*V0/(12*pi**2*mu**2); route 2 = N**2*V0/(12*pi**2*mu**2); equal to V0 N^2/(12 pi^2 mu^2): True, to route 2: True
 == C. the nested sea's density-wave fold: potential, slow roll, amplitude
 [PASS] C1 [T+D] rederived (nested-prefold C): simple-cubic DOS, gap equation 1 = 3g int rho/E at every g > 0, cranking pole M -> rho0/(12 D^2), released energy W ~ D^2 ln^2(1/D): exponential plateau | rho0 0.14267; M D^2 0.0118894; D*(g=.5) 0.641, D*(1) 2.300
 [PASS] C2 [D] slow roll on the computed V and M at N* = 55 (rung FITTED to A_s): n_s = 1-2/N, eps = 1 before D* (graceful exit) | g=0.5: n_s 0.9636 r 3e-17 D_end/D* 3.8e-05; g=1.0: n_s 0.9636 r 3e-18 D_end/D* 1.3e-05
@@ -31,7 +31,7 @@ status: ok
 == F. split-trigger consistency under IN-1
 [PASS] F1 [T+E] the plateau rides the ordinary 4s trigger: one generation = s steps = ln2, H a = H/M_P per finest tick far below the edge-rate cap and inflaton A1 (H a < 1.93e-5); window and Delta unchanged | H a 2.3e-13; ticks per split ~3.0e+12; generations in N* 68
 supplied: g (0.5, 1), fold rung (FITTED to A_s), J a = sqrt3, M_P a = 1, Hartree, instant reheating, g_* = 106.75, mode speed 1, dephasing sigma (scanned)
-elapsed 4.3s
+elapsed 4.4s
 TOTAL: PASS=17 FAIL=0
 
 ----- stderr -----

@@ -88,10 +88,19 @@ Nstd = mu ** 2 / al * sp.exp(chi / mu)                       # leading plateau e
 dNdchi = sp.diff(Nstd, chi) / c                               # N = N_std / c
 Pc = dNdchi ** 2 * (Vp.subs(al * sp.exp(-chi / mu), 0) / 3) / (4 * sp.pi ** 2)   # plateau H^2 = V0/3
 PN = sp.simplify(Pc.subs(sp.exp(chi / mu), al * c * Ns / mu ** 2))
-check(sp.diff(PN, c) == 0, "B3 [T]",
+# B3 (normalization equality added 2026-11-14): a second route, P = H^4/(4 pi^2 chi_dot^2) with the friction-c attractor velocity
+# chi_dot = c V'/(3H) and H^2 = V0/3, and the closed form V0 N^2/(12 pi^2 mu^2). c-independence alone passed a factor-two mutant.
+H2 = V0s / 3
+chidot = c * sp.diff(Vp, chi) / (3 * sp.sqrt(H2))
+P_route2 = sp.simplify((H2 ** 2 / (4 * sp.pi ** 2 * chidot ** 2)).subs(sp.exp(chi / mu), al * c * Ns / mu ** 2))
+P_closed = V0s * Ns ** 2 / (12 * sp.pi ** 2 * mu ** 2)
+eq_closed, eq_route2 = sp.simplify(PN - P_closed) == 0, sp.simplify(PN - P_route2) == 0
+ctl_half = sp.simplify(PN / 2 - P_closed) != 0 and sp.simplify(2 * PN - P_route2) != 0     # a factor-two error is rejected
+check(sp.diff(PN, c) == 0 and eq_closed and eq_route2 and sp.diff(P_route2, c) == 0 and ctl_half, "B3 [T]",
       "plateau attractor is friction-blind: with N = N_std/c, P(N) = V0 N^2/(12 pi^2 mu^2) at leading order, so n_s(N), "
-      "r(N) and A_s(N) do not depend on c (impulsive or continuous friction alike)",
-      f"P(N) = {PN}")
+      "r(N) and A_s(N) do not depend on c (impulsive or continuous friction alike); the normalization equals the closed form and "
+      "a second route, H^4/(4 pi^2 chi_dot^2) with chi_dot = c V'/(3H); control: a factor-two change is rejected",
+      f"P(N) = {PN}; route 2 = {P_route2}; equal to V0 N^2/(12 pi^2 mu^2): {eq_closed}, to route 2: {eq_route2}")
 
 print("== C. the nested sea's density-wave fold: potential, slow roll, amplitude")
 

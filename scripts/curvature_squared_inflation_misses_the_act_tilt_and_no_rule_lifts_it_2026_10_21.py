@@ -204,8 +204,11 @@ for lab, nn in (('Ncol', Ncol), ('Ninst', Ninst)):
         lam_need[(lab, k)] = brentq(lambda l: Model(r3V(l), 5.0).flow(nn)[0] - DS[k][0], -2.5e-4, 3e-5, xtol=1e-8)
 okD = max(x[1][0] for x in grid['power plateau k=1'] if x[1][1] < R_MAX) > DS['ACT'][0] and \
     max(x[0][0] for x in grid['hilltop p=2,4,6'] if x[0][1] < R_MAX) < DS['ACT'][0] - 2 * DS['ACT'][1] and \
-    max(x[1][0] for x in grid['E-model alpha'] if x[1][1] < R_MAX) < DS['ACT'][0] - 2 * DS['ACT'][1]
-check('D2 at r < 0.036 the exponential plateaus (E/T alpha-attractors, any alpha) and natural inflation stay > 2 sigma below ACT at N* <= 55.7, hilltops '
+    max(x[1][0] for x in grid['E-model alpha'] if x[1][1] < R_MAX) < DS['ACT'][0] - 2 * DS['ACT'][1] and \
+    max(x[1][0] for x in grid['T-model alpha'] if x[1][1] < R_MAX) < DS['ACT'][0] - 2 * DS['ACT'][1] and \
+    max(x[1][0] for x in grid['natural (copy-mass class)'] if x[1][1] < R_MAX) < DS['ACT'][0] - 2 * DS['ACT'][1]
+check('D2 at r < 0.036, on the scanned grids (12 alpha from 0.3 to 1000 for the E and T models, f = 3 to 100 for natural inflation; a finite scan, '
+      'not a bound for every alpha), the exponential plateaus (E/T alpha-attractors) and natural inflation stay > 2 sigma below ACT at N* <= 55.7, hilltops '
       'reach -1 sigma only near r ~ 0.03 at instant reheating; power plateaus k = 1, 2 and R^2 + lam R^3 reach it. lam for Planck/ACT/DR2: N* %.1f: %.1e %.1e %.1e; N* %.1f: %.1e %.1e %.1e (negative: a softened R^2 tail)'
       % (Ncol, lam_need[('Ncol', 'Pl')], lam_need[('Ncol', 'ACT')], lam_need[('Ncol', 'DR2')], Ninst, lam_need[('Ninst', 'Pl')], lam_need[('Ninst', 'ACT')],
          lam_need[('Ninst', 'DR2')]), okD and lam_need[('Ncol', 'ACT')] < 0)

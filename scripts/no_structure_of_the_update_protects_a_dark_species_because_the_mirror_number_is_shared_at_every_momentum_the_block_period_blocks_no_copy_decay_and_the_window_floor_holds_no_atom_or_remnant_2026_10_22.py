@@ -152,8 +152,18 @@ for lam in (0.25, 0.5, 1.0, 2.0, 3.0, 2*np.pi):   # the update's own form: hop, 
 check("C3 [F] a stiff departure cost (quadratic bowl about flat) traps the floor state in continuous time (energy isolation, no number), but in the update's per-tick form the phase folds mod 2 pi: return <= 0.3 over the scan and < 0.1 at lam >= 2: no robust floor atom",
       retb > 0.3 and max(fq.values()) < 0.3 and all(v < 0.1 for k, v in fq.items() if k >= 2), f"continuous lam 1: {retb:.2f}; per-tick: " + ', '.join(f"{k:.2f}:{v:.3f}" for k, v in fq.items()))
 nn = np.arange(0, 41); s5 = 5
-check("C4 [T] passing: a split fires at mean edge value 4s (twice flat) and each child edge is the parent value minus s, exactly half the length: children start at flat, so the split cascade makes no floored cells",
-      np.allclose(2.0**((nn - s5)/s5 - 3), 0.5*2.0**(nn/s5 - 3), rtol=1e-15, atol=0))
+halfL = np.allclose(2.0**((nn - s5)/s5 - 3), 0.5*2.0**(nn/s5 - 3), rtol=1e-15, atol=0)
+# narrowed 2026-11-14: the trigger reads the MEAN of the edges. Count the 6-edge register states (s = 2) whose mean is 4s, by the
+# generating polynomial (1 + x + ... + x^top)^6: at Delta = 0 (top 4s, the window of C1) only all-4s, so every inherited child edge
+# is 3s (flat); at Delta = 1 (top 5s) unequal edges occur, so inherited child edges 3s +- j are not all flat (control)
+def n_mean4s(top, s_=2, m_=6):
+    c_ = np.array([1], dtype=np.int64)
+    for _ in range(m_): c_ = np.convolve(c_, np.ones(top + 1, dtype=np.int64))
+    return int(c_[m_*4*s_])
+c4_d0, c4_d1 = n_mean4s(4*2), n_mean4s(5*2); wit4 = np.array([9, 7, 8, 8, 8, 8])
+check("C4 [T] passing: a split fires at mean edge value 4s (twice flat) and each child edge is the parent value minus s, exactly half the length; at Delta = 0 (the window of C1) a mean of 4s forces every edge to 4s, so every inherited child edge starts at flat and the split cascade makes no floored cells there; control: at Delta = 1 unequal edges with mean 4s exist, so 'children at flat' holds only for the mean (whether splits make floored cells at Delta >= 1 is not computed)",
+      halfL and c4_d0 == 1 and c4_d1 > 1 and wit4.mean() == 8 and wit4.max() <= 10 and (wit4 - 2 != 6).any(),
+      f"6 edges, s = 2: states with mean 4s: {c4_d0} at Delta = 0, {c4_d1} at Delta = 1 (witness parent {wit4.tolist()} -> inherited children {(wit4 - 2).tolist()})")
 lfl = {be: be*a_cell/8 for be in bes}; mB = {be: (2*lP/lfl[be])**(1/3) for be in bes}   # m in M_Pl units with r_B = 2 l_P M_Pl^3/m^3 >= l_floor
 check("C5 [T+E] gravitational atom (r_B = 2 l_P (M_Pl/m)^3) is resolved above the floor edge b_e a/8 only for m < (2 l_P/l_floor)^(1/3) M_Pl; its constituents must already be stable and dark: no new protection",
       all(mB[be] < 1 for be in bes), ', '.join(f"b_e {be}: l_floor {lfl[be]/lP:.0f} l_P, m < {mB[be]:.2f} M_Pl" for be in bes))
@@ -173,7 +183,7 @@ lnb_flat, lnb_tilt = -dc**2/(2*s2_flat), -dc**2/(2*s2_tilt); Pneed = dc**2/(2*(-
 check("D3 [E] holes of M_i ~ M_rem form at T_f; remnants as all dark matter need beta ~ (T_eq/T_f)(M_i/M_rem); measured A_s (n_s = 1, or the tilt carried down) gives ln beta <= -2.4e8; the needed power is ~1e6 A_s: abundance supplied",
       lnb_flat < -1e8 and Pneed/As > 1e5, f"b_e 40: T_f {Tf:.1e} GeV, ln(k_f/k*) {lnk:.0f}, beta needed {bneed:.1e}; ln beta (n_s=1) {lnb_flat:.2e}, (tilt) {lnb_tilt:.2e}; P_R needed {Pneed:.1e} = {Pneed/As:.0e} A_s")
 print("verdict: (a) no charge outside light charges (A1-A3); (b) OPEN: the projected light band covers the block circle (B3) but at fixed q the resonant set is finite (B3b), the channel is not computed; if open, tau ~4e-39 s at the law's M (B4); (c) no floor atom (C1-C3),")
-print("  none from splits (C4), bound states inherit constituents (C5); (d) remnant mass supplied by b_e, no number protects it (D2), beta ~exp(-2.4e8) (D3).")
+print("  none from splits at Delta = 0 (C4; at Delta >= 1 not computed), bound states inherit constituents (C5); (d) remnant mass supplied by b_e, no number protects it (D2), beta ~exp(-2.4e8) (D3).")
 print("GATE: no rule proposed passes. A 'floor lock' rule (a fully floored cube is not lowered/raised) would bend Admissibility/Record,")
 print("  supply its mass through b_e and its abundance through supplied small-scale power: FAIL (items 1, 3). Dark matter stays open.")
 print("theorems: A2, A3, C4, D2; finite: A1, B1, B2, B3 (diagnostic), B3b, C1-C3; estimates: B4 (conditional), C5, D1, D3")

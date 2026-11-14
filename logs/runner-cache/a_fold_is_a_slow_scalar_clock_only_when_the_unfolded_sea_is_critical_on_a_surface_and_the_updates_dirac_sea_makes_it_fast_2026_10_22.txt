@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/a_fold_is_a_slow_scalar_clock_only_when_the_unfolded_sea_is_critical_on_a_surface_and_the_updates_dirac_sea_makes_it_fast_2026_10_22.py
-runner_sha256: c102fa617b12427a523130784da38e98455c14eeaabaf59a7ada62e23d882a2e
-input_fingerprint_sha256: 095df5c9d635afb8575eced25a3b86acbfe479310db3aa94a8f961d0006ae38d
+runner_sha256: ac2550d45fd7d9db5c98919862900b441bdabed8ef3bcede8eb3e6092e81a988
+input_fingerprint_sha256: c30a512b958ec571be2f1aee376ee3a83a0d984b97db676ea25c9a12bbbca5f5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 5.00
+elapsed_sec: 4.17
 status: ok
 ----- stdout -----
 == A. the funnel's ends
@@ -12,7 +12,9 @@ status: ok
 [PASS] A2 [T+D] uniform odds are the funnel TOP: every star is spin-3/2 (energy 1 per site, the maximum), an exact eigenstate of the star rule and of any SU(2)-blind rule, so the fold never starts from it; the update's hop breaks SU(2) and moves it off the top within about one tick (fidelity under the N=12 XX hop at t=0.25,0.5,1,2)  |H psi - N psi| 2e-15; E_max/N 1.0000; fid 0.834, 0.514, 0.203, 0.264
 [PASS] A3 [T+D] the update's sea sits low on the funnel (star energy per site, infinite chain 0.0756 in C1); under the fold rule's own unitary its weight on the fold manifold is conserved exactly ([H, P_fold] = 0) and falls with N (~0.91 per site): unitary odds never complete a fold, an energy sink is needed (records cannot be one: they never condition the odds)  e_sea N=8,10,12: 0.0645, 0.0685, 0.0707; fold weight 0.7862, 0.6597, 0.5408
 == B. what sets the fold's speed: the stiffness of a fold order parameter
-[PASS] B1 [T] adiabatic stiffness of a gap-opening fold order parameter m on a sea with gapless-set codimension d: Z(m) = int rho(e) e^2/(4(e^2+m^2)^(5/2)) de, rho ~ e^(d-1), so Z = c_d m^(d-3): d=1 (a surface of gapless modes) a pole m^-2, d=3 (Dirac points) only log(1/m); the unfolded point is at infinite field distance iff d = 1  c_1 = 1/3, c_2 = 2/3, d=3: log + -4/3 + log(2)
+[PASS] B1 [T] stiffness of a gap-opening fold order parameter m on a two-band (Clifford) sea, Z(m) = int rho(e) e^2/(4(e^2+m^2)^(5/2)) de: if rho(e) = A e^(alpha-1)(1 + o(1)) as e -> 0 (0 < alpha < 3), then Z = (A/4) I(alpha) m^(alpha-3)(1 + o(1)) as m -> 0, with the normalized integral I(alpha) = Gamma((alpha+2)/2) Gamma((3-alpha)/2)/(2 Gamma(5/2)); alpha = d (codimension of the gapless set) only for smooth nonzero linear transverse dispersion, so then d=1 gives a pole (A/12) m^-2, d=2 gives (A/6) m^-1, d=3 only (A/4) ln(1/m); a pure power rho = A e^(d-1) gives these exactly; control: the held absolute c_1 = 1/3, c_2 = 2/3 need A = 4  normalized I_1 = 1/3, I_2 = 2/3, I(1/2) = 0.309012 (quad 0.309012), d=3: log + -4/3 + log(2); Z(d=1) = A/(12*m**2), Z(d=2) = A/(6*m); held coefficients need A = 4, 4
+[PASS] B1b [T+D] normalization on explicit linear Dirac models H = v k.sigma + m sigma_z (v = 0.7), computed in k-space: Z m^(3-d) equals (A/4) I_d with A the k-mode density-of-states prefactor (1D: A = 1/(pi v), 2D: A = 1/(2 pi v^2)); with a momentum cutoff the law is asymptotic (relative deviation falls as m -> 0); the per-k matrix element |<+|sigma_z|->|^2 = e^2/E^2 is checked; the scope's plain sum sum |<+|dH|->|^2/(E_+ - E_-)^3, from diagonalisation, is half the B1 integral with rho = the k-mode density (B1's e^2/(4 E^5) per mode is the Inglis cranking form, twice the plain sum); control: the held absolute c_1 = 1/3 misses the 1D value  rel. error 1D 0.0e+00, 2D 0.0e+00; cutoff 1: deviation 2.2e-01, 2.7e-03, 2.8e-05 at m = 0.3, 0.03, 0.003; matrix element 4e-16; plain sum / (B1 integral / 2) - 1 = 2.2e-16; 1D Z m^2 = 0.03789 = A/12 vs held 1/3
+[PASS] B1c [T+D] nonlinear transverse dispersion (two-band, gap term sigma_z): a codimension-1 quadratic crossing H = k^2 sigma_x + m sigma_z has rho ~ e^(-1/2) and Z ~ m^(-5/2), and the 2D quadratic band touching H = (kx^2-ky^2) sigma_x + 2 kx ky sigma_y + m sigma_z (d = 2, z = 2) has Z ~ m^-2 and an infinite canonical distance; both follow the B1 law with alpha = d/z and its prefactor; control: the codimension-only exponent d - 3 (-2 and -1) is rejected in both, so d = 1 is not necessary for a pole outside linear dispersion  exponents -2.500000 (alpha 1/2), -2.000000 (alpha 1); prefactor rel. error 0.0e+00, 0.0e+00; QBT isotropy 2e-16; sqrt(Z) m at m = 1e-2, 1e-3, 1e-4: 0.081434, 0.081434, 0.081434; matrix element 7e-16
 [PASS] B2 [D] lattice check of the pole order, ratio [Z(0.1)-Z(0.2)]/[Z(0.2)-Z(0.4)] (4 for m^-2, 1 for log): 1D dimer chain and the 3D half-filled nearest-neighbour cubic sea (nested Fermi surface, fold = staggered gap) have the pole; a 3D lattice Dirac sea (point nodes, the update's light-band type) does not  1D 4.04, 3D nested 4.00, 3D Dirac 0.91
 == C. 1D star-rule toy (pole present): V and z computed on the dimer path
 [PASS] C1 [T+D] on the dimer path (hop 1 +- delta; delta = 0 the sea, delta = 1 the fold) the star energy is a monotone funnel from V0 to 0, V0 - V ~ delta^2 ln^2(1/delta), and the one-loop stiffness has the pole z = 1/(24 pi delta^2); Wick reduction checked against a 10-site Slater state, correlators against a 400-site chain  V0 0.07559; V(0.1) 0.06049; z delta^2 at 1e-9: 0.013263 (1/24pi 0.013263)
@@ -22,14 +24,14 @@ status: ok
 [PASS] C4 [T+E] amplitude: A_s = gamma V0 N^2 2^(-2r)/(pi^2 z0) fixes the fold rung, ~20 rungs above the cell for fold coupling gamma = 1 (gamma supplied; rung = 19.8 + log2(gamma)/2); then H/M_P and r are tiny  2^-2r 1.20e-12, rung 19.8, H/M_P 2.5e-13, r 6e-18
 [PASS] C5 [T] if the split births children unfolded (share x), the per-split vacuum-energy factor is q = 1/8 + 7x/8: x = 1 is exact de Sitter with no exit, constant x < 1 is power-law (r = 16 eps, inflaton-design B1): the re-seeded unfolded share is not a clock; the clock needs the split to carry the fold order (children inherit)  x for q = 0.9760: 0.9726; r = 0.28
 == D. the update's sea: an isotropic Dirac band (point node), d = 3
-[PASS] D1 [T+D] with the stiffness only logarithmic, the plateau curvature is eta ~ -sqrt(c2/(V0 zeta^2 z1 N)) (log asymptotics): at N* = 55 the fold is fast at the flat rung and worse at coarser rungs (zeta = 2^-r); n_s = 0.965 would need zeta ~ 50, a cell far below the Planck length, against M_P a = 1 (unit map)  rung 0: eta -0.88 n_s -0.76 at ln m* -95; rung 4: eta -13.99 n_s -26.97 at ln m* -1537; zeta needed 50
+[PASS] D1 [T+D] linear point node (d = 3, B1 with A = 1/pi^2 in this model's normalization, so z1 = A/4 = 1/(4 pi^2)): with the stiffness only logarithmic, the plateau curvature is eta ~ -sqrt(c2/(V0 zeta^2 z1 N)) (log asymptotics): at N* = 55 the fold is fast at the flat rung and worse at coarser rungs (zeta = 2^-r); n_s = 0.965 would need zeta ~ 50, a cell far below the Planck length, against M_P a = 1 (unit map)  rung 0: eta -0.88 n_s -0.76 at ln m* -95; rung 4: eta -13.99 n_s -26.97 at ln m* -1537; zeta needed 50
 [PASS] D2 [E] fold speed in ticks: a gapped local fold relaxes in ~1/gap ticks, a split takes >= ln2/(H a) cell times, so without the pole the fold finishes 1e4 times within one split: no clock (the lattice eta problem, inflaton-design C1)  gap 0.426; cell times per split >= 3.6e+04; folds per split >= 2e+04
 == E. reheating: misfolds
 [PASS] E1 [T+E] the fold rule is >= 0 and vanishes only on folds, so all plateau energy that leaves the coherent mode sits in misfolds (domain walls: free sites, matter in the neighbourhood reading); full conversion of V0 gives a dense misfold gas (walls per site <= 2 V0/gap_pair), reheating at the fold scale, then diluted by splits as matter  V0 0.0756; pair gap (N=12) 0.426; walls/site <= 0.36
 supplied: star rule; dimer path (one-loop mean field); J a = sqrt3; M_P a = 1 at the flat rung (unit map); fold rung; gamma = 1; N* = 55; Dirac ball cutoff; fold gap m_f = 1; semiclassical FRW with Hubble friction
 warnings raised in this run: 3 (all from the C1b control's subtracted integrand: True); kinds: ['IntegrationWarning']
-elapsed 3.6s
-TOTAL: PASS=14 FAIL=0
+elapsed 3.3s
+TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----
 

@@ -50,7 +50,7 @@ The runner ends with `TOTAL: PASS=16 FAIL=0` and exits nonzero if any check fail
 - `[PASS] C3 constant transfer per split ...: ACT with q = 4 needs N_e = 76.9, r = 0.104 (excluded); r < 0.036 needs N_e > 222 and q = 11.6`.
 - `[PASS] C4 legacy graph-growth notes on main ...: n_s = 1 - 2/N_e at N_e = 60 is 0.9667 [Pl+0.4 ACT-2.4 DR2-2.8]`.
 - `[PASS] D1 THEOREM (leading order in 1/N, sympy): V = 1 - c e^(-kappa phi) gives n_s = 1 - 2/N for every kappa ...; V = 1 - c phi^-k gives n_s = 1 - 2(k+1)/((k+2)N)`.
-- `[PASS] D2 at r < 0.036 the exponential plateaus (E/T alpha-attractors, any alpha) and natural inflation stay > 2 sigma below ACT at N* <= 55.7`, while power plateaus with k = 1, 2 and curvature-squared plus a cubic term reach it.
+- `[PASS] D2 at r < 0.036, on the scanned grids (12 alpha from 0.3 to 1000 for the E and T models, f = 3 to 100 for natural inflation; a finite scan, not a bound for every alpha), the exponential plateaus (E/T alpha-attractors) and natural inflation stay > 2 sigma below ACT at N* <= 55.7`, while power plateaus with k = 1, 2 and curvature-squared plus a cubic term reach it. Narrowed 2026-11-14: the held line said "any alpha" from the finite grid; since then the check also asserts the T-model and natural-inflation rows it prints.
 - `[PASS] E1 THEOREM: V = M^2 v(phi) makes eps, eta, n_s and r M-free ...: no R^2-type term can lift the tilt`.
 - `[PASS] E2 ESTIMATE hinge Friedmann law ...: |dn_s| <~ 2 rho/rho* = 1e-10 vs the needed +0.012`.
 - `[PASS] E3 cubic: a cell-scale c3 R^3 with c3 = O(1) a^4 gives lam = 72 M^4 c3 = 2.3e-18 c3 vs the needed -1.8e-04`; a loop of any field heavy enough to act locally gives |lambda| <= 4e-15 (estimate).

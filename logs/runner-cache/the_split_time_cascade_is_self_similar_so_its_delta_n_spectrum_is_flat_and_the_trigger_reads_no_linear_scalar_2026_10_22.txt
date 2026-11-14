@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_split_time_cascade_is_self_similar_so_its_delta_n_spectrum_is_flat_and_the_trigger_reads_no_linear_scalar_2026_10_22.py
-runner_sha256: ec865fa16fa9d2a910b2589f13200fcde710e9427989ddc1996808d318a2a586
-input_fingerprint_sha256: 06c002a064941d36ba133b44c52a3b74b07af2a767d14b31230054809757f747
+runner_sha256: 9de44fcf61b75571a5c60ca060a38e2758826bd263247950b1ca6729eb854856
+input_fingerprint_sha256: 29f14054696f6179fcd13082278e64cae9966fb91b000d6bf46696a465482aa8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 13.49
+elapsed_sec: 11.86
 status: ok
 ----- stdout -----
 == A. register arithmetic and the trigger readout (exact)
@@ -28,10 +28,10 @@ status: ok
 == E. estimates against measurement
    split-time cascade with rule constants: octave-averaged n_s = 1 (B1-B5; coupled log2 lam = +0.0139) -> 8.4 sigma (Planck); needs lambda = 2^(n_s-1) = 0.97596
    in the Poisson model lambda = (ms)_l/(ms)_(l+1): m s must grow 2.46%/split; A_s needs m s = ln2/A_s = 3.30e+08 vs rule m s <= 18*113 = 2034
-   laws' own channel (C): Delta_zeta^2 ~ (9/72)^2 x 8.6 x (P_t/2)^2 x 10 (log): <= 1.5e-21 at r < 0.036; CL-3's only de Sitter phase is today's (P_t ~ 5e-122); tilt blue
+   laws' own channel (C): Delta_zeta^2 ~ (9/72)^2 x 6.74 (C2) x (P_t/2)^2 x 10 (supplied log factor): <= 1.5e-21 at r < 0.036; CL-3's only de Sitter phase is today's (P_t ~ 5e-122); tilt blue
 [PASS] E1 [E] each split-time channel computed here misses: octave-averaged n_s = 1 with rule constants; amplitude 0 at linear order (given the cited read lapse) and <= 1e-20 at second order (blue), against 0.9649(42) and 2.1e-9  
 supplied: Poisson register stepping (B only), block-mean registers, 2D toy geometry, neighbour 'full' = mean >= 4s; scalar stand-in for tensors in C2; injection fraction in D1 (any value).
-runtime 13.0 s
+runtime 11.7 s
 TOTAL: PASS=12 FAIL=0
 
 ----- stderr -----

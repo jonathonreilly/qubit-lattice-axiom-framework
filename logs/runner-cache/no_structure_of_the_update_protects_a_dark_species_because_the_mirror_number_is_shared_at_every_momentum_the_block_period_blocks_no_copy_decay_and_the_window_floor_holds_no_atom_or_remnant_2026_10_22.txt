@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/no_structure_of_the_update_protects_a_dark_species_because_the_mirror_number_is_shared_at_every_momentum_the_block_period_blocks_no_copy_decay_and_the_window_floor_holds_no_atom_or_remnant_2026_10_22.py
-runner_sha256: 1fa2c2a60edae46ed39bcb05cb4c3a93bfc7993e0c058f01907e5d1126d2a34b
-input_fingerprint_sha256: 901dec5f877ca2a356e42bc077a37e04a615dd792f16a2295ab959e8899e5dd1
+runner_sha256: b523da210866631a809b3b58802fa0a605b2b8705587939e59c2e4d05c4a7b9d
+input_fingerprint_sha256: 3330011dbadc29605dc4b4c321d16e4a2085ccf8ec4bc6d9a2e887c98339679c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 13.86
+elapsed_sec: 12.99
 status: ok
 ----- stdout -----
 == A. (a) a conserved charge carried by no light state?
@@ -22,18 +22,18 @@ status: ok
 [PASS] C1 [F] tetrahedron register (s = 2, Delta = 0, regular): the all-floor state (every edge 1/8 of flat) lies in the one positive-volume component with the flat state: no frozen floor geometry | 8849/531441 positive-volume states, 1 component, D = 8849
 [PASS] C2 [F] pure register hop: the floor state leaves the floor (mean return and floor-shell weight, sum n <= 2, over t = 50..200 << 1) | return 1.8e-02, shell 3.8e-02
 [PASS] C3 [F] a stiff departure cost (quadratic bowl about flat) traps the floor state in continuous time (energy isolation, no number), but in the update's per-tick form the phase folds mod 2 pi: return <= 0.3 over the scan and < 0.1 at lam >= 2: no robust floor atom | continuous lam 1: 0.45; per-tick: 0.25:0.065, 0.50:0.145, 1.00:0.278, 2.00:0.085, 3.00:0.085, 6.28:0.034
-[PASS] C4 [T] passing: a split fires at mean edge value 4s (twice flat) and each child edge is the parent value minus s, exactly half the length: children start at flat, so the split cascade makes no floored cells
+[PASS] C4 [T] passing: a split fires at mean edge value 4s (twice flat) and each child edge is the parent value minus s, exactly half the length; at Delta = 0 (the window of C1) a mean of 4s forces every edge to 4s, so every inherited child edge starts at flat and the split cascade makes no floored cells there; control: at Delta = 1 unequal edges with mean 4s exist, so 'children at flat' holds only for the mean (whether splits make floored cells at Delta >= 1 is not computed) | 6 edges, s = 2: states with mean 4s: 1 at Delta = 0, 6152 at Delta = 1 (witness parent [9, 7, 8, 8, 8, 8] -> inherited children [7, 5, 6, 6, 6, 6])
 [PASS] C5 [T+E] gravitational atom (r_B = 2 l_P (M_Pl/m)^3) is resolved above the floor edge b_e a/8 only for m < (2 l_P/l_floor)^(1/3) M_Pl; its constituents must already be stable and dark: no new protection | b_e 40: l_floor 25 l_P, m < 0.43 M_Pl, b_e 100: l_floor 63 l_P, m < 0.32 M_Pl, b_e 1000: l_floor 627 l_P, m < 0.15 M_Pl
 == D. (d) remnants stopped by the floor
 [PASS] D1 [T+E] r_s = 2GM = l_floor = b_e a/8 gives M_rem = (b_e sqrt(8 pi)/16) M_Pl; b_e is only bounded below, so the mass is supplied; T_H there is below the block band top pi/b_e: emission is not band-cut before the floor | b_e 40: 12.5 M_Pl = 2.7e-04 g, T_H 4e+16 vs 2e+17 GeV, b_e 100: 31.3 M_Pl = 6.8e-04 g, T_H 2e+16 vs 7e+16 GeV, b_e 1000: 313.3 M_Pl = 6.8e-03 g, T_H 2e+15 vs 7e+15 GeV
 [PASS] D2 [T] an edge register keeps nothing (commutant of {hop, value} = 1) and the floor is connected to flat (C1): a floor-size lump carries no number; the floor removes the horizon rather than stopping the loss | register commutant 1
 [PASS] D3 [E] holes of M_i ~ M_rem form at T_f; remnants as all dark matter need beta ~ (T_eq/T_f)(M_i/M_rem); measured A_s (n_s = 1, or the tilt carried down) gives ln beta <= -2.4e8; the needed power is ~1e6 A_s: abundance supplied | b_e 40: T_f 5.9e+17 GeV, ln(k_f/k*) 62, beta needed 1.1e-27; ln beta (n_s=1) -2.44e+08, (tilt) -2.13e+09; P_R needed 8.3e-03 = 4e+06 A_s
 verdict: (a) no charge outside light charges (A1-A3); (b) OPEN: the projected light band covers the block circle (B3) but at fixed q the resonant set is finite (B3b), the channel is not computed; if open, tau ~4e-39 s at the law's M (B4); (c) no floor atom (C1-C3),
-  none from splits (C4), bound states inherit constituents (C5); (d) remnant mass supplied by b_e, no number protects it (D2), beta ~exp(-2.4e8) (D3).
+  none from splits at Delta = 0 (C4; at Delta >= 1 not computed), bound states inherit constituents (C5); (d) remnant mass supplied by b_e, no number protects it (D2), beta ~exp(-2.4e8) (D3).
 GATE: no rule proposed passes. A 'floor lock' rule (a fully floored cube is not lowered/raised) would bend Admissibility/Record,
   supply its mass through b_e and its abundance through supplied small-scale power: FAIL (items 1, 3). Dark matter stays open.
 theorems: A2, A3, C4, D2; finite: A1, B1, B2, B3 (diagnostic), B3b, C1-C3; estimates: B4 (conditional), C5, D1, D3
-elapsed_seconds 13.2
+elapsed_seconds 12.6
 TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----

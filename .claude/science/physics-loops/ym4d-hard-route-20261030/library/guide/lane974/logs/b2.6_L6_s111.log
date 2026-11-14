@@ -1,0 +1,9 @@
+traj974 L=6 Nt=32 beta=2.6 ntherm=300 nmeas=2000 nsep=2 seed=111 ape=6,16 tag=b2.6_L6_s111
+[    0.0s] therm 0 plaq 0.44268
+[    1.2s] therm 100 plaq 0.67263
+[    2.3s] therm 200 plaq 0.67203
+[    3.5s rss 51MB] meas 0 plaq 0.66906
+[    6.0s rss 67MB] meas 50 plaq 0.66853
+[    8.6s rss 67MB] meas 100 plaq 0.66975
+[   11.1s rss 67MB] meas 150 plaq 0.66962
+[   13.6s rss 67MB] meas 200 plaq 0.67326

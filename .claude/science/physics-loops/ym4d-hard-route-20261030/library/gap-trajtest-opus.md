@@ -171,3 +171,37 @@ published number in place of row 954's recollection: at beta 2.6 the seed throug
 published sigma (Section 5), the torelon pair at L = 16 sits near 2 x 0.22 = 0.44, below m_0++ = 0.51, so L = 16 would fail
 (TR); at L = 20 the pair is near 0.60. Script `guide/lane974/batch2.zsh`: 300 + 1000 x 2 sweeps, APE 8 and 20 steps, seeds
 21 and 121 (N = 1000, 2N = 2000). Same criteria (3.4). Also measured there: the F sector, to check (TR) directly.
+
+**4.4 Results, beta 2.3 (written 17:13Z; full tables `guide/lane974/logs/ana_b2.3.txt`; jackknife, 20 blocks).**
+Upper bounds E(tau), tau = 0..3, as (value +- err); N = 2000 (seed 11) and 2N = 4000 (seeds 11 + 111).
+
+| L | sector | N: tau 0, 1, 2, 3 | 2N: tau 0, 1, 2, 3 |
+|---|---|---|---|
+| 4 | F | 0.332(5) 0.326(8) 0.329(13) 0.345(20) | 0.332(4) 0.321(7) 0.316(12) 0.322(16) |
+| 4 | G proj | 1.326(25) 1.213(81) 0.866(132) 1.12(44) | 1.341(17) 1.235(58) 1.008(134) 1.26(38) |
+| 6 | F | 0.622(10) 0.613(18) 0.606(31) 0.607(65) | 0.624(7) 0.608(13) 0.612(21) 0.631(35) |
+| 6 | G proj | 1.189(19) 0.994(52) 1.041(116) 0.88(41) | 1.213(14) 1.038(43) 0.998(90) 0.66(19) |
+| 8 | F | 1.000(12) 0.969(30) 0.991(78) 0.99(24) | 0.989(11) 0.933(23) 0.920(49) 0.92(13) |
+| 8 | G proj | 1.300(16) 1.189(67) 1.070(193) 1.6(1.4) | 1.325(17) 1.222(58) 1.176(172) 1.5(1.0) |
+
+Controls. C2 (L = 4, F plateau in [0.25, 0.45]): 0.32-0.33, PASS (row 954's open-time variational value was 0.33; this is a
+different code and boundary, so a partly independent check). C3 (L = 8, G within 0.3 of 1.3): 1.22(6), 1.18(17), PASS. The
+F energies follow sigma L - pi/(3L) with Teper's a sqrt(sigma) = 0.3687: 0.30, 0.64, 0.96 at L = 4, 6, 8 (measured 0.32, 0.61,
+0.93-0.99). The L = 8 G plateau 1.22(6), 1.18(17) agrees with the published 1.216(23).
+
+Verdicts by the rules of 3.4 (beta 2.3).
+- F sector: E^F + 2 err < K_a on L = 4 (0.32 + 0.02 = 0.34 < K_a for a <= 77) and on L = 6 (0.608 + 0.026 = 0.634 < K_a for
+  a <= 39): REFUTED ON THE BOX ONLY (flux; does not transfer). L = 8: 0.93-0.99 > K_30.
+- G sector, transferable boxes ((TR): 2 E^F = 1.22, 1.9 at L = 6, 8). Projected-correlator bounds: smallest E + 2 err is
+  L = 6, tau = 3: 1.04 in 2N but 1.70 in N: not stable under doubling, so no refutation. L = 8: smallest 1.34 (tau = 1).
+  No G bound falls below K_a for a >= 21 in both N and 2N with the projected estimator.
+- One literal hit, and why I do not count it (amendment after seeing data, stated as such): the estimator
+  -(1/tau) log lambda_max at tau = 5 gives 0.809(52) (N) and 0.972(82) (2N) on L = 8, i.e. E + 2 err = 0.91 and 1.14 < K_21 = 1.139.
+  At tau >= 4 the signal e^(-1.2 tau) is below the noise of C(tau) (the projected correlator there is consistent with zero, the
+  tau = 4, 5 entries above have errors of order 1 or are nan), and the largest eigenvalue of a noise matrix is biased upward, so
+  -(1/tau) log lambda_max falls like -(1/tau) log(noise level): it decreases with tau in every stream (L = 6: 1.00, 0.98, 0.88 and
+  0.93, 0.81, 0.72 at tau = 4, 5, 6). The jackknife error does not see this selection bias. The rule of 3.4 should have
+  required the projected correlator to be nonzero at 3 err at the tau used; with that rule the hit disappears. It concerns
+  only a <= 21 at beta 2.3, which the published 1.216(23) also leaves open.
+- NOT REFUTED needs tau = 1, 2, 3 all above K_a by 2 err: on L = 8 tau = 3 is noise, so by the letter the own runs are
+  INCONCLUSIVE at beta 2.3; tau = 1, 2 (1.222(58), 1.176(172)) sit above K_30 = 0.811 by 7 and 2.1 errors.

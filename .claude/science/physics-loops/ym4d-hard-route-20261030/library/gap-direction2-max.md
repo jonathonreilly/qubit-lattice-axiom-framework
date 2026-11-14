@@ -10,6 +10,7 @@ Labels used: PROVED (written argument, not yet checked), CONDITIONAL (on named i
 ## Status log (newest last; times from `date -u`)
 
 - 2026-11-14 15:45Z. File created. Plan below. No result yet.
+- 2026-11-14 16:00Z. Section 1 (inputs) and Section 2 (question 1: NOT a port) written.
 
 ## Plan (eight steps, one per response)
 
@@ -67,4 +68,77 @@ one-step law at a frozen pi-flux slice orders its colour direction near beta 2.4
 transfer frame and its renormalisation-group bounds, read in Section 2. Rows 931, 941, 947, 950, 952, 954, 960, 965,
 968 (Claude Fable 5.2 and Claude Opus 5.5): the statements above. Bauerschmidt, Bodineau, Dagallier; Chen, Eldan:
 the criteria behind Theorem POL-BR.
+
+## 2. Question (1): is (TILT-COV-sup) or (LOC-COV) at the seed scale a port? Answer: NO (READ, with one PROVED lemma)
+
+Kind of result: reading of their text, plus a comparison. Source: Ethan Sussman and Levent Alpoge, complete account
+CA-II (`theorem_0_complete_account_raw_II.tex`, commit 31a47c543775, fetched to `/tmp/gap-direction2-970/sa/`, not
+committed), found through `sa-index/ca-full/index.tsv`; CA-I and outline lines as read by row 837
+(`gap-finishline-opus.md` L44-87), re-used here and not re-read.
+
+**2.1 What they prove that has the shape of (TILT-COV-sup) and (LOC-COV).** CA-II Section 8.3, in the chapter
+"A two-point witness of non-triviality: clause (iv)" (heading at CA-II L68374).
+- The class (CA-II L83837-83866, items (i)-(vi)). "S denotes the class of windowed Gibbs measures": sites X with a
+  metric; a window, "K_x in R^n is an open bounded convex set"; the density is 1_K e^(-Phi) with
+  "Phi(y) = (1/2)<y, Q y> + <h, y> - P(y)", "Q is real symmetric with q_- 1 <= Q <= q_+ 1 and q_- > 0", "the vector h lies
+  in R^(n|X|)" with no bound on it; "P'' has operator norm at most varpi ... The smallness condition of the class gives
+  varpi <= q_-/4, and we put m := q_-/2"; and (vi): the conditional law given y_S "is again a member of S, with the
+  same constants".
+- Lemma 8.3 `lem-correlation-decay` (CA-II L83869-83900; the index marks it PROVED; it assumes the Helffer-Sjostrand
+  representation, stated inside the lemma). For mu in S:
+  |Cov_mu(F, G)| <= (2/m) sum over x, x' of e^(-nu dist(x, x')) ||d_x F|| ||d_x' G||.
+- Proposition 8.3 `prop-lipschitz-stability` (CA-II L81162-81200): for a Hamiltonian that is "coercive for phi" with
+  lambda = lambda_A - eps_0 > 0, the mean of a Lipschitz function moves by at most (l_G/lambda) x (weighted size of the change of
+  the linear term and of grad P). `cor-subgaussian-tails` (CA-II L81804-81850, read by the row 944 lane) tilts the
+  linear term.
+- Where they use it: `cor-extracted-covariance` (CA-II L83289): "Fix a level j with K - s <= j <= K and a clean branch
+  of the Gaussian extraction". So the class is met by the fluctuation variables of one of the last s steps before
+  first passage, in a small-field ("clean") branch. The decay of the propagators themselves is CITED from Balaban
+  (`5.8:prop-local-decay`, CA-II L54464: CMP 99b (3.42)-(3.45), Theorems 3.1, 3.3; CMP 102b (71), (73)); the kernel decay
+  of the fluctuation form is `5.2:cor-kernel-decay` (CA-II L10009, PROVED in their index).
+Reading. For a member of S the bound holds for every linear term h and every conditioning. Taking F = G linear,
+it gives Cov_mu <= (2/m) x (a kernel with exponential decay), uniformly in h. That is exactly a (TILT-COV-sup) with a
+(LOC-COV)-type local kernel, for that class. So the account does contain the statement, at weak coupling, for
+one block step. I credit it as the model of what (LOC-COV) asks.
+
+**2.2 Lemma CLASS (PROVED, hand): the three places where the seed-scale law leaves their class.** Let mu be a
+member of S. Then (a) mu is carried by a product of convex sets and Hess Phi >= q_- - varpi >= (3/4) q_- there; (b) the
+bound of 2.1 is a consequence of (a) alone in its covariance form: Cov_mu <= (4/(3 q_-)) Id for every h (Brascamp-Lieb,
+RECALLED); (c) so a law to which 2.1 applies with box-independent constants has a covariance that is bounded
+uniformly in the box and in all linear tilts, in the coordinates y.
+For the laws J_(b,phi) of the seed scale each of the three inputs fails:
+- (W) Window. The link variable ranges over all of S^3. The lane's GUIDE value of the plaquette at beta 2.3 is 0.60
+  (row 968, 7.5), so 1 - (1/2) tr U_p is of order 0.4: there is no small-field window that carries the mass. In the
+  account the complement of the window is paid by e^(-c p_0(g_k)^2) with p_0(g) = A_0 (log g^(-2))^(p_0) (SA L17257, L32642-32646, read by
+  row 837): a small number only when g is small.
+- (Q) Coercivity q_- > 0. In the account q_- comes from the block-average constraint of one step: the fluctuation
+  form is the Hessian of the action plus a times Q^* Q (CA-II 5.2, `def-rim-datum` L8421-8480 and L9030-9104, read by the
+  b99-w lane). The law m has no constraint: it is the full boundary law, all scales integrated. Its quadratic part
+  on horizontal vectors has modes down to the box momentum. PROVED consequence: in the Gaussian model FP of row 929
+  the sharp q_- on the box (a; (4a)^3) is the lowest mode, omega_min < 1.58/a (row 968, 4.2), against the needed K_a > 12.5/a.
+  So a coercivity that is uniform in the box cannot come from the quadratic form. It would be the mass.
+- (P) Smallness varpi <= q_-/4. At beta 2.3 the largest horizontal eigenvalue of the Wilson Hessian is 9 to 11 against
+  Ric = 2 (GUIDE, row 957), and the one-link tangential curvature is negative near the origin for beta > 2 (PROVED, row
+  968, 5.2). The non-quadratic part is not a perturbation.
+Proof of (a)-(c). (a) is items (ii)-(iv) of the class. (b) is the Brascamp-Lieb inequality for a density e^(-Phi) with
+Hess Phi >= lambda on a convex set: Var(<z, y>) <= |z|^2/lambda. (c) follows. QED
+
+**2.3 What the account says at and after first passage (READ by row 837; lines re-used, not re-read here).**
+- CA-I L2556-2560: "No statement about the laws of the block variables is a clause of the present theorem".
+- SA L31871-31882: "Nor does polynomial clustering establish a mass gap ... A positive spectral gap requires an
+  estimate that excludes spectral support in an entire interval above the vacuum. That question remains separate".
+- CA-I L2610-2620, (iii-b): for the per-ball bound, "no decay in d is asserted".
+- The running coupling stays in (0, gamma_H] down to first passage (CA-I L2533-2545), and gamma_H is small and not
+  explicit. The seed box is at order-one coupling, many steps past first passage (row 837; `gap-status-1113.md` 1.1).
+
+**2.4 Verdict on question (1).** NOT a port. The account proves the tilt-uniform local covariance bound for
+its class S: one block step, a convex small-field window, coercivity from the block-average constraint, and a
+perturbation below q_-/4. Its estimates stop at first passage with g <= gamma_H, and it asserts no block law and no
+decay there. At the seed scale all three hypotheses (W), (Q), (P) fail, and (Q) uniform in the box is the gap
+itself. So (TILT-COV-sup) or (LOC-COV) at the seed scale is a new input. What the account does give is the
+template: where a constraint supplies coercivity, tilt-uniform locality follows from convexity (their Lemma 8.3).
+Section 4 asks whether any constraint of that kind can be put into the two-slice flow.
+What this reading does not show. I read Section 8.3 and the index titles. I did not read CA-III. A bounded
+search is not a proof of absence; the index (1,647 statements, 43 with "decay" in the title) has no statement at
+order-one coupling.
 

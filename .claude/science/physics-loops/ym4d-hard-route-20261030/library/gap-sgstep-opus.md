@@ -155,3 +155,80 @@ For a spread unit z (|z_l| = N^(-1/2) on all links) it is beta^2 N = 3 beta^2 (2
 beta q q', and the rest is Gaussian. Then A(y) is quadratic, Hess A = beta^2 Var(q') is constant, and (2.1) is an
 equality: sigma^2 = beta^2 v = beta e^(-omega) with v = 1/(beta e^omega) (row 940 Step 2). Lemma TG is an
 equality (no gauge average in one mode). Consistent with row 931.
+
+## 3. Key question: is sigma necessarily box-free? (step 3)
+
+**Answer.** No. Compactness and the one-link bound give exactly Lemma HO, sigma(u, z)^2 <= beta^2 ||z||_1^2, which is
+beta^2 N for a spread unit z. Example DW below shows that nothing better follows from them, even with every
+structural hypothesis of row 940 (positive smooth symmetric kernel, reversible, stationary, the exponential-family
+form of Lemma EF with the same one-link force). A box-free sigma for the Wilson chain needs a property of the
+coupling R = e^(-V/2) Omega (Section 4 names it exactly). A constant renormalization of z does not repair this
+(Proposition CONS), and the averaged form is not what (E-to-HC) consumes.
+
+**Lemma RS (every R is realized by a reversible slice chain; PROVED).** Let M = (S^3)^N, beta > 0, and R > 0
+smooth on M. Put (kR)(u) := integral of e^(beta <u, w>) R(w) dw, S := (R/kR)^(1/2), T(u, w) := S(u) e^(beta <u, w>) S(w).
+Then T is symmetric, positive and smooth; Omega := S kR is a positive eigenfunction, T Omega = Omega (so it is
+the ground state, lambda_0 = 1, by Perron-Frobenius for a positive kernel), and the slice chain of row 940 has
+pi_u(dw) = e^(beta <u, w>) R(w) dw/(kR)(u).
+Proof. (T Omega)(u) = S(u) integral of e^(beta <u, w>) S(w)^2 (kR)(w) dw = S(u) (kR)(u) = Omega(u), since S^2 kR = R.
+pi_u(dw) = T(u, w) Omega(w) dw/Omega(u) = e^(beta <u, w>) S(w) Omega(w) dw/(kR)(u), and S Omega = S^2 kR = R. QED
+So the structure "score = beta <z, w'> - mean, under e^(beta <u, w'>) R(w') dw'" holds for every R; the box-free
+question is a question about R alone.
+
+**Example DW (double well; PROVED).** Take a, b in M with <a_l, b_l> = 0 for all l (for instance a_l = 1,
+b_l = i), and R_eps(w) := exp(-|w - a|^2/eps) + exp(-|w - b|^2/eps) (Euclidean norm of R^(4N)); build the chain by
+Lemma RS. Let u_l := (a_l + b_l)/sqrt 2 and z_l := (a_l - b_l)/sqrt(2N). Then z is a unit tangent vector at u, and
+  Var_(pi_u)(phi_(u,z)) = beta^2 Var_(pi_u)(<z, w>) >= beta^2 c_eps^2 N/2,
+  c_eps := A_4(r) (2/eps)/r,  r := |beta u_l + (2/eps) a_l| = (beta^2 + 4/eps^2 + 2 sqrt2 beta/eps)^(1/2),
+A_4(r) = I_2(r)/I_1(r) the mean length of the von Mises-Fisher law on S^3 (density proportional to e^(<kappa, w>),
+|kappa| = r). c_eps does not depend on N and tends to 1 as eps -> 0. Hence sup_u sigma(u)^2 >= beta^2 c_eps^2 N/2,
+against the upper bound beta^2 N of Lemma HO: Lemma HO is sharp up to the factor 2 c_eps^(-2).
+Proof. |w - a|^2 = 2N - 2 <w, a> on M, so each term of R_eps is a product of von Mises-Fisher densities, and
+pi_u is proportional to Q_a + Q_b with Q_a := prod_l e^(<beta u_l + (2/eps) a_l, w_l>) (same for b). The reflection
+of each R^4 in the hyperplane orthogonal to a_l - b_l fixes u_l and swaps a_l, b_l; it is an isometry of S^3, so
+Q_a and Q_b have the same mass and pi_u = (Q_a + Q_b)/2 after normalization. Under the normalized Q_a the links are
+independent and E <z_l, w_l> = A_4(r) <z_l, beta u_l + (2/eps) a_l>/r = A_4(r) (2/eps)/(r sqrt(2N)) (as <z_l, u_l> = 0,
+<z_l, a_l> = 1/sqrt(2N)); under Q_b it is the negative. A mixture with weights 1/2 of two laws with means +m and -m
+has variance at least m^2; here m = N A_4(r)(2/eps)/(r sqrt(2N)) = c_eps sqrt(N/2). No gauge average: phi = psi. QED
+Number: eps = 1/beta, beta = 2.3 gives r = 2.80 beta = 6.44, A_4(6.44) about 0.77 (A_4(r) ~ 1 - 3/(2r)), c_eps about
+0.55, so sigma(u)^2 >= 0.15 beta^2 N.
+Mechanism. Two macroscopically different "phases" of the next slice with equal weight at u: the score in the
+direction that separates them is of size beta sqrt(N). Any R with a phase coexistence of this kind (a local R
+included, e.g. an Ising-like anisotropy in d >= 2 under a symmetric field; ARGUED, Peierls) gives volume growth.
+
+**Decoupling and martingales (what they give; ARGUED, not used).** Order the links and write psi as a sum of Doob
+martingale differences D_l under pi~_u. Azuma-Hoeffding gives sigma~^2 <= sum_l ||D_l||_inf^2, and
+||D_l||_inf <= beta |z_l| + beta sum over l' after l of |z_l'| c_(l'l), where c_(l'l) bounds the influence (total
+variation) of w'_l on the conditional law of w'_l'. If the influence matrix C has ||C||_(2->2) <= theta < 1 uniformly
+in u, then sigma~^2 <= beta^2/(1 - theta)^2: box-free. This is a Dobrushin-type weak-dependence hypothesis on the
+half-space Wilson measure, uniform in the boundary slice. It holds only at small beta (the conditional law of one
+link depends on 6 plaquettes of coupling beta; Dobrushin's sum is of order 18 beta), not at beta 2.3-2.6.
+pi~_u is not even a local Gibbs measure on the slice (Omega is non-local), so the influences must be taken in the
+half-space system. Example DW is the case theta >= 1.
+
+**Proposition CONS (renormalizing z does not repair; PROVED).** (i) Constant rescaling. In Corollary HC2 take
+g~ = c g. (SG~) holds iff c >= sigma^2, and the LSI constant of nu in g~ is kappa = alpha/c. So the rate
+(1/2) log(1 + kappa) is at best (1/2) log(1 + alpha/sigma^2): a box factor in sigma^2 moves into kappa unchanged.
+(ii) l1-normalization. Lemma HO is box-free in the l1 norm: log E e^(lambda phi_(u,z)) <= lambda^2 beta^2 ||z||_1^2/2. Lemmas
+SGC, RD, H of row 940 hold for the l1 path distance d_1 (their proofs use (SG-step) only along a curve, with the
+proxy times the squared speed). But Lemma BGL in d_1 needs the dual-norm inequality
+Ent_nu(f^2) <= (2/alpha_inf) E_nu (max_l |grad_l f|)^2, and alpha_inf carries the box factor: already for nu = a product of
+N copies of one law rho on S^3 (the best case), the test f = sum_l c(u_l) with |grad c| <= 1 and Var_rho(c) = v > 0
+gives, through the Poincare inequality implied by that LSI, N v <= 1/alpha_inf, so alpha_inf <= 1/(N v). (For the
+Wilson nu the same test with f = sum over plaquettes of (1/2) tr U_p gives alpha_inf <= 16/Var_nu(f); the action
+variance is extensive whenever the specific heat is positive: ARGUED.) No Riemannian g~ can do better: a quadratic
+form Q with Q(z) >= ||z||_1^2 for all z satisfies, averaging over sign changes of the entries of a spread z,
+trace Q >= N^2, so Q has an eigenvalue >= N.
+
+**Averaged form (PROVED as a reading; the alternative is OPEN).** Lemma RD needs (SG-step) at every point of the
+geodesic between the two slices it compares, and Lemma H and Theorem HC1 apply it to all pairs (x, y), y the
+Hopf-Lax minimizer for x. A bound on E_nu sigma(u)^2 does not enter. Geodesics between nu-typical slices pass
+through slices that are not typical (the per-link midpoint of two independent typical slices has a smaller mean
+plaquette), so even a supremum over a typical set does not feed Lemma RD. Row 931's Theorems V and E do hold in
+averaged forms (row 931 Step 7), but they give a gap and an entropy contraction, not the count. An implication
+(LSI-vac) + averaged (SG-step) => (HC-vac) would need a new argument: OPEN, not attempted here.
+
+**What remains for the Wilson chain.** Whether sup_u sigma(u)^2 is box-free is not decided by compactness. It is
+decided by whether the half-space Wilson measure with boundary slice u can show a coexistence of macroscopically
+different next slices. Section 4 makes this exact: a box-free sigma follows from, and at the variance level in
+temporal gauge is equivalent to, a box-free upper bound on the Hessian of log Omega.

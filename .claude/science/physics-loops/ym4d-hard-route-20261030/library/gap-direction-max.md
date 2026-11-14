@@ -162,3 +162,198 @@ Findings of the table (the answer to the row's question, part 1).
   that is exp(extensive) after one step (Step 5, (5.3)). A per-step variance contraction then
   needs a time of the order of the volume. So the glue half needs a contraction at the level of
   entropy (a count), not of variance. This is the asymmetry behind "two U(1) carriers".
+
+### Step 4 (2026-11-14T06:45Z): the form, exactly; the SU(2) property; where U(1) breaks
+
+Notation. B a periodic spatial box, |B| its number of sites; T = T_B(beta) the gauge-invariant
+Wilson transfer operator (all flux sectors), eigenvalues lambda_0 > lambda_1 >= ..., r_i =
+lambda_i/lambda_0 = e^(-E_i). S(t; B) = sum over i >= 1 of r_i^t (real t >= 1),
+X(t; B) := log(1 + S(t; B)), U(t; B) := -dX/dt = sum_i E_i r_i^t/(1 + S). Credit: the transfer
+frame is the Sussman-Alpoge account's (GL8, as read by rows 920-930); Lemma SPLIT and Theorem SH
+are rows 892, 707; the pressure reading is `gap-phys-seed.md` Q4.
+
+**Form W (the weakest form that passes all fact tests; rows 892, 893; READ).** There is an
+integer a >= 1 with, on the one box (a; (24a)^3) at the first-passage data of (SEED-FP):
+(W-glue) S_ev(a; (24a)^3) <= 1/10 and (W-flux) Q_0 <= 1/20. By Lemma SPLIT then
+X(a; (24a)^3) <= x_* := log(22/17) (= 0.2578), and this is the Theorem SH seed shape. For the
+order-one question of this row the data are the bare Wilson weight at one beta in 2.3 to 2.6;
+cutoff uniformity ((UNIV-K), rows 916-925) is a separate open input.
+
+**The same form as one identity (PROVED; calculus on the spectrum).** Put
+kappa_B(t) := t U(t; B)/X(t; B) and pi_B(t) := t^3 X(t; B)/|B|. For 1 < t_0 < t_1:
+
+  (ANOM)  log pi_B(t_1) = log pi_B(t_0) - integral over [t_0, t_1] of (kappa_B(t) - 3) dt/t.
+
+So with B = (24 t_1)^3: X(t_1; B) <= x_* holds if and only if
+  integral over [t_0, t_1] of (kappa_B(t) - 3) dt/t >= log pi_B(t_0) + log(24^3/x_*)
+  = log pi_B(t_0) + 10.89.
+Proof. X is smooth and positive on t > 1 (sum_i E_i r_i^t <= sum_i r_i/(e (t - 1)), T trace
+class), d log X/dt = -U/X, and d log(t^3)/dt = 3/t. log(13824/0.2578) = 10.89. QED
+Reading (thermodynamic dictionary, ARGUED): X/|B| is p/T and U/|B| is the energy density at
+T = 1/t, so kappa = eps/p and kappa - 3 = (eps - 3p)/p, the interaction measure over the
+pressure. The seed is: the relative interaction measure, integrated over log t on the seed
+box, exceeds a fixed number.
+
+**Lemma HOT (PROVED, crude).** X(1; B) <= 12 beta |B|, so pi_B(1) <= 12 beta; and
+e^(-12 beta |B|) <= Omega <= e^(12 beta |B|); and the one-step vacuum-chain density (Step 5)
+has log p_1 <= 36 beta |B|.
+Proof. With normalized Haar and |x_p| <= 1 over 3|B| space and 3|B| time plaquettes:
+e^(-6 beta |B|) <= T(u, w) <= e^(6 beta |B|). Tr T <= sup T(u, u); lambda_0 >= <1, T 1>. Omega =
+T Omega/lambda_0 gives sup Omega/inf Omega <= e^(12 beta |B|), and ||Omega||_2 = 1. QED
+With t_0 -> 1: the seed at beta = 2.3 follows from an integrated relative interaction measure
+of log(27.6) + 10.89 = 14.21 on the seed box (14.33 at beta = 2.6). This is the whole seed,
+both halves, as one order-one number.
+
+**Lemma TENS (PROVED).** If T = T_1 x T_2 (tensor product) then X = X_1 + X_2 and U = U_1 + U_2.
+So a rate bound (RATE)_mu: U(t) >= mu X(t) on a window, passes from the factors to the product
+with the same mu. The seed threshold S <= s does not (1 + S multiplies), and a gap bound does
+not control X. (RATE) is the form of "gap and count" that tensorizes.
+**Lemma GAPRATE (PROVED).** For every T: U/X >= E_1 (1 - e^(-X))/X >= E_1 (1 - X/2).
+Proof. U >= E_1 S/(1 + S) and X = log(1 + S); (1 - e^(-x))/x >= 1 - x/2. QED
+So a gap alone gives (RATE) only where X <= 1 (a cold box). The content of the seed is (RATE)
+where X is extensive: from the hot bound X <= 12 beta |B| down to X of order one, in a time of
+order log |B|.
+
+**Fact tests of (ANOM) and (RATE).**
+- U(1), Gaussian model FP of row 929 (PROVED given 929 Theorem A2): X(a; (24a)^3) > 31 at
+  every a and beta, so the seed fails by a factor above 31/x_* = 120, and the integral in (ANOM)
+  falls short by more than log 120 = 4.78 for every window. Per mode (PROVED from 929 Theorem A1):
+  X_k = -2 log(1 - e^(-t omega_k)), U_k = 2 omega_k/(e^(t omega_k) - 1), and t U_k <= (1 + t omega_k) X_k.
+  The mechanism (ARGUED, continuum limit): X = (pi^2/45)|B|/t^3 depends on t/b only, so
+  kappa = 3 exactly: the integrand of (ANOM) is zero. The photon breaks the seed at the exact
+  scale covariance of the Gaussian fixed point. The same holds for the toron tower: its part of
+  X depends on t/(beta b) only (929 Lemma F), and at b = 24a it is 3 log(sum_e e^(-e^2/(48 beta))),
+  about 3 log(sqrt(48 pi beta)) = 8.8 at beta = 2.3 (ARGUED: Gaussian sum), again scale-free.
+- Frozen Q_8, 2T (PROVED given check 896 D6): S_ev >= 1/2 on a fixed box at large finite beta,
+  so X >= log(3/2) > x_*. Mechanism (ARGUED): degenerate flat states have E_i -> 0, so U -> 0 and
+  kappa -> 0: the integrand of (ANOM) tends to -3.
+- Ceilings: (ANOM) and (RATE) quantify over no background and no exterior. YES.
+So the rivals fail at opposite ends of one inequality: U(1) by kappa = 3 (scale covariance),
+the frozen groups by kappa = 0 (degeneracy).
+
+**The SU(2) property that must enter.** Among the three groups, SU(2) is the one that is
+connected AND has a finite centre (compact semisimple). Both parts are needed.
+- Connected: every link carries Lie-algebra directions, so the slice laws carry a Dirichlet
+  form and Haar has no atoms. Q_8 and 2T fail here: no gradient, degenerate flat sectors,
+  heat-bath response 0 and gap 0 (930 F1, F2).
+- Finite centre, that is, no abelian factor: no one-parameter group commutes with a generic
+  pair of link variables ("an element commuting with two non-commuting elements of SU(2) is
+  central", 930 Section 6.2). U(1) fails here: its centre is the whole group, so the 1-form
+  symmetry acting on a slice is continuous. Its k = 0 orbit is the toron (flux half, 930 G1-G4)
+  and its k != 0 Goldstone modes are the photons (glue half, 929 A1-A2). One object carries both
+  U(1) failures; the two halves see different momenta of it.
+- **The step where U(1) breaks, in one place**: any step that bounds below a Dirichlet-form
+  constant (Poincare for the flux half, entropy-type for the glue half, by F4) of a slice law on
+  functions that vary along the 1-form symmetry orbit. For U(1) the orbit is an exact symmetry of
+  every conditional law, with |grad|^2 of order (length)/(cross-section) for k = 0 and of order
+  |k|^2 per mode for k != 0, so every such constant tends to 0 with the box. For SU(2) the orbit
+  is the two points +-1. This is necessary, not sufficient: Q_8 has the same two-point orbit.
+
+### Step 5 (2026-11-14T07:05Z): proof attempt on the hardest lemma, stage 1 (variance level)
+
+The hardest lemma of Form W is the count in the glue half (F4): bring X from extensive to
+order one in a time of order log |B|. The attempt works on the vacuum slice chain, at one
+coupling, with no supremum over backgrounds in the statements that are proved.
+
+Setting (READ: row 863 I1 through row 929 Section 6.1). nu = Omega^2 dU on slice
+configurations; P = Omega^(-1) (T/lambda_0) Omega, a self-adjoint Markov operator on L^2(nu) with
+eigenvalues r_i on gauge-invariant functions. One-step law pi_u(dw) = T(u, w) Omega(w) dw/(lambda_0
+Omega(u)). p_s(u, v) = sum_i r_i^s phi_i(u) phi_i(v) is the density of P^s(u, .) with respect to nu.
+grad_u is the gradient over the 3|B| links of u (unit S^3 metric per link).
+G(u, w) := grad_u log T(u, w) (the one-step score; its part from V(u) does not depend on w).
+Gamma(u) := the largest eigenvalue of the covariance matrix of G(u, .) under pi_u;
+Gamma^* := ess sup over u. gamma := the Poincare constant of nu: Var_nu(h) <= E_nu|grad h|^2/gamma
+for smooth gauge-invariant h.
+
+(5.1) (PROVED) grad_u (P f)(u) = Cov_(pi_u)(G(u, .), f), for bounded gauge-invariant f.
+Proof. (P f)(u) is the integral of pi_u(w) f(w) dw; grad_u log pi_u(w) = G(u, w) - grad log Omega(u),
+and its pi_u-mean is grad_u of the constant 1. QED
+(5.2) (PROVED) E_nu[ Var_(pi_u)(f) ] = ||f||^2 - ||P f||^2 (stationarity of nu).
+(5.3) (PROVED) 1 + S(2s; B) = E_(u ~ nu) ||p_s(u, .)||^2 in L^2(nu). So S(2s) is the mean over the
+starting slice of the chi-square distance of P^s(u, .) from nu, and it is the chi-square mutual
+information of two slices at lag s in the vacuum chain (as in row 839, check 849).
+
+**Theorem V (gap comparison for the vacuum chain; PROVED, group-blind; not yet checked).**
+For gauge-invariant f with E_nu f = 0:
+  ||P f||^2 <= E_nu[ Gamma(u) Var_(pi_u)(f) ]/gamma <= Theta (||f||^2 - ||P f||^2),  Theta := Gamma^*/gamma.
+Hence ||P f||^2 <= (Theta/(1 + Theta)) ||f||^2, r_i^2 <= Theta/(1 + Theta) for every i >= 1 (all
+sectors), and E_1 >= (1/2) log(1 + gamma/Gamma^*).
+Proof. By (5.1) and Cauchy-Schwarz over unit tangent vectors z: |grad P f(u)|^2 = sup_z
+Cov(z.G, f)^2 <= Gamma(u) Var_(pi_u)(f). P f is smooth, gauge invariant and nu-centred; apply the
+Poincare inequality, then (5.2). QED
+Kill test by hand (PROVED): one photon mode of FP (929 Section 3.1). pi_q is Gaussian in q' with
+precision beta e^omega and mean e^(-omega) q; G = beta q' + const, so Gamma = beta e^(-omega);
+nu = exp(-beta sigma q^2), so gamma = 2 beta sigma. Theta/(1 + Theta) = e^(-omega)/(2 sigma + e^(-omega))
+= e^(-2 omega) = r_1^2. **Theorem V is an equality for the free photon, mode by mode.**
+Reading. (i) Theorem V is the Euclidean, discrete-time form of the ground-state representation:
+in the Hamiltonian limit the generator of P is a multiple of the Langevin generator of nu, and
+gamma is the mass gap up to that multiple (ARGUED, classical). (ii) It is row 930's Theorem R
+mechanism (covariance of a force with a martingale increment, a Poincare inequality, a
+telescoping identity), moved from the even ring laws w_e^(s) to the stationary chain; credit
+row 930. (iii) The force factor is NOT where U(1) fails here: on the photon modes of FP, Gamma <= beta
+at every size (max over modes of beta e^(-omega); the toron factor is not computed here). In row 930 the sup force covariance failed in U(1) because
+the slab was conditioned at both ends (the barrier top); the one-step law pi_u is conditioned at
+one end only. U(1) fails Theorem V's hypothesis at gamma alone: gamma <= 2 beta sinh(omega_min),
+about 4 pi beta/b, and the toron direction has gamma <= L_1/N. (iv) Theorem V gives a gap, not a
+count: iterating it on (5.3) gives S(2s) <= (Theta/(1 + Theta))^(s-1) S(2), and S(2) is
+exp(extensive). This is F4 in a formula.
+
+**Proposition HC (PROVED implication; the count from hypercontractivity).** Assume
+  (HC-vac)_alpha: for every integer m >= 0, ||P^m h||_2 <= ||h||_(q'), q' = 1 + e^(-2 alpha m),
+  norms in L^p(nu), h gauge invariant.
+Then X(2m + 2; B) <= 72 beta |B| e^(-2 alpha m) for every m >= 0, and E_1 >= alpha.
+Proof. p_(m+1)(u, .) = P^m p_1(u, .). For a density g: ||g||_(q')^(q') = E[g g^(q'-1)] <=
+(sup g)^(q'-1), so ||g||_(q') <= exp((q' - 1) log sup g). By Lemma HOT, log sup p_1 <= 36 beta |B|.
+So ||p_(m+1)(u, .)||_2^2 <= exp(72 beta |B| e^(-2 alpha m)) for every u; average over u, (5.3).
+For the gap: r_1^(2m+2) <= S(2m + 2) <= 2 X(2m + 2) once X <= 1; take m-th roots. QED
+Consequences. (a) Seed size: X(a; (24a)^3) <= x_* as soon as alpha (a - 2) >= log(72 beta 24^3/x_*)
++ 3 log a (= 16.0 + 3 log a at beta = 2.3). Any box-uniform alpha > 0 gives the whole seed, both
+halves, at a of order (16 + 3 log a)/alpha. (b) Fact tests (PROVED from E_1 >= alpha): FP has
+E_1 = omega_min -> 0 and the toron level 1/(2 beta b) -> 0; frozen Q_8 and 2T have E_1 -> 0
+on a fixed box (degenerate flat vectors, check 896 D6, ARGUED rate). So all rivals fail
+(HC-vac) with a box-uniform alpha. (c) By duality (HC-vac) is ||P^m||_(2 -> q) <= 1 with
+q = 1 + e^(2 alpha m), Nelson's and Gross's exponent. In the Hamiltonian limit Gross's theorem
+(classical, RECALLED, not rebuilt) makes it equivalent to a log-Sobolev inequality for nu.
+
+### Step 6 (2026-11-14T07:20Z): proof attempt, stage 2 (entropy level), and the exact stop
+
+Inputs, named.
+  (LSI-vac)_alpha: Ent_nu(h) <= E_nu[ |grad h|^2/h ]/(2 alpha) for smooth gauge-invariant densities h.
+  (SG-step)_sigma: for almost every u and every unit tangent vector z at u, z.G(u, .) is
+  sub-Gaussian under pi_u with variance proxy sigma^2 (E e^(lambda (phi - E phi)) <= e^(lambda^2 sigma^2/2)).
+
+**Theorem E (entropy contraction of the vacuum chain; PROVED GIVEN (LSI-vac), (SG-step); not
+yet checked).** For every gauge-invariant density g with respect to nu:
+  Ent_nu(P g) <= (Theta_H/(1 + Theta_H)) Ent_nu(g),  Theta_H := sigma^2/alpha.
+Proof. (i) Chain rule and stationarity: E_nu[ Ent_(pi_u)(g) ] = Ent_nu(g) - Ent_nu(P g).
+(ii) For a sigma^2-sub-Gaussian phi under pi and h >= 0 with pi-mean m > 0, the entropy
+variational formula gives E_(h pi/m)[phi] - E_pi[phi] <= sqrt(2 sigma^2 Ent_pi(h)/m), so
+Cov_pi(phi, h)^2 <= 2 sigma^2 m Ent_pi(h). (iii) With (5.1): |grad P g(u)|^2 <= 2 sigma^2 (P g)(u)
+Ent_(pi_u)(g). Divide by P g, integrate, use (i): the Fisher information of P g is at most
+2 sigma^2 (Ent_nu(g) - Ent_nu(P g)). (iv) (LSI-vac) for h = P g. QED
+Corollary E1 (PROVED GIVEN the same). The mutual information of two slices at lag s in the
+vacuum chain obeys I(U_0; U_s) <= rho^(s-1) 36 beta |B|, rho = Theta_H/(1 + Theta_H): it reaches
+order one at s of order log |B|.
+Check in one Gaussian mode (by hand): sigma^2 = Var(G) = beta e^(-omega), alpha = gamma = 2 beta sigma,
+so rho = e^(-2 omega), the true entropy rate of that mode.
+
+**Why this does not finish, exactly.** (PROVED) I(U_0; U_s) <= X(2s): for each u,
+Ent(p_s(u, .)) <= log(1 + chi^2_u), then Jensen and (5.3). So Corollary E1 is on the necessary
+side of the seed. The seed needs the chi-square (Renyi-2) information, and a small relative
+entropy does not bound an L^2 norm. The step from Theorem E to (HC-vac) is the L^q form of
+the same argument with a moving exponent. I did not close it: at fixed q > 1 the telescoping
+gives a fixed per-step factor on a quantity that starts at exp(extensive), which is Theorem V
+again; the gain of Proposition HC needs q to grow along the chain, and in discrete time the
+Dirichlet form of P is not the gradient form of (LSI-vac). (RECALLED, not used: a strong
+data-processing constant of a channel gives hypercontractivity only in the limit of large
+exponents, Ahlswede and Gacs 1976.)
+
+**The stop.** Open lemma (E-to-HC), group-blind: (LSI-vac)_alpha and (SG-step)_sigma imply
+(HC-vac)_alpha' with alpha' = c(alpha, sigma) > 0. In the Hamiltonian limit this is Gross's
+theorem with alpha' proportional to alpha. One attempt, one failure point (above). No row owns
+this lemma (Step 2).
+
+**Chain proved in Steps 4-6 (each arrow PROVED unless marked).**
+  (LSI-vac) + (SG-step)  --Theorem E-->  entropy contraction  --(E-to-HC), OPEN-->  (HC-vac)
+  --Proposition HC-->  X(2m + 2) <= 72 beta |B| e^(-2 alpha m)  -->  Form W at a ~ (16 + 3 log a)/alpha.
+  gamma, Gamma^*  --Theorem V-->  E_1 >= (1/2) log(1 + gamma/Gamma^*)   (gap only, no count).

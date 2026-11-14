@@ -1,0 +1,29 @@
+[    0.0s rss    31MB] group=u1 L=4 K=10 m=0 Nt=22 beta=1.5 ntherm=300 nsep=2 nmeas=800 nor=2
+[    0.5s rss    31MB] thermalised, 1.7 ms per sweep
+[    4.8s rss    60MB] meas 80/800: sweep 4 ms/meas, measure 43 ms/meas
+[    9.0s rss    68MB] meas 160/800: sweep 4 ms/meas, measure 43 ms/meas
+[   13.3s rss    75MB] meas 240/800: sweep 4 ms/meas, measure 43 ms/meas
+[   17.5s rss    87MB] meas 320/800: sweep 4 ms/meas, measure 43 ms/meas
+[   21.7s rss    95MB] meas 400/800: sweep 4 ms/meas, measure 43 ms/meas
+[   26.0s rss   102MB] meas 480/800: sweep 4 ms/meas, measure 43 ms/meas
+[   30.2s rss   109MB] meas 560/800: sweep 4 ms/meas, measure 43 ms/meas
+[   34.4s rss   117MB] meas 640/800: sweep 4 ms/meas, measure 43 ms/meas
+[   38.6s rss   124MB] meas 720/800: sweep 4 ms/meas, measure 43 ms/meas
+[   42.8s rss   131MB] meas 800/800: sweep 4 ms/meas, measure 43 ms/meas
+/Users/jonBridger/ym4d-worker2/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane954/rj954.py:547: RuntimeWarning: Mean of empty slice
+  err = np.sqrt((nb-1)/nb*np.nansum((ej-np.nanmean(ej, 0))**2, 0))
+{"args": {"lib": "/tmp/lane954/build/liblgt954.dylib", "group": "u1", "L": 4, "K": 10, "m": 0, "beta": 1.5, "ntherm": 300, "nsep": 2, "nmeas": 800, "nor": 2, "seed": 15004, "out": "/Users/jonBridger/ym4d-worker2/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane954/out/u1_b1.5_L4.json", "tmax": 1000000000.0, "extra_t": 6}, "nmeas": 800, "Nt": 22, "stats_mean": [0.8144287964212823, 0.8099481279548736, 0.7204326092086426, 0.0, 0.0, 0.0], "stats_err": [0.0011845212348199036, 0.0012693325756742817, 0.0014156718277062508, 0.0, 0.0, 0.0], "lag1_trace_m2": {"U0c": -0.09858982144079924, "U0s": 0.05226705708777355, "U1c": -0.016941251637715638, "U1s": 0.047662544356899685, "U0w": 0.3120021729176974}, "ms_per_sweep": 1.7712567746639252, "ms_per_meas": 42.53080755472183, "peak_rss_mb": 202.620928, "wall_s": 42.98432493209839}
+  gap plaq0  Eeff(tau) 4.197+-0.562 nan+-1.125 nan+-5.347 nan+-4.062 nan+-0.000 nan+-0.000
+  gap Bkmin  Eeff(tau) 1.359+-0.008 1.411+-0.048 1.496+-0.220 1.179+-0.668 0.546+-1.372 -0.422+-1.313
+  gap wind   Eeff(tau) 0.120+-0.001 0.107+-0.003 0.106+-0.006 0.108+-0.008 0.112+-0.011 0.117+-0.012
+  U0c  top 0.22880 +- 0.01050 (bias-corrected 0.22552); max single 0.14754
+  U0s  top 0.41234 +- 0.03496 (bias-corrected 0.40292); max single 0.39480
+  U1c  top 0.17490 +- 0.00391 (bias-corrected 0.17437); max single 0.13098
+  U1s  top 0.37142 +- 0.00691 (bias-corrected 0.37017); max single 0.36890
+  U0w  top 4.32521 +- 0.13312 (bias-corrected 4.17208); max single 2.27352
+  extra pair t=6: U0c  top 0.20674 +- 0.01029 (bias-corrected 0.20312)
+  extra pair t=6: U0s  top 0.40233 +- 0.01796 (bias-corrected 0.37924)
+  extra pair t=6: U1c  top 0.17990 +- 0.00373 (bias-corrected 0.17938)
+  extra pair t=6: U1s  top 0.39133 +- 0.00732 (bias-corrected 0.39040)
+  extra pair t=6: U0w  top 4.45800 +- 0.13934 (bias-corrected 4.40552)
+[   43.0s rss   203MB] done

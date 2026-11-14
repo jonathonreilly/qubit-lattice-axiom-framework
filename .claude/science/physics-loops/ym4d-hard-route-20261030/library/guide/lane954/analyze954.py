@@ -36,7 +36,7 @@ def main(d):
     runs = {}
     for f in sorted(glob.glob(os.path.join(d, "*.json"))):
         nm = os.path.basename(f)[:-5]
-        if nm.startswith(("c1_", "c2_", "c5_", "t_")):
+        if nm.startswith(("c1_", "c2_", "c5_", "t_", "glue_")):
             continue
         r = json.load(open(f))
         a = r["args"]

@@ -1,0 +1,22 @@
+[    0.0s rss    37MB] group=su2 L=12 K=10 m=0 Nt=22 beta=2.3 ntherm=3 nsep=2 nmeas=6 nor=2
+[    0.1s rss    37MB] thermalised, 15.7 ms per sweep
+[    0.3s rss   122MB] meas 1/6: sweep 31 ms/meas, measure 144 ms/meas
+[    0.5s rss   162MB] meas 2/6: sweep 31 ms/meas, measure 145 ms/meas
+[    0.7s rss   162MB] meas 3/6: sweep 32 ms/meas, measure 146 ms/meas
+[    0.9s rss   162MB] meas 4/6: sweep 31 ms/meas, measure 146 ms/meas
+[    1.1s rss   162MB] meas 5/6: sweep 31 ms/meas, measure 145 ms/meas
+[    1.4s rss   162MB] meas 6/6: sweep 31 ms/meas, measure 146 ms/meas
+/Users/jonBridger/ym4d-worker2/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane954/rj954.py:547: RuntimeWarning: Mean of empty slice
+  err = np.sqrt((nb-1)/nb*np.nansum((ej-np.nanmean(ej, 0))**2, 0))
+{"args": {"lib": "/tmp/lane954/build/liblgt954.dylib", "group": "su2", "L": 12, "K": 10, "m": 0, "beta": 2.3, "ntherm": 3, "nsep": 2, "nmeas": 6, "nor": 2, "seed": 954, "out": null, "tmax": 1000000000.0, "extra_t": 6}, "nmeas": 6, "Nt": 22, "stats_mean": [0.6060648515505882, 0.6065796714452959, 0.45881310375391626, 0.036737246342922865, 0.0017143662717995962, 5.45299550395182e-06], "stats_err": [0.002041262365781826, 0.003745511722704628, 0.002925894296475526, 0.0014255913775823711, 0.00016760919866372364, 1.62880521612751e-06], "lag1_trace_m2": {"S0e": 0.6245376801573514, "S0o": -0.17488815577331504, "S1e": 0.08316276754637823, "S1o": -0.6410978063592431}, "ms_per_sweep": 15.747567017873127, "ms_per_meas": 145.53161462148032, "peak_rss_mb": 162.93888, "wall_s": 1.3797929286956787}
+  gap plaq0  Eeff(tau) 0.874+-0.366 -0.149+-0.310 0.447+-0.300 -0.080+-0.534 -0.118+-0.245 0.093+-0.354
+  gap wind   Eeff(tau) 2.491+-0.718 nan+-4.830 -0.945+-1.551 nan+-0.000 nan+-0.000 nan+-3.495
+  S0e  top 0.61738 +- 0.30954 (bias-corrected 0.49506); max single 0.20181
+  S0o  top 0.03977 +- 0.00945 (bias-corrected 0.03211); max single 0.02718
+  S1e  top 0.14523 +- 0.03090 (bias-corrected 0.06862); max single 0.08702
+  S1o  top 0.02613 +- 0.00187 (bias-corrected 0.02267); max single 0.02606
+  extra pair t=6: S0e  top 0.43867 +- 0.14976 (bias-corrected 0.19902)
+  extra pair t=6: S0o  top 0.02514 +- 0.01031 (bias-corrected 0.00242)
+  extra pair t=6: S1e  top 0.17928 +- 0.02949 (bias-corrected 0.11335)
+  extra pair t=6: S1o  top 0.02824 +- 0.00368 (bias-corrected 0.02011)
+[    1.4s rss   163MB] done

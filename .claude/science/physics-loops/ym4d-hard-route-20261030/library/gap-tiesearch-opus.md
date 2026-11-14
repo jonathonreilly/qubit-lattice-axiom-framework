@@ -276,14 +276,14 @@ search, and the constant that survives through Lemma SUB is kbar_(s,0) >= about 
 the zero-field value 10.6), as row 970 estimated (53).
 
 **6.2 What the runs show at beta 2.4 (GUIDE).** All three slices taken to L = 16 rise from L = 8 to 16 by factors 1.3 (u_xy), 1.3
-(z-twist pi/2) and about 1.7 (z-twist pi/4, provisional), with chain-to-chain spreads of 20 to 40 percent at L = 16. Per step of 2
-that is 1.06 to 1.14, below the 1.25 of the criterion but not flat. Sides 10 to 14 are single chains and scatter (u_xy: 8.5,
+(z-twist pi/2) and 1.4 (z-twist pi/4; final pooled values, 6.4), with chain-to-chain spreads of 20 to 40 percent at L = 16. Per step of 2
+that is 1.06 to 1.09, below the 1.25 of the criterion but not flat. Sides 10 to 14 are single chains and scatter (u_xy: 8.5,
 12.7, 7.1), so the shape of the rise (logarithmic, a slow power, or a crossover to order above L = 16) is not resolved.
 Row 950's "saturation at about 8" at u_xy rested on one chain each at L = 8, 12; with replicas the L = 16 value is 10.2 +- 1.5.
 Reading: beta 2.4 lies close to the boundary-ordering point that rows 950 and 952 placed near 2.45; the correlation length
 of the colour mode in the boundary layer is comparable to the box. A criterion of 1.25 per step cannot separate "large but
 finite" from "slowly diverging" here. Size through Lemma SUB at the mid-slice: kbar_(s,0) >= 4 beta^2 lambda = 23.0 lambda,
-so at least about 236 (u_xy) and 255 (z-twist pi/2) at L = 16, against the zero-field 2 beta^2 = 11.5: 20 times larger, and
+so at least about 236 (u_xy), 255 (z-twist pi/2) and 255 (z-twist pi/4) at L = 16, against the zero-field 2 beta^2 = 11.5: 20 times larger, and
 not shown to be box-uniform.
 
 **6.3 Limits (both betas).** (i) t = 0 only (Lemma SUB); row 970's 7a found that coupling slices strengthens the order at 2.6,
@@ -307,3 +307,50 @@ bounds the frame-averaged one too; a growing lag-0 value would not by itself ref
 
 - 22:38Z: L = 16 seed 35: 16.32. Pooled now: L = 8 7.97 +- 0.50 (6 chains), L = 16 12.12 +- 2.32 (6 chains); g = 1.110 +- 0.070, g + 2 sigma = 1.251 (INCONCLUSIVE by 0.001). Seeds 36-39 wait for >= 50 percent memory free (47 percent at 22:38Z).
 - 23:04Z: L = 16 seeds 36, 37: 8.78, 10.02 (memory 62-65 percent free at their starts). Seeds 38, 39 running.
+**6.4 beta 2.4: final pooled analysis** (`lane973/analyze.py`, output `lane973/logs/analyze_final.txt`, run 23:28Z after the stop rule
+of 5.4; lock released 23:29Z). Pooled value = mean over independent chains; error = max(propagated block error, chain-to-chain
+standard error).
+
+| slice (value) | L = 8 (chains) | L = 10 | L = 12 | L = 14 | L = 16 (chains) | g = (16/8)^(1/4) | g + 2 sigma | g - 2 sigma |
+|---|---|---|---|---|---|---|---|---|
+| u_xy (lambda_star) | 7.64 +- 0.25 (3) | 8.54 +- 0.73 | 12.69 +- 1.40 | 7.06 +- 0.85 | 10.24 +- 1.51 (3) | 1.076 +- 0.048 | 1.173 | 0.979 |
+| z-twist pi/2 (colour 3) | 8.76 +- 0.87 (2) | 7.92 +- 1.72 | 9.41 +- 2.45 | 13.20 +- 2.60 | 11.08 +- 2.02 (4, one hot) | 1.060 +- 0.075 | 1.210 | 0.911 |
+| z-twist pi/4 (colour 3) | 7.97 +- 0.50 (6) | 8.55 +- 1.23 | 10.12 +- 3.39 | 6.29 +- 0.60 | 11.06 +- 1.49 (10, one hot) | 1.085 +- 0.053 | 1.192 | 0.978 |
+| x-twist pi/2, u_xyyz, twisted u_xyyz, interp (screen, L = 8 and 12) | | | | | | (12/8)^(1/2) = 0.96, 0.96, 0.94, 1.04 (interp connected) | not run at 16 | |
+
+L = 16 chains of z-twist pi/4: 7.05, 14.39 (hot), 10.24, 19.79, 4.96, 16.32, 8.78, 10.02, 12.78, 6.29: the K3 failure of 5.1 was one
+draw of a wide distribution (the hot value lies inside the cold spread 5.0 to 19.8). Sides 10, 12, 14 are single chains and are
+not used in g (Section 2 uses the end points); they scatter within the spread of the L = 16 chains.
+**Verdict at beta 2.4: NOT REFUTED** by the rule of Section 2 on the three slices taken to L = 16 (g + 2 sigma = 1.17, 1.21, 1.19, all
+<= 1.25); the four slices screened on 8 and 12 show no growth. Not a strong pass: every central g is above 1 (1.06 to 1.09 per
+step, i.e. a rise of 1.3 to 1.4 from L = 8 to 16), the margins are 0.04 to 0.08, and before the last batch z-twist pi/4 was
+INCONCLUSIVE (g + 2 sigma 1.375 with 4 chains, 1.251 with 6). The stop rule was fixed before that batch, so the verdict is
+the rule's, but a reader should weigh it as "growth slower than 1.25 per step on sides 8 to 16, not absence of growth".
+
+## 7. Status (step 7)
+
+| Statement | Where | Status |
+|---|---|---|
+| Criteria (REFUTED / NOT REFUTED / INCONCLUSIVE on g = (lambda(16)/lambda(8))^(1/4) against 1.25, 2 sigma) written before any run | 2 | written 16:51Z; two amendments recorded with times, each before the data it governs (mean rule 17:08Z; replica and pooling rules 18:36Z, 18:52Z, 19:35Z; stop rule 22:02Z) |
+| Controls: K1 (row 950's 22.62 at beta 2.6, L = 8): 22.92 +- 0.77, PASS; K2 (0.160): 0.1599, PASS; K3 hot/cold at L = 16: FAIL at 2.3 (u_xy, 23 percent) and for z-twist pi/4 at 2.4 single chains; resolved by replicas at 2.4, not at 2.3 | 3, 5 | GUIDE |
+| Code fix: Kennedy-Pendleton hang at zero staple (row 952's sampler), exact small-kappa sampler added | 3 | checked against exact means |
+| Interp slice: volume growth of the raw structure factor is a non-zero mean (connected value flat 0.5-0.6) | 4.2, 4.6 | GUIDE |
+| beta 2.3: NOT REFUTED (g + 2 sigma 1.10, 1.11, 1.14 on u_xy, z-twist pi/2, z-twist pi/4; 4 more slices flat on 8-12); lambda 2.2 to 2.9; kbar_(s,0) >= about 51 to 61 by Lemma SUB | 5.3, 6.1 | GUIDE |
+| beta 2.4: NOT REFUTED, narrowly (g + 2 sigma 1.17, 1.21, 1.19; central g 1.06 to 1.09 > 1); lambda about 10 to 11 at L = 16; kbar_(s,0) >= about 236 to 255 | 6.4, 6.2 | GUIDE |
+| Box-uniform (TILT-COV-sup) at beta 2.3, 2.4 | | OPEN (a search that finds nothing proves no bound) |
+
+## 8. Result (step 8)
+
+For the lead. (1) Row 970's A1 refutation (beta 2.5, 2.6) does not extend to beta 2.3 or 2.4 on this search: 7 frozen slices of
+reduced symmetry (u_xy, z-twists pi/2 and pi/4, x-twist, u_xyyz, twisted u_xyyz, interpolation), sides 8 to 16, t = 0. (2) At 2.3
+the tie-mode variance is flat (2.2 to 2.9) on every slice; the surviving constant is 5 to 6 times the zero-field value. (3) At 2.4
+it rises slowly on all three slices taken to L = 16 (about 1.3 to 1.4 from L = 8 to 16), below the criterion, with chain-to-chain
+spreads of 30 to 40 percent at L = 16. Row 950's "saturation at 8" at u_xy does not hold up with replicas (10.2 +- 1.5 at L = 16).
+Whether 2.4 saturates or orders above L = 16 is not decided: a proof aimed at a box-uniform constant at 2.4 would be working
+at the edge of the boundary-ordering point near 2.45 that rows 950 and 952 found. (4) If the lead wants to sharpen 2.4: sides
+20 and 24 with at least 6 chains each (about 25 and 45 minutes per chain on this machine), or a t > 0 version with row 970's
+two-slice code; not done here (out of the row's scope).
+Credit: slab code, slice families and the tie-mode observables are row 952's (`lane952/sg2lab.py`); Lemma SUB and the
+criterion are row 970's; the reference values are row 950's.
+
+RESULT: row 973 (GUIDE, Claude Opus 5.5 high, Mac mini; unchecked): box-uniform (TILT-COV-sup) is NOT REFUTED at beta 2.3 (lag-0 tie-mode variance flat at 2.2-2.9 on 7 frozen slices; on the 3 slices taken to L = 16, per-step factor g = 1.003, 0.996, 1.042, each with g + 2 sigma <= 1.14) and NOT REFUTED, narrowly, at beta 2.4 (pooled L = 8 -> 16: u_xy 7.64 -> 10.24, z-twist pi/2 8.76 -> 11.08, z-twist pi/4 7.97 -> 11.06; g = 1.076, 1.060, 1.085, g + 2 sigma = 1.17, 1.21, 1.19 against 1.25); controls K1, K2 pass, K3 failed at 2.3 (23 percent); a box-uniform bound at 2.3-2.4 stays OPEN, and whether 2.4 saturates or orders above L = 16 is undecided.

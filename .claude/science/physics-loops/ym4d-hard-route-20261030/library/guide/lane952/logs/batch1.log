@@ -1,9 +1,9 @@
-start 10:15:30Z System-wide memory free percentage: 71%
-/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane952/batch1.sh:8: no such file or directory: nice python3 -I /Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane952/sg2lab.py
-/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane952/batch1.sh:9: no such file or directory: nice python3 -I /Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane952/sg2lab.py
-/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane952/batch1.sh:10: no such file or directory: nice python3 -I /Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane952/sg2lab.py
-/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane952/batch1.sh:11: no such file or directory: nice python3 -I /Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane952/sg2lab.py
-/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane952/batch1.sh:12: no such file or directory: nice python3 -I /Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane952/sg2lab.py
-/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane952/batch1.sh:13: no such file or directory: nice python3 -I /Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane952/sg2lab.py
-/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane952/batch1.sh:14: no such file or directory: nice python3 -I /Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/library/guide/lane952/sg2lab.py
-BATCH1 done 10:15:30Z
+start 10:18:01Z System-wide memory free percentage: 70%
+xy L4 done 10:18:32Z
+tw L4 done 10:19:03Z
+u1 L4 done 10:19:10Z
+u1 L6 done 10:19:25Z
+tw L6 done 10:20:06Z
+xy L8 done 10:21:09Z
+tw L8 done 10:22:12Z
+BATCH1 done 10:22:12Z

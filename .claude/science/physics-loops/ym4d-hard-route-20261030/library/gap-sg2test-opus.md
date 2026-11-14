@@ -131,3 +131,18 @@ with lags 0, 1, 2, 4, 8, 16, 32, 64.
 (iii) C3: compact U(1), u_xy, beta 2.3, L = 4 and 6 (1000 + 6000; frame chain every 20).
 Reading rule for (ii): the criteria of 1.5 on A_lo (one regressor, split halves) and on the lagged X_3 moment.
 
+**2.4 Code additions before batch 1 ran (10:16Z).** The first launch of batch 1 ran no job (a zsh word-splitting error in
+the runner; nothing was computed). Before the relaunch I added: slice kinds `xyyz` (u_x = 1, u_y = (-1)^x, u_z = (-1)^y:
+flux -1 on xy and yz, +1 on xz; an anisotropic deformation of u_pi, see 3.1), `xyyztwist`, `xtwist` (u_xy with a flat
+colour twist along x), the general proxy Y(plane, sign pattern, holonomy direction), and `--pca3` (raw-moment split-sample
+PCA of the e_3 components of lim C_n, which by 1.4(b) is all of Cov(Ebar) at a twisted slice; 3 L^3 coordinates).
+Smoke runs (under the lock, L = 4, beta 2.6, 600 sweeps, 20 frame chains; not used for any verdict) at phi = pi/2:
+twisted u_xy put the tie mode on e_3 (temporal-gauge raw moments 0.51, 0.87, 11.4 for colours 1, 2, 3) and the lagged
+X_3 moment stayed at 10.7 at lag 64, while X_1 fell from 0.66 to 0.23; Lemma LB gave 4.2. So at L = 4 the frame average
+keeps the e_3 order, as 1.4(e) predicts. Twisted u_xyyz and twisted u_pi gave tie-mode moments of 0.3-0.4 (no order seen
+on the xyz mode at L = 4).
+
+**2.5 Batch 2 plan (fixed at 10:19Z, before batch 1 reported; chained to start when batch 1 ends).** Twisted u_xy (phi = pi/2)
+at beta 2.3 and 2.45, L = 4, 6, 8 (lengths as batch 1, `--pca3`). Twist along x (`xtwist`, proxy with the x-holonomy) at
+beta 2.6, L = 4 and 8. Twist angle phi = pi/4 at beta 2.6, L = 4 and 8. Criteria: those of 1.5, per coupling and per slice.
+

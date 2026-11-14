@@ -19,3 +19,6 @@ traj974 L=20 Nt=24 beta=2.6 ntherm=300 nmeas=1000 nsep=2 seed=21 ape=8,20 tag=b2
 [ 1390.7s rss 863MB] meas 700 plaq 0.67058
 [ 1483.3s rss 863MB] meas 750 plaq 0.66994
 [ 1575.0s rss 863MB] meas 800 plaq 0.67008
+[ 1667.3s rss 863MB] meas 850 plaq 0.66967
+[ 1758.9s rss 863MB] meas 900 plaq 0.67002
+[ 1850.1s rss 863MB] meas 950 plaq 0.67009

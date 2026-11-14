@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/chirality_doublers_navigation_map_check_2026_11_14.py
+runner_sha256: c41489ed3224b936dfaab13a52d9723726e6cbcaf7950ec09a5c6475c9ce21a8
+input_fingerprint_sha256: 030f57e476b95817a56c4307c42b39e53878e35692d5da3fa0e14f00b7e45283
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+Navigation map check: chirality-doublers carried notes
+==============================================================================
+[PASS] the map has 21 'Carried notes' sections, each naming one carried note -- 21
+[PASS] no carried note appears in two sections
+[PASS] each section quotes its carried note's current claim_scope verbatim -- 21 of 21 match
+[PASS] every repository link in the map resolves -- 87 links
+[PASS] control rejects mutant: a quotation with its last word dropped still matches
+
+SUMMARY: PASS=5 FAIL=0
+Scope: the map's quotations, coverage and links. The carried notes' science is checked by their own runners.
+
+----- stderr -----
+

@@ -109,3 +109,37 @@ No change to the sampler or the observables. Lock: holder `gap-tiesearch-973`, a
   tunnel often enough, and that point is flagged "under-sampled" rather than replaced by the connected value (which would
   remove exactly the tie being looked for). This replaces the "connected value" clause of Section 2.
 
+## 4. Screen results (step 4; GUIDE)
+
+**4.1 beta 2.4** (runs 16:54Z to 17:29Z; L = 8: 1500 + 6000 sweeps, L = 12: 2000 + 8000; cold start; errors from 8 blocks).
+Value read: lambda_star (colour mean) for u_xy and u_xyyz; colour 3 for the twisted slices (with lambda_star in brackets).
+
+| slice (mode) | lambda, L = 8 | lambda, L = 12 | ratio 12/8 | screen rule (> 1.2) |
+|---|---|---|---|---|
+| u_xy (xy) | 6.87 +- 0.98 | 6.07 +- 1.01 | 0.88 | no growth (row 950: 8.00, 7.57) |
+| z-twist pi/2, colour 3 (xy) | 12.07 +- 2.50 [6.40] | 8.79 +- 2.03 [6.27] | 0.73 | no growth |
+| z-twist pi/4, colour 3 (xy) | 7.08 +- 1.58 [6.43] | 8.83 +- 1.85 [9.60] | 1.25 (lambda_star 1.49) | passes the screen (noisy) |
+| x-twist pi/2, colour 3 (xy) | 8.82 +- 1.67 [5.52] | 8.18 +- 2.88 [5.82] | 0.93 | no growth |
+| u_xyyz (xyz) | 2.01 +- 0.19 | 1.87 +- 0.20 | 0.93 | no growth |
+| twisted u_xyyz pi/2, colour 3 (xyz) | 2.50 +- 0.55 [1.81] | 2.19 +- 0.30 [1.90] | 0.88 | no growth |
+| interp s = 0.5 (xy) | 0.85 +- 0.10 [0.57] | 1.00 +- 0.09 [0.63] | 1.18 | named mode small; but see 4.2 |
+
+Mean rule: colour-3 means within 3 errors except z-twist pi/4 at L = 12 (4.3 errors) and x-twist at L = 8 (3.3): flagged
+under-sampled (slow tunnelling between the tied states), as fixed at 17:08Z.
+
+**4.2 A flag that is not a tie (interp slice).** The colour-averaged raw structure factor's top eigenvalue at k = (pi, pi, 0)
+(over polarisations) is 5.05 at L = 8 and 16.75 at L = 12 (ratio 3.3, the volume ratio 3.375), on a polarisation other than
+the named mode. This is a RAW moment: the interp slice is fixed only by the colour U(1) exp(alpha k), so the colour-3 mean of E
+need not vanish, and a non-zero staggered mean of E gives |<E_k>|^2 of order L^3 trivially. A mean is not a variance and
+does not enter Lemma SUB. At 17:30Z I added to `tielab.py` the connected structure factor (sample-mean field subtracted;
+outputs `lambda_max_k_conn`, `mean_part_at_kmax`); the interp points at beta 2.4 are re-run with it after the beta 2.3 screen
+(rule, fixed now: if the connected value at L = 12 over L = 8 is > 1.2, the interp slice joins the full sweep on its
+connected top eigenvalue; the orthogonality of that mode to the gauge orbit would then be an open caveat).
+
+**4.3 Plan of the full sweep at beta 2.4 (fixed 17:31Z, before it runs; `lane973/full24.sh`, log `logs/full.log`).**
+Slices: u_xy and z-twist pi/2 (mandatory by Section 2), z-twist pi/4 (passed the screen). Sides 8, 16 first, then 12, 10, 14;
+3000 thermalisation sweeps; 24000, 20000, 16000, 14000, 12000 measured sweeps at L = 8, 10, 12, 14, 16; cold start, seed 11.
+K3: z-twist pi/4 at L = 16 from a hot start (seed 12). Before the sweep: the interp slice at L = 8, 12 with the connected
+structure factor (4.2). The rules of Section 2 decide; g uses lambda(16)/lambda(8) of these long runs only (the screen
+values are not pooled in).
+

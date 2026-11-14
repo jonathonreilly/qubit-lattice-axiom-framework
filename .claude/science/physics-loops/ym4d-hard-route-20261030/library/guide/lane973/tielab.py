@@ -406,6 +406,7 @@ def main():
             slab.sweep()
         res["t_therm"] = time.time() - t0
         X0 = []; Y1 = []; Y2 = []; varc = []; Lam = np.zeros((L, L, L, 3, 3))
+        Esum = None  # row 973: running sum of E for the connected structure factor
         lagX = {n: [] for n in lags}; lagX0 = []
         fullE0 = []; fullEn = []
         nmeas = 0
@@ -422,6 +423,7 @@ def main():
             X0.append(Xa)
             varc.append(float(np.mean(E * E)))
             Ek = np.fft.fftn(E, axes=(1, 2, 3))          # (3 dir, kx, ky, kz, 3 colour)
+            Esum = E.copy() if Esum is None else Esum + E
             Lam += np.einsum("ixyza,jxyza->xyzij", Ek, np.conj(Ek)).real
             if a.slice != "one" and a.slice != "vac" and not a.noproxy:
                 pln = (int(a.yplane[0]), int(a.yplane[1]))
@@ -445,6 +447,14 @@ def main():
         kmax = np.unravel_index(np.argmax(ev), ev.shape)
         res["lambda_max_k"] = float(ev.max()); res["k_of_max"] = [int(v) for v in kmax]
         res["lambda_k0"] = float(ev[0, 0, 0])
+        # row 973: connected structure factor (subtract the sample-mean field), its top eigenvalue and the mean part
+        Ekm = np.fft.fftn(Esum / nmeas, axes=(1, 2, 3))
+        Lm = np.einsum("ixyza,jxyza->xyzij", Ekm, np.conj(Ekm)).real / (3.0 * L ** 3)
+        evc = np.linalg.eigvalsh(Lam - Lm)[..., -1]
+        kc = np.unravel_index(np.argmax(evc), evc.shape)
+        res["lambda_max_k_conn"] = float(evc.max()); res["k_of_max_conn"] = [int(v) for v in kc]
+        res["mean_part_at_kmax"] = float(np.linalg.eigvalsh(Lm[kmax])[-1])
+        res["Emean_colour_rms"] = [float(np.sqrt(np.mean((Esum[..., c] / nmeas) ** 2))) for c in range(3)]
         # tie mode, temporal gauge: raw second moments per colour, and lambda_* = colour mean
         res["X0_raw2"] = [blocks_mean(X0[:, c] ** 2) for c in range(3)]
         res["X0_mean"] = [blocks_mean(X0[:, c]) for c in range(3)]

@@ -14,4 +14,4 @@ for p in sys.argv[1:]:
     mn = "/".join("%.2f" % (v[0] / v[1] if v[1] > 0 else 0) for v in r["X0_mean"])
     print("%-24s b=%s L=%2d X^2[c1/c2/c3]=%s mean/err=%s lam*=%.2f(%.2f) lmaxk=%.2f@%s %.0fs" % (
         os.path.basename(p)[:-5], a["beta"], a["L"], x2, mn, r["lambda_star"][0], r["lambda_star"][1],
-        r["lambda_max_k"], r["k_of_max"], r["seconds"]))
+        r["lambda_max_k"], r["k_of_max"], r["seconds"]) + (" conn=%.2f@%s meanpart=%.2f" % (r["lambda_max_k_conn"], r["k_of_max_conn"], r["mean_part_at_kmax"]) if "lambda_max_k_conn" in r else ""))

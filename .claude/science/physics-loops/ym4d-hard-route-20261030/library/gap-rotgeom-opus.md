@@ -34,6 +34,8 @@ named hypothesis), GUIDE (a run or heuristic; refutes or guides only), OPEN.
 - 2026-11-14T14:40Z: Steps 1-6 written; Step 7 criteria written; the numeric lock is held by row 968's GUIDE batch
   (lease to 16:32Z), so the run waits for the lock. The "done" times of the step headings were removed: I had
   written estimated clock times that were wrong.
+- 2026-11-14T15:33Z: Step 7 run done (lock held 15:32:03Z to 15:33:09Z, memory free 72 percent, peak RSS 0.80 GB,
+  66 s). Results and the final RESULT line written at the end of the file.
 
 ### Step 1. Repo search and sources (done)
 
@@ -434,9 +436,9 @@ projected sectors.
 - C4 (3.3, quarter turn R about an axis): log Tr(V_R e^(-H)) <= 0.02 log Tr e^(-H) at x = 0.25 (the twisted torus
   keeps under 2 percent of the thermal free energy). Fail otherwise.
 
-(Step 7 results are appended below the verdict when the run ends; the run is waiting for the numeric lock.)
+(Step 7 results: see "Step 7 results" after Step 5b below.)
 
-### Step 8. Verdict (written while the Step 7 run waits; the GUIDE can change only the numbers of 3.4 (ii))
+### Step 8. Verdict (drafted while the Step 7 run waited; the run changed no conclusion, only confirmed the corrected numbers)
 
 **Does rotated or diagonal geometry buy anything over the static axis tori? No, not for the seed.**
 
@@ -451,7 +453,8 @@ consumer a weaker input:
    The trivial sector of centre x space group keeps the vacuum, the 0++ at rest, the zero-momentum multi-particle
    continuum, one toron state per orbit (U(1)), and 10 (Q_8) or 7 (2T) frozen flat vectors (3.1, 3.2). So every
    sector form still fails U(1), the frozen groups and SMALL-BOX, as it must. In the dilute free-scalar reading at
-   b = 24 a it needs m a near 7.2 in place of 12 (3.4 (ii), corrected; Step 7 checks it). But the engine needs the
+   b = 24 a it needs m a near 7.15 in place of 12.0 (3.4 (ii), corrected; Step 7 GUIDE: 7.15 and 7.49 for the
+   trivial and the p = 0 sector, 12.0 for the full seed). But the engine needs the
    full trace in both channels, Lemma R5 shows that the step from S_1 back to S costs exactly the weight of the
    other sectors, and the target (GAP) needs the gap at every momentum and angular momentum. Momentum and lattice
    angular momentum give no energy margin (3.3); projection removes the logarithm of the number of populated
@@ -499,6 +502,43 @@ e_mu +- e_lambda") without this proof. The positive transfer steps that reflecti
 therefore e_mu (axis) and e_mu +- e_nu (Lemma D1). A step of one height in a diagonal frame gets no positivity from
 reflection (it is a glide times a positive operator, ARGUED in D1). No light-cone step (along (1, 1, 1, 1)) is positive by reflection.
 
-### Provisional result (2026-11-14T14:43Z; replaced when the Step 7 run ends)
+### Step 7 results (GUIDE; run 2026-11-14T15:32Z-15:33Z under the numeric lock)
 
-RESULT (provisional; Step 7 GUIDE pending the numeric lock): rotated and diagonal geometry buy nothing for the seed over the static axis tori. PROVED: a box rotating in time is a twisted torus, Tr((V_R T)^a) = Tr(V_(R^a) T^a), and only the total twist counts (R2, R3); twisted traces are Fourier coefficients of the sector seeds, S = sum_rho S_rho (R4); Lemma SPLIT holds for any finite symmetry group with its Kazhdan constant (R5); frozen counts 92 (Q_8) and 244 (2T) reproduce p = 10/23 and 30/61, and the trivial sector keeps 10 and 7 frozen vectors; diagonal RP (CA-III, `am1-port.md`) checked by hand on the crossing plaquette; straight tori do not separate (4.3); lattice mirrors have normals e_mu, e_mu +- e_nu only (Lemma M); diagonal tori are sheared axis tori (D2); axis and diagonal infinite-volume gaps agree within a factor 2 per step (D4, given LG1). CONDITIONAL: fully diagonal engine (D3). ARGUED: sector seeds are easier numbers (free scalar, b = 24 a: m a near 7.2 against 12) but have no consumer. OPEN: (LSI-J-seed), (SEED-FP), shape independence, a projected engine.
+Run: `guide/lane963/run_guide.sh` -> `sector_sums.py 192 "0.25,1,...,13"`; log `guide/lane963/sector_sums.log`.
+Lock acquired 15:32:03Z (holder rotgeom963-opus) and released 15:33:09Z; memory free 72 percent; 66 s; peak RSS
+0.80 GB; BLAS threads 1, nice 10. Model and criteria as written above, before the run. Selected rows (b = 24 a):
+
+| x = m a | S (full seed) | S_0 (p = 0) | S_1 (trivial sector) | hand value of 3.4 (ii), corrected |
+|---|---|---|---|---|
+| 6.5 | 2.6e12 | 7.8e5 | 1.6e4 | - |
+| 7.0 | 1.8e8 | 95.3 | 1.99 | S_0 about 106 |
+| 7.25 | 5.4e6 | 3.75 | 0.079 | - |
+| 7.5 | 3.0e5 | 0.285 | 0.0065 | S_0 about 0.37 |
+| 8.0 | 4.0e3 | 7.9e-3 | 5.1e-4 | S_0 = 9.4e-3 |
+| 9.0 | 34.2 | 2.85e-4 | 1.29e-4 | S_0 = 3.2e-4 |
+| 11.5 | 0.500 | 1.09e-5 | 1.02e-5 | - |
+| 12.0 | 0.297 | 6.4e-6 | 6.2e-6 | s(12) = 0.26 |
+| 13.0 | 0.113 | 2.30e-6 | 2.26e-6 | e^(-13) = 2.26e-6 |
+
+Thresholds for 0.3 (log-linear interpolation): full seed x_full = 12.0; p = 0 sector x_0 = 7.49; trivial sector of
+centre x space group x_1 = 7.15. Quarter turn: log Tr(V_R e^(-H))/log Tr e^(-H) = 0.0097 at x = 0.25 (0.0008 to
+0.0013 at x >= 7). Imaginary parts of the projected sums below 6e-15 relative. Ratio S_0/S_1 = 48.0 at x = 6.5,
+as the hand reading "S_1 about S_0/48 when S_0 >> 1" says; for x >= 9 both tend to e^(-x), one particle at rest.
+
+Criteria:
+- C1 PASS: x_full = 12.0 in [11, 13].
+- C2 FAIL, as predicted before the run: x_0 = 7.49, not in [3.5, 5]. The two-particle arithmetic first written in
+  3.4 (ii) was wrong; the corrected hand value 7.55 is within 0.06.
+- C3 FAIL, as predicted: x_1 = 7.15, not in [1.5, 3]; corrected hand value 7.2.
+- C4 PASS: 0.0097 <= 0.02. The quarter-turn twisted torus keeps under 1 percent of the thermal free energy (bulk part
+  1/256 = 0.0039, the rest from the axis).
+
+What the run can establish (GUIDE only): in this model the sector seeds are easier as numbers by about 4.5 to 4.9
+units of m a at the shape b = 24 a, and the point group adds only 0.34 of that; the corrected hand formulas of
+3.4 (ii) are right to about 25 percent. What it cannot establish: anything about SU(2), a consumer for a sector
+seed, or any bound. Row 962's figure "m a of about 6" for a zero-momentum seed (A4) is low by about 1.5 in this
+model (7.49), for the same reason as my first figure: multi-particle zero-momentum states.
+
+### Final result
+
+RESULT: Row 963 (Claude Opus 5.5 max, Mac mini worker 2; not checked by another model): rotated and diagonal geometry buy NOTHING for the seed over the static axis tori, because the seed number is fixed by the measure and the box size, and every rotated or diagonal object is a signed recombination of the same sector sums, a sector projection with no consumer, or the same thermal sum in a rotated frame. PROVED: a box rotating in time is a twisted torus, Tr((V_R T)^a) = Tr(V_(R^a) T^a), and only the total twist counts (Lemmas R2, R3); twisted traces are Fourier coefficients of the sector seeds, S = sum_rho S_rho (R4); Lemma SPLIT holds for any finite symmetry group with the Kazhdan constant of its generators (R5; SPLIT is the case Z_2^3, and the space group loses about 3 b^2/pi^2); frozen counts 92 (Q_8) and 244 (2T) reproduce the lane's p = 10/23 and 30/61, and the trivial sector keeps 10 and 7 frozen flat vectors; diagonal reflection positivity (CA-III L108556-108560, `am1-port.md` Section 3) checked by hand on the crossing plaquette; on straight tori the diagonal mirror does not separate (4.3); the lattice mirrors of Z^d have normals e_mu and e_mu +- e_nu only (Lemma M, for row 967); adapted diagonal tori are sheared axis tori (D2, half-shift identity Z_diag = Z_even - Z_odd); the infinite-volume axis and diagonal gaps agree within a factor 2 per step (D4, given LG1). CONDITIONAL: the fully diagonal engine (D3, on the diagonal trace formula). ARGUED, with GUIDE support: sector seeds are easier as numbers (free scalar at b = 24 a: m a = 7.15 in the trivial sector and 7.49 at p = 0, against 12.0; my first two-particle figures 2.5 and 4.5 were wrong), but no consumer reads them: the engine needs the full trace and (GAP) needs every momentum; momentum and lattice angular momentum give no energy margin. OPEN: (LSI-J-seed) and (SEED-FP) unchanged; box-shape independence for diagonal tori; a projected engine (row 962 ranked item 3).

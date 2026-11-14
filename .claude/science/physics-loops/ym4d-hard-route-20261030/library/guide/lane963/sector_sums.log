@@ -26,3 +26,31 @@ memory free 72%
   8.50  5.44975e+00  2.31701e+02  9.87217e-04  9.87705e-04  2.26423e-04  2.26448e-04    0.00109  2.5e-19
   9.00  3.56197e+00  3.42325e+01  2.85203e-04  2.85244e-04  1.29379e-04  1.29387e-04    0.00104  4.3e-20
  10.00  1.50604e+00  3.50885e+00  6.03166e-05  6.03185e-05  4.61083e-05  4.61094e-05    0.00095  3.3e-21
+ 11.00  6.29281e-01  8.76261e-01  1.86299e-05  1.86300e-05  1.68022e-05  1.68023e-05    0.00087  3.7e-22
+ 11.50  4.05207e-01  4.99613e-01  1.08541e-05  1.08542e-05  1.01686e-05  1.01686e-05    0.00084  1.4e-22
+ 12.00  2.60320e-01  2.97346e-01  6.41971e-06  6.41973e-06  6.15902e-06  6.15904e-06    0.00081  4.9e-23
+ 12.50  1.66882e-01  1.81615e-01  3.83227e-06  3.83228e-06  3.73236e-06  3.73237e-06    0.00078  1.9e-23
+ 13.00  1.06770e-01  1.12678e-01  2.30098e-06  2.30098e-06  2.26253e-06  2.26253e-06    0.00075  7.5e-24
+       65.65 real        54.68 user        10.95 sys
+           799408128  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               50099  page reclaims
+                  12  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   7  voluntary context switches
+                 327  involuntary context switches
+       1183894735161  instructions retired
+        274323408720  cycles elapsed
+           342836280  peak memory footprint
+run ended at 15:33:09Z
+{
+  "lock": null,
+  "status": "released"
+}

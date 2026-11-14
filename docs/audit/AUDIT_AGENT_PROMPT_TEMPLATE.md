@@ -266,6 +266,8 @@ Judge an obstruction as a theorem about an explicit family (owner,
   no more than that.
 - A clean verdict needs both, and no open admissible route inside the
   family. An escape outside the family refutes nothing.
+- Otherwise the verdict records the narrower scope that holds, never the
+  note's own wall list.
 
 The structured `no_go_discipline` (N1-N8) packet is optional for every
 verdict, in both tiers. Its eight checks are prompts for your own judgment: a

@@ -170,7 +170,11 @@ for N in range(1, 8):
     passing.append(N) if ok else None
     print(f"  N={N}: chiral={t['chiral']!s:5} pert-free={t['cubic0']!s:5} Witten-free={not witten[N]!s:5} "
           f"Z16-free={z16[N]!s:5} protected={t['nsym'] == 0!s:5} -> {'PASS' if ok else 'fail'}")
-check(f"G1 smallest N passing (ii)-(iv) WITHOUT using (i) = {passing[0]}; passing set <= 7: {passing}",
+computed_only = [N for N in range(1, 8) if table[N]['cubic0'] and table[N]['nsym'] == 0]
+check(f"G0 computed criteria alone: passing N <= 7 = {computed_only}; the minimum 5 needs the cited Witten criterion",
+      computed_only == [2, 5, 6, 7] and witten[2] and not witten[5])
+check(f"G1 CONDITIONAL on the cited Witten and Z16 criteria: smallest N passing (ii)-(iv) without (i) = {passing[0]}; "
+      f"passing N <= 7: {passing}",
       passing[0] == 5 and passing == [5, 6, 7])
 check("G2 chirality (i) is an OUTPUT at the minimum: N=5 is chiral; N=6 (pseudoreal 32) needs (i) to drop",
       table[5]['chiral'] and not table[6]['chiral'])
@@ -276,7 +280,7 @@ for nm, c in named.items():
     Pc = np.array([c]); s = cluster_stab(Pc)[0]
     t = [(a, int((s & lat).sum())) for a, ok, lat in tilings(Pc, 5) if ok[0]]
     tmax = max([x[1] for x in t], default=0)
-    print(f"  {nm}: cluster stab {s.sum()}/48, tiles Z^3 by {len(t)} index-5 lattices, best tiling stab {tmax}/48")
+    print(f"  {nm}: stab {s.sum()}/48, {len(t)} index-5 tilings, best {tmax}/48")
 check(f"W2 best covariance of ANY 5-site tiling = {best_tile}/48 point operations "
       f"(lopsided by {np.log2(48 / best_tile):.1f} bits)", best_tile < 48)
 star = np.array([[[0, 0, 0], [1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 1], [0, 0, -1]]])
@@ -330,12 +334,17 @@ for t, (a, b) in enumerate(itertools.combinations(range(10), 2)):
     gv[t][a, b], gv[t][b, a] = 1, -1
 K = np.array([np.kron(np.eye(10), A) - np.kron(A.T, np.eye(10)) for A in gv]).reshape(-1, 100)
 dimK = int(sum(np.linalg.svd(K, compute_uv=False) < 1e-9))
-check(f"W5 Spin(10)-invariant couplings between two clusters' Majorana 10-vectors: dim {dimK} (identity only)"
-      " -> mode-diagonal hops along l in L; NN on 3 axes => L = Z^3 => N = 1", dimK == 1)
+check(f"W5 Spin(10)-invariant BILINEAR inter-cluster couplings: dim {dimK} (identity), so such a hop is mode-diagonal"
+      " with displacement in L (interactions not covered)", dimK == 1)
+axes_in = []
+for H in hnf_lattices(5):
+    inL = [bool((reduce(H, np.eye(3, dtype=int)[i]) == 0).all()) for i in range(3)]
+    axes_in.append(sum(inL))
+check(f"W5b the {len(axes_in)} index-5 lattices hold at most {max(axes_in)} axis vectors: NN on at most two axes",
+      max(axes_in) == 2 and len(axes_in) == 31)
 nbr = lambda x: {tuple(np.array(x) + s * e) for e in np.eye(3, dtype=int) for s in (1, -1)}
 cn = max(len(nbr((0, 0, 0)) & nbr(tuple(v))) for v in box if np.array(v).any())
-check(f"W6 two distinct sites share <= {cn} neighbours, so no K(5,5) of NN bonds: a gauge-covariant"
-      " NN inter-cluster hop cannot exist either", cn == 2)
+check(f"W6 two sites share <= {cn} neighbours: no K(5,5) of NN bonds (supplied all-pairs reading)", cn == 2)
 g5f = majoranas(5); ev = np.array([bin(s).count('1') % 2 == 0 for s in range(32)])
 Gp = {k: (0.5j * g5f[k[0]] @ g5f[k[1]])[np.ix_(ev, ev)] for k in itertools.combinations(range(10), 2)}
 Gm = {k: (0.5j * g5f[k[0]] @ g5f[k[1]])[np.ix_(~ev, ~ev)] for k in itertools.combinations(range(10), 2)}
@@ -344,7 +353,7 @@ dpm = int(sum(np.linalg.svd(Mx, compute_uv=False) < 1e-9))
 check(f"W7 inter-cluster pairing S+ x S+: 0 invariants (D5); S+ x S-: {dpm} -> protection needs the SAME parity half"
       " on every cluster, else a Dirac mass", dpm == 1 and table[5]['nsym'] == 0)
 
-print("VERDICT: full Spin(2N) on S+: smallest anomaly-free protected N = 5 (chirality is an output);")
-print("  loopholes: j=3/2 SU(2) at N=3 (cited WWW), finite groups at N=1,2. Clusters of one-mode sites:")
-print("  no covariant 5-tiling, no NN dynamics with exact Spin(10); 5 = per-site multiplicity (bends Qubit).")
+print("CITED, NOT CHECKED: Witten criterion, pi_4(Spin(n)), WWW, Z16 for Spin-Z4, Wang-Wen; indices do not verify them.")
+print("SUMMARY: N = 5 given the cited criteria (G1), N = 2 without Witten's (G0); bilinear hops only (W5-W6).")
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
+sys.exit(1 if FAIL else 0)

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/block_covariance_gives_abelian_or_copy_u2_and_no_register_selects_the_gauge_group_2026_10_21.py
-runner_sha256: a94281b023b93dda15ef03386a90cac6a2995f10326d73899f6d9caf6166abef
+runner_sha256: c9b1088dfea4f65b95bc0c0ceff3c7ecf8c701afcc55c12884f804720807bfac
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.99
+elapsed_sec: 0.83
 status: ok
 ----- stdout -----
 == A. one-body covariance on the 8-corner block (24 rotations about its centre)
@@ -25,7 +25,7 @@ status: ok
 [PASS] D2 dropping vacuum neutrality: the anomaly-free U(1)s form span{Y, B-L} with B-L = 1 - 2 N3/3; the empty register (nu^c) is neutral only for Y  solution dim 2, max X^3 1e-10
    vacuum-neutral anomaly-free U(1) unique and consistent, by split: 1+1:no 2+1:no 3+1:yes 2+2:yes 4+1:yes 3+2:yes 5+1:yes 4+2:yes 3+3:yes
 [PASS] D3 the same holds for every split with p+q in {4,5,6} and fails for p+q <= 3: anomalies plus vacuum neutrality fix the U(1) once a split is given but do not choose 3+2
-[PASS] D4 a block offers no covariant 3+2 split: rotation-invariant mode subspaces of the twisted block have dimension 0, 4 or 8 (8 = C^2 x C^4), and of the plain block 1,1,3,3 summands (no 2, no 5)
+[PASS] D4 corrected (2026-11-14): the twisted block has invariant mode subspaces of dimension 0, 4, 8 only (its 4-dim pieces are irreducible: the rep is C^2 x spin 3/2), so it has no invariant 2, 3 or 5; the plain block is multiplicity-free with irreducible summands 1, 1, 3, 3 (inequivalent 1-dim pieces), so it has invariant subspaces of every dimension 0..8, including 2 = A1+A2 and 5 = A1+A2+T1 (a rotation-invariant 3+2 split). NEGATIVE RESULT kept: the earlier "no 2, no 5" for the plain block is false. Its 2 is reducible (commutant abelian, dim 2), not an irreducible doublet  plain invariant dims [0, 1, 2, 3, 4, 5, 6, 7, 8]; |P W2 - W2 P| and 5-dim: 4e-15; commutant on A1+A2 dim 2, abelian 1e-16; twisted 4-dim piece irreducible <chi,chi> = 1, invariance 2e-15
 == E. Fock-space commutants of the twisted block rotations
    n: (irrep dim, multiplicity) ... 0: 1x1 | 1: 4x2 | 2: 3x4,2x3,1x3,3x2 | 3: 4x10,2x4,2x4 | 4: 3x9,3x7,1x7,2x6 | 5: 4x10,2x4,2x4 | 6: 3x4,2x3,1x3,3x2 | 7: 4x2 | 8: 1x1
 [PASS] E1 many-body sectors carry multiplicities up to 10 (so U(m) commutants with m >= 3 occur); these act on n-particle states, not as one-body transformations of the modes, so they are not minimal-coupling gauge groups and their sizes are counting, not selection
@@ -33,7 +33,7 @@ status: ok
    colour factors (LEP event shapes / 4-jet, Kluth 2006): C_A = 2.89 +- 0.21, C_F = 1.30 +- 0.09; SU(3): 3, 4/3
    neutral-matter tests (|q_n| < 1.5e-21) and MICROSCOPE select Y over B-L for the massless U(1) (agents/charge)
 supplied: block, 24 rotations, spin-3/2 twist (from the CL-3 coin), one mode per corner; link register definition; Fock register, split, even sector as left-handed, vacuum neutrality. Not derived: any gauge group, the split 3+2, chirality, or a carrier for a non-abelian connection under the Qubit axiom.
-elapsed_seconds 0.7
+elapsed_seconds 0.6
 
 TOTAL: PASS=15 FAIL=0
 

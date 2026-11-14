@@ -13,7 +13,7 @@ from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 60
 
-import os, signal, itertools, time
+import os, signal, itertools, sys, time
 os.environ['OPENBLAS_NUM_THREADS'] = '1'
 signal.signal(signal.SIGALRM, lambda *a: (_ for _ in ()).throw(TimeoutError('cap exceeded')))
 signal.setitimer(signal.ITIMER_REAL, AUDIT_TIMEOUT_SEC - 2)
@@ -305,9 +305,41 @@ print('   vacuum-neutral anomaly-free U(1) unique and consistent, by split: '
 check('D3 the same holds for every split with p+q in {4,5,6} and fails for p+q <= 3: anomalies plus vacuum '
       'neutrality fix the U(1) once a split is given but do not choose 3+2',
       all(o for p, q, o in split if p + q >= 4) and not any(o for p, q, o in split if p + q <= 3))
-check('D4 a block offers no covariant 3+2 split: rotation-invariant mode subspaces of the twisted block have '
-      'dimension 0, 4 or 8 (8 = C^2 x C^4), and of the plain block 1,1,3,3 summands (no 2, no 5)',
-      len(ct) == 4 and zdim == 1 and len(cp) == 4)
+# D4 (corrected 2026-11-14): invariant mode subspaces, computed.
+# Plain block: multiplicity-free, so the invariant subspaces are exactly the sums of summands.
+wq, Qp = np.linalg.eigh(Hp)
+summands = []
+i0 = 0
+while i0 < 8:
+    j0 = i0
+    while j0 + 1 < 8 and abs(wq[j0 + 1] - wq[i0]) < 1e-8: j0 += 1
+    summands.append(Qp[:, i0:j0 + 1]); i0 = j0 + 1
+irr_p = [round(sum(abs(np.trace(B.conj().T @ P @ B)) ** 2 for P in PERM) / 24) for B in summands]
+chars_p = [tuple(np.round([np.trace(B.conj().T @ P @ B).real for P in PERM], 6)) for B in summands]
+inv_dims_p = sorted({sum(B.shape[1] for B, s in zip(summands, sel) if s)
+                     for sel in itertools.product((0, 1), repeat=len(summands))})
+one_d = [B for B in summands if B.shape[1] == 1]; three_d = [B for B in summands if B.shape[1] == 3]
+W2 = np.hstack(one_d); W5 = np.hstack(one_d + three_d[:1])
+inv_err = max(np.linalg.norm(P @ W @ W.conj().T - W @ W.conj().T @ P) for P in PERM for W in (W2, W5))
+c2 = commutant([W2.conj().T @ P @ W2 for P in PERM], 2)
+ab2 = max(comm_norm(x, y) for x in c2 for y in c2)
+# twisted block: rep = C^2 x (spin 3/2), so invariant subspaces are W x C^4: dimensions 0, 4, 8
+rd4 = np.random.default_rng(44)               # own stream: E below keeps its seeded draws
+Ht = sum(rd4.normal() * (x + x.conj().T) for x in ct)
+wt_, Qt = np.linalg.eigh(Ht)
+Bt4 = Qt[:, :4]
+irr_t = round(sum(abs(np.trace(Bt4.conj().T @ V @ Bt4)) ** 2 for V in TWIST) / 24)
+inv_t = max(np.linalg.norm(V @ Bt4 @ Bt4.conj().T - Bt4 @ Bt4.conj().T @ V) for V in TWIST)
+check('D4 corrected (2026-11-14): the twisted block has invariant mode subspaces of dimension 0, 4, 8 only (its '
+      '4-dim pieces are irreducible: the rep is C^2 x spin 3/2), so it has no invariant 2, 3 or 5; the plain block '
+      'is multiplicity-free with irreducible summands 1, 1, 3, 3 (inequivalent 1-dim pieces), so it has invariant '
+      'subspaces of every dimension 0..8, including 2 = A1+A2 and 5 = A1+A2+T1 (a rotation-invariant 3+2 split). '
+      'NEGATIVE RESULT kept: the earlier "no 2, no 5" for the plain block is false. Its 2 is reducible (commutant '
+      'abelian, dim 2), not an irreducible doublet',
+      inv_dims_p == list(range(9)) and irr_p == [1] * 4 and len(set(chars_p)) == 4 and inv_err < 1e-10
+      and len(c2) == 2 and ab2 < 1e-10 and irr_t == 1 and inv_t < 1e-10 and len(ct) == 4,
+      f'plain invariant dims {inv_dims_p}; |P W2 - W2 P| and 5-dim: {inv_err:.0e}; commutant on A1+A2 dim {len(c2)}, '
+      f'abelian {ab2:.0e}; twisted 4-dim piece irreducible <chi,chi> = {irr_t}, invariance {inv_t:.0e}')
 
 # ===================== E. many-body commutants =====================
 print('== E. Fock-space commutants of the twisted block rotations')
@@ -350,3 +382,4 @@ print('supplied: block, 24 rotations, spin-3/2 twist (from the CL-3 coin), one m
       'the split 3+2, chirality, or a carrier for a non-abelian connection under the Qubit axiom.')
 print(f'elapsed_seconds {time.time() - T0:.1f}')
 print(f'\nTOTAL: PASS={PASS} FAIL={FAIL}')
+sys.exit(1 if FAIL else 0)

@@ -1,7 +1,7 @@
 ---
 claim_id: five_mode_cones_carry_the_spin10_vector_and_separated_sixteen_cones_evade_the_composite_partner_bounded_theorem_note_2026-10-22
 claim_type: bounded_theorem
-claim_scope: "Re-poses the chirality wall with the cone rule (isolated Weyl cones, chirality sign det J, charges summing to zero) and five fermion modes per site. (A, exact) On a five-mode site every fermionic operator is a Spin(10) tensor (adjoint Casimir p(10-p) = 9, 21, 25, never the spinor 45/4), the only Spin(10)-invariant hop is the Majorana-vector identity, so any invariant free band is H_orb(k) x 1_10 and its cones carry the real vector 10, which has an invariant mass; such a Majorana band has zero-energy SURFACES (det H real), not cones. The 16 is the site's Fock space, not a propagating multiplet, so 'a 16 per cone' is false for the five-mode reading. (B) In the 16-component reading (one band h(k) x 1_16, a supplied spinor-index field): Spin(10) on the 16 is free of the perturbative and Z16 anomalies and has exactly one charge-4 invariant with the two-component cone slot; with low-energy constituents, a light-mirror hybridisation with any mirror composite is allowed by crystal momentum plus the centre Z4 iff the two cones share a quarter point; a range-one cube-averaged field has form factor exactly 0 at R and maximal at K, so a charge-4 mirror term on a band with cones at K and R never touches the light R cone at any order. Generic cones sit O(1) from quarter points, so the charge-4 term's first-order projection averages out; a small local change moves pinned cones by O(eps), an open (not tuned) condition. Dynamics of the Spin(10) mirror (whether it gaps symmetrically) is not computed. Supplied models; free-band and symmetry level."
+claim_scope: "Re-poses the chirality wall with the cone rule (isolated Weyl cones, chirality sign det J, charges summing to zero) and five fermion modes per site. (A, exact) On a five-mode site every fermionic operator is a Spin(10) tensor (adjoint Casimir p(10-p) = 9, 21, 25, never the spinor 45/4), the only Spin(10)-invariant hop is the Majorana-vector identity, so any invariant free band is H_orb(k) x 1_10 and its cones carry the real vector 10, which has an invariant mass; such a Majorana band has real det H; in the seeded random bands tested its zero sets behave as surfaces (finite diagnostic), but a real determinant does not force a surface: the witness H(k) = sin kx s_x + sin ky s_z + (2 - cos kx - cos ky - cos kz) s_y (times 1_10) is an invariant Majorana band with only the two point zeros (0, 0, +-pi/2). The 16 is the site's Fock space, not a propagating multiplet, so 'a 16 per cone' is false for the five-mode reading. (B) In the 16-component reading (one band h(k) x 1_16, a supplied spinor-index field): Spin(10) on the 16 is free of the perturbative and Z16 anomalies and has exactly one charge-4 invariant with the two-component cone slot; with low-energy constituents, a light-mirror hybridisation with any mirror composite is allowed by crystal momentum plus the centre Z4 iff the two cones share a quarter point; a range-one cube-averaged field has form factor exactly 0 at R and maximal at K, so a filtered charge-4 mirror term has no component on the exact Fourier mode R; it is nonzero at R + q (|F| = sqrt8 prod|sin(q_i/2)|), so the decoupling of the light cone's neighbourhood at finite interaction order is not proved. In the seeded generic band tested the cones sit 0.25 to 1.09 from quarter points, so the charge-4 term's first-order projection averages out there; in one seeded local change of size 0.05 the pinned cones moved by 0.049 and 0.065 and kept their chiralities (finite diagnostic). Dynamics of the Spin(10) mirror (whether it gaps symmetrically) is not computed. Supplied models; free-band and symmetry level."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -15,11 +15,19 @@ upstream_dependencies:
 runner: scripts/five_mode_cones_carry_the_spin10_vector_and_separated_sixteen_cones_evade_the_composite_partner_2026_10_22.py
 ---
 
-# Five-mode cones carry the Spin(10) vector; separated 16 cones evade the composite partner
+# Five-mode cones carry the Spin(10) vector; for a supplied 16-component field, separated cones evade the composite partner at the selection-rule level
 
-Claim type: bounded_theorem. Runner: runner.py (TOTAL: PASS=11 FAIL=0, 2.7 s, peak 210 MB; stdout 4682
-characters). It was run through scripts/runner_cache.execute_runner under a unique filename (status ok).
-The minimal axioms are unchanged, and the register carries no premise weight.
+Claim type: bounded_theorem.
+Primary runner: `scripts/five_mode_cones_carry_the_spin10_vector_and_separated_sixteen_cones_evade_the_composite_partner_2026_10_22.py`.
+It ends with `TOTAL: PASS=12 FAIL=0` and exits nonzero if any check fails. The minimal axioms are unchanged, and the register carries no premise weight.
+
+Local labels and sources (2026-11-14). why-five-modes is [#10014](FIVE_MODES_PER_SITE_ARE_THE_SMALLEST_ANOMALY_FREE_PROTECTED_SPIN2N_CONTENT_BOUNDED_THEOREM_NOTE_2026-10-22.md); site-so10 is [#9894](RUNG_ONE_CELL_REGISTER_CARRIES_THE_ONE_GENERATION_MULTIPLET_PATTERN_BOUNDED_THEOREM_NOTE_2026-10-21.md). why-three-dims (the cone rule, #10013), light-partner-gap, block-quartic-smg, momentum-selective-mirror (#9994, #10004), ax7-chirality-16weyl, qmc-face-gapped, toy-qmc and zeros-ghosts are not in this repository; they are recorded only in the consolidation map, and what this note quotes from them is a historical reported result, unverified here. The cone rule is used as a supplied premise.
+
+## Corrections (2026-11-14)
+
+- A4 held that a real determinant forces zero-energy surfaces. It does not: the witness in A4 has only two point zeros. The random-band result is now a finite diagnostic of the samples.
+- B5 held that a filtered charge-4 term never touches the light R cone at any order. The filter vanishes exactly at R only; it is nonzero at R + q. The statement is narrowed to the exact Fourier mode R.
+- B6 printed the light-cone filter weight with each factor divided by sqrt8, unlike the displayed product divided by sqrt8 once; the value was 8 times too small. It is corrected below.
 
 ## Question
 
@@ -53,13 +61,20 @@ places them at other momenta, so a momentum-local term can tell the two apart. T
 
   The "protection" in why-five-modes is a statement about the Fock content. It does not transfer to cone
   content.
-- A4. The invariant band is a Majorana band, H(-k) = -H(k)*. Its determinant is real, so zero-energy sets have
-  codimension 1. In 4 of 4 random four-orbital bands, sign-change counts scale as n^2 (ratio 4.0-4.2 from
-  n = 12 to 24), which is the signature of a surface. A five-mode Spin(10)-invariant band gives Majorana Fermi
-  surfaces, not cones. Cones sit only at codimension-3 crossings away from zero energy.
+- A4. The invariant band is a Majorana band, H(-k) = -H(k)*, so its determinant is real. Where det H changes sign,
+  the zero set has codimension 1. In 4 of 4 seeded random four-orbital bands det H changes sign, and the
+  sign-change counts scale as n^2 (ratio 4.0-4.2 from n = 12 to 24), as for a surface (finite diagnostic of
+  these samples).
+- A4w. Negative result kept: a real determinant does not force a surface, because det H can vanish without
+  changing sign. Witness: H(k) = sin kx s_x + sin ky s_z + (2 - cos kx - cos ky - cos kz) s_y. It is a
+  range-one real Majorana hopping (Fourier coefficients A_R real with A_-R = -A_R^T), obeys H(-k) = -H(k)*,
+  and has only the two zeros (0, 0, +-pi/2), each with Jacobian determinant +-1; det H = -|d|^2 <= 0 never
+  changes sign. H x 1_10 commutes with every Spin(10) vector generator, so it is an invariant five-mode band
+  with two isolated zero-energy cones of the vector 10. The witness is from the hold of 2026-11-13; the runner
+  checks it.
 
-**Verdict on (0): NO.** With five modes per site, the cone rule and Spin(10) protection do not combine: the
-cones carry a real 10. "A full 16 per cone" needs a spinor-index fermion field, 16 complex components per
+**Answer to (0): NO.** With five modes per site, the cone rule and Spin(10) protection do not combine: any
+cone of an invariant free band carries the real vector 10 (A3), whether it sits at zero energy or not (A4w). "A full 16 per cone" needs a spinor-index fermion field, 16 complex components per
 orbital (32 per site with the two-component cone slot). That is a different and larger bend of the Qubit
 axiom, and why-five-modes does not derive it. Its Z16 selection (2^(N-1) = 0 mod 16) counts Fock states. A
 field-content analogue would have to be a separate theorem. The composite-before-atomic principle makes this
@@ -76,7 +91,8 @@ are psi^+ psi x 1_16 (16bar x 16 contains a singlet and 16 x 16 does not), so th
   - First-order projection of a translation-invariant charge-4 term onto a cone,
     ell^-3 sum_x exp(4i(k - Q).x) at ell = 16: <= 0.08, and mostly < 1e-3.
 
-  So **separation is generic, but a generic cone is not where the SMG term acts.** At weak and intermediate
+  So in this seeded band **the cones are separated, but none sits where the SMG term acts** (finite diagnostic
+  of one band). At weak and intermediate
   coupling, the charge-4 term oscillates away on any cone far from a quarter point. At strong coupling (g >> t)
   the band no longer matters, but the overlapping filtered term was seen to pair-order there (qmc-face-gapped,
   toy-qmc).
@@ -100,28 +116,35 @@ are psi^+ psi x 1_16 (16bar x 16 contains a singlet and 16 x 16 does not), so th
 
   So the K mirror alone is anomaly-free, and its SMG term exists and is unique. Translation acts trivially on it.
 - B5. Locality: the cube-averaged field (one 2x2x2 cube, the zoom kernel) has form factor
-  prod(1 + e^{ip_i})/sqrt8. That is exactly 0 at R (overlap 7e-33) and maximal at K. A charge-4 term in
-  filtered fields therefore never contains a light R mode, at any order and any volume. The light cone at R
-  is exactly free. This is the exactness that B3 alone lacks: B3 assumes the composite's constituents sit near
-  their cones, and strongly bound composites spread over the zone. For a generic light node kL the range-one
+  F(p) = prod(1 + e^{ip_i})/sqrt8. That is exactly 0 at R (overlap 7e-33 on L = 4) and maximal at K. A
+  charge-4 term in filtered fields therefore contains no component on the exact Fourier mode R, at any order
+  and any volume. It does contain the modes near R: |F(R + q)| = sqrt8 prod|sin(q_i/2)| (3.53e-05 at
+  q = (0.1, 0.05, 0.02)), so a light cone, which is a neighbourhood of R, is not shown to be free. Whether the
+  interaction effects of those nearby modes stay small at finite order is not proved. B3 assumes the
+  composite's constituents sit near their cones; B5 removes that assumption only for the exact mode R. For a generic light node kL the range-one
   complex filter prod(1 - e^{i(p - kL)})/2 vanishes at kL and is nonzero at the mirror (0.016 here). Momentum
   selection never needs non-locality.
-- B6. Genericity: a random local change of maximum size 0.05 to the pinned band, including the identity part,
-  keeps both chiralities and moves the cones by 0.049 (mirror) and 0.065 (light).
-  - The SMG term is detuned only by 4|dk_M|. A gapped phase survives a small perturbation, so the condition is
-    4 v |dk_M| << Delta_mirror: an open set, not a tuned point.
-  - The light cone gets filter weight 2.3e-6 (about prod |dk_i|): highly irrelevant.
+- B6. Genericity (one seeded perturbation, finite diagnostic): a random local change of maximum size 0.05 to the
+  pinned band, including the identity part, kept both chiralities and moved the cones by 0.049 (mirror) and
+  0.065 (light).
+  - The SMG term is detuned by 4|dk_M|. If a mirror gap Delta_mirror exists (not computed) and survives a small
+    perturbation (supplied), the condition is 4 v |dk_M| << Delta_mirror, an open set rather than a tuned point.
+  - The light cone's filter weight is |F(R + dk)| = sqrt8 prod|sin(dk_i/2)| = 1.83e-05 here, with the displayed
+    normalisation (corrected 2026-11-14; the held value 2.3e-6 divided each factor by sqrt8). It is small, not
+    zero.
   - The node energies split by 0.030. A Spin(10)-singlet psi_L^+ psi_L chemical potential is allowed, so the
     light cone carries a Fermi pocket. That is not a mass, but it is a relevant term that nothing pins.
 - B7. Contrast (exact algebra): with same-momentum pairing w, a symmetric mirror whose propagator has a zero
   releases the light mode it was gapping (|G_l(i 1e-3)| 0.016 -> 1067). With separated cones, translation sets
   w(k_L) = 0, so nothing was paired and nothing is released. The light cone is the isolated Weyl node itself.
 
-**Verdicts.**
-- (1) YES at the symmetry and anomaly level, for the 16-component field. A range-one filtered charge-4 term acts
-  on the K mirror and exactly not on the R light cone, and the K mirror alone is anomaly-free.
+**Answers.**
+- (1) YES at the symmetry and anomaly level, for the supplied 16-component field. A range-one filtered charge-4
+  term acts on the K mirror and has no component on the exact mode R; the K mirror alone is anomaly-free. The
+  modes near R are not shown decoupled.
 - (2) YES, at the free and selection-rule level. Separation in momentum by a nonzero quarter-point difference
-  removes the composite-partner channel (B3), and the zero of the filter makes the decoupling exact (B5). The
+  removes the composite-partner channel for constituents near their cones (B3), and the zero of the filter
+  removes the exact mode R (B5). The light cone's neighbourhood is open. The
   earlier failures were same-momentum pairings. With one band there is no separate "light partner": the
   opposite-chirality partner of the light cone is the mirror.
 - (3) The cone rule's generic cones sit away from quarter points, so the escape needs the mirror cone near a
@@ -154,7 +177,9 @@ Result: **FAIL on (2)**, so the rule is not adopted. The momentum mechanism itse
 
 - Supplied: the 16-component field in part B, the KW band, r = 1, the unimodular map, the cube filter, eps, L,
   ell and the seeds.
-- Forced: A1-A4 (exact representation theory), B3 (selection rule), B4 (counts and indices), B5 (filter zero).
+- Forced: A1-A3 (exact representation theory), A4w (witness), B3 (selection rule), B4 (counts and indices), B5
+  (filter zero at the exact mode R).
+- Finite diagnostics: A4 (random bands), B1 (one seeded band), B6 (one seeded perturbation).
 
 ## Re-posed wall (for the register)
 
@@ -164,12 +189,14 @@ Chirality wall, after CONE + 5 modes:
 - (ii) Placement: the mirror cone must sit near a quarter point and the light cone away from it.
 - (iii) Dynamics: a symmetric gap for the 16 mirror at K. This is open.
 
-Separation itself is not the obstruction any more.
+At the selection-rule level and for the exact node mode, separation is not the obstruction. Whether the light
+cone's neighbourhood stays decoupled at finite interaction order is open.
 
 ## Boundary
 
 Free bands plus exact representation theory only. Not computed:
 - the interacting Spin(10) dynamics;
+- the interaction effects of the modes near R, where the filter is nonzero;
 - gauge links (a covariant filter smears the zero at R when the gauge field is rough);
 - antiunitary symmetries;
 - the light-cone chemical potential.
@@ -179,8 +206,10 @@ Literature (Wang-Wen on the 16, Golterman-Shamir) is cited, not rederived.
 
 ## Used / narrowed
 
-- Used: why-three-dims (CONE), why-five-modes, site-so10 (items 8 and 9, A4), light-partner-gap,
-  block-quartic-smg, momentum-selective-mirror, ax7-chirality-16weyl, qmc-face-gapped.
+- Used: why-three-dims (CONE, supplied), [why-five-modes](FIVE_MODES_PER_SITE_ARE_THE_SMALLEST_ANOMALY_FREE_PROTECTED_SPIN2N_CONTENT_BOUNDED_THEOREM_NOTE_2026-10-22.md),
+  [site-so10](RUNG_ONE_CELL_REGISTER_CARRIES_THE_ONE_GENERATION_MULTIPLET_PATTERN_BOUNDED_THEOREM_NOTE_2026-10-21.md) (items 8 and 9, A4), light-partner-gap,
+  block-quartic-smg, momentum-selective-mirror, ax7-chirality-16weyl, qmc-face-gapped (recorded only in the
+  consolidation map; historical reported results, unverified here).
 - Narrows why-five-modes: its Spin(10) protection applies to Fock content and not to cone content.
 - Supports the PR #9994 and #10004 momentum-selective route at the selection-rule level.
 - Related, not checked: PR #10022 (family-count-5mode).

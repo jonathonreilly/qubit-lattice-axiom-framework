@@ -16,6 +16,7 @@ E. Which protected, anomaly-free multiplets can emergent fermions form (fermion
    parity is gauged because fermions are string ends)? Table + exact checks.
 Supplied/cited items are listed at the end. Seeded; dense matrices <= 32x32.
 """
+import sys
 import time
 import itertools
 import numpy as np
@@ -394,11 +395,20 @@ check("D1 [T]", any(c != 0 for c in Cs) and sum(jumps) == 0 and sum(abs(j) for j
 
 # ------------------------------------------------------ E. multiplet selection
 print("== E. which protected anomaly-free multiplets can emergent fermions form?")
-zn = [m for m in range(2, 13, 2) if (2 * 1) % m != 0]
-check("E1 [T]", zn[0] == 4,
-      "emergent fermions are string ends, so fermion parity is an element of the emergent gauge group; "
-      "the smallest cyclic group forbidding every Majorana mass of odd-charge Weyl fermions is Z4",
-      f"Z_n (n even, charge 1) forbidding psi psi: {zn[:3]}...")
+def masses_allowed(m, charges):
+    """Majorana bilinears psi_i psi_j (i <= j, self-mass when i == j) neutral under Z_m."""
+    return [(a, b) for i, a in enumerate(charges) for b in charges[i:] if (a + b) % m == 0]
+
+
+zn_uni = [m for m in range(2, 13, 2) if not masses_allowed(m, [1])]
+mixed = masses_allowed(4, [1, 3])
+mixed8 = masses_allowed(8, [1, 3])
+check("E1 [T]", zn_uni[0] == 4 and mixed == [(1, 3)] and mixed8 == [],
+      "narrowed 2026-11-14: with fermion parity as the order-2 element of an even cyclic group (supplied reading: "
+      "emergent fermions are string ends), the smallest Z_m forbidding every Majorana mass of a UNIFORM-charge content "
+      "(all Weyl fermions of charge 1, supplied) is Z4. NEGATIVE RESULT kept: odd charges 1 and 3 in Z4 admit the "
+      "neutral mixed bilinear psi_1 psi_3, so 'every odd-charge content' is false; Z8 forbids it",
+      f"uniform charge 1: smallest forbidding m {zn_uni[0]}; Z4 with charges {{1, 3}}: allowed {mixed}; Z8: {mixed8}")
 
 
 def spinj(j):
@@ -429,16 +439,19 @@ for twoj in range(1, 16, 2):
     j = twoj / 2
     forms = inv_forms(spinj(j))
     prot = "S" not in forms
-    witten = round(2 * j * (j + 1) * (2 * j + 1) / 3) % 2 == 1
+    widx = 2 * np.trace(spinj(j)[2] @ spinj(j)[2]).real
+    witten = round(widx) % 2 == 1
     new = (twoj - 3) % 8 == 0
-    okE2 &= prot
+    okE2 &= prot and (witten == ((twoj - 1) % 4 == 0))
     rows.append((twoj, int(2 * j + 1), witten, new))
-surv = [r for r in rows if not r[2] and not r[3]]
-check("E2 [T+C]", okE2 and surv[0][0] == 7,
-      "SU(2) spin j (half-integer): no symmetric invariant, so G alone forbids masses; Witten (j=2r+1/2) "
-      "and the new SU(2) anomaly (j=4r+3/2, cited WWW, applies since fermion parity is the centre) remove "
-      "j=1/2,3/2,5/2: the SMALLEST consistent protected irreducible multiplet is j=7/2, 8 Weyl, not 16",
+check("E2 [T]", okE2,
+      "SU(2) spin j (half-integer, 2j = 1..15): no symmetric invariant bilinear, so the group alone forbids masses; "
+      "the computed index 2 Tr J3^2 is odd exactly for j = 2r + 1/2",
       "2j:dim " + " ".join(f"{a}:{b}{'W' if w else ''}{'N' if nw else ''}" for a, b, w, nw in rows))
+surv = [r for r in rows if not r[2] and not r[3]]
+print(f"CONDITIONAL (cited, not counted): reading an odd index as Witten's anomaly and applying the cited "
+      f"Wang-Wen-Witten rule j = 4r + 3/2 (which needs fermion parity to be the centre), the smallest surviving "
+      f"protected irreducible multiplet is 2j = {surv[0][0]} (j = 7/2, 8 Weyl, not 16)")
 
 # Spin(10) 16 from 5 fermion modes (composite: 5 modes = 5 sites)
 sz = np.diag([1.0, -1.0]); sm = np.array([[0, 1.0], [0, 0]]); I2 = np.eye(2)
@@ -471,10 +484,10 @@ check("E3 [T]", len(forms16) == 0 and dmax < 1e-10 and cen and abs(np.trace(T16 
       "Spin(10) 16 built from 5 modes (a 5-site cluster, composite): no invariant bilinear (masses forbidden), "
       "cubic anomaly 0, central element exp(i pi Q) acts as i on the 16 (the Z4); SU(16) fundamental is anomalous",
       f"invariant forms {len(forms16)}, max|d_abc| {dmax:.1e}, centre^2 = {zc[0,0]**2:.0f}, Tr T^3 SU(16) {np.trace(T16**3):.0f}")
-check("E4 [C]", True,
-      "cited classification: simple groups with a 16-dim irrep are SU(2) j=15/2 (pseudoreal), Sp(4) (pseudoreal), "
-      "Spin(9) (real), SO(16) (real), Sp(16) (pseudoreal), SU(16) (complex, anomalous), Spin(10) (complex, "
-      "anomaly-free): Spin(10) is the only complex anomaly-free one, but 'complex' and 'dim 16' are selector choices")
+print("CITED, NOT CHECKED (not counted): E4 classification: simple groups with a 16-dim irrep are SU(2) j=15/2 "
+      "(pseudoreal), Sp(4) (pseudoreal), Spin(9) (real), SO(16) (real), Sp(16) (pseudoreal), SU(16) (complex, "
+      "anomalous), Spin(10) (complex, anomaly-free): Spin(10) is the only complex anomaly-free one, but 'complex' and "
+      "'dim 16' are selector choices")
 F = {"Q": (6, 1 / 3, 1 / 6), "u^c": (3, -1 / 3, -2 / 3), "d^c": (3, -1 / 3, 1 / 3), "L": (2, -1, -1 / 2),
      "e^c": (1, 1, 1), "nu^c": (1, 1, 0)}
 Xc = {k: 5 * bl - 4 * y for k, (m, bl, y) in F.items()}
@@ -483,17 +496,19 @@ nu16 = sum(m for k, (m, _, _) in F.items())
 nu15 = nu16 - 1
 y3 = sum(m * y ** 3 for k, (m, _, y) in F.items())
 y1 = sum(m * y for k, (m, _, y) in F.items())
-check("E5 [E+C]", odd1 and nu16 % 16 == 0 and nu15 % 16 != 0 and abs(y3) < 1e-12 and abs(y1) < 1e-12,
-      "measured content: X = 5(B-L) - 4Y is 1 mod 4 on all 16 Weyl of a family incl. nu^c, so the measured "
-      "family is a Z4-protected multiplet with nu = 16 = 0 mod 16 (Spin-Z4 bordism Z16, cited); without nu^c "
-      "nu = 15 is anomalous: Z4 protection REQUIRES nu^c",
+check("E5 [T on supplied content]", odd1 and nu16 % 16 == 0 and nu15 % 16 != 0 and abs(y3) < 1e-12 and abs(y1) < 1e-12,
+      "SUPPLIED content (the measured 15 Weyl of one family plus a supplied singlet nu^c, which is not measured): "
+      "X = 5(B-L) - 4Y is 1 mod 4 on all 16, so the supplied content is a uniform-charge Z4 multiplet with nu = 16; "
+      "without nu^c the count is 15. Reading nu mod 16 as the Spin-Z4 anomaly is the cited Z16 bordism (not checked)",
       f"X charges {dict((k, round(v)) for k, v in Xc.items())}; sum Y^3 {y3:.0e}, sum Y {y1:.0e}")
 
 print(f"elapsed_seconds {time.time() - T0:.1f}")
 print("supplied: the cell-complex role assignment, the star/plaquette/ice energy functions, the BKSF ordering, "
-      "the RK equal-weight ensemble, the Gaussian reading, the random two-band hop; [E] uses measured charges.")
+      "the RK equal-weight ensemble, the Gaussian reading, the random two-band hop, the uniform-charge content of E1; "
+      "E5 uses the measured 15 charges of one family plus a supplied nu^c.")
 print("cited: Kitaev toric code; Bravyi-Kitaev 2002; Levin-Wen PRB 67 245316 (2003); Wen PRD 68 065003 (2003); "
       "Hermele-Balents-Fisher PRB 69 064404; Chandrasekharan-Wiese 1997; Nielsen-Ninomiya; Witten 1982; "
       "Wang-Wen-Witten 1810.00844; Garcia-Etxebarria-Montero 1808.00009; Wang-Wen 1809.11171; main BKSF and "
       "Majorana-per-direction notes (2026-10-17), spin-half cubic ice RK note (2026-09-03), SU(N) link 2N-state note.")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+sys.exit(1 if NF else 0)

@@ -17,6 +17,7 @@ F. one vacuum subtraction vs the old double subtraction
 G. hanging-face interface: patch tests and cavity spectrum under refinement
 Labels: [T] exact check, [D] finite diagnostic of a supplied model, [E] estimate.
 """
+import sys
 import time
 import itertools
 import numpy as np
@@ -485,8 +486,8 @@ for N in (1, 2, 3):
     resC.append((N, ec, errs))
     memcheck()
 ok = all(r[2][0] < 0.03 and 3.0 < r[2][1] / r[2][0] < 5.5 and 1.8 < r[2][2] / r[2][1] < 3.0 for r in resC)
-check(ok, "[T/D] C1 magnetic part: sum over block edges of (1/(g^2 B_f T)) Re tr(1 - U_loop) -> (1/2) int B^a B^a with "
-      "the full Yang-Mills F = dA - dA + i g [A, A]; error falls as B_f^2 (ratios near 4 and 9/4 for B_f = 1, 2, 3; field wavelengths 24 cells)",
+check(ok, "[D] C1 magnetic part, tested fields only: sum of (1/(g^2 B_f T)) Re tr(1 - U_loop) approaches (1/2) int B^a B^a "
+      "with the Yang-Mills F; error ratios near 4, 9/4 at B_f = 1, 2, 3 (three meshes prove no order)",
       "; ".join(f"{'U(1)' if r[0] == 1 else f'SU({r[0]})'}: rel err {r[2][0]:.1e}, {r[2][1]:.1e}, {r[2][2]:.1e}"
                 for r in resC))
 
@@ -506,8 +507,33 @@ shares = [nonab_share(N) for N in (2, 3)]
 check(min(shares) > 0.05, "[D] C2 the test fields are genuinely non-abelian: the commutator changes the continuum "
       "magnetic energy by", f"SU(2) {shares[0]:.0%}, SU(3) {shares[1]:.0%} (C1 tests the Yang-Mills term)")
 
-# electric part: face value Phi^a = B_f^2 E^a(face centre)/g, energy (g^2/(2 B_f T)) tr Phi^2
-resE = []
+# electric part (narrowed 2026-11-14). Face value DEFINED as the sample Phi^a = B_f^2 E^a(face centre)/g (a supplied
+# definition, not the flux integral); energy (g^2/(2 B_f T)) tr Phi^2. For trigonometric-polynomial fields this is a
+# quadrature identity: it is exact when no nonzero sum or difference of two field frequencies is a multiple of the
+# grid's n = Lbox/B_f points per axis (here |k +- k'|_i <= 2 in units of 2 pi/Lbox, so n >= 3 suffices).
+gl_x, gl_w = np.polynomial.legendre.leggauss(6)
+
+
+def face_energy(Ef, Bf, TR, mode):
+    n = Lbox // Bf
+    xs = np.stack(np.meshgrid(*[np.arange(n) * Bf] * 3, indexing="ij"), -1).astype(float)
+    el = 0.0
+    for i in range(3):
+        e = np.zeros(3); e[i] = Bf / 2
+        if mode == "sample":
+            Phi = Bf ** 2 * Ef(xs + e)[..., i, :, :] / gc
+        else:                                   # flux integral over the B_f x B_f face, Gauss-Legendre 6 x 6
+            j1, j2 = [a for a in range(3) if a != i]
+            Phi = 0.0
+            for u, wu in zip(gl_x, gl_w):
+                for v, wv in zip(gl_x, gl_w):
+                    off = e.copy(); off[j1] += Bf / 2 * (1 + u); off[j2] += Bf / 2 * (1 + v)
+                    Phi = Phi + (Bf / 2) ** 2 * wu * wv * Ef(xs + off)[..., i, :, :] / gc
+        el += gc ** 2 / (2 * Bf * TR) * tr(Phi @ Phi).sum()
+    return el
+
+
+resE, resF = [], []
 for N in (1, 3):
     TR = 1.0 if N == 1 else 0.5
     Ef, _ = field(N, 0.1, 99 + N)
@@ -516,17 +542,19 @@ for N in (1, 3):
     Ex = Ef(x)
     ecE = 0.5 * sum(tr(Ex[..., i, :, :] @ Ex[..., i, :, :]).sum() for i in range(3)) / TR * (Lbox / 12) ** 3
     for Bf in (2, 3):
-        n = Lbox // Bf
-        xs = np.stack(np.meshgrid(*[np.arange(n) * Bf] * 3, indexing="ij"), -1).astype(float)
-        el = 0.0
-        for i in range(3):
-            e = np.zeros(3); e[i] = Bf / 2
-            Phi = Bf ** 2 * Ef(xs + e)[..., i, :, :] / gc
-            el += gc ** 2 / (2 * Bf * TR) * tr(Phi @ Phi).sum()
-        resE.append(abs(el / ecE - 1))
-check(max(resE) < 1e-10, "[T] C3 electric part: (g^2/(2 B_f T)) sum_faces tr Phi^2 with Phi = flux through the face "
-      "in units of g equals (1/2) int E^a E^a exactly for band-limited fields (U(1), SU(3); B_f = 2, 3)",
-      f"max rel dev {max(resE):.1e}")
+        resE.append(abs(face_energy(Ef, Bf, TR, "sample") / ecE - 1))
+        resF.append(abs(face_energy(Ef, Bf, TR, "flux") / ecE - 1))
+    if N == 1:
+        alias = abs(face_energy(Ef, 12, TR, "sample") / ecE - 1)      # n = 2: 2k aliases to 0
+check(max(resE) < 1e-10 and alias > 1e-3,
+      "[T] C3 electric part with the SUPPLIED sampled face value Phi = B_f^2 E(centre)/g: (g^2/(2 B_f T)) sum tr Phi^2 = "
+      "(1/2) int E^a E^a exactly for the tested fields when no frequency sum or difference aliases (B_f = 2, 3); control: "
+      "B_f = 12 aliases 2k to 0",
+      f"max rel dev {max(resE):.1e}; aliased control B_f = 12: {alias:.2e}")
+check(min(resF) > 1e-5 and 1.8 < resF[1] / resF[0] < 2.8,
+      "[D] C3b NEGATIVE RESULT kept: with flux-integral face values (sinc factors) the electric energy is NOT exact; "
+      "the deviation grows like B_f^2 for the tested fields",
+      f"U(1) rel dev B_f = 2, 3: {resF[0]:.2e}, {resF[1]:.2e} (ratio {resF[1]/resF[0]:.2f}); SU(3): {resF[2]:.2e}, {resF[3]:.2e}")
 
 
 # ================================================================= D. harmonic photon on the B_f lattice
@@ -645,8 +673,8 @@ for gname in ("U1", "SU2", "SU3"):
         cuts = (0.5, 1, 1.5, 2, 3, 6, 10)
     rows.append((gname, [(c, loop_gap(gname, c, G2[gname])[0] / ref) for c in cuts]))
 conv = all(abs(r[1][-1][1] - 1) < 1e-3 for r in rows if r[0] != "U1") and abs(rows[0][1][-1][1] - 1) < 2e-2
-check(conv, "[D] E2 small S distorts the loop's levels (CL-3's dressed-coupling clause, not the bare Hodge product, then sets the cone); truncation at measured-scale couplings (supplied g^2 = 4 pi alpha: 1/137, 0.0338, 0.118): "
-      "gap / untruncated gap by register size (U(1): |E| <= S; SU(N): reps up to j or p+q; supplied reading of S)",
+check(conv, "[D] E2 small S distorts the loop's levels; single-loop truncation at supplied g^2 = 4 pi alpha (1/137, 0.0338, "
+      "0.118): gap / untruncated gap by register size (supplied reading of S)",
       "; ".join(f"{r[0]} " + " ".join(f"{c}:{v:.2f}" for c, v in r[1]) for r in rows))
 
 
@@ -763,12 +791,11 @@ mc_ = [r[3].mean() for r in res]
 mu_ = [r[2].mean() for r in res]
 dhc = [r[5] for r in res]
 check(dh[0] / dh[1] > 3.0 and 1.4 < dhc[0] / dhc[1] < 2.6 and all(a <= b for a, b in zip(mh_, mc_)),
-      "[D] G2 cavity (torus 4x4x8 in child units, half split; 72 then 576 blocks): the lowest 21 modes converge to "
-      "the c = 1 continuum as all blocks halve (second order overall); the B_z excess is a first-order term (its effect, "
-      "against the same mesh with it removed by rescaling the first child layer's normal-edge loops, falls about linearly); removal "
-      "does not improve the spectrum, so the plain h/A, l/S rule is kept",
+      "[D] G2 cavity (4x4x8 child units, half split; 72, 576 blocks): the lowest 21 modes move toward c = 1 at the two "
+      "sizes tested (no order proved); the B_z excess acts at first order; removing it does not help",
       f"max rel dev scale 1 -> 2: {dh[0]:.3f} -> {dh[1]:.3f} (ratio {dh[0]/dh[1]:.2f}); excess effect "
       f"{dhc[0]:.4f} -> {dhc[1]:.4f} (ratio {dhc[0]/dhc[1]:.2f}); mean dev plain {mh_[0]:.3f}, {mh_[1]:.3f}; "
       f"removed {mc_[0]:.3f}, {mc_[1]:.3f}; all-child torus {mu_[0]:.3f}, {mu_[1]:.3f}")
 print(f"elapsed_seconds {time.time()-T0:.1f}, peak RSS {rss():.0f} MB")
 print(f"TOTAL: PASS={NP[0]} FAIL={NP[1]}")
+sys.exit(1 if NP[1] else 0)

@@ -1,22 +1,30 @@
 AUDIT_INPUT_PATHS = ('docs/DEFINITE_STATIONARY_LINKS_GIVE_CLASSICAL_COULOMB_COLOUR_FLAT_VACUUM_ONE_BODY_MATTER_AND_UNDECAYING_LEVELS_BOUNDED_THEOREM_NOTE_2026-10-22.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
 #!/usr/bin/env python3
-"""definite-links: what CL-3's definite (stationary, actual-configuration) links give
-for colour and light, against measurement; and what quantum links give instead.
+"""definite-links: what a supplied Cartan / pure-gauge definite-link ansatz gives for colour
+and light, with estimates against measurement; and what quantum links give instead.
+
+Scope (narrowed 2026-11-14): the colour and vacuum statements are about the SUPPLIED ansatz
+(spatial links pure gauge, A_0 in one Cartan, occupation-basis charges). They are not
+statements about every definite stationary link configuration: A5 and C2 are explicit
+witnesses that product unitarity does not give |tr W|/3 = 1 and that a sourceless stationary
+point need not be flat. Estimates against measurement print as non-counted ESTIMATE lines.
 
 Sections
- A  [T] definite SU(3) links with a static quark pair: exact Cartan (U(1)^2) Coulomb
-        stationary point; bounded static energy -> string tension 0; |W| = 1.
+ A  [T] supplied ansatz with a static quark pair: Cartan sources commute (control: a rotated
+        source does not), exact lattice Gauss law, bounded static energy, every Wilson loop of a
+        pure-gauge configuration has normalised trace 1; [W] witness U = diag(1, w, w^2).
  B  [D] contrast: fluctuating SU(2) links (3D Euclidean heat bath) give an area law.
- C  [T] vacuum standard -> definite vacuum links flat -> Q_top = 0, chi_top = 0;
-    [E] Witten-Veneziano eta' and the Weinberg bound.
- D  [E] alpha_s running: matter loops only (definite links) vs gluon + quark loops.
- E  [T] definite links make every history's fermion update one-body: Slater stays Slater;
-        no mediator entanglement (two charged qubits) vs quantum link mode.
- F  [T/E] spontaneous emission: stationary odds -> transport stays -> no source -> no decay;
-        quantised link: hydrogen 2p lifetime from Wigner-Weisskopf; classical g2 >= 1.
- G  [E] Lamb shift and a_e with and without the photon propagator.
+ C  [T] the flat (pure-gauge) vacuum is a sourceless stationary point with F = 0;
+    [W] a uniform Cartan flux is a sourceless stationary point with F != 0.
+ D  [E] alpha_s running: matter loops only (c-number links) vs gluon + quark loops (not counted).
+ E  [T] c-number links make every history's fermion update one-body: Slater stays Slater;
+        no mediator entanglement for the supplied coupling vs a quantum link mode.
+ F  [T] stationary odds -> fewest-change plan is the identity (control: unequal odds);
+        classical g2 >= 1 (control: a one-photon Fock state); [E] decay estimates (not counted).
+ G  [E] Lamb shift and a_e with and without the photon propagator (not counted).
 """
 import os
+import sys
 os.environ.setdefault("OMP_NUM_THREADS", "1")
 os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
 import time
@@ -39,20 +47,45 @@ def check(tag, ok, msg, extra=""):
     print(f"[{'PASS' if ok else 'FAIL'}] [{tag}] {msg}" + (f" | {extra}" if extra else ""))
 
 
+def estimate(msg, extra=""):
+    """A comparison with measurement from supplied constants: printed, not counted."""
+    print(f"ESTIMATE (not counted): {msg}" + (f" | {extra}" if extra else ""))
+
+
 rng = np.random.default_rng(20261022)
 
 # ---------------------------------------------------------------- A
-print("== A. definite SU(3) links, static quark pair (CL-3 stationary point)")
+print("== A. supplied ansatz: spatial links pure gauge, A_0 in one Cartan, static quark pair")
 wr = np.array([0.5, 0.5 / np.sqrt(3)])
 wg = np.array([-0.5, 0.5 / np.sqrt(3)])
 wb = np.array([0.0, -1 / np.sqrt(3)])
 lam3 = np.diag([1, -1, 0]) / 2.0
 lam8 = np.diag([1, 1, -2]) / (2 * np.sqrt(3))
-ok = np.allclose(lam3 @ lam8, lam8 @ lam3)
-check("T", ok and np.allclose(wr + wg + wb, 0),
-      "occupation-basis colour charges are weights in one Cartan; with A_i = 0, A_0 in the Cartan, every "
-      "commutator in the Yang-Mills equations vanishes: the abelian Coulomb field is an exact stationary point "
-      "(a q-qbar pair has parallel charges +-w for ANY colour orientation)")
+
+
+def qmat(w):
+    return w[0] * lam3 + w[1] * lam8
+
+
+def comm_max(mats):
+    return max(np.abs(a @ b - b @ a).max() for a in mats for b in mats)
+
+
+# A_0(x) = sum_c Q_c G(x - x_c) on sample points; every commutator of A_0 values (and so of the
+# Coulomb electric field E = -grad A_0) is a combination of [Q_c, Q_c'].
+ra = np.random.default_rng(5)                 # own stream: the heat bath below keeps its seeded draws
+Gs = ra.random((6, 2))                        # sample Green-function values at 6 points, 2 sources
+srcs = [qmat(wr), -qmat(wr)]                   # quark colour r, antiquark anti-r
+A0 = [Gs[i, 0] * srcs[0] + Gs[i, 1] * srcs[1] for i in range(6)]
+c_cart = comm_max(A0)
+Hm = ra.normal(size=(3, 3)) + 1j * ra.normal(size=(3, 3)); Hm = Hm + Hm.conj().T
+g_rot = expm(1j * Hm)
+A0r = [Gs[i, 0] * srcs[0] + Gs[i, 1] * (g_rot @ srcs[1] @ g_rot.conj().T) for i in range(6)]
+c_rot = comm_max(A0r)
+check("T", c_cart < 1e-14 and np.allclose(wr + wg + wb, 0) and c_rot > 1e-3,
+      "A1 on the supplied ansatz (A_i pure gauge, A_0 in one Cartan) all commutators of A_0 values vanish: the "
+      "Coulomb field is a stationary point (uniqueness NOT shown); control: a source rotated out of the Cartan",
+      f"max |[A_0(x), A_0(y)]| Cartan {c_cart:.0e}, rotated source {c_rot:.2f}")
 L = 48
 k = 2 * np.pi * np.fft.fftfreq(L)
 KX, KY, KZ = np.meshgrid(k, k, k, indexing="ij")
@@ -71,17 +104,65 @@ phi = np.real(np.fft.ifftn(np.fft.fftn(rho) * Gk))
 E = [phi - np.roll(phi, -1, axis=a) for a in range(3)]
 div = sum(E[a] - np.roll(E[a], 1, axis=a) for a in range(3))
 gres = np.max(np.abs(div - rho))
-check("T", gres < 1e-10, "lattice Gauss law holds exactly for the Cartan Coulomb field; links pure gauge, "
-      "every plaquette = 1 (no magnetic energy)", f"max residual {gres:.1e}")
+check("T", gres < 1e-10, "A2 lattice Gauss law holds exactly for the Cartan Coulomb field of the ansatz",
+      f"max residual {gres:.1e}")
 X = np.vstack([np.ones(8), 1 / Rs[2:10], Rs[2:10]]).T
 coef, *_ = np.linalg.lstsq(X, V[2:10], rcond=None)
 check("T", V.max() < q2 * G[0, 0, 0] + 1e-12 and dev < 0.03,
-      "definite-link static energy is bounded by the self-energy at every separation and is Coulomb, "
-      "-g^2|w|^2/(4 pi R) = -alpha_s/(3R) (quantum one-gluon: -4 alpha_s/(3R))",
+      "A3 on the ansatz the static pair energy is bounded by the self-energy at every separation and is "
+      "Coulomb, -g^2|w|^2/(4 pi R) = -alpha_s/(3R) (quantum one-gluon: -4 alpha_s/(3R)); zero string "
+      "tension for this configuration",
       f"V/g^2 = {V[0]:.4f}..{V[-1]:.4f}, bound {q2*G[0,0,0]:.4f}, Coulomb dev {dev:.1%}, "
       f"fitted sigma a^2/g^2 = {coef[2]:.1e} (finite box)")
-check("T", True, "a definite link configuration has |W(C)| = 1 for every loop (a product of unitaries, no "
-      "average): no area law; measured sqrt(sigma) = 440 MeV, definite links give 0 at every coupling")
+
+
+def rand_su3(r):
+    h = r.normal(size=(3, 3)) + 1j * r.normal(size=(3, 3)); h = h + h.conj().T
+    u = expm(1j * h)
+    return u / np.linalg.det(u) ** (1 / 3)
+
+
+def wilson_traces(Ux, Uy, Rr, Tt):
+    """normalised traces of all Rr x Tt loops in the xy plane of a 2D periodic slice."""
+    Lw = Ux.shape[0]
+    out = []
+    for x in range(Lw):
+        for y in range(Lw):
+            M = np.eye(3, dtype=complex)
+            for i in range(Rr):
+                M = M @ Ux[(x + i) % Lw, y]
+            for j in range(Tt):
+                M = M @ Uy[(x + Rr) % Lw, (y + j) % Lw]
+            for i in range(Rr - 1, -1, -1):
+                M = M @ Ux[(x + i) % Lw, (y + Tt) % Lw].conj().T
+            for j in range(Tt - 1, -1, -1):
+                M = M @ Uy[x, (y + j) % Lw].conj().T
+            out.append(np.trace(M) / 3)
+    return np.array(out)
+
+
+Lw = 5
+rg = np.random.default_rng(11)
+gsite = [[rand_su3(rg) for _ in range(Lw)] for _ in range(Lw)]
+Ux = np.array([[gsite[x][y] @ gsite[(x + 1) % Lw][y].conj().T for y in range(Lw)] for x in range(Lw)])
+Uy = np.array([[gsite[x][y] @ gsite[x][(y + 1) % Lw].conj().T for y in range(Lw)] for x in range(Lw)])
+Wpg = {key: wilson_traces(Ux, Uy, *key) for key in ((1, 1), (1, 2), (2, 2))}
+dev_pg = max(np.abs(v - 1).max() for v in Wpg.values())
+creutz_pg = -np.log(np.mean(Wpg[(2, 2)]).real * np.mean(Wpg[(1, 1)]).real / np.mean(Wpg[(1, 2)]).real ** 2)
+check("T", dev_pg < 1e-12 and abs(creutz_pg) < 1e-12,
+      "A4 every Wilson loop of a pure-gauge configuration (the ansatz's spatial links) has normalised "
+      "trace exactly 1, so its Creutz ratio is exactly 0: no area law for this configuration",
+      f"5^2 slice, random gauge: max |tr W/3 - 1| {dev_pg:.0e}, chi22 {creutz_pg:.0e}")
+om = np.exp(2j * np.pi / 3)
+Uw = np.diag([1, om, om ** 2])
+Ux_w = Ux.copy(); Ux_w[0, 0] = Ux_w[0, 0] @ Uw
+W11w = wilson_traces(Ux_w, Uy, 1, 1)
+check("W", abs(np.linalg.det(Uw) - 1) < 1e-12 and np.abs(Uw.conj().T @ Uw - np.eye(3)).max() < 1e-12
+      and abs(np.trace(Uw)) / 3 < 1e-12 and np.abs(W11w).min() < 1e-12,
+      "A5 NEGATIVE RESULT kept: product unitarity does not give |W| = 1; U = diag(1, w, w^2) in SU(3) has "
+      "tr U/3 = 0, and on one link of the pure-gauge slice it gives plaquettes of normalised trace 0",
+      f"|det U - 1| {abs(np.linalg.det(Uw) - 1):.0e}, |tr U|/3 {abs(np.trace(Uw))/3:.0e}, "
+      f"min |tr P/3| on the modified slice {np.abs(W11w).min():.0e}")
 
 # ---------------------------------------------------------------- B
 print("== B. contrast: fluctuating SU(2) links, 3D Euclidean heat bath (quantum links)")
@@ -178,20 +259,45 @@ Wm = {key: np.mean(v) for key, v in meas.items()}
 chi22 = -np.log(Wm[(2, 2)] * Wm[(1, 1)] / Wm[(1, 2)] ** 2)
 chi33 = -np.log(Wm[(3, 3)] * Wm[(2, 2)] / Wm[(2, 3)] ** 2)
 check("D", chi22 > 0.05 and chi33 > 0.0,
-      "fluctuating links (a path sum over link odds) give an area law, Creutz ratios > 0; the definite-link "
-      "value is exactly 0",
+      "B1 fluctuating links (a path sum over link odds) give an area law, Creutz ratios > 0; the pure-gauge "
+      "ansatz value is exactly 0 (A4)",
       f"SU(2) 3D 8^3 beta={betaB}: W11={Wm[(1,1)]:.3f} W22={Wm[(2,2)]:.3f} chi22={chi22:.3f} chi33={chi33:.3f}")
 
 # ---------------------------------------------------------------- C
-print("== C. vacuum links, topology and the eta'")
-check("T", True, "vacuum standard (vacuum odds subtracted at the same configuration) -> no vacuum source -> "
-      "definite vacuum links are flat: F = 0, Q_top = 0 in every history, chi_top = 0, no gluon condensate")
+print("== C. sourceless stationary links: the flat one, and a non-flat witness")
+# C1: the pure-gauge slice above has every plaquette = 1, so F = 0 and the Wilson-action force
+# (traceless antihermitian part of U x staple) vanishes: a sourceless stationary point.
+Pl = []
+for x in range(Lw):
+    for y in range(Lw):
+        Pl.append(Ux[x, y] @ Uy[(x + 1) % Lw, y] @ Ux[x, (y + 1) % Lw].conj().T @ Uy[x, y].conj().T)
+fdev = max(np.abs(P_ - np.eye(3)).max() for P_ in Pl)
+check("T", fdev < 1e-12,
+      "C1 the flat (pure-gauge) configuration has every plaquette = 1 (F = 0): a sourceless stationary point; "
+      "that the definite vacuum is this one is a supplied selection (C2)", f"max |P - 1| {fdev:.0e}")
+# C2: uniform abelian flux on a periodic L x L slice, embedded in the Cartan as diag(e^{ia}, e^{-ia}, 1)
+Lf, nflux = 6, 1
+thf = 2 * np.pi * nflux / Lf ** 2
+axf = np.zeros((Lf, Lf)); ayf = np.zeros((Lf, Lf))
+for x in range(Lf):
+    ayf[x, :] = thf * x
+axf[Lf - 1, :] = -thf * Lf * np.arange(Lf)
+Pf = np.array([[axf[x, y] + ayf[(x + 1) % Lf, y] - axf[x, (y + 1) % Lf] - ayf[x, y]
+                for y in range(Lf)] for x in range(Lf)])
+Pf = (Pf + np.pi) % (2 * np.pi) - np.pi
+# Wilson action S = sum_P (1 - cos theta_P) per Cartan component; dS/da_link = sum_P s sin(theta_P)
+fx = np.array([[np.sin(Pf[x, y]) - np.sin(Pf[x, (y - 1) % Lf]) for y in range(Lf)] for x in range(Lf)])
+fy = np.array([[-np.sin(Pf[x, y]) + np.sin(Pf[(x - 1) % Lf, y]) for y in range(Lf)] for x in range(Lf)])
+force = max(np.abs(fx).max(), np.abs(fy).max())
+check("W", force < 1e-12 and np.abs(Pf - thf).max() < 1e-12 and thf > 0.1,
+      "C2 NEGATIVE RESULT kept: a sourceless stationary point need not be flat; a uniform Cartan flux on a "
+      "periodic L x L slice has zero Wilson-action force, no source and F != 0",
+      f"L = {Lf}: plaquette angle {thf:.4f} everywhere, max |force| {force:.0e}")
 mpi, mK, meta, metap, fpi = 138.0, 495.6, 547.9, 957.8, 92.2
 chi_need = fpi ** 2 * (metap ** 2 + meta ** 2 - 2 * mK ** 2) / (2 * 3)
-check("E", abs(chi_need ** 0.25 - 180) < 10,
-      "Witten-Veneziano needs chi_top^(1/4) ~ 180 MeV (lattice 179); definite links give 0, leaving "
-      "m_eta' <= sqrt(3) m_pi = 239 MeV (Weinberg) against 957.8 measured",
-      f"chi^(1/4) needed {chi_need**0.25:.0f} MeV")
+estimate("Witten-Veneziano needs chi_top^(1/4) ~ 180 MeV (lattice 179); the flat ansatz gives 0, leaving "
+         "m_eta' <= sqrt(3) m_pi = 239 MeV (Weinberg) against 957.8 measured",
+         f"chi^(1/4) needed {chi_need**0.25:.0f} MeV (supplied PDG masses, f_pi)")
 
 # ---------------------------------------------------------------- D
 print("== D. alpha_s running: which loops definite links keep")
@@ -205,10 +311,9 @@ MZ, mb, mtau = 91.1876, 4.18, 1.777
 aZ = 0.1180
 aq = run(run(aZ, MZ, mb, 11 - 10 / 3), mb, mtau, 11 - 8 / 3)
 ac = run(run(aZ, MZ, mb, -10 / 3), mb, mtau, -8 / 3)
-check("E", abs(aq - 0.314) < 0.04 and ac < aZ,
-      "gluon loops need link fluctuations; matter loops alone give b0 = -2nf/3: alpha_s FALLS toward low "
-      "energy, no asymptotic freedom, no Lambda_QCD, no dimensional transmutation of the proton mass",
-      f"alpha_s(m_tau): quantum 1-loop {aq:.3f}, definite links {ac:.3f}, measured 0.314(14)")
+estimate("gluon loops need link fluctuations; matter loops alone give b0 = -2nf/3: alpha_s falls toward low "
+         "energy, no asymptotic freedom, no Lambda_QCD",
+         f"alpha_s(m_tau): quantum 1-loop {aq:.3f}, matter loops only {ac:.3f}, measured 0.314(14)")
 print("   QED differs: its one-loop beta is matter loops only, so the sea gives alpha's running in c-number")
 print("   fields; photon lines enter at two loops (relative ~3 alpha/4pi)")
 
@@ -246,8 +351,9 @@ e2 = rdm_eigs(expm(-1j * 1.3 * (H1 + 2.0 * Hint)) @ psi0)
 idem1 = np.max(np.minimum(np.abs(e1), np.abs(1 - e1)))
 idem2 = np.max(np.minimum(np.abs(e2), np.abs(1 - e2)))
 check("T", idem1 < 1e-10 and idem2 > 1e-2,
-      "with c-number links each history's fermion update is one-body: a Slater determinant stays one "
-      "(1-RDM idempotent); link-mediated two-body terms correlate",
+      "E1 conditional lemma: if c-number links enter only through bilinear hop phases and potentials, each "
+      "history's fermion update is one-body and a Slater determinant stays one (1-RDM idempotent); control: "
+      "a link-mediated two-body term correlates",
       f"max non-idempotency: one-body {idem1:.1e}, with mediated n n term {idem2:.2f}")
 nb = 30
 a = np.diag(np.sqrt(np.arange(1, nb)), 1)
@@ -277,26 +383,46 @@ for z1 in (1, -1):
         Ud = expm(-1j * 2 * np.pi * phic * gq * Zs)
         Cd.append(concurrence(Ud @ np.kron(plus, plus)))
 check("T", Cq > 0.5 and max(Cd) < 1e-12,
-      "a quantised link mode entangles two charges (mediator back in its vacuum); a definite link sourced by "
-      "the actual configuration gives a product of one-body phases in every history: no entanglement. "
-      "Measured: Coulomb-mediated ion gates and Rydberg blockade make Bell states at fidelity > 0.99",
-      f"concurrence quantum {Cq:.3f} (mediator purity {purity_med:.3f}), definite {max(Cd):.1e}")
+      "E2 for the supplied coupling Zs = Z x 1 + 1 x Z, a quantised link mode entangles two charges (mediator "
+      "back in its vacuum); a c-number link fixed by the actual configuration gives a product of one-body "
+      "phases in every history: no entanglement",
+      f"concurrence quantum {Cq:.3f} (mediator purity {purity_med:.3f}), c-number {max(Cd):.1e}")
 
 # ---------------------------------------------------------------- F
-print("== F. spontaneous emission and antibunching")
+print("== F. fewest-change transport, antibunching, and decay estimates")
 nc = 5
 p = rng.random(nc); p /= p.sum()
 allowed = rng.random((nc, nc)) < 0.6; np.fill_diagonal(allowed, True)
 idx = [(i, j) for i in range(nc) for j in range(nc) if allowed[i, j]]
 cost = np.array([0.0 if i == j else 1.0 for i, j in idx])
-Aeq = np.zeros((2 * nc, len(idx))); beq = np.concatenate([p, p])
-for kx, (i, j) in enumerate(idx):
-    Aeq[i, kx] = 1; Aeq[nc + j, kx] = 1
-res = linprog(cost, A_eq=Aeq, b_eq=beq, bounds=(0, None), method="highs")
-check("T", res.status == 0 and res.fun < 1e-12,
-      "stationary odds -> CL-2's fewest-change transport is 'stay': an atom's actual configuration in a "
-      "stationary excited level never moves, its current is zero, the definite link stays static and the odds "
-      "stay the eigenstate: the level never decays", f"min changes {res.fun:.1e}")
+
+
+def transport(p0, p1):
+    Aeq = np.zeros((2 * nc, len(idx))); beq = np.concatenate([p0, p1])
+    for kx, (i, j) in enumerate(idx):
+        Aeq[i, kx] = 1; Aeq[nc + j, kx] = 1
+    r = linprog(cost, A_eq=Aeq, b_eq=beq, bounds=(0, None), method="highs")
+    plan = np.zeros((nc, nc))
+    if r.status == 0:
+        for kx, (i, j) in enumerate(idx):
+            plan[i, j] = r.x[kx]
+    return r, plan
+
+
+res, plan = transport(p, p)
+marg = max(np.abs(plan.sum(1) - p).max(), np.abs(plan.sum(0) - p).max())
+check("T", res.status == 0 and res.fun < 1e-12 and np.abs(plan - np.diag(p)).max() < 1e-12 and marg < 1e-12
+      and plan.min() > -1e-15,
+      "F1 equal odds before and after: the fewest-change plan is the identity (plan = diag(p), marginals p, "
+      "zero changes), so a stationary level's actual configuration and its c-number source stay",
+      f"min changes {res.fun:.1e}, |plan - diag p| {np.abs(plan - np.diag(p)).max():.0e}, marginal err {marg:.0e}")
+q = p.copy(); q[0] += 0.1; q[1] -= min(0.1, q[1] - 1e-3); q /= q.sum()
+res_c, plan_c = transport(p, q)
+tv = 0.5 * np.abs(q - p).sum()
+check("T", res_c.status == 0 and res_c.fun > 1e-3 and res_c.fun >= tv - 1e-12,
+      "F2 control: with unequal odds the same plan has changes at least the total-variation distance, so "
+      "'stay' is specific to stationary odds",
+      f"min changes {res_c.fun:.4f} >= TV {tv:.4f}")
 alpha = 1 / 137.035999084
 a0 = 0.529177210903e-10; c_ = 299792458.0
 Ry_eV = 13.605693122994; hbar_eVs = 6.582119569e-16
@@ -305,23 +431,26 @@ w21 = 0.75 * Ry_eV * mr / hbar_eVs
 d = (128 * np.sqrt(2) / 243) * a0 / mr
 A21 = 4 * alpha * w21 ** 3 * d ** 2 / (3 * c_ ** 2)
 tau = 1 / A21
-check("E", abs(tau * 1e9 - 1.596) < 0.01,
-      "quantised links (vacuum link odds, Wigner-Weisskopf) give the hydrogen 2p lifetime; definite links give "
-      "infinity for the pure level and non-exponential decay otherwise",
-      f"tau(2p) = {tau*1e9:.4f} ns, measured 1.60 ns")
+estimate("quantised links (vacuum link odds, Wigner-Weisskopf) give the hydrogen 2p lifetime; a stationary "
+         "pure level under c-number links does not decay",
+         f"tau(2p) = {tau*1e9:.4f} ns, measured 1.60 ns (supplied atomic constants)")
 tt = np.linspace(0, 30, 3001); Pn = 1 / (1 + 1e-6 / (1 - 1e-6) * np.exp(tt))
 t_half_n = tt[np.argmin(np.abs(Pn - 0.5))]
-check("E", t_half_n > 10,
-      "a definite field's radiation reaction acts only through the dipole coherence (dP/dt = -Gamma P(1-P)): "
-      "from P_e = 1 - 1e-6 the half time is ~14 lifetimes, not ln 2; measured decays are exponential",
-      f"t_half definite {t_half_n:.1f}/Gamma vs quantised 0.69/Gamma")
+estimate("a c-number field's radiation reaction acting through the dipole coherence (dP/dt = -Gamma P(1-P), "
+         "supplied classical model): from P_e = 1 - 1e-6 the half time is ~14 lifetimes, not ln 2",
+         f"t_half {t_half_n:.1f}/Gamma vs exponential 0.69/Gamma")
 g2min = 1e9
 for _ in range(200):
     I = rng.exponential(size=50) ** rng.uniform(0.1, 3); wgt = rng.random(50); wgt /= wgt.sum()
     g2min = min(g2min, (wgt @ I ** 2) / (wgt @ I) ** 2)
-check("T", g2min >= 1 - 1e-12,
-      "any definite or classically mixed link field gives g2(0) >= 1 (Cauchy-Schwarz); single-atom "
-      "fluorescence measures g2(0) ~ 0", f"min g2 over 200 mixtures {g2min:.4f}")
+nfock = 6
+af = np.diag(np.sqrt(np.arange(1, nfock)), 1)
+one = np.zeros(nfock); one[1] = 1
+g2_fock = (one @ af.T @ af.T @ af @ af @ one) / (one @ af.T @ af @ one) ** 2
+check("T", g2min >= 1 - 1e-12 and g2_fock < 1e-12,
+      "F3 any classical (definite or mixed) intensity gives g2(0) = <I^2>/<I>^2 >= 1 (Cauchy-Schwarz); "
+      "control: a one-photon Fock state has g2(0) = 0, so the bound is specific to classical fields",
+      f"min g2 over 200 mixtures {g2min:.4f}; one-photon state {g2_fock:.0e}")
 
 # ---------------------------------------------------------------- G
 print("== G. Lamb shift and a_e")
@@ -333,18 +462,18 @@ VP2S = pref * (-1 / 5)
 SE2P = pref * (-lnk2P - 0.25)
 lamb_q = SE2S + VP2S - SE2P
 lamb_d = VP2S
-check("E", abs(lamb_q - 1057.8) / 1057.8 < 0.03 and lamb_d < 0,
-      "Lamb shift: the self-energy (internal photon propagator) is most of it; definite links keep only the "
-      "sea's vacuum polarisation", f"leading-order quantised {lamb_q:.0f} MHz, definite {lamb_d:.1f} MHz, "
-      f"measured 1057.845 MHz")
+estimate("Lamb shift: the self-energy (internal photon propagator) is most of it; c-number links keep only "
+         "the sea's vacuum polarisation", f"leading-order quantised {lamb_q:.0f} MHz, c-number {lamb_d:.1f} MHz, "
+         f"measured 1057.845 MHz")
 ae_meas = 1.15965218059e-3
-check("E", abs(alpha / (2 * np.pi) - ae_meas) / ae_meas < 2e-3,
-      "a_e: Schwinger's alpha/2pi needs an internal photon; definite links leave a one-body Dirac electron in "
-      "c-number fields, g = 2 plus lattice terms ~1e-63",
-      f"alpha/2pi = {alpha/(2*np.pi):.6e}, measured {ae_meas:.6e}(13e-14): definite misses by ~9e9 sigma")
+estimate("a_e: Schwinger's alpha/2pi needs an internal photon; c-number links leave a one-body Dirac electron, "
+         "g = 2 plus lattice terms",
+         f"alpha/2pi = {alpha/(2*np.pi):.6e}, measured {ae_meas:.6e}")
 print("   kept as sea loops in c-number fields: alpha's 1-loop running, Uehling (-27 MHz), Euler-Heisenberg")
-print("   light-by-light. Not carried: T = 0 Casimir zero-point force (flat definite vacuum; estimate).")
-print("   no confinement: free charge-1/3 relics (bound < ~1e-22 per nucleon); proton ~ 2m_u+m_d ~ 9 MeV vs 938")
-print("theorems: A1-A4, C1, E1-E2, F1, F4; diagnostic: B1; estimates: C2, D1, F2-F3, G1-G2")
+print("   light-by-light. Not carried by the flat ansatz: T = 0 Casimir zero-point force (estimate).")
+print("   these estimates compare the SUPPLIED ansatz with measurement; they exclude no other definite-link")
+print("   configuration and do not show that links must carry odds.")
+print("checked: A1-A5, C1-C2, E1-E2, F1-F3 (A5, C2 are kept counterexamples); diagnostic: B1; estimates: not counted")
 print(f"elapsed_seconds {time.time()-T0:.1f}")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+sys.exit(1 if NF else 0)

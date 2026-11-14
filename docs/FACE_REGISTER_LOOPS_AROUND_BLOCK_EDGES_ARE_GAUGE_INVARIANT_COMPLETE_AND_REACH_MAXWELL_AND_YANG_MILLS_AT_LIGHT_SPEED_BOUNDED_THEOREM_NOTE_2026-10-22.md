@@ -1,19 +1,23 @@
 ---
 claim_id: face_register_loops_around_block_edges_are_gauge_invariant_complete_and_reach_maxwell_and_yang_mills_at_light_speed_bounded_theorem_note_2026-10-22
 claim_type: bounded_theorem
-claim_scope: "For link registers on the faces of a gauge factor's B_f-blocks (2S rishon modes per end, Gauss's law per block), take as loops the cycles of blocks around each block-edge segment (four faces in the bulk; three or four faces of mixed sizes beside a split block, 72 triangles and 774 squares on the tested slab) and as loop operator Re tr of the ordered product of the faces' link operators. Exact: for U(1) at S = 1/2, 1 (square and hanging triangle) the loop of domain-normalised raisers V, and of rishon bilinears, conserves every block's rishon number, and an open string does not; every U(1) register up to S = 2 has V of definite charge with V^dag V a projector; SU(2) and SU(3) rishon links are covariant at each end (polar part too), and the many-body loop commutes with every colour Gauss generator (SU(2) square, dimension 65536; SU(3) hanging triangle, dimension 262144) while a wrongly contracted link fails. The loop set is complete: dim ker(curl) = (blocks - 1) + 3 on a 4^3 torus and on a hanging slab. With face weight h/A and loop weight l/S (flat: 1/B_f), electric g^2/2 and magnetic 1/(g^2 T), the lattice energy tends to (1/2) int (E^a E^a + B^a B^a) with the full Yang-Mills commutator (26% of the test energy) at O(B_f^2), for U(1), SU(2) and SU(3); the electric part is exact for band-limited fields; the harmonic photon is omega^2 = (4/B_f^2) sum sin^2(k_i B_f/2) with speed 1 for every B_f, independent of g; weights (N/sqrt gamma) gamma_ij per block, with off-diagonal terms through the block's mean face values and mean loop fluxes, give the null cone N^2 gamma^ij k_i k_j at O(k^2) in a diagonal and a sheared metric, with both energy forms positive definite at every k. Subtracting the vacuum phase once gives zero vacuum phase at every edge value and exactly omega per photon; the superseded extra subtraction leaves minus half the zero-point, edge-dependent. Across a hanging face the uniform-E and in-plane uniform-B patch tests are exact, a normal B costs an extra layer of B/6 per interface, and the cavity spectrum converges to the c = 1 continuum (max deviation 0.297 -> 0.084 as blocks halve, torus 4x4x8 child units), with that layer a first-order term (effect 0.042 -> 0.027). Finite diagnostics of supplied models: single-loop register truncation at supplied couplings (U(1) gap 5.6x at S = 1/2, 1.44x at S = 3, 1.01x at S = 6; SU(2) 2.5x at j = 1/2; SU(3) 1.07x at p + q = 1), with a supplied identification of register size with representation cutoff. Not established: the small-S dressed coefficients, the shift's entry into the weights, extreme register values, bending and shear on face registers, the off-diagonal pairing as the only covariant choice."
+claim_scope: "For link registers on the faces of a gauge factor's B_f-blocks (2S rishon modes per end, Gauss's law per block), take as loops the cycles of blocks around each block-edge segment (four faces in the bulk; three or four faces of mixed sizes beside a split block, 72 triangles and 774 squares on the tested slab) and as loop operator Re tr of the ordered product of the faces' link operators. Exact: for U(1) at S = 1/2, 1 (square and hanging triangle) the loop of domain-normalised raisers V, and of rishon bilinears, conserves every block's rishon number, and an open string does not; every U(1) register up to S = 2 has V of definite charge with V^dag V a projector; SU(2) and SU(3) rishon links are covariant at each end (polar part too), and the many-body loop commutes with every colour Gauss generator (SU(2) square, dimension 65536; SU(3) hanging triangle, dimension 262144) while a wrongly contracted link fails. The loop set is complete: dim ker(curl) = (blocks - 1) + 3 on a 4^3 torus and on a hanging slab. With face weight h/A and loop weight l/S (flat: 1/B_f), electric g^2/2 and magnetic 1/(g^2 T): for the tested fields (three Fourier modes per component, wavelength 24 cells) the lattice magnetic energy approaches (1/2) int B^a B^a with the full Yang-Mills commutator (26% of the test energy), with errors at B_f = 1, 2, 3 whose ratios are consistent with O(B_f^2), for U(1), SU(2) and SU(3) (finite diagnostic; the continuum limit and its order are not proved); with the face value defined as B_f^2 E at the face centre (a supplied sampled definition) the electric energy equals (1/2) int E^a E^a exactly for the tested trigonometric fields when no frequency sum or difference aliases on the B_f grid, while with the face value defined as the flux integral it is not exact (sinc factors; 3.4e-2 and 7.4e-2 at B_f = 2, 3); the harmonic photon is omega^2 = (4/B_f^2) sum sin^2(k_i B_f/2) with speed 1 for every B_f, independent of g; weights (N/sqrt gamma) gamma_ij per block, with off-diagonal terms through the block's mean face values and mean loop fluxes, give the null cone N^2 gamma^ij k_i k_j at O(k^2) in a diagonal and a sheared metric, with both energy forms positive definite at every k. Subtracting the vacuum phase once gives zero vacuum phase at every edge value and exactly omega per photon; the superseded extra subtraction leaves minus half the zero-point, edge-dependent. Across a hanging face the uniform-E and in-plane uniform-B patch tests are exact, a normal B costs an extra layer of B/6 per interface, and at the two cavity sizes tested the spectrum moves toward the c = 1 continuum (max deviation 0.297 -> 0.084 as blocks halve, torus 4x4x8 child units), with that layer behaving as a first-order term (effect 0.042 -> 0.027) (finite diagnostic). Finite diagnostics of supplied models: single-loop register truncation at supplied couplings (U(1) gap 5.6x at S = 1/2, 1.44x at S = 3, 1.01x at S = 6; SU(2) 2.5x at j = 1/2; SU(3) 1.07x at p + q = 1), with a supplied identification of register size with representation cutoff. Not established: the small-S dressed coefficients, the shift's entry into the weights, extreme register values, bending and shear on face registers, the off-diagonal pairing as the only covariant choice."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
 runner: scripts/face_register_loops_around_block_edges_are_gauge_invariant_complete_and_reach_maxwell_and_yang_mills_at_light_speed_2026_10_22.py
 ---
 
-# Face-register loops around block edges are gauge-invariant and complete, and reach Maxwell and Yang-Mills at light speed
+# Face-register loops around block edges are gauge-invariant and complete, with a light-speed harmonic photon and Yang-Mills energies approached on tested fields
 
 Claim type: bounded_theorem.
 Primary runner: `scripts/face_register_loops_around_block_edges_are_gauge_invariant_complete_and_reach_maxwell_and_yang_mills_at_light_speed_2026_10_22.py`.
 
 The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. After its fourth review, CL-1 puts each gauge factor's link registers on the faces of that factor's B_f-blocks. The blocks are made of whole even cubes, so only odd-cube hops cross a face. Each register is 2S rishon modes at each end, and Gauss's law holds per B_f-block. CL-3's plaquette phase is still written for the superseded site-bond layout (six skew loops per bond). This note supplies the plaquette law for face registers and checks it. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) fix none of the inputs used here.
+
+Local labels and sources (2026-11-14). CL-1 and CL-3 are the update and response laws of the originating three-law register and its fourth review (review 4, L2), supplied model text with zero premise weight; they are not the entries of the same number in `docs/CANDIDATE_LAWS.md`, and the review-4 text is not in this repository (recorded only in the consolidation map). #9926 is [this note](LINK_REGISTERS_BUILT_FROM_RISHON_FERMION_MODE_SITES_CARRY_EXACT_U1_AND_SU3_GAUSS_LAWS_AND_SIT_COVARIANTLY_FROM_ZOOM_THREE_BOUNDED_THEOREM_NOTE_2026-10-22.md) and #9928 is [this note](LINK_REGISTER_SPLIT_TRANSPORT_AND_RESPONSE_GIVE_A_COVARIANT_LEVEL_MATCHED_ZOOM_MAP_BORN_EXPONENTIAL_DECAY_AND_THE_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-22.md); #9931 and #9917 are not in this repository and are recorded only in the map.
+
+Correction (2026-11-14). The held version called the electric energy exact for band-limited fields and stated O(B_f^2) convergence and cavity convergence as results. The electric identity holds for a sampled face value, not for the flux integral (C2 below), and the convergence statements are finite diagnostics at the mesh sizes tested.
 
 Repo check. On origin/main no note gives a face-register plaquette on nested blocks. The note builds on, or narrows, four open PRs:
 - #9926 (link-zoom): rishon links, Gauss's law as cluster number, and the 8-rishon plaquette on a cubic site.
@@ -41,12 +45,14 @@ B. Completeness (exact). In both of the following, curl.grad = 0 and dim ker(cur
 
 So every non-gauge face configuration other than the three torus holonomies changes some loop. The face layout needs no skew loops and has no stiffless extra mode, unlike the site-bond layout.
 
-C. Classical continuum.
-1. Magnetic part: the sum over loops of (1/(g^2 B_f T)) Re tr(1 - U_loop) tends to (1/2) int B^a B^a with F = dA - dA + i g [A, A].
-   - Relative error at B_f = 1, 2, 3, for field wavelengths of 24 cells: U(1) 6.1e-3, 2.9e-2, 8.0e-2; SU(2) 2.1e-2, 8.2e-2, 1.8e-1; SU(3) 2.0e-2, 8.0e-2, 1.7e-1.
-   - The error ratios, 3.9 to 4.8 and 2.1 to 2.8, show O(B_f^2) convergence.
+C. Classical continuum (finite diagnostics except C2a).
+1. Magnetic part: for the tested fields (three Fourier modes per component, amplitude 0.1, wavelength 24 cells), the sum over loops of (1/(g^2 B_f T)) Re tr(1 - U_loop) approaches (1/2) int B^a B^a with F = dA - dA + i g [A, A].
+   - Relative error at B_f = 1, 2, 3: U(1) 6.1e-3, 2.9e-2, 8.0e-2; SU(2) 2.1e-2, 8.2e-2, 1.8e-1; SU(3) 2.0e-2, 8.0e-2, 1.7e-1.
+   - The error ratios, 3.9 to 4.8 and 2.1 to 2.8, are consistent with O(B_f^2). Three mesh values do not prove the continuum limit or its order; no analytic error estimate is supplied here.
    - The commutator changes the test energy by 26%, so the check covers the non-abelian term.
-2. Electric part: (g^2/(2 B_f T)) sum tr Phi^2 equals (1/2) int E^a E^a exactly for band-limited fields.
+2. Electric part.
+   - 2a (exact, for a supplied definition). Define the face value as the sample Phi = B_f^2 E(face centre)/g. Then (g^2/(2 B_f T)) sum tr Phi^2 is a Riemann sum with cell volume B_f^3, and for a trigonometric-polynomial field it equals (1/2) int E^a E^a exactly whenever no nonzero sum or difference of two field frequencies is a multiple of the grid's n = L/B_f points per axis (a discrete-orthogonality identity of the uniform grid; the centre offset itself is not what makes it exact, and a jittered sample breaks it). For the tested fields that holds at B_f = 2, 3 (deviation 2e-16); control: at B_f = 12 (n = 2) the frequency 2k aliases to 0 and the identity fails (deviation 0.25).
+   - 2b (negative result kept). With the face value defined as the actual flux, the integral of E over the face, each Fourier component carries a factor sinc(k_perp B_f/2) per transverse direction, so the identity is not exact: deviation 3.4e-2 and 7.4e-2 at B_f = 2, 3 for the tested U(1) field (ratio 2.20, about B_f^2), and 3.0e-2 and 6.6e-2 for SU(3). Midpoint equality is a property of the sampled definition, not of the flux.
 
 D. Harmonic photon (exact).
 1. Flat cells: omega^2 = (4/B_f^2) sum sin^2(k_i B_f/2) for both polarisations, plus one gauge zero. The speed is 1 cell per unit time as k -> 0 for B_f = 1, 2, 3 and 24, along axes, face diagonals and body diagonals, at any g. The relative normalisation c_E c_B = 1/(2 B_f^2) [U(1)] is the light-cone condition.
@@ -69,9 +75,9 @@ G. Hanging faces after a split. The coarse face holds four child-face registers,
 1. Patch tests:
    - uniform E in every direction, and uniform B along the interface: exact (deviation 0);
    - normal B: an extra layer of B/6 per interface, with B the unsplit side, because the hanging loops' centre polygons tilt.
-2. Cavity spectrum (torus 4x4x8 child units, half split, 72 then 576 blocks):
-   - the lowest 21 modes converge to the c = 1 continuum, with max deviation 0.297 -> 0.084 (ratio 3.5) as all blocks halve;
-   - the B/6 layer is a first-order term (effect 0.042 -> 0.027, ratio 1.56 at these coarse sizes);
+2. Cavity spectrum (torus 4x4x8 child units, half split, 72 then 576 blocks; finite diagnostic at two sizes):
+   - the lowest 21 modes move toward the c = 1 continuum, with max deviation 0.297 -> 0.084 (ratio 3.5) as all blocks halve; two sizes establish no convergence order;
+   - the B/6 layer behaves as a first-order term (effect 0.042 -> 0.027, ratio 1.56 at these coarse sizes);
    - removing it by rescaling the first child layer's normal-edge loops makes the spectrum slightly worse (mean deviation 0.173 and 0.064, against 0.160 and 0.055), so the plain rule is kept.
    At Planck-scale blocks the first-order term is of order k B, about 1e-30 at accessible wavelengths (estimate).
 
@@ -93,7 +99,8 @@ Supplied, and named:
 - the pairing of off-diagonal metric terms through block means (positive and correct at O(k^2), not shown unique);
 - V (domain-normalised) rather than the bare bilinear as the U(1) link in the loop, chosen to match CL-1's dressing;
 - the cavity box, the test fields, and the couplings 1/137, 0.0338 and 0.118;
-- in E, the identification of register size with a representation cutoff.
+- in E, the identification of register size with a representation cutoff;
+- in C2a, the face value as the centre sample B_f^2 E rather than the flux integral.
 
 No measured number enters the law. The measured couplings appear only in diagnostic E2.
 
@@ -105,3 +112,6 @@ No measured number enters the law. The measured couplings appear only in diagnos
 - Bending and shear on face-register plaquettes (#9917 is site-read).
 - Children within register range.
 - Whether another covariant off-diagonal pairing exists that is exact at the hanging face for normal B.
+- An analytic estimate of the magnetic continuum error (C1) and of the cavity convergence (G2); the electric energy with flux-integral face values beyond the tested fields.
+
+The runner ends with `TOTAL: PASS=16 FAIL=0` and exits nonzero if any check fails.

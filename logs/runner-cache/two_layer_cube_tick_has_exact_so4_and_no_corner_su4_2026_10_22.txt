@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/two_layer_cube_tick_has_exact_so4_and_no_corner_su4_2026_10_22.py
-runner_sha256: 039450a4956a0f6c497b5047231b23b7c68a7ceed3d7cfc524f532c99eee5df2
-input_fingerprint_sha256: 17a4c1e8ea071b5684e01b123430613122f656db278b9e1859a29208762f8946
+runner_sha256: 9ed96f354801daf75eff0efe413fb96903133b6dddf611daacbb9743a886c2bc
+input_fingerprint_sha256: 1560ecc328db6875586e07c66ba7ef3fe42471d162adf41f0a1f45ad1387ab04
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 7.27
+elapsed_sec: 6.15
 status: ok
 ----- stdout -----
 A. supplied tick: Z^3, two tilings by 2x2x2 cubes offset (1,1,1), face phase -1, eps=0.37, mu=0, no copy mass
@@ -54,7 +54,7 @@ E. N identical layers (N modes per site): the internal algebra comes from the la
    N = 1: number-conserving 1, pairings 0, algebra dim 1 -> u(1)
    N = 3: number-conserving 9, pairings 3, algebra dim 15 -> su(4)
 PASS: E1 N = 1: u(1); N = 2: so(4) (B6); N = 3: 1_8 x M_3 plus eps x (antisym 3x3) = so(6) = su(4), simple, dim 15: an exact su(4) appears only by supplying three layers, acting on the layer index
-VERDICT: exact internal algebra of the free two-layer tick = so(4) = su(2)_layer + su(2)_pair; no su(4) on corner labels (exact or at the Dirac point); Ruleset C as stated (C1+C2) is dead; an exact su(4) needs N = 3 layers (so(2N)), i.e. a supplied count.
+VERDICT: exact internal algebra of the free two-layer tick = so(4) = su(2)_layer + su(2)_pair; no su(4) on corner labels (exact or at the Dirac point); Ruleset C as stated (C1+C2) fails its own decisive test; an exact su(4) needs N = 3 layers (so(2N)), i.e. a supplied count.
 
 TOTAL: PASS=32 FAIL=0
 

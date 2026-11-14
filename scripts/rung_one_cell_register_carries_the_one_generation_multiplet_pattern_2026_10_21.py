@@ -468,3 +468,4 @@ print('supplied: the rung-1 rule (CL-3 at rung 1, cell modes carried in parallel
       'matrix, the chiral assignment, the 5-mode register; cited: none of the anomaly-free SMG literature is rederived.')
 print(f'elapsed_seconds {time.time() - T0:.1f}')
 print(f'\nTOTAL: PASS={PASS} FAIL={FAIL}')
+sys.exit(1 if FAIL else 0)

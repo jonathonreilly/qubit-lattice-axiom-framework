@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/qubit_cell_complex_emergent_gauge_fields_select_no_matter_multiplet_2026_10_22.py
-runner_sha256: f25570217538df7d2e24a8601f91ee0fa98ae34c631303d72d7242968bc245c3
-input_fingerprint_sha256: a487d2ee3b84d7c201e1f89c5e2c86d3867eb9ca8b30da4abe2d61b120babb08
+runner_sha256: d72848e09b18eb03fb70e27dae28e34c2181caacef3ebd9f1b82d10c02b3ab01
+input_fingerprint_sha256: 93ccc4bdb1d44566415bd74d22f3328942ae81ab5cc6c6a6cc8a509062ccbf3e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.32
+elapsed_sec: 1.79
 status: ok
 ----- stdout -----
 == A. rung-2 cell complex of Z^3 and the nearest-neighbour toric-code rule
@@ -23,15 +23,16 @@ status: ok
 == D. emergent fermions hop locally on Z^3: Weyl charges cancel (Nielsen-Ninomiya)
 [PASS] D1 [T] a seeded random local two-band hop on Z^3 has Weyl nodes (slice Chern number jumps) whose charges sum to zero: emergent lattice fermions with a local hop come in L/R pairs | C(kz) values [0, 1], node charges [1, -1]
 == E. which protected anomaly-free multiplets can emergent fermions form?
-[PASS] E1 [T] emergent fermions are string ends, so fermion parity is an element of the emergent gauge group; the smallest cyclic group forbidding every Majorana mass of odd-charge Weyl fermions is Z4 | Z_n (n even, charge 1) forbidding psi psi: [4, 6, 8]...
-[PASS] E2 [T+C] SU(2) spin j (half-integer): no symmetric invariant, so G alone forbids masses; Witten (j=2r+1/2) and the new SU(2) anomaly (j=4r+3/2, cited WWW, applies since fermion parity is the centre) remove j=1/2,3/2,5/2: the SMALLEST consistent protected irreducible multiplet is j=7/2, 8 Weyl, not 16 | 2j:dim 1:2W 3:4N 5:6W 7:8 9:10W 11:12N 13:14W 15:16
+[PASS] E1 [T] narrowed 2026-11-14: with fermion parity as the order-2 element of an even cyclic group (supplied reading: emergent fermions are string ends), the smallest Z_m forbidding every Majorana mass of a UNIFORM-charge content (all Weyl fermions of charge 1, supplied) is Z4. NEGATIVE RESULT kept: odd charges 1 and 3 in Z4 admit the neutral mixed bilinear psi_1 psi_3, so 'every odd-charge content' is false; Z8 forbids it | uniform charge 1: smallest forbidding m 4; Z4 with charges {1, 3}: allowed [(1, 3)]; Z8: []
+[PASS] E2 [T] SU(2) spin j (half-integer, 2j = 1..15): no symmetric invariant bilinear, so the group alone forbids masses; the computed index 2 Tr J3^2 is odd exactly for j = 2r + 1/2 | 2j:dim 1:2W 3:4N 5:6W 7:8 9:10W 11:12N 13:14W 15:16
+CONDITIONAL (cited, not counted): reading an odd index as Witten's anomaly and applying the cited Wang-Wen-Witten rule j = 4r + 3/2 (which needs fermion parity to be the centre), the smallest surviving protected irreducible multiplet is 2j = 7 (j = 7/2, 8 Weyl, not 16)
 [PASS] E3 [T] Spin(10) 16 built from 5 modes (a 5-site cluster, composite): no invariant bilinear (masses forbidden), cubic anomaly 0, central element exp(i pi Q) acts as i on the 16 (the Z4); SU(16) fundamental is anomalous | invariant forms 0, max|d_abc| 0.0e+00, centre^2 = -1-0j, Tr T^3 SU(16) -3360
-[PASS] E4 [C] cited classification: simple groups with a 16-dim irrep are SU(2) j=15/2 (pseudoreal), Sp(4) (pseudoreal), Spin(9) (real), SO(16) (real), Sp(16) (pseudoreal), SU(16) (complex, anomalous), Spin(10) (complex, anomaly-free): Spin(10) is the only complex anomaly-free one, but 'complex' and 'dim 16' are selector choices
-[PASS] E5 [E+C] measured content: X = 5(B-L) - 4Y is 1 mod 4 on all 16 Weyl of a family incl. nu^c, so the measured family is a Z4-protected multiplet with nu = 16 = 0 mod 16 (Spin-Z4 bordism Z16, cited); without nu^c nu = 15 is anomalous: Z4 protection REQUIRES nu^c | X charges {'Q': 1, 'u^c': 1, 'd^c': -3, 'L': -3, 'e^c': 1, 'nu^c': 5}; sum Y^3 2e-16, sum Y 0e+00
-elapsed_seconds 2.1
-supplied: the cell-complex role assignment, the star/plaquette/ice energy functions, the BKSF ordering, the RK equal-weight ensemble, the Gaussian reading, the random two-band hop; [E] uses measured charges.
+CITED, NOT CHECKED (not counted): E4 classification: simple groups with a 16-dim irrep are SU(2) j=15/2 (pseudoreal), Sp(4) (pseudoreal), Spin(9) (real), SO(16) (real), Sp(16) (pseudoreal), SU(16) (complex, anomalous), Spin(10) (complex, anomaly-free): Spin(10) is the only complex anomaly-free one, but 'complex' and 'dim 16' are selector choices
+[PASS] E5 [T on supplied content] SUPPLIED content (the measured 15 Weyl of one family plus a supplied singlet nu^c, which is not measured): X = 5(B-L) - 4Y is 1 mod 4 on all 16, so the supplied content is a uniform-charge Z4 multiplet with nu = 16; without nu^c the count is 15. Reading nu mod 16 as the Spin-Z4 anomaly is the cited Z16 bordism (not checked) | X charges {'Q': 1, 'u^c': 1, 'd^c': -3, 'L': -3, 'e^c': 1, 'nu^c': 5}; sum Y^3 2e-16, sum Y 0e+00
+elapsed_seconds 1.7
+supplied: the cell-complex role assignment, the star/plaquette/ice energy functions, the BKSF ordering, the RK equal-weight ensemble, the Gaussian reading, the random two-band hop, the uniform-charge content of E1; E5 uses the measured 15 charges of one family plus a supplied nu^c.
 cited: Kitaev toric code; Bravyi-Kitaev 2002; Levin-Wen PRB 67 245316 (2003); Wen PRD 68 065003 (2003); Hermele-Balents-Fisher PRB 69 064404; Chandrasekharan-Wiese 1997; Nielsen-Ninomiya; Witten 1982; Wang-Wen-Witten 1810.00844; Garcia-Etxebarria-Montero 1808.00009; Wang-Wen 1809.11171; main BKSF and Majorana-per-direction notes (2026-10-17), spin-half cubic ice RK note (2026-09-03), SU(N) link 2N-state note.
-TOTAL: PASS=16 FAIL=0
+TOTAL: PASS=15 FAIL=0
 
 ----- stderr -----
 

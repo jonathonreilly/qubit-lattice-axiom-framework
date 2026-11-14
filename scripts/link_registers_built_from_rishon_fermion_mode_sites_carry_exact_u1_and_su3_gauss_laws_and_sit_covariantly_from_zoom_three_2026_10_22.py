@@ -11,7 +11,7 @@ F. covariant role placement in zoom-b blocks: rotation-orbit census and the face
 G. estimates against measurement (alpha_s sign and size, U(1) Coulomb window, site budget).
 Only numpy/scipy/stdlib. No dense Fock space of 2^11 or more is built.
 """
-import itertools, math, time
+import itertools, math, sys, time
 import numpy as np
 import scipy.sparse as sp
 
@@ -268,8 +268,8 @@ check("E1 [T] colour Gauss law: q_x^+a c_x^a c_y^b+ q_y^b commutes with all 16 g
       "end number by 3 (it breaks the cluster U(1) the hop keeps), so the gauge group is SU(3), not U(3)", gcx < 1e-12 and gdet < 1e-12 and ndet > 1 and nhop < 1e-12,
       f"[H,G] {gcx:.0e}, [det,G] {gdet:.0e}, [det,N_x] {ndet:.0f}, [hop,N_x] {nhop:.0e}")
 one = [s for s in range(64) if bin(s).count("1") == 1]
-check("E2 [T] the one-rishon SU(3) link has 2N = 6 states = (3,1)+(1,3): the minimum of the several-qubits note, here on six one-mode "
-      "sites", len(one) == 6)
+print(f"ARITHMETIC (not counted): E2 the one-rishon SU(3) link has {len(one)} = 2N states, (3,1)+(1,3) by colour index: the "
+      "minimum of the several-qubits note, here on six one-mode sites")
 # records: rishon occupations are gauge-variant (SU(3)) / are the electric value (U(1))
 noc = matrix(num(cx[0]), full12); rec = max(nrm(comm(noc, matrix(g, full12))) for g in Gx_)
 check("E3 [T] CL-2 records every mode's occupation: on rishon sites that records the U(1) electric value (E = (n_b - n_a)/2, A1) and, "
@@ -327,15 +327,34 @@ okF = all((r[2] >= 1) == r[1] for r in rows) and all(r[3] == (6 if r[1] else 24)
 check("F2 [T] a site-centred (odd) block has face 6-orbits, so one rishon per bond end sits covariantly from b = 3; a cube-centred "
       "(even) block has none and its smallest orbit holding A1+E+T1 has 24 sites (four per end); only odd blocks have a fixed "
       "centre", okF, " ".join(f"b{r[0]}:{r[2]}/{r[3]}/{r[4]}" for r in rows) + " (6-orbits/min host/fixed)")
-check("F3 [T] b = 3 layout: matter at the block centre, rishons at the six face centres, so along each axis the chain is "
-      "matter(0)-rishon(1)-rishon(2)-matter(3) on adjacent fine sites; the gauge-invariant hop is the product of two "
-      "nearest-neighbour bilinears (psi_0^+ c_1)(c_2^+ psi_3), a 4-site line gate", True)
+# F3 (computed 2026-11-14; the held runner asserted it with True): b = 3 blocks centred at 0 and 3 along x, matter at
+# the centres, rishons at the face centres +-1 of each block; the four sites 0, 1, 2, 3 are consecutive fine sites, and on
+# their 4-mode Fock space (psi_0^+ c_1)(c_2^+ psi_3) conserves both cluster numbers while the bare hop does not.
+centA, centB = np.array([0, 0, 0]), np.array([3, 0, 0])
+rA, rB = centA + np.array([1, 0, 0]), centB - np.array([1, 0, 0])
+chain = [centA, rA, rB, centB]
+adj = all(int(np.abs(chain[i + 1] - chain[i]).sum()) == 1 for i in range(3))
+in_blocks = all(np.abs(p_ - c_).max() <= 1 for p_, c_ in ((rA, centA), (rB, centB)))
+c4 = []
+for j in range(4):
+    op = np.array([[1.0]])
+    for k_ in range(4):
+        op = np.kron(op, np.diag([1.0, -1.0]) if k_ < j else (np.array([[0, 1.0], [0, 0]]) if k_ == j else np.eye(2)))
+    c4.append(op)
+n4 = [c.T @ c for c in c4]
+gate = (c4[0].T @ c4[1]) @ (c4[2].T @ c4[3])
+bare = c4[0].T @ c4[3]
+GA, GB = n4[0] + n4[1], n4[2] + n4[3]
+cm = lambda X, Y: np.abs(X @ Y - Y @ X).max()
+check("F3 [T] b = 3: matter(0)-rishon(1)-rishon(2)-matter(3) are adjacent fine sites, and (psi_0^+ c_1)(c_2^+ psi_3) "
+      "conserves both cluster numbers (a 4-site line gate); control: the bare hop psi_0^+ psi_3 does not",
+      adj and in_blocks and cm(gate, GA) < 1e-14 and cm(gate, GB) < 1e-14 and np.abs(gate).max() > 0.5
+      and cm(bare, GA) > 0.5,
+      f"consecutive fine sites {adj}; |[gate, G_A]| {cm(gate, GA):.0e}, |[gate, G_B]| {cm(gate, GB):.0e}; bare {cm(bare, GA):.1f}")
 need = dict(U1_half=6, SU2=12, SU3=18)
 print("   modes per coarse site (rishons at the site's own six ends): U(1) S=1/2: 6, U(1) S: 12 S, SU(2): 12, SU(3): 18;"
       " SM links at S_Y=2: 54 + matter; blocks 3^3=27, 5^3=125, 7^3=343")
-check("F4 [T] budget: U(1) at S = 1/2 fits b = 3 (1 + 6 of 27); SU(3)xSU(2)xU(1)_(S=2) rishons (54) plus 16 matter modes fit b = 5 "
-      "(125), with rotation-invariant combinations for colour indices (only one site of a block is rotation-fixed)",
-      1 + 6 <= 27 and 54 + 16 <= 125)
+print("ARITHMETIC (not counted): F4 U(1) S = 1/2 fits b = 3 (1 + 6 of 27); 54 SM rishons + 16 matter fit b = 5 (125)")
 
 # ================= G. estimates against measurement =================
 print("== G. estimates against measurement")
@@ -343,15 +362,16 @@ lnr = math.log(1.22e19 / 91.19)
 a3 = 1 / (8.47 + 7 / (2 * math.pi) * lnr); aY = 1 / ((59.0 - 4.1 / (2 * math.pi) * lnr) * 5 / 3)
 a3tau = 1 / (1 / 0.1179 - 2 * (11 - 2 * 5 / 3) / (4 * math.pi) * math.log(91.19 / 1.777) * 1.0)
 print(f"   SM 1-loop: alpha_s(M_Pl) = {a3:.4f} (1/g^2 = {1/(4*math.pi*a3):.2f}), alpha_Y(M_Pl) = {aY:.4f}; alpha_s(m_tau) 1-loop from M_Z {a3tau:.3f} (meas. 0.314)")
-check("G1 [E] SU(3) quantum links are quantum, so gluon loops run: b0 = 11 - 2nf/3 > 0 for nf <= 16 (asymptotic freedom, sign as "
-      "measured), against b0 = -2nf/3 for definite links (definite-links D1)", 11 - 2 * 6 / 3 > 0)
+print("ESTIMATE (not counted): G1 SU(3) quantum links fluctuate, so gluon loops run: b0 = 11 - 2nf/3 > 0 for nf <= 16 "
+      "(the measured sign of asymptotic freedom), against b0 = -2nf/3 for c-number links (definite-links note)")
 N5 = (1 / (4 * math.pi * a3)) * 6 / 4.3
-check("G2 [E] reaching alpha_s(M_Pl) by dimensional reduction, 1/g4^2 = N5/g5^2 with g5^2 ~ 6/4.3 (5D Coulomb side of the "
-      "bulk transition, literature value, uncertain): N5 of order 6 layers", 3 < N5 < 12, f"N5 ~ {N5:.1f}")
-check("G3 [E] U(1): a Coulomb phase needs bare alpha below about 1/(4 pi) (compact U(1), beta_c ~ 1.01); the S = 1/2 spin-ice "
-      "estimate alpha ~ 0.08 (literature, other lattice) exceeds alpha_Y(M_Pl) ~ 0.018 by ~4, so S = 1/2 is likely too strongly "
-      "coupled and the hypercharge link needs larger S (more rishon flavours)", aY < 0.08 / 3)
+print("ESTIMATE (not counted): G2 reaching alpha_s(M_Pl) by dimensional reduction, 1/g4^2 = N5/g5^2 with g5^2 ~ 6/4.3 (5D "
+      f"Coulomb side of the bulk transition, cited literature value, uncertain): N5 ~ {N5:.1f} layers")
+print("ESTIMATE (not counted): G3 U(1): a Coulomb phase needs bare alpha below about 1/(4 pi) (compact U(1), beta_c ~ 1.01, "
+      "cited); the cited S = 1/2 spin-ice estimate alpha ~ 0.08 (other lattice) exceeds alpha_Y(M_Pl) = "
+      f"{aY:.4f} by ~4, so S = 1/2 is likely too strongly coupled for hypercharge, which then needs larger S")
 print("supplied: role assignment, Gauss/flavour sectors, t, m, g^2, J, S, N5. cited: 3+1D U(1) QLM Coulomb phase, SU(N) QLM"
       " dimensional reduction (BCW), compact U(1) beta_c.")
 print(f"elapsed_seconds {time.time() - T0:.1f}")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+sys.exit(1 if FAIL else 0)

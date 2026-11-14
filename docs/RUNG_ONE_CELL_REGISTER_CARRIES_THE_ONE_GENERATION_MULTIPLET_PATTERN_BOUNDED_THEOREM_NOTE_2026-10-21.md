@@ -17,6 +17,7 @@ runner: scripts/rung_one_cell_register_carries_the_one_generation_multiplet_patt
 
 Claim type: bounded_theorem.
 Primary runner: `scripts/rung_one_cell_register_carries_the_one_generation_multiplet_pattern_2026_10_21.py`.
+It ends with `TOTAL: PASS=16 FAIL=0` and exits nonzero if any check fails (exit code added 2026-11-14).
 
 ## Question
 
@@ -36,7 +37,8 @@ act as the spin-3/2 corner phase of the cell's coarse corner times the plain per
 
 1. Cells. Under the 24 rotations the plain 2x2x2 cell is A1+A2+T1+T2, so T+(A1+A2) is a rotation-invariant C^3+C^2 inside
    one cell. (Within the spin-3/2-twisted action the cell is 2 x G3/2 and has no such subspace; that is the scope of the
-   earlier no-go.) The 4^3 cell gives multiplicities (4,4,4,8,8) for (A1,A2,E,T1,T2); the six-site octahedron gives T1+E but
+   earlier no-go in [#9882](BLOCK_COVARIANCE_GIVES_ABELIAN_OR_COPY_U2_AND_NO_REGISTER_SELECTS_THE_GAUGE_GROUP_BOUNDED_THEOREM_NOTE_2026-10-21.md), whose plain-block statement is corrected there.) The "2" here is reducible,
+   A1 + A2, not a doublet. The 4^3 cell gives multiplicities (4,4,4,8,8) for (A1,A2,E,T1,T2); the six-site octahedron gives T1+E but
    is not a Margolus cell.
 2. Spin-statistics. With the spin-3/2 coarse twist the 2pi turn is -1 only if the cell index carries a non-spinorial
    action: the plain one (A1+A2+T1+T2) or the j=1 one (E+T1+T2).
@@ -45,7 +47,9 @@ act as the spin-3/2 corner phase of the cell's coarse corner times the plain per
 4. Exact internal symmetry. Every internal operator 1 x X commutes with the tick: U(8). The tick is real in a cell-phase
    gauge, so staggered pairings are conserved as well: SO(16). Rotation-covariant masses, one per irrep, leave
    SO(2)^2 x SO(6)^2, which contains U(1)^2 x U(3)^2; the light levels are 1:1:3:3. Equal masses on T1+A1+A2 leave an exact
-   SO(10) on that five-mode register times SO(6).
+   SO(10) on that five-mode register times SO(6). Those equal masses are a supplied choice: the rotations allow one mass
+   per irreducible piece, so the SO(10) enlargement is not protected (recorded in the consolidation map; carried here
+   2026-11-14).
 5. Factorisation. Each corner is a pair (tetrahedron parity, body diagonal), so the cell is C^2 x C^4 canonically, and a
    rotation acts as X^[odd] x P_diag. The traceless rotation-invariant generators on one factor are unique up to scale:
    T3 = X/2 and B-L = (1 - 4 P_A1)/3, with eigenvalues 1/3 (three times) and -1.

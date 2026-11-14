@@ -6,6 +6,7 @@ Supplied model, exact finite algebra plus free-band diagnostics. No interacting
 dynamics is computed. Self-contained (numpy, scipy). Seeded.
 """
 import itertools
+import sys
 import time
 
 import numpy as np
@@ -142,8 +143,50 @@ for t in range(4):
         nsurf += 1
         ratios.append(cnt[1] / cnt[0])
 check("A4", phok and nsurf > 0 and all(2.5 < r < 6 for r in ratios),
-      "THEOREM+DIAGNOSTIC a Spin(10)-invariant (Majorana) band has H(-k) = -H(k)*, det H(k) real, so its zero-energy set has codimension 1: surfaces, not cones; random 4-orbital bands: sign-change counts scale as n^2 (surface)",
-      f"bands with zero surfaces {nsurf}/4; count ratio n=24/12 {[round(r, 2) for r in ratios]} (surface 4, point 1)")
+      "FINITE DIAGNOSTIC (narrowed 2026-11-14) a Spin(10)-invariant (Majorana) band has H(-k) = -H(k)* and real det H(k); in the seeded random 4-orbital bands tested, det H changes sign and the sign-change counts scale as n^2, as for zero surfaces. This is a property of these samples, not of every Majorana band (A4w)",
+      f"bands with sign-changing det {nsurf}/4; count ratio n=24/12 {[round(r, 2) for r in ratios]} (surface 4, point 1)")
+# A4w: witness that a real determinant does not force a zero surface
+sx = np.array([[0, 1], [1, 0]], complex); sy = np.array([[0, -1j], [1j, 0]]); sz = np.diag([1.0, -1.0]).astype(complex)
+
+
+def Hw(k):
+    return np.sin(k[0]) * sx + np.sin(k[1]) * sz + (2 - np.cos(k[0]) - np.cos(k[1]) - np.cos(k[2])) * sy
+
+
+rw = np.random.default_rng(SEED + 7)
+maj_w = max(np.abs(Hw(-k) + Hw(k).conj()).max() for k in rw.uniform(-np.pi, np.pi, (20, 3)))
+nw = 8
+kw = 2 * np.pi * np.arange(nw) / nw
+coefw = {}
+for Rv in itertools.product((-1, 0, 1), repeat=3):
+    acc = np.zeros((2, 2), complex)
+    for kk in itertools.product(kw, repeat=3):
+        acc += -1j * Hw(np.array(kk)) * np.exp(-1j * np.dot(kk, Rv))
+    coefw[Rv] = acc / nw ** 3
+real_w = max(np.abs(c.imag).max() for c in coefw.values())
+anti_w = max(np.abs(coefw[Rv] + coefw[tuple(-np.array(Rv))].T).max() for Rv in coefw)
+zeros_w = []
+for kx0 in (0.0, np.pi):
+    for ky0 in (0.0, np.pi):
+        cz = 2 - np.cos(kx0) - np.cos(ky0)
+        if abs(cz) <= 1:
+            for kz0 in sorted({np.arccos(cz), -np.arccos(cz)}):
+                zeros_w.append(np.array([kx0, ky0, kz0]))
+res_w = max(np.abs(Hw(z)).max() for z in zeros_w)
+jac_w = [np.linalg.det(np.array([[np.cos(z[0]), 0, 0], [0, np.cos(z[1]), 0],
+                                 [np.sin(z[0]), np.sin(z[1]), np.sin(z[2])]])) for z in zeros_w]
+sc_w = []
+for nn in (12, 24):
+    kk_ = 2 * np.pi * np.arange(nn) / nn
+    dw = np.array([[[np.linalg.det(Hw((a, b, c_))).real for c_ in kk_] for b in kk_] for a in kk_])
+    sc_w.append(int((np.sign(dw) != np.sign(np.roll(dw, 1, 0))).sum()))
+V10 = [np.kron(np.eye(2), v) for v in V.values()]
+inv_w = max(np.abs(np.kron(Hw(np.array([0.3, 0.2, 0.1])), np.eye(10)) @ v
+                   - v @ np.kron(Hw(np.array([0.3, 0.2, 0.1])), np.eye(10))).max() for v in V10)
+check("A4w", maj_w < 1e-14 and real_w < 1e-12 and anti_w < 1e-12 and len(zeros_w) == 2 and res_w < 1e-12
+      and all(abs(abs(j) - 1) < 1e-12 for j in jac_w) and sc_w == [0, 0] and inv_w < 1e-12,
+      "NEGATIVE RESULT kept (2026-11-14): a real determinant does not force a zero surface. Witness H(k) = sin kx s_x + sin ky s_z + (2 - cos kx - cos ky - cos kz) s_y: a range-one real Majorana hopping (A_R real, A_-R = -A_R^T), H(-k) = -H(k)*, with only the two zeros (0, 0, +-pi/2), nonsingular Jacobian, det H <= 0 with no sign change; H x 1_10 commutes with every Spin(10) vector generator. So invariant five-mode Majorana bands can have isolated zero-energy cones",
+      f"zeros {[np.round(z / np.pi, 3).tolist() for z in zeros_w]} (units of pi), |H| there {res_w:.0e}, Jacobian dets {[round(float(j), 3) for j in jac_w]}; det sign changes n=12, 24: {sc_w}; |[H x 1, 1 x V]| {inv_w:.0e}")
 
 print("== B. the 16-component reading: one band h(k) x 1_16, light and mirror cones")
 
@@ -322,9 +365,20 @@ ovK = np.abs(rowsF @ phiK).max()
 kL = nds[0][0] if nds[0][1] == 1 else nds[1][0]
 kM = [x[0] for x in nds if x[1] == -1][0]
 FL = lambda p: np.prod((1 - np.exp(1j * (p - kL))) / 2)
-check("B5", ovR < 1e-14 and ovK > 0.1 and abs(FL(kL)) < 1e-14 and abs(FL(kM)) > 1e-3,
-      "THEOREM momentum selection without non-locality: the cube-averaged field (range one cube, the zoom kernel) has form factor prod(1 + e^{ip_i})/sqrt8, exactly 0 at R and sqrt8 at K, so a charge-4 term of filtered fields never touches the light R cone (all orders, finite volume) and acts fully on the mirror K cone; for a generic light node kL the range-one complex filter prod(1 - e^{i(p - kL)})/2 does the same",
-      f"L=4: max|<row, R>| {ovR:.0e}, max|<row, K>| {ovK:.3f}; generic band |F(kL)| {abs(FL(kL)):.0e}, |F(kM)| {abs(FL(kM)):.3f}")
+
+
+def Fcube(p):
+    """form factor of the cube-averaged field, sum over the 8 cube offsets r of e^{ip.r}/sqrt8."""
+    return sum(np.exp(1j * np.dot(p, r)) for r in cube) / np.sqrt(8)
+
+
+qn = np.array([0.1, 0.05, 0.02])
+F_near = abs(Fcube(Rp + qn))
+F_closed = np.sqrt(8) * np.prod(np.abs(np.sin(qn / 2)))
+check("B5", ovR < 1e-14 and ovK > 0.1 and abs(FL(kL)) < 1e-14 and abs(FL(kM)) > 1e-3
+      and abs(F_near - F_closed) < 1e-14 and F_near > 1e-6,
+      "EXACT NODE (narrowed 2026-11-14): the cube-averaged field (range one cube, the zoom kernel) has form factor prod(1 + e^{ip_i})/sqrt8, exactly 0 at R and sqrt8 at K, so a filtered charge-4 term contains no component on the exact Fourier mode R; it is NOT zero near R: |F(R + q)| = sqrt8 prod|sin(q_i/2)|, so light-cone modes at R + q enter with weight O(|q_1 q_2 q_3|) and their decoupling at finite interaction order is not proved; for a generic light node kL the range-one complex filter prod(1 - e^{i(p - kL)})/2 has the same exact node at kL",
+      f"L=4: max|<row, R>| {ovR:.0e}, max|<row, K>| {ovK:.3f}; |F(R+q)| at q = {qn.tolist()}: {F_near:.3e} = closed form {F_closed:.3e}; generic band |F(kL)| {abs(FL(kL)):.0e}, |F(kM)| {abs(FL(kM)):.3f}")
 
 eps = 0.05
 r3 = np.random.default_rng(SEED + 2)
@@ -343,11 +397,18 @@ for p0 in (Kp, Rp):
     moved.append((p, int(np.sign(np.linalg.det(jac(dP, p)))), np.linalg.norm(dP(p))))
 dM = np.linalg.norm(np.angle(np.exp(1j * (moved[0][0] - Kp))))
 dL = moved[1][0] - Rp
-FR = abs(np.prod((1 + np.exp(1j * moved[1][0])) / np.sqrt(8)))
+# light-cone filter weight with the displayed normalisation prod(1 + e^{ip_i})/sqrt8 (corrected 2026-11-14:
+# the held runner divided EACH factor by sqrt8, a factor 8 too small)
+FR = abs(np.prod(1 + np.exp(1j * moved[1][0])) / np.sqrt(8))
+FR_cube = abs(Fcube(moved[1][0]))
+FR_closed = np.sqrt(8) * np.prod(np.abs(np.sin(dL / 2)))
+FR_old = abs(np.prod((1 + np.exp(1j * moved[1][0])) / np.sqrt(8)))
 dE = abs(e0(moved[0][0]) - e0(moved[1][0]))
-check("B6", moved[0][1] == 1 and moved[1][1] == -1 and max(m_[2] for m_ in moved) < 1e-10 and dM < 3 * eps and np.linalg.norm(dL) < 3 * eps,
-      "FINITE DIAGNOSTIC (CONE genericity) a random local change of max size eps = 0.05 (also in the identity part) moves both cones by O(eps) and keeps their chiralities: the mirror lies |dk| from K (SMG term detuned by 4|dk|, harmless while 4 v |dk| << mirror gap: an open condition, not a tuned point); the light cone gets filter weight |F| ~ prod|dk_i|; the node energies split by dE (a light-cone chemical potential: Fermi pocket, not a mass)",
-      f"|dk_M| {dM:.3f}; |dk_L| {np.linalg.norm(dL):.3f}; |F(light)| {FR:.1e}; dE {dE:.3f}")
+check("B6", moved[0][1] == 1 and moved[1][1] == -1 and max(m_[2] for m_ in moved) < 1e-10 and dM < 3 * eps
+      and np.linalg.norm(dL) < 3 * eps and abs(FR - FR_cube) < 1e-15 and abs(FR - FR_closed) < 1e-15
+      and abs(FR / FR_old - 8) < 1e-9,
+      "FINITE DIAGNOSTIC (one seeded perturbation) a random local change of max size eps = 0.05 (also in the identity part) moved both cones by O(eps) and kept their chiralities; the mirror lies |dk| from K (the SMG term is detuned by 4|dk|; that a mirror gap survives is a supplied premise, not computed); the light cone's filter weight is |F(R + dk)| = sqrt8 prod|sin(dk_i/2)| (displayed normalisation; the held per-factor value was 8 times smaller); the node energies split by dE (a light-cone chemical potential: Fermi pocket, not a mass)",
+      f"|dk_M| {dM:.3f}; |dk_L| {np.linalg.norm(dL):.3f}; |F(light)| {FR:.2e} (cube sum {FR_cube:.2e}, closed form {FR_closed:.2e}; held per-factor value {FR_old:.2e}); dE {dE:.3f}")
 
 w, Dl = 0.25, 1.0
 om = 1e-3
@@ -364,3 +425,4 @@ print("cited: why-three-dims (CONE), why-five-modes, site-so10 (item 8, A4), lig
 print("not computed: interacting Spin(10) dynamics (SMG gap of the K mirror), gauge links, light-cone chemical potential")
 print(f"elapsed {time.time() - T0:.1f} s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+sys.exit(1 if NF else 0)

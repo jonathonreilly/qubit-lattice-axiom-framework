@@ -10,6 +10,7 @@ C. CONTINUUM: register photon band from the plaquette phase, Coulomb law from Ga
    energy (vacuum-standard) of register states and its edge response.
 Labels: [T] exact theorem check, [D] finite diagnostic, [E] estimate against measurement.
 """
+import sys
 import time
 import numpy as np
 import scipy.sparse as sp
@@ -60,10 +61,25 @@ S = sp.csr_matrix((np.ones(len(Srows)), (Srows, Scols)), shape=(3 * Lp ** 3, 3 *
 res = abs(R @ Dc - Dp @ S).max()
 nper = np.diff(S.indptr)
 check(res == 0 and set(nper) == {4},
-      "[T] A1 a block's eight child Gauss laws sum to the parent's exactly when each parent bond's electric"
-      " value is the total of the 4 child bonds crossing its face and the block charge is the children's total"
-      " (R D_c = D_p S, integer identity; 12 internal bonds per block are unconstrained by it)",
+      "[T] A1 sufficiency: if each parent value is the total S of the 4 child bonds crossing its face, the eight child"
+      " Gauss laws sum to the parent's (R D_c = D_p S; 12 internal bonds per block unconstrained)",
       f"3^3 -> 6^3 torus, max |R D_c - D_p S| = {res}, child bonds per face {sorted(set(nper))}")
+# A1b: the face-total rule is not forced by the Gauss sum alone. S + K satisfies R D_c = D_p (S + K) iff D_p K = 0;
+# witness K = z l^T with z a parent plaquette cycle (D_p z = 0) and l reading one child bond; control: z -> y with D_p y != 0.
+nlp = 3 * Lp ** 3
+z = np.zeros(nlp)
+v0 = 0; e0 = np.ravel_multi_index((1, 0, 0), (Lp,) * 3); e1 = np.ravel_multi_index((0, 1, 0), (Lp,) * 3)
+z[v0 * 3 + 0] += 1; z[e0 * 3 + 1] += 1; z[e1 * 3 + 0] -= 1; z[v0 * 3 + 1] -= 1
+lvec = np.zeros(3 * Vc); lvec[5] = 1.0
+Kw = sp.csr_matrix(np.outer(z, lvec))
+res_K = abs(R @ Dc - Dp @ (S + Kw)).max()
+y = np.zeros(nlp); y[0] = 1.0
+Ky = sp.csr_matrix(np.outer(y, lvec))
+res_y = abs(R @ Dc - Dp @ (S + Ky)).max()
+check(res_K == 0 and abs(Dp @ z).max() == 0 and abs(Kw).max() > 0 and res_y > 0.5,
+      "[T] A1b NEGATIVE RESULT kept: not 'exactly when'; S + K with D_p K = 0 also works (K = z l^T, z a parent"
+      " plaquette cycle); control: D_p K != 0 fails",
+      f"max |R D_c - D_p (S + K)| = {res_K} with |K| = {abs(Kw).max():.0f}; control {res_y:.0f}")
 
 # Z_N toy on 2D tori
 N = 3
@@ -345,6 +361,24 @@ check(monotone and abs(Surv - Pe).max() < 1e-12,
       " unique (move exactly the shortfall); with P_e falling at every half-tick the actual configuration's"
       " survival in the excited level equals the Born P_e(t) exactly",
       f"max |S - P_e| {abs(Surv - Pe).max():.1e} over {steps} ticks, t_max = {t[-1]*GammaWW:.1f}/Gamma")
+# B1b: uniqueness of the change-charging plan in a two-configuration block, by linear programming
+from scipy.optimize import linprog
+rng_u = np.random.default_rng(13)
+uniq_err = 0.0
+for _ in range(50):
+    pa0, pa1 = rng_u.random(2)
+    m0, m1 = np.array([pa0, 1 - pa0]), np.array([pa1, 1 - pa1])
+    Aeq = np.array([[1, 1, 0, 0], [0, 0, 1, 1], [1, 0, 1, 0], [0, 1, 0, 1]], float)   # x = (aa, ac, ca, cc)
+    beq = np.concatenate([m0, m1]); cst = np.array([0, 1, 1, 0], float)
+    r0 = linprog(cst, A_eq=Aeq, b_eq=beq, bounds=(0, None), method="highs")
+    A2 = np.vstack([Aeq, cst]); b2 = np.concatenate([beq, [r0.fun]])
+    lo = linprog(np.array([0, 1, 0, 0.]), A_eq=A2, b_eq=b2, bounds=(0, None), method="highs").fun
+    hi = -linprog(np.array([0, -1, 0, 0.]), A_eq=A2, b_eq=b2, bounds=(0, None), method="highs").fun
+    uniq_err = max(uniq_err, hi - lo, abs(lo - max(0.0, pa0 - pa1)), abs(r0.fun - abs(pa1 - pa0)))
+check(uniq_err < 1e-9,
+      "[T] B1b in a two-configuration block the change-charging plan is unique: over the optimal face the moved mass"
+      " a -> c has one value, max(0, p0_a - p1_a), and the cost is |p1 - p0| (50 random odds pairs, LP min and max)",
+      f"max (hi - lo, |lo - shortfall|, |cost - |dp||) = {uniq_err:.0e}")
 win = (t > 1 / GammaWW) & (t < 6 / GammaWW)
 rate = -np.polyfit(t[win], np.log(Surv[win]), 1)[0]
 emp = np.array([np.mean(tleave > tt) for tt in t[win][::200]])
@@ -452,8 +486,19 @@ check(gauss_ok and max(abs(np.array(ax + dg) - 1)) < 0.02,
 k0 = np.array([0.07, 0.04, 0.02])
 omega = lambda a, k: np.sqrt(((2 / a) ** 2 * np.sin(k / 2) ** 2).sum())
 a0 = np.array([1.0, 1.0, 1.0]); h = 1e-6
-dlog = np.array([(omega(a0 * np.exp(h * np.eye(3)[i]), k0) - omega(a0 * np.exp(-h * np.eye(3)[i]), k0)) / (2 * h)
-                 for i in range(3)])
+
+
+def dlog_of(k, a=a0):
+    return np.array([(omega(a * np.exp(h * np.eye(3)[i]), k) - omega(a * np.exp(-h * np.eye(3)[i]), k)) / (2 * h)
+                     for i in range(3)])
+
+
+def tii_exact(k, a=a0):
+    """exact diagonal edge response -d omega/d ln a_i = 4 sin^2(k_i/2)/(a_i^2 omega)."""
+    return 4 * np.sin(k / 2) ** 2 / a ** 2 / omega(a, k)
+
+
+dlog = dlog_of(k0)
 nhat2 = k0 ** 2 / (k0 ** 2).sum()
 w0 = omega(a0, k0)
 # local energy of a register mode in the electric basis: eigenstates give a configuration-independent value
@@ -468,20 +513,29 @@ vac = xv.T[:, :] @ np.eye(nmax)[:, 0]; one = xv.T @ np.eye(nmax)[:, 1]
 mask = abs(one) > 1e-3 * abs(one).max()
 locv = np.real(loc(vac)[mask]); loc1 = np.real(loc(one)[mask])
 dep1 = loc1 - locv
-check(abs(dlog.sum() + w0) < 1e-8 * w0 and abs(-dlog / w0 - nhat2).max() < 2e-3
-      and np.ptp(locv) < 1e-6 * w0 and abs(dep1 - w0).max() < 1e-6 * w0,
-      "[T] C4 vacuum standard for registers: an eigenstate's local energy is the same at every electric"
-      " configuration, so the vacuum's zero-point (w/2 per mode, any edges) subtracts to 0 at every actual"
-      " configuration, and a one-photon register sources exactly hbar w; omega_k(edges) is homogeneous of"
-      " degree -1, so the edge response is traceless with T^ij = w n^i n^j (null dust)",
-      f"one photon departure/w - 1 {abs(dep1/w0-1).max():.1e}; sum_i dw/dln a_i + w {dlog.sum()+w0:.1e};"
-      f" max |T^ii/w - n_i^2| {abs(-dlog/w0-nhat2).max():.1e}")
+check(np.ptp(locv) < 1e-6 * w0 and abs(dep1 - w0).max() < 1e-6 * w0,
+      "[T] C4 vacuum standard: an eigenstate's local energy is the same at every electric configuration, so the"
+      " zero-point subtracts to 0 and a one-photon register sources exactly hbar w (one mode, 60 levels)",
+      f"one photon departure/w - 1 {abs(dep1/w0-1).max():.1e}; vacuum local-energy spread {np.ptp(locv):.1e}")
+# C4b (narrowed 2026-11-14): exact homogeneity gives the trace; the null-dust form holds only at long wavelength.
+kfin = np.array([2.0, 1.0, 0.3])
+rng_c = np.random.default_rng(31)
+trace_err = max(abs(dlog_of(kk).sum() + omega(a0, kk)) / omega(a0, kk)
+                for kk in [k0, kfin] + list(rng_c.uniform(-np.pi, np.pi, (5, 3))))
+aniso = np.array([1.0, 1.3, 0.8])
+trace_aniso = abs(dlog_of(kfin, aniso).sum() + omega(aniso, kfin)) / omega(aniso, kfin)
+tii_err = max(abs(-dlog_of(kk) - tii_exact(kk)).max() / omega(a0, kk) for kk in (k0, kfin))
+nd_small = abs(tii_exact(k0) / w0 - nhat2).max()
+nd_half = abs(tii_exact(k0 / 2) / omega(a0, k0 / 2) - (k0 / 2) ** 2 / ((k0 / 2) ** 2).sum()).max()
+nd_fin = abs(tii_exact(kfin) / omega(a0, kfin) - kfin ** 2 / (kfin ** 2).sum()).max()
+check(trace_err < 1e-8 and trace_aniso < 1e-8 and tii_err < 1e-8 and nd_fin > 1e-2 and 3.5 < nd_small / nd_half < 4.5,
+      "[T] C4b degree -1 homogeneity: T^ii = 4 sin^2(k_i/2)/(a_i^2 w) has trace exactly w at every k. NEGATIVE RESULT"
+      " kept: null dust T^ii = w n_i^2 only as k -> 0 (O(k^2) error); off-diagonal stress not computed",
+      f"trace rel err {trace_err:.0e} (anisotropic edges {trace_aniso:.0e}); T^ii vs closed form {tii_err:.0e};"
+      f" |T^ii/w - n_i^2|: k0 {nd_small:.2e}, k0/2 {nd_half:.2e} (ratio {nd_small/nd_half:.2f}), k = (2, 1, 0.3) {nd_fin:.3f}")
 zp = 0.5 * np.mean(np.sqrt(lk[1:]))
-check(True,
-      "[E] C5 without the vacuum standard the register zero-point would source ~ (1/2)<w_k>/cell ~ 1 Planck"
-      " density per cell against the measured rho_Lambda ~ 1e-123 Planck: the subtraction is required, and it"
-      " removes the zero-point's edge derivative too (CL-3 must count the plaquette phase from the links'"
-      " vacuum on the same edges)",
-      f"<w_k>/2 on 4^3 = {zp:.2f} per link-cell in lattice units")
+print("ESTIMATE (not counted): C5 unsubtracted zero-point ~ (1/2)<w_k>/cell, one Planck density per cell if the cell"
+      f" is Planck-sized (supplied), against rho_Lambda ~ 1e-123 | <w_k>/2 on 4^3 = {zp:.2f}")
 print(f"elapsed_seconds {time.time()-T0:.1f}")
 print(f"TOTAL: PASS={NP[0]} FAIL={NP[1]}")
+sys.exit(1 if NP[1] else 0)

@@ -19,7 +19,11 @@ runner: scripts/two_layer_cube_tick_has_exact_so4_and_no_corner_su4_2026_10_22.p
 
 # The two-layer cube tick has an exact so(4), and its corner labels carry no su(4)
 
-Claim type: bounded_theorem. Runner: runner.py (32 checks, PASS=32 FAIL=0, about 7 s, under 250 MB).
+Claim type: bounded_theorem.
+Primary runner: `scripts/two_layer_cube_tick_has_exact_so4_and_no_corner_su4_2026_10_22.py`.
+It ends with `TOTAL: PASS=32 FAIL=0` in about 7 s, under 250 MB, and exits nonzero if any check fails.
+
+Local labels and sources (2026-11-14). CL-1 is the update law of the originating three-law register, a supplied model choice with zero premise weight, not the entry of the same number in `docs/CANDIDATE_LAWS.md`. Ruleset C (a brainstorm of 2026-10-22), face-clause-unification, the open block-tick note #9884 and the pati-salam draft are not in this repository; they are recorded only in the consolidation map, and what is said of them is a historical reported result, unverified here. #9882 is [the block-covariance note](BLOCK_COVARIANCE_GIVES_ABELIAN_OR_COPY_U2_AND_NO_REGISTER_SELECTS_THE_GAUGE_GROUP_BOUNDED_THEOREM_NOTE_2026-10-21.md) and site-so10 is [#9894](RUNG_ONE_CELL_REGISTER_CARRIES_THE_ONE_GENERATION_MULTIPLET_PATTERN_BOUNDED_THEOREM_NOTE_2026-10-21.md).
 
 ## Question
 
@@ -77,7 +81,7 @@ su(4) acting on corner labels commutes with both the tick and the rotations.
      so they act on the light states at K = 0. They act on the copy factor. The first-order algebra that commutes with
      them is only span{1, Gamma} for one layer, and u(2) + u(2) = layer x {1, Gamma} for two layers.
    - So no su(4) commutes with both the tick and the rotations, exactly or emergently.
-   - This is the brainstorm's spin-versus-taste tension, settled: the corners carry spin x Dirac index x copy, and the
+   - This is the brainstorm's spin-versus-taste tension, answered in the supplied two-layer model: the corners carry spin x Dirac index x copy, and the
      copy index turns under rotations.
 
 4. **Hop-phase choices (D1-D6).**
@@ -104,7 +108,7 @@ su(4) acting on corner labels commutes with both the tick and the rotations.
 
 ## Verdict
 
-Ruleset C, as stated (C1 + C2), is dead before any quartic or QMC is run:
+Ruleset C, as stated (C1 + C2), fails its own decisive test before any quartic or QMC is run, for the supplied free tick:
 - The free two-layer tick has the exact internal algebra so(4) = su(2)_layer + su(2)_pair.
 - Its corner labels carry no internal generator.
 - The only su(4) is an emergent Dirac-order flavour symmetry of copy x layer. The lattice breaks it at O(K^2) and the

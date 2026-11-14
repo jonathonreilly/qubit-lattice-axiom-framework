@@ -428,5 +428,6 @@ check('E1 N = 1: u(1); N = 2: so(4) (B6); N = 3: 1_8 x M_3 plus eps x (antisym 3
       'dim 15: an exact su(4) appears only by supplying three layers, acting on the layer index',
       dimsN[1][:3] == (1, 0, 1) and dimsN[3][:4] == (9, 3, 15, [15]))
 print('VERDICT: exact internal algebra of the free two-layer tick = so(4) = su(2)_layer + su(2)_pair; '
-      'no su(4) on corner labels (exact or at the Dirac point); Ruleset C as stated (C1+C2) is dead; an exact su(4) needs N = 3 layers (so(2N)), i.e. a supplied count.')
+      'no su(4) on corner labels (exact or at the Dirac point); Ruleset C as stated (C1+C2) fails its own decisive test; an exact su(4) needs N = 3 layers (so(2N)), i.e. a supplied count.')
 print(f'\nTOTAL: PASS={PASS} FAIL={FAIL}')
+sys.exit(1 if FAIL else 0)

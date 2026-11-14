@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/rung_one_cell_register_carries_the_one_generation_multiplet_pattern_2026_10_21.py
-runner_sha256: bcf645a644c40d4375daa5f3ea1a137fd347ab7b069f9a26cade890eced5104e
-input_fingerprint_sha256: 3430d33fada355616c3026cb7059fd34d4041bbbbfcf679469909509efa356f5
+runner_sha256: 7a143476858d622d19075281b9524c8ca017532dccba92f7f3420b39f1c5ebea
+input_fingerprint_sha256: cf1ef56a9b1a2517c5c4dc9e3369aa7d1001c1be3bb360f2200d9f19ad141875
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.32
+elapsed_sec: 2.78
 status: ok
 ----- stdout -----
 == Z. rung 1: a 2^3 cell of one-mode sites as the internal register of a super-site
@@ -34,7 +34,7 @@ status: ok
    |q_n| < 1.5e-21 e, |q_e + q_p| ~< 1e-21 e (neutrality); LEP C_A = 2.89 +- 0.21, C_F = 1.30 +- 0.09 (SU(3) triplets)
    parity violation (sin^2 theta_eff = 0.2315 at LEP): weak couplings are chiral
 supplied: the rung-1 rule (CL-3 at rung 1, cell modes carried in parallel), the plain internal action, the mass matrix, the chiral assignment, the 5-mode register; cited: none of the anomaly-free SMG literature is rederived.
-elapsed_seconds 3.5
+elapsed_seconds 2.6
 
 TOTAL: PASS=16 FAIL=0
 

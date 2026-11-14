@@ -2,10 +2,11 @@
 """Emergent photon from the sites' own qubits (charge-ice route). Supplied models, finite checks, no physical
 identification.
 
- A  One fermion mode has only 1 and n as parity-even operators, so a site-valued electric flux must be E_s = n_s - 1/2,
-    oriented from the site's even block centre to its odd one (sites = bonds of the body-centred block-centre lattice).
-    Its divergence is q_e = N_e - 4, q_o = 4 - N_o. sum q = 0 identically, and c_s^dag adds (+1, -1): a Margolus fermion
-    is an emergent-neutral dipole, never a charge.
+ A  One fermion mode has only 1 and n as parity-even operators, so a site-valued electric flux is alpha n_s + beta; the
+    normalisation alpha = 1, beta = -1/2 (E_s = n_s - 1/2) and the orientation from the site's even block centre to its
+    odd one are SUPPLIED (sites = bonds of the body-centred block-centre lattice). Its divergence is q_e = N_e - 4,
+    q_o = 4 - N_o. sum q = 0 identically, and c_s^dag adds (+1, -1), for every (alpha, beta) up to the factor alpha: a
+    Margolus fermion is an emergent-neutral dipole, never a charge. The count 4 of the ice rule rests on beta/alpha = -1/2.
  B  The ice rule (all counts 4) does not follow from CL-3/CL-5: a half-tick conserves its own partition's counts and
     changes the other's; the tick has no flat band, so no finite-region quadratic charge at any rung; the half-filled
     sea has Var(N_b) > 0; no single-block move preserves ice.
@@ -104,7 +105,8 @@ occ_gen, _ = ring_mc(occ_ice, 40)
 print('== A. one-qubit electric flux and its charges')
 par = np.diag([1.0, -1.0]); basis = [np.eye(2)[:, [i]] @ np.eye(2)[[j], :] for i in range(2) for j in range(2)]
 even_ops = np.linalg.matrix_rank(np.array([(b + par @ b @ par).ravel() for b in basis]))
-check('A1 parity-even operators of one mode span {1, n} (dim 2): a site flux variable is E_s = n_s - 1/2, its only flip is c or c^dag (odd)',
+check('A1 parity-even operators of one mode span {1, n} (dim 2): a site flux variable is affine, E_s = alpha n_s + beta; '
+      'this note SUPPLIES alpha = 1, beta = -1/2 (normalisation E = +-1/2) and the orientation even -> odd; its only flip is c or c^dag (odd)',
       even_ops == 2, f'dim = {even_ops}')
 okA = True
 for _ in range(200):
@@ -113,8 +115,26 @@ for _ in range(200):
 s0 = 123; occ2 = occ.copy(); occ2[s0] = 1 - occ[s0]; Ne2, No2 = T.counts(occ2); sg = 1 if occ[s0] == 0 else -1
 dq_e = (Ne2 - Ne) * sg; dq_o = -(No2 - No) * sg
 okA &= (dq_e[T.be[s0]] == 1 and dq_o[T.bo[s0]] == -1 and np.abs(dq_e).sum() == 1 and np.abs(dq_o).sum() == 1)
-check('A2 sum of divergences q_e = N_e - 4, q_o = 4 - N_o vanishes for every configuration (200 random); adding a fermion at a site puts +1 on its even block and -1 on its odd block',
+check('A2 with the supplied E = n - 1/2: sum of divergences q_e = N_e - 4, q_o = 4 - N_o vanishes for every configuration (200 random); adding a fermion at a site puts +1 on its even block and -1 on its odd block',
       okA, 'a Margolus fermion is an emergent dipole of length sqrt3 (one body-centred bond), net emergent charge 0')
+# A2b: which conclusions depend on the supplied (alpha, beta)? For general E = alpha n + beta the divergences are
+# q_e = alpha N_e + 8 beta and q_o = -(alpha N_o + 8 beta): total zero and the dipole (+alpha, -alpha) hold for every
+# (alpha, beta); the ice rule "every count 4" is q = 0 only for beta / alpha = -1/2.
+ra2 = np.random.default_rng(77)
+okB = True
+for _ in range(20):
+    al, be_ = ra2.normal(), ra2.normal()
+    occ = ra2.integers(0, 2, n).astype(float); Ne, No = T.counts(occ)
+    qe, qo = al * Ne + 8 * be_, -(al * No + 8 * be_)
+    okB &= abs(qe.sum() + qo.sum()) < 1e-9
+    occ3 = occ.copy(); occ3[s0] = 1 - occ[s0]; Ne3, No3 = T.counts(occ3); sg3 = 1 if occ[s0] == 0 else -1
+    dqe = (al * Ne3 + 8 * be_ - qe) * sg3; dqo = (-(al * No3 + 8 * be_) - qo) * sg3
+    okB &= abs(dqe[T.be[s0]] - al) < 1e-12 and abs(dqo[T.bo[s0]] + al) < 1e-12
+Ne_i, No_i = T.counts(occ_ice)
+ice_q = lambda al, be_: np.abs(al * Ne_i + 8 * be_).max()
+check('A2b neutral dipoles for every affine flux alpha n + beta (20 random pairs); the ice count 4 needs the supplied '
+      'beta/alpha = -1/2 (control: -0.4 leaves the count-4 state charged)',
+      okB and ice_q(1.0, -0.5) < 1e-12 and ice_q(1.0, -0.4) > 0.5, f'ice-state charge at beta/alpha = -0.5: {ice_q(1.0, -0.5):.0e}, at -0.4: {ice_q(1.0, -0.4):.2f}')
 
 # ---------------- B. does the ice rule follow from CL-3 / CL-5 ?
 print('== B. is the ice rule (every count = 4) forced?')
@@ -302,8 +322,19 @@ check('D3 classical ice ensemble (8^3 sites, ring flips on all 24 cycles, counts
       f'flips {flips}; S_xx: k=(1,0,0) {xx_par:.1e}, (2,0,0) {xx_par2:.1e}, (0,1,0) {xx_perp:.3f}; random control (1,0,0) {Sr[0][0, 0]:.3f}')
 # ---------------- E. charges and speeds
 print('== E. charges, speeds and masses')
-check('E1 count defects carry (q, n_F) = (+1, +1/2) [even 5], (-1, -1/2) [even 3], (-1, +1/2) [odd 5], (+1, -1/2) [odd 3]; total n_F = sum_e q_e = -sum_o q_o, so every local fermion-number change is emergent-neutral',
-      True, 'defects hop at first order (amplitude t/sqrt3 per CL-3 edge, inside the opposite partition) and are automatically minimally coupled')
+# E1 (computed 2026-11-14; the held runner asserted it with True): n_F - n/2 = sum_e q_e = -sum_o q_o, so each defect
+# carries n_F = q/2 on an even cube and -q/2 on an odd cube; the first-order defect hop is the edge amplitude |W0| = 1/sqrt3.
+okE = True
+for _ in range(200):
+    occ = rng.integers(0, 2, n).astype(float); Ne, No = T.counts(occ)
+    dN = occ.sum() - n / 2; qe, qo = Ne - 4, 4 - No
+    okE &= abs(dN - qe.sum()) < 1e-12 and abs(dN + qo.sum()) < 1e-12 and abs(dN - 0.5 * (qe.sum() - qo.sum())) < 1e-12
+qn = {'even 5': (5 - 4, +0.5 * (5 - 4)), 'even 3': (3 - 4, +0.5 * (3 - 4)), 'odd 5': (4 - 5, -0.5 * (4 - 5)), 'odd 3': (4 - 3, -0.5 * (4 - 3))}
+hop_amp = np.abs(W0[np.abs(W0) > 1e-12])
+check('E1 defects carry (q, n_F) = (+1, +1/2) [even 5], (-1, -1/2) [even 3], (-1, +1/2) [odd 5], (+1, -1/2) [odd 3]: n_F - n/2 = sum_e q_e = -sum_o q_o (200 random); hop amplitude t/sqrt3',
+      okE and qn == {'even 5': (1, 0.5), 'even 3': (-1, -0.5), 'odd 5': (-1, 0.5), 'odd 3': (1, -0.5)}
+      and np.allclose(hop_amp, 1 / r3), f'|hop| {hop_amp.min():.6f}..{hop_amp.max():.6f}')
+print("NOT CHECKED (argued, not counted): the defects are 'automatically minimally coupled' to the emergent field")
 # free reference: Dirac speed of H_hop = t (W_e + W_o) and of the CL-3 tick, cell momentum K, converted to site units
 Hreal = T.half(W0, T.even) + T.half(W0, T.odd)
 def slope(Mreal, K0, herm):
@@ -327,3 +358,4 @@ print('perturbation; Gaussian reading of the compact ring model; positive/negati
 print('Coulomb phase of spin-1/2 ring models (pyrochlore quantum spin ice; cubic quantum dimers); none on this lattice.')
 print(f'elapsed_seconds {time.time() - T0:.1f}')
 print(f'TOTAL: PASS={PASS} FAIL={FAIL}')
+sys.exit(1 if FAIL else 0)

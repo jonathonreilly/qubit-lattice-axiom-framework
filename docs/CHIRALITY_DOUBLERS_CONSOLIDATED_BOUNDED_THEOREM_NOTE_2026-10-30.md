@@ -6,6 +6,8 @@ claim_scope: "Historical navigation map, with no claim of its own, of the 21 sou
 
 # Chirality, doublers and mirror removal: navigation map of the carried notes
 
+**Primary runner:** `scripts/chirality_doublers_navigation_map_check_2026_11_14.py` (checks that each section below quotes its carried note's current claim_scope verbatim, that each carried note appears once, and that every repository link resolves; the carried notes' science is checked by their own runners).
+
 **What this file is.** A map of the 21 notes, runners and caches carried in this PR, and a historical index of the 36 logged source PRs that are not carried. It draws no conclusion of its own. Each carried note is a separate claim surface; read it, not this map. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) are not changed, and nothing here is adopted.
 
 **Standing.** Every carried statement is argued, not checked. A landing review held this PR on 2026-11-13 (findings 1-8); the repairs of 2026-11-14 are listed per note below and in correction 12. Each repaired statement waits for a fresh check.

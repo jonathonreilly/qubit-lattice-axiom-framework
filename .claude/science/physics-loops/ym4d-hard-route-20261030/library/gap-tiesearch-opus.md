@@ -247,3 +247,8 @@ kbar_(s,0) >= 4 beta^2 lambda, about 51 to 61 at beta 2.3 (zero-field value 2 be
 What this does NOT establish: any bound. It covers 7 slices, their named modes, t = 0 only, slab thickness 6, sides up to 16;
 K3 failed at 23 percent, so the L = 16 values carry about 15 percent errors, not the 6 percent of the blocks.
 
+**5.4 beta 2.4 replicas, raw log lines.**
+- z-twist pi/2, L = 16, colour 3: hot (K3, seed 31) 9.79 +- 1.47 [6.49]; cold seed 32 9.36 +- 2.12 [8.49]; (cold seed 11: 17.04 +- 5.61).
+  K3: hot 9.79 against the mean of the cold chains so far (17.04 + 9.36)/2 = 13.2: ratio 0.74, outside 15 percent; against seed 32
+  alone, 5 percent. The seed-11 value is the high one.
+

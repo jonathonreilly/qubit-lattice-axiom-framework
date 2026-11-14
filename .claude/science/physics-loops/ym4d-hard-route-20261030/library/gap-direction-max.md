@@ -3,7 +3,8 @@ lease_until: 2026-11-14T16:54Z
 
 # gap-direction-max (queue row 931): which order-one crux form for SEED-FP passes all fact tests
 
-Status of this file: WORKING, written step by step. Pinned at commit 63cadeea0 on
+Status of this file: FINISHED (Steps 1-8 written; self-check pass applied: table row 14,
+the SMALL-BOX wording and one notation clash corrected). Written step by step. Pinned at commit 63cadeea0 on
 `claude/ym4d-hard-route`. Author run, Claude Fable 5.2 at max effort, Mac mini worker 2,
 started 2026-11-14T04:54Z. Nothing here is a public claim; research-stage working state.
 
@@ -31,7 +32,10 @@ Labels used below: PROVED (argument written here in full, checkable by hand), CO
 
 ## Step log
 
-### Step 1a (2026-11-14T05:10Z): inputs read in full (READ = read at the pinned commit, not re-proved)
+(Clock: file created 2026-11-14T04:54Z; Steps 1-6 written by 05:41Z; Steps 7-8 after the GUIDE run
+of 05:41Z. Per-step times were not recorded.)
+
+### Step 1a: inputs read in full (READ = read at the pinned commit, not re-proved)
 
 Read in full: `library/gap-seam-max.md` (row 929, 478 lines), `library/gap-oddgap-max.md`
 (row 930, 620 lines), `library/gap-status-1113.md` (row 912, 449 lines), FINISH rows 929-935.
@@ -69,7 +73,7 @@ count of soft or degenerate states (the even count sum_i r_i^t for glue; the odd
 constant lambda_odd for flux); response-type factors ((FR), the seam Delta at the endpoint)
 are NOT selective: frozen groups and large U(1) boxes pass them.
 
-### Step 1b (2026-11-14T05:25Z): FINISH rows 913-928 read (RESULT parts; READ)
+### Step 1b: FINISH rows 913-928 read (RESULT parts; READ)
 
 Forms added after the 912 consolidation, with the check verdict that binds each:
 
@@ -88,7 +92,7 @@ Forms added after the 912 consolidation, with the check verdict that binds each:
 
 Step 1 is complete. Step 2 (overlap check) next.
 
-### Step 2 (2026-11-14T06:20Z): overlap check (rule 0a) for what this file attacks
+### Step 2: overlap check (rule 0a) for what this file attacks
 
 Named open lemmas already owned by a row; I do NOT attack them: (CUT-TYP), (LSI-weak), averaged
 (FORCE-COV) (row 930); (SEAM), (SEAM-L1), (XM) (row 929); (VAC-SUB), (VIR-log), (DEF_K) (rows 708,
@@ -114,7 +118,7 @@ credited and not repeated:
 Verdict: no row owns the time-rate form or the vacuum-chain comparison below. I proceed, and I
 keep off every lemma in the first list.
 
-### Step 3 (2026-11-14T06:25Z): the candidate forms against the fact tests
+### Step 3: the candidate forms against the fact tests
 
 Columns: U1 = "false for U(1) Coulomb (Gaussian model)"; FRZ = "false for frozen Q_8, 2T";
 CEIL = "none of its hypotheses is a statement the checked ceilings refute". A crux form must
@@ -135,7 +139,7 @@ have YES in all three. "Stronger" means: implies the target half, no converse kn
 | 11 | Theorem R inputs: (ODD-GAP)_s + (FORCE-COV)_s, sup form (flux) | YES | YES | NO: sup form false in U(1), not volume-free | FAILS CEIL in sup form |
 | 12 | Theorem R inputs with AVERAGED force covariance (flux) | YES | YES | YES | passes; stronger than 2 |
 | 13 | (CUT-TYP) + (LSI-weak) (flux, supplies (ODD-GAP)) | YES: no good environment | YES: gap 0 | YES (typical, not sup) | passes; stronger than 12 |
-| 14 | (KURT)_eta or (WALL)_40 with GLUE (flux) | only through GLUE: U(1) has kappa = 3/2 exactly in 2D and >= 3/2 by symmetry (checks 889, 897) | only through GLUE: Q_8 has kappa = 4 in 2D (check 897) | YES | the flux-side factor is NOT selective; all selectivity sits in GLUE at 160^(-16) |
+| 14 | (KURT)_eta or (WALL)_40 with GLUE (flux) | kurtosis factor: NOT ESTABLISHED. U(1) has kappa >= 3/2 by symmetry (check 889), so it passes every floor up to 3/2; its exact 2D value 3/2 (check 897) is below the floor 1.66, and its 4D value at the box is not known. Through GLUE: YES | kurtosis factor: NO, Q_8 has kappa = 4 in 2D (check 897). Through GLUE: YES | YES | the kurtosis factor is not selective against Q_8; the selectivity of the pair sits in GLUE at 160^(-16) |
 | 15 | (E17), HA, (C2), EXC, (DRESS), (S1) (flux) | YES | YES | HA: NO in background-uniform form (check 870); others YES | pass (HA only off the uniform form); all ask a rate or area law, stronger than 2 |
 | 16 | (VIR-log) / (VAC-SUB) transport along beta (both halves) | YES across the transition (708) | YES | YES | passes; a path statement, stronger than the seed at beta_1; owned by rows 913, 934 |
 | 17 | free-wall engine: (JOIN-TH) + seed on a cold box (both) | only through its seed | (JOIN-TH) is satisfied by frozen groups (910, ARGUED) | YES | the doubling factor is not selective; its seed is forms 1-2 again |
@@ -163,7 +167,7 @@ Findings of the table (the answer to the row's question, part 1).
   needs a time of the order of the volume. So the glue half needs a contraction at the level of
   entropy (a count), not of variance. This is the asymmetry behind "two U(1) carriers".
 
-### Step 4 (2026-11-14T06:45Z): the form, exactly; the SU(2) property; where U(1) breaks
+### Step 4: the form, exactly; the SU(2) property; where U(1) breaks
 
 Notation. B a periodic spatial box, |B| its number of sites; T = T_B(beta) the gauge-invariant
 Wilson transfer operator (all flux sectors), eigenvalues lambda_0 > lambda_1 >= ..., r_i =
@@ -249,7 +253,7 @@ connected AND has a finite centre (compact semisimple). Both parts are needed.
   |k|^2 per mode for k != 0, so every such constant tends to 0 with the box. For SU(2) the orbit
   is the two points +-1. This is necessary, not sufficient: Q_8 has the same two-point orbit.
 
-### Step 5 (2026-11-14T07:05Z): proof attempt on the hardest lemma, stage 1 (variance level)
+### Step 5: proof attempt on the hardest lemma, stage 1 (variance level)
 
 The hardest lemma of Form W is the count in the glue half (F4): bring X from extensive to
 order one in a time of order log |B|. The attempt works on the vacuum slice chain, at one
@@ -315,7 +319,7 @@ on a fixed box (degenerate flat vectors, check 896 D6, ARGUED rate). So all riva
 q = 1 + e^(2 alpha m), Nelson's and Gross's exponent. In the Hamiltonian limit Gross's theorem
 (classical, RECALLED, not rebuilt) makes it equivalent to a log-Sobolev inequality for nu.
 
-### Step 6 (2026-11-14T07:20Z): proof attempt, stage 2 (entropy level), and the exact stop
+### Step 6: proof attempt, stage 2 (entropy level), and the exact stop
 
 Inputs, named.
   (LSI-vac)_alpha: Ent_nu(h) <= E_nu[ |grad h|^2/h ]/(2 alpha) for smooth gauge-invariant densities h.
@@ -334,8 +338,8 @@ Ent_(pi_u)(g). Divide by P g, integrate, use (i): the Fisher information of P g 
 Corollary E1 (PROVED GIVEN the same). The mutual information of two slices at lag s in the
 vacuum chain obeys I(U_0; U_s) <= rho^(s-1) 36 beta |B|, rho = Theta_H/(1 + Theta_H): it reaches
 order one at s of order log |B|.
-Check in one Gaussian mode (by hand): sigma^2 = Var(G) = beta e^(-omega), alpha = gamma = 2 beta sigma,
-so rho = e^(-2 omega), the true entropy rate of that mode.
+Check in one Gaussian mode (by hand): the proxy is Var(G) = beta e^(-omega), and
+alpha = gamma = 2 beta sinh(omega), so rho = e^(-2 omega), the true entropy rate of that mode.
 
 **Why this does not finish, exactly.** (PROVED) I(U_0; U_s) <= X(2s): for each u,
 Ent(p_s(u, .)) <= log(1 + chi^2_u), then Jensen and (5.3). So Corollary E1 is on the necessary
@@ -357,3 +361,98 @@ this lemma (Step 2).
   (LSI-vac) + (SG-step)  --Theorem E-->  entropy contraction  --(E-to-HC), OPEN-->  (HC-vac)
   --Proposition HC-->  X(2m + 2) <= 72 beta |B| e^(-2 alpha m)  -->  Form W at a ~ (16 + 3 log a)/alpha.
   gamma, Gamma^*  --Theorem V-->  E_1 >= (1/2) log(1 + gamma/Gamma^*)   (gap only, no count).
+
+### Step 7: fact tests of the attempt's own statements
+
+- Theorem V. By hand: equality in every photon mode of FP (Step 5). GUIDE (decides nothing; a
+  run can only refute): one-rotor chain T(u, w) = e^(V(u)/2) e^(beta cos(u - w)) e^(V(w)/2),
+  V = h_1 cos + h_2 cos 2, 600 grid points, 8 parameter sets (beta 0.3 to 8), script
+  `/tmp/gap-direction-931/scripts/vchain_guide.py`, log `vchain_guide.log` beside it, run under
+  the numeric lock at 68 percent memory free, peak 0.19 GB. Pass criteria written first. Result:
+  r_1^2 <= Theta/(1 + Theta) in all 8 cases (for example 0.5496 against 0.6303 at beta 2.3, V = 0),
+  and the averaged form holds on the first excited eigenfunction in all 8. Not sharp when nu is a
+  double well: at (beta, h_2) = (1, 4), r_1^2 = 0.536 against 0.998, because one kinetic step
+  crosses a barrier that the gradient form of nu must climb. So Theorem V can lose much when the
+  vacuum law has competing wells; it is exact for a Gaussian vacuum.
+- Theorem E, step (iii) (Fisher information of P g at most 2 sigma^2 times the entropy drop).
+  Same run, 40 random densities per case: largest ratio 0.63, never above 1. In the last case
+  (beta 8) the proxy overflowed to infinity, so that case tests nothing. Not refuted.
+- Averaged forms (PROVED by the same proofs, no supremum over u): ||P f||^2 <= E_nu[Gamma(u)
+  Var_(pi_u)(f)]/gamma, and Fisher(P g) <= 2 E_nu[sigma^2(u) Ent_(pi_u)(g)]. So the sup in Gamma^* and
+  in (SG-step) is a convenience. The ceilings (2/3, 0.775, 4 G_3 = 1.0109, and check 852's
+  "annealed is worst case") bound suprema over the conditioning slice; they do not bound these
+  averaged forms. Whether the averages are volume-free for SU(2) at 2.3 is OPEN.
+- (HC-vac) is needed on ONE box only (PROVED, from Proposition HC's proof): on B = (24a)^3 with
+  alpha (a - 2) >= 16.0 + 3 log a at beta 2.3. No uniformity over boxes is used. This matters,
+  because (HC-vac) at a fixed lattice size is FALSE for SU(2) itself at large beta: the box is
+  then physically small and the lowest gap times the side tends to 0 (RECALLED from
+  `gap-phys-seed.md` Q3: z of order g^(5/3) exp(-12.46/g); not re-derived). **New standing fact
+  test (SMALL-BOX): any proof of a slice-law inequality for SU(2) that does not tie the lattice
+  size a to beta (a at least some a_0(beta) that grows with beta) is wrong.** It joins U(1) and
+  the frozen groups. The toron valley of SU(2) is the same object as the U(1) toron, cut down to a
+  compact orbifold; only the box size lifts it.
+- (LSI-vac). U(1): alpha <= gamma <= 2 beta sinh(omega_min) -> 0 (PROVED for the photon modes of
+  FP). Frozen groups: the form does not exist (not connected); the heat-bath analogue has gap 0
+  (930 F2). SMALL-BOX: must fail for SU(2). Ceilings: one fixed measure, no supremum: YES.
+- (SG-step). U(1): sigma^2 = beta e^(-omega) <= beta on every photon mode (PROVED). So it is
+  group-blind and it is not the carrier of any rival's failure. A proof of it may be group-blind.
+
+### Step 8: the next two attacks, ranked by the chance that the proof dies there
+
+1. **(LSI-vac), or (HC-vac) directly, on the one seed box, for SU(2) Wilson at beta 2.3 to 2.6.**
+   Chance that a proof dies here: above 0.95 in a few lane-hours (author's judgement, no
+   evidence). It is the glue half's true content (the count), and it also gives the flux half
+   (E_1 >= alpha covers the odd sectors, and Proposition HC bounds the full trace). Statement:
+   (HC-vac)_alpha on B = (24a)^3 with alpha (a - 2) >= 16.0 + 3 log a. Fact tests, all automatic:
+   U(1) (E_1 -> 0), frozen Q_8 and 2T (degenerate flat vectors), SMALL-BOX. First place it can
+   die: log Omega is not known to be local (row 895's first stop), so no Bakry-Emery or
+   two-scale criterion has an input; the known range is beta < 1/4 (READ through row 920).
+   The SU(2) step: a lower bound on the Dirichlet form of nu along the directions that are
+   symmetry orbits for U(1) (Step 4). Before any Fable time: one reading row on
+   hypercontractivity of ground-state semigroups in lattice gauge theory and on log-Sobolev
+   constants of ground-state measures (Gross's own papers on Yang-Mills ground states are the
+   first place to look; RECALLED that they exist, not read here).
+2. **(CUT-TYP) of row 930 (the flux half, owned by row 930; named here, not attacked).** Chance
+   of dying: about 0.9. By F4 the flux half needs only variance level, and (CUT-TYP) is the one
+   open lemma on the table whose proof has a named SU(2) step (a uniform cut rotation is not a
+   symmetry of a generic environment). Fact tests as in row 930, plus SMALL-BOX. A flux-only
+   success does not give the seed: the count stays.
+Cheap, group-blind, not a crux (for Opus or Codex, not Fable): (E-to-HC), the discrete-time Gross
+step. Chance of dying about 0.4. Fact test: one Gaussian mode must return Nelson's exponent
+q - 1 = e^(2 omega m) (classical, RECALLED); a GUIDE check of ||P||_(2 -> q) on the rotor chain can
+refute a proposed constant. It turns "(LSI-vac) + (SG-step)" into the seed.
+
+What I advise against. More exact rewritings of the seed. (ANOM) is one more of them, and it has
+the same value as the others: it shows where the rivals fail (kappa = 3, kappa = 0) and it gives
+no handle. The two U(1) tests, the table of Step 3 and Theorem V say the same thing: the selective
+factor is always a Dirichlet-form constant of a slice law on the seed box.
+
+## Result
+
+| Statement | Label |
+|---|---|
+| Table of 19 forms against U(1), frozen groups, ceilings (Step 3); findings F1-F3 | PROVED from the cited rows where they are checked; rows 929, 930 are unchecked |
+| The weakest form passing all fact tests is the split seed, Form W; no weaker sufficient form is on the table | finding (F2) |
+| F4: flux half is variance level (one bounded function); glue half is entropy level (a count) | PROVED for the two mechanisms shown (930 Theorem R; Theorem V with (5.3)); a reading, not a no-go |
+| (ANOM): the SH seed is an integrated relative interaction measure, 10.89 + log pi_B(t_0); Lemma HOT; 14.21 at beta 2.3 | PROVED (hand) |
+| Lemma TENS, Lemma GAPRATE | PROVED (hand) |
+| FP fails (ANOM) by more than log 120 at every size; frozen groups fail it | PROVED given 929 A2 and check 896 D6 |
+| kappa = 3 for the photon gas and the toron tower; kappa -> 0 for frozen groups | ARGUED (continuum limit; degenerate levels) |
+| SU(2) property: connected and finite centre (semisimple); U(1) breaks at Dirichlet-form constants along the 1-form orbit | named; necessary, not sufficient |
+| Theorem V: r_i^2 <= Theta/(1 + Theta), Theta = Gamma^*/gamma; averaged form; equality for each photon mode | PROVED (hand), unchecked; GUIDE rotor run did not refute |
+| Proposition HC: (HC-vac)_alpha gives X(2m + 2) <= 72 beta |B| e^(-2 alpha m) and E_1 >= alpha; one box suffices | PROVED implication (hand), unchecked |
+| Theorem E, Corollary E1: entropy contraction and slice mutual information | PROVED GIVEN (LSI-vac), (SG-step); unchecked; GUIDE run did not refute step (iii) |
+| I(U_0; U_s) <= X(2s): entropy decay is on the necessary side | PROVED (hand) |
+| (E-to-HC): entropy contraction to hypercontractivity in discrete time | OPEN (one attempt; failure point stated) |
+| (LSI-vac), (HC-vac), (SG-step) for SU(2) at beta 2.3 to 2.6 | OPEN |
+| SMALL-BOX standing fact test | proposed; its premise is RECALLED |
+
+Limits. Checks 932 and 933 were not on disk; rows 929 and 930 enter as unchecked author results.
+Proofs here are by hand and checked by no other model. One GUIDE job (0.19 GB, under the lock);
+scripts and log in `/tmp/gap-direction-931/`, not committed. Gross's and Nelson's theorems and
+Ahlswede-Gacs are RECALLED and carry no step. The Sussman-Alpoge account enters through the
+transfer frame only (credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors
+of their text); the outline was not re-read. Cross-branch search was not run. Nothing here is a
+seed at order one, a mass gap, or a public claim.
+
+RESULT: Row 931 (Claude Fable 5.2 max, author, checked by no one). Direction: 19 crux forms were set against the fact tests; a form passes all of them only if it carries a spectral factor of the slice transfer operator on the seed box (even count, odd gap or full trace), and every response-type factor ((FR), endpoint Delta_0, sup force covariance, (COUNT) alone, the kurtosis and doubling factors) fails a test or is not selective. The weakest form that passes all fact tests is the split seed itself (S_ev <= 1/10 and Q_0 <= 1/20 on one box (a; (24a)^3)); no weaker sufficient form exists on the table, so the two U(1) tests sort the forms and do not weaken the target. PROVED (hand, unchecked): the seed as one identity (ANOM), an integrated relative interaction measure of 10.89 + log pi_B(t_0) (14.21 from t_0 = 1 at beta 2.3), which U(1) fails by scale covariance (kappa = 3) and the frozen groups by degeneracy (kappa = 0); Theorem V, the gap of the vacuum slice chain from the Poincare constant of the vacuum law and a one-step force covariance, r_i^2 <= Theta/(1 + Theta), an equality for every free photon mode; Proposition HC, hypercontractivity of that chain on the ONE seed box gives X(2m + 2) <= 72 beta |B| e^(-2 alpha m), both halves; Theorem E, entropy contraction given (LSI-vac) and (SG-step). Reading F4: the flux half needs variance level only, the glue half needs entropy level (a count), which is why U(1) fails the halves through different momenta of one object, its continuous 1-form symmetry (toron k = 0, photons k != 0). SU(2) property: connected with finite centre; U(1) breaks at every Dirichlet-form constant along the 1-form orbit; Q_8 and 2T break at connectedness. OPEN: (E-to-HC) (the attempt's exact stop), (LSI-vac) or (HC-vac) on the seed box at beta 2.3 to 2.6, (SG-step) for SU(2), and with them the seed. Next attacks: 1. (LSI-vac)/(HC-vac) on the one seed box (dies with chance above 0.95; fact tests U(1), frozen groups and the new SMALL-BOX test); 2. (CUT-TYP) of row 930 for the flux half (about 0.9); cheap group-blind helper (E-to-HC).

@@ -1,14 +1,16 @@
 ---
-claim_type: meta
+claim_type: bounded_theorem
 ---
 
 # Scope check for the neighborhood propagation and record-readout examples
 
+**Type:** bounded_theorem
+
 **Primary runner:** `scripts/gb1_cf_record_readout_scope_check_2026_11_14.py`
 **Cached output:** `logs/runner-cache/gb1_cf_record_readout_scope_check_2026_11_14.txt`
 
-This records the scope of positive constructions and two explicit
-instrument-specific counterexamples. It is not a general no-go packet or an
+This records the scope of the [positive constructions](SU2_NEIGHBORHOOD_PROPAGATION_RECORD_READOUT_BOUNDED_THEOREM_NOTE_2026-11-08.md)
+and two explicit instrument-specific counterexamples. It is not a general no-go packet or an
 audit verdict. No five-route negative-packet PASS is claimed.
 
 ## N1 — Actual routes and counterexamples
@@ -66,8 +68,8 @@ a global quantum code-preparation/record law is not constructed or excluded.
 The positive electric instrument uses the existing one-qubit site size.
 Only the original fixed-spectator output subspace must expand for a recorded
 one. A different causal-state realization may avoid changing axioms, so an
-axiom change is not asserted necessary. The user's neighborhood wording is a
-separate proposal awaiting approval and does not supply this instrument.
+axiom change is not asserted necessary. The neighborhood wording was adopted
+independently in PR #10143, as recorded in the [current axiom memo](MINIMAL_AXIOMS_2026-06-29.md); it does not supply this instrument.
 
 ## N7 — Strongest counter-route
 

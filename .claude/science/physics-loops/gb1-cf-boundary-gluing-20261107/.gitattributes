@@ -1,0 +1,6 @@
+# Preserve exact historical patch and captured diagnostic bytes.
+detector_refinement/outputs/result_clarifications.patch whitespace=-blank-at-eol
+joint_record_law/outputs/decoder_change.diff whitespace=-blank-at-eol
+outcome_conditioning/proposal_review/candidate.patch whitespace=-blank-at-eol
+outcome_conditioning/proposal_review/outputs/companion.stdout whitespace=-blank-at-eol
+outcome_conditioning/proposal_review/outputs/pre_readout_control_companion.stdout whitespace=-blank-at-eol

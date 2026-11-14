@@ -1,6 +1,6 @@
 # Scope stress test for native SU(2) placement
 
-**Type:** meta
+**Type:** bounded_theorem
 **Status:** scope record; no scientific grade.
 **Primary runner:** `scripts/gb1_cf_native_placement_scope_check_2026_11_14.py`
 **Cached output:** `logs/runner-cache/gb1_cf_native_placement_scope_check_2026_11_14.txt`

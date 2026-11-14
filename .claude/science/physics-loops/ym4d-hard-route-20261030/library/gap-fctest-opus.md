@@ -211,3 +211,29 @@ ratio, errors) returns the exact R to a few percent on an SU(2) chain with R of 
 chain with R of order 1e-2 to 1e-1. Both calibrations PASS; box numbers may be read.
 
 Timing probe (4^3 x 13, B = 16, n = 20): about 95 ms per inner sweep; peak RSS 566 MB.
+
+### Step 5: SU(2) box at beta 2.3 (GUIDE)
+
+**b1: 4^3 x 13 (K = 6), beta 2.3, B = 16 independent chains, m = 8 rounds, n = 300 inner sweeps, 128 frozen
+slices x, every plaquette and line position averaged (`out/b1_L4K6_b2.3.json`, 3.5 min).** Inner tau_int
+0.48-0.56 sweeps for every series (so n = 300 is about 300 independent samples per half); outer lag-1
+autocorrelation of the per-round numerators between -0.24 and -0.01 (no outer correlation).
+
+| f | R_hat | err | R_hat + 3 err | den E_nu abs(grad f)^2 |
+|---|---|---|---|---|
+| O1 plaquette c_p | 8.60e-4 | 1.7e-5 | 9.1e-4 | 2.18 |
+| O2a 2 x 2 smeared plaquette | 1.129e-3 | 3.3e-5 | 1.23e-3 | 0.558 |
+| O2b zero-momentum plaquette sum (one plane) | 3.57e-3 | 2.2e-4 | 4.2e-3 | 146 |
+| O3 tanh(3 c_p) | 5.81e-4 | 1.7e-5 | 6.3e-4 | 3.58 |
+| O3 tanh(10 c_p) | 1.63e-4 | 8.8e-6 | 1.9e-4 | 10.9 |
+| O3 c_p^3 | 4.13e-4 | 1.2e-5 | 4.5e-4 | 3.00 |
+| O4a winding line (length 4) | 0.01623 | 1.8e-4 | 0.0168 | 2.99 |
+| O4b mean of 2 x 2 transverse patch of lines | 0.04455 | 6.4e-4 | 0.0465 | 0.748 |
+| O4c mean over the whole cross-section | 0.1385 | 2.3e-3 | 0.145 | 0.187 |
+
+Reading (GUIDE). Every R_hat + 3 err is below 0.15, so by rule 2.5 this box is NOT REFUTED at beta 2.3 and
+the values are "well below 1". The local plaquette value (8.6e-4) is within 10 percent of the exact
+one-plaquette chain value R(cos theta) = 7.9e-4: one-step contraction of a plaquette's Dirichlet energy is
+fixed at the scale of one plaquette. R grows with the spatial extent of f (plaquette 8.6e-4, 2 x 2 square
+1.1e-3, plane sum 3.6e-3; line 0.016, patch 0.045, cross-section 0.14): smooth, extended f contract least,
+as in the Gaussian case where R = e^(-2 omega) per mode. The odd functions of c_p contract more than c_p.

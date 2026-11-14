@@ -306,3 +306,4 @@ bounds the frame-averaged one too; a growing lag-0 value would not by itself ref
   same stop rule.
 
 - 22:38Z: L = 16 seed 35: 16.32. Pooled now: L = 8 7.97 +- 0.50 (6 chains), L = 16 12.12 +- 2.32 (6 chains); g = 1.110 +- 0.070, g + 2 sigma = 1.251 (INCONCLUSIVE by 0.001). Seeds 36-39 wait for >= 50 percent memory free (47 percent at 22:38Z).
+- 23:04Z: L = 16 seeds 36, 37: 8.78, 10.02 (memory 62-65 percent free at their starts). Seeds 38, 39 running.

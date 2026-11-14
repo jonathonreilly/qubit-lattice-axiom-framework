@@ -53,3 +53,8 @@ for name, fun in (("F proj E(tau)", lambda C: effs(C, vF)), ("F lev1 E(tau)", la
                   ("F lev2 E(tau)", lambda C: effs(C, np.array([0., 1]))), ("F -log(lmax)/tau", lammax)):
     v, e = jk(fun, MF2, mF2, False); print(f"  {name:26s}", fmt(v, e))
 pm = np.abs(F.mean(3)).mean(); print(f"  F: mean |slice-avg Polyakov| per config = {pm:.4f}")
+# Diagnostic (added after the first L = 20 look): F with the sample mean subtracted per axis (connected), axis-averaged.
+def blockavg(C): return sum(C[:, 2 * a:2 * a + 2, 2 * a:2 * a + 2] for a in range(3)) / 3
+vFc = topvec(blockavg(conn(MF, mF, True)))
+for name, fun in (("F conn proj E(tau)", lambda C: effs(blockavg(C), vFc)),):
+    v, e = jk(fun, MF, mF, True); print(f"  {name:26s}", fmt(v, e))

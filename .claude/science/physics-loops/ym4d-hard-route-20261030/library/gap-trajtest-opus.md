@@ -225,3 +225,14 @@ the spatial Polyakov lines are large on every configuration (mean |slice sum| 7 
 about 200 (E^F + 2 err <= 0.14 < K_200 = 0.144); G sector fails (TR) on all three (2 E^F about 0.25 < E^G), so nothing in G
 transfers, and in any case no G bound reaches below K_30 (smallest E + 2 err: L = 8, 0.96 at tau = 2 in 2N; L = 4, 0.84 at
 tau = 3 in 2N but 1.10 in N). So the small boxes at beta 2.6 are pure finite-size flux physics, as row 954 7.4 predicted.
+
+**4.6 Interim look at L = 20, beta 2.6 (written 17:39Z; stream seed 21, first 340 measurements; not a verdict).**
+G proj E(tau) = 0.696(68), 0.495(77), 0.436(90), 0.542(124) at tau = 0..3 (Teper 0.51(3)). F (unsubtracted, as pre-set):
+0.280, 0.239, 0.204, 0.168, 0.129, 0.084 at tau = 0..5, falling without a plateau. Diagnosis: the exact mean of a spatial
+Polyakov sum is 0, but its Monte Carlo autocorrelation at beta 2.6 is long, so the sample mean of a short run is not 0 and
+adds a positive constant to the unsubtracted C(tau), which pulls the effective energy down. Diagnostic added to
+`ana974.py` AFTER this look (an amendment, stated as such): F with the sample mean subtracted per axis ("F conn"): 0.414(21),
+0.412(32), 0.431(48), 0.456(83). Subtraction biases the other way (it removes var of the sample mean from every C(tau)), so the
+torelon energy lies between; Teper's eq. (6) gives 0.30. On L = 8, beta 2.3 the two F estimators agree (1.000 and 1.001), as
+they should when the run is long against the autocorrelation. For (TR) I will use 2 x (the unsubtracted tau = 0 value) as a
+conservative pair energy, since every F estimate is an upper bound only if unbiased; this is the weakest reading I can defend.

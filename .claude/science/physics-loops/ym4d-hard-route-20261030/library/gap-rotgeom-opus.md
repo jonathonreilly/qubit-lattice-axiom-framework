@@ -231,3 +231,140 @@ For the centre flips that split is useful because the electric flux states are h
 (Lemma SPLIT, Q_0); for the space group it puts almost all of the seed into the deficit half. (iv) Every sector form
 still fails FT-U1 (3.2), FT-FROZEN (3.1) and SMALL-BOX (the small-box 0++ level, of order g^(2/3)/b in Luscher's
 small-volume expansion, RECALLED, is in the trivial sector), as it must. Next: Step 4, diagonal reflection positivity.
+
+### Step 4. Item (3a): reflection positivity across diagonal hyperplanes (done 2026-11-14T15:45Z)
+
+**4.1 Known results, with sources (READ at 3900bfe8b and in CA-III at 31a47c543775).**
+- Wilson weight on Z^4, diagonal mirrors {x_mu +- x_nu = c}, c an integer: reflection positive. CA-III L108556-108560:
+  "The Wilson weight has that positivity on Z^4: with theta the reflection in the mirror, the plaquettes crossing
+  {x_mu = x_nu} enter it as Re tr(A (theta A)^dagger), where A is the product of the two links on one side of the
+  mirror. A diagonal hyperplane, however, does not separate the periodic torus on which the lattice measures of
+  Theorem 0 live. This positivity is therefore not asserted for the limits of Theorem 0 and is not used in this
+  book." CA-III L79973-79974 (Remark 10.1:rem-diagonal-positivity): "Diagonal reflection positivity holds for the
+  Wilson weight on Z^4 and fails on every straight torus". Sussman and Alpoge, with Claude and Codex as authors.
+- Our rebuild: `library/am1-port.md` Section 3 (Codex, a port of their YM3_I IV-16-26 with SA 2773-2883): allowed
+  normals e_mu and e_mu +- e_lambda; diagonal mirror heights c in Z; adapted tori Gamma = T (+) Z(L n/|n|^2), T in
+  n-perp, with two cuts at heights c and c + L/2; the Gram expansion k(g, h) = e^(-beta) e^(beta s(g).s(h)) with
+  (1/2) tr(g h^(-1)) = s(g).s(h) for unit quaternions; RP for every bounded half test, gauge-invariant or not.
+  Section 5 there (IV-29-40) folds along diagonal tori Gamma_i to prove that every periodic DLR state is diagonally
+  RP; `library/lg1.md` Theorem 10 and 13(5) state it (frozen, one Claude gate per `ro1-vs-ca.md` L50). Lemma S
+  (`am1-port.md` L6-14, Claude, checked by Codex): no lattice is adapted to both e_4 and e_1 - e_4.
+- Older literature (RECALLED, not read, not used): Osterwalder and Seiler (1978) for coordinate site and link
+  reflections of the Wilson action; Frohlich, Israel, Lieb and Simon (1978) for the general reflection and chessboard
+  machinery. I did not find or read a classical source for diagonal mirrors in lattice gauge theory.
+
+**4.2 Smallest case by hand: the crossing plaquette (PROVED).** Take n = e_1 + e_2, mirror {x_1 + x_2 = 1},
+theta(y_1, y_2, y_3, y_4) = (1 - y_2, 1 - y_1, y_3, y_4). A plaquette has corner heights h, h+1, h+1, h+2 (h its
+base height), so it meets both open sides iff h = 0: the (1, 2)-plaquette P at base 0 with corners (0,0), (1,0),
+(0,1), (1,1) (heights 0, 1, 1, 2). Its two corners at height 1 lie on the mirror and are fixed by theta. Split U_P at
+them. The upper path A goes (1,0) -> (1,1) -> (0,1): A = U_((1,0),2) U_((0,1),1)^(-1). The lower path B goes
+(1,0) -> (0,0) -> (0,1): B = U_((0,0),1)^(-1) U_((0,0),2). theta maps the link (1,0) -> (1,1) to (1,0) -> (0,0) and the
+link (1,1) -> (0,1) to (0,0) -> (0,1), keeping the order of traversal, so theta(A) = B as a function of the links:
+the reflected copy of the upper path is exactly the lower path, with no inversion. Then
+tr U_P = tr(U_((0,0),1) A U_((0,0),2)^(-1)) = tr(A B^(-1)) = tr(A theta(A)^dagger), and with unit-quaternion
+coordinates (1/2) tr(A theta(A)^(-1)) = s(A).s(theta A). So the crossing weight is
+exp(beta s(A).s(theta A)) = sum_r (beta^r/r!) sum_(i_1..i_r) F_i(A) F_i(theta A), F_i = prod_j s_(i_j), real: a
+positive Gram sum of terms F theta(F). The links in directions 3 and 4 at height 1 are fixed by theta and are the
+conditioning variables; every other plaquette lies in a closed half. This is the step that `am1-port.md` L62 states
+in four lines; the computation above confirms it, including the orientation (no inverse appears in theta(A)).
+
+**4.3 Straight tori: the diagonal hyperplane does not separate (PROVED, elementary).** Let Lambda = (Z/N)^4 with
+N >= 3 and theta(x) = (x_2, x_1, x_3, x_4) (any diagonal swap of a straight torus with N_1 = N_2 = N; if N_1 != N_2
+it is not a symmetry at all). Fix(theta) = {x_1 = x_2 mod N}. Claim: the sites off Fix(theta) form ONE connected
+set in the nearest-neighbour graph with Fix(theta) removed. Proof: put d = x_1 - x_2 mod N; the level d = k
+(k = 1, ..., N - 1) has the sites (x_2 + k, x_2, x_3, x_4). Bonds in directions 3, 4 keep d, so x_3, x_4 move freely
+inside a level. A direction-1 bond changes d by +- 1, a direction-2 bond by -+ 1. Inside the level k, go from
+(x_2 + k, x_2) to (x_2 + 1 + k, x_2 + 1) through (x_2 + 1 + k, x_2) (level k + 1) if k != N - 1, or through
+(x_2 + k, x_2 + 1) (level k - 1) if k != 1; for N >= 3 one of the two is allowed for every k, and repeating the move
+runs through all N sites of the level. Levels k and k + 1 (both nonzero) are joined by a direction-1 bond. So the
+levels 1, ..., N - 1 form one connected set, and the complement of Fix(theta) is connected. Hence
+no split Lambda = Lambda_+ u Lambda_-, theta(Lambda_+) = Lambda_-, Lambda_+ n Lambda_- = Fix(theta), exists in which
+every bond and plaquette not meeting Fix(theta) lies in one closed half: a connected complement crosses from one
+open half to the other through a bond that avoids the mirror. The positivity argument of 4.2 then has no setting.
+This is what CA-III means by "does not separate". (Topologically: on the square 2-torus the swap fixes ONE closed
+circle, of length N sqrt 2, and acts on the open annulus around it as a glide; the coordinate reflection fixes two
+circles.) I do not claim a negative value of <F theta F> on a straight torus; none is needed and none was sought.
+
+**4.4 Where diagonal RP holds on a torus (PROVED from 4.2 and `am1-port.md` Section 3).** On an adapted torus
+Gamma = T (+) Z (L/2) n, n = e_1 + e_2, L even, T a rank-3 lattice in n-perp (for example
+T = M Z (e_1 - e_2) (+) N Z e_3 (+) N Z e_4): the mirrors at heights c and c + L/2 bound two slabs exchanged by
+theta_c, the crossing plaquettes at both cuts are the diamonds of 4.2, and the Gram argument gives RP. Such a
+torus is a straight torus in the rotated frame (n, e_1 - e_2, e_3, e_4); by Lemma S it has no coordinate mirror
+normal to e_1 or e_2, so the axis transfer operators in directions 1 and 2 do not exist on it. Next: Step 5, the
+diagonal transfer operator and its thermal sum.
+
+### Step 5. Item (3b): the diagonal transfer operator and its thermal sum, against the axis one (done 2026-11-14T16:20Z)
+
+Notation: n = e_1 + e_2, n' = e_1 - e_2, height h(x) = x_1 + x_2, mirrors theta_c (c integer). Only integer heights
+carry diagonal mirrors: theta_(c + 1/2) does not map Z^4 to itself, so there are no "link" diagonal mirrors.
+
+**Lemma D1 (the diagonal transfer is positive for a step of two heights; PROVED given RP at theta_c and
+theta_(c+1)).** theta_(c+1) theta_c = tau_n (translation by n, height + 2). Let nu be a tau_n-invariant state (on Z^4,
+or the Wilson measure of an adapted torus), RP at theta_c and theta_(c+1). On the OS space H_c (bounded functions of
+the links at heights >= c, form <F, G>_c = nu(theta_c(F) G), null vectors removed) put T_n [F] = [tau_n F]. Then
+<F, T_n F>_c >= 0 and T_n is symmetric.
+Proof. <F, T_n F>_c = nu(theta_c(F) . theta_(c+1)(theta_c F)) = nu(G theta_(c+1) G) with G = theta_c F, which lives at
+heights <= c, inside one closed half of theta_(c+1); RP at theta_(c+1) gives >= 0. Symmetry:
+nu(theta_c(tau_n F) G) = nu(tau_(-n)(theta_c F) G) = nu(theta_c(F) tau_n G), because theta_c tau_n = tau_(-n) theta_c and
+nu is tau_n-invariant. QED. (That T_n is well defined and a contraction is the standard OS step, RECALLED.) A step of
+ONE height is the positive part times a glide reflection of the layer (theta_(c+1) followed by tau_(-e_1)), so it is
+not positive; the positive diagonal operator is the step n, of Euclidean length sqrt 2.
+
+**Lemma D2 (every adapted diagonal torus is a sheared axis torus; PROVED).** Let
+Gamma = Z (L/2) n (+) Z M n' (+) N Z e_3 (+) N Z e_4, L even, and g = gcd(L/2, M), p = L M/g. Then the (1, 2)-part of
+Gamma has the basis (p, 0), (s, g) for some integer s (the Hermite normal form), and
+
+Z(Gamma) = Tr( T_(B')^g tau_1^s ),   B' = (p, N, N) a straight box (sides in directions 1, 3, 4), time along e_2,
+
+with tau_1 the unit translation of B' in direction 1 (Lemma R3 for a translation). For L/2 = M = b: g = b, p = 2b,
+s = b, so Z(Gamma) = Tr(T_(B')^b tau_1^b) = Z_even - Z_odd, where Z_even (Z_odd) is the axis thermal trace on the
+momenta k in Z_(2b) of direction 1 with k even (odd): tau_1^b acts on momentum k as (-1)^k (Lemma R4 for G = Z_2).
+Proof. The (1, 2)-part is {((L/2) j + M k, (L/2) j - M k)}. With L/2 = g u, M = g w, gcd(u, w) = 1: the second
+coordinate g (u j - w k) takes every value in g Z; it vanishes iff (j, k) = t (w, u), and then the first coordinate is
+2 g u w t = p t. A full-rank sublattice of Z^2 with Lambda n (Z x {0}) = p Z and second coordinates g Z has the basis
+(p, 0), (s, g). Gluing the e_2-direction after g steps with a shift s is Tr(T^g tau^s). QED
+Reading. The diagonal torus is row 962's sheared family (A4, Lemma SHIFT), not a new geometry. What diagonal RP adds:
+on the half-shift torus (L/2 = M) the same number Z_even - Z_odd, a SIGNED axis sum, is also a trace of the positive
+diagonal operator T_n (Lemma D1 plus the trace formula on the torus, which I did not write: ARGUED). So the
+diagonal channel is a positive channel for a sheared torus, which the axis frame does not have.
+
+**Proposition D3 (fully diagonal tori carry the whole engine; CONDITIONAL).** Put n_1 = e_1 + e_2, n_2 = e_1 - e_2,
+n_3 = e_3 + e_4, n_4 = e_3 - e_4 and Gamma_D(alpha) = (+)_i Z alpha_i n_i. Gamma_D is adapted to all four normals n_i
+(each n_i-perp contains the other three periods), and the lattice symmetries x_2 -> -x_2, x_4 -> -x_4 and
+(x_1, x_2) <-> (x_3, x_4) generate every permutation of the n_i. So the engine's three inputs (TM in each direction,
+exchange of two axes, simple top eigenvalue) hold in the frame (n_1, ..., n_4), CONDITIONAL on (i) the trace formula
+Z(Gamma_D) = Tr(T_(n_1)^(alpha_1)) with T_(n_1) positive and trace class on a slice space, and (ii) a simple top
+eigenvalue (Jentzsch, if the kernel is strictly positive after the gauge average). Given (i) and (ii), Lemmas K, X, E'
+and Theorem SH run verbatim with W(a, b) = Z(Gamma_D(a, b, b, b)) and give a gap on every larger fully diagonal torus
+from one diagonal seed. In a mixed frame (n_1, n_2, e_3, e_4) the exchange n_1 <-> e_3 is not a lattice symmetry
+(|n_1|_1 = 2, |e_3|_1 = 1), so the engine there needs two seeds (Theorem 2O of row 962): strictly more input.
+
+**Proposition D4 (the infinite-volume gaps agree within a factor 2 per step; PROVED given LG1 and the two OS
+constructions).** Let nu be a periodic Wilson DLR state; by LG1 Theorem 10 it is RP at the coordinate mirrors and at
+the diagonal mirrors. Let m_1 be the spectral gap of T_(e_1) on the axis OS space (per step e_1) and m_n that of
+T_n on the diagonal OS space (per step n). Then m_1 <= m_n <= 2 m_1; in Euclidean units the two masses agree within
+the factor sqrt 2 both ways.
+Proof. For local mean-zero F at heights <= c and G at heights >= c, and y in n-perp (translation along n' or e_3,
+e_4 commutes with theta_c and preserves heights), nu(F tau_(k n + y) G) = <theta_c F, T_n^k [tau_y G]>_c, so
+|nu(F tau_(kn + y) G)| <= C_(F,G) e^(-k m_n). Take k e_1 = (k/2) n + (k/2) n' (k even): decay along e_1 at rate m_n/2
+per step for every pair of local observables. The spectral measure of [F] for T_(e_1) then sits in [0, e^(-m_n/2)] on
+the vacuum complement, and local F are dense, so m_1 >= m_n/2. The same argument in the axis frame with
+k n = k e_1 + k e_2 (tau_(k e_2) commutes with the axis mirror) gives m_n >= m_1. QED
+So in infinite volume a diagonal gap and an axis gap are the same statement up to the factor 2: nothing is gained
+or lost there. The seed, however, is a finite-volume statement, and the two seeds live on different tori (Lemma S:
+no torus has both mirror families in one plane).
+
+**What diagonal geometry gives relative to the axis one (ARGUED from D1-D4).**
+(a) No new number: diagonal tori are sheared axis tori (D2); the fully diagonal seed is the thermal sum of a box
+rotated by 45 degrees in two planes, the same thermal pressure at the same physical temperature up to lattice
+artifacts (the Euclidean step is sqrt 2 per n). FT-U1, FT-FROZEN (the flat classes are Hom(Z^3, H)/H on any 3-torus
+slice) and SMALL-BOX come out exactly as for the axis seed.
+(b) A rotated copy of the engine (D3), which reaches the account only through a comparison of box shapes: the gap on
+large fully diagonal tori gives (by D4) an axis gap for volume-first limits ALONG DIAGONAL TORI; the account's
+limits are taken along straight tori. Equality of the two limit states, or a direct comparison of their thermal
+sums, is exactly the shape independence that CA-III L79975-79977 says "is not proved". It is a new open obligation,
+not a saving.
+(c) No exact inequality between an axis seed and a diagonal seed: Lemma S excludes a common torus, so the only
+bridge is the bulk free energy, which is the same for every van Hove family; Lemma E' and Proposition B3 compare boxes
+within one frame only.
+Next: Step 6, the fact tests in one table, then Step 7 (GUIDE).

@@ -13,3 +13,5 @@
 16:58:20Z start S_xyyzt90_b2.4_L8
 16:59:01Z end S_xyyzt90_b2.4_L8 rc=0
 16:59:01Z start S_int05_b2.4_L8
+17:08:26Z screen killed (interp hang at kappa ~ 0); sampler patched; relaunch as screen2.sh skipping finished runs
+17:08:29Z start S_int05_b2.4_L8

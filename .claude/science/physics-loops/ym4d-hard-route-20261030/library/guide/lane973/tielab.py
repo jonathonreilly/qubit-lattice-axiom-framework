@@ -51,6 +51,17 @@ def kp_a0(kappa, rng):
     flat_k = kappa.ravel()
     flat_o = out.ravel()
     todo = np.arange(flat_k.size)
+    # row 973 addition: for kappa < 0.5 KP accepts rarely (never at kappa ~ 0, where it hung); use instead the exact
+    # rejection sampler "a0 from the Haar marginal sqrt(1-a0^2), accept with prob exp(kappa (a0 - 1))" (acceptance >= e^-1).
+    small = todo[flat_k < 0.5]
+    todo = todo[flat_k >= 0.5]
+    while small.size:
+        k = flat_k[small]
+        g = rng.standard_normal((small.size, 4))
+        a0 = g[:, 0] / np.sqrt(np.sum(g * g, axis=1))
+        acc = rng.random(small.size) < np.exp(k * (a0 - 1.0))
+        flat_o[small[acc]] = a0[acc]
+        small = small[~acc]
     while todo.size:
         k = flat_k[todo]
         x1 = rng.random(todo.size); x2 = rng.random(todo.size); x3 = rng.random(todo.size); x4 = rng.random(todo.size)

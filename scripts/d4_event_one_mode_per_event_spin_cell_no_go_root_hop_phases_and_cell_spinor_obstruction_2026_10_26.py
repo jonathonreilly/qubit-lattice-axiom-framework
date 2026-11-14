@@ -210,7 +210,7 @@ worst = []; allbad = True
 for k, pats in res.items():
     for eta in pats:
         o = classify(k[0], eta, k[2]); allbad &= is_bad(o); worst.append(o[0])
-check("C4 full W(F4) and the subgroups W(B4), W(D4), realised projectively on the cells 2D4*, 2Z4, 2D4: the covariance systems are consistent ONLY for (antisymmetric, chi = -1 on long reflections) and (symmetric, trivial chi), each with exactly 2 flux patterns (D and -D): the uniform flux is forced. Every pattern has degenerate zeros (no isolated Dirac node)",
+check("C4 full W(F4) and the subgroups W(B4), W(D4), realised projectively on the cells 2D4*, 2Z4, 2D4: the covariance systems (exact F2) are consistent ONLY for (antisymmetric, chi = -1 on long reflections) and (symmetric, trivial chi), each with exactly 2 flux patterns (D and -D): the uniform flux is forced. [F] The numerical node search finds a degenerate zero in every pattern",
       okc and allbad, f"{len(res)} consistent systems; zero types seen {sorted(set(worst))}")
 # exact structure of the uniform antisymmetric pattern
 eta = res[('2D4*', 'F4', True, (-1, 1))][0]
@@ -233,7 +233,7 @@ for anti, chi in [(True, (-1, 1)), (False, (1, 1))]:
         for bit, j in zip(cb, sel):
             if bit: e ^= N[j]
         bad64 &= is_bad(classify('4D4*', e, anti, m=3, nref=2)); n64 += 1
-check("C4c the 64-event cell 4D4*: W(F4)-covariant patterns (both classes) number " + str(n64) + " (non-uniform ones appear); every one has degenerate zeros", bad64 and n64 == 32, f"{time.time() - t0:.0f}s so far")
+check("C4c the 64-event cell 4D4*: W(F4)-covariant patterns (both classes) number " + str(n64) + " (non-uniform ones appear); [F] the numerical node search finds a degenerate zero in each", bad64 and n64 == 32, f"{time.time() - t0:.0f}s so far")
 
 # ---------------- C6 all translation-uniform Z2 fluxes, any point symmetry
 rows = []; rhs = []; nunif = {}
@@ -270,7 +270,7 @@ for anti in (True, False):
             smin = min(np.linalg.svd(Dk('2D4', ETA[i].astype(np.uint8), anti, Ls2 @ RNG.uniform(0, 1, 4)), compute_uv=False)[-1] for _ in range(1500))
             if smin > 0.5: ngap += 1; gapinfo.append((int((best == bv).sum()), round(float(smin), 2)))
     nunif[anti] = (len(sel), len(ETA), len(reps_o), ndeg, ngap, gapinfo)
-check("C6 EVERY translation-uniform Z2 flux on the 24 unit root hops (any point symmetry or none; 2^14 per class, all W(F4)(+sign) orbits): each orbit either has degenerate zeros or is GAPPED; none has only isolated Dirac nodes",
+check("C6 [F] every translation-uniform Z2 flux on the 24 unit root hops (any point symmetry or none; 2^14 per class, all W(F4)(+sign) orbits): in each orbit the numerical search finds a degenerate zero or no zero (1500 random k + 3 refined grid minima, min singular value > 0.5); none was found with only isolated Dirac nodes (a numerical search, not an all-torus certificate)",
       all(v[0] == 14 and v[3] + v[4] == v[2] for v in nunif.values()), "anti: dim %d, %d patterns, %d orbits, %d degenerate, %d gapped %s; sym: dim %d, %d patterns, %d orbits, %d degenerate, %d gapped (orbit size, min singular value) %s" % (nunif[True] + nunif[False]))
 lam_bad = True
 for anti in (True, False):
@@ -286,7 +286,7 @@ for anti in (True, False):
         x, N = gf2_solve(np.array(R), np.array(bb, np.uint8))
         e = (x.astype(np.int64) + RNG.integers(0, 2, len(N)) @ N.astype(np.int64)) % 2
         lam_bad &= is_bad(classify('2D4', e.astype(np.uint8), anti, m=3, nref=2))
-check("C6b translations acting with a sign character (D -> -D, staggered flux): seeded sample of 16 patterns, all degenerate (the full sweep of all orbits is a scratch diagnostic)", lam_bad)
+check("C6b [F] translations acting with a sign character (D -> -D, staggered flux): seeded sample of 16 patterns, a numerically found degenerate zero in each (the full sweep of all orbits is a scratch diagnostic)", lam_bad)
 
 # ---------------- C7 representation theory: spinor in the cell mode space at an invariant node
 # lift generators: reflection in unit n -> n.gamma ; build the lifted group by closure modulo phase
@@ -327,7 +327,19 @@ stab96 = [g for g in GRP['F4'] if np.allclose(g @ np.array([1, 1, 0, 0.]), np.ar
 q = {k: nquart(GRP[k]) for k in GRP}; q96 = nquart(stab96)
 check("C8 protection count: quartic invariants W(F4) 1 (only (p^2)^2), W(B4) 2, W(D4) 3, stabiliser of a root class (96) " + str(q96) + ": any staggered escape that breaks W(F4) to a frame or root stabiliser re-admits dim-6 LIV",
       q['F4'] == 1 and q['B4'] == 2 and q['D4'] == 3 and len(stab96) == 96 and q96 >= 2, f"{q}, 96: {q96}")
-check("C9 supply: one Dirac spinor per event = 4 complex fermion modes per event = Fock dim 2^4 = 16 = four qubits (M_2(C)^(x)4), not two; the Qubit axiom gives M_2(C) (one mode). The 4-event sqrt2 cell holds exactly 4 modes, which C7 rules out as a spinor; spreading one spinor over 16 events (2D4 cell) needs spin x taste",
-      2 ** 4 == 16 and len(CELLS['2D4*'][1]) == 4 and len(CELLS['2D4'][1]) == 16)
+# C9 (repair 2026-11-14): computed instead of a literal. Four Jordan-Wigner modes on four qubits satisfy the CAR exactly,
+# and four modes need Fock dimension 16 (a Fock space of n modes has dimension 2^n: the number operators commute and
+# their joint spectrum is every 0/1 string). The cell sizes are computed from the cell construction.
+sm_ = np.array([[0, 1], [0, 0]], complex); sz_ = np.diag([1., -1]).astype(complex)
+opq = lambda L_, i, n: np.kron(np.kron(np.eye(2 ** i), L_), np.eye(2 ** (n - i - 1)))
+cJW = [np.linalg.multi_dot([opq(sz_, j, 4) for j in range(i)] + [opq(sm_, i, 4)]) if i else opq(sm_, 0, 4) for i in range(4)]
+car = max(np.abs(cJW[i] @ cJW[j].conj().T + cJW[j].conj().T @ cJW[i] - (i == j) * np.eye(16)).max() for i in range(4) for j in range(4))
+car0 = max(np.abs(cJW[i] @ cJW[j] + cJW[j] @ cJW[i]).max() for i in range(4) for j in range(4))
+nums = np.array([np.real(np.diag(cJW[i].conj().T @ cJW[i])) for i in range(4)]).T; strings = {tuple(np.round(r).astype(int)) for r in nums}
+check("C9 supply: one Dirac spinor per event = 4 complex fermion modes; 4 Jordan-Wigner modes on 4 qubits obey the CAR exactly and their occupation strings fill all 2^4 = 16 basis states (Fock dim 16 = four qubits, not two). The 4-event sqrt2 cell holds exactly 4 modes, which C7 rules out as a spinor; spreading one spinor over 16 events (2D4 cell) needs spin x taste",
+      car < 1e-14 and car0 < 1e-14 and len(strings) == 16 and len(CELLS['2D4*'][1]) == 4 and len(CELLS['2D4'][1]) == 16,
+      f"CAR residuals {car:.0e}, {car0:.0e}; distinct occupation strings {len(strings)}; cell sizes {len(CELLS['2D4*'][1])}, {len(CELLS['2D4'][1])}")
+print("SUPPLIED (not counted): that the Qubit axiom gives one fermion mode (M_2(C)) per event is a reading of the axiom with a supplied Grassmann realisation; this runner does not test it")
 print(f"runtime {time.time() - t0:.1f} s")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+raise SystemExit(1 if FAIL else 0)

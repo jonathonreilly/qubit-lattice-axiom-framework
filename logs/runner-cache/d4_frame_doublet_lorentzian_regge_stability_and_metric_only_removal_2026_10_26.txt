@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/d4_frame_doublet_lorentzian_regge_stability_and_metric_only_removal_2026_10_26.py
-runner_sha256: aef0c3f2737442a49bc44faf133641a929ca408173ca515a23cdb713713af858
-input_fingerprint_sha256: d7f21a5d395075ba12f46b3c2252777b9cbba9c9f73ba9be37a52ca33e79152a
+runner_sha256: 51d1a826b7b64a627cb79bd3b451469c3927bc42321c4bec16cae13097879a13
+input_fingerprint_sha256: 2a3e2c9ecb74c282c7445d3584dbd9bf79523c27011146caae5881522465df70
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.48
+elapsed_sec: 6.13
 status: ok
 ----- stdout -----
 PASS: V1 squared-length Schlaefli Hessian (d2S = Sum dA d eps) at the W(F4) point equals the length Hessian of d4-frame-modes  [rel diff 2e-10 at K = 0 and generic K]
@@ -23,11 +23,13 @@ PASS: L2 Lorentzian census (all on |z| = 1, 12 roots): graviton x2 on the light 
 PASS: L3 controls: the far off-circle roots are float zeros of the rank-6 end coefficients (one-sided, move under z -> e^2 z); a genuine z, 1/z pair appears only for lam > 3 (pair-offset roots time-like)  [lam 3.5: |ln z| = [-1.178, 1.178] invariant under rescaling (genuine instability); lam in [0.5, 1.1]: none]
 PASS: L4 contrast (R-a): Euclidean lattice strained along the root (lam = .9), momentum-continued: y0 pole at REAL Euclidean frequency = tachyon (B3 of d4-frame-modes)  [y0-dominated Euclidean real root(s) at |omega_E| = [0.1873] at k = .05 (m^2 < 0 in R-a); the same strain read as Lorentzian (R-b) gives a real-frequency y0 at 2.18]
   (L done 2.2s)
-PASS: M1 metric-only reading removes the doublet nonlinearly: spokes fix the metric completely (g = delta), so no frame-rescaled length set (any u) is metric-read  [metric directions left free by the spokes: 0; least-squares distance / |deformation| = [1.0, 0.999, 0.995] at u = .01, .1, .3]
-  graviton c = 1 + A (ka)^2 at ka = .07 (the two polarisations): full: axis [-0.166, 0.167] face [-0.125, 0.125] body [-0.001, 0.001]; raw: axis [-0.167, 0.167] face [-0.125, 0.125] body [0.0, 0.0]; mid: axis [-0.207, 0.379] face [0.004, 0.168] body [0.013, 0.013]
-PASS: M2 birefringence SURVIVES the metric-only reading unchanged (line-integrated reading, exactly gauge-covariant): +-1/6 axis, +-1/8 face, 0 body diagonal; validated on the full model  [gauge residual full 1e-08, raw 2e-08]
+PASS: M1 [T+F] the 24 spokes fix every component of a uniform metric (rank 10), so the only uniform metric with unchanged spokes is g = delta; no frame-rescaled length set (u = .01, .1, .3; algebraically every u != 0) is read by one uniform metric (spacetime-dependent readings not covered)  [metric directions left free by the spokes: 0; least-squares distance / |deformation| = [1.0, 0.999, 0.995] at u = .01, .1, .3]
+  graviton PHASE speed E/k = 1 + A (ka)^2 (group speed 1 + 3A (ka)^2) at ka = .07, Euclidean reading (R-a), g = I (the two polarisations): full: axis [-0.166, 0.167] face [-0.125, 0.125] body [-0.001, 0.001]; raw: axis [-0.167, 0.167] face [-0.125, 0.125] body [0.0, 0.0]; mid: axis [-0.207, 0.379] face [0.004, 0.168] body [0.013, 0.013]
+PASS: M2 [F] Euclidean reading (R-a), g = I: the raw metric block (line-integrated reading, exactly gauge-covariant) has the full model's birefringence +-1/6 axis, +-1/8 face, 0 body diagonal; the Lorentzian (R-b) raw metric block is NOT computed  [gauge residual full 1e-08, raw 2e-08]
 PASS: M3 control: the midpoint reading is NOT gauge-exact and adds a polarisation-averaged shift; its splitting is nonzero but reading-dependent (pre-registered 'both readings' criterion: PARTIAL)  [gauge residual 7e-06; axis mean shift +0.086, half-split 0.293]
-elapsed 6.0s
+NOT CHECKED (not counted): the raw metric block on the Lorentzian lattice (R-b), so its birefringence there is not computed
+NOT CHECKED (not counted): whether the cell-scale ghost pair of the full hinge sum disappears under the metric-only reading in (R-b)
+elapsed 5.9s
 TOTAL: PASS=10 FAIL=0
 
 ----- stderr -----

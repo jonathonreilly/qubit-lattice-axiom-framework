@@ -204,7 +204,7 @@ for nm, nv in (("axis", [1, 0, 0]), ("face", [1, 1, 0]), ("body", [1, 1, 1]), ("
         Gn = slice_corr(Qp @ (mg * np.array(nv) / np.linalg.norm(nv)), 5, 0.0, Nth=256); c = [abs(np.trace(Gn[n] @ gt)) for n in (10, 11)]
         Es.append(np.sqrt(2) * np.log(abs(c[0] / c[1])))
     c2[nm] = np.polyfit(xs ** 2, np.array(Es) / xs - 1, 1)[0]
-check("1h dimension six: k^2 coefficient of v - 1 vanishes in every direction (massless fixed point)", max(map(abs, c2.values())) < 1e-5,
+check("1h dimension six: k^2 coefficient of E/k - 1 (phase velocity; hence also of dE/dk - 1) vanishes in 4 directions (massless fixed point)", max(map(abs, c2.values())) < 1e-5,
       " ".join(f"{k} {v:+.0e}" for k, v in c2.items()))
 
 # ---------------- 2 positivity along the root
@@ -234,7 +234,7 @@ for k, m in ks2:
 check("2a exact fixed point, root slicing: for n >= 4 the slice correlator IS a sum of real poles exp(-E_K tau), E_K = |k + K| (all transverse images K), residues PSD; no complex pair, no ghost",
       max(rmis[n] for n in (4, 5, 6, 8)) < 1e-7 and imx < 1e-12 and rmis[3] > 1e-4,
       " ".join(f"n={n}:{v:.0e}" for n, v in rmis.items()) + f" (|direct - residue sum|/|G|); Im Pi(iE)/|Pi|, Im phase <= {imx:.0e}; n = 3 carries a non-pole piece")
-check("2b site Hankel forms: unbuffered (slices i, j >= 1) INDEFINITE; buffered (i, j >= 2, separations >= 4 slices) positive to float floor",
+check("2b [F] site Hankel forms at 4 sampled (k, m): unbuffered (slices i, j >= 1) INDEFINITE; buffered (i, j >= 2, separations >= 4 slices) positive to float floor",
       min(a for a, b in hk) > 1e-3 and max(b for a, b in hk) < 1e-9,
       "wrong-sign (unbuf / buf): " + " ".join(f"{a:.1e}/{b:.0e}" for a, b in hk))
 
@@ -289,7 +289,7 @@ for al, K in KX.items():
     for A in GW4[::7]:
         for i in sel:
             j = xi[ik(A @ K['X'][i])]; cov = max(cov, abs(K['ax'][j] - K['ax'][i]), np.abs(K['bx'][j] - A @ K['bx'][i]).max())
-check("2c range-R truncations (D4 shells |x|^2 <= 2R) of D*: a complex pair at EVERY R and every sampled k (both alpha); real ghosts at some R (non-monotone)",
+check("2c [F] range-R truncations (D4 shells |x|^2 <= 2R, R = 1..4) of D*: a complex pair at each tested R and each of the 13 sampled k (alpha = 1/2, 1); real ghosts at some R (non-monotone)",
       all(v[0] >= 2 for v in tab.values()), "#complex poles min-max / real wrong-sign: " + "; ".join(f"a={al} R{Rs}: {v[0]}-{v[1]}/{v[2]:.0e}" for (al, Rs), v in tab.items()))
 
 
@@ -312,9 +312,9 @@ for n in (0, 1, 2):
 Cnn = np.zeros((5, 4, 4), complex); Cnn[2] = 2 * E4
 for rr in R: Cnn[int(rr @ rt) + 2] += np.exp(-1j * rr @ k) * (-gv(rr) - E4) / 12
 _, ncn, mrn = classify(resids(Cnn))
-check("2d zoom rungs from the nearest-neighbour start (w = 1): blocking keeps every pole, so the Lee-Wick pair survives each finite rung at 2^n Re E; its buffered weight falls doubly-exponentially",
+check("2d [F] zoom rungs n = 0, 1, 2 from the nearest-neighbour start (w = 1), one k: the NN pair exists at n = 0; the buffered wrong-sign weight falls at n = 1, 2 (pair persistence at n = 1, 2 is computed in #10111 Z6; at general n it is not shown)",
       ncn == 2 and rung[0][1] > rung[1][1] > 1e-9 > rung[2][1],
-      f"NN pair Re E = {np.sqrt(2) * mrn:.2f} -> rung n at {np.sqrt(2) * mrn:.2f}*2^n; wrong-sign unbuf/buf n=0,1,2: " + " ".join(f"{a:.1e}/{b:.0e}" for a, b in rung))
+      f"NN pair Re E = {np.sqrt(2) * mrn:.2f} (expected at rung n at {np.sqrt(2) * mrn:.2f}*2^n if it persists); wrong-sign unbuf/buf n=0,1,2: " + " ".join(f"{a:.1e}/{b:.0e}" for a, b in rung))
 
 # ---------------- 3 interacting protection
 Pt = rng.normal(size=(40, 4)); p2 = np.sum(Pt ** 2, 1)
@@ -361,8 +361,9 @@ check("3b one loop with the fixed-point fermion (m = 0.5, alpha = 1/2) on the L 
       " ".join(f"{k}: dim6 {v[0]:.0e}, dim8 {v[1]:.0e}->J6 {v[2]:.0e};" for k, v in SD.items()) + " Z4 dim6 " + " ".join(f"{v[0]:.1e}" for v in SZ.values()))
 print("LEDGER replaced: matter tick (CL-1 half-tick unitaries for matter), Wilson/m0 window, repaired overlap kernel, cubic zoom-fixed-point law + its radiative clause,\n"
       "  D4 'bosons-only' narrowing (pole sense). Still to build: copy sign / one light copy, slab chirality + gauged index on D4, families, D4 hinge sums.")
-print("VERDICT: PARTIAL. Fixed point exists, W(F4)-exact, local, GW, no doublers, exact band, dim-6 = 0 at one loop by symmetry; poles all real\n"
-      "  and positive (no Lee-Wick pair) but only for the exact (infinite-tower) weight; site RP holds with a one-slice buffer, not unbuffered;\n"
-      "  every finite truncation and every finite rung keeps a complex pair.")
+print("VERDICT: PARTIAL. Fixed point exists, W(F4)-exact, local (fitted on L = 12), GW, no doublers, exact band, dim-6 = 0 at one loop; poles all real\n"
+      "  and positive (no Lee-Wick pair) for the exact (infinite-tower) weight (contour formula, n >= 4); site RP at the sampled (k, m) holds with a\n"
+      "  one-slice buffer, not unbuffered; every TESTED truncation (R = 1..4) and rung (n = 0, 1, 2) keeps a complex pair. No finite-range no-go is shown.")
 print(f"runtime {time.time() - T0:.1f} s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+raise SystemExit(1 if NF else 0)

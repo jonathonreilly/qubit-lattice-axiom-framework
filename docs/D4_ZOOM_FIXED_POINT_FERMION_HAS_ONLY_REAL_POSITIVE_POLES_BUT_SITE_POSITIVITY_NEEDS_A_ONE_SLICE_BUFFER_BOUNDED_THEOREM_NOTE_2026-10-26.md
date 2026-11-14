@@ -1,10 +1,10 @@
-D4 zoom fixed-point fermion: only real, positive poles (no Lee-Wick pair), but site positivity needs a one-slice buffer, and no finite truncation keeps it
+D4 zoom fixed-point fermion: only real, positive poles (no Lee-Wick pair), but site positivity needs a one-slice buffer, and no tested finite truncation or rung keeps it
 
 Date: 2026-10-26
 Claim type: bounded_theorem (exact kernel/group/support facts plus finite diagnostics on a supplied free model)
 Status authority: independent audit lane only. This draft sets no audit outcome.
-Runner: runner.py (this folder). AUDIT_TIMEOUT_SEC = 120. 31 s, 185 MB peak, seeded, 14/14, output 3.9 k characters.
-  A re-run under a unique filename (scratchpad copy) gave identical output apart from the runtime line.
+Runner: [`scripts/d4_zoom_fixed_point_fermion_has_only_real_positive_poles_but_site_positivity_needs_a_one_slice_buffer_2026_10_26.py`](../scripts/d4_zoom_fixed_point_fermion_has_only_real_positive_poles_but_site_positivity_needs_a_one_slice_buffer_2026_10_26.py). AUDIT_TIMEOUT_SEC = 120, seeded; it exits nonzero on any failed check.
+  Its cache [`logs/runner-cache/d4_zoom_fixed_point_fermion_has_only_real_positive_poles_but_site_positivity_needs_a_one_slice_buffer_2026_10_26.txt`](../logs/runner-cache/d4_zoom_fixed_point_fermion_has_only_real_positive_poles_but_site_positivity_needs_a_one_slice_buffer_2026_10_26.txt) holds the current output and counts (the source run: 31 s, 185 MB peak, 14 checks).
 Pre-registration: criteria_pre_run.txt, written before any computation.
 Labels: [T] exact or theorem; [F] finite diagnostic; [A] uses a supplied literature theorem; [S] reading.
 Axioms unchanged. No CL edit. Nothing adopted.
@@ -20,8 +20,11 @@ Sources used
 - d4-fermion-positivity: NN D4 fermion has no positive slice transfer (narrowed "bosons only").
 - protected-fermions: NN family has a positive real sector plus ONE Lee-Wick pair; its existence argument (ii) used a
   smeared continuum field. This note supplies the zoom version of that construction and finds its exact positivity class.
-- main: ADMISSIBILITY_DIRAC_KAHLER_..._OS_LORENTZ_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14 lists "perfect/anisotropic
+- main: [ADMISSIBILITY_DIRAC_KAHLER_WICK_PHASE_FINE_SITE_STAGGERED_OS_LORENTZ_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14](ADMISSIBILITY_DIRAC_KAHLER_WICK_PHASE_FINE_SITE_STAGGERED_OS_LORENTZ_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md) lists "perfect/anisotropic
   action" as live; git grep origin/main finds no perfect-action or W(F4) note. Nothing on main is contradicted.
+- In this PR: d4-time-blind-events is [#10094](D4_TIME_BLIND_EVENTS_KILL_DIMENSION_SIX_LIV_FOR_SCALAR_FERMION_PHOTON_BUT_THE_SLICING_DECIDES_LOCALITY_AND_SIGN_BOUNDED_THEOREM_NOTE_2026-10-26.md); protected-fermions is [#10097](D4_ROOT_SLICE_FERMION_POSITIVE_REAL_SECTOR_LEE_WICK_WINDOW_KEEPS_DIMENSION_SIX_PROTECTION_BOUNDED_THEOREM_NOTE_2026-10-26.md). The other lane
+  names above (zoom-fixed-point-tick #10092, d4-interacting-check #10095, d4-fermion-positivity #10096) are recorded only
+  in the source map of [the consolidation](D4_ROUTE_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md).
 
 1. The D4 zoom and its fixed point
 - [T] 1a. Kernel. Coarse field = (1/16) sum_x w(x - 2X) phi_x with w = 1 at 0, 1/2 on the 24 roots (facets of the coarse
@@ -42,7 +45,8 @@ Sources used
   D* (7e-16): the overlap step is an identity, m0 is forced.
 - [F] 1f. No doublers: alpha|D*| >= 0.27 on every grid momentum except 0; |D*| = 1/alpha exactly at the 15 classes of pi D4*.
 - [F] 1g. Lowest band from the root-slice correlator: sqrt(k^2 + m^2) to 4e-9 (axis, face, body, generic; m = 0, 0.3).
-- [F] 1h. k^2 coefficient of v - 1 (massless): <= 9e-10 in every direction. Dim 6 = 0 for free matter.
+- [F] 1h. k^2 coefficient of E/k - 1 (the phase velocity minus 1; hence also of dE/dk - 1; massless): <= 9e-10 in the 4
+  directions tested (axis, face, body, generic). Dim 6 = 0 for free matter, here as a finite diagnostic.
 
 2. Positivity along the root (the main question)
 - [T] Support. By Titchmarsh-Lions, the convex hull of the limit smearing is the Minkowski sum of the rung hulls: 2V
@@ -58,19 +62,29 @@ Sources used
 - [F] 2b. Site Hankel form H_ij = G(i+j) g_t (reflection through slice 0; four k, m = 0 and 0.3):
   - unbuffered (i, j >= 1): INDEFINITE, wrong-sign fraction 5.3e-3 to 9.2e-3;
   - buffered (i, j >= 2, every pairing >= 4 slices apart): positive to float floor (|wrong| <= 4e-13).
-  Reading [T]: the positive Hilbert space is the OS reconstruction from slices >= 2 from the reflection plane; its slice
+  Reading [T, from the contour formula, so for every k; the runner checks four k]: the positive Hilbert space is the OS
+  reconstruction from slices >= 2 from the reflection plane; its slice
   transfer is Hermitian with real eigenvalues +-exp(-E_K/sqrt2) (T^2 >= 0). The indefinite piece is non-pole and confined to
   separations < 2 sqrt2 a: it creates no state. Note that it is LARGER than the NN fermion's unbuffered value (1.4e-3).
 - [F] 2c. Range-R truncations of D* (shells |x|^2 <= 2R; 13 transverse momenta; alpha = 1/2 and 1): a complex pair at EVERY R
   = 1..4 and every sampled k (complex-pole counts 2-2, 2-4, 2-6, 4-6 at alpha = 1/2; 2-2, 2-4, 2-6, 6-6 at alpha = 1). Real
   ghosts appear at some R, non-monotonically (wrong-sign 9e-1 and 1.0 at alpha = 1/2, R = 3, 4; 5e-1 and 1.0 at alpha = 1, R = 2, 3).
-  The indefinite weight does NOT fall to zero at finite range. Positivity holds only in the limit (the infinite image tower).
-- [T+F] 2d. Zoom rungs from the NN start (w = 1). Blocking is a positive sum of fine propagators, so it keeps every pole (T2):
-  the NN pair (Re E = 2.57/a) is present at every finite rung, at 2.57 x 2^n in coarse units. Its buffered weight:
-  2e-4, 7e-7 and below 1e-14 at rungs 0, 1, 2 (doubly exponential). The unbuffered weight grows to the fixed point's:
-  1.4e-3, 2.4e-3, 6.9e-3. So the zoom removes the pair only in the limit, and trades it for the non-pole buffer piece.
-- Answer to (2): exact fixed point PASSES the pole test (real, positive, no pair); it FAILS unbuffered site RP and PASSES
-  buffered RP; no finite truncation and no finite rung is pair-free.
+  At R = 1..4 the indefinite weight does NOT fall to zero. Positivity was found only for the exact infinite-tower weight.
+  This is a finite search over R <= 4 and 13 momenta, not an obstruction for finite range: whether some finite-range
+  W(F4) kernel is pair-free stays OPEN (see Open).
+- [F] 2d. Zoom rungs n = 0, 1, 2 from the NN start (w = 1), at one transverse momentum. The NN pair (Re E = 2.57/a) is
+  a pole at n = 0. Its buffered weight: 2e-4, 7e-7 and below 1e-14 at rungs 0, 1, 2. The unbuffered weight grows toward
+  the fixed point's: 1.4e-3, 2.4e-3, 6.9e-3.
+- Correction (2026-11-14). The source text said blocking "keeps every pole" because a rung is a positive sum of fine
+  propagators, so the pair is present at every finite rung. Positivity on real momenta does not give that. A pole of
+  G_(n-1) at Q survives in G_n only if the blocking weight f(Q)^2 at that image is nonzero and no other image cancels
+  its residue. For the NN pair at k = 0 this is computed at n = 1, 2, 3 in [#10111](D4_ZOOM_DIRECTION_FINITE_RUNG_MATTER_WEIGHT_IS_AN_EVENT_KERNEL_LIV_SET_BY_THE_EVENT_RUNG_COUNT_BOUNDED_THEOREM_NOTE_2026-10-26.md) (check Z6: f(Q)^2 at the
+  pair and the blow-up of |G_n| at 2^n E_pair). Persistence at every finite n, and at other k, is an OPEN obligation.
+  So the statement here is: the pair is present where it was computed (k = 0, n = 1, 2, 3, in #10111), and at the one
+  momentum tested here the zoom suppresses its buffered weight at n = 1, 2.
+- Answer to (2): exact fixed point PASSES the pole test (real, positive, no pair); it FAILS unbuffered site RP at the
+  sampled (k, m) and PASSES buffered RP; no TESTED finite truncation (R = 1..4) or rung (n = 0, 1, 2; persistence
+  computed at k = 0 for n = 1, 2, 3 in #10111) is pair-free. That is a failed search, not a finite-range no-go.
 
 3. Interacting protection is a symmetry statement
 - [F] 3a. Truncated fixed-point coefficients on shells |x|^2 <= 8 are W(F4)-covariant to 6e-17.
@@ -95,8 +109,8 @@ Sources used
 
 Verdict (pre-registered rule): PARTIAL
 - Test 1 PASS (one pre-registered threshold missed: 1b to 5.9e-8, not 1e-8, cutoff-limited; the exact refinement
-  identity holds to 5e-15). Test 3 PASS. Test 2 PARTIAL: positivity is a property of the exact infinite-tower weight only,
-  and in the site sense needs a one-slice buffer.
+  identity holds to 5e-15). Test 3 PASS. Test 2 PARTIAL: positivity was found only for the exact infinite-tower weight
+  (no tested truncation or rung is pair-free), and in the site sense it needs a one-slice buffer.
 
 Proposed CL text (UNTESTED; for review only; NOT adopted)
   "Matter's history weight on the D4 events is the exact fixed point of the factor-2 zoom that averages each coarse

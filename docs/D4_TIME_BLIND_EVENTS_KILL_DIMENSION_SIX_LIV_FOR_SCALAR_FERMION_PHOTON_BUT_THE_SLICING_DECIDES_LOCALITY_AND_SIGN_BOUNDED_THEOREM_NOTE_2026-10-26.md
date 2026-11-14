@@ -1,7 +1,7 @@
 ---
 claim_id: d4_time_blind_events_kill_dimension_six_liv_for_scalar_fermion_photon_but_the_slicing_decides_locality_and_sign_bounded_theorem_note_2026-10-26
 claim_type: bounded_theorem
-claim_scope: "Supplied free models on the D4 event lattice with one factor per nearest pair, the same for all 24 root directions. (T) Aut(D4) = W(F4) (1152 built by closure). sum_r (r.p)^4 = 12 (p^2)^2 exactly, and the scalar kernel is K = 6p^2 - (p^2)^2/2 + (p^2)^3/36 - J6/90 + O(p^8), with J6 = sum p_i^6 + 15 sum_(i<j<k) p_i^2 p_j^2 p_k^2. The naive Dirac vector is O(4)-covariant through p^3 and first breaks at p^5. (F) Reynolds counts over W(F4): the gauge-invariant photon kernels are 1 at p^2 and 1 at p^4 (the O(4) one; also for the 576 rotations). For the graviton: 1 at p^2 (Einstein), but 3 at p^4 against O(4)'s 2; the extra one is birefringent on shell. On-shell (p0 = iE) dispersion: no k^2 term in v - 1 (|coeff| < 5.4e-9) for the scalar, the overlap fermion and both triangle-plaquette photon polarisations. All share one dim-8 pattern p^2 = kappa J6, with kappa = 1/540, 1/90, 1/1440 (ratios 1 : 6 : 3/8; b_e = 16 b_gamma). The naive operator has 72 nondegenerate zeros (chirality sum 0). The Wilson term lifts all 71 doublers (smallest mass 2), and the overlap at m0 = 1 obeys GW to 1.3e-15 with D = 2 at every doubler. Site-reflection positivity holds for time along an axis and along a root (a control fails). Axis slicing: cosh E = (6 - sigma2 + m^2/4)/|sigma1| has E = infinity on the real surface sum cos k_i = 0, so H is not exponentially local; v - 1 = +(1/240, 4/810) k^4 (face, body), superluminal. Root slicing (events = the centre sites of the active cubes, c x half-tick = a): the analyticity strip is the mass shell (0.1224 vs m/sqrt6 = 0.1225); v - 1 = (-1.67e-2, -1.98e-2)(ka)^4, subluminal. (E) With E* = 1.217e18 GeV: axis e -> e gamma opens at 1.1e20 eV and p -> p gamma at >= 1.4e21 eV; root gamma -> e+e- opens at 1.9e20 eV; nuclei are stable to ~1e21 A eV. All are above every observed particle. Verdict (pre-registered rule): WORKS in the root slicing; the axis/site reading FAILS locality."
+claim_scope: "Supplied free models on the D4 event lattice with one factor per nearest pair, the same for all 24 root directions. (T) Aut(D4) = W(F4) (1152 built by closure). sum_r (r.p)^4 = 12 (p^2)^2 exactly, and the scalar kernel is K = 6p^2 - (p^2)^2/2 + (p^2)^3/36 - J6/90 + O(p^8), with J6 = sum p_i^6 + 15 sum_(i<j<k) p_i^2 p_j^2 p_k^2. The naive Dirac vector is O(4)-covariant through p^3 and first breaks at p^5. (F) Reynolds counts over W(F4): the gauge-invariant photon kernels are 1 at p^2 and 1 at p^4 (the O(4) one; also for the 576 rotations). For the graviton: 1 at p^2 (Einstein), but 3 at p^4 against O(4)'s 2; the extra one is birefringent on shell. On-shell (p0 = iE) dispersion: no k^2 term in E/k - 1 (the phase velocity minus 1; |coeff| < 5.4e-9), hence none in the group velocity dE/dk - 1, for the scalar, the overlap fermion and both triangle-plaquette photon polarisations. All share one dim-8 pattern p^2 = kappa J6, with kappa = 1/540, 1/90, 1/1440 (ratios 1 : 6 : 3/8; b_e = 16 b_gamma). The naive operator has 72 nondegenerate zeros (chirality sum 0). The Wilson term lifts all 71 doublers (smallest mass 2), and the overlap at m0 = 1 obeys GW to 1.3e-15 with D = 2 at every doubler. Site-reflection positivity holds for time along an axis and along a root in a Hankel test of the scalar (N_t = 24, six sampled transverse momenta; a control fails). Axis slicing: cosh E = (6 - sigma2 + m^2/4)/|sigma1| has E = infinity on the real surface sum cos k_i = 0, so H is not exponentially local; the energy coefficient is E/k - 1 = +(1/240, 4/810) k^4 (face, body; phase velocity), so the group velocity is dE/dk - 1 = +(1/48, 2/81) k^4, superluminal. Root slicing (events = the centre sites of the active cubes, c x half-tick = a): the analyticity strip is the mass shell (0.1224 vs m/sqrt6 = 0.1225); E/k - 1 = (-1.67e-2, -1.98e-2)(ka)^4 (phase), dE/dk - 1 = (-8.3e-2, -9.9e-2)(ka)^4 (group), subluminal. (E) With E* = 1.217e18 GeV: axis e -> e gamma opens at 1.1e20 eV and p -> p gamma at >= 1.4e21 eV; root gamma -> e+e- opens at 1.9e20 eV; nuclei are stable to ~1e21 A eV. All are above every observed particle. Verdict (pre-registered rule): WORKS in the root slicing; the axis/site reading FAILS locality."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -10,7 +10,8 @@ runner: scripts/d4_time_blind_events_kill_dimension_six_liv_for_scalar_fermion_p
 
 # D4 time-blind events: dimension-six LIV vanishes for scalar, fermion and photon; the slicing decides locality and sign
 
-Runner: runner.py. TOTAL: PASS=17 FAIL=0 in 8.6 s, seeded, AUDIT_TIMEOUT_SEC = 120, 3.3 k characters, 254 MB peak.
+Runner: [`scripts/d4_time_blind_events_kill_dimension_six_liv_for_scalar_fermion_photon_but_the_slicing_decides_locality_and_sign_2026_10_26.py`](../scripts/d4_time_blind_events_kill_dimension_six_liv_for_scalar_fermion_photon_but_the_slicing_decides_locality_and_sign_2026_10_26.py). Seeded, AUDIT_TIMEOUT_SEC = 120; it exits nonzero on any failed check. Its cache
+[`logs/runner-cache/d4_time_blind_events_kill_dimension_six_liv_for_scalar_fermion_photon_but_the_slicing_decides_locality_and_sign_2026_10_26.txt`](../logs/runner-cache/d4_time_blind_events_kill_dimension_six_liv_for_scalar_fermion_photon_but_the_slicing_decides_locality_and_sign_2026_10_26.txt) holds the current output and counts (the source run had 17 checks; the 2026-11-14 repair added C4e and C4e').
 Criteria were fixed before any computation (criteria_pre_run.txt). The runner was re-run under a unique filename and gave identical output.
 
 Labels: [T] exact, [F] finite diagnostic in a supplied model, [E] estimate against measurement, [S] reading.
@@ -24,7 +25,7 @@ Pre-run deviations, stated:
 ## Builds on, uses, contradicts
 - agents/lorentz-new-approaches (menu P1 + check.py).
   - CONFIRMED: quartic isotropy (5-design), and dimension 8 as the first LIV for the scalar.
-  - REPRODUCED: the axis-slicing numbers +4.2e-3 (face) and +4.9e-3 (body). Exactly, they are 1/240 and 4/810.
+  - REPRODUCED: the axis-slicing numbers +4.2e-3 (face) and +4.9e-3 (body). Exactly, they are 1/240 and 4/810. They are energy (phase-velocity) coefficients of E/k - 1; the group-velocity coefficients are 5 times larger (1/48 and 2/81).
   - NARROWED, three ways:
     - (a) "No dim-6 LIV in any sector" is a symmetry theorem for spin 0, 1/2 and 1. It is NOT one for spin 2: W(F4) admits one extra curvature-squared invariant.
     - (b) "The real-time step is exponentially local" is FALSE in the axis slicing the menu used. It is TRUE in the root slicing.
@@ -67,7 +68,13 @@ Pre-run deviations, stated:
   - at p^4, 3 against O(4)'s 2;
   - on shell the extra one is birefringent (plus = -cross) and vanishes along the body diagonals. Its coefficient in a D4 Regge action is uncomputed.
 - [F] C3c. Triangle plaquettes, the smallest D4 loops: 32 per site (192 ordered). The gauge mode is exact. The 8 extra link modes (12 links against 4 components) are heavy: 72 against Z = 24, i.e. m^2 = 3 in D4 units.
-- [F] C2e, C3d, C3e. The axis-slicing v - 1 coefficient of k^4 in each direction:
+- Labels (repair 2026-11-14). The runner fits E(k)/k - 1, the phase velocity minus 1. Its k^4 coefficient b is the energy
+  coefficient in E = k(1 + b k^4). The group velocity is dE/dk - 1 = 5 b k^4. Check C4e computes dE/dk by implicit
+  differentiation of the scalar on-shell condition (no fit of E(k)) and finds 5b to 1e-3 in both slicings; control C4e'
+  rejects "group = phase". Earlier text called b the coefficient of "v - 1" without this distinction. Statements that
+  only say a coefficient vanishes, or give its sign, hold for both velocities. The threshold formulas in the estimates use
+  the energy coefficient b, which is correct there. Time of flight uses the group coefficient 5b.
+- [F] C2e, C3d, C3e. The axis-slicing energy coefficient b (k^4 coefficient of E/k - 1) in each direction:
 
   | direction | scalar | fermion | photon (both polarisations) | -J6/1080 |
   |---|---|---|---|---|
@@ -76,8 +83,9 @@ Pre-run deviations, stated:
   | body | 4.94e-3 | 2.96e-2 | 1.85e-3 | 4.94e-3 |
 
   - Sphere average (scalar): 1/315 = 3.17e-3 (exact from the sphere moments). This is the isotropic, boost-like part, and it is nonzero.
+  - Group velocity: multiply each entry by 5 (scalar face 1/48 = 2.08e-2, body 2/81 = 2.47e-2).
 - [F] C4a. Site-reflection Hankel test (N_t = 24, m^2 = 0.09): minimum relative eigenvalue -1.4e-16 (axis) and -9e-17 (root). The control, an antiferro two-step coupling, gives -0.15. Link reflection is not a lattice symmetry of either slicing (axis: t -> 1 - t swaps the parity; root: it maps D4 to D4 + r/2). So T is not positive; T^2 is.
-- [F] C4b-c. Root slicing, in units of (k a)^4 with a the site spacing:
+- [F] C4b-c. Root slicing, energy coefficient b of E/k - 1 in units of (k a)^4 with a the site spacing (group coefficient 5b):
   - axis (slice-lattice) 0, face -1.67e-2, body -1.98e-2, generic -1.58e-2;
   - sphere average -1.27e-2;
   - fermion x 6 and photon x 3/8, as before.
@@ -100,10 +108,11 @@ E* = 1.217e18 GeV = hbar c / a. Free coefficients; the proton is treated as an e
   - e -> e gamma is closed.
   - gamma -> e+e- opens only at an asymmetric split (max_x x(1-x)[16(x^5 + (1-x)^5) - 1] = 0.79).
   - Nuclei are stable to P_inst/A ~ 9.9e20 eV (parent formula).
-- Both slicings: time of flight is unmeasurable. GZK photopion is unchanged: the shift at 1e20 eV is about 3e-8 GeV^2, far below m_pi m_p. Graviton dim-6, if present, is (E_GW/E*)^2 ~ 1e-62.
+- Both slicings: time of flight is unmeasurable. It uses the group velocity, 5 b (E/E*)^4: for a root-slicing photon on the
+  body diagonal at 1.4e15 eV, |dv_g| = 6.5e-50 and the delay over 1 Gpc is about 7e-33 s (printed estimate, not counted). GZK photopion is unchanged: the shift at 1e20 eV is about 3e-8 GeV^2, far below m_pi m_p. Graviton dim-6, if present, is (E_GW/E*)^2 ~ 1e-62.
 
 ## What must be rebuilt
-1. CL-1's cube tick becomes a D4 history weight, with real time from the OS transfer over two half-ticks. The cadence/tick-fraction constant disappears (c dt = a is forced). Whether the adopted tick-fraction response clause survives as geometry (lapse from the edges) needs checking.
+1. CL-1's cube tick becomes a D4 history weight, with real time from the OS transfer over two half-ticks. The cadence/tick-fraction constant disappears (c dt = a is forced). Whether the candidate tick-fraction response clause (a proposal in the source campaign's candidate-law document, with no premise weight here) survives as geometry (lapse from the edges) needs checking.
 2. Fermions:
    - The naive weight has 72 zeros. The cube walk's 16-taste structure, and the copy sign/copy mass that picks one light copy, do not carry over.
    - The overlap on the D4 Wilson kernel replaces them (GW exact, one cone). The register's history-level overlap clause is reused.

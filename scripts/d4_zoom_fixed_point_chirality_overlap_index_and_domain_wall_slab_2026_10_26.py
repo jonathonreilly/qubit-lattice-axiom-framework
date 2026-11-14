@@ -208,20 +208,48 @@ def Deff(Ak, Ls, mf, b, c):   # 4D operator of the wall fields q = P- psi_1 + P+
 
 
 FORMS = (("Borici", .5, .5), ("Shamir", 1., 0.)); LS = 8
+# Repair 2026-11-14: an exact null vector is a singular value at float zero (< EXACT0); a light (near-zero) mode is a
+# singular value below LIGHT, which is far below the next singular value (>= 1). The earlier text called every
+# singular value below 1e-2 a null vector, which is false for Borici (det > 0, see 2a').
+EXACT0, LIGHT = 1e-12, 1e-2
 cnt = {}; wall = {}
 for nm, b, c in FORMS:
-    U, sv, Vh = np.linalg.svd(D5(-M0 * E4, LS, 0.0, b, c)); vz = Vh[sv < 1e-2].conj(); info = []
-    G5L = np.kron(np.eye(LS), g5); cg, cv = np.linalg.eigh(vz.conj() @ G5L @ vz.T); vz = (vz.T @ cv).T   # chirality basis of the null space
+    U, sv, Vh = np.linalg.svd(D5(-M0 * E4, LS, 0.0, b, c)); vz = Vh[sv < LIGHT].conj(); info = []
+    G5L = np.kron(np.eye(LS), g5); cg, cv = np.linalg.eigh(vz.conj() @ G5L @ vz.T); vz = (vz.T @ cv).T   # chirality basis of the light space
     for v, ch in zip(vz, cg):
         w = (np.abs(v.reshape(LS, 4)) ** 2).sum(1); info.append((0 if w[:LS // 2].sum() > 0.5 else 1, max(w[:LS // 2].sum(), w[LS // 2:].sum()), ch))
-    cnt[nm] = (len(vz), sorted(set((i[0], round(i[2])) for i in info)), min(i[1] for i in info), min(abs(i[2]) for i in info), sv[sv >= 1e-2].min())
+    cnt[nm] = (int((sv < EXACT0).sum()), len(vz), sorted(set((i[0], round(i[2])) for i in info)), min(i[1] for i in info), min(abs(i[2]) for i in info),
+               sv[sv >= LIGHT].min(), sv.min())
 dbl = np.array([v for v in itertools.product([0, 1], repeat=4)] + [np.array(v) + .5 for v in itertools.product([0, 1], repeat=4)], float)[1:] * np.pi
 dbl = dbl[np.abs(dbl - np.pi).sum(1) > 1e-9]                  # drop the class of 0 (2pi D4*)
 Dd_ = Dstar(dbl); dmin = min(np.linalg.svd(D5(Dk - M0 * E4, LS, 0.0, b, c), compute_uv=False).min() for Dk in Dd_ for nm, b, c in FORMS)
-ok = all(cnt[nm][0] == 4 and cnt[nm][1] == [(0, -1), (1, 1)] and cnt[nm][2] > 0.99 and cnt[nm][3] > 0.99 for nm in cnt) and dmin > 0.1
-check("2a slab (Ls = 8), p = 0: exactly one 2-component Weyl per wall, g5 = -1 on wall 1 and +1 on wall Ls (mirror on the far wall); no light modes at the 15 classes (30 points) of pi D4* \\ 2pi D4*",
-      ok, "; ".join(f"{nm}: {v[0]} null vectors, (wall, g5) {v[1]}, half-slab weight >= {v[2]:.4f}, |g5| >= {v[3]:.3f}, next sv {v[4]:.2f}" for nm, v in cnt.items())
+ok = (cnt["Shamir"][0] == 4 and cnt["Borici"][0] == 0 and all(cnt[nm][1] == 4 and cnt[nm][2] == [(0, -1), (1, 1)] and cnt[nm][3] > 0.99 and cnt[nm][4] > 0.99
+      and cnt[nm][5] > 0.5 for nm in cnt) and dmin > 0.1)
+check("2a slab (Ls = 8, mf = 0), p = 0: Shamir has exactly 4 null vectors (singular values < 1e-12); Borici has NO null vector but 4 near-zero modes; in both the 4 light modes are one 2-component Weyl per wall, g5 = -1 on wall 1 and +1 on wall Ls (mirror on the far wall); no light modes at the 15 classes (30 points) of pi D4* \\ 2pi D4*",
+      ok, "; ".join(f"{nm}: {v[0]} exact null vectors, {v[1]} light modes (min sv {v[6]:.3e}), (wall, g5) {v[2]}, half-slab weight >= {v[3]:.4f}, |g5| >= {v[4]:.3f}, next sv {v[5]:.2f}" for nm, v in cnt.items())
       + f"; corner min sv {dmin:.2f} [pre-reg said '2 singular values': the Weyl pair is 2 + 2 = 4 components]")
+# 2a' independent derivation: at p = 0 with mf = 0 the slab splits into 4 copies (2 spinor components x 2 chiralities) of the
+# Ls x Ls upper-bidiagonal block with diagonal d = 1 - b m0 and off-diagonal h = -(1 + c m0). Its determinant is d^Ls, so the
+# 4 Ls-dimensional slab has |det| = |d|^(4 Ls): Borici d = 1/2 gives 2^-32 > 0 (no null vector); Shamir d = 0 gives exact zeros.
+bd = {}
+for Ls_ in (4, 8, 12, 16):
+    for nm, b, c in FORMS:
+        d_, h_ = 1 - b * M0, -(1 + c * M0); blk = np.diag(np.full(Ls_, d_)) + np.diag(np.full(Ls_ - 1, h_), 1)
+        sv_s = np.sort(np.linalg.svd(D5(-M0 * E4, Ls_, 0.0, b, c), compute_uv=False)); sv_b = np.sort(np.repeat(np.linalg.svd(blk, compute_uv=False), 4))
+        sg_, ld_ = np.linalg.slogdet(D5(-M0 * E4, Ls_, 0.0, b, c))
+        bd[(nm, Ls_)] = (np.abs(sv_s - sv_b).max(), sv_s[0], ld_, 4 * Ls_ * np.log(abs(d_)) if d_ != 0 else -np.inf, int((sv_s < EXACT0).sum()))
+blk_ok = max(v[0] for v in bd.values()) < 1e-12
+det_ok = all(abs(bd[("Borici", L_)][2] - bd[("Borici", L_)][3]) < 1e-9 and bd[("Borici", L_)][4] == 0 and bd[("Shamir", L_)][4] == 4 for L_ in (4, 8, 12, 16))
+ratios = [bd[("Borici", L_)][1] / bd[("Borici", L_ + 4)][1] for L_ in (4, 8, 12)]
+hb = M0 / 2; resm = {L_: (1 - ((1 + hb) ** L_ - (1 - hb) ** L_) / ((1 + hb) ** L_ + (1 - hb) ** L_)) / 2 for L_ in (4, 8, 12, 16)}
+check("2a' [T+F] Borici p = 0 light modes are near-zero, not null: |det D5| = (1/2)^(4 Ls) (2^-32 at Ls = 8) from the bidiagonal blocks, which reproduce the whole singular spectrum; "
+      "the smallest singular value falls by 3^4 = 81 per 4 layers (Ls = 4..16), like the residual mass (1-t)/2, and is never 0 at finite Ls; Shamir has 4 exact zeros at every Ls",
+      blk_ok and det_ok and all(abs(r / 81 - 1) < 0.05 for r in ratios),
+      f"block vs slab spectrum {max(v[0] for v in bd.values()):.0e}; Borici log|det| at Ls = 8: {bd[('Borici', 8)][2]:.4f} vs 32 ln(1/2) = {bd[('Borici', 8)][3]:.4f}; "
+      "Borici min sv Ls = 4, 8, 12, 16: " + ", ".join(f"{bd[('Borici', L_)][1]:.3e}" for L_ in (4, 8, 12, 16))
+      + "; ratio per 4 layers " + ", ".join(f"{r:.1f}" for r in ratios) + "; min sv / ((1-t)/2): " + ", ".join(f"{bd[('Borici', L_)][1] / resm[L_]:.3f}" for L_ in (4, 8, 12, 16)))
+check("2a'' control: the perturbed statement 'Borici has 4 exact null vectors at Ls = 8' is rejected (0 singular values below 1e-12); the earlier 1e-2 criterion counts 4",
+      cnt["Borici"][0] == 0 and cnt["Borici"][1] == 4, f"Borici: {cnt['Borici'][0]} below 1e-12, {cnt['Borici'][1]} below 1e-2")
 
 
 def eps_f(H, Ls):
@@ -320,3 +348,4 @@ check("3b mirror unchanged: the far-wall Weyl carries the light Weyl's charges (
       okm, f"{len(tw)} three-fold turns fixing the root; spectra on P- / P+: {np.round(sp[0][0], 3)} / {np.round(sp[0][1], 3)}; the slab is vector-like, the far wall still needs gapping")
 print(f"runtime {time.time() - T0:.0f} s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+raise SystemExit(1 if NF else 0)

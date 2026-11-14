@@ -3,14 +3,15 @@ D4 zoom fixed-point fermion: overlap index = topological charge, and a domain-wa
 Date: 2026-10-26
 Claim type: bounded_theorem (exact identities plus finite diagnostics on a supplied free kernel in smooth abelian backgrounds)
 Status authority: independent audit lane only. This draft sets no audit outcome.
-Runner: runner.py (this folder). AUDIT_TIMEOUT_SEC = 120. 41 s, 576 MB peak, seeded, 10/10, output 3.3 k characters.
-  A re-run under a unique filename (scratchpad copy) gave identical output.
+Runner: [`scripts/d4_zoom_fixed_point_chirality_overlap_index_and_domain_wall_slab_2026_10_26.py`](../scripts/d4_zoom_fixed_point_chirality_overlap_index_and_domain_wall_slab_2026_10_26.py). AUDIT_TIMEOUT_SEC = 120, seeded; it exits nonzero on any failed check.
+  Its cache [`logs/runner-cache/d4_zoom_fixed_point_chirality_overlap_index_and_domain_wall_slab_2026_10_26.txt`](../logs/runner-cache/d4_zoom_fixed_point_chirality_overlap_index_and_domain_wall_slab_2026_10_26.txt) holds the current output and counts. The source run (41 s, 576 MB peak) had 10 checks;
+  the 2026-11-14 repair added 2a' and 2a''.
 Pre-registration: criteria_pre_run.txt, written before any computation. Labels: [T] exact/theorem; [F] finite diagnostic;
 [A] supplied literature theorem; [S] reading. Axioms unchanged. No CL edit. Nothing adopted.
 
 Sources used
 - d4-zoom-fixed-point-fermion (PR #10098): D* = G*^-1, alpha = 1/2, GW exact, no doublers, dim 6 = 0. Its kernel code is reused.
-- History-level matter weighting (CL-1, adopted 2026-10-23), the chiral-tick-form slab, copy-flip-slab (#10063: static slab
+- History-level matter weighting (CL-1 of the source campaign's candidate-law document, recorded there as adopted 2026-10-23; here a proposed candidate with no premise weight, see the consolidation's section Labels), the chiral-tick-form slab, copy-flip-slab (#10063: static slab
   forces q_mirror = q_light), floquet-pi-slab (#10064), overlap-nonabelian / overlap-colour (anomaly sums), luscher-L8 (#10083).
 - git grep origin/main finds no W(F4)/D4 overlap or slab note. Open PR #10094 (D4 time-blind events) is the dim-6 base. Nothing is contradicted.
 
@@ -30,9 +31,23 @@ Sources used
 - [T] The fifth coordinate is a layer label. The 5D operator acts on spinors and layers only, so the wall cannot break 4D W(F4).
   [F] 2c: all 576 rotations satisfy D5(Ap) = S D5(p) S^-1 to 5e-15. All 576 reflections give the wall-swapped slab (s -> Ls+1-s) to 5e-15.
   This is the D4 face-swap parity: a reflection exchanges the light Weyl and the mirror.
-- [F] 2a. At p = 0 (Ls = 8, M = m0), both the Borici (b5 = c5 = 1/2) and the Shamir forms have exactly 4 null vectors.
-  These are one 2-component Weyl per wall: g5 = -1 on wall 1 and +1 on wall Ls, half-slab weight >= 0.9998, next singular value >= 1.
+- [F] 2a. At p = 0 (Ls = 8, M = m0, mf = 0) each form has 4 light modes, and they are one 2-component Weyl per wall:
+  g5 = -1 on wall 1 and +1 on wall Ls, half-slab weight >= 0.9998, next singular value >= 1.
+  - Shamir (b5 = 1, c5 = 0): the 4 light modes are exact null vectors (singular values below 1e-12).
+  - Borici (b5 = c5 = 1/2): the 4 light modes are NOT null vectors. They are near-zero modes with singular value 2.03e-4.
   The 15 doubler classes of pi D4* carry no light modes (min sv 1.04). DEVIATION: the pre-registration said "2 singular values"; the Weyl pair is 2 + 2 components.
+- [T+F] 2a'. Why Borici has no null vector. At p = 0 with mf = 0 the slab splits into 4 copies of an Ls x Ls upper-bidiagonal
+  block with diagonal d = 1 - b5 m0 and off-diagonal -(1 + c5 m0). So |det D5| = |d|^(4 Ls). For Borici d = 1/2, and
+  |det D5| = 2^-32 > 0 at Ls = 8. For Shamir d = 0, which gives the exact zeros. The runner checks that these blocks reproduce
+  the whole slab singular spectrum (to 1e-12 or better), and that the Borici smallest singular value is 1.65e-2, 2.03e-4,
+  2.51e-6, 3.10e-8 at Ls = 4, 8, 12, 16: it falls by 3^4 = 81 per 4 layers, like the residual mass (1-t)/2 of 2b, and is
+  nonzero at every finite Ls.
+- Correction (2026-11-14). The earlier text said both forms have "exactly 4 null vectors". That is false for Borici at
+  Ls = 8: the runner counted every singular value below 1e-2 as a null vector. Counterexample (kept as a negative result):
+  Borici, b5 = c5 = 1/2, m0 = 1, Ls = 8, mf = 0, p = 0: |det D5| = 2^-32, smallest singular value 2.03e-4, no singular
+  value below 1e-12. In-run control 2a'' rejects the perturbed statement "Borici has 4 exact null vectors". The exact
+  statement "4 null vectors" stands for Shamir at these parameters only. The Borici light singular value falls toward 0 as
+  Ls grows; this note computes it only up to Ls = 16 and makes no statement about the limit.
 - [T] 2b. Borici: (g5 (D* - m0))^2 = m0^2 exactly (the GW circle), so |H_T| is momentum-independent and
   D_eff(Ls) = (1-t)/2 + t alpha D*, with t = ((1+h)^Ls - (1-h)^Ls)/((1+h)^Ls + (1-h)^Ls).
   At finite Ls the light mode is D* plus a momentum-INDEPENDENT residual mass, (1-t)/t = 3.0e-4 at Ls = 8.
@@ -56,6 +71,7 @@ Sources used
 Verdict (pre-registered rule): CHIRALITY CARRIES OVER (Tests 1-3 PASS)
 Two pre-registered details missed, both stated: the shell set (|d|^2 <= 4 -> 8) and the null-vector count (2 -> 4 components).
 It carries over at the same level as on Z^4: index = Q, P_hat local, one Weyl per wall, the mirror on the far wall.
+At finite Ls the Borici wall modes are near-zero modes (2a'), not exact zero modes; only the Shamir slab has exact null vectors at p = 0.
 Improvement: the light chiral mode now has dim 6 = 0 by symmetry at every Ls. The Borici slab's finite-Ls error is a pure mass.
 
 Does the D4 law now cover gravity-free SM content? Not yet. Remaining rebuilds:
@@ -76,7 +92,7 @@ Smuggling gate
 - (2) No observed structure is named by the rule. The 16's charges enter only the anomaly CHECK. PASS.
 - (3) Untested predictions: there is no chirality-induced LIV at dim 6 for any chiral species. A reflection relates light and mirror walls.
   The residual mass is exactly momentum-independent. UNTESTED.
-- (4) It bends the CL-1 matter tick (a history weight plus an internal layer label, as already adopted).
+- (4) It bends the CL-1 matter tick (a history weight plus an internal layer label, as in that candidate).
   The infinite image tower (Qubit axiom question) is inherited from #10098 and not resolved here.
 - Gate: PASS on (1)-(3). (4) is the same bend as the parent D4 law.
 
@@ -85,5 +101,5 @@ Smuggling review
 - Supplied: the free D* (continuum Dirac inside the image sum, from #10098); the truncation shells; U(1) constant backgrounds and the
   straight-line transporters; the slab forms (Borici, Shamir) and Ls = 8; the Moebius formula [A]; the 16's hypercharges (as a check only).
 - Fitted: none.
-Deviations from pre-registration: the shell set (1a); the null-vector count wording (2a); q = 6 admissibility marginal (0.053 vs 0.05);
+Deviations from pre-registration: the shell set (1a); the null-vector count wording (2a), corrected for Borici on 2026-11-14 (2a'); q = 6 admissibility marginal (0.053 vs 0.05);
 the run's memory is 576 MB (under the probe's 1 GB cap; above the brief's generic 300 MB).

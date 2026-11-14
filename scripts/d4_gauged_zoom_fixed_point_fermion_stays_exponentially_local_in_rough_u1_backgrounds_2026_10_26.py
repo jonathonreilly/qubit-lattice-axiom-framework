@@ -1,6 +1,9 @@
 AUDIT_INPUT_PATHS = ('docs/D4_GAUGED_ZOOM_FIXED_POINT_FERMION_STAYS_EXPONENTIALLY_LOCAL_IN_ROUGH_U1_BACKGROUNDS_GW_AND_INDEX_ONLY_IN_THE_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-26.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
 #!/usr/bin/env python3
-"""d4-gauged-fixed-point-locality: does the D4 zoom fixed-point fermion stay exponentially local in U(1) backgrounds?
+"""d4-gauged-fixed-point-locality: finite-rung (n <= 3) gauged D4 zoom kernels from a Wilson seed in supplied U(1) backgrounds.
+Repair 2026-11-14: every GMRES solve is checked (info == 0 and an independent residual ||M x - b|| / ||b||), warnings are
+no longer suppressed, a truncated-solve control must be flagged, and 2a/2b are labelled as one-source-column diagnostics.
+The runner measures n = 1, 2, 3 on small tori; it does not compute the n -> infinity limit.
 
 Gauged zoom (gauge-covariant blocking, classically-perfect-action style: Hasenfratz-Niedermayer / Bietenholz-Wiese,
 supplied): G_{l+1} - alpha = 8 B_l (G_l - alpha) B_l^dag, B_l(X,x) = (1/16) w(x-2X) T(2X->x), w = 1, 1/2, 1/8 (the forced
@@ -13,13 +16,14 @@ convergence in n = 1, 2, 3; overlap index of D_n = -Q. Self-contained (numpy/sci
 """
 import os
 os.environ.setdefault("OMP_NUM_THREADS", "1"); os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
-import itertools, time, warnings
+import itertools, time
 import numpy as np
 import scipy.sparse as sp
 import scipy.sparse.linalg as spl
 import scipy.linalg as sla
-warnings.filterwarnings("ignore")
 AUDIT_TIMEOUT_SEC = 120
+RES_BOUND = 1e-9          # independent relative residual bound for every fine GMRES solve (GMRES rtol is 1e-10)
+SOLVES = []               # (gmres info, independent relative residual, inner iterations) for every recorded solve
 T0 = time.time(); NP = NF = 0
 rng = np.random.default_rng(20261026)
 
@@ -122,16 +126,18 @@ class Blocked:
     def full(self):   # small fine lattices: direct
         return self.apply(np.eye(self.Nc, dtype=complex))[0]
 
-    def apply(self, E, tol=1e-10):   # D_n E for coarse vectors E (Nc x k), iterative fine solves
+    def apply(self, E, tol=1e-10, restart=60, maxiter=40, record=True):   # D_n E for coarse vectors E (Nc x k), iterative fine solves
         Ki = lambda x: sla.cho_solve(self.cf, x, check_finite=False)
         Bh = self.BB.conj().T.tocsr(); KE = Ki(E); BK = self.BB; c = self.c; D0 = self.D0
         Mop = spl.LinearOperator(D0.shape, matvec=lambda x: D0 @ x + c * (Bh @ Ki(BK @ x)), dtype=complex)
-        out = np.zeros_like(KE); its = []
+        out = np.zeros_like(KE); its = []; stat = []
         for k in range(E.shape[1]):
             rhs = Bh @ KE[:, k]; cnt = [0]
-            x, info = spl.gmres(Mop, rhs, rtol=tol, atol=0, restart=60, maxiter=40, callback=lambda r: cnt.__setitem__(0, cnt[0] + 1), callback_type='pr_norm')
-            its.append(cnt[0]); out[:, k] = KE[:, k] - c * Ki(BK @ x)
-        return out, its
+            x, info = spl.gmres(Mop, rhs, rtol=tol, atol=0, restart=restart, maxiter=maxiter, callback=lambda r: cnt.__setitem__(0, cnt[0] + 1), callback_type='pr_norm')
+            res = np.linalg.norm(Mop.matvec(x) - rhs) / np.linalg.norm(rhs)   # independent residual, not GMRES's own estimate
+            stat.append((info, res, cnt[0])); its.append(cnt[0]); out[:, k] = KE[:, k] - c * Ki(BK @ x)
+        if record: SOLVES.extend(stat)
+        return (out, its) if record else (out, its, stat)
 
 
 def tri_phases(F, lev, unit):   # per-triangle holonomy phases, concatenated
@@ -193,21 +199,33 @@ def col0(Bk):
 
 
 g5c = lambda v, N: np.einsum('ab,xbk->xak', g5, v.reshape(N, 4, -1)).reshape(v.shape)
+
+
+def solver_ok(i0=0):   # every recorded solve since index i0 converged: GMRES info == 0 and independent residual <= RES_BOUND
+    st = SOLVES[i0:]; ok_ = len(st) > 0 and all(i == 0 and r <= RES_BOUND for i, r, _ in st)
+    return ok_, f"GMRES {len(st)} solves, info != 0: {sum(i != 0 for i, _, _ in st)}, max independent residual {max(r for _, r, _ in st):.0e}"
 print(f"setup: D4 roots {len(ROOTS)}, norm-4 {len(N4)}, kernel weights 1, 1/2, 1/8; triangles per site {len(TRI)}; alpha = {AL}; HJL bound eps = 1/30")
 
 # ================= 0 code checks
-err = 0
+err = 0; m0 = len(SOLVES)
 for Lc, n in ((4, 1), (2, 2), (2, 3)):
     Bk = Blocked(Field(Lc), n); v, _ = col0(Bk); lev = Bk.levs[-1]
     P = 2 * np.pi * np.array(list(itertools.product(range(Lc), repeat=4)), float) / Lc; s, r = G_rung(P, n)
     bad = ~np.isfinite(s); s[bad] = 1; r[bad] = 0; Dp = np.linalg.inv(s[:, None, None] * E4 - 1j * gv(r)); Dp[bad] = 0
     Dx = np.einsum('xp,pab->xab', np.exp(1j * lev.S @ P.T) / Lc ** 4, Dp); err = max(err, np.abs(v.reshape(lev.N, 4, 4) - Dx).max())
-check("0a [T+F] free limit: position-space gauged code at A = 0 equals the momentum-space #10098 map R^n(G_NN) (L_c = 4 n = 1; L_c = 2 n = 2, 3)", err < 1e-10, f"max err {err:.0e}")
+sk, si = solver_ok(m0)
+check("0a [T+F] free limit: position-space gauged code at A = 0 equals the momentum-space #10098 map R^n(G_NN) (L_c = 4 n = 1; L_c = 2 n = 2, 3)", err < 1e-10 and sk, f"max err {err:.0e}; {si}")
+m0 = len(SOLVES)
 IR2 = modes_band(rng, 2, 1, 16); sc = tune(2, 1, 1, IR2, 1.2); lam = (0.7, np.array([np.pi, 0, np.pi, 0]), 0.3)
 Da = Blocked(Field(2, 1, 1, IR2, sc), 2).full(); Db = Blocked(Field(2, 1, 1, IR2, sc, lam), 2).full()
 lv = Level(2); lc = np.repeat(np.exp(1j * lam[0] * np.cos(lv.S @ lam[1] + lam[2])), 4)
 cov = np.abs(Db - np.conj(lc)[:, None] * Da * lc[None]).max(); g5N = np.kron(np.eye(lv.N), g5); herm = np.abs(g5N @ Da @ g5N - Da.conj().T).max()
-check("0b [F] gauge covariance D_n[A + d lambda] = L^-1 D_n[A] L and g5-hermiticity (Q = 1 + rough modes, eps = 1.2, L_c = 2, n = 2)", cov < 1e-10 and herm < 1e-10, f"cov {cov:.0e}, g5-herm {herm:.0e}")
+sk, si = solver_ok(m0)
+check("0b [F] gauge covariance D_n[A + d lambda] = L^-1 D_n[A] L and g5-hermiticity (Q = 1 + rough modes, eps = 1.2, L_c = 2, n = 2)", cov < 1e-10 and herm < 1e-10 and sk, f"cov {cov:.0e}, g5-herm {herm:.0e}; {si}")
+Bc = Blocked(Field(2), 2); Ec = np.zeros((Bc.Nc, 1), complex); Ec[0, 0] = 1; _, _, stc = Bc.apply(Ec, restart=5, maxiter=1, record=False); del Bc
+flag = [not (i == 0 and r <= RES_BOUND) for i, r, _ in stc]
+check("0c [repair] control: a GMRES solve truncated to 5 iterations (L_c = 2, n = 2, free) is flagged as unconverged by the solver test (info != 0 or residual > bound)",
+      all(flag), f"truncated solve: info {stc[0][0]}, independent residual {stc[0][1]:.1e} (bound {RES_BOUND:.0e})")
 print(f"  [t = {time.time() - T0:.0f} s]")
 
 # ================= 1 locality vs roughness
@@ -220,39 +238,43 @@ def scan(Lc, n, bgs):
     return out
 
 
-IR6 = modes_band(rng, 6, 3, 16); UV6 = modes_band(rng, 6, 6, 40)
+IR6 = modes_band(rng, 6, 3, 16); UV6 = modes_band(rng, 6, 6, 40); m0 = len(SOLVES)
 S6 = scan(6, 1, (("free", 0, 0, None, 0), ("IR", 0, 0, IR6, 1 / 30), ("Q1", 1, 1, None, 0), ("IR", 0, 0, IR6, 0.3), ("IR", 0, 0, IR6, 1.0),
                   ("Q1+IR", 1, 1, IR6, 1.0), ("UV", 0, 0, UV6, 1.0), ("UV", 0, 0, UV6, 1.9)))
 fr = S6[("free", 0)][0]; adm = [S6[k][0] for k in S6 if k[1] <= 1 / 30 + 1e-12]; allr = [v[0] for v in S6.values()]
-check("1a [F] L_c = 6, n = 1: envelope decay of ||D(x,y)|| stays exponential with rate >= 0.8 x free at the HJL bound and >= 1.0/unit up to eps = 1.9",
-      min(adm) >= 0.8 * fr and min(allr) >= 1.0, f"free {fr:.2f}/unit; " + "; ".join(f"{k[0]} eps={k[1]:.3g} (dev {v[1]:.2f}): {v[0]:.2f}" for k, v in S6.items() if k[0] != "free"))
+sk, si = solver_ok(m0)
+check("1a [F] L_c = 6, n = 1, one source site: the fitted envelope decay of ||D(x,y)|| (distances 1.3-4.6) is >= 0.8 x free at the HJL bound and >= 1.0/unit up to eps = 1.9",
+      min(adm) >= 0.8 * fr and min(allr) >= 1.0 and sk, f"free {fr:.2f}/unit; " + "; ".join(f"{k[0]} eps={k[1]:.3g} (dev {v[1]:.2f}): {v[0]:.2f}" for k, v in S6.items() if k[0] != "free") + f"; {si}")
+m0 = len(SOLVES)
 IR4 = modes_band(rng, 4, 2, 16); UV4 = modes_band(rng, 4, 8, 40)
 S4 = scan(4, 2, (("free", 0, 0, None, 0), ("Q1+IR", 1, 1, IR4, 1.0), ("UV", 0, 0, UV4, 1.9)))
 fr4 = S4[("free", 0)][0]
-check("1b [F] L_c = 4, n = 2 (fine 16^4 D4 torus, 131k complex unknowns per solve): rate >= 0.8 x free in a rough flux background and a maximally rough UV field",
-      min(v[0] for v in S4.values()) >= 0.8 * fr4, "; ".join(f"{k[0]} eps={k[1]:.3g}: rate {v[0]:.2f}, GMRES its {v[2]}" for k, v in S4.items()))
+sk, si = solver_ok(m0)
+check("1b [F] L_c = 4, n = 2 (fine 16^4 D4 torus, 131k complex unknowns per solve), one source site: fitted rate >= 0.8 x free in a rough flux background and a maximally rough UV field",
+      min(v[0] for v in S4.values()) >= 0.8 * fr4 and sk, "; ".join(f"{k[0]} eps={k[1]:.3g}: rate {v[0]:.2f}, GMRES its {v[2]}" for k, v in S4.items()) + f"; {si}")
 print(f"  [t = {time.time() - T0:.0f} s]")
 
 # ================= 2 GW and convergence in n (L_c = 2)
-UV2 = modes_band(rng, 2, 8, 40); TAB = {}
+UV2 = modes_band(rng, 2, 8, 40); TAB = {}; m0 = len(SOLVES)
 for nm, n12, n34, md, eps in (("free", 0, 0, None, 0), ("Q1", 1, 1, None, 0), ("UV", 0, 0, UV2, 1.0)):
     sc = tune(2, n12, n34, md, eps) if md is not None else 0.0; F = Field(2, n12, n34, md, sc); prev = None; row = []
     for n in (1, 2, 3):
         Bk = Blocked(F, n); v, _ = col0(Bk); w, _ = Bk.apply(g5c(v, 8))
         gw = np.linalg.norm(g5c(v, 8) + v @ g5 - 2 * AL * w) / np.linalg.norm(v)
-        row.append((gw, np.linalg.norm(v - prev) / np.linalg.norm(v) if prev is not None else np.nan)); prev = v; del Bk
+        row.append((gw, np.linalg.norm(v - prev) / np.linalg.norm(v) if prev is not None else np.nan, np.linalg.norm(v - prev) if prev is not None else np.nan)); prev = v; del Bk
     TAB[nm] = row
 mono = all(r[0][0] > r[1][0] > r[2][0] for r in TAB.values()); fac = {k: (r[0][0] / r[1][0], r[1][0] / r[2][0]) for k, r in TAB.items()}
-check("2a [F] GW residual ||g5 D + D g5 - 2 alpha D g5 D|| / ||D|| falls monotonically with n = 1, 2, 3 in every background (only the limit is exact)",
-      mono, "; ".join(f"{k}: " + ", ".join(f"{x[0]:.1e}" for x in r) + f" (x{fac[k][0]:.1f}, x{fac[k][1]:.1f})" for k, r in TAB.items())
-      + " [pre-reg bar x1.5 per step: MISS where < 1.5]")
-cr = {k: r[2][1] / r[1][1] for k, r in TAB.items()}
-check("2b [F] the gauged zoom converges: ||D_3 - D_2|| / ||D_2 - D_1|| <= 0.7 in every background", max(cr.values()) <= 0.7,
-      "; ".join(f"{k}: dD2 {r[1][1]:.1e}, dD3 {r[2][1]:.1e}, ratio {cr[k]:.2f}" for k, r in TAB.items()))
+sk, si = solver_ok(m0)
+check("2a [F] one source block-column e_0 (the 4 spinor columns at coarse site 0), L_c = 2: GW residual ||(g5 D + D g5 - 2 alpha D g5 D) e_0|| / ||D e_0|| falls monotonically over n = 1, 2, 3 in each of 3 backgrounds (the limit n -> inf is not computed)",
+      mono and sk, "; ".join(f"{k}: " + ", ".join(f"{x[0]:.1e}" for x in r) + f" (x{fac[k][0]:.1f}, x{fac[k][1]:.1f})" for k, r in TAB.items())
+      + f" [pre-reg bar x1.5 per step: MISS where < 1.5]; {si}")
+cr = {k: r[2][1] / r[1][1] for k, r in TAB.items()}; ca = {k: r[2][2] / r[1][2] for k, r in TAB.items()}
+check("2b [F] one source block-column, L_c = 2: the column change shrinks from n = 2 to n = 3, ||v_3 - v_2|| / ||v_2 - v_1|| <= 0.7 (v_n = D_n e_0) in every background; the full-matrix ratio ||D_3 - D_2|| / ||D_2 - D_1|| is NOT computed, and no n -> inf limit is computed",
+      max(ca.values()) <= 0.7 and sk, "; ".join(f"{k}: |v2-v1| {r[1][2]:.1e}, |v3-v2| {r[2][2]:.1e}, ratio {ca[k]:.2f} (ratio of relative changes |v3-v2|/|v3| : |v2-v1|/|v2| = {cr[k]:.2f})" for k, r in TAB.items()))
 print(f"  [t = {time.time() - T0:.0f} s]")
 
 # ================= 3 index of D_n in Q backgrounds (overlap of D_n; L_c = 2 coarse, n = 1, 2)
-IDX = {}
+IDX = {}; m0 = len(SOLVES)
 for nm, n12, n34, md, eps in (("Q0", 0, 0, None, 0), ("Q1", 1, 1, None, 0), ("Q-1", 1, -1, None, 0), ("Q1+IR", 1, 1, IR2, 1.2), ("Q0+IR", 0, 0, IR2, 1.0)):
     sc = tune(2, n12, n34, md, eps) if md is not None else 0.0; F = Field(2, n12, n34, md, sc)
     for n in (1, 2):
@@ -260,12 +282,16 @@ for nm, n12, n34, md, eps in (("Q0", 0, 0, None, 0), ("Q1", 1, 1, None, 0), ("Q-
         lm, V = np.linalg.eig(D); i = np.argmin(np.abs(lm)); ch = np.real(V[:, i].conj() @ g5N @ V[:, i]) / np.linalg.norm(V[:, i]) ** 2
         IDX[(nm, n)] = (-0.5 * np.sign(ev).sum(), np.abs(ev).min(), lm[i], ch)
 want = {"Q0": 0, "Q1": -1, "Q-1": 1, "Q1+IR": -1, "Q0+IR": 0}
-check("3a [F] overlap index -(1/2) Tr sign(g5(2 alpha D_n - 1)) = -Q for Q = 0, 1, -1 (smooth and eps = 1.2 rough), n = 1, 2; spectral gap > 0.05",
-      all(abs(v[0] - want[k[0]]) < 1e-9 and v[1] > 0.05 for k, v in IDX.items()),
-      "; ".join(f"{k[0]} n{k[1]}: {v[0]:+.0f} gap {v[1]:.2f}" for k, v in IDX.items()))
+sk, si = solver_ok(m0)
+check("3a [F] overlap index -(1/2) Tr sign(g5(2 alpha D_n - 1)) = -Q for Q = 0, 1, -1 (smooth and eps = 1.2 rough), n = 1, 2, L_c = 2 (full D_n); spectral gap > 0.05",
+      all(abs(v[0] - want[k[0]]) < 1e-9 and v[1] > 0.05 for k, v in IDX.items()) and sk,
+      "; ".join(f"{k[0]} n{k[1]}: {v[0]:+.0f} gap {v[1]:.2f}" for k, v in IDX.items()) + f"; {si}")
 z = [IDX[("Q1", n)] for n in (1, 2)]
-check("3b [F] Q = 1: the lowest mode of D_n is real and chiral (g5 = -1) and moves toward 0 with n (the GW zero mode appears only in the limit)",
+check("3b [F] Q = 1, L_c = 2: the lowest mode of D_n is real and chiral (g5 = -1) and moves toward 0 from n = 1 to n = 2 (it is not a zero mode at n = 1, 2; the limit is not computed)",
       all(abs(x[2].imag) < 1e-8 and abs(x[3] + 1) < 1e-6 for x in z) and z[1][2].real < z[0][2].real,
       f"lambda_0 = {z[0][2].real:.3f} (n=1), {z[1][2].real:.3f} (n=2); chirality {z[0][3]:.3f}, {z[1][3]:.3f}; ratio {z[0][2].real / z[1][2].real:.2f}")
+sk, si = solver_ok(0)
+check("S [repair] every recorded fine GMRES solve in this run converged: info == 0 and independent residual ||M x - b|| / ||b|| <= 1e-9", sk, si)
 print(f"runtime {time.time() - T0:.0f} s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+raise SystemExit(1 if NF else 0)

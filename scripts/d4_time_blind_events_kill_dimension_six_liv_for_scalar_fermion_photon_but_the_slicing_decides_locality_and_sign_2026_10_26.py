@@ -126,7 +126,7 @@ check("C3c triangle action: 192 ordered triangles, gauge mode exact, 8 extra lin
       len(tri) == 192 and np.linalg.norm(Meff(qq) @ qq) < 1e-12 * np.linalg.norm(Meff(qq)) and np.allclose(np.linalg.eigvalsh(H0.T @ Kph(np.zeros(4)).real @ H0), 72))
 # --- C2e/C3d Euclidean on-shell dispersions (time = axis)
 dirs = {'axis': [1, 0, 0], 'face': [1, 1, 0], 'body': [1, 1, 1], 'gen': [1, 2, 3]}; ks = np.array([0.05, 0.1, 0.2])
-def fit(Ef):
+def fit(Ef):   # fits E(k)/k - 1 = c2 k^2 + b k^4 + c6 k^6: the PHASE velocity minus 1, i.e. the energy coefficient b in E = k(1 + b k^4)
     out = {}
     for d, n in dirs.items():
         n = np.array(n, float) / np.linalg.norm(n); dev = np.array([Ef(k * n) / k - 1 for k in ks])
@@ -145,10 +145,10 @@ def Eph(k, j):
 fs, ff, f0, f1 = fit(Esc), fit(Ef), fit(lambda k: Eph(k, 0)), fit(lambda k: Eph(k, 1))
 J6n = lambda n: (lambda pp: float(np.real(sum(x**6 for x in pp) + 15 * sum(pp[i]**2 * pp[j]**2 * pp[k]**2 for i, j, k in itertools.combinations(range(4), 3)))))(np.array([1j, *(np.array(n, float) / np.linalg.norm(n))]))
 dim6 = max(abs(F[d][0]) for F in (fs, ff, f0, f1) for d in dirs)
-check("C2e/C3d no dim-6 term on shell for scalar, overlap fermion, both photon polarisations (all 4 directions)", dim6 < 1e-6, f"max |k^2 coeff| {dim6:.1e}")
-print("  v-1 = b k^4 (axis slicing, a = 1):  dir: scalar  fermion  photon(pol1,pol2)  | -J6/1080")
+check("C2e/C3d no dim-6 term on shell for scalar, overlap fermion, both photon polarisations (all 4 directions): k^2 coefficient of E/k - 1 vanishes (then dE/dk - 1 has none either)", dim6 < 1e-6, f"max |k^2 coeff| {dim6:.1e}")
+print("  E/k - 1 = b k^4 (phase velocity; energy coefficient b; group velocity dE/dk - 1 = 5 b k^4) (axis slicing, a = 1):  dir: scalar  fermion  photon(pol1,pol2)  | -J6/1080")
 for d in dirs: print(f"  {d}: {fs[d][1]:+.3e} {ff[d][1]:+.3e} {f0[d][1]:+.3e},{f1[d][1]:+.3e} | {-J6n(dirs[d]) / 1080:+.3e}")
-check("C3e one dim-8 pattern -J6 on the cone for all species: b_scalar = -J6/1080, fermion 6x, photon 3/8 x, no birefringence",
+check("C3e one dim-8 pattern -J6 on the cone for all species: energy coefficient b_scalar = -J6/1080, fermion 6x, photon 3/8 x, no birefringence",
       all(abs(fs[d][1] + J6n(dirs[d]) / 1080) < 2e-5 and abs(ff[d][1] - 6 * fs[d][1]) < 1e-4 and abs(f0[d][1] - .375 * fs[d][1]) < 1e-5 and abs(f0[d][1] - f1[d][1]) < 1e-6 for d in dirs))
 # --- C4 RP and real time
 def perp(rt):
@@ -166,9 +166,9 @@ oa, orr, oc = osmin(rtA, PA), osmin(rtR, PR), osmin(rtA, PA, extra=-4.0)
 check("C4a site-reflection positivity: axis and root slicing pass; control (antiferro 2-step coupling) fails",
       oa > -1e-12 and orr > -1e-12 and oc < -1e-3, f"min eig rel {oa:.1e}, {orr:.1e}; control {oc:.1e}; link reflection is no lattice symmetry in either")
 fr_ = {d: np.linalg.lstsq(np.vstack([ks**2, ks**4, ks**6]).T, np.array([Esc(k * np.array(n, float) / np.linalg.norm(n), rtR, PR) / k - 1 for k in ks]), rcond=None)[0] for d, n in dirs.items()}
-print("  root slicing (time along a root; slices = cubic lattice of cube centres): scalar b in (k a)^4 units, a = site spacing")
+print("  root slicing (time along a root; slices = cubic lattice of cube centres): scalar energy coefficient b (E/k - 1 = b (k a)^4), a = site spacing")
 print("  " + "  ".join(f"{d} {4 * fr_[d][1]:+.3e}" for d in dirs) + f" | axis slicing: " + "  ".join(f"{d} {fs[d][1]:+.3e}" for d in dirs))
-check("C4b real-time lowest band: dim-6 zero in both slicings; dim-8 superluminal (axis slicing) vs subluminal (root slicing)",
+check("C4b real-time lowest band: dim-6 zero in both slicings; dim-8 energy coefficient b > 0 (superluminal, axis slicing) vs b < 0 (subluminal, root slicing); phase and group velocity have the sign of b",
       max(abs(fr_[d][0]) for d in dirs) < 1e-6 and all(fs[d][1] > -1e-6 for d in dirs) and all(fr_[d][1] < 1e-6 for d in dirs) and fr_['face'][1] < -1e-3)
 nn = rng.normal(size=(20000, 3)); nn /= np.linalg.norm(nn, axis=1)[:, None]
 avA = np.mean([-J6n(n) for n in nn]) / 1080
@@ -176,6 +176,25 @@ def J6root(n):
     k = PR @ n; pp = 1j * rtR / np.sqrt(2) + k; return float(np.real(sum(x**6 for x in pp) + 15 * sum(pp[i]**2 * pp[j]**2 * pp[k_]**2 for i, j, k_ in itertools.combinations(range(4), 3))))
 avR = 4 * np.mean([-J6root(n) for n in nn]) / 1080
 check("C4c isotropic (boost) dim-8 part nonzero and slicing-dependent: <b>_sphere axis vs root", avA > 1e-3 and avR < -1e-3, f"<b_scalar> = {avA:+.2e} (axis), {avR:+.2e} (root)")
+# --- C4e (repair 2026-11-14) group velocity, by an independent route: implicit differentiation of the scalar on-shell
+# condition F(E, k) = sum_r [1 - cos(r.k) cosh((r.t) E)] = 0 gives dE/dk = -(dF/dk)/(dF/dE) with no fit of E(k).
+# If E/k - 1 = b k^4 + ..., then dE/dk - 1 = 5 b k^4 + ...; so the group coefficient is 5x the energy (phase) coefficient.
+def vgroup(k, n, rt=np.array([1., 0, 0, 0]), P=None):
+    kv = np.concatenate([[0.], k * n]) if P is None else P @ (k * n); nv = np.concatenate([[0.], n]) if P is None else P @ n
+    E = Esc(k * n, rt, P) / np.linalg.norm(rt); a, c_ = R @ kv, R @ rt
+    dFdE = -np.sum(np.cos(a) * np.sinh(c_ * E) * c_); dFdk = np.sum(np.sin(a) * (R @ nv) * np.cosh(c_ * E))
+    return -dFdk / dFdE * np.linalg.norm(rt)
+gq = {}
+for sl_, (rt_, P_, bref) in {"axis": (rtA, None, fs), "root": (rtR, PR, fr_)}.items():
+    for d in ("face", "body"):
+        n = np.array(dirs[d], float) / np.linalg.norm(dirs[d]); vg = np.array([vgroup(k, n, rt_, P_) - 1 for k in ks])
+        g_ = np.linalg.lstsq(np.vstack([ks**2, ks**4, ks**6]).T, vg, rcond=None)[0]; gq[(sl_, d)] = (g_[0], g_[1], bref[d][1])
+check("C4e [repair] group velocity dE/dk - 1 (implicit derivative, no E(k) fit) has no k^2 term and its k^4 coefficient is 5 b (b = energy/phase coefficient), both slicings, face and body",
+      all(abs(v[0]) < 1e-6 and abs(v[1] / (5 * v[2]) - 1) < 1e-3 for v in gq.values()),
+      "; ".join(f"{sl_} {d}: group k^4 {v[1]:+.4e} vs 5b {5 * v[2]:+.4e} (b {v[2]:+.4e})" for (sl_, d), v in gq.items())
+      + f"; axis-slicing face/body group = {5 * fs['face'][1]:.4e} (1/48 = {1 / 48:.4e}), {5 * fs['body'][1]:.4e} (2/81 = {2 / 81:.4e})")
+check("C4e' control: the perturbed statement 'group coefficient = phase coefficient' is rejected in every case",
+      all(abs(v[1] / v[2] - 1) > 3 for v in gq.values()), "group/phase ratios " + ", ".join(f"{v[1] / v[2]:.4f}" for v in gq.values()))
 kz = np.array([np.pi / 2] * 3); c = np.cos(R[:, 1:] @ kz)
 sig1 = c[R[:, 0] != 0].sum()
 m2 = 0.09; Dl = R @ rtR
@@ -203,4 +222,8 @@ xs = np.linspace(1e-3, .5, 5000); gx = (xs * (1 - xs) * (16 * (xs**5 + (1 - xs)*
 bgR = .375 * 4 * abs(fr_['body'][1]); kg = (me**2 * Es**4 / (2 * bgR * gx))**(1 / 6) * 1e9
 check("C5b root slicing (all subluminal): e -> e gamma closed; gamma -> e+e- opens only at k_th > 1e20 eV (b_e = 16 b_gamma); nuclei stable",
       kg > 1e19 and Pinst > 1e20, f"k_th(gamma->ee, body) {kg:.1e} eV vs LHAASO 1.4e15; P_inst/A ~ {Pinst:.1e} eV (parent formula)")
+Eg, Dm, cms = 1.4e15, 3.086e25, 2.998e8   # photon energy eV (LHAASO highest), 1 Gpc in m, c in m/s: supplied reference values
+dvg = 5 * bgR * (Eg / (Es * 1e9))**4
+print(f"ESTIMATE (not counted) time of flight uses the GROUP coefficient 5 b: root-slicing photon (body) |dv_g| = 5 |b_gamma| (E/E*)^4 = {dvg:.1e} at {Eg:.1e} eV; delay over 1 Gpc {Dm / cms * dvg:.1e} s")
 print(f"TOTAL: PASS={NP} FAIL={NF}   ({time.time() - t0:.1f} s)")
+raise SystemExit(1 if NF else 0)

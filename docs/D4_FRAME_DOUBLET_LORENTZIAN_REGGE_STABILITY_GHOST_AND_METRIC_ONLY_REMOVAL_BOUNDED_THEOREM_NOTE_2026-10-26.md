@@ -1,12 +1,17 @@
-D4 frame doublet on a Lorentzian lattice: the tick frame part becomes heavy and healthy, the other part stays massless as a ghost on its own cone, and the metric-only reading removes it with the birefringence unchanged
+D4 frame doublet on a Lorentzian lattice: the tick frame part becomes heavy and healthy, the other part stays massless as a ghost on its own cone; a uniform metric-only reading excludes the fixed-spoke frame deformation, and in the Euclidean reading the raw metric block keeps the birefringence law
 
 Claim type: bounded_theorem (exact identities; finite supplied-model numerics on the coned D4 cell).
-Runner: d4_frame_doublet_lorentzian_regge_stability_and_metric_only_removal_2026_10_26 (10/10, 5.6 s, seeded; re-run identical).
+Runner: [`scripts/d4_frame_doublet_lorentzian_regge_stability_and_metric_only_removal_2026_10_26.py`](../scripts/d4_frame_doublet_lorentzian_regge_stability_and_metric_only_removal_2026_10_26.py) (seeded; it exits nonzero on any failed check). Its cache
+[`logs/runner-cache/d4_frame_doublet_lorentzian_regge_stability_and_metric_only_removal_2026_10_26.txt`](../logs/runner-cache/d4_frame_doublet_lorentzian_regge_stability_and_metric_only_removal_2026_10_26.txt) holds the current output (the source run: 10 checks, 5.6 s).
 Pre-registration: criteria_pre_run.txt (written before any computation).
-Builds on: d4-frame-modes (B2/B3, D1), d4-gravity (#10100 draft: G4, R1-R5, M2), time-blind D4 events (#10094).
+Builds on: d4-frame-modes (#10101; recorded only in the source map of [the consolidation](D4_ROUTE_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md)), d4-gravity
+([#10100](D4_EVENT_SET_ROOT_SLICED_HINGE_SUM_GRAVITY_CARRY_OVER_BOUNDED_THEOREM_NOTE_2026-10-26.md): G4, R1-R5, M2), time-blind D4 events ([#10094](D4_TIME_BLIND_EVENTS_KILL_DIMENSION_SIX_LIV_FOR_SCALAR_FERMION_PHOTON_BUT_THE_SLICING_DECIDES_LOCALITY_AND_SIGN_BOUNDED_THEOREM_NOTE_2026-10-26.md)); the last two are in this PR.
 
-VERDICT (pre-registered labels): not TACHYONIC. y0 is STABLE. y1 is MARGINAL, with the GHOST flag
-raised. The metric-only amendment REMOVES the pair, and the graviton birefringence survives exactly.
+VERDICT (pre-registered labels; narrowed 2026-11-14): not TACHYONIC. y0 is STABLE. y1 is MARGINAL, with
+the GHOST flag raised (both in the Lorentzian reading R-b). A uniform metric-only reading excludes the fixed-spoke
+frame deformation (M1, algebraic). In the Euclidean reading (R-a, g = I) the raw metric block keeps the
+birefringence law (M2). Whether metric-only reading removes the Lorentzian ghosts, and what the birefringence is in
+(R-b), was NOT computed.
 The Euclidean strain tachyon of frame-modes B3 is a feature of reading (R-a) only. It does not occur
 in the Lorentzian Regge reading (R-b). So the (2) endpoint branch is not triggered.
 
@@ -30,10 +35,13 @@ Theorems / exact
   - y0 = (2,-1,-1), the tick frame against the other two, which is even;
   - y1 = (0,1,-1), the two non-tick frames against each other, which is odd.
   So y1^3 is forbidden.
-- [T] Metric-only removal holds nonlinearly. The 24 spokes fix every metric component (no free
-  directions are left), so the only metric that fits fixed spokes is g = delta. No frame-rescaled
-  length set, at any amplitude u, is metric-read: the residual distance is 1.0, 0.999 and 0.995 of
-  the deformation at u = .01, .1, .3.
+- [T] Metric-only exclusion of the frame deformation, nonlinear in u. The 24 spokes fix every
+  component of a uniform metric (rank 10, no free directions), so the only uniform metric that fits
+  fixed spokes is g = delta. A frame rescaling at amplitude u != 0 changes root lengths but no spoke,
+  so no single uniform metric reads it: the residual distance is 1.0, 0.999 and 0.995 of the
+  deformation at u = .01, .1, .3. Scope: one uniform metric per cell and the specified frame-rescaled
+  lengths. It says nothing about spacetime-dependent metric readings, and it is not a computation of
+  the Lorentzian spectrum after the doublet is removed.
 
 Finite diagnostics (supplied model)
 - Validation:
@@ -60,10 +68,15 @@ Finite diagnostics (supplied model)
     time-like (|ln z| = 1.18 at lam = 3.5).
 - L4 contrast: the same lattice strain read as (R-a) gives y0 a real Euclidean pole at 0.187, i.e. a
   tachyon (B3). Read as (R-b) it gives a real frequency of 2.18.
-- M2, birefringence: the raw metric block (no gapped modes, no doublet), with the line-integrated
-  reading, which is exactly gauge-covariant (2e-8). Its light roots give A = +-1/6 (axis), +-1/8
-  (face) and 0 (body), identical to the full model, which reproduces d4-gravity R5/R7. The
-  birefringence SURVIVES unchanged.
+- M2, birefringence, Euclidean reading (R-a) with g = I: the raw metric block (no gapped modes,
+  no doublet), with the line-integrated reading, which is exactly gauge-covariant (2e-8). Its light
+  roots give A = +-1/6 (axis), +-1/8 (face) and 0 (body), identical to the full model, which
+  reproduces d4-gravity R5/R7. So in (R-a) the birefringence law is unchanged. A is a phase-speed
+  coefficient (E/k = 1 + A (ka)^2; the group speed has 3A).
+  - Correction (2026-11-14). The source verdict and title said the metric-only reading removes the
+    pair "with the birefringence unchanged", without naming the reading. This note's own open list
+    says the raw metric block in (R-b) and the fate of the cell-scale ghost pair under metric-only
+    reading in (R-b) were not run. Both stay OPEN; the runner prints them as NOT CHECKED.
 - M3 control: the midpoint reading is not gauge-exact (7e-6). It keeps a nonzero splitting
   (half-split 0.29) but adds a polarisation-averaged shift of +0.086. So the O(k^2) coefficient is
   reading-dependent. By the pre-registered "both readings" clause this is PARTIAL, and the
@@ -92,8 +105,11 @@ Proposed CL amendment (working, not adopted; same text as frame-modes D1)
 "Edge registers enter the hinge sum and the matter odds only through the metric their records read
 (order and count); the hinge sum is taken on metric-read (line-integrated) lengths of the coned D4
 cells."
-- Upgrade: it is now needed to remove a massless ghost (y1) and the cell-scale ghost pair, and it
-  keeps linear GR and the graviton birefringence (1/3 (ka)^2 splitting, same angular law) exactly.
+- Upgrade (narrowed 2026-11-14): in (R-b) the per-edge reading has a massless ghost (y1) and a
+  cell-scale ghost pair, and a uniform metric-only reading excludes the frame deformation that
+  carries y1. In (R-a) the raw metric block keeps linear GR and the birefringence law (1/3 (ka)^2
+  phase splitting, same angular law). That the amendment removes the cell-scale ghost pair, and its
+  (R-b) spectrum, are not computed.
 
 Smuggling gate
 - No measured number chosen.
@@ -101,6 +117,7 @@ Smuggling gate
 - Supplied: the coning; Lorentzian Regge via continuation (Sorkin / Barrett); the lam family and the
   lam -> 1 limit; the line-integrated metric reading.
 - Prediction not built for: y1's cone and its ghost sign under per-edge reading. Under the
-  amendment, the birefringence carry-over is now TESTED: it survives.
+  amendment, the birefringence carry-over is TESTED in the Euclidean reading (R-a) only: it survives
+  there. In (R-b) it is not tested.
 - Bent clause: d4-gravity's "every edge responding" (CL-3 response variables). Axioms unchanged.
 - Gate: PASS.

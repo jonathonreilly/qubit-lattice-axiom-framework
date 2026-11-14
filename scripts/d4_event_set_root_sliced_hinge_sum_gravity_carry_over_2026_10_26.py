@@ -1,6 +1,6 @@
 AUDIT_INPUT_PATHS = ('docs/D4_EVENT_SET_ROOT_SLICED_HINGE_SUM_GRAVITY_CARRY_OVER_BOUNDED_THEOREM_NOTE_2026-10-26.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
 #!/usr/bin/env python3
-"""d4-gravity: does the adopted gravity sector carry over to the D4 event set sliced along a root?
+"""d4-gravity: does the candidate gravity sector (a proposal of the source campaign, no premise weight) carry over to the D4 event set sliced along a root?
 Carrier: D4 events, Delaunay 16-cells coned from their centres (the deep holes, i.e. the Voronoi
 24-cell vertices); W(F4)-symmetric. Linearised Euclidean Regge hinge sum, every edge responding.
 Time = root t = (1,1,0,0)/sqrt2. Analytic continuation uses the opposite-momentum transpose.
@@ -233,14 +233,24 @@ yf = np.array(yf)
 check("R4 every light pair = one metric (tensor) mode + one frame mode, degenerate in speed",
       np.all(np.abs(np.sort(yf, axis=1) - [0, 1]) < 1e-2), f"frame shares per pair {np.round(yf, 3).tolist()}")
 Aall = np.array([a for _, Ak in tab for a in Ak]); stab = max(np.abs(Ak[0] - Ak[1]).max() for _, Ak in tab)
-print("  birefringence c = 1 + A (ka)^2 per slice direction (a = cube edge), k=.1 / k=.05:")
+print("  birefringence: PHASE speed E/k = 1 + A (ka)^2 per slice direction (a = cube edge), k=.1 / k=.05 (group speed dE/dk = 1 + 3A (ka)^2, check R5b):")
 for nv, Ak in tab: print(f"   n={nv}: A = {np.round(np.unique(np.round(Ak[0], 4)), 4).tolist()} / {np.round(np.unique(np.round(Ak[1], 4)), 4).tolist()}")
 amax = np.abs(Aall).max(); L_rung = 8.1e-35; k100 = 2*np.pi*100/2.998e8; dc = 2*amax*(k100*L_rung)**2
 check("R5 graviton birefringence (W(F4)-only quartic term): +-A, zero polarisation-averaged shift, A = 1/6 on the cube axis, 0 on the body diagonal",
       stab < 2e-2*amax and abs(np.mean(Aall)) < 1e-3 and abs(np.abs(tab[0][1][1]).max() - 1/6) < 2e-3 and np.abs(tab[2][1][1]).max() < 2e-3,
       f"|A| <= {amax:.4f}; mean {np.mean(Aall):.1e}; two-scale drift {stab:.1e}")
-check("R6 GW170817 (|dc| < 1e-15) and dispersion bounds: splitting 2A(kL)^2 at 100 Hz with the cell rung L = 8.1e-35 m",
-      dc < 1e-15, f"|dc| = {dc:.0e}; bound needs L < {np.sqrt(1e-15/(2*amax))/k100:.0e} m")
+# R5b (repair 2026-11-14): group velocity by finite differences of the light root (no fit of the A law): dE/dk - 1 = 3A (ka)^2.
+def Etop(nv, k):
+    E = light(nv, k)[0]; return np.sort(E[(np.abs(E) < 3*k) & (E.real > 0)].real)[-1]
+kk, hh = .1, .005; gA = {}
+for nv in ([1, 0, 0], [1, 1, 0]):
+    vg = (Etop(nv, kk + hh) - Etop(nv, kk - hh))/(2*hh); Ap = (Etop(nv, kk)/kk - 1)/(kk/np.sqrt(2))**2; gA[tuple(nv)] = ((vg - 1)/(kk/np.sqrt(2))**2, Ap)
+check("R5b group speed of the faster graviton polarisation: (dE/dk - 1)/(ka)^2 = 3A (A = phase coefficient), axis and face; control: the perturbed statement 'group = phase' is rejected",
+      all(abs(g/(3*a) - 1) < 2e-2 and abs(g/a - 1) > 1 for g, a in gA.values()), "; ".join(f"n={list(n)}: group {g:.4f} vs 3A {3*a:.4f} (A {a:.4f})" for n, (g, a) in gA.items()))
+dc2 = 4*dc; dcg = 3*dc2
+check("R6 [E] GW170817 (|dc| < 1e-15; an arrival-time, i.e. group-speed, bound) and dispersion bounds: splitting at 100 Hz with the cell rung L = 8.1e-35 m",
+      dcg < 1e-15, f"phase splitting 2A(kL)^2 with a = L (source value) {dc:.1e}; with the a = 2L map of #10110 (supplied correction) {dc2:.2e}; "
+      f"group splitting 3 x that = {dcg:.2e}; bound needs L < {np.sqrt(1e-15/(2*3*4*amax))/k100:.0e} m (group, a = 2L)")
 print(f"  (R done {time.time()-T0:.1f}s)")
 def Aform(nv):
     n2 = (np.array(nv, float)/np.linalg.norm(nv))**2; S = n2[0]*n2[1] + n2[0]*n2[2] + n2[1]*n2[2]; Pp = np.prod(n2)
@@ -296,3 +306,4 @@ check("M2 the hinge sum does not fix the tick/edge ratio (a uniform time stretch
       stretch < 1e-10 and np.ptp(rl) < 1e-12, f"|Q(0) M h_tt| = {stretch:.0e}; root lengths {rl.min():.4f}..{rl.max():.4f}; no free tau")
 print(f"elapsed {time.time()-T0:.1f}s")
 print(f"TOTAL: PASS={P} FAIL={F}")
+raise SystemExit(1 if F else 0)

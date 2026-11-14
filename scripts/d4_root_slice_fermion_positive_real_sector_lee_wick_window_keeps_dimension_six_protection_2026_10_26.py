@@ -97,6 +97,14 @@ wp, wm = sp.sqrt((71 + 17 * sp.sqrt(17)) / 96), sp.sqrt((71 - 17 * sp.sqrt(17)) 
 check("4 [exact] root time, k = 0, m = 0: both g_t sectors have discriminant 27648 (144 w^4 - 213 w^2 + 2); window edges w^2 = (71 -+ 17 sqrt17)/96",
       all(sp.simplify(d - 27648 * (144 * w_**4 - 213 * w_**2 + 2)) == 0 for d in disc) and sp.simplify((144 * w_**4 - 213 * w_**2 + 2).subs(w_, wp)) == 0,
       f"w- = {float(wm):.5f}, w+ = {float(wp):.5f}; the CL natural point w = 1 is inside")
+# 4b (repair 2026-11-14) exact consequence and its instances: for m = 0 and w- < w < w+ the k = 0 quartic of each g_t
+# sector has negative discriminant, hence exactly one non-real conjugate root pair, so the k = 0 slice transfer has
+# non-real eigenvalues and is not a positive operator. Instances inside the window; control outside (no non-real pole).
+nre = lambda w: int(np.sum(np.abs((z := poles(cD4(np.zeros(4), w, 0., np.array([1., 1, 0, 0])))).imag) > 1e-9 * np.abs(z)))
+ins = {w: nre(w) for w in (0.15, 0.5, 1.0, 1.2)}; outs = {w: nre(w) for w in (0.05, 1.25, 1.5)}
+check("4b [exact + instances] m = 0, k = 0, root time: inside the window the transfer has non-real eigenvalues (one conjugate pair per g_t sector), so it is not positive; control: outside the window no non-real pole",
+      all(v == 8 for v in ins.values()) and all(v == 0 for v in outs.values()),
+      "non-real poles (2 g_t sectors x one conjugate pair x spinor multiplicity 2 = 8) inside w = " + ", ".join(f"{w}: {v}" for w, v in ins.items()) + "; outside w = " + ", ".join(f"{w}: {v}" for w, v in outs.items()))
 # ---- 5. the positive real sector (Lee-Wick window) along the root
 rt = np.array([1., 1, 0, 0]); Qr, gr = frame(rt); kr = [Qr @ rng.uniform(-np.pi, np.pi, 3) for _ in range(40)] + [Qr @ np.array(v) for v in ([.05, .02, -.03], [3.14, 3.14, 3.14], [3.14, 0, 0])]
 tab, ok5 = [], True
@@ -106,9 +114,9 @@ for w in (0.3, 0.7, 1.0, 1.2):
         wr, pb, mre = max(x[0] for x in c), max(x[1] for x in c), np.sqrt(2) * min(x[3] for x in c)
         ok5 &= wr < 1e-13 and pb < 1e-11 and all(x[2] == 2 for x in c); tab.append((w, m, mre))
 out = [classify(resids(cD4(Qr @ np.array([0, 1e-3, 0]), w, 0., rt)), gr)[0] for w in (0.05, 1.25)]
-check("5 root time, w in (w-, w+): every real pole has one norm sign (<1e-13) and the rest is ONE complex-conjugate pair with conjugate residues (pseudo-Hermitian T)",
+check("5 [F] root time, sampled w in {0.3, 0.7, 1.0, 1.2}, m in {0.02, 0.3, 1}, 43 transverse momenta: every real pole has one norm sign (<1e-13) and the rest is ONE complex-conjugate pair with conjugate residues (pseudo-Hermitian T)",
       ok5 and min(out) > .3, "min Re E of the pair: " + " ".join(f"(w{w},m{m}):{e:.2f}" for w, m, e in tab if m != .3) + f"; outside (w=0.05, 1.25): wrong {out[0]:.2f}, {out[1]:.2f}")
-# ---- 6. light branch: speed 1 and no k^2 term in v - 1 (dimension six zero) inside the window
+# ---- 6. light branch: E/k -> 1 and no k^2 term in E/k - 1 (phase velocity; hence none in dE/dk - 1): dimension six zero at sampled w
 dd = {'axis': [1, 0, 0], 'face': [1, 1, 0], 'body': [1, 1, 1], 'gen': [.3, .5, .81]}
 def El(q, w):
     z = poles(cD4(Qr @ q, w, 0., rt)); z = z[(np.abs(z) > 1 + 1e-12) & (np.abs(z.imag) < 1e-9 * np.abs(z))]; return np.sqrt(2) * np.log(np.abs(z).min())
@@ -116,21 +124,21 @@ cs = {}
 for w in (0.5, 1.0, 1.2):
     for nm, n in dd.items():
         n = np.array(n, float) / np.linalg.norm(n); x = np.array([.01, .02, .03]); c = np.polyfit(x**2, [El(t * n, w) / t for t in x], 2); cs[(w, nm)] = c[::-1]
-check("6 light branch inside the window: v = 1 and the k^2 coefficient of v - 1 vanishes in every direction (W(F4) protection survives in the positive sector)",
+check("6 [F] light branch at w = 0.5, 1, 1.2: E/k -> 1 and the k^2 coefficient of E/k - 1 (phase velocity) vanishes in 4 directions (W(F4) protection survives in the real sector)",
       all(abs(c[0] - 1) < 1e-6 and abs(c[1]) < 1e-5 for c in cs.values()), "max |c2| " + " ".join(f"w={w}:{max(abs(cs[(w, n)][1]) for n in dd):.0e}" for w in (0.5, 1.0, 1.2)))
 # ---- 7. gap between pair and real sector (analytic projector -> exponentially local projected H) and branch ranks
 gap, rk = 9., set()
 for k in kr:
     rs = resids(cD4(k, 1., .02, rt)); lr = [l for l, P in rs if abs(l.imag) < 1e-9 * abs(l)]; lc = [l for l, P in rs if abs(l.imag) >= 1e-9 * abs(l)]
     gap = min(gap, min(abs(a - b) for a in lc for b in lr)); rk |= {np.linalg.matrix_rank(P, 1e-8) for l, P in rs}
-check("7 w = 1: the pair never meets the real sector on sampled real k (analytic spectral projector), every branch has rank 2 (one Dirac fermion per branch)",
+check("7 [F] w = 1, m = 0.02: the pair stays away from the real sector at the 43 sampled real k (min distance printed; a sampled necessary condition, not an all-torus gap), every branch has rank 2 (one Dirac fermion per branch)",
       gap > 1e-3 and rk == {2}, f"min |lam_pair - lam_real| = {gap:.3f}")
 # ---- 8. zoom: coarse slices n -> b n; wrong-sign weight of the Hankel form sum_j lam_j^{b(n+n')} P_j g_t falls as e^{-2b dE}
 rs = resids(cD4(Qr @ np.array([.05, .02, -.03]), 1., .3, rt)); fz = {}
 for b in (1, 2, 4, 8):
     Hk = np.block([[sum(l ** (b * (i + j)) * P @ gr for l, P in rs) for j in range(1, 5)] for i in range(1, 5)]); Hk = -(Hk + Hk.conj().T) / 2
     e = np.linalg.eigvalsh(Hk); fz[b] = max(-e.min(), 0) / e.max()
-check("8 zoom: the complex pair's indefinite weight on coarse slices decays exponentially with the rung factor b (b=8 at float floor)",
+check("8 [F] zoom, one k: the complex pair's indefinite weight on coarse slices falls with the rung factor b = 1, 2, 4 (b = 4, 8 at float floor)",
       fz[1] > fz[2] > fz[4] and fz[4] < 1e-11 and fz[8] < 1e-11, " ".join(f"b={b}:{v:.1e}" for b, v in fz.items()))
 # ---- 9. invariant counts behind 'any W(F4) spinor kernel': Sym^3 V -> V and Sym^5 V -> V, quartic scalars
 B4 = np.array([A for A in G if np.allclose(np.abs(A).sum(1), 1)])
@@ -151,6 +159,8 @@ Hs = sum(hs[i, j] * c[i].T @ c[j] for i in range(n) for j in range(n)); eb = np.
 e1 = np.linalg.eigvals(hs.astype(complex)); ef = np.array([sum(e1[list(S)]) for r in range(n + 1) for S in itertools.combinations(range(n), r)]); mis = max(max(np.abs(ef - x).min() for x in eb), max(np.abs(eb - x).min() for x in ef))
 check("10 [exact] JW spin Hamiltonian spectrum = fermion Fock sums, complex single-particle pair kept: bosonization cannot cure a non-positive fermion",
       mis < 1e-9 and np.abs(e1.imag).max() > 1e-3, f"max mismatch {mis:.0e} over 64 levels, single-particle Im {np.abs(e1.imag).max():.2f}")
-print("VERDICT: the W(F4) nearest-neighbour fermion along a root has an exactly positive real sector for w- < w < w+ (contains the dim-6-free light Dirac branch);")
-print("  the only defect is one complex-conjugate (Lee-Wick) pair at Re E >= 0.8-3.5 /a (rises with w). Short and edge directions fail. Interacting fate OPEN.")
+print("VERDICT: root time, k = 0, m = 0: one complex-conjugate pair exactly for w- < w < w+ (so no fully positive transfer there). At the sampled w, m and 43 momenta")
+print("  the real poles have one norm sign (contains the dim-6-free light Dirac branch) and the only other content is one Lee-Wick pair at Re E >= 0.8-3.5 /a.")
+print("  An all-torus gap, an analytic projector and locality of the projected H are NOT shown. Short and edge directions fail at the sampled w. Interacting fate OPEN.")
 print(f"TOTAL: PASS={NP} FAIL={NF}   ({time.time() - t0:.1f} s)")
+raise SystemExit(1 if NF else 0)

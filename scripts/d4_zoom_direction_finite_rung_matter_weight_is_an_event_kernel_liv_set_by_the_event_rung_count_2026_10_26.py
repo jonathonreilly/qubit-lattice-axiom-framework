@@ -112,19 +112,32 @@ for n in range(4):
         print(f"  {n} | {lab} | {be:.2e} | {fm(g):>8} | {fm(c):>8} | {w:.2e} | {EQG(be):.2e}")
         if lab == "B'": okB &= abs(w / refw[n] - 1) < 1e-2 and ((g is None) == (ref[n] is None)) and (g is None or abs(g / ref[n] - 1) < 1e-2)
 gA = th_gee(be0, bg)
-check("Z5 [E] reading A: every n gives the n = 0 row (gamma->ee 1.9e20 eV, wall 9.7e20 A eV); reading B' reproduces #10110 rows",
-      abs(gA / 1.91e20 - 1) < 1e-2 and abs(wall(be0) / 9.67e20 - 1) < 1e-2 and okB, "all rows pass every measured bound in both readings")
+# repair 2026-11-14: the bound comparison is computed, not asserted. Supplied reference values (eV): highest observed photon
+# 1.4e15 (gamma -> e+e- must stay closed below it), electrons observed to ~1e15 (e -> e gamma closed below it), the 3.2e20 eV
+# event read as a proton (nuclear wall above it). E_QG,4 is printed and compared with no bound here.
+OBS_G, OBS_E, OBS_P = 1.4e15, 1e15, 3.2e20
+rows = [(n, lab, th_gee(b_, bg), th_cher(b_, bg), wall(max(b_, bg))) for n in range(4) for lab, b_ in (('A', be0), ("B'", be0 / 16**n))]
+okbnd = all((g is None or g > OBS_G) and (c is None or c > OBS_E) and w > OBS_P for _, _, g, c, w in rows)
+check("Z5 [E] reading A: every n gives the n = 0 row (gamma->ee 1.9e20 eV, wall 9.7e20 A eV); reading B' reproduces #10110 rows; every row passes the three compared bounds",
+      abs(gA / 1.91e20 - 1) < 1e-2 and abs(wall(be0) / 9.67e20 - 1) < 1e-2 and okB and okbnd,
+      f"compared (supplied): gamma->ee threshold > {OBS_G:.1e} eV, e->e gamma threshold > {OBS_E:.0e} eV, wall > {OBS_P:.1e} eV (min wall/3.2e20 = {min(r[4] for r in rows) / OBS_P:.1f}); E_QG,4 not compared")
 # ---------------- Z6 decision-text test: the NN Lee-Wick pair in the event weight sits at 2^n x (B') or 1 x (A)
 def Fnn(E):
     q = 1j * E * ut; A = 2 - np.cos(R @ q).sum() / 12; B = np.sin(R @ q) @ R / 12; return A * A + B @ B
 Ep = 2.6 + 1.67j
 for _ in range(60): Ep = Ep - Fnn(Ep) / ((Fnn(Ep + 1e-7) - Fnn(Ep - 1e-7)) / 2e-7)
-blow = []
-for n in (1, 2):
-    qp = (1j * 2**n * Ep * ut)[None] * (1 + 1e-9); qg = (1j * 2**n * (Ep + 0.3) * ut)[None]
+blow = []; fw = []; slope = []
+for n in (1, 2, 3):
+    qp = (1j * 2**n * Ep * ut)[None] * (1 + 1e-9); qg = (1j * 2**n * (Ep + 0.3) * ut)[None]; q7 = (1j * 2**n * Ep * ut)[None] * (1 + 1e-7)
     blow.append(np.linalg.norm(G_rung(qp, n)[1]) / np.linalg.norm(G_rung(qg, n)[1]))
-check("Z6 [T+F] NN pair (k = 0) sits at 2^n E_pair in the rung-n event kernel: the decision's rung-2 ghost cost is a B' statement",
-      abs(Fnn(Ep)) < 1e-12 and min(blow) > 1e5, f"E_pair = {Ep.real:.4f} {Ep.imag:+.4f}i (D4 units); "
-      f"|G_n| blow-up at 2^n E_pair: n=1 {blow[0]:.0e}, n=2 {blow[1]:.0e}")
+    slope.append(np.linalg.norm(G_rung(qp, n)[1]) / np.linalg.norm(G_rung(q7, n)[1]))   # simple pole: |G| ~ 1/offset, so ~100
+    fw.append(abs(fq(np.cos(1j * 2**(n - 1) * Ep * ut))) ** 2)   # blocking weight f(Q)^2 at the rung-(n-1) pole, image l = 0
+# A rung keeps a pole of G_(n-1) at Q only if the blocking weight f(Q)^2 there is nonzero and no other image cancels its
+# residue (real-momentum positivity of the blocking sum does not give this). Both are tested here at k = 0, n = 1, 2, 3 only.
+check("Z6 [F] NN pair (k = 0) sits at 2^n E_pair in the rung-n event kernel for n = 1, 2, 3 (nonzero blocking weight f(Q)^2 at the pole, |G_n| blows up): the decision's rung-2 ghost cost is a B' statement",
+      abs(Fnn(Ep)) < 1e-12 and min(blow) > 1e5 and min(fw) > 1e-6 and all(abs(x / 100 - 1) < 0.1 for x in slope), f"E_pair = {Ep.real:.4f} {Ep.imag:+.4f}i (D4 units); "
+      f"|f(Q)|^2 at the pole n=1,2,3: " + ", ".join(f"{x:.1e}" for x in fw) + "; |G_n| blow-up at 2^n E_pair: " + ", ".join(f"n={n} {b:.0e}" for n, b in zip((1, 2, 3), blow))
+      + "; |G| ratio at offsets 1e-9 / 1e-7 (simple pole -> 100): " + ", ".join(f"{x:.1f}" for x in slope))
 print(f"runtime {time.time() - t0:.1f} s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+raise SystemExit(1 if NF else 0)

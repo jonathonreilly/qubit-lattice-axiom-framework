@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/d4_time_blind_events_kill_dimension_six_liv_for_scalar_fermion_photon_but_the_slicing_decides_locality_and_sign_2026_10_26.py
-runner_sha256: e82b9362e37c45b587c3f7cc3774ce5b1c9a04386d7f77a27a8386ec3cfd8827
-input_fingerprint_sha256: 444d058e8ad110437977b1de61242c960a187e6c43555df2a3eddd92f4228fa3
+runner_sha256: 6b9ee8fc40fd0298cd05356cf19d72d86803498e4bc94bb2921c8f3c5dc6fde2
+input_fingerprint_sha256: a56d97da4f5ea822080f529e6357ac1ca16b0a19110d305fb98c5ae11f0b34d5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 9.92
+elapsed_sec: 9.74
 status: ok
 ----- stdout -----
 PASS C0 |Aut(D4)| = |W(F4)| = 1152, roots preserved
@@ -16,22 +16,25 @@ PASS C2d overlap on D4 Wilson kernel: GW exact, D(0) = 0, D = 2 at all 71 double
 PASS C3a photon: W(F4) gauge-inv kernels p^2: 1 (F^2); p^4: 3 invariant, 1 gauge-inv = the O(4) one; same for rotation subgroup (576) | dim-6 photon LIV forbidden by W(F4)+gauge to all orders
 PASS C3b graviton: p^2 diffeo-inv = 1 (Einstein, one metric); p^4: 3 vs O(4) 2 -> one W(F4)-only R^2 invariant, on shell birefringent | zero on body diagonals; its coefficient in a D4 Regge action is uncomputed
 PASS C3c triangle action: 192 ordered triangles, gauge mode exact, 8 extra link modes heavy (72 vs Z = 24)
-PASS C2e/C3d no dim-6 term on shell for scalar, overlap fermion, both photon polarisations (all 4 directions) | max |k^2 coeff| 5.4e-09
-  v-1 = b k^4 (axis slicing, a = 1):  dir: scalar  fermion  photon(pol1,pol2)  | -J6/1080
+PASS C2e/C3d no dim-6 term on shell for scalar, overlap fermion, both photon polarisations (all 4 directions): k^2 coefficient of E/k - 1 vanishes (then dE/dk - 1 has none either) | max |k^2 coeff| 5.4e-09
+  E/k - 1 = b k^4 (phase velocity; energy coefficient b; group velocity dE/dk - 1 = 5 b k^4) (axis slicing, a = 1):  dir: scalar  fermion  photon(pol1,pol2)  | -J6/1080
   axis: -6.611e-07 +4.258e-08 -3.292e-08,-3.292e-08 | -0.000e+00
   face: +4.166e-03 +2.500e-02 +1.562e-03,+1.562e-03 | +4.167e-03
   body: +4.938e-03 +2.963e-02 +1.852e-03,+1.852e-03 | +4.938e-03
   gen: +3.947e-03 +2.369e-02 +1.481e-03,+1.481e-03 | +3.948e-03
-PASS C3e one dim-8 pattern -J6 on the cone for all species: b_scalar = -J6/1080, fermion 6x, photon 3/8 x, no birefringence
+PASS C3e one dim-8 pattern -J6 on the cone for all species: energy coefficient b_scalar = -J6/1080, fermion 6x, photon 3/8 x, no birefringence
 PASS C4a site-reflection positivity: axis and root slicing pass; control (antiferro 2-step coupling) fails | min eig rel -1.8e-16, -1.2e-16; control -1.5e-01; link reflection is no lattice symmetry in either
-  root slicing (time along a root; slices = cubic lattice of cube centres): scalar b in (k a)^4 units, a = site spacing
+  root slicing (time along a root; slices = cubic lattice of cube centres): scalar energy coefficient b (E/k - 1 = b (k a)^4), a = site spacing
   axis +3.185e-06  face -1.666e-02  body -1.975e-02  gen -1.579e-02 | axis slicing: axis -6.611e-07  face +4.166e-03  body +4.938e-03  gen +3.947e-03
-PASS C4b real-time lowest band: dim-6 zero in both slicings; dim-8 superluminal (axis slicing) vs subluminal (root slicing)
+PASS C4b real-time lowest band: dim-6 zero in both slicings; dim-8 energy coefficient b > 0 (superluminal, axis slicing) vs b < 0 (subluminal, root slicing); phase and group velocity have the sign of b
 PASS C4c isotropic (boost) dim-8 part nonzero and slicing-dependent: <b>_sphere axis vs root | <b_scalar> = +3.17e-03 (axis), -1.27e-02 (root)
+PASS C4e [repair] group velocity dE/dk - 1 (implicit derivative, no E(k) fit) has no k^2 term and its k^4 coefficient is 5 b (b = energy/phase coefficient), both slicings, face and body | axis face: group k^4 +2.0834e-02 vs 5b +2.0830e-02 (b +4.1660e-03); axis body: group k^4 +2.4692e-02 vs 5b +2.4688e-02 (b +4.9376e-03); root face: group k^4 -2.0834e-02 vs 5b -2.0829e-02 (b -4.1659e-03); root body: group k^4 -2.4692e-02 vs 5b -2.4687e-02 (b -4.9375e-03); axis-slicing face/body group = 2.0830e-02 (1/48 = 2.0833e-02), 2.4688e-02 (2/81 = 2.4691e-02)
+PASS C4e' control: the perturbed statement 'group coefficient = phase coefficient' is rejected in every case | group/phase ratios 5.0009, 5.0008, 5.0012, 5.0010
 PASS C4d locality: axis slicing inter-slice hop sum vanishes at real k -> E = inf, H not exponentially local; root slicing strip = m/sqrt6 | root strip 0.1224 vs mass-shell 0.1225 (no lattice singularity nearer)
 PASS C5 axis slicing: e -> e gamma opens at p_th > 1e20 eV, p -> p gamma > 1e21 eV; gamma -> ee closed (b_gamma = b_e/16 exactly) | p_th(e) 1.1e+20 eV, p_th(p as fermion) 1.4e+21 eV (body); obs e ~1e15, gamma 1.4e15, UHECR 3e20
 PASS C5b root slicing (all subluminal): e -> e gamma closed; gamma -> e+e- opens only at k_th > 1e20 eV (b_e = 16 b_gamma); nuclei stable | k_th(gamma->ee, body) 1.9e+20 eV vs LHAASO 1.4e15; P_inst/A ~ 9.9e+20 eV (parent formula)
-TOTAL: PASS=17 FAIL=0   (8.9 s)
+ESTIMATE (not counted) time of flight uses the GROUP coefficient 5 b: root-slicing photon (body) |dv_g| = 5 |b_gamma| (E/E*)^4 = 6.5e-50 at 1.4e+15 eV; delay over 1 Gpc 6.7e-33 s
+TOTAL: PASS=19 FAIL=0   (8.8 s)
 
 ----- stderr -----
 

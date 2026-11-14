@@ -4,7 +4,9 @@ AUDIT_INPUT_PATHS = ('docs/D4_FRAME_DOUBLET_LORENTZIAN_REGGE_STABILITY_GHOST_AND
 Lorentzian Regge reading (R-b): background g_L = P_perp - lam t t^T, Regge action = analytic continuation of the
 Euclidean hinge sum (branch sqrt(z + i0)); second order via Schlaefli (d2S = Sum dA d eps), no arccos branches.
 Contrast (R-a): Euclidean W(F4) lattice with momentum continuation (d4-gravity / d4-frame-modes).
-Metric-only amendment: removal (nonlinear, exact) and graviton birefringence of the raw metric block.
+Metric-only reading: a uniform metric cannot fit fixed spokes plus frame-rescaled roots (algebraic), and the graviton
+birefringence of the raw metric block in the Euclidean reading (R-a, g = I) only. Repair 2026-11-14: the raw metric block
+and the cell-scale ghost pair under the metric-only reading in (R-b) are NOT computed here and are printed as NOT CHECKED.
 Self-contained; seeded; numpy + scipy only."""
 AUDIT_TIMEOUT_SEC = 120
 import itertools, time
@@ -355,7 +357,7 @@ for u in (.01, .1, .3):
     sY = np.array([np.linalg.norm(e[0])**2 for e in EVEC]); fr = {e: f for f, c in enumerate(FRc) for e in c}
     for e, f in fr.items(): sY[e] *= (1 + u*[0, 1, -1][f])**2
     hfit = np.linalg.lstsq(A_s, sY, rcond=None)[0]; dist.append(np.linalg.norm(A_s @ hfit - sY)/np.linalg.norm(sY - scls(np.eye(4)).real))
-check("M1 metric-only reading removes the doublet nonlinearly: spokes fix the metric completely (g = delta), so no frame-rescaled length set (any u) is metric-read",
+check("M1 [T+F] the 24 spokes fix every component of a uniform metric (rank 10), so the only uniform metric with unchanged spokes is g = delta; no frame-rescaled length set (u = .01, .1, .3; algebraically every u != 0) is read by one uniform metric (spacetime-dependent readings not covered)",
       ns_ == 0 and min(dist) > .5, f"metric directions left free by the spokes: {ns_}; least-squares distance / |deformation| = {np.round(dist, 3).tolist()} at u = .01, .1, .3")
 g = np.eye(4)
 raw = lambda K: Mread_s(-K).T @ Qs(K, g)[0] @ Mread_s(K)
@@ -369,12 +371,15 @@ for nv, lab in (([1, 0, 0], 'axis'), ([1, 1, 0], 'face'), ([1, 1, 1], 'body')):
     for mn, f in (('full', full), ('raw', raw), ('mid', mid)):
         E = lightroots(f, k, ns, 0, [k*(1 + a*(k/np.sqrt(2))**2) for a in (-.3, .3)])
         Ab[mn, lab] = np.sort((E.real/k - 1)/(k/np.sqrt(2))**2)
-print("  graviton c = 1 + A (ka)^2 at ka = .07 (the two polarisations): " + "; ".join(f"{m}: " + " ".join(f"{l} {np.round(Ab[m, l], 3).tolist()}" for l in ('axis', 'face', 'body')) for m in ('full', 'raw', 'mid')))
+print("  graviton PHASE speed E/k = 1 + A (ka)^2 (group speed 1 + 3A (ka)^2) at ka = .07, Euclidean reading (R-a), g = I (the two polarisations): " + "; ".join(f"{m}: " + " ".join(f"{l} {np.round(Ab[m, l], 3).tolist()}" for l in ('axis', 'face', 'body')) for m in ('full', 'raw', 'mid')))
 okM = all(abs(Ab[m, 'axis'][1] - 1/6) < 3e-3 and abs(Ab[m, 'axis'][0] + 1/6) < 3e-3 and abs(Ab[m, 'face'][1] - 1/8) < 3e-3 and np.abs(Ab[m, 'body']).max() < 3e-3 for m in ('full', 'raw'))
-check("M2 birefringence SURVIVES the metric-only reading unchanged (line-integrated reading, exactly gauge-covariant): +-1/6 axis, +-1/8 face, 0 body diagonal; validated on the full model",
+check("M2 [F] Euclidean reading (R-a), g = I: the raw metric block (line-integrated reading, exactly gauge-covariant) has the full model's birefringence +-1/6 axis, +-1/8 face, 0 body diagonal; the Lorentzian (R-b) raw metric block is NOT computed",
       okM and gres['raw'] < 1e-6 and gres['full'] < 1e-6, f"gauge residual full {gres['full']:.0e}, raw {gres['raw']:.0e}")
 mavg = np.mean(Ab['mid', 'axis'])
 check("M3 control: the midpoint reading is NOT gauge-exact and adds a polarisation-averaged shift; its splitting is nonzero but reading-dependent (pre-registered 'both readings' criterion: PARTIAL)",
       gres['mid'] > 1e-7 and abs(mavg) > 1e-2 and np.ptp(Ab['mid', 'axis']) > 1e-3, f"gauge residual {gres['mid']:.0e}; axis mean shift {mavg:+.3f}, half-split {np.ptp(Ab['mid', 'axis'])/2:.3f}")
+print("NOT CHECKED (not counted): the raw metric block on the Lorentzian lattice (R-b), so its birefringence there is not computed")
+print("NOT CHECKED (not counted): whether the cell-scale ghost pair of the full hinge sum disappears under the metric-only reading in (R-b)")
 print(f"elapsed {time.time()-T0:.1f}s")
 print(f"TOTAL: PASS={P} FAIL={F}")
+raise SystemExit(1 if F else 0)

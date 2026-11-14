@@ -1,7 +1,7 @@
 ---
 claim_id: d4_zoom_direction_finite_rung_matter_weight_is_an_event_kernel_liv_set_by_the_event_rung_count_bounded_theorem_note_2026-10-26
 claim_type: bounded_theorem
-claim_scope: "D4 event set, root slicing, free supplied model (NN Wilson seed, alpha = 1/2, forced W(F4) zoom kernel of #10098). (T) Blocking keeps poles, so the physical light-band dispersion E(K) is fixed by whichever kernel sits on the events; zooming UP from it only changes units (cell-unit beta_0/16^n at cell 2^n a = the same physics). (T+F) The factor-2 zoom map R acts on functions on the EVENT Brillouin zone (G_n = R^n(G_NN) is 2 pi D4*-periodic to 5e-15) and D_n = G_n^-1 is exponentially local on the events (envelope decay 2.2-2.3 per unit length, n = 1..3, L = 12, finite-size control 6e-3); so 'n rungs' needs no lattice finer than the events. Its event-scale dim-8 coefficient is beta_e(n) = beta_e(0)/16^n = -0.1185, -7.41e-3, -4.63e-4, -2.89e-5 (n = 0..3; slice fit 1.000-1.006), -> 0 only as n -> inf. Reading A (NN on the events) gives the n = 0 row for every n; reading B' (event weight = R^n(NN), which the finite-rung decision's own cost statement presupposes) reproduces the PR #10110 rows. Every row passes every measured bound."
+claim_scope: "D4 event set, root slicing, free supplied model (NN Wilson seed, alpha = 1/2, forced W(F4) zoom kernel of #10098). (T, conditional) A rung keeps a pole of the previous kernel at Q when the blocking weight f(Q)^2 there is nonzero and no other image cancels its residue; for the light pole at small K, f -> 1 (checked at n = 1..3, Z1), so the physical light-band dispersion E(K) is fixed by whichever kernel sits on the events; zooming UP from it only changes units (cell-unit beta_0/16^n at cell 2^n a = the same physics). (T+F) The factor-2 zoom map R acts on functions on the EVENT Brillouin zone (G_n = R^n(G_NN) is 2 pi D4*-periodic to 5e-15) and D_n = G_n^-1 is exponentially local on the events (envelope decay 2.2-2.3 per unit length, n = 1..3, L = 12, finite-size control 6e-3); so 'n rungs' needs no lattice finer than the events. Its event-scale dim-8 coefficient is beta_e(n) = beta_e(0)/16^n = -0.1185, -7.41e-3, -4.63e-4, -2.89e-5 (n = 0..3; slice fit 1.000-1.006), -> 0 only as n -> inf. Reading A (NN on the events) gives the n = 0 row for every n; reading B' (event weight = R^n(NN), which the finite-rung decision's own cost statement presupposes) reproduces the PR #10110 rows. Every row passes the three bounds the runner compares (gamma -> e+e- closed below the 1.4e15 eV photon, e -> e gamma closed below 1e15 eV electrons, nuclear wall above the 3.2e20 eV event read as a proton); E_QG,4 is printed but compared with no bound."
 upstream_dependencies:
   - minimal_axioms
   - candidate_laws
@@ -10,7 +10,8 @@ runner: scripts/d4_zoom_direction_finite_rung_matter_weight_is_an_event_kernel_l
 
 # The finite-rung matter weight is a kernel ON the events: physical LIV is set by the event weight's rung count, and no finer lattice is needed
 
-Runner: runner.py. TOTAL: PASS=6 FAIL=0 in 28 s, 81 MB peak, seeded, AUDIT_TIMEOUT_SEC = 120, 3.0 k characters.
+Runner: [`scripts/d4_zoom_direction_finite_rung_matter_weight_is_an_event_kernel_liv_set_by_the_event_rung_count_2026_10_26.py`](../scripts/d4_zoom_direction_finite_rung_matter_weight_is_an_event_kernel_liv_set_by_the_event_rung_count_2026_10_26.py). Seeded, AUDIT_TIMEOUT_SEC = 120; it exits nonzero on any failed check.
+Its cache [`logs/runner-cache/d4_zoom_direction_finite_rung_matter_weight_is_an_event_kernel_liv_set_by_the_event_rung_count_2026_10_26.txt`](../logs/runner-cache/d4_zoom_direction_finite_rung_matter_weight_is_an_event_kernel_liv_set_by_the_event_rung_count_2026_10_26.txt) holds the current output (the source run: 6 checks, 28 s, 81 MB peak).
 Re-run under a unique filename (scratchpad copy): identical output apart from the runtime line.
 Pre-registration: criteria_pre_run.txt (written before any computation here).
 Labels: [T] exact, [F] finite diagnostic in a supplied free model, [E] estimate against measurement, [S] reading.
@@ -36,14 +37,21 @@ Deviations from pre-registration, stated:
 - d4-zoom-fixed-point-fermion (#10098): the forced kernel, the refinement map, and the NN pair are reused. Its rung-n
   ghost weights (2e-4, 7e-7, < 1e-14) are quoted, not recomputed.
 - zoom-fixed-point-tick (#10092): T2 (blocking keeps poles) is the engine. T1 (finitely many branches => LIV nonzero)
-  explains why beta_n != 0 at finite n.
+  explains why beta_n != 0 at finite n. Repair 2026-11-14: T2 as used here needs, for each pole, a nonzero blocking
+  weight f(Q)^2 at that pole and no cancellation among images; real-momentum positivity of the blocking sum does not give
+  it. Z1 and Z6 test those conditions for the light pole and for the NN pair at k = 0 at n <= 3 only.
+- Source names that are not links (d4-predictions-recompute #10110, zoom-fixed-point-tick #10092,
+  CANDIDATE_AXIOM_RULES.md, which is on neither this branch nor `main`) are recorded only in the source map of
+  [the consolidation](D4_ROUTE_CONSOLIDATED_BOUNDED_THEOREM_NOTE_2026-10-30.md). d4-zoom-fixed-point-fermion is [#10098](D4_ZOOM_FIXED_POINT_FERMION_HAS_ONLY_REAL_POSITIVE_POLES_BUT_SITE_POSITIVITY_NEEDS_A_ONE_SLICE_BUFFER_BOUNDED_THEOREM_NOTE_2026-10-26.md) in this PR.
 - CANDIDATE_AXIOM_RULES.md, the finite-rung decision ("Infinite image tower"): tested for which reading it presupposes (Z6).
 - Owner principle (2026-09-02): the lattice is the smallest object; zoom out freely. Both readings respect it. Only
   the #10110 sub-site wording did not.
 
 ## Theorems and exact facts
-- [T] Pole invariance under zoom-up. A rung is a positive sum of fine propagators at Q = (P + l)/2 plus a contact term,
-  so E_coarse(P) = 2 E_fine(P/2).
+- [T, conditional] Pole invariance under zoom-up. A rung is a sum of fine propagators at Q = (P + l)/2, weighted by
+  f(Q)^2/2, plus a contact term. A pole of the fine kernel at Q = P/2 is a pole of the rung at P when f(P/2)^2 != 0 and no
+  image term with l != 0 has a pole at the same P that cancels it. For the light pole at small K, f(P/2) -> 1 and the
+  l != 0 images sit at other momenta. Under that condition E_coarse(P) = 2 E_fine(P/2).
   - Physical units: E_phys(K) = E_n(K a_n)/a_n = E_0(K a_0)/a_0, so beta_n (K a_n)^4 = beta_0 (K a_0)^4.
   - Zooming UP from an event kernel never changes physical LIV. It only rewrites it in cell units.
   - [F] Z1: E_n(2^n K)/2^n = E_0(K) to 8e-12 (n = 1..3, body ray), and the physical E/K - 1 at K = 0.06 is the same for
@@ -62,12 +70,18 @@ Deviations from pre-registration, stated:
   - Fit/exact ratios: 1.000, 1.005, 1.006, 1.006 (k^8 contamination).
   - The coefficient approaches 0 geometrically WITHOUT finer lattices, but it is nonzero at every finite n (T1). It is
     exactly 0 only for the exact fixed point (#10110 C3: |beta_inf| < 1e-8).
-- [T+F] Z6: the NN Lee-Wick pair (k = 0) at E_pair = 2.600 + 1.667i (D4 units) is a pole of G_n at 2^n E_pair
-  (|G_n| blow-up 1e7 at a 1e-9 offset, n = 1, 2).
+- [F] Z6: the NN Lee-Wick pair (k = 0) at E_pair = 2.600 + 1.667i (D4 units) is a pole of G_n at 2^n E_pair for
+  n = 1, 2, 3: the blocking weight |f(Q)|^2 at the previous rung's pole is 14, 1.3e4, 3.6e10 (nonzero); |G_n| at a 1e-9
+  relative offset is 7e7, 1e7, 2e5 times its value 0.3 away; and |G_n| scales as 1/offset (ratio 100.0 between offsets
+  1e-9 and 1e-7), as for a simple pole. At other k and at n > 3 this is not computed.
   - Under B', the event weight's pair is 2^n times heavier, and its buffered weight falls as quoted in #10098.
   - Under A, the event-scale pair stays at E_pair with its rung-0 weight 2e-4.
   - The decision's recorded cost ("< 1e-14 at rung 2") is therefore a statement about the event weight only under B'.
     The decision presupposes B'.
+
+- Labels. beta is the energy (phase-velocity) coefficient in E = K(1 + beta (K a)^4); the threshold formulas use it.
+  E_QG,4 = E*/(2|beta|)^(1/4) is the scale of E^2 = p^2 (1 + (p/E_QG,4)^4); a time-of-flight delay uses the group
+  velocity, 1 + 5 beta (E/E*)^4 = 1 + (5/2)(E/E_QG,4)^4.
 
 ## Decision: which kernel sits on the events
 - Reading A (NN on the events; rungs = zoom-up descriptions). The physical LIV is rung 0 for every n:
@@ -92,7 +106,7 @@ Deviations from pre-registration, stated:
 - For the decision record [S], two points:
   - "Finitely many rungs" must mean "the matter history weight on the events is R^n(NN) for a stated n". It must not mean
     "an NN weight on the events, zoomed up", because zoom-up never lowers physical LIV.
-  - n is a supplied integer, and the physical LIV depends on it (16^-n). No measured bound selects n, since every n passes.
+  - n is a supplied integer, and the physical LIV depends on it (16^-n). No compared bound selects n, since every n = 0..3 passes the three bounds of Z5.
     Leaving n open leaves the matter LIV prediction open by 16^n. The n = 0 case is reading A.
 
 ## Smuggling review

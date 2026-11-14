@@ -136,7 +136,7 @@ Reviewers and escalation are the landing-review rows in `SETTINGS.md`.
 | Step | Read at that step, at this file's revision | For |
 |---|---|---|
 | 1, 3 | `SK/references/REVIEW_SETUP.md` | base, changed set, pre-fix list |
-| 1, 7, 9 | `SK/references/LANDING.md` | sets, worktrees, batches, push script |
+| 1, 7, 9 | `SK/references/LANDING.md` | sets, worktrees, batches, push script, scripted single-PR run |
 | 2, 6 | `SK/references/REVIEW_UNITS.md` | map, reuse, `main` advances |
 | 2, 6 | `SK/references/UNIT_RECEIPT.md` | record schema for the checker |
 | 3, 5 | `AM/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` | one cure per defect class |

@@ -216,9 +216,10 @@ Ent_nu(f^2) <= (2/alpha_inf) E_nu (max_l |grad_l f|)^2, and alpha_inf carries th
 N copies of one law rho on S^3 (the best case), the test f = sum_l c(u_l) with |grad c| <= 1 and Var_rho(c) = v > 0
 gives, through the Poincare inequality implied by that LSI, N v <= 1/alpha_inf, so alpha_inf <= 1/(N v). (For the
 Wilson nu the same test with f = sum over plaquettes of (1/2) tr U_p gives alpha_inf <= 16/Var_nu(f); the action
-variance is extensive whenever the specific heat is positive: ARGUED.) No Riemannian g~ can do better: a quadratic
-form Q with Q(z) >= ||z||_1^2 for all z satisfies, averaging over sign changes of the entries of a spread z,
-trace Q >= N^2, so Q has an eigenvalue >= N.
+variance is extensive whenever the specific heat is positive: ARGUED.) A Riemannian g~ that dominates the l1 bound
+is no better: a quadratic form Q on T_u M with Q(z) >= ||z||_1^2 for all z satisfies, averaging over sign changes
+of the link components of a spread z, trace Q >= N^2 on a space of dimension 3N, so the mean eigenvalue of Q is at
+least N/3 (PROVED); that this moves the box factor into kappa as in (i) is ARGUED.
 
 **Averaged form (PROVED as a reading; the alternative is OPEN).** Lemma RD needs (SG-step) at every point of the
 geodesic between the two slices it compares, and Lemma H and Theorem HC1 apply it to all pairs (x, y), y the
@@ -232,3 +233,134 @@ averaged forms (row 931 Step 7), but they give a gap and an entropy contraction,
 decided by whether the half-space Wilson measure with boundary slice u can show a coexistence of macroscopically
 different next slices. Section 4 makes this exact: a box-free sigma follows from, and at the variance level in
 temporal gauge is equivalent to, a box-free upper bound on the Hessian of log Omega.
+
+## 4. Attack: the Hessian route, and the one open inequality (step 4)
+
+**Lemma HSS (lower Hessian bound gives the score bound; PROVED).** Suppose that for some H >= 0 and all u, w in M,
+Hess_u log p(u, w) >= -H g (Riemannian Hessian in the first argument). Then (SG-step)_sigma holds with sigma^2 = H.
+Proof. Fix u, a unit z in T_u M and real t; let u(s) = exp_u(s z), a unit-speed geodesic (M is complete). Taylor's
+formula along it: log p(u(t), w) = log p(u, w) + t phi_(u,z)(w) + integral over [0, t] of (t - s) Hess_u log p(u(s), w)(u', u') ds
+>= log p(u, w) + t phi_(u,z)(w) - H t^2/2. So e^(t phi_(u,z)(w)) <= e^(H t^2/2) p(u(t), w)/p(u, w). Multiply by p(u, w),
+integrate in nu(dw), and use that the integral of p(v, .) d nu is 1 for every v: E_(pi_u) e^(t phi_(u,z)) <= e^(H t^2/2). QED
+(This is the converse direction of row 940's Lemma RD: there the score bound gives a Renyi bound; here a
+one-sided Hessian bound gives the score bound. Herbst-type; no box enters.)
+
+**Theorem SC (the reduction; PROVED by hand, by Claude, not yet checked).** Let F := log Omega + V/2 on M. If
+  (SC)  Hess_M F(v) <= C_F g  for every v in M,
+then (SG-step)_sigma holds with sigma^2 = C_F + beta. Since Hess_M(V/2) <= 8 beta g, the hypothesis
+  (SC-Omega)  Hess_M log Omega(v) <= C_Omega g  for every v in M
+gives (SG-step) with sigma^2 = C_Omega + 9 beta.
+Proof. log p(u, w) = -V(u)/2 + log K(u, w) - log Omega(u) + (terms free of u), so
+Hess_u log p(u, w) = Hess_u log K(u, w) - Hess_M F(u). With mu = mu_(u,w)(dg) = k(u, g.w) dg/K(u, w),
+  Hess_u log K(u, w)(z, z) = E_mu[ Hess_u log k(u, g.w)(z, z) ] + Var_mu( d_u log k(u, g.w)[z] ),           (4.1)
+(differentiate log of an integral twice), and Hess_u log k(u, w')(z, z) = -beta sum_l <u_l, w'_l> |z_l|^2 (on the unit
+sphere the Hessian of x -> <x, a> is -<x, a> g). So Hess_u log K >= -beta g, Hess_u log p >= -(C_F + beta) g; Lemma HSS.
+Hessian of V: write a plaquette as f_p = (1/2) tr(c_1 c_2 c_3^* c_4^*) along geodesics c_j(t) = u_j e^(t X_j), |X_j| = |z_j|;
+the second t-derivative of the product of four unit quaternions has norm at most (sum_j |X_j|)^2 <= 4 sum_j |z_j|^2, and
+|(1/2) tr Y| <= |Y|. Each link lies in 4 spatial plaquettes, so |Hess V(z, z)| <= beta * 4 * 4 |z|^2 = 16 beta |z|^2. QED
+
+**Converse in temporal gauge (PROVED).** By Identity HV (2.2), beta^2 Var_(pi~_u)(<z, w'>) >= Hess_M F(u)(z, z) - beta |z|^2,
+and sigma~(u, z)^2 >= beta^2 Var_(pi~_u)(<z, w'>). So
+  sup_u sigma~(u)^2 is box-free  <=>  (SC) holds with a box-free C_F,
+with C_F - beta <= sup_u sigma~(u)^2 <= C_F + beta. Upper bound: Lemma HSS applied to the temporal-gauge kernel
+p~(u, w') := e^(beta <u, w'> + log R(w') - A(u)) with reference measure dw' (its integral in w' is 1 for every u in M,
+its score is psi_(u,z), and Hess_u log p~(u, w')(z, z) = -beta sum_l <u_l, w'_l> |z_l|^2 - Hess_M F(u)(z, z) >= -(C_F + beta)|z|^2).
+Lower bound: (2.2). A free lower bound: Hess_M F >= -beta g always, by (2.2).
+In words: (SC) is a box-free bound on the susceptibility of the first-step electric field of the half-space Wilson
+measure, uniform in the boundary slice: sup_u ||Cov_(pi~_u)(E)||_op <= (C_F + beta)/beta^2.
+
+**Lemma CEN (the projected score vanishes at central slices; PROVED).** If u_l is in {1, -1} for every l, then
+phi_(u,z) = 0 for every z in T_u M: sigma(u) = 0.
+Proof. The constant gauge transformation g_x = c fixes u (u central) and acts on T_u M by z_l = xi_l u_l -> (c xi_l c^*) u_l.
+p is gauge invariant in u, so the linear form L(xi) := d_u log p(u, w)[(xi_l u_l)_l] obeys L(Ad_c xi) = L(xi) for all c.
+Average over Haar c: L(xi) = L(E_c Ad_c xi) = L(0) = 0, as the adjoint action of SU(2) on R^3 fixes no non-zero vector. QED
+More generally d_u log p(u, w) is fixed by the stabilizer of u: at an abelian slice (all u_l in one U(1)) only the
+Cartan components of z carry score.
+Consequence. sigma <= sigma~ can be very lossy. At a central slice sigma = 0, while sigma~ is the variance of pure
+gauge fluctuations: by (4.1) the term Var_mu, which Theorem SC drops, is exactly what cancels there
+(Var_(pi_u)(phi) = Var_(pi~_u)(psi) - E_(pi_u) Var_mu(psi), law of total variance). So (SC) is SUFFICIENT for (SG-step)
+but may fail where (SG-step) holds: if the temporal-gauge electric field at a central slice orders in colour
+(an SO(3)-breaking pattern, invariant under the stabilizer only as a mixture), then C_F grows like N there, while
+sigma(u) = 0. Section 6 tests exactly this (GUIDE).
+
+**Relation to row 941 (PROVED implication).** Bakry-Emery CD(kappa, infinity) for nu = Omega^2 dU on M (Ric_M = 2 g on
+unit spheres) reads 2 g - 2 Hess log Omega >= kappa g, i.e. Hess log Omega <= (1 - kappa/2) g. So any proof of
+Bakry-Emery for nu (row 941, Attack A) gives (SC-Omega) with C_Omega = 1 and, by Theorem SC, (SG-step) with
+sigma^2 <= 1 + 9 beta. (SC-Omega) asks only for SOME box-free C_Omega, so it is much weaker than Bakry-Emery.
+
+**Status of (SC) for SU(2) at beta 2.3-2.6: OPEN.** What is known here:
+- small beta: a uniform Dobrushin condition on the half-space measure (Section 3) gives a box-free susceptibility,
+  hence (SC) (RECALLED route, beta below about 1/18; not rebuilt, not on the chain);
+- classical picture (ARGUED): log Omega ~ -W_cl, W_cl(u) = least half-space action with boundary u. W_cl is a
+  minimum over extensions, so it has concave kinks where two extensions tie; there log Omega ~ log(e^(-W_1) + e^(-W_2))
+  has Hessian ~ |grad(W_1 - W_2)|^2/4 in the direction of the jump. With the per-link gradient bound |grad_l F| <= beta
+  (PROVED: grad F is the tangential part of grad A = beta E w'), this is at most beta^2 times the number of links where
+  the two extensions differ at the boundary. So (SC) fails exactly if some boundary slice makes two extensions tie
+  that differ on a number of links growing with the box (a boundary-induced coexistence). Instantons do not do this
+  (the jump of a size-rho instanton is of order beta rho^(-1/2), ARGUED); frustrated slices might;
+- (SG-step) itself (the projected score) can survive a failure of (SC) located at slices with a large stabilizer
+  (Lemma CEN). A failure of (SG-step) needs a coexistence in GAUGE-INVARIANT data of the next slice at a slice u
+  whose stabilizer does not average it out.
+
+**Where this leaves the target.** (SG-step) at a box-free sigma is reduced to (SC) (sufficient), and in temporal
+gauge (SC) is exact. Neither (SC) nor (SG-step) is proved for SU(2) at beta 2.3-2.6. The exact open inequality
+handed on is
+  (SC)  sup over v in M of the largest eigenvalue of Hess_M(log Omega + V/2)(v) <= C_F, C_F box-free,
+or the weaker, projected form Hess_u log p(u, w) >= -H for all u, w (Lemma HSS), or, weakest, (SG-step) itself.
+
+## 5. Fact tests (step 5)
+
+- **Free photon (PROVED).** One mode: T(q, q') = exp(-(beta/2)(q - q')^2 - (beta/2)(m^2/2)(q^2 + q'^2)), cosh omega = 1 + m^2/2.
+  The coupling term is beta q q'; V(q)/2 = (beta/2) cosh(omega) q^2; Omega = exp(-(beta/2) sinh(omega) q^2). So
+  F = log Omega + V/2 = (beta/2) e^(-omega) q^2 and Hess F = beta e^(-omega). On R the coupling beta q q' has zero
+  Hessian in q, so Lemma HSS gives sigma^2 <= beta e^(-omega): EXACT (the extra beta in Theorem SC is the curvature of
+  S^3). Identity HV: beta^2 Var(q') = beta e^(-omega), Var(q') = 1/(beta e^omega) = v. The photon is gapless (omega_min -> 0)
+  and has sigma^2 <= beta on every mode, so **(SG-step) at a box-free sigma does not imply a gap (PROVED).**
+- **Compact U(1).** Lemmas TG, EF, HO, HV, HSS and Theorem SC hold verbatim with S^1 in place of S^3 (the Hessian
+  of x -> <x, a> on the unit circle is -<x, a>; the plaquette Hessian bound and 4 plaquettes per link are unchanged).
+  Lemma CEN gives nothing (constant U(1) gauge transformations act trivially). Its Gaussian (spin-wave) part has
+  sigma^2 <= beta. Whether compact U(1) Wilson meets (SC) or (SG-step) with a box-free sigma is the same open question
+  as for SU(2). Either way U(1)'s failure is carried by (LSI-vac) (alpha <= 2 beta sinh omega_min -> 0; rows 931, 940,
+  check 942), not by (SG-step).
+- **Frozen Q_8, 2T.** M is finite: no tangent vectors, so (SG-step), (SC), Lemma HSS and Theorem SC are not
+  defined. This row asserts nothing for them (domain exclusion, as in check 942). Nothing here can carry a rival's
+  failure.
+- **SMALL-BOX (row 931).** (SG-step) and (SC) assert no gap. On a fixed box at large beta the chain is near-Gaussian
+  and (SG-step) with sigma^2 of order beta is consistent with E_1 -> 0. No conflict. (That (SC) holds at large beta on
+  a fixed box is NOT claimed: the kinks of W_cl in Section 4 sharpen as beta grows.)
+- **FT-CEIL.** The 1/3, 2/3 and 0.775 ceilings cap worst-case single-link and block criteria: the Dobrushin route of
+  Section 3 is of that type, which is why it stops at small beta (consistent). Check 870 S5 (READ, items 9-10)
+  refutes environment-uniform conditional parity bounds, the environment being the SO(3) parts of ALL links (at the
+  identity environment the conditional object is Z_2 gauge theory at beta, deconfined above 2.191 by Peierls).
+  (SG-step) and (SC) condition on ONE slice and integrate the future, so that refutation does not apply as stated.
+  (SC) is still a supremum over the conditioning slice and carries the same kind of risk: a boundary slice that
+  induces ordering in the next slice. Section 6 tests one such slice. (In a deconfined Z_2-like regime a fixed
+  boundary slice pins the next slice's flux, which is rigidity, not coexistence: ARGUED.)
+- **Group-blindness.** Lemmas TG, EF, HO, HV, HSS, Theorem SC and Example DW are group-blind (any compact connected
+  group with a bi-invariant metric; only the plaquette Hessian constant changes). Lemma CEN is not: it uses that the
+  adjoint representation of SU(2) fixes no vector (true for SU(N), false for U(1)). So the only SU(2)-specific fact
+  proved here is that the score vanishes at central slices; it costs no rival anything.
+
+## 6. GUIDE run: does (SC) fail at a central frustrated slice? (step 6; criteria written before the run)
+
+Decides nothing; it can only refute or guide. Target: (SC), not (SG-step) (by Lemma CEN the projected score is 0 at
+any central slice, so this run cannot touch (SG-step) itself).
+Model. Half-space Wilson SU(2) in temporal gauge: spatial box L^3 (periodic, L even), slices t = 0..T, slice 0 fixed
+= u, all temporal links = 1 (complete gauge fixing, Haar, no Jacobian). Weight exp(beta sum_{t<T} sum_l <w_l(t), w_l(t+1)>
++ beta sum_{t=1..T} c_t sum_p (1/2) tr U_p(t)), c_t = 1 for t < T and 1/2 for t = T. As T -> infinity the law of slice 1 is
+pi~_u (Lemma TG; the last slice's 1/2 is the e^(-V/2) of the last kernel, Omega replaced by 1). Heat bath: each link has a
+von Mises-Fisher conditional law on S^3 (Wood's sampler), checkerboard by direction and parity of x + y + z + t.
+Slices: u_pi (central, every spatial plaquette -1: u_x = 1, u_y = (-1)^x, u_z = (-1)^(x+y)) and the control u = 1.
+Measured: E_l = Im(w_l(1) u_l^*). For central u the law of E is SO(3)-invariant and translation-invariant (Z_2 gauge
+transformations leave E unchanged), so the one-colour covariance H' is diagonal in momentum:
+Lambda(k) := (1/(3 L^3)) sum_a E[Ehat^a(k) Ehat^a(k)^dagger] (3 x 3 in directions), lambda(L) := max_k lambda_max(Lambda(k)) =
+the top eigenvalue of H'. By (2.2), lambda_max(Hess F(u)) >= beta^2 lambda(L) - beta. Also v_1 := mean of E[(E_l^a)^2].
+Criteria (fixed now). G := lambda(10)/lambda(4) at u_pi, beta 2.3, T 6, cold start.
+- G >= 4 with lambda increasing in L: GUIDE says (SC) FAILS at u_pi (box-growing susceptibility; with exact SO(3)
+  symmetry this is colour ordering of the first-step field). Then Theorem SC's route is dead for SU(2), and the
+  projected form (Lemma HSS, or (SG-step) itself) must be used.
+- G <= 1.3: no growth seen at u_pi ((SC) survives this one slice; establishes nothing).
+- otherwise: inconclusive.
+Controls: u = 1 must give G <= 1.3 (else the method is suspect); hot and cold starts must agree within 15 percent
+(else "not equilibrated"); T = 4, 6, 8 at L = 6 must agree within 15 percent (else the truncation of Omega matters).
+Script `/tmp/gap-sgstep-944/scripts/slab_E.py`, log `/tmp/gap-sgstep-944/slab_E.log`; numeric lock, nice, one thread.
